@@ -1,0 +1,4 @@
+STATE:
+  location: ~
+  condition: []
+  inventory: []

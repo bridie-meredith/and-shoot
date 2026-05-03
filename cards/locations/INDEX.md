@@ -9,6 +9,8 @@ All location cards. Maintained by margit — update on every card store or new a
 planetos:
   - forest-clearing-dusk
   - kings-landing-exterior
+  - oc-riverlands-river-ford
+  - oc-riverlands-ruined-tower
   - reach-smallfolk-village
   - stormlands-coastal-cliffs
   - westerosi-smallfolk-dwelling-interior
@@ -21,6 +23,8 @@ planetos:
 full:
   - forest-clearing-dusk
   - kings-landing-exterior
+  - oc-riverlands-river-ford
+  - oc-riverlands-ruined-tower
   - reach-smallfolk-village
   - stormlands-coastal-cliffs
   - westerosi-smallfolk-dwelling-interior
