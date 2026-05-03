@@ -84,3 +84,6 @@ seasons:
 active:
   season: s01
   episode: s01e01
+
+# cut-log
+cut: 2026-05-03 — pre-shoot — s01e01
