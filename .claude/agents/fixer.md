@@ -62,6 +62,22 @@ Before fixing a fault:
 
 ---
 
+## Session log
+
+After each fault is resolved (or returned as escalate), append one block to `active-project/staff/fixer/fixer-log.md`:
+
+```
+## <fault-id> — [RESOLVED | ESCALATED | DEPENDENCY-FLAGGED]
+fault: <one-line summary of what was wrong>
+scope: <line | bullet | episode | card | escalate>
+change: <what was changed or routed, minimum description>
+criteria met: <yes / no — with note if no>
+```
+
+A silent fixer run is an incomplete run. Even a one-line entry per fault is required.
+
+---
+
 ## What fixer does NOT do
 
 - Fix things that weren't in the auditor report

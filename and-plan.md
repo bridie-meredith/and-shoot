@@ -43,6 +43,8 @@ planning zooms in as scope narrows:
 
 **cards:** atomic context units. four classes: **persona**, **location**, **prop**, **condition**. agents consume cards rather than raw files. schema authority: `schemas/card.schema.md`. import from brighid-creative-writing. (Gacha-element class is deferred and out of scope for and-shoot.)
 
+**vibe seeds:** an optional section on persona cards (`## Vibe Seeds`) that records accumulated history and private associations — what the character has already done, survived, lost, and done to others before any project begins, and how they specifically hold each vibe key as a result. written once, extended as understanding deepens, preserved across all card mutations. read by: showrunner (vibe-cloud generation at 1c), coach (prompt framing during shoot). the per-project `vibes.md` is derived from the vibe seeds plus the project's world context — seeds are the library-level input; vibes.md is the runtime output.
+
 **vibe-cloud:** a vibes snapshot scoped to the current level (series / season / episode). captures mood, tone, atmosphere, and thematic register. built at the start of each level, updated on significant shift. import schemas: `vibes.schema.md` + `vibe-delta.schema.md` from brighid-creative-writing.
 
 **margit's workshop:** houses assets for crafting, improving, and pruning cards.
@@ -56,7 +58,6 @@ planning zooms in as scope narrows:
 ```
 active-project/
   actors/       — actor housing: persona card + memory for each cast member
-  hopefuls/     — pool of candidate personas not yet cast; available for selection
   warehouse/    — locations, props, special effects (condition cards)
   audience/     — audience personas used by the audience critic config
   staff/        — showrunner, studio, auditor, fixer, margit, editor configs and memory
@@ -85,24 +86,23 @@ specific and small. a single chapter within a season. fully detailed: an ordered
 
 planning follows the same shape at every level. the difference is scale, not structure. at each level: establish drama, break it into chunks, make each chunk a statement of what it does for the level above it.
 
-**chunk:** a named unit one level below the current scope. seasons are the chunks of a series. episodes are the chunks of a season. a chunk statement is one or two sentences: what happens in this chunk and what dramatic work it does.
+**chunk:** a named unit one level below the current scope. seasons are the chunks of a series. episodes are the chunks of a season. a chunk statement is one or two sentences: the collision or pressure this chunk turns on, what cannot survive it, and what changes by the end. External and structural — not character psychology. Drama-sized: a season chunk must be able to sustain an entire season; an episode chunk must be able to sustain an entire episode.
 
 ---
 
 ### pattern: project activation
 *fires once, at the start of a new project.*
 
-**0. scaffold active-project**
-*Use `/and-project <project-title-slug> <audience-slug-1> <audience-slug-2> <audience-slug-3>` — it handles all of the following automatically. Run it before any other activation step.*
+**0. shelve + scaffold active-project**
+*Use `/and-project <project-title-slug> "<brief>" <audience-slug-1> <audience-slug-2> <audience-slug-3>` — it handles all of the following automatically. Run it before any other activation step.*
 
 Manual steps if not using the command:
 
-1. **Do not archive.** Do not move or rename the existing `active-project/` directory. Start fresh scaffold in place.
+1. **Shelve prior project.** If `active-project/` has content, move it to `projects/project_NN/` where NN is the next serial (e.g., `project_01`, `project_02`). If `active-project/` is empty or absent, skip.
 2. **Create directory tree:**
    ```
    active-project/
      actors/
-     hopefuls/
      warehouse/
      audience/
        <persona-slug-1>/
@@ -200,7 +200,7 @@ each menu entry:
 - canon status (confirmed canon / AU variant / original character)
 - card status: **exists** (path) or **not yet authored**
 
-when a candidate without a card is selected: margit authors the card immediately (full quality if source material supports it, scant if not), validates, stores, and returns it. the library is a fulfillment cache — selection triggers authoring when needed.
+when a candidate without a card is selected: margit authors the card immediately (full quality if source material supports it, scant if not), validates, stores, and returns it. for full-quality persona cards with rich source material, margit populates a `## Vibe Seeds` section. the library is a fulfillment cache — selection triggers authoring when needed. every card goes to the library at time of authoring; the warehouse copy is a working reference.
 
 showrunner reads the menu and proposes a starter cast based on settled constraints and dramatic needs. screen-writer reviews for dramatic range (enough conflict vectors, enough role coverage). dramatist checks structural viability (can this cast carry the arc shape in view). standard 3-try/accept loop.
 
@@ -212,19 +212,21 @@ once open questions are resolved and cast is provisionally selected, margit auth
 - **lore** — background facts that govern what is true in this world before the story begins
 - **behavior** — character-level constraints spanning the series
 
-auditor runs a constraint-consistency check on the full constraint card set before the series plan is written. clear → proceed to step 2. flag → fixer patches. escalate → showrunner decides.
+constraint cards go to the library (`cards/conditions/`, indexed) AND to `active-project/warehouse/` as working references. every card lives in the library as soon as it is authored.
+
+auditor runs a constraint-consistency check on the full constraint card set before the series plan is written. clear → proceed to step 2. flag → fixer patches (fixer writes a session log to `active-project/staff/fixer/fixer-log.md` for every fault resolved). escalate → showrunner decides.
 
 this step ensures the series plan is written against real constraint cards, not informal notes.
 
 **2. series plan** *(vague, large)*
 - build series vibe-cloud
 - establish series drama: the central conflict or question that spans the whole story
-- showrunner passes series constraints + drama to screen-writer; screen-writer writes a chunk statement for each season; audience and dramatist review in parallel until both accept or three attempts exhausted
+- showrunner passes series constraints + drama to screen-writer; screen-writer writes a chunk statement for each season — **chunk format: name the collision and what cannot survive it; what forces are building and what the season costs or breaks; external and structural, not character psychology; two sentences maximum**; audience and dramatist review in parallel until both accept or three attempts exhausted
 
 **3. first season plan** *(general, medium)*
 - inherit series constraints and vibe-cloud; derive season-specific vibe-cloud
 - establish season drama: the specific source of conflict or transformation driving this season
-- showrunner passes season constraints + drama to screen-writer; screen-writer writes a chunk statement for each episode; audience and dramatist review in parallel until both accept or three attempts exhausted
+- showrunner passes season constraints + drama to screen-writer; screen-writer writes a chunk statement for each episode — **chunk format: the episode's central dramatic pressure, drama-sized (enough to fill a chapter, not a minor incident); name the collision or threshold the episode turns on and what cannot remain unchanged after it; concrete and specific, no character psychology**; audience and dramatist review in parallel until both accept or three attempts exhausted
 - sketch the following season in broad strokes only — one chunk statement, not a plan
 
 **4. audit** — showrunner dispatches audience + dramatist; auditor reviews
@@ -259,7 +261,7 @@ output: season plan with episode chunk list, vibe-cloud, active cast, relevant c
 - screen-writer expands into a detailed episode plan: an ordered bullet list, scene by scene. each bullet is one thing that happens and generates one line in the show file. **bullet format: action beats only — `[subject] [verb] [object/location]`. no motivation clauses, no because/since/wanting-to, no internal state embedded. the impersonator supplies interiority; the bullet supplies the beat.**
 - audience and dramatist review in parallel (persistent subagents); both must accept or three screen-writer attempts are exhausted
 - every bullet should be legible against both the series plan and the season plan
-- **prep cast:** spawn impersonators for active characters; load persona cards
+- **prep cast:** spawn impersonators for active characters; load persona cards and vibe seeds (from `## Vibe Seeds` section of library card if present)
 - **prep studio:** load location, prop, and condition cards; establish environment state
 - **prep show file:** open fresh show file; write scene context header
 - **prep audience:** confirm audience critic config is ready

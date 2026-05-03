@@ -62,7 +62,6 @@ cards/            — story-facing card library (on-stage characters, locations,
 
 active-project/   — sole active project
   actors/         — active cast (persona card + ltm/stm/state/vibes per actor)
-  hopefuls/       — candidate personas not yet cast
   warehouse/      — active locations, props, conditions
   audience/       — 3 active audience persona working dirs
   staff/          — showrunner/studio/auditor/fixer/margit working memory
@@ -111,6 +110,7 @@ All file formats are defined in `schemas/`. Read the relevant schema before crea
 6. Audience membership is defined at project activation. It does not change mid-episode.
 7. Human checkpoints: series-level audit only. Everything else is agent-resolved unless an escalation requires human decision.
 8. Card schema authority is `schemas/card.schema.md`. Margit validates against it. No card class outside the four defined (persona, location, prop, condition).
+9. All agent dispatches use the Agent tool. Inline generation is not a substitute for a dispatch — an agent that is not spawned in isolation does not have the context isolation the pipeline depends on.
 
 ---
 

@@ -70,6 +70,8 @@ Margit enumerates all **plausible candidates** from knowledge of the source mate
 **On selection of an uncarted item:**
 When showrunner selects a candidate marked `not-yet-authored`, margit authors the card immediately before returning control. Quality target: `full` if source material is rich enough to populate all required sections; `scant` if source material is thin or the character is peripheral. Card is validated and stored before returning.
 
+For full-quality persona cards with rich source material: populate a `## Vibe Seeds` section (see `schemas/card.schema.md`). Two sub-sections: **Accumulated history to register** (what has this character already done, survived, lost, done to others) and **Private associations** (how this character specifically holds each key they activate). Vibe Seeds are library-level input — they persist across projects and inform the per-project vibe-cloud generation step. If source material is thin, omit the section rather than populate it sparsely.
+
 **OC archetype slots:**
 The persona menu always includes a section of generic archetype slots — roles that can be filled by an original character margit constructs to fit the project. These are not library lookups; they are commissions. When selected, margit builds a full-quality OC persona card from scratch using the archetype as the seed and the project's world constraints as the mold.
 
@@ -90,8 +92,9 @@ When building an OC, margit:
 1. Takes the archetype slot and the project's settled world constraints.
 2. Constructs the persona — name, voice, look, backstory stub — such that the character is native to the project's world (not a transplant).
 3. Ensures the OC does not duplicate a canon character's role already filled by the cast.
-4. Stores at `cards/personas/oc-<slug>.card.md`; logs to `active-project/staff/margit/margit.memory.md`.
-5. Adds to `cards/personas/INDEX.md` under `original_characters`.
+4. Populates a `## Vibe Seeds` section if the OC's role and backstory are rich enough to support it — especially if the archetype carries strong expectations (a `oc-corrupt-official` in a grimdark setting has a specific weight to register).
+5. Stores at `cards/personas/oc-<slug>.card.md`; logs to `active-project/staff/margit/margit.memory.md`.
+6. Adds to `cards/personas/INDEX.md` under `original_characters`.
 
 The library is a fulfillment cache. The menu is the authoritative picture of what is possible.
 
@@ -224,9 +227,10 @@ Moves a card from project scope to library scope. Changes `scope: project` → `
 When fixer routes a card to margit's workshop for improvement:
 1. Margit receives: the card, a problem statement, and a criteria (what the revised card must achieve).
 2. Margit runs a revision pass — reading the card against the problem statement and producing a revised version.
-3. Revised card is validated before storage.
-4. Both original and revised versions are preserved.
-5. Margit returns the revised card to fixer with a summary of changes made.
+3. `## Vibe Seeds` section is always preserved on revision. Margit may extend it if the revision reveals new accumulated-history or private-association material, but never strips or narrows it.
+4. Revised card is validated before storage.
+5. Both original and revised versions are preserved.
+6. Margit returns the revised card to fixer with a summary of changes made.
 
 ---
 

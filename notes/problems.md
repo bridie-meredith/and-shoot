@@ -99,8 +99,40 @@ Issues that impeded intended function during activation. Ordered by severity.
 **What should happen:** Margit produces a candidate menu; candidates not selected land in hopefuls/ for potential future use.
 **What happened:** hopefuls/ is empty. No candidate menu was saved. No record of what was considered and passed over.
 **Impact:** Low severity — doesn't break function. But the hopefuls pool as a feature is unused and its purpose isn't met.
-**Note:** The and-project 1c step now saves the full menu to `active-project/staff/showrunner/1c-candidate-menu.md`. The hopefuls/ dir purpose is still ambiguous — it may be intended for mid-episode cast additions rather than activation leftovers. No fix applied pending a decision on what hopefuls/ is actually for.
-**Status:** OPEN (low priority — decision needed on hopefuls/ purpose)
+**Decision:** hopefuls/ removed from the pipeline entirely. The candidate menu is saved to `active-project/staff/showrunner/1c-candidate-menu.md` for audit purposes; rejected candidates are noted in the 1c log. No staging dir needed.
+**Status:** RESOLVED — hopefuls/ removed from scaffold, command, and all docs.
+
+---
+
+---
+
+## P10 — Chunk format suppressed dramatic tension
+
+**Where:** Series plan and season plan chunk format spec (and-project.md, showrunner.md, and-plan.md)
+**What should happen:** Chunk statements name the collision or pressure, what's at stake, what cannot survive.
+**What happened:** Format spec required "external observable state-change — no motivation or causation embedded" which stripped stakes language as a side effect. Produced structurally sound but not compelling chunk statements.
+**Fix applied:** Format spec updated to require collision/stakes language. No-psychology rule retained but stakes and collision shape are now explicitly required. Existing series-plan.md and season-s01-plan.md were written against the old spec — need regeneration.
+**Status:** RESOLVED (spec fixed; existing plans need regeneration)
+
+---
+
+## P11 — 1d constraint cards not added to library
+
+**Where:** and-project.md step 1d; margit session log
+**What should happen:** Every card goes to the library as soon as it is authored.
+**What happened:** 1d step only directed `save to active-project/warehouse/`; margit correctly followed that and did not add to library. Seven constraint cards are warehouse-only.
+**Fix applied:** 1d step now directs margit to add to library (cards/conditions/ + INDEX.md) at time of authoring. Existing 1d cards need backfill.
+**Status:** RESOLVED (spec fixed; existing 1d cards need library backfill)
+
+---
+
+## P12 — Fixer memory empty
+
+**Where:** `active-project/staff/fixer/`; fixer.md
+**What should happen:** Fixer writes a session log for every fault resolved.
+**What happened:** fixer.md had no session log requirement; fixer ran silently.
+**Fix applied:** Session log requirement added to fixer.md. A silent fixer run is explicitly marked incomplete.
+**Status:** RESOLVED (spec fixed; existing run has no retroactive log — accepted)
 
 ---
 
@@ -116,4 +148,7 @@ Issues that impeded intended function during activation. Ordered by severity.
 | P6 | No episode-start command | Medium | RESOLVED |
 | P7 | Showrunner memory-read not enforced | High | RESOLVED |
 | P8 | Command arg parsing fails clean session | Medium | RESOLVED |
-| P9 | hopefuls/ empty, menu not saved | Low | OPEN — decision needed |
+| P9 | hopefuls/ empty, menu not saved | Low | RESOLVED |
+| P10 | Chunk format suppressed dramatic tension | High | RESOLVED — plans need regeneration |
+| P11 | 1d constraint cards not added to library | Medium | RESOLVED — backfill needed |
+| P12 | Fixer memory empty | Medium | RESOLVED |

@@ -36,7 +36,13 @@ earth-bet:
   - victoria-dallon
 
 planetos:
+  - beric-dondarrion
+  - edric-cray
+  - lem-lemoncloak
+  - mira-stonefield
   - peasant-woman-forest
+  - ser-harwick-plumm
+  - thoros-of-myr
   - westerosi-traveling-maester
 
 ---
@@ -44,6 +50,7 @@ planetos:
 ## by_quality
 
 full:
+  - beric-dondarrion
   - aisha-laborn
   - alec-vasil
   - amy-dallon
@@ -71,6 +78,11 @@ full:
   - taylor-hebert
   - thomas-calvert
   - westerosi-traveling-maester
+  - edric-cray
+  - lem-lemoncloak
+  - mira-stonefield
+  - ser-harwick-plumm
+  - thoros-of-myr
 
 scant:
   - peasant-woman-forest
@@ -92,7 +104,11 @@ ruthless-operator: [sophia-hess, colin-wallis]
 broken-by-circumstance: [elle-labyrinth, marissa-newland]
 noise-and-terror: [shatterbird, night-and-fog]
 political-power: [thomas-calvert]
-westerosi-local: [peasant-woman-forest, westerosi-traveling-maester]
+westerosi-local: [peasant-woman-forest, westerosi-traveling-maester, mira-stonefield, edric-cray]
+brutal-pragmatist: [lem-lemoncloak]
+dying-cause: [beric-dondarrion]
+faith-recovered: [thoros-of-myr]
+corrupt-official: [ser-harwick-plumm]
 
 ---
 
@@ -100,4 +116,6 @@ westerosi-local: [peasant-woman-forest, westerosi-traveling-maester]
 
 OC slots for margit to construct at project activation when a generic role is selected from the candidate menu. Listed here after authoring.
 
-(empty — populated during project activation)
+- mira-stonefield (riverlands-smallfolk-woman slot; authored dead-capes-in-westeros activation 2026-05-03)
+- edric-cray (riverlands-smallfolk-man slot; authored dead-capes-in-westeros activation 2026-05-03)
+- ser-harwick-plumm (oc-corrupt-official slot; authored dead-capes-in-westeros activation 2026-05-03)
