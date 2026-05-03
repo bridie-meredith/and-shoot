@@ -24,7 +24,7 @@ project activation → season start → episode start → shoot → and-wrap →
 
 | Agent | Role | Owned by |
 |-------|------|----------|
-| showrunner | Process director. Sole agent that addresses human. Holds series memory. | `staff/showrunner/` |
+| showrunner | Memory holder. Reads/writes series memory and state files. Does NOT orchestrate — command bodies do. No Agent tool. | `staff/showrunner/` |
 | screen-writer | Plan generator. Series/season/episode bullet plans. | `staff/screen-writer/` |
 | coach | Prompt translator. Bullet → impersonator prompt. | `staff/coach/` |
 | impersonator | Character primitive. One per active actor per episode. | spawned per-actor |
@@ -103,8 +103,8 @@ All file formats are defined in `schemas/`. Read the relevant schema before crea
 ## Rules
 
 1. Read the relevant schema before writing any new schema-typed file.
-2. Showrunner is the sole agent that addresses the human.
-3. Coach is the sole translator of bullets into prompts. Showrunner does not write impersonator prompts directly.
+2. Command bodies (`/and-project`, `/and-shoot`, `/and-wrap`) are the orchestrators. They dispatch sub-agents directly. Showrunner does NOT orchestrate and does NOT have the Agent tool — it is a memory holder only. Cascading dispatch through showrunner is the inline-simulation failure mode and is structurally prevented.
+3. Coach is the sole translator of bullets into prompts. The command body does not write impersonator prompts directly.
 4. Nothing moves without being recorded (state rule — absolute).
 5. The show file is append-only during shoot. Rejected lines are deleted before retry. Failed lines (budget exhausted) are marked [NEEDS_EDIT:] and left.
 6. Audience membership is defined at project activation. It does not change mid-episode.
