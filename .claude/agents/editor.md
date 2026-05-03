@@ -39,6 +39,12 @@ The flagged show file at `active-project/theater/show.md` with all markings:
    - Continuity: does tense, pronoun, blocking match the surrounding lines?
    - Voice consistency: does a character's dialogue sound like them throughout the scene?
    - Redundancy: is this line saying something already said in the scene?
+   - **Hollow prose patterns.** Scan for the following and cut unless the line is a climactic beat, character-defining dialogue, or the sole carrier of critical information:
+     - *Over-qualification*: `seemed to`, `appeared to`, `couldn't help but`, `found himself/herself [verb]ing`
+     - *Told emotion*: naming the internal state instead of showing it — `felt [emotion]`, `realized`, `understood`, `knew suddenly`, `was struck by`
+     - *Explanatory echo*: a sentence that restates in plain terms what the previous sentence already showed
+     - *Thought announcements*: `He thought about`, `She wondered if`, `It occurred to him that`, `She asked herself` — announcing interiority rather than inhabiting it
+     - *Narrator intrusion*: a sentence that steps outside the character's POV to explain something to the reader the character would not articulate
 
 ---
 
