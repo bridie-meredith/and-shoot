@@ -1,7 +1,63 @@
+# Audience STM — worm-canon-pedant
 STM:
-- Power mechanics accepted: shard-soul-link argument is canonically defensible; insect control persists in dragon body
-- Critical flag: Taylor cannot communicate verbally in S1; do not allow voice shortcuts; communication is behavior and bug deployment only
-- Flag: raven travel time must be realistic (1+ weeks to King's Landing); escalation cannot feel accelerated
-- Season chunks accepted at attempt 1; series chunks accepted at attempt 1
-- Watching for: any power extension beyond arthropod control without explicit authorization
-- Satisfied with: Gold Morning weight in Taylor's vibe-cloud; register as established by source card
+
+## Session: OQ-1 series planning review (2026-05-03)
+
+### Open question reviewed: OQ-1 reincarnation form (Taylor Hebert in Westeros)
+
+**Option A (she-dragon):** REVISE
+Reason: Translating Taylor into dragon cognition erases her defining mechanics (swarm multithreading, parallel sensory management, shard architecture) without acknowledging the departure. "Tactical mind" is asserted, not mechanically justified. The gap between how Taylor's power worked and what a dragon body actually provides is not bridged. This is an unmarked AU divergence of the deepest kind — it removes everything that makes her canonically her. Would accept only if the text explicitly acknowledges and justifies why her identity survives wholesale cognitive translation.
+
+**Option B (baseborn human, Riverlands):** ACCEPT
+Reason: Preserves Taylor's functional identity correctly. Baseline human rebuilding from scratch is exactly the canonical Taylor Hebert procedure. "Three moves ahead" is consistent with her character arc — this is not a power claim, it is a competence claim, and it is earned. Voice register is maintainable. No canonical contradictions in the premise as stated. This is the structurally honest option.
+
+**Option C (skinchanger/greensight):** REVISE
+Reason: "Degraded shadow of what she used to be" earns partial credit for naming the departure. But swarm awareness (real-time parallel sensory input from discrete organisms) and greensight (prophetic fragments, echoes, Old Gods channeling) are not cognate mechanics. The acknowledged departure doesn't justify the specific mapping — it just names a gap without bridging it. The text would need to do explicit mechanical work to establish why Taylor's shard-given cognitive architecture translates to this specific Westerosi phenomenon and not to something else entirely.
+
+### Aggregation result (round 1): Option A recommended (2/3 accept)
+This persona voted REVISE on A. Condition for accept: text must do explicit mechanical work to justify identity survival across cognitive translation — what carries over, what is lost, why.
+
+### Pattern flags for this project:
+- Canon mechanics erasure is the highest risk for this persona — any time Taylor's power set is replaced rather than translated, flag
+- Voice register will need monitoring once script is running; Taylor optimistic or Taylor uncertain are hard walkout triggers
+- AU divergences that name themselves earn tolerance; watch for unmarked contradictions as shoot progresses
+- Option A chosen: watch for any scene that asserts tactical cognition in dragon form without establishing the mechanical basis for it
+
+---
+
+## Session: OQ-2 and OQ-4 series planning review (2026-05-03)
+
+### Open question reviewed: OQ-2 era selection
+
+**Option A (105 AC):** REVISE
+Reason: Taylor's foreknowledge is her only structural advantage in a human body — an era where that knowledge does nothing for decades means her core competence is inert, and the text will need to manufacture drama rather than let her mechanics drive it.
+
+**Option B (120 AC):** ACCEPT
+Reason: Foreknowledge becomes immediately mechanically legible — she knows where this fracture is going, the people around her do not, and the gap between those two states is a live engine from scene one. No canon-mechanical contradiction; the architecture of her advantage is honest to her character.
+
+**Option C (130 AC):** REVISE
+Reason: Foreknowledge collapse is a canon-mechanical erasure of the primary thing that survived her reincarnation. The text would be removing her one carried competence without mechanical justification — equivalent to the dragon-body problem this persona already flagged in OQ-1.
+
+**OQ-2 verdict: Option B — ACCEPT**
+
+### Open question reviewed: OQ-4 parahuman capabilities
+
+**Option A (parallel control, fauna, physical cost):** ACCEPT
+Reason: Canonically honest translation — power survives transit, shard buffering does not, cost structure changes accordingly. Headaches and blackout on overuse are consistent with shard-support degradation. Mechanical logic is bridged, not asserted. AU divergence is named (Earthmade swarm → Westerosi fauna), which earns tolerance.
+
+**Option B (neural architecture as sixth sense):** REVISE
+Reason: "Hyperacute combat sixth sense" converts a mechanically specific power (parallel multithreading across discrete organisms) into a vague sensory enhancement with no bridging explanation. Taylor's power was not a martial arts boost — calling the residue "near-supernatural fighter" discards the actual architecture without justification.
+
+**Option C (complete severing):** ACCEPT
+Reason: Clean break is canonically coherent — if the shard doesn't come through, it doesn't. "Memories and tactical cognition" is an honest accounting of what a human brain can carry without paratech support. No mechanical contradiction; the departure is explicit.
+
+**OQ-4 verdict: Options A and C both ACCEPT; B — REVISE. Aggregate: Option A.**
+
+### Aggregation results (round 2):
+- OQ-2: Option B accepted (3/3)
+- OQ-4: Option A accepted (3/3); Option B rejected (3/3)
+
+### Updated pattern flags:
+- Era 120 AC confirmed — foreknowledge advantage is live from scene one; any scene where Taylor behaves as if she does not know where the succession fracture is heading is a register error
+- Power is parallel fauna control with physical cost — any scene where the cost plateaus or disappears without in-world explanation is a mechanical flag
+- Option B (sixth sense) rejected unanimously — do not reintroduce this framing through the back door by describing Taylor's combat instincts as "preternatural" or "inexplicable" without mechanical grounding
