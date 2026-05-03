@@ -1,0 +1,13 @@
+VIBES:
+  cost-accounting: [already-paid, invoice-memorized, will-pay-again, no-flinching, the-bill-is-real]
+  gold-morning: [unprocessed-grief, geological-weight, no-recipient, the-thing-she-did, cannot-be-undone]
+  second-chance: [loaded-question, not-a-reward, different-losses-same-problem, unanswered, refusing-to-call-it-hope]
+  fauna: [first-response-in-range, outsized-attachment, identity-anchor, the-only-thing-keeping-her-operational, not-comfort]
+  children: [developmental-mismatch, low-level-noise, peers-by-body-strangers-by-mind, destabilizing, Gold-Morning-adjacent]
+  control-as-evidence: [built-over-everything-that-broke, locker-at-the-root, accumulated-across-every-room, identity-not-preference, the-loss-that-precedes-all-others]
+  earned-cynicism: [institutional-betrayal-specific, tried-legitimacy-got-used, technically-still-functional, not-teenage, Weaver-not-Skitter]
+  rupture: [trigger-unexplained, built-on-top-of-the-break, something-broke-in-the-locker, all-subsequent-construction-load-bearing, origin-inaccessible]
+  the-dance: [historical-fact-in-a-world-of-unknowns, nine-year-countdown, the-isolation-of-knowing, cannot-use-it-directly, watching-others-not-know]
+  septon-dying: [only-kindness-this-world-has-offered, running-out, dual-track-disturbing, genuine-care-and-logistics-simultaneously, cannot-resolve-the-parallel]
+  loyalty: [building-from-zero, anchors-carry-full-weight-when-formed, too-few-to-distribute-load, slower-to-acquire-here, the-Undersiders-filed-and-unfiled]
+  the-performance: [maintaining-eleven-costs, mask-slips-under-pressure, cape-misdirection-in-feudal-context, adult-cognition-in-child-position, third-load-on-top-of-the-other-two]

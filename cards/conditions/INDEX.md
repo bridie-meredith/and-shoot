@@ -7,28 +7,36 @@ All ambient state modifier cards. Maintained by margit — update on every card 
 ## by_world
 
 planetos:
-  - condition-language-barrier
-  - condition-war-of-five-kings-riverlands
-  - condition-swarm-in-foreign-ecology
-  - condition-dragon-presence
-  - condition-targaryen-claim-disputed
-  - condition-riverlands-contested
+  - cond-fauna-control-rules
+  - cond-impressment-census-120ac
+  - cond-riverlands-120ac-state
+  - cond-westerosi-customary-authority
   - condition-dragon-bonding-incomplete
+  - condition-dragon-presence
+  - condition-language-barrier
+  - condition-riverlands-contested
   - condition-shard-in-dragon-body
+  - condition-swarm-in-foreign-ecology
+  - condition-targaryen-claim-disputed
+  - condition-war-of-five-kings-riverlands
 
 ---
 
 ## by_quality
 
 full:
-  - condition-language-barrier
-  - condition-war-of-five-kings-riverlands
-  - condition-swarm-in-foreign-ecology
-  - condition-dragon-presence
-  - condition-targaryen-claim-disputed
-  - condition-riverlands-contested
+  - cond-fauna-control-rules
+  - cond-impressment-census-120ac
+  - cond-riverlands-120ac-state
+  - cond-westerosi-customary-authority
   - condition-dragon-bonding-incomplete
+  - condition-dragon-presence
+  - condition-language-barrier
+  - condition-riverlands-contested
   - condition-shard-in-dragon-body
+  - condition-swarm-in-foreign-ecology
+  - condition-targaryen-claim-disputed
+  - condition-war-of-five-kings-riverlands
 
 ---
 
@@ -40,10 +48,12 @@ communication:
 ambient-danger:
   - condition-war-of-five-kings-riverlands
   - condition-riverlands-contested
+  - cond-riverlands-120ac-state
 
 power-mechanics:
   - condition-swarm-in-foreign-ecology
   - condition-shard-in-dragon-body
+  - cond-fauna-control-rules
 
 political-ambient:
   - condition-targaryen-claim-disputed
@@ -51,3 +61,13 @@ political-ambient:
 
 environmental:
   - condition-dragon-presence
+
+project-constraint:
+  - cond-fauna-control-rules
+  - cond-impressment-census-120ac
+  - cond-riverlands-120ac-state
+  - cond-westerosi-customary-authority
+
+social-physics:
+  - cond-westerosi-customary-authority
+  - cond-impressment-census-120ac

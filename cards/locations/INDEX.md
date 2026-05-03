@@ -9,6 +9,8 @@ All location cards. Maintained by margit — update on every card store or new a
 planetos:
   - forest-clearing-dusk
   - kings-landing-exterior
+  - loc-harrenhal-exterior
+  - loc-harrenhal-sept-environs
   - oc-riverlands-river-ford
   - oc-riverlands-ruined-tower
   - reach-smallfolk-village
@@ -23,6 +25,8 @@ planetos:
 full:
   - forest-clearing-dusk
   - kings-landing-exterior
+  - loc-harrenhal-exterior
+  - loc-harrenhal-sept-environs
   - oc-riverlands-river-ford
   - oc-riverlands-ruined-tower
   - reach-smallfolk-village
