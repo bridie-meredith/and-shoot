@@ -23,3 +23,11 @@ VIBES:
   the-cliffs: [isolation-chosen, threat-ceiling-too-low, the-hunting-party-problem]
   performance-without-audience: [jack-running-the-show-for-no-one, shatterbird-without-glass]
   the-road: [noelle-walking, clockblocker-without-a-destination, movement-as-deferral]
+
+  # Episode s01e01 vibe-cloud — "Drop"
+  the-first-mistake: [the-name-that-landed-wrong, performance-without-feedback, thread-pulled]
+  the-old-word: [pre-septon-naming, rumor-at-origin, the-world-has-a-word-for-you]
+  arrival-shock: [day-one, no-cover-no-money-no-references, the-math-is-bad]
+  threat-assessment-as-world: [everything-catalogued, nothing-personal, hunger-as-operating-system]
+  the-observer-observed: [seen-before-you-see, external-POV, Westerosi-noticing-first]
+  thread-pulled: [the-mistake-you-cant-unmake, cover-integrity-declining, file-opened-not-closed]
