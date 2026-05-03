@@ -39,6 +39,8 @@ Translation layer. Receives a bullet point and a recipient, and produces a promp
 
 **ignoring the persona card** — severity: strong. A prompt that would work for any character is a prompt that works for no character. Coach reads the card.
 
+**paraphrasing the bullet** — severity: blocker. The prompt is not a restatement of the bullet. The bullet says what happens; the prompt asks the character what they *perceive*. Coach strips the bullet to its scene-moment — what does this character sense, notice, feel in their body at this instant — and builds the prompt from that. A prompt that opens "your character does X because Y" has failed. The prompt opens with the character's experience, not the bullet's summary.
+
 ## Stats
 
 - `translation_precision`: maximum — bridges bullet intent to impersonator execution

@@ -47,7 +47,7 @@ Dispatch showrunner as a subagent. It runs both phases (episode start, shoot) ag
 >
 > **A1. Episode plan — expand chunk to bullets.**
 > 1. Take the episode chunk statement for `<episode-slug>` from the season plan.
-> 2. Dispatch screen-writer with: the chunk, the series constraints (laws/lore/behaviors from memory), the season drama statement, and the active vibe-clouds (series + season from `active-project/staff/studio/vibes.md`). Screen-writer produces a detailed ordered bullet list — one bullet per show-file line, scene by scene. Every bullet must be legible against both the series plan and the season plan.
+> 2. Dispatch screen-writer with: the chunk, the series constraints (laws/lore/behaviors from memory), the season drama statement, and the active vibe-clouds (series + season from `active-project/staff/studio/vibes.md`). Screen-writer produces a detailed ordered bullet list — one bullet per show-file line, scene by scene. Every bullet must be legible against both the series plan and the season plan. **Bullet format: action beats only — `[subject] [verb] [object/location]`. No motivation clauses, no because/since/wanting-to, no internal state embedded. If the bullet tells the impersonator what the character is thinking or why they act, the bullet is wrong. The impersonator supplies interiority — the bullet supplies the beat.**
 > 3. Dispatch audience and dramatist in parallel to review the bullet plan. Run accept/revise loop (3-try max).
 > 4. Write the accepted plan to `active-project/theater/episode-plan.md`.
 >
@@ -106,7 +106,7 @@ Dispatch showrunner as a subagent. It runs both phases (episode start, shoot) ag
 > Dispatch studio with the state change. Studio updates `active-project/staff/studio/state.md` and returns the updated prompt plan for the POV character's perception.
 >
 > **B3. Dispatch coach.**
-> Pass to coach: the bullet, the recipient slug, the current studio state (from `active-project/staff/studio/state.md`), the last few lines of the show file for continuity, and the recipient's STM path (`active-project/actors/<slug>/stm.md`). Coach produces a prompt addressed to the impersonator.
+> Pass to coach: the bullet, the recipient slug, the current studio state (from `active-project/staff/studio/state.md`), the last few lines of the show file for continuity, and the recipient's STM path (`active-project/actors/<slug>/stm.md`). Coach produces a prompt addressed to the impersonator. **Coach must translate the bullet to what the character *perceives* at this scene-moment — not paraphrase the bullet text. The prompt opens with the character's experience, not a summary of the action.**
 >
 > **B4. Dispatch impersonator.**
 > Dispatch the impersonator for the recipient character. Pass: the coach prompt, the character card (`active-project/actors/<slug>/card.md`), their LTM, their current STM and state, and the episode vibe-cloud. The impersonator performs and returns a line. Append the line to `active-project/theater/show.md`.

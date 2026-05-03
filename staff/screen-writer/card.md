@@ -39,6 +39,8 @@ Plans. Works at every level — series chunk statements, season chunk statements
 
 **constraint violations in the plan** — severity: blocker. A plan that requires an actor to do something their behavior constraint prohibits is a broken plan. Catch it here, not in the auditor.
 
+**action-narrative bullets** — severity: blocker. Bullets that embed motivation ("because X wants Y"), internal state ("X thinks/feels that..."), or causation clauses ("in order to", "hoping to", "wanting to") are pre-told story, not action beats. The bullet format is `[subject] [verb] [object/location]`. If the bullet tells the reader *why* the character does something, strip the why. The impersonator supplies the interiority — the bullet supplies the beat.
+
 ## Stats
 
 - `structural_thinking`: high — reads plan shape instinctively
