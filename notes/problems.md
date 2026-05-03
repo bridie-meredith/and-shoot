@@ -136,6 +136,51 @@ Issues that impeded intended function during activation. Ordered by severity.
 
 ---
 
+---
+
+## P13 — Auditor cannot write its own audit report (tool/spec mismatch)
+
+**Where:** `.claude/agents/auditor.md` tool config vs. `.claude/commands/and-project.md` step 1d and formal series-level audit step
+**What should happen:** Auditor produces a classified report and saves it to `active-project/staff/auditor/<scope>-audit.md`. The command spec says "auditor saves its full classified report here" and "even a clean pass must produce a report — a clean report proves the check ran."
+**What happened, run 1 (1d audit, per prior session summary):** Auditor returned findings as text only; no file written. Required dispatching fixer to write the audit report on auditor's behalf.
+**What happened, run 2 (this session, formal series audit):** Auditor returned the full classified report as text in its response, explicitly noting "I can only read files with my available tool ... I have no write tool, I'll deliver the full report as my response for the parent agent to handle." Orchestrator (me) wrote the file from the returned text.
+**Root cause:** Auditor agent's tool config grants `Read` only (per its description). The command spec instructs auditor to save a file. Auditor correctly does not invent a tool it lacks.
+**Impact:** The "audit report file as proof of execution" guarantee is broken at the agent level. Every auditor dispatch requires the orchestrator to relay the text into a Write call. If the orchestrator forgets, the audit trail vanishes silently.
+**Fix options (not yet applied):**
+  a. Grant auditor a `Write` tool restricted to `active-project/staff/auditor/`. Most direct.
+  b. Have a downstream agent (fixer) take auditor's text output and write the file as a standard chained step. Adds a step but preserves auditor's read-only posture.
+  c. Make the orchestrator's "write the audit report" step explicit in the command spec, so it cannot be skipped.
+**Status:** OPEN — workaround applied (orchestrator wrote file manually); structural fix pending.
+
+---
+
+## P14 — Drift between chunk body and planning note went undetected at season planning
+
+**Where:** `active-project/staff/showrunner/season-s01-plan.md` s01e04 chunk; series-level audit (`active-project/staff/auditor/series-audit.md` fault-001)
+**What should happen:** Season planning's accept/revise loop with audience + dramatist catches dramatic-tension issues (passive-witness episodes) before the season plan is written. Forward flags annotate chunks; chunks themselves carry the structural collision.
+**What happened:** During season planning, dramatist asked for an active intervention attempt in s01e04 (passive-witness concern). The fix was applied as a planning note appended to the chunk: *"E4 planning note: Taylor must make an active attempt to intervene in or delay the succession mechanism before it closes — the episode cannot be passive witness."* But the chunk body itself was not revised — it continued to describe Taylor as the passive subject of the succession mechanism. The chunk body and its own planning note ended up in direct tension. Season planning's accept/revise loop did not flag this; the formal series-level audit caught it as fault-001.
+**Root cause:** Planning notes were treated as additive (a constraint for episode-level shoot) rather than as a signal that the chunk itself needed rewriting. When a reviewer requests a structural change, appending a note that says "do this at the next level" is not equivalent to making the change at the current level.
+**Impact:** Season plan was technically accepted but had a latent fault that only the formal audit surfaced. If the formal audit hadn't run (P2-style failure), the s01e04 episode shoot would have proceeded from a chunk inconsistent with its own constraint and produced a passive-witness episode.
+**Fix options (not yet applied):**
+  a. Revise screen-writer / dramatist instructions: when a reviewer raises a structural concern, the chunk text must be revised to absorb the concern. Planning notes are reserved for shoot-level operational reminders that genuinely belong at the next level (e.g., "use detached register for maester assessment"), not as workarounds for chunk-body deficiencies.
+  b. Add a dramatist post-pass that explicitly checks chunk-body vs. planning-note coherence before season plan is finalized.
+**Status:** OPEN — current instance fixed by fixer (s01e04 chunk body now contains Taylor's intervention); structural prevention pending.
+
+---
+
+## P15 — `/and-project` argument parsing accepted ambiguous brief
+
+**Where:** `.claude/commands/and-project.md` validation step; this session's invocation
+**What should happen:** Command takes positional args: brief (quoted) + 3 audience slugs. Validator halts on missing/invalid slugs.
+**What happened:** User invoked with `taylor hebert post gold morning in westeros ... (Note: you should have everything needed in that brief to take care of all arguments)`. The literal tokens "post gold morning" appear in the brief as Worm lore (Post-Gold-Morning era), not as slug names. The validator could have halted (no audience slugs provided as separate args) but the orchestrator instead interpreted the brief and selected audience personas from the available library by content match (`worm-canon-pedant`, `pulp-enthusiast`, `dark-fantasy-reader`).
+**Impact:** Pipeline ran successfully but with audience selection done by orchestrator inference rather than by user specification. Reproducibility is reduced — a different orchestrator pass might pick different personas.
+**Fix options (not yet applied):**
+  a. Tighten validation: if positional args don't resolve cleanly to brief + 3 slugs, halt with usage message regardless of orchestrator inference.
+  b. Loosen spec officially: allow audience-by-inference as a documented mode, with the orchestrator required to log which personas it selected and why.
+**Status:** OPEN — current run logged the selection in the activation; no command spec change yet.
+
+---
+
 ## Summary table
 
 | # | Problem | Severity | Status |
@@ -152,3 +197,6 @@ Issues that impeded intended function during activation. Ordered by severity.
 | P10 | Chunk format suppressed dramatic tension | High | RESOLVED — plans need regeneration |
 | P11 | 1d constraint cards not added to library | Medium | RESOLVED — backfill needed |
 | P12 | Fixer memory empty | Medium | RESOLVED |
+| P13 | Auditor cannot write its own report | High | OPEN — workaround in place |
+| P14 | Chunk body / planning note drift undetected at season planning | High | OPEN — current instance fixed |
+| P15 | /and-project arg parsing accepted ambiguous brief | Medium | OPEN |
