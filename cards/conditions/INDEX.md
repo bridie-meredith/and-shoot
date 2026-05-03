@@ -9,7 +9,10 @@ All ambient state modifier cards. Maintained by margit — update on every card 
 planetos:
   - cond-fauna-control-rules
   - cond-impressment-census-120ac
+  - cond-no-parahuman-infrastructure
+  - cond-reincarnation-mechanics
   - cond-riverlands-120ac-state
+  - cond-series-tone-constraints
   - cond-westerosi-customary-authority
   - condition-dragon-bonding-incomplete
   - condition-dragon-presence
@@ -27,7 +30,10 @@ planetos:
 full:
   - cond-fauna-control-rules
   - cond-impressment-census-120ac
+  - cond-no-parahuman-infrastructure
+  - cond-reincarnation-mechanics
   - cond-riverlands-120ac-state
+  - cond-series-tone-constraints
   - cond-westerosi-customary-authority
   - condition-dragon-bonding-incomplete
   - condition-dragon-presence
@@ -65,8 +71,18 @@ environmental:
 project-constraint:
   - cond-fauna-control-rules
   - cond-impressment-census-120ac
+  - cond-no-parahuman-infrastructure
+  - cond-reincarnation-mechanics
   - cond-riverlands-120ac-state
+  - cond-series-tone-constraints
   - cond-westerosi-customary-authority
+
+protagonist-rules:
+  - cond-no-parahuman-infrastructure
+  - cond-reincarnation-mechanics
+
+tone-law:
+  - cond-series-tone-constraints
 
 social-physics:
   - cond-westerosi-customary-authority

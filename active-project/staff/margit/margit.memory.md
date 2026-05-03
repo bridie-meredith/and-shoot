@@ -113,6 +113,34 @@ All four authored to both library and warehouse. All added to cards/conditions/I
 
 ---
 
+---
+
+### TASK 7: Step 1d — World-law finalization audit — 2026-05-03
+
+**Gap analysis against world-notes.md:**
+
+Four gaps identified in the existing constraint card set:
+
+1. `cond-no-parahuman-infrastructure` — card already existed in library (authored prior to step 1d). Was NOT in active-project/warehouse. Copied to warehouse.
+
+2. `cond-reincarnation-mechanics` — gap confirmed. World-notes Laws "Reincarnation is a fresh start in a new body; there is no route back to Earth Bet" and "Taylor retains full memories" had no standalone constraint card. Persona card carried Taylor's experience; auditor had no reference card for violations. Authored and stored.
+
+3. `cond-series-tone-constraints` — gap confirmed. World-notes TONE section ("Fast, pulpy, dramatic. Action and escalation are the primary registers — not introspection, not chess-match scheming") is a production-level constraint applying to all agents, not just Taylor's persona. Persona card covers Taylor's behavior; this card covers the series-level production rules the auditor needs to flag register drift. Authored and stored.
+
+4. SOURCE constraints (Gold Morning closure, "cannot explain to anyone") — assessed as sufficiently covered by `taylor-hebert-westeros` persona card (Memory Burden section, forbidden-registers, Hard Fences). No standalone card needed for this specific item.
+
+**Cards authored this task:**
+
+| slug | status | library path | warehouse path |
+|---|---|---|---|
+| cond-no-parahuman-infrastructure | existed in library; added to warehouse | cards/conditions/cond-no-parahuman-infrastructure.card.md | active-project/warehouse/cond-no-parahuman-infrastructure.card.md |
+| cond-reincarnation-mechanics | new — authored | cards/conditions/cond-reincarnation-mechanics.card.md | active-project/warehouse/cond-reincarnation-mechanics.card.md |
+| cond-series-tone-constraints | new — authored | cards/conditions/cond-series-tone-constraints.card.md | active-project/warehouse/cond-series-tone-constraints.card.md |
+
+**Index updates:** cards/conditions/INDEX.md updated — all three slugs added to by_world (planetos), by_quality (full), by_type (project-constraint). Two new by_type buckets added: protagonist-rules and tone-law.
+
+---
+
 ### Pending items / flags
 
 - **taylor-hebert westeros variant** — RESOLVED. Card authored and stored. See TASK 6 below.
