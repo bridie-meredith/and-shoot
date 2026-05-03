@@ -12,7 +12,7 @@ quality: full
 
 # Westerosi Traveling Maester — Project Card (taylor-in-westeros)
 
-Source card: cards/personas/westerosi-traveling-maester.card.md — all sections apply.
+Source card: cards/personas/westerosi-traveling-maester.card.md — all sections apply EXCEPT the Thematic Purpose section, which references prior-project elements ("Tanya," "chain-2 collision") that are not relevant here. Impersonators: use Voice, Action Menu, Hard Fences, Default Stance, Triggers, Proactive Drives, and Bag of Tricks. Ignore Thematic Purpose.
 
 ## Project Entry State
 

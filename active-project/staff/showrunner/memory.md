@@ -53,8 +53,35 @@ seasons:
     chunk: "A hatchling dragon with no rider appears in the contested Riverlands; every lord, institution, and faction attempts to resolve this anomaly through existing categories; none of the categories work. The collision is between the Targaryen legal order and the dragon that will not be claimed; what cannot survive is the assumption that the anomaly can be contained by protocol alone."
     episodes:
       - slug: s01e01
+        status: active
+        chunk: "Taylor cracks out of a dragon egg in a forest clearing with full human consciousness and a body she has no map for; the egg's presence is immediately a political emergency for every party within ten miles. The collision is between her need to survive the first hours and the immediate mobilization of local actors to find what hatched; what cannot remain unchanged after it is whether a small dragon with no rider can go undetected in a world that notices everything."
+      - slug: s01e02
         status: planned
-        chunk: ~
+        chunk: "Rymer the hedge knight follows the trail and is the first human to establish sustained proximity without immediate flight or attack; the threshold is whether a non-verbal dragon can communicate enough to prevent a miscalculation; what cannot remain unchanged after it is either the relationship or the options it represents."
+      - slug: s01e03
+        status: planned
+        chunk: "The traveling maester achieves proximity close enough to form a correct hypothesis about Taylor's cognition and writes a raven; the collision is between his institutional obligation to report and the first evidence that reporting may produce a response she cannot survive; what cannot remain unchanged is the number of people who know what she is."
+      - slug: s01e04
+        status: planned
+        chunk: "Septon Rowan preaches his first structured theological account of the dragon and immediately produces smallfolk action; the collision is between his intent to provide meaning without harm and the fact that meaning produces motion; what cannot remain unchanged is the size of the human footprint approaching her territory."
+      - slug: s01e05
+        status: planned
+        chunk: "Ser Aemon Bracken arrives at the tower hill to assess and decide; the collision is between his calculation and the dragon's; what cannot remain unchanged is whether she has an ally or another enemy with a garrison."
+      - slug: s01e06
+        status: planned
+        chunk: "Taylor demonstrates the ruined tower hill is hers through behavior and a calculated minimum use of fire; local actors must decide whether to accept or contest; what cannot remain unchanged is whether she has a defensible base."
+      - slug: s01e07
+        status: planned
+        chunk: "News of the unclaimed dragon reaches King's Landing and Ser Edwyn Celtigar is dispatched; the collision is between administrative response time and the rate the local situation is setting itself; what cannot remain unchanged is the number of players with a direct mandate to resolve the anomaly."
+      - slug: s01e08
+        status: planned
+        chunk: "Ser Edwyn begins lord interviews and Ser Aemon's alliance is now a political fact; the collision is between Edwyn's competence and a protocol set that does not cover this situation; what cannot remain unchanged is whether Ser Aemon's position is liability or leverage."
+      - slug: s01e09
+        status: planned
+        chunk: "Ser Edwyn makes his first formal approach; it fails because she does not respond to Targaryen approach protocols; what cannot remain unchanged is whether Edwyn escalates, negotiates, or waits for instructions that will not arrive in time."
+      - slug: s01e10
+        status: planned
+        chunk: "Edwyn makes the administrative offer; the impasse is total because acceptance requires her to be a mount and she is not; what cannot remain unchanged is whether the next response from King's Landing escalates to destruction."
     next_season_sketch: Taylor has a territory and two allies; the Riverlands lords must now decide whether she is a resource or a threat worth removing.
 
   - slug: s02
@@ -83,4 +110,4 @@ seasons:
 
 active:
   season: s01
-  episode: ~
+  episode: s01e01
