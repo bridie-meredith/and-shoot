@@ -1,21 +1,22 @@
 ---
-description: Activate a new and-shoot project. Scaffolds active-project/, runs world-building and planning (steps 1a–1d, series plan, season 1 plan, episode 1 chunk), and presents output for human audit. Usage: /and-project <project-title-slug> "<brief>" <audience-slug-1> <audience-slug-2> <audience-slug-3>
+description: Activate a new and-shoot project. Scaffolds active-project/, runs world-building and planning (steps 1a–1d, series plan, season 1 plan, episode 1 chunk), and presents output for human audit. Usage: /and-project "<brief>" <audience-slug-1> <audience-slug-2> <audience-slug-3>
 ---
 
 Full project activation for the and-shoot pipeline. Three phases: scaffold (mechanical, direct), brief expansion (screen-writer), planning (you orchestrate directly). Human sees the planning output at the end — not the deliberation that produced it.
 
 You are the orchestrator for this command. You dispatch subagents directly — screen-writer, margit, dramatist, audience, auditor, fixer. Do not dispatch showrunner. Showrunner is not in the orchestration chain here.
 
+**All dispatches use the Agent tool.** Inline generation is not a valid substitute. An agent not spawned in its own isolated context will not have the role constraints the pipeline depends on.
+
 ## Args
 
-- `$1` — project title slug (lowercase-hyphenated). Required.
-- `$2` — the human brief, quoted as a single string. Everything the human said about the project: source world, destination world, characters, constraints, tone, anything. Pass verbatim — used in step 1a.
-- `$3 $4 $5` — the three audience persona slugs. Must exist as directories under `staff/audience/`. Audience membership is fixed at activation and does not change.
+- `$1` — the human brief, quoted as a single string. Everything the human said about the project: source world, destination world, characters, constraints, tone, anything. Pass verbatim — used in step 1a.
+- `$2 $3 $4` — the three audience persona slugs. Must exist as directories under `staff/audience/`. Audience membership is fixed at activation and does not change.
 
-All five arguments are required. If any are missing or any audience slug does not exist as a directory under `staff/audience/`, print:
+All four arguments are required. If any are missing or any audience slug does not exist as a directory under `staff/audience/`, print:
 
 ```
-Usage: /and-project <title-slug> "<brief>" <audience-slug-1> <audience-slug-2> <audience-slug-3>
+Usage: /and-project "<brief>" <audience-slug-1> <audience-slug-2> <audience-slug-3>
 Invalid: <list any missing or unrecognized args>
 ```
 
@@ -29,15 +30,21 @@ Execute mechanically. Do not delegate. Complete before proceeding to Phase 1.5.
 
 ### 1. Validate
 
-Verify $1 is provided and is a valid slug (lowercase, hyphens only). Verify each of $3/$4/$5 exists as a directory under `staff/audience/`. Fail with usage message if anything is missing or invalid.
+Verify $1 is provided. Verify each of $2/$3/$4 exists as a directory under `staff/audience/`. Fail with usage message if anything is missing or invalid.
 
-### 2. Create directory tree
+### 2. Shelve previous active-project
 
-Do not archive or move any existing active-project directory.
+If `active-project/` exists and contains any content beyond empty stub files (i.e., a prior project was run):
+1. Determine the next serial: list `projects/` for existing `project_NN` directories, take the highest N, increment by 1. First project shelves to `projects/project_01/`.
+2. Move `active-project/` to `projects/project_NN/`.
+3. Print: `Shelved previous project → projects/project_NN/`
+
+If `active-project/` does not exist or is empty (first run), skip this step.
+
+### 3. Create directory tree
 
 ```bash
 mkdir -p active-project/actors
-mkdir -p active-project/hopefuls
 mkdir -p active-project/warehouse
 mkdir -p active-project/audience/<audience-slug-1>
 mkdir -p active-project/audience/<audience-slug-2>
@@ -52,7 +59,7 @@ mkdir -p active-project/theater
 mkdir -p active-project/polish
 ```
 
-### 3. Write stub files
+### 4. Write stub files
 
 Write each with minimal valid content. Do not write empty files.
 
@@ -144,11 +151,11 @@ VIBES:
 STM:
 ```
 
-### 4. Confirm card library
+### 5. Confirm card library
 
 Verify `cards/personas/INDEX.md` and `cards/locations/INDEX.md` exist. Print line counts.
 
-### 5. Print scaffold complete
+### 6. Print scaffold complete
 
 ```
 Scaffold complete. Running brief expansion.
@@ -220,7 +227,9 @@ Escalate to the human only if options represent fundamentally incompatible story
 3. Propose a starter cast and key locations from the menu.
 4. Dispatch screen-writer with: the full candidate menu from `1c-candidate-menu.md`, the proposed cast, and the series constraints from `world-notes.md`. Screen-writer reviews for dramatic range — does the cast cover the tension axes the series needs? Dispatch dramatist to check structural viability. Run standard accept/revise loop (3-try max).
 5. Have margit provision selected actors into `active-project/actors/` and selected locations into `active-project/warehouse/`. Audience cards copied from `staff/audience/<slug>/card.md` into `active-project/audience/<slug>/card.md`.
-6. Populate each actor's `vibes.md`. For each actor: read their card and the series vibe-cloud. Derive their personal vibe-cloud — which world keys does this character activate, and what are their private associations? Write to `active-project/actors/<slug>/vibes.md`. Do not leave stubs. A stub is a silent failure.
+6. Populate each actor's `vibes.md`. For each actor: read their card and the series vibe-cloud. If the card contains a `## Vibe Seeds` section, read it — it carries accumulated history and private associations that the vibe-cloud should draw from. Derive their personal vibe-cloud — which world keys does this character activate, and what are their private associations? Write to `active-project/actors/<slug>/vibes.md`. Do not leave stubs. A stub is a silent failure.
+
+   **For characters arriving from source material with significant audience weight** (a protagonist with a full published story behind them, a canon character whose arc readers know): the vibe-cloud must reflect what they are carrying from that history, not only their situation at story open. Ask: what has this character already done, survived, lost, and done to others before this story begins? That accumulated weight shapes every key they activate. A character who has been through a war does not hold "cost-accounting" the same way a character who has only read about war does. The vibe-cloud must register the difference.
 7. Write cast to `series.cast_roster` in `active-project/staff/showrunner/memory.md`.
 
 **Log file: `active-project/staff/showrunner/1c-log.md`**
@@ -236,9 +245,9 @@ rejected candidates: <slug list, one line reason each>
 ---
 
 **1d — World-law finalization.**
-1. Dispatch margit to author law/lore/behavior constraint cards. Save to `active-project/warehouse/`.
+1. Dispatch margit to author law/lore/behavior constraint cards. Save to `active-project/warehouse/` AND add to the library: condition-class cards go to `cards/conditions/` and are indexed in `cards/conditions/INDEX.md`. Every card lives in the library as soon as it is authored — the warehouse copy is a working reference, not the primary store.
 2. Dispatch auditor (fork) for constraint-consistency check on the full constraint card set.
-3. Route any faults to fixer. Escalate only if unresolvable at this scope.
+3. Route any faults to fixer. Fixer writes a session log to `active-project/staff/fixer/fixer-log.md` for every fault resolved — even a one-line entry per fault. A silent fixer run is an incomplete fixer run. Escalate only if unresolvable at this scope.
 
 **Log file: `active-project/staff/auditor/1d-audit.md`**
 Auditor saves its full classified report here (schema: `schemas/audit-report.schema.md`). Even a clean pass must produce a report — a clean report proves the check ran.
@@ -248,7 +257,7 @@ Auditor saves its full classified report here (schema: `schemas/audit-report.sch
 **Series plan.**
 1. Build series vibe-cloud. Write to `active-project/staff/studio/vibes.md`.
 2. Establish series drama.
-3. Dispatch screen-writer with: the world-notes from `world-notes.md`, the series drama statement, the series vibe-cloud, the brief, and `active-project/staff/showrunner/brief-expansion.md`. Screen-writer writes one chunk statement per planned season. **Chunk format: external observable state-change — what a witness could report happening across that season. No motivation or causation embedded. "X and Y collide at Z" not "X pursues Y because they want Z."**
+3. Dispatch screen-writer with: the world-notes from `world-notes.md`, the series drama statement, the series vibe-cloud, the brief, and `active-project/staff/showrunner/brief-expansion.md`. Screen-writer writes one chunk statement per planned season. **Chunk format: name the collision and what cannot survive it. State what forces are building against each other and what the season's pressure costs or breaks. External and structural — not character psychology. Name stakes and collision shape, not why anyone feels or decides anything. Two sentences maximum. "X's operation grinds through the same ground Y is embedded in before the armies cross" not "X pursues Y because they want Z."**
 4. Dispatch audience and dramatist in parallel to review. Run accept/revise loop (3-try max).
 5. Write final series plan to `active-project/staff/showrunner/series-plan.md`. Update `active-project/staff/showrunner/memory.md`: write `series.theme`, `series.laws`, `series.lore`, `series.behaviors`, `series.plot` (start/end/protagonist_arc/series_question), and `series.stage_elements`.
 
@@ -267,7 +276,7 @@ dramatist verdict: <accept/revise> — <one line reason>
 **Season 1 plan.**
 1. Derive season vibe-cloud. Note deltas from series vibe-cloud. Append season section to `active-project/staff/studio/vibes.md`.
 2. Establish season drama.
-3. Dispatch screen-writer with: the series plan from `series-plan.md`, the season drama statement, the series and season vibe-clouds, the series constraints from memory, and `active-project/staff/showrunner/brief-expansion.md`. Screen-writer writes one chunk statement per episode. **Chunk format: external observable event, concrete and specific. No motivation or causation embedded. "X freezes the doorway and gets on the road" not "X runs because they fear being caught."**
+3. Dispatch screen-writer with: the series plan from `series-plan.md`, the season drama statement, the series and season vibe-clouds, the series constraints from memory, and `active-project/staff/showrunner/brief-expansion.md`. Screen-writer writes one chunk statement per episode. **Chunk format: the episode's central dramatic pressure — drama-sized, enough to fill a chapter, not a minor incident inside one. Name the collision or threshold the episode turns on, and what cannot remain unchanged after it. Concrete and specific, external and structural, no character psychology. "The soldier marks her location on a route-map from twelve feet away while Plumm's men inventory the settlement — she watches it happen and does not move" not "X runs because they fear being caught."**
 4. Dispatch audience and dramatist in parallel to review. Run accept/revise loop (3-try max).
 5. Write season plan to `active-project/staff/showrunner/season-s01-plan.md`. Update `active-project/staff/showrunner/memory.md`: set `routing.season_plan: active-project/staff/showrunner/season-s01-plan.md`; add the season to the `seasons` array with `status: active` and all episode slugs with `status: planned`; set `active.season: s01`.
 
@@ -293,7 +302,7 @@ Auditor saves its full classified report here (schema: `schemas/audit-report.sch
 Present to the human as the activation output — this is the series-level audit checkpoint.
 
 ```
---- ACTIVATION COMPLETE: <title-slug> ---
+--- ACTIVATION COMPLETE: <series-title from series-plan.md> ---
 
 SERIES
   Theme: ...

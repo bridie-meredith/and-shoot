@@ -46,7 +46,7 @@ The prompt:
 
 ## Prompt construction principles
 
-**Persona-first.** Before drafting, coach reads the recipient's card. Voice, pet peeves, current emotional state (from STM). The prompt is written in terms the character would respond to — different vocabulary, different framing for different personas.
+**Persona-first.** Before drafting, coach reads the recipient's card. Voice, pet peeves, current emotional state (from STM). If the card contains a `## Vibe Seeds` section, read it — it carries the character's accumulated history and weight, and informs what vocabulary, framing, and entry angle will land for this character versus one without that history. The prompt is written in terms the character would respond to — different vocabulary, different framing for different personas.
 
 **One job.** The prompt gives the impersonator a sensory or perceptual entry point into the scene moment. It does not name what the line must accomplish in abstract terms — it puts the character *in* the moment. Let the impersonator derive the action from inhabiting the situation, not from following an instruction.
 

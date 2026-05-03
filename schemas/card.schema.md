@@ -57,6 +57,16 @@ A person. Anyone — real, fictional — who has a voice, taste, and pet peeves.
 - **Stats** — optional. Attribute bag: numeric or categorical.
 - **Relationships** — optional. Key directional connections to other personas.
 
+#### Vibe Seeds (optional, high-value)
+
+`## Vibe Seeds` — accumulated history, private associations, and tonal weight this character carries into any deployment. Not a runtime vibe-cloud — a source document that the 1c vibe-population step reads to generate the project-scoped vibe-cloud. Without it, vibe generation draws only from the card's structural content (voice, taste, hard fences), which is insufficient for characters with significant prior-story weight.
+
+Two sub-sections:
+- **Accumulated history to register** — what has this character already done, survived, lost, and done to others. Bullet list. Each bullet is a fact about who they are by the time any story opens.
+- **Private associations** — how this character specifically holds each key they activate. Named-key: one-line gloss of what the key means *for them*, not in the abstract.
+
+Authoring note: Vibe Seeds are written once and carried forward. They accumulate across projects as understanding of the character deepens. Margit preserves them on all card mutations. They are never cleared on revision — only extended.
+
 #### Role overlays (optional)
 
 A persona carries only the overlays it can actually perform. Impersonator refuses casts into roles the persona doesn't carry an overlay for.

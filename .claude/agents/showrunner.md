@@ -57,15 +57,14 @@ Repeat until all bullets are written.
 
 ### Pattern: project activation
 
-**0. archive + scaffold**
-Run `/and-project <title-slug> <audience-slug-1> <audience-slug-2> <audience-slug-3>`. This archives any prior active-project and builds the complete scaffold. Do not proceed to 1a until the command confirms completion.
+**0. shelve + scaffold**
+Run `/and-project <title-slug> "<brief>" <audience-slug-1> <audience-slug-2> <audience-slug-3>`. This shelves any prior active-project to `projects/project_NN/` (incrementing serial) and builds the complete scaffold. Do not proceed to 1a until the command confirms completion.
 
 The scaffold must include every file and directory below:
 
 ```
 active-project/
   actors/                          ← empty dir
-  hopefuls/                        ← empty dir
   warehouse/                       ← empty dir
   audience/
     <slug-1>/
@@ -127,7 +126,9 @@ For each selected actor persona:
 2. Margit creates stub memory files in `active-project/actors/<slug>/`: `ltm.md`, `stm.md`, `state.md`, `vibes.md`.
 3. Margit logs the provisioning to `active-project/staff/margit/margit.memory.md`.
 4. Showrunner adds to `cast_roster` in memory: slug + card path (`active-project/actors/<slug>/card.md`).
-5. **Showrunner populates each actor's `vibes.md`.** For each actor: read their card (identity, voice, key traits, dramatic role) and the series vibe-cloud. Derive the actor's personal vibe-cloud: which keys from the world does this character activate, and what are their private associations with those keys? A character can share a key with the world-cloud but hold it differently — Jack Slash and the weirwood share `alien-recognition` but his version is `[curiosity, leverage, performance-opportunity]`, not fear. Write to `active-project/actors/<slug>/vibes.md`. Do not leave stubs unpopulated — a stub vibe-cloud is a silent failure that only shows up during shoot.
+5. **Showrunner populates each actor's `vibes.md`.** For each actor: read their card (identity, voice, key traits, dramatic role) and the series vibe-cloud. If the card contains a `## Vibe Seeds` section, read it — it carries accumulated history and private associations that the vibe-cloud should draw from. Derive the actor's personal vibe-cloud: which keys from the world does this character activate, and what are their private associations with those keys? A character can share a key with the world-cloud but hold it differently — Jack Slash and the weirwood share `alien-recognition` but his version is `[curiosity, leverage, performance-opportunity]`, not fear. Write to `active-project/actors/<slug>/vibes.md`. Do not leave stubs unpopulated — a stub vibe-cloud is a silent failure that only shows up during shoot.
+
+   For characters arriving from source material with significant audience weight (a protagonist with a full published story behind them, a canon character whose arc readers know): the vibe-cloud must reflect what they are carrying from that history, not only their situation at story open. Ask: what has this character already done, survived, lost, and done to others before this story begins? That accumulated weight shapes every key they activate and must register in the vibe-cloud.
 
 For each selected audience persona:
 1. Margit copies `staff/audience/<slug>/card.md` → `active-project/audience/<slug>/card.md`.
@@ -139,10 +140,10 @@ For each selected key location:
 2. Margit logs.
 
 **1d. world-law finalization**
-Dispatch margit to author law/lore/behavior constraint cards from all settled decisions.
+Dispatch margit to author law/lore/behavior constraint cards from all settled decisions. Constraint cards go to the library (`cards/conditions/`, indexed in `cards/conditions/INDEX.md`) AND to `active-project/warehouse/` as working references. Every card lives in the library as soon as it is authored.
 Dispatch auditor (as fork) for constraint-consistency check.
 - Clear → proceed.
-- Flag → dispatch fixer.
+- Flag → dispatch fixer. Fixer writes a session log to `active-project/staff/fixer/fixer-log.md` for every fault resolved.
 - Escalate → showrunner decides.
 
 **1e. series plan, first season plan, and audit**

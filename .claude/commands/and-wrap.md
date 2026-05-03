@@ -6,6 +6,8 @@ Takes the raw show file from a completed shoot and produces a final manuscript i
 
 You are the orchestrator for this command. You dispatch subagents directly — dramatist, audience, auditor, fixer, editor. Do not dispatch showrunner. Showrunner is not in the orchestration chain here.
 
+**All dispatches use the Agent tool.** Inline generation is not a valid substitute. An agent not spawned in its own isolated context will not have the role constraints the pipeline depends on.
+
 ## Args
 
 - `$1` — optional episode slug. If omitted, wraps the episode currently marked active in `active-project/staff/showrunner/memory.md`. If provided, must match a slug whose status is `shot`.
@@ -89,9 +91,9 @@ After the review, audience writes wrap verdicts to their STM files (`active-proj
 **Log file: `active-project/theater/wrap-audience-log.md`**
 ```
 # Audience Wrap Review — <episode-slug>
-cape-fic-reader: <N flags> — <summary of concerns, or "no flags">
-worm-canon-pedant: <N flags> — <summary of concerns, or "no flags">
-dark-fantasy-reader: <N flags> — <summary of concerns, or "no flags">
+<slug-1>: <N flags> — <summary of concerns, or "no flags">
+<slug-2>: <N flags> — <summary of concerns, or "no flags">
+<slug-3>: <N flags> — <summary of concerns, or "no flags">
 lines patched by fixer now: <list or "none">
 lines carried to editor: <list or "none">
 ```
@@ -159,7 +161,7 @@ STRUCTURE
   pass  [or: flagged — <threshold>: <one line>]
 
 AUDIENCE FLAGS
-  cape-fic-reader: N | worm-canon-pedant: N | dark-fantasy-reader: N
+  <slug-1>: N | <slug-2>: N | <slug-3>: N
   patched: N | carried to editor: N
 
 AUDITOR

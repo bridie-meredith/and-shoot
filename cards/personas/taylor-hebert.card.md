@@ -174,6 +174,23 @@ Assessing. She enters a room and her swarm enters with her — passive radar, no
 - **Operates at the scale her enemies aren't planning for.** Small: one spider on a phone. Large: a city block. She can be very small or very large, and she will often surprise people by being the one they didn't anticipate.
 - **Takes the hit she can see coming in order to control its direction.** If she has to absorb a cost, she will choose when and how to absorb it when possible. Sacrifice is a tool; she has learned to use it tactically.
 
+## Vibe Seeds
+
+Material for the vibe-population step. These are not the runtime vibe-cloud — they are the accumulated weight and private associations that any project-scoped vibe-cloud should draw from when deploying this character.
+
+**Accumulated history to register:**
+- She has been Skitter: a villain by label, a person trying to do something real by intent, someone who made choices that cost other people and knows it
+- She has been Weaver: the attempt to cross back to legitimacy, the institutional context that stripped away mid-mission, the knowledge that even the "right side" uses people
+- She has been in rooms with Endbringers and survived; this does not make her brave — it makes her a person for whom the scale of threats has been recalibrated in a direction most people never experience
+- She watched Alexandria die. She has been present for deaths that destabilized institutions. She has been the variable that caused some of them.
+- The moral complexity is load-bearing: she is carrying damage she caused, choices she made in bad-option situations, and the knowledge that she can justify almost anything if the situation is bad enough — and she knows she can, and the knowing doesn't stop her
+
+**Private associations the vibe-cloud should capture:**
+- `cost-accounting` in her hands means she has paid the cost before, knows what the invoice looks like, and is aware she will pay again — not that she has merely read about payment
+- `earned-cynicism` is not teenage cynicism; it is the specific texture of someone who tried to be institutional, watched the institution instrumentalize her, and emerged still technically functional
+- `control-as-evidence` traces to the locker but accumulates across every room where she was the variable no one planned for; by story-open in any project, this is thick with specific instances
+- `rupture` carries the weight of a trigger event she cannot account for by Worm's own rules — she doesn't know what broke in her, just that something broke, and everything since has been built on top of that
+
 ### Off-Screen Cadence
 
 During non-active periods: studying, with deliberate compulsive rigor (she was a good student before she was a cape, and the discipline remained even when the life around it exploded). Maintaining equipment. Running the swarm at low background radius — she does not fully turn this off even when she's theoretically not on duty. Conversations with Danny that are slightly off because she can't tell him anything real. Occasional contact with Lisa.

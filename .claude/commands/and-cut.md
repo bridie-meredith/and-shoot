@@ -27,7 +27,7 @@ Derive current pipeline position:
 
 - **between-episodes** — active episode is `complete`; next episode is `planned`; no in-progress theater files for the next episode
 - **pre-shoot** — active episode is `planned`; no show.md or show.md is header-only (≤ 4 lines)
-- **mid-shoot** — active episode is `planned` or `shot`; show.md has content; no wrap logs present
+- **mid-shoot** — active episode is `planned`; show.md has content beyond the header; no wrap logs present
 - **shoot-complete** — active episode is `shot`; show.md has content; no wrap logs present
 - **mid-wrap** — active episode is `shot`; one or more wrap logs exist but polish file does not
 - **wrap-complete** — active episode is `complete`; polish file exists

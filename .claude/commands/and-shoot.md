@@ -6,6 +6,8 @@ Takes the active episode chunk from showrunner memory and produces a raw show fi
 
 You are the orchestrator for this command. You dispatch subagents directly — coach, impersonator, studio, screen-writer, audience, dramatist. Do not dispatch showrunner. Showrunner is not in the orchestration chain here.
 
+**All dispatches use the Agent tool.** Inline generation is not a valid substitute. An impersonator not spawned in its own isolated context will not produce character-true output — it will produce the orchestrator's voice wearing a label.
+
 ## Args
 
 - `$1` — optional episode slug (e.g., `s01e01`). If omitted, shoots the episode currently marked active in `active-project/staff/showrunner/memory.md`. If provided, must match a slug in the season plan.
@@ -68,12 +70,12 @@ Dispatch studio with the episode's opening location (from the bullet plan). Stud
 **A5. Open show file.**
 Write the show file header to `active-project/theater/show.md`:
 ```
-# <Episode Slug>: <Episode Title from season plan>
-# chunk: <chunk statement>
-# active audience: <slug-1>, <slug-2>, <slug-3>
-# opened: <date>
+episode: <slug> — <Episode Title from season plan>
+chunk: <chunk statement>
+audience: <slug-1>, <slug-2>, <slug-3>
+opened: <date>
 ```
-The show file is now open. It is append-only until shoot is complete.
+Plain text only — no markdown. The show file is now open. It is append-only until shoot is complete.
 
 **A6. Confirm audience.**
 Verify all three audience persona cards exist at `active-project/audience/<slug>/card.md`. Note their slugs for the shoot loop.
@@ -145,7 +147,6 @@ RAW SHOW FILE
   active-project/theater/show.md
 
 LOG FILES
-  active-project/theater/episode-plan.md
   active-project/theater/episode-plan-log.md
   active-project/theater/shoot-log.md
 
