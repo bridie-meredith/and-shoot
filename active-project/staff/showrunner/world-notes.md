@@ -5,6 +5,7 @@
 Law: Protagonist is Taylor Hebert (Worm). Full memories of her life intact at reincarnation, including Gold Morning.
 Law: Taylor carries the weight of Gold Morning — total civilizational loss, everyone she knew is gone. She cannot explain this to anyone in Westeros.
 Law: She arrives with parahuman tactical cognition but parahuman abilities status is an open question (OQ-4).
+Law: On Earth-Bet, George R.R. Martin's ASOIAF / Fire & Blood series exists as published fiction. Taylor read it — at minimum the core ASOIAF novels and the portions of Fire & Blood covering the Dance of Dragons. She has event-level historical knowledge of the Dance (who fights, who dies, how it ends) plus the broad shape of ASOIAF events. She does not have personal knowledge of any Westerosi character — she knows Rhaenyra's arc from the books, not from having met her. The distinction between historical-fictional knowledge and actual-personal knowledge is a hard fence on her behavior.
 
 # DESTINATION
 Law: Setting is Westeros (ASOIAF/Fire & Blood universe).

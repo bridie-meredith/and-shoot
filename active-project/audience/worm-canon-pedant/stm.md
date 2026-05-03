@@ -83,3 +83,25 @@ Reason: Two simultaneous threats with no clean resolution channel — correct ca
 - Both A and C confirmed structurally honest; if A is selected, the "years of mapping without witnesses" detail must be honored — any scene where Taylor's network has gaps she should have already filled is a register error
 - If C is selected, the Harrenhal location must carry its correct Planetos weight — wrongness of the place must register in how characters relate to it, not just as backdrop
 - Option B rejected: do not reintroduce Riverrun-adjacent positioning as a way to deliver foreknowledge payoffs — it reads as arranged staging
+
+---
+
+## Session: Series plan review — four season chunks (2026-05-03)
+
+### Season 1 — ACCEPT
+Reason: The fauna network becoming legible through coherence (not carelessness) is canonically honest — this is Taylor's exact visibility problem. Co-option into a structure she did not choose is the correct Taylor consequence: not clean exit, complicated entrapment.
+
+### Season 2 — ACCEPT
+Reason: "Intervention too precise, too decisive" is verbatim Taylor Hebert self-sabotage — the escalation reflex firing at the wrong moment and burning cover she spent years building is the canonical pattern executed correctly in a new theater.
+
+### Season 3 — ACCEPT
+Reason: Both factions treating her as a resource to acquire rather than a person choosing an alliance is the precise inversion of Skitter's S9 arc — she is the object of faction pressure, not the agent making a choice. Broker's death as structural isolation (not dramatic confrontation) propagates correctly.
+
+### Season 4 — ACCEPT
+Reason: "The mechanism by which the catastrophe consumes her" is the canonical Taylor terminal — what she builds is what makes her too visible to survive. Foreknowledge advantage is correctly exhausted by this point; she knew it was coming, lived through it arriving anyway.
+
+### Updated pattern flags for shoot:
+- Season 1: the fauna network becoming visible must be shown as a coherence signal, not a mistake — Taylor does not slip up; the network is too organized to be natural
+- Season 2: the lord's survival must not be framed as a win — Taylor violated her operating procedure and paid; any scene that treats the household survival as net-positive without acknowledging the cover cost is a register error
+- Season 3: broker must be killed by external faction logic, not by anything traceable to Taylor's error — the isolation must be world-caused, not self-caused
+- Season 4: "consumes her" must be a mechanical consequence, not a metaphor for "forces a hard choice" — if Taylor survives Season 4 with her network intact and a reasonable position, this was not consumption
