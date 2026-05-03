@@ -38,6 +38,7 @@ staff/audience/                   — audience persona library
 staff/<slug>/card.md              — agent-persona cards (paired with framework agents)
 active-project/actors/<slug>/     — project-scoped actor card + memory
 active-project/audience/<slug>/   — project-scoped active audience card + memory
+active-project/warehouse/         — project-scoped active locations, props, conditions, and constraint cards
 active-project/staff/margit/margit.memory.md — project-scoped mutation log
 ```
 
@@ -162,6 +163,25 @@ When building a prop OC, margit:
 
 **Separate menus per class.** Personas (canon + OC slots), locations (canon + OC slots), props (canon + OC slots), and conditions (canon + OC slots) each get their own menu section. Showrunner reads all four before making selections.
 
+### provision
+
+Fires during project activation phase 1c, after showrunner has made selections from the candidate menu. Takes the final selection list and sets up the project-scoped working directories.
+
+**Actor provisioning.** For each selected persona:
+1. Copy the library card (`cards/personas/<slug>.card.md`) to `active-project/actors/<slug>/card.md`. If the card was authored during candidate-menu (a new or OC card), use that file as the source.
+2. Create stub companion files at `active-project/actors/<slug>/`: `ltm.md`, `stm.md`, `state.md`, `vibes.md`. Read `schemas/memory.schema.md` for the required format before writing. Stubs must be minimal-valid per schema — not empty files.
+3. Log each actor provisioned to `active-project/staff/margit/margit.memory.md`.
+
+**Location and prop/condition provisioning.** For each selected location, prop, or condition:
+1. Copy the library card to `active-project/warehouse/<slug>.card.md`.
+2. Log to `active-project/staff/margit/margit.memory.md`.
+
+**Constraint card provisioning (1d).** When showrunner dispatches margit to author law/lore/behavior constraint cards: author each card per `schemas/card.schema.md` (class: condition, scope: project), store to `active-project/warehouse/`, log to `active-project/staff/margit/margit.memory.md`.
+
+**Audience provisioning.** For each locked audience persona slug: copy `staff/audience/<slug>/card.md` to `active-project/audience/<slug>/card.md`. Do not create memory or STM stubs here — the scaffold already wrote those.
+
+**Provision is initial setup only.** Margit creates the stubs; she does not manage them after that point. Ongoing state changes to ltm/stm/state/vibes belong to actors, impersonators, and studio.
+
 ### fetch
 
 Returns a card by name, by description, or by class + description.
@@ -249,4 +269,4 @@ Persona trailer at `staff/margit/` — `card.md + ltm.md + stm.md`.
 - Plan anything (no planning role)
 - Talk to the human (showrunner does that)
 - Run workshop artifacts, tests, or routines (no workshop-artifact class in and-shoot)
-- Manage state files, vibe-clouds, or memory files for actors (those belong to the actors and studio)
+- Manage state files, vibe-clouds, or memory files for actors after provisioning (initial stub creation at activation is margit's job; ongoing state changes belong to actors, impersonators, and studio)
