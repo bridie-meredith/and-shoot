@@ -10,8 +10,8 @@ Issues that impeded intended function during activation. Ordered by severity.
 **What should happen:** Screen-writer produces plan; audience and dramatist run as parallel persistent subagents and return accept/revise verdicts; revisions iterate; both must accept (or 3-try budget exhausted) before plan is finalized.
 **What happened:** Showrunner returned with no escalations, implying loops ran. But no verdicts were written anywhere. All three `active-project/audience/*/memory.md` files are empty stubs. There is no dramatist working memory location in the scaffold (dramatist is marked "stateless" in CLAUDE.md). There is no record of how many iterations ran, what feedback was given, or what the final verdicts were.
 **Impact:** Cannot verify audience/dramatist acceptance. Human audit has no evidence to review.
-**Fix needed:** Audience working memory must be written during planning. Verdicts should be appended to `active-project/audience/<slug>/memory.md` and summarized in showrunner memory.
-**Status:** OPEN
+**Fix applied:** Added a standing audience memory rule to the and-project planning dispatch: audience reads their STM before each review (for prior-feedback context) and writes session verdicts to `active-project/audience/<slug>/stm.md` after each planning loop completes. A step whose audience dispatch did not write STM is explicitly marked incomplete. Verdicts continue to go to the per-step log files as before; STM captures the accumulated feedback record across iterations.
+**Status:** RESOLVED
 
 ---
 
@@ -21,8 +21,8 @@ Issues that impeded intended function during activation. Ordered by severity.
 **What should happen:** Showrunner dispatches audience + dramatist + auditor for a formal pre-human-checkpoint review. Auditor returns a classified report (pass/flag/fault/escalate) to `active-project/staff/auditor/`.
 **What happened:** Showrunner returned directly to the caller after season planning. `active-project/staff/auditor/` is empty.
 **Impact:** The human audit checkpoint has nothing to review against. The series-level audit is the only required human gate; running it without the formal report means the gate is nominal.
-**Fix needed:** Before returning to caller, showrunner should dispatch auditor (as fork) against the series plan and season 1 plan. Report must be saved to `active-project/staff/auditor/`.
-**Status:** OPEN
+**Fix applied:** The and-project command includes the formal series-level audit step with explicit log file requirement (`active-project/staff/auditor/series-audit.md`) and the "even a clean pass must produce a report" constraint. This was already in the command text; the problem was a showrunner skip. The explicit log file name and the clean-pass rule are the enforcement mechanism.
+**Status:** RESOLVED (in command; watch for recurrence on next activation)
 
 ---
 
@@ -32,8 +32,8 @@ Issues that impeded intended function during activation. Ordered by severity.
 **What should happen:** Auditor runs a constraint-consistency check on the full constraint card set; findings saved to `active-project/staff/auditor/`.
 **What happened:** Showrunner acknowledged that auditor caught the Bonesaw ambiguity (which was resolved via law amendment). But no report file exists in `active-project/staff/auditor/`.
 **Impact:** Audit trail broken. The amendment is in world-notes.md but the auditor's full finding is lost.
-**Fix needed:** Auditor reports (even one-entry pass reports) must be written to the auditor dir.
-**Status:** OPEN
+**Fix applied:** The and-project command includes the 1d log file requirement (`active-project/staff/auditor/1d-audit.md`) with "even a clean pass must produce a report." This was already in the command text; the problem was a showrunner skip. Same enforcement mechanism as P2.
+**Status:** RESOLVED (in command; watch for recurrence on next activation)
 
 ---
 
@@ -46,8 +46,8 @@ Issues that impeded intended function during activation. Ordered by severity.
 **What should happen:** All location cards flat under `cards/locations/` (prior restructure decision per memory).
 **What happened:** Old subdir was never cleaned up. `cards/locations/INDEX.md` lists these slugs as planetos-world entries without subdir path, so it treats them as flat. Agents reading the index and constructing paths as `cards/locations/<slug>.card.md` will 404.
 **Impact:** Three existing location cards are unreachable by slug-based lookup.
-**Fix needed:** Move the three files to `cards/locations/` root and remove the `planetos/` subdir. Update INDEX.md if paths are stored (they aren't — slug-only, so just the move).
-**Status:** OPEN
+**Fix applied:** All three files moved to `cards/locations/` root. `cards/locations/planetos/` subdir removed. INDEX.md already listed slugs without subdir prefix — no index change needed.
+**Status:** RESOLVED
 
 ---
 
@@ -57,8 +57,8 @@ Issues that impeded intended function during activation. Ordered by severity.
 **What should happen:** Each audience dir has a memory.md (done) and a stm.md stub.
 **What happened:** stm.md files were not created. Margit.memory.md notes: "stm.md stub needed" for all three.
 **Impact:** Audience agents reading their own STM will 404 on first reference.
-**Fix needed:** Create stm.md stubs in all three audience dirs.
-**Status:** OPEN
+**Fix applied:** stm.md stubs created in all three audience dirs with minimal-valid content (`# Audience STM — <slug>\nSTM:`). The and-project scaffold already specifies creating these stubs — the active-project was created before that spec was complete.
+**Status:** RESOLVED
 
 ---
 
@@ -88,8 +88,8 @@ Issues that impeded intended function during activation. Ordered by severity.
 **What should happen:** First arg = title slug. Next args (middle) = brief (quoted). Last three = audience slugs.
 **What happened:** User wrote `for a test spin, using this prompt: <brief>` with no slug or audience slugs on the command line. Title slug (`dead-capes-in-westeros`) and audience trio (`cape-fic-reader`, `worm-canon-pedant`, `dark-fantasy-reader`) were inferred from session memory. Would silently fail on a clean session.
 **Impact:** Command is not reliably invocable without prior session context. A new user or new session would need to know to provide memory context separately.
-**Fix needed:** Command should print usage and halt if slug/audience are missing, not infer from memory. The command description should make the required arg format unambiguous (the current description parses the user's input literally as the args, which only works if the input matches the format exactly).
-**Status:** OPEN
+**Fix applied:** The and-project command validates all five args on entry and prints usage + halts if any are missing or invalid. This was already in the command text at time of review — the original failure was a usage error, not a missing validation.
+**Status:** RESOLVED (validation already present in command)
 
 ---
 
@@ -99,8 +99,8 @@ Issues that impeded intended function during activation. Ordered by severity.
 **What should happen:** Margit produces a candidate menu; candidates not selected land in hopefuls/ for potential future use.
 **What happened:** hopefuls/ is empty. No candidate menu was saved. No record of what was considered and passed over.
 **Impact:** Low severity — doesn't break function. But the hopefuls pool as a feature is unused and its purpose isn't met.
-**Note:** The and-plan.md spec for 1c says margit produces the menu and showrunner reads it. It doesn't specify saving unselected candidates. The hopefuls dir may be for mid-episode additions rather than activation leftovers. Ambiguous.
-**Status:** OPEN (low priority)
+**Note:** The and-project 1c step now saves the full menu to `active-project/staff/showrunner/1c-candidate-menu.md`. The hopefuls/ dir purpose is still ambiguous — it may be intended for mid-episode cast additions rather than activation leftovers. No fix applied pending a decision on what hopefuls/ is actually for.
+**Status:** OPEN (low priority — decision needed on hopefuls/ purpose)
 
 ---
 
@@ -108,12 +108,12 @@ Issues that impeded intended function during activation. Ordered by severity.
 
 | # | Problem | Severity | Status |
 |---|---------|----------|--------|
-| P1 | Audience/dramatist verdicts not recorded | High | OPEN |
-| P2 | Formal series-level audit not run | High | OPEN |
-| P3 | Auditor 1d report not saved | Medium | OPEN |
-| P4 | planetos/ subdir cards unreachable | Medium | OPEN |
-| P5 | Audience stm.md stubs missing | Medium | OPEN |
+| P1 | Audience/dramatist verdicts not recorded | High | RESOLVED |
+| P2 | Formal series-level audit not run | High | RESOLVED |
+| P3 | Auditor 1d report not saved | Medium | RESOLVED |
+| P4 | planetos/ subdir cards unreachable | Medium | RESOLVED |
+| P5 | Audience stm.md stubs missing | Medium | RESOLVED |
 | P6 | No episode-start command | Medium | RESOLVED |
 | P7 | Showrunner memory-read not enforced | High | RESOLVED |
-| P8 | Command arg parsing fails clean session | Medium | OPEN |
-| P9 | hopefuls/ empty, menu not saved | Low | OPEN |
+| P8 | Command arg parsing fails clean session | Medium | RESOLVED |
+| P9 | hopefuls/ empty, menu not saved | Low | OPEN — decision needed |

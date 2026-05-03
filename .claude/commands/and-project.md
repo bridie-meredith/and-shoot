@@ -169,6 +169,8 @@ Dispatch showrunner as a subagent. Pass the brief and the locked configuration. 
 >
 > Run project activation steps 1a through first season planning. At each step that dispatches a subagent, **record the subagent's verdict in the log file for that step** before continuing. Details below.
 >
+> **Standing audience memory rule (applies to every audience dispatch in this activation):** Before dispatching audience to review a plan, pass them the path to their STM files (`active-project/audience/<slug>/stm.md`) so they load prior feedback first. After the planning loop for that step concludes (accepted or exhausted), audience writes the session verdicts — which persona accepted/rejected, what the specific feedback was, and whether prior complaints were addressed — to each `active-project/audience/<slug>/stm.md`. This is what makes their feedback persistent across iterations. A planning step whose audience dispatch did not write to STM has not completed correctly.
+>
 > ---
 >
 > **1a (internal):** Read the brief. Write decided constraints to `active-project/staff/showrunner/world-notes.md`. Write open questions (dependency-ordered) to `active-project/staff/showrunner/open-questions.md`. Do not surface these to the caller — proceed immediately to 1b.
