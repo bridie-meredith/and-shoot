@@ -176,7 +176,7 @@ Dispatch showrunner as a subagent. Pass the brief and the locked configuration. 
 > ---
 >
 > **1b — Open question resolution.** For each OQ in dependency order:
-> 1. Dispatch screen-writer with the question and constraints.
+> 1. Dispatch screen-writer with: the open question, the full decided constraints from `world-notes.md`, and the brief verbatim. Screen-writer proposes 2–3 concrete options, each stated as a decided fact — not a rationale, not a narrative. "The setting is X" not "The setting could be X because Y."
 > 2. Dispatch dramatist and audience in parallel to review screen-writer's options.
 > 3. Record the loop result and decision.
 > 4. Append decision to `world-notes.md`.
@@ -200,7 +200,7 @@ Dispatch showrunner as a subagent. Pass the brief and the locked configuration. 
 > 1. Dispatch margit for candidate menu (personas, locations, conditions).
 > 2. Save the full menu to `active-project/staff/showrunner/1c-candidate-menu.md`.
 > 3. Propose a starter cast and key locations from the menu.
-> 4. Dispatch screen-writer to review for dramatic range. Dispatch dramatist to check structural viability. Run standard accept/revise loop (3-try max).
+> 4. Dispatch screen-writer with: the full candidate menu from `1c-candidate-menu.md`, the proposed cast, and the series constraints from `world-notes.md`. Screen-writer reviews for dramatic range — does the cast cover the tension axes the series needs? Dispatch dramatist to check structural viability. Run standard accept/revise loop (3-try max).
 > 5. Have margit provision selected actors into `active-project/actors/` and selected locations into `active-project/warehouse/`. Audience cards copied from `staff/audience/<slug>/card.md` into `active-project/audience/<slug>/card.md`.
 > 6. Populate each actor's `vibes.md`. For each actor: read their card and the series vibe-cloud. Derive their personal vibe-cloud — which world keys does this character activate, and what are their private associations? Write to `active-project/actors/<slug>/vibes.md`. Do not leave stubs. A stub is a silent failure.
 > 7. Write cast to `series.cast_roster` in `active-project/staff/showrunner/memory.md`.
@@ -230,9 +230,9 @@ Dispatch showrunner as a subagent. Pass the brief and the locked configuration. 
 > **Series plan.**
 > 1. Build series vibe-cloud. Write to `active-project/staff/studio/vibes.md`.
 > 2. Establish series drama.
-> 3. Dispatch screen-writer to write season chunk statements.
+> 3. Dispatch screen-writer with: the world-notes from `world-notes.md`, the series drama statement, the series vibe-cloud, and the brief. Screen-writer writes one chunk statement per planned season. **Chunk format: external observable state-change — what a witness could report happening across that season. No motivation or causation embedded. "X and Y collide at Z" not "X pursues Y because they want Z."**
 > 4. Dispatch audience and dramatist in parallel to review. Run accept/revise loop (3-try max).
-> 5. Write final series plan to `active-project/staff/showrunner/series-plan.md`. Update showrunner memory.
+> 5. Write final series plan to `active-project/staff/showrunner/series-plan.md`. Update `active-project/staff/showrunner/memory.md`: write `series.theme`, `series.laws`, `series.lore`, `series.behaviors`, `series.plot` (start/end/protagonist_arc/series_question), and `series.stage_elements`.
 >
 > **Log file: `active-project/staff/showrunner/series-plan-log.md`**
 > Append one block per attempt:
@@ -247,11 +247,11 @@ Dispatch showrunner as a subagent. Pass the brief and the locked configuration. 
 > ---
 >
 > **Season 1 plan.**
-> 1. Derive season vibe-cloud. Note deltas from series vibe-cloud.
+> 1. Derive season vibe-cloud. Note deltas from series vibe-cloud. Append season section to `active-project/staff/studio/vibes.md`.
 > 2. Establish season drama.
-> 3. Dispatch screen-writer to write episode chunk statements.
+> 3. Dispatch screen-writer with: the series plan from `series-plan.md`, the season drama statement, the series and season vibe-clouds, and the series constraints from memory. Screen-writer writes one chunk statement per episode. **Chunk format: external observable event, concrete and specific. No motivation or causation embedded. "X freezes the doorway and gets on the road" not "X runs because they fear being caught."**
 > 4. Dispatch audience and dramatist in parallel to review. Run accept/revise loop (3-try max).
-> 5. Write season plan to `active-project/staff/showrunner/season-s01-plan.md`.
+> 5. Write season plan to `active-project/staff/showrunner/season-s01-plan.md`. Update `active-project/staff/showrunner/memory.md`: set `routing.season_plan: active-project/staff/showrunner/season-s01-plan.md`; add the season to the `seasons` array with `status: active` and all episode slugs with `status: planned`; set `active.season: s01`.
 >
 > **Log file: `active-project/staff/showrunner/season-s01-plan-log.md`**
 > Same format as series-plan-log.md.
