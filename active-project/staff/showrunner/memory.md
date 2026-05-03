@@ -57,7 +57,7 @@ seasons:
     chunk: Six isolated capes discover they are not alone, negotiate survival in Westerosi society, and begin converging toward each other and King's Landing while shards' reactions to Westerosi magic escalate from background pressure to active disruption.
     episodes:
       - slug: s01e01
-        status: planned
+        status: shot
         chunk: Three simultaneous snapshots — Jack's first mistake with a lordling, Dennis's day-one power exposure creating the time-witch rumor, the Crawler-dragon seen from a ship and reported to King's Landing.
       - slug: s01e02
         status: planned
