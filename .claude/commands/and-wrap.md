@@ -45,7 +45,7 @@ Dispatch showrunner as a subagent. It runs the full wrap pipeline agent-to-agent
 >
 > ## STEP 1 — Dramatist: structure review
 >
-> Dispatch dramatist with the completed show file and the episode plan. Dramatist checks four thresholds:
+> Dispatch dramatist with: the completed show file, the episode plan, the series plan (`active-project/staff/showrunner/series-plan.md`), and the active season plan (path from `routing.season_plan` in memory). Dramatist checks four thresholds:
 > - **Problem solves:** the episode's central problem reaches resolution (even if partial or pyrrhic)
 > - **End state ≠ start state:** at least one meaningful thing has changed — character, relationship, situation, world
 > - **Builds toward season finale:** the episode advances or complicates the season arc
@@ -81,12 +81,14 @@ Dispatch showrunner as a subagent. It runs the full wrap pipeline agent-to-agent
 >
 > ## STEP 3 — Audience: entertainment review
 >
-> Dispatch all three audience agents to read the flagged show file in full. Each identifies:
+> Dispatch all three audience agents with: the flagged show file, the episode vibe-cloud (from `active-project/staff/studio/vibes.md`), and their STM files (`active-project/audience/<slug>/stm.md` — load prior feedback before reviewing). Each identifies:
 > - Lines that land flat or feel inert
 > - Moments that break immersion or feel out of register with the vibe-cloud
 > - Any exchanges that are actively bad — confusing, boring, false to character
 >
 > Each audience agent marks qualifying lines in the show file as `[⚑ audience: <slug>: <reason>]`.
+>
+> After the review, audience writes wrap verdicts to their STM files (`active-project/audience/<slug>/stm.md`) — what they flagged, what they accepted, and why. A wrap review that does not write to STM has not completed correctly.
 >
 > **Log file: `active-project/theater/wrap-audience-log.md`**
 > ```
@@ -146,6 +148,7 @@ Dispatch showrunner as a subagent. It runs the full wrap pipeline agent-to-agent
 > 3. **Timeskip check:** if the next episode picks up significantly later in time, update affected actor state files (`active-project/actors/<slug>/state.md`) and studio state (`active-project/staff/studio/state.md`) to reflect what changed during the gap.
 > 4. **Off-scene event check:** if something significant happened off-screen between episodes, record it in the relevant actor LTMs and append to `active-project/staff/showrunner/world-notes.md`.
 > 5. Default: no timeskip, no off-scene event → memory stays exactly where the show file left it. Do not advance state without a reason.
+> 6. **Actor memory close (mandatory).** For each actor active this episode: read the show file and identify any significant events — relationship shifts, discoveries, arc notes, residue that will carry forward. Append qualifying events to `active-project/actors/<slug>/ltm.md` (format: `[YYYY-MM-DD] EVENT: what changed | why significant`). Then prune `active-project/actors/<slug>/stm.md` to ~10 items: keep only what is genuinely on top of mind going into the next episode. Overwrite STM — do not append. If no significant events occurred, still confirm the STM is current. A missing or stale LTM/STM at episode close is a schema violation.
 >
 > ---
 >
