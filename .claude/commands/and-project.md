@@ -203,7 +203,7 @@ Dispatch showrunner as a subagent. Pass the brief and the locked configuration. 
 > ---
 >
 > **1b — Open question resolution.** For each OQ in dependency order:
-> 1. Dispatch screen-writer with: the open question, the full decided constraints from `world-notes.md`, and the brief verbatim. Screen-writer proposes 2–3 concrete options, each stated as a decided fact — not a rationale, not a narrative. "The setting is X" not "The setting could be X because Y."
+> 1. Dispatch screen-writer with: the open question, the full decided constraints from `world-notes.md`, the brief verbatim, and `active-project/staff/showrunner/brief-expansion.md`. Screen-writer proposes 2–3 concrete options, each stated as a decided fact — not a rationale, not a narrative. "The setting is X" not "The setting could be X because Y."
 > 2. Dispatch dramatist and audience in parallel to review screen-writer's options.
 > 3. Record the loop result and decision.
 > 4. Append decision to `world-notes.md`.
@@ -257,7 +257,7 @@ Dispatch showrunner as a subagent. Pass the brief and the locked configuration. 
 > **Series plan.**
 > 1. Build series vibe-cloud. Write to `active-project/staff/studio/vibes.md`.
 > 2. Establish series drama.
-> 3. Dispatch screen-writer with: the world-notes from `world-notes.md`, the series drama statement, the series vibe-cloud, and the brief. Screen-writer writes one chunk statement per planned season. **Chunk format: external observable state-change — what a witness could report happening across that season. No motivation or causation embedded. "X and Y collide at Z" not "X pursues Y because they want Z."**
+> 3. Dispatch screen-writer with: the world-notes from `world-notes.md`, the series drama statement, the series vibe-cloud, the brief, and `active-project/staff/showrunner/brief-expansion.md`. Screen-writer writes one chunk statement per planned season. **Chunk format: external observable state-change — what a witness could report happening across that season. No motivation or causation embedded. "X and Y collide at Z" not "X pursues Y because they want Z."**
 > 4. Dispatch audience and dramatist in parallel to review. Run accept/revise loop (3-try max).
 > 5. Write final series plan to `active-project/staff/showrunner/series-plan.md`. Update `active-project/staff/showrunner/memory.md`: write `series.theme`, `series.laws`, `series.lore`, `series.behaviors`, `series.plot` (start/end/protagonist_arc/series_question), and `series.stage_elements`.
 >
@@ -276,7 +276,7 @@ Dispatch showrunner as a subagent. Pass the brief and the locked configuration. 
 > **Season 1 plan.**
 > 1. Derive season vibe-cloud. Note deltas from series vibe-cloud. Append season section to `active-project/staff/studio/vibes.md`.
 > 2. Establish season drama.
-> 3. Dispatch screen-writer with: the series plan from `series-plan.md`, the season drama statement, the series and season vibe-clouds, and the series constraints from memory. Screen-writer writes one chunk statement per episode. **Chunk format: external observable event, concrete and specific. No motivation or causation embedded. "X freezes the doorway and gets on the road" not "X runs because they fear being caught."**
+> 3. Dispatch screen-writer with: the series plan from `series-plan.md`, the season drama statement, the series and season vibe-clouds, the series constraints from memory, and `active-project/staff/showrunner/brief-expansion.md`. Screen-writer writes one chunk statement per episode. **Chunk format: external observable event, concrete and specific. No motivation or causation embedded. "X freezes the doorway and gets on the road" not "X runs because they fear being caught."**
 > 4. Dispatch audience and dramatist in parallel to review. Run accept/revise loop (3-try max).
 > 5. Write season plan to `active-project/staff/showrunner/season-s01-plan.md`. Update `active-project/staff/showrunner/memory.md`: set `routing.season_plan: active-project/staff/showrunner/season-s01-plan.md`; add the season to the `seasons` array with `status: active` and all episode slugs with `status: planned`; set `active.season: s01`.
 >
