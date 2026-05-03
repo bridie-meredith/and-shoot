@@ -4,6 +4,8 @@ description: Run a full episode shoot: expand the active episode chunk to a bull
 
 Takes the active episode chunk from showrunner memory and produces a raw show file in `active-project/theater/show.md`. Covers two phases: episode start (plan) and shoot (show file). Wrap is a separate command.
 
+You are the orchestrator for this command. You dispatch subagents directly — coach, impersonator, studio, screen-writer, audience, dramatist. Do not dispatch showrunner. Showrunner is not in the orchestration chain here.
+
 ## Args
 
 - `$1` — optional episode slug (e.g., `s01e01`). If omitted, shoots the episode currently marked active in `active-project/staff/showrunner/memory.md`. If provided, must match a slug in the season plan.
@@ -18,6 +20,8 @@ Read `active-project/staff/showrunner/memory.md`. Confirm:
 - The episode's status in the season plan is `planned` (not already `complete` or `wrapped`)
 - The season plan file for the active season exists
 
+Read the active season plan file (path is in memory under `routing.season_plan`) and the series plan (`routing.series_plan`). Both must be in context before episode planning begins.
+
 If anything is missing or the episode is not in `planned` status, print the problem and stop.
 
 Also check: if `active-project/theater/show.md` already exists with content beyond the header (more than 4 lines), stop and print:
@@ -29,127 +33,104 @@ Delete show.md and shoot-log.md manually to restart from scratch, then re-run /a
 
 ---
 
-## Phase 2 — Dispatch showrunner
+## Phase A — Episode Start
 
-Dispatch showrunner as a subagent. It runs both phases (episode start, shoot) agent-to-agent with no further input from this command.
+At each step that dispatches a subagent, record the result in the log file for that step before continuing. A missing log file means the step did not run.
 
-**Prompt to showrunner:**
+**A1. Episode plan — expand chunk to bullets.**
+1. Take the episode chunk statement for the active episode from the season plan.
+2. Dispatch screen-writer with: the chunk, the series constraints (laws/lore/behaviors from memory), the season drama statement, and the active vibe-clouds (series + season from `active-project/staff/studio/vibes.md`). Screen-writer produces a detailed ordered bullet list — one bullet per show-file line, scene by scene. Every bullet must be legible against both the series plan and the season plan. **Bullet format: action beats only — `[subject] [verb] [object/location]`. No motivation clauses, no because/since/wanting-to, no internal state embedded. If the bullet tells the impersonator what the character is thinking or why they act, the bullet is wrong. The impersonator supplies interiority — the bullet supplies the beat.**
+3. Dispatch audience and dramatist in parallel to review the bullet plan. Run accept/revise loop (3-try max).
+4. Write the accepted plan to `active-project/theater/episode-plan.md`.
 
-> Read `active-project/staff/showrunner/memory.md` before proceeding. That is your working state.
->
-> Also read the active season plan file (path is in memory under `routing.season_plan`) and the series plan (`routing.series_plan`). Both must be in context before episode planning begins.
->
-> The active episode is `<episode-slug>`. Run both phases below. At each step that dispatches a subagent, record the result in the log file for that step before continuing. A missing log file means the step did not run.
->
-> ---
->
-> ## PHASE A — EPISODE START
->
-> **A1. Episode plan — expand chunk to bullets.**
-> 1. Take the episode chunk statement for `<episode-slug>` from the season plan.
-> 2. Dispatch screen-writer with: the chunk, the series constraints (laws/lore/behaviors from memory), the season drama statement, and the active vibe-clouds (series + season from `active-project/staff/studio/vibes.md`). Screen-writer produces a detailed ordered bullet list — one bullet per show-file line, scene by scene. Every bullet must be legible against both the series plan and the season plan. **Bullet format: action beats only — `[subject] [verb] [object/location]`. No motivation clauses, no because/since/wanting-to, no internal state embedded. If the bullet tells the impersonator what the character is thinking or why they act, the bullet is wrong. The impersonator supplies interiority — the bullet supplies the beat.**
-> 3. Dispatch audience and dramatist in parallel to review the bullet plan. Run accept/revise loop (3-try max).
-> 4. Write the accepted plan to `active-project/theater/episode-plan.md`.
->
-> **Log file: `active-project/theater/episode-plan-log.md`**
-> One block per attempt:
-> ```
-> ## Attempt N
-> audience verdict: <accept/revise> — <one line reason>
-> dramatist verdict: <accept/revise> — <one line reason>
->
-> ## Final verdict: accepted at attempt N  [or: exhausted — proceeding with attempt 3]
-> ```
->
-> **A2. Derive episode vibe-cloud.**
-> Derive the episode vibe-cloud from the bullet plan and the series/season vibes. Append an episode-level section to `active-project/staff/studio/vibes.md`. Do not overwrite the series or season sections.
->
-> **A2b. Refresh actor vibes.**
-> For each actor active in this episode: check whether the episode vibe-cloud introduces keys that are absent from their `active-project/actors/<slug>/vibes.md`. If the episode activates something new for this character — a new location, a new relationship state, a new pressure — add the key with character-specific associations. Do not overwrite existing keys unless the character's relationship to that key has genuinely shifted. This is an additive pass, not a rebuild.
->
-> **A3. Prep cast.**
-> For each character active in this episode: confirm their actor dir exists at `active-project/actors/<slug>/`. Build a routing map (internal — not a file) of which characters appear in which scenes, drawn from the bullet plan.
->
-> **A4. Prep studio.**
-> Dispatch studio with the episode's opening location (from the bullet plan). Studio reads the relevant location card from `active-project/warehouse/`, reads any relevant prop and condition cards, and writes the initial environment state to `active-project/staff/studio/state.md`. Studio also writes the scene-open prompt plan to `active-project/staff/studio/stm.md` — the environmental detail the opening POV impersonator will be asked to perceive.
->
-> **A5. Open show file.**
-> Write the show file header to `active-project/theater/show.md`:
-> ```
-> # <Episode Slug>: <Episode Title from season plan>
-> # chunk: <chunk statement>
-> # active audience: <slug-1>, <slug-2>, <slug-3>
-> # opened: <date>
-> ```
-> The show file is now open. It is append-only until shoot is complete.
->
-> **A6. Confirm audience.**
-> Verify all three audience persona cards exist at `active-project/audience/<slug>/card.md`. Note their slugs for the shoot loop.
->
-> ---
->
-> ## PHASE B — SHOOT
->
-> Open `active-project/theater/shoot-log.md` with a header:
-> ```
-> # Shoot Log — <episode-slug>
-> # bullets: <total count from episode plan>
-> ```
->
-> For each bullet in the episode plan (in order):
->
-> **B1. Identify recipient.**
-> - Actor line → identify which character's impersonator receives the prompt.
-> - Environment line → studio records the state change first; the POV impersonator perceives it after.
->
-> **B2. Studio first (environment lines only).**
-> Dispatch studio with the state change. Studio updates `active-project/staff/studio/state.md` and returns the updated prompt plan for the POV character's perception.
->
-> **B3. Dispatch coach.**
-> Pass to coach: the bullet, the recipient slug, the current studio state (from `active-project/staff/studio/state.md`), the last few lines of the show file for continuity, and the recipient's STM path (`active-project/actors/<slug>/stm.md`). Coach produces a prompt addressed to the impersonator. **Coach must translate the bullet to what the character *perceives* at this scene-moment — not paraphrase the bullet text. The prompt opens with the character's experience, not a summary of the action.**
->
-> **B4. Dispatch impersonator.**
-> Dispatch the impersonator for the recipient character. Pass: the coach prompt, the character card (`active-project/actors/<slug>/card.md`), their LTM, their current STM and state, and the episode vibe-cloud. The impersonator performs and returns a line. Append the line to `active-project/theater/show.md`.
->
-> If the impersonator rejects the prompt (impossible or out of character): note the reason. Dispatch coach with the rejection + original bullet. Coach reformulates. This consumes one try.
->
-> **B5. Audience review.**
-> Dispatch all three audience agents in parallel. Each reads the new line in context of the last few lines of the show file. Each returns accept or reject with a one-line reason. Aggregate: if any audience agent rejects, the line is rejected.
->
-> - **Accept:** proceed to next bullet.
-> - **Reject:** delete the last line from `active-project/theater/show.md`. Dispatch coach with the original bullet + all three audience verdicts. Coach revises the prompt. Return to B4. This consumes one try.
->
-> **Three-try budget:** shared across all failure types for the line (audience rejects + impersonator rejects). If budget exhausted: keep the most recent line as-is, mark it `[⚑ needs edit: <reason>]` in the show file, move to next bullet.
->
-> **Append to shoot-log.md after each bullet:**
-> ```
-> ## Bullet N — <recipient slug> — <one-word scene label>
-> attempts: N | outcome: clean / retried / NEEDS_EDIT
-> [if retried or NEEDS_EDIT: one line per attempt — who rejected and why]
-> ```
->
-> **Actor state after each line:** if the impersonator's action implies a state change (moved, picked up object, emotional shift), update `active-project/actors/<slug>/stm.md`. Environmental state changes go to studio → `active-project/staff/studio/state.md`.
->
-> **Continue until all bullets are complete.** Do not stop for single-line problems — mark and move on.
->
-> ---
->
-> ## RETURN TO CALLER
->
-> Return concise summary (no transcripts, no deliberation):
-> - Episode slug and title
-> - Bullet count; how many were clean / retried / NEEDS_EDIT
-> - Show file path
-> - Any escalations requiring human decision
-> - Log files written (list of paths)
->
-> Mark the episode status as `shot` in `active-project/staff/showrunner/memory.md` (seasons[].episodes[].status). Do not advance `active.episode` yet — that happens in wrap.
+**Log file: `active-project/theater/episode-plan-log.md`**
+One block per attempt:
+```
+## Attempt N
+audience verdict: <accept/revise> — <one line reason>
+dramatist verdict: <accept/revise> — <one line reason>
+
+## Final verdict: accepted at attempt N  [or: exhausted — proceeding with attempt 3]
+```
+
+**A2. Derive episode vibe-cloud.**
+Derive the episode vibe-cloud from the bullet plan and the series/season vibes. Append an episode-level section to `active-project/staff/studio/vibes.md`. Do not overwrite the series or season sections.
+
+**A2b. Refresh actor vibes.**
+For each actor active in this episode: check whether the episode vibe-cloud introduces keys that are absent from their `active-project/actors/<slug>/vibes.md`. If the episode activates something new for this character — a new location, a new relationship state, a new pressure — add the key with character-specific associations. Do not overwrite existing keys unless the character's relationship to that key has genuinely shifted. This is an additive pass, not a rebuild.
+
+**A3. Prep cast.**
+For each character active in this episode: confirm their actor dir exists at `active-project/actors/<slug>/`. Build a routing map (internal — not a file) of which characters appear in which scenes, drawn from the bullet plan.
+
+**A4. Prep studio.**
+Dispatch studio with the episode's opening location (from the bullet plan). Studio reads the relevant location card from `active-project/warehouse/`, reads any relevant prop and condition cards, and writes the initial environment state to `active-project/staff/studio/state.md`. Studio also writes the scene-open prompt plan to `active-project/staff/studio/stm.md` — the environmental detail the opening POV impersonator will be asked to perceive.
+
+**A5. Open show file.**
+Write the show file header to `active-project/theater/show.md`:
+```
+# <Episode Slug>: <Episode Title from season plan>
+# chunk: <chunk statement>
+# active audience: <slug-1>, <slug-2>, <slug-3>
+# opened: <date>
+```
+The show file is now open. It is append-only until shoot is complete.
+
+**A6. Confirm audience.**
+Verify all three audience persona cards exist at `active-project/audience/<slug>/card.md`. Note their slugs for the shoot loop.
 
 ---
 
-## On return
+## Phase B — Shoot
 
-Take showrunner's return. Present it to the human.
+Open `active-project/theater/shoot-log.md` with a header:
+```
+# Shoot Log — <episode-slug>
+# bullets: <total count from episode plan>
+```
+
+For each bullet in the episode plan (in order):
+
+**B1. Identify recipient.**
+- Actor line → identify which character's impersonator receives the prompt.
+- Environment line → studio records the state change first; the POV impersonator perceives it after.
+
+**B2. Studio first (environment lines only).**
+Dispatch studio with the state change. Studio updates `active-project/staff/studio/state.md` and returns the updated prompt plan for the POV character's perception.
+
+**B3. Dispatch coach.**
+Pass to coach: the bullet, the recipient slug, the current studio state (from `active-project/staff/studio/state.md`), the last few lines of the show file for continuity, and the recipient's STM path (`active-project/actors/<slug>/stm.md`). Coach produces a prompt addressed to the impersonator. **Coach must translate the bullet to what the character *perceives* at this scene-moment — not paraphrase the bullet text. The prompt opens with the character's experience, not a summary of the action.**
+
+**B4. Dispatch impersonator.**
+Dispatch the impersonator for the recipient character. Pass: the coach prompt, the character card (`active-project/actors/<slug>/card.md`), their LTM, their current STM and state, and the episode vibe-cloud. The impersonator performs and returns a line. Append the line to `active-project/theater/show.md`.
+
+If the impersonator rejects the prompt (impossible or out of character): note the reason. Dispatch coach with the rejection + original bullet. Coach reformulates. This consumes one try.
+
+**B5. Audience review.**
+Dispatch all three audience agents in parallel. Each reads the new line in context of the last few lines of the show file. Each returns accept or reject with a one-line reason. Aggregate: if any audience agent rejects, the line is rejected.
+
+- **Accept:** proceed to next bullet.
+- **Reject:** delete the last line from `active-project/theater/show.md`. Dispatch coach with the original bullet + all three audience verdicts. Coach revises the prompt. Return to B4. This consumes one try.
+
+**Three-try budget:** shared across all failure types for the line (audience rejects + impersonator rejects). If budget exhausted: keep the most recent line as-is, mark it `[⚑ needs edit: <reason>]` in the show file, move to next bullet.
+
+**Append to shoot-log.md after each bullet:**
+```
+## Bullet N — <recipient slug> — <one-word scene label>
+attempts: N | outcome: clean / retried / NEEDS_EDIT
+[if retried or NEEDS_EDIT: one line per attempt — who rejected and why]
+```
+
+**Actor state after each line:** if the impersonator's action implies a state change (moved, picked up object, emotional shift), update `active-project/actors/<slug>/stm.md`. Environmental state changes go to studio → `active-project/staff/studio/state.md`.
+
+**Continue until all bullets are complete.** Do not stop for single-line problems — mark and move on.
+
+---
+
+## Phase C — Close and present
+
+Mark the episode status as `shot` in `active-project/staff/showrunner/memory.md` (seasons[].episodes[].status). Do not advance `active.episode` yet — that happens in wrap.
+
+Present to the human:
 
 ```
 --- SHOOT COMPLETE: <episode-slug> ---
@@ -171,15 +152,15 @@ LOG FILES
 [Shoot complete. Review show.md, then run /and-wrap to close the episode.]
 ```
 
-If showrunner returned escalations, present them before the closing line with: `ESCALATIONS REQUIRING YOUR DECISION:` followed by each one.
+If there are escalations requiring human decision, present them before the closing line with: `ESCALATIONS REQUIRING YOUR DECISION:` followed by each one.
 
 ---
 
 ## Notes
 
-- Impersonators are dispatched per-line during shoot, not pre-spawned. Showrunner routes from the cast routing map it built in A3.
+- Impersonators are dispatched per-line during shoot, not pre-spawned. Route from the cast routing map built in A3.
 - Studio is dispatched before coach on environment lines — coach needs updated state to compose a valid prompt.
 - The show file is append-only during shoot. Rejected lines are deleted before retry. The file never accumulates failed attempts.
-- Audience agents run in parallel per line. All three verdicts return before showrunner decides.
+- Audience agents run in parallel per line. All three verdicts return before proceeding.
 - The shoot log is the shoot's audit trail. Every bullet gets an entry regardless of outcome.
 - Episode status is set to `shot` on return. Wrap reads this status before it will run.
