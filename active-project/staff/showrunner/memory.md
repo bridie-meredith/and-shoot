@@ -7,15 +7,33 @@ routing:
   season_plan: ~
 
 series:
-  theme: ~
-  laws: []
-  lore: []
-  behaviors: []
+  theme: The cost of building when everything resists you — and what you become in the process of building it anyway.
+  laws:
+    - Taylor Hebert is the protagonist. Full Gold Morning memories intact at reincarnation.
+    - Taylor reincarnates as a baseborn human girl. No title, no house, no recognized identity.
+    - The Riverlands are already in conflict at the story opening — no peaceful establishment arc.
+    - Story begins 120 AC. Dance of Dragons ignites ~129 AC — approximately 9 years of story.
+    - Taylor retains parallel multithreaded fauna control (insects, rats, ravens, non-complex fauna). Without shard buffering, use is physically punishing — cost curve in cond-fauna-control-rules.
+    - On Earth-Bet, ASOIAF/Fire & Blood is published fiction. Taylor has event-level historical knowledge of the Dance. Historical knowledge is not personal knowledge — hard fence.
+    - Reincarnation is a fresh start. No route back to Earth Bet. Gold Morning is closed.
+    - No parahuman infrastructure in Westeros. No Shards, no PRT, no containment protocols.
+  lore:
+    - The Dance of Dragons is historical fact Taylor can anticipate; Westerosi characters cannot.
+    - Westeros runs on blood legitimacy; Taylor has none and cannot fake an origin.
+    - Riverlands lords are intensifying faction pressure at 120 AC — foraging, impressment, extortion.
+    - Harrenhal has just changed hands to a Hightower-affiliated castellan (Lord Corwyn Hatch).
+  behaviors:
+    - Fast, pulpy, dramatic. Action and escalation are the primary registers. Not introspection-dominant, not chess-match scheming.
+    - Taylor's escalation-reflex is structural: every escalation in Westeros has political or physical consequences she must navigate.
+    - Violence-as-fluency — she speaks organized violence more fluently than almost anyone in this world.
+    - Being correct and three moves ahead buys survival, not status. The environment punishes her constantly.
+    - The feudal order does not adapt to Taylor; she must adapt to it or die.
+    - Complications must escalate through each season, not concentrate at season finales (S1 pulp-enthusiast condition).
   plot:
-    start: ~
-    end: ~
-    protagonist_arc: ~
-    series_question: ~
+    start: 120 AC, age 11, orphan ward at Harrenhal-shadow sept, three simultaneous opening pressures
+    end: Dance of Dragons theater, ground-level network consumed by the war it was built to survive
+    protagonist_arc: Anonymity → Invisibility → Neutrality → Sovereignty, each lost in sequence; the thing she built from nothing becomes the mechanism of her consumption
+    series_question: Can someone who already paid the full price once build enough from nothing to matter when the second catastrophe arrives — and should they?
   cast_roster:
     - taylor-hebert-westeros
     - septon-dying-protector
@@ -29,7 +47,21 @@ series:
     - ser-harwick-plumm
     - ser-edwyn-celtigar
     - rhaenyra-targaryen
-  stage_elements: []
+  stage_elements:
+    - loc-harrenhal-sept-environs
+    - loc-harrenhal-exterior
+    - westerosi-smallfolk-dwelling-interior
+    - westerosi-smallfolk-village-common
+    - oc-riverlands-ruined-tower
+    - oc-riverlands-river-ford
+    - forest-clearing-dusk
+    - cond-fauna-control-rules
+    - cond-impressment-census-120ac
+    - cond-riverlands-120ac-state
+    - cond-westerosi-customary-authority
+    - cond-no-parahuman-infrastructure
+    - cond-reincarnation-mechanics
+    - cond-series-tone-constraints
 
 seasons: []
 

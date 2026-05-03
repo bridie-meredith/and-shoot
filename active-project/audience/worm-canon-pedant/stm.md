@@ -105,3 +105,6 @@ Reason: "The mechanism by which the catastrophe consumes her" is the canonical T
 - Season 2: the lord's survival must not be framed as a win — Taylor violated her operating procedure and paid; any scene that treats the household survival as net-positive without acknowledging the cover cost is a register error
 - Season 3: broker must be killed by external faction logic, not by anything traceable to Taylor's error — the isolation must be world-caused, not self-caused
 - Season 4: "consumes her" must be a mechanical consequence, not a metaphor for "forces a hard choice" — if Taylor survives Season 4 with her network intact and a reasonable position, this was not consumption
+
+### Verification note (2026-05-03 — second pass):
+All four verdicts independently confirmed. No new mechanical contradictions identified on re-review. Pattern flags stand as written.

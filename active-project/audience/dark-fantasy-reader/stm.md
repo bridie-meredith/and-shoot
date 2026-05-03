@@ -86,3 +86,25 @@ Reason: Harrenhal changing hands to a Hightower castellan is the world in motion
 - Option A: the Bracken outriders must behave like men following orders in a feudal economy — not as antagonists defined by their opposition to Taylor; the grain shortage is the real pressure, not her
 - Option C: Harrenhal's wrongness must register in the text — characters' relationship to the place (unease, bad luck talk, the way smallfolk don't stay) should be present as texture, not just location label; impressment party must operate on its own schedule regardless of the dying septon's state
 - Option B rejected unanimously: do not reintroduce Riverrun-adjacent positioning or conscription-as-convenient-entry — the world must not feel arranged around Taylor's foreknowledge payoffs
+
+---
+
+## Session: Series plan review — four season chunks (2026-05-03)
+
+### Season 1 — ACCEPT
+Reason: The world moves on its own logic — impressment census, dying septon, castellan's consolidation — none of these exist for Taylor's benefit. The structure she ends up inside was not built to receive her and does not care about her needs. Co-option into a structure she cannot control is entrapment, not triumph. The season earns its consequence because the consequence is not Taylor losing — it is Taylor being absorbed into machinery that was already running.
+
+### Season 2 — ACCEPT
+Reason: The lord survives because she violated her operating procedure; her anonymity does not survive because she did something effective. Cost propagates correctly — the thing she did right is what costs her. The survival is not framed as a win; it is explicitly the mechanism of her exposure. Violence and action with aftermath that changes the protagonist's situation is the requirement, and this is it.
+
+### Season 3 — ACCEPT
+Reason: The last neutral space collapses not through Taylor's failure but through world-logic killing her broker. The world does not pause to accommodate her structural needs — her protection is removed by forces on their own schedule. The season ends with her exposed and alone. Correct register: knowing the catastrophe is coming, losing the structural buffers before it arrives, being unable to do anything about either.
+
+### Season 4 — ACCEPT
+Reason: "Everything she built from nothing now becomes the mechanism by which the catastrophe consumes her" is the consequence-propagation sentence this persona waits for. The world was not set dressing — it was a grinding force that has now arrived at her position. Neutrality cannot survive because the war is indifferent to what she needs it to do. No false catharsis in the description, no easy exit offered. Earned bleakness at plan level.
+
+### Pattern flags added from series plan review:
+- Season 1: the castellan's co-option must be portrayed as machinery absorbing Taylor, not Taylor maneuvering into a useful position — any scene where she has more control over the terms of her entrapment than the castellan does is a wrong-register flag
+- Season 2: the intervention scene must carry a bill immediately and visibly — do not let the lord's survival read as a net positive for more than a beat before the cover cost registers; delayed consequence recognition is a false-catharsis risk
+- Season 3: the broker's death must feel like the world removing a support strut, not like a dramatic murder scene — the absence should be what matters, not the killing; wrongness must accumulate quietly
+- Season 4: "consumes her" must be literal in its cost — the ending must not be ambiguous in a way that allows a reading where Taylor retains meaningful agency and a rebuilt position; the consumption must register as loss, not transformation

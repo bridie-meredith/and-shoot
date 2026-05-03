@@ -14,3 +14,13 @@ VIBES:
   legitimacy-hunger: [the-thing-she-cannot-fake, building-on-demonstrated-capacity, the-feudal-order-as-constant-gravity, earned-vs-inherited]
   the-septon: [kindness-running-out, the-first-genuine-thing, protection-from-someone-who-cannot-protect, the-timer]
   foreknowledge: [knowing-the-shape-of-doom, unable-to-say-it-directly, the-gap-between-knowing-and-acting, isolation-as-historical-fact]
+
+# Season 1 Vibe-Cloud (120–122 AC) — delta from series
+
+SEASON_1_VIBES:
+  the-septon-dying: [urgency-timer, kindness-running-out, protection-expiring, the-cost-of-care]
+  the-census: [being-catalogued, unattached-as-vulnerability, the-maester-eye, literacy-as-exposure]
+  invisibility: [the-cover-that-doesnt-hold, moving-unobserved, building-before-you-can-build, the-performance-of-ordinary]
+  the-wrong-structure: [trapped-in-service, useful-to-the-wrong-person, the-deal-you-didnt-make, inside-without-belonging]
+  harrenhal-close: [the-castle-in-peripheral-vision, wrong-scale-every-day, history-as-ambient-threat, the-thing-that-watches-back]
+  fauna-as-secret: [the-resource-that-reads-as-omen, managing-what-observers-see, the-bell-tower-ravens, the-tool-that-names-you]

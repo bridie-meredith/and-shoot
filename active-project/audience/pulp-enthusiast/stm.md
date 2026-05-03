@@ -85,3 +85,24 @@ Reason: Two threats arriving the same morning and occupying different resolution
 - Option A: the burn order must drive scene one; do not delay it with hamlet description or capability demonstration before the threat is live
 - Option C: dual-threat structure must stay dual through the episode — if one threat is resolved early and the other becomes the "real" story, the density guarantee evaporates
 - Option B rejected: do not reintroduce Riverrun-adjacent positioning or conscription-as-entry — carrying Taylor toward relevance is not the same as Taylor moving through a live board
+
+---
+
+## Session: Series plan review — four season chunks (2026-05-03)
+
+### Season 1 — REVISE
+Reason: The season statement describes a slow erosion arc — three pressures converging to close the observation window at season's end. The destination is correct (worse board, entrapment) but the path is described as a long approach with no explicit board-worsening events distributed through the season. If episode planning concentrates all complication at the finale rather than escalating throughout, this reader leaves before the castellan's man writes his first report. A season where Taylor spends most of its runtime building cover under observation is a season of setup with one payoff.
+
+### Season 2 — ACCEPT
+Reason: Decisive intervention mid-season burns cover, household survives, anonymity gone, factions start watching. Live reversal with named consequences. The "two years building" is off-page; the season delivers the burn and the board change. Escalation geometry present.
+
+### Season 3 — ACCEPT
+Reason: Both factions move simultaneously to acquire her, broker is killed, season ends with Taylor holding the network alone and the Dance nine months out. Multiple board-worsening events in sequence, converging pressure from two directions, and a final frame that is unambiguously worse than the opening. Complication density structurally present.
+
+### Season 4 — ACCEPT
+Reason: Dragonfire strips established authority in weeks, multiple parties have simultaneous claims on what she does with the network, neutrality cannot survive the war's first season. Board gets worse at macro and personal scale simultaneously. The consumption mechanism is exactly the kind of structural escalation this persona requires.
+
+### Pattern flags added from series plan review:
+- Season 1 flag: episode planning must distribute board-worsening events across the season, not concentrate them at the finale — if any episode within Season 1 functions as pure cover-building with no complication, flag it; the castellan's man writing reports must be an escalating process, not a single end-of-season reveal
+- Season 2 confirmed: the intervention scene must be the season's central board-change, not buried in the back half; the factions noticing Taylor must be shown as an active board-change, not an offscreen consequence
+- Seasons 3 and 4 confirmed: escalation geometry is present; maintain complication density per episode when planning breaks down to episode level
