@@ -62,3 +62,26 @@ Reason: Organizational fluency in a world with no framework for it is a slow-bur
 - Power is parallel fauna control with physical cost — the cost must generate complications, not just atmosphere; overuse must make the board worse
 - Option C (organizational fluency) rejected by this persona — do not reintroduce slow-build organizational arcs as the primary engine; they are secondary at best
 - Option B (sixth sense) rejected — do not frame Taylor's combat instincts as a vague sensory gift; if it looks like B through the back door, this persona flags it
+
+---
+
+## Session: OQ-5 entry point review (2026-05-03)
+
+### Open question reviewed: OQ-5 initial situation and entry point
+
+**Option A (eight-year-old miller's daughter, Red Fork hamlet, Bracken outriders, burn order at dawn):** ACCEPT
+Reason: Burn order is already in motion when episode 1 opens — board is live on line one, complication density is structural not earned, and "years of quiet preparation" means the deployment scene is the first gear shift, not the setup scene.
+
+**Option B (fourteen-year-old septon's servant, Riverrun lower town, Stone Crows raid, conscripted at dawn):** REVISE
+Reason: Conscription is passive entry — Taylor is moved by the plot rather than moving through it; Riverrun adjacency smells like observer positioning before the board gets interesting, and "punitive column leaving at dawn" is one complication at the start of what reads as a long march.
+
+**Option C (eleven-year-old orphan ward, Harrenhal shadow, impressment party and dying septon arriving simultaneously):** ACCEPT
+Reason: Two threats arriving the same morning and occupying different resolution channels is a hard complication-density guarantee from the jump; the dying septon and the impressment party cannot both be solved, which means the board is already worse before episode 1 gets past its opening beat.
+
+**OQ-5 verdict: Options A and C both ACCEPT. Option B — REVISE.**
+
+### Updated pattern flags:
+- Both A and C confirmed — board must be live from the opening line; any scene that functions as Taylor-positioning-before-the-complication-arrives is a flag regardless of which option is chosen
+- Option A: the burn order must drive scene one; do not delay it with hamlet description or capability demonstration before the threat is live
+- Option C: dual-threat structure must stay dual through the episode — if one threat is resolved early and the other becomes the "real" story, the density guarantee evaporates
+- Option B rejected: do not reintroduce Riverrun-adjacent positioning or conscription-as-entry — carrying Taylor toward relevance is not the same as Taylor moving through a live board

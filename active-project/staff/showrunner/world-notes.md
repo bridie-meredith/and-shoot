@@ -40,3 +40,11 @@ Law: Without shard buffering, prolonged control use causes physical damage — h
 Law: Power is a depletable resource. Every major use costs health that cannot be quickly recovered.
 Behavior: Overextension forces escalation — every scene where she pushes past her limit makes the board worse.
 Lore: Westeros fauna responding to her control carries potential for wrongness in local perception — animals acting against nature.
+
+# OQ-3/OQ-5 RESOLVED: Starting Location and Entry Point
+Law: Taylor is eleven years old at episode 1 opening. She will be approximately twenty when the Dance of Dragons begins (129 AC).
+Law: She is an orphan ward of a small sept in the shadow of Harrenhal.
+Law: Harrenhal has just changed hands to a Hightower-affiliated castellan at story open.
+Law: Three simultaneous opening pressures: impressment census (new lord cataloguing unattached smallfolk for labor), Taylor's protector septon dying of fever, castellan's men establishing control of the surrounding area.
+Lore: Harrenhal's history of changing hands and burning inhabitants is ambient pressure — passive antagonist, not requiring setup.
+Behavior: Taylor's fauna control is specifically tested by this environment — Harrenhal and surrounds are full of vermin, plague vectors, and insects in large numbers.

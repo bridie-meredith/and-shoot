@@ -63,3 +63,26 @@ Reason: Clean severing is honest darkness — she lost everything she was except
 - Power is parallel fauna control with physical cost — the fauna reactions must carry Planetos-specific flavor; wrong-register reactions (curiosity, pragmatic adaptation) from NPCs or animals are a flag
 - Option B (sixth sense) rejected — do not introduce combat competence framing as a vague sensory gift; if it looks like a reliable edge with no cost and no uncertainty, this persona flags it
 - Option C remains the honest fallback if Option A proves difficult to execute — but cost structure must be explicit either way; the severing must register as loss, not liberation
+
+---
+
+## Session: OQ-5 entry point review (2026-05-03)
+
+### Open question reviewed: OQ-5 initial situation and entry point
+
+**Option A (eight-year-old miller's daughter, Red Fork hamlet, Bracken outriders, burn order at dawn):** ACCEPT
+Reason: A captain giving a burn order to a hamlet that cannot pay is Planetos local color as actual threat — not labeled danger, not paused for the protagonist; the grain-shortage detail is a world that was already grinding before Taylor arrived.
+
+**Option B (fourteen-year-old septon's servant, Riverrun lower town, Stone Crows raid, conscripted at dawn):** REVISE
+Reason: A septon's household servant positioned close to ravens and lords' councils is a world arranged around Taylor's foreknowledge advantage — it reads as staging, not as a place that was there before her; conscription by a Tully knight-commander is an enemy that conveniently carries her toward relevance rather than a threat that moves on its own logic.
+
+**Option C (eleven-year-old orphan ward, Harrenhal shadow, impressment party and dying septon arriving simultaneously):** ACCEPT
+Reason: Harrenhal changing hands to a Hightower castellan is the world in motion on its own timeline; impressment and dying septon arriving simultaneously means both threats operate on their own logic with no pause for Taylor's needs — the place carries its own wrongness, which is correct Planetos register.
+
+**OQ-5 verdict: Options A and C both ACCEPT. Option B — REVISE.**
+
+### Updated pattern flags:
+- Both A and C confirmed — the world must be moving on its own logic before Taylor acts in it; any scene where a threat pauses or adjusts its behavior to accommodate her needs is a flag
+- Option A: the Bracken outriders must behave like men following orders in a feudal economy — not as antagonists defined by their opposition to Taylor; the grain shortage is the real pressure, not her
+- Option C: Harrenhal's wrongness must register in the text — characters' relationship to the place (unease, bad luck talk, the way smallfolk don't stay) should be present as texture, not just location label; impressment party must operate on its own schedule regardless of the dying septon's state
+- Option B rejected unanimously: do not reintroduce Riverrun-adjacent positioning or conscription-as-convenient-entry — the world must not feel arranged around Taylor's foreknowledge payoffs

@@ -20,3 +20,10 @@ dramatist: ACCEPT (A) — damage mechanic is structurally load-bearing; creates 
 audience: ACCEPT (A) unanimous 3/3 — worm-canon-pedant: canonically honest translation, departure named; pulp-enthusiast: overuse = forced escalation engine; dark-fantasy-reader: power as uncertain force, not reliable tool.
 attempts: 1
 decision: Option A — Taylor retains parallel multithreaded control redirected to Westeros fauna (insects, rats, ravens, creatures without higher cognition). Without shard buffering, prolonged use causes headaches, nosebleeds, blackout. Power is real, costly, depletable.
+
+## OQ-3/OQ-5: Starting Location and Entry Point — RESOLVED
+screen-writer advocate: Option C (Harrenhal shadow, age 11, triple-threat convergence) — three non-fungible pressures create genuine rise; Harrenhal geography tests fauna control specifically.
+dramatist: ACCEPT (C) — rise-peak-fall viable; A fails peak-without-rise (already weaponized, crushed escalation ladder); B fails conflict-without-stakes (observer-not-actor).
+audience: ACCEPT (C) unanimous 3/3 — dual non-fungible threats guarantee complication density; Harrenhal carries Planetos weight without being arranged around Taylor; no clean resolution path is structurally honest. Note: A also cleared by audience (3/3), but C favored for long-arc strength.
+attempts: 1
+decision: Option C — Taylor is eleven years old at episode 1 opening. Orphan ward of a small sept near Harrenhal's shadow. Harrenhal has just changed hands to a Hightower-affiliated castellan. Three simultaneous pressures: impressment census arriving, Taylor's protector septon dying of fever, new lord's men establishing control. Starting location: Harrenhal environs, Riverlands.
