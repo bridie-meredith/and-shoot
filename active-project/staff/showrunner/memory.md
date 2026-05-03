@@ -16,7 +16,19 @@ series:
     end: ~
     protagonist_arc: ~
     series_question: ~
-  cast_roster: []
+  cast_roster:
+    - taylor-hebert-westeros
+    - septon-dying-protector
+    - oc-castellan-harrenhal
+    - westerosi-traveling-maester
+    - rymer-hedge
+    - edric-cray
+    - septon-rowan
+    - mira-stonefield
+    - ser-aemon-bracken
+    - ser-harwick-plumm
+    - ser-edwyn-celtigar
+    - rhaenyra-targaryen
   stage_elements: []
 
 seasons: []
