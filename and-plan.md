@@ -1,8 +1,5 @@
 # and-shoot
 
-## open questions
-- showrunner memory format: what does cross-session series memory look like as a schema?
-
 ---
 
 ## purpose
@@ -44,7 +41,7 @@ planning zooms in as scope narrows:
 
 ## general info
 
-**cards:** atomic context units. five classes: **persona**, **location**, **prop**, **condition**, **gacha-element**. agents consume cards rather than raw files. schema authority: `schemas/card.schema.md`. import from brighid-creative-writing.
+**cards:** atomic context units. four classes: **persona**, **location**, **prop**, **condition**. agents consume cards rather than raw files. schema authority: `schemas/card.schema.md`. import from brighid-creative-writing. (Gacha-element class is deferred and out of scope for and-shoot.)
 
 **vibe-cloud:** a vibes snapshot scoped to the current level (series / season / episode). captures mood, tone, atmosphere, and thematic register. built at the start of each level, updated on significant shift. import schemas: `vibes.schema.md` + `vibe-delta.schema.md` from brighid-creative-writing.
 
@@ -100,7 +97,7 @@ planning follows the same shape at every level. the difference is scale, not str
 
 Manual steps if not using the command:
 
-1. **Archive:** if `active-project/` exists, move it to `projects/<slug>/` where `<slug>` is the completed project's title slug.
+1. **Do not archive.** Do not move or rename the existing `active-project/` directory. Start fresh scaffold in place.
 2. **Create directory tree:**
    ```
    active-project/
@@ -137,7 +134,10 @@ Manual steps if not using the command:
 4. **Audience slugs required.** Audience membership is defined at project activation (rule 6 — does not change mid-episode). The three slugs must be known before this step is complete. If genuinely unknown, leave `audience/` empty and add working dirs when membership is confirmed; do not proceed to step 1a without them.
 5. **Confirm card library:** verify `cards/personas/INDEX.md` and `cards/locations/INDEX.md` are readable before continuing.
 
-**1. world-building** — four agent-to-agent phases. fires before any planning. blank-slate and partial-brief projects both pass through all four phases; the difference is how much is already settled when phase 1a begins.
+**1. brief expansion** *(fires before world-building)*
+Screen-writer receives the brief and maps the concept-space it opens — not a plan, a field. Three outputs: (1) 4–6 alternative framings (other stories this brief could be telling); (2) 8–12 building blocks (themes, tensions, structural ingredients — raw concepts, not plot beats); (3) adjacent concepts (semantic clusters around each core term). Written to `active-project/staff/showrunner/brief-expansion.md`. Screen-writer receives this file at every subsequent planning dispatch so it draws from the full space, not only the first-order reading.
+
+**2. world-building** — four agent-to-agent phases. fires after brief expansion. blank-slate and partial-brief projects both pass through all four phases; the difference is how much is already settled when phase 1a begins.
 
 **1a. partial brief intake**
 *Internal — showrunner does not surface this step to the human. Output is two working documents written to `active-project/staff/showrunner/`. Showrunner proceeds immediately to 1b.*
@@ -256,7 +256,7 @@ output: season plan with episode chunk list, vibe-cloud, active cast, relevant c
 
 - take the episode's chunk statement from the season plan
 - showrunner passes the episode chunk statement and active constraints to screen-writer
-- screen-writer expands into a detailed episode plan: an ordered bullet list, scene by scene. each bullet is one thing that happens and generates one line in the show file.
+- screen-writer expands into a detailed episode plan: an ordered bullet list, scene by scene. each bullet is one thing that happens and generates one line in the show file. **bullet format: action beats only — `[subject] [verb] [object/location]`. no motivation clauses, no because/since/wanting-to, no internal state embedded. the impersonator supplies interiority; the bullet supplies the beat.**
 - audience and dramatist review in parallel (persistent subagents); both must accept or three screen-writer attempts are exhausted
 - every bullet should be legible against both the series plan and the season plan
 - **prep cast:** spawn impersonators for active characters; load persona cards
@@ -534,6 +534,7 @@ editor does not add content. editor does not make plot decisions. editor tighten
 after episode close, **memory is not advanced unless there is a reason.**
 
 showrunner verifies:
+- **actor memory close (mandatory):** for each actor active this episode: append significant events (relationship shifts, discoveries, arc notes) to `active-project/actors/<slug>/ltm.md`; prune `stm.md` to ~10 items (overwrite, not append). required at every episode close per memory schema.
 - **timeskip:** if the next episode picks up significantly later in time, update character state, world state, and any cards that would have changed during the gap
 - **major off-scene event:** if something significant happened off-screen between episodes, record it
 - **default:** no timeskip, no off-scene event → memory stays exactly where the show file left it. the next episode picks up from that state without ceremony.
