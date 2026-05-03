@@ -108,3 +108,35 @@ Reason: "The mechanism by which the catastrophe consumes her" is the canonical T
 
 ### Verification note (2026-05-03 — second pass):
 All four verdicts independently confirmed. No new mechanical contradictions identified on re-review. Pattern flags stand as written.
+
+---
+
+## Session: Season 1 episode plan review (2026-05-03)
+
+### Episode verdicts
+
+**Episode 1 — ACCEPT**
+Reason: Name enters the ledger because no guardian with standing appeared — the window closes through institutional mechanics, not Taylor's error. Canonically honest. The impressment-to-assessment pipeline is mechanically plausible.
+
+**Episode 2 — ACCEPT**
+Reason: First report describes a coherence pattern pointing to a single source without naming Taylor directly — fauna network visible through organization, not carelessness. The STM-flagged requirement from the series plan review is satisfied. Report goes to castellan's records before Plumm; information distribution is mechanically precise.
+
+**Episode 3 — ACCEPT**
+Reason: Raven perching in a posture no trained bird takes with a stranger is a concrete, species-specific witnessed anomaly — not asserted, physically real. Septon Rowan's intercession broadening exposure rather than narrowing it is canonically honest: correct action at wrong moment makes things worse.
+
+**Episode 4 — ACCEPT**
+Reason: Ward-succession protocol triggering on septon's death is clean institutional mechanics. The documented anomaly that made Taylor visible now makes her useful — correct consequential architecture. No canonical contradictions.
+
+**Episode 5 — ACCEPT**
+Reason: Maester's notation of interest is honest — literacy and pattern-recognition flagged by a Citadel-trained observer is mechanically plausible. Bracken counter-claim and Celtigar's letter are real complications with named parties. No lore leaks, no mechanics violations.
+
+**Episode 6 — ACCEPT**
+Reason: Plumm wins through existing documentation rather than confrontation — correct institutional mechanics. Function name given without consent and cannot be ungiven is the canonical Taylor terminal condition executed cleanly.
+
+### Season aggregate: ACCEPT
+All six episodes execute the fauna-visibility-as-coherence-signal requirement. Foreknowledge is live and structurally relevant. No unmarked AU divergences present in the plan.
+
+### Updated pattern flags:
+- Shoot flag: the raven behavior in Episode 3 must be described through the inspector's record with Planetos-specific wrongness — not curiosity or clinical interest, but the specific discomfort of a trained observer seeing something that should not be
+- Shoot flag: the maester's assessment in Episode 5 must read as notation, not recruitment — Citadel procedure is detached documentation, not recognition of Taylor as exceptional; the danger is in the record, not the meeting
+- Shoot flag: Plumm's formalization of Taylor's status in Episode 6 must use the correct institutional language of the period — ward-of-administration, not personal ward; the category matters canonically

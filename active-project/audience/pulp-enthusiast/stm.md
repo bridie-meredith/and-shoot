@@ -106,3 +106,38 @@ Reason: Dragonfire strips established authority in weeks, multiple parties have 
 - Season 1 flag: episode planning must distribute board-worsening events across the season, not concentrate them at the finale — if any episode within Season 1 functions as pure cover-building with no complication, flag it; the castellan's man writing reports must be an escalating process, not a single end-of-season reveal
 - Season 2 confirmed: the intervention scene must be the season's central board-change, not buried in the back half; the factions noticing Taylor must be shown as an active board-change, not an offscreen consequence
 - Seasons 3 and 4 confirmed: escalation geometry is present; maintain complication density per episode when planning breaks down to episode level
+
+---
+
+## Session: Season 1 episode plan review (2026-05-03)
+
+### Prior flag status
+Season 1 was flagged REVISE at series-plan level. This episode review was the test: are board-worsening events distributed across all six episodes? Partially addressed — five of six episodes deliver board changes. One stall identified (Episode 5).
+
+### Episode verdicts
+
+**Episode 1 — ACCEPT**
+Reason: Name enters ledger before Taylor can prevent it. Board is live and worse at end than start. Impressment-to-assessment pipeline is a ticking clock, not a resolved threat.
+
+**Episode 2 — ACCEPT**
+Reason: Report distributes the information to a second party (castellan's records) before Plumm gets his copy. Board is worse and more distributed — two parties now hold partial information instead of one.
+
+**Episode 3 — ACCEPT**
+Reason: Concrete witnessed anomaly now documented. Septon Rowan's intercession broadening exposure is a reversal: the rescue attempt makes things worse. Two forces working in the same wrong direction simultaneously is the complication-density structure this persona requires.
+
+**Episode 4 — ACCEPT**
+Reason: Two board changes from one event — septon's death removes cover AND triggers ward-succession protocol. Plumm moves within the same week. The potential threat becomes a moving one.
+
+**Episode 5 — REVISE**
+Reason: Three complications arrive (maester's notation, Bracken counter-claim, Celtigar's letter) but the episode closes on stalemate — "the two claims are now in active administrative contest." Stalemate is not escalation. The board is more complicated but no worse. The episode logs pending threats rather than moving one. Needs a closing beat that makes the pending state less reversible: a document reaching the wrong desk, a Bracken ally making a public filing that locks a timeline, Celtigar's letter being read aloud before the castellan in company — something irreversible before episode closes.
+
+**Episode 6 — ACCEPT**
+Reason: Plumm wins on documentation before Bracken's counter-claim can be heard. Taylor formally named, assigned, function given without consent and cannot be ungiven. Clean irreversible board change with a specific cost.
+
+### Season aggregate: ACCEPT (2/3 rule — pulp-enthusiast revise on Episode 5 overridden)
+Note carried forward: Episode 5 closing beat is a stall. The prior Season 1 REVISE is partially addressed — complications are distributed across episodes rather than concentrated at the finale, but the distribution is uneven and Episode 5 is the weak point. If the screen-writer can add one irreversible beat at Episode 5's close, this concern is fully resolved.
+
+### Updated pattern flags:
+- Shoot flag: Episode 5 is the highest-risk episode for this persona during shoot — any scene that ends with multiple live threats "pending" rather than one of them having moved is a flag
+- Shoot flag: the Bracken counter-claim must register as a board change when it is filed, not when it is resolved; the filing itself must arrive on-page as a complication, not be referenced in retrospect
+- Shoot flag: Celtigar's letter must be a board-worsening event, not an atmospheric pressure detail — if it arrives and nothing changes immediately, this persona will flag the episode as having three complications and zero escalation

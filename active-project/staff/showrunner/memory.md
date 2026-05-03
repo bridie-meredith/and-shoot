@@ -4,7 +4,7 @@ routing:
   show_file: active-project/theater/show.md
   episode_plan: active-project/theater/episode-plan.md
   series_plan: active-project/staff/showrunner/series-plan.md
-  season_plan: ~
+  season_plan: active-project/staff/showrunner/season-s01-plan.md
 
 series:
   theme: The cost of building when everything resists you — and what you become in the process of building it anyway.
@@ -63,8 +63,24 @@ series:
     - cond-reincarnation-mechanics
     - cond-series-tone-constraints
 
-seasons: []
+seasons:
+  - slug: s01
+    status: active
+    timeline: 120–122 AC
+    episodes:
+      - slug: s01e01
+        status: planned
+      - slug: s01e02
+        status: planned
+      - slug: s01e03
+        status: planned
+      - slug: s01e04
+        status: planned
+      - slug: s01e05
+        status: planned
+      - slug: s01e06
+        status: planned
 
 active:
-  season: ~
-  episode: ~
+  season: s01
+  episode: s01e01
