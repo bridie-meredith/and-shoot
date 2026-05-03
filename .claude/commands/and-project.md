@@ -149,7 +149,32 @@ Verify `cards/personas/INDEX.md` and `cards/locations/INDEX.md` exist. Print lin
 ### 5. Print scaffold complete
 
 ```
-Scaffold complete. Dispatching showrunner for activation.
+Scaffold complete. Running brief expansion.
+```
+
+---
+
+## Phase 1.5 — Brief expansion
+
+Dispatch screen-writer with the brief verbatim. Screen-writer does **not** generate a plan. It maps the concept-space the brief opens — the full range of stories this brief could become before any direction is chosen.
+
+Screen-writer produces three sections:
+
+**1. Alternative framings (4–6)**
+Other stories this brief could be telling. Not variations on the obvious reading — genuinely different genre registers, structural emphases, protagonist framings, tonal postures. Each gets one sentence on what changes if the story goes that way.
+
+**2. Building blocks (8–12)**
+Themes, tensions, dynamics, structural ingredients available in the material. Raw concepts, not plot beats. "Identity-without-context" not "Jack hides his powers." These are the atoms showrunner can combine in ways the first-order reading wouldn't reach.
+
+**3. Adjacent concepts**
+For each major term or core concept in the brief: 3–5 words or ideas in the same semantic cluster — synonyms, near-synonyms, adjacent registers. These are the handles for shifting the story's tone or emphasis without changing its subject.
+
+Screen-writer writes output to `active-project/staff/showrunner/brief-expansion.md`.
+
+**This is not a planning step and produces no binding decisions.** It is the field the planning draws from. Print:
+
+```
+Brief expansion complete. Dispatching showrunner for activation.
 ```
 
 ---
@@ -173,7 +198,7 @@ Dispatch showrunner as a subagent. Pass the brief and the locked configuration. 
 >
 > ---
 >
-> **1a (internal):** Read the brief. Write decided constraints to `active-project/staff/showrunner/world-notes.md`. Write open questions (dependency-ordered) to `active-project/staff/showrunner/open-questions.md`. Do not surface these to the caller — proceed immediately to 1b.
+> **1a (internal):** Read the brief. Read `active-project/staff/showrunner/brief-expansion.md` — this is the concept-space the brief opens. Before writing constraints and open questions, ask: does your first instinct cover the full space, or only the first-order reading? The expansion is not binding — it is a check. If a building block or alternative framing is more interesting than the obvious direction, let it shape what you extract. Write decided constraints to `active-project/staff/showrunner/world-notes.md`. Write open questions (dependency-ordered) to `active-project/staff/showrunner/open-questions.md`. Do not surface these to the caller — proceed immediately to 1b.
 >
 > ---
 >
@@ -308,6 +333,7 @@ EPISODE 1 (chunk — not yet expanded for shoot)
   ...
 
 LOG FILES
+  active-project/staff/showrunner/brief-expansion.md
   ...
 
 [Audit checkpoint. Review the above. Reply to proceed to episode start, or give notes for revision.]
