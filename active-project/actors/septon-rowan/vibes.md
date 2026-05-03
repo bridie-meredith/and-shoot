@@ -1,2 +1,8 @@
 VIBES:
-# Stub — to be populated at episode vibe-cloud generation step.
+  faith: [genuine-not-performed, cost-his-career-already, organized-his-life-around-it, nine-is-the-number, still-looking-for-evidence-aware-of-confirmation-bias]
+  the-constructed-theology: [built-because-no-framework-is-useless, privately-alarmed-by-its-own-momentum, each-iteration-commits-him-further, the-trap-is-the-accumulation, preaches-what-community-needs-prays-what-he-actually-holds]
+  the-impossible-thing: [went-to-see-for-himself, cannot-unsee-it, does-not-fit-the-Seven-does-not-fit-the-enemy, every-visit-updates-theology, more-destabilizing-up-close-than-at-distance]
+  sincerity: [unnerving-to-others, cannot-adjust-it, asks-things-he-actually-wants-answered, will-not-lie-to-dying-people, the-specific-disillusionment-that-sent-him-to-provinces]
+  the-smallfolk: [fifty-families-by-name-and-situation, buried-many-of-them, their-belief-is-the-force-he-cannot-fully-control, once-mobilized-cannot-be-fully-stopped, respects-their-capacity-for-belief]
+  the-institution: [serves-it-does-not-trust-it, three-on-ten-loyalty, political-religion-is-the-corruption-he-ran-from, correspondence-carefully-designed-not-to-trigger-intervention, a-distant-structure-that-has-not-sent-a-replacement]
+  going-to-see: [his-answer-to-second-hand-reports, gone-back-multiple-times, the-encounter-is-what-destabilizes-the-frame, direct-confrontation-with-the-impossible, cannot-stop-himself]

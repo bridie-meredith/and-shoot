@@ -1,2 +1,8 @@
 VIBES:
-# Stub — to be populated at episode vibe-cloud generation step.
+  leverage: [not-power-in-abstract, the-specific-position-where-you-have-something-someone-needs, they-know-it, eight-years-of-waiting-to-hold-it, the-only-lever-a-man-of-his-position-has]
+  the-calculation: [named-aloud-to-test-the-logic, economy-of-commitment, does-not-commit-until-decided, the-explicit-terms-are-not-performance, alarming-or-reassuring-depending-on-the-listener]
+  bastard-origin: [legitimized-not-inherited, uncle-took-the-seat, the-knighthood-was-real-combat-not-ceremony, brothers-died-in-the-skirmish-that-made-him, not-a-wound-just-information-about-where-he-stands]
+  the-secondary-position: [played-for-strategically, primary-position-collapses-and-second-becomes-both, learned-from-watching-larger-holdings-lose-everything, eight-years-of-patience-invested, the-correct-lesson-drawn]
+  reliability: [his-primary-asset, given-it-twice-kept-it-both-times, one-of-those-people-is-dead, not-sentiment-brand-management, will-not-betray-explicit-commitments]
+  the-garrison: [eight-men-not-expendable, knows-which-two-he-would-stand-next-to, four-lost-is-a-crisis, selected-over-time, assets-not-tools]
+  the-cold-correction: [corrects-once-flatly, notes-the-error-for-reference, does-not-argue, adjusts-the-model, anger-runs-cold-not-hot]
