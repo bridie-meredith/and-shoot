@@ -1,20 +1,22 @@
-STM — Opening scene prompt plan — s01e01 Scene 1
+STM — Studio — s01e01 Scene 3 (CLOSED, bullet 33 — episode end)
 
-POV impersonator: jack-slash
-Scene opening: Reach minor lordship hall, late afternoon
+Scene transition: Stormlands market town square (Scene 2, closed, bullet 25) -> Stormlands coastal cliffs, cave mouth (Scene 3, open) -> episode close (bullet 33)
 
-ENVIRONMENT DETAILS FOR OPENING PERCEPTION:
+Final set state:
 
-- The room smells of tallow fat and the memory of the meal that preceded this meeting — roasted grain and something heavier, mutton or goat
-- Light from two arrow-slit windows at your back goes amber and long; a servant placed two candles on the table which have now burned down by about a third
-- The table is long, scarred, set for function not display; the lord sits at the far end with a cup he keeps moving between his hands
-- The steward is positioned left of the lord with a small ledger open — you can see him make marks but not what the marks say
-- Two men-at-arms stand by the door behind you; you haven't looked at them since you sat, but you know from the sound of their breathing that one is paying more attention than the other
-- The dogs under the table are on your side; one has put its chin on your boot; you are apparently acceptable to dogs
-- The lord is twenty-five, perhaps twenty-six; he has the watchful bearing of a younger son who inherited unexpectedly and is still learning how to wear it; he dresses practically; he has not smiled once but he has not been hostile either; he has been testing
+CAVE / CLIFF:
+- Crawler returned to cave interior (recorded bullet 44 / show.md)
+- Scene 3 POV: external narrator following the cog
+- Cave: no active characters on cliff face; crawler inside, interior dark
 
-BROADCAST SHARD STATUS: firing — returning noise; three months of this; you have stopped expecting it to return anything
+NARROW SEA / COG (episode close):
+- Cog continuing west on withdrawal course, routine sailing pace
+- Deck: looking-glass not raised after bullet 28 use; deck empty of directed observation toward cliff
+- Below decks: maester Pylos at plank table; parchment flat; quill inked; lamp lit
+- Document: first line of a report addressed to the Citadel, copied to Hand's office in King's Landing
+- Record: open and in progress at episode close
 
-THE MISTAKE: you used a name. The steward's brother, a man inside this household, a name you obtained the slow way from a contact in the market town three weeks ago. You used it as though it was common knowledge. It was not common knowledge. You felt the moment it landed wrong — not in the lord's face, but in the steward's. The quill paused.
+SCENE 3 STATUS: CLOSED (bullet 33)
+EPISODE STATUS: CLOSED
 
-You are in this meeting. The question is how much damage the name just caused and whether you can walk it back.
+Vibe resonance at close: traces (being-seen, rumors-that-travel-faster-than-you), thread-pulled (file-opened-not-closed), the-observer-observed (Westerosi-noticing-first), glass (absence — the looking-glass stowed, the record replacing it)

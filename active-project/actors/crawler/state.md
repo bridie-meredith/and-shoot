@@ -1,5 +1,5 @@
 STATE:
-  location: stormlands-coastal-cliffs
+  location: stormlands-coastal-cliffs (cave interior, cave mouth behind, above-water exposure closed)
   condition: [dragon-form, shard-active, adaptation-hunger]
   inventory: []
   stats:
