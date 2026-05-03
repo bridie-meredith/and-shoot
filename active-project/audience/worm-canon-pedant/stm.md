@@ -61,3 +61,25 @@ Reason: Clean break is canonically coherent — if the shard doesn't come throug
 - Era 120 AC confirmed — foreknowledge advantage is live from scene one; any scene where Taylor behaves as if she does not know where the succession fracture is heading is a register error
 - Power is parallel fauna control with physical cost — any scene where the cost plateaus or disappears without in-world explanation is a mechanical flag
 - Option B (sixth sense) rejected unanimously — do not reintroduce this framing through the back door by describing Taylor's combat instincts as "preternatural" or "inexplicable" without mechanical grounding
+
+---
+
+## Session: OQ-5 entry point review (2026-05-03)
+
+### Open question reviewed: OQ-5 initial situation and entry point
+
+**Option A (eight-year-old miller's daughter, Red Fork hamlet, Bracken outriders, burning ordered at dawn):** ACCEPT
+Reason: "Years of quietly mapping local insect populations without witnesses" is canonically precise — this is Taylor's exact procedure: reconnaissance before action, capability built without announcement. Opening beat is a live deployment requirement with no delay. No mechanical contradictions in the premise.
+
+**Option B (fourteen-year-old septon's servant, Riverrun lower town, Stone Crows raid, conscripted at dawn):** REVISE
+Reason: Passive entry point — conscription carries Taylor into the action rather than Taylor acting. Missing prep-reveal: the insect network build is not established, so episode 1 will spend time on capability setup that Option A already earns. Riverrun proximity reads as arranged around Taylor's foreknowledge advantage rather than discovered.
+
+**Option C (eleven-year-old orphan ward, Harrenhal shadow, impressment party and dying septon arriving simultaneously):** ACCEPT
+Reason: Two simultaneous threats with no clean resolution channel — correct canonical Taylor scenario. Impressment and dying septon occupy different resolution channels; you cannot fix one while fixing the other. No canonical contradictions; Harrenhal's location is correct for a Taylor who has not yet had room to build a network.
+
+**OQ-5 verdict: Options A and C both ACCEPT. Option B — REVISE.**
+
+### Updated pattern flags:
+- Both A and C confirmed structurally honest; if A is selected, the "years of mapping without witnesses" detail must be honored — any scene where Taylor's network has gaps she should have already filled is a register error
+- If C is selected, the Harrenhal location must carry its correct Planetos weight — wrongness of the place must register in how characters relate to it, not just as backdrop
+- Option B rejected: do not reintroduce Riverrun-adjacent positioning as a way to deliver foreknowledge payoffs — it reads as arranged staging

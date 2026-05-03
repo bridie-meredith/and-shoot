@@ -27,3 +27,16 @@ Law: Starting region is the Riverlands.
 Law: The Riverlands are already in conflict at the story's opening — Taylor does not get a peaceful establishment arc.
 Behavior: Being correct and three moves ahead buys survival, not status. The environment punishes her constantly.
 Behavior: The feudal order does not adapt to Taylor; she must adapt to it or die.
+
+# OQ-2 RESOLVED: Era / Timeline
+Law: Story begins 120 AC. Viserys I is aging and increasingly ill; the succession fracture is visible.
+Law: The Dance of Dragons begins ~129 AC — Taylor has approximately 9 years before the war ignites.
+Lore: Riverlands lords are already intensifying faction pressure: foraging parties, impressment, extortion as positioning tactics.
+Behavior: Taylor's foreknowledge of the Dance is an immediate tactical asset — she knows where the fracture is going and no one around her does.
+
+# OQ-4 RESOLVED: Parahuman Capabilities
+Law: Taylor retains parallel multithreaded control, redirected to Westeros fauna (insects, rats, ravens, any creature without higher cognition).
+Law: Without shard buffering, prolonged control use causes physical damage — headaches, nosebleeds, blackout on overuse.
+Law: Power is a depletable resource. Every major use costs health that cannot be quickly recovered.
+Behavior: Overextension forces escalation — every scene where she pushes past her limit makes the board worse.
+Lore: Westeros fauna responding to her control carries potential for wrongness in local perception — animals acting against nature.

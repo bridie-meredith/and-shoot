@@ -6,3 +6,17 @@ dramatist: ACCEPT (B) — rise-peak-fall fully intact; A and C both require stru
 audience: SPLIT — pulp-enthusiast and dark-fantasy-reader ACCEPT A; worm-canon-pedant ACCEPT B. B's revise concerns (pacing, pushback) are implementation constraints addressed by decision constraints below.
 attempts: 1
 decision: Option B — Taylor reincarnates as a baseborn human girl in the Riverlands. Constraints appended to world-notes: board is live at episode 1 (active conflict, not peaceful establishment), Riverlands actively punishes her (competence buys the next problem, not safety), being three moves ahead is survival condition not competence display.
+
+## OQ-2: Era / Timeline — RESOLVED
+screen-writer advocate: Option B (120 AC, succession fracturing) — macro-pressure structural day one; Taylor's foreknowledge immediately load-bearing.
+dramatist: ACCEPT (B) — A contradicts "board is live at episode 1"; C collapses the foreknowledge structural differentiator.
+audience: ACCEPT (B) unanimous 3/3 — worm-canon-pedant: foreknowledge engine live from scene one; pulp-enthusiast: board already moving at ep1; dark-fantasy-reader: correct Westerosi register, doom on its own timeline.
+attempts: 1
+decision: Option B — story begins 120 AC. Viserys I's health failing, succession visibly fracturing, Riverlands intensifying with prewar faction pressure.
+
+## OQ-4: Parahuman Capabilities — RESOLVED
+screen-writer advocate: Option A (redirected fauna control, punishing physical cost) — power is real but depleting resource, every overuse raises stakes.
+dramatist: ACCEPT (A) — damage mechanic is structurally load-bearing; creates genuine try-fail ceiling; B gives feudal order an existing category for her (wrong); C is wrong pace register.
+audience: ACCEPT (A) unanimous 3/3 — worm-canon-pedant: canonically honest translation, departure named; pulp-enthusiast: overuse = forced escalation engine; dark-fantasy-reader: power as uncertain force, not reliable tool.
+attempts: 1
+decision: Option A — Taylor retains parallel multithreaded control redirected to Westeros fauna (insects, rats, ravens, creatures without higher cognition). Without shard buffering, prolonged use causes headaches, nosebleeds, blackout. Power is real, costly, depletable.
