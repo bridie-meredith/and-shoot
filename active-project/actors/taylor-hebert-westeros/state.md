@@ -1,6 +1,6 @@
 STATE:
   location: loc-harrenhal-sept-environs
-  sublocation: behind the drying rack at the far end of barter row — shoulder against the rack, chamomile-and-refuse smell at close range; rider has reached the row and is on his third stop, the nearest door; sparrow on the thatch ridge above carrying ambient through the passive feed; first two accounts heard at distance (vermin / when / a girl), third account audible directly and rhyming the prior two; book still open in his hand, quill still moving; Osmynd remains on the stone bench at the sept; three witnesses now committed to the page
+  sublocation: s01e03 OPEN — standing in the doorway between the side chamber and the nave at the sept; shoulder against the cold doorframe; has not moved into the nave, has not moved back; raven settled on the sill above the grain crate (passive-confirmed before visual); bench outside the nave's open end is stone and empty in morning slant-light; breathing through the wall (Osmynd) has shifted at the interval not at the depth; cart not yet arrived
   condition: []
   inventory: []
   stats:
