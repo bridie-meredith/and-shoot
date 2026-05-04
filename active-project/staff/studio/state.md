@@ -1,7 +1,7 @@
 STATE:
   episode: s01e04 — The Succession
   active_location: loc-harrenhal-sept-environs
-  active_sublocation: DUAL — sept nave interior (Taylor at side door, about to exit) + exterior established (dawn breaking over the harrenhal shadow settlement; the track empty; no cart, no hoofbeats; still; cold); Bullet 10 establishes exterior as co-active sublocation; Taylor is at the threshold of the side door; the nave is behind her, the yard and settlement are ahead
+  active_sublocation: SETTLEMENT TRACK — east; scene transition complete from the guest-lodge yard (threshold-stone); the two figures (Taylor and Rowan) are in motion on the track moving east toward the recorder's hall; the sept is behind them; the raven has lifted from the sept sill and is not following; the track is the active spatial field
   active_conditions:
     - cond-riverlands-120ac-state
     - cond-fauna-control-rules
@@ -9,36 +9,36 @@ STATE:
     - cond-no-parahuman-infrastructure
     # cond-impressment-census-120ac: world-state only; the census record is inside Harrenhal; the inspection is concluded; what remains is the succession machinery the census set in motion
   prop_positions:
-    tallow-stub: sleeping alcove (sickroom) — BURNED TO CLOTH; flame out; the stub has completed its run; the overnight light source is exhausted; the solidified tallow line has run to the cloth and stopped; no light from this source; the spent-tallow smell is the room's dominant output smell and will be stronger when the door opens
-    osmynd-pallet: sleeping alcove (sickroom) — OSMYND IS DEAD; chest not moving; hands loose at his sides on the pallet, open, no tension; the bedding is undisturbed, the arrangement of a person who did not move in the hours of the dying; the dying was quiet; the body is warm-ish from the room's accumulated heat all night, which will make the stillness stranger at touch; the warmth-without-movement is the environmental paradox of the alcove at this moment
-    succession-folio: on Taylor's person — flat against her ribs, under her shirt; concealed; removed from the septon-register by Taylor during the nave sequence; Bullet 9 action; not on the shelf, not in the register, not visible to any observer; she is carrying it against her skin
-    septon-register: chancel table, sept nave — open; Taylor set it open on the chancel table after removing the succession folio; it is not on the shelf behind the altar; it is on the table in the nave; it has been left open; the chancel candle is burning beside it
-    osmynd-bench: exterior, sept yard — bare stone; empty; has been empty for weeks; the absence it marks has finalized; Osmynd is dead — the bench's emptiness is no longer temporary, no longer the absence of a sick man who might one day return to it; it is permanent; the bench does not know this and does not change; it is the same bench it has always been; that is the point
-    rowans-travelers-pack: guest-lodge within the settlement — with Rowan; not in the sept; Rowan is a week or more into his posting; his pack is at rest in the guest-lodge where he has been staying
-    sleeping-mat: sept side-chamber — Taylor's sleeping space; she is in the moment of waking or already awake; the mat is the surface she rose from or is rising from; it is in the small cold room adjacent to the cottage wall
-    altar-candles: chancel, sept nave — one candle lit and burning; the chancel candle is the active light source in the nave; it was lit during the nave sequence (before Bullet 10); it is burning beside the open septon-register on the chancel table; the others remain unlit
+    tallow-stub: sleeping alcove (sickroom) — BURNED TO CLOTH; flame out; the stub has completed its run; no light from this source
+    osmynd-pallet: sleeping alcove (sickroom) — OSMYND IS DEAD; chest not moving; hands loose at his sides; the body is cooling; the room is cooling with it now that he is gone and no new body heat is being generated
+    succession-folio: on Rowan's person — transferred from Taylor to Rowan; he is carrying it under his arm or in his pack as they move east on the track; the folio is in motion with him; not visible to any observer
+    septon-register: chancel table, sept nave — open; left open by Taylor; the chancel candle is burning beside it; neither Taylor nor Rowan is in the nave; the register is unattended
+    osmynd-bench: exterior, sept yard — bare stone; empty; permanent absence; unchanged
+    rowans-travelers-pack: with Rowan — on the track, moving east; Rowan is carrying it or it is on his person as he walks
+    sleeping-mat: sept side-chamber — where Taylor left it; unoccupied
+    altar-candles: chancel, sept nave — one candle lit and burning unattended; the chancel candle was lit during the nave sequence and has not been extinguished; it is burning in an empty nave
     painted-mother-panel: chancel altar table — in place; unchanged
-    rushes: sept nave floor — maintained; Taylor's ongoing care; undisturbed overnight; unchanged
+    rushes: sept nave floor — maintained; undisturbed; unoccupied
     rain-barrel: yard, south cottage wall — in place; unchanged
-    grain-crate: sept nave — below the high shuttered window; unchanged position; the raven's stepping-stone; raven is above it, not on it
-    raven: on the sill above the grain crate — eyes open; watching the nave interior; the bird has been awake since before Taylor woke; its attending posture from Bullet 2 has not broken; it has been watching the cottage-wall side of the interior continuously; it is not agitated; it is not calling; it is the attending witness that was here when Taylor was still on her mat and is still here now that she is in the nave; it registered the change in Osmynd's breathing before Taylor did; it has been tracking the morning from this position; its attention is on the nave, which now includes Taylor
-  time_of_day: early dawn — dawn is breaking; the eastern sky is separating into color, pale light over the horizon beyond the settlement; the Harrenhal towers visible as shapes to the north with the first sky-color behind them; the sept interior still holds more dark than light (no direct sun bars on the floor yet) but the exterior is definitively brighter than the interior; the threshold of the side door is a threshold between two light-states — the warmer candlelit interior and the cold exterior grey-into-dawn; the chancel candle is lit and represents the only warm light source; outside, the yard is entering the first clear light of the day at its lowest and most horizontal
+    grain-crate: sept nave — below the high shuttered window; unchanged position; the raven's stepping-stone; sill above it is now empty
+    raven: LIFTED FROM THE SEPT SILL — the bird rose from the sill above the grain crate as Taylor and Rowan departed; it is airborne or has landed elsewhere; it is NOT following the two figures east on the track; its position is unrecorded beyond the departure from the sill; the sill is empty; the sept has lost its attending witness; the bird's non-following is the environmental fact of Bullet 20
+  time_of_day: early morning — past the dawn threshold; the eastern sky has color in it now, the sun is not yet over the horizon or barely clearing it; the light on the track is the flat horizontal light of the first minutes of true morning; low-angle and cold; no warmth in it yet; the Harrenhal towers visible to the north in the early light; the track receives the first direct light of the day from the east — the direction the two figures are walking toward; early morning is the coldest the day will be
   weather: late autumn, very early winter — Riverlands, 121 AC; several weeks have advanced from s01e03; the air is colder than s01e03's morning; the cold is the cold that stays; the season has crossed a threshold; the stone of the cottage and sept holds it; no rain; the track outside will be frozen-firm or approaching it; the pre-dawn cold is the deepest cold of the twenty-four hour cycle; it is the cold that settles into the body if you lie still too long
   actor_positions:
-    osmynd: sleeping alcove (sickroom) — DEAD; on his pallet; hands loose at his sides; chest not moving; the dying completed before first light; he has not moved; the bedding is undisturbed; the dying was quiet; body is warm-ish from the room's accumulated overnight heat — warmth without chest-movement is the specific wrongness Taylor will find when she crosses the threshold; the breathing that tracked through the wall for weeks has stopped; the pattern is broken and will not resume
-    taylor: sept nave — has crossed from the alcove doorway into the nave; active sublocation is now the sept nave (pre-dawn); she is facing the register shelf behind the altar table; she has moved from the side-chamber threshold into the open nave space; the sleeping mat is behind her; the altar table is ahead; she is in the main volume of the sept for the first time this episode
-    rowan: guest-lodge in the settlement — asleep or beginning to wake; not in the sept; not yet a scene factor; his location is the guest-lodge, which is within Taylor's passive fauna range but not immediately adjacent
-    settlement-smallfolk: in their dwellings — pre-dawn; no movement yet; the settlement is at its quietest
+    osmynd: sleeping alcove (sickroom) — DEAD; on his pallet; hands loose; chest not moving; body cooling in the closed room; unattended; the sept cottage is closed; no one is with him
+    taylor: settlement track — moving east; she is a half-step ahead of Rowan's left shoulder; she is not in the lead but she is setting the pace; the folio is flat against her ribs under her shirt; she is moving at a walk, pace of purpose not of panic
+    rowan: settlement track — walking east alongside Taylor; he is a half-step behind Taylor's left shoulder; he is carrying the folio (B21 establishes this — the folio has been transferred to Rowan's carry; Rowan now carries it under his arm or in his pack); moving at pace; the guest-lodge is behind them
+    settlement-smallfolk: beginning early morning activity — cookfires, the first movements of the day; some may be visible or audible on adjacent paths; the track east has purpose-walkers on it now (Taylor and Rowan); early morning settlement activity is sparse but not absent
     edric: location unconfirmed — not a present-scene factor
     mira: dispersed household — not present in this scene
   doors_and_shutters:
-    sept-main-door: closed — latched; overnight position; no one has been through it since the inspection party departed in s01e03
-    sept-side-room-door: closed or pulled to — Taylor's overnight position; she sleeps in the side-chamber; the door is at whatever position she left it when she settled for the night
-    sept-side-door: closed but about to open — Taylor is at this threshold as of Bullet 10; exterior established on the other side: dawn breaking, yard visible, track empty, settlement still; the bench is bare stone in the early dawn light; Bullet 11 is the exit through this door at a walk
-    sickroom-shutter: closed — the sleeping alcove's shutter is closed; the room has been closed around Osmynd for the duration of his dying; the tallow stub has been the only light
-    cottage-door: closed — overnight position; the connection between the cottage and the sept corridor or exterior is sealed against the cold
-    sept-gate: closed — latched; pre-dawn; no traffic
-    high-shuttered-windows: closed — louver-gapped but not enough to admit meaningful light at pre-dawn; the bars that crossed the floor at morning in s01e03 are not present yet; the nave is dark
+    sept-main-door: closed — latched; unchanged; no one has passed through it
+    sept-side-room-door: closed or pulled to — position unchanged from Taylor's overnight
+    sept-side-door: CLOSED — Taylor has exited through it and it has been pulled to behind her; the yard is behind them now; the sept is closed
+    sickroom-shutter: closed — the sleeping alcove's shutter is closed; the room is sealed; Osmynd is inside, unattended
+    cottage-door: closed — unchanged
+    sept-gate: OPEN or left open — Taylor and Rowan passed through it to access the track; gate may be swung open or standing open; it has been passed
+    high-shuttered-windows: closed — louver-gapped; early morning light is entering the nave in pale bars but no one is in the nave to receive it; the chancel candle burns unattended beneath the shuttered window light
   spatial_layout:
     sleeping_alcove: the sickroom within the cottage attached to the sept — a small enclosed space; stone or timber-and-daub walls; a single low surface or peg for the tallow stub; Osmynd's pallet on the floor with thin bedding; the space is close and has been closed for weeks; the smell of the room is: tallow smoke, illness-wool, the specific medicinal smell the village women brought during the dying process (herbs, something sharp and herbal applied to cloths), and beneath all of it the particular smell of a body that has been failing for a long time; the room is not large enough that the tallow stub would have left it cold; it is warm-ish from accumulated body heat and the stub's long burning; the warmth makes the stillness stranger
     taylor_side_chamber: the vestry/storage alcove within the sept proper, adjacent to the cottage wall — Taylor's sleeping space; cold stone floor; her sleeping mat; the narrow shuttered window is closed; the room is dark; the wall she shares with the cottage is the wall through which Osmynd's breathing has been audible; that sound is absent; the absence is what the room sounds like now

@@ -40,6 +40,39 @@ attempts: 3 | outcome: retried
 ## Bullet 10 — STUDIO — exterior
 attempts: 0 | outcome: studio-update
 
+## Bullet 16 — taylor-hebert-westeros — extends
+attempts: 1 | outcome: clean
+
+## Bullet 17 — septon-rowan — reads
+attempts: 1 | outcome: clean
+
+## Bullet 18 — septon-rowan — looks-up
+attempts: 1 | outcome: clean
+
+## Bullet 19 — taylor-hebert-westeros — names
+attempts: 2 | outcome: retried
+  attempt 1: all 3 rejected — pure logistics ("road sign," "bus schedule") deflating Rowan's weighted look; no urgency felt in delivery
+  attempt 2: accepted 3/3 — weight off stone before mouth opens; coordinates named in motion; "I am going now" closes without permission-seeking
+
+## Bullet 20 — STUDIO — track
+attempts: 0 | outcome: studio-update
+
+## Bullet 15 — septon-rowan — stills
+attempts: 2 | outcome: retried
+  attempt 1: pulp-enthusiast rejected — three clauses of stillness; "clock just started, piece stops for collar-fidget"
+  attempt 2: accepted 3/3 — one sentence; half-beat named, then hand drops involuntarily; exits stillness rather than dwelling
+
+## Bullet 14 — taylor-hebert-westeros — reports
+attempts: 2 | outcome: retried
+  attempt 1: pulp-enthusiast rejected — both sentences backward-facing (states what happened, confirms same dead fact); no forward board worsening; "updates with paperwork"
+  attempt 2: accepted 3/3 — death delivered flat, then mechanism immediately: Plumm's man on circuit, clock starts at filing not death, window running now; board worsens twice in two sentences
+
+## Bullet 13 — taylor-hebert-westeros — reaches
+attempts: 3 | outcome: retried
+  attempt 1: pulp-enthusiast rejected — six observations before speech, zero board movement; "filler when plot is live"
+  attempt 2: dark-fantasy-reader rejected — "location stamp, no weight, world hasn't pushed back"; pulp + pedant accepted
+  attempt 3: accepted 3/3 — one sentence (24 words); arrival + "folio hard-edged through the linen against my ribs"; cost carried in the body
+
 ## Bullet 12 — septon-rowan — emerges
 attempts: 2 | outcome: retried
   attempt 1: pulp-enthusiast rejected — three sentences of held observation at doorway, no motion, no board change; agonized-pause toll

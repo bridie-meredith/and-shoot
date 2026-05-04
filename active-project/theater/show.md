@@ -23,5 +23,17 @@ The side door gave and the cold arrived ahead of me — sept-yard air, still, pr
 
 A small shape came up the track from the sept direction at a controlled walk — not the village road, not the fields, the right arm held a fraction close to the ribs over something carried beneath the cloth, the hour wrong for any errand he knew. His foot found the step down before the reading had finished, both feet on the cold ground of the yard and the doorway empty at his back, the crease between his brows arriving with the rest of him.
 
-The last step closed and my heels stopped on the yard's frozen scuff a handshake's width from his boots; up this near, his road-dust was on the wool at his knees and the crease between his brows had not gone, and the chest under the shirt registered the folio as a flat held weight against the ribs where the breath had to go around it. I held the breath one beat longer than the walk had asked for, eyes on the unshaven line of his jaw because his eyes were still the wrong altitude to meet, and did not yet open my mouth.
+My feet stopped on the threshold-stone with him still half over the doorstep, pack-strap settling on his shoulder, the folio hard-edged through the linen against my ribs.
+
+"Septon Osmynd is dead — before first light, in the alcove, I checked twice." "Plumm's man is on his circuit and the moment he files the notice with the district recorder the cure is vacant on the page, and the count of days against the wardship runs from the filing, not from the death."
+
+He did not move for half a beat, and then his hand came down off his collar without his asking it to.
+
+My hand went under the hem and found the fold's edge by the friction it had taught me in the dark, and the folio came out of the linen and across the small distance between us and went on across it, weight leaving my side at the wrist, into whatever his hands did or did not do, my eyes still on the dust between his foot and mine.
+
+His thumb opened the folio at the seam and his eye went down the first page at the pace of a man who had read this kind of language before, the frame before the hinge, the hinge before the operative line; he turned the leaf and worked through the second the same way, still, the crease between his brows arriving without his consent — and at the count of days, the number bare on the page in the dry hand of whoever had drafted the form, his lips moved once around it and closed again, and his eyes did not lift.
+
+His eye stayed on the line a beat past reading, and then his head came up — not quickly — and the look that arrived on her did not travel; it set, the way a hand sets on the lid of something that will not be opened again in the open air, and the thumb that had turned the leaves went still on the margin under his other hand, and the air between the threshold-stone and the doorstep took on the small additional weight of a man who has read the thing he was given and understood, and is now looking at the child who knew enough to bring it.
+
+My weight was already off the stone and onto the track before my mouth opened. "The recorder's hall. Two miles east on this road. It opens at the hour after sunrise." A breath. "I am going now."
 
