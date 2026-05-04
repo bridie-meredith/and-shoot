@@ -39,3 +39,17 @@ My weight was already off the stone and onto the track before my mouth opened. "
 
 The track ran east under a grey that had not yet decided to be light, and the folio sat hard under my arm the way it had sat hard against her ribs an hour before, and Taylor's tread came on at a half-step off my left shoulder with the small careful evenness of a child making her steps fit a longer leg; and from behind us, from the settlement side, a sound came up the road that was not walking — four-beat, unhurried in the way a thing is unhurried when it is moving faster than the people in front of it and knows it — and my next stride went out longer than the one before it without my having asked it to, the hem swinging out past the shin, and I did not turn my head.
 
+-- scene: district-recorder's hall, morning --
+
+The quill moved from the date line to the space for the presenting party, and the names settled into the page in the order the protocol required — Septon Rowan, ecclesial capacity, wardship claim reversion, the ward Taylor, sept-district of Harrenhal precinct, the entry made and complete. [⚑ needs edit: dark-fantasy-reader + pulp-enthusiast rejected all 3 attempts — administrative entry reads as frictionless completion when urgency is live; needs texture that costs something or shows the world pushing back]
+
+The folio went down on the bench-wood — set, not placed — and his hand came off it onto the open ledger's edge. "Septon Rowan, of the sept at the Harrenhal precinct, here under provisional appointment from the motherhouse at Stoney Sept, entering on this day a claim of ecclesiastical guardianship over the ward Taylor registered at the sept, and asking that the claim be recorded against the line before any other entry is taken upon it."
+
+The folio made its sound against the bench-wood and his eye traveled down the open ledger's margin where the word provisional sat in the entry he had written while Rowan spoke — the appointment listed, the deficiency noted, the refusal already authored in the page itself. [⚑ needs edit: all 3 rejected all 3 attempts — receipt beat reads as marking time; "refusal already authored" is the right image but arrived at through recap; needs compression to single-beat action + consequence without re-walking prior objects]
+
+The quill never lost its line against the page and his voice came level with the writing: "I am recording the claim and the refusal because the appointment you hold is provisional and the protocol requires permanent appointment, and you will return with that letter when you have it." [⚑ needs edit: pulp-enthusiast rejected all 3 attempts — bureaucratic wall narrated rather than landed; needs single compressed beat where refusal goes into ledger without explanation; worm-canon-pedant rejecting recorder POV beats for absence of Taylor voice — persona criteria mismatch on non-Taylor lines]
+
+His hand went out across the bench for the inkstand and the loose quill beside it, and his voice came level with the reach: "The appointment is provisional because Septon Osmynd's succession has not yet completed in the motherhouse rolls, and a rider goes from me to Stoney Sept today — not tomorrow, today — for the letter that closes it."
+
+He set the quill on its rest and looked up, and the claim was refused: a permanent appointee is what the succession protocol requires, and provisional standing does not satisfy the succession protocol, and the ledger stands as written.
+

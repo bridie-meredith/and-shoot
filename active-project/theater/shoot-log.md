@@ -66,6 +66,32 @@ attempts: 3 | outcome: retried
 ## Bullet 22 — STUDIO — recorder-hall
 attempts: 0 | outcome: studio-update
 
+## Bullet 23 — district-recorder — appears
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: pulp-enthusiast rejected — mechanical opening beat, no clock, no urgency after hoofbeats; cuts to administrative columns
+  attempt 2: dark-fantasy-reader + pulp-enthusiast rejected — atmospheric ceremony bleeds urgency; "not a document that mattered, not yet" undercuts momentum
+  attempt 3: dark-fantasy-reader + pulp-enthusiast rejected — frictionless completion ("entry made and complete"); world cooperates when it should push back; NOTE: haiku impersonator also truncated show.md (deleted B16-B21) — restored manually
+
+## Bullet 24 — septon-rowan — presents
+attempts: 1 | outcome: clean
+
+## Bullet 25 — district-recorder — receives
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: all 3 rejected — folio set on ledger stand with no consequence; pure procedural furniture
+  attempt 2: pulp rejected — eyes lifting from page = transition with no board change
+  attempt 3: all 3 rejected — recap of prior objects before landing payoff; "refusal already authored" is right image but approach marks time
+
+## Bullet 26 — district-recorder — asks
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: all 3 rejected — rulebook citation; "sign on the door, not the wall"
+  attempt 2: pulp rejected — short ask still reads as toll beat with no payoff
+  attempt 3: dark-fantasy-reader accepted; pulp + worm rejected — full explanation while writing is still "narrating the stop"; worm-pedant rejecting non-Taylor lines for absence of Taylor voice (persona criteria mismatch)
+
+## Bullet 27 — septon-rowan — answers
+attempts: 2 | outcome: retried
+  attempt 1: pulp rejected — admission of gap is a pause not a complication; "I don't have the letter" = stasis
+  attempt 2: accepted 3/3 — hand reaches for inkstand, voice level with the reach; admits provisional + immediately sends rider today; "not tomorrow, today" lands as live clock
+
 ## Bullet 15 — septon-rowan — stills
 attempts: 2 | outcome: retried
   attempt 1: pulp-enthusiast rejected — three clauses of stillness; "clock just started, piece stops for collar-fidget"
