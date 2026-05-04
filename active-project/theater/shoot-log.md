@@ -18,3 +18,9 @@ attempts: 3 | outcome: retried
   attempt 1: dark-fantasy-reader + pulp-enthusiast rejected — arrival as mise-en-scene; no board-change; third consecutive still beat
   attempt 2: impersonator rejected — coach prompt asked plumms-man to write Taylor's POV; routing error; correct recipient is taylor-hebert-westeros for non-Taylor observational bullets
   attempt 3: accepted 3/3 — raven compresses in passive feed before eyes catch arch; guardsman closes exit; ledger board reads as fair copy against s01e02 small notation book
+
+## Bullet 5 — taylor-hebert-westeros — sweep-and-mark
+attempts: 1 | outcome: clean
+
+## Bullet 6 — plumms-man — formal-purpose
+attempts: 1 | outcome: clean
