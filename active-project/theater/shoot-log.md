@@ -28,3 +28,15 @@ attempts: 1 | outcome: clean
 attempts: 2 | outcome: retried
   attempt 1: pulp-enthusiast rejected — board flat, no worsening, bridge beat with no friction
   attempt 2: accepted 3/3
+
+## Bullet 8 — taylor-hebert-westeros — pause
+attempts: 1 | outcome: clean
+
+## Bullet 9 — census-officer — wardship question
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: dark-fantasy-reader + pulp-enthusiast rejected — discharged accumulated tension on schedule, no new cost
+  attempt 2: dark-fantasy-reader + pulp-enthusiast rejected — replayed sequence already processed, explained rather than cut
+  attempt 3: all three rejected — stood outside moment, telegraphed rather than delivered, POV register slipped
+
+## Bullet 10 — taylor-hebert-westeros — answer
+attempts: 1 | outcome: clean
