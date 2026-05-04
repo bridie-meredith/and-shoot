@@ -1,6 +1,6 @@
 STATE:
   location: loc-harrenhal-sept-environs
-  sublocation: s01e03 — inside the nave at the sept; crossed from the side-chamber doorway onto the rushes; standing on the rushes near the threshold while the inspector's stylus moves on the ledger board; raven still settled on the sill above the grain crate; Osmynd's bench through the side door still empty; Osmynd's breath through the wall continuing at the worse interval; scribe's case opened behind the inspector; Hatch guardsman still in the arch
+  sublocation: s01e03 — inside the nave at the sept; standing on the rushes near the threshold; raven still settled on the sill above the grain crate; Osmynd's bench through the side door still empty; Osmynd's breath through the wall continuing at the worse interval; scribe's case opened behind the inspector; Hatch guardsman has redirected from the arch toward the side passage that leads to Osmynd's sleeping alcove — pace of a tasked man, not an observed one; the arch she entered by is now passable but unused; the connecting door at the end of the passage is the active clock
   condition: []
   inventory: []
   stats:

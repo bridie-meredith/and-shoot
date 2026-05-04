@@ -24,3 +24,14 @@ attempts: 1 | outcome: clean
 
 ## Bullet 6 — plumms-man — formal-purpose
 attempts: 1 | outcome: clean
+
+## Bullet 7 — taylor-hebert-westeros — name-confirmed
+attempts: 1 | outcome: clean
+
+## Bullet 8 — plumms-man — osmynd-question
+attempts: 1 | outcome: clean
+
+## Bullet 9 — taylor-hebert-westeros — alcove-answer
+attempts: 2 | outcome: retried
+  attempt 1: pulp-enthusiast rejected — confirming Osmynd's absence added no new complication beyond the already-logged empty bench; same fact given a second coat of paint
+  attempt 2: accepted 3/3 — answer delivered; inspector's eyes go to side door; Taylor tracks via sparrow/floor-beetles the distance between his look and the guardsman gesture
