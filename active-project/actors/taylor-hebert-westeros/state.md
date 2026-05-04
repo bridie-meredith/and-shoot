@@ -2,7 +2,8 @@ STATE:
   location: loc-harrenhal-sept-environs
   sublocation: s01e03 — BULLET 21 RECORDED; inside the nave; right arm down; raven resettled on the sill above the grain crate; the scribe's sketch on the ledger margin was made during the held interval and remains on the page (the figure of arm-and-bird is committed regardless of the bird's current position); inspector (Plumm's man) and scribe remain in the nave; Hatch guardsman is in the side passage (dispatched to verify Osmynd at Bullet 10); Osmynd's bench through the side door still empty; Osmynd's breath through the wall continuing at the worse interval; SEPTON-ROWAN IS NOW IN SCENE — he has entered the front arch of the nave and is at the threshold, road-dusty, carrying a traveler's pack, reading the inspector and scribe before he clears the doorway; he has not yet spoken; Taylor does not know his purpose or his name; he is a new unknown in a room she needs to empty; the inspection is still in progress and the room just acquired a new variable
   condition: []
-  inventory: []
+  inventory: [sept-register (just retrieved from shelf behind altar table; held against chest with both hands)]
+  sublocation_current: at the altar-end of the nave, at the shelf behind the altar table, register in hand; raven still at its place on the sill behind, unmoved; alcove behind through the side doorway with Osmynd's body on the pallet; pre-dawn, no light yet
   stats:
     age: 11
     power_state: fauna-control-active

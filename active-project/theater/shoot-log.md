@@ -21,3 +21,9 @@ attempts: 2 | outcome: retried
 attempts: 2 | outcome: retried
   attempt 1: pulp-enthusiast rejected — pause beat with extended interiority (folio foreshadowed, silence rationale run long) when plot is live
   attempt 2: accepted 3/3 — one sentence, no interiority, closes alcove / opens nave; "mouth stayed closed and hands stayed at my sides" delivers the beat cleanly
+
+## Bullet 6 — STUDIO — sept-interior
+attempts: 0 | outcome: studio-update
+
+## Bullet 7 — taylor-hebert-westeros — searches
+attempts: 1 | outcome: clean
