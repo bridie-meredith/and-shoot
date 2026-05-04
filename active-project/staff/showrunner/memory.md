@@ -69,7 +69,7 @@ seasons:
     timeline: 120–122 AC
     episodes:
       - slug: s01e01
-        status: planned
+        status: shot
       - slug: s01e02
         status: planned
       - slug: s01e03

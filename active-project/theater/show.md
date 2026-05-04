@@ -40,5 +40,16 @@ Mira's eyes went to the flagstones between her feet and stayed there, and the ca
 
 I sent it the long way, across the whole width of the yard to where he stood. "Edric. You're still at the gate — you haven't gone in and you haven't gone out, which means you saw all of it from where it was clearest. Come in three steps and say so, before he closes the board."
 
-Edric's eyes went to the officer over the board, stayed the length of a slow breath on the clerk's still-moving stylus and the half-shut ledger, then crossed the yard to the girl at the line's end and rested there a beat longer than was comfortable, and then his hand found the sept door at his back and he stepped through it and pulled it to behind him.
+[NEEDS_EDIT: three tries exhausted — pulp-enthusiast rejected all 3; confirmed-expected-outcome beat, board doesn't worsen; POV collapse ("the girl"/"Taylor" instead of "me")] Edric looked at the officer's eyes already off the girl, then at Taylor and her letter still reaching, then stepped back through the door. The stylus resumed on the board.
 
+[NEEDS_EDIT: three tries exhausted — pulp-enthusiast rejected all 3; atmosphere/transition beat structurally resists board-move framing; consider absorbing into bullet 21 clerk-attention line at wrap] The stylus had not lifted to cap and had not gone on to the next line — it had rested, and a clerk who rests his stylus is a clerk who has been told to wait — and the officer's near foot was still angled across me rather than toward the gate, the weight settled in a way that did not belong to a man finished with a yard. The procedure had moved past Mira and past the carter's wife and had not moved past me. Dismissed sent the stylus on; held stopped it where it was, and what stopped it was not the failure of my claim — that had already been entered — but something that had come into his attention after the entry, something he had decided to keep his foot pointed at until he knew what to do with it.
+
+His pen stopped on the board and his eyes dropped to the current line before he looked back up, the stylus charged and waiting. "Have you been assessed before?"
+
+The stylus moved down to the margin line — I heard the scratch of nib on wax paper — and stopped there a second, a break in the rhythm, and when it moved on there were two parallel marks beside my entry, small and perfectly level, the kind of mark that no one writes by accident.
+
+His shoulder finished its turn toward the gate and his voice came back over it at the same flat carry he had used on every name in the yard, addressed at me without the courtesy of his face. "Ward, you are entered on the provisional labor-eligibility list pending cognitive assessment by the traveling maester on his next circuit through this district." His near foot lifted off the dirt toward the horse and the clerk was already folding the board.
+
+The wheel-tremor went out of the verge-beetles east and stayed gone, and I turned toward the sept door — the maester's circuit was the clock now, and somewhere inside that span Septon Osmynd had to stand at this threshold in front of a witness, or I had to find a body that would stand for him; one step on the dirt and the next problem was already counting itself out.
+
+Three steps — dirt, stone, the shadow of the frame — my fist still closed on the letter the way it had been closed since his fingers let it go, and my other hand found the latch and lifted it, and I went through.

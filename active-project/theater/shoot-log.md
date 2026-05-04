@@ -77,6 +77,38 @@ attempts: 2 | outcome: retried
   attempt 1: pulp-enthusiast + worm-canon-pedant rejected — replayed bullet 10 geometry (arm/seal/three feet/waiting); no new board state
   attempt 2: accepted 3/3
 
+## Bullet 25 — taylor-hebert-westeros — closing-door
+attempts: 2 | outcome: retried
+  attempt 1: pulp-enthusiast rejected — interior hedging ("wrong tool or only tool") marks time after clock already landed in bullet 24
+  attempt 2: accepted 3/3
+
+## Bullet 24 — taylor-hebert-westeros — departure-clock
+attempts: 3 | outcome: retried
+  attempt 1: pulp-enthusiast rejected — three sentences watching cart go smaller; aftermath texture, not escalation
+  attempt 2: pulp-enthusiast rejected — internal accounting after board closed; composure maintenance not board-worsening
+  attempt 3: accepted 3/3
+
+## Bullet 23 — census-officer — closing-declaration
+attempts: 1 | outcome: clean
+
+## Bullet 22 — clerk — double-stroke-entry
+attempts: 1 | outcome: clean
+
+## Bullet 21 — clerk — assessment-question
+attempts: 1 | outcome: clean
+
+## Bullet 20 — taylor-hebert-westeros — yard-silence
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: pulp-enthusiast rejected — prose still-life; nothing moved on the board; camera holding on the rubble
+  attempt 2: pulp-enthusiast rejected — count-finishes-at-zero confirmed what prior three beats already proved; no new complication
+  attempt 3: pulp-enthusiast rejected — suspicion-parsing not escalation; two paragraphs reading posture without board-worsening
+
+## Bullet 19 — edric-cray — exit
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: dark-fantasy-reader + pulp-enthusiast rejected — POV collapse ("she/her" for Taylor); stilted blocking
+  attempt 2: dark-fantasy-reader + worm-canon-pedant rejected — clause-stacking buried the stylus-resumption consequence
+  attempt 3: pulp-enthusiast rejected — confirmed-expected-outcome; Edric folds without complicating the board; scene closed without worsening
+
 ## Bullet 12 — taylor-hebert-westeros — closed-door
 attempts: 3 | outcome: retried
   attempt 1: dark-fantasy-reader + pulp-enthusiast rejected — sensory inventory of unchanged things; no consequence propagating; beetles/horse breath as atmosphere not board-move
