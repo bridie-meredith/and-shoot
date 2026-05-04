@@ -65,5 +65,32 @@ attempts: 3 | outcome: NEEDS_EDIT
   attempt 3: pulp-enthusiast rejected — atmosphere/stuck-in-place with offscreen clock; "watching her think about cold palm"; DFR + worm-pedant both accepted
   NOTE: structural issue — adapted beat (Taylor alone at empty cote) lacks board-worsening action; merge with Bullet 17 at wrap recommended
 
+## Bullet 16 — STUDIO — raven-dispersal
+attempts: 0 | outcome: studio-update
+
 ## Bullet 10 — STUDIO — osmynd-on-bench
 attempts: 0 | outcome: studio-update
+
+## Bullet 17 — taylor-hebert-westeros — power-cost
+attempts: 2 | outcome: retried
+  attempt 1: pulp-enthusiast rejected — single-beat interiority paragraph, board does not change, agonized-decision-making hot button at length, padding around one sensory observation
+  attempt 2: accepted 3/3 — full palm on post, head bowed, forehead on wood; blood smear on back of hand, dark and clear; cost paid into environment without announcement
+
+## Bullet 18 — plumms-man — horse-retrieval
+attempts: 2 | outcome: retried
+  attempt 1: all 3 rejected — dark-fantasy-reader: fauna sense too clean/frictionless for depleted Taylor; pulp-enthusiast: transit beat, no board-change; worm-canon-pedant: POV break (exterior camera not fauna-sense), geography error (cote drawing closer when horse is past it)
+  attempt 2: accepted 3/3 — horse via sparrow-intermediary; depleted sense explicit ("costs another fraction"); hoofbeats pass her position; sealed notations beyond intercept moving north at horse-speed
+
+## Bullet 19 — taylor-hebert-westeros — head-lift
+attempts: 1 | outcome: clean
+
+## Bullet 20 — plumms-man — barter-row-circuit
+attempts: 1 | outcome: clean
+
+## Bullet 21 — taylor-hebert-westeros — wrong-clock
+attempts: 1 | outcome: clean
+
+## Bullet 22 — plumms-man — departure-east
+attempts: 2 | outcome: retried
+  attempt 1: pulp-enthusiast rejected — departure confirmed departure, no new friction or board-change added; threat left frame with offscreen consequence
+  attempt 2: accepted 3/3 — departure in one clause; resident near third door orients on rack position; man with pen rides east, resident sleeps four doors away and stays

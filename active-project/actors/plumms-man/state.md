@@ -1,6 +1,6 @@
 STATE:
-  location: outer-lane-heading-north-toward-raven-cote
-  condition: [on-duty, dismounted, second-notation-recorded, pattern-formalized-in-writing, girl-observation-cross-referenced-with-granary-floor-condition, book-sealed-in-satchel, circuit-resuming, motion-initiated]
-  inventory: [notation-book-with-first-and-second-entries-marked-and-sealed, quill, inkhorn, sealing-wax, commission-letter]
-  horse: bay-horse-standing-at-entrance
-  progress: circuit-began-at-dawn, granary-circuit-entry-logged, grain-keeper-questioned, granary-floor-verification-complete, first-entry-recorded-below-date, second-entry-recorded-comparing-notches-to-floor-condition, anomaly-now-has-quantity-and-documentation, circuit-moving-to-next-settlement
+  location: outer-lane-north-of-raven-cote-heading-toward-barter-row
+  condition: [on-duty, mounted, three-notations-sealed-in-satchel, circuit-advancing, barter-row-approach]
+  inventory: [notation-book-with-three-entries-sealed, quill, inkhorn, sealing-wax, commission-letter]
+  horse: bay-horse-mounted-riding-north-past-cote
+  progress: circuit-began-at-dawn, granary-circuit-entry-logged, grain-keeper-questioned, granary-floor-verified, tally-comparison-recorded, raven-cote-configuration-recorded, three-notations-sealed, passed-cote-post-riding-north, barter-row-next
