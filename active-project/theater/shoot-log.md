@@ -47,6 +47,16 @@ attempts: 3 | outcome: NEEDS_EDIT
   attempt 2: dark-fantasy-reader + worm-canon-pedant rejected — external camera placement, cost absent from action
   attempt 3: pulp-enthusiast rejected — summons reads as holding beat, board-move deferred to bullet 12
 
+## Bullet 18 — taylor-hebert-westeros — edric-ask
+attempts: 2 | outcome: retried
+  attempt 1: pulp-enthusiast rejected — same play replayed as Mira ask; board already fell, no escalation
+  attempt 2: accepted 3/3
+
+## Bullet 17 — mira-stonefield — silence
+attempts: 2 | outcome: retried
+  attempt 1: pulp-enthusiast rejected — triple restatement of same silence; no board advancement
+  attempt 2: accepted 3/3
+
 ## Bullet 16 — taylor-hebert-westeros — mira-ask
 attempts: 1 | outcome: clean
 

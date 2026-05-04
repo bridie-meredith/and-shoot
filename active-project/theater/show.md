@@ -1,3 +1,4 @@
+---
 episode: s01e01 — The Ledger Opens
 chunk: The impressment census officer arrives at the sept and logs Taylor as an unattached ward with no blood claim and no sworn guardian capable of asserting one — the septon is too ill to appear, and his written attestation is refused as insufficient. Taylor is placed on a provisional labor-eligibility list pending the traveling maester's cognitive assessment, and the window for being overlooked closes the moment her name enters the census ledger.
 audience: dark-fantasy-reader, pulp-enthusiast, worm-canon-pedant
@@ -35,4 +36,9 @@ I stepped — not back, not aside, into the two feet of yard his turning shoulde
 
 I turned to Mira while the clerk's stylus was still moving and said it at the carry her own voice had used across the yard an hour before. "Mira. Stand witness. The letter was offered, the septon was called for, the door did not open — say you saw it, before he closes the board and rides."
 
-Mira's eyes went to the flagstones at her feet — the dust-pale ones she had read on the way in, the ones she had stood on all morning — and stayed there, and the clerk's stylus kept moving, and she did not look up, and she did not speak.
+Mira's eyes went to the flagstones between her feet and stayed there, and the carry of the ask died in the yard between us with nowhere left for me to put it.
+
+I sent it the long way, across the whole width of the yard to where he stood. "Edric. You're still at the gate — you haven't gone in and you haven't gone out, which means you saw all of it from where it was clearest. Come in three steps and say so, before he closes the board."
+
+Edric's eyes went to the officer over the board, stayed the length of a slow breath on the clerk's still-moving stylus and the half-shut ledger, then crossed the yard to the girl at the line's end and rested there a beat longer than was comfortable, and then his hand found the sept door at his back and he stepped through it and pulled it to behind him.
+
