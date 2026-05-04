@@ -21,4 +21,7 @@ His voice came out of the stillness the way it always came now — not weak, exa
 
 The barter row was where his boots pointed when the cote post released him—north into the gathered place, into the residents who had all seen me passing through the lane. The small book closed in his hand and I felt the weight of it: the motion finished, the notations complete, the witnesses waiting to make permanent what was written before he even looked at the birds.
 
+[NEEDS_EDIT: three tries exhausted — pulp-enthusiast rejects stuck-in-place/atmosphere beats across all attempts; recommend wrap editor consider merging Bullet 15 into Bullet 17 (power-cost at post) to create a single beat with physical action rather than two separate observation beats] The rung under my palm gave back iron-cold that had nothing to do with shadow, the temperature the night had left in it still being kept hour by hour, and above me the south-ledge cluster broke its first bird into the air and the arrangement reshaped without scattering — and I was at the cote, with my hand on a ladder, while north of the granary the row was filling with the people who had seen me in the lane and the notations were beginning to be made into something a clerk could read.
+
+
 

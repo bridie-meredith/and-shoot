@@ -58,5 +58,12 @@ attempts: 3 | outcome: retried
   attempt 3: accepted 3/3 — destination first (barter row), two sentences, clock front-loaded
   CONTINUITY NOTE: accepted line has Plumm's man departing cote toward barter row, which conflicts with plan Bullets 15-18 (assumed he stays at cote). Bullets 15-19 will be adapted: Taylor arrives at cote after his departure; ravens still in configuration; power cost at empty cote post. Editor flag for wrap.
 
+## Bullet 15 — taylor-hebert-westeros — cote-base-adapted
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: pulp-enthusiast rejected — one very long sentence, repeated irreversibility seven times, no forward motion
+  attempt 2: pulp-enthusiast rejected — closed with "I had not chosen it yet"; internal weather not complication
+  attempt 3: pulp-enthusiast rejected — atmosphere/stuck-in-place with offscreen clock; "watching her think about cold palm"; DFR + worm-pedant both accepted
+  NOTE: structural issue — adapted beat (Taylor alone at empty cote) lacks board-worsening action; merge with Bullet 17 at wrap recommended
+
 ## Bullet 10 — STUDIO — osmynd-on-bench
 attempts: 0 | outcome: studio-update

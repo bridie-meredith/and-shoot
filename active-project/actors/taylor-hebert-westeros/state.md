@@ -1,6 +1,6 @@
 STATE:
   location: loc-harrenhal-sept-environs
-  sublocation: stone bench outside the sept door — seated beside Septon Osmynd in the morning warmth, both his hands taken in hers, direct contact replacing through-wall contact; blanket on him reads as condition not weather (air warmed past need); Harrenhal visible north against pale flat sky; passive fauna feed continuing ambient (bell tower ravens, sept beam silverfish, road-edge beetles)
+  sublocation: at the foot of the raven-cote ladder — left the bench after the man departed north toward the barter row; standing in the boot-prints he made at the post, hand on the cote ladder's lowest rung (iron, frost-cold, untouched since frost-out); looking up at the south-facing ledge directly, eyes confirming what the eave-sparrow has been delivering; ledge cluster still holding the configuration written into his book; Osmynd remains on the stone bench behind her at the sept door; passive fauna feed continuing ambient (bell tower ravens overhead, sept beam silverfish, road-edge beetles, eave-sparrow)
   condition: []
   inventory: []
   stats:
