@@ -35,3 +35,40 @@ attempts: 1 | outcome: clean
 attempts: 2 | outcome: retried
   attempt 1: pulp-enthusiast rejected — confirming Osmynd's absence added no new complication beyond the already-logged empty bench; same fact given a second coat of paint
   attempt 2: accepted 3/3 — answer delivered; inspector's eyes go to side door; Taylor tracks via sparrow/floor-beetles the distance between his look and the guardsman gesture
+
+## Bullet 10 — plumms-man — guardsman-sent
+attempts: 1 | outcome: clean
+
+## Bullet 11 — STUDIO — raven-on-arm
+attempts: 0 | outcome: studio-update
+
+## Bullet 12 — plumms-man — inspector-stills
+attempts: 1 | outcome: clean
+
+## Bullet 13 — plumms-man — duration-question
+attempts: 2 | outcome: retried
+  attempt 1: dark-fantasy-reader + pulp-enthusiast rejected — over-narrated calibration strategy before answer landed; board did not worsen; reader told what Taylor was doing instead of feeling it
+  attempt 2: accepted 3/3 — question arrives flat; answer begins ("Since before the cold"); scribe's stylus resumes on first syllable; record takes the answer before it is complete
+
+## Bullet 14 — taylor-hebert-westeros — grain-answer
+attempts: 1 | outcome: clean
+
+## Bullet 15 — plumms-man — inspector-closes
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: pulp-enthusiast rejected — entrance too long; four-clause beetle-tracking buried the payoff
+  attempt 2: pulp-enthusiast + worm-canon-pedant rejected — raven non-reaction already established in Bullet 14; paying same toll twice; no new board-change
+  attempt 3: pulp-enthusiast + worm-canon-pedant rejected — board worsens internally but scene holds position; no external snap; beetle contact path invalid from rushes to inspector's boots
+
+## Bullet 16 — plumms-man — send-the-bird
+attempts: 2 | outcome: retried
+  attempt 1: worm-canon-pedant rejected — "no longer holding open the option of having chosen anywhere else" infers avian mental state beyond what passive fauna sense delivers
+  attempt 2: accepted 3/3 — order arrives flat; grip described as physical data only (mass/pressure/no-flight-adjustment); Taylor calculating compliance while noting something unresolved
+
+## Bullet 17 — taylor-hebert-westeros — arm-lift
+attempts: 1 | outcome: clean
+
+## Bullet 18 — plumms-man — scribe-instructed
+attempts: 1 | outcome: clean
+
+## Bullet 19 — scribe — raven-sketched
+attempts: 1 | outcome: clean
