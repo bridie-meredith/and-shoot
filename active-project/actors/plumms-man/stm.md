@@ -1,10 +1,7 @@
 STM:
-- Third notation now closed in the book. The pattern is written. Three points: girl, cleared space, time signature — no longer scattered. The machinery is complete for this settlement circuit.
-- The raven cote cluster released its focus when the writing finished — birds settling from their held position the moment his pen left the page, readable as the moment the task concluded.
-- He stands at the cote base with the small book closed, the three notations sealed inside. The circuit will continue to other settlements, but this location is recorded and done.
-- Second entry marked below the first — the tally-stick notches against the swept floor, the condition recorded, the gap between them stated plainly.
-- The book is closed. Two notations pointed at the same thing. The anomaly had a quantity attached.
-- Girl observed in lane during first settlement granary examination; grain-keeper's head turned to follow her passing; timing matched with floor verification work.
-- Pattern formed across location and actor — girl, cleared space, time signature — now in writing, now formal.
-- First settlement circuit begun at dawn; grain-keeper questioned about rat-count timing.
-- Granary notation completed — months-long gap in rat droppings recorded and logged; first entry in the notation book.
+- Formal inspection dispatched. Ledger board now the instrument, scribe now the recorder, Hatch guardsman now the presence. Escalation from notation circuit to documented inspection.
+- Arrived at the sept. Reading the nave before moving through it — measuring the space as he always does, finding the shape of the place before engaging with its contents.
+- The sealed notation book is in the satchel. Three entries written. The pattern was complete. Now the inspection proceeds from the pattern that was already found.
+- The girl, the cleared space, the time signature — three points that rhymed. That rhyme triggered Plumm's hand, and Plumm's hand sent this inspection.
+- Scribe with sketching kit in position. Guardsman in the arch. Both attending. Procedure requires no malice. This is the machinery continuing, the next step in the circuit.
+- Third notation closed at the raven cote. The anomaly is written and sealed. Whatever follows is the response to what was already recorded.

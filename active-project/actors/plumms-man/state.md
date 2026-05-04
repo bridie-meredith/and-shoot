@@ -1,6 +1,7 @@
 STATE:
-  location: outer-lane-north-of-raven-cote-heading-toward-barter-row
-  condition: [on-duty, mounted, three-notations-sealed-in-satchel, circuit-advancing, barter-row-approach]
-  inventory: [notation-book-with-three-entries-sealed, quill, inkhorn, sealing-wax, commission-letter]
-  horse: bay-horse-mounted-riding-north-past-cote
-  progress: circuit-began-at-dawn, granary-circuit-entry-logged, grain-keeper-questioned, granary-floor-verified, tally-comparison-recorded, raven-cote-configuration-recorded, three-notations-sealed, passed-cote-post-riding-north, barter-row-next
+  location: inside-sept-arch-with-scribe-and-guardsman
+  condition: [on-duty, formal-inspection-arrival, ledger-board-carried, scribe-attending, hatch-guardsman-present, reading-the-nave]
+  inventory: [ledger-board-wheat-sheet-sized-pinned-under-left-arm, quill, sketching-kit-with-scribe, sealed-notation-book-in-satchel, sealing-wax, commission-letter]
+  scribe: present-with-sketching-kit-behind-plumms-man
+  guardsman: hatch-guardsman-wide-in-arch-behind-scribe
+  progress: formal-inspection-dispatched-by-plumm, arrived-at-sept, measuring-nave-before-proceeding
