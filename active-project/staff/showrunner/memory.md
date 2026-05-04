@@ -73,7 +73,7 @@ seasons:
       - slug: s01e02
         status: shot
       - slug: s01e03
-        status: planned
+        status: shot
       - slug: s01e04
         status: planned
       - slug: s01e05

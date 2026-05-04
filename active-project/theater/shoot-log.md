@@ -106,3 +106,6 @@ attempts: 0 | outcome: studio-update
 
 ## Bullet 29 — taylor-hebert-westeros — holds-until-cart-fades
 attempts: 1 | outcome: clean
+
+## Bullet 30 — septon-rowan — what-else-have-they-seen
+attempts: 1 | outcome: clean
