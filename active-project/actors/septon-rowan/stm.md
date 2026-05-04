@@ -1,2 +1,2 @@
 STM:
-- No recent events recorded yet. Episode 1 not yet begun.
+- s01e04 BULLET 12 (ACCEPTED): Pre-dawn, guest-lodge doorway. Track empty as memorized, then: shape from sept direction at controlled walk — not village road, not fields. Reads the body: right arm held closer to ribs (something beneath the cloth), hour wrong for any errand he knows. His foot found the step down before the reading finished — both feet in the yard now, doorway empty at his back. The crease between his brows. Did not call out. Stepped toward her, committed. Does not know Osmynd is dead. Does not know what she is carrying.
