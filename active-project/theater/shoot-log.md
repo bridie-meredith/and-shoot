@@ -57,6 +57,15 @@ attempts: 2 | outcome: retried
 ## Bullet 20 — STUDIO — track
 attempts: 0 | outcome: studio-update
 
+## Bullet 21 — septon-rowan — walks
+attempts: 3 | outcome: retried
+  attempt 1: pulp-enthusiast + worm-canon-pedant rejected — walking atmosphere, no board change, no Taylor anchor
+  attempt 2: pulp-enthusiast rejected — spooky-kid detail present but threat not pulled; board unchanged
+  attempt 3: accepted 3/3 — hoofbeats behind them from settlement side; stride lengthens before asking; "four-beat, unhurried in the way a thing is unhurried when moving faster than the people in front of it"
+
+## Bullet 22 — STUDIO — recorder-hall
+attempts: 0 | outcome: studio-update
+
 ## Bullet 15 — septon-rowan — stills
 attempts: 2 | outcome: retried
   attempt 1: pulp-enthusiast rejected — three clauses of stillness; "clock just started, piece stops for collar-fidget"

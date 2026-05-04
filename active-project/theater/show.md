@@ -37,3 +37,5 @@ His eye stayed on the line a beat past reading, and then his head came up — no
 
 My weight was already off the stone and onto the track before my mouth opened. "The recorder's hall. Two miles east on this road. It opens at the hour after sunrise." A breath. "I am going now."
 
+The track ran east under a grey that had not yet decided to be light, and the folio sat hard under my arm the way it had sat hard against her ribs an hour before, and Taylor's tread came on at a half-step off my left shoulder with the small careful evenness of a child making her steps fit a longer leg; and from behind us, from the settlement side, a sound came up the road that was not walking — four-beat, unhurried in the way a thing is unhurried when it is moving faster than the people in front of it and knows it — and my next stride went out longer than the one before it without my having asked it to, the hem swinging out past the shin, and I did not turn my head.
+
