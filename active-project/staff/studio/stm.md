@@ -4,6 +4,32 @@ STM:
 
 ---
 
+BULLET 5 PROMPT PLAN — s01e02 — for taylor-hebert-westeros impersonator via coach:
+
+Taylor is moving through the outer lane, keeping the granary in sightline. Dawn is up but cold — first light, no warmth, stone-chill still everywhere. She is outside the sept building for the first time this episode. The prompt plan below gives the impersonator the sensory state for this beat.
+
+Sensory priorities in order of narrative weight:
+
+1. THE DAWN LIGHT. It is here now — not warmth, not the full sun, but presence. The east sky holds pale flat light. The towers of Harrenhal to the north catch the first touch of it along their upper stones: the ruin is lit from above while the settlement is still in the ambient cool of the transition. Shadows have edges. The outer lane is visible. She can see the granary from where she is — its bulk, its closed doors, its stillness. This is the same granary her passive sense has been reading as empty since before she woke. Seeing it does not change the reading.
+
+2. THE HORSE ON THE SOUTH APPROACH. This is what her passive sense has been registering since it moved into range. A large fauna presence, moving north — not hers, not under her reach, but there and registering. The secondary signal is the roadside disturbance: small birds flushed at first light as the horse passed, field animals briefly scattered. She may have already named it as a horse before she sees anything, or she may not have named it yet but know the shape. Either way, the signal is: something large moved north along the south track, recently. If she is in the outer lane with a sightline toward the south approach, she may catch the rider's passage or its immediate aftermath — the track, a figure moving away from her toward the granary, the distinct movement pattern of a horse at a road-walk.
+
+3. THE GRANARY. She is keeping it in sightline. The warrens under its floor are still empty — dawn has not reset the anomaly; if anything, the continued absence at the hour when the warrens should be most active is a sharpening of the original signal. The building sits there. Closed. Still. Her sense reads through its walls into what is under the floor: nothing, where there should be something. The rider from the south approach is moving toward it. These two facts are not yet joined into a single interpretation — that is the impersonator's interiority to work with, not studio's to assign.
+
+4. THE COLD. She has left the sept. The sept side-room was cold — the outer lane is colder. The air outside the stone building is the full autumn morning, still and sharp. No wind. The cold is flat and clear and everywhere. She is dressed for this or she is not; either way she is in it.
+
+5. THE SETTLEMENT WAKING. The smallfolk are beginning to stir. Not yet in full morning movement, but the quality of the settlement's sound has shifted since she was inside. A door somewhere. Livestock awareness at the farms — not yet loud, but present. The perimeter is transitioning from pre-dawn stillness to earliest morning. This is the background against which the rider's passage reads as slightly off-rhythm: a horse on the south approach at this hour is not usual morning traffic for a settlement of this kind.
+
+6. THE SEPTON'S BREATHING — now absent from direct perception. She is outside. She cannot hear through the wall from here. The sound she has been calibrated to is no longer in range. Whether she notes this absence from her auditory field — whether she registers the silence where that sound was — is the impersonator's call. Studio records only that it is no longer an available sensory input from the outer lane.
+
+7. HARRENHAL TO THE NORTH. The towers are visible against the dawn sky — lit from above, the first direct light of the day touching the stones. The ruin is always north. It does not go away with the dark. The impersonator may or may not surface this; it is the ambient horizon, available if the POV looks north, which she may do given the granary is in the same directional arc.
+
+Vibe inflection: fauna-as-evidence (the horse signal and the empty warrens are two separate readings from her passive sense; one is a new arrival, one is a persistent absence; both are data; the episode-vibe is that this data is being assembled before she has interpreted it); being-watched-without-knowing (she is watching the granary; the rider is moving toward the granary; something at the granary is drawing two lines of attention toward the same point; she does not have the frame that would make this feel like convergence; the circuit is completing without her knowing it completes); fauna (distributed-awareness — her sense is doing what it does; she is not reaching; she is receiving; the horse is registering because it exists in her range, not because she sought it); survival (she is outside, awake early, keeping a sightline on the anomaly; this is the drive, quiet and functional, doing what it always does before there is a decision to make).
+
+POV beat: Taylor is in the outer lane. Dawn. Cold. She has the granary in sightline and her passive sense is running. The horse is the new signal — large, north-moving, now in or past her visual range if she is positioned to see the south approach from the lane. The granary is the old signal, unchanged. She is moving — the beat says "moving through" the outer lane — so she is not static; she is in transit with the granary as her orientation point. The impersonator starts with the body in motion in the cold morning air, the light around her, the granary ahead or to one side, and surfaces the double reading: the animal that moved through, and the absence where animals should be.
+
+---
+
 SCENE-OPEN PROMPT PLAN — s01e02 bullet 1 — for taylor-hebert-westeros impersonator via coach:
 
 Taylor is in the sept side-room. Eyes open in the dark. Pre-dawn. She has been awake for some duration or has woken into this — the distinction may not be clear to her. What is clear is the room around her and the thing her passive sense is not finding.
