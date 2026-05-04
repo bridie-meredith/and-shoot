@@ -94,3 +94,11 @@ attempts: 1 | outcome: clean
 attempts: 2 | outcome: retried
   attempt 1: pulp-enthusiast rejected — departure confirmed departure, no new friction or board-change added; threat left frame with offscreen consequence
   attempt 2: accepted 3/3 — departure in one clause; resident near third door orients on rack position; man with pen rides east, resident sleeps four doors away and stays
+
+## Bullet 23 — STUDIO — east-postern-delivery
+attempts: 0 | outcome: studio-update
+
+## Bullet 24 — taylor-hebert-westeros — gate-close
+attempts: 2 | outcome: retried
+  attempt 1: pulp-enthusiast rejected — closing image settled the board (gate closed, wall resumed) without new complication; same board as two lines prior
+  attempt 2: accepted 3/3 — gate settles in one clause; passive feed delivers bench empty (no timestamp — feed tells now, not when); two unresolvable facts: gate sealed, bench empty
