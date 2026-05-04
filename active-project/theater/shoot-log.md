@@ -87,6 +87,36 @@ attempts: 3 | outcome: NEEDS_EDIT
   attempt 2: pulp rejected — short ask still reads as toll beat with no payoff
   attempt 3: dark-fantasy-reader accepted; pulp + worm rejected — full explanation while writing is still "narrating the stop"; worm-pedant rejecting non-Taylor lines for absence of Taylor voice (persona criteria mismatch)
 
+## Bullet 38 — taylor-hebert-westeros — does-not-move
+attempts: 3 | outcome: retried
+  attempt 1: pulp rejected — agonized-beat padding; room emptying around her while she pauses to feel it
+  attempt 2: pulp rejected — recorder housekeeping observation; confirms sealed ledger rather than moving board
+  attempt 3: accepted 3/3 — arithmetic closes the trap; rider's days vs. deadline; "no gap because there had never been one"; she turns
+
+## Bullet 37 — septon-rowan — takes
+attempts: 1 | outcome: clean
+
+## Bullet 36 — STUDIO — recorder-hall
+attempts: 0 | outcome: studio-update
+  ledger stand: raven-sketch inspection record 3 lines above refusal/appearance entry; same page; dispatch side; document in transit to Harrenhal
+
+## Bullet 35 — district-recorder — marks
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: dark-fantasy + pulp rejected — archival description; horror buried
+  attempt 2: dark-fantasy + worm accepted; pulp rejected — "she's in the book, okay, so what happens now?"; no clock
+  attempt 3: dark-fantasy + worm accepted; pulp rejected — "clause-labyrinth; forty words of procedural fog; give me the action"; NOTE: pulp systematically rejects all recorder-hall recorder-POV beats; editor should consider collapsing B34/B35 or retelling through Taylor POV
+
+## Bullet 34 — district-recorder — refuses
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: dark-fantasy + pulp rejected — form letter passive voice; no visible bite
+  attempt 2: dark-fantasy accepted; pulp rejected — curtain-drop with no new complication; no clock starting
+  attempt 3: all 3 rejected — three jobs in one sentence, none land; "clerk tidying up" not "jaw closing"; board-change (Taylor's appearance logged) buried as footnote; worm-pedant: nothing Worm-facing (criteria mismatch on recorder POV)
+
+## Bullet 33 — district-recorder — holds
+attempts: 2 | outcome: retried
+  attempt 1: dark-fantasy-reader + pulp-enthusiast rejected — date-checking reads as research beat not threat; no board change; "a man checking dates is not a man the world is about to cost something"
+  attempt 2: accepted 3/3 — date column confirmed correct, finger moves LEFT to standing column; nib descends toward that line; Taylor was right and it doesn't matter; board worsens twice in one line
+
 ## Bullet 32 — taylor-hebert-westeros — speaks
 attempts: 3 | outcome: retried
   attempt 1: worm-canon-pedant rejected — "a breath taken at the level a child's breath is taken at" is recursive self-description outside Taylor's register
