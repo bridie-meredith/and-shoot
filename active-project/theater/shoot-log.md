@@ -72,3 +72,37 @@ attempts: 1 | outcome: clean
 
 ## Bullet 19 — scribe — raven-sketched
 attempts: 1 | outcome: clean
+
+## Bullet 20 — taylor-hebert-westeros — arm-lowered
+attempts: 1 | outcome: clean
+
+## Bullet 21 — STUDIO — rowan-enters
+attempts: 0 | outcome: studio-update
+
+## Bullet 22 — septon-rowan — motherhouse-announcement
+attempts: 1 | outcome: clean
+
+## Bullet 23 — septon-rowan — interposition-argument
+attempts: 2 | outcome: retried
+  attempt 1: worm-canon-pedant rejected — floor-beetle tracking of Rowan's movement through rushes is invalid substrate; same error as Bullet 15 flag
+  attempt 2: accepted 3/3 — interposition rendered through direct vision; stylus tracked auditorily; argument enters record as Rowan makes it; page takes him
+
+## Bullet 24 — plumms-man — name-second-time
+attempts: 1 | outcome: clean
+
+## Bullet 25 — plumms-man — rowan-questioned
+attempts: 2 | outcome: retried
+  attempt 1: pulp-enthusiast rejected — confirms prior worsening (Rowan in ledger) without new board-change; trailing half of a complication that already landed
+  attempt 2: accepted 3/3 — column closed (motherhouse, own road, today); inspector's gaze crosses from Rowan to Taylor; inspection not over; board-worsening confirmed
+
+## Bullet 26 — plumms-man — rowan-entered
+attempts: 1 | outcome: clean
+
+## Bullet 27 — plumms-man — departs
+attempts: 1 | outcome: clean
+
+## Bullet 28 — STUDIO — door-half-closes
+attempts: 0 | outcome: studio-update
+
+## Bullet 29 — taylor-hebert-westeros — holds-until-cart-fades
+attempts: 1 | outcome: clean
