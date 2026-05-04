@@ -48,5 +48,15 @@ attempts: 3 | outcome: retried
 ## Bullet 12 — septon-osmynd — rats-named
 attempts: 1 | outcome: clean
 
+## Bullet 13 — STUDIO — raven-cote-anomaly
+attempts: 0 | outcome: studio-update
+
+## Bullet 14 — plumms-man — cote-notation
+attempts: 3 | outcome: retried
+  attempt 1: pulp-enthusiast rejected — re-experienced prior board-change (Osmynd's speech), no new complication
+  attempt 2: pulp-enthusiast rejected — long departure prose, setup tax too high, clock-start at end not front
+  attempt 3: accepted 3/3 — destination first (barter row), two sentences, clock front-loaded
+  CONTINUITY NOTE: accepted line has Plumm's man departing cote toward barter row, which conflicts with plan Bullets 15-18 (assumed he stays at cote). Bullets 15-19 will be adapted: Taylor arrives at cote after his departure; ravens still in configuration; power cost at empty cote post. Editor flag for wrap.
+
 ## Bullet 10 — STUDIO — osmynd-on-bench
 attempts: 0 | outcome: studio-update
