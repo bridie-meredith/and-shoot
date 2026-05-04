@@ -3,3 +3,5 @@ chunk: Ser-harwick-plumm's man makes his first circuit of the Harrenhal shadow s
 audience: dark-fantasy-reader, pulp-enthusiast, worm-canon-pedant
 opened: 2026-05-04
 
+I stop counting Osmynd's breaths and the cold under my hip becomes the only thing in the room — ravens in the bell tower where they should be, silverfish in the sept beams where they should be, the warrens under the granary swept in a clean shape that nothing in the world clears that way except something that knows how to clear it, and my hand, when I notice it, has closed on the edge of the mat.
+

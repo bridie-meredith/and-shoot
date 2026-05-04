@@ -1,6 +1,6 @@
 STATE:
   location: loc-harrenhal-sept-environs
-  sublocation: sept interior — crossed the yard and went through the main door; the commission has departed, the yard is empty, the door is closed behind her
+  sublocation: sept side-room — on sleeping mat, awake; pre-dawn; recognized cleared warrens through passive sense (Bullet 2)
   condition: []
   inventory: []
   stats:

@@ -14,14 +14,15 @@ STATE:
     painted-mother-panel: chancel altar table (interior)
     rain-barrel: yard, south cottage wall
     septon-osmynd: sickroom — present, breathing; condition unchanged from prior episode close; audible if Taylor listens through the wall
-  time_of_day: pre-dawn — dark or barely grey; no sun; the sky may be lightening at the very edge of the east but there is no warmth and no direct light; the world is still in its night configuration; this is the hour before first-bell if there were a bell to ring
+  time_of_day: dawn — first light is now present; the sun is cresting or just crested at the horizon; the sky to the east holds the pale flat light of early morning; direct sunlight is not yet strong and carries no warmth; the air remains cold and the stone has not released its night-chill; but the dark is broken; the world has shifted from night configuration to early-morning configuration; this transition happened at Bullet 3
   weather: still, cool autumn air — Riverlands, 120 AC. No rain. No wind. Ground dry. Cold settles heaviest in this hour; the stone of the sept holds the night's chill.
   actor_positions:
-    taylor: sept side-room — lying on sleeping mat, eyes open in the dark; awake; has been awake for some duration; passive fauna sense active
+    taylor: sept side-room — position as of Bullet 2; has been awake; moving toward the outer lane by Bullet 5; passive fauna sense active
+    plumms-man: south approach — mounted, bay horse; moving north toward the granary; wearing a household servant's plain brown tabard with no house sigil; arrived at Bullet 3; within passive fauna sense range (horse as large-fauna presence; disturbance of roadside fauna consistent with mounted passage); his passage is perceivable through Taylor's passive sense as a fauna-adjacent signal whether or not she has line of sight from her current position
     septon-osmynd: sickroom — present; breathing audible through the cottage wall if Taylor attends to it; condition narrowing but unchanged from s01e01 close
-    edric: sept interior or cottage — location uncertain; sleeping; not a present-scene factor at open
-    mira: dispersed household — location unknown; not present in this scene at open
-    settlement-smallfolk: in their dwellings — pre-dawn; no movement outside; the normal pre-dawn scatter-patterns are absent
+    edric: sept interior or cottage — location uncertain; not a present-scene factor at this point
+    mira: dispersed household — location unknown; not present in this scene
+    settlement-smallfolk: in their dwellings — beginning to stir with dawn; not yet in full morning movement
   doors_and_shutters:
     sept-main-door: closed
     sept-side-room-door: closed or pulled to — Taylor's resting space; she controls it
@@ -38,19 +39,18 @@ STATE:
     road_approach: dirt track north toward Harrenhal (half a league); track south toward the hamlet (ten minutes on foot); both empty and silent at this hour
     bell_tower: above the sept nave — accessible by internal ladder; the ravens are present; weight-shifts on timber in the dark; still at this hour, not flushed
   ambient:
-    - pre-dawn dark — total inside the side-room; the shutter is closed; the sept has no fire lit; there is no source of light; the dark is complete except for whatever seeps under the shutter from the not-yet-dawn outside
-    - cold stone — the sept walls hold the night; the mat is the only insulation between Taylor and the floor; the air in the room is cold and still
-    - sept smell — tallow (the permanent smell, from decades of candles), old stone, cold ash; this is the smell of the building itself regardless of who is in it
-    - sleeping-human warmth — the only warmth in the room is the heat Taylor has generated under whatever covering she uses; the room is cold outside that radius
-    - silence — the settlement is not making sound; no foot traffic, no animal movement on the grounds, no voices; the pre-dawn quiet is total on the surface
-    - septon's breathing — audible through the wall if Taylor attends to it; the specific slow register of someone for whom breathing has become its own effort; a sound she has memorized whether she means to or not
-    - bell tower ravens: still — weight-shifts only; they are in their night configuration; no alarm, no departure
-    - no wind — nothing moves outside; the shutter does not rattle; the silence has no texture except its own absence
-    - the granary — short walk from the sept; the rat warrens beneath the granary floor are empty; no movement, no sound; the pre-dawn scatter-patterns (the normal dispersal of rodents before first light) are absent; this is registering through Taylor's passive fauna sense as an anomalous gap where there should be low-level presence; she is not searching for it — it is the absence that found her
-    - harrenhal-towers: visible to the north as shapes against the pre-dawn sky if the shutter were open — not visible from inside the side-room; present as ambient fact nonetheless; the castle is always there
+    - dawn light — the dark has broken; pale flat light is entering at the shutter's gaps and at the edges of the side-room door; not warm light, not strong light, but present light; the world outside the sept is visible to an eye at the shutter; the interior of the sept is still dim but no longer fully dark; shadows have acquired edges
+    - cold stone — unchanged from pre-dawn; the sept walls have not absorbed any warmth yet; the stone floor is cold; the chill is persistent and specific; dawn does not fix this
+    - sept smell — tallow, old stone, cold ash; unchanged; this is the building
+    - septon's breathing — audible through the wall; still registering; its rhythm is the rhythm she has memorized
+    - the settlement beginning to stir — earliest movement at the threshold of dawn; a door somewhere, a far sound; the transition from pre-dawn silence to the first stirrings of morning; not yet full morning noise, but the quality of the quiet has changed
+    - bell tower ravens: beginning to shift — a slight increase in movement registering in the tower; not departed, not calling; but dawn is the threshold at which ravens become active; they are noticing the light
+    - road-approach (south): a horse at passage — the south approach carries the sound and disturbance of a single mounted rider moving north; hoofbeats on the dirt track; the sound is not loud at this distance from the sept, but it is present; this is Plumm's man; the rider is on the track between the south entrance and the granary; his passage is visible from the settlement grounds and from the outer lane, not from the sept interior
+    - harrenhal-towers: visible to the north against the dawn sky — first light is touching the upper stones of the towers; the ruin is still the ruin; it does not improve with morning
   fauna_sense_status:
-    passive_radius: active — Taylor is awake; passive sense is running; she is not actively reaching
-    granary_warrens: EMPTY — no rat movement registering; the warrens under the granary floor are producing no fauna-presence signal where signal is expected; this is the anomaly that has her awake or is the thing she has woken into
-    bell_tower_ravens: present, still — registering normally; no anomaly
-    settlement_perimeter: quiet — no fauna movement registering at settlement perimeter consistent with pre-dawn; the absence in the warrens is specific, not general
-  episode_state: OPEN — s01e02 opening position established; no changes recorded yet; this is the baseline
+    passive_radius: active — Taylor is awake and will be moving by Bullet 5; passive sense is running
+    granary_warrens: EMPTY — the anomalous absence is unchanged; rat scatter-patterns that should have resumed at dawn have not resumed; the warrens are still producing no signal; if anything, the continued emptiness at dawn is a confirmation of the earlier anomaly, not a reset
+    south_approach_horse: REGISTERING — the bay horse carrying Plumm's man is now within passive fauna sense range as it moves north on the south approach; a horse is not fauna Taylor controls, but it registers as a large-fauna presence; the disturbance of small roadside fauna (birds at first light, field animals flushed by hoofbeats) is a secondary signal consistent with a single mounted passage; Taylor may read this as: something large, moving north, now
+    bell_tower_ravens: active threshold — shifting, attending to the dawn; not alarmed; not departed; registering normally but transitioning from night to morning configuration
+    settlement_perimeter: early-morning baseline establishing — the quality of the perimeter signal is shifting from pre-dawn stillness toward normal morning scatter; nothing anomalous at the perimeter except the continued granary silence and the new horse-signal on the south approach
+  episode_state: BULLET 3 COMPLETE — dawn transition recorded; Plumm's man position recorded; fauna_sense updated; state is live
