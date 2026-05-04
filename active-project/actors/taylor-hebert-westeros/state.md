@@ -1,6 +1,6 @@
 STATE:
   location: loc-harrenhal-sept-environs
-  sublocation: sept side-room — on sleeping mat, awake; pre-dawn; recognized cleared warrens through passive sense (Bullet 2)
+  sublocation: outer lane — moving past the granary; dawn; grain-keeper's eyes found her in the lane while Plumm's man followed the gaze and moved his hand to the small book (Bullet 6)
   condition: []
   inventory: []
   stats:
