@@ -20,4 +20,8 @@ VIBES:
   being-watched-without-knowing: [fauna-used-before-she-knew-someone-was-looking, the-pattern-her-use-left-in-the-world, the-record-she-cannot-read, the-exposure-she-did-not-choose]
   cost-made-visible: [the-lip-that-bleeds-in-view, pressing-palm-to-post-in-someone-elses-sightline, the-physical-evidence-of-what-she-did, the-cost-curve-with-a-witness]
   the-sealed-record: [the-document-she-cannot-intercept, moving-inside-the-castle-before-she-knew-it-existed, named-in-a-record-she-will-not-see, the-irreversible-that-already-happened]
+  the-raven-in-public: [the-anomaly-witnessed, the-bird-that-named-her, could-not-dismiss-it-fast-enough, sketched-while-on-her-arm, the-cost-of-what-she-built-made-visible-to-strangers]
+  the-doubled-record: [two-names-one-page-and-she-caused-both, rowans-help-as-mechanism, the-name-added-when-she-needed-removal, inside-before-she-could-act]
+  holding-still: [cart-sound-on-the-track, wait-until-the-room-empties, the-one-move-available, the-discipline-of-not-breaking-in-front-of-witnesses]
+  osmynd-confirmed-absent: [bench-empty-before-the-threat-arrived, the-protection-already-gone, alone-in-the-sept-when-the-inspector-came]
   the-septon-failing: [hands-loose-in-the-morning, present-and-aware-and-running-out, she-took-his-hand-and-knew-what-she-was-taking, the-timer-she-cannot-not-watch]

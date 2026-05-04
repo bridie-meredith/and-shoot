@@ -44,3 +44,13 @@ EPISODE_2_VIBES:
   cost-made-visible: [blood-on-the-lip, head-bowed-at-the-cote-post, the-physical-price-in-view, no-shard-buffering]
   the-septon-failing: [bench-in-the-morning-warmth, hands-loose-in-lap, presence-narrowing, the-thing-that-will-leave-her-next]
   being-watched-without-knowing: [the-circuit-that-completes-before-awareness, the-girl-in-three-separate-reports, named-from-outside, the-pattern-she-did-not-choose-to-make]
+
+# Episode 3 Vibe-Cloud (s01e03 — The Inspection) — delta from season
+
+EPISODE_3_VIBES:
+  the-raven-as-witness: [the-anomaly-in-public, wrong-posture-for-a-stranger, the-bird-that-wont-go-when-told, sketched-before-it-left, the-cost-of-what-she-built-in-a-stranger's-eyeline]
+  the-doubled-record: [two-names-one-page, the-help-that-makes-it-worse, good-faith-as-mechanism, rowan-didnt-know-the-ledger-was-open, the-name-added-not-removed]
+  the-formal-inspection: [same-man-different-authority, ledger-board-not-small-book, the-scribe-who-sketches, institutional-progression, casual-efficiency-as-threat]
+  osmynd-absent: [bench-empty-in-the-first-beat, protection-already-gone-before-threat-arrives, the-thing-that-ran-out, visible-from-the-start]
+  holding-still: [cart-sound-on-the-track, wait-until-the-room-empties, stillness-as-the-only-available-move, the-discipline-of-not-breaking]
+  the-sincere-harm: [rowan-means-well-makes-it-worse, cannot-fight-good-faith, the-stranger-who-names-himself-into-the-record, the-wrong-kind-of-protection]
