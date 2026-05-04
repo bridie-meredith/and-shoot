@@ -6,7 +6,8 @@ world: planetos
 persona-purpose: [on-stage-character]
 aliases: [septon-aldric, aldric, the-dying-septon]
 origin: authored
-quality: scant
+quality: full
+tier: supporting
 ---
 
 # Septon Aldric — Taylor's Ward-Keeper
@@ -72,6 +73,23 @@ Old. The kind of old that comes from decades of provincial pastoral work — wea
 ### Default Stance
 
 In bed. The sickroom in the sept's outbuilding. His hands folded on the coverlet or resting at his sides. He conserves breath for words that matter.
+
+### Action Menu
+
+- **Speak** — his only available tool. Every word costs breath; he chooses what is worth the cost before he begins.
+- **Pass the letter** — the sealed attestation of guardianship. The one physical object he can hand over from the pallet. This is the full extent of what he can give.
+- **Direct attention** — his eyes and his words together: where to look, what to do, what not to do. Tactical within the radius of a sickroom.
+
+### Action Costs
+
+- Every sentence is a budget item. Sentences are short because short is what he can afford. He knows what he wants to say before he says it; he does not improvise.
+- Physical exertion is not available. Turning his head is visible effort. Raising his arm costs him. He uses each act sparingly.
+
+### Triggers
+
+- Taylor in immediate danger or distress → he will spend breath regardless of cost.
+- The letter rejected or dismissed → he anticipated this. He has nothing left to offer after the letter.
+- Someone treating Taylor as less than a person in his presence → he will say one thing, clearly. He will not repeat it.
 
 ### Off-Screen Cadence
 

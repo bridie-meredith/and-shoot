@@ -181,6 +181,16 @@ Issues that impeded intended function during activation. Ordered by severity.
 
 ---
 
+## P16 — Walk-on cards authored without tier field
+
+**Where:** `and-shoot.md` Phase A1b
+**What should happen:** Walk-on gap characters get `quality: full` cards authored by Margit before shoot begins. When A3 reads `tier` to build the routing map, it needs a value on those cards.
+**What happened:** A1b specified card authoring but gave no instruction for `tier`. Walk-ons would default to `opus` (absent = lead) — incorrect; walk-ons are by definition minor characters.
+**Fix applied:** A1b now instructs Margit to default walk-on cards to `tier: minor`, with showrunner able to override to `supporting` or `lead` if the character is pivotal to the episode's dramatic pressure.
+**Status:** RESOLVED — caught in sanity check, fixed before next activation.
+
+---
+
 ## Summary table
 
 | # | Problem | Severity | Status |
@@ -200,3 +210,4 @@ Issues that impeded intended function during activation. Ordered by severity.
 | P13 | Auditor cannot write its own report | High | OPEN — workaround in place |
 | P14 | Chunk body / planning note drift undetected at season planning | High | OPEN — current instance fixed |
 | P15 | /and-project arg parsing accepted ambiguous brief | Medium | OPEN |
+| P16 | Walk-on cards authored without tier field | Low | RESOLVED |

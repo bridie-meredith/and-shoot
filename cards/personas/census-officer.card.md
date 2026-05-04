@@ -8,6 +8,7 @@ persona-purpose: [on-stage-character]
 aliases: [the-officer, impressment-officer, hightower-census-man]
 origin: authored
 quality: full
+tier: minor
 ---
 
 # Census Officer — Hightower Administrative Functionary

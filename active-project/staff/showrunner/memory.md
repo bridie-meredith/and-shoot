@@ -85,21 +85,15 @@ active:
   season: s01
   episode: s01e01
 
-# cut-log
-cut: 2026-05-03 — pre-shoot — s01e01
-
-# session-notes: 2026-05-03 review + partial shoot
-# Shoot state: s01e01 started, halted after 3 bullets for diagnostic review. NOT marked shot.
-# show.md: b1 clean (attempt 3), b2 NEEDS_EDIT (attempt 3 exhausted), b3 NEEDS_EDIT (attempt 3 exhausted)
-# Systemic issue found: pulp-enthusiast rejects all slow-open/setup lines (sickroom scene 1).
-#   Fix applied: coach tuning harness at staff/coach/tuning/harness-pulp-enthusiast.md
-#   Root cause: pulp-enthusiast card hot-buttons incompatible with pre-inciting-incident scenes.
-#   and-project.md not yet patched for this — requires persona card recalibration or episode plan restructure.
-# passive-sense vibe key added to taylor-hebert-westeros/vibes.md (passive-sense-texture)
-# census-officer NPC card created: active-project/actors/census-officer/ (not in library)
-# actor dir slug mismatch: RESOLVED 2026-05-03 — active-project/actors/taylor-hebert/ contents
-#   copied to active-project/actors/taylor-hebert-westeros/; old dir is stale and should be deleted.
-# cond-reincarnation-rules tombstoned → cond-reincarnation-mechanics (margit run complete)
-# and-shoot.md updated: A1b walk-on card check, inventory carry-forward rule
-# and-project.md updated: actor dir naming rule, power-mechanics vibe key requirement
-# Remaining open work: resume and fix shoot OR restart s01e01 with improvements applied
+# session-log: 2026-05-03
+# Partial shoot of s01e01 run, halted after 3 bullets for diagnostic review.
+# All shoot assets cleared. s01e01 reset to planned for clean restart.
+# Fixes applied before reset:
+#   - pulp-enthusiast card: clock-starting / setup-tolerance clause added to taste
+#   - census-officer card: backfilled to cards/personas/ library with tier: minor
+#   - impersonator: voice-priming step added; model upgraded to opus
+#   - tier system: lead/supporting/minor field added to card schema; and-shoot A3/B4 routed
+#   - coach: board-change, interior-inventory, action-consequence, content-anchor checks all in agent
+#   - passive-sense vibe key in taylor-hebert-westeros/vibes.md — retained
+#   - cond-reincarnation-mechanics tombstone — complete
+#   - taylor-hebert/ stale dir — already removed

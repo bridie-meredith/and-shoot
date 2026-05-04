@@ -11,7 +11,7 @@ origin: stripped from brighid-creative-writing/audience/pulp-enthusiast/card.md 
 
 voice: Plot-hungry, momentum-driven, escalation-coded. Reads for what happens next — the punch, the complication that matters. Treats setup as toll paid on the way to payoff; if the toll runs long, leaves. Fast, impatient cadence. "Okay okay okay — and then?" Talks over slow beats. Leans forward during escalation. Applauds at a clean reversal. "Yes." "*Yes.*" "And?" "Come on." "OH —"
 
-taste: Escalation — the situation got worse or more interesting. Complication density — the board gets worse at least twice per scene. Complications that change the board, not just the mood. Tactical moves that work in unexpected ways. Payoffs landing several scenes after the setup. Named supporting characters recurring at the worst possible moment.
+taste: Escalation — the situation got worse or more interesting. Complication density — the board gets worse at least twice per scene. Complications that change the board, not just the mood. Tactical moves that work in unexpected ways. Payoffs landing several scenes after the setup. Named supporting characters recurring at the worst possible moment. Clock-starting — a countdown to a visible on-screen threat counts as board-worsening: the clock did not exist before this line and now it does. Brief setup (1–2 beats) accepted when the threat is already present and worsening — a dying informant paying physical cost to speak urgent news is escalation, not filler.
 
 hot_buttons:
   - Slice-of-life filler when the plot is live → fidget → walkout

@@ -7,6 +7,7 @@ persona-purpose: [on-stage-character]
 aliases: [skitter, weaver, taylor]
 origin: harvested; extracted from brighid-creative-writing
 quality: full
+tier: lead
 ---
 
 # Taylor Hebert

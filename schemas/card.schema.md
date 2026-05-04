@@ -31,6 +31,7 @@ aliases: {{list of name slugs — persona class only, optional}}
 portability: {{fixed | portable — prop class only}}
 origin: {{harvested | authored | promoted}}
 quality: scant | full
+tier: lead | supporting | minor
 ---
 ```
 
@@ -157,6 +158,18 @@ Any persona used on-stage must be `quality: full`. Scant + used = blocking rescu
 - **Full** — all required sections populated. Can anchor a scene.
 
 Scant remains valid for locations, props, and conditions at margit's discretion.
+
+---
+
+## Persona tier
+
+`tier:` is persona-class only. Controls which model is used when the persona is spawned as an impersonator. Unset defaults to `lead`.
+
+- **`lead`** — protagonist or major character. Spawned with `model: opus`. Richest characterization, widest creative range.
+- **`supporting`** — recurring secondary character with meaningful scenes. Spawned with `model: sonnet`.
+- **`minor`** — background, walk-on, or single-scene character. Spawned with `model: haiku`.
+
+Set by margit at cast selection or card authoring. Margit proposes upgrade when a minor or supporting character accumulates scenes warranting richer fidelity.
 
 ---
 

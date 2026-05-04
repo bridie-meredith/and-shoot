@@ -37,6 +37,7 @@ earth-bet:
 
 planetos:
   - beric-dondarrion
+  - census-officer
   - edric-cray
   - lem-lemoncloak
   - mira-stonefield
@@ -60,6 +61,7 @@ planetos:
 
 full:
   - beric-dondarrion
+  - census-officer
   - aisha-laborn
   - alec-vasil
   - amy-dallon
@@ -91,6 +93,7 @@ full:
   - ser-aemon-bracken
   - ser-edwyn-celtigar
   - ser-harwick-plumm
+  - septon-dying-protector
   - septon-rowan
   - shatterbird
   - sophia-hess
@@ -102,7 +105,6 @@ full:
 
 scant:
   - peasant-woman-forest
-  - septon-dying-protector
   - victoria-dallon
   - viserys-i-targaryen
 
@@ -123,6 +125,7 @@ broken-by-circumstance: [elle-labyrinth, marissa-newland]
 noise-and-terror: [shatterbird, night-and-fog]
 political-power: [thomas-calvert]
 westerosi-local: [peasant-woman-forest, westerosi-traveling-maester, mira-stonefield, edric-cray, rymer-hedge, ser-aemon-bracken, ser-edwyn-celtigar, septon-rowan, oc-castellan-harrenhal, septon-dying-protector]
+administrative-functionary: [census-officer]
 brutal-pragmatist: [lem-lemoncloak]
 dying-cause: [beric-dondarrion]
 faith-recovered: [thoros-of-myr]
@@ -150,5 +153,6 @@ OC slots for margit to construct at project activation when a generic role is se
 - rhaenyra-targaryen (canon HOTD; authored taylor-in-westeros activation 2026-05-03)
 - viserys-i-targaryen (canon HOTD; scant; authored taylor-in-westeros activation 2026-05-03)
 - oc-castellan-harrenhal (institutional-antagonist slot; authored taylor-hebert-westeros provisioning 2026-05-03)
-- septon-dying-protector (opening-loss/ward-keeper slot; scant; authored taylor-hebert-westeros provisioning 2026-05-03)
+- septon-dying-protector (opening-loss/ward-keeper slot; promoted to full 2026-05-03; tier: supporting)
 - taylor-hebert-westeros (protagonist westeros-reincarnation variant; full; authored taylor-hebert-westeros provisioning 2026-05-03)
+- census-officer (impressment-functionary walk-on; full; authored during s01e01 partial shoot 2026-05-03; backfilled to library on reset)

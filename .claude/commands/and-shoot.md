@@ -56,7 +56,7 @@ dramatist verdict: <accept/revise> — <one line reason>
 ```
 
 **A1b. Walk-on card check.**
-After the bullet plan is accepted, scan all bullets for characters who appear on-stage with lines (actor bullets, not STUDIO bullets). For each named character, verify a persona card exists — either in `cards/personas/` or `active-project/actors/<slug>/card.md`. Any character introduced by screen-writer who does not have a card is a walk-on gap. Dispatch margit to create a `quality: full` persona card for each gap character before the shoot begins. A character with on-stage lines cannot be shot without a card — `quality: scant` fails the persona quality gate for on-stage use.
+After the bullet plan is accepted, scan all bullets for characters who appear on-stage with lines (actor bullets, not STUDIO bullets). For each named character, verify a persona card exists — either in `cards/personas/` or `active-project/actors/<slug>/card.md`. Any character introduced by screen-writer who does not have a card is a walk-on gap. Dispatch margit to create a `quality: full` persona card for each gap character before the shoot begins. A character with on-stage lines cannot be shot without a card — `quality: scant` fails the persona quality gate for on-stage use. Walk-on cards default to `tier: minor` (spawns with `model: haiku`) unless the character is pivotal enough to the episode's dramatic pressure to warrant a higher tier — in which case showrunner assigns `tier: supporting` or `tier: lead` before provisioning.
 
 **A2. Derive episode vibe-cloud.**
 Derive the episode vibe-cloud from the bullet plan and the series/season vibes. Append an episode-level section to `active-project/staff/studio/vibes.md`. Do not overwrite the series or season sections.
@@ -65,7 +65,10 @@ Derive the episode vibe-cloud from the bullet plan and the series/season vibes. 
 For each actor active in this episode: check whether the episode vibe-cloud introduces keys that are absent from their `active-project/actors/<slug>/vibes.md`. If the episode activates something new for this character — a new location, a new relationship state, a new pressure — add the key with character-specific associations. Do not overwrite existing keys unless the character's relationship to that key has genuinely shifted. This is an additive pass, not a rebuild.
 
 **A3. Prep cast.**
-For each character active in this episode: confirm their actor dir exists at `active-project/actors/<slug>/`. Build a routing map (internal — not a file) of which characters appear in which scenes, drawn from the bullet plan.
+For each character active in this episode: confirm their actor dir exists at `active-project/actors/<slug>/`. Build a routing map (internal — not a file) of which characters appear in which scenes, drawn from the bullet plan. For each character, read their `tier` field from `active-project/actors/<slug>/card.md` and record the corresponding model in the routing map:
+- `tier: lead` or absent → `opus`
+- `tier: supporting` → `sonnet`
+- `tier: minor` → `haiku`
 
 **A4. Prep studio.**
 Dispatch studio with the episode's opening location (from the bullet plan). Studio reads the relevant location card from `active-project/warehouse/`, reads any relevant prop and condition cards, and writes the initial environment state to `active-project/staff/studio/state.md`. Studio also writes the scene-open prompt plan to `active-project/staff/studio/stm.md` — the environmental detail the opening POV impersonator will be asked to perceive.
@@ -106,7 +109,7 @@ Dispatch studio with the state change. Studio updates `active-project/staff/stud
 Pass to coach: the bullet, the recipient slug, the current studio state (from `active-project/staff/studio/state.md`), the last few lines of the show file for continuity, and the recipient's STM path (`active-project/actors/<slug>/stm.md`). Coach produces a prompt addressed to the impersonator. **Coach must translate the bullet to what the character *perceives* at this scene-moment — not paraphrase the bullet text. The prompt opens with the character's experience, not a summary of the action.**
 
 **B4. Dispatch impersonator.**
-Dispatch the impersonator for the recipient character. Pass: the coach prompt, the character card (`active-project/actors/<slug>/card.md`), their LTM, their current STM and state, and the episode vibe-cloud. The impersonator performs and returns a line. Append the line to `active-project/theater/show.md`.
+Dispatch the impersonator for the recipient character. Pass: the coach prompt, the character card (`active-project/actors/<slug>/card.md`), their LTM, their current STM and state, and the episode vibe-cloud. Use the model recorded for this character in the routing map from A3 (`opus` / `sonnet` / `haiku`). The impersonator performs and returns a line. Append the line to `active-project/theater/show.md`.
 
 If the impersonator rejects the prompt (impossible or out of character): note the reason. Dispatch coach with the rejection + original bullet. Coach reformulates. This consumes one try.
 
