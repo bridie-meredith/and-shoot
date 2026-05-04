@@ -5,3 +5,5 @@ VIBES:
   power-asymmetry: [knows-how-help-works, tracks-the-debt-precisely, closes-it-fast, help-with-unstated-terms-is-the-specific-danger, will-not-decline-necessary-help]
   the-dead: [implied-husband-implied-eldest, does-not-discuss, does-not-need-to, their-absence-is-load, the-children-that-remain-are-the-filter-for-every-decision]
   abstraction: [empty-from-people-who-burned-grain, demonstrate-before-claiming, looks-at-them-once-then-looks-away, the-specific-people-are-real-the-cause-is-not, loyalty-to-House-means-nothing-to-her]
+  the-yard-as-witness: [the-ask-that-came-to-her, the-yard-stones-she-looked-at, the-officer-still-present-when-she-said-nothing, the-cost-she-assessed-before-she-decided, self-preservation-in-a-hierarchical-world]
+  the-machinery-arrives: [the-officer-on-a-schedule-that-does-not-bend, impressment-she-has-seen-this-version-before, the-calculus-of-who-gets-taken, she-named-the-unattached-ones-because-she-knows]

@@ -14,3 +14,6 @@ VIBES:
   the-performance: [maintaining-eleven-costs, mask-slips-under-pressure, cape-misdirection-in-feudal-context, adult-cognition-in-child-position, third-load-on-top-of-the-other-two]
   the-letter: [the-thing-that-wont-work-before-she-tries-it, held-at-her-side, presenting-it-anyway-because-what-else, traveling-back-to-her-unchanged, the-form-of-what-he-could-give]
   the-naming: [giving-her-name-aloud-to-a-ledger, the-moment-the-window-closes, the-irrevocable-action-she-takes-herself, she-said-it, no-going-back-in-that-specific-direction]
+  the-machinery-arrives: [the-officer-as-instrument-not-enemy, forms-have-no-slot-for-her-situation, the-refusal-that-requires-no-malice, bureaucratic-weight-she-cannot-argue-with]
+  the-septon-as-absence: [what-he-could-not-give, the-closed-doors-as-answer, kindness-running-out-before-it-could-hold, the-letter-she-prepared-that-did-not-fit]
+  the-yard-as-witness: [mira-who-looked-at-the-stones, edric-who-stepped-back, the-yard-that-held-silence, she-asked-and-no-one-moved, this-is-what-unattached-means]

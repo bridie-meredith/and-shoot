@@ -38,6 +38,7 @@ earth-bet:
 planetos:
   - beric-dondarrion
   - census-officer
+  - clerk
   - edric-cray
   - lem-lemoncloak
   - mira-stonefield
@@ -62,6 +63,7 @@ planetos:
 full:
   - beric-dondarrion
   - census-officer
+  - clerk
   - aisha-laborn
   - alec-vasil
   - amy-dallon
@@ -125,7 +127,7 @@ broken-by-circumstance: [elle-labyrinth, marissa-newland]
 noise-and-terror: [shatterbird, night-and-fog]
 political-power: [thomas-calvert]
 westerosi-local: [peasant-woman-forest, westerosi-traveling-maester, mira-stonefield, edric-cray, rymer-hedge, ser-aemon-bracken, ser-edwyn-celtigar, septon-rowan, oc-castellan-harrenhal, septon-dying-protector]
-administrative-functionary: [census-officer]
+administrative-functionary: [census-officer, clerk]
 brutal-pragmatist: [lem-lemoncloak]
 dying-cause: [beric-dondarrion]
 faith-recovered: [thoros-of-myr]
@@ -156,3 +158,4 @@ OC slots for margit to construct at project activation when a generic role is se
 - septon-dying-protector (opening-loss/ward-keeper slot; promoted to full 2026-05-03; tier: supporting)
 - taylor-hebert-westeros (protagonist westeros-reincarnation variant; full; authored taylor-hebert-westeros provisioning 2026-05-03)
 - census-officer (impressment-functionary walk-on; full; authored during s01e01 partial shoot 2026-05-03; backfilled to library on reset)
+- clerk (census transcriptionist walk-on; full; authored for taylor-hebert-westeros s01e01 bullets 21-22; 2026-05-04)
