@@ -71,3 +71,13 @@ I leant and took the folio off the stand, and the open page came up into my line
 
 The road to the motherhouse and a rider's days out and back with a seated successor's hand on a page came up against the count in the clause and the count Plumm named in the yard, the same number twice and the rider's number larger than both, no gap between the answers because there had never been one, the arithmetic closing on itself the way it had closed at the chancel table — and I turned.
 
+-- scene: eastern track, afternoon --
+
+"I am sending to the motherhouse at Stoney Sept today, for the letter of permanent appointment." A pace, another, the dust taking the print of the sandal and giving it back. "A rider out and a rider back over that road is nine days."
+
+My eye stayed on the track. "Twelve."
+
+The dust took the next print and the one after it before he answered, eyes ahead, the folio shifting once under his arm to a settled place. "How is it that you know the road to Stoney Sept is twelve days and not nine, child."
+
+My foot came down and the next foot came down and the answer went out level with them, eyes on the track. "The river road west off the Kingsroad — the cut past Harroway, the fords at Stone Hedge and at the Mander branch, and the climb up out of the Blackwater valley before the inn at Cox's Ford — the fords are still running high off the spring melt and the cut past Harroway has not been graded since the autumn rains took the verge out, so a rider does not make the road's dry-month pace; he loses a day at each ford waiting on the water and a day on the cut and a day on the climb above the inn, and the count comes to twelve."
+

@@ -87,6 +87,26 @@ attempts: 3 | outcome: NEEDS_EDIT
   attempt 2: pulp rejected — short ask still reads as toll beat with no payoff
   attempt 3: dark-fantasy-reader accepted; pulp + worm rejected — full explanation while writing is still "narrating the stop"; worm-pedant rejecting non-Taylor lines for absence of Taylor voice (persona criteria mismatch)
 
+## Bullet 43 — taylor-hebert-westeros — answers
+attempts: 1 | outcome: clean
+
+## Bullet 42 — septon-rowan — asks
+attempts: 1 | outcome: clean
+
+## Bullet 41 — taylor-hebert-westeros — answers
+attempts: 1 | outcome: clean
+  NOTE: worm-canon-pedant misread — reviewed B21 instead of B41 on first pass; re-dispatched with correct line; accepted on correction
+
+## Bullet 40 — septon-rowan — speaks
+attempts: 3 | outcome: retried
+  attempt 1: pulp rejected — announces obvious next move; board doesn't change
+  attempt 2: dark-fantasy rejected — "the clause leaves us the room for it" = closure-language; hope without a bill
+  attempt 3: accepted 3/3 — commitment + nine days flat; no reassurance; number hangs in air without verdict
+
+## Bullet 39 — STUDIO — track
+attempts: 0 | outcome: studio-update
+  eastern track, afternoon, heading west; sky low and flat; hall door closed behind them; folio with Rowan
+
 ## Bullet 38 — taylor-hebert-westeros — does-not-move
 attempts: 3 | outcome: retried
   attempt 1: pulp rejected — agonized-beat padding; room emptying around her while she pauses to feel it
