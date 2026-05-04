@@ -87,6 +87,34 @@ attempts: 3 | outcome: NEEDS_EDIT
   attempt 2: pulp rejected — short ask still reads as toll beat with no payoff
   attempt 3: dark-fantasy-reader accepted; pulp + worm rejected — full explanation while writing is still "narrating the stop"; worm-pedant rejecting non-Taylor lines for absence of Taylor voice (persona criteria mismatch)
 
+## Bullet 32 — taylor-hebert-westeros — speaks
+attempts: 3 | outcome: retried
+  attempt 1: worm-canon-pedant rejected — "a breath taken at the level a child's breath is taken at" is recursive self-description outside Taylor's register
+  attempt 2: worm-canon-pedant rejected — "the cadence the small chest allowed" still ornamentation; Taylor observes limits as limits not aesthetics
+  attempt 3: accepted 3/3 — argument flat and clean; no breath framing; quill-at-nib close lands the standoff; NOTE: impersonator generated two paragraphs for this beat (editor to consolidate)
+
+## Bullet 31 — district-recorder — turns
+attempts: 2 | outcome: retried
+  attempt 1: dark-fantasy-reader + pulp-enthusiast rejected — 55-word stage direction; eye geometry and quill-parking; zero cost, no board change
+  attempt 2: accepted 3/3 — eye lands on Taylor; single word "Disposition" drops the clock on her to answer or be classified
+
+## Bullet 30 — taylor-hebert-westeros — steps-forward
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: pulp-enthusiast rejected — three clauses on interior phenomenology of being noticed; punch buried
+  attempt 2: pulp-enthusiast rejected — arrives at moment before standoff rather than inside it; board unchanged at end of line
+  attempt 3: pulp-enthusiast rejected — board change present but buried in syntactic delay; "twelve lines of syntactic delay" before payoff
+
+## Bullet 29 — district-recorder — logs
+attempts: 2 | outcome: retried
+  attempt 1: dark-fantasy-reader rejected — "markets its own significance"; pulp-enthusiast rejected — board change buried in ink-drying ritual
+  attempt 2: accepted 3/3 — ledger slides to dispatch side; document already moving toward Harrenhal; clock named; door locked before any counter-move
+
+## Bullet 28 — district-recorder — rules
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: all 3 rejected — rulebook citation; "sign on the door, not the wall"
+  attempt 2: pulp-enthusiast rejected — board does not move; confirms prior lines; situation after = situation before
+  attempt 3: dark-fantasy-reader rejected — pure administrative transit prose; no hostile weight; "filing system completing itself"
+
 ## Bullet 27 — septon-rowan — answers
 attempts: 2 | outcome: retried
   attempt 1: pulp rejected — admission of gap is a pause not a complication; "I don't have the letter" = stasis

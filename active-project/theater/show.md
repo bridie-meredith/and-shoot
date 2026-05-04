@@ -49,7 +49,16 @@ The folio made its sound against the bench-wood and his eye traveled down the op
 
 The quill never lost its line against the page and his voice came level with the writing: "I am recording the claim and the refusal because the appointment you hold is provisional and the protocol requires permanent appointment, and you will return with that letter when you have it." [⚑ needs edit: pulp-enthusiast rejected all 3 attempts — bureaucratic wall narrated rather than landed; needs single compressed beat where refusal goes into ledger without explanation; worm-canon-pedant rejecting recorder POV beats for absence of Taylor voice — persona criteria mismatch on non-Taylor lines]
 
-His hand went out across the bench for the inkstand and the loose quill beside it, and his voice came level with the reach: "The appointment is provisional because Septon Osmynd's succession has not yet completed in the motherhouse rolls, and a rider goes from me to Stoney Sept today — not tomorrow, today — for the letter that closes it."
+The seal came down and held. The refusal was notated, sealed, and prepared for transit to Harrenhal, and the proceeding stood complete. [⚑ needs edit: dark-fantasy-reader rejected all 3 attempts — administrative transit prose reads as pure process; needs the mechanism landing with hostile weight, not filing-system completion]
 
-He set the quill on its rest and looked up, and the claim was refused: a permanent appointee is what the succession protocol requires, and provisional standing does not satisfy the succession protocol, and the ledger stands as written.
+The ledger closed under his hand with the weight of the record sealed inside, and he slid it across the table's front to the dispatch side in one motion — document traveling, already moving toward Harrenhal on the next circuit, the proceeding complete and beyond revision or appeal or any intervention the septon or the child might consider mounting in the days remaining on the clock.
 
+The quill broke its line in the middle of a stroke and stopped, and the recorder's eyes came up from the page and went over my head to Rowan's, the stylus held lifted in the hand of a man waiting to take a next entry from the next presenting party — and the air at the level of my face was the air the look had passed through without catching. [⚑ needs edit: pulp-enthusiast rejected all 3 attempts — board change (dismissed before speaking) present but buried in syntactic delay each attempt; needs compression to single hard cut: step, look-past, air the look missed]
+
+His eye came down from the ledger and landed on hers, and the word came flat: "Disposition."
+
+"Taylor, ward of the sept at the Harrenhal precinct." "The folio was retrieved from the sept's register this morning, before notice of death was filed with the district recorder — the reversion clock had not formally started when the document left the register."
+
+The quill stayed lifted, ink held at the nib without falling; his eyes did not leave mine; the folio sat on the bench-wood between his hand and the empty next-entry space, and he did not move toward either.
+
+His eyes dropped from hers to the folio on the bench-wood, then to the open ledger — specifically to the date line of the entry he had already made — and one finger moved along the margin to where the folio's retrieval date would sit against the notice-of-filing, the nib still lifted, not descended, while he read the gap between the two.
