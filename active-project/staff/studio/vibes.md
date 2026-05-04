@@ -33,3 +33,14 @@ EPISODE_1_VIBES:
   the-naming: [the-moment-of-being-asked, the-name-given-aloud, the-dictation-as-finality, the-door-that-closes-on-its-own-momentum]
   the-septon-as-absence: [present-but-cannot-appear, the-protector-who-cannot-act, the-letter-in-place-of-the-body, kindness-that-runs-out-before-it-can-hold]
   the-yard-as-witness: [mira-delivering-verdict-before-it-happens, edric-watching-the-road-without-watching, what-everyone-already-knew]
+
+# Episode 2 Vibe-Cloud (s01e02 — First Circuit) — delta from season
+
+EPISODE_2_VIBES:
+  the-record-assembles: [evidence-before-interpretation, tally-stick-against-the-swept-floor, three-witnesses-one-description, the-small-book-filling-up]
+  fauna-as-evidence: [the-use-that-leaves-marks, wrong-pattern-visible-to-anyone-looking, what-she-built-being-read, cost-that-shows-externally]
+  the-observer: [methodical-not-hostile, function-not-person, the-pen-that-doesnt-know-its-a-weapon, thorough-as-the-only-danger]
+  the-sealed-record: [moving-faster-than-she-can, inside-harrenhal-before-she-knows, the-irreversible-document, cannot-read-or-correct]
+  cost-made-visible: [blood-on-the-lip, head-bowed-at-the-cote-post, the-physical-price-in-view, no-shard-buffering]
+  the-septon-failing: [bench-in-the-morning-warmth, hands-loose-in-lap, presence-narrowing, the-thing-that-will-leave-her-next]
+  being-watched-without-knowing: [the-circuit-that-completes-before-awareness, the-girl-in-three-separate-reports, named-from-outside, the-pattern-she-did-not-choose-to-make]

@@ -44,6 +44,7 @@ planetos:
   - mira-stonefield
   - oc-castellan-harrenhal
   - peasant-woman-forest
+  - plumms-man
   - rhaenyra-targaryen
   - rymer-hedge
   - ser-aemon-bracken
@@ -64,6 +65,7 @@ full:
   - beric-dondarrion
   - census-officer
   - clerk
+  - plumms-man
   - aisha-laborn
   - alec-vasil
   - amy-dallon
@@ -127,7 +129,7 @@ broken-by-circumstance: [elle-labyrinth, marissa-newland]
 noise-and-terror: [shatterbird, night-and-fog]
 political-power: [thomas-calvert]
 westerosi-local: [peasant-woman-forest, westerosi-traveling-maester, mira-stonefield, edric-cray, rymer-hedge, ser-aemon-bracken, ser-edwyn-celtigar, septon-rowan, oc-castellan-harrenhal, septon-dying-protector]
-administrative-functionary: [census-officer, clerk]
+administrative-functionary: [census-officer, clerk, plumms-man]
 brutal-pragmatist: [lem-lemoncloak]
 dying-cause: [beric-dondarrion]
 faith-recovered: [thoros-of-myr]

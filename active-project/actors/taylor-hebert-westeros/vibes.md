@@ -17,3 +17,7 @@ VIBES:
   the-machinery-arrives: [the-officer-as-instrument-not-enemy, forms-have-no-slot-for-her-situation, the-refusal-that-requires-no-malice, bureaucratic-weight-she-cannot-argue-with]
   the-septon-as-absence: [what-he-could-not-give, the-closed-doors-as-answer, kindness-running-out-before-it-could-hold, the-letter-she-prepared-that-did-not-fit]
   the-yard-as-witness: [mira-who-looked-at-the-stones, edric-who-stepped-back, the-yard-that-held-silence, she-asked-and-no-one-moved, this-is-what-unattached-means]
+  being-watched-without-knowing: [fauna-used-before-she-knew-someone-was-looking, the-pattern-her-use-left-in-the-world, the-record-she-cannot-read, the-exposure-she-did-not-choose]
+  cost-made-visible: [the-lip-that-bleeds-in-view, pressing-palm-to-post-in-someone-elses-sightline, the-physical-evidence-of-what-she-did, the-cost-curve-with-a-witness]
+  the-sealed-record: [the-document-she-cannot-intercept, moving-inside-the-castle-before-she-knew-it-existed, named-in-a-record-she-will-not-see, the-irreversible-that-already-happened]
+  the-septon-failing: [hands-loose-in-the-morning, present-and-aware-and-running-out, she-took-his-hand-and-knew-what-she-was-taking, the-timer-she-cannot-not-watch]

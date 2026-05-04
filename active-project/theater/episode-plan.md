@@ -1,32 +1,42 @@
-episode: s01e01 — The Ledger Opens
-chunk: The impressment census officer arrives at the sept and logs Taylor as an unattached ward with no blood claim and no sworn guardian capable of asserting one — the septon is too ill to appear, and his written attestation is refused as insufficient. Taylor is placed on a provisional labor-eligibility list pending the traveling maester's cognitive assessment, and the window for being overlooked closes the moment her name enters the census ledger.
-actors: [taylor-hebert-westeros, census-officer, clerk, mira-stonefield, edric-cray]
-change: Taylor moves from unnamed and overlooked to named, listed, and flagged with a double-stroke priority notation — an irreversible entry into the lord's administrative record.
+# Episode Plan
+
+chunk: Ser-harwick-plumm's man makes his first circuit of the Harrenhal shadow settlements, recording anomalous activity — a rat-cleared grain store, ravens roosting against their pattern, a girl present at three separate locations where vermin behavior was reported unnatural. His first written report does not name Taylor directly but describes a set of conditions that point to a single source, and the report goes to the castellan's records before Plumm receives his copy.
+theme: The record moves faster than the girl.
+actors: [taylor-hebert-westeros, plumms-man, septon-osmynd]
+change: Taylor moves from named-and-listed to named-listed-and-described-in-a-castellan-record she cannot read, intercept, or correct.
+constraints:
+  - Taylor's fauna use carries a physical cost curve — extended or forceful use produces visible physical deterioration
+  - Ravens are within Taylor's control spectrum but costly to push against established patterns
+  - Plumm's man is a walk-on (tier: minor) — no card exists; treat as functional role only
+  - The report reaching castellan's records before Plumm is an irreversible board-move — it cannot be undone within this episode
+  - Taylor has no title, house, or recognized identity to invoke against an official inquiry
+  - Septon Osmynd is dying and cannot act as her guardian or intercessor
 
 ---
 
-1. STUDIO: Sept courtyard, morning. Dust on the flagstones. A cart with a lord's banner furled against the crossbar sits on the road outside the sept gate.
-2. mira-stonefield: Mira says, loud enough for the yard to hear, that the officer will want the unattached ones first.
-3. edric-cray: Edric positions himself at the gate post, eyes on the road beyond the officer's cart.
-4. STUDIO: The census officer and a single clerk step through the sept gate into the courtyard. The clerk carries a ledger and an ink case.
-5. census-officer: The officer announces his commission from the lord's administration and orders all wards and unattached residents to assemble in the yard.
-6. taylor-hebert-westeros: Taylor moves to stand in the yard with the assembled wards.
-7. census-officer: The officer works through the assembled wards in order, dictating name, age, and blood-claim status to the clerk.
-8. STUDIO: The officer reaches the end of the line and pauses at Taylor — no one has spoken for her.
-9. census-officer: The officer asks Taylor her name, her age, and who holds her wardship.
-10. taylor-hebert-westeros: Taylor gives her name and age and states that Septon Osmynd holds her wardship.
-11. census-officer: The officer asks the septon to step forward.
-12. STUDIO: The sept doors remain closed. No one emerges.
-13. taylor-hebert-westeros: Taylor presents the septon's written letter of attestation.
-14. census-officer: The officer reads the letter, folds it, and hands it back to Taylor.
-15. census-officer: The officer states that a written attestation without a sworn guardian present before the commission is insufficient and cannot be entered as a valid claim.
-16. taylor-hebert-westeros: Taylor turns to Mira and asks her to stand as witness before the officer.
-17. mira-stonefield: Mira looks at the yard stones and says nothing.
-18. taylor-hebert-westeros: Taylor asks Edric, standing at the gate post, to step forward and speak for her.
-19. edric-cray: Edric looks at the officer, then at Taylor, and steps back through the sept door without speaking.
-20. STUDIO: The yard holds the silence. No ward moves.
-21. clerk: The clerk asks Taylor whether she has been assessed before — a question put to no other ward in the line.
-22. clerk: The clerk writes Taylor's name, age, and ward status — no blood claim, no present guardian — into the ledger, and marks the entry with a double-stroke priority notation in the margin.
-23. census-officer: The officer states that Taylor is placed on the provisional labor-eligibility list pending cognitive assessment by the traveling maester.
-24. STUDIO: The officer and clerk exit through the sept gate. The cart moves off down the road with the ledger sealed inside the clerk's case.
-25. taylor-hebert-westeros: Taylor stands in the empty yard, the septon's letter still in her hand.
+## Script
+
+1. STUDIO: Shadow settlement, pre-dawn. The rat warrens under the granary floor run empty — no movement, no sound. The usual pre-dawn scatter-patterns are absent.
+2. taylor-hebert-westeros: Taylor sits upright on her sleeping mat in the sept side-room, eyes open in the dark.
+3. STUDIO: Dawn light. A rider on a bay horse passes through the settlement's south approach, wearing a tabard with no house sigil — a household servant's plain brown.
+4. plumms-man: Plumm's man dismounts at the granary entrance and speaks to the settlement's grain-keeper, asking when the last full rat-count was done.
+5. taylor-hebert-westeros: Taylor moves through the settlement's outer lane, keeping the granary in her sightline.
+6. plumms-man: Plumm's man steps inside the granary, holds his tallow candle low, and sweeps it across the floor along the base of the grain bins.
+7. STUDIO: The granary floor is swept clean — no droppings, no gnaw-marks on the lower bin boards, no carcasses in the corners. The grain-keeper stands at the door and says nothing.
+8. plumms-man: Plumm's man produces a tally stick from his satchel and compares the notch-count to the swept floor, then writes in a small book.
+9. taylor-hebert-westeros: Taylor withdraws from the granary lane and crosses to the sept's back courtyard wall.
+10. STUDIO: The sept yard. Septon Osmynd sits on the stone bench outside the side door, wrapped in a blanket despite the morning warmth, his hands loose in his lap.
+11. taylor-hebert-westeros: Taylor sits beside Septon Osmynd on the bench and takes one of his hands in both of hers.
+12. septon-osmynd: The septon says, without opening his eyes, that there is a man in the settlement asking about the rats.
+13. STUDIO: The raven cote above the settlement's message-post. A cluster of ravens has roosted on the south-facing ledge since before dawn — an off-pattern position, their heads all angled the same direction.
+14. plumms-man: Plumm's man stands below the raven cote and watches the birds, then writes again in his small book.
+15. taylor-hebert-westeros: Taylor stands at the cote's base ladder, a loose grip on the bottom rung, and watches Plumm's man watch the ravens.
+16. STUDIO: The ravens on the south ledge shift and resettle with a dry clatter of feathers. One drops from the ledge and wheels north. The rest follow in a broken line.
+17. taylor-hebert-westeros: Taylor releases the ladder rung and presses her palm flat against the cote post, head bowed.
+18. plumms-man: Plumm's man writes a third notation in his small book, marks the page with a folded corner, and mounts his horse.
+19. taylor-hebert-westeros: Taylor lifts her head from the cote post, wipes her upper lip with the back of her hand, and watches Plumm's man ride north toward the settlement's third quarter.
+20. plumms-man: Plumm's man makes his third stop at the settlement's herb-and-barter row, where three residents each describe, separately and in their own words, a girl who was present when their grain or chickens or store-corners went suddenly clear of vermin.
+21. taylor-hebert-westeros: Taylor stands at the far end of the barter row, behind a drying rack, listening to Plumm's man work through the residents.
+22. plumms-man: Plumm's man closes his small book, tucks it into his satchel, and rides east — toward the Harrenhal gate road, not toward Ser Harwick Plumm's quarters in the lower ward.
+23. STUDIO: Harrenhal's east postern gate. A gate-warden's boy takes the sealed letter-packet from Plumm's man and carries it at a walk across the inner yard toward the castellan's tower.
+24. taylor-hebert-westeros: Taylor stands at the shadow settlement's east margin, at the edge of the Harrenhal sight-line, watching the postern gate close.
