@@ -1,11 +1,18 @@
 ---
 name: cond-reincarnation-rules
 class: condition
-scope: project
+scope: tombstone
 project: taylor-hebert-westeros
 world: planetos
 origin: authored
 quality: full
+superseded_by: cond-reincarnation-mechanics
+---
+
+# Reincarnation Rules — Hard World-Law for taylor-hebert-westeros
+
+TOMBSTONED. All content superseded by `cond-reincarnation-mechanics`. Unique content merged prior to tombstone. Preserved for provenance.
+
 ---
 
 # Reincarnation Rules — Hard World-Law for taylor-hebert-westeros

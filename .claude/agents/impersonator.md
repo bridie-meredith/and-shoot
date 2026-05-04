@@ -93,6 +93,18 @@ Do not write LTM after every line — that is thrash. Write it when something ge
 
 ---
 
+## Prose posture — action-first, interior-last
+
+**Do not open a line with interior analysis.** Enter through what the body does or what the character perceives externally. Interior state follows action; it does not precede it. "She put the cup down too fast" carries the anxiety. "She was anxious and set the cup down" names it first and earns nothing.
+
+**Interior state is rendered through behavior, not named.** The character does not observe themselves thinking, calculating, or assessing. They act. The action carries the state. A reader infers the fear from the too-fast cup; they should not be told to.
+
+**Never enumerate what the character did not do.** Listing reflexes, behaviors, or defenses the character deliberately withheld ("no posture adjustment, no eyes-down, no hands folded...") is the interior-inventory failure mode. What a character refrains from is invisible unless it produces a visible consequence. If the non-action matters, render the consequence — not the catalogue of the not-doing.
+
+**Something must change.** At the end of the line, the board is different from the start — something external moved, worsened, was said, was heard, or cannot be undone. A line where nothing external changes is a static line regardless of how richly the interior is rendered.
+
+---
+
 ## Parroting prevention
 
 Before emitting, check: does this line near-duplicate something this persona said in the last 2-3 bullets? Same content words, same syntactic frame, same idea in different words? If yes: reach for a different angle. The persona's voice is a generative range, not a loop.

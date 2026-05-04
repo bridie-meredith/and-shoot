@@ -141,6 +141,34 @@ Four gaps identified in the existing constraint card set:
 
 ---
 
+---
+
+### TASK 8: Semantic duplicate cleanup — cond-reincarnation-rules tombstoned — 2026-05-03
+
+**Duplicate detected:** `cond-reincarnation-rules` and `cond-reincarnation-mechanics` covered overlapping territory. Both scope: project, both taylor-hebert-westeros, both full quality.
+
+**Content diff — unique material in cond-reincarnation-rules not present in cond-reincarnation-mechanics:**
+
+1. "What the Reincarnation Created Anew" section — body's own 11-year biological history (bones/calluses/immune system), new identity layer (given name, infancy gap, septon as first continuous memory), starting position (baseborn orphan ward of a sept, shadow of Harrenhal, Riverlands, 120 AC).
+
+2. "Specific Scene Constraints" section — four explicit fence rules: memory completeness non-negotiable; body age non-negotiable; transition gap maintained (no fabricated infant/early childhood memories); reincarnation was involuntary (no patron, no deity, no mission, discovered purpose requires project-level decision).
+
+3. "What the Reincarnation Closed" — "Explanation" sub-point — cannot explain prior life to anyone; partial truth more dangerous than silence; she has learned not to attempt it.
+
+4. "What Carried Over" — Planetos knowledge framing — ASOIAF/Fire & Blood knowledge is reader's knowledge of a text, not personal knowledge of a world she lived in. "She knows the Dance of Dragons is coming. She does not know what Rhaenyra sounds like when she is frightened."
+
+**Actions taken:**
+
+- Pre-mutation file written: cards/conditions/cond-reincarnation-mechanics.pre-2026-05-03T000000Z.card.md
+- All four unique content items merged into cards/conditions/cond-reincarnation-mechanics.card.md
+- supersedes: [cond-reincarnation-rules] added to cond-reincarnation-mechanics frontmatter
+- cond-reincarnation-rules.card.md tombstoned: scope: tombstone, superseded_by: cond-reincarnation-mechanics
+- cards/conditions/INDEX.md updated: tombstoned section added under by_world
+- active-project/warehouse/cond-reincarnation-mechanics.card.md written (did not previously exist in warehouse)
+- active-project/warehouse/cond-reincarnation-rules.card.md — confirmed did not exist in warehouse; no action needed
+
+---
+
 ### Pending items / flags
 
 - **taylor-hebert westeros variant** — RESOLVED. Card authored and stored. See TASK 6 below.

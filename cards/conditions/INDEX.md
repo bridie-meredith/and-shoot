@@ -23,6 +23,9 @@ planetos:
   - condition-targaryen-claim-disputed
   - condition-war-of-five-kings-riverlands
 
+tombstoned:
+  - cond-reincarnation-rules  [superseded_by: cond-reincarnation-mechanics]
+
 ---
 
 ## by_quality

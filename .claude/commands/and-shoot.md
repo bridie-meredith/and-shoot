@@ -55,6 +55,9 @@ dramatist verdict: <accept/revise> — <one line reason>
 ## Final verdict: accepted at attempt N  [or: exhausted — proceeding with attempt 3]
 ```
 
+**A1b. Walk-on card check.**
+After the bullet plan is accepted, scan all bullets for characters who appear on-stage with lines (actor bullets, not STUDIO bullets). For each named character, verify a persona card exists — either in `cards/personas/` or `active-project/actors/<slug>/card.md`. Any character introduced by screen-writer who does not have a card is a walk-on gap. Dispatch margit to create a `quality: full` persona card for each gap character before the shoot begins. A character with on-stage lines cannot be shot without a card — `quality: scant` fails the persona quality gate for on-stage use.
+
 **A2. Derive episode vibe-cloud.**
 Derive the episode vibe-cloud from the bullet plan and the series/season vibes. Append an episode-level section to `active-project/staff/studio/vibes.md`. Do not overwrite the series or season sections.
 
@@ -123,6 +126,8 @@ attempts: N | outcome: clean / retried / NEEDS_EDIT
 ```
 
 **Actor state after each line:** if the impersonator's action implies a state change (moved, picked up object, emotional shift), update `active-project/actors/<slug>/stm.md`. Environmental state changes go to studio → `active-project/staff/studio/state.md`.
+
+**Inventory carry-forward is absolute.** An item in an actor's `state.md` inventory persists into every subsequent line unless the line explicitly transfers, drops, or destroys it. A wound persists and heals on a realistic timeline — it does not disappear between scenes. If the impersonator's line implies an inventory item that is not in `state.md`, add it. If the impersonator's line implies an item is gone but no action removed it, that is a continuity fault — flag it rather than silently accepting the line.
 
 **Continue until all bullets are complete.** Do not stop for single-line problems — mark and move on.
 

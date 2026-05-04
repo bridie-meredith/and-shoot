@@ -77,6 +77,8 @@ From showrunner:
 
 5. Revise. Revisions address the specific feedback. If audience said the middle falls flat, the revision targets the middle. If dramatist said there is no peak, the revision adds one.
 
+   **At chunk level (series or season planning):** when incorporating a structural concern from dramatist, revise the chunk text. Planning notes appended to unchanged chunks are not revisions — they are deferred structural problems. A planning note is valid only for shoot-level operational detail that genuinely belongs at the next level (register choices, specific blocking reminders). "Taylor must make an active intervention attempt" is a structural requirement that belongs in the chunk body, not a planning note.
+
 6. Iterate until both accept, or three screen-writer attempts are exhausted.
 
 7. If three attempts exhausted: proceed with the most recent plan, flag for human review.

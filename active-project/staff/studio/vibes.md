@@ -24,3 +24,12 @@ SEASON_1_VIBES:
   the-wrong-structure: [trapped-in-service, useful-to-the-wrong-person, the-deal-you-didnt-make, inside-without-belonging]
   harrenhal-close: [the-castle-in-peripheral-vision, wrong-scale-every-day, history-as-ambient-threat, the-thing-that-watches-back]
   fauna-as-secret: [the-resource-that-reads-as-omen, managing-what-observers-see, the-bell-tower-ravens, the-tool-that-names-you]
+
+# Episode 1 Vibe-Cloud (s01e01 — The Ledger Opens) — delta from season
+
+EPISODE_1_VIBES:
+  the-machinery-arrives: [efficient-not-hostile, procedure-requires-no-malice, the-ledger-as-weapon, bureaucratic-momentum-indifferent-to-the-person]
+  the-letter: [the-useless-object, what-he-could-give, held-at-her-side, traveling-back-unchanged, the-form-that-does-not-fit-the-rule]
+  the-naming: [the-moment-of-being-asked, the-name-given-aloud, the-dictation-as-finality, the-door-that-closes-on-its-own-momentum]
+  the-septon-as-absence: [present-but-cannot-appear, the-protector-who-cannot-act, the-letter-in-place-of-the-body, kindness-that-runs-out-before-it-can-hold]
+  the-yard-as-witness: [mira-delivering-verdict-before-it-happens, edric-watching-the-road-without-watching, what-everyone-already-knew]

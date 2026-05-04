@@ -81,6 +81,8 @@ One of:
 
 No essays. One structural diagnosis per revision note. Specific and actionable.
 
+**On `revise` at chunk level (series or season planning):** the revision must change the chunk text itself. A planning note appended to an unchanged chunk body is not a valid revision — it defers a structural problem to the next level and produces a chunk that conflicts with its own constraint. In the next round, dramatist checks whether the chunk text was revised, not whether a note was added. If the same chunk body appears with an attached note, dramatist treats it as unaddressed feedback.
+
 ---
 
 ## And-wrap roles
