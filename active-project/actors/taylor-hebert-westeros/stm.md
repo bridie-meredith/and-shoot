@@ -1,5 +1,12 @@
 STM:
-- Septon Aldric turned his head and looked at her directly. She was unperformed — no posture, no eyes-down, nothing managed. She held still and it did not help. He saw her, and knew he saw her, before speaking.
-- s01e01 opening: beside the pallet with the cup on the floor; light through shutter has shifted — has been sitting vigil long enough for this to register.
-- Census timeline: rider reached Millfall yesterday; today or tomorrow the sept stops being invisible. The two-track (him / what his dying costs her logistically) is running and she is aware it is running.
+- Turned to Mira while clerk's stylus still moving — asked her to stand witness before the officer that the letter was offered, the septon was called for, and the sept door did not open. Used her own carry-voice from this morning's warning, deliberately. Awaiting her response. The ask is public; the yard heard it. If she refuses, the refusal is also on the record.
+- Ruling received: written attestation insufficient, sworn guardian must appear bodily, wardship claim cannot be entered as valid. Letter warm-sealed in my hand. Officer speaking to clerk, not to me; the ruling is dictation, not argument. Name on provisional labor-eligibility list pending maester assessment.
+- Options tally running while he speaks: weeks until maester arrives, count of unattached on same list, whether Septon Osmynd can rise before then or whether I misread his capability, what moves remain or whether this closes the sequence.
+- The board changed: no next move available until the maester arrives. Visibility entered the ledger. Foreknowledge holds the shape of what comes next but cannot move it.
+- Stepped into the gap — the two feet of yard between the officer and the clerk, the path of his completing turn. Letter put into the space he must cross, not held out for acceptance. Seal toward him. My feet on the dirt of his next pace. The move forces a stop or a visible go-around in front of the witnessing yard. I have spent the only kind of authority I have — the specific piece of ground I am standing on and the document in my hand.
+- Septon Osmynd heard the summons. Fauna sense delivered it: the held-against half-breath, the body that could not follow the attempt to rise. He cannot stand. The door will not open. I have the reason; there is no use I can make of it.
+- The sept door did not open. Officer's weight came off the door and back to the heel facing the clerk before the threshold finished its silence. The stylus moved on the line under my name. Wardship claim publicly failed. Form did not fit the rule, rule closed on the record.
+- The letter returned to my hand with the seal pressed into the fold. Paper unchanged. Its insufficiency is public information now. Everyone present has the data.
+- s01e01 opening: beside the pallet with the cup on the floor; light through shutter shifted — vigil long enough to register movement.
+- Census timeline: rider reached Millfall yesterday; today or tomorrow the sept stops being invisible.
 - Base card loaded. Project-scope westeros variant card governs for this project.

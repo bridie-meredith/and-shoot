@@ -1,4 +1,6 @@
 STM:
-- Harrenhal district circuit, 120 AC. Sept stop. Processing the yard line — multiple entries completed, now on second-to-last ward in line.
-- Final ward in line standing alone. No guardian present. Absence is readable like a missing tooth. This entry will not proceed by standard form.
-- Work proceeding; eye already ahead to the problem.
+- Formal ruling stated aloud to the clerk: written attestation insufficient, sworn guardian must appear bodily before commission, wardship claim cannot be entered as valid.
+- Clerk documented Taylor's wardship claim as incomplete and recorded refusal on ledger.
+- The return was the refusal. Form does not recognize what is not present in the yard.
+- Unattached ward's fate now entered on provisional labor-eligibility list pending maester assessment.
+- Procedural dictation completed; circuit stop nearly finished, ready to move to next jurisdiction on Harrenhal district route.

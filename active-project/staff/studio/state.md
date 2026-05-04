@@ -23,7 +23,7 @@ STATE:
     edric: at the gate post — position established bullet 3; has been watching; no guardian has spoken for Taylor — his silence is part of the pause
     taylor: end of the line — last in the processing sequence; standing alone; no guardian has stepped forward; the pause is her situation made visible in the yard
   doors_and_shutters:
-    sept-main-door: closed
+    sept-main-door: closed — still-closed; no response to census officer's summons; septon did not emerge; door status unchanged from scene-open but its meaning in the yard has changed: absence is now a public fact
     sept-gate: open — officer and clerk have now passed through it; cart remains on the road outside
     sickroom-shutter: closed (interior; not visible from courtyard)
     cottage-door: closed
@@ -42,4 +42,4 @@ STATE:
     - the light is flat and pale from the east — no shadow yet from the sept building across the yard
     - no smoke from cottage chimney — no fire lit inside; Osmynd's fever has not been tended to yet this morning
     - the cart horse is quiet on the road — audible if one listens: a single hoof shift, a breath
-  census_status: officer IN courtyard — prior entries complete (bullet 8); officer has processed all line members before Taylor; officer now paused directly before Taylor at end of line; no guardian has spoken for her; clerk's stylus is stilled, ledger open; the processing rhythm has visibly broken; the pause is observable to the whole yard; Taylor has not yet been addressed
+  census_status: officer IN courtyard — prior entries complete (bullet 8); officer has processed all line members before Taylor; officer called for Septon Osmynd by name to settle the wardship assertion (bullet 12); sept doors did not open; no sound from within; no one emerged; septon's absence is now a declared public fact in the yard, witnessed by all present; the yard is holding the silence that followed the call; census processing is paused pending resolution; Taylor has not yet been addressed as the next step
