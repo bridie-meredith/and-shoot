@@ -1,0 +1,4 @@
+episode: s01e04 — The Succession
+chunk: The septon dies, triggering the sept's ward-succession protocol, and Taylor goes directly to septon-rowan to have him assert a formal ecclesiastical guardianship claim before the reversion deadline — rowan's claim is refused by the district recorder on procedural grounds because he holds no permanent appointment, and the refusal is logged in the same administrative record that will be cited to complete the reversion. Ser-harwick-plumm moves within the same week to formalize Taylor's status as a ward of the castellan's administration before any further challenge can be filed, and the mechanism that will make her useful to him is the same documented anomaly that made her visible in the first place.
+audience: dark-fantasy-reader, pulp-enthusiast, worm-canon-pedant
+opened: 2026-05-04

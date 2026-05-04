@@ -1,48 +1,74 @@
-# Episode Plan
+episode: s01e04 — The Succession
+chunk: The septon dies, triggering the sept's ward-succession protocol, and Taylor goes directly to septon-rowan to have him assert a formal ecclesiastical guardianship claim before the reversion deadline — rowan's claim is refused by the district recorder on procedural grounds because he holds no permanent appointment, and the refusal is logged in the same administrative record that will be cited to complete the reversion. Ser-harwick-plumm moves within the same week to formalize Taylor's status as a ward of the castellan's administration before any further challenge can be filed, and the mechanism that will make her useful to him is the same documented anomaly that made her visible in the first place.
 
-chunk: The inspection visit triggered by Plumm's report arrives at the sept, and the inspector finds Taylor with a raven perched on her arm in a posture no trained bird takes with a stranger — a concrete, witnessed anomaly that Plumm's man records and sketches. Septon-rowan, arrived as the dying septon's replacement, attempts to intercede and succeeds only in putting his own name in the inspector's record alongside Taylor's, broadening the documented exposure rather than narrowing it.
-theme: The ordinary-cover cracks in public, and a stranger's help makes the crack permanent.
-actors: [taylor-hebert-westeros, plumms-man, septon-rowan]
-change: Episode opens with Taylor as one name adjacent to an unverified fauna rumor; it closes with two names (Taylor + Rowan) on the same formal ledger page as a dated, sketched raven anomaly.
-constraints:
-  - Taylor's fauna use is physically costly without shard buffering; cost must not be elided
-  - Raven behavior on arm must read as wrong to a trained observer — no trained bird perches with a stranger this way
-  - Inspector reaction register is discomfort/unease — not curiosity, not wonder
-  - Rowan is first on-stage — no prior relationship with Taylor established
-  - Plumm's man is the same inspector from s01e02, now conducting formal inspection under castellan authority
-  - Escalation distributes through the episode; two distinct escalation moments required, neither tail-concentrated
-
----
-
-## Script
-
-1. STUDIO: Sept interior — morning light through high shuttered windows, rushes on the floor, Osmynd's bench empty, the sept in the sparse order Taylor maintains.
-2. taylor-hebert-westeros — stands in the side chamber doorway, still, raven on the sill of the window above the grain crate.
-3. STUDIO: Boots and cart wheels on the settlement's main track — multiple men, measured pace.
-4. plumms-man — enters through the sept's front arch with a scribe and one Hatch guardsman, ledger board under arm.
-5. plumms-man — surveys the sept interior, marks the empty bench, marks Taylor standing midway down the nave.
-6. plumms-man — reads aloud the formal purpose of the inspection: to verify the labor-eligible resident recorded in the census, and to document the nature and scope of works performed at the sept under provisional arrangement.
-7. taylor-hebert-westeros — steps into the nave, gives her name, confirms the census entry.
-8. plumms-man — asks where Septon Osmynd is.
-9. taylor-hebert-westeros — answers that Osmynd is in his sleeping alcove and has not risen today.
-10. plumms-man — sends the guardsman to verify.
-11. STUDIO: The raven drops from the window sill to the grain crate, then steps from the crate onto Taylor's outstretched arm.
-12. plumms-man — goes still; the scribe's stylus stops.
-13. plumms-man — asks, flatly, how long the bird has been in the sept.
-14. taylor-hebert-westeros — answers: since before the cold, it comes for grain.
-15. plumms-man — steps closer; the raven does not shift weight or turn its head from the inspector.
-16. plumms-man — tells Taylor to put the bird away.
-17. taylor-hebert-westeros — lifts her arm toward the window; the raven does not move.
-18. plumms-man — watches the bird a moment, then tells the scribe to note the bird and its posture on the arm.
-19. scribe — sketches the raven on the ledger page alongside the inspection entry.
-20. taylor-hebert-westeros — lowers her arm; the raven steps off without agitation and returns to the sill.
-21. STUDIO: Septon-rowan enters through the front arch — road-dusty, carrying a traveler's pack, reading the inspector and scribe before he clears the threshold.
-22. septon-rowan — announces himself: Septon-rowan, sent by the motherhouse to attend the sept in Septon Osmynd's illness.
-23. septon-rowan — positions himself between Taylor and the inspector and states that the girl is under the sept's protection, and that any inquiry regarding her should pass through the sept's records, not a castellan's ledger.
-24. plumms-man — asks Rowan his name a second time, unhurried, and waits while the scribe writes it.
-25. plumms-man — asks where Rowan has come from and when he arrived; Rowan answers both.
-26. plumms-man — marks Rowan's name, his origin, and his stated authority on the same ledger page as Taylor's entry and the raven sketch.
-27. plumms-man — closes the ledger board, informs both that the castellan's office will be in contact regarding the provisional arrangement, and departs with the scribe and guardsman.
-28. STUDIO: Sept door swings half-closed on its pin. Morning light narrows across the floor. Osmynd's bench remains empty.
-29. taylor-hebert-westeros — does not move until the cart sound fades from the track.
-30. septon-rowan — turns to Taylor and asks her, quietly, what else they have seen.
+1 — septon-dying-protector — dying — osmynd's breathing breaks its pattern in the sleeping alcove before first light
+2 — taylor-hebert-westeros — wakes — taylor is on her pallet in the side chamber; the change in the pattern reaches her before she opens her eyes
+3 — STUDIO — alcove — the sleeping alcove: pallet, single tallow stub burned to the cloth, osmynd's hands loose at his sides, chest not moving
+4 — taylor-hebert-westeros — checks — taylor crosses the alcove, presses two fingers to osmynd's wrist, holds the count
+5 — taylor-hebert-westeros — confirms — taylor straightens; she does not call out; she stands in the alcove doorway with both hands at her sides
+6 — STUDIO — sept-interior — the nave in pre-dawn grey: osmynd's bench empty as it has been for weeks, rushes undisturbed, the raven on the sill above the grain crate, eyes open
+7 — taylor-hebert-westeros — searches — taylor moves to the shelf behind the altar table, pulls the bound register kept by the sept
+8 — taylor-hebert-westeros — reads — taylor opens the register to the succession folio, reads the ward-reversion clause by tallow light
+9 — taylor-hebert-westeros — takes — taylor removes the succession folio from the register, folds it into her shirt
+10 — STUDIO — exterior — dawn breaking over the harrenhal shadow settlement; cold, still; the track empty; no cart, no hoofbeats yet
+11 — taylor-hebert-westeros — moves — taylor exits the sept by the side door at a walk, not a run
+12 — septon-rowan — emerges — rowan appears at the doorway of the settlement's guest-lodge, pulling his robe straight, still reading the pre-dawn track
+13 — taylor-hebert-westeros — reaches — taylor closes the distance to rowan before he has fully cleared the doorstep
+14 — taylor-hebert-westeros — reports — taylor tells rowan osmynd is dead; the words are flat, no preamble
+15 — septon-rowan — stills — rowan goes motionless a half-beat; his hand drops from his collar
+16 — taylor-hebert-westeros — extends — taylor draws the succession folio from her shirt and puts it in rowan's hands
+17 — septon-rowan — reads — rowan reads the reversion clause in the folio; his lips move once on the deadline notation
+18 — septon-rowan — looks-up — rowan looks up from the folio at taylor
+19 — taylor-hebert-westeros — names — taylor tells rowan the district recorder's hall is two miles on the eastern road; she names the hour the hall opens
+20 — STUDIO — track — the settlement track at early morning: two figures moving east, the raven lifting from the sept sill and not following
+21 — septon-rowan — walks — rowan carries the folio and moves at pace on the track; taylor stays a half-step behind his left shoulder
+22 — STUDIO — recorder-hall — the district recorder's hall: a stone building, low-ceilinged, a clerk's bench across the entry passage, two ledger stands, a door to the inner room ajar
+23 — district-recorder — appears — the district recorder emerges from the inner room with a fresh ledger board, marks rowan and taylor at the entry bench
+24 — septon-rowan — presents — rowan states his name, his office, and lays the succession folio on the clerk's bench; he asserts an ecclesiastical guardianship claim over the ward registered at the sept
+25 — district-recorder — receives — the recorder takes the folio, reads the cover notation, sets it on the ledger stand
+26 — district-recorder — asks — the recorder asks rowan for his letter of permanent appointment to the sept
+27 — septon-rowan — answers — rowan states he holds provisional appointment from the motherhouse, pending osmynd's formal succession
+28 — district-recorder — rules — the recorder states the guardianship claim requires a permanent appointee; provisional standing does not satisfy the succession protocol
+29 — district-recorder — logs — the recorder opens the ledger, records rowan's claim and the grounds for refusal in the administrative record
+30 — taylor-hebert-westeros — steps-forward — taylor steps to the clerk's bench, past rowan's shoulder
+31 — district-recorder — turns — the recorder's attention arrives on taylor
+32 — taylor-hebert-westeros — speaks — taylor names herself, names the sept, and states that the succession folio was retrieved from the sept's own register this morning before any reversion clock could be formally started
+33 — district-recorder — holds — the recorder holds taylor's statement without writing; the nib is above the page and not moving
+34 — district-recorder — refuses — the recorder states that the ward has no standing to contest a succession determination; the claim is not entered
+35 — district-recorder — marks — the recorder adds a notation to the same ledger line: ward presented in person, claim refused for lack of standing
+36 — STUDIO — recorder-hall — the ledger stand: the refusal entry sits three lines below the raven-sketch inspection record cited in the margin reference; they are on the same administrative page now
+37 — septon-rowan — takes — rowan collects the succession folio from the ledger stand and tucks it under his arm
+38 — taylor-hebert-westeros — does-not-move — taylor stands at the clerk's bench a moment longer than rowan does before she turns
+39 — STUDIO — track — afternoon; the eastern road back toward the settlement; sky low and flat; the hall door has closed behind them
+40 — septon-rowan — speaks — rowan breaks the silence on the track; he tells taylor he will send to the motherhouse today for the permanent appointment letter
+41 — taylor-hebert-westeros — answers — taylor states how many days the motherhouse letter will take in transit
+42 — septon-rowan — asks — rowan asks how she knows the transit time
+43 — taylor-hebert-westeros — answers — taylor names the roads and the season; she does not slow her pace
+44 — STUDIO — sept-exterior — the settlement by late afternoon; osmynd's body laid out on the altar table inside, visible through the open sept door; a neighbor woman has come to sit with it
+45 — taylor-hebert-westeros — stands — taylor stands outside the sept door, not going in
+46 — STUDIO — track — a rider on the settlement track, approaching from the harrenhal road, moving at deliberate pace; satchel at the hip, sealed documents visible
+47 — ser-harwick-plumm — arrives — ser-harwick-plumm reins in at the sept yard; he reads taylor standing at the door before his horse has fully stopped
+48 — ser-harwick-plumm — dismounts — plumm dismounts and hands the reins to his rider; he does not look at the sept, he looks at taylor
+49 — ser-harwick-plumm — addresses — plumm addresses taylor by name; his register is businesslike, not unkind
+50 — taylor-hebert-westeros — faces — taylor turns from the sept door to face plumm; she does not step back
+51 — ser-harwick-plumm — produces — plumm draws a sealed document from his satchel and holds it at his side, not extended yet
+52 — ser-harwick-plumm — states — plumm states that the castellan's administration is moving to establish formal wardship, pending the resolution of osmynd's succession
+53 — septon-rowan — emerges — rowan comes out of the guest-lodge at the sound of plumm's voice, the motherhouse folio still under his arm
+54 — ser-harwick-plumm — marks — plumm marks rowan's appearance and the folio without changing his posture
+55 — ser-harwick-plumm — speaks — plumm tells rowan that the district recorder's hall has already sent its notation to harrenhal; the refusal of ecclesiastical claim is logged and traveling
+56 — septon-rowan — states — rowan states that the motherhouse has jurisdiction in matters of ward succession under the Faith
+57 — ser-harwick-plumm — answers — plumm answers that jurisdiction is not in dispute; the procedure is
+58 — ser-harwick-plumm — extends — plumm extends the sealed document toward taylor
+59 — taylor-hebert-westeros — does-not-take — taylor's hands stay at her sides
+60 — ser-harwick-plumm — holds — plumm holds the document extended without impatience; the offer stands
+61 — STUDIO — sept-yard — the yard in late light: osmynd's open door, the neighbor inside, the raven unseen; plumm's horse on the reins behind him; rowan with the folio; taylor between them
+62 — ser-harwick-plumm — names — plumm names the inspector's record, the raven sketch, and the census anomaly by date — three items, stated in sequence, without editorial
+63 — taylor-hebert-westeros — does-not-answer — taylor holds plumm's eyes without speaking
+64 — ser-harwick-plumm — continues — plumm states that the castellan finds the documented pattern of interest; that interest can be made useful, or it can remain an open notation without a resolution
+65 — septon-rowan — moves — rowan takes a step forward; plumm does not turn
+66 — ser-harwick-plumm — addresses-rowan — plumm tells rowan, without turning, that the letter from the motherhouse will arrive after the administrative deadline; he names the same transit days taylor named on the road
+67 — taylor-hebert-westeros — takes — taylor reaches up and takes the document from plumm's hand
+68 — STUDIO — yard — the seal passes from plumm's hand to taylor's; rowan's hand tightens on the folio; plumm's posture does not change
+69 — ser-harwick-plumm — steps-back — plumm steps back one pace, turns to collect his horse's reins
+70 — ser-harwick-plumm — departs — plumm mounts and rides the track back toward the harrenhal road at the same deliberate pace he arrived
+71 — STUDIO — sept-yard — the yard after plumm's departure: rowan standing with the folio, taylor standing with the sealed document; osmynd's door still open; the neighbor's shape visible inside at the altar table; the track empty and quiet

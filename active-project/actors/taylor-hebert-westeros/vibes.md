@@ -25,3 +25,6 @@ VIBES:
   holding-still: [cart-sound-on-the-track, wait-until-the-room-empties, the-one-move-available, the-discipline-of-not-breaking-in-front-of-witnesses]
   osmynd-confirmed-absent: [bench-empty-before-the-threat-arrived, the-protection-already-gone, alone-in-the-sept-when-the-inspector-came]
   the-septon-failing: [hands-loose-in-the-morning, present-and-aware-and-running-out, she-took-his-hand-and-knew-what-she-was-taking, the-timer-she-cannot-not-watch]
+  osmynd-gone: [pulse-check-came-back-empty, she-did-not-call-out, protection-fully-expired-not-expiring, the-body-on-the-altar-she-did-not-go-in-to-see, what-ran-out-finally-ran-out]
+  the-active-attempt: [moved-before-dawn-and-lost, stole-the-folio-and-it-helped-nothing, stepped-past-rowans-shoulder-and-was-refused-on-different-grounds, fighting-the-ledger-with-the-ledger, every-move-absorbed]
+  the-document-taken: [seal-in-her-hand-at-episode-close, the-thing-plumm-offered-she-did-not-reach-for-until-she-did, involuntary-structure-with-her-handprint-on-it, rowan-watched-her-take-it, the-moment-the-board-cannot-reset]

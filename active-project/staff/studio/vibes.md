@@ -54,3 +54,13 @@ EPISODE_3_VIBES:
   osmynd-absent: [bench-empty-in-the-first-beat, protection-already-gone-before-threat-arrives, the-thing-that-ran-out, visible-from-the-start]
   holding-still: [cart-sound-on-the-track, wait-until-the-room-empties, stillness-as-the-only-available-move, the-discipline-of-not-breaking]
   the-sincere-harm: [rowan-means-well-makes-it-worse, cannot-fight-good-faith, the-stranger-who-names-himself-into-the-record, the-wrong-kind-of-protection]
+
+# Episode 4 Vibe-Cloud (s01e04 — The Succession) — delta from season
+
+EPISODE_4_VIBES:
+  osmynd-gone: [protection-fully-expired, the-body-on-the-altar, the-bench-that-stays-empty, what-ran-out-ran-out, no-replacement-for-the-original]
+  the-succession-mechanism: [bureaucracy-as-predator, the-reversion-clock-needs-no-malice, procedure-that-runs-on-its-own-momentum, the-document-that-travels-sealed, the-form-that-has-no-slot-for-her]
+  the-active-attempt: [she-moved-first-and-lost, two-names-on-the-same-page, fighting-the-ledger-with-the-ledger, correct-and-still-losing, the-folio-that-did-not-hold]
+  the-folio: [stolen-at-dawn, the-weapon-that-backfired, the-paper-she-put-in-rowans-hands, artifact-of-the-failed-attempt, still-under-rowans-arm-at-episode-close]
+  the-transit-clock: [days-she-already-counted, deadline-she-cannot-extend, plumm-named-the-same-number, time-as-adversary-not-ally, the-window-she-could-not-hold-open]
+  the-document-taken: [seal-passing-from-plumms-hand, the-thing-she-did-not-choose, involuntary-structure-enacted, the-moment-it-cannot-roll-back-from, rowan-watching-her-take-it]
