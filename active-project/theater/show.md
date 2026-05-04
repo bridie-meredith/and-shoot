@@ -11,4 +11,6 @@ The cold finds my collar the moment I clear the sept wall and the lane opens aro
 
 The grain-keeper turns their head away from the interior dark toward the lane, and their eyes find me passing at ordinary pace, and their face tightens, and behind them the man's head lifts from the floor where he has been crouching, his eye following the grain-keeper's turned head, following the line to where I am walking, and his hand is already moving down to the small book, moving careful and slow, the way movement looks when something is being set down that will not change.
 
+I am already past the near corner when I hear the quill-scratch stop, and in the moment before the threshold shadow swallows the granary interior, the small book folds shut in his left hand and his right hand turns toward the lane — toward the place where I was standing — and the motion is not searching or questioning, it is the turn of a man who has written down what there is to write, who has compared the notches to the floor and found them true, who has marked the entry in the book below the one that was already there, and now the lane itself is the next thing.
+
 
