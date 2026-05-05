@@ -1,10 +1,14 @@
 STATE:
-  location: westerosi-smallfolk-village-common (leaned forward at the headman's table)
+  location: westerosi-smallfolk-village-common (seated at the headman's table, leaned forward over the working surface)
   condition: []
   inventory:
-    - traveling cloak (worn; parted at the throat with the forward lean)
-    - maester's chain (worn; now shown at the throat to the proceeding)
-    - satchel (set down closed on the headman's table; latch unworked; small notebook and census-auxiliary materials inside)
+    - traveling cloak (worn; fallen off the collar with the lean; chain no longer covered)
+    - maester's chain (worn; fully out of cloak, in working light — silver, copper, black iron, pale grey links visible to the room)
+    - satchel (open on the headman's table, latch off)
+    - auxiliary extract (out of satchel; open on the table, face-up, set alongside the steward's scroll for parallel column-reading)
+    - small notebook (out of satchel; open flat on the table beside the extract, working page up)
+    - pen (loose in the satchel's side pocket, ready to hand without looking)
   notes:
     - first hypothesis on a candidate forming before formal opening: girl at kiln-wall margin tracking the scroll
-    - credential given to the room at the close of the sweep; headman's cue returned; opening is his
+    - working surface assembled: extract + scroll + notebook in parallel; chain shown as credential to the room
+    - opening is his; the proceeding's instruments are now all on the table

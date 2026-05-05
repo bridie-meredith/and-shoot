@@ -1,4 +1,4 @@
 STATE:
-  location: loc-harrenhal-sept-environs
+  location: loc-harrenhal-village-common
   condition: []
-  inventory: []
+  inventory: [folio-with-motherhouse-and-recorder-papers]

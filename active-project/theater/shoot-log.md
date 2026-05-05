@@ -41,3 +41,25 @@ attempts: 2 | outcome: retried
 - attempt 1: pulp-enthusiast rejected — paragraph re-walked B8's smallfolk margin (B8 had already noticed Taylor)
 - attempt 2: compressed to ONE sentence (eye returns to trestle, weight tips forward, cloak parts, chain enters proceeding's light, returned look gives the headman his cue); accepted
 
+## Bullet 10 — STUDIO scroll opens (initially maester POV, retried as Taylor POV) — name-on-line
+attempts: 2 | outcome: retried
+- attempt 1: maester POV; pulp-enthusiast rejected — re-describing settled state, no advance
+- attempt 2: shifted to Taylor POV at the margin, paragraph ends on maester's hand making contact with the satchel latch (forward beat sets up B11); accepted
+
+## Bullet 11 — westerosi-traveling-maester — opens-satchel-chain-out
+attempts: 1 | outcome: clean
+- prop_positions: satchel open on table; auxiliary extract open beside scroll; small notebook open; chain visibly out of cloak (full credential display)
+
+## Bullet 12 — westerosi-traveling-maester — calls-the-ward
+attempts: 1 | outcome: clean
+- formal opening of the proceeding; ward called by name from the column
+
+## Bullet 13 — septon-rowan — answers, steps beside Taylor
+attempts: 1 | outcome: clean
+- sublocation: rowan moved from sept yard to common margin; folio in inventory
+
+## Bullet 14 — westerosi-traveling-maester — pulls-chair, "Come and sit."
+attempts: 1 | outcome: clean
+- prop: small chair pulled out, set at working-distance across from maester's own
+- impersonator returned without appending on first dispatch; re-dispatched with explicit append instruction
+
