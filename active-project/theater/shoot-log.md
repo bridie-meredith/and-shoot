@@ -112,3 +112,15 @@ attempts: 3 | outcome: retried
 attempts: 1 | outcome: clean
 - "And numbers — accounts, tallies." — list-item cadence; the assessment continues into the next column
 
+## Bullet 25 — taylor-hebert-westeros — names sources + maester reaches for next instrument
+attempts: 2 | outcome: retried
+- attempt 1: pulp-enthusiast rejected — interview-rhythm fatigue, nib-down was atmospheric not escalatory
+- attempt 2: ends on maester's other hand entering the satchel and finding the folded sheet (next test instrument staged before answer finishes); accepted
+
+## Bullet 26 — westerosi-traveling-maester — folded sheet placed, "The sum at the foot — is it correct?"
+attempts: 1 | outcome: clean
+
+## Bullet 27 — taylor-hebert-westeros — finds carry error, trap closes
+attempts: 1 | outcome: clean
+- Taylor identifies "the third entry is carried wrong" — the deliberate-error trap closes; maester's micro-response (warmth/weight redistribution) confirms the test resolved against the embedded hypothesis
+
