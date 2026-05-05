@@ -73,3 +73,22 @@ attempts: 2 | outcome: retried
 attempts: 1 | outcome: clean
 - the embedded test opens — finger as reference not pointer, never asks "can you read?"
 
+## Bullet 17 — taylor-hebert-westeros — calibrated read, finger lands
+attempts: 2 | outcome: retried
+- attempt 1: pulp-enthusiast rejected — finger staying still is not board-change
+- attempt 2: ends on maester pre-verbal signal Taylor catches via passive feed (other hand lifts a breadth, warmth-shift, stillness changes); accepted
+
+## Bullet 18 — westerosi-traveling-maester — yes-yes, escalates to numeracy
+attempts: 1 | outcome: clean
+- the test grows a second jaw without announced transition
+
+## Bullet 19 — taylor-hebert-westeros — names numbers, pen meets paper
+attempts: 2 | outcome: retried
+- attempt 1: pulp-enthusiast rejected — three numbers with breaths between, board unchanged, maester's hand a half-beat
+- attempt 2: compressed to 1-2 short sentences ending on pen nib meeting parchment (real action, not telegraph); accepted
+
+## Bullet 20 — westerosi-traveling-maester — Citadel-notable mark + eye-flick + next ask
+attempts: 2 | outcome: retried
+- attempt 1: pulp-enthusiast rejected — third beat of column-questioning, no new complication
+- attempt 2: notation extended to a Citadel-notable subscript classification (not just a tick), maester's eye flicks briefly to the wardship document seal-up in Taylor's lap and consciously does not address it, then issues the next question; two board changes inside the line; accepted
+
