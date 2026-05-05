@@ -1,8 +1,8 @@
 STATE:
-  location: loc-harrenhal-sept-environs
-  sublocation: sept courtyard — officer's left shoulder
+  location: loc-harrenhal-castellan-office
+  sublocation: castellan's office anteroom, at dispatch table
   condition: []
-  inventory: [portable-writing-board, ledger-pages, pen-case]
+  inventory: [district-ledger, pen-case]
   stats:
     transcription_accuracy: high
     anomaly_sensitivity: high-passive

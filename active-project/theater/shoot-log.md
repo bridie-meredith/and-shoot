@@ -201,3 +201,11 @@ attempts: 1 | outcome: clean
 - POV switch back to Taylor; spoken line exact (two short flat sentences); answers WHERE not WHAT — gives Rowan the actionable answer
 - the question Rowan asked stays in the yard alongside the answer to a different one — implication for Rowan's training to find
 
+## Bullet 46-B51 (merged) — clerk — Bracken counter-claim filed alongside Plumm; Celtigar courier passes anteroom doorway
+attempts: 3 | outcome: retried
+- attempt 1: pulp-enthusiast rejected — procedural register without on-page friction
+- attempt 2: added double-stroke margin notation per clerk card; pulp-enthusiast rejected again — paperwork confirming complication already witnessed; needed forward pull
+- attempt 3: extended merge to include B51 (Celtigar courier with three red crabs on white passes anteroom doorway, sealed letter for castellan); board worsens in real time — three Houses converge on the same ledger page; 3/3 accept
+- POV: clerk (using clerk card as walk-on for Harrenhal castellan-office junior clerk role)
+- Scene shift to Harrenhal anteroom; new actors: castellan-functionary (walk-on), Celtigar-courier (walk-on)
+
