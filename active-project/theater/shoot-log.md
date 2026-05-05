@@ -87,6 +87,23 @@ attempts: 3 | outcome: NEEDS_EDIT
   attempt 2: pulp rejected — short ask still reads as toll beat with no payoff
   attempt 3: dark-fantasy-reader accepted; pulp + worm rejected — full explanation while writing is still "narrating the stop"; worm-pedant rejecting non-Taylor lines for absence of Taylor voice (persona criteria mismatch)
 
+## Bullet 66 — ser-harwick-plumm — addresses-rowan
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: pulp-enthusiast rejected — "long, airless paragraph; reader already absorbed transit math from Taylor; confirming without complication"
+  attempt 2: pulp-enthusiast rejected — "procedural exposition; threat already implied by Taylor; only labels it in recorder's-book language"
+  attempt 3: (budget exhausted) — B66 is structurally a restatement of Taylor's road calculation; pulp systematically rejects; editor: collapse into B67 or cut
+
+## Bullet 65 — septon-rowan — moves
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: pulp-enthusiast rejected — "internal register; non-event; agonized interiority compressed"
+  attempt 2: pulp-enthusiast rejected — "board did not change; physical stage dressing on moment already landed"
+  attempt 3: (budget exhausted) — structural transition beat; board change comes in B66 not B65; editor: merge into B66 or cut
+
+## Bullet 64 — ser-harwick-plumm — continues
+attempts: 2 | outcome: retried
+  attempt 1: pulp-enthusiast rejected — "bureaucratic taxonomy across three sub-clauses; administrative explanation instead of forward pressure"
+  attempt 2: accepted 3/3 — two futures flat ("column closes here" vs "carry leaves at first light with whatever is unresolved"); threat wears bureaucratic clothing
+
 ## Bullet 63 — taylor-hebert-westeros — does-not-answer
 attempts: 1 | outcome: clean
 
