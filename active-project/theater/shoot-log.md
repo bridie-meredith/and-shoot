@@ -184,3 +184,20 @@ attempts: 1 | outcome: clean
 - passive feed reads negative — absence of Plumm's specific weight-press in the wax = different hand; not a positive device-read at distance (canon-honest mechanic)
 - 3/3 accept
 
+## Bullet 40-B43 (merged) — taylor-hebert-westeros — gate-passage non-stop, document released to chancel shelf
+attempts: 2 | outcome: retried
+- attempt 1: pulp-enthusiast rejected — passive-feed cataloguing without on-page action; "where's the move?"
+- attempt 2: merged with B43 (chancel-shelf placement); rider gate-passage compressed to 1 clause; tactical move on-page — Taylor pushes sept door open, crosses to chancel shelf, sets wardship document down (instrument released, contest is procedurally elsewhere); raven in bell tower closes as clock-start; 3/3 accept
+- inventory: castellan-wardship-document moved from Taylor's hand → chancel shelf, sept nave (continuity gap from B15 lap-position resolved on-page)
+- audience continuity flag from prior attempt addressed
+
+## Bullet 44 — septon-rowan — "What was the second rider carrying."
+attempts: 1 | outcome: clean
+- POV switch Taylor → Rowan; folio under arm; reads absences as professional skill
+- spoken line exact, content-anchored
+
+## Bullet 45 — taylor-hebert-westeros — "East. Toward the hall."
+attempts: 1 | outcome: clean
+- POV switch back to Taylor; spoken line exact (two short flat sentences); answers WHERE not WHAT — gives Rowan the actionable answer
+- the question Rowan asked stays in the yard alongside the answer to a different one — implication for Rowan's training to find
+
