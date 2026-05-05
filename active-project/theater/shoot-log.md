@@ -209,3 +209,11 @@ attempts: 3 | outcome: retried
 - POV: clerk (using clerk card as walk-on for Harrenhal castellan-office junior clerk role)
 - Scene shift to Harrenhal anteroom; new actors: castellan-functionary (walk-on), Celtigar-courier (walk-on)
 
+## Bullet 52-B55 (merged) — oc-castellan-harrenhal — Celtigar letter received, read silent then aloud, ten-day clock starts
+attempts: 1 | outcome: clean
+- POV switch clerk → castellan (first scene appearance for castellan this episode)
+- Celtigar letter content quoted verbatim (Small Council commission, full accounting of all census anomalies, ten-day window)
+- read first silently, then aloud at official cadence; two functionaries silent; one opens writing case at end
+- ten-day clock starts; the maester's "unusual capability notations" subscript will be exactly what Celtigar wants
+- 3/3 accept
+

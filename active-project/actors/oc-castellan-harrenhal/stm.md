@@ -1,3 +1,3 @@
 STM:
-- No recent events recorded yet. Episode 1 not yet begun.
+- s01e05 B52-B55: Celtigar letter received, broken, and read aloud at official cadence in the receiving room, late afternoon. Two functionaries present; nearer one opened the writing case at the close of the reading. Letter requests a full accounting of census anomalies in the Harrenhal district — unresolved status classifications, unusual capability notations, anything flagged for review but not closed — by raven within ten days. Ten-day clock now running. The Bracken counter-claim against Plumm (filed wet on the dispatch ledger this afternoon, double-stroke margin notation) is among the open items the accounting will have to address. Letter laid seal-down on the table, unretractable; arithmetic of open flags begun without being asked.
 - Castellan recently installed at Harrenhal. Impressment census in progress.
