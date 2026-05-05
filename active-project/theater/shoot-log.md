@@ -234,3 +234,11 @@ attempts: 1 | outcome: clean
 - passive only (no cost spend); ravens located at half-league north, edge of passive radius — instrument identified, not yet reached for
 - 3/3 accept; pulp-enthusiast accepts as "instrument located one beat before B63 reaches for it"
 
+## Bullet 63-B66 (merged) — taylor-hebert-westeros — active raven recon; cost declared
+attempts: 1 | outcome: clean
+- ACTIVE FAUNA DEPLOYMENT: directs raven across half-league to castle wall above gatehouse; receives feed (closed gate, Celtigar livery on horse at gate-post, two horses, passage geometry); one breath; returns bird
+- cost declared per cond-fauna-control-rules: migraine quarter-degree → full degree; nausea, neurological pull, spontaneous nosebleed; cold-under-skin
+- guardsman at inner-gate notices the bird — exposure window flagged
+- recon yields: courier still inside Harrenhal; passage geometry (two gates in series); board worsens in three directions at once
+- 3/3 accept
+
