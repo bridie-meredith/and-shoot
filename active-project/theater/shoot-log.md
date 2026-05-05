@@ -146,3 +146,28 @@ attempts: 1 | outcome: clean
 - new vector enters from the west (every prior arrival from east); passive feed reads warmth/horse before eye reads livery; involuntary finger-tighten on knees as map updates
 - continuity: wardship document still seal-up in lap; Taylor in chair; assessment concluded
 
+## Bullet 32 — westerosi-traveling-maester (POV on STUDIO note-delivery) — Bracken-mark-on-fold
+attempts: 1 | outcome: clean
+- POV switch Taylor → maester (rider has no card; rendered through the present card-holding observer)
+- silent rider, sealed fold with Bracken device pressed in wax; maester decodes livery, holds asymmetry — does not extend hand
+- prop_position: folded-note in steward's palm, Bracken's mark upward; extract still open under maester's finger; same column-line as Taylor's name + OSMYND foot-line
+- internal "yes, yes" suppressed; migraine-glow at left orbit declared as cost
+
+## Bullet 33 — westerosi-traveling-maester — takes note, reads silent, folds, returns
+attempts: 1 | outcome: clean
+- hard fence honored: note content not quoted/paraphrased; only physical transaction rendered
+- left hand crosses, opens on original crease, reads, refolds on same crease, returns; right hand never leaves the column rule; chain weight unchanged
+- rider gets nothing readable; "yes yes" given to no nib; migraine-glow tightens a quarter-degree (cost filed)
+
+## Bullet 34 — westerosi-traveling-maester — "the record is mine" past the rider, to the air
+attempts: 1 | outcome: clean
+- spoken line exact: "Tell whoever sent you that the assessment is complete and the record is mine."
+- eye does not lift from extract; voice past the rider, given to the steward and the air; rider not acknowledged as a party
+- migraine-glow holds at filed quarter-degree; declaration of jurisdictional contest by procedural indirection
+
+## Bullet 35 — westerosi-traveling-maester (POV on STUDIO rider withdrawal) — note off the table, two warmths becoming one unit
+attempts: 1 | outcome: clean
+- maester eye still on extract; passive register reads rider taking note back from steward, walking to horse at western margin
+- second cost filed (migraine quarter-degree); "yes, yes" again held inside teeth, not for nib
+- prop_position: folded-note now in rider's hand, leaving westward; steward's palm empty
+
