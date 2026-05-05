@@ -87,6 +87,25 @@ attempts: 3 | outcome: NEEDS_EDIT
   attempt 2: pulp rejected — short ask still reads as toll beat with no payoff
   attempt 3: dark-fantasy-reader accepted; pulp + worm rejected — full explanation while writing is still "narrating the stop"; worm-pedant rejecting non-Taylor lines for absence of Taylor voice (persona criteria mismatch)
 
+## Bullet 61 — STUDIO — sept-yard
+attempts: 0 | outcome: studio-update
+  late light; sept door open; neighbor inside; Osmynd on altar table; raven unseen; Plumm's horse behind him; Rowan with folio; Taylor on threshold between Plumm and sept door; document still extended uncollected
+
+## Bullet 60 — ser-harwick-plumm — holds
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: dark-fantasy + pulp rejected — "held pause; elaborate prose; board has not moved"
+  attempt 2: dark-fantasy + pulp rejected — "pivots into Plumm's internal logic too early; three clauses explaining patient waiting"
+  attempt 3: (budget exhausted) — structural pause beat between two static beats; editor: consider cutting or merging with B59/B62
+
+## Bullet 59 — taylor-hebert-westeros — does-not-take
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: pulp-enthusiast rejected — "frozen-time elaboration; agonized-non-decision padding; board did not change"
+  attempt 2: pulp-enthusiast rejected — "lyrical stasis dressed up as reaction; 'and then?' has nowhere to go"
+  attempt 3: (budget exhausted at attempt 2; kept attempt 2 line) — structurally a stillness beat; pulp systematically rejects pause beats; editor: consider merging B59/B60 or cutting directly to Plumm's hold
+
+## Bullet 58 — ser-harwick-plumm — extends
+attempts: 1 | outcome: clean
+
 ## Bullet 57 — ser-harwick-plumm — answers
 attempts: 2 | outcome: retried
   attempt 1: dark-fantasy + pulp rejected — procedural correction only; clarifies but board does not worsen; "closes the maneuver rather than opening a worse door"

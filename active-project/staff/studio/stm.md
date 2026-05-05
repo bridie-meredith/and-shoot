@@ -1,4 +1,36 @@
 STM:
+- s01e04 STUDIO bullet recorded — sept-yard tableau, Plumm now in the yard. Plumm: arrived, horse on reins behind him, document extended and uncollected. Taylor: on the threshold-stone, between Plumm and the open sept door. Rowan: in the yard, folio under arm. Neighbor woman: inside at the altar table with Osmynd's body. Raven: unseen, confirmed absent from all visible positions. Late afternoon failing light. Next: B62 — Plumm speaks; POV is Plumm.
+
+---
+
+BULLET B62 PROMPT PLAN — s01e04 — for ser-harwick-plumm impersonator via coach:
+
+Plumm is in the sept yard. He arrived here on the settlement track from the Harrenhal road at deliberate pace. His horse is behind him, on reins. He has already extended the document. It is in his hand, uncollected. The yard has not taken it yet.
+
+What Plumm sees from his position in the yard:
+
+1. THE THRESHOLD-STONE AND THE GIRL ON IT. Taylor is standing on the threshold-stone between him and the open sept door. She is not inside and she is not in the yard — she is the door's human counterpart, standing in its gap. She is young. Whatever Plumm expected to find at the sept, she is what is in front of him. The impersonator decides what Plumm makes of her: whether she registers as a complication, a child, a placeholder, an obstacle, a curious fact. She has not moved. She is between him and the interior.
+
+2. THE OPEN DOOR AND WHAT IS THROUGH IT. The sept main door stands open. Through it: the altar table. A body laid out on it. A neighbor woman seated beside it. Candles burning. The interior is visible from where he stands and the body is the first legible fact through the open door. Osmynd. The septon whose succession is the mechanism Plumm has arrived to complete. Plumm knows this man is dead — that is why he is here. Seeing the body through the open door is confirmation, not surprise. The impersonator decides how Plumm holds this: a man who expected the death arriving at the fact of it; the note of it, or the absence of a note.
+
+3. THE DOCUMENT IN HIS EXTENDED HAND — UNCOLLECTED. The document is extended. No one has taken it. It is in his hand, in the air between him and Taylor on the threshold-stone. The impersonator decides Plumm's interior register on this: whether the uncollected document is a minor friction or a thing he clocks as meaningful; whether he is a man who reads the yard's hesitation or a man who simply holds the document out until someone takes it because that is the procedure; whether the deliberate-authority pace that brought him here is a posture he can hold while his document hangs uncollected.
+
+4. ROWAN IN THE YARD — THE FOLIO. The other man is in the yard with a folio under his arm. The impersonator decides whether Plumm has already read the folio — whether the motherhouse document and the recorder's refusal have been reported to him or whether the folio is new information in the yard. Either way: a man in a sept yard holding a folio is a fact. The impersonator decides what Plumm's eyes do with Rowan.
+
+5. THE FAILING LIGHT AND THE COLD. Late afternoon, last grey, the day nearly gone. The Riverlands winter afternoon at its close. Plumm has ridden in this light. The cold is the cold that deepens with the failing light. The yard is stone and frozen-firm ground and bare bench. The impersonator may or may not surface this — it is the ambient envelope of the scene; the light says the day is ending and business that wants daylight should conclude.
+
+6. WHAT HE SPEAKS. He is going to speak at B62. The impersonator decides what Plumm says in this yard with the document extended and the girl on the threshold-stone and the body visible through the open door. This is the authority-voice that did not need to hurry because the mechanism runs on its own momentum. He has arrived. He is not apologetic. The impersonator decides whether he addresses Taylor, Rowan, both, or the yard as a spatial unit; whether the first words are procedural or whether Plumm is the kind of man who takes in a yard before he speaks into it.
+
+VIBE INFLECTION — active vibes biasing Plumm's perceptual field:
+- the-succession-mechanism: procedure-that-runs-on-its-own-momentum, the-document-that-travels-sealed — Plumm is the mechanism's instrument; he is not the mechanism itself; the document in his extended hand is the current physical form of the mechanism; the impersonator may render whether Plumm experiences himself as a man doing a thing or as a function that happens to wear a man's face
+- the-transit-clock: days-she-already-counted, plumm-named-the-same-number — he named the number at the hall; he arrived on the number he named; the clock that has been running since before the hall transaction completed in him arriving at this yard; the impersonator decides whether Plumm is aware of having been counted, or whether he simply arrived when he said he would and this is unremarkable to him
+- osmynd-gone: protection-fully-expired, the-body-on-the-altar — he is looking at the fact of the death through the open door; the succession mechanism he carries runs precisely because this death occurred; the impersonator decides whether Plumm holds any register of the weight of what is through the door or whether the body is simply the administrative precondition confirmed
+- the-document-taken: seal-passing-from-plumms-hand, the-moment-it-cannot-roll-back-from — the document is extended but not yet taken; the-moment-it-cannot-roll-back-from has not yet arrived; the impersonator holds Plumm at the threshold of that moment; what it takes to cross it is what Plumm is about to say
+
+POV beat: Plumm is in the yard. Horse on reins behind him. Document extended, uncollected. Taylor on the threshold-stone between him and the open sept door. Rowan in the yard with the folio. The body visible through the open door in candlelight. The failing light. The cold. The document in his hand, waiting. Studio gives the sensory field. The impersonator gives what Plumm speaks into it.
+
+---
+
 - s01e04 Bullet 46 recorded. Rider now on the settlement track approaching from the Harrenhal road. Deliberate pace. Satchel at hip, sealed documents visible. Ser-harwick-plumm or his man — Plumm's arrival setup. Taylor at the sept doorway. Rowan in the yard. Taylor's passive fauna-sense radius is active; the horse's gait will register before the rider's face or satchel enters visual range. Next bullet: B46 impersonator — Taylor perceives the incoming rider via passive fauna-sense feed.
 
 ---

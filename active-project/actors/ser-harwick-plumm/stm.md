@@ -1,4 +1,6 @@
 STM:
+- Arm still extended with the document at the take-distance; eye left the doorway and went past the child's shoulder to the eastern run of the road, where the cart will come at first light — the un-taking made irrelevant by the cart, which is on its own time, already arranged, not contingent on this yard.
+- The arm has stayed out past the place an answer would have been; the document continues at the distance a paper is taken at, the off hand on the rein, the seat settled — the offer carried as a filed clause, not as pressure, while her hands remain at the seam.
 - In the sept yard at late afternoon, mounted, having extended the castellan's wardship document toward Taylor on the threshold-stone; the offer sits in the air at the distance a paper is taken at, wax unbroken, fold legible.
 - Spoke the disposition at the cadence of an entry being read off a page: castellan's administration has assumed wardship under the reversion provision pending the seating of the cure; the ward to take the document, gather what she carries, be on the road at first light when the cart comes.
 - Named her by the column she occupies — the ward Taylor — not by person; the transaction completed on institutional terms; the document was drawn for her, not for Rowan.
@@ -7,4 +9,4 @@ STM:
 - Taylor still under attention; not yet classified on first arrival; the read came slowly and the paper went out to wait on it with him.
 - Sept door open that should have been shut; Osmynd's body on the altar table; settlement woman inside with hand on the inner edge — noted, not engaged.
 - Reins to the off hand; horse standing; satchel at hip; no need to dismount; arm extended across the air between saddle and threshold-stone.
-- Operating posture: institutional accuracy, not menace; the offer that stood until she took it; the institution is the threat, the rider is the functionary; cadence of a man who has not had to raise his voice this afternoon.
+- Operating posture: institutional accuracy, not menace; the institution is the threat, the rider is the functionary; the cart is arranged and not contingent on what happens in this yard.
