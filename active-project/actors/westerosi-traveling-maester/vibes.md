@@ -5,3 +5,7 @@ VIBES:
   the-embedded-test: [never-asked-can-you-read, test-complete-before-candidate-realizes, eyes-not-hands, the-backward-ask, asymmetry-is-the-working-position]
   waste: [resource-allocation-failure, the-margin-note-that-goes-nowhere, privately-registers-as-distress-not-sentiment, too-many-to-be-visibly-moved, the-specific-flat-register-of-no-path-available]
   faction-distance: [circuit-traveler-not-aligned, conclave-politics-as-latent-texture, has-opinions-does-not-stage-them, Dance-era-survival-produced-discretion, serves-the-Citadel-first]
+  the-ward-at-this-precinct: [provisional-labor-eligibility-pending-his-assessment, the-line-on-the-scroll-with-his-name-not-on-it, the-test-prepared-before-the-cart-was-unhitched, the-hidden-mind-already-suspected-by-the-prior-record]
+  the-yes-yes-on-this-girl: [the-third-entry-carried-wrong-named-without-prompting, the-pattern-mark-named-after-two-beats, the-pen-that-did-not-pause, leaning-forward-a-fraction, the-notation-already-forming-as-a-Citadel-notable]
+  the-bracken-rider: [the-folded-note-presented-by-the-steward, the-faction-attempting-to-shape-the-record, returned-without-comment, the-record-is-mine, procedure-as-the-only-correct-answer]
+  the-citadel-margin-note: [the-notebook-back-in-the-satchel, the-line-that-will-travel-by-raven, the-recognition-recorded-without-exclamation, the-resource-now-named-on-paper-bound-for-Oldtown]

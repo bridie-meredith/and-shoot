@@ -64,3 +64,16 @@ EPISODE_4_VIBES:
   the-folio: [stolen-at-dawn, the-weapon-that-backfired, the-paper-she-put-in-rowans-hands, artifact-of-the-failed-attempt, still-under-rowans-arm-at-episode-close]
   the-transit-clock: [days-she-already-counted, deadline-she-cannot-extend, plumm-named-the-same-number, time-as-adversary-not-ally, the-window-she-could-not-hold-open]
   the-document-taken: [seal-passing-from-plumms-hand, the-thing-she-did-not-choose, involuntary-structure-enacted, the-moment-it-cannot-roll-back-from, rowan-watching-her-take-it]
+
+# Episode 5 Vibe-Cloud (s01e05 — The Notation) — delta from season
+
+EPISODE_5_VIBES:
+  the-detached-eye: [yes-yes-not-spoken-aloud, the-pen-that-does-not-pause, professional-curiosity-without-warmth, the-citadel-as-silent-recipient, recognition-as-notation-not-praise]
+  the-embedded-test: [the-question-that-is-not-the-question, the-scroll-turned-toward-her, the-pace-she-controls-and-the-pace-she-cannot, the-third-entry-carried-wrong, the-pattern-she-could-not-pretend-not-to-see]
+  three-documents-no-recall: [the-counter-claim-on-the-page, the-citadel-notation-in-the-satchel, the-celtigar-letter-on-the-table, ink-already-dried, no-rider-can-bring-them-back]
+  the-contest: [two-names-one-ledger-page, plumms-claim-no-longer-uncontested, bracken-as-administrative-fact-not-person, the-ten-day-clock, contested-as-worse-than-decided]
+  bracken-by-proxy: [the-rider-who-does-not-speak, agency-without-presence, the-seal-without-the-face, the-hand-that-files-from-elsewhere, off-stage-as-the-shape-of-the-threat]
+  the-celtigar-summons: [the-small-council-arriving-by-wax, the-letter-read-aloud-in-company, the-functionaries-who-receive-the-reading, the-ten-days, the-list-she-is-already-on]
+  the-look-behind: [raven-on-the-castle-wall, paying-the-cost-to-see, the-half-league-of-air, the-livery-on-the-gatehouse-rider, the-bird-as-her-only-camera]
+  rowan-still-here: [the-letter-to-the-motherhouse-tonight, present-but-out-of-instruments, watching-without-acting, the-ally-whose-instruments-do-not-reach-the-table, the-second-rider-seen-from-the-sill]
+  the-clock-not-the-cliff: [no-confrontation-no-arrest, the-board-worsens-by-paperwork, the-day-ends-quiet, the-yard-still-empty, the-towers-half-a-league-and-the-ledger-already-thicker]

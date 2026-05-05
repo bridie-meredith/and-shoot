@@ -11,3 +11,6 @@ VIBES:
   the-question-he-asks: [what-else-have-they-seen, the-scope-he-doesnt-know, his-theology-is-running-faster-than-the-facts, the-open-end-at-episode-close]
   the-claim-refused: [provisional-standing-as-exposure, the-motherhouse-letter-too-slow, good-faith-as-insufficient, still-holding-the-folio-at-episode-close, the-fight-continues-but-the-window-closed]
   plumm-outmaneuvers: [arrived-with-the-refusal-already-filed, named-the-transit-days-taylor-named, the-recorder-sent-to-harrenhal-before-rowan-could-respond, institutional-speed-he-cannot-match]
+  the-second-witness-to-the-cataloging: [stood-beside-her-when-the-maester-called, the-table-and-the-chair-set-across, the-yes-yes-he-also-heard, the-pattern-test-he-watched-her-take, the-scope-of-his-question-now-includes-a-Citadel-channel]
+  the-letter-tonight: [the-only-instrument-still-his, slower-than-the-events-by-design, written-anyway-because-the-record-must-exist, the-motherhouse-as-a-distant-shelf-not-a-rescue]
+  the-second-rider-from-the-sill: [watched-the-board-worsen-from-a-window, the-livery-not-plumms, his-only-vantage-is-the-sill, asking-her-because-she-will-have-tracked-it-by-other-means]

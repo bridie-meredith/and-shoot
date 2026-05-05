@@ -6,3 +6,6 @@ VIBES:
   reliability: [his-primary-asset, given-it-twice-kept-it-both-times, one-of-those-people-is-dead, not-sentiment-brand-management, will-not-betray-explicit-commitments]
   the-garrison: [eight-men-not-expendable, knows-which-two-he-would-stand-next-to, four-lost-is-a-crisis, selected-over-time, assets-not-tools]
   the-cold-correction: [corrects-once-flatly, notes-the-error-for-reference, does-not-argue, adjusts-the-model, anger-runs-cold-not-hot]
+  acting-by-proxy: [the-rider-who-does-not-speak, the-folded-note-as-instrument, the-seal-doing-the-work, presence-not-required-for-the-move, the-administrative-strike-launched-from-the-keep]
+  the-counter-claim-filed: [eight-years-of-leverage-becoming-a-document, public-and-recorded-not-quiet, plumms-page-now-his-page-too, the-position-staked-in-ink, the-window-narrowing-on-the-other-claimants]
+  the-suppression-attempt: [the-maester-as-the-record-he-must-shape, the-folded-note-that-said-something-procedurally-acceptable, refused-without-argument, the-citadel-channel-still-open-against-him]

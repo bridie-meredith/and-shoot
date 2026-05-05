@@ -28,3 +28,8 @@ VIBES:
   osmynd-gone: [pulse-check-came-back-empty, she-did-not-call-out, protection-fully-expired-not-expiring, the-body-on-the-altar-she-did-not-go-in-to-see, what-ran-out-finally-ran-out]
   the-active-attempt: [moved-before-dawn-and-lost, stole-the-folio-and-it-helped-nothing, stepped-past-rowans-shoulder-and-was-refused-on-different-grounds, fighting-the-ledger-with-the-ledger, every-move-absorbed]
   the-document-taken: [seal-in-her-hand-at-episode-close, the-thing-plumm-offered-she-did-not-reach-for-until-she-did, involuntary-structure-with-her-handprint-on-it, rowan-watched-her-take-it, the-moment-the-board-cannot-reset]
+  the-maester-arrives: [the-timer-from-s01e01-consummated, the-chain-out-of-the-cloak, the-chair-set-across-from-his, the-test-she-knew-was-a-test, cannot-fail-cannot-perform-too-well, the-pace-she-controls-and-the-third-entry-she-could-not-pretend-not-to-see]
+  taylor-as-citadel-notation: [the-pen-that-did-not-pause, the-yes-yes-not-spoken-aloud, written-into-a-record-bound-for-the-citadel, recognition-as-margin-note-not-praise, exposure-on-a-different-channel-than-plumms]
+  the-second-rider-east: [tracked-by-passive-feed-from-the-yard, knew-it-was-bracken-without-the-livery, the-counter-claim-traveling-while-she-set-the-document-down, the-board-changing-without-her-presence]
+  the-look-behind-with-a-bird: [the-half-league-of-air, paying-the-fauna-cost-to-see-the-castle-wall, the-celtigar-livery-confirmed-from-above, the-bird-as-her-only-camera, returning-the-bird-to-the-tower-and-the-cost-to-her-body]
+  the-clock-not-the-cliff: [no-confrontation-no-arrest, the-day-ends-quiet, the-paperwork-thickens-while-the-yard-stays-empty, the-ten-day-window-is-someone-elses-clock-now-too]
