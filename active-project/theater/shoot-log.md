@@ -102,3 +102,13 @@ attempts: 2 | outcome: retried
 - attempt 1: pulp-enthusiast rejected — pivot abandoned the OSMYND beat without payoff
 - attempt 2: pen pauses mid-stroke, marginal subscript records "non-verbal / respondent silent at name" as ink (the freeze becomes record), then "Mm.", scroll closes, pivots to "The sept's register — the septon taught you to read from it?"; accepted
 
+## Bullet 23 — taylor-hebert-westeros — "Yes, ser." + answer becomes ink
+attempts: 3 | outcome: retried
+- attempt 1: pulp-enthusiast rejected — board doesn't move, doesn't touch OSMYND
+- attempt 2: physical threading (finger from closed scroll to wax in lap, doubled name); rejected — still held breath, no board change
+- attempt 3: ends on maester's nib catching parchment / wet-rise of ink — verbal compliance becomes recorded fact in the Citadel-bound notebook in same beat; accepted
+
+## Bullet 24 — westerosi-traveling-maester — pivots to numeracy provenance
+attempts: 1 | outcome: clean
+- "And numbers — accounts, tallies." — list-item cadence; the assessment continues into the next column
+
