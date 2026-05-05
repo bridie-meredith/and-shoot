@@ -28,3 +28,16 @@ attempts: 2 | outcome: retried
 - attempt 2: compressed to 3 sentences (signature via passive feed, months-running timer chimes and stops, cart passes the gate without slowing for the common); all three accepted
 - audience aggregation note: attempt 1 audience reported VERDICT: accept despite pulp-enthusiast reject — protocol violation by the audience agent's aggregator; orchestrator applied the spec's "any reject = reject" rule and triggered the retry
 
+## Bullet 7 — STUDIO common (Taylor POV) — both-instruments-same-proceeding
+attempts: 1 | outcome: clean
+- sublocation: Taylor moved from sept yard to settlement common (smallfolk margin)
+
+## Bullet 8 — westerosi-traveling-maester — closed-satchel-staging
+attempts: 1 | outcome: clean
+- POV switch: Taylor → maester (multi-POV episode; editor will normalize register at wrap)
+
+## Bullet 9 — westerosi-traveling-maester — sweep-closes
+attempts: 2 | outcome: retried
+- attempt 1: pulp-enthusiast rejected — paragraph re-walked B8's smallfolk margin (B8 had already noticed Taylor)
+- attempt 2: compressed to ONE sentence (eye returns to trestle, weight tips forward, cloak parts, chain enters proceeding's light, returned look gives the headman his cue); accepted
+
