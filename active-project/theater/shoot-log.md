@@ -87,6 +87,17 @@ attempts: 3 | outcome: NEEDS_EDIT
   attempt 2: pulp rejected — short ask still reads as toll beat with no payoff
   attempt 3: dark-fantasy-reader accepted; pulp + worm rejected — full explanation while writing is still "narrating the stop"; worm-pedant rejecting non-Taylor lines for absence of Taylor voice (persona criteria mismatch)
 
+## Bullet 57 — ser-harwick-plumm — answers
+attempts: 2 | outcome: retried
+  attempt 1: dark-fantasy + pulp rejected — procedural correction only; clarifies but board does not worsen; "closes the maneuver rather than opening a worse door"
+  attempt 2: accepted 3/3 — jurisdiction conceded; reveals letter + seating are sequential steps, clock runs on both from this morning's filing; "the trap just got smaller"
+
+## Bullet 56 — septon-rowan — states
+attempts: 3 | outcome: retried
+  attempt 1: pulp-enthusiast rejected — procedural doctrine at full length; board does not change
+  attempt 2: pulp-enthusiast rejected — position-vs-position stalemate; complication stalling not deepening
+  attempt 3: accepted 3/3 — folio forward, jurisdictional claim stated at lectern cadence; closes on Plumm's rein-hand closing and opening "the way a hand closes on a thing it has just been told it does not own"
+
 ## Bullet 55 — ser-harwick-plumm — speaks
 attempts: 1 | outcome: clean
 
