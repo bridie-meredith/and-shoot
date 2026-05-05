@@ -217,3 +217,14 @@ attempts: 1 | outcome: clean
 - ten-day clock starts; the maester's "unusual capability notations" subscript will be exactly what Celtigar wants
 - 3/3 accept
 
+## Bullet 56-B59 (merged) — oc-castellan-harrenhal — sept-precinct entries on table; convergence tableau
+attempts: 1 | outcome: clean
+- spoken line exact: "Bring me the sept-precinct entries. Both of them."
+- functionary fetches ledger; castellan reads sept-precinct page (Plumm above, Bracken below, Taylor named on both); sets beside Celtigar letter
+- final tableau: 3 people, 2 documents, 1 writing case, 10-day clock running — none can be un-received
+- 3/3 accept
+
+## Bullet 60 — STUDIO Harrenhal exterior tableau — SKIPPED (covered by B59 closing tableau)
+- atmospheric-only; redundant after B59 board-state lock; would risk pulp-enthusiast filler-flag
+- spatial info (Celtigar rider in gatehouse, Bracken rider departed west, eastern track empty) carried by studio state and prior castellan paragraph closing
+
