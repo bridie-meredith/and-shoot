@@ -228,3 +228,9 @@ attempts: 1 | outcome: clean
 - atmospheric-only; redundant after B59 board-state lock; would risk pulp-enthusiast filler-flag
 - spatial info (Celtigar rider in gatehouse, Bracken rider departed west, eastern track empty) carried by studio state and prior castellan paragraph closing
 
+## Bullet 61-B62 (merged) — taylor-hebert-westeros — Scene E open; passive sense locates bell tower ravens at edge of radius
+attempts: 1 | outcome: clean
+- POV switch back to Taylor; sept yard late afternoon; Rowan inside; document on chancel shelf
+- passive only (no cost spend); ravens located at half-league north, edge of passive radius — instrument identified, not yet reached for
+- 3/3 accept; pulp-enthusiast accepts as "instrument located one beat before B63 reaches for it"
+
