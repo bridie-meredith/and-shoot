@@ -1,5 +1,36 @@
 STM:
-- s01e04 STUDIO bullet recorded — sept-yard tableau, Plumm now in the yard. Plumm: arrived, horse on reins behind him, document extended and uncollected. Taylor: on the threshold-stone, between Plumm and the open sept door. Rowan: in the yard, folio under arm. Neighbor woman: inside at the altar table with Osmynd's body. Raven: unseen, confirmed absent from all visible positions. Late afternoon failing light. Next: B62 — Plumm speaks; POV is Plumm.
+- s01e04 B71 TERMINAL STUDIO BEAT — EPISODE CLOSED. Closing tableau recorded. Plumm has departed the sept yard; horse gone, rider gone, track empty and quiet in the failing afternoon light. Taylor stands in the yard with the wardship instrument (sealed castellan document) in hand. Rowan stands in the yard with the motherhouse succession folio under his arm — the instrument of the failed claim. Osmynd's body remains on the altar table inside the sept nave; the sept main door is still open; the neighbor woman remains at the altar table. The track is empty in both directions. The two documents are the material record of the day's events: the wardship instrument (Taylor's hand) and the succession folio (Rowan's arm). Raven position remains unrecorded. All 71 bullets shot. s01e04 complete.
+
+---
+
+- s01e04 B68 STUDIO bullet recorded — TRANSFER COMPLETE. The seal has passed from Plumm's hand to Taylor's. Taylor: threshold-stone, document in hand (wardship instrument). Plumm: yard, hand empty, posture unchanged, preparing to step back. Rowan: yard, folio under arm, hand tightened on it. Two documents in the yard simultaneously: the completed wardship instrument in Taylor's hand; the failed claim instrument under Rowan's arm. The-moment-it-cannot-roll-back-from has passed. Next POV: ser-harwick-plumm — B69.
+
+---
+
+BULLET B69 PROMPT PLAN — s01e04 — for ser-harwick-plumm impersonator via coach:
+
+Plumm is in the sept yard. The document has left his hand. It is in Taylor's hand now — the girl on the threshold-stone. His hand is empty. His posture has not changed. He has not stepped back yet, but he is about to.
+
+What Plumm sees from his position in the yard at the moment after the transfer:
+
+1. TAYLOR WITH THE DOCUMENT. She is on the threshold-stone where she was. The document is in her hand. She has not moved from the threshold-stone to receive it — she received it from where she was standing. The seal is visible. The wax is district wax from Harrenhal. The instrument is now in her possession and the transaction in its physical form is complete. The impersonator decides what Plumm's eyes do with this: whether he watches the document travel or watches the girl who holds it; whether the fact of the document in her hand is notable to him or whether the transfer is simply the expected conclusion of the extended-hand-and-uncollected beat; whether he reads her grip on it.
+
+2. ROWAN'S HAND ON THE FOLIO. The other man in the yard. His hand has tightened on the folio under his arm. Plumm can see this or Plumm can not see this — the impersonator decides how aware Plumm is of Rowan's body in this moment. What Plumm may or may not know: the folio is the motherhouse claim that preceded the wardship instrument; it is the instrument of the failed attempt to hold the window open; Rowan's tightening hand is the involuntary registration of the moment passing. The two documents are present in the yard simultaneously. The impersonator decides whether Plumm registers the folio and Rowan's grip on it as a legible thing — a man clocking what a failed attempt looks like when the successful one leaves the executor's hand — or whether the folio is simply a document under another man's arm, noted and filed.
+
+3. THE YARD AFTER THE TRANSFER. The yard is the same yard it was. The sept main door is open. The body is on the altar table inside, visible through the door. The neighbor woman is seated inside. The bench is bare stone, empty. The cold is deepening toward evening. The failing light is still the failing light. None of this has changed. What has changed is the document's location. Plumm is in a yard where his business is complete in its physical transaction and the evidence of that completion is in the girl's hand and the open door is behind her and the body of the man whose death set this mechanism running is visible through it. The impersonator decides whether Plumm holds any of this spatial convergence consciously, or whether he is simply a man whose business is done and the yard is the yard.
+
+4. PREPARING TO STEP BACK. He has not stepped back yet. The prompt is the beat between the transfer and the withdrawal. He is at the yard-facing end of the approach, horse on reins behind him. The step back is coming. The impersonator decides what Plumm does or says in this interval — whether he speaks before he withdraws, whether he looks once more at the document in her hand or at the body through the door, whether there is anything in the yard that gives him pause before procedure completes and he turns.
+
+5. HIS EMPTY HAND. The hand that held the document is at his side. The impersonator may surface this or may not — it is a body-fact available to Plumm's interior if the impersonator wants it; the hand that carried the sealed instrument from Harrenhal is now empty; the mechanism has delivered; the executor has executed.
+
+VIBE INFLECTION — active vibes biasing Plumm's perceptual field at B69:
+
+- the-document-taken: seal-passing-from-plumms-hand, the-moment-it-cannot-roll-back-from, rowan-watching-her-take-it — the moment has passed; the seal has passed; the thing that cannot roll back is behind them now; Plumm is on the other side of it; the impersonator decides whether a man in Plumm's function registers the passage of such moments or whether they are simply procedure completing
+- the-succession-mechanism: procedure-that-runs-on-its-own-momentum, the-document-that-travels-sealed — the document has traveled; it has arrived; it has transferred; Plumm is the mechanism's instrument and the mechanism has discharged its current form into Taylor's hand; the impersonator decides whether Plumm experiences the completion of a mechanism or the completion of a task
+- the-active-attempt: the-folio-that-did-not-hold, correct-and-still-losing — Rowan and the folio are in the yard; the attempt is visible in the man whose hand has tightened on the document that did not hold; Plumm may or may not have known there was an attempt; he may or may not read Rowan's posture as the posture of a failed countermove; the impersonator holds this as available information about what Plumm's eyes can find in the yard if they look at Rowan
+- osmynd-gone: protection-fully-expired, the-body-on-the-altar — the open door; the body visible; the neighbor woman inside; the sept that Osmynd's death opened this mechanism into is right in front of Plumm and he is about to step away from it; the impersonator decides whether Plumm looks through the door again before he withdraws
+
+POV beat: The yard after the transfer. Document in Taylor's hand. Rowan's grip tightened on the folio. Plumm's hand empty. The open door and the body behind her. The failing light. The horse on the reins behind him. He is about to step back. Studio gives the sensory field. The impersonator gives what Plumm carries out of the yard.
 
 ---
 

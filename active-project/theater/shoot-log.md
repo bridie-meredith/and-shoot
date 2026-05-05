@@ -293,3 +293,29 @@ attempts: 3 | outcome: NEEDS_EDIT
   attempt 1: all 3 rejected — pure atmosphere; world doesn't bite (dark-fantasy-reader); no board change (pulp-enthusiast); "no warm shape" = thermal in passive fauna channel (worm-canon-pedant)
   attempt 2: 2/3 rejected — board change present (Rowan already watching) but bench passage too long and consequence announced not cashed (dark-fantasy-reader); board change buried in micro-movement (pulp-enthusiast); worm-canon-pedant accepted
   attempt 3: 2/3 rejected — dark-fantasy-reader accepted; worm-canon-pedant accepted; pulp-enthusiast: board changes present but still buried in surveillance-feed phenomenology, folio-to-Rowan move needs 2 beats not a full paragraph
+
+## Bullet 67 — taylor-hebert-westeros — takes
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: pulp rejected — "no new complication, no board change, no clock — pure toll with zero payoff"; five sentences of physical mechanics on the transfer
+  attempt 2: pulp rejected — "agonized-decision-making padding while the cart clock is already running"; interior phenomenology (seal sensation + dawn observations)
+  attempt 3: pulp rejected — "prior two lines NEEDS_EDIT dead weight; another beat on how paper-transfer felt; board has not moved"; dark-fantasy + worm accepted; NOTE: B65+B66+B67 are consecutive NEEDS_EDIT; editor must rebuild this sequence as compressed action delivering the take with board change
+
+## Bullet 68 — STUDIO — yard
+attempts: 0 | outcome: studio-update
+  seal passes from Plumm to Taylor; Rowan's hand tightens on folio; Plumm's posture unchanged; transfer complete; plumm-document now in Taylor's inventory; next POV: Plumm B69
+
+## Bullet 69 — ser-harwick-plumm — steps-back
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: pulp rejected — "pure transit prose with zero board change"
+  attempt 2: pulp rejected — "scene-exit logistics with zero escalation"; worm-pedant flagged unmarked POV shift (note: likely erroneous — Plumm had POV in B57/B58)
+  attempt 3: pulp rejected — "procedural beat dressed in overcomplicated syntax; no new threat or complication"; dark-fantasy + worm accepted; NOTE: structural beat; editor: collapse B69 into B70
+
+## Bullet 70 — ser-harwick-plumm — departs
+attempts: 3 | outcome: NEEDS_EDIT
+  attempt 1: pulp rejected — "pure transit prose; nothing worsens, nothing starts a clock"; dark-fantasy + worm accepted
+  attempt 2: dark-fantasy + pulp rejected — impersonator delivered dialogue instead of departure action; mismatch with bullet
+  attempt 3: all 3 rejected — dark-fantasy: "all mechanism, no weight; maintenance log"; pulp: "dead board, pure exit, zero complication"; worm: "inert marking-time prose"; NOTE: B69+B70 are consecutive structural departure beats; editor: collapse into single departure beat with visible consequence
+
+## Bullet 71 — STUDIO — sept-yard (closing tableau)
+attempts: 0 | outcome: studio-update
+  yard after Plumm's departure; Rowan with folio, Taylor with wardship document; Osmynd's door open, neighbor inside; track empty; episode_state: CLOSED
