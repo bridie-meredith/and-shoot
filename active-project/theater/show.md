@@ -81,3 +81,6 @@ The dust took the next print and the one after it before he answered, eyes ahead
 
 My foot came down and the next foot came down and the answer went out level with them, eyes on the track. "The river road west off the Kingsroad — the cut past Harroway, the fords at Stone Hedge and at the Mander branch, and the climb up out of the Blackwater valley before the inn at Cox's Ford — the fords are still running high off the spring melt and the cut past Harroway has not been graded since the autumn rains took the verge out, so a rider does not make the road's dry-month pace; he loses a day at each ford waiting on the water and a day on the cut and a day on the climb above the inn, and the count comes to twelve."
 
+-- scene: sept-exterior, late afternoon --
+
+The sept door stood half-open against the jamb where I had left it shut, and through the gap the altar table carried Osmynd's body laid the long way across it with the register turned face-up at his hip in the candle's last reach, and a woman from the settlement stood inside the nave with her hand still on the door's inner edge — and my feet went out from under the next stride and stopped on the path with the weight unfinished between them, the breath I had drawn for the step held without a place to spend it.

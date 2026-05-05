@@ -87,6 +87,15 @@ attempts: 3 | outcome: NEEDS_EDIT
   attempt 2: pulp rejected — short ask still reads as toll beat with no payoff
   attempt 3: dark-fantasy-reader accepted; pulp + worm rejected — full explanation while writing is still "narrating the stop"; worm-pedant rejecting non-Taylor lines for absence of Taylor voice (persona criteria mismatch)
 
+## Bullet 45 — taylor-hebert-westeros — stands
+attempts: 2 | outcome: retried
+  attempt 1: pulp rejected — pause beat with no board change; feet stop, nothing worsens
+  attempt 2: accepted 3/3 — two losses land: altar table taken (register displaced), settlement knows (news loose); feet stop mid-stride with held breath
+
+## Bullet 44 — STUDIO — sept-exterior
+attempts: 0 | outcome: studio-update
+  late afternoon; sept door open; Osmynd laid out on altar table; neighbor woman seated inside; Taylor and Rowan returned to yard
+
 ## Bullet 43 — taylor-hebert-westeros — answers
 attempts: 1 | outcome: clean
 
