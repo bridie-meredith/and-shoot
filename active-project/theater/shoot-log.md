@@ -87,6 +87,12 @@ attempts: 3 | outcome: NEEDS_EDIT
   attempt 2: pulp rejected — short ask still reads as toll beat with no payoff
   attempt 3: dark-fantasy-reader accepted; pulp + worm rejected — full explanation while writing is still "narrating the stop"; worm-pedant rejecting non-Taylor lines for absence of Taylor voice (persona criteria mismatch)
 
+## Bullet 63 — taylor-hebert-westeros — does-not-answer
+attempts: 1 | outcome: clean
+
+## Bullet 62 — ser-harwick-plumm — names
+attempts: 1 | outcome: clean
+
 ## Bullet 61 — STUDIO — sept-yard
 attempts: 0 | outcome: studio-update
   late light; sept door open; neighbor inside; Osmynd on altar table; raven unseen; Plumm's horse behind him; Rowan with folio; Taylor on threshold between Plumm and sept door; document still extended uncollected
