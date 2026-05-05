@@ -242,3 +242,30 @@ attempts: 1 | outcome: clean
 - recon yields: courier still inside Harrenhal; passage geometry (two gates in series); board worsens in three directions at once
 - 3/3 accept
 
+## Bullet 67 — septon-rowan — emerges from sept, gives information before reach
+attempts: 1 | outcome: clean
+- POV switch to Rowan; reads Taylor's paid-pale state (cold-pale vs something-paid-pale, wet line at lip, weight held)
+- spoken line exact: "There was a second rider. I saw him from the sill."
+- folio still under arm; gives information before asking how she knows what she knows
+- 3/3 accept
+
+## Bullet 68 — taylor-hebert-westeros — "The Celtigar livery. He is still inside."
+attempts: 1 | outcome: clean
+- POV back to Taylor; spoken line exact (two short flat sentences in column-cadence)
+- gives Rowan the third House identification + the operational fact (courier hasn't left)
+- recon cost still in body; does not move toward Rowan
+- 3/3 accept
+
+## Bullet 69-B71 (merged) — taylor-hebert-westeros — EPISODE FINAL TABLEAU
+attempts: 1 | outcome: clean
+- Rowan's silence registered (B69 — does not speak); Taylor crosses back inside (yard → nave) at B70; lifts wardship document from chancel shelf, sets down again (right arm empty third time); B71 final tableau LOCKED
+- closing image holds without resolution: documents in final positions (wardship on chancel shelf, both claims in castellan's ledger, Celtigar letter on castellan's table); ten-day clock running; recon's bill still in body
+- "Three Houses on three pages on one ward in one afternoon" — episode close on board-state lock, not catharsis
+- 3/3 accept
+
+## Scene E complete (B61-B71) — sept yard, raven recon, dialogue, final tableau
+
+# EPISODE COMPLETE — s01e05 The Notation
+# 71 bullets shot; B60 skipped (covered by B59 closing tableau); 65 distinct paragraphs in show.md (post-merge compression)
+
+
