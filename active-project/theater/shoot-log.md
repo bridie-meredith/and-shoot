@@ -63,3 +63,9 @@ attempts: 1 | outcome: clean
 - prop: small chair pulled out, set at working-distance across from maester's own
 - impersonator returned without appending on first dispatch; re-dispatched with explicit append instruction
 
+## Bullet 15 — taylor-hebert-westeros — sits, seal-up in lap (Plumm's claim into the proceeding)
+attempts: 2 | outcome: retried
+- attempt 1: pulp-enthusiast rejected — three sentences of a child sitting down, no board change
+- attempt 2: compressed to 2 sentences ending on the wardship document seal-up in Taylor's lap and now in the maester's sightline (Plumm's claim unannounced-but-present in a cognitive-assessment proceeding); first audience pass misread as a re-park; on re-dispatch with explicit anti-hallucination framing of which line is the retry, all three accepted
+- inventory: castellan-wardship-document moved from Taylor's right hand to lap (still in scene)
+
