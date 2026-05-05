@@ -16,3 +16,9 @@ attempts: 1 | outcome: clean
 attempts: 1 | outcome: clean
 - inventory: castellan-wardship-document moved from Taylor's hand to threshold-stone (Scene A)
 
+## Bullet 5 — STUDIO time-jump (Taylor POV) — morning-hinge
+attempts: 2 | outcome: retried
+- attempt 1: dark-fantasy-reader and pulp-enthusiast rejected — inventory dwell on a held morning
+- attempt 2: revised to a 3-sentence hinge (document picked up cold, road empty before it stops being empty, sun clears the treeline); first audience pass misread the bullet text as the line; on re-dispatch with explicit framing of which prose line was the B5 output, all three accepted
+- inventory: castellan-wardship-document back in Taylor's hand at first light (offscreen retrieval rendered as morning pickup)
+
