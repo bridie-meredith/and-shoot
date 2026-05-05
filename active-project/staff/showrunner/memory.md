@@ -83,7 +83,7 @@ seasons:
 
 active:
   season: s01
-  episode: s01e04
+  episode: s01e05
 
 # session-log: 2026-05-03
 # Partial shoot of s01e01 run, halted after 3 bullets for diagnostic review.
