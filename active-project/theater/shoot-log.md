@@ -124,3 +124,19 @@ attempts: 1 | outcome: clean
 attempts: 1 | outcome: clean
 - Taylor identifies "the third entry is carried wrong" — the deliberate-error trap closes; maester's micro-response (warmth/weight redistribution) confirms the test resolved against the embedded hypothesis
 
+## Bullet 28 — westerosi-traveling-maester — leans forward, internal yes-yes, writes
+attempts: 1 | outcome: clean
+- the involuntary yes-yes is suppressed (kept internal), recorded in subscript on the notebook page
+
+## Bullet 29 — westerosi-traveling-maester — pattern-recognition sheet deployed
+attempts: 1 | outcome: clean
+- third test instrument: abstract marks in rows with sequence gaps; "Which mark follows this one."
+
+## Bullet 30 — taylor-hebert-westeros — names cross-bar, maester's weight tips forward
+attempts: 2 | outcome: retried
+- attempt 1: worm-canon-pedant rejected — abstract pattern completion as unestablished cognitive register for Taylor
+- attempt 2: reframed through canon Worm cognition — "adult cognition the body did not get to put down at the locker", Skitter/Weaver two-layer output (hold the answer / perform the working); canon-precise sourcing accepted by all three
+- continuity fix: bullets B28-B30 prose initially appeared in the file in wrong sequence (B30 → B28 → B29 contents); manually reordered to B28 → B29 → B30 before the retry was rendered
+
+## Scene B complete (B7–B30) — the assessment
+
