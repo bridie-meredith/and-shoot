@@ -140,3 +140,9 @@ attempts: 2 | outcome: retried
 
 ## Scene B complete (B7–B30) — the assessment
 
+## Bullet 31 — taylor-hebert-westeros (POV on STUDIO rider arrival) — western-vector
+attempts: 1 | outcome: clean
+- studio state pre-updated for B31 (recorded in earlier commit); POV perception line rendered after resume
+- new vector enters from the west (every prior arrival from east); passive feed reads warmth/horse before eye reads livery; involuntary finger-tighten on knees as map updates
+- continuity: wardship document still seal-up in lap; Taylor in chair; assessment concluded
+
