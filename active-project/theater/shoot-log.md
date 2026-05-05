@@ -92,3 +92,13 @@ attempts: 2 | outcome: retried
 - attempt 1: pulp-enthusiast rejected — third beat of column-questioning, no new complication
 - attempt 2: notation extended to a Citadel-notable subscript classification (not just a tick), maester's eye flicks briefly to the wardship document seal-up in Taylor's lap and consciously does not address it, then issues the next question; two board changes inside the line; accepted
 
+## Bullet 21 — taylor-hebert-westeros — Osmynd at foot of column
+attempts: 2 | outcome: retried
+- attempt 1: pulp-enthusiast rejected — silent reading without consequence
+- attempt 2: foot-of-column name rendered as OSMYND (the dead man still active in the unupdated census record); Taylor reads silently, the wax in her lap and the ink on the page now name the same dead protector; the steward handed her information he doesn't know she holds; accepted
+
+## Bullet 22 — westerosi-traveling-maester — pen registers freeze, "Mm.", pivots
+attempts: 2 | outcome: retried
+- attempt 1: pulp-enthusiast rejected — pivot abandoned the OSMYND beat without payoff
+- attempt 2: pen pauses mid-stroke, marginal subscript records "non-verbal / respondent silent at name" as ink (the freeze becomes record), then "Mm.", scroll closes, pivots to "The sept's register — the septon taught you to read from it?"; accepted
+
