@@ -1,17 +1,18 @@
 STATE:
-  location: westerosi-smallfolk-village-common (seated at the headman's table, leaned forward over the working surface)
+  location: westerosi-smallfolk-village-common (off the headman's trestle, at the cart-track, body turned east, satchel at the hip)
   condition: []
   inventory:
-    - traveling cloak (worn; fallen off the collar with the lean; chain no longer covered)
-    - maester's chain (worn; fully out of cloak, in working light — silver, copper, black iron, pale grey links visible to the room)
-    - satchel (open on the headman's table, latch off)
-    - auxiliary extract (out of satchel; open on the table, face-up, set alongside the steward's scroll for parallel column-reading)
-    - small notebook (out of satchel; open flat on the table beside the extract, working page up; carry-error identified unprompted noted in subscript on the working line)
-    - pen (back in the satchel's side pocket after laying in the carry-error notation)
-    - pattern sheet (out of satchel; opened in two folds; on the trestle in front of the candidate, oriented to her eye-line; index finger on the gap in the third row)
+    - traveling cloak (worn; chain still showing at the throat where the cloak parted at the lean — not yet drawn closed for the road)
+    - maester's chain (worn; in the proceeding's light through close — silver, copper, black iron, pale grey; weight at the sternum)
+    - satchel (closed, latch worked, lifted off the table; strap on the right shoulder, weight settled against the hip at the working ride)
+    - auxiliary extract (back in the satchel, returned to its travelling form under the same hand that opened it)
+    - small notebook (back in the satchel; working page folded against the prior entries; Citadel-notable laid in across the working line)
+    - pen (back in the satchel's side pocket where the hand finds it without looking)
+    - pattern sheet (back in the satchel, folded along its original folds)
   notes:
-    - first hypothesis on a candidate forming before formal opening: girl at kiln-wall margin tracking the scroll
-    - working surface assembled: extract + scroll + notebook + pattern sheet in parallel; chain shown as credential to the room
-    - opening is his; the proceeding's instruments are now all on the table
-    - numeracy assessment cleared on first pass: carry-error in third entry named without prompting
-    - pattern-recognition test now on the trestle; question delivered to the sheet, finger at the absent shape in row three
+    - proceeding closed under the steward's hand on the same motion the steward used to open it: scroll up off the table, column retracted into travelling form
+    - the rider departure was a passive subtraction at the western margin — handled without the eye lifting; warmth-mass past the bend, western quadrant flat again
+    - body off the trestle and turned east; eye on the cart and the open road behind it; not-looking-back is the closing posture, one beat
+    - the record is now in transit: notebook in the satchel, satchel at the hip, the line that will travel by raven now physically moving toward the next posting and Oldtown
+    - the western track (common, chair that held the wardship document, kiln-wall margin, smallfolk) was not given an eye on departure — what is not in the satchel is not the chain's to carry
+    - migraine-glow behind the left orbit holding at the quarter-degree it took on at the rider's note; cost-curve filed

@@ -171,3 +171,16 @@ attempts: 1 | outcome: clean
 - second cost filed (migraine quarter-degree); "yes, yes" again held inside teeth, not for nib
 - prop_position: folded-note now in rider's hand, leaving westward; steward's palm empty
 
+## Bullet 36-B37 (merged) — westerosi-traveling-maester — rider departs west; proceeding closes; satchel east
+attempts: 2 | outcome: retried
+- attempt 1: pulp-enthusiast rejected — exit phenomenology after the rider was already gone is filler when the plot is live; B36 alone failed to move board
+- attempt 2: merged with B37; rider exit compressed to one clause; board moves through scroll-rolled, satchel-latched, body-east — proceeding OPEN→CLOSED, record TRESTLE→SATCHEL, maester COMMON→ROAD EAST; 3/3 accept
+- prop_positions updated: census-scroll re-curled and on table, maester-extract repacked into satchel, small-notebook in satchel, satchel on maester's hip, cart facing east
+
+## Bullet 38-B39 (merged) — taylor-hebert-westeros — sept-yard return; two vectors (assessment east, second rider west)
+attempts: 1 | outcome: clean
+- POV switch maester → Taylor; walk back from common implicit (one clause)
+- two-vector board change: cart receding east at threshold (assessment record traveling with it) + new western arrival (different rider, sealed document NOT Plumm's device)
+- passive feed reads negative — absence of Plumm's specific weight-press in the wax = different hand; not a positive device-read at distance (canon-honest mechanic)
+- 3/3 accept
+
