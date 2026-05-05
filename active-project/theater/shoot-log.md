@@ -69,3 +69,7 @@ attempts: 2 | outcome: retried
 - attempt 2: compressed to 2 sentences ending on the wardship document seal-up in Taylor's lap and now in the maester's sightline (Plumm's claim unannounced-but-present in a cognitive-assessment proceeding); first audience pass misread as a re-park; on re-dispatch with explicit anti-hallucination framing of which line is the retry, all three accepted
 - inventory: castellan-wardship-document moved from Taylor's right hand to lap (still in scene)
 
+## Bullet 16 — westerosi-traveling-maester — turns scroll, embedded ask
+attempts: 1 | outcome: clean
+- the embedded test opens — finger as reference not pointer, never asks "can you read?"
+
