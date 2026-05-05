@@ -87,6 +87,15 @@ attempts: 3 | outcome: NEEDS_EDIT
   attempt 2: pulp rejected — short ask still reads as toll beat with no payoff
   attempt 3: dark-fantasy-reader accepted; pulp + worm rejected — full explanation while writing is still "narrating the stop"; worm-pedant rejecting non-Taylor lines for absence of Taylor voice (persona criteria mismatch)
 
+## Bullet 55 — ser-harwick-plumm — speaks
+attempts: 1 | outcome: clean
+
+## Bullet 54 — ser-harwick-plumm — marks
+attempts: 1 | outcome: clean
+
+## Bullet 53 — septon-rowan — emerges
+attempts: 1 | outcome: clean
+
 ## Bullet 52 — ser-harwick-plumm — states
 attempts: 2 | outcome: retried
   attempt 1: dark-fantasy + worm rejected — bureaucratic flat tone, no hostile weight; worm criteria mismatch (Plumm line)
