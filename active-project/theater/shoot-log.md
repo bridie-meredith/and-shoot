@@ -87,6 +87,32 @@ attempts: 3 | outcome: NEEDS_EDIT
   attempt 2: pulp rejected — short ask still reads as toll beat with no payoff
   attempt 3: dark-fantasy-reader accepted; pulp + worm rejected — full explanation while writing is still "narrating the stop"; worm-pedant rejecting non-Taylor lines for absence of Taylor voice (persona criteria mismatch)
 
+## Bullet 52 — ser-harwick-plumm — states
+attempts: 2 | outcome: retried
+  attempt 1: dark-fantasy + worm rejected — bureaucratic flat tone, no hostile weight; worm criteria mismatch (Plumm line)
+  attempt 2: accepted 3/3 — fait accompli register; notice already filed this morning; collection order at first light added by impersonator (not in bullet plan — editor note: reconcile with B58-B67 negotiation; order may be addressed to Rowan, creating the conflict that B53+ addresses)
+
+## Bullet 51 — ser-harwick-plumm — produces
+attempts: 1 | outcome: clean
+
+## Bullet 50 — taylor-hebert-westeros — faces
+attempts: 2 | outcome: retried
+  attempt 1: pulp rejected — body-inventory across six sub-clauses; board already moved, needed compression not phenomenology
+  attempt 2: accepted 3/3 — horse shift + man unmoving (one passive-feed beat), turn executed, feet held, folio gone an hour east; facing him
+
+## Bullet 49 — ser-harwick-plumm — addresses
+attempts: 1 | outcome: clean
+
+## Bullet 48 — ser-harwick-plumm — dismounts
+attempts: 1 | outcome: clean
+
+## Bullet 47 — ser-harwick-plumm — arrives
+attempts: 1 | outcome: clean
+
+## Bullet 46 — STUDIO — track
+attempts: 0 | outcome: studio-update
+  rider on settlement track approaching from Harrenhal road; deliberate pace; satchel, sealed documents; horse gait in passive radius before visual
+
 ## Bullet 45 — taylor-hebert-westeros — stands
 attempts: 2 | outcome: retried
   attempt 1: pulp rejected — pause beat with no board change; feet stop, nothing worsens
