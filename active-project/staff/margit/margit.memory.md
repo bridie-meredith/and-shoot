@@ -169,6 +169,27 @@ Four gaps identified in the existing constraint card set:
 
 ---
 
+---
+
+### TASK 9: plumms-man persona card authored — 2026-05-04
+
+**plumms-man** (full quality, scope: library)
+- Library: cards/personas/plumms-man.card.md
+- Active: active-project/actors/plumms-man/card.md
+- Name: unnamed (referred to as Plumm's Man)
+- Role: Walk-on investigative agent dispatched by Ser Harwick Plumm in 120 AC to circuit the Harrenhal shadow settlements. Records anomalous vermin clearing, off-pattern ravens, and a girl's presence at multiple sites. Seals and delivers report to castellan's records — not to Plumm. Mechanism by which Taylor's fauna activity enters official record.
+- Tier: minor
+- Quality: full
+- Vibe Seeds: populated (the-small-book, the-pattern, the-sealed-report, the-circuit, the-record-as-weapon, efficient-not-hostile, bureaucratic-momentum)
+- Actor support files created:
+  - ltm.md: empty (no prior in-project history)
+  - stm.md: scene-entry state (first settlement, dawn, south approach, circuit beginning)
+  - state.md: location: shadow-settlement-south-approach; condition: [on-duty, mounted]; inventory: [notation-book, inkhorn, quill-case, sealing-wax, commission-letter]
+  - vibes.md: four episode-relevant vibe keys loaded
+- Index updates: cards/personas/INDEX.md — added plumms-man to planetos / full / administrative-functionary
+
+---
+
 ### Pending items / flags
 
 - **taylor-hebert westeros variant** — RESOLVED. Card authored and stored. See TASK 6 below.

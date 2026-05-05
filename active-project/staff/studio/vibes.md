@@ -33,3 +33,34 @@ EPISODE_1_VIBES:
   the-naming: [the-moment-of-being-asked, the-name-given-aloud, the-dictation-as-finality, the-door-that-closes-on-its-own-momentum]
   the-septon-as-absence: [present-but-cannot-appear, the-protector-who-cannot-act, the-letter-in-place-of-the-body, kindness-that-runs-out-before-it-can-hold]
   the-yard-as-witness: [mira-delivering-verdict-before-it-happens, edric-watching-the-road-without-watching, what-everyone-already-knew]
+
+# Episode 2 Vibe-Cloud (s01e02 — First Circuit) — delta from season
+
+EPISODE_2_VIBES:
+  the-record-assembles: [evidence-before-interpretation, tally-stick-against-the-swept-floor, three-witnesses-one-description, the-small-book-filling-up]
+  fauna-as-evidence: [the-use-that-leaves-marks, wrong-pattern-visible-to-anyone-looking, what-she-built-being-read, cost-that-shows-externally]
+  the-observer: [methodical-not-hostile, function-not-person, the-pen-that-doesnt-know-its-a-weapon, thorough-as-the-only-danger]
+  the-sealed-record: [moving-faster-than-she-can, inside-harrenhal-before-she-knows, the-irreversible-document, cannot-read-or-correct]
+  cost-made-visible: [blood-on-the-lip, head-bowed-at-the-cote-post, the-physical-price-in-view, no-shard-buffering]
+  the-septon-failing: [bench-in-the-morning-warmth, hands-loose-in-lap, presence-narrowing, the-thing-that-will-leave-her-next]
+  being-watched-without-knowing: [the-circuit-that-completes-before-awareness, the-girl-in-three-separate-reports, named-from-outside, the-pattern-she-did-not-choose-to-make]
+
+# Episode 3 Vibe-Cloud (s01e03 — The Inspection) — delta from season
+
+EPISODE_3_VIBES:
+  the-raven-as-witness: [the-anomaly-in-public, wrong-posture-for-a-stranger, the-bird-that-wont-go-when-told, sketched-before-it-left, the-cost-of-what-she-built-in-a-stranger's-eyeline]
+  the-doubled-record: [two-names-one-page, the-help-that-makes-it-worse, good-faith-as-mechanism, rowan-didnt-know-the-ledger-was-open, the-name-added-not-removed]
+  the-formal-inspection: [same-man-different-authority, ledger-board-not-small-book, the-scribe-who-sketches, institutional-progression, casual-efficiency-as-threat]
+  osmynd-absent: [bench-empty-in-the-first-beat, protection-already-gone-before-threat-arrives, the-thing-that-ran-out, visible-from-the-start]
+  holding-still: [cart-sound-on-the-track, wait-until-the-room-empties, stillness-as-the-only-available-move, the-discipline-of-not-breaking]
+  the-sincere-harm: [rowan-means-well-makes-it-worse, cannot-fight-good-faith, the-stranger-who-names-himself-into-the-record, the-wrong-kind-of-protection]
+
+# Episode 4 Vibe-Cloud (s01e04 — The Succession) — delta from season
+
+EPISODE_4_VIBES:
+  osmynd-gone: [protection-fully-expired, the-body-on-the-altar, the-bench-that-stays-empty, what-ran-out-ran-out, no-replacement-for-the-original]
+  the-succession-mechanism: [bureaucracy-as-predator, the-reversion-clock-needs-no-malice, procedure-that-runs-on-its-own-momentum, the-document-that-travels-sealed, the-form-that-has-no-slot-for-her]
+  the-active-attempt: [she-moved-first-and-lost, two-names-on-the-same-page, fighting-the-ledger-with-the-ledger, correct-and-still-losing, the-folio-that-did-not-hold]
+  the-folio: [stolen-at-dawn, the-weapon-that-backfired, the-paper-she-put-in-rowans-hands, artifact-of-the-failed-attempt, still-under-rowans-arm-at-episode-close]
+  the-transit-clock: [days-she-already-counted, deadline-she-cannot-extend, plumm-named-the-same-number, time-as-adversary-not-ally, the-window-she-could-not-hold-open]
+  the-document-taken: [seal-passing-from-plumms-hand, the-thing-she-did-not-choose, involuntary-structure-enacted, the-moment-it-cannot-roll-back-from, rowan-watching-her-take-it]

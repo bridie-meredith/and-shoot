@@ -1,2 +1,7 @@
 STM:
-- No recent events recorded yet. Episode 1 not yet begun.
+- s01e01: Stepped back through the sept door; heard the stylus resume on the board. The record was moving. He was no longer part of what it was counting.
+- s01e01: Taylor's second ask came across the full width of the yard, the long carry. He did not answer it. He read the officer first — the face already moved off the girl, the clerk's board tilted forward, the stylus ready — then looked at Taylor, the letter still out at her arm's end, then took the two steps back and let the sept door give. From inside the threshold he heard the stylus pick up again behind him: three light strokes, a name being closed out. The record was moving. He was no longer part of what it was counting.
+- s01e01: First ask — Taylor called him by name across the yard, asked him to come in three steps and witness before the officer closed the board. Did not cross. Did not speak. Stepped back through the sept door. Non-answer was the answer.
+- Position before: gate post, road in view, sept door at his back. Chosen for sightlines. The one exit he had set up at the start was the one he used.
+- Mira had warned the yard an hour earlier; her warning had been correct. He had registered that. Mira's eyes went to the flagstones when Taylor asked her to stand witness — he registered that too.
+- The officer carries lord's-administration commission for impressment. Real weight. Crossing him in the yard would have cost more than the girl's situation could be helped by. The math did not change between the first ask and the second.

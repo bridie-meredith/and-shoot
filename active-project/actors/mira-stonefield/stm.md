@@ -1,2 +1,5 @@
 STM:
-- No recent events recorded yet. Episode 1 not yet begun.
+- Taylor asked her to stand witness, using Mira's own across-the-yard carry; Mira's eyes dropped to the flagstones and stayed there. The silence was the answer; Taylor had to turn away with the ask dying in the air between them.
+- Taylor turned and asked Mira to stand witness, using the same across-the-yard carry Mira had used an hour earlier when she warned the unattached ones — the ask landed inside the echo of Mira's own voice.
+- The refusal was made in silence, in the yard, with the lord's commission still present. The cost of speaking was assessed against the cost of the network, the children, and the debt structure that public witness against an officer would have created. The silence was the answer. One-time offer logic — she did not look up, did not soften, did not explain.
+- She has not yet decided what Taylor is. The ask was correctly calibrated (right carry, right framing, right moment) — that registers. But correct calibration is not the same as a correct decision under pressure for Mira's own ledger. Watching continues.

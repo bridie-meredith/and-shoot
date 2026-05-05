@@ -1,7 +1,7 @@
 STATE:
   location: loc-harrenhal-sept-environs
-  condition: [dying-of-fever]
+  condition: [dead]
   inventory: []
   stats:
-    health: dying
-    physical_capacity: near-zero
+    health: dead
+    physical_capacity: none

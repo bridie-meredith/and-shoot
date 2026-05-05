@@ -6,3 +6,8 @@ VIBES:
   the-smallfolk: [fifty-families-by-name-and-situation, buried-many-of-them, their-belief-is-the-force-he-cannot-fully-control, once-mobilized-cannot-be-fully-stopped, respects-their-capacity-for-belief]
   the-institution: [serves-it-does-not-trust-it, three-on-ten-loyalty, political-religion-is-the-corruption-he-ran-from, correspondence-carefully-designed-not-to-trigger-intervention, a-distant-structure-that-has-not-sent-a-replacement]
   going-to-see: [his-answer-to-second-hand-reports, gone-back-multiple-times, the-encounter-is-what-destabilizes-the-frame, direct-confrontation-with-the-impossible, cannot-stop-himself]
+  the-intercession-that-worsens: [meant-to-narrow-exposure-broadened-it, good-faith-as-the-mechanism, name-in-the-ledger-alongside-hers, the-help-that-cannot-be-taken-back, the-ledger-was-already-open]
+  taylor-as-confirmed-anomaly: [the-raven-that-wont-go-for-a-stranger, witnessed-in-public-not-just-reported, now-official-record, the-impossible-thing-is-sketched]
+  the-question-he-asks: [what-else-have-they-seen, the-scope-he-doesnt-know, his-theology-is-running-faster-than-the-facts, the-open-end-at-episode-close]
+  the-claim-refused: [provisional-standing-as-exposure, the-motherhouse-letter-too-slow, good-faith-as-insufficient, still-holding-the-folio-at-episode-close, the-fight-continues-but-the-window-closed]
+  plumm-outmaneuvers: [arrived-with-the-refusal-already-filed, named-the-transit-days-taylor-named, the-recorder-sent-to-harrenhal-before-rowan-could-respond, institutional-speed-he-cannot-match]

@@ -69,13 +69,13 @@ seasons:
     timeline: 120–122 AC
     episodes:
       - slug: s01e01
-        status: planned
+        status: shot
       - slug: s01e02
-        status: planned
+        status: shot
       - slug: s01e03
-        status: planned
+        status: shot
       - slug: s01e04
-        status: planned
+        status: shot
       - slug: s01e05
         status: planned
       - slug: s01e06
@@ -83,7 +83,7 @@ seasons:
 
 active:
   season: s01
-  episode: s01e01
+  episode: s01e04
 
 # session-log: 2026-05-03
 # Partial shoot of s01e01 run, halted after 3 bullets for diagnostic review.

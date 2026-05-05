@@ -5,3 +5,5 @@ VIBES:
   ordinary-corruption: [not-appetite-for-cruelty-just-efficiency, would-be-unremarkable-in-a-functioning-institution, takes-from-people-who-cannot-stop-him, does-not-think-in-moral-terms, the-structure-of-the-arrangement]
   anomaly: [visible-as-flatness-while-recalculating, cannot-classify-it-is-a-problem, suppresses-before-it-generates-paperwork, assumed-no-one-is-watching-carefully, has-not-accounted-for-channels-he-cannot-see]
   the-road: [most-comfortable-far-from-camps, camps-have-oversight-road-has-interval, functional-not-pristine, two-years-of-this-route, the-villages-known-by-productive-capacity]
+  the-anomaly-as-asset: [named-by-date-not-description, raven-sketch-census-anomaly-inspection-record, the-file-he-built-is-the-instrument, documented-pattern-of-interest, useful-to-the-castellan-means-useful-to-him]
+  the-document-extended: [held-without-impatience, the-offer-that-stood-until-she-took-it, transit-days-he-named-were-the-same-she-named, the-transaction-completed-on-his-terms, the-close-he-came-prepared-for]

@@ -1,25 +1,71 @@
 STATE:
+  episode: s01e04 — The Succession
   active_location: loc-harrenhal-sept-environs
-  active_sublocation: sickroom (small stone cell off the sept's main hall)
+  active_sublocation: SEPT-EXTERIOR / SEPT-YARD — settlement; closing tableau; Plumm has departed; the track is empty; Taylor stands in the yard with the wardship instrument in hand; Rowan stands in the yard with the motherhouse folio under his arm; the sept main door is still open; Osmynd's body is visible on the altar table inside; the neighbor woman remains at the altar table with the body; the yard is still and quiet in the failing afternoon light; both documents are present and accounted for
   active_conditions:
     - cond-riverlands-120ac-state
+    - cond-fauna-control-rules
+    - cond-westerosi-customary-authority
     - cond-no-parahuman-infrastructure
+    # cond-impressment-census-120ac: world-state only; the census record is inside Harrenhal; the inspection is concluded; the succession machinery the census set in motion has now run its course through the recorder's hall; the refusal is on record; the document travels to Harrenhal; what remains is the interval before the mechanism completes
   prop_positions:
-    altar-candles: chancel, sept nave (unlit — not yet morning service)
-    sickroom-tallow-candles: sickroom, burning low (two candles, near-end of burn)
-    septon-pallet: sickroom floor, north wall
-    painted-mother-panel: chancel altar table
-    writing-materials-and-books: septon's cottage, ground floor table
-    rain-barrel: yard, south cottage wall
-  time_of_day: early morning, pre-dawn to first light — morning light leaking around shutter edges, full daylight not yet established
-  weather: still, cool autumn air — no rain, no wind. Riverlands autumn, 120 AC.
+    tallow-stub: sleeping alcove (sickroom) — BURNED TO CLOTH; flame out; the stub has completed its run; no light from this source
+    osmynd-pallet: sleeping alcove (sickroom) — VACATED; body moved to altar table; pallet is empty
+    osmynd-body: chancel altar table, sept nave — laid out; the painted-mother-panel has been displaced or moved aside to accommodate; the body is visible from the sept yard through the open main door; the neighbor woman is seated with it
+    succession-folio: on Rowan's person — he is carrying it; he is standing in the sept yard; folio under his arm; the document's disposition after the hall's transaction remains as recorded; it is still-under-rowans-arm-at-episode-close
+    plumm-document: IN TAYLOR'S HAND — the castellan wardship instrument; district wax seal; received at the threshold-stone in the sept yard; document transferred from Plumm's extended hand to Taylor's hand; transfer complete at B68; Plumm's hand is now empty; this is the completed instrument of the wardship; it is now in Taylor's inventory; it is not under her arm, not set down — it is held, received, in hand
+    ledger-stand-record: RECORDER'S HALL — the dispatch-side ledger stand now holds the closed administrative record; the page with the two entries (raven-sketch inspection record + refusal entry) has been transacted and is part of the hall's record; the document prepared for the carry to Harrenhal is the hall's record of the refusal, not the folio itself; the ledger stand is in the hall behind them; the hall door is closed
+    septon-register: chancel table, sept nave — position displaced or moved aside; the altar table is now occupied by Osmynd's body; the register's exact position is unrecorded in the transition; studio records it as moved from its last known position to accommodate the laying-out
+    osmynd-bench: exterior, sept yard — bare stone; empty; permanent absence; unchanged
+    rowans-travelers-pack: with Rowan — on the track, moving west toward the settlement; Rowan is carrying it or it is on his person
+    sleeping-mat: sept side-chamber — where Taylor left it; unoccupied
+    altar-candles: chancel, sept nave — candles burning; whether the neighbor woman has added candles or tended them is unrecorded; the space is now attended; at minimum the existing altar candle or candles are burning in the presence of the body and the neighbor woman
+    painted-mother-panel: chancel altar table — in place; unchanged
+    rushes: sept nave floor — maintained; undisturbed; unoccupied
+    rain-barrel: yard, south cottage wall — in place; unchanged
+    grain-crate: sept nave — below the high shuttered window; unchanged position; sill above it is empty
+    raven: UNSEEN — confirmed absent from all visible positions; not on the sept sill, not on the bell tower's visible perches, not in the yard; the raven's position remains unrecorded but its absence from the yard tableau is now explicitly noted; the grain-crate sill is empty; no raven is visible in the scene
+  time_of_day: LATE AFTERNOON — time has advanced further from midday; the Riverlands winter light is now at its lowest usable register before it tips into dusk; the sun is not visible; the sky is low and flat and the grey has deepened; the light falls on the sept yard without warmth and without shadow; the day is close to its end; what light remains is the last grey before the evening cold sets in fully
+  weather: late autumn, very early winter — Riverlands, 121 AC; sky low and flat; overcast without rain; the cloud cover is the specific low flat ceiling of a Riverlands winter afternoon — not a dramatic sky, not storm-threatening, simply the sky that closes down over the river country in the cold season and sits; no wind noted; the track will be firm underfoot; the cold of the morning will have moderated slightly in the afternoon hours but the low sky holds the cold in; it is colder than it looks
+  actor_positions:
+    osmynd: chancel altar table, sept nave — DEAD; body laid out; hands arranged; visible through the open sept main door from the yard; the neighbor woman is seated with him
+    taylor: SEPT YARD — B71; standing in the yard; Plumm has departed; the wardship document (the sealed castellan instrument) is in her hand; she holds the completed instrument of the wardship; the threshold-stone is behind her; the open sept door is at the yard's edge; Osmynd's body visible through the door; Rowan is with her in the yard; the track is empty
+    rowan: SEPT YARD — B71; standing in the yard; the motherhouse succession folio is under his arm; the folio is the instrument of the failed claim — the document that did not hold; Plumm has departed; Rowan is not moving; the folio remains on his person; the two documents remain in the yard simultaneously: the wardship instrument (Taylor's hand) and the succession folio (Rowan's arm); Rowan holds the record of the attempt; the record of the outcome is in Taylor's hand
+    neighbor-woman: sept nave, chancel — inside, seated with Osmynd's body at the altar table; her position is unchanged; she is not visible in the yard tableau's foreground but she is through the open door, part of what the open door reveals
+    ser-harwick-plumm: DEPARTED — B71; he has left the sept yard; he is on the track; his horse is with him; the track is empty behind him; his business is concluded; he is gone from the yard and from the scene; his rider is gone; the horse is gone; the yard does not hold him
+    district-recorder: recorder's hall — behind them; concluded; not a present-scene factor
+    settlement-smallfolk: settlement — in their ordinary late-afternoon movement; a neighbor among them has come to the sept; not a crowd; the settlement knows Osmynd is dead
+    edric: location unconfirmed — not a present-scene factor
+    mira: dispersed household — not present in this scene
   doors_and_shutters:
-    sickroom-shutter: closed (morning light leaking at edges)
-    sept-main-door: closed
-    cottage-door: status unknown / not yet established
+    sept-main-door: OPEN — someone opened it to lay out the body and admit the neighbor woman; it stands open; the interior is visible from the yard; Osmynd's body on the altar table is visible through the open door from where Taylor stands
+    sept-side-room-door: closed or pulled to — unchanged from Taylor's overnight
+    sept-side-door: CLOSED — pulled to behind them at departure this morning; unchanged
+    sickroom-shutter: closed — the sleeping alcove is now vacant; the body has been moved to the altar table; the shutter remains closed; the room's status is vacated
+    cottage-door: closed — unchanged
+    sept-gate: status unrecorded — was left open or swung open when they departed east this morning; whether it has been pulled to since is not recorded; studio does not resolve without a bullet
+    high-shuttered-windows: closed — louver-gapped; the nave is empty; the chancel candle burns unattended
+    recorder-hall-door: CLOSED — the hall door has closed behind Rowan and Taylor; the transaction is concluded; they are on the track; the hall is behind them and its door is shut
+    recorder-hall-inner-door: position unrecorded — within the closed hall; not a present-scene factor
+  spatial_layout:
+    eastern_track: EMPTY AND QUIET — B71; Plumm has ridden out; the track that brought him is now empty in both directions; no rider on it; no horse on it; the track runs east toward the Harrenhal road and it is quiet in the failing afternoon light; the settlement sits around it in its ordinary late-afternoon configuration
+    recorder_hall: far behind them — stone building, door closed; not a present-scene factor
+    sept_yard: ACTIVE SPATIAL FIELD — hard-packed earth, frozen-firm; the exterior space in front of the sept; the main sept door stands open onto the yard; Osmynd's body on the altar table inside is visible from the yard through the open door; the neighbor woman is inside, seated; Taylor stands at or near the door threshold; Rowan is with her in the yard; the bench is bare stone, empty, permanent absence; the yard holds the late afternoon's grey and failing light
+    sept_nave: interior, wake-space — the altar table holds Osmynd's body; the neighbor woman is seated within; candles burning; the nave is visible through the open main door; the rushes undisturbed on the floor; the space is now attended and transformed
+    sleeping_alcove: vacated — the body has been moved to the altar table; the pallet is empty; the room is cold; the sickroom function is concluded
+    sept_exterior_approaches: EMPTY — B71; the track is clear in both directions; Plumm's departure has cleared the approach; no rider is active on the track; the approach is quiet
+    harrenhal_towers: north, half a league — visible from the yard in the deepening late-afternoon grey; the light is failing; the towers are present as always; they are not receding — the transit-clock is still running and the riders it sets in motion are coming
   ambient:
-    - septon's breathing audible from the pallet — labored, fever-register
-    - two tallow candles burning low in the sickroom — near end of burn, guttering possible
-    - ravens in the bell tower: settled, pre-dawn quiet
-    - no household activity yet — farm sounds have not started
-    - census rider reached Millfall yesterday; not yet at the sept
+    - late afternoon grey, failing light — the yard is in the deepest grey the Riverlands winter sky produces before dark; the light is not gone but it is going; the low flat overcast has held all day and now presses down in the last hour before dusk; no warmth has been in the light at any point today; what remains is the grey without shadow, the cold without bite, the still air of a winter afternoon that has run its course; the day is ending
+    - the open door and what is through it — the sept main door stands open and this is the dominant spatial fact of the yard; Osmynd's body on the altar table is visible through it; the neighbor woman is visible inside, seated; the open door is not inviting — it is the fact of the thing; whatever Taylor and Rowan walked through all day, the hall and the refusal and the track back, it has all arrived at this: the open door and the body in the candlelit nave beyond it; the door was closed this morning when they left; it was opened by someone else while they were gone
+    - the neighbor woman as settlement's response — she has come; the settlement knows Osmynd is dead; she is not a functionary or an authority; she is a neighbor who has come to sit with the body in the way that neighbors do; her presence says the settlement is not indifferent; it also says the news has moved through the settlement in the hours since the death; the sept is no longer sealed and private; the death is known
+    - the cold deepening toward evening — the specific quality of late-afternoon cold in a Riverlands winter: not the morning's sharp open cold, not the still sealed cold of midday overcast; the cold now is the cold that comes with the failing light, the cold that increases as the last grey leaves the sky; it is the cold that settles into stone and into the yard and into the bench; the bench is bare stone and will be colder than it has been all day
+    - the bench — empty; permanent; it is the yard's primary spatial note; Osmynd sat there this morning in the warmth from s01e02; the body is now on the altar table inside; the bench is unchanged and this is the thing about it; the bench will not change; the permanent-absence vibe has its final register here; the bench is where it was, bare stone, cold, and Osmynd is inside, and neither of these facts presses on the other
+    - the empty track — B71; Plumm has gone; the track is empty in the direction he rode; no horse, no rider; the track runs east toward the Harrenhal road under the same failing grey light it has held all afternoon; what remains in the yard is the open door and the body inside and the two people standing with their documents and the quiet that settles after a departure; the track is not dramatic in its emptiness — it is simply empty; the mechanism has completed its visible portion and withdrawn down the road
+  fauna_sense_status:
+    passive_radius: active at baseline — B71; Taylor is in the sept yard; the passive sense is running at baseline; the settlement surrounds her at normal proximity; the sept bell tower is overhead; the track is now empty — no approaching horse-signal, no rider; the departure signal (horse withdrawing, gait receding) has cleared; the passive radius now registers the yard and the open door and the neighbor woman inside and the settlement's ordinary late-afternoon fauna at baseline; no anomaly signals
+    bell_tower_ravens: overhead / present — the sept bell tower is the active overhead structure; the birds there are at late-afternoon configuration; whether the familiar raven is back at the sill or in the tower is not yet recorded by a bullet; the bell tower signal is within passive range now that Taylor is back at the sept
+    raven_position: unrecorded — the familiar raven's location has not been recorded since it lifted from the sill at Bullet 20; studio does not resolve its position until a bullet records it; Taylor's passive radius now encompasses the bell tower and may or may not register it
+    sept_yard_fauna: late afternoon baseline — no anomaly signals; the yard's fauna (sparrows, tower birds, ordinary settlement perimeter) are in their late-afternoon configuration; the open door does not register as an anomaly for fauna sense; the neighbor woman's presence is a known human signal
+    physical_cost: no fauna activation across the full hall-and-return arc; Taylor's cost is the day's walking and the emotional weight of the scene; baseline; no deployment; no cost curve change
+  episode_state: EPISODE CLOSED — s01e04; all 71 bullets shot; Plumm departed; Taylor and Rowan in yard; wardship committed; track empty — Taylor: sept yard, wardship document (sealed castellan instrument) in hand; Rowan: sept yard, motherhouse succession folio under arm (the failed claim); Plumm: gone from the yard, on the track east, his rider gone, horse gone; Osmynd's body: altar table, sept nave, visible through the open door; neighbor woman: inside, at altar table with body; sept main door: still open; track: empty and quiet in the failing afternoon light; raven: position unrecorded; the yard holds the material record of the day — both documents present, both actors standing, the open door and what is through it; the episode is closed
