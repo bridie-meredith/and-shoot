@@ -77,3 +77,17 @@ EPISODE_5_VIBES:
   the-look-behind: [raven-on-the-castle-wall, paying-the-cost-to-see, the-half-league-of-air, the-livery-on-the-gatehouse-rider, the-bird-as-her-only-camera]
   rowan-still-here: [the-letter-to-the-motherhouse-tonight, present-but-out-of-instruments, watching-without-acting, the-ally-whose-instruments-do-not-reach-the-table, the-second-rider-seen-from-the-sill]
   the-clock-not-the-cliff: [no-confrontation-no-arrest, the-board-worsens-by-paperwork, the-day-ends-quiet, the-yard-still-empty, the-towers-half-a-league-and-the-ledger-already-thicker]
+
+# Episode 6 Vibe-Cloud (s01e06 — The Function Named) — delta from season
+
+EPISODE_6_VIBES:
+  the-resolution: [administrative-not-judicial, faster-machinery-wins, the-clock-runs-on-its-own, four-seconds-of-blank-column, the-pen-already-moving, bracken-deferred-not-defeated]
+  the-naming: [function-as-designation, intelligence-asset-fauna-resource, spoken-then-written-then-acknowledged, the-yes-she-said-aloud, cannot-be-ungiven, the-name-she-did-not-choose]
+  the-acknowledgment: [the-question-asked-once, the-answer-extracted-not-offered, the-record-closes-on-her-word, compliance-as-final-seal, yes-as-the-last-thing-required-of-her]
+  rowan-out-of-instruments: [the-letter-sent-too-late, no-instrument-reaches-the-table, the-hand-on-the-shoulder-and-removed, the-ally-who-cannot-act, sorry-after-the-fact, the-pen-set-down]
+  plumm-arrives: [the-first-look-after-the-record, instructions-in-the-morning, the-name-attached-to-the-function, the-handler-named, predator-after-administration, the-smile-not-given]
+  the-crown-arrives-late: [the-retinue-at-night, twelve-horses-and-a-baggage-mule, three-red-crabs-on-white, the-gate-opens-the-lock-already-turned, S2-visibility-confirmed, the-witness-she-did-not-need]
+  involuntary-structure: [season-spine-terminus, the-thing-she-did-not-choose, named-and-assigned, the-position-she-occupies-now, no-going-back-from-here, the-S1-window-closed]
+  the-yard-and-the-hall: [the-naming-spoken-twice, the-bucket-set-down-and-picked-up, the-well-and-the-lectern, ordinary-tasks-bracketing-formal-capture, the-doorframe-she-held]
+  three-ravens-on-the-eave: [the-omen-no-one-reads, the-cost-not-declared, the-birds-that-know-without-being-told, what-the-hall-cannot-name, the-side-door-and-the-frame]
+  the-castellan-as-mechanism: [efficient-not-cruel, the-resolution-issued-standing, the-irregularity-cannot-stand, procedure-completing-itself, the-head-table-without-rising]

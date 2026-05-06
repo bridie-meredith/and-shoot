@@ -9,3 +9,7 @@ VIBES:
   the-yes-yes-on-this-girl: [the-third-entry-carried-wrong-named-without-prompting, the-pattern-mark-named-after-two-beats, the-pen-that-did-not-pause, leaning-forward-a-fraction, the-notation-already-forming-as-a-Citadel-notable]
   the-bracken-rider: [the-folded-note-presented-by-the-steward, the-faction-attempting-to-shape-the-record, returned-without-comment, the-record-is-mine, procedure-as-the-only-correct-answer]
   the-citadel-margin-note: [the-notebook-back-in-the-satchel, the-line-that-will-travel-by-raven, the-recognition-recorded-without-exclamation, the-resource-now-named-on-paper-bound-for-Oldtown]
+  the-countersigned-copy: [paper-folded-in-the-cloak-throughout, set-on-the-clerks-table-without-speaking, the-citadel-trace-as-administrative-instrument, his-role-already-closed-the-paper-doing-the-rest]
+  the-window-position: [does-not-move-from-the-window, satchel-closed-not-working, present-as-trace-not-actor, the-instrument-of-the-naming-without-being-its-author]
+  not-looking-at-the-ward: [does-not-look-at-taylor-during-the-reading, the-eye-that-recorded-her-now-disengaged, the-citadel-circuit-already-accounting-the-next-precinct, professional-distance-after-the-notation-is-filed]
+  the-confirmed-by-raven: [twelve-days-ago-the-notation-went, the-citadel-copy-already-confirmed, his-paper-trail-complete-and-cited, the-resource-already-on-the-Oldtown-shelf]
