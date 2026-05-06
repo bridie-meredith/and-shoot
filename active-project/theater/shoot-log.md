@@ -18,3 +18,11 @@ attempts: 1 | outcome: clean
 - All three audience accept first attempt. Pulp-enthusiast carry-forward from B2 paid in full ("the board at the end of the road is no longer still"). Dark-fantasy-reader: limit-of-information held (cannot read who/how-many/which-direction). Worm-canon-pedant: power-as-craft, no canon drift.
 - carry-forward: rider-prep read is now Taylor's working frame for the next several beats. Departure imminent — minutes — sets the clock for B4 (raven release) and the convergence beats that follow.
 
+## Bullet 4 — taylor-hebert-westeros — raven release / closer-range gatehouse read
+attempts: 2 | outcome: retried
+- attempt 1: opened with wire-shift release, dual-angle tracking, but spent ~900 words including a cost-window stanza ("bill on the hook behind a door I did not open") and re-narrated the three-lantern rider-prep read from line 8 at closer range without delivering new content. Pulp-enthusiast rejected: "Line 8 moved the board; line 9 re-describes it from a new angle without worsening it."
+- attempt 2: coach revised — release tightened, cost-window collapsed to one buried clause, middle/end reframed to deliver NEW information the post couldn't give. Bird's-eye approach resolves: three+ men in the lantern-lit space (two at saddle working girth/bridle, one at gate-leaves), bar already half-lifted, second horse loose-tethered and saddled inside, work faces SOUTH, gate horse head-out toward the sept road. Closing beat: "a rider for the south road and a second horse held in case the rider is two."
+- All three audience accept. Pulp-enthusiast: board-split + count-uncertain-upward delivered. Dark-fantasy-reader: limit held (read tack, not faces/names; one-or-two unresolved). Worm-canon-pedant: bird's-eye sensory channel canonically grounded; cost-window clean; closing inference is Taylor reading the board, not magic omniscience.
+- state changes: raven deployment now active-in-flight, deployment closing inside clean window with cost: nil. Rider-for-south-road + possible-second-rider are now known facts in Taylor's working board. Body unmoved.
+- carry-forward: B5 (next bullet — Taylor goes inside before the light changes) executes under a new clock — south-road rider departure imminent. The second-horse uncertainty (one or two riders) is the ambiguity Taylor carries inside.
+
