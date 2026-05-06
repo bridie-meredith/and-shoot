@@ -140,3 +140,17 @@ All six episodes maintain Planetos-specific register. The world moves on its own
 - Shoot flag: Episode 3's raven scene is the highest-risk scene for wrong-register NPC reactions — the inspector must respond with the correct Planetos flavor (discomfort, unease, the specific wrongness of a trained animal behaving unnaturally) not with curiosity or clinical interest; Septon Rowan must not be written as a clever intercessor, just a man who put his name on the wrong document
 - Shoot flag: Episode 4's ward-succession activation must feel bureaucratic, not dramatic — no confrontation scene, no moment where Plumm is menacing; the danger is in the process being automatic, not in anyone's intentions
 - Shoot flag: Episode 6's function-naming must register as a category, not a title — Taylor is not being elevated; she is being filed under a heading she did not write and cannot erase; the text must not allow this to read as recognition
+
+---
+
+## Session: s01e06 shoot — line review (2026-05-06)
+
+### Line reviewed: s01e06 show.md line 6 (scene-open, bullet 1, Taylor's perception)
+
+"The stone behind me is the cold the dusk laid down and the night pressed deeper... the only instrument the yard holds is a bird I have set on a post to look at a light I cannot see past."
+
+**Verdict: ACCEPT**
+
+What landed: The setting is hostile and indifferent — cold she cannot leave, frozen ground giving nothing back, the one warmth in the field is Harrenhal itself, not anything she controls. The raven link is managed cost, not comfortable tool: "holding it the way a hand holds a wire that has not yet been asked to carry weight." "The cost is on a hook behind a door that is not yet open" is the correct Planetos register — foreknowledge of cost without the cost having arrived, which is not hope that costs nothing but dread that costs nothing yet. "The only instrument the yard holds is a bird I have set on a post to look at a light I cannot see past" — she is small, the instrument is single, the limit is named explicitly. No false catharsis. World was there before her.
+
+**Pattern flag update:** This scene-open establishes the correct register for e06's shoot — power as managed wire, cost deferred not avoided, the world (Harrenhal awake, the road, the cold) indifferent to Taylor's needs. Any subsequent line that lets her be comfortable in this position, or that treats the raven link as a reliable tool rather than a managed tension, is a flag against this baseline.

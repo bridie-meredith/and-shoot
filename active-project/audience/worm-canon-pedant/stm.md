@@ -140,3 +140,17 @@ All six episodes execute the fauna-visibility-as-coherence-signal requirement. F
 - Shoot flag: the raven behavior in Episode 3 must be described through the inspector's record with Planetos-specific wrongness — not curiosity or clinical interest, but the specific discomfort of a trained observer seeing something that should not be
 - Shoot flag: the maester's assessment in Episode 5 must read as notation, not recruitment — Citadel procedure is detached documentation, not recognition of Taylor as exceptional; the danger is in the record, not the meeting
 - Shoot flag: Plumm's formalization of Taylor's status in Episode 6 must use the correct institutional language of the period — ward-of-administration, not personal ward; the category matters canonically
+
+---
+
+## Session: s01e06 shoot — line review (2026-05-06)
+
+### Line reviewed: s01e06 show.md line 6 (scene-open, bullet 1, Taylor's perception)
+
+"The stone behind me is the cold the dusk laid down and the night pressed deeper... the only instrument the yard holds is a bird I have set on a post to look at a light I cannot see past."
+
+**Verdict: ACCEPT**
+
+What tracked: The raven link is rendered with mechanical specificity — Taylor holds the bird on a line from wall to gatepost, the bird's posture is her managed output (four-point grip, head set on the road, the tilt that is not roosting and is not rest), and she is reading through the raven's position because she cannot watch the smear from her own location. This is parallel perception through a discrete organism: canonically correct translation of her power into Westerosi fauna. Ambient fauna present at low load ("the yard's own birds at the lowest weight the feed delivers") — she is aware of them but not running active control, which is the right architecture: primary link active, background passive. Cost structure present without being announced: she cannot leave the stone because movement would signal the yard; she is managing the link in stillness. "The clock is running. The cost is on a hook behind a door that is not yet open" — foreknowledge register, honest and non-triumphalist. Voice: first-person, attentive to what behavior reveals to observers, operationally disciplined. This is Taylor's voice and Taylor's mechanics, translated without contradiction.
+
+**Pattern flag update:** The raven-as-primary-instrument baseline is now established for e06. Any scene that adds raven links beyond what this setup implies, or that drops the cost structure without in-world explanation, is a mechanical flag against this opening.

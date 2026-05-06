@@ -141,3 +141,17 @@ Note carried forward: Episode 5 closing beat is a stall. The prior Season 1 REVI
 - Shoot flag: Episode 5 is the highest-risk episode for this persona during shoot — any scene that ends with multiple live threats "pending" rather than one of them having moved is a flag
 - Shoot flag: the Bracken counter-claim must register as a board change when it is filed, not when it is resolved; the filing itself must arrive on-page as a complication, not be referenced in retrospect
 - Shoot flag: Celtigar's letter must be a board-worsening event, not an atmospheric pressure detail — if it arrives and nothing changes immediately, this persona will flag the episode as having three complications and zero escalation
+
+---
+
+## Session: s01e06 shoot — line review (2026-05-06)
+
+### Line reviewed: s01e06 show.md line 6 (scene-open, bullet 1, Taylor's perception)
+
+"The stone behind me is the cold the dusk laid down and the night pressed deeper... the only instrument the yard holds is a bird I have set on a post to look at a light I cannot see past."
+
+**Verdict: ACCEPT**
+
+What landed: This is a scene-open with a live threat already established (e05 carry-forward: Celtigar's inquiry, the crown agent not yet arrived). Taylor is deployed before dawn — she is not positioning ahead of the complication, she is already in the complication's approach window. "The clock is running" is an explicit clock-start beat. "The morning has not started for anyone but me" means the board is already hers to lose before the scene opens. Harrenhal awake and not going to bed is an offscreen threat that is on-screen as ambient pressure — the lantern smear is the threat's visible edge. This passes narrowly: it is dense setup rather than filler, the threat is present even if not yet arrived, and the clock is named.
+
+**Carried flag:** This opening earns itself only if the first complication lands within the next few beats. The board is tense but static — if it stays static for another scene-length of predawn atmosphere, this persona's fidget triggers. The crown agent's arrival or a board-moving event must follow promptly.
