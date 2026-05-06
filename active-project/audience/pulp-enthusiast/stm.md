@@ -155,3 +155,15 @@ Note carried forward: Episode 5 closing beat is a stall. The prior Season 1 REVI
 What landed: This is a scene-open with a live threat already established (e05 carry-forward: Celtigar's inquiry, the crown agent not yet arrived). Taylor is deployed before dawn — she is not positioning ahead of the complication, she is already in the complication's approach window. "The clock is running" is an explicit clock-start beat. "The morning has not started for anyone but me" means the board is already hers to lose before the scene opens. Harrenhal awake and not going to bed is an offscreen threat that is on-screen as ambient pressure — the lantern smear is the threat's visible edge. This passes narrowly: it is dense setup rather than filler, the threat is present even if not yet arrived, and the clock is named.
 
 **Carried flag:** This opening earns itself only if the first complication lands within the next few beats. The board is tense but static — if it stays static for another scene-length of predawn atmosphere, this persona's fidget triggers. The crown agent's arrival or a board-moving event must follow promptly.
+
+---
+
+### Line reviewed: s01e06 show.md line 7 (bullet 2, held-watch time-passage beat)
+
+"The cold has gone another shade into the stone behind my shoulderblades... what passes from the smear through the held bird through the empty road through the wall into me is the count of a thing that has not happened yet, accumulating the only place it can accumulate, which is in the part of the body the cold is reaching now."
+
+**Verdict: REJECT**
+
+What failed: This is the second consecutive static beat. B1 was accepted narrowly on the grounds that the clock was named and the threat was present. B2 is the same board with nothing added except cold going deeper and absence deepening. The board has not changed — the smear has not brightened, the bird has not turned, the road has not given. Five negations name what is not happening. The escalation test fails: the situation is not worse, only colder. The fidget flag carried from B1 is now active. The brief-setup grace (1–2 beats accepted when threat is present and worsening) does not extend to a second beat where the board is static. This persona is refilling a drink.
+
+**Carry-forward demand (escalated from flag to demand):** B3 must deliver a board change. The raven turning its head is the minimum — a real event, not further named absence. B5's lantern-joining is the payoff this beat is holding space for, but the space is now overlong. If B3 delivers the board change per the shoot plan, no further action needed. If B3 is also atmosphere-maintenance, this persona's fidget becomes a walkout.

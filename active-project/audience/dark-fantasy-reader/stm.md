@@ -154,3 +154,15 @@ All six episodes maintain Planetos-specific register. The world moves on its own
 What landed: The setting is hostile and indifferent — cold she cannot leave, frozen ground giving nothing back, the one warmth in the field is Harrenhal itself, not anything she controls. The raven link is managed cost, not comfortable tool: "holding it the way a hand holds a wire that has not yet been asked to carry weight." "The cost is on a hook behind a door that is not yet open" is the correct Planetos register — foreknowledge of cost without the cost having arrived, which is not hope that costs nothing but dread that costs nothing yet. "The only instrument the yard holds is a bird I have set on a post to look at a light I cannot see past" — she is small, the instrument is single, the limit is named explicitly. No false catharsis. World was there before her.
 
 **Pattern flag update:** This scene-open establishes the correct register for e06's shoot — power as managed wire, cost deferred not avoided, the world (Harrenhal awake, the road, the cold) indifferent to Taylor's needs. Any subsequent line that lets her be comfortable in this position, or that treats the raven link as a reliable tool rather than a managed tension, is a flag against this baseline.
+
+---
+
+### Line reviewed: s01e06 show.md line 7 (bullet 2, held-watch time-passage beat)
+
+"The cold has gone another shade into the stone behind my shoulderblades... what passes from the smear through the held bird through the empty road through the wall into me is the count of a thing that has not happened yet, accumulating the only place it can accumulate, which is in the part of the body the cold is reaching now."
+
+**Verdict: ACCEPT**
+
+What landed: The cold is not static — it has "gone another shade into the stone," a world that is actively pressing further into her body rather than merely surrounding her. The five negations (smear not brightened, bird not turned, road not given, seam-things not shifted, wire still humming) are not inertia — they are the count of absence, and that count accumulates in a body that the cold is emptying. "The count of a thing that has not happened yet, accumulating the only place it can accumulate, which is in the part of the body the cold is reaching now" is the correct Planetos register for foreknowledge dread: not hope, not impatience, but dread filling the physical space the cold is claiming. The world is not bending; absence is a form of hostile indifference. No false catharsis; no comfort; the setting is still pressing.
+
+**Pattern flag update:** The cold-advancing-further registers as body-cost accumulating in real time. The baseline holds: power managed, cost present in the body, world indifferent. B3 forward must maintain — if the raven turns and the road changes and this cost vanishes without acknowledgment, that is the flag.
