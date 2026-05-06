@@ -100,3 +100,4 @@ active:
 
 # cut-log
 cut: 2026-05-06 — mid-shoot — s01e06 (B2 of 71 complete; Phase A fully done; skip-wrap of s01e05 archived this session)
+cut: 2026-05-06 — mid-shoot — s01e06 (B5 of 71 complete; SCENE 1 fully shot; two-clocks unresolved at the door for SCENE 2 open)
