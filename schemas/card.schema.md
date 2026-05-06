@@ -29,6 +29,11 @@ paired-agent: {{agent name — agent-persona subclass only}}
 display-name: {{human-readable label — agent-persona subclass only, optional}}
 aliases: {{list of name slugs — persona class only, optional}}
 portability: {{fixed | portable — prop class only}}
+character: {{persona slug — behavior class, per-character subclass only, required}}
+inherits: {{parent behavior slug — behavior class only, optional}}
+period: {{era slug — behavior class only, optional — e.g. hotd, main-canon, post-conquest}}
+region: {{region slug — behavior class only, optional — e.g. north, dorne, riverlands, free-cities}}
+social-class: {{class slug — behavior class only, optional — e.g. smallfolk, noble, maester, septon}}
 origin: {{harvested | authored | promoted}}
 quality: scant | full
 tier: lead | supporting | minor
@@ -39,9 +44,11 @@ tier: lead | supporting | minor
 
 ## Classes
 
-Four classes: **persona, location, prop, condition**.
+Five classes: **persona, location, prop, condition, behavior**.
 
-All four are story-facing — they compose the cast, the stage, and the ambient state. No system-facing card class exists in and-shoot (margit's workshop operates on cards directly, not on a separate class).
+All five are story-facing. Persona/location/prop/condition compose the cast, the stage, and the ambient state. Behavior carries voice samples *and* non-verbal tics *and* memory-monument register for shoot-v2 dialogue authoring and review. No system-facing card class exists in and-shoot (margit's workshop operates on cards directly, not on a separate class).
+
+(The `behavior` class supersedes the previous `dialect` class. *Dialect* — voice samples and verbal patterns — is one section of the broader behavior card, alongside non-verbal tics and memory monuments. Existing `class: dialect` cards should be migrated to `class: behavior`. Margit handles migration on touch.)
 
 ---
 
@@ -128,6 +135,67 @@ Body sections:
 - **Sensory Impact** — what this condition changes about sensory vocabulary.
 - **Duration** — temporary or persistent; how likely to change mid-scene.
 - **Interaction Notes** — illustrative (not exhaustive) combinations with common partners.
+
+---
+
+### behavior
+
+A behavior bank — voice samples, verbal patterns, non-verbal tics, and memory-monument register. The raw material for authoring dialogue or interiority *and* the structural anchor reviewers use to evaluate whether a character's behavior is in-register for their period × region × class. Used by the shoot-v2 dialogue-writer fork and the audience reviewer. Not a runtime persona; the behavior card is consulted, not embodied.
+
+A behavior card describes how a class of speakers (or one specific speaker) sounds, moves, and weights cultural memory. *Dialect* (verbal register) is one of three primary axes; the other two are *non-verbal* (physical tics) and *memory monuments* (cultural anchors weighted by what is or isn't named).
+
+#### Subclass values
+
+- **`shared-behavior`** — describes a class of speakers, not a specific person. Composition card: a per-character behavior card may `inherits:` from one shared-behavior card and `references:` others. Frontmatter: `character:` is omitted (or set to the sentinel `<shared>`).
+- **`per-character-behavior`** — describes one specific speaker. Frontmatter: `character:` is required.
+
+If `subclass:` is unset on a `class: behavior` card, default to per-character.
+
+#### Frontmatter additions
+
+- **`character:`** — required for per-character subclass. Slug of the persona card this behavior belongs to. One persona may have multiple behavior variants (e.g. one per project).
+- **`inherits:`** — optional. Slug of a parent behavior card (typically shared-behavior) whose samples, tics, and monument register feed in beneath this one. Chain depth capped at 1 by default; see Composition note below.
+- **`period:`** — optional. Era slug. E.g. `hotd` (95–130 AC Westeros), `main-canon` (~298 AC Westeros), `pre-gold-morning` (Worm).
+- **`region:`** — optional. Region slug. E.g. `north`, `dorne`, `riverlands`, `free-cities`, `dothraki-sea`.
+- **`social-class:`** — optional. Class/role slug. E.g. `smallfolk`, `noble`, `maester`, `septon`, `cape-protagonist`.
+
+A shared-behavior card typically sets one or more of `period / region / social-class` and omits `character:`. A per-character card sets `character:` and may set the period/region/class fields to anchor where this character sits.
+
+#### Body sections
+
+Required (load-bearing):
+
+- **Direct samples** — verbatim quotes (or interior-prose excerpts). Source-material excerpts, prior-episode lines, anything that demonstrates the voice. Each sample tagged with origin (e.g. `worm canon, ch12`, `s01e02`, `synthesized`). Multiple samples encouraged; ten is better than two. A behavior card with no direct samples is incomplete.
+
+Strongly recommended:
+
+- **Cadence** — rhythm, sentence length, pause habits. Where the voice breathes. How it ends sentences (period, em-dash, trailing fragment).
+- **Vocabulary** — signature words / forbidden words. What the character (or class) reaches for, what they refuse to say. Includes register markers (formal / vulgar / clinical / archaic).
+- **Syntax** — sentence-shape patterns. Subordination habits, fragment use, parallelism, comma-splice tolerance, run-on tendencies.
+- **Voice tells** — interiority cues for POV / narrator use. How the inner voice sounds when the character is the lens. What the character notices, what they refuse to look at directly.
+- **Non-verbal tics** — physical and behavioral patterns that travel with the voice. Posture, gesture, eye-line, the things the body does at moments of stress, comfort, formality. Studio and impersonator deploy these; the dialogue-writer fork should not write them into the spoken-line file. Listed on the behavior card so the behavior is fully described.
+- **Memory monuments** — shared events, traumas, and cultural anchors that weigh on the speaker's mind whether named or not. Each monument has a register-rule: how it surfaces in voice, what is or is not said of it, what behavior it produces when adjacent. For shared-behavior cards (period × region × class), this section is the *register-around* the monument — a separate `cards/conditions/memory-monuments/` card describes the monument itself. For per-character behavior cards, this section names what the character carries personally.
+
+Per-character cards may omit shared-card-overlapping sections that are fully covered by the parent (with an `(inherited)` note); the omission is then resolved at composition time.
+
+#### Composition
+
+A per-character behavior card composes with one or more shared-behavior cards along the period × region × class axes. Loading order:
+
+1. Universal-mannerisms behavior card (e.g. `westeros-grrm-mannerisms`) if the project has one.
+2. Region-shared behavior card (e.g. `westeros-northern`).
+3. Class-shared behavior card (e.g. `westeros-noble-courtly`).
+4. Per-character behavior card (e.g. `eddard-stark`).
+
+The current schema's chain-depth-1 cap on `inherits:` is too shallow for full period × region × class composition. Until the cap is revised, per-character cards should `inherits:` from one parent (typically the most-specific class card or the most-character-shaping card) and reference the rest in `references:`. Loading agents (dialogue-writer fork, audience reviewer) compose the stack from `inherits` + `references` together.
+
+#### Authoring notes
+
+Behavior cards are reviewed by margit and used by audience critics during line review. They are not loaded by line-time impersonators (shoot-v1 — being retired); they replace the impersonator's persona-roleplay framing in shoot-v2 with a target-behavior description that the dialogue-writer fork explicitly aims at and the audience reviewer evaluates against.
+
+The card answers four questions about the speaker: *how do they sound, how do they move, what do they refuse to name, and what do they reach for that no one else in the scene would?* The first is dialect. The second is non-verbal. The third is the negative space of memory monuments. The fourth is the positive space of vocabulary and reach.
+
+A behavior card with no direct samples is incomplete — the samples are the load-bearing section; the descriptive sections describe patterns, samples *show* them. An agent authoring against a sample-empty behavior card is generating in the void.
 
 ---
 

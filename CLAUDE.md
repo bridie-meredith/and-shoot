@@ -56,11 +56,12 @@ staff/            — production staff: agent homes + audience persona library
   editor/         — agent home
   audience/       — audience persona library (18 personas; INDEX.md; 3 selected per project)
 
-cards/            — story-facing card library (on-stage characters, locations, props, conditions)
+cards/            — story-facing card library (on-stage characters, locations, props, conditions, behaviors)
   personas/       — on-stage character cards (flat; INDEX.md for lookup by world/quality/trope/OC)
   locations/      — location cards (flat; INDEX.md)
   props/          — prop cards (flat; INDEX.md)
   conditions/     — condition cards (flat; INDEX.md)
+  dialects/       — behavior cards (class: behavior — voice + non-verbal tics + memory monuments; flat; INDEX.md). Directory rename to behaviors/ pending.
 
 active-project/   — sole active project
   actors/         — active cast (persona card + ltm/stm/state/vibes per actor)
@@ -87,6 +88,9 @@ All file formats are defined in `schemas/`. Read the relevant schema before crea
 | Episode plan | `schemas/episode-plan.schema.md` |
 | Show file | `schemas/show-file.format.md` |
 | Audit report | `schemas/audit-report.schema.md` |
+| Per-character dialogue file (shoot-v2) | `schemas/dialogue.schema.md` |
+| Proto-line file (shoot-v2) | `schemas/proto-line.schema.md` |
+| Facet file (shoot-v2) | `schemas/facet.schema.md` |
 
 ---
 
@@ -111,7 +115,7 @@ All file formats are defined in `schemas/`. Read the relevant schema before crea
 5. The show file is append-only during shoot. Rejected lines are deleted before retry. Failed lines (budget exhausted) are marked [NEEDS_EDIT:] and left.
 6. Audience membership is defined at project activation. It does not change mid-episode.
 7. Human checkpoints: series-level audit only. Everything else is agent-resolved unless an escalation requires human decision.
-8. Card schema authority is `schemas/card.schema.md`. Margit validates against it. No card class outside the four defined (persona, location, prop, condition).
+8. Card schema authority is `schemas/card.schema.md`. Margit validates against it. No card class outside the five defined (persona, location, prop, condition, behavior).
 9. All agent dispatches use the Agent tool. Inline generation is not a substitute for a dispatch — an agent that is not spawned in isolation does not have the context isolation the pipeline depends on.
 
 ---
