@@ -97,3 +97,6 @@ active:
 #   - passive-sense vibe key in taylor-hebert-westeros/vibes.md — retained
 #   - cond-reincarnation-mechanics tombstone — complete
 #   - taylor-hebert/ stale dir — already removed
+
+# cut-log
+cut: 2026-05-06 — mid-shoot — s01e06 (B2 of 71 complete; Phase A fully done; skip-wrap of s01e05 archived this session)
