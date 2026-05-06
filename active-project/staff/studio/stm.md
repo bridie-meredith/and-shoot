@@ -1,9 +1,10 @@
 STM:
-- s01e06 SCENE 1 B3 — STATE CHANGE: GATEHOUSE-LANTERN-HARRENHAL. Single smear → THREE LANTERNS, rider preparation configuration. Second lantern joined the first, then a third; brief sequential interval reads as preparation not watch-change (watch-changes are slower, staggered; this is fast ignition). Studio read: RIDER PREPARATION — departure imminent within minutes-not-hours. Taylor sees this directly from the sept wall; raven is not the channel here (lanterns visible at half a league to standing eye). Bird unchanged — still on gatepost, still active deployment, cost window still clean. Board state shift: the "morning has not started for anyone but me" condition from B1-B2 is superseded; someone at Harrenhal has started their morning before the horizon has. MACRO BOARD CHANGE per shoot-log carry-forward (B2→B3 requirement satisfied — smear/lantern movement above the raven head-turn floor; three lanterns clear the floor).
+- s01e06 SCENE 1 B4 — STATE CHANGE: RAVEN RELEASED FROM GATEPOST. Taylor releases the raven from the sept gatepost; the bird lifts and crosses the road northward toward the Harrenhal gatehouse lantern smear at half a league. GATEPOST NOW EMPTY. Active deployment CLOSED this beat inside the clean five-minute cost window; cost finalized at NIL — no debt, no follow-on obligation. Channel shift: still-watch passive (post-level, road-facing) → in-flight motor (wingbeat rhythm, airborne, bird's-eye road view). Bird's-eye sweep of the road northward on approach to gatehouse. Taylor against the wall, position unchanged; yard observers see only a bird that decided to leave — release reads as omen/animal behavior, not directed action. This is the only active deployment of SCENE 1 per episode-plan constraints; it closed clean.
+- s01e06 SCENE 1 B3 — (CARRIED) STATE CHANGE: GATEHOUSE-LANTERN-HARRENHAL. Single smear → THREE LANTERNS, rider preparation configuration. Departure imminent. Board-state shift recorded; morning started for someone at Harrenhal.
 
 ---
 
-SCENE 1 B3 PROMPT PLAN — s01e06 — for taylor-hebert-westeros impersonator via coach:
+SCENE 1 B4 PROMPT PLAN — s01e06 — for taylor-hebert-westeros impersonator via coach:
 
 Taylor is still pressed against the sept wall. She has not moved. She is watching the gatehouse smear at half a league north when the smear changes shape under her stationary gaze.
 
