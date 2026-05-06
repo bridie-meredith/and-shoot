@@ -33,6 +33,29 @@ Review active-project/theater/shoot-log.md to see which bullets completed.
 Delete show.md and shoot-log.md manually to restart from scratch, then re-run /and-shoot.
 ```
 
+**Archive integrity check.** For every episode in the season plan whose status is `shot` or `wrapped`, verify a corresponding archive directory exists at `active-project/theater/<slug>-archive/` containing at minimum `show.md` and `shoot-log.md`. If any are missing, stop and print:
+```
+Archive missing for <slug>. Previous episode theater files were not preserved.
+This is the skip-wrap drop-the-floor failure mode — show.md gets overwritten by the next episode prep.
+Run the skip-wrap procedure (see and-shoot.md "Skip-wrap procedure") to recover from git history before starting a new shoot.
+```
+This guard fires before any new theater files are touched. Do not override it by deleting the half-state — recover from git history instead (`git log -- active-project/theater/show.md` to find the end-of-shoot commit, then `git show <sha>:active-project/theater/<file>` to extract).
+
+---
+
+## Skip-wrap procedure
+
+Wrap is the canonical close. If you must skip /and-wrap and move directly to the next episode, run this procedure **before** /and-shoot — never let theater/show.md be overwritten or cleared in place.
+
+1. Confirm the current episode's status is `shot` in showrunner memory.
+2. Create `active-project/theater/<current-slug>-archive/`.
+3. Move (not copy, not delete) all four theater working files into the archive: `show.md`, `shoot-log.md`, `episode-plan.md`, `episode-plan-log.md`.
+4. Advance `active.episode` in showrunner memory to the next planned episode.
+5. Commit with a message that names the archive: `skip-wrap: archive <slug> theater files; advance to <next-slug>`.
+6. Now run /and-shoot. Phase 1's archive integrity check will pass.
+
+The destructive failure mode this prevents: a "clear theater for next episode" commit that deletes show.md without archiving. Once the next shoot begins, the only recoverable copy is in git history — and if no one notices, it stays lost.
+
 ---
 
 ## Phase A — Episode Start
