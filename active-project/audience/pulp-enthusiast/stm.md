@@ -158,7 +158,7 @@ What landed: This is a scene-open with a live threat already established (e05 ca
 
 ---
 
-### Line reviewed: s01e06 show.md line 7 (bullet 2, held-watch time-passage beat)
+### Line reviewed: s01e06 show.md line 7 (bullet 2 attempt 1, held-watch time-passage beat)
 
 "The cold has gone another shade into the stone behind my shoulderblades... what passes from the smear through the held bird through the empty road through the wall into me is the count of a thing that has not happened yet, accumulating the only place it can accumulate, which is in the part of the body the cold is reaching now."
 
@@ -167,3 +167,16 @@ What landed: This is a scene-open with a live threat already established (e05 ca
 What failed: This is the second consecutive static beat. B1 was accepted narrowly on the grounds that the clock was named and the threat was present. B2 is the same board with nothing added except cold going deeper and absence deepening. The board has not changed — the smear has not brightened, the bird has not turned, the road has not given. Five negations name what is not happening. The escalation test fails: the situation is not worse, only colder. The fidget flag carried from B1 is now active. The brief-setup grace (1–2 beats accepted when threat is present and worsening) does not extend to a second beat where the board is static. This persona is refilling a drink.
 
 **Carry-forward demand (escalated from flag to demand):** B3 must deliver a board change. The raven turning its head is the minimum — a real event, not further named absence. B5's lantern-joining is the payoff this beat is holding space for, but the space is now overlong. If B3 delivers the board change per the shoot plan, no further action needed. If B3 is also atmosphere-maintenance, this persona's fidget becomes a walkout.
+
+---
+
+### Line reviewed: s01e06 show.md line 7 (bullet 2 attempt 2, mouse-crossing beat — retry)
+
+"A mouse-shape steps in the seam at my left hip — wall-weight, the small one, repositioning at the pace of a thing that has had no reason to learn caution — and the passive feed takes the spike of it the way the feed takes any movement against a still field, too loud for the half-second of the crossing, the warmth of it brief against the cold mass of the wall before it sets down again into the next seam. I do not turn. I do not lift the hip off the stone to watch what my eye could not have seen anyway, because following a mouse with the head would tell the yard's own perimeter the wall has a mind on it that knows where to look, and the yard does not need to know. The wall takes another measure of the warmth I have been giving it and I let it take the measure. The small thing finishes the seam. The feed comes back to its still plane. The wire to the post is still humming the one note. The smear at half a league has not moved."
+
+**Verdict: ACCEPT**
+
+What landed: The demand was for a verb of occurrence — something that happens, not further named absence. The mouse crossing delivers it. Feed spikes. Taylor makes an active tactical decision under a legibility threat: I do not turn, because turning would register. The yard's own perimeter intelligence is the stake that makes not-turning a decision rather than a wait. That is the board becoming more interesting — Taylor is embedded inside a sensorium she does not control, and every externally visible behavior is a read the yard performs on her. The spike and recovery is a mini-escalation with a real constraint: she cannot respond to what her feed detected without revealing that she detected it. "The situation is more interesting" test passes. The demand is met. B3 still needs to deliver the next board change on schedule — this persona's patience for predawn watch atmosphere is not infinite, and the carry-forward demand for a real event within the next few beats stands. But this beat earns its place.
+
+**Carry-forward demand updated:** The demand for B3 board change stands, restated as: the raven must turn its head or the smear must shift or the approach window must close or open — something irreversible must move on the macro board within the next two beats. The micro-escalation of the mouse-beat does not substitute for that. Patience extended by one beat, no more.
+

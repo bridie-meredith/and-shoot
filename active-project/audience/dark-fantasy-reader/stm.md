@@ -157,7 +157,7 @@ What landed: The setting is hostile and indifferent — cold she cannot leave, f
 
 ---
 
-### Line reviewed: s01e06 show.md line 7 (bullet 2, held-watch time-passage beat)
+### Line reviewed: s01e06 show.md line 7 (bullet 2 attempt 1, held-watch time-passage beat)
 
 "The cold has gone another shade into the stone behind my shoulderblades... what passes from the smear through the held bird through the empty road through the wall into me is the count of a thing that has not happened yet, accumulating the only place it can accumulate, which is in the part of the body the cold is reaching now."
 
@@ -166,3 +166,16 @@ What landed: The setting is hostile and indifferent — cold she cannot leave, f
 What landed: The cold is not static — it has "gone another shade into the stone," a world that is actively pressing further into her body rather than merely surrounding her. The five negations (smear not brightened, bird not turned, road not given, seam-things not shifted, wire still humming) are not inertia — they are the count of absence, and that count accumulates in a body that the cold is emptying. "The count of a thing that has not happened yet, accumulating the only place it can accumulate, which is in the part of the body the cold is reaching now" is the correct Planetos register for foreknowledge dread: not hope, not impatience, but dread filling the physical space the cold is claiming. The world is not bending; absence is a form of hostile indifference. No false catharsis; no comfort; the setting is still pressing.
 
 **Pattern flag update:** The cold-advancing-further registers as body-cost accumulating in real time. The baseline holds: power managed, cost present in the body, world indifferent. B3 forward must maintain — if the raven turns and the road changes and this cost vanishes without acknowledgment, that is the flag.
+
+---
+
+### Line reviewed: s01e06 show.md line 7 (bullet 2 attempt 2, mouse-crossing beat — retry after pulp-enthusiast rejection)
+
+"A mouse-shape steps in the seam at my left hip — wall-weight, the small one, repositioning at the pace of a thing that has had no reason to learn caution — and the passive feed takes the spike of it the way the feed takes any movement against a still field, too loud for the half-second of the crossing, the warmth of it brief against the cold mass of the wall before it sets down again into the next seam. I do not turn. I do not lift the hip off the stone to watch what my eye could not have seen anyway, because following a mouse with the head would tell the yard's own perimeter the wall has a mind on it that knows where to look, and the yard does not need to know. The wall takes another measure of the warmth I have been giving it and I let it take the measure. The small thing finishes the seam. The feed comes back to its still plane. The wire to the post is still humming the one note. The smear at half a league has not moved."
+
+**Verdict: ACCEPT**
+
+What landed: The mouse beat does not break the dread register and does not read as twee. The occurrence is tiny — a wall-thing repositioning "at the pace of a thing that has had no reason to learn caution" — and the framing is threat-logic throughout, not warmth or comfort. The discipline of not turning is framed as a read-check the yard's perimeter performs on her: "following a mouse with the head would tell the yard's own perimeter the wall has a mind on it that knows where to look." The world's perimeter intelligence is the thing that makes not-turning costly — she is inside a sensorium she does not control, and any externally visible behavior is a legibility event. "The wall takes another measure of the warmth I have been giving it and I let it take the measure" — the world continues to consume her; the mouse does not interrupt that. Feed spike and recovery is power as uncertain force responding to environment, not Taylor deploying it cleanly. No comfort, no false catharsis, no hope that costs nothing. The hostile-indifferent baseline holds through the occurrence.
+
+**Pattern flag update:** The yard-as-sensorium element is now live — the yard has perimeter intelligence (birds Taylor does not control) that reads her behavior. Any scene where Taylor moves visibly without accounting for what the yard's own birds might register is a flag against this established cost. The consumption continues: the wall is still taking her warmth after the mouse clears the seam.
+
