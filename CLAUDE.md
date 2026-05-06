@@ -9,14 +9,16 @@ Autonomous fiction pipeline. The system authors creative fiction across a series
 ## Primary pattern
 
 ```
-project activation → season start → episode start → shoot → and-wrap → repeat
+project activation → season start → (episode start → shoot)* → bulk and-wrap → repeat
 ```
+
+**Default flow is shoot → shoot → shoot.** /and-wrap is opt-in and typically run in bulk after a stretch of episodes is shot. /and-shoot Phase 0 auto-archives the previous episode's theater files into `theater/<slug>-archive/` so they survive until wrap is called.
 
 - **Project activation** — archive previous active-project, scaffold new one, world-build, plan series and first season, human audit checkpoint, first episode start.
 - **Season start** — revisit series plan, establish season drama, plan episodes.
 - **Episode start** — screen-writer expands episode chunk into script, audience and dramatist review, shoot begins.
-- **Shoot** — showrunner reads bullets, coach translates to prompts, impersonators and studio execute, audience reviews each line.
-- **And-wrap** — dramatist marks scene boundaries and reviews thresholds, audience flags entertainment, auditor reviews constraints, editor produces final draft.
+- **Shoot** — showrunner reads bullets, coach translates to prompts, impersonators and studio execute, audience reviews each line. Phase 0 of the next /and-shoot archives this episode's theater files.
+- **And-wrap** — opt-in, single or bulk. Dramatist marks scene boundaries and reviews thresholds, audience flags entertainment, auditor reviews constraints, editor produces final draft. Reads from `theater/<slug>-archive/` for already-archived episodes.
 
 ---
 

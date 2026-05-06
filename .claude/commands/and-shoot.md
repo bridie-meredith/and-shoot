@@ -1,5 +1,5 @@
 ---
-description: Run a full episode shoot: expand the active episode chunk to a bullet plan, then write the show file line by line. Produces the raw show file. Run /and-wrap afterward to close the episode. Usage: /and-shoot [episode-slug]
+description: Run a full episode shoot: expand the active episode chunk to a bullet plan, then write the show file line by line. Produces the raw show file. Phase 0 auto-archives the previous shot episode. Wrap is opt-in (run /and-wrap later, single or bulk). Usage: /and-shoot [episode-slug]
 ---
 
 Takes the active episode chunk from showrunner memory and produces a raw show file in `active-project/theater/show.md`. Covers two phases: episode start (plan) and shoot (show file). Wrap is a separate command.
@@ -36,25 +36,33 @@ Delete show.md and shoot-log.md manually to restart from scratch, then re-run /a
 **Archive integrity check.** For every episode in the season plan whose status is `shot` or `wrapped`, verify a corresponding archive directory exists at `active-project/theater/<slug>-archive/` containing at minimum `show.md` and `shoot-log.md`. If any are missing, stop and print:
 ```
 Archive missing for <slug>. Previous episode theater files were not preserved.
-This is the skip-wrap drop-the-floor failure mode — show.md gets overwritten by the next episode prep.
-Run the skip-wrap procedure (see and-shoot.md "Skip-wrap procedure") to recover from git history before starting a new shoot.
+This is the skip-wrap drop-the-floor failure mode — show.md was overwritten by a later episode prep.
+Recover from git history before starting a new shoot:
+  git log -- active-project/theater/show.md       # find the end-of-shoot commit for <slug>
+  git show <sha>:active-project/theater/<file>    # extract each file into theater/<slug>-archive/
 ```
-This guard fires before any new theater files are touched. Do not override it by deleting the half-state — recover from git history instead (`git log -- active-project/theater/show.md` to find the end-of-shoot commit, then `git show <sha>:active-project/theater/<file>` to extract).
+Do not override this guard by deleting the half-state.
 
 ---
 
-## Skip-wrap procedure
+## Phase 0 — Auto skip-wrap (default)
 
-Wrap is the canonical close. If you must skip /and-wrap and move directly to the next episode, run this procedure **before** /and-shoot — never let theater/show.md be overwritten or cleared in place.
+**Wrap is opt-in. The default flow is shoot → shoot → shoot, with /and-wrap deferred for bulk wrapping later.** When /and-shoot starts, the previous episode's theater files are still sitting in `active-project/theater/`. Phase 0 archives them before Phase 1 runs.
 
-1. Confirm the current episode's status is `shot` in showrunner memory.
-2. Create `active-project/theater/<current-slug>-archive/`.
-3. Move (not copy, not delete) all four theater working files into the archive: `show.md`, `shoot-log.md`, `episode-plan.md`, `episode-plan-log.md`.
-4. Advance `active.episode` in showrunner memory to the next planned episode.
-5. Commit with a message that names the archive: `skip-wrap: archive <slug> theater files; advance to <next-slug>`.
-6. Now run /and-shoot. Phase 1's archive integrity check will pass.
+Sequence:
 
-The destructive failure mode this prevents: a "clear theater for next episode" commit that deletes show.md without archiving. Once the next shoot begins, the only recoverable copy is in git history — and if no one notices, it stays lost.
+1. Read `active-project/staff/showrunner/memory.md`. Find the most recent episode with status `shot` (not yet `wrapped`). Call this `<prev-slug>`.
+2. If `<prev-slug>` exists and `active-project/theater/<prev-slug>-archive/` does **not** exist:
+   - Create `active-project/theater/<prev-slug>-archive/`.
+   - Move all four theater working files into the archive: `show.md`, `shoot-log.md`, `episode-plan.md`, `episode-plan-log.md`. Use `git mv` so history follows.
+   - Commit with message: `skip-wrap: archive <prev-slug> theater files; advance to <new-slug>`.
+3. If no `shot` episode exists (first episode of the project) or its archive already exists, Phase 0 is a no-op.
+
+Phase 0 must succeed before Phase 1's archive integrity check runs. If Phase 0 detects ambiguity (e.g., multiple `shot` episodes without archives, or theater files that don't match any `shot` episode), stop and surface the state to the human rather than guessing.
+
+Wrap is invoked explicitly with /and-wrap (single episode) or in bulk later. /and-shoot never calls wrap.
+
+---
 
 ---
 
@@ -181,7 +189,7 @@ LOG FILES
   active-project/theater/episode-plan-log.md
   active-project/theater/shoot-log.md
 
-[Shoot complete. Review show.md, then run /and-wrap to close the episode.]
+[Shoot complete. Theater files will auto-archive at the start of the next /and-shoot. Run /and-wrap (single or bulk) when ready to close.]
 ```
 
 If there are escalations requiring human decision, present them before the closing line with: `ESCALATIONS REQUIRING YOUR DECISION:` followed by each one.
