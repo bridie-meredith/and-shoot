@@ -2,6 +2,9 @@
 
 ---
 
+2026-05-06 | s01e06 scene 1 | SET FORMATION — sept exterior yard, predawn
+Episode transition from s01e05 close (late afternoon → dusk). 1-2 day episode interval elapsed. Location: sept exterior yard, south face of the sept building. Predawn, deepest cold of the diurnal cycle, no lanterns in the yard. Taylor pressed back against the sept wall, still, in active fauna deployment: one raven on the yard's gatepost watching the road north toward Harrenhal. Deployment cost window: open at scene start, under 5 minutes active (clean window per cond-fauna-control-rules). Gatehouse lantern at Harrenhal: visible as amber smear at half a league — the only light-source in the northward field. Road north: empty. S01e05 deployment cost fully resolved by episode interval. Carry-forwards: Osmynd's body on altar table inside sept (unattended), wardship document on chancel shelf, Rowan inside (motherhouse letter), ten-day Celtigar clock running, district ledger contest (Plumm + Bracken) unresolved. Episode 6 vibe-cloud active: the-yard-and-the-hall, three-ravens-on-the-eave, involuntary-structure, the-resolution, the-naming, the-acknowledgment.
+
 2026-05-04 | s01e01 bullet 1 | SET FORMATION — sept courtyard (exterior)
 Scene transition from sickroom interior (prior set) to sept courtyard exterior. Morning, autumn, Riverlands 120 AC. Census officer's cart placed on road outside the sept gate — furled lord's banner on crossbar, officer and clerk not yet through the gate. Taylor holds septon's letter of attestation. Septon's written materials (ledger, writing board) with clerk, not yet deployed. Cond-impressment-census-120ac added to active conditions for this scene.
 
