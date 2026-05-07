@@ -105,13 +105,21 @@ The disambiguation gate: fire where the proto-line word is *bare* (e.g., "wind" 
 
 ### feeling flags (`facets/feeling.md`)
 
-What a non-POV character feels and whether they would express it.
+What a character (POV or non-POV) **shows** through a somatic tell — body, gesture, posture, breath, gaze — when the audience cannot read the interior from the proto-line + already-cited facets alone. The somatic tell is the entry; the named feeling is forbidden in description.
 
 ```
-<id> @<proto-line-id> <character-slug> feels <feeling> | expressed: <yes|no|partial> | <one-clause if expressed>
+<id> @<proto-line-id> <character-slug>: <somatic-tell-one-clause> | expressed: <yes|partial|no>
 ```
 
-**Author:** dialogue-writer fork for that non-POV character.
+`expressed:` denotes whether the in-scene audience reads the tell — `yes` (visible to others present), `partial` (visible to attentive observer), `no` (interior-only; reader sees, in-scene characters miss).
+
+Forbidden: named-feeling vocabulary, `feels` verb, hedges (`like` / `as if` / `kind of` / `almost`), similes, comparisons, idioms-for-feeling, original-figure metaphors, synonym-ladder evasion. Body register only; the action is what it is, not what it resembles.
+
+Per-character per-scene cap ≤1 (hard). Sparsity 2-5%. Multi-justification ≥3 of 5 (somatic-tell-card-match + Q1-audience-cannot-otherwise-read + Q2-meaningful + scene-eligible + functional-register ≥2 of 4 from {realization / grim humor / social commentary / painting characterization}).
+
+**Author:** dialogue-writer fork per character (POV and non-POV both eligible). Each fork authors only its own character's feelings.
+
+(Previous non-POV-only + named-feeling content shape deprecated 2026-05-07 with feeling-flags facet tuning. See `design/shoot-v2/feeling-tuning-package.md`.)
 
 ---
 
