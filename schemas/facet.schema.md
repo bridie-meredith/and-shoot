@@ -85,15 +85,21 @@ The target reference may be a prior episode's proto-line ID, a card slug (e.g. `
 
 ---
 
-### loudness flags (`facets/loudness.md`)
+### sensory flags (`facets/sensory.md`)
 
-Volume spikes and drops. Sparse — only at inflection points.
+Cross-modal sensory inflections — discrete perceptual deltas the proto-line language does not self-carry. Sparse and frugal — only at inflection points where the audience needs the flag to land the perception.
 
 ```
-<id> @<proto-line-id> <up|down|spike|drop> <one-clause description>
+<id> @<proto-line-id> <modality>: <old-state> -> <new-state>
 ```
+
+`<modality>` is one of: `sound | light | smell | thermal | humidity | pressure | tactile`. Optional `# tag: <up|down|spike|drop>` annotation may follow the delta for inflection-class shorthand.
+
+The disambiguation gate: fire where the proto-line word is *bare* (e.g., "wind" needs flagging to convey "blistering wind"); refuse where the proto-line word is *charged* and self-carries (e.g., "thunder", "shadow", "stench" — flagging is redundant). Per-scene cap ≤ 3; sparsity 3-6%; modality-coverage ≥2 per episode (per-season ≥3).
 
 **Author:** studio.
+
+(Previous loudness-only definition deprecated 2026-05-07 with sensory-flags facet tuning. See `design/shoot-v2/sensory-tuning-package.md`.)
 
 ---
 
