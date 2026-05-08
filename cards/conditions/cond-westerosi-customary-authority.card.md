@@ -95,6 +95,12 @@ A smallfolk who deviates from expected deference behaviors in a census situation
 
 For Taylor: the path from strange-child → flagged-for-review → held-at-harrenhal-pending-determination is the failure path she must not walk. Any deviation that lands her in review is a potential path to Harrenhal.
 
+## Cross-House Deputization (120 AC Lannister-Hightower Accommodation)
+
+Cross-house deputization for specific record-classes is canonical under the political accommodation between Lannister command and Hightower administration in 120 AC. A Lannister officer may hold a concurrent commission from a Hightower castellan deputizing him to document and file on a defined subject class (e.g., anomalous/unattached persons in shadow settlements), and records filed under that commission carry standing in the deputizing lord's record system. The deputizing lord retains adjudication authority; the deputy holds field intake and filing rights only.
+
+This accommodation is jurisdictional, not personal. It does not confer general wardship authority, household membership, or cross-house loyalty obligations. Its scope is limited to the subject class named in the commission.
+
 ## Interaction Notes
 
 **Pairs with `westerosi-smallfolk-dwelling-interior` and `westerosi-smallfolk-village-common`:** The dwelling is where Taylor is not observed; the common is where she is maximally observed under these social rules. The transition from dwelling to common is the social-exposure moment where deviations become visible.

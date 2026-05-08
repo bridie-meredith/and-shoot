@@ -180,3 +180,32 @@ What landed: The demand was for a verb of occurrence — something that happens,
 
 **Carry-forward demand updated:** The demand for B3 board change stands, restated as: the raven must turn its head or the smear must shift or the approach window must close or open — something irreversible must move on the macro board within the next two beats. The micro-escalation of the mouse-beat does not substitute for that. Patience extended by one beat, no more.
 
+---
+
+## Session: chapter-04 proto-line Pass 4 review (2026-05-07)
+
+### Chapter reviewed: chapter-04 (anomaly display — inspection party visits the sept and cottage)
+
+**Chapter verdict: PASS with flags**
+
+Window counts: 12 ENGAGED / 6 TOLERATED / 0 BORED. No BORED windows. Hard gate (3) clear.
+
+Hard gate (1) comprehensibility failure at W06 (line 100 "taylor-hebert-westeros reaches the yard gate" — spatial logic of Taylor at the gate vs. officials in the yard is ambiguous at bone level; verb of intention needed in prose authoring pass).
+
+Hard gate (2) violation: W16–W19 form a four-window consecutive TOLERATED run (limit: 2). The chapter's closing quarter — documentation closure → page pocketed → raven departs → officials exchange → departure → Taylor reaches the well — has no ENGAGED beat after W15. This is a structural gap in the bones that must be addressed before prose authoring.
+
+**Strong stretch:** W11–W15 (five consecutive ENGAGED). The raven sequence delivers the chapter goal geometry: anomaly display, castellan step-back, stare-down, retreat, raven clamping. Documentation apparatus distributed correctly across chapter (document arrives in W04, ledger in W08, page and stylus in W10, marking in W13/W15).
+
+**Prior flag status:** Episode 3 ACCEPT at plan level was conditional on Rowan's intercession broadening exposure and making things worse. Chapter-04 bones honor this: Rowan is present when the raven fires and is now a second witness. The dual-exposure condition survives. Plan-level accept confirmed at bone level.
+
+### Demands carried forward into prose authoring
+
+**Demand 1 (gate 1 repair):** Line 100 needs a verb of intention for Taylor at the yard gate. Not just spatial position — what is she doing there, and why does she stay rather than leave or return to center yard? The prose must supply this.
+
+**Demand 2 (gate 2 repair):** One ENGAGED beat must be inserted in the W16–W19 range. Preferred location: the castellan's exchange with Plumm (W18, lines 87–88) should carry a named next step — a destination for the page, a timeline for follow-up, a name dropped — that makes the threat mobile and irreversible before the riders leave. Alternatively, Taylor's arrival at the well (W19, line 99) should carry a tactical decision or board-count, not just a physical posture (gripping the wall stone is affect, not action).
+
+### Updated pattern flags:
+- Chapter-04 closing-quarter stall is the same structural problem as the Episode 5 closing-beat stall noted at plan level — this persona flags chapters that end with threats pending rather than moving; the departure sequence must include one irreversible board-change before the chapter closes
+- Documentation apparatus distributed correctly — carry this pattern into chapters 05 and beyond; documents arriving in stages is the correct escalation cadence for an administrative-threat story
+- Raven sequence (W11–W15) is the model for anomaly display — five-beat escalation with two simultaneous discomfort responses (step-back + stylus-grip) is exactly the complication density required; future anomaly moments should target this density
+- Comprehensibility failure pattern: out-of-sequence line markers (100, 101) create spatial ambiguity at bone level; these need verb-of-intention annotation before prose authoring or the reader loses the tactical situation

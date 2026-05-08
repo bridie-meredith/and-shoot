@@ -62,6 +62,18 @@ He would be unremarkable in a functioning institution. The institution is not fu
 **Better:** ordinary people doing ordinary things.
 **Severity:** strong. He recalculates when this happens and the recalculation is visible as a slight flatness while it occurs.
 
+## Concurrent Commission — Hatch Deputization (120 AC)
+
+Plumm holds a secondary commission from Lord Corwyn Hatch, Hightower-affiliated castellan of Harrenhal, deputizing him to assist with census and anomaly documentation in the Harrenhal-administered shadow settlements — the dispersed smallfolk communities and itinerant populations occupying the territory in Harrenhal's immediate shadow that fall outside the formal village rolls.
+
+**Scope:** anomaly documentation and entry into Hatch's record system. Specifically: unusual subjects, unclassified persons, and off-pattern behavioral or material anomalies flagged during Plumm's requisition circuits through the shadow settlements. He is the field intake officer; Hatch retains adjudication authority. Plumm records and submits; Hatch decides.
+
+**Standing produced:** this commission grants Plumm filing rights in Hatch's administrative record system for the class of subjects covered (anomalous/unattached persons in the shadow settlements). A recorder accepting Plumm's filing, or Hatch adjudicating on the basis of Plumm's submission, is institutionally correct. Plumm is acting as a legitimate cross-house deputy within the scope of the commission.
+
+**Origin:** the commission reflects the political accommodation between Lannister command and Hightower administration in the Riverlands at 120 AC. Lannister officers operating in Hightower-administered territory require a jurisdictional interface for anomalies that the Lannister requisition system is not equipped to adjudicate (wardship claims, status determinations, unclassified persons). Hatch deputized Plumm because Plumm's circuits already cover the relevant territory, not because of any particular regard for Plumm personally.
+
+**Plumm's relationship to this commission:** it is useful to him. The deputy role expands his official footprint in Hatch's record system and gives him a legitimate reason to be in the shadow settlements. It is also another surface for the interval — he records what Hatch needs to know, and he decides what Hatch needs to know.
+
 ## Stats
 
 - **institutional_cover**: high at series open; degrades as Taylor's information advantage accumulates

@@ -94,23 +94,42 @@ Brief: every line in every episode must remain legal under SVO mechanics AND con
 
 Output: `active-project/staff/auditor/season-<slug>-pass-S1-constraint.md`. File-level: `PASS` or `FAIL` with classified findings. Faults route to fixer; cross-episode constraint faults that require chunk-statement revision route as `escalate` (surface to user).
 
-### Pass S2 — Shape (dramatist, season scope)
+### Pass S2 — Shape (dramatist, season scope) — STRICT
 
 Dispatch **dramatist** with:
 - All per-episode proto-line files in canonical season order.
-- All episode-plans (chunk + change + theme per episode).
+- All episode-plans (chunk + change + theme + narrator + goal per episode).
 - `season-<slug>-plan.md` (escalation spine, forward flags).
 - `series-plan.md` (escalation spine).
 - Behavior cards (full inheritance stack) for the season's full active cast.
 
-Brief: assess the season as one curve. Sweep:
-- **Season-level rise-peak-fall:** per-episode peaks should escalate cumulatively per the season escalation spine. The terminal peak lands at the season-cap episode, not earlier.
-- **Episode-as-act structure:** each episode plays a structural role in the season's arc (setup / rising / midpoint / crisis / climax / falling). No episode is structurally redundant.
-- **Cross-episode flatlines:** 3+ consecutive episodes without an inflection beat is a season flatline.
-- **Forward-flag honor:** commitments from `season-plan.md` (e.g. "E4: active attempt required; E5: irreversible board action required") are visible in the corresponding episodes' proto-lines.
-- **Inter-episode tempo:** density and weight of inter-episode transitions (the time-skip and chunk-boundary moments) match the season's pacing register.
+You are a **strict** structural critic. Your job is to enforce dramatic shape at season scale — not approve it. A season that does not have an identifiable buildup, climax, and denouement is a structural failure regardless of how clean each chapter reads.
 
-Output: `active-project/staff/auditor/season-<slug>-pass-S2-shape.md` with `CLEAN` / `RE-ORDER-OR-REVISE` verdict, plus per-episode shape commentary if reorders are proposed. Reorders at season scope may move beats *between* episodes (a beat written at end-of-N moves to start-of-N+1) — these route to fixer with episode-pair scope.
+#### Mandatory structural identification (must be filled in)
+
+Before any other check, label the season's three structural acts by **citing specific chapters** (and where load-bearing, specific proto-line IDs):
+
+- **Season buildup (rising chapters):** chapters `<from>`–`<to>`. The chapters where season stakes are introduced and the season's question is posed. If you cannot name a buildup, flag `NO-SEASON-BUILDUP`.
+- **Season climax (peak chapter):** chapter `<n>` (and the specific proto-line IDs within that chapter that constitute the peak beat). The single highest-stakes chapter where the season's tension turns. If you cannot point to a single peak chapter, flag `NO-SEASON-CLIMAX`.
+- **Season denouement (falling chapters):** chapters `<from>`–`<to>`. The post-peak release. If absent, flag `NO-SEASON-DENOUEMENT`.
+
+Additionally, for **each chapter individually**, restate the dramatist's per-chapter Pass-3 structural identification (buildup IDs, climax ID, denouement IDs) at season scope. A chapter that converged at Pass 3 in isolation may now read differently against its neighbors — re-evaluate. If you cannot fill in a chapter's buildup/climax/denouement here at season scope, flag `CHAPTER-STRUCTURAL-FAILURE-<n>`.
+
+#### Per-chapter role in season arc
+
+Each chapter must play one and only one of: `setup` / `rising-1` / `rising-2` / `midpoint` / `complication` / `crisis` / `climax` / `falling` / `resolution`. Assign each chapter exactly one role and state what the chapter delivers to that role. A chapter whose role is unclear or duplicated is `REDUNDANT-CHAPTER-<n>`.
+
+#### Sweep checks
+
+- **Season-level rise-peak-fall:** per-chapter peaks escalate cumulatively per the season escalation spine. The terminal peak lands at the climax chapter, not earlier.
+- **Cross-chapter flatlines:** 3+ consecutive chapters without an inflection beat is a season flatline.
+- **Forward-flag honor:** commitments from `season-plan.md` (e.g. "E4: active attempt required; E5: irreversible board action required") are visible in the corresponding chapters' proto-lines. A missing commitment is a structural fault.
+- **Inter-chapter tempo:** density and weight of inter-chapter transitions match the season's pacing register.
+- **Premature peak / late peak:** climax chapter must be in the back half of the season (chapters 6–9 of 10 typical). Earlier or later flags `EARLY-SEASON-PEAK` or `LATE-SEASON-PEAK`.
+
+Output: `active-project/staff/auditor/season-<slug>-pass-S2-shape.md`. Verdict: `CLEAN` / `RE-ORDER-OR-REVISE` / `STRUCTURAL-FAILURE`. Include the mandatory structural identification table (season + per-chapter roles) at the top. Reorders at season scope may move beats *between* chapters (a beat written at end-of-N moves to start-of-N+1) — these route to fixer with chapter-pair scope. `STRUCTURAL-FAILURE` cannot be cleared by reorders alone — escalate to user with the named structural fault.
+
+Bias: when in doubt, flag. The cost of a false-positive is one revision; the cost of a false-negative is a structurally weak season that no facet authoring can rescue.
 
 ### Pass S3 — Trim (audience ×3, season scope)
 
@@ -121,9 +140,20 @@ Dispatch the three audience personas in parallel, each with:
 - All active actor vibes, studio vibes, persona cards, behavior cards.
 - Full series-plan and season-plan prose.
 
-Brief: walk every numbered non-blank line across every episode. Apply the trim test against the **season goal** rather than the per-episode goal. A line that serves its episode's local goal but actively distracts from the season arc is a deletion candidate. Voice-load-bearing test still applies (the actor's behavior signature licenses keeps).
+Brief: walk every numbered non-blank line across every chapter. Apply the trim test against the **season goal** rather than the per-chapter goal. A line that serves its chapter's local goal but actively distracts from the season arc is a deletion candidate. Voice-load-bearing test still applies (the actor's behavior signature licenses keeps).
 
-≥2-persona threshold for auto-accept deletion across episodes. File-level verdict per persona: `ACCEPT` or `REVISE-{one-clause-reason}`.
+**Entertainment-per-chapter check (MANDATORY).** You are a strict entertainment critic at season scale. For each chapter, log a one-line verdict:
+- **ENGAGED** — your taste finds the chapter delivers a hook your persona is paid to want; you would lean forward to read the next chapter.
+- **TOLERATED** — the chapter is functional but not entertaining in its own right.
+- **BORED** — your taste actively disengages; the chapter is dead weight or off-register or violating something your persona card cares about.
+
+Cap: a season may carry at most **one TOLERATED chapter** (typically a connective/setup chapter). Two or more TOLERATED chapters → REVISE with reason `season-attention-flatline-{chapter-range}`. Any BORED chapter → REVISE with reason `season-attention-failure-{chapter-n}` and a named cause.
+
+Apply your **persona-specific** taste hard. A season that satisfies the season-goal generically but fails *your* persona's appetite is a failure for *you* — say so.
+
+≥2-persona threshold for auto-accept deletion across chapters. File-level verdict per persona: `ACCEPT` or `REVISE-{one-clause-reason}`.
+
+Bias: when in doubt, REVISE. The cost of a false-positive REVISE is one screen-writer revision. The cost of a false-negative is a season readers will skim.
 
 Output: `active-project/staff/auditor/season-<slug>-pass-S3-trim-{persona}.md` × 3.
 
@@ -187,7 +217,13 @@ Dispatch the three audience personas in parallel (second invocation, distinct fr
 - The series.theme propagates into chapter-level beats; no chapter reads off-theme against neighbors.
 - The season's tonal register is consistent — pulp fast/dramatic at the spine; institutional cold at the customary-authority moments; etc.
 
-Per-persona output: `season-<slug>-pass-S6-vibe-{persona}.md`. File-level: `VIBE-ALIGNED` or `VIBE-DRIFT-{reason}`. Same ≥2-persona threshold for accepting drift flags.
+**Per-chapter vibe verdict (MANDATORY):** for each chapter, log one of:
+- `VIBE-ALIGNED` — the chapter sustains the active vibe-cloud and supports neighbor chapters' tones.
+- `VIBE-DRIFT-{reason}` — the chapter reads off-tone (pulp where institutional was needed, comic where dread was building, etc.). Name the reason concretely.
+
+Per-persona output: `season-<slug>-pass-S6-vibe-{persona}.md`. File-level: `VIBE-ALIGNED` (all chapters aligned) or `VIBE-DRIFT-{reason}` (one or more chapters drifted). Same ≥2-persona threshold for accepting drift flags.
+
+Bias: when in doubt, flag drift. Vibe drift compounds across chapters; catching it at S6 is cheaper than at facet authoring.
 
 ### Pass S7 — Facet-readiness (auditor #season-4, dedicated)
 
@@ -225,14 +261,16 @@ Faults route to fixer for line-level recast; structural implausibility (a chapte
 
 ### Pass S9 — Comprehensibility (audience ×3, third invocation)
 
-Dispatch the three audience personas in parallel (third invocation; distinct from S3 trim and S6 vibe). Brief: read the season as a comprehensibility test for a reader who only has the proto-line set + downstream stitched prose to work with.
+Dispatch the three audience personas in parallel (third invocation; distinct from S3 trim and S6 vibe). Brief: read the season as a comprehensibility test for a reader who only has the proto-line set + downstream stitched prose to work with. **You are also the entertainment-at-every-step gate of last resort.** If a reader would skim, disengage, or fail to track what is happening, the season is not shippable.
 
 Per-beat questions:
 - If this beat were *missed* by the reader (skim, distraction, flagged inattention), would the rest of the chapter still cohere? A beat whose absence would break comprehension is **load-bearing** — flag it as a candidate for emphasis, parallel anchoring (a second beat that conveys the same fact), or relocation to a more attention-prominent position.
 - Is the cause-effect chain between this beat and the next legible without exposition? If reader-comprehension requires interiority, narrator-summary, or off-stage knowledge, the chain is **fragile** — flag for either an additional bridge proto-line or a richer downstream facet investment.
 - Does the proto-line as written carry enough information for a reader to know *what happened* and *who did what to whom*? Ambiguous slugs, under-specified verbs (`taylor moves` with no destination), and pronoun-equivalent referents are flagged.
 
-Per-persona output: `season-<slug>-pass-S9-comprehensibility-{persona}.md`. File-level: `COMPREHENSIBLE` or `COMPREHENSIBILITY-RISK-{reason}`.
+Per-window entertainment check (~10 lines per window) for the entire season: log `ENGAGED` / `TOLERATED` / `BORED` per window. Two consecutive `BORED` windows OR three consecutive `TOLERATED` windows OR any single chapter where ≥30% of windows are `BORED`-or-`TOLERATED` → file-level `COMPREHENSIBILITY-RISK-attention-{detail}`.
+
+Per-persona output: `season-<slug>-pass-S9-comprehensibility-{persona}.md`. File-level: `COMPREHENSIBLE` or `COMPREHENSIBILITY-RISK-{reason}`. Bias: when in doubt, flag — this is the last gate before the season is shippable.
 
 Faults at this pass are particularly important because they predict facet-authoring pain. A beat that requires an explicit narrator-interest fire to be comprehensible is OK; a beat that requires a *miracle* of stitcher-rendering to be comprehensible is not.
 

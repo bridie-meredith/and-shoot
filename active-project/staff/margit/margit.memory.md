@@ -190,6 +190,75 @@ Four gaps identified in the existing constraint card set:
 
 ---
 
+---
+
+### TASK 10: oc-census-officer warehouse card authored — 2026-05-07
+
+**Request:** chapter-01 uses slug `census-officer` ~35 times; Pass 5 continuity + Pass S1 constraint audit require an `oc-*` slug-resolvable card in the warehouse.
+
+**oc-castellan-harrenhal check:** confirmed — card exists at cards/personas/oc-castellan-harrenhal.card.md (scope: library, full quality) and at active-project/actors/oc-castellan-harrenhal/card.md. Chapter-08 reference fully covered. No action needed.
+
+**oc-census-officer** (full quality, scope: project, variant-of: census-officer)
+- Warehouse: active-project/warehouse/oc-census-officer.card.md
+- variant-of: census-officer (existing full library card)
+- variant-reason: oc-* slug alias required by state-updates facet slug pattern and Pass 5 continuity audit
+- Content: minimal — name, role (crown-census-taker), affiliation (crown-administration), voice/manner summary, costume + props (census scroll, quill, ink pot, men-at-arms per ch-01 proto-lines), behavior signature, hard fences
+- Full characterization delegated to base card census-officer
+- Pre-mutation: no pre-mutation file needed (new card, no prior version)
+
+**Warehouse index:** active-project/warehouse/INDEX.md created (did not exist prior). Lists all warehouse personas, locations, and conditions.
+
+**Library index updates:**
+- cards/personas/INDEX.md — oc-census-officer added to: by_world/planetos, by_quality/full, by_trope/administrative-functionary, original_characters
+
+---
+
+---
+
+### TASK 11: chapter-02 persona cards authored — 2026-05-07
+
+**oc-plumms-man** (scant quality, scope: project + library)
+- Library: cards/personas/oc-plumms-man.card.md
+- Warehouse: active-project/warehouse/oc-plumms-man.card.md
+- Role: Ser Harwick Plumm's field retainer and scribe; chapter-02 field-record sweep walk-on. Distinct slug from `plumms-man` (full library card). Carries `variant-of: plumms-man` — full characterisation lives on the base card.
+- Tier: minor
+- Quality: scant
+- Index updates: added to cards/personas/INDEX.md — planetos / scant / administrative-functionary / original_characters; warehouse INDEX.md personas section updated
+
+**oc-girl-from-hamlet** (scant quality, scope: project + library)
+- Library: cards/personas/oc-girl-from-hamlet.card.md
+- Warehouse: active-project/warehouse/oc-girl-from-hamlet.card.md
+- Role: Riverlands hamlet smallfolk child; chapter-02 procedural extra. Observed, not heard. Not load-bearing across episodes.
+- Tier: minor
+- Quality: scant
+- Index updates: added to cards/personas/INDEX.md — planetos / scant / riverlands-background (new trope bucket) / original_characters; warehouse INDEX.md personas section updated
+
+---
+
+---
+
+### TASK 12: S8 worldbuilding patch — Plumm deputization — 2026-05-07
+
+**Trigger:** Season S01 Pass S8 plausibility audit (`active-project/staff/auditor/season-s01-pass-S8-plausibility.md`) returned REVISE with fault-B01 (Plumm lacks standing to file in Hatch's record system) and linked fault-A02 (Rowan's ch05 intercession with Plumm is misrouted absent that standing). Orchestrator resolved both via fault-B01 route (a).
+
+**Changes made:**
+
+| file | change |
+|---|---|
+| `cards/personas/ser-harwick-plumm.card.md` | Added `## Concurrent Commission — Hatch Deputization (120 AC)` section establishing: Hatch deputized Plumm for census + anomaly documentation in shadow settlements; scope = anomaly intake + entry into Hatch's record system; Hatch retains adjudication; origin = Lannister-Hightower political accommodation 120 AC |
+| `cards/personas/ser-harwick-plumm.pre-2026-05-07T000000Z.card.md` | Pre-mutation preservation copy written (pre-deputization version) |
+| `active-project/actors/ser-harwick-plumm/card.md` | Same deputization section applied to active-project working copy |
+| `cards/conditions/cond-westerosi-customary-authority.card.md` | Added `## Cross-House Deputization (120 AC Lannister-Hightower Accommodation)` section: one-paragraph note establishing cross-house deputization for specific record-classes is canonical under the 120 AC accommodation; deputizing lord retains adjudication; deputy holds field intake and filing rights only |
+| `active-project/warehouse/cond-westerosi-customary-authority.card.md` | Same section applied to warehouse copy |
+
+**INDEX.md impact:** none. Plumm's catalog position (planetos / full / corrupt-official) is unchanged. No new card authored; no slug change.
+
+**Faults resolved:**
+- fault-B01 — CLOSED. Plumm's filing standing in Hatch's record system is now worldbuilding-established. Recorder accepting Plumm's ch07 filing and Hatch adjudicating in ch10 are both institutionally correct.
+- fault-A02 — CLOSED (auto-resolves per B01 route-a). Septon Rowan's ch05 intercession with Plumm at the Harrenhal gatehouse is now plausible: Plumm holds field-level anomaly intake authority for the shadow settlement subjects, making him the correct (if not the only) party for an ecclesiastical challenge to an anomaly-track classification. Rowan going to Plumm rather than Hatch targets the person who controls the field documentation — a structurally defensible intercession point.
+
+---
+
 ### Pending items / flags
 
 - **taylor-hebert westeros variant** — RESOLVED. Card authored and stored. See TASK 6 below.

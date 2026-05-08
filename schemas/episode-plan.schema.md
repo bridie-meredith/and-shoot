@@ -1,69 +1,62 @@
 # Episode Plan Schema
 
-The episode plan is the script for one episode. It lives at `active-project/theater/episode-plan.md` and is written by screen-writer, reviewed by audience and dramatist, and approved by showrunner before shoot begins.
+The episode plan is the script-level prep for one episode (or chapter, under shoot-v2 season-decomposition). It lives at `active-project/theater/<slug>/episode-plan.md` and is written by screen-writer, reviewed by audience and dramatist, and approved by showrunner before the proto-line authoring pipeline runs.
+
+Schema authority: this file. Under shoot-v2, the script-bullet body is **deprecated** — the proto-line file (per `schemas/proto-line.schema.md`) replaces both the old script section and the show file.
 
 ---
 
-## Format
+## Format (shoot-v2)
 
 ```markdown
 # Episode Plan
 
 chunk: <chunk statement from season plan — what this episode delivers to the season arc>
+change: <expected change by end of episode — what is different from the start>
 theme: <episode theme — one line>
 actors: [<actor-slug>, <actor-slug>, ...]
-change: <expected change by end of episode — what is different from the start>
 constraints: [<constraint slug or one-line statement>, ...]
-
----
-
-## Script
-
-- STUDIO: <set formation or state change description>
-- <actor-slug>: <action or dialogue — one line>
-- <actor-slug>: <action or dialogue — one line>
-- STUDIO: <environmental change>
-- <actor-slug>: <action or dialogue>
-...
+narrator: <actor-slug>
+goal: <one sentence — what this episode shows the audience>
+interlude: <true | false>
 ```
+
+All eight fields are **required** under shoot-v2. Default narrator is the series protagonist (`taylor-hebert-westeros` for the active project) in first person; any chapter whose narrator is not the protagonist must set `interlude: true`. Interlude chapters are read by the dramatist and audience as deliberate POV deviations and are exempt from the cross-chapter narrator-consistency check that otherwise enforces protagonist POV. The `narrator` and `goal` fields propagate to the proto-line file's header (per `schemas/proto-line.schema.md`).
+
+A legacy `## Script` section may exist in older episode-plans (s01e01–s01e06 from shoot-v1). It is read for header content only; the body bullets are deprecated and ignored by shoot-v2 dispatches.
 
 ---
 
 ## Field notes
 
-**chunk** — goes first. This is the single thing this episode must accomplish for the season plan. If the episode doesn't deliver this, it has failed regardless of its quality. Pulled verbatim from the season plan's episode chunk statements.
+**chunk** — goes first. The single thing this episode must accomplish for the season plan. If the episode doesn't deliver this, it has failed regardless of its quality. Pulled verbatim from the season plan's per-episode chunk paragraph.
+
+**change** — the expected delta. What is true at end that was not true at start, or vice versa. At least one meaningful change must be achievable from this plan. Used by dramatist to check the episode delivers its chunk.
 
 **theme** — the emotional or thematic register of this episode. One line. Used by screen-writer, studio, and impersonators as a vibe-orienting anchor.
 
 **actors** — list of actor slugs active in this episode. These are the impersonators that will be spawned. Actors not on this list do not appear. Studio is always implicitly active and does not appear in this list.
 
-**change** — the expected delta. What is true at end that was not true at start, or vice versa. At least one meaningful change must be achievable from this plan. Used by dramatist to check the episode delivers its chunk.
+**constraints** — active constraints from law, lore, or behavior cards that specifically impact this episode's actors and set. Not the full series constraint list — only the ones relevant here. Auditor checks against these at Pass 2.
 
-**constraints** — active constraints from law, lore, or behavior cards that specifically impact this episode's actors and set. Not the full series constraint list — only the ones relevant here. Auditor checks against these.
+**narrator** — single actor slug. The POV character for this episode. Pass 5 (continuity) enforces narrator-consistency: lines whose content cannot be observed from this POV fault. The proto-line file inherits this header verbatim.
 
----
-
-## Script format
-
-Each bullet in the script = exactly one line in the show file.
-
-**Line types:**
-- `STUDIO: <description>` — studio records a state change to the set and environment. Studio writes to its own state files. Showrunner then identifies the POV actor and issues a perception prompt through coach. The actor describes the environment through their own perception. Studio does not write directly to the show file.
-- `<actor-slug>: <content>` — actor performs a dialogue line or action. Impersonator appends to show file.
-
-**Granularity rule:** Each bullet is a single beat — one thing that happens. Not a scene, not a paragraph. One dialogue exchange, one action, one environmental change. If a bullet describes multiple things, split it.
-
-**Ordering:** Script bullets are in sequence. Showrunner executes them in order. No skipping, no reordering during shoot.
+**goal** — one sentence. The episode's north star. Pass 4 (trim) walks every line against this goal; lines that don't serve it are deletion candidates. The proto-line file inherits this header verbatim.
 
 ---
 
-## How episode plans are built
+## Authoring (shoot-v2)
 
-1. Showrunner passes the episode's chunk statement and active constraints to screen-writer.
-2. Screen-writer expands the chunk into a detailed script (bullet list, scene by scene).
-3. Audience and dramatist review in parallel:
-   - Audience reviews for entertainment shape — what lands, what falls flat.
-   - Dramatist reviews for structural integrity — rise-peak-fall, meaningful change, chunk delivery.
-4. Screen-writer revises based on feedback. Both must accept, or three attempts are exhausted.
-5. If three attempts exhausted: proceed with most recent plan, flag for human review.
-6. Approved plan → showrunner. Showrunner reads bullets and begins shoot.
+1. **Series/season planning** establishes the episode's chunk in `season-<slug>-plan.md`.
+2. **Screen-writer (in season-decomposition mode)** authors the episode-plan with all seven required fields. Inputs: series-plan, season-plan, series.theme + laws + lore, active cast roster, active stage_elements, the per-episode chunk paragraph. Forbidden: past shoot artifacts.
+3. **Dramatist** reviews structural integrity — rise-peak-fall, meaningful change, chunk delivery, narrator/goal coherence. Strict bias: if the chapter has no identifiable buildup/climax/denouement structure, dramatist flags `STRUCTURAL-FAILURE` and routes back to screen-writer.
+4. **Audience** is not invoked at episode-plan authoring under shoot-v2 — taste calls happen at proto-line review (Pass 4).
+5. **Approved plan → orchestrator.** `/and-protolines` reads this file and runs the five-pass proto-line pipeline against it.
+
+---
+
+## What the legacy `## Script` section is (and why it's deprecated)
+
+Under shoot-v1, the script body was a bullet-list of `STUDIO: ...` and `<actor-slug>: ...` lines that showrunner walked during `/and-shoot`. Each bullet → exactly one show file line. This pattern is replaced under shoot-v2 by the proto-line file: the SVO bone-structure of the episode, authored through a five-pass pipeline, with facets attached at facet-authoring time. Show file authoring becomes a stitcher pass over proto-lines + facets, not a sequential impersonator-coach loop.
+
+Existing s01e01–s01e06 episode-plans retain their `## Script` sections as historical record. They are not consumed by shoot-v2 dispatches and are explicitly forbidden inputs to writer dispatches. New episode-plans authored under shoot-v2 do not include a `## Script` section.

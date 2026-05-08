@@ -125,13 +125,19 @@ Per-character per-scene cap ≤1 (hard). Sparsity 2-5%. Multi-justification ≥3
 
 ### metaphor flags (`facets/metaphor.md`)
 
-Comparisons, similes, allegories. Sparse by design — almost never used in end state unless dark humor or memory callback.
+Comparisons, similes, allegories. Sparse by design — fires only when licensed by a memory or feeling anchor, in callback or dark-humor register. Reading A scope: **explicit comparisons only** (similes, predicative metaphors, single-anchor allegories). Idioms, environmental-agency personifications, and figurative-compression-without-comparator are out of scope.
 
 ```
-<id> @<proto-line-id> <metaphor / simile / allegory>: <text>
+<id> @<proto-line-id> <kind>: <text> | licensed-by: <anchor> [+<support> ...]
 ```
 
-**Author:** editor (taste call). May be culled aggressively in cross-facet pass.
+`<kind>` is one of `metaphor | simile | allegory`. `<anchor>` is exactly one of `memory:<id>` or `feeling:<id>` (mandatory). `<support>` is zero-or-more of `tens:<reading>` | `sensory:<id>` | `ni:<id>` | the other anchor type. Multi-justification requires ≥2 layers from `{memory, feeling, tens}`; anchor counts as one.
+
+Per-scene cap ≤1 cross-character. Sparsity 0-3% (zero-fires-per-episode acceptable). Functional registers: callback OR dark-humor (other registers refused). Hard fences absolute (no Earth-Bet proper nouns; AP5 is a label-fence, not a figure-fence — Earth-Bet monument resonance carried through structural figure is the intended doubled-register mechanism). Allegory single-anchor only (multi-beat allegory collapses to strongest beat or refuses). Audience-meaningful inherited transitively from the cited memory or feeling anchor.
+
+**Author:** editor (taste call; refuse-by-default). Author-time hard cull + cross-facet hardest cull (delete-only).
+
+(Previous schema-current shape `<metaphor / simile / allegory>: <text>` without explicit `licensed-by:` field deprecated 2026-05-07 with metaphor-flags facet tuning. See `design/shoot-v2/metaphor-tuning-package.md`.)
 
 ---
 
@@ -151,15 +157,26 @@ Where state changes — actor state, location state, prop state. Source for batc
 
 ### vibes updates (`facets/vibes.md`)
 
-Where vibe-cloud entries shift — episode, season, or series vibes.
+Persistent operator-bias tags that stick to entities (actors, locations, props) or scopes (episode / season / series). Each vibe is a `keyword: [token-bundle]` — keyword indexes; tokens are word-algebra read by downstream operators (dialogue-writer, studio, NI, feeling, metaphor, behavior-pack). Vibes are **read** by operators before generation; they are **never rendered as prose**. They bias the writer; they do not appear on the page.
 
 ```
-<id> @<proto-line-id> <scope>:<key> <op> <value>
+<id> [@<proto-line-id>] <target> <op> <keyword>: [<token>, <token>, ...] | licensed-by: <source>[, <source>...]
 ```
 
-`<scope>` is `episode | season | series`. `<op>` is `+` (add), `-` (remove), or `=` (replace). Showrunner applies at the same phase boundary as state updates.
+- `[@<proto-line-id>]` — **optional** anchor. Required when licensed by an on-screen beat; omitted when licensed by off-screen / pre-episode / inter-episode reflective context.
+- `<target>` — `actor:<slug>` | `loc:<slug>` | `prop:<slug>` | `episode` | `season` | `series`. Entity targets are primary; scope targets reserve for ambient atmosphere not entity-bound.
+- `<op>` — `+` (add new keyword to target's vibe-set; token-bundle required) | `-` (retire keyword; token-bundle omitted) | `++` (extend tokens for an existing keyword; token-bundle required, must not duplicate existing tokens by string match). No `=` op.
+- `<keyword>` — hyphenated index handle. Semantic. One per vibe.
+- `<token>` — hyphenated word-algebra phrase, comma-separated within `[...]`. No prose, no sentences. Sentence-parsability test: a token is forbidden if it parses as a complete sentence with subject + finite verb + object. Long compressions (8+ segments) are permissible if structured as a single noun-phrase with compressed modifiers.
+- `<source>` — one or more of `state-update:<id>` | `memory:<id>` | `feeling:<id>` | `proto:<id>` | `tens:<reading>` | `canon:<gloss>` | `world-build:<gloss>`. ≥1 required.
 
-**Author:** showrunner (cross-cutting; the only agent with all-vibe-cloud visibility).
+Vibes are permanent stickers — a vibe added in s01e01 persists to s01e02+ unless explicitly retired with `-`. Transient mood / scene-tone / momentary feeling are NOT vibes (those belong to sensory / feeling / tens facets). Sparsity is liberal — no upper ceiling, since vibes are not rendered in prose. Pre-seeded projects (world-build authored vibe-clouds before facet authoring) force `++`-or-skip op behavior on pre-loaded keywords; gate-2 (op coherence) applies to all targets including episode/season/series scope without exception.
+
+`licensed-by:` is mandatory and machine-resolvable. Multi-source preferred. Cross-target fan-out — events affecting multiple entities should fan-out fires across the affected entities (POV + on-stage co-witnesses + scope target + on-stage location if charged).
+
+**Author:** showrunner (cross-cutting; the only agent with all-vibe-cloud visibility). No per-character forks. **Reviewer:** mechanic auditor only (no dialect audience — vibes are not voice-bearing).
+
+(Previous schema-current shape `<scope>:<key> <op> <value>` with scope episode/season/series only and no `licensed-by:` field deprecated 2026-05-07 with vibes-updates facet tuning. Schema content shape revised to entity-target-primary form with formal `licensed-by:` field. See `design/shoot-v2/vibes-tuning-package.md`.)
 
 ---
 

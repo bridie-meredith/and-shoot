@@ -1,18 +1,42 @@
 STATE:
-  location: westerosi-smallfolk-village-common (off the headman's trestle, at the cart-track, body turned east, satchel at the hip)
+  location: unknown — departed Harrenhal interior side chamber ch08 line 26; presumed en route onward circuit east
+  sublocation: last confirmed position: inside Harrenhal interior side chamber (loc-harrenhal-interior) — conducted cognitive assessment of Taylor ch08 lines 1-26; exited side chamber ch08 line 26 (RESTRUCTURE 2026-05-07: assessment relocated from sept cottage to Harrenhal interior side chamber; RESIDUAL-1 fauna-range violation resolved by placing Taylor within fauna-control range inside Harrenhal, not by amending the constraint); subsequent location unrecorded in proto-line sequence
   condition: []
   inventory:
-    - traveling cloak (worn; chain still showing at the throat where the cloak parted at the lean — not yet drawn closed for the road)
-    - maester's chain (worn; in the proceeding's light through close — silver, copper, black iron, pale grey; weight at the sternum)
-    - satchel (closed, latch worked, lifted off the table; strap on the right shoulder, weight settled against the hip at the working ride)
-    - auxiliary extract (back in the satchel, returned to its travelling form under the same hand that opened it)
-    - small notebook (back in the satchel; working page folded against the prior entries; Citadel-notable laid in across the working line)
-    - pen (back in the satchel's side pocket where the hand finds it without looking)
-    - pattern sheet (back in the satchel, folded along its original folds)
+    - traveling cloak (worn)
+    - maester's chain (worn)
+    - satchel (closed; in transit)
+    - prop-assessment-roll (sealed roll of assessment parchments — ch08 line 22-23: rolled assessment parchments, sealed the roll; carried out at ch08 line 26 when exiting side chamber; in transit toward Harrenhal or Oldtown via Citadel raven)
+    - small notebook (in satchel; Citadel-notable notation recorded during ch05 village common interview; private; not shown to parties)
+    - pen (in satchel)
+    - auxiliary extract (in satchel)
+    - pattern sheet (in satchel)
   notes:
-    - proceeding closed under the steward's hand on the same motion the steward used to open it: scroll up off the table, column retracted into travelling form
-    - the rider departure was a passive subtraction at the western margin — handled without the eye lifting; warmth-mass past the bend, western quadrant flat again
-    - body off the trestle and turned east; eye on the cart and the open road behind it; not-looking-back is the closing posture, one beat
-    - the record is now in transit: notebook in the satchel, satchel at the hip, the line that will travel by raven now physically moving toward the next posting and Oldtown
-    - the western track (common, chair that held the wardship document, kiln-wall margin, smallfolk) was not given an eye on departure — what is not in the satchel is not the chain's to carry
-    - migraine-glow behind the left orbit holding at the quarter-degree it took on at the rider's note; cost-curve filed
+    # MOVEMENT LOG:
+    #   ch05 (interlude, Rowan POV): maester present at village common — conducted interview
+    #   with septon-rowan; was at the headman's trestle; record in transit eastward after close
+    #   ch08 line 1-3: sets assessment table in Harrenhal interior side chamber (loc-harrenhal-interior)
+    #     (RESTRUCTURE 2026-05-07: assessment relocated from sept cottage to Harrenhal interior
+    #      side chamber; RESIDUAL-1 fauna-range 2.5km violation resolved by moving Taylor within
+    #      fauna-control 600m ceiling inside Harrenhal, not by amending cond-fauna-control-rules)
+    #   ch08 lines 1-26: conducts cognitive assessment of taylor-hebert-westeros inside side chamber
+    #   ch08 line 22-23: rolls assessment parchments, seals the roll (prop-assessment-roll created)
+    #   ch08 line 24-25: brief exchange with Taylor
+    #   ch08 line 26: westerosi-traveling-maester exits the side chamber — LAST PROTO-LINE APPEARANCE
+    #     delivers sealed roll to great hall (ch08-interlude opening); maester not present in great hall
+    #     when Celtigar letter is read (ch08 lines 65-88)
+    #   Post-ch08: not present in ch09 or ch10; assessment report sealed and in transit
+    #
+    # PROP NOTE:
+    #   prop-assessment-roll: sealed at ch08 line 23; carried out at ch08 line 26;
+    #   in transit to Harrenhal or Oldtown — content drives Celtigar inquiry (ch08 lines 65-88)
+    #   but the maester himself is not present at the Celtigar reading scene
+    #
+    # TIMELINE NOTE (auditor fault-011 + RESTRUCTURE 2026-05-07):
+    #   State file pre-update (fault-011) showed location westerosi-smallfolk-village-common (from ch05 close).
+    #   ch08 occurs after ch05 in story sequence — maester traveled to Harrenhal for assessment (not
+    #   back to sept cottage as previously recorded). Assessment now confirmed at loc-harrenhal-interior
+    #   (side chamber), consistent with ch08 orchestrator restructure decision iter3 2026-05-07.
+    #   Transit from village common to Harrenhal interior is unrecorded in proto-line sequence (gap).
+    #   State updated to reflect last confirmed location (Harrenhal interior side chamber at ch08 line 26)
+    #   and current presumed position (en route east post-assessment).

@@ -18,6 +18,7 @@ actors:
   - septon-rowan
   - ser-harwick-plumm
 narrator: septon-rowan
+interlude: true
 constraints:
   - cond-westerosi-customary-authority
   - cond-riverlands-120ac-state

@@ -39,10 +39,13 @@ planetos:
   - beric-dondarrion
   - census-officer
   - clerk
+  - oc-census-officer
   - edric-cray
   - lem-lemoncloak
   - mira-stonefield
   - oc-castellan-harrenhal
+  - oc-girl-from-hamlet
+  - oc-plumms-man
   - peasant-woman-forest
   - plumms-man
   - rhaenyra-targaryen
@@ -65,6 +68,7 @@ full:
   - beric-dondarrion
   - census-officer
   - clerk
+  - oc-census-officer
   - plumms-man
   - aisha-laborn
   - alec-vasil
@@ -108,6 +112,8 @@ full:
   - westerosi-traveling-maester
 
 scant:
+  - oc-girl-from-hamlet
+  - oc-plumms-man
   - peasant-woman-forest
   - victoria-dallon
   - viserys-i-targaryen
@@ -129,7 +135,8 @@ broken-by-circumstance: [elle-labyrinth, marissa-newland]
 noise-and-terror: [shatterbird, night-and-fog]
 political-power: [thomas-calvert]
 westerosi-local: [peasant-woman-forest, westerosi-traveling-maester, mira-stonefield, edric-cray, rymer-hedge, ser-aemon-bracken, ser-edwyn-celtigar, septon-rowan, oc-castellan-harrenhal, septon-dying-protector]
-administrative-functionary: [census-officer, clerk, plumms-man]
+administrative-functionary: [census-officer, oc-census-officer, clerk, plumms-man, oc-plumms-man]
+riverlands-background: [peasant-woman-forest, oc-girl-from-hamlet]
 brutal-pragmatist: [lem-lemoncloak]
 dying-cause: [beric-dondarrion]
 faith-recovered: [thoros-of-myr]
@@ -161,3 +168,6 @@ OC slots for margit to construct at project activation when a generic role is se
 - taylor-hebert-westeros (protagonist westeros-reincarnation variant; full; authored taylor-hebert-westeros provisioning 2026-05-03)
 - census-officer (impressment-functionary walk-on; full; authored during s01e01 partial shoot 2026-05-03; backfilled to library on reset)
 - clerk (census transcriptionist walk-on; full; authored for taylor-hebert-westeros s01e01 bullets 21-22; 2026-05-04)
+- oc-census-officer (oc-* slug alias for census-officer; warehouse walk-on; variant-of: census-officer; authored 2026-05-07 for chapter-01 Pass 5 continuity resolution)
+- oc-plumms-man (chapter-02 field-retainer/scribe walk-on; scant; variant-of: plumms-man; authored 2026-05-07 for chapter-02 dependencies)
+- oc-girl-from-hamlet (chapter-02 Riverlands hamlet child; procedural extra; scant; authored 2026-05-07 for chapter-02 dependencies)
