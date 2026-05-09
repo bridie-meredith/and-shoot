@@ -1224,3 +1224,14 @@ audit-reports:
   - active-project/staff/auditor/season-s01-pass-4-trim-worm-canon-pedant.md
 findings-queued: tbd (intersect candidate lists)
 note: deletion-only pass. Read all 3 audits, intersect candidate IDs, apply where ≥2 personas agree. Voice-load-bearing exceptions in any audit override deletion.
+
+intersect computed: 46 deletions — IDs 2,17,18,41,43,51,60,74,82,124,125,143,145,182,183,213,215,219,222,248,299,309,344,360,381,414,510,511,512,543,544,549,550,595,656,701,731,735,737,739,740,761,820,821,886,910
+skips-voice-load-bearing: IDs 732 (P VLB: last-pause before irreversible), 738 (P VLB: passes workshop = geography of betrayal)
+skips-solo-persona: see season-s01-pass-4-trim-fix-log.md for full per-ID log
+bored-escalation applied: IDs 739, 740 (BORED window 74 / 732-741 cluster, 1-persona escalation)
+
+## pass-4-trim — RESOLVED
+fault: s01.aggregate entertainment windows exceed TOLERATED cap; flatlines at early-baseline (W01-W06 pulp; W04-W06 dark-fantasy) and BORED window 74 (Elara transit 732-741, dark-fantasy)
+scope: episode (bulk line deletions across season aggregate)
+change: 46 lines deleted across s01.aggregate.md — 44 at ≥2-persona threshold, 2 at BORED-escalation override (IDs 739, 740). 2 VLB-protected skips (IDs 732, 738). Zero dependency conflicts.
+criteria met: yes — early-baseline cluster (IDs 1-149) reduced by ~22 beats; Elara transit (732-741) reduced from 9-beat block to 3 live beats (732 VLB, 738 VLB, 741 fist-raise); post-ignition cleanup (510-512) cleared; witness-inquiry courier (543-550) compressed from 10 to 5 beats.
