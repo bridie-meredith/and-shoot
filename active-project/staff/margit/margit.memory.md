@@ -168,4 +168,131 @@ The following are referenced in provisioned cards but not yet authored (carry-fo
 - `oc-tax-collector-retinue-lead` (ignition walk-on)
 - `oc-ignition-woman` (ignition walk-on)
 - `oc-wool-factor` (civilian intelligence node; S1 mid-arc target)
-- Condition cards: all deferred to step 1d per candidate-menu instructions
+
+---
+
+## Step 1d — Condition Card Authoring and Provisioning
+## Date: 2026-05-09
+
+---
+
+## Priority cards authored (7 new)
+
+All 7 authored to library first, then working copies provisioned to `active-project/warehouse/`.
+
+1. **cond-reincarnation-mechanics-84ac** — NEW (variant of cond-reincarnation-mechanics)
+   - Library: `/home/user/and-shoot/cards/conditions/cond-reincarnation-mechanics-84ac.card.md`
+   - Warehouse: `/home/user/and-shoot/active-project/warehouse/cond-reincarnation-mechanics-84ac.card.md`
+   - Scope: library (variant); variant-of: cond-reincarnation-mechanics; variant-project: taylor-hebert-jaehaerys
+   - Key differences: arrival age 7–8 (not 11), craftsman family in Fairstead (not orphan ward), ~17-year runway to Great Council 101 AC (not ~9 years to Dance), Shard-as-behavioral-weight framing, family (not septon) as protection structure, growth tracking across series arc added
+   - Base mechanics fully carried over; all situational apparatus (Harrenhal, septon-aldric, impressment census) replaced
+
+2. **cond-series-tone-constraints-84ac** — NEW (variant of cond-series-tone-constraints)
+   - Library: `/home/user/and-shoot/cards/conditions/cond-series-tone-constraints-84ac.card.md`
+   - Warehouse: `/home/user/and-shoot/active-project/warehouse/cond-series-tone-constraints-84ac.card.md`
+   - Scope: library (variant); variant-of: cond-series-tone-constraints; variant-project: taylor-hebert-jaehaerys
+   - Key differences: Great Council close as stress-test (not the Dance), costs-become-final-at-Council law, catharsis-prohibited-before-Dance law, no-scheming-through-foreknowledge rule added, cost-migration rule added, Shard reference integrated
+
+3. **cond-westerosi-customary-authority-jaehaerys** — NEW (variant of cond-westerosi-customary-authority)
+   - Library: `/home/user/and-shoot/cards/conditions/cond-westerosi-customary-authority-jaehaerys.card.md`
+   - Warehouse: `/home/user/and-shoot/active-project/warehouse/cond-westerosi-customary-authority-jaehaerys.card.md`
+   - Scope: library (variant); variant-of: cond-westerosi-customary-authority; variant-project: taylor-hebert-jaehaerys
+   - Key differences: Jaehaerys long peace as the dominant ambient (methodical not urgent institutional response), Tully suzerainty stable, House Ryger as local feudal weight, no Faith Militant (hard era constraint), Citadel at institutional peak, no impressment census (impressment census material removed entirely), new era-specific authority architecture section
+
+4. **cond-shard-behavioral-weight** — NEW
+   - Library: `/home/user/and-shoot/cards/conditions/cond-shard-behavioral-weight.card.md`
+   - Warehouse: `/home/user/and-shoot/active-project/warehouse/cond-shard-behavioral-weight.card.md`
+   - Scope: library
+   - Defines: Shard present at behavioral-weight level, dormant at Entity-communication level; persistent bias toward escalation and direct action; Taylor reads the bias as her own judgment; pressure-multiplier on existing OQ-3/C internal failure modes; impersonator loading guidance; the gap between Taylor's self-perception and reader's perspective
+   - Load requirement: impersonators must load this card to write Taylor's internal decision-making correctly
+
+5. **cond-smallfolk-political-physics** — NEW
+   - Library: `/home/user/and-shoot/cards/conditions/cond-smallfolk-political-physics.card.md`
+   - Warehouse: `/home/user/and-shoot/active-project/warehouse/cond-smallfolk-political-physics.card.md`
+   - Scope: library
+   - Defines: learned invisibility, posture of non-threat, informal credit and whisper networks, septon's charity as redistribution node, cost of being visible to power, benefit of collective compliance as armor, Taylor's organizing against this substrate, the community-legitimacy problem (Mira's gate)
+   - Load requirement: impersonators of supporting smallfolk characters must load this card
+
+6. **cond-suppression-policy-progression** — NEW
+   - Library: `/home/user/and-shoot/cards/conditions/cond-suppression-policy-progression.card.md`
+   - Warehouse: `/home/user/and-shoot/active-project/warehouse/cond-suppression-policy-progression.card.md`
+   - Scope: library
+   - Defines: 4 stages (incident-response ~86 AC → patterned-response ~87–90 AC → policy no later than mid-S3 → action ~98–101 AC); triggers for each stage; Pryor's incentive structure at each level; scene-level evidence for each stage; Tully involvement as Stage 4 trigger; the steward-as-clock framing
+   - Hard constraint: Stage 3 (policy level) must be reached no later than mid-S3
+
+7. **cond-riverlands-84ac-state** — NEW
+   - Library: `/home/user/and-shoot/cards/conditions/cond-riverlands-84ac-state.card.md`
+   - Warehouse: `/home/user/and-shoot/active-project/warehouse/cond-riverlands-84ac-state.card.md`
+   - Scope: library
+   - Defines: political ambient (Jaehaerys I, Alysanne, Septon Barth's legacy, Great Council horizon, Baelon and Rhaenys as background figures), regional ambient (Tully stable, Bracken-Blackwood feud as background, House Ryger, Blue Fork trade, Stoney Sept proximity), economic ambient (tax pressure, seasonal rhythms), religious ambient (no Faith Militant, old gods at the boundary, Barth legacy)
+
+---
+
+## Direct imports — no new authoring (3)
+
+Source cards in library; working copies provisioned to warehouse. `cond-fauna-control-rules` received project-scope adjustment (child-body cost ceiling) in warehouse copy.
+
+8. **condition-swarm-in-foreign-ecology** — IMPORT, no modification to library card
+   - Source: `/home/user/and-shoot/cards/conditions/condition-swarm-in-foreign-ecology.card.md`
+   - Warehouse: `/home/user/and-shoot/active-project/warehouse/condition-swarm-in-foreign-ecology.card.md`
+   - Note: direct copy, no modifications. Riverlands ecology description matches this project's geography exactly.
+
+9. **cond-no-parahuman-infrastructure** — IMPORT, updated for project
+   - Source: `/home/user/and-shoot/cards/conditions/cond-no-parahuman-infrastructure.card.md`
+   - Warehouse: `/home/user/and-shoot/active-project/warehouse/cond-no-parahuman-infrastructure.card.md`
+   - Note: warehouse copy updated to reference taylor-hebert-jaehaerys, to add explicit note on Shard behavioral-weight as permitted presence (does not violate prohibitions), and to cross-reference cond-shard-behavioral-weight
+
+10. **cond-fauna-control-rules** — IMPORT with project-scope adjustment
+    - Source: `/home/user/and-shoot/cards/conditions/cond-fauna-control-rules.card.md`
+    - Warehouse: `/home/user/and-shoot/active-project/warehouse/cond-fauna-control-rules.card.md`
+    - Adjustment: warehouse copy overrides the Physical Cost Curve section to reflect child-body ceiling (shorter fuse: active window 3–10 min onset vs 5–15 in base card, 10–20 nosebleed vs 15–30, 20+ blackout risk vs 30+); added ambient-vs-directed distinction (passive sense near-zero cost; active-control is where child-body ceiling bites); added growth-across-series timeline; added pre-ignition management note (2 years of suppressed passive sense before the ignition); library card not modified
+
+---
+
+## Useful additions authored (4)
+
+All 4 authored to library and provisioned to warehouse.
+
+11. **cond-faith-of-seven-jaehaerys** — NEW
+    - Library: `/home/user/and-shoot/cards/conditions/cond-faith-of-seven-jaehaerys.card.md`
+    - Warehouse: `/home/user/and-shoot/active-project/warehouse/cond-faith-of-seven-jaehaerys.card.md`
+    - Defines: post-Faith-Militant institutional character (50 years prior suppression, hard era constraint), Faith hierarchy and communication timeline, theological categorization of uncanny phenomena (full menu), Faith's relationship to smallfolk, Septon Rowan's specific position and dynamic
+
+12. **cond-maester-network-behavior** — NEW
+    - Library: `/home/user/and-shoot/cards/conditions/cond-maester-network-behavior.card.md`
+    - Warehouse: `/home/user/and-shoot/active-project/warehouse/cond-maester-network-behavior.card.md`
+    - Defines: placement function (minor lords may not have resident maester), ravens as the fast channel (does not extend to market towns), literacy and anomaly detection triggers, how anomalous findings travel upward (4-step chain), Citadel at institutional peak, Barth-era cooperative efficiency and its erosion, the traveling maester walk-on's scene function
+
+13. **cond-westerosi-superstition-frame** — NEW
+    - Library: `/home/user/and-shoot/cards/conditions/cond-westerosi-superstition-frame.card.md`
+    - Warehouse: `/home/user/and-shoot/active-project/warehouse/cond-westerosi-superstition-frame.card.md`
+    - Defines: general folk framework for categorizing uncanny (omens, blessings, curses, signs from the Seven, old gods' work, old magic, witchcraft), the Riverlands dual-tradition layer, how the ignition event is categorized by each witness type (retinue leader, smallfolk woman, bystanders, Rowan, traveling maester), the narrative vocabulary impersonators must use (and must not use), the "touched" category as Taylor's best early outcome
+
+14. **cond-feudal-hierarchy-law** — NEW
+    - Library: `/home/user/and-shoot/cards/conditions/cond-feudal-hierarchy-law.card.md`
+    - Warehouse: `/home/user/and-shoot/active-project/warehouse/cond-feudal-hierarchy-law.card.md`
+    - Defines: Iron Throne → Great House → bannerman → smallfolk; what each level can demand; nominal Faith protections; smallfolk recourse (essentially none); what Taylor is doing wrong legally (unlawful collective action, unauthorized practice of knowledge, unlawful assembly, the legally unanticipated power); how the hierarchy reads Taylor (3 categories: mentally affected, agent of a higher power, actual legal problem)
+
+---
+
+## Index updated
+
+`cards/conditions/INDEX.md` — added all 11 new slugs to by_world (planetos), by_quality (full), by_type (updated existing categories and added institutional-behavior and lore-ambient)
+
+---
+
+## Validation notes (step 1d)
+
+All 11 authored/adjusted cards checked against `schemas/card.schema.md` before storage:
+- All required frontmatter fields present (name, class, scope, origin, quality)
+- All condition cards: required sections populated (Description, Sensory Impact, Duration, Interaction Notes; plus substantive body sections as appropriate to each card's function)
+- Variant cards: variant-of and variant-reason fields set; variant-project set
+- References populated where applicable
+- No class violations (all authored cards are class: condition)
+- No schema violations detected
+
+---
+
+## Deferred cards
+
+None. All 7 priority cards and all 4 useful-addition cards were authored within scope. No deferral required.
