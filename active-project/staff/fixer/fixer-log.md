@@ -156,6 +156,16 @@ note: criteria already met; ID 908 is blank (deleted). No edit required.
 fault: ID 911 `oc-craftsman-mother's voice rises` — sound-level state description
 note: criteria already met; line reads `oc-craftsman-mother calls` (discrete vocalization act). No edit required.
 
+## SESSION-START — 2026-05-09T15:00:00Z — phase3-wave3-consolidated
+dispatch: fixer round 12 — insert-at integration + plausibility minimums
+target: active-project/theater/proto-lines/s01.aggregate.md
+audit-reports:
+  - active-project/staff/auditor/season-s01-pass-S3-trim-pulp-enthusiast-r2.md (insert integration demand)
+  - active-project/staff/auditor/season-s01-pass-S9-comprehensibility-worm-canon-pedant.md (cost beats not landed at 502-519)
+  - active-project/staff/auditor/season-s01-pass-S8a-plausibility-character.md (Elara reeve)
+  - active-project/staff/auditor/season-s01-pass-S8b-plausibility-event.md (3 events: rider, Elara, maester)
+findings-queued: 4 (1 mechanical + 3 plausibility)
+
 ## SESSION-END — 2026-05-09T00:12:00Z — season-s01-pass-2-round2-prime
 findings-applied: 36 (all RESOLVED-PRE-EXISTING; 0 required new edits to target file)
 findings-skipped: 0
