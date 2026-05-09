@@ -1387,3 +1387,43 @@ findings-pre-existing: 3 (FIX-1, FIX-2, FIX-3)
 findings-skipped: 0 (Group 4 drift-flag deferred per instruction)
 new-IDs-created: 925, 926, 927, 928, 929, 930, 931, 932, 933
 exit: CLEAN
+
+## SESSION-START — 2026-05-09T21:00:00Z — phase3-wave3-consolidated
+dispatch: fixer round 12 — insert-at integration + plausibility minimums
+target: active-project/theater/proto-lines/s01.aggregate.md
+audit-reports:
+  - active-project/staff/auditor/season-s01-pass-S3-trim-pulp-enthusiast-r2.md (insert integration demand)
+  - active-project/staff/auditor/season-s01-pass-S9-comprehensibility-worm-canon-pedant.md (cost beats not landed at 502-519)
+  - active-project/staff/auditor/season-s01-pass-S8a-plausibility-character.md (Elara reeve)
+  - active-project/staff/auditor/season-s01-pass-S8b-plausibility-event.md (3 events: rider, Elara, maester)
+findings-queued: 4 (1 mechanical + 3 plausibility)
+
+## FIX-1-WAVE3 — RESOLVED (bulk insert-at integration, 20 bones)
+fault: IDs 914-933 appended with insert-at comments not at their conceptual positions; audience personas read linearly and reported bones absent from structural context
+scope: episode (full file reorganization)
+change: rewrote aggregate file with all 20 insert-at bones physically placed at their target positions; insert-at comments removed (redundant once in position). Moves: 914→after334, 915→after511, 916→after46(before49), 917→after490, 918→after519, 919→after690, 920→after787, 921→after862, 922→after35, 923→after849, 924→after42, 925→after217, 926→after125/126, 927→after218(restoring absent219), 928→after233-blank, 929→after564-blank, 930→after43, 931→after51, 932→after618, 933→at300. All IDs preserved at original numbers. No anomalous pre-existing state detected.
+criteria met: yes
+
+## FIX-2-WAVE3 — RESOLVED (Elara reeve prior-acquaintance)
+fault: Elara's unsolicited house-call to the town reeve (IDs 741-747) implies standing/relationship not established; both S8a and S8b flagged plausibility gap
+scope: insert
+change: ID 934 inserted directly at target position between IDs 354 and 355 (census dock scene, when oc-lords-steward calls and oc-craftsman-father approaches the table). Content: `the town reeve faces oc-craftsman-father`. Establishes reeve has noted the Ashford family during census duty; Elara's later visit has prior-context ground.
+criteria met: yes
+
+## FIX-3-WAVE3 — RESOLVED (inquiry rider timing)
+fault: "inquiry rider" label implies same-day formal inquiry dispatch; per cond-suppression-policy-progression Stage 1 cadence (days-to-weeks), this is too fast
+scope: line
+change: IDs 542, 545, 546, 547, 551 — all instances of "inquiry rider" recast to "post rider". Routine post-rider carrying correspondence; label no longer implies same-day institutional inquiry dispatch.
+criteria met: yes
+
+## FIX-4-WAVE3 — RESOLVED (maester ferryman folio)
+fault: maester passes folio to ferryman (IDs 893-895); per cond-maester-network-behavior, ferryman as courier is outside maester operating norms
+scope: line (cluster 893-898)
+change: Recasted IDs 894-898 so maester boards the ferry himself (folio in own possession) rather than entrusting it to the ferryman as courier. 894: `the maester boards the ferry`; 895: `the ferryman poles the ferry`; 896: `the maester grips the folio`; 897: `the maester faces the far bank`; 898: blank. ID 906 `the ferry folio crosses the water` remains consistent. IDs 896-897 (was `the maester mounts` / `the maester exits the dock`) also recasted — in-scope of Fix 4 beat cluster, not a silent chain.
+criteria met: yes
+
+## SESSION-END — 2026-05-09T21:45:00Z — phase3-wave3-consolidated
+findings-applied: 4 (FIX-1 bulk reorganization + FIX-2 + FIX-3 + FIX-4)
+new-IDs-created: 934 (reeve prior-acquaintance beat)
+bones-moved: 20 (IDs 914-933)
+exit: CLEAN
