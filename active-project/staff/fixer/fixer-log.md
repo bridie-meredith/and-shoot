@@ -1427,3 +1427,26 @@ findings-applied: 4 (FIX-1 bulk reorganization + FIX-2 + FIX-3 + FIX-4)
 new-IDs-created: 934 (reeve prior-acquaintance beat)
 bones-moved: 20 (IDs 914-933)
 exit: CLEAN
+
+## SESSION-START — 2026-05-09T22:00:00Z — phase3-S3-r3-W83-135-board-change
+dispatch: single insert — W83-135 board-change beat (pulp r3 demand)
+target: active-project/theater/proto-lines/s01.aggregate.md
+audit-report: active-project/staff/auditor/season-s01-pass-S3-trim-pulp-enthusiast-r3.md
+findings-queued: 1
+
+## W83-135-board-change — RESOLVED — 2026-05-09T22:15:00Z
+fault: W83-135 window has no board-change beat; two consecutive TOLERATED windows persist; season-plan early-baseline carry-forward (named concrete change at beat-close) not satisfied in this range
+scope: insert
+change: ID 935 inserted directly at target position between IDs 115 and 118 (ledger sequence, post-entry-mark). Content: `oc-craftsman-father sets the apprentice mark`. Subject acts on a named object with social weight (apprentice mark = record filing Taylor into the trade-path); discrete SVO; different verb from ID 115's `marks the entry`; no prepositional padding; schema-clean. Board at 115 (entry marked, ambiguous) is not the same board at 935 (apprentice column filed — Taylor's trade-path is now a recorded household commitment she did not negotiate).
+criteria met: yes
+
+## SESSION-END — 2026-05-09T22:15:00Z — phase3-S3-r3-W83-135-board-change
+findings-applied: 1
+new-IDs-created: 935
+exit: CLEAN
+
+## SESSION-START — 2026-05-09T22:30:00Z — phase3-S3-r3-W83-135-board-change (resumed)
+dispatch: single insert — W83-135 board-change beat (pulp r3 demand) — prior run logged but did not write file edit; resuming to complete
+target: active-project/theater/proto-lines/s01.aggregate.md
+audit-report: active-project/staff/auditor/season-s01-pass-S3-trim-pulp-enthusiast-r3.md
+findings-queued: 1

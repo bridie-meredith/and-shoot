@@ -60,6 +60,22 @@ Workshop interior loc-state must carry the hostile-ambient register continuously
 
 The Mira W57-W65 alley sequence (witness inquiry close) and the Elara W55-W58 reeve-house sequence: dialogue must preserve the political-arithmetic register for Mira (worm-canon-pedant's prior rendering constraint) and the failure-mode-cost register for Elara (the wrongness she cannot name).
 
+**Elara → reeve visit (IDs 738-746) — covert-intelligence register (added 2026-05-09 from S8a r2 carry-forward).**
+
+S8a (character plausibility) flagged the reeve-house-call as IMPLAUSIBLE-CHARACTER-oc-craftsman-mother because Elara's established pattern is information *suppression* through informal channels (market-wife network), not information *input* through institutional channels (the reeve sits adjacent to Pryor's monitoring orbit). S8b (event plausibility) ACCEPTED the same beat as PLAUSIBLE on smallfolk-political-physics grounds (reeve-as-membrane). The split verdict is interpretively reasonable; the resolution path is dialogue-layer.
+
+**Required dialogue rendering for the Elara-reeve scene (IDs 738-746):**
+
+- Elara enters as information-gatherer, not as supplicant. Her first questions establish what the reeve has heard, not what she needs from him.
+- She volunteers nothing. Reeve speaks; Elara listens; Elara responds in registers that confirm what he says without adding new fact.
+- The exit register: Elara has gathered, not deposited. She leaves with information she did not have on entry; the reeve gains nothing about Taylor he did not have before.
+- The visit's outcome inside Elara's head: confirmation that the reeve's channel is now active around the Ashford household. This confirmation is what motivates her subsequent return-to-Edwyn beat (the parents-act-in-concert section).
+- The visit's outcome inside the reeve's head: a craftsman-wife's neighbor-call regarding her daughter's recent unusual stillness in the market square (a generic-enough framing that the reeve files but does not act on independently).
+
+If the dialogue layer renders this register clearly, the S8a IMPLAUSIBLE-CHARACTER finding is resolved at execution. If the dialogue layer cannot carry the register (e.g., because Elara's covert-management register is too internal to render in observable speech), the fallback is to rewrite the bones during /and-shoot-v2 to reroute her destination through a market-wife contact instead.
+
+**This carry-forward replaces the need for a Phase 3 fixer round 13 against the same beat.** The orchestrator (this Claude session) accepted the dialogue-layer path per S8a's r1/r2 routing recommendation.
+
 ## Phase 3 routing decision
 
 S6 VIBE-DRIFT is acknowledged but does NOT block Phase 3 progression. Bones converged at structure + mechanic + continuity; the tonal concern is authentically downstream-author scope.
