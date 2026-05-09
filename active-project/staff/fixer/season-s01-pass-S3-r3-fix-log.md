@@ -31,3 +31,21 @@ dispatch: single insert — W83-135 board-change beat (pulp r3 demand) — prior
 target: active-project/theater/proto-lines/s01.aggregate.md
 audit-report: active-project/staff/auditor/season-s01-pass-S3-trim-pulp-enthusiast-r3.md
 findings-queued: 1
+
+---
+
+## W83-135-board-change — RESOLVED — 2026-05-09T22:35:00Z
+fault: W83-135 window has no board-change beat; two consecutive TOLERATED windows persist
+scope: insert
+new-ID: 935
+insert-position: directly between IDs 115 and 118 in the ledger sequence
+content: `oc-craftsman-father sets the apprentice mark`
+note: prior session had logged this as RESOLVED but the file edit had not been written; this session completed the actual insert.
+criteria met: yes
+
+---
+
+## SESSION-END — 2026-05-09T22:35:00Z — phase3-S3-r3-W83-135-board-change (resumed)
+findings-applied: 1
+new-IDs-created: 935 (now physically in file)
+exit: CLEAN
