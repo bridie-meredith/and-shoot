@@ -18,10 +18,13 @@ You are the orchestrator. All work routes through subagent dispatches.
 2. Read `active-project/staff/showrunner/memory.md`. Confirm:
    - Season exists in `seasons[]` with status `active`.
    - `season-<slug>-plan.md` exists with season chunk, escalation spine, and per-episode chunk paragraphs.
-3. Build the work list — every episode under the season. Capture each episode's existing status:
-   - `planned` (chunk authored but no episode-plan.md yet) — needs full decomposition.
-   - `protolined` (episode-plan.md exists, proto-lines file exists, status set) — skip; do not re-run.
-   - `shot` / `wrapped` — abort with the slug; the season is already past the protolines phase for this episode and re-running would conflict.
+3. Build the work list — every episode under the season. Status is the authoritative gate (not file existence; under aggregate-first, per-episode proto-line files only appear after Phase 4 split).
+   - `planned` (chunk authored, no episode-plan.md yet) — needs full decomposition through Phase 1 + 2 + 3 + 4.
+   - `decomposed` (episode-plan.md exists, no aggregate section yet) — skip Phase 1, run Phase 2 onward.
+   - `protolined` (status set after Phase 5 persist) — skip; do not re-run.
+   - `shot` / `wrapped` — abort with the slug; re-running would conflict.
+
+If an aggregate file exists from a previous /and-cut'd run, **resume** at the appropriate phase rather than re-running from Phase 2.
 4. Print the work list and proceed.
 
 ```
@@ -43,7 +46,8 @@ Inputs:
 - Per-episode chunk paragraphs (from season-plan.md).
 
 Forbidden:
-- Past shoot artifacts (show files, prior proto-lines, deprecated v1 script bullets in any existing episode-plan.md — read top frontmatter only on existing episode-plans).
+- Past shoot artifacts (show files, deprecated v1 script bullets in any existing episode-plan.md — read top frontmatter only on existing episode-plans).
+- A pre-existing aggregate file from an earlier run (Phase 1 is structural-only; reading existing bones contaminates the decomposition). On a `/and-cut` resume, Phase 1 is skipped if episode-plan.md already exists for the episode (status `decomposed` or later).
 
 Task:
 - For each episode in scope, author `active-project/theater/<slug>/episode-plan.md` with required fields: `episode`, `chunk`, `change`, `theme`, `actors`, `constraints`, `narrator`, `goal`. The `narrator` and `goal` fields are mandatory under shoot-v2.
@@ -117,7 +121,7 @@ Convergence cap: **3 full pipeline iterations.** Non-convergence aborts the seas
 
 After Phase 2 produces a converged aggregate proto-line file, run the **nine-pass season-scope review** against that single aggregate. Same reviewer roles as per-episode review, same dispatch shape, same convergence definition (all passes clean in one end-to-end run) — the scope of "the file under review" is the season aggregate and its sections; the criteria each pass applies are season-scope (cross-section coherence, season escalation arc, season-wide entertainment density, etc.).
 
-This is the structural complement to the per-episode pipeline. Where per-episode catches per-line and per-arc faults, season-scope catches cross-episode faults that no single-episode review can detect by design.
+This is the structural complement to Phase 2's section-scope review. Where Phase 2's sub-passes catch per-line and per-section faults inside the aggregate, Phase 3 catches cross-section faults — season-scope drift, escalation arc, season goal delivery — that section-scope review cannot see by design.
 
 ### Pass S1 — Constraint audit (auditor #season-1)
 
@@ -198,11 +202,11 @@ Bias: when in doubt, REVISE. The cost of a false-positive REVISE is one screen-w
 
 Output: `active-project/staff/auditor/season-<slug>-pass-S3-trim-{persona}.md` × 3.
 
-If all three personas ACCEPT in one round, Pass S3 terminates. If any REVISE, the named entertainment problem (a beat or full episode is missing, the season rhythm fails, the season goal is not delivered) routes to screen-writer for episode-level addition; the affected episode re-runs through its per-episode pipeline; then Pass S3 re-runs.
+If all three personas ACCEPT in one round, Pass S3 terminates. If any REVISE, the named entertainment problem (a beat or full episode is missing, the season rhythm fails, the season goal is not delivered) routes to screen-writer for section-level regeneration in the aggregate file; the affected aggregate section is rewritten in place; then Pass S3 re-runs.
 
 ### Pass S3.5 — Ruleset compliance (auditor #season-3, dedicated)
 
-**The mechanic-strictness pass.** Per-episode Pass 2 catches mechanic faults at episode scope; this pass re-checks the **entire season's proto-line set** against the harsh-SVO ruleset to catch verbs that survived per-episode review by being borderline in isolation but reading as a season-wide pattern of compliance drift.
+**The mechanic-strictness pass.** Phase 2's Pass 2 (constraint audit) catches mechanic faults at section scope inside the aggregate; this pass re-checks the **entire aggregate** against the harsh-SVO ruleset to catch verbs that survived section-level review by being borderline in isolation but reading as a season-wide pattern of compliance drift.
 
 Dispatch **auditor** (fork, fresh context, dedicated to ruleset-compliance) with:
 - The season aggregate proto-line file.
@@ -229,7 +233,7 @@ Dispatch **auditor** (fork, fresh context, distinct from S1's auditor invocation
 - Series laws.
 - Active location cards.
 
-Brief — same four sweeps as per-episode Pass 5, scaled up:
+Brief — same four sweeps as Phase 2's Pass 5 (continuity), scaled up from section-scope to season-scope:
 - **Reachability:** season-start state → season-end state. The opening of the season's first episode and the close of its last episode bracket a delta the season-plan promises; the surviving proto-line set must traverse it.
 - **State:** track every prop and every actor across the season (not just within one episode). A prop introduced in episode 1 is either consumed/explicitly released by season's end or persists through the season as a recurring object. Actors enter and exit the season's stage coherently.
 - **Reference:** every slug used resolves; no episode references an actor or prop another episode hasn't set up.
@@ -319,7 +323,11 @@ Faults at this pass are particularly important because they predict facet-author
 
 Phase 3 converges when **all nine season-scope passes return clean verdicts in a single end-to-end run** (S1 constraint, S2 shape, S3 trim, S3.5 ruleset, S4 continuity, S5 voice, S6 vibe, S7 facet-readiness, S8 plausibility, S9 comprehensibility). The same iteration loop applies — a change at any pass invalidates downstream passes for that run; downstream re-runs from the changed point. If end-to-end convergence is not reached after **3 full season-scope iterations**, ship with a header comment noting non-convergence and surface for user review.
 
-The four-pass season-scope review is the load-bearing piece for "chapters feel natural and less jarring." It is the same architecture as per-episode review, applied at the right scope to catch the right faults.
+The nine-pass season-scope review is the load-bearing piece for "chapters feel natural and less jarring." It is the same architecture as Phase 2's section-scope review, applied at season scope to catch faults a single section's review cannot see.
+
+### Iteration cap relationship
+
+Phase 2 and Phase 3 each have an independent cap of 3 iterations. They are **sequential, not nested**: Phase 2 must converge (or hit cap) before Phase 3 begins. Phase 3 fault routing flows back into the aggregate (the canonical artifact through both phases), and a Phase 3 fix that requires regenerating an aggregate section invokes the screen-writer in section-regeneration mode — it does NOT restart Phase 2's five-pass pipeline. Worst-case combined budget: 6 full-pipeline iterations before non-convergence escalation.
 
 ---
 
@@ -354,25 +362,33 @@ Total time-skips: <count>
 Total deletions: <count>
 Total transitions added: <count>
 
-Per-episode trajectory:
-  <slug> | <iterations to converge> | <pass-2-final> | <pass-5-verdict>
-  ...
+Phase 2 (aggregate authoring, 5-pass pipeline):
+  iterations to converge: <n of 3 max>
+  Pass 1 inventory:  WRITTEN
+  Pass 2 constraint: <CLEAN | FAIL>
+  Pass 3 shape:      <CLEAN | RE-ORDER-OR-REVISE>
+  Pass 4 trim:       <ALL-ACCEPT | REVISE-{persona}>
+  Pass 5 continuity: <CLEAN | FAIL>
 
-Season-scope review (4 passes, mirror of per-episode):
-  S1 constraint audit:   <PASS | FAIL with fault count by class>
-  S2 shape (dramatist):  <CLEAN | RE-ORDER-OR-REVISE>
-  S3 trim (audience ×3): <ALL-ACCEPT | REVISE-{persona}>
-  S4 continuity audit:   <SEASON-CONTINUITY-OK | SEASON-CONTINUITY-FAIL>
-  iterations to converge: <n>
+Phase 3 (season-scope review, 9 passes):
+  S1   constraint:        <PASS | FAIL>
+  S2   shape:             <CLEAN | RE-ORDER-OR-REVISE | STRUCTURAL-FAILURE>
+  S3   trim ×3:           <ALL-ACCEPT | REVISE-{persona}>
+  S3.5 ruleset:           <RULESET-CLEAN | RULESET-FAIL>
+  S4   continuity:        <SEASON-CONTINUITY-OK | SEASON-CONTINUITY-FAIL>
+  S5   voice:             <VOICE-COHERENT | VOICE-DRIFT>
+  S6   vibe ×3:           <VIBE-ALIGNED | VIBE-DRIFT-{reason}>
+  S7   facet-readiness:   <FACET-READY | FACET-GAPS>
+  S8   plausibility:      <PLAUSIBLE | IMPLAUSIBLE>
+  S9   comprehensibility ×3: <COMPREHENSIBLE | COMPREHENSIBILITY-RISK-{reason}>
+  iterations to converge: <n of 3 max>
   file-level: <SEASON-CONVERGED | SEASON-FAIL with failing pass names>
 
 Files:
   active-project/theater/<slug>/episode-plan.md (× N)
-  active-project/theater/proto-lines/<slug>.md (× N)
-  active-project/staff/auditor/season-<slug>-pass-S1-constraint.md
-  active-project/staff/auditor/season-<slug>-pass-S2-shape.md
-  active-project/staff/auditor/season-<slug>-pass-S3-trim-{pulp,pedant,dark}.md
-  active-project/staff/auditor/season-<slug>-pass-S4-continuity.md
+  active-project/theater/proto-lines/<season-slug>.aggregate.md (canonical pre-split)
+  active-project/theater/proto-lines/<slug>.md (× N, post-split)
+  active-project/staff/auditor/season-<slug>-pass-S{1,2,3-{persona},3.5,4,5,6-{persona},7,8,9-{persona}}.md
 
 Next: facet authoring per episode (/and-locstate, /and-dialogue, etc.) or /and-shoot for performance pass, or /and-wrap for season close.
 ```
@@ -384,10 +400,10 @@ Next: facet authoring per episode (/and-locstate, /and-dialogue, etc.) or /and-s
 - This command **mirrors but does not invoke** /and-protolines-v2's five-pass pipeline. The five passes are run against the season aggregate as a single object — not chained per-episode. /and-protolines-v2 remains the standalone per-episode authoring command for ad-hoc work or single-section revision.
 - Episode-decomposition (Phase 1) and aggregate authoring (Phase 2) are deliberately separated — the decomposition is a fast structural pass that runs in parallel; aggregate authoring is one writer dispatch for the whole season followed by review-and-revise on the single object. Audience STM threading happens within the writer's own context (single dispatch) rather than across separate dispatches.
 - The aggregate-first architecture means cross-episode coherence is built in at write time rather than retrofitted at audit time. Phase 3's job shifts from "catch cross-section drift" to "verify the season's seamlessness was preserved through revision."
-- The comprehensive auditor at Phase 3 is what makes "chapters feel natural and less jarring" — it surfaces cross-episode seams that no per-episode pipeline can catch by design (the per-episode pipeline is blind to neighbors). When this audit fires faults, the cost of repair scales with how late they're caught; running this audit at season-protolines-complete (before facet authoring or shoot) is the cheapest correction point.
+- The comprehensive auditor at Phase 3 is what makes "chapters feel natural and less jarring" — it surfaces cross-section seams that section-scope review inside Phase 2 cannot catch by design. Aggregate-first authoring shifts most cross-section coherence work into Phase 2 (the writer sees the whole season at once), but Phase 3 remains essential as a verification layer: a writer's cross-section guess is not the same as a reviewer's cross-section audit.
 - Prerequisites:
   1. `/and-protolines-v2` promoted to `/and-protolines`.
   2. `schemas/proto-line.schema.md` updated with per-episode path convention + header fields + harsh-SVO discipline.
   3. `schemas/episode-plan.schema.md` updated with required `narrator` and `goal` fields.
   4. The active project has a season-plan.md with per-episode chunk paragraphs (current `/and-project` produces this for season 1).
-- Subsequent-season equivalent: when season N+1 is activated, /and-season N+1 can be invoked. The comprehensive audit at Phase 3 only checks intra-season coherence; cross-season coherence is the showrunner's job at season-start (re-reading series-plan.md against the previous season's outcomes).
+- Subsequent-season equivalent: season N+1 must first be planned via `/and-season-plan <slug>`, which authors `season-<slug>-plan.md` with per-episode chunks and registers the season as `active`. Once that prerequisite is met, `/and-season <slug>` runs identically to season 1. Phase 3's audit only checks intra-season coherence; cross-season coherence is enforced at `/and-season-plan` Phase 3 (cross-season audit) + the showrunner's terminal-state-handoff record from the previous season.
