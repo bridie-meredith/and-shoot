@@ -8,10 +8,11 @@ Schema authority: this file. shoot-v2 introduces this format. shoot-v1's episode
 
 ## File path conventions
 
-Two conventions coexist:
+Three conventions coexist:
 
-- **Per-episode (default):** `active-project/theater/proto-lines/<slug>.md` (e.g. `s01e01.md`). Used by `/and-protolines-v2` against an episode-plan.
+- **Per-episode (default):** `active-project/theater/proto-lines/<slug>.md` (e.g. `s01e01.md`). Used by `/and-protolines-v2` against an episode-plan, and as the canonical post-split artifact emitted by `/and-season` Phase 4.
 - **Per-chapter (season-scope):** `active-project/theater/proto-lines/chapter-NN.md`. Used by `/and-season` when a season is decomposed into chapter-scoped chunks (target ~100 finished lines per chapter). Each chapter has its own plan at `design/shoot-v2/season-chapters-run/chapter-NN-plan.md` (or, post-promotion, `active-project/theater/<slug>/episode-plan.md` per chapter).
+- **Season aggregate (Phase 2/3 working artifact):** `active-project/theater/proto-lines/<season-slug>.aggregate.md`. Authored by `/and-season` Phase 2 as a single object covering the whole season; reviewed and revised in place during Phase 3; split into per-episode (or per-chapter) files at Phase 4. Internal sections are delimited by `# === episode: <slug> ===` (or `# === chapter: NN ===`) lines, each immediately followed by the standard `narrator:` and `goal:` headers, then the section's numbered bones starting at ID 1.
 
 The legacy singular `active-project/theater/proto-lines.md` is no longer authored. Pre-existing files at that path remain readable but are not written.
 

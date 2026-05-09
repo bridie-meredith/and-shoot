@@ -1,5 +1,5 @@
 ---
-description: Season-scope orchestrator. Takes a season chunk (from season-plan.md), decomposes into episode chunks, authors episode-plans, runs /and-protolines-v2 chained across all episodes, then runs a comprehensive cross-episode auditor for constraint and state coherence. Usage - /and-season [season-slug]
+description: Season-scope orchestrator. Takes a season chunk (from season-plan.md), decomposes into episode-plans, expands the chunk list into a single aggregate SVO proto-line object, iterates the five-pass SVO pipeline + nine-pass season-scope review against that aggregate, then splits to canonical per-episode files. Usage - /and-season [season-slug]
 ---
 
 The season is the natural authoring unit. Episodes are decompositions of the season's escalation arc, not independently-planned chunks chained after the fact. This command builds the season top-down and produces a coherent, non-jarring proto-line set for every episode in one shot.
@@ -59,29 +59,70 @@ Dispatch all in-scope episodes **in parallel** (each is independent given the se
 
 ---
 
-## Phase 2 — Per-episode proto-lines (chained)
+## Phase 2 — Aggregate proto-line authoring
 
-For each episode in scope, in **canonical season order** (s01e01, s01e02, ...):
+Coming into Phase 2 you have a list of episode chunks (from `season-<slug>-plan.md`) plus per-episode `episode-plan.md` files (from Phase 1) carrying the structural fields each chunk implies — `narrator`, `goal`, `actors`, `constraints`, `change`, `theme`. Phase 2 expands this list into a **single aggregate SVO object** that covers the entire season, then iterates the five-pass SVO-writer pipeline against that one object before any per-episode split.
 
-1. Set `active.episode = <slug>` in showrunner memory.
-2. Invoke `/and-protolines-v2 <slug>` and wait for completion. The five-pass pipeline runs internally; this command does not re-implement the passes.
-3. On convergence: confirm output exists at `active-project/theater/proto-lines/<slug>.md` (per-episode subdir convention). Confirm episode status is `protolined`.
-4. If the pipeline fails to converge (3 internal iterations exhausted), halt the season chain and surface for human review. Do NOT continue — cross-episode drift is harder to repair than partial progress.
+The aggregate is the canonical artifact through review and revision. Per-episode files are derived from it at Phase 4 (split), not before.
 
-Sequential is the default. Parallel mode is not offered at season scope: the audience persona STM threads across episodes (a key part of taste calibration), and parallel breaks the thread.
+### Output path
+
+`active-project/theater/proto-lines/<season-slug>.aggregate.md`
+
+Internal section delimiters per episode (or per chapter, when the season is decomposed chapter-scoped):
+
+```
+# === episode: s01e01 ===
+narrator: <slug>
+goal: <one sentence from episode-plan.md>
+
+1 ...
+2 ...
+
+# === episode: s01e02 ===
+narrator: <slug>
+goal: ...
+
+1 ...
+```
+
+ID numbering restarts at 1 per section. Section delimiters are load-bearing: they are how Phase 4 splits the aggregate back into canonical per-episode files.
+
+### Sub-passes (mirror of `/and-protolines-v2` five-pass pipeline, run against the aggregate)
+
+1. **Pass 1 — Inventory write.** Single SVO-writer dispatch. Inputs: the full chunk list, all episode-plans, series/season vibes, constraints, behavior cards. Output: the aggregate file with all sections populated in one pass. Audience STM threads naturally within the writer's own context — no cross-dispatch threading needed since this is one dispatch.
+2. **Pass 2 — Constraint audit.** Auditor fork against the aggregate. Sweep all sections against condition cards, series laws, harsh-SVO discipline.
+3. **Pass 3 — Shape.** Dramatist against the aggregate. Each section's per-episode shape AND the cross-section escalation arc.
+4. **Pass 4 — Trim.** Audience ×3 against the aggregate. Per-section ENGAGED/TOLERATED/BORED + season-wide entertainment-density check.
+5. **Pass 5 — Continuity.** Auditor #2 fork against the aggregate. Cross-section state, prop chains, POV transitions, reachability.
+
+Faults route to fixer (line edits) or screen-writer (section regenerations or cross-section restructures). Each fix invalidates downstream passes for the affected scope; downstream re-runs from the changed point.
+
+Convergence cap: **3 full pipeline iterations.** Non-convergence aborts the season chain and surfaces for human review with the failing-pass list.
+
+### Why aggregate-first
+
+- Cross-episode coherence is *built in* at write time, not bolted on after the fact. The writer sees the whole season at once and never has to retrofit cross-section consistency.
+- Audience STM threading happens within the writer's own context, removing the sequential-only constraint that previous per-episode chaining required.
+- Review operates on a single object, which matches how downstream readers consume the season (continuously, not episode-by-episode with hidden seams).
+- Splitting at Phase 4 is mechanical (delimiter scan), not interpretive — no information is lost.
+
+### Relationship to `/and-protolines-v2`
+
+`/and-protolines-v2` remains the per-episode standalone authoring command for ad-hoc work or single-episode revision. Its five passes are the *template* for Phase 2's sub-passes here, scaled up to season scope. The pipeline does not invoke `/and-protolines-v2` per episode anymore.
 
 ---
 
 ## Phase 3 — Comprehensive season-scope review
 
-After all episodes have individually converged, run the **same four-pass structure** that vetted each episode at episode scope, now scaled up to the entire season's chunks and proto-line files together. Same reviewer roles, same dispatch shape, same convergence definition (all four passes clean in one end-to-end run) — what changes is the scope of "the file under review" (now: all chunks + all proto-lines together) and the criteria each pass applies.
+After Phase 2 produces a converged aggregate proto-line file, run the **nine-pass season-scope review** against that single aggregate. Same reviewer roles as per-episode review, same dispatch shape, same convergence definition (all passes clean in one end-to-end run) — the scope of "the file under review" is the season aggregate and its sections; the criteria each pass applies are season-scope (cross-section coherence, season escalation arc, season-wide entertainment density, etc.).
 
 This is the structural complement to the per-episode pipeline. Where per-episode catches per-line and per-arc faults, season-scope catches cross-episode faults that no single-episode review can detect by design.
 
 ### Pass S1 — Constraint audit (auditor #season-1)
 
 Dispatch **auditor** (fork, fresh context) with:
-- All per-episode proto-line files (`active-project/theater/proto-lines/<slug>.md` × N).
+- The season aggregate proto-line file (`active-project/theater/proto-lines/<season-slug>.aggregate.md`). Sections delimit per-episode scope inside it.
 - All per-episode `episode-plan.md` files.
 - All active condition cards under `active-project/warehouse/`.
 - Series laws and lore from showrunner memory.
@@ -97,7 +138,7 @@ Output: `active-project/staff/auditor/season-<slug>-pass-S1-constraint.md`. File
 ### Pass S2 — Shape (dramatist, season scope) — STRICT
 
 Dispatch **dramatist** with:
-- All per-episode proto-line files in canonical season order.
+- The season aggregate proto-line file. Sections appear in canonical season order.
 - All episode-plans (chunk + change + theme + narrator + goal per episode).
 - `season-<slug>-plan.md` (escalation spine, forward flags).
 - `series-plan.md` (escalation spine).
@@ -134,7 +175,7 @@ Bias: when in doubt, flag. The cost of a false-positive is one revision; the cos
 ### Pass S3 — Trim (audience ×3, season scope)
 
 Dispatch the three audience personas in parallel, each with:
-- All per-episode proto-line files.
+- The season aggregate proto-line file.
 - The **season goal** — distilled by orchestrator from `season-plan.md` season chunk + season theme + season escalation spine. Pinned at top of the season-scope trim brief, north star for trim decisions.
 - Per-episode `goal:` headers (the per-episode north stars, still active but subordinate to season goal at this scope).
 - All active actor vibes, studio vibes, persona cards, behavior cards.
@@ -164,7 +205,7 @@ If all three personas ACCEPT in one round, Pass S3 terminates. If any REVISE, th
 **The mechanic-strictness pass.** Per-episode Pass 2 catches mechanic faults at episode scope; this pass re-checks the **entire season's proto-line set** against the harsh-SVO ruleset to catch verbs that survived per-episode review by being borderline in isolation but reading as a season-wide pattern of compliance drift.
 
 Dispatch **auditor** (fork, fresh context, dedicated to ruleset-compliance) with:
-- All per-episode proto-line files.
+- The season aggregate proto-line file.
 - Schema: `schemas/proto-line.schema.md`.
 - SVO discipline (full): `svo-writer-pass1-brief.md` §"SVO discipline" — every clause, especially the non-action-verb deny-list and the narrow `holds` license.
 - The 15 ambiguity calls: `svo-split-notes.md`.
@@ -183,7 +224,7 @@ This pass exists because the user surfaced the failure mode explicitly: a high-q
 ### Pass S4 — Continuity (auditor #season-2)
 
 Dispatch **auditor** (fork, fresh context, distinct from S1's auditor invocation) with:
-- The post-trim, post-shape season state (all proto-line files + all episode-plans).
+- The post-trim, post-shape season state (the season aggregate proto-line file + all episode-plans).
 - Season chunk + season change (if season-level change is named in `season-plan.md`).
 - Series laws.
 - Active location cards.
@@ -199,7 +240,7 @@ Output: `active-project/staff/auditor/season-<slug>-pass-S4-continuity.md`. File
 ### Pass S5 — Voice register coherence (dramatist, second invocation)
 
 Dispatch **dramatist** (second invocation, distinct from S2) with:
-- All per-episode proto-line files.
+- The season aggregate proto-line file.
 - Behavior cards (full inheritance stack) for every actor active anywhere in the season.
 - Per-actor vibes.
 
@@ -230,7 +271,7 @@ Bias: when in doubt, flag drift. Vibe drift compounds across chapters; catching 
 The point of harsh-SVO discipline is that downstream facets cite proto-lines as load-bearing physical events. This pass verifies the season's proto-line set is *primed for facet authoring*.
 
 Dispatch **auditor** (fork, fresh context, dedicated to facet-readiness) with:
-- All per-episode proto-line files.
+- The season aggregate proto-line file.
 - The facet schemas: `schemas/facet.schema.md`, `schemas/dialogue.schema.md`.
 - The locked facet rubrics for already-tuned facets (`design/shoot-v2/rubric-{location-state,tensometer,narrator-interest,state-updates,memory-flags,sensory,feeling-flags,dialogue}.md`).
 
@@ -253,7 +294,7 @@ Two distinct plausibility tests, dispatched as a single hybrid review:
 
 **S8b — Event-in-world plausibility (auditor).** For every beat: is this event plausible in the world given the active condition cards, series laws, and lore? An event that doesn't violate a constraint but would not realistically occur given how the world works (an institutional move that never would have been authorized; a fauna behavior outside what the species actually does; a procedural sequence that elides a step administrators would never skip) is flagged.
 
-Inputs: all per-episode proto-lines, all chapter-plans, all behavior cards, all condition cards, series-plan + season-plan prose, active actor vibes.
+Inputs: the season aggregate proto-line file, all chapter-plans, all behavior cards, all condition cards, series-plan + season-plan prose, active actor vibes.
 
 Output: `season-<slug>-pass-S8-plausibility.md`. Per-beat verdicts: `PLAUSIBLE` / `IMPLAUSIBLE-CHARACTER-{slug}` / `IMPLAUSIBLE-EVENT-{condition-or-law}`. File-level: `PLAUSIBLE` or `IMPLAUSIBLE` with classified findings.
 
@@ -282,7 +323,21 @@ The four-pass season-scope review is the load-bearing piece for "chapters feel n
 
 ---
 
-## Phase 4 — Persist
+## Phase 4 — Split aggregate to canonical per-episode files
+
+Run after Phase 3 converges. Mechanical, not interpretive.
+
+1. Read `active-project/theater/proto-lines/<season-slug>.aggregate.md`.
+2. Scan for section delimiters of the form `# === episode: <slug> ===` (or `# === chapter: NN ===` when the season is decomposed chapter-scoped).
+3. For each section, write the section body (header lines `narrator:` + `goal:` + numbered bones) to `active-project/theater/proto-lines/<slug>.md`.
+4. Validate: each per-episode file has `narrator`, `goal`, contiguous-or-blank ID numbering starting at 1, and no orphan content outside its section.
+5. The aggregate file is preserved as the canonical pre-split artifact. Per-episode files are derived; if downstream work needs to revise a section, edit the aggregate and re-run the split.
+
+Splitting is the *last* mutation in the pipeline. After this phase the proto-lines are ready for facet authoring (which cites per-episode files) or for /and-shoot (which reads the active episode's per-episode file).
+
+---
+
+## Phase 5 — Persist
 
 1. Update `active-project/staff/showrunner/memory.md`:
    - Each episode: status `planned` → `protolined`.
@@ -326,8 +381,9 @@ Next: facet authoring per episode (/and-locstate, /and-dialogue, etc.) or /and-s
 
 ## Notes
 
-- This command **does not re-implement** /and-protolines-v2's five-pass pipeline. It chains the existing pipeline and adds the season-scope decomposition (Phase 1) and coherence audit (Phase 3) layers.
-- Episode-decomposition (Phase 1) and per-episode protolines (Phase 2) are deliberately separated — the decomposition is a fast structural pass that can run in parallel; protolines is the slower five-pass-per-episode chain that must run sequentially to thread audience STM and detect drift early.
+- This command **mirrors but does not invoke** /and-protolines-v2's five-pass pipeline. The five passes are run against the season aggregate as a single object — not chained per-episode. /and-protolines-v2 remains the standalone per-episode authoring command for ad-hoc work or single-section revision.
+- Episode-decomposition (Phase 1) and aggregate authoring (Phase 2) are deliberately separated — the decomposition is a fast structural pass that runs in parallel; aggregate authoring is one writer dispatch for the whole season followed by review-and-revise on the single object. Audience STM threading happens within the writer's own context (single dispatch) rather than across separate dispatches.
+- The aggregate-first architecture means cross-episode coherence is built in at write time rather than retrofitted at audit time. Phase 3's job shifts from "catch cross-section drift" to "verify the season's seamlessness was preserved through revision."
 - The comprehensive auditor at Phase 3 is what makes "chapters feel natural and less jarring" — it surfaces cross-episode seams that no per-episode pipeline can catch by design (the per-episode pipeline is blind to neighbors). When this audit fires faults, the cost of repair scales with how late they're caught; running this audit at season-protolines-complete (before facet authoring or shoot) is the cheapest correction point.
 - Prerequisites:
   1. `/and-protolines-v2` promoted to `/and-protolines`.
