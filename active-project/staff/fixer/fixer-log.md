@@ -41,3 +41,40 @@ fault: Stage 4 age annotation in cond-suppression-policy-progression reads "Tayl
 scope: card
 change: No edit required. active-project/warehouse/cond-suppression-policy-progression.card.md Stage 4 header already reads "Taylor age ~14–17". cards/conditions/cond-suppression-policy-progression.card.md Stage 4 header carries no age annotation (not ~21). Neither copy contains the erroneous ~21 annotation. Criterion met as-is.
 criteria met: yes
+
+---
+
+# Fixer Log — series-level audit
+session: 2026-05-09
+
+---
+
+## series-fault-001 — RESOLVED
+fault: series-plan.md Section 6 power-mechanics block referenced "10/20/30-minute" actor-card ceilings instead of correct child-body breakpoints "3/10/20-minute"
+scope: line
+change: No edit required. series-plan.md Section 6 power-mechanics project-decision sentence already reads "the 3/10/20-minute actor-card ceilings shift upward on a schedule season planning must specify." Confirmed against warehouse cond-fauna-control-rules.card.md (age ~9 active-control curve: 3 min headache onset, 10 min nosebleed onset, 20 min blackout risk). The correction was applied during Revision attempt 2 of the series plan. Criteria met as-is.
+criteria met: yes
+
+---
+
+## series-fault-002 — RESOLVED
+fault: series-plan.md Section 6 Laws listed unsuffixed cond-westerosi-customary-authority (120 AC, Harrenhal, impressment census) alongside the correct Jaehaerys variant
+scope: line
+change: No edit required. series-plan.md Section 6 Laws block contains only cond-feudal-hierarchy-law and cond-westerosi-customary-authority-jaehaerys. The unsuffixed slug is not present. memory.md series.laws block similarly contains only the Jaehaerys variant; no drift to correct there either. Criteria met as-is.
+criteria met: yes
+
+---
+
+## series-fault-003 — RESOLVED
+fault: memory.md missing schema-required fields: season-level chunk, episode-level chunk on all 8 episodes, and next_season_sketch
+scope: line
+change: No edit required. memory.md already contains: seasons[s01].chunk (two-sentence form drawn from series-plan.md S1 chunk); chunk fields on all eight episodes s01e01–s01e08 (verbatim from season-s01-plan.md episode chunks); next_season_sketch at s01 level (drawn from series-plan.md S2 chunk opening). All three missing fields per the audit finding are present and populated. Criteria met as-is.
+criteria met: yes
+
+---
+
+## series-fault-004 — RESOLVED
+fault: memory.md cast_roster and stage_elements used YAML comment syntax (slug # description) instead of schema-required mapping syntax (slug: description)
+scope: line
+change: No edit required. memory.md cast_roster entries already use mapping syntax (e.g., "- taylor-hebert-jaehaerys: lead — Taylor reborn ..."). stage_elements entries already use mapping syntax (e.g., "- loc-river-market-town: Fairstead — composite primary setting ..."). No comment-syntax entries present. Schema requires "- <actor-slug>: <one-line role description>" and both sections comply. Criteria met as-is.
+criteria met: yes
