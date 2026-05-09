@@ -44,3 +44,11 @@ specific feedback:
   - e07 ("Elara's Question") beats or stalls depending entirely on execution. The "what cannot remain unchanged" is structurally sound (managed distance now bilateral, Taylor has lost exclusive control of the gap), but the episode's dramatic action is Taylor learning something that already happened. Episode-plan authoring must deliver this as a present-tense decision Taylor now faces, not retrospective emotional weight. If the episode closes on Taylor having processed the news without needing to act, it is a stall.
   - Prior carry item (adolescent-body ceiling transition as S2 scene beat): s01e08 plants the body-clock detail through the maester's assessment as background institutional texture — acceptable. The ceiling transition itself remains S2 territory. Carry item persists at S2 planning level.
 prior complaints addressed: yes — S1 second board-change demand was met at series-plan level (maester arrival); e01 thinness is a new flag at season-plan level, addressable at episode-plan authoring.
+
+## Session: season 1 plan review — attempt 2
+verdict: accept
+read: e07 present-tense decision closes the stall risk — Taylor faces lie or accept closing of cover, not processing news.
+specific feedback:
+  - e07 stall risk closed. Taylor faces lie explicitly to both parents OR accept closing of operational cover — that is a present-tense action, not emotional aftermath. The episode now closes on the decision Taylor must make, not on the decision Taylor has received. The prior demand is met exactly.
+  - Chunk tightening at 2-sentence max: this is an acceleration, not a drain. Tighter chunks cut slack between beats and force each chunk to carry a development rather than a description. The e01 thinness flag persists — it is not a sentence-count problem, it is a development problem; the chunk as tightened still does not name one thing different at episode-close from episode-open. Flag remains at episode-plan level.
+prior complaints addressed: yes — e07 stall risk is closed by present-tense decision framing; e01 thinness carries to episode-plan authoring unchanged.

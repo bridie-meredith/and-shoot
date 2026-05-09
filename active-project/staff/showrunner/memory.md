@@ -4,7 +4,7 @@ routing:
   show_file: active-project/theater/show.md
   episode_plan: active-project/theater/episode-plan.md
   series_plan: active-project/staff/showrunner/series-plan.md
-  season_plan: ~
+  season_plan: active-project/staff/showrunner/season-s01-plan.md
 
 series:
   theme: "What it costs to build something in a world that does not have a word for what you are building — and what gets charged to people who never agreed to pay."
@@ -48,8 +48,43 @@ series:
     - westerosi-smallfolk-village-common
     - westerosi-smallfolk-dwelling-interior
 
-seasons: []
+seasons:
+  - slug: s01
+    title: "The Steward's Note"
+    window: "~84-88 AC"
+    status: active
+    plan: active-project/staff/showrunner/season-s01-plan.md
+    episodes:
+      - slug: s01e01
+        title: "The Map Is Wrong"
+        status: planned
+      - slug: s01e02
+        title: "The Septon's Offer"
+        status: planned
+      - slug: s01e03
+        title: "What Clem Saw"
+        status: planned
+      - slug: s01e04
+        title: "Census at the Dock"
+        status: planned
+      - slug: s01e05
+        title: "The Steward's Note"
+        status: planned
+        notes: "IGNITION ~86 AC; involuntary swarm rise; first institutional record"
+      - slug: s01e06
+        title: "What Mira Stonefield Knows"
+        status: planned
+        interlude: true
+        narrator: mira-stonefield-jaehaerys
+      - slug: s01e07
+        title: "Elara's Question"
+        status: planned
+        interlude: true
+        narrator: oc-craftsman-mother
+      - slug: s01e08
+        title: "Ledger Work"
+        status: planned
 
 active:
-  season: ~
-  episode: ~
+  season: s01
+  episode: s01e01

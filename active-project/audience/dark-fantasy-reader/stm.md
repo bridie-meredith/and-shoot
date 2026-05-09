@@ -45,3 +45,11 @@ specific feedback:
   - Pryor thorough-not-cruel: e04 "retinue's patience narrows" (functionary register), e05 "watching from the far end of the square; makes the first institutional record" (clinical distance), e06 "methodical and unhurried" (explicit), e08 background. The register holds across all four appearances at plan level.
   - Mira's withholding framed as calculus: "what she says, what she omits" / "the first earn is transacted in what Mira does not say to Pryor" — the debt is real and unnamed, not a favor. This is smallfolk-physics register. Watch item: if s01e06 goes Mira-POV interlude, the episode must render her political arithmetic, not her sympathetic deliberation. Episode-plan authoring is on notice.
 prior complaints addressed: yes — superstition frame is now explicitly named at plan level for e05; prior carry items (Great Council framing, superstition-frame at execution) remain appropriately staged.
+
+## Session: season 1 plan review — attempt 2
+verdict: accept
+read: e04 non-reactive paperwork pull is thorough-not-cruel register; e07 Elara-to-Edwyn is smallfolk family physics, not plot delivery.
+specific feedback:
+  - e04 Pryor literacy roster pull: non-reactive paperwork is the correct register. A thorough functionary requests this before he has a reason to — that is institutional accumulation, not sinister intent. Accepted without flag.
+  - e07 Elara-to-Edwyn: the family re-cohering around concern with Edwyn as anchor reads as smallfolk domestic reflex — go to the stable member, not to the child who is the problem. This is family physics. It does not read as a plot device. The s01e06 Mira-POV watch item (render her political arithmetic, not sympathetic deliberation) carries forward to episode-plan authoring unchanged.
+prior complaints addressed: yes — no open flags from attempt 1 at this persona; new material lands in the correct register.
