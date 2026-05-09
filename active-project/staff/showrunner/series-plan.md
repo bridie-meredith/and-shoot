@@ -31,12 +31,12 @@ Can a structure built from below, by someone who cannot stop running the control
 ### Season 1 — ~84–88 AC (Taylor age 7–11 in body)
 *"The Steward's Note"*
 
-The tax-collection swarm event at ~86 AC converts Taylor from invisible smallfolk child to a named anomaly in Aldric Pryor's incident log, and the institutional apparatus that will eventually suppress her coalition takes its first documentary step; Taylor's counter-move is to build depth before breadth, recruiting Mira Stonefield and establishing the sept as her literacy and information node, but the same control instincts that make her effective keep her parents at managed distance and Mira at arm's length precisely when closeness would be cheaper. The personal cost begins paying out before the season closes: Elara Ashford cannot be kept at arm's length indefinitely, and the steward's note does not stay local.
+The tax-collection swarm event at ~86 AC converts Taylor from invisible smallfolk child to a named anomaly in Aldric Pryor's incident log, and the institutional apparatus that will eventually suppress her coalition takes its first documentary step; Taylor's counter-move is to build depth before breadth, recruiting Mira Stonefield and establishing the sept as her literacy and information node, but the same control instincts that make her effective keep her parents at managed distance and Mira at arm's length precisely when closeness would be cheaper. The personal cost begins paying out before the season closes: Elara Ashford cannot be kept at arm's length indefinitely, and before S1 ends the lord's traveling maester arrives at Fairstead under cover of routine ledger work — the steward's note has reached him, and the board has changed.
 
 ### Season 2 — ~88–94 AC (Taylor age 11–17 in body)
 *"Patterned Response"*
 
-The steward's quarterly monitoring report names Mira's market-day gatherings as the new perimeter, and the lord's apparatus shifts from incident-response to patterned-response as Taylor's coalition expands past the family she can individually shield; the suppression apparatus gains institutional vocabulary for what it is watching, while Taylor's Shard-weighted instinct to escalate rather than withdraw pulls her into confrontations that cost the coalition members she cannot protect from the institutional record. Mira, Rymer, and the proto-coalition begin paying the mid-arc cost: the people Taylor recruited to trust her discover the specific shape of what she withholds, and some of what she built in S1 does not survive the weight she placed on it.
+The steward's quarterly monitoring report names Mira's market-day gatherings as the new perimeter, and the lord's apparatus shifts from incident-response to patterned-response as Taylor's coalition expands past the family she can individually shield; the suppression apparatus gains institutional vocabulary for what it is watching, while Taylor's Shard-weighted instinct to escalate rather than withdraw pulls her into confrontations that cost the coalition members she cannot protect from the institutional record. Mira, Rymer, and the proto-coalition begin paying the mid-arc cost: the people Taylor recruited to trust her discover the specific shape of what she withholds, and the season closes on Mira publicly dissolving her market-day gatherings in late-S2 under the monitoring record's direct institutional pressure — the relationship does not break, but the structure Taylor built around Mira does not survive, and what remains is smaller and harder to rebuild.
 
 ### Season 3 — ~94–99 AC (Taylor age 17–22 in body)
 *"Policy"*
@@ -46,7 +46,7 @@ By mid-season, suppression shifts from patterned-response to formal policy — a
 ### Season 4 — ~99–101 AC (Taylor age 22–24 in body)
 *"Costs Become Final"*
 
-The Great Council succession crisis draws every institutional actor who has been managing Taylor's coalition as a local matter into a realm-level arena where managing it costs more than abandoning it, and the suppression policy collides with the Council's political dynamics — not because Taylor's work becomes suddenly legitimate, but because the apparatus built against her is now someone's political liability and someone else's asset. What Taylor built tests against the Council's institutional physics: the coalition's debts come due, her internal failure modes deliver their accumulated consequence at the worst moment, and what remains legible at Council close survives in damaged, diminished, or transformed form, with the Dance on the horizon regardless.
+The Great Council succession crisis draws every institutional actor who has been managing Taylor's coalition as a local matter into a realm-level arena where managing it costs more than abandoning it, and the suppression policy collides with the Council's political dynamics — not because Taylor's work becomes suddenly legitimate, but because the apparatus built against her is now someone's political liability and someone else's asset. What Taylor built tests against the Council's institutional physics: the coalition's debts come due, her internal failure modes deliver their accumulated consequence at the worst moment, and the suppression policy's enforcement record survives as a documentary liability at Council — a usable asset for Tully rivals, a precedent no lord can cleanly disown — while Mira's network does not survive in its prior form, dismantled by the S3 enforcement action's institutional pressure before the Council convenes.
 
 ---
 
@@ -112,6 +112,7 @@ The Great Council succession crisis draws every institutional actor who has been
 - `cond-fauna-control-rules` — Taylor's swarm-sense and active control rules; ecological friction from foreign insect distribution; active control costs calibrated against child-body ceiling
 - `cond-shard-behavioral-weight` — Shard present, dormant at Entity-communication level, active at behavioral-weight; biases Taylor toward escalation and direct action; she reads it as her own judgment
 - `condition-swarm-in-foreign-ecology` — ambient degradation of Taylor's insect-map; precision degrades at range and in new terrain; calibration ongoing across S1
+- **Project decision — adolescent-body ceiling:** the child-body cost ceiling is a named transition event, not a fixed floor; at approximately age 13–14 (~mid-S2, ~91 AC) Taylor's body crosses an adolescent threshold and the cost curve lengthens proportionally (the 10/20/30-minute actor-card ceilings shift upward on a schedule season planning must specify); this transition is a named physical-progression beat available as a mid-S2 internal peak vector; scene planning must mark which ceiling applies at each episode where active swarm use occurs.
 
 ### Suppression arc
 
@@ -120,3 +121,9 @@ The Great Council succession crisis draws every institutional actor who has been
 ### Series tone
 
 - `cond-series-tone-constraints-84ac` — tone law for this project; prohibits catharsis before the Dance; prohibits validation at Great Council; cost-migration is structural, not thematic optional
+
+---
+
+## Revision attempt 2
+
+Fix 1: S1 chunk — replaced vague "note does not stay local" with a concrete named beat: the lord's traveling maester arrives at Fairstead under cover of ledger work before S1 closes. Fix 2: S2 chunk — replaced "some of what she built in S1 does not survive" with a named closing beat: Mira publicly dissolves her market-day gatherings in late-S2 under direct institutional pressure from the monitoring record. Fix 3: Section 6 power mechanics — added project-decision sentence committing to option (a): adolescent-body ceiling transition at ~age 13–14 / mid-S2 (~91 AC) is a named threshold event; cost curve lengthens proportionally; season planning must mark applicable ceiling per episode. Fix 4: S4 chunk — replaced "damaged, diminished, or transformed form" with two named commitments: the suppression enforcement record survives as a Council documentary liability / political asset; Mira's network does not survive in its prior form, dismantled by the S3 enforcement action.
