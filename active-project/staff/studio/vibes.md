@@ -1,7 +1,7 @@
 VIBES:
 
-# Series Vibe-Cloud — preliminary
-# Authored at step 1c to seed actor vibes. Series-plan step will refine and extend.
+# Series Vibe-Cloud — series-plan revision
+# Preliminary section authored at step 1c. Extensions added at series-plan step.
 # Format: world-key → register/associations the series activates around it.
 
 ## World-keys (decided premise)
@@ -60,3 +60,19 @@ VIBES:
 - `westerosi-witness-frame`: locals read Taylor's swarm through superstition (old gods, Seven-as-ward, fear-of-the-dark), not as generic strangeness
 - `pulpy-momentum-with-weight`: pacing-readable, not slow-burn-only; escalation visible early; institutional response visible early
 - `interiority-without-confession`: Taylor's internal failure modes are visible to the reader through behavior; she does not narrate herself; the audience reads her by what she does and does not do
+
+## Series-plan extensions (added at series-plan step)
+
+### Season-arc tonal keys
+
+- `s1-depth-before-breadth`: Taylor's early organizing is narrow and intentionally invisible; the ignition is involuntary; the first season's dramatic shape is quiet infrastructure laid against the steward's growing file; intimacy-as-exposure is the quiet danger
+- `s2-coalition-discovers-the-withholding`: the season's emotional register is what it feels like to trust someone who cannot stop calculating you; the loss is not betrayal — it is the recognition of what was never offered
+- `s3-institution-as-lever-and-trap`: Taylor presses the Faith as a counter-institutional tool; the register is cold institutional maneuvering; the season ends on the gap between what operates under pressure and what does not
+- `s4-nothing-left-to-shield`: at the Council all managed distance collapses; the register is reckoning-without-resolution; the season closes on what survives, not what is saved
+
+### Structural tonal keys
+
+- `control-calculus-as-tax`: Taylor's operational logic is not a flaw she overcomes; it is a continuous levy on every person who trusts her; the story tracks who pays and when
+- `documentary-antagonist`: Aldric Pryor's file is the antagonist clock; the threat is never personal — it is bureaucratic accumulation; each season's suppression-stage is a new entry in the record
+- `faith-without-consent`: Septon Rowan builds a theological category around Taylor; the register is pastoral and sincere; the complication is that Rowan's framing is not wrong, exactly, and not Taylor's to refuse
+- `knowledge-as-loneliness`: Taylor's foreknowledge cannot be shared without destroying her cover; the people around her are not stupid — they are working with the information they have; the register is that being the only one who sees the whole shape is a kind of isolation that organizing cannot fix
