@@ -1262,3 +1262,27 @@ dispatch: fixer round 9 — Pass 5 continuity (cont-003 + cont-004 + cont-009)
 target: active-project/theater/proto-lines/s01.aggregate.md
 audit-report: active-project/staff/auditor/season-s01-pass-5-continuity.md
 findings-queued: 3 (2 faults + 1 minor flag promoted to fix)
+
+## cont-003 — RESOLVED
+fault: maester folio possession gap — reeve receives folio at ID 809 with no return-transfer before maester draws it again at ID 893
+scope: insert
+change: ID 923 appended with `# insert-at: 849`; content: `the town reeve passes the maester the folio` — double-object handoff form, consistent with ID 894 precedent; closes the 809→893 possession gap
+criteria met: yes
+
+## cont-004 — RESOLVED
+fault: market slip orphan prop — ID 922 draws the slip with no release, handoff, or use-completion bone
+scope: insert
+change: ID 924 appended with `# insert-at: 42`; content: `oc-craftsman-father lays the slip` — discrete act placing slip down, closes orphan lifecycle; `lays` verb confirmed clean by ID 755 precedent in the same file
+criteria met: yes
+
+## cont-009 — RESOLVED-PRE-EXISTING
+fault: ID 920 `grips the chair edge` — `chair` inconsistent with bench/stool furniture established in workshop interior
+scope: line
+change: No edit required. Current file reads `taylor-hebert-jaehaerys grips the table edge` — `chair` is not present; terminology inconsistency already resolved
+criteria met: yes
+
+## SESSION-END — 2026-05-09T19:30:00Z — season-s01-pass-5-continuity-fixes
+findings-applied: 2 (cont-003: ID 923 insert; cont-004: ID 924 insert)
+findings-pre-existing: 1 (cont-009: ID 920 already reads `table edge`)
+new-IDs-created: 923, 924
+exit: CLEAN
