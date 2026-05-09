@@ -1,19 +1,18 @@
 ---
 name: cond-no-parahuman-infrastructure
 class: condition
-scope: project
-project: taylor-hebert-westeros
+scope: library
 world: planetos
 origin: authored
 quality: full
 references: [cond-fauna-control-rules]
 ---
 
-# No Parahuman Infrastructure — Hard World-Law for taylor-hebert-westeros
+# No Parahuman Infrastructure — Hard World-Law (Planetos)
 
 ## Description
 
-Absolute prohibition card. Planetos in 120 AC contains no Shard infrastructure, no parahuman network, no trigger events, no Cauldron, no capes, and no second parahumans. Taylor Hebert's fauna-control is the sole parahuman-derived capability in this world, and it operates under physical cost constraints specifically because the Shard buffering that made it sustainable on Earth-Bet does not exist here. This card governs what cannot exist in this project. Auditors should load this card whenever a scene risks implying otherwise.
+Absolute prohibition card. Planetos contains no Shard infrastructure, no parahuman network, no trigger events, no Cauldron, no capes, and no second parahumans. Taylor Hebert's fauna-control is the sole parahuman-derived capability in this world, and it operates under physical cost constraints specifically because the Shard buffering that made it sustainable on Earth-Bet does not exist here. This card governs what cannot exist in this project. Auditors should load this card whenever a scene risks implying otherwise.
 
 ## Sensory Impact
 
@@ -21,7 +20,7 @@ None. This is a world-law card with no ambient sensory expression. Its presence 
 
 ## Duration
 
-Permanent. This rule holds for the full project duration. It cannot be modified within the taylor-hebert-westeros project scope. Any future project fork that introduces parahuman infrastructure must be a separate project with a revised constraint set.
+Permanent. This rule holds for the full project duration. It cannot be modified within any project using this card. Any future project fork that introduces parahuman infrastructure must be a separate project with a revised constraint set.
 
 ## The Prohibitions
 
@@ -48,6 +47,6 @@ Permanent. This rule holds for the full project duration. It cannot be modified 
 
 **With `cond-fauna-control-rules`:** The cost curve on the fauna-control card is the operative expression of the no-Shard-buffering rule. Both cards should be loaded together for any scene involving Taylor's power use.
 
-**With the taylor-hebert-westeros persona card:** The persona card's Hard Fences carry overlapping content ("Power mechanics (binding): Fauna control only"). This card provides the world-law framing that the persona card's fence implies but does not state: the reason fauna-control is the only power is that no infrastructure for other powers exists.
+**With the project persona card:** The persona card's Hard Fences carry overlapping content ("Power mechanics (binding): Fauna control only"). This card provides the world-law framing that the persona card's fence implies but does not state: the reason fauna-control is the only power is that no infrastructure for other powers exists.
 
 **For auditor use:** Any scene implying power creep (Taylor's abilities expanding beyond the defined cost curve without consequence), the appearance of a second cape, or a Shard-mediated event should be flagged against this card.

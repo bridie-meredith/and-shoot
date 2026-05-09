@@ -1,8 +1,7 @@
 ---
 name: cond-fauna-control-rules
 class: condition
-scope: project
-project: taylor-hebert-westeros
+scope: library
 world: planetos
 origin: authored
 quality: full
@@ -70,8 +69,6 @@ Governing constraint card for Taylor Hebert's parahuman fauna-control ability as
 
 ## Interaction Notes
 
-**With `cond-impressment-census-120ac`:** The census process specifically flags unusual cognition and unusual capabilities. If Taylor uses fauna-control in the presence of the maester or castellan's men, it is almost certain to be flagged. Even indirect use (birds behaving oddly during the census visit) creates risk.
-
-**With `cond-westerosi-customary-authority`:** A smallfolk child who can make animals do things is not categorized as dangerous by default — she is categorized as touched, cursed, or strange. This provides some protection (people avoid the subject of the strange child) and some exposure (the subject of the strange child is discussed; it travels through the smallfolk information network).
+**With `cond-westerosi-customary-authority-jaehaerys`:** A smallfolk child who can make animals do things is not categorized as dangerous by default — she is categorized as touched, cursed, or strange. This provides some protection (people avoid the subject of the strange child) and some exposure (the subject of the strange child is discussed; it travels through the smallfolk information network).
 
 **With Septon Rowan:** The wrongness-perception is his raw material. When he witnesses fauna-control events, they become theologically significant. He is not wrong that something unusual is happening; his interpretation is simply not the one Taylor would choose.

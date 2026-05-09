@@ -75,7 +75,7 @@ This condition evolves across the series arc. It does not resolve; it escalates.
 
 ---
 
-### Stage 4: Action (~98–101 AC, Council horizon — Taylor age ~21)
+### Stage 4: Action (~98–101 AC, Council horizon — Taylor age ~14–17)
 
 **Trigger:** Stage 3 suppression is not effective. Taylor's organizing continues or escalates despite official oversight. The lord concludes that administrative monitoring is insufficient and escalates either to direct intervention (arrest, destruction of organizing infrastructure, economic pressure on her family or coalition members) or to Tully-level reporting (taking the problem to his liege for guidance and institutional backing).
 

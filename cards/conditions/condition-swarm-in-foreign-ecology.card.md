@@ -85,8 +85,4 @@ Persistent. This condition is the baseline for Taylor's power in Westeros throug
 
 ## Interaction Notes
 
-**With condition-language-barrier:** Her power is not language-dependent. She can gather information covertly before she can ask for it. The combination of insect reconnaissance and language barrier means she often knows the shape of a situation before she can communicate about it — a specific kind of trapped competence that is load-bearing for early arcs.
-
-**With condition-war-of-five-kings-riverlands:** Her power is militarily significant if used correctly, but visible deployment in front of faction soldiers is a high-risk action. Superstition about unusual insect behavior — bees that don't sting, flies that gather without cause — is a real cultural feature of Planetos. Someone might call it witchcraft. This is not paranoia; it is an accurate read of the cultural environment.
-
 **Scene-level use:** Before any scene where Taylor uses her swarm capability, the active impersonator should check this condition against the location card's season and terrain type to determine what is available. The condition provides the ceiling; the scene provides the specific context.

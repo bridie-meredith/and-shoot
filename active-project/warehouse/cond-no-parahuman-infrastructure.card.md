@@ -1,10 +1,12 @@
 ---
 name: cond-no-parahuman-infrastructure
 class: condition
-scope: library
+scope: project
+project: taylor-hebert-jaehaerys
 world: planetos
 origin: authored
 quality: full
+overrides: cond-no-parahuman-infrastructure
 references: [cond-fauna-control-rules]
 ---
 
