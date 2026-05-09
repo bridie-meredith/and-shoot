@@ -94,7 +94,6 @@ The Great Council succession crisis draws every institutional actor who has been
 ### Laws (project-constraint conditions)
 
 - `cond-feudal-hierarchy-law` — smallfolk are legally and politically subordinated; no standing before institutional authority without a lord's endorsement; Taylor has none
-- `cond-westerosi-customary-authority` — authority derives from house, faith, or crown grant; organizing without institutional sponsorship is legible as sedition at sufficiently high threat-read
 - `cond-westerosi-customary-authority-jaehaerys` — Jaehaerys-era variant: long peace moderates enforcement, but the underlying law is unchanged; moderates S1–S2 suppression severity, not S3–S4
 
 ### Lore (ambient conditions)
@@ -112,7 +111,7 @@ The Great Council succession crisis draws every institutional actor who has been
 - `cond-fauna-control-rules` — Taylor's swarm-sense and active control rules; ecological friction from foreign insect distribution; active control costs calibrated against child-body ceiling
 - `cond-shard-behavioral-weight` — Shard present, dormant at Entity-communication level, active at behavioral-weight; biases Taylor toward escalation and direct action; she reads it as her own judgment
 - `condition-swarm-in-foreign-ecology` — ambient degradation of Taylor's insect-map; precision degrades at range and in new terrain; calibration ongoing across S1
-- **Project decision — adolescent-body ceiling:** the child-body cost ceiling is a named transition event, not a fixed floor; at approximately age 13–14 (~mid-S2, ~91 AC) Taylor's body crosses an adolescent threshold and the cost curve lengthens proportionally (the 10/20/30-minute actor-card ceilings shift upward on a schedule season planning must specify); this transition is a named physical-progression beat available as a mid-S2 internal peak vector; scene planning must mark which ceiling applies at each episode where active swarm use occurs.
+- **Project decision — adolescent-body ceiling:** the child-body cost ceiling is a named transition event, not a fixed floor; at approximately age 13–14 (~mid-S2, ~91 AC) Taylor's body crosses an adolescent threshold and the cost curve lengthens proportionally (the 3/10/20-minute actor-card ceilings shift upward on a schedule season planning must specify); this transition is a named physical-progression beat available as a mid-S2 internal peak vector; scene planning must mark which ceiling applies at each episode where active swarm use occurs.
 
 ### Suppression arc
 
