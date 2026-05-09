@@ -43,8 +43,13 @@ planetos:
   - edric-cray
   - lem-lemoncloak
   - mira-stonefield
+  - mira-stonefield-jaehaerys
   - oc-castellan-harrenhal
+  - oc-child-peer
+  - oc-craftsman-father
+  - oc-craftsman-mother
   - oc-girl-from-hamlet
+  - oc-lords-steward
   - oc-plumms-man
   - peasant-woman-forest
   - plumms-man
@@ -55,6 +60,7 @@ planetos:
   - ser-harwick-plumm
   - septon-dying-protector
   - septon-rowan
+  - taylor-hebert-jaehaerys
   - taylor-hebert-westeros
   - thoros-of-myr
   - viserys-i-targaryen
@@ -91,10 +97,15 @@ full:
   - lisa-wilbourn
   - marissa-newland
   - mira-stonefield
+  - mira-stonefield-jaehaerys
   - missy-biron
   - night-and-fog
   - noelle
   - oc-castellan-harrenhal
+  - oc-child-peer
+  - oc-craftsman-father
+  - oc-craftsman-mother
+  - oc-lords-steward
   - rachel-lindt
   - rhaenyra-targaryen
   - rymer-hedge
@@ -106,6 +117,7 @@ full:
   - shatterbird
   - sophia-hess
   - taylor-hebert
+  - taylor-hebert-jaehaerys
   - taylor-hebert-westeros
   - thoros-of-myr
   - thomas-calvert
@@ -122,7 +134,7 @@ scant:
 
 ## by_trope
 
-young-depressed-hero: [taylor-hebert, taylor-hebert-westeros]
+young-depressed-hero: [taylor-hebert, taylor-hebert-westeros, taylor-hebert-jaehaerys]
 master-manipulator: [lisa-wilbourn, thomas-calvert]
 feral-pragmatist: [rachel-lindt]
 sociopathic-charmer: [jack-slash, alec-vasil]
@@ -134,7 +146,7 @@ ruthless-operator: [sophia-hess, colin-wallis]
 broken-by-circumstance: [elle-labyrinth, marissa-newland]
 noise-and-terror: [shatterbird, night-and-fog]
 political-power: [thomas-calvert]
-westerosi-local: [peasant-woman-forest, westerosi-traveling-maester, mira-stonefield, edric-cray, rymer-hedge, ser-aemon-bracken, ser-edwyn-celtigar, septon-rowan, oc-castellan-harrenhal, septon-dying-protector]
+westerosi-local: [peasant-woman-forest, westerosi-traveling-maester, mira-stonefield, mira-stonefield-jaehaerys, edric-cray, rymer-hedge, ser-aemon-bracken, ser-edwyn-celtigar, septon-rowan, oc-castellan-harrenhal, septon-dying-protector, oc-craftsman-mother, oc-craftsman-father]
 administrative-functionary: [census-officer, oc-census-officer, clerk, plumms-man, oc-plumms-man]
 riverlands-background: [peasant-woman-forest, oc-girl-from-hamlet]
 brutal-pragmatist: [lem-lemoncloak]
@@ -145,8 +157,10 @@ targaryen-era: [rhaenyra-targaryen, viserys-i-targaryen, ser-edwyn-celtigar]
 riverlands-power: [ser-aemon-bracken]
 faith-operator: [septon-rowan]
 hedge-knight: [rymer-hedge]
-institutional-antagonist: [oc-castellan-harrenhal]
+institutional-antagonist: [oc-castellan-harrenhal, oc-lords-steward]
 opening-loss: [septon-dying-protector]
+riverlands-child: [oc-child-peer]
+smallfolk-parent: [oc-craftsman-mother, oc-craftsman-father]
 
 ---
 
@@ -166,6 +180,12 @@ OC slots for margit to construct at project activation when a generic role is se
 - oc-castellan-harrenhal (institutional-antagonist slot; authored taylor-hebert-westeros provisioning 2026-05-03)
 - septon-dying-protector (opening-loss/ward-keeper slot; promoted to full 2026-05-03; tier: supporting)
 - taylor-hebert-westeros (protagonist westeros-reincarnation variant; full; authored taylor-hebert-westeros provisioning 2026-05-03)
+- taylor-hebert-jaehaerys (protagonist jaehaerys-era variant; full; authored taylor-hebert-jaehaerys provisioning 2026-05-09)
+- mira-stonefield-jaehaerys (jaehaerys-era variant of mira-stonefield; aged to ~50, economic-precarity backstory, community-elder function; full; authored taylor-hebert-jaehaerys provisioning 2026-05-09)
+- oc-craftsman-mother (smallfolk-parent slot; Elara Ashford, dyer's wife, Fairstead; full; authored taylor-hebert-jaehaerys provisioning 2026-05-09)
+- oc-craftsman-father (smallfolk-parent slot; Edwyn Ashford, dyer-with-accounts, Fairstead; full; authored taylor-hebert-jaehaerys provisioning 2026-05-09)
+- oc-lords-steward (institutional-antagonist slot; Aldric Pryor, Ryger steward at Fairstead; full; authored taylor-hebert-jaehaerys provisioning 2026-05-09)
+- oc-child-peer (riverlands-child slot; Clem Ferris, reeve's son, Fairstead, age ~8; full; authored taylor-hebert-jaehaerys provisioning 2026-05-09)
 - census-officer (impressment-functionary walk-on; full; authored during s01e01 partial shoot 2026-05-03; backfilled to library on reset)
 - clerk (census transcriptionist walk-on; full; authored for taylor-hebert-westeros s01e01 bullets 21-22; 2026-05-04)
 - oc-census-officer (oc-* slug alias for census-officer; warehouse walk-on; variant-of: census-officer; authored 2026-05-07 for chapter-01 Pass 5 continuity resolution)
