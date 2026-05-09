@@ -132,5 +132,20 @@ s01e08  Ledger Work
 - **Suppression-policy stage at S1 close:** incident-response. Pryor's note exists; it has reached one maester; the apparatus knows the name. Patterned-response begins in S2. The S1 close must not overstate the institutional threat-level — it is a tier-crossing, not a policy shift.
 - **Mira recruitment arc:** s01e06 initiates the earn. The arc is not closed in S1. Mira withholds from Pryor; she asks Taylor directly; the debt is real and unnamed. The full coalition-seed establishment is S2 work. Season-plan does not overpromise.
 - **Rowan theology arc:** two S1 beats (s01e02 first pastoral claim, s01e07 Elara-Rowan convergence). The arc is not resolved in S1 — this is a named S2 pressure. Episode-plan authoring should not force a resolution.
-- **Shard-thumb:** s01e04 (Census at the Dock) is the season's most explicit Shard-load episode — Taylor holds still against the pull; the episode's interior register is the cost of that. Shoot-phase must not flatten this to mere "Taylor is disciplined." The cost is real.
+- **Shard-thumb:** s01e04 (Census at the Dock) is the season's most explicit Shard-load episode — Taylor holds still against the pull; the episode's interior register is the cost of that. Shoot-phase must not flatten this to mere "Taylor is disciplined." The cost is real. (Audience carry-forward: worm-canon-pedant — render as cost-language, not discipline-language.)
 - **Adolescent-body ceiling transition:** S2 beat. s01e08 plants the body-clock by having the maester note Taylor's age and physical state in his assessment — a detail he records, not a scene Taylor controls. Episode-plan authoring for s01e08 should include this as background institutional texture.
+- **s01e01 named change (carry-forward):** Episode-plan authoring must identify one named thing that is concretely different at episode-close from episode-open. Not a mood shift — a social or physical fact. (Audience carry-forward: pulp-enthusiast.)
+- **s01e06 interlude rendering constraint (carry-forward):** Render Mira's political arithmetic — what visibility costs — not sympathetic deliberation. The episode's interior is a calculation, not a crisis of conscience. (Audience carry-forward: dark-fantasy-reader. Also recorded in Section F POV rulings.)
+- **s01e07 interlude rendering constraint (carry-forward):** Render failure-mode cost in what Elara does not understand, not what she resolves. The threshold is Elara's irreversible action; the close is Taylor's present-tense decision. Elara's interiority must stay opaque to its own consequences. (Audience carry-forward: worm-canon-pedant. Also recorded in Section F POV rulings.)
+
+---
+
+## Revision attempt 2
+
+Changes made against combined dramatist + audience feedback (attempt 2 of 3):
+
+- **Fix 1 (e07 intimate cost):** e07 chunk names Elara's irreversible action (goes directly to Edwyn; family unit re-coheres) and the present-tense decision Taylor faces at episode close (lie explicitly or accept closing of operational cover). The deferral to S2 is ended; the cost lands in S1.
+- **Fix 2 (Pryor non-reactive move):** e04 chunk now names Pryor's pre-ignition paperwork request (sept's literacy roster as routine census pull) as a non-reactive move that costs Taylor a management option before the ignition fires. e08 chunk names the maester visit as a Pryor-originated directive, making Pryor the active agent behind institutional routine.
+- **Fix 3 (POV/interlude rulings committed):** e06 and e07 committed as interludes at season-plan level in Section F with narrator slugs and rendering constraints. No deferral to episode-plan authoring.
+- **Fix 4 (chunk length):** All eight chunks verified at 2-sentence maximum. No structural information was lost; detail relocated to Section I where it belongs.
+- **Carry-forward flags added to Section I:** e01 named-change requirement (pulp-enthusiast), e04 cost-language confirmation (worm-canon-pedant), e06 political-arithmetic rendering (dark-fantasy-reader), e07 opacity-of-consequences rendering (worm-canon-pedant). These are execution constraints for episode-plan authoring, not revision demands.

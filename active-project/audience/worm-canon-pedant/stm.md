@@ -44,3 +44,11 @@ specific feedback:
   - s01e04 Shard-thumb cost: the chunk names the threshold as "whether Taylor holds still" — that is discipline-language, not cost-language. The structural note to shoot-phase ("must not flatten this to mere 'Taylor is disciplined' — the cost is real") carries the distinction forward, but the plan-level chunk does not demonstrate the cost as distinct from restraint. This is a shoot-phase responsibility, not a plan-level revision demand; the note is adequate.
   - s01e07 POV watch item: if the episode goes Elara-POV interlude, the cost must be visible in what Elara fails to understand, not in what she resolves — the failure-mode register must survive the POV shift. Episode-plan authoring is on notice.
 prior complaints addressed: yes — foreknowledge precision limit and Shard awareness remain at execution level; adolescent-body ceiling is S2, not S1; no new series-plan carry items triggered by this plan.
+
+## Session: season 1 plan review — attempt 2
+verdict: accept
+read: e07 POV constraint committed (Elara does not understand, does not resolve); Taylor's present-tense decision is the canonical control-as-substitute-for-trust beat; prior watch item closed.
+specific feedback:
+  - e07 POV watch item resolved. Elara-as-POV-who-does-not-understand is a committed rendering constraint, not a recommendation. The failure-mode register is preserved: cost lives in what Elara cannot read, not in Elara's comprehension or resolution.
+  - e07 decision register correct. Lie explicitly to both parents OR accept closing of operational cover is textbook mid-canon Taylor — she substitutes control management for honest relationship. This is the failure mode the season plan needed to name as present-tense action, not emotional aftermath. Named correctly.
+prior complaints addressed: yes — e07 POV watch item is closed by committed rendering constraint; all prior carry items (Shard awareness, foreknowledge precision) remain at their appropriate execution-level staging.
