@@ -1235,3 +1235,24 @@ fault: s01.aggregate entertainment windows exceed TOLERATED cap; flatlines at ea
 scope: episode (bulk line deletions across season aggregate)
 change: 46 lines deleted across s01.aggregate.md — 44 at ≥2-persona threshold, 2 at BORED-escalation override (IDs 739, 740). 2 VLB-protected skips (IDs 732, 738). Zero dependency conflicts.
 criteria met: yes — early-baseline cluster (IDs 1-149) reduced by ~22 beats; Elara transit (732-741) reduced from 9-beat block to 3 live beats (732 VLB, 738 VLB, 741 fist-raise); post-ignition cleanup (510-512) cleared; witness-inquiry courier (543-550) compressed from 10 to 5 beats.
+
+## SESSION-START — 2026-05-09T18:00:00Z — season-s01-pass-4-r2-board-change-insert
+dispatch: single insert — W03/W04 early-baseline board-change beat (closes pulp REVISE + dramatist shape-006)
+target: active-project/theater/proto-lines/s01.aggregate.md
+audit-reports:
+  - active-project/staff/auditor/season-s01-pass-4-trim-pulp-enthusiast-r2.md
+  - active-project/staff/auditor/season-s01-pass-3-shape.md (shape-006)
+findings-queued: 1
+
+## board-change-insert — RESOLVED — 2026-05-09T18:15:00Z
+fault: pulp REVISE (W03/W04 board-change) + shape-006 (named change at early-baseline close)
+scope: insert
+new-ID: 922
+insert-at: 36
+content: oc-craftsman-father draws the market slip
+rationale: Edwyn's return from market (ID 32) is immediately followed by cap-removal and parental exchange; the slip he draws at ID 36 is the first named-object board-change — a market-sourced paper that enters the household and changes the week's terms before the parents' extended exchange (IDs 37-50) and before W07's "father lowers voice" (ID 73).
+criteria met: yes
+
+## SESSION-END — 2026-05-09T18:15:00Z — season-s01-pass-4-r2-board-change-insert
+findings-applied: 1
+exit: CLEAN
