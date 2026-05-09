@@ -27,42 +27,42 @@ What does Taylor build in the window between arriving unknown and becoming named
 ### s01e01 — "The Map Is Wrong"
 ~84 AC. Taylor age 7.
 
-Taylor's passive swarm-sense runs continuously in Fairstead's insect-wrong ecology — the map she is rebuilding species by species is the opening texture of the season. When Edwyn returns from the market with news that changes the household's week, Taylor knows the outcome before he speaks it; the collision is whether she can hold the child-register response long enough for the information to arrive through legitimate channels. What cannot remain unchanged: the season establishes that performing childhood costs something real and continuous, and that the cost is already running at story-open.
+Taylor's passive swarm-sense runs continuously in Fairstead's insect-wrong ecology while Edwyn returns from market with news that changes the household's week; the collision is whether she can hold the child-register long enough for the information to arrive through legitimate channels. What cannot remain unchanged: performing childhood costs something real, and that cost is already running — one thing in the household is different at episode-close from episode-open.
 
 ### s01e02 — "The Septon's Offer"
 ~85 AC. Taylor age ~8.
 
-Taylor begins attending the sept under the cover of public piety — the form without the content, literacy-access and observation cover wrapped in the legible shell of a smallfolk child seeking the Seven's comfort. Septon Rowan extends a pastoral offer of letters-instruction before Taylor has decided whether to invite it; the threshold is whether she can accept the offer without giving Rowan something she cannot take back. What cannot remain unchanged: the sept is now Taylor's literacy node, and Rowan holds the first pastoral claim on her that she did not choose.
+Taylor uses public piety as cover for literacy-access, but Septon Rowan extends a pastoral offer of letters-instruction before Taylor has decided whether to invite it; the collision is whether she can accept without giving Rowan something she cannot take back. What cannot remain unchanged: the sept is now Taylor's literacy node, and Rowan holds the first pastoral claim on her that she did not choose.
 
 ### s01e03 — "What Clem Saw"
 ~85 AC. Taylor age ~8.
 
-Taylor's child-performance slips in the market square — a moment of adult-register precision in front of Clem Ferris that goes by too fast for Clem to name but not too fast to notice. Clem tells no adult, but the reeve's wife sees Clem's face change and asks him what he saw. The threshold is whether a child's unprocessed noticing converts to adult attention before Taylor can assess the damage. What cannot remain unchanged: Taylor has a new variable she cannot fully model — a child-witness whose honesty is structurally guaranteed and whose noticing cannot be managed through the adult frames she can subvert.
+Taylor's child-performance slips in the market square in front of Clem Ferris — adult-register precision that goes by too fast to name but not too fast to notice; the threshold is whether Clem's unprocessed noticing converts to adult attention before Taylor can assess the damage. What cannot remain unchanged: Taylor now carries a variable she cannot fully model — a child-witness whose honesty is structurally guaranteed and cannot be managed through the adult frames she can subvert.
 
 ### s01e04 — "Census at the Dock"
 ~85–86 AC. Taylor age ~8–9.
 
-Aldric Pryor arrives at the river-ferry dock with a tax-census retinue — Rymer Hedge among the lord's-man party as a temporary-hire sword — to update the household rolls and assess arrears. Taylor watches the institutional machinery of extraction from twelve feet away while a fishwife's account is disputed at the weighing stone and the retinue's patience narrows. The threshold is whether Taylor holds still while everything in her reads it as the exact kind of coercion her power was calibrated to answer. What cannot remain unchanged: Pryor is now a named face, not ambient authority; Rymer sees Taylor watching and files it without acting; the swarm-sense is not used, but the cost of not using it is real.
+Pryor arrives at the river-ferry dock with a tax-census retinue — Rymer Hedge among the party — to update household rolls; the threshold is whether Taylor holds still while everything in her reads the fishwife's disputed account as the exact kind of coercion her power was calibrated to answer. What cannot remain unchanged: Pryor is a named face and has already requested the sept's literacy roster as routine census paperwork — a non-reactive paperwork pull that costs Taylor a management option before the ignition exists; Rymer files Taylor watching, without acting.
 
 ### s01e05 — "The Steward's Note" [IGNITION, ~86 AC]
 ~86 AC. Taylor age ~9.
 
-The tax-collection retinue returns to the market square during the seasonal levy; a smallfolk woman's arrears payment is refused on a contested weight and the collector's men move to seize goods in lieu. The swarm rises before Taylor decides — horses bolt, two of the collector's men are stung badly enough to need treatment, the collection is abandoned for the day. Pryor is watching from the far end of the square; he makes the first institutional record of Taylor as a named anomaly. Witnesses in the crowd read the event through the Seven-as-ward frame — a blessing, a sign, the old gods bleeding south of the Neck — not as generic strangeness. What cannot remain unchanged: Taylor is no longer invisible to power; the note exists; the season's spine snaps into place and everything after bends away from this.
+The collection retinue returns for the seasonal levy; a contested-weight seizure triggers the swarm before Taylor decides — horses bolt, two men need treatment, the collection breaks — while Pryor watches from the far end of the square and makes the first institutional record of Taylor as a named anomaly. What cannot remain unchanged: Taylor is no longer invisible to power; the note exists; the season's spine snaps into place and everything after bends away from this.
 
 ### s01e06 — "What Mira Stonefield Knows"
-~86–87 AC. Taylor age ~9–10.
+~86–87 AC. Taylor age ~9–10. **INTERLUDE — narrator: mira-stonefield-jaehaerys**
 
-Pryor's inquiry reaches the market quarter — he is interviewing credible witnesses, methodical and unhurried. Mira Stonefield was standing ten feet from Taylor when the swarm rose; her account is the one that would close the inquiry or open it further. The threshold is Mira's decision: what she says, what she omits, and what she asks Taylor directly in the alley behind the wool-factor's stall before the inquiry reaches her door. What cannot remain unchanged: the first earn of the recruitment arc is transacted in what Mira does not say to Pryor; the debt between them is real, unnamed, and not yet a coalition.
+Pryor's inquiry reaches the market quarter; Mira Stonefield — ten feet from Taylor when the swarm rose — is the witness whose account would close the inquiry or open it further; the threshold is what Mira says, what she omits, and what she asks Taylor directly in the alley before Pryor reaches her door. What cannot remain unchanged: the first earn of the recruitment arc is transacted in what Mira does not say to Pryor; the debt between them is real, unnamed, and not yet a coalition.
 
 ### s01e07 — "Elara's Question"
-~87 AC. Taylor age ~10.
+~87 AC. Taylor age ~10. **INTERLUDE — narrator: oc-craftsman-mother (Elara)**
 
-Elara Ashford goes to Septon Rowan with questions about her daughter that she has been carrying since before the ignition — the wrongness she can feel but cannot name, the child who never quite cried right, who never quite played right, who is too quiet in exactly the wrong register. Rowan answers in pastoral frame, which is not a lie and not the truth. Taylor finds out about the visit after it has happened, through the passive sense, not through Elara telling her. The threshold is not what Rowan told Elara but what Elara will now do with what he said — the gap Taylor was managing from one side has been handed a language she did not approve. What cannot remain unchanged: the managed distance between Taylor and her mother is no longer managed from Taylor's side only; Elara has taken an action outside Taylor's frame and the intimacy-cost has begun paying out in earnest.
+Elara goes to Septon Rowan with the wrongness she can feel but cannot name; Rowan answers in pastoral frame; the threshold is the irreversible action Elara takes after leaving him — she goes directly to Edwyn and the family unit re-coheres around concern for Taylor, closing Taylor's management of each parent as a separate vector. What cannot remain unchanged: Taylor closes the episode facing a present-tense decision: both parents are now acting in concert, and she must choose whether to begin lying explicitly to them or accept the closing of her operational cover.
 
 ### s01e08 — "Ledger Work"
 ~87–88 AC. Taylor age ~10–11.
 
-The lord's traveling maester arrives at Fairstead under cover of routine ledger verification — he is checking household rolls, assessing livestock counts, nothing that is not done every few years. He is not in Fairstead because of the ledgers. Taylor must perform normalcy at the highest possible cost while the maester moves through the sept, the workshop district, and the market, asking questions that do not sound like the questions they are. The threshold is whether Taylor can hold the child-register through every interaction while the maester reads the town and the steward's note reaches its first institutional relay. What cannot remain unchanged: the note has crossed a tier; the scope of the apparatus that knows Taylor is named has expanded from local incident-log to networked-surveillance; the board has changed, and Taylor knows it.
+The lord's traveling maester arrives at Fairstead on a Pryor-originated directive — Pryor specified the timing and what to look for, making the visit a Pryor move dressed as institutional routine — and Taylor must perform normalcy at the highest possible cost while the maester reads the town. What cannot remain unchanged: the note has crossed a tier; the apparatus that knows Taylor's name has expanded from local incident-log to networked-surveillance; the board has changed, and Taylor knows it.
 
 ---
 
@@ -92,14 +92,13 @@ s01e08  Ledger Work
 | s01e03 | taylor-hebert-jaehaerys | oc-child-peer (Clem Ferris), oc-craftsman-mother (background) |
 | s01e04 | taylor-hebert-jaehaerys | oc-lords-steward (Aldric Pryor), rymer-hedge, oc-craftsman-father (background) |
 | s01e05 | taylor-hebert-jaehaerys | oc-lords-steward (Aldric Pryor), mira-stonefield-jaehaerys (witness), rymer-hedge (witness) |
-| s01e06 | mira-stonefield-jaehaerys | taylor-hebert-jaehaerys, oc-lords-steward (Aldric Pryor, off-page pressure) |
-| s01e07 | oc-craftsman-mother (Elara) | septon-rowan, taylor-hebert-jaehaerys (present via passive-sense only) |
+| s01e06 | mira-stonefield-jaehaerys [INTERLUDE] | taylor-hebert-jaehaerys, oc-lords-steward (Aldric Pryor, off-page pressure) |
+| s01e07 | oc-craftsman-mother (Elara) [INTERLUDE] | septon-rowan, oc-craftsman-father (Edwyn), taylor-hebert-jaehaerys (present via passive-sense and episode-close decision) |
 | s01e08 | taylor-hebert-jaehaerys | oc-maester-traveler (new; see H), septon-rowan, oc-lords-steward (Aldric Pryor, background) |
 
-**POV notes:**
-- s01e06 foregrounds Mira's decision. Taylor is present but Mira's interiority drives the threshold. Narrator remains taylor-hebert-jaehaerys (she is present and observing); if episode-plan authoring determines Taylor cannot observe Mira's internal deliberation, s01e06 is an interlude candidate (narrator: mira-stonefield-jaehaerys, interlude: true).
-- s01e07 foregrounds Elara's action. Taylor learns via passive-sense after the fact. Narrator is taylor-hebert-jaehaerys (she reconstructs the event); if episode-plan authoring determines POV coherence requires Elara's perspective during the sept scene, s01e07 is an interlude candidate (narrator: oc-craftsman-mother, interlude: true).
-- Final narrator/interlude rulings are episode-plan authoring decisions, not season-plan decisions.
+**POV rulings (committed at season-plan level):**
+- s01e06: interlude: true. narrator: mira-stonefield-jaehaerys. Render Mira's political arithmetic — what visibility costs — not sympathetic deliberation. (dark-fantasy-reader execution constraint.)
+- s01e07: interlude: true. narrator: oc-craftsman-mother (Elara). Render failure-mode cost in what Elara does not understand, not what she resolves. The episode threshold is Elara's irreversible action; the episode close is Taylor's present-tense decision. (worm-canon-pedant execution constraint.)
 
 ---
 

@@ -36,3 +36,12 @@ specific feedback:
   - Fix 4 closes the S4 register correctly: the enforcement record surviving as Council documentary liability / political asset means the suppression apparatus costs the institution at the political tier while Mira's network is already gone before the Council convenes. The Great Council is not a moment where Taylor's work is vindicated; it is a moment where the institutional record does something Taylor cannot control. Catharsis-before-Dance prohibition holds.
   - OQ-7/A superstition-frame watch item remains active at execution level. Unchanged from prior session.
 prior complaints addressed: yes — S2 gestural-cost demand is met; prior carry items (Great Council framing, superstition-frame) remain at their appropriate levels.
+
+## Session: season 1 plan review
+verdict: accept
+read: The superstition frame is explicitly named at e05, Pryor's thorough-not-cruel register survives all four appearances, and Mira's withholding is framed as smallfolk political arithmetic rather than personal loyalty.
+specific feedback:
+  - s01e05: "Witnesses in the crowd read the event through the Seven-as-ward frame — a blessing, a sign, the old gods bleeding south of the Neck" — both registers named, neither collapsed. This is the correct execution of the series-level watch item at plan level. The superstition frame is stamped at the ignition point and available to carry through witness scenes in e06 and e08.
+  - Pryor thorough-not-cruel: e04 "retinue's patience narrows" (functionary register), e05 "watching from the far end of the square; makes the first institutional record" (clinical distance), e06 "methodical and unhurried" (explicit), e08 background. The register holds across all four appearances at plan level.
+  - Mira's withholding framed as calculus: "what she says, what she omits" / "the first earn is transacted in what Mira does not say to Pryor" — the debt is real and unnamed, not a favor. This is smallfolk-physics register. Watch item: if s01e06 goes Mira-POV interlude, the episode must render her political arithmetic, not her sympathetic deliberation. Episode-plan authoring is on notice.
+prior complaints addressed: yes — superstition frame is now explicitly named at plan level for e05; prior carry items (Great Council framing, superstition-frame at execution) remain appropriately staged.

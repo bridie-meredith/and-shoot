@@ -35,3 +35,12 @@ specific feedback:
   - Foreknowledge-at-Council-actor-level carry item stands at execution level; nothing in the four fixes introduces a new lore-leak risk, but the watch item remains. Season planning should note the individual-actor precision limit when Council positioning begins.
   - Shard awareness carry-forward unchanged. Watch item remains active; no staging of an awareness beat has occurred.
 prior complaints addressed: yes — child-body ceiling transition is now a named project decision; prior carry items remain at their appropriate planning levels.
+
+## Session: season 1 plan review
+verdict: accept
+read: The season plan is canon-honest throughout — involuntary swarm at e05, passive-sense as the channel for e07, Shard-thumb named at e04 — and the prior series-plan carry items remain correctly positioned at execution level.
+specific feedback:
+  - s01e05 involuntary swarm rise is explicitly stated ("the swarm rises before Taylor decides"); the post-Leviathan reflex register is honored. s01e07 passive-sense discovery of Elara's Rowan visit is named correctly in the chunk and cross-referenced in the POV notes. Both are canon-accurate.
+  - s01e04 Shard-thumb cost: the chunk names the threshold as "whether Taylor holds still" — that is discipline-language, not cost-language. The structural note to shoot-phase ("must not flatten this to mere 'Taylor is disciplined' — the cost is real") carries the distinction forward, but the plan-level chunk does not demonstrate the cost as distinct from restraint. This is a shoot-phase responsibility, not a plan-level revision demand; the note is adequate.
+  - s01e07 POV watch item: if the episode goes Elara-POV interlude, the cost must be visible in what Elara fails to understand, not in what she resolves — the failure-mode register must survive the POV shift. Episode-plan authoring is on notice.
+prior complaints addressed: yes — foreknowledge precision limit and Shard awareness remain at execution level; adolescent-body ceiling is S2, not S1; no new series-plan carry items triggered by this plan.
