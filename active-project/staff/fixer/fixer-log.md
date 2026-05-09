@@ -488,6 +488,16 @@ scope: line
 change: Recast to "taylor-hebert-jaehaerys follows mira-stonefield-jaehaerys" (destination slug added)
 criteria met: yes
 
+## SESSION-START — 2026-05-09T14:00:00Z — phase3-S3-trim
+dispatch: fixer round 11 — Phase 3 S3 trim deletions (all 3 personas REVISE)
+target: active-project/theater/proto-lines/s01.aggregate.md
+audit-reports:
+  - active-project/staff/auditor/season-s01-pass-S3-trim-pulp-enthusiast.md
+  - active-project/staff/auditor/season-s01-pass-S3-trim-dark-fantasy-reader.md
+  - active-project/staff/auditor/season-s01-pass-S3-trim-worm-canon-pedant.md
+findings-queued: intersect applied; ≥2-persona + BORED W05 override + flatline aggressive ranges
+note: pulp ~38 candidates + flatlines 21-60/83-135; worm 6 specific candidates + 15.8% TOLERATED; dark-fantasy 15 candidates + 1 BORED W05 (55-68) + flatlines 83-123/645-699. Convergent: line 123 fauna constraint, early-baseline thinning, post-witness-inquiry stretch.
+
 ## SESSION-START — 2026-05-09T00:30:00Z — season-s01-pass-2-round3-overcap
 dispatch: fixer round 3 — apply round-3 audit findings (84 new faults: prep-padding cluster + adjective-modifier cluster)
 target: active-project/theater/proto-lines/s01.aggregate.md
