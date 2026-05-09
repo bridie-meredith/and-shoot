@@ -1,4 +1,4 @@
-# Series Plan — Taylor Hebert in Westeros (~84–101 AC)
+# Series Plan (~84–101 AC)
 
 ---
 
@@ -29,22 +29,18 @@ Can a structure built from below, by someone who cannot stop running the control
 ## 4. Season Chunks
 
 ### Season 1 — ~84–88 AC (Taylor age 7–11 in body)
-*"The Steward's Note"*
 
 The tax-collection swarm event at ~86 AC converts Taylor from invisible smallfolk child to a named anomaly in Aldric Pryor's incident log, and the institutional apparatus that will eventually suppress her coalition takes its first documentary step; Taylor's counter-move is to build depth before breadth, recruiting Mira Stonefield and establishing the sept as her literacy and information node, but the same control instincts that make her effective keep her parents at managed distance and Mira at arm's length precisely when closeness would be cheaper. The personal cost begins paying out before the season closes: Elara Ashford cannot be kept at arm's length indefinitely, and before S1 ends the lord's traveling maester arrives at Fairstead under cover of routine ledger work — the steward's note has reached him, and the board has changed.
 
 ### Season 2 — ~88–94 AC (Taylor age 11–17 in body)
-*"Patterned Response"*
 
 The steward's quarterly monitoring report names Mira's market-day gatherings as the new perimeter, and the lord's apparatus shifts from incident-response to patterned-response as Taylor's coalition expands past the family she can individually shield; the suppression apparatus gains institutional vocabulary for what it is watching, while Taylor's Shard-weighted instinct to escalate rather than withdraw pulls her into confrontations that cost the coalition members she cannot protect from the institutional record. Mira, Rymer, and the proto-coalition begin paying the mid-arc cost: the people Taylor recruited to trust her discover the specific shape of what she withholds, and the season closes on Mira publicly dissolving her market-day gatherings in late-S2 under the monitoring record's direct institutional pressure — the relationship does not break, but the structure Taylor built around Mira does not survive, and what remains is smaller and harder to rebuild.
 
 ### Season 3 — ~94–99 AC (Taylor age 17–22 in body)
-*"Policy"*
 
 By mid-season, suppression shifts from patterned-response to formal policy — a House Ryger directive backed by Tully suzerainty establishes Taylor's organizing network as an actionable threat, not a local nuisance — and the coalition pays at scale as the institutional apparatus has the vocabulary and the mandate to act; Taylor's response pushes the Faith framework as a counter-institutional lever, pressing Septon Rowan's network against the lord's apparatus, which fractures both the coalition's internal trust and the Faith's willingness to be used. The late-season collision: the policy's first coordinated enforcement action tests whether anything Taylor built can operate without her in the room, and the cost extracted from the institution — a lord's enforcement credibility, a Faith chapter house's political neutrality — is real but smaller than what it costs the people inside Taylor's coalition.
 
 ### Season 4 — ~99–101 AC (Taylor age 22–24 in body)
-*"Costs Become Final"*
 
 The Great Council succession crisis draws every institutional actor who has been managing Taylor's coalition as a local matter into a realm-level arena where managing it costs more than abandoning it, and the suppression policy collides with the Council's political dynamics — not because Taylor's work becomes suddenly legitimate, but because the apparatus built against her is now someone's political liability and someone else's asset. What Taylor built tests against the Council's institutional physics: the coalition's debts come due, her internal failure modes deliver their accumulated consequence at the worst moment, and the suppression policy's enforcement record survives as a documentary liability at Council — a usable asset for Tully rivals, a precedent no lord can cleanly disown — while Mira's network does not survive in its prior form, dismantled by the S3 enforcement action's institutional pressure before the Council convenes.
 

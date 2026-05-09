@@ -1,5 +1,5 @@
 ---
-description: Activate a new and-shoot project. Scaffolds active-project/, runs world-building and planning (steps 1a–1d, series plan, season 1 plan, episode 1 chunk), and presents output for human audit. Usage: /and-project ["<brief>"]
+description: Activate a new and-shoot project. Scaffolds active-project/, runs world-building and planning (steps 1a–1d, series plan, season 1 content beats), and presents output for human audit. No titles, no pre-segmented episodes — episodes are produced by /and-season Phase 4 split. Usage: /and-project ["<brief>"]
 ---
 
 Full project activation for the and-shoot pipeline. Three phases: scaffold (mechanical, direct), brief expansion (screen-writer), planning (you orchestrate directly). Human sees the planning output at the end — not the deliberation that produced it.
@@ -274,9 +274,9 @@ Auditor saves its full classified report here (schema: `schemas/audit-report.sch
 **Series plan.**
 1. Build series vibe-cloud. Write to `active-project/staff/studio/vibes.md`.
 2. Establish series drama.
-3. Dispatch screen-writer with: the world-notes from `world-notes.md`, the series drama statement, the series vibe-cloud, the brief, and `active-project/staff/showrunner/brief-expansion.md`. Screen-writer writes one chunk statement per planned season. **Chunk format: name the collision and what cannot survive it. State what forces are building against each other and what the season's pressure costs or breaks. External and structural — not character psychology. Name stakes and collision shape, not why anyone feels or decides anything. Two sentences maximum. "X's operation grinds through the same ground Y is embedded in before the armies cross" not "X pursues Y because they want Z."**
+3. Dispatch screen-writer with: the world-notes from `world-notes.md`, the series drama statement, the series vibe-cloud, the brief, and `active-project/staff/showrunner/brief-expansion.md`. Screen-writer writes one chunk statement per planned season. **Chunk format: name the collision and what cannot survive it. State what forces are building against each other and what the season's pressure costs or breaks. External and structural — not character psychology. Name stakes and collision shape, not why anyone feels or decides anything. Two sentences maximum. "X's operation grinds through the same ground Y is embedded in before the armies cross" not "X pursues Y because they want Z."** **Do not author season titles.** Seasons are referenced by slug only (`s01`, `s02`...).
 4. Dispatch audience and dramatist in parallel to review. Run accept/revise loop (3-try max).
-5. Write final series plan to `active-project/staff/showrunner/series-plan.md`. Update `active-project/staff/showrunner/memory.md`: write `series.theme`, `series.laws`, `series.lore`, `series.behaviors`, `series.plot` (start/end/protagonist_arc/series_question), and `series.stage_elements`.
+5. Write final series plan to `active-project/staff/showrunner/series-plan.md`. Update `active-project/staff/showrunner/memory.md`: write `series.theme`, `series.laws`, `series.lore`, `series.behaviors`, `series.plot` (start/end/protagonist_arc/series_question), and `series.stage_elements`. Do not write a `title` field on the series or on any season entry.
 
 **Log file: `active-project/staff/showrunner/series-plan-log.md`**
 Append one block per attempt:
@@ -293,9 +293,9 @@ dramatist verdict: <accept/revise> — <one line reason>
 **Season 1 plan.**
 1. Derive season vibe-cloud. Note deltas from series vibe-cloud. Append season section to `active-project/staff/studio/vibes.md`.
 2. Establish season drama.
-3. Dispatch screen-writer with: the series plan from `series-plan.md`, the season drama statement, the series and season vibe-clouds, the series constraints from memory, and `active-project/staff/showrunner/brief-expansion.md`. Screen-writer writes one chunk statement per episode. **Chunk format: the episode's central dramatic pressure — drama-sized, enough to fill a chapter, not a minor incident inside one. Name the collision or threshold the episode turns on, and what cannot remain unchanged after it. Concrete and specific, external and structural, no character psychology. "The soldier marks her location on a route-map from twelve feet away while Plumm's men inventory the settlement — she watches it happen and does not move" not "X runs because they fear being caught."**
+3. Dispatch screen-writer with: the series plan from `series-plan.md`, the season drama statement, the series and season vibe-clouds, the series constraints from memory, and `active-project/staff/showrunner/brief-expansion.md`. Screen-writer writes the season as a sequence of **content beats** — *continuous content guidance*, NOT pre-segmented episodes. **Beat format: each beat names a central dramatic pressure — collision or threshold, what cannot remain unchanged after. Concrete and specific, external and structural, no character psychology. Two sentences maximum per beat.** **Beats are content units, not episodes.** Do not number beats with episode slugs (no `s01e01`, `s01e02` — use plain index labels like `Beat 1, Beat 2` or descriptive anchors). Beat count is screen-writer's call (typically 6–12 for a season-length arc) and does not pre-decide episode count — `/and-season` Phase 4 splits the converged aggregate into actual episodes (multiple of 3) by interpretive cut. POV interludes (non-default narrator) are flagged inline at the beat where they apply, with the narrator slug. **Do not author beat titles or episode titles.**
 4. Dispatch audience and dramatist in parallel to review. Run accept/revise loop (3-try max).
-5. Write season plan to `active-project/staff/showrunner/season-s01-plan.md`. Update `active-project/staff/showrunner/memory.md`: set `routing.season_plan: active-project/staff/showrunner/season-s01-plan.md`; add the season to the `seasons` array with `status: active` and all episode slugs with `status: planned`; set `active.season: s01`.
+5. Write season plan to `active-project/staff/showrunner/season-s01-plan.md`. The plan contains: time-window, season drama, season question, **content beats (continuous content guidance, no episode segmentation)**, cast/stage usage by beat, structural notes for aggregate authoring. **No title fields on the season or on any beat.** Update `active-project/staff/showrunner/memory.md`: set `routing.season_plan: active-project/staff/showrunner/season-s01-plan.md`; add the season to the `seasons` array with `slug: s01`, `status: active`, and **`episodes: []`** (the array is populated by `/and-season` Phase 5 after split decides actual episode count + slugs); set `active.season: s01` and `active.episode: ~`. Do not write a `title` field on the season.
 
 **Log file: `active-project/staff/showrunner/season-s01-plan-log.md`**
 Same format as series-plan-log.md.
@@ -310,7 +310,7 @@ Auditor saves its full classified report here (schema: `schemas/audit-report.sch
 
 ---
 
-**Episode 1 chunk:** Take the episode 1 chunk statement from the season plan. Do not expand it to shoot-level bullets — that is episode start, not activation. The chunk statement is the output. Set `active.episode: s01e01` in `active-project/staff/showrunner/memory.md`.
+**Episode 1 chunk: REMOVED.** Under the emergent-split rule, episode boundaries are not authored at activation. The season is one continuous content-beat list; `/and-season` Phase 4 produces actual episode boundaries (multiple of 3) by interpretive split after the aggregate is authored and reviewed. Activation ends at the series-level audit + season-1 content-beats output. `active.episode` stays `~`; it is set to the new first-episode slug by `/and-season` Phase 5.
 
 ---
 
@@ -319,32 +319,33 @@ Auditor saves its full classified report here (schema: `schemas/audit-report.sch
 Present to the human as the activation output — this is the series-level audit checkpoint.
 
 ```
---- ACTIVATION COMPLETE: <series-title from series-plan.md> ---
+--- ACTIVATION COMPLETE ---
 
 SERIES
   Theme: ...
   Question: ...
-  Seasons:
-    S01 — ...
-    S02 — ... (sketch only)
+  Seasons (slug + chunk; no titles):
+    s01 — ...
+    s02 — ... (sketch only)
     ...
 
 SEASON 1
   Drama: ...
   Cast: <slug> — role / <slug> — role / ...
-  Episodes:
-    E01 — ...
-    E02 — ...
+  Content beats (continuous content guidance — no episode segmentation):
+    Beat 1 — ...
+    Beat 2 — ...
     ...
 
-EPISODE 1 (chunk — not yet expanded for shoot)
-  ...
+EPISODE BOUNDARIES
+  Not authored at activation. /and-season Phase 4 produces actual episodes
+  (multiple of 3) by interpretive split after the aggregate is converged.
 
 LOG FILES
   active-project/staff/showrunner/brief-expansion.md
   ...
 
-[Audit checkpoint. Review the above. Reply to proceed to episode start, or give notes for revision.]
+[Audit checkpoint. Review the above. Reply to proceed to /and-season, or give notes for revision.]
 ```
 
 If there are escalations requiring human decision, present them before the audit checkpoint line with: `ESCALATIONS REQUIRING YOUR DECISION:` followed by each one.
@@ -356,4 +357,5 @@ If there are escalations requiring human decision, present them before the audit
 - Actor working dirs are created by margit in step 1c, not in the scaffold.
 - Audience working dirs (including stm.md stubs) are created in the scaffold; margit copies the persona cards into them in step 1c.
 - Log files are the audit trail, not the outputs. The human sees summaries; the log files prove execution.
-- The episode 1 chunk is an output of season planning, not a new planning act. Episode start (which expands it to shoot-level bullets) is triggered by human approval at the audit checkpoint.
+- Episodes are not authored at activation. The season-1 output is a list of continuous content beats; `/and-season` Phase 4 produces actual episode boundaries (multiple of 3) by interpretive split after the aggregate is converged. Activation ends at the series-level audit + season-1 content beats. Human approval at the audit checkpoint triggers `/and-season`, not episode start.
+- No titles are authored at any planning level (series, season, beat, episode). Slugs only.
