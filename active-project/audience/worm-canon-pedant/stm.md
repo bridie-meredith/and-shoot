@@ -17,3 +17,21 @@ specific feedback:
   - Shard Status complaint resolved. "Dormant at Entity-communication level, active at behavioral-weight level" is consistent with how Shards function as semi-autonomous entities that don't simply switch off when removed from parahuman ecology. "Taylor reads it as her own judgment" is canon-correct given Taylor's limited Shard self-awareness throughout the text.
   - Execution flag carried forward (not a revision trigger): if Taylor ever becomes aware of the Shard's influence, that moment must be treated as a major canon beat. Nothing in the bundle prohibits this; planning team should not treat it as a casual revelation when it arrives.
 prior complaints addressed: yes — both flagged items (OQ-3/C register and Shard behavior) are directly answered in attempt 2.
+
+## Session: series plan review
+verdict: revise
+read: The arc reads as canonically honest and the Shard behavioral weight is named correctly in S2; the child-body swarm ceiling is a genuine series-level hole.
+specific feedback:
+  - The vibe-cloud names the child-body ceiling (active-control-cost: ten minutes to headache, twenty to nosebleed, thirty to blackout) as a feature of S1. The series plan spans Taylor's body from age 7–11 (S1) through 11–17 (S2) through 17–22 (S3) through 22–24 (S4). The adolescent-body transition in mid-S2 is a meaningful somatic threshold — in Worm, Taylor's physical condition affects endurance and recovery even if not raw power scale. The series plan never marks this transition as producing any change to the swarm-sense ceiling. If the ceiling is intended to be fixed for the full 17-year run, that should be stated as a project decision; if it is intended to evolve with the body, the series plan must name the S2 threshold or it becomes an unchecked drift vector across later seasons.
+  - Foreknowledge at Great Council: by S4, Taylor is 22–24 and operating in the Council arena alongside canon-named figures (Rhaenys, Viserys at minimum). The plan notes foreknowledge is "broad strokes accurate, specifics fuzzy" and the cover degrades under sustained smart questioning. The series plan does not address how Taylor's foreknowledge interfaces with specific Council actors — whether she positions the coalition based on what she knows about their canonical positions. This is closer to execution-level, but the series plan should at minimum acknowledge the constraint that foreknowledge precision has a hard limit at the Council's individual-actor level, or it becomes a lore-leak vector.
+  - Shard awareness carry-forward (from round 2): the series plan does not name a moment at which Taylor might register the Shard's thumb as external. This remains a watch item; no revision required unless season planning stages an awareness beat without flagging it.
+prior complaints addressed: yes — OQ-3/C register and Shard behavior were resolved in attempt 2; child-body ceiling is a new series-plan level flag.
+
+## Session: series plan review — attempt 2
+verdict: accept
+read: Section 6 now carries the adolescent-body ceiling as a named project decision with a dated threshold; the primary revision demand is closed.
+specific feedback:
+  - Child-body ceiling complaint resolved. The project-decision sentence names ~age 13–14 / ~91 AC / mid-S2 as the transition event, commits to proportional cost-curve lengthening, and delegates exact revised ceiling values to season planning. This is the structural commitment the series plan needed — it is now a named threshold, not an unexamined constant. The drift vector is closed at series level.
+  - Foreknowledge-at-Council-actor-level carry item stands at execution level; nothing in the four fixes introduces a new lore-leak risk, but the watch item remains. Season planning should note the individual-actor precision limit when Council positioning begins.
+  - Shard awareness carry-forward unchanged. Watch item remains active; no staging of an awareness beat has occurred.
+prior complaints addressed: yes — child-body ceiling transition is now a named project decision; prior carry items remain at their appropriate planning levels.

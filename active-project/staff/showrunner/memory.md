@@ -7,15 +7,29 @@ routing:
   season_plan: ~
 
 series:
-  theme: ~
-  laws: []
-  lore: []
-  behaviors: []
+  theme: "What it costs to build something in a world that does not have a word for what you are building — and what gets charged to people who never agreed to pay."
+  laws:
+    - cond-feudal-hierarchy-law
+    - cond-westerosi-customary-authority-jaehaerys
+    - cond-suppression-policy-progression
+    - cond-series-tone-constraints-84ac
+  lore:
+    - cond-riverlands-84ac-state
+    - cond-faith-of-seven-jaehaerys
+    - cond-maester-network-behavior
+    - cond-westerosi-superstition-frame
+    - cond-no-parahuman-infrastructure
+    - cond-reincarnation-mechanics-84ac
+  behaviors:
+    - cond-smallfolk-political-physics
+    - cond-fauna-control-rules
+    - cond-shard-behavioral-weight
+    - condition-swarm-in-foreign-ecology
   plot:
-    start: ~
-    end: ~
-    protagonist_arc: ~
-    series_question: ~
+    start: "A reincarnated organizer wakes in a smallfolk child's body in a Riverlands market town, carrying thirty years of foreknowledge and a cape-war's worth of failure modes, with no authority, no legible identity, and no institutional channel through which any of it applies."
+    end: "At the Great Council of 101 AC, the suppression apparatus built against Taylor's coalition over seventeen years renders judgment — not through defeat, but through the costs coming due at the worst possible moment, leaving what survives in damaged, diminished, or transformed form as the Dance approaches regardless."
+    protagonist_arc: "Taylor arrives operational and willing, builds outward from Fairstead through every form of informal coalition her instincts can generate, extracts the institutional response she was always going to extract — and discovers across seventeen years that her control calculus is not a tool she deploys but a tax she levies on everyone who trusts her; the Great Council closes not on whether she was right, but on what being right the way she is right has cost."
+    series_question: "Can a structure built from below, by someone who cannot stop running the control calculus on the people she recruits, hold together long enough to matter — and what does it cost the people inside it when it does?"
   cast_roster:
     - taylor-hebert-jaehaerys     # lead — Taylor reborn smallfolk Riverlands ~84 AC, dyer's daughter, Fairstead
     - oc-craftsman-mother          # Elara Ashford — warm constraint; senses Taylor is strange

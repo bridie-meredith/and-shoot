@@ -17,3 +17,22 @@ specific feedback:
   - OQ-8/B complaint resolved. Coherence Check now reads: "Great Council close is not a victory. It is a stress-test." "Any catharsis before the Dance is unearned and structurally prohibited." "Costs become final." The phrase "what remains is legible but reduced" is the correct register. Planning team will be held to this at execution.
   - OQ-7/A watch item carried forward (execution-level, not planning-level). Superstition-frame note stands. No revision needed in this document; flag activates at script level.
 prior complaints addressed: yes — both flagged items (OQ-3/C register and Great Council framing) are directly answered in attempt 2.
+
+## Session: series plan review
+verdict: accept
+read: The suppression-policy progression tracks as era-correct Westerosi institutional mechanics and the Great Council framing holds at series-planning level; S2 coalition-cost vagueness is a watch item for season planning.
+specific feedback:
+  - Suppression-policy progression accepted. Incident-response (S1) → patterned-response (S2) → formal policy with Tully suzerainty backing (mid-S3) → coordinated enforcement action (S3 late / S4) is how a Jaehaerys-era functionary apparatus actually works. The progression is era-correct and reads as institutional accumulation, not anachronistic pressure campaign.
+  - Great Council framing holds. S4 explicitly names "coalition's debts come due, internal failure modes deliver their accumulated consequence at the worst moment, what remains survives in damaged, diminished, or transformed form, Dance on the horizon regardless." The condition cond-series-tone-constraints-84ac prohibits catharsis before the Dance and prohibits validation at Great Council. The prior OQ-8/B complaint is answered at series level.
+  - S2 coalition-cost is currently gestural. "Some of what she built in S1 does not survive the weight she placed on it" is a series-plan level statement that needs to become specific at season-planning level — a named relationship or institution that demonstrably collapses or transforms, not "things were damaged." Season planning will be held to this. If S2 season plan delivers gestural cost without a particular named loss, this becomes a revision demand.
+  - OQ-7/A superstition-frame watch item remains active at execution level. Westerosi witnesses must read Taylor's swarm through old-gods / Seven-as-ward frames; the series vibe-cloud names this correctly (cond-westerosi-superstition-frame, westerosi-witness-frame tonal key). The execution flag stands.
+prior complaints addressed: yes — OQ-3/C register and Great Council-as-validation risks were resolved in attempt 2; series plan holds those answers.
+
+## Session: series plan review — attempt 2
+verdict: accept
+read: Fix 2 delivers the named structural loss the prior session demanded — Mira's market-day gatherings publicly dissolved under monitoring-record pressure is a specific named cost with a named actor, not gestural damage.
+specific feedback:
+  - S2 coalition-cost complaint resolved. The S2 chunk now closes on Mira publicly dissolving her gatherings in late-S2 under direct institutional pressure; the plan names the relationship that is not broken but the structure that does not survive. This is the correct register — not a catastrophe, not a clean cost, but a named loss that reads as institutional extraction rather than Taylor's personal failure. The prior demand for a named collapse is met.
+  - Fix 4 closes the S4 register correctly: the enforcement record surviving as Council documentary liability / political asset means the suppression apparatus costs the institution at the political tier while Mira's network is already gone before the Council convenes. The Great Council is not a moment where Taylor's work is vindicated; it is a moment where the institutional record does something Taylor cannot control. Catharsis-before-Dance prohibition holds.
+  - OQ-7/A superstition-frame watch item remains active at execution level. Unchanged from prior session.
+prior complaints addressed: yes — S2 gestural-cost demand is met; prior carry items (Great Council framing, superstition-frame) remain at their appropriate levels.
