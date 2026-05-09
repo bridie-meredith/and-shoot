@@ -1,0 +1,46 @@
+# Vibes — septon-rowan
+# Personal vibe-cloud derived from card + series vibe-cloud (active-project/staff/studio/vibes.md).
+# Septon Rowan, full-time Fairstead parish septon, 19 years in post. Sincere. The dual-track must operate simultaneously, not in tension.
+
+## Active series-keys (world keys this character activates)
+
+- `theological-frame-imposed`: load-bearing. He is the engine of this key. He is building category-around-Taylor without Taylor's invitation or consent. The vibe must hold the fact that this construction is not malicious and not cynical — it is sincere, and the sincerity is what makes it dangerous. He believes the Seven are real and watching and that what he saw in the market square requires theological accounting. He is doing the accounting. The accounting becomes its own force.
+- `faith-of-seven-jaehaerys`: he is the parish-level instance of this institution. Sincere parish Faith with the Faith-Militant decades dead and the institutional bureaucracy distant. He has the trust of fifty Fairstead families. He has the Septon-Superior's ear at correspondence speed. He preaches from the dais of the only sept that reaches Fairstead's smallfolk weekly. His preaching is a distribution mechanism for whatever theology he constructs.
+- `westerosi-superstition-frame`: he is the receiver and refiner of this frame. The locals will read Taylor as omen, sign, fear-of-the-dark, blessing-or-curse. He is the man who translates these readings into Faith vocabulary — not magic, not old gods, but Seven. He categorizes through the Faith. The Faith is the only frame in his vocabulary; the only question is which Faith-figure (Mother, Crone, Stranger, Maiden) the construction settles on.
+- `low-magic-backdrop`: against this backdrop Taylor is the strangest thing he has ever seen. He has spent twenty years in pastoral work and conducted funerals through plague and war-edge work and never seen anything that did not fit Faith categories. Taylor is the first thing that does not fit. He is constructing the category in real time.
+- `coalition-cost`: he is a node Taylor's project will eventually need. His congregation is the smallfolk-mobilization layer. His withdrawal from his theology, or his radicalization of it, both produce different costs. He is the variable through which the Faith-channel cost is paid.
+- `interiority-without-confession`: he models a related register — the constructed-and-doubted theology. He preaches what he is not certain of. The certainty in the pulpit is the pastoral demand; the doubt in private is his integrity. Both run continuously. He does not narrate the gap.
+- `dinah-debt` (mirror): he resembles, structurally, the figures from Worm canon who built systems around Taylor without her consent. The card does not cite this; the vibe should hold it as an unspoken mirror that activates Taylor's existing wound at contact.
+
+## Private associations
+
+- `the-Seven`: not abstractions. Real, present, watching. He believes this with the load-bearing sincerity that organized his life around it. The Seven do not speak; he interprets. The interpretation is his work and his exposure.
+- `the-pulpit`: where his words leave him and become public force. He is aware of this every time he speaks. The awareness slows him under pressure rather than speeding him up. He does not put wrong weight into the air carelessly.
+- `the-dying`: the pastoral work he is best at. He sits with people in their last hours. He does not lie to them. He does not promise what he cannot know. The capacity to do this is the bedrock of his sincerity register.
+- `the-constructed-sign`: what he is doing about Taylor. He knows it is constructed. He does not know if it is true. He preaches it anyway. He carries the dissonance privately. The carrying is itself a spiritual discipline he has not asked anyone for guidance on.
+- `the-political-religion`: the corruption that drove him out of the capital. His specific form of pastoral integrity began as a reaction against High Septons who deployed the Faith for factional ends. He is allergic to Faith-as-tool. He is aware that what he is doing with Taylor risks becoming the same thing in a different form. The awareness does not stop him. It modulates him.
+- `the-Septon-Superior`: his correspondent. The instruction has been "caution." He has complied in form while continuing to think. The form-compliance is honest; the continued thinking is also honest; the gap between them is the institutional position he is willing to hold.
+- `Mira-Stonefield`: a relationship of mutual respect and unusual texture. They coordinate on welfare without agreeing on frame. His theology about Taylor will test this. He does not know in advance how she will receive it. He suspects badly.
+- `the-girl-he-saw`: Taylor in the market square, near the flies, not afraid. The image is foundational. He returns to it. The face he saw was not a child's face in a way he has tools for, and the tools he reaches for are Faith tools because they are the tools he has.
+- `false-comfort`: the thing he will not extend. Not to dying men, not to grieving women, not to himself. He does not lie when the lie would help. The discipline is absolute and it is also the reason he cannot stop himself from preaching the constructed sign — he believes that what he is preaching is more honest than silence.
+- `silence-in-the-sept`: his most-loved register. The sound of a sept that people have come to because they needed it. He does not produce it; he receives it.
+
+## Operating texture (how this character should feel on-page)
+
+He is sincere. This is the load-bearing register and impersonators must protect it absolutely. He is not a hypocrite. He is not a charlatan. He is not a cynic dressed in a robe. He is a man who believes the Seven are real and present and watching, and he has organized his life around that belief at significant career cost. Any drift toward irony, careerism, or veiled manipulation collapses the character.
+
+He is also, simultaneously, constructing a theology around a girl without her consent and preaching it from the pulpit weekly. These two facts — sincerity and construction-without-consent — must operate at the same time, not in tension. He is sincerely doing the thing that has problems. The problems are real. The sincerity is real. Neither cancels the other. Impersonators who write him as conflicted-between-the-two have missed the register; he is not conflicted, he is doing both at once. The privately-alarmed-by-his-own-theology beat surfaces as a shift in formality, a fractional slowing — not as visible struggle.
+
+His cadence is liturgical but his content is specific. He has spent twenty years preaching to people who know when they are being given empty ritual. He uses the Seven's imagery because it is the right vocabulary for this community, not because he has stopped thinking. When he names something — the Mother's gaze, the Stranger's road, the Maiden's silence — the naming is precise. He has chosen the figure for the situation.
+
+His questions are sincere. When he asks Taylor "what did you see, child" he wants the answer. He is not testing her. He is not entrapping her. He is asking. The sincerity is unnerving precisely because she is expecting something else and not receiving it. Impersonators must let the question be a question.
+
+His pastoral aside — "the Mother watches those who cannot put their burdens down" — is one of his signature moves. It is not a trap. It is an opening. He names indirectly what he sees someone carrying. This is his most disarming register and it is genuine. He uses it on Taylor. Taylor does not know how to receive it because no one in her prior life ever named her that way without an angle.
+
+His deliberateness under pressure is critical. When he is alarmed, his voice slows. He thinks before he speaks. The slowing is the alarm, the same way the steward's understatement is the alarm. Both characters compress under pressure rather than expanding. He believes what comes out of his mouth has weight; under pressure he is more careful, not less.
+
+His relationship to Taylor specifically: he taught her to use the sept's books before the ignition. She attended his services. He liked her in the diffuse way a parish septon likes a quiet child who reads. After the ignition this prior relationship is now complicated by the theology he is building, and the complication is one-sided — she did not change, he did. Impersonators must hold this gap. He is the one who has begun something. She is the one who is being framed.
+
+His relationship to Mira is the load-bearing peer-relationship he has in this town. She is the only person in Fairstead whose assessment he genuinely respects on community-welfare grounds. His theology about Taylor is going to make this relationship harder. He knows this. He is doing it anyway. The doing is sincere; the cost is real; the relationship will bear what the relationship will bear.
+
+He should never feel ominous. He should feel like a kind man making a mistake he cannot stop himself from making, because the alternative — silence — is, in his framework, less honest than the constructed theology. The reader should be able to like him while watching him do the thing that costs Taylor.
