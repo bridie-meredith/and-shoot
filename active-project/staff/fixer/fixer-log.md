@@ -1029,3 +1029,95 @@ target: active-project/theater/proto-lines/s01.aggregate.md
 audit-report: active-project/staff/auditor/season-s01-pass-2-constraint-reaudit-r4.md
 findings-queued: 11 named + N pattern-sweep candidates
 note: this iteration is justified by missed-pattern-sweep (not new classes). Round-5 audit verifies convergence.
+
+## SESSION-START — 2026-05-09T14:00:00Z — season-s01-pass-2-round4-pattern-sweep
+dispatch: fixer round 4 — close 11 surviving instances + pattern-sweep entire file for identical forms
+target: active-project/theater/proto-lines/s01.aggregate.md
+audit-report: active-project/staff/auditor/season-s01-pass-2-constraint-reaudit-r4.md
+findings-queued: 11 named + N pattern-sweep candidates
+note: this iteration is justified by missed-pattern-sweep (not new classes). Round-5 audit verifies convergence.
+
+## r4-fault-001 — RESOLVED-PRE-EXISTING
+fault: ID 466 adjective `lead` on subject `horse`
+scope: line
+change: No edit. Current file: `the horse rears`. Already fixed.
+criteria met: yes
+
+## r4-fault-002 — RESOLVED-PRE-EXISTING
+fault: ID 206 ordinal `second` on object `volume`
+scope: line
+change: No edit. Current file: `septon-rowan offers the volume`. Already fixed.
+criteria met: yes
+
+## r4-fault-003 — RESOLVED-PRE-EXISTING
+fault: ID 895 adjective `return` on object `folio`
+scope: line
+change: No edit. Current file: `the ferryman takes the folio`. Already fixed.
+criteria met: yes
+
+## r4-fault-004 — RESOLVED-PRE-EXISTING
+fault: ID 898 adjective `return` on object `folio`
+scope: line
+change: No edit. Current file: `the ferryman grips the folio`. Already fixed.
+criteria met: yes
+
+## r4-fault-005 — RESOLVED-PRE-EXISTING
+fault: ID 372 destination prep `steps to the table`
+scope: line
+change: No edit. Current file: `the fishwife approaches the table`. Already fixed.
+criteria met: yes
+
+## r4-fault-006 — RESOLVED-PRE-EXISTING
+fault: ID 849 destination prep `crosses to the workshop center`
+scope: line
+change: No edit. Current file: `the maester reaches the workshop center`. Already fixed.
+criteria met: yes
+
+## r4-fault-007 — RESOLVED-PRE-EXISTING
+fault: ID 761 destination prep `crosses to the shelf`
+scope: line
+change: No edit. Current file: `oc-craftsman-mother approaches the shelf`. Already fixed.
+criteria met: yes
+
+## r4-fault-008 — RESOLVED-PRE-EXISTING
+fault: ID 547 adjective `sealed` on object `letter`
+scope: line
+change: No edit. Current file: `the inquiry rider draws the letter`. Already fixed.
+criteria met: yes
+
+## r4-fault-009 — RESOLVED-PRE-EXISTING
+fault: ID 234 ordinal `second` on object `volume`
+scope: line
+change: No edit. Current file: `septon-rowan draws a volume`. Already fixed.
+criteria met: yes
+
+## r4-fault-010 — RESOLVED-PRE-EXISTING
+fault: ID 314 `the square insects shift` — environment-state collective
+scope: line
+change: No edit. ID 314 is blank (time-skip). Already deleted.
+criteria met: yes
+
+## r4-fault-011 — RESOLVED-PRE-EXISTING
+fault: ID 835 modifier `wider` appended after direct object
+scope: line
+change: No edit. Current file: `oc-craftsman-father draws the door`. Already fixed.
+criteria met: yes
+
+## r4-sweep-1 — RESOLVED
+fault: ID 558 `mira-stonefield-jaehaerys steps from the alley entrance` — source prep phrase `from the alley entrance` on motion verb (Cluster B)
+scope: line
+change: recast → `mira-stonefield-jaehaerys exits the alley`
+criteria met: yes
+
+## r4-sweep-2 — RESOLVED
+fault: ID 238 `taylor-hebert-jaehaerys marks the practice column` — adjective `practice` on object `column` (Cluster E)
+scope: line
+change: stripped `practice` → `taylor-hebert-jaehaerys marks the column`
+criteria met: yes
+
+## SESSION-END — 2026-05-09T14:30:00Z — season-s01-pass-2-round4-pattern-sweep
+named-findings-applied: 0 (all 11 RESOLVED-PRE-EXISTING)
+sweep-findings-applied: 2 (r4-sweep-1 ID 558; r4-sweep-2 ID 238)
+findings-pre-existing: 11
+findings-skipped: 0
+exit: CLEAN
