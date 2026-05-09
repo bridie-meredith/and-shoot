@@ -498,6 +498,20 @@ audit-reports:
 findings-queued: intersect applied; ≥2-persona + BORED W05 override + flatline aggressive ranges
 note: pulp ~38 candidates + flatlines 21-60/83-135; worm 6 specific candidates + 15.8% TOLERATED; dark-fantasy 15 candidates + 1 BORED W05 (55-68) + flatlines 83-123/645-699. Convergent: line 123 fauna constraint, early-baseline thinning, post-witness-inquiry stretch.
 
+## phase3-S3-trim — RESOLVED
+fault: 3-persona REVISE on s01.aggregate.md; domestic-baseline over-density, BORED W05, flatline runs 21-135 and 645-699
+scope: line (24 individual ID deletions)
+change: deleted IDs 33, 36, 47, 48, 55, 56, 57, 58, 59, 63, 65, 76, 83, 88, 89, 91, 92, 102, 103, 104, 116, 117, 651, 675; skipped 30 solo-persona candidates; skipped 4 voice-load-bearing exceptions (84, 85, 123, 247); constraint fault on 123 resolved as SKIP (no species scope violation, dark-fantasy explicit retain)
+criteria met: yes
+
+## SESSION-END — 2026-05-09T14:30:00Z — phase3-S3-trim
+deletions-applied: 24
+skipped-solo-persona: 30
+skipped-voice-load-bearing: 4
+constraint-fault-123: SKIP (no violation; dark-fantasy explicit retain)
+dependency-conflicts: 0
+exit: CLEAN
+
 ## SESSION-START — 2026-05-09T00:30:00Z — season-s01-pass-2-round3-overcap
 dispatch: fixer round 3 — apply round-3 audit findings (84 new faults: prep-padding cluster + adjective-modifier cluster)
 target: active-project/theater/proto-lines/s01.aggregate.md
