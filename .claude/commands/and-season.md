@@ -284,9 +284,29 @@ If REVISE → dramatist receives the feedback and produces a revised split (stil
 Once split is accepted:
 1. Number the resulting episodes `<season-slug>e01`, `e02`, ... in season order. (No titles.)
 2. For each episode, write `active-project/theater/proto-lines/<season-slug>e<NN>.md` containing:
-   - Header: `# proto-lines — <slug>` + `narrator: <slug>` (POV character identified from the dominant POV inside the episode's stretch — orchestrator reads the inline `# pov:` markers to determine this) + `goal: <one sentence>` (orchestrator distills from the stretch's beats and the dramatist's per-episode rationale).
-   - Body: the proto-lines from the stretch, **renumbered 1..M** starting at 1 per episode. The aggregate's continuous numbering is preserved as a `# aggregate-id: <N>` comment on each line for traceability.
-3. Validate: each per-episode file has `narrator`, `goal`, contiguous numbering 1..M, no orphan content.
+   - Header (seven required fields, in order):
+     ```
+     # proto-lines — <episode-slug>
+
+     episode: <episode-slug>
+     narrator: <pov-actor-slug>
+     goal: <one sentence — what this episode shows the audience>
+     cast: <slug>, <slug>, <slug>, ...
+     locations: <loc-slug>, <loc-slug>, ...
+     prior_episode: <previous-episode-slug | none>
+     aggregate_range: <from>-<to>
+     ```
+     Field rules:
+       - **`episode:`** — the episode slug (matches filename). Facet authors lift verbatim into facet-file `episode:` frontmatter.
+       - **`narrator:`** — POV character resolved from the dominant inline `# pov:` marker inside the episode's stretch.
+       - **`goal:`** — orchestrator distills from the stretch's beats and the dramatist's per-episode rationale.
+       - **`cast:`** — comma-separated actor slugs that appear as a SUBJECT or as a `speaks to <listener>` listener anywhere in this episode's bones. Computed by orchestrator at split time via slug-grep over the episode's proto-lines (no inference, no card lookup). Order: by first-appearance ID. Listener-only slugs (someone spoken to but never speaking or acting) included plain (no suffix).
+       - **`locations:`** — comma-separated location slugs the studio fork must load to author location-state. Derived from slug-grep over proto-line OBJECTs and SUBJECTs (e.g. `taylor enters the yard` → `the-yard`); orchestrator resolves `the <noun>` references against the active warehouse's loc cards. Studio fork may discover additional implicit locations during loc-state authoring; those are recorded as feedback signals, not back-edited into this header.
+       - **`prior_episode:`** — slug of the previous episode in season order, or `none` for e01. Used by `/and-shoot-v2` Phase 0 to know which prior-episode state files to snapshot for handoff baseline.
+       - **`aggregate_range:`** — the contiguous aggregate-id range covered by this episode (e.g. `1-87`). Replaces per-line `# aggregate-id:` comments. Computed from Step 3.2 renumbering.
+     A blank line follows the header before the body.
+   - Body: the proto-lines from the stretch, **renumbered 1..M** starting at 1 per episode. The aggregate's continuous numbering is preserved by the `aggregate_range:` header field (single line). **Per-line `# aggregate-id:` comments are not authored** — fixers compute the aggregate-id by `aggregate_range_start + episode_id - 1` when routing faults back to the aggregate. The body remains comment-clean per the proto-line schema's no-decoration rule (POV markers excepted; copied through from the aggregate).
+3. Validate: each per-episode file has `episode`, `narrator`, `goal`, `cast`, `locations`, `prior_episode`, `aggregate_range`, contiguous numbering 1..M, no orphan content. `cast` matches the slug-grep over the episode's bones (sanity check, not gate). `aggregate_range` is contiguous and non-overlapping with sibling episodes' ranges; the union of all episodes' ranges equals 1..N (the aggregate's full range, accounting for legal ID-deletion gaps).
 4. The aggregate is preserved as the canonical pre-split artifact under its original path; per-episode files are derived. Downstream revision of a stretch should edit the aggregate and re-run Phase 4 (the split itself may shift if the revision changes shape).
 
 ---
@@ -294,7 +314,19 @@ Once split is accepted:
 ## Phase 5 — Persist
 
 1. Update `active-project/staff/showrunner/memory.md`:
-   - Write `seasons[<slug>].episodes[]` with the actual split — one entry per produced episode. Each entry: `slug`, `status: protolined`, `narrator`, `interlude` flag if applicable, `chunk` (orchestrator distills a one-paragraph chunk from the bones — this is post-hoc content guidance, not a plan), `proto_lines_path`. **No title field.**
+   - Write `seasons[<slug>].episodes[]` with the actual split — one entry per produced episode. Each entry (existing fields first, /and-shoot-v2-handoff fields appended):
+     - `slug`
+     - `status: protolined`
+     - `narrator`
+     - `interlude` flag if applicable
+     - `chunk` (orchestrator distills a one-paragraph chunk from the bones — this is post-hoc content guidance, not a plan)
+     - `proto_lines_path`
+     - `cast` — same comma-separated slug list as the file header. Mirrored into memory so showrunner can answer "who's in episode N" without opening the file.
+     - `locations` — same as header.
+     - `prior_episode` — same as header.
+     - `aggregate_range` — same as header.
+
+     **No title field.**
    - Add `seasons[<slug>].protolines_complete` with timestamp + comprehensive audit path.
    - Set `active.episode: <season-slug>e01` (the new first-episode slug after split).
    - Season status remains `active` until `/and-wrap`.

@@ -20,7 +20,7 @@ The legacy singular `active-project/theater/proto-lines.md` is no longer authore
 
 ## File header (required)
 
-Every proto-line file begins with two header lines:
+Every proto-line file begins with `narrator:` and `goal:` at minimum:
 
 ```
 narrator: <actor-slug>
@@ -34,6 +34,34 @@ Both fields are mandatory under shoot-v2. The reviewer passes (Pass 2 constraint
 A header missing or empty faults `FAULT-HEADER-NARRATOR` or `FAULT-HEADER-GOAL` at Pass 2.
 
 A blank line follows the header before the body begins.
+
+### Extended header (per-episode files emitted by `/and-season` Phase 4)
+
+Per-episode proto-line files emitted by `/and-season` Phase 4 mechanical write-out carry five additional header fields (in addition to `narrator:` and `goal:`) so the downstream `/and-shoot-v2` facet pass has the per-episode handles it needs without re-scanning the aggregate. Full header (seven fields, in order):
+
+```
+# proto-lines — <episode-slug>
+
+episode: <episode-slug>
+narrator: <pov-actor-slug>
+goal: <one sentence — what this episode shows the audience>
+cast: <slug>, <slug>, <slug>, ...
+locations: <loc-slug>, <loc-slug>, ...
+prior_episode: <previous-episode-slug | none>
+aggregate_range: <from>-<to>
+```
+
+Field rules for the extended fields:
+
+- **`episode:`** — the episode slug (matches filename). Facet authors lift verbatim into facet-file `episode:` frontmatter.
+- **`cast:`** — comma-separated actor slugs that appear as a SUBJECT or as a `speaks to <listener>` listener anywhere in this episode's bones. Computed at split time via slug-grep over the episode's proto-lines (no inference, no card lookup). Order: by first-appearance ID. Listener-only slugs included plain (no suffix).
+- **`locations:`** — comma-separated location slugs that the studio fork must load to author location-state. Computed via slug-grep over proto-line OBJECTs/SUBJECTs and resolved against the active warehouse's loc cards.
+- **`prior_episode:`** — slug of the previous episode in season order, or `none` for e01. Consumed by `/and-shoot-v2` Phase 0 to know which prior-episode state files to snapshot for handoff baseline.
+- **`aggregate_range:`** — the contiguous aggregate-id range covered by this episode (e.g. `1-87`). Replaces per-line `# aggregate-id:` comments. Computed from the Phase 4 Step 3.2 renumbering.
+
+**Authority:** these fields are required when the file is emitted by `/and-season` Phase 4 (the validator at Phase 4 Step 3 enforces them). They are **optional** for ad-hoc per-episode files authored via `/and-protolines-v2` (those files don't go through facet authoring without an `/and-shoot-v2` dispatch that supplies the missing context separately).
+
+**Per-line `# aggregate-id:` comments are not authored.** The per-episode body remains comment-clean per the no-decoration rule (POV markers excepted; copied through from the aggregate). Fixers route faults back to the aggregate by computing `aggregate_id = aggregate_range_start + episode_id - 1`.
 
 ---
 
