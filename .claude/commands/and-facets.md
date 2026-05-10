@@ -92,9 +92,13 @@ If status is already `audited-r1`, the audit has already run. The master prints 
 
 ---
 
-## Phase 4 — Master summary
+## Phase 4 — Master summary + orchestrator-critic verdict
 
-After all delegated phases complete, the master prints a unified summary that aggregates the per-phase summaries:
+After all delegated phases complete:
+
+### 4a. Aggregate per-phase summaries
+
+The master prints a unified summary that aggregates the per-phase summaries:
 
 ```
 ========================================================
@@ -118,12 +122,9 @@ Phase 2 — Round 2 (Step D):
 Phase 3 — Final audit (Step G):
   Mode: flag-only
   Findings:
-    CONTRADICTION:    <count>
-    DEDUP:            <count>
-    SUPERFLUOUS:      <count>
-    CONSTRAINT:       <count>
-    PILE-UP REVIEW:   <warranted> warranted / <over> over-decoration
-  Total: <count> findings (CLEAN if zero)
+    HARD (STRUCTURAL/CONTRADICTION/DEDUP/SUPERFLUOUS/CONSTRAINT): <count>
+    SIGNAL (FREQUENCY-BAND/METADATA/CURVE-SHAPE/AP-SCAN/TASTE-FLAG/PILE-UP): <count>
+  Total: <count> findings
   Report: active-project/staff/auditor/facets-final-audit.md
 
 R3 (relaxation pass) skipped per default. Fire /and-facets-r3 explicitly
@@ -131,6 +132,35 @@ if R2's diff is non-trivial and Step I oscillation measurement is wanted.
 
 Status: <slug> audited-r1
 ```
+
+### 4b. Orchestrator-critic verdict (mandatory)
+
+The master then **MUST** produce a verdict from the `and-facets-orchestrator-critic` (`staff/audience/and-facets-orchestrator-critic/card.md`). This is the standard /and-facets must satisfy to be considered a success.
+
+The critic evaluates 7 acceptance criteria (read its card for the full list — synopsis: 9 facet files exist; 0 HARD findings post-final-audit; per-facet pass rate ≥75% clean; bidirectional loop convergence; showrunner memory current; process gaps captured; wall-clock budget stated and tracked).
+
+**Verdict format (mandatory output, appended to the master summary):**
+
+```
+/and-facets orchestrator-critic verdict — <episode-slug>:
+  Result: <SUCCESS | SHIPPABLE-WITH-CAVEATS | NOT-SUCCESSFUL>
+  Criteria met: <count> / 7
+  Cap-refusals: <count> (<%> of seams)
+  HARD findings post-final-audit: <count>
+  Bidirectional loop: <healthy | diverged | not-validated>
+  Wall-clock: <stated budget | overrun>
+  Caveats (if any): <list>
+  Recommendation: <ship | iterate | escalate>
+```
+
+**Decision rule:**
+- **SUCCESS** — all 7 criteria met. /and-facets shipped cleanly; downstream (stitcher / and-wrap) may proceed.
+- **SHIPPABLE-WITH-CAVEATS** — exactly 1 criterion missed; caveat named explicitly; missed criterion queued for next iteration.
+- **NOT-SUCCESSFUL** — 2 or more criteria missed; remediate before claiming completion. Do not flip status to `audited-r1` if the run is NOT-SUCCESSFUL.
+
+The critic does NOT mutate facets or cancel the run. It produces the standard; orchestrator + user respond.
+
+Optional re-fire after any remediation pass. The trajectory across re-fires (criteria-met-count over time) is itself signal: climbing = good iteration; flat or declining = pipeline going backward.
 
 ---
 
