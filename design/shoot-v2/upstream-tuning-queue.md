@@ -310,6 +310,33 @@ Categories:
   - **URI-023 R2 judge tuning** — must complete before tensometer-as-mandatory-gate promotion lands (R2 discipline is what makes the gate honest under graph-aware re-passes).
   - Orchestrator-critic card — Phase 6 verdict template extends to include S9.5/5.5 findings.
 
+### URI-026 — Tens-into-/and-season as bones-first hard-gate (Phase 1, shared-reviewer) — **LANDED 2026-05-10**
+
+- **Landed location:**
+  - `.claude/commands/and-season.md` — new Phase 4 **Step 1.5** (per-proposed-episode tens authoring via dramatist fork, fork-discipline mirrors `/and-facets-r1` Layer 1a, slug-suffixed output `theater/facets/tensometer-<season-slug>e<NN>.md`); Step 2 EXTENDED with bones+tens audience review + parallel narrow-scope auditor dispatch for mechanic-arithmetic verdict; per-persona reports grow `§ Audience taste verdict` (`OWNER: audience`) and `§ Mechanic arithmetic verdict` (`OWNER: rubric`) sections; combined `SPLIT-ACCEPT` requires both ≥2-persona ACCEPT and `MECHANIC-CLEAN`; `SPLIT-REVISE-bones-{line-range}` and `SPLIT-REVISE-cut-{reason}` distinguish regen scope; `REGEN-{REPLACE,ADD,BOTH}` discipline; per-window inner iteration cap 2.
+  - `staff/orchestrator-critic/card.md` — new **F7** (Bone-gate residual auto-FAIL); Category B grows **B6** (Bone-gate convergence); verdict template grows §B6 block; runtime budget R1 narrative updated.
+  - `schemas/facet.schema.md` — tensometer dual-provenance documented (primary slug-suffixed under `/and-season` Phase 4 Step 1.5; legacy flat-canonical under `/and-facets-r1` Layer 1); `/and-shoot` Phase 0 rename note; shared class library principle.
+  - `CLAUDE.md` — Rule 10 amended with bones-first/F7 reference; **Rule 11** added (Shared reviewer resources principle).
+
+- **Category:** Systemic (cross-pipeline architecture; supersedes URI-025 IP-2 author-mode tens block).
+- **Source:** User direction 2026-05-10 — "move the tensometer facet into and-season as a hard gate that must be passed... tensometer facet will be included in the protolines output of and-season"; subsequent direction to "verify the same audience for entertainment review happening on and-season that is also happening on and-facets" + "reviewer resources are to be shared with facets to save on tuning costs"; bones-first principle ("if the bones aren't good, then no matter how nice the skin the subject is deformed and wrong").
+- **Principle:** the proto-lines are load-bearing; audience entertainment review must judge tens-rated bones, not bare bones; reviewer assets (persona cards, auditor class library, tens rubric) are authored once and consumed from both pipelines (no pipeline-specific reimplementation).
+- **Calibration risk:** the tens rubric is calibrated **per-episode** (~150-line corpus, unique-climax-per-episode clause, scene-boundary by loc-state inheritance). Step 1.5 invocation is **per-proposed-episode** (post-Phase-4-split-proposal scope), matching the calibrated scope. Aggregate-scope authoring would have been structurally incompatible with the rubric — not done.
+- **Cost implication:** worst-case ~12 added dispatches at the bone-gate (tens-rate × 6 episodes + mechanic-audit × 6 episodes, parallel). Combined with rest of /and-season trends toward 60-dispatch hard cap; per-window inner iteration cap tightened to 2 (not 3) to constrain growth. Recalibrate empirically after first fire.
+
+#### Phase 1 not yet landed (deferred to Phase 1.5 / Phase 2)
+
+- **Phase 1.5 (post-facet-session merge):** Persona-card body text edits to promote tens-attack categories (RUNG-DISTRIBUTION-FLATLINE, FALSE-PEAK, DENOUEMENT-FLAT, RUNG-CLUSTER-OVERSATURATION) from `/and-season` dispatch brief into the active audience cards' `Season-Scope Adversarial` body sections. **Deferred** because parallel `/and-facets` tuning session reads persona cards mid-flight; shared-asset edit must be coordinated, not mid-flight.
+- **Phase 2 (later):** sensory + state-updates env + loc-state migration to /and-season as additional bone-gate facets; `/and-facets-r1` Layer 1 (legacy tens authoring) deletion; URI-018 / URI-019 / URI-020 auditor class refinements land into the shared `/and-facets-audit.md` library and benefit both pipelines.
+
+#### URI-025 supersession
+
+URI-025's IP-2 author-mode tens block (aggregate-scope tens authoring at Pass S9.5) is **superseded by URI-026**. The structural incompatibility between the tens rubric's per-episode calibration and aggregate-scope authoring forced moving the bone-gate to post-split (per-episode). URI-025's IP-2b probe-mode for the remaining facets (feeling, vibes, memory, NI, metaphor) remains a valid Phase 3 extension if desired, but the tens-author block is replaced by URI-026's Phase 4 Step 1.5.
+
+#### Test path
+
+First live-fire: `/and-season-plan s02` then `/and-season s02` on a fresh corpus. Existing s01 corpus left untouched (s01's `tensometer.md` was authored by `/and-facets-r1` Layer 1 — legacy path, no collision with slug-suffixed bone-gate output).
+
 ---
 
 ## How items leave the queue

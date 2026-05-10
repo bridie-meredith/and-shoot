@@ -109,6 +109,13 @@ B5. **Schema compliance.**
 - `narrator:` field per URI-009 plan-designated rule.
 - Body comment-clean per the proto-line schema.
 
+B6. **Bone-gate convergence (URI-026, 2026-05-10).**
+- Per-proposed-episode `tensometer-<slug>e<NN>.md` file exists with valid rubric-formatted content.
+- `season-<slug>-pass-S4-split-mechanic-{episode-slug}.md` per episode returns `MECHANIC-CLEAN` or all `MECHANIC-FAIL-{class}` findings are routed to bone-regen + cleared within inner iteration cap (2 per window).
+- Per-persona split-review files contain both `§ Audience taste verdict` and `§ Mechanic arithmetic verdict` sections with `OWNER:` tags.
+- No `tens-gate-residual-HARD` findings open at end-of-run. Any open ⇒ F7 (FAIL).
+- Shared-reviewer accounting: the mechanic-arithmetic auditor invoked at Step 2 cited the class definitions from `.claude/commands/and-facets-audit.md` (FREQUENCY-BAND / CURVE-SHAPE / AP-SCAN tens-subset). No /and-season-specific rubric reimplementation.
+
 ### Category C — Routing
 
 C1. **All HARD-finding routings are explicit.**
@@ -134,7 +141,7 @@ C4. **Showrunner memory is current.**
 ### Hard caps (FAIL if exceeded)
 
 R1. **Total dispatch ceiling: 60 dispatches per /and-season run.**
-Phase 2 ≤15 (5 sub-passes × 3 max iterations), Phase 3 ≤30 (10 passes × 3 max iterations), Phase 4 ≤9 (split + 3-persona review × 3 max iterations), Phase 5 ≤2 (memory + verdict). Cushion: 4. Exceeding 60 indicates the run is thrashing and should escalate to user instead of continuing.
+Phase 2 ≤15 (5 sub-passes × 3 max iterations), Phase 3 ≤30 (10 passes × 3 max iterations), Phase 4 ≤9 (split + 3-persona review × 3 max iterations) + Step 1.5 bone-gate (~6 tens-author + ~6 mechanic-audit, parallel; URI-026), Phase 5 ≤2 (memory + verdict). Cushion adjusts to ~0 with bone-gate at worst case; recalibrate empirically after first fire if persistent pressure. Exceeding 60 indicates the run is thrashing and should escalate to user instead of continuing.
 
 R2. **Iteration cap: ≤3 per phase, hard.**
 Phase 2 ≤3 full-pipeline iterations; Phase 3 ≤3 full-iteration sweeps; Phase 4 ≤3 split iterations. The existing /and-season language already encodes this; the orchestrator-critic enforces it as a budget condition.
@@ -175,6 +182,11 @@ A pass iterates 3 times with no forward progress AND the rubric mismatch is not 
 
 F6. **Convergence claimed but residuals masked:**
 Any state where showrunner memory reports `protolines_complete` AND there are unrouted HARD findings, unresolved REJECT verdicts, or unacknowledged carry-forwards. The orchestration cannot lie that it converged.
+
+F7. **Bone-gate residual (URI-026, 2026-05-10):**
+Any open `tens-gate-residual-HARD` finding at end-of-run = FAIL, regardless of routing. The bone-gate (Phase 4 Step 1.5 tens authoring + Step 2 audience+mechanic combined verdict) operates under the bones-first principle: if the proto-lines fail at the rung-distribution / curve-shape / mechanic class library tests after the inner regen iteration cap (2 per window), the run did not establish a sound skeleton and downstream facet work cannot rescue it. F7 is named because it is named — every residual category is enumerated; F7 is the bone-gate's enumeration, not a "we'll figure it out" hand-wave. PASS-WITH-NOTES does **not** apply to F7; it is the one residual class that auto-FAILs.
+
+Verdict-producer cross-check for F7: the verdict reads `season-<slug>-pass-S4-split-mechanic-{episode-slug}.md` and the `season-<slug>-split-review-{persona}.md` files for HARD findings owned `OWNER: rubric` or HARD-class audience findings (`SHAPE-COHERENT-FLAT-AFTERMATH`, `OPEN-ENGAGES-FAIL`, `CLOSE-EARNS-NEXT-AFTERMATH-DRIFT-{N>20}`) that remain after Step 2's inner iteration cap. Any such finding still open ⇒ F7 FAIL.
 
 ---
 
@@ -240,6 +252,12 @@ inputs: <list of audit reports + memory file + session metrics>
 - B3 Forward-flag honor: <each season-plan beat → aggregate stretch IDs covering it; or "BREACH: <beat>">
 - B4 Adversarial-pass results: <"no tuning round" | "X of N units accept; M SLEEPERs surfaced; rubric soundness assessment">
 - B5 Schema compliance: <PASS/FAIL with itemized issues>
+- B6 Bone-gate convergence (URI-026): <PASS | NEEDS-ITER:n | FAIL — tens-gate-residual-HARD>
+  - Step 1.5 tens-authoring: <PASS | retries:n>
+  - Step 2 audience-taste:   <ALL-ACCEPT | REVISE-{persona}>  (OWNER: audience)
+  - Step 2 mechanic:         <ALL-MECHANIC-CLEAN | MECHANIC-FAIL-{episode}:{classes}>  (OWNER: rubric)
+  - Inner-iteration count:   <n of 2 max per window>
+  - Open residuals:          <list of unresolved tens-gate-residual-HARD findings or "none">
 
 ## Routing (Category C)
 
@@ -288,4 +306,5 @@ This card has the same honesty discipline as the audience Threshold Discipline s
 ## Versioning
 
 - v1 — 2026-05-10: initial card; calibrated against R1+R2 of /and-season s01. Hard cap 60 dispatches; soft 30; iteration cap 3; failure modes F1–F6 named.
+- v1.1 — 2026-05-10 (URI-026): bones-first hard-gate landed. F7 added (bone-gate residual auto-FAIL); Category B grows B6 (bone-gate convergence); verdict template grows §B6 block; runtime budget R1 narrative notes the bone-gate's ~12-dispatch worst-case addition (re-recalibrate empirically). Shared-reviewer-resources principle: bone-gate mechanic verdict invokes `/and-facets-audit.md` class library by reference — no /and-season-specific reimplementation.
 - Future revisions: when a `/and-season` run produces verdict-discipline data (e.g., a PASS that should have been FAIL, or a FAIL that should have been PASS-WITH-NOTES), a meta-tuning round on this card itself can adjust thresholds. Calibration is empirical — the card does not pretend its thresholds are platonic.

@@ -235,3 +235,27 @@ orchestrator_critic_landed:
   failure_modes: 6 (F1 non-convergence; F2 forward-flag breach; F3 hard-rule violation; F4 unrouted-HARD-finding; F5 cap-thrash without rubric carry-back; F6 convergence claimed but residuals masked)
   rule_10_added: /and-season runs gated at Phase 6 by orchestrator-critic; FAIL escalates to user
   retroactive_self_audit: deferred — would assess R1's s01 run against this standard; running it would produce a back-graded verdict on a closed run, useful as calibration data but not as a current decision input
+
+bone_gate_landed:
+  date: 2026-05-10
+  uri: URI-026
+  plan_path: design/shoot-v2/session-plan-2026-05-10-bone-gate.md
+  parallel_session: /and-facets tuning ran concurrently; coordinate review side-by-side before next /and-season fire
+  next_session_action: |
+    Open the plan file (design/shoot-v2/session-plan-2026-05-10-bone-gate.md) AND the /and-facets
+    session's plan (whatever the parallel session produced) and review them together for a
+    comprehensive integrated picture of the bones-first + shared-reviewer architecture before any
+    new /and-season or /and-facets fire. Particular focus: (a) confirm the shared-reviewer assertion
+    holds (no facet-session edits collide with /and-season bone-gate edits); (b) Phase 1.5
+    persona-card body promotion is unblocked once facet session merges; (c) URI-018/019/020
+    sub-classes can land into the shared auditor library and benefit both pipelines.
+  landed_files:
+    - .claude/commands/and-season.md (Phase 4 Step 1.5 added; Step 2 extended with bones+tens audience + narrow-scope mechanic auditor; REGEN-{REPLACE,ADD,BOTH} discipline; per-window inner cap 2; Phase 5 print summary updated)
+    - staff/orchestrator-critic/card.md (F7 bone-gate residual auto-FAIL; B6 bone-gate convergence; §B6 in verdict template; R1 narrative updated; v1.1 versioning entry)
+    - schemas/facet.schema.md (tens dual-provenance; /and-shoot Phase 0 rename note; shared class library principle)
+    - CLAUDE.md (Rule 10 amended; Rule 11 shared reviewer resources)
+    - design/shoot-v2/upstream-tuning-queue.md (URI-026 entry; supersedes URI-025 IP-2 author-mode tens block)
+  deferred:
+    - Phase 1.5: persona-card body promotion of tens-attack categories (deferred to post-facet-session merge)
+    - Phase 2: sensory + state-updates env + loc-state migration; /and-facets-r1 Layer 1 deletion
+  first_live_fire: /and-season-plan s02 then /and-season s02 (s01 corpus untouched)

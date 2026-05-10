@@ -31,7 +31,7 @@ author: <agent-slug>
 
 ## Facet types and content shape
 
-### tensometer (`facets/tensometer.md`)
+### tensometer (`facets/tensometer.md` — canonical; or `facets/tensometer-<season-slug>e<NN>.md` — bone-gate provenance)
 
 Tension scalar per proto-line, scale 1–3.
 
@@ -44,6 +44,18 @@ Tension scalar per proto-line, scale 1–3.
 - 3 — peak; rupture, crisis, or held-breath threshold.
 
 **Author:** dramatist (single rater pass).
+
+**Dual provenance (URI-026, 2026-05-10).** Tens has two valid authoring sources:
+
+1. **Primary (bone-gate):** `/and-season` Phase 4 Step 1.5 — per-proposed-episode dramatist fork during the season-scope bone-gate. Output path: `facets/tensometer-<season-slug>e<NN>.md` (slug-suffixed). This is the load-bearing source: it gates audience review of bones at Phase 4 Step 2 and feeds Phase 6 F7 (bone-gate residual). The per-episode file ships as part of /and-season's proto-line deliverable.
+
+2. **Legacy:** `/and-facets-r1` Layer 1 — per-episode dramatist fork during the facet graph build. Output path: `facets/tensometer.md` (flat canonical). Retained operationally during Phase 1 of the migration; deferred for deletion in Phase 2.
+
+**No path collision.** The slug-suffixed primary path and the flat canonical legacy path are distinct files; no single-writer guard needed.
+
+**/and-shoot integration.** Phase 0 renames `facets/tensometer-<season-slug>e<NN>.md` → `facets/tensometer.md` for current-episode work. The slug-suffixed copy remains as canonical archive.
+
+**Shared class library (URI-026).** The tens-relevant subset of `.claude/commands/and-facets-audit.md`'s rubric classes (`FREQUENCY-BAND`, `CURVE-SHAPE`, `AP-SCAN`) is consumed by both `/and-season` Phase 4 Step 2 (bone-gate mechanic verdict) and `/and-facets-audit` (per-episode audit). The audit command is the shared review surface; no /and-season-specific reimplementation.
 
 ---
 

@@ -296,9 +296,40 @@ Dramatist outputs a proposed split plan: a list of cut-points (proto-line IDs wh
 
 Output: `active-project/staff/auditor/season-<slug>-split-proposal.md`.
 
-### Step 2 — Audience review of the split
+### Step 1.5 — Tens authoring per proposed episode (URI-026, 2026-05-10) — BONE-GATE
 
-Dispatch the three audience personas in parallel against the proposed split.
+The bones-first principle: the proto-lines are load-bearing. Audience review at Step 2 must judge tens-rated bones, not bare bones — bare-bone review cannot catch flatlined stretches or false peaks adversarially. Step 1.5 produces per-proposed-episode tens ratings that Step 2 reads.
+
+**Position:** runs after Step 1 (split proposal exists with cut-points) and before Step 2 (audience review). The split is still provisional — Step 1.5's tens-rating is also provisional in the sense that if Step 2 rejects the split, the next split iteration re-fires Step 1.5 on the revised boundaries.
+
+**Dispatch:** **dramatist** in fork-mode, one fork per proposed episode, in parallel.
+
+**Fork-discipline brief (identical to `/and-facets-r1` Layer 1a:88):**
+- **Read inputs:** the proposed-episode bone stretch (proto-line IDs `<from>`–`<to>` from the split proposal); `design/shoot-v2/rubric-tensometer.md` (the locked tens rubric); `schemas/facet.schema.md`.
+- **Forbid loading:** behavior cards, vibes, audience personas, source prose. The dramatist rates the bones mechanically against the rubric, not aesthetically.
+- **Output path:** `active-project/theater/facets/tensometer-<season-slug>e<NN>.md` (slug-suffixed to avoid collision with `/and-facets-r1`'s canonical `tensometer.md`; the `<NN>` is the proposed episode index at this iteration).
+- **Output format:** per-rubric (rung-1 / rung-2 / rung-3 entries, back-cite `[tens:N]` discipline, scene-shape verdict). Same shape `/and-facets-r1` Layer 1a produces; only the path differs.
+
+**Rubric scope:** the tens rubric is calibrated per-episode (~150-line corpus, unique-climax-per-episode clause, scene-boundary by location-state inheritance with TBD-boundary fallback). Per-proposed-episode invocation here matches the calibrated scope.
+
+**Dispatch budget:** 1 per proposed episode (3–6 per season). Parallel; wall-clock dominated by slowest fork.
+
+**Failure handling:** a dramatist refusal (rubric self-flag) propagates as `TENS-AUTHORING-REFUSED-<episode>` and routes to dramatist re-dispatch with the named refusal context. Cap: 2 retries per episode.
+
+### Step 2 — Audience review of the split (EXTENDED — bones+tens, shared-reviewer per URI-026)
+
+Dispatch the three audience personas in parallel against the proposed split. Each persona fork reads **bones + the per-proposed-episode tens-rating file** authored at Step 1.5, plus the standard inputs (persona card with `Threshold Discipline` + `Season-Scope Adversarial` body sections; series-plan; season-plan; active vibes).
+
+**Shared-reviewer principle.** The audience taste discipline + mechanic class library used here is the **same** as `/and-facets-audit.md`'s TASTE-FLAG + AP-SCAN + CURVE-SHAPE + FREQUENCY-BAND surface. The audience produces a taste verdict; the auditor (dispatched in narrow-scope mode below) produces a mechanic verdict against the same class library `/and-facets-audit.md` defines. **No `/and-season`-specific reimplementation.** Patterns surfaced here that escape the mechanic rubric feed TASTE-FLAG → AP-SCAN graduation in the shared auditor over time.
+
+**Per-persona report structure** — two **separately named, owner-attributed** sections, in addition to the existing SPLIT-{ACCEPT,REVISE} verdict:
+
+- **§ Audience taste verdict** (`OWNER: audience`) — ENGAGED / TOLERATED / BORED per stretch + persona-specific tens-attack findings. Tens-attack categories the persona may raise (carried in the dispatch brief until promoted to persona-card body in Phase 1.5):
+  - `RUNG-DISTRIBUTION-FLATLINE-{line-range}` — long contiguous run of tens=1 with no rung-2 inflection.
+  - `FALSE-PEAK-{line}` — tens=3 with no rung-2 precursor in the preceding ~5-bone window.
+  - `DENOUEMENT-FLAT-{episode}` — post-peak window with zero tens=3 and zero board-changes.
+  - `RUNG-CLUSTER-OVERSATURATION-{line-range}` — multiple tens=3 adjacent without release.
+- **§ Mechanic arithmetic verdict** (`OWNER: rubric`) — auditor narrow-scope dispatch (see below). Class library is `/and-facets-audit.md`'s; the auditor is invoked with a per-episode tens-only payload.
 
 Brief: read each proposed episode's stretch as a unit. Per-episode verdicts (mechanic-bearing per URI-011, 2026-05-10):
 
@@ -321,9 +352,37 @@ Brief: read each proposed episode's stretch as a unit. Per-episode verdicts (mec
   - If the post-peak section exceeds 50% of episode length AND contains fewer than 2 board-changes, flag `SHAPE-COHERENT-FLAT-AFTERMATH-{episode}` (HARD). 40-50% with <2 board-changes is SIGNAL.
   - The mechanic operates on bone-level data and is independent of season-plan defenses; citing season-plan mandate does not override a structural verdict (the plan licenses the register, not the shape).
 
-Per-persona output: `season-<slug>-split-review-{persona}.md`. File-level: `SPLIT-ACCEPT` or `SPLIT-REVISE-{reason}`. ≥2-persona threshold for ACCEPT.
+**Mechanic-arithmetic dispatch (narrow-scope auditor).** In parallel with the three audience-persona forks, dispatch the **auditor** once per proposed episode with a narrow-scope payload (per-episode tens file + the proposed-episode bones + the relevant rubric classes from `/and-facets-audit.md`). The auditor runs only the tens-relevant subset of its 11-class library:
 
-If REVISE → dramatist receives the feedback and produces a revised split (still constrained to multiple-of-3); review re-runs. Cap: 3 split iterations.
+- **FREQUENCY-BAND** (tens-only): rung-1 / rung-2 / rung-3 distribution against the band 60-75% / 20-30% / 5-10%; per-rubric breach-low / breach-high flags.
+- **CURVE-SHAPE** (per `and-facets-audit.md:81–87`): scene-level peak presence; 1→3 jump candidates; 3→3 release-after-peak checks; flatlining (30+ contiguous beats with no rung-2-or-3); episode-level act structure verdict `SHAPE-OK` / `SHAPE-FAIL`.
+- **AP-SCAN** (tens-only): AP1 ambient-escalation, AP2 speech-beat-default, AP3 climax-bleed, AP4 plot-importance-inflation, AP5 stillness-inflation (per rubric).
+
+Output: `active-project/staff/auditor/season-<slug>-pass-S4-split-mechanic-{episode-slug}.md`. File-level: `MECHANIC-CLEAN` or `MECHANIC-FAIL-{class-list}`. Findings carry `OWNER: rubric` tag.
+
+**Audit command provenance.** The mechanic-arithmetic auditor reads the same rubric classes defined in `.claude/commands/and-facets-audit.md`; the dispatch brief cites those class definitions by reference. The audit command itself is **not** modified — the shared surface is the class library, consumed from both pipelines.
+
+**Combined per-episode verdict.** For each proposed episode:
+
+- **`SPLIT-ACCEPT`** if ≥2-of-3 personas ACCEPT (the original threshold) AND `MECHANIC-CLEAN` AND no `SHAPE-COHERENT-FLAT-AFTERMATH-{episode}` HARD AND no `OPEN-ENGAGES-FAIL` AND no `CLOSE-EARNS-NEXT-AFTERMATH-DRIFT-{N>20}`.
+- **`SPLIT-REVISE-bones-{line-range}`** if a `RUNG-DISTRIBUTION-FLATLINE` / `FALSE-PEAK` / `DENOUEMENT-FLAT` / `SHAPE-COHERENT-FLATLINE` / `MECHANIC-FAIL-CURVE-SHAPE-SHAPE-FAIL` is localized to a specific stretch within the proposed episode (regen the stretch in the aggregate, not the split).
+- **`SPLIT-REVISE-cut-{reason}`** if the failure is the cut itself (open/close/aftermath-drift) — re-propose boundaries.
+
+**Bone-regen routing (REGEN-mode discipline per URI-026):**
+
+- **`REGEN-REPLACE`** — replace existing bones in the named window in-place. Preserve aggregate IDs of surviving bones per URI-010 stable-overrides-monotonic; new replacements re-use vacated IDs only if surviving bone deletes are explicit. Default routing for `RUNG-DISTRIBUTION-FLATLINE` and `FALSE-PEAK`.
+- **`REGEN-ADD`** — add bones to the named window without replacing survivors. New bones receive next-available IDs in the 900-range (legal-survivor pattern). Default routing for `DENOUEMENT-FLAT` and `SHAPE-COHERENT-FLATLINE` when the fix is increasing rung-2-or-3 density.
+- **`REGEN-BOTH`** — both replace and add. Routed only when audience explicitly cites both flatline and oversaturation in the same window.
+
+The screen-writer regen brief MUST carry the `REGEN-{REPLACE,ADD,BOTH}` instruction explicitly, the affected line range, position-aware-mapping discipline (URI-010), and inline `# pov:` marker preservation.
+
+Per-persona output: `season-<slug>-split-review-{persona}.md` — now carries both § Audience taste verdict and § Mechanic arithmetic verdict sections per the structure above. File-level: `SPLIT-ACCEPT` or `SPLIT-REVISE-{reason}`. ≥2-persona threshold for the audience component; mechanic component is independent.
+
+If any per-episode verdict is `SPLIT-REVISE-bones-{line-range}`, the regen routes to **screen-writer** (with REGEN-mode + line range + URI-010 + `# pov:` preservation) for in-aggregate stretch regeneration. After regen: Step 1.5 re-fires for the affected proposed-episode tens-rating, then Step 2 audience+mechanic re-fires for that episode only (not the whole split).
+
+If any per-episode verdict is `SPLIT-REVISE-cut-{reason}`, the dramatist re-proposes boundaries and the full Step 1.5 + Step 2 re-runs.
+
+**Per-window iteration cap: 2** (tightened from the 3 of the surrounding Phase 4 outer loop, per URI-026 bone-gate budget discipline). After 2 inner regen iterations on the same window without convergence, escalate: the residual is a `tens-gate-residual-HARD` finding routed to Phase 6 (orchestrator-critic F7).
 
 ### Step 3 — Mechanical write-out
 
@@ -355,6 +414,10 @@ Once split is accepted:
      **Position-aware mapping (URI-010, 2026-05-10).** Aggregate files MAY contain non-monotonic IDs as legal artifacts of pass-level reordering — IDs are stable per `schemas/proto-line.schema.md` ("once assigned, never reused, never reassigned"; "re-ordering preserves IDs"); the aggregate's IDs reflect their assignment history, not their current narrative position. When the aggregate range covered by an episode contains non-monotonic IDs, the shortcut formula `aggregate_id = aggregate_range_start + episode_id - 1` does NOT produce correct mappings. Fixers must use **position-aware mapping** (file-line position within the aggregate) to resolve `episode_id → aggregate_id`. The shortcut formula is valid only when the per-episode file maps to a contiguous monotonic ID range in the aggregate.
 3. Validate: each per-episode file has `episode`, `narrator`, `goal`, `cast`, `locations`, `prior_episode`, `aggregate_range`, contiguous numbering 1..M, no orphan content. `cast` matches the slug-grep over the episode's bones (sanity check, not gate). `aggregate_range` is contiguous and non-overlapping with sibling episodes' ranges; the union of all episodes' ranges equals 1..N (the aggregate's full range, accounting for legal ID-deletion gaps).
 4. The aggregate is preserved as the canonical pre-split artifact under its original path; per-episode files are derived. Downstream revision of a stretch should edit the aggregate and re-run Phase 4 (the split itself may shift if the revision changes shape).
+5. **Tens-file finalization (URI-026, 2026-05-10).** The slug-suffixed `tensometer-<season-slug>e<NN>.md` files written by Step 1.5 are now finalized. Per-episode tens files are the bone-gate's deliverable and travel with each per-episode proto-line file:
+   - The provisional-iteration suffix is dropped if the final accepted split's episode indexes match; otherwise the relevant tens files are renamed to match the final episode slugs.
+   - When `/and-shoot` Phase 0 starts an episode, it renames `theater/facets/tensometer-<season-slug>e<NN>.md` → `theater/facets/tensometer.md` for the current-episode working surface. The slug-suffixed copy remains as canonical archive.
+   - `/and-facets-r1` Layer 1 (legacy tens authoring at `theater/facets/tensometer.md`) is **not** edited by this session; it remains operational. There is no path collision because /and-season writes to slug-suffixed paths.
 
 ---
 
@@ -410,14 +473,20 @@ Phase 3 (season-scope review, 9 passes):
   file-level: <SEASON-CONVERGED | SEASON-FAIL with failing pass names>
 
 Phase 4 (interpretive split):
-  dramatist proposal:   <proto-line IDs of cuts>
-  audience review:      <ALL-ACCEPT | REVISE-{persona}>
-  episodes produced:    <count, multiple of 3>
+  dramatist proposal:           <proto-line IDs of cuts>
+  Step 1.5 tens-authoring:      <PASS | RETRIES:<n>> (URI-026 bone-gate)
+  Step 2 audience review:       <ALL-ACCEPT | REVISE-{persona}>
+  Step 2 mechanic verdict:      <ALL-MECHANIC-CLEAN | MECHANIC-FAIL-{episode}:{classes}>
+  Step 2 inner regen iters:     <n of 2 max per window>
+  Tens-gate convergence:        <PASS | NEEDS-ITER | FAIL — residual HARD>
+  episodes produced:            <count, multiple of 3>
 
 Files:
   active-project/theater/proto-lines/<season-slug>.aggregate.md (canonical pre-split)
   active-project/theater/proto-lines/<season-slug>e<NN>.md (× N, post-split)
+  active-project/theater/facets/tensometer-<season-slug>e<NN>.md (× N, post-split — URI-026 bone-gate)
   active-project/staff/auditor/season-<slug>-pass-S{1,2,3-{persona},3.5,4,4.5,5,6-{persona},7,8,9-{persona}}.md
+  active-project/staff/auditor/season-<slug>-pass-S4-split-mechanic-{episode-slug}.md (× N, URI-026)
   active-project/staff/auditor/season-<slug>-split-proposal.md
   active-project/staff/auditor/season-<slug>-split-review-{persona}.md (× 3)
   active-project/staff/auditor/season-<slug>-orchestrator-verdict.md (Phase 6)
