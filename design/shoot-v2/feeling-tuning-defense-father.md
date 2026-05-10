@@ -133,3 +133,36 @@ Zero strips, zero add-writes. All anchors and IDs preserved; only the entry text
 ## Summary line
 
 DEFEND=0, REVISE=3 (feel:9, feel:10, feel:11), WITHDRAW=0. Citation cascade: 0 strips, 0 add-writes. Angular-measurement attack on feel:10 answered via reshape onto body-as-subject ledger-precision (voice-steps-down-a-margin + eyes-mark-the-loft practiced-redirection). Generic tension-release on feel:9 clause-1 replaced with ledger-authority continuation (thumb-on-ledger's-open-column). Cross-character breath-as-duration formula broken on feel:11. Cross-character "before the words come" formula broken on feel:10. Episode-level cross-character vocabulary cleanliness audited and confirmed zero across all four saturation patterns (breath-as-duration, "before the X" formula, negative-continuity, angular-measurement on body-as-object). Pattern alignment with Taylor's and mother's defenses: same diagnosis (card-vocabulary applied as body's verb-register, not as observation-of-body) treated with the same discipline (reshape onto card-licensed action verbs by body-as-subject); zero formula-overlap with Taylor's or mother's revised set.
+
+---
+
+## URI-008 — feel:10 second revision (post-Phase-F REJECT)
+
+date: 2026-05-10 (fresh fork, facet-edit mode, no show.md write, no action costs)
+source: `design/shoot-v2/upstream-tuning-queue.md` URI-008 + `design/shoot-v2/feeling-tuning-final.md` Phase-F REJECT verdict on feel:10 + audit-r4 (AP-SCAN AP6 + TASTE-FLAG voice-fidelity/atmosphere-thin taste-005 + METADATA-INCONSISTENCY meta-002).
+
+Original (post-Phase-E.c, pre-fix): `the voice steps down a margin the way an estimate gets one; the eyes mark the loft once and come back to her`
+
+Audit findings: AP6 comparison/simile violation (ap-006) — "the way an estimate gets one" parses "the way" as comparison operator equivalent to "as" / "like" (rubric §forbidden-vocabulary "Comparisons and similes. Hard ban: any 'X like Y' / 'X as Y' / 'X as if Y' construction"); TASTE-FLAG voice-fidelity/atmosphere-thin (taste-005) — the comparison clause cantilevers card-vocabulary into a definition rather than letting the body-as-subject carry the register; METADATA-INCONSISTENCY (meta-002) — file's r2_tuning_defense round-note for father did not register the comparison construction it had introduced.
+
+Drafts:
+1. `the voice steps down a margin and holds at the lower mark; the eyes mark the loft once and come back to her`
+2. `the voice steps down to the register he gives close-of-day numbers in; the eyes mark the loft once and come back to her`
+3. `the voice drops a margin and the margin holds; the eyes mark the loft once and come back to her`
+
+Chosen: Draft 1 — `the voice steps down a margin and holds at the lower mark; the eyes mark the loft once and come back to her`
+
+Rationale:
+- AP6 cleared: zero "like / as / as if / as though / the way / kind of / sort of / somewhat / almost / nearly / faintly / vaguely / sort-of / a-bit". The first clause is now two coordinated verbs both performed BY the voice as subject ("steps down... and holds"), with no comparison-operator linking the action to an external referent. No similes; no "the way X" construction; no "as Y" construction. The "margin" and "lower mark" are nouns the action lands on, not figures the action is being likened to.
+- Card-register preserved: card §Operating-texture "He gives estimates with error ranges" + vibes private-association `ledger` ("every situation has an account; the question is whether what you are being told closes the account or leaves a remainder") + the reviewer-task brief's named card element "voice-steps-down-a-margin." The phrase "steps down a margin" is account-vocabulary applied as the voice's own verb-register: "margin" is the account-keeper's word for the error-range / give-or-take of an estimate; the voice is the actor that steps it down. "Holds at the lower mark" extends with ledger-register diction ("mark" — entry / ledger-mark / the apprentice-mark resonance picked up at @99 feel:11) and renders the duration of the lowered register as a held position rather than as anticipation of speech. Cost-accountant priced-yield register: the voice is performing the move a man who prices-yields makes when he steps an estimate down inside its tolerance and lets it sit at the new figure — the household interaction registered as a margined account-keeping operation.
+- Body-as-subject discipline: subject of clause 1 = "the voice" (acting); subject of clause 2 = "the eyes" (acting). No adjectives applied to body-surfaces; no measurement applied to body as observed object (no "a finger's width," no "a quarter cant," no angular-geometry). The card-trained ledger-precision lives in the verb-register ("steps down" / "holds at" / "mark... and come back"), not in observation-of-body. Both clauses pass the body-as-subject test.
+- Phase-E rubric carry-back URI-007 item 8 (body-as-subject) honored: URI-007 item 8 was first surfaced from the Phase-E.c feel:10 reshape itself ("card-trained vocabulary applied as observation-of-body reads as external behavioral primer; applied as body's own action register reads as interior-show"). The Phase-E.c revision passed item 8 by replacing angular-measurement-on-body-surfaces with voice-steps-down-a-margin, but introduced AP6 by appending the comparison clause "the way an estimate gets one" — meaning the body-as-subject discipline was won at the cost of a different forbidden register. URI-008 closes the loop: the comparison-operator removed; the body-as-subject discipline retained; both register-checks pass on the same line. Phase-F adjudication's REJECT verdict cleared on revision; the rubric carry-back item 8 stands honored AND the rubric carry-back item 9 (R2-adds need full §Form re-pass, not just Q1+Q2) is exemplified — this regression is exactly the case URI-007 item 9 names.
+
+Cross-character vocabulary residue check (post-URI-008):
+- "the way X" / "as Y" / "as if Y" / "like Z" formula across all three characters: zero.
+- breath-as-duration: zero (unchanged).
+- "before the X comes/lands/falls" formula: 1 (Taylor feel:1 card-text, unchanged).
+- angular-measurement on body-as-object: zero (unchanged).
+- Father's 3 fires after URI-008: hand-stays-flat + thumb-on-column (ledger-authority); voice-steps-down-a-margin-and-holds-at-the-lower-mark + eyes-mark-the-loft (account-margin-vocabulary by voice-as-subject + practiced-redirection); pen-pauses-line-waits + stroke-clean-hand-does-not-lift (ledger-authority commit-to-the-record). Three distinct somatic strategies; all in dyer-with-accounts vocabulary; zero comparison constructions; zero saturation residue.
+
+Citation cascade: 0 strips, 0 add-writes (anchor @67 unchanged, ID 10 unchanged, expressed:partial unchanged). Cite-index entries against feel:10 remain valid against revised text.
