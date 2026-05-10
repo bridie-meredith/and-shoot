@@ -31,7 +31,7 @@ round: 1
 18 @22 1
 19 @23 2
 20 @24 2
-21 @25 2
+21 @25 1  # r2_audit re-rate: original 2 demoted to 1 — on-face charge test fails per audit; ambient pre-calc, not pressure-visible
 22 @26 1
 23 @27 1
 24 @28 1

@@ -14,7 +14,7 @@ round: 1
 
 4 [@69] actor:taylor-hebert-jaehaerys ++ escalation-instinct: [body-ahead-of-choice, trained-reflex-preceding-decision, cape-war-pattern-in-smallfolk-body, first-on-screen-somatic-precedence] | licensed-by: memory:3, tens:2, proto:69
 
-5 [@119] actor:taylor-hebert-jaehaerys ++ family-as-vector: [parent-already-paying-the-bill-not-yet-handed-over, cost-in-flight-before-invoice-exists, the-warmth-that-cannot-be-kept-outside-the-exposure-surface] | licensed-by: memory:4, feeling:4, state-update:13, tens:2
+5 [@119] actor:taylor-hebert-jaehaerys ++ family-as-vector: [parent-already-paying-the-bill-not-yet-handed-over, cost-in-flight-before-invoice-exists, the-warmth-that-cannot-be-kept-outside-the-exposure-surface] | licensed-by: memory:4, state-update:13, tens:2
 
 # === ACTOR: oc-craftsman-mother ===
 
