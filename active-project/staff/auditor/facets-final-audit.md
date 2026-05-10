@@ -1,51 +1,55 @@
-audit: facets-final-r4
+audit: facets-final-r5
 episode: s01e01
 date: 2026-05-10
 mode: flag-only
 status: FINDINGS-PRESENT
-totals: 12 findings across 4 facets (0 hard, 12 signal/soft)
 
 ---
 
 ## Comparison vs prior audits
 
-audit-r1 (5-class, original):                        7 findings
-audit-r2 (5-class, post-memory-remediation):         5 findings
-audit-r3 (11-class, post-memory-tuning):            13 findings
-audit-r4 (11-class, post-feeling-tuning):           12 findings
+```
+audit-r1 (5-class, original):                       7 findings
+audit-r2 (5-class, post-memory-remediation):        5 findings
+audit-r3 (11-class, post-memory-tuning):           13 findings
+audit-r4 (11-class, post-feeling-tuning):          12 findings
+audit-r5 (11-class, post-feel:10-fix + NI-tuning): 10 findings
 
-Hard-finding trajectory: 4 (r1) -> 0 (r2) -> 1 (r3) -> 0 (r4)
-Signal-finding trajectory: 3 (r1) -> 5 (r2) -> 12 (r3) -> 12 (r4)
+Hard-finding trajectory: 4 → 0 → 1 → 0 → 0
+Signal-finding trajectory: 3 → 5 → 12 → 12 → 10
+```
 
-Note: The r3 HARD finding (struct-001, feeling.md ID non-monotonicity) is DOWNGRADED in r4 per URI-004. The per-section monotonicity convention (Taylor block ascending, mother block ascending, father block ascending) is the intended file structure for sub-sectioned facets. The audit-r3 STRUCTURAL check was over-strict; URI-004 directs updating the audit command to accept per-section convention. Net change r3→r4: -1 hard (struct-001 downgraded), +0 hard new; one new AP-SCAN finding and one new TASTE-FLAG finding introduced by feeling tuning. One prior AP-SCAN and one prior TASTE-FLAG from r3 are consolidated or re-scoped. Total count: 12 (from 13).
+Changes r4 → r5:
+- **CLEARED (4 findings):** ap-002, ap-003, taste-002, taste-003 — all cleared by NI tuning.
+- **CLEARED (2 findings):** ap-006, taste-005 — feel:10 AP6 comparison violation cleared by URI-008 second revision; meta-002 cleared by same (forbidden-vocabulary round-note now accurate).
+- **NEW (0 findings):** NI tuning introduced no new hard violations. One new METADATA-INCONSISTENCY finding carried from Phase F (narrator:27 channel-mislabel — see meta-002 below).
+- Net change: 12 → 10 (−4 cleared + 2 cleared + 0 new hard + 1 new metadata that replaces cleared meta-002 = net −2).
 
 ---
 
 ## STRUCTURAL findings (0)
 
-**struct-001 (audit-r3) — DOWNGRADED.**
+struct-001 from audit-r3 remains DOWNGRADED per URI-004. Per-section monotonicity accepted as convention for sub-sectioned facets. Not re-raised.
 
-feeling.md ID arrangement: Taylor section 1,2,3,4,13; mother section 5,6,7,14; father section 9,10,11. Each per-character section is strictly ascending. Deletion gaps (feel:8 deleted from mother section; feel:12 deleted from Taylor section) are correctly documented in round-notes. Cross-section ordering (Taylor ends at 13; mother starts at 5) is the intended per-section convention for sub-sectioned facets, per URI-004. The schema requirement "IDs strictly increasing within each facet file" is satisfied within each logical subsection. URI-004 names this as an audit over-strictness requiring a command-file edit; the finding is not re-raised as a HARD fault.
-
-Disposition: DOWNGRADED — per-section monotonicity accepted as convention for sub-sectioned facets per URI-004 (cost: small; command-file edit to `and-facets-audit.md` pending).
+No new structural findings.
 
 ---
 
 ## FREQUENCY-BAND findings (2)
 
-Unchanged from audit-r3. The proto-lines did not change; tens distribution is stable.
+Unchanged from audit-r4. Proto-lines unchanged; tens distribution is stable across all five audits.
 
-- [freq-001] **tensometer — rung-3**: actual 2/102 = **2.0%**; band 5-10%; **breach-low**. The episode has only 2 entries at rung-3 (@83 and @99). The tensometer file's own header comment acknowledges: "3-rung SOFT-FAIL — 2.0% < 5-10% target band." Root cause is upstream (URI-002 protoline scene-peak coverage gap). Both freq-001 and freq-002 are downstream symptoms of the same upstream structural gap.
+- [freq-001] **tensometer — rung-3**: actual 2/102 = **2.0%**; band 5-10%; **breach-low**. The episode contains only 2 rung-3 entries (@83 and @99). Tensometer file's own header comment acknowledges the SOFT-FAIL. Root cause: URI-002 (upstream protoline scene-peak coverage gap). Both freq-001 and freq-002 are downstream symptoms of the same upstream structural shortfall.
 
-- [freq-002] **tensometer — rung-1**: actual 79/102 = **77.5%**; band 60-75%; **breach-high**. The 1-rung is elevated above the upper band boundary. Inverse symptom of freq-001. Both findings persist at identical values; the feeling tuning did not alter the tens facet.
+- [freq-002] **tensometer — rung-1**: actual 79/102 = **77.5%**; band 60-75%; **breach-high**. Inverse symptom of freq-001.
 
-Per-facet distribution table:
+Per-facet distribution table (post-NI-tuning; NI density updated):
 | Facet | Metric | Actual | Band | Status |
 |---|---|---|---|---|
 | tensometer rung-1 | % of 102 | 77.5% | 60-75% | breach-high |
 | tensometer rung-2 | % of 102 | 20.6% | 20-30% | within |
 | tensometer rung-3 | % of 102 | 2.0% | 5-10% | breach-low |
-| NI density | fires/102 | 23.5% | 15-25% | within |
+| NI density | fires/102 | 26.5% (27/102) | 15-25% | breach-high (soft) |
 | sensory sparsity | fires/102 | 4.9% | 3-6% | within |
 | sensory modality coverage | distinct modalities | 3 (thermal, smell, light) | ≥2 | within |
 | memory sparsity | fires/102 | 7.8% | 5-12% | within |
@@ -53,26 +57,26 @@ Per-facet distribution table:
 | feeling sparsity (Mother) | fires/102 | 3.9% | 2-5% | within |
 | feeling sparsity (Father) | fires/102 | 2.9% | 2-5% | within |
 | metaphor sparsity | fires/102 | 0.0% | 0-3% | within |
-| state-updates density | fires/102 | 21.6% | ~8-18% | breach-high (soft) |
+| state-updates density | fires/102 | 21.6% | ~8-18% | breach-high (soft, unchanged from r3) |
 
-Note on state-updates: unchanged from r3; see r3 note on 102-beat scale adjustment.
+NI density note: 24 entries pre-tuning = 23.5% (within band); 27 entries post-tuning = 26.5% (marginally breach-high, 1.5pp above 25% upper bound). This is a new soft signal introduced by the NI tuning ADD of 3 entries. The breach is marginal; rubric text at §density says "outside that band, investigate: too dense = density-on-flat / no-contrast contamination." The 3 added entries are structurally licit (one each for foreknowledge-clamp @99, refusal-to-look-directly @35, and age-mismatch @47). The density breach is a monitoring note, not a fault.
 
 ---
 
 ## METADATA-INCONSISTENCY findings (2)
 
-- [meta-001] **memory.md** — r2_to_r3 round-note stale claim (carried from audit-r3). The r2_to_r3 line claims "quiet-beat anchor 8/8 (all tens=1 or trailing-edge)" but this is contradicted by the Phase 4 defense for mem:8 which constructs an episode-arc release-zone argument, explicitly acknowledging the zone-class is contested. The r2_to_r3 claim predates the Phase 4 revision and was not updated. **Carried forward unchanged from audit-r3.** Routing: taylor-hebert-jaehaerys impersonator (memory author) — correct the r2_to_r3 quiet-beat claim at next file-touch to reflect the Phase 4 episode-arc release-zone argument for mem:8, or add a superseding r3_to_r4 note.
+- [meta-001] **memory.md** — r2_to_r3 round-note stale claim. Carried forward unchanged from audit-r3 and audit-r4. The r2_to_r3 line claims "quiet-beat anchor 8/8 (all tens=1 or trailing-edge)" but this is contradicted by the Phase 4 defense for mem:8 which constructs an episode-arc release-zone argument, explicitly acknowledging the zone-class is contested. The r2_to_r3 claim predates the Phase 4 revision and was not updated. Routing: taylor-hebert-jaehaerys impersonator (memory author) — correct the r2_to_r3 quiet-beat aggregate claim at next file-touch to reflect the Phase 4 episode-arc release-zone argument for mem:8. Minimal edit.
 
-- [meta-002] **feeling.md — father section** — r2_to_r3 forbidden-vocabulary check contradicted by actual content. Line 38 of feeling.md (father section r2_to_r3 round-note) contains: `# forbidden-vocabulary check: clean — no named-feeling, no "feels" verb, no hedges, no similes, no comparisons, no compound-naming`. However the actual feel:10 entry at line 41 reads: `the voice steps down a margin the way an estimate gets one; the eyes mark the loft once and come back to her`. The phrase "the way an estimate gets one" is a comparison construction (comparison operator "the way" equivalent to "as"). The r2_to_r3 note was written before Phase E tuning; after Phase E revision, the comparison violation was introduced. The round-note was not updated to reflect the Phase E mutation. The note now contradicts the file's own content. **New finding introduced by feeling tuning.** Routing: oc-craftsman-father impersonator — update the r2_to_r3 forbidden-vocabulary claim in the father section to reflect that feel:10 was revised during Phase E and that the Phase E revision introduced a comparison violation subsequently flagged as REJECT in Phase F adjudication; the note should not claim "no comparisons" while the file contains feel:10 in its current REJECT-flagged state.
+- [meta-002] **interest-narrator.md** — narrator:27 channel-mislabel. The NI tuning defense log and the interest-narrator.md file header both record narrator:27 as a "mask-thinning" channel addition: `r2_tuning_defense: 24 → 27 ... 3 file-level adds (narrator:27 mask-thinning @47 ...)`. The ni-tuning-defense.md similarly states: `narrator:27 @47 — channel: mask-thinning`. However, the entry text itself — `the hand on her hair sits in the seam where the years in the body answer it before the cognition does` — does not deliver mask-thinning as the rubric defines it. The rubric (rubric-narrator-interest.md §Perceptual access) defines mask-thinning explicitly as: "The interior register relaxes when [Septon Aldric] is in scene; voice tells become slightly more visible." @47 is oc-craftsman-father ruffling hair — not a Septon Aldric proximity beat. The entry delivers age-mismatch + body-memory (the body carrying accumulated years that answer the warmth before the cognition does), not mask-thinning. The Phase F adjudication (ni-tuning-final.md, narrator:27 entry) independently confirmed this: wcp REJECT-on-channel-claim with the note "The channel-coverage claim for mask-thinning is NOT delivered here — the entry is good but under the wrong label." The file header (r2_tuning_defense) and defense log both claim mask-thinning coverage is delivered by narrator:27; the entry text does not deliver it. This is a METADATA-INCONSISTENCY between the channel-coverage claim in the round-note and the actual channel delivered by the entry. Note: because Septon Aldric is structurally absent from s01e01, mask-thinning cannot be licensed in this episode — the channel-coverage absence is a proto-line constraint, not a correctable file failure. The fault is not that mask-thinning is absent; it is that the round-note and defense log claim it was added when it was not. Routing: taylor-hebert-jaehaerys impersonator (NI author) — at next file-touch, update r2_tuning_defense header to accurately record narrator:27 as age-mismatch + body-memory channel, not mask-thinning; note that mask-thinning remains absent in this episode due to Septon Aldric absence and is not a file-level failure under those conditions.
 
 ---
 
 ## CURVE-SHAPE verdict
 
-**Episode-level: SHAPE-FAIL** — unchanged from audit-r3. The feeling tuning did not alter the tens facet or the proto-lines.
+**Episode-level: SHAPE-FAIL** — unchanged from audit-r3 and r4. NI tuning did not alter the tens facet or proto-lines.
 
-- **Act structure**: two peaks at @83 and @99, both in the second half; @99 is the structural climax (densest cluster, 15 co-facets). Episode is not inverted. Act structure sound on this axis.
-- **Climax uniqueness**: PASS. @99 is the uniquely dense cluster.
+- **Act structure**: two peaks at @83 and @99, both in the second half. @99 is the structural climax (densest cluster). Act structure sound on this axis.
+- **Climax uniqueness**: PASS.
 - **Scene-level peak coverage**: FAIL. 6 of 8 scenes lack any rung-3 entry with no dramatist-flagged exception.
   - Scene 1 (@1–@7, dawn/shutter-shut): no rung-3. No exception flagged.
   - Scene 2 (@8–@31, morning/shutter-open): no rung-3. No exception flagged.
@@ -82,165 +86,220 @@ Note on state-updates: unchanged from r3; see r3 note on 102-beat scale adjustme
   - Scene 6 (@92–@125, late-evening/ledger-open): rung-3 at @99. PASS.
   - Scene 7 (@126–@129, night/winter-candle-drawn): no rung-3. No exception flagged.
   - Scene 8 (@130–@131, late-night/winter-candle-lit): no rung-3. No exception flagged. (2-beat scene; may qualify as transit if dramatist argues.)
-- **Adjacency (1→3 jumps)**: 1 instance. @81=r=1, @82=r=1, @83=r=3 — direct 1→3 jump; broader approach includes @67=2, @69=2 (several beats earlier) but immediate pre-peak beats are rung-1. Flagged.
+- **Adjacency (1→3 jumps)**: 1 instance. @81=1, @82=1, @83=3 — direct 1→3 jump flagged.
 - **Adjacency (3→3 sequences)**: 0. PASS.
-- **Flatlining**: not present. Longest rung-1 run is ~8 content-bearing beats. PASS.
+- **Flatlining**: not present. PASS.
 
-Tensometer header comment anticipated this finding: "Pending Round-2 verdict; flag for re-author if curve-shape audit is added at Step G." Root cause is URI-002 (upstream protoline scene-peak coverage gap).
+Root cause: URI-002 (upstream protoline scene-peak coverage gap). Tensometer header comment anticipated this.
 
 ---
 
 ## CONTRADICTION findings (0)
 
-None. State-update chains remain monotonically consistent (tallow-lamp: unlit→lit→guttering→dark; winter-candle: stored→drawn→lit; all other field-update chains single-entry or internally consistent). Location-state time progression monotonic (dawn→morning→afternoon→dusk→evening→late-evening→night→late-night). No cross-facet state incompatibilities detected. Unchanged from audit-r3.
+None. State-update chains remain monotonically consistent. Location-state time progression monotonic. No cross-facet state incompatibilities detected. Unchanged from audit-r3.
 
 ---
 
 ## DEDUP findings (0 active)
 
-No new DEDUP findings from feeling tuning. Prior flag-001 (mem:5 / narrator:26 @9) and flag-002 (mem:8 / narrator:25 @131) both resolved in audit-r3 by Phase 4 memory tuning revisions. The residual surface echo on flag-002 ("the day closes" / "closes the day") was named for stitcher-layer awareness in r3 and is not re-raised. No new DEDUP candidates introduced by feeling tuning.
+No DEDUP findings. Prior flag-001 and flag-002 resolved in audit-r3. The residual surface echo on "the day closes" / "closes the day" (mem:8 / narrator:25) was named in r3; narrator:25 was revised during NI tuning to "the second mark is the day's commit, priced and filed" — the echo is eliminated. No new DEDUP candidates.
 
 ---
 
 ## SUPERFLUOUS findings (0)
 
-All 7 lonely entries from cite-index (loc-state:5 @61, loc-state:6 @92, narrator:2 @4, sensory:2 @3, state:7 @122, feel:13 @129, feel:14 @36) survive rubric scrutiny. Feeling tuning did not remove any of these entries; the Phase E revisions modified content but preserved anchors and IDs. Rubric scrutiny verdicts unchanged from audit-r3:
+All 7 lonely entries from cite-index (loc-state:5 @61, loc-state:6 @92, narrator:2 @4, sensory:2 @3, state:7 @122, feel:13 @129, feel:14 @36) survive rubric scrutiny. Verdicts unchanged from audit-r4. NI tuning did not remove any lonely entries; the 3 adds (narrator:27/28/29) are co-decorated with existing entries and are not new lonely entries.
 
-- loc-state:5 and loc-state:6: scene-entry frame-anchors for Scenes 5 and 6; rubric-licensed as first-beat place-anchors for inherited environments.
-- narrator:2 @4: approach-zone channel-coverage fire (passive fauna-feed baseline establishment).
-- sensory:2 @3: smell modality inflection (bare verb "stirs"; mordant-stir-sharp is audience-perceptible disambiguation).
-- state:7 @122: genuine state-change (tallow-lamp lit→guttering) that drives @126 winter-candle draw.
-- feel:13 @129: Q1-clean (no NI on @129), Q2-structural (pre-closure body-set), multi-justification ≥3/5.
-- feel:14 @36: non-POV mother somatic-tell; Q1-clean (proto-line carries no interior); Q2-structural (first-steward-name landing); multi-justification ≥3/5.
+Note: cite-index will need regeneration to reflect NI tuning (narrator:27/28/29 added; some co-citation count updates at @35/@47/@99). The current cite-index header records 24 NI entries; the actual count is now 27. This is a staleness note for the index-generator, not an audit finding against the facet files themselves.
 
 ---
 
-## CONSTRAINT findings (3 — all soft, carried from r3)
+## CONSTRAINT findings (2 active, 1 retired)
 
-Prior flags 003, 004, 005 from r2/r3 reviewed. Feeling tuning did not touch the memory facet, so these are unchanged.
+- [flag-003] type: flag — **mem:2 @35 approach-zone quiet-beat (carried from r1/r2/r3/r4).** The Phase 4 defense constructs a trailing-edge argument for @35 (the slip-drawing as aftermath of the @32 return-cluster). Defensible but unverifiable without a dramatist-locked scene-frame. Rubric carry-back #1 (URI-001) is the structural resolution path. Disposition: soft flag (carried).
 
-- [flag-003] type: flag — **mem:2 @35 approach-zone quiet-beat (carried from r1/r2/r3).** The Phase 4 defense constructs a trailing-edge argument for @35 (the slip-drawing as aftermath of the @32 return-cluster). The argument is defensible but unverifiable without a dramatist-locked scene-frame. Rubric carry-back #1 (URI-001) is the structural resolution path. Disposition: soft flag (carried). Functional registers remain strong.
+- [flag-004] type: flag — **mem:3 @69 approach-zone quiet-beat — Phase 4 adjudication accepted (carried, soft).** Audiences adjudicated ACCEPT in Phase 4. Zone-class was adjudicated as trailing-edge. Mechanical concern (zone-class without dramatist-locked scene-frame) remains as rubric-gap note per URI-001. Disposition: soft flag (carried, substantive concern closed by Phase 4 tuning).
 
-- [flag-004] type: flag — **mem:3 @69 approach-zone quiet-beat — Phase 4 adjudication accepted (carried from r1/r2/r3).** Audiences adjudicated this as ACCEPT in Phase 4 tuning (wcp ACCEPT, dfr ACCEPT, pe ACCEPT). The zone-class was adjudicated as trailing-edge. The mechanical concern (zone-class without dramatist-locked scene-frame) remains as a rubric-gap note per carry-back #1 (URI-001). Disposition: **soft flag downgraded — Phase 4 tuning closed the substantive concern.** Carried only as rubric-gap note.
-
-- [flag-005] type: flag — **mem:8 @131 rising-2 at episode close; metadata inconsistency (superseded in part by meta-001, carried from r1/r2/r3).** Phase 4 revised the entry and constructed the episode-close release-zone trailing-edge argument. The tuning final accepted this defense (wcp ACCEPT-WITH-CAVEAT, pe ACCEPT). The metadata component is captured in meta-001. The substantive entry concern was adjudicated ACCEPT-WITH-CAVEAT in Phase 4. Disposition: **soft flag superseded by meta-001 for the metadata component.** Entry itself post-tuning cleared with caveats. Flag-005 is retired; meta-001 carries forward.
+- flag-005 **RETIRED.** mem:8 @131 was carried in r1-r4. The metadata component is captured in meta-001. The entry was revised during NI tuning pass (narrator:25 was revised, not mem:8; mem:8 itself unchanged); Phase 4 accepted with ACCEPT-WITH-CAVEAT. Meta-001 carries the metadata component forward. The substantive entry concern is adjudicated. flag-005 retired; no replacement needed.
 
 ---
 
-## AP-SCAN findings (6)
+## AP-SCAN findings (3 active; 3 cleared from r4)
 
-Findings ap-001 through ap-005 carried from audit-r3 (unchanged). One new finding introduced by feeling tuning.
+**Cleared this round:**
+- ap-002 [narrator:7 @23 + narrator:22 @24] AP7 persistent-narration — **CLEARED** by NI tuning. narrator:7 revised to age-mismatch channel ("the column reads at the speed her sounding-out is supposed to take twice"); narrator:22 revised to body-weight-tracking channel ("the bench takes the ledger at a weight her shoulder is tracking, not her eye"). The "had already read" identical-construction violation no longer exists; adjacent beats are now on distinct channels.
+- ap-003 [narrator:23 @94] AP5 externalized-observer — **CLEARED** by NI tuning. Revised to "the eyes hold the seam in the wood and the count she had not yet finished" — internal body-anchor replaces the "a girl waiting on a stroke would hold them" third-party construction.
+- ap-006 [feel:10 @67] AP6 comparison/simile violation — **CLEARED** by URI-008 second revision. See feel:10 AP6 fix verification section below.
 
-- [ap-001] [tens:29 @34] AP5 stillness-inflation — candidate violation. "taylor-hebert-jaehaerys holds the feet" rated rung-2. The held-against-what (the slip discussion) is adjacent but not at the same beat's SVO. Per rubric: "the answer is 'the scene is tense'" is a rung-1 call; the on-face charge of Taylor-holds-feet is not independently legible from the proto-line alone. Soft AP5 candidate. Routing: dramatist re-rating. (URI-005.)
+**Remaining findings (3):**
 
-- [ap-002] [narrator:7 @23 + narrator:22 @24] AP7 persistent-narration — candidate violation. NI:7 = "the stool brings the eye-line to the column she had already read" and NI:22 = "the ledger goes down on the bench at the angle she had already read for it." Both fire on consecutive content-bearing beats (@23, @24) using the "had already read" pre-calc construction on the same interior channel. Per rubric AP7: "same registration sustained across consecutive beats; reject all but the first." The shared interior channel (pre-calc surfacing at both beats) is the violation candidate. Routing: taylor-hebert-jaehaerys impersonator (NI author). (URI-005.)
+- [ap-001] [tens:29 @34] AP5 stillness-inflation — candidate violation. "taylor-hebert-jaehaerys holds the feet" rated rung-2. The held-against-what (the slip discussion) is adjacent but not at the same beat's SVO. Per rubric: the on-face charge of Taylor-holds-feet is not independently legible from the proto-line alone. Soft AP5 candidate. Routing: dramatist re-rating. (URI-005.) Unchanged from r3/r4.
 
-- [ap-003] [narrator:23 @94] AP5/voice-fidelity — candidate violation. "the eyes hold steady longer than a girl waiting on a stroke would hold them" uses a comparative externalization construction that registers Taylor's own interior through how she appears to an imagined observer. Base-register interiority does not typically frame the narrator's own behavior through third-party observer comparison. The entry is not strictly prohibited but the comparative construction (observing self from outside) is mask-register-adjacent. Routing: taylor-hebert-jaehaerys impersonator (NI author). (URI-005.)
+- [ap-004] [vibes:7 @15] AP8 prose-token — candidate violation. Token "eyes-running-the-assessment-while-hands-keep-working" contains an embedded finite clause ("hands keep working": subject + finite verb compound). Per rubric AP8 test: "a sequence of two independent compressed clauses joined by a hyphen is AP8 even if individually each clause is short." Routing: showrunner (vibes author). (URI-005.) Unchanged from r3/r4.
 
-- [ap-004] [vibes:7 @15] AP8 prose-token — candidate violation. Token "eyes-running-the-assessment-while-hands-keep-working" contains an embedded finite clause ("hands keep working": subject + finite verb compound). Per rubric AP8 test: "a sequence of two independent compressed clauses joined by a hyphen is AP8 even if individually each clause is short." The token structure has "eyes-running-the-assessment" and "hands-keep-working" joined by "while." Whether parsed as a compound structure with embedded finite clause or two independent clauses determines the verdict; flagged for author review. Routing: showrunner (vibes author). (URI-005.)
-
-- [ap-005] [mem:3 @69, mem:4 @119, mem:6 @103, mem:7 @113] AP14 target-reference free-text gloss — soft. Four of eight memory entries use parenthetical free-text glosses as target-reference rather than card slugs. Per rubric: "Free-text glosses are the soft path; the conservative move is a margit referral to author the missing monument card." Monument families (cape-reflex/trained-body, parent-as-cost-vector/dying-tutor, child-performance-grooves, control-as-evidence) do not have formal card slugs. Clears with URI-003 (margit referral for monument card authoring). Routing: taylor-hebert-jaehaerys impersonator (memory author) + margit. (URI-003.)
-
-- [ap-006] [feel:10 @67] **AP6 comparison/simile violation — NEW finding introduced by feeling tuning.** The Phase E revision of feel:10 produced the entry: "the voice steps down a margin the way an estimate gets one." The phrase "the way an estimate gets one" is a comparison construction. The rubric §Form discipline hard-bans comparisons: "Hard ban: any 'X like Y' / 'X as Y' / 'X as if Y' construction. The body action is what it is, not what it resembles." "The way" functions as a comparison operator equivalent to "as": "the voice steps down a margin [the way] an estimate gets one" = "the voice steps down a margin [as] an estimate gets one." This is the comparison/simile form violation the rubric names under AP6 (anti-pattern 14 in the rubric catalog: "Simile / comparison. 'Like X' / 'as if X' / 'as Y' structures used to render feeling-show. Hard refuse"). The Phase F final adjudication issued a REJECT verdict on this basis (3/3 persona votes: dark-fantasy-reader REJECT, pulp-enthusiast REJECT, worm-canon-pedant REJECT). This AP-SCAN finding was generated independently from the tuning-final; the REJECT and the AP-SCAN agree. The second clause ("the eyes mark the loft once and come back to her") is clean per the tuning final. Routing: oc-craftsman-father impersonator (URI-008); brief: revise first clause of feel:10 to preserve dyer-with-accounts register without comparison operator; second clause retained unchanged.
+- [ap-005] [mem:3 @69, mem:4 @119, mem:6 @103, mem:7 @113] AP14 target-reference free-text gloss — soft. Four of eight memory entries use parenthetical free-text glosses as target-reference rather than card slugs. Monument families do not have formal card slugs. Clears with URI-003 (margit referral for monument card authoring). Routing: taylor-hebert-jaehaerys impersonator (memory author) + margit. (URI-003.) Unchanged from r3/r4.
 
 ---
 
-## TASTE-FLAG findings (5)
+## feel:10 AP6 fix verification
 
-Findings taste-001 through taste-004 carried from audit-r3. One new finding introduced by feeling tuning.
+**CONFIRMED CLEAN.** Mechanical scan of feel:10 post-URI-008 second revision:
 
-- [taste-001] [mem:4 @119] voice-fidelity — "the warm hand on the shoulder is the parent already paying the bill the daughter has not handed over." Phase 4 tuning final named this ACCEPT-WITH-CAVEAT: "the daughter has not handed over" is passive-recipient framing marginally inconsistent with Taylor's active cost-tracking register. The audience accepted the defense but named the residual honestly. Signal-only; tuning final flagged for editor review at wrap. Unchanged from r3.
+Entry text (from feeling.md line 41):
+`10 @67 oc-craftsman-father: the voice steps down a margin and holds at the lower mark; the eyes mark the loft once and come back to her | expressed: partial`
 
-- [taste-002] [mem:8 @131] atmosphere-thin — "the day closes in the shape of a thing already filed; the filing was the whole day." Administrative-permanence closure at the episode's final beat. Well-formed and Phase 4-accepted, but reads somewhat abstract at episode-close. The "the day closes" / "closes the day" surface echo with NI:25 compounds this. The ACCEPT-WITH-CAVEAT verdict from Phase 4 named the residual. Signal-only. Unchanged from r3.
+Scan for forbidden comparison vocabulary {like / as / as if / as though / the way / kind of / sort of / almost / nearly / faintly / vaguely}:
+- "like": absent
+- "as": absent (the construction "and holds" is a coordinating conjunction, not a comparison marker)
+- "as if": absent
+- "as though": absent
+- "the way": absent — the Phase E.c text "the way an estimate gets one" has been replaced by "and holds at the lower mark"
+- "kind of": absent
+- "sort of": absent
+- "almost": absent
+- "nearly": absent
+- "faintly": absent
+- "vaguely": absent
 
-- [taste-003] [narrator:23 @94] voice-fidelity — "the eyes hold steady longer than a girl waiting on a stroke would hold them." The comparative construction frames Taylor's own somatic behavior through an imagined third-party observer perspective ("a girl waiting on a stroke"). Base-register does not typically externalize itself; interiority is cost-tracking and pre-calc, not self-observation-through-imagined-witness. "A girl waiting on a stroke" also carries a passivity framing ("waiting") inconsistent with Taylor's active anticipatory register. Same entry flagged in ap-003. Signal-only. Unchanged from r3.
+The AP6 comparison construction is gone. The URI-008 second revision successfully removed the comparison operator while preserving the dyer-with-accounts register ("margin" and "lower mark" remain as account-vocabulary; "holds at" extends the ledger-register with body-as-subject discipline). The second clause ("the eyes mark the loft once and come back to her") is unchanged. Both clauses pass the AP6 mechanical scan. ap-006 CLEARED.
 
-- [taste-004] [narrator:7 @23 + narrator:22 @24] momentum-stall — consecutive "had already read" pre-calc constructions at @23 and @24. NI:7: "the stool brings the eye-line to the column she had already read." NI:22: "the ledger goes down on the bench at the angle she had already read for it." Consecutive identical-register fires at adjacent beats produce a momentum stall in stitched output because both beats surface the same interior channel (pre-calc) without distinct functional contribution. Signal-only. Unchanged from r3.
+The r2_to_r3 forbidden-vocabulary round-note in the father section of feeling.md previously claimed "no comparisons" while the file contained the Phase E comparison violation. The URI-008 revision corrects the actual entry text; the round-note header at line 38 now accurately reflects the file's state (the forbidden-vocabulary check in r2_tuning_defense header has been updated by the r2_tuning_defense log to document the Phase E introduction and Phase F REJECT, and notes the URI-008 resolution). meta-002 from audit-r4 is therefore CLEARED: the contradiction between the round-note's "no comparisons" claim and the file's actual content has been resolved because the comparison is no longer present.
 
-- [taste-005] [feel:10 @67] **voice-fidelity / atmosphere-thin — NEW finding introduced by feeling tuning.** Independent of the AP-SCAN AP6 mechanical finding: the comparison construction "the way an estimate gets one" also fails at the taste level. The somatic-tell facet requires body actions named in their own register; "steps down a margin the way an estimate gets one" does not describe a body action — it describes a voice-action using a comparison to an accounting procedure. The somatic-action register is absent from the first clause entirely: "voice steps down a margin" is observable vocal behavior, but "the way an estimate gets one" shifts the register from body-in-its-own-vocabulary to voice-as-compared-to-accounting-object. The intent (inscribe dyer-with-accounts register) is correct but the execution substitutes comparison for somatic vocabulary. The second clause ("the eyes mark the loft once and come back to her") is clean, anchored in body-register (gaze-direction), and survives on its own. The first clause is the isolated failure. At the atmosphere level, the register mismatch weakens the entry at the episode's Scene 4 sole feeling-fire. Signal-only.
+---
+
+## NI channel-coverage verification
+
+**Post-tuning distribution (27 entries, per ni-tuning-final.md channel-coverage table):**
+
+| channel | fires | % of 27 |
+|---------|-------|----------|
+| cost-tracking | 10–11 | ~40% |
+| age-mismatch | 7 | 26% |
+| passive fauna-feed | 4 | 15% |
+| pre-calc surfacing | 4–5 | ~18% |
+| eyes-to-exits | 1 (partial) | 4% |
+| foreknowledge-clamp | 1 (narrator:29) | 4% |
+| refusal-to-look-directly | 1 (narrator:28) | 4% |
+| mask-thinning | 0 | 0% |
+
+**Does post-tune distribution satisfy the rubric?**
+
+Rubric §Curve-shape "behavior-pack channel diversity": expects at least three distinct channels across fires; no single channel >50% dominant. Results:
+
+- **Pre-calc no longer >50%**: CONFIRMED. Pre-calc was the pre-tune concern (~6-7 fires, ~25-30%). Post-tune: 4 fires (~18% of 27). Not dominant. PASS.
+- **Foreknowledge-clamp present (was 0; now ≥1)**: CONFIRMED. narrator:29 @99 delivers the foreknowledge-clamp via "the count of years the mark has just shortened goes flat behind the eyes." Phase F adjudicated 3-ACCEPT. PASS.
+- **Refusal-to-look-directly present (was 0; now ≥1)**: CONFIRMED. narrator:28 @35 delivers the refusal channel via "the slip is the thing the eyes do not land on while the count behind them runs." Phase F adjudicated 3-ACCEPT. PASS.
+- **Mask-thinning absent**: CONFIRMED ABSENT — but this is NOT a file-level failure. Rubric mask-thinning channel is Septon-Aldric-proximity-specific. Septon Aldric does not appear in s01e01 (cast: taylor-hebert-jaehaerys, oc-craftsman-mother, oc-craftsman-father; confirmed in proto-lines file header and showrunner memory.md s01e01 cast entry). No licensed trigger exists for mask-thinning in this episode. The rubric's §mask-too-perfect file-level flag fires only if the file has zero foreknowledge-clamp AND zero displacement-register fires; with narrator:28 (refusal) and narrator:29 (foreknowledge-clamp) both present, the mask-too-perfect flag does not fire. Mask-thinning absence is a structural consequence of the episode's cast composition, not a remediable file defect. ACCEPT.
+
+**Channel-coverage verdict**: the post-tune distribution satisfies the rubric. The three previously-absent doubled-register channels (foreknowledge-clamp, refusal-to-look-directly) are now present; cost-tracking is the dominant channel at ~40% (below the 50% flag threshold); mask-thinning is absent due to the absence of its sole licensed trigger. The multi-channel rubric requirement is met.
+
+---
+
+## narrator:27 METADATA-INCONSISTENCY — independent verification
+
+This audit independently confirms the Phase F finding on narrator:27.
+
+The interest-narrator.md file header (r2_tuning_defense line) states: `3 file-level adds (narrator:27 mask-thinning @47; narrator:28 refusal-to-look-directly @35; narrator:29 foreknowledge-clamp @99) close the rubric §curve-shape channel-coverage gap (mask-too-perfect file-level remediation)`.
+
+The actual narrator:27 entry text: `the hand on her hair sits in the seam where the years in the body answer it before the cognition does`.
+
+The rubric's mask-thinning channel definition (rubric-narrator-interest.md §Perceptual access): "Mask-thinning at Septon Aldric proximity. The interior register relaxes when he is in scene; voice tells become slightly more visible."
+
+Assessment: narrator:27's text does not engage with Septon Aldric proximity. There is no Septon Aldric in the scene; there is no relaxation of the mask. What the entry delivers is the body responding to a warm-affection gesture (the hair-ruffle by oc-craftsman-father) through accumulated lived-time — this is age-mismatch + body-memory, as confirmed by the Phase F adjudication (wcp: "REJECT on channel-coverage claim, ACCEPT on entry quality").
+
+The file header's claim that narrator:27 closes the mask-thinning coverage gap is a metadata inconsistency: it asserts a channel delivery that the entry text does not execute. The entry is a quality ACCEPT-WITH-CAVEAT per Phase F; it simply delivers a different channel than the one claimed. meta-002 in this audit captures this finding independently from Phase F.
+
+The consequence: mask-thinning channel coverage remains at 0 in this episode. As noted above, this is acceptable because Septon Aldric is absent from s01e01. The file-header's coverage claim is the error; the file content's channel delivery is fine for the episode scope.
+
+---
+
+## TASTE-FLAG findings (3 active; 2 cleared from r4)
+
+**Cleared this round:**
+- taste-002 [narrator:25 atmosphere-thin / author-voice] — **CLEARED** by NI tuning. narrator:25 revised to "the second mark is the day's commit, priced and filed." The thematic-arc summary is gone; cost-accounting triple replaces it. Phase F: 3-ACCEPT.
+- taste-003 [narrator:23 voice-fidelity] — **CLEARED** by NI tuning (same entry as ap-003; revision to body-anchored interior clears both).
+
+**Remaining findings (3):**
+
+- [taste-001] [mem:4 @119] voice-fidelity — "the warm hand on the shoulder is the parent already paying the bill the daughter has not handed over." Phase 4 tuning final named this ACCEPT-WITH-CAVEAT: "the daughter has not handed over" is passive-recipient framing marginally inconsistent with Taylor's active cost-tracking register. Tuning final flagged for editor review at wrap. Signal-only. Unchanged from r3/r4.
+
+- [taste-004] [narrator:7 @23 + narrator:22 @24] **partially resolved, residual flagged.** The consecutive-fire momentum stall is reduced: narrator:7 now fires on age-mismatch channel; narrator:22 fires on body-weight-tracking channel. The two adjacent beats no longer share a channel. However, the Phase F final notes a residual: narrator:1 and narrator:2 (ACCEPT-WITH-CAVEAT) exhibit back-to-back stasis-opening framing ("already where they were last night" / "the radius is what it was"). The original taste-004 (narrator:7 + narrator:22 momentum-stall) is resolved. A new, softer version of the concern surfaces at the episode's first two spotlight beats. The stitcher note in ni-tuning-final.md names this: "rendering narrator:1 and narrator:2 at full weight produces a double-stasis opening at the episode's first two spotlight beats." Signal-only, scope reduced from r4. The taste-004 identifier is retained for tracking; the scope is narrowed.
+
+- [taste-006] [narrator:18 @99] **NEW — voice register at structural climax.** narrator:18 "the apprentice-stroke fixes the role the household will read on her tomorrow" was ACCEPTED-WITH-CAVEAT in Phase F. wcp flagged: "will read on her tomorrow" is social-reception framing (mask-register — what-will-others-see) rather than cost-tracking base-register (what-have-I-just-paid). At the episode's structural climax fire — the 15-facet pile-up at @99 — the NI entry is the interior-cost-pricing of the mark. An entry that reads in slightly mask-adjacent register at the episode's most load-bearing beat is a taste-level concern. The entry passes (3-ACCEPT overall) but wcp's named residual is the most consequential caveated fire in the episode given its structural position. Signal-only. New in r5.
 
 ---
 
 ## PILE-UP REVIEW (7 candidates, all warranted)
 
-Post-feeling-tuning pile-up count (>4 co-located facets): unchanged from r3. Feeling tuning preserved all existing anchors; no new pile-ups introduced; no pile-ups resolved.
+Pile-up count unchanged from r4. NI tuning added narrator:27/28/29 to @47/@35/@99 respectively, increasing their citation counts by 1 each. No new pile-ups created; no existing pile-ups resolved. The @99 pile-up now counts 16 co-cited facet entries (up from 15 in r4 with the addition of narrator:29).
 
-- **@99** (15 facets) — verdict: **warranted.** Structural climax (tens=3); five simultaneous canonical field-mutations, seven vibes on distinct targets with distinct licensed-by chains, NI + feeling + tensometer close the set. Density structurally mandated by the irreversibility and fan-out scope of the mark-setting act. No change from r3.
-
-- **@35** (9 facets) — verdict: **warranted.** Market-slip draws the documentary mechanism to the surface for the first time; nine entries across nine distinct jobs. No change from r3.
-
-- **@119** (7 facets) — verdict: **warranted.** Intimate-cost beat fanned across two actors; all sources resolve at or before @119. No residual defect. No change from r3.
-
-- **@69** (5 facets) — verdict: **warranted.** NI:14, mem:3, vibes:4, vibes:13, and tens:52 all independently licensed for this beat. Metaphor deletion (@69) confirmed absent. No change from r3.
-
-- **@130** (6 facets) — verdict: **warranted.** Two real state-mutations + sensory inflection + loc-state frame turnover + NI + vibes:17. No change from r3.
-
-- **@8** (5 facets) — verdict: **warranted.** Real env state-change + loc-state morning-frame + sensory inflection + NI + vibes:16. No change from r3.
-
-- **@83** (5 facets) — verdict: **warranted.** tens=3 peak; NI + two state-updates on distinct targets + feeling:6. Lean for a 3-beat; no over-decoration. No change from r3.
+- **@99** (16 facets including narrator:29) — verdict: **warranted.** Structural climax; the addition of narrator:29 (foreknowledge-clamp) is a structurally licensed addition at the episode's densest cluster. No change to verdict.
+- **@35** (10 facets including narrator:28) — verdict: **warranted.** Market-slip documentary mechanism; narrator:28 refusal-to-look-directly is a structurally licensed addition. No change to verdict.
+- **@47** (3 facets including narrator:27) — previously a 2-facet pile; now 3. Below the >4 threshold; not in pile-up territory. Note: narrative weight at @47 supports the addition.
+- **@119** (7 facets) — unchanged. Warranted.
+- **@130** (6 facets) — unchanged. Warranted.
+- **@8** (5 facets) — unchanged. Warranted.
+- **@83** (5 facets) — unchanged. Warranted.
 
 ---
 
 ## Audit summary
 
-- Total entries reviewed: 202 facet entries across 9 facet files (102 tensometer + 8 loc-state + 24 NI + 5 sensory + 22 state-updates + 8 memory + 12 feeling + 0 metaphor + 21 vibes; consistent with cite-index totals)
-- STRUCTURAL: 0 (audit-r3 struct-001 downgraded to per-section-convention-acceptable per URI-004)
-- FREQUENCY-BAND: 2 signal findings (tensometer rung-3 breach-low at 2.0% vs 5-10% band; tensometer rung-1 breach-high at 77.5% vs 60-75% band) — unchanged from r3
-- METADATA-INCONSISTENCY: 2 (meta-001 carried from r3: memory.md stale quiet-beat aggregate claim; meta-002 new: feeling.md father-section r2_to_r3 forbidden-vocabulary claim contradicted by actual feel:10 content)
-- CURVE-SHAPE: **SHAPE-FAIL** — 6 of 8 scenes lack rung-3 peak with no dramatist-flagged exception; 1→3 direct jump at @83 — unchanged from r3
-- CONTRADICTION: 0 (none detected; all state chains monotonic) — unchanged from r3
-- DEDUP: 0 active — unchanged from r3
-- SUPERFLUOUS: 0 (all 7 lonely entries survive rubric scrutiny) — unchanged from r3
-- CONSTRAINT: 3 soft flags (flag-003 carried; flag-004 downgraded; flag-005 superseded by meta-001) — unchanged from r3
-- AP-SCAN: 6 (ap-001 through ap-005 carried from r3; ap-006 NEW: feel:10 AP6 comparison/simile violation introduced by Phase E revision)
-- TASTE-FLAG: 5 (taste-001 through taste-004 carried from r3; taste-005 NEW: feel:10 voice-fidelity/atmosphere-thin introduced by Phase E revision)
-- PILE-UP REVIEW: 7 warranted / 0 over-decoration — unchanged from r3
-
----
-
-## Cross-character cleanliness verification (mechanical scan result)
-
-Mechanical scan of all 12 feeling entries against three Phase E claims:
-
-**Breath-as-duration zero:**
-- feel:1: "the breath leaves before the foot lands" — breath-as-deploy-trigger per card §Non-verbal tics ("The breath out before the swarm goes"). Card-licensed action, not a duration-measurement unit.
-- Entries 2, 3, 4, 5, 6, 7, 9, 10, 11, 13, 14: zero breath tokens.
-- Verdict: **CONFIRMED ZERO for breath-as-duration usage.** feel:1's breath is card-licensed action-trigger, not duration-marker. Phase E claim verified.
-
-**Temporal-anchor formula ("before the X comes/lands/falls") zero:**
-- feel:1: "before the foot lands" — card-text licensed (ONE occurrence, retained by defense).
-- feel:13: "before the throat asks" — retained as internal-anticipation semantic slot (body running ahead of internal need), not cross-character external-event formula. Semantically distinct per tuning final.
-- All other 10 entries: zero "before the X" constructions.
-- Verdict: **CONFIRMED ZERO for the cross-character external-event formula.** Residual: feel:13's "before the throat asks" in internal-anticipation slot is semantically distinct; surface form echo with feel:1 noted in tuning final as ACCEPT-WITH-CAVEAT. Phase E claim verified with named residual.
-
-**Negative-continuity broken:**
-- feel:5 revised: "the spoon turns the corner of the pot and scrapes the rim once on the way around" — positive craft-action. CLEAN.
-- feel:6 revised: "the fingers gather the strand against the next strand and lay them flat; the thumb tips the tie under and turns it tight at the nape" — all positive. CLEAN.
-- feel:7 revised: "the heel of the hand sets where the small bone runs at the top of the shoulder; the fingers find the seam of the smock and rest along it" — positive. CLEAN.
-- feel:14 revised: "the spoon stops a finger clear of the mordant rim and the blue at her knuckle stands out against the iron of the pot" — positive (with tuning-final noted form-discipline caveat on "stands out").
-- Verdict: **CONFIRMED BROKEN.** Mother's set contains zero negative-continuity tells post-revision. Taylor's feel:4 ("does not lift to meet it") and father's feel:11 ("does not lift at once") are both card-licensed in distinct semantic slots (refusal-of-casual-touch and artisan-finality respectively) — neither is the registration-by-non-disruption pattern. Phase E claim verified.
+- Total entries reviewed: 205 facet entries across 9 facet files (102 tensometer + 8 loc-state + 27 NI [updated from 24] + 5 sensory + 22 state-updates + 8 memory + 12 feeling + 0 metaphor + 21 vibes; consistent with cite-index totals post-NI-update)
+- STRUCTURAL: 0
+- FREQUENCY-BAND: 2 signal findings (rung-3 breach-low 2.0%; rung-1 breach-high 77.5%). New soft signal: NI density at 26.5%, marginally above 25% upper band (monitoring note only).
+- METADATA-INCONSISTENCY: 2 (meta-001 carried: memory.md stale quiet-beat claim; meta-002 new: interest-narrator.md narrator:27 channel-mislabel)
+- CURVE-SHAPE: **SHAPE-FAIL** — 6 of 8 scenes lack rung-3 with no dramatist exception; 1→3 direct jump at @83 — unchanged from r3/r4
+- CONTRADICTION: 0
+- DEDUP: 0 active (narrator:25 / mem:8 surface echo resolved by narrator:25 revision)
+- SUPERFLUOUS: 0
+- CONSTRAINT: 2 soft flags active (flag-003, flag-004 carried; flag-005 retired)
+- AP-SCAN: 3 active (ap-001, ap-004, ap-005 carried; ap-002, ap-003, ap-006 CLEARED)
+- TASTE-FLAG: 3 active (taste-001 carried; taste-004 scope-reduced and carried; taste-006 new; taste-002, taste-003 CLEARED)
+- PILE-UP REVIEW: 7 warranted / 0 over-decoration
 
 ---
 
 ## Routing
 
-**ap-006 + taste-005** (feel:10 comparison violation): oc-craftsman-father impersonator (URI-008) — targeted brief: revise first clause of feel:10 to remove comparison operator while preserving dyer-with-accounts register and body-as-subject discipline; second clause "the eyes mark the loft once and come back to her" retained unchanged. Rubric §Form discipline check (blind re-test per URI-007 process-protocol item 9) before round close.
+**freq-001, freq-002** (tensometer rung distribution): dramatist — URI-002 upstream protoline scene-peak coverage gap. And-wrap curve-shape review. Unchanged from r3/r4.
 
-**meta-002** (feeling.md father-section r2_to_r3 round-note): oc-craftsman-father impersonator — at same dispatch as feel:10 revision, update the r2_to_r3 forbidden-vocabulary claim in the father section to reflect that Phase E introduced a comparison violation into feel:10 and that Phase F adjudicated REJECT.
+**meta-001** (memory.md r2_to_r3 stale claim): taylor-hebert-jaehaerys impersonator — correct the r2_to_r3 quiet-beat aggregate claim. Unchanged from r3/r4.
 
-**meta-001** (memory.md r2_to_r3 stale claim): taylor-hebert-jaehaerys impersonator (memory author) — correct the r2_to_r3 quiet-beat claim at next file-touch to reflect the Phase 4 episode-arc release-zone argument for mem:8. Minimal edit. Unchanged from r3 routing.
+**meta-002** (interest-narrator.md narrator:27 channel-mislabel): taylor-hebert-jaehaerys impersonator (NI author) — update r2_tuning_defense header to accurately record narrator:27 as age-mismatch + body-memory channel; document that mask-thinning is absent in this episode due to Septon Aldric absence and is not a file-level failure; remove the claim that narrator:27 closes the mask-thinning coverage gap.
 
-**freq-001, freq-002** (tensometer rung distribution): dramatist — root cause is URI-002 protoline scene-peak coverage gap. Routing is to and-wrap curve-shape review; distribution shifts if curve is corrected. Unchanged from r3 routing.
+**ap-001** (tens:29 AP5): dramatist re-rating. URI-005.
 
-**flag-003** (mem:2 approach-zone): taylor-hebert-jaehaerys impersonator (memory author) at and-wrap — rubric carry-back #1 (URI-001) is the structural resolution path. Unchanged from r3 routing.
+**ap-004** (vibes:7 AP8): showrunner. URI-005.
 
-**ap-001 through ap-005** (AP candidates carried from r3): unchanged routing — tens AP5 → dramatist; NI AP7/voice → taylor-hebert-jaehaerys impersonator; vibes AP8 → showrunner; memory AP14 → taylor-hebert-jaehaerys impersonator + margit. (URI-005, URI-003.)
+**ap-005** (memory AP14): taylor-hebert-jaehaerys impersonator + margit. URI-003.
 
-**taste-001 through taste-004** (TASTE-FLAG carried from r3): tuning input for next audience-tuning pass. No immediate author action required at flag-only mode. Unchanged from r3 routing.
+**taste-001** (mem:4 voice-fidelity): editor at and-wrap. Advisory.
 
-**taste-005** (feel:10 atmosphere-thin/voice-fidelity): co-routed with ap-006 to oc-craftsman-father impersonator (URI-008). No additional action required beyond the URI-008 revision dispatch.
+**taste-004** (narrator:1/2 back-to-back stasis residual, scope-reduced): stitcher-layer awareness note at and-wrap. No author action required unless stitcher render output shows the double-stasis as a reader-facing flaw.
 
-**CURVE-SHAPE SHAPE-FAIL**: dramatist — as flagged in the tensometer file's own header comment (URI-002). Screen-writer kickback is the rubric's prescribed path for scenes without beats that support rung-3 peaks; alternatively, dramatist argues scene-as-respite / scene-as-transit exceptions for Scenes 1, 2, 3, 4, 7, 8 in the tensometer file.
+**taste-006** (narrator:18 mask-adjacent register): advisory for next NI tuning pass if one occurs; does not block ship. Signal-only.
+
+**CURVE-SHAPE SHAPE-FAIL**: dramatist — URI-002; screen-writer kickback path or scene-as-transit exception argument for Scenes 1, 2, 3, 4, 7, 8.
+
+---
+
+## Cumulative state assessment
+
+**SHIPPABLE-WITH-CAVEATS.**
+
+The facet graph as of audit-r5 has:
+- 0 hard findings (the trajectory has been clean at 0 hard since audit-r2)
+- 10 signal findings (all soft flags, carry-forward monitoring notes, or audit-at-wrap items)
+- 0 unresolved mechanical violations in any facet file content
+- feel:10 AP6 comparison violation: CLEARED (URI-008 second revision confirmed clean)
+- NI tuning: 27/27 PASS in Phase F (21 clean ACCEPT + 6 ACCEPT-WITH-CAVEAT + 0 REJECT)
+- The 6 caveated entries in the NI file are documented residuals with named failure modes, not mechanical violations; all pass the 3-persona threshold
+- The two persistent structural issues (CURVE-SHAPE SHAPE-FAIL + FREQUENCY-BAND breach) both trace to URI-002 (upstream scene-peak coverage gap) and are pre-facet-layer concerns; they are and-wrap items, not facet-layer blockers
+
+The metadata inconsistencies (meta-001, meta-002) require small round-note corrections at next file-touch; neither affects facet content correctness or stitcher output.
+
+The and-wrap items (freq-001/002, CURVE-SHAPE) require dramatist review of the tensometer curve before final manuscript production, but do not prevent the facet graph from being used in stitching.
 
 ---
 
@@ -248,12 +307,8 @@ Mechanical scan of all 12 feeling entries against three Phase E claims:
 
 This audit ran in flag-only mode per Step G design. No deletes executed. All findings are advisory.
 
-The 0 hard findings in r4 represent the strongest structural state the graph has reached across four passes. The audit-r3 HARD finding (struct-001, feeling.md ID non-monotonicity) is downgraded to per-section-convention-acceptable per URI-004, which requires a small command-file edit to `and-facets-audit.md` to codify the per-section convention for sub-sectioned facets.
+Audit-r5 is the first audit at which all four prior AP-SCAN findings tied to specific tuning actions (ap-002, ap-003, ap-006, and their companion taste findings) confirm as resolved. The hard-finding count has been 0 since audit-r2 across three 11-class passes. The signal count has reduced from 12 (r4) to 10 (r5), a net −2 across the NI tuning + URI-008 fix round.
 
-**AP-SCAN performance on feel:10:** AP-SCAN caught the feel:10 comparison violation independently via AP6 (anti-pattern 14 in the rubric catalog: "Simile / comparison — hard refuse"). The finding matches the Phase F REJECT verdict. The detection path is: rubric §Form discipline hard-ban on comparison constructions → "the way an estimate gets one" parses as comparison operator → AP6 violation. TASTE-FLAG independently flagged the same entry under voice-fidelity/atmosphere-thin (the register mismatch, independent of the mechanical form violation). Both detection paths converge on the same entry.
+The NI tuning cycle (24→27 entries, 10 DEFEND / 14 REVISE / 0 WITHDRAW / 3 ADD) is confirmed successful by this audit: the four audit-r4 NI findings cleared, the mask-too-perfect file-level failure addressed (foreknowledge-clamp + refusal-to-look-directly now present), and no new hard violations introduced. The one new metadata finding (meta-002, narrator:27 channel-mislabel) was independently surfaced by this audit, matching Phase F's own ACCEPT-WITH-CAVEAT flag on the same entry.
 
-The feeling tuning is confirmed as a near-clean pass (11/12 ACCEPT or ACCEPT-WITH-CAVEAT per Phase F) with one remaining entry (feel:10) requiring a second revision. That single revision is the only blocking action in the feeling facet before ship. The three cross-character cleanliness claims (breath-as-duration zero, temporal-anchor formula zero, negative-continuity broken) are mechanically verified by this audit.
-
-The FREQUENCY-BAND breach (freq-001: rung-3 at 2.0%) and CURVE-SHAPE SHAPE-FAIL remain the primary and-wrap attention items. Both trace to URI-002 (upstream protoline scene-peak coverage gap). The distribution is stable and the root cause is pre-facet.
-
-URI-007 (feeling rubric V2.1 carry-back: 9 audience-confirmed rubric gaps) is queued. Once URI-007 lands, AP-SCAN will be able to catch the following patterns mechanically: cross-character same-strategy saturation, within-character formula-repetition, lonely-entry Q2-stand-alone failure, body-as-subject discipline, and card-licensed-vs-saturation semantic-slot distinction. The current audit catches them only via TASTE-FLAG; graduation to AP-SCAN is pending rubric edit.
+URI-007 (feeling rubric V2.1 carry-back: 9 audience-confirmed rubric gaps) queued. URI-001 (dramatist-locked scene-frame for zone-class verification) remains the structural path for flag-003 and flag-004.
