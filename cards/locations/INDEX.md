@@ -9,6 +9,7 @@ All location cards. Maintained by margit — update on every card store or new a
 planetos:
   - forest-clearing-dusk
   - kings-landing-exterior
+  - loc-blue-fork-river-road
   - loc-craftsman-workshop-home
   - loc-harrenhal-exterior
   - loc-harrenhal-sept-environs
@@ -30,6 +31,7 @@ planetos:
 full:
   - forest-clearing-dusk
   - kings-landing-exterior
+  - loc-blue-fork-river-road
   - loc-craftsman-workshop-home
   - loc-harrenhal-exterior
   - loc-harrenhal-sept-environs

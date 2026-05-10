@@ -296,3 +296,46 @@ All 11 authored/adjusted cards checked against `schemas/card.schema.md` before s
 ## Deferred cards
 
 None. All 7 priority cards and all 4 useful-addition cards were authored within scope. No deferral required.
+
+---
+
+## S02 Phase 3 Readiness — Card Provisioning
+## Date: 2026-05-10
+
+---
+
+## Cards authored (new, this provisioning)
+
+### Location cards
+
+1. **loc-blue-fork-river-road** — NEW, full quality
+   - Library path: `/home/user/and-shoot/cards/locations/loc-blue-fork-river-road.card.md`
+   - Warehouse path: `/home/user/and-shoot/active-project/warehouse/loc-blue-fork-river-road.card.md`
+   - Covers: Blue Fork tributary road network east of Fairstead; B2 (Taylor coalition expansion, wool factor's cot, millward's wife, tributary hamlets) and B4 (Rymer courier route, garrison waypost, Pryor monitoring perimeter, insect-grid extended ceiling)
+   - Sub-locations: wool factor's cot, north branch fork (lightning-struck oak), millward's house, tributary hamlets (east), garrison waypost, secondary ford and plank-bridge crossings
+   - Conditions active: cond-suppression-policy-progression (patterned-response stage), cond-feudal-hierarchy-law, cond-smallfolk-political-physics
+   - Relationship to loc-river-ferry-dock: ferry dock is western throat of the road network; complementary surveillance surfaces (Tomm Weyl / Pryor channel vs Taylor insect grid)
+   - Relationship to loc-river-market-town: Fairstead is base and return; Pryor's road monitoring is extension of Fairstead monitoring at different scale
+
+### Persona cards
+
+2. **oc-tributary-village-newcomer** — NEW, scant quality, tier: minor (walk-on)
+   - Library path: `/home/user/and-shoot/cards/personas/oc-tributary-village-newcomer.card.md`
+   - Warehouse path: `/home/user/and-shoot/active-project/warehouse/oc-tributary-village-newcomer.card.md`
+   - Covers: B6 close (bones ~1054–1091); young woman from tributary village arriving at sept post-Mira-dissolution; carries Faith chapter-house introduction letter to Septon Rowan
+   - Identity deliberately deferred: purpose (Faith literacy-extension / Pryor-adjacent monitoring plant / coincidence) is S3-resolved
+   - Walk-on card: scant by design per S2 plan §G instruction; no full persona depth assigned
+
+---
+
+## Index updates (2026-05-10)
+
+- `cards/locations/INDEX.md` — added loc-blue-fork-river-road to by_world (planetos) and by_quality (full)
+- `cards/personas/INDEX.md` — added oc-tributary-village-newcomer to by_world (planetos), by_quality (scant), by_trope (riverlands-background), original_characters
+
+---
+
+## Validation notes (S02 Phase 3)
+
+- loc-blue-fork-river-road: all required location sections present (Geography, Layout, Sensory Vocabulary, Fixed Props, Exits, Hazards, Ambient Interruption Hooks); frontmatter complete; no class violations
+- oc-tributary-village-newcomer: scant walk-on shape; required sections present (Description, Voice, Taste, Pet Peeves, Stats, Relationships, Fiction Role Overlay); quality: scant is appropriate for walk-on per schema; tier: minor (haiku model) consistent with walk-on function; no class violations
