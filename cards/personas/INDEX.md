@@ -51,6 +51,7 @@ planetos:
   - oc-girl-from-hamlet
   - oc-lords-steward
   - oc-plumms-man
+  - oc-tributary-village-newcomer
   - peasant-woman-forest
   - plumms-man
   - rhaenyra-targaryen
@@ -126,6 +127,7 @@ full:
 scant:
   - oc-girl-from-hamlet
   - oc-plumms-man
+  - oc-tributary-village-newcomer
   - peasant-woman-forest
   - victoria-dallon
   - viserys-i-targaryen
@@ -148,7 +150,7 @@ noise-and-terror: [shatterbird, night-and-fog]
 political-power: [thomas-calvert]
 westerosi-local: [peasant-woman-forest, westerosi-traveling-maester, mira-stonefield, mira-stonefield-jaehaerys, edric-cray, rymer-hedge, ser-aemon-bracken, ser-edwyn-celtigar, septon-rowan, oc-castellan-harrenhal, septon-dying-protector, oc-craftsman-mother, oc-craftsman-father]
 administrative-functionary: [census-officer, oc-census-officer, clerk, plumms-man, oc-plumms-man]
-riverlands-background: [peasant-woman-forest, oc-girl-from-hamlet]
+riverlands-background: [peasant-woman-forest, oc-girl-from-hamlet, oc-tributary-village-newcomer]
 brutal-pragmatist: [lem-lemoncloak]
 dying-cause: [beric-dondarrion]
 faith-recovered: [thoros-of-myr]
@@ -191,3 +193,4 @@ OC slots for margit to construct at project activation when a generic role is se
 - oc-census-officer (oc-* slug alias for census-officer; warehouse walk-on; variant-of: census-officer; authored 2026-05-07 for chapter-01 Pass 5 continuity resolution)
 - oc-plumms-man (chapter-02 field-retainer/scribe walk-on; scant; variant-of: plumms-man; authored 2026-05-07 for chapter-02 dependencies)
 - oc-girl-from-hamlet (chapter-02 Riverlands hamlet child; procedural extra; scant; authored 2026-05-07 for chapter-02 dependencies)
+- oc-tributary-village-newcomer (s02 B6-close walk-on; tributary-village woman arriving at sept post-Mira-dissolution; scant; deferred-identity; authored 2026-05-10 for s02 Phase 3 readiness)
