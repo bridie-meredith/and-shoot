@@ -2,6 +2,7 @@
 phase: C — arbiter protocol
 project: R2 hybrid judge tuning
 date: 2026-05-10
+revision: v2 (2026-05-10) — reduced from six triggers to two (T1, T4); the four dropped triggers are deferred until B2a/B4 evidence supports them. Plan B B3.4 carry-back.
 status: ACTIVE — applies during Phases D (audience attack), E (R2 self-review), F (validation re-run)
 parent: design/shoot-v2/r2-judge-tuning/B-locked-rubric.md
 ---
@@ -31,31 +32,28 @@ Mechanical pattern-matching:
 
 ## Arbiter intervention triggers
 
-The arbiter intervenes when a reviewer (R2 layer author or audience persona) produces a verdict that:
+**v2 reduction.** The original six-trigger set was authored ahead of evidence. Plan B B3.4 reduces the live set to **T1 and T4 only** — the two triggers the memory + feeling tuning corpus directly motivates. T2, T3, T5, T6 are documented below as deferred; they re-activate when B2a / B4 / next-corpus evidence shows them firing usefully.
 
-### Trigger T1 — Rubric-label-heavy, entry-specific-light
+The arbiter intervenes when a reviewer (R2 layer author) produces a verdict that:
 
-Verdict justification consists primarily of rubric citations (AP labels, Q gates, named anti-patterns) without naming concrete content from the entry. **Intervention:** the arbiter responds to the reviewer with a clarifying request: *"What specifically in this entry produced that verdict? Quote the phrase or describe the construction in your own words."*
+### Trigger T1 — Rubric-label-heavy, entry-specific-light  [ACTIVE]
 
-### Trigger T2 — Pattern-flag without remediation
+Verdict justification consists primarily of rubric citations (AP labels, Q gates, named anti-patterns) without naming concrete content from the entry. **Intervention:** the arbiter re-dispatches the layer author with a clarifying brief: *"What specifically in this entry produced that verdict? Quote the phrase or describe the construction in your own words."* The re-dispatch is one fresh fork; the fork rewrites the verdict's justification only.
 
-Reviewer flags a pattern (cross-character same-strategy, formula-repetition) by counting instances against a threshold, without saying what should change. **Intervention:** *"You named the pattern. What would you do about it? Which instances would you cut, revise, or keep, and on what grounds?"*
-
-### Trigger T3 — Verdict that could have been written without reading the entry
-
-If the reviewer's justification could plausibly be produced by reading only the rubric and the entry's metadata (facet, anchor, ID), without reading the entry's content — the verdict is mechanical. **Intervention:** *"Tell me what the entry says, in your own words, before telling me whether it works."*
-
-### Trigger T4 — Niche-driven add justification
+### Trigger T4 — Niche-driven add justification  [ACTIVE]
 
 R2-add justification works backward from "the graph reveals a niche" rather than forward from "the at-rest reading wants this entry." **Intervention:** *"Set aside the cite-index for a moment. Read the proto-line. Does it want this entry? Why?"*
 
-### Trigger T5 — Adjacent-context dependency
+### Triggers deferred (T2, T3, T5, T6)  [DEFERRED]
 
-Verdict on a lonely entry that, when articulated, only makes sense if the next or prior proto-line is present. **Intervention:** *"Cover the surrounding proto-lines. Does your verdict still hold? Restate it without referring to what comes next."*
+These triggers were authored as a complete taxonomy of mechanical-verdict shapes but are not enabled in the v2 protocol. Re-activation criteria:
 
-### Trigger T6 — Defense by recitation
+- **T2 — Pattern-flag without remediation.** Re-activate when end-of-layer pattern-scan paragraphs (per `B-locked-rubric.md` § Decision-log discipline) repeatedly name a pattern without saying what would change. Single-instance evidence is not sufficient; B2a / B4 audience adjudication should show the pattern flag failing audience taste before the trigger is enabled.
+- **T3 — Verdict that could have been written without reading the entry.** Re-activate when arbiter sampling shows verdicts whose justifications match an arbitrary entry's metadata. Currently subsumed by T1 in practice — a verdict that doesn't name the entry's content is by construction one that could have been written without reading. Re-emerge T3 if T1's rewrite produces verdicts that pass T1 but fail entry-content-reading on independent check.
+- **T5 — Adjacent-context dependency.** Re-activate when the §Form re-test on adds (per `and-facets-r2.md` per-layer instruction) is shown to miss adjacent-context leaning that B2a / B4 audience surfaces.
+- **T6 — Defense by recitation.** Specific to a Phase-D audience-seam-then-R2-defense workflow that is not in the current Plan B execution path. Re-activate when an R2 defense workflow re-emerges.
 
-When R2 receives a Phase-D audience seam and produces a defense that recites the rubric license rather than answering the seam's actual concern. **Intervention:** *"The seam isn't asking whether the rubric licenses the entry. It's asking whether the entry earns its license. Answer the seam, not the rubric."*
+The deferral is not a claim that the triggers are wrong; it is a claim that the evidence for firing them is not yet in. Adding triggers without evidence is the same failure mode the locked rubric is correcting at the reviewer level — checklist creep over taste judgment.
 
 ## Arbiter discipline (limits on the arbiter)
 
@@ -109,7 +107,7 @@ This protocol is written for the **main session** as arbiter — the model in th
 
 This means the arbiter's work happens in **between** subagent dispatches, not inside them. The subagent doesn't know it's being arbited — it receives a fresh prompt with the intervention question in the brief and responds. The decision log accumulates across dispatches.
 
-Subagent budget implication: each intervention is +1 dispatch. With T1–T6 triggers calibrated to fire on ~20–30% of verdicts (estimate from memory + feeling tuning), expect total dispatch count to inflate by 20–30% over the un-arbited budget. This is real cost and is acknowledged in the runtime budget for Phase F validation.
+Subagent budget implication: each intervention is +1 dispatch. With T1 + T4 (the v2 active set) calibrated to fire on ~10–15% of verdicts (estimate is half the original T1–T6 estimate, since the dropped triggers covered the heavier-fire surfaces), expect total dispatch count to inflate by 10–15% over the un-arbited budget. This is real cost and is acknowledged in the runtime budget for Phase F validation. If B2a / B4 evidence shows T1 alone misses what T2/T3/T5/T6 would catch, the deferred triggers re-activate and the budget recalibrates upward.
 
 ## Success criteria
 
