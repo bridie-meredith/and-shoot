@@ -285,6 +285,28 @@ Categories:
 - **Linkage:** also caught by audit-r4 (TASTE-FLAG / AP-SCAN AP6) once that runs. Either path works.
 - **Note:** filed as URI-008 in the /and-facets session branch; renumbered to URI-024 on merge to avoid collision with /and-season URI-008.
 
+### URI-025 — Shared facet-review mechanism across /and-season and /and-facets
+
+- **Category:** Systemic (cross-pipeline architecture).
+- **Source:** User direction 2026-05-10. Framing: "carry the same review mechanism across both pipelines." Aligned with URI-002 (SHAPE-FAIL caught only at facet stage when it originated upstream) and URI-018/019/020 (season-aware auditor classes that overlap the existing facet-auditor's vocabulary).
+- **Issue:** /and-facets has a tuned cross-cutting auditor (CURVE-SHAPE, FREQUENCY-BAND, AP-SCAN, STRUCTURAL, CONSTRAINT) running on the per-episode facet graph. /and-season has its own S1–S9 review passes plus the orchestrator-critic at Phase 6, but no facet-shape verdict on the aggregate before split or on per-episode SVOs after split. Same shape-class failures get caught downstream where the fix is more expensive (re-author protolines + re-run facets) than upstream (regenerate bones).
+- **Action:** factor the facet review stack into a **shared review module** invoked at three points:
+  1. **/and-season Pass S9.5 (new)** — between S9 and Phase 4 split. Aggregate-scope subset: tensometer + sensory + state-updates + facet-auditor (CURVE-SHAPE + AP-SCAN classes only — STRUCTURAL/CONSTRAINT need character-perception facets that don't exist yet at this stage). Catches URI-002-class shape failures at the bone level before episode boundaries lock them in.
+  2. **/and-season Phase 5.5 (new)** — after Phase 4 split, before Phase 6 verdict. Per-episode /and-facets pass, but **only on episodes the S9.5 auditor flagged**. Default: skip; opt-in by flag or by S9.5 finding.
+  3. **/and-facets (existing)** — unchanged. The shared module is what /and-facets already calls; /and-season just calls into the same surface.
+- **Carry-the-mechanism principle:** the auditor rubric, the tensometer rubric, the sensory rubric, the AP-SCAN class definitions are authored once and consumed from both pipelines. No fork. URI-018/019/020 sub-classes land in the shared auditor and immediately benefit /and-facets too.
+- **Cost implication (load-bearing):** /and-facets-r1+r2+audit is ~25–30 dispatches per episode. Naive insertion (full pass at S9.5 + full per-episode at 5.5 ×6 episodes) breaks the orchestrator-critic's 60-dispatch hard cap. Mitigations: (a) S9.5 runs a **reduced facet set** (3 facets, not 9); (b) Phase 5.5 is **flag-driven**, not by-default; (c) Phase 6 verdict folds S9.5/5.5 findings into Convergence + Quality categories. Threshold recalibration on the orchestrator-critic card may be needed; that's empirical-runway work the card already permits.
+- **Phased rollout (recommended):**
+  - **Phase 1 (now, cheap):** wire tensometer + facet-auditor (CURVE-SHAPE + AP-SCAN classes only) into /and-season as Pass S9.5. ~12 dispatches. Catches URI-002-class failures upstream.
+  - **Phase 2 (after URI-006 auditor tuning lands):** promote S9.5 auditor to delete-authoritative; add URI-018/019/020 sub-classes which are exactly the season-aware auditor checks this URI is reaching for.
+  - **Phase 3 (after Phase 1+2 produce verdict-discipline data):** add Phase 5.5 per-episode /and-facets pass, flag-driven. Recalibrate orchestrator-critic dispatch budget against measured per-run costs.
+- **Design sketch:** `design/shoot-v2/shared-review-mechanism.md` (authored 2026-05-10).
+- **Dependencies:**
+  - URI-002 — its resolution validates that S9.5 catches what facet-stage caught after the fact.
+  - URI-006 — Phase 2 requires the tuned auditor.
+  - URI-018, URI-019, URI-020 — sub-classes that land *into* the shared auditor as part of Phase 2.
+  - Orchestrator-critic card — Phase 6 verdict template extends to include S9.5/5.5 findings.
+
 ---
 
 ## How items leave the queue
