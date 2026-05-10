@@ -142,18 +142,23 @@ active:
   episode: s01e01
 
 tuning_r1_status:
-  phase: E-complete
+  phase: E-r2-complete
   date: 2026-05-10
-  decisions_file: design/shoot-v2/and-season-tuning-r1/E-defense.md
-  defend: 4
-  revise: 12
+  decisions_file: design/shoot-v2/and-season-tuning-r1/E-r2-defense.md
+  prior_decisions_file: design/shoot-v2/and-season-tuning-r1/E-defense.md
+  defend: 2
+  revise: 15
   withdraw: 0
-  defend_with_carry_back: 1
+  defend_with_carry_back: 0
+  auditor_findings_addressed: 5 HARD (fault-001 escalated to human, fault-002 covered by U12, fault-004 U16 amended with Taylor-POV bisection check, fault-005 held for Phase H ruling, fault-AP-1 covered by U17 re-defense REVISE)
   pending_subtasks:
-    dramatist: boundary-rebalance for U3/U13 (e02/e03 cut near 207), U14 (e03/e04 cut to 370 with e04 over-band resolution), U16 (e05/e06 cut to ~692 with e06 over-band + POV-marker check)
-    screen_writer: bone additions/revisions for U6, U7, U9, U10, U11
+    dramatist: boundary-rebalance for U3/U13 (e02/e03 cut near 207), U14 (e03/e04 cut to 370 with e04 over-band resolution), U16 (e05/e06 — amended: must verify cut does not bisect Taylor-POV stretch 645-699 OR Elara-POV stretch 700+; provisional 692 target may be non-compliant; dramatist must map marker positions and recommend compliant cut or confirm only 699 is valid)
+    screen_writer: bone additions/revisions for U1 (3 bones at post-IGNITION ratchet-clicks 496-499, 530-545, 800-820), U2 (2-3 bones at e01 episode lines 10-30), U6, U7, U9, U10, U11, U17 (targeted pass on 20 named instances: 35, 277, 293, 332, 349, 386, 390, 417, 427, 440, 502, 518, 560, 583, 629, 642, 699, 789, 799, 907; coordinate line 699 with U11)
     showrunner_self: aggregate_range header updates for e01 (1-148), and pending boundary-rebalance outcomes for e02/e03/e04/e05/e06
+    human_escalation: fault-001 aggregate non-monotonic IDs — schema clarification needed (legal-deletion-gap survivors vs reordering artifacts); review pass-2/pass-3 reorder history
   carry_back_queue:
-    - U17 idiom-depletion rubric formalization (Phase H)
+    - U17 idiom-depletion rubric formalization — V2 quantified mechanic (10+-instance / 25%-contextual-differentiator criterion); Phase H
     - U1 denouement-share quantification (Phase H)
-    - Gap-8 narrator-field anomaly rubric clarification (Phase H)
+    - Gap-8 narrator-field anomaly rubric clarification — e06 only (e05 confirmed compliant per signal-006 correction); Phase H ruling required before e06 fix applies
+    - fault-001 aggregate non-monotonic IDs — schema clarification needed; new entry; human escalation pending
+    - fault-005 narrator-field rubric — Phase H decision required before e06 per-episode file and memory.md narrator field can be corrected
