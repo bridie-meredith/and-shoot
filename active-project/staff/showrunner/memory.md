@@ -4,7 +4,8 @@ routing:
   show_file: active-project/theater/show.md
   episode_plan: active-project/theater/episode-plan.md
   series_plan: active-project/staff/showrunner/series-plan.md
-  season_plan: active-project/staff/showrunner/season-s01-plan.md
+  season_plan: active-project/staff/showrunner/season-s02-plan.md
+  season_plan_s01: active-project/staff/showrunner/season-s01-plan.md
 
 series:
   theme: "What it costs to build something in a world that does not have a word for what you are building — and what gets charged to people who never agreed to pay."
@@ -154,9 +155,65 @@ seasons:
         - active-project/staff/showrunner/escalation-pass2-cap-decision.md
         - active-project/staff/showrunner/escalation-s6-vibe-drift-carry-forward.md
     next_season_sketch: "The steward's quarterly monitoring report names Mira's market-day gatherings as the new perimeter, and the lord's apparatus shifts from incident-response to patterned-response as Taylor's coalition expands past the family she can individually shield; the suppression apparatus gains institutional vocabulary for what it is watching, while Taylor's Shard-weighted instinct to escalate rather than withdraw pulls her into confrontations that cost the coalition members she cannot protect from the institutional record."
+    terminal_handoff:
+      to_season: s02
+      handoff_date: 2026-05-10
+      apparatus_tier_at_close: networked-surveillance (maester visited Fairstead, traced literacy register, made notation on Taylor, crossed ferry with folio)
+      apparatus_tier_at_s02_open: networked-surveillance entering patterned-response (Pryor's quarterly cycle established as recurring institutional rhythm)
+      open_threads:
+        - mira_recruitment: tacit; debt unnamed; Mira withheld from Pryor in S1 inquiry (s01e05); not yet a coalition
+        - rowan_pastoral_claim: active; literacy-access continuing under pastoral framing; not Taylor's to refuse; S2 deepens, S3 fracture-point
+        - clem_ferris_noticing: live but unprocessed; Taylor carries variable she cannot fully model; ages parallel to Taylor in S2
+        - rymer_hedge_witness: saw Taylor watching ignition without acting; S2 elevates to ground-level recurrent presence
+        - family_in_concert: closed (S1 e06); Elara-Edwyn-Rowan triangle active; manage-parents-as-separate-vectors pattern terminated
+      vibe_deltas_to_s02:
+        - foregrounded: pryor-as-author-of-vocabulary, quarterly-monitoring-rhythm, coalition-discovers-the-withholding, adolescent-body-ceiling, blue-fork-road-as-perimeter, late-s2-dissolution
+        - shifted: intimate-cost (S1 primary) → coalition-cost (S2 primary); the-steward register sharpens to pryor-as-author-of-vocabulary
+        - attenuated: family-as-vector becomes continuous low-grade presence rather than primary driver
+      named_terminal_image: Taylor in the loft, swarm-sense tracking sept fly + dock mosquito + ferry folio crossing the water; Elara calls; Taylor presses the loft floor
+
+  - slug: s02
+    window: "~88-94 AC"
+    status: active
+    plan: active-project/staff/showrunner/season-s02-plan.md
+    plan_log: active-project/staff/showrunner/season-s02-plan-log.md
+    chunk: "The steward's quarterly monitoring cycle converts Mira's market-day gatherings from a social nuisance into a named target on Pryor's institutional perimeter — and Taylor's counter-response is to build depth and geographic breadth before the patterned-response apparatus finishes naming what it is watching. The arc turns on a single structural liability: the Shard's weight toward escalation and the coalition's expanding exposure travel in the same direction at the same time, and the people Taylor recruited to trust her are sitting inside that convergence without knowing the shape of what she withholds from them. By season close, Mira publicly dissolves her market-day gatherings under the monitoring record's direct institutional pressure — the relationship does not break, but the structure Taylor built around Mira does not survive, and what remains is smaller and harder to rebuild."
+    plan_iteration_history:
+      - iteration_1: dark-fantasy-reader ACCEPT; pulp-enthusiast REVISE-B1-BORED-B6-HOOK-WEAK; worm-canon-pedant REVISE-B4-information-asymmetry-tracking-gap; dramatist ACCEPT
+      - iteration_2: ACCEPT all 3 personas + dramatist (with execution constraint at H section regarding coalition-discovers-the-withholding distribution to B6 Mira interlude)
+    episodes_planned:
+      - slug: s02e01-planned
+        beat: "Pryor's perimeter — dock sentry posted on report-day, new physical perimeter"
+        status: planned
+        narrator: taylor-hebert-jaehaerys
+      - slug: s02e02-planned
+        beat: "coalition expansion pressure — Blue Fork road expansion + Mira's gatherings named on Pryor's quarterly report"
+        status: planned
+        narrator: taylor-hebert-jaehaerys
+      - slug: s02e03-planned
+        beat: "body-clock event — adolescent ceiling shifts (~91 AC); season hinge"
+        status: planned
+        narrator: taylor-hebert-jaehaerys
+      - slug: s02e04-planned
+        beat: "garrison copy — Pryor sends acknowledgment-by-hand instruction; Rymer behavioral anomaly logged by Taylor's passive-sense"
+        status: planned
+        narrator: taylor-hebert-jaehaerys
+      - slug: s02e05-planned
+        beat: "confrontation — Pryor's directive to reeve about discouraging large gatherings; Taylor intervenes; season peak"
+        status: planned
+        narrator: taylor-hebert-jaehaerys
+      - slug: s02e06-planned
+        beat: "dissolution — Mira dissolves market-day gatherings; tributary-village newcomer arrives at sept; season close"
+        status: planned
+        narrator: mira-stonefield-jaehaerys
+        interlude: true
+    notes:
+      planned_episode_count: 6 (multiple of 3 ✓)
+      slug_provisional: "the planned slugs above are content anchors; final slugs decided at /and-season Phase 4 split"
+      next_session_action: "/and-season s02 — the heavy run with tens bone-gate first live-fire (URI-026)"
 
 active:
-  season: s01
+  season: s02
   episode: s01e01
 
 tuning_r1_status:
