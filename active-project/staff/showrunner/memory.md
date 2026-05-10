@@ -158,3 +158,80 @@ seasons:
 active:
   season: s01
   episode: s01e01
+
+tuning_r1_status:
+  phase: I-complete
+  date: 2026-05-10
+  decisions_file: design/shoot-v2/and-season-tuning-r1/E-r2-defense.md
+  prior_decisions_file: design/shoot-v2/and-season-tuning-r1/E-defense.md
+  user_verdicts_file: design/shoot-v2/and-season-tuning-r1/I-user-verdicts.md
+  defend: 2
+  revise: 15
+  withdraw: 0
+  defend_with_carry_back: 0
+  shippability: SHIPPABLE-PENDING-EXECUTION (no remaining human escalations)
+  auditor_findings_resolved: 5 HARD all closed (fault-001 RESOLVED by URI-010 Option A; fault-002 covered by U12; fault-004 U16 amended with Taylor-POV bisection check; fault-005 RESOLVED by URI-009 plan-designated-narrator verdict; fault-AP-1 covered by U17 REVISE)
+  pending_subtasks:
+    dramatist: boundary-rebalance for U3/U13 (e02/e03 cut near 207), U14 (e03/e04 cut to 370 with e04 over-band resolution), U16 (e05/e06 — amended: must verify cut does not bisect Taylor-POV stretch 645-699 OR Elara-POV stretch 700+; provisional 692 target may be non-compliant; dramatist must map marker positions and recommend compliant cut or confirm only 699 is valid)
+    screen_writer: bone additions/revisions for U1 (3 bones at post-IGNITION ratchet-clicks 496-499, 530-545, 800-820), U2 (2-3 bones at e01 episode lines 10-30), U6, U7, U9, U10, U11, U17 (targeted pass on 20 named instances: 35, 277, 293, 332, 349, 386, 390, 417, 427, 440, 502, 518, 560, 583, 629, 642, 699, 789, 799, 907; coordinate line 699 with U11)
+    showrunner_self: aggregate_range header updates for e01 (1-148), and pending boundary-rebalance outcomes for e02/e03/e04/e05/e06
+    human_escalation: none remaining
+  carry_back_queue:
+    - URI-007 idiom-depletion rubric formalization — V2 quantified mechanic (10+-instance / 25%-contextual-differentiator criterion)
+    - URI-008 denouement-share quantification (LATE-WEIGHT >40% candidate)
+    - URI-009 narrator-field rule — USER-VERDICT-RECEIVED (designate-at-plan-time wins); V2 rubric edit candidate to /and-season Phase 4 Step 3
+    - URI-010 aggregate non-monotonic IDs schema — USER-VERDICT-RECEIVED (Option A; legal survivors); V2 schema clarification + position-aware fixer-mapping note
+    - URI-011 episode-shape mechanics for Phase 4 Step 2 (3 sub-mechanics drafted)
+    - URI-012 post-split continuity pass S4.5 (new pass)
+    - URI-013 S3 vs S9 entertainment-density reconciliation (recommended Option A, explicit-different-purposes)
+    - URI-014 season-scope adversarial criteria per persona (per-card schema addition)
+    - URI-015 S6 vibe-drift resolution path (when carry-forward is permitted)
+    - URI-016 S8a/S8b split-verdict adjudication (restrictive-verdict-wins default)
+
+tuning_r2_status:
+  phase: D-complete
+  date: 2026-05-10
+  type: meta-tuning of review critics
+  trigger: user direction — "antagonistic feedback based on tighter audience rather than formulaic scoring; tune our review critics within the process itself"
+  hypotheses_predicted: 4
+  hypotheses_confirmed: 4
+  sleepers_surfaced: 4 (U5 dark-fantasy SHAPE-COHERENT, U3 worm cost-inversion, U4 pulp fishwife misdirection, U2 worm apprentice-mark register failure)
+  r1_accepts_flipped: 1 (U5 from F ACCEPT-WITH-CAVEAT to STRONG)
+  auditor_classes_needing_refinement: 3 of 11 (CURVE-SHAPE, CONSTRAINT, AP-SCAN)
+  auditor_classes_correctly_calibrated: 6 of 11 (STRUCTURAL, METADATA-INCONSISTENCY, DEDUP, FREQUENCY-BAND, PILE-UP, CONTRADICTION, TASTE-FLAG)
+  carry_back_queue:
+    - URI-017 persona-card Threshold Discipline section (audience-role schema)
+    - URI-018 auditor sub-class CURVE-SHAPE-EPISODE-INTERIOR (depends on URI-011)
+    - URI-019 auditor sub-classes CONSTRAINT-BEHAVIOR-SEQUENCE + CONSTRAINT-RESPONSE-BONE-REQUIRED (depends on URI-003 card additions)
+    - URI-020 auditor sub-class AP-SCAN-POST-PEAK-WINDOW-QUALITY (depends on URI-018)
+    - URI-021 meta-tuning loop pattern documentation
+  total_v2_carry_backs_r1_plus_r2: 15 (URI-007 through URI-021)
+  no_corpus_mutations: true (R2 produces critic improvements only; R1 routed subtasks still apply)
+
+pipeline_landing_status:
+  date: 2026-05-10
+  landed_items: 11 of 15 V2 carry-backs (URI-007 through URI-017)
+  landed_files:
+    - .claude/commands/and-season.md (URI-007 idiom-depletion S3.5; URI-008 denouement-share LATE-WEIGHT in S2; URI-009 plan-designated narrator in Phase 4 Step 3; URI-010 position-aware-mapping note in Phase 4 Step 3; URI-011 mechanic-bearing OPEN-ENGAGES/CLOSE-EARNS-NEXT/SHAPE-COHERENT in Phase 4 Step 2; URI-012 new Pass S4.5 post-split-continuity; URI-013 S3-vs-S9 different-purposes note; URI-015 S6 drift-resolution routing; URI-016 S8 split-verdict adjudication)
+    - schemas/card.schema.md (URI-017 Threshold Discipline body section; URI-014 Season-Scope Adversarial body section in audience role)
+    - active-project/audience/dark-fantasy-reader/card.md (URI-017 + URI-014 persona-specific content)
+    - active-project/audience/pulp-enthusiast/card.md (URI-017 + URI-014 persona-specific content)
+    - active-project/audience/worm-canon-pedant/card.md (URI-017 + URI-014 persona-specific content)
+  remaining_v2_items: 4 (URI-010 schema-side clause optional; URI-018, URI-019, URI-020 auditor sub-classes — gated on URI-006 dedicated auditor-tuning project; URI-021 meta-tuning-loop documentation)
+  pipeline_state: V2 LIVE — next /and-season run uses landed mechanics
+
+orchestrator_critic_landed:
+  date: 2026-05-10
+  uri: URI-022
+  card_path: staff/orchestrator-critic/card.md
+  invocation: /and-season Phase 6 (Orchestrator verdict)
+  scope: library-only; no per-project copy
+  thresholds:
+    hard_dispatch_cap: 60
+    soft_dispatch_cap: 30
+    iteration_cap_per_phase: 3
+    soft_wallclock_hours: 8
+  verdict_format: [PASS, PASS-WITH-NOTES, FAIL]
+  failure_modes: 6 (F1 non-convergence; F2 forward-flag breach; F3 hard-rule violation; F4 unrouted-HARD-finding; F5 cap-thrash without rubric carry-back; F6 convergence claimed but residuals masked)
+  rule_10_added: /and-season runs gated at Phase 6 by orchestrator-critic; FAIL escalates to user
+  retroactive_self_audit: deferred — would assess R1's s01 run against this standard; running it would produce a back-graded verdict on a closed run, useful as calibration data but not as a current decision input

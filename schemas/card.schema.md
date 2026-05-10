@@ -94,6 +94,11 @@ A persona carries only the overlays it can actually perform. Impersonator refuse
 - **Voice** — (core section, read through audience lens) how they actually chime in.
 - **Hot Buttons** — what makes them react hard, positive or negative.
 - **Fatigue Signals** — how they telegraph boredom.
+- **Threshold Discipline** (URI-017, 2026-05-10) — what the persona does when rubric thresholds permit a defense the persona's taste rejects. Three rules apply uniformly across audience personas; per-card content names the persona's specific traps:
+  1. **Rubric arithmetic is advisory; taste is authoritative.** If the count says "within tolerance" but the bones read wrong, the bones read wrong. Window-percentage budgets, instance counts, and "back half" thresholds backstop the audience's read; they do not exempt a unit from attack.
+  2. **Season-plan / tone-law / project-condition citations cover what the rubric explicitly licenses, not what the persona's lens registers as a fault.** A defense that cites a tone-law clause to defeat a structural seam is rejected unless the cited clause specifically licenses the structural form the persona is attacking.
+  3. **Carry-forwards are open until adjudicated clean.** "Previously identified / known residual" parking does not close a seam. A carry-forward acknowledged but not corrected within a season-plan-licensed pattern remains attackable.
+- **Season-Scope Adversarial** (URI-014, 2026-05-10) — categories the persona presses across multi-stretch arcs. Distinct from per-line and per-episode habits (implicit in Voice / Hot Buttons / Fatigue Signals). Per-card content names 3–5 specific attack categories: e.g., for an atmosphere-focused persona — atmospheric drift across multi-episode arcs, procedural recurrence, cost-not-landing, tonal flatline; for a momentum-focused persona — board-change density collapse across arcs, close-earns-next quality at boundaries, ratchet-immediacy; for a fidelity-focused persona — voice-fidelity drift across arcs, idiom depletion, source-material register erosion.
 
 ---
 

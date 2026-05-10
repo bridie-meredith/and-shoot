@@ -82,7 +82,182 @@ Categories:
   - AP14 free-text gloss on 4 memory target-references — clears with URI-003.
 - **Action:** route to next per-facet tuning round (NI is next in the queue). The AP7 + AP5/voice-fidelity items will be addressed when NI tuning runs.
 
-### URI-007 — Feeling rubric V2.1 carry-back (9 audience-confirmed)
+### URI-006 — Auditor itself needs tuning (Step G design item)
+
+- **Category:** Agent tuning.
+- **Source:** Step G design (`design/shoot-v2/three-pass-alpha-design.md` § Final audit teeth). Audit currently runs flag-only because auditor is not yet tuned for delete-authority.
+- **Action:** apply the same five-phase facet-tuning process (`design/shoot-v2/facet-tuning-process.md`) to the auditor. Corpus = the audit-r1/r2/r3 reports we have plus next-episode audits. Goal: tune the auditor's rubric + threshold + refusal discipline so deletes can be authorized.
+- **Cost:** large. Multi-session tuning project.
+- **Linkage:** this is the gating item for moving the audit from flag-only to delete-authoritative.
+
+### URI-007 — /and-season rubric: idiom depletion as named fault class — **LANDED 2026-05-10**
+
+- **Landed location:** `.claude/commands/and-season.md` Pass S3.5 — added idiom-depletion check (10+ instances, 25%-differentiator threshold).
+
+- **Category:** Rubric tuning.
+- **Source:** `design/shoot-v2/and-season-tuning-r1/H-carry-back.md` Item 1. C-seams U17 (worm + dark-fantasy STRONG), E-r2 U17 REVISE, auditor fault-AP-1 HARD.
+- **Issue:** V1 has 3 partial mechanics (S3.5 5-instance threshold, S5 first-to-last voice, S6 live carry-forward) but no formalism for idiom-depletion-through-overuse as distinct from drift-through-inconsistency or state-verb deny-list violation. `holds the feet` 18+ instances on s01; full physical-stasis cluster 60+. Schema's narrow-license `holds` exemption is satisfied per-instance but cumulative pattern flattens cost-register.
+- **Action:** rubric edit + schema reconciliation (does narrow-license `holds` extend to depletion-at-scale?) + 20-named-instance validation on s01 corpus + screen-writer regeneration deferred to separate session.
+- **Cost:** medium. Candidate mechanic drafted in H-carry-back.
+
+### URI-008 — /and-season rubric: denouement-share quantification — **LANDED 2026-05-10**
+
+- **Landed location:** `.claude/commands/and-season.md` Pass S2 — added denouement-share LATE-WEIGHT >40% clause + tone-law-licensed exception requiring explicit season-plan designation.
+
+- **Category:** Rubric tuning.
+- **Source:** H-carry-back Item 2. C-seams U1, E-r2 U1 REVISE.
+- **Issue:** S2 names "back half of the aggregate" for climax position but no max denouement share. s01 denouement at 43% triggered audience attack; rubric had no V1 answer.
+- **Action:** rubric clause edit. Candidate: `LATE-WEIGHT` flag if denouement >40% of aggregate; tone-law-licensed exception when season-plan explicitly designates the post-peak arc as cost-bearing.
+- **Cost:** small. Clause-only edit.
+
+### URI-009 — /and-season rubric: narrator-field rule for interlude episodes — **LANDED 2026-05-10**
+
+- **Landed location:** `.claude/commands/and-season.md` Phase 4 Step 3 — replaced dominant-POV-by-line-count rule with plan-designated-narrator clause per user verdict (Phase I, R1).
+
+- **Category:** Rubric tuning.
+- **Status:** USER-VERDICT-RECEIVED — designate narrator at plan time, hold consistent within chunk; do not derive from line counts post-hoc. Rubric language drafted in `design/shoot-v2/and-season-tuning-r1/I-user-verdicts.md`.
+- **Source:** H-carry-back Item 3. B-baseline Gap 8 (corrected per auditor signal-006: e05 is compliant; only e06 is anomalous), auditor fault-005 HARD.
+- **Issue:** Phase 4 Step 3 spec says `narrator:` is dominant POV by line count; s01e06 names interlude POV (Elara) against dominant Taylor (~122 vs ~86). Spec ambiguity.
+- **Resolution:** plan-designated narrator wins. The /and-season Phase 4 Step 3 mechanical computation rule is replaced with: `narrator:` is the plan-designated narrator for the chunk, set before line generation, held consistent within the chunk. **fault-005 closes; e06 narrator field is correct as authored. No s01 corpus mutation required.**
+- **Action remaining:** V2 rubric edit to /and-season Phase 4 Step 3 with the new clause. Effect on future runs only.
+- **Cost:** small. Clause edit only.
+
+### URI-010 — Schema clarification: aggregate non-monotonic IDs — **LANDED 2026-05-10 (partial — command-side note; schema-side stable-overrides-monotonic clause still pending)**
+
+- **Landed location:** `.claude/commands/and-season.md` Phase 4 Step 3 — added position-aware-mapping note for non-monotonic-ID aggregate regions per user verdict (Phase I, R1, Option A).
+- **Remaining:** explicit clause in `schemas/proto-line.schema.md` formalizing "stable-overrides-monotonic" interpretation. Optional follow-up.
+
+- **Category:** Schema.
+- **Status:** USER-VERDICT-RECEIVED — Option A (stable-overrides-monotonic; legal survivors). Schema/command language drafted in `design/shoot-v2/and-season-tuning-r1/I-user-verdicts.md`.
+- **Source:** H-carry-back Item 4. Auditor fault-001 HARD (NEW); resolved by user verdict.
+- **Issue:** s01 aggregate contains 21 900-range IDs interspersed in e01-range content. Schema "stable IDs / re-ordering preserves IDs" rule is in tension with "monotonic positive integer, file-scoped" rule when bones get reordered. Fixer formula `aggregate_id = aggregate_range_start + episode_id - 1` mis-maps for any episode covering the out-of-order region.
+- **Resolution:** Option A. The 21 non-monotonic IDs are schema-compliant legal survivors. **fault-001 closes; no corpus mutation required.** Fixer routing for s01e01 bones in the non-monotonic region must use position-aware mapping (file-line position within the aggregate), not ID arithmetic.
+- **Action remaining:** V2 schema clarification clause + /and-season Phase 4 Step 3 documentation update on the position-aware mapping requirement. Effect on future runs and any future fixer dispatch on s01.
+- **Cost:** small. Schema clause + command-file note.
+
+### URI-011 — /and-season rubric: episode-shape mechanics for Phase 4 Step 2 — **LANDED 2026-05-10**
+
+- **Landed location:** `.claude/commands/and-season.md` Phase 4 Step 2 — replaced plain-English verdicts with mechanic-bearing tests: OPEN-ENGAGES (3-condition first-10-bones check + OPEN-ENGAGES-FAIL), CLOSE-EARNS-NEXT (2-condition final-5-bones check + AFTERMATH-DRIFT flag at >20 bones), SHAPE-COHERENT (peak-position rule + 30-bone-window flatline check + post-peak-flat-aftermath HARD/SIGNAL thresholds).
+
+- **Category:** Rubric tuning.
+- **Source:** H-carry-back Item 5. B-baseline Gaps 1+3, C-seams Axis 2 + Axis 4 (9 of 12 STRONG seams pressured one of these).
+- **Issue:** Phase 4 Step 2 names verdicts (`OPEN-ENGAGES`, `CLOSE-EARNS-NEXT`, `SHAPE-COHERENT`) without mechanics for testing them. Audience surfaced specific candidate close-points; rubric gave them no triage.
+- **Action:** rubric edit — three candidate sub-mechanics drafted (5a OPEN-ENGAGES test, 5b CLOSE-EARNS-NEXT test, 5c SHAPE-COHERENT test). Validate against s01e01–e06.
+- **Cost:** medium. Three new clauses + 6-episode validation.
+
+### URI-012 — /and-season rubric: post-split continuity pass (S4.5) — **LANDED 2026-05-10**
+
+- **Landed location:** `.claude/commands/and-season.md` — inserted new Pass S4.5 between S4 and S5. Per-boundary BOUNDARY-CARRIES / BOUNDARY-DROPS verdicts; routes to screen-writer for targeted bone additions at failing eN+1 open. Phase 5 print summary updated.
+
+- **Category:** Rubric tuning.
+- **Source:** H-carry-back Item 6. B-baseline Gap 2, C-seams Axis 3 (5 of 5 boundary continuity units returned STRONG/MODERATE).
+- **Issue:** S4 covers within-aggregate continuity; nothing checks the split's effect on continuity across post-split episode boundaries.
+- **Action:** new rubric pass S4.5. Per-boundary verdict: `BOUNDARY-CARRIES` or `BOUNDARY-DROPS-{state}`. File-level: `POST-SPLIT-CONTINUITY-OK` or `POST-SPLIT-CONTINUITY-FAIL-{boundary-list}`.
+- **Cost:** medium. New pass + 5-boundary validation on s01 + integration into /and-season command.
+
+### URI-013 — /and-season rubric: S3 vs S9 entertainment-density reconciliation — **LANDED 2026-05-10**
+
+- **Landed location:** `.claude/commands/and-season.md` Pass S3 — added "S3 vs S9 — different purposes" note: S3 = entertainment cap (taste); S9 = attention floor (comprehensibility); non-aligned verdicts both valid.
+
+- **Category:** Rubric tuning (clarification).
+- **Source:** H-carry-back Item 7. B-baseline Gap 6.
+- **Issue:** S3 caps at ~10% TOLERATED + zero BORED; S9 caps at ≥30% B-or-T in 100-line stretch. Two non-aligned thresholds; on s01 S3 reached ACCEPT but S9 still triggered.
+- **Action:** rubric clarification — recommended Option A (explicit different purposes: S3 = entertainment cap; S9 = attention floor; non-aligned verdicts both valid).
+- **Cost:** small. Clause clarification only.
+
+### URI-014 — /and-season + card schema: season-scope adversarial criteria per persona — **LANDED 2026-05-10**
+
+- **Landed location:** `schemas/card.schema.md` audience role — added Season-Scope Adversarial body section. Per-persona content landed in `active-project/audience/{dark-fantasy-reader,pulp-enthusiast,worm-canon-pedant}/card.md` with 4-5 named attack categories each (atmospheric drift, board-change density collapse, voice-fidelity drift, etc.).
+
+- **Category:** Schema (per-persona card sections).
+- **Source:** H-carry-back Item 8. B-baseline Gap 7.
+- **Issue:** Per-line and per-episode adversarial habits implicit in persona cards; season-scope adversarial habits not separately documented. Phase C subagent had to derive them.
+- **Action:** add `season-scope-adversarial` section to `class: persona` cards under `schemas/card.schema.md`. 3–5 named attack categories per persona. Candidate categories drafted in H-carry-back.
+- **Cost:** small. Schema edit + per-active-persona card update.
+
+### URI-015 — /and-season rubric: S6 vibe-drift resolution path — **LANDED 2026-05-10**
+
+- **Landed location:** `.claude/commands/and-season.md` Pass S6 — added drift-resolution routing clause: localizable drift → screen-writer stretch regen; non-localizable drift → season-scope screen-writer pass OR carry-back; carry-forward permitted only when season-plan acknowledges the pattern explicitly.
+
+- **Category:** Rubric tuning.
+- **Source:** H-carry-back Item 9. B-baseline Gap 4. Observed in s01 (S6 r1 fired 2-of-3 drift; resolution was carry-forward without re-pass).
+- **Issue:** Rubric says "≥2-persona threshold for accepting drift flags" but does not specify resolution path. Carry-forward used by default; not always rubric-permitted.
+- **Action:** rubric clause edit — localizable drift routes to screen-writer for stretch regeneration; non-localizable drift routes to season-scope screen-writer pass OR Phase H carry-back; carry-forward only when season-plan acknowledges the pattern.
+- **Cost:** small. Clause edit only.
+
+### URI-016 — /and-season rubric: S8a/S8b split-verdict adjudication — **LANDED 2026-05-10**
+
+- **Landed location:** `.claude/commands/and-season.md` Pass S8 — added split-verdict adjudication clause. Default: more-restrictive-verdict-wins (IMPLAUSIBLE-CHARACTER overrides PLAUSIBLE-EVENT). Override: explicit licensing-card citation converts to S8-LICENSED-DIVERGENCE-{card-slug}.
+
+- **Category:** Rubric tuning.
+- **Source:** H-carry-back Item 10. B-baseline Gap 5. Observed in s01 (S8a IMPLAUSIBLE on Elara visit; S8b PLAUSIBLE on same beat).
+- **Issue:** When character (S8a) and event (S8b) lenses disagree on the same beat, rubric does not describe what to do. Reader does not compute lens-by-lens.
+- **Action:** rubric clause edit — divergence triggers `S8-SPLIT-VERDICT-{slug}-{beat}` flag; more restrictive verdict wins by default; condition-card override converts to `S8-LICENSED-DIVERGENCE-{card-slug}`.
+- **Cost:** small. Clause edit only.
+
+### URI-017 — Persona-card "Threshold Discipline" section (audience-role schema addition) — **LANDED 2026-05-10**
+
+- **Landed location:** `schemas/card.schema.md` audience role — added Threshold Discipline body section with 3 standard rules (rubric arithmetic advisory; tone-law/season-plan citations cover license not seam; carry-forwards stay open until adjudicated clean). Per-persona content landed in `active-project/audience/{dark-fantasy-reader,pulp-enthusiast,worm-canon-pedant}/card.md` naming each persona's specific traps.
+
+- **Category:** Schema (per-persona card sections).
+- **Source:** R2 D-critic-carry-back. R2 demonstrated that the worm-canon-pedant's R1 ACCEPT on U1 + U2 was formulaic deference ("tolerates slow open construction when latent-cost register is honest"); under R2's tightened brief that toleration was suspended and worm flipped to REJECT on the same units without any change to the corpus.
+- **Issue:** `class: persona` audience role currently has Voice / Hot Buttons / Fatigue Signals — no section codifying what the persona does when rubric thresholds permit a defense the persona's taste rejects. The discipline currently depends on per-round briefing.
+- **Action:** add **Threshold Discipline** body section to the audience role with three explicit rules: (1) rubric arithmetic is advisory, taste authoritative; (2) season-plan / tone-law / project-condition citations cover what the rubric explicitly licenses, not what the persona's lens registers as a fault; (3) carry-forwards are open until adjudicated clean. Mirror into the 3 active audience cards.
+- **Cost:** small. Schema edit + 3 audience-card updates.
+- **Effect:** the tightened brief becomes default; R1's formulaic-scoring path is the special case.
+
+### URI-018 — Auditor sub-class CURVE-SHAPE-EPISODE-INTERIOR
+
+- **Category:** Auditor class refinement (URI-006 progress).
+- **Source:** R2 C-auditor-self-review Refinement 1; SLEEPER-1 (U5 dark-fantasy SHAPE-COHERENT failure).
+- **Issue:** R1 CURVE-SHAPE ran at season scope only; episode-level SHAPE-COHERENT failures had no mechanic. e04 89-bone post-IGNITION aftermath was caught only via audience attack, not auditor.
+- **Action:** new sub-class running per-episode peak-beat identification + post-peak section length and density check. Threshold candidate: post-peak >50% of episode + <2 board-changes = HARD; 40-50% + <2 board-changes = SIGNAL.
+- **Validation candidates on s01:** HARD on e04 (matches SLEEPER-1); SIGNAL on e02, e03, e06.
+- **Cost:** medium. Sub-class authoring + threshold calibration.
+- **Dependencies:** URI-011 (Phase 4 Step 2 SHAPE-COHERENT mechanic) must define episode-level peak-beat first or co-produce.
+
+### URI-019 — Auditor sub-classes CONSTRAINT-BEHAVIOR-SEQUENCE + CONSTRAINT-RESPONSE-BONE-REQUIRED
+
+- **Category:** Auditor class refinement (URI-006 progress).
+- **Source:** R2 C-auditor-self-review Refinement 2; SLEEPER-2a (U3 cost-inversion at line 203) + SLEEPER-3 (U2 absent response-bones after apprentice-mark).
+- **Issue:** R1 CONSTRAINT checked series laws and cast-presence but not behavior-card sequence-ordering or required-presence at the bone level. Both SLEEPERs are behavior-card compliance failures the class could not see.
+- **Action:** two paired sub-classes:
+  - **CONSTRAINT-BEHAVIOR-SEQUENCE:** for actors with behavior-card cost-processing-order rules, check multi-bone interactions; flag inversions as SIGNAL by default, HARD at season-plan-named cost-bearing beats.
+  - **CONSTRAINT-RESPONSE-BONE-REQUIRED:** for actors with state-change-tracking-obligations on their behavior card, check that named state-changes are followed by ≥1 physical-register response-bone within the same chunk; flag absence as SIGNAL by default, HARD at season-plan-named board-changes.
+- **Cost:** medium for sub-classes. Card additions are part of URI-003.
+- **Dependencies:** URI-003 (margit referrals) — Taylor's behavior card needs explicit `cost-processing-order` and `state-change-tracking-obligation` fields.
+
+### URI-020 — Auditor sub-class AP-SCAN-POST-PEAK-WINDOW-QUALITY
+
+- **Category:** Auditor class refinement (URI-006 progress).
+- **Source:** R2 C-auditor-self-review Refinement 3; SLEEPER-2b (U4 fishwife misdirection at lines 372-393).
+- **Issue:** R1 AP-SCAN's window-quality check used aggregate budget across the full episode; a single TOLERATED window after the episode peak was within budget but actively displaced consequence from reader memory.
+- **Action:** new sub-class scanning the 20-line window immediately after the episode peak (peak identified per URI-018). Threshold candidate: TOLERATED of 15+ lines within 20 lines after peak = HARD; TOLERATED of any length within 10 lines of peak = SIGNAL.
+- **Validation candidate on s01:** HARD on e03 lines 372-393 (matches SLEEPER-2b).
+- **Cost:** small-to-medium. Sub-class authoring + threshold validation.
+- **Dependencies:** URI-018 (peak-beat anchor).
+- **Meta-tuning insight:** the same data (one TOLERATED window) goes from "within budget" to "post-peak misdirection HARD" depending on position. Thresholds aggregated across full units suppress position-dependent severity. This is the formulaic-scoring bypass pattern in concrete form.
+
+### URI-021 — Meta-tuning loop pattern documentation
+
+- **Category:** Process documentation (reusable for future tuning projects).
+- **Source:** R2 as a whole. The four-phase pattern (tightening brief → tightened audience attack → auditor self-review → critic-tuning carry-back) surfaced 4 SLEEPERs and 3 auditor refinements; was invented on the fly during R2.
+- **Issue:** Future tuning projects (any /and-X tuning, future facet rounds, future /and-season runs with new corpora) would benefit from the same meta-loop. Without documentation, the next project re-invents it.
+- **Action:** add `design/shoot-v2/meta-tuning-loop.md` OR fold a section into `design/shoot-v2/facet-tuning-process.md`. Document the four phases with hypothesis-discipline (state predictions before the run; measure results against predictions after; R2 confirmed all 4 predictions).
+- **Cost:** small. Doc-only edit.
+
+### URI-022 — Orchestrator-critic card (run-judge for /and-season) — **LANDED 2026-05-10**
+
+- **Category:** Systemic improvement (new staff-facing card class + new /and-season Phase 6).
+- **Source:** User direction 2026-05-10 — "establish an orchestrator-level critic card meant to judge performance by results and run time. it will be the standard to satisfy for and-season to be considered a success."
+- **Issue:** Content critics (audience, dramatist, auditor) judge what runs produce; nothing judged whether the run *itself* converged honestly within budget. R1+R2 demonstrated that runs can be SHIPPABLE-PENDING-EXECUTION with named residuals AND still be considered "successful" at the orchestration level — but the standard for that judgment was implicit and inconsistent.
+- **Landed location:**
+  - `staff/orchestrator-critic/card.md` — new card defining success criteria (Convergence / Quality / Routing categories), runtime budgets (60-dispatch hard cap, 30 soft, 3-iteration cap per phase), failure modes F1–F6, verdict format (PASS / PASS-WITH-NOTES / FAIL), run-report template.
+  - `.claude/commands/and-season.md` — new Phase 6 (Orchestrator verdict) added after Phase 5 (Persist). No subagent dispatch; main session reads the card and produces the verdict report. Phase 5 print summary updated to show the verdict line. Front-matter description updated.
+  - `CLAUDE.md` — agent routing table includes orchestrator-critic; directory map includes `staff/orchestrator-critic/`; Rules §8 amended to note the staff-facing exception to the cards/ five-class taxonomy; new Rule 10 names Phase 6 as the gate.
+- **Discipline:** card is library-only; no per-project copy. Versioning protocol in the card itself permits empirical recalibration of thresholds when runs produce verdict-discipline data.
+
+### URI-023 — Feeling rubric V2.1 carry-back (9 audience-confirmed)
 
 - **Category:** Rubric tuning + process protocol.
 - **Source:** `design/shoot-v2/feeling-tuning-final.md` Phase 5 audience adjudication, 2026-05-10. All 9 candidates audience-confirmed as real ambiguities, not defensive constructions.
@@ -98,8 +273,9 @@ Categories:
   9. **Process protocol — NOT a rubric edit:** "R2-adds receive a mandatory blind §Form + Q1 + Q2 re-test before round close." First surfaced in memory tuning (E.a Taylor); re-confirmed by mother feel:14 (E.b); strongly extended by feel:10 form-violation regression at Phase-F adjudication (revision introduced a comparison/simile violation while fixing the angular-measurement seam). Pattern: graph-aware authoring systematically loosens rubric discipline. The re-test should cover not just Q1+Q2 but the full §Form pass.
 - **Action:** rubric edits 1-8 land in `rubric-feeling.md` V2.1; process-protocol item 9 lands in `.claude/commands/and-facets-r2.md` as a mandatory final-pass before round-close.
 - **Cost:** medium. Rubric edits + R2 command edit + Phase-5 mechanic re-verify on s01e01 corpus + cross-validation against next-episode tuning data.
+- **Note:** filed as URI-007 in the /and-facets session branch; renumbered to URI-023 on merge to avoid collision with /and-season URI-007 (idiom depletion).
 
-### URI-008 — feel:10 Phase-E author regression
+### URI-024 — feel:10 Phase-E author regression
 
 - **Category:** Per-facet author work; small targeted revision.
 - **Source:** `design/shoot-v2/feeling-tuning-final.md` Phase 5, REJECT verdict on feel:10.
@@ -107,14 +283,7 @@ Categories:
 - **Action:** dispatch father impersonator with a targeted brief: revise feel:10 to remove the comparison construction; preserve the cost-accountant priced-yield register the original revision reached for; verify against rubric §forbidden-vocabulary AP6 (similes / comparisons / "the way X" / "as if Y").
 - **Cost:** small. Single dispatch.
 - **Linkage:** also caught by audit-r4 (TASTE-FLAG / AP-SCAN AP6) once that runs. Either path works.
-
-### URI-006 — Auditor itself needs tuning (Step G design item)
-
-- **Category:** Agent tuning.
-- **Source:** Step G design (`design/shoot-v2/three-pass-alpha-design.md` § Final audit teeth). Audit currently runs flag-only because auditor is not yet tuned for delete-authority.
-- **Action:** apply the same five-phase facet-tuning process (`design/shoot-v2/facet-tuning-process.md`) to the auditor. Corpus = the audit-r1/r2/r3 reports we have plus next-episode audits. Goal: tune the auditor's rubric + threshold + refusal discipline so deletes can be authorized.
-- **Cost:** large. Multi-session tuning project.
-- **Linkage:** this is the gating item for moving the audit from flag-only to delete-authoritative.
+- **Note:** filed as URI-008 in the /and-facets session branch; renumbered to URI-024 on merge to avoid collision with /and-season URI-008.
 
 ---
 
