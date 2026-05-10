@@ -1,8 +1,10 @@
 ---
-description: Activate a new and-shoot project. Scaffolds active-project/, runs world-building and planning (steps 1a–1d, series plan, season 1 content beats), and presents output for human audit. No titles, no pre-segmented episodes — episodes are produced by /and-season Phase 4 split. Usage: /and-project ["<brief>"]
+description: Activate a new and-shoot project. Scaffolds active-project/, runs world-building and series planning (steps 1a–1d + series plan), and presents output for human audit. Season planning is out of scope — run /and-season-plan s01 after activation. No titles. Usage: /and-project ["<brief>"]
 ---
 
 Full project activation for the and-shoot pipeline. Three phases: scaffold (mechanical, direct), brief expansion (screen-writer), planning (you orchestrate directly). Human sees the planning output at the end — not the deliberation that produced it.
+
+**Scope.** /and-project ends at the series-level audit. Season planning (drama, vibe-cloud delta, content beats) is owned by `/and-season-plan <slug>`. After human approval at the audit checkpoint, the next command is `/and-season-plan s01`, then `/and-season s01`. Separation of duties: /and-project = world + series; /and-season-plan = season-scope authoring; /and-season = aggregate authoring + interpretive split.
 
 You are the orchestrator for this command. You dispatch subagents directly — screen-writer, margit, dramatist, audience, auditor, fixer. Do not dispatch showrunner. Showrunner is not in the orchestration chain here.
 
@@ -290,20 +292,12 @@ dramatist verdict: <accept/revise> — <one line reason>
 
 ---
 
-**Season 1 plan.**
-1. Derive season vibe-cloud. Note deltas from series vibe-cloud. Append season section to `active-project/staff/studio/vibes.md`.
-2. Establish season drama.
-3. Dispatch screen-writer with: the series plan from `series-plan.md`, the season drama statement, the series and season vibe-clouds, the series constraints from memory, and `active-project/staff/showrunner/brief-expansion.md`. Screen-writer writes the season as a sequence of **content beats** — *continuous content guidance*, NOT pre-segmented episodes. **Beat format: each beat names a central dramatic pressure — collision or threshold, what cannot remain unchanged after. Concrete and specific, external and structural, no character psychology. Two sentences maximum per beat.** **Beats are content units, not episodes.** Do not number beats with episode slugs (no `s01e01`, `s01e02` — use plain index labels like `Beat 1, Beat 2` or descriptive anchors). Beat count is screen-writer's call (typically 6–12 for a season-length arc) and does not pre-decide episode count — `/and-season` Phase 4 splits the converged aggregate into actual episodes (multiple of 3) by interpretive cut. POV interludes (non-default narrator) are flagged inline at the beat where they apply, with the narrator slug. **Do not author beat titles or episode titles.**
-4. Dispatch audience and dramatist in parallel to review. Run accept/revise loop (3-try max).
-5. Write season plan to `active-project/staff/showrunner/season-s01-plan.md`. The plan contains: time-window, season drama, season question, **content beats (continuous content guidance, no episode segmentation)**, cast/stage usage by beat, structural notes for aggregate authoring. **No title fields on the season or on any beat.** Update `active-project/staff/showrunner/memory.md`: set `routing.season_plan: active-project/staff/showrunner/season-s01-plan.md`; add the season to the `seasons` array with `slug: s01`, `status: active`, and **`episodes: []`** (the array is populated by `/and-season` Phase 5 after split decides actual episode count + slugs); set `active.season: s01` and `active.episode: ~`. Do not write a `title` field on the season.
-
-**Log file: `active-project/staff/showrunner/season-s01-plan-log.md`**
-Same format as series-plan-log.md.
+**Season 1 plan: REMOVED.** Season planning is owned by `/and-season-plan s01`, run after the human approves the activation output at the audit checkpoint. /and-project ends at the series-level audit below. `active.season` stays `~` until `/and-season-plan s01` sets it.
 
 ---
 
 **Formal series-level audit.**
-Dispatch auditor (fork) against the completed series plan and season 1 plan.
+Dispatch auditor (fork) against the completed series plan.
 
 **Log file: `active-project/staff/auditor/series-audit.md`**
 Auditor saves its full classified report here (schema: `schemas/audit-report.schema.md`). Route any faults to fixer before proceeding.
@@ -324,28 +318,22 @@ Present to the human as the activation output — this is the series-level audit
 SERIES
   Theme: ...
   Question: ...
+  Cast: <slug> — role / <slug> — role / ...
   Seasons (slug + chunk; no titles):
     s01 — ...
     s02 — ... (sketch only)
     ...
 
 SEASON 1
-  Drama: ...
-  Cast: <slug> — role / <slug> — role / ...
-  Content beats (continuous content guidance — no episode segmentation):
-    Beat 1 — ...
-    Beat 2 — ...
-    ...
-
-EPISODE BOUNDARIES
-  Not authored at activation. /and-season Phase 4 produces actual episodes
-  (multiple of 3) by interpretive split after the aggregate is converged.
+  Not authored at activation. /and-season-plan s01 produces the season
+  drama, vibe-cloud delta, and content beats. /and-season s01 then authors
+  the aggregate and splits into episodes (multiple of 3) by interpretive cut.
 
 LOG FILES
   active-project/staff/showrunner/brief-expansion.md
   ...
 
-[Audit checkpoint. Review the above. Reply to proceed to /and-season, or give notes for revision.]
+[Audit checkpoint. Review the above. Reply to proceed to /and-season-plan s01, or give notes for revision.]
 ```
 
 If there are escalations requiring human decision, present them before the audit checkpoint line with: `ESCALATIONS REQUIRING YOUR DECISION:` followed by each one.
@@ -357,5 +345,5 @@ If there are escalations requiring human decision, present them before the audit
 - Actor working dirs are created by margit in step 1c, not in the scaffold.
 - Audience working dirs (including stm.md stubs) are created in the scaffold; margit copies the persona cards into them in step 1c.
 - Log files are the audit trail, not the outputs. The human sees summaries; the log files prove execution.
-- Episodes are not authored at activation. The season-1 output is a list of continuous content beats; `/and-season` Phase 4 produces actual episode boundaries (multiple of 3) by interpretive split after the aggregate is converged. Activation ends at the series-level audit + season-1 content beats. Human approval at the audit checkpoint triggers `/and-season`, not episode start.
+- Season planning is not part of activation. Activation ends at the series-level audit. Human approval at the audit checkpoint triggers `/and-season-plan s01` (season drama + vibe-cloud delta + content beats), then `/and-season s01` (aggregate authoring + interpretive split into episodes, multiple of 3).
 - No titles are authored at any planning level (series, season, beat, episode). Slugs only.
