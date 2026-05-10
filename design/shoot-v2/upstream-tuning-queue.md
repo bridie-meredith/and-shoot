@@ -339,6 +339,22 @@ URI-025's IP-2 author-mode tens block (aggregate-scope tens authoring at Pass S9
 
 First live-fire: `/and-season-plan s02` then `/and-season s02` on a fresh corpus. Existing s01 corpus left untouched (s01's `tensometer.md` was authored by `/and-facets-r1` Layer 1 — legacy path, no collision with slug-suffixed bone-gate output).
 
+### URI-027 — F-R2-* class definitions drift between A-corpus.md and audit-report.schema.md
+
+- **Category:** Schema (cross-pipeline class-definition reconciliation).
+- **Source:** Plan B B4 prep, 2026-05-10 — verifying schema against B3 emission format surfaced redefinition.
+- **Issue:** `schemas/audit-report.schema.md` §"R2 decision-shard frontmatter" §"F-R2-* class definitions" cites `design/shoot-v2/r2-judge-tuning/A-corpus.md` as authoritative, then provides summary text that **redefines two of the four classes**:
+  - **F-R2-2** — A-corpus says "multi-justification under-strictness on R2-adds" (gates `B-locked-rubric.md` G2: "is the wanting honest?"). Schema says "motive-honesty failure: stated motive doesn't match what the diff actually changed." Related but reframed; the schema framing is a stricter and narrower test than A-corpus's.
+  - **F-R2-4** — A-corpus says "cross-character / within-character pattern blindness" (gates G4: "does the facet feel patterned?"). Schema says "graph-incoherence: R2 mutation breaks the cite-index DAG or contradicts a sibling layer." Different concept — A-corpus is about formula-repetition; the schema is about graph integrity.
+- **Effect on Plan B:** B-locked-rubric.md G1–G4 map to A-corpus F-R2-1..4. B3's per-layer §Form re-test is operationalising A-corpus classes; B2b/B4 score against A-corpus classes. The orchestrator-critic at Phase 6 reads the schema-defined classes. If the two definitions stay live, the F-R2-* counts B4 produces will be measuring different things from what F7 evaluates.
+- **Action options:**
+  1. Patch the schema's summary text to match A-corpus.md (preferred — A-corpus is the canonical source named in the schema's own citation).
+  2. Patch A-corpus.md + B-locked-rubric.md to match the schema (requires re-thinking G2 / G4 taste-questions).
+  3. Document both definitions and the audit class B4 measures in `.r2-decisions.md` frontmatter.
+- **Recommended:** option 1. The schema's redefinition appears to be a Plan A misreading; A-corpus is upstream of the schema in the URI-026 → A2 chain.
+- **Cost:** small. Schema text edit only.
+- **Decision deferred:** Plan B B4 will run with A-corpus classes (the canonical source). Drift is logged for adjudication; B4's `.r2-decisions.md` frontmatter notes which class-definition source was used.
+
 ---
 
 ## How items leave the queue

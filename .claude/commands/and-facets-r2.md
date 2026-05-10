@@ -112,16 +112,17 @@ Dispatch **impersonator** loaded with the POV character (`narrator` slug from pr
 
 **Output:**
 - Mutated `active-project/theater/facets/interest-narrator.md` (existing IDs preserved; deletions leave gaps; new entries appended with next-available IDs).
-- Decision-log shard: `active-project/staff/interest-narrator/r2-decision-shard.md`. One free-prose-with-verdict-line entry per existing entry decision (KEEP / DELETE / REVISE) and per new entry (ADD). Shard frontmatter top-of-file:
+- Decision-log shard: `active-project/staff/interest-narrator/r2-decision-shard.md`. One free-prose-with-verdict-line entry per existing entry decision (KEEP / DELETE / REVISE) and per new entry (ADD). Shard frontmatter top-of-file (per `schemas/audit-report.schema.md` § R2 decision-shard frontmatter):
   ```yaml
   ---
+  report: r2-decision-shard
   facet: interest-narrator
   episode: <slug>
-  layer: R2.1
+  date: <ISO date>
   f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
   ---
   ```
-  Frontmatter format conforms to `schemas/audit-report.schema.md` `.r2-decisions.md` clause (per URI-026 cross-plan contract). The four counts track failure-mode hits per `design/shoot-v2/r2-judge-tuning/A-corpus.md`: F-R2-1 form-drift, F-R2-2 multi-justification under-strictness, F-R2-3 lonely-entry adjacent-context dependency, F-R2-4 cross/within-character pattern blindness. Author updates counts inline as the cold-read surfaces hits. Free-prose entry shape per `design/shoot-v2/r2-judge-tuning/B-locked-rubric.md` § Decision-log discipline.
+  The four counts track failure-mode hits per `design/shoot-v2/r2-judge-tuning/A-corpus.md` (canonical class definitions; the schema's summary text differs and is being reconciled — see `upstream-tuning-queue.md` URI-027). Author updates counts inline as the cold-read surfaces hits. Free-prose entry shape per `design/shoot-v2/r2-judge-tuning/B-locked-rubric.md` § Decision-log discipline.
 
 ---
 
@@ -151,7 +152,7 @@ Dispatch **impersonator** loaded with the POV character (fresh fork; do not carr
 
 **Output:**
 - Mutated `active-project/theater/facets/memory.md`.
-- Decision-log shard: `active-project/staff/memory/r2-decision-shard.md`. Frontmatter `layer: R2.2` and `f-r2-counts:` line per the R2.1 spec.
+- Decision-log shard: `active-project/staff/memory/r2-decision-shard.md`. Frontmatter per the R2.1 spec with `facet: memory`.
 
 ---
 
@@ -187,7 +188,7 @@ Dispatch **impersonator** loaded with that character (fresh fork) with:
 
 **Output:**
 - Mutated `active-project/theater/facets/feeling.md`.
-- Decision-log shard, **per character**: `active-project/staff/feeling/r2-decision-shard-<character-slug>.md`. Frontmatter `layer: R2.3`, `character: <slug>`, plus the `f-r2-counts:` line. Per-character split is intentional — feeling is the only layer whose decisions are character-scoped, and Phase 6 consolidation sums across the per-character shards into the single facet-level entry of `.r2-decisions.md`.
+- Decision-log shard, **per character**: `active-project/staff/feeling/r2-decision-shard-<character-slug>.md`. Frontmatter per the R2.1 spec with `facet: feeling-<character-slug>` (slug-merged form, schema-conformant). Per-character split is intentional — feeling is the only layer whose decisions are character-scoped, and Phase 6 consolidation sums across the per-character shards.
 
 ---
 
@@ -217,7 +218,7 @@ Dispatch **editor** with:
 
 **Output:**
 - Mutated `active-project/theater/facets/metaphor.md`.
-- Decision-log shard: `active-project/staff/metaphor/r2-decision-shard.md`. Frontmatter `layer: R2.4` and `f-r2-counts:` line.
+- Decision-log shard: `active-project/staff/metaphor/r2-decision-shard.md`. Frontmatter per the R2.1 spec with `facet: metaphor`.
 
 ---
 
@@ -240,18 +241,20 @@ T2 / T3 / T5 / T6 are deferred until B2a evidence supports them; do not fire the
 
 1. Confirm all nine facet files still exist (R2 may have deleted entries but not files).
 2. Confirm proto-lines body unchanged (line count + IDs); only `[...]` citation lists may have shrunk (cascades) or grown (adds).
-3. **Consolidate decision-log shards** into `active-project/theater/facets/.r2-decisions.md`:
-   - Concatenate the four layer shards (R2.1 NI, R2.2 memory, R2.3 feeling — all per-character shards merged in `cast:` order, R2.4 metaphor) under one `## Layer R2.x — <facet>` heading per layer.
-   - Sum the per-shard `f-r2-counts:` into a single top-of-file frontmatter line on `.r2-decisions.md`:
+3. **Consolidate decision-log shards** into `active-project/theater/facets/.r2-decisions.md` (per `schemas/audit-report.schema.md` § Consolidated file):
+   - Concatenate the four layer shards (R2.1 NI, R2.2 memory, R2.3 feeling — all per-character shards merged in `cast:` order, R2.4 metaphor) under one `## <facet-slug>` heading per shard.
+   - Sum the per-shard `f-r2-counts:` into a single top-of-file frontmatter block on `.r2-decisions.md`:
      ```yaml
      ---
+     report: r2-decisions-consolidated
      episode: <slug>
-     facets-touched: [interest-narrator, memory, feeling, metaphor]
+     date: <ISO date>
+     shards: [<list of source shard paths>]
      f-r2-counts: {f-r2-1: <sum>, f-r2-2: <sum>, f-r2-3: <sum>, f-r2-4: <sum>}
      discipline-fails: <count>
      ---
      ```
-   - The consolidated frontmatter is what `staff/orchestrator-critic/card.md` Phase 6 verdict reads (per URI-026 cross-plan F7 emission contract; schema clause in `schemas/audit-report.schema.md`). Threshold (informational here; gate enforced at orchestrator-critic Phase 6): `f-r2-1 > 0` is HARD; `f-r2-2 + f-r2-3 + f-r2-4 > 2` is SIGNAL.
+   - The consolidated frontmatter is what `staff/orchestrator-critic/card.md` Phase 6 verdict reads (per A2 F7 emission contract; `f-r2-1 > 0` is HARD trips F7-r2; `f-r2-2 + f-r2-3 + f-r2-4 > 2` is SIGNAL B7).
 4. Update `active-project/staff/showrunner/memory.md`:
    - Episode status: `faceted-r1` → `faceted-r2`.
    - Add `round_2_complete: true` flag under the episode entry.
