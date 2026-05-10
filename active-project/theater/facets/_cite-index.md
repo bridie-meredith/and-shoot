@@ -2,19 +2,19 @@
 generated: 2026-05-10
 source: active-project/theater/proto-lines/s01e01.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 203 facet entries; 39/102 protolines decorated (38.2%)
+totals: 202 facet entries; 38/102 protolines decorated (37.3%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
-| 0 (bare)   | 63 |
-| 1          | 8 |
+| 0 (bare)   | 64 |
+| 1          | 7 |
 | 2          | 13 |
 | 3          | 9 |
 | 4          | 2 |
-| 5          | 2 |
-| 6          | 2 |
+| 5          | 3 |
+| 6          | 1 |
 | 7          | 1 |
 | 9          | 1 |
 | 15          | 1 |
@@ -23,7 +23,7 @@ totals: 203 facet entries; 39/102 protolines decorated (38.2%)
 
 ### tens (102 entries)
   tens:1 @1 r=1 co=[loc-state:1, narrator:1, sensory:1]
-  tens:2 @3 r=1 co=[sensory:2] lic-in=[meta:1, vibes:4, vibes:5, vibes:8, vibes:10, vibes:12, vibes:13, vibes:20]
+  tens:2 @3 r=1 co=[sensory:2] lic-in=[vibes:4, vibes:5, vibes:8, vibes:10, vibes:12, vibes:13, vibes:20]
   tens:3 @4 r=1 co=[narrator:2] lic-in=[vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18]
   tens:4 @5 r=2 back=Y co=[narrator:3]
   tens:5 @6 r=1
@@ -42,7 +42,7 @@ totals: 203 facet entries; 39/102 protolines decorated (38.2%)
   tens:18 @22 r=1
   tens:19 @23 r=2 back=Y co=[narrator:7, state:11]
   tens:20 @24 r=2 back=Y co=[narrator:22]
-  tens:21 @25 r=2 back=Y
+  tens:21 @25 r=1
   tens:22 @26 r=1
   tens:23 @27 r=1 co=[narrator:9, mem:1, vibes:2]
   tens:24 @28 r=1
@@ -73,7 +73,7 @@ totals: 203 facet entries; 39/102 protolines decorated (38.2%)
   tens:49 @64 r=1
   tens:50 @65 r=1
   tens:51 @67 r=2 back=Y co=[narrator:13, feel:10]
-  tens:52 @69 r=2 back=Y co=[narrator:14, mem:3, meta:1, vibes:4, vibes:13]
+  tens:52 @69 r=2 back=Y co=[narrator:14, mem:3, vibes:4, vibes:13]
   tens:53 @71 r=1
   tens:54 @73 r=1
   tens:55 @76 r=1
@@ -147,7 +147,7 @@ totals: 203 facet entries; 39/102 protolines decorated (38.2%)
   narrator:11 @42 back=Y co=[tens:36]
   narrator:12 @47 back=Y co=[tens:39]
   narrator:13 @67 back=Y co=[tens:51, feel:10]
-  narrator:14 @69 back=Y co=[tens:52, mem:3, meta:1, vibes:4, vibes:13]
+  narrator:14 @69 back=Y co=[tens:52, mem:3, vibes:4, vibes:13]
   narrator:15 @83 back=Y co=[tens:61, state:12, state:15, feel:6]
   narrator:16 @90 back=Y co=[tens:67]
   narrator:17 @98 back=Y co=[tens:75, state:5]
@@ -195,7 +195,7 @@ totals: 203 facet entries; 39/102 protolines decorated (38.2%)
 ### mem (8 entries)
   mem:1 @27 back=Y co=[narrator:9, vibes:2]
   mem:2 @35 back=Y co=[tens:30, narrator:10, state:19, state:20, feel:9, vibes:3, vibes:9, vibes:12]
-  mem:3 @69 back=Y co=[tens:52, narrator:14, meta:1, vibes:4, vibes:13]
+  mem:3 @69 back=Y co=[tens:52, narrator:14, vibes:4, vibes:13]
   mem:4 @119 back=Y co=[tens:93, narrator:20, feel:7, vibes:5, vibes:8, vibes:10]
   mem:5 @9 back=Y co=[feel:1, narrator:26]
   mem:6 @103 back=Y co=[tens:80, narrator:19, state:14]
@@ -216,15 +216,15 @@ totals: 203 facet entries; 39/102 protolines decorated (38.2%)
   feel:10 @67 back=Y co=[tens:51, narrator:13]
   feel:11 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
 
-### meta (1 entries)
-  meta:1 @69 back=Y co=[tens:52, narrator:14, mem:3, vibes:4, vibes:13] lic-out=[memory:3, tens:2, ni:14]
+### meta (0 entries)
+_(no entries)_
 
 ### vibes (21 entries)
   vibes:1 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20] lic-out=[state-update:6, state-update:13, tens:3, feeling:11]
   vibes:2 @27 back=Y co=[narrator:9, mem:1] lic-out=[memory:1, proto:27]
   vibes:3 @35 back=Y co=[tens:30, narrator:10, state:19, state:20, mem:2, feel:9, vibes:9, vibes:12] lic-out=[memory:2, state-update:19, state-update:20, feeling:9]
-  vibes:4 @69 back=Y co=[tens:52, narrator:14, mem:3, meta:1, vibes:13] lic-out=[memory:3, tens:2, proto:69]
-  vibes:5 @119 back=Y co=[tens:93, narrator:20, mem:4, feel:7, vibes:8, vibes:10] lic-out=[memory:4, feeling:4, state-update:13, tens:2]
+  vibes:4 @69 back=Y co=[tens:52, narrator:14, mem:3, vibes:13] lic-out=[memory:3, tens:2, proto:69]
+  vibes:5 @119 back=Y co=[tens:93, narrator:20, mem:4, feel:7, vibes:8, vibes:10] lic-out=[memory:4, state-update:13, tens:2]
   vibes:6 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20] lic-out=[state-update:15, state-update:16, tens:3, feeling:11]
   vibes:7 @15 back=Y co=[feel:5] lic-out=[feeling:5, proto:15]
   vibes:8 @119 back=Y co=[tens:93, narrator:20, mem:4, feel:7, vibes:5, vibes:10] lic-out=[feeling:7, state-update:13, memory:4, tens:2]
@@ -232,7 +232,7 @@ totals: 203 facet entries; 39/102 protolines decorated (38.2%)
   vibes:10 @119 back=Y co=[tens:93, narrator:20, mem:4, feel:7, vibes:5, vibes:8] lic-out=[memory:4, feeling:7, tens:2]
   vibes:11 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:14, vibes:15, vibes:18, vibes:20] lic-out=[state-update:21, state-update:22, state-update:6, tens:3, feeling:11]
   vibes:12 @35 back=Y co=[tens:30, narrator:10, state:19, state:20, mem:2, feel:9, vibes:3, vibes:9] lic-out=[state-update:19, state-update:20, feeling:9, tens:2]
-  vibes:13 @69 back=Y co=[tens:52, narrator:14, mem:3, meta:1, vibes:4] lic-out=[proto:69, memory:3, tens:2]
+  vibes:13 @69 back=Y co=[tens:52, narrator:14, mem:3, vibes:4] lic-out=[proto:69, memory:3, tens:2]
   vibes:14 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:15, vibes:18, vibes:20] lic-out=[state-update:21, state-update:22, feeling:11, tens:3]
   vibes:15 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:18, vibes:20] lic-out=[state-update:6, state-update:5, state-update:3, tens:3]
   vibes:16 @8 back=Y co=[loc-state:2, narrator:4, sensory:3, state:1] lic-out=[state-update:1, proto:8]
@@ -250,19 +250,18 @@ totals: 203 facet entries; 39/102 protolines decorated (38.2%)
     `oc-craftsman-father draws the market slip`
 - **@119** (7): tens:93, narrator:20, mem:4, feel:7, vibes:5, vibes:8, vibes:10
     `oc-craftsman-mother touches taylor-hebert-jaehaerys's shoulder`
-- **@69** (6): tens:52, narrator:14, mem:3, meta:1, vibes:4, vibes:13
-    `taylor-hebert-jaehaerys stills`
 - **@130** (6): loc-state:8, narrator:21, sensory:5, state:9, state:10, vibes:17
     `the candle catches`
 - **@8** (5): loc-state:2, narrator:4, sensory:3, state:1, vibes:16
     `oc-craftsman-father opens the workshop shutter`
+- **@69** (5): tens:52, narrator:14, mem:3, vibes:4, vibes:13
+    `taylor-hebert-jaehaerys stills`
 - **@83** (5): tens:61, narrator:15, state:12, state:15, feel:6
     `oc-craftsman-mother pulls taylor-hebert-jaehaerys's hair`
 
 ## Lonely entries (no co-location, no inbound license)
 _Round-2 deletion candidates — but check the rubric before cutting._
 
-- tens:21 @25  `taylor-hebert-jaehaerys traces the column`
 - loc-state:5 @61  `taylor-hebert-jaehaerys reaches the pallet`
 - loc-state:6 @92  `taylor-hebert-jaehaerys approaches the table`
 - narrator:2 @4  `taylor-hebert-jaehaerys crosses the workshop floor`
@@ -274,4 +273,4 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 ## Bare protolines (no citations accrued)
 _Round-2 add candidates if the rubric licenses a fire here._
 
-@6, @7, @11, @12, @13, @14, @16, @20, @21, @22, @26, @28, @29, @30, @33, @37, @38, @39, @41, @45, @46, @48, @49, @50, @53, @59, @62, @63, @64, @65, @71, @73, @76, @77, @78, @79, @81, @82, @85, @86, @88, @89, @91, @95, @96, @97, @100, @101, @102, @105, @108, @109, @110, @111, @112, @114, @115, @116, @117, @118, @121, @123, @124
+@6, @7, @11, @12, @13, @14, @16, @20, @21, @22, @25, @26, @28, @29, @30, @33, @37, @38, @39, @41, @45, @46, @48, @49, @50, @53, @59, @62, @63, @64, @65, @71, @73, @76, @77, @78, @79, @81, @82, @85, @86, @88, @89, @91, @95, @96, @97, @100, @101, @102, @105, @108, @109, @110, @111, @112, @114, @115, @116, @117, @118, @121, @123, @124
