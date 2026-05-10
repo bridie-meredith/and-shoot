@@ -49,7 +49,7 @@ Subset of facets fired at the aggregate level (treat the season aggregate as one
 - **tensometer** — full rung distribution + curve-shape across 900-line aggregate.
 - **sensory** — modality density + delta continuity at season scope.
 - **state-updates** — env + actor state coverage at season scope.
-- *(not at S9.5)* feeling, vibes-updates, metaphor, narrator-interest, memory-flags. These need scene-stable POV and per-character context that the aggregate stage does not provide cleanly. Reserve them for IP-3.
+- *(not at S9.5 in author-mode)* feeling, vibes-updates, metaphor, narrator-interest, memory-flags. These need scene-stable POV and per-character context to *author* entries. **But** see IP-2b below — they can run as coverage probes without authoring.
 
 Auditor classes fired at S9.5:
 
@@ -62,6 +62,41 @@ Auditor classes fired at S9.5:
 **Dispatch budget:** ~12 dispatches (3 facet authors + 1 auditor + R2 if shape findings warrant + revision dispatches).
 
 **Failure handling:** HARD findings at S9.5 route to screen-writer regeneration of bones in the affected aggregate range, with re-pass through Pass S9.5 to confirm clean. Iteration cap inherits from orchestrator-critic (3 per phase).
+
+### IP-2b — /and-season Pass S9.5 probe-mode (new — full facet roster, no authoring)
+
+Position: same as S9.5 (between S9 and Phase 4 split). Runs alongside or after the author-mode pass above.
+
+**Reframing:** the remaining facet authors (feeling, vibes-updates, metaphor, narrator-interest, memory-flags) cannot cleanly *author* entries against the aggregate — POV is unstable across interlude boundaries, per-character context is incomplete pre-split. But they can run in **probe mode**: read the SVO, report what they *would* license if asked to author, without writing facet entries.
+
+The probe output is a **coverage map**, not a facet file. Per facet, per scene-window:
+
+- **Density estimate** — "I would author N entries in this window." 0 = gap; abnormally high = oversaturation candidate.
+- **License gaps** — "I would have to invent context the SVO does not provide" (e.g. metaphor monument-load not licensed by any memory anchor in the window; feeling somatic-tell that has no body-state cue in the bones).
+- **Cross-facet contract candidates** — "this beat looks like a tens=3 peak by my read; if tensometer disagrees, that's a seam."
+- **POV warnings** — "this window is ambiguous-POV by my reading; downstream per-character authoring will need a dramatist call here."
+
+Why this is cheap:
+- One dispatch per facet per run. No R2. No audit. No graph. Output is a structured report, not a facet file.
+- Read-only against the SVO. No state mutation. No card writes. No margit referrals.
+- **Estimated dispatch budget for IP-2b: ~5 dispatches** (one per remaining facet) on top of S9.5's ~12. Total S9.5 with probe-mode: ~17.
+
+What it surfaces (the load-bearing reason to do this before /and-facets):
+
+- **Coverage gaps** — scenes where 3+ facets independently report "I would author 0 entries" are scenes where the SVO lacks the substrate the downstream pipeline needs. Catch upstream, before /and-facets runs and produces under-populated facet files that audit then has to flag.
+- **Cross-facet contract pre-failures** — if metaphor probe says "this is a high monument-load beat" but tensometer rated rung-1, the contract failure is visible *before* facets are authored. Currently surfaces only at the audit step after full /and-facets.
+- **Saturation candidates** — windows where 4+ facets all report high density warn that the SVO is over-densified for the bone count; downstream facet authoring will produce content that AP-SCAN flags as token saturation.
+- **POV warnings** — interlude or POV-ambiguous windows flagged before /and-facets dispatches the wrong character impersonator.
+
+What it does NOT do:
+
+- Does not produce facet files. /and-facets still owns authoring.
+- Does not gate. Findings are advisory inputs to S9.5 verdict and Phase 6 orchestrator-critic, not a hard pass/fail on their own.
+- Does not replace per-character /and-facets. Probe-mode reads the bones; only full /and-facets runs the per-character impersonator with full memory context.
+
+**Output:** `active-project/staff/auditor/season-s<N>-pass-S9.5-probe.md`. Per-facet sections, per-scene-window rows. Same auditor command consumes it for cross-facet contract findings.
+
+**Failure handling:** probe-mode findings are advisory only in Phase 1. Promotion to gating depends on calibration — see Phased rollout.
 
 ### IP-3 — /and-season Phase 5.5 (new — per-episode-scope, flag-driven)
 
@@ -93,11 +128,12 @@ If S9.5 returns HARD findings that the iteration cap could not close, the verdic
 
 ## Phased rollout
 
-**Phase 1 — Now (Pass S9.5, reduced):**
+**Phase 1 — Now (Pass S9.5, reduced + probe-mode):**
 
-- tensometer + facet-auditor (CURVE-SHAPE + AP-SCAN classes only).
-- ~12 dispatches.
-- Validates the architecture cheaply. URI-002 is the test case — does S9.5 catch on the s01 aggregate the SHAPE-FAIL that surfaced at facet-stage?
+- **Author-mode (S9.5):** tensometer + facet-auditor (CURVE-SHAPE + AP-SCAN classes only). ~12 dispatches.
+- **Probe-mode (S9.5b):** feeling + vibes-updates + metaphor + narrator-interest + memory-flags fired as coverage probes (no authoring, structured report only). ~5 dispatches.
+- **Total: ~17 dispatches.** Findings advisory; no gating in Phase 1.
+- Validates the architecture cheaply. URI-002 is the test case — does S9.5 author-mode catch the SHAPE-FAIL that surfaced at facet-stage? Probe-mode test case: do 3+ facets independently flag any windows the audit later flagged?
 
 **Phase 2 — After URI-006 (auditor tuning) lands:**
 
