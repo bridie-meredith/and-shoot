@@ -82,6 +82,32 @@ Categories:
   - AP14 free-text gloss on 4 memory target-references — clears with URI-003.
 - **Action:** route to next per-facet tuning round (NI is next in the queue). The AP7 + AP5/voice-fidelity items will be addressed when NI tuning runs.
 
+### URI-007 — Feeling rubric V2.1 carry-back (9 audience-confirmed)
+
+- **Category:** Rubric tuning + process protocol.
+- **Source:** `design/shoot-v2/feeling-tuning-final.md` Phase 5 audience adjudication, 2026-05-10. All 9 candidates audience-confirmed as real ambiguities, not defensive constructions.
+- **Items:**
+  1. Q1 should explicitly test against proto-line-as-somatic-action (R2-graph-aware failure mode confirmed across memory + feeling).
+  2. AP §7 should gate cross-character same-strategy + within-character formula-repetition (currently gates only per-character surface-token saturation).
+  3. Within-character same-strategy gate (negative-continuity across fires).
+  4. Cross-character vocabulary saturation gate at structural level.
+  5. Cross-character temporal-anchor formula-repetition gate.
+  6. Lonely-entry Q2-must-stand-alone test (R2-add discipline; THIRD confirmation).
+  7. Card-licensed-vs-saturation distinction at semantic-slot level.
+  8. Body-as-subject discipline for somatic-tell-card-match (NEW — surfaced from feel:10 reshape).
+  9. **Process protocol — NOT a rubric edit:** "R2-adds receive a mandatory blind §Form + Q1 + Q2 re-test before round close." First surfaced in memory tuning (E.a Taylor); re-confirmed by mother feel:14 (E.b); strongly extended by feel:10 form-violation regression at Phase-F adjudication (revision introduced a comparison/simile violation while fixing the angular-measurement seam). Pattern: graph-aware authoring systematically loosens rubric discipline. The re-test should cover not just Q1+Q2 but the full §Form pass.
+- **Action:** rubric edits 1-8 land in `rubric-feeling.md` V2.1; process-protocol item 9 lands in `.claude/commands/and-facets-r2.md` as a mandatory final-pass before round-close.
+- **Cost:** medium. Rubric edits + R2 command edit + Phase-5 mechanic re-verify on s01e01 corpus + cross-validation against next-episode tuning data.
+
+### URI-008 — feel:10 Phase-E author regression
+
+- **Category:** Per-facet author work; small targeted revision.
+- **Source:** `design/shoot-v2/feeling-tuning-final.md` Phase 5, REJECT verdict on feel:10.
+- **Issue:** Father's Phase-E.c revision of feel:10 swapped angular-measurement violation for comparison violation ("the way an estimate gets one"). Audience adjudication: 1 of 12 entries REJECT.
+- **Action:** dispatch father impersonator with a targeted brief: revise feel:10 to remove the comparison construction; preserve the cost-accountant priced-yield register the original revision reached for; verify against rubric §forbidden-vocabulary AP6 (similes / comparisons / "the way X" / "as if Y").
+- **Cost:** small. Single dispatch.
+- **Linkage:** also caught by audit-r4 (TASTE-FLAG / AP-SCAN AP6) once that runs. Either path works.
+
 ### URI-006 — Auditor itself needs tuning (Step G design item)
 
 - **Category:** Agent tuning.
