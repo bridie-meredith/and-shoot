@@ -51,33 +51,71 @@ Dispatch **auditor** (fork) with:
 
 **Forbid loading:** behavior cards, vibes-as-bias, audience personas, source prose. The auditor reads the graph mechanically against constraints, not aesthetically.
 
-**Auditor task — five classes of finding:**
+**Auditor task — eight classes of finding:**
 
-1. **CONTRADICTION** — Two facet entries set incompatible state on the same anchor. Examples:
+1. **STRUCTURAL** — Schema/format/integrity defects. Mechanical scan:
+   - Header presence: every facet file MUST carry `facet:`, `episode:`, `author:` (or `authors:`), and `round:` (or equivalent round-marker). Missing or malformed fields fault.
+   - Line shape: every numbered entry matches `<id> @<proto-id> <content>` (or off-anchor `<id> <content>` for vibes). Malformed lines fault.
+   - ID monotonicity: IDs strictly increasing within each facet file. Deletion gaps allowed; duplicates and out-of-order IDs fault.
+   - Anchor resolution: every `@<proto-id>` points to an actual content-bearing protoline ID (not a deleted gap, not a time-skip blank line). Orphan anchors fault.
+   - Bidirectional citation: if entry X anchors at @P with content, then @P MUST have `[<facet-prefix>:X]` in its citation list (documented exception: tens entries with rating=1 do not back-cite by convention). Missing back-cites and orphan back-cites both fault.
+   - Protoline body integrity: SVO sentences must NOT have changed since extraction; only the trailing `[...]` citation lists may grow or shrink. Body changes fault.
+
+2. **FREQUENCY-BAND** — Per-rubric quantitative gates. Compute and compare against the rubric's stated bands:
+   - **tensometer** rubric § "Frequency band": 60-75% rung-1 / 20-30% rung-2 / 5-10% rung-3. Compute the actual distribution; flag every rung outside band.
+   - **sensory** rubric: sparsity 3-6%; modality coverage ≥2 per episode.
+   - **memory** rubric: sparsity ~5-12% (or 1-5% per the older spec — read the current rubric to see which is locked).
+   - **feeling** rubric: sparsity 2-5% per character.
+   - **metaphor** rubric: sparsity 0-3% (zero-fires acceptable).
+   - **NI** rubric: density expectation (typically 15-25%).
+   - **state-updates**: no fixed band but tens-coherence soft-gate.
+   - **vibes**: liberal; no upper ceiling per schema (don't flag).
+   These are signal-flags not auto-faults, but record the actual numbers so the human can read settling vs miscalibration.
+
+3. **METADATA-INCONSISTENCY** — File headers / round-notes / r1_to_r2 / r2_to_r3 summary lines that contradict the file's actual content. Examples:
+   - Header `round: N` doesn't match the latest mutation.
+   - `r2_to_r3: K=N D=N A=N` counts that don't match the actual entries plus deletion gaps.
+   - Round-note claims like "all entries at tens=1 or trailing-edge" when at least one entry demonstrably is not.
+   - Authoring discipline notes that don't match actual content.
+
+4. **CURVE-SHAPE** — Tens-rubric § "Curve-shape rubric (episode-level)" verdict. Mandatory under the locked tens rubric:
+   - Scene-level: each loc-state-defined scene contains at least one tens=3 (or an explicit dramatist-flagged exception). Flag scenes that have no peak.
+   - Rise-to-peak: 1→3 direct jumps flag for review (either misrating or sudden-turn).
+   - Release-after-peak: 3→3 immediately flagged unless defensible double-tap.
+   - No flatlining: 30+ contiguous content-bearing beats with no 2 or 3 flags as kickback candidate.
+   - Episode-level act structure: visible major rise toward climax. Climax beat exists and is unique-or-near-unique (densest 3-cluster).
+   - Output: SHAPE-OK or SHAPE-FAIL with named scene/episode failure mode.
+
+5. **CONTRADICTION** — Two facet entries set incompatible state on the same anchor. Examples:
    - Two state-updates with same `<target>.<field>: <old> -> <new-A>` and `... -> <new-B>` on the same protoline.
    - location-state at one protoline that conflicts with a referenced loc card's spatial layout.
-   - tens rating that contradicts a co-cited state-update peak (tens=1 with state change is suspicious; tens=3 without state change is suspicious — both flag for review).
-   - Schema § "Cross-facet consistency": "**delete both, flag for re-author. Do not pick a winner.**" — at flag-only mode, auditor does not delete; both are flagged.
+   - location-state time-labels that run backward in chronological order across consecutive entries.
+   - tens rating that contradicts a co-cited state-update peak (tens=1 with state change suspicious; tens=3 without state change suspicious — both flag).
+   - Schema § "Cross-facet consistency": "**delete both, flag for re-author. Do not pick a winner.**" — at flag-only mode, both flagged.
 
-2. **DEDUP** — Two entries (same or different facets) that say the same thing on the same anchor. Examples:
-   - NI@X register that paraphrases feeling@X somatic-tell.
-   - memory@X gloss that paraphrases NI@X register.
-   - vibes@X token-bundle that duplicates state-update@X field-flip semantics.
+6. **DEDUP** — Two entries that say the same thing.
+   - **Cross-facet same-anchor**: NI@X register paraphrasing feeling@X somatic-tell; memory@X gloss paraphrasing NI@X register; vibes@X token-bundle duplicating state-update@X field-flip semantics.
+   - **Within-facet different-anchor**: two memory entries firing the same monument on different beats without distinct callback content; two NI entries with identical register-language across protolines.
+   - **Within-facet same-anchor**: two entries from the same facet at the same anchor (rare but should fault if found).
 
-3. **SUPERFLUOUS** — Entries that earn nothing in the graph. Inputs:
+7. **SUPERFLUOUS** — Entries that earn nothing in the graph. Inputs:
    - Cite-index "Lonely entries" list (zero co-location, zero inbound license).
    - Cross-check against per-facet rubric: is the entry rubric-licensed independent of co-location? (E.g., a tens=2 entry with no NI co-cite may still be earned via stakes-visibility; not all lonelies are superfluous.)
+   - Convention: tens entries with rating=1 are NEVER superfluous (they ARE the silence baseline).
+   - Off-anchor vibes entries are NEVER superfluous (they're scope-targeted, not anchor-targeted).
    - The auditor's call is whether the lonely entry survives rubric scrutiny — flag if not.
 
-4. **CONSTRAINT** — Cross-facet contract violations. Examples (per facet rubrics):
-   - memory entry without NI-spine co-citation (§memory rubric mandatory spine).
-   - metaphor entry without licensed-by anchor that resolves (§metaphor mandatory anchor).
+8. **CONSTRAINT** — Cross-facet contract violations. Examples (per facet rubrics):
+   - memory entry without NI-spine co-citation on the same protoline (§memory mandatory spine).
+   - metaphor entry without `licensed-by:` anchor that resolves to an existing memory:N or feeling:N entry (§metaphor mandatory anchor).
    - feeling entry that duplicates POV NI register on same protoline (§feeling POV non-redundancy).
-   - vibes entry with `licensed-by:` source that doesn't resolve (§vibes machine-resolvable mandatory).
-   - state-updates entry with `<old>` field that contradicts the prior state-update or state.md baseline.
-   - Series-law violations on any facet (e.g., a memory gloss that breaches Earth-Bet hard fence).
+   - vibes entry with `licensed-by:` source that doesn't resolve OR forward-cites (source anchored AFTER the vibe's anchor) (§vibes machine-resolvable mandatory; gate-4).
+   - **Mechanical resolvability scan: read every `licensed-by:` clause across metaphor and vibes; verify each cited (facet:id) exists and is anchored at-or-before the citing entry's anchor.**
+   - state-updates entry with `<old>` that contradicts the prior state-update or state.md baseline.
+   - Series-law violations on any facet (e.g., a memory gloss that breaches Earth-Bet hard fence — scan memory entry text for forbidden proper nouns: Brockton Bay, Skitter, Lung, Khepri, Bakuda, PRT, etc.).
+   - **POV-perceptual access** on NI: every NI entry must anchor on a protoline where the POV character can perceive (POV present per cast/loc-state, not in another room).
 
-5. **PILE-UP REVIEW** — Protolines with >6 co-located facets. Cite-index lists these. The auditor judges whether each is a load-bearing peak (warranted) or over-decoration (recommend cull). Per the locked tens cross-facet contract, peak protolines (@99, @35, @119, @69, @130) earn dense co-location; the audit verifies each pile-up is structurally justified.
+9. **PILE-UP REVIEW** — Protolines with >4 co-located facets. Cite-index lists these. Verdict per pile-up: warranted (load-bearing peak) or over-decoration (recommend cull). Per the locked tens cross-facet contract, peak protolines earn dense co-location.
 
 **Audit output — classified findings report:**
 
