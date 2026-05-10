@@ -90,7 +90,9 @@ Categories:
 - **Cost:** large. Multi-session tuning project.
 - **Linkage:** this is the gating item for moving the audit from flag-only to delete-authoritative.
 
-### URI-007 — /and-season rubric: idiom depletion as named fault class
+### URI-007 — /and-season rubric: idiom depletion as named fault class — **LANDED 2026-05-10**
+
+- **Landed location:** `.claude/commands/and-season.md` Pass S3.5 — added idiom-depletion check (10+ instances, 25%-differentiator threshold).
 
 - **Category:** Rubric tuning.
 - **Source:** `design/shoot-v2/and-season-tuning-r1/H-carry-back.md` Item 1. C-seams U17 (worm + dark-fantasy STRONG), E-r2 U17 REVISE, auditor fault-AP-1 HARD.
@@ -98,7 +100,9 @@ Categories:
 - **Action:** rubric edit + schema reconciliation (does narrow-license `holds` extend to depletion-at-scale?) + 20-named-instance validation on s01 corpus + screen-writer regeneration deferred to separate session.
 - **Cost:** medium. Candidate mechanic drafted in H-carry-back.
 
-### URI-008 — /and-season rubric: denouement-share quantification
+### URI-008 — /and-season rubric: denouement-share quantification — **LANDED 2026-05-10**
+
+- **Landed location:** `.claude/commands/and-season.md` Pass S2 — added denouement-share LATE-WEIGHT >40% clause + tone-law-licensed exception requiring explicit season-plan designation.
 
 - **Category:** Rubric tuning.
 - **Source:** H-carry-back Item 2. C-seams U1, E-r2 U1 REVISE.
@@ -106,7 +110,9 @@ Categories:
 - **Action:** rubric clause edit. Candidate: `LATE-WEIGHT` flag if denouement >40% of aggregate; tone-law-licensed exception when season-plan explicitly designates the post-peak arc as cost-bearing.
 - **Cost:** small. Clause-only edit.
 
-### URI-009 — /and-season rubric: narrator-field rule for interlude episodes
+### URI-009 — /and-season rubric: narrator-field rule for interlude episodes — **LANDED 2026-05-10**
+
+- **Landed location:** `.claude/commands/and-season.md` Phase 4 Step 3 — replaced dominant-POV-by-line-count rule with plan-designated-narrator clause per user verdict (Phase I, R1).
 
 - **Category:** Rubric tuning.
 - **Status:** USER-VERDICT-RECEIVED — designate narrator at plan time, hold consistent within chunk; do not derive from line counts post-hoc. Rubric language drafted in `design/shoot-v2/and-season-tuning-r1/I-user-verdicts.md`.
@@ -116,7 +122,10 @@ Categories:
 - **Action remaining:** V2 rubric edit to /and-season Phase 4 Step 3 with the new clause. Effect on future runs only.
 - **Cost:** small. Clause edit only.
 
-### URI-010 — Schema clarification: aggregate non-monotonic IDs
+### URI-010 — Schema clarification: aggregate non-monotonic IDs — **LANDED 2026-05-10 (partial — command-side note; schema-side stable-overrides-monotonic clause still pending)**
+
+- **Landed location:** `.claude/commands/and-season.md` Phase 4 Step 3 — added position-aware-mapping note for non-monotonic-ID aggregate regions per user verdict (Phase I, R1, Option A).
+- **Remaining:** explicit clause in `schemas/proto-line.schema.md` formalizing "stable-overrides-monotonic" interpretation. Optional follow-up.
 
 - **Category:** Schema.
 - **Status:** USER-VERDICT-RECEIVED — Option A (stable-overrides-monotonic; legal survivors). Schema/command language drafted in `design/shoot-v2/and-season-tuning-r1/I-user-verdicts.md`.
@@ -126,7 +135,9 @@ Categories:
 - **Action remaining:** V2 schema clarification clause + /and-season Phase 4 Step 3 documentation update on the position-aware mapping requirement. Effect on future runs and any future fixer dispatch on s01.
 - **Cost:** small. Schema clause + command-file note.
 
-### URI-011 — /and-season rubric: episode-shape mechanics for Phase 4 Step 2
+### URI-011 — /and-season rubric: episode-shape mechanics for Phase 4 Step 2 — **LANDED 2026-05-10**
+
+- **Landed location:** `.claude/commands/and-season.md` Phase 4 Step 2 — replaced plain-English verdicts with mechanic-bearing tests: OPEN-ENGAGES (3-condition first-10-bones check + OPEN-ENGAGES-FAIL), CLOSE-EARNS-NEXT (2-condition final-5-bones check + AFTERMATH-DRIFT flag at >20 bones), SHAPE-COHERENT (peak-position rule + 30-bone-window flatline check + post-peak-flat-aftermath HARD/SIGNAL thresholds).
 
 - **Category:** Rubric tuning.
 - **Source:** H-carry-back Item 5. B-baseline Gaps 1+3, C-seams Axis 2 + Axis 4 (9 of 12 STRONG seams pressured one of these).
@@ -134,7 +145,9 @@ Categories:
 - **Action:** rubric edit — three candidate sub-mechanics drafted (5a OPEN-ENGAGES test, 5b CLOSE-EARNS-NEXT test, 5c SHAPE-COHERENT test). Validate against s01e01–e06.
 - **Cost:** medium. Three new clauses + 6-episode validation.
 
-### URI-012 — /and-season rubric: post-split continuity pass (S4.5)
+### URI-012 — /and-season rubric: post-split continuity pass (S4.5) — **LANDED 2026-05-10**
+
+- **Landed location:** `.claude/commands/and-season.md` — inserted new Pass S4.5 between S4 and S5. Per-boundary BOUNDARY-CARRIES / BOUNDARY-DROPS verdicts; routes to screen-writer for targeted bone additions at failing eN+1 open. Phase 5 print summary updated.
 
 - **Category:** Rubric tuning.
 - **Source:** H-carry-back Item 6. B-baseline Gap 2, C-seams Axis 3 (5 of 5 boundary continuity units returned STRONG/MODERATE).
@@ -142,7 +155,9 @@ Categories:
 - **Action:** new rubric pass S4.5. Per-boundary verdict: `BOUNDARY-CARRIES` or `BOUNDARY-DROPS-{state}`. File-level: `POST-SPLIT-CONTINUITY-OK` or `POST-SPLIT-CONTINUITY-FAIL-{boundary-list}`.
 - **Cost:** medium. New pass + 5-boundary validation on s01 + integration into /and-season command.
 
-### URI-013 — /and-season rubric: S3 vs S9 entertainment-density reconciliation
+### URI-013 — /and-season rubric: S3 vs S9 entertainment-density reconciliation — **LANDED 2026-05-10**
+
+- **Landed location:** `.claude/commands/and-season.md` Pass S3 — added "S3 vs S9 — different purposes" note: S3 = entertainment cap (taste); S9 = attention floor (comprehensibility); non-aligned verdicts both valid.
 
 - **Category:** Rubric tuning (clarification).
 - **Source:** H-carry-back Item 7. B-baseline Gap 6.
@@ -150,7 +165,9 @@ Categories:
 - **Action:** rubric clarification — recommended Option A (explicit different purposes: S3 = entertainment cap; S9 = attention floor; non-aligned verdicts both valid).
 - **Cost:** small. Clause clarification only.
 
-### URI-014 — /and-season + card schema: season-scope adversarial criteria per persona
+### URI-014 — /and-season + card schema: season-scope adversarial criteria per persona — **LANDED 2026-05-10**
+
+- **Landed location:** `schemas/card.schema.md` audience role — added Season-Scope Adversarial body section. Per-persona content landed in `active-project/audience/{dark-fantasy-reader,pulp-enthusiast,worm-canon-pedant}/card.md` with 4-5 named attack categories each (atmospheric drift, board-change density collapse, voice-fidelity drift, etc.).
 
 - **Category:** Schema (per-persona card sections).
 - **Source:** H-carry-back Item 8. B-baseline Gap 7.
@@ -158,7 +175,9 @@ Categories:
 - **Action:** add `season-scope-adversarial` section to `class: persona` cards under `schemas/card.schema.md`. 3–5 named attack categories per persona. Candidate categories drafted in H-carry-back.
 - **Cost:** small. Schema edit + per-active-persona card update.
 
-### URI-015 — /and-season rubric: S6 vibe-drift resolution path
+### URI-015 — /and-season rubric: S6 vibe-drift resolution path — **LANDED 2026-05-10**
+
+- **Landed location:** `.claude/commands/and-season.md` Pass S6 — added drift-resolution routing clause: localizable drift → screen-writer stretch regen; non-localizable drift → season-scope screen-writer pass OR carry-back; carry-forward permitted only when season-plan acknowledges the pattern explicitly.
 
 - **Category:** Rubric tuning.
 - **Source:** H-carry-back Item 9. B-baseline Gap 4. Observed in s01 (S6 r1 fired 2-of-3 drift; resolution was carry-forward without re-pass).
@@ -166,7 +185,9 @@ Categories:
 - **Action:** rubric clause edit — localizable drift routes to screen-writer for stretch regeneration; non-localizable drift routes to season-scope screen-writer pass OR Phase H carry-back; carry-forward only when season-plan acknowledges the pattern.
 - **Cost:** small. Clause edit only.
 
-### URI-016 — /and-season rubric: S8a/S8b split-verdict adjudication
+### URI-016 — /and-season rubric: S8a/S8b split-verdict adjudication — **LANDED 2026-05-10**
+
+- **Landed location:** `.claude/commands/and-season.md` Pass S8 — added split-verdict adjudication clause. Default: more-restrictive-verdict-wins (IMPLAUSIBLE-CHARACTER overrides PLAUSIBLE-EVENT). Override: explicit licensing-card citation converts to S8-LICENSED-DIVERGENCE-{card-slug}.
 
 - **Category:** Rubric tuning.
 - **Source:** H-carry-back Item 10. B-baseline Gap 5. Observed in s01 (S8a IMPLAUSIBLE on Elara visit; S8b PLAUSIBLE on same beat).
@@ -174,7 +195,9 @@ Categories:
 - **Action:** rubric clause edit — divergence triggers `S8-SPLIT-VERDICT-{slug}-{beat}` flag; more restrictive verdict wins by default; condition-card override converts to `S8-LICENSED-DIVERGENCE-{card-slug}`.
 - **Cost:** small. Clause edit only.
 
-### URI-017 — Persona-card "Threshold Discipline" section (audience-role schema addition)
+### URI-017 — Persona-card "Threshold Discipline" section (audience-role schema addition) — **LANDED 2026-05-10**
+
+- **Landed location:** `schemas/card.schema.md` audience role — added Threshold Discipline body section with 3 standard rules (rubric arithmetic advisory; tone-law/season-plan citations cover license not seam; carry-forwards stay open until adjudicated clean). Per-persona content landed in `active-project/audience/{dark-fantasy-reader,pulp-enthusiast,worm-canon-pedant}/card.md` naming each persona's specific traps.
 
 - **Category:** Schema (per-persona card sections).
 - **Source:** R2 D-critic-carry-back. R2 demonstrated that the worm-canon-pedant's R1 ACCEPT on U1 + U2 was formulaic deference ("tolerates slow open construction when latent-cost register is honest"); under R2's tightened brief that toleration was suspended and worm flipped to REJECT on the same units without any change to the corpus.

@@ -23,3 +23,15 @@ hot_buttons:
   - Catharsis that isn't earned — resolution arriving before the weight has accumulated → walkout
 
 fatigue: Starts skimming action sequences when the stakes feel fake. Stops reading environmental description entirely when the setting stops feeling hostile. Can be pulled back by one moment where the world pushes back against the protagonists in a way that costs something real.
+
+threshold_discipline:
+  - "Atmosphere that 'didn't trigger the BORED threshold technically' is still atmosphere that didn't pay its bill. The walkout on catharsis-not-earned applies regardless of how the threshold arithmetic counts: 89 bones of post-peak management feels like managed-darkness even if the per-window count is within budget."
+  - "Tone-law citations (cond-series-tone-constraints-84ac prohibits catharsis) license the absence of a second kinetic peak — they do NOT license the absence of cumulative consequence. A defense that cites tone-law against a structural seam earns a sharper attack, not a concession."
+  - "Procedural recurrence carry-forwards stay attackable. Ledger-sequence fatigue 'noted in the season-plan' does not close the seam — the bones still flatten dread."
+
+season_scope_adversarial:
+  - "Atmospheric drift across multi-episode arcs — the world stops feeling hostile across stretches; uncanny becomes routine."
+  - "Procedural recurrence — institutional or ritual sequences (folio drawn, ledger marked, retinue arrives) repeating across 3+ episodes flatten dread into operations."
+  - "Cost-not-landing across an arc — multi-episode consequence chains that resolve bureaucratically rather than land on someone."
+  - "Tonal flatline across multi-stretch register where escalation should pull — the season's pressure stops moving."
+  - "Catharsis-deferral that becomes catharsis-avoidance — when the long-cost structure runs long enough that the cost stops being legible as cost."

@@ -189,3 +189,15 @@ tuning_r2_status:
     - URI-021 meta-tuning loop pattern documentation
   total_v2_carry_backs_r1_plus_r2: 15 (URI-007 through URI-021)
   no_corpus_mutations: true (R2 produces critic improvements only; R1 routed subtasks still apply)
+
+pipeline_landing_status:
+  date: 2026-05-10
+  landed_items: 11 of 15 V2 carry-backs (URI-007 through URI-017)
+  landed_files:
+    - .claude/commands/and-season.md (URI-007 idiom-depletion S3.5; URI-008 denouement-share LATE-WEIGHT in S2; URI-009 plan-designated narrator in Phase 4 Step 3; URI-010 position-aware-mapping note in Phase 4 Step 3; URI-011 mechanic-bearing OPEN-ENGAGES/CLOSE-EARNS-NEXT/SHAPE-COHERENT in Phase 4 Step 2; URI-012 new Pass S4.5 post-split-continuity; URI-013 S3-vs-S9 different-purposes note; URI-015 S6 drift-resolution routing; URI-016 S8 split-verdict adjudication)
+    - schemas/card.schema.md (URI-017 Threshold Discipline body section; URI-014 Season-Scope Adversarial body section in audience role)
+    - active-project/audience/dark-fantasy-reader/card.md (URI-017 + URI-014 persona-specific content)
+    - active-project/audience/pulp-enthusiast/card.md (URI-017 + URI-014 persona-specific content)
+    - active-project/audience/worm-canon-pedant/card.md (URI-017 + URI-014 persona-specific content)
+  remaining_v2_items: 4 (URI-010 schema-side clause optional; URI-018, URI-019, URI-020 auditor sub-classes — gated on URI-006 dedicated auditor-tuning project; URI-021 meta-tuning-loop documentation)
+  pipeline_state: V2 LIVE — next /and-season run uses landed mechanics
