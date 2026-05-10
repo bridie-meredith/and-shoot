@@ -56,7 +56,7 @@ seasons:
     chunk: "The tax-collection swarm event at ~86 AC converts Taylor from invisible smallfolk child to a named anomaly in Aldric Pryor's incident log, and the institutional apparatus that will eventually suppress her coalition takes its first documentary step; Taylor's counter-move is to build depth before breadth, recruiting Mira Stonefield and establishing the sept as her literacy and information node, but the same control instincts that make her effective keep her parents at managed distance and Mira at arm's length precisely when closeness would be cheaper. The personal cost begins paying out before the season closes: Elara Ashford cannot be kept at arm's length indefinitely, and before S1 ends the lord's traveling maester arrives at Fairstead under cover of routine ledger work — the steward's note has reached him, and the board has changed."
     episodes:
       - slug: s01e01
-        status: audited-r2
+        status: audited-r5
         narrator: taylor-hebert-jaehaerys
         chunk: "Show the audience the shape of the household Taylor wakes into and the apprentice mark that fixes her visible role inside it."
         proto_lines_path: active-project/theater/proto-lines/s01e01.md
@@ -67,8 +67,17 @@ seasons:
         round_3_zero_change: true  # all 6 R3 dispatches reported K-only; pipeline converged at R2
         audit_complete: true
         audit_path: active-project/staff/auditor/facets-final-audit.md
-        audit_findings: 5  # post-remediation: 4 hard cleared, 5 soft remain (mem:2/3/8 approach-zone; mem:5/narrator:26 + mem:8/narrator:25 dedup)
+        audit_findings: 10  # audit-r5 post NI tuning + sensory pilot + sensory:4 relocation; 0 HARD / 10 SIGNAL
         r2_audit_remediation_complete: true
+        tuning_rounds_complete:
+          - memory (legacy 3-persona pattern; 100% pass / 75% clean)
+          - feeling (legacy 3-persona; 92% pass / 75% clean; URI-008 cleared)
+          - narrator-interest (legacy 3-persona; 100% pass / 78% clean; +3 file-level adds for channel coverage)
+          - vibes (legacy 3-persona; 100% pass / 95% clean; AP8 mass cleanup; vibes:19 WITHDRAWN)
+          - sensory (TIGHTER-AUDIENCE pilot; 100% pass / 83% clean post sensory:4 @60->@61 fix; 3 specialist critic cards authored under staff/audience/sensory-*)
+        pattern_summary: 4 facets shipped under legacy 3-persona uniform pattern; 1 facet shipped under tighter-audience pattern (pilot validated 2026-05-10g pivot)
+        orchestrator_critic_path: active-project/staff/auditor/orchestrator-critic-verdict.md
+        orchestrator_critic_status: NOT-SUCCESSFUL on first fire (5/7 criteria) — fixes applied (sensory:4 relocated; this memory updated); re-fire pending
         cast: taylor-hebert-jaehaerys, oc-craftsman-mother, oc-craftsman-father
         locations: loc-craftsman-workshop-home
         prior_episode: none

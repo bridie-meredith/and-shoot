@@ -8,6 +8,6 @@ r2_tuning_defense: sensory:1 REVISE (old-state reanchored to loc-state:1 conditi
 1 @1 thermal: loft-pre-dawn-still -> dawn-cold-air  # tag: drop
 2 @3 smell: workshop-shutter-shut-enclosed -> mordant-stir-sharp  # tag: up
 3 @8 light: dawn-shuttered-dim -> morning-daylight-cut-through  # tag: up
-4 @60 light: workshop-dusk-closed -> tallow-lamp-glow-settle  # tag: up
+4 @61 light: workshop-dusk-closed -> tallow-lamp-glow-settle  # tag: up  # post-Phase-F relocation: @60 was time-skip blank, anchor-vacuum; @61 (taylor reaches the pallet) is bare-verb + loft-vent licenses lamp-glow-leak
 5 @130 light: tallow-lamp-guttering-unsteady -> candle-steady-flame  # tag: up
 6 @126 thermal: workshop-evening-settled -> room-chill-winter-candle-needed  # tag: drop

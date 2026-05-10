@@ -2,15 +2,15 @@
 generated: 2026-05-10
 source: active-project/theater/proto-lines/s01e01.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 206 facet entries; 39/102 protolines decorated (38.2%)
+totals: 205 facet entries; 38/102 protolines decorated (37.3%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
-| 0 (bare)   | 63 |
-| 1          | 8 |
-| 2          | 12 |
+| 0 (bare)   | 64 |
+| 1          | 6 |
+| 2          | 13 |
 | 3          | 10 |
 | 4          | 2 |
 | 5          | 3 |
@@ -67,7 +67,7 @@ totals: 206 facet entries; 39/102 protolines decorated (38.2%)
   tens:43 @53 r=1
   tens:44 @58 r=1 co=[loc-state:4, state:3]
   tens:45 @59 r=1
-  tens:46 @61 r=1 co=[loc-state:5]
+  tens:46 @61 r=1 co=[loc-state:5, sensory:4]
   tens:47 @62 r=1
   tens:48 @63 r=1
   tens:49 @64 r=1
@@ -129,8 +129,8 @@ totals: 206 facet entries; 39/102 protolines decorated (38.2%)
   loc-state:1 @1 back=Y co=[narrator:1, sensory:1]
   loc-state:2 @8 back=Y co=[narrator:4, sensory:3, state:1, vibes:16]
   loc-state:3 @32 back=Y co=[state:2, state:17, state:18]
-  loc-state:4 @58 back=Y co=[sensory:4, state:3]
-  loc-state:5 @61 back=Y
+  loc-state:4 @58 back=Y co=[state:3]
+  loc-state:5 @61 back=Y co=[sensory:4]
   loc-state:6 @92 back=Y
   loc-state:7 @126 back=Y co=[state:8, sensory:6]
   loc-state:8 @130 back=Y co=[narrator:21, sensory:5, state:9, state:10, vibes:17]
@@ -168,7 +168,7 @@ totals: 206 facet entries; 39/102 protolines decorated (38.2%)
   sensory:1 @1 back=Y co=[loc-state:1, narrator:1]
   sensory:2 @3 back=Y
   sensory:3 @8 back=Y co=[loc-state:2, narrator:4, state:1, vibes:16]
-  sensory:4 @60 back=Y co=[loc-state:4]
+  sensory:4 @61 back=Y co=[loc-state:5]
   sensory:5 @130 back=Y co=[loc-state:8, narrator:21, state:9, state:10, vibes:17]
   sensory:6 @126 back=Y co=[loc-state:7, state:8]
 
@@ -180,7 +180,7 @@ totals: 206 facet entries; 39/102 protolines decorated (38.2%)
   state:5 @98 back=Y co=[tens:75, narrator:17]
   state:6 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
   state:7 @122 back=Y
-  state:8 @126 back=Y co=[loc-state:7]
+  state:8 @126 back=Y co=[loc-state:7, sensory:6]
   state:9 @130 back=Y co=[loc-state:8, narrator:21, sensory:5, state:10, vibes:17]
   state:10 @130 back=Y co=[loc-state:8, narrator:21, sensory:5, state:9, vibes:17]
   state:11 @23 back=Y co=[tens:19, narrator:7]
@@ -223,7 +223,7 @@ totals: 206 facet entries; 39/102 protolines decorated (38.2%)
 ### meta (0 entries)
 _(no entries)_
 
-### vibes (21 entries)
+### vibes (20 entries)
   vibes:1 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20] lic-out=[state-update:6, state-update:13, tens:3, feeling:11]
   vibes:2 @27 back=Y co=[narrator:9, mem:1] lic-out=[memory:1, proto:27]
   vibes:3 @35 back=Y co=[tens:30, narrator:10, narrator:28, state:19, state:20, mem:2, feel:9, vibes:9, vibes:12] lic-out=[memory:2, state-update:19, state-update:20, feeling:9]
@@ -242,7 +242,6 @@ _(no entries)_
   vibes:16 @8 back=Y co=[loc-state:2, narrator:4, sensory:3, state:1] lic-out=[state-update:1, proto:8]
   vibes:17 @130 back=Y co=[loc-state:8, narrator:21, sensory:5, state:9, state:10] lic-out=[state-update:9, state-update:10, state-update:8, proto:130]
   vibes:18 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:20] lic-out=[state-update:6, state-update:13, state-update:16, tens:3]
-  vibes:19 @- back=- lic-out=[proto:1]
   vibes:20 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18] lic-out=[state-update:18, state-update:19, state-update:20, feeling:9, tens:2]
   vibes:21 @- back=- lic-out=[state-update:6, state-update:13, state-update:15, state-update:16, state-update:21, state-update:22]
 
@@ -266,7 +265,6 @@ _(no entries)_
 ## Lonely entries (no co-location, no inbound license)
 _Round-2 deletion candidates — but check the rubric before cutting._
 
-- loc-state:5 @61  `taylor-hebert-jaehaerys reaches the pallet`
 - loc-state:6 @92  `taylor-hebert-jaehaerys approaches the table`
 - narrator:2 @4  `taylor-hebert-jaehaerys crosses the workshop floor`
 - sensory:2 @3  `oc-craftsman-mother stirs the mordant pot`
