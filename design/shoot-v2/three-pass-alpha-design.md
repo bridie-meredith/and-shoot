@@ -61,9 +61,9 @@ Build incrementally; each step has standalone value and can be a stopping point.
 | A | `/and-facets` Phase-0 + Round 1 only, on s01e01 | **shipped 2026-05-10** |
 | B | Cite-index builder | **shipped 2026-05-10** — `active-project/staff/cite-index/build_cite_index.py`; wired into `/and-facets` Phase 7 as default output |
 | C | Gap-log emission added to Round-1 midband authoring | **deferred indefinitely** — reclassified as debug-only per user direction 2026-05-10b; Round 2 gates additions through the per-facet rubric, gap-logs are not load-bearing for default flow |
-| D | Round 2 (hybrid judge with full graph) on memory + feeling | unbuilt |
-| E | Round 3 (repeat hybrid judge) on memory + feeling | unbuilt |
-| F | Add NI + metaphor to Rounds 2 and 3 | unbuilt |
+| D | Round 2 (hybrid judge with full graph) — NI + memory + feeling + metaphor | **shipped 2026-05-10** — `/and-facets-r2`; ran on s01e01 with 35K/3D/11A net +8 entries |
+| E | Round 3 (repeat hybrid judge) — same midband set | **shipped 2026-05-10** — `/and-facets-r3` ready; not yet executed |
+| F | (Folded into D + E — NI + metaphor included from the start, not deferred) | **n/a** |
 | G | Final audit (flag-only initially; delete-authoritative once auditor tuned) | unbuilt |
 | H | Wire all rounds into `/and-facets` with `--from-round=N` resume | unbuilt |
 | I | Oscillation measurement + decide whether convergence machinery is needed | unbuilt |
