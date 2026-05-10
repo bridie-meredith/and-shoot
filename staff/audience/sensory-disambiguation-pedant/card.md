@@ -37,6 +37,10 @@ example seams (for calibration):
 - "@<id> fires on 'thunder' — the proto-line word is charged. The fire is redundant; cut."
 - "@<id> claims old-state X but loc-state:Y at this beat established old-state Z. Baseline is invented."
 - "@<id> on 'wind' fires on `light` modality. Wind is tactile or pressure; the modality choice doesn't track the bare word."
+- "@<id> fires on 'lights the lamp' / 'opens the shutter' / 'ignites the candle' — the verb itself names the perceptual act. Action-verbs that ARE the perception (light/open/ignite/extinguish) self-charge; the sensory flag is doubling. Cut."
+
+action-verb self-charge note (added 2026-05-10 from sensory pilot meta-tuning):
+A class of charged proto-line words that's easy to miss: action verbs whose semantic content IS the sensory event. "Lights the lamp" carries the light-onset; "opens the shutter" carries the dawn-cut; "ignites" / "catches" / "extinguishes" carry their respective inflections. These are charged, not bare. A sensory fire on top of an action-verb-self-charge proto-line is a doubling, just like firing on "thunder" or "shadow." Refuse.
 
 what NOT to attack:
 - Modality coverage at file level (that's the modality-coverage critic's job).

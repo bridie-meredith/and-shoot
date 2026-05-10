@@ -30,6 +30,9 @@ primary attack vector: **old-state lineage.** For each sensory fire, walk the li
 3. Are they consistent? If not, the entry has a baseline-invention or contract-break problem.
 4. Does the new-state describe a delta the loc-state's palette would actually produce?
 
+loc-state-gap protoline failure mode (added 2026-05-10 from sensory pilot meta-tuning):
+A sensory fire at a protoline that has NO prior loc-state entry establishing a baseline is unanchored. Distinct from the more-common contract-break case (where loc-state exists but contradicts the sensory's old-state field). The unanchored case is its own failure: the sensory delta is firing in a frame the loc-state never set up. Flag explicitly: "@<id> fires at @<protoline> — no loc-state entry at or before this anchor; baseline cannot be derived." This is a STRONG attack — the entry is structurally dependent on a context the sensory facet alone cannot supply.
+
 attack format: per-entry; cites the loc-state entry that should have governed the baseline. Direct adversarial reading; don't cite "rubric §sensory" unless cleanest. Sentences ≤25 words.
 
 example seams (for calibration):
