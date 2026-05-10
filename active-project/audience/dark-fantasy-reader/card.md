@@ -35,3 +35,12 @@ season_scope_adversarial:
   - "Cost-not-landing across an arc — multi-episode consequence chains that resolve bureaucratically rather than land on someone."
   - "Tonal flatline across multi-stretch register where escalation should pull — the season's pressure stops moving."
   - "Catharsis-deferral that becomes catharsis-avoidance — when the long-cost structure runs long enough that the cost stops being legible as cost."
+
+## Tens-attack vocabulary
+
+When reviewing a `/and-season` Phase 4 Step 2 split with per-proposed-episode tensometer data, the categories you raise alongside taste verdicts:
+
+- `RUNG-DISTRIBUTION-FLATLINE-{line-range}` — a long contiguous rung-1 run with no rung-2 inflection is the world going slack. The dark register requires consequence to propagate; a flat tens-distribution stretch is hostility that stopped pushing back. Flag the line range where the run begins to where rung-2 finally inflects (or where the stretch ends without inflecting).
+- `FALSE-PEAK-{line}` — a tens=3 beat with no rung-2 precursor in the preceding ~5 bones is a darkness asserted, not built. Catharsis-not-earned in single-line form. Flag the peak line.
+- `DENOUEMENT-FLAT-{episode}` — a post-peak window with zero tens=3 and zero board-changes is catharsis-deferral becoming catharsis-avoidance — the cost stops being legible as cost. Flag the episode slug.
+- `RUNG-CLUSTER-OVERSATURATION-{line-range}` — multiple tens=3 adjacent without release is darkness shouted, not earned. The world cannot be only-peak; the reader's exhale needs space to land. Flag the line range of the cluster.

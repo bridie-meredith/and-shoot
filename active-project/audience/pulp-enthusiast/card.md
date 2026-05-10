@@ -34,3 +34,12 @@ season_scope_adversarial:
   - "Ratchet-immediacy — a 'ratchet click' that fires at line N but only registers consequence at line N+80 is functionally a flatline at the line where it fires."
   - "Aftermath-drift after peaks — post-peak sections running as management rather than consequence (the world handling what the peak just did, instead of the peak doing more)."
   - "Setup that runs longer than payoff — when the toll exceeds what the payoff returns, momentum is net-negative for the arc."
+
+## Tens-attack vocabulary
+
+When reviewing a `/and-season` Phase 4 Step 2 split with per-proposed-episode tensometer data, the categories you raise alongside taste verdicts:
+
+- `RUNG-DISTRIBUTION-FLATLINE-{line-range}` — a long contiguous rung-1 run with no rung-2 inflection is the toll exceeding what the payoff returns. Momentum is net-negative across the stretch. Flag the line range from where the flat run begins to where rung-2 finally inflects.
+- `FALSE-PEAK-{line}` — a tens=3 with no rung-2 setup in the preceding ~5 bones is the punch without the windup. The reader sees the impact line and feels nothing, because the body didn't load up. Flag the peak line.
+- `DENOUEMENT-FLAT-{episode}` — a post-peak window with zero tens=3 and zero board-changes is aftermath-drift in its purest form: the world handling what the peak did, instead of the peak doing more. Flag the episode slug.
+- `RUNG-CLUSTER-OVERSATURATION-{line-range}` — multiple tens=3 adjacent without release is the climax repeating itself. Reads as the writer not knowing where to stop, or stacking peaks because each one didn't quite land. Flag the line range of the cluster.
