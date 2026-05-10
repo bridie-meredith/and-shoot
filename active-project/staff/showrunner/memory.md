@@ -211,10 +211,37 @@ seasons:
       planned_episode_count: 6 (multiple of 3 ✓)
       slug_provisional: "the planned slugs above are content anchors; final slugs decided at /and-season Phase 4 split"
       next_session_action: "/and-season s02 — the heavy run with tens bone-gate first live-fire (URI-026)"
+    and_season_run_2026_05_10:
+      status: PHASE-4-INCOMPLETE (FAIL F7-bone)
+      orchestrator_verdict: FAIL — F7-bone (2 tens-gate-residual-HARD findings; URI-026 bone-gate first live-fire validated mechanism)
+      verdict_path: active-project/staff/auditor/season-s02-orchestrator-verdict.md
+      phase_2_status: iteration 2 applied (regen by screen-writer; iter-2 not formally re-audited; documented gap)
+      phase_3_status: SKIPPED (deferred to next session per orchestrator budget; documented gap)
+      phase_4_status:
+        step_1: COMPLETE (split proposal: 6 episodes; SPLIT-PROPOSAL-COMPLETE; 2 band exceedances flagged at E1+E2; POV honored)
+        step_1_5: COMPLETE-WITH-FAIL (URI-026 bone-gate first live-fire; tens authored for 6 episodes; SHAPE-FAIL HARD on s02e01 + s02e02; SHAPE-OK or borderline on others)
+        step_2: NOT-RUN (gated on Step 1.5 convergence per F7-bone protocol)
+        step_3: NOT-RUN (gated on Step 2)
+      bone_gate_uri_026_validation:
+        mechanism: WORKED-AS-DESIGNED
+        what_it_caught: s02e01 inert-stretch (31 contiguous rung-1) + scene-peaks-absent + single-peak-in-205-bones; s02e02 gathering-scenes-no-rupture-beat + coalition-arc-undercharged
+        what_pre_bone_gate_would_have_missed: Pass 4 audience trim returned stretch-flatlines but no per-episode actionable kickback; Pass 3 shape returned 3 different-axis faults; tens-rating produced explicit per-episode SHAPE-FAIL verdicts with criteria
+        evidence: active-project/staff/auditor/season-s02-pass-S4-step1.5-tens-mega.md
+      next_session_actions:
+        - screen-writer regen on s02e01 (add ≥2 rupture beats: 1 in Mira-first-exchange scene + 1 in reeve-household scene; minimum +1 rung-3 in 1-130 range)
+        - screen-writer regen on s02e02 (add ≥1 rupture beat in gathering scenes 358-396 OR 461-489 — Mira commits publicly / is witnessed / is recorded)
+        - Re-fire Step 1.5 tens for s02e01 + s02e02 only (per-spec parallel-fork dispatch this time for round-trip verification; iteration 2 of bone-gate; cap=2 per window)
+        - If Step 1.5 iter-2 PASSes: proceed to Step 2 (audience x3 + mechanic auditor) for all 6 episodes
+        - If Step 1.5 iter-2 still HARD on s02e01 or s02e02: F7-bone FAIL persists; escalate to user for plan-level reconsideration of those beats
+      orchestrator_critic_notes:
+        - Phase 2 iter-2 unverified (acceptable — not F6 because no convergence claim made)
+        - Phase 3 entirely skipped (acceptable — not F1 because explicit deferral, not iteration-cap-hit-without-convergence)
+        - Step 1.5 single-fork deviation (per-spec parallel-fork verification recommended next iteration)
+      f_r2_counts: not-fired (no /and-facets-r2 run on s02 corpus; expected — facet authoring stage not reached)
 
 active:
   season: s02
-  episode: s01e01
+  episode: s01e01  # not advanced; Phase 4 did not converge to per-episode files
 
 tuning_r1_status:
   phase: I-complete
