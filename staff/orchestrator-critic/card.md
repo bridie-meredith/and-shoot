@@ -116,6 +116,14 @@ B6. **Bone-gate convergence (URI-026, 2026-05-10).**
 - No `tens-gate-residual-HARD` findings open at end-of-run. Any open ⇒ F7 (FAIL).
 - Shared-reviewer accounting: the mechanic-arithmetic auditor invoked at Step 2 cited the class definitions from `.claude/commands/and-facets-audit.md` (FREQUENCY-BAND / CURVE-SHAPE / AP-SCAN tens-subset). No /and-season-specific rubric reimplementation.
 
+B7. **F-R2-* counts from `/and-facets` (URI-026 follow-on, Plan A A2, 2026-05-10).**
+- If `active-project/theater/facets/.r2-decisions.md` exists, read its top-of-file `f-r2-counts: {f-r2-1: N, f-r2-2: N, f-r2-3: N, f-r2-4: N}` frontmatter (schema: `schemas/audit-report.schema.md` §"R2 decision-shard frontmatter").
+- Threshold: `f-r2-1 > 0` is HARD; `f-r2-2 + f-r2-3 + f-r2-4 > 2` is SIGNAL.
+- HARD ⇒ F7 with `/and-facets` attribution (see §"Failure modes" F7).
+- SIGNAL ⇒ PASS-WITH-NOTES with `f-r2-soft-residuals: {n}` note.
+- Absent file ⇒ B7 reports `not-fired` (no `/and-facets` run on this corpus yet); does not block PASS but prints `f-r2-counts: not-fired` in the verdict.
+- Cross-pipeline accounting: this is the only Category B item that can be FAIL-attributed to `/and-facets` rather than `/and-season`. The verdict is still emitted by `/and-season`'s orchestrator-critic; F7 attribution is a routing tag, not an ownership transfer.
+
 ### Category C — Routing
 
 C1. **All HARD-finding routings are explicit.**
@@ -183,10 +191,20 @@ A pass iterates 3 times with no forward progress AND the rubric mismatch is not 
 F6. **Convergence claimed but residuals masked:**
 Any state where showrunner memory reports `protolines_complete` AND there are unrouted HARD findings, unresolved REJECT verdicts, or unacknowledged carry-forwards. The orchestration cannot lie that it converged.
 
-F7. **Bone-gate residual (URI-026, 2026-05-10):**
-Any open `tens-gate-residual-HARD` finding at end-of-run = FAIL, regardless of routing. The bone-gate (Phase 4 Step 1.5 tens authoring + Step 2 audience+mechanic combined verdict) operates under the bones-first principle: if the proto-lines fail at the rung-distribution / curve-shape / mechanic class library tests after the inner regen iteration cap (2 per window), the run did not establish a sound skeleton and downstream facet work cannot rescue it. F7 is named because it is named — every residual category is enumerated; F7 is the bone-gate's enumeration, not a "we'll figure it out" hand-wave. PASS-WITH-NOTES does **not** apply to F7; it is the one residual class that auto-FAILs.
+F7. **Bone-gate residual (URI-026, 2026-05-10) OR F-R2-* HARD residual (URI-026 follow-on, Plan A A2, 2026-05-10):**
 
-Verdict-producer cross-check for F7: the verdict reads `season-<slug>-pass-S4-split-mechanic-{episode-slug}.md` and the `season-<slug>-split-review-{persona}.md` files for HARD findings owned `OWNER: rubric` or HARD-class audience findings (`SHAPE-COHERENT-FLAT-AFTERMATH`, `OPEN-ENGAGES-FAIL`, `CLOSE-EARNS-NEXT-AFTERMATH-DRIFT-{N>20}`) that remain after Step 2's inner iteration cap. Any such finding still open ⇒ F7 FAIL.
+F7 fires when **either** of the following is true at end-of-run:
+
+- **F7-bone:** any open `tens-gate-residual-HARD` finding (the original URI-026 trigger).
+- **F7-r2:** `active-project/theater/facets/.r2-decisions.md` exists and its frontmatter `f-r2-counts.f-r2-1 > 0` (the Plan A A2 trigger surfaced from `/and-facets-r2` decision shards).
+
+Both triggers operate under the bones-first principle: if the proto-lines fail at the rung-distribution / curve-shape / mechanic class library tests after the inner regen iteration cap (2 per window), or if the R2 judge's keep/delete/add decisions failed rubric-form discipline (F-R2-1) on the same corpus, the run did not establish a sound skeleton and downstream facet work cannot rescue it. F7 is named because it is named — every residual category is enumerated; F7 is the bone-gate's enumeration including its `/and-facets` consumer, not a "we'll figure it out" hand-wave. PASS-WITH-NOTES does **not** apply to F7; it is the one residual class that auto-FAILs.
+
+The failure summary line names the trigger explicitly: `F7-bone — <evidence>` or `F7-r2 — f-r2-1: <n> from /and-facets-r2 decision shards`. If both fire, list both.
+
+Verdict-producer cross-check for F7-bone: the verdict reads `season-<slug>-pass-S4-split-mechanic-{episode-slug}.md` and the `season-<slug>-split-review-{persona}.md` files for HARD findings owned `OWNER: rubric` or HARD-class audience findings (`SHAPE-COHERENT-FLAT-AFTERMATH`, `OPEN-ENGAGES-FAIL`, `CLOSE-EARNS-NEXT-AFTERMATH-DRIFT-{N>20}`) that remain after Step 2's inner iteration cap. Any such finding still open ⇒ F7-bone FAIL.
+
+Verdict-producer cross-check for F7-r2: the verdict parses the `f-r2-counts` mapping from `active-project/theater/facets/.r2-decisions.md` per `schemas/audit-report.schema.md` §"R2 decision-shard frontmatter". `f-r2-1 > 0` ⇒ F7-r2 FAIL. The `/and-facets` attribution is a routing tag on the failure summary; the verdict is still emitted by `/and-season`. If the consolidated file is absent, F7-r2 cannot fire (B7 reports `not-fired`); F7 falls back to F7-bone evaluation only.
 
 ---
 
@@ -258,6 +276,11 @@ inputs: <list of audit reports + memory file + session metrics>
   - Step 2 mechanic:         <ALL-MECHANIC-CLEAN | MECHANIC-FAIL-{episode}:{classes}>  (OWNER: rubric)
   - Inner-iteration count:   <n of 2 max per window>
   - Open residuals:          <list of unresolved tens-gate-residual-HARD findings or "none">
+- B7 F-R2-* counts (URI-026 follow-on; from `/and-facets-r2`):
+  - f-r2-counts:             <{f-r2-1: N, f-r2-2: N, f-r2-3: N, f-r2-4: N} | not-fired>
+  - source:                  <active-project/theater/facets/.r2-decisions.md | absent — `/and-facets` not run on this corpus>
+  - HARD threshold:          <PASS (f-r2-1 = 0) | FAIL (f-r2-1 > 0 → F7-r2)>
+  - SIGNAL threshold:        <PASS (sum f-r2-2/3/4 ≤ 2) | NOTE (sum > 2 → f-r2-soft-residuals:n)>
 
 ## Routing (Category C)
 
@@ -281,7 +304,7 @@ inputs: <list of audit reports + memory file + session metrics>
 
 ## Failure summary (FAIL details, if any)
 
-- <which F1–F6 triggered + specific evidence>
+- <which F1–F7 triggered + specific evidence; F7 names trigger explicitly: `F7-bone — <evidence>` and/or `F7-r2 — f-r2-1: <n> from /and-facets-r2 decision shards`>
 
 ---
 
@@ -307,4 +330,5 @@ This card has the same honesty discipline as the audience Threshold Discipline s
 
 - v1 — 2026-05-10: initial card; calibrated against R1+R2 of /and-season s01. Hard cap 60 dispatches; soft 30; iteration cap 3; failure modes F1–F6 named.
 - v1.1 — 2026-05-10 (URI-026): bones-first hard-gate landed. F7 added (bone-gate residual auto-FAIL); Category B grows B6 (bone-gate convergence); verdict template grows §B6 block; runtime budget R1 narrative notes the bone-gate's ~12-dispatch worst-case addition (re-recalibrate empirically). Shared-reviewer-resources principle: bone-gate mechanic verdict invokes `/and-facets-audit.md` class library by reference — no /and-season-specific reimplementation.
+- v1.2 — 2026-05-10 (URI-026 follow-on, Plan A Action A2): F-R2-* → F7 emission contract. F7 split into F7-bone (existing tens-gate trigger) and F7-r2 (new `/and-facets-r2` decision-shard f-r2-1 > 0 trigger). Category B grows B7 (F-R2-* counts surfaced from `active-project/theater/facets/.r2-decisions.md`); verdict template grows §B7 block; failure summary line names trigger explicitly. Schema authority for the consumed file lives in `schemas/audit-report.schema.md` §"R2 decision-shard frontmatter" — `/and-facets` is the producer, `/and-season` is the consumer. No new failure-mode number (preserves F1–F7 enumeration discipline; F7 widens its definition rather than spawning F8).
 - Future revisions: when a `/and-season` run produces verdict-discipline data (e.g., a PASS that should have been FAIL, or a FAIL that should have been PASS-WITH-NOTES), a meta-tuning round on this card itself can adjust thresholds. Calibration is empirical — the card does not pretend its thresholds are platonic.

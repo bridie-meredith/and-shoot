@@ -90,3 +90,57 @@ audit:
       why: episode chunk requires resolving the Mira trust arc but season plan placed that resolution in s01e04; the episode cannot deliver its chunk without contradicting the season plan
       criteria: showrunner must decide whether to advance the season resolution or revise the episode chunk
 ```
+
+---
+
+## R2 decision-shard frontmatter (URI-026 follow-on, 2026-05-10)
+
+`/and-facets-r2` emits per-layer decision shards at `active-project/staff/<facet>/r2-decision-shard.md` (per-character for the feeling layer). These shards are consolidated at Phase 6 of `/and-facets` into `active-project/theater/facets/.r2-decisions.md`. The consolidated file is the cross-pipeline contract that `/and-season`'s orchestrator-critic Phase 6 verdict reads to surface F-R2-* counts in F7.
+
+### Shard format
+
+```
+---
+report: r2-decision-shard
+facet: <facet slug>             # e.g. memory | feeling-taylor | sensory | vibes | ...
+episode: <episode slug>          # e.g. s01e01
+date: <ISO date>
+f-r2-counts: {f-r2-1: N, f-r2-2: N, f-r2-3: N, f-r2-4: N}
+---
+
+# R2 decision shard — <facet> — <episode>
+
+<one free-prose entry per R2 decision/add. Each entry ends with a verdict line:
+VERDICT: KEEP | DELETE | ADD — F-R2-<n>:<class> if classified, else clean.>
+```
+
+### Consolidated file
+
+`active-project/theater/facets/.r2-decisions.md` is built by summing every per-shard `f-r2-counts` mapping into a single top-of-file frontmatter block:
+
+```
+---
+report: r2-decisions-consolidated
+episode: <episode slug>
+date: <ISO date>
+shards: <list of source shard paths>
+f-r2-counts: {f-r2-1: N, f-r2-2: N, f-r2-3: N, f-r2-4: N}
+---
+
+# R2 decisions — <episode>
+
+<concatenation of shard bodies, headed by their facet slug>
+```
+
+### F-R2-* class definitions
+
+The four failure classes are defined in `design/shoot-v2/r2-judge-tuning/A-corpus.md`. Summary for the reader of this schema:
+
+- **F-R2-1** — rubric-form discipline failure: R2 revision/add violates the locked R1 form for the layer.
+- **F-R2-2** — motive-honesty failure: stated decision motive doesn't match what the diff actually changed.
+- **F-R2-3** — niche-driven add: R2 added an entry that the layer's rubric does not warrant.
+- **F-R2-4** — graph-incoherence: R2 mutation breaks the cite-index DAG or contradicts a sibling layer.
+
+### Consumer contract
+
+`staff/orchestrator-critic/card.md` Phase 6 verdict reads `f-r2-counts` from the consolidated file when present. Threshold: `f-r2-1 > 0` is HARD; `f-r2-2 + f-r2-3 + f-r2-4 > 2` is SIGNAL. HARD trips F7 with `/and-facets` attribution.
