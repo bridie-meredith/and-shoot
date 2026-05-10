@@ -2,14 +2,14 @@
 generated: 2026-05-10
 source: active-project/theater/proto-lines/s01e01.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 205 facet entries; 38/102 protolines decorated (37.3%)
+totals: 206 facet entries; 39/102 protolines decorated (38.2%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
-| 0 (bare)   | 64 |
-| 1          | 7 |
+| 0 (bare)   | 63 |
+| 1          | 8 |
 | 2          | 12 |
 | 3          | 10 |
 | 4          | 2 |
@@ -65,7 +65,7 @@ totals: 205 facet entries; 38/102 protolines decorated (37.3%)
   tens:41 @49 r=1
   tens:42 @50 r=1
   tens:43 @53 r=1
-  tens:44 @58 r=1 co=[loc-state:4, sensory:4, state:3]
+  tens:44 @58 r=1 co=[loc-state:4, state:3]
   tens:45 @59 r=1
   tens:46 @61 r=1 co=[loc-state:5]
   tens:47 @62 r=1
@@ -120,7 +120,7 @@ totals: 205 facet entries; 38/102 protolines decorated (37.3%)
   tens:96 @122 r=1 co=[state:7]
   tens:97 @123 r=1
   tens:98 @124 r=1
-  tens:99 @126 r=1 co=[loc-state:7, state:8]
+  tens:99 @126 r=1 co=[loc-state:7, state:8, sensory:6]
   tens:100 @129 r=1 co=[feel:13]
   tens:101 @130 r=1 co=[loc-state:8, narrator:21, sensory:5, state:9, state:10, vibes:17]
   tens:102 @131 r=2 back=Y co=[narrator:25, mem:8]
@@ -132,7 +132,7 @@ totals: 205 facet entries; 38/102 protolines decorated (37.3%)
   loc-state:4 @58 back=Y co=[sensory:4, state:3]
   loc-state:5 @61 back=Y
   loc-state:6 @92 back=Y
-  loc-state:7 @126 back=Y co=[state:8]
+  loc-state:7 @126 back=Y co=[state:8, sensory:6]
   loc-state:8 @130 back=Y co=[narrator:21, sensory:5, state:9, state:10, vibes:17]
 
 ### narrator (27 entries)
@@ -164,17 +164,18 @@ totals: 205 facet entries; 38/102 protolines decorated (37.3%)
   narrator:28 @35 back=Y co=[tens:30, narrator:10, state:19, state:20, mem:2, feel:9, vibes:3, vibes:9, vibes:12]
   narrator:29 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
 
-### sensory (5 entries)
+### sensory (6 entries)
   sensory:1 @1 back=Y co=[loc-state:1, narrator:1]
   sensory:2 @3 back=Y
   sensory:3 @8 back=Y co=[loc-state:2, narrator:4, state:1, vibes:16]
-  sensory:4 @58 back=Y co=[loc-state:4, state:3]
+  sensory:4 @60 back=Y co=[loc-state:4]
   sensory:5 @130 back=Y co=[loc-state:8, narrator:21, state:9, state:10, vibes:17]
+  sensory:6 @126 back=Y co=[loc-state:7, state:8]
 
 ### state (22 entries)
   state:1 @8 back=Y co=[loc-state:2, narrator:4, sensory:3, vibes:16]
   state:2 @32 back=Y co=[loc-state:3, state:17, state:18]
-  state:3 @58 back=Y co=[loc-state:4, sensory:4]
+  state:3 @58 back=Y co=[loc-state:4]
   state:4 @93 back=Y co=[tens:70]
   state:5 @98 back=Y co=[tens:75, narrator:17]
   state:6 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
