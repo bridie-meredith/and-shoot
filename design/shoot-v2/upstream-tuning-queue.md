@@ -274,6 +274,7 @@ Categories:
 - **Action:** rubric edits 1-8 land in `rubric-feeling.md` V2.1; process-protocol item 9 lands in `.claude/commands/and-facets-r2.md` as a mandatory final-pass before round-close.
 - **Cost:** medium. Rubric edits + R2 command edit + Phase-5 mechanic re-verify on s01e01 corpus + cross-validation against next-episode tuning data.
 - **Note:** filed as URI-007 in the /and-facets session branch; renumbered to URI-023 on merge to avoid collision with /and-season URI-007 (idiom depletion).
+- **Status update 2026-05-10:** item 9 is the load-bearing R2 finding and is being addressed by the **R2 Judge Tuning project** (`design/shoot-v2/r2-judge-tuning/`). Phase A (corpus + failure-mode taxonomy) and Phase B (locked R2 rubric with gates G1–G4) authored. Phases C–F (audience attack → R2 self-review → carry-back → re-run validation) are dispatch-heavy and run in subsequent sessions. Items 1-8 remain feeling-rubric content edits and land separately.
 
 ### URI-024 — feel:10 Phase-E author regression
 
@@ -301,10 +302,12 @@ Categories:
   - **Phase 2 (after URI-006 auditor tuning lands):** promote S9.5 auditor to delete-authoritative; add URI-018/019/020 sub-classes which are exactly the season-aware auditor checks this URI is reaching for.
   - **Phase 3 (after Phase 1+2 produce verdict-discipline data):** add Phase 5.5 per-episode /and-facets pass, flag-driven. Recalibrate orchestrator-critic dispatch budget against measured per-run costs.
 - **Design sketch:** `design/shoot-v2/shared-review-mechanism.md` (authored 2026-05-10).
+- **Tensometer-as-mandatory-gate (user direction 2026-05-10):** after R2 judge tuning completes (see URI-023 status update + `design/shoot-v2/r2-judge-tuning/`), tensometer is **promoted to a mandatory pass** within /and-season Pass S9.5 (no longer "subset, recommended"). Gate: HARD on FREQUENCY-BAND or CURVE-SHAPE failure at season scope blocks Phase 4 split until resolved. Lands as part of URI-025 Phase 1 close, contingent on R2 tuning Phase F validation passing.
 - **Dependencies:**
   - URI-002 — its resolution validates that S9.5 catches what facet-stage caught after the fact.
   - URI-006 — Phase 2 requires the tuned auditor.
   - URI-018, URI-019, URI-020 — sub-classes that land *into* the shared auditor as part of Phase 2.
+  - **URI-023 R2 judge tuning** — must complete before tensometer-as-mandatory-gate promotion lands (R2 discipline is what makes the gate honest under graph-aware re-passes).
   - Orchestrator-critic card — Phase 6 verdict template extends to include S9.5/5.5 findings.
 
 ---
