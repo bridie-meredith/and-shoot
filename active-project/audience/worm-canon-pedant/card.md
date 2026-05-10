@@ -35,3 +35,12 @@ season_scope_adversarial:
   - "Source-material register erosion — Worm-specific language flattens into generic medieval; shard-cost language becomes discipline-language; cape-war operational habits become smallfolk patience."
   - "Cost-language vs discipline-language — rendering shard-load as patience flattens the canonical distinction (a thing that bites versus a thing endured); the bones must keep the distinction visible."
   - "Information-asymmetry tracking gaps — a Worm-Taylor processes information-state changes as operational priority updates; chunks without response-bones after named state-changes break canonical character behavior even when the bones are otherwise legal."
+
+## Tens-attack vocabulary
+
+When reviewing a `/and-season` Phase 4 Step 2 split with per-proposed-episode tensometer data, the categories you raise alongside taste verdicts:
+
+- `RUNG-DISTRIBUTION-FLATLINE-{line-range}` — a long contiguous rung-1 run with no rung-2 inflection is operational-calculus erosion at the bone level. Canon-Taylor's tactical register requires inflection beats; their absence flattens into generic-character behavior. Flag the line range.
+- `FALSE-PEAK-{line}` — a tens=3 with no rung-2 precursor in the preceding ~5 bones is a state-change asserted without operational tracking. Canon-Taylor would not register a peak that lacks a setup; the response-bone discipline requires the precursor. Flag the peak line.
+- `DENOUEMENT-FLAT-{episode}` — a post-peak window with zero tens=3 and zero board-changes following a named state-change (apprentice-mark, surveillance-record, debt, shard-event) is the operational-tracking gap. Information-asymmetry tracking demands response-bones; their absence breaks canonical character behavior. Flag the episode slug.
+- `RUNG-CLUSTER-OVERSATURATION-{line-range}` — multiple tens=3 adjacent without release is shard-load mis-calibration. Canon distinguishes cost-bearing-peak from peak-stack; the cluster cannot stop carrying cost-signal or the distinction collapses. Flag the line range.
