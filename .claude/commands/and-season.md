@@ -324,11 +324,7 @@ Dispatch the three audience personas in parallel against the proposed split. Eac
 
 **Per-persona report structure** — two **separately named, owner-attributed** sections, in addition to the existing SPLIT-{ACCEPT,REVISE} verdict:
 
-- **§ Audience taste verdict** (`OWNER: audience`) — ENGAGED / TOLERATED / BORED per stretch + persona-specific tens-attack findings. Tens-attack categories the persona may raise (carried in the dispatch brief until promoted to persona-card body in Phase 1.5):
-  - `RUNG-DISTRIBUTION-FLATLINE-{line-range}` — long contiguous run of tens=1 with no rung-2 inflection.
-  - `FALSE-PEAK-{line}` — tens=3 with no rung-2 precursor in the preceding ~5-bone window.
-  - `DENOUEMENT-FLAT-{episode}` — post-peak window with zero tens=3 and zero board-changes.
-  - `RUNG-CLUSTER-OVERSATURATION-{line-range}` — multiple tens=3 adjacent without release.
+- **§ Audience taste verdict** (`OWNER: audience`) — ENGAGED / TOLERATED / BORED per stretch + persona-specific tens-attack findings. Personas consult their persona card's `## Tens-attack vocabulary` section. The categories (`RUNG-DISTRIBUTION-FLATLINE-{line-range}`, `FALSE-PEAK-{line}`, `DENOUEMENT-FLAT-{episode}`, `RUNG-CLUSTER-OVERSATURATION-{line-range}`) are defined per-persona in card body; raise them with persona-specific reasoning. Promotion landed Plan A A1, 2026-05-10.
 - **§ Mechanic arithmetic verdict** (`OWNER: rubric`) — auditor narrow-scope dispatch (see below). Class library is `/and-facets-audit.md`'s; the auditor is invoked with a per-episode tens-only payload.
 
 Brief: read each proposed episode's stretch as a unit. Per-episode verdicts (mechanic-bearing per URI-011, 2026-05-10):
