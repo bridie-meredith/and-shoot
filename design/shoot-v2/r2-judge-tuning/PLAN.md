@@ -1,15 +1,27 @@
 ---
-doc: R2 judge tuning — clean plan v3
+doc: R2 judge tuning — terminal plan v3 (project CLOSED)
 date: 2026-05-10
-revision: v3 (annotates v2 with Plan B execution status; B3 + B5 deliverables landed in branch claude/implement-parallel-plan-SzWNb; B1 partially landed under baseline-blocked caveat; B2a / B4 / B2b-rerun deferred to a dispatch-heavy runtime session)
-supersedes: PLAN v2 (revision-in-place; structural plan unchanged); PLAN v1 (replaced)
-canonical-execution-plan: design/shoot-v2/plan-and-facets-r2-2026-05-10.md (Plan B; supersedes the action list below for the parallel-execution session)
-purpose: tight action list + decision points + honest risk register, with audit fixes applied.
+revision: v3-terminal — Plan B B3+B5+B2a landed in parallel-session; B4+B2b-rerun executed at Plan C C1 (single-session unified replacement for Plan A+B parallel). Project closed.
+supersedes: PLAN v2 (parallel-session structure); PLAN v1 (replaced)
+canonical-execution-plan: design/shoot-v2/plan-c-2026-05-10-unified.md C1 + C2 (replaces Plan B; parallel-session Plan B retired with reconciliation overhead — see archive/notes/problems.md P17)
+historical-execution-plan: design/shoot-v2/plan-and-facets-r2-2026-05-10.md (Plan B; superseded)
+purpose: tight action list + decision points + honest risk register; terminal version retained for trace.
+status: CLOSED 2026-05-10. URI-023 #9 landed and closed. URI-023 #1-8 remain open under feeling-rubric V2.1 parent.
 ---
 
-## v3 status note (top-of-file)
+## v3-terminal status note (top-of-file)
 
-Plan B (`design/shoot-v2/plan-and-facets-r2-2026-05-10.md`) is the canonical execution path. The action list below maps to B1–B5 as follows:
+**This project is CLOSED.** Plan B's parallel-session execution landed B3 (§Form re-test + decision-shard emission), B5 (queue hygiene partial), B2a (audience review + G5 position-gate). Plan C C1 (single-session unified) executed B4 (validation re-run on s01e01 against R1 baseline) and B2b-rerun (decision-discipline scoring against native logs). Gate PASS: 0× F-R2-1; F-R2-2/3/4 sum=2.
+
+Native log evidence is in `active-project/theater/facets/.r2-decisions.md`. Discipline scoring in `2b-rerun.md`. Validation summary in `4-validation.md`.
+
+**URI-023 item 9 (§Form re-test mandatory before any verdict): CLOSED.**
+**URI-023 items 1-8 (feeling rubric V2.1 carry-back): remain open** for a future feeling-rubric session.
+**URI-027 (F-R2-* schema reconciliation): patch lands at Plan C C5.**
+
+### Historical action map (v2 → Plan B → Plan C)
+
+Plan B (`design/shoot-v2/plan-and-facets-r2-2026-05-10.md`) was the v2-era canonical execution path. Action mapping:
 
 | v2 Action | Plan B step | Status |
 |---|---|---|

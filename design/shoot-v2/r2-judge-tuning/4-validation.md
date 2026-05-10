@@ -1,9 +1,42 @@
 ---
-phase: B4 — validation re-run (Plan B execution)
+phase: B4 — validation re-run (executed as Plan C C1)
 project: R2 hybrid judge tuning
 date: 2026-05-10
-status: SCAFFOLDED-WITH-B2a-CARRY-BACK — B2a cleared the precondition gate (12/14 = 85.7% clean ACCEPT, ≥70%); B4 itself runtime-deferred and re-routed to a fresh corpus per the corpus-staleness analysis below
+status: COMPLETE — Plan C C1 executed the re-run on s01e01 R1 baseline; native .r2-decisions.md emitted; gate PASS (0× F-R2-1; F-R2-2/3/4 sum=2 ≤ 2). Discipline review at 2b-rerun.md.
+plan-c-c1-artifacts:
+  - active-project/theater/facets/.r2-decisions.md (consolidated; 456 lines)
+  - active-project/staff/interest-narrator/r2-decision-shard.md
+  - active-project/staff/memory/r2-decision-shard.md
+  - active-project/staff/feeling/r2-decision-shard-{taylor-hebert-jaehaerys,oc-craftsman-mother,oc-craftsman-father}.md
+  - active-project/staff/metaphor/r2-decision-shard.md
+  - active-project/theater/facets/_cite-index.md (rebuilt)
+companion-scoring: design/shoot-v2/r2-judge-tuning/2b-rerun.md
+preserved-baseline-branch: r2-tuning-pre-rerun (full pre-revert state including audit-r5 + orchestrator-critic verdict on s01e01)
 ---
+
+## Done — persona cards released
+
+(Historical sentinel from Plan A/B coordination protocol; superseded by Plan C single-session execution. Retained for trace.)
+
+## Plan C C1 outcome
+
+Per-layer summary:
+
+| Layer | K | D | R | A | Cap-refusals | F-R2-1 | F-R2-2 | F-R2-3 | F-R2-4 | Discipline-fails |
+|---|---|---|---|---|---|---|---|---|---|---|
+| R2.1 NI | 17 | 0 | 4 | 2 | 5 | 0 | 0 | 0 | 1 | 0 |
+| R2.2 memory | 3 | 0 | 1 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
+| R2.3 feeling (Taylor) | 1 | 1 | 2 | 0 | 5 | 0 | 0 | 0 | 1 | 0 |
+| R2.3 feeling (mother) | 4 | 0 | 0 | 0 | 5 | 0 | 0 | 0 | 0 | 0 |
+| R2.3 feeling (father) | 3 | 0 | 0 | 0 | 7 | 0 | 0 | 0 | 0 | 0 |
+| R2.4 metaphor | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **TOTAL** | **28** | **1** | **8** | **3** | **25** | **0** | **0** | **0** | **2** | **0** |
+
+**Gate PASS.** Detailed discipline scoring in `2b-rerun.md`.
+
+---
+
+# Phase B4 — Validation Re-Run (historical scaffolding)
 
 # Phase B4 — Validation Re-Run
 

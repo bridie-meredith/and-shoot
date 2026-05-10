@@ -57,19 +57,25 @@ seasons:
     chunk: "The tax-collection swarm event at ~86 AC converts Taylor from invisible smallfolk child to a named anomaly in Aldric Pryor's incident log, and the institutional apparatus that will eventually suppress her coalition takes its first documentary step; Taylor's counter-move is to build depth before breadth, recruiting Mira Stonefield and establishing the sept as her literacy and information node, but the same control instincts that make her effective keep her parents at managed distance and Mira at arm's length precisely when closeness would be cheaper. The personal cost begins paying out before the season closes: Elara Ashford cannot be kept at arm's length indefinitely, and before S1 ends the lord's traveling maester arrives at Fairstead under cover of routine ledger work — the steward's note has reached him, and the board has changed."
     episodes:
       - slug: s01e01
-        status: audited-r5
+        status: faceted-r2  # 2026-05-10 Plan C C1 COMPLETE: re-fired /and-facets-r2 on R1 baseline with edited command (post URI-023 #9 + B2a G5 position-gate). Native .r2-decisions.md emitted. Gate PASS (0 F-R2-1; F-R2-2/3/4 sum=2 ≤ 2).
         narrator: taylor-hebert-jaehaerys
         chunk: "Show the audience the shape of the household Taylor wakes into and the apprentice mark that fixes her visible role inside it."
         proto_lines_path: active-project/theater/proto-lines/s01e01.md
         facets_path: active-project/theater/facets/
         round_1_complete: true
         round_2_complete: true
-        round_3_complete: true
-        round_3_zero_change: true  # all 6 R3 dispatches reported K-only; pipeline converged at R2
-        audit_complete: true
-        audit_path: active-project/staff/auditor/facets-final-audit.md
-        audit_findings: 10  # audit-r5 post NI tuning + sensory pilot + sensory:4 relocation; 0 HARD / 10 SIGNAL
-        r2_audit_remediation_complete: true
+        round_3_complete: false
+        audit_complete: false
+        prior_state_archived_branch: r2-tuning-pre-rerun
+        r2_decisions_path: active-project/theater/facets/.r2-decisions.md
+        r2_decision_shard_paths:
+          - active-project/staff/interest-narrator/r2-decision-shard.md
+          - active-project/staff/memory/r2-decision-shard.md
+          - active-project/staff/feeling/r2-decision-shard-taylor-hebert-jaehaerys.md
+          - active-project/staff/feeling/r2-decision-shard-oc-craftsman-mother.md
+          - active-project/staff/feeling/r2-decision-shard-oc-craftsman-father.md
+          - active-project/staff/metaphor/r2-decision-shard.md
+        r2_summary: "28K/1D/8R/3A; cap-refusals 25; F-R2-counts {1:0, 2:0, 3:0, 4:2}; discipline-fails 0; 1 inline T1 self-resolved; 5 margit referrals queued"
         tuning_rounds_complete:
           - memory (legacy 3-persona pattern; 100% pass / 75% clean)
           - feeling (legacy 3-persona; 92% pass / 75% clean; URI-008 cleared)

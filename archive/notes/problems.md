@@ -211,3 +211,32 @@ Issues that impeded intended function during activation. Ordered by severity.
 | P14 | Chunk body / planning note drift undetected at season planning | High | OPEN — current instance fixed |
 | P15 | /and-project arg parsing accepted ambiguous brief | Medium | OPEN |
 | P16 | Walk-on cards authored without tier field | Low | RESOLVED |
+| P17 | Parallel remote-session execution cost more than it saved | Medium | RESOLVED (process change) |
+
+---
+
+## P17 — Parallel remote-session execution cost more than it saved (2026-05-10)
+
+**Where:** Plan A (`design/shoot-v2/plan-and-season-followon-2026-05-10.md`) + Plan B (`design/shoot-v2/plan-and-facets-r2-2026-05-10.md`) ran on separate remote sessions over 2026-05-10. Branches `plan-a-*` and `claude/implement-parallel-plan-*`.
+
+**What should happen:** Two plans authored as parallel sessions with explicit file-disjoint write zones + sentinel signals + branch-SHA serialization should overlap to compress wall-clock time without compromising the linear ordering both plans require (A2 → B3 → B4 → A1 → A3 → A4 → A5).
+
+**What happened:** Most of the gate machinery landed cleanly (A1, A2, B3, B5, B2a, A5-partial). But the parallel structure produced overhead the plans did not account for:
+
+1. **Post-merge reconciliation commit** (`1b6dda0`) — B3 emission format had to be re-aligned to A2 schema after merge because the two sessions independently froze contracts before either had read the other's final landing.
+2. **Schema-definition drift** between `A-corpus.md` (Plan B's canonical source) and `audit-report.schema.md` (Plan A's emission) for F-R2-2 / F-R2-4 class definitions — logged as URI-027. Traceable to two sessions independently rendering the same class names with different framings.
+3. **Disclosed budget deviation** in A3 (Step 1.5 single-fork vs per-spec parallel-fork) — would have been caught at planning time in a unified session where round-trip verification was part of the same conversation.
+4. **No shared branch logic for gate-fire** — A3 failed F7-bone (a positive signal for URI-026 mechanism validation), but A4 / A5 / B4 deferred because neither plan owned the "what's the next move when the gate fires" question.
+
+The serialization both plans actually require is linear. Parallelizing it added contracts without delivering parallelism.
+
+**Impact:** ~1 extra reconciliation commit; 1 new URI logged (URI-027); 4 plan items deferred; one disclosed-deviation re-fire required in the next session. None catastrophic, but the coordination tax exceeded the time-savings from running in parallel.
+
+**Fix applied (process change, 2026-05-10):**
+
+- Plan A + Plan B replaced by **Plan C** (`design/shoot-v2/plan-c-2026-05-10-unified.md`) — single-session, linear sequence, no cross-session coordination contracts.
+- Convention: **when planned work is linear, run it in one session.** Parallel remote sessions are reserved for genuinely independent work (different artifacts, different reviewers, no shared schema authority). The litmus test: if two plans need to specify file-disjoint write zones + sentinel signals + branch-SHA serialization, the work is linear; run sequentially.
+- `/and-cut` is the checkpoint mechanism for breaching dispatch budgets, not session-forking.
+
+**Status:** RESOLVED (Plan C in flight; convention recorded here and in `archive/notes/ideas.md`).
+

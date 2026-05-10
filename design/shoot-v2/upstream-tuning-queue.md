@@ -257,7 +257,7 @@ Categories:
   - `CLAUDE.md` — agent routing table includes orchestrator-critic; directory map includes `staff/orchestrator-critic/`; Rules §8 amended to note the staff-facing exception to the cards/ five-class taxonomy; new Rule 10 names Phase 6 as the gate.
 - **Discipline:** card is library-only; no per-project copy. Versioning protocol in the card itself permits empirical recalibration of thresholds when runs produce verdict-discipline data.
 
-### URI-023 — Feeling rubric V2.1 carry-back (9 audience-confirmed)
+### URI-023 — Feeling rubric V2.1 carry-back (item 9 CLOSED 2026-05-10; items 1-8 remain open)
 
 - **Category:** Rubric tuning + process protocol.
 - **Source:** `design/shoot-v2/feeling-tuning-final.md` Phase 5 audience adjudication, 2026-05-10. All 9 candidates audience-confirmed as real ambiguities, not defensive constructions.
@@ -277,6 +277,16 @@ Categories:
 - **Status update 2026-05-10:** item 9 is the load-bearing R2 finding and is being addressed by the **R2 Judge Tuning project** (`design/shoot-v2/r2-judge-tuning/`). Phase A (corpus + failure-mode taxonomy) and Phase B (locked R2 rubric with gates G1–G4) authored. Phases C–F (audience attack → R2 self-review → carry-back → re-run validation) are dispatch-heavy and run in subsequent sessions. Items 1-8 remain feeling-rubric content edits and land separately.
 
 - **Status update 2026-05-10 — Plan B landed (item 9 closed; items 1-8 still open):** Plan B (`design/shoot-v2/plan-and-facets-r2-2026-05-10.md`) executed on branch `claude/implement-parallel-plan-SzWNb`. **Item 9 lands** as command-side §Form re-test in `.claude/commands/and-facets-r2.md` per-layer (R2.1 NI, R2.2 memory, R2.3 feeling, R2.4 metaphor) plus the locked-rubric + arbiter discipline (T1, T4 only) plus decision-shard emission per layer (`active-project/staff/<facet>/r2-decision-shard.md` with `f-r2-counts:` frontmatter) plus Phase 5.5 arbiter glue plus Phase 6 consolidation into `active-project/theater/facets/.r2-decisions.md`. The `.r2-decisions.md` frontmatter consumes Plan A A2's schema clause in `schemas/audit-report.schema.md` and feeds orchestrator-critic Phase 6 F7 (per URI-026). Validation re-run (B4) deferred to a dispatch-heavy runtime session. **Items 1-8 still open** as feeling-rubric V2.1 carry-back; not in scope for the R2 judge tuning project.
+
+- **Status update 2026-05-10 — Plan C unified (replaces Plan A + Plan B parallel-session attempt):** the parallel-session execution of Plan A + Plan B produced reconciliation overhead exceeding the parallelism win (one extra merge-reconcile commit `1b6dda0`; one new URI logged — URI-027; four plan items deferred; one disclosed-deviation re-fire required). Plan A + Plan B are **superseded by Plan C** (`design/shoot-v2/plan-c-2026-05-10-unified.md`) — single-session, linear sequence. Plan C C1 = the B4 re-run. Plan C C2 = B2b-rerun + Plan B close (item 9 → CLOSED). See `archive/notes/problems.md` P17 for the retrospective.
+
+- **Status update 2026-05-10 — item 9 CLOSED via Plan C C1+C2:**
+  - **Plan C C1 executed** the B4 validation re-run on s01e01 R1 baseline (re-fired `/and-facets-r2` with the post-URI-023-#9 + post-B2a-G5 edited command). Native `.r2-decisions.md` emitted with summed `f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 2}`. Gate PASS (0× F-R2-1; F-R2-2/3/4 sum=2 ≤ 2). Per-layer details: R2.1 NI 17K/0D/4R/2A (F-R2-4=1 within-character pre-calc-frame saturation, mitigated); R2.2 memory 3K/1R/1A (clean; 5 margit referrals); R2.3 feeling Taylor 1K/1D/2R/0A (F-R2-4=1 breath-clause formula, mitigated by DELETE+strip-clause asymmetric mitigation); R2.3 feeling mother 4K (clean); R2.3 feeling father 3K (clean); R2.4 metaphor 0K/0D/1R (citation-ID correction). 1 inline T1 arbiter intervention self-resolved on narrator:10.
+  - **Plan C C2 executed** the B2b-rerun discipline review (`design/shoot-v2/r2-judge-tuning/2b-rerun.md`). G1-G5 all PASS or PASS-WITH-NOTES. **The §Form re-test (item 9) caught both R2-introduced and R1-original form drifts** — narrator:1/2/11 were R1-authored violations R1 missed; R2's cold-read visited them on a graph-aware pass and caught them at-rest. The gate is doing more structural work than item 9 specified (it's a backstop against R1 form drift as well as R2 introduction).
+  - **Cross-cutting discipline finding** (load-bearing for future R2 tuning): free-prose decision format is dramatically more scoreable than labeled-subfield format. B2b-baseline could not score G2 (motive honesty) from git diff because diff doesn't capture motive. B2b-rerun scores G2 cleanly because authors wrote motive into prose. Validates URI-017 Threshold Discipline ("rubric arithmetic is advisory, taste authoritative") in concrete artifact form.
+  - **Non-blocking B-locked-rubric V3 candidate edit** logged in `2b-rerun.md`: clarify T4 arbiter trigger re: lead-sentence niche-recognition vs body-weight at-rest reading (memory:5 ADD is the precedent case). Lives in `C-arbiter-protocol.md` for next R2 tuning iteration. No URI needed.
+  - **Item 9: CLOSED.**
+  - **Items 1-8 (feeling rubric V2.1 content carry-back):** remain open under URI-023 parent. Not in scope for R2 judge tuning project; belong to a future feeling-rubric authoring session.
 
 ### URI-024 — feel:10 Phase-E author regression
 
@@ -334,9 +344,15 @@ Cross-plan coordination: Plan B's branch (`claude/implement-parallel-plan-SzWNb`
 
 Companion landed: Plan A A2 (F-R2-* → F7 emission contract) via PR #6 / commit 58af716. Schema authority for `.r2-decisions.md` frontmatter consumed by orchestrator-critic Phase 6 verdict (B7 + F7-r2). A2 is the upstream contract for Plan B B3's decision-shard emission.
 
-#### Phase 2 not yet landed (deferred to Plan A A4)
+#### Phase 1.5 first-fire: s02 FAIL F7-bone (mechanism validated, 2026-05-10)
 
-- **Phase 2:** sensory + state-updates env + loc-state migration to /and-season as additional bone-gate facets; `/and-facets-r1` Layer 1 / 1b / 2b / 3a deletions; schema dual-provenance extensions; orchestrator-critic R1 dispatch budget recalibration. Spec drafted at `design/shoot-v2/plan-a-a4-spec-staging.md`; rubric portability audit at `design/shoot-v2/plan-a-a4-rubric-portability-audit.md`. Awaits Plan A A3 (s02 first-fire) verdict before applying — A3 validates the existing tens bone-gate pattern; A4 risks compounding flaws if landed before pattern is confirmed. URI-018 / URI-019 / URI-020 auditor class refinements remain queued and benefit both pipelines once they land.
+A3 (s02 first-fire, PR #11 / commit `2b60c53`) ran the bone-gate on a fresh corpus and produced `FAIL F7-bone`. **This is a positive signal for URI-026:** the gate caught s02e01 SHAPE-FAIL HARD (31 contiguous rung-1 bones at 122–162; single peak in 205-bone corpus) + s02e02 SHAPE-FAIL HARD (gathering scenes 358–396 + 461–489 lack rupture beat; coalition-formation arc undercharged) — both with per-episode actionable kickback in `season-s02-pass-S4-step1.5-tens-mega.md`. Pre-bone-gate surfaces (S3/S4 audience) flagged stretch-flatlines but produced no per-episode actionable kickback. The mechanism is doing what URI-026 was designed to do. Step 2 + Step 3 + Phase 5 deferred per F7-bone protocol (cannot run on a corpus with HARD findings).
+
+Disclosed deviations in A3 (corrected in Plan C C3): Phase 3 entirely skipped; Phase 2 iter-2 not formally re-audited; Step 1.5 single-fork dispatch (vs per-spec parallel-fork). Round-trip verification of the gate (regen s02e01 + s02e02 → re-fire Step 1.5 per-spec → PASS → Steps 2/3 → Phase 5/6) is **Plan C C3**.
+
+#### Phase 2 not yet landed (now scheduled as Plan C C4)
+
+- **Phase 2:** sensory + state-updates env + loc-state migration to /and-season as additional bone-gate facets; `/and-facets-r1` Layer 1 / 1b / 2b / 3a deletions; schema dual-provenance extensions; orchestrator-critic R1 dispatch budget recalibration. Spec drafted at `design/shoot-v2/plan-a-a4-spec-staging.md`; rubric portability audit at `design/shoot-v2/plan-a-a4-rubric-portability-audit.md`. Gated on Plan C C3 PASS (round-trip gate verification on s02 corpus). URI-018 / URI-019 / URI-020 auditor class refinements remain queued and benefit both pipelines once they land.
 
 #### URI-025 supersession
 
@@ -360,7 +376,7 @@ First live-fire: `/and-season-plan s02` then `/and-season s02` on a fresh corpus
   3. Document both definitions and the audit class B4 measures in `.r2-decisions.md` frontmatter.
 - **Recommended:** option 1. The schema's redefinition appears to be a Plan A misreading; A-corpus is upstream of the schema in the URI-026 → A2 chain.
 - **Cost:** small. Schema text edit only.
-- **Decision deferred:** Plan B B4 will run with A-corpus classes (the canonical source). Drift is logged for adjudication; B4's `.r2-decisions.md` frontmatter notes which class-definition source was used.
+- **Decision deferred → DECIDED 2026-05-10:** Option 1 (patch schema to match A-corpus.md). Lands as Plan C C5. Plan C C1 (the B4 re-run) emits `.r2-decisions.md` using A-corpus class definitions; Plan C C5 reconciles the schema text in the same session.
 
 ---
 

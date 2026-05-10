@@ -1,5 +1,7 @@
 # and-shoot
 
+> **Archive notice (2026-05-10):** this document is the foundational design from project inception (May 2026). Current operational authority is `CLAUDE.md` at the repo root plus the shoot-v2 design surface under `design/shoot-v2/`. The shoot-v2 pipeline (`/and-protolines` → `/and-facets` → `/and-shoot` → `/and-season` / `/and-wrap`) is an overlay on the patterns described below — the core principles (modular, in threes, planning granularity, nothing-moves-unless-recorded) still hold; the shoot mechanics are extended by SVO-bones-first authoring with bone-gate hard-gates at `/and-season` Phase 4 Step 1.5 (URI-026) and a six-phase orchestrator-critic verdict (URI-022). Session-level work discipline: **plans whose serialization is linear run in a single session, not across parallel remote sessions** (see P17 in `notes/problems.md`, 2026-05-10).
+
 ---
 
 ## purpose
