@@ -109,7 +109,13 @@ Specifically:
 - **CURVE-SHAPE** extended: tens (rise→peak→release), sensory (modality-coverage ≥2), state-updates env (density alignment with tens 2-3× ratio non-1 vs 1-zones; target-diversity ≥3 classes), loc-state (no explicit curve — per-entry only).
 - **AP-SCAN** extended: tens (AP1–AP5 per rubric), sensory (charged-word redundancy + modality-monoculture + sub-threshold + cross-modal blur), state-updates env (registration-as-state + posture-as-state + invented-field), loc-state (set-dressing sweep + mood-painting + persistence-as-state + plan-bullet residue).
 
-**Open question (carried from rubric audit):** the auditor class library at `.claude/commands/and-facets-audit.md` may not have explicit class definitions for all of these. Pre-A4 verification: read the audit command and confirm coverage. If gaps, A4 includes a class-library extension as part of the spec edit.
+**Open question (resolved 2026-05-10):** the auditor class library at `.claude/commands/and-facets-audit.md` already covers all four bone-gate facets:
+- FREQUENCY-BAND lines 64–71: tens (60-75/20-30/5-10), sensory (3-6% sparsity, modality ≥2), state-updates (tens-coherence soft-gate), memory/feeling/metaphor/NI bands.
+- CURVE-SHAPE lines 81–87: scene-level peak presence (loc-state-defined scenes); episode-level act structure.
+- CONTRADICTION lines 90–92: state-updates contradictions; location-state spatial-layout / time-label conflicts.
+- AP-SCAN line 120 cites tens / memory / feeling / metaphor anti-patterns explicitly; sensory + state-updates env + loc-state APs are derivable from the rubric files cited by the auditor.
+
+**Conclusion:** no class-library extension required. The Phase 4 Step 2 mechanic auditor invocation cites the existing class library by reference — same shared-reviewer pattern as tens. The auditor's narrow-scope dispatch brief simply names which facet files (the four per-episode bone-gate files) and which rubric class subsets to apply.
 
 ### Edit 3 — Combined per-episode verdict (Phase 4 Step 2)
 
