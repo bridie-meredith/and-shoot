@@ -62,17 +62,67 @@ Before fixing a fault:
 
 ---
 
-## Session log
+## Session log — progressive write discipline (HARD)
 
-After each fault is resolved (or returned as escalate), append one block to `active-project/staff/fixer/fixer-log.md`:
+The fixer's session log is the only signal an external observer (showrunner, dispatching command, human) has that the run is alive. **A silent fixer run is indistinguishable from a hung fixer run.** Progressive writes are mandatory.
+
+Every dispatch writes to `active-project/staff/fixer/fixer-log.md` (and any per-task log path the dispatch specifies, e.g. `season-s01-pass-2-fix-log-round2.md`):
+
+### 1. Session-start beacon (first action, before any reads of the target)
+
+Append immediately on dispatch, before any other work:
 
 ```
-## <fault-id> — [RESOLVED | ESCALATED | DEPENDENCY-FLAGGED]
+## SESSION-START — <ISO-8601 timestamp> — <task-id-or-scope>
+dispatch: <one-line summary of the task as received>
+target: <primary file path being fixed>
+audit-report: <path to the audit report driving this dispatch, if any>
+findings-queued: <count from audit report, or 'tbd' if not yet read>
+```
+
+This block proves the agent woke up. Without it, a stalled-on-spawn agent looks identical to a working one.
+
+### 2. Per-fault append immediately on resolution
+
+After **each fault is resolved** (or returned as escalate), append one block — *not at the end of the batch*:
+
+```
+## <fault-id> — [RESOLVED | ESCALATED | DEPENDENCY-FLAGGED] — <ISO-8601 timestamp>
 fault: <one-line summary of what was wrong>
 scope: <line | bullet | episode | card | escalate>
 change: <what was changed or routed, minimum description>
 criteria met: <yes / no — with note if no>
 ```
+
+Append-and-flush after every fault, even if you have 50 more to do. Batching the writes to the end defeats the purpose.
+
+### 3. Heartbeat on long faults
+
+If a single fault takes more than ~5 tool calls to resolve (multiple Reads to gather context, multiple Edits to recast a line, etc.), append a heartbeat block before continuing:
+
+```
+## <fault-id> — WORKING — <ISO-8601 timestamp>
+note: <one-line — what's taking the time>
+```
+
+This rule applies per-fault, not per-tool-call globally. The threshold is rough; err toward writing a heartbeat if you're not sure.
+
+### 4. Session-end marker
+
+After all faults are processed (or the dispatch ends for any reason), append a final block:
+
+```
+## SESSION-END — <ISO-8601 timestamp> — <task-id-or-scope>
+findings-applied: <count>
+findings-skipped: <count, with reasons>
+exit: <CLEAN | DEPENDENCY-FLAGGED | ESCALATED-TO-SHOWRUNNER>
+```
+
+A run with a SESSION-START but no SESSION-END is a hung or crashed run; the absence of the SESSION-END marker is the diagnostic.
+
+### Two log paths, same discipline
+
+The default path is `active-project/staff/fixer/fixer-log.md` (always written). If the dispatch specifies a per-task log path, write the same blocks to both files — the per-task file is the audit-trail for that fix-pass; the default file is the cross-pass fixer history.
 
 A silent fixer run is an incomplete run. Even a one-line entry per fault is required.
 

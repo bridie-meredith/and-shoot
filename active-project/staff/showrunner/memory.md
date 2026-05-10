@@ -54,14 +54,89 @@ seasons:
     status: active
     plan: active-project/staff/showrunner/season-s01-plan.md
     chunk: "The tax-collection swarm event at ~86 AC converts Taylor from invisible smallfolk child to a named anomaly in Aldric Pryor's incident log, and the institutional apparatus that will eventually suppress her coalition takes its first documentary step; Taylor's counter-move is to build depth before breadth, recruiting Mira Stonefield and establishing the sept as her literacy and information node, but the same control instincts that make her effective keep her parents at managed distance and Mira at arm's length precisely when closeness would be cheaper. The personal cost begins paying out before the season closes: Elara Ashford cannot be kept at arm's length indefinitely, and before S1 ends the lord's traveling maester arrives at Fairstead under cover of routine ledger work — the steward's note has reached him, and the board has changed."
-    # Episodes are not pre-listed under aggregate-first /and-season.
-    # /and-season Phase 4 splits the converged season aggregate into N episodes
-    # (N a multiple of 3, decided by ideal size + dramatic shape) and writes the
-    # episodes[] array at that point. Until then the canonical content scope
-    # for the season lives in season-s01-plan.md as continuous content guidance.
-    episodes: []
+    episodes:
+      - slug: s01e01
+        status: protolined
+        narrator: taylor-hebert-jaehaerys
+        chunk: "Show the audience the shape of the household Taylor wakes into and the apprentice mark that fixes her visible role inside it."
+        proto_lines_path: active-project/theater/proto-lines/s01e01.md
+        cast: taylor-hebert-jaehaerys, oc-craftsman-mother, oc-craftsman-father
+        locations: loc-craftsman-workshop-home
+        prior_episode: none
+        aggregate_range: 1-149
+      - slug: s01e02
+        status: protolined
+        narrator: taylor-hebert-jaehaerys
+        chunk: "Show the audience Septon Rowan establishing a literacy-shaped pastoral claim on Taylor that she cannot decline."
+        proto_lines_path: active-project/theater/proto-lines/s01e02.md
+        cast: taylor-hebert-jaehaerys, septon-rowan, oc-craftsman-mother
+        locations: loc-local-sept, loc-craftsman-workshop-home
+        prior_episode: s01e01
+        aggregate_range: 150-250
+      - slug: s01e03
+        status: protolined
+        narrator: taylor-hebert-jaehaerys
+        chunk: "Show the audience another child noticing too closely and the lord's-steward census filing the household into folios Taylor cannot reach."
+        proto_lines_path: active-project/theater/proto-lines/s01e03.md
+        cast: taylor-hebert-jaehaerys, oc-child-peer, oc-craftsman-mother, the cloth-factor's wife, oc-craftsman-father, rymer-hedge, oc-lords-steward, the ferryman, the town reeve, the fishwife, the clerk, septon-rowan
+        locations: loc-market-square, loc-river-ferry-dock, loc-local-sept
+        prior_episode: s01e02
+        aggregate_range: 251-418
+      - slug: s01e04
+        status: protolined
+        narrator: taylor-hebert-jaehaerys
+        chunk: "Show the audience the swarm break the collection and the steward mark the incident folio — the season's first irreversible act."
+        proto_lines_path: active-project/theater/proto-lines/s01e04.md
+        cast: the collector, oc-craftsman-father, taylor-hebert-jaehaerys, mira-stonefield-jaehaerys, rymer-hedge, oc-lords-steward, the townsman, the collector's man, oc-craftsman-mother, the post rider, the town reeve
+        locations: loc-market-square, loc-craftsman-workshop-home
+        prior_episode: s01e03
+        aggregate_range: 419-563
+      - slug: s01e05
+        status: protolined
+        narrator: mira-stonefield-jaehaerys
+        interlude: true
+        chunk: "Show the audience Mira transact the recruitment arc's first earn at the cost of an unnamed debt, then return Taylor home to a household not yet in concert."
+        proto_lines_path: active-project/theater/proto-lines/s01e05.md
+        cast: mira-stonefield-jaehaerys, taylor-hebert-jaehaerys, the town reeve, oc-lords-steward, rymer-hedge, oc-craftsman-mother, oc-craftsman-father
+        locations: loc-market-square, loc-craftsman-workshop-home
+        prior_episode: s01e04
+        aggregate_range: 564-699
+      - slug: s01e06
+        status: protolined
+        narrator: oc-craftsman-mother
+        interlude: true
+        chunk: "Show the audience Elara close Taylor's separate-vector parent management and the maester's folio cross the water — the note has traveled and the apparatus knows the name."
+        proto_lines_path: active-project/theater/proto-lines/s01e06.md
+        cast: oc-craftsman-mother, septon-rowan, the town reeve, oc-craftsman-father, taylor-hebert-jaehaerys, the maester, mira-stonefield-jaehaerys, rymer-hedge, the ferryman
+        locations: loc-local-sept, loc-craftsman-workshop-home, loc-river-market-town, loc-river-ferry-dock, loc-market-square
+        prior_episode: s01e05
+        aggregate_range: 700-912
+    protolines_complete:
+      timestamp: 2026-05-09
+      aggregate_path: active-project/theater/proto-lines/s01.aggregate.md
+      audit_paths:
+        phase2_pass2_constraint: active-project/staff/auditor/season-s01-pass-2-constraint-reaudit-r6.md
+        phase2_pass3_shape: active-project/staff/auditor/season-s01-pass-3-shape-reverification.md
+        phase2_pass4_trim: active-project/staff/auditor/season-s01-pass-4-trim-{persona}-r2|r3.md
+        phase2_pass5_continuity: active-project/staff/auditor/season-s01-pass-5-continuity-r2.md
+        phase3_pass_S1_constraint: active-project/staff/auditor/season-s01-pass-S1-constraint-r2.md
+        phase3_pass_S2_shape: active-project/staff/auditor/season-s01-pass-S2-shape.md
+        phase3_pass_S3_trim: active-project/staff/auditor/season-s01-pass-S3-trim-{persona}-r2|r3|r4.md
+        phase3_pass_S3_5_ruleset: active-project/staff/auditor/season-s01-pass-S3.5-ruleset-r2.md
+        phase3_pass_S4_continuity: active-project/staff/auditor/season-s01-pass-S4-continuity-r2.md
+        phase3_pass_S5_voice: active-project/staff/auditor/season-s01-pass-S5-voice-coherence.md
+        phase3_pass_S6_vibe: active-project/staff/auditor/season-s01-pass-S6-vibe-{persona}.md (CARRY-FORWARD — see escalation note)
+        phase3_pass_S7_facet_readiness: active-project/staff/auditor/season-s01-pass-S7-facet-readiness-r2.md
+        phase3_pass_S8a_character_plausibility: active-project/staff/auditor/season-s01-pass-S8a-plausibility-character-r2.md (CARRY-FORWARD on Elara-reeve — see escalation note)
+        phase3_pass_S8b_event_plausibility: active-project/staff/auditor/season-s01-pass-S8b-plausibility-event-r2.md
+        phase3_pass_S9_comprehensibility: active-project/staff/auditor/season-s01-pass-S9-comprehensibility-{persona}.md (CARRY-FORWARD — see escalation note)
+        phase4_split_proposal: active-project/staff/auditor/season-s01-split-proposal.md
+        phase4_split_review: active-project/staff/auditor/season-s01-split-review-{persona}.md (2-of-3 ACCEPT)
+      carry_forward_notes:
+        - active-project/staff/showrunner/escalation-pass2-cap-decision.md
+        - active-project/staff/showrunner/escalation-s6-vibe-drift-carry-forward.md
     next_season_sketch: "The steward's quarterly monitoring report names Mira's market-day gatherings as the new perimeter, and the lord's apparatus shifts from incident-response to patterned-response as Taylor's coalition expands past the family she can individually shield; the suppression apparatus gains institutional vocabulary for what it is watching, while Taylor's Shard-weighted instinct to escalate rather than withdraw pulls her into confrontations that cost the coalition members she cannot protect from the institutional record."
 
 active:
   season: s01
-  episode: ~  # set by /and-season Phase 5 once split decides actual episodes
+  episode: s01e01

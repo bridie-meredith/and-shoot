@@ -45,8 +45,16 @@ seasons:
     chunk: <one-to-two sentence chunk statement — what this season delivers to the series>
     episodes:
       - slug: s01e01
-        status: written | active | planned
+        status: written | active | planned | protolined
         chunk: <one sentence — what this episode delivers to the season>
+        # /and-season Phase 5 also writes (per-episode entry, after split):
+        narrator: <pov-actor-slug>
+        proto_lines_path: active-project/theater/proto-lines/s01e01.md
+        cast: <slug>, <slug>, ...
+        locations: <loc-slug>, <loc-slug>, ...
+        prior_episode: <previous-episode-slug | none>
+        aggregate_range: <from>-<to>
+        interlude: true | false  # optional, only if applicable
     next_season_sketch: <one sentence only — horizon rule; no more than this>
 
 active:
@@ -73,6 +81,8 @@ active:
 **stage_elements** — locations, props, and conditions that appear across the series and carry narrative weight. Not every prop — only ones that matter to the long game.
 
 **seasons** — one entry per season, planned or complete. The `chunk` is the chunk statement the season delivers to the series arc. The `next_season_sketch` is exactly one sentence — no more, per the horizon rule.
+
+**seasons[].episodes[]** — one entry per episode. Pre-split entries (planned/active) carry `slug`, `status`, `chunk`. Post-split entries written by `/and-season` Phase 5 add `narrator`, `proto_lines_path`, `cast`, `locations`, `prior_episode`, `aggregate_range` (and `interlude: true` if applicable). The `cast`/`locations`/`prior_episode`/`aggregate_range` fields mirror the per-episode proto-line file's extended header so showrunner can answer "who's in episode N" or "which loc cards are in scope" without opening the file. `/and-shoot-v2` Phase 0 reads `prior_episode` to resolve which prior-episode state files to snapshot for handoff baseline.
 
 **active** — the currently running season and episode slugs. Updated at each episode close and each season transition.
 
