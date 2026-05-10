@@ -326,10 +326,17 @@ Categories:
 - **Calibration risk:** the tens rubric is calibrated **per-episode** (~150-line corpus, unique-climax-per-episode clause, scene-boundary by loc-state inheritance). Step 1.5 invocation is **per-proposed-episode** (post-Phase-4-split-proposal scope), matching the calibrated scope. Aggregate-scope authoring would have been structurally incompatible with the rubric — not done.
 - **Cost implication:** worst-case ~12 added dispatches at the bone-gate (tens-rate × 6 episodes + mechanic-audit × 6 episodes, parallel). Combined with rest of /and-season trends toward 60-dispatch hard cap; per-window inner iteration cap tightened to 2 (not 3) to constrain growth. Recalibrate empirically after first fire.
 
-#### Phase 1 not yet landed (deferred to Phase 1.5 / Phase 2)
+#### Phase 1.5 LANDED 2026-05-10 (Plan A A1, PR #8 / commit 50a8f6d)
 
-- **Phase 1.5 (post-facet-session merge):** Persona-card body text edits to promote tens-attack categories (RUNG-DISTRIBUTION-FLATLINE, FALSE-PEAK, DENOUEMENT-FLAT, RUNG-CLUSTER-OVERSATURATION) from `/and-season` dispatch brief into the active audience cards' `Season-Scope Adversarial` body sections. **Deferred** because parallel `/and-facets` tuning session reads persona cards mid-flight; shared-asset edit must be coordinated, not mid-flight.
-- **Phase 2 (later):** sensory + state-updates env + loc-state migration to /and-season as additional bone-gate facets; `/and-facets-r1` Layer 1 (legacy tens authoring) deletion; URI-018 / URI-019 / URI-020 auditor class refinements land into the shared `/and-facets-audit.md` library and benefit both pipelines.
+Persona-card body text edits promoted tens-attack categories (RUNG-DISTRIBUTION-FLATLINE, FALSE-PEAK, DENOUEMENT-FLAT, RUNG-CLUSTER-OVERSATURATION) from `/and-season` dispatch brief into the active audience cards' new `## Tens-attack vocabulary` body sections, each phrased in that persona's voice/register. The Phase 4 Step 2 dispatch brief was reduced from inline four-bullet enumeration to a single-line reference pointing personas at their card body section.
+
+Cross-plan coordination: Plan B's branch (`claude/implement-parallel-plan-SzWNb`) released the sentinel `## Done — persona cards released` after confirming no concurrent reader of audience cards was active during their execution. A1 was applied immediately after the sentinel was found.
+
+Companion landed: Plan A A2 (F-R2-* → F7 emission contract) via PR #6 / commit 58af716. Schema authority for `.r2-decisions.md` frontmatter consumed by orchestrator-critic Phase 6 verdict (B7 + F7-r2). A2 is the upstream contract for Plan B B3's decision-shard emission.
+
+#### Phase 2 not yet landed (deferred to Plan A A4)
+
+- **Phase 2:** sensory + state-updates env + loc-state migration to /and-season as additional bone-gate facets; `/and-facets-r1` Layer 1 / 1b / 2b / 3a deletions; schema dual-provenance extensions; orchestrator-critic R1 dispatch budget recalibration. Spec drafted at `design/shoot-v2/plan-a-a4-spec-staging.md`; rubric portability audit at `design/shoot-v2/plan-a-a4-rubric-portability-audit.md`. Awaits Plan A A3 (s02 first-fire) verdict before applying — A3 validates the existing tens bone-gate pattern; A4 risks compounding flaws if landed before pattern is confirmed. URI-018 / URI-019 / URI-020 auditor class refinements remain queued and benefit both pipelines once they land.
 
 #### URI-025 supersession
 
