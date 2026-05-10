@@ -1,7 +1,8 @@
 ---
-phase: B — locked R2 rubric (revised: justification-first)
+phase: B — locked R2 rubric (revised: justification-first; G5 position-gate added 2026-05-10 from B2a carry-back)
 project: R2 hybrid judge tuning
 date: 2026-05-10
+revision: v2 (2026-05-10) — added G5 (position-gate) per B2a audience finding; G1–G4 unchanged in structure (free-prose decision-log discipline lifted from PLAN v1)
 status: LOCKED — do not soften before Phase F audience verdict on a re-run corpus
 parent: design/shoot-v2/r2-judge-tuning/A-corpus.md
 companion: design/shoot-v2/r2-judge-tuning/C-arbiter-protocol.md
@@ -31,9 +32,9 @@ These are **not** taste calls. R2 honors them as fences:
 
 Violations of fences are not subject to taste argument. R2 refuses the verdict.
 
-## The four gates — reformulated as taste-questions
+## The five gates — reformulated as taste-questions
 
-Each gate names a question the reviewer must hold themselves to. The reviewer's verdict is justified by **answering the question**, not by passing a check.
+Each gate names a question the reviewer must hold themselves to. The reviewer's verdict is justified by **answering the question**, not by passing a check. G1–G4 are the original taxonomy from `A-corpus.md` (F-R2-1..4); G5 was added at B2a carry-back to address position-dependent momentum collapse on R2-adds.
 
 ### Gate G1 — "Does the revision still earn its place when I read it cold?"
 
@@ -84,6 +85,20 @@ The graph-revealed niche **enables** the question; it does not **answer** it. Th
 **Justification format:** the reviewer names the pattern in their own words and points to specific instances. "Three characters all do the same somatic-tell category at the column-tracing scene — Taylor with her hands, mother with her shoulders, the clerk with his jaw. The scene was supposed to play three different cost-registers; instead it plays one register triplicated. I'd cut two of the three." Compare to mechanical: "Cross-character same-strategy: 3 instances. SIGNAL." That doesn't say what is wrong.
 
 **Arbiter check:** does the pattern flag come with **what specifically should change** as a consequence? A pattern flag without a remediation argument is mechanical; a pattern flag with "I'd cut these, here's why" is taste-justification.
+
+### Gate G5 — "Does this entry want to fire here, given where the scene is?"
+
+**Failure mode addressed:** position-dependent momentum collapse on R2-adds. Surfaced from B2a audience review on s01e01: pulp-enthusiast flagged five R2-adds that were content-clean but landed at positions (approach-zone, post-peak body-automaticity, pre-board-establishment, low-board speech beats) where a register fire decelerates rather than escalates. Two of the five aggregated to REVISE at the @131 anchor, where narrator:25 + mem:8 both closed in administrative-filing register that archived the @99 apprentice-mark consequence rather than holding it live.
+
+**The question:** when R2 considers adding an entry that passes G1–G4, the reviewer asks *given the proto-line's position in the scene's escalation curve, does the add open something or close something?* An add at quiet-beat interior or trailing-edge of a peak earns its place as register-extension. An add at approach-zone, post-peak automaticity, or pre-board-establishment must defend itself against the position pressure — the at-rest reading must show the add doing work the scene's forward motion needs, not just adding correct register at the wrong moment.
+
+**What this is not:** a tens-rating arithmetic check. The position categories (approach, peak, trailing, post-peak, denouement) are defined per `tensometer.md`; the gate uses them as *attention markers*, not thresholds. The reviewer reads the entry against the position and asks whether the add holds the scene's weight live or absorbs it into archive.
+
+**Special case — episode-close anchor (the @131 pattern).** When R2 considers adds at the final 5-10% of the proto-line stream, the reviewer must check whether any other R2-touched entry at the same anchor closes in archival/accounting/filing register. If so, **at least one entry must hold the prior peak's consequence live** rather than confirming its filing. Paired closes in archival register at episode-end are the structural failure mode B2a surfaced.
+
+**Justification format:** the reviewer names the entry's position category, names what the scene's curve is doing at that position (escalating, holding, closing, reconciling), and articulates whether the entry contributes to or fights against that motion. Two-to-four sentences in reviewer voice.
+
+**Arbiter check:** does the justification name a position category and the scene-motion it implies? A position-blind justification (one that defends content without addressing where the entry lands) is the failure mode this gate catches.
 
 ## Decision-log discipline
 
@@ -144,7 +159,7 @@ This rubric is **locked** as of 2026-05-10 in its justification-first form. Per 
 
 > Once V2 is set, do not soften it for later rounds. Lift numbers are only honest under fixed rubrics.
 
-Revisions allowed only at Phase F (validation re-run audience verdict) with audience-confirmed evidence the gate is over-strict. The four gates may have **emphasis** recalibration but not **structural** removal.
+Revisions allowed only at Phase F (validation re-run audience verdict) with audience-confirmed evidence the gate is over-strict. The five gates may have **emphasis** recalibration but not **structural** removal. **G5 was added** at B2a carry-back as the locking discipline allows — audience-confirmed evidence supported the addition (the @131 paired-archive seam is concrete, not speculative).
 
 ## Phase C entry point
 

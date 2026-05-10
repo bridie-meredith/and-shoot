@@ -29,7 +29,9 @@ locked Round-1 facets + _cite-index.md + proto-lines (citation-accrued)
 
 **Per-facet per-round add-cap (R2 mitigation):** ≤5 new entries per facet per Round-2 run. Cap is enforced by the author at decision time.
 
-**Locked-rubric + arbiter discipline.** Every R2 layer dispatch carries `design/shoot-v2/r2-judge-tuning/B-locked-rubric.md` (gates G1–G4 as taste-questions) and `design/shoot-v2/r2-judge-tuning/C-arbiter-protocol.md` (T1, T4 only). The §Form re-test inside each layer is the operationalisation of G1; the decision-shard format is the operationalisation of B-locked-rubric § Decision-log discipline. URI-023 item 9 lands here.
+**Locked-rubric + arbiter discipline.** Every R2 layer dispatch carries `design/shoot-v2/r2-judge-tuning/B-locked-rubric.md` (gates G1–G5 as taste-questions) and `design/shoot-v2/r2-judge-tuning/C-arbiter-protocol.md` (T1, T4 only). The §Form re-test inside each layer is the operationalisation of G1; the decision-shard format is the operationalisation of B-locked-rubric § Decision-log discipline. URI-023 item 9 lands here.
+
+**Position-gate (G5) on adds.** Every R2 add must carry a position-category note in its decision-shard justification (approach-zone / peak / trailing-edge / post-peak / quiet-beat / denouement). For adds at the final 5-10% of the proto-line stream, the layer must check whether any other R2-touched entry at the same anchor closes in archival/accounting/filing register; if so, at least one entry at the anchor must hold the prior peak's consequence live rather than confirming its filing. Surfaced from B2a audience review: paired @131 closes in administrative-filing register were the structural failure mode.
 
 ## Args
 
