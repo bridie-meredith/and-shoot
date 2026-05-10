@@ -1,8 +1,9 @@
 facet: interest-narrator
 episode: s01e01
 author: taylor-hebert-jaehaerys (impersonator)
-round: 2
+round: 3
 r1_to_r2: 21 → 24 (KEEP=19 DELETE=2 [narrator:5, narrator:8] ADD=5 [narrator:22-26])
+r2_to_r3: 24 → 24 (KEEP=24 DELETE=0 ADD=0) — settling pass; zero-change verdict Y; cap-refusals @92, @126 (both fail persistent-narration vs neighboring fires)
 ---
 
 1 @1 the loft boards hold their cold; the dye-yard fauna are already where they were last night
