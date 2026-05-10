@@ -59,7 +59,7 @@ Build incrementally; each step has standalone value and can be a stopping point.
 | Step | What | Status |
 |---|---|---|
 | A | `/and-facets` Phase-0 + Round 1 only, on s01e01 | **shipped 2026-05-10** |
-| B | Cite-index builder | unbuilt |
+| B | Cite-index builder | **shipped 2026-05-10** — `active-project/staff/cite-index/build_cite_index.py`; wired into `/and-facets` Phase 7 as default output |
 | C | Gap-log emission added to Round-1 midband authoring | **deferred indefinitely** — reclassified as debug-only per user direction 2026-05-10b; Round 2 gates additions through the per-facet rubric, gap-logs are not load-bearing for default flow |
 | D | Round 2 (hybrid judge with full graph) on memory + feeling | unbuilt |
 | E | Round 3 (repeat hybrid judge) on memory + feeling | unbuilt |

@@ -269,7 +269,28 @@ Output: `active-project/theater/facets/vibes.md`. Citation write-back: `[vibes:<
    - Episode status: `protolined` → `faceted-r1`.
    - Add a `facets_path: active-project/theater/facets/` field under the episode entry.
    - Add a `round_1_complete: true` flag under the episode entry.
-4. Print summary:
+
+## Phase 7 — Cite-index (default)
+
+Build `active-project/theater/facets/_cite-index.md` from the nine facet files + the proto-lines citation accrual. This is **deterministic transformation, not authoring** — no agent dispatch needed.
+
+```bash
+python3 active-project/staff/cite-index/build_cite_index.py <episode-slug>
+```
+
+The cite-index is a derivation of the current facet + proto-line state. It surfaces:
+
+- **Density distribution** — protolines bucketed by citation count.
+- **Per-facet entries** — each entry's anchor, back-citation status, co-located facet entries on the same protoline, outbound `licensed-by:` references, and inbound license references.
+- **Pile-ups** — protolines with >4 co-located facets (over-decoration risk; or just the load-bearing peaks).
+- **Lonely entries** — facet entries with no co-location and no inbound licensing link. Round-2 deletion candidates.
+- **Bare protolines** — protolines with no citations accrued. Round-2 add candidates if the rubric licenses a fire.
+
+Convention: tens entries with `rating=1` are NOT flagged as lonely (they don't accrue back-cites by convention; absence is expected). Off-anchor vibes entries are also excluded from the lonely classifier.
+
+The cite-index is rebuilt at the end of every facet round (Round 2 and Round 3 dispatch overwrite the existing file). Round 2 dispatch payload to midband authors MUST include this file.
+
+### Print summary:
 
 ```
 --- ROUND 1 FACETS COMPLETE: <episode-slug> ---
@@ -290,6 +311,11 @@ Per-facet entry counts (post-cull):
 Flags raised:
   - <flag-line>
   - <flag-line>
+
+Cite-index: active-project/theater/facets/_cite-index.md
+  Pile-ups (>4 facets/protoline): <count>
+  Lonely entries (zero co-location, zero inbound license): <count>
+  Bare protolines (no citations): <count>
 
 Output: active-project/theater/facets/
 Status: <slug> faceted-r1 (Round 1 only; Round 2/3 + final audit not run — Step A scope)
