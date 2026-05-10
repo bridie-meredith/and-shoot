@@ -130,3 +130,70 @@ Deltas from the series vibe-cloud — what is foregrounded in S1 specifically. S
 - `clem-sees-without-processing`: Clem Ferris (reeve's son, ~age 8) notices things about Taylor that adults miss, because his processing is social rather than institutional; he has no vocabulary for what he notices; the friction is that a child's noticing is harder to manage than an adult's
 - `peer-register-as-genuine-pressure`: Taylor can manage adults through their frames; Clem operates without a frame she can subvert; the child-mirror is the one witness whose honesty is structurally guaranteed
 - `dinah-debt-activation`: Clem's proximity activates the Dinah-debt register — Taylor cannot stop running the coalition equation on a child; the moral wound is live every time she chooses how much to manage him
+
+---
+
+## Season 2 (~88–94 AC) extensions
+
+Deltas from the series and S1 vibe-clouds — what is foregrounded in S2 specifically. Series and S1 keys remain available; these extend or shift them at the S2 scale. The S1 closing state (maester's visit completed, Pryor folio crossing the water, Taylor in the loft tracking it through her sense, Elara calling) is the operational baseline.
+
+### Apparatus-as-vocabulary (post-tier-crossing)
+
+- `pryor-as-author-of-vocabulary`: in S1 Pryor was a documentary face; in S2 his quarterly monitoring report becomes the institutional language for what the lord's apparatus is watching — Mira's market-day gatherings get named as a "perimeter" before Taylor knows the word is being used; the antagonist's voice gains specific register, not just specific volume
+- `quarterly-monitoring-rhythm`: institutional time arrives in regular cadence — the report cycle is the antagonist clock — each quarter's entry is visible as a beat in the season's spine; the smallfolk register the cadence as routine, Taylor reads it as escalation
+- `incident-to-patterned-shift`: the suppression policy clock advances — S1's incident-response (file the entry, watch) becomes S2's patterned-response (categorize, monitor, allocate retinue cycles); the apparatus does not yet act, but it now has a name for what it is preparing to act against
+- `record-grows-without-event`: the file accumulates without Taylor doing anything dramatic; the threat is documentary inertia, not violent escalation; the texture is bureaucratic accretion
+
+### Coalition-discovers-the-withholding (the season's emotional register)
+
+- `s2-emotional-register`: trust someone who cannot stop calculating you — that is what S2 feels like to Mira, Rymer, the proto-coalition; the discovery is structural, not moral; Taylor is not betraying anyone, the coalition is recognizing what was never offered
+- `mira-as-co-architect-not-asset`: the recruitment that earned in S1's witness-inquiry beat now has to compose into shared work — Mira proposes structures, asks for decisions, expects to be consulted on what Taylor builds around her; Taylor's instinct is to manage; the season tracks the gap
+- `rymer-becomes-recurrent`: in S1 Rymer was Pryor's man and an ignition witness; S2 places him on the road regularly — courier work, rumor work, the workman-register that does not convert but does not leave; he is the ground-level witness whose eyes Taylor cannot fully model
+- `proto-coalition-textures`: market-day Mira-gatherings are the surface; underneath, Taylor's organizing has acquired specific names (the wool factor's cousin, the reeve's brother, the millwright's apprentice, smallfolk Taylor cannot yet count fully) — the season foregrounds how a list of relationships becomes a category Pryor's report can name
+- `the-withholding-as-specific`: what the coalition discovers is not vague "Taylor is private"; it is concrete — she does not bring information she has, she does not name people she's already weighing, she does not let allies decide what risk to accept on their own behalf; the discovery beats render this as specific moments, not general atmosphere
+
+### Body-clock transition (mid-S2 hinge)
+
+- `adolescent-body-ceiling`: at ~91 AC (~age 13–14, mid-S2) the child-body cost ceiling shifts upward on a schedule the project decision committed to; active-control duration lengthens proportionally; this is a named physical-progression beat, not a fixed floor
+- `body-clock-as-narrative-event`: the transition is an event the audience perceives, not a stat-sheet update; one beat marks "before"; one beat marks "after"; Taylor's escalation calculus shifts because the cost calculus shifts; Pryor's monitoring records the physical-state observation as a folio note
+- `shard-thumb-amplified-by-capacity`: longer active duration increases the Shard's pull-toward-escalation surface area; the body opens, the thumb presses harder; the season's mid-arc cost is partially the cost of having more capacity than the prior ceiling
+
+### Geographic-expansion (Fairstead becoming insufficient)
+
+- `expanding-operational-radius`: Taylor's coalition reaches past Fairstead — tributary villages, the Blue Fork road, the next ferry crossing, the maester chapter house's catchment area; the season's geography opens by named locations, not by abstract scope
+- `blue-fork-road-as-perimeter`: the road network becomes Pryor's monitoring perimeter (the location of his quarterly observations) and Taylor's organizing perimeter (the path the coalition's information moves); the same physical space carries both vectors
+- `ferry-as-throat-extended`: S1's ferry-as-institutional-throat extends to multiple crossings; institutional pressure now arrives at three points, not one; the smallfolk register the change before Taylor names it
+- `tully-bannerman-seat-named-presence`: the lord's hall above Fairstead (House Ryger / Willow Wood vicinity) acquires named presence — not a scene-setting visit, a documentary presence in Pryor's reporting chain; Taylor knows the chain has a named upper node now
+
+### Late-S2 dissolution (the season-close inevitability)
+
+- `late-s2-dissolution`: Mira publicly dissolves her market-day gatherings in late S2 under direct institutional pressure from the monitoring record; the relationship does not break, but the structure Taylor built around Mira does not survive; what remains is smaller and harder to rebuild
+- `dissolution-as-mira-choice`: the dissolution is Mira's act, not Pryor's enforcement and not Taylor's strategic withdrawal; the choice register is critical — Mira reads the monitoring pressure and decides what visibility costs; the season earns this by tracking Mira's political arithmetic across multiple beats
+- `coalition-after-dissolution`: what remains is informal channels — the wool factor's cousin still talks to the reeve's brother, the literacy network still meets at the sept, Rymer still rides the road; the structure-as-such is gone, the relationships persist; the texture is "smaller and harder to rebuild"
+- `cost-migration-mid-arc`: S1 paid the intimate-cost (Elara, family-in-concert close); S2 pays the coalition-cost (Mira, Rymer, proto-coalition); the structural promise of OQ-9/C lands here
+
+### Faith-frame escalation (S2 register, S3 trigger)
+
+- `rowan-frame-deepens`: Septon Rowan's pastoral claim from S1 deepens — the literacy access becomes catechism-adjacent, the pastoral claim acquires theological vocabulary, Rowan begins treating Taylor's gift as something the Faith has language for; not malice, sincere category-extension
+- `faith-without-armed-enforcement-still-pressure`: the post-Faith-Militant suppression means the Faith does not coerce, but Rowan's institutional letters travel up the chapter house network; the pressure is documentary, not physical; another file accumulates, this one within the Faith
+- `taylor-cannot-decline-the-frame`: Taylor's S1 instinct (watch and wait) does not scale; S2 forces decisions about how to operate inside Rowan's category without endorsing it; the season ends without resolution here — this is an S3 fracture point
+
+### Family-as-vector (S2 echoes, attenuated)
+
+- `intimate-cost-attenuated`: S1 paid the intimate-cost foreground; S2 maintains it as continuous low-grade — Elara watches, Edwyn carries the household economic weight, the family-in-concert pattern from S1 close holds; the cost is paid, the discipline is sustained; not a primary register but always audible
+- `family-as-foothold-being-tested`: the family is now Taylor's institutional cover — her child-status, her household legitimacy — and as the apparatus monitors Mira's gatherings the family's status as cover sharpens; if the apparatus reaches the family directly, the cover collapses; this risk is named but not realized in S2
+- `clem-grows-in-parallel`: Clem Ferris ages alongside Taylor; the child-mirror persists but the social-surveillance vocabulary changes — adolescent peers can name what child peers only noticed; the texture is "what Clem can now articulate that he could not before"
+
+### Tonal carry-forwards from S1 (still active)
+
+- `interiority-without-confession`: still — Taylor does not narrate herself; the audience reads her by what she does and does not do
+- `documentary-antagonist`: sharpened — Pryor's file gains specific entries; the threat clock is the report cycle
+- `costs-become-final`: the late-S2 dissolution is the season's structural cost-landing; what survives survives diminished
+- `ratchet-not-spiral`: the same coalition is not the same coalition at higher volume — its nature changes when Mira dissolves the gatherings
+- `tragedy-of-correct-diagnosis`: still — Taylor reads the apparatus correctly; being right does not save the coalition from paying
+
+### S2 carry-forward audience flags
+
+- `worm-canon-pedant`: the body-clock transition must render as cost-language not discipline-language; the shard-thumb-amplified-by-capacity register requires response-bones at the post-transition active-control beats
+- `dark-fantasy-reader`: the dissolution must land — Mira's choice carries cost, the institutional pressure carries cost, the post-dissolution "smaller and harder to rebuild" must be physically rendered (specific named structures gone), not merely told
+- `pulp-enthusiast`: the quarterly monitoring rhythm gives the season's spine a regular ratchet — each quarter's report is a board-change beat; the season must show, not summarize, the report-cycle
