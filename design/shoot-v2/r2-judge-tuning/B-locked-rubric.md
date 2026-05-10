@@ -1,7 +1,8 @@
 ---
-phase: B — locked R2 rubric (revised: justification-first)
+phase: B — locked R2 rubric (revised: justification-first; G5 position-gate added 2026-05-10 from B2a carry-back)
 project: R2 hybrid judge tuning
 date: 2026-05-10
+revision: v2 (2026-05-10) — added G5 (position-gate) per B2a audience finding; G1–G4 unchanged in structure (free-prose decision-log discipline lifted from PLAN v1)
 status: LOCKED — do not soften before Phase F audience verdict on a re-run corpus
 parent: design/shoot-v2/r2-judge-tuning/A-corpus.md
 companion: design/shoot-v2/r2-judge-tuning/C-arbiter-protocol.md
@@ -31,9 +32,9 @@ These are **not** taste calls. R2 honors them as fences:
 
 Violations of fences are not subject to taste argument. R2 refuses the verdict.
 
-## The four gates — reformulated as taste-questions
+## The five gates — reformulated as taste-questions
 
-Each gate names a question the reviewer must hold themselves to. The reviewer's verdict is justified by **answering the question**, not by passing a check.
+Each gate names a question the reviewer must hold themselves to. The reviewer's verdict is justified by **answering the question**, not by passing a check. G1–G4 are the original taxonomy from `A-corpus.md` (F-R2-1..4); G5 was added at B2a carry-back to address position-dependent momentum collapse on R2-adds.
 
 ### Gate G1 — "Does the revision still earn its place when I read it cold?"
 
@@ -85,34 +86,66 @@ The graph-revealed niche **enables** the question; it does not **answer** it. Th
 
 **Arbiter check:** does the pattern flag come with **what specifically should change** as a consequence? A pattern flag without a remediation argument is mechanical; a pattern flag with "I'd cut these, here's why" is taste-justification.
 
+### Gate G5 — "Does this entry want to fire here, given where the scene is?"
+
+**Failure mode addressed:** position-dependent momentum collapse on R2-adds. Surfaced from B2a audience review on s01e01: pulp-enthusiast flagged five R2-adds that were content-clean but landed at positions (approach-zone, post-peak body-automaticity, pre-board-establishment, low-board speech beats) where a register fire decelerates rather than escalates. Two of the five aggregated to REVISE at the @131 anchor, where narrator:25 + mem:8 both closed in administrative-filing register that archived the @99 apprentice-mark consequence rather than holding it live.
+
+**The question:** when R2 considers adding an entry that passes G1–G4, the reviewer asks *given the proto-line's position in the scene's escalation curve, does the add open something or close something?* An add at quiet-beat interior or trailing-edge of a peak earns its place as register-extension. An add at approach-zone, post-peak automaticity, or pre-board-establishment must defend itself against the position pressure — the at-rest reading must show the add doing work the scene's forward motion needs, not just adding correct register at the wrong moment.
+
+**What this is not:** a tens-rating arithmetic check. The position categories (approach, peak, trailing, post-peak, denouement) are defined per `tensometer.md`; the gate uses them as *attention markers*, not thresholds. The reviewer reads the entry against the position and asks whether the add holds the scene's weight live or absorbs it into archive.
+
+**Special case — episode-close anchor (the @131 pattern).** When R2 considers adds at the final 5-10% of the proto-line stream, the reviewer must check whether any other R2-touched entry at the same anchor closes in archival/accounting/filing register. If so, **at least one entry must hold the prior peak's consequence live** rather than confirming its filing. Paired closes in archival register at episode-end are the structural failure mode B2a surfaced.
+
+**Justification format:** the reviewer names the entry's position category, names what the scene's curve is doing at that position (escalating, holding, closing, reconciling), and articulates whether the entry contributes to or fights against that motion. Two-to-four sentences in reviewer voice.
+
+**Arbiter check:** does the justification name a position category and the scene-motion it implies? A position-blind justification (one that defends content without addressing where the entry lands) is the failure mode this gate catches.
+
 ## Decision-log discipline
 
-Each R2 layer produces a structured decision log. **Every entry's verdict has a justification line — a paragraph in the reviewer's voice, not a checkbox.**
+Each R2 layer produces a decision-log shard at `active-project/staff/<facet>/r2-decision-shard.md` (feeling: per-character `r2-decision-shard-<character-slug>.md`). **Every verdict is one free-prose paragraph followed by one verdict line — no labeled subfields.** The labeled-subfield template that PLAN v1 used was itself checklist-shaped, which is the failure mode the locked rubric is fixing (audit SIGNAL-004).
+
+The shard's frontmatter carries failure-mode counts the orchestrator-critic Phase 6 reads:
+
+```yaml
+---
+facet: <facet-name>
+episode: <slug>
+layer: R2.<n>
+character: <slug>           # only for feeling per-character shards
+f-r2-counts: {f-r2-1: <n>, f-r2-2: <n>, f-r2-3: <n>, f-r2-4: <n>}
+---
+```
+
+The body is free prose. One block per existing-entry decision and per new entry. Reviewer voice throughout. Each block ends with a single verdict line:
 
 ```
-## R2 Decision Log
-- <facet>:<id> @<proto-line>: KEEP
-  Justification: <2-4 sentences in reviewer's voice — what works, why it earned its place>
-
-- <facet>:<id> @<proto-line>: DELETE
-  Justification: <2-4 sentences — what specifically isn't working, in concrete terms>
-  Cascade: <count> protolines stripped
-
-- <facet>:<id> @<proto-line>: REVISE
-  Original seam: <what the reviewer was answering>
-  Cold-read verdict: <does the revision earn its place at-rest, in 1-2 sentences>
-  Justification: <2-4 sentences>
-
-- <facet>:<id> @<proto-line>: ADD
-  Motive: <at-rest motive paragraph — why the entry is wanted, traced from reading not from niche>
-  At-rest test: <does the entry hold without leaning on adjacent context, in 1-2 sentences>
-
-## Pattern Scan (end-of-layer)
-<paragraph in reviewer's voice — what the reviewer's ear catches across the full facet, with specific instances and what should change. If nothing patterned: a single sentence saying so.>
-
-## Cap Refusals
-- <facet>:<id-candidate>: <reason in reviewer's voice — what the reviewer didn't believe in, in concrete terms>
+<facet>:<id> @<proto-line> — <reviewer's paragraph: what the cold read produced; what the entry does or doesn't do at-rest; for revisions, what specifically the cold-read found; for adds, the at-rest motive traced from reading not niche; for the entry's contribution at the anchor without leaning on adjacent context>.
+VERDICT: KEEP | DELETE (cascade <n>) | REVISE | ADD
 ```
+
+Pattern-scan paragraph at end-of-layer (one prose paragraph in reviewer voice — what the reviewer's ear catches across the full facet, with specific instances and what would change as a consequence; if nothing patterned, a single sentence saying so):
+
+```
+PATTERN-SCAN: <paragraph>
+```
+
+Cap-refusals (one prose line per refused candidate, naming what the reviewer didn't believe in):
+
+```
+CAP-REFUSAL: <facet>:<id-candidate> @<proto-line> — <reason in reviewer's voice>
+```
+
+Arbiter intervention traces (per `C-arbiter-protocol.md`) append inline beneath the affected verdict:
+
+```
+[ARBITER T1: <intervention reason>]
+<facet>:<id> @<proto-line> — <revised reviewer paragraph>.
+VERDICT (revised): KEEP | DELETE | REVISE | ADD
+```
+
+If two interventions exhaust without a non-mechanical justification, mark the verdict `DISCIPLINE-FAIL` and increment the appropriate `f-r2-counts:` entry in frontmatter.
+
+The free-prose discipline is structural, not stylistic. Labeled subfields invite the reviewer to fill the slots; the prose-paragraph requires the reviewer to carry the argument as a single thought. The reviewer's voice is what the rubric is reaching for.
 
 ## What the locked rubric does NOT do
 
@@ -126,7 +159,7 @@ This rubric is **locked** as of 2026-05-10 in its justification-first form. Per 
 
 > Once V2 is set, do not soften it for later rounds. Lift numbers are only honest under fixed rubrics.
 
-Revisions allowed only at Phase F (validation re-run audience verdict) with audience-confirmed evidence the gate is over-strict. The four gates may have **emphasis** recalibration but not **structural** removal.
+Revisions allowed only at Phase F (validation re-run audience verdict) with audience-confirmed evidence the gate is over-strict. The five gates may have **emphasis** recalibration but not **structural** removal. **G5 was added** at B2a carry-back as the locking discipline allows — audience-confirmed evidence supported the addition (the @131 paired-archive seam is concrete, not speculative).
 
 ## Phase C entry point
 

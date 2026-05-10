@@ -1,9 +1,30 @@
 ---
-doc: R2 judge tuning — clean plan v2
+doc: R2 judge tuning — clean plan v3
 date: 2026-05-10
-revision: v2 (addresses audit findings in active-project/staff/auditor/r2-tuning-plan-audit.md)
-supersedes: PLAN v1 (replaced in place)
+revision: v3 (annotates v2 with Plan B execution status; B3 + B5 deliverables landed in branch claude/implement-parallel-plan-SzWNb; B1 partially landed under baseline-blocked caveat; B2a / B4 / B2b-rerun deferred to a dispatch-heavy runtime session)
+supersedes: PLAN v2 (revision-in-place; structural plan unchanged); PLAN v1 (replaced)
+canonical-execution-plan: design/shoot-v2/plan-and-facets-r2-2026-05-10.md (Plan B; supersedes the action list below for the parallel-execution session)
 purpose: tight action list + decision points + honest risk register, with audit fixes applied.
+---
+
+## v3 status note (top-of-file)
+
+Plan B (`design/shoot-v2/plan-and-facets-r2-2026-05-10.md`) is the canonical execution path. The action list below maps to B1–B5 as follows:
+
+| v2 Action | Plan B step | Status |
+|---|---|---|
+| Action 1 — cite-index inspection + baseline reconstruction | B1 | **landed** (cite-index summary authored; baseline reconstruction blocked — see `1-baseline-reconstruction.md`) |
+| Action 2a — audience entry-quality review | B2a | **deferred to runtime session** (≤6 dispatches; scaffolding only) |
+| Action 2b — main-session decision-discipline review (baseline) | B2b-baseline | **deferred** (depends on B1 baseline; falls back to single-instance dossier evidence per `1-baseline-reconstruction.md`) |
+| Action 3 — carry-back synthesis + command edits | B3 | **landed** (see `3-carry-back.md`) |
+| Action 4 — validation re-run | B4 | **deferred to runtime session** (~20 dispatches; revert blocked; see `4-validation.md`) |
+| (post-Action 4) Action 2b-rerun against native logs | B2b-rerun | **deferred** (depends on B4 producing `.r2-decisions.md`) |
+| Project close + sentinel | B5 | **landed** (queue updated, sentinel in `4-validation.md`, this file → v3) |
+
+URI-023 item 9 (mandatory blind §Form re-test on R2 revisions) **landed unconditionally** at B3 per HARD-002 fix. The other items 1–8 remain in-queue as `rubric-feeling.md` V2.1 carry-back work, scope-separate from R2 discipline.
+
+URI-025 status: superseded by URI-026 (already in queue text). v1's "URI-025 unblocked by R2 close" framing is stale; Plan B v3 no longer claims to unblock URI-025. F7 emission contract per `staff/orchestrator-critic/card.md` (Plan A A2) is what consumes Plan B's `.r2-decisions.md` frontmatter at orchestrator Phase 6.
+
 ---
 
 # R2 Judge Tuning — Plan v2
