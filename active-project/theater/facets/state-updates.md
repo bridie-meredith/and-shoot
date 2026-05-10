@@ -18,4 +18,10 @@ round: 1
 10 @130 studio.active_conditions.tallow-lamp: guttering -> dark
 
 # === ACTOR (per-character impersonators) ===
-# (this section will be appended by Layer 3.2 dispatches; leave it empty)
+
+11 @23 actor:taylor-hebert-jaehaerys.position-in-household: floor-child-register -> ledger-bench-stool  # tens=2; NI@23 co-cite; load-bearing across @23-@30 ledger work
+12 @83 actor:taylor-hebert-jaehaerys.hair-state: loose -> apprentice-thread-bound  # field-extension: hair-state (new field; tens=3 peak; mother binds the apprentice-thread — domestic ratification of the mark; persists into @86+)
+13 @99 actor:taylor-hebert-jaehaerys.public-role: child-of-house -> apprentice-of-house  # field-extension: public-role (new field; tens=3 peak; irreversible — the household-visible role the mark fixes; co-cites prop:oc-account-ledger.apprentice-mark @99)
+14 @103 actor:taylor-hebert-jaehaerys.inventory: [] -> [cloth]  # tens=2; NI@103 co-cite; cloth carried through workshop re-entry @108
+15 @83 actor:oc-craftsman-mother.apprentice-ratification: not-performed -> thread-bound  # field-extension: apprentice-ratification (new field; tens=3 peak; the domestic ratification act — mother binds the apprentice-thread into Taylor's hair, irreversible household-symbolic act; non-POV, no NI co-cite required; pairs with state:12 on Taylor's hair-state)
+16 @99 actor:oc-craftsman-mother.relationship-role-toward-taylor: mother-of-child -> mother-of-apprentice  # field-extension: relationship-role-toward-taylor (new field; tens=3 peak; structural household-role shift consequent to the mark — mother's role re-fixes when Taylor's public-role re-fixes; non-POV, no NI co-cite required; co-cites prop:oc-account-ledger.apprentice-mark @99 and Taylor state:13)
