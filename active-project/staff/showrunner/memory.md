@@ -201,3 +201,19 @@ pipeline_landing_status:
     - active-project/audience/worm-canon-pedant/card.md (URI-017 + URI-014 persona-specific content)
   remaining_v2_items: 4 (URI-010 schema-side clause optional; URI-018, URI-019, URI-020 auditor sub-classes — gated on URI-006 dedicated auditor-tuning project; URI-021 meta-tuning-loop documentation)
   pipeline_state: V2 LIVE — next /and-season run uses landed mechanics
+
+orchestrator_critic_landed:
+  date: 2026-05-10
+  uri: URI-022
+  card_path: staff/orchestrator-critic/card.md
+  invocation: /and-season Phase 6 (Orchestrator verdict)
+  scope: library-only; no per-project copy
+  thresholds:
+    hard_dispatch_cap: 60
+    soft_dispatch_cap: 30
+    iteration_cap_per_phase: 3
+    soft_wallclock_hours: 8
+  verdict_format: [PASS, PASS-WITH-NOTES, FAIL]
+  failure_modes: 6 (F1 non-convergence; F2 forward-flag breach; F3 hard-rule violation; F4 unrouted-HARD-finding; F5 cap-thrash without rubric carry-back; F6 convergence claimed but residuals masked)
+  rule_10_added: /and-season runs gated at Phase 6 by orchestrator-critic; FAIL escalates to user
+  retroactive_self_audit: deferred — would assess R1's s01 run against this standard; running it would produce a back-graded verdict on a closed run, useful as calibration data but not as a current decision input

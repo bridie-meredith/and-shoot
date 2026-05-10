@@ -246,6 +246,17 @@ Categories:
 - **Action:** add `design/shoot-v2/meta-tuning-loop.md` OR fold a section into `design/shoot-v2/facet-tuning-process.md`. Document the four phases with hypothesis-discipline (state predictions before the run; measure results against predictions after; R2 confirmed all 4 predictions).
 - **Cost:** small. Doc-only edit.
 
+### URI-022 — Orchestrator-critic card (run-judge for /and-season) — **LANDED 2026-05-10**
+
+- **Category:** Systemic improvement (new staff-facing card class + new /and-season Phase 6).
+- **Source:** User direction 2026-05-10 — "establish an orchestrator-level critic card meant to judge performance by results and run time. it will be the standard to satisfy for and-season to be considered a success."
+- **Issue:** Content critics (audience, dramatist, auditor) judge what runs produce; nothing judged whether the run *itself* converged honestly within budget. R1+R2 demonstrated that runs can be SHIPPABLE-PENDING-EXECUTION with named residuals AND still be considered "successful" at the orchestration level — but the standard for that judgment was implicit and inconsistent.
+- **Landed location:**
+  - `staff/orchestrator-critic/card.md` — new card defining success criteria (Convergence / Quality / Routing categories), runtime budgets (60-dispatch hard cap, 30 soft, 3-iteration cap per phase), failure modes F1–F6, verdict format (PASS / PASS-WITH-NOTES / FAIL), run-report template.
+  - `.claude/commands/and-season.md` — new Phase 6 (Orchestrator verdict) added after Phase 5 (Persist). No subagent dispatch; main session reads the card and produces the verdict report. Phase 5 print summary updated to show the verdict line. Front-matter description updated.
+  - `CLAUDE.md` — agent routing table includes orchestrator-critic; directory map includes `staff/orchestrator-critic/`; Rules §8 amended to note the staff-facing exception to the cards/ five-class taxonomy; new Rule 10 names Phase 6 as the gate.
+- **Discipline:** card is library-only; no per-project copy. Versioning protocol in the card itself permits empirical recalibration of thresholds when runs produce verdict-discipline data.
+
 ---
 
 ## How items leave the queue

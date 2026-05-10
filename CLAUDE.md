@@ -37,6 +37,7 @@ project activation → season start → (episode start → shoot)* → bulk and-
 | fixer | Targeted correction. Meets auditor criteria with minimum change. | `staff/fixer/` |
 | margit | Card warehouse. Stores, indexes, validates, promotes. | `staff/margit/` |
 | editor | Final draft. Wrap only. Scene cuts, prose pass, continuity. | `staff/editor/` |
+| orchestrator-critic | Run-judge card. Defines the standard `/and-season` must satisfy to be considered a success — convergence + quality + routing + runtime. Library-only; not a subagent (main session reads the card and produces a verdict at Phase 6 of `/and-season`). | `staff/orchestrator-critic/` |
 
 ---
 
@@ -55,6 +56,7 @@ staff/            — production staff: agent homes + audience persona library
   fixer/          — agent home
   editor/         — agent home
   audience/       — audience persona library (18 personas; INDEX.md; 3 selected per project)
+  orchestrator-critic/ — run-judge card (`card.md`); library-only standard for `/and-season` success at Phase 6
 
 cards/            — story-facing card library (on-stage characters, locations, props, conditions, behaviors)
   personas/       — on-stage character cards (flat; INDEX.md for lookup by world/quality/trope/OC)
@@ -115,8 +117,9 @@ All file formats are defined in `schemas/`. Read the relevant schema before crea
 5. The show file is append-only during shoot. Rejected lines are deleted before retry. Failed lines (budget exhausted) are marked [NEEDS_EDIT:] and left.
 6. Audience membership is defined at project activation. It does not change mid-episode.
 7. Human checkpoints: series-level audit only. Everything else is agent-resolved unless an escalation requires human decision.
-8. Card schema authority is `schemas/card.schema.md`. Margit validates against it. No card class outside the five defined (persona, location, prop, condition, behavior).
+8. Card schema authority is `schemas/card.schema.md`. Margit validates against it. No card class outside the five defined (persona, location, prop, condition, behavior). **Exception:** `staff/orchestrator-critic/card.md` is staff-facing (judges production, not story content) and is explicitly outside the cards/ taxonomy. Staff-facing critic cards are documented in their own card frontmatter.
 9. All agent dispatches use the Agent tool. Inline generation is not a substitute for a dispatch — an agent that is not spawned in isolation does not have the context isolation the pipeline depends on.
+10. `/and-season` runs are gated at Phase 6 by `staff/orchestrator-critic/card.md`. PASS/PASS-WITH-NOTES/FAIL is the verdict on whether the run satisfied the standard. FAIL escalates to user; downstream work is gated on user decision.
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-description: Season-scope orchestrator. Authors one continuous SVO aggregate covering the whole season, iterates the five-pass SVO pipeline + nine-pass season-scope review against that aggregate, then splits to per-episode files by interpretive cut (ideal size + dramatic shape; episode count must be a multiple of 3). Usage - /and-season [season-slug]
+description: Season-scope orchestrator. Authors one continuous SVO aggregate covering the whole season, iterates the five-pass SVO pipeline + 10-pass season-scope review (S1, S2, S3, S3.5, S4, S4.5, S5, S6, S7, S8, S9) against that aggregate, then splits to per-episode files by interpretive cut (ideal size + dramatic shape; episode count must be a multiple of 3). Run is judged at Phase 6 against staff/orchestrator-critic/card.md — PASS/PASS-WITH-NOTES/FAIL gate. Usage - /and-season [season-slug]
 ---
 
 The season is the natural authoring unit. Episode boundaries are *outputs* of this command, not inputs — they are decided at Phase 4 by interpretive cut against ideal size and dramatic shape, not by pre-segmented per-episode chunks.
@@ -417,12 +417,49 @@ Phase 4 (interpretive split):
 Files:
   active-project/theater/proto-lines/<season-slug>.aggregate.md (canonical pre-split)
   active-project/theater/proto-lines/<season-slug>e<NN>.md (× N, post-split)
-  active-project/staff/auditor/season-<slug>-pass-S{1,2,3-{persona},3.5,4,5,6-{persona},7,8,9-{persona}}.md
+  active-project/staff/auditor/season-<slug>-pass-S{1,2,3-{persona},3.5,4,4.5,5,6-{persona},7,8,9-{persona}}.md
   active-project/staff/auditor/season-<slug>-split-proposal.md
   active-project/staff/auditor/season-<slug>-split-review-{persona}.md (× 3)
+  active-project/staff/auditor/season-<slug>-orchestrator-verdict.md (Phase 6)
+
+Orchestrator verdict (Phase 6, per staff/orchestrator-critic/card.md):
+  <VERDICT: PASS | PASS-WITH-NOTES — <notes> | FAIL — <failure summary>>
 
 Next: facet authoring per episode (/and-locstate, /and-dialogue, etc.) or /and-shoot for performance pass, or /and-wrap for season close.
 ```
+
+---
+
+## Phase 6 — Orchestrator verdict (URI-022, 2026-05-10)
+
+After Phase 5 persists, the run is judged against the **orchestrator-critic card** at `staff/orchestrator-critic/card.md`. This is the standard `/and-season` must satisfy to be considered a successful run.
+
+### What this phase does
+
+Per the card's invocation protocol (§"Invocation protocol" in `staff/orchestrator-critic/card.md`):
+
+1. The orchestrator (main session of `/and-season`) reads its own run state — the audit reports under `active-project/staff/auditor/season-<slug>-pass-*`, the split-proposal + split-review files, showrunner memory's iteration counts and dispatch counts, the per-episode files post-split, the aggregate post-Phase-3, and the session's wall-clock + dispatch totals.
+2. The orchestrator scores the run against the card's three success-criteria categories (Convergence / Quality / Routing) and the runtime budgets (60-dispatch hard cap; 30 soft; 3-iteration cap per phase).
+3. The orchestrator writes a run report to `active-project/staff/auditor/season-<slug>-orchestrator-verdict.md` per the §"Run report template" in the card.
+4. The verdict line — `PASS` / `PASS-WITH-NOTES — <notes>` / `FAIL — <failure summary>` — is written into `seasons[<slug>].orchestrator_verdict` in showrunner memory.
+
+### No subagent dispatch
+
+The card is a measurement spec, not a roleplay. The orchestrator-critic does not need its own agent — main session reads the card, applies the criteria to its run state, and produces the verdict. Phase 6 is bookkeeping discipline, not a new dispatch.
+
+### Verdict effects
+
+- **PASS:** the run is successful; downstream work (facet authoring, /and-shoot, /and-wrap) proceeds normally.
+- **PASS-WITH-NOTES:** the run is successful; the notes (high-dispatch / long-run / deep-iteration / rubric-too-soft / SLEEPERs surfaced) inform the next session's planning. No automatic re-run.
+- **FAIL:** the run did NOT satisfy the orchestrator standard. Required to surface the failure to the user with the specific failure-mode citation (F1–F6 per the card). Downstream work is gated on user decision: fix the run / accept the failure-mode and update the card / escalate to a different operating mode.
+
+### Honesty discipline
+
+The orchestrator-critic card has the same honesty discipline as the audience Threshold Discipline section (URI-017). Specifically: PASS-WITH-NOTES is not a hand-wave; "long-run" with no hour count or "high-dispatch" with no count is not acceptable. Each note is factual and specific. FAIL is information, not punishment.
+
+### Per-project tuning
+
+The orchestrator-critic card is library-only (`staff/orchestrator-critic/card.md`); there is no per-project copy. Future projects that need different thresholds (e.g., a longer season with a higher dispatch budget) update the card directly via the card's §"Versioning" protocol — empirical recalibration after enough runs produce verdict-discipline data.
 
 ---
 
