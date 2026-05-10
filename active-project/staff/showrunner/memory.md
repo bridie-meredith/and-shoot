@@ -169,3 +169,23 @@ tuning_r1_status:
     - URI-014 season-scope adversarial criteria per persona (per-card schema addition)
     - URI-015 S6 vibe-drift resolution path (when carry-forward is permitted)
     - URI-016 S8a/S8b split-verdict adjudication (restrictive-verdict-wins default)
+
+tuning_r2_status:
+  phase: D-complete
+  date: 2026-05-10
+  type: meta-tuning of review critics
+  trigger: user direction — "antagonistic feedback based on tighter audience rather than formulaic scoring; tune our review critics within the process itself"
+  hypotheses_predicted: 4
+  hypotheses_confirmed: 4
+  sleepers_surfaced: 4 (U5 dark-fantasy SHAPE-COHERENT, U3 worm cost-inversion, U4 pulp fishwife misdirection, U2 worm apprentice-mark register failure)
+  r1_accepts_flipped: 1 (U5 from F ACCEPT-WITH-CAVEAT to STRONG)
+  auditor_classes_needing_refinement: 3 of 11 (CURVE-SHAPE, CONSTRAINT, AP-SCAN)
+  auditor_classes_correctly_calibrated: 6 of 11 (STRUCTURAL, METADATA-INCONSISTENCY, DEDUP, FREQUENCY-BAND, PILE-UP, CONTRADICTION, TASTE-FLAG)
+  carry_back_queue:
+    - URI-017 persona-card Threshold Discipline section (audience-role schema)
+    - URI-018 auditor sub-class CURVE-SHAPE-EPISODE-INTERIOR (depends on URI-011)
+    - URI-019 auditor sub-classes CONSTRAINT-BEHAVIOR-SEQUENCE + CONSTRAINT-RESPONSE-BONE-REQUIRED (depends on URI-003 card additions)
+    - URI-020 auditor sub-class AP-SCAN-POST-PEAK-WINDOW-QUALITY (depends on URI-018)
+    - URI-021 meta-tuning loop pattern documentation
+  total_v2_carry_backs_r1_plus_r2: 15 (URI-007 through URI-021)
+  no_corpus_mutations: true (R2 produces critic improvements only; R1 routed subtasks still apply)

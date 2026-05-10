@@ -174,6 +174,55 @@ Categories:
 - **Action:** rubric clause edit — divergence triggers `S8-SPLIT-VERDICT-{slug}-{beat}` flag; more restrictive verdict wins by default; condition-card override converts to `S8-LICENSED-DIVERGENCE-{card-slug}`.
 - **Cost:** small. Clause edit only.
 
+### URI-017 — Persona-card "Threshold Discipline" section (audience-role schema addition)
+
+- **Category:** Schema (per-persona card sections).
+- **Source:** R2 D-critic-carry-back. R2 demonstrated that the worm-canon-pedant's R1 ACCEPT on U1 + U2 was formulaic deference ("tolerates slow open construction when latent-cost register is honest"); under R2's tightened brief that toleration was suspended and worm flipped to REJECT on the same units without any change to the corpus.
+- **Issue:** `class: persona` audience role currently has Voice / Hot Buttons / Fatigue Signals — no section codifying what the persona does when rubric thresholds permit a defense the persona's taste rejects. The discipline currently depends on per-round briefing.
+- **Action:** add **Threshold Discipline** body section to the audience role with three explicit rules: (1) rubric arithmetic is advisory, taste authoritative; (2) season-plan / tone-law / project-condition citations cover what the rubric explicitly licenses, not what the persona's lens registers as a fault; (3) carry-forwards are open until adjudicated clean. Mirror into the 3 active audience cards.
+- **Cost:** small. Schema edit + 3 audience-card updates.
+- **Effect:** the tightened brief becomes default; R1's formulaic-scoring path is the special case.
+
+### URI-018 — Auditor sub-class CURVE-SHAPE-EPISODE-INTERIOR
+
+- **Category:** Auditor class refinement (URI-006 progress).
+- **Source:** R2 C-auditor-self-review Refinement 1; SLEEPER-1 (U5 dark-fantasy SHAPE-COHERENT failure).
+- **Issue:** R1 CURVE-SHAPE ran at season scope only; episode-level SHAPE-COHERENT failures had no mechanic. e04 89-bone post-IGNITION aftermath was caught only via audience attack, not auditor.
+- **Action:** new sub-class running per-episode peak-beat identification + post-peak section length and density check. Threshold candidate: post-peak >50% of episode + <2 board-changes = HARD; 40-50% + <2 board-changes = SIGNAL.
+- **Validation candidates on s01:** HARD on e04 (matches SLEEPER-1); SIGNAL on e02, e03, e06.
+- **Cost:** medium. Sub-class authoring + threshold calibration.
+- **Dependencies:** URI-011 (Phase 4 Step 2 SHAPE-COHERENT mechanic) must define episode-level peak-beat first or co-produce.
+
+### URI-019 — Auditor sub-classes CONSTRAINT-BEHAVIOR-SEQUENCE + CONSTRAINT-RESPONSE-BONE-REQUIRED
+
+- **Category:** Auditor class refinement (URI-006 progress).
+- **Source:** R2 C-auditor-self-review Refinement 2; SLEEPER-2a (U3 cost-inversion at line 203) + SLEEPER-3 (U2 absent response-bones after apprentice-mark).
+- **Issue:** R1 CONSTRAINT checked series laws and cast-presence but not behavior-card sequence-ordering or required-presence at the bone level. Both SLEEPERs are behavior-card compliance failures the class could not see.
+- **Action:** two paired sub-classes:
+  - **CONSTRAINT-BEHAVIOR-SEQUENCE:** for actors with behavior-card cost-processing-order rules, check multi-bone interactions; flag inversions as SIGNAL by default, HARD at season-plan-named cost-bearing beats.
+  - **CONSTRAINT-RESPONSE-BONE-REQUIRED:** for actors with state-change-tracking-obligations on their behavior card, check that named state-changes are followed by ≥1 physical-register response-bone within the same chunk; flag absence as SIGNAL by default, HARD at season-plan-named board-changes.
+- **Cost:** medium for sub-classes. Card additions are part of URI-003.
+- **Dependencies:** URI-003 (margit referrals) — Taylor's behavior card needs explicit `cost-processing-order` and `state-change-tracking-obligation` fields.
+
+### URI-020 — Auditor sub-class AP-SCAN-POST-PEAK-WINDOW-QUALITY
+
+- **Category:** Auditor class refinement (URI-006 progress).
+- **Source:** R2 C-auditor-self-review Refinement 3; SLEEPER-2b (U4 fishwife misdirection at lines 372-393).
+- **Issue:** R1 AP-SCAN's window-quality check used aggregate budget across the full episode; a single TOLERATED window after the episode peak was within budget but actively displaced consequence from reader memory.
+- **Action:** new sub-class scanning the 20-line window immediately after the episode peak (peak identified per URI-018). Threshold candidate: TOLERATED of 15+ lines within 20 lines after peak = HARD; TOLERATED of any length within 10 lines of peak = SIGNAL.
+- **Validation candidate on s01:** HARD on e03 lines 372-393 (matches SLEEPER-2b).
+- **Cost:** small-to-medium. Sub-class authoring + threshold validation.
+- **Dependencies:** URI-018 (peak-beat anchor).
+- **Meta-tuning insight:** the same data (one TOLERATED window) goes from "within budget" to "post-peak misdirection HARD" depending on position. Thresholds aggregated across full units suppress position-dependent severity. This is the formulaic-scoring bypass pattern in concrete form.
+
+### URI-021 — Meta-tuning loop pattern documentation
+
+- **Category:** Process documentation (reusable for future tuning projects).
+- **Source:** R2 as a whole. The four-phase pattern (tightening brief → tightened audience attack → auditor self-review → critic-tuning carry-back) surfaced 4 SLEEPERs and 3 auditor refinements; was invented on the fly during R2.
+- **Issue:** Future tuning projects (any /and-X tuning, future facet rounds, future /and-season runs with new corpora) would benefit from the same meta-loop. Without documentation, the next project re-invents it.
+- **Action:** add `design/shoot-v2/meta-tuning-loop.md` OR fold a section into `design/shoot-v2/facet-tuning-process.md`. Document the four phases with hypothesis-discipline (state predictions before the run; measure results against predictions after; R2 confirmed all 4 predictions).
+- **Cost:** small. Doc-only edit.
+
 ---
 
 ## How items leave the queue
