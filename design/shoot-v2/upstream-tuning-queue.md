@@ -90,6 +90,87 @@ Categories:
 - **Cost:** large. Multi-session tuning project.
 - **Linkage:** this is the gating item for moving the audit from flag-only to delete-authoritative.
 
+### URI-007 — /and-season rubric: idiom depletion as named fault class
+
+- **Category:** Rubric tuning.
+- **Source:** `design/shoot-v2/and-season-tuning-r1/H-carry-back.md` Item 1. C-seams U17 (worm + dark-fantasy STRONG), E-r2 U17 REVISE, auditor fault-AP-1 HARD.
+- **Issue:** V1 has 3 partial mechanics (S3.5 5-instance threshold, S5 first-to-last voice, S6 live carry-forward) but no formalism for idiom-depletion-through-overuse as distinct from drift-through-inconsistency or state-verb deny-list violation. `holds the feet` 18+ instances on s01; full physical-stasis cluster 60+. Schema's narrow-license `holds` exemption is satisfied per-instance but cumulative pattern flattens cost-register.
+- **Action:** rubric edit + schema reconciliation (does narrow-license `holds` extend to depletion-at-scale?) + 20-named-instance validation on s01 corpus + screen-writer regeneration deferred to separate session.
+- **Cost:** medium. Candidate mechanic drafted in H-carry-back.
+
+### URI-008 — /and-season rubric: denouement-share quantification
+
+- **Category:** Rubric tuning.
+- **Source:** H-carry-back Item 2. C-seams U1, E-r2 U1 REVISE.
+- **Issue:** S2 names "back half of the aggregate" for climax position but no max denouement share. s01 denouement at 43% triggered audience attack; rubric had no V1 answer.
+- **Action:** rubric clause edit. Candidate: `LATE-WEIGHT` flag if denouement >40% of aggregate; tone-law-licensed exception when season-plan explicitly designates the post-peak arc as cost-bearing.
+- **Cost:** small. Clause-only edit.
+
+### URI-009 — /and-season rubric: narrator-field rule for interlude episodes
+
+- **Category:** Rubric tuning.
+- **Source:** H-carry-back Item 3. B-baseline Gap 8 (corrected per auditor signal-006: e05 is compliant; only e06 is anomalous), auditor fault-005 HARD.
+- **Issue:** Phase 4 Step 3 spec says `narrator:` is dominant POV by line count; s01e06 names interlude POV (Elara) against dominant Taylor (~122 vs ~86). Spec ambiguity.
+- **Action:** rubric verdict — Option A (interlude-POV-wins clause) or Option B (literal dominant-line-count rule). H-carry-back recommends adjudication path. **Blocks fault-005 closure.**
+- **Cost:** small. Clause edit + at most one per-episode header + memory.md correction (Option B path only).
+
+### URI-010 — Schema clarification: aggregate non-monotonic IDs
+
+- **Category:** Schema.
+- **Source:** H-carry-back Item 4. Auditor fault-001 HARD (NEW); requires human escalation.
+- **Issue:** s01 aggregate contains 21 900-range IDs interspersed in e01-range content. Schema "stable IDs / re-ordering preserves IDs" rule is in tension with "monotonic positive integer, file-scoped" rule when bones get reordered. Fixer formula `aggregate_id = aggregate_range_start + episode_id - 1` mis-maps for any episode covering the out-of-order region.
+- **Action:** schema decision — Option A (stable-overrides-monotonic; legal survivors; fixer formula must be position-aware) or Option B (monotonic-overrides-stable; reorder triggers renumbering pass). Human reviewer to check pass-2/pass-3 reorder history.
+- **Cost:** small for schema edit; medium for s01 corpus impact (Option B requires renumbering).
+- **Blocks:** fixer routing for any s01e01 bone in the non-monotonic region. Human escalation gating.
+
+### URI-011 — /and-season rubric: episode-shape mechanics for Phase 4 Step 2
+
+- **Category:** Rubric tuning.
+- **Source:** H-carry-back Item 5. B-baseline Gaps 1+3, C-seams Axis 2 + Axis 4 (9 of 12 STRONG seams pressured one of these).
+- **Issue:** Phase 4 Step 2 names verdicts (`OPEN-ENGAGES`, `CLOSE-EARNS-NEXT`, `SHAPE-COHERENT`) without mechanics for testing them. Audience surfaced specific candidate close-points; rubric gave them no triage.
+- **Action:** rubric edit — three candidate sub-mechanics drafted (5a OPEN-ENGAGES test, 5b CLOSE-EARNS-NEXT test, 5c SHAPE-COHERENT test). Validate against s01e01–e06.
+- **Cost:** medium. Three new clauses + 6-episode validation.
+
+### URI-012 — /and-season rubric: post-split continuity pass (S4.5)
+
+- **Category:** Rubric tuning.
+- **Source:** H-carry-back Item 6. B-baseline Gap 2, C-seams Axis 3 (5 of 5 boundary continuity units returned STRONG/MODERATE).
+- **Issue:** S4 covers within-aggregate continuity; nothing checks the split's effect on continuity across post-split episode boundaries.
+- **Action:** new rubric pass S4.5. Per-boundary verdict: `BOUNDARY-CARRIES` or `BOUNDARY-DROPS-{state}`. File-level: `POST-SPLIT-CONTINUITY-OK` or `POST-SPLIT-CONTINUITY-FAIL-{boundary-list}`.
+- **Cost:** medium. New pass + 5-boundary validation on s01 + integration into /and-season command.
+
+### URI-013 — /and-season rubric: S3 vs S9 entertainment-density reconciliation
+
+- **Category:** Rubric tuning (clarification).
+- **Source:** H-carry-back Item 7. B-baseline Gap 6.
+- **Issue:** S3 caps at ~10% TOLERATED + zero BORED; S9 caps at ≥30% B-or-T in 100-line stretch. Two non-aligned thresholds; on s01 S3 reached ACCEPT but S9 still triggered.
+- **Action:** rubric clarification — recommended Option A (explicit different purposes: S3 = entertainment cap; S9 = attention floor; non-aligned verdicts both valid).
+- **Cost:** small. Clause clarification only.
+
+### URI-014 — /and-season + card schema: season-scope adversarial criteria per persona
+
+- **Category:** Schema (per-persona card sections).
+- **Source:** H-carry-back Item 8. B-baseline Gap 7.
+- **Issue:** Per-line and per-episode adversarial habits implicit in persona cards; season-scope adversarial habits not separately documented. Phase C subagent had to derive them.
+- **Action:** add `season-scope-adversarial` section to `class: persona` cards under `schemas/card.schema.md`. 3–5 named attack categories per persona. Candidate categories drafted in H-carry-back.
+- **Cost:** small. Schema edit + per-active-persona card update.
+
+### URI-015 — /and-season rubric: S6 vibe-drift resolution path
+
+- **Category:** Rubric tuning.
+- **Source:** H-carry-back Item 9. B-baseline Gap 4. Observed in s01 (S6 r1 fired 2-of-3 drift; resolution was carry-forward without re-pass).
+- **Issue:** Rubric says "≥2-persona threshold for accepting drift flags" but does not specify resolution path. Carry-forward used by default; not always rubric-permitted.
+- **Action:** rubric clause edit — localizable drift routes to screen-writer for stretch regeneration; non-localizable drift routes to season-scope screen-writer pass OR Phase H carry-back; carry-forward only when season-plan acknowledges the pattern.
+- **Cost:** small. Clause edit only.
+
+### URI-016 — /and-season rubric: S8a/S8b split-verdict adjudication
+
+- **Category:** Rubric tuning.
+- **Source:** H-carry-back Item 10. B-baseline Gap 5. Observed in s01 (S8a IMPLAUSIBLE on Elara visit; S8b PLAUSIBLE on same beat).
+- **Issue:** When character (S8a) and event (S8b) lenses disagree on the same beat, rubric does not describe what to do. Reader does not compute lens-by-lens.
+- **Action:** rubric clause edit — divergence triggers `S8-SPLIT-VERDICT-{slug}-{beat}` flag; more restrictive verdict wins by default; condition-card override converts to `S8-LICENSED-DIVERGENCE-{card-slug}`.
+- **Cost:** small. Clause edit only.
+
 ---
 
 ## How items leave the queue
