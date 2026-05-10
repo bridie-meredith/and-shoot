@@ -276,6 +276,8 @@ Categories:
 - **Note:** filed as URI-007 in the /and-facets session branch; renumbered to URI-023 on merge to avoid collision with /and-season URI-007 (idiom depletion).
 - **Status update 2026-05-10:** item 9 is the load-bearing R2 finding and is being addressed by the **R2 Judge Tuning project** (`design/shoot-v2/r2-judge-tuning/`). Phase A (corpus + failure-mode taxonomy) and Phase B (locked R2 rubric with gates G1–G4) authored. Phases C–F (audience attack → R2 self-review → carry-back → re-run validation) are dispatch-heavy and run in subsequent sessions. Items 1-8 remain feeling-rubric content edits and land separately.
 
+- **Status update 2026-05-10 — Plan B landed (item 9 closed; items 1-8 still open):** Plan B (`design/shoot-v2/plan-and-facets-r2-2026-05-10.md`) executed on branch `claude/implement-parallel-plan-SzWNb`. **Item 9 lands** as command-side §Form re-test in `.claude/commands/and-facets-r2.md` per-layer (R2.1 NI, R2.2 memory, R2.3 feeling, R2.4 metaphor) plus the locked-rubric + arbiter discipline (T1, T4 only) plus decision-shard emission per layer (`active-project/staff/<facet>/r2-decision-shard.md` with `f-r2-counts:` frontmatter) plus Phase 5.5 arbiter glue plus Phase 6 consolidation into `active-project/theater/facets/.r2-decisions.md`. The `.r2-decisions.md` frontmatter consumes Plan A A2's schema clause in `schemas/audit-report.schema.md` and feeds orchestrator-critic Phase 6 F7 (per URI-026). Validation re-run (B4) deferred to a dispatch-heavy runtime session. **Items 1-8 still open** as feeling-rubric V2.1 carry-back; not in scope for the R2 judge tuning project.
+
 ### URI-024 — feel:10 Phase-E author regression
 
 - **Category:** Per-facet author work; small targeted revision.

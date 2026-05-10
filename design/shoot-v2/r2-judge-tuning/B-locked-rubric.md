@@ -87,32 +87,50 @@ The graph-revealed niche **enables** the question; it does not **answer** it. Th
 
 ## Decision-log discipline
 
-Each R2 layer produces a structured decision log. **Every entry's verdict has a justification line — a paragraph in the reviewer's voice, not a checkbox.**
+Each R2 layer produces a decision-log shard at `active-project/staff/<facet>/r2-decision-shard.md` (feeling: per-character `r2-decision-shard-<character-slug>.md`). **Every verdict is one free-prose paragraph followed by one verdict line — no labeled subfields.** The labeled-subfield template that PLAN v1 used was itself checklist-shaped, which is the failure mode the locked rubric is fixing (audit SIGNAL-004).
+
+The shard's frontmatter carries failure-mode counts the orchestrator-critic Phase 6 reads:
+
+```yaml
+---
+facet: <facet-name>
+episode: <slug>
+layer: R2.<n>
+character: <slug>           # only for feeling per-character shards
+f-r2-counts: {f-r2-1: <n>, f-r2-2: <n>, f-r2-3: <n>, f-r2-4: <n>}
+---
+```
+
+The body is free prose. One block per existing-entry decision and per new entry. Reviewer voice throughout. Each block ends with a single verdict line:
 
 ```
-## R2 Decision Log
-- <facet>:<id> @<proto-line>: KEEP
-  Justification: <2-4 sentences in reviewer's voice — what works, why it earned its place>
-
-- <facet>:<id> @<proto-line>: DELETE
-  Justification: <2-4 sentences — what specifically isn't working, in concrete terms>
-  Cascade: <count> protolines stripped
-
-- <facet>:<id> @<proto-line>: REVISE
-  Original seam: <what the reviewer was answering>
-  Cold-read verdict: <does the revision earn its place at-rest, in 1-2 sentences>
-  Justification: <2-4 sentences>
-
-- <facet>:<id> @<proto-line>: ADD
-  Motive: <at-rest motive paragraph — why the entry is wanted, traced from reading not from niche>
-  At-rest test: <does the entry hold without leaning on adjacent context, in 1-2 sentences>
-
-## Pattern Scan (end-of-layer)
-<paragraph in reviewer's voice — what the reviewer's ear catches across the full facet, with specific instances and what should change. If nothing patterned: a single sentence saying so.>
-
-## Cap Refusals
-- <facet>:<id-candidate>: <reason in reviewer's voice — what the reviewer didn't believe in, in concrete terms>
+<facet>:<id> @<proto-line> — <reviewer's paragraph: what the cold read produced; what the entry does or doesn't do at-rest; for revisions, what specifically the cold-read found; for adds, the at-rest motive traced from reading not niche; for the entry's contribution at the anchor without leaning on adjacent context>.
+VERDICT: KEEP | DELETE (cascade <n>) | REVISE | ADD
 ```
+
+Pattern-scan paragraph at end-of-layer (one prose paragraph in reviewer voice — what the reviewer's ear catches across the full facet, with specific instances and what would change as a consequence; if nothing patterned, a single sentence saying so):
+
+```
+PATTERN-SCAN: <paragraph>
+```
+
+Cap-refusals (one prose line per refused candidate, naming what the reviewer didn't believe in):
+
+```
+CAP-REFUSAL: <facet>:<id-candidate> @<proto-line> — <reason in reviewer's voice>
+```
+
+Arbiter intervention traces (per `C-arbiter-protocol.md`) append inline beneath the affected verdict:
+
+```
+[ARBITER T1: <intervention reason>]
+<facet>:<id> @<proto-line> — <revised reviewer paragraph>.
+VERDICT (revised): KEEP | DELETE | REVISE | ADD
+```
+
+If two interventions exhaust without a non-mechanical justification, mark the verdict `DISCIPLINE-FAIL` and increment the appropriate `f-r2-counts:` entry in frontmatter.
+
+The free-prose discipline is structural, not stylistic. Labeled subfields invite the reviewer to fill the slots; the prose-paragraph requires the reviewer to carry the argument as a single thought. The reviewer's voice is what the rubric is reaching for.
 
 ## What the locked rubric does NOT do
 
