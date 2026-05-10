@@ -73,7 +73,9 @@ Create `active-project/theater/facets/`.
 
 ### Layer 1 — tens, loc-state
 
-#### 1a. tensometer (dramatist)
+#### 1a. tensometer (dramatist — read-only; orchestrator writes)
+
+**Dramatist is Read-only** per agent definition. It cannot author files. The orchestrator dispatches dramatist for the *judgment* and writes the file from the returned payload. This is the only such inversion in the pipeline; every other author has Write/Edit.
 
 Dispatch **dramatist** with:
 - Proto-lines file (bones; no facet citations yet).
@@ -84,11 +86,19 @@ Dispatch **dramatist** with:
 
 **Forbid loading:** other facet rubrics, behavior cards, vibes (tensometer is a single-rater scalar; vibes-as-bias enters in Round 2+ if/when retune-minor lands).
 
-**Dramatist task (two-pass authoring):**
-1. Per-beat pass — assign 1/2/3 per proto-line; cite axis per non-trivial entry.
+**Dramatist task (two-pass authoring; payload return only):**
+1. Per-beat pass — assign 1/2/3 per content-bearing proto-line; cite axis per non-trivial entry.
 2. Curve-shape pass — verify scene-level rise→peak→release and episode-level act-shape + frequency band 60-75/20-30/5-10. Do not inflate to manufacture shape; flag screen-writer kickback for structural gaps.
 
-Output: `active-project/theater/facets/tensometer.md`. Citation write-back: append `[tens:<id>]` to every proto-line that received a 2 or 3 (1-rated lines do NOT need a back-citation; the absence of `tens:` on a proto-line means rung 1 by convention).
+**Return payload** (text, in the body of the reply — do not attempt to Write):
+- Ratings table: entry-id → proto-id → scalar [→ optional terse axis-citation].
+- Distribution: 1s/2s/3s counts and percentages.
+- Curve verdict: SHAPE-OK | SHAPE-FAIL with named failure modes.
+- Frequency-band verdict: in-band | soft-fail (which rung; by how much).
+- Cull deltas (per-beat-pass → curve-shape-pass changes).
+- Flags: screen-writer kickback candidates, scene-boundary issues, rubric gaps.
+
+**Orchestrator writes** `active-project/theater/facets/tensometer.md` from the dramatist's payload, in schema § tensometer form. Citation write-back: orchestrator appends `[tens:<entry-id>]` to every proto-line that received a 2 or 3 (1-rated lines do NOT need a back-citation; absence of `tens:` on a proto-line means rung 1 by convention).
 
 #### 1b. location-state (studio)
 
