@@ -56,7 +56,7 @@ seasons:
     chunk: "The tax-collection swarm event at ~86 AC converts Taylor from invisible smallfolk child to a named anomaly in Aldric Pryor's incident log, and the institutional apparatus that will eventually suppress her coalition takes its first documentary step; Taylor's counter-move is to build depth before breadth, recruiting Mira Stonefield and establishing the sept as her literacy and information node, but the same control instincts that make her effective keep her parents at managed distance and Mira at arm's length precisely when closeness would be cheaper. The personal cost begins paying out before the season closes: Elara Ashford cannot be kept at arm's length indefinitely, and before S1 ends the lord's traveling maester arrives at Fairstead under cover of routine ledger work — the steward's note has reached him, and the board has changed."
     episodes:
       - slug: s01e01
-        status: faceted-r3
+        status: audited-r1
         narrator: taylor-hebert-jaehaerys
         chunk: "Show the audience the shape of the household Taylor wakes into and the apprentice mark that fixes her visible role inside it."
         proto_lines_path: active-project/theater/proto-lines/s01e01.md
@@ -65,6 +65,9 @@ seasons:
         round_2_complete: true
         round_3_complete: true
         round_3_zero_change: true  # all 6 R3 dispatches reported K-only; pipeline converged at R2
+        audit_complete: true
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_findings: 7  # 1 CONTRADICTION + 0 DEDUP + 2 SUPERFLUOUS + 4 CONSTRAINT + 1 PILE-UP-conditional
         cast: taylor-hebert-jaehaerys, oc-craftsman-mother, oc-craftsman-father
         locations: loc-craftsman-workshop-home
         prior_episode: none
