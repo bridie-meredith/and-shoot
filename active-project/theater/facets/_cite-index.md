@@ -2,7 +2,7 @@
 generated: 2026-05-10
 source: active-project/theater/proto-lines/s01e01.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 202 facet entries; 38/102 protolines decorated (37.3%)
+totals: 205 facet entries; 38/102 protolines decorated (37.3%)
 
 ## Density distribution (protolines by citation count)
 
@@ -10,14 +10,14 @@ totals: 202 facet entries; 38/102 protolines decorated (37.3%)
 |------------|-------|
 | 0 (bare)   | 64 |
 | 1          | 7 |
-| 2          | 13 |
-| 3          | 9 |
+| 2          | 12 |
+| 3          | 10 |
 | 4          | 2 |
 | 5          | 3 |
 | 6          | 1 |
 | 7          | 1 |
-| 9          | 1 |
-| 15          | 1 |
+| 10          | 1 |
+| 16          | 1 |
 
 ## Per-facet entries
 
@@ -51,7 +51,7 @@ totals: 202 facet entries; 38/102 protolines decorated (37.3%)
   tens:27 @32 r=1 co=[loc-state:3, state:2, state:17, state:18]
   tens:28 @33 r=1
   tens:29 @34 r=2 back=Y co=[feel:2]
-  tens:30 @35 r=2 back=Y co=[narrator:10, state:19, state:20, mem:2, feel:9, vibes:3, vibes:9, vibes:12]
+  tens:30 @35 r=2 back=Y co=[narrator:10, narrator:28, state:19, state:20, mem:2, feel:9, vibes:3, vibes:9, vibes:12]
   tens:31 @36 r=1 co=[feel:14]
   tens:32 @37 r=1
   tens:33 @38 r=1
@@ -60,7 +60,7 @@ totals: 202 facet entries; 38/102 protolines decorated (37.3%)
   tens:36 @42 r=2 back=Y co=[narrator:11]
   tens:37 @45 r=1
   tens:38 @46 r=1
-  tens:39 @47 r=2 back=Y co=[narrator:12]
+  tens:39 @47 r=2 back=Y co=[narrator:12, narrator:27]
   tens:40 @48 r=1
   tens:41 @49 r=1
   tens:42 @50 r=1
@@ -97,7 +97,7 @@ totals: 202 facet entries; 38/102 protolines decorated (37.3%)
   tens:73 @96 r=1
   tens:74 @97 r=1
   tens:75 @98 r=2 back=Y co=[narrator:17, state:5]
-  tens:76 @99 r=3 back=Y co=[narrator:18, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
+  tens:76 @99 r=3 back=Y co=[narrator:18, narrator:29, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
   tens:77 @100 r=1
   tens:78 @101 r=1
   tens:79 @102 r=1
@@ -135,7 +135,7 @@ totals: 202 facet entries; 38/102 protolines decorated (37.3%)
   loc-state:7 @126 back=Y co=[state:8]
   loc-state:8 @130 back=Y co=[narrator:21, sensory:5, state:9, state:10, vibes:17]
 
-### narrator (24 entries)
+### narrator (27 entries)
   narrator:1 @1 back=Y co=[loc-state:1, sensory:1]
   narrator:2 @4 back=Y
   narrator:3 @5 back=Y co=[tens:4]
@@ -143,15 +143,15 @@ totals: 202 facet entries; 38/102 protolines decorated (37.3%)
   narrator:6 @19 back=Y co=[tens:15]
   narrator:7 @23 back=Y co=[tens:19, state:11]
   narrator:9 @27 back=Y co=[mem:1, vibes:2]
-  narrator:10 @35 back=Y co=[tens:30, state:19, state:20, mem:2, feel:9, vibes:3, vibes:9, vibes:12]
+  narrator:10 @35 back=Y co=[tens:30, narrator:28, state:19, state:20, mem:2, feel:9, vibes:3, vibes:9, vibes:12]
   narrator:11 @42 back=Y co=[tens:36]
-  narrator:12 @47 back=Y co=[tens:39]
+  narrator:12 @47 back=Y co=[tens:39, narrator:27]
   narrator:13 @67 back=Y co=[tens:51, feel:10]
   narrator:14 @69 back=Y co=[tens:52, mem:3, vibes:4, vibes:13]
   narrator:15 @83 back=Y co=[tens:61, state:12, state:15, feel:6]
   narrator:16 @90 back=Y co=[tens:67]
   narrator:17 @98 back=Y co=[tens:75, state:5]
-  narrator:18 @99 back=Y co=[tens:76, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
+  narrator:18 @99 back=Y co=[tens:76, narrator:29, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
   narrator:19 @103 back=Y co=[tens:80, state:14, mem:6]
   narrator:20 @119 back=Y co=[tens:93, mem:4, feel:7, vibes:5, vibes:8, vibes:10]
   narrator:21 @130 back=Y co=[loc-state:8, sensory:5, state:9, state:10, vibes:17]
@@ -160,6 +160,9 @@ totals: 202 facet entries; 38/102 protolines decorated (37.3%)
   narrator:24 @113 back=Y co=[tens:87, mem:7]
   narrator:25 @131 back=Y co=[tens:102, mem:8]
   narrator:26 @9 back=Y co=[feel:1, mem:5]
+  narrator:27 @47 back=Y co=[tens:39, narrator:12]
+  narrator:28 @35 back=Y co=[tens:30, narrator:10, state:19, state:20, mem:2, feel:9, vibes:3, vibes:9, vibes:12]
+  narrator:29 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
 
 ### sensory (5 entries)
   sensory:1 @1 back=Y co=[loc-state:1, narrator:1]
@@ -174,27 +177,27 @@ totals: 202 facet entries; 38/102 protolines decorated (37.3%)
   state:3 @58 back=Y co=[loc-state:4, sensory:4]
   state:4 @93 back=Y co=[tens:70]
   state:5 @98 back=Y co=[tens:75, narrator:17]
-  state:6 @99 back=Y co=[tens:76, narrator:18, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
+  state:6 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
   state:7 @122 back=Y
   state:8 @126 back=Y co=[loc-state:7]
   state:9 @130 back=Y co=[loc-state:8, narrator:21, sensory:5, state:10, vibes:17]
   state:10 @130 back=Y co=[loc-state:8, narrator:21, sensory:5, state:9, vibes:17]
   state:11 @23 back=Y co=[tens:19, narrator:7]
   state:12 @83 back=Y co=[tens:61, narrator:15, state:15, feel:6]
-  state:13 @99 back=Y co=[tens:76, narrator:18, state:6, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
+  state:13 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:6, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
   state:14 @103 back=Y co=[tens:80, narrator:19, mem:6]
   state:15 @83 back=Y co=[tens:61, narrator:15, state:12, feel:6]
-  state:16 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
+  state:16 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:6, state:13, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
   state:17 @32 back=Y co=[loc-state:3, state:2, state:18]
   state:18 @32 back=Y co=[loc-state:3, state:2, state:17]
-  state:19 @35 back=Y co=[tens:30, narrator:10, state:20, mem:2, feel:9, vibes:3, vibes:9, vibes:12]
-  state:20 @35 back=Y co=[tens:30, narrator:10, state:19, mem:2, feel:9, vibes:3, vibes:9, vibes:12]
-  state:21 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
-  state:22 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
+  state:19 @35 back=Y co=[tens:30, narrator:10, narrator:28, state:20, mem:2, feel:9, vibes:3, vibes:9, vibes:12]
+  state:20 @35 back=Y co=[tens:30, narrator:10, narrator:28, state:19, mem:2, feel:9, vibes:3, vibes:9, vibes:12]
+  state:21 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:6, state:13, state:16, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
+  state:22 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:6, state:13, state:16, state:21, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
 
 ### mem (8 entries)
   mem:1 @27 back=Y co=[narrator:9, vibes:2]
-  mem:2 @35 back=Y co=[tens:30, narrator:10, state:19, state:20, feel:9, vibes:3, vibes:9, vibes:12]
+  mem:2 @35 back=Y co=[tens:30, narrator:10, narrator:28, state:19, state:20, feel:9, vibes:3, vibes:9, vibes:12]
   mem:3 @69 back=Y co=[tens:52, narrator:14, vibes:4, vibes:13]
   mem:4 @119 back=Y co=[tens:93, narrator:20, feel:7, vibes:5, vibes:8, vibes:10]
   mem:5 @9 back=Y co=[feel:1, narrator:26]
@@ -212,41 +215,41 @@ totals: 202 facet entries; 38/102 protolines decorated (37.3%)
   feel:6 @83 back=Y co=[tens:61, narrator:15, state:12, state:15]
   feel:7 @119 back=Y co=[tens:93, narrator:20, mem:4, vibes:5, vibes:8, vibes:10]
   feel:14 @36 back=Y
-  feel:9 @35 back=Y co=[tens:30, narrator:10, state:19, state:20, mem:2, vibes:3, vibes:9, vibes:12]
+  feel:9 @35 back=Y co=[tens:30, narrator:10, narrator:28, state:19, state:20, mem:2, vibes:3, vibes:9, vibes:12]
   feel:10 @67 back=Y co=[tens:51, narrator:13]
-  feel:11 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
+  feel:11 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:6, state:13, state:16, state:21, state:22, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20]
 
 ### meta (0 entries)
 _(no entries)_
 
 ### vibes (21 entries)
-  vibes:1 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20] lic-out=[state-update:6, state-update:13, tens:3, feeling:11]
+  vibes:1 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20] lic-out=[state-update:6, state-update:13, tens:3, feeling:11]
   vibes:2 @27 back=Y co=[narrator:9, mem:1] lic-out=[memory:1, proto:27]
-  vibes:3 @35 back=Y co=[tens:30, narrator:10, state:19, state:20, mem:2, feel:9, vibes:9, vibes:12] lic-out=[memory:2, state-update:19, state-update:20, feeling:9]
+  vibes:3 @35 back=Y co=[tens:30, narrator:10, narrator:28, state:19, state:20, mem:2, feel:9, vibes:9, vibes:12] lic-out=[memory:2, state-update:19, state-update:20, feeling:9]
   vibes:4 @69 back=Y co=[tens:52, narrator:14, mem:3, vibes:13] lic-out=[memory:3, tens:2, proto:69]
   vibes:5 @119 back=Y co=[tens:93, narrator:20, mem:4, feel:7, vibes:8, vibes:10] lic-out=[memory:4, state-update:13, tens:2]
-  vibes:6 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20] lic-out=[state-update:15, state-update:16, tens:3, feeling:11]
+  vibes:6 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20] lic-out=[state-update:15, state-update:16, tens:3, feeling:11]
   vibes:7 @15 back=Y co=[feel:5] lic-out=[feeling:5, proto:15]
   vibes:8 @119 back=Y co=[tens:93, narrator:20, mem:4, feel:7, vibes:5, vibes:10] lic-out=[feeling:7, state-update:13, memory:4, tens:2]
-  vibes:9 @35 back=Y co=[tens:30, narrator:10, state:19, state:20, mem:2, feel:9, vibes:3, vibes:12] lic-out=[state-update:18, state-update:19, proto:35]
+  vibes:9 @35 back=Y co=[tens:30, narrator:10, narrator:28, state:19, state:20, mem:2, feel:9, vibes:3, vibes:12] lic-out=[state-update:18, state-update:19, proto:35]
   vibes:10 @119 back=Y co=[tens:93, narrator:20, mem:4, feel:7, vibes:5, vibes:8] lic-out=[memory:4, feeling:7, tens:2]
-  vibes:11 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:14, vibes:15, vibes:18, vibes:20] lic-out=[state-update:21, state-update:22, state-update:6, tens:3, feeling:11]
-  vibes:12 @35 back=Y co=[tens:30, narrator:10, state:19, state:20, mem:2, feel:9, vibes:3, vibes:9] lic-out=[state-update:19, state-update:20, feeling:9, tens:2]
+  vibes:11 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:14, vibes:15, vibes:18, vibes:20] lic-out=[state-update:21, state-update:22, state-update:6, tens:3, feeling:11]
+  vibes:12 @35 back=Y co=[tens:30, narrator:10, narrator:28, state:19, state:20, mem:2, feel:9, vibes:3, vibes:9] lic-out=[state-update:19, state-update:20, feeling:9, tens:2]
   vibes:13 @69 back=Y co=[tens:52, narrator:14, mem:3, vibes:4] lic-out=[proto:69, memory:3, tens:2]
-  vibes:14 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:15, vibes:18, vibes:20] lic-out=[state-update:21, state-update:22, feeling:11, tens:3]
-  vibes:15 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:18, vibes:20] lic-out=[state-update:6, state-update:5, state-update:3, tens:3]
+  vibes:14 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:15, vibes:18, vibes:20] lic-out=[state-update:21, state-update:22, feeling:11, tens:3]
+  vibes:15 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:18, vibes:20] lic-out=[state-update:6, state-update:5, state-update:3, tens:3]
   vibes:16 @8 back=Y co=[loc-state:2, narrator:4, sensory:3, state:1] lic-out=[state-update:1, proto:8]
   vibes:17 @130 back=Y co=[loc-state:8, narrator:21, sensory:5, state:9, state:10] lic-out=[state-update:9, state-update:10, state-update:8, proto:130]
-  vibes:18 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:20] lic-out=[state-update:6, state-update:13, state-update:16, tens:3]
+  vibes:18 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:20] lic-out=[state-update:6, state-update:13, state-update:16, tens:3]
   vibes:19 @- back=- lic-out=[proto:1]
-  vibes:20 @99 back=Y co=[tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18] lic-out=[state-update:18, state-update:19, state-update:20, feeling:9, tens:2]
+  vibes:20 @99 back=Y co=[tens:76, narrator:18, narrator:29, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18] lic-out=[state-update:18, state-update:19, state-update:20, feeling:9, tens:2]
   vibes:21 @- back=- lic-out=[state-update:6, state-update:13, state-update:15, state-update:16, state-update:21, state-update:22]
 
 ## Pile-ups (>4 facets co-located on one protoline)
 
-- **@99** (15): tens:76, narrator:18, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20
+- **@99** (16): tens:76, narrator:18, narrator:29, state:6, state:13, state:16, state:21, state:22, feel:11, vibes:1, vibes:6, vibes:11, vibes:14, vibes:15, vibes:18, vibes:20
     `oc-craftsman-father sets the apprentice mark`
-- **@35** (9): tens:30, narrator:10, state:19, state:20, mem:2, feel:9, vibes:3, vibes:9, vibes:12
+- **@35** (10): tens:30, narrator:10, narrator:28, state:19, state:20, mem:2, feel:9, vibes:3, vibes:9, vibes:12
     `oc-craftsman-father draws the market slip`
 - **@119** (7): tens:93, narrator:20, mem:4, feel:7, vibes:5, vibes:8, vibes:10
     `oc-craftsman-mother touches taylor-hebert-jaehaerys's shoulder`
