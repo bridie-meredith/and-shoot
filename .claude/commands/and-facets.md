@@ -309,9 +309,11 @@ If a facet author refuses to author (rubric gap, structural fault, blocking inpu
 
 When Round 2 is implemented, every midband facet author (NI, memory, feeling, metaphor) MUST receive the **full** Round-1 facet graph as input — not just the DAG-upstream subset their rubric names. Round 1 is **blind by design** (each author sees only its rubric-named upstreams); Round 2 is **graph-aware by design** (each author judges keep / delete / add against the complete cross-facet graph).
 
-Enforcement at build time: the Round-2 dispatch payload for any midband author must include all nine Round-1 facet files (`tensometer.md`, `location-state.md`, `interest-narrator.md`, `sensory.md`, `state-updates.md`, `memory.md`, `feeling.md`, `metaphor.md`, `vibes.md`) plus the cite-index plus all gap-logs. A Round-2 author dispatched without the full graph is a build defect, not an authoring defect.
+Enforcement at build time: the Round-2 dispatch payload for any midband author must include all nine Round-1 facet files (`tensometer.md`, `location-state.md`, `interest-narrator.md`, `sensory.md`, `state-updates.md`, `memory.md`, `feeling.md`, `metaphor.md`, `vibes.md`) plus the cite-index. A Round-2 author dispatched without the full graph is a build defect, not an authoring defect.
 
 Same rule for the final audit (Step G): the auditor reads the full graph; partial-graph audit is structurally wrong.
+
+**Gap-logs are NOT part of the default Round 2 payload.** Per user direction (2026-05-10b), gap-logs are reclassified from "Round-2 enrichment input" to "optional debug instrumentation, off by default." The Round-2 author gates additions through the per-facet rubric; the rubric is sufficient. Gap-log emission (Step C in the original Beta build order) is deferred indefinitely and only enabled when a debug session needs to surface what Round-1 authors wanted to fire on but couldn't.
 
 User direction (2026-05-10): "ensure the facets are actually using all previous facets" in second pass. Directive captured here so the Step D build honors it.
 

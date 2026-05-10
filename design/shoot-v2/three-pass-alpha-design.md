@@ -58,10 +58,10 @@ Build incrementally; each step has standalone value and can be a stopping point.
 
 | Step | What | Status |
 |---|---|---|
-| A | `/and-facets` Phase-0 + Round 1 only, on s01e01 | unbuilt |
+| A | `/and-facets` Phase-0 + Round 1 only, on s01e01 | **shipped 2026-05-10** |
 | B | Cite-index builder | unbuilt |
-| C | Gap-log emission added to Round-1 midband authoring | unbuilt |
-| D | Round 2 (hybrid judge with full graph + gap-logs) on memory + feeling | unbuilt |
+| C | Gap-log emission added to Round-1 midband authoring | **deferred indefinitely** — reclassified as debug-only per user direction 2026-05-10b; Round 2 gates additions through the per-facet rubric, gap-logs are not load-bearing for default flow |
+| D | Round 2 (hybrid judge with full graph) on memory + feeling | unbuilt |
 | E | Round 3 (repeat hybrid judge) on memory + feeling | unbuilt |
 | F | Add NI + metaphor to Rounds 2 and 3 | unbuilt |
 | G | Final audit (flag-only initially; delete-authoritative once auditor tuned) | unbuilt |
