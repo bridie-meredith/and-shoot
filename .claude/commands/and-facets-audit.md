@@ -117,12 +117,30 @@ Dispatch **auditor** (fork) with:
 
 9. **PILE-UP REVIEW** — Protolines with >4 co-located facets. Cite-index lists these. Verdict per pile-up: warranted (load-bearing peak) or over-decoration (recommend cull). Per the locked tens cross-facet contract, peak protolines earn dense co-location.
 
+10. **AP-SCAN — per-rubric anti-pattern detection.** Each facet rubric names anti-patterns the writer must resist (e.g., tens AP1 ambient-escalation, AP2 speech-beat-default, AP3 climax-bleed; memory AP-functional-callback; feeling AP-named-feeling-vocab; metaphor AP3 figurative-already-in-NI, AP7 default-refuse-at-tens-≠-3, AP12 non-POV-interior). Mechanically scan each entry against its rubric's named anti-patterns and flag any plausible AP-violation. The auditor cannot make the full taste call (some APs require persona context the auditor lacks), but can flag candidate AP-violations as signal for the audience-tuning loop.
+
+   Examples:
+   - tens entry rated 2 or 3 with no axis-citation → AP4 plot-importance-inflation candidate.
+   - memory entry whose description paraphrases a co-located NI entry → AP-figurative-already-in-NI candidate.
+   - feeling entry containing forbidden vocabulary (named-feeling words: "anxious", "nervous", "happy", "sad", "afraid", "tense", "calm", "angry", etc.; hedges: "like", "as if", "almost", "kind of"; "feels" verb) → AP-named-feeling-vocab violation.
+   - metaphor entry on tens=2 or tens=1 without trailing-edge / dark-humor argument → AP7 default-refuse-violation.
+   - vibes entry whose `licensed-by:` source list contains only a single source → AP-multi-source-preferred candidate (single-source is permitted but flagged for multi-source preference).
+   - vibes entry whose token-bundle contains a sentence-parsable token (subject + finite verb + object) → AP8 sentence-parsability-violation.
+
+11. **TASTE-FLAG — audience-attack-anticipation candidates.** Per user direction 2026-05-10e ("the auditor should be able to catch the same sort of mistakes we penalize during tuning"), this class anticipates seam-attacks that the audience would produce in adversarial-tuning mode. Flag entries that are mechanically suspicious for taste-level weakness even though the auditor cannot fully execute the taste call:
+
+   - **atmosphere-thin** — entries that read as informational rather than load-bearing in the project's dark-fantasy register. Particularly NI on ostensibly-charged beats that doesn't carry the doubled-register weight; sensory deltas that fail the disambiguation gate; feeling tells that don't card-match.
+   - **momentum-stall** — entries whose register repeats the prior entry's register on adjacent protolines without distinct functional contribution. Particularly NI/memory entries that fire similar registers across consecutive beats.
+   - **voice-fidelity** — entries that fail to honor character voice or source-material register. Particularly memory entries whose Earth-Bet displacement reads as generic-veteran rather than project-specific (Taylor's control-calculus / swarm-monument / cape-reflex patterns).
+
+   TASTE-FLAG is signal-only at flag-only mode. Patterns surfaced here become tuning input — the audience-tuning runs validate or refute the auditor's flag. Over time, refined patterns become AP-SCAN entries (mechanical) once they're codified in the rubric. **The audit + tuning loop is bidirectional: tuning surfaces patterns; auditor codifies them; auditor catches them next time mechanically.**
+
 **Audit output — classified findings report:**
 
 Write to `active-project/staff/auditor/facets-final-audit.md` per `schemas/audit-report.schema.md`. Structure:
 
 ```
-audit: facets-final-r1
+audit: facets-final-r<N>
 episode: <slug>
 date: <YYYY-MM-DD>
 mode: flag-only
@@ -131,36 +149,59 @@ totals: <count> findings across <count> facets
 
 ---
 
+## STRUCTURAL findings (<count>)
+- [facet:id] — <missing-header | malformed-line | id-non-monotonic | orphan-anchor | missing-back-cite | orphan-back-cite | body-changed> — <description>.
+
+## FREQUENCY-BAND findings (<count>)
+- <facet>: actual <n%>; band <range>%; <within | breach-low | breach-high>.
+- Per-facet table: tens 1-rung %, 2-rung %, 3-rung %; sensory sparsity; memory sparsity; feeling per-character sparsity; metaphor sparsity; NI density.
+
+## METADATA-INCONSISTENCY findings (<count>)
+- <file>: <header-claim> contradicts <file-content-fact>.
+
+## CURVE-SHAPE verdict
+- Episode-level: <SHAPE-OK | SHAPE-FAIL with named failure mode>.
+- Per-scene: scene-1 <peak-present | no-peak>, scene-2 ..., etc.
+- Adjacency: <count> 1→3 jumps; <count> 3→3 sequences (defensible / suspect).
+- Flatlining: <count> stretches of 30+ contiguous beats with no 2 or 3.
+
 ## CONTRADICTION findings (<count>)
 - [facet:id] @<proto> — <one-clause description> — paired with [facet:id] @<proto>.
-- ...
 
 ## DEDUP findings (<count>)
-- [facet:id] @<proto> — <one-clause description> — duplicates [facet:id].
-- ...
+- [facet:id] @<proto> — <one-clause description> — duplicates [facet:id]; type: <cross-facet-same-anchor | within-facet-different-anchor | within-facet-same-anchor>.
 
 ## SUPERFLUOUS findings (<count>)
 - [facet:id] @<proto> — lonely entry; rubric scrutiny: <pass | fail with rationale>.
-- ...
 
 ## CONSTRAINT findings (<count>)
 - [facet:id] @<proto> — <constraint name> — <violation description>.
-- ...
+
+## AP-SCAN findings (<count>)
+- [facet:id] @<proto> — AP<N> <name> — candidate violation; <description>.
+
+## TASTE-FLAG findings (<count>)
+- [facet:id] @<proto> — <atmosphere-thin | momentum-stall | voice-fidelity> — <rationale>; signal-only.
 
 ## PILE-UP REVIEW (<count>)
 - @<proto> (<n> facets) — verdict: <warranted | over-decoration> — <rationale>.
-- ...
 
 ---
 
 ## Audit summary
 
 - Total entries reviewed: <count>
-- CONTRADICTION: <count>  (recommend: flag both for re-author)
-- DEDUP: <count>          (recommend: cull lower-fidelity entry, keep higher)
-- SUPERFLUOUS: <count>    (recommend: cull at next round if still lonely)
-- CONSTRAINT: <count>     (recommend: route to original facet author for fix)
-- PILE-UP REVIEW: <warranted-count> warranted / <over-count> over-decoration
+- STRUCTURAL: <count>            (HARD — fix before any next round)
+- FREQUENCY-BAND: <count>        (signal — investigate before shipping)
+- METADATA-INCONSISTENCY: <count> (fix at next file-touch)
+- CURVE-SHAPE: <SHAPE-OK | SHAPE-FAIL>
+- CONTRADICTION: <count>         (recommend: flag both for re-author)
+- DEDUP: <count>                 (recommend: cull lower-fidelity entry)
+- SUPERFLUOUS: <count>            (recommend: cull at next round if still lonely)
+- CONSTRAINT: <count>             (recommend: route to original facet author)
+- AP-SCAN: <count>                (recommend: route to original facet author or escalate to audience-tuning)
+- TASTE-FLAG: <count>             (signal-only; tuning input)
+- PILE-UP REVIEW: <warranted> warranted / <over> over-decoration
 
 ## Routing
 
@@ -168,7 +209,9 @@ For each finding, name the facet author who owns the entry. In flag-only mode, n
 
 ## Mode note
 
-This audit ran in flag-only mode per Step G design. Once auditor is tuned for delete-authority, findings of class CONTRADICTION/DEDUP/SUPERFLUOUS/CONSTRAINT will be executed as deletes (with citation cascade); PILE-UP REVIEW remains advisory.
+This audit ran in flag-only mode per Step G design. Once auditor is tuned for delete-authority, HARD-class findings (STRUCTURAL, CONTRADICTION, DEDUP, SUPERFLUOUS, CONSTRAINT) will be executed as deletes (with citation cascade). FREQUENCY-BAND, METADATA-INCONSISTENCY, AP-SCAN, TASTE-FLAG, PILE-UP REVIEW remain advisory.
+
+The audit + tuning loop is bidirectional: tuning surfaces seam-attack patterns; the auditor codifies them as new AP-SCAN entries; the auditor catches them mechanically next time. TASTE-FLAG is the staging area for patterns that are taste-suspicious but not yet codified — audience-tuning runs validate or refute, then graduate them to AP-SCAN.
 ```
 
 **Auditor deliverable:** the report. No mutations to facet files. No protoline edits.
@@ -191,19 +234,27 @@ This audit ran in flag-only mode per Step G design. Once auditor is tuned for de
 --- FINAL AUDIT COMPLETE: <episode-slug> ---
 
 Mode: flag-only
+Curve-shape verdict: <SHAPE-OK | SHAPE-FAIL — <reason>>
 
-Findings:
-  CONTRADICTION: <count>
-  DEDUP:         <count>
-  SUPERFLUOUS:   <count>
-  CONSTRAINT:    <count>
-  PILE-UP REVIEW: <warranted> warranted / <over> over-decoration
+HARD findings (block any next round if not addressed):
+  STRUCTURAL:           <count>
+  CONTRADICTION:        <count>
+  DEDUP:                <count>
+  SUPERFLUOUS:          <count>
+  CONSTRAINT:           <count>
 
-Total: <count> findings (CLEAN if zero)
+SIGNAL findings (advisory):
+  FREQUENCY-BAND:        <count>  (per-facet bands; investigate before ship)
+  METADATA-INCONSISTENCY: <count>
+  AP-SCAN:                <count>  (rubric anti-pattern candidates)
+  TASTE-FLAG:             <count>  (audience-attack-anticipation)
+  PILE-UP REVIEW:         <warranted> warranted / <over> over-decoration
+
+Total: <count> findings (CLEAN if zero hard)
 
 Report: active-project/staff/auditor/facets-final-audit.md
 
-Status: <slug> audited-r1 (Step G shipped — flag-only;
+Status: <slug> audited-r<N> (Step G; flag-only mode;
         delete-authoritative requires auditor tuning, separate work)
 ```
 
