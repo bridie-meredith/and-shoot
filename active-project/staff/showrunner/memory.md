@@ -142,23 +142,30 @@ active:
   episode: s01e01
 
 tuning_r1_status:
-  phase: E-r2-complete
+  phase: I-complete
   date: 2026-05-10
   decisions_file: design/shoot-v2/and-season-tuning-r1/E-r2-defense.md
   prior_decisions_file: design/shoot-v2/and-season-tuning-r1/E-defense.md
+  user_verdicts_file: design/shoot-v2/and-season-tuning-r1/I-user-verdicts.md
   defend: 2
   revise: 15
   withdraw: 0
   defend_with_carry_back: 0
-  auditor_findings_addressed: 5 HARD (fault-001 escalated to human, fault-002 covered by U12, fault-004 U16 amended with Taylor-POV bisection check, fault-005 held for Phase H ruling, fault-AP-1 covered by U17 re-defense REVISE)
+  shippability: SHIPPABLE-PENDING-EXECUTION (no remaining human escalations)
+  auditor_findings_resolved: 5 HARD all closed (fault-001 RESOLVED by URI-010 Option A; fault-002 covered by U12; fault-004 U16 amended with Taylor-POV bisection check; fault-005 RESOLVED by URI-009 plan-designated-narrator verdict; fault-AP-1 covered by U17 REVISE)
   pending_subtasks:
     dramatist: boundary-rebalance for U3/U13 (e02/e03 cut near 207), U14 (e03/e04 cut to 370 with e04 over-band resolution), U16 (e05/e06 — amended: must verify cut does not bisect Taylor-POV stretch 645-699 OR Elara-POV stretch 700+; provisional 692 target may be non-compliant; dramatist must map marker positions and recommend compliant cut or confirm only 699 is valid)
     screen_writer: bone additions/revisions for U1 (3 bones at post-IGNITION ratchet-clicks 496-499, 530-545, 800-820), U2 (2-3 bones at e01 episode lines 10-30), U6, U7, U9, U10, U11, U17 (targeted pass on 20 named instances: 35, 277, 293, 332, 349, 386, 390, 417, 427, 440, 502, 518, 560, 583, 629, 642, 699, 789, 799, 907; coordinate line 699 with U11)
     showrunner_self: aggregate_range header updates for e01 (1-148), and pending boundary-rebalance outcomes for e02/e03/e04/e05/e06
-    human_escalation: fault-001 aggregate non-monotonic IDs — schema clarification needed (legal-deletion-gap survivors vs reordering artifacts); review pass-2/pass-3 reorder history
+    human_escalation: none remaining
   carry_back_queue:
-    - U17 idiom-depletion rubric formalization — V2 quantified mechanic (10+-instance / 25%-contextual-differentiator criterion); Phase H
-    - U1 denouement-share quantification (Phase H)
-    - Gap-8 narrator-field anomaly rubric clarification — e06 only (e05 confirmed compliant per signal-006 correction); Phase H ruling required before e06 fix applies
-    - fault-001 aggregate non-monotonic IDs — schema clarification needed; new entry; human escalation pending
-    - fault-005 narrator-field rubric — Phase H decision required before e06 per-episode file and memory.md narrator field can be corrected
+    - URI-007 idiom-depletion rubric formalization — V2 quantified mechanic (10+-instance / 25%-contextual-differentiator criterion)
+    - URI-008 denouement-share quantification (LATE-WEIGHT >40% candidate)
+    - URI-009 narrator-field rule — USER-VERDICT-RECEIVED (designate-at-plan-time wins); V2 rubric edit candidate to /and-season Phase 4 Step 3
+    - URI-010 aggregate non-monotonic IDs schema — USER-VERDICT-RECEIVED (Option A; legal survivors); V2 schema clarification + position-aware fixer-mapping note
+    - URI-011 episode-shape mechanics for Phase 4 Step 2 (3 sub-mechanics drafted)
+    - URI-012 post-split continuity pass S4.5 (new pass)
+    - URI-013 S3 vs S9 entertainment-density reconciliation (recommended Option A, explicit-different-purposes)
+    - URI-014 season-scope adversarial criteria per persona (per-card schema addition)
+    - URI-015 S6 vibe-drift resolution path (when carry-forward is permitted)
+    - URI-016 S8a/S8b split-verdict adjudication (restrictive-verdict-wins default)

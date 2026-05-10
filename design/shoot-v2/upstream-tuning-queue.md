@@ -109,19 +109,22 @@ Categories:
 ### URI-009 — /and-season rubric: narrator-field rule for interlude episodes
 
 - **Category:** Rubric tuning.
+- **Status:** USER-VERDICT-RECEIVED — designate narrator at plan time, hold consistent within chunk; do not derive from line counts post-hoc. Rubric language drafted in `design/shoot-v2/and-season-tuning-r1/I-user-verdicts.md`.
 - **Source:** H-carry-back Item 3. B-baseline Gap 8 (corrected per auditor signal-006: e05 is compliant; only e06 is anomalous), auditor fault-005 HARD.
 - **Issue:** Phase 4 Step 3 spec says `narrator:` is dominant POV by line count; s01e06 names interlude POV (Elara) against dominant Taylor (~122 vs ~86). Spec ambiguity.
-- **Action:** rubric verdict — Option A (interlude-POV-wins clause) or Option B (literal dominant-line-count rule). H-carry-back recommends adjudication path. **Blocks fault-005 closure.**
-- **Cost:** small. Clause edit + at most one per-episode header + memory.md correction (Option B path only).
+- **Resolution:** plan-designated narrator wins. The /and-season Phase 4 Step 3 mechanical computation rule is replaced with: `narrator:` is the plan-designated narrator for the chunk, set before line generation, held consistent within the chunk. **fault-005 closes; e06 narrator field is correct as authored. No s01 corpus mutation required.**
+- **Action remaining:** V2 rubric edit to /and-season Phase 4 Step 3 with the new clause. Effect on future runs only.
+- **Cost:** small. Clause edit only.
 
 ### URI-010 — Schema clarification: aggregate non-monotonic IDs
 
 - **Category:** Schema.
-- **Source:** H-carry-back Item 4. Auditor fault-001 HARD (NEW); requires human escalation.
+- **Status:** USER-VERDICT-RECEIVED — Option A (stable-overrides-monotonic; legal survivors). Schema/command language drafted in `design/shoot-v2/and-season-tuning-r1/I-user-verdicts.md`.
+- **Source:** H-carry-back Item 4. Auditor fault-001 HARD (NEW); resolved by user verdict.
 - **Issue:** s01 aggregate contains 21 900-range IDs interspersed in e01-range content. Schema "stable IDs / re-ordering preserves IDs" rule is in tension with "monotonic positive integer, file-scoped" rule when bones get reordered. Fixer formula `aggregate_id = aggregate_range_start + episode_id - 1` mis-maps for any episode covering the out-of-order region.
-- **Action:** schema decision — Option A (stable-overrides-monotonic; legal survivors; fixer formula must be position-aware) or Option B (monotonic-overrides-stable; reorder triggers renumbering pass). Human reviewer to check pass-2/pass-3 reorder history.
-- **Cost:** small for schema edit; medium for s01 corpus impact (Option B requires renumbering).
-- **Blocks:** fixer routing for any s01e01 bone in the non-monotonic region. Human escalation gating.
+- **Resolution:** Option A. The 21 non-monotonic IDs are schema-compliant legal survivors. **fault-001 closes; no corpus mutation required.** Fixer routing for s01e01 bones in the non-monotonic region must use position-aware mapping (file-line position within the aggregate), not ID arithmetic.
+- **Action remaining:** V2 schema clarification clause + /and-season Phase 4 Step 3 documentation update on the position-aware mapping requirement. Effect on future runs and any future fixer dispatch on s01.
+- **Cost:** small. Schema clause + command-file note.
 
 ### URI-011 — /and-season rubric: episode-shape mechanics for Phase 4 Step 2
 
