@@ -129,11 +129,14 @@ R2 sees the full graph and could detect cross-character same-strategy or within-
 | Phase | Output | Status |
 |---|---|---|
 | **A — Corpus + failure-mode taxonomy** | this file | **complete** |
-| **B — Locked R2 rubric** | `B-locked-rubric.md` | **next (this session)** |
-| **C — Tightened audience attack on R2 outputs** | `C-tightened-attack.md` | requires dispatch run |
-| **D — R2-self-review under locked rubric** | `D-r2-self-review.md` | depends on C |
-| **E — Carry-back synthesis + and-facets-r2.md edit** | `E-carry-back.md` + command edit | depends on D |
-| **F — Re-run on s01e01 + audience verdict** | `F-validation.md` | dispatch-heavy session |
+| **B — Locked R2 rubric (justification-first)** | `B-locked-rubric.md` | **complete** |
+| **C — Arbiter protocol** | `C-arbiter-protocol.md` | **complete** |
+| **D — Tightened audience attack on R2 outputs** | `D-tightened-attack.md` | requires dispatch run |
+| **E — R2-self-review under locked rubric + arbiter** | `E-r2-self-review.md` | depends on D |
+| **F — Carry-back synthesis + and-facets-r2.md edit** | `F-carry-back.md` + command edit | depends on E |
+| **G — Re-run on s01e01 + audience verdict** | `G-validation.md` | dispatch-heavy session |
+
+**Phase numbering note:** the sequence table was revised after the user direction on 2026-05-10 to add the arbiter protocol as Phase C. Subsequent phases shifted by one.
 
 Phases C–F are dispatch-heavy and run in subsequent sessions. Phase B is authored now to give Phase C its target.
 

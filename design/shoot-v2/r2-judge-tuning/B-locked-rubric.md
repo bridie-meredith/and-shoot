@@ -1,125 +1,137 @@
 ---
-phase: B — locked R2 rubric
+phase: B — locked R2 rubric (revised: justification-first)
 project: R2 hybrid judge tuning
 date: 2026-05-10
 status: LOCKED — do not soften before Phase F audience verdict on a re-run corpus
 parent: design/shoot-v2/r2-judge-tuning/A-corpus.md
+companion: design/shoot-v2/r2-judge-tuning/C-arbiter-protocol.md
 ---
 
-# Phase B — Locked R2 Rubric
+# Phase B — Locked R2 Rubric (Justification-First)
 
-This is the discipline R2 (the graph-aware hybrid judge) must honor at every layer (R2.1–R2.4 in `and-facets-r2.md`), regardless of which facet is being judged. It sits **on top of** each facet's content rubric — R2 inherits the facet rubric for content, applies these gates for judge-mode discipline.
+This is the discipline R2 (the graph-aware hybrid judge) must honor at every layer (R2.1–R2.4 in `and-facets-r2.md`), regardless of which facet is being judged. It sits **on top of** each facet's content rubric — R2 inherits the facet rubric for content; applies these gates for judge-mode discipline.
 
-The four gates correspond to the four failure modes in Phase A.
+## Core principle — taste over arithmetic
 
-## Gate G1 — Form re-test on REVISE outcomes
+R2's job is **forming a justification** for why each entry stays, leaves, or gets added — not running a checklist. Each verdict must be defensible as **a taste-argument with reasoning**: this is what the entry does, this is why it works or doesn't, this is what the rubric is reaching for here.
 
-**Rule:** every R2 revision (whether REVISE-from-DELETE-candidate or REVISE-of-existing-KEEP-with-issue) receives a **mandatory blind §Form + Q1 + Q2 re-test** before round close. The re-test is performed against the entry **as if encountering it fresh**, not against the seam the revision was authored to answer.
+This aligns with the project-wide direction (URI-017 Threshold Discipline: "rubric arithmetic is advisory, taste authoritative"). R2 reviewers were drifting toward mechanical pattern-matching against the rubric's named anti-patterns; that pattern-matching is what produced F-R2-1 through F-R2-4. The fix is not better mechanics; it is **the reviewer holding themselves to taste-justification**, with the rubric serving as the vocabulary in which taste-arguments are expressed.
 
-**What §Form + Q1 + Q2 means per facet:**
-- Each facet rubric has a §Form section (anti-patterns, forbidden vocabulary, voice/register fences). For facets without an explicit §Form section, the equivalent is the rubric's anti-pattern list (e.g., AP1–AP17 across facets).
-- Q1 is each rubric's primary affirmative gate (e.g., somatic-tell-card-match for feeling; monument-grade callback for memory; perceptual-access for narrator-interest).
-- Q2 is each rubric's secondary affirmative gate (e.g., multi-justification ≥3 of 5 for feeling; NI-spine co-citation for memory; spotlight-density for narrator-interest).
+The arbiter (see `C-arbiter-protocol.md`) intervenes when justifications slip back into mechanical citation.
 
-**Why:** F-R2-1. Single confirmed regression (feel:10 Phase-E.c) is structural — every R2 revision is exposed without this gate.
+## Hard fences (absolute; not negotiable)
 
-**Mechanic:** R2 author logs each revision with three lines: `§Form: PASS/FAIL <reason>`, `Q1: PASS/FAIL <reason>`, `Q2: PASS/FAIL <reason>`. A FAIL on any of the three is a revision-failure; the entry is logged for cap-refusal and the original (pre-revision) state is preserved as DELETE if the original was a DELETE candidate, or KEEP-WITH-CAVEAT if original was KEEP.
+These are **not** taste calls. R2 honors them as fences:
 
-**Severity classification:** HARD on §Form. SIGNAL on Q1/Q2 (downstream audience adjudication is the final gate).
+- POV-perceptual-access (narrator-interest, memory, feeling).
+- Hard-fence vocabulary lists (no Earth-Bet proper nouns; no listed forbidden constructions per facet).
+- Self-scoped deletion authority (R2 cannot delete other facets' entries).
+- Add-cap (≤5 per facet; ≤3 metaphor; ≤5 per character feeling).
+- Schema/citation integrity (cascade strips on delete; protoline citation lists track entries).
 
-## Gate G2 — Multi-justification at-rest test on ADD outcomes
+Violations of fences are not subject to taste argument. R2 refuses the verdict.
 
-**Rule:** every R2-add must pass its facet's multi-justification gate **using only entry-at-rest evidence** (the proto-line at the anchor point + cards + persona stack). Graph evidence (other facets co-cited, the next-or-prior proto-line's content) is **not admissible** as multi-justification evidence at R2-add time.
+## The four gates — reformulated as taste-questions
 
-**Why:** F-R2-2. 7+ confirmed instances across memory + feeling. Graph evidence is what *enables* the add (R2 sees the niche); it cannot also *justify* the add (that's circular).
+Each gate names a question the reviewer must hold themselves to. The reviewer's verdict is justified by **answering the question**, not by passing a check.
 
-**Mechanic:** R2 author logs each add with the multi-justification ladder. Each justification slot must cite a source: PROTO-LINE-AT-ANCHOR / CARD-§ / PERSONA-STM / VIBE-CLOUD / TENS-RATING-AT-ANCHOR. Sources from OTHER-PROTO-LINES (next, prior, other-character POV) are **disallowed** — if those are the only sources available, the add is refused under cap.
+### Gate G1 — "Does the revision still earn its place when I read it cold?"
 
-**Severity:** HARD. Refused adds are logged for next-round consideration.
+**Failure mode addressed:** F-R2-1 (form-discipline drift on revisions).
 
-**Per-facet note:**
-- For facets without an explicit multi-justification ladder (location-state, sensory, state-updates, vibes-updates), G2 reduces to: "the add must be authored against at-rest evidence only; graph-revealed niche enables but does not justify."
+**The question:** when R2 revises an entry, the reviewer must set down the seam they were authoring against and re-encounter the entry as if seeing it for the first time. The taste-question is: *if this were a fresh R1 entry I had never seen before, would I keep it?*
 
-## Gate G3 — Lonely-entry isolation re-read
+**What this is not:** running §Form / Q1 / Q2 as three checkboxes. The reviewer reads the revision aloud (mentally). If the cold-read produces unease or the impulse to keep editing, the entry has not earned its keep yet.
 
-**Rule:** for any R2 outcome (KEEP, REVISE, ADD) on a **lonely entry** (no other facets co-cited at the same proto-line per cite-index), the entry is re-read **in isolation from adjacent proto-lines** before the decision finalizes. Specifically: read only the anchor proto-line + the entry itself; do not read the proto-line immediately before or after.
+**Justification format:** the reviewer writes 2–3 sentences explaining what the cold-read produces. Examples of good justification: "The cold read still trips on 'the way an estimate gets one' — the comparison construction reads as estimative-of-the-feeling rather than the cost-accountant register the revision was reaching for. The revision answered the angular-measurement seam but didn't earn the form." Examples of insufficient justification (would trigger arbiter intervention): "§Form: PASS, AP6: PASS, Q1: PASS." That's mechanical recitation, not taste-argument.
 
-**Why:** F-R2-3. Lonely-entry Q2 justifications systematically lean on adjacent context.
+**Arbiter check:** does the justification name something **specific to this entry** (a phrase, a register-shift, a moment) rather than reciting rubric labels?
 
-**Mechanic:** R2 author logs lonely-entry decisions with an `at-rest-isolation: PASS/FAIL` line. FAIL means the decision changed when adjacent context was masked; the at-rest verdict is authoritative.
+### Gate G2 — "Why does this entry want to be added — and is that wanting honest?"
 
-**Severity:** HARD on FAIL. Decision flips: KEEP→DELETE, REVISE→DELETE-with-original-preserved, ADD→refused-under-cap.
+**Failure mode addressed:** F-R2-2 (multi-justification under-strictness on adds).
 
-**Co-located entry exception:** entries with ≥1 co-cited facet at the anchor proto-line are exempt — co-location is the rubric's evidence that the beat is structurally load-bearing, and adjacent-context discipline is the cite-index's job, not R2's.
+**The question:** when R2 considers adding an entry, the reviewer asks *why this entry, here?* Two honest motives: the at-rest evidence (the proto-line, the cards, the persona's lived state) is calling for it; OR the graph reveals an obligation (a tens=3 peak with no memory or NI is a structural absence). The dishonest motive: the graph reveals a niche and the reviewer fills it because there is room.
 
-## Gate G4 — Cross-character + within-character pattern check
+The graph-revealed niche **enables** the question; it does not **answer** it. The answer comes from at-rest evidence.
 
-**Rule:** at the close of each R2 layer (per-facet), R2 author runs a **structural-pattern scan** across all post-decision entries within that facet:
+**What this is not:** counting multi-justification slots (3 of 5, 4 of 5). The reviewer should know, from reading the proto-line and the cards, whether the entry is *wanted* there. If the wanting only appears when the niche is pointed out, that is the dishonest motive.
 
-- **Cross-character same-strategy:** ≥2 characters using the same somatic-tell category / metaphor monument-load / etc. on the same scene-window. Flagged as SIGNAL; HARD if ≥3 characters.
-- **Within-character formula-repetition:** ≥2 entries from the same character within ≤3 proto-lines using the same construction template (e.g. "the body Xes the Y" twice). Flagged as SIGNAL; HARD if ≥3.
-- **Cross-character vocabulary saturation:** ≥3 instances of the same low-frequency content word (e.g. "weight", "press", "hold") across characters within a scene-window. Flagged as SIGNAL.
-- **Cross-character temporal-anchor formula:** ≥2 characters using the same temporal-anchor construction ("not yet", "still", "already") at scene boundaries. Flagged as SIGNAL.
+**Justification format:** the reviewer writes a paragraph (4–8 sentences) tracing the motive. "I see this proto-line tracks Taylor's swarm-sense suppression as a flat administrative line — there's no internal register of the cost. The card has 'cost-tracking' as a load-bearing trait. The proto-line is asking for an entry, not because R1 missed it, but because the suppression scene now reads at-rest as too clean. So I add a feeling entry tracking the suppression-cost." That's taste. Compare to: "Multi-justification: PROTO-LINE-AT-ANCHOR ✓, CARD-§ ✓, PERSONA-STM ✓. Add." Mechanical.
 
-**Why:** F-R2-4. Pattern blindness is structurally invisible to per-character impersonator forks; the per-facet R2 layer is the natural place to catch it because R2 holds the full facet-graph.
+**Arbiter check:** does the justification trace from at-rest reading to the add, or does it work backward from the niche?
 
-**Mechanic:** R2 author appends a `## Pattern Scan` section to the facet file's R2 decision log. SIGNAL findings are logged; HARD findings trigger a revision pass on the offending entries (back through G1).
+### Gate G3 — "Does this entry hold up when I block out what comes next?"
 
-**Severity:** SIGNAL by default; HARD at the named threshold counts.
+**Failure mode addressed:** F-R2-3 (lonely-entry adjacent-context dependency).
 
-## Cross-cutting rules
+**The question:** for any lonely entry (no co-cited facets at the anchor proto-line), the reviewer asks *if I cover the next proto-line with my hand and read just this one + the entry, does it still work?* If the entry's reading depends on the speech that follows or the action that resolves it, the entry is not at rest — it is leaning on what comes next.
 
-### Decision-log discipline
+**What this is not:** a literal masking process. It is a discipline of attention — the reviewer should be able to articulate what the entry *does at its anchor* without referring to the adjacent stream.
 
-Each R2 layer produces a structured decision log appended to the facet file's frontmatter or a sibling `.r2-log.md`:
+**Justification format:** the reviewer says, in their own words, what the entry contributes at its anchor proto-line. If the contribution can only be stated as "it sets up what comes next" or "it pays off what came before," the entry has failed the at-rest test.
+
+**Arbiter check:** does the justification stand when adjacent context is omitted from the description? A good justification reads correctly even if the surrounding proto-lines are absent from the discussion.
+
+### Gate G4 — "Does the facet, as a whole, feel patterned in a way it shouldn't?"
+
+**Failure mode addressed:** F-R2-4 (cross-character + within-character pattern blindness).
+
+**The question:** at the close of each R2 layer, the reviewer reads the full facet file end-to-end (or skims it, holding all entries in attention) and asks: *does anything feel formulaic? Does the same somatic-tell repeat across characters? Does the same construction template appear within a character? Does a low-frequency word (weight, hold, press) saturate?*
+
+**What this is not:** counting instances against thresholds. It is the reviewer's ear catching a pattern that wasn't there entry-by-entry. The pattern is real if and only if the reviewer can articulate why it bothers them.
+
+**Justification format:** the reviewer names the pattern in their own words and points to specific instances. "Three characters all do the same somatic-tell category at the column-tracing scene — Taylor with her hands, mother with her shoulders, the clerk with his jaw. The scene was supposed to play three different cost-registers; instead it plays one register triplicated. I'd cut two of the three." Compare to mechanical: "Cross-character same-strategy: 3 instances. SIGNAL." That doesn't say what is wrong.
+
+**Arbiter check:** does the pattern flag come with **what specifically should change** as a consequence? A pattern flag without a remediation argument is mechanical; a pattern flag with "I'd cut these, here's why" is taste-justification.
+
+## Decision-log discipline
+
+Each R2 layer produces a structured decision log. **Every entry's verdict has a justification line — a paragraph in the reviewer's voice, not a checkbox.**
 
 ```
 ## R2 Decision Log
-- <facet>:<id> @<proto-line>: KEEP — <reason>
-- <facet>:<id> @<proto-line>: DELETE — <reason> | cascade-strips: <count>
-- <facet>:<id> @<proto-line>: REVISE — <seam> | §Form: PASS | Q1: PASS | Q2: PASS
-- <facet>:<id> @<proto-line>: ADD — multi-justification: [<source>, <source>, <source>] | at-rest-isolation: PASS
+- <facet>:<id> @<proto-line>: KEEP
+  Justification: <2-4 sentences in reviewer's voice — what works, why it earned its place>
 
-## Pattern Scan
-- Cross-character same-strategy: <count> SIGNAL, <count> HARD
-- Within-character formula-repetition: <count> SIGNAL, <count> HARD
-- Cross-character vocabulary saturation: <count> SIGNAL
-- Cross-character temporal-anchor formula: <count> SIGNAL
+- <facet>:<id> @<proto-line>: DELETE
+  Justification: <2-4 sentences — what specifically isn't working, in concrete terms>
+  Cascade: <count> protolines stripped
+
+- <facet>:<id> @<proto-line>: REVISE
+  Original seam: <what the reviewer was answering>
+  Cold-read verdict: <does the revision earn its place at-rest, in 1-2 sentences>
+  Justification: <2-4 sentences>
+
+- <facet>:<id> @<proto-line>: ADD
+  Motive: <at-rest motive paragraph — why the entry is wanted, traced from reading not from niche>
+  At-rest test: <does the entry hold without leaning on adjacent context, in 1-2 sentences>
+
+## Pattern Scan (end-of-layer)
+<paragraph in reviewer's voice — what the reviewer's ear catches across the full facet, with specific instances and what should change. If nothing patterned: a single sentence saying so.>
 
 ## Cap Refusals
-- <facet>:<id-candidate>: <reason> (G1 §Form FAIL / G2 graph-only-evidence / G3 isolation FAIL / over-cap)
+- <facet>:<id-candidate>: <reason in reviewer's voice — what the reviewer didn't believe in, in concrete terms>
 ```
 
-### Severity ordering
+## What the locked rubric does NOT do
 
-When two gates produce conflicting verdicts on the same entry:
-1. G3 isolation FAIL is authoritative on lonely entries (overrides any KEEP).
-2. G1 §Form FAIL is authoritative on revisions (overrides Q1/Q2 PASS).
-3. G2 graph-only-evidence is authoritative on adds (overrides "the niche is real").
-4. G4 HARD on within-character formula-repetition triggers G1 on the offending entries.
-
-### What this rubric does NOT do
-
-- Does not gate **content** decisions — R2 still inherits each facet's rubric for what the entry should look like.
-- Does not change the add-cap (≤5 per facet, ≤3 metaphor, ≤5/character feeling).
-- Does not change self-scoped deletion authority — R2 still cannot delete other facets' entries.
-- Does not change the layer order (R2.1 NI → R2.2 memory → R2.3 feeling → R2.4 metaphor).
-- Does not introduce a new agent class — the four R2 layer impersonators/editor are the same; they receive the locked rubric as additional discipline in their dispatch payload.
+- Does not gate **content** decisions — R2 still inherits each facet's rubric for what the entry should look like. The facet rubric provides the **vocabulary** for taste-arguments; it does not replace them.
+- Does not change the add-cap, deletion authority, layer order, or schema/citation rules. Those are fences.
+- Does not introduce a new agent class — the four R2 layer impersonators/editor are the same; they receive the locked rubric + arbiter protocol as discipline in their dispatch payload.
 
 ## Locking discipline
 
-This rubric is **locked** as of 2026-05-10. Per Phase 1 of the facet-tuning template:
+This rubric is **locked** as of 2026-05-10 in its justification-first form. Per Phase 1 of the facet-tuning template:
 
 > Once V2 is set, do not soften it for later rounds. Lift numbers are only honest under fixed rubrics.
 
-Revisions allowed only at Phase F (validation re-run audience verdict), and only with audience-confirmed evidence the gate is over-strict (analogous to "defending the floor" in the standard process). The four gates may have **threshold** recalibration but not **structural** removal.
+Revisions allowed only at Phase F (validation re-run audience verdict) with audience-confirmed evidence the gate is over-strict. The four gates may have **emphasis** recalibration but not **structural** removal.
 
 ## Phase C entry point
 
-Phase C — Tightened audience attack — runs the existing s01e01 R2 outputs (memory + feeling done; the other 8 facets ran R2 against an untuned prompt and their outputs are in `active-project/theater/facets/`) through audience adjudication using **G1–G4 as the lens**, not the per-facet content rubric.
+Phase C — Tightened audience attack — runs the existing s01e01 R2 outputs through audience adjudication using **G1–G4 as taste-questions, not mechanical checks**. Audience question per entry: did the R2 reviewer produce a real taste-justification, or did they pattern-match to the rubric? Per-persona verdicts, aggregated.
 
-Audience question per entry: did this R2 decision honor G1 (form re-test on revisions), G2 (at-rest evidence on adds), G3 (lonely-entry isolation), G4 (pattern scan)? Per-persona verdicts, aggregated.
+The arbiter (main session) intervenes during Phase C if audience verdicts themselves slip into mechanical recitation — see `C-arbiter-protocol.md`.
 
-Output: `C-tightened-attack.md`. Estimated dispatch budget: ~6 (3 audience personas × 2 sweeps — full facet graph in 1 pass + targeted seam-pressure in 2nd pass).
-
-That session is the natural next step.
+Output: `D-tightened-attack.md`. (Phase numbering shifts: arbiter protocol takes the C slot; tightened attack moves to D.)
