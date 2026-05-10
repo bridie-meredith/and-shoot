@@ -140,3 +140,20 @@ seasons:
 active:
   season: s01
   episode: s01e01
+
+tuning_r1_status:
+  phase: E-complete
+  date: 2026-05-10
+  decisions_file: design/shoot-v2/and-season-tuning-r1/E-defense.md
+  defend: 4
+  revise: 12
+  withdraw: 0
+  defend_with_carry_back: 1
+  pending_subtasks:
+    dramatist: boundary-rebalance for U3/U13 (e02/e03 cut near 207), U14 (e03/e04 cut to 370 with e04 over-band resolution), U16 (e05/e06 cut to ~692 with e06 over-band + POV-marker check)
+    screen_writer: bone additions/revisions for U6, U7, U9, U10, U11
+    showrunner_self: aggregate_range header updates for e01 (1-148), and pending boundary-rebalance outcomes for e02/e03/e04/e05/e06
+  carry_back_queue:
+    - U17 idiom-depletion rubric formalization (Phase H)
+    - U1 denouement-share quantification (Phase H)
+    - Gap-8 narrator-field anomaly rubric clarification (Phase H)
