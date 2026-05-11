@@ -1,3 +1,39 @@
+## SESSION-START — 2026-05-11T12:00:00Z — phase3-collation-cycle1
+dispatch: Phase 3 Collation cycle 1 — Groups A–I (holds-license, headache-subject×4, the-neighbors×2, sealed-modifier, duplicate-pairs×4, abstract-relay×6, orphan-log-write, walks-the-pathnoun policy, abstract-junction-conversation)
+target: active-project/theater/proto-lines/s01.bones.md
+audit-report: season-s01-pass-S1-constraint.md + season-s01-pass-S3.5-ruleset.md + season-s01-pass-S10-mechanic-window-01/02/03.md
+findings-queued: ~25 individual fault instances across Groups A–I
+
+## GROUP-A — RESOLVED — 2026-05-11T12:05:00Z
+fault: ID 166 `oc-tanner-father holds the step` — FAULT-FORM-NON-ACTION-VERB (unlicensed holds)
+scope: line
+change: `holds the step` → `stills` (intransitive, joins established pattern)
+criteria met: yes
+
+## GROUP-B — RESOLVED — 2026-05-11T12:06:00Z
+fault: IDs 226, 274, 355, 449 `the headache wakes taylor-hebert-flea-bottom` — FAULT-FORM-INTERIORITY ×4
+scope: line
+change: all 4 instances → `taylor-hebert-flea-bottom wakes` (intransitive; replace_all used; headache moves to feel-flag facet)
+criteria met: yes
+
+## GROUP-C — RESOLVED — 2026-05-11T12:07:00Z
+fault: IDs 237, 241 `the neighbors press the doorways` / `the neighbors withdraw` — FAULT-FORM-MULTI-SUBJECT
+scope: line
+change: ID 237 `the neighbors press the doorways` → `the neighbor presses the doorway`; ID 241 `the neighbors withdraw` → `the neighbor withdraws`
+criteria met: yes
+
+## GROUP-D — RESOLVED — 2026-05-11T12:08:00Z
+fault: ID 469 `the middleman takes the sealed account` — FAULT-FORM-MODIFIER (`sealed` adjective)
+scope: line
+change: `the sealed account` → `the account` (sealed state registered at ID 468; belongs in state-update facet)
+criteria met: yes
+
+## GROUP-E — RESOLVED — 2026-05-11T12:09:00Z
+fault: IDs 352/353, 446/447, 492/493, 461/462 — exact duplicate pairs (FAULT-FORM-structural-duplication)
+scope: line
+change: deleted ID 353 (line removed; gap visible after 352); deleted ID 447 (gap after 446); deleted ID 462 (gap after 461); deleted ID 493 (gap after 492)
+criteria met: yes
+
 ## SESSION-START — 2026-05-11T11:00:00Z — season-s01-pass-2-fix-cycle3
 dispatch: resolve all cycle-3 faults — Group A (15 form-faults + 2 border flags from constraint cycle-2), Group B (INERT-STRETCH-BEAT22 IDs 416-419), Group C (cape-fic compression beats 14/19/24 + beat 10 log cycle), Group D (relay-mapping compression W15)
 target: active-project/theater/proto-lines/s01.bones.md
