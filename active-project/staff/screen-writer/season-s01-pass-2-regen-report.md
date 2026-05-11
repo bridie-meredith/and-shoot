@@ -159,6 +159,19 @@ No motivation clauses. No internal state. No `because`, `since`, `wanting to`, `
 
 ---
 
+## Cycle 3 — REGEN-ADD
+| ID | Position | Text |
+|----|----------|------|
+| 504 | between 495 and 86 | `taylor-hebert-flea-bottom stills` |
+| 505 | beat 14 post-headache (after ID 275 holds-eyes, before ID 276 log-open) | `taylor-hebert-flea-bottom lowers the chin` |
+| 506 | beat 7 pre-log (after ID 131 straightens-spine, before ID 132 log-open) | `the maester laughs` |
+| 507 | beat 24 post-log (after ID 453 log-close, before gap 454) | `taylor-hebert-flea-bottom faces the Red Keep` |
+| 508 | between 500 and 501 | `oc-tanner-elder pauses` |
+
+Verdict: ALL-CRITERIA-MET
+
+---
+
 ## Verdict
 
 **ALL-CRITERIA-MET**
