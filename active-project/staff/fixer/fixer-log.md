@@ -1,3 +1,15 @@
+## SESSION-START — 2026-05-11T23:30:00Z — facets-audience-gate-r2-cycle3-deletes
+dispatch: s01e02 Phase 5b cycle 3 — two DELETE-with-cascade operations: Op-A (narrator:32 @177 channel-saturation DELETE) + Op-B (state:8 @22 old-state-ungrounded DELETE + margit referral)
+target: active-project/theater/facets/interest-narrator.md + active-project/theater/facets/state-updates.md + active-project/theater/facets/_inflight-r2/proto-lines-narrator.md + proto-lines-state-oc-tanner-father.md
+audit-report: active-project/staff/auditor/facets-audience-gate-r2.md
+findings-queued: 2 (Op-A, Op-B)
+
+## SESSION-START — 2026-05-11T23:00:00Z — facets-audience-gate-r2-cycle3-deletes
+dispatch: s01e02 Phase 5b cycle 3 — two DELETE-with-cascade operations: Op-A (narrator:32 @177 channel-saturation DELETE) + Op-B (state:8 @22 old-state-ungrounded DELETE + margit referral)
+target: active-project/theater/facets/interest-narrator.md + active-project/theater/facets/state-updates.md + active-project/theater/facets/_inflight-r2/proto-lines-narrator.md + proto-lines-state-oc-tanner-father.md
+audit-report: active-project/staff/auditor/facets-audience-gate-r2.md
+findings-queued: 2 (Op-A, Op-B)
+
 ## SESSION-START — 2026-05-11T22:00:00Z — facets-audience-gate-r1-cycle2-fix-pass2
 dispatch: s01e02 Phase 5b cycle 2 audience-gate — 5 minimum-change items: tens:70 @83 r=1→2 (both tensometer files), narrator:27 @149 Khepri-threshold label swap, mem:10 @125 DELETE, mem:2 @30 DELETE, state:1 record_anomaly_logged type-mismatch fix
 target: tensometer.md + tensometer-s01e02.md + interest-narrator.md + memory.md + proto-lines/s01e02.md + state-updates-oc-broken-maester.md
