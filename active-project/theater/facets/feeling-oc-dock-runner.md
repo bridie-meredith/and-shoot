@@ -11,3 +11,15 @@
 # and the runner's card §Voice ("comfortable with silence", "irony as default register") plus
 # Hard Fence 2 ("does not commit to causes") tilts the runner toward minimum-legibility
 # from the outside even when on-stage. Default-to-silence per rubric.
+
+# R2 re-test (2026-05-11): no-add cleared. Re-read at-rest against the locked graph and the
+# canonical proto-lines. The runner has exactly one anchor (@37) and that anchor is a POV-swarm
+# relay-target — the body the rubric requires (posture, breath, gaze, micro-action) is not on
+# page; it would have to be invented from outside the proto-line surface. G2 fails on motive
+# (the only "wanting" available is graph-niche, never at-rest evidence — F-R2-2 by construction).
+# G3 fails on adjacent-context (no anchor stands at-rest because there is no on-page body to
+# anchor against). G5 position: @37 sits inside a relay-cluster (@34/@35/@37/@42/@44 — swarm-
+# perception sweep), an interior-administrative band where a non-POV character's somatic fire
+# would not open or close anything the scene is doing. Card §Voice ("comfortable with silence",
+# "irony as default register") and Hard Fence 2 ("does not commit to causes") confirm the
+# minimum-legibility default. No fire. Cap-refusal logged in shard.
