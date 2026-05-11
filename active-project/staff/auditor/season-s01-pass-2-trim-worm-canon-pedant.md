@@ -1,5 +1,193 @@
 # Season s01 — Pass 2 Trim Review
 # Reviewer: worm-canon-pedant
+# Fork: 2-E re-fire (Cycle 2)
+# Source file: active-project/theater/proto-lines/s01.bones.md (503 numbered entries, 9 new bones added: IDs 495–503)
+# Date: 2026-05-11
+# Prior cycle: Cycle 1 — ACCEPT (4.4% TOLERATED; SF-01 KL choice, SF-02 whisper-chain transmission)
+
+---
+
+## Cycle 2 Changes Under Review
+
+**New bones inserted by screen-writer (IDs 495–503):**
+
+| ID | Text | Position | Purpose |
+|----|------|----------|---------|
+| 495 | taylor-hebert-flea-bottom speaks to oc-tanner-elder | Between 85 and 86 | SF-01 address: Taylor-agency bone before elder routes her |
+| 496 | taylor-hebert-flea-bottom stills | Between 298 and 299 | Reaction beat in pen-scratch rhythm sequence (beat 16) |
+| 497 | taylor-hebert-flea-bottom faces the wall | Between 356 and 357 | Cost/recovery beat in beat 19 expansion |
+| 498 | taylor-hebert-flea-bottom faces the wall | Between 450 and 499 | Cost/recovery beat in beat 24 expansion |
+| 499 | taylor-hebert-flea-bottom straightens the spine | Between 498 and 451 | Recovery-to-log beat in beat 24 expansion; structural echo of bone 3 |
+| 500 | taylor-hebert-flea-bottom closes the log | Between 202 and 501 | SF-02 address: closes the unclosed log after bone 202 |
+| 501 | oc-tanner-elder speaks to the carter | Between 500 and 502 | SF-02 address: whisper-chain mechanism bone |
+| 502 | the wasps relay the labor-web pass | Between 501 and 205 | SF-02 address: insect-confirmation of transmission event |
+| 503 | taylor-hebert-flea-bottom holds the feet | Between 419 and 420 | Restraint bone during maester extended-session relay (beat 22) |
+
+**Fixer form corrections:** 79+ form faults corrected; no canon-bearing changes among them. Not re-audited (form only).
+
+---
+
+## SF-01 Verification — KL Choice (W08, bones 80–94)
+
+**Cycle 1 flag:** Taylor read as passive recipient of the elder's routing. No Taylor-decision bone between elder's routing (bone 86) and Taylor lifting the travel pack (bone 87). Agency invisible at bone level.
+
+**Bone 495 inserted:** `taylor-hebert-flea-bottom speaks to oc-tanner-elder` — placed between bone 85 (Taylor faces elder) and bone 86 (elder routes Taylor).
+
+**Verdict: RESOLVED.** The sequence now reads: elder speaks to Taylor (84) → Taylor faces elder (85) → Taylor speaks to elder (495) → elder routes Taylor (86) → Taylor lifts travel pack (87). Taylor initiates speech before the routing event. This positions the routing as responsive to Taylor's expression of intent rather than Taylor responding passively to direction. The agency is now structurally present: she speaks, then the elder formalizes the routing. Consistent with beat 6 plan ("Taylor chooses King's Landing") and with cond-shard-behavioral-weight (escalation-bias produces active reach toward the option, not passive acceptance of it). W08 verdict upgrades to ENGAGED.
+
+---
+
+## SF-02 Verification — Whisper-Chain Transmission (W16, bones 191–207)
+
+**Cycle 1 flag (primary):** Mechanism of anonymous chain-routing had no bones. Bones 203/204 showed external receipt (carters, dock workers) with no transit event between Taylor's log and their receipt.
+
+**Cycle 1 flag (secondary):** Log unclosed between bone 202 (writes entry) and bone 205 (opens log again with no prior close).
+
+**Bones 500/501/502 inserted; bones 203/204 cleared to gap markers:**
+
+New sequence in the affected region:
+- 200: flies relay weather-pattern data
+- 201: Taylor opens log
+- 202: Taylor writes entry
+- **500: Taylor closes log**
+- **501: oc-tanner-elder speaks to the carter**
+- **502: the wasps relay the labor-web pass**
+- 205: Taylor opens log
+- 206: Taylor writes entry
+- 207: Taylor closes log
+
+**Log-triple gap (secondary): RESOLVED.** Bone 500 closes the log after bone 202. The open/write/close triple at 201-202-500 is now complete. The re-open at 205 is a distinct log session.
+
+**Mechanism invisibility (primary): RESOLVED.** Bone 501 (elder speaks to carter) provides the chain-transmission event — Taylor routes through the elder as a relay node into the whisper chain. Bone 502 (wasps relay the labor-web pass) confirms the transmission via Taylor's insect network monitoring the handoff. The two bones together give the mechanism structural presence: what the chain does (501) and how Taylor knows it worked (502). This is tighter than the original bones 203/204 (which showed receipt at the far end without showing transit). The mechanism now has a bone at the chain-activation point and a bone at Taylor's confirmation point, which is the correct structure for this operation given Taylor cannot directly observe the full chain. W16 verdict upgrades to ENGAGED.
+
+---
+
+## Non-SF New Bones — Canon Check
+
+**Bone 496** (`taylor-hebert-flea-bottom stills`) — beat 16, pen-scratch rhythm sequence. Reaction beat between the third relay of pen-scratch rhythm (298) and Taylor opening the log (299). Stilling is a canonical Taylor-register response: she is not processing through speech or movement, she is processing. No canon concern. PASS.
+
+**Bone 497** (`taylor-hebert-flea-bottom faces the wall`) — beat 19, after cost bones 354 (exhale), 355 (headache wakes), 356 (holds eyes). Adds a withdrawal-and-recovery bone before log-open. Consistent with physical-cost register at expansion events. No new range claim. No Khepri involvement. PASS.
+
+**Bone 498** (`taylor-hebert-flea-bottom faces the wall`) — beat 24, after cost bones 448 (exhale), 449 (headache wakes), 450 (holds eyes). Same pattern as 497. PASS.
+
+**Bone 499** (`taylor-hebert-flea-bottom straightens the spine`) — beat 24, between 498 and log-open (451). Structural echo of bone 3 (story-open spine-straighten). The echo is load-bearing for s01 clinical register: the spine-straighten at story-open is body-recognition; the spine-straighten at beat 24 cost-recovery is a returned-to-functioning marker. The body is the same across both. No canon concern. PASS.
+
+**Bone 503** (`taylor-hebert-flea-bottom holds the feet`) — beat 22, maester extended-session sequence. Inserted between the four beetle-relay-continuation bones (416–419) and the log-open (420). Adds restraint-as-inaction bone during the relay of the extended pen-scratch session. Consistent with beat 22 plan: Taylor logs the event but does not record what she thinks the extended session means. The restraint bone structurally supports that withholding. No canon concern. PASS.
+
+---
+
+## Per-Window Re-Walk (Abbreviated — Full Cycle 1 Table Carries Forward Except Upgraded Windows)
+
+All 45 windows re-walked at brief pass. No window verdict changed by fixer form corrections (form only). Two windows upgraded by new bones:
+
+| Window | Bones | Cycle 1 | Cycle 2 | Change |
+|--------|-------|---------|---------|--------|
+| W08 | 80–94 (+495) | TOLERATED | ENGAGED | Bone 495 resolves agency gap |
+| W16 | 191–207 (+500/501/502) | TOLERATED | ENGAGED | Bones 500/501/502 resolve mechanism and log-triple |
+
+All other 43 windows: no change from cycle 1. ENGAGED throughout.
+
+---
+
+## Entertainment Density
+
+- ENGAGED: 45 / 45 windows (100%)
+- TOLERATED: 0 / 45 windows (0%)
+- BORED: 0 / 45 windows (0%)
+
+**Cap check:** ≤10% TOLERATED — PASS (0%). Zero BORED — PASS.
+**Consecutive-fail gate:** No consecutive failures of any kind. PASS.
+
+**Season-wide verdict: PASS**
+
+---
+
+## Canon / Constraint Findings
+
+### HARD FLAGS
+
+None found. No change from cycle 1. No new bones introduce range violations, Khepri-mantle access, information-state leaks, reincarnation fence violations, jargon errors, or timeline contradictions.
+
+---
+
+### SOFT FLAGS
+
+None carried forward. Both cycle-1 soft flags (SF-01, SF-02) are resolved by the new bones.
+
+No new soft flags generated by bones 495–503.
+
+---
+
+### RANGE ARITHMETIC — CYCLE 2 VERIFICATION
+
+No new range events introduced by bones 495–503. The table from cycle 1 carries forward without change:
+
+| Expansion | Beat | Pre-range | Post-range | Cost bones present? | Verdict |
+|-----------|------|-----------|------------|---------------------|---------|
+| Story open | — | — | 300m | N/A | PASS |
+| 1st expansion | Beat 11 | 300m | ~330m | Yes | PASS |
+| 2nd expansion | Beat 14 | ~330m | 400m | Yes | PASS |
+| 3rd expansion | Beat 19 | 400m | 500m | Yes | PASS |
+| 4th expansion | Beat 24 | 500m | ~600m | Yes | PASS |
+
+Bones 497–499 (beat 19 cost/recovery) and 498–499 (beat 24 cost/recovery) add cost-register bones but do not introduce new range claims. Red Keep remains 400m beyond 600m ceiling. CLEAN.
+
+---
+
+### KHEPRI-MANTLE — CYCLE 2 CHECK
+
+SEALED throughout all 503 entries. No new bone introduces human coordination, human-nervous-system access, or multi-body awareness. PASS.
+
+---
+
+### CHARACTER INFORMATION-STATE — CYCLE 2 CHECK
+
+No new bones introduce lore-leak concerns. Bone 501 (`oc-tanner-elder speaks to the carter`) involves the elder, not Taylor, initiating chain-transit. Taylor observes via bone 502 (wasps relay). Taylor does not obtain information she has no path to. No apparatus identity leaked. PASS.
+
+---
+
+### REINCARNATION MECHANICS — CYCLE 2 CHECK
+
+No new bones represent Tya's episodic memory, Tya-specific skill performance, or Common Tongue effort. No new bones imply a competing consciousness or memory-recovery event. PASS.
+
+---
+
+### CLINICAL SELF-ERASURE — CYCLE 2 CHECK
+
+New bones 496 (stills), 497 (faces the wall), 498 (faces the wall), 499 (straightens spine), 503 (holds the feet) are all physical-register action bones consistent with s1 clinical register. No sentimentality counterweight introduced. No notation-drift implied. The bone 499 spine-straighten echo of bone 3 reads correctly as recovery behavior, not as a warmth marker. PASS.
+
+---
+
+### TIMELINE — CYCLE 2 CHECK
+
+No new Dance-era characters. No new event implications. No jargon introduced. PASS.
+
+---
+
+## Summary Verdict
+
+**SEASON-WIDE: ACCEPT**
+
+Both cycle-1 soft flags resolved:
+- SF-01 (KL choice agency): bone 495 gives Taylor an active speaking bone before the elder routes her; departure now reads as Taylor-initiated, consistent with beat 6 plan and cond-shard-behavioral-weight escalation-bias.
+- SF-02 (whisper-chain transmission): bones 500/501/502 provide the mechanism and close the log-triple; the transit event is now structurally present at the chain-activation point (elder-to-carter) and confirmed at Taylor's observation point (wasps relay).
+
+Entertainment density: 45/45 ENGAGED (100%). Zero TOLERATED. Zero BORED.
+
+No hard constraint violations. No fence violations. No new soft flags from bones 495–503. All targeted canon items carry PASS forward from cycle 1 with no new findings.
+
+The bones are ready for facet-skin.
+
+---
+
+## Cycle 1 Archive
+
+*(Cycle 1 report archived below for record.)*
+
+---
+
+# Season s01 — Pass 2 Trim Review [CYCLE 1 — ARCHIVED]
+# Reviewer: worm-canon-pedant
 # Fork: 2-E (parallel, does not read other forks)
 # Source file: active-project/theater/proto-lines/s01.bones.md (494 numbered entries; 455 active bones)
 # Date: 2026-05-11
@@ -159,7 +347,7 @@ No Worm-universe jargon appears in the bones (bones are skeletal action statemen
 
 ---
 
-## Summary Verdict
+## Summary Verdict [CYCLE 1]
 
 **SEASON-WIDE: PASS**
 
