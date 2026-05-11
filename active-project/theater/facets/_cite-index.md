@@ -2,14 +2,14 @@
 generated: 2026-05-11
 source: active-project/theater/proto-lines/s01e02.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 285 facet entries; 65/155 protolines decorated (41.9%)
+totals: 284 facet entries; 64/155 protolines decorated (41.3%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
-| 0 (bare)   | 90 |
-| 1          | 39 |
+| 0 (bare)   | 91 |
+| 1          | 38 |
 | 2          | 10 |
 | 3          | 8 |
 | 4          | 3 |
@@ -21,7 +21,7 @@ totals: 285 facet entries; 65/155 protolines decorated (41.9%)
 ## Per-facet entries
 
 ### tens (155 entries)
-  tens:1 @3 r=2 back=N co=[loc-state:1, state:1] lic-in=[meta:1, meta:2, vibes:12]
+  tens:1 @3 r=2 back=N co=[loc-state:1, state:1] lic-in=[meta:1, vibes:12]
   tens:2 @4 r=2 back=N co=[narrator:1] lic-in=[vibes:6]
   tens:3 @5 r=1 co=[loc-state:2, state:1] lic-in=[vibes:1, vibes:2, vibes:3, vibes:5, vibes:7, vibes:9, vibes:11, vibes:14, vibes:18, vibes:19, vibes:21, vibes:22, vibes:23]
   tens:4 @6 r=1 co=[state:1]
@@ -119,7 +119,7 @@ totals: 285 facet entries; 65/155 protolines decorated (41.9%)
   tens:96 @110 r=1 co=[state:8]
   tens:97 @111 r=1 co=[state:4]
   tens:98 @113 r=1
-  tens:99 @114 r=1 co=[meta:2]
+  tens:99 @114 r=1
   tens:100 @115 r=1
   tens:101 @117 r=1 co=[narrator:34, state:6, vibes:8, vibes:11]
   tens:102 @118 r=1
@@ -294,9 +294,8 @@ totals: 285 facet entries; 65/155 protolines decorated (41.9%)
   feel:8 @106 back=N co=[feel:3, narrator:21, vibes:5]
   feel:9 @170 back=N co=[feel:4]
 
-### meta (2 entries)
+### meta (1 entries)
   meta:1 @89 back=Y co=[vibes:12, vibes:13] lic-out=[feel:7, tens:1]
-  meta:2 @114 back=Y lic-out=[mem:5, tens:1]
 
 ### vibes (23 entries)
   vibes:1 @22 back=Y co=[feel:1, narrator:6, state:2, state:3, vibes:2, vibes:3] lic-out=[state-update-oc-tanner-father:2, state-update-oc-tanner-father:3, feeling-oc-tanner-father:1, tens:3]
@@ -374,10 +373,9 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 - narrator:37 @172  `oc-tanner-mother lowers the gaze`
 - state:2 @73  `taylor-hebert-flea-bottom walks the perimeter`
 - feel:2 @54  `oc-tanner-elder faces taylor-hebert-flea-bottom`
-- meta:2 @114  `taylor-hebert-flea-bottom writes the entry`
 - vibes:20 @169  `oc-tanner-mother speaks to taylor-hebert-flea-bottom`
 
 ## Bare protolines (no citations accrued)
 _Round-2 add candidates if the rubric licenses a fire here._
 
-@7, @8, @10, @11, @14, @15, @16, @17, @19, @21, @24, @26, @32, @34, @37, @42, @44, @45, @46, @49, @51, @52, @55, @56, @57, @58, @60, @61, @62, @63, @65, @66, @67, @68, @70, @71, @72, @74, @75, @76, @79, @80, @81, @84, @86, @90, @91, @92, @93, @94, @95, @99, @101, @102, @103, @105, @109, @113, @115, @118, @119, @120, @121, @122, @123, @124, @126, @128, @129, @130, @133, @137, @138, @141, @142, @143, @144, @148, @150, @152, @153, @154, @157, @160, @161, @162, @166, @168, @176, @178
+@7, @8, @10, @11, @14, @15, @16, @17, @19, @21, @24, @26, @32, @34, @37, @42, @44, @45, @46, @49, @51, @52, @55, @56, @57, @58, @60, @61, @62, @63, @65, @66, @67, @68, @70, @71, @72, @74, @75, @76, @79, @80, @81, @84, @86, @90, @91, @92, @93, @94, @95, @99, @101, @102, @103, @105, @109, @113, @114, @115, @118, @119, @120, @121, @122, @123, @124, @126, @128, @129, @130, @133, @137, @138, @141, @142, @143, @144, @148, @150, @152, @153, @154, @157, @160, @161, @162, @166, @168, @176, @178

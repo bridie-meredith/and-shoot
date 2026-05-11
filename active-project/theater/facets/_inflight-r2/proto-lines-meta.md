@@ -118,7 +118,7 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 110 oc-tanner-father exits the junction [state:8]
 111 oc-tanner-mother exits the junction [state:4]
 113 taylor-hebert-flea-bottom opens the log
-114 taylor-hebert-flea-bottom writes the entry [meta:2]
+114 taylor-hebert-flea-bottom writes the entry
 # R2 JUDGE NOTE @114: meta:2 KEEP — anchor rewritten from provisional to mem:5 +tens:1. No cascade change to citation list.
 115 taylor-hebert-flea-bottom closes the log
 117 the flies spread the autumn-density network [state:6] [vibes:8] [vibes:11]

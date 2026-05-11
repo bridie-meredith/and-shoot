@@ -105,11 +105,11 @@ seasons:
         audit_complete: true
         audit_findings: 14   # initial r1: 4 HARD + 1 HARD-proximity + 9 SIGNAL; 5 pile-ups all warranted
         audit_findings_hard_initial: 4
-        reaudit_path: active-project/staff/auditor/facets-final-audit-r2.md
+        reaudit_path: active-project/theater/s01e01-archive/auditor/facets-final-audit-r2.md
         reaudit_complete: true
         audit_paths_chronological:
-          - active-project/staff/auditor/facets-final-audit.md       # r1 (initial; 4 HARD)
-          - active-project/staff/auditor/facets-final-audit-r2.md    # r2 (post-fixer-1; 1 HARD residual = flag-005)
+          - active-project/theater/s01e01-archive/auditor/facets-final-audit-r1.md  # r1 (initial; 4 HARD; archived 2026-05-11 during s01e02 run)
+          - active-project/theater/s01e01-archive/auditor/facets-final-audit-r2.md  # r2 (post-fixer-1; 1 HARD residual = flag-005; archived 2026-05-11)
           - active-project/staff/auditor/facets-final-audit-r3.md    # r3 (post-URI-034-tens-exemption; 0 HARD, 7 SIGNAL — flag-005 downgraded pending card amendment)
           - active-project/staff/auditor/facets-final-audit-r4.md    # r4 (post-fixer-2 + card amendment; 0 HARD, 4 SIGNAL — flag-005 EXEMPT; 2 new SIGNALs)
           - active-project/staff/auditor/facets-final-audit-r5.md    # r5 (post-fixer-3; 0 HARD, 2 SIGNAL — both editor-call deferrals by design); CANONICAL FINAL

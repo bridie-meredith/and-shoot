@@ -1,3 +1,20 @@
+## SESSION-START — 2026-05-11T20:00:00Z — facets-final-audit-s01e02-S001-C001
+dispatch: s01e02 Phase 5 final audit — single HARD finding S-001/C-001: meta:2 @114 licensed-by: mem:5 which was deleted by concurrent R2 memory-judge fork; re-anchor to feel:8 or delete
+target: active-project/theater/facets/metaphor.md + active-project/theater/proto-lines/s01e02.md + active-project/theater/facets/_cite-index.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 1 (S-001/C-001)
+
+## S-001/C-001 — RESOLVED — 2026-05-11T20:15:00Z
+fault: meta:2 @114 licensed-by: mem:5 +tens:1; mem:5 deleted by concurrent R2 memory-judge fork; anchor unresolvable
+scope: line
+change: DELETE path taken. Register test: feel:8 @106 (coin-counting somatic, pre-transaction verification) does not carry the wage-claim-formalization register that meta:2's figure (receipt = post-transaction unilateral accounting instrument) requires. The two registers are adjacent but not identical: feel:8 fires before the coins change hands; meta:2's figure is a record produced after the transaction has closed. Re-anchor to feel:8 would strain the figure. Deleted meta:2 entry from metaphor.md; stripped [meta:2] from proto-line @114 in s01e02.md; updated _cite-index.md: removed meta:2 entry from ### meta (1 entry now); dropped meta:2 from tens:1 @3 lic-in; removed co=[meta:2] from tens:99 @114; adjusted totals header (285→284 facet entries; 65→64 decorated protolines; 41.9%→41.3%); updated density table (bare 90→91; 1-cite 39→38).
+criteria met: yes — licensed-by: field with deleted anchor is gone; [meta:2] citation stripped from proto-line @114; cite-index updated to reflect deletion. No other facet entries mutated. No SIGNAL findings touched.
+
+## SESSION-END — 2026-05-11T20:15:00Z — facets-final-audit-s01e02-S001-C001
+findings-applied: 1 (S-001/C-001 — DELETE meta:2; strip citation; rebuild cite-index manually)
+findings-skipped: 0
+exit: CLEAN
+
 ## SESSION-START — 2026-05-11T19:00:00Z — facets-final-audit-r3-fix
 dispatch: s01e01 Phase 5 r3 audit — 5 fixable findings: r3-signal-001 (state-updates.md multi-frontmatter consolidate), r3-signal-002 (tone-law card Exemption 5 vocabulary + band — route to margit), r3-signal-003 (cite-index stale by 7 — regenerate or annotate, run LAST), r3-signal-004 (@134 rung 1→3 tensometer.md + tensometer-s01e01.md), r3-signal-005 (Annette-adjacent in memory.md mem:6); r3-signal-006 and r3-signal-007 out of scope (editor-call deferrals)
 target: active-project/theater/facets/state-updates.md + tensometer.md + tensometer-s01e01.md + memory.md + active-project/theater/facets/_cite-index.md + cards/conditions/cond-series-tone-constraints-125ac.card.md (via margit)
