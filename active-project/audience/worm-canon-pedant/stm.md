@@ -101,7 +101,7 @@ Carry-forward watches (unchanged):
 - Taylor's in-world theory for insect-network/glass-candle interaction must appear in prose before the s4 experiment.
 - Distance from maester must be established with precision at least once.
 
-## s01 Content Beats Plan Review — 2026-05-11
+## s01 Content Beats Plan Review (round 1) — 2026-05-11
 
 Reviewed: s01-content-beats-draft.md, 25 beats.
 
@@ -117,9 +117,36 @@ Key findings:
 - Clinical-self-erasure: operating at s01 magnitude. Beat 24 log omission (distance to Red Keep not recorded) is the correct early-onset pattern — small, almost invisible.
 - Village-claim arc closes correctly into s01 end-state (lord's-man record, externalized instrument).
 - Hightower file closes correctly into s01 end-state (miscategorized and dormant; filed under wrong framework).
-- The maester as accumulating-watcher correctly staged: beast 22 insect-coordination anomaly inquiry marks the moment he begins data-collection, not yet naming anything.
+- The maester as accumulating-watcher correctly staged: beat 22 insect-coordination anomaly inquiry marks the moment he begins data-collection, not yet naming anything.
 
 Updated carry-forward watches:
 1. [CARRY-FORWARD] Taylor's in-world theory for insect-network/glass-candle interaction must appear in prose before the s4 experiment.
 2. [CARRY-FORWARD] Distance from maester must be established with precision at least once.
 3. [NEW — s01 execution] Beat 20 log-language: Taylor's actual log must use observed-category language, not "Hightower-apparatus," for the second operative contact.
+
+## s01 Content Beats Plan Review (round 2) — 2026-05-11
+
+Reviewed: s01-content-beats-draft.md (draft 2), 26 beats.
+
+Verdict: ACCEPT
+
+Per-beat breakdown: 26 ENGAGED / 0 TOLERATED / 0 BORED. Threshold discipline satisfied.
+
+Six targeted re-checks per revision brief:
+
+Beat 3 (tanner-mother's song): CONFIRMED. Silence correctly staged as knowledge-gap, not deliberate refusal. The beat's own framing ("a family-interior reference that a stranger would have no way of knowing") makes the causal chain explicit. Mother's interpretation ("it does not have the song") is correct and closes the beat. No violation of cond-reincarnation-mechanics-125ac.
+
+Beat 9 (strategic-scan / half-second sweep): CONFIRMED. Reflexive surveillance posture is plausible behavioral residue from canon-Taylor's years of cape operations and Gold Morning command — not a power use, a body-habit. The beat is explicit that this is not fever-wrong but categorically uncategorizable to the father. No mechanics violation; no over-skilled flag.
+
+Beat 17 (vigil candle extinguishment): CONFIRMED. Register-correct for Crownlands smallfolk superstition in 125 AC. A private vigil candle held across eighteen months of liminal grief (Tya neither fully dead nor fully returned) is exactly the informal grief-practice this period generates. The extinguishment delivered as practical decision, not confession, is the correct register for a woman of this class and period closing a private observance.
+
+Beat 20 (log-language correction): RESOLVED. Draft 2 uses "second lord's-apparatus intelligence contact" — the correct observed-category language. The internal inconsistency of round 1 (log entry vs. narrative frame) is gone. Round 1 execution-level flag is closed.
+
+Beat 21 (dock-side cluster burn-down and reseed): CONFIRMED. Cluster burn-down is within the established AU-mechanics boundary: intensive active use of a cultivated passive-monitoring cluster depletes its signal-density (worked-in behavioral synchronization), not the underlying bug population. Reseed-weeks timescale is consistent with the use-based optimization recovery curve established across the range-expansion arc. No violation of cond-shard-behavioral-weight or cond-fauna-control-rules.
+
+Beat 26 (NEW — log close-state, cond-clinical-self-erasure at s01 magnitude): CONFIRMED. "The log does not speculate" is inference-gate, not structural suppression. Observable facts are logged in full (two external records, coincidence timing, apparatus separation). What stops at the log's edge is speculative model-building without confirmable data. This is the correct s01 magnitude: small omissions of inference-without-confirmation, not omission of observables. Structural suppression (omitting observables) is a later-season pattern. The narrative-frame close ("she does not know what file she is in") is correctly positioned as reader-facing, not log-content.
+
+Updated carry-forward watches:
+1. [CARRY-FORWARD] Taylor's in-world theory for insect-network/glass-candle interaction must appear in prose before the s4 experiment.
+2. [CARRY-FORWARD] Distance from maester must be established with precision at least once.
+3. [RESOLVED — s01 plan level] Beat 20 log-language: corrected in draft 2. No longer an execution risk.

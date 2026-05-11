@@ -4,7 +4,7 @@ routing:
   show_file: active-project/theater/show.md
   episode_plan: active-project/theater/episode-plan.md
   series_plan: active-project/staff/showrunner/series-plan.md
-  season_plan: ~
+  season_plan: active-project/staff/showrunner/season-s01-plan.md
 
 series:
   theme: protection-and-research-share-the-same-instrument; the guise of saving-the-world may already be eating the saving; cowing the world by being more frightening than the dragons that hold it.
@@ -51,7 +51,11 @@ series:
 seasons:
   - slug: s01
     chunk: "Taylor's insect-range expands through Flea Bottom while the tanner-village's ongoing claim on the body she inhabits and the Hightower apparatus's first miscategorized intelligence file close simultaneously around her; the season forecloses the possibility of working unnamed — she is already a misread fact in someone else's record before she understands what she is building."
-    status: planned
+    status: active
+    plan_path: active-project/staff/showrunner/season-s01-plan.md
+    content_beats: 26
+    phase_1_converged_at: attempt-2-of-3
+    drama: "The tanner-village's claim on Tya's body and the Hightower apparatus's first miscategorized intelligence file close around Taylor on the same season-timeline, with neither knowing the other exists and neither closeable from inside. What cannot survive the season is the possibility of working unnamed: by season close, Taylor is already a misread fact in someone else's record before she understands what she is building, and the village's grief-debt remains an open transactional surface she cannot pay off."
   - slug: s02
     chunk: "The glass-candle acquisition and sustained high-density relay load accumulate against the broken maester's sharpening documentation across the same months; the Khepri-mantle threshold crosses late in the season, the maester names it and is not heard, and Taylor arrives in s03 already changed — what cannot survive is the pre-threshold Taylor and the maester's belief that naming the line constitutes a brake."
     status: planned
@@ -63,5 +67,5 @@ seasons:
     status: planned
 
 active:
-  season: ~
+  season: s01
   episode: ~

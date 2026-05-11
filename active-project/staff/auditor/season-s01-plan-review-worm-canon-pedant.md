@@ -2,6 +2,191 @@
 # Season: s01
 # Draft reviewed: active-project/staff/screen-writer/s01-content-beats-draft.md
 # Date: 2026-05-11
+# Round: 2
+
+---
+
+## Prior session feedback summary (from STM + round 1 review)
+
+Round 1 returned ACCEPT on all 25 beats. One execution-level flag was issued on beat 20: Taylor's log-entry language used "Hightower-apparatus" while the narrative simultaneously stated she did not know the apparatus identity — a prose inconsistency requiring that execution-level prose use observed-category language ("lord's-apparatus" or equivalent).
+
+Round 2 draft has 26 beats. The round 1 execution flag was the reported trigger for revision.
+
+Per the round 2 prompt, the specific checks are:
+1. Beat 3 — tanner-mother's song: is the silence correctly implied as knowledge-gap, not deliberate refusal?
+2. Beat 9 — strategic-scan / half-second sweep: is this plausible as post-Khepri behavioral residue?
+3. Beat 17 — vigil-candle extinguishment: register-correct for Crownlands smallfolk superstition in 125 AC?
+4. Beat 20 — log language correction: confirm clean.
+5. Beat 21 — dock-side cluster burn-down and reseed timeline: canon-plausible for shard behavior?
+6. Beat 26 (NEW) — log close-state read: does "the log does not speculate" contradict cond-clinical-self-erasure at s01 magnitude?
+
+---
+
+## Targeted checks (per revision brief)
+
+**Beat 3 — tanner-mother's song and Taylor's silence**
+
+The beat reads: "She begins a song — three notes of something private, a tune she would have used only with Tya, a family-interior reference that a stranger would have no way of knowing. Taylor does not finish the song. She does not look up at the right moment."
+
+The framing "a family-interior reference that a stranger would have no way of knowing" places the causal logic in the beat itself: the song is not recognizable to Taylor because she is not Tya, and the beat names this without editorializing. "Taylor does not finish the song. She does not look up at the right moment." — The double failure (no completion, no instinctive cue to look up) is consistent with cond-reincarnation-mechanics-125ac as established in OQ-1: Taylor inherited the body, not Tya's memory. She has Common Tongue via shard; she does not have Tya's family-interior knowledge base. A private song is exactly the kind of procedural memory that would not transfer. The silence reads as absence, not refusal — the mother's response confirms the causal chain: "whatever came back through the fever, it does not have the song." The mother interprets correctly. The beat does not ask Taylor to misread this; she holds still while the mother arrives at the right conclusion by the wrong path (a fever-return frame, not a reincarnation frame).
+
+No violation. The silence is correctly staged as knowledge-gap, not withholding. CONFIRMED.
+
+**Beat 9 — strategic-scan / half-second sweep**
+
+The beat reads: "the way she orients toward each new arrival before turning to the person speaking to her, a half-second scan that the village frame has no category for. It is not body-wrong in the way a fever-return is body-wrong. It is strategic, and the father does not have a word for strategic."
+
+Is a reflexive surveillance posture plausible behavioral residue in post-Khepri Taylor? Yes. Canon-Taylor's tactical awareness is not a discrete power use; it is an integrated behavioral habit built across years of cape operations in Brockton Bay and culminating in Gold Morning city-scale command. The half-second sweep before turning to the current speaker is exactly the kind of sub-cognitive environmental monitoring that would be baked into her body language — not because she is consciously using her power, but because it is how she has moved through threat-spaces for years. It does not require insect-network activation to be present. It is the body carrying what the history built.
+
+The father registering it as "not body-wrong in the fever-return sense" but as "strategic" is also precisely right — he does not have the concept, so he holds the observation at arm's length without filing it. This is correct smallfolk-political-physics cognitive behavior: things without a local category are held, not dismissed.
+
+The beat does not claim this is a power action. It is behavioral. It is honest about the limit of the father's interpretive frame. CONFIRMED — plausible behavioral residue, no mechanics violation.
+
+**Beat 17 — vigil candle and its extinguishment**
+
+The beat reads: "she has stopped lighting the vigil candle. She says it the way a person states a practical decision, not a confession. She stopped when it became clear that waiting for Tya was not the same as waiting for what came back."
+
+The question is whether the vigil candle is register-correct for Crownlands smallfolk superstition in 125 AC. From the established conditions: cond-westerosi-superstition-frame and cond-crownlands-superstition-frame-125ac are both active for this world. Canon Westerosi smallfolk superstition in this period includes: candle-vigils for the dying and recently dead; the Seven's rites adapted into informal household observance; and grief practices carried longer among rural families than urban ones, particularly for young women who died before bearing children (Tya fits this category as a tanner's daughter who died in fever).
+
+A vigil candle lit and maintained across eighteen months of ambiguous grief — Tya neither fully dead (something returned) nor fully alive (what returned is not Tya) — is exactly the kind of liminal-state practice that 125 AC Crownlands smallfolk grief-custom would generate. The mother is not observing a formal Westerosi rite; she is holding open a private superstition about whether Tya might yet come back correctly. The extinguishment being delivered as "a practical decision, not a confession" is the right register for how a woman of this class and period would name the end of a private grief practice: pragmatic closure, not theological statement.
+
+The eighteen-month duration noted in the beat provides the elapsed time from beat 3 to beat 17, which passes the plausibility check — this is not resolved immediately; the mother held the candle open for the full span of s01's opening arc before closing it. Confirmed register-correct. CONFIRMED.
+
+**Beat 20 — log language correction**
+
+The beat now reads: "She records it: 'second lord's-apparatus intelligence contact, eastern-quarter apothecary, owner identified me by description.' She still does not know what apparatus this is."
+
+Round 1 flag: log entry used "Hightower-apparatus" while narrative simultaneously stated she did not know. Flag was: prose execution must use observed-category language.
+
+Draft 2 fix: "second lord's-apparatus intelligence contact" — this is the correct observed-category language. She knows it is lord's-apparatus tier (an operative covering King's Landing districts, asking about unusual-capability non-native residents, reporting upward into the Red Keep apparatus) without knowing it is Hightower-specifically. "lord's-apparatus" is the right level of categorization from her information position. The internal inconsistency of round 1 is resolved.
+
+The sentence "She still does not know what apparatus this is" following the log entry confirms the log entry is not claiming apparatus identity — it is categorizing tier. No tension between the log entry and the narrative frame. CLEAN. Execution-level flag from round 1: RESOLVED.
+
+**Beat 21 — dock-side cluster burn-down and reseed timeline**
+
+The beat reads: "Moving the information without a visible trace requires burning through a portion of her insect network in the dock-side alleys — a cluster she has maintained as a passive observation surface — in order to route the hand-off through coverage she controls rather than through contacts she cannot monitor. She completes the task and is paid. The dock-side cluster will need weeks to reseed."
+
+Two mechanics questions: (1) can Taylor's shard "burn down" a cultivated cluster — i.e., lose it as a maintained surface through active high-use depletion? (2) Does a weeks-reseed timescale track?
+
+On (1): Canon-Taylor's insect control is a power that requires active maintenance of the signal-channel to her bugs. Large-scale simultaneous command of a concentrated cluster (rerouting through the cluster as active relay infrastructure rather than passive monitoring surface) is a higher-intensity use than the passive coverage mode. The shard runs local-only with no multiplier bandwidth (established OQ-2). This means there is no Entity-network overhead to buffer the load; the local processing does the routing directly. Intensive active use of a cluster as routing infrastructure — not just monitoring, but actively threading information-movement through the coverage area — would deplete the cluster's behavioral coherence as a maintained surface. The bugs themselves are not depleted (they are not Taylor's bugs; they are the existing population she has tuned into her network). What is depleted is the worked-in signal density: the sub-threshold behavioral synchronization she has cultivated over weeks. That is plausibly losable through one high-intensity active use. The beat does not say the bugs are dead; it says the cluster will "need weeks to reseed" — which reads as the signal-density needing time to re-establish. This is within the established use-based optimization mechanic run in reverse: use builds optimization; one high-intensity event can disrupt it, and restoration follows the same gradual recovery curve.
+
+This is AU-invented mechanics detail but it is invented within the established AU-boundary (air-gap, local-only, use-based optimization). Nothing here contradicts established canon shard behavior. The reseed-weeks timescale is consistent with the range-expansion arc: beat 11's initial 30m extension required sustained overnight operation to trigger, meaning weeks of prior ordinary use built toward it. A cultivated passive-monitoring cluster represents weeks of signal-density work; it is coherent that disrupting it requires weeks to restore.
+
+On (2): Weeks is a plausible timescale. It is not stated with more precision than that, which is appropriate — the beat acknowledges the cost without needing to specify the exact window. CONFIRMED — no mechanics violation.
+
+**Beat 26 (NEW) — log close-state and cond-clinical-self-erasure at s01 magnitude**
+
+The beat reads: "She writes this down because it is what the data shows. Within four days of each other, two unrelated recording instruments closed around her. She does not have a model that explains this as anything other than coincidence. Her log does not speculate. What the log holds is what the perimeter walk holds: the village-claim open and formal, the Hand's file dormant and miscategorized, the maester's pen-scratch audible three blocks north, the dock-side insect cluster still thin from the burn-down three weeks ago. The architecture has changed. She knows that. She does not know what file she is in."
+
+The question: does "the log does not speculate" correctly reflect cond-clinical-self-erasure at s01 magnitude? Should s01 show small omissions, not yet structural suppression?
+
+The beat does not have structural suppression. "The log does not speculate" is a statement about what the log contains, not about what Taylor withholds from it. The beat is explicit that she does write down: the two external records, the fact that the two apparatuses don't know of each other, the four-day coincidence timing. What is absent from the log is the inferential next step — she does not have a model that explains this as anything other than coincidence, and the log does not record speculation toward models she cannot confirm. This is not the same as omitting information she has. She has the observable facts; she logs them. She does not have a confirmed model; she does not log a speculative one.
+
+This is the correct s01 magnitude of clinical-self-erasure. Beat 24 established the pattern with the smallest possible version (she knows the Red Keep distance; she does not log it). Beat 26 advances it one degree: she observes a pattern that she cannot explain without speculation; she logs the observables and stops there. This is not yet structural suppression — structural suppression would be omitting the observables themselves (not logging the Hand's-apparatus contact, not acknowledging the coincidence timing). She logs all of that. What stops at the edge of the log is inference-without-confirmation.
+
+The last sentence — "She does not know what file she is in" — is narrative voice, not log content. It is the reader being told what Taylor has not yet assembled. This is appropriate: the log does not contain that sentence; Taylor does not know that is the question to ask. The clinical register is maintained. CONFIRMED — s01-magnitude self-erasure, correctly applied. No structural suppression; only inference-gate.
+
+---
+
+## Full per-beat re-verdict (draft 2, 26 beats)
+
+Beats 1–19 and 21–25 are unchanged in substance from draft 1. The round 1 per-beat verdicts on all 25 beats remain standing — each beat was ENGAGED and the reasoning that produced those verdicts has not been disrupted by any change in draft 2. I am not re-litigating grounds the prior review settled. What follows notes any change in status or new observation per beat.
+
+**Beat 1** — ENGAGED (unchanged from round 1)
+**Beat 2** — ENGAGED (unchanged from round 1)
+
+**Beat 3** — ENGAGED (targeted re-check above confirms: silence is knowledge-gap, not refusal; the mother's test and conclusion are correctly staged; cond-reincarnation-mechanics-125ac satisfied)
+
+**Beat 4** — ENGAGED (unchanged)
+**Beat 5** — ENGAGED (unchanged)
+**Beat 6** — ENGAGED (unchanged)
+**Beat 7** — ENGAGED (unchanged)
+**Beat 8** — ENGAGED (unchanged)
+
+**Beat 9** — ENGAGED (targeted re-check above confirms: half-second strategic scan is plausible behavioral residue from cape-history, not power use, not over-skilled for a smallfolk girl in the sense that it is legible as wrong — the father registers it as wrong in the right way: not fever-wrong, but categorically uncategorizable)
+
+**Beat 10** — ENGAGED (unchanged)
+**Beat 11** — ENGAGED (unchanged)
+**Beat 12** — ENGAGED (unchanged)
+**Beat 13** — ENGAGED (unchanged)
+**Beat 14** — ENGAGED (unchanged)
+**Beat 15** — ENGAGED (unchanged)
+**Beat 16** — ENGAGED (unchanged)
+
+**Beat 17** — ENGAGED (targeted re-check above confirms: vigil candle and its extinguishment are register-correct for Crownlands smallfolk superstition in 125 AC; eighteen-month duration plausible; the mother's framing of closure as practical decision, not confession, is correct register for the class and period)
+
+**Beat 18** — ENGAGED (unchanged)
+**Beat 19** — ENGAGED (unchanged)
+
+**Beat 20** — ENGAGED (round 1 execution flag RESOLVED; "second lord's-apparatus intelligence contact" is the correct observed-category language; internal inconsistency between log entry and narrative voice is gone; Taylor's knowledge state correctly bounded)
+
+**Beat 21** — ENGAGED (targeted re-check above confirms: cluster burn-down is within AU-mechanics boundary; reseed-weeks timescale consistent with established optimization curve; no mechanics violation)
+
+**Beat 22** — ENGAGED (unchanged)
+**Beat 23** — ENGAGED (unchanged)
+**Beat 24** — ENGAGED (unchanged)
+**Beat 25** — ENGAGED (unchanged)
+
+**Beat 26 (NEW)** — ENGAGED (targeted re-check above confirms: "the log does not speculate" correctly reflects s01-magnitude clinical-self-erasure; observable facts are logged, speculative models are not; this is inference-gate, not structural suppression; the narrative voice close — "she does not know what file she is in" — is correctly positioned as reader-facing, not log-content; the two-apparatus architecture noted in the log is precisely what Taylor would observe and record; no cond-clinical-self-erasure violation)
+
+---
+
+## Threshold discipline check
+
+- ENGAGED: 26
+- TOLERATED: 0
+- BORED: 0
+
+No two-consecutive-BORED trigger. No three-consecutive-TOLERATED trigger. Threshold discipline: satisfied.
+
+---
+
+## Hot-button check (round 2 delta)
+
+**Power mechanics exceeding established limits:** Beat 21 cluster burn-down and reseed: no violation (AU-mechanics boundary respected; the reseed is not a new expansion, it is restoration of cultivated signal-density). No new flags.
+
+**Character knowing information they have no path to knowing:** Beat 20 log-language corrected — "lord's-apparatus" replaces the prior "Hightower-apparatus." Beat 26 correctly has Taylor noting the two apparatuses don't know of each other, which is an inference she can make: the lord's-man record is a village-level customary instrument, the Hand's-apparatus is a Red Keep intelligence operation; she has no evidence they cross-reference and correctly logs this as a gap between the institutional tracks. She does not claim to know they don't communicate; she logs that she cannot find evidence they do. Correct epistemic limit. No new flags.
+
+**Voice register:** Clinical register holds through beat 26. The closing sentence "She does not know what file she is in" is correctly narrative-frame, not log-content. If it were log-content, it would be a register violation — Taylor's log does not speak in those terms. As narrative-frame summary of her knowledge state, it is appropriate. No flag.
+
+**Timeline contradictions:** Beat 26 adds nothing new to the timeline. Still pre-Dance; the Hand's apparatus is active; Viserys I is alive by implication. No flag.
+
+**Worm jargon:** No new jargon introduced. "Cluster" as a term for a maintained insect-observation surface is Taylor's own operational vocabulary and is used correctly throughout. No flag.
+
+---
+
+## Execution-level flag status (round 1 → round 2)
+
+Round 1 flag: Beat 20 log-language — "Hightower-apparatus" must become observed-category language at execution.
+
+Round 2 status: RESOLVED at plan level. Draft 2 uses "lord's-apparatus." The flag does not need to be carried forward as an execution risk — the plan now specifies the correct language.
+
+---
+
+## File-level verdict
+
+ACCEPT
+
+The 26-beat draft 2 satisfies all canon and mechanics checks. The five targeted re-checks return clean. The new beat (26) introduces no violations and correctly handles the s01-magnitude clinical-self-erasure question: the log holds observables, gates inference, and leaves the narrative-frame knowledge-statement to the reader-facing close. The round 1 execution flag is resolved. No new flags generated in round 2.
+
+---
+
+## Updated live watches (carry to execution review)
+
+1. [CARRY-FORWARD] Taylor's in-world theory for insect-network/glass-candle interaction must appear in prose before the s4 experiment.
+2. [CARRY-FORWARD] Distance from maester must be established with precision at least once (plan specifies 250m in beat 7; prose must confirm with equivalent precision).
+3. [RESOLVED — s01 plan level] Beat 20 log-language: corrected in draft 2. No longer an execution risk.
+
+---
+
+---
+# ARCHIVED — Round 1 review below this line
+---
+
+# Audience Plan Review — worm-canon-pedant
+# Season: s01
+# Draft reviewed: active-project/staff/screen-writer/s01-content-beats-draft.md
+# Date: 2026-05-11
 # Round: 1
 
 ---
@@ -76,7 +261,7 @@ Hightower intelligence clerk on routine population-register pass through Flea Bo
 Range crosses 500m. Mechanism: gradual extension over weeks, not a threshold event — "incremental, not threshold-event, a gradual extension through weeks of early winter as the shard's local-reseed stabilizes further." This distinction from the beat-11 threshold event is mechanically correct: shards can optimize both in event-steps and in continuous slow recovery. The beat acknowledges both modes exist. The new vertical coverage — ground-floor apothecary now included below the upper room — is a consequence of the range expansion, stated specifically. The range arithmetic sentence at the end: "300m-to-500m expansion over approximately eight months of local reseed is within the shard's established recovery curve." The beat is doing something I appreciate: it states the arithmetic explicitly and asserts it is within the established curve. This is the text acknowledging its AU-invented recovery curve without exceeding it or hand-waving it. ENGAGED.
 
 **Beat 20** — ENGAGED
-Second Hightower clerk — different man, eastern-quarter adjacent streets. He describes a behavioral profile to the apothecary owner. The apothecary owner names Taylor. Critical check: does Taylor know this is Hightower apparatus? She records it as "second Hightower-apparatus operative contact." Wait — she identifies the apparatus here. Is this correct?
+Second Hightower clerk — different man, eastern-quarter adjacent streets. He describes a behavioral profile to the apothecary owner. The apothecary owner names Taylor. Critical check: does Taylor know this is Hightower apparatus? She records it as "second Hightower-apparatus operative contact." Wait — she identifies the apparatus here.
 
 Reading more carefully: the beat says she records "second Hightower-apparatus operative contact, eastern-quarter apothecary, owner identified me by description." Then the beat explicitly states: "She still does not know what apparatus this is." The log entry in the beat uses "Hightower-apparatus" — but the subsequent line confirms she does not know this label. This is a small internal inconsistency in the beat as written: the log entry she writes uses the term "Hightower-apparatus" and then the narrative voice states she does not know the apparatus identity.
 
