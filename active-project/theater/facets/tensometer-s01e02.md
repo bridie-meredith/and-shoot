@@ -37,6 +37,8 @@ author: dramatist
 25 @184 1
 26 @185 1
 27 @187 1
+27a @528 1
+# Watch-timing relay anchor for beat 10 (S7 facet-readiness fault-001 criterion 2 + fault-002 closure)
 28 @190 1
 29 @195 1
 29a @509 1

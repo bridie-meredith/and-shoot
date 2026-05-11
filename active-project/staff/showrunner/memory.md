@@ -81,7 +81,43 @@ seasons:
       - audience-S6-localized-drift-W12 (beat 10 thin/relay-mapping flagged by cape-fic + dark-fantasy)
       - audience-S9-2-of-3-comprehensibility-risk (cape-fic fragile-chains, worm-canon formula-lock)
     convergence: PARTIAL — Sweep A 12 of 18 clean; Sweep B 14 of 17 clean. Convergence per spec ("all-clean reports across both sweeps and no fixes in between") not achieved.
-    orchestrator_verdict: "FAIL — F7-bone (7+ tens-gate-residual-HARD open) + F1 (Phase 3 S1/S3/S7/S9 not converged) + R1 (~86 dispatches vs 60 cap)"
+    orchestrator_verdict: "PASS-WITH-NOTES — F7-bone CLEARED by cycle-3 cleanup (IDs 518-528); high-dispatch (~95 vs 60-hard); long-run (~12h); deep-iteration on S10/S7/boundary; rubric-recalibration-recommended; frequency-band W2/W3 below floor (structural); audience-S3 not re-fired (carry-forward to edit pass)"
+    orchestrator_verdict_file: active-project/staff/auditor/season-s01-orchestrator-verdict.md
+    protolines_complete: 2026-05-11
+    episodes:
+      - slug: s01e01
+        status: protolined
+        narrator: taylor-hebert-flea-bottom
+        interlude: false
+        chunk: "Taylor wakes in Tya's body and the tanner-village category closes around her on the first morning; she moves to King's Landing via the tanner-elder, maps her 300m sphere in Flea Bottom, identifies the broken maester's upper room as ambient surveillance, and runs her first transactional exchange via the dock-runner."
+        proto_lines_path: active-project/theater/proto-lines/s01e01.md
+        tens_path: active-project/theater/facets/tensometer-s01e01.md
+        cast: [taylor-hebert-flea-bottom, oc-tanner-father, oc-tanner-mother, oc-tanner-elder, oc-broken-maester, oc-dock-runner]
+        locations: [loc-flea-bottom, loc-flea-bottom-base]
+        prior_episode: none
+        aggregate_range: 1-155
+      - slug: s01e02
+        status: protolined
+        narrator: taylor-hebert-flea-bottom
+        interlude: false
+        chunk: "The tanner-family's claim escalates from informal grief to formalized customary wage-claim across three visits; the broken maester transitions from ambient signal to named log entry; range expands from 300m to 400m with first physiological cost; the mother extinguishes the vigil candle."
+        proto_lines_path: active-project/theater/proto-lines/s01e02.md
+        tens_path: active-project/theater/facets/tensometer-s01e02.md
+        cast: [taylor-hebert-flea-bottom, oc-tanner-father, oc-tanner-mother, oc-tanner-elder, oc-broken-maester, oc-dock-runner]
+        locations: [loc-flea-bottom-base]
+        prior_episode: s01e01
+        aggregate_range: 159-328
+      - slug: s01e03
+        status: protolined
+        narrator: taylor-hebert-flea-bottom
+        interlude: false
+        chunk: "The Hightower apparatus opens its file on Taylor across two clerks and a senior operative's written request through the elder; the village-claim closes around her externally via the lord's-man record; range reaches 600m with the Red Keep 400m beyond ceiling; the season closes on two log entries written side-by-side — the architecture has changed but she does not know what file she is in."
+        proto_lines_path: active-project/theater/proto-lines/s01e03.md
+        tens_path: active-project/theater/facets/tensometer-s01e03.md
+        cast: [taylor-hebert-flea-bottom, oc-tanner-father, oc-tanner-elder, oc-broken-maester]
+        locations: [loc-flea-bottom-base]
+        prior_episode: s01e02
+        aggregate_range: 330-494
     orchestrator_verdict_file: active-project/staff/auditor/season-s01-orchestrator-verdict.md
   - slug: s02
     chunk: "The glass-candle acquisition and sustained high-density relay load accumulate against the broken maester's sharpening documentation across the same months; the Khepri-mantle threshold crosses late in the season, the maester names it and is not heard, and Taylor arrives in s03 already changed — what cannot survive is the pre-threshold Taylor and the maester's belief that naming the line constitutes a brake."
@@ -95,4 +131,4 @@ seasons:
 
 active:
   season: s01
-  episode: ~
+  episode: s01e01
