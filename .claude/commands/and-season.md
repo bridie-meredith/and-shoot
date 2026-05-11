@@ -529,7 +529,7 @@ For each per-episode file: seven header fields present, contiguous numbering 1..
 
 Rename the slug-suffixed `tensometer-<season-slug>-window-{NN}.md` files to `tensometer-<season-slug>e<NN>.md` matching the final episode slugs. These travel with each per-episode proto-line file and are the bone-gate's deliverable. `/and-shoot` Phase 0 renames the active-episode tens file to `theater/facets/tensometer.md` as its working surface; the slug-suffixed copy remains as canonical archive.
 
-`/and-facets-r1` Layer 1 (legacy tens authoring at `theater/facets/tensometer.md`) is **not** touched; it remains operational. No path collision.
+`/and-facets` Phase 0 stages the per-episode `tensometer-<season-slug>e<NN>.md` file as the working `theater/facets/tensometer.md` and aborts if the upstream file is missing. Tens is **upstream-only** as of the /and-facets collapse (2026-05-10) — there is no in-pipeline tens authoring downstream of /and-season.
 
 ### Step 5 — Persist split into showrunner memory
 

@@ -1,28 +1,53 @@
 ---
-description: Master facet pipeline — chains Round 1 + Round 2 + final audit on one episode's proto-lines. Calls /and-facets-r1, /and-facets-r2, /and-facets-audit in sequence. R3 default-skipped (production-default per convergence signal); fire /and-facets-r3 explicitly if needed. Output - active-project/theater/facets/ + audit report. Usage - /and-facets [episode-slug]
+description: Unified facet pipeline for one episode. Single command, five phases — fanout (R1 parallel authoring) → fanin (merge tool) → fanout (R2 parallel judging) → fanin (decision-log consolidate + cite-index rebuild) → audit (single auditor dispatch). Tens is upstream-supplied by /and-season. Output - active-project/theater/facets/ + audit report. Usage - /and-facets [episode-slug]
 ---
 
-Master facet pipeline. Runs the full chain on one episode's protolines:
+Unified facet pipeline. One episode in, audited graph out. The four legacy sub-commands (-r1, -r2, -r3, -audit) are folded into this command; R3 is retired (the relaxation pass was default-skipped in the prior chain and is gone in this collapse).
+
+You are the orchestrator. Five phases run in strict sequence:
 
 ```
-protolines (status: protolined)
+proto-lines/<slug>.md  (bones; upstream tens citations already accrued)
         │
         ▼
-   PHASE 1 — Round 1: blind authoring (9 facets)         → status: faceted-r1
+   PHASE 1 — FANOUT (R1 parallel authoring)
+            8 facet authors in one Agent block; each writes its
+            own facet file (or per-character slice) + its own
+            annotated proto-lines copy under _inflight/.
         │
         ▼
-   PHASE 2 — Round 2: hybrid judge (4 midband facets)    → status: faceted-r2
+   PHASE 2 — FANIN (merge + cite-index)
+            build_cite_index.py:
+              - body-integrity check
+              - citation union → canonical proto-lines
+              - slice consolidation (feeling, state-updates)
+              - stale-citation check
+              - cite-index build
         │
         ▼
-   PHASE 3 — Final audit (flag-only)                     → status: audited-r1
+   PHASE 3 — FANOUT (R2 parallel judging)
+            4 midband judges in one Agent block, full graph in each
+            payload. Each writes its own mutated facet file +
+            decision-log shard + its own annotated proto-lines copy
+            under _inflight-r2/. Self-scoped delete only;
+            citation cascade on the author's copy.
         │
         ▼
-   final report at active-project/staff/auditor/facets-final-audit.md
+   PHASE 4 — FANIN (decision-log consolidate + merge + cite-index)
+            build_cite_index.py rerun against _inflight-r2/;
+            decision-log shards concatenated to .r2-decisions.md;
+            arbiter glue (T1/T4 interventions) runs over shards.
+        │
+        ▼
+   PHASE 5 — AUDIT (single auditor dispatch)
+            Flag-only cross-cutting graph audit.
+            Output: active-project/staff/auditor/facets-final-audit.md.
+        │
+        ▼
+   PHASE 6 — PERSIST + orchestrator-critic verdict
 ```
 
-R3 (relaxation pass) is **default-skipped** in the master chain. Empirical signal from s01e01 (2026-05-10): all 6 R3 dispatches reported zero-change → R2 produces a fixed point under the current rubric set. The standalone `/and-facets-r3` remains callable if a future episode or rubric change makes R3 worth firing explicitly.
-
-You are the orchestrator. The chain executes the dispatch logic from the four sub-commands by reference; this master is a thin sequencer plus a unified summary.
+R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/state/vibes) + base proto-lines + upstream `tensometer.md`. R2 is **graph-aware**: every judge gets all nine R1 facet files + the cite-index. The audit is **cross-cutting**: one fork, full graph.
 
 ## Args
 
@@ -30,153 +55,351 @@ You are the orchestrator. The chain executes the dispatch logic from the four su
 
 ---
 
-## Phase 0 — Validate (master)
+## Phase 0 — Validate
 
-1. Resolve episode slug (arg or `active.episode`).
-2. Read `active-project/staff/showrunner/memory.md`. Determine starting status:
-   - `protolined` — fresh run; chain starts at Phase 1.
-   - `faceted-r1` — partial-run resume; skip Phase 1, start at Phase 2.
-   - `faceted-r2` or `faceted-r3` — partial-run resume; skip Phase 1 + 2, start at Phase 3.
-   - `audited-r1` — already done; print "already audited; re-running Phase 3 only" and proceed only if explicit re-audit is wanted.
-3. Print:
+1. Resolve episode slug.
+2. Read `active-project/staff/showrunner/memory.md`. Determine resume point:
+   - `protolined` — fresh run; start at Phase 1.
+   - `faceted-r1` — partial-run resume; skip Phase 1+2, start at Phase 3.
+   - `faceted-r2` — partial-run resume; skip Phase 1–4, start at Phase 5.
+   - `audited-r1` — already done; print "already audited; re-run requires explicit re-audit" and exit unless re-audit is wanted.
+3. Read the proto-lines file. Lift the seven extended-header fields: `episode`, `narrator`, `goal`, `cast`, `locations`, `prior_episode`, `aggregate_range`.
+4. **Upstream tens precondition.** Locate `active-project/theater/facets/tensometer-<season-slug>e<NN>.md` (final per-episode form from /and-season Phase 7 Step 4). Copy/rename to `active-project/theater/facets/tensometer.md` as the working surface. Abort with the resolution path if missing — facets cannot run without the bone-gate tens output.
+5. Confirm `active-project/theater/facets/` is empty apart from `tensometer.md`. If other facet files exist for this episode, abort with paths printed; archive first to re-run. (Skip this check on partial-run resume.)
+6. Confirm warehouse loc cards for every slug in `locations:` resolve. Confirm every `cast:` slug resolves under `active-project/actors/<slug>/`.
+7. Read `schemas/facet.schema.md`, `schemas/proto-line.schema.md`, `schemas/audit-report.schema.md` once (orchestrator reference).
+8. Create `active-project/theater/facets/_inflight/` and `active-project/theater/facets/_inflight-r2/`.
+
+Print:
 ```
 Episode: <slug>
-Starting status: <status>
-Plan: <Phase 1 | Phase 2 | Phase 3 — depending on resume point>
-Beginning master chain.
+Narrator: <slug>
+Goal: <one sentence>
+Cast: <slug>, <slug>, ...
+Locations: <slug>, ...
+Proto-lines: <path>  (<count> bones)
+Upstream tens: <path>  (<count> entries; 1s/2s/3s = X/Y/Z)
+Starting phase: <Phase 1 | Phase 3 | Phase 5>
 ```
 
 ---
 
-## Phase 1 — Round 1 (delegated to /and-facets-r1)
+## Phase 1 — FANOUT: R1 parallel authoring
 
-If status is `protolined`, execute the full body of `.claude/commands/and-facets-r1.md`. Read that file and follow its dispatch logic verbatim:
+**Dispatch discipline:**
 
-- Phase 0 of -r1 (validate `protolined` precondition + read protoline header) — re-runs but is idempotent against the master Phase 0 above.
-- Round 1 layers 1-6: tens (dramatist), loc-state (studio), NI (POV impersonator), sensory (studio), state-updates env (studio) + per-actor (impersonators), memory (POV impersonator), feeling (per-character impersonators), metaphor (editor), vibes (showrunner).
-- Phase 6 of -r1: status `protolined` → `faceted-r1`.
-- Phase 7 of -r1: rebuild cite-index.
+- **One parallel Agent block.** All R1 authors fire in a single message with concurrent Agent tool calls. Sequential dispatch is a build defect.
+- **No shared-file race.** Each author writes (i) its facet file (or per-character slice — distinct paths) and (ii) an annotated proto-lines copy under `_inflight/proto-lines-<facet>.md` (or `_inflight/proto-lines-<facet>-<slug>.md` for per-character). The base proto-lines file is **not** mutated during R1.
+- **Citation write-back on the author's copy.** Each author copies the base proto-lines file to its `_inflight/` path and appends `[<facet-prefix>:<id>]` to every proto-line it decorated. Prefixes: `loc-state`, `narrator`, `sensory`, `state`, `mem`, `feel`, `meta`, `vibes`. Upstream `tens:` citations on the base proto-line are preserved.
+- **Forbid loading other R1 facet files.** Each author reads only its rubric + the inputs the rubric names + the base proto-lines + the upstream `tensometer.md` (where used as a correlative gate). No cross-R1-facet peeking.
+- **Per-file cull is the author's last act.** Per `schemas/facet.schema.md` § "Per-file cull" — delete-only, one pass.
+- **Body integrity.** Authors append citations only; SVO bodies in `_inflight/` must be byte-identical to the base. Merge tool aborts the run if any body diverges.
+- **Each dispatch returns:** path to written facet file, path to `_inflight/` proto-lines copy, entry count, cull count, any flagged seams.
 
-**Key reminder enforced by the master:** the dramatist is Read-only; the orchestrator writes `tensometer.md` from the dramatist's returned ratings payload. Per-character impersonator briefs MUST list explicit absolute paths to all nine facet files when reading the graph (the agent has no globbing tool — implicit paths cause refusal).
+### R1 authors (eight in the parallel block)
 
-If status is already `faceted-r1` or beyond, skip Phase 1.
+**1. location-state (studio)** — base proto-lines; all loc cards named in `locations:`; schema § location-state; `design/shoot-v2/rubric-location-state.md`; movement-verb gate; upstream `tensometer.md` (correlative). Forbid: other facet rubrics, vibes. Out: `location-state.md` + `_inflight/proto-lines-loc-state.md`.
 
----
+**2. narrator-interest (POV impersonator)** — POV stack (card + behavior cards + LTM + STM + state); base proto-lines; upstream `tensometer.md`; `rubric-narrator-interest.md`; schema § interest flags — narrator. Override impersonator: facet-authoring (no show.md, no action costs). Forbid: other characters' cards, audience personas, source prose. Out: `interest-narrator.md` + `_inflight/proto-lines-narrator.md`.
 
-## Phase 2 — Round 2 (delegated to /and-facets-r2)
+**3. sensory (studio — fresh fork)** — base proto-lines; upstream `tensometer.md` (correlative); all loc cards; `rubric-sensory.md`; disambiguation gate; per-scene cap ≤3; sparsity 3-6%; modality ≥2 per episode. Out: `sensory.md` + `_inflight/proto-lines-sensory.md`.
 
-If status is `faceted-r1` (or just transitioned from Phase 1), execute the full body of `.claude/commands/and-facets-r2.md`. Read that file and follow its dispatch logic verbatim:
+**4. state-updates env (studio — fresh fork)** — base proto-lines; upstream `tensometer.md`; all loc + prop cards; `rubric-state-updates.md`; schema § state updates (`<target>.<field>: <old> -> <new>`, `target` ∈ {`studio`, `prop:<slug>`}). Scope: environmental + location + prop only. Out: `state-updates-env.md` + `_inflight/proto-lines-state-env.md`.
 
-- Phase 0 of -r2: validate `faceted-r1` + cite-index present.
-- Round 2 layers R2.1-R2.4: NI judge, memory judge, feeling judge per character (×N cast), metaphor judge.
-- Phase 6 of -r2: status `faceted-r1` → `faceted-r2`.
-- Phase 7 of -r2: rebuild cite-index.
+**5. state-updates actor (per-character impersonators ×N)** — for each `cast:` slug, one impersonator dispatch in the same parallel block. Character stack + base proto-lines + upstream `tensometer.md` + `rubric-state-updates.md` § actor-state. Override impersonator: facet-authoring. Out: `state-updates-<slug>.md` + `_inflight/proto-lines-state-<slug>.md`.
 
-**Key reminder enforced by the master:** every midband author dispatch payload MUST include the full nine-facet graph + cite-index, not the DAG-upstream subset. Per the captured Round 2 directive (user 2026-05-10).
+**6. memory (POV impersonator — fresh fork; do not re-use NI fork's STM)** — POV stack; base proto-lines; upstream `tensometer.md` (inverted-tens density gate); `rubric-memory-flags.md`; schema § memory flags. NI co-citation is a R2 concern. Override impersonator: facet-authoring. Out: `memory.md` + `_inflight/proto-lines-mem.md`.
 
-If status is already `faceted-r2` or beyond, skip Phase 2.
+**7. feeling (per-character impersonators ×N)** — for each `cast:` slug, one impersonator dispatch in the same parallel block. Character stack + base proto-lines + upstream `tensometer.md` (correlative) + `rubric-feeling.md`; schema § feeling flags — per-character per-scene cap ≤1 hard; sparsity 2-5%; multi-justification ≥3 of 5. Forbid: named-feeling vocabulary, hedges, similes. Override impersonator: facet-authoring. NI non-redundancy is a R2 concern. Out: `feeling-<slug>.md` + `_inflight/proto-lines-feel-<slug>.md`.
 
----
+**8. metaphor (editor)** — base proto-lines; upstream `tensometer.md` (curve-discipline; AP7 default-refuse at tens ≠ 3); `rubric-metaphor.md`; schema § metaphor flags; sparsity 0-3%; per-scene cap ≤1 cross-character. R1 metaphor entries may carry **provisional** `licensed-by:` notes naming the intended anchor by description; resolution to machine-readable `<prefix>:<id>` form happens in R2. Forbid: vibes, audience personas, behavior cards. Out: `metaphor.md` + `_inflight/proto-lines-meta.md`.
 
-## Phase 3 — Final audit (delegated to /and-facets-audit)
+**9. vibes-updates (showrunner)** — base proto-lines; upstream `tensometer.md`; all actor vibes files; all loc card VIBES sections; `staff/studio/vibes.md`; `rubric-vibes.md` + `rubric-vibes-v1.1-patch.md`; schema § vibes-updates (entity-target-primary form; `licensed-by:` mandatory; R1 provisional anchor-hints OK, resolution in R2). Showrunner-as-author is the one exception to the "showrunner does not author" rule. Out: `vibes.md` + `_inflight/proto-lines-vibes.md`.
 
-If status is `faceted-r2` or `faceted-r3` (or just transitioned from Phase 2), execute the full body of `.claude/commands/and-facets-audit.md`. Read that file and follow its dispatch logic verbatim:
-
-- Phase 0 of -audit: validate `faceted-r2` or `faceted-r3` + cite-index present.
-- Single auditor dispatch with full graph; produces classified findings report.
-- Phase 6 of -audit: status `faceted-r2|r3` → `audited-r1`.
-
-**Key reminder:** audit runs in flag-only mode. No mutations to facet or protoline files. Findings are advisory; remediation routes back to facet authors as a separate work cycle.
-
-If status is already `audited-r1`, the audit has already run. The master prints the existing report path and exits unless an explicit re-audit is wanted.
+(Eight authors but vibes makes the parallel block nine dispatches when state-updates env + per-actor are counted separately. Feeling and state-updates-actor each fan out further by cast size.)
 
 ---
 
-## Phase 4 — Master summary + orchestrator-critic verdict
+## Phase 2 — FANIN: merge + cite-index
 
-After all delegated phases complete:
+```bash
+python3 active-project/staff/cite-index/build_cite_index.py <episode-slug>
+```
 
-### 4a. Aggregate per-phase summaries
+Five sub-phases inside the tool (see its module docstring):
 
-The master prints a unified summary that aggregates the per-phase summaries:
+1. **Body-integrity check.** Every `_inflight/proto-lines-*.md` SVO body must match base byte-for-byte. Divergence → abort.
+2. **Citation union.** Per proto-line ID, merge `[<prefix>:<id>]` tokens across base + all author copies. Deterministic order. Write canonical `theater/proto-lines/<slug>.md`.
+3. **Slice consolidation.** `feeling-<slug>.md` → `feeling.md`; `state-updates-env.md` + `state-updates-<slug>.md` → `state-updates.md`. IDs renumbered monotonically; per-source `# source: <slug>` markers preserved.
+4. **Stale-citation check.** Every `[<prefix>:<id>]` on canonical proto-lines must resolve to a facet-file entry. Unresolved → abort.
+5. **Cite-index build.** `theater/facets/_cite-index.md` derived from canonical merged state.
+
+If sub-phases 1 or 4 abort, fix the offending author (re-dispatch the responsible R1 author with a clarifying brief) and re-run. Phase 5 cannot run on a non-clean merge.
+
+Set status `protolined` → `faceted-r1` in showrunner memory.
+
+---
+
+## Phase 3 — FANOUT: R2 parallel judging
+
+**Dispatch discipline:**
+
+- **One parallel Agent block.** All four midband judges (NI, memory, feeling-per-character, metaphor) fire concurrently. Each judge sees the locked R1 graph; none sees the others' R2 mutations.
+- **Full nine-facet graph + cite-index in every dispatch payload.** Non-negotiable.
+- **No shared-file race.** Each judge writes (i) its mutated facet file (deletes leave gaps; adds take next-available ID) and (ii) an annotated proto-lines copy under `_inflight-r2/proto-lines-<facet>.md` (or per-character for feeling) reflecting its citation cascades + adds. The base canonical proto-lines file is **not** mutated during R2.
+- **Self-scoped deletion only.** A judge may delete only its own facet's entries. Cross-facet deletion authority is reserved for Phase 5 audit.
+- **Citation cascade on the author's proto-lines copy.** When the judge deletes `<own>:<id>`, it strips `[<own>:<id>]` from every proto-line in its `_inflight-r2/` copy. The cite-index makes affected proto-lines cheap to identify.
+- **Add-cap ≤5 per judge per run** (metaphor ≤3 per its refuse-by-default discipline). Cap-refusals logged.
+- **No reordering of existing IDs.** Deleted IDs leave gaps. New entries get next-available IDs per facet.
+- **Provisional-anchor binding.** R1 metaphor / vibes entries with descriptive `licensed-by:` hints get resolved here. A judge whose hint cannot resolve cleanly against the locked graph deletes the entry as unanchorable.
+- **Locked-rubric + arbiter discipline.** Every judge dispatch carries `design/shoot-v2/r2-judge-tuning/B-locked-rubric.md` (gates G1–G5 as taste-questions) and `design/shoot-v2/r2-judge-tuning/C-arbiter-protocol.md` (T1, T4 only). The §Form re-test before every KEEP / DELETE / REVISE verdict is the operationalisation of G1.
+- **Position-gate (G5) on adds.** Every add carries a position-category note in its decision-shard justification (approach-zone / peak / trailing-edge / post-peak / quiet-beat / denouement). At the final 5-10% of the stream, if any other touched entry at the same anchor closes in archival/accounting/filing register, at least one entry at that anchor must hold the prior peak's consequence live.
+
+### R2 judges (four in the parallel block)
+
+**R2.1 narrator-interest (POV impersonator, judge mode)** — POV stack + behavior cards + nine R1 facet files + cite-index + `rubric-narrator-interest.md`. Override impersonator: facet-judge mode. Decide per existing NI entry: KEEP / DELETE-<reason>. Adds: tens=2/3 anchors with memory/feeling but no NI, or lonely-entry adjacency where NI would license co-location. Add-cap 5. Out: mutated `interest-narrator.md` + `_inflight-r2/proto-lines-narrator.md` + decision-shard `staff/interest-narrator/r2-decision-shard.md`.
+
+**R2.2 memory (POV impersonator, fresh fork)** — POV stack + nine R1 facet files + cite-index + warehouse cond-* cards (monuments) + `rubric-memory.md`. Decide per existing memory: KEEP (monument-grade callback, NI-spine co-cited, target reference resolvable) / DELETE (functional callback, NI-spine missing without defense, unresolvable target reference). Adds: tens-transitions and tens=3 peaks without memory; NI-present + memory-absent. Hard fences: no Earth-Bet proper nouns. Add-cap 5. Out: mutated `memory.md` + `_inflight-r2/proto-lines-mem.md` + decision-shard `staff/memory/r2-decision-shard.md`.
+
+**R2.3 feeling (per-character impersonators ×N, judge mode)** — for each `cast:` slug, one impersonator dispatch in the same parallel block (POV and non-POV both eligible). Character stack + nine R1 facet files + cite-index + `rubric-feeling.md`. Decide per existing feeling entry for that character: KEEP (somatic-tell card-matched, multi-justification ≥3 of 5, scene cap ≤1) / DELETE (duplicates POV NI register, forbidden vocabulary, multi-justification fail, cap breach). Adds: memory or NI co-cite where somatic register would land. Add-cap 5 per character. Out: mutated `feeling-<slug>.md` slice + `_inflight-r2/proto-lines-feel-<slug>.md` + decision-shard `staff/feeling/r2-decision-shard-<slug>.md`.
+
+**R2.4 metaphor (editor, judge mode)** — nine R1 facet files + cite-index + `rubric-metaphor.md`. Decide per existing metaphor: KEEP (anchor resolves post-cascade, tens-discipline holds, register is callback or dark-humor) / DELETE (anchor unresolvable, AP3 anti-duplication, AP7 default-refuse at tens ≠ 3). Resolve any provisional `licensed-by:` hints from R1 — KEEP-with-anchor-rewrite if it resolves, DELETE-unanchorable otherwise. Adds: ≥2 supporting layers cleanly clear; refuse-by-default. Add-cap 3. Out: mutated `metaphor.md` + `_inflight-r2/proto-lines-meta.md` + decision-shard `staff/metaphor/r2-decision-shard.md`.
+
+Vibes is not re-judged in R2; the showrunner-authored R1 vibes facet stands as-is unless the audit flags it. (R2 vibes judging is a future extension.)
+
+---
+
+## Phase 4 — FANIN: decision-log consolidate + merge + cite-index
+
+### 4a. Decision-log consolidation
+
+Concatenate the four layer shards (R2.1 NI, R2.2 memory, R2.3 feeling — all per-character shards merged in `cast:` order, R2.4 metaphor) into `active-project/theater/facets/.r2-decisions.md` under one `## <facet-slug>` heading per shard. Sum the per-shard `f-r2-counts:` into a single top-of-file frontmatter block per `schemas/audit-report.schema.md` § Consolidated file:
+
+```yaml
+---
+report: r2-decisions-consolidated
+episode: <slug>
+date: <ISO date>
+shards: [<list of source shard paths>]
+f-r2-counts: {f-r2-1: <sum>, f-r2-2: <sum>, f-r2-3: <sum>, f-r2-4: <sum>}
+discipline-fails: <count>
+---
+```
+
+The consolidated frontmatter is what `staff/orchestrator-critic/card.md` Phase 6 verdict reads (A2 F7 emission contract; `f-r2-1 > 0` is HARD trips F7-r2; `f-r2-2 + f-r2-3 + f-r2-4 > 2` is SIGNAL B7).
+
+### 4b. Arbiter glue (T1 / T4 over shards)
+
+Main session is the arbiter (per `design/shoot-v2/r2-judge-tuning/C-arbiter-protocol.md`). Read each shard end-to-end and run the two retained triggers:
+
+- **T1 — Rubric-label-heavy, entry-specific-light.** Verdict justification is primarily rubric citations without naming concrete entry content. Intervention: re-dispatch the layer's author with — "What specifically in this entry produced that verdict? Quote the phrase." Fresh fork; rewrites the verdict's justification only.
+- **T4 — Niche-driven add justification.** Add-justification works backward from "the graph reveals a niche" rather than forward from "the at-rest reading wants this entry." Intervention: re-dispatch with — "Set aside the cite-index. Read the proto-line. Does it want this entry?"
+
+T2 / T3 / T5 / T6 are deferred until B2a evidence supports them. **Bound:** ≤2 intervention rounds per verdict. After two interventions without a non-mechanical justification, log as **DISCIPLINE-FAIL** in the shard and surface in Phase 6. **No interventions on hard-fence violations.** Append per-shard arbiter trace inline beneath the affected verdict.
+
+### 4c. Merge + cite-index rebuild
+
+```bash
+python3 active-project/staff/cite-index/build_cite_index.py <episode-slug>
+```
+
+The tool reads `_inflight-r2/` instead of `_inflight/` on the second invocation. (Implementation: the tool reads any `_inflight*/proto-lines-*.md` files present; both directories are consumed if both exist. After Phase 4 the `_inflight/` directory may be pruned; `_inflight-r2/` is the live working set.)
+
+Body-integrity, citation union, slice consolidation, stale-citation check, cite-index rebuild — same five sub-phases as Phase 2. The R2 facet files are already mutated in place by the R2 judges; this run merges their proto-lines copies into the canonical and refreshes the cite-index against R2's KEEP / DELETE / ADD outcome.
+
+Set status `faceted-r1` → `faceted-r2` in showrunner memory.
+
+---
+
+## Phase 5 — AUDIT: single auditor dispatch
+
+Dispatch **auditor** (fork) with the full graph:
+
+**Read inputs:**
+- Proto-lines: `active-project/theater/proto-lines/<slug>.md` (canonical, post-R2).
+- All nine facet files at `active-project/theater/facets/` (`tensometer`, `location-state`, `interest-narrator`, `sensory`, `state-updates`, `memory`, `feeling`, `metaphor`, `vibes`).
+- Cite-index: `_cite-index.md` (post-R2).
+- R2 decision-log: `.r2-decisions.md`.
+- All active warehouse cards (`active-project/warehouse/*.card.md`) — for constraint checks against cond-* and loc-* cards.
+- Series + season plans (showrunner memory) — for series-law constraint checks.
+- Schemas: `facet.schema.md`, `audit-report.schema.md`.
+
+**Forbid loading:** behavior cards, vibes-as-bias, audience personas, source prose. The auditor reads the graph mechanically against constraints, not aesthetically.
+
+**Mode: flag-only.** Until the auditor itself is tuned for delete-authority, findings are routed back to facet authors as flags. Once tuned (separate work), HARD findings will be executed as deletes (with citation cascade).
+
+### Audit classes (eleven)
+
+1. **STRUCTURAL** — schema/format/integrity (headers, line shape, ID monotonicity, anchor resolution, bidirectional citation, proto-body integrity).
+2. **FREQUENCY-BAND** — per-rubric quantitative gates (tens 60-75/20-30/5-10; sensory 3-6%; memory 5-12%; feeling 2-5%/char; metaphor 0-3%; NI 15-25%).
+3. **METADATA-INCONSISTENCY** — file headers / round-notes / r1_to_r2 summary lines that contradict actual content.
+4. **CURVE-SHAPE** — tens-rubric § "Curve-shape rubric (episode-level)": scene-level peaks; rise-to-peak adjacency; release; no flatlining 30+; episode-level act structure; climax beat exists and is dense.
+5. **CONTRADICTION** — two facet entries set incompatible state on the same anchor; both flagged.
+6. **DEDUP** — cross-facet-same-anchor / within-facet-different-anchor / within-facet-same-anchor.
+7. **SUPERFLUOUS** — lonely entries that don't survive rubric scrutiny. Convention: tens rating=1 and off-anchor vibes are never superfluous.
+8. **CONSTRAINT** — cross-facet contract violations: memory without NI-spine; metaphor without resolvable `licensed-by:` anchor; feeling duplicating POV NI; vibes with unresolvable or forward-citing `licensed-by:`; state-updates `<old>` contradicting prior state; series-law (Earth-Bet hard-fence proper-noun scan: Brockton Bay, Skitter, Lung, Khepri, Bakuda, PRT, etc.); POV-perceptual access on NI.
+9. **AP-SCAN** — per-rubric anti-pattern mechanical scan (tens AP1-3, memory AP-functional-callback, feeling AP-named-feeling-vocab, metaphor AP3 / AP7 / AP12, vibes AP-multi-source / AP8 sentence-parsability, etc.).
+10. **TASTE-FLAG** — audience-attack-anticipation candidates: atmosphere-thin / momentum-stall / voice-fidelity. Signal-only; feeds bidirectional tuning loop.
+11. **PILE-UP REVIEW** — proto-lines with >4 co-located facets; verdict per pile-up: warranted | over-decoration.
+
+### Audit output
+
+Write to `active-project/staff/auditor/facets-final-audit.md` per `schemas/audit-report.schema.md`:
+
+```
+audit: facets-final-r<N>
+episode: <slug>
+date: <YYYY-MM-DD>
+mode: flag-only
+status: <CLEAN | FINDINGS-PRESENT>
+totals: <count> findings across <count> facets
+
+---
+
+## STRUCTURAL findings (<count>)
+- [facet:id] — <kind> — <description>.
+
+## FREQUENCY-BAND findings (<count>)
+- <facet>: actual <n%>; band <range>%; <within | breach-low | breach-high>.
+
+## METADATA-INCONSISTENCY findings (<count>)
+- <file>: <header-claim> contradicts <file-content-fact>.
+
+## CURVE-SHAPE verdict
+- Episode-level: <SHAPE-OK | SHAPE-FAIL with named failure mode>.
+- Per-scene: scene-1 <peak-present | no-peak>, ...
+- Adjacency: <count> 1→3 jumps; <count> 3→3 sequences.
+- Flatlining: <count> stretches of 30+ contiguous beats.
+
+## CONTRADICTION findings (<count>)
+- [facet:id] @<proto> — paired with [facet:id] @<proto>.
+
+## DEDUP findings (<count>)
+- [facet:id] @<proto> — duplicates [facet:id]; type: <kind>.
+
+## SUPERFLUOUS findings (<count>)
+- [facet:id] @<proto> — lonely; rubric scrutiny: <pass | fail with rationale>.
+
+## CONSTRAINT findings (<count>)
+- [facet:id] @<proto> — <constraint name> — <violation>.
+
+## AP-SCAN findings (<count>)
+- [facet:id] @<proto> — AP<N> <name> — candidate violation.
+
+## TASTE-FLAG findings (<count>)
+- [facet:id] @<proto> — <atmosphere-thin | momentum-stall | voice-fidelity> — <rationale>.
+
+## PILE-UP REVIEW (<count>)
+- @<proto> (<n> facets) — verdict: <warranted | over-decoration> — <rationale>.
+
+---
+
+## Audit summary
+- Total entries reviewed: <count>
+- HARD classes: STRUCTURAL <n>, CONTRADICTION <n>, DEDUP <n>, SUPERFLUOUS <n>, CONSTRAINT <n>
+- SIGNAL classes: FREQUENCY-BAND, METADATA-INCONSISTENCY, AP-SCAN, TASTE-FLAG, PILE-UP REVIEW
+- CURVE-SHAPE: <verdict>
+
+## Routing
+For each finding, name the facet author. Flag-only: no executes.
+```
+
+**Auditor return to orchestrator:** path to report; finding counts per class; one-line headline (CLEAN | FINDINGS-PRESENT with count).
+
+---
+
+## Phase 6 — Persist + orchestrator-critic verdict
+
+### 6a. Persist
+
+1. Confirm `facets-final-audit.md` written.
+2. Update `active-project/staff/showrunner/memory.md`:
+   - Status: `faceted-r2` → `audited-r1`.
+   - `audit_path: active-project/staff/auditor/facets-final-audit.md`.
+   - `audit_complete: true`.
+   - `audit_findings: <count>` if non-zero.
+   - `facets_path: active-project/theater/facets/`.
+   - `round_1_complete: true`, `round_2_complete: true`.
+
+`_inflight/` and `_inflight-r2/` may be retained for forensic review or pruned. The canonical proto-lines + facet files + `_cite-index.md` are the source of truth.
+
+### 6b. Master summary
 
 ```
 ========================================================
-=== /and-facets MASTER CHAIN COMPLETE: <episode-slug> ===
+=== /and-facets COMPLETE: <episode-slug> ===
 ========================================================
 
-Phase 1 — Round 1 (Step A):
-  9 facet files authored
+Phase 1 — R1 fanout:
+  9 facet files authored (8 in parallel + tens upstream)
   <count> total entries; <count>/<count> protolines decorated
-  Process gaps fixed: <list>
 
-Phase 2 — Round 2 (Step D):
-  4 midband facets judged
+Phase 2 — R1 fanin (merge):
+  <count> _inflight/ copies merged; canonical proto-lines written
+  Slices consolidated: feeling (<count> slices), state-updates (<count> slices + env)
+  Stale-cite check: <CLEAN | <n> errors>
+  Cite-index built
+
+Phase 3 — R2 fanout (judge):
+  4 midband facets judged in parallel
   R1 → R2 deltas:
-    narrator-interest:    K=<n> D=<n> A=<n>
-    memory:               K=<n> D=<n> A=<n>
-    feeling:              K=<n> D=<n> A=<n>
-    metaphor:             K=<n> D=<n> A=<n>
-  Citation accrual: <count> → <count> protolines decorated.
+    narrator-interest:    K=<n> D=<n> A=<n>  (cap-refusals: <n>)
+    memory:               K=<n> D=<n> A=<n>  (cap-refusals: <n>)
+    feeling:              K=<n> D=<n> A=<n>  (per-character: <slug>=K<n>/D<n>/A<n>, ...)
+    metaphor:             K=<n> D=<n> A=<n>  (cap-refusals: <n>)
 
-Phase 3 — Final audit (Step G):
+Phase 4 — R2 fanin (consolidate + merge):
+  Decision-log: .r2-decisions.md (f-r2-counts: F1=<n> F2=<n> F3=<n> F4=<n>)
+  Arbiter interventions: <count>; discipline-fails: <count>
+  Citation accrual: R1 <count> → R2 <count>
+  Cite-index rebuilt
+
+Phase 5 — Audit:
   Mode: flag-only
-  Findings:
-    HARD (STRUCTURAL/CONTRADICTION/DEDUP/SUPERFLUOUS/CONSTRAINT): <count>
-    SIGNAL (FREQUENCY-BAND/METADATA/CURVE-SHAPE/AP-SCAN/TASTE-FLAG/PILE-UP): <count>
-  Total: <count> findings
+  HARD: STRUCTURAL=<n> CONTRADICTION=<n> DEDUP=<n> SUPERFLUOUS=<n> CONSTRAINT=<n>
+  SIGNAL: FREQ-BAND=<n> META=<n> AP-SCAN=<n> TASTE-FLAG=<n> PILE-UP=<warranted>/<over>
+  CURVE-SHAPE: <verdict>
   Report: active-project/staff/auditor/facets-final-audit.md
-
-R3 (relaxation pass) skipped per default. Fire /and-facets-r3 explicitly
-if R2's diff is non-trivial and Step I oscillation measurement is wanted.
 
 Status: <slug> audited-r1
 ```
 
-### 4b. Orchestrator-critic verdict (mandatory)
+### 6c. Orchestrator-critic verdict (mandatory)
 
-The master then **MUST** produce a verdict from the `and-facets-orchestrator-critic` (`staff/audience/and-facets-orchestrator-critic/card.md`). This is the standard /and-facets must satisfy to be considered a success.
-
-The critic evaluates 7 acceptance criteria (read its card for the full list — synopsis: 9 facet files exist; 0 HARD findings post-final-audit; per-facet pass rate ≥75% clean; bidirectional loop convergence; showrunner memory current; process gaps captured; wall-clock budget stated and tracked).
-
-**Verdict format (mandatory output, appended to the master summary):**
+Read `staff/audience/and-facets-orchestrator-critic/card.md`. The critic evaluates the run's 7 acceptance criteria (synopsis: 9 facet files exist; 0 HARD findings post-audit; per-facet pass rate ≥75% clean; bidirectional loop convergence; showrunner memory current; process gaps captured; wall-clock budget stated). Produce verdict appended to the master summary:
 
 ```
 /and-facets orchestrator-critic verdict — <episode-slug>:
   Result: <SUCCESS | SHIPPABLE-WITH-CAVEATS | NOT-SUCCESSFUL>
   Criteria met: <count> / 7
   Cap-refusals: <count> (<%> of seams)
-  HARD findings post-final-audit: <count>
+  HARD findings post-audit: <count>
   Bidirectional loop: <healthy | diverged | not-validated>
   Wall-clock: <stated budget | overrun>
   Caveats (if any): <list>
   Recommendation: <ship | iterate | escalate>
 ```
 
-**Decision rule:**
-- **SUCCESS** — all 7 criteria met. /and-facets shipped cleanly; downstream (stitcher / and-wrap) may proceed.
-- **SHIPPABLE-WITH-CAVEATS** — exactly 1 criterion missed; caveat named explicitly; missed criterion queued for next iteration.
-- **NOT-SUCCESSFUL** — 2 or more criteria missed; remediate before claiming completion. Do not flip status to `audited-r1` if the run is NOT-SUCCESSFUL.
+**Decision rule:** SUCCESS (all 7 met) → downstream may proceed. SHIPPABLE-WITH-CAVEATS (exactly 1 missed) → caveat named; missed criterion queued. NOT-SUCCESSFUL (2+ missed) → remediate; do not flip status to `audited-r1`.
 
 The critic does NOT mutate facets or cancel the run. It produces the standard; orchestrator + user respond.
 
-Optional re-fire after any remediation pass. The trajectory across re-fires (criteria-met-count over time) is itself signal: climbing = good iteration; flat or declining = pipeline going backward.
-
 ---
 
-## Skipping R3 — what to do when audit findings warrant another judge round
+## Convergence and refusal handling
 
-If Phase 3 surfaces FINDINGS-PRESENT and the findings include rubric-violations that are likely to be addressed by another midband author judge pass (e.g., constraint violations on memory or feeling), the recommended path is **NOT** to fire R3. R3 is an unconditioned relaxation pass; it cannot target specific findings.
-
-Instead, fire **targeted remediation dispatches** against the specific findings — one dispatch per routed author, with the audit report's specific findings as the brief. This is the "tuning loop" entry point. The fixer agent or the original facet author handles each finding per its routing.
-
-Once remediations land, re-run `/and-facets-audit` to verify the findings cleared.
+- **R1 is single-pass per author.** No retry loop. Faults discovered post-hoc surface in R2 or audit.
+- **R2 is single-pass per judge.** No mid-layer rebuild (judges run in parallel, blind to each other's mutations). The post-R2 cite-index reflects the union; cross-judge interaction effects (e.g., R2.2 deleting memory:N while R2.4 metaphor keeps a `licensed-by: mem:N` reference) surface in Phase 5 as CONSTRAINT findings.
+- **Merge-tool aborts (body-integrity / stale-citation) are build defects.** Re-dispatch the responsible author with a clarifying brief; re-run the tool. Subsequent phases cannot proceed on a non-clean merge.
+- **Soft refusals** (rubric gap, structural fault, blocking input missing) log under `active-project/staff/<author>/` and the orchestrator continues. The summary lists refusals; the episode is not blocked.
 
 ---
 
 ## Notes
 
-- **Sub-commands remain callable.** `/and-facets-r1`, `/and-facets-r2`, `/and-facets-r3`, `/and-facets-audit` each remain individually invocable for partial runs, resume after a failure, or re-running a specific phase.
-- **The master's source-of-truth is the sub-commands.** When you read `.claude/commands/and-facets-r{1,2}.md` and `.claude/commands/and-facets-audit.md` for dispatch rules, those files are authoritative. The master is a sequencer plus aggregated reporting; do not duplicate the sub-commands' dispatch logic into this file.
-- **Status flips happen in the sub-commands, not in the master.** Each sub-command updates `active-project/staff/showrunner/memory.md` at its own Phase 6. The master's Phase 0 inspects the current status to decide where to start; the master's Phase 4 inspects the final status to print the summary.
-- **R3 default-skip is a Step I production-deployment decision** based on the s01e01 convergence signal (R2 produced a fixed point; R3 zero-change rate 100%). Revisit this default if a future episode shows R2 producing oscillation or large diffs.
+- **Tens is upstream-only.** Per URI-026 (2026-05-10), `/and-season` Phase 4 Step 1.5 authors tens as the bone-gate; `/and-season` Phase 7 Step 4 finalizes per-episode tens files. /and-facets Phase 0 stages the file as `tensometer.md`. There is no in-pipeline tens authoring.
+- **R3 retired.** The relaxation pass was default-skipped in the prior chain (s01e01 produced a fixed point under R2). The fanout-fanin-fanout-fanin-audit shape replaces the four sub-commands; R3's behavior — "repeat the judge round" — is recoverable as a re-run of the command with `faceted-r2` already on disk, but is not the default flow.
+- **Audience interest-flags are skipped.** When tuned, it joins the R1 parallel block (one dispatch per persona).
+- **Vibe-cloud write-back is deferred.** Post-author propagation of vibe deltas to actor/loc/studio files happens in and-wrap or a follow-on showrunner dispatch.
+- **Cross-facet deletion authority** belongs to the audit only. Once auditor is tuned for delete-authority, HARD findings execute as deletes with cascade. Until then, audit is flag-only and remediation routes back to authors as a separate work cycle (re-run /and-facets after fixes land, or fire targeted author dispatches).
+- **Shared reviewer assets** (audience persona `Threshold Discipline` + `Season-Scope Adversarial` body sections; auditor class library — `CURVE-SHAPE` / `AP-SCAN` / `FREQUENCY-BAND` definitions; tens rubric at `design/shoot-v2/rubric-tensometer.md`) are authored once and consumed from both `/and-season` and `/and-facets`. Patterns the audience flags at `/and-season` bone-gate graduate into AP-SCAN entries via the shared auditor's TASTE-FLAG → AP-SCAN promotion path.

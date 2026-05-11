@@ -1,30 +1,65 @@
 #!/usr/bin/env python3
 """
-Cite-index builder for Step B of the and-facets pipeline.
+Phase-1 → Phase-2 merge + cite-index builder for /and-facets.
+
+Runs between Round 1 (parallel blind authoring) and Round 2 (parallel
+graph-aware judging). Each R1 author writes its own facet file and its own
+annotated copy of the proto-lines file under `_inflight/`. This tool folds
+those copies back into the canonical proto-lines file and consolidates any
+per-character slice facet files, then builds the cross-cutting cite-index.
+
+Pipeline:
+  1. Body-integrity check.   Every _inflight/proto-lines-<facet>.md copy
+                             must have SVO bodies identical to the base
+                             proto-lines file (authors append citations
+                             only; bones are immutable).
+  2. Citation union.         Per proto-line ID, union the bracketed
+                             [<prefix>:<id>] tokens across the base and
+                             every author copy. Deterministic order
+                             (prefix alphabetical, id ascending). Write
+                             back to the canonical proto-lines/<slug>.md.
+  3. Slice consolidation.    Concatenate feeling-<slug>.md slices into
+                             feeling.md; concatenate state-updates-<slug>.md
+                             slices and state-updates-env.md (if present)
+                             into state-updates.md. IDs renumbered
+                             monotonically; per-character source preserved
+                             in an inline `# source: <slug>` comment.
+  4. Stale-citation check.   Every [<prefix>:<id>] on a proto-line must
+                             resolve to an entry in the corresponding
+                             facet file post-consolidation. Unresolved
+                             citations are a build defect; abort.
+  5. Cite-index build.       Same as legacy build_cite_index.py — pure
+                             derivation off the canonical merged state.
 
 Reads:
-  - active-project/theater/proto-lines/<slug>.md
-  - active-project/theater/facets/*.md
+  - active-project/theater/proto-lines/<slug>.md           (base; upstream tens cites)
+  - active-project/theater/facets/_inflight/proto-lines-*.md (per-author copies)
+  - active-project/theater/facets/<facet>.md               (R1-authored)
+  - active-project/theater/facets/{feeling,state-updates}-<slug>.md (slices)
 
 Writes:
+  - active-project/theater/proto-lines/<slug>.md           (canonical merge)
+  - active-project/theater/facets/feeling.md               (if slices present)
+  - active-project/theater/facets/state-updates.md         (if slices present)
   - active-project/theater/facets/_cite-index.md
-
-Output is a derivation — pure transformation of the existing files. No
-judgment, no rewriting. Run after every facet round to refresh.
 
 Usage:
   python3 build_cite_index.py <episode-slug>
   python3 build_cite_index.py s01e01
+
+Flags:
+  --skip-merge       Run cite-index only (legacy mode; no _inflight read).
+                     Used by R2/R3 which mutate the canonical state directly.
 """
 
 from __future__ import annotations
 
+import argparse
 import re
 import sys
 from collections import defaultdict
 from datetime import date
 from pathlib import Path
-from typing import Iterable
 
 # --- File-prefix mapping ---------------------------------------------------
 
@@ -41,6 +76,15 @@ FACET_FILES: dict[str, str] = {
     "vibes.md": "vibes",
 }
 
+# Facets that are written as per-character slices in R1 parallel mode.
+# slice-file pattern: <slice-base>-<character-slug>.md
+# Consolidated into the canonical single file (no schema-reader changes downstream).
+SLICED_FACETS: dict[str, str] = {
+    # consolidated-filename -> slice-prefix
+    "feeling.md": "feeling",
+    "state-updates.md": "state-updates",
+}
+
 # Per-facet entry-line regex.
 # Form: "<entry-id> @<proto-id> <rest>" or
 #       "<entry-id> [@<proto-id>] <rest>" (vibes off-anchor uses bracket form)
@@ -50,21 +94,87 @@ ENTRY_RE = re.compile(r"^(\d+)\s+\[?@(\d+)\]?\s+(.*)$")
 ENTRY_OFF_RE = re.compile(r"^(\d+)\s+(?!\[?@\d)(.*)$")
 
 # Protoline regex: "<id> SUBJECT VERB OBJECT [optional citations]".
-# Captures: id, body (with brackets if present).
 PROTO_RE = re.compile(r"^(\d+)\s+(.*)$")
 
 # Citation-token regex (inside [...] on protoline or licensed-by clauses).
 CITE_TOKEN_RE = re.compile(r"([a-z][a-z0-9-]*):(\d+)")
 
 
-# --- Parsing ---------------------------------------------------------------
+# --- Proto-line parsing ----------------------------------------------------
+
+
+def parse_proto_file(path: Path) -> tuple[list[str], dict[int, str], dict[int, list[tuple[str, int]]], dict[int, int]]:
+    """Return (header_lines, bodies_by_id, cites_by_id, line_no_by_id).
+
+    header_lines preserves everything before the first numbered SVO line so
+    the canonical writer can pass it through unchanged.
+    """
+    header: list[str] = []
+    bodies: dict[int, str] = {}
+    cites: dict[int, list[tuple[str, int]]] = defaultdict(list)
+    line_no: dict[int, int] = {}
+    in_body = False
+    for idx, raw in enumerate(path.read_text().splitlines()):
+        line = raw.rstrip()
+        stripped = line.strip()
+        if not in_body:
+            if PROTO_RE.match(stripped):
+                in_body = True
+            else:
+                header.append(line)
+                continue
+        m = PROTO_RE.match(stripped)
+        if not m:
+            # Blank lines and inline comments inside the body are passed
+            # through by storing them under a synthetic negative key so
+            # ordering is preserved. (Skipped here; canonical writer
+            # rebuilds body solely from sorted bodies dict.)
+            continue
+        pid = int(m.group(1))
+        body = m.group(2).strip()
+        if "[" in body and body.endswith("]"):
+            sentence, _, bracketed = body.rpartition("[")
+            sentence = sentence.strip()
+            bracketed = bracketed[:-1]
+            for prefix, eid in CITE_TOKEN_RE.findall(bracketed):
+                cites[pid].append((prefix, int(eid)))
+        else:
+            sentence = body
+        bodies[pid] = sentence
+        line_no[pid] = idx
+    return header, bodies, dict(cites), line_no
+
+
+def render_proto_file(header: list[str], bodies: dict[int, str], cites: dict[int, list[tuple[str, int]]]) -> str:
+    """Render canonical proto-line file. Citations sorted deterministically."""
+    out: list[str] = list(header)
+    # Ensure exactly one blank line between header and body.
+    while out and out[-1].strip() == "":
+        out.pop()
+    out.append("")
+    for pid in sorted(bodies):
+        body = bodies[pid]
+        line_cites = cites.get(pid, [])
+        if line_cites:
+            seen = set()
+            uniq = []
+            for tok in sorted(line_cites, key=lambda x: (x[0], x[1])):
+                if tok in seen:
+                    continue
+                seen.add(tok)
+                uniq.append(tok)
+            cite_str = " ".join(f"[{p}:{i}]" for (p, i) in uniq)
+            out.append(f"{pid} {body} {cite_str}")
+        else:
+            out.append(f"{pid} {body}")
+    return "\n".join(out) + "\n"
+
+
+# --- Facet parsing ---------------------------------------------------------
 
 
 def parse_facet_file(path: Path, prefix: str) -> list[dict]:
-    """Returns a list of entry dicts for one facet file.
-
-    Each entry: {id, anchor (proto-id or None), rest, licenses, rating (tens only)}
-    """
+    """Return list of entry dicts for one facet file."""
     entries: list[dict] = []
     if not path.exists():
         return entries
@@ -73,7 +183,7 @@ def parse_facet_file(path: Path, prefix: str) -> list[dict]:
         if not line or line.startswith("#") or line.startswith("---"):
             continue
         if ":" in line and line.split()[0].rstrip(":") in (
-            "facet", "episode", "author", "authors", "round",
+            "facet", "episode", "author", "authors", "round", "source",
         ):
             continue
         m = ENTRY_RE.match(line)
@@ -105,78 +215,161 @@ def parse_facet_file(path: Path, prefix: str) -> list[dict]:
 
 
 def _extract_licenses(rest: str) -> list[tuple[str, int]]:
-    """Pull citation tokens from a 'licensed-by:' clause if present.
-
-    Used by metaphor and vibes facets. Returns list of (prefix, id).
-    """
+    """Pull citation tokens from a 'licensed-by:' clause if present."""
     if "licensed-by:" not in rest:
         return []
     after = rest.split("licensed-by:", 1)[1]
     return [(p, int(i)) for p, i in CITE_TOKEN_RE.findall(after)]
 
 
-def parse_protolines(path: Path) -> tuple[dict[int, str], dict[int, list[tuple[str, int]]]]:
-    """Returns (proto_body_by_id, citations_by_id).
+# --- Phase 1: Body-integrity check ----------------------------------------
 
-    proto_body_by_id: protoline-id -> SVO sentence (without brackets).
-    citations_by_id: protoline-id -> [(facet-prefix, entry-id), ...]
+
+def body_integrity_check(base_bodies: dict[int, str], inflight_files: list[Path]) -> list[str]:
+    """Verify all _inflight/proto-lines-*.md copies have bodies matching base.
+
+    Authors are forbidden from mutating SVO bones; only the trailing [...]
+    citation list may differ. Any body divergence is a build defect.
     """
-    bodies: dict[int, str] = {}
-    cites: dict[int, list[tuple[str, int]]] = defaultdict(list)
-    in_body = False
-    for raw in path.read_text().splitlines():
-        line = raw.rstrip()
-        if not in_body:
-            # Skip header until first numbered line.
-            if PROTO_RE.match(line.strip()):
-                in_body = True
-            else:
+    errors: list[str] = []
+    for path in inflight_files:
+        _, bodies, _, _ = parse_proto_file(path)
+        base_ids = set(base_bodies)
+        in_ids = set(bodies)
+        for pid in sorted(base_ids - in_ids):
+            errors.append(f"{path.name}: missing proto-line @{pid}")
+        for pid in sorted(in_ids - base_ids):
+            errors.append(f"{path.name}: extra proto-line @{pid} (not in base)")
+        for pid in sorted(base_ids & in_ids):
+            if bodies[pid] != base_bodies[pid]:
+                errors.append(
+                    f"{path.name}: body mismatch @{pid}\n"
+                    f"    base:    {base_bodies[pid]}\n"
+                    f"    inflight: {bodies[pid]}"
+                )
+    return errors
+
+
+# --- Phase 2: Citation union ----------------------------------------------
+
+
+def union_citations(
+    base_cites: dict[int, list[tuple[str, int]]],
+    inflight_files: list[Path],
+) -> dict[int, list[tuple[str, int]]]:
+    """Merge citation lists across base + all _inflight copies."""
+    merged: dict[int, set[tuple[str, int]]] = defaultdict(set)
+    for pid, cites in base_cites.items():
+        merged[pid].update(cites)
+    for path in inflight_files:
+        _, _, cites, _ = parse_proto_file(path)
+        for pid, toks in cites.items():
+            merged[pid].update(toks)
+    return {pid: sorted(toks) for pid, toks in merged.items()}
+
+
+# --- Phase 3: Slice consolidation -----------------------------------------
+
+
+def consolidate_slices(facets_dir: Path) -> dict[str, tuple[Path, list[Path]]]:
+    """Concatenate per-character slice facet files into single canonical files.
+
+    Returns a map of {target_filename: (target_path, [source_slice_paths])}
+    for any consolidation that ran. IDs are renumbered monotonically across
+    slices in lexical slice order; per-slice provenance is preserved via
+    inline `# source: <slug>` comments.
+
+    Existing canonical file (e.g., state-updates-env.md authored by studio
+    as a non-slice base) is folded in first if present.
+    """
+    report: dict[str, tuple[Path, list[Path]]] = {}
+    for target_name, slice_prefix in SLICED_FACETS.items():
+        target_path = facets_dir / target_name
+        env_path = facets_dir / f"{slice_prefix}-env.md"
+        slice_paths = sorted(facets_dir.glob(f"{slice_prefix}-*.md"))
+        # Drop slice-env from per-character slice list if present; handled separately.
+        slice_paths = [p for p in slice_paths if p != env_path]
+        # Exclude the consolidated target itself from slices.
+        slice_paths = [p for p in slice_paths if p.name != target_name]
+        sources = ([env_path] if env_path.exists() else []) + slice_paths
+        if not sources:
+            continue
+        out_lines: list[str] = []
+        next_id = 1
+        # Build a remap table so we can rewrite stale-cites later if needed,
+        # though authors should cite their own entries with slice-local IDs
+        # only and the consolidation rewrites those onto a canonical run.
+        for src in sources:
+            slug = src.stem[len(slice_prefix) + 1:]  # drop "<prefix>-"
+            out_lines.append(f"# source: {slug}")
+            for raw in src.read_text().splitlines():
+                line = raw.rstrip()
+                stripped = line.strip()
+                if not stripped or stripped.startswith("#") or stripped.startswith("---"):
+                    out_lines.append(line)
+                    continue
+                m = ENTRY_RE.match(stripped)
+                if m:
+                    _, anchor, rest = m.group(1), m.group(2), m.group(3)
+                    out_lines.append(f"{next_id} @{anchor} {rest}")
+                    next_id += 1
+                    continue
+                m2 = ENTRY_OFF_RE.match(stripped)
+                if m2:
+                    _, rest = m2.group(1), m2.group(2)
+                    out_lines.append(f"{next_id} {rest}")
+                    next_id += 1
+                    continue
+                # Non-entry line — pass through.
+                out_lines.append(line)
+            out_lines.append("")
+        target_path.write_text("\n".join(out_lines).rstrip() + "\n")
+        report[target_name] = (target_path, sources)
+    return report
+
+
+# --- Phase 4: Stale-citation check ----------------------------------------
+
+
+def stale_citation_check(
+    cites_by_id: dict[int, list[tuple[str, int]]],
+    facets_dir: Path,
+) -> list[str]:
+    """Every [<prefix>:<id>] on a proto-line must resolve to an entry."""
+    errors: list[str] = []
+    entries_by_prefix: dict[str, set[int]] = {}
+    for fname, prefix in FACET_FILES.items():
+        ents = parse_facet_file(facets_dir / fname, prefix)
+        entries_by_prefix[prefix] = {e["id"] for e in ents}
+    for pid, toks in cites_by_id.items():
+        for prefix, eid in toks:
+            if prefix not in entries_by_prefix:
+                errors.append(f"@{pid}: unknown facet prefix '{prefix}:{eid}'")
                 continue
-        if not in_body:
-            continue
-        m = PROTO_RE.match(line.strip())
-        if not m:
-            continue
-        pid = int(m.group(1))
-        body = m.group(2).strip()
-        # Split off citation list.
-        if "[" in body and body.endswith("]"):
-            sentence, _, bracketed = body.rpartition("[")
-            sentence = sentence.strip()
-            bracketed = bracketed[:-1]
-            for prefix, eid in CITE_TOKEN_RE.findall(bracketed):
-                cites[pid].append((prefix, int(eid)))
-        else:
-            sentence = body
-        bodies[pid] = sentence
-    return bodies, dict(cites)
+            if eid not in entries_by_prefix[prefix]:
+                errors.append(f"@{pid}: stale citation [{prefix}:{eid}] (no such entry)")
+    return errors
 
 
-# --- Index construction ----------------------------------------------------
+# --- Phase 5: Cite-index build --------------------------------------------
 
 
-def build_index(episode: str, facets_dir: Path, protoline_path: Path) -> str:
-    proto_bodies, proto_cites = parse_protolines(protoline_path)
-
-    # entries_by_facet: prefix -> list of entry dicts
+def build_index(
+    episode: str,
+    facets_dir: Path,
+    proto_bodies: dict[int, str],
+    proto_cites: dict[int, list[tuple[str, int]]],
+    protoline_path: Path,
+) -> str:
     entries_by_facet: dict[str, list[dict]] = {}
     for fname, prefix in FACET_FILES.items():
         entries_by_facet[prefix] = parse_facet_file(facets_dir / fname, prefix)
 
-    # Build (prefix, id) -> entry index for cross-lookup
-    entry_index: dict[tuple[str, int], dict] = {}
-    for prefix, ents in entries_by_facet.items():
-        for e in ents:
-            entry_index[(prefix, e["id"])] = e
-
-    # For each entry: compute back_cited + co_located
-    # back_cited: True iff (prefix, id) appears in cites[anchor]
-    # co_located: list of (prefix, id) sharing the entry's anchor protoline (excluding self)
     for prefix, ents in entries_by_facet.items():
         for e in ents:
             anchor = e["anchor"]
             if anchor is None:
-                e["back_cited"] = None  # off-anchor — N/A
+                e["back_cited"] = None
                 e["co_located"] = []
                 continue
             line_cites = proto_cites.get(anchor, [])
@@ -186,15 +379,11 @@ def build_index(episode: str, facets_dir: Path, protoline_path: Path) -> str:
                 if not (p == prefix and i == e["id"])
             ]
 
-    # Stats
     total_entries = sum(len(v) for v in entries_by_facet.values())
     decorated_protos = sorted(proto_cites.keys())
     total_decorated = len(decorated_protos)
     total_bones = len(proto_bodies)
 
-    # Lonely entries: zero co-location AND zero inbound license references.
-    # Special case: tens entries with rating=1 are never back-cited by convention
-    # (saves write volume). They are not deletion candidates — exclude from lonelies.
     inbound_licenses: dict[tuple[str, int], list[tuple[str, int]]] = defaultdict(list)
     for prefix, ents in entries_by_facet.items():
         for e in ents:
@@ -208,23 +397,20 @@ def build_index(episode: str, facets_dir: Path, protoline_path: Path) -> str:
             if inbound_licenses.get((prefix, e["id"])):
                 continue
             if e["anchor"] is None:
-                continue  # off-anchor vibes are intentionally context-free
+                continue
             if prefix == "tens" and e.get("rating") == 1:
-                continue  # 1-rated tens don't back-cite by convention
+                continue
             lonelies.append((prefix, e["id"], e["anchor"]))
 
-    # Pile-ups: protolines with > 4 distinct facet citations
     pileups = sorted(
         ((pid, cites_list) for pid, cites_list in proto_cites.items() if len(cites_list) > 4),
         key=lambda x: -len(x[1]),
     )
 
-    # Density distribution
-    density_buckets = defaultdict(int)
+    density_buckets: dict[int, int] = defaultdict(int)
     for pid, cites_list in proto_cites.items():
         density_buckets[len(cites_list)] += 1
 
-    # --- Render ------------------------------------------------------------
     out: list[str] = []
     out.append(f"# Cite-Index — {episode}")
     out.append(f"generated: {date.today().isoformat()}")
@@ -237,7 +423,6 @@ def build_index(episode: str, facets_dir: Path, protoline_path: Path) -> str:
     )
     out.append("")
 
-    # Density
     out.append("## Density distribution (protolines by citation count)")
     out.append("")
     out.append("| cites/line | count |")
@@ -248,7 +433,6 @@ def build_index(episode: str, facets_dir: Path, protoline_path: Path) -> str:
         out.append(f"| {k}          | {density_buckets[k]} |")
     out.append("")
 
-    # Per-facet
     out.append("## Per-facet entries")
     out.append("")
     for fname, prefix in FACET_FILES.items():
@@ -263,7 +447,7 @@ def build_index(episode: str, facets_dir: Path, protoline_path: Path) -> str:
             if prefix == "tens" and e.get("rating") is not None:
                 back_field = f"r={e['rating']}"
                 if e["rating"] == 1 and not e["back_cited"]:
-                    pass  # convention: r=1 has no back-cite, don't flag
+                    pass
                 elif e["back_cited"]:
                     back_field += " back=Y"
                 else:
@@ -285,7 +469,6 @@ def build_index(episode: str, facets_dir: Path, protoline_path: Path) -> str:
             out.append("  " + " ".join(parts))
         out.append("")
 
-    # Pile-ups
     out.append("## Pile-ups (>4 facets co-located on one protoline)")
     out.append("")
     if not pileups:
@@ -299,7 +482,6 @@ def build_index(episode: str, facets_dir: Path, protoline_path: Path) -> str:
                 out.append(f"    `{body}`")
     out.append("")
 
-    # Lonely entries
     out.append("## Lonely entries (no co-location, no inbound license)")
     out.append("_Round-2 deletion candidates — but check the rubric before cutting._")
     out.append("")
@@ -311,7 +493,6 @@ def build_index(episode: str, facets_dir: Path, protoline_path: Path) -> str:
             out.append(f"- {prefix}:{eid} @{anchor}  `{body}`")
     out.append("")
 
-    # Bare protolines
     out.append("## Bare protolines (no citations accrued)")
     out.append("_Round-2 add candidates if the rubric licenses a fire here._")
     out.append("")
@@ -329,22 +510,73 @@ def build_index(episode: str, facets_dir: Path, protoline_path: Path) -> str:
 
 
 def main(argv: list[str]) -> int:
-    if len(argv) != 2:
-        print(f"usage: {argv[0]} <episode-slug>", file=sys.stderr)
-        return 2
-    episode = argv[1]
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[1])
+    parser.add_argument("episode", help="episode slug, e.g. s01e01")
+    parser.add_argument(
+        "--skip-merge",
+        action="store_true",
+        help="cite-index only; skip _inflight merge + slice consolidation",
+    )
+    args = parser.parse_args(argv[1:])
+
+    episode = args.episode
     project_root = Path("active-project")
     facets_dir = project_root / "theater" / "facets"
+    inflight_dir = facets_dir / "_inflight"
     protoline_path = project_root / "theater" / "proto-lines" / f"{episode}.md"
+
     if not facets_dir.exists():
         print(f"facets dir not found: {facets_dir}", file=sys.stderr)
         return 1
     if not protoline_path.exists():
         print(f"protoline file not found: {protoline_path}", file=sys.stderr)
         return 1
-    output = build_index(episode, facets_dir, protoline_path)
+
+    header, base_bodies, base_cites, _ = parse_proto_file(protoline_path)
+
+    if not args.skip_merge:
+        # Phase 1: body integrity — read both _inflight/ (R1) and _inflight-r2/ (R2) if present.
+        inflight_files: list[Path] = []
+        for d in sorted(facets_dir.glob("_inflight*")):
+            if d.is_dir():
+                inflight_files.extend(sorted(d.glob("proto-lines-*.md")))
+        if inflight_files:
+            body_errors = body_integrity_check(base_bodies, inflight_files)
+            if body_errors:
+                print("BODY-INTEGRITY FAIL — author copies mutated SVO bones:", file=sys.stderr)
+                for err in body_errors:
+                    print(f"  {err}", file=sys.stderr)
+                return 2
+
+        # Phase 2: citation union → canonical proto-lines
+        merged_cites = union_citations(base_cites, inflight_files) if inflight_files else base_cites
+        canonical_text = render_proto_file(header, base_bodies, merged_cites)
+        protoline_path.write_text(canonical_text)
+        print(f"merged {len(inflight_files)} author copies → {protoline_path}")
+
+        # Phase 3: slice consolidation
+        slice_report = consolidate_slices(facets_dir)
+        for target, (path, sources) in slice_report.items():
+            src_names = ", ".join(s.name for s in sources)
+            print(f"consolidated {target} from [{src_names}]")
+
+        # Refresh post-merge state for downstream checks
+        _, base_bodies, merged_cites, _ = parse_proto_file(protoline_path)
+
+        # Phase 4: stale-citation check
+        stale_errors = stale_citation_check(merged_cites, facets_dir)
+        if stale_errors:
+            print("STALE-CITATION FAIL — citations don't resolve to facet entries:", file=sys.stderr)
+            for err in stale_errors:
+                print(f"  {err}", file=sys.stderr)
+            return 3
+    else:
+        merged_cites = base_cites
+
+    # Phase 5: cite-index
+    index_text = build_index(episode, facets_dir, base_bodies, merged_cites, protoline_path)
     out_path = facets_dir / "_cite-index.md"
-    out_path.write_text(output)
+    out_path.write_text(index_text)
     print(f"wrote {out_path}")
     return 0
 
