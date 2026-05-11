@@ -4,11 +4,146 @@ audit:
   scope: season
   target: s01
   timestamp: 2026-05-11
-  auditor-fork: 2-A (constraint sweep, cycle 2)
+  auditor-fork: 2-A (constraint sweep, cycle 3 — final, 2-A re-fire)
 
 ---
 
-## Cycle 2
+## Cycle 3
+
+### Counts
+
+- Lines audited: full file scan (all non-blank, non-time-skip bones)
+- Cycle-2 faults re-checked: 15 (fault-C2-001 through fault-C2-015)
+- Cycle-2 border flags re-checked: 2 (flag-C2-001, flag-C2-002)
+- New bones audited: 5 (IDs 504–508)
+- Quick-scan for new form faults: performed across all recast lines and insertion neighborhoods
+- FAULT-FORM-PERCEPTION: 0
+- FAULT-FORM-MODIFIER: 0
+- FAULT-FORM-INTERIORITY: 0
+- FAULT-FORM-NON-ACTION-VERB: 0
+- FAULT-FORM-COPULA: 0
+- FAULT-FORM-NEGATION: 0
+- FAULT-FORM-CONJUNCTION: 0
+- FAULT-FORM-MULTI-SUBJECT: 0
+- FAULT-FORM-NO-VERB: 0
+- FAULT-FORM-COMPOUND-OBJECTS: 0
+- FAULT-TURNS-TO: 0
+- FAULT-REFERENCE-DRIFT: 0
+- FAULT-SLUG-UNRESOLVED: 0
+- FAULT-LAW-*: 0
+- FAULT-COND-*: 0
+
+### File-level verdict
+
+**PASS** — 0 findings. All 15 cycle-2 faults resolved. Both cycle-2 border flags resolved (fixer chose the actor-slug relay form for IDs 310 and 412, eliminating the event-noun question). All 5 new bones (504–508) pass the deny-list. No new form faults introduced by recasts or insertions.
+
+---
+
+### Cycle-2 fault resolution table
+
+| Fault ID | Bone ID | Cycle-2 finding | Current line | Status |
+|---|---|---|---|---|
+| fault-C2-001 | 256 | `receives` (non-action verb) | `oc-tanner-father takes the coins` | RESOLVED |
+| fault-C2-002 | 469 | `receives` (non-action verb) | `the middleman takes the sealed account` | RESOLVED |
+| fault-C2-003 | 139 | possessive modifier `oc-dock-runner's position` | `the flies relay oc-dock-runner` | RESOLVED |
+| fault-C2-004 | 143 | possessive + event-noun `oc-dock-runner's exit path` | `the flies relay oc-dock-runner` | RESOLVED |
+| fault-C2-005 | 217 | double adjective modifier `apothecary south window` | `the spiders relay the window` | RESOLVED |
+| fault-C2-006 | 280 | prepositional + possessive + compound-adj `arrives at the maester's side-alley door` | `the visitor enters the side alley` | RESOLVED |
+| fault-C2-007 | 287 | adjective modifier `upper-room register` | `the beetles relay the register` | RESOLVED |
+| fault-C2-008 | 338 | possessive + event-noun `clerk's departure path` | `the flies relay the clerk` | RESOLVED |
+| fault-C2-009 | 371 | adjective + event-noun `apothecary doorframe exchange` | `the flies relay the doorframe` | RESOLVED |
+| fault-C2-010 | 372 | possessive + event-noun `second clerk's departure path` | `the flies relay the second clerk` | RESOLVED |
+| fault-C2-011 | 461 | possessive + event-noun `messenger's arrival path` | `the flies relay the messenger` | RESOLVED |
+| fault-C2-012 | 462 | possessive + event-noun `messenger's departure path` | `the flies relay the messenger` | RESOLVED |
+| fault-C2-013 | 502 | compound adjective `labor-web pass` | `the wasps relay the pass` | RESOLVED |
+| fault-C2-014 | 490 | non-standard transitive `returns loc-flea-bottom-base` | `taylor-hebert-flea-bottom enters loc-flea-bottom-base` | RESOLVED |
+| fault-C2-015 | 488 | double adjective `apothecary south window` | `the spiders relay the window` | RESOLVED |
+
+### Cycle-2 border flag resolution table
+
+| Flag ID | Bone ID | Cycle-2 finding | Current line | Status |
+|---|---|---|---|---|
+| flag-C2-001 | 310 | nominalized event-noun `the beetles relay the ascent` | `the beetles relay oc-broken-maester` | RESOLVED — fixer chose actor-slug relay form; event-noun question is moot |
+| flag-C2-002 | 412 | nominalized event-noun `the beetles relay the return` | `the beetles relay oc-broken-maester` | RESOLVED — same; fixer chose actor-slug relay form |
+
+---
+
+### New bones audit — IDs 504–508
+
+| Bone ID | Line | Deny-list check | Result |
+|---|---|---|---|
+| 504 | `taylor-hebert-flea-bottom stills` | No modifier. No banned verb. Intransitive physical act licensed. | PASS |
+| 505 | `taylor-hebert-flea-bottom lowers the chin` | `lowers` is a physical act. `the chin` is a body part (licensed object). No modifier. | PASS |
+| 506 | `the maester laughs` | `the maester` subject: position in file is between IDs 131 and 132, well within the ≤ID 301 zone where `the maester` is licensed (policy established cycle 2 re-check). `laughs` is a physical observable act (audible, visible). No modifier. | PASS |
+| 507 | `taylor-hebert-flea-bottom faces the Red Keep` | `faces` is a licensed transitive verb. `the Red Keep` is a physical location as direct object. No prepositional padding, no adverb. | PASS |
+| 508 | `oc-tanner-elder pauses` | Actor slug as subject. Intransitive, physical observable act. No modifier. | PASS |
+
+---
+
+### Quick-scan findings — recasts and insertion neighborhoods
+
+All 15 recast lines examined directly. No new adjective modifiers, possessive modifiers, prepositional padding, or banned verbs introduced by recasts.
+
+Two pairs of now-identical bones noted (IDs 139/143 both read `the flies relay oc-dock-runner`; IDs 461/462 both read `the flies relay the messenger`). These are not form faults. Distinct relay events at sequential positions are schema-legal; the identical wording reflects two separate insect-relay beats at different moments. Pass 4 (trim) may evaluate whether both beats are necessary; form constraint audit has no basis to fault them.
+
+Deletion gaps confirmed absent: IDs 188, 192, 196, 197, 198, 268, 303, 304, 307, 308, 348, 349, 418, 419, 442, 443 — all gaps visible in the file, no renumbering performed (correct per schema).
+
+No new FAULT-FORM-* issues introduced in surrounding context of any insertion or recast.
+
+---
+
+### Constraint audit — cycle-3 additions
+
+New bones 504–508 checked against all active condition cards.
+
+- **cond-fauna-control-rules-125ac-addendum:** Bones 504–508 involve no fauna. PASS.
+- **cond-no-parahuman-infrastructure:** No PRT, Dragon, or second parahuman reference. PASS.
+- **cond-smallfolk-political-physics:** No organizing beat or legal-recourse implication in new bones. PASS.
+- **cond-feudal-hierarchy-law:** No authority encounter implied. PASS.
+- **cond-reincarnation-mechanics-125ac:** No memory-recall or return-channel implication. PASS.
+- **cond-shard-behavioral-weight:** No internal decision-making encoded at SVO level. PASS.
+- All other condition cards: no new bones touch prose register, superstition framing, or clinical-self-erasure territory at proto-line level. PASS.
+
+Constraint-card passes from cycles 1 and 2 carry forward unchanged.
+
+---
+
+### Summary table — cycle 3
+
+| Class | Count | Verdict |
+|---|---|---|
+| FAULT-FORM-PERCEPTION | 0 | PASS |
+| FAULT-FORM-MODIFIER | 0 | PASS |
+| FAULT-FORM-INTERIORITY | 0 | PASS |
+| FAULT-FORM-NON-ACTION-VERB | 0 | PASS |
+| FAULT-FORM-COPULA | 0 | PASS |
+| FAULT-FORM-NEGATION | 0 | PASS |
+| FAULT-FORM-CONJUNCTION | 0 | PASS |
+| FAULT-FORM-MULTI-SUBJECT | 0 | PASS |
+| FAULT-FORM-NO-VERB | 0 | PASS |
+| FAULT-FORM-COMPOUND-OBJECTS | 0 | PASS |
+| FAULT-TURNS-TO | 0 | PASS |
+| FAULT-REFERENCE-DRIFT | 0 | PASS |
+| FAULT-SLUG-UNRESOLVED | 0 | PASS |
+| FAULT-LAW-* | 0 | PASS |
+| FAULT-COND-* | 0 | PASS |
+| Flags (border/event-noun) | 0 | PASS |
+
+**Cycle 3 verdict: PASS — 0 faults, 0 flags.**
+
+---
+
+---
+
+## Cycle 2 [archived]
+
+audit:
+  scope: season
+  target: s01
+  timestamp: 2026-05-11
+  auditor-fork: 2-A (constraint sweep, cycle 2)
+
+---
 
 ### Counts
 
