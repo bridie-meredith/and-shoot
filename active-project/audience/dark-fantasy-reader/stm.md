@@ -95,3 +95,26 @@ Carry-forward watches (unchanged):
 - Surviving subject present in Flea Bottom and absent from the log — this must appear in prose.
 - Tanner-elder relationship must stay conditional; warmth-drift is a flag.
 - Demonstration must be written in Khepri-register, not triumph-register (unchanged; execution risk persists).
+
+## Series Plan Review — 2026-05-10
+
+Reviewed: Four-season chunk list + series drama statement. Watch: each season's grimdark register structurally earned by the chunk, not asserted; s04 chunk specifically must register as aftermath-with-cost not aftermath-as-relief.
+
+Verdict: ACCEPT
+
+Reason: All four chunks earn their grimdark register at the structural level, not through assertion.
+
+S01: the season does not end on a win. The foreclosed condition (working unnamed) was already gone before Taylor understood she was building anything. The threat is institutional and invisible; the season closes on a fact, not a confrontation. That is the correct shape — dread through what has already happened without a scene for it.
+
+S02: the Faustian crossing is the season's weight. The maester names it and is not heard. What cannot survive is the pre-threshold Taylor — not an external enemy, not a plan, but a version of herself. The cost is identity, not capability. The chunk holds the Faustian register at plan level.
+
+S03: the second clause of the demonstration outcome is the load-bearing one — "terminates also each faction's capacity to model her as a threat with a knowable ceiling." This is not triumph; it is the world learning that the ceiling does not exist. The Dance ending is consequence, not reward. The chunk language does not assert victory; it names what the demonstration forecloses for the factions. The register holds at chunk level.
+
+S04: no relief beat is named in the chunk. The war is over and "the cost detonates after the war ends" — the external pressure resolves and the internal reckoning arrives immediately behind it, unfended. The surviving subject, the burned log, the locked-in cost: these are named directly. The chunk does not offer a version of Taylor intact and at peace. It offers Taylor carrying a permanent gap in her archive, with a subject alive in Flea Bottom on four-hour memory cycles, and no self-narrative of caution remaining. That is aftermath-with-cost, not aftermath-as-relief.
+
+Carry-forward watches (unchanged):
+- Clinical register self-erasure must be architectural in execution, not named.
+- Surviving subject present in Flea Bottom and absent from the log — must appear in prose.
+- Tanner-elder relationship must stay conditional; warmth-drift is a flag.
+- Demonstration must be written in Khepri-register, not triumph-register; execution risk persists.
+- S2 Khepri-crossing must land as Faustian threshold (maester naming it and being not heard must read as horror, not misunderstanding).

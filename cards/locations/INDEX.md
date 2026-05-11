@@ -11,12 +11,17 @@ planetos:
   - kings-landing-exterior
   - loc-blue-fork-river-road
   - loc-craftsman-workshop-home
+  - loc-eastern-quarter-apothecary
+  - loc-flea-bottom
+  - loc-flea-bottom-base
   - loc-harrenhal-exterior
   - loc-harrenhal-sept-environs
   - loc-local-sept
   - loc-market-square
+  - loc-red-keep-outer-ring
   - loc-river-ferry-dock
   - loc-river-market-town
+  - loc-tanner-village
   - oc-riverlands-river-ford
   - oc-riverlands-ruined-tower
   - reach-smallfolk-village
@@ -33,12 +38,16 @@ full:
   - kings-landing-exterior
   - loc-blue-fork-river-road
   - loc-craftsman-workshop-home
+  - loc-eastern-quarter-apothecary
+  - loc-flea-bottom
+  - loc-flea-bottom-base
   - loc-harrenhal-exterior
   - loc-harrenhal-sept-environs
   - loc-local-sept
   - loc-market-square
   - loc-river-ferry-dock
   - loc-river-market-town
+  - loc-tanner-village
   - oc-riverlands-river-ford
   - oc-riverlands-ruined-tower
   - reach-smallfolk-village
@@ -46,4 +55,5 @@ full:
   - westerosi-smallfolk-dwelling-interior
   - westerosi-smallfolk-village-common
 
-scant: []
+scant:
+  - loc-red-keep-outer-ring

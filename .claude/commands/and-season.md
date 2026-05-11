@@ -1,8 +1,8 @@
 ---
-description: Season-scope orchestrator. Expands season content beats into continuous bones, runs the five-pass SVO pipeline + 10-pass season-scope review (S1, S2, S3, S3.5, S4, S5, S6, S7, S8, S9) including the URI-026 bone-gate against provisional cut windows, gets judged at Phase 6 (orchestrator-critic), then writes the split out mechanically as the final step. Episode count multiple of 3. Usage - /and-season [season-slug]
+description: Season-scope orchestrator. Auto-plans the season (drama + vibe-cloud + content beats) if no plan exists, then expands content beats into continuous bones, runs the five-pass SVO pipeline + 10-pass season-scope review (S1, S2, S3, S3.5, S4, S5, S6, S7, S8, S9) including the URI-026 bone-gate against provisional cut windows, gets judged at Phase 6 (orchestrator-critic), then writes the split out mechanically as the final step. Episode count multiple of 3. Usage - /and-season [season-slug]
 ---
 
-The season is the natural authoring unit. Content beats from `/and-season-plan` are the continuous spine; Phase 2 expands them into bones. Episode boundaries are *outputs* of this command — they are decided after season-scope review converges and after the orchestrator-critic verdict, by mechanical write-out against the converged bones.
+The season is the natural authoring unit. Phase 1 authors the season plan if one does not yet exist (the same subroutine for s01 and for subsequent seasons; previous-season terminal state is read in only when a previous season exists). Phase 2 expands the content beats into continuous bones. Episode boundaries are *outputs* of this command — they are decided after season-scope review converges and after the orchestrator-critic verdict, by mechanical write-out against the converged bones.
 
 You are the orchestrator. All work routes through subagent dispatches.
 
@@ -18,30 +18,114 @@ You are the orchestrator. All work routes through subagent dispatches.
 
 ---
 
-## Phase 0 — Validate
+## Phase 0 — Validate and resume
 
-1. Resolve season slug.
-2. Read `active-project/staff/showrunner/memory.md`. Confirm:
-   - Season exists in `seasons[]` with status `active`.
-   - `season-<slug>-plan.md` exists with season chunk + season drama statement + content beats (continuous content guidance, no per-episode boundaries).
-3. Determine resume point:
-   - **No bones file exists** (`active-project/theater/proto-lines/<season-slug>.bones.md` absent) → start at Phase 2 Pass 1.
+1. Resolve season slug. If `$1` is omitted: use `active.season` from memory if set; otherwise default to `s01` (first-season case).
+2. Read `active-project/staff/showrunner/memory.md`. Confirm project is active (`series.theme` non-null, series-plan.md exists). Otherwise abort — `/and-project` has not run.
+3. If a previous season exists in `seasons[]` (slug ordinal N-1 relative to `$1`), confirm its status is `wrapped` OR `protolines_complete` is set. If a previous season exists but is unsettled → abort with a surfacing-for-human note: the previous season's terminal state must be settled before the new season can shape against it.
+4. Determine resume point:
+   - **No `season-<slug>-plan.md` exists** (or exists but lacks a `content_beats` section) → start at **Phase 1** (plan).
+   - **Plan exists, no bones file** (`active-project/theater/proto-lines/<season-slug>.bones.md` absent) → start at **Phase 2 Pass 1**.
    - **Bones exist, season status `active`, no `protolines_complete` field** → resume at the appropriate phase based on which audit reports already exist under `active-project/staff/auditor/season-<slug>-pass-*`.
    - **`season.protolines_complete` set** → abort; the season has already run through this pipeline.
-   - Season status `wrapped` → abort.
-4. Print:
+   - **Season status `wrapped`** → abort.
+5. Print:
 
 ```
 Season: <slug>
+Previous season: <slug | none> (<wrapped | protolines_complete | n/a>)
+Plan: <absent | exists @ <path>>
 Bones: <absent | exists @ <path>>
-Resume point: <Phase 2 Pass 1 | Phase 2 Pass <n> | Phase 3 Pass S<n> | Phase 6 verdict | Phase 7 split write-out>
+Resume point: <Phase 1 | Phase 2 Pass 1 | Phase 2 Pass <n> | Phase 3 Pass S<n> | Phase 6 verdict | Phase 7 split write-out>
 ```
 
 ---
 
-## Phase 1 — REMOVED
+## Phase 1 — Plan (conditional)
 
-Phase 1 (per-episode decomposition) is removed. The season's continuous structure is already provided by the content beats in `season-<slug>-plan.md`. Phase 2 expands those beats into bones directly; no separate "aggregate" object is authored.
+Runs only when no `season-<slug>-plan.md` exists (or it exists but has no `content_beats` section). If the plan is present and complete, skip directly to Phase 2.
+
+This is the season-planning subroutine, lifted from the former `/and-season-plan` command and parameterized to handle both first-season (s01) and subsequent-season (sN, N>1) cases. The previous-season terminal-state read is conditional on a previous season existing.
+
+### 1a — Read prior context
+
+Read: `series-plan.md`, `brief-expansion.md`, series + (if present) previous-season vibe-clouds from `active-project/staff/studio/vibes.md`, series constraints (laws/lore/behaviors from showrunner memory), audience persona cards under `active-project/audience/`.
+
+**Conditional terminal-state brief.** If a previous season exists with `status: wrapped` OR `protolines_complete` set, bundle the terminal-state brief for the screen-writer:
+
+1. Previous season's plan (`active-project/staff/showrunner/season-<prev-slug>-plan.md`).
+2. Previous season's terminal episode proto-line file (`active-project/theater/proto-lines/<prev-terminal-slug>.md` if Phase 7 write-out has happened, otherwise the closing 20–30 IDs of `<prev-slug>.bones.md`).
+3. Active actor state files (`active-project/actors/<slug>/state.md` for every actor on the closing roster).
+4. Studio state (`active-project/staff/studio/state.md`).
+5. Showrunner memory `seasons[N-1]` block — recorded outcomes, threads carried, deltas.
+6. Previous-season vibe-cloud section in `vibes.md`.
+
+If no previous season exists (s01 case), skip this brief; the screen-writer is conditioned on series-plan + brief-expansion alone.
+
+### 1b — Derive new-season vibe-cloud
+
+Append a new section to `active-project/staff/studio/vibes.md` for the season vibe-cloud, with explicit deltas from the series vibe-cloud and (if present) the previous-season vibe-cloud — what the previous terminal state shifts about register, mood, escalation register.
+
+If `vibes.md` does not yet exist (possible at s01 — `/and-project` may or may not have authored it depending on activation phase): create it. First section is the series vibe-cloud (derived from series-plan + brief-expansion). Second section is the season vibe-cloud beneath.
+
+### 1c — Establish season drama
+
+Drama-sized statement: the season's central collision and what cannot survive it. Two sentences. External and structural. If a previous season exists, the terminal state is load-bearing — the new season's drama reacts to what was settled, broken, or carried forward, not to a clean slate.
+
+### 1d — Dispatch screen-writer (content-beat authoring)
+
+Inputs:
+- Series plan, season drama statement (1c), series + new-season vibe-clouds, series constraints, brief-expansion.
+- Terminal-state brief from 1a (only if a previous season exists).
+
+Task: write **continuous content beats** for the season — drama-sized guidance for the dramatic flow start to end. **NOT per-episode chunks.** The split into episodes is the job of Phase 7; the screen-writer must not author episode boundaries here, must not assign episode slugs, and must not predict an episode count.
+
+Format: continuous numbered beats `1. ... 2. ... ... N.` covering the season arc. Each beat names a collision or threshold and what cannot remain unchanged after it. Concrete and specific, external and structural, no character psychology. "The soldier marks her location on a route-map from twelve feet away while Plumm's men inventory the settlement — she watches it happen and does not move" not "X runs because they fear being caught."
+
+### 1e — Audience + dramatist review (3-try cap)
+
+Dispatch the 3 audience personas (the project's fixed set, read from `active-project/audience/`) and dramatist as one parallel Agent block.
+
+- Audience: does the season satisfy your persona's appetite given (if applicable) where the previous season ended? Per-beat ENGAGED / TOLERATED / BORED + file-level ACCEPT or REVISE-`<reason>`.
+- Dramatist: shape check — rise-peak-fall, escalation spine, climax in back half, no flatlines, terminal beat reacts to where the previous season ended (if applicable).
+
+Accept/revise loop, max 3 attempts. Non-convergence escalates to user with failing reasons.
+
+### 1f — Persist plan
+
+- Write `active-project/staff/showrunner/season-<slug>-plan.md` with: season chunk (one paragraph), season drama statement, vibe-cloud reference, `content_beats:` numbered list. **No episode slugs, no episode count.**
+- Update `active-project/staff/showrunner/memory.md`:
+  - `routing.season_plan: active-project/staff/showrunner/season-<slug>-plan.md`.
+  - Append entry to `seasons[]` with `status: active`. Do **not** author `episodes[]` here — episode slugs are emergent at Phase 7.
+  - Set `active.season: <slug>`.
+- If a previous season exists: append the terminal-state delta summary to `seasons[N-1].terminal_handoff`.
+- Log file: `active-project/staff/showrunner/season-<slug>-plan-log.md` — same format as prior season-plan logs.
+
+### 1g — Cross-season audit (conditional)
+
+**If a previous season exists:** dispatch auditor (fork) against the new plan + previous terminal state + series-plan. Verify:
+- New content beats remain consistent with series-plan's long-arc sketch.
+- New season opens from previous terminal state without contradicting recorded outcomes (actor locations, prop custody, condition deltas, surviving threads).
+- Series laws and lore hold across the season transition.
+- New season's terminal beat does not contradict any series-plan commitment for season N+2 (if sketched).
+
+Output: `active-project/staff/auditor/season-<slug>-plan-audit.md`. Faults route to fixer (line-level) or escalate (structural contradictions with series plan).
+
+**If no previous season exists (s01 case):** skip 1g. Series-plan consistency is implicitly checked because the screen-writer was conditioned on series-plan as input and audience+dramatist already reviewed.
+
+### 1h — Print plan summary, then continue to Phase 2
+
+```
+--- SEASON PLAN COMPLETE: <slug> ---
+Drama: <one-line distill>
+Content beats: <count>
+Cross-season audit: <PASS | FAULTS-{count} | n/a (s01)>
+Plan file: active-project/staff/showrunner/season-<slug>-plan.md
+
+Continuing to Phase 2 — bone expansion.
+```
+
+No human checkpoint between 1h and Phase 2. Plan-only stopping is achieved by aborting after 1h externally if desired; the default is to flow into Phase 2.
 
 ---
 
@@ -557,4 +641,4 @@ Next: /and-shoot or /and-facets per active.episode, or /and-wrap.
 - Phase 4 is removed. Split identification (dramatist proposes provisional cuts; tens + audience+mechanic verify shape) lives inside Phase 3 as Pass S10. The actual write-out is Phase 7, after Phase 6 verdict.
 - Per-episode files are derived from the bones at Phase 7 write-out. The bones file is the canonical pre-split artifact and is preserved; downstream revision of a stretch edits the bones and re-runs the affected portion of Phase 3.
 - **Execution is fan-out, not sequential.** Phase 2 review and Phase 3 sweeps fire as parallel Agent blocks (one assistant turn each). The orchestration layer (Sweep A / Sweep B / Collation / Fix Routing / Re-fire) governs *when* dispatches fire; the per-pass briefs (`### Pass S1` … `### Pass S10`) are the *fork reference content* — what each dispatch is told to do.
-- Subsequent-season equivalent: season N+1 must first be planned via `/and-season-plan <slug>`, which authors `season-<slug>-plan.md` with content beats. Once the prerequisite is met, `/and-season <slug>` runs identically.
+- Planning is folded in. There is no separate `/and-season-plan` command. First-season (s01) and subsequent-season (sN, N>1) cases are both handled by Phase 1 — the previous-season terminal-state read is conditional on a previous season existing. To plan-only without authoring bones, run `/and-season <slug>` and abort externally after the Phase 1h summary line.

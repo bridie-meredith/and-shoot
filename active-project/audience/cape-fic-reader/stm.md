@@ -37,7 +37,7 @@ Reviewed: Revised Option A + Recommendation with s4 foreclosure event added.
 
 Verdict: ACCEPT — prior flag honored; hypothesis-falsification structure confirmed and extended.
 
-Reason: The round-1 flag demanded a named hypothesis before the test, not discovery-without-theory. The s4 foreclosure event delivers exactly this: Taylor enters the three-day Flea Bottom workshop experiment with a specific working hypothesis — that relay load distributes safely across healthy adults held at sub-threshold individual exposure. The failure falsifies a specific claim on specific terms: "She believes the load distributes. It does not." The post-failure revision is named and mechanically precise: load does not distribute linearly; threshold is individual, not aggregate. This is hypothesis → experiment → falsification → revised hypothesis. It is the correct rule-legible structure.
+Reason: The round-1 flag demanded a named hypothesis before the test, not discovery-without-theory. The s4 foreclosure event delivers exactly this: Taylor enters the three-day Flea Bottom workshop experiment with a specific working hypothesis — that relay load distributes safely across healthy adults held at sub-threshold individual exposure. The failure falsifies a specific claim on specific terms: "She believes the load distributes. It does not." The post-failure revision is named and mechanically precise: load does not distribute linearly; threshold is individual, not aggregate. This is hypothesis → experiment → falsification → revised theory. It is the correct rule-legible structure.
 
 The structure is strong because the failure does not merely confirm that the experiment was dangerous — it falsifies the load-distribution model in a way that reveals Taylor's pre-experiment reasoning. The reader sees what she believed, why she was wrong, and what she now knows. The dread is that she is rigorous about everything except the question of whether to continue. That framing is asymmetry the cape-fic reader rewards: Taylor is the most technically competent actor in this arc, she has the most information, and she uses that competence and information to destroy the record of her own error.
 
@@ -101,3 +101,23 @@ Remaining live watches:
 - Distance from maester must be established with precision at least once (unchanged).
 - Fixed-anchor logic must be honored explicitly when Taylor leaves Flea Bottom (unchanged).
 - Unlock condition (sustained high-density operations) must still be legible as the cause of the S2 crossing — if the prose delivers the behavioral change without connecting it to the relay-load accumulation, the use-derived requirement is not honored in execution. New execution watch.
+
+## Series Plan Review — 2026-05-10
+
+Reviewed: Four-season chunk list + series drama statement. Watch: rule architecture across four seasons — capability gates legible (range → candles → Khepri → demonstration → foreclosure), no scope creep, no established-limit bypass.
+
+Verdict: ACCEPT
+
+Reason: Gate sequence reads cleanly across all four chunks. S01 names range expansion underway with no new capability gate opened — correct, 300m expanding toward 1.5km ceiling. S02 names candle-acquisition and sustained relay load producing the Khepri-mantle crossing late in season — gate sequence is range expansion → candle-acquisition → threshold, each caused by the prior, none firing early. The chunk language specifies the cause ("sustained high-density relay load accumulate"), not a drama trigger. S03 demonstration deploys an already-crossed Khepri-mantle — capability gate is not opening here, it is in operational use. Rider-control reversal is within established Khepri-mantle scope (dozen humans, not thousands). S04 density-saturation experiment uses established relay mechanics (glass-candle + insect-density) with no new capability introduced; failure is within AU-invented interaction parameters.
+
+Scope creep check: glass-candle research is relay-only per world-notes LAW. Chunk language says "density-saturation relay experiment" — relay framing preserved. No additional capability pathways introduced or implied across any chunk.
+
+Established-limit bypass check: demonstration is rider-control, not dragon-control — consistent with world-notes. Khepri-mantle at ~dozen humans ceiling is not contradicted by any chunk. No fence violation visible at series-plan scope.
+
+Minor signal (not reject, carried from prior OQ review): S01 chunk names two simultaneous closures (tanner-village claim + Hightower intelligence file) that close independently rather than against each other. The simultaneity is decorative at series-plan level — the season plan should clarify whether the two closures interact or merely coincide, because if they coincide without friction the simultaneity adds no information-asymmetry load.
+
+Remaining live watches (unchanged):
+- In-world theory for insect-network/glass-candle interaction must be present in prose before the s4 experiment.
+- Distance from maester must be established with precision at least once.
+- Fixed-anchor logic must be honored explicitly when Taylor leaves Flea Bottom.
+- S2 unlock cause must be legible as relay-load accumulation in prose, not behavioral change alone.

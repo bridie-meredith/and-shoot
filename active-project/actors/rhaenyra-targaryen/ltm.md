@@ -1,0 +1,1 @@
+[2026-05-10] ACTIVATION: provisioned for flea-bottom-dance project | role: antagonist-instrument and witness-figure only; audited for posture (no ally, no romantic); project addendum added to library card

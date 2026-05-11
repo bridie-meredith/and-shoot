@@ -73,7 +73,7 @@ Carry-forward watches (unchanged from OQ-4/5):
 
 ## OQ-9 S2-Khepri-shift Confirm Review — 2026-05-10
 
-Reviewed: Revised Option A — S2 peak is now the Khepri-mantle threshold crossing (late S2, cause: sustained high-density relay load during range expansion + candle-acquisition). S3 begins with Taylor already changed. Demonstration remains in S3 as downstream consequence of a crossing already made.
+Reviewed: Revised Option A — S2 peak is now the Khepri-mantle threshold crossing (late S2, cause: sustained high-density relay load during range expansion + candle-acquisition). S3 begins with Taylor already changed. Demonstration remains in S3 as downstream consequence.
 
 Verdict: ACCEPT
 
@@ -82,6 +82,20 @@ Reason: The S2-Khepri-shift satisfies the use-derived requirement more cleanly t
 The shift also resolves the prior live watch (execution risk: mantle-crossing and demonstration-climax as simultaneous undifferentiated moment). Those events are now separated by a season boundary. The execution sequencing problem is eliminated at plan level — no prose gymnastics required to distinguish cause from effect.
 
 Updated live watch status: the prior Khepri-mantle execution sequencing watch is RESOLVED at plan level by the S2-Khepri-shift. The demonstration in S3 is a downstream consequence of a threshold already crossed; the reader will see the crossing in late S2 and the demonstration in S3 as causally ordered without requiring explicit intra-scene separation.
+
+Carry-forward watches (unchanged):
+- Taylor's in-world theory for insect-network/glass-candle interaction must appear in prose before the s4 experiment.
+- Distance from maester must be established with precision at least once.
+
+## Series Plan Review — 2026-05-10
+
+Reviewed: Four-season chunk list + series drama statement. Watch: Khepri-mantle sequencing across chunks — S2 crossing, S3 demonstration, S4 foreclosure ordering, cause chain, no mechanics violations.
+
+Verdict: ACCEPT
+
+Reason: Sequencing holds cleanly across all four chunks. S01 introduces no Khepri-mechanics content — range expansion underway, no unlock condition approached. S02 names the cause explicitly ("sustained high-density relay load accumulate") and places the crossing late in the season; the relay-load cause is present in the chunk language, not asserted. S03 demonstration is downstream of a crossing already made — the chunk language confirms Taylor arrives in S03 already changed, so the demonstration deploys an established capability, not a simultaneous unlock. S04 foreclosure operates on AU-invented Valyrian-interaction mechanics (density-saturation relay failure), not Worm shard mechanics; no shard-behavior violation. The ordering S2 crossing → S3 demonstration → S4 foreclosure is correct, each step caused by the prior, no step reversed or collapsed.
+
+No new mechanics violations introduced by the series plan itself. All carry-forward watches remain at execution level and are unresolvable at series-plan scope.
 
 Carry-forward watches (unchanged):
 - Taylor's in-world theory for insect-network/glass-candle interaction must appear in prose before the s4 experiment.

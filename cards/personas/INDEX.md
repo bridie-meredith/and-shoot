@@ -36,6 +36,8 @@ earth-bet:
   - victoria-dallon
 
 planetos:
+  - aegon-ii-targaryen
+  - aemond-targaryen
   - beric-dondarrion
   - census-officer
   - clerk
@@ -44,14 +46,21 @@ planetos:
   - lem-lemoncloak
   - mira-stonefield
   - mira-stonefield-jaehaerys
+  - oc-broken-maester
   - oc-castellan-harrenhal
   - oc-child-peer
   - oc-craftsman-father
   - oc-craftsman-mother
+  - oc-dock-runner
   - oc-girl-from-hamlet
   - oc-lords-steward
   - oc-plumms-man
+  - oc-tallow-chandler
+  - oc-tanner-elder
+  - oc-tanner-father
+  - oc-tanner-mother
   - oc-tributary-village-newcomer
+  - otto-hightower
   - peasant-woman-forest
   - plumms-man
   - rhaenyra-targaryen
@@ -61,6 +70,7 @@ planetos:
   - ser-harwick-plumm
   - septon-dying-protector
   - septon-rowan
+  - taylor-hebert-flea-bottom
   - taylor-hebert-jaehaerys
   - taylor-hebert-westeros
   - thoros-of-myr
@@ -102,11 +112,17 @@ full:
   - missy-biron
   - night-and-fog
   - noelle
+  - oc-broken-maester
   - oc-castellan-harrenhal
   - oc-child-peer
   - oc-craftsman-father
   - oc-craftsman-mother
+  - oc-dock-runner
   - oc-lords-steward
+  - oc-tallow-chandler
+  - oc-tanner-elder
+  - oc-tanner-father
+  - oc-tanner-mother
   - rachel-lindt
   - rhaenyra-targaryen
   - rymer-hedge
@@ -118,6 +134,7 @@ full:
   - shatterbird
   - sophia-hess
   - taylor-hebert
+  - taylor-hebert-flea-bottom
   - taylor-hebert-jaehaerys
   - taylor-hebert-westeros
   - thoros-of-myr
@@ -125,9 +142,12 @@ full:
   - westerosi-traveling-maester
 
 scant:
+  - aegon-ii-targaryen
+  - aemond-targaryen
   - oc-girl-from-hamlet
   - oc-plumms-man
   - oc-tributary-village-newcomer
+  - otto-hightower
   - peasant-woman-forest
   - victoria-dallon
   - viserys-i-targaryen
@@ -136,7 +156,7 @@ scant:
 
 ## by_trope
 
-young-depressed-hero: [taylor-hebert, taylor-hebert-westeros, taylor-hebert-jaehaerys]
+young-depressed-hero: [taylor-hebert, taylor-hebert-westeros, taylor-hebert-jaehaerys, taylor-hebert-flea-bottom]
 master-manipulator: [lisa-wilbourn, thomas-calvert]
 feral-pragmatist: [rachel-lindt]
 sociopathic-charmer: [jack-slash, alec-vasil]
@@ -148,21 +168,30 @@ ruthless-operator: [sophia-hess, colin-wallis]
 broken-by-circumstance: [elle-labyrinth, marissa-newland]
 noise-and-terror: [shatterbird, night-and-fog]
 political-power: [thomas-calvert]
-westerosi-local: [peasant-woman-forest, westerosi-traveling-maester, mira-stonefield, mira-stonefield-jaehaerys, edric-cray, rymer-hedge, ser-aemon-bracken, ser-edwyn-celtigar, septon-rowan, oc-castellan-harrenhal, septon-dying-protector, oc-craftsman-mother, oc-craftsman-father]
+westerosi-local: [peasant-woman-forest, westerosi-traveling-maester, mira-stonefield, mira-stonefield-jaehaerys, edric-cray, rymer-hedge, ser-aemon-bracken, ser-edwyn-celtigar, septon-rowan, oc-castellan-harrenhal, septon-dying-protector, oc-craftsman-mother, oc-craftsman-father, oc-tanner-mother, oc-tanner-father, oc-tanner-elder, oc-dock-runner, oc-tallow-chandler, oc-broken-maester]
 administrative-functionary: [census-officer, oc-census-officer, clerk, plumms-man, oc-plumms-man]
 riverlands-background: [peasant-woman-forest, oc-girl-from-hamlet, oc-tributary-village-newcomer]
 brutal-pragmatist: [lem-lemoncloak]
 dying-cause: [beric-dondarrion]
 faith-recovered: [thoros-of-myr]
 corrupt-official: [ser-harwick-plumm, oc-castellan-harrenhal]
-targaryen-era: [rhaenyra-targaryen, viserys-i-targaryen, ser-edwyn-celtigar]
+targaryen-era: [rhaenyra-targaryen, viserys-i-targaryen, ser-edwyn-celtigar, aegon-ii-targaryen, aemond-targaryen, otto-hightower]
 riverlands-power: [ser-aemon-bracken]
 faith-operator: [septon-rowan]
 hedge-knight: [rymer-hedge]
-institutional-antagonist: [oc-castellan-harrenhal, oc-lords-steward]
+institutional-antagonist: [oc-castellan-harrenhal, oc-lords-steward, otto-hightower]
 opening-loss: [septon-dying-protector]
 riverlands-child: [oc-child-peer]
-smallfolk-parent: [oc-craftsman-mother, oc-craftsman-father]
+smallfolk-parent: [oc-craftsman-mother, oc-craftsman-father, oc-tanner-mother, oc-tanner-father]
+grief-axis: [oc-tanner-mother]
+suspicion-withdrawal: [oc-tanner-father]
+conditional-embedder: [oc-tanner-elder]
+trust-test: [oc-dock-runner]
+unknowing-structural: [oc-tallow-chandler]
+brake-not-ally: [oc-broken-maester]
+targaryen-antagonist: [aegon-ii-targaryen, aemond-targaryen]
+hightower-intelligence: [otto-hightower]
+witness-figure: [rhaenyra-targaryen, oc-broken-maester]
 
 ---
 
@@ -194,3 +223,13 @@ OC slots for margit to construct at project activation when a generic role is se
 - oc-plumms-man (chapter-02 field-retainer/scribe walk-on; scant; variant-of: plumms-man; authored 2026-05-07 for chapter-02 dependencies)
 - oc-girl-from-hamlet (chapter-02 Riverlands hamlet child; procedural extra; scant; authored 2026-05-07 for chapter-02 dependencies)
 - oc-tributary-village-newcomer (s02 B6-close walk-on; tributary-village woman arriving at sept post-Mira-dissolution; scant; deferred-identity; authored 2026-05-10 for s02 Phase 3 readiness)
+- taylor-hebert-flea-bottom (protagonist flea-bottom-dance variant; full; 125 AC Crownlands/KL, 17yo, Khepri sealed, 300m range at open; authored flea-bottom-dance provisioning 2026-05-10)
+- oc-tanner-mother (smallfolk-grief-axis slot; Tya-origin, chronic ambiguous grief; full; authored flea-bottom-dance provisioning 2026-05-10)
+- oc-tanner-father (smallfolk-suspicion-withdrawal slot; Tya-origin, methodological withdrawal; full; authored flea-bottom-dance provisioning 2026-05-10)
+- oc-tanner-elder (conditional-embedder slot; Flea Bottom labor broker, conditional acceptance only; full; authored flea-bottom-dance provisioning 2026-05-10)
+- oc-dock-runner (trust-test slot; Flea Bottom native, route knowledge, early trust; full; authored flea-bottom-dance provisioning 2026-05-10)
+- oc-tallow-chandler (unknowing-structural slot; glass-candle salvage source, unknowing is load-bearing; full; authored flea-bottom-dance provisioning 2026-05-10)
+- oc-broken-maester (brake-not-ally slot; chain-stripped maester above eastern-quarter apothecary; full; authored flea-bottom-dance provisioning 2026-05-10)
+- aegon-ii-targaryen (canon HOTD; green faction figurehead antagonist; scant; authored flea-bottom-dance provisioning 2026-05-10)
+- otto-hightower (canon HOTD; Hightower intelligence architect; scant; authored flea-bottom-dance provisioning 2026-05-10)
+- aemond-targaryen (canon HOTD; green faction coercive instrument, Vhagar rider; scant; authored flea-bottom-dance provisioning 2026-05-10)

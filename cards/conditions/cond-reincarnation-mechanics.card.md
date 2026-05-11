@@ -8,6 +8,7 @@ origin: authored
 quality: full
 supersedes:
   - cond-reincarnation-rules
+superseded_by: cond-reincarnation-mechanics-125ac
 references:
   - taylor-hebert-westeros
   - cond-no-parahuman-infrastructure

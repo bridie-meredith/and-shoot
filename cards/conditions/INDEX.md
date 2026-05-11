@@ -7,7 +7,10 @@ All ambient state modifier cards. Maintained by margit — update on every card 
 ## by_world
 
 planetos:
+  - cond-clinical-self-erasure
+  - cond-crownlands-superstition-frame-125ac
   - cond-fauna-control-rules
+  - cond-fauna-control-rules-125ac-addendum
   - cond-feudal-hierarchy-law
   - cond-faith-of-seven-jaehaerys
   - cond-impressment-census-120ac
@@ -15,14 +18,17 @@ planetos:
   - cond-no-parahuman-infrastructure
   - cond-reincarnation-mechanics
   - cond-reincarnation-mechanics-84ac
+  - cond-reincarnation-mechanics-125ac
   - cond-riverlands-120ac-state
   - cond-riverlands-84ac-state
   - cond-series-tone-constraints
   - cond-series-tone-constraints-84ac
+  - cond-series-tone-constraints-125ac
   - cond-shard-behavioral-weight
   - cond-smallfolk-political-physics
   - cond-suppression-policy-progression
   - cond-westerosi-customary-authority
+  - cond-westerosi-customary-authority-125ac
   - cond-westerosi-customary-authority-jaehaerys
   - cond-westerosi-superstition-frame
   - condition-dragon-bonding-incomplete
@@ -42,7 +48,10 @@ tombstoned:
 ## by_quality
 
 full:
+  - cond-clinical-self-erasure
+  - cond-crownlands-superstition-frame-125ac
   - cond-fauna-control-rules
+  - cond-fauna-control-rules-125ac-addendum
   - cond-feudal-hierarchy-law
   - cond-faith-of-seven-jaehaerys
   - cond-impressment-census-120ac
@@ -50,14 +59,17 @@ full:
   - cond-no-parahuman-infrastructure
   - cond-reincarnation-mechanics
   - cond-reincarnation-mechanics-84ac
+  - cond-reincarnation-mechanics-125ac
   - cond-riverlands-120ac-state
   - cond-riverlands-84ac-state
   - cond-series-tone-constraints
   - cond-series-tone-constraints-84ac
+  - cond-series-tone-constraints-125ac
   - cond-shard-behavioral-weight
   - cond-smallfolk-political-physics
   - cond-suppression-policy-progression
   - cond-westerosi-customary-authority
+  - cond-westerosi-customary-authority-125ac
   - cond-westerosi-customary-authority-jaehaerys
   - cond-westerosi-superstition-frame
   - condition-dragon-bonding-incomplete
@@ -85,6 +97,7 @@ power-mechanics:
   - condition-swarm-in-foreign-ecology
   - condition-shard-in-dragon-body
   - cond-fauna-control-rules
+  - cond-fauna-control-rules-125ac-addendum
   - cond-shard-behavioral-weight
 
 political-ambient:
@@ -96,7 +109,10 @@ environmental:
   - condition-dragon-presence
 
 project-constraint:
+  - cond-clinical-self-erasure
+  - cond-crownlands-superstition-frame-125ac
   - cond-fauna-control-rules
+  - cond-fauna-control-rules-125ac-addendum
   - cond-feudal-hierarchy-law
   - cond-faith-of-seven-jaehaerys
   - cond-impressment-census-120ac
@@ -104,14 +120,17 @@ project-constraint:
   - cond-no-parahuman-infrastructure
   - cond-reincarnation-mechanics
   - cond-reincarnation-mechanics-84ac
+  - cond-reincarnation-mechanics-125ac
   - cond-riverlands-120ac-state
   - cond-riverlands-84ac-state
   - cond-series-tone-constraints
   - cond-series-tone-constraints-84ac
+  - cond-series-tone-constraints-125ac
   - cond-shard-behavioral-weight
   - cond-smallfolk-political-physics
   - cond-suppression-policy-progression
   - cond-westerosi-customary-authority
+  - cond-westerosi-customary-authority-125ac
   - cond-westerosi-customary-authority-jaehaerys
   - cond-westerosi-superstition-frame
 
@@ -119,14 +138,19 @@ protagonist-rules:
   - cond-no-parahuman-infrastructure
   - cond-reincarnation-mechanics
   - cond-reincarnation-mechanics-84ac
+  - cond-reincarnation-mechanics-125ac
   - cond-shard-behavioral-weight
+  - cond-clinical-self-erasure
+  - cond-fauna-control-rules-125ac-addendum
 
 tone-law:
   - cond-series-tone-constraints
   - cond-series-tone-constraints-84ac
+  - cond-series-tone-constraints-125ac
 
 social-physics:
   - cond-westerosi-customary-authority
+  - cond-westerosi-customary-authority-125ac
   - cond-westerosi-customary-authority-jaehaerys
   - cond-smallfolk-political-physics
   - cond-feudal-hierarchy-law
@@ -140,3 +164,4 @@ institutional-behavior:
 lore-ambient:
   - cond-riverlands-84ac-state
   - cond-westerosi-superstition-frame
+  - cond-crownlands-superstition-frame-125ac

@@ -130,3 +130,19 @@ Riding Syrax. Attending court functions that require her presence. Navigating he
 - `legitimacy`: the thing she has been promised and that everyone around her is quietly arranging to deny; carries more weight than a thirteen-year-old should know about
 - `succession`: not abstract; it is the concrete shape of her life and the reason for every managed interaction she has ever had
 - `the-heir-that-is-not`: the unnamed dread of being displaced; she does not name it; it shapes everything
+
+---
+
+## Role Addendum — flea-bottom-dance project (2026-05-10)
+
+**Project slug:** flea-bottom-dance
+
+**Constraint:** In the flea-bottom-dance project, Rhaenyra Targaryen is an antagonist-instrument and witness-figure ONLY. The following postures are explicitly prohibited for this project:
+
+1. **No ally relationship.** She does not become Taylor's ally. The structural difference between them (Rhaenyra pursues a legitimate claim the system undermines; Taylor builds power outside the system entirely) is the most interesting thing about their relationship — it is not the basis for alliance.
+2. **No romantic dynamic.** Not at any point. Not implied, not as undercurrent, not as unrealized tension.
+3. **Witness-figure function only.** She is one of the witnesses to the stopping-shape event (rider-reversal demonstration) who cannot model the mechanism and therefore cannot rationally continue the Dance. Her witnessing is the function. Her character arc is not part of this story.
+4. **The patronage offer (from Action Menu) is PROHIBITED in this project.** The action menu entry "the patronage offer" lists it as something she will be in position to make "by the time she is relevant to Taylor's story." In flea-bottom-dance, any offer she makes that Taylor might accept, or that creates a transactional relationship with a political dimension, is excluded. If she extends anything, Taylor declines. The structural independence is non-negotiable.
+5. **Faction instrument.** She is the black faction's named heir. Her interests are faction interests. Taylor's interests are smallfolk interests. These do not align and no scene should treat them as if they might.
+
+**Authoring note:** The card's thematic purpose ("Rhaenyra is Taylor's eventual foil") describes the structural contrast correctly. The foil relationship requires no warmth, no alliance, no convergence. It requires only that both figures exist in the same world, that Rhaenyra's faction is one of the things Taylor stops, and that the stopping is legible to Rhaenyra as something she cannot counter. That legibility is what the witness function delivers.

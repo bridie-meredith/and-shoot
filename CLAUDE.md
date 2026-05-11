@@ -130,7 +130,8 @@ Project-local slash commands in `.claude/commands/`.
 
 | Command | Purpose |
 |---------|---------|
-| `/and-project <title-slug> "<brief>" <audience-1> <audience-2> <audience-3>` | Full project activation. Scaffolds `active-project/`, then dispatches showrunner to run world-building (1a–1d), series plan, season 1 plan, and episode 1 chunk. Presents output at the series-level audit checkpoint for human review. |
+| `/and-project <title-slug> "<brief>" <audience-1> <audience-2> <audience-3>` | Project activation. Scaffolds `active-project/`, runs world-building (1a–1d) and series plan, presents output at the series-level audit checkpoint for human review. Season planning is owned by `/and-season s01` Phase 1 (auto-fires when no season plan exists). |
+| `/and-season <season-slug>` | Season-scope orchestrator. Auto-plans the season in Phase 1 if no `season-<slug>-plan.md` exists (handles s01 and subsequent seasons; reads previous-season terminal state when applicable), then expands content beats into bones, runs full season-scope review with bone-gate, judges at Phase 6 (orchestrator-critic), writes per-episode files at Phase 7. |
 
 ---
 
