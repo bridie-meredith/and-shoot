@@ -1,7 +1,7 @@
 ---
 facet: interest-narrator
 episode: s01e02
-author: taylor-hebert-flea-bottom (POV impersonator, facet-authoring mode)
+author: taylor-hebert-flea-bottom (POV impersonator, facet-authoring mode; R2 judge pass 2026-05-11)
 ---
 
 1 @4 the elder's road-watch is the wrong angle for greeting and the right angle for a handoff
@@ -36,3 +36,8 @@ author: taylor-hebert-flea-bottom (POV impersonator, facet-authoring mode)
 30 @171 the second sentence is the vigil-candle as fact, no longer as fixture
 31 @173 the standing IS the vigil ending; the speech-act was preparation
 32 @177 the log entry must hold the change without naming what the change means to her
+33 @23 the address has arrived at a name the body answered to and a person not there
+34 @117 the outer-district nodes have come live and the ceiling is no longer where it was
+35 @146 the close has filed him under a name the network did not name him by until today
+36 @167 the sit is not the posture the visits carried and the visit-shape has just changed register
+37 @172 the gaze-lower is what the body does before it stands into a sentence the mouth will not finish

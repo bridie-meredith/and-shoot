@@ -8,6 +8,7 @@ note: consolidated by build_cite_index from per-source slices. Single top-of-fil
 # source: oc-broken-maester
 # facet: feeling
 # episode: s01e02
+# R2 judge pass 2026-05-11: 0 keeps (R1 slice was empty), 0 deletes, 0 adds. No-add cleared at @137/@138 and @148-150 per default-to-silence; persona card §Voice ("Does not perform deference. Does not perform hope.") and the brake-not-ally structural function hold the maester at ambient-signal register through this episode.
 
 
 # source: oc-dock-runner
@@ -25,20 +26,33 @@ note: consolidated by build_cite_index from per-source slices. Single top-of-fil
 # Hard Fence 2 ("does not commit to causes") tilts the runner toward minimum-legibility
 # from the outside even when on-stage. Default-to-silence per rubric.
 
+# R2 re-test (2026-05-11): no-add cleared. Re-read at-rest against the locked graph and the
+# canonical proto-lines. The runner has exactly one anchor (@37) and that anchor is a POV-swarm
+# relay-target — the body the rubric requires (posture, breath, gaze, micro-action) is not on
+# page; it would have to be invented from outside the proto-line surface. G2 fails on motive
+# (the only "wanting" available is graph-niche, never at-rest evidence — F-R2-2 by construction).
+# G3 fails on adjacent-context (no anchor stands at-rest because there is no on-page body to
+# anchor against). G5 position: @37 sits inside a relay-cluster (@34/@35/@37/@42/@44 — swarm-
+# perception sweep), an interior-administrative band where a non-POV character's somatic fire
+# would not open or close anything the scene is doing. Card §Voice ("comfortable with silence",
+# "irony as default register") and Hard Fence 2 ("does not commit to causes") confirm the
+# minimum-legibility default. No fire. Cap-refusal logged in shard.
+
 # source: oc-tanner-elder
 # source: oc-tanner-elder
 # facet: feeling
 # episode: s01e02
 
 1 @20 oc-tanner-elder: keeps the gaze on the trade goods through the speaking | expressed: partial
-2 @54 oc-tanner-elder: does not close the distance the carter left | expressed: partial
+2 @54 oc-tanner-elder: stands square at his working pitch and brings the placement-look onto her face | expressed: partial
 
 # source: oc-tanner-father
 # source: oc-tanner-father
 # facet: feeling
 # episode: s01e02
+# R2 judge pass 2026-05-11: 1 swap (@18→@22), 1 KEEP, 0 adds.
 
-3 @18 oc-tanner-father: sets the goods down between them and keeps the hands on the strap | expressed: partial
+3 @22 oc-tanner-father: lets the weight come back to the rear foot and keeps the gaze on the strap-end at his hip | expressed: partial
 4 @107 oc-tanner-father: closes the hand on the coins without lifting the gaze to her face | expressed: partial
 
 # source: oc-tanner-mother

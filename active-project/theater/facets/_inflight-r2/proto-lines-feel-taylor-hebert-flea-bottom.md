@@ -29,12 +29,12 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 15 taylor-hebert-flea-bottom speaks to oc-tanner-father
 16 oc-tanner-father stills
 17 oc-tanner-mother stills
-18 oc-tanner-father lifts the trade goods [feel:1] [narrator:4]
+18 oc-tanner-father lifts the trade goods [narrator:4]
 19 oc-tanner-father speaks to oc-tanner-elder
 20 oc-tanner-elder speaks to oc-tanner-father [feel:1] [narrator:5] [state:1] [vibes:4]
 21 oc-tanner-mother faces taylor-hebert-flea-bottom
 22 oc-tanner-father steps back [narrator:6] [state:2] [state:3] [vibes:1] [vibes:2] [vibes:3]
-23 oc-tanner-mother speaks to taylor-hebert-flea-bottom [mem:1]
+23 oc-tanner-mother speaks to taylor-hebert-flea-bottom
 24 taylor-hebert-flea-bottom speaks to oc-tanner-mother
 25 oc-tanner-mother pivots toward the road south [narrator:7]
 26 oc-tanner-father pivots toward the road south
@@ -106,7 +106,7 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 104 taylor-hebert-flea-bottom exhales [narrator:20]
 105 taylor-hebert-flea-bottom opens the purse
 106 taylor-hebert-flea-bottom extends the coins [feel:3] [narrator:21] [vibes:5]
-107 oc-tanner-father takes the coins [feel:2] [mem:5] [state:5] [state:7] [vibes:6] [vibes:7]
+107 oc-tanner-father takes the coins [feel:2] [state:5] [state:7] [vibes:6] [vibes:7]
 108 oc-tanner-father speaks to taylor-hebert-flea-bottom [narrator:22]
 109 taylor-hebert-flea-bottom faces oc-tanner-father
 110 oc-tanner-father exits the junction [state:8]
@@ -140,7 +140,7 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 143 the visitor exits the side-alley door
 144 taylor-hebert-flea-bottom opens the log
 145 taylor-hebert-flea-bottom writes the entry [state:8]
-146 taylor-hebert-flea-bottom closes the log [mem:6]
+146 taylor-hebert-flea-bottom closes the log
 148 the beetles relay the rhythm
 149 the beetles relay the phrase [narrator:27] [state:1]
 150 the beetles relay the rhythm
@@ -163,7 +163,7 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 169 oc-tanner-mother speaks to taylor-hebert-flea-bottom [vibes:20]
 170 taylor-hebert-flea-bottom speaks to oc-tanner-mother [feel:4]
 171 oc-tanner-mother speaks to taylor-hebert-flea-bottom [narrator:30] [state:10] [vibes:21]
-172 oc-tanner-mother lowers the gaze [mem:8]
+172 oc-tanner-mother lowers the gaze
 173 oc-tanner-mother stands [feel:1] [narrator:31] [sensory:5] [state:4] [state:8] [state:9] [vibes:18] [vibes:19] [vibes:22] [vibes:23]
 174 oc-tanner-mother exits the base room [state:10]
 176 taylor-hebert-flea-bottom opens the log
