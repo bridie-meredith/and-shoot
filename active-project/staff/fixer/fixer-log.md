@@ -1,3 +1,24 @@
+## SESSION-START — 2026-05-11T00:00:00Z — season-s01-pass-2-fix
+dispatch: resolve all faults from season-s01-pass-2-constraint.md + season-s01-pass-2-continuity.md — REFERENCE-DRIFT, POV-LEAKS, PROP-STATE, FORM faults (marks/reads-aloud/modifier/interiority/non-action-verb), SLUG-UNRESOLVED
+target: active-project/theater/proto-lines/s01.bones.md
+audit-report: active-project/staff/auditor/season-s01-pass-2-constraint.md + active-project/staff/auditor/season-s01-pass-2-continuity.md
+findings-queued: 24 individual faults + 1 pattern flag + 1 prop-state flag
+
+## GROUP2-POV-LEAKS — RESOLVED — 2026-05-11T00:03:00Z
+fault: IDs 157-158 (south gate entry outside range), IDs 282-283 (stairwell pauses with no relay coverage), IDs 203-204 (recipient-state assertions with no relay)
+scope: line
+change: deleted IDs 157, 158, 282, 283, 203, 204 by converting to blank time-skip markers (ID gaps preserved; no renumbering); beat 9 now opens at ID 159 (junction crossing); visitor beat now 281→284 with stairwell implied; beat 10 transmission gap flagged for screen-writer
+criteria met: yes — six offstage/uncovered bones removed; ID gaps left intact
+
+## GROUP1-REFERENCE-DRIFT — RESOLVED — 2026-05-11T00:02:00Z
+fault: "the maester" used in place of slug oc-broken-maester in all post-beat-16 bones (IDs 303+)
+scope: line
+change: targeted Edits on IDs 303–310 and 400–415 blocks; replaced "the maester" → "oc-broken-maester" as subject and in possessive forms (e.g. "the maester's footfall" → "oc-broken-maester's footfall"); also replaced listener occurrences (IDs 407, 409: "the stall-keeper speaks to the maester" → "speaks to oc-broken-maester"); IDs 416-419 relay lines confirmed maester-free; IDs 111-301 retain "the maester" correctly
+criteria met: yes — no "the maester" appears at ID 303 or later
+
+## GROUP1-REFERENCE-DRIFT — WORKING — 2026-05-11T00:01:00Z
+note: reading full bones file to enumerate all post-ID-302 occurrences of "the maester" before applying targeted Edits
+
 ## SESSION-START — 2026-05-10T01:00:00Z — series-audit-fix
 dispatch: resolve 6 faults from series-audit.md — scope corrections (res-003, res-004), supersedes chain (res-005), heading residue (fault-006), wrong-project warehouse card (fault-007), era-specific named figures in warehouse (fault-008)
 target: cards/conditions/ + active-project/warehouse/ (multiple cards)
