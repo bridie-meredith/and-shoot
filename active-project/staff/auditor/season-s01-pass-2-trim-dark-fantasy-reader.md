@@ -1,4 +1,317 @@
 # Season s01 — Pass 2 Trim — dark-fantasy-reader
+# Fork: 2-D | Cycle: 3 (FINAL)
+# Persona: dark-fantasy-reader
+# Input: active-project/theater/proto-lines/s01.bones.md (post-fixer compression + IDs 505/506 added)
+# Task: re-walk entertainment density; re-verdict 4 TOLERATED windows from cycle 2; full window walk
+
+---
+
+## Cycle 3 Method
+
+Same as cycles 1–2. Per-window verdict: ENGAGED / TOLERATED / BORED.
+Cap ≤10% TOLERATED, zero sustained BORED.
+Two consecutive BORED or three consecutive TOLERATED → REVISE.
+
+**Cycle-3 additions assessed:**
+- ID 505 (taylor-hebert-flea-bottom lowers the chin) — W16, beat 14, between 275 (holds eyes) and 276 (opens log)
+- ID 506 (the maester laughs) — W9, beat 7 close, between 131 (straightens the spine) and 132 (opens log)
+
+**Cycle-3 compression (fixer deletions):**
+- Range-expansion bones deleted at beats 14/19/24 — specifically the redundant spread bones (268 at beat 14; 348/349 at beat 19; 442/443 at beat 24 — Fish Gate comprehensive pass, south approach, and adjacent spread)
+- Log cycles deleted at beat 10 (gap bones 188, 192, 196–198, 203, 204 confirmed absent or replaced)
+- Maester transit deleted at beat 22 — continuation relays 418/419 deleted; now only onset (416) + cessation (417) + feet-hold (503) + log
+- Relay-mapping deleted at beat 10 — junction/Fish Gate/north relay bones no longer present
+
+**Unannounced cycle-3 additions found in file:**
+- ID 504 (taylor-hebert-flea-bottom stills) — W7 / beat 6 departure, between 495 (speaks to elder) and 86 (elder routes)
+- ID 507 (taylor-hebert-flea-bottom faces the Red Keep) — W26, beat 24, after 453 (closes the log)
+- ID 508 (oc-tanner-elder pauses) — W12, beat 10, between 500 (closes the log) and 501 (speaks to carter)
+
+These three are assessed as encountered.
+
+**Cycle 2 TOLERATED windows (4):** W3 (beat 2), W5 (beat 4), W9 (beat 7 close), W16 (beat 14).
+All non-flagged windows carry forward ENGAGED from cycle 2.
+
+---
+
+## Per-Window Verdicts — Cycle 3
+
+### Window 1 — IDs 1–10 (Beat 1)
+**ENGAGED** — carried forward.
+
+### Window 2 — IDs 11–23 (Beat 1, close + log)
+**ENGAGED** — carried forward.
+
+### Window 3 — IDs 25–34 (Beat 2)
+**TOLERATED** — unchanged.
+
+No cycle-3 bones in this window. The first network-spread inventory (flies, beetles, wasps) operates with no friction, no cost signal, no body response. The frictionless-instrument hot-button stands. This window exists to establish the register; the dark-fantasy reader accepts that function and does not reject the window outright — but will not call it ENGAGED. It remains the earliest and most forgivable of the structural concessions: the shard must be demonstrated before it can be shown to cost.
+
+*Fatigue note: this window reads differently now that the cycle-3 compression has tightened the mid-season. The earlier windows feel more like deliberate ground-laying in a shorter file. Minor benefit to the TOLERATED verdict — it does not tip to BORED.*
+
+*Hot-button: magic as reliable tool — soft flag maintained.*
+
+### Window 4 — IDs 36–46 (Beat 3)
+**ENGAGED** — carried forward.
+
+### Window 5 — IDs 48–60 (Beat 4)
+**TOLERATED** — unchanged.
+
+No cycle-3 bones. Three near-identical routing beats without friction or body-registration for Taylor. The peripheralization is structural and correct but inert at proto-line granularity. The administrative-register concern stands.
+
+*However: this window is now isolated. W3 and W5 are both TOLERATED but separated by W4 ENGAGED. The three-consecutive-TOLERATED trigger is not active. At cycle 3, with the overall density improved downstream, these two early TOLERATED windows read more clearly as setup texture rather than density failure. The dark-fantasy reader notes them as the floor of structural concession, not as active problems.*
+
+### Window 6 — IDs 62–81 (Beat 5)
+**ENGAGED** — carried forward.
+
+### Window 7 — IDs 83–103 (Beat 6, first segment) — NEW BONE 504
+**ENGAGED** — held; ID 504 assessed.
+
+Cycle-2 verdict was ENGAGED (495 did not degrade the window). Cycle-3 adds ID 504 (taylor-hebert-flea-bottom stills) between 495 (speaks to elder) and 86 (elder routes). The sequence is now: elder speaks → Taylor faces → Taylor speaks → Taylor stills → elder routes.
+
+The stilling here is different from the stilling in W18 (beat 16, bone 496, which signals pattern-recognition of the maester's phrase). Here the stilling is between Taylor's speech and the routing that follows — she speaks to the elder, then stops, then gets routed. The stilling implies the elder's response to her speech has landed before the route. It gives Taylor's departure a held breath before the dispatch. It is a small addition that does not change the window's overall register but adds micro-texture to the departure sequence.
+
+*Hot-button check: no new flag introduced. The stilling is interior; it does not read as power-demonstration or convenient pause. PASS.*
+
+ENGAGED — held.
+
+### Window 8 — IDs 104–116 (Beat 6, second segment / Beat 7)
+**ENGAGED** — carried forward.
+
+### Window 9 — IDs 118–134 (Beat 7, close) — NEW BONE 506
+**ENGAGED** — upgraded from TOLERATED.
+
+Cycle-2 complaint: the second full-perimeter walk near-repeats beat 6 structure. Maester's second read-aloud has only bone 131 (straightens the spine) as differentiation, insufficient. Window 9 was TOLERATED as third instance of network-spread + log-close architecture.
+
+Cycle-3 addition: ID 506 (the maester laughs) inserted between 131 (straightens the spine) and 132 (opens the log).
+
+The sequence is now: maester crosses room → maester speaks → beetles relay south-wall footfall → Taylor straightens the spine → **the maester laughs** → Taylor opens the log.
+
+This lands. The maester is doing research, speaking to the room — Taylor has been reading his pen-rhythm and aloud-reading as ambient data — and then he laughs. Not at Taylor. Not at anything Taylor prompted. At something in his own work. The laugh is the first event in the maester arc that the network relayed without being prompted by movement or speech-register. It is a beat of the world generating information the protagonist did not plan for: the maester is amusing himself, alone, in a room Taylor can hear through beetles, and it is audible. Taylor straightens her spine (131) before the laugh, which retroactively reads as posture under surveillance — she was already attending. The laugh is the reward that cost her nothing to receive but costs her something to file: she now has a resident who is engaged, not just working.
+
+This is the dark-fantasy reader's pull-back condition met: one moment where the world generates unexpected information and it changes the register of everything before it. The prior perimeter walk (W8) and the second perimeter walk (W9 opening) are no longer parallel loops — they bracket the moment when the maester became a variable rather than background noise.
+
+*Hot-button: world as set-dressing — the maester's laugh is self-directed, not audience-facing. He exists in his room independent of Taylor. PASS.*
+*Hot-button: enemies who pause — the maester is not pausing for Taylor. He laughed because something he found was interesting. PASS.*
+
+**ENGAGED.**
+
+### Window 10 — IDs 136–155 (Beat 8)
+**ENGAGED** — carried forward.
+
+### Window 11 — IDs 157–185 (Beat 9)
+**ENGAGED** — carried forward.
+
+### Window 12 — IDs 187–207 (Beat 10) — BONE 508 ASSESSED
+**ENGAGED** — held; ID 508 assessed.
+
+Cycle-2 verdict was ENGAGED (upgraded by bones 500/501/502). Cycle-3 adds ID 508 (oc-tanner-elder pauses) between 500 (taylor closes the log) and 501 (elder speaks to carter).
+
+The sequence is now: flies relay weather data → Taylor opens log → Taylor writes → Taylor closes log → **elder pauses** → elder speaks to carter → wasps relay the pass → Taylor opens log → Taylor writes → Taylor closes log.
+
+The elder's pause before speaking to the carter is a human hesitation inside the information-relay chain. The carter beat (501) already gave the distribution a named human node; the pause before it gives the elder a moment of deliberate decision — he stopped before routing the information. This is micro-texture: not a structural addition but a signal that the elder is exercising judgment, not just mechanically passing data. The apparatus has a human moment at the relay point.
+
+*Hot-button: magic as reliable tool — the elder's pause implies the information is not automatically distributed; someone with authority is choosing the route. Soft flag downgraded further. PASS.*
+
+ENGAGED — held.
+
+### Window 13 — IDs 209–230 (Beat 11)
+**ENGAGED** — carried forward.
+
+Note: fixer deleted some spread-bone variants here per the compression. The spread sequence now runs: 209 (overnight network) → 210 (dock-side alleys) → 211 (south-wall colony) → 212 (eastern-quarter approach) → exhale → 214 (junction return) → 215 (Fish Gate perimeter) → 216 (south-wall return) → 217 (window) → exhale → 219 (northern block) → 220 (eastern-quarter adjacent) → exhale → perimeter walk → writes → writes → exhale → headache → holds eyes → log. Structure unchanged at the level that earned ENGAGED (inaugural headache, triple exhale, first threshold). ENGAGED carried.
+
+### Window 14 — IDs 232–244 (Beat 12)
+**ENGAGED** — carried forward.
+
+### Window 15 — IDs 246–264 (Beat 13)
+**ENGAGED** — carried forward.
+
+### Window 16 — IDs 266–278 (Beat 14) — NEW BONE 505
+**ENGAGED** — upgraded from TOLERATED.
+
+Cycle-2 complaint: beat 14 was the isolated gap in the range-expansion arc. Beats 11/19/24 had differentiated body-cost shapes; beat 14 had only headache + eyes held. The cycle-2 upgrades to 19 and 24 made beat 14's flatness more visible, not less.
+
+Cycle-3 addition: ID 505 (taylor-hebert-flea-bottom lowers the chin) inserted between 275 (holds the eyes) and 276 (opens the log).
+
+The sequence is now: headache wakes → holds the eyes → **lowers the chin** → opens the log.
+
+The chin-lower is the right bone for this slot. It is smaller than the wall-facing at beat 19 (which is a re-orientation — the body turning away from the room) and far smaller than the wall-facing + spine-straightening at beat 24 (which is a full collapse-and-recovery arc). The chin-lower is a forward-drop: the head coming down under the weight of the headache before the log is opened. It reads as the first named posture change in the expansion arc after beat 11's clean-threshold headache, and it is distinct from beats 19 and 24 in both direction and magnitude.
+
+The escalation arc now reads with four distinct body-shapes:
+- Beat 11: headache wakes + holds eyes — threshold arrival, the first time
+- Beat 14: headache wakes + holds eyes + lowers chin — the weight has a direction, forward and down
+- Beat 19: headache wakes + holds eyes + faces the wall — the weight has re-oriented her, turns her away
+- Beat 24: headache wakes + holds eyes + faces the wall + straightens the spine — re-oriented and then the choice to return
+
+This is 0/1/2/3 in a directional logic: 0 reaction at 11 (inaugural), 1 at 14 (first posture yield), 2 at 19 (full reorientation), 3 at 24 (reorientation plus recovery). The screen-writer's stated intent — three recovery bones across the arc — is legible. The arc is not labeled, but it is readable: the body learns how to take the cost before it can recover from it.
+
+*Hot-button: magic as reliable tool — at 400m the tool is clearly billing. The chin-lower before the log signals the headache preceded the record-keeping, not the other way around. PASS.*
+
+**ENGAGED.**
+
+### Window 17 — IDs 280–294 (Beat 15)
+**ENGAGED** — carried forward.
+
+### Window 18 — IDs 296–313 (Beat 16)
+**ENGAGED** — carried forward (bone 496 assessed in cycle 2; alley-loop unresolved note maintained for flesh pass).
+
+Note: fixer compression at beat 16 removed the maester transit alley bones 303–313 significantly — file shows 305 (exits apothecary) → 306 (enters side alley) → 309 (enters upper room) → 310 (beetles relay) → 311 (opens log) → 312 (writes) → 313 (closes). The alley-exit loop is now compressed: the return-stairwell beat is gone, the re-entry-upper-room beat is a single step from the alley. This is an improvement — the loop is shorter. The "what did he do in the alley" concern (cycle-1 Finding 4) remains, but the compressor has removed the padding. The flesh pass carries this.
+
+ENGAGED — held.
+
+### Window 19 — IDs 315–328 (Beat 17)
+**ENGAGED** — carried forward.
+
+### Window 20 — IDs 330–342 (Beat 18)
+**ENGAGED** — carried forward.
+
+### Window 21 — IDs 344–359 (Beat 19)
+**ENGAGED** — carried forward (bone 497 upgraded in cycle 2).
+
+Note: fixer deleted spread bones 348/349 (Street-of-Steel approach and eastern-quarter proper). Sequence now: 344 (winter-onset network) → 345 (dock-side alleys) → 346 (south-wall colony) → 347 (eastern-quarter relay) → 350 (apothecary ground floor) → perimeter walk → writes × 2 → exhale → headache → holds eyes → faces wall → log. Five spread-beats instead of seven. The compression removes the repeat-gesture concern — five distinct zones, not seven items in the same register. The wall-facing (497) is unaffected. ENGAGED — held.
+
+### Window 22 — IDs 361–375 (Beat 20)
+**ENGAGED** — carried forward.
+
+### Window 23 — IDs 377–398 (Beat 21)
+**ENGAGED** — carried forward.
+
+### Window 24 — IDs 400–422 (Beat 22)
+**ENGAGED** — held; compression assessed.
+
+Cycle-2 minor concern: four consecutive pen-scratch continuation relays (416–419) before the feet-hold (503). The point was made two beats early.
+
+Cycle-3 compression: fixer deleted relay bones 418 and 419. Sequence is now: 416 (beetles relay onset) → 417 (beetles relay cessation) → 503 (taylor holds the feet) → 420 (opens log) → 421 (writes) → 422 (closes).
+
+Onset and cessation — start and end of the six-hour session — with the feet-hold between them and the log. This is correct structure: the session began, Taylor registered it (onset), the session ended, Taylor's body stopped (feet-hold), then she logged it. The four-beat mechanical repetition is gone. The minor concern from cycle 2 is resolved.
+
+*The remaining minor note (cycle-1 Finding 4, partially addressed at cycle 2) is now fully resolved.*
+
+ENGAGED — held.
+
+### Window 25 — IDs 424–436 (Beat 23)
+**ENGAGED** — carried forward.
+
+### Window 26 — IDs 438–453 (Beat 24) — BONE 507 ASSESSED
+**ENGAGED** — held; ID 507 assessed.
+
+Cycle-2 verdict was ENGAGED (bones 498/499 upgraded from TOLERATED). Cycle-3 adds ID 507 (taylor-hebert-flea-bottom faces the Red Keep) after 453 (closes the log), as a beat-close coda after the log sequence.
+
+The sequence now ends: headache wakes → holds eyes → faces wall → straightens spine → opens log → writes → closes log → **faces the Red Keep**.
+
+The Red Keep facing is a directional anchor that was absent from all prior expansion events. It is not a body-cost beat — it is a vector. After the full recovery arc (wall → spine → log) at the hardest expansion event, the protagonist's body orients toward a specific external landmark. This is new information: the cost was paid, the record was made, and now she is looking at something. The Red Keep is the season's latent structural threat (Hand's apparatus, Hightower clerks). Taylor facing it after the log is the first time her body has acknowledged the external architecture that contains her. She is not logging it. She is looking at it.
+
+*Hot-button: hope that costs nothing — the Red Keep facing is not resolution. It is orientation. The dark-fantasy reader reads this as: she finished the cost, made the record, and then looked at what she does not yet know she is inside of. That is earned weight, not hope. PASS.*
+*Hot-button: catharsis that isn't earned — nothing is resolved by looking at the Red Keep. The log is closed; the surface is not. PASS.*
+
+This is the strongest single bone in the cycle-3 additions. It gives the 600m expansion event a coda that the other three expansion events do not have, which correctly marks beat 24 as the ceiling event before the season peak. Beat 11's inaugural headache. Beat 14's chin-yield. Beat 19's wall-facing. Beat 24's wall-facing + recovery + Red Keep orientation. The four events are now fully differentiated in both structure and meaning.
+
+ENGAGED — held.
+
+### Window 27 — IDs 455–475 (Beat 25)
+**ENGAGED** — carried forward.
+
+### Window 28 — IDs 477–494 (Beat 26)
+**ENGAGED** — carried forward.
+
+---
+
+## Count Summary — Cycle 3
+
+Total windows: 28
+
+| Verdict | Cycle 1 Count | Cycle 2 Count | Cycle 3 Count | Change (C2→C3) |
+|---------|---------------|---------------|---------------|----------------|
+| ENGAGED | 20 (71.4%) | 24 (85.7%) | 26 (92.9%) | +2 |
+| TOLERATED | 8 (28.6%) | 4 (14.3%) | 2 (7.1%) | -2 |
+| BORED | 0 (0%) | 0 (0%) | 0 (0%) | — |
+
+**Remaining TOLERATED windows: W3 (beat 2), W5 (beat 4)**
+
+---
+
+## Threshold Check — Cycle 3
+
+- TOLERATED cap: ≤10% → **PASS** (7.1%)
+- Sustained BORED: zero → PASS
+- Two consecutive BORED: none → PASS
+- Three consecutive TOLERATED: none → PASS (W3/W5 separated by W4 ENGAGED)
+
+---
+
+## Residual Findings — Cycle 3
+
+### Finding 1 — Beat 14 expansion gap (CLOSED)
+
+Bone 505 (lowers the chin) resolves this. The expansion arc is now fully differentiated across four events (0/1/2/3 recovery bone sequence). No longer a revision target.
+
+### Finding 2 — W3/W5 early procedural windows (OPEN, ACCEPTED)
+
+W3 (beat 2) and W5 (beat 4) remain TOLERATED on structural grounds that are not revision targets at this cycle. Both are below the cost-visibility threshold the dark-fantasy reader prefers. Both carry soft hot-button flags (reliable-tool for W3, administrative-routing for W5).
+
+However: at 7.1% TOLERATED (2/28 windows), these two windows are within the acceptable cap and are distributed (not consecutive). The dark-fantasy reader accepts them as the price of ground-laying in the season's first quarter. The cost-visibility established across the remainder of the file is strong enough that these two procedural windows read as deliberate texture, not structural failure.
+
+*Condition for acceptance:* the flesh pass must not add more procedural-loop texture in the W3/W5 vicinity. If those two windows gain additional frictionless bones during fleshing, the soft flags will harden. The bones-level concession is granted; the flesh pass spends it.
+
+### Finding 3 — Beat 16 maester alley-loop (RESIDUAL, MINOR)
+
+The compression at beat 16 (fixer removed the stairwell-return and redundant transit bones) has shortened the alley-loop. The loop is less padded. What the maester did in the alley is still not on screen. This is a flesh-pass note, not a bones revision target. The window is ENGAGED. The finding is not blocking.
+
+### Finding 4 — Beat 22 continuation relay repetition (CLOSED)
+
+Fixer deletion of IDs 418/419 resolves the four-beat mechanical repetition. Onset + cessation + feet-hold is the correct architecture. Closed.
+
+---
+
+## Hot-Button Summary — Cycle 3
+
+| Hot-button | Beat(s) | Cycle 2 Status | Cycle 3 Status |
+|------------|---------|---------------|----------------|
+| Hope that costs nothing — dock-runner | Beat 8 | Soft flag | Soft flag maintained — cost still deferred to beat 21; no new bone at beat 8 |
+| Hope that costs nothing — range expansions | Beats 11/14/19/24 | Beat 14 soft flag; others PASS | All PASS — chin-lower at 14 registers cost before log |
+| Hope that costs nothing — Red Keep facing | Beat 24 | n/a | PASS — orientation is not resolution |
+| Magic as reliable tool — beat 2 | Beat 2 | Soft flag | Soft flag maintained |
+| Magic as reliable tool — range expansions | Beats 11/14/19/24 | Beat 14 soft flag; others PASS | All PASS — four distinct cost shapes |
+| Magic as reliable tool — beat 10 elder pause | Beat 10 | n/a (bone added C3) | PASS — elder exercises judgment, not automatic relay |
+| Enemies who pause | Multiple | PASS | PASS — maester's laugh is self-directed; no narrative convenience |
+| Violence without aftermath | Beat 12 | PASS | PASS carried |
+| World as set-dressing | Beats 6–26 | PASS | PASS; maester's laugh (506) is strongest world-texture addition across three cycles |
+| Superstition register | Multiple | No fault at bone level | No fault at bone level |
+| Catharsis before weight | Beats 13/24/26 | PASS | PASS — Red Keep facing after beat-24 log is weight accumulation, not release |
+
+---
+
+## File-Level Verdict — Cycle 3
+
+**ACCEPT**
+
+**Threshold met:** 7.1% TOLERATED (cap is ≤10%). Zero BORED. No consecutive TOLERATED clusters.
+
+**What landed in cycle 3:**
+
+ID 506 (the maester laughs) is the best single bone across all three cycles. It is the first event in the file where the world generates information the protagonist did not prompt and did not expect. The maester's laugh, relayed through beetles, changes the register of the entire beat-7 close — the prior perimeter walk and this one are no longer parallel loops but bracketed observations of a subject who has crossed from data source to variable. The dark-fantasy reader's pull-back condition (one moment where the world pushes back in a way that costs something real) is met here in the most unexpected form: the world pushed back with amusement.
+
+ID 505 (lowers the chin) closes the expansion arc's gap. The four expansion events now have a legible cost-escalation in body terms. The arc is 0/1/2/3 and each increment is directionally distinct: threshold arrival / forward yield / full reorientation / reorientation and recovery. The range-expansion template that drove three consecutive TOLERATED verdicts in cycle 1 is now the season's clearest structural argument.
+
+ID 507 (faces the Red Keep) is the cycle-3 addition that the task prompt did not name but which earns its place: it is the only bone in the file where Taylor's body orients toward the external architecture that contains the season's threat. After the hardest expansion event, after the full cost arc, she looks at it. The season closes on that. That is correct.
+
+**Remaining concessions (flesh-pass conditions):**
+
+- W3 and W5 are accepted as procedural ground-laying. The flesh pass must not add frictionless bones in these windows. The soft flags (reliable-tool, administrative-routing) are held at tolerance, not cleared.
+- Beat 8 dock-runner exchange: soft hot-button flag on cost deferral is maintained. The flesh pass should surface some cost signal at the transaction point or immediately adjacent. Not a revision demand — a tone note for the author.
+- Beat 16 maester alley-loop: what the maester did in the alley is a flesh-pass question. The compression has reduced the loop's padding; the remaining gap is content, not architecture.
+
+---
+
+---
+
+# ARCHIVE — Cycle 2
+
+*Cycle 2 report follows in full below. Superseded by cycle 3 above.*
+
+---
+
+# Season s01 — Pass 2 Trim — dark-fantasy-reader
 # Fork: 2-D | Cycle: 2
 # Persona: dark-fantasy-reader
 # Input: active-project/theater/proto-lines/s01.bones.md (503 entries including new 495–503)
