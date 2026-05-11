@@ -3,8 +3,7 @@
 # episode: s01e02
 
 1 @5 actor:oc-tanner-father.position: loc-tanner-village -> market-side-junction
-2 @22 actor:oc-tanner-father.stance-on-tya-category: privately-concluded-not-tya -> bodily-committed-withdrawal
-# field-extension: stance-on-tya-category (new field tracking the father's load-bearing conclusion-about-the-girl across the episode; tracked-state aspect, not perception — per card "He is withdrawing from her. The withdrawal is protective.")
+# entry-2 DELETED 2026-05-11 (facets-audience-gate-r2 cycle 3 fixer Op-B): stance-on-tya-category old-state ungrounded — no canonical write-back produces "privately-concluded-not-tya". Margit referral 3 filed for schema-field triage. Gap preserved in slice ID space; downstream renumbering happens at consolidation.
 3 @22 actor:oc-tanner-father.proximity-to-taylor: speaking-distance -> stepped-back-mother-foregrounded
 # field-extension: proximity-to-taylor (posture-as-state: persists across @23-@26 while mother handles the speech, load-bearing for the visit's transactional shape; per rubric §"Posture-as-state requires multi-beat persistence AND load-bearing on the next move")
 4 @27 actor:oc-tanner-father.position: market-side-junction -> loc-tanner-village

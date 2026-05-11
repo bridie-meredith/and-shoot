@@ -35,7 +35,6 @@ author: taylor-hebert-flea-bottom (POV impersonator, facet-authoring mode; R2 ju
 29 @159 the maester's relay-route through the beetles names him as ambient signal, no longer hypothesis
 30 @171 the second sentence is the vigil-candle as fact, no longer as fixture
 31 @173 the standing IS the vigil ending; the speech-act was preparation
-32 @177 the log entry must hold the change without naming what the change means to her
 33 @23 the address has arrived at a name the body answered to and a person not there
 34 @117 the outer-district nodes have come live and the ceiling is no longer where it was
 35 @146 the close has filed him under a name the network did not name him by until today

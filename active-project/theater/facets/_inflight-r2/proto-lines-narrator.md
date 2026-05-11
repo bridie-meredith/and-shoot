@@ -171,5 +171,5 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 173 oc-tanner-mother stands [feel:1] [narrator:31] [sensory:5] [state:4] [state:8] [state:9] [vibes:18] [vibes:19] [vibes:22] [vibes:23]
 174 oc-tanner-mother exits the base room [state:10]
 176 taylor-hebert-flea-bottom opens the log
-177 taylor-hebert-flea-bottom writes the entry [narrator:32]
+177 taylor-hebert-flea-bottom writes the entry
 178 taylor-hebert-flea-bottom closes the log

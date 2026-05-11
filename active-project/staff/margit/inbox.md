@@ -11,6 +11,12 @@ Triage-and-file referrals. Each entry is a brief for a candidate monument-condit
 
 ---
 
+## Referral 3 — tanner-father stance-on-tya-category field-extension (schema question)
+
+**Source:** `active-project/theater/facets/state-updates.md` entry 8 @22 (deleted by fixer Op-B, facets-audience-gate-r2 cycle 3). The deleted entry read `actor:oc-tanner-father.stance-on-tya-category: privately-concluded-not-tya -> bodily-committed-withdrawal` with a `# field-extension:` comment citing the tanner-father card ("He is withdrawing from her. The withdrawal is protective.") as its basis. The rubric's write-back-canonicity requirement rejected this entry because the old-state value `privately-concluded-not-tya` is card-characterization-derived but has no canonical memory or s01e01 state anchor — no prior write-back produces that state, so the old-state is ungrounded and the delta cannot be written to the state-updates ledger. The field-extension itself (`stance-on-tya-category`) is load-bearing for the father's arc across visits, but it cannot be entered via state-updates without a grounded old-state. Two options for triage: (a) add a `stance` field formally to the actor state schema with init-states declared at project activation — this would give `privately-concluded-not-tya` a canonical origin point in the project-open state file, making the @22 delta re-enterable in a future episode as a legitimate write-back; (b) keep the stance as card-internal behavior governed by the tanner-father card's existing characterization prose ("He is withdrawing from her. The withdrawal is protective.") and remove `stance-on-tya-category`-class field-extensions from the state-updates rubric's eligibility list for actor-state, treating character stance as card-resident rather than ledger-tracked. No card change is authored here; this referral is for margit to triage the schema question before the field-extension pattern recurs.
+
+---
+
 ## Referral 1 — cond-pre-deployment-ritual-monument
 
 **Source:** `active-project/theater/facets/memory.md` mem:3 @64. Advisory from worm-canon reviewer in `active-project/staff/auditor/facets-audience-gate-r2.md` §"Memory (structural rebuild)".
