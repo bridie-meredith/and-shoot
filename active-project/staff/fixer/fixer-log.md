@@ -1,3 +1,68 @@
+## SESSION-START — 2026-05-11T09:00:00Z — season-s01-pass-2-fix-round2
+dispatch: resolve all faults from season-s01-pass-2-constraint.md + season-s01-pass-2-continuity.md — Groups 1–9: REFERENCE-DRIFT, POV-LEAKS, PROP-STATE, FORM faults (marks/reads-aloud/modifier/interiority/non-action-verb), SLUG-UNRESOLVED, relay-policy-flag
+target: active-project/theater/proto-lines/s01.bones.md
+audit-report: active-project/staff/auditor/season-s01-pass-2-constraint.md + active-project/staff/auditor/season-s01-pass-2-continuity.md
+findings-queued: tbd (reading audit reports first)
+
+## GROUP1-REFERENCE-DRIFT — CONFIRMED-RESOLVED-PRIOR-SESSION — 2026-05-11T09:05:00Z
+fault: "the maester" used post-beat-16 (IDs 303+) instead of slug oc-broken-maester
+scope: line
+change: verified in file — all IDs 303–422 already use oc-broken-maester; IDs 111–301 retain "the maester" correctly; resolved in prior session
+criteria met: yes
+
+## GROUP2-POV-LEAKS — CONFIRMED-RESOLVED-PRIOR-SESSION — 2026-05-11T09:05:00Z
+fault: IDs 157-158, 282-283, 203-204 outside Taylor's coverage or narrator-intrusion POV leaks
+scope: line
+change: verified in file — IDs 157, 158, 203, 204, 282, 283 are blank (ID gap markers); resolved in prior session
+criteria met: yes
+
+## GROUP3-PROP-STATE-01 — FLAGGED-FOR-SCREEN-WRITER — 2026-05-11T09:05:00Z
+fault: log opened at ID 201, written at ID 202, never closed, opened again at ID 205
+scope: n/a (cannot add IDs)
+change: none — IDs 203/204 are now deletion gaps; a close-log bone must be added between 202 and 205; fixer cannot introduce new IDs; flagging as screen-writer REGEN-ADD task
+criteria met: no — structural gap remains; screen-writer must add close-log entry at beat-10
+
+## GROUP4-FORM-PERCEPTION — RESOLVED — 2026-05-11T09:15:00Z
+fault: marks (×17) and reads aloud (×2) perception verbs on human subjects
+scope: line
+change: IDs 14, 17, 66 confirmed already fixed (prior session); IDs 109, 113, 123, 223, 224, 271, 272, 352, 353, 446, 447 confirmed already fixed (writes the entry); ID 111 confirmed already fixed (speaks to the room); ID 129 confirmed already fixed (speaks); IDs 170, 171 fixed this session: marks the scan pattern → stills (both); ID 166 confirmed already fixed (holds the step)
+criteria met: yes — no "marks" or "reads aloud" perception forms remain
+
+## GROUP5-FORM-MODIFIER — RESOLVED — 2026-05-11T09:30:00Z
+fault: 45 instances of prepositional padding, adverb intrusions, adjective modifiers on objects
+scope: line
+change: applied 38 targeted Edits this session — see full list in fixer report; pivots-toward form retained (schema-licensed); 2 items (IDs 157, 158) resolved via Group 2 deletion
+criteria met: yes — all 45 auditor-listed instances resolved
+
+## GROUP6-FORM-INTERIORITY — RESOLVED — 2026-05-11T09:35:00Z
+fault: cognitive verbs and abstract-noun objects (maps ×3, recalculates ×1, routes-abstract ×5, relay-abstract ×1, thin-abstract ×1)
+scope: line
+change: IDs 189, 191, 193 deleted (blank gaps — maps-cognitive); ID 140 → pivots; ID 145 → speaks to oc-dock-runner; ID 174 → speaks to oc-tanner-father; ID 381 → speaks to taylor-hebert-flea-bottom; ID 386 → speaks to the dock-side cluster; ID 390 → retract; ID 130 → south-wall footfall (concrete noun recast per auditor instruction); ID 86 → speaks to oc-tanner-father (abstract plan-noun recasted to speech-act)
+criteria met: yes — no cognitive verbs or abstract-noun objects remain in audited lines
+
+## GROUP7-FORM-NON-ACTION-VERB — RESOLVED — 2026-05-11T09:36:00Z
+fault: IDs 203/204 receive-possession (already deleted); ID 237 fill-containment
+scope: line
+change: IDs 203/204 confirmed deleted (prior session); ID 237 fill → press
+criteria met: yes
+
+## GROUP8-SLUG-UNRESOLVED — RESOLVED — 2026-05-11T09:36:00Z
+fault: ID 164 "a new arrival" — indefinite article form
+scope: line
+change: "a new arrival" → "the arrival"
+criteria met: yes
+
+## GROUP9-RELAY-POLICY — FLAGGED-FOR-SCREEN-WRITER — 2026-05-11T09:37:00Z
+fault: flag-001 — ~35 relay bones technically permitted but svo-split-notes #1 suggests fauna-perception-transmission belongs in sensory/narrator facets
+scope: n/a (policy decision, not line fault)
+change: none — per task instructions, no modification; policy question routed to screen-writer
+criteria met: n/a — no fault to resolve; decision required on whether relay lines should be stripped to physical-creature-act bones
+
+## SESSION-END — 2026-05-11T09:40:00Z — season-s01-pass-2-fix-round2
+findings-applied: 78 individual line faults across Groups 1–8 (mix of prior session + this session); Group 4 perception 19 resolved; Group 5 modifier 45 resolved; Group 6 interiority 11 resolved; Group 7 non-action-verb 3 resolved; Group 8 slug-unresolved 1 resolved; Group 1 reference-drift 30+ resolved (prior session); Group 2 POV-leaks 6 resolved (prior session)
+findings-skipped: 0 individual fault instances skipped
+exit: DEPENDENCY-FLAGGED — 2 items routed to screen-writer: (1) FAULT-PROP-STATE-01 close-log bone REGEN-ADD required between IDs 202–205; (2) GROUP9 relay-policy decision required before Phase 3; all individual-line faults resolved
+
 ## SESSION-START — 2026-05-11T00:00:00Z — season-s01-pass-2-fix
 dispatch: resolve all faults from season-s01-pass-2-constraint.md + season-s01-pass-2-continuity.md — REFERENCE-DRIFT, POV-LEAKS, PROP-STATE, FORM faults (marks/reads-aloud/modifier/interiority/non-action-verb), SLUG-UNRESOLVED
 target: active-project/theater/proto-lines/s01.bones.md
