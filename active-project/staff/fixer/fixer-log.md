@@ -1,3 +1,21 @@
+## SESSION-START — 2026-05-11T18:00:00Z — facets-final-audit-r3-remediation
+dispatch: s01e01 facets-final-audit-r3 — 5 fixable findings: r3-signal-001 (state-updates.md multi-frontmatter), r3-signal-002 (tone-law card Exemption 5 vocabulary + band — route to margit), r3-signal-003 (cite-index stale by 7 entries — regenerate or annotate, run LAST), r3-signal-004 (@134 rung 1→3 in tensometer.md + tensometer-s01e01.md), r3-signal-005 (Annette-adjacent in memory.md mem:6); r3-signal-006 and r3-signal-007 out of scope (editor-call deferrals)
+target: active-project/theater/facets/state-updates.md + tensometer.md + tensometer-s01e01.md + memory.md + active-project/theater/facets/_cite-index.md + cards/conditions/cond-series-tone-constraints-125ac.card.md (via margit)
+audit-report: active-project/staff/auditor/facets-final-audit-r3.md
+findings-queued: 5 (r3-signal-001 through r3-signal-005); 2 out-of-scope (r3-signal-006, r3-signal-007)
+
+## r3-signal-005 — RESOLVED — 2026-05-11T18:06:00Z
+fault: memory.md mem:6 @43 description contains "Annette-adjacent" — Earth-Bet proper noun in description prose; URI-032 hard-fence; slug component already clean (monument-failed-recognition-by-dying-parent)
+scope: line
+change: "helpless-protector / failed-recognition pattern — Annette-adjacent" → "helpless-protector / failed-recognition pattern — dying-parent-recognition-fail variant"; rest of entry and slug unchanged
+criteria met: yes — no Earth-Bet proper noun in description prose; mechanism-descriptive form substituted
+
+## r3-signal-004 — RESOLVED — 2026-05-11T18:05:00Z
+fault: tensometer.md body entry 126 @134 rung=1; cross-facet sources (state-updates, interest-narrator, curve-verdict KICKBACK-3 RESOLVED) all treat @134 as rung=3; body and commentary inconsistent
+scope: line
+change: (1) tensometer.md body line `126 @134 1` → `126 @134 3`; (2) 3s justified list amended — @134 entry added; (3) frequency-band 3s count 7→8, rate 5.0%→5.7%; 1s count 113→112, rate 80.1%→79.4%; total 141 unchanged; (4) Exemption 5 (c) criterion text updated: "5.0% is at the standard floor" → "5.7% is within the standard band (5-10%)"; (5.i) same four edits mirrored to tensometer-s01e01.md (canonical archive); both files now agree. 2s count/rate unchanged (21/141 ≈ 14.9%).
+criteria met: yes — body entry aligned with KICKBACK-3 RESOLVED declaration and cross-facet commentary; 3s justified list complete; frequency-band section accurate; both tensometer files agree
+
 ## SESSION-START — 2026-05-11T17:00:00Z — facets-final-audit-s01e01-remediation
 dispatch: s01e01 facets final audit remediation — C1 (tens out-of-range strip, both tensometer files), C2 (memory.md margit-slug rename), C3 (mem:7 @98 description rewrite), C4 (narrator:25 @98 one-clause rewrite), C5 (interest-narrator.md stale density figure)
 target: theater/facets/tensometer.md + theater/facets/tensometer-s01e01.md + theater/facets/memory.md + theater/facets/interest-narrator.md
