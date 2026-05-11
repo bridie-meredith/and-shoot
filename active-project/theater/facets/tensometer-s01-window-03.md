@@ -1,6 +1,6 @@
 facet: tensometer
 window: s01-window-03
-bones: 330–494
+bones: 330–494 (includes interpolated IDs 497, 498, 499, 503, 507, 513, 514, 522, 523, 524)
 author: dramatist
 ---
 
@@ -16,6 +16,8 @@ author: dramatist
 5 @334 2
 6 @335 2
 7 @336 1
+7a @522 3
+# axis: stakes-visibility + reversal-proximity peaks — clerk crosses Fish Gate with the file entry; the recording physically leaves Taylor's observable range; Scene 330-342 rupture resolved
 8 @337 1
 9 @338 1
 10 @339 1
@@ -45,6 +47,8 @@ author: dramatist
 34 @366 1
 35 @367 2
 36 @368 2
+36a @523 3
+# axis: stakes-visibility peaks — second clerk releases the record book; the entry is sealed; the file's second commit is irreversible; Scene 361-375 rupture resolved
 37 @369 1
 38 @370 1
 39 @371 1
@@ -159,6 +163,8 @@ author: dramatist
 148 @488 2
 149 @489 1
 150 @490 1
+150a @524 3
+# axis: reversal-proximity + body-charge — wall-facing IS the decision to record the close-states as coincidence; the season's terminal reader-asymmetry is committed through Taylor's body before the log entries; denouement registration resolved
 151 @491 1
 152 @492 1
 # @493 orphan removed (proto-line deleted in cycle 1 dedup)
@@ -166,29 +172,30 @@ author: dramatist
 
 ---
 
-## Frequency band (cycle 3 corrected)
+## Frequency band (cycle 3 F7-bone residual cleanup)
 
-After cycle-2 rerates (@335 3→2, @368 3→2), orphan removals (@462, @493, 0c@515), and cycle-2 boundary-carry additions (0a@513, 0b@514):
+After cycle-2 rerates (@335 3→2, @368 3→2), orphan removals (@462, @493, 0c@515), cycle-2 boundary-carry additions (0a@513, 0b@514), and cycle-3 rupture additions (@522, @523, @524 all rung 3):
 
-- Total entries: ~152
-- 1s: ~101 ≈ 66.4% (target 60–75%) — within band
-- 2s: ~47 ≈ 30.9% (target 20–30%) — at upper edge
-- 3s: 4 ≈ 2.6% (target 5–10%) — **below floor, STRUCTURAL-RESIDUAL**
+- Total entries: ~155
+- 3s: 7/155 ≈ 4.5% (target 5–10%) — improved from 2.6%; approaches floor; structural note carried forward
+- 2s: ~47/155 ≈ 30.3% (target 20–30%) — at upper edge
+- 1s: ~101/155 ≈ 65.2% (target 60–75%) — within band
 
-3-frequency below floor is honest to the bones. Scalar inflation refused per rubric anti-pattern 4 (plot-importance inflation). Remaining 3s: @394 (coin placed), @395 (Taylor closes fist), @417 (maester sets the pen), @468 (elder seals account).
+3-frequency at 4.5% is an honest improvement from 2.6%. The three rupture additions provide scene-level structural resolution: each named scene now carries a legitimate 3. Season-average-3-frequency remains below 5% target and is noted; scalar inflation refused.
 
-## Screen-writer kickback (rubric-mandated for below-floor 3-frequency)
+Active 3s: @394 (coin placed), @395 (Taylor closes fist), @417 (maester sets the pen), @468 (elder seals account), @522 (clerk crosses Fish Gate), @523 (second clerk releases record book), @524 (Taylor faces wall at denouement).
 
-Scenes lacking legitimate 3-candidates after honest re-rating:
-- **Scene 330–342 (first Hightower clerk):** the records-the-entry beat is procedural; rubric-compliant rating is 2 not 3 ("registration IS the turn" was plot-importance inflation per W3 mechanic cycle 2 finding).
-- **Scene 361–375 (second clerk, apothecary):** same pattern; @368 was inflated for same reason.
-- **Scene 477–494 (full circuit denouement walk):** transit-class with no rupture; would qualify for scene-as-transit exception but no formal flag granted.
+## Screen-writer kickback (cycle 3 resolution)
 
-These three scenes either need rupture-class bone additions (screen-writer REGEN-ADD) or formal scene-as-transit exceptions granted by the dramatist. Per URI-026 per-window iteration cap=2, this is acknowledged as `tens-gate-residual-{W3-structural-3-deficit}` carried to Phase 6.
+- **Scene 330–342 (first Hightower clerk) — RESOLVED.** ID 522 (`the clerk crosses the Fish Gate`) adds rupture: the file physically leaves Taylor's observable range. Stakes-visibility + reversal-proximity 3. tens-gate-residual-{W3-Scene-330-342} cleared.
+- **Scene 361–375 (second clerk, apothecary) — RESOLVED.** ID 523 (`the second clerk releases the record book`) adds rupture: the sealing of the entry is irreversible. Stakes-visibility 3. tens-gate-residual-{W3-Scene-361-375} cleared.
+- **Scene 477–494 (full circuit denouement walk) — RESOLVED.** ID 524 (`taylor-hebert-flea-bottom faces the wall`) adds registration: the physical commitment to recording the close-states as coincidence. Reversal-proximity + body-charge 3. tens-gate-residual-{W3-Scene-477-494} cleared.
+
+tens-gate-residual-{W3-structural-3-deficit} partially resolved: scene-level rupture criteria met in all named scenes. Window 3-frequency improved to 4.5%; below 5% floor remains noted.
 
 ## Curve verdict
 
-Rise-peak-fall present at window scope. Structural climax at @468 (sealed account). 3s at @335, @368, @394, @395, @417, @468 form credible escalation with climax in final third. Window 3 passes curve-shape review with 3-frequency flag noted.
+Rise-peak-fall present at window scope. Structural climax at @468 (sealed account). Active 3s at @394, @395, @417, @468, @522, @523, @524 form credible escalation; clerk scenes now carry rupture peaks; denouement registration now anchored. Window 3 passes curve-shape review. 3-frequency at 4.5% noted (below 5% floor but scene-level criteria now met).
 
 ## Screen-writer flag (advisory)
 
@@ -197,9 +204,14 @@ Maester-market trip (IDs 400–422) carries no rupture bone. Buy/refuse decision
 ## Axis citations summary
 
 3s justified:
-- @335: stakes-visibility + reversal-proximity peaks — clerk writes entry; registration IS the turn
-- @368: same as 335; second clerk in apothecary; pattern doubled
 - @394: stakes-visibility + reversal-proximity peaks — elder places coin; irreversible registration
 - @395: body-charge peaks — Taylor closes fist on coin; double-tap with @394 (two parties committing the same turn)
 - @417: reversal-proximity peaks — oc-broken-maester sets the pen; the discrete act of stopping his writing reverses prior motion (the pen-scratch session terminates)
 - @468: three axes light (stakes-visibility + reversal-proximity + body-charge) — elder seals account; structural climax
+- @522: stakes-visibility + reversal-proximity peaks — clerk crosses Fish Gate; the entry-bearing file physically leaves Taylor's observable range; recording is beyond reach
+- @523: stakes-visibility peaks — second clerk releases the record book; the entry is sealed; irreversible second commit
+- @524: reversal-proximity + body-charge peaks — wall-facing IS the decision to record the close-states as coincidence; the season's terminal reader-asymmetry committed through Taylor's body before the log entries
+
+Previously rated 3, downgraded in cycle 2:
+- @335 (3→2): clerk writes entry; rubric-compliant rating 2 (plot-importance inflation; cycle 2 finding)
+- @368 (3→2): second clerk writes entry; same pattern

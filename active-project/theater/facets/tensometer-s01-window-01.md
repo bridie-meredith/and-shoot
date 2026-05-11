@@ -1,6 +1,6 @@
 facet: tensometer
 window: s01-window-01
-bones: 1–155 (includes interpolated IDs 495, 504, 506)
+bones: 1–155 (includes interpolated IDs 495, 504, 506, 517, 518, 525)
 author: dramatist
 ---
 
@@ -127,6 +127,8 @@ author: dramatist
 121 @130 1
 122 @131 2
 123 @506 2
+123a @518 3
+# axis: reversal-proximity peaks — beetle-relay rhythm breaks; surveillance plateau collapses into discrete absence; the laugh's effect is registered through the network's response
 124 @132 1
 125 @133 1
 126 @134 1
@@ -153,21 +155,23 @@ author: dramatist
 
 # Late-inserted bones (W1 scope, post-cycle-1 regen)
 147 @517 2
+148 @525 1
+# POV-leak anchor for bones 71-77 lord's-man scene
 
 ---
 
-## Frequency band (cycle 2 corrected)
+## Frequency band (cycle 3 corrected — F7-bone residual cleanup)
 
-After cycle-1 regen + cycle-2 tens additions (@516 rung 2, @517 rung 2):
+After cycle-3 additions (@518 rung 3 for W1-Scene-L rupture; @525 rung 1 POV-leak anchor):
 
-- Total entries: 147
-- 3s: 7/147 ≈ 4.8% (target 5–10%) — marginally below floor
-- 2s: 26/147 ≈ 17.7% (target 20–30%) — below floor
-- 1s: 114/147 ≈ 77.6% (target 60–75%) — above ceiling
+- Total entries: 149
+- 3s: 8/149 ≈ 5.4% (target 5–10%) — within band
+- 2s: 26/149 ≈ 17.4% (target 20–30%) — below floor (structural; opening-window low-charge)
+- 1s: 115/149 ≈ 77.2% (target 60–75%) — above ceiling (same)
 
-Misses are real but reflect structurally appropriate low-charge establishing material. Window 1 is opening; village-domestic + KL-arrival scenes are inherently low-charge. Scalar inflation refused.
+3-frequency now within band after Scene-L rupture addition. 2s/1s structural pattern carries forward as opening-window character (acknowledged in cycle 2; no scalar inflation).
 
-**Scene L kickback (KICKBACK-3) unresolved** — forwarded to Phase 6 as `tens-gate-residual-{W1-Scene-L-no-rupture}` per URI-026 per-window iteration cap=2.
+**Scene L kickback (KICKBACK-3) RESOLVED.** ID 518 (`the beetles fall silent`) provides reversal-proximity peak after the maester laughs — the network's collective absence-act IS the rupture; the laugh's effect registers through the network's silence. tens-gate-residual-{W1-Scene-L} cleared.
 
 ## Curve verdict
 
@@ -181,6 +185,7 @@ Window climax: Scene H (bones 86, 90) — routing to KL + gate-crossing. Densest
 - @90: reversal-proximity peaks — Taylor crosses gate; point of no return
 - @140: reversal-proximity peaks — dock-runner pivots; evasion enacted
 - @151: reversal-proximity peaks — Taylor speaks back; first irreversible social commit in KL
+- @518: reversal-proximity peaks — beetle-relay rhythm breaks; surveillance plateau collapses into discrete absence; the laugh's effect is registered through the network's response
 
 ## Kickbacks (to screen-writer if window-revise routes)
 
@@ -188,4 +193,4 @@ Window climax: Scene H (bones 86, 90) — routing to KL + gate-crossing. Densest
 
 **KICKBACK-2: Scene J (bones 105–116).** Sustained-2 without rupture. Bones 111–113 form live-surveillance plateau (maester speaks / beetles relay / Taylor records) but no commit. Structural ask: rupture beat where relay produces a specific datum registering as turn for Taylor.
 
-**KICKBACK-3: Scene L (bones 128–134/506).** Peak at 2, no rupture. Bones 131 (Taylor straightens) and 506 (maester laughs) are highest charge but neither commits. Structural ask: maester's laugh needs named target or consequence to earn 3.
+**KICKBACK-3: Scene L (bones 128–134/506). RESOLVED — Phase 3 cycle 3.** ID 518 (`the beetles fall silent`) provides the rupture after ID 506 (maester laughs). The network's collective absence-act IS the reversal moment — sustained surveillance plateau collapses into discrete silence. Rated 3 on reversal-proximity axis. tens-gate-residual-{W1-Scene-L} cleared.

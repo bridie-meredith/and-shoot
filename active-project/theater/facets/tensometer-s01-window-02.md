@@ -1,6 +1,6 @@
 facet: tensometer
 window: s01-window-02
-bones: 159–328
+bones: 159–328 (includes interpolated IDs 509, 510, 511, 512, 519, 520, 521, 526, 527)
 author: dramatist
 ---
 
@@ -25,6 +25,8 @@ author: dramatist
 15 @173 1
 16 @174 1
 17 @175 1
+17a @519 3
+# axis: stakes-visibility + reversal-proximity peaks — father's step-back is the body acknowledging the new category; the visit's transactional outcome is now committed; Scene A rupture resolved
 18 @176 1
 19 @177 1
 20 @178 2
@@ -43,9 +45,11 @@ author: dramatist
 31 @201 1
 32 @202 1
 33 @500 1
+33a @526 1
 34 @508 2
 35 @501 1
 36 @502 1
+36a @527 1
 37 @205 1
 38 @206 1
 39 @207 1
@@ -112,6 +116,8 @@ author: dramatist
 100 @274 2
 101 @275 2
 102 @505 2
+102a @520 3
+# axis: body-charge + reversal-proximity peaks — stylus-drop interrupts log-writing; headache cost interrupts the act of accounting for it; Scene H rupture resolved
 103 @276 1
 104 @277 1
 105 @278 1
@@ -151,6 +157,8 @@ author: dramatist
 139 @321 1
 140 @322 1
 141 @323 2
+141a @521 3
+# axis: reversal-proximity peaks — standing IS the commit; the disclosure becomes physical fact through the body's rising; the vigil-end is now an event, not a statement; Scene L rupture resolved
 142 @324 1
 143 @326 1
 144 @327 1
@@ -158,18 +166,21 @@ author: dramatist
 
 ---
 
-## Kickbacks (to screen-writer if window-revise routes)
+## Kickbacks — RESOLVED in cycle 3 F7-bone residual cleanup
 
-- **SCENE A (159–181) — rise-without-peak.** Six 2s build (166/170/171/172/178/179) but no 3. Father's goods-presentation (172) is the strongest 3 candidate.
-- **SCENE E (209–225) — `[inert-stretch]`.** 17 consecutive 1s. Network deployment + relay beats without escalation. Headache at 226 rescues the tail but the stretch is flatline.
-- **SCENE H (266–278) — rise-without-peak.** Three 2s (274/275/505) without 3. Headache recurrence should escalate past 226-227 but doesn't.
-- **SCENE L (315–324) — rise-without-peak.** Mother's vigil-candle reveal scene has two 2s (318/323) without 3. Closes without disclosure-rupture or held-breath threshold.
+- **SCENE A (159–181) — RESOLVED.** ID 519 (`oc-tanner-father steps back`) adds rupture beat after the stills-cluster; father's step-back is the body's commit to the new category for Taylor. tens-gate-residual-{W2-Scene-A} cleared.
+- **SCENE E (209–225) — inert-stretch carry-forward.** Not a tens-gate-residual; flagged for editor at facet-authoring time as a network-density stretch suitable for compression in prose.
+- **SCENE H (266–278) — RESOLVED.** ID 520 (`taylor-hebert-flea-bottom drops the stylus`) interrupts the log-writing during the 400m headache; the stylus-drop is the rupture. tens-gate-residual-{W2-Scene-H} cleared.
+- **SCENE L (315–324) — RESOLVED.** ID 521 (`oc-tanner-mother stands`) adds the physical commit after the vigil-candle disclosure speech-acts; standing IS the commit. tens-gate-residual-{W2-Scene-L} cleared.
 
-## Frequency-band
+## Frequency-band (cycle 3 corrected — F7-bone residual cleanup)
 
-- 3s: 4/~163 ≈ 2.5% (target 5–10%) — below band
-- 2s: ~23/~163 ≈ 14% (target 20–30%) — below band
-- Caused by Scene A/H/L gaps, not miscalibration. Scalar inflation refused.
+After cycle-3 additions (@519, @520, @521 all rung 3; @526, @527 rung 1 beat-10 placement bones):
+- Total entries: ~168
+- 3s: 7/168 ≈ 4.2% (target 5–10%) — close to floor; structural-3-deficit cleared at scene level even if season-average remains modest
+- 2s: ~24/168 ≈ 14.3% (target 20–30%) — below floor; opening-season character
+- 1s: remainder
+- Scalar inflation refused. Scene-level rupture criteria met in all named scenes (A, H, L). Beat-10 bones (@526, @527) rated 1 — procedural placement, no rupture.
 
 ## Window shape
 
