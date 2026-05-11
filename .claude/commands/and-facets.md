@@ -1,10 +1,10 @@
 ---
-description: Unified facet pipeline for one episode. Single command, five phases — fanout (R1 parallel authoring) → fanin (merge tool) → fanout (R2 parallel judging) → fanin (decision-log consolidate + cite-index rebuild) → audit (single auditor dispatch). Tens is upstream-supplied by /and-season. Output - active-project/theater/facets/ + audit report. Usage - /and-facets [episode-slug]
+description: Unified facet pipeline for one episode. Single command, six phases — R1 fanout → R1 fanin → R2 fanout → R2 fanin → audit (mechanical) → audience-gate (adversarial, blocking). Tens is upstream-supplied by /and-season. Output - active-project/theater/facets/ + audit report + audience-gate verdict. Usage - /and-facets [episode-slug]
 ---
 
-Unified facet pipeline. One episode in, audited graph out. The four legacy sub-commands (-r1, -r2, -r3, -audit) are folded into this command; R3 is retired (the relaxation pass was default-skipped in the prior chain and is gone in this collapse).
+Unified facet pipeline. One episode in, audited + audience-accepted graph out. The four legacy sub-commands (-r1, -r2, -r3, -audit) are folded into this command; R3 is retired (the relaxation pass was default-skipped in the prior chain and is gone in this collapse). Phase 5b — audience adversarial gate — is the final blocking gate; the auditor's mechanical scan and the audience's adversarial reading must BOTH come back clean before /and-facets is "done."
 
-You are the orchestrator. Five phases run in strict sequence:
+You are the orchestrator. Six phases run in strict sequence:
 
 ```
 proto-lines/<slug>.md  (bones; upstream tens citations already accrued)
@@ -39,15 +39,27 @@ proto-lines/<slug>.md  (bones; upstream tens citations already accrued)
             arbiter glue (T1/T4 interventions) runs over shards.
         │
         ▼
-   PHASE 5 — AUDIT (single auditor dispatch)
+   PHASE 5 — AUDIT (single auditor dispatch, mechanical)
             Flag-only cross-cutting graph audit.
             Output: active-project/staff/auditor/facets-final-audit.md.
+            HARD findings remediate via fixer; re-audit until 0 HARD.
+        │
+        ▼
+   PHASE 5b — AUDIENCE-GATE (adversarial, BLOCKING)
+            Per-facet audience adversarial dispatches reading the
+            annotated proto-lines + facet graph + cite-index.
+            Specialists fire for facets that have them
+            (e.g. sensory); active project audience falls back for
+            the rest. Per-facet aggregate verdict (accept / revise
+            / fail). Any revise/fail routes to fixer; re-audit
+            (Phase 5) + re-fire 5b. Cycle cap: 3.
         │
         ▼
    PHASE 6 — PERSIST + orchestrator-critic verdict
+            (only after Phase 5 = 0 HARD AND Phase 5b = ACCEPT)
 ```
 
-R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/state/vibes) + base proto-lines + upstream `tensometer.md`. R2 is **graph-aware**: every judge gets all nine R1 facet files + the cite-index. The audit is **cross-cutting**: one fork, full graph.
+R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/state/vibes) + base proto-lines + upstream `tensometer.md`. R2 is **graph-aware**: every judge gets all nine R1 facet files + the cite-index. The audit is **cross-cutting**: one fork, full graph. The audience-gate is **adversarial-graph-aware**: per-facet adversarial reviewers attack the locked graph the way the auditor's mechanical scan cannot.
 
 ## Args
 
@@ -62,7 +74,8 @@ R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/
    - `protolined` — fresh run; start at Phase 1.
    - `faceted-r1` — partial-run resume; skip Phase 1+2, start at Phase 3.
    - `faceted-r2` — partial-run resume; skip Phase 1–4, start at Phase 5.
-   - `audited-r1` — already done; print "already audited; re-run requires explicit re-audit" and exit unless re-audit is wanted.
+   - `audited-r1-mechanical` — Phase 5 cleared (0 HARD) but audience-gate not yet run or in mid-cycle. Resume at Phase 5b.
+   - `audited-r1` — both Phase 5 + Phase 5b cleared; already done. Print "already audited; re-run requires explicit re-audit" and exit unless re-audit is wanted.
 3. Read the proto-lines file. Lift the seven extended-header fields: `episode`, `narrator`, `goal`, `cast`, `locations`, `prior_episode`, `aggregate_range`.
 4. **Upstream tens precondition.** Locate `active-project/theater/facets/tensometer-<season-slug>e<NN>.md` (final per-episode form from /and-season Phase 7 Step 4). Copy/rename to `active-project/theater/facets/tensometer.md` as the working surface. Abort with the resolution path if missing — facets cannot run without the bone-gate tens output.
 5. Confirm `active-project/theater/facets/` is empty apart from `tensometer.md`. If other facet files exist for this episode, abort with paths printed; archive first to re-run. (Skip this check on partial-run resume.)
@@ -306,18 +319,134 @@ For each finding, name the facet author. Flag-only: no executes.
 
 **Auditor return to orchestrator:** path to report; finding counts per class; one-line headline (CLEAN | FINDINGS-PRESENT with count).
 
+**Phase 5 gate:** HARD = 0 required before Phase 5b fires. SIGNAL findings are advisory (do not block Phase 5b). If HARD > 0, dispatch fixer with the audit report; re-fire Phase 5 until HARD = 0 or remediation budget (1 pass) exhausts. Remediation cap-burn at HARD > 0 escalates to orchestrator-critic NOT-SUCCESSFUL.
+
+On Phase 5 clean, set showrunner-memory status: `faceted-r2` → `audited-r1-mechanical`. The episode is NOT done until Phase 5b also clears.
+
+---
+
+## Phase 5b — AUDIENCE-GATE: per-facet adversarial reviewers (BLOCKING)
+
+The final gate. The auditor's mechanical scan caught what mechanical scans can catch; Phase 5b is where adversarial readers attack the locked graph through their lenses and the pipeline either earns ACCEPT or routes back to fixer for another cycle.
+
+### Reviewer assembly (variable per facet)
+
+For each of the nine facets, the orchestrator picks the reviewer set:
+
+1. **Specialist personas** — if `staff/audience/<slug>/card.md` files exist with `target-facet: <facet>` in frontmatter, those specialists fire as the reviewer set for that facet. Example: the `sensory` facet currently has `sensory-disambiguation-pedant`, `sensory-modality-coverage`, `sensory-old-state-reader`.
+2. **Active project audience (fallback)** — for facets without specialists, the 3 active personas under `active-project/audience/<slug>/card.md` fire in graph-aware adversarial mode (NOT prose mode). Each persona reads the facet entries through its own lens (atmosphere / register / source-fidelity / etc.).
+
+Reviewer membership is recorded in the verdict file. New specialist personas authored later get picked up automatically by the next /and-facets run.
+
+### Dispatch shape
+
+One parallel Agent block per facet, all facets fired concurrently. For nine facets at three reviewers each (specialists or fallback), that is up to 27 concurrent audience dispatches in a single message. (Two of the nine — `tensometer` and `vibes` — may run with a single reviewer dispatch if the audience cards do not yet hold facet-attack rubrics for them; verdict notes which facets ran undermanned.)
+
+### Read inputs per reviewer
+
+- The facet file under review (`<facet>.md` or per-character slice for `feeling`/`state-updates`).
+- The canonical proto-lines file `active-project/theater/proto-lines/<slug>.md` (already annotated with `[<facet>:<id>]` citations from R1+R2 merges — this is the working "stitcher preview" the audience attacks).
+- The cite-index `active-project/theater/facets/_cite-index.md`.
+- The facet's own rubric (e.g. `design/shoot-v2/rubric-memory-flags.md`).
+- The auditor's Phase 5 report (so the audience knows what the mechanical scan caught and can deliberately attack the seams the auditor cannot articulate).
+- The reviewer's own persona card.
+
+### Forbidden inputs
+
+- Other facet rubrics not relevant to the under-review facet.
+- Source prose / draft stitch (Phase 5b reads the graph layer, not generated prose).
+- Other reviewers' verdicts (each reviewer attacks independently; cross-reviewer cross-talk happens at aggregation time, not at reading time).
+
+### Per-reviewer output
+
+Each reviewer produces a single short verdict file under `active-project/staff/audience/<persona-slug>/<facet>-r<N>-verdict.md`:
+
+```yaml
+---
+reviewer: <persona-slug>
+facet: <facet>
+cycle: <N>           # 1, 2, or 3
+episode: <slug>
+date: <YYYY-MM-DD>
+verdict: <accept | revise | fail>
+---
+
+# Verdict reasoning
+
+<1-3 sentences of direct adversarial reading — what the entries (or the graph) actually do or fail to do through this reviewer's lens. Do not primarily cite rubric clauses; primary attacks are direct readings.>
+
+# Entry-level callouts (revise / fail only)
+
+- [<facet>:<id>] @<proto> — <direct reading attack — what specifically lands wrong, in this reviewer's voice>.
+- ...
+
+# Convergence trace (orchestrator-critic input)
+
+<For each callout, note whether the Phase 5 auditor independently flagged the same entry. List the auditor finding IDs that overlap. This is what closes the bidirectional-loop criterion structurally.>
+```
+
+### Aggregation
+
+Per facet:
+- **3-of-3 accept** → facet passes.
+- **any revise / fail** → facet fails this cycle; route callouts to fixer (or facet author, if cross-cutting rewrite is needed).
+
+Across all facets:
+- **all 9 facets pass** → Phase 5b passes. Proceed to Phase 6.
+- **any facet fails** → enter remediation cycle.
+
+### Remediation cycle
+
+1. Aggregate revise/fail callouts across all reviewers. Dedupe by `[<facet>:<id>]`.
+2. Dispatch **fixer** with the consolidated callouts + the facet rubrics. Fixer routes per-entry — small revisions to the facet file directly; cross-facet conflicts to the responsible author via Agent.
+3. Re-fire Phase 5 (auditor, full eleven-class scan) — fixer changes may surface new mechanical findings.
+4. Re-fire Phase 5b (audience, all facets that did not 3-of-3 accept in the prior cycle; facets that passed do not re-fire).
+5. Increment cycle counter.
+
+### Cycle cap
+
+Cap: **3 audience cycles** per `/and-season` convention. On cap-burn (3 cycles without 3-of-3 accept across all facets), the orchestrator-critic verdict goes NOT-SUCCESSFUL with the failing facets named; the run does NOT flip status to `audited-r1`; the user is notified for escalation.
+
+### Output to disk
+
+- Per-reviewer verdict files under `active-project/staff/audience/<persona-slug>/`.
+- Consolidated audience-gate report at `active-project/staff/auditor/facets-audience-gate-r<N>.md` summarizing per-facet aggregate + convergence trace.
+- Showrunner-memory status: on accept, `audited-r1-mechanical` → `audited-r1`. On cap-burn, status stays at `audited-r1-mechanical` with `audience_gate_cap_burned: true`.
+
+### Convergence trace (closes criterion 4)
+
+The aggregate audience-gate report includes a convergence trace section:
+
+```
+# Convergence trace
+- Auditor findings: <count> (HARD <n>, SIGNAL <n>)
+- Audience callouts (across all reviewers, deduped): <count>
+- Shared findings (audience + auditor both flagged the same entry): <list of [<facet>:<id>]>
+- Audience-only findings: <count>
+- Auditor-only findings: <count>
+- Bidirectional loop verdict: <validated | one-sided | not-validated>
+```
+
+A `validated` verdict requires at least one shared finding across the two paths. `one-sided` means both paths fired but produced disjoint findings — surface as a TASTE-FLAG for next-cycle calibration. `not-validated` means one path fired empty — typically signals reviewer underpowering for the relevant facet.
+
 ---
 
 ## Phase 6 — Persist + orchestrator-critic verdict
 
 ### 6a. Persist
 
-1. Confirm `facets-final-audit.md` written.
+**Precondition:** Phase 5 = 0 HARD AND Phase 5b = ACCEPT (3-of-3 per facet, all nine facets). If either gate is unclean, do not persist — return to the appropriate phase.
+
+1. Confirm `facets-final-audit.md` (final-cycle Phase 5 report) and `facets-audience-gate-r<N>.md` (final-cycle Phase 5b report) both written.
 2. Update `active-project/staff/showrunner/memory.md`:
-   - Status: `faceted-r2` → `audited-r1`.
+   - Status: `audited-r1-mechanical` → `audited-r1`.
    - `audit_path: active-project/staff/auditor/facets-final-audit.md`.
    - `audit_complete: true`.
    - `audit_findings: <count>` if non-zero.
+   - `audience_gate_path: active-project/staff/auditor/facets-audience-gate-r<N>.md`.
+   - `audience_gate_complete: true`.
+   - `audience_gate_cycles: <count>` (1, 2, or 3).
+   - `bidirectional_loop: <validated | one-sided | not-validated>` from the convergence trace.
    - `facets_path: active-project/theater/facets/`.
    - `round_1_complete: true`, `round_2_complete: true`.
 
@@ -354,19 +483,37 @@ Phase 4 — R2 fanin (consolidate + merge):
   Citation accrual: R1 <count> → R2 <count>
   Cite-index rebuilt
 
-Phase 5 — Audit:
+Phase 5 — Audit (mechanical):
   Mode: flag-only
   HARD: STRUCTURAL=<n> CONTRADICTION=<n> DEDUP=<n> SUPERFLUOUS=<n> CONSTRAINT=<n>
   SIGNAL: FREQ-BAND=<n> META=<n> AP-SCAN=<n> TASTE-FLAG=<n> PILE-UP=<warranted>/<over>
   CURVE-SHAPE: <verdict>
   Report: active-project/staff/auditor/facets-final-audit.md
+  Remediation cycles: <count>; final HARD: 0
+
+Phase 5b — Audience-gate (adversarial):
+  Cycles: <count> / 3
+  Per-facet aggregate (final cycle):
+    tensometer:        <accept | revise | fail>
+    location-state:    <accept | revise | fail>
+    interest-narrator: <accept | revise | fail>
+    sensory:           <accept | revise | fail>
+    state-updates:     <accept | revise | fail>
+    memory:            <accept | revise | fail>
+    feeling:           <accept | revise | fail>
+    metaphor:          <accept | revise | fail>
+    vibes:             <accept | revise | fail>
+  Reviewers fired: <count> dispatches (specialists: <n>; fallback active-audience: <n>)
+  Convergence trace: <count> shared / <count> audience-only / <count> auditor-only findings
+  Bidirectional loop: <validated | one-sided | not-validated>
+  Report: active-project/staff/auditor/facets-audience-gate-r<N>.md
 
 Status: <slug> audited-r1
 ```
 
 ### 6c. Orchestrator-critic verdict (mandatory)
 
-Read `staff/audience/and-facets-orchestrator-critic/card.md`. The critic evaluates the run's 7 acceptance criteria (synopsis: 9 facet files exist; 0 HARD findings post-audit; per-facet pass rate ≥75% clean; bidirectional loop convergence; showrunner memory current; process gaps captured; wall-clock budget stated). Produce verdict appended to the master summary:
+Read `staff/audience/and-facets-orchestrator-critic/card.md`. The critic evaluates the run's 7 acceptance criteria (synopsis: 9 facet files exist; 0 HARD findings post-audit; per-facet pass rate ≥75% clean; Phase 5b audience-gate ACCEPT 3-of-3 per facet; showrunner memory current; process gaps captured; wall-clock budget stated). Produce verdict appended to the master summary:
 
 ```
 /and-facets orchestrator-critic verdict — <episode-slug>:
@@ -374,7 +521,9 @@ Read `staff/audience/and-facets-orchestrator-critic/card.md`. The critic evaluat
   Criteria met: <count> / 7
   Cap-refusals: <count> (<%> of seams)
   HARD findings post-audit: <count>
-  Bidirectional loop: <healthy | diverged | not-validated>
+  Audience-gate: <ACCEPT (all 9 facets 3-of-3) | PARTIAL (<n> facets short) | CAP-BURNED>
+  Audience-gate cycles: <count> / 3
+  Bidirectional loop (convergence trace): <validated | one-sided | not-validated>
   Wall-clock: <stated budget | overrun>
   Caveats (if any): <list>
   Recommendation: <ship | iterate | escalate>
