@@ -250,7 +250,9 @@ Dispatch **auditor** (fork) with the full graph:
 5. **CONTRADICTION** — two facet entries set incompatible state on the same anchor; both flagged.
 6. **DEDUP** — cross-facet-same-anchor / within-facet-different-anchor / within-facet-same-anchor.
 7. **SUPERFLUOUS** — lonely entries that don't survive rubric scrutiny. Convention: tens rating=1 and off-anchor vibes are never superfluous.
-8. **CONSTRAINT** — cross-facet contract violations: memory without NI-spine; metaphor without resolvable `licensed-by:` anchor; feeling duplicating POV NI; vibes with unresolvable or forward-citing `licensed-by:`; state-updates `<old>` contradicting prior state; series-law (Earth-Bet hard-fence proper-noun scan: Brockton Bay, Skitter, Lung, Khepri, Bakuda, PRT, etc.); POV-perceptual access on NI.
+8. **CONSTRAINT** — cross-facet contract violations: memory without NI-spine; metaphor without resolvable `licensed-by:` anchor; feeling duplicating POV NI; vibes with unresolvable or forward-citing `licensed-by:`; state-updates `<old>` contradicting prior state; POV-perceptual access on NI.
+
+   **Earth-Bet hard-fence proper-noun scan (URI-AUDITOR-CONSTRAINT-CALIBRATION, 2026-05-11):** case-insensitive substring scan against the Earth-Bet proper-noun list across **every text field** of every facet entry — including but not limited to: NI free-text rationale, memory target-reference glosses (the parenthetical `(earth-bet: ...)` and the `s<NN>e<NN>:<id>` slug components alike), metaphor `licensed-by:` notes and figure text, vibes entity-target-primary fields, feeling somatic-tell text, state-updates field names AND `<old>` / `<new>` values, sensory disambiguation notes, loc-state composite-state and observable-affordance fields. Slug components matter: a margit-referral slug embedding `khepri-` or `gold-morning-` is a hard-fence violation even when no full English phrase is rendered. Names to scan (non-exhaustive starter list — refresh against the canonical Earth-Bet hard-fence list at every audit): Brockton Bay, Skitter, Lung, Khepri, Bakuda, PRT, Endbringer, Gold Morning, Scion, Echidna, Behemoth, Leviathan, Simurgh, Cauldron, Coil, Tattletale, Bitch, Grue, Regent, Imp, Aisha, Glaive, Glory Girl, Panacea. Any hit is HARD; emit `[<facet>:<id>] @<proto> — earth-bet-hard-fence — <name> at <field>: "<surrounding-text>"`.
 9. **AP-SCAN** — per-rubric anti-pattern mechanical scan (tens AP1-3, memory AP-functional-callback, feeling AP-named-feeling-vocab, metaphor AP3 / AP7 / AP12, vibes AP-multi-source / AP8 sentence-parsability, etc.).
 10. **TASTE-FLAG** — audience-attack-anticipation candidates: atmosphere-thin / momentum-stall / voice-fidelity. Signal-only; feeds bidirectional tuning loop.
 11. **PILE-UP REVIEW** — proto-lines with >4 co-located facets; verdict per pile-up: warranted | over-decoration.
@@ -391,6 +393,8 @@ Per facet:
 - **3-of-3 accept** → facet passes.
 - **any revise / fail** → facet fails this cycle; route callouts to fixer (or facet author, if cross-cutting rewrite is needed).
 
+**Strict-aggregation enforcement (URI-AUDIENCE-AGGREGATION-RULE, 2026-05-11).** Aggregation is performed by the orchestrator from the per-reviewer verdict files on disk. The orchestrator does NOT delegate aggregation to an audience-subagent. The 2-of-3 majority rule that applies to line and plan review (`.claude/agents/audience.md`) does NOT apply here — a single dissenting persona fails the facet. An audience-subagent that returns a single aggregated verdict instead of writing per-reviewer files has drifted; re-dispatch with explicit "write one verdict file per persona under `active-project/staff/audience/<persona-slug>/`; do not aggregate" instructions.
+
 Across all facets:
 - **all 9 facets pass** → Phase 5b passes. Proceed to Phase 6.
 - **any facet fails** → enter remediation cycle.
@@ -402,6 +406,15 @@ Across all facets:
 3. Re-fire Phase 5 (auditor, full eleven-class scan) — fixer changes may surface new mechanical findings.
 4. Re-fire Phase 5b (audience, all facets that did not 3-of-3 accept in the prior cycle; facets that passed do not re-fire).
 5. Increment cycle counter.
+
+### Reviewer-stall handling (URI-AUDIENCE-CYCLE-2-MEMORY-STALL, 2026-05-11)
+
+A reviewer dispatch may stall at the 600s agent-watchdog with no verdict file written. When it does:
+
+1. **Do not re-dispatch the same prompt blindly.** Stalls correlate with payload size (memory facet on cycle 2 is the known case — full nine-facet graph + cite-index + Phase 5 report + cycle-1 verdicts adds up). First re-dispatch trims payload to the reviewer's persona card + the facet under review + the prior-cycle verdict for this same persona + the fixer-pass diff (only what changed since the prior cycle).
+2. **If the trimmed re-dispatch also stalls**, write a `mechanical-inference` verdict file at `active-project/staff/audience/<persona-slug>/<facet>-r<N>-verdict.md` containing: the persona-slug, facet, cycle, episode, date, an explicit `verdict: revise` (default-conservative) OR `verdict: accept` only if the fixer diff intersected every cycle-1 callout from this persona AND no new entries were added. Include a clearly marked `# mechanical-inference` block explaining the input set used. Log the stall + inference path in the consolidated audience-gate report.
+3. **Default-conservative** — when uncertain, the inferred verdict is `revise`. Audience adversarial mode is hostile by construction; silence under load should not flip to ACCEPT.
+4. **Stall pattern surfaces in the orchestrator-critic report** as a process gap entry, not a finding. The pattern is a tooling-bound problem (watchdog interaction with payload) and gets traced to the same URI on every re-encounter.
 
 ### Cycle cap
 
