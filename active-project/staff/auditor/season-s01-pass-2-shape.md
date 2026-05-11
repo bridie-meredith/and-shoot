@@ -1,92 +1,90 @@
 # Phase 2 shape — s01
 
-## Stretch identification
+## Cycle 2
 
-**Beat 1 (IDs 1–23): waking, father's tell-audit** — rise-peak-fall; father's scanning escalates IDs 7–17; exit at log.
+### Structural identification (updated)
 
-**Beat 2 (IDs 25–34): 300m inventory** — flat-constant. IDs 28 and 30 are identical motion bones (`taylor-hebert-flea-bottom walks the yard boundary`). Procedural; no micro-inflection.
+Beat 6 (IDs 83–92 + 495): partially revised. ID 495 adds `taylor-hebert-flea-bottom speaks to oc-tanner-elder` before the routing. Taylor has visible participation. The structural hinge is still not marked: speaking ≠ choosing. ELIDED-CHOICE-BEAT6 is not resolved; reduced in severity.
 
-**Beat 3 (IDs 36–46): mother's song test** — rise-peak-fall; peak at ID 43 (mother drops the song). Tight.
+Beat 10 (IDs 187–207 + 500–502): improved. New bones add close-log, elder-to-carter exchange, and wasps-relay of labor-web pass. Observation-to-routing qualitative shift now has bone representation. FLAT-PROCEDURAL-BEAT10 partially addressed.
 
-**Beat 4 (IDs 48–60): father's labor withdrawal** — flat-constant. Father's routing choreography visible at IDs 48–57 but no bone marks Taylor registering the pattern.
+Beat 16 (IDs 296–313 + 496): resolved. ID 496 (`taylor-hebert-flea-bottom stills`) functions as recognition event before log-open. MAESTER-NAMING-GAP-BEAT16 cleared.
 
-**Beat 5 (IDs 62–81): reeve → lord's-man, file opens** — rise-peak-fall; peak at IDs 74–75 (record book opens, entry written).
+Beat 19 (IDs 344–359 + 497): resolved. `faces the wall` after holds-eyes differentiates cost. RANGE-EXPANSION-FORMULA beat-19 instance cleared.
 
-**Beat 6 (IDs 83–116): choice to KL, placement, 48-hour mapping** — rise-without-peak. The choice-moment is elided. ID 86 routes placement; ID 87 is Taylor lifting the pack. No bone for choosing.
+Beat 22 (IDs 400–422 + 503): partially revised. ID 503 (`taylor-hebert-flea-bottom holds the feet`) resolves BEAT22-INFLECTION-ABSENT. IDs 417/418/419 — three consecutive `beetles relay the continuation` bones — remain unchanged. INERT-STRETCH at 417–419 not cleared.
 
-**Beat 7 (IDs 118–134): full 300m catalog, dark perimeter, maester ambient** — flat-constant. Maester ambient at IDs 128–130 is the only differentiated action; dark perimeter not registered as constraint.
+Beat 24 (IDs 438–453 + 498/499): resolved. Two-bone recovery sequence (faces wall → straightens spine) differentiates beat 24 from beat 14's single-bone recovery. RANGE-EXPANSION-FORMULA beat-24 cleared.
 
-**Beat 8 (IDs 136–155): dock-runner Watch-pattern event** — rise-peak-fall; suppression at ID 142 (Taylor holds feet) is load-bearing; two-stage event lands.
+### Escalation arc (updated)
 
-**Beat 9 (IDs 157–185): family visit, father marks strategic scan** — rise-peak-fall; both parents register the difference (IDs 163–171).
+Season arc still rises toward beat 25 and falls to beat 26. Range-expansion formula now shows differentiated cost across beats 14/19/24 (1 / 2 / 3 recovery bones respectively). Arc escalation in the physical-cost dimension now legible. Beat 10's observation-to-routing transition marked. Remaining flatness: beats 2/4/7 unchanged. Beat 22's inert-stretch still bleeds three identical bones into an otherwise functional surveillance event.
 
-**Beat 10 (IDs 187–207): whisper chain mapping, anonymous routing** — flat-constant-deflation. 21 active bones, all procedural. Qualitative shift from observation to routing not marked.
+### Structural commitments
 
-**Beat 11 (IDs 209–230): first range expansion ~330m, headache** — rise-peak-fall; headache wakes Taylor at ID 226 (first physiological cost).
+- Two parallel arcs: both visible. Intact.
+- Range arithmetic: cost escalation differentiated by recovery sequence length. Commitment met.
+- Maester naming: recognition event at ID 496. Met.
+- Village grief-debt open: intact.
+- Khepri silence: honored. Zero Khepri references in IDs 1–503.
+- One POV: honored.
 
-**Beat 12 (IDs 232–244): eviction** — rise-peak-fall; suppressed collective response at ID 241.
+### Flags (remaining)
 
-**Beat 13 (IDs 246–264): second family visit, wage claim, partial payment** — rise-peak-fall; peak at IDs 254–255 (partial payment).
+- **ELIDED-CHOICE-BEAT6** `[UNRESOLVED]` — ID 495 partially addresses the gap but speaking ≠ choosing. Minimum fix: one bone between ID 495 and ID 86 marking the moment of choosing (registering, stilling, crossing, committing — any form that reads as a hinge rather than a conversational turn).
+- **INERT-STRETCH-BEAT22** `[UNRESOLVED — formerly PEN-SCRATCH-REPETITION-BEAT22]` — IDs 417/418/419 remain three consecutive `beetles relay the continuation` bones. Minimum fix: reduce the continuation cluster to one bone (keep ID 416 `onset`, cut two of three `continuation` repeats). Or differentiate as onset / duration / cessation.
+- FLAT-PROCEDURAL-BEAT2 — IDs 28/30 identical. Secondary. Unchanged.
+- FLAT-PROCEDURAL-BEAT4 — IDs 48–57 withdrawal choreography, no registration. Secondary. Unchanged.
+- FLAT-PROCEDURAL-BEAT7 — IDs 118–134 dark perimeter not registered. Secondary. Unchanged.
 
-**Beat 14 (IDs 266–278): range crosses 400m** — rise-peak-fall but identical micro-shape to beat 11.
+### Verdict: RE-ORDER-OR-REVISE
 
-**Beat 15 (IDs 280–294): unusual visitor at maester's door** — rise-peak-fall; 40-minute conversation visible; Taylor holds feet at ID 288.
+Two flags prevent CLEAN:
+1. ELIDED-CHOICE-BEAT6 — season's structural hinge still absent.
+2. INERT-STRETCH-BEAT22 — three identical bones at 417/418/419.
 
-**Beat 16 (IDs 296–313): maester becomes named log entry** — flat-constant. Two log-write clusters bracket routine maester movement; no recognition event.
+Both are minimal fixes (one bone for beat 6; one or two cuts/replacements for beat 22). Neither requires replanning.
 
-**Beat 17 (IDs 315–328): mother alone, vigil candle stopped** — rise-peak-fall; vigil-stopping at IDs 320–322.
+---
 
-**Beat 18 (IDs 330–342): first clerk at junction** — rise-peak-fall; record-book action at IDs 334–336.
+## Cycle 1 [archived]
 
-**Beat 19 (IDs 344–359): range crosses 500m, full vertical** — rise-peak-fall but third iteration of formulaic spread → walk → headache → log.
+### Stretch identification
 
-**Beat 20 (IDs 361–375): second clerk at apothecary** — rise-peak-fall; four-bone dialogue cluster at IDs 363–366; owner names Taylor.
+Beat 1 (IDs 1–23): waking, father's tell-audit — rise-peak-fall.
+Beat 2 (IDs 25–34): 300m inventory — flat-constant. IDs 28/30 identical.
+Beat 3 (IDs 36–46): mother's song test — rise-peak-fall.
+Beat 4 (IDs 48–60): father's labor withdrawal — flat-constant.
+Beat 5 (IDs 62–81): reeve → lord's-man — rise-peak-fall.
+Beat 6 (IDs 83–116): rise-without-peak; choice-moment elided.
+Beat 7 (IDs 118–134): flat-constant. Dark perimeter not registered.
+Beat 8 (IDs 136–155): rise-peak-fall.
+Beat 9 (IDs 157–185): rise-peak-fall.
+Beat 10 (IDs 187–207): flat-constant-deflation.
+Beat 11 (IDs 209–230): rise-peak-fall; first physiological cost.
+Beat 12 (IDs 232–244): rise-peak-fall.
+Beat 13 (IDs 246–264): rise-peak-fall; wage formalization.
+Beat 14 (IDs 266–278): formulaic identical to beat 11.
+Beat 15 (IDs 280–294): rise-peak-fall.
+Beat 16 (IDs 296–313): flat-constant; recognition event absent.
+Beat 17 (IDs 315–328): rise-peak-fall.
+Beat 18 (IDs 330–342): rise-peak-fall.
+Beat 19 (IDs 344–359): formulaic third iteration.
+Beat 20 (IDs 361–375): rise-peak-fall.
+Beat 21 (IDs 377–398): rise-peak-fall; cluster-burn cost.
+Beat 22 (IDs 400–422): flat-constant; pen-scratch repetition + no Taylor inflection.
+Beat 23 (IDs 424–436): rise-peak-fall.
+Beat 24 (IDs 438–453): formulaic fourth iteration.
+Beat 25 (IDs 455–475): rise-peak-fall; climax.
+Beat 26 (IDs 477–494): denouement.
 
-**Beat 21 (IDs 377–398): Fish Gate task, cluster burned** — rise-peak-fall; cluster-burn at IDs 389–390 as cost-inflection.
+### Cycle 1 flags
 
-**Beat 22 (IDs 400–422): maester walks to stall, extended pen-scratch** — flat-constant. Stall exchange (406–409) is structural event, but three consecutive `beetles relay the pen-scratch continuation` bones (417–419) inert. No Taylor-response inflection.
+- FLAT-PROCEDURAL-BEAT2/4/7/10
+- ELIDED-CHOICE-BEAT6
+- RANGE-EXPANSION-FORMULA (beats 14/19/24)
+- MAESTER-NAMING-GAP-BEAT16
+- PEN-SCRATCH-REPETITION-BEAT22 (IDs 417–419)
+- BEAT22-INFLECTION-ABSENT
 
-**Beat 23 (IDs 424–436): father at junction, wage on lord's record** — rise-peak-fall; Taylor exhales at ID 433.
-
-**Beat 24 (IDs 438–453): range reaches 600m, overnight** — rise-peak-fall; fourth iteration of formula. Brevity (16 bones) functions as ceiling-before-peak.
-
-**Beat 25 (IDs 455–475): senior operative's messenger, file completes** — rise-peak-fall; double holds-feet (IDs 463 and 472) frame interval; sealing of account (468) is micro-peak. Climax lands.
-
-**Beat 26 (IDs 477–494): denouement perimeter walk** — rise-without-peak (correct for denouement); two write-entry bones side-by-side at IDs 492–493 deliver structural payoff.
-
-## Escalation arc
-
-Season rises toward beat 25 and falls to beat 26; arc holds. Weakest window is beats 7–10 (mid-season plateau). Range-expansion bones became formulaic by beat 14 — the same spread→walk→headache→log pattern repeats across beats 11/14/19/24 without differentiating cost severity. Mid-season recovery at beats 11–13 (physiological cost, eviction, wage formalization). Beats 20–23 escalate cleanly. Beat 25 lands as climax with appropriate density + suppression markers; beat 26 functional fall.
-
-## Structural commitments
-
-- **Two parallel arcs:** visible, with gap at beat 10. Village-claim arc (1/3/4/9/13/17/23) all present. Hightower-file arc (5/18/20/25) all present. Beat 10's anonymous-routing shift not differentiated in bone register.
-- **Range arithmetic (300/330/400/500/600):** visible at beats 2/11/14/19/24. Headaches present at 11/14/19/24. Gap: cost escalation not differentiated across four instances — bones are structurally identical.
-- **Maester mid-season arrival (beat 16) as named log entry:** gap. Bones show beetle relay + maester movement but no recognition-event bone.
-- **Village grief-debt open:** visible — wage formalization (13), lord's record (23), paired log entries at 26.
-- **Khepri silence:** honored. Zero Khepri references in IDs 1–494.
-- **One POV:** honored. No POV breaks.
-
-## Flags
-
-- **FLAT-PROCEDURAL-BEAT2** — IDs 25–34. Identical motion bones at 28 and 30. No inflection.
-- **FLAT-PROCEDURAL-BEAT4** — IDs 48–60. Withdrawal choreography without registration.
-- **ELIDED-CHOICE-BEAT6** — IDs 83–92. KL choice has no bone. Season's structural hinge under-marked.
-- **FLAT-PROCEDURAL-BEAT7** — IDs 118–134. Dark perimeter not registered as constraint.
-- **FLAT-PROCEDURAL-BEAT10** — IDs 187–207. Observation-to-routing shift not differentiated.
-- **RANGE-EXPANSION-FORMULA** — IDs 266–278 (beat 14), 344–359 (beat 19), 438–453 (beat 24). Spread→walk→headache→log repeats without variation. Season plan commits to escalating cost; bones do not differentiate.
-- **MAESTER-NAMING-GAP-BEAT16** — IDs 296–313. Recognition event absent.
-- **PEN-SCRATCH-REPETITION-BEAT22** — IDs 416–419. Three consecutive identical `beetles relay the pen-scratch continuation` bones. Inert.
-- **BEAT22-INFLECTION-ABSENT** — IDs 400–422. Maester observing insect-anomalies but no Taylor-response marker; structurally inconsistent with surveillance-of-Taylor beats 8/9/15/18/20/23.
-
-## Verdict
-
-RE-ORDER-OR-REVISE — three primary structural problems require bone-level revision:
-
-1. **ELIDED-CHOICE-BEAT6** — add at minimum one bone marking the moment of choosing (or its functional equivalent — Taylor registering a point of no return). Route: screen-writer (REGEN-ADD).
-
-2. **MAESTER-NAMING-GAP-BEAT16** — add at minimum one bone marking the recognition event that produces the log entry. Route: screen-writer (REGEN-ADD).
-
-3. **RANGE-EXPANSION-FORMULA** — at minimum one of beats 19 or 24 needs variation showing escalating cost rather than repeated cost. Route: screen-writer (REGEN-REPLACE or REGEN-ADD).
-
-Secondary flags (FLAT-PROCEDURAL beats 2/4/7/10, PEN-SCRATCH-REPETITION beat 22, BEAT22-INFLECTION-ABSENT) are structural improvements warranted at revision but do not individually constitute season-level failures. The three primary findings above do.
+### Cycle 1 verdict: RE-ORDER-OR-REVISE
