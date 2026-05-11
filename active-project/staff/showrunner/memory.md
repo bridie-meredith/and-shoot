@@ -56,6 +56,33 @@ seasons:
     content_beats: 26
     phase_1_converged_at: attempt-2-of-3
     drama: "The tanner-village's claim on Tya's body and the Hightower apparatus's first miscategorized intelligence file close around Taylor on the same season-timeline, with neither knowing the other exists and neither closeable from inside. What cannot survive the season is the possibility of working unnamed: by season close, Taylor is already a misread fact in someone else's record before she understands what she is building, and the village's grief-debt remains an open transactional surface she cannot pay off."
+    bones_path: active-project/theater/proto-lines/s01.bones.md
+    bones_complete: 2026-05-11
+    bones_active_count: ~480 (across IDs 1-517 with deletion gaps)
+    phase_2_cycles: 3 of 3 max
+    phase_3_cycles: 2 of 3 max (per-window URI-026 cap=2 reached)
+    provisional_split: 3 episodes (cuts at IDs 155/159 and 328/330; 6-episode SPLIT-INFEASIBLE)
+    tens_files:
+      - active-project/theater/facets/tensometer-s01-window-01.md
+      - active-project/theater/facets/tensometer-s01-window-02.md
+      - active-project/theater/facets/tensometer-s01-window-03.md
+    audit_reports_dir: active-project/staff/auditor/season-s01-pass-*
+    residuals:
+      - tens-gate-residual-W1-Scene-L-no-rupture (maester laughs without commit)
+      - tens-gate-residual-W2-Scene-A-no-3 (family-visit junction)
+      - tens-gate-residual-W2-Scene-H-no-3 (headache cluster no peak)
+      - tens-gate-residual-W2-Scene-L-no-3 (mother's vigil-candle close)
+      - tens-gate-residual-W3-frequency-band-below-floor (4/152 = 2.6%)
+      - tens-gate-residual-W3-scene-330-342-no-3 (first Hightower clerk)
+      - tens-gate-residual-W3-scene-361-375-no-3 (second clerk)
+      - tens-gate-residual-W3-scene-477-494-no-rupture (denouement walk; no transit exception)
+      - pov-leak-71-77 (lord's-man records the file; no insect relay anchor)
+      - audience-S3-1-of-3-revise (cape-fic, dark-fantasy, worm-canon: 3-of-3 REVISE on range-expansion template + beat 10)
+      - audience-S6-localized-drift-W12 (beat 10 thin/relay-mapping flagged by cape-fic + dark-fantasy)
+      - audience-S9-2-of-3-comprehensibility-risk (cape-fic fragile-chains, worm-canon formula-lock)
+    convergence: PARTIAL — Sweep A 12 of 18 clean; Sweep B 14 of 17 clean. Convergence per spec ("all-clean reports across both sweeps and no fixes in between") not achieved.
+    orchestrator_verdict: "FAIL — F7-bone (7+ tens-gate-residual-HARD open) + F1 (Phase 3 S1/S3/S7/S9 not converged) + R1 (~86 dispatches vs 60 cap)"
+    orchestrator_verdict_file: active-project/staff/auditor/season-s01-orchestrator-verdict.md
   - slug: s02
     chunk: "The glass-candle acquisition and sustained high-density relay load accumulate against the broken maester's sharpening documentation across the same months; the Khepri-mantle threshold crosses late in the season, the maester names it and is not heard, and Taylor arrives in s03 already changed — what cannot survive is the pre-threshold Taylor and the maester's belief that naming the line constitutes a brake."
     status: planned

@@ -1,6 +1,311 @@
 ```yaml
-# === CYCLE 2 (current) ===
+# === CYCLE 3 (current) ===
 
+audit:
+  scope: season
+  target: s01
+  cycle: 3
+  timestamp: 2026-05-11
+  pass: S1 — Constraint audit (season scope), re-fire after fixer cycle 2
+  verdict: FAIL
+  findings:
+
+    # ── CYCLE-2 FIXES VERIFIED ─────────────────────────────────────────────────
+
+    - id: pass-001
+      type: pass
+      what: >
+        Bone 19: file reads `oc-tanner-father enters the yard`. Modifier
+        `toward the yard` removed; transitive form with location as direct
+        object confirmed.
+      why: ~
+
+    - id: pass-002
+      type: pass
+      what: >
+        Bone 66: file reads `the reeve slows`. Intransitive; abstract motion-unit
+        object `the step` removed. Confirmed.
+      why: ~
+
+    - id: pass-003
+      type: pass
+      what: >
+        Bone 129: file reads `oc-broken-maester speaks to the room`. Subject
+        corrected to actor slug; listener `the room` added. Cycle-2 fault-003
+        resolved; fault-002 partially resolved (bone 129 instance).
+      why: ~
+
+    - id: pass-004
+      type: pass
+      what: >
+        Bone 190: file reads `the wasps relay oc-dock-runner`. Actor slug as
+        concrete object. Cycle-2 fault-005(a) resolved.
+      why: ~
+
+    - id: pass-005
+      type: pass
+      what: >
+        Bone 200: file reads `the flies relay the wind`. Concrete environment
+        element. Resolved.
+      why: ~
+
+    - id: pass-006
+      type: pass
+      what: >
+        Bone 238: file reads `the flies relay the lords-man's man`. Actor slug
+        as concrete object. Cycle-2 fault-005(b) resolved.
+      why: ~
+
+    - id: pass-007
+      type: pass
+      what: >
+        Bone 338: file reads `the flies relay the junction`; bone 339 retains
+        `the flies relay the clerk`. Differentiated. Cycle-2 flag-005 resolved.
+      why: ~
+
+    - id: pass-008
+      type: pass
+      what: >
+        ID 515 is absent from the file. Gap between ID 514 and ID 330 confirmed.
+        Bare unframed log-write deleted. Cycle-2 fault-004 resolved.
+      why: ~
+
+    - id: pass-009
+      type: pass
+      what: >
+        Bone 513: file reads `the beetles relay the cold candle`. Concrete object
+        in unlit state. Confirmed.
+      why: ~
+
+    - id: pass-010
+      type: pass
+      what: >
+        ID 213: `taylor-hebert-flea-bottom rolls the shoulders`.
+        ID 273: `taylor-hebert-flea-bottom flexes the hand`.
+        ID 354: `taylor-hebert-flea-bottom drops the gaze`.
+        Three `exhales` recast. Remaining exhales count: 9 (IDs 2, 31, 218,
+        221, 225, 253, 433, 448, 516). Below 10-instance idiom-depletion
+        threshold. Confirmed.
+      why: ~
+
+    # ── CARRY-FORWARD SCHEMA DECISIONS (do not reflag) ────────────────────────
+
+    - id: carry-001
+      type: pass
+      what: >
+        Non-monotonic file-position IDs (495–517 and earlier high-range IDs
+        embedded in lower-ID sequence). Per dispatch carry-forward: schema
+        proto-line.schema.md states "Re-ordering preserves IDs; the stitcher
+        walks IDs in citation order, not numeric order" and "stable — once
+        assigned, never reused." Non-monotonic file placement is not a schema
+        violation. Not reflagged.
+      why: ~
+
+    - id: carry-002
+      type: pass
+      what: >
+        "the maester" subject/listener form at IDs ≤301. Per dispatch carry-forward:
+        intentional — Taylor does not know the maester's name until beat 16;
+        slug transition to oc-broken-maester at IDs 303+ confirmed. Bones 111,
+        128, 285, 286 are all ≤301. Not reflagged.
+      why: ~
+
+    # ── UNRESOLVED FAULT FROM CYCLE 2 ─────────────────────────────────────────
+
+    - id: fault-001
+      type: fault
+      what: >
+        UNRESOLVED FROM CYCLE 2. Bone 506: `the maester laughs`. File line 161.
+        ID 506 is above the ≤301 carry-forward threshold. The carry-forward
+        schema decision applies only to IDs ≤301 (before Taylor learns the
+        maester's identity at beat 16). ID 506 falls in the beat-17 window
+        (mother's visit, vigil-candle scene), well past beat 16. The cycle-2
+        fixer (GROUP-C-c2) corrected bone 129 but did not address bone 506.
+        Bone 506 continues to use the unnamed token for a registered cast member
+        (oc-broken-maester) at an ID above the confirmed transition point.
+      why: >
+        Phase 4 slug-grep for the cast: header field will not capture ID 506 as
+        an oc-broken-maester appearance. Any episode boundary that contains bone
+        506 will have an incorrect cast list omitting oc-broken-maester. The
+        cite-index DAG for dialogue and narrator facets authored against bone 506
+        will not resolve back to oc-broken-maester's dialogue file.
+      criteria: >
+        Bone 506 must use the actor slug oc-broken-maester as subject, consistent
+        with all other appearances of this character at IDs 303+.
+
+    # ── NEW FINDING: BARE LOG-WRITE BONES ─────────────────────────────────────
+
+    - id: fault-002
+      type: fault
+      what: >
+        NEW. Bones 113 and 123 are both bare `writes the entry` lines without
+        a preceding `opens the log` bone in their local cluster.
+
+        Bone 113 (`taylor-hebert-flea-bottom writes the entry`, file line 138):
+        appears in the sequence 108 (spiders spread ceiling corners) → 110
+        (walks the perimeter) → 111 (the maester speaks to the room) → 112
+        (beetles relay the sound) → 113 (writes the entry) → 114 (opens the
+        log) → 115 (writes the entry) → 116 (closes the log). ID 109 is a
+        deletion gap. No `opens the log` precedes bone 113 in this cluster.
+
+        Bone 123 (`taylor-hebert-flea-bottom writes the entry`, file line 150):
+        appears in the sequence 118 (walks the full perimeter) → 119–122
+        (relay bones) → 123 (writes the entry) → 124 (opens the log) → 125
+        (writes the entry) → 126 (closes the log). No `opens the log` precedes
+        bone 123 in this cluster.
+
+        Both have the identical structural pattern: a bare write followed by a
+        complete open→write→close triplet. This is the same fault class as
+        cycle-1 fault-003 (bone 109, now deleted) and cycle-2 fault-004 (bone
+        515, now deleted). These instances were pre-existing and not introduced
+        by the cycle-2 fixer; they were not identified in cycle-1 or cycle-2
+        audits. They surface now as the bare-write fault class is now documented
+        with full criteria.
+      why: >
+        Every complete log-write sequence in s01.bones.md follows the
+        open → write → close pattern. A bare write without an opens-the-log
+        bone implies the log was already open from a prior beat, but no
+        preceding bone in either cluster opens it. The procedural texture of
+        Taylor's research notation — mandated by cond-clinical-self-erasure
+        ("the procedure of Taylor's research — observation, hypothesis, test,
+        notation, revision — is the story's primary mechanism") — requires the
+        physical act sequence to be complete. The bare writes at 113 and 123
+        cannot anchor complete facet-authoring sequences for the physical
+        log-interaction cycle at these beats.
+      criteria: >
+        Bones 113 and 123 must each either (a) be preceded by an `opens the
+        log` bone (new bone with new ID, screen-writer REGEN-ADD) and followed
+        by a `closes the log` bone, making a complete triplet independent of the
+        subsequent 114-116 and 124-126 triplets; or (b) be deleted if their
+        write event is already fully carried by the immediately following complete
+        open→write→close triplet in the same cluster. If deleted, the downstream
+        triplet (114-116 and 124-126 respectively) carries the research-notation
+        beat without structural gap.
+
+    # ── CARRY-FORWARD FLAGS (unchanged from cycle 2) ─────────────────────────
+
+    - id: flag-001
+      type: flag
+      what: >
+        CARRIED FROM CYCLE 2. Bone 318: `oc-tanner-mother sits`. Ambiguous
+        between stative position-naming (deny-listed) and the discrete act of
+        taking a seat (passes). Context (bone 317: faces taylor; bone 319:
+        taylor faces oc-tanner-mother) suggests act, not state, but the bone
+        is ambiguous.
+      why: >
+        If rendered as stative, faults FAULT-FORM-NON-ACTION-VERB. No downstream
+        structural consequence if intent is the act. Editor should confirm.
+
+    - id: flag-002
+      type: flag
+      what: >
+        CARRIED FROM CYCLE 2. Bones 178 and 179: `pivots toward the road south`.
+        "The road south" is a directional compound, not a named entity or
+        registered location slug.
+      why: >
+        The schema bans prepositional padding and modifier-phrases. "The road
+        south" may read as a directional modifier applied to "the road." Canonical
+        form would be "the south road" as a named environment element, or a
+        location slug if one is registered. Advisory for fixer or Phase 4 split.
+
+    - id: flag-003
+      type: flag
+      what: >
+        CARRIED FROM CYCLE 2. Bones 49, 50, 56, 57, 86: verb `routes` used as
+        a causative-direction verb.
+      why: >
+        "Routes" implies the object's movement as a consequence of the subject's
+        internal decision — borderline interiority-attribution. Not a schema-
+        enumerated fault but creates facet-authoring ambiguity. Advisory.
+
+    - id: flag-004
+      type: flag
+      what: >
+        CARRIED FROM CYCLE 2. Bone 507: `taylor-hebert-flea-bottom faces the Red
+        Keep`. loc-red-keep-outer-ring is a registered warehouse location card.
+        "The Red Keep" approximates but does not match the slug.
+      why: >
+        Phase 4 slug-grep for locations: field will not capture "the Red Keep"
+        as a reference to loc-red-keep-outer-ring. Low consequence for one
+        facing-action bone but inconsistent with slug-discipline.
+
+    - id: flag-005
+      type: flag
+      what: >
+        CARRIED FROM CYCLE 2. "Walks-the-path" form: bones 28, 30, 91, 92, 98,
+        105, 110, 118, 222, 270, 351, 445, 479, 481, 483, 485, 489 — 17 total
+        instances. Policy decision accepted "walks the <path>" as a defensible
+        idiom parallel to "enters the yard."
+      why: >
+        Documenting the policy decision so subsequent passes do not re-raise
+        this as a fresh fault. Reversal would require recasting all ~17 instances.
+
+    - id: flag-006
+      type: flag
+      what: >
+        CARRIED FROM CYCLE 2. cond-clinical-self-erasure requires at least one
+        s1-or-early-s2 scene where Taylor hears the broken maester through the
+        network and adjusts behavior in response. Bone 112 carries the physical
+        relay; bone 131 (straightens the spine) is the nearest behavioral-
+        adjustment candidate. No bone explicitly marks behavioral consequence
+        triggered by the maester's speech.
+      why: >
+        The facet layer (narrator, memory) must anchor the adjustment to a bone.
+        If bone 131 is the intended consequence beat, its causal link to bones
+        112/129 must be confirmed for facet authoring. Advisory.
+
+    - id: flag-007
+      type: flag
+      what: >
+        CARRIED FROM CYCLE 2. Range-expansion threshold-events (bones 209–221,
+        266–269, 344–347, 438–444) show territorial spread but no bone records
+        Taylor's proprioceptive awareness of the new edge.
+      why: >
+        cond-fauna-control-rules-125ac-addendum requires range expansion to be
+        registered in the prose through scenes where Taylor reaches something
+        she could not reach before. The log-write clusters may carry this at
+        facet level, but the bone layer has no explicit anchor. Advisory for
+        facet authoring.
+
+    - id: flag-008
+      type: flag
+      what: >
+        CARRIED FROM CYCLE 2. Fish Gate margin surviving subject (s4 constraint)
+        forward-note. S01 bones do not violate this constraint.
+      why: >
+        Advisory for s02–s03 planning only: when the surviving subject is
+        introduced in the Fish Gate margin, they must appear in insect-relay
+        bones without appearing in Taylor's log-write sequences.
+
+## Cycle 3 fix resolution summary
+
+| Cycle-2 ID  | Status in cycle 3                                                        |
+|-------------|--------------------------------------------------------------------------|
+| fault-001   | CARRY-FORWARD (schema decision) — not a fault per schema stitcher rules  |
+| fault-002   | PARTIALLY RESOLVED — bone 129 corrected; bone 506 unresolved → new fault-001 |
+| fault-003   | RESOLVED — bone 129 now `oc-broken-maester speaks to the room`           |
+| fault-004   | RESOLVED — ID 515 deleted                                                |
+| fault-005   | RESOLVED — bones 190 and 238 both recast to concrete actor-slug objects  |
+| flag-001    | CARRIED                                                                  |
+| flag-002    | CARRIED                                                                  |
+| flag-003    | CARRIED                                                                  |
+| flag-004    | CARRIED                                                                  |
+| flag-005    | RESOLVED — bones 338/339 differentiated                                  |
+| flag-006    | CARRIED (walks-the-path policy)                                          |
+| flag-007    | CARRIED                                                                  |
+| flag-008    | CARRIED                                                                  |
+| flag-009    | CARRIED                                                                  |
+
+New cycle-3 faults: fault-001 (bone 506 slug unresolved above carry-forward threshold); fault-002 (bones 113/123 bare log-write, pre-existing, newly identified).
+
+VERDICT: FAIL
+```
+
+---
+
+# === CYCLE 2 (archived) ===
+
+```yaml
 audit:
   scope: season
   target: s01
