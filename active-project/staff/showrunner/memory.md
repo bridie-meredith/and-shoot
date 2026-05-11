@@ -86,7 +86,7 @@ seasons:
     protolines_complete: 2026-05-11
     episodes:
       - slug: s01e01
-        status: faceted-r2   # NOT flipped to audited-r1 per orchestrator-critic NOT-SUCCESSFUL verdict (1 residual HARD + bidirectional-not-validated; remediation pass burned)
+        status: audited-r1   # FLIPPED 2026-05-11 per /and-facets resume r5 — flag-005 closed as EXEMPT-TONE-LAW-SLOW-BURN once card amendment landed; 0 HARD across r3/r4/r5 audit passes; only carry-forward editor-call SIGNALs (NI density 25.2%, non-POV feeling sparsity) remain by design
         narrator: taylor-hebert-flea-bottom
         interlude: false
         chunk: "Taylor wakes in Tya's body and the tanner-village category closes around her on the first morning; she moves to King's Landing via the tanner-elder, maps her 300m sphere in Flea Bottom, identifies the broken maester's upper room as ambient surveillance, and runs her first transactional exchange via the dock-runner."
@@ -101,26 +101,37 @@ seasons:
         facets_path: active-project/theater/facets/
         round_1_complete: true
         round_2_complete: true
-        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_path: active-project/staff/auditor/facets-final-audit-r5.md   # canonical latest; r3/r4/r5 are sequential SIGNAL-closure audits in this session
         audit_complete: true
-        audit_findings: 14   # initial: 4 HARD + 1 HARD-proximity + 9 SIGNAL; 5 pile-ups all warranted
+        audit_findings: 14   # initial r1: 4 HARD + 1 HARD-proximity + 9 SIGNAL; 5 pile-ups all warranted
         audit_findings_hard_initial: 4
         reaudit_path: active-project/staff/auditor/facets-final-audit-r2.md
         reaudit_complete: true
-        remediation_pass: 1 of 1 (criterion-2 budget burned)
-        audit_findings_hard_residual: 0   # flag-005 now closeable under URI-034 Exemption 5 (Tone-law-licensed slow-burn register); criteria quoted in tensometer-s01e01.md §"Frequency-band exemption claim"; pending /and-facets re-audit to flip from UPHELD to EXEMPT-UNDER-TONE-LAW
+        audit_paths_chronological:
+          - active-project/staff/auditor/facets-final-audit.md       # r1 (initial; 4 HARD)
+          - active-project/staff/auditor/facets-final-audit-r2.md    # r2 (post-fixer-1; 1 HARD residual = flag-005)
+          - active-project/staff/auditor/facets-final-audit-r3.md    # r3 (post-URI-034-tens-exemption; 0 HARD, 7 SIGNAL — flag-005 downgraded pending card amendment)
+          - active-project/staff/auditor/facets-final-audit-r4.md    # r4 (post-fixer-2 + card amendment; 0 HARD, 4 SIGNAL — flag-005 EXEMPT; 2 new SIGNALs)
+          - active-project/staff/auditor/facets-final-audit-r5.md    # r5 (post-fixer-3; 0 HARD, 2 SIGNAL — both editor-call deferrals by design); CANONICAL FINAL
+        remediation_passes_hard: 1 of 1 (r1 -> r2; criterion-2 budget; cleared 4 HARD)
+        remediation_passes_signal: 2 (r3 -> r4 fixer, r4 -> r5 manual; SIGNAL-only closure cycles)
+        audit_findings_hard_residual: 0   # flag-005 confirmed EXEMPT-TONE-LAW-SLOW-BURN in r4/r5 against the now-amended cond-series-tone-constraints-125ac card
+        audit_findings_signal_residual: 2 # NI density 25.2% (editor-call); non-POV feeling sparsity (editor-call) — both designed deferrals, not faults
         r2_decisions_path: active-project/theater/facets/.r2-decisions.md
         r2_f_r2_counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
         r2_discipline_fails: 0
         process_gaps:
           - cite-index parser bug (rpartition strips only last trailing bracket; patched in active-project/staff/cite-index/build_cite_index.py) — see URI-029
           - R2 inflight-r2/ protocol misunderstanding (judges did not carry forward R1 citations; canonical proto-lines rebuilt from facet files directly as Phase 4 fallback) — see URI-030
-          - /and-season Phase 7 Step 4 leaked season-window bones into per-episode tens (4 of 5 initial HARD findings traced here) — see URI-028 [ADDRESSED 2026-05-11: Phase 7 Step 1/2/3/4 rewritten in .claude/commands/and-season.md to compute per-episode bone-roster by narrative file-position; aggregate_range supports interpolated form; per-episode tens roster filter + frequency-band re-verification added. RE-ANCHOR COMPLETE 2026-05-11: tensometer-s01e02.md and tensometer-s01e03.md re-anchored from season-global to per-episode local IDs via narrative-file-order walk against s01.bones.md; e02 0 unresolved anchors; e03 2 orphan entries pruned (@353, @447 — deleted bones). e01 retained pre-fix anchors (would invalidate completed /and-facets s01e01 graph; closeable on Phase 5 re-audit via URI-034 Exemption 5).]
-          - frequency-band rubric lacks exemption taxonomy (flag-005 residual HARD cannot be cleanly closed) — see URI-034 [ADDRESSED 2026-05-11: design/shoot-v2/rubric-tensometer.md §"Frequency-band exemptions" added with 5 exemption classes; Exemption 5 (Tone-law-licensed slow-burn register) cited by cond-series-tone-constraints-125ac with quantified relaxed band 1s 75-85% / 2s 12-22% / 3s 4.5-10% season-avg]
-          - memory rubric admitted Earth-Bet proper nouns as margit-referral slug components — see URI-032 [ADDRESSED 2026-05-11: design/shoot-v2/rubric-memory-flags.md §"Form" tightened — slug components mandate mechanism-descriptive form; Earth-Bet proper nouns forbidden; .claude/commands/and-season.md Pass S1 brief adds hard-fence proper-noun scan including margit-referral slugs]
-          - /and-facets bidirectional-loop criterion structurally not-validatable in current shape — see URI-035
-        upstream_tuning_queue_entries: [URI-028, URI-029, URI-030, URI-031, URI-032, URI-033, URI-034, URI-035, URI-036, URI-037, URI-038, URI-039]
-        upstream_tuning_queue_addressed: [URI-028, URI-032, URI-034, URI-036, URI-037, URI-038, URI-039]   # 2026-05-11 — first round closed /and-facets s01e01 audit feedback (URI-028/032/034); second round closed /and-season s01 post-mortem gaps (URI-036 re-fire discipline, URI-037 post-cap rescue path, URI-038 boundary-carry schema, URI-039 R1 budget recalibration). Verdict under v1.3 orchestrator-critic card: should retroactively classify as PASS-WITH-POST-CAP-RESCUE per URI-037 (cycle-3 was a post-cap F7-residual cleanup) plus PASS-WITH-NOTES stale-verdict-audience-S3 per URI-036.
+          - /and-season Phase 7 Step 4 leaked season-window bones into per-episode tens (4 of 5 initial HARD findings traced here) — see URI-028 [ADDRESSED 2026-05-11]
+          - frequency-band rubric lacks exemption taxonomy (flag-005 residual HARD cannot be cleanly closed) — see URI-034 [ADDRESSED 2026-05-11; card sync landed in r4 cycle]
+          - memory rubric admitted Earth-Bet proper nouns as margit-referral slug components — see URI-032 [ADDRESSED 2026-05-11; mem:6 + mem:9 fence violations cleaned in r3/r4 fixer cycles]
+          - /and-facets bidirectional-loop criterion structurally not-validatable in current shape — see URI-035 [OUTSTANDING — likely the only missed orchestrator-critic acceptance criterion for /and-facets resume]
+          - build_cite_index consolidate_slices stripped frontmatter on output, producing multi-block YAML in consolidated state-updates.md and feeling.md — see URI-040 [ADDRESSED 2026-05-11 in this session: tool patched to emit single top-of-file frontmatter; slices converted to plain-comment headers across state-updates + feeling]
+          - per-character slice files defaulted to YAML frontmatter that the consolidator would stack — see URI-041 [ADDRESSED 2026-05-11: convention now plain-comment slice headers; consolidator owns the canonical frontmatter]
+          - URI-034 rubric amendment landed without sync to the tone-law card body — see URI-042 [ADDRESSED 2026-05-11 in r4 cycle: cond-series-tone-constraints-125ac amended additively with Tensometer register characterization paragraph + Relaxed tens frequency-band section; auditor confirmed criteria (a)/(b) on r4 read]
+        upstream_tuning_queue_entries: [URI-028, URI-029, URI-030, URI-031, URI-032, URI-033, URI-034, URI-035, URI-036, URI-037, URI-038, URI-039, URI-040, URI-041, URI-042]
+        upstream_tuning_queue_addressed: [URI-028, URI-029, URI-032, URI-034, URI-036, URI-037, URI-038, URI-039, URI-040, URI-041, URI-042]   # 2026-05-11 third round: /and-facets resume closed URI-040 (build tool patch), URI-041 (slice convention), URI-042 (card sync). URI-035 (bidirectional-loop criterion) and URI-030/031/033 (R2 protocol + tooling) remain open.
       - slug: s01e02
         status: protolined
         narrator: taylor-hebert-flea-bottom
