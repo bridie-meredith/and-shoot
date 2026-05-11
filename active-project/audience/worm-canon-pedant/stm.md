@@ -100,3 +100,26 @@ No new mechanics violations introduced by the series plan itself. All carry-forw
 Carry-forward watches (unchanged):
 - Taylor's in-world theory for insect-network/glass-candle interaction must appear in prose before the s4 experiment.
 - Distance from maester must be established with precision at least once.
+
+## s01 Content Beats Plan Review — 2026-05-11
+
+Reviewed: s01-content-beats-draft.md, 25 beats.
+
+Verdict: ACCEPT
+
+Per-beat breakdown: 25 ENGAGED / 0 TOLERATED / 0 BORED. Threshold discipline satisfied.
+
+Key findings:
+- Range expansion 300m → 600m across s01 is correctly paced and costed (three events: threshold/gradual/event; each with documented physiological cost). Mechanics hold.
+- Taylor's knowledge state correctly bounded throughout: she categorizes apparatus contacts as "lord's-apparatus" and "Hand's-apparatus" — not "Hightower-apparatus" — because she has no path to the Hightower identification. Ignorance played correctly in beats 18 and 25.
+- One execution-level flag: beat 20's draft log-entry language uses "Hightower-apparatus" in a way the narrative voice then contradicts ("she still does not know what apparatus this is"). Plan-level intention is correct; prose execution must use observed-category language ("lord's-apparatus" or equivalent) in Taylor's actual log for this contact. NOT a plan-level failure.
+- Khepri-mantle: sealed and entirely absent from all 25 beats. Correctly handled for s01.
+- Clinical-self-erasure: operating at s01 magnitude. Beat 24 log omission (distance to Red Keep not recorded) is the correct early-onset pattern — small, almost invisible.
+- Village-claim arc closes correctly into s01 end-state (lord's-man record, externalized instrument).
+- Hightower file closes correctly into s01 end-state (miscategorized and dormant; filed under wrong framework).
+- The maester as accumulating-watcher correctly staged: beast 22 insect-coordination anomaly inquiry marks the moment he begins data-collection, not yet naming anything.
+
+Updated carry-forward watches:
+1. [CARRY-FORWARD] Taylor's in-world theory for insect-network/glass-candle interaction must appear in prose before the s4 experiment.
+2. [CARRY-FORWARD] Distance from maester must be established with precision at least once.
+3. [NEW — s01 execution] Beat 20 log-language: Taylor's actual log must use observed-category language, not "Hightower-apparatus," for the second operative contact.
