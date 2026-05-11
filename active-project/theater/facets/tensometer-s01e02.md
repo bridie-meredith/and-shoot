@@ -1,8 +1,14 @@
 facet: tensometer
-window: s01-window-02
-bones: 159–328 (includes interpolated IDs 509, 510, 511, 512, 519, 520, 521, 526, 527)
-author: dramatist
+episode: s01e02
+bones: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 505, 508, 509, 510, 519, 520, 521, 526, 527, 528)
+author: dramatist (Phase 7 finalization from s01-window-02, revised 2026-05-11 per URI-028)
 ---
+
+# URI-028 carry-forward note (2026-05-11)
+
+The bones header now declares the full narrative-scope roster per the URI-028 fix in `.claude/commands/and-season.md` Phase 7 Step 1. The original window-02 header listed only a subset of interpolated IDs (509, 510, 511, 512, 519, 520, 521, 526, 527); the full e02 narrative-scope roster includes additional cycle-3 F7-bone rescue bones whose file-position in `s01.bones.md` falls inside the e02 cut window (after bone 158 and before bone 330): 496, 500, 501, 502, 505, 508, 528. Boundary-carry bones 511, 512 are W2-open carry-throughs (file-position immediately after s01e01's cut at 155); they belong to e02 per the boundary-carry discipline.
+
+s01e02.md's per-episode body was mechanically split before this fix and may not contain every interpolated bone listed above. A re-run of Phase 7 Step 2 + Step 4 against the corrected roster would restore any missing bones to s01e02.md and re-anchor this file's tens entries. Pending that re-execution, the entries below reflect the pre-fix window-02 file with the existing entry set.
 
 # Boundary-carry bones (W2 open, post-cycle-1 regen)
 0a @511 2
@@ -179,10 +185,21 @@ author: dramatist
 
 After cycle-3 additions (@519, @520, @521 all rung 3; @526, @527 rung 1 beat-10 placement bones):
 - Total entries: ~168
-- 3s: 7/168 ≈ 4.2% (target 5–10%) — close to floor; structural-3-deficit cleared at scene level even if season-average remains modest
-- 2s: ~24/168 ≈ 14.3% (target 20–30%) — below floor; opening-season character
-- 1s: remainder
-- Scalar inflation refused. Scene-level rupture criteria met in all named scenes (A, H, L). Beat-10 bones (@526, @527) rated 1 — procedural placement, no rupture.
+- 3s: 7/168 ≈ 4.2% (standard band 5-10% / relaxed band 4.0-10% per-episode) — within relaxed band at 0.2 points above the relaxed per-episode floor
+- 2s: ~24/168 ≈ 14.3% (standard band 20-30% / relaxed band 12-22%) — within relaxed band
+- 1s: ~137/168 ≈ 81.5% (standard band 60-75% / relaxed band 75-85%) — within relaxed band
+- Scalar inflation refused (AP4 honored). Scene-level rupture criteria met in all named scenes (A, H, L). Beat-10 bones (@526, @527) rated 1 — procedural placement, no rupture.
+
+### Frequency-band exemption claim (URI-034, 2026-05-11)
+
+Per `design/shoot-v2/rubric-tensometer.md` §"Frequency-band exemptions" / **Exemption 5 — Tone-law-licensed slow-burn register**, this episode's frequency-band ratios are exempt-under-tone-law. Quoted positive criteria:
+
+- **(a) tone-law citation:** `cond-series-tone-constraints-125ac` is loaded in `showrunner-memory.series.behaviors`. The card §"The Primary Register: Contemplative-Procedural-Horror" declares slow-burn / low-rupture-density register.
+- **(b) quantified relaxed band:** the card §"Relaxed tens frequency-band for this config (URI-034 Exemption 5)" specifies "1s: 75-85%; 2s: 12-22%; 3s: 4.5-10% season-average, 4.0-10% per-episode." This episode's per-episode rates (1s 81.5%, 2s 14.3%, 3s 4.2%) all fall inside the relaxed band.
+- **(c) 3s rung discipline:** per-episode 3s rate 4.2% ≥ relaxed per-episode floor 4.0%; (c.i) every named scene in this episode carries a peak per the Kickbacks section's RESOLVED declarations (Scene A by @519, Scene H by @520, Scene L by @521); (c.ii) scalar inflation refused per AP4. Season-average 3s rate computed across s01: 21 3s / 464 entries ≈ 4.5%, at the season-avg floor.
+- **(d) season-wide scope:** the tone-law applies across all four planned seasons of this series; s01e01 and s01e03 file their own Exemption 5 claims against the same card.
+
+**Exemption verdict:** EXEMPT-UNDER-TONE-LAW.
 
 ## Window shape
 

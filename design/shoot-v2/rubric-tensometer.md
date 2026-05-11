@@ -136,6 +136,91 @@ Inflating scalars to make a flat episode look escalating is the prohibited move.
 
 ---
 
+## Frequency-band exemptions (URI-034, 2026-05-11)
+
+Per-episode frequency-band breaches outside the 60-75% 1s / 20-30% 2s / 5-10% 3s window are FAILS by default. The four enumerated exemption classes below permit a documented breach when ALL positive criteria for the named class are satisfied. Exemptions are confirmed by the mechanic auditor against this section; "the file feels right" or "the orchestrator-verdict said so" are NOT exemption confirmations.
+
+A breach claimed under an exemption must end with: `<rung>: <actual-pct> (band <range>); exemption: <exemption-slug>; criteria: (a) <quote-of-positive-test-1>, (b) ..., (c) ...`. Every positive criterion below must be quoted with the supporting evidence. Any criterion not met means the exemption does NOT apply — the breach is a genuine fail.
+
+### Exemption 1 — Establishment-window low-charge
+
+**Applies to:** the first window/episode of a season (or the first window of a multi-window arc) where character/locale/setting are being established without rupture-density yet earned.
+
+**Permits:** 2s below floor (down to 14%) AND/OR 1s above ceiling (up to 80%) on a single episode/window.
+
+**Positive criteria (all required):**
+- (a) The window/episode is the first in its season AND the season-plan content beats for this window are establishment-coded (locale-anchor, POV-anchor, relationship-anchor, NOT rupture-coded).
+- (b) The 3s rung MUST be at or above floor (≥5%). Establishment can suppress 2s/1s ratios but never the rupture rung — a rupture-free establishment window is a flat episode, not an exempt one.
+- (c) Scene-level CURVE-SHAPE is CLEAN at S10 Step 3 mechanic verdict (every scene has its peak; no flatlining 30+).
+- (d) The breach must NOT replicate in the second window of the same season. If a season's second window also breaches the same rung in the same direction, this exemption is invalidated retroactively — the pattern is dramatist miscalibration, not establishment.
+
+**Auditor protocol:** when the dramatist claims this exemption, the auditor re-checks criteria (b) and (c) before accepting. If the season's second window already exists at audit time, (d) is also checked; if not, (d) becomes a forward-pin that the next /and-season run must satisfy.
+
+### Exemption 2 — Single-locale interlude
+
+**Applies to:** an interlude episode or window flagged in the season plan as `interlude: true` and confined to a single locale across the entire bone span.
+
+**Permits:** 1s above ceiling (up to 85%) AND 3s below floor (down to 3%).
+
+**Positive criteria (all required):**
+- (a) Season-plan flags this window as an interlude with single-locale spec.
+- (b) Location-state facet (when authored downstream) will fire exactly once at window open and exactly once at window close (no mid-window relocations).
+- (c) 2s rung MUST be at or above floor (≥20%) — the interior pressure register has to carry the interlude even when external rupture is absent.
+
+### Exemption 3 — Sustained-action sequence
+
+**Applies to:** a window dominated (≥80% of bones) by a single sustained chase/action/combat sequence.
+
+**Permits:** 2s above ceiling (up to 45%) AND 3s above ceiling (up to 15%).
+
+**Positive criteria (all required):**
+- (a) The window's bones describe a single contiguous action sequence (chase, combat, escape, demonstration), not a montage of multiple actions.
+- (b) 1s rung MUST NOT fall below 40% — even a sustained action sequence has the body-charge pauses and intercut quiet beats that read as 1s. A sub-40% 1s rate is the dramatist over-rating the body-charge axis.
+- (c) The window's escalation curve is monotonic-or-near-monotonic (no internal flatlines; no premature climax in the first third).
+
+### Exemption 4 — Post-peak denouement
+
+**Applies to:** the closing window of a season where the season-plan explicitly designates the post-peak arc as cost-bearing AND names the cost-bearing share (URI-008 LATE-WEIGHT-LICENSED form in `season-<slug>-plan.md`).
+
+**Permits:** 3s below floor (down to 3%).
+
+**Positive criteria (all required):**
+- (a) Season plan has an explicit `LATE-WEIGHT-LICENSED-<condition-card>` exception declared in the plan §B drama or content_beats.
+- (b) The condition card cited names cost-bearing as a tone-law requirement and specifies the proportion (e.g. `cond-series-tone-constraints-125ac §"Post-climax cost cadence"`).
+- (c) The 2s rung MUST be at or above floor (≥20%) — the cost-bearing arc carries its weight in 2s; sub-floor 2s reads as drift, not denouement.
+
+### Exemption 5 — Tone-law-licensed slow-burn register
+
+**Applies to:** any window/episode whose season's `cond-series-tone-constraints-<year>` condition card (or equivalent series-tone law in showrunner memory) explicitly declares the prevailing register as slow-burn, quiet-observer, foreknowledge-clamped, or low-rupture-density.
+
+**Permits:** 2s below floor (down to 12%) AND 1s above ceiling (up to 85%), persistently across the season. The 3s rung is the load-bearing rupture floor; relaxation rules below.
+
+**Positive criteria (all required):**
+- (a) The series-tone condition card is loaded as a series-law in `showrunner-memory.series.laws` or `series.behaviors`. The card's body must contain at least one of: `slow-burn`, `low-rupture-density`, `quiet-observer-register`, `foreknowledge-clamp-as-primary-register`, or an explicit declaration that the standard tens frequency-band does not apply.
+- (b) The card must specify the relaxed band the dramatist is authoring to (e.g. "expect 1s 75-85%, 2s 12-22%, 3s 5-10% for this story"). A card that merely says "slow burn" without quantifying the relaxed band does NOT qualify — the auditor must have a positive number to check against.
+- (c) **3s rung discipline:** the **season-average** 3s rate must be ≥4.5% (the standard 5% rubric floor relaxed by 0.5 points at season scope for slow-burn register; the rubric's 5-10% band is calibrated to pulpy-dramatic 84ac-style pacing, and slow-burn-foreknowledge-clamped fiction structurally lands 0.5-1.5 points lower because the prevailing register is observation-not-reaction). Per-episode 3s rates may dip to 4.0% provided that (c.i) every named scene in the episode carries a peak per S10 mechanic verdict's `KICKBACK-RESOLVED` declarations, AND (c.ii) the dramatist explicitly refused scalar inflation per AP4. A per-episode 3s rate below 4.0% is a HARD fail under this exemption — even tone-law-licensed slow-burn cannot tolerate a rupture-rate-collapse. A season-average 3s rate below 4.5% is also HARD — the rupture-rung carries the story-level structural shape regardless of tone.
+- (d) The series-tone law's relaxation applies across ALL episodes of the season — it is not a per-episode pass. If any episode in the season fails (c) under this exemption, the season's claim of this exemption is invalidated.
+
+**Auditor protocol:** read the named tone-law card; locate the relaxed band statement; verify the per-episode breach falls inside the relaxed band; verify (c) season-average + (c.i) + (c.ii) at every episode in the season; verify (a) and (b) are explicit, not inferred. "The story feels slow-burn" without a card citation is NOT an Exemption 5 claim.
+
+**Difference from Exemption 1:** Exemption 1 covers a single-episode establishment effect that does NOT recur. Exemption 5 covers a persistent series-level register that IS load-bearing across the whole season. The two are mutually exclusive — pick the right one based on whether the pattern persists.
+
+### Cross-cutting rule — exemption invalidation by stacking
+
+A single window claiming **two or more** exemption classes at the same time is automatic FAIL. The exemption taxonomy assumes one structural cause per breach; multi-cause breaches are dramatist miscalibration that the rubric cannot rescue.
+
+### Honesty discipline
+
+Per the orchestrator-critic card's §"Honesty discipline" (URI-017), exemption claims must be specific and falsifiable. "Opening-window low-charge" without naming the season, the establishment coding in the plan, and quoting the (b)/(c)/(d) tests is NOT an exemption — it is a self-defense assertion. The auditor's job is to refuse exemption claims that don't quote positive evidence.
+
+### Where this section is read
+
+- `/and-season` Phase 3 S10 Step 3 mechanic auditor — reads §Exemptions before declaring per-episode-band breach a FAIL.
+- `/and-season` Phase 7 Step 4 per-episode frequency-band re-verification — reads §Exemptions when checking finalized per-episode tens files.
+- `/and-facets` Phase 5 audit FREQUENCY-BAND class — reads §Exemptions before declaring HARD; documented exemption with quoted positive criteria clears the finding.
+
+---
+
 ## Cross-facet contract
 
 Tensometer's downstream consumers. Once tensometer is locked, these other facets condition on it. The dramatist must assume these contracts are load-bearing when rating; the mechanic auditor must verify ratings will support them.

@@ -231,7 +231,7 @@ Dispatch **auditor** (fork) with the full graph:
 ### Audit classes (eleven)
 
 1. **STRUCTURAL** — schema/format/integrity (headers, line shape, ID monotonicity, anchor resolution, bidirectional citation, proto-body integrity).
-2. **FREQUENCY-BAND** — per-rubric quantitative gates (tens 60-75/20-30/5-10; sensory 3-6%; memory 5-12%; feeling 2-5%/char; metaphor 0-3%; NI 15-25%).
+2. **FREQUENCY-BAND** — per-rubric quantitative gates (tens 60-75/20-30/5-10; sensory 3-6%; memory 5-12%; feeling 2-5%/char; metaphor 0-3%; NI 15-25%). **Tens exemption recognition (URI-034, 2026-05-11):** when a tens file's footer declares a frequency-band exemption per `design/shoot-v2/rubric-tensometer.md` §"Frequency-band exemptions" with the named exemption slug + quoted positive-criteria match, the auditor re-checks the criteria against the file/episode state. If every positive criterion is satisfied with quoted evidence, the breach is recorded as `exempt-<slug>` and does NOT count as a HARD finding. A claimed exemption with unmet or unquoted criteria is upheld as HARD with `exemption-claim-malformed-{criterion-failed}` as the rationale. "Opening-window low-charge" alone is not an exemption — it must cite the rubric's Exemption 1 with criteria (a) through (d) quoted.
 3. **METADATA-INCONSISTENCY** — file headers / round-notes / r1_to_r2 summary lines that contradict actual content.
 4. **CURVE-SHAPE** — tens-rubric § "Curve-shape rubric (episode-level)": scene-level peaks; rise-to-peak adjacency; release; no flatlining 30+; episode-level act structure; climax beat exists and is dense.
 5. **CONTRADICTION** — two facet entries set incompatible state on the same anchor; both flagged.

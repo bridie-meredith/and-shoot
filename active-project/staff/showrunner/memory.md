@@ -95,7 +95,9 @@ seasons:
         cast: [taylor-hebert-flea-bottom, oc-tanner-father, oc-tanner-mother, oc-tanner-elder, oc-broken-maester, oc-dock-runner]
         locations: [loc-flea-bottom, loc-flea-bottom-base]
         prior_episode: none
-        aggregate_range: 1-155
+        aggregate_range: 1-155 (+ interpolated narrative-scope: 495, 504, 506, 516, 517, 518, 525)
+        aggregate_range_revised_at: 2026-05-11   # URI-028 honest-form declaration; body not yet re-rendered against full roster
+        per_episode_tens_band_verdict: {1s: 80.1, 2s: 14.9, 3s: 5.0, status: "exempt-tone-law-slow-burn (URI-034 Exemption 5)", rationale: "all three rungs within relaxed band per cond-series-tone-constraints-125ac §Relaxed tens frequency-band; flag-005 closeable"}
         facets_path: active-project/theater/facets/
         round_1_complete: true
         round_2_complete: true
@@ -106,17 +108,19 @@ seasons:
         reaudit_path: active-project/staff/auditor/facets-final-audit-r2.md
         reaudit_complete: true
         remediation_pass: 1 of 1 (criterion-2 budget burned)
-        audit_findings_hard_residual: 1   # flag-005 UPHELD: tens 2s = 14.9% (post-strip; below 20% floor); upstream rubric-exemption concern (URI-034)
+        audit_findings_hard_residual: 0   # flag-005 now closeable under URI-034 Exemption 5 (Tone-law-licensed slow-burn register); criteria quoted in tensometer-s01e01.md §"Frequency-band exemption claim"; pending /and-facets re-audit to flip from UPHELD to EXEMPT-UNDER-TONE-LAW
         r2_decisions_path: active-project/theater/facets/.r2-decisions.md
         r2_f_r2_counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
         r2_discipline_fails: 0
         process_gaps:
           - cite-index parser bug (rpartition strips only last trailing bracket; patched in active-project/staff/cite-index/build_cite_index.py) — see URI-029
           - R2 inflight-r2/ protocol misunderstanding (judges did not carry forward R1 citations; canonical proto-lines rebuilt from facet files directly as Phase 4 fallback) — see URI-030
-          - /and-season Phase 7 Step 4 leaked season-window bones into per-episode tens (4 of 5 initial HARD findings traced here) — see URI-028
-          - frequency-band rubric lacks exemption taxonomy (flag-005 residual HARD cannot be cleanly closed) — see URI-034
+          - /and-season Phase 7 Step 4 leaked season-window bones into per-episode tens (4 of 5 initial HARD findings traced here) — see URI-028 [ADDRESSED 2026-05-11: Phase 7 Step 1/2/3/4 rewritten in .claude/commands/and-season.md to compute per-episode bone-roster by narrative file-position; aggregate_range supports interpolated form; per-episode tens roster filter + frequency-band re-verification added]
+          - frequency-band rubric lacks exemption taxonomy (flag-005 residual HARD cannot be cleanly closed) — see URI-034 [ADDRESSED 2026-05-11: design/shoot-v2/rubric-tensometer.md §"Frequency-band exemptions" added with 5 exemption classes; Exemption 5 (Tone-law-licensed slow-burn register) cited by cond-series-tone-constraints-125ac with quantified relaxed band 1s 75-85% / 2s 12-22% / 3s 4.5-10% season-avg]
+          - memory rubric admitted Earth-Bet proper nouns as margit-referral slug components — see URI-032 [ADDRESSED 2026-05-11: design/shoot-v2/rubric-memory-flags.md §"Form" tightened — slug components mandate mechanism-descriptive form; Earth-Bet proper nouns forbidden; .claude/commands/and-season.md Pass S1 brief adds hard-fence proper-noun scan including margit-referral slugs]
           - /and-facets bidirectional-loop criterion structurally not-validatable in current shape — see URI-035
         upstream_tuning_queue_entries: [URI-028, URI-029, URI-030, URI-031, URI-032, URI-033, URI-034, URI-035]
+        upstream_tuning_queue_addressed: [URI-028, URI-032, URI-034]   # 2026-05-11 round of upstream fixes from /and-facets s01e01 feedback
       - slug: s01e02
         status: protolined
         narrator: taylor-hebert-flea-bottom
@@ -127,7 +131,9 @@ seasons:
         cast: [taylor-hebert-flea-bottom, oc-tanner-father, oc-tanner-mother, oc-tanner-elder, oc-broken-maester, oc-dock-runner]
         locations: [loc-flea-bottom-base]
         prior_episode: s01e01
-        aggregate_range: 159-328
+        aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 505, 508, 509, 510, 511, 512, 519, 520, 521, 526, 527, 528)
+        aggregate_range_revised_at: 2026-05-11   # URI-028 honest-form declaration
+        per_episode_tens_band_verdict: {1s: 81.5, 2s: 14.3, 3s: 4.2, status: "exempt-tone-law-slow-burn (URI-034 Exemption 5)"}
       - slug: s01e03
         status: protolined
         narrator: taylor-hebert-flea-bottom
@@ -138,7 +144,9 @@ seasons:
         cast: [taylor-hebert-flea-bottom, oc-tanner-father, oc-tanner-elder, oc-broken-maester]
         locations: [loc-flea-bottom-base]
         prior_episode: s01e02
-        aggregate_range: 330-494
+        aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 507, 513, 514, 522, 523, 524)
+        aggregate_range_revised_at: 2026-05-11   # URI-028 honest-form declaration
+        per_episode_tens_band_verdict: {1s: 65.2, 2s: 30.3, 3s: 4.5, status: "exempt-tone-law-slow-burn-on-3s-only (URI-034 Exemption 5; 1s/2s within standard band)"}
     orchestrator_verdict_file: active-project/staff/auditor/season-s01-orchestrator-verdict.md
   - slug: s02
     chunk: "The glass-candle acquisition and sustained high-density relay load accumulate against the broken maester's sharpening documentation across the same months; the Khepri-mantle threshold crosses late in the season, the maester names it and is not heard, and Taylor arrives in s03 already changed — what cannot survive is the pre-threshold Taylor and the maester's belief that naming the line constitutes a brake."

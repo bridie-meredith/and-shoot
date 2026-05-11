@@ -392,7 +392,13 @@ An item is closed when:
 
 Items are **never silently abandoned**. If the team decides a queued item is no longer needed, the queue entry is updated to status `ABANDONED — <reason>` and stays for trace.
 
-### URI-028 — /and-season Phase 7 Step 4 — per-episode tens cut leaks season-window bones
+### URI-028 — /and-season Phase 7 Step 4 — per-episode tens cut leaks season-window bones [RESOLVED 2026-05-11]
+
+**Resolution (2026-05-11):** `.claude/commands/and-season.md` Phase 7 Step 1 rewritten to compute per-episode bone-roster by walking `s01.bones.md` in narrative file-order (not by min-max numeric ID). Aggregate_range field syntax extended to support `<from>-<to> (+ interpolated: <id>, <id>, ...)` form per URI-028. Phase 7 Step 4 adds a roster-filter that re-homes leaked tens entries to the correct per-episode tens file plus a per-episode frequency-band re-verification gate. Phase 3 S10 Step 2 adds a window-roster declaration requirement on tens file headers; Step 3 adds a per-episode-band pre-check and explicit kickback resolution-status declarations. s01 outputs (s01e01.md / s01e02.md / s01e03.md aggregate_range + tensometer-s01e01.md / tensometer-s01e02.md / tensometer-s01e03.md headers) revised to honest-form. Body re-rendering against full roster pending Phase 7 re-execution (out of scope for this fix round).
+
+**Original issue follows for historical context:**
+
+
 
 - **Category:** Protoline upstream / orchestration command (`/and-season` Phase 7 Step 4).
 - **Source:** /and-facets s01e01 run, 2026-05-11. Audit findings flag-001, flag-002, flag-008, flag-010 — all HARD; all concentrate in tensometer.
@@ -437,7 +443,13 @@ Items are **never silently abandoned**. If the team decides a queued item is no 
 - **Linkage:** if URI-030 is resolved via the facet-as-source-of-truth approach (rebuild citations from facets), this URI's deletion-cascade need is subsumed (the rebuild handles deletions trivially). The two URIs converge on the same fix.
 - **Cost:** small if it's the rebuild-from-facets approach. Medium if it's a discrete deletion-cascade pass added to the existing union flow.
 
-### URI-032 — memory facet — margit-referral slug naming convention (Earth-Bet proximity)
+### URI-032 — memory facet — margit-referral slug naming convention (Earth-Bet proximity) [RESOLVED 2026-05-11]
+
+**Resolution (2026-05-11):** `design/shoot-v2/rubric-memory-flags.md` §"Form" tightened — slug components mandate mechanism-descriptive form; Earth-Bet proper nouns (locker, Annette, Endbringer, Bakuda, PRT, Skitter, Khepri, Gold Morning, Leviathan, Behemoth, Coil-Dinah-resolution) explicitly forbidden as slug components. Examples in `<target reference>` field updated. §"Hard-fence asymmetry between fields" updated — target-reference field hosts metadata but the slug *surface* still carries the fence per the warehouse-card-ingestion path. `.claude/commands/and-season.md` Pass S1 (Constraint audit) brief extended with hard-fence proper-noun scan for SVO bodies AND margit-referral slug components. s01e01's existing memory.md slugs were already renamed in the /and-facets remediation pass.
+
+**Original issue follows for historical context:**
+
+
 
 - **Category:** Rubric tuning + margit intake validation.
 - **Source:** /and-facets s01e01 audit, 2026-05-11. Audit flag-012 (CONSTRAINT, HARD-proximity).
@@ -458,7 +470,23 @@ Items are **never silently abandoned**. If the team decides a queued item is no 
   3. Keep the one-clause rule strict and require doubled-register figures to be re-shaped to one-clause form (in this run, narrator:25 was rewritten to one-clause per option 3 by the fixer).
 - **Cost:** small (rubric text). The s01e01 case was resolved via option 3 in the remediation pass; the rubric question stands.
 
-### URI-034 — Frequency-band exemption taxonomy missing
+### URI-034 — Frequency-band exemption taxonomy missing [RESOLVED 2026-05-11]
+
+**Resolution (2026-05-11):** `design/shoot-v2/rubric-tensometer.md` gains §"Frequency-band exemptions" with 5 enumerated exemption classes (each with positive criteria and auditor protocols):
+
+1. **Exemption 1 — Establishment-window low-charge.** Single-episode establishment effect that does not recur; permits 2s 14-20% / 1s 75-80%; 3s floor holds; criterion (d) auto-invalidates if pattern replicates in season's second window.
+2. **Exemption 2 — Single-locale interlude.** Interlude episode confined to one locale; permits 1s up to 85% / 3s down to 3%; 2s floor holds.
+3. **Exemption 3 — Sustained-action sequence.** ≥80% bones one contiguous action; permits 2s up to 45% / 3s up to 15%; 1s floor at 40%.
+4. **Exemption 4 — Post-peak denouement.** Plan-declared LATE-WEIGHT-LICENSED arc; permits 3s down to 3%; 2s floor holds.
+5. **Exemption 5 — Tone-law-licensed slow-burn register.** Series-tone condition card declares slow-burn / low-rupture-density with quantified relaxed band; permits 1s up to 85% / 2s down to 12% persistently; 3s relaxed to 4.5% season-avg + 4.0% per-episode floor.
+
+Cross-cutting: exemption stacking is FAIL. Honesty discipline: exemption claims must quote positive criteria evidence, not assert qualitative defenses.
+
+`/and-facets` Phase 5 audit FREQUENCY-BAND class reads §Exemptions before declaring HARD. `cond-series-tone-constraints-125ac.card.md` updated with quantified relaxed-band statement satisfying Exemption 5 criteria (a) and (b). s01e01/02/03 tens files now file Exemption 5 claims with quoted criteria; flag-005 UPHELD-HARD residual becomes closeable on /and-facets re-audit.
+
+**Original issue follows for historical context:**
+
+
 
 - **Category:** Rubric tuning (`design/shoot-v2/rubric-tensometer.md`).
 - **Source:** /and-facets s01e01 audit, 2026-05-11. Audit flag-005 (FREQUENCY-BAND HARD). Tens 2s rate = 17.4% (below 20% floor). The tens file's self-defense: "opening-window low-charge; structural per orchestrator-verdict." But the FREQUENCY-BAND rubric does not enumerate exemption classes — "opening-window low-charge" is a qualitative claim, not a rubric-enumerated exempted condition.

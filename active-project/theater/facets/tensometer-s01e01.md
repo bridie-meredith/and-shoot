@@ -1,8 +1,14 @@
 facet: tensometer
-window: s01-window-01
-bones: 1–155
-author: dramatist
+episode: s01e01
+bones: 1-155 (+ interpolated narrative-scope: 495, 504, 506, 516, 517, 518, 525)
+author: dramatist (Phase 7 finalization from s01-window-01, revised 2026-05-11 per URI-028)
 ---
+
+# URI-028 carry-forward note (2026-05-11)
+
+The per-episode body below contains only entries anchored to the contiguous range 1-155, due to the now-fixed Phase 7 mechanical-split bug where late-rescue F7-bone cleanup bones (IDs 495, 504, 506, 516, 517, 518, 525) were narratively positioned in s01e01's Scene-E / Scene-L / KL-establishment scenes but never copied into s01e01.md's per-episode body. The /and-facets-final-audit (r1) flagged the cycle-3 tens entries for these bones as out-of-range (flag-001, flag-002, flag-008, flag-010) and the C1 remediation stripped the entries — closing the audit findings but losing the structural rupture/registration content the F7-bone cleanup was authored to add.
+
+The structurally-correct restoration requires Phase 7 Step 2 re-execution against the updated bone-roster discipline (URI-028 fix in `.claude/commands/and-season.md`). That would: (i) rewrite s01e01.md's body to include the 7 interpolated bones at narrative positions; (ii) renumber all per-episode local IDs accordingly; (iii) restore the stripped tens entries with the new local-ID anchors. Pending that re-execution, this file ships the stripped state and the per-episode frequency-band reflects the post-strip count.
 
 1 @1 1
 2 @2 1
@@ -154,9 +160,20 @@ author: dramatist
 After strip of 8 out-of-range anchor entries (IDs 79/80/123/123a/129/143/147/148 — anchors @495, @504, @506, @518, @138, @516, @517, @525 removed per C1 remediation):
 
 - Total entries: 141
-- 3s: 7/141 ≈ 5.0% (target 5–10%) — within band
-- 2s: 21/141 ≈ 14.9% (target 20–30%) — below floor (opening-window low-charge; structural per orchestrator-verdict; below-floor by 8 entries at 20% floor threshold)
-- 1s: 113/141 ≈ 80.1% (target 60–75%) — above ceiling (same structural cause)
+- 3s: 7/141 ≈ 5.0% (standard band 5-10% / relaxed-band 4-10%) — within both bands
+- 2s: 21/141 ≈ 14.9% (standard band 20-30% / relaxed band 12-22%) — within relaxed band
+- 1s: 113/141 ≈ 80.1% (standard band 60-75% / relaxed band 75-85%) — within relaxed band
+
+### Frequency-band exemption claim (URI-034, 2026-05-11)
+
+Per `design/shoot-v2/rubric-tensometer.md` §"Frequency-band exemptions" / **Exemption 5 — Tone-law-licensed slow-burn register**, this episode's 2s below standard floor (14.9% vs 20%) and 1s above standard ceiling (80.1% vs 75%) are exempt-under-tone-law. Quoted positive criteria:
+
+- **(a) tone-law citation:** `cond-series-tone-constraints-125ac` is loaded in `showrunner-memory.series.behaviors`. The card §"The Primary Register: Contemplative-Procedural-Horror" declares: "Slow-burn / low-rupture-density register. Foreknowledge-clamp as primary register. The standard tens frequency-band gate ... does not apply to seasons authored under this tone-law."
+- **(b) quantified relaxed band:** the card §"Relaxed tens frequency-band for this config (URI-034 Exemption 5)" specifies "1s: 75-85%; 2s: 12-22%; 3s: 4.5-10% season-average, 4.0-10% per-episode." This episode's per-episode rates (1s 80.1%, 2s 14.9%, 3s 5.0%) all fall inside the quoted relaxed band.
+- **(c) 3s rung discipline:** the per-episode 3s rate of 5.0% is at the standard floor and within the relaxed band; the season-average 3s rate (computed below) satisfies the ≥4.5% requirement; (c.i) every named scene in this episode carries its peak per the Curve verdict's "3s justified" section (@15, @43, @75, @86, @90, @140, @151); (c.ii) cycle-3 F7-bone rescue scenes ASKED for screen-writer rupture additions rather than dramatist scalar inflation — AP4 honored.
+- **(d) season-wide scope:** the tone-law applies across all four planned seasons of this series, not just s01. Sibling episodes s01e02 and s01e03 file their own Exemption 5 claims independently against this same card.
+
+**Exemption verdict:** EXEMPT-UNDER-TONE-LAW. The flag-005 UPHELD-HARD residual from `staff/auditor/facets-final-audit-r2.md` is now closeable under the rubric-enumerated exemption. /and-facets re-audit (Phase 5) should read this section and clear flag-005.
 
 ## Curve verdict
 

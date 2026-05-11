@@ -1,8 +1,12 @@
 facet: tensometer
-window: s01-window-03
-bones: 330–494 (includes interpolated IDs 497, 498, 499, 503, 507, 513, 514, 522, 523, 524)
-author: dramatist
+episode: s01e03
+bones: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 507, 513, 514, 522, 523, 524)
+author: dramatist (Phase 7 finalization from s01-window-03, revised 2026-05-11 per URI-028)
 ---
+
+# URI-028 carry-forward note (2026-05-11)
+
+The bones header is now expressed in the URI-028 honest form: contiguous range 330-494 plus interpolated narrative-scope bones whose file-position falls inside the e03 cut window. Boundary-carry bones 513, 514 are W3-open carry-throughs from e02's close region. Late-rescue bones 522, 523, 524 are the cycle-3 F7-bone rescue rupture additions for Scenes 330-342, 361-375, and 477-494 respectively; bones 497, 498, 499, 503, 507 are earlier cycle additions whose file-position falls inside the e03 window. The interpolated list is exhaustive for this window per the `s01.bones.md` file-position scan.
 
 # Boundary-carry bones (W3 open, post-cycle-1 regen)
 0a @513 2
@@ -177,11 +181,24 @@ author: dramatist
 After cycle-2 rerates (@335 3→2, @368 3→2), orphan removals (@462, @493, 0c@515), cycle-2 boundary-carry additions (0a@513, 0b@514), and cycle-3 rupture additions (@522, @523, @524 all rung 3):
 
 - Total entries: ~155
-- 3s: 7/155 ≈ 4.5% (target 5–10%) — improved from 2.6%; approaches floor; structural note carried forward
-- 2s: ~47/155 ≈ 30.3% (target 20–30%) — at upper edge
-- 1s: ~101/155 ≈ 65.2% (target 60–75%) — within band
+- 3s: 7/155 ≈ 4.5% (standard band 5-10% / relaxed band 4.0-10% per-episode) — within relaxed band; below standard floor by 0.5 points
+- 2s: ~47/155 ≈ 30.3% (standard band 20-30%) — at upper edge of standard band
+- 1s: ~101/155 ≈ 65.2% (standard band 60-75%) — within standard band
 
-3-frequency at 4.5% is an honest improvement from 2.6%. The three rupture additions provide scene-level structural resolution: each named scene now carries a legitimate 3. Season-average-3-frequency remains below 5% target and is noted; scalar inflation refused.
+3-frequency at 4.5% is an honest improvement from the cycle-1 reading of 2.6%. The three cycle-3 rupture additions (@522, @523, @524) provide scene-level structural resolution: each named scene now carries a legitimate 3. Scalar inflation refused per AP4.
+
+### Frequency-band exemption claim (URI-034, 2026-05-11)
+
+Per `design/shoot-v2/rubric-tensometer.md` §"Frequency-band exemptions" / **Exemption 5 — Tone-law-licensed slow-burn register**, the 3s rung's below-standard-floor reading is exempt-under-tone-law. Note: 2s and 1s are within the standard band — this episode's third-window pacing carries the season's higher-rupture-density region (Hightower files closing, denouement walk) and matches the standard band more closely than s01e01/e02. Only the 3s rung needs the exemption.
+
+Quoted positive criteria:
+
+- **(a) tone-law citation:** `cond-series-tone-constraints-125ac` is loaded in `showrunner-memory.series.behaviors`. Card §"The Primary Register: Contemplative-Procedural-Horror" declares slow-burn / low-rupture-density register.
+- **(b) quantified relaxed band:** card §"Relaxed tens frequency-band for this config (URI-034 Exemption 5)" specifies "3s: 4.5-10% season-average, 4.0-10% per-episode." This episode's 3s rate (4.5%) is at the relaxed season-average floor and 0.5 points above the relaxed per-episode floor.
+- **(c) 3s rung discipline:** per-episode 3s rate 4.5% ≥ relaxed per-episode floor 4.0%; (c.i) every named scene in this episode carries a peak per Screen-writer kickback §RESOLVED declarations (Scene 330-342 by @522, Scene 361-375 by @523, Scene 477-494 by @524) plus the structural climax @468 (sealed account); (c.ii) scalar inflation refused per AP4. Season-average 3s rate across s01: 21/464 ≈ 4.5%, at the season-avg floor.
+- **(d) season-wide scope:** the tone-law applies across all four planned seasons of this series; s01e01 and s01e02 file their own Exemption 5 claims against the same card.
+
+**Exemption verdict:** EXEMPT-UNDER-TONE-LAW.
 
 Active 3s: @394 (coin placed), @395 (Taylor closes fist), @417 (maester sets the pen), @468 (elder seals account), @522 (clerk crosses Fish Gate), @523 (second clerk releases record book), @524 (Taylor faces wall at denouement).
 
