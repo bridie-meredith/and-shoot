@@ -1,29 +1,30 @@
 # Open Questions
-# Internal. Written in step 1a. Ordered by dependency. Each resolved OQ moves to world-notes.md.
+# Dependency-ordered. Each is resolved by screen-writer proposing 2-3 stated-as-fact options,
+# then dramatist + audience review. Resolved OQs append to world-notes.md.
 
-## OQ-1: Taylor's powers in Westeros
-What is the status of Taylor's parahuman ability (swarm-sense / multi-body insect control) in this reincarnation? Three live shapes: (a) full power, with foreign-ecology friction (different insect species, different distributions, swarm-map is wrong); (b) attenuated — only fragments work, or only certain arthropods, or sense without control; (c) absent — no power, only memory and disposition. **All downstream tactics, threat profile, and visibility risk hang on this answer.**
+## OQ-1: Arrival mechanism + identity status
+What is the mechanism of Taylor's arrival in Westeros, and what is the relationship between "Taylor" and the body/life she now inhabits? Specifically: is there a prior occupant whose life she displaces, is the body new, does she retain her Earth-Bet name and language overtly or carry a Westerosi identity? This is upstream of nearly everything — cast, power-onset, who notices her difference, what "spurns nobility" even means structurally.
 
-## OQ-2: Reincarnation arrival point — life stage
-At what life stage does Taylor arrive in the Westerosi body? Three live shapes: (a) infant, full decade-plus before any agency, language and motor relearning consume early arc; (b) older child (~6–10), some social legibility, beginning of operational capacity; (c) young adult, immediate operational baseline. **Determines opening pacing and what kind of "adult-mind-in-X-body" friction the prose has to carry.**
+## OQ-2: Power-set scope and onset curve
+What does Taylor's power look like in Westeros at story open and over the series? Is it the full Worm power-set instantly available, does it return gradually as something is unlocked, is the multi-body / Khepri-mantle aspect available or sealed, and is range comparable to her late-Worm canon range or scaled differently? Downstream of OQ-1 (because identity-mechanism gates whether her shard "comes with her" or is reconstituted).
 
-## OQ-3: Taylor's psychological baseline at arrival
-Where in her own life did she die? Three live shapes: (a) post-Gold-Morning Khepri-form Taylor — apocalypse-survivor, used everyone, ethically hollowed out; (b) end-of-Worm post-Khepri-recovery Taylor — quieter, scarred, trying to be done; (c) mid-canon Taylor (e.g., post-Echidna or post-Leviathan) — still operational, less burnt, more recognizably "warlord-organizer-Taylor." **Sets her ethical baseline and decides what kinds of choices feel in-character.**
+## OQ-3: Arcane experimentation — what is her access vector?
+How does Taylor get her hands on Valyrian / blood / glass-candle / dragon-binding magic to experiment on? Is it through Citadel infiltration, a hoard she finds, a captured maester, dragon-eggs she acquires, a sorcerer she takes apprenticeship under, ruins of Old Valyria, etc.? Determines what locations and supporting cast the early seasons need.
 
-## OQ-4: Birth station
-Into what social station is she reborn? Live shapes: (a) smallfolk (peasant/townsfolk) — hardest ladder, but the constituency she instinctively organizes is already around her; (b) household of a hedge knight or minor sworn family — small mobility, some legibility; (c) minor noble house — legible authority, restricted movement; (d) major house or royal proximity — high access, high surveillance. **Decides the canvas she has to work on and the institutions that contain her early.**
+## OQ-4: Geographic anchor and operational base
+Where does Taylor operate from in early seasons? Flea Bottom / King's Landing inner workings? A Riverlands hedge-territory? Dragonstone-adjacent? A Citadel-adjacent island? The Reach grain belt? The choice determines which smallfolk slice she embeds with and which noble houses are her direct adversaries early.
 
-## OQ-5: Geographic anchor
-Where in Westeros does the story begin? Live shapes: King's Landing (court adjacency, dense), the Reach (settled/agricultural, Faith-dense), the Riverlands (crossroads, recent Stark/Tully/Targaryen stitching), the North (sparse, old gods, House Stark), Dragonstone (Targaryen heart). **Decides which institutions are local antagonists and which lore registers are foregrounded.**
+## OQ-5: Smallfolk cast — which slice, which faces?
+Out of the five slices identified in brief-expansion (urban landless / rural tied / craft guild / camp followers / marginal-outcast), which does Taylor primarily embed with? Single slice or alliance across slices? This determines specific named smallfolk characters who will be load-bearing.
 
-## OQ-6: Foreknowledge — does Taylor know "ASOIAF" as a fiction?
-Does Taylor recognize this world from any prior exposure (does she know "George R. R. Martin" / does she recognize names like "Targaryen" or events like "the Dance")? Live shapes: (a) full meta-foreknowledge (she remembers reading/watching it); (b) partial — names ring bells, specifics fog; (c) no foreknowledge at all (she has to learn this world cold). **Decides whether knowledge-as-burden is in play, and how prophecy-shaped her actions look from outside.**
+## OQ-6: Targaryen / Hightower contact pattern
+At what point and through what mechanism does Taylor first come into the orbit of the royal court? Does she reach them by escalation (smallfolk-organizing draws their attention), by deliberate insertion (she enters service or court visibility), or by being summoned (her growing reputation reaches them)? Determines the season-1 to season-2 transition shape.
 
-## OQ-7: Magic and the wider weird
-What magic is locally visible to Taylor in her arena? Live shapes: (a) magic is rare/legendary, dragons are distant nobility-only objects, no daily supernatural friction; (b) magic is present — wargs in the North, glass candles among maesters, Faith miracles attested; (c) magic is operational — Taylor brushes against actual magical systems early. **Decides how strange the setting can get and how Taylor's swarm-sense reads to others.**
+## OQ-7: Allies and witnesses — who knows what she is?
+Does anyone in Westeros learn the full truth of her origin, the Khepri choice, the Gold Morning? Or does the secret stay sealed and the cost is solitude? If allies exist, how few, and what is their function — confidant, brake, mirror, eventual betrayer? Affects whether the story has any human-scale intimacy or whether the protagonist is structurally alone.
 
-## OQ-8: Series end-state and dramatic horizon
-Where does the series end on the timeline? Live shapes: (a) closes well before the Dance — Taylor's social-warrior project resolves on its own terms in the Old King's twilight; (b) closes at/through the Great Council of 101 AC — Taylor's organizing collides with the realm's succession crisis; (c) closes at/through the Dance itself — Taylor's project survives or breaks against the Targaryen civil war 30 years on. **Decides scope, season count, and what the protagonist arc is *for*.**
+## OQ-8: Stopping-shape of the Dance
+Which of the five stopping-shapes from brief-expansion (prevented / redirected / replaced / exhausted / collapsed-by-demonstration) does the series commit to? The brief says "cowing with fear" which biases toward collapsed-by-demonstration or replaced, but the precise commitment shapes the climax and what the post-Dance seasons (if any) look like.
 
-## OQ-9: Cost-shape of escalation
-What does the escalation actually cost — and who pays? Live shapes: (a) Taylor pays in body/mind (organizer-as-martyr register); (b) the coalition pays (the people she organizes are visible and burned for it); (c) the institution pays (her escalation is structurally effective and the Faith/maester/lord answers in kind). **Decides genre register — tragedy, ensemble drama, or institutional thriller — and the audience's expected emotional contract.**
+## OQ-9: Series length and shape
+How many seasons does the series run? What is the macro-arc — single-arc-to-cowing-the-realm, a two-arc shape (rise + reckoning), a three-arc shape (rise / Dance / aftermath-and-cost)? Downstream of OQ-8 (stopping-shape gates whether there is an aftermath season at all).

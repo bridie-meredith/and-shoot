@@ -1,54 +1,88 @@
 # Audience STM — worm-canon-pedant
 STM:
-## Session: 1b option bundle review
-verdict: revise
-read: A bundle that is mostly canon-honest but has one under-argued pairing at its structural center — OQ-3/C (mid-canon Taylor) advocates for "friction is external, not internal," which misreads how mid-canon Taylor actually operates.
-specific feedback:
-  - OQ-3/C is the problem. Mid-canon Taylor (post-Leviathan/Echidna) is not simply operational — she self-isolates, lies to allies, runs distributed control as a substitute for trust, and carries Dinah's debt as a live moral wound. The advocate's claim that "friction is external" is a register violation; mid-canon Taylor's internal friction is her canonical trait. The plan must either own these failure modes as the story's fuel (which OQ-9/C's "coalition pays" framing could absorb) or choose a different OQ-3 option. Advocating for OQ-3/C on the grounds that it skips internal drag is not a reading of mid-canon Taylor — it is a rewrite of her.
-  - OQ-1/A has a gap: the option addresses foreign-ecology friction honestly, but does not address Shard behavior. In Worm, Taylor's Shard nudges her toward conflict escalation. In a foreign world with no Entities and no active parahuman ecosystem, does the Shard still push? This is not a contradiction but it is a planning-level hole — if the Shard's push is part of what drives escalation, that must be accounted for; if it is absent, that changes her psychological texture.
-  - OQ-6/A (full foreknowledge) is canon-consistent with Taylor's reading habits and intellectual engagement. No flag here — accepted cleanly.
-prior complaints addressed: n/a (first pass)
 
-## Session: 1b option bundle review — attempt 2
-verdict: accept
-read: OQ-3/C rewrite owns the failure modes correctly and the Shard Status section closes the power-ecology gap with a defensible translation of Worm mechanics into a no-Entity context.
-specific feedback:
-  - OQ-3/C complaint resolved. The revised advocate names self-isolation, distributed control as substitute for trust, Dinah's debt, and lying to allies as the mechanism by which OQ-9/C delivers "coalition pays." This is a faithful mid-canon read. Canon register recovered.
-  - Shard Status complaint resolved. "Dormant at Entity-communication level, active at behavioral-weight level" is consistent with how Shards function as semi-autonomous entities that don't simply switch off when removed from parahuman ecology. "Taylor reads it as her own judgment" is canon-correct given Taylor's limited Shard self-awareness throughout the text.
-  - Execution flag carried forward (not a revision trigger): if Taylor ever becomes aware of the Shard's influence, that moment must be treated as a major canon beat. Nothing in the bundle prohibits this; planning team should not treat it as a casual revelation when it arrives.
-prior complaints addressed: yes — both flagged items (OQ-3/C register and Shard behavior) are directly answered in attempt 2.
+## OQ-1 Plan Review — 2026-05-10
 
-## Session: series plan review
-verdict: revise
-read: The arc reads as canonically honest and the Shard behavioral weight is named correctly in S2; the child-body swarm ceiling is a genuine series-level hole.
-specific feedback:
-  - The vibe-cloud names the child-body ceiling (active-control-cost: ten minutes to headache, twenty to nosebleed, thirty to blackout) as a feature of S1. The series plan spans Taylor's body from age 7–11 (S1) through 11–17 (S2) through 17–22 (S3) through 22–24 (S4). The adolescent-body transition in mid-S2 is a meaningful somatic threshold — in Worm, Taylor's physical condition affects endurance and recovery even if not raw power scale. The series plan never marks this transition as producing any change to the swarm-sense ceiling. If the ceiling is intended to be fixed for the full 17-year run, that should be stated as a project decision; if it is intended to evolve with the body, the series plan must name the S2 threshold or it becomes an unchecked drift vector across later seasons.
-  - Foreknowledge at Great Council: by S4, Taylor is 22–24 and operating in the Council arena alongside canon-named figures (Rhaenys, Viserys at minimum). The plan notes foreknowledge is "broad strokes accurate, specifics fuzzy" and the cover degrades under sustained smart questioning. The series plan does not address how Taylor's foreknowledge interfaces with specific Council actors — whether she positions the coalition based on what she knows about their canonical positions. This is closer to execution-level, but the series plan should at minimum acknowledge the constraint that foreknowledge precision has a hard limit at the Council's individual-actor level, or it becomes a lore-leak vector.
-  - Shard awareness carry-forward (from round 2): the series plan does not name a moment at which Taylor might register the Shard's thumb as external. This remains a watch item; no revision required unless season planning stages an awareness beat without flagging it.
-prior complaints addressed: yes — OQ-3/C register and Shard behavior were resolved in attempt 2; child-body ceiling is a new series-plan level flag.
+Reviewed: OQ-1 options A/B/C + recommendation (Option A).
 
-## Session: series plan review — attempt 2
-verdict: accept
-read: Section 6 now carries the adolescent-body ceiling as a named project decision with a dated threshold; the primary revision demand is closed.
-specific feedback:
-  - Child-body ceiling complaint resolved. The project-decision sentence names ~age 13–14 / ~91 AC / mid-S2 as the transition event, commits to proportional cost-curve lengthening, and delegates exact revised ceiling values to season planning. This is the structural commitment the series plan needed — it is now a named threshold, not an unexamined constant. The drift vector is closed at series level.
-  - Foreknowledge-at-Council-actor-level carry item stands at execution level; nothing in the four fixes introduces a new lore-leak risk, but the watch item remains. Season planning should note the individual-actor precision limit when Council positioning begins.
-  - Shard awareness carry-forward unchanged. Watch item remains active; no staging of an awareness beat has occurred.
-prior complaints addressed: yes — child-body ceiling transition is now a named project decision; prior carry items remain at their appropriate planning levels.
+Verdict: ACCEPT
 
-## Session: season 1 plan review
-verdict: accept
-read: The season plan is canon-honest throughout — involuntary swarm at e05, passive-sense as the channel for e07, Shard-thumb named at e04 — and the prior series-plan carry items remain correctly positioned at execution level.
-specific feedback:
-  - s01e05 involuntary swarm rise is explicitly stated ("the swarm rises before Taylor decides"); the post-Leviathan reflex register is honored. s01e07 passive-sense discovery of Elara's Rowan visit is named correctly in the chunk and cross-referenced in the POV notes. Both are canon-accurate.
-  - s01e04 Shard-thumb cost: the chunk names the threshold as "whether Taylor holds still" — that is discipline-language, not cost-language. The structural note to shoot-phase ("must not flatten this to mere 'Taylor is disciplined' — the cost is real") carries the distinction forward, but the plan-level chunk does not demonstrate the cost as distinct from restraint. This is a shoot-phase responsibility, not a plan-level revision demand; the note is adequate.
-  - s01e07 POV watch item: if the episode goes Elara-POV interlude, the cost must be visible in what Elara fails to understand, not in what she resolves — the failure-mode register must survive the POV shift. Episode-plan authoring is on notice.
-prior complaints addressed: yes — foreknowledge precision limit and Shard awareness remain at execution level; adolescent-body ceiling is S2, not S1; no new series-plan carry items triggered by this plan.
+Reason: Option A's shard-reseeding mechanic is AU-labeled (named as departure from canon; tolerated). The Khepri-weight is correctly handled as internal cargo Taylor carries from Gold Morning — it is not produced by the body-situation. She inhabits Tya's dead body but did not displace a living person; the weight that follows is what she owes that fact, which is a different calibration than Khepri proper but consistent with the world-notes constraint ("Khepri-weight is a permanent feature of who she is"). No voice-register, timeline, or mechanics violations at this stage. Common Tongue fluency via shard (not Tya's memory) holds shard-logic correctly.
 
-## Session: season 1 plan review — attempt 2
-verdict: accept
-read: e07 POV constraint committed (Elara does not understand, does not resolve); Taylor's present-tense decision is the canonical control-as-substitute-for-trust beat; prior watch item closed.
-specific feedback:
-  - e07 POV watch item resolved. Elara-as-POV-who-does-not-understand is a committed rendering constraint, not a recommendation. The failure-mode register is preserved: cost lives in what Elara cannot read, not in Elara's comprehension or resolution.
-  - e07 decision register correct. Lie explicitly to both parents OR accept closing of operational cover is textbook mid-canon Taylor — she substitutes control management for honest relationship. This is the failure mode the season plan needed to name as present-tense action, not emotional aftermath. Named correctly.
-prior complaints addressed: yes — e07 POV watch item is closed by committed rendering constraint; all prior carry items (Shard awareness, foreknowledge precision) remain at their appropriate execution-level staging.
+Live watch: OQ-2 must specify how the power-gap works in a world without Entity infrastructure. If OQ-2 introduces a fresh-trigger model or adolescent-onset model it will contradict the shard-present-from-breath-one implication of Option A — flag at that stage.
+
+## OQ-2 Plan Review — 2026-05-10
+
+Reviewed: OQ-2 options A/B/C + recommendation (Option A — degraded-and-recovering).
+
+Verdict: ACCEPT
+
+Reason: The air-gap model (shard running local-only, no Entity network bandwidth for Khepri-tier processing overhead) applies canon shard-infrastructure logic correctly to a world where that infrastructure is absent. This is not a new mechanic — it is what the existing mechanic produces when the supporting layer is missing. Recovery curve is use-based self-optimization, which is how shards canonically behave. OQ-1 carry-forward satisfied: no fresh-trigger, no adolescent-onset, shard seated at Gold Morning and degraded by environment, not by trigger failure.
+
+Live watch: Khepri-mantle unlock must arrive as use-derived threshold — if the text treats it as an emotional revelation or a plot-unlock rather than an accumulated operational adaptation, flag. The "audience sees it coming before Taylor names it" framing in the options doc is exactly right; any deviation from that toward surprise-reveal is a mechanics violation.
+
+## OQ-3 Plan Review (round 1) — 2026-05-10
+
+Reviewed: OQ-3 options A/B/C + recommendation (Option A — Extraction-by-Observation).
+
+Verdict: ACCEPT — with flag on execution risk.
+
+Reason: Observation-via-insect-proprioception (reading over shoulders through walls, mapping hand-positions on active practitioners, sensing ink on pages) is canonically grounded — full sensory aggregation across thousands of individual bug-bodies is established Taylor capability; the scale is reduced (300m range), the mechanics are not. The density-saturation-to-glass-candle interaction is AU-invented, which is tolerated when named and earned. It is named here: the plan frames it as a hypothesis Taylor develops from incomplete fragments and tests through experiment with visible failure modes. The hypothesis-falsification structure in seasons 1–2 is the correct mechanic for a claim this reader requires to be earned in-world. The smallfolk woman losing weeks of memory is a cost within established scope — no mechanics violation. No lore leaks, no limit bypasses, no jargon errors.
+
+Live watch: the density-saturation mechanism must arrive with Taylor's in-world theory for why insect density interacts with a Valyrian relay artifact. "She observed it worked" is not sufficient — she must have a working hypothesis the text can test and partially falsify before confirming. If the mechanism is delivered as discovery-without-theory, flag as unsupported AU mechanics claim.
+
+## OQ-3 Plan Review (round 2) — 2026-05-10
+
+Reviewed: Revised Option A + Recommendation with s4 foreclosure event added.
+
+Verdict: ACCEPT — no new mechanics violations; prior live watch satisfied at plan level.
+
+Reason: The s4 foreclosure event introduces no new Worm-mechanics complications. The four smallfolk subjects are not capes; the density-saturation failure is entirely within the established AU mechanic (Valyrian relay artifact, living resonance-bodies as signal substrate). One subject dead, one surviving in four-hour memory increments — these are consequences of a failed experiment in an AU-invented interaction, not violations of canon shard behavior or established limits. Taylor burning the log page is a character action with no mechanics implications.
+
+The hypothesis-falsification structure is now more explicitly confirmed than in round 1: Taylor enters with a named model (load distributes across sub-threshold adults), the model fails on specific terms, the revised hypothesis is named (threshold is individual, not aggregate). The AU-invented mechanism is continuing to be handled correctly — named, theorized, tested, partially falsified, revised. This is how AU claims earn tolerance.
+
+Live watch (carried forward from round 1, not yet resolvable at plan level): Taylor's in-world theory for *why* the insect-network interacts with the Valyrian artifact — what property of the network (density? bioelectric signature? proprioceptive synchrony?) interacts with what property of the artifact — must be present in the text before the s4 experiment. The plan confirms the structure; execution must deliver the model. If the named hypothesis in the text is only "load distributes at sub-threshold" without the underlying mechanism theory, that is still a partial hand-wave. Flag at execution if the why is absent.
+
+## OQ-4/5 Plan Review — 2026-05-10
+
+Reviewed: OQ-4/5 options A/B/C + recommendation (Option A — Flea Bottom anchor, urban landless primary).
+
+Verdict: ACCEPT
+
+Reason: The urban-landless embedding tracks for this character. Taylor's operational social register in canon is not warm community membership — it is competent operation through networks she is partly inside and partly surveilling, with transparency about the transaction being the trust-building mechanism. The tanner-elder extending provisional acceptance on trade-reputation (not warmth), the dock runner as a trust-test rather than a companion, and the tallow-chandler fence held at information asymmetry (she knows what he has; he does not) are all canon-Taylor-shaped relationships. The broken maester above the apothecary reached through wall-seams via insect-bodies is the OQ-3 accepted mechanism in its operational context. No mechanics violations. The 300m range constraint holds at plan level — eastern-quarter broken maester is within range of a Flea Bottom anchor; the prose must confirm this precisely (range is hard-bounded and Taylor knows it exactly). The late-series note (Flea Bottom puts her 600m from the Red Keep; range expansion to 1.5km ceiling brings the court into range by s3) is rule-consistent with OQ-2's established ceiling and does not introduce scope creep.
+
+Live watch (carried forward, unchanged): Taylor's in-world theory for why insect-network density interacts with the glass-candle relay apparatus must appear in the prose before the s4 experiment. Nothing in OQ-4/5 resolves or complicates this. Carry forward to execution review.
+
+Additional live watch: the prose must establish Taylor's distance from the broken maester at least once with sufficient precision for the reader to verify the 300m constraint is honored. Plan-level "close enough" is acceptable; execution-level vagueness is a limit-bypass flag.
+
+## OQ-6/7/8/9 Plan Review — 2026-05-10
+
+Reviewed: OQ-6/7/8/9 integrated options A/B/C + recommendation (Option A — four seasons, reputation-arrives-before-she-does, single-witness, collapsed-by-demonstration).
+
+Verdict: ACCEPT
+
+Reason: The single-witness architecture (broken maester knows research, not Worm-origin) is canon-accurate to late-Worm Taylor's relationship structure. After Gold Morning, Taylor does not confide; she maintains operational relationships for operational reasons. One person knowing part of the truth while no one knows all of it is not a departure requiring AU-label tolerance — it is what canon-Taylor's relationship-architecture looks like. The broken maester as brake-not-ally is precisely right: he documents; he does not stop her; that is the correct register for how Taylor relates to people who know what she is doing.
+
+The Khepri-mantle timing holds at plan level. The plan places the unlock inside the triggering operation — the demonstration requires the sustained high-density operation that crosses the use-derived threshold. Cause and effect are the same event. Mechanics hold.
+
+New live watch (Khepri-mantle execution risk): the triggering-operation and the demonstration-climax occur at the same narrative moment. The prose must separate the threshold-crossing (Taylor recognizes the mantle has crossed; the reader sees the mechanics trigger) from the demonstration-effect (dragons become briefly uncontrollable because the threshold was crossed). If both events are delivered as one undifferentiated moment, the unlock reads as drama-derived, not use-derived — which is a mechanics violation. The sequencing must be explicit in execution.
+
+Carry-forward watches (unchanged from OQ-4/5):
+- Taylor's in-world theory for insect-network/glass-candle interaction must appear in prose before the s4 experiment.
+- Distance from maester must be established with precision at least once.
+
+## OQ-9 S2-Khepri-shift Confirm Review — 2026-05-10
+
+Reviewed: Revised Option A — S2 peak is now the Khepri-mantle threshold crossing (late S2, cause: sustained high-density relay load during range expansion + candle-acquisition). S3 begins with Taylor already changed. Demonstration remains in S3 as downstream consequence of a crossing already made.
+
+Verdict: ACCEPT
+
+Reason: The S2-Khepri-shift satisfies the use-derived requirement more cleanly than the original plan. The named unlock condition from OQ-2 — sustained high-density bug-control operations accumulating to local-processing threshold — is organically present in S2 through range expansion and candle-acquisition operational load. No new lore required. The threshold fires on exactly the condition the plan established.
+
+The shift also resolves the prior live watch (execution risk: mantle-crossing and demonstration-climax as simultaneous undifferentiated moment). Those events are now separated by a season boundary. The execution sequencing problem is eliminated at plan level — no prose gymnastics required to distinguish cause from effect.
+
+Updated live watch status: the prior Khepri-mantle execution sequencing watch is RESOLVED at plan level by the S2-Khepri-shift. The demonstration in S3 is a downstream consequence of a threshold already crossed; the reader will see the crossing in late S2 and the demonstration in S3 as causally ordered without requiring explicit intra-scene separation.
+
+Carry-forward watches (unchanged):
+- Taylor's in-world theory for insect-network/glass-candle interaction must appear in prose before the s4 experiment.
+- Distance from maester must be established with precision at least once.

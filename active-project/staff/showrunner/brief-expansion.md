@@ -1,69 +1,99 @@
-# Brief Expansion: Taylor Hebert in Westeros, ~289 AC, Reincarnated, Social Warrior Escalation
-
-Expansion only. Not a plan. Not binding. Handles for later planning to draw from.
+# brief-expansion
 
 ---
 
 ## 1. Alternative Framings
 
-**Tragedy of correct diagnosis.** Taylor reads the Aerys situation accurately — the king is spiraling, the smallfolk will pay, someone will overthrow him — and spends years building structures to survive the transition that, when it comes, destroys everything she built anyway. The story is about the gap between being right and being useful.
+**The Horror of Being the Solution** — Taylor does not stop the Dance by becoming a hero; she stops it by becoming the thing both sides fear more than each other, and the story tracks what it costs to inhabit that role willingly — the systematic, methodical construction of a monster-shape around a person who already knows what being a monster feels like.
 
-**Ironic comedy of manners.** Taylor's flat, pragmatic, Brockton-Bay social vocabulary collides with the elaborate performance codes of Westerosi court and smallfolk deference culture. Neither her directness nor her earnestness maps onto what anyone expects; she keeps achieving her goals for the wrong reasons and failing for the right ones. Tone: dry, humanist, occasionally absurdist.
+**The Arcanist's Bargain** — the "guise of saving the world" eats the saving: a procedural about Taylor tunneling into Valyrian blood-magic and glass-candle theory through her powers as research substrate, where each experimental breakthrough is also a moral debt she stops accounting for, until the smallfolk she claimed to protect are primarily variables.
 
-**Body horror / reincarnation horror.** The story foregrounds the wrongness of the body — child body, foreign language arriving in pieces, proprioception that doesn't match memory, the long years before she's physically capable of anything she remembers being able to do. The swarm-sense still runs underneath, looking for insects that don't match Earth taxonomy. The horror is not monsters; it's discontinuity of self across death.
+**The Organizing Story** — no dragons in the foreground: Taylor embeds with Flea Bottom tanners, Reach grain-haulers, and Dornish salt-wives, building horizontal resistance structures and information networks through her power's reach, while the succession crisis rages offscreen and the "stopping the Dance" is a side-effect of making the smallfolk ungovernable enough that neither faction can conscript them.
 
-**Grimdark political thriller.** Taylor as a faction-builder operating inside Aerys II's court or in the shadow of it — Harrenhal, King's Landing, or a great house's orbit — running social moves that look idealistic from outside and are ruthlessly instrumental from inside. The genre is Le Carré, not chosen-one fantasy. She uses people and pays for it.
+**The Tragedy of Refusal** — every relationship Taylor forms in Westeros ends because she cannot accept legitimization without betraying what she came for, and what she came for keeps narrowing: the story of someone who stops a war and empties herself doing it, ending alone and correct.
 
-**Oral-history retrospective / hagiography vs. revisionism.** The series is told from after — a Maester's account, a septon's hymn, a bard's corrupted ballad — where "what Taylor actually did" is already mythologized or erased. The story critiques how movements get recorded, how saviors get absorbed, how inconvenient organizers get sanded down into saints or demons.
+**The Procedural of Reform** — guild-politics and labor action as the story engine: Taylor's power makes her the most effective industrial organizer in Westerosi history, and the structural question is whether reform built on fear of the organizer survives the organizer's absence — a story about the difference between liberation and dependence.
 
-**Character-study interiority piece.** The brief's escalation pattern never resolves into external victory. What it traces is Taylor learning that her entire ethical operating system — built for Earth-Bet's parahumans, for modern accountability culture — generates outputs that are locally legible as magic, prophecy, or madness. The story is about the loneliness of frameworks that don't translate.
+**The Faustian Inversion** — she is offered the tools of Valyrian sorcery and takes them, telling herself it is in service of the smallfolk; the story is about how the research justifications accrete and the original purpose recedes until someone (a smallfolk character, a rival, a mirror-moment) forces the question of what she has actually been building.
 
 ---
 
 ## 2. Building Blocks
 
-- **Identity-without-referents** — everything Taylor uses to know herself (Brockton Bay, the Undersiders, her father, the cape community, the English language) is inaccessible; what remains is disposition, not history
+- **Power as instrument vs. power as self** — her bugs are research substrate, surveillance network, coercive weapon, and the only sensory register she fully trusts; the question of whether she uses her power or is her power never resolved cleanly post-Gold-Morning.
 
-- **The competence trap** — being visibly effective in a pre-modern context immediately generates hierarchy pressure: you become someone's ward, asset, or threat; neutrality is not available to the capable
+- **The pull between protecting smallfolk and using them as variables in experiments** — the research requires subjects; subjects are people; she already crossed this line once at planetary scale.
 
-- **Escalation in a world with different friction coefficients** — Taylor's escalation logic was calibrated for a world where institutional violence has bureaucratic drag; Westerosi lords can execute on rumor, which means the same behavioral escalation that worked in Brockton Bay produces wildly disproportionate responses here
+- **Identity-without-arrival** — she did not earn this body, this name, this fluency in Common Tongue; the question of whether she is Taylor Hebert or someone wearing Taylor Hebert's memories sits under every scene.
 
-- **Organizing without organizational vocabulary** — "coalition," "alliance," "faction," "movement" all exist in Westeros but always in service of lords, houses, faith; Taylor trying to build horizontal mutual aid among smallfolk has no legible template; she has to invent the form as she goes
+- **Sovereign refusal as political act** — declining titles, marriages, and legitimization is itself a power move in Westeros, and Westerosi power structures will keep trying to absorb her because an unowned actor is a threat; the refusal is not neutral.
 
-- **The usefulness of being underestimated as a child** — reincarnation into a child body is simultaneously a cage and a cover; nobody takes child-Taylor seriously enough to feel threatened, which is the only window she has for early infrastructure
+- **The Khepri problem** — she ended the world to save it before; she knows she will do it again if she decides she has to; everyone she gets close to either does not know this or cannot hold it.
 
-- **Knowledge-as-burden** — knowing Robert's Rebellion is coming, knowing what Aerys will do at King's Landing, knowing Rhaegar's arc ends at the Trident, is not power; acting on it without legible authority is either prophesy (dangerous) or irrelevance
+- **Fading vs. hoarded vs. taboo magic** — Valyrian sorcery is dying because it is being protected by the people with most to lose from its democratization; her power makes her able to access and distribute it in ways the Citadel and the dragonlords cannot prevent.
 
-- **The cost of being right alone** — Taylor surrounded by people who cannot share her frame of reference, cannot verify her knowledge, and have every social incentive to distrust an anomalous child; correctness without community is a kind of madness from the outside
+- **Fear as tool vs. fear as identity** — the brief says "cowing with fear"; she knows how to build and deploy a fear-shape deliberately; the danger is that the fear-shape becomes the only legible form she has.
 
-- **Faith as the only available coalition structure** — the Faith of the Seven is the one cross-lord institution that reaches smallfolk; Taylor as a non-believer who must operate through septon networks, or fight them, or become incomprehensible to most of the population
+- **The cost of being unkillable enough** — stopping a dragon civil war by being more frightening than dragons means she must be visibly unkillable or credibly capable of catastrophic retaliation; maintaining that impression is a permanent performance with no intermission.
 
-- **Aerys as a structural accelerant** — late-reign Aerys is not a villain to defeat; he is a system accelerant, a force that destabilizes the structures Taylor is trying to build before she finishes building them; the Rebellion is not salvation, it's a reset to zero
+- **The information asymmetry her power creates** — omnidirectional insect surveillance in a world with no concept of it; what she knows, when she knows it, and what she does and does not act on is a moral ledger she is always running in the background.
 
-- **Body-memory discontinuity** — swarm-sense in a foreign ecology (different insect species, different distributions, different behaviors); the power still works but the map is wrong; early scenes of Taylor reaching for insect geography that isn't there
+- **Legitimacy without sanction** — her authority with the smallfolk is real and earned but has no formal basis; Westerosi law cannot hold her and she cannot hold Westerosi law; every intervention is extrajudicial.
 
-- **Tywin's shadow** — Tywin as recently-resigned Hand or active Hand is the rational-actor foil; he also organizes, also thinks in systems, also sacrifices people for structural gain; the story gains depth if Taylor and Tywin are in parallel, not opposition
+- **The shape of a life after apocalypse** — she has already survived the end of the world once, by ending it; what it means to care about things again, to let things matter, when she has already proved she will sacrifice everything if she decides she must.
 
-- **The smallfolk as subjects vs. agents** — Taylor's instinct is to treat smallfolk as people with agency; Westerosi social physics treats them as ambient terrain; the story's central friction is whether she can change that frame before the institutions erase her
+- **Research ethics in a world with no research ethics** — Westeros has no framework for informed consent, experimental design, or harm limitation; she brings one from a world that barely had one; the gap between her standards and what the work demands is where the story lives.
 
 ---
 
 ## 3. Adjacent Concepts
 
-**Taylor Hebert**
-- adaptive escalation, bug-think (distributed control), ethical rigidity under pressure, parahumans-without-capes, grief-engine protagonist
+**"social justice"** in a feudal pre-modern setting collapses into:
+- redress / restitution / grievance-hearing
+- protection of the unprotected (not rights — shield)
+- disruption of extraction (rent, corvée, tithe, conscription)
+- visibility of the invisible (making the smallfolk legible as people to power structures that cannot see them)
+- horizontal solidarity (not vertical charity — the lord giving; the tanners organizing)
 
-**Westeros**
-- feudal information bottleneck, house-as-corporation, maester-network (soft surveillance), choke-point geography (King's Landing / Harrenhal / the Riverlands), the Wall as irrelevance
+**"arcane experimentation"** comes in flavors:
+- vivisection-logic (power-as-scalpel, subjects are samples)
+- natural philosophy (systematic observation, hypothesis, falsification — anachronistic but Taylor would import it)
+- blood-price research (Valyrian tradition: the magic costs something living; does it cost her, or does it cost her subjects?)
+- reverse-engineering (she has powers she does not understand; Westeros has magic she does not understand; she tries to make them talk to each other)
+- weaponization-as-byproduct (the research produces tools she did not design as weapons but which function as them)
 
-**~289 AC (Aerys late reign / Robert's Rebellion horizon)**
-- Defiance of Duskendale (285 AC, four years prior — Aerys still rattled, paranoid, burning), Harrenhal tourney (281 AC, already past — seeds of the Rebellion already planted), Rhaegar-Lyanna abduction (~282 AC), Rebellion active or imminent, Tywin's resignation / the Sack; the quiet before catastrophe; the moment when every faction is still pretending it can be navigated
+**"fear / cowing"** — what kinds of fear:
+- awe-terror (the sublime; something too large to be opposed)
+- revulsion-terror (the insect-body horror; the Khepri register)
+- tactical dread (I know everything you do; you cannot move without my knowing)
+- accumulated reputation (she does not threaten — she has a history and the history precedes her)
+- rational deterrence (the credible first-strike; I will do what I did before if I have to)
 
-**Reincarnated**
-- linguistic infancy (adult cognition in a pre-language body), somatic alienation, knowledge-without-credential, false memory pressure (the past life intruding on present survival), the ethics of using foreknowledge as capital
+**"smallfolk"** — which slice:
+- urban landless (Flea Bottom; dock workers; tanners; the chronically evicted)
+- rural tied (peasant farmers; serfs in all but name; subject to conscription and crop-seizure)
+- craft guild workers (weavers, smiths, masons — organized, literate-adjacent, with leverage)
+- camp followers and war-adjacent civilians (the ones who get ground when armies move)
+- the marginal and outcast (hedge knights, broken men, wildfire refugees, the pre-conscription pool)
 
-**Social warrior**
-- horizontal organizing, grievance-aggregation, coalition maintenance, narrative framing as a weapon, making enemies of institutions rather than individuals, the exhaustion of being the only one who sees the system
+**"spurns nobility"** — what shape the refusal takes:
+- refusal of title (she will not be named, elevated, or given lands)
+- refusal of marriage alliance (her body is not a political instrument)
+- refusal of debt (she accepts no favor that creates obligation to the nobility structure)
+- refusal of their framing (she will not call what she does "service to the realm" or "loyalty to the crown")
+- active counter-legitimacy (she does not just refuse their frame; she builds a different one, among people they cannot see)
 
-**Escalation**
-- ratchet dynamics, retaliatory spiraling, the point-of-no-return threshold, institutional counter-escalation (the lord's response to the organizer), violence as communication when no other channel exists, the moment escalation becomes its own logic
+**"Khepri / post-Gold-Morning Taylor"** — what she carries:
+- the weight of the Khepri choice (she made herself a weapon and ended the world; she was right; she would do it again)
+- the Gold-Morning silence (she cannot fully describe what she did or why; it sits in her as a fact too large for language)
+- the Slaughterhouse Nine scar-tissue (she survived things that should not be survived; her calibration for what is tolerable is broken)
+- the insect-register (she perceives the world through a billion bodies; human-scale intimacy is estranging)
+- survivor-guilt inverted (she did not survive despite what she did; she survived because of it; the guilt is about competence, not luck)
+- the Contessa-shaped hole (she has planned around parahumans who plan around her; Westeros does not plan; the absence of that constraint is disorienting)
+
+**"stops the Dance"** — what stopping looks like:
+- prevented (the succession crisis is defused before it ignites; no major dragon-battle)
+- redirected (the factions find a target that is not each other; the war's energy is channeled outward or inward into reform)
+- replaced (the Dance happens but she terminates it early by removing a key actor or making continued fighting impossible)
+- exhausted (she does not stop it; she outlasts it and picks up the pieces; her "stopping" is the aftermath management)
+- collapsed-by-demonstration (she demonstrates, once, what it looks like when she intervenes; neither faction will test her again)
