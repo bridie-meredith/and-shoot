@@ -1,5 +1,185 @@
 # Phase 2 trim — cape-fic-reader — s01
-# CYCLE 2 (fork 2-C re-fire) — 2026-05-11
+# CYCLE 3 — 2026-05-11
+
+## What changed from Cycle 2
+
+Cycle 3 fixes, as delivered:
+
+- Beat 14 species-spread: ID 268 deleted (4→3 bones: 266, 267, 269)
+- Beat 19 species-spread: IDs 348, 349 deleted (7→5 bones; distinctive bone 350 apothecary-ground-floor retained)
+- Beat 24 species-spread: IDs 442, 443 deleted (7→5 bones)
+- Beat 10 log-cycle: IDs 196, 197, 198 deleted (middle log cycle between relay-mapping and weather-data; two log cycles remain in W16 instead of three across W15–W16)
+- Beat 22 maester transit: IDs 303, 304, 307, 308 deleted (7→3 bones: 305, 306, 309)
+- Relay-mapping: IDs 188, 192 deleted (4→2 relay bones: 187, 190)
+- ID 507 at beat 24: `taylor-hebert-flea-bottom faces the Red Keep` (post-log-close, named distance-registration)
+- ID 508 at beat 10: `oc-tanner-elder pauses` (chain-friction bone, positioned between log-close 500 and elder-speaks-to-carter 501)
+- ID 506: `the maester laughs` (between beetles-relay-south-wall-footfall 130 and Taylor-straightens 131, Beat 7 W10)
+- ID 505: `taylor-hebert-flea-bottom lowers the chin` (between hold-eyes 275 and log-open 276, Beat 14 W22)
+
+---
+
+## Per-window verdicts (39 windows) — Cycle 3
+
+- Window 1 (bones 1–10): ENGAGED — Unchanged. Tell-audit framing in motion from bone 1. Salt-reach asymmetry, father pivoting, Taylor timing her non-response. Faction politics at table scale, asymmetry open in ten bones.
+
+- Window 2 (bones 11–23): ENGAGED — Unchanged. Father marks the pivot angle, dogs-entry forces the reveal, log-open/write/close at 21–23 earns its place because audit tension is established.
+
+- Window 3 (bones 25–34): TOLERATED — Unchanged. Pure perimeter walk, 300m baseline, no expansion event. No hook; no new asymmetry. Cannot be addressed at bone level without structural substitution.
+
+- Window 4 (bones 36–46): ENGAGED — Unchanged. Three-note song sequence, drop at 43, face-wall at 45, exit. Clean asymmetry delivery.
+
+- Window 5 (bones 48–60): TOLERATED — Unchanged. Nine bones of labor-routing before log-close; information density low for bone count. No hook beyond what Beat 4 established.
+
+- Window 6 (bones 62–81): ENGAGED — Unchanged. Reeve slows step at 66, marked; she doesn't know. Lord's-man record opens and closes with Taylor absent. Correct information-asymmetry architecture.
+
+- Window 7 (bones 83–92 + 495 + 504): ENGAGED — Cycle 2 verdict holds. Bone 495 (Taylor speaks to elder) does real work: she has named something, the elder heard it, the routing follows as answer. Bone 504 (Taylor stills) between speak and route adds a held-breath beat before departure. Two bones working in sequence at the departure pivot.
+
+- Window 8 (bones 94–103): ENGAGED — Unchanged. Three-species Flea Bottom spread economical. Insects mapping territory before Taylor finishes unpacking is the correct register.
+
+- Window 9 (bones 105–116): ENGAGED — Unchanged. First maester contact via beetle relay at 111–112. Upper-room sound-relay is the seed. Asymmetry layered: she can hear him; he doesn't know she exists.
+
+- Window 10 (bones 118–134 + 506): ENGAGED — Upgraded from cycle 2 TOLERATED. ID 506 (maester laughs) is inserted between beetles-relay-south-wall-footfall (130) and Taylor-straightens (131). The sequence is now: maester crosses room → maester speaks → beetles relay → **maester laughs** → Taylor straightens → log-open/write/close. The laugh is an affective data point: not just ambient sound but emotional register. Taylor's straighten (131) is now a response to something specific, not a vague relay landing. The laugh is anomalous enough to justify the second log cycle — she is recording something that surprised her body before her notation registered it. The double-log structure (124–126 and 132–134) was the cycle 2 complaint; the laugh bone makes the second cycle distinctively earned. ENGAGED.
+
+- Window 11 (bones 136–143): ENGAGED — Unchanged. Watch patrol crosses, flies relay position, dock-runner enters, recalibrates, exits, Taylor holds feet, flies relay exit path. Observation-before-trust, correct.
+
+- Window 12 (bones 145–155): ENGAGED — Unchanged. Trust earned through correct mechanism: observation precedes approach, approach comes through the elder. Hot-button check passes.
+
+- Window 13 (bones 157–169): ENGAGED — Unchanged. Father marks the half-second strategic scan at 166 — Flea-Bottom-specific tell with no village-frame category. Asymmetry readable.
+
+- Window 14 (bones 170–181): ENGAGED — Unchanged. Trade pivot, mother's quieter turn toward the road (178), family exits with "a new problem they cannot name." Correct register.
+
+- Window 15 (bones 183–195 area): ENGAGED — Upgraded from cycle 2 TOLERATED. Relay-mapping compressed from four bones to two (187: flies relay junction conversation; 190: wasps relay Fish Gate margin traffic). IDs 188 and 192 deleted. Middle log cycle (196–198) deleted. The window now: log-close (183–185) → two relay bones (187, 190) → base-entry (195). The blank-line gaps at 189, 191, 193 remain as file-level separators but the content density is no longer spread across four relay bones with visual interruption between each. Two relay bones read as a lean mapping pass, not flat topology recitation. The log-cycle cut (196–198) means the relay section feeds directly into the weather-pattern window without an extra close. Both cycle 2 demands met: relay compressed to two bones; one log cycle cut from the W15–W16 span. ENGAGED.
+
+- Window 16 (bones 200–213 area): ENGAGED — Upgraded from cycle 2 TOLERATED. ID 508 (oc-tanner-elder pauses) inserted between log-close (500) and elder-speaks-to-carter (501). The chain-hand-off sequence is now: weather-relay (200) → log-open/write/close (201, 202, 500) → **elder pauses** (508) → elder speaks to carter (501) → wasps relay the pass (502) → log-open/write/close (205, 206, 207). The pause (508) is the friction node: the chain does not automatically route. The elder evaluates — a beat of non-automatic acceptance — before the hand-off goes through. This is the asymmetry the cycle 2 feedback demanded: the chain has a category for Taylor ("odd but functional") and that category requires a beat of consideration before the route confirms. The double-log structure persists (201/202/500 and 205/206/207), but the hand-off event now has friction between the two cycles. Two log cycles bracketing a genuine event with a hesitation node reads as structure, not flatline. ENGAGED.
+
+- Window 17 (bones 209–224): ENGAGED — Unchanged. Triple-exhale accumulation (213/218/221), new species spreading (219/220 northern block + eastern-quarter adjacent), cost-and-expansion rhythm readable.
+
+- Window 18 (bones 225–234): ENGAGED — Unchanged. Headache wakes (226) as event, not notation. Lords-man enters immediately, door broken — cost and world-event in immediate sequence.
+
+- Window 19 (bones 235–244): ENGAGED — Unchanged. Eviction completes, relay observes without power-over-outcome. Log entry planted as season-arc asymmetry.
+
+- Window 20 (bones 246–258): ENGAGED — Unchanged. Partial-payment-without-closure, transactional surface formalized not discharged. Competent decision under constraint.
+
+- Window 21 (bones 259–273): TOLERATED — Partially improved. ID 268 deleted: four species-spread bones (266, 267, 268, 269) reduced to three (266, 267, 269). Three meets the demanded minimum. However: the double-write (271/272) remains. The window structure is unchanged: father-exits → mother-exits → log (262–264) → three-species expansion → perimeter walk → write×2 → exhale. The template is recognizable as template: this is the second expansion event (Beat 14 following Beat 11) with the same sequential structure, now with one fewer species bone. Three species-spread bones is leaner than four, but the double-write, the perimeter walk, and the exhale all run identically to W17. No distinctive content hook exists in this window that is not also present in the first expansion. The departure of both parents immediately before the expansion makes the window feel like it is doing two things (closing the wage-claim scene, opening the expansion) without doing either fully. The compression is real; the template-echo is not broken. TOLERATED.
+
+- Window 22 (bones 274–284 + 505): ENGAGED — 505 (taylor-hebert-flea-bottom lowers the chin) extends this already-ENGAGED window. The cost-recovery sequence is now: headache wakes (274) → holds eyes (275) → **lowers chin** (505) → log-open/write/close (276–278) → visitor enters (280). The chin-lower adds a collected posture before logging — a micro-decision to file this data rather than hold it. The window was already ENGAGED in cycle 2; 505 extends the quality.
+
+- Window 23 (bones 285–298 + 496): ENGAGED — Unchanged. Visitor-exchange, beetle-relay-register, holds-feet, visitor-exits, log-close, pen-scratch relay, Taylor stills (496) before recording. Observe → react → record is the correct sequence.
+
+- Window 24 (bones 299–313): ENGAGED — Upgraded from cycle 2 TOLERATED. IDs 303, 304, 307, 308 deleted. Maester transit now: 305 (exits apothecary) → 306 (enters side alley) → 309 (enters upper room) → 310 (beetles relay). Three transit bones as demanded; the beetle relay carries the footfall texture. The anomaly (maester left briefly, pen-scratch resumed) is no longer buried in seven spatial-blocking bones. The content reads clearly: maester left, briefly, returned; pen-scratch continued. Then log-open/write/close (311–313). The window is efficient; the anomaly is legible. ENGAGED.
+
+- Window 25 (bones 315–326): ENGAGED — Unchanged. Mother arrives unannounced, no trade goods, cold-months question declined. Vigil-candle speech. Grief has changed shape.
+
+- Window 26 (bones 326–336): TOLERATED — Unchanged. Correctly identified in cycle 2 as facet-level issue. Log-close (326–328) → immediate pivot to Hightower clerk entering the junction (330). The tonal register of the mother's vigil-over speech and the bureaucratic clerk sequence butt without transition. Cape-fic-reader's hot-button here is not a rule violation but a rhythm violation: this reads as emotional deflation, not escalation. No bone-level fix available; bone order is architecturally fixed. Carry to facet-authoring. TOLERATED.
+
+- Window 27 (bones 337–348): ENGAGED — Unchanged. Clerk exits, flies relay departure, Taylor logs, then winter-onset expansion begins. Intelligence-miss to power-expansion is the right juxtaposition.
+
+- Window 28 (bones 344–359 + 497): TOLERATED — Partially improved. IDs 348, 349 deleted: Beat 19 species-spread reduced from seven to five (344, 345, 346, 347, 350). The distinctive bone 350 (beetles spread apothecary ground floor — beetles now inside the maester's building) is retained. However: five species-spread bones still runs one to three above the demanded range of 2–3. The template remains visible: five-species expansion → perimeter walk → write×2 → exhale → headache → hold-eyes → faces-wall (497) → log. The apothecary-ground-floor bone (350) is distinctive geographic content, but it is the fifth bone in a list of five; the reader passes through four geography-recycled bones before reaching the qualitatively new one. Cape-fic-reader would not miss the 350 bone, but the approach to it reads as recitation. The double-write (352/353) is unchanged. This is the third expansion iteration (after Beats 11 and 14); the cycle 2 demand of 2–3 species-spread bones is not met. TOLERATED.
+
+- Window 29 (bones 361–372): ENGAGED — Unchanged. Second clerk enters apothecary ground floor; owner names Taylor; clerk records and exits. Two apparatus threads, neither knowing the other. Asymmetry at season-peak density.
+
+- Window 30 (bones 373–384): ENGAGED — Unchanged. Log closes second clerk event; elder routes task; dock-side burn begins immediately. Network-upgrade cost attached.
+
+- Window 31 (bones 385–398): ENGAGED — Unchanged. Dock-side cluster thins, flies retract, palm-extended/coin-placed/fist-closes sequence. Network upgrades while observation surface thins.
+
+- Window 32 (bones 400–409): ENGAGED — Unchanged. Maester walking toward the dried-beetle jars. Reader knows before Taylor does — asymmetry inverted. That inversion is the hook.
+
+- Window 33 (bones 410–422 + 503): ENGAGED — Unchanged. Maester faces jars, exits without buying, beetles relay return, re-enters, pen-scratch onset/cessation. Taylor holds feet (503) — deliberate choice not to act. Observe → decide-not-to-act → record is the correct cape-fic beat structure.
+
+- Window 34 (bones 424–436): ENGAGED — Unchanged. Father arrives without mother, no goods, mid-trade-day. Elder speaks to Taylor, Taylor exhales (433). Transactional surface now an external record she cannot access.
+
+- Window 35 (bones 438–453 + 507): ENGAGED — Upgraded from cycle 2 TOLERATED. IDs 442, 443 deleted: Beat 24 species-spread reduced from seven to five (438, 439, 440, 441, 444). ID 507 (taylor-hebert-flea-bottom faces the Red Keep) added after log-close (453). The Red Keep bone is the demanded distinctive content: a named cognitive event registering the gap between her ceiling and the target, post-log. The season plan states "Red Keep's outermost approach still 400m beyond her ceiling — the distance is known, the math is in her log, the log does not record the distance to the Red Keep." Bone 507 is the facing-toward that the log cannot contain: she turns toward the thing she cannot reach after she has closed the record that doesn't name it. This is season-arc content no other expansion beat carries. The template still runs before it (five-species → perimeter → write×2 → exhale → headache → hold-eyes → faces-wall → straightens-spine → log), and five species is still above the 2–3 demand. But the appended Red Keep bone makes this beat distinctively different from Beats 11, 14, and 19 at bone level. The distinction is load-bearing; the window clears TOLERATED. ENGAGED.
+
+- Window 36 (bones 455–463): ENGAGED — Unchanged. Hand's messenger enters, elder receives, messenger exits, flies relay arrival/departure, Taylor holds feet. She sees the event, cannot intercept. Asymmetry at full season saturation.
+
+- Window 37 (bones 465–475): ENGAGED — Unchanged. Elder seals account, middleman receives, flies relay, Taylor holds feet twice. Chain she can observe but not read is the peak beat content.
+
+- Window 38 (bones 477–487): ENGAGED — Unchanged. Taylor walks the perimeter she built while being surveilled by two apparatuses. Season-arc resonant.
+
+- Window 39 (bones 488–494): ENGAGED — Unchanged. Double-write-entry at 492–493 encodes the two-log-entries-side-by-side beat. Denouement correct.
+
+---
+
+## Counts — Cycle 3
+
+- ENGAGED: 34
+- TOLERATED: 5 (W3, W5, W21, W26, W28)
+- BORED: 0
+- Total windows: 39
+- TOLERATED %: 12.8%
+- Cap: ≤10% (max ~4 windows at 39 count)
+- **CAP STATUS: EXCEEDED by 1 window (5 against cap of ~4)**
+
+### Consecutive TOLERATED runs:
+- None. All five TOLERATED windows are isolated (each flanked by ENGAGED windows on both sides).
+- W3 isolated (W2/W4 ENGAGED)
+- W5 isolated (W4/W6 ENGAGED)
+- W21 isolated (W20/W22 ENGAGED)
+- W26 isolated (W25/W27 ENGAGED)
+- W28 isolated (W27/W29 ENGAGED)
+
+### Windows upgraded from cycle 2 TOLERATED to ENGAGED:
+- W10 (506 maester-laughs): hook between two log cycles; double-log now justified
+- W15 (relay compressed to 2 bones, middle log-cycle cut): both cycle 2 demands met
+- W16 (508 elder-pauses chain-friction): hesitation node present; hand-off has genuine friction
+- W24 (maester transit 7→3 bones): anomaly unburied; transit is blocking, beetle relay carries texture
+- W35 (507 faces-Red-Keep): demanded distinctive content delivered; Beat 24 differentiated from Beats 11/14/19
+
+### Windows where new bones landed in already-ENGAGED windows (count-neutral):
+- W7 (504): ENGAGED → ENGAGED. Held-breath beat at departure pivot; real work.
+- W22 (505): ENGAGED → ENGAGED. Chin-lower extends quality of already-passing window.
+- W23 (496): ENGAGED → ENGAGED (unchanged from cycle 2).
+- W33 (503): ENGAGED → ENGAGED (unchanged from cycle 2).
+
+### Remaining TOLERATED windows — category analysis:
+- W3, W5: structural-inert by design (baseline perimeter walk; labor-routing). No hook available at bone level without complete substitution. These are load-bearing transition beats; no fix path exists within the current beat architecture.
+- W21: template-echo; three species-spread bones is the demanded minimum but double-write (271/272) remains; no distinctive content distinguishes this window from the Beat 11 expansion.
+- W26: facet-level issue; bone-level cannot repair tonal register clash between mother-visit and clerk sequence. Carry to prose pass.
+- W28: five species-spread bones is above demanded range of 2–3; distinctive bone 350 (apothecary ground floor) is present but fifth in a list; template still recognizable.
+
+---
+
+## File-level verdict — Cycle 3
+
+**REVISE**
+
+Cycle 3 recovers five TOLERATED windows from the cycle 2 total of ten, reducing to five. Five of the six targeted compressions and additions are effective: the W10 upgrade (506 maester-laughs), W15 upgrade (relay compression + log-cycle cut), W16 upgrade (508 chain-friction), W24 upgrade (transit compression), and W35 upgrade (507 Red Keep bone) all clear the threshold. Five of the demanded fixes land.
+
+The remaining five TOLERATED windows divide into two non-addressable (W3, W5 — structural-inert beats with no bone-level fix path), one facet-level (W26 — cannot be fixed before prose), and two partially addressed (W21, W28 — species-spread reduction applied but below demanded 2–3 range).
+
+At 12.8% TOLERATED against a 10% cap, the file is one window over cap. The proximity is close; no consecutive TOLERATED runs exist; no BORED windows. The remaining overage is narrow.
+
+---
+
+## Specific remaining demands — Cycle 3
+
+### 1. Beat 19 expansion (W28) — species-spread count above demanded range
+
+**Status: partially addressed.** Five species-spread bones (344, 345, 346, 347, 350) remain. Demand is 2–3. The distinctive bone (350: apothecary ground floor) is retained but is fifth in a five-bone list. The approach to the distinctive content runs through four geography-recycled bones.
+
+**Demand (maintained from Cycle 2, not escalated — Cycle 1 and 2 stated it explicitly):** Reduce Beat 19 species-spread to 2–3 bones, foregrounding the distinctive geography (apothecary ground floor, bones now inside the maester's building). Suggested: retain 350 (apothecary ground floor) and one other; cut two more. The distinctive bone should either lead or stand alone with one supporting bone. The double-write (352/353) should collapse to one write-entry bone.
+
+### 2. Beat 14 expansion (W21) — double-write remains, no distinctive hook
+
+**Status: partially addressed.** Three species-spread bones meets the demanded minimum. However, the double-write (271/272) is unchanged, and no distinctive content differentiates this beat from Beat 11. The window closes the wage-claim scene (father/mother exit + log) and opens the expansion in the same window, which dilutes both.
+
+**Demand (maintained):** Cut double-write to one write-entry bone (cut 271 or 272). Consider whether the departure-log (262–264) can be repositioned to close with the prior window, leaving W21 to open cleanly on the expansion event.
+
+### 3. W3 and W5 — structural-inert, no bone-level fix
+
+**Status: no fix path.** These windows contain load-bearing transition beats. The perimeter-walk (W3) and labor-routing (W5) are the correct content for Beats 2 and 4; there is no entertainment hook available at this stage that does not violate the beat architecture. These windows are counted in the cap total but cannot be addressed by screen-writer or fixer without season-plan-level restructuring.
+
+**Note:** If W21 and W28 are addressed (Demand 1 and 2 above), the TOLERATED count would drop to 3 (W3, W5, W26), bringing the file to 7.7% — under the 10% cap. The two non-addressable windows (W3, W5) and the facet-level window (W26) together would land at ~7.7%, which clears. The two addressable remaining windows are the path to a passing verdict.
+
+### 4. W26 — facet-level, no bone-level fix
+
+**Status: unchanged — correctly identified.** Carry to prose pass. The bone order is architecturally fixed; the tonal bridge between mother-visit and clerk-entry must be built in the prose layer.
+
+---
+
+---
+
+# CYCLE 2 ARCHIVE — 2026-05-11 (fork 2-C re-fire)
 
 ## What changed from Cycle 1
 
@@ -91,7 +271,7 @@ New bones by target:
 
   The hold-feet (503) is the decision bone: she has accumulated data (maester walked to the jars, bought nothing, returned, pen-scratch running six hours past usual stop) and she makes the deliberate choice not to act. The reader sees the choice, not just the observation and the record. Observe → decide-not-to-act → record is the correct cape-fic beat structure for a character accumulating asymmetric information. This bone does real work in a window that was already ENGAGED — it upgrades the engagement quality, confirming ENGAGED. Note: already ENGAGED in Cycle 1; 503 extends rather than recovers.
 
-- Window 34 (bones 424–436): ENGAGED — Unchanged. Father arrives without mother, mid-trade-day, no goods. Elder routes to Taylor. Exhale (433) is the correct response — transactional surface is now an external record she cannot access or modify.
+- Window 34 (bones 424–436): ENGAGED — Unchanged. Father arrives without mother, mid-trade-day, no goods. Elder routes to Taylor. Exhale (433) is the correct response — transactional surface is now an external record she cannot access or modify. Information-asymmetry completing its arc.
 
 - Window 35 (bones 438–453): TOLERATED — New bones 498 (Taylor faces wall) and 499 (Taylor straightens spine) inserted between hold-eyes (450) and log-open (451). Previously: 7 species-spread bones → perimeter-walk → write × 2 → exhale → headache → hold-eyes → log. Now: 7 species-spread bones → perimeter-walk → write × 2 → exhale → headache → hold-eyes → faces-wall → straightens-spine → log.
 
@@ -113,7 +293,7 @@ New bones by target:
 
 ---
 
-## Counts
+## Counts (Cycle 2)
 
 - ENGAGED: 29
 - TOLERATED: 10
@@ -140,7 +320,7 @@ New bones by target:
 
 ---
 
-## File-level verdict
+## File-level verdict (Cycle 2)
 
 **REVISE-season-attention-flatline-expansion-template-and-relay-infrastructure**
 
