@@ -1,3 +1,68 @@
+## SESSION-START — 2026-05-11T13:00:00Z — phase3-collation-cycle1
+dispatch: Phase 3 Collation cycle 1 — Groups A–I surgical recasts (holds-license, headache-subject×4, neighbors×2, sealed-modifier, duplicate-pairs×4, abstract-relay×6, orphan-log-write, walks-the-pathnoun policy, abstract-junction-conversation)
+target: active-project/theater/proto-lines/s01.bones.md
+audit-report: season-s01-pass-S1-constraint.md + season-s01-pass-S3.5-ruleset.md + season-s01-pass-S10-mechanic-window-01/02/03.md
+findings-queued: ~25 individual fault instances across Groups A–I
+
+## GROUP-A-phase3 — RESOLVED (PRE-APPLIED) — 2026-05-11T13:01:00Z
+fault: ID 166 `holds the step` — FAULT-FORM-NON-ACTION-VERB
+scope: line
+change: confirmed pre-applied — file reads `oc-tanner-father stills`
+criteria met: yes
+
+## GROUP-B-phase3 — RESOLVED (PRE-APPLIED) — 2026-05-11T13:02:00Z
+fault: IDs 226, 274, 355, 449 `the headache wakes taylor-hebert-flea-bottom` — FAULT-FORM-INTERIORITY ×4
+scope: line
+change: confirmed pre-applied — all four IDs read `taylor-hebert-flea-bottom wakes` (intransitive)
+criteria met: yes
+
+## GROUP-C-phase3 — RESOLVED (PRE-APPLIED) — 2026-05-11T13:03:00Z
+fault: IDs 237, 241 `the neighbors` collective plural — FAULT-FORM-MULTI-SUBJECT
+scope: line
+change: confirmed pre-applied — ID 237 reads `the neighbor presses the doorway`; ID 241 reads `the neighbor withdraws`
+criteria met: yes
+
+## GROUP-D-phase3 — RESOLVED (PRE-APPLIED) — 2026-05-11T13:04:00Z
+fault: ID 469 `the sealed account` — FAULT-FORM-MODIFIER
+scope: line
+change: confirmed pre-applied — file reads `the middleman takes the account` (no `sealed`)
+criteria met: yes
+
+## GROUP-E-phase3 — RESOLVED (PRE-APPLIED) — 2026-05-11T13:05:00Z
+fault: duplicate pairs IDs 352/353, 446/447, 461/462, 492/493
+scope: line
+change: confirmed pre-applied — IDs 353, 447, 462, 493 absent from file (numeric gaps after 352, 446, 461, 492)
+criteria met: yes
+
+## GROUP-F-phase3 — RESOLVED (PRE-APPLIED) — 2026-05-11T13:06:00Z
+fault: IDs 339, 387, 388, 416, 417, 471 abstract-object relay beats — FAULT-FORM-INTERIORITY ×6
+scope: line
+change: confirmed pre-applied — ID 339 `the flies relay the clerk`; ID 387 `the wasps relay taylor-hebert-flea-bottom`; ID 388 `the wasps relay oc-tanner-elder`; ID 416 `the beetles relay the pen-scratch`; ID 417 `oc-broken-maester sets the pen`; ID 471 `the flies relay the middleman`
+criteria met: yes
+
+## GROUP-G-phase3 — RESOLVED — 2026-05-11T13:07:00Z
+fault: ID 109 `taylor-hebert-flea-bottom writes the entry` orphan log-write (no preceding opens-the-log) — S1 fault-003
+scope: line
+change: deleted ID 109 (line removed; numeric gap between IDs 108 and 110); complete log triplet exists at IDs 114/115/116 in same local stretch; deletion is correct per task decision rule
+criteria met: yes
+
+## GROUP-H-phase3 — POLICY-DOCUMENTED — 2026-05-11T13:08:00Z
+fault: `walks the <path-noun>` ×11 — S1 fault-005 flagged pattern
+scope: line
+change: no edit — defensible idiomatic usage per task brief (perimeter/boundary/alley as legitimate direct objects of `walks`; structurally parallel to `enters the yard`); policy documented in fixer report
+criteria met: yes (policy decision acknowledged, no change warranted)
+
+## GROUP-I-phase3 — RESOLVED — 2026-05-11T13:09:00Z
+fault: ID 187 `the flies relay the junction conversation` — `junction conversation` is abstract event-noun (FAULT-FORM-INTERIORITY)
+scope: line
+change: `the flies relay the junction conversation` → `the flies relay oc-tanner-elder` (actor-as-object; elder is the participant being tracked at the junction)
+criteria met: yes
+
+## SESSION-END — 2026-05-11T13:10:00Z — phase3-collation-cycle1
+findings-applied: 2 edits to file (Group G deletion of ID 109; Group I recast of ID 187); Groups A/B/C/D/E/F confirmed pre-applied (0 new edits needed); Group H policy-documented (no edit by design)
+findings-skipped: 0
+exit: CLEAN
+
 ## SESSION-START — 2026-05-11T12:00:00Z — phase3-collation-cycle1
 dispatch: Phase 3 Collation cycle 1 — Groups A–I (holds-license, headache-subject×4, the-neighbors×2, sealed-modifier, duplicate-pairs×4, abstract-relay×6, orphan-log-write, walks-the-pathnoun policy, abstract-junction-conversation)
 target: active-project/theater/proto-lines/s01.bones.md

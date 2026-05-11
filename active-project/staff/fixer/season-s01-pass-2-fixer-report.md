@@ -357,3 +357,150 @@ ALL-CRITERIA-MET
 - Group D (relay-mapping): applied — 4 relay bones reduced to 2
 
 Note on cape-fic TOLERATED count: beat 14 (W16) had no species-spread differentiation bone added (dark-fantasy-reader's primary demand), only species-spread compression. The dark-fantasy-reader's cycle-2 primary demand for beat 14 was a body-response differentiation bone, which is a screen-writer/regen task (new bone required). This is compression only per the fixer task brief — the species-spread reduction addresses cape-fic's structural demand. The body-differentiation bone is a separate screen-writer action.
+
+---
+
+## Phase 3 Collation cycle 1
+# session: 2026-05-11T13:00:00Z — phase3-collation-cycle1
+# audit sources: season-s01-pass-S1-constraint.md + season-s01-pass-S3.5-ruleset.md + season-s01-pass-S10-mechanic-window-01/02/03.md
+
+---
+
+### Group counts
+
+| Group | Fault | Instances | Action | Status |
+|-------|-------|-----------|--------|--------|
+| A — holds license violation | FAULT-FORM-NON-ACTION-VERB / W2 mechanic | ID 166 | recast `stills` | PRE-APPLIED |
+| B — headache wakes taylor ×4 | FAULT-FORM-INTERIORITY / W2+W3 | IDs 226, 274, 355, 449 | `taylor-hebert-flea-bottom wakes` (intransitive) | PRE-APPLIED |
+| C — `the neighbors` collective ×2 | FAULT-FORM-MULTI-SUBJECT / W2 | IDs 237, 241 | singular recast | PRE-APPLIED |
+| D — `sealed` adjective modifier | FAULT-FORM-MODIFIER / W3 | ID 469 | drop `sealed` | PRE-APPLIED |
+| E — exact-duplicate pairs ×4 | FAULT-FORM-structural-duplication / W3 fault-004 | IDs 353, 447, 462, 493 | delete second of each pair | PRE-APPLIED |
+| F — abstract-object relay beats ×6 | FAULT-FORM-INTERIORITY / W3 fault-002 | IDs 339, 387, 388, 416, 417, 471 | actor/concrete-object recasts | PRE-APPLIED |
+| G — bone 109 orphan log-write | S1 fault-003 | ID 109 | delete | APPLIED THIS CYCLE |
+| H — walks the pathnoun ×11 | S1 fault-005 | 11 instances | policy: leave unchanged | POLICY-DOCUMENTED |
+| I — bone 187 abstract-object | S1 fault-006 / FAULT-FORM-INTERIORITY | ID 187 | recast to actor-object | APPLIED THIS CYCLE |
+
+---
+
+### Group A — holds license violation
+
+**Status: PRE-APPLIED.** ID 166 confirmed in file as `oc-tanner-father stills`. No edit needed.
+
+---
+
+### Group B — headache wakes taylor ×4
+
+**Status: PRE-APPLIED.** All four instances confirmed in file as `taylor-hebert-flea-bottom wakes` (intransitive):
+- ID 226: `taylor-hebert-flea-bottom wakes`
+- ID 274: `taylor-hebert-flea-bottom wakes`
+- ID 355: `taylor-hebert-flea-bottom wakes`
+- ID 449: `taylor-hebert-flea-bottom wakes`
+
+---
+
+### Group C — `the neighbors` collective ×2
+
+**Status: PRE-APPLIED.** Both instances confirmed in file:
+- ID 237: `the neighbor presses the doorway` (singular; single doorway)
+- ID 241: `the neighbor withdraws` (singular)
+
+---
+
+### Group D — `sealed` adjective modifier
+
+**Status: PRE-APPLIED.** ID 469 confirmed in file as `the middleman takes the account` (no `sealed`). The sealing is registered at ID 468 (`oc-tanner-elder seals the account`).
+
+---
+
+### Group E — exact-duplicate pairs ×4
+
+**Status: PRE-APPLIED.** All four second-of-pair IDs absent from file (numeric gaps):
+- ID 353 deleted; gap after ID 352 (`taylor-hebert-flea-bottom writes the entry`)
+- ID 447 deleted; gap after ID 446 (`taylor-hebert-flea-bottom writes the entry`)
+- ID 462 deleted; gap after ID 461 (`the flies relay the messenger`)
+- ID 493 deleted; gap after ID 492 (`taylor-hebert-flea-bottom writes the entry`)
+
+---
+
+### Group F — abstract-object relay beats ×6
+
+**Status: PRE-APPLIED.** All six recasts confirmed in file:
+
+| ID | Old form | New form |
+|----|----------|----------|
+| 339 | `the flies relay the junction return` | `the flies relay the clerk` |
+| 387 | `the wasps relay the dock-side return` | `the wasps relay taylor-hebert-flea-bottom` |
+| 388 | `the wasps relay the labor-web path` | `the wasps relay oc-tanner-elder` |
+| 416 | `the beetles relay the onset` | `the beetles relay the pen-scratch` |
+| 417 | `the beetles relay the cessation` | `oc-broken-maester sets the pen` |
+| 471 | `the flies relay the junction departure` | `the flies relay the middleman` |
+
+---
+
+### Group G — bone 109 orphan log-write
+
+**Context read:** ID 109 (`taylor-hebert-flea-bottom writes the entry`) appeared without a preceding `opens the log`. Surrounding sequence: IDs 105/106/107/108 (perimeter walk + spread/relay beats), then 109 (orphan write), then 110 (perimeter walk), 111 (maester speaks), 112 (beetles relay), 113 (writes the entry — also orphan), 114/115/116 (complete log triplet: opens/writes/closes).
+
+**Decision applied:** A complete log triplet exists at IDs 114/115/116 within the same local stretch. Per task decision rule: delete ID 109. Edit applied — line removed; numeric gap between IDs 108 and 110.
+
+**Note on ID 113:** ID 113 (`taylor-hebert-flea-bottom writes the entry`) is also an orphan write in the same stretch (no open/close). It was not named in the fault. Flagging for screen-writer review — if ID 113 should also be deleted, that can be applied in a follow-up cycle. No edit applied to ID 113 in this cycle (minimum-change discipline).
+
+| ID | Old form | New form |
+|----|----------|----------|
+| 109 | `taylor-hebert-flea-bottom writes the entry` | (deleted — numeric gap) |
+
+---
+
+### Group H — `walks the <path-noun>` ×11
+
+**Policy decision: leave unchanged.**
+
+The S1 audit flagged 11 instances of `walks the X` where X is a path/perimeter/alley name. The schema permits transitive verbs with location-as-direct-object. `walks the boundary` is structurally parallel to `enters the yard` — the perimeter/boundary/alley is a legitimate direct object of `walks` (Taylor is traversing the space, not merely walking near it). This is defensible idiomatic usage, consistent with how other traversal verbs (`crosses`, `enters`, `exits`) take location objects throughout the bones.
+
+**Confirmed instances in file (unchanged):** ID 28/30 (`walks the yard boundary`), ID 91 (`walks the road`), ID 92 (`walks the road`), ID 98 (`walks the alley`), ID 105/110/118 (`walks the perimeter` / `walks the full perimeter`), ID 222/270/351/445 (`walks the perimeter`), IDs 479/481/483/485/489 (`walks the first alley` / `walks the south alley` / `walks the Fish Gate margin` / `walks the south-wall colony` / `walks the eastern-quarter approach`).
+
+No edit applied. Policy documented.
+
+---
+
+### Group I — bone 187 abstract-object
+
+**Status: APPLIED THIS CYCLE.**
+
+ID 187 (`the flies relay the junction conversation`) — `junction conversation` is an abstract event-noun (FAULT-FORM-INTERIORITY). The junction conversation is an internal characterization of the event, not a physical object a fly could relay.
+
+**Recast applied:** `the flies relay oc-tanner-elder` — actor-as-object. oc-tanner-elder is the participant being tracked at the junction (established in surrounding bones at IDs 83/84/145/148/161/162/173/174). The flies tracking the elder is a physical creature-act (the flies follow/relay the elder's position).
+
+| ID | Old form | New form |
+|----|----------|----------|
+| 187 | `the flies relay the junction conversation` | `the flies relay oc-tanner-elder` |
+
+**Note:** ID 339 was previously recast to `the flies relay the clerk` (W2 cycle). ID 187 now follows the same actor-as-object pattern for a different actor. Consistent with the relay-recast policy applied across Group F.
+
+---
+
+### Counts
+
+- Lines edited (recasts): 1 (ID 187)
+- Lines deleted: 1 (ID 109)
+- Groups confirmed pre-applied (no new edits): A, B, C, D, E, F (15 individual instances confirmed)
+- Policy decisions documented: 1 (Group H)
+- Total fault instances addressed this cycle: 17 (15 pre-applied + 2 new edits)
+
+---
+
+### Verdict
+
+**ALL-CRITERIA-MET**
+
+- Group A (ID 166 holds→stills): confirmed pre-applied
+- Group B (IDs 226, 274, 355, 449 headache-subject): confirmed pre-applied
+- Group C (IDs 237, 241 neighbors→neighbor): confirmed pre-applied
+- Group D (ID 469 sealed-modifier): confirmed pre-applied
+- Group E (IDs 353, 447, 462, 493 duplicates): confirmed pre-applied
+- Group F (IDs 339, 387, 388, 416, 417, 471 abstract-relay): confirmed pre-applied
+- Group G (ID 109 orphan write): deleted this cycle
+- Group H (walks-the-pathnoun ×11): policy documented — leave unchanged — defensible idiomatic usage
+- Group I (ID 187 junction-conversation): recast to `the flies relay oc-tanner-elder` this cycle
+
+Additional flag: ID 113 is a second orphan write in the same local stretch as ID 109, not named in the fault. Flagged for screen-writer review. No edit applied (minimum-change discipline).

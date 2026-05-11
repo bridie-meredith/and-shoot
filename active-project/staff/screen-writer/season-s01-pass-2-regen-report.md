@@ -198,3 +198,60 @@ Forks for re-check by orchestrator:
 - 2-B (shape): Beat 6, 10, 16, 19, 22, 24 stretches for structural re-check
 - 2-C, 2-D (entertainment trim forks): range-expansion stretches (beats 19, 24) for template-differentiation re-check
 - 2-F (continuity): prop-state (log chain in beat 10 now clean), transmission chain coverage, new bones for POV consistency
+
+---
+
+## Phase 3 Cycle 1 REGEN-ADD
+
+**Session:** 2026-05-11
+**Highest prior ID:** 508
+**New IDs assigned:** 509–517 (9 bones)
+**Source audits:** season-s01-pass-S10-mechanic-window-01.md (CURVE-SHAPE-FLAT-AFTERMATH); season-s01-pass-S10-boundary-01-02.md (BOUNDARY-DROPS W2-open); season-s01-pass-S10-boundary-02-03.md (BOUNDARY-DROPS W3-open); season-s01-pass-S10-taste-window-01-worm-canon-pedant.md (REVISE shape-mid-flatline, scene 4 recognition); season-s01-pass-S7-facet-readiness.md (beat 10 blocking facet-gap)
+
+| ID | File position (inserted between) | Text | Addresses |
+|----|----------------------------------|------|-----------|
+| 509 | ID 195 → ID 199/200 (beat 10, after Taylor enters base, before weather-pattern relay) | `the flies relay the carter` | Beat 10 whisper-chain thin — routing-as-asymmetry: Taylor's network observes the recipient of the information she is routing |
+| 510 | ID 502 → ID 205 (beat 10, after wasps relay the pass, before second log-open) | `the carter exits the junction` | Beat 10 whisper-chain thin — chain reception without origin-attribution: the recipient departs with information whose source is anonymous |
+| 511 | ID 158 → ID 159 (W2-open, before family crosses junction) | `taylor-hebert-flea-bottom faces the junction` | BOUNDARY-DROP fault-001: W2 opens without Taylor's established-station posture; this bone places Taylor at the junction before the family arrives |
+| 512 | ID 511 → ID 159 (W2-open, immediately after 511, before father crosses) | `oc-tanner-elder faces the road` | BOUNDARY-DROP fault-002: elder's junction-membrane role carries no continuity bone at W2 open; this bone anchors elder as already-stationed before family arrives |
+| 513 | ID 329 → ID 330 (W3-open, before clerk enters junction) | `the beetles relay the base room` | BOUNDARY-DROP W3-open: vigil-extinguished + grief-debt-shape-change carry; beetles returning from base room register the physical state of the mother's visit without exposition |
+| 514 | ID 513 → ID 330 (W3-open, after 513, before clerk enters junction) | `the beetles relay oc-broken-maester` | BOUNDARY-DROP W3-open: maester-as-named-and-active-variable must be live at W3 open; this bone re-establishes the parallel-intelligence-contact axis before the Hightower clerk sequence begins |
+| 515 | ID 514 → ID 330 (W3-open, after 514, before clerk enters junction) | `taylor-hebert-flea-bottom writes the entry` | BOUNDARY-DROP W3-open: wage-claim operational context active at W3 open; single bone signals Taylor's wage-accounting is ongoing at this boundary |
+| 516 | ID 152 → ID 153 (W1 peak aftermath, after dock-runner exits, before log-open) | `taylor-hebert-flea-bottom exhales` | SHAPE-COHERENT-FLAT-AFTERMATH HARD (mechanic-window-01 fault-001): physical cost-register bone between peak (152) and flat log-mechanism close (153–155); exhale releases the held-breath of the transactional exchange |
+| 517 | ID 57 → ID 58 (scene 4, after second neighbor-boy routing, before log-open) | `taylor-hebert-flea-bottom stills` | REVISE shape-mid-flatline / scene 4 recognition absent: worm-canon-pedant flagged that the season plan's commitment "Taylor identifies the routing as a structural fact" is absent at bone level; the stilling is the registration-act in clinical register |
+
+### Constraint checks
+
+All 9 bones checked against harsh-SVO discipline:
+
+- ID 509: `the flies relay the carter` — SVO clean; `the carter` is a concrete noun in `the <noun>` licensed form; relay is a concrete action; no motivation, no internal state.
+- ID 510: `the carter exits the junction` — SVO clean; intransitive exit with named location. No motivation.
+- ID 511: `taylor-hebert-flea-bottom faces the junction` — SVO clean; established verb in file. No motivation.
+- ID 512: `oc-tanner-elder faces the road` — SVO clean; same pattern as 511. No motivation.
+- ID 513: `the beetles relay the base room` — SVO clean; relay-object is a location noun. No motivation.
+- ID 514: `the beetles relay oc-broken-maester` — SVO clean; relay-object is a named character. Established form (cf. ID 310 `the beetles relay oc-broken-maester` — note: this is a second instance of the same text but in a different structural position and window; the boundary-carry function is distinct from the mid-season relay in beat 16). No motivation.
+- ID 515: `taylor-hebert-flea-bottom writes the entry` — SVO clean; established log-mechanism verb. No motivation.
+- ID 516: `taylor-hebert-flea-bottom exhales` — SVO clean; intransitive physical act; established throughout file (IDs 2, 31, 218, 221, 225, 253, 273, 354, 433). No motivation.
+- ID 517: `taylor-hebert-flea-bottom stills` — SVO clean; intransitive; established in file (IDs 504, 496). No motivation.
+
+No motivation clauses. No internal state. No `because`, `since`, `wanting to`, `in order to`. No perception verbs. No modifiers. No copulas. No negations. No `# pov:` markers introduced.
+
+### Position note — ID 514 text match
+
+ID 514 text (`the beetles relay oc-broken-maester`) matches the text of ID 310 (`the beetles relay oc-broken-maester`, post-fixer). These are structurally distinct instances: ID 310 is a mid-season confirmation relay during beat 16 (maester physically ascends stairwell — the beetles relay his arrival); ID 514 is a boundary-carry bone at W3-open reactivating the named variable before the Hightower clerk sequence. Same SVO form, different structural function and file position. Not a duplicate in the fixer's sense (different IDs, different scene context, separated by 200+ bones).
+
+### Verdict
+
+**ALL-CRITERIA-MET**
+
+| Add | Task | Status |
+|-----|------|--------|
+| 1 | Beat 10 whisper-chain — routing-as-asymmetry bone | DONE (ID 509) |
+| 1 | Beat 10 whisper-chain — chain-reception-without-attribution bone | DONE (ID 510) |
+| 2 | W2-open Flea Bottom station carry — Taylor facing junction | DONE (ID 511) |
+| 2 | W2-open elder station carry — elder facing road | DONE (ID 512) |
+| 3 | W3-open vigil+grief carry — beetles relay base room | DONE (ID 513) |
+| 3 | W3-open maester-named carry — beetles relay oc-broken-maester | DONE (ID 514) |
+| 3 | W3-open wage-claim carry — Taylor writes entry | DONE (ID 515) |
+| 4 | W1 flat-aftermath fix — exhale cost-register bone | DONE (ID 516) |
+| 5 | Scene 4 routing-recognition — stilling bone | DONE (ID 517) |
