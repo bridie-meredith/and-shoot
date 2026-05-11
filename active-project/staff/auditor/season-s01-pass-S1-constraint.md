@@ -1,7 +1,290 @@
 ```yaml
+# === CYCLE 2 (current) ===
+
 audit:
   scope: season
   target: s01
+  cycle: 2
+  timestamp: 2026-05-11
+  pass: S1 — Constraint audit (season scope), re-fire after fixer cycle 1
+  verdict: FAIL
+  findings:
+
+    - id: fault-001
+      type: fault
+      what: >
+        UNRESOLVED FROM CYCLE 1. Non-monotonic ID placement persists throughout
+        s01.bones.md. In addition, all nine new bones added by screen-writer
+        (509–517) are also placed at non-monotonic positions: 517 appears
+        between IDs 57 and 58 (file line 69); 511 and 512 appear between IDs
+        158 and 159 (file lines 196–197); 516 appears between IDs 152 and 153
+        (file line 187); 509 appears between IDs 195 and 199 (file line 239);
+        510 appears between IDs 500–502 and 205 (file line 252); 513, 514, 515
+        appear between time-skip 329 and bone 330 (file lines 396–398). The
+        original non-monotonic placements (IDs 495, 496, 497, 498, 499, 500,
+        501, 502, 503, 504, 505, 506, 507, 508) are also unresolved.
+        Total non-monotonic insertions: at least 23 distinct out-of-order IDs
+        embedded across the file.
+      why: >
+        The proto-line schema mandates "monotonic positive integer, file-scoped."
+        Phase 4 episode-boundary computation by aggregate_range arithmetic and
+        any ID-order assumption in the split logic remain broken. New bones added
+        by screen-writer replicate the same violation, compounding the fault
+        rather than holding for a bulk-reorder fix.
+      criteria: >
+        All bones in s01.bones.md must appear in strictly ascending ID order
+        in the file. Every late-inserted ID (495–517) must be placed at its
+        correct narrative position while retaining its assigned ID. File-order
+        must equal ID-order throughout.
+
+    - id: fault-002
+      type: fault
+      what: >
+        UNRESOLVED FROM CYCLE 1. Bones 111, 128, 129, 506 still use subject
+        "the maester" instead of actor slug oc-broken-maester. Additionally,
+        bones 285 and 286 — not named in cycle-1 fault-002 but present in the
+        file at cycle 1 — also use "the maester": bone 285 reads "the visitor
+        speaks to the maester" (listener form) and bone 286 reads "the maester
+        speaks to the visitor" (subject form). All six instances name the same
+        registered cast member (oc-broken-maester, eastern-quarter apothecary
+        upper room) under the wrong token.
+      why: >
+        Cast members must appear under their actor slug. Slug-grep at Phase 4
+        split time computes the cast: header field for each episode; "the
+        maester" will not match oc-broken-maester's slug, producing an incorrect
+        cast list for the episodes covering beats 7–8 and beat 15. The
+        cite-index DAG for dialogue and narrator facets authored against these
+        bones will not resolve back to the registered actor.
+      criteria: >
+        Bones 111, 128, 129, 285 (listener position), 286, and 506 must use
+        the actor slug oc-broken-maester. In bone 285 the listener "the maester"
+        must become oc-broken-maester. All six instances must be consistent with
+        every other oc-broken-maester appearance in the file.
+
+    - id: fault-003
+      type: fault
+      what: >
+        UNRESOLVED FROM CYCLE 1. Bone 129: "the maester speaks" — bare
+        intransitive speaks with no listener. File line 158. Unchanged since
+        cycle 1.
+      why: >
+        The dialogue proto-line form requires "<speaker-slug> speaks to
+        <listener-slug-or-group>". A bare "speaks" with no listener cannot
+        anchor a dialogue-file entry; the dialogue schema requires the listener.
+        The cond-clinical-self-erasure requirement for at least one s1-or-early-s2
+        scene where Taylor hears the broken maester through the network cannot be
+        demonstrated by facet citation if this proto-line has no listener to root
+        the relay chain.
+      criteria: >
+        Bone 129 must specify a listener: "oc-broken-maester speaks to the room"
+        if the target is diffuse, or a specific actor slug if identifiable. The
+        subject correction per fault-002 is a co-requirement.
+
+    - id: fault-004
+      type: fault
+      what: >
+        NEW. Bone 515: "taylor-hebert-flea-bottom writes the entry." This bone
+        was added by screen-writer in the 509–517 batch. It appears between
+        time-skip ID 329 and bone 330 (file lines 396–398), without a paired
+        "opens the log" bone preceding it or a "closes the log" bone following
+        it. The immediately prior complete log-cluster is bones 326–328
+        (open→write→close). Bone 515 is a bare write with no framing.
+      why: >
+        Every other log-write sequence in s01.bones.md follows the
+        open → write → close pattern. A bare write implies the log was already
+        open, but no preceding bone in the cluster opens it. The procedural
+        texture of Taylor's research notation — mandated by cond-clinical-self-
+        erasure — requires the physical act sequence to be complete. This is
+        the identical structural fault as cycle-1 fault-003 (bone 109, now
+        deleted). The screen-writer reintroduced the pattern in the new bones.
+      criteria: >
+        Bone 515 must either be preceded by an "opens the log" bone and followed
+        by a "closes the log" bone (as new bones with new IDs above 517), or
+        bone 515 must be removed if its write event is already carried by an
+        adjacent complete log-cluster.
+
+    - id: fault-005
+      type: fault
+      what: >
+        NEW (scope expansion of cycle-1 fault-006). Two additional abstraction-
+        as-object relay bones not addressed by the cycle-1 fix pass:
+        (a) Bone 190: "the wasps relay the Fish Gate margin traffic." Object is
+        "the Fish Gate margin traffic" — traffic is a collective event-abstraction,
+        not a physical entity, location, or sound-event.
+        (b) Bone 238: "the flies relay the alley event." Object is "the alley
+        event" — an event abstraction (the eviction described in bones 232–236),
+        not a physical entity or location noun.
+      why: >
+        The proto-line schema bars abstraction-as-object: "A physical verb whose
+        object is an abstract noun is a thought-figure, not an event. Faults
+        FAULT-FORM-INTERIORITY." The insect-relay bones in this file consistently
+        use location-nouns or entity-slugs as objects (the Watch position,
+        oc-dock-runner, the south-wall footfall, the door lintel, oc-tanner-elder,
+        the clerk). "Traffic" and "the alley event" are activity-abstractions.
+        They name what Taylor infers from the relay, not what the insects
+        physically transmit. The distinction preserves the contemplative-procedural
+        register required by cond-series-tone-constraints-125ac.
+      criteria: >
+        Bone 190 must identify the physical thing being relayed: a named entity
+        in the Fish Gate margin, a sound-event (footfall, voice-register), or
+        the location itself. Bone 238 must identify the physical relay anchor:
+        the door (being broken), an entity present (the lords-man's man, the
+        tenant family), or a sound-event — not "the alley event" as an
+        abstraction.
+
+    - id: flag-001
+      type: flag
+      what: >
+        CARRIED FROM CYCLE 1. Bone 318: "oc-tanner-mother sits." Ambiguous
+        between stative position-naming (deny-listed) and the discrete act of
+        taking a seat (passes). Context (bone 317: enters the base room; bone
+        319: taylor faces oc-tanner-mother) suggests act, not state, but the
+        bone is ambiguous.
+      why: >
+        If rendered as stative, faults FAULT-FORM-NON-ACTION-VERB. No downstream
+        structural consequence if intent is the act. Editor should confirm.
+
+    - id: flag-002
+      type: flag
+      what: >
+        CARRIED FROM CYCLE 1. Bones 178 and 179: "oc-tanner-mother pivots toward
+        the road south" and "oc-tanner-father pivots toward the road south."
+        "The road south" is a directional compound, not a named entity or
+        registered location slug.
+      why: >
+        The schema bans prepositional padding and modifier-phrases. "The road
+        south" may read as a directional modifier applied to "the road." The
+        canonical form would be "the south road" as a named environment element,
+        or a location slug if one is registered in the warehouse. Advisory for
+        fixer or Phase 4 split.
+
+    - id: flag-003
+      type: flag
+      what: >
+        CARRIED FROM CYCLE 1. Bones 49, 50, 56, 57, 86: verb "routes" used as
+        a causative-direction verb (oc-tanner-father routes oc-tanner-mother /
+        the neighbor-boy; oc-tanner-elder routes taylor-hebert-flea-bottom).
+      why: >
+        "Routes" implies the object's movement as a consequence of the subject's
+        internal decision — borderline interiority-attribution. Not a schema-
+        enumerated fault but creates facet-authoring ambiguity. Advisory.
+
+    - id: flag-004
+      type: flag
+      what: >
+        CARRIED FROM CYCLE 1. Bone 507: "taylor-hebert-flea-bottom faces the Red
+        Keep." loc-red-keep-outer-ring is a registered warehouse location card.
+        "The Red Keep" approximates but does not match the slug.
+      why: >
+        Phase 4 slug-grep for locations: field will not capture "the Red Keep"
+        as a reference to loc-red-keep-outer-ring. Low consequence for one
+        facing-action bone but inconsistent with slug-discipline.
+
+    - id: flag-005
+      type: flag
+      what: >
+        NEW. Bones 338 and 339 are consecutive and identical: both read
+        "the flies relay the clerk." These are two distinct IDs with the same
+        subject, verb, and object in sequence.
+      why: >
+        May be an intentional double-relay (the flies register the clerk twice
+        as they track movement through two positions) or a duplicate that
+        survived the cycle-1 duplicate-pair deletion pass. If a duplicate, the
+        two bones share the same logical beat and one should be deleted. If
+        intentional, no action needed. Advisory for screen-writer to confirm
+        intent.
+
+    - id: flag-006
+      type: flag
+      what: >
+        POLICY CARRY-FORWARD. "Walks-the-path" form: bones 28, 30, 91, 92, 98,
+        105, 110, 118, 222, 270, 351, 445, 479, 481, 483, 485, 489 — 17 total
+        instances of "taylor-hebert-flea-bottom walks the <path-or-perimeter>"
+        and two instances using other subjects (oc-tanner-elder walks the road,
+        bone 91). Cycle-1 fault-005 raised this as an 11-instance structural
+        fault. The policy decision documented between cycles accepted
+        "walks the <path>" as a defensible idiom parallel to "enters the yard"
+        and declined to fault it.
+      why: >
+        Documenting the policy decision in the audit record so subsequent passes
+        do not re-raise this as a fresh fault. If the policy is reversed, all
+        ~17 instances require recast. The new bones (477–489) add five additional
+        instances of the form in the denouement walk sequence; the idiom is now
+        load-bearing in the season-close beat 26 bones. Reversal at that stage
+        would require splitting each walk into entry + traversal pairs.
+
+    - id: flag-007
+      type: flag
+      what: >
+        CARRIED FROM CYCLE 1 (formerly flag-006). cond-clinical-self-erasure
+        requires at least one s1-or-early-s2 scene where Taylor hears the broken
+        maester through the network and adjusts behavior in response. Bone 112
+        carries the physical relay of maester-speech; bone 131 (straightens the
+        spine) is the nearest behavioral-adjustment candidate. No bone explicitly
+        marks behavioral consequence triggered by the maester's speech.
+      why: >
+        The facet layer (narrator, memory) must anchor the adjustment to a bone.
+        If bone 131 is the intended consequence beat, its causal link to bones
+        112/129 must be confirmed for facet authoring. Advisory.
+
+    - id: flag-008
+      type: flag
+      what: >
+        CARRIED FROM CYCLE 1 (formerly flag-007). Range-expansion threshold-
+        events (bones 209–221, 266–269, 344–347, 438–444) show territorial
+        spread but no bone records Taylor's proprioceptive awareness of the new
+        edge. cond-fauna-control-rules-125ac-addendum requires this registration
+        as "not a quiet background process."
+      why: >
+        The log-write clusters (e.g., bones 228–230, 276–278) may carry the
+        threshold registration at facet level, but the bone layer has no anchor
+        for the proprioceptive moment. Advisory for facet authoring.
+
+    - id: flag-009
+      type: flag
+      what: >
+        CARRIED FROM CYCLE 1 (formerly flag-008). Fish Gate margin surviving
+        subject (s4 constraint) forward-note. S01 bones do not violate this;
+        the spatial infrastructure is established. No s01 fault.
+      why: >
+        Advisory for s02–s03 planning: when the surviving subject is introduced
+        in the Fish Gate margin, they must appear in insect-relay bones without
+        appearing in Taylor's log-write sequences.
+
+## Cycle 2 fault resolution summary
+
+| Cycle-1 ID  | Status in cycle 2                                                   |
+|-------------|----------------------------------------------------------------------|
+| fault-001   | UNRESOLVED — non-monotonic placement persists; 9 new bones compound it |
+| fault-002   | UNRESOLVED — "the maester" slug persists at bones 111, 128, 129, 506; scope expands to include bones 285/286 |
+| fault-003   | RESOLVED — bone 109 deleted; gap at 108→110 confirmed               |
+| fault-004   | UNRESOLVED — bone 129 "speaks" still bare, no listener              |
+| fault-005   | POLICY DECISION — "walks the <path>" accepted as idiom; carried as flag-006 |
+| fault-006   | PARTIALLY RESOLVED — bone 187 recast to "the flies relay oc-tanner-elder"; bones 190 and 238 not addressed; raised as new fault-005 in cycle 2 |
+| flag-001    | CARRIED                                                              |
+| flag-002    | CARRIED                                                              |
+| flag-003    | CARRIED                                                              |
+| flag-004    | CARRIED                                                              |
+| flag-005    | CARRIED                                                              |
+| flag-006    | CARRIED                                                              |
+| flag-007    | CARRIED                                                              |
+| flag-008    | CARRIED                                                              |
+
+New cycle-2 faults: fault-004 (bone 515 bare write), fault-005 (bones 190/238 abstraction-as-object relay).
+New cycle-2 flags: flag-005 (bones 338/339 potential duplicate), flag-006 (walks-the-path policy carry).
+
+VERDICT: FAIL
+```
+
+---
+
+# === CYCLE 1 (archived) ===
+
+```yaml
+audit:
+  scope: season
+  target: s01
+  cycle: 1
   timestamp: 2026-05-11
   pass: S1 — Constraint audit (season scope)
   verdict: FAIL
