@@ -1,14 +1,13 @@
+---
 facet: memory
-episode: s01e01
-narrator: taylor-hebert-flea-bottom
-author: dialogue-writer-fork (taylor-hebert-flea-bottom, memory-flags mode)
+episode: s01e02
+author: taylor-hebert-flea-bottom (POV impersonator, fresh fork, facet-authoring mode)
 r2: graph-aware judge pass (memory-judge fork, 2026-05-11)
 ---
 
-3 @92 the woman's face holds the wood and what she will not turn to watch has the shape she will not name -> (earth-bet: refusal-to-look / locker-tutor / helpless-protector pattern; margit-referral candidate for monument-locker)
-4 @134 the network drops out and the absence has the shape of an arrival she has felt come this way before -> (earth-bet: fauna-silence-at-scale / arrival-pattern; margit-referral candidate for monument-fauna-silence-at-scale)
-5 @22 the log holds the salt-reach and what the salt-reach cost the mother is what the log does not hold -> (project-condition: clinical-self-erasure / log-omission-architecture; cond-clinical-self-erasure anchor)
-6 @43 the song stops on the third note and what the third note was reaching for is the silence the body should have filled -> (earth-bet: helpless-protector / failed-recognition pattern — dying-parent-recognition-fail variant; margit-referral candidate for monument-failed-recognition-by-dying-parent)
-7 @98 the name of the city holds a season she has not entered and the season she has not entered is the one she knows the shape of -> (westeros: foreknowledge-clamp on succession-window / Dance-timeline; margit-referral candidate for monument-dance-of-dragons)
-8 @114 the man speaks to a room with no listener and the shape of what he says is the shape of a voice she has heard be correct in a tongue no one in the room is listening for -> (earth-bet: dying-tutor / right-but-unhearable pattern; margit-referral candidate for monument-failed-recognition-by-dying-parent / tutor-side)
-9 @154 the word she gives the runner is the word she has given before to a person she could have burned and did not -> (earth-bet: peer-trust-test / non-retaliation-as-trust-token pattern; margit-referral candidate for monument-peer-trust-non-retaliation)
+3 @64 the shoulder-set drops back and down and the breath leaves before the network goes -> (earth-bet: pre-deployment ritual carried over — the prior life's swarm-control instinct registering on a 400m approach)
+4 @88 the neighbor presses the doorway and withdraws and the witnessing without recourse has its own architecture -> (earth-bet: institutional record-cruelty / administrative-violence pattern, glossed through smallfolk-eviction register)
+7 @159 the beetles relay the maester's second crossing and the behavioral-read-through is the kind of data the prior life learned to weigh before the apparatus knew what it was weighing -> (earth-bet: swarm-feed as cognition extension — the prior life's parallel-track register)
+9 @87 the family crosses the threshold and the network around the dwelling has gone the wrong kind of quiet -> s01e01:134
+11 @149 the phrase the beetles carried is shaped like a word the prior life had a different name for and the door she walks past is in the same room as the phrase -> s01e01:114
+12 @173 the mother rises and the rising is the shape another rising had in another tongue and the daughter the rising is not for is and is not here -> (earth-bet: failed-recognition-by-dying-parent pattern — the rising-from-the-vigil variant, cross-rhyme to the song-stopping)

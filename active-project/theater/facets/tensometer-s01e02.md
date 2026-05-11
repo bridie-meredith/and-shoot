@@ -85,7 +85,7 @@ s01e02.md's per-episode body was mechanically split correctly: it already contai
 67 @79 1
 68 @80 1
 69 @81 1
-70 @83 1
+70 @83 2
 71 @84 1
 72 @85 3
 73 @86 2
