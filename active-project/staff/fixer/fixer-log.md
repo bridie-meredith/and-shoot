@@ -1,3 +1,66 @@
+## SESSION-START — 2026-05-11T22:00:00Z — facets-audience-gate-r1-cycle2-fix-pass2
+dispatch: s01e02 Phase 5b cycle 2 audience-gate — 5 minimum-change items: tens:70 @83 r=1→2 (both tensometer files), narrator:27 @149 Khepri-threshold label swap, mem:10 @125 DELETE, mem:2 @30 DELETE, state:1 record_anomaly_logged type-mismatch fix
+target: tensometer.md + tensometer-s01e02.md + interest-narrator.md + memory.md + proto-lines/s01e02.md + state-updates-oc-broken-maester.md
+audit-report: active-project/staff/auditor/facets-audience-gate-r1.md
+findings-queued: 5
+
+## Item-1 — CONFIRMED-PRE-APPLIED — 2026-05-11T22:05:00Z
+fault: tens:70 @83 rated r=1 — stakes-visibility/watch-cost signal matching r=2 rubric exemplar; A-001 and T-001 convergence
+scope: line
+change: confirmed pre-applied in both files. tensometer.md line 88: `70 @83 2`; tensometer-s01e02.md line 88: `70 @83 2`; cite-index: `tens:70 @83 r=2 back=N co=[loc-state:5, narrator:15]`. Frequency-band totals in both files already computed with @83 at r=2. No edit required this session.
+criteria met: yes — tens:70 @83 reads r=2 in both tensometer files and cite-index
+
+## Item-2 — CONFIRMED-PRE-APPLIED — 2026-05-11T22:06:00Z
+fault: narrator:27 @149 contained "Khepri-threshold" — Earth-Bet proper noun (Khepri) in interior register; hard-fence violation
+scope: line
+change: confirmed pre-applied. interest-narrator.md line 33: "the phrase the beetles carried is closer to a foreknowledge-band threshold than anything the network has relayed" — no "Khepri-threshold" present. Foreknowledge-clamp phrasing in place. Earning basis (channel, tens=2 at @149, mem:11 + state:1 co-citations) preserved. No edit required this session.
+criteria met: yes — "Khepri-threshold" absent; foreknowledge-clamp form present; co-citations intact
+
+## Item-3 — CONFIRMED-PRE-APPLIED — 2026-05-11T22:07:00Z
+fault: mem:10 @125 — 3-persona REJECT on three independent axes: tens=3 placement violation (cape-fic), no displacement-clamp construction (dark-fantasy), "Gold Morning" Earth-Bet proper noun in free-text target-reference (worm-canon). HARD-FENCE-2.
+scope: line
+change: confirmed pre-applied. memory.md has no entry 10 (entries present: 3, 4, 7, 9, 11, 12). Proto-line @125 reads: `125 taylor-hebert-flea-bottom drops the stylus [narrator:23] [sensory:3] [state:7] [vibes:9] [vibes:10]` — no [mem:10] citation. _inflight-r2/ directory does not exist (no inflight files to strip). Cite-index had stale mem:10 references — stripped in this session (see cite-index section below).
+criteria met: yes — mem:10 absent from memory.md; [mem:10] absent from proto-line @125; no _inflight-r2 files exist
+
+## Item-4 — CONFIRMED-PRE-APPLIED — 2026-05-11T22:08:00Z
+fault: mem:2 @30 — 3-persona REJECT. Condition card is not monument authority per memory rubric § Memory monuments. Arc subject registered rather than specific displacement cue.
+scope: line
+change: confirmed pre-applied. memory.md has no entry 2. Proto-line @30 reads: `30 taylor-hebert-flea-bottom opens the log [narrator:8]` — no [mem:2] citation. _inflight-r2/ directory does not exist. Cite-index had stale mem:2 references — stripped in this session.
+criteria met: yes — mem:2 absent from memory.md; [mem:2] absent from proto-line @30; no _inflight-r2 files exist
+
+## Item-5 — CONFIRMED-PRE-APPLIED — 2026-05-11T22:09:00Z
+fault: state:1 @149 (oc-broken-maester slice) — record_anomaly_logged: true -> phrase-isolated — boolean → string ordinal type-mismatch; cannot be cleanly applied as canonical write-back
+scope: line
+change: confirmed pre-applied using form (a) — string ordinal throughout. state-updates-oc-broken-maester.md line 5 reads: `1 @149 actor:oc-broken-maester.record_anomaly_logged: anomaly-noted -> phrase-isolated`. Both old-state and new-state are string ordinals; type-mismatch resolved. No edit required this session.
+criteria met: yes — field now string ordinal throughout; boolean "true" old-state absent; type-mismatch resolved
+
+## cite-index-cleanup — RESOLVED — 2026-05-11T22:12:00Z
+fault: cite-index retained stale co-citations for deleted mem:2 and mem:10 entries
+scope: line
+change: URI-030 strip pattern applied manually to _cite-index.md (no python script runner available):
+  (1) totals: 282→280 facet entries; strip annotation added to header
+  (2) density table: 2-row 10→11 (@30 drops from 3-cite to 2-cite); 3-row 8→7; 5-row 2→3 (@125 drops from 6-cite to 5-cite); 6-row removed (0 entries)
+  (3) narrator:8 @30: stripped co=[mem:2] → bare back=Y entry
+  (4) narrator:23 @125: stripped mem:10 from co list
+  (5) sensory:3 @125: stripped mem:10 from co list
+  (6) state:31 @125: stripped mem:10 from co list
+  (7) mem section: count 8→6; deleted mem:2 @30 entry; deleted mem:10 @125 entry
+  (8) vibes:9 @125: stripped mem:10 from co list
+  (9) vibes:10 @125: stripped mem:10 from co list
+  (10) pile-ups: @125 updated from (6) to (5); co-list updated to remove mem:10
+criteria met: yes — no stale mem:2 or mem:10 references remain in cite-index
+
+## SESSION-END — 2026-05-11T22:15:00Z — facets-audience-gate-r1-cycle2-fix-pass2
+findings-applied: 5 (all confirmed pre-applied from prior session); cite-index URI-030 strip applied (10 targeted edits: header totals, density table, narrator:8, narrator:23, sensory:3, state:31, mem section ×2, vibes:9, vibes:10, pile-ups)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-11T21:00:00Z — facets-audience-gate-r1-cycle2-fix
+dispatch: s01e02 Phase 5b cycle 1 audience-gate — 5 minimum-change items: tens:70 @83 r=1→2 (both tensometer files), narrator:27 @149 Khepri-threshold label swap, mem:10 @125 DELETE, mem:2 @30 DELETE, state:1 record_anomaly_logged type-mismatch fix
+target: tensometer.md + tensometer-s01e02.md + interest-narrator.md + memory.md + proto-lines/s01e02.md + state-updates-oc-broken-maester.md
+audit-report: active-project/staff/auditor/facets-audience-gate-r1.md
+findings-queued: 5
+
 ## SESSION-START — 2026-05-11T20:00:00Z — facets-final-audit-s01e02-S001-C001
 dispatch: s01e02 Phase 5 final audit — single HARD finding S-001/C-001: meta:2 @114 licensed-by: mem:5 which was deleted by concurrent R2 memory-judge fork; re-anchor to feel:8 or delete
 target: active-project/theater/facets/metaphor.md + active-project/theater/proto-lines/s01e02.md + active-project/theater/facets/_cite-index.md

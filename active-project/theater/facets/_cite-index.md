@@ -2,19 +2,18 @@
 generated: 2026-05-11
 source: active-project/theater/proto-lines/s01e02.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 284 facet entries; 64/155 protolines decorated (41.3%)
+totals: 282 facet entries; 64/155 protolines decorated (41.3%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
 | 0 (bare)   | 91 |
-| 1          | 38 |
-| 2          | 10 |
+| 1          | 39 |
+| 2          | 9 |
 | 3          | 8 |
 | 4          | 3 |
-| 5          | 2 |
-| 6          | 1 |
+| 5          | 3 |
 | 7          | 1 |
 | 11          | 1 |
 
@@ -47,7 +46,7 @@ totals: 284 facet entries; 64/155 protolines decorated (41.3%)
   tens:24 @26 r=2 back=N
   tens:25 @27 r=1 co=[state:4]
   tens:26 @28 r=1 co=[state:2]
-  tens:27 @30 r=1 co=[mem:2, narrator:8]
+  tens:27 @30 r=1 co=[narrator:8]
   tens:28 @31 r=1 co=[state:3]
   tens:29 @32 r=1
   tens:30 @34 r=1
@@ -90,7 +89,7 @@ totals: 284 facet entries; 64/155 protolines decorated (41.3%)
   tens:67 @79 r=1
   tens:68 @80 r=1
   tens:69 @81 r=1
-  tens:70 @83 r=1 co=[loc-state:5, narrator:15]
+  tens:70 @83 r=2 back=N co=[loc-state:5, narrator:15]
   tens:71 @84 r=1
   tens:72 @85 r=3 back=N co=[narrator:16, sensory:2, state:3]
   tens:73 @86 r=2 back=N
@@ -131,7 +130,7 @@ totals: 284 facet entries; 64/155 protolines decorated (41.3%)
   tens:108 @124 r=2 back=N
   tens:109 @126 r=2 back=N
   tens:110 @127 r=2 back=N co=[narrator:24]
-  tens:111 @125 r=3 back=N co=[mem:10, narrator:23, sensory:3, state:7, vibes:9, vibes:10]
+  tens:111 @125 r=3 back=N co=[narrator:23, sensory:3, state:7, vibes:9, vibes:10]
   tens:112 @128 r=1
   tens:113 @129 r=1
   tens:114 @130 r=1
@@ -199,7 +198,7 @@ totals: 284 facet entries; 64/155 protolines decorated (41.3%)
   narrator:5 @20 back=Y co=[feel:1, state:1, vibes:4]
   narrator:6 @22 back=Y co=[feel:1, state:2, state:3, vibes:1, vibes:2, vibes:3]
   narrator:7 @25 back=Y
-  narrator:8 @30 back=Y co=[mem:2]
+  narrator:8 @30 back=Y
   narrator:9 @35 back=Y
   narrator:10 @53 back=Y
   narrator:11 @64 back=Y co=[mem:3]
@@ -214,7 +213,7 @@ totals: 284 facet entries; 64/155 protolines decorated (41.3%)
   narrator:20 @104 back=Y
   narrator:21 @106 back=Y co=[feel:3, vibes:5]
   narrator:22 @108 back=Y
-  narrator:23 @125 back=Y co=[mem:10, sensory:3, state:7, vibes:9, vibes:10]
+  narrator:23 @125 back=Y co=[sensory:3, state:7, vibes:9, vibes:10]
   narrator:24 @127 back=Y
   narrator:25 @139 back=Y
   narrator:26 @140 back=Y
@@ -233,7 +232,7 @@ totals: 284 facet entries; 64/155 protolines decorated (41.3%)
 ### sensory (5 entries)
   sensory:1 @41 back=Y co=[loc-state:3, state:1, state:4]
   sensory:2 @85 back=Y co=[narrator:16, state:3]
-  sensory:3 @125 back=Y co=[mem:10, narrator:23, state:7, vibes:9, vibes:10]
+  sensory:3 @125 back=Y co=[narrator:23, state:7, vibes:9, vibes:10]
   sensory:4 @164 back=Y co=[loc-state:11, state:5]
   sensory:5 @173 back=Y co=[feel:1, mem:12, narrator:31, state:4, state:8, state:9, vibes:18, vibes:19, vibes:22, vibes:23]
 
@@ -268,18 +267,16 @@ totals: 284 facet entries; 64/155 protolines decorated (41.3%)
   state:28 @41 back=N co=[loc-state:3, sensory:1, state:1, state:4]
   state:29 @107 back=N co=[feel:2, state:5, state:7, vibes:6, vibes:7]
   state:30 @117 back=N co=[narrator:34, state:6, vibes:8, vibes:11]
-  state:31 @125 back=N co=[mem:10, narrator:23, sensory:3, state:7, vibes:9, vibes:10]
+  state:31 @125 back=N co=[narrator:23, sensory:3, state:7, vibes:9, vibes:10]
   state:32 @145 back=N co=[state:8]
   state:33 @151 back=N co=[narrator:28, state:9, vibes:14]
   state:34 @171 back=N co=[narrator:30, state:10, vibes:21]
 
-### mem (8 entries)
-  mem:2 @30 back=Y co=[narrator:8]
+### mem (6 entries)
   mem:3 @64 back=Y co=[narrator:11]
   mem:4 @88 back=Y co=[narrator:18]
   mem:7 @159 back=Y co=[narrator:29, vibes:15, vibes:16, vibes:17]
   mem:9 @87 back=Y co=[feel:2, narrator:17]
-  mem:10 @125 back=Y co=[narrator:23, sensory:3, state:7, vibes:9, vibes:10]
   mem:11 @149 back=Y co=[narrator:27, state:1]
   mem:12 @173 back=Y co=[feel:1, narrator:31, sensory:5, state:4, state:8, state:9, vibes:18, vibes:19, vibes:22, vibes:23]
 
@@ -306,8 +303,8 @@ totals: 284 facet entries; 64/155 protolines decorated (41.3%)
   vibes:6 @107 back=Y co=[feel:2, state:5, state:7, vibes:7] lic-out=[state-update-oc-tanner-father:7, feeling-oc-tanner-father:2, proto:107, tens:2]
   vibes:7 @107 back=Y co=[feel:2, state:5, state:7, vibes:6] lic-out=[state-update-taylor:5, state-update-oc-tanner-father:7, proto:107, tens:3]
   vibes:8 @117 back=Y co=[narrator:34, state:6, vibes:11] lic-out=[state-update-taylor:6, proto:117, proto:118, proto:119]
-  vibes:9 @125 back=Y co=[mem:10, narrator:23, sensory:3, state:7, vibes:10] lic-out=[state-update-taylor:7, proto:125, proto:123, tens:3]
-  vibes:10 @125 back=Y co=[mem:10, narrator:23, sensory:3, state:7, vibes:9] lic-out=[state-update-taylor:7, proto:125, proto:124]
+  vibes:9 @125 back=Y co=[narrator:23, sensory:3, state:7, vibes:10] lic-out=[state-update-taylor:7, proto:125, proto:123, tens:3]
+  vibes:10 @125 back=Y co=[narrator:23, sensory:3, state:7, vibes:9] lic-out=[state-update-taylor:7, proto:125, proto:124]
   vibes:11 @117 back=Y co=[narrator:34, state:6, vibes:8] lic-out=[state-update-taylor:6, state-update-taylor:7, proto:117, proto:125, tens:3]
   vibes:12 @89 back=Y co=[meta:1, vibes:13] lic-out=[proto:89, proto:93, proto:94, proto:95, tens:1]
   vibes:13 @89 back=Y co=[meta:1, vibes:12] lic-out=[proto:89, proto:94, proto:95]
@@ -328,10 +325,10 @@ totals: 284 facet entries; 64/155 protolines decorated (41.3%)
     `oc-tanner-mother stands`
 - **@22** (7): feel:1, narrator:6, state:2, state:3, vibes:1, vibes:2, vibes:3
     `oc-tanner-father steps back`
-- **@125** (6): mem:10, narrator:23, sensory:3, state:7, vibes:9, vibes:10
-    `taylor-hebert-flea-bottom drops the stylus`
 - **@107** (5): feel:2, state:5, state:7, vibes:6, vibes:7
     `oc-tanner-father takes the coins`
+- **@125** (5): narrator:23, sensory:3, state:7, vibes:9, vibes:10
+    `taylor-hebert-flea-bottom drops the stylus`
 - **@159** (5): mem:7, narrator:29, vibes:15, vibes:16, vibes:17
     `the beetles relay oc-broken-maester`
 
@@ -357,6 +354,7 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 - narrator:3 @12  `oc-tanner-father stills`
 - narrator:4 @18  `oc-tanner-father lifts the trade goods`
 - narrator:7 @25  `oc-tanner-mother pivots toward the road south`
+- narrator:8 @30  `taylor-hebert-flea-bottom opens the log`
 - narrator:9 @35  `the wasps relay the Watch patrol`
 - narrator:10 @53  `the wasps relay the pass`
 - narrator:12 @69  `taylor-hebert-flea-bottom exhales`

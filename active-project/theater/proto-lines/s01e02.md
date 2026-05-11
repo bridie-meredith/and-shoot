@@ -44,7 +44,7 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 26 oc-tanner-father pivots toward the road south
 27 oc-tanner-father exits the junction [state:4]
 28 oc-tanner-mother exits the junction [state:2]
-30 taylor-hebert-flea-bottom opens the log [mem:2] [narrator:8]
+30 taylor-hebert-flea-bottom opens the log [narrator:8]
 31 taylor-hebert-flea-bottom writes the entry [state:3]
 32 taylor-hebert-flea-bottom closes the log
 34 the flies relay oc-tanner-elder
@@ -126,7 +126,7 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 122 taylor-hebert-flea-bottom writes the entry
 123 taylor-hebert-flea-bottom flexes the hand
 124 taylor-hebert-flea-bottom wakes
-125 taylor-hebert-flea-bottom drops the stylus [mem:10] [narrator:23] [sensory:3] [state:7] [vibes:9] [vibes:10]
+125 taylor-hebert-flea-bottom drops the stylus [narrator:23] [sensory:3] [state:7] [vibes:9] [vibes:10]
 126 taylor-hebert-flea-bottom holds the eyes
 127 taylor-hebert-flea-bottom lowers the chin [narrator:24]
 128 taylor-hebert-flea-bottom opens the log

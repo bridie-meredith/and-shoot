@@ -27,7 +27,7 @@ author: studio (fresh fork)
 # facet: state-updates
 # episode: s01e02
 
-5 @149 actor:oc-broken-maester.record_anomaly_logged: true -> phrase-isolated
+5 @149 actor:oc-broken-maester.record_anomaly_logged: anomaly-noted -> phrase-isolated
 # field-extension: record_anomaly_logged value-set widened from boolean-logged-flag to a documentation-sharpening ordinal — true (general anomaly noted) -> phrase-isolated (specific phrase captured in record). Per rubric §"Field-extension protocol": tracked-state aspect (documentation state on his thirty-year record), not perception. The proto-line "the beetles relay the phrase" is the beetles registering an articulation event the maester produces; the canonical change on his side is that his anomaly-log moves from loose-noting to phrase-specific entry. Persistence: holds past the beat (a phrase committed to his record stays in the record). Tens @149=2 escalation; @151=3 is Taylor's recognition rupture (her side, not his). Authority: oc-broken-maester fork writes oc-broken-maester. Cross-facet: this is a non-POV actor-state shift (Taylor is POV); narrator-interest co-citation NOT required. Anti-pattern scan: not registration-as-state (the maester's record-state is a tracked field, not a perception); not held-against-turn (@149 is not @39-class); not posture (record-state is documentation, not body); not pre-empting (the phrase is articulated at @149, not @148 rhythm-relay nor @150 rhythm-relay-after).
 
 # source: oc-dock-runner

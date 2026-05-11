@@ -30,7 +30,7 @@ author: taylor-hebert-flea-bottom (POV impersonator, facet-authoring mode; R2 ju
 24 @127 the chin-lower is the body conceding what the log will not yet say
 25 @139 the beetles' register-relay is a name being said in a room she should not have access to
 26 @140 the feet-hold is the body refusing the displacement the relay has just queued
-27 @149 the phrase the beetles carried is closer to a Khepri-threshold than anything the network has relayed
+27 @149 the phrase the beetles carried is closer to a foreknowledge-band threshold than anything the network has relayed
 28 @151 the stilling is the apparatus going quiet around a fragment that should not be in the register
 29 @159 the maester's relay-route through the beetles names him as ambient signal, no longer hypothesis
 30 @171 the second sentence is the vigil-candle as fact, no longer as fixture

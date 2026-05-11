@@ -40,7 +40,7 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 26 oc-tanner-father pivots toward the road south
 27 oc-tanner-father exits the junction [state:4]
 28 oc-tanner-mother exits the junction [state:2]
-30 taylor-hebert-flea-bottom opens the log [mem:2] [narrator:8]
+30 taylor-hebert-flea-bottom opens the log [narrator:8]
 31 taylor-hebert-flea-bottom writes the entry [state:3]
 32 taylor-hebert-flea-bottom closes the log
 34 the flies relay oc-tanner-elder
