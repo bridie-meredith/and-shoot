@@ -1,3 +1,50 @@
+## SESSION-START — 2026-05-11T17:00:00Z — facets-final-audit-s01e01-remediation
+dispatch: s01e01 facets final audit remediation — C1 (tens out-of-range strip, both tensometer files), C2 (memory.md margit-slug rename), C3 (mem:7 @98 description rewrite), C4 (narrator:25 @98 one-clause rewrite), C5 (interest-narrator.md stale density figure)
+target: theater/facets/tensometer.md + theater/facets/tensometer-s01e01.md + theater/facets/memory.md + theater/facets/interest-narrator.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 5 criteria (C1–C5); DO-NOT-FIX: flag-003, flag-006, flag-007, flag-009, flag-013
+
+## C5 — RESOLVED — 2026-05-11T17:16:00Z
+fault: interest-narrator.md contains two density figures (pre-R2 "38/155 ≈ 24.5%" and post-R2 "39/155 ≈ 25.2%") with no superseded marker on the stale figure
+scope: line
+change: pre-R2 density line changed from "# Density: 38/155 ≈ 24.5% — within band ceiling (15–25%); the upper-edge is structural for an episode..." to "# Density: 38/155 ≈ 24.5% [SUPERSEDED — pre-R2 figure; see post-R2 density below]" — rationale prose removed from superseded line; post-R2 figure unchanged.
+criteria met: yes — stale figure marked SUPERSEDED; no entry text altered
+
+## C4 — RESOLVED — 2026-05-11T17:14:00Z
+fault: narrator:25 @98 is two-clause simile ("the way a date in a book arrives at a hand that holds the book") — NI schema requires one-clause description
+scope: line
+change: narrator:25 @98 rewritten from "King's Landing arrives at the senses the way a date in a book arrives at a hand that holds the book" to "King's Landing arrives as a city she has already named, in a season she has not yet reached" — one clause; no simile; foreknowledge-clamp content retained (already-named city; season not yet reached = Dance-timeline). SEAM-3 comment in curve-verdict section updated to reflect resolved status (references old line text removed).
+criteria met: yes — one-clause form; no simile structure; foreknowledge-clamp present
+
+## C3 — RESOLVED — 2026-05-11T17:11:00Z
+fault: mem:7 @98 description echoes narrator:25's "date arrives at a hand that holds the book" simile — near-redundant figure on same anchor
+scope: line
+change: mem:7 @98 description rewritten from "the city arrives the way a date arrives at a hand that already holds the book" to "the name of the city holds a season she has not entered and the season she has not entered is the one she knows the shape of" — foreknowledge-clamp preserved (she knows a season she hasn't yet entered = Dance-timeline); double-clause memory grammar maintained; no book/date simile; non-redundant with narrator:25. Target-reference parenthetical untouched.
+criteria met: yes — monument-signal present; no restatement of NI figure
+
+## C2 — RESOLVED — 2026-05-11T17:08:00Z
+fault: memory.md margit-referral slug labels contained Earth-Bet proper nouns (monument-endbringer-arrival, monument-annette-death)
+scope: line
+change: replace_all in memory.md — `monument-endbringer-arrival` → `monument-fauna-silence-at-scale` (1 occurrence, mem:4 @134 parenthetical); `monument-annette-death` → `monument-failed-recognition-by-dying-parent` (2 occurrences: mem:6 @43 and mem:8 @114 parentheticals). Description prose untouched.
+criteria met: yes — no Earth-Bet proper nouns remain in margit-referral slug labels
+
+## C1 — RESOLVED — 2026-05-11T17:05:00Z
+fault: tensometer entries anchored to IDs outside s01e01 aggregate range [1,155] (anchors 495, 504, 506, 516, 517, 525, 518, 138); non-monotonic ID 123a @518
+scope: line
+change: tensometer.md — confirmed already clean: body entries with out-of-range anchors were already stripped (IDs 79/80/123/123a/129/143/147/148 absent from body); frequency-band section already shows post-strip totals (141 entries, 7/141 3s, 21/141 2s, 113/141 1s; 2s below floor documented). No edits needed to tensometer.md. tensometer-s01e01.md — body identical (already stripped); updated frequency-band section from "cycle 3 corrected" (149 entries, 8/149 3s including @518) to post-strip counts matching tensometer.md; removed @518 and @506 references from curve-verdict 3s list and KICKBACK-3 block; KICKBACK-3 recast to episode-range-only language. 2s rate 14.9% still below 20% floor; note added per criteria.
+criteria met: yes — both files now show identical post-strip body and matching post-strip frequency-band; 2s below-floor documented with note
+
+## SESSION-END — 2026-05-11T17:17:00Z — facets-final-audit-s01e01-remediation
+findings-applied: 5 (C1, C2, C3, C4, C5)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-11T16:00:00Z — facets-final-audit-s01e01
+dispatch: s01e01 facets final audit remediation — C1 (tens out-of-range strip, both tensometer files), C2 (memory.md margit-slug rename), C3 (mem:7 @98 description rewrite), C4 (narrator:25 @98 one-clause rewrite), C5 (interest-narrator.md stale density figure)
+target: theater/facets/tensometer.md + theater/facets/tensometer-s01e01.md + theater/facets/memory.md + theater/facets/interest-narrator.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 5 criteria (C1–C5); DO-NOT-FIX: flag-003, flag-006, flag-007, flag-009, flag-013
+
 ## SESSION-END — 2026-05-11T15:07:00Z — phase3-collation-cycle2-dispatch2
 findings-applied: 7 edits/deletions (Group E: ID 200 recast; Group F: ID 338 recast; Group G: ID 515 deleted; Group H: IDs 213/273/354 recast ×3; Group I: ID 513 recast); Groups A/B/C/D confirmed pre-applied from prior cycle-2 session
 findings-skipped: 0 individual fault instances skipped

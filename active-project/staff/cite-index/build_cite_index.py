@@ -132,11 +132,12 @@ def parse_proto_file(path: Path) -> tuple[list[str], dict[int, str], dict[int, l
             continue
         pid = int(m.group(1))
         body = m.group(2).strip()
-        if "[" in body and body.endswith("]"):
-            sentence, _, bracketed = body.rpartition("[")
-            sentence = sentence.strip()
-            bracketed = bracketed[:-1]
-            for prefix, eid in CITE_TOKEN_RE.findall(bracketed):
+        # Strip ALL trailing [prefix:id] citation blocks (whitespace-separated).
+        trailing_re = re.compile(r"(?:\s*\[[a-z][a-z0-9-]*:\d+\])+\s*$")
+        cm = trailing_re.search(body)
+        if cm:
+            sentence = body[: cm.start()].rstrip()
+            for prefix, eid in CITE_TOKEN_RE.findall(cm.group(0)):
                 cites[pid].append((prefix, int(eid)))
         else:
             sentence = body

@@ -86,7 +86,7 @@ seasons:
     protolines_complete: 2026-05-11
     episodes:
       - slug: s01e01
-        status: protolined
+        status: faceted-r2   # NOT flipped to audited-r1 per orchestrator-critic NOT-SUCCESSFUL verdict (1 residual HARD + bidirectional-not-validated; remediation pass burned)
         narrator: taylor-hebert-flea-bottom
         interlude: false
         chunk: "Taylor wakes in Tya's body and the tanner-village category closes around her on the first morning; she moves to King's Landing via the tanner-elder, maps her 300m sphere in Flea Bottom, identifies the broken maester's upper room as ambient surveillance, and runs her first transactional exchange via the dock-runner."
@@ -96,6 +96,27 @@ seasons:
         locations: [loc-flea-bottom, loc-flea-bottom-base]
         prior_episode: none
         aggregate_range: 1-155
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audit_findings: 14   # initial: 4 HARD + 1 HARD-proximity + 9 SIGNAL; 5 pile-ups all warranted
+        audit_findings_hard_initial: 4
+        reaudit_path: active-project/staff/auditor/facets-final-audit-r2.md
+        reaudit_complete: true
+        remediation_pass: 1 of 1 (criterion-2 budget burned)
+        audit_findings_hard_residual: 1   # flag-005 UPHELD: tens 2s = 14.9% (post-strip; below 20% floor); upstream rubric-exemption concern (URI-034)
+        r2_decisions_path: active-project/theater/facets/.r2-decisions.md
+        r2_f_r2_counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
+        r2_discipline_fails: 0
+        process_gaps:
+          - cite-index parser bug (rpartition strips only last trailing bracket; patched in active-project/staff/cite-index/build_cite_index.py) — see URI-029
+          - R2 inflight-r2/ protocol misunderstanding (judges did not carry forward R1 citations; canonical proto-lines rebuilt from facet files directly as Phase 4 fallback) — see URI-030
+          - /and-season Phase 7 Step 4 leaked season-window bones into per-episode tens (4 of 5 initial HARD findings traced here) — see URI-028
+          - frequency-band rubric lacks exemption taxonomy (flag-005 residual HARD cannot be cleanly closed) — see URI-034
+          - /and-facets bidirectional-loop criterion structurally not-validatable in current shape — see URI-035
+        upstream_tuning_queue_entries: [URI-028, URI-029, URI-030, URI-031, URI-032, URI-033, URI-034, URI-035]
       - slug: s01e02
         status: protolined
         narrator: taylor-hebert-flea-bottom

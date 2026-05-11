@@ -391,3 +391,90 @@ An item is closed when:
 - **Audit** — command-file edit landed, next audit run validates.
 
 Items are **never silently abandoned**. If the team decides a queued item is no longer needed, the queue entry is updated to status `ABANDONED — <reason>` and stays for trace.
+
+### URI-028 — /and-season Phase 7 Step 4 — per-episode tens cut leaks season-window bones
+
+- **Category:** Protoline upstream / orchestration command (`/and-season` Phase 7 Step 4).
+- **Source:** /and-facets s01e01 run, 2026-05-11. Audit findings flag-001, flag-002, flag-008, flag-010 — all HARD; all concentrate in tensometer.
+- **Issue:** `active-project/theater/facets/tensometer-s01e01.md` (the per-episode tens file produced by /and-season Phase 7 Step 4) contains entries anchored to bones outside the episode's aggregate range (s01e01 is 1-155). Stray anchors observed: @495, @504, @506, @516, @517, @525, @518, plus a blank @138 and a non-monotonic `123a` ID. These are season-window bones that should have been pruned when the per-episode file was cut. /and-facets Phase 0 stages this file as `tensometer.md` without range-checking and the bleed-through becomes an entire HARD class of audit findings every run.
+- **Where the gap originates:** /and-season Phase 7 Step 4 finalizes per-episode tens files. The cut step is mechanical — but it apparently copies cycle-3 cleanup bones (like the `123a` late-insert resolving KICKBACK-3) into all per-episode files instead of routing them to the window the anchor actually belongs to.
+- **Action:**
+  1. Add a range-check assertion at /and-season Phase 7 Step 4: every entry in `tensometer-s<NN>e<NN>.md` must have an anchor within that episode's `aggregate_range`. Abort or warn on violation.
+  2. Decide policy for the `123a`-style late-insert IDs: either renumber them to the next available integer in the receiving file's local ID space, or keep alpha-suffix but document the schema exception explicitly.
+  3. Backstop: /and-facets Phase 0 (the tens staging step) could add a defensive range-check that warns or aborts when stale bones are detected, but the canonical fix belongs upstream in /and-season.
+- **Cost:** small at /and-season Phase 7 Step 4 (mechanical filter). Cascade implication: existing s01e01 / s01e02 / s01e03 tens files all need re-cutting; the s01e01 fix landed in this run's remediation pass.
+
+### URI-029 — cite-index parser bug — rpartition single-bracket strip
+
+- **Category:** Audit tooling / schema-coherence.
+- **Source:** /and-facets s01e01 run, 2026-05-11. Phase 4 merge BODY-INTEGRITY FAIL surfaced during the second invocation of `build_cite_index.py`.
+- **Issue:** `active-project/staff/cite-index/build_cite_index.py` `parse_proto_file()` used `body.rpartition("[")` to extract citation tokens from a proto-line body. This strips ONLY the last trailing `[...]` block. After Phase 2 merge, the canonical proto-lines file accrues multiple citations per line (e.g. `1 taylor-hebert-flea-bottom wakes [narrator:1] [vibes:1]`). On the second parse (Phase 4 cite-index rebuild on the now-multi-cite canonical), the parser leaks all-but-last citations into the SVO body. Manifests two ways:
+  1. False BODY-INTEGRITY FAIL — base "body" is read as `wakes [narrator:1]` while inflight body is `wakes`, mismatch fires.
+  2. Cite-index density distribution under-reports — every line shows at most 1 cite (the last one), so density-bucket distribution claims `0 (bare)` and `1` are the only buckets, when reality has lines up to 8 cites.
+- **Patch landed in this run:** parser switched from rpartition single-strip to a regex that matches all trailing `[...]` blocks (`re.compile(r"(?:\s*\[[a-z][a-z0-9-]*:\d+\])+\s*$")`).
+- **Action:** confirm the patch is durable (regression test against a multi-cite canonical line); consider adding a tool-self-test that asserts density-distribution monotonicity (if base has K cites, post-parse cites list has K elements). The patch is in place; this URI is for confirming it survives future tool updates.
+- **Cost:** done (patch landed). Documenting for trace.
+
+### URI-030 — R2 judge inflight-r2 protocol — full R1 citation set must be preserved
+
+- **Category:** Orchestration command (`/and-facets` Phase 3 dispatch brief) + R2 judge prompt template.
+- **Source:** /and-facets s01e01 run, 2026-05-11. All 9 R2 judges produced inflight-r2 proto-lines copies that contained ONLY their own facet's citations, stripping all R1 citations from the body. Body-integrity check at Phase 4 fired against all 9 copies because the canonical base now had R1 citations baked in while the inflight-r2 copies had only the judge's own.
+- **Issue:** The /and-facets command spec says R2 judges write `_inflight-r2/proto-lines-<facet>.md` reflecting "citation cascades + adds." The wording is ambiguous: it sounds like the judge writes the deltas, when the tool expects the FULL post-R1 citation set plus the judge's deltas (so the union merge produces correct totals; the deletion cascade is shown by absences). Judges read the dispatch literally and produced minimal copies. The Phase 4 merge then failed body-integrity because their bodies (citation-bare) didn't match the multi-cite canonical base.
+- **Where the gap originates:** dispatch brief wording. Each R2 judge's prompt should spell out: "Copy the canonical post-R1 proto-lines file (with ALL existing citations) to your `_inflight-r2/` path; preserve every existing citation; append your R2 adds; strip ONLY your own facet's deleted IDs (the cascade)."
+- **Workaround used in this run:** the Phase 4 merge tool was bypassed; canonical proto-lines citations were rebuilt directly from facet files (facet entries are source-of-truth post-R2). Cite-index rebuilt with `--skip-merge`.
+- **Action:**
+  1. Tighten the R2 dispatch-brief language in `.claude/commands/and-facets.md` (or wherever the Phase 3 prompt template lives).
+  2. Alternative: redesign Phase 4 so it doesn't depend on inflight-r2/ at all — rebuild canonical citations from facet files (facet-as-source-of-truth approach, which is what the fallback already does). This is simpler and removes a class of judge-protocol failure entirely. Recommended.
+  3. If the fallback approach is adopted: deprecate `_inflight-r2/` writes from the R2 judge protocol; the judges only mutate facet files (in place), and Phase 4 derives canonical citations mechanically.
+- **Cost:** small if the fallback approach is canonized (delete the inflight-r2/ requirement from the spec and Phase 4 logic). Medium if the inflight-r2/ workflow is kept and the brief language is tightened (depends on judge agents reading carefully).
+
+### URI-031 — Phase 4 merge tool — no native deletion-cascade support
+
+- **Category:** Audit tooling (`build_cite_index.py`).
+- **Source:** /and-facets s01e01 run, 2026-05-11. Related to URI-030 but distinct.
+- **Issue:** `union_citations()` in the cite-index tool is a strict union — it merges base + inflight-* citations. If an R2 judge deletes facet entry `mem:1`, the canonical proto-line at the entry's anchor still has `[mem:1]` from the base, and the inflight-r2 strip (even if the judge had done it correctly) cannot propagate via union. Union can only add; it can't remove. Currently the only way to know the deletion happened is the stale-citation check at Phase 4 sub-phase 4, which ABORTS rather than auto-strips.
+- **Action:** add a deletion-cascade pass to the merge tool: after slice consolidation, walk all citations on canonical proto-lines; for each `[<prefix>:<id>]`, confirm the facet entry exists in the corresponding file; if not, strip the citation (instead of aborting). This makes the tool naturally idempotent against R2 deletions without requiring inflight-r2 strip discipline.
+- **Linkage:** if URI-030 is resolved via the facet-as-source-of-truth approach (rebuild citations from facets), this URI's deletion-cascade need is subsumed (the rebuild handles deletions trivially). The two URIs converge on the same fix.
+- **Cost:** small if it's the rebuild-from-facets approach. Medium if it's a discrete deletion-cascade pass added to the existing union flow.
+
+### URI-032 — memory facet — margit-referral slug naming convention (Earth-Bet proximity)
+
+- **Category:** Rubric tuning + margit intake validation.
+- **Source:** /and-facets s01e01 audit, 2026-05-11. Audit flag-012 (CONSTRAINT, HARD-proximity).
+- **Issue:** Memory facet authors used Earth-Bet proper nouns as components of `margit-referral candidate for monument-<slug>` glosses — slugs observed: `monument-endbringer-arrival`, `monument-annette-death`. These are internal routing labels, not prose-facing fields, so the hard-fence-on-prose is technically not breached. But the slug components ARE Earth-Bet proper nouns, and if margit receives them as card slugs without convention enforcement, the warehouse ends up with Earth-Bet-named cards.
+- **Action:**
+  1. Add to memory rubric (`design/shoot-v2/rubric-memory-flags.md`): margit-referral slug components MUST use mechanism-descriptive form, not Earth-Bet proper-noun form. Examples: `monument-fauna-silence-at-scale` instead of `monument-endbringer-arrival`; `monument-failed-recognition-by-dying-parent` instead of `monument-annette-death`.
+  2. Add to margit's card intake validation: any candidate card with an Earth-Bet proper-noun slug component is auto-rejected with "rename per memory rubric §margit-referral slug convention."
+- **Cost:** small (rubric edit + margit validation rule). s01e01's memory.md slugs were renamed in this run's remediation pass.
+
+### URI-033 — NI rubric — one-clause vs doubled-register simile form
+
+- **Category:** Rubric tuning + schema-coherence.
+- **Source:** /and-facets s01e01 audit, 2026-05-11. Audit flag-014 (AP-SCAN). R2 metaphor judge defended `narrator:25 @98` (a two-clause simile: "King's Landing arrives at the senses the way a date in a book arrives at a hand that holds the book") as functional doubled-register content — the figure IS the foreknowledge-clamp channel, not ornamental. Audit AP-SCAN flagged the form: NI schema requires one-clause descriptions.
+- **Issue:** Rubric tension. Doubled-register figures may need two-clause similes to do their channel work (the comparison IS the registration-content, not an ornament on top). But the NI schema forbids multi-clause form. The judge and the auditor are both correct under their respective scopes.
+- **Action:** rubric clarification needed. Options:
+  1. Add a doubled-register exemption to NI's one-clause rule: when the figure IS the channel-content of a doubled-register registration, two-clause simile form is permitted.
+  2. Author a separate "compressed-figure" form rubric for doubled-register beats that satisfies one-clause discipline while preserving the figure's work.
+  3. Keep the one-clause rule strict and require doubled-register figures to be re-shaped to one-clause form (in this run, narrator:25 was rewritten to one-clause per option 3 by the fixer).
+- **Cost:** small (rubric text). The s01e01 case was resolved via option 3 in the remediation pass; the rubric question stands.
+
+### URI-034 — Frequency-band exemption taxonomy missing
+
+- **Category:** Rubric tuning (`design/shoot-v2/rubric-tensometer.md`).
+- **Source:** /and-facets s01e01 audit, 2026-05-11. Audit flag-005 (FREQUENCY-BAND HARD). Tens 2s rate = 17.4% (below 20% floor). The tens file's self-defense: "opening-window low-charge; structural per orchestrator-verdict." But the FREQUENCY-BAND rubric does not enumerate exemption classes — "opening-window low-charge" is a qualitative claim, not a rubric-enumerated exempted condition.
+- **Issue:** When the band breaches occur for structurally-defensible reasons (e.g. opening-window establishment-density, single-locale interludes, all-action chase sequences), the rubric currently has no way to declare exemption — every breach reads as a failure. Audit can't independently confirm the exemption because there's no positive list.
+- **Action:** add to tens rubric a §Exemptions section that enumerates the legitimate exempted conditions (opening-window-low-charge with criteria for what qualifies; interlude beats; chase/action sequences with explicit dramatic justification). Each exemption type has a positive test the audit can apply. Cross-reference orchestrator-critic for which exemptions get inherited from /and-season carry-forward state.
+- **Cost:** medium (requires actually working out the taxonomy from observed cases).
+
+### URI-035 — /and-facets bidirectional-loop criterion structurally not-validatable
+
+- **Category:** Orchestrator-critic card / pipeline shape.
+- **Source:** /and-facets s01e01 run, 2026-05-11. Orchestrator-critic verdict criterion 4 (bidirectional loop convergence) marked NOT-VALIDATED.
+- **Issue:** The /and-facets-orchestrator-critic card requires "at least one finding caught by both audit (mechanical) AND audience (adversarial) from independent paths." But the current /and-facets pipeline does NOT include an audience-adversarial phase — only the auditor. Criterion 4 is structurally guaranteed to be NOT-VALIDATED on every run, which pushes every run toward NOT-SUCCESSFUL even when the underlying work is healthy.
+- **Action:** three options:
+  1. Add an audience-adversarial pass to /and-facets (e.g. as a Phase 5.5 between audit and verdict, or as a parallel Phase 5 adversarial-mode auditor). Implements the bidirectional loop.
+  2. Mark criterion 4 NOT-APPLICABLE when the pipeline shape doesn't include an audience phase; revise the orchestrator-critic card to track 6 criteria instead of 7 for current-shape /and-facets runs.
+  3. Make the auditor's TASTE-FLAG class (class 10) the audience-adversarial path — define it as the audience equivalent that the audit emits internally. Then bidirectional convergence = TASTE-FLAG and HARD class agree on a finding. Requires audit reframing.
+- **Recommended:** option 2 short-term (revise the card to mark not-applicable in current shape), option 1 medium-term (add the audience phase as the shape evolves).
+- **Cost:** small (card-text edit) for option 2; medium-large (command-shape change) for option 1.
+
