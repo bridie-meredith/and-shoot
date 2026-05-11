@@ -171,4 +171,4 @@ seasons:
 
 active:
   season: s01
-  episode: s01e01
+  episode: s01e02
