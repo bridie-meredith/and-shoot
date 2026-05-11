@@ -1,4 +1,179 @@
-# Phase 2 continuity sweep — s01
+# Phase 2 continuity sweep — s01 — CYCLE 2
+
+## File-level verdict
+SEASON-CONTINUITY-OK
+
+## Cycle 2 sweep scope
+
+Targeted re-audit of five specific items following fixer and screen-writer changes since cycle 1. Full continuity axes confirmed against the post-fix bones file at `active-project/theater/proto-lines/s01.bones.md`.
+
+---
+
+## Re-check items — results
+
+### 1. ID 500 physical position (close-log gap)
+
+**Task:** Verify ID 500 (`taylor-hebert-flea-bottom closes the log`) fits between IDs 201 (open) and 205 (open) in the file's physical order.
+
+**Result:** CONFIRMED. Physical ordering in the file:
+
+```
+201 taylor-hebert-flea-bottom opens the log
+202 taylor-hebert-flea-bottom writes the entry
+203  [gap — deleted]
+204  [gap — deleted]
+500 taylor-hebert-flea-bottom closes the log
+501 oc-tanner-elder speaks to the carter
+502 the wasps relay the labor-web pass
+205 taylor-hebert-flea-bottom opens the log
+206 taylor-hebert-flea-bottom writes the entry
+207 taylor-hebert-flea-bottom closes the log
+```
+
+ID 500 is physically between ID 202 and ID 205. The log-close at 500 appears after the first write (202) and before the second open (205). The double-open fault is resolved. Log state is coherent across the full sequence: open → write → close (500) → [elder-carter exchange observable] → open → write → close. FAULT-PROP-STATE-01 is closed.
+
+---
+
+### 2. Maester slug transition
+
+**Task:** Verify `the maester` only at IDs ≤301; `oc-broken-maester` at IDs ≥303.
+
+**Result:** CONFIRMED. All pre-beat-16 maester references use "the maester":
+
+- ID 111: `the maester speaks to the room` — correct (beat 7)
+- ID 128: `the maester crosses the room` — correct (beat 7/8)
+- ID 129: `the maester speaks` — correct
+- ID 285: `the visitor speaks to the maester` — correct (beat 15, pre-naming)
+- ID 286: `the maester speaks to the visitor` — correct (beat 15, pre-naming)
+
+All post-beat-16 maester bones use `oc-broken-maester`:
+
+- IDs 303–313 (beat 16 close and beat 17 overlap): confirmed `oc-broken-maester` throughout
+- IDs 400–422 (beats 22): confirmed `oc-broken-maester` throughout
+
+No occurrence of "the maester" at ID 303 or later. FAULT-SLUG-DRIFT-01 is closed.
+
+---
+
+### 3. New bones IDs 495–503 — POV and observability
+
+**Task:** Verify all nine new bones are observable from Taylor's POV / insect network.
+
+**Result:** Eight of nine are clean. One ordering flag at ID 501.
+
+- **ID 495** (`taylor-hebert-flea-bottom speaks to oc-tanner-elder`) — beat 6 departure scene; Taylor is on-scene; elder already present at IDs 83–84. Observable. Clean.
+- **ID 496** (`taylor-hebert-flea-bottom stills`) — beat 16; Taylor at base; self-action following beetle relay at IDs 296–298. Observable. Clean.
+- **ID 497** (`taylor-hebert-flea-bottom faces the wall`) — beat 19; Taylor at base; post-expansion headache sequence. Observable. Clean.
+- **ID 498** (`taylor-hebert-flea-bottom faces the wall`) — beat 24; Taylor at base; same pattern. Observable. Clean.
+- **ID 499** (`taylor-hebert-flea-bottom straightens the spine`) — beat 24; Taylor at base. Observable. Clean.
+- **ID 500** (`taylor-hebert-flea-bottom closes the log`) — beat 10; Taylor self-action. Observable. Clean.
+- **ID 501** (`oc-tanner-elder speaks to the carter`) — beat 10; junction; see FLAG-RELAY-ORDER-01 below.
+- **ID 502** (`the wasps relay the labor-web pass`) — beat 10; relay bone. Establishes Taylor's access to the labor-web routing event. Clean as relay.
+- **ID 503** (`taylor-hebert-flea-bottom holds the feet`) — beat 22; Taylor at base; reaction to extended beetle relay. Observable. Clean.
+
+---
+
+### 4. Gap IDs 157, 158, 203, 204, 282, 283 — preserved
+
+**Task:** Verify gap-IDs are preserved (deletions leave gaps visible, no renumbering).
+
+**Result:** CONFIRMED. All six deletion gaps are physically present in the file as bare ID lines with no bone text:
+
+- IDs 157, 158: confirmed blank — appear as standalone `157` and `158` lines at the beat-9 start
+- IDs 203, 204: confirmed blank — appear as standalone `203` and `204` lines in the beat-10 transmission sequence
+- IDs 282, 283: confirmed blank — appear as standalone `282` and `283` lines in the beat-15 stairwell sequence
+
+No renumbering. Gap structure intact per schema.
+
+---
+
+### 5. New transmission bones at beat 10 — network-physics consistency
+
+**Task:** Verify IDs 500/501/502 are consistent with season-plan network-physics (Taylor routes through Flea Bottom labor web without identifying herself).
+
+**Result:** PASS with one ordering flag.
+
+The beat-10 plan commits: Taylor routes weather-pattern data and Watch-movement timing through the whisper chain anonymously; chain accepts and transmits; she reads as "odd but functional."
+
+ID 500 closes the log after the first write (weather-pattern data). ID 501 shows the elder relaying to the carter (chain operation). ID 502 shows wasps relaying the labor-web pass (Taylor's observational coverage of the routing). ID 205-207 is the second log sequence (Watch-movement timing write).
+
+Network-physics: the elder as relay node between Taylor and the labor web is consistent with beat 6 and beat 8 establishing the elder as her Flea Bottom interface. The carters as downstream recipients of weather-pattern data is consistent with beat 10 plan prose. Taylor's anonymity is preserved — the elder speaks to the carter (501), not Taylor. No identifying contact between Taylor and the carter.
+
+**Ordering concern (see FLAG-RELAY-ORDER-01):** ID 501 (elder speaks to carter, observed event) precedes ID 502 (wasps relay labor-web pass, relay bone). The relay logically enables the observation; ordering it after the observed event is structurally reversed. Junction fly coverage is pre-established from IDs 95–96 and active through prior beats, which partially mitigates the reversal, but this mirrors the class of issue that was escalated to FAULT-POV-LEAK-03 in cycle 1.
+
+---
+
+## Continuity axes — cycle 2 confirmation
+
+### 1. Cross-season state
+
+No changes to actor entries or exits introduced by the new bones. ID 495 (Taylor speaks to elder at departure) — the elder is present in that scene per existing IDs 83–84. ID 501 introduces "the carter" as an interaction partner for the elder at the junction. The elder at the junction is established. The carter is a functional-role entity (no location inconsistency; junction is within Taylor's established 300m range throughout beat 10). All existing cross-season state findings from cycle 1 remain valid: tanner-family visits coherent, clerk/messenger/middleman entries and exits clean, range expansion consistent.
+
+### 2. Prop chains
+
+- **The log:** FAULT-PROP-STATE-01 closed. Sequence at IDs 201–207 is now coherent with ID 500 closing between the two open-write-close cycles. All other log open/close sequences (21–23, 32–34, 58–60, 79–81, 101–103, 114–116, 124–126, 132–134, 153–155, 183–185, 196–198, 228–230, 242–244, 262–264, 276–278, 292–294, 299–301, 311–313, 326–328, 340–342, 357–359, 373–375, 396–398, 420–422, 434–436, 451–453, 473–475, 491–494) remain unchanged and coherent.
+- **Dock-side cluster:** Unchanged. Burn-down at IDs 389–390 coherent; beat 24 expansion correctly absent from dock-side; denouement at ID 494 logs "dock-side insect cluster still thin" — consistent.
+- **Sealed account (beat 25):** Unchanged. Coherent per cycle 1.
+- **Purse (beat 13):** FLAG-PROP-CLOSE-01 from cycle 1 unresolved — no close-purse bone added. Still flag only; not load-bearing.
+
+### 3. POV transitions
+
+The three cycle-1 faults are resolved:
+
+- **FAULT-POV-LEAK-01 (IDs 157–158):** Gap confirmed. Beat 9 opens cleanly at ID 159 with the tanner-family already at the junction — no south-gate observation claimed.
+- **FAULT-POV-LEAK-02 (IDs 282–283):** Gap confirmed. Stairwell sequence now: `visitor enters stairwell` (281) → [gaps 282, 283] → `visitor enters upper room` (284). The remaining ID 281 (`the visitor enters the stairwell`) claims only positional presence in the stairwell, which is within the mouse-run's "positional data" capability per the apothecary location card. Clean.
+- **FAULT-POV-LEAK-03 (IDs 203–204):** Gap confirmed. Recipient-state assertions removed. Beat 10 transmission bones (200, 501, 502) replace these without asserting what third parties received — the elder-to-carter exchange at 501 is an observed speech-act, not a recipient-state assertion.
+
+No new POV leaks introduced by IDs 495–503. Maester-speaks bones at IDs 285–286 remain "the maester" (pre-naming, correct). Self-action bones (496, 497, 498, 499, 503) are Taylor's own body; no POV issue.
+
+FLAG-INTERIOR-REGISTER-01 from cycle 1 (the `marks` vocabulary) is unaffected — those bones were at IDs 14, 17, 166, 170, 171; IDs 170 and 171 were fixed to `stills` per Group 4 fixer work; IDs 14 and 17 retain `stills` form as confirmed by fixer log. Flag condition resolved.
+
+### 4. Reachability
+
+No change to the start → end state path. Season open (tanner-village, 300m, IDs 1–82) to season close (Flea Bottom base, 600m, two external records, IDs 477–494) remains coherent. New bones introduce no new location traversals, no new range claims, no new record events. Beat 10 transmission bones (500–502) operate within the established 300m radius and do not imply range beyond what is established at that beat.
+
+---
+
+## Findings
+
+### Fault
+
+None new. All five cycle-1 faults are closed.
+
+---
+
+### Flags
+
+- **flag-NNN (carry-forward):** FLAG-PROP-CLOSE-01 — purse opened at ID 254, no close-purse bone added in fix round. Still inert and non-load-bearing. No change.
+
+- **FLAG-RELAY-ORDER-01**
+  - `id`: FLAG-RELAY-ORDER-01
+  - `type`: flag
+  - `what`: ID 501 (`oc-tanner-elder speaks to the carter`) precedes ID 502 (`the wasps relay the labor-web pass`). The observed social exchange at the junction (501) is stated before the relay bone establishing Taylor's access to the labor-web routing event (502).
+  - `why`: The relay-then-observation ordering rule grounds observed events in Taylor's insect coverage before asserting them as fact. The reversal here (observation before relay) mirrors the structure of FAULT-POV-LEAK-03 — which was classified as a fault in cycle 1 for the same reason (transmission vs. confirmed receipt; relay at 200 did not cover the receipt, and bones 203–204 asserted recipient state without a covering relay). Here the junction fly coverage is pre-established from IDs 95–96 and beat 7–8 relay activity, which reduces the severity — the junction is a covered surface, not an uncovered location. However, the labor-web pass relay (502) is specifically what grants Taylor access to the routing signal; 501 asserts the elder's speech as observed before that specific relay fires. Not escalated to fault given the pre-established junction coverage, but flagged for screen-writer awareness: at screen-write, the ordering should render as Taylor observing the elder's speech through established junction insects, with the labor-web routing becoming explicit afterward — not as two equally-grounded simultaneous observations.
+
+---
+
+## Cycle 2 verdict
+
+**SEASON-CONTINUITY-OK**
+
+All five cycle-1 faults are closed:
+- FAULT-POV-LEAK-01: closed (IDs 157–158 deleted, gap preserved)
+- FAULT-POV-LEAK-02: closed (IDs 282–283 deleted, gap preserved, stairwell entry ID 281 within mouse-run positional data capability)
+- FAULT-POV-LEAK-03: closed (IDs 203–204 deleted, gap preserved, new bones 501–502 replace without recipient-state assertion)
+- FAULT-SLUG-DRIFT-01: closed (oc-broken-maester confirmed at IDs 303+ throughout)
+- FAULT-PROP-STATE-01: closed (ID 500 close-log confirmed between IDs 202 and 205 in physical order)
+
+Carry-forward flags: FLAG-PROP-CLOSE-01 (purse, inert), FLAG-RELAY-ORDER-01 (new, non-blocking, screen-writer awareness item).
+
+No escalation warranted.
+
+---
+
+---
+
+# [ARCHIVED] Phase 2 continuity sweep — s01 — CYCLE 1
 
 ## File-level verdict
 SEASON-CONTINUITY-FAIL
@@ -59,7 +234,7 @@ SEASON-CONTINUITY-FAIL
 
 ---
 
-## Faults
+## Faults (cycle 1)
 
 - **FAULT-POV-LEAK-01:** IDs 157–158 — `oc-tanner-father enters King's Landing via the south gate` / `oc-tanner-mother enters King's Landing via the south gate`. Taylor is at or near the market-side junction in Flea Bottom. The south gate of King's Landing is outside her established 300m radius. No insect relay bone precedes these lines. These are offstage movements at an unobservable location narrated as fact without a relay establishing Taylor's access. Downstream consequence: at screen-write, these bones will produce narration that implies Taylor's POV extends to the south gate, which violates single-POV and the range ceiling. Route: **fixer** (line-level — insert relay bone or reframe from junction-arrival perspective, dropping south-gate entry bones and starting with the characters crossing the junction at IDs 159–160).
 
@@ -73,7 +248,7 @@ SEASON-CONTINUITY-FAIL
 
 ---
 
-## Flags (non-fault)
+## Flags (non-fault, cycle 1)
 
 - **FLAG-INTERIOR-REGISTER-01:** IDs 14, 17, 166, 170, 171 — `marks the stillness` / `marks the pivot angle` / `marks the half-second` / `marks the scan pattern` (twice, father and mother). The verb `marks` carries interior-cognition weight (implies a character noticing and registering something internally). From Taylor's POV, she can read behavioral tells but not internal registration. The bones may be using `marks` as shorthand for "exhibits a readable behavioral tell that Taylor interprets as the character registering X" — this is consistent with the clinical register and does not unambiguously require access to the tanner characters' interior. Not classified as fault. Flagged for screen-writer awareness: `marks` bones should render as Taylor reading visible behavioral indicators, not as direct access to another character's cognition.
 
