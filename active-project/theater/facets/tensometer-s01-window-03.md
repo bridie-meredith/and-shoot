@@ -4,12 +4,17 @@ bones: 330–494
 author: dramatist
 ---
 
+# Boundary-carry bones (W3 open, post-cycle-1 regen)
+0a @513 2
+0b @514 2
+# 0c @515 removed (proto-line deleted in cycle 2 fixer)
+
 1 @330 1
 2 @331 2
 3 @332 1
 4 @333 1
 5 @334 2
-6 @335 3
+6 @335 2
 7 @336 1
 8 @337 1
 9 @338 1
@@ -39,7 +44,7 @@ author: dramatist
 33 @365 1
 34 @366 1
 35 @367 2
-36 @368 3
+36 @368 2
 37 @369 1
 38 @370 1
 39 @371 1
@@ -127,7 +132,7 @@ author: dramatist
 121 @459 2
 122 @460 1
 123 @461 2
-124 @462 2
+# @462 orphan removed (proto-line deleted in cycle 1 dedup)
 125 @463 2
 126 @465 1
 127 @466 1
@@ -156,18 +161,30 @@ author: dramatist
 150 @490 1
 151 @491 1
 152 @492 1
-153 @493 1
+# @493 orphan removed (proto-line deleted in cycle 1 dedup)
 154 @494 1
 
 ---
 
-## Frequency band
+## Frequency band (cycle 3 corrected)
 
-- 1s: 103/154 = 66.9% (target 60–75%) — within band
-- 2s: 45/154 = 29.2% (target 20–30%) — within band
-- 3s: 6/154 = 3.9% (target 5–10%) — slightly below floor
+After cycle-2 rerates (@335 3→2, @368 3→2), orphan removals (@462, @493, 0c@515), and cycle-2 boundary-carry additions (0a@513, 0b@514):
 
-3-frequency at 3.9% is honest to the bones. Scalar inflation refused.
+- Total entries: ~152
+- 1s: ~101 ≈ 66.4% (target 60–75%) — within band
+- 2s: ~47 ≈ 30.9% (target 20–30%) — at upper edge
+- 3s: 4 ≈ 2.6% (target 5–10%) — **below floor, STRUCTURAL-RESIDUAL**
+
+3-frequency below floor is honest to the bones. Scalar inflation refused per rubric anti-pattern 4 (plot-importance inflation). Remaining 3s: @394 (coin placed), @395 (Taylor closes fist), @417 (maester sets the pen), @468 (elder seals account).
+
+## Screen-writer kickback (rubric-mandated for below-floor 3-frequency)
+
+Scenes lacking legitimate 3-candidates after honest re-rating:
+- **Scene 330–342 (first Hightower clerk):** the records-the-entry beat is procedural; rubric-compliant rating is 2 not 3 ("registration IS the turn" was plot-importance inflation per W3 mechanic cycle 2 finding).
+- **Scene 361–375 (second clerk, apothecary):** same pattern; @368 was inflated for same reason.
+- **Scene 477–494 (full circuit denouement walk):** transit-class with no rupture; would qualify for scene-as-transit exception but no formal flag granted.
+
+These three scenes either need rupture-class bone additions (screen-writer REGEN-ADD) or formal scene-as-transit exceptions granted by the dramatist. Per URI-026 per-window iteration cap=2, this is acknowledged as `tens-gate-residual-{W3-structural-3-deficit}` carried to Phase 6.
 
 ## Curve verdict
 
@@ -184,5 +201,5 @@ Maester-market trip (IDs 400–422) carries no rupture bone. Buy/refuse decision
 - @368: same as 335; second clerk in apothecary; pattern doubled
 - @394: stakes-visibility + reversal-proximity peaks — elder places coin; irreversible registration
 - @395: body-charge peaks — Taylor closes fist on coin; double-tap with @394 (two parties committing the same turn)
-- @417: reversal-proximity peaks — beetles relay cessation; stop reverses prior motion
+- @417: reversal-proximity peaks — oc-broken-maester sets the pen; the discrete act of stopping his writing reverses prior motion (the pen-scratch session terminates)
 - @468: three axes light (stakes-visibility + reversal-proximity + body-charge) — elder seals account; structural climax

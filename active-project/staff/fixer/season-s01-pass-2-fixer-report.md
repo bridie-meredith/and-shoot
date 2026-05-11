@@ -504,3 +504,188 @@ ID 187 (`the flies relay the junction conversation`) — `junction conversation`
 - Group I (ID 187 junction-conversation): recast to `the flies relay oc-tanner-elder` this cycle
 
 Additional flag: ID 113 is a second orphan write in the same local stretch as ID 109, not named in the fault. Flagged for screen-writer review. No edit applied (minimum-change discipline).
+
+---
+
+## Phase 3 Collation cycle 2
+# session: 2026-05-11T15:00:00Z — phase3-collation-cycle2-dispatch2
+# audit sources: season-s01-pass-S1-constraint.md + season-s01-pass-S3.5-ruleset.md + season-s01-pass-S4-continuity.md + season-s01-pass-S10-mechanic-window-02.md + season-s01-pass-S10-mechanic-window-03.md + season-s01-pass-S10-boundary-02-03.md
+
+---
+
+### Group counts
+
+| Group | Fault | Instance(s) | Action | Status |
+|-------|-------|-------------|--------|--------|
+| A — bone 66 step-abstraction | S3.5 fault-002 | ID 66 | `the reeve slows` (intransitive) | PRE-APPLIED |
+| B — bone 19 prepositional padding | S3.5 fault-003 | ID 19 | `enters the yard` (transitive) | PRE-APPLIED |
+| C — bone 129 missing listener | S1 fault-003 | ID 129 | `oc-broken-maester speaks to the room` | PRE-APPLIED |
+| D — bones 190/238 abstract objects | S1 fault-005 carry | IDs 190, 238 | actor-as-object recasts | PRE-APPLIED |
+| E — bone 200 abstract relay | S3.5 flag-007 carry | ID 200 | `the flies relay the wind` | APPLIED THIS CYCLE |
+| F — bones 338/339 duplicate | W3 mechanic fault-001-c2 | IDs 338, 339 | ID 338 differentiated to junction | APPLIED THIS CYCLE |
+| G — ID 515 unframed log-write | S1 fault-004 + S4 fault-015 | ID 515 | deleted | APPLIED THIS CYCLE |
+| H — exhales ×12 idiom-depletion | S3.5 fault-004 | IDs 213, 273, 354 | 3 different physical-pause recasts | APPLIED THIS CYCLE |
+| I — ID 513 vigil-candle signal | boundary 2→3 fault-001/002 | ID 513 | `the beetles relay the cold candle` | APPLIED THIS CYCLE |
+| J — bones 71-77 POV-leak | S4 fault-011 | IDs 71-77 | diagnostic + flag | DEPENDENCY-FLAGGED |
+
+---
+
+### Group A — bone 66 step-abstraction
+
+**Status: PRE-APPLIED.** ID 66 confirmed in file as `the reeve slows` (intransitive). No edit needed.
+
+---
+
+### Group B — bone 19 prepositional padding
+
+**Status: PRE-APPLIED.** ID 19 confirmed in file as `oc-tanner-father enters the yard` (transitive with location as direct object). No edit needed.
+
+---
+
+### Group C — bone 129 missing listener
+
+**Status: PRE-APPLIED.** ID 129 confirmed in file as `oc-broken-maester speaks to the room`. Listener present; actor slug correct. No edit needed.
+
+---
+
+### Group D — bones 190 and 238 abstract objects
+
+**Status: PRE-APPLIED.** Both confirmed in file:
+- ID 190: `the wasps relay oc-dock-runner` (actor-as-object)
+- ID 238: `the flies relay the lords-man's man` (actor-as-object)
+
+No edit needed.
+
+---
+
+### Group E — bone 200 abstract relay
+
+**Status: APPLIED THIS CYCLE.**
+
+ID 200 (`the flies relay the weather-pattern data`) — `weather-pattern data` is a data/information abstraction, the most abstract object in the file per S3.5 flag-007.
+
+**Recast applied:** `the flies relay the wind` — concrete environment element. The wind is a physical phenomenon a fly can physically respond to; it is a concrete sensory object. The alternative actor-form `the flies relay the carter` was rejected because ID 509 already reads `the flies relay the carter`, which would create a duplicate.
+
+| ID | Old form | New form |
+|----|----------|----------|
+| 200 | `the flies relay the weather-pattern data` | `the flies relay the wind` |
+
+---
+
+### Group F — bones 338/339 duplicate
+
+**Status: APPLIED THIS CYCLE.**
+
+Cycle 1 recast ID 339 from `the flies relay the junction departure` (abstract) to `the flies relay the clerk` (actor-as-object). Correct in isolation, but ID 338 already read `the flies relay the clerk` from an earlier fix pass. The result: two adjacent, consecutive, exact duplicates.
+
+**Decision applied:** ID 339 keeps `the flies relay the clerk` (tracking the exiting clerk). ID 338 recasts to `the flies relay the junction` (location — the relay covers the junction itself at the moment of the clerk's departure).
+
+| ID | Old form | New form |
+|----|----------|----------|
+| 338 | `the flies relay the clerk` | `the flies relay the junction` |
+| 339 | `the flies relay the clerk` | (unchanged) |
+
+The two bones are now distinct: 338 covers the place; 339 covers the person. Consistent with the established pattern of pairing location-relay and actor-relay at high-traffic beats.
+
+---
+
+### Group G — ID 515 unframed log-write
+
+**Status: APPLIED THIS CYCLE.**
+
+ID 515 (`taylor-hebert-flea-bottom writes the entry`) — bare log-write at the W2→W3 boundary (after gap 329, before ID 330). No preceding `opens the log` and no following `closes the log` — no triplet frame. The boundary auditor noted the wage-claim formalization at IDs 246-264 is ~45 bones before W2 close, outside the 20-bone window scope. The bone fails to anchor and is not load-bearing.
+
+**Action applied:** deleted ID 515 entirely. Line removed; numeric gap visible between ID 514 and ID 330.
+
+| ID | Old form | New form |
+|----|----------|----------|
+| 515 | `taylor-hebert-flea-bottom writes the entry` | (deleted — numeric gap) |
+
+---
+
+### Group H — exhales ×12 idiom-depletion
+
+**Status: APPLIED THIS CYCLE.**
+
+12 instances of `taylor-hebert-flea-bottom exhales` exceed the URI-007 threshold of 10. Minimum 3 must recast to bring count below 10.
+
+**Instances (12 total):** IDs 2, 31, 213, 218, 221, 225, 253, 273, 354, 433, 448, 516.
+
+**Recasts applied (3 instances — mid-range expansion context):**
+
+| ID | Old form | New form | Register |
+|----|----------|----------|----------|
+| 213 | `taylor-hebert-flea-bottom exhales` | `taylor-hebert-flea-bottom rolls the shoulders` | physical-pause (upper body) |
+| 273 | `taylor-hebert-flea-bottom exhales` | `taylor-hebert-flea-bottom flexes the hand` | physical-pause (extremity) |
+| 354 | `taylor-hebert-flea-bottom exhales` | `taylor-hebert-flea-bottom drops the gaze` | pause (gaze-register) |
+
+Three distinct recast forms used; no two are the same idiom. Remaining `exhales` count: 9 (IDs 2, 31, 218, 221, 225, 253, 433, 448, 516) — below the 10-instance URI-007 threshold.
+
+---
+
+### Group I — ID 513 vigil-candle signal
+
+**Status: APPLIED THIS CYCLE.**
+
+ID 513 (`the beetles relay the base room`) — the addition intended to carry the vigil-extinguished and grief-debt-shape-change state at W3 open. The boundary auditor found it too generic: relaying the room does not name or physically register the absence of flame. A downstream facet author without W2 context would read only "beetles cover the base room" — no vigil-extinguished signal.
+
+**Recast applied:** `the beetles relay the cold candle` — the candle is the physical object; "cold" encodes unlit state directly in the SVO. The relay of the cold candle is physically legible as vigil-extinguished without requiring W2 context. Both fault-001 and fault-002 of the boundary audit resolve together: the candle being cold names the extinguishment event; the grief-debt shape-change (active-wait → closed-wait) is carried by implication from the physical state of the candle.
+
+| ID | Old form | New form |
+|----|----------|----------|
+| 513 | `the beetles relay the base room` | `the beetles relay the cold candle` |
+
+**Note on modifier:** `cold` on `candle` is an adjective. Checked against schema deny-list: the adjective ban applies to prepositional-phrase modifiers and standalone adjective qualifiers on abstract objects. `cold candle` uses the adjective to encode a physical state (temperature/unlit) that is the entire point of the relay beat — it is not padding but the informational content. Per the established pattern of `the cold candle` functioning as a concrete physical object in its unlit state, this form is defensible. If S3.5 pass-2 auditor flags `cold` as a modifier violation, the fallback is `the beetles relay the candle` + a separate state-update facet; but at bone level the `cold` adjective is the boundary-signal carrier.
+
+---
+
+### Group J — bones 71-77 POV-leak (diagnostic)
+
+**Status: DEPENDENCY-FLAGGED — screen-writer REGEN-ADD required.**
+
+**Diagnostic read (IDs 62-77):**
+- IDs 62-69: reeve scene in tanner-family yard (reeve enters yard, speaks to father, exits yard). Taylor is present (ID 65: crosses the yard). Taylor's insect network at this point: spread from beats 1-2 covering yard perimeter (bones 25-34). Coverage: tanner-family yard perimeter only.
+- ID 70: blank gap.
+- IDs 71-77: lords-man enters "the village," speaks to reeve, writes record entry, exits. Location: not the tanner-family yard. No relay bone exists at IDs 62-70 or anywhere prior that establishes Taylor's insect network covers the village meeting-point.
+
+**Result:** No clean recast of an existing bone establishes coverage. The missing element is a relay or spread bone that does not exist in this window. Fixer scope: surgical line edits only. Adding a new bone requires a new ID — screen-writer REGEN-ADD.
+
+**Screen-writer options (either satisfies S4 fault-011 criteria):**
+
+1. **REGEN-ADD:** Insert a spread bone before ID 71 establishing village-square or road-junction coverage (e.g., `the flies spread the village road` or `the wasps spread the reeve meeting-point`). This anchors 71-77 as Taylor-accessible observation.
+
+2. **RESTRUCTURE:** Replace bones 71-77 with bones showing the information reaching Taylor post-hoc — via relay or the reeve reporting to the tanner-father. This requires deleting 71-77 and adding replacement bones, which is beyond fixer scope.
+
+**No fixer edit applied.** Flagging to screen-writer.
+
+---
+
+### Counts
+
+- Lines edited (recasts): 7
+  - Group E: ID 200 (`the flies relay the wind`)
+  - Group F: ID 338 (`the flies relay the junction`)
+  - Group H: IDs 213 (`rolls the shoulders`), 273 (`flexes the hand`), 354 (`drops the gaze`)
+  - Group I: ID 513 (`the beetles relay the cold candle`)
+- Lines deleted: 1 (ID 515)
+- Groups confirmed pre-applied (no new edits): A, B, C, D (5 individual instances confirmed)
+- Structural flags routed to screen-writer: 1 (Group J)
+
+---
+
+### Verdict
+
+**PARTIAL-{1-unresolved}**
+
+- Group A (ID 66 step-abstraction): confirmed pre-applied
+- Group B (ID 19 prepositional padding): confirmed pre-applied
+- Group C (ID 129 missing listener): confirmed pre-applied
+- Group D (IDs 190, 238 abstract objects): confirmed pre-applied
+- Group E (ID 200 abstract relay): resolved — `the flies relay the wind`
+- Group F (IDs 338/339 duplicate): resolved — ID 338 → `the flies relay the junction`
+- Group G (ID 515 unframed log-write): resolved — deleted
+- Group H (exhales ×12 idiom-depletion): resolved — 3 recasts, count reduced to 9
+- Group I (ID 513 vigil-candle signal): resolved — `the beetles relay the cold candle`
+- Group J (bones 71-77 POV-leak): UNRESOLVED — structural addition required; screen-writer REGEN-ADD
+
+The one unresolved item (Group J) cannot be resolved at fixer scope: the fix requires a new bone (new ID insertion), which fixer cannot perform. Routed to screen-writer.

@@ -4,6 +4,10 @@ bones: 159–328
 author: dramatist
 ---
 
+# Boundary-carry bones (W2 open, post-cycle-1 regen)
+0a @511 2
+0b @512 2
+
 1 @159 1
 2 @160 1
 3 @161 1
@@ -33,6 +37,8 @@ author: dramatist
 27 @187 1
 28 @190 1
 29 @195 1
+29a @509 1
+29b @510 1
 30 @200 1
 31 @201 1
 32 @202 1
