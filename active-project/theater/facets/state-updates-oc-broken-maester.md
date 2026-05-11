@@ -1,8 +1,5 @@
-facet: state-updates
-episode: s01e01
-author: dialogue-writer-fork:oc-broken-maester
-target-scope: actor:oc-broken-maester
----
+# slice file — facet: state-updates  episode: s01e01  author: dialogue-writer-fork:oc-broken-maester  target-scope: actor:oc-broken-maester
+# Plain comments here so build_cite_index does not stack YAML blocks in the consolidated state-updates.md (r3-signal-001).
 
 # (no entries)
 

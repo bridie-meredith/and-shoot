@@ -1,9 +1,5 @@
-facet: feeling
-episode: s01e01
-character: oc-tanner-mother
-author: r1-feeling-fork-oc-tanner-mother
-r2-pass: 2026-05-11 (graph-aware judge; B-locked-rubric v2; C-arbiter v2)
----
+# slice file — facet: feeling  episode: s01e01  character: oc-tanner-mother  author: r1-feeling-fork-oc-tanner-mother  r2-pass: 2026-05-11 (graph-aware judge; B-locked-rubric v2; C-arbiter v2)
+# Plain-comment header so build_cite_index does not stack YAML blocks in the consolidated feeling.md (r4-signal-001).
 
 1 @43 oc-tanner-mother: the hands still on the apron-front and the gaze holds the girl's face | expressed: partial
 2 @92 oc-tanner-mother: the mouth parts on a word and the word does not come | expressed: partial

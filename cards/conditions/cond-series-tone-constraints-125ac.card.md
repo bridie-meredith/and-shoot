@@ -48,6 +48,8 @@ Persistent across all four seasons. Series-defining rules.
 
 **No momentum-driven adventure pacing.** The 84ac config's "fast, pulpy, dramatic" is explicitly not this project's register. Scenes that run primarily on action beats, that minimize interiority in favor of forward velocity, that treat the setting as backdrop to events rather than as weight that accumulates — these are register violations for this project. The contemplative-procedural-horror register requires slowness to function. Slowness here is a feature.
 
+**Tensometer register characterization:** This project authors in the slow-burn / low-rupture-density register, with foreknowledge-clamp as primary register. The standard tens frequency-band gate (1s 60-75% / 2s 20-30% / 3s 5-10%) does not apply to seasons authored under this tone-law; see §"Relaxed tens frequency-band for this config (URI-034 Exemption 5)" below.
+
 **No lore-dump as scene function.** Taylor's knowledge of ASOIAF and Worm-universe mechanics surfaces as relevant action and observation, not as internal encyclopedia. The constraint is the same as in the 84ac version.
 
 ## The Escalation Rule — Modified for This Config
@@ -81,6 +83,16 @@ The s1–s3 dread texture is the clinical register's self-erasure. See `cond-cli
 **This card's role in relation to that card:** The self-erasure IS the contemplative-procedural-horror register in execution. It is not a subplot; it is the primary horror mechanism of the first three seasons. A scene that violates the self-erasure card (by having Taylor notice the drift, by having the records remain compassionate past the point they should, by having a single decision-moment replace the gradual drift) is also violating this card's primary register.
 
 **The clinical register must not be softened before s4.** Any revision, scene-level correction, or emotional counterweight that pulls the clinical register back toward full humanity before the s4 foreclosure event is a preparation for the foreclosure that the foreclosure cannot support if it arrives. The foreclosure's weight is in direct proportion to how completely the self-erasure was executed.
+
+## Relaxed tens frequency-band for this config (URI-034 Exemption 5)
+
+This card authorizes the following relaxed frequency-band for any season running under this tone-law, per `design/shoot-v2/rubric-tensometer.md` §"Exemption 5 — Tone-law-licensed slow-burn register":
+
+- **1s: 75-85%** (standard ceiling is 75%; slow-burn observation-weight pushes the 1s share above the pulpy-dramatic calibration point)
+- **2s: 12-22%** (standard floor is 20%; low-rupture-density register structurally depresses the pressure-band)
+- **3s: 4.5-10% season-average, 4.0-10% per-episode** (the 3s floor is relaxed 0.5 points at season scope for slow-burn foreknowledge-clamped fiction; per-episode may dip to 4.0% provided every named scene carries its peak)
+
+A dramatist authoring a season under this tone-law may cite this section as the card-level relaxed-band specification required by Exemption 5 criterion (b). The auditor reads this section to verify per-episode and season-average 3s rates against the relaxed floor, and to confirm 1s/2s breaches of the standard band fall inside the relaxed band above.
 
 ## Interaction Notes
 

@@ -1,9 +1,5 @@
-facet: state-updates
-episode: s01e01
-character: oc-tanner-mother
-author: dialogue-writer-fork:oc-tanner-mother
-scope: actor:oc-tanner-mother.* only
----
+# slice file — facet: state-updates  episode: s01e01  character: oc-tanner-mother  author: dialogue-writer-fork:oc-tanner-mother  scope: actor:oc-tanner-mother.* only
+# Plain comments here so build_cite_index does not stack YAML blocks in the consolidated state-updates.md (r3-signal-001).
 
 1 @5 actor:oc-tanner-mother.position: elsewhere-in-cottage -> in-the-room
 2 @36 actor:oc-tanner-mother.position: elsewhere-in-cottage -> in-the-room

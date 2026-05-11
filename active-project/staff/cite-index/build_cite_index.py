@@ -296,6 +296,16 @@ def consolidate_slices(facets_dir: Path) -> dict[str, tuple[Path, list[Path]]]:
         if not sources:
             continue
         out_lines: list[str] = []
+        # Emit a single top-of-file frontmatter for the consolidated target
+        # (r3-signal-001 fix). Slices are expected to use plain-comment
+        # headers (not YAML); the consolidator owns the canonical frontmatter.
+        source_slugs = [src.stem[len(slice_prefix) + 1:] for src in sources]
+        out_lines.append("---")
+        out_lines.append(f"facet: {slice_prefix}")
+        out_lines.append(f"sources: [{', '.join(source_slugs)}]")
+        out_lines.append("note: consolidated by build_cite_index from per-source slices. Single top-of-file frontmatter per r3-signal-001.")
+        out_lines.append("---")
+        out_lines.append("")
         next_id = 1
         # Build a remap table so we can rewrite stale-cites later if needed,
         # though authors should cite their own entries with slice-local IDs

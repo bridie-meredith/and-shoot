@@ -1,8 +1,5 @@
-facet: state-updates
-episode: s01e01
-author: dialogue-writer-fork-taylor-hebert-flea-bottom
-target-class: actor:taylor-hebert-flea-bottom
----
+# slice file — facet: state-updates  episode: s01e01  author: dialogue-writer-fork-taylor-hebert-flea-bottom  target-class: actor:taylor-hebert-flea-bottom
+# Plain comments here so build_cite_index does not stack YAML blocks in the consolidated state-updates.md (r3-signal-001).
 
 1 @22 actor:taylor-hebert-flea-bottom.research_log_active: false -> true
 # field flips at first log-write (@22); persists through episode close (every subsequent log open/write/close beat depends on log being active). @21 is open-without-content; the entry-write at @22 is the flip-beat (anti-pattern #7 avoidance).

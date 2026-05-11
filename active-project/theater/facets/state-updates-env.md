@@ -1,8 +1,5 @@
-facet: state-updates-env
-episode: s01e01
-author: studio
-scope: environmental + location + prop (actor state excluded — per-character forks)
----
+# slice file — facet: state-updates-env  episode: s01e01  author: studio  scope: environmental + location + prop (actor state excluded — per-character forks)
+# The consolidated state-updates.md carries the single top-level frontmatter for downstream tooling per r3-signal-001. Plain comments here so the consolidator does not stack YAML blocks.
 
 # State-Updates — Environmental Scope
 

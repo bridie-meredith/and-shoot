@@ -1,9 +1,5 @@
-facet: feeling
-episode: s01e01
-character: oc-tanner-elder
-author: feeling-author-oc-tanner-elder
-r2-pass: judge (2026-05-11)
----
+# slice file — facet: feeling  episode: s01e01  character: oc-tanner-elder  author: feeling-author-oc-tanner-elder  r2-pass: judge (2026-05-11)
+# Plain-comment header so build_cite_index does not stack YAML blocks in the consolidated feeling.md (r4-signal-001).
 
 1 @90 oc-tanner-elder: his eyes move past her to the road before she lifts the pack | expressed: partial
 2 @151 oc-tanner-elder: his shoulder turns from the exchange before her answer lands | expressed: partial

@@ -1,9 +1,12 @@
-# source: env
-facet: state-updates-env
-episode: s01e01
-author: studio
-scope: environmental + location + prop (actor state excluded — per-character forks)
 ---
+facet: state-updates
+sources: [env, oc-broken-maester, oc-dock-runner, oc-tanner-elder, oc-tanner-father, oc-tanner-mother, taylor-hebert-flea-bottom]
+note: consolidated by build_cite_index from per-source slices. Single top-of-file frontmatter per r3-signal-001.
+---
+
+# source: env
+# slice file — facet: state-updates-env  episode: s01e01  author: studio  scope: environmental + location + prop (actor state excluded — per-character forks)
+# The consolidated state-updates.md carries the single top-level frontmatter for downstream tooling per r3-signal-001. Plain comments here so the consolidator does not stack YAML blocks.
 
 # State-Updates — Environmental Scope
 
@@ -104,11 +107,8 @@ studio.doors_and_shutters.tanner-room-door opened at @15. No subsequent beat clo
 - No narrator-interest co-citation required (studio.* and prop:* entries; no actor:POV entries)
 
 # source: oc-broken-maester
-facet: state-updates
-episode: s01e01
-author: dialogue-writer-fork:oc-broken-maester
-target-scope: actor:oc-broken-maester
----
+# slice file — facet: state-updates  episode: s01e01  author: dialogue-writer-fork:oc-broken-maester  target-scope: actor:oc-broken-maester
+# Plain comments here so build_cite_index does not stack YAML blocks in the consolidated state-updates.md (r3-signal-001).
 
 # (no entries)
 
@@ -171,11 +171,8 @@ target-scope: actor:oc-broken-maester
 # seams flagged: none (see authoring notes)
 
 # source: oc-dock-runner
-facet: state-updates
-episode: s01e01
-target-class: actor:oc-dock-runner
-author: dialogue-writer-fork:oc-dock-runner (R1)
----
+# slice file — facet: state-updates  episode: s01e01  target-class: actor:oc-dock-runner  author: dialogue-writer-fork:oc-dock-runner (R1)
+# Plain comments here so build_cite_index does not stack YAML blocks in the consolidated state-updates.md (r3-signal-001).
 
 16 @141 actor:oc-dock-runner.position: loc-flea-bottom -> fish-gate-margin
 17 @144 actor:oc-dock-runner.position: fish-gate-margin -> loc-flea-bottom
@@ -204,11 +201,8 @@ author: dialogue-writer-fork:oc-dock-runner (R1)
 #   SEAM-3 @149 "approaches the market-side junction" — anti-pattern #7 (pre-emption) consideration: "approaches" can read as approach-not-arrival. Resolved by forward-reference: @150 the runner speaks to the elder at the junction; the position-flip must land by @150. Firing on @149 as the arrival-beat (approach terminates with arrival in this SVO frame); @150 would also be defensible. Held at @149.
 
 # source: oc-tanner-elder
-facet: state-updates
-episode: s01e01
-author: dialogue-writer-fork-oc-tanner-elder
-scope: actor:oc-tanner-elder
----
+# slice file — facet: state-updates  episode: s01e01  author: dialogue-writer-fork-oc-tanner-elder  scope: actor:oc-tanner-elder
+# Plain comments here so build_cite_index does not stack YAML blocks in the consolidated state-updates.md (r3-signal-001).
 
 20 @85 actor:oc-tanner-elder.location: loc-flea-bottom -> tanner-family-yard
 21 @95 actor:oc-tanner-elder.location: tanner-family-yard -> on-road-to-flea-bottom
@@ -223,11 +217,8 @@ scope: actor:oc-tanner-elder
 # Skips: @86 (speaks-to, no field change), @88 (Taylor subject, no elder change), @90 (routes-Taylor enacts pre-committed placement; no elder-side field flip; tens=3 but consumer-side validator @64-class does not apply — this is not a registration of an irreversible record-mutation against the elder), @96 (durative motion, location already flipped at @95), @148 dual-fire risk: @148 is elder-subject "speaks to dock-runner" which is the first observable beat at market-side; the location-flip is anchored here; the speech-verb itself does not change location. @150 (dock-runner speaks to elder), @151 (elder speaks to Taylor) — same location as @148, no further flips.
 
 # source: oc-tanner-father
-facet: state-updates
-episode: s01e01
-target-scope: actor:oc-tanner-father
-author: dialogue-writer-fork:oc-tanner-father
----
+# slice file — facet: state-updates  episode: s01e01  target-scope: actor:oc-tanner-father  author: dialogue-writer-fork:oc-tanner-father
+# Plain comments here so build_cite_index does not stack YAML blocks in the consolidated state-updates.md (r3-signal-001).
 
 23 @4 actor:oc-tanner-father.location-sub: outside-tanner-room -> tanner-room
 # field-extension: location-sub (room/yard sub-granularity within loc-tanner-village; load-bearing for Scene A standoff geometry and Scene D yard reentry)
@@ -235,12 +226,8 @@ author: dialogue-writer-fork:oc-tanner-father
 # persistent through episode close; load-bearing for Scenes E/F/G/H (reeve interaction, task-routing, Taylor's departure)
 
 # source: oc-tanner-mother
-facet: state-updates
-episode: s01e01
-character: oc-tanner-mother
-author: dialogue-writer-fork:oc-tanner-mother
-scope: actor:oc-tanner-mother.* only
----
+# slice file — facet: state-updates  episode: s01e01  character: oc-tanner-mother  author: dialogue-writer-fork:oc-tanner-mother  scope: actor:oc-tanner-mother.* only
+# Plain comments here so build_cite_index does not stack YAML blocks in the consolidated state-updates.md (r3-signal-001).
 
 25 @5 actor:oc-tanner-mother.position: elsewhere-in-cottage -> in-the-room
 26 @36 actor:oc-tanner-mother.position: elsewhere-in-cottage -> in-the-room
@@ -257,11 +244,8 @@ scope: actor:oc-tanner-mother.* only
 # - @92 (faces the door at Taylor's departure with the elder): NONE — transient orientation; witnessing Taylor's gate-crossing is perception, not a tracked mother-state field. Hard fence #3 ("She does not ask Taylor to explain") reinforces silence here — her witnessing does not commit to a posture-state-shift.
 
 # source: taylor-hebert-flea-bottom
-facet: state-updates
-episode: s01e01
-author: dialogue-writer-fork-taylor-hebert-flea-bottom
-target-class: actor:taylor-hebert-flea-bottom
----
+# slice file — facet: state-updates  episode: s01e01  author: dialogue-writer-fork-taylor-hebert-flea-bottom  target-class: actor:taylor-hebert-flea-bottom
+# Plain comments here so build_cite_index does not stack YAML blocks in the consolidated state-updates.md (r3-signal-001).
 
 28 @22 actor:taylor-hebert-flea-bottom.research_log_active: false -> true
 # field flips at first log-write (@22); persists through episode close (every subsequent log open/write/close beat depends on log being active). @21 is open-without-content; the entry-write at @22 is the flip-beat (anti-pattern #7 avoidance).

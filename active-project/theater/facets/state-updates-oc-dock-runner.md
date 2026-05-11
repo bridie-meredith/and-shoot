@@ -1,8 +1,5 @@
-facet: state-updates
-episode: s01e01
-target-class: actor:oc-dock-runner
-author: dialogue-writer-fork:oc-dock-runner (R1)
----
+# slice file — facet: state-updates  episode: s01e01  target-class: actor:oc-dock-runner  author: dialogue-writer-fork:oc-dock-runner (R1)
+# Plain comments here so build_cite_index does not stack YAML blocks in the consolidated state-updates.md (r3-signal-001).
 
 1 @141 actor:oc-dock-runner.position: loc-flea-bottom -> fish-gate-margin
 2 @144 actor:oc-dock-runner.position: fish-gate-margin -> loc-flea-bottom
