@@ -156,13 +156,18 @@ author: dramatist
 
 ---
 
-## Frequency band
+## Frequency band (cycle 2 corrected)
 
-- 3s: 7/145 = ~4.8% (target 5–10%) — marginally below floor
-- 2s: 23/145 = ~15.9% (target 20–30%) — below floor
-- 1s: 115/145 = ~79.3% (target 60–75%) — above ceiling
+After cycle-1 regen + cycle-2 tens additions (@516 rung 2, @517 rung 2):
+
+- Total entries: 147
+- 3s: 7/147 ≈ 4.8% (target 5–10%) — marginally below floor
+- 2s: 26/147 ≈ 17.7% (target 20–30%) — below floor
+- 1s: 114/147 ≈ 77.6% (target 60–75%) — above ceiling
 
 Misses are real but reflect structurally appropriate low-charge establishing material. Window 1 is opening; village-domestic + KL-arrival scenes are inherently low-charge. Scalar inflation refused.
+
+**Scene L kickback (KICKBACK-3) unresolved** — forwarded to Phase 6 as `tens-gate-residual-{W1-Scene-L-no-rupture}` per URI-026 per-window iteration cap=2.
 
 ## Curve verdict
 
