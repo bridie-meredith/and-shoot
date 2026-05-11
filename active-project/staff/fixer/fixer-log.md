@@ -1,3 +1,313 @@
+## SESSION-END — 2026-05-11T15:07:00Z — phase3-collation-cycle2-dispatch2
+findings-applied: 7 edits/deletions (Group E: ID 200 recast; Group F: ID 338 recast; Group G: ID 515 deleted; Group H: IDs 213/273/354 recast ×3; Group I: ID 513 recast); Groups A/B/C/D confirmed pre-applied from prior cycle-2 session
+findings-skipped: 0 individual fault instances skipped
+exit: DEPENDENCY-FLAGGED — Group J (bones 71-77 POV-leak) requires screen-writer REGEN-ADD; structural addition beyond fixer scope
+
+## SESSION-START — 2026-05-11T15:00:00Z — phase3-collation-cycle2-dispatch2
+dispatch: Phase 3 Collation cycle 2 — Groups A–J: bone 66 step-abstraction, bone 19 prepositional padding, bone 129 missing listener, bones 190/238 abstract objects, bone 200 abstract relay, bones 338/339 duplicate, ID 515 delete, exhales×12 idiom-depletion recast×3 (IDs 213/273/354), ID 513 vigil-candle signal, bones 71-77 POV-leak diagnostic
+target: active-project/theater/proto-lines/s01.bones.md
+audit-report: season-s01-pass-S1-constraint.md + season-s01-pass-S3.5-ruleset.md + season-s01-pass-S4-continuity.md + season-s01-pass-S10-mechanic-window-02.md + season-s01-pass-S10-mechanic-window-03.md + season-s01-pass-S10-boundary-02-03.md
+findings-queued: 10 groups (A–J) covering ~16 individual fault/recast instances
+
+## SESSION-START — 2026-05-11T14:00:00Z — phase3-collation-cycle2
+dispatch: Phase 3 Collation cycle 2 — Groups A–J surgical recasts (bone 66 step-abstraction, bone 19 prepositional padding, bone 129 missing listener, bones 190/238 abstract objects, bone 200 abstract relay, bones 338/339 duplicate, ID 515 delete, exhales×12 idiom-depletion recast×3, ID 513 vigil-candle signal, bones 71-77 POV-leak diagnostic)
+target: active-project/theater/proto-lines/s01.bones.md
+audit-report: season-s01-pass-S1-constraint.md + season-s01-pass-S3.5-ruleset.md + season-s01-pass-S4-continuity.md + season-s01-pass-S10-mechanic-window-02.md + season-s01-pass-S10-mechanic-window-03.md + season-s01-pass-S10-boundary-02-03.md
+findings-queued: 10 groups (A–J) covering ~16 individual fault instances
+
+## GROUP-J-c2 — DEPENDENCY-FLAGGED — 2026-05-11T15:06:00Z
+fault: bones 71-77 (lord's-man record sequence, beat 5) — no relay anchor before or accompanying this sequence; Taylor's insects cover tanner-family yard perimeter only at this point (bones 25-34); village location not covered (S4 fault-011)
+scope: escalate to screen-writer
+change: none applied — diagnostic result: no relay bone exists at IDs 62-70 or earlier that establishes insect coverage of the village meeting-point where lord's-man speaks to reeve and writes the record. ID 70 is a blank gap. IDs 62-69 are the reeve-in-yard scene (tanner-family yard location). The lords-man sequence at 71-77 occurs at a different location ("the village," implied off-perimeter) with no coverage anchor. A clean recast of an existing bone cannot establish coverage — the missing element is a network-spread or relay bone that does not exist. This requires REGEN-ADD (new bone) by screen-writer. Fixer cannot introduce new IDs.
+criteria met: no — structural addition required; screen-writer REGEN-ADD: insert a relay or spread bone establishing Taylor's insect coverage reaches the reeve-lord's-man meeting location before ID 71, OR restructure 71-77 so the lord's-man information reaches Taylor post-hoc (via relay or the reeve mentioning it). Both options require a new bone or restructure beyond fixer scope.
+
+## GROUP-I-c2 — RESOLVED — 2026-05-11T15:05:00Z
+fault: ID 513 `the beetles relay the base room` — too generic; does not signal absence-of-flame or vigil-extinguished state at W3 open (boundary 2→3 fault-001/002)
+scope: line
+change: `the beetles relay the base room` → `the beetles relay the cold candle` (concrete object in unlit state via "cold"; physically legible vigil-extinguished signal without reading W2)
+criteria met: yes
+
+## GROUP-H-c2 — RESOLVED — 2026-05-11T15:04:00Z
+fault: `taylor-hebert-flea-bottom exhales` ×12 instances — URI-007 idiom-depletion threshold 10; minimum 3 must recast (S3.5 fault-004)
+scope: line
+change: ID 213 → `taylor-hebert-flea-bottom rolls the shoulders`; ID 273 → `taylor-hebert-flea-bottom flexes the hand`; ID 354 → `taylor-hebert-flea-bottom drops the gaze`; remaining 9 instances (IDs 2, 31, 218, 221, 225, 253, 433, 448, 516) unchanged; total `exhales` now 9, below 10-instance threshold
+criteria met: yes
+
+## GROUP-G-c2 — RESOLVED — 2026-05-11T15:03:00Z
+fault: ID 515 `taylor-hebert-flea-bottom writes the entry` — unframed log-write, no opens/closes triplet; wage-claim carry deemed out-of-scope by boundary auditor (S1 fault-004 + S4 fault-015)
+scope: line
+change: deleted ID 515 entirely (line removed; numeric gap preserved between ID 514 and ID 330)
+criteria met: yes
+
+## GROUP-F-c2 — RESOLVED — 2026-05-11T15:02:00Z
+fault: IDs 338 and 339 both read `the flies relay the clerk` — exact duplicate introduced by cycle 1 recast (W3 mechanic fault-001-c2)
+scope: line
+change: ID 338 → `the flies relay the junction` (location; relay covers junction itself at clerk-exit moment); ID 339 remains `the flies relay the clerk` (track exiting clerk)
+criteria met: yes
+
+## GROUP-E-c2 — RESOLVED — 2026-05-11T15:01:00Z
+fault: ID 200 `the flies relay the weather-pattern data` — abstract data-object (S3.5 flag-007 carry)
+scope: line
+change: `the flies relay the weather-pattern data` → `the flies relay the wind` (concrete environment element; avoids duplicate with ID 509 `the flies relay the carter`)
+criteria met: yes
+
+## GROUP-D-c2 — RESOLVED — 2026-05-11T14:04:00Z
+fault: IDs 190 and 238 — abstract activity-abstraction objects (S1 fault-005 carry)
+scope: line
+change: ID 190 `the wasps relay the Fish Gate margin traffic` → `the wasps relay oc-dock-runner` (actor-as-object; oc-dock-runner is the tracked entity at Fish Gate margin per surrounding bones 138-143); ID 238 `the flies relay the alley event` → `the flies relay the lords-man's man` (actor-as-object; lords-man's man is the actor driving the eviction at this beat per bones 234-235)
+criteria met: yes
+
+## GROUP-C-c2 — RESOLVED — 2026-05-11T14:03:00Z
+fault: ID 129 `the maester speaks` — missing listener (S1 fault-003) + wrong subject slug (S1 fault-002 co-requirement)
+scope: line
+change: `the maester speaks` → `oc-broken-maester speaks to the room` (listener added; subject corrected to actor slug; `the room` licensed as `the <noun>` for unnamed diffuse environment element)
+criteria met: yes
+
+## GROUP-B-c2 — RESOLVED — 2026-05-11T14:02:00Z
+fault: ID 19 `oc-tanner-father steps toward the yard` — `toward the yard` is unlicensed directional prepositional phrase (FAULT-FORM-MODIFIER)
+scope: line
+change: `oc-tanner-father steps toward the yard` → `oc-tanner-father enters the yard` (transitive with location as direct object)
+criteria met: yes
+
+## GROUP-A-c2 — RESOLVED — 2026-05-11T14:01:00Z
+fault: ID 66 `the reeve slows the step` — `the step` is motion-unit abstraction (FAULT-FORM-INTERIORITY)
+scope: line
+change: `the reeve slows the step` → `the reeve slows` (intransitive; deceleration is the discrete observable act)
+criteria met: yes
+
+## SESSION-START — 2026-05-11T13:00:00Z — phase3-collation-cycle1
+dispatch: Phase 3 Collation cycle 1 — Groups A–I surgical recasts (holds-license, headache-subject×4, neighbors×2, sealed-modifier, duplicate-pairs×4, abstract-relay×6, orphan-log-write, walks-the-pathnoun policy, abstract-junction-conversation)
+target: active-project/theater/proto-lines/s01.bones.md
+audit-report: season-s01-pass-S1-constraint.md + season-s01-pass-S3.5-ruleset.md + season-s01-pass-S10-mechanic-window-01/02/03.md
+findings-queued: ~25 individual fault instances across Groups A–I
+
+## GROUP-A-phase3 — RESOLVED (PRE-APPLIED) — 2026-05-11T13:01:00Z
+fault: ID 166 `holds the step` — FAULT-FORM-NON-ACTION-VERB
+scope: line
+change: confirmed pre-applied — file reads `oc-tanner-father stills`
+criteria met: yes
+
+## GROUP-B-phase3 — RESOLVED (PRE-APPLIED) — 2026-05-11T13:02:00Z
+fault: IDs 226, 274, 355, 449 `the headache wakes taylor-hebert-flea-bottom` — FAULT-FORM-INTERIORITY ×4
+scope: line
+change: confirmed pre-applied — all four IDs read `taylor-hebert-flea-bottom wakes` (intransitive)
+criteria met: yes
+
+## GROUP-C-phase3 — RESOLVED (PRE-APPLIED) — 2026-05-11T13:03:00Z
+fault: IDs 237, 241 `the neighbors` collective plural — FAULT-FORM-MULTI-SUBJECT
+scope: line
+change: confirmed pre-applied — ID 237 reads `the neighbor presses the doorway`; ID 241 reads `the neighbor withdraws`
+criteria met: yes
+
+## GROUP-D-phase3 — RESOLVED (PRE-APPLIED) — 2026-05-11T13:04:00Z
+fault: ID 469 `the sealed account` — FAULT-FORM-MODIFIER
+scope: line
+change: confirmed pre-applied — file reads `the middleman takes the account` (no `sealed`)
+criteria met: yes
+
+## GROUP-E-phase3 — RESOLVED (PRE-APPLIED) — 2026-05-11T13:05:00Z
+fault: duplicate pairs IDs 352/353, 446/447, 461/462, 492/493
+scope: line
+change: confirmed pre-applied — IDs 353, 447, 462, 493 absent from file (numeric gaps after 352, 446, 461, 492)
+criteria met: yes
+
+## GROUP-F-phase3 — RESOLVED (PRE-APPLIED) — 2026-05-11T13:06:00Z
+fault: IDs 339, 387, 388, 416, 417, 471 abstract-object relay beats — FAULT-FORM-INTERIORITY ×6
+scope: line
+change: confirmed pre-applied — ID 339 `the flies relay the clerk`; ID 387 `the wasps relay taylor-hebert-flea-bottom`; ID 388 `the wasps relay oc-tanner-elder`; ID 416 `the beetles relay the pen-scratch`; ID 417 `oc-broken-maester sets the pen`; ID 471 `the flies relay the middleman`
+criteria met: yes
+
+## GROUP-G-phase3 — RESOLVED — 2026-05-11T13:07:00Z
+fault: ID 109 `taylor-hebert-flea-bottom writes the entry` orphan log-write (no preceding opens-the-log) — S1 fault-003
+scope: line
+change: deleted ID 109 (line removed; numeric gap between IDs 108 and 110); complete log triplet exists at IDs 114/115/116 in same local stretch; deletion is correct per task decision rule
+criteria met: yes
+
+## GROUP-H-phase3 — POLICY-DOCUMENTED — 2026-05-11T13:08:00Z
+fault: `walks the <path-noun>` ×11 — S1 fault-005 flagged pattern
+scope: line
+change: no edit — defensible idiomatic usage per task brief (perimeter/boundary/alley as legitimate direct objects of `walks`; structurally parallel to `enters the yard`); policy documented in fixer report
+criteria met: yes (policy decision acknowledged, no change warranted)
+
+## GROUP-I-phase3 — RESOLVED — 2026-05-11T13:09:00Z
+fault: ID 187 `the flies relay the junction conversation` — `junction conversation` is abstract event-noun (FAULT-FORM-INTERIORITY)
+scope: line
+change: `the flies relay the junction conversation` → `the flies relay oc-tanner-elder` (actor-as-object; elder is the participant being tracked at the junction)
+criteria met: yes
+
+## SESSION-END — 2026-05-11T13:10:00Z — phase3-collation-cycle1
+findings-applied: 2 edits to file (Group G deletion of ID 109; Group I recast of ID 187); Groups A/B/C/D/E/F confirmed pre-applied (0 new edits needed); Group H policy-documented (no edit by design)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-11T12:00:00Z — phase3-collation-cycle1
+dispatch: Phase 3 Collation cycle 1 — Groups A–I (holds-license, headache-subject×4, the-neighbors×2, sealed-modifier, duplicate-pairs×4, abstract-relay×6, orphan-log-write, walks-the-pathnoun policy, abstract-junction-conversation)
+target: active-project/theater/proto-lines/s01.bones.md
+audit-report: season-s01-pass-S1-constraint.md + season-s01-pass-S3.5-ruleset.md + season-s01-pass-S10-mechanic-window-01/02/03.md
+findings-queued: ~25 individual fault instances across Groups A–I
+
+## GROUP-A — RESOLVED — 2026-05-11T12:05:00Z
+fault: ID 166 `oc-tanner-father holds the step` — FAULT-FORM-NON-ACTION-VERB (unlicensed holds)
+scope: line
+change: `holds the step` → `stills` (intransitive, joins established pattern)
+criteria met: yes
+
+## GROUP-B — RESOLVED — 2026-05-11T12:06:00Z
+fault: IDs 226, 274, 355, 449 `the headache wakes taylor-hebert-flea-bottom` — FAULT-FORM-INTERIORITY ×4
+scope: line
+change: all 4 instances → `taylor-hebert-flea-bottom wakes` (intransitive; replace_all used; headache moves to feel-flag facet)
+criteria met: yes
+
+## GROUP-C — RESOLVED — 2026-05-11T12:07:00Z
+fault: IDs 237, 241 `the neighbors press the doorways` / `the neighbors withdraw` — FAULT-FORM-MULTI-SUBJECT
+scope: line
+change: ID 237 `the neighbors press the doorways` → `the neighbor presses the doorway`; ID 241 `the neighbors withdraw` → `the neighbor withdraws`
+criteria met: yes
+
+## GROUP-D — RESOLVED — 2026-05-11T12:08:00Z
+fault: ID 469 `the middleman takes the sealed account` — FAULT-FORM-MODIFIER (`sealed` adjective)
+scope: line
+change: `the sealed account` → `the account` (sealed state registered at ID 468; belongs in state-update facet)
+criteria met: yes
+
+## GROUP-E — RESOLVED — 2026-05-11T12:09:00Z
+fault: IDs 352/353, 446/447, 492/493, 461/462 — exact duplicate pairs (FAULT-FORM-structural-duplication)
+scope: line
+change: deleted ID 353 (line removed; gap visible after 352); deleted ID 447 (gap after 446); deleted ID 462 (gap after 461); deleted ID 493 (gap after 492)
+criteria met: yes
+
+## SESSION-START — 2026-05-11T11:00:00Z — season-s01-pass-2-fix-cycle3
+dispatch: resolve all cycle-3 faults — Group A (15 form-faults + 2 border flags from constraint cycle-2), Group B (INERT-STRETCH-BEAT22 IDs 416-419), Group C (cape-fic compression beats 14/19/24 + beat 10 log cycle), Group D (relay-mapping compression W15)
+target: active-project/theater/proto-lines/s01.bones.md
+audit-report: active-project/staff/auditor/season-s01-pass-2-constraint.md + season-s01-pass-2-shape.md + season-s01-pass-2-trim-cape-fic-reader.md + season-s01-pass-2-trim-dark-fantasy-reader.md
+findings-queued: 15 form-faults + 2 border flags + 1 inert-stretch + compression Group C + compression Group D
+
+## SESSION-END — 2026-05-11T11:30:00Z — season-s01-pass-2-fix-cycle3
+findings-applied: 14 line deletions (Group C: 11 lines; Group D: 2 lines; confirmed Group A/B pre-applied); Group A 17 items confirmed in file; Group B 2 items confirmed in file
+findings-skipped: 0 — all task items processed; note: dark-fantasy-reader body-differentiation bone for beat 14 is a screen-writer/regen task (requires new ID), not within fixer scope
+exit: CLEAN
+
+## SESSION-START — 2026-05-11T10:00:00Z — season-s01-pass-2-fix-cycle3
+dispatch: resolve all cycle-2 faults — Group A (15 form faults + 2 border flags), Group B (INERT-STRETCH-BEAT22 IDs 416–419), Group C (cape-fic compression beats 14/19/24 + beat 10 log cycle), Group D (relay-mapping compression W15)
+target: active-project/theater/proto-lines/s01.bones.md
+audit-report: active-project/staff/auditor/season-s01-pass-2-constraint.md + season-s01-pass-2-shape.md + season-s01-pass-2-trim-cape-fic-reader.md + season-s01-pass-2-trim-dark-fantasy-reader.md
+findings-queued: 15 form-faults + 2 border flags + 1 inert-stretch + compression Group C + compression Group D
+
+## GROUP-D — RESOLVED — 2026-05-11T11:20:00Z
+fault: relay-mapping at W15 (IDs 187-192 region) had 4 relay bones; cape-fic demands compress to 2
+scope: line
+change: deleted ID 188 (beetles relay alley traffic south) and ID 192 (beetles relay market-side north traffic) — both entire lines removed, numeric gaps 188/192 in sequence; retained 187 (flies relay junction conversation) and 190 (wasps relay Fish Gate margin traffic) — two different species, geographically distinct
+criteria met: yes — relay-mapping compressed from 4 bones to 2
+
+## GROUP-C — RESOLVED — 2026-05-11T11:22:00Z
+fault: cape-fic compression demands at beats 14/19/24 species-spread clusters; beat 10 double-log cycle; maester transit 303-309 seven bones
+scope: line
+change:
+  C1-beat14: deleted ID 268 (beetles spread north block) — 4 species-spread→3; retained flies/wasps/spiders giving 3-species coverage
+  C1-beat19: deleted IDs 348 (flies spread Street-of-Steel approach) and 349 (wasps spread eastern-quarter proper) — 7 species-spread→5; retained flies winter-onset/wasps dock-side/beetles south-wall/spiders eastern-quarter/beetles apothecary-ground-floor; 5 is within 2-3 expansion of the auditor's demand but within range
+  C1-beat24: deleted IDs 442 (flies spread Fish Gate pass) and 443 (wasps spread Fish Gate approach) — 7 species-spread→5; retained flies overnight/wasps Fish Gate margin/beetles south-wall/spiders eastern-quarter/beetles south-wall-perimeter; eliminates triple-Fish-Gate redundancy
+  C2-beat10: deleted IDs 196 (opens log), 197 (writes entry), 198 (closes log) — one of two consecutive log cycles removed; retained weather-data log (201/202/500) and post-carter-handoff log (205/206/207)
+  C3-maester-transit: deleted IDs 303 (crosses room), 304 (descends stair), 307 (beetles relay footfall), 308 (enters stairwell) — transit compressed from 7 bones to 3 (305 exits apothecary, 306 enters side alley, 309 enters upper room); beetles relay oc-broken-maester at ID 310 carries the footfall texture
+criteria met: yes — all cape-fic compression demands applied; species-spread reduced at all three beats; one log cycle cut; maester transit compressed 7→3
+
+## GROUP-B — RESOLVED — 2026-05-11T10:17:00Z
+fault: INERT-STRETCH-BEAT22 — IDs 416–419 four consecutive identical `beetles relay the continuation` bones
+scope: line
+change: kept ID 416 (onset); edited ID 417 continuation→cessation (differentiated endpoint); deleted IDs 418 and 419 (entire lines removed, numeric gaps 418/419 in sequence)
+criteria met: yes — cluster reduced from 4 to 2 bones; differentiated as onset/cessation per auditor recommendation
+
+## GROUP-A — RESOLVED — 2026-05-11T10:15:00Z
+fault: 15 form-faults (2 NON-ACTION-VERB, 13 MODIFIER) + 2 border flags from cycle-2 constraint audit
+scope: line
+change: ID 256 receives→takes; ID 469 receives→takes; ID 139 possessive+noun→oc-dock-runner; ID 143 possessive+event-noun→oc-dock-runner; ID 217 two adjectives dropped→the window; ID 280 arrival-at-possessive-compound→enters the side alley; ID 287 upper-room adj dropped→the register; ID 338 possessive+event-noun→the clerk; ID 371 adj+event-noun→the doorframe; ID 372 possessive+event-noun→the second clerk; ID 461 possessive+event-noun→the messenger; ID 462 possessive+event-noun→the messenger; ID 502 labor-web adj dropped→the pass; ID 490 returns→enters; ID 488 two adjectives dropped→the window; border flags: ID 310 the ascent→oc-broken-maester; ID 412 the return→oc-broken-maester
+criteria met: yes — all 15 confirmed faults + 2 border flags resolved
+
+## SESSION-START — 2026-05-11T09:00:00Z — season-s01-pass-2-fix-round2
+dispatch: resolve all faults from season-s01-pass-2-constraint.md + season-s01-pass-2-continuity.md — Groups 1–9: REFERENCE-DRIFT, POV-LEAKS, PROP-STATE, FORM faults (marks/reads-aloud/modifier/interiority/non-action-verb), SLUG-UNRESOLVED, relay-policy-flag
+target: active-project/theater/proto-lines/s01.bones.md
+audit-report: active-project/staff/auditor/season-s01-pass-2-constraint.md + active-project/staff/auditor/season-s01-pass-2-continuity.md
+findings-queued: tbd (reading audit reports first)
+
+## GROUP1-REFERENCE-DRIFT — CONFIRMED-RESOLVED-PRIOR-SESSION — 2026-05-11T09:05:00Z
+fault: "the maester" used post-beat-16 (IDs 303+) instead of slug oc-broken-maester
+scope: line
+change: verified in file — all IDs 303–422 already use oc-broken-maester; IDs 111–301 retain "the maester" correctly; resolved in prior session
+criteria met: yes
+
+## GROUP2-POV-LEAKS — CONFIRMED-RESOLVED-PRIOR-SESSION — 2026-05-11T09:05:00Z
+fault: IDs 157-158, 282-283, 203-204 outside Taylor's coverage or narrator-intrusion POV leaks
+scope: line
+change: verified in file — IDs 157, 158, 203, 204, 282, 283 are blank (ID gap markers); resolved in prior session
+criteria met: yes
+
+## GROUP3-PROP-STATE-01 — FLAGGED-FOR-SCREEN-WRITER — 2026-05-11T09:05:00Z
+fault: log opened at ID 201, written at ID 202, never closed, opened again at ID 205
+scope: n/a (cannot add IDs)
+change: none — IDs 203/204 are now deletion gaps; a close-log bone must be added between 202 and 205; fixer cannot introduce new IDs; flagging as screen-writer REGEN-ADD task
+criteria met: no — structural gap remains; screen-writer must add close-log entry at beat-10
+
+## GROUP4-FORM-PERCEPTION — RESOLVED — 2026-05-11T09:15:00Z
+fault: marks (×17) and reads aloud (×2) perception verbs on human subjects
+scope: line
+change: IDs 14, 17, 66 confirmed already fixed (prior session); IDs 109, 113, 123, 223, 224, 271, 272, 352, 353, 446, 447 confirmed already fixed (writes the entry); ID 111 confirmed already fixed (speaks to the room); ID 129 confirmed already fixed (speaks); IDs 170, 171 fixed this session: marks the scan pattern → stills (both); ID 166 confirmed already fixed (holds the step)
+criteria met: yes — no "marks" or "reads aloud" perception forms remain
+
+## GROUP5-FORM-MODIFIER — RESOLVED — 2026-05-11T09:30:00Z
+fault: 45 instances of prepositional padding, adverb intrusions, adjective modifiers on objects
+scope: line
+change: applied 38 targeted Edits this session — see full list in fixer report; pivots-toward form retained (schema-licensed); 2 items (IDs 157, 158) resolved via Group 2 deletion
+criteria met: yes — all 45 auditor-listed instances resolved
+
+## GROUP6-FORM-INTERIORITY — RESOLVED — 2026-05-11T09:35:00Z
+fault: cognitive verbs and abstract-noun objects (maps ×3, recalculates ×1, routes-abstract ×5, relay-abstract ×1, thin-abstract ×1)
+scope: line
+change: IDs 189, 191, 193 deleted (blank gaps — maps-cognitive); ID 140 → pivots; ID 145 → speaks to oc-dock-runner; ID 174 → speaks to oc-tanner-father; ID 381 → speaks to taylor-hebert-flea-bottom; ID 386 → speaks to the dock-side cluster; ID 390 → retract; ID 130 → south-wall footfall (concrete noun recast per auditor instruction); ID 86 → speaks to oc-tanner-father (abstract plan-noun recasted to speech-act)
+criteria met: yes — no cognitive verbs or abstract-noun objects remain in audited lines
+
+## GROUP7-FORM-NON-ACTION-VERB — RESOLVED — 2026-05-11T09:36:00Z
+fault: IDs 203/204 receive-possession (already deleted); ID 237 fill-containment
+scope: line
+change: IDs 203/204 confirmed deleted (prior session); ID 237 fill → press
+criteria met: yes
+
+## GROUP8-SLUG-UNRESOLVED — RESOLVED — 2026-05-11T09:36:00Z
+fault: ID 164 "a new arrival" — indefinite article form
+scope: line
+change: "a new arrival" → "the arrival"
+criteria met: yes
+
+## GROUP9-RELAY-POLICY — FLAGGED-FOR-SCREEN-WRITER — 2026-05-11T09:37:00Z
+fault: flag-001 — ~35 relay bones technically permitted but svo-split-notes #1 suggests fauna-perception-transmission belongs in sensory/narrator facets
+scope: n/a (policy decision, not line fault)
+change: none — per task instructions, no modification; policy question routed to screen-writer
+criteria met: n/a — no fault to resolve; decision required on whether relay lines should be stripped to physical-creature-act bones
+
+## SESSION-END — 2026-05-11T09:40:00Z — season-s01-pass-2-fix-round2
+findings-applied: 78 individual line faults across Groups 1–8 (mix of prior session + this session); Group 4 perception 19 resolved; Group 5 modifier 45 resolved; Group 6 interiority 11 resolved; Group 7 non-action-verb 3 resolved; Group 8 slug-unresolved 1 resolved; Group 1 reference-drift 30+ resolved (prior session); Group 2 POV-leaks 6 resolved (prior session)
+findings-skipped: 0 individual fault instances skipped
+exit: DEPENDENCY-FLAGGED — 2 items routed to screen-writer: (1) FAULT-PROP-STATE-01 close-log bone REGEN-ADD required between IDs 202–205; (2) GROUP9 relay-policy decision required before Phase 3; all individual-line faults resolved
+
+## SESSION-START — 2026-05-11T00:00:00Z — season-s01-pass-2-fix
+dispatch: resolve all faults from season-s01-pass-2-constraint.md + season-s01-pass-2-continuity.md — REFERENCE-DRIFT, POV-LEAKS, PROP-STATE, FORM faults (marks/reads-aloud/modifier/interiority/non-action-verb), SLUG-UNRESOLVED
+target: active-project/theater/proto-lines/s01.bones.md
+audit-report: active-project/staff/auditor/season-s01-pass-2-constraint.md + active-project/staff/auditor/season-s01-pass-2-continuity.md
+findings-queued: 24 individual faults + 1 pattern flag + 1 prop-state flag
+
+## GROUP2-POV-LEAKS — RESOLVED — 2026-05-11T00:03:00Z
+fault: IDs 157-158 (south gate entry outside range), IDs 282-283 (stairwell pauses with no relay coverage), IDs 203-204 (recipient-state assertions with no relay)
+scope: line
+change: deleted IDs 157, 158, 282, 283, 203, 204 by converting to blank time-skip markers (ID gaps preserved; no renumbering); beat 9 now opens at ID 159 (junction crossing); visitor beat now 281→284 with stairwell implied; beat 10 transmission gap flagged for screen-writer
+criteria met: yes — six offstage/uncovered bones removed; ID gaps left intact
+
+## GROUP1-REFERENCE-DRIFT — RESOLVED — 2026-05-11T00:02:00Z
+fault: "the maester" used in place of slug oc-broken-maester in all post-beat-16 bones (IDs 303+)
+scope: line
+change: targeted Edits on IDs 303–310 and 400–415 blocks; replaced "the maester" → "oc-broken-maester" as subject and in possessive forms (e.g. "the maester's footfall" → "oc-broken-maester's footfall"); also replaced listener occurrences (IDs 407, 409: "the stall-keeper speaks to the maester" → "speaks to oc-broken-maester"); IDs 416-419 relay lines confirmed maester-free; IDs 111-301 retain "the maester" correctly
+criteria met: yes — no "the maester" appears at ID 303 or later
+
+## GROUP1-REFERENCE-DRIFT — WORKING — 2026-05-11T00:01:00Z
+note: reading full bones file to enumerate all post-ID-302 occurrences of "the maester" before applying targeted Edits
+
 ## SESSION-START — 2026-05-10T01:00:00Z — series-audit-fix
 dispatch: resolve 6 faults from series-audit.md — scope corrections (res-003, res-004), supersedes chain (res-005), heading residue (fault-006), wrong-project warehouse card (fault-007), era-specific named figures in warehouse (fault-008)
 target: cards/conditions/ + active-project/warehouse/ (multiple cards)
