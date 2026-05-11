@@ -1,231 +1,271 @@
 ```yaml
 audit:
   scope: season
-  target: s01 — Window 3, IDs 330–494 (beats 18–26)
+  target: s01 — Window 3, IDs 330–494 + inserts 497/498/499/503/507 + boundary beats 513/514/515
   timestamp: 2026-05-11
-  pass: S10 Sweep B — Mechanic verdict (narrow scope: AP-SCAN / CURVE-SHAPE / FREQUENCY-BAND)
+  pass: S10 Sweep B — Mechanic verdict cycle 2 (narrow scope: AP-SCAN / CURVE-SHAPE / FREQUENCY-BAND)
   source: active-project/theater/proto-lines/s01.bones.md
-  combined_verdict: MECHANIC-FAIL-CURVE-SHAPE-FREQUENCY-BAND
+  tensometer: active-project/theater/facets/tensometer-s01-window-03.md
+  combined_verdict: MECHANIC-FAIL-AP-SCAN-CURVE-SHAPE-FREQUENCY-BAND
+
+  cycle_1_resolutions:
+    - fault-001: RESOLVED — IDs 355 and 449 now read "taylor-hebert-flea-bottom wakes". No interiority subject.
+    - fault-002: RESOLVED — IDs 387/388 now relay physical actors (taylor-hebert-flea-bottom, oc-tanner-elder);
+        ID 416 relays "the pen-scratch" (physical sound); ID 417 is now "oc-broken-maester sets the pen";
+        ID 471 relays "the middleman" (physical actor). ID 339 now relays "the clerk" (physical actor).
+        Note: resolution of ID 339 introduced a new fault (see fault-001-c2 below).
+    - fault-003: RESOLVED — ID 469 now reads "the middleman takes the account". Adjective removed.
+    - fault-004: RESOLVED — IDs 353, 447, 462, 493 deleted. Gaps visible in bones file as required by schema.
+    - fault-005: PARTIALLY ADDRESSED — tensometer now authored; 3s now present in file. However, two
+        tensometer 3s (@335, @368) fail rubric validation, reproducing CURVE-SHAPE fault for scenes
+        330–342 and 361–375. See fault-002-c2 and fault-003-c2.
+    - fault-006: PARTIALLY ADDRESSED — tensometer exists with distribution 66.9%/29.2%/3.9%.
+        1s and 2s are within band. 3-frequency at 3.9% is below the 5% floor but author asserts
+        honest rating. However: two 3s are misrated (fault-002-c2), which if corrected reduces
+        3-frequency to ~2.6%, worsening the below-floor condition. See fault-004-c2.
 
   findings:
 
-    - id: fault-001
+    - id: fault-001-c2
       type: fault
       what: >
-        ID 355 — "the headache wakes taylor-hebert-flea-bottom";
-        ID 449 — "the headache wakes taylor-hebert-flea-bottom" (repeat beat in a later scene group).
+        Bones file IDs 338 and 339 — both read "the flies relay the clerk" (identical SVO).
+        File lines: "338 the flies relay the clerk" followed immediately by "339 the flies relay
+        the clerk". These are adjacent, consecutive, exact duplicates.
       why: >
-        AP-SCAN. An internal somatic state ("the headache") is the grammatical subject performing
-        a physical action ("wakes"). A headache is not an actor or physical entity that can execute
-        a discrete observable action. The proto-line schema bans interiority at the proto-line level
-        (FAULT-FORM-INTERIORITY): internal states are facets that cite proto-lines, not subjects of
-        proto-lines. Both instances use identical wording and carry the same fault. Downstream
-        consequence: when facets are authored against these beats, the tensometer and sensory-flag
-        authors have no clean physical event to cite — only an interior state doing the acting.
-        Stitcher cannot render a beat whose subject is non-physical.
+        AP-SCAN / structural duplication. The cycle-1 fix for fault-002 replaced ID 339's
+        abstract-object content ("the flies relay the junction departure") with a physical actor
+        ("the clerk"). That fix is correct in isolation, but the result produces an exact
+        duplicate of ID 338, which already read "the flies relay the clerk". Two consecutive
+        identical SVO proto-lines cannot both record discrete observable physical events —
+        one is structurally redundant. This is the same AP-SCAN class as cycle-1 fault-004.
+        Downstream consequence: the tensometer has @338 unrated (it falls before the window
+        boundary at entry 9, rated 1) and @339 rated 1 — both scalars are valid, but the
+        stitcher will render the same beat twice in prose. The tensometer entry for @339 (entry
+        10, rated 1) survives the duplicate, but the facet pipeline treats them as two distinct
+        beats. One stitcher compression is lost.
       criteria: >
-        Each beat must record the observable physical event that corresponds to the somatic onset —
-        the subject must be a physical actor or named physical entity. Internal state onset belongs
-        in a feeling-flag or sensory-flag facet citing a physical proto-line.
+        The 338/339 pair must resolve to a single proto-line, or ID 339 must be recast as a
+        genuinely distinct physical beat from ID 338. If both relay beats represent the same
+        single physical event, one must be deleted (leaving the gap visible). If they represent
+        distinct relay moments separated by some interval, a distinguishing element (different
+        verb, different observed detail, or an intervening beat) must make the distinction legible.
 
-    - id: fault-002
+    - id: fault-002-c2
       type: fault
       what: >
-        ID 339 — "the flies relay the junction return";
-        ID 387 — "the wasps relay the dock-side return";
-        ID 388 — "the wasps relay the labor-web path";
-        ID 416 — "the beetles relay the onset";
-        ID 417 — "the beetles relay the cessation";
-        ID 471 — "the flies relay the junction departure".
+        Tensometer entries:
+        Entry 6 — "@335 3" (proto-line: "the clerk writes the entry", scene group 330–342);
+        Entry 36 — "@368 3" (proto-line: "the second clerk writes the entry", scene group 361–375).
+        Axis citation for both: "stakes-visibility + reversal-proximity peaks — clerk writes entry;
+        registration IS the turn."
       why: >
-        AP-SCAN. Each of these proto-lines takes an abstract event noun as the direct object of
-        "relay": "junction return," "dock-side return," "labor-web path," "onset," "cessation,"
-        "junction departure." These are not physical objects or named entities — they are
-        descriptions of states, intervals, or events. The proto-line schema prohibits
-        abstraction-as-object (FAULT-FORM-INTERIORITY). Physical relay beats must name what the
-        insects physically carry or observe — a person, a sound, a physical object, a spatial
-        location — not an abstract summary of what happened. The six instances form a pattern
-        concentrated in this window. Downstream consequence: facet authors have no physical anchor
-        to cite; the sensory and narrator facets that are supposed to build on these relay beats
-        will have to invent content not present in the bone.
-      criteria: >
-        Each relay beat must name a physical thing being relayed — an actor, a sound (e.g.,
-        "the footfall"), a physical object, or a named location — not a summary noun for an event
-        or interval.
+        AP-SCAN / CURVE-SHAPE. Both entries assign rung 3 to routine administrative write beats
+        with no on-face charge. The rubric requires a 3 to satisfy: peak reversal-proximity (the
+        beat IS the turn), or peak stakes-visibility (the beat IS the exposure or commit), or
+        peak body-charge (held at maximum compression). Against all three axes for @335 and @368:
 
-    - id: fault-003
+        Stakes-visibility: "the clerk writes the entry" — no named character is at risk on the
+        face of this SVO. The clerk is performing a routine administrative act. The rubric
+        anti-pattern "Plot-importance inflation" applies: the writer knows this entry matters
+        narratively (Taylor's network is being registered), but tensometer reads on-face charge,
+        not narrative function. On-face: neutral.
+
+        Reversal-proximity: the write beat extends the open-book action from the prior beat.
+        The axis citation claims "registration IS the turn" — but registration of what, visible
+        to whom, on the face of this beat? The SVO is "clerk writes entry." There is no
+        named stake, no identified subject of the registration, no on-face reversal. Compare
+        the rubric calibration example: "the stylus marks two parallel lines beside Taylor's
+        entry" earns 2 because Taylor's name appears in the action and the officer is the actor —
+        the stake is named on-face. Here, the stake is inferred from context, not present in
+        the SVO.
+
+        Body-charge: no body-charge on the face of this beat. The write act is neutral motion.
+
+        The rubric's "Speech-beat default" anti-pattern has a direct parallel here: just as
+        "X speaks to Y" defaults to 1 because speech content carries the charge, not the
+        proto-line beat, "X writes the entry" defaults to 1 because the significance of the
+        entry content is not on the face of the beat. Both @335 and @368 should be rated 1
+        (or at most 2 if a specific named stake — e.g., an officer observing, Taylor's name
+        in the entry — can be cited on-face, which the current SVO does not support).
+
+        Downstream CURVE-SHAPE consequence: scenes 330–342 and 361–375 have no legitimate
+        3-beat. With @335 and @368 corrected to honest ratings, both scenes have zero 3s and
+        no dramatist exception flags. The rubric states: "Each scene must satisfy at least one
+        3 OR an explicit dramatist-flagged exception." Scenes 330–342 and 361–375 fail this
+        test. This reproduces the cycle-1 fault-005 CURVE-SHAPE finding for those two scene
+        groups.
+      criteria: >
+        @335 and @368 must be rerated to their honest rung against at least one rubric axis.
+        If no axis lights at 3, the entry must be rated 1 (default for routine write beats)
+        or 2 only if a specific named on-face stake can be cited. Following rerating, scenes
+        330–342 and 361–375 must either receive a proto-line that legitimately earns a 3
+        (screen-writer kickback scope) or carry explicit dramatist exception flags
+        (scene-as-transit / scene-as-respite). The axis-citation summary must be updated
+        to reflect actual axis performance for whichever rung is assigned.
+
+    - id: fault-003-c2
       type: fault
       what: >
-        ID 469 — "the middleman takes the sealed account".
+        Tensometer entry 124 — "@462 2". ID 462 is a deleted proto-line (removed as part of
+        cycle-1 fault-004 resolution). The bones file shows the ID 462 gap between 461 and 463.
+        Tensometer entry 153 — "@493 1". ID 493 is a deleted proto-line (removed as part of
+        cycle-1 fault-004 resolution). The bones file shows the ID 493 gap between 492 and 494.
       why: >
-        AP-SCAN. "Sealed" is an adjective modifying "account." The proto-line schema explicitly
-        prohibits modifiers, including adjectives (FAULT-FORM-MODIFIER). No adjectives in
-        proto-lines; the physical state of the document (sealed vs. unsealed) is either a separate
-        prior beat (which ID 468 partially covers as "oc-tanner-elder seals the account") or a
-        state-update facet. The object in the proto-line must be the bare noun slug: "the account."
-        Downstream consequence: modifier-carrying proto-lines contaminate facet-authoring training
-        data and introduce prose-description at the bone layer, which is reserved for SVO only.
+        AP-SCAN / cross-facet consistency. The tensometer cites two proto-line IDs that no
+        longer exist in the bones file. Per the cross-facet contract: once a proto-line is
+        deleted, any facet entry citing it is orphaned. The stitcher has no proto-line record
+        to attach these tensometer scalars to. The downstream consequence at stitcher time:
+        @462 and @493 are treated as beats to render, but the bones layer has no SVO for them
+        — either the stitcher errors or produces a null-content beat. The tensometer's beat
+        count is overstated by 2 (154 entries counting deleted bones → effective count 152).
+        This also falsely inflates the frequency-band calculation: the 154-denominator used
+        in the tensometer's own band calculation is wrong.
       criteria: >
-        The proto-line must use "the account" as the direct object, with no adjective. The
-        document's sealed state is already registered in ID 468 and belongs to a state-update
-        facet citing that beat.
+        Tensometer entries @462 and @493 must be removed. The frequency-band calculation must
+        be recomputed on the correct denominator (152 proto-lines, or the correct count after
+        all orphan entries are removed). The bones-file deletion gaps at 462 and 493 are
+        correct and must not be reinstated.
 
-    - id: fault-004
+    - id: fault-004-c2
       type: fault
       what: >
-        ID 353 — "taylor-hebert-flea-bottom writes the entry" (exact duplicate of ID 352);
-        ID 447 — "taylor-hebert-flea-bottom writes the entry" (exact duplicate of ID 446);
-        ID 462 — "the flies relay the messenger" (exact duplicate of ID 461);
-        ID 493 — "taylor-hebert-flea-bottom writes the entry" (exact duplicate of ID 492).
+        Tensometer frequency-band section states: "3s: 6/154 = 3.9% (target 5–10%) — slightly
+        below floor." After removing orphaned entries @462 and @493 (fault-003-c2) and
+        correcting misrated @335 and @368 from 3 to honest rungs (fault-002-c2): corrected
+        3-count = 4 (remaining legitimate 3s: @394, @395, @417, @468); corrected denominator
+        = 152. Corrected 3-frequency = 4/152 = 2.6%. The tensometer also omits entries for
+        in-scope beats @513, @514, @515 (fault-005-c2 below), which if rated 1 push the
+        denominator to 155 — corrected 3-frequency 4/155 = 2.6%. 2s: 45/152 = 29.6%
+        (within band). 1s: 103/152 = 67.8% (within band).
       why: >
-        AP-SCAN / structural duplication. Each pair is an exact repetition of subject, verb, and
-        object with no intervening beat and no distinguishing content. The proto-line schema
-        requires that each proto-line records a discrete observable physical event. Two identical
-        consecutive proto-lines cannot both be discrete events — one is redundant. The duplicate
-        "writes the entry" pattern appears three times in Window 3 (352/353, 446/447, 492/493);
-        the duplicate "relay the messenger" appears once (461/462). Downstream consequence: the
-        tensometer must assign scalars to both; the stitcher will render the beat twice in prose,
-        producing repeated sentences or requiring editor intervention. This is a bone-layer defect
-        that cannot be corrected downstream without touching the proto-line file.
+        FREQUENCY-BAND. The rubric frequency test states: a distribution outside the 5–10%
+        3-rung band "suggests systemic miscalibration — investigate before shipping." The
+        tensometer author noted 3.9% as "slightly below floor" and stated "scalar inflation
+        refused." That position was honest given the bones, but two of the six 3s are
+        misratings (fault-002-c2), not inflation refusals — they are ratings that fail the
+        rubric's axis tests. With honest ratings applied, the true 3-frequency is 2.6%,
+        which is 2.4 percentage points below the 5% floor — not a minor deviation. The
+        rubric response to below-band 3-frequency is: if scalars are honest, the proto-line
+        file does not contain enough charged beats. This is a screen-writer kickback signal:
+        Window 3 bones require additional rupture / commit / registration proto-lines
+        before tensometer can achieve an honest distribution within band. The cycle-1
+        fault-006 finding assessed ~1–2 legitimate 3-level candidates at the bone layer
+        before tensometer authoring. The tensometer confirms this: 4 legitimate 3s across
+        154 beats reflects the same structural underload the cycle-1 audit identified.
+        The bones additions (513/514/515) did not add charged beats; all three are ambient
+        relay/write beats.
       criteria: >
-        Each pair must resolve to a single proto-line, or the second instance must be recast as a
-        genuinely distinct physical beat with a different verb or object that distinguishes it from
-        the first. If only one write-entry event occurred, only one proto-line should record it.
+        After resolving fault-002-c2 (rerating @335 and @368), fault-003-c2 (removing orphan
+        entries), and fault-005-c2 (adding missing entries), the frequency-band section must
+        be recomputed on the corrected population. If honest 3-frequency remains below 5%,
+        the tensometer must emit a screen-writer kickback flag naming the specific scene groups
+        that lack legitimate 3-candidates (minimum: scenes 330–342, 361–375, and 477–494).
+        The kickback flag is the rubric-mandated response; scalar inflation is prohibited.
 
-    - id: fault-005
+    - id: fault-005-c2
       type: fault
       what: >
-        Window 3 scene-level curve shape across all scene groups (IDs 330–494).
+        Tensometer file is missing entries for in-scope bones @513, @514, and @515.
+        These three proto-lines appear physically in the bones file within the Window 3
+        body (between the 329 gap and ID 330), were designated as Window 3 boundary beats
+        by the cycle-1 fault-005 resolution, and are listed as in-scope in this audit's
+        dispatch. No tensometer entries cite @513, @514, or @515.
       why: >
-        CURVE-SHAPE. The rubric requires that every scene contain at least one 3-level beat
-        (rupture / commit / registration) or carry an explicit dramatist "scene-as-respite" /
-        "scene-as-transit" exception flag. Examining each scene group in Window 3:
-
-        Scene group 330–342 (clerk at junction + log): procedural registration scene. No beat
-        reads as a commit, rupture, or public-exposure peak. The clerk writes, exits. No 3-level
-        candidate. No exception flag.
-
-        Scene group 344–359 (network spread + perimeter + headache): flat run of deployment and
-        ambient beats. The only elevated candidate is the headache beat (355), which is also
-        AP-SCAN faulted (fault-001). No clean 3-level beat. No exception flag.
-
-        Scene group 361–375 (second clerk + apothecary + log): parallel structure to 330–342.
-        Same assessment — procedural, no rupture or commit beat. No exception flag.
-
-        Scene group 383–398 (dock-side inquiry + coin exchange + log): the coin exchange
-        (393–395: extends the palm / places the coin / closes the fist) is the window's strongest
-        3-level physical candidate. However, the lead-in beats (384–391: insect deployment,
-        cluster thins, flies retract) are all 1-level ambient, with no 2-level charge ramp before
-        the exchange. The rubric requires beats leading into a 3 to ramp through 2s; a direct
-        1→3 jump is flagged as either misrating or true sudden-turn requiring explicit marking.
-
-        Scene group 400–422 (broken-maester circuit + log): beats 416–417 ("relay the onset" /
-        "relay the cessation") are also AP-SCAN faulted (fault-002). Even if corrected, the
-        surrounding beats are 1-level ambient. No clean 3-level beat before the log close.
-
-        Scene group 438–453 (overnight spread + perimeter + headache): structural repeat of
-        344–359. Same assessment. The "faces the Red Keep" (507) appears at the end of this group
-        and is a 2-level orientation beat at best — strong, but not a rupture or commit.
-
-        Scene group 455–475 (messenger + elder seals + middleman): the sealed-account handoff
-        (467–469) has 3-level commit potential (elder seals, middleman takes — irreversible
-        transfer). But ID 469 carries the adjective fault (fault-003). Even if corrected,
-        the scene has no 2-level ramp into the handoff — the beats from 465 to 467 are clean
-        transit (exits, enters, writes).
-
-        Scene group 477–494 (full circuit walk + log): pure transit and double-write close. No
-        charge beats. Structurally a 1-level flatline across the entire group. No exception flag.
-
-        Downstream consequence: when tensometer is authored against these bones, the dramatist
-        will face either (a) scalar inflation — rating ambient beats at 2/3 to manufacture shape,
-        which breaks the cross-facet contract — or (b) multiple scene-level kickback flags that
-        send authoring back to screen-writer. The rubric says the dramatist's response to a
-        failing curve is a screen-writer kickback, not scalar inflation. This audit identifies
-        the kickback targets pre-authoring so they can be addressed at the bone layer before
-        tensometer authoring begins.
+        AP-SCAN. The tensometer rubric states: "tensometer has no per-entry cull — every
+        proto-line gets a scalar." Three in-scope proto-lines are unrated. Downstream
+        consequence: the stitcher has no tension signal for these three beats. If the
+        stitcher defaults to treating unrated beats as 1 (ambient), the compression contract
+        is met, but the cross-facet contract is broken — facets that gate on tensometer
+        rung (loudness flags, memory flags, audience-interest flags) will skip these beats
+        without the auditor having validated whether a non-1 rating was warranted.
+        Beat @515 ("taylor-hebert-flea-bottom writes the entry") is almost certainly 1,
+        but @513 ("the beetles relay the base room") and @514 ("the beetles relay
+        oc-broken-maester") sit at a boundary that contextually precedes a scene transition —
+        context in which a 2 might be defensible if the relay constitutes charged surveillance.
+        The determination belongs to the dramatist, not the stitcher's default.
       criteria: >
-        Each scene group without an exception flag must contain at least one proto-line that
-        functions as a rupture, commit, or registration beat readable from the SVO sentence alone.
-        Scene groups that are structurally transit or respite must carry an explicit exception
-        marker (scene-as-respite / scene-as-transit). The 1→3 adjacency problem in scene group
-        383–398 must be resolved either by inserting a 2-level charge beat between the ambient
-        run and the coin exchange, or by the dramatist explicitly flagging it as a true
-        sudden-turn at tensometer-authoring time.
+        Tensometer entries for @513, @514, and @515 must be authored and inserted at the
+        correct physical position in the tensometer file (before the @330 entry). Each
+        entry must name an axis citation if rated 2 or 3. If rated 1, no citation required.
 
-    - id: fault-006
+    - id: fault-006-c2
       type: fault
       what: >
-        Window 3 overall beat composition: estimated ~120 proto-line beats across IDs 330–494
-        (including out-of-sequence inserts 497, 498, 499, 503, 507).
+        Tensometer axis-citations summary entry for @417:
+        "@417: reversal-proximity peaks — beetles relay cessation; stop reverses prior motion."
+        Current proto-line content: "oc-broken-maester sets the pen" (rewritten in cycle-1
+        fault-002 resolution from "the beetles relay the cessation").
       why: >
-        FREQUENCY-BAND. The expected rung distribution across a corpus of proto-lines is
-        60–75% 1s, 20–30% 2s, 5–10% 3s (from the tensometer rubric). Assessing Window 3's
-        bones against the axes that drive rung assignment:
-
-        Confirmed 1-level beats (ambient, transitional, log open/write/close, insect deployment,
-        perimeter walks, enter/exit navigation): approximately 108–112 beats.
-
-        Plausible 2-level beats (charged stillness, public exposure, turn-proximity): the coin
-        exchange approach (393), the elder confrontation (377–381), the messenger scene (455–463),
-        the elder seals the account (468), faces the Red Keep (507) — approximately 8–10 beats.
-
-        Plausible 3-level beats (rupture, commit, registration peak): coin closes the fist (395),
-        middleman takes the account (469, after adjective fault is fixed) — approximately 1–2 beats.
-
-        Approximate distribution: ~92% 1s, ~7% 2s, ~1% 3s.
-
-        This is significantly outside the expected band: 1s are ~17–32 percentage points too
-        high; 2s are ~13–23 points too low; 3s are ~4–9 points too low. The rubric states that
-        a distribution outside band indicates systemic miscalibration and requires investigation
-        before shipping. At the bone layer, before tensometer authoring, this means the proto-line
-        file does not contain enough materially-charged beats to support an honest tensometer
-        within the expected frequency band. Downstream consequence: either the tensometer
-        systematically inflates scalars (breaking the cross-facet contract) or it produces an
-        honest but severely flattened distribution that signals a structurally underloaded episode
-        segment to the stitcher — compressing large portions of the window into single "and"
-        connectives.
+        AP-SCAN / citation consistency. The axis citation documents the old proto-line content
+        ("beetles relay cessation") that was replaced during cycle-1 fixes. The current
+        proto-line is "oc-broken-maester sets the pen." The citation is factually wrong: it
+        names a subject (beetles) and object (cessation) that do not appear in the current
+        bone. Any downstream consumer reading the axis-citations summary to verify the 3-rating
+        for @417 receives incorrect information. The scalar itself (3) may be defensible
+        on the current proto-line's merits — "sets the pen" is analogous to the rubric
+        calibration example "the stylus stops on the board" (rated 3 when the stop reverses
+        prior motion) — but the citation must document the current content, not the discarded
+        draft. The rating of @417 at 3 requires fresh axis justification against the actual SVO.
       criteria: >
-        The bone set for Window 3 must contain enough beats that, when rated honestly by axis,
-        fall in the 20–30% 2-rung and 5–10% 3-rung bands. Achieving this at current beat count
-        (~120) requires approximately 24–36 additional 2-level beats and 6–12 additional 3-level
-        beats, or reduction of 1-level beats to bring the denominator down while adding charged
-        beats. This is a screen-writer kickback scope: the window needs more charged beats at
-        the bone layer before tensometer authoring proceeds.
+        The axis-citations summary entry for @417 must be rewritten to cite the current
+        proto-line ("oc-broken-maester sets the pen") and name the axis or axes that
+        support the assigned rung. If the 3 is defensible on the current content, document
+        it. If it is not defensible on the current content, rerate to the correct rung.
 
-    - id: flag-001
+    - id: flag-001-c2
       type: flag
       what: >
-        Out-of-sequence IDs 495 (line 105 in file), 496, 497, 498, 499, 500, 501, 502, 503,
-        504, 505, 506, 507, 508 — all appear within or near the Window 3 range in the file's
-        physical ordering but carry IDs higher than 494. Some appear interleaved between
-        lower-numbered lines (e.g., 497 between IDs 356 and 357; 503 between 417 and 420).
+        Tensometer entries for @394 and @395 — both rated 3, interpreted as a double-tap
+        (coin placed → fist closed). The lead-in at @393 ("taylor-hebert-flea-bottom extends
+        the palm") is rated 2, satisfying the ramp requirement. However, the prior beats
+        @391 ("taylor-hebert-flea-bottom exits the dock-side alley") and @392
+        ("oc-tanner-elder speaks to taylor-hebert-flea-bottom") are both rated 1,
+        producing a 1→1→2→3→3 shape in the coin-exchange sequence.
       why: >
-        The proto-line schema requires monotonic positive integer IDs, stable once assigned.
-        Out-of-sequence IDs are legal (they represent insertions after initial numbering, per
-        the schema's "deletions leave ID gap visible" rule). However, several of these
-        out-of-sequence IDs appear physically within the Window 3 body and are therefore
-        in scope for this audit even though their numeric IDs exceed 494. This audit has
-        reviewed those that appear in the file between IDs 330 and 494 (specifically 497, 498,
-        499, 503, 507). IDs 495, 496, 500, 501, 502, 504, 505, 506, 508 appear earlier in
-        the file (before line 390) and are outside Window 3 scope.
-
-        The interleaving pattern is consistent with the schema's insertion-without-renumber
-        rule. No fault on the numbering itself. Flagging for editor awareness: the Phase 7
-        split will need to correctly assign these out-of-sequence beats to their episode slots
-        based on physical position, not numeric sort order.
+        The cycle-1 audit flagged a 1→3 adjacency problem in this scene group. The tensometer
+        resolves this by inserting @393 rated 2 as the ramp beat, which satisfies the rubric's
+        "beats leading into a 3 should ramp through 2s" requirement. The single 2 before the
+        double-tap is minimal but not a violation — the rubric does not specify how many 2s
+        must precede a 3, only that the jump is not direct 1→3. The @392 rated 1 ("elder
+        speaks to taylor") is defensible per rubric anti-pattern 2 (speech-beat default: 1).
+        No fault. Flagging for editor awareness: the charge ramp is thin (one 2 before a
+        double 3). The stitcher will weight this sequence heavily; editor should confirm
+        the scene can carry the density load.
       criteria: ~
 
-    - id: flag-002
+    - id: flag-002-c2
       type: flag
       what: >
-        ID gaps 348, 349 (between 347 and 350); IDs 418, 419 (between 417 and 420);
-        IDs 442, 443 (between 441 and 444) — all within Window 3.
+        Scene group 477–494 (full circuit walk + log close). Tensometer rates the entire
+        group: 477–491 all at 1 except @482 (enters Fish Gate margin, rated 2) and @488
+        (spiders relay the window, rated 2). No 3 in the sequence. No dramatist
+        exception flag.
       why: >
-        Per schema, skipped IDs indicate deleted proto-lines. Three deletion clusters appear
-        in Window 3. No fault — deletions are legal and leave gaps intentionally visible.
-        Flagging for editor awareness: the stitcher and Phase 7 split must not attempt to
-        recover or fill these gaps. If the deleted beats were load-bearing for scene continuity,
-        the corresponding scenes (344–359 insect network, 400–422 broken-maester, 438–453
-        overnight spread) may have continuity gaps that the editor pass should inspect.
+        The rubric requires each scene to contain at least one 3 OR an explicit exception flag.
+        This scene group has no 3 and no flag. The two 2s (@482, @488) are plausible
+        (entering a charged location edge, insect surveillance beat in a transit context) but
+        neither earns a 3. The scene is structurally a transit/cool-down scene (full circuit
+        walk, return to base, log close), which would qualify for a "scene-as-transit" exception
+        flag. The dramatist has not issued that flag. This is a CURVE-SHAPE violation by the
+        letter of the rubric. However, this is the window's final scene group and its transit
+        function is apparent from the bones — this may be an oversight in flag notation rather
+        than a structural failure. Classifying as flag rather than fault because the scene's
+        transit character is defensible on inspection; the missing notation is the issue.
+        Fixer or dramatist should either add the exception flag or confirm whether the scene
+        requires a rupture beat.
+      criteria: ~
+
+    - id: flag-003-c2
+      type: flag
+      what: >
+        ID gaps within Window 3 (cycle-1 flag-002 carried forward): gaps at 348/349,
+        418/419, 442/443 from prior deletions; new gaps at 353, 447, 462, 493 from
+        cycle-1 fault-004 resolution.
+      why: >
+        No fault — deletions are legal and gaps must remain visible per schema. Carrying
+        forward for editor awareness. The Phase 7 split must not attempt to fill or
+        recover these gaps. New gap at 462 is doubly confirmed: ID deleted from bones
+        and orphan tensometer entry must also be removed (fault-003-c2).
       criteria: ~
 ```
