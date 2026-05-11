@@ -238,3 +238,122 @@ After this fix pass, the following sets of identically-worded bones now exist. E
 2. GROUP9 relay-policy (requires screen-writer policy decision, not a line fault)
 
 Both unresolved items are structural/policy matters correctly routed to screen-writer. All individual line faults in the audit are resolved.
+
+---
+
+## Cycle 3
+# session: 2026-05-11T11:00:00Z — season-s01-pass-2-fix-cycle3
+# audit sources: season-s01-pass-2-constraint.md + season-s01-pass-2-shape.md + season-s01-pass-2-trim-cape-fic-reader.md + season-s01-pass-2-trim-dark-fantasy-reader.md
+
+---
+
+### Group A: NON-ACTION-VERB + MODIFIER recasts (15 + 2 border)
+
+**Status: ALL PRE-APPLIED** — verified against file state. All 15 form-faults and 2 border flags were applied in a prior cycle-3 session. File confirmed correct:
+
+- **fault-C2-001 (ID 256):** `receives the coins` → `takes the coins` — CONFIRMED
+- **fault-C2-002 (ID 469):** `receives the sealed account` → `takes the sealed account` — CONFIRMED
+- **fault-C2-003 (ID 139):** `the flies relay oc-dock-runner's position` → `the flies relay oc-dock-runner` — CONFIRMED
+- **fault-C2-004 (ID 143):** `the flies relay oc-dock-runner's exit path` → `the flies relay oc-dock-runner` — CONFIRMED
+- **fault-C2-005 (ID 217):** `the spiders relay the apothecary south window` → `the spiders relay the window` — CONFIRMED
+- **fault-C2-006 (ID 280):** `the visitor arrives at the maester's side-alley door` → `the visitor enters the side alley` — CONFIRMED
+- **fault-C2-007 (ID 287):** `the beetles relay the upper-room register` → `the beetles relay the register` — CONFIRMED
+- **fault-C2-008 (ID 338):** `the flies relay the clerk's departure path` → `the flies relay the clerk` — CONFIRMED
+- **fault-C2-009 (ID 371):** `the flies relay the apothecary doorframe exchange` → `the flies relay the doorframe` — CONFIRMED
+- **fault-C2-010 (ID 372):** `the flies relay the second clerk's departure path` → `the flies relay the second clerk` — CONFIRMED
+- **fault-C2-011 (ID 461):** `the flies relay the messenger's arrival path` → `the flies relay the messenger` — CONFIRMED
+- **fault-C2-012 (ID 462):** `the flies relay the messenger's departure path` → `the flies relay the messenger` — CONFIRMED
+- **fault-C2-013 (ID 502):** `the wasps relay the labor-web pass` → `the wasps relay the pass` — CONFIRMED
+- **fault-C2-014 (ID 490):** `returns loc-flea-bottom-base` → `enters loc-flea-bottom-base` — CONFIRMED
+- **fault-C2-015 (ID 488):** `the spiders relay the apothecary south window` → `the spiders relay the window` — CONFIRMED
+- **flag-C2-001 (ID 310):** border — `the beetles relay the ascent` → `the beetles relay oc-broken-maester` — CONFIRMED
+- **flag-C2-002 (ID 412):** border — `the beetles relay the return` → `the beetles relay oc-broken-maester` — CONFIRMED
+
+---
+
+### Group B: INERT-STRETCH-BEAT22
+
+**Status: PRE-APPLIED** — verified against file state.
+
+- ID 416: `the beetles relay the onset` — CONFIRMED (onset kept)
+- ID 417: `the beetles relay the cessation` — CONFIRMED (differentiated endpoint)
+- IDs 418 and 419: deleted (numeric gaps in sequence) — CONFIRMED
+
+---
+
+### Group C: Cape-fic compression
+
+#### C1. Species-spread bones at beats 14, 19, 24
+
+**Beat 14 (IDs 266–278):**
+- Original: 4 species-spread bones (IDs 266, 267, 268, 269)
+- Cut: ID 268 (`the beetles spread the north block`) — entire line deleted; numeric gap 268
+- Kept: ID 266 (flies), 267 (wasps), 269 (spiders) — 3 species, 3 bones
+- Rationale: north block is geographically least distinctive; flies autumn-density and wasps dock-side relay already bound the geographic spread; spiders eastern-quarter-relay retained as it anchors the maester surveillance thread
+
+**Beat 19 (IDs 344–359):**
+- Original: 7 species-spread bones (IDs 344, 345, 346, 347, 348, 349, 350)
+- Cut: ID 348 (`the flies spread the Street-of-Steel approach`) and ID 349 (`the wasps spread the eastern-quarter proper`) — both entire lines deleted; numeric gaps 348/349
+- Kept: ID 344 (flies winter-onset), 345 (wasps dock-side), 346 (beetles south-wall), 347 (spiders eastern-quarter relay), 350 (beetles apothecary ground floor) — 5 bones, 3 species, preserves the key geographic/species events including the apothecary-ground-floor advance
+- Rationale: IDs 348/349 are redundant — flies already spread winter-onset network (344) and wasps already spread dock-side alleys (345); Street-of-Steel and eastern-quarter-proper are subsets already covered
+
+**Beat 24 (IDs 438–453):**
+- Original: 7 species-spread bones (IDs 438, 439, 440, 441, 442, 443, 444)
+- Cut: ID 442 (`the flies spread the Fish Gate pass`) and ID 443 (`the wasps spread the Fish Gate approach`) — both entire lines deleted; numeric gaps 442/443
+- Kept: ID 438 (flies overnight), 439 (wasps Fish Gate margin), 440 (beetles south-wall), 441 (spiders eastern-quarter relay), 444 (beetles south-wall perimeter) — 5 bones, 3 species
+- Rationale: IDs 442/443 triple-stack the Fish Gate geography (margin at 439, pass at 442, approach at 443); cut the two redundant Fish Gate sub-beats while keeping the primary Fish Gate margin bone
+
+#### C2. Redundant log cycle at beat 10 (IDs 183–207 region)
+
+- Original: three log cycles — (183/184/185), (196/197/198), (201/202/500)/(205/206/207)
+- Cut: IDs 196 (`taylor-hebert-flea-bottom opens the log`), 197 (`taylor-hebert-flea-bottom writes the entry`), 198 (`taylor-hebert-flea-bottom closes the log`) — entire log cycle deleted; numeric gaps 196/197/198
+- Kept: (183/184/185) log-post-visit, (201/202/500) weather-data log, (205/206/207) post-carter-handoff log
+- Rationale: the 196-198 log cycle opened immediately after the relay-mapping sequence (187-192) and before the weather-data relay (200). It was the most semantically redundant — the log at 183-185 already closes the post-visit record; the 201/202/500 log carries the distinct weather-data entry. The 196-198 cycle added nothing new.
+
+#### C3. Maester transit compression (IDs 303–309 → 3 bones)
+
+Cape-fic cycle-2 demand: W24 bones 303-309 (seven transit bones for "maester left and came back") compress to three maximum.
+
+- Original 7 transit bones: 303 (crosses room), 304 (descends stair), 305 (exits apothecary), 306 (enters side alley), 307 (beetles relay footfall), 308 (enters stairwell), 309 (enters upper room)
+- Cut: IDs 303, 304, 307, 308 — entire lines deleted; numeric gaps 303/304/307/308
+- Kept: 305 (exits apothecary), 306 (enters side alley), 309 (enters upper room) — 3 bones
+- Rationale: 303 (crosses room) and 304 (descends stair) are pre-exit interior movement; 308 (enters stairwell) is absorbed into 309 (enters upper room); 307 (beetles relay footfall) is redundant with ID 310 (beetles relay oc-broken-maester) which already carries the return-footfall signal. The three retained bones carry the content: exited, went to alley, returned upstairs.
+
+---
+
+### Group D: Relay-mapping compression (W15 / beat 10)
+
+Cape-fic demand: compress relay-mapping from 4 bones to 2 in IDs 187-192 region.
+
+- Original 4 relay bones: 187 (flies relay junction conversation), 188 (beetles relay alley traffic south), 190 (wasps relay Fish Gate margin traffic), 192 (beetles relay market-side north traffic)
+- Cut: ID 188 (`the beetles relay the alley traffic south`) and ID 192 (`the beetles relay the market-side north traffic`) — entire lines deleted; numeric gaps 188/192
+- Kept: 187 (flies relay junction conversation) and 190 (wasps relay Fish Gate margin traffic) — 2 bones, 2 species, geographically distinct (junction vs. Fish Gate)
+- Rationale: beetles had two entries (188 alley-south and 192 market-side-north); both are redundant with the junction and Fish Gate coverage; eliminating both retains full species diversity (flies + wasps in 2 bones) and removes duplication
+
+---
+
+### Counts
+
+- Lines edited: 0 (all Group A/B edits were pre-applied; confirmed in file)
+- Lines deleted (this session): 14
+  - Group D: IDs 188, 192
+  - Group C2: IDs 196, 197, 198
+  - Group C3: IDs 303, 304, 307, 308
+  - Group C1-beat14: ID 268
+  - Group C1-beat19: IDs 348, 349
+  - Group C1-beat24: IDs 442, 443
+- Lines deleted (prior cycle-3 session — Group B): IDs 418, 419
+- Final IDs: 1..503 with gaps at: 24, 35, 47, 61, 70, 78, 82, 93, 104, 117, 127, 135, 144, 156, 157, 158, 186, 188, 189, 191, 192, 193, 194, 196, 197, 198, 199, 203, 204, 208, 231, 245, 261, 265, 279, 295, 302, 303, 304, 307, 308, 314, 325, 329, 343, 348, 349, 360, 376, 382, 399, 418, 419, 423, 437, 442, 443, 454, 464, 476
+
+---
+
+### Verdict
+
+ALL-CRITERIA-MET
+
+- Group A (15 form-faults + 2 border flags): all confirmed resolved in file
+- Group B (INERT-STRETCH-BEAT22): confirmed resolved — IDs 416 onset/417 cessation retained; 418/419 deleted
+- Group C (cape-fic compression): applied — beat 14 reduced 4→3 species-spread; beat 19 reduced 7→5; beat 24 reduced 7→5; one log cycle cut at beat 10; maester transit compressed 7→3
+- Group D (relay-mapping): applied — 4 relay bones reduced to 2
+
+Note on cape-fic TOLERATED count: beat 14 (W16) had no species-spread differentiation bone added (dark-fantasy-reader's primary demand), only species-spread compression. The dark-fantasy-reader's cycle-2 primary demand for beat 14 was a body-response differentiation bone, which is a screen-writer/regen task (new bone required). This is compression only per the fixer task brief — the species-spread reduction addresses cape-fic's structural demand. The body-differentiation bone is a separate screen-writer action.

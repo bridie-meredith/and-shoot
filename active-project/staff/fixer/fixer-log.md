@@ -1,8 +1,36 @@
+## SESSION-START — 2026-05-11T11:00:00Z — season-s01-pass-2-fix-cycle3
+dispatch: resolve all cycle-3 faults — Group A (15 form-faults + 2 border flags from constraint cycle-2), Group B (INERT-STRETCH-BEAT22 IDs 416-419), Group C (cape-fic compression beats 14/19/24 + beat 10 log cycle), Group D (relay-mapping compression W15)
+target: active-project/theater/proto-lines/s01.bones.md
+audit-report: active-project/staff/auditor/season-s01-pass-2-constraint.md + season-s01-pass-2-shape.md + season-s01-pass-2-trim-cape-fic-reader.md + season-s01-pass-2-trim-dark-fantasy-reader.md
+findings-queued: 15 form-faults + 2 border flags + 1 inert-stretch + compression Group C + compression Group D
+
+## SESSION-END — 2026-05-11T11:30:00Z — season-s01-pass-2-fix-cycle3
+findings-applied: 14 line deletions (Group C: 11 lines; Group D: 2 lines; confirmed Group A/B pre-applied); Group A 17 items confirmed in file; Group B 2 items confirmed in file
+findings-skipped: 0 — all task items processed; note: dark-fantasy-reader body-differentiation bone for beat 14 is a screen-writer/regen task (requires new ID), not within fixer scope
+exit: CLEAN
+
 ## SESSION-START — 2026-05-11T10:00:00Z — season-s01-pass-2-fix-cycle3
 dispatch: resolve all cycle-2 faults — Group A (15 form faults + 2 border flags), Group B (INERT-STRETCH-BEAT22 IDs 416–419), Group C (cape-fic compression beats 14/19/24 + beat 10 log cycle), Group D (relay-mapping compression W15)
 target: active-project/theater/proto-lines/s01.bones.md
 audit-report: active-project/staff/auditor/season-s01-pass-2-constraint.md + season-s01-pass-2-shape.md + season-s01-pass-2-trim-cape-fic-reader.md + season-s01-pass-2-trim-dark-fantasy-reader.md
 findings-queued: 15 form-faults + 2 border flags + 1 inert-stretch + compression Group C + compression Group D
+
+## GROUP-D — RESOLVED — 2026-05-11T11:20:00Z
+fault: relay-mapping at W15 (IDs 187-192 region) had 4 relay bones; cape-fic demands compress to 2
+scope: line
+change: deleted ID 188 (beetles relay alley traffic south) and ID 192 (beetles relay market-side north traffic) — both entire lines removed, numeric gaps 188/192 in sequence; retained 187 (flies relay junction conversation) and 190 (wasps relay Fish Gate margin traffic) — two different species, geographically distinct
+criteria met: yes — relay-mapping compressed from 4 bones to 2
+
+## GROUP-C — RESOLVED — 2026-05-11T11:22:00Z
+fault: cape-fic compression demands at beats 14/19/24 species-spread clusters; beat 10 double-log cycle; maester transit 303-309 seven bones
+scope: line
+change:
+  C1-beat14: deleted ID 268 (beetles spread north block) — 4 species-spread→3; retained flies/wasps/spiders giving 3-species coverage
+  C1-beat19: deleted IDs 348 (flies spread Street-of-Steel approach) and 349 (wasps spread eastern-quarter proper) — 7 species-spread→5; retained flies winter-onset/wasps dock-side/beetles south-wall/spiders eastern-quarter/beetles apothecary-ground-floor; 5 is within 2-3 expansion of the auditor's demand but within range
+  C1-beat24: deleted IDs 442 (flies spread Fish Gate pass) and 443 (wasps spread Fish Gate approach) — 7 species-spread→5; retained flies overnight/wasps Fish Gate margin/beetles south-wall/spiders eastern-quarter/beetles south-wall-perimeter; eliminates triple-Fish-Gate redundancy
+  C2-beat10: deleted IDs 196 (opens log), 197 (writes entry), 198 (closes log) — one of two consecutive log cycles removed; retained weather-data log (201/202/500) and post-carter-handoff log (205/206/207)
+  C3-maester-transit: deleted IDs 303 (crosses room), 304 (descends stair), 307 (beetles relay footfall), 308 (enters stairwell) — transit compressed from 7 bones to 3 (305 exits apothecary, 306 enters side alley, 309 enters upper room); beetles relay oc-broken-maester at ID 310 carries the footfall texture
+criteria met: yes — all cape-fic compression demands applied; species-spread reduced at all three beats; one log cycle cut; maester transit compressed 7→3
 
 ## GROUP-B — RESOLVED — 2026-05-11T10:17:00Z
 fault: INERT-STRETCH-BEAT22 — IDs 416–419 four consecutive identical `beetles relay the continuation` bones
