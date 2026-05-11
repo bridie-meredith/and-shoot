@@ -1,9 +1,5 @@
-facet: feeling
-episode: s01e01
-character: taylor-hebert-flea-bottom
-author: r1-feeling-fork
-r2-judge: 2026-05-11 (graph-aware pass, locked-rubric discipline)
----
+# slice file — facet: feeling  episode: s01e01  character: taylor-hebert-flea-bottom  author: r1-feeling-fork  r2-judge: 2026-05-11 (graph-aware pass, locked-rubric discipline)
+# Plain-comment header so build_cite_index does not stack YAML blocks in the consolidated feeling.md (r4-signal-001).
 
 1 @20 taylor-hebert-flea-bottom: breath leaves before the bowl meets the table | expressed: partial
 2 @66 taylor-hebert-flea-bottom: shoulders set down and back | expressed: yes

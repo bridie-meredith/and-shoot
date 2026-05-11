@@ -1,9 +1,5 @@
-facet: feeling
-episode: s01e01
-character: oc-dock-runner
-author: r1-feeling-author
-r2-judge: r2-feeling-judge-oc-dock-runner (2026-05-11)
----
+# slice file — facet: feeling  episode: s01e01  character: oc-dock-runner  author: r1-feeling-author  r2-judge: r2-feeling-judge-oc-dock-runner (2026-05-11)
+# Plain-comment header so build_cite_index does not stack YAML blocks in the consolidated feeling.md (r4-signal-001).
 
 1 @143 oc-dock-runner: the runner's eyes cut to the alley mouth before the feet move | expressed: no
 

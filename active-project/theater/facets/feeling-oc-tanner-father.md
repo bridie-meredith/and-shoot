@@ -1,9 +1,5 @@
-facet: feeling
-episode: s01e01
-character: oc-tanner-father
-author: R1 feeling fork — oc-tanner-father
-r2-judge: 2026-05-11 — KEEP×3, ADD×0, DELETE×0, CAP-REFUSAL×1 (graph-aware re-pass)
----
+# slice file — facet: feeling  episode: s01e01  character: oc-tanner-father  author: R1 feeling fork — oc-tanner-father  r2-judge: 2026-05-11 — KEEP x3, ADD x0, DELETE x0, CAP-REFUSAL x1 (graph-aware re-pass)
+# Plain-comment header so build_cite_index does not stack YAML blocks in the consolidated feeling.md (r4-signal-001).
 
 1 @14 oc-tanner-father: he holds the eyes on her hands and does not adjust the face | expressed: partial
 2 @48 oc-tanner-father: the hands do not lift from the work as he speaks the task | expressed: yes

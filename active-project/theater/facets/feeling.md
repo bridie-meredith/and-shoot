@@ -5,22 +5,14 @@ note: consolidated by build_cite_index from per-source slices. Single top-of-fil
 ---
 
 # source: oc-broken-maester
-facet: feeling
-episode: s01e01
-character: oc-broken-maester
-author: r1-feeling-oc-broken-maester
-r2-pass: r2-judge-oc-broken-maester
----
+# slice file — facet: feeling  episode: s01e01  character: oc-broken-maester  author: r1-feeling-oc-broken-maester  r2-pass: r2-judge-oc-broken-maester
+# Plain-comment header so build_cite_index does not stack YAML blocks in the consolidated feeling.md (r4-signal-001).
 
 1 @129 oc-broken-maester: the hand reaches the record-table before the gaze leaves the south wall | expressed: no
 
 # source: oc-dock-runner
-facet: feeling
-episode: s01e01
-character: oc-dock-runner
-author: r1-feeling-author
-r2-judge: r2-feeling-judge-oc-dock-runner (2026-05-11)
----
+# slice file — facet: feeling  episode: s01e01  character: oc-dock-runner  author: r1-feeling-author  r2-judge: r2-feeling-judge-oc-dock-runner (2026-05-11)
+# Plain-comment header so build_cite_index does not stack YAML blocks in the consolidated feeling.md (r4-signal-001).
 
 2 @143 oc-dock-runner: the runner's eyes cut to the alley mouth before the feet move | expressed: no
 
@@ -111,12 +103,8 @@ r2-judge: r2-feeling-judge-oc-dock-runner (2026-05-11)
 # slice; cross-character vocabulary scan is consolidated-feeling.md scope, not this fork.
 
 # source: oc-tanner-elder
-facet: feeling
-episode: s01e01
-character: oc-tanner-elder
-author: feeling-author-oc-tanner-elder
-r2-pass: judge (2026-05-11)
----
+# slice file — facet: feeling  episode: s01e01  character: oc-tanner-elder  author: feeling-author-oc-tanner-elder  r2-pass: judge (2026-05-11)
+# Plain-comment header so build_cite_index does not stack YAML blocks in the consolidated feeling.md (r4-signal-001).
 
 3 @90 oc-tanner-elder: his eyes move past her to the road before she lifts the pack | expressed: partial
 4 @151 oc-tanner-elder: his shoulder turns from the exchange before her answer lands | expressed: partial
@@ -173,12 +161,8 @@ All adds refused on per-scene-cap grounds OR on Q2/card-match-weak grounds. Zero
 Two fires, two distinct somatic channels (gaze; shoulder/postural), two distinct on-stage locators (the road; the exchange). Same syntactic frame ("his [body-part] [verb] [adverb-phrase] before [her-clause]") across both — that frame is the elder's signature register (his §Voice: done-ness-before-the-counterparty-registers-it), and the repetition is the character, not a parroting tic. The frame would saturate if a third fire used it; with two fires it reads as fingerprint, not formula. No across-character contamination to check (this is the per-character slice).
 
 # source: oc-tanner-father
-facet: feeling
-episode: s01e01
-character: oc-tanner-father
-author: R1 feeling fork — oc-tanner-father
-r2-judge: 2026-05-11 — KEEP×3, ADD×0, DELETE×0, CAP-REFUSAL×1 (graph-aware re-pass)
----
+# slice file — facet: feeling  episode: s01e01  character: oc-tanner-father  author: R1 feeling fork — oc-tanner-father  r2-judge: 2026-05-11 — KEEP x3, ADD x0, DELETE x0, CAP-REFUSAL x1 (graph-aware re-pass)
+# Plain-comment header so build_cite_index does not stack YAML blocks in the consolidated feeling.md (r4-signal-001).
 
 5 @14 oc-tanner-father: he holds the eyes on her hands and does not adjust the face | expressed: partial
 6 @48 oc-tanner-father: the hands do not lift from the work as he speaks the task | expressed: yes
@@ -315,12 +299,8 @@ r2-judge: 2026-05-11 — KEEP×3, ADD×0, DELETE×0, CAP-REFUSAL×1 (graph-aware
 # cluster, none redundant.
 
 # source: oc-tanner-mother
-facet: feeling
-episode: s01e01
-character: oc-tanner-mother
-author: r1-feeling-fork-oc-tanner-mother
-r2-pass: 2026-05-11 (graph-aware judge; B-locked-rubric v2; C-arbiter v2)
----
+# slice file — facet: feeling  episode: s01e01  character: oc-tanner-mother  author: r1-feeling-fork-oc-tanner-mother  r2-pass: 2026-05-11 (graph-aware judge; B-locked-rubric v2; C-arbiter v2)
+# Plain-comment header so build_cite_index does not stack YAML blocks in the consolidated feeling.md (r4-signal-001).
 
 8 @43 oc-tanner-mother: the hands still on the apron-front and the gaze holds the girl's face | expressed: partial
 9 @92 oc-tanner-mother: the mouth parts on a word and the word does not come | expressed: partial
@@ -403,12 +383,8 @@ R2 counts: K=2, D=0, A=0, cap-refusals=0.
 Decision shard: `active-project/staff/feeling/r2-decision-shard-oc-tanner-mother.md`.
 
 # source: taylor-hebert-flea-bottom
-facet: feeling
-episode: s01e01
-character: taylor-hebert-flea-bottom
-author: r1-feeling-fork
-r2-judge: 2026-05-11 (graph-aware pass, locked-rubric discipline)
----
+# slice file — facet: feeling  episode: s01e01  character: taylor-hebert-flea-bottom  author: r1-feeling-fork  r2-judge: 2026-05-11 (graph-aware pass, locked-rubric discipline)
+# Plain-comment header so build_cite_index does not stack YAML blocks in the consolidated feeling.md (r4-signal-001).
 
 10 @20 taylor-hebert-flea-bottom: breath leaves before the bowl meets the table | expressed: partial
 11 @66 taylor-hebert-flea-bottom: shoulders set down and back | expressed: yes
