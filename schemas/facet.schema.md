@@ -18,6 +18,16 @@ Every facet file uses the same line shape, regardless of facet type:
 - **`@<proto-line-id>`** — required anchor. The proto-line this facet entry decorates. Multiple facet entries may share the same anchor (e.g. several audience interest flags on the same beat).
 - **`<content>`** — facet-type-specific. See per-type rules below.
 
+#### Boundary-carry ID exception (tensometer only, URI-038, 2026-05-11)
+
+In `tensometer-<season-slug>-window-<NN>.md` review-window files only (the intermediate form produced at `/and-season` Phase 3 S10 Step 2; NOT in finalized `tensometer-<season-slug>e<NN>.md` files), entries representing boundary-carry bones from the windowN's open region (the first 10 bones — bones that signal active constraints from windowN-1's close per the boundary-carry discipline at Phase 3 S10 Step 4) MAY use the alpha-suffix form `0a`, `0b`, `0c`, ... for their `<id>` field. These entries sort before the first monotonic integer (`1`, `2`, ...) entry and are visually distinguishable as pre-window-open carry-throughs.
+
+This is a review-phase convention. The Phase 7 Step 4 finalization MUST normalize boundary-carry alpha-suffix IDs to monotonic integers continuing from the prior tens-entry-ID sequence (typically: rename `0a` → `1`, `0b` → `2`, and shift the rest of the file's IDs accordingly). The finalized per-episode tensometer file is strictly monotonic per the rule above — no alpha-suffix IDs survive into the deliverable form.
+
+Inline-rupture bones inserted mid-scene at S10 Step 3 (e.g. `17a @519 3` placed between `17` and `18` to signal a Scene-A rupture inserted at file-position-after-bone-17) follow the same convention: alpha-suffix IDs permitted in `-window-` files for narrative-position clarity; normalized to monotonic integers at Phase 7 Step 4.
+
+A `# boundary-carry` or `# inline-rupture` comment immediately preceding the alpha-suffix entry is recommended for traceability but not required for schema compliance.
+
 Header (frontmatter) optional but recommended for traceability:
 
 ```

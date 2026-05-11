@@ -279,7 +279,24 @@ Parallel fix dispatches allowed only when their target line ranges are disjoint 
 
 After fixes land, identify reviews whose scope intersects touched lines. Re-fire only those forks as a parallel Agent block sized to the invalidation set. S10 Sweep B re-fires per-window — only the touched window's sub-forks re-fire, not all of Sweep B. Broad changes (cross-stretch restructure) re-fire all of Sweep A and all of Sweep B.
 
-**Per-window iteration cap: 2** (URI-026). After 2 inner regen iterations on the same window without convergence, the residual is a `tens-gate-residual-HARD` finding routed to Phase 6 (F7-bone).
+**Re-fire is a mandatory convergence gate (URI-036, 2026-05-11).** A fork whose scope is invalidated by fixes is in `STALE-VERDICT` state until re-fired. Convergence (defined below) cannot be declared while any fork is in STALE-VERDICT. The dispatch budget pressure to skip re-fires — "the fix likely addresses the concern, the verdict probably flips, save the dispatches" — is the back-pressure mechanism that produces dishonest convergence. The rule is: re-fire OR don't claim convergence.
+
+Two structurally honest paths when re-fire is required:
+
+1. **Re-fire and re-evaluate.** The default path. Burns dispatches from the R1 budget. If the re-fire returns ACCEPT, the fork clears; if REVISE, the fix-routing/re-fire loop continues (within the 3-cycle Phase 3 cap).
+
+2. **Document a STALE-VERDICT skip as a verdict-surface note.** If the orchestrator chooses not to re-fire (for dispatch-budget reasons or any other operational reason), it MUST:
+   - Log the fork as `STALE-VERDICT-{fork-id}-{last-verdict}-{reason-for-skip}` in showrunner memory under `seasons[<slug>].stale_verdicts[]`.
+   - Surface it as an explicit `stale-verdict-{fork-id}` entry in the Phase 6 verdict's PASS-WITH-NOTES notes list.
+   - Forbid claiming the fork's verdict as part of convergence. If 3 of 18 Sweep A forks ship with STALE-VERDICT skips, the convergence line in the Phase 5 summary reads `Sweep A: 15-of-18 verified, 3 STALE-VERDICT (carry-forward)` — NOT `Sweep A all-clean`.
+
+A run that has STALE-VERDICT skips is structurally a PASS-WITH-NOTES at best — the notes are honest about which forks didn't get re-evaluated. The orchestrator-critic card treats stale-verdict counts as a B-category concern (the verdict is honest about the gap; the gap itself is information for next-run budget planning).
+
+**The dishonest path that this rule forecloses:** silently keeping a stale ACCEPT verdict from cycle-N to declare convergence at cycle-(N+1) when cycle-N+1 fixes invalidated the cycle-N scope. The s01 run did this with audience-S3 (3-of-3 REVISE in Sweep A; not re-fired after cycle-3 fix bones addressed the named concerns; verdict shipped as a carry-forward without explicit STALE-VERDICT marking). The new rule is: that carry-forward is a STALE-VERDICT entry. Convergence-line honesty is mandatory.
+
+**Convergence definition (revised under URI-036).** Convergence means: every Sweep A + Sweep B fork has a FRESH verdict (re-fired against post-fix bones) AND every fresh verdict is ACCEPT/CLEAN, AND no fix happened between the last sweep and the convergence check. A run with STALE-VERDICT skips converges on the fresh-verdict subset only; the stale-verdict subset is carry-forward.
+
+**Cap:** 3 full sweep→fix→re-fire cycles. Non-convergence at cap escalates with a failing-fork list AND a stale-verdict list (two separate categories; do not merge).
 
 ---
 
@@ -295,6 +312,7 @@ Brief: every line must remain legal under SVO mechanics AND constraint-coherent 
 - Per-line mechanic re-check at season scope (catches drift a smaller-scope review missed).
 - Cross-stretch constraint coherence: no stretch violates a constraint another stretch establishes; series laws and condition cards honored consistently.
 - Slug + reference resolution: every actor / prop / location slug resolves to the canonical card; no stretch introduces a slug another stretch lacks setup for.
+- **Hard-fence proper-noun scan (URI-032).** Scan every SVO body for series-forbidden proper nouns per the series-laws fence (e.g. for the Worm × ASOIAF setting: Earth-Bet specifics — Brockton Bay, Skitter, Lung, Khepri, Bakuda, PRT, Endbringer, Annette, Leviathan, Cauldron, Coil, Undersiders, Gold Morning, etc.). The scan runs against bones now, before downstream facet authoring inherits any leaked names. **Margit-referral slug components are in-scope:** if any line names a `margit-referral candidate for monument-<slug>` or carries a card-slug field anywhere in the bones, the slug components must be mechanism-descriptive, not Earth-Bet-proper-noun. `monument-endbringer-arrival` fails; `monument-fauna-silence-at-scale` passes. `monument-annette-death` fails; `monument-failed-recognition-by-dying-parent` passes. (The bones themselves rarely carry slugs, but the convention propagates downstream to memory-facet authoring; flagging at S1 catches it before /and-facets re-encodes the problem.)
 
 Output: `active-project/staff/auditor/season-<slug>-pass-S1-constraint.md`. File-level: `PASS` or `FAIL` with classified findings. Faults route to fixer; cross-stretch faults requiring chunk-statement revision route as `escalate`.
 
@@ -447,13 +465,34 @@ Formerly Phase 4 Steps 1, 1.5, 2 (the dramatist split proposal + per-episode ten
 
 **Step 2 — Tens authoring per provisional window.** Dramatist fork-mode, one fork per provisional window, in parallel. Inputs: the window's bone stretch + `design/shoot-v2/rubric-tensometer.md` + `schemas/facet.schema.md`. Forbid: behavior cards, vibes, audience personas, source prose. Output: `active-project/theater/facets/tensometer-<season-slug>-window-<NN>.md` (the `-window-` suffix replaces the old `e<NN>` since no episode is committed yet). Same content format as `/and-facets-r1` Layer 1a.
 
-**Step 3 — Combined audience + mechanic verdict per window.** Audience ×3 (Threshold Discipline + Season-Scope Adversarial body sections; Tens-attack vocabulary; OPEN-ENGAGES / CLOSE-EARNS-NEXT / SHAPE-COHERENT verdicts) + narrow-scope auditor (FREQUENCY-BAND / CURVE-SHAPE / AP-SCAN against `/and-facets-audit.md` class library). Combined per-window verdict: `WINDOW-ACCEPT` (≥2-of-3 personas ACCEPT AND MECHANIC-CLEAN AND no SHAPE-COHERENT-FLAT-AFTERMATH HARD) / `WINDOW-REVISE-bones-{line-range}` (regen in place) / `WINDOW-REVISE-cut-{reason}` (dramatist re-proposes the cut).
+**Window-roster declaration (URI-028).** Each window tens file's frontmatter must declare both the contiguous bone-ID range AND any interpolated late-rescue bones in narrative file-order inside the window. Format: `bones: <from>–<to> (+ interpolated: <id>, <id>, ...)`. The interpolated list is computed from the dramatist's cut-window file-position scan, not from `min(roster)..max(roster)`. This declaration is what Phase 7 Step 1's per-episode roster computation reads to build `roster_<NN>`. If a window omits or under-counts interpolated bones, Phase 7 Step 1 validation will fail. Cycle-3 F7-bone rescue bones (whose IDs sit above the contiguous range) are the most common interpolated class; declare them explicitly here, do not silently include them in the body without header signal.
+
+**Step 3 — Combined audience + mechanic verdict per window.** Audience ×3 (Threshold Discipline + Season-Scope Adversarial body sections; Tens-attack vocabulary; OPEN-ENGAGES / CLOSE-EARNS-NEXT / SHAPE-COHERENT verdicts) + narrow-scope auditor (FREQUENCY-BAND / CURVE-SHAPE / AP-SCAN against `/and-facets-audit.md` class library — class definitions currently inline in `.claude/commands/and-facets.md` §"Audit classes"). Combined per-window verdict: `WINDOW-ACCEPT` (≥2-of-3 personas ACCEPT AND MECHANIC-CLEAN AND no SHAPE-COHERENT-FLAT-AFTERMATH HARD) / `WINDOW-REVISE-bones-{line-range}` (regen in place) / `WINDOW-REVISE-cut-{reason}` (dramatist re-proposes the cut).
+
+**Kickback resolution-status (URI-028 follow-on).** The mechanic auditor's CURVE-SHAPE pass surfaces structural kickbacks (rise-without-peak, sustained-plateau-without-rupture, etc.) per scene inside the window. Each kickback flagged at S10 Step 3 must end the window verdict with an explicit terminal status: `KICKBACK-RESOLVED-by-{bone-id-list}` (the rescue bone(s) that closed the gap) or `KICKBACK-CARRY-FORWARD-{reason}` (acknowledged residual that downstream /and-facets / /and-shoot must honor). Silent drop of an identified kickback is not permitted. Phase 7 Step 4 reads the kickback resolution-status to confirm rescue bones are present in the relevant episode roster.
+
+**Per-episode frequency-band pre-check (URI-028).** When the dramatist's cut proposal lands a window aligned 1-to-1 with a future episode (the common case — windows ARE the cut proposal), the mechanic auditor runs the FREQUENCY-BAND check against the window's roster (not just the contiguous body) and flags any breach as a Phase 7 Step 4 carry-forward. If a roster-scope band breach is identified, the verdict declares `PER-EPISODE-BAND-RISK-{rung}-{actual-pct}-{band-pct}` so the dramatist can decide between window-revise-bones (add rescue 2s/3s now) or rubric-exemption (cite `design/shoot-v2/rubric-tensometer.md` §Exemptions explicitly with positive criteria match). Carrying the breach forward to Phase 7 without one of those two actions is structurally not permitted — it generates the same residual-HARD that bit s01e01 at /and-facets-final-audit.
 
 **Step 4 — Boundary-carry check (absorbed from former S4.5).** For each provisional boundary `windowN → windowN+1`, verify that state-changes in windowN's close region (last 20 bones) are signaled as active constraints in windowN+1's open region (first 10 bones), physical-register not exposition. Per-boundary verdict: `BOUNDARY-CARRIES` / `BOUNDARY-DROPS-{state}`. Drops route to screen-writer for 1–2 physical-register bone additions at the windowN+1 open (using the existing REGEN-ADD discipline).
 
 **Bone-regen routing (URI-026):** REGEN-REPLACE / REGEN-ADD / REGEN-BOTH carry their original semantics. Position-aware mapping (URI-010) and `# pov:` preservation remain mandatory.
 
 **Per-window iteration cap: 2.** After 2 inner regen iterations without convergence, the residual is a `tens-gate-residual-HARD` finding routed to Phase 6 (orchestrator-critic F7-bone).
+
+**Post-cap rescue authorization (URI-037, 2026-05-11).** When the per-window iteration cap is hit and `tens-gate-residual-HARD` findings would route to Phase 6 F7-bone (auto-FAIL per the orchestrator-critic card §F7), the orchestrator MAY surface the residual list to the user with three explicit options before invoking Phase 6:
+
+1. **Accept F7-FAIL.** Continue to Phase 6, which emits FAIL with the F7-bone trigger named. Downstream work is gated on user decision per the orchestrator-critic card. Honest default.
+
+2. **Authorize F7-residual-cleanup rescue.** A user-gated, single-purpose third cycle scoped narrowly to the named F7-bone residuals (no broad re-sweeps). The rescue:
+   - Runs as `Phase 3 cycle-3-rescue` with explicit audit-trail logging in `season-<slug>-plan-log.md` recording the user authorization timestamp and the named residual list it is scoped to.
+   - Is dispatch-budget-counted normally (does NOT get a budget exemption; rescue dispatches count toward R1).
+   - Reuses the regular fix-routing → re-fire machinery (NOT a separate machinery; subject to the URI-036 re-fire-mandatory rule).
+   - Honors the per-window iteration cap retroactively: cycle-3-rescue is the LAST cycle. No cycle-4. If cycle-3-rescue fails to clear the residuals, Phase 6 fires F7-FAIL with the residual list intact.
+   - On success (all named residuals cleared and re-fires return CLEAN): Phase 6 verdict becomes `PASS-WITH-POST-CAP-RESCUE` — a discrete verdict class distinct from PASS-WITH-NOTES. The verdict line names the rescue scope: `PASS-WITH-POST-CAP-RESCUE — <N> F7-bone residuals cleared by cycle-3-rescue authorized at <timestamp>`. PASS-WITH-POST-CAP-RESCUE is structurally weaker than PASS-WITH-NOTES (it signals the strict-cap discipline was breached even though structural progress landed) and stronger than FAIL (the run did produce a sound skeleton).
+
+3. **Rubric carry-back.** If the residual pattern persists across multiple iterations against the same rubric and the dramatist's defense names a rubric-vs-corpus mismatch (per R3 in the orchestrator-critic card), route the rubric to carry-back as a SLEEPER for next-session re-tune. Phase 6 emits PASS-WITH-NOTES with the SLEEPER named. The current run accepts the residual as a rubric-mismatch artifact, not as a structural failure.
+
+**The path through F7 must be explicit.** Silent cycle-3 rescues — where the orchestrator runs additional iterations past the per-window cap without naming the F7-residual scope, without user authorization, and without the PASS-WITH-POST-CAP-RESCUE verdict tag — are forbidden under URI-037. The s01 run did a silent rescue (cycle-3 fixed F7-bone residuals before Phase 6, and Phase 6 emitted PASS-WITH-NOTES without naming the rescue) — the verdict honesty was downstream-corrected via this URI but the original run breached the discipline.
 
 **Output:** `active-project/staff/auditor/season-<slug>-pass-S10-bone-gate-window-{NN}.md` × N (where N is the provisional window count). File-level per window: `WINDOW-ACCEPT` / `WINDOW-REVISE-{reason}` / `BOUNDARY-DROPS-{state}`.
 
@@ -574,11 +613,24 @@ Runs after Phase 6 verdict. **No review loop, no kickback.** This phase is bookk
 
 If Phase 6 verdict was FAIL, do **not** run Phase 7 — escalate to user, who decides whether to fix the run or accept the failure. If PASS-WITH-NOTES, Phase 7 runs normally (notes inform next session's planning, not this one's persistence).
 
-### Step 1 — Number episodes
+### Step 1 — Number episodes and compute per-episode bone-rosters (URI-028)
 
 Number `<season-slug>e01`, `<season-slug>e02`, … in season order against the final accepted S10 cut points. No titles.
 
-### Step 2 — Write per-episode files
+**Cut points are file-position, not numeric ID.** The S10 cut proposal names cut points by adjacent bone IDs (e.g. "after bone 155 / before bone 159"). Phase 7 reads them as file-order cuts: walk `<season-slug>.bones.md` line-by-line; everything between the previous cut's file-position and this cut's file-position belongs to one episode, regardless of whether the bone IDs in that span are strictly contiguous.
+
+**Per-episode bone-roster computation.** For each episode, build an ordered list `roster_<NN>` of every bone ID encountered between its previous cut's file-position and its own cut's file-position. The roster is the canonical bone-set for the episode — `aggregate_range` is derived FROM the roster, not the other way around.
+
+Late-rescue bones inserted inline at narrative-correct file-positions (e.g. F7-bone cleanup bones with IDs above the contiguous range — 517, 525, etc.) are included in whichever episode's roster their file-position falls inside, regardless of numeric ID. Phase 7 must NOT use `min(roster)..max(roster)` as the inclusion test; it uses **file-position narrative-order** as the inclusion test, and then expresses the result via the roster.
+
+**Pre-Step-2 validation.** Before writing any per-episode file, verify:
+- Union of all `roster_<NN>` equals the set of active bone IDs in `<season-slug>.bones.md` (no bone unassigned; no bone double-assigned).
+- Every active bone ID in the bones file appears in exactly one roster.
+- Bones that fall on the cut-line (the line containing the named cut-point bone) belong to the EARLIER episode; the next episode opens at the next bone after the cut-line.
+
+If validation fails: escalate to user with a diff between the expected union and the computed union — do NOT proceed to Step 2 with a leaky split. This is the structural backstop against URI-028 (per-episode tens leakage).
+
+### Step 2 — Write per-episode proto-line files
 
 For each episode, write `active-project/theater/proto-lines/<season-slug>e<NN>.md`. Header (seven required fields, in order):
 
@@ -591,33 +643,77 @@ goal: <one sentence — what this episode shows the audience>
 cast: <slug>, <slug>, <slug>, ...
 locations: <loc-slug>, <loc-slug>, ...
 prior_episode: <previous-episode-slug | none>
-aggregate_range: <from>-<to>
+aggregate_range: <expression>
 ```
 
 Field rules:
 - **`episode:`** — episode slug (matches filename).
 - **`narrator:`** — plan-designated narrator (URI-009 — the season-plan's POV ruling wins over raw line-count dominance inside the bones).
 - **`goal:`** — orchestrator distills from the bones-stretch + dramatist's per-cut rationale.
-- **`cast:`** — comma-separated actor slugs appearing as SUBJECT or `speaks to <listener>` listener anywhere in this episode's bones. Computed by slug-grep over the bones; order by first-appearance ID; no inference.
-- **`locations:`** — slug-grep over OBJECTs and SUBJECTs against warehouse loc cards.
+- **`cast:`** — comma-separated actor slugs appearing as SUBJECT or `speaks to <listener>` listener anywhere in this episode's bones. Computed by slug-grep over the episode's roster bones; order by first-appearance in narrative file-order; no inference.
+- **`locations:`** — slug-grep over OBJECTs and SUBJECTs against warehouse loc cards, scoped to the episode's roster.
 - **`prior_episode:`** — slug of previous episode in season order, or `none` for e01.
-- **`aggregate_range:`** — the contiguous bones-id range covered by this episode (e.g. `1-87`). Replaces per-line `# aggregate-id:` comments.
+- **`aggregate_range:`** — derived from `roster_<NN>`. Two legal forms (URI-028, 2026-05-11):
+  - **Contiguous-only form** — `<from>-<to>` (e.g. `1-87`) when the roster is a single contiguous integer range (with at most schema-legal deletion gaps).
+  - **Contiguous + interpolated form** — `<from>-<to> (+ interpolated: <id>, <id>, ...)` (e.g. `1-155 (+ interpolated: 495, 504, 506, 516, 517, 518, 525)`) when the roster contains late-rescue bones whose numeric IDs fall outside the contiguous range but whose narrative file-position belongs to this episode. The parenthetical lists every such ID in ascending order.
 
-Body: bones from the stretch, **renumbered 1..M** starting at 1 per episode. POV `# pov:` markers copied through. No per-line `# aggregate-id:` comments (URI-010 position-aware mapping handles fault routing).
+  The aggregate_range expression MUST be an honest declaration of the roster — every bone in the body must appear within either the contiguous range or the interpolated list, and every roster bone must appear in the body. Replaces per-line `# aggregate-id:` comments.
 
-### Step 3 — Validate
+**Body:** bones from the roster, in narrative file-order, **renumbered 1..M** starting at 1 per episode. Interpolated late-rescue bones get their natural sequence number in the renumbering — they are not "appendix" content, they are inline body content at their narrative position. POV `# pov:` markers copied through. No per-line `# aggregate-id:` comments (URI-010 position-aware mapping handles fault routing).
 
-For each per-episode file: seven header fields present, contiguous numbering 1..M, no orphan content. `cast` matches slug-grep (sanity check, not gate). `aggregate_range` contiguous and non-overlapping with siblings; union of all ranges equals the bones file's 1..N (accounting for legal ID-deletion gaps per URI-010).
+### Step 3 — Validate per-episode files
 
-### Step 4 — Tens-file finalization (URI-026)
+For each per-episode file:
+- Seven header fields present.
+- Contiguous local-ID numbering 1..M in the body (no gaps in the local-ID sequence, regardless of season-global ID gaps).
+- No orphan content.
+- `cast` matches slug-grep over the body (sanity check, not gate).
+- **`aggregate_range` honesty check (URI-028):** parse the aggregate_range expression; the set of bone IDs it covers (contiguous range ∪ interpolated list) must exactly equal `roster_<NN>` from Step 1. Mismatch → abort.
 
-Rename the slug-suffixed `tensometer-<season-slug>-window-{NN}.md` files to `tensometer-<season-slug>e<NN>.md` matching the final episode slugs. These travel with each per-episode proto-line file and are the bone-gate's deliverable. `/and-shoot` Phase 0 renames the active-episode tens file to `theater/facets/tensometer.md` as its working surface; the slug-suffixed copy remains as canonical archive.
+Across siblings:
+- `aggregate_range` expressions cover disjoint roster sets — no bone belongs to two episodes.
+- Union of all rosters equals the bones file's active ID set (1..N minus legal deletion gaps per URI-010).
+
+### Step 4 — Tens-file finalization (URI-026, URI-028)
+
+For each provisional `tensometer-<season-slug>-window-{NN}.md` file from Phase 3 S10 Step 2, derive the matching per-episode tens file `tensometer-<season-slug>e<NN>.md`:
+
+1. **Roster filter.** Walk the window tens file's entries. For each entry, the anchor `@<bone-id>` is a season-global ID. Keep the entry iff `<bone-id>` is in `roster_<NN>` for the corresponding episode (computed in Step 1). Drop entries whose anchor is in another episode's roster — these belong to that other episode's tens file (re-home them, do not delete them).
+
+   The window-to-episode mapping may not be 1-to-1: a single late-rescue bone in window W2's tens file may belong (by file-position) to episode 1's roster. In that case, the entry moves to `tensometer-<season-slug>e01.md`, not `tensometer-<season-slug>e02.md`. The window files are review windows; the episode files are deliverables; the roster is the source of truth.
+
+2. **Anchor renumbering.** After the roster filter, rewrite each entry's anchor from season-global ID to the episode-local renumbered ID assigned in Step 2's body (e.g. season-bone `@517` becomes local-bone `@58` in s01e01 if it sits at the 58th body position). The tens file ships against per-episode local IDs to match the per-episode proto-line file.
+
+3. **Per-entry-ID renumbering (URI-038, 2026-05-11).** Tens entries' own IDs (the field before `@`) are renumbered into the per-episode file's monotonic integer space, in narrative-order. No alpha-suffixed IDs survive into the finalized per-episode file — all `0a / 0b / 0c` boundary-carry entries and all `<N>a` mid-scene inline-rupture entries are normalized to sequential monotonic integers. Per the `schemas/facet.schema.md` §"Boundary-carry ID exception" rule: alpha-suffix IDs are permitted only in `-window-` review files; Phase 7 Step 4 is the canonical normalization step. The downstream `/and-facets` Phase 5 audit STRUCTURAL class verifies monotonicity on the per-episode file and would flag any surviving alpha-suffix IDs as HARD.
+
+4. **Header rewrite.** Each per-episode tens file's frontmatter:
+   ```
+   facet: tensometer
+   episode: <season-slug>e<NN>
+   bones: <aggregate-range-expression>
+   author: dramatist (derived from window-<NN> at Phase 7 finalization)
+   ---
+   ```
+   `bones:` mirrors the per-episode proto-line file's `aggregate_range:`. The "(includes interpolated IDs ...)" parenthetical from the window file is replaced by the canonical aggregate_range expression.
+
+5. **Per-episode frequency-band re-verification.** After the roster filter and renumbering, recompute 1s/2s/3s ratios on the per-episode entry count. Compare against `design/shoot-v2/rubric-tensometer.md` §"Frequency band" (60-75% 1s, 20-30% 2s, 5-10% 3s).
+
+   - **Within band:** clean. Record in the per-episode tens file's footer ("Per-episode frequency-band: <ratios> — within band").
+   - **Outside band:** check `design/shoot-v2/rubric-tensometer.md` §"Frequency-band exemptions" against the breach pattern. If a named exemption applies with positive criteria met, record the exemption: `Per-episode frequency-band: <ratios> — <below-floor|above-ceiling> on <1s|2s|3s>; exemption: <exemption-slug> (criteria: <bulleted-positive-criteria>); confirmed against rubric §Exemptions`. If no exemption applies, flag as `per-episode-tens-frequency-residual-{HARD|SIGNAL}` and route to:
+     - **SIGNAL (single-rung breach within 5 percentage points of band):** record as Phase 6 carry-forward note; downstream /and-facets audit re-flags if uncorrected.
+     - **HARD (multi-rung breach OR >5 points outside band OR no rubric exemption applies):** route to screen-writer for in-place 2-rated bone addition at low-density scenes; cap at 2 inner iterations; residual after cap is logged in showrunner memory as `seasons[<slug>].episodes[<slug>].residuals` and surfaces in /and-facets audit as the same flag class.
+
+   This is the per-episode frequency-band gate the season-scope bone-gate at Phase 3 S10 cannot enforce (the bone-gate runs against window-scope, which can absorb cross-episode averaging that masks per-episode breaches).
+
+`/and-shoot` Phase 0 renames the active-episode tens file to `theater/facets/tensometer.md` as its working surface; the slug-suffixed copy remains as canonical archive.
 
 `/and-facets` Phase 0 stages the per-episode `tensometer-<season-slug>e<NN>.md` file as the working `theater/facets/tensometer.md` and aborts if the upstream file is missing. Tens is **upstream-only** as of the /and-facets collapse (2026-05-10) — there is no in-pipeline tens authoring downstream of /and-season.
 
 ### Step 5 — Persist split into showrunner memory
 
-Update `seasons[<slug>].episodes[]` with one entry per produced episode (`slug`, `status: protolined`, `narrator`, `interlude` flag if applicable, `chunk` (post-hoc one-paragraph distill), `proto_lines_path`, `cast`, `locations`, `prior_episode`, `aggregate_range`). No title field.
+Update `seasons[<slug>].episodes[]` with one entry per produced episode (`slug`, `status: protolined`, `narrator`, `interlude` flag if applicable, `chunk` (post-hoc one-paragraph distill), `proto_lines_path`, `tens_path`, `cast`, `locations`, `prior_episode`, `aggregate_range`, plus `per_episode_tens_band_verdict: {1s: <pct>, 2s: <pct>, 3s: <pct>, status: <within-band|exempt-<slug>|residual-<class>}`). No title field.
+
+If Step 4's per-episode frequency-band re-verification produced a `per-episode-tens-frequency-residual-*` flag that could not be cleared in-pipeline, append it under `seasons[<slug>].episodes[<slug>].residuals` so /and-facets and /and-shoot see it as a known carry-forward at episode-open.
 
 Set `active.episode: <season-slug>e01`. Season status remains `active` until `/and-wrap`.
 

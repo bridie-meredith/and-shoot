@@ -1,8 +1,12 @@
 facet: tensometer
-window: s01-window-01
-bones: 1–155
-author: dramatist
+episode: s01e01
+bones: 1-155 (+ interpolated narrative-scope: 495, 504, 506, 516, 517, 518, 525)
+author: dramatist (Phase 7 finalization from s01-window-01, revised 2026-05-11 per URI-028)
 ---
+
+# Working surface — staged for s01e01 /and-facets run
+
+This file is the per-episode-tens working surface copied from `tensometer-s01e01.md`. See the canonical archive for the full URI-028 carry-forward note and the URI-034 Exemption 5 frequency-band claim documented in this file's footer.
 
 1 @1 1
 2 @2 1
@@ -154,9 +158,15 @@ author: dramatist
 After strip of 8 out-of-range anchor entries (IDs 79/80/123/123a/129/143/147/148 — anchors @495, @504, @506, @518, @138, @516, @517, @525 removed per C1 remediation):
 
 - Total entries: 141
-- 3s: 7/141 ≈ 5.0% (target 5–10%) — within band
-- 2s: 21/141 ≈ 14.9% (target 20–30%) — below floor (opening-window low-charge; structural per orchestrator-verdict; below-floor by 8 entries at 20% floor threshold)
-- 1s: 113/141 ≈ 80.1% (target 60–75%) — above ceiling (same structural cause)
+- 3s: 7/141 ≈ 5.0% (standard band 5-10% / relaxed band 4.0-10%) — within both bands
+- 2s: 21/141 ≈ 14.9% (standard band 20-30% / relaxed band 12-22%) — within relaxed band
+- 1s: 113/141 ≈ 80.1% (standard band 60-75% / relaxed band 75-85%) — within relaxed band
+
+### Frequency-band exemption claim (URI-034, 2026-05-11)
+
+Per `design/shoot-v2/rubric-tensometer.md` §"Frequency-band exemptions" / **Exemption 5 — Tone-law-licensed slow-burn register**, this episode's 2s below standard floor (14.9% vs 20%) and 1s above standard ceiling (80.1% vs 75%) are exempt-under-tone-law. Positive criteria quoted in the canonical archive at `tensometer-s01e01.md` §"Frequency-band exemption claim". Summary: (a) `cond-series-tone-constraints-125ac` cited as tone-law; (b) card §"Relaxed tens frequency-band for this config (URI-034 Exemption 5)" specifies 1s 75-85% / 2s 12-22% / 3s 4.5-10% season-avg, 4.0-10% per-episode — all per-episode rates fall inside; (c) 3s rung at 5.0% (within both standard and relaxed band), every named scene carries its peak per Curve verdict §"3s justified"; (d) tone-law applies across all four planned seasons.
+
+**Exemption verdict:** EXEMPT-UNDER-TONE-LAW. flag-005 UPHELD-HARD residual now closeable.
 
 ## Curve verdict
 

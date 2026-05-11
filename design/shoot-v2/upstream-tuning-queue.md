@@ -392,7 +392,13 @@ An item is closed when:
 
 Items are **never silently abandoned**. If the team decides a queued item is no longer needed, the queue entry is updated to status `ABANDONED — <reason>` and stays for trace.
 
-### URI-028 — /and-season Phase 7 Step 4 — per-episode tens cut leaks season-window bones
+### URI-028 — /and-season Phase 7 Step 4 — per-episode tens cut leaks season-window bones [RESOLVED 2026-05-11]
+
+**Resolution (2026-05-11):** `.claude/commands/and-season.md` Phase 7 Step 1 rewritten to compute per-episode bone-roster by walking `s01.bones.md` in narrative file-order (not by min-max numeric ID). Aggregate_range field syntax extended to support `<from>-<to> (+ interpolated: <id>, <id>, ...)` form per URI-028. Phase 7 Step 4 adds a roster-filter that re-homes leaked tens entries to the correct per-episode tens file plus a per-episode frequency-band re-verification gate. Phase 3 S10 Step 2 adds a window-roster declaration requirement on tens file headers; Step 3 adds a per-episode-band pre-check and explicit kickback resolution-status declarations. s01 outputs (s01e01.md / s01e02.md / s01e03.md aggregate_range + tensometer-s01e01.md / tensometer-s01e02.md / tensometer-s01e03.md headers) revised to honest-form. Body re-rendering against full roster pending Phase 7 re-execution (out of scope for this fix round).
+
+**Original issue follows for historical context:**
+
+
 
 - **Category:** Protoline upstream / orchestration command (`/and-season` Phase 7 Step 4).
 - **Source:** /and-facets s01e01 run, 2026-05-11. Audit findings flag-001, flag-002, flag-008, flag-010 — all HARD; all concentrate in tensometer.
@@ -437,7 +443,13 @@ Items are **never silently abandoned**. If the team decides a queued item is no 
 - **Linkage:** if URI-030 is resolved via the facet-as-source-of-truth approach (rebuild citations from facets), this URI's deletion-cascade need is subsumed (the rebuild handles deletions trivially). The two URIs converge on the same fix.
 - **Cost:** small if it's the rebuild-from-facets approach. Medium if it's a discrete deletion-cascade pass added to the existing union flow.
 
-### URI-032 — memory facet — margit-referral slug naming convention (Earth-Bet proximity)
+### URI-032 — memory facet — margit-referral slug naming convention (Earth-Bet proximity) [RESOLVED 2026-05-11]
+
+**Resolution (2026-05-11):** `design/shoot-v2/rubric-memory-flags.md` §"Form" tightened — slug components mandate mechanism-descriptive form; Earth-Bet proper nouns (locker, Annette, Endbringer, Bakuda, PRT, Skitter, Khepri, Gold Morning, Leviathan, Behemoth, Coil-Dinah-resolution) explicitly forbidden as slug components. Examples in `<target reference>` field updated. §"Hard-fence asymmetry between fields" updated — target-reference field hosts metadata but the slug *surface* still carries the fence per the warehouse-card-ingestion path. `.claude/commands/and-season.md` Pass S1 (Constraint audit) brief extended with hard-fence proper-noun scan for SVO bodies AND margit-referral slug components. s01e01's existing memory.md slugs were already renamed in the /and-facets remediation pass.
+
+**Original issue follows for historical context:**
+
+
 
 - **Category:** Rubric tuning + margit intake validation.
 - **Source:** /and-facets s01e01 audit, 2026-05-11. Audit flag-012 (CONSTRAINT, HARD-proximity).
@@ -458,7 +470,23 @@ Items are **never silently abandoned**. If the team decides a queued item is no 
   3. Keep the one-clause rule strict and require doubled-register figures to be re-shaped to one-clause form (in this run, narrator:25 was rewritten to one-clause per option 3 by the fixer).
 - **Cost:** small (rubric text). The s01e01 case was resolved via option 3 in the remediation pass; the rubric question stands.
 
-### URI-034 — Frequency-band exemption taxonomy missing
+### URI-034 — Frequency-band exemption taxonomy missing [RESOLVED 2026-05-11]
+
+**Resolution (2026-05-11):** `design/shoot-v2/rubric-tensometer.md` gains §"Frequency-band exemptions" with 5 enumerated exemption classes (each with positive criteria and auditor protocols):
+
+1. **Exemption 1 — Establishment-window low-charge.** Single-episode establishment effect that does not recur; permits 2s 14-20% / 1s 75-80%; 3s floor holds; criterion (d) auto-invalidates if pattern replicates in season's second window.
+2. **Exemption 2 — Single-locale interlude.** Interlude episode confined to one locale; permits 1s up to 85% / 3s down to 3%; 2s floor holds.
+3. **Exemption 3 — Sustained-action sequence.** ≥80% bones one contiguous action; permits 2s up to 45% / 3s up to 15%; 1s floor at 40%.
+4. **Exemption 4 — Post-peak denouement.** Plan-declared LATE-WEIGHT-LICENSED arc; permits 3s down to 3%; 2s floor holds.
+5. **Exemption 5 — Tone-law-licensed slow-burn register.** Series-tone condition card declares slow-burn / low-rupture-density with quantified relaxed band; permits 1s up to 85% / 2s down to 12% persistently; 3s relaxed to 4.5% season-avg + 4.0% per-episode floor.
+
+Cross-cutting: exemption stacking is FAIL. Honesty discipline: exemption claims must quote positive criteria evidence, not assert qualitative defenses.
+
+`/and-facets` Phase 5 audit FREQUENCY-BAND class reads §Exemptions before declaring HARD. `cond-series-tone-constraints-125ac.card.md` updated with quantified relaxed-band statement satisfying Exemption 5 criteria (a) and (b). s01e01/02/03 tens files now file Exemption 5 claims with quoted criteria; flag-005 UPHELD-HARD residual becomes closeable on /and-facets re-audit.
+
+**Original issue follows for historical context:**
+
+
 
 - **Category:** Rubric tuning (`design/shoot-v2/rubric-tensometer.md`).
 - **Source:** /and-facets s01e01 audit, 2026-05-11. Audit flag-005 (FREQUENCY-BAND HARD). Tens 2s rate = 17.4% (below 20% floor). The tens file's self-defense: "opening-window low-charge; structural per orchestrator-verdict." But the FREQUENCY-BAND rubric does not enumerate exemption classes — "opening-window low-charge" is a qualitative claim, not a rubric-enumerated exempted condition.
@@ -477,4 +505,36 @@ Items are **never silently abandoned**. If the team decides a queued item is no 
   3. Make the auditor's TASTE-FLAG class (class 10) the audience-adversarial path — define it as the audience equivalent that the audit emits internally. Then bidirectional convergence = TASTE-FLAG and HARD class agree on a finding. Requires audit reframing.
 - **Recommended:** option 2 short-term (revise the card to mark not-applicable in current shape), option 1 medium-term (add the audience phase as the shape evolves).
 - **Cost:** small (card-text edit) for option 2; medium-large (command-shape change) for option 1.
+
+### URI-036 — /and-season Phase 3 re-fire discipline gap [RESOLVED 2026-05-11]
+
+- **Category:** Orchestration command (`/and-season` Phase 3) + orchestrator-critic card verdict surface.
+- **Source:** /and-season s01 post-mortem, 2026-05-11. Orchestrator-verdict noted: "audience-S3 not re-fired this cycle (dispatch-budget conservation); carry-forward as edit-pass concern." The Phase 3 spec mandates re-fire when fixes touch a fork's scope, but the s01 run shipped Sweep A convergence claims based on pre-fix audience-S3 verdicts (3-of-3 REVISE in Sweep A; cycle-3 fixes addressed the named concerns; forks not re-fired; verdict shipped without explicit STALE-VERDICT marking).
+- **Issue:** The convergence definition ("all-clean reports across both sweeps and no fixes between") cannot honestly be claimed when forks whose scope was invalidated by fixes weren't re-fired. The dispatch budget creates back-pressure to skip re-fires. The spec was ambiguous about whether stale verdicts could count as fresh.
+- **Resolution (2026-05-11):** `.claude/commands/and-season.md` Phase 3 Re-fire section rewritten under URI-036. Re-fire is now a mandatory convergence gate: a fork with invalidated scope is in STALE-VERDICT state until re-fired. Two honest paths: (1) re-fire and re-evaluate (default; burns dispatches), (2) document a STALE-VERDICT skip as an explicit verdict-surface note (`stale-verdict-{fork-id}` in PASS-WITH-NOTES). Convergence definition revised: every fork must have a FRESH verdict; STALE-VERDICT subset is carry-forward only, not claimable as convergence. The orchestrator-critic card adds `stale-verdict-{fork-id}` to the PASS-WITH-NOTES note class enumeration (v1.3 versioning entry).
+- **Cost:** small (spec text). Behavior change: future runs that skip re-fires must explicitly mark STALE-VERDICT and accept the PASS-WITH-NOTES tag; silent skips are forbidden.
+
+### URI-037 — /and-season post-cap rescue authorization path [RESOLVED 2026-05-11]
+
+- **Category:** Orchestration command (`/and-season` Phase 3) + orchestrator-critic card verdict class.
+- **Source:** /and-season s01 post-mortem, 2026-05-11. The s01 run executed an ad-hoc user-authorized cycle-3 cleanup pass to clear F7-bone residuals before Phase 6 verdict. The spec said per-window iteration cap was 2 with residuals routing to Phase 6 F7-bone (auto-FAIL). The orchestrator-verdict described cycle-3 as "post-cap rescue authorized by user" but the spec had no language for this path — it was a silent escape hatch that breached the strict-cap discipline.
+- **Issue:** Two reconciliation options: (a) keep F7 strict (no in-run rescue; user fix outside the run or accept FAIL), (b) formalize the rescue path with audit-trail discipline and a discrete verdict class. Silent rescues without verdict-class signaling produced dishonest PASS-WITH-NOTES verdicts that should have been FAIL or a more visibly-degraded class.
+- **Resolution (2026-05-11):** Chose option (b). `.claude/commands/and-season.md` Phase 3 §"Post-cap rescue authorization" added under URI-037. When per-window iteration cap is hit and F7-bone residuals would route to Phase 6, the orchestrator surfaces three options to the user: accept F7-FAIL (default), authorize cycle-3-rescue (single-purpose, scoped to F7-residuals, dispatch-budget-counted, no cycle-4), or rubric carry-back (route to SLEEPER). Successful cycle-3-rescue produces a discrete `PASS-WITH-POST-CAP-RESCUE` verdict — structurally weaker than PASS-WITH-NOTES, stronger than FAIL. Silent post-cap rescues forbidden. Orchestrator-critic card §"Verdict format" extended to include the new class (v1.3 versioning entry).
+- **Cost:** small (spec text + card text). Future runs MUST surface F7-residual situations to the user with explicit option enumeration; the rescue path is now traceable.
+
+### URI-038 — Boundary-carry bone schema discipline [RESOLVED 2026-05-11]
+
+- **Category:** Schema (`schemas/facet.schema.md`) + orchestration command (`/and-season` Phase 3 S10 Step 2 + Phase 7 Step 4).
+- **Source:** /and-season s01 post-mortem, 2026-05-11. Phase 3 Sweep B tens authoring used alpha-suffix IDs (`0a @<id> 2` / `0b @<id> 2` for boundary-carry bones in windowN+1's open; `17a @<id> 3` for inline-rupture bones inserted mid-scene). This convention wasn't in the schema or the tens rubric. The URI-028 Phase 7 Step 4 fix didn't address how to handle alpha-suffix IDs at finalization; they survived the re-anchor pass by accident.
+- **Issue:** The schema specifies "monotonic positive integer, scoped per facet file. Starts at 1 in each file." Alpha-suffix IDs violate this. The convention was useful for review-phase narrative-position clarity (visually distinguishing boundary-carry and inline-rupture from main monotonic sequence) but should not survive into the finalized deliverable.
+- **Resolution (2026-05-11):** `schemas/facet.schema.md` §"Boundary-carry ID exception (tensometer only, URI-038)" added. Alpha-suffix IDs (`0a`, `0b`, `<N>a`) permitted in `tensometer-<season-slug>-window-<NN>.md` review-window files only (intermediate form at Phase 3 S10 Step 2); finalized `tensometer-<season-slug>e<NN>.md` files MUST be strictly monotonic. `.claude/commands/and-season.md` Phase 7 Step 4 normalization step updated to call out the alpha-suffix renumbering explicitly. Retrofit applied to existing `tensometer-s01e02.md` and `tensometer-s01e03.md`: 155 entries each renumbered to monotonic 1..155; 0 surviving alpha-suffix IDs; all anchors still resolve.
+- **Cost:** small (schema text + spec text + retrofit script). Future Phase 7 runs include the normalization automatically.
+
+### URI-039 — Orchestrator-critic R1 dispatch budget recalibration [RESOLVED 2026-05-11]
+
+- **Category:** Orchestrator-critic card runtime budget (`staff/orchestrator-critic/card.md` §"Runtime budgets").
+- **Source:** /and-season s01 orchestrator-verdict, 2026-05-11. The verdict explicitly recommended recalibration: "R1 ceiling breach is itself a calibration question per the card's §'Versioning' — the URI-026 bone-gate adds ~12 dispatches worst-case to the budget, and this run's structural-revision needs (3 cycles of Phase 3) absorbed the cushion. The card explicitly notes: 'Recalibrate empirically after first fire if persistent pressure.' This is the first fire post-URI-026; the data argues for either raising R1 to ~100 or for tightening cycle-3-rescue authorization."
+- **Issue:** The original R1 cap of 60 was calibrated pre-URI-026 (before the bone-gate). URI-026's bone-gate adds ~12 worst-case dispatches and the s01 run's structural-revision needs (3 cycles of Phase 3 + URI-037 cycle-3-rescue) hit ~95 dispatches. The run was structurally productive (cleared all F7 residuals) but breached the cap by 58%. Either the cap needs to absorb URI-026's cost or the cycle-cap discipline needs tightening.
+- **Resolution (2026-05-11):** Both. R1 hard cap raised from 60 to 100 in `staff/orchestrator-critic/card.md` §"Runtime budgets" — absorbs URI-026's worst-case load (~12 dispatches) plus a modest URI-037 rescue allowance (~25 dispatches). R1.5 added: post-cap rescue dispatches count toward R1 (no budget exemption); if a rescue would push past 100, the orchestrator must surface to user before invoking with an explicit `R1-breach-authorized-by-user-at-<timestamp>` note. Card v1.3 versioning entry documents the recalibration.
+- **Cost:** small (card text). Future-run budget planning has a more honest ceiling.
 
