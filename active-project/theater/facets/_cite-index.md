@@ -2,7 +2,7 @@
 generated: 2026-05-11
 source: active-project/theater/proto-lines/s01e01.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 268 facet entries; 135/146 protolines decorated (92.5%)
+totals: 261 facet entries; 135/146 protolines decorated (92.5%)
 
 ## Density distribution (protolines by citation count)
 
@@ -20,7 +20,7 @@ totals: 268 facet entries; 135/146 protolines decorated (92.5%)
 
 ## Per-facet entries
 
-### tens (148 entries)
+### tens (141 entries)
   tens:1 @1 r=1 back=Y co=[narrator:1, vibes:1] lic-in=[meta:2]
   tens:2 @2 r=1 back=Y lic-in=[vibes:5, vibes:11]
   tens:3 @3 r=1 back=Y lic-in=[vibes:2, vibes:3, vibes:8, vibes:10, vibes:17]
@@ -99,8 +99,6 @@ totals: 268 facet entries; 135/146 protolines decorated (92.5%)
   tens:76 @83 r=1 back=Y
   tens:77 @84 r=1
   tens:78 @85 r=1 back=Y co=[narrator:19, state:20]
-  tens:79 @495 r=1
-  tens:80 @504 r=2 back=N
   tens:81 @86 r=3 back=Y co=[narrator:20]
   tens:82 @87 r=2 back=Y
   tens:83 @88 r=1 back=Y
@@ -143,13 +141,11 @@ totals: 268 facet entries; 135/146 protolines decorated (92.5%)
   tens:120 @129 r=1 back=Y co=[feel:1]
   tens:121 @130 r=1 back=Y co=[narrator:31, vibes:11, vibes:18]
   tens:122 @131 r=2 back=Y co=[narrator:32]
-  tens:123 @506 r=2 back=N
   tens:124 @132 r=1 back=Y
   tens:125 @133 r=1 back=Y co=[narrator:33]
-  tens:126 @134 r=1 back=Y co=[mem:4, narrator:34, state:14]
+  tens:126 @134 r=3 back=Y co=[mem:4, narrator:34, state:14]
   tens:127 @136 r=1 back=Y
   tens:128 @137 r=1 back=Y
-  tens:129 @138 r=2 back=N
   tens:130 @139 r=2 back=Y co=[narrator:35, state:15, vibes:14]
   tens:131 @140 r=3 back=Y co=[narrator:36]
   tens:132 @141 r=2 back=Y co=[state:16]
@@ -163,12 +159,9 @@ totals: 268 facet entries; 135/146 protolines decorated (92.5%)
   tens:140 @150 r=2 back=Y
   tens:141 @151 r=3 back=Y co=[feel:4, narrator:39]
   tens:142 @152 r=2 back=Y co=[loc-state:3]
-  tens:143 @516 r=2 back=N
   tens:144 @153 r=1 back=Y
   tens:145 @154 r=1 back=Y co=[feel:13, mem:9, narrator:40, state:34]
   tens:146 @155 r=1 back=Y co=[state:19]
-  tens:147 @517 r=2 back=N
-  tens:148 @525 r=1
 
 ### loc-state (3 entries)
   loc-state:1 @98 back=Y co=[mem:7, narrator:25, sensory:4, state:6, state:31, tens:92, vibes:13]
@@ -324,16 +317,11 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 
 - tens:69 @74  `the lords-man speaks to the reeve`
 - tens:71 @76  `the lords-man opens the record book`
-- tens:80 @504  ``
 - tens:82 @87  `taylor-hebert-flea-bottom faces oc-tanner-elder`
 - tens:104 @111  `the flies relay the doorframe`
 - tens:106 @113  `taylor-hebert-flea-bottom walks the perimeter`
-- tens:123 @506  ``
-- tens:129 @138  ``
 - tens:133 @142  `the flies relay oc-dock-runner`
 - tens:140 @150  `oc-dock-runner speaks to oc-tanner-elder`
-- tens:143 @516  ``
-- tens:147 @517  ``
 - state:17 @144  `oc-dock-runner exits the Fish Gate margin`
 - feel:7 @93  `oc-tanner-father holds the feet`
 

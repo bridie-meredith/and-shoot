@@ -1,8 +1,5 @@
-facet: state-updates
-episode: s01e01
-author: dialogue-writer-fork-oc-tanner-elder
-scope: actor:oc-tanner-elder
----
+# slice file — facet: state-updates  episode: s01e01  author: dialogue-writer-fork-oc-tanner-elder  scope: actor:oc-tanner-elder
+# Plain comments here so build_cite_index does not stack YAML blocks in the consolidated state-updates.md (r3-signal-001).
 
 1 @85 actor:oc-tanner-elder.location: loc-flea-bottom -> tanner-family-yard
 2 @95 actor:oc-tanner-elder.location: tanner-family-yard -> on-road-to-flea-bottom
