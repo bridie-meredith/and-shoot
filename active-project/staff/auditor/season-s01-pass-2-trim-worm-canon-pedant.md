@@ -1,5 +1,222 @@
 # Season s01 — Pass 2 Trim Review
 # Reviewer: worm-canon-pedant
+# Fork: 2-E re-fire (Cycle 3 — FINAL)
+# Source file: active-project/theater/proto-lines/s01.bones.md (508 numbered entries post-cycle-3)
+# Date: 2026-05-11
+# Prior cycles: Cycle 1 — ACCEPT (4.4% TOLERATED; SF-01 KL choice, SF-02 whisper-chain transmission) | Cycle 2 — ACCEPT (45/45 ENGAGED; both SFs resolved)
+
+---
+
+## Cycle 3 Changes Under Review
+
+**Fixer form recasts (15 targeted):** Mechanical form corrections only — `receives` → `takes`, possessives dropped, modifier compounds dropped. No canon-bearing changes. Not re-audited.
+
+**Fixer deletions:**
+
+| IDs deleted | Category | Canon-bearing? |
+|-------------|----------|---------------|
+| 418/419 | Continuation bones (beetle relay) | No — relay confirmations, not boundary events |
+| 268/348/349/442/443 | Range-expansion species-spread compression | Checked below |
+| 196/197/198 | Log-cycle compression | No — intermediate log entries, not open/close boundaries |
+| 303/304/307/308 | Maester transit compression | No — transit steps, not the relay events that carry observation data |
+| 188/192 | Relay-mapping compression | No — intermediate relay confirmations |
+
+**Screen-writer new bones (IDs 504–508):**
+
+| ID | Text | Position | Check |
+|----|------|----------|-------|
+| 504 | taylor-hebert-flea-bottom stills | After 495, before 86 (beat 6, departure) | Stillness after speaking, before elder routes — processing hold |
+| 505 | taylor-hebert-flea-bottom lowers the chin | After 275 (holds eyes), before 276 (opens log) — beat 14, 400m expansion | Recovery tier between holds-eyes and wall-face |
+| 506 | the maester laughs | After 131 (Taylor straightens spine), before 132 (opens log) — beat 7, pre-naming | Audible relay event, broken maester |
+| 507 | taylor-hebert-flea-bottom faces the Red Keep | After 453 (log close), before gap 454 — beat 24, post-600m expansion | Orientation without range claim |
+| 508 | oc-tanner-elder pauses | After 500 (Taylor closes log), before 501 (elder speaks to carter) — beat 10, chain-activation | Chain-friction before activation |
+
+---
+
+## Canon Checks — New Bones 504–508
+
+### ID 504 — `taylor-hebert-flea-bottom stills`
+
+Position in sequence: 84 (elder speaks to Taylor) → 85 (Taylor faces elder) → 495 (Taylor speaks to elder) → **504 (Taylor stills)** → 86 (elder routes Taylor) → 87 (Taylor lifts travel pack).
+
+Cycle 2 resolution of SF-01 was: bone 495 gives Taylor an active speaking bone before the routing event, establishing agency. Bone 504 is inserted after that speaking bone — Taylor has initiated the exchange (495) and now holds (504) before the elder responds with formal routing.
+
+The stilling is a processing beat, not a return to passivity. The sequence reads: Taylor decides, speaks, stills (computation while the elder responds), receives routing. The escalation-bias per cond-shard-behavioral-weight means Taylor reached toward King's Landing (she spoke — that is the reach); the subsequent still is the moment of waiting for confirmation, not the moment of passive receipt. This is consistent with post-Khepri behavioral residue as established in cycle 2: stillness in Taylor is computation, not deference.
+
+The SF-01 resolution (bone 495 giving Taylor agency) is not damaged by bone 504. The agency bone is still there; the still comes after it.
+
+**Verdict: PASS. No canon concern.**
+
+---
+
+### ID 505 — `taylor-hebert-flea-bottom lowers the chin`
+
+Position in sequence at beat 14 (400m expansion): spread bones (266, 267, 269) → walks perimeter (270) → writes ×2 (271, 272) → exhales (273) → headache wakes (274) → **holds the eyes (275)** → **lowers the chin (505)** → opens log (276).
+
+The body-cost tier question: does chin-lower fit between holds-eyes (400m) and wall-face (500m) without contradicting the established escalation structure?
+
+The cycle 1 range table confirmed cost bones are present at all four expansions. The specific cost structure by expansion:
+- Beat 14 (400m): exhale → headache → holds eyes → **[new: lowers chin]** → log
+- Beat 19 (500m): exhale → headache → holds eyes → faces wall (497) → log
+- Beat 24 (600m): exhale → headache → holds eyes → faces wall (498) → straightens spine (499) → log
+
+The escalation is: holds-eyes appears at all three. Wall-face appears at 500m and 600m, not at 400m. Spine-straighten appears only at 600m. Chin-lower at 400m sits beneath the wall-face tier — a sub-wall recovery posture consistent with a cost level below 500m. The tier is correctly graduated: 400m yields the gentler physical settlement (chin); 500m and 600m yield the full wall-face withdrawal; 600m additionally yields the spine-straighten recovery.
+
+No canon source defines an exact recovery-posture taxonomy for Taylor's power at 400m — this is AU-appropriate physical register for the 125AC configuration. The graduated structure is internally consistent with the bones that already existed. No over-claim; no fence violation.
+
+**Verdict: PASS. No canon concern.**
+
+---
+
+### ID 506 — `the maester laughs`
+
+Position in sequence at beat 7: maester crosses the room (128) → maester speaks (129) → beetles relay south-wall footfall (130) → Taylor straightens the spine (131) → **maester laughs (506)** → Taylor opens log (132).
+
+This is the oc-broken-maester — chain-stripped, no longer in apparatus function, pre-naming in Taylor's notation (Taylor does not log him as a named variable until bones 311-313, W23, beat 16). At beat 7 he is "the maester" in Taylor's notation, not yet named.
+
+The laugh is an audible event transmitted via beetle relay. Beetle-sound relay is established at bone 112 ("the beetles relay the sound") — the mechanism exists and is not new here. The event is an audible output from the maester that Taylor observes through her network without knowing what prompted it.
+
+The broken-maester characterization: a person who has been stripped of institutional identity — chains, rank, function — and is now living in an apothecary room. An audible laugh at beat 7 (pre-naming, early establishment) is plausible as part of the register this character carries. It is not incongruous with "broken." A broken person can laugh; the laugh may read differently given the context. No source canon defines the broken-maester's laughing behavior; this is an OC operating in an original story-context. The bone does not claim access to the content or cause of the laugh (Taylor hears the sound; she does not know why). No information-state leak. No Khepri involvement.
+
+The placement after Taylor's spine-straighten (131) and before log-open (132) is functionally a second relay event before Taylor logs the beat. The spine-straighten in cycle 2 was confirmed as a carry-forward of the clinical-self-erasure requirement ("at least one s1-or-early-s2 scene where Taylor hears the broken maester through the network and adjusts her behavior in response"). The laugh does not interfere with that structural requirement; it extends the relay sequence before Taylor logs.
+
+**Verdict: PASS. No canon concern.**
+
+---
+
+### ID 507 — `taylor-hebert-flea-bottom faces the Red Keep`
+
+Position in sequence at beat 24: holds eyes (450) → faces wall (498) → straightens spine (499) → opens log (451) → writes (452) → closes log (453) → **faces the Red Keep (507)** → gap (454).
+
+The Red Keep is established in the cycle 1 range table as "400m beyond 600m ceiling" — not accessible at any expansion event. The bone is an orientation event, not a surveillance event. Taylor faces the Red Keep; she does not spread into it, relay it, or bring it into range. No species are deployed. No data is obtained.
+
+The post-log position is significant: this comes after the log closes at 453. Taylor has recorded the expansion event, closed the record, and then faces the unmapped territory. The log does not contain the facing — which is consistent with cond-clinical-self-erasure's pattern: the body holds what the log withholds. The Red Keep is beyond her operational range; it does not appear in her research register; her body orients toward it after the log is closed. This is not a canon violation — it is a behavioral expression of the gap between what Taylor observes (the body) and what Taylor records (the log). No range claim. No Khepri involvement. No information-state leak.
+
+The orientation itself is consistent with cond-shard-behavioral-weight escalation-bias: the reach toward unmapped territory is the Shard's ambient direction. Taylor faces the thing she cannot yet reach. That facing carries the correct behavioral texture without constituting a constraint violation.
+
+**Verdict: PASS. No canon concern.**
+
+---
+
+### ID 508 — `oc-tanner-elder pauses`
+
+Position in sequence at beat 10 (whisper-chain transmission): Taylor closes log (500) → **elder pauses (508)** → elder speaks to carter (501) → wasps relay the pass (502) → Taylor opens log (205).
+
+Chain-friction before activation. The elder-pause is inserted at the moment between Taylor's log-close and the elder initiating the transmission. This is a behavioral beat for an OC — the elder holds before activating the chain.
+
+The Flea Bottom labor-web as established throughout the bones positions the elder as a deliberate operator. A pause before chain-activation is consistent with that characterization: this person does not route casually. The pause also functions structurally as a beat-gap between Taylor's action (closes log, 500) and the elder's chain-initiation (501) — Taylor closes, elder holds, elder routes. The temporal separation between Taylor's log and the chain-activation is now structurally present at the bone level rather than being implied by adjacency.
+
+No fence concern. No information-state leak. The elder's chain-initiation (501) and the wasp-relay confirmation (502) from cycle 2 remain intact and unmodified.
+
+**Verdict: PASS. No canon concern.**
+
+---
+
+## Range-Expansion Compression — Physical Coherence Check
+
+Deleted IDs: 268 (beat 14 species-spread), 348/349 (beat 19 species-spread), 442/443 (beat 24 species-spread).
+
+Remaining structure at each expansion:
+
+**Beat 14 (400m):**
+266 (flies autumn-density network), 267 (wasps dock-side relay), 269 (spiders eastern-quarter relay) — three species present. 268 (beetles) deleted. Walk (270), write ×2 (271/272), exhale (273), headache (274), holds eyes (275), lowers chin (505), log-triple (276-278). The spread-walk-cost-log structure is intact. The deletion of the beetle spread bone at beat 14 removes one species-confirmation but does not break the spread event: flies/wasps/spiders are present; the multi-species deployment is structurally represented. COHERENT.
+
+**Beat 19 (500m):**
+344 (flies winter-onset), 345 (wasps dock-side), 346 (beetles south-wall), 347 (spiders eastern-quarter relay), 350 (beetles apothecary ground floor) — five bones remaining after deletion of 348/349. Walk (351), write ×2 (352/353), exhale (354), headache (355), holds eyes (356), faces wall (497), log-triple (357-359). Four species present (flies/wasps/beetles/spiders); two beetle-spread bones plus the apothecary-ground-floor entry. The spread structure is intact. The range advance to the apothecary ground floor (bone 350) — the event that brings "the maester's full vertical into range" per beat 19 plan — is present and undeleted. COHERENT.
+
+**Beat 24 (~600m):**
+438 (flies overnight network), 439 (wasps Fish Gate margin), 440 (beetles south-wall colony), 441 (spiders eastern-quarter relay), 444 (beetles south-wall perimeter) — five bones remaining after deletion of 442/443. Walk (445), write ×2 (446/447), exhale (448), headache (449), holds eyes (450), faces wall (498), straightens spine (499), log-triple (451-453), faces Red Keep (507). Four species present (flies/wasps/beetles/spiders); two beetle bones plus the Fish Gate geography entries. The spread structure is intact. COHERENT.
+
+In all three cases: the deleted bones were intermediate species confirmations within the spread phase, not the boundary markers (the bones that name the new geographic territory entered at each expansion) or the cost bones. The boundary event at each expansion remains. The cost signature at each expansion remains. The spread → walk → cost → log chain reads correctly with fewer spread bones inside the spread phase.
+
+**Verdict: PASS. Range-expansion coherence maintained across all three compressed expansions.**
+
+---
+
+## Log-Cycle Compression (IDs 196/197/198) — Coherence Check
+
+Deleted: three log-cycle bones in the beat 10 / relay-mapping region (lines 193-199 in the file). The surrounding structure at this location: 187 (flies relay junction conversation) → 189 [gap] → 190 (wasps relay Fish Gate margin traffic) → 191 [gap] → 193 [gap] → 194 [gap] → 195 (Taylor enters base) → 199 [gap]. The deleted bones were between the relay events and Taylor's entry into base. The relay events (187, 190) remain; Taylor's entry into base (195) remains. The compression removes intermediate notation beats between relay and base-entry. The physical logic — relay events occur in the field, Taylor returns to base — is intact. COHERENT.
+
+---
+
+## Maester Transit Compression (IDs 303/304/307/308) — Coherence Check
+
+Deleted: four maester transit bones. The surrounding structure: 305 (broken-maester exits apothecary) → 306 (enters side alley) → [303/304 deleted — intermediate transit steps] → 309 (enters upper room) → 310 (beetles relay oc-broken-maester). The maester's departure from the apothecary (305), entry to the side alley (306), and arrival at the upper room (309) with beetle confirmation (310) all remain. The deleted bones were intermediate steps in the transit path. The transit event — maester moves from apothecary to upper room, beetles relay him — is structurally complete without them. COHERENT.
+
+---
+
+## Updated Window Status
+
+No windows change verdict from cycle 2. All cycle 3 changes are either form corrections (no window impact), deletions of intermediate bones that do not affect window-level canon readings, or new bones that pass individual canon checks above.
+
+The one window that could be affected by new bones:
+
+**W08 (bones 80–94, +495, +504):** Cycle 2 verdict was ENGAGED (upgraded from TOLERATED via bone 495). Bone 504 (stills) inserted after 495 (speaks) does not revert the cycle 2 upgrade. Taylor's agency is still present (bone 495 speaks before the routing). The still after the speaking is not passivity; it is a holding beat after the active reach. W08 remains ENGAGED.
+
+All other new bones (505, 506, 507, 508) fall within windows already at ENGAGED. No window degrades.
+
+---
+
+## Entertainment Density
+
+- ENGAGED: 45 / 45 windows (100%)
+- TOLERATED: 0 / 45 windows (0%)
+- BORED: 0 / 45 windows (0%)
+
+Cap check: PASS. Consecutive-fail gate: PASS.
+
+---
+
+## Canon / Constraint Summary
+
+### HARD FLAGS
+
+None. No new bones or deletions introduce range violations, Khepri-mantle access, information-state leaks, reincarnation fence violations, jargon errors, or timeline contradictions.
+
+### SOFT FLAGS
+
+None. All cycle-1 and cycle-2 soft flags remain resolved. No new soft flags generated by bones 504–508 or by any deletion.
+
+### KHEPRI-MANTLE
+
+SEALED throughout. No cycle-3 change touches this. PASS.
+
+### CHARACTER INFORMATION-STATE
+
+Bone 506 (maester laughs): Taylor receives an audible signal via relay; she does not know why the laugh occurred. No access to content or cause. PASS.
+Bone 507 (faces Red Keep): orientation only; no data obtained from beyond range. PASS.
+Bone 508 (elder pauses): elder's internal reasoning not available to Taylor; the pause is a relay-visible event. PASS.
+
+### REINCARNATION MECHANICS
+
+No change from cycle 2. PASS.
+
+### CLINICAL SELF-ERASURE
+
+Bone 507 (faces Red Keep after log-close) is consistent with the body-holds-what-log-withholds pattern. The Red Keep does not appear in Taylor's log; her body orients toward it post-log. This is an s1-register behavior that correctly anticipates the self-erasure arc without violating it — the omission from the log is appropriate (Red Keep is out of range); the body-facing is not logged because it is not operational data. PASS.
+
+---
+
+## Summary Verdict
+
+**SEASON-WIDE: ACCEPT**
+
+Cycle 3 introduces no new canon faults. All five new bones (504–508) pass individual canon checks. All deletions maintain physical coherence at the range-expansion, log-cycle, maester-transit, and relay-mapping compression points. Form recasts are form only.
+
+The 45/45 ENGAGED density from cycle 2 is unchanged. No window degrades. No new hard flags. No new soft flags. Both cycle-1 soft flags remain resolved.
+
+The bones are ready for facet-skin.
+
+---
+
+## Cycle 2 Archive
+
+*(Cycle 2 report archived below for record.)*
+
+---
+
+# Season s01 — Pass 2 Trim Review [CYCLE 2 — ARCHIVED]
+# Reviewer: worm-canon-pedant
 # Fork: 2-E re-fire (Cycle 2)
 # Source file: active-project/theater/proto-lines/s01.bones.md (503 numbered entries, 9 new bones added: IDs 495–503)
 # Date: 2026-05-11
@@ -164,7 +381,7 @@ No new Dance-era characters. No new event implications. No jargon introduced. PA
 
 ---
 
-## Summary Verdict
+## Summary Verdict [CYCLE 2]
 
 **SEASON-WIDE: ACCEPT**
 
