@@ -58,7 +58,7 @@ seasons:
     drama: "The tanner-village's claim on Tya's body and the Hightower apparatus's first miscategorized intelligence file close around Taylor on the same season-timeline, with neither knowing the other exists and neither closeable from inside. What cannot survive the season is the possibility of working unnamed: by season close, Taylor is already a misread fact in someone else's record before she understands what she is building, and the village's grief-debt remains an open transactional surface she cannot pay off."
     bones_path: active-project/theater/proto-lines/s01.bones.md
     bones_complete: 2026-05-11
-    bones_active_count: ~480 (across IDs 1-517 with deletion gaps)
+    bones_active_count: 456 active-bone lines (with SVO content) across season-global IDs 1-528 with deletion gaps; ~48 numbered blank time-skip lines (504 total numbered lines including blanks). Corrected 2026-05-11 — prior count "~480 (across IDs 1-517 with deletion gaps)" was pre-cycle-3 and missed F7-bone-rescue additions 518-528.
     phase_2_cycles: 3 of 3 max
     phase_3_cycles: 2 of 3 max (per-window URI-026 cap=2 reached)
     provisional_split: 3 episodes (cuts at IDs 155/159 and 328/330; 6-episode SPLIT-INFEASIBLE)
@@ -119,8 +119,8 @@ seasons:
           - frequency-band rubric lacks exemption taxonomy (flag-005 residual HARD cannot be cleanly closed) — see URI-034 [ADDRESSED 2026-05-11: design/shoot-v2/rubric-tensometer.md §"Frequency-band exemptions" added with 5 exemption classes; Exemption 5 (Tone-law-licensed slow-burn register) cited by cond-series-tone-constraints-125ac with quantified relaxed band 1s 75-85% / 2s 12-22% / 3s 4.5-10% season-avg]
           - memory rubric admitted Earth-Bet proper nouns as margit-referral slug components — see URI-032 [ADDRESSED 2026-05-11: design/shoot-v2/rubric-memory-flags.md §"Form" tightened — slug components mandate mechanism-descriptive form; Earth-Bet proper nouns forbidden; .claude/commands/and-season.md Pass S1 brief adds hard-fence proper-noun scan including margit-referral slugs]
           - /and-facets bidirectional-loop criterion structurally not-validatable in current shape — see URI-035
-        upstream_tuning_queue_entries: [URI-028, URI-029, URI-030, URI-031, URI-032, URI-033, URI-034, URI-035]
-        upstream_tuning_queue_addressed: [URI-028, URI-032, URI-034]   # 2026-05-11 round of upstream fixes from /and-facets s01e01 feedback
+        upstream_tuning_queue_entries: [URI-028, URI-029, URI-030, URI-031, URI-032, URI-033, URI-034, URI-035, URI-036, URI-037, URI-038, URI-039]
+        upstream_tuning_queue_addressed: [URI-028, URI-032, URI-034, URI-036, URI-037, URI-038, URI-039]   # 2026-05-11 — first round closed /and-facets s01e01 audit feedback (URI-028/032/034); second round closed /and-season s01 post-mortem gaps (URI-036 re-fire discipline, URI-037 post-cap rescue path, URI-038 boundary-carry schema, URI-039 R1 budget recalibration). Verdict under v1.3 orchestrator-critic card: should retroactively classify as PASS-WITH-POST-CAP-RESCUE per URI-037 (cycle-3 was a post-cap F7-residual cleanup) plus PASS-WITH-NOTES stale-verdict-audience-S3 per URI-036.
       - slug: s01e02
         status: protolined
         narrator: taylor-hebert-flea-bottom

@@ -148,8 +148,10 @@ C4. **Showrunner memory is current.**
 
 ### Hard caps (FAIL if exceeded)
 
-R1. **Total dispatch ceiling: 60 dispatches per /and-season run.**
-Phase 2 ≤15 (5 sub-passes × 3 max iterations), Phase 3 ≤30 (10 passes × 3 max iterations), Phase 4 ≤9 (split + 3-persona review × 3 max iterations) + Step 1.5 bone-gate (~6 tens-author + ~6 mechanic-audit, parallel; URI-026), Phase 5 ≤2 (memory + verdict). Cushion adjusts to ~0 with bone-gate at worst case; recalibrate empirically after first fire if persistent pressure. Exceeding 60 indicates the run is thrashing and should escalate to user instead of continuing.
+R1. **Total dispatch ceiling: 100 dispatches per /and-season run.** (Raised from 60 at v1.3, 2026-05-11, per URI-039 empirical recalibration — see §Versioning.)
+Phase 2 ≤15 (5 sub-passes × 3 max iterations), Phase 3 ≤30 (10 passes × 3 max iterations), Phase 4 ≤9 (split + 3-persona review × 3 max iterations) + Step 1.5 bone-gate (~6 tens-author + ~6 mechanic-audit, parallel; URI-026, worst-case adds ~12 dispatches), Phase 5 ≤2 (memory + verdict). Cushion: the original 60-cap calibration assumed no bone-gate; URI-026's introduction absorbed the cushion at worst case, and the s01 run hit ~95 dispatches with a 3-cycle Phase 3 plus user-authorized cycle-3-rescue (URI-037). The recalibration to 100 absorbs URI-026's worst-case load (~12 dispatches) plus a modest URI-037 rescue allowance (~25 dispatches for a scoped F7-residual cleanup pass). Exceeding 100 indicates the run is thrashing and should escalate to user instead of continuing.
+
+R1.5. **Post-cap rescue dispatches count toward R1 (URI-037, 2026-05-11).** A `cycle-3-rescue` invocation per `/and-season` Phase 3 §"Post-cap rescue authorization" does NOT get a budget exemption — every rescue dispatch counts toward R1. If a rescue would push the run past 100, the orchestrator must surface to the user before invoking the rescue: either accept F7-FAIL (no rescue) or accept the cap breach with an explicit `R1-breach-authorized-by-user-at-<timestamp>` note in showrunner memory.
 
 R2. **Iteration cap: ≤3 per phase, hard.**
 Phase 2 ≤3 full-pipeline iterations; Phase 3 ≤3 full-iteration sweeps; Phase 4 ≤3 split iterations. The existing /and-season language already encodes this; the orchestrator-critic enforces it as a budget condition.
@@ -210,7 +212,7 @@ Verdict-producer cross-check for F7-r2: the verdict parses the `f-r2-counts` map
 
 ## Verdict format
 
-The card produces one of three verdicts:
+The card produces one of four verdicts:
 
 ### PASS
 - All three categories return clean.
@@ -220,13 +222,20 @@ The card produces one of three verdicts:
 ### PASS-WITH-NOTES
 - All three categories return clean.
 - One or more soft thresholds exceeded, OR ≥1 carry-back queue entry produced, OR ≥1 audit pass required deep iteration (r3+), OR R2-tightened-brief surfaced SLEEPERs that the next round should address.
-- The notes are factual: "high-dispatch" / "long-run" / "deep-iteration on Sn pass" / "rubric-too-soft" / "n SLEEPERs surfaced for next-round re-tune".
+- The notes are factual: "high-dispatch" / "long-run" / "deep-iteration on Sn pass" / "rubric-too-soft" / "n SLEEPERs surfaced for next-round re-tune" / "stale-verdict-{fork-id}" (URI-036).
+
+### PASS-WITH-POST-CAP-RESCUE (URI-037, 2026-05-11)
+- A discrete verdict class structurally weaker than PASS-WITH-NOTES and stronger than FAIL.
+- Fires when: F7-bone would have triggered at end of Phase 3 cycle-cap (per-window iteration cap hit with named `tens-gate-residual-HARD` findings), BUT the user authorized a `cycle-3-rescue` (per `/and-season` Phase 3 §"Post-cap rescue authorization") AND the rescue cleared all named residuals AND the post-rescue re-fires returned CLEAN.
+- The verdict line names the rescue scope explicitly: `PASS-WITH-POST-CAP-RESCUE — <N> F7-bone residuals cleared by cycle-3-rescue authorized at <timestamp>`.
+- Downstream effect: Phase 7 split write-out proceeds; downstream /and-shoot / /and-facets may proceed; but next-session planning treats this as a discipline-breach signal and budgets accordingly.
+- A failed rescue (rescue ran, did not clear all residuals) does NOT fall through to PASS-WITH-POST-CAP-RESCUE; F7 stands and the verdict is FAIL.
 
 ### FAIL
-- Any failure mode (F1–F6) triggered.
+- Any failure mode (F1–F7) triggered without successful post-cap rescue.
 - Required action: escalate to user with the failure-mode citation and the specific finding(s) that triggered it.
 
-The verdict line is canonical. Do not fabricate "PASS" when the criteria are not met.
+The verdict line is canonical. Do not fabricate "PASS" when the criteria are not met. Do not collapse PASS-WITH-POST-CAP-RESCUE into PASS-WITH-NOTES — the discipline-breach signal is load-bearing.
 
 ---
 
@@ -331,4 +340,5 @@ This card has the same honesty discipline as the audience Threshold Discipline s
 - v1 — 2026-05-10: initial card; calibrated against R1+R2 of /and-season s01. Hard cap 60 dispatches; soft 30; iteration cap 3; failure modes F1–F6 named.
 - v1.1 — 2026-05-10 (URI-026): bones-first hard-gate landed. F7 added (bone-gate residual auto-FAIL); Category B grows B6 (bone-gate convergence); verdict template grows §B6 block; runtime budget R1 narrative notes the bone-gate's ~12-dispatch worst-case addition (re-recalibrate empirically). Shared-reviewer-resources principle: bone-gate mechanic verdict invokes `/and-facets-audit.md` class library by reference — no /and-season-specific reimplementation.
 - v1.2 — 2026-05-10 (URI-026 follow-on, Plan A Action A2): F-R2-* → F7 emission contract. F7 split into F7-bone (existing tens-gate trigger) and F7-r2 (new `/and-facets-r2` decision-shard f-r2-1 > 0 trigger). Category B grows B7 (F-R2-* counts surfaced from `active-project/theater/facets/.r2-decisions.md`); verdict template grows §B7 block; failure summary line names trigger explicitly. Schema authority for the consumed file lives in `schemas/audit-report.schema.md` §"R2 decision-shard frontmatter" — `/and-facets` is the producer, `/and-season` is the consumer. No new failure-mode number (preserves F1–F7 enumeration discipline; F7 widens its definition rather than spawning F8).
+- v1.3 — 2026-05-11 (URI-036/037/039 — s01 post-mortem): R1 hard cap raised from 60 to 100 dispatches per empirical recalibration (URI-039) — URI-026's bone-gate adds ~12 worst-case dispatches and the s01 run's structural-revision needs (3 cycles of Phase 3 plus user-authorized cycle-3-rescue) hit ~95 dispatches with the run structurally productive; the 60 cap was calibrated pre-URI-026 and could not absorb URI-026's cost. R1.5 introduced: post-cap rescue dispatches count toward R1 (no budget exemption). PASS-WITH-POST-CAP-RESCUE verdict class added (URI-037) as a discrete class between PASS-WITH-NOTES and FAIL — fires when F7-bone would have triggered but user-authorized cycle-3-rescue cleared the residuals; structurally weaker than PASS-WITH-NOTES because the strict-cap discipline was breached. URI-036 stale-verdict note class added to PASS-WITH-NOTES — convergence-line honesty rule from `/and-season` Phase 3 surfaces forks-not-re-fired as explicit verdict notes rather than silently treating their stale verdicts as fresh.
 - Future revisions: when a `/and-season` run produces verdict-discipline data (e.g., a PASS that should have been FAIL, or a FAIL that should have been PASS-WITH-NOTES), a meta-tuning round on this card itself can adjust thresholds. Calibration is empirical — the card does not pretend its thresholds are platonic.

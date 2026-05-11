@@ -279,7 +279,24 @@ Parallel fix dispatches allowed only when their target line ranges are disjoint 
 
 After fixes land, identify reviews whose scope intersects touched lines. Re-fire only those forks as a parallel Agent block sized to the invalidation set. S10 Sweep B re-fires per-window — only the touched window's sub-forks re-fire, not all of Sweep B. Broad changes (cross-stretch restructure) re-fire all of Sweep A and all of Sweep B.
 
-**Per-window iteration cap: 2** (URI-026). After 2 inner regen iterations on the same window without convergence, the residual is a `tens-gate-residual-HARD` finding routed to Phase 6 (F7-bone).
+**Re-fire is a mandatory convergence gate (URI-036, 2026-05-11).** A fork whose scope is invalidated by fixes is in `STALE-VERDICT` state until re-fired. Convergence (defined below) cannot be declared while any fork is in STALE-VERDICT. The dispatch budget pressure to skip re-fires — "the fix likely addresses the concern, the verdict probably flips, save the dispatches" — is the back-pressure mechanism that produces dishonest convergence. The rule is: re-fire OR don't claim convergence.
+
+Two structurally honest paths when re-fire is required:
+
+1. **Re-fire and re-evaluate.** The default path. Burns dispatches from the R1 budget. If the re-fire returns ACCEPT, the fork clears; if REVISE, the fix-routing/re-fire loop continues (within the 3-cycle Phase 3 cap).
+
+2. **Document a STALE-VERDICT skip as a verdict-surface note.** If the orchestrator chooses not to re-fire (for dispatch-budget reasons or any other operational reason), it MUST:
+   - Log the fork as `STALE-VERDICT-{fork-id}-{last-verdict}-{reason-for-skip}` in showrunner memory under `seasons[<slug>].stale_verdicts[]`.
+   - Surface it as an explicit `stale-verdict-{fork-id}` entry in the Phase 6 verdict's PASS-WITH-NOTES notes list.
+   - Forbid claiming the fork's verdict as part of convergence. If 3 of 18 Sweep A forks ship with STALE-VERDICT skips, the convergence line in the Phase 5 summary reads `Sweep A: 15-of-18 verified, 3 STALE-VERDICT (carry-forward)` — NOT `Sweep A all-clean`.
+
+A run that has STALE-VERDICT skips is structurally a PASS-WITH-NOTES at best — the notes are honest about which forks didn't get re-evaluated. The orchestrator-critic card treats stale-verdict counts as a B-category concern (the verdict is honest about the gap; the gap itself is information for next-run budget planning).
+
+**The dishonest path that this rule forecloses:** silently keeping a stale ACCEPT verdict from cycle-N to declare convergence at cycle-(N+1) when cycle-N+1 fixes invalidated the cycle-N scope. The s01 run did this with audience-S3 (3-of-3 REVISE in Sweep A; not re-fired after cycle-3 fix bones addressed the named concerns; verdict shipped as a carry-forward without explicit STALE-VERDICT marking). The new rule is: that carry-forward is a STALE-VERDICT entry. Convergence-line honesty is mandatory.
+
+**Convergence definition (revised under URI-036).** Convergence means: every Sweep A + Sweep B fork has a FRESH verdict (re-fired against post-fix bones) AND every fresh verdict is ACCEPT/CLEAN, AND no fix happened between the last sweep and the convergence check. A run with STALE-VERDICT skips converges on the fresh-verdict subset only; the stale-verdict subset is carry-forward.
+
+**Cap:** 3 full sweep→fix→re-fire cycles. Non-convergence at cap escalates with a failing-fork list AND a stale-verdict list (two separate categories; do not merge).
 
 ---
 
@@ -461,6 +478,21 @@ Formerly Phase 4 Steps 1, 1.5, 2 (the dramatist split proposal + per-episode ten
 **Bone-regen routing (URI-026):** REGEN-REPLACE / REGEN-ADD / REGEN-BOTH carry their original semantics. Position-aware mapping (URI-010) and `# pov:` preservation remain mandatory.
 
 **Per-window iteration cap: 2.** After 2 inner regen iterations without convergence, the residual is a `tens-gate-residual-HARD` finding routed to Phase 6 (orchestrator-critic F7-bone).
+
+**Post-cap rescue authorization (URI-037, 2026-05-11).** When the per-window iteration cap is hit and `tens-gate-residual-HARD` findings would route to Phase 6 F7-bone (auto-FAIL per the orchestrator-critic card §F7), the orchestrator MAY surface the residual list to the user with three explicit options before invoking Phase 6:
+
+1. **Accept F7-FAIL.** Continue to Phase 6, which emits FAIL with the F7-bone trigger named. Downstream work is gated on user decision per the orchestrator-critic card. Honest default.
+
+2. **Authorize F7-residual-cleanup rescue.** A user-gated, single-purpose third cycle scoped narrowly to the named F7-bone residuals (no broad re-sweeps). The rescue:
+   - Runs as `Phase 3 cycle-3-rescue` with explicit audit-trail logging in `season-<slug>-plan-log.md` recording the user authorization timestamp and the named residual list it is scoped to.
+   - Is dispatch-budget-counted normally (does NOT get a budget exemption; rescue dispatches count toward R1).
+   - Reuses the regular fix-routing → re-fire machinery (NOT a separate machinery; subject to the URI-036 re-fire-mandatory rule).
+   - Honors the per-window iteration cap retroactively: cycle-3-rescue is the LAST cycle. No cycle-4. If cycle-3-rescue fails to clear the residuals, Phase 6 fires F7-FAIL with the residual list intact.
+   - On success (all named residuals cleared and re-fires return CLEAN): Phase 6 verdict becomes `PASS-WITH-POST-CAP-RESCUE` — a discrete verdict class distinct from PASS-WITH-NOTES. The verdict line names the rescue scope: `PASS-WITH-POST-CAP-RESCUE — <N> F7-bone residuals cleared by cycle-3-rescue authorized at <timestamp>`. PASS-WITH-POST-CAP-RESCUE is structurally weaker than PASS-WITH-NOTES (it signals the strict-cap discipline was breached even though structural progress landed) and stronger than FAIL (the run did produce a sound skeleton).
+
+3. **Rubric carry-back.** If the residual pattern persists across multiple iterations against the same rubric and the dramatist's defense names a rubric-vs-corpus mismatch (per R3 in the orchestrator-critic card), route the rubric to carry-back as a SLEEPER for next-session re-tune. Phase 6 emits PASS-WITH-NOTES with the SLEEPER named. The current run accepts the residual as a rubric-mismatch artifact, not as a structural failure.
+
+**The path through F7 must be explicit.** Silent cycle-3 rescues — where the orchestrator runs additional iterations past the per-window cap without naming the F7-residual scope, without user authorization, and without the PASS-WITH-POST-CAP-RESCUE verdict tag — are forbidden under URI-037. The s01 run did a silent rescue (cycle-3 fixed F7-bone residuals before Phase 6, and Phase 6 emitted PASS-WITH-NOTES without naming the rescue) — the verdict honesty was downstream-corrected via this URI but the original run breached the discipline.
 
 **Output:** `active-project/staff/auditor/season-<slug>-pass-S10-bone-gate-window-{NN}.md` × N (where N is the provisional window count). File-level per window: `WINDOW-ACCEPT` / `WINDOW-REVISE-{reason}` / `BOUNDARY-DROPS-{state}`.
 
@@ -652,7 +684,7 @@ For each provisional `tensometer-<season-slug>-window-{NN}.md` file from Phase 3
 
 2. **Anchor renumbering.** After the roster filter, rewrite each entry's anchor from season-global ID to the episode-local renumbered ID assigned in Step 2's body (e.g. season-bone `@517` becomes local-bone `@58` in s01e01 if it sits at the 58th body position). The tens file ships against per-episode local IDs to match the per-episode proto-line file.
 
-3. **Per-entry-ID renumbering.** Tens entries' own IDs (the field before `@`) are renumbered into the per-episode file's monotonic integer space, in narrative-order. No alpha-suffixed IDs (no `123a` form). URI-010's "stitcher walks IDs in citation order" lets non-monotonic IDs technically pass, but the cleaner discipline at finalization is to renumber to monotonic integers per episode.
+3. **Per-entry-ID renumbering (URI-038, 2026-05-11).** Tens entries' own IDs (the field before `@`) are renumbered into the per-episode file's monotonic integer space, in narrative-order. No alpha-suffixed IDs survive into the finalized per-episode file — all `0a / 0b / 0c` boundary-carry entries and all `<N>a` mid-scene inline-rupture entries are normalized to sequential monotonic integers. Per the `schemas/facet.schema.md` §"Boundary-carry ID exception" rule: alpha-suffix IDs are permitted only in `-window-` review files; Phase 7 Step 4 is the canonical normalization step. The downstream `/and-facets` Phase 5 audit STRUCTURAL class verifies monotonicity on the per-episode file and would flag any surviving alpha-suffix IDs as HARD.
 
 4. **Header rewrite.** Each per-episode tens file's frontmatter:
    ```
