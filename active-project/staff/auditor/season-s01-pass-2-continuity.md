@@ -1,4 +1,221 @@
-# Phase 2 continuity sweep — s01 — CYCLE 2
+# Phase 2 continuity sweep — s01 — CYCLE 3
+
+## File-level verdict
+SEASON-CONTINUITY-OK
+
+## Cycle 3 sweep scope
+
+Targeted re-audit following fixer compression deletions (IDs 418/419, 268, 348/349, 442/443, 196/197/198, 303/304/307/308, 188/192), screen-writer additions (IDs 504, 505, 506, 507, 508), and 15 line-level form-fault recasts. Full bones file read at `active-project/theater/proto-lines/s01.bones.md`.
+
+---
+
+## Re-check items — results
+
+### 1. Log prop chain — deletions of IDs 196/197/198 and ID 500 close-log
+
+**Task:** Verify log state remains coherent after the deletion of the middle log cycle (IDs 196/197/198, beat 10) and the retained ID 500 close-log.
+
+**Result:** COHERENT. The deleted IDs 196/197/198 constituted a complete open/write/close triple. Their removal leaves no orphaned open. The log chain in the beat-10 region is now:
+
+```
+183 taylor-hebert-flea-bottom opens the log
+184 taylor-hebert-flea-bottom writes the entry
+185 taylor-hebert-flea-bottom closes the log
+[186 blank, relay bones 187/190, blanks, 195 enter base, 199 blank, 200 relay]
+201 taylor-hebert-flea-bottom opens the log
+202 taylor-hebert-flea-bottom writes the entry
+203 [gap]
+204 [gap]
+500 taylor-hebert-flea-bottom closes the log
+508 oc-tanner-elder pauses
+501 oc-tanner-elder speaks to the carter
+502 the wasps relay the pass
+205 taylor-hebert-flea-bottom opens the log
+206 taylor-hebert-flea-bottom writes the entry
+207 taylor-hebert-flea-bottom closes the log
+```
+
+ID 185 closes cleanly. ID 201 opens fresh. ID 500 closes before ID 205 opens. The double-open fault (FAULT-PROP-STATE-01, closed at cycle 2) remains closed. Full log chain verified across all 28 open/close pairs from IDs 21–494: every open is paired with a close before the next open. No orphan state introduced by the cycle-3 deletions.
+
+**Note on gap preservation:** IDs 196, 197, 198 do not appear in the file as blank gap lines — they are absent entirely. This contrasts with the cycle-1/2 deletions (IDs 157/158, 203/204, 282/283) which were preserved as blank lines. See FLAG-GAP-PRESERVATION-01 below.
+
+---
+
+### 2. Dock-side cluster (beat 21) — unchanged
+
+**Task:** Confirm beat 21 dock-side cluster sequence is unchanged.
+
+**Result:** CONFIRMED. IDs 383–398 are identical to cycle-2 state:
+
+```
+383 taylor-hebert-flea-bottom enters the dock-side alley
+384 the wasps spread the dock-side cluster
+385 the flies spread the dock-adjacent labor web
+386 taylor-hebert-flea-bottom speaks to the dock-side cluster
+387 the wasps relay the dock-side return
+388 the wasps relay the labor-web path
+389 the dock-side cluster thins
+390 the flies retract
+391 taylor-hebert-flea-bottom exits the dock-side alley
+392–398 elder exchange + log cycle
+```
+
+Burn-down at IDs 389–390 intact. No post-burn bones imply the dock-side cluster is functioning normally. Coherent.
+
+---
+
+### 3. Sealed account / messenger / middleman (beat 25) — unchanged
+
+**Task:** Confirm beat 25 sequence is unchanged.
+
+**Result:** CONFIRMED. IDs 455–475 are identical to cycle-2 state. Messenger enters and exits cleanly (455–460). Fly relays at 461–462. Elder enters writing room, writes and seals account (465–468). Middleman takes sealed account (469), exits (470). Fly relay of departure (471). Log cycle (473–475). All entries/exits clean. No dangling actor. Coherent.
+
+---
+
+### 4. POV transitions — new bones 504/505/506/507/508
+
+**Task:** Verify no POV leaks introduced by new bones.
+
+**Result:** Four of five are clean. One flag at ID 506.
+
+- **ID 504** (`taylor-hebert-flea-bottom stills`) — physically between IDs 85 and 86, beat 6 departure scene. Taylor is on-scene at the tanner-family yard. Self-action. Observable. Clean.
+- **ID 505** (`taylor-hebert-flea-bottom lowers the chin`) — physically between IDs 275 and 276, beat 14 post-expansion sequence. Taylor at base. Self-action. Observable. Clean.
+- **ID 506** (`the maester laughs`) — physically between IDs 129 and 132, beat 7/8 region. Slug check: uses "the maester" — correct (pre-beat-16 naming event; see item 6 below). Observability: the maester's speech is covered by beetle audio relay at ID 112 (preceding perimeter walk) and the beat-7/8 sequence contains ID 130 (`the beetles relay the south-wall footfall`). Laughter is an acoustic event distinct from footfall; no relay bone immediately precedes ID 506 to cover this specific acoustic event. General beetle coverage of the eastern-quarter apothecary is active from IDs 106–112, and the maester's speech at ID 129 is presumed beetle-covered. The laugh follows from the same surface (maester vocalizing in the apothecary) and the pre-established beetle audio relay partially covers it. However, no explicit relay fires for the laugh as a distinct event, and the most recent relay bone in this stretch (ID 130) covers footfall, not audio. See **FLAG-POV-RELAY-02** below. Not escalated to fault given established beetle audio coverage of the maester's space; the concern is structural ordering, not access.
+- **ID 507** (`taylor-hebert-flea-bottom faces the Red Keep`) — physically after ID 453, beat 24 post-expansion. Taylor at base, 600m range. Self-action with directional orientation. Observable. Clean.
+- **ID 508** (`oc-tanner-elder pauses`) — physically between ID 500 (close-log) and ID 501 (elder speaks to carter), beat 10 junction area. Elder is at the market-side junction throughout the season; fly/beetle coverage of the junction is established from IDs 95–96. Observable behavioral beat. Clean.
+
+---
+
+### 5. Beat-22 transit reachability (surviving bones 305/306/309) and upper-room/stall/upper-room path
+
+**Task:** Verify the maester's path traverses coherently from the compressed 3-bone sequence (305/306/309) and verify the upper room → stall → upper room path at IDs 400–415.
+
+**Compressed transit (IDs 305/306/309):**
+
+```
+305 oc-broken-maester exits the apothecary
+306 oc-broken-maester enters the side alley
+309 oc-broken-maester enters the upper room
+```
+
+Path: apothecary → side alley → upper room. The stairwell transit is implied but not asserted. The visitor's own approach in beat 15 follows the same compression structure (280 enters side alley → 281 enters stairwell → 284 enters upper room, with stairwell pauses deleted at 282/283). The apothecary-to-upper-room route via the side alley and stairwell is structurally established. Reachability coherent. No teleport.
+
+**Upper room → stall → upper room (IDs 400–415):**
+
+Full stall-visit sequence is intact and unaffected by cycle-3 deletions:
+
+```
+400 oc-broken-maester descends the stair
+401 oc-broken-maester exits the apothecary
+402 oc-broken-maester enters the eastern-quarter alley
+403 the beetles relay the footfall
+404 oc-broken-maester enters the eastern-quarter market
+405 oc-broken-maester approaches the stall
+406–409 stall exchange
+410 oc-broken-maester faces the jars
+411 oc-broken-maester exits the dried-goods stall
+412 the beetles relay oc-broken-maester
+413 oc-broken-maester enters the apothecary
+414 oc-broken-maester ascends the stair
+415 oc-broken-maester enters the upper room
+```
+
+Complete traversal from upper room to stall and back. Reachability coherent.
+
+---
+
+### 6. `oc-broken-maester` slug consistency at IDs ≥305
+
+**Task:** Verify all surviving maester bones at IDs ≥305 use `oc-broken-maester`.
+
+**Result:** CONFIRMED. All post-naming maester bones (305, 306, 309, 310, 400, 401, 402, 404, 405, 406, 408, 410, 411, 412, 413, 414, 415) use `oc-broken-maester`. Relay bones that reference the maester without a slug (403: `the beetles relay the footfall`; 416: `the beetles relay the onset`; 417: `the beetles relay the cessation`) are relay-framed and do not assert the slug directly — consistent with the relay-bone pattern throughout the file. No occurrence of "the maester" at ID 305 or later. FAULT-SLUG-DRIFT-01 remains closed.
+
+---
+
+### 7. ID 506 slug verification — pre-naming period
+
+**Task:** Verify ID 506 (`the maester laughs`) uses "the maester" not `oc-broken-maester`.
+
+**Result:** CONFIRMED. ID 506 uses "the maester." Physical position is between IDs 129 and 132, in the beat-7/8 region, well before the naming event at beat 16 (IDs 296–313). Slug is correct for the pre-naming period.
+
+---
+
+### 8. Range-expansion arithmetic coherence
+
+**Task:** Verify range-expansion sequence (300/330/400/500/600) remains coherent after species-spread deletions at IDs 268, 348/349, 442/443.
+
+**Result:** COHERENT. Each expansion beat retains its structural signature: spread bones → perimeter walk → writes → exhales → headache/cost → log. Deletions reduced species counts at beats 14, 19, and 24 (beat 11 expansion at IDs 209–230 is unaffected). No bone text in the surviving sequence implies a range value exceeding what is established at that beat. The five expansion events (300m, 330m, 400m, 500m, 600m) remain discrete and properly sequenced. No out-of-order range claim.
+
+---
+
+## Continuity axes — cycle 3 confirmation
+
+### 1. Cross-season state
+
+No changes to actor entries or exits introduced by new bones (504/505/506/507/508). ID 504 (Taylor stills at beat 6) — self-action, tanner-yard, no state implication. ID 505 (Taylor lowers chin at beat 14) — self-action, base. ID 506 (the maester laughs at beat 7/8) — maester is already present in the apothecary at this beat per the sequence at IDs 111–134. ID 507 (Taylor faces the Red Keep at beat 24) — self-action, base, 600m. ID 508 (elder pauses at beat 10) — elder is at the junction per established presence throughout. All existing cross-season state findings from cycles 1 and 2 remain valid.
+
+### 2. Prop chains
+
+- **The log:** coherent (see item 1). Deletions of IDs 196/197/198 removed one complete log cycle without corrupting the chain.
+- **Dock-side cluster:** unchanged, coherent.
+- **Sealed account (beat 25):** unchanged, coherent.
+- **Purse (beat 13):** FLAG-PROP-CLOSE-01 from cycle 1 unresolved — no close-purse bone. Still inert and non-load-bearing. No change.
+
+### 3. POV transitions
+
+All three cycle-1 POV faults remain closed. FLAG-RELAY-ORDER-01 from cycle 2 (ID 501 precedes ID 502) carries forward — unchanged by cycle-3 additions. New bone ID 508 (elder pauses, observed at junction) is cleanly covered. New concern at ID 506 (maester laughs, no dedicated relay) is a flag, not a fault.
+
+### 4. Reachability
+
+No change to the start → end state path. Maester transit bones at IDs 305/306/309 traverse coherently (apothecary → side alley → upper room) with the stairwell implied. Upper-room/stall/upper-room path at IDs 400–415 is fully intact. Range expansion sequence remains coherent across all five expansion events.
+
+---
+
+## Findings
+
+### Faults
+
+None new. All five cycle-1 faults remain closed.
+
+---
+
+### Flags
+
+- **FLAG-PROP-CLOSE-01** (carry-forward from cycle 1): Purse opened at ID 254, no close-purse bone. Inert, non-load-bearing. No change.
+
+- **FLAG-RELAY-ORDER-01** (carry-forward from cycle 2): ID 501 (`oc-tanner-elder speaks to the carter`) precedes ID 502 (`the wasps relay the pass`). Observation asserted before the enabling relay fires. Partially mitigated by pre-established junction coverage. No change from cycle 2 classification; not escalated.
+
+- **FLAG-POV-RELAY-02**
+  - `id`: FLAG-POV-RELAY-02
+  - `type`: flag
+  - `what`: ID 506 (`the maester laughs`) — no relay bone immediately precedes or follows this bone to cover the laughter as a distinct acoustic event. The nearest relay in the sequence is ID 130 (`the beetles relay the south-wall footfall`), which covers footfall not audio. General beetle audio coverage is established from ID 112 (earlier in the same beat cluster), and the maester's vocal presence is already observed at IDs 111 and 129.
+  - `why`: At screen-write, "the maester laughs" will be rendered as Taylor-observed fact. The pre-established beetle audio relay at ID 112 grounds this observationally, but the structural pattern of the bones file is to fire a relay bone before or immediately after observing a distinct acoustic event. The laugh has no such dedicated relay. This mirrors the FLAG-RELAY-ORDER-01 pattern — covered surface, but relay ordering is inverted or absent for the specific event. Not escalated to fault because (a) the laughter follows directly from the maester-speaks sequence at IDs 129 which is itself beetle-covered, and (b) the general beetle audio coverage from ID 112 is active in the same location. Screen-writer should render the laugh as accessed through existing beetle audio coverage, not as a new observational claim.
+
+- **FLAG-GAP-PRESERVATION-01**
+  - `id`: FLAG-GAP-PRESERVATION-01
+  - `type`: flag
+  - `what`: Cycle-3 fixer deletions at IDs 188, 192, 196, 197, 198, 268, 303, 304, 307, 308, 348, 349, 418, 419, 442, 443 — none of these IDs appear in the bones file as blank gap lines. They are absent entirely. Cycle-1/2 deletions (IDs 157, 158, 203, 204, 282, 283) were preserved as blank gap lines and confirmed as such in the cycle-1 audit.
+  - `why`: Gap preservation in the bones file maintains the flat numbering contract and allows downstream agents to detect deletions by ID sequence inspection. Absent IDs are invisible to a sequence scan; blank IDs are visible. The inconsistency does not corrupt any prop chain, POV axis, or reachability path — continuity is unaffected. However, if Phase 7 or the editor scans for deletion gaps by ID, the cycle-3 deletions will not surface. The proto-line schema's gap-preservation rule (as applied in cycles 1/2) is not being uniformly enforced.
+
+---
+
+## Cycle 3 verdict
+
+**SEASON-CONTINUITY-OK**
+
+All five cycle-1 faults remain closed. No new faults introduced by cycle-3 changes.
+
+Carry-forward flags: FLAG-PROP-CLOSE-01 (purse, inert), FLAG-RELAY-ORDER-01 (relay ordering at IDs 501/502, non-blocking).
+
+New flags this cycle: FLAG-POV-RELAY-02 (maester laughs at ID 506, no dedicated relay; covered by general beetle audio), FLAG-GAP-PRESERVATION-01 (cycle-3 deletions absent without gap lines; no continuity impact).
+
+No escalation warranted.
+
+---
+
+---
+
+# [ARCHIVED] Phase 2 continuity sweep — s01 — CYCLE 2
 
 ## File-level verdict
 SEASON-CONTINUITY-OK
