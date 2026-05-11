@@ -1,3 +1,21 @@
+## SESSION-START — 2026-05-11T10:00:00Z — season-s01-pass-2-fix-cycle3
+dispatch: resolve all cycle-2 faults — Group A (15 form faults + 2 border flags), Group B (INERT-STRETCH-BEAT22 IDs 416–419), Group C (cape-fic compression beats 14/19/24 + beat 10 log cycle), Group D (relay-mapping compression W15)
+target: active-project/theater/proto-lines/s01.bones.md
+audit-report: active-project/staff/auditor/season-s01-pass-2-constraint.md + season-s01-pass-2-shape.md + season-s01-pass-2-trim-cape-fic-reader.md + season-s01-pass-2-trim-dark-fantasy-reader.md
+findings-queued: 15 form-faults + 2 border flags + 1 inert-stretch + compression Group C + compression Group D
+
+## GROUP-B — RESOLVED — 2026-05-11T10:17:00Z
+fault: INERT-STRETCH-BEAT22 — IDs 416–419 four consecutive identical `beetles relay the continuation` bones
+scope: line
+change: kept ID 416 (onset); edited ID 417 continuation→cessation (differentiated endpoint); deleted IDs 418 and 419 (entire lines removed, numeric gaps 418/419 in sequence)
+criteria met: yes — cluster reduced from 4 to 2 bones; differentiated as onset/cessation per auditor recommendation
+
+## GROUP-A — RESOLVED — 2026-05-11T10:15:00Z
+fault: 15 form-faults (2 NON-ACTION-VERB, 13 MODIFIER) + 2 border flags from cycle-2 constraint audit
+scope: line
+change: ID 256 receives→takes; ID 469 receives→takes; ID 139 possessive+noun→oc-dock-runner; ID 143 possessive+event-noun→oc-dock-runner; ID 217 two adjectives dropped→the window; ID 280 arrival-at-possessive-compound→enters the side alley; ID 287 upper-room adj dropped→the register; ID 338 possessive+event-noun→the clerk; ID 371 adj+event-noun→the doorframe; ID 372 possessive+event-noun→the second clerk; ID 461 possessive+event-noun→the messenger; ID 462 possessive+event-noun→the messenger; ID 502 labor-web adj dropped→the pass; ID 490 returns→enters; ID 488 two adjectives dropped→the window; border flags: ID 310 the ascent→oc-broken-maester; ID 412 the return→oc-broken-maester
+criteria met: yes — all 15 confirmed faults + 2 border flags resolved
+
 ## SESSION-START — 2026-05-11T09:00:00Z — season-s01-pass-2-fix-round2
 dispatch: resolve all faults from season-s01-pass-2-constraint.md + season-s01-pass-2-continuity.md — Groups 1–9: REFERENCE-DRIFT, POV-LEAKS, PROP-STATE, FORM faults (marks/reads-aloud/modifier/interiority/non-action-verb), SLUG-UNRESOLVED, relay-policy-flag
 target: active-project/theater/proto-lines/s01.bones.md
