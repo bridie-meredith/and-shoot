@@ -29,7 +29,7 @@ author: taylor-hebert-flea-bottom (POV; R1 + R2.1 mutation)
 25 @103 the formal register repeats and what it carries has changed
 26 @105 the breath out comes before the answer does
 # 28 deleted — lonely entry at r=1 beat with no behavior-pack trigger; plot-importance inflation pre-saturating the @162 wall-facing signal; cascade: [narrator:28] removed from proto-line @120
-29 @123 the log receives the south-wall count and closes
+29 @123 the south-wall column is the fifth count in the log and the hand that closes the cover is hers
 30 @125 the keep sits four hundred paces past the ceiling, noted and not reached
 31 @127 a third figure has entered the junction wearing the shape of the first two
 32 @137 the elder enters the writing room as a clerk would
@@ -37,7 +37,7 @@ author: taylor-hebert-flea-bottom (POV; R1 + R2.1 mutation)
 34 @140 the account is in transit beyond the seam
 35 @145 the entry records the account she could not read
 36 @153 the gate-line is the threshold the first file crossed
-37 @162 the wall is faced and the log will write two columns in parallel and call them the same kind of entry
+37 @162 the wall comes up under the eye and the apparatus reads two open columns on the same page as the same kind of record
 38 @164 her column and the column she will not read close on the same hour
 39 @98 the family channel has opened on the same junction the apparatus uses
 40 @133 the flies have the messenger before the junction has lost him
@@ -45,7 +45,7 @@ author: taylor-hebert-flea-bottom (POV; R1 + R2.1 mutation)
 
 # Augmentation — cycle-2 remediation — doubled-register entries (foreknowledge-clamp / age-mismatch / displacement-trigger)
 # Added per dark-fantasy FAIL: file-level doubled-register vacancy (zero foreknowledge-clamp, zero displacement-trigger, zero age-mismatch across 41 prior entries)
-42 @42 the second seal fires the same routing pattern as the first and the interior already has the count of how many a file takes to close
-43 @67 the coin arrives with the weight of a denomination the body has not held before and the body that has held coin before knows the difference in what the promise weighs
-44 @139 the seal closes on an account that now has an address the interior already has the shape of — a channel that collects before it acts
-45 @162 the body has learned this posture before — the angle that means the decision is in the record and the record will not be asked to justify it
+42 @42 the second seal fires and the interior does not count this as the second — it already knew the shape a file of this kind carries before the first seal landed
+43 @67 the coin arrives and the body already knows the denomination before the fist closes — the knowing is older than this hand
+44 @139 the seal closes and the interior recognizes the architecture — a place that receives and does not reply; the body has been on the other side of this kind of seal
+45 @162 the body knows this angle — it is older than any wall faced before; the body that has stood here in a different room does not need the log to know the decision is already made

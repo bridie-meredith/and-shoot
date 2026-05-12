@@ -1,3 +1,56 @@
+## SESSION-START — 2026-05-12T15:00:00Z — facets-5b-cycle3-remediation-s01e03-FINAL
+dispatch: Phase 5b cycle-3 (LAST CYCLE cap=3) remediation for /and-facets s01e03 — fix interest-narrator (6 entries: narrator:29, :37, :42, :43, :44, :45); verify tensometer/location-state/sensory already resolved by prior run3 partial session; vibes NO-OP
+target: active-project/theater/facets/interest-narrator.md
+audit-report: cycle-2 aggregate reviewer callouts (worm-canon-pedant REVISE on :29 + :37; dark-fantasy FAIL on :42–:45)
+findings-queued: 6 NI entries — 2 passive/author-voice rewrites + 4 augmentation register-deepening
+
+## tensometer-verify — PASS-THROUGH — 2026-05-12T15:02:00Z
+fault: verified pre-resolved by run3 partial session (tens:150 @160 upgraded 1→2; tens:78/79 @83/@84 downrated 2→1; footer updated; 3.9% orchestrator decision documented)
+scope: line
+change: none — file correct on read
+criteria met: yes (confirmed by file read)
+
+## location-state-verify — PASS-THROUGH — 2026-05-12T15:03:00Z
+fault: verified pre-resolved by run3 partial session (loc-state:4/15/20/21/22/24 trimmed to single perceptible focus element; loc-state:6a @43 smell baseline added for sensory:9 chain)
+scope: line
+change: none — file correct on read
+criteria met: yes (confirmed by file read)
+
+## sensory-verify — PASS-THROUGH — 2026-05-12T15:04:00Z
+fault: sensory:9 @87 old-state apothecary-compound-ambient now chains from loc-state:6a @43 (baseline added in run3); chain is established
+scope: line
+change: none — sensory:9 token aligns with loc-state:6a description; baseline anchor present
+criteria met: yes
+
+## vibes — NO-OP — 2026-05-12T15:05:00Z
+fault: all 3 reviewers attacked vibes:32 for stale audit token; current file at line 97 reads parallel-truths-as-coincidence-in-log (clean noun-phrase — exactly the dark-fantasy proposed fix)
+scope: n/a
+change: NO EDIT — file is correct; audience misread the stale audit r3 quote
+criteria met: yes — file already correct pre-cycle-3
+
+## interest-narrator-rewrites — RESOLVED — 2026-05-12T15:20:00Z
+fault: narrator:29 passive restatement (worm-canon); narrator:37 passive + future-tense author commentary (worm-canon); narrator:42 apparatus-tracking not foreknowledge-clamp (dark-fantasy); narrator:43 internal contradiction age-mismatch (dark-fantasy); narrator:44 insufficient displacement-trigger (dark-fantasy); narrator:45 prior-life posture pivots back to apparatus (dark-fantasy)
+scope: line
+change: narrator:29 → inventory-tell with agent named (fifth count, hand that closes is hers); narrator:37 → active present-tense apparatus-read through Taylor's POV (wall comes up under the eye); narrator:42 → explicit foreknowledge-clamp (interior knew the shape before the first seal landed); narrator:43 → clean age-mismatch, contradiction resolved (knowing is older than this hand); narrator:44 → explicit displacement-trigger (body has been on the other side of this kind of seal); narrator:45 → committed prior-life posture (older than any wall faced before; in a different room — cuts apparatus pivot)
+criteria met: yes — all 6 entries materially different in register from cycle-2; foreknowledge-clamp explicit at :42; age-mismatch clean and contradiction-free at :43; displacement-trigger embodied at :44; prior-life posture committed at :45; passive/future-tense eliminated at :29 and :37; hard fence maintained (no Earth-Bet proper nouns)
+
+## SESSION-END — 2026-05-12T15:25:00Z — facets-5b-cycle3-remediation-s01e03-FINAL
+findings-applied: 6 (interest-narrator rewrites — narrator:29, :37, :42, :43, :44, :45); 3 pass-through verifications (tensometer, location-state, sensory); 1 no-op (vibes — file already correct)
+findings-skipped: 0 — all cycle-2 callouts addressed; dark-fantasy 3.9% dissent carried as SIGNAL per auditor r3 (pre-documented in tensometer footer by run3)
+exit: CLEAN
+
+## tensometer — RESOLVED — 2026-05-12T14:05:00Z
+fault: cape-fic @160 interrupts ramp (1 between 2s); @83/@84 consecutive 2s with no following 3 and no transit exception filed
+scope: line
+change: tens:150 @160 upgraded 1→2 (approach-charge ramp 2→2→2→3 restored); tens:78 @83 + tens:79 @84 downrated 2→1 (market-trip transit, no commit bone); footer 2s/1s counts updated; axis citations table corrected (moved @417 to previously-rated-3, removed stale @417 from active 3s list); orchestrator decision on 3.9% band-floor documented in footer
+criteria met: yes — single-ramp interruption resolved; consecutive-2s advisory resolved; dark-fantasy 3.9% dissent documented as SIGNAL per auditor r3, not actionable at fixer scope
+
+## SESSION-START — 2026-05-12T14:00:00Z — facets-5b-cycle2-to-cycle3-remediation-s01e03-run3
+dispatch: Phase 5b cycle-2→cycle-3 remediation for /and-facets episode s01e03 — LAST CYCLE (cap=3); fix tensometer (2 entries), location-state (6 entries), interest-narrator (6 entries), sensory (add loc-state baseline); vibes NO-OP (file correct, audience misread)
+target: active-project/theater/facets/ (tensometer.md, location-state.md, interest-narrator.md, sensory.md)
+audit-report: cycle-2 aggregate reviewer callouts (cape-fic, dark-fantasy, worm-canon, sensory-disambiguation-pedant)
+findings-queued: 4 facets with REVISE/FAIL findings; 1 facet vibes NO-OP
+
 ## SESSION-END — 2026-05-12T12:00:00Z — facets-5b-cycle1-to-cycle2-remediation-s01e03-run2
 findings-applied: direct-mechanical: 26 edits across 9 facets + 24 proto-line cascade token removals/additions; author-voice: memory 3 entries rewritten, feeling 2 entries rewritten, NI 4 entries rewritten + 4 augmentation entries added, loc-state 5 entries rewritten + 2 new entries added, sensory 4 baseline fixes + 1 new entry added
 findings-skipped: 1 push-back (radius-progression 300→400→500→600 dark-fantasy concern — documented as structural feature, not fixable at file scope); Agent tool unavailable (all author-routed rewrites produced inline by fixer operating in impersonator mode); vibes:15/vibes:16 licensed-by cascade from state-update:28 relocation — flagged as dependency, not chained

@@ -96,8 +96,10 @@ s01e03.md's per-episode body was mechanically split correctly: it already contai
 75 @80 1
 76 @81 1
 77 @82 1
-78 @83 2
-79 @84 2
+78 @83 1
+# downrated 2→1: maester-market trip is transit/respite; no commit bone; 2 overstatement per screen-writer advisory (cycle-3 cape-fic callout)
+79 @84 1
+# downrated 2→1: same transit-scope as @83; no following rupture; market-trip is genuinely transitional
 80 @85 1
 81 @86 1
 82 @87 1
@@ -171,7 +173,8 @@ s01e03.md's per-episode body was mechanically split correctly: it already contai
 147 @157 1
 148 @158 1
 149 @159 2
-150 @160 1
+150 @160 2
+# axis: approach-charge — eastern-quarter walk is the pre-commit load for the wall-facing terminal beat; ramp 2→2→2→3 (@159=2, @160=2, @161=2, @162=3) restores clean escalation into denouement registration
 151 @161 2
 # axis: approach-charge — threshold crossing (entering loc-flea-bottom-base) IS the pre-commit load for the wall-facing one beat ahead; bridges the denouement walk 1s to the terminal rupture @162; structurally parallel to @10 bridge construction
 152 @162 3
@@ -188,9 +191,9 @@ s01e03.md's per-episode body was mechanically split correctly: it already contai
 After cycle-2 rerates (@335 3→2, @368 3→2), orphan removals (@462, @493, 0c@515), cycle-2 boundary-carry additions (0a@513, 0b@514), cycle-3 rupture additions (@522, @523, @524 all rung 3), Phase-5b cycle-1 fixer downrates (tens:48 @51 2→1; tens:97 @103 2→1; tens:85 @90 3→2 — local-@90 = season-@417 maester-sets-pen, per worm-canon POV-fidelity callout), and Phase-5b cycle-1 fixer bridging (tens:151 @161 1→2 — approach-charge to denouement peak):
 
 - Total entries: ~155
-- 3s: 6/155 ≈ 3.9% (standard band 5-10% / relaxed band 4.0-10% per-episode) — 0.1 points below relaxed per-episode floor after the cycle-1 fixer pen-downgrade; documented breach under Exemption 5 (slow-burn register; structural climax preserved at @139 and @162; tone-law card holds)
-- 2s: ~45/155 ≈ 29.0% (standard band 20-30%) — within standard band after speech-beat downrates
-- 1s: ~104/155 ≈ 67.1% (standard band 60-75%) — within standard band
+- 3s: 6/155 ≈ 3.9% (standard band 5-10% / relaxed band 4.0-10% per-episode) — 0.1 points below relaxed per-episode floor after the cycle-1 fixer pen-downgrade; documented breach under Exemption 5 (slow-burn register; structural climax preserved at @139 and @162; tone-law card holds); orchestrator decision: 3.9% band-floor breach is SIGNAL not HARD per Exemption 5 + auditor r3 + worm-canon explicit acceptance of the @90 downgrade price; dark-fantasy dissent noted but auditor classification governs
+- 2s: ~44/155 ≈ 28.4% (standard band 20-30%) — within standard band; @83+@84 downrated 2→1 (market-trip transit; cycle-3 cape-fic callout); @160 upgraded 1→2 (approach-charge ramp restoration)
+- 1s: ~105/155 ≈ 67.7% (standard band 60-75%) — within standard band
 
 3-frequency at 3.9% reflects the fixer pen-downgrade trading band-margin for POV-fidelity (Khepri-arc Taylor's informational position registers the maester's pen-set as approach-axis, not rupture). The structural climax at @139 (elder seals account) and the denouement registration at @162 (Taylor faces the wall) remain rated 3. Scalar inflation refused per AP4.
 
@@ -227,15 +230,22 @@ Maester-market trip (IDs 400–422) carries no rupture bone. Buy/refuse decision
 
 ## Axis citations summary
 
-3s justified:
-- @394: stakes-visibility + reversal-proximity peaks — elder places coin; irreversible registration
-- @395: body-charge peaks — Taylor closes fist on coin; double-tap with @394 (two parties committing the same turn)
-- @417: reversal-proximity peaks — oc-broken-maester sets the pen; the discrete act of stopping his writing reverses prior motion (the pen-scratch session terminates)
-- @468: three axes light (stakes-visibility + reversal-proximity + body-charge) — elder seals account; structural climax
-- @522: stakes-visibility + reversal-proximity peaks — clerk crosses Fish Gate; the entry-bearing file physically leaves Taylor's observable range; recording is beyond reach
-- @523: stakes-visibility peaks — second clerk releases the record book; the entry is sealed; irreversible second commit
-- @524: reversal-proximity + body-charge peaks — wall-facing IS the decision to record the close-states as coincidence; the season's terminal reader-asymmetry committed through Taylor's body before the log entries
+3s justified (active; 6 total):
+- @394 (local @67): stakes-visibility + reversal-proximity peaks — elder places coin; irreversible registration
+- @395 (local @68): body-charge peaks — Taylor closes fist on coin; double-tap with @394 (two parties committing the same turn)
+- @468 (local @139): three axes light (stakes-visibility + reversal-proximity + body-charge) — elder seals account; structural climax
+- @522 (local @11): stakes-visibility + reversal-proximity peaks — clerk crosses Fish Gate; the entry-bearing file physically leaves Taylor's observable range; recording is beyond reach
+- @523 (local @42): stakes-visibility peaks — second clerk releases the record book; the entry is sealed; irreversible second commit
+- @524 (local @162): reversal-proximity + body-charge peaks — wall-facing IS the decision to record the close-states as coincidence; the season's terminal reader-asymmetry committed through Taylor's body before the log entries
 
-Previously rated 3, downgraded in cycle 2:
-- @335 (3→2): clerk writes entry; rubric-compliant rating 2 (plot-importance inflation; cycle 2 finding)
-- @368 (3→2): second clerk writes entry; same pattern
+Previously rated 3, downgraded:
+- @417 (local @90, 3→2 cycle-1): maester sets pen; from Khepri-register POV this is approach-axis not rupture; worm-canon POV-fidelity callout; downgrade accepted as honest price of 3.9% rate
+- @335 (local @335, 3→2 cycle-2): clerk writes entry; rubric-compliant rating 2 (plot-importance inflation)
+- @368 (local @368, 3→2 cycle-2): second clerk writes entry; same pattern
+
+Previously rated 2, downgraded (cycle-3):
+- @83 (local @83, 2→1): market-trip transit beat; no commit bone; downrate resolves maester-market trip consecutive-2 advisory
+- @84 (local @84, 2→1): same transit scope
+
+Previously rated 1, upgraded (cycle-3):
+- @160 (local @160, 1→2): eastern-quarter walk is approach-charge to denouement; restores clean ramp 2→2→2→3 into @162

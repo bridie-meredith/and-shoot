@@ -98,8 +98,8 @@ totals: 327 facet entries; 78/155 protolines decorated (50.3%)
   tens:75 @80 r=1
   tens:76 @81 r=1
   tens:77 @82 r=1
-  tens:78 @83 r=2 back=N
-  tens:79 @84 r=2 back=N
+  tens:78 @83 r=1
+  tens:79 @84 r=1
   tens:80 @85 r=1
   tens:81 @86 r=1 co=[loc-state:12]
   tens:82 @87 r=1 co=[loc-state:25, sensory:9]
@@ -170,7 +170,7 @@ totals: 327 facet entries; 78/155 protolines decorated (50.3%)
   tens:147 @157 r=1 co=[loc-state:21]
   tens:148 @158 r=1 co=[loc-state:22]
   tens:149 @159 r=2 back=N
-  tens:150 @160 r=1
+  tens:150 @160 r=2 back=N
   tens:151 @161 r=2 back=N co=[loc-state:23, state:25]
   tens:152 @162 r=3 back=N co=[loc-state:24, mem:12, narrator:37, narrator:45, state:61, vibes:8, vibes:29, vibes:30, vibes:31, vibes:32, vibes:33]
   tens:153 @163 r=1 co=[state:26]
@@ -390,8 +390,6 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 - tens:11 @10  `the clerk exits the junction`
 - tens:26 @27  `taylor-hebert-flea-bottom holds the eyes`
 - tens:62 @66  `taylor-hebert-flea-bottom extends the palm`
-- tens:78 @83  `oc-broken-maester faces the jars`
-- tens:79 @84  `oc-broken-maester exits the dried-goods stall`
 - tens:86 @91  `taylor-hebert-flea-bottom holds the feet`
 - tens:91 @97  `oc-tanner-father approaches oc-tanner-elder`
 - tens:112 @119  `taylor-hebert-flea-bottom holds the eyes`
@@ -399,6 +397,7 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 - tens:120 @128  `the messenger faces oc-tanner-elder`
 - tens:126 @134  `taylor-hebert-flea-bottom holds the feet`
 - tens:149 @159  `the spiders relay the window`
+- tens:150 @160  `taylor-hebert-flea-bottom walks the eastern-quarter approach`
 - loc-state:4 @23  `taylor-hebert-flea-bottom walks the perimeter`
 - loc-state:8 @56  `taylor-hebert-flea-bottom enters the dock-side alley`
 - loc-state:9 @64  `taylor-hebert-flea-bottom exits the dock-side alley`
