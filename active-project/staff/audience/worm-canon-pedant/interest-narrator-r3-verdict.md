@@ -9,7 +9,7 @@ verdict: accept
 
 # Verdict reasoning
 
-Narrator:29 and narrator:37 are now in register: narrator:29 lands as cost-tracking inventory-tell with specificity ("fifth count," "the hand that closes the cover is hers" — body-physical-fact, POV-anchored, no passive camera); narrator:37 resolves both r2 failures — "the wall comes up under the eye" is active present-tense with sensory POV anchor, and "the apparatus reads two open columns on the same page as the same kind of record" is cost-tracking through the insect relay, not thematic commentary by an omniscient author. The augmentation entries (narrator:42–45) carry the foreknowledge-clamp and age-mismatch registers in base-card voice: past-perfect pre-calc, em-dash pivot used structurally, clinical self-erasure maintained ("the interior," "the body," "this hand") with no Earth-Bet proper noun leaking through any of the six entries — consistent with the auditor's flag-016 ZERO HITS finding.
+All six cycle-3 rewrites (narrator:29, :37, :42, :43, :44, :45) hold the clinical-self-erasure register: "the interior," "the apparatus," "the body" self-references are consistent with Khepri-arc Taylor's interior mode throughout Worm canon. The Earth-Bet hard fence is clean across all six entries — generic body-age language ("older than this hand," "a different room") does not cross into proper-noun territory, and the doubled-register vacancy that produced the cycle-2 FAIL is resolved: foreknowledge-clamp, age-mismatch, and displacement-trigger channels are now present across the augmentation entries at legitimate tens=3 anchors. The two narrator entries at @162 (narrator:37 reads the apparatus-state, narrator:45 registers the foreknowledge-clamp) serve distinct channels and do not constitute persistent-narration of the same registration.
 
 # Entry-level callouts (revise / fail only)
 
@@ -17,6 +17,6 @@ None.
 
 # Convergence trace
 
-- flag-016 (CON-003, auditor r4): Earth-Bet hard-fence scan confirmed ZERO HITS across all six cycle-3 narrator rewrites. This reviewer's per-entry read agrees: no Worm-universe proper nouns, no Dance specifics, no monument naming. Fence holds.
-- flag-019 (TF-001, auditor r4): @162 eleven-item pile-up routed to audience adversarial gate. Two narrator entries fire at @162 (narrator:37 and narrator:45); both are now in distinct registers (apparatus-read vs. age-mismatch/foreknowledge-clamp) and constitute change-registration per the rubric's persistent-narration rule, not repetition. The pile-up concern is structural, not a voice-fidelity defect — no callout from this reviewer.
-- flag-008 (FB-004, auditor r4): NI density at 25.8%, 0.8% above ceiling advisory. This reviewer's domain is voice fidelity, not the firing-decision or density adjudication; no callout.
+- flag-016 (CON-003, auditor r4): Earth-Bet hard-fence rescan of all cycle-3 content returned ZERO HITS; this reviewer's adversarial per-entry read independently confirms zero proper-noun leaks across narrator:29/:37/:42/:43/:44/:45. Fence holds. Full convergence.
+- flag-019 (TF-001, auditor r4): @162 eleven-item pile-up routed to audience adversarial gate. Both narrator entries firing at @162 (narrator:37 apparatus-read, narrator:45 foreknowledge-clamp + age-mismatch) are channel-distinct and constitute change-registration, not persistent-narration. No voice-fidelity defect from this reviewer at that anchor.
+- flag-008 (FB-004, auditor r4): NI density at 25.8%, 0.8% above ceiling advisory. Firing-decision and density adjudication are outside this reviewer's domain (voice fidelity only per rubric §"Author / reviewer notes"); no callout.
