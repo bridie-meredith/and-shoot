@@ -202,6 +202,67 @@ Vibes are permanent stickers — a vibe added in s01e01 persists to s01e02+ unle
 
 ---
 
+### exposition (`facets/exposition-<episode-slug>.md`)
+
+Audience-modeled context — the reader-gap content. For each thing a fresh reader cannot reasonably be expected to know on a cold read (Westeros-specific roles like `reeve` / `maester` / `Watch`; series-specific objects like `the log` / `the count`; pre-story circumstances like the resurrection and family acceptance), an exposition entry attaches a brief gloss to a specific anchor with a directive on how the stitcher should render it.
+
+```
+<id> @<anchor> <key>: <gloss-text> | scope: <scope-kind> | renders-as: <position> | sources: <list> | licensed-by: <list>
+```
+
+- **`@<anchor>`** — proto-line anchor where the gloss best lands. For episode-open scope, use `@0` (synthetic anchor; renders pre-body). For first-mention scope, use the proto-line ID where the term/object first appears in the rendered prose.
+- **`<key>`** — the thing being glossed. Free-text noun-phrase or a category tag like `episode-open-preamble`, `morning-bowl`, `reeve`, `maester`. Keys SHOULD be slug-form for cross-episode reference.
+- **`<gloss-text>`** — the explanatory text the stitcher will render. ≤30 words for first-mention scopes; ≤80 words for episode-open scopes. Plain English. No invented compounds. No new plot content beyond what the cited sources already establish.
+- **`scope: <scope-kind>`** — one of:
+  - `episode-open-preamble` — the cold-start or interval-bridge frame paragraph; renders before the body.
+  - `episode-open-context` — additional context paragraph(s) in the preamble; renders after the preamble's first paragraph.
+  - `first-mention-term` — Westeros-specific or series-specific term the audience won't know on cold read.
+  - `first-mention-object` — series-specific object whose presence needs orientation (e.g. `the log`).
+  - `first-mention-place` — location whose context the audience needs.
+  - `prior-episode-bridge` — recap content for subsequent-episode interval-bridge.
+  - `scene-open-orient` — micro-bridge at scene boundary (time / place / why-here). **Conditional fire** (see fire-rule below).
+- **`renders-as: <position>`** — one of:
+  - `italic-preamble` — italic paragraph before the body (episode-open scopes only).
+  - `preamble-paragraph` — additional preamble paragraph (episode-open-context only).
+  - `inline-appositive` — em-dash appositive after the first-mention noun: `"the reeve — the lord's bookkeeper for village debts"`.
+  - `parenthetical-aside` — parenthetical immediately after the first-mention sentence: `"He spoke to the reeve. (The reeve was the lord's man for...)"`.
+  - `post-bone-clause` — full clause after the bone, period-separated.
+  - `em-dash-fold` — em-dash phrase mid-sentence: `"the morning bowl — porridge and salt — on the table"`.
+  - `scene-bridge` — micro-orientation sentence at scene-open (≤15 words).
+- **`sources: <list>`** — comma-separated graph sources the gloss content is derived from (series-plan paths, world-build cards, condition cards, character cards, prior facets). Every claim in `<gloss-text>` must trace to at least one source. Audit-able.
+- **`licensed-by: <list>`** — comma-separated audience-model justifications. At minimum one persona-card slug + the gap-claim ("cape-fic-doesnt-know-westerosi-feudal-roles", "worm-canon-doesnt-know-flea-bottom-geography"). The exposition-author's reasoning surface.
+
+**Author:** `exposition-author` — a dedicated audience-modeled subagent that loads the active audience persona cards (`active-project/audience/`) and the series/world-build sources, then asks per-anchor: "would the union of these audience personas know what X is on cold read?" If no, an exposition entry is authored.
+
+**Per-anchor cap ≤2.** Multiple exposition entries on the same anchor are permitted only as one of these pairs: episode-open-* + scene-open-orient, scene-open-orient + first-mention-*, episode-open-* + first-mention-*. No two entries of the same scope on the same anchor.
+
+**Scene-open-orient conditional fire-rule (2026-05-12 dogfood-validated).** A `scene-open-orient` entry fires for a scene boundary if AND ONLY IF:
+- (a) the proto-line has a time-skip blank immediately preceding the scene-open anchor (i.e. the scene is genuinely discontinuous from the prior scene, not a paragraph break within a continuous time-frame), AND
+- (b) `location-state` does NOT fire at the scene-open anchor (loc-state at-establishment carries the time/place; if it fires, the scene-orient is wallpaper), AND
+- (c) no `interest-narrator` entry in the first 2 anchors of the new scene carries time-of-day or place-shift content (NI-cognition of "the morning was already half-gone" or "the city smell came up before the wall did" makes the scene-orient redundant; in that case NI carries the load).
+
+The exposition-author MUST audit each scene-boundary against these three conditions and refuse to fire when (b) or (c) holds. The lens facets carry the orientation; exposition stays out. This is the validated routing principle from the s01e01 dogfood — the Phase 2 author (full graph in hand) refused scene-orient entries that the Phase 1 author (no facets) authored, and the audit-trail was: lens facet covers, exposition refuses.
+
+When scene-orient fires, the entry is brief (≤15 words) and emits as `renders-as: scene-bridge` — a single short sentence at the scene-open, BEFORE the first bone's rendered prose. Examples (from s01e01): "After breakfast I went out to the yard." / "Mid-morning, my mother came back in." / "The next morning, the elder came." / "Down at street level," / "Within the hour,"
+
+**Sparsity 1-5%.** Higher than feeling/sensory because the audience-gap surface is significant in cross-genre projects (Worm-in-Westeros has gap on both sides); lower than NI because most of the prose carries via lens-facets without needing exposition.
+
+**Per-episode caps:**
+- `episode-open-*` scopes: ≤4 entries total per episode (1 preamble + ≤3 context paragraphs).
+- `first-mention-*` scopes: ≤12 entries per episode (one per first-mention term/object/place that needs glossing; if more are needed, audience-model is wrong or the episode is overloaded).
+- `scene-open-orient` scopes: 1 entry per scene MAX (the micro-bridge).
+- `prior-episode-bridge` scope: ≤1 entry per episode (replaces episode-open-preamble for non-first-episode runs).
+
+**Cross-episode promotion.** Once a first-mention gloss for `reeve` is authored in s01e01, future episodes do NOT re-gloss `reeve` — the term is now reader-resident. The exposition-author tracks already-glossed terms via a per-project register at `active-project/staff/exposition-author/glossed-terms.md`. A reader who skips s01e01 sees the s01e02 episode-open-preamble's prior-episode-bridge content + their own first-mention exposures; explicit glossing past first-mention is wallpaper and forbidden.
+
+**Audit-able.** The auditor's CONSTRAINT class scans each `<gloss-text>` against the `<sources>` list — any claim not derivable from sources is fault. AP-SCAN class scans for invented plot content (exposition is restatement of graph-resident facts, not new content). FREQUENCY-BAND validates the per-episode caps.
+
+**Renders at Stitcher Phase 1 fold-in.** The stitcher reads exposition entries at Phase 1 alongside the lens facets. `scope: episode-open-*` entries are pulled by Phase 0.6 and rendered as the interval-bridge. `scope: first-mention-*` entries fold in at their `@<anchor>` per the `renders-as` directive. `scope: scene-open-orient` entries render as the scene's opening micro-bridge. Phase 7 evaluates exposition prose under Q1-Q9 like any other rendered content; the audience-model upstream is the primary defense against bad glosses.
+
+(Schema added 2026-05-12. Replaces stitch-profile.schema.md's `interval-bridge:` block and the project-profile `first-mention-glosses:` ad-hoc list; both subsumed by upstream-authored exposition facets.)
+
+---
+
 ### location-state (`facets/location-state.md`)
 
 Replaces shoot-v1's `STUDIO:` bullets. Environmental state at each proto-line: where, when, weather, sensory palette, active conditions, lighting.

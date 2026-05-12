@@ -109,7 +109,7 @@ Starting phase: <Phase 1 | Phase 3 | Phase 5>
 - **Body integrity.** Authors append citations only; SVO bodies in `_inflight/` must be byte-identical to the base. Merge tool aborts the run if any body diverges.
 - **Each dispatch returns:** path to written facet file, path to `_inflight/` proto-lines copy, entry count, cull count, any flagged seams.
 
-### R1 authors (eight in the parallel block)
+### R1 authors (nine in the parallel block)
 
 **1. location-state (studio)** — base proto-lines; all loc cards named in `locations:`; schema § location-state; `design/shoot-v2/rubric-location-state.md`; movement-verb gate; upstream `tensometer.md` (correlative). Forbid: other facet rubrics, vibes. Out: `location-state.md` + `_inflight/proto-lines-loc-state.md`.
 
@@ -129,7 +129,9 @@ Starting phase: <Phase 1 | Phase 3 | Phase 5>
 
 **9. vibes-updates (showrunner)** — base proto-lines; upstream `tensometer.md`; all actor vibes files; all loc card VIBES sections; `staff/studio/vibes.md`; `rubric-vibes.md` + `rubric-vibes-v1.1-patch.md`; schema § vibes-updates (entity-target-primary form; `licensed-by:` mandatory; R1 provisional anchor-hints OK, resolution in R2). Showrunner-as-author is the one exception to the "showrunner does not author" rule. Out: `vibes.md` + `_inflight/proto-lines-vibes.md`.
 
-(Eight authors but vibes makes the parallel block nine dispatches when state-updates env + per-actor are counted separately. Feeling and state-updates-actor each fan out further by cast size.)
+**10. exposition (exposition-author)** — base proto-lines; upstream `tensometer.md` (peak/transitional gate for which anchors warrant heavier render-as); audience persona cards `active-project/audience/*/`; series-plan; world-build cards; condition cards; character cards (for series-specific objects); `active-project/staff/showrunner/memory.md` (for `prior_episode`); cross-episode register `active-project/staff/exposition-author/glossed-terms.md` (if exists); `rubric-exposition.md`; schema § exposition. Audience-modeled-by-construction: the union-of-audience-personas gap test is the central authoring discipline. Forbid: lens facet rubrics (R1 stays blind), source prose. Out: `exposition-<slug>.md` + `_inflight/proto-lines-exposition.md` + register write-back annotated. The exposition author DOES NOT read other R1 facet outputs at R1 (audience-pure gap-identification); the cross-check against lens facets is the R2 judge's job.
+
+(Nine authors. State-updates-actor and feeling each fan out further by cast size, making the parallel block larger by cast count; exposition adds a single dispatch.)
 
 ---
 
@@ -157,7 +159,7 @@ Set status `protolined` → `faceted-r1` in showrunner memory.
 
 **Dispatch discipline:**
 
-- **One parallel Agent block.** All four midband judges (NI, memory, feeling-per-character, metaphor) fire concurrently. Each judge sees the locked R1 graph; none sees the others' R2 mutations.
+- **One parallel Agent block.** All five midband judges (NI, memory, feeling-per-character, metaphor, exposition) fire concurrently. Each judge sees the locked R1 graph; none sees the others' R2 mutations.
 - **Full nine-facet graph + cite-index in every dispatch payload.** Non-negotiable.
 - **No shared-file race.** Each judge writes (i) its mutated facet file (deletes leave gaps; adds take next-available ID) and (ii) an annotated proto-lines copy under `_inflight-r2/proto-lines-<facet>.md` (or per-character for feeling) reflecting its citation cascades + adds. The base canonical proto-lines file is **not** mutated during R2.
 - **Self-scoped deletion only.** A judge may delete only its own facet's entries. Cross-facet deletion authority is reserved for Phase 5 audit.
@@ -168,7 +170,7 @@ Set status `protolined` → `faceted-r1` in showrunner memory.
 - **Locked-rubric + arbiter discipline.** Every judge dispatch carries `design/shoot-v2/r2-judge-tuning/B-locked-rubric.md` (gates G1–G5 as taste-questions) and `design/shoot-v2/r2-judge-tuning/C-arbiter-protocol.md` (T1, T4 only). The §Form re-test before every KEEP / DELETE / REVISE verdict is the operationalisation of G1.
 - **Position-gate (G5) on adds.** Every add carries a position-category note in its decision-shard justification (approach-zone / peak / trailing-edge / post-peak / quiet-beat / denouement). At the final 5-10% of the stream, if any other touched entry at the same anchor closes in archival/accounting/filing register, at least one entry at that anchor must hold the prior peak's consequence live.
 
-### R2 judges (four in the parallel block)
+### R2 judges (five in the parallel block)
 
 **R2.1 narrator-interest (POV impersonator, judge mode)** — POV stack + behavior cards + nine R1 facet files + cite-index + `rubric-narrator-interest.md`. Override impersonator: facet-judge mode. Decide per existing NI entry: KEEP / DELETE-<reason>. Adds: tens=2/3 anchors with memory/feeling but no NI, or lonely-entry adjacency where NI would license co-location. Add-cap 5. Out: mutated `interest-narrator.md` + `_inflight-r2/proto-lines-narrator.md` + decision-shard `staff/interest-narrator/r2-decision-shard.md`.
 
@@ -178,6 +180,8 @@ Set status `protolined` → `faceted-r1` in showrunner memory.
 
 **R2.4 metaphor (editor, judge mode)** — nine R1 facet files + cite-index + `rubric-metaphor.md`. Decide per existing metaphor: KEEP (anchor resolves post-cascade, tens-discipline holds, register is callback or dark-humor) / DELETE (anchor unresolvable, AP3 anti-duplication, AP7 default-refuse at tens ≠ 3). Resolve any provisional `licensed-by:` hints from R1 — KEEP-with-anchor-rewrite if it resolves, DELETE-unanchorable otherwise. Adds: ≥2 supporting layers cleanly clear; refuse-by-default. Add-cap 3. Out: mutated `metaphor.md` + `_inflight-r2/proto-lines-meta.md` + decision-shard `staff/metaphor/r2-decision-shard.md`.
 
+**R2.5 exposition (exposition-author, judge mode)** — all R1 facet files (including the now-locked lens facets) + cite-index + audience persona cards + cross-episode register + `rubric-exposition.md`. Override exposition-author: facet-judge mode. The R2 judge is the critical pass that converts the audience-pure R1 output into graph-trusted final state. Decide per existing exposition entry: KEEP (gap still real after lens-facets reviewed; no other facet covers it; sources still resolve) / DELETE (lens facet covers — NI established the term in body, mem carries the callback, loc-state covered the scene-orient) / REWORD (gap is real but surface chose heavy render-as where lighter would do; or anti-jargon list growth in R1 cull mandates re-rendering). Adds: rare — when R1 lens-facet author chose NOT to cover a register exposition can pick up. Add-cap 3. Provisional-anchor resolution: R1 entries with descriptive anchor-hints get bound to actual proto-line IDs via cite-index walk. Scene-open-orient fire-rule re-validated against locked graph (the s01e01 dogfood lesson: Phase 2 exposition refused 11 of 11 scene-orient entries that Phase 1 had authored, because NI/loc-state covered them; R2 enforces this routing). Out: mutated `exposition-<slug>.md` + `_inflight-r2/proto-lines-exposition.md` + decision-shard `staff/exposition-author/r2-decision-shard.md`.
+
 Vibes is not re-judged in R2; the showrunner-authored R1 vibes facet stands as-is unless the audit flags it. (R2 vibes judging is a future extension.)
 
 ---
@@ -186,7 +190,7 @@ Vibes is not re-judged in R2; the showrunner-authored R1 vibes facet stands as-i
 
 ### 4a. Decision-log consolidation
 
-Concatenate the four layer shards (R2.1 NI, R2.2 memory, R2.3 feeling — all per-character shards merged in `cast:` order, R2.4 metaphor) into `active-project/theater/facets/.r2-decisions.md` under one `## <facet-slug>` heading per shard. Sum the per-shard `f-r2-counts:` into a single top-of-file frontmatter block per `schemas/audit-report.schema.md` § Consolidated file:
+Concatenate the five layer shards (R2.1 NI, R2.2 memory, R2.3 feeling — all per-character shards merged in `cast:` order, R2.4 metaphor, R2.5 exposition) into `active-project/theater/facets/.r2-decisions.md` under one `## <facet-slug>` heading per shard. Sum the per-shard `f-r2-counts:` into a single top-of-file frontmatter block per `schemas/audit-report.schema.md` § Consolidated file:
 
 ```yaml
 ---
@@ -230,27 +234,27 @@ Dispatch **auditor** (fork) with the full graph:
 
 **Read inputs:**
 - Proto-lines: `active-project/theater/proto-lines/<slug>.md` (canonical, post-R2).
-- All nine facet files at `active-project/theater/facets/` (`tensometer`, `location-state`, `interest-narrator`, `sensory`, `state-updates`, `memory`, `feeling`, `metaphor`, `vibes`).
+- All ten facet files at `active-project/theater/facets/` (`tensometer`, `location-state`, `interest-narrator`, `sensory`, `state-updates`, `memory`, `feeling`, `metaphor`, `vibes`, `exposition-<slug>`).
 - Cite-index: `_cite-index.md` (post-R2).
 - R2 decision-log: `.r2-decisions.md`.
 - All active warehouse cards (`active-project/warehouse/*.card.md`) — for constraint checks against cond-* and loc-* cards.
 - Series + season plans (showrunner memory) — for series-law constraint checks.
 - Schemas: `facet.schema.md`, `audit-report.schema.md`.
 
-**Forbid loading:** behavior cards, vibes-as-bias, audience personas, source prose. The auditor reads the graph mechanically against constraints, not aesthetically.
+**Forbid loading:** behavior cards, vibes-as-bias, audience personas (except for exposition CONSTRAINT § license-completeness check, which requires loading the persona slugs to verify `licensed-by:` references resolve — load names only, not content), source prose. The auditor reads the graph mechanically against constraints, not aesthetically.
 
 **Mode: flag-only.** Until the auditor itself is tuned for delete-authority, findings are routed back to facet authors as flags. Once tuned (separate work), HARD findings will be executed as deletes (with citation cascade).
 
-### Audit classes (eleven)
+### Audit classes (eleven; with exposition-specific rules layered into FREQUENCY-BAND, CONSTRAINT, and AP-SCAN)
 
 1. **STRUCTURAL** — schema/format/integrity (headers, line shape, ID monotonicity, anchor resolution, bidirectional citation, proto-body integrity).
-2. **FREQUENCY-BAND** — per-rubric quantitative gates (tens 60-75/20-30/5-10; sensory 3-6%; memory 5-12%; feeling 2-5%/char; metaphor 0-3%; NI 15-25%). **Tens exemption recognition (URI-034, 2026-05-11):** when a tens file's footer declares a frequency-band exemption per `design/shoot-v2/rubric-tensometer.md` §"Frequency-band exemptions" with the named exemption slug + quoted positive-criteria match, the auditor re-checks the criteria against the file/episode state. If every positive criterion is satisfied with quoted evidence, the breach is recorded as `exempt-<slug>` and does NOT count as a HARD finding. A claimed exemption with unmet or unquoted criteria is upheld as HARD with `exemption-claim-malformed-{criterion-failed}` as the rationale. "Opening-window low-charge" alone is not an exemption — it must cite the rubric's Exemption 1 with criteria (a) through (d) quoted.
+2. **FREQUENCY-BAND** — per-rubric quantitative gates (tens 60-75/20-30/5-10; sensory 3-6%; memory 5-12%; feeling 2-5%/char; metaphor 0-3%; NI 15-25%; **exposition 1-5% per episode, episode-open ≤4 entries, first-mention ≤12 entries, scene-open-orient ≤1 per scene**). **Tens exemption recognition (URI-034, 2026-05-11):** when a tens file's footer declares a frequency-band exemption per `design/shoot-v2/rubric-tensometer.md` §"Frequency-band exemptions" with the named exemption slug + quoted positive-criteria match, the auditor re-checks the criteria against the file/episode state. If every positive criterion is satisfied with quoted evidence, the breach is recorded as `exempt-<slug>` and does NOT count as a HARD finding. A claimed exemption with unmet or unquoted criteria is upheld as HARD with `exemption-claim-malformed-{criterion-failed}` as the rationale. "Opening-window low-charge" alone is not an exemption — it must cite the rubric's Exemption 1 with criteria (a) through (d) quoted.
 3. **METADATA-INCONSISTENCY** — file headers / round-notes / r1_to_r2 summary lines that contradict actual content.
 4. **CURVE-SHAPE** — tens-rubric § "Curve-shape rubric (episode-level)": scene-level peaks; rise-to-peak adjacency; release; no flatlining 30+; episode-level act structure; climax beat exists and is dense.
 5. **CONTRADICTION** — two facet entries set incompatible state on the same anchor; both flagged.
 6. **DEDUP** — cross-facet-same-anchor / within-facet-different-anchor / within-facet-same-anchor.
 7. **SUPERFLUOUS** — lonely entries that don't survive rubric scrutiny. Convention: tens rating=1 and off-anchor vibes are never superfluous.
-8. **CONSTRAINT** — cross-facet contract violations: memory without NI-spine; metaphor without resolvable `licensed-by:` anchor; feeling duplicating POV NI; vibes with unresolvable or forward-citing `licensed-by:`; state-updates `<old>` contradicting prior state; POV-perceptual access on NI.
+8. **CONSTRAINT** — cross-facet contract violations: memory without NI-spine; metaphor without resolvable `licensed-by:` anchor; feeling duplicating POV NI; vibes with unresolvable or forward-citing `licensed-by:`; state-updates `<old>` contradicting prior state; POV-perceptual access on NI; **exposition source-traceability (every claim in `<gloss-text>` must trace to a `<sources>` entry; unresolvable claim → HARD); exposition license-completeness (every entry's `<licensed-by>` field must name ≥1 persona-card slug + a specific gap-claim — missing/malformed → SIGNAL); exposition scene-orient fire-rule (`scene-open-orient` entries must satisfy (a) time-skip-blank-precedes + (b) loc-state-silent-at-anchor + (c) NI-silent-on-time-or-place-in-first-2-anchors-of-new-scene; any violation → HARD because the entry fires when lens should carry); exposition re-gloss check (cross-reference `<key>` against `active-project/staff/exposition-author/glossed-terms.md`; hit → HARD)**.
 
    **Earth-Bet hard-fence proper-noun scan (URI-AUDITOR-CONSTRAINT-CALIBRATION, 2026-05-11):** case-insensitive substring scan against the Earth-Bet proper-noun list across **every text field** of every facet entry — including but not limited to: NI free-text rationale, memory target-reference glosses (the parenthetical `(earth-bet: ...)` and the `s<NN>e<NN>:<id>` slug components alike), metaphor `licensed-by:` notes and figure text, vibes entity-target-primary fields, feeling somatic-tell text, state-updates field names AND `<old>` / `<new>` values, sensory disambiguation notes, loc-state composite-state and observable-affordance fields. Slug components matter: a margit-referral slug embedding `khepri-` or `gold-morning-` is a hard-fence violation even when no full English phrase is rendered. Names to scan (non-exhaustive starter list — refresh against the canonical Earth-Bet hard-fence list at every audit): Brockton Bay, Skitter, Lung, Khepri, Bakuda, PRT, Endbringer, Gold Morning, Scion, Echidna, Behemoth, Leviathan, Simurgh, Cauldron, Coil, Tattletale, Bitch, Grue, Regent, Imp, Aisha, Glaive, Glory Girl, Panacea. Any hit is HARD; emit `[<facet>:<id>] @<proto> — earth-bet-hard-fence — <name> at <field>: "<surrounding-text>"`.
 9. **AP-SCAN** — per-rubric anti-pattern mechanical scan (tens AP1-3, memory AP-functional-callback, feeling AP-named-feeling-vocab, metaphor AP3 / AP7 / AP12, vibes AP-multi-source / AP8 sentence-parsability, etc.).
@@ -300,6 +304,7 @@ totals: <count> findings across <count> facets
 
 ## AP-SCAN findings (<count>)
 - [facet:id] @<proto> — AP<N> <name> — candidate violation.
+- (Exposition AP-SCAN entries: anti-jargon-hit / hollow-prose-hit / asinine-pattern-hit / new-plot-content / author-meta / voice-fault.)
 
 ## TASTE-FLAG findings (<count>)
 - [facet:id] @<proto> — <atmosphere-thin | momentum-stall | voice-fidelity> — <rationale>.
@@ -333,7 +338,7 @@ The final gate. The auditor's mechanical scan caught what mechanical scans can c
 
 ### Reviewer assembly (variable per facet)
 
-For each of the nine facets, the orchestrator picks the reviewer set:
+For each of the ten facets, the orchestrator picks the reviewer set:
 
 1. **Specialist personas** — if `staff/audience/<slug>/card.md` files exist with `target-facet: <facet>` in frontmatter, those specialists fire as the reviewer set for that facet. Example: the `sensory` facet currently has `sensory-disambiguation-pedant`, `sensory-modality-coverage`, `sensory-old-state-reader`.
 2. **Active project audience (fallback)** — for facets without specialists, the 3 active personas under `active-project/audience/<slug>/card.md` fire in graph-aware adversarial mode (NOT prose mode). Each persona reads the facet entries through its own lens (atmosphere / register / source-fidelity / etc.).
@@ -342,7 +347,12 @@ Reviewer membership is recorded in the verdict file. New specialist personas aut
 
 ### Dispatch shape
 
-One parallel Agent block per facet, all facets fired concurrently. For nine facets at three reviewers each (specialists or fallback), that is up to 27 concurrent audience dispatches in a single message. (Two of the nine — `tensometer` and `vibes` — may run with a single reviewer dispatch if the audience cards do not yet hold facet-attack rubrics for them; verdict notes which facets ran undermanned.)
+One parallel Agent block per facet, all facets fired concurrently. For ten facets at three reviewers each (specialists or fallback), that is up to 30 concurrent audience dispatches in a single message. (Two of the ten — `tensometer` and `vibes` — may run with a single reviewer dispatch if the audience cards do not yet hold facet-attack rubrics for them; verdict notes which facets ran undermanned.)
+
+**Exposition is the canonical audience-gate test.** Because the exposition-author IS audience-modeled by construction (the union-of-personas gap test is its central authoring discipline), the audience-gate reviewers have a stronger relationship to exposition than to any other facet. The three personas each read the exposition entries against their own reading-experience and answer:
+- Did the gloss successfully orient me to the term/object/place/circumstance?
+- Or did it leave me still confused or, conversely, over-explain in a way that disrupted the prose?
+Reviewers may also propose ADDS: "I'm cape-fic; I needed a gloss for `kingsguard` at @<N> and there isn't one." This audience-side ADD-surfacing is unique to exposition; for other facets, ADDs from reviewers are exceptional. The exposition author has final call on the ADD's gloss content but cannot refuse an audience-flagged ADD without escalating via TASTE-FLAG → AP-SCAN promotion. Single dissent blocks: 3-of-3 ACCEPT required to clear.
 
 ### Read inputs per reviewer
 
@@ -448,7 +458,7 @@ A `validated` verdict requires at least one shared finding across the two paths.
 
 ### 6a. Persist
 
-**Precondition:** Phase 5 = 0 HARD AND Phase 5b = ACCEPT (3-of-3 per facet, all nine facets). If either gate is unclean, do not persist — return to the appropriate phase.
+**Precondition:** Phase 5 = 0 HARD AND Phase 5b = ACCEPT (3-of-3 per facet, all ten facets including exposition). If either gate is unclean, do not persist — return to the appropriate phase.
 
 1. Confirm `facets-final-audit.md` (final-cycle Phase 5 report) and `facets-audience-gate-r<N>.md` (final-cycle Phase 5b report) both written.
 2. Update `active-project/staff/showrunner/memory.md`:
@@ -473,8 +483,9 @@ A `validated` verdict requires at least one shared finding across the two paths.
 ========================================================
 
 Phase 1 — R1 fanout:
-  9 facet files authored (8 in parallel + tens upstream)
+  10 facet files authored (9 in parallel + tens upstream)
   <count> total entries; <count>/<count> protolines decorated
+  Exposition: <count> entries (episode-open=<n>, first-mention=<n>, scene-open-orient=<n>)
 
 Phase 2 — R1 fanin (merge):
   <count> _inflight/ copies merged; canonical proto-lines written
@@ -483,12 +494,13 @@ Phase 2 — R1 fanin (merge):
   Cite-index built
 
 Phase 3 — R2 fanout (judge):
-  4 midband facets judged in parallel
+  5 midband facets judged in parallel
   R1 → R2 deltas:
     narrator-interest:    K=<n> D=<n> A=<n>  (cap-refusals: <n>)
     memory:               K=<n> D=<n> A=<n>  (cap-refusals: <n>)
     feeling:              K=<n> D=<n> A=<n>  (per-character: <slug>=K<n>/D<n>/A<n>, ...)
     metaphor:             K=<n> D=<n> A=<n>  (cap-refusals: <n>)
+    exposition:           K=<n> D=<n> A=<n>  (scene-orient-refusals-via-fire-rule: <n>)
 
 Phase 4 — R2 fanin (consolidate + merge):
   Decision-log: .r2-decisions.md (f-r2-counts: F1=<n> F2=<n> F3=<n> F4=<n>)
@@ -516,6 +528,7 @@ Phase 5b — Audience-gate (adversarial):
     feeling:           <accept | revise | fail>
     metaphor:          <accept | revise | fail>
     vibes:             <accept | revise | fail>
+    exposition:        <accept | revise | fail>  (audience-side adds: <n>)
   Reviewers fired: <count> dispatches (specialists: <n>; fallback active-audience: <n>)
   Convergence trace: <count> shared / <count> audience-only / <count> auditor-only findings
   Bidirectional loop: <validated | one-sided | not-validated>

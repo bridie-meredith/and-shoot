@@ -29,6 +29,17 @@ scope: episode | scene | project
 applies-to: <episode-slug | scene-label | project-slug>
 persona: <stitcher-persona-slug>            # default: neutral
 
+project:                                    # project-scoped fences (typically authored at the project-default profile only)
+  anti-jargon:                              # invented compounds and jargon-nominalizations the project has accumulated. Phase 1 forks see this list and pre-empt; Phase 7 Q9 references it. Substring match, case-insensitive.
+    - <token>                               # e.g. watch-cost / mother-singing / density-compound / pricing
+  hollow-prose-patterns:                    # surface patterns Q5 cuts on sight under strict mode
+    - <pattern>                             # e.g. "X was the verdict" / "X is what Y does when Z runs out"
+  bone-faithfulness-fence:                  # what Phase 1 forks MUST NOT invent in prose
+    invent-dialogue-content: false          # bone "speaks to X" does not license "asked where" / "told me Y"
+    invent-body-detail: false               # bone "exits the margin" does not license "slid past the gatepost"
+    invent-spatial-detail: false            # bone "enters the village" does not license "through the yard gate"
+    invent-scene-prose: false               # no "quick, low, threading the stalls" beyond bone/facet content
+
 voice:
   tense: past | present                     # default: past
   person: first | third                     # default: first
@@ -131,6 +142,29 @@ output:
   mode: dual                                # dual | clean-only
   line-ids: stable                          # stable (gaps allowed) | dense
   trace-verbosity: change-only              # change-only | full
+
+interval-bridge:                            # brief frame paragraph prepended to the polish
+  enabled: true | false                     # default: true at project scope
+  mode: cold-start | prior-episode | auto   # default: auto (resolves from showrunner memory's prior_episode field)
+  voice: pov-frame | omniscient | author    # default: pov-frame (renders in narrator's voice as a remembered/told frame)
+  length-target: brief | medium             # brief: ≤80 words; medium: ≤160 words
+  cold-start-sources:                       # used when no prior episode exists
+    - series-plan.plot.start
+    - series-plan.protagonist_arc
+    - world-build-cards (relevant only)
+    - episode.chunk
+  prior-episode-sources:                    # used when prior_episode exists
+    - prior-episode.terminal-state          # from showrunner memory or prior polish's last scene
+    - prior-episode.unfinished-business     # carry-forward stakes
+    - episode.chunk                         # this episode's opening
+    - interval-delta                        # what changed between prior-terminal and this-open (time-gap, locale-shift, character-state-shift)
+  set-off:                                  # how to mark the bridge as frame vs body
+    style: italic                           # italic | header | quote-block
+    separator: rule                         # rule (---) | blank-line | none
+  forbidden-content:                        # the bridge MUST NOT do these
+    - plot-content-not-in-graph             # bridge is recap/orient only; no new events
+    - character-card-paraphrase             # don't write the cast as a glossary
+    - explicit-author-meta                  # no "in this episode..." TV-narrator voice unless voice: author
 
 feedback:
   feedback-file: staff/stitcher/feedback-<slug>.md
@@ -239,7 +273,26 @@ Editorial reflection configuration.
 - **`feedback-file`** — path to the line-keyed feedback file. Default convention is `staff/stitcher/feedback-<slug>.md`.
 - **`re-stitch-scope`** — what re-runs when feedback lands. `fork-only` re-runs just the originating fork; `fork-plus-downstream` (default) also re-runs downstream phases whose log entries reference the affected anchor or line-ID; `full` re-runs the entire chain.
 
-### `scene-overrides:`
+### `interval-bridge:` (LEGACY FALLBACK ONLY — superseded by exposition facet 2026-05-12)
+
+**Superseded by the exposition facet.** Authoring of the episode-open frame paragraph(s) and first-mention glosses moved upstream to `/and-facets` Round-1, performed by the `exposition-author` subagent. The exposition facet (`schemas/facet.schema.md` § exposition) carries audience-modeled, source-cited, R2-judged, audit-checked, audience-gate-cleared content. The stitcher's Phase 0.6 reads that facet directly and assembles the preamble from `scope: episode-open-*` entries.
+
+The `interval-bridge:` block in this schema and in project profiles is retained ONLY as a fallback path for episodes whose exposition facet is absent (typically pre-2026-05-12 episodes that pre-date the wiring). In fallback mode, the stitcher dispatches an in-stitch Agent fork to author the preamble at render-time — but this fork's output is not audit-gated and lacks source-traceability. The fallback path is transitional; flag affected episodes for `/and-facets` re-run.
+
+For new projects and new episodes, do NOT rely on this block. Author the exposition facet at `/and-facets` time and let Phase 0.6 consume it.
+
+The following field documentation is retained for the fallback path:
+
+
+A brief frame paragraph prepended to the polish file, bridging the gap between the end of the prior chapter and the start of this one.
+
+- **First episode of a series** (no `prior_episode` in showrunner memory): `mode: cold-start`. The bridge orients the reader to where the protagonist was at the end of their *implicit* prior chapter (e.g. for a fix-fic, the end of the source canon) and what's now true at episode-open. Sources: `series-plan.plot.start`, `series-plan.protagonist_arc`, relevant world-build cards, this episode's `chunk`.
+- **Subsequent episodes**: `mode: prior-episode`. The bridge recaps the prior episode's terminal state, any unfinished business that carries forward, the time-gap or locale-shift between prior-end and this-open, and lands the reader where the new episode picks up. Sources: prior episode's polish (last scene), showrunner memory's terminal-state notes, this episode's `chunk`.
+- **`auto`** (default): the command body picks the mode from showrunner memory.
+
+The bridge is **brief and compelling, not encyclopedic**. Length-target `brief` caps at ~80 words; `medium` at ~160. Voice defaults to `pov-frame` — rendered in the narrator's voice as a frame device (a remembered telling, a "before:" preface). Set off from the body via italics + horizontal rule by default.
+
+The bridge must NOT add new plot content, paraphrase character cards as a cast glossary, or reach for explicit TV-narrator framing unless `voice: author` is set. It restates already-graph-resident information in a compressed orienting form. The Phase 0.6 fork's output goes through a faithfulness check: every claim in the bridge must trace to a source in `cold-start-sources` or `prior-episode-sources`.
 
 Inline overrides keyed by scene label. Each override is a partial profile that shallow-merges over the episode default for the named scene only.
 
@@ -271,6 +324,8 @@ Validation faults:
 - `FAULT-PROFILE-UNKNOWN-PATTERN` — `protected-patterns` lists a pattern with no detector.
 - `FAULT-PROFILE-INVALID-PARALLEL` — `parallel: full` with `continuity-context` not `none`.
 - `FAULT-PROFILE-MISSING-PERSONA` — `persona:` set to a slug with no card at `staff/stitcher/personas/<slug>.md`.
+- `FAULT-PROFILE-PERSONA-MISMATCH-PROJECT` — resolved persona is `neutral` AND a project-default profile at `active-project/stitch-profile.md` exists declaring a non-neutral persona, OR a project-scoped persona exists at `active-project/staff/stitcher/personas/`. Pipeline must escalate to user — running with `neutral` against a project that has authored a tuned persona is almost always a misconfiguration. User must either confirm `neutral` explicitly (`--persona neutral`) or correct the profile.
+- `FAULT-PROFILE-MISSING-PROJECT-ANTI-JARGON` — soft. Project-default profile exists but lacks `project.anti-jargon`. Emit warning at Phase 0; do not block. Phase 1 forks will fall back to persona-card tuning notes only.
 
 ---
 

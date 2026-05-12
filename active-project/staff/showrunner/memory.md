@@ -87,6 +87,13 @@ seasons:
     episodes:
       - slug: s01e01
         status: audited-r1   # FLIPPED 2026-05-11 per /and-facets resume r5 — flag-005 closed as EXEMPT-TONE-LAW-SLOW-BURN once card amendment landed; 0 HARD across r3/r4/r5 audit passes; only carry-forward editor-call SIGNALs (NI density 25.2%, non-POV feeling sparsity) remain by design
+        stitched: true   # 2026-05-12 /and-stitch s01e01 (first-person past-tense profile); polish + annotated + render-log produced
+        stitched_at: 2026-05-12
+        stitch_profile: active-project/theater/stitch-profile.md
+        stitch_persona: neutral
+        polish_path: active-project/polish/s01e01.md
+        polish_annotated_path: active-project/polish/s01e01.annotated.md
+        render_log_path: active-project/staff/stitcher/render-log-s01e01.md
         narrator: taylor-hebert-flea-bottom
         interlude: false
         chunk: "Taylor wakes in Tya's body and the tanner-village category closes around her on the first morning; she moves to King's Landing via the tanner-elder, maps her 300m sphere in Flea Bottom, identifies the broken maester's upper room as ambient surveillance, and runs her first transactional exchange via the dock-runner."
