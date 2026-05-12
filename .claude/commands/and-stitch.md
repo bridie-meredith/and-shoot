@@ -71,6 +71,7 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
 - `--profile <path>` — optional. Override the active profile path. Default: `active-project/theater/stitch-profile.md`.
 - `--persona <slug>` — optional. Override the active persona. Default: read from profile's `persona:` field; fallback `neutral`.
 - `--allow-bare-speech` — optional. Explicit opt-in to the legacy silent-speech fallback (Phase 0.7 § Legacy fallback). Without this flag, an episode with `speaks to` bones and an empty/missing dialogue facet HARD-ABORTS at Phase 0.5; the user must run `/and-facets <slug>` first. Pass this flag only when knowingly stitching a pre-2026-05-12 episode whose dialogue facet cannot be retroactively authored. Marked in the render-log header.
+- `--keep-drafts` — optional. Retain the Phase 1–7 `<slug>.phase-*.draft.md` intermediate files in `active-project/polish/` after a successful run. Default behavior at Phase 8 is to prune them (the render-log retains the trace; the drafts are reproducible). Debugging use only.
 
 ---
 
@@ -423,6 +424,7 @@ Single fork. Walk Phase 7 draft:
 - For each fold-in rendered at Phase 1, the annotated trace cites `exposition:<id>` alongside the bone and lens facets — exposition is now a first-class citation in the trace alongside narrator/feel/mem/sensory/metaphor
 - For each utterance rendered at Phase 1, the annotated trace cites `dialogue:<character>:<id>` alongside the speech bone — dialogue is also a first-class citation. Multi-utterance anchors emit one citation per entry. The attribution clause carries the bone citation; the utterance carries the dialogue citation.
 - Finalize render-log with STATS section (word count, sentence count, paragraph count, bones rendered/merged/dropped, facets rendered/dropped, reshow count, reword count, preamble-source: `exposition-facet` or `legacy-fallback`, exposition entries-rendered/refused-at-R2/cross-episode-register-skipped, dialogue-source: `dialogue-facet` or `legacy-silent-speech`, dialogue character-files-loaded / utterances-rendered / bare-speech-bones / unmoored-utterances / speaker-mismatches)
+- **Prune intermediates.** After the clean + annotated polish are confirmed on disk, delete the Phase 1–7 draft files for this episode: `active-project/polish/<slug>.phase-*.draft.md` and the standalone preamble at `active-project/polish/<slug>.preamble.md` (its content is already prepended to the clean polish). The render-log retains the trace of every intermediate phase; the draft files are reproducible from the render-log + facet graph and should not accumulate in the polish directory. Pass `--keep-drafts` at command-invocation to retain them (debugging only). The `active-project/polish/deprecated/` directory, if present, is out of scope for Phase 8 — pre-rerun archives are user-managed (move to `projects/<title>/archive/` at project close, or delete when no longer needed).
 - Update showrunner memory: `stitched: true`
 
 ---
