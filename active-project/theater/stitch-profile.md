@@ -2,7 +2,7 @@
 profile-name: s01e01-first-person-past
 scope: episode
 applies-to: s01e01
-persona: neutral
+persona: worm-tight
 
 voice:
   tense: past
@@ -63,7 +63,7 @@ voice-transform:
   bone-object-policy: idiom-fit
   third-party-preserve: [Tya, Watch, King's Landing, Fish Gate]
   feeling-clause-pov-resolution: auto
-  sensory-arrow-rendering: prose-template
+  sensory-arrow-rendering: drop-if-covered
 
 local-flow:
   window-size: 3

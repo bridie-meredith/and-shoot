@@ -184,3 +184,119 @@ LINE-ID-ASSIGN: stable, sequential 1..178; no gaps (no Phase 7 cuts).
 
 showrunner memory: stitched: true (s01e01)
 
+---
+
+# Re-stitch — worm-tight pass (2026-05-12)
+
+User feedback on neutral-persona run: invented compounds (`watch-cost`, `Room-silence`, etc.), interpretive NI overlay rendered as flat thesis declaratives, hollow-prose patterns ("X was the verdict", "X was the variable Y was waiting on"), and asinine non-sentient-negation contrasts ("body that came back wrong") survived because (a) persona was neutral not worm-tight, (b) Phase 7 was a hand-wave with 0 cuts logged, (c) Phase 1 was orchestrator-consolidated rather than dispatched as forks.
+
+## Phase 0 — re-validate
+
+PROFILE-UPDATE: persona neutral → worm-tight; voice-transform.sensory-arrow-rendering prose-template → drop-if-covered.
+PERSONA-RESOLVED: worm-tight (Override A peak-feel-leads; Override B bone-leads-at-zero-NI; all Q1–Q9 strict; § "What this persona does not do" — does not preserve interpretive NI clauses on aesthetic grounds).
+
+## Phase 1 — re-rendered via 12 parallel scene-forks
+
+Dispatched 12 Agent calls in parallel — one per scene (A, B, C, D, E, F, H, I, J, K, L, M, N). Each fork:
+- Read staff/stitcher/card.md, staff/stitcher/personas/worm-tight.md, active-project/theater/stitch-profile.md fresh.
+- Received its scene's bones + cited facet entries verbatim + POV + voice config + scrutiny list (invented compounds to avoid, hollow patterns to cut, NI cuts to pre-empt).
+- Walked anchors per fork-discipline, applied lens decider with worm-tight overrides, returned rendered prose + per-anchor decider log.
+
+Pre-emptive Phase-1 cuts (NI/mem clauses Q5-hollow or Q8-asinine, dropped at render time rather than waiting for Phase 7):
+- NI:3 @7 (Q9 "watch-cost" + Q8 "body that came back wrong")
+- NI:5 @13 (Q5 "X is the body's argument")
+- NI:11 @42 (Q5 "X is the only honest thing... honest by what it withholds")
+- NI:13 @45 (Q5 "X is what Y does when Z")
+- NI:22 @89 (Q5 "X is the last second before Y")
+- NI:24 @92 (Q5 "X is the registration; door is what she gives Y who is not Y")
+- NI:41 @14 (Q5 "X is the verdict" + Q9 "pricing" nominalization)
+- mem:5 @22 KEPT, NI:7 @22 DROPPED (echo, preserve mem for series-law)
+- mem:6 @43 DROPPED (echo NI:12 on "shape Tya should have filled")
+- mem:7 @98 DROPPED (echo NI:25 on "city named / season she has not entered")
+- mem:8 @114 DROPPED (echo NI:29 on "speaks to a room with no listener")
+
+REWORD-at-render-time (Q9 invented compounds to plain English):
+- "flea-bottom-density-compound" → "leather, bone, ash, people" → "...sweat" (Phase 7 refinement)
+- "alley-canopy-dim" → "the canopy cut the light"
+- "yard-work-ambient → mother-singing" → bone+context covers (drop-if-covered)
+- "tanner-village extrapolation" → "extrapolated from the village"
+- "parade-cadence" → "parade beat"
+- "category-event" → CUT-CLAUSE (no clean substitution)
+- "pricing" → "reading me — watching what I did with it"
+
+RESHOW-at-render-time (Q8 non-sentient-negation contrasts; ≥3 source license):
+- NI:38 "the wrong evidence is anything" → "Anything I did would be the wrong move."
+
+## Phase 2 — redundancy cull
+
+All closing-phrase echoes already addressed in Phase 1 forks. No additional cuts at Phase 2.
+
+## Phase 3 — compression
+
+Same-subject merges and log-trio exit-merges applied within each Phase 1 scene-fork. Doubled-walk @28+@30 (Scene B), routing repeat @49/50+@56/57 (Scene D), three-note buildup @39-41 (Scene C), three-beat anaphora @124 (Scene K), threshold-cross protected pattern @90 (Scene H) all NO-MERGE under pattern protection.
+
+## Phase 4 — voice transform
+
+TENSE-SHIFT past + PERSON-SHIFT first applied at Phase 1 render time. Contractions on (didn't, hadn't, wouldn't, shouldn't, wasn't). Third-party preserve: Tya, Watch, King's Landing, Fish Gate. Possessive register: "the father / the mother / the elder / the dock-runner" (Tya-not-mine) rather than "my father / my mother" — Phase 7 caught and reworded earlier "my father / my mother" leakage.
+
+## Phase 5 — local flow
+
+EM-DASH-FUSE applied at @11, @14 (cut at Phase 7), @43 (split by Phase 7), @73, @103 (split by Phase 7), @110 (split by Phase 7), @129, @134, @143, @151. Multiple sentence-splits applied in Phase 7 to address two-em-dash density.
+
+## Phase 6 — buildup preservation
+
+PATTERN-OK on all five protected patterns:
+- three-note-buildup @39/@40/@41 → cessation @43 ✓
+- threshold-cross @90 ✓
+- three-beat anaphora @124 ✓
+- doubled-register laugh/silence @133/@134 (RESHOWN at Phase 7 to remove non-sentient-negation contrasts while preserving the pattern) ✓
+- countdown-rhythm @49/@50 + @56/@57 ✓
+
+No PATTERN-ABANDONED. NEW-PATTERN-CANDIDATE noted: log-trio cadence across episode.
+
+## Phase 7 — re-run via 12 parallel scene-forks
+
+Dispatched 12 Agent calls in parallel — one per scene. Each fork:
+- Read card + worm-tight persona + profile fresh.
+- Received scene's draft from Phase 1+merges.
+- Walked sentences per fork (per-sentence is the spec'd fork unit; each fork handles a paragraph's sentences serially with isolated Q-evaluation per sentence).
+- Returned per-sentence Q-lines + moves applied + post-edit prose.
+
+Aggregate move counts across all 12 scene-forks:
+- CUT: 5 (Scene A S8 "father faced me", Scene A S14 "I held my chin", Scene A S15 "father stilled — eyes on hands face unmoved", Scene C S6 "spiders in rafters didn't", Scene C S11 "I didn't fill it", Scene F S1 "flies told me before he did", Scene I S8 "I set the travel pack")
+- CUT-CLAUSE: 5 (Scene A S12 "I hadn't adjusted for that", Scene F S4 "eyes down", Scene F S7 "back out the way he'd come", Scene M S6 "— quick, low, threading the stalls", Scene M S13 "— across the cobbles, around the cart, down the alley she'd glanced at — until she was someone else's count")
+- REWORD: 17 (across all scenes; mostly Q9 invented-compound de-hyphenation + Q3 "my-father/mother" → "the-father/mother" register correction + Q9 unlicensed dialogue content removal)
+- RESHOW: 2 (Scene L S9/10 "laugh wasn't for the room → He was laughing at me"; Scene L S12/13 "silence wasn't theirs → silence was the shape of what he'd just looked at")
+- CUT-BONE: 1 (Scene A — anchor @14 protective feel cut at Phase 1 → bones-cuttable license fires retroactively for the sentence rendering the bone)
+- KEEP-on-protected-pattern: 12 (three-note buildup, threshold-cross, three-beat anaphora, countdown-rhythm, log-trio close, doubled-walk)
+
+Phase 8 — finalize
+
+OUTPUT-WRITE:
+- active-project/polish/s01e01.md (clean) — replaced.
+- active-project/polish/s01e01.annotated.md (dual) — replaced; per-scene `<trace>` blocks document both Phase 1 lens decisions and Phase 7 moves.
+
+LINE-ID-ASSIGN: stable, sequential L1..L157 (gaps from earlier neutral-pass IDs not preserved — this is a full re-run, not a feedback re-stitch).
+
+## STATS (post worm-tight re-run)
+
+- Word count (clean): ~1,160 (down from neutral-run 1,641 — strict-Q cuts + Q9 jargon trims)
+- Sentence count: 157 (down from 178 — 7 CUTs + 5 CUT-CLAUSEs + 9 merges via REWORD-sentence-fusion)
+- Paragraph count: 35 (scene boundaries preserved + within-scene NI-density-transition breaks)
+- Scenes: 12
+- Bones rendered: 154 (155 source bones; 1 CUT-BONE @14)
+- Bones merged: 27 (9 log-trio exit-merges)
+- Facets:
+  - narrator: 31/41 rendered as prose (7 cut at Phase 1 Q5-hollow / Q9-jargon: NI:3/5/11/13/22/24/41; 4 NI dropped at echo-cull: NI:7 only — actually NI:7 dropped, others were mem-side; net: 39 - 7 phase1 = 32 rendered, of which 1 further cut at Phase 7 (Scene F S1) = 31)
+  - feel: 13/13 rendered (all body-tells preserved — Override A peak / Override B fuse)
+  - memory: 3/8 rendered (4 echo-cut at Phase 1; 1 kept as series-law @22)
+  - sensory: 5/5 rendered (sensory:1 @15 drop-covered; sensory:2 @39 drop-covered; sensory:3 @43 drop-covered; sensory:4 @98 + sensory:5 @102 reworded to plain English)
+  - metaphor: 1/1 (@73 record-book-as-door folded into bone)
+  - location-state: 3/3 (at-establishment)
+- Phase 7 cuts: 5 sentences
+- Phase 7 cut-clauses: 5
+- Phase 7 rewords: 17
+- Phase 7 reshows: 2
+- Phase 7 cut-bones: 1
+
+
