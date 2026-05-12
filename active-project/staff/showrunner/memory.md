@@ -98,6 +98,29 @@ seasons:
         interlude: false
         chunk: "Taylor wakes in Tya's body and the tanner-village category closes around her on the first morning; she moves to King's Landing via the tanner-elder, maps her 300m sphere in Flea Bottom, identifies the broken maester's upper room as ambient surveillance, and runs her first transactional exchange via the dock-runner."
         proto_lines_path: active-project/theater/proto-lines/s01e01.md
+      - slug: s01e02
+        stitched: true   # 2026-05-12 /and-stitch s01e02 — first run under V2 bones-only-write lens semantics; V1 (lenses-as-content) rejected by user as "garbage"; V2 + Phase 7 expanded smoothing leeway (FUSE/POSSESS-FIX) is the accepted form
+        stitched_at: 2026-05-12
+        stitch_profile: active-project/theater/stitch-profile.md   # episode-default; applies-to: s01e01 (used as project-default — same POV/tense/person)
+        stitch_persona: worm-tight
+        stitch_lens_policy: bias-only   # PROMOTION CANDIDATE — new profile flag for the stitcher schema; V2 dispatched all 7 Phase 1 forks with lenses as bias-context only, not as content
+        polish_path: active-project/polish/s01e02.md
+        polish_annotated_path: active-project/polish/s01e02.annotated.md
+        polish_phase_1_v2_draft_path: active-project/polish/s01e02.phase-1-v2.draft.md   # retained for tuning comparison
+        render_log_path: active-project/staff/stitcher/render-log-s01e02.md
+        narrator: taylor-hebert-flea-bottom
+        interlude: false
+        chunk: "The tanner-family's claim on Taylor escalates from informal grief to formalized customary wage-claim across three visits; the broken maester transitions from ambient signal to named log entry; range expands from 300m to 400m with first physiological cost; the mother extinguishes the vigil candle — the village's grief has changed shape but the transactional surface does not close."
+        proto_lines_path: active-project/theater/proto-lines/s01e02.md
+        source_archive_deviation: facets read from theater/s01e02-archive/facets/ — /and-shoot Phase 0 already archived this episode before /and-stitch ran; active theater/facets/ holds s01e03 content; proto-lines stayed in canonical theater/proto-lines/s01e02.md
+        word_count_body: 870
+        word_count_total: 980
+        line_id_count: 104
+        bones_rendered: 133
+        bones_cut: 1   # @91 CUT-BONE under bones-cuttable license; Q1=no, no protective facet, redundant with @89 metaphor
+        phase_7_moves: { keep: 89, fuse: 14, reword: 5, possess_fix: 5, cut_bone: 1, cut: 0, reshow: 0 }
+        exposition_entries_rendered: 6   # 1 preamble (italic), 2 scene-bridges (B/C openings), 3 first-mention folds (Fish-Gate @66 em-dash, customary-wage @100 parenthetical, vigil-candle @164 em-dash)
+        cross_episode_register_skipped: [log, reeve, lords-man, flea-bottom, maester, the-Watch]   # reader-resident from s01e01
         tens_path: active-project/theater/facets/tensometer-s01e01.md
         cast: [taylor-hebert-flea-bottom, oc-tanner-father, oc-tanner-mother, oc-tanner-elder, oc-broken-maester, oc-dock-runner]
         locations: [loc-flea-bottom, loc-flea-bottom-base]
