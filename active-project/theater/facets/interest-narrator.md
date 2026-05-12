@@ -1,6 +1,6 @@
 facet: interest-narrator
 episode: s01e03
-author: taylor-hebert-flea-bottom (POV; R1)
+author: taylor-hebert-flea-bottom (POV; R1 + R2.1 mutation)
 ---
 
 1 @1 the wall beetle has the candle in the seam already
@@ -9,7 +9,6 @@ author: taylor-hebert-flea-bottom (POV; R1)
 4 @8 the entry being written is about her and the relay carries only its making
 5 @11 the gate-line has just been crossed and the file is past the seam
 6 @15 the second hand is hers and mirrors the one she did not see
-7 @22 the apothecary's ground floor has entered the seam at six hundred paces
 8 @34 the second seam carries a second clerk; the apparatus is not one hand
 9 @40 the second entry is being made while her side stays silent
 10 @42 the cover of the book has sealed the second commit
@@ -29,7 +28,6 @@ author: taylor-hebert-flea-bottom (POV; R1)
 24 @96 the father has come to the same junction the first clerk used
 25 @103 the formal register repeats and what it carries has changed
 26 @105 the breath out comes before the answer does
-27 @114 the south-wall perimeter has doubled in reach overnight
 28 @120 the wall holds the direction the file went
 29 @123 the entry records the night's expansion without flinch
 30 @125 the keep sits four hundred paces past the ceiling, noted and not reached
@@ -41,3 +39,6 @@ author: taylor-hebert-flea-bottom (POV; R1)
 36 @153 the gate-line is the threshold the first file crossed
 37 @162 the wall is faced because the close-states are about to be entered as coincidence
 38 @164 her column and the column she will not read close on the same hour
+39 @98 the family channel has opened on the same junction the apparatus uses
+40 @133 the flies have the messenger before the junction has lost him
+41 @143 the middleman is past the seam and the seal is on a hand she cannot read
