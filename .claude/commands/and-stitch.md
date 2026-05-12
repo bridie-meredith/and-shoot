@@ -308,6 +308,30 @@ When the fork's anchor is a `<X> speaks to <Y>` proto-line bone, every dialogue 
 
 **Render-log per fork (speech bones):** the fork-id line names the dialogue entries folded (`folded: dialogue:<character>:<id>, dialogue:<character>:<id>`), the attribution verb chosen, and the speaker-attribution-form (display-name / pronoun / first-person).
 
+### Sensory + loc-state co-anchor fold
+
+When the fork's anchor co-cites a `sensory:` facet AND a `loc-state:` facet at the same anchor (e.g. an entry beat where the POV crosses a threshold and the location-state's composite-state + observable-affordance fire alongside a sensory drop or spike), the fork MUST render the two as one perceptual unit in a single sentence, NOT split them across two sentences.
+
+The pattern this rule prevents: bone renders as sentence 1, loc-state details land as a free-standing fragment sentence 2 with no subject and no verb. From s01e02 dogfood — `"The daylight dropped as I stepped in. Empty room, alley-sound through the second-floor window."` The fragment second sentence reads as stitcher stage-direction rather than lived perception.
+
+The correct rendering folds the loc-state details into the bone-plus-sensory sentence via em-dash, comma-appositive, or participial clause:
+- `"The daylight dropped when I stepped inside — the room empty, alley sound through the second-floor window."`
+- `"I crossed the threshold into the dim of the room, the second-floor window carrying alley sound."`
+
+The fork chooses the form that fits the rhythm; the rule is that they render together, not the form they take. The loc-state detail does not get its own sentence at an entry beat — it folds into the entry sentence. The bone-faithfulness fence still holds: the loc-state phrasing must come from the loc-state facet entry, not be invented.
+
+This rule fires when:
+- A `sensory:` facet and a `loc-state:` facet both cite the same `@N`
+- The fork is rendering a threshold-cross / entry / scene-open beat (not a peak inside a scene)
+- The persona does not specifically prefer the fragmentary form for this anchor's voice register (none currently do; worm-tight prefers the fold)
+
+The rule does NOT fire when:
+- The sensory and loc-state cite different anchors (independent beats)
+- The loc-state alone fires (no sensory co-cite); render the loc-state per its own usual position
+- The anchor is a peak where the loc-state is doing rhetorical work as standalone weight (rare; flag in fork log if so)
+
+### Lens decider
+
 The fork applies the lens decider (rules 1–6) per `staff/stitcher/card.md § Lens decider`. The persona's lens-bias table overrides rules 1–5 where applicable. Tiebreaker per profile's `phase-1.lens-decider.tiebreaker` (default: neutral-default kinetic order).
 
 Output draft: `active-project/polish/<slug>.phase-1.draft.md`. Log fork entries to render-log under `## Phase 1 — lens-anchored render`. **Every rendered prose block must have a corresponding fork-id line in the log.** No fork-id ⇒ FAULT-PHASE-1-CONSOLIDATED.
@@ -398,6 +422,7 @@ Per-fork dispatch:
 For each sentence in the Phase 6 draft:
 - Answer Q1–Q9 binary (yes/no) per the card § Phase 7
 - Apply persona's Phase-7 biases (per-question aggressiveness)
+- **Q9 enforcement is generative, not literal.** The fork MUST scan every hyphenated noun-compound in the rendered sentence and test each against the rule (does this compound have a fixed referent in common English?). The persona's Q9 example list is *orientation*, not an exhaustive catalogue; a compound that matches the pattern but is not on the list is still Q9=yes. Locative compounds with fixed common-English referents (`dock-side`, `second-floor`, `eastern-quarter`, `two-room`, `upper-room`, `side-alley`, `market-side`, `south-wall`) and established named roles or place-names (`tanner-elder`, `dock-runner`, `tanner-village`) are not Q9 hits. Sensory-tag compounds (`alley-sound`, `alley-murmur`, `autumn-density`), NI register-tokens (`placement-look`, `watch-cost`, `chin-hold`), and structural nominalizations (`route-recalibration`, `parade-cadence`) are Q9 hits whether or not they appear on the persona's literal list. Reword to the natural-English phrasing from the source facet entry, or CUT if the body register already covers.
 - **Exposition-derived sentences (preamble paragraphs, scene-orient bridges, fold-in glosses): apply Q9 (anti-jargon) and Q6 (fancy punctuation) normally; treat Q1 (load-bearing) as pre-cleared by upstream audience-modeling and Q5 (hollow-prose) / Q8 (asinine) as pre-cleared by R2 + audit. Borderline Q1/Q5/Q8 on exposition-derived prose = KEEP (the audience-gap is the load-bearing claim; second-guessing it at Phase 7 invalidates the upstream gap-test). Q9 + Q6 still cut/reword normally — a Q9 jargon-hit on exposition is a fault that should have been caught at the audit stage; surface as `FAULT-EXPOSITION-AUDIT-MISS` and REWORD inline.**
 - **Dialogue-derived sentences (the utterance itself, NOT the surrounding attribution clause): treat Q1 / Q5 / Q8 / Q9 / Q6 as ALL pre-cleared by the dialogue-writer fork's behavior-card-anchored authoring plus the audience-gate. Borderline = KEEP. A Q9 jargon-hit on an utterance is `FAULT-DIALOGUE-AUDIT-MISS` and surfaces for re-author at `/and-facets`; the stitcher does NOT REWORD utterances (the verbatim invariant from Phase 1 holds through Phase 7). The attribution clause (`he said`, `she answered`) IS subject to all of Q1–Q9 normally — Phase 7 may cut a redundant attribution (`Q1=no → CUT`) but cannot touch the utterance it attributed.**
 - Under strict `cut-aggressiveness`: borderline = reject (except for exposition-derived and dialogue-utterance-derived per above)

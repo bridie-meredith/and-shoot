@@ -18,6 +18,7 @@ Audience-gap is structural; no persona can be expected to know:
 - Westeros institutional roles when neither dark-fantasy nor a Westeros-canon persona reads the project: `reeve`, `septon`, `maester`, `Watch`, `hand-of-the-king`, `master-of-coin`, `castellan`, `kingsguard`, `Citadel`, `lords-man`, `holdfast`.
 - Series-specific objects whose presence needs orientation: `the log` (Taylor's clinical-self-erasure instrument), `the count` (insect-count from swarm-control), `the swarm` itself when not yet named in prose.
 - Pre-story circumstances that would invite reader-question on first encounter: the resurrection in s01e01 (waking-in-dead-body would invite riot/canonization in any plausible world; the gloss must answer why-it-didn't).
+- **Named individuals appearing in prose without prior introduction.** A character mentioned in the polish by definite description (`the carter`, `the dock-runner`, `the lord's-man`, `the maester`) or by name (`Tom`, `Ben`) needs a first-mention gloss when the reader has no prior anchor for who that person is. The cast roster is graph-resident for the audit; the **reader does not have the roster**. Walk every proto-line and ask: does this named individual appear in the polish without having been previously introduced? If yes, author a `first-mention-character` entry. The carter in s01e02 (introduced cold at @52) is the canonical miss the rule prevents. Exclusion: the POV character does not need a first-mention gloss (they're named in the preamble); named individuals who appear ONLY in dialogue (Tom referred to by the elder in his utterance) do not need a gloss unless they also appear in prose.
 
 ## Conditionally-gloss
 
@@ -91,6 +92,7 @@ Sparsity computation: `(total exposition entries) / (proto-line count) × 100`. 
 | `first-mention-term` | `inline-appositive` (cheapest) / `parenthetical-aside` (medium) | Institutional terms (reeve, maester, Watch). Land at first-mention anchor. |
 | `first-mention-object` | `em-dash-fold` (cheapest) / `post-bone-clause` (medium) | Series-specific objects (the log, the count). Land at first-mention anchor. |
 | `first-mention-place` | `inline-appositive` (cheapest) / `em-dash-fold` (medium) | Specific named locations (Flea Bottom, Fish Gate). Land at first-mention anchor. |
+| `first-mention-character` | `inline-appositive` (cheapest) / `em-dash-fold` (medium) | Named individuals appearing in prose without prior introduction (the carter, the dock-runner, the lord's-man, Tom). Land at first-mention anchor. POV character excluded (covered in preamble). Dialogue-only mentions excluded (a name in an utterance is the speaker's reference, not a prose introduction). |
 | `scene-open-orient` | `scene-bridge` | Micro-bridge at scene-open. ≤15 words. Renders BEFORE first bone of scene. |
 
 **Render-cost ranking** (cheap → expensive, by reader-disruption):

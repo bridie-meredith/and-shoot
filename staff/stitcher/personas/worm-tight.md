@@ -83,12 +83,14 @@ _(Accumulated from pattern-level feedback over time. Each entry cites the feedba
 
 These appeared as NI register-tokens, sensory-arrow tags, or facet nominalizations and got rendered into prose verbatim. They are not English; they are pipeline-internal labels:
 
-- **NI register-tokens:** `watch-cost`, `chin-hold`, `eye-hold`, `mouth-parts`, `salt-reach`, `latch-tremor`, `position-relay`, `south-wall-footfall`
-- **Sensory-tag compounds:** `room-silence`, `door-swing-impact`, `mother-singing`, `yard-work-ambient`, `flea-bottom-density-compound`, `alley-canopy-dim`, `road-ambient`, `open-road-daylight`
-- **NI structural nominalizations:** `tanner-village-extrapolation`, `parade-cadence`, `category-event`, `pricing` (as in "pricing her"), `route-recalibration`
+- **NI register-tokens:** `watch-cost`, `chin-hold`, `eye-hold`, `mouth-parts`, `salt-reach`, `latch-tremor`, `position-relay`, `south-wall-footfall`, `placement-look`
+- **Sensory-tag compounds:** `room-silence`, `door-swing-impact`, `mother-singing`, `yard-work-ambient`, `flea-bottom-density-compound`, `alley-canopy-dim`, `road-ambient`, `open-road-daylight`, `alley-sound`, `alley-murmur`
+- **NI structural nominalizations:** `tanner-village-extrapolation`, `parade-cadence`, `category-event`, `pricing` (as in "pricing her"), `route-recalibration`, `autumn-density`
 - **Family-tag compounds in POV-Tya-not-mine register:** `tanner-father`, `tanner-mother` (use "the father" / "the mother")
 
 **Rule:** any hyphenated noun-compound that doesn't have a fixed referent in common English is a Q9 candidate. Reword to plain English (`watch-cost` → "the cost of being noticed by the Watch", or cut if the body register covers); cut the sensory-tag entirely under `sensory-arrow-rendering: drop-if-covered` when the bone verb carries the modality shift.
+
+**The rule is generative, not literal.** Phase 7's Q9 sweep MUST scan every hyphenated noun-compound in the rendered prose and test each against the rule (does this compound have a fixed referent in common English?). The lists above are *examples*, not an exhaustive catalogue. A compound that does not appear on the list but matches the pattern (e.g. `alley-sound`, `placement-look`, `autumn-density` — none of which were on the list before they hit s01e02 polish) is still a Q9 hit. The cost of literal-list-only enforcement is recurring leakage as new compounds get coined per episode. The list is for orientation; the rule is the gate.
 
 #### Hollow-prose patterns (Q5 strict — CUT or CUT-CLAUSE)
 
