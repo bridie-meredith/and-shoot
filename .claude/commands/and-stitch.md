@@ -70,6 +70,7 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
 - `$1` — optional. Episode slug (e.g. `s01e01`). If omitted, use `active.episode` from `active-project/staff/showrunner/memory.md`.
 - `--profile <path>` — optional. Override the active profile path. Default: `active-project/theater/stitch-profile.md`.
 - `--persona <slug>` — optional. Override the active persona. Default: read from profile's `persona:` field; fallback `neutral`.
+- `--allow-bare-speech` — optional. Explicit opt-in to the legacy silent-speech fallback (Phase 0.7 § Legacy fallback). Without this flag, an episode with `speaks to` bones and an empty/missing dialogue facet HARD-ABORTS at Phase 0.5; the user must run `/and-facets <slug>` first. Pass this flag only when knowingly stitching a pre-2026-05-12 episode whose dialogue facet cannot be retroactively authored. Marked in the render-log header.
 
 ---
 
@@ -125,7 +126,14 @@ Before dispatching Phase 1, emit a one-screen summary to the user:
                     bare speech bones: <B>    # "speaks-to" bones with no dialogue entry — flagged for re-author
 ```
 
-This summary is the gate. If anything looks wrong (persona is `neutral` when it shouldn't be; anti-jargon list is empty when the project has one; voice config is unexpected; exposition is absent for a project where it should exist; dialogue is missing on an episode that clearly has speaking bones), the user catches it here, not at the polish file 1,500 words later. **`exposition: ABSENT` on a project that has run `/and-facets` post-2026-05-12 is a strong signal something went wrong upstream** — re-run `/and-facets` rather than proceeding with legacy fallback. **`dialogue: ABSENT` with `B > 0` bare speech bones is the canonical failure mode for the dialogue facet** — re-run `/and-facets` so the dialogue-writer fork can author utterances; do not let the stitcher invent dialogue under the bone-faithfulness fence.
+This summary is the gate. If anything looks wrong (persona is `neutral` when it shouldn't be; anti-jargon list is empty when the project has one; voice config is unexpected; exposition is absent for a project where it should exist), the user catches it here, not at the polish file 1,500 words later. **`exposition: ABSENT` on a project that has run `/and-facets` post-2026-05-12 is a strong signal something went wrong upstream** — re-run `/and-facets` rather than proceeding with legacy fallback.
+
+**Dialogue gate (URI-DIALOGUE-COVERAGE-GATE, 2026-05-12) — HARD STOP, not advisory.** If proto-lines contains any `speaks to` bones (`S > 0`) AND any of the following hold, ABORT before Phase 1 dispatch:
+- `dialogue: ABSENT` (no files under `theater/dialogue/`), OR
+- `bare speech bones: > 0` (any `speaks to` proto-line has no `<character-slug>:<id>` citation), OR
+- any speaker subject of a `speaks to` bone has no `theater/dialogue/<slug>.md` file.
+
+The abort message names the missing files / bare bones / missing speakers and recommends `/and-facets <slug>`. This mirrors the `/and-facets` Phase 6a dialogue-coverage precondition; the stitcher refuses to consume a graph that the facet pipeline should not have finalized. **Opt-out**: pass `--allow-bare-speech` to proceed with the legacy silent-speech fallback (Phase 0.7 § Legacy fallback) — reserved for pre-2026-05-12 episodes whose dialogue facet cannot be retroactively authored. The flag is recorded in the render-log header. The default — silent invention of dialogue or silent rendering of speech beats as silent action without the user's explicit consent — is the canonical FAULT-DIALOGUE-MISSING failure mode and is structurally prevented.
 
 ---
 
@@ -185,8 +193,8 @@ The dialogue facet is authored upstream at `/and-facets` time by the per-charact
 **1. Read dialogue files.**
 - Enumerate `active-project/theater/dialogue/*.md`. Each file is one character's utterances across the episode.
 - For each file, read frontmatter: `character:`, `episode:`, `behavior-card:`. Reject (warn-and-skip) any file whose `episode:` does not match the active episode slug.
-- If the directory is empty AND the proto-lines file contains any `<X> speaks to <Y>` bones: **fallback mode** — emit `WARN-DIALOGUE-FACET-ABSENT` to the user with the count of bare speech bones. Recommend `/and-facets <slug>` re-run. Do NOT proceed with bone-fence-invented dialogue; the legacy path is to render speech bones as **silent action** (`he turned to her` rather than `he said "..."`), logged as `LEGACY-SILENT-SPEECH` per bone.
-- If the directory has files but a specific speech bone has no anchored utterance: **flag the gap** for re-author (`FAULT-DIALOGUE-MISSING-AT-<anchor>`). Do not paper over with invented dialogue. The Phase 1 fork for that anchor renders silent action and logs the fault; the user is expected to re-run `/and-facets` for that character.
+- If the directory is empty AND the proto-lines file contains any `<X> speaks to <Y>` bones: **HARD ABORT by default** (URI-DIALOGUE-COVERAGE-GATE) — emit `FAULT-DIALOGUE-FACET-ABSENT` to the user with the count of bare speech bones and the recommendation to run `/and-facets <slug>`. Phase 0.5's gate should have already caught this; reaching here means the gate was bypassed or the directory was emptied between Phase 0.5 and Phase 0.7 — surface as a build defect. **Only** when `--allow-bare-speech` was passed at command-invocation time does this drop through to legacy silent-action mode (`he turned to her` rather than `he said "..."`), logged as `LEGACY-SILENT-SPEECH` per bone.
+- If the directory has files but a specific speech bone has no anchored utterance: **HARD ABORT by default** — emit `FAULT-DIALOGUE-MISSING-AT-<anchor>` with the bare bone IDs listed; recommend `/and-facets <slug>` re-run so the dialogue-writer fork can author the missing utterances. With `--allow-bare-speech`, the Phase 1 fork for that anchor renders silent action and logs the fault (legacy behavior).
 
 **2. Build the anchor→utterance lookup.**
 
@@ -224,15 +232,15 @@ The `dialogue-by-anchor` map is made available to Phase 1 fork dispatches. For e
 - Summary table: anchors covered / total speech bones; bare bones (with anchor IDs); unmoored utterances; speaker mismatches.
 - The dialogue-writer's authored objectives are preserved in the log for the auditor's trace, but they do NOT render in the polish — only utterances do.
 
-### Legacy fallback (when dialogue facet absent)
+### Legacy fallback (when dialogue facet absent — opt-in only via `--allow-bare-speech`)
 
-For episodes authored before the dialogue facet was wired upstream:
+For episodes authored before the dialogue facet was wired upstream, and only when the user has passed `--allow-bare-speech` at command-invocation:
 
 1. Emit `WARN-DIALOGUE-FACET-ABSENT` with the count of speech bones.
 2. Phase 1 forks for those bones render silent action only — `he turned to her, mouth closing on the word he didn't say` is acceptable; `he said "no"` is not. The bone-faithfulness fence holds: no invented dialogue.
 3. Flag every silent-speech bone in the render-log as `LEGACY-SILENT-SPEECH`. The polish is provisional — re-run `/and-facets <slug>` to author the missing utterances and re-stitch.
 
-This fallback parallels the exposition-absent path and will be deprecated once all in-flight episodes have dialogue facets.
+Without `--allow-bare-speech`, this path is unreachable — Phase 0.5 and Phase 0.7 step 1 hard-abort first. This is the structural prevention of FAULT-DIALOGUE-MISSING.
 
 **Why this design:** dialogue is character voice, not narrator voice. Letting the stitcher invent dialogue under the bone-faithfulness fence violates the character primitive's exclusive authority over what their characters say. Authoring dialogue upstream as a per-character fork (one hermetic run per character, loading their behavior card + ltm + stm + state) is the only place where the voice is correctly shaped against the union-of-prompts that character has across the whole episode. The stitcher is the renderer — verbatim utterance + connective attribution, nothing more.
 
