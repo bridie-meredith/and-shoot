@@ -1,6 +1,6 @@
 # Stitch Profile Schema
 
-Tuning surface for the Stitcher agent. Defines voice target, redundancy rules, compression aggressiveness, local-flow constraints, render-vs-ignore by facet type, and protected-pattern overrides.
+Tuning surface for the Stitcher agent. Defines voice target, lens-decider configuration, fork granularity, redundancy rules, compression aggressiveness, local-flow constraints, render-vs-ignore by facet type, protected-pattern overrides, output mode, and re-stitch behavior.
 
 Schema authority: this file.
 
@@ -10,8 +10,8 @@ Status: **draft (tuning)**. The knob inventory will expand as more scenes surfac
 
 ## File path conventions
 
-- **Episode default:** `active-project/theater/stitch-profile.md` — one profile per active episode. Read by every pass.
-- **Per-scene override (optional):** `active-project/theater/stitch-profile-<scene-label>.md` — e.g. `stitch-profile-scene-c.md`. Overrides episode-default for the matching scene only. Scene labels resolve via `interest-narrator.md`'s sparsity-gradient section.
+- **Episode default:** `active-project/theater/stitch-profile.md` — one profile per active episode. Read by every fork.
+- **Per-scene override (optional):** `active-project/theater/stitch-profile-<scene-label>.md` — overrides episode default for the matching scene only. Scene labels resolve via `interest-narrator.md`'s sparsity-gradient section.
 - **Project default (optional):** `active-project/stitch-profile.md` — applies to any episode without an episode-level profile.
 
 Resolution order: scene override → episode default → project default → schema defaults.
@@ -27,68 +27,113 @@ YAML frontmatter, optionally with a markdown body for human notes.
 profile-name: <descriptive label>
 scope: episode | scene | project
 applies-to: <episode-slug | scene-label | project-slug>
-persona: <stitcher-persona-slug>   # optional; see staff/stitcher/personas/
+persona: <stitcher-persona-slug>            # default: neutral
 
 voice:
-  tense: past | present
-  person: first | third
-  pov: <actor-slug>                # default: resolved from proto-lines header `narrator:`
-  contractions: true | false       # default: true
+  tense: past | present                     # default: past
+  person: first | third                     # default: first
+  pov: <actor-slug>                         # default: resolved from proto-lines header `narrator:`
+  contractions: true | false                # default: true
 
 render:
   facet-types:
-    bones: true                    # never false
+    bones: true                             # never false (fault if set false)
     narrator: true
     feel: true
     memory: true
     sensory: true
     metaphor: true
-    tens: false                    # always false — selection signal only
-    state: false                   # always false — continuity only
-    vibes: false                   # always false — bias only
-    location-state: <see below>
-  cap-per-anchor: 5 | <integer>
+    tens: false                             # always false — selection signal only (fault if true)
+    state: false                            # always false — continuity only (fault if true)
+    vibes: false                            # always false — bias only (fault if true)
+    location-state: at-establishment        # at-establishment | always | never
+  cap-per-anchor: 5
   peak-priority: [feel, narrator, memory, sensory, metaphor]
   nonpeak-priority: [narrator, feel, sensory, memory, metaphor]
 
+phase-1:
+  fork-granularity: per-anchor
+  continuity-context: previous-2-lines      # previous-2-lines | previous-paragraph | none
+  parallel: within-paragraph                # within-paragraph | full | sequential
+  lens-decider:
+    enable-rule-1-foreknowledge-clamp: true
+    enable-rule-2-sensory-spike: true
+    enable-rule-3-peak-feel: true
+    enable-rule-4-kinetic-order: true
+    enable-rule-5-recent-focus-damping: true
+    rule-5-window: 2
+    persona-overrides: enabled
+    tiebreaker: neutral-default             # neutral-default | explore (future)
+  foreknowledge-language:                   # rule-1 trigger words
+    - already
+    - had been
+    - had counted
+    - had mapped
+    - had cleared
+    - had named
+
 redundancy:
-  detector: closing-phrase-echo | image-set-overlap | both | off
-  echo-window: 1 | <integer>       # bones within this distance count for echo
-  preserve-anchor: narrator        # which facet wins when echo detected
+  detector: closing-phrase-echo             # closing-phrase-echo | image-set-overlap | both | off
+  echo-window: 1                            # bones within this distance count for echo
+  preserve-anchor: narrator                 # which facet wins when echo detected
 
 compression:
-  same-subject-merge: true | false
-  pronoun-substitution: after-first | strategic | preserve-all
-  tens1-run-collapse: aggressive | preserve | off
-  exit-trio-merge: true | false
-  zero-cite-bone-policy: render | merge-with-adjacent | drop
+  same-subject-merge: true
+  pronoun-substitution: after-first         # after-first | strategic | preserve-all
+  tens1-run-collapse: preserve-buildups     # aggressive | preserve-buildups | off
+  exit-trio-merge: true
+  zero-cite-bone-policy: render             # render | merge-with-adjacent | drop
 
 voice-transform:
-  bone-object-policy: verbatim | idiom-fit
-  third-party-preserve: [Tya, Watch, ...]  # named entities that never person-shift
-  feeling-clause-pov-resolution: auto | manual
-  sensory-arrow-rendering: prose-template | drop-if-covered
+  bone-object-policy: verbatim              # verbatim | idiom-fit
+  third-party-preserve: [Tya, Watch]
+  feeling-clause-pov-resolution: auto       # auto | manual
+  sensory-arrow-rendering: prose-template   # prose-template | drop-if-covered
 
 local-flow:
-  window-size: 3 | <integer>       # bones in sliding window
-  sensory-deferral-cap: 2 | <integer>
-  ni-promotion-cap: 1 | <integer>
-  within-anchor-order: em-dash-fusion | cite-index | body-first | meaning-first
-  temporal-lock-words: [first, second, third, next, before, after, soon, now, then, immediately]
-  un-merge-license: true | false
+  window-size: 3
+  sensory-deferral-cap: 2
+  ni-promotion-cap: 1
+  within-anchor-order: em-dash-fusion       # em-dash-fusion | cite-index | body-first | meaning-first
+  temporal-lock-words:
+    - first
+    - second
+    - third
+    - next
+    - before
+    - after
+    - soon
+    - now
+    - then
+    - immediately
+  un-merge-license: true
 
 protected-patterns:
-  - three-note-buildup           # any 3-bone monotonic structural-pivot sequence
-  - countdown                     # N-1-bone descent
-  - threshold-cross               # gate / door / commit cluster
-  - return-of                     # callback bones
-  # patterns listed here are reviewed at Phase 6 and restored if Phase 3 flattened them
+  - three-note-buildup
+  - countdown
+  - threshold-cross
+  - return-of
 
-scene-overrides:                  # optional inline overrides
+phase-7:
+  enabled: true
+  questions: standard                       # standard | strict | permissive
+  cut-aggressiveness: standard              # standard | aggressive | conservative
+  persona-overrides: enabled
+
+output:
+  mode: dual                                # dual | clean-only
+  line-ids: stable                          # stable (gaps allowed) | dense
+  trace-verbosity: change-only              # change-only | full
+
+feedback:
+  feedback-file: staff/stitcher/feedback-<slug>.md
+  re-stitch-scope: fork-plus-downstream     # fork-only | fork-plus-downstream | full
+
+scene-overrides:
   scene-c:
     voice.person: first
   scene-l:
-    render.peak-priority: [memory, narrator, sensory]   # no feel co-cite at @134
+    render.peak-priority: [memory, narrator, sensory]
 ---
 
 # Optional notes
@@ -102,65 +147,101 @@ Free-form human notes — why this profile, what's been tuned, what's an open qu
 ### `voice:`
 
 - **`tense`** — applied at Phase 4. Affects bone verbs, NI clauses, feel clauses, mem clauses, sensory arrow forms.
-- **`person`** — applied at Phase 4. POV character (per `pov:`) maps to the chosen person; everyone else stays third-person. `first` + plural narrators is undefined — fault.
-- **`pov`** — defaults to the proto-lines file's `narrator:` field. Override only when the proto-lines narrator and the rendered POV intentionally differ (e.g. a flashback in another character's POV).
-- **`contractions`** — `true` renders "did not" → "didn't" etc. Match the prior episode's register if continuing a series.
+- **`person`** — applied at Phase 4. POV character (per `pov:`) maps to the chosen person; everyone else stays third-person.
+- **`pov`** — defaults to the proto-lines file's `narrator:` field. Override only when proto-lines narrator and rendered POV intentionally differ (e.g. a flashback in another character's POV).
+- **`contractions`** — `true` renders "did not" → "didn't" etc.
 
 ### `render:`
 
-- **`facet-types`** — boolean per type. `bones: false` is a fault. `tens`, `state`, `vibes` are forced false by the schema; setting true is a fault.
-- **`cap-per-anchor`** — maximum number of cites rendered at a single bone. Excess is dropped per priority list. Cap counts the bone itself plus the rendered facets.
-- **`peak-priority`** — ordered list of facet types. At tens=3 anchors, when the cap is reached, render in this order. First wins.
-- **`nonpeak-priority`** — same as peak-priority, applied at tens=1 and tens=2 anchors.
-- **`location-state`** — render-or-not is anchor-dependent. Default policy: render at the first anchor in a new location (location-establishment); skip thereafter unless the conditions field changes.
+- **`facet-types`** — boolean per type. `bones: false` is a fault. `tens`, `state`, `vibes` forced false by the schema; setting true is a fault.
+- **`cap-per-anchor`** — maximum cites rendered at a single anchor. Excess dropped per priority list. Counts the bone plus rendered facets.
+- **`peak-priority`** / **`nonpeak-priority`** — ordered list. At tens=3 (peak) anchors, when cap is reached, render in `peak-priority` order. Tens=1 and tens=2 use `nonpeak-priority`. First wins.
+- **`location-state`** — render-or-not is anchor-dependent. `at-establishment` renders at the first anchor in a new location; skips thereafter unless conditions field changes. `always` renders every cite. `never` skips entirely.
+
+### `phase-1:`
+
+The lens-anchored render configuration.
+
+- **`fork-granularity`** — `per-anchor` is the working default. Other values not yet supported.
+- **`continuity-context`** — what previous output each fork sees. `previous-2-lines` (default) gives continuity but serializes adjacent forks within a paragraph. `previous-paragraph` is more serial; `none` is maximally parallel but accepts continuity drift (Phase 5 and 7 catch it).
+- **`parallel`** — `within-paragraph` runs forks in parallel within a paragraph (serial across paragraphs); `full` parallelizes everything (only valid with `continuity-context: none`); `sequential` runs one fork at a time.
+- **`lens-decider`** — rule toggles. Each `enable-rule-N-*` flag turns one rule on or off; disabling rules is for experimentation. Defaults: all on.
+- **`lens-decider.rule-5-window`** — recent-focus damping lookback. Higher values dampen lens-rhythm saturation more aggressively.
+- **`lens-decider.persona-overrides`** — whether persona's `## Lens biases` table is consulted. Default enabled.
+- **`lens-decider.tiebreaker`** — `neutral-default` falls through to neutral-persona kinetic order. `explore` (future enhancement, not v1) emits both candidates with a `CHOICE-DEFERRED` trace tag.
+- **`foreknowledge-language`** — list of words/phrases that trigger rule 1 (NI leads). The default list covers the canonical foreknowledge-clamp register; project-specific additions land here.
 
 ### `redundancy:`
 
-- **`detector`** — `closing-phrase-echo` matches the last N words of two co-anchored facet clauses; `image-set-overlap` matches noun-set overlap; `both` requires both to fire; `off` disables.
-- **`echo-window`** — how many bones a facet's content can be checked against. `1` means same-anchor only; higher values catch cross-bone echoes (rare but possible).
+- **`detector`** — `closing-phrase-echo` matches last N words of co-anchored facet clauses; `image-set-overlap` matches noun-set overlap; `both` requires both to fire; `off` disables.
+- **`echo-window`** — how many bones a facet's content is checked against. `1` means same-anchor only; higher values catch cross-bone echoes.
 - **`preserve-anchor`** — when echo fires, which facet type wins. The other is dropped with a log entry.
 
 ### `compression:`
 
-- **`same-subject-merge`** — bones N and N+1 with the same subject and continuous action merge into one sentence with serial-comma verbs.
-- **`pronoun-substitution`** — `after-first` substitutes "she" for the second-onward occurrence of "the mother" within a paragraph; `strategic` substitutes only when repetition would otherwise saturate; `preserve-all` disables.
-- **`tens1-run-collapse`** — `aggressive` collapses any run of ≥3 tens=1 bones with no cites into one merged sentence; `preserve` keeps the buildup-pattern detector in play; `off` disables.
-- **`exit-trio-merge`** — the specific case of three terminal bones (set-bowl / face-wall / exit pattern). Boolean.
-- **`zero-cite-bone-policy`** — what to do with bones that carry no facet citations. Renders by default; can be merged or dropped.
+- **`same-subject-merge`** — bones N and N+1 with same subject and continuous action merge.
+- **`pronoun-substitution`** — `after-first` substitutes "she" for second-onward occurrence of "the mother" within a paragraph; `strategic` substitutes only when repetition would saturate; `preserve-all` disables.
+- **`tens1-run-collapse`** — `aggressive` collapses any run of ≥3 tens=1 zero-cite bones; `preserve-buildups` keeps the buildup-pattern detector active to protect structural sequences; `off` disables collapse.
+- **`exit-trio-merge`** — boolean. The specific case of three terminal bones (set-bowl / face-wall / exit pattern).
+- **`zero-cite-bone-policy`** — what to do with bones carrying no facet citations. `render` keeps them; `merge-with-adjacent` folds them into neighbor; `drop` removes (logged).
 
 ### `voice-transform:`
 
 - **`bone-object-policy`** — `verbatim` preserves the bone's object exactly ("holds the eyes"); `idiom-fit` allows English-idiom adjustment ("holds her gaze"). Verbatim is the schema-faithful default.
-- **`third-party-preserve`** — named entities (proper nouns, distinct from POV) that must never person-shift even if grammatically adjacent. Tya is the canonical example: dead third-party referenced by POV, never the speaker.
-- **`feeling-clause-pov-resolution`** — `auto` resolves "the girl's face" → "my face" when the POV is the only matching referent in the cast at that anchor; `manual` requires explicit mapping.
-- **`sensory-arrow-rendering`** — `prose-template` applies a template ("X gave way to Y" / "X fell behind Y"); `drop-if-covered` drops the sensory delta if the adjacent bone verb already carries the modality shift (e.g. "She dropped the song" already conveys the sound-modality change).
+- **`third-party-preserve`** — named entities that never person-shift even if grammatically adjacent to POV.
+- **`feeling-clause-pov-resolution`** — `auto` resolves "the girl's face" → "my face" when POV is the only matching referent at the anchor; `manual` requires explicit mapping.
+- **`sensory-arrow-rendering`** — `prose-template` applies a template ("X gave way to Y"); `drop-if-covered` drops the sensory delta if the adjacent bone verb already carries the modality shift.
 
 ### `local-flow:`
 
-- **`window-size`** — sliding window in bones. 3 (prev + current + next) is the working default. Larger windows surface more migration candidates but slow the pass and increase composition risk.
-- **`sensory-deferral-cap`** — forward migration distance limit for sensory deltas. Cumulative deltas can move forward up to N bones; non-cumulative (spike, drop) cannot move.
-- **`ni-promotion-cap`** — backward migration distance for NI clauses. Capped because backward movement is rarer-but-riskier than forward.
-- **`within-anchor-order`** — when multiple cites land at one bone after redundancy cull. `em-dash-fusion` joins bone + one facet with em-dash; `cite-index` preserves source order; `body-first` puts feel before NI before mem; `meaning-first` reverses.
-- **`temporal-lock-words`** — clauses containing any of these words cannot migrate. The list is conservative by default; tune by adding scene-specific lock words.
-- **`un-merge-license`** — whether local flow may undo a Phase 3 merge to rescue a swallowed facet. Default true.
+- **`window-size`** — sliding window in bones. 3 (prev + current + next) is the working default.
+- **`sensory-deferral-cap`** — forward migration distance limit for sensory deltas. Cumulative deltas can move forward up to N bones; spike/drop cannot move.
+- **`ni-promotion-cap`** — backward migration distance for NI clauses.
+- **`within-anchor-order`** — when multiple cites land at one anchor after redundancy cull. `em-dash-fusion` joins bone + one facet with em-dash; others as listed in card.
+- **`temporal-lock-words`** — clauses containing any of these words cannot migrate. Conservative default; tune by adding scene-specific lock words.
+- **`un-merge-license`** — whether local flow may undo a Phase 3 merge to rescue a swallowed facet.
 
 ### `protected-patterns:`
 
-A list of named patterns Phase 6 (buildup preservation) restores if Phase 3 flattened them. Each pattern name resolves to a detector — three-note-buildup looks for three bones with monotonic ordinal verbs ("first / second / third") on the same subject; countdown for descending; etc. Add new patterns here as new scenes surface them.
+A list of named patterns Phase 6 restores if Phase 3 flattened them. Each pattern resolves to a detector: `three-note-buildup` looks for three bones with monotonic ordinal verbs on the same subject; `countdown` for descending; `threshold-cross` for gate/door/commit cluster; `return-of` for callback bones.
+
+### `phase-7:`
+
+Editorial reflection configuration.
+
+- **`enabled`** — boolean. Disabling skips Phase 7 entirely.
+- **`questions`** — which version of the seven-question set. `standard` is the canonical seven; `strict` adds additional questions; `permissive` drops the more aggressive ones.
+- **`cut-aggressiveness`** — how readily a "yes / no / yes-but-bad" answer triggers a move. `standard` is the default; `aggressive` cuts on borderline; `conservative` keeps unless clear violation.
+- **`persona-overrides`** — whether persona's `## Phase 7 biases` section is consulted.
+
+### `output:`
+
+- **`mode`** — `dual` writes both clean and annotated; `clean-only` writes only the polish file. Default `dual` during tuning; flip to `clean-only` for production.
+- **`line-ids`** — `stable` assigns IDs at Phase 8 and preserves them across edits (gaps allowed when sentences are later cut); `dense` renumbers on each run.
+- **`trace-verbosity`** — `change-only` records phases that made changes plus the lens-decider firing; `full` records every phase touching every line.
+
+### `feedback:`
+
+- **`feedback-file`** — path to the line-keyed feedback file. Default convention is `staff/stitcher/feedback-<slug>.md`.
+- **`re-stitch-scope`** — what re-runs when feedback lands. `fork-only` re-runs just the originating fork; `fork-plus-downstream` (default) also re-runs downstream phases whose log entries reference the affected anchor or line-ID; `full` re-runs the entire chain.
 
 ### `scene-overrides:`
 
-Inline overrides keyed by scene label. Each override is a partial profile that shallow-merges over the episode default for the named scene only. Useful when one scene wants different voice or different protected patterns without authoring a separate per-scene file.
+Inline overrides keyed by scene label. Each override is a partial profile that shallow-merges over the episode default for the named scene only.
 
 ### `persona:`
 
-Optional. References a stitcher-persona card at `staff/stitcher/personas/<slug>.md`. The persona biases ambiguous calls within the schema's hard constraints. **Provisional — pending tuning.** See `staff/stitcher/card.md` § Persona plugin.
+References a stitcher-persona card at `staff/stitcher/personas/<slug>.md`. The persona biases:
+- Lens-decider rule 6 (per anchor type)
+- Phase 7 question aggressiveness (per question)
+
+Defaults to `neutral` — the reference persona with no overrides.
 
 ---
 
 ## Resolution and validation
 
-The Stitcher's Phase 0 reads:
+Phase 0 reads:
 1. The active scene's per-scene profile if present.
 2. The episode default profile.
 3. The project default profile if present.
@@ -174,17 +255,21 @@ Validation faults:
 - `FAULT-PROFILE-BONES-OFF` — `render.facet-types.bones` set false.
 - `FAULT-PROFILE-INCONSISTENT-VOICE` — `voice.person: first` with no resolvable `pov:`.
 - `FAULT-PROFILE-UNKNOWN-PATTERN` — `protected-patterns` lists a pattern with no detector.
+- `FAULT-PROFILE-INVALID-PARALLEL` — `parallel: full` with `continuity-context` not `none`.
+- `FAULT-PROFILE-MISSING-PERSONA` — `persona:` set to a slug with no card at `staff/stitcher/personas/<slug>.md`.
 
 ---
 
-## Render-log schema (cross-reference)
+## Render-log and feedback (cross-reference)
 
-The Stitcher's per-phase output is logged to `staff/stitcher/render-log-<episode-slug>.md`. See that file's schema (`schemas/stitch-render-log.schema.md`, pending) for the per-phase entry format.
+The Stitcher's per-fork output is logged to `staff/stitcher/render-log-<slug>.md`. See `schemas/stitch-render-log.schema.md` for per-fork entry format and the trace block grammar.
+
+Line-keyed feedback consumed by the stitcher on re-runs lives at the path specified in `feedback.feedback-file`. See `schemas/stitch-feedback.schema.md` for entry format.
 
 ---
 
 ## What this schema does not cover
 
-- The stitcher persona library at `staff/stitcher/personas/`. Provisional. See `staff/stitcher/card.md` § Persona plugin.
+- The stitcher persona library at `staff/stitcher/personas/`. See `staff/stitcher/card.md § Persona plugin` and individual persona cards.
 - Cross-episode continuity (voice register continuity between e01 and e02). Currently the editor's domain in `/and-wrap`, not the stitcher's.
-- The actual prose-output schema. The stitcher writes to `polish/<slug>.md`; the format of that file is constrained by what each pass writes, not by a standalone schema.
+- The actual prose-output schema. Polish files are constrained by what each phase writes, not by a standalone schema.
