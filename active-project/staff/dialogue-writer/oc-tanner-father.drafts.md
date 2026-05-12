@@ -1,80 +1,92 @@
-character: oc-tanner-father
-episode: s01e02
-behavior-card: westeros-smallfolk
-fork: r1-westeros-smallfolk
+# Drafts — oc-tanner-father (s01e02, westeros-smallfolk)
+
+Anti-pattern self-check applied per entry. Anti-pattern targets:
+- em-dash + semicolon spine (Taylor-chassis leak — highest priority)
+- modern HR-speak ("labor-eligibility", "procedural", "compliance")
+- deposition cadence (legalistic Q-and-A)
+- nominalization substituting for plain English
+
+Speaker-register check: father speaks to (a) his daughter's body (kin register, smallfolk-to-smallfolk, withdrawn-by-card) and (b) Old Tom the elder (smallfolk peer transactional). NO *m'lord/ser* in these beats — those are smallfolk-to-noble markers; both addressees are smallfolk.
+
+---
 
 ## entry 1 @14
 intent:
-  board-move: open the junction encounter by naming the girl into the kin-claim without softening — fix the meeting so it cannot be brushed past.
-  register-state: kin-private rung forced into market-side public; matter-of-fact, no warmth-performance per persona hard-fence (does not perform warmth he does not feel).
-  rung: tanner-father to a body that wears his daughter — within-class, downward in standing because the girl now lives baseborn-in-Flea-Bottom.
-  distance: intimate-forced-public; eight feet across the junction stones with traders in earshot.
-  framing: public — the elder is two paces off and the goods are still on his shoulder.
+  board-move: open contact at the junction; declare the practical reason for being here without performing warmth
+  register-state: withdrawn-kin (he has concluded the girl is not Tya; he is managing, not embracing)
+  rung: smallfolk-to-kin, cold-edge — the within-class loose register but with deliberate non-performance of warmth
+  distance: blood-kin in public, transactional-tone overlay
+  framing: public (market-side junction; the wife is present; the elder is present)
 drafts:
-  A: "Tya." — rejected: bare name with no kin-frame leaks the persona's grief instead of holding it; card asks for stacked-not-chained but A is one beat, no smallfolk texture demonstrated.
-  B: "Girl. We've come to settle the matter of the daughter." — rejected: "settle the matter" reads as deposition-cadence / nominalization (anti-pattern brief item 3 + 4); on-card-but-cold without the m'-deference or any §Religious-utterance hook.
-  C: "Girl. You knew we'd come."  — CHOSEN
-card-signatures: §Cadence "Short sentences. Stacked, not chained." (two declaratives, both four syllables, no subordination); §Voice-tells "The named-other" (he refuses the daughter's name — uses *girl* — which is the structural smallfolk move when relation is being rebuilt or refused, and which performs the persona's withdrawal); §Cadence "Pause habit" (the second sentence is the permission-pause line that smallfolk give before a peer is allowed to speak back).
-facet-licenses: pending-r2:narrator:? (anchor-hint: "stills at 12 — POV registers the held face before the line lands")
+  A: "Tya. We brought the hides. Your mother wanted to see you." — rejected: uses the name directly; per state/STM and the persona card's "fewer words than before" + "suppressed-declaration", he avoids naming the daughter; the name belongs to mother's name-shaped silence on the other side of the same withdrawal.
+  B: "We come down with the hides. Your mother would see you." — CHOSEN
+  C: "We've come with the load, and the missus would have a look at you." — rejected: "have a look at you" reads as too inspectional and tips his private accounting into the public utterance; the chosen draft keeps the inspectional intent under the surface where his card requires it.
+card-signatures: §Cadence (short stacked declaratives — two short clauses, no subordination); §Syntax (collapsed past — "We come down" not "we have come down"); §Vocabulary-Reaches-for ("the hides" — agricultural/lived-environment naming-by-function); §Vocabulary-Refuses (no *indeed/perhaps/however*); GRRM-overlay §Time-keeping (no anachronism — direction-by-function, not modern travel-idiom)
+facet-licenses: pending-r2:state:5 (anchor-hint: father's arrival at the junction logged as state-change); pending-r2:narrator:3 (anchor-hint: the stilling at the moment of facing the girl)
 anti-pattern-self-check: clean
-notes: persona hard-fence respected — no direct question about what she is, no public declaration of his private conclusion. The refusal of *Tya* is the conclusion carried in negative space.
 
 ## entry 2 @19
 intent:
-  board-move: pivot from the girl to the elder to discharge the trade goods — close the transactional half of the visit while the kin-claim hangs unresolved.
-  register-state: within-class smallfolk-peer transactional; deferential m'- markers drop because the elder is a peer-broker, not a noble.
-  rung: tanner-to-broker; smallfolk-equals with a known accounting between them.
-  distance: transactional; one pace, sotto.
-  framing: public-junction but the line is angled at the elder, voice low.
+  board-move: pass the trade-reference baton to the elder broker; signal continuity without expansion
+  register-state: smallfolk-peer transactional, mid-market, brief
+  rung: peer-to-peer, within-class loose register, market-side
+  distance: working-relationship, public
+  framing: public (market-side; trade aside in plain hearing but not for plain audience)
 drafts:
-  A: "These for the slate, then. Same as before." — rejected: clean on-card but "Same as before" is a generic closer; misses the chance to demonstrate §Vocabulary "Sums and counts" anchor (the card asks smallfolk to name coin and measure specifically).
-  B: "Hides for the slate. Two moons' worth, near enough." — CHOSEN
-  C: "Begging your pardon, Elder, but the hides are for the slate." — rejected: m'-deference / "begging your pardon" register is up-the-hierarchy talk and the elder is a peer-broker, not a lord; misuses §Forms-of-address and reads as wrong-rung.
-card-signatures: §Vocabulary-sums-and-counts "Hides ... Two moons' worth" (coinage-and-grain specificity rather than abstract value); §Cadence "Short sentences. Stacked, not chained." (two declaratives, no subordination, the second a measure-clause); §Cadence "Trailing softeners" ("near enough" as the sentence-final hedge that distances him from the precise number); GRRM-overlay §Time-keeping "moons" (not months).
-facet-licenses: pending-r2:narrator:? (anchor-hint: "lifts the trade goods at 18 — the line is the verbal half of that physical move")
-anti-pattern-self-check: clean
+  A: "Old Tom, a word — the Crownlands business, same arrangement as before." — rejected: em-dash spine + the nominalization "Crownlands business / arrangement" is Taylor-chassis-leak AND HR-speak; double anti-pattern.
+  B: "Old Tom. A word, when you've a moment. The Crownlands lot, same as before." — CHOSEN
+  C: "Tom. You've got a moment for the Crownlands lot? Same terms." — rejected: question-frame inverts the deferential default for a request between trade peers; the chosen draft uses the short-declarative pause-habit the card calls for ("the pause comes at the end of a sentence-unit") and lets the elder grant continuation per §Cadence pause-habit.
+card-signatures: §Cadence (short stacked declaratives — three short units with pause-grants between them); §Vocabulary-Family/Community ("Old Tom" — elder-honorific name-form per card); §Vocabulary-Reaches-for ("a word, when you've a moment" — the smallfolk pause-permission pattern named in §Cadence); §Voice-Tells (named-other: identifies the previous trade contact by category — "the Crownlands lot")
+facet-licenses: pending-r2:narrator:4 (anchor-hint: father lifting the trade goods — the speaking-beat overlays the physical hand-off)
+anti-pattern-self-check: clean. Draft A flagged em-dash spine + nominalization; B avoids both. The chosen line uses periods, not em-dashes, and concrete plural-noun ("the Crownlands lot") rather than a noun-phrase nominalization.
 
 ## entry 3 @100
 intent:
-  board-move: formalize the customary wage-claim publicly — the second visit is the one where the kin-grief converts into a wage-figure; this is the bone the episode goal turns on.
-  register-state: market-side public; smallfolk-claim register, which carries customary weight without using courtly vocabulary. He is calling on custom, not on law.
-  rung: tanner-father invoking village-custom across the city-gap; the rung is "kin with a claim under the eyes of the Seven and the market."
-  distance: public, voice for the carters to hear.
-  framing: public — the audibility IS the claim. Custom is enforced by witness.
+  board-move: name the customary wage-claim plainly; escalate the family's claim from informal grief (visit 1) to formal customary frame (visit 2) per episode goal
+  register-state: withdrawn-kin, transactional overlay (the cost-accounting layer his card's voice-tells flag is now surfaced)
+  rung: smallfolk-to-kin with customary-claim formality layered on; the formality is village-customary, not noble-courtly
+  distance: blood-kin, but the customary frame creates structural distance the father is using as protection
+  framing: public (market-side junction again; same place; second time)
 drafts:
-  A: "We've come for what's owed for the daughter. A copper a moon. That's the customary." — CHOSEN
-  B: "Procedural matter, girl. The first month's wage on the daughter is owed and we'll be collecting." — rejected: "procedural matter" is hard anti-pattern (modern HR-speak / nominalization) — exact failure mode the brief names. Drop on sight.
-  C: "Seven save us, girl, we wouldn't ask if there were any other way." — rejected: religious utterance is in-register but the line undercuts the claim with a hedge the persona would not offer — the card says he does not perform warmth he does not feel, and pity-for-asking is performance.
-card-signatures: §Vocabulary-sums-and-counts "A copper a moon" (specific coinage + moon-measure per GRRM-overlay); §Cadence "Stacked, not chained" (three short declaratives, the third the proof-frame for the second per the §Cadence "claim → quality → evidence" pattern documented in the card's direct sample about the good-boy structure); §Vocabulary "The customary" (the bare definite-article noun is smallfolk shorthand for invoked-village-law, the way *the lord's woods* or *the green* are named-by-function); GRRM-overlay §Time-keeping "moon" not month.
-facet-licenses: pending-r2:exposition:? (anchor-hint: "register-explanation that customary wage-claim is the bone"); pending-r2:narrator:? (anchor-hint: "POV reads the figure-naming as the moment custom hardens"); pending-r2:state:? (anchor-hint: "wage-claim now formalized in state-ledger")
-anti-pattern-self-check: clean — explicitly avoided "procedural" and avoided em-dash spine in chosen draft.
+  A: "There's a claim, girl. The custom. Two coppers a moon's worth till harvest, and we're done." — rejected: "the custom" as bare nominalization is thin; the card calls for the smallfolk register to name customary things by what they are (wage-claim, share, due) rather than by abstract category.
+  B: "There's the wage-claim, girl. Customary. Two coppers a moon till the harvest turn, and we're square." — CHOSEN
+  C: "We're owed a wage, by custom. Two coppers the moon, till harvest. After that, square." — rejected: "we're owed" puts the claim in the first person plural with grievance-tone; the card's voice for the father is "matter-of-fact: task, yield, result" — declaring the custom as existing thing (third-person "there's the wage-claim") rather than asserting we-claim is more in-register and more in-character.
+card-signatures: §Cadence (short stacked declaratives — three units stacked, no subordination); §Vocabulary-Reaches-for (compound formation: "wage-claim" — Saxon-compound habit per the GRRM-mannerisms overlay §Compound words; "harvest turn" — agricultural calendar per §Vocabulary-Time-markers and the GRRM-overlay §Time-keeping moons-turn vocabulary); §Vocabulary-Refuses ("we're square" — smallfolk register, not "we will have settled the matter"); §Voice-Tells (survival-as-default-subtext — coin amount named exactly, duration named exactly, cost-accounting layer on the surface here)
+facet-licenses: pending-r2:exposition:3 (anchor-hint: customary wage-claim — the term needs glossing for the reader); pending-r2:narrator:19 (anchor-hint: Taylor's attention on what the father is saying); pending-r2:state:6 (anchor-hint: the formalization of the claim as state-change)
+anti-pattern-self-check: clean. Checked: no em-dash. No legalistic Q-and-A. "Customary" appears as adjective predicate not as HR-noun. "Harvest turn" + "moon" carries the GRRM time-keeping rather than week/month.
 
 ## entry 4 @103
 intent:
-  board-move: hold the figure when the girl pushes back or pauses — the persona does not negotiate the principle, only confirms the unit.
-  register-state: same as @100 but tighter — defensive without raising his voice.
-  rung: same.
-  distance: same.
-  framing: same; the audibility is the floor.
+  board-move: hold the named amount when the girl does not answer at once; reinforce the customary frame as the precedent his withdrawal can rest on
+  register-state: withdrawn-kin, repeat-for-emphasis pattern triggered by silence
+  rung: smallfolk-to-kin, customary-frame held
+  distance: blood-kin with structural distance maintained
+  framing: public, within-scene continuation of @100
 drafts:
-  A: "A copper. Every moon she's at this." — CHOSEN
-  B: "I won't quarrel the figure, girl. It's what the village does." — rejected: "I won't quarrel the figure" is a tonal slip into noble-administrative — smallfolk would say *we don't fight over coppers* or just repeat the number; the card §Cadence "repeat-for-emphasis" wants the number doubled, not philosophized.
-  C: "A copper, like I said. A copper a moon." — rejected: redundant with entry 3 in stitch — the §Cadence "repeat-for-emphasis" pattern is right but the line just echoes the figure and adds nothing about who is owed; B-better was already in @100's three-beat.
-card-signatures: §Cadence "Repeat-for-emphasis" (the number repeats but the second clause adds the cadence of duration — *every moon she's at this*); §Syntax "Subject-implied openings" (no pronoun on the second clause — the topic *the copper* carries from the first); §Cadence "Stacked, not chained" (two fragments).
-facet-licenses: pending-r2:narrator:? (anchor-hint: "the figure is held, not negotiated")
-anti-pattern-self-check: clean
+  A: "Two coppers. Like I said. Her people done the same when it were her turn." — rejected: "like I said" + "her people" reads as too modern-casual; "her" with no antecedent reads as ambiguous between the wife and the dead grandmother.
+  B: "Two coppers. That's the way of it. Same as your mother's people done for hers." — CHOSEN
+  C: "Two coppers a moon, girl. The custom doesn't bend. You'll find your old grandmam's people done the same." — rejected: "doesn't bend" is a metaphor that overreaches the father's voice (voice-tells: emotion as operational interference); "grandmam" reaches for a kin-term he wouldn't deploy mid-transaction.
+card-signatures: §Cadence (repeat-for-emphasis — "two coppers" repeated from entry 3, the card's named pattern when a thing matters); §Vocabulary-Reaches-for ("that's the way of it" — canonical affirmative-frame from the card's affirmatives list); §Syntax (collapsed past — "your mother's people done"); §Voice-Tells (named-other-by-relation — "your mother's people" rather than naming them)
+facet-licenses: pending-r2:state:6 (anchor-hint: the formalization continues; second utterance lands the customary claim as locked); pending-r2:narrator:19 (anchor-hint: Taylor's attention sustained)
+anti-pattern-self-check: clean. Verified: "that's the way of it" is canonical smallfolk affirmative per the card's §Vocabulary-Affirmatives; "done" past participle (collapsed) per §Syntax. No nominalization. No em-dash. No deposition Q.
 
 ## entry 5 @108
 intent:
-  board-move: accept the coins and close the visit — the visit must close with the transaction completed, not with kin-language. The closure is the cost.
-  register-state: matter-of-fact, exit-cadence. He is taking what he came for and leaving; no farewell because farewell would acknowledge a relationship he is letting go.
-  rung: tanner-father walking back to peer-broker mode.
-  distance: closing — already pivoting away.
-  framing: public.
+  board-move: close the transaction, signal departure, do not perform reconciliation; the customary frame is now established for visit three to come
+  register-state: withdrawn-kin, departure-cadence
+  rung: smallfolk-to-kin with customary-frame closed
+  distance: he is already pivoting away in posture; the words match the body
+  framing: public, scene-close
 drafts:
-  A: "Right, then." — rejected: in-register but anemic; fails Q1 — no card signature affirmatively demonstrated. Inoffensive ≠ on-card.
-  B: "That'll see us till next moon's turn." — CHOSEN
-  C: "Gods keep you, girl." — rejected: violates persona hard-fence (does not perform warmth he does not feel); the blessing is a warmth-performance the persona refuses.
-card-signatures: §Cadence "Trailing softeners" — "till next moon's turn" pushes the duration-frame to the sentence-final position, hedging the closing line; GRRM-overlay §Time-keeping "moon's turn" (the canonical GRRM-mannerisms phrase per the overlay); §Voice-tells "Distance from event-history" (he closes by naming the next visit's duration — time as a flat marker, not a relationship).
-facet-licenses: pending-r2:narrator:? (anchor-hint: "co-cite narrator:22 on this anchor — POV reads the exit as routine, not farewell")
-anti-pattern-self-check: clean — no em-dash spine, no Latinate vocabulary, no warmth-performance.
+  A: "Next moon's turn, then. Keep yourself well, girl." — rejected: "keep yourself well" is too warm for the card's hard fence — "does not perform warmth he does not feel."
+  B: "We'll come again at the next moon's turn. Mind yourself." — CHOSEN
+  C: "We'll see you at moon's end. Don't bring trouble down on the missus." — rejected: "don't bring trouble" surfaces a worry the card calls private (suppressed-declaration); the chosen draft "mind yourself" is a smallfolk register-tag that carries the same monitoring weight without surfacing the private accounting.
+card-signatures: §Cadence (short stacked declaratives — two units, the departure pattern); §Vocabulary-Reaches-for ("moon's turn" — GRRM-overlay §Time-keeping canonical form for "next month"); §Vocabulary-Refuses (no "see you later", "take care", "alright then"); §Voice-Tells (non-performance of warmth — "mind yourself" is the cold-edge of a kin-departure)
+facet-licenses: pending-r2:narrator:22 (anchor-hint: Taylor watching the father exit — his closing words are the last she gets this visit)
+anti-pattern-self-check: clean. Checked: no em-dash, no HR-speak, no Q-and-A. "Mind yourself" carries the monitoring intent of his card without surfacing it.
+
+---
+
+## Calibration note
+
+Father's lines are NOT the calibration anchor for this fork — the elder @20 is the high-co-cite anchor and gets the calibration. Father's lines were drafted against the elder's calibrated register so the two voices share the same chassis (short stacked declaratives, no subordination, no em-dash) and differ on rung (father: kin-withdrawn; elder: peer-transactional precision-cut).
