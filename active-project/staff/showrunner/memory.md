@@ -133,7 +133,7 @@ seasons:
         upstream_tuning_queue_entries: [URI-028, URI-029, URI-030, URI-031, URI-032, URI-033, URI-034, URI-035, URI-036, URI-037, URI-038, URI-039, URI-040, URI-041, URI-042]
         upstream_tuning_queue_addressed: [URI-028, URI-029, URI-032, URI-034, URI-035, URI-036, URI-037, URI-038, URI-039, URI-040, URI-041, URI-042]   # 2026-05-11 fourth round: Phase 5b audience-gate wired into /and-facets, closing URI-035 by design (validation deferred to s01e02). URI-030/031/033 (R2 protocol + tooling) remain open.
       - slug: s01e02
-        status: audited-r1-mechanical   # Phase 5 mechanical clean (HARD=0 at r3) but Phase 5b NOT 3-of-3 across all facets; per spec, status flips to audited-r1 only on full Phase 5b ACCEPT; cycle 2 of 3 used; user direction terminated progression at fixer-only-cycle-2
+        status: audited-r1   # FLIPPED 2026-05-12 — Phase 5b cycle 3 + cycle-4 cap-exception cleared 9-of-9 facets to 3-of-3 ACCEPT. cycle-4 cap-exception ratified for memory single-field repair (mem:13 target-reference rewrite) per audience-convergent demand; documented in facets-audience-gate-r3.md §"Cap-exception ratification".
         narrator: taylor-hebert-flea-bottom
         interlude: false
         chunk: "The tanner-family's claim escalates from informal grief to formalized customary wage-claim across three visits; the broken maester transitions from ambient signal to named log entry; range expands from 300m to 400m with first physiological cost; the mother extinguishes the vigil candle."
@@ -148,41 +148,46 @@ seasons:
         facets_path: active-project/theater/facets/
         round_1_complete: true
         round_2_complete: true
-        audit_path: active-project/staff/auditor/facets-final-audit-r3.md   # canonical post-cycle-2-fixer; CLEAN HARD=0 + recalibrated Earth-Bet proper-noun scan clean
+        audit_path: active-project/staff/auditor/facets-final-audit-r4-s01e02-cycle3.md   # canonical post-cycle-3 + cycle-4 cap-exception; HARD=0; 5 SIGNAL (3 cleared via preemptive fixer pass; 2 carry-forward — find-002 URI-CONSOLIDATION-CITE-DRIFT, find-005 @20 pile-up borderline)
         audit_complete: true
         audit_findings_hard_initial: 1   # r1: 1 HARD (metaphor:2 unresolvable mem:5 anchor — R2 concurrent-fork collision)
-        audit_findings_hard_residual: 0   # r2 + r3 both CLEAN
+        audit_findings_hard_residual: 0   # r2 + r3 + r4 all CLEAN
         audit_paths_chronological:
-          - active-project/staff/auditor/facets-final-audit.md       # r1 (1 HARD + 7 SIGNAL)
-          - active-project/staff/auditor/facets-final-audit-r2.md    # r2 (post-fixer DELETE meta:2; CLEAN HARD=0)
-          - active-project/staff/auditor/facets-final-audit-r3.md    # r3 (post-Phase-5b-cycle-2-fixer; CLEAN HARD=0; recalibrated CONSTRAINT scan clean)
+          - active-project/staff/auditor/facets-final-audit.md                                # r1 (1 HARD + 7 SIGNAL)
+          - active-project/staff/auditor/facets-final-audit-r2.md                             # r2 (post-fixer DELETE meta:2; CLEAN HARD=0)
+          - active-project/staff/auditor/facets-final-audit-r3.md                             # r3 (post-Phase-5b-cycle-2-fixer; CLEAN HARD=0; recalibrated CONSTRAINT scan clean)
+          - active-project/staff/auditor/facets-final-audit-r4-s01e02-cycle3.md               # r4 (post-cycle-3 author re-dispatches; HARD=0; SIGNAL=5; CANONICAL FINAL)
         remediation_passes_hard: 1 of 1 (r1 -> r2; cleared 1 HARD via DELETE meta:2)
         r2_decisions_path: active-project/theater/facets/.r2-decisions.md
+        r2_decisions_supplement_path: active-project/staff/memory/r2-decision-shard-cycle3.md   # cycle-3 memory R2 structural rebuild supplement (RELOCATE mem:9, DELETE mem:12, ADD mem:13)
         r2_f_r2_counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 1, f-r2-4: 0}   # elder shard mis-classified REVISE as F-R2-3 per audit r1 M-002
         r2_discipline_fails: 0
-        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md   # cycle 2 consolidated; cycle 1 at facets-audience-gate-r1.md
-        audience_gate_complete: false   # user terminated at fixer-only-cycle-2; cycle 3 unused; 5 facets remain REVISE
-        audience_gate_cycles: 2 of 3
-        audience_gate_cap_burned: false   # not at cap; user-direction terminated
-        audience_gate_facet_accept_rate: 4 of 9 (tensometer cleared cycle 2; metaphor + feeling + vibes cleared cycle 1; remaining 5 carry-forward REVISE)
-        bidirectional_loop: validated   # shared finding tens:70 @83 across audience cape-fic + auditor A-001/T-001; URI-035 first-validation success
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md   # cycle 3 + cycle-4 cap-exception consolidated; cycle 2 at facets-audience-gate-r2.md; cycle 1 at facets-audience-gate-r1.md
+        audience_gate_complete: true   # 9 of 9 facets at 3-of-3 ACCEPT; cap-exception ratified
+        audience_gate_cycles: 3 + 1-cap-exception (memory single-field repair; ratification documented in facets-audience-gate-r3.md)
+        audience_gate_cap_burned: false   # cap=3 fully used; cycle-4 cap-exception ratified for memory mem:13 target-reference rewrite (audience-convergent single-field repair)
+        audience_gate_facet_accept_rate: 9 of 9   # tensometer + metaphor + feeling + vibes cleared cycle 1-2; loc-state + interest-narrator + sensory + state-updates cleared cycle 3; memory cleared cycle 4 cap-exception
+        bidirectional_loop: validated   # URI-035 second validation; both audience-only structural findings (Earth-Bet substring scan cycle 2 + mem:13 monument-type cycle 3) drove auditor recalibration URIs (URI-AUDITOR-CONSTRAINT-CALIBRATION closed; URI-AUDITOR-MONUMENT-TYPE-CALIBRATION new)
         process_gaps:
-          - URI-030 (re-encountered): cite-index union can't represent deletes; per-_inflight-r2-file strip required for citation cascade after R2 judge deletes + audience-gate cycle-2 deletes
-          - URI-AUDITOR-CONSTRAINT-CALIBRATION (NEW): Phase 5 CONSTRAINT scan missed 2 Earth-Bet proper-noun fence violations (Khepri @149, Gold Morning @125) in interior facet content (NI free-text + memory target-reference gloss). Both proper nouns appeared in the auditor's own exemplar list. Required calibration: substring scan across ALL facet entry content fields, not just structural headers / state-update field names. Recalibrated in r3 audit pass; audience-gate cycle-1 was the surfacing path. URI-035 first-validation evidence: bidirectional loop caught what mechanical scan missed.
-          - URI-AUDIENCE-AGGREGATION-RULE (NEW): state-updates cycle-2 audience-subagent used "2-of-3 accept = accept" aggregation, contradicting the spec rule "any revise/fail = facet fails cycle". Same drift on location-state cycle 1 (auditor agent's internal aggregator differs from spec). Calibration: strict spec interpretation enforced at orchestrator aggregate.
-          - URI-AUDIENCE-CYCLE-2-MEMORY-STALL: memory cycle-2 reviewer dispatch stalled at 600s agent-watchdog with no progress. Mechanically inferred verdict written to active-project/staff/audience/mechanical-inference/memory-r2-verdict.md based on cycle-1 per-persona findings × cycle-2 fixer scope intersection. Stall pattern flagged for review.
-          - URI-035 CLOSED: first validation of Phase 5b audience adversarial gate complete. Bidirectional loop VALIDATED via shared finding tens:70 @83. Two Earth-Bet hard-fence violations caught by audience that auditor missed → URI-AUDITOR-CONSTRAINT-CALIBRATION emission. Phase 5b is design-validated for downstream episodes.
-        upstream_tuning_queue_entries: [URI-030, URI-035, URI-AUDITOR-CONSTRAINT-CALIBRATION, URI-AUDIENCE-AGGREGATION-RULE, URI-AUDIENCE-CYCLE-2-MEMORY-STALL]
-        upstream_tuning_queue_addressed: [URI-035]   # 2026-05-11 — first Phase 5b validation produced the design-validation evidence the URI was tracking
-        carry_forward_audience_callouts:   # not addressed in fixer-only cycle 2; documented for next cycle / next episode
-          - location-state:5 @83 / loc-state:7 @132 / loc-state:9 @156 — atmosphere-thin sensory notes (dark-fantasy demand; requires loc-state R1 author re-dispatch)
-          - narrator:32 @177 — channel-saturation; author ceiling defense OR DELETE (dark-fantasy demand)
-          - sensory:3 @125 — loc-state-gap; loc-state needs @113-@122 re-entry beat OR sensory re-anchor (sensory-old-state-reader strong demand)
-          - state-updates state:8 @22 stance-on-tya-category — old-state ungrounded; tanner-father defense OR DELETE+margit referral (dark-fantasy demand)
-          - memory mem:9 @87 relocate to @89-@90 (cape-fic + dark-fantasy demand)
-          - memory mem:12 @173 ceiling defense memo from author OR DELETE (cape-fic + dark-fantasy demand)
-          - memory file-level Westerosi-monument clamp gap — zero Westerosi fires; doubled-register rubric hard-fail; requires R2 memory judge re-dispatch with structural revision brief (dark-fantasy demand)
-          - margit referrals: mem:3 + mem:7 monument families (worm-canon advisory; pre-deployment-ritual + swarm-feed-cognition-parallel canonicalization candidates)
+          - URI-030 (re-encountered cycle 2; ADDRESSED 2026-05-12): cite-index union can't represent deletes. Fix landed in build_cite_index.py:union_citations — per-prefix authoritative ring routing (R2 wins over R1 for that prefix; absence in authoritative copy = delete). Idempotent re-run produces zero diff on clean state.
+          - URI-AUDITOR-CONSTRAINT-CALIBRATION (NEW cycle 2; ADDRESSED 2026-05-12): Phase 5 CONSTRAINT scan missed 2 Earth-Bet proper-noun fence violations. Fix landed in .claude/commands/and-facets.md Phase 5 CONSTRAINT class — case-insensitive substring scan across ALL facet entry content fields, including margit-referral slug components.
+          - URI-AUDIENCE-AGGREGATION-RULE (NEW cycle 2; ADDRESSED 2026-05-12): audience-subagent applied 2-of-3 majority on state-updates cycle 2 and loc-state cycle 1, contradicting spec. Fix landed in .claude/agents/audience.md facet-adversarial mode section + .claude/commands/and-facets.md aggregation section — orchestrator aggregates from disk; single dissent blocks.
+          - URI-AUDIENCE-CYCLE-2-MEMORY-STALL (NEW cycle 2; ADDRESSED 2026-05-12): 600s watchdog stall on memory cycle-2 dispatch. Fix landed in .claude/commands/and-facets.md Reviewer-stall handling section — payload-trim retry + default-conservative mechanical-inference fallback. Validated cycle 3 + cycle 4: trimmed memory payloads completed cleanly, no stall.
+          - URI-035 CLOSED: Phase 5b adversarial gate validated TWICE (cycle 2 first validation + cycle 3 second validation). Both surfaced structural calibration findings the mechanical scan missed.
+          - URI-CONSOLIDATION-CITE-DRIFT (NEW cycle 3): slice-consolidation renumbering shifts consolidated IDs when entries are deleted from source slices, but proto-line citation tokens are not cascade-corrected. Surfaced when fixer Op-B deleted state-updates stance-on-tya entry; cite-index re-build renumbered all post-gap state IDs by -1 leaving proto-line tokens stale. Pre-existing structural pipeline bug; exceeds episode-scope remediation. Documented as SIGNAL find-002 in audit r4.
+          - URI-AUDITOR-MONUMENT-TYPE-CALIBRATION (NEW cycle 3): audience cycle-3 caught mem:13 using a condition-card slug as monument target-reference (same error class as mem:2 r1 reject). Auditor's CONSTRAINT class for memory did not flag the monument-type defect. Required calibration: extend CONSTRAINT class for memory facet — target-reference must be (a) §"Memory monuments" slug from behavior pack, (b) prior proto-line callback `s<NN>e<NN>:<id>`, or (c) free-text mechanism gloss; NOT a condition card slug. Cycle-4 cap-exception fix (free-text Westerosi gloss) cleared the entry; the auditor recalibration is upstream tuning for future episodes.
+        upstream_tuning_queue_entries: [URI-030, URI-035, URI-AUDITOR-CONSTRAINT-CALIBRATION, URI-AUDIENCE-AGGREGATION-RULE, URI-AUDIENCE-CYCLE-2-MEMORY-STALL, URI-CONSOLIDATION-CITE-DRIFT, URI-AUDITOR-MONUMENT-TYPE-CALIBRATION]
+        upstream_tuning_queue_addressed: [URI-030, URI-035, URI-AUDITOR-CONSTRAINT-CALIBRATION, URI-AUDIENCE-AGGREGATION-RULE, URI-AUDIENCE-CYCLE-2-MEMORY-STALL]   # 2026-05-12 — five URIs closed via cycle-3 process-fix pass; two remain open (URI-CONSOLIDATION-CITE-DRIFT structural pipeline bug; URI-AUDITOR-MONUMENT-TYPE-CALIBRATION pending auditor class library extension)
+        carry_forward_audience_callouts: []   # all cycle-2 callouts addressed in cycle-3 author re-dispatches + cycle-4 cap-exception; no carry-forward
+        cycle3_dispatches:
+          - studio loc-state R1 re-author (3 rewrites + 1 add closing sensory:3 gap)
+          - fixer Op-A DELETE narrator:32 @177 + cascade
+          - fixer Op-B DELETE state:8 stance-on-tya @22 + cascade + margit referral 3
+          - memory R2 structural rebuild (RELOCATE mem:9 @87→@90, DELETE mem:12 @173, ADD mem:13 @20)
+          - margit triage (2 monument-card referrals filed for mem:3 + mem:7)
+        cycle3_signal_fixes: [find-001 tens-footer recompute, find-003 mem:9 NI-spine defense documented, find-004 vibes stale licensed-by removed]
+        cycle3_signal_carry_forward: [find-002 URI-CONSOLIDATION-CITE-DRIFT (pre-existing pipeline; exceeds episode scope), find-005 @20 pile-up borderline (editor advisory at wrap)]
+        cycle4_cap_exception: mem:13 target-reference rewrite (cond-westerosi-customary-authority-125ac → free-text Westerosi mechanism gloss); 3-of-3 ACCEPT; ratified in facets-audience-gate-r3.md §"Cap-exception ratification" on convergent-audience-single-field-repair grounds
       - slug: s01e03
         status: protolined
         narrator: taylor-hebert-flea-bottom
