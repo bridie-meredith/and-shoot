@@ -1,3 +1,7 @@
+# proto-lines-mem.md — R2.2 memory judge _inflight-r2 copy
+# Regenerated 2026-05-12 by orchestrator after R2 judge produced non-compliant renumbered IDs.
+# Canonical mem cite tokens applied per corrected memory.md (IDs 4/7/8 KEEPs, 10/11/12 ADDs; gaps at 1/2/3/5/6/9).
+
 # proto-lines — s01e03
 
 episode: s01e03
@@ -15,7 +19,7 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 # carry-forward note".
 
 1 the beetles relay the cold candle [loc-state:1] [narrator:1]
-2 the beetles relay oc-broken-maester [mem:1]
+2 the beetles relay oc-broken-maester
 3 the clerk enters the market-side junction [loc-state:2] [narrator:2]
 4 the clerk faces oc-tanner-elder
 5 the clerk speaks to oc-tanner-elder
@@ -24,7 +28,7 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 8 the clerk writes the entry [narrator:4] [state:1] [state:2]
 9 the clerk closes the record book [state:3]
 10 the clerk exits the junction
-11 the clerk crosses the Fish Gate [loc-state:3] [narrator:5] [sensory:1] [state:2] [state:4] [vibes:1]
+11 the clerk crosses the Fish Gate [loc-state:3] [narrator:5] [sensory:1] [state:2] [state:4] [vibes:1] [mem:10]
 12 the flies relay the junction
 13 the flies relay the clerk
 14 taylor-hebert-flea-bottom opens the log [state:5]
@@ -35,7 +39,7 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 20 the beetles spread the south-wall colony
 21 the spiders spread the eastern-quarter relay
 22 the beetles spread the apothecary ground floor [narrator:7] [state:4] [state:5] [vibes:3]
-23 taylor-hebert-flea-bottom walks the perimeter [loc-state:4] [mem:2]
+23 taylor-hebert-flea-bottom walks the perimeter [loc-state:4]
 24 taylor-hebert-flea-bottom writes the entry [state:6]
 25 taylor-hebert-flea-bottom drops the gaze
 26 taylor-hebert-flea-bottom wakes [loc-state:5] [state:7]
@@ -57,18 +61,18 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 43 the second clerk exits the apothecary [sensory:3]
 44 the flies relay the doorframe
 45 the flies relay the second clerk
-46 taylor-hebert-flea-bottom opens the log [mem:3]
+46 taylor-hebert-flea-bottom opens the log
 47 taylor-hebert-flea-bottom writes the entry [narrator:11] [state:11]
 48 taylor-hebert-flea-bottom closes the log [vibes:11]
 50 oc-tanner-elder approaches taylor-hebert-flea-bottom [loc-state:7] [narrator:12]
 51 oc-tanner-elder speaks to taylor-hebert-flea-bottom
 52 taylor-hebert-flea-bottom faces oc-tanner-elder
 53 taylor-hebert-flea-bottom speaks to oc-tanner-elder [feel:2]
-54 oc-tanner-elder speaks to taylor-hebert-flea-bottom [mem:4] [narrator:13]
+54 oc-tanner-elder speaks to taylor-hebert-flea-bottom [narrator:13] [mem:4]
 56 taylor-hebert-flea-bottom enters the dock-side alley [loc-state:8]
 57 the wasps spread the dock-side cluster
 58 the flies spread the dock-adjacent labor web
-59 taylor-hebert-flea-bottom speaks to the dock-side cluster [mem:5] [narrator:14]
+59 taylor-hebert-flea-bottom speaks to the dock-side cluster [narrator:14]
 60 the wasps relay taylor-hebert-flea-bottom
 61 the wasps relay oc-tanner-elder
 62 the dock-side cluster thins [narrator:15]
@@ -97,8 +101,8 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 86 oc-broken-maester enters the apothecary [loc-state:12]
 87 oc-broken-maester ascends the stair
 88 oc-broken-maester enters the upper room
-89 the beetles relay the pen-scratch [mem:6] [narrator:20]
-90 oc-broken-maester sets the pen [feel:1] [narrator:21] [sensory:5] [state:19] [vibes:15] [vibes:16]
+89 the beetles relay the pen-scratch [narrator:20]
+90 oc-broken-maester sets the pen [feel:1] [narrator:21] [sensory:5] [state:19] [vibes:15] [vibes:16] [mem:11]
 91 taylor-hebert-flea-bottom holds the feet [narrator:22]
 92 taylor-hebert-flea-bottom opens the log [state:17]
 93 taylor-hebert-flea-bottom writes the entry [narrator:23] [state:14] [vibes:17]
@@ -112,7 +116,7 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 102 oc-tanner-elder approaches taylor-hebert-flea-bottom [loc-state:14]
 103 oc-tanner-elder speaks to taylor-hebert-flea-bottom [narrator:25] [state:15]
 104 taylor-hebert-flea-bottom faces oc-tanner-elder
-105 taylor-hebert-flea-bottom exhales [mem:7] [narrator:26]
+105 taylor-hebert-flea-bottom exhales [narrator:26] [mem:7]
 106 taylor-hebert-flea-bottom opens the log
 107 taylor-hebert-flea-bottom writes the entry [state:16]
 108 taylor-hebert-flea-bottom closes the log [vibes:22]
@@ -131,7 +135,7 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 122 taylor-hebert-flea-bottom opens the log
 123 taylor-hebert-flea-bottom writes the entry [narrator:29] [state:20]
 124 taylor-hebert-flea-bottom closes the log
-125 taylor-hebert-flea-bottom faces the Red Keep [mem:8] [narrator:30] [state:20] [state:21] [vibes:6] [vibes:7] [vibes:28]
+125 taylor-hebert-flea-bottom faces the Red Keep [narrator:30] [state:20] [state:21] [vibes:6] [vibes:7] [vibes:28] [mem:8]
 127 the messenger enters the market-side junction [loc-state:17] [narrator:31]
 128 the messenger faces oc-tanner-elder
 129 the messenger speaks to oc-tanner-elder [state:2] [vibes:23]
@@ -147,7 +151,7 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 140 the middleman takes the account [narrator:34] [state:23]
 141 the middleman exits the writing room
 142 the flies relay the middleman [state:23]
-143 taylor-hebert-flea-bottom holds the feet [mem:9] [vibes:26]
+143 taylor-hebert-flea-bottom holds the feet [vibes:26]
 144 taylor-hebert-flea-bottom opens the log
 145 taylor-hebert-flea-bottom writes the entry [feel:3] [narrator:35] [state:24]
 146 taylor-hebert-flea-bottom closes the log
@@ -165,7 +169,7 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 159 the spiders relay the window
 160 taylor-hebert-flea-bottom walks the eastern-quarter approach
 161 taylor-hebert-flea-bottom enters loc-flea-bottom-base [loc-state:23] [state:25]
-162 taylor-hebert-flea-bottom faces the wall [narrator:37] [state:26] [vibes:8] [vibes:29] [vibes:30] [vibes:31] [vibes:32] [vibes:33]
+162 taylor-hebert-flea-bottom faces the wall [narrator:37] [state:26] [vibes:8] [vibes:29] [vibes:30] [vibes:31] [vibes:32] [vibes:33] [mem:12]
 163 taylor-hebert-flea-bottom opens the log [state:26]
 164 taylor-hebert-flea-bottom writes the entry [narrator:38] [state:1] [state:27]
 165 taylor-hebert-flea-bottom closes the log [state:27] [vibes:34]

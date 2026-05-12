@@ -1,10 +1,4 @@
----
-facet: feeling
-episode: s01e03
-character: oc-tanner-elder
-author: r2.3 feeling judge (per-character writer-fork; mutated slice)
-source-pass: R1 (2 entries @6, @131); R2.3 mutation (no adds, no deletes, no revisions)
----
+# source: feeling-oc-tanner-elder
 
 # Slice — oc-tanner-elder
 

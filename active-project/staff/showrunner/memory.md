@@ -189,7 +189,7 @@ seasons:
         cycle3_signal_carry_forward: [find-002 URI-CONSOLIDATION-CITE-DRIFT (pre-existing pipeline; exceeds episode scope), find-005 @20 pile-up borderline (editor advisory at wrap)]
         cycle4_cap_exception: mem:13 target-reference rewrite (cond-westerosi-customary-authority-125ac → free-text Westerosi mechanism gloss); 3-of-3 ACCEPT; ratified in facets-audience-gate-r3.md §"Cap-exception ratification" on convergent-audience-single-field-repair grounds
       - slug: s01e03
-        status: faceted-r1   # Phase 2 fanin clean 2026-05-12; 15 R1 author copies merged; feeling consolidated 4 slices; state-updates consolidated 5 slices (env + 4 actors); cite-index built
+        status: faceted-r2   # Phase 4 fanin clean 2026-05-12; 7 R2 judges merged (22 author copies total post-R2); .r2-decisions.md consolidated (f-r2-counts all-zero; no DISCIPLINE-FAILs; orchestrator-corrected R2.2 memory ID discipline + R2.3 broken-maester cite-token form); cite-index rebuilt (335 facet entries; 54.2% protoline density)
         narrator: taylor-hebert-flea-bottom
         interlude: false
         chunk: "The Hightower apparatus opens its file on Taylor across two clerks and a senior operative's written request through the elder; the village-claim closes around her externally via the lord's-man record; range reaches 600m with the Red Keep 400m beyond ceiling; the season closes on two log entries written side-by-side — the architecture has changed but she does not know what file she is in."

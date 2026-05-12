@@ -34,7 +34,7 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 19 the wasps spread the dock-side alleys
 20 the beetles spread the south-wall colony
 21 the spiders spread the eastern-quarter relay
-22 the beetles spread the apothecary ground floor [narrator:7] [state:4] [state:5] [vibes:3]
+22 the beetles spread the apothecary ground floor [state:4] [state:5] [vibes:3]
 23 taylor-hebert-flea-bottom walks the perimeter [loc-state:4] [mem:2]
 24 taylor-hebert-flea-bottom writes the entry [state:6]
 25 taylor-hebert-flea-bottom drops the gaze
@@ -105,7 +105,7 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 94 taylor-hebert-flea-bottom closes the log [state:18] [vibes:18]
 96 oc-tanner-father enters the market-side junction [loc-state:13] [narrator:24] [state:1]
 97 oc-tanner-father approaches oc-tanner-elder
-98 oc-tanner-father speaks to oc-tanner-elder [feel:1] [state:2] [vibes:19] [vibes:20]
+98 oc-tanner-father speaks to oc-tanner-elder [feel:1] [state:2] [vibes:19] [vibes:20] [narrator:39]
 99 oc-tanner-elder faces oc-tanner-father
 100 oc-tanner-elder speaks to oc-tanner-father [vibes:21]
 101 oc-tanner-father exits the junction [state:3]
@@ -120,7 +120,7 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 111 the wasps spread the Fish Gate margin
 112 the beetles spread the south-wall colony
 113 the spiders spread the eastern-quarter relay
-114 the beetles spread the south-wall perimeter [narrator:27] [state:17] [vibes:4]
+114 the beetles spread the south-wall perimeter [state:17] [vibes:4]
 115 taylor-hebert-flea-bottom walks the perimeter [loc-state:15]
 116 taylor-hebert-flea-bottom writes the entry [state:18]
 117 taylor-hebert-flea-bottom exhales
@@ -138,7 +138,7 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 130 oc-tanner-elder faces the messenger
 131 oc-tanner-elder speaks to the messenger [feel:2]
 132 the messenger exits the junction
-133 the flies relay the messenger [state:22] [vibes:25]
+133 the flies relay the messenger [state:22] [vibes:25] [narrator:40]
 134 taylor-hebert-flea-bottom holds the feet
 136 oc-tanner-elder exits the junction
 137 oc-tanner-elder enters the writing room [loc-state:18] [narrator:32] [sensory:6] [state:3]
@@ -147,7 +147,7 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 140 the middleman takes the account [narrator:34] [state:23]
 141 the middleman exits the writing room
 142 the flies relay the middleman [state:23]
-143 taylor-hebert-flea-bottom holds the feet [mem:9] [vibes:26]
+143 taylor-hebert-flea-bottom holds the feet [mem:9] [vibes:26] [narrator:41]
 144 taylor-hebert-flea-bottom opens the log
 145 taylor-hebert-flea-bottom writes the entry [feel:3] [narrator:35] [state:24]
 146 taylor-hebert-flea-bottom closes the log

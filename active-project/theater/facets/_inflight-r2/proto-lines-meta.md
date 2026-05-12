@@ -1,4 +1,4 @@
-# proto-lines — s01e03
+# proto-lines — s01e03 (R2.4 metaphor annotated copy)
 
 episode: s01e03
 narrator: taylor-hebert-flea-bottom
@@ -149,7 +149,7 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 142 the flies relay the middleman [state:23]
 143 taylor-hebert-flea-bottom holds the feet [mem:9] [vibes:26]
 144 taylor-hebert-flea-bottom opens the log
-145 taylor-hebert-flea-bottom writes the entry [feel:3] [narrator:35] [state:24]
+145 taylor-hebert-flea-bottom writes the entry [feel:3] [narrator:35] [state:24] [meta:1]
 146 taylor-hebert-flea-bottom closes the log
 148 taylor-hebert-flea-bottom exits loc-flea-bottom-base [loc-state:19] [sensory:8] [state:24]
 149 taylor-hebert-flea-bottom enters the first alley
