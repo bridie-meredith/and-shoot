@@ -1,0 +1,24 @@
+---
+reviewer: cape-fic-reader
+facet: tensometer
+cycle: 2
+episode: s01e03
+date: 2026-05-12
+verdict: revise
+---
+
+# Verdict reasoning
+
+The four cycle-1 callouts are addressed: @51 and @103 are correctly at r=1, the Fish Gate bridge at @10 was already r=2 (auditor confirmed pre-existing), and the fixer added a bridging r=2 at @161 for the denouement. The @161→@162 bridge is structurally present but its execution is weak: the actual approach sequence is @159(r=2) → @160(r=1) → @161(r=2) → @162(r=3), a 2→1→2→3 shape that breaks the loading feel midstride — the dip at @160 ("taylor walks the eastern-quarter approach") reads as a gear-change interrupting the denouement's only ramp to the season-close rupture. A cape-fic reader who tracks pressure curves feels that dip as the tension bleeding off one beat before the commit, not building toward it. The bridge passes mechanically but fails as a reading experience. Separately, the maester-market trip scene (around @83-@84) runs two consecutive r=2 beats — both "faces the jars" and "exits the stall without purchase" — with no subsequent 3, which the rubric requires of every scene or demands an explicit dramatist exception; none is recorded. Raised pressure with no release and no exception is a curve seam the fixer pass left open.
+
+# Entry-level callouts
+
+- [tensometer:150] @160 — "taylor-hebert-flea-bottom walks the eastern-quarter approach" at r=1 sits between two r=2 entries in the only ramp-up to the episode's terminal rupture. The 2→1→2→3 shape is not a supported ramp; it's an interrupted approach. The rubric's scene-level shape requirement calls for rise into a 3, not an oscillation. If @160 is genuinely neutral-cost transit, then @161 should absorb the full pre-commit load at r=2 and that must be sufficient — but the axis note on tens:151 @161 ("threshold crossing IS the pre-commit load") was written to justify the bridge, not to confirm @160 is safely neutral. What charges @160 on its own face? Nothing visible in the SVO. That is correct — it should be r=1. But then the ramp is broken and tens:151 @161's single bridging 2 is doing all the work across a 4-beat run into the season's terminal commitment. The load is unevenly distributed and the reading experience is: silence → slight lift → rupture, not approach → rupture. This is the seam the fixer introduced by inserting a single bridging beat into a longer approach that needed two.
+
+- [tensometer:78] @83 / [tensometer:79] @84 — "oc-broken-maester faces the jars" (r=2) and "oc-broken-maester exits the dried-goods stall" (r=2). Two consecutive 2s in the maester-market trip with no 3 and no dramatist exception on record. The rubric requires every scene to carry a 3 or file a "scene-as-respite" / "scene-as-transit" exception. The tensometer's own screen-writer flag advisory names this trip (IDs 400–422 in season numbering; the apothecary/market sequence) as missing a commit bone and flags it for screen-writer awareness — but that flag is advisory, not an exception-of-record. Two raised-pressure beats with no rupture and no authorized exception is a curve seam. "Faces the jars then leaves without buying" is exactly the implied-not-explicit pattern the advisory names. The r=2 ratings on @83 and @84 say pressure is visible — but the scene ends with no payoff and no acknowledgment that it was designed that way. A cape-fic reader who tracks asymmetry and commit-beats reads this as a dangled trigger that never fired.
+
+# Convergence trace
+
+- [tensometer:150] @160 bridge shape: overlaps flag-012 (CURVE-001) — now CLOSED at r3 because the mechanical 1→3 jump was repaired. But CURVE-001 was closed on the criterion "bridge is present," not "bridge produces a clean reading ramp." The audience adversarial gate is the seam the mechanical scan cannot catch: the 2→1→2→3 oscillation at the denouement approach is exactly what flag-012 noted as needing "a 2 lead-in" — the fixer supplied one 2, but the intervening r=1 at @160 undercuts it. New signal not mapped to any existing auditor finding; CURVE-001 is closed but the reading-experience failure at the approach sequence is a residual seam.
+
+- [tensometer:78/79] @83/@84 maester-market no-commit: overlaps flag-021 (FB-006/CURVE-002) — the Exemption 5 per-episode floor breach at 3.9% — indirectly. The screen-writer flag advisory embedded in the tensometer footer names this exact scene as missing a commit bone. The auditor did not open a dedicated CURVE-SHAPE finding on the @83-@84 sub-scene because the screen-writer flag routes advisory-only. From the audience adversarial position: two r=2 beats without a following 3 and without a filed exception is not advisory — it is a curve shape breach under the scene-level rubric. This is a new signal not previously raised as an audience callout; it was hidden behind the advisory routing.

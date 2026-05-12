@@ -94,7 +94,7 @@ author: showrunner (R1)
 # E9 — Record-discipline flip: close-states recorded as coincidence (@162)
 # Fan-out: actor:taylor (clinical-self-erasure deepens; faustian-pressure first entry) + episode scope
 
-32 @162 actor:taylor-hebert-flea-bottom ++ clinical-self-erasure: [record-discipline-flipped-at-the-wall, the-log-now-calls-parallel-truths-coincidence, log-instrument-now-shaping-what-counts] | licensed-by: state-update:61, proto:162, tens:3
+32 @162 actor:taylor-hebert-flea-bottom ++ clinical-self-erasure: [record-discipline-flipped-at-the-wall, parallel-truths-as-coincidence-in-log, log-instrument-now-shaping-what-counts] | licensed-by: state-update:61, proto:162, tens:3
 
 33 @162 actor:taylor-hebert-flea-bottom + faustian-pressure-first-entry: [first-deliberate-omission-committed-to-record, the-log-instrument-now-actively-shaping-what-counts, calibration-and-research-on-the-same-page] | licensed-by: state-update:61, proto:162, tens:3, world-build:faustian-pressure
 
