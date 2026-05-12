@@ -6,11 +6,14 @@ author: showrunner (facet-authoring exception)
 # E1 — Father's step-back: bodily-committed withdrawal (@22, tens:3)
 # Fan-out: oc-tanner-father (primary) + taylor (POV witness) + oc-tanner-elder (co-witness)
 
-1 @22 actor:oc-tanner-father ++ withdrawal-as-management: [step-back-as-enacted-verdict, body-committed-before-mouth, category-confirmed-through-posture] | licensed-by: state-update-oc-tanner-father:2, state-update-oc-tanner-father:3, feeling-oc-tanner-father:1, tens:3
+1 @22 actor:oc-tanner-father ++ withdrawal-as-management: [step-back-as-enacted-verdict, body-committed-before-mouth, category-confirmed-through-posture] | licensed-by: state-update-oc-tanner-father:3, feeling-oc-tanner-father:1, tens:3
+# r4-cycle3 cleanup: stale licensed-by ref `state-update-oc-tanner-father:2` (stance-on-tya-category) removed; that entry was deleted by fixer Op-B in cycle 3 with margit referral filed for schema triage. Surviving licenses (proximity-as-state, feeling, tens) carry the vibe; the category-stance dimension is now card-resident (tanner-father card "He is withdrawing from her. The withdrawal is protective.") pending margit promotion. URI-CONSOLIDATION-CITE-DRIFT-adjacent (find-004, r4 audit).
 
-2 @22 actor:oc-tanner-father + suppressed-declaration-enacted: [conclusion-delivered-without-words, withdrawal-as-the-only-available-declaration, posture-as-terminal-statement] | licensed-by: state-update-oc-tanner-father:2, proto:22, tens:3
+2 @22 actor:oc-tanner-father + suppressed-declaration-enacted: [conclusion-delivered-without-words, withdrawal-as-the-only-available-declaration, posture-as-terminal-statement] | licensed-by: proto:22, tens:3
+# r4-cycle3 cleanup: stale licensed-by ref `state-update-oc-tanner-father:2` removed (see vibes:1 note).
 
-3 @22 actor:taylor-hebert-flea-bottom ++ the-Tya-shaped-debt: [father-verdict-confirmed-through-body, wrong-category-made-legible-through-posture, debt-now-carrying-his-reading] | licensed-by: state-update-oc-tanner-father:2, proto:22, tens:3
+3 @22 actor:taylor-hebert-flea-bottom ++ the-Tya-shaped-debt: [father-verdict-confirmed-through-body, wrong-category-made-legible-through-posture, debt-now-carrying-his-reading] | licensed-by: proto:22, tens:3
+# r4-cycle3 cleanup: stale licensed-by ref `state-update-oc-tanner-father:2` removed (see vibes:1 note).
 
 4 @20 actor:oc-tanner-elder ++ conditional-ledger: [external-claimant-registered-against-placed-asset, family-claim-acknowledged-into-junction-ledger, placement-carrying-third-party-cost-line] | licensed-by: state-update-oc-tanner-elder:1, feeling-oc-tanner-elder:1, proto:20, proto:19
 

@@ -4,6 +4,7 @@ episode: s01e02
 author: taylor-hebert-flea-bottom (POV impersonator, fresh fork, facet-authoring mode)
 r2: graph-aware judge pass (memory-judge fork, 2026-05-11)
 r2-cycle3: structural revision pass (memory-judge fork, 2026-05-11) — mem:9 relocated @87→@90; mem:12 DELETED; mem:13 ADDED at @20 (Westerosi-monument clamp restored)
+mem-9-ni-spine-defense: r4-cycle3 find-003 — mem:9 @90 has no NI co-cite at @89/@90/@91. Defense per memory-rubric exception path (apparatus-quiet register): the @90 anchor is a trailing-edge quiet beat where the network's silence IS what the entry carries; an NI entry at this anchor would be redundant with what the silence-as-perception already names. NI-spine is held by the adjacent ascending NI run at @88 (narrator:18 documenting the eviction's institutional register) which the memory's "wrong kind of quiet" reads as the residue of. The relocate from @87 (rupture peak; previously NI-spined by narrator:17) trades NI-co-cite at the peak for NI-spine continuity across the trailing edge — both r3 and r4 SHAPE-OK reads support the trailing-edge placement. Defense documented; no fixer change required.
 ---
 
 3 @64 the shoulder-set drops back and down and the breath leaves before the network goes -> (earth-bet: pre-deployment ritual carried over — the prior life's swarm-control instinct registering on a 400m approach)
