@@ -1,4 +1,7 @@
 # proto-lines — s01e03
+# annotated copy: state-updates-env (R1 fresh fork)
+# decorator: [state:<id>] appended to lines carrying an env state-update entry
+# IDs are local to this fork; consolidator will renumber across env + per-actor slices
 
 episode: s01e03
 narrator: taylor-hebert-flea-bottom
@@ -20,17 +23,17 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 4 the clerk faces oc-tanner-elder
 5 the clerk speaks to oc-tanner-elder
 6 oc-tanner-elder speaks to the clerk
-7 the clerk opens the record book
-8 the clerk writes the entry
-9 the clerk closes the record book
+7 the clerk opens the record book [state:1]
+8 the clerk writes the entry [state:2]
+9 the clerk closes the record book [state:3]
 10 the clerk exits the junction
-11 the clerk crosses the Fish Gate
+11 the clerk crosses the Fish Gate [state:4]
 12 the flies relay the junction
 13 the flies relay the clerk
-14 taylor-hebert-flea-bottom opens the log
+14 taylor-hebert-flea-bottom opens the log [state:5]
 15 taylor-hebert-flea-bottom writes the entry
-16 taylor-hebert-flea-bottom closes the log
-17 
+16 taylor-hebert-flea-bottom closes the log [state:6]
+17
 18 the flies spread the winter-onset network
 19 the wasps spread the dock-side alleys
 20 the beetles spread the south-wall colony
@@ -42,33 +45,33 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 26 taylor-hebert-flea-bottom wakes
 27 taylor-hebert-flea-bottom holds the eyes
 28 taylor-hebert-flea-bottom faces the wall
-29 taylor-hebert-flea-bottom opens the log
+29 taylor-hebert-flea-bottom opens the log [state:7]
 30 taylor-hebert-flea-bottom writes the entry
-31 taylor-hebert-flea-bottom closes the log
-32 
+31 taylor-hebert-flea-bottom closes the log [state:8]
+32
 33 the second clerk enters the eastern-quarter adjacent street
 34 the second clerk enters the apothecary ground floor
 35 the second clerk speaks to the apothecary owner
 36 the apothecary owner speaks to the second clerk
 37 the second clerk speaks to the apothecary owner
 38 the apothecary owner speaks to the second clerk
-39 the second clerk opens the record book
-40 the second clerk writes the entry
-41 the second clerk closes the record book
-42 the second clerk releases the record book
+39 the second clerk opens the record book [state:9]
+40 the second clerk writes the entry [state:10]
+41 the second clerk closes the record book [state:11]
+42 the second clerk releases the record book [state:12]
 43 the second clerk exits the apothecary
 44 the flies relay the doorframe
 45 the flies relay the second clerk
 46 taylor-hebert-flea-bottom opens the log
 47 taylor-hebert-flea-bottom writes the entry
 48 taylor-hebert-flea-bottom closes the log
-49 
+49
 50 oc-tanner-elder approaches taylor-hebert-flea-bottom
 51 oc-tanner-elder speaks to taylor-hebert-flea-bottom
 52 taylor-hebert-flea-bottom faces oc-tanner-elder
 53 taylor-hebert-flea-bottom speaks to oc-tanner-elder
 54 oc-tanner-elder speaks to taylor-hebert-flea-bottom
-55 
+55
 56 taylor-hebert-flea-bottom enters the dock-side alley
 57 the wasps spread the dock-side cluster
 58 the flies spread the dock-adjacent labor web
@@ -80,12 +83,12 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 64 taylor-hebert-flea-bottom exits the dock-side alley
 65 oc-tanner-elder speaks to taylor-hebert-flea-bottom
 66 taylor-hebert-flea-bottom extends the palm
-67 oc-tanner-elder places the coin
-68 taylor-hebert-flea-bottom closes the fist
-69 taylor-hebert-flea-bottom opens the log
+67 oc-tanner-elder places the coin [state:13]
+68 taylor-hebert-flea-bottom closes the fist [state:14]
+69 taylor-hebert-flea-bottom opens the log [state:15]
 70 taylor-hebert-flea-bottom writes the entry
-71 taylor-hebert-flea-bottom closes the log
-72 
+71 taylor-hebert-flea-bottom closes the log [state:16]
+72
 73 oc-broken-maester descends the stair
 74 oc-broken-maester exits the apothecary
 75 oc-broken-maester enters the eastern-quarter alley
@@ -103,12 +106,12 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 87 oc-broken-maester ascends the stair
 88 oc-broken-maester enters the upper room
 89 the beetles relay the pen-scratch
-90 oc-broken-maester sets the pen
+90 oc-broken-maester sets the pen [state:19]
 91 taylor-hebert-flea-bottom holds the feet
-92 taylor-hebert-flea-bottom opens the log
+92 taylor-hebert-flea-bottom opens the log [state:17]
 93 taylor-hebert-flea-bottom writes the entry
-94 taylor-hebert-flea-bottom closes the log
-95 
+94 taylor-hebert-flea-bottom closes the log [state:18]
+95
 96 oc-tanner-father enters the market-side junction
 97 oc-tanner-father approaches oc-tanner-elder
 98 oc-tanner-father speaks to oc-tanner-elder
@@ -122,7 +125,8 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 106 taylor-hebert-flea-bottom opens the log
 107 taylor-hebert-flea-bottom writes the entry
 108 taylor-hebert-flea-bottom closes the log
-109 
+109
+
 110 the flies spread the overnight network
 111 the wasps spread the Fish Gate margin
 112 the beetles spread the south-wall colony
@@ -138,8 +142,9 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 122 taylor-hebert-flea-bottom opens the log
 123 taylor-hebert-flea-bottom writes the entry
 124 taylor-hebert-flea-bottom closes the log
-125 taylor-hebert-flea-bottom faces the Red Keep
-126 
+125 taylor-hebert-flea-bottom faces the Red Keep [state:20]
+126
+
 127 the messenger enters the market-side junction
 128 the messenger faces oc-tanner-elder
 129 the messenger speaks to oc-tanner-elder
@@ -148,20 +153,22 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 132 the messenger exits the junction
 133 the flies relay the messenger
 134 taylor-hebert-flea-bottom holds the feet
-135 
+135
+
 136 oc-tanner-elder exits the junction
 137 oc-tanner-elder enters the writing room
-138 oc-tanner-elder writes the account
-139 oc-tanner-elder seals the account
-140 the middleman takes the account
+138 oc-tanner-elder writes the account [state:21]
+139 oc-tanner-elder seals the account [state:22]
+140 the middleman takes the account [state:23]
 141 the middleman exits the writing room
 142 the flies relay the middleman
 143 taylor-hebert-flea-bottom holds the feet
 144 taylor-hebert-flea-bottom opens the log
 145 taylor-hebert-flea-bottom writes the entry
 146 taylor-hebert-flea-bottom closes the log
-147 
-148 taylor-hebert-flea-bottom exits loc-flea-bottom-base
+147
+
+148 taylor-hebert-flea-bottom exits loc-flea-bottom-base [state:24]
 149 taylor-hebert-flea-bottom enters the first alley
 150 taylor-hebert-flea-bottom walks the first alley
 151 taylor-hebert-flea-bottom enters the south alley
@@ -174,8 +181,8 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 158 taylor-hebert-flea-bottom enters the eastern-quarter approach
 159 the spiders relay the window
 160 taylor-hebert-flea-bottom walks the eastern-quarter approach
-161 taylor-hebert-flea-bottom enters loc-flea-bottom-base
+161 taylor-hebert-flea-bottom enters loc-flea-bottom-base [state:25]
 162 taylor-hebert-flea-bottom faces the wall
-163 taylor-hebert-flea-bottom opens the log
-164 taylor-hebert-flea-bottom writes the entry [state:1]
-165 taylor-hebert-flea-bottom closes the log
+163 taylor-hebert-flea-bottom opens the log [state:26]
+164 taylor-hebert-flea-bottom writes the entry
+165 taylor-hebert-flea-bottom closes the log [state:27]
