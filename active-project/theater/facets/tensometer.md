@@ -18,7 +18,7 @@ s01e03.md's per-episode body was mechanically split correctly: it already contai
 # 0c @515 removed (proto-line deleted in cycle 2 fixer)
 
 3 @3 1
-4 @4 2
+4 @4 1
 5 @5 1
 6 @6 1
 7 @7 2
@@ -26,7 +26,8 @@ s01e03.md's per-episode body was mechanically split correctly: it already contai
 9 @9 1
 10 @11 3
 # axis: stakes-visibility + reversal-proximity peaks — clerk crosses Fish Gate with the file entry; the recording physically leaves Taylor's observable range; Scene 330-342 rupture resolved
-11 @10 1
+11 @10 2
+# axis: approach-charge — clerk exits the junction bearing the record; the exit IS the pre-commit load for the Fish Gate crossing one beat ahead; bridges the ambient @9 to the rupture @11
 12 @12 1
 13 @13 1
 14 @14 1
@@ -65,7 +66,7 @@ s01e03.md's per-episode body was mechanically split correctly: it already contai
 45 @47 1
 46 @48 1
 47 @50 2
-48 @51 2
+48 @51 1
 49 @52 1
 50 @53 1
 51 @54 2
@@ -95,14 +96,17 @@ s01e03.md's per-episode body was mechanically split correctly: it already contai
 75 @80 1
 76 @81 1
 77 @82 1
-78 @83 2
-79 @84 2
+78 @83 1
+# downrated 2→1: maester-market trip is transit/respite; no commit bone; 2 overstatement per screen-writer advisory (cycle-3 cape-fic callout)
+79 @84 1
+# downrated 2→1: same transit-scope as @83; no following rupture; market-trip is genuinely transitional
 80 @85 1
 81 @86 1
 82 @87 1
 83 @88 1
 84 @89 2
-85 @90 3
+85 @90 2
+# axis: approach-charge (reversal-proximity light) — maester pen-set is the scene's dramatic beat as relayed through Taylor's insect network; from Khepri-register POV this is ambient escalation (pen-stop of a figure two removes from direct position), not Taylor's own body-charge or peak stakes-visibility; approach-charge fires because the pen-stop shifts her informational tracking state
 86 @91 2
 87 @92 1
 88 @93 1
@@ -114,7 +118,7 @@ s01e03.md's per-episode body was mechanically split correctly: it already contai
 94 @100 2
 95 @101 2
 96 @102 2
-97 @103 2
+97 @103 1
 98 @104 1
 99 @105 2
 100 @106 1
@@ -169,8 +173,10 @@ s01e03.md's per-episode body was mechanically split correctly: it already contai
 147 @157 1
 148 @158 1
 149 @159 2
-150 @160 1
-151 @161 1
+150 @160 2
+# axis: approach-charge — eastern-quarter walk is the pre-commit load for the wall-facing terminal beat; ramp 2→2→2→3 (@159=2, @160=2, @161=2, @162=3) restores clean escalation into denouement registration
+151 @161 2
+# axis: approach-charge — threshold crossing (entering loc-flea-bottom-base) IS the pre-commit load for the wall-facing one beat ahead; bridges the denouement walk 1s to the terminal rupture @162; structurally parallel to @10 bridge construction
 152 @162 3
 # axis: reversal-proximity + body-charge — wall-facing IS the decision to record the close-states as coincidence; the season's terminal reader-asymmetry is committed through Taylor's body before the log entries; denouement registration resolved
 153 @163 1
@@ -182,14 +188,14 @@ s01e03.md's per-episode body was mechanically split correctly: it already contai
 
 ## Frequency band (cycle 3 F7-bone residual cleanup)
 
-After cycle-2 rerates (@335 3→2, @368 3→2), orphan removals (@462, @493, 0c@515), cycle-2 boundary-carry additions (0a@513, 0b@514), and cycle-3 rupture additions (@522, @523, @524 all rung 3):
+After cycle-2 rerates (@335 3→2, @368 3→2), orphan removals (@462, @493, 0c@515), cycle-2 boundary-carry additions (0a@513, 0b@514), cycle-3 rupture additions (@522, @523, @524 all rung 3), Phase-5b cycle-1 fixer downrates (tens:48 @51 2→1; tens:97 @103 2→1; tens:85 @90 3→2 — local-@90 = season-@417 maester-sets-pen, per worm-canon POV-fidelity callout), and Phase-5b cycle-1 fixer bridging (tens:151 @161 1→2 — approach-charge to denouement peak):
 
 - Total entries: ~155
-- 3s: 7/155 ≈ 4.5% (standard band 5-10% / relaxed band 4.0-10% per-episode) — within relaxed band; below standard floor by 0.5 points
-- 2s: ~47/155 ≈ 30.3% (standard band 20-30%) — at upper edge of standard band
-- 1s: ~101/155 ≈ 65.2% (standard band 60-75%) — within standard band
+- 3s: 6/155 ≈ 3.9% (standard band 5-10% / relaxed band 4.0-10% per-episode) — 0.1 points below relaxed per-episode floor after the cycle-1 fixer pen-downgrade; documented breach under Exemption 5 (slow-burn register; structural climax preserved at @139 and @162; tone-law card holds); orchestrator decision: 3.9% band-floor breach is SIGNAL not HARD per Exemption 5 + auditor r3 + worm-canon explicit acceptance of the @90 downgrade price; dark-fantasy dissent noted but auditor classification governs
+- 2s: ~44/155 ≈ 28.4% (standard band 20-30%) — within standard band; @83+@84 downrated 2→1 (market-trip transit; cycle-3 cape-fic callout); @160 upgraded 1→2 (approach-charge ramp restoration)
+- 1s: ~105/155 ≈ 67.7% (standard band 60-75%) — within standard band
 
-3-frequency at 4.5% is an honest improvement from the cycle-1 reading of 2.6%. The three cycle-3 rupture additions (@522, @523, @524) provide scene-level structural resolution: each named scene now carries a legitimate 3. Scalar inflation refused per AP4.
+3-frequency at 3.9% reflects the fixer pen-downgrade trading band-margin for POV-fidelity (Khepri-arc Taylor's informational position registers the maester's pen-set as approach-axis, not rupture). The structural climax at @139 (elder seals account) and the denouement registration at @162 (Taylor faces the wall) remain rated 3. Scalar inflation refused per AP4.
 
 ### Frequency-band exemption claim (URI-034, 2026-05-11)
 
@@ -198,13 +204,13 @@ Per `design/shoot-v2/rubric-tensometer.md` §"Frequency-band exemptions" / **Exe
 Quoted positive criteria:
 
 - **(a) tone-law citation:** `cond-series-tone-constraints-125ac` is loaded in `showrunner-memory.series.behaviors`. Card §"The Primary Register: Contemplative-Procedural-Horror" declares slow-burn / low-rupture-density register.
-- **(b) quantified relaxed band:** card §"Relaxed tens frequency-band for this config (URI-034 Exemption 5)" specifies "3s: 4.5-10% season-average, 4.0-10% per-episode." This episode's 3s rate (4.5%) is at the relaxed season-average floor and 0.5 points above the relaxed per-episode floor.
+- **(b) quantified relaxed band:** card §"Relaxed tens frequency-band for this config (URI-034 Exemption 5)" specifies "3s: 4.5-10% season-average, 4.0-10% per-episode." This episode's 3s rate (3.9%) is 0.1 points below the relaxed per-episode floor after the Phase-5b cycle-1 worm-canon POV-fidelity downgrade of local-@90 (season-@417 maester-sets-pen). The breach is structurally accountable: scene-level rupture criteria still met at every named scene (Scene 330-342 by @11/season-522; Scene 361-375 by @42/season-523; Scene 477-494 by @162/season-524) and at the structural climax @139/season-468 (elder seals account).
 - **(c) 3s rung discipline:** per-episode 3s rate 4.5% ≥ relaxed per-episode floor 4.0%; (c.i) every named scene in this episode carries a peak per Screen-writer kickback §RESOLVED declarations (Scene 330-342 by @522, Scene 361-375 by @523, Scene 477-494 by @524) plus the structural climax @468 (sealed account); (c.ii) scalar inflation refused per AP4. Season-average 3s rate across s01: 21/464 ≈ 4.5%, at the season-avg floor.
 - **(d) season-wide scope:** the tone-law applies across all four planned seasons of this series; s01e01 and s01e02 file their own Exemption 5 claims against the same card.
 
-**Exemption verdict:** EXEMPT-UNDER-TONE-LAW.
+**Exemption verdict:** EXEMPT-UNDER-TONE-LAW (post-cycle-1-downgrade boundary case; 0.1 points below relaxed per-episode floor but structural climax + scene rupture criteria all met).
 
-Active 3s: @394 (coin placed), @395 (Taylor closes fist), @417 (maester sets the pen), @468 (elder seals account), @522 (clerk crosses Fish Gate), @523 (second clerk releases record book), @524 (Taylor faces wall at denouement).
+Active 3s (post Phase-5b cycle-1 fixer pen-downgrade): @67/season-394 (coin placed), @68/season-395 (Taylor closes fist), @139/season-468 (elder seals account), @11/season-522 (clerk crosses Fish Gate), @42/season-523 (second clerk releases record book), @162/season-524 (Taylor faces wall at denouement). Six total (down from seven; local-@90/season-@417 maester-sets-pen downgraded 3→2 per worm-canon callout that the maester's pen-set is approach-axis from Taylor's POV, not rupture).
 
 ## Screen-writer kickback (cycle 3 resolution)
 
@@ -224,15 +230,22 @@ Maester-market trip (IDs 400–422) carries no rupture bone. Buy/refuse decision
 
 ## Axis citations summary
 
-3s justified:
-- @394: stakes-visibility + reversal-proximity peaks — elder places coin; irreversible registration
-- @395: body-charge peaks — Taylor closes fist on coin; double-tap with @394 (two parties committing the same turn)
-- @417: reversal-proximity peaks — oc-broken-maester sets the pen; the discrete act of stopping his writing reverses prior motion (the pen-scratch session terminates)
-- @468: three axes light (stakes-visibility + reversal-proximity + body-charge) — elder seals account; structural climax
-- @522: stakes-visibility + reversal-proximity peaks — clerk crosses Fish Gate; the entry-bearing file physically leaves Taylor's observable range; recording is beyond reach
-- @523: stakes-visibility peaks — second clerk releases the record book; the entry is sealed; irreversible second commit
-- @524: reversal-proximity + body-charge peaks — wall-facing IS the decision to record the close-states as coincidence; the season's terminal reader-asymmetry committed through Taylor's body before the log entries
+3s justified (active; 6 total):
+- @394 (local @67): stakes-visibility + reversal-proximity peaks — elder places coin; irreversible registration
+- @395 (local @68): body-charge peaks — Taylor closes fist on coin; double-tap with @394 (two parties committing the same turn)
+- @468 (local @139): three axes light (stakes-visibility + reversal-proximity + body-charge) — elder seals account; structural climax
+- @522 (local @11): stakes-visibility + reversal-proximity peaks — clerk crosses Fish Gate; the entry-bearing file physically leaves Taylor's observable range; recording is beyond reach
+- @523 (local @42): stakes-visibility peaks — second clerk releases the record book; the entry is sealed; irreversible second commit
+- @524 (local @162): reversal-proximity + body-charge peaks — wall-facing IS the decision to record the close-states as coincidence; the season's terminal reader-asymmetry committed through Taylor's body before the log entries
 
-Previously rated 3, downgraded in cycle 2:
-- @335 (3→2): clerk writes entry; rubric-compliant rating 2 (plot-importance inflation; cycle 2 finding)
-- @368 (3→2): second clerk writes entry; same pattern
+Previously rated 3, downgraded:
+- @417 (local @90, 3→2 cycle-1): maester sets pen; from Khepri-register POV this is approach-axis not rupture; worm-canon POV-fidelity callout; downgrade accepted as honest price of 3.9% rate
+- @335 (local @335, 3→2 cycle-2): clerk writes entry; rubric-compliant rating 2 (plot-importance inflation)
+- @368 (local @368, 3→2 cycle-2): second clerk writes entry; same pattern
+
+Previously rated 2, downgraded (cycle-3):
+- @83 (local @83, 2→1): market-trip transit beat; no commit bone; downrate resolves maester-market trip consecutive-2 advisory
+- @84 (local @84, 2→1): same transit scope
+
+Previously rated 1, upgraded (cycle-3):
+- @160 (local @160, 1→2): eastern-quarter walk is approach-charge to denouement; restores clean ramp 2→2→2→3 into @162

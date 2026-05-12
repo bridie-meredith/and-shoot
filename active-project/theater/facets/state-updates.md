@@ -230,9 +230,9 @@ author: dialogue-writer-fork:oc-broken-maester
 # Single fire below: the brief's explicitly-flagged meaningful delta — the crossing from
 # ambient signal (e02) to formal log-entry register at e03 close.
 
-28 @164 actor:oc-broken-maester.documentation_status: ambient-signal -> named-in-protag-log-paired-with-hightower
-# field-extension: documentation_status (new field for s01e03 close-state register-shift; tracked-state aspect — describes how this actor exists in the protagonist's record at the season terminus; not a perception by the maester himself, who remains unaware; not a stylistic flourish; defensible under Reality — persistence absolute past @164, the paired log entry is irreversible in Taylor's record; flagged for margit schema referral)
-# cross-facet: actor:<non-POV>.*, narrator-interest co-citation NOT required per rubric §"Cross-axis tests"; tensometer @164 reads 1 in the per-episode file (the terminal log close is a settling beat; the season's reader-asymmetry was committed at @162 wall-facing, tens 3); fire on the flip-beat where the field mutates (@164 writes the entry that pairs the records), not on the upstream decision beat (@162) per anti-pattern #7
+28 @164 actor:taylor-hebert-flea-bottom.knowledge.maester-in-log: unknown -> named-in-log-paired-with-hightower-file
+# field-extension: knowledge.maester-in-log (Taylor's epistemic act — she writes the maester's anomaly into her log at @164 and pairs it with the Hightower file; the state mutation is on Taylor's knowledge, not on the maester's own actor state; the maester remains unaware; moved from oc-broken-maester.documentation_status per worm-canon cross-POV-authority callout — the delta belongs on the POV actor who performed the act)
+# cross-facet: tensometer @164 reads 1 in the per-episode file (settling beat; season's reader-asymmetry committed at @162 tens:3); fire on the flip-beat where Taylor writes the entry (@164), not the decision beat (@162) per anti-pattern #7
 
 # source: oc-tanner-elder
 # source: state-updates-oc-tanner-elder
@@ -313,31 +313,31 @@ author: dialogue-writer-fork:oc-tanner-father
 
 36 @8 actor:taylor-hebert-flea-bottom.knowledge.first-clerk-record: unknown -> recorded-at-elder
 37 @11 actor:taylor-hebert-flea-bottom.knowledge.first-clerk-record: recorded-at-elder -> file-crossed-fish-gate-beyond-range
-38 @15 actor:taylor-hebert-flea-bottom.log_entries_episode: 0 -> 1
+# 38 deleted — log_entries_episode counter chain removed per cape-fic density-on-flat callout (11 counter entries deleted; cascade: [state:38] removed from proto-line @15)
 39 @22 actor:taylor-hebert-flea-bottom.stats.fauna_control_radius_m: 300 -> 400
 40 @22 actor:taylor-hebert-flea-bottom.swarm_network_composition: single-species-local -> multi-species-coordinated-flies-wasps-beetles-spiders
-41 @24 actor:taylor-hebert-flea-bottom.log_entries_episode: 1 -> 2
+# 41 deleted — log_entries_episode counter, cascade: [state:41] removed from proto-line @24
 42 @26 actor:taylor-hebert-flea-bottom.physical_condition: intact -> sleep-cycled-night-one
-43 @30 actor:taylor-hebert-flea-bottom.log_entries_episode: 2 -> 3
+# 43 deleted — log_entries_episode counter, cascade: [state:43] removed from proto-line @30
 44 @40 actor:taylor-hebert-flea-bottom.knowledge.second-clerk-record: unknown -> recorded-at-apothecary
 45 @42 actor:taylor-hebert-flea-bottom.knowledge.second-clerk-record: recorded-at-apothecary -> entry-sealed-irreversible
-46 @47 actor:taylor-hebert-flea-bottom.log_entries_episode: 3 -> 4
+# 46 deleted — log_entries_episode counter, cascade: [state:46] removed from proto-line @47
 47 @67 actor:taylor-hebert-flea-bottom.inventory: [] -> [coin-from-elder]
-48 @70 actor:taylor-hebert-flea-bottom.log_entries_episode: 4 -> 5
-49 @93 actor:taylor-hebert-flea-bottom.log_entries_episode: 5 -> 6
+# 48 deleted — log_entries_episode counter, cascade: [state:48] removed from proto-line @70
+# 49 deleted — log_entries_episode counter, cascade: [state:49] removed from proto-line @93
 50 @103 actor:taylor-hebert-flea-bottom.knowledge.father-petitioned-elder: unknown -> known-via-elder
-51 @107 actor:taylor-hebert-flea-bottom.log_entries_episode: 6 -> 7
+# 51 deleted — log_entries_episode counter, cascade: [state:51] removed from proto-line @107
 52 @114 actor:taylor-hebert-flea-bottom.stats.fauna_control_radius_m: 400 -> 500
-53 @116 actor:taylor-hebert-flea-bottom.log_entries_episode: 7 -> 8
+# 53 deleted — log_entries_episode counter, cascade: [state:53] removed from proto-line @116
 54 @118 actor:taylor-hebert-flea-bottom.physical_condition: sleep-cycled-night-one -> sleep-cycled-night-two
-55 @123 actor:taylor-hebert-flea-bottom.log_entries_episode: 8 -> 9
+# 55 deleted — log_entries_episode counter, cascade: [state:55] removed from proto-line @123
 56 @125 actor:taylor-hebert-flea-bottom.knowledge.red-keep-beyond-ceiling: unknown -> known-400m-beyond-current-radius
 57 @133 actor:taylor-hebert-flea-bottom.knowledge.messenger-to-elder: unknown -> messenger-observed-at-junction
 58 @142 actor:taylor-hebert-flea-bottom.knowledge.formal-account-sealed: unknown -> sealed-and-handed-to-middleman
-59 @145 actor:taylor-hebert-flea-bottom.log_entries_episode: 9 -> 10
+# 59 deleted — log_entries_episode counter, cascade: [state:59] removed from proto-line @145
 60 @155 actor:taylor-hebert-flea-bottom.stats.fauna_control_radius_m: 500 -> 600
-61 @162 actor:taylor-hebert-flea-bottom.knowledge.record-discipline-state: parallel-logs-honest -> close-states-recorded-as-coincidence
-62 @164 actor:taylor-hebert-flea-bottom.log_entries_episode: 10 -> 11
+61 @162 actor:taylor-hebert-flea-bottom.knowledge.record-discipline-state: parallel-logs-honest -> close-states-recorded-without-cause-assigned
+# 62 deleted — log_entries_episode counter, cascade: [state:62] removed from proto-line @164
 
 # field-extension: knowledge.first-clerk-record (per-episode awareness field tracking the first Hightower clerk's record event and its disposition; persistent past beat — Taylor carries the knowledge forward)
 # field-extension: knowledge.second-clerk-record (parallel field for second clerk at apothecary)

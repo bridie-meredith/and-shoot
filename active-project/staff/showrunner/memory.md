@@ -189,7 +189,38 @@ seasons:
         cycle3_signal_carry_forward: [find-002 URI-CONSOLIDATION-CITE-DRIFT (pre-existing pipeline; exceeds episode scope), find-005 @20 pile-up borderline (editor advisory at wrap)]
         cycle4_cap_exception: mem:13 target-reference rewrite (cond-westerosi-customary-authority-125ac → free-text Westerosi mechanism gloss); 3-of-3 ACCEPT; ratified in facets-audience-gate-r3.md §"Cap-exception ratification" on convergent-audience-single-field-repair grounds
       - slug: s01e03
-        status: faceted-r2   # Phase 4 fanin clean 2026-05-12; 7 R2 judges merged (22 author copies total post-R2); .r2-decisions.md consolidated (f-r2-counts all-zero; no DISCIPLINE-FAILs; orchestrator-corrected R2.2 memory ID discipline + R2.3 broken-maester cite-token form); cite-index rebuilt (335 facet entries; 54.2% protoline density)
+        status: audited-r1   # FLIPPED 2026-05-12 — Phase 5b cycle 3 cleared 9-of-9 facets to 3-of-3 ACCEPT (cap=3 fully used). Phase 5 r4 CLEAN (0 HARD; 13 SIGNAL all advisory; 5 SIGNAL CLOSED across cycles: flag-012 curve-shape, flag-017 vibes AP8, flag-018 tens AP2, flag-020 vibes forward-license, flag-022 vibes:32 AP8, flag-023 tens metadata staleness). Bidirectional loop VALIDATED. Cycle-by-cycle: c1 0-of-9 pass, c2 4-of-9 pass (state-updates/memory/feeling/metaphor), c3 5-of-5 re-fired facets pass (tensometer/location-state/interest-narrator/sensory/vibes). Critical cap-burn risk averted on interest-narrator dark-fantasy (FAIL c1+c2 → ACCEPT c3 once NI rewrites made displacement-trigger/foreknowledge-clamp/age-mismatch registers explicit on textual surface).
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audit_findings: 13   # all SIGNAL post-r4
+        audit_findings_hard_initial: 3   # URI-CONSOLIDATION-CITE-DRIFT family
+        audit_findings_hard_residual: 0
+        audit_findings_signal_residual: 13
+        audit_paths_chronological:
+          - active-project/staff/auditor/facets-final-audit.md  # r1->r2->r3->r4 sequential (each cycle overwrites; canonical=r4)
+        remediation_passes_hard: 1 of 1 (r1->r2; cleared 3 HARD via token-form rewrite; 6 feel + 35 state-update + 53 vibes licensed-by = 94 rewrites)
+        remediation_passes_signal: 2 (r3 cycle-1-fixer-pass, r4 cycle-2-fixer-pass; 5 SIGNAL CLOSED across cycles)
+        r2_decisions_path: active-project/theater/facets/.r2-decisions.md
+        r2_f_r2_counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
+        r2_discipline_fails: 0
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md
+        audience_gate_complete: true   # 9 of 9 facets at 3-of-3 ACCEPT at cycle 3 (cap)
+        audience_gate_cycles: 3 of 3 max
+        audience_gate_cap_burned: false   # cap=3 fully used but all facets cleared at cap
+        audience_gate_facet_accept_rate: 9 of 9
+        bidirectional_loop: validated   # URI-035 third validation; shared findings across audience + auditor on vibes AP8, tens AP2, curve-shape 1->3 jumps, NI density, Earth-Bet fence; audience-only findings drove substantive content remediation
+        process_gaps:
+          - URI-PHASE-5B-STALE-AUDIT-MISREAD (NEW 2026-05-12) — Phase 5b cycle-2 vibes reviewers attacked text from audit r3 flag-022 (`the-log-now-calls-parallel-truths-coincidence`) that had been overwritten in the file BEFORE cycle-2 audience fired (to `parallel-truths-as-coincidence-in-log`). False-positive 3-of-3 REVISE on a facet whose actual file state already matched the reviewers' proposed fix. Mitigation cycle-3: explicit "read the actual file, not the audit excerpt" instructions in prompts (cleared). Long-term: re-run audit after any orchestrator-applied post-audit edit OR enforce direct-file verification in audience prompts.
+          - URI-EXEMPTION-5-BOUNDARY-FRAGILITY (NEW 2026-05-12) — flag-021 documents 3.9% per-episode 3s rate sitting 0.1 points below the relaxed per-episode floor after worm-canon-pedant-demanded @90 downgrade (POV-fidelity correct). SIGNAL per auditor r3/r4. Carry-forward: Exemption 5 now has zero per-episode margin; further 3s attrition in s01e04+ retroactively invalidates the season-average claim. Watch the boundary.
+          - URI-NI-AUGMENTATION-REGISTER-SURFACE (NEW 2026-05-12) — Cycle-1 NI augmentation entries (narrator:42-45) added by fixer to address dark-fantasy file-level FAIL on doubled-register vacancy. Cycle-2 dark-fantasy FAIL re-fired: augmentation entries read as "still apparatus-tracking." Cycle-3 fixer rewrote entries to put displacement registers on TEXTUAL SURFACE ("older than this hand," "the body has been on the other side of this kind of seal," "different room"). Pattern lesson: when audience flags register absence, fix must surface the register textually, not in subtext or augmentation count.
+          - flag-021 SIGNAL (3.9% Exemption 5 breach) — orchestrator decision documented in tensometer footer; auditor r4 classifies SIGNAL; carry-forward.
+          - flag-008 SIGNAL (NI density 25.8% at-ceiling) — editor-call deferral by design.
+          - flag-009 SIGNAL (Taylor feeling 1.9% below floor) — editor-call deferral by design.
+        upstream_tuning_queue_entries: [URI-PHASE-5B-STALE-AUDIT-MISREAD, URI-EXEMPTION-5-BOUNDARY-FRAGILITY, URI-NI-AUGMENTATION-REGISTER-SURFACE]
+        upstream_tuning_queue_addressed: [URI-PHASE-5B-STALE-AUDIT-MISREAD]   # via cycle-3 prompt augmentation; long-term tooling fix queued
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
         narrator: taylor-hebert-flea-bottom
         interlude: false
         chunk: "The Hightower apparatus opens its file on Taylor across two clerks and a senior operative's written request through the elder; the village-claim closes around her externally via the lord's-man record; range reaches 600m with the Red Keep 400m beyond ceiling; the season closes on two log entries written side-by-side — the architecture has changed but she does not know what file she is in."

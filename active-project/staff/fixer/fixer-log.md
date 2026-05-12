@@ -1,3 +1,152 @@
+## SESSION-START — 2026-05-12T15:00:00Z — facets-5b-cycle3-remediation-s01e03-FINAL
+dispatch: Phase 5b cycle-3 (LAST CYCLE cap=3) remediation for /and-facets s01e03 — fix interest-narrator (6 entries: narrator:29, :37, :42, :43, :44, :45); verify tensometer/location-state/sensory already resolved by prior run3 partial session; vibes NO-OP
+target: active-project/theater/facets/interest-narrator.md
+audit-report: cycle-2 aggregate reviewer callouts (worm-canon-pedant REVISE on :29 + :37; dark-fantasy FAIL on :42–:45)
+findings-queued: 6 NI entries — 2 passive/author-voice rewrites + 4 augmentation register-deepening
+
+## tensometer-verify — PASS-THROUGH — 2026-05-12T15:02:00Z
+fault: verified pre-resolved by run3 partial session (tens:150 @160 upgraded 1→2; tens:78/79 @83/@84 downrated 2→1; footer updated; 3.9% orchestrator decision documented)
+scope: line
+change: none — file correct on read
+criteria met: yes (confirmed by file read)
+
+## location-state-verify — PASS-THROUGH — 2026-05-12T15:03:00Z
+fault: verified pre-resolved by run3 partial session (loc-state:4/15/20/21/22/24 trimmed to single perceptible focus element; loc-state:6a @43 smell baseline added for sensory:9 chain)
+scope: line
+change: none — file correct on read
+criteria met: yes (confirmed by file read)
+
+## sensory-verify — PASS-THROUGH — 2026-05-12T15:04:00Z
+fault: sensory:9 @87 old-state apothecary-compound-ambient now chains from loc-state:6a @43 (baseline added in run3); chain is established
+scope: line
+change: none — sensory:9 token aligns with loc-state:6a description; baseline anchor present
+criteria met: yes
+
+## vibes — NO-OP — 2026-05-12T15:05:00Z
+fault: all 3 reviewers attacked vibes:32 for stale audit token; current file at line 97 reads parallel-truths-as-coincidence-in-log (clean noun-phrase — exactly the dark-fantasy proposed fix)
+scope: n/a
+change: NO EDIT — file is correct; audience misread the stale audit r3 quote
+criteria met: yes — file already correct pre-cycle-3
+
+## interest-narrator-rewrites — RESOLVED — 2026-05-12T15:20:00Z
+fault: narrator:29 passive restatement (worm-canon); narrator:37 passive + future-tense author commentary (worm-canon); narrator:42 apparatus-tracking not foreknowledge-clamp (dark-fantasy); narrator:43 internal contradiction age-mismatch (dark-fantasy); narrator:44 insufficient displacement-trigger (dark-fantasy); narrator:45 prior-life posture pivots back to apparatus (dark-fantasy)
+scope: line
+change: narrator:29 → inventory-tell with agent named (fifth count, hand that closes is hers); narrator:37 → active present-tense apparatus-read through Taylor's POV (wall comes up under the eye); narrator:42 → explicit foreknowledge-clamp (interior knew the shape before the first seal landed); narrator:43 → clean age-mismatch, contradiction resolved (knowing is older than this hand); narrator:44 → explicit displacement-trigger (body has been on the other side of this kind of seal); narrator:45 → committed prior-life posture (older than any wall faced before; in a different room — cuts apparatus pivot)
+criteria met: yes — all 6 entries materially different in register from cycle-2; foreknowledge-clamp explicit at :42; age-mismatch clean and contradiction-free at :43; displacement-trigger embodied at :44; prior-life posture committed at :45; passive/future-tense eliminated at :29 and :37; hard fence maintained (no Earth-Bet proper nouns)
+
+## SESSION-END — 2026-05-12T15:25:00Z — facets-5b-cycle3-remediation-s01e03-FINAL
+findings-applied: 6 (interest-narrator rewrites — narrator:29, :37, :42, :43, :44, :45); 3 pass-through verifications (tensometer, location-state, sensory); 1 no-op (vibes — file already correct)
+findings-skipped: 0 — all cycle-2 callouts addressed; dark-fantasy 3.9% dissent carried as SIGNAL per auditor r3 (pre-documented in tensometer footer by run3)
+exit: CLEAN
+
+## tensometer — RESOLVED — 2026-05-12T14:05:00Z
+fault: cape-fic @160 interrupts ramp (1 between 2s); @83/@84 consecutive 2s with no following 3 and no transit exception filed
+scope: line
+change: tens:150 @160 upgraded 1→2 (approach-charge ramp 2→2→2→3 restored); tens:78 @83 + tens:79 @84 downrated 2→1 (market-trip transit, no commit bone); footer 2s/1s counts updated; axis citations table corrected (moved @417 to previously-rated-3, removed stale @417 from active 3s list); orchestrator decision on 3.9% band-floor documented in footer
+criteria met: yes — single-ramp interruption resolved; consecutive-2s advisory resolved; dark-fantasy 3.9% dissent documented as SIGNAL per auditor r3, not actionable at fixer scope
+
+## SESSION-START — 2026-05-12T14:00:00Z — facets-5b-cycle2-to-cycle3-remediation-s01e03-run3
+dispatch: Phase 5b cycle-2→cycle-3 remediation for /and-facets episode s01e03 — LAST CYCLE (cap=3); fix tensometer (2 entries), location-state (6 entries), interest-narrator (6 entries), sensory (add loc-state baseline); vibes NO-OP (file correct, audience misread)
+target: active-project/theater/facets/ (tensometer.md, location-state.md, interest-narrator.md, sensory.md)
+audit-report: cycle-2 aggregate reviewer callouts (cape-fic, dark-fantasy, worm-canon, sensory-disambiguation-pedant)
+findings-queued: 4 facets with REVISE/FAIL findings; 1 facet vibes NO-OP
+
+## SESSION-END — 2026-05-12T12:00:00Z — facets-5b-cycle1-to-cycle2-remediation-s01e03-run2
+findings-applied: direct-mechanical: 26 edits across 9 facets + 24 proto-line cascade token removals/additions; author-voice: memory 3 entries rewritten, feeling 2 entries rewritten, NI 4 entries rewritten + 4 augmentation entries added, loc-state 5 entries rewritten + 2 new entries added, sensory 4 baseline fixes + 1 new entry added
+findings-skipped: 1 push-back (radius-progression 300→400→500→600 dark-fantasy concern — documented as structural feature, not fixable at file scope); Agent tool unavailable (all author-routed rewrites produced inline by fixer operating in impersonator mode); vibes:15/vibes:16 licensed-by cascade from state-update:28 relocation — flagged as dependency, not chained
+exit: DEPENDENCY-FLAGGED — vibes:15 and vibes:16 cite state-update:28 which has been relocated; license references now semantically mismatched; showrunner direction required before cycle-2 audit
+
+## SESSION-START — 2026-05-12T10:00:00Z — facets-5b-cycle1-to-cycle2-remediation-s01e03-run2
+dispatch: Phase 5b cycle-1→cycle-2 remediation for /and-facets episode s01e03 — all 9 facets failed cycle-1 audience adversarial gate; apply direct mechanical edits + dispatch 4 author-routed re-runs
+target: active-project/theater/facets/ (all 9 facets) + active-project/theater/proto-lines/s01e03.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 27 verdict files driving remediation across 9 facets (plus 1 push-back carry-forward)
+
+## feeling-rewrites — RESOLVED — 2026-05-12T11:30:00Z
+fault: feel:7 @145 shares pen-instrument vocabulary with feel:5 @15 (cape-fic + worm-canon convergent); feel:3 @131 duplicates elder's bureaucratic-precision register with no cost delta (dark-fantasy)
+scope: line
+change: feel:7 @145 rewritten from "the pen does not lift between the words" to "her spine holds the same angle through the last entry as through the first word" (spine-axis, distinct from pen and weight-toward); feel:3 @131 rewritten from "squares the paper edge against the desk before he answers" to "takes one breath that does not leave fast before he speaks" (breath-charge-on-being-the-messenger, body-charge distinct from gaze-discipline); both per-character slice files updated in sync
+criteria met: yes
+
+## memory-rewrites — RESOLVED — 2026-05-12T11:30:00Z
+fault: mem:4 @54 lands ambient (category label not shape); mem:11 @90 gives category label not specific body/behavioral anchor; mem:12 @162 final clause names principle of omission rather than specific gap
+scope: line
+change: mem:4 revised to blank-column shape (body counts the blank where cause should sit); mem:11 revised to breath-held-past-close specific tell (the hold as the body's record of sessions that did not reopen); mem:12 revised to "no pattern identified" as the record's specific word for the cause it will not name
+criteria met: yes
+
+## NI-rewrites-and-augmentation — RESOLVED — 2026-05-12T11:45:00Z
+fault: narrator:14 author-voice intrusion; narrator:20 author commentary / omniscient narrator; narrator:29 emotional negation report; narrator:37 alien vocabulary; file-level doubled-register vacancy (zero foreknowledge-clamp, zero displacement-trigger, zero age-mismatch)
+scope: line (4 entry rewrites) + episode (4 new augmentation entries)
+change: narrator:14 → inventory-tell (wasps carry cluster-weight); narrator:20 → perceptual inventory (beetle relay has pen-scratch, session running); narrator:29 → event log (receives south-wall count and closes); narrator:37 → character register (log writes two columns in parallel); new entries narrator:42 @42 foreknowledge-clamp, narrator:43 @67 age-mismatch, narrator:44 @139 foreknowledge-clamp, narrator:45 @162 displacement-trigger; citation tokens added to proto-lines at @42, @67, @139, @162
+criteria met: yes
+
+## location-state-rewrites-and-augmentation — RESOLVED — 2026-05-12T11:45:00Z
+fault: file-level relay-topology-only register (dark-fantasy FAIL); loc-state:4/@23 and loc-state:15/@115 parasitic relay sensory notes; loc-state:20/21/22 frugality violations; @162 silence at climax
+scope: line (5 entry rewrites) + episode (2 new entries)
+change: loc-state:4 rewritten to wind/stone/labor-smell; loc-state:15 rewritten to last-light/stone-cold; loc-state:20 rewritten to arch-shadow/worn-stone; loc-state:21 rewritten to cobble-worn/market-smell; loc-state:22 rewritten to narrow-street-angle/compound-smell; loc-state:24 added @162 (interior wall as place, lime-wash worn to stone); loc-state:25 added @87 (staircase compound-smell); citation tokens added at proto-lines @162 and @87
+criteria met: yes
+
+## sensory-rewrites — RESOLVED — 2026-05-12T11:45:00Z
+fault: modality vacancy (zero smell in apothecary scene); unanchored/contradicted old-state baselines for sensory:1/2/4/8; sensory:5 already deleted
+scope: line (4 baseline rewrites, 1 new smell entry)
+change: sensory:1 old-state rewritten to flea-bottom-junction-ambient (existing loc-state inheritance); sensory:2 old-state rewritten to flea-bottom-morning-clear-cold; sensory:4 old-state rewritten to alley-ambient-air; sensory:8 old-state rewritten to room-ambient-cold (inherits loc-state:16 dawn/cold); sensory:9 added @87 smell: apothecary-compound-ambient -> stair-compound-concentration; citation token [sensory:9] added to proto-line @87
+criteria met: yes
+
+## location-state-direct-edits — RESOLVED — 2026-05-12T11:15:00Z
+fault: loc-state:23 @161 spatial misrepresentation ("at the edge of Taylor's ceiling" when Red Keep is 400m past ceiling ~1000m total)
+scope: line
+change: rewritten to "well beyond the 600m ceiling — structurally out of reach"
+criteria met: yes
+
+## interest-narrator-direct-deletes — RESOLVED — 2026-05-12T11:15:00Z
+fault: narrator:19 @83 / narrator:22 @91 / narrator:28 @120 — density-on-flat lonely entries on r=1 beats with no behavior-pack trigger
+scope: line
+change: all three entries deleted; [narrator:19] removed from proto-line @83; [narrator:22] removed from proto-line @91; [narrator:28] removed from proto-line @120
+criteria met: yes
+
+## metaphor-direct-edit — RESOLVED — 2026-05-12T11:15:00Z
+fault: meta:1 @145 rider clause "the sum not known" names the irony already carried by the tally figure
+scope: line
+change: rider clause trimmed; entry now reads "each item clean" (stops cold, no performed dread)
+criteria met: yes
+
+## sensory-direct-delete — RESOLVED — 2026-05-12T11:15:00Z
+fault: sensory:5 @90 doubles the implicit silence already carried by "sets the pen" SVO
+scope: line
+change: sensory:5 deleted; [sensory:5] removed from proto-line @90
+criteria met: yes
+
+## state-updates-direct-edits — RESOLVED — 2026-05-12T11:00:00Z
+fault: log_entries_episode counter chain density-on-flat (IDs 38,41,43,46,48,49,51,53,55,59,62); state:61 self-falsification value; state:28 cross-POV authority bleed
+scope: line
+change: all 11 log_entries_episode entries deleted (IDs 38,41,43,46,48,49,51,53,55,59,62 converted to deletion comments); state:61 rewritten parallel-logs-honest -> close-states-recorded-without-cause-assigned; state:28 relocated from actor:oc-broken-maester.documentation_status to actor:taylor-hebert-flea-bottom.knowledge.maester-in-log @164
+criteria met: yes
+dependency-flag: vibes:15 and vibes:16 at @90 cite licensed-by: state-update:28 — after relocation, state-update:28 is now Taylor's knowledge field at @164 (not oc-broken-maester.documentation_status). The license reference is semantically wrong for a vibe about the maester's log-open at @90. Flagging: the vibes:15/16 licensed-by should be updated to remove state-update:28 and rely on proto:89, proto:90, tens:3 alone OR a correct maester-side state. This is a cascade from the state-updates:28 relocation. Awaiting showrunner direction — did not chain the repair.
+
+## vibes-direct-edits — RESOLVED — 2026-05-12T10:45:00Z
+fault: AP8 sentence-form tokens (vibes:1, vibes:7, vibes:8); forward-license state-update:60 at @125 (vibes:7, vibes:28); semantic redundancy vibes:8/vibes:32 at @162
+scope: line
+change: vibes:1 token compressed: name-carried-beyond-retrieval-window; vibes:7 fully rewritten to anticipation form + licensed-by stripped of state-update:60 and proto:162 forward refs; vibes:8 sentence-token compressed to file-status-opaque-to-subject; vibes:28 token rewritten + state-update:60 forward ref removed; vibes:32 rewritten to log-instrument-now-shaping-what-counts (distinct from vibes:8 apparatus-blindness axis)
+criteria met: yes
+
+## tensometer-direct-edits — RESOLVED — 2026-05-12T10:30:00Z
+fault: AP2 speech-beat over-rating (tens:48 @51, tens:97 @103), POV-inflation at @90 (tens:85), @161→@162 1→3 jump without bridge (tens:151), and tens:4 @4 already 1 (no change needed)
+scope: line
+change: tens:48 @51 downrated 2→1; tens:97 @103 downrated 2→1; tens:85 @90 downrated 3→2 with approach-charge axis note; tens:151 @161 upgraded 1→2 with approach-charge bridge axis note; tens:4 already at 1 (pre-resolved)
+criteria met: yes — speech-beat AP2 violations resolved; POV-inflation corrected; 1→3 jump at @161→@162 now bridged; @10→@11 bridge already present in file
+
+## SESSION-START — 2026-05-12T09:00:00Z — facets-5b-cycle1-to-cycle2-remediation-s01e03
+dispatch: Phase 5b cycle-1→cycle-2 remediation for /and-facets episode s01e03 — all 9 facets failed cycle-1 audience adversarial gate; apply direct mechanical edits + dispatch 4 author-routed re-runs
+target: active-project/theater/facets/ (all 9 facets) + active-project/theater/proto-lines/s01e03.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 27 verdict files driving remediation across 9 facets
+
+## SESSION-START — 2026-05-12T00:00:00Z — facets-final-audit-r1-hard-findings
+dispatch: Phase 5 remediation s01e03 — three HARD findings: flag-001 (STR-001) feeling citation token rewrites, flag-004 (STR-004) state-update citation token rewrites, flag-014 (CON-001) vibes licensed-by canonical token rewrites
+target: active-project/theater/proto-lines/s01e03.md + active-project/theater/facets/vibes.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 3
+
 ## SESSION-START — 2026-05-11T23:30:00Z — facets-audience-gate-r2-cycle3-deletes
 dispatch: s01e02 Phase 5b cycle 3 — two DELETE-with-cascade operations: Op-A (narrator:32 @177 channel-saturation DELETE) + Op-B (state:8 @22 old-state-ungrounded DELETE + margit referral)
 target: active-project/theater/facets/interest-narrator.md + active-project/theater/facets/state-updates.md + active-project/theater/facets/_inflight-r2/proto-lines-narrator.md + proto-lines-state-oc-tanner-father.md
@@ -615,3 +764,35 @@ criteria met: yes
 findings-applied: 5
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-12T00:30:00Z — facets-final-audit-r1-hard-findings-pass2
+dispatch: Phase 5 remediation s01e03 — three HARD findings: flag-001 (STR-001) feeling citation token rewrites in proto-lines/s01e03.md, flag-004 (STR-004) state-update citation token rewrites in proto-lines/s01e03.md, flag-014 (CON-001) vibes licensed-by canonical token rewrites in vibes.md; cite-index rebuild after
+target: active-project/theater/proto-lines/s01e03.md + active-project/theater/facets/vibes.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 3
+
+## flag-004 (STR-004) — RESOLVED — 2026-05-12T01:10:00Z
+fault: state-update citation tokens in proto-lines/s01e03.md use per-slice local IDs that collide with env-slice IDs in consolidated state-updates.md
+scope: line
+change: 35 targeted token rewrites in proto-lines/s01e03.md across 31 proto-line anchors. Full systematic scan performed: every [state:N] token verified against consolidated state-updates.md. Env-slice entries at their own anchors (IDs 1-27 where N=anchor entry ID) left unchanged; per-character slice citations rewritten. Rewrites: @8 state:1→36, @11 state:2→37, @15 state:3→38, @22 state:4→39+state:5→40, @24 state:6→41, @26 state:7→42, @30 state:8→43, @40 state:9→44, @42 state:10→45, @47 state:11→46, @67 state:1→29+state:12→47, @70 state:13→48, @93 state:14→49, @96 state:1→33 (audit example), @98 state:2→34, @101 state:3→35, @103 state:15→50, @107 state:16→51, @114 state:17→52, @116 state:18→53, @118 state:19→54, @123 state:20→55, @125 state:21→56 (audit example), @129 state:2→30, @133 state:22→57, @137 state:3→31, @139 state:4→32, @142 state:23→58, @145 state:24→59, @155 state:25→60, @162 state:26→61, @164 state:1→28+state:27→62 (audit example).
+criteria met: yes — all per-character slice citations now use consolidated IDs; mapping table at active-project/staff/fixer/s01e03-state-update-cite-mapping.md
+
+## cite-index-rebuild — BLOCKED — 2026-05-12T01:35:00Z
+note: fixer has no shell execution capability (Read/Write/Edit tools only); cannot invoke build_cite_index.py. Additionally: inflight files in _inflight/ and _inflight-r2/ carry pre-fix per-slice local IDs for both state and feel prefixes — running tool without --skip-merge would clobber canonical corrections via citation union override. Orchestrator must run: python3 active-project/staff/cite-index/build_cite_index.py s01e03 --skip-merge (cite-index only from canonical state) OR update inflight files first (out of scope per criteria). Recommend --skip-merge for this pass.
+
+## flag-014 (CON-001) — RESOLVED — 2026-05-12T01:25:00Z
+fault: vibes.md all 34 entries use non-canonical state-update-<slug>:N and feeling-<slug>:N licensed-by source tokens
+scope: line
+change: rewrote all non-canonical licensed-by tokens across all 34 vibes entries using consolidated ID mapping. state-update-taylor-hebert-flea-bottom:N → state-update:(35+N); state-update-oc-tanner-elder:N → state-update:(28+N); state-update-oc-tanner-father:N → state-update:(32+N); state-update-oc-broken-maester:3 → state-update:28. feeling-oc-tanner-elder:1 → feeling:2 (vibes:12, vibes:21). Total tokens rewritten: 51 state-update-* tokens + 2 feeling-* tokens across 33 vibes entries. vibes:17 had no non-canonical tokens (proto: and tens: only). Mapping tables at active-project/staff/fixer/s01e03-vibes-state-update-mapping.md + s01e03-vibes-feeling-mapping.md.
+criteria met: yes — all licensed-by source tokens now use schema-canonical form state-update:<N> and feeling:<N>
+
+## flag-001 (STR-001) — RESOLVED — 2026-05-12T00:45:00Z
+fault: feeling citation tokens in proto-lines/s01e03.md use per-slice local IDs that resolve to wrong entries in consolidated feeling.md
+scope: line
+change: 6 targeted token rewrites in proto-lines/s01e03.md — @6: removed [feel:1], kept [feel:2]; @15: [feel:1]→[feel:5]; @53: [feel:2]→[feel:6]; @98: removed [feel:1], kept [feel:4]; @131: removed [feel:2], kept [feel:3]; @145: [feel:3]→[feel:7]. Verified consolidated feeling.md mapping before edits (feel:1=maester@90, feel:2=elder@6, feel:3=elder@131, feel:4=father@98, feel:5=taylor@15, feel:6=taylor@53, feel:7=taylor@145 — all confirmed correct).
+criteria met: yes — all 6 proto-line anchors now cite the consolidated ID matching their anchor position
+
+## SESSION-END — 2026-05-12T01:40:00Z — facets-final-audit-r1-hard-findings-pass2
+findings-applied: 3 (flag-001 STR-001, flag-004 STR-004, flag-014 CON-001)
+findings-skipped: 0
+exit: DEPENDENCY-FLAGGED — cite-index rebuild blocked: fixer has no shell execution capability; orchestrator must run build_cite_index.py; inflight files carry pre-fix IDs and require --skip-merge flag to avoid clobbering canonical corrections
