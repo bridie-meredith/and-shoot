@@ -82,6 +82,7 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
    - Schema defaults from `schemas/stitch-profile.schema.md`
    Shallow-merge top-down. Validate per the schema's fault list.
 4. **Persona resolution.** Load `active-project/staff/stitcher/personas/<active>.md` (or library fallback `staff/stitcher/personas/<active>.md`). Default `neutral` if profile carries no `persona:` field. Validate persona's lens-bias and Phase-7-bias tables against the schema.
+   - **Project-mismatch check.** If resolved persona is `neutral` AND `active-project/stitch-profile.md` declares a non-neutral persona OR `active-project/staff/stitcher/personas/` contains a project-scoped persona card: emit `FAULT-PROFILE-PERSONA-MISMATCH-PROJECT` and escalate to user. Do not proceed until user either (a) corrects the profile or (b) passes `--persona neutral` explicitly as an override. Silent `neutral` against a tuned project is the canonical failure mode for this pipeline.
 5. **POV resolution.** Read `narrator:` from proto-lines header. If profile's `voice.pov` is unset, use the header value. Fault if both are absent.
 6. **Scene boundary detection.** Parse `active-project/theater/facets/interest-narrator.md` for the sparsity-gradient section; extract scene labels and anchor ranges. Paragraph breaks fall on scene boundaries (or on explicit time-skip blanks in proto-lines).
 7. **Feedback intake (if present).** Read `active-project/staff/stitcher/feedback-<slug>.md`:
@@ -94,11 +95,37 @@ State machine: showrunner memory `stitched: false` → in-progress → `stitched
 
 ---
 
+## Phase 0.5 — Pre-flight summary (user-visible gate)
+
+Before dispatching Phase 1, emit a one-screen summary to the user:
+
+```
+/and-stitch pre-flight for <slug>:
+  persona:          <slug>           # FAULT if neutral and project has tuned persona
+  voice:            <person>-person <tense>-tense, contractions <on/off>
+  POV:              <actor-slug>
+  anchors:          <N>              # from proto-lines
+  scenes:           <M>              # from interest-narrator sparsity gradient
+  phase-1 forks:    <M scene-forks>  # or <N per-anchor forks> if dispatch-budget allows
+  phase-7 forks:    <M scene-forks> per-sentence inside
+  anti-jargon:      <K tokens loaded from project.anti-jargon>
+  hollow patterns:  <K patterns loaded>
+  asinine patterns: <K patterns loaded>
+  bone-fence:       enforced (dialogue=no, body=no, spatial=no, route=no, scene-prose=no, cognitive=no)
+  feedback-file:    <present | absent>
+```
+
+This summary is the gate. If anything looks wrong (persona is `neutral` when it shouldn't be; anti-jargon list is empty when the project has one; voice config is unexpected), the user catches it here, not at the polish file 1,500 words later.
+
+---
+
 ## Phase 1 — Lens-anchored render
 
-Per-anchor forks. Walk bones in proto-line order. Group anchors by paragraph (scene boundaries + time-skip blanks). Within each paragraph, fan out anchors in parallel per `phase-1.parallel` setting; default `within-paragraph` parallelizes within paragraphs and serializes across.
+**Hard rule: forks only, no orchestrator-inline rendering.** The `/and-stitch` command body MUST dispatch Agent calls to produce Phase 1 prose. The orchestrator's job is to fan out, collect, assemble — never to render. A Phase 1 prose block in the polish file that does not correspond to a fork-id entry in the render-log is `FAULT-PHASE-1-CONSOLIDATED` and the run must be re-dispatched. (See `staff/stitcher/card.md § Pet Peeves "orchestrator-consolidated Phase 1"`.)
 
-Per-fork dispatch (one Agent call per anchor):
+**Dispatch granularity.** Default is per-anchor (one Agent call per @N). If the episode's anchor count exceeds the session's practical dispatch budget, batch to per-scene (one Agent call per scene; the subagent walks anchors serially within scene with previous-2-lines continuity, applies the lens decider one anchor at a time, and returns rendered prose + per-anchor log entries). Per-scene batching is acceptable; orchestrator inline rendering is not. Document the dispatch granularity in the render-log header.
+
+Per-fork dispatch:
 - Shared inputs (cached, loaded once per Phase 1 dispatch): stitcher card, active persona, active profile
 - Per-fork inputs:
   - The bone at @N (verbatim)
@@ -106,13 +133,17 @@ Per-fork dispatch (one Agent call per anchor):
   - Scene label
   - Narrator slug (POV)
   - Previous 1–2 rendered lines in same paragraph (per `phase-1.continuity-context`)
+  - **Project anti-jargon list** (from active profile's `project.anti-jargon`) — fork must REWORD or drop any token on this list at render time
+  - **Project hollow-prose patterns** (from `project.hollow-prose-patterns`) — fork must not produce these surface forms; cut at render
+  - **Project asinine patterns** (from `project.asinine-patterns`) — fork must reshow or drop
+  - **Bone-faithfulness fence** (from `project.bone-faithfulness-fence` + card § Bone-faithfulness fence) — fork must not invent dialogue / body / spatial / route / scene / cognitive detail
 - Per-fork output:
   - One or more sentences for @N (multi-line at peaks where multiple facets render)
-  - Render-log entry (fork-id, lens-decider trace, structural-decision)
+  - Render-log entry (fork-id, lens-decider trace, structural-decision, any pre-empted Q5/Q8/Q9 cut)
 
 The fork applies the lens decider (rules 1–6) per `staff/stitcher/card.md § Lens decider`. The persona's lens-bias table overrides rules 1–5 where applicable. Tiebreaker per profile's `phase-1.lens-decider.tiebreaker` (default: neutral-default kinetic order).
 
-Output draft: `active-project/polish/<slug>.phase-1.draft.md`. Log fork entries to render-log under `## Phase 1 — lens-anchored render`.
+Output draft: `active-project/polish/<slug>.phase-1.draft.md`. Log fork entries to render-log under `## Phase 1 — lens-anchored render`. **Every rendered prose block must have a corresponding fork-id line in the log.** No fork-id ⇒ FAULT-PHASE-1-CONSOLIDATED.
 
 ---
 
@@ -188,7 +219,14 @@ Output draft: `polish/<slug>.phase-6.draft.md`.
 
 ## Phase 7 — Editorial reflection
 
-Per-sentence forks. The only taste pass.
+**Hard rule: per-sentence Q-line for every sentence; "0 moves" is not a legitimate outcome without the sweep.** Phase 7 MUST dispatch Agent calls. Default granularity is per-paragraph or per-scene (each subagent walks the paragraph/scene's sentences serially, emitting one Q-line per sentence). A render-log that reports "0 cuts" without per-sentence Q-evaluation entries equal to the post-Phase-6 sentence count is `FAULT-PHASE-7-NO-SWEEP` and the phase must be re-dispatched. (See card § Pet Peeves "hand-waved Phase 7".)
+
+The 0-moves outcome IS legitimate when the sweep happens and the post-Phase-6 draft is clean — in that case the log shows N Q-lines each with `→ KEEP` and the stats record `cuts: 0, rewords: 0, reshows: 0`. The fault is missing the sweep, not the absence of moves.
+
+Per-fork dispatch:
+- Shared inputs: stitcher card, active persona, active profile (including `project.anti-jargon`, `project.hollow-prose-patterns`, `project.asinine-patterns`)
+- Per-fork inputs: the paragraph/scene's sentences from the Phase 6 draft + trace block for each sentence (source bone, lens that fired at Phase 1, any pre-empted decisions)
+- Per-fork output: one Q-line per sentence + applied moves + post-edit prose
 
 For each sentence in the Phase 6 draft:
 - Answer Q1–Q9 binary (yes/no) per the card § Phase 7
@@ -197,15 +235,13 @@ For each sentence in the Phase 6 draft:
 - Route to move per the move-class taxonomy:
   - Q1=no → CUT (unless bones-cuttable license fires)
   - Q5 or Q8 + boundary → CUT-CLAUSE
-  - Q8=yes + ≥2 graph sources → RESHOW (fork loads expanded graph context)
+  - Q8=yes + ≥2 graph sources (or ≥3 under worm-tight) → RESHOW
   - Q8=yes + no sources → CUT-ASININE
   - Q9=yes + clean substitution → REWORD (≤2 per sentence)
   - Q9=yes + 3+ awkward in sentence → escalate to RESHOW (per `reword-density-cap`)
   - PATTERN-ABANDONED bones (from Phase 6) + Q1=no → CUT-BONE
 
-Each fork logs the per-sentence Q-line plus any moves.
-
-Output draft: `polish/<slug>.phase-7.draft.md`.
+Each fork logs the per-sentence Q-line plus any moves. Output draft: `polish/<slug>.phase-7.draft.md`.
 
 ---
 
@@ -238,7 +274,10 @@ If `staff/stitcher/feedback-<slug>.md` was read at Phase 0 with new line-level d
 
 - **Success**: Phase 8 STATS emitted; clean + annotated polish files present; render-log finalized; showrunner memory updated.
 - **Phase 0 abort**: missing inputs (proto-lines, cite-index, profile). Print the missing-input path and exit.
-- **Mid-phase fault**: any per-fork dispatch returns a validation fault (e.g. RESHOW without ≥2 sources, REWORD with invented compound). Phase pauses; fault logged; re-dispatch the offending fork after fix, or escalate to user.
+- **Phase 0 escalation**: `FAULT-PROFILE-PERSONA-MISMATCH-PROJECT` — resolved persona is `neutral` and a project-specific persona exists. Print the mismatch and exit; user must correct profile or pass `--persona neutral` explicitly.
+- **Phase 1 fault**: `FAULT-PHASE-1-CONSOLIDATED` — Phase 1 prose appears in the draft without per-fork log entries. Indicates orchestrator-inline rendering. Re-dispatch as real Agent forks.
+- **Phase 7 fault**: `FAULT-PHASE-7-NO-SWEEP` — render-log reports moves count without per-sentence Q-line entries equal to post-Phase-6 sentence count. Re-dispatch the per-sentence sweep.
+- **Mid-phase fault**: any per-fork dispatch returns a validation fault (e.g. RESHOW without sufficient sources, REWORD with invented compound, bone-faithfulness fence violation at Phase 1). Phase pauses; fault logged; re-dispatch the offending fork after fix, or escalate to user.
 - **Phase 7 RESHOW failure cascade**: if a sentence's RESHOW output fails its own Q-check, fall through to CUT-ASININE. Log both attempts.
 
 ---

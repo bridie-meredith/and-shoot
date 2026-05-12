@@ -196,6 +196,27 @@ The Stitcher does not have a prose voice. The narrator does. The Stitcher's voic
 - **The Stitcher is not the editor.** Pet peeves about hollow prose are addressed at Phase 7 within the question set; NEEDS_EDIT flags and audience flags are downstream. The Stitcher hands a draft to `/and-wrap`'s editor pass; the editor handles audit-and-flag work.
 - **Phase 7 is the only taste pass.** All other phases are mechanical or persona-biased within a fixed rule set. "Reads better" is not a valid reason outside Phase 7's question set.
 
+## Bone-faithfulness fence (Phase 1)
+
+Phase 1 forks render bones through lenses. The fork's output must contain only:
+
+1. **The bone's subject, verb, and object** — preserved with idiom-fit allowed (`bone-object-policy: idiom-fit`) and the voice transform applied (tense, person, contractions, pronoun resolution).
+2. **Cited facet content** — quoted verbatim per the schema's stitch-interface rule (only tense/person shifts permitted).
+3. **Listed connectives** — `and`, `then`, em-dash, colon, semicolon, comma. Nothing else.
+
+The fork must NOT invent:
+
+- **Dialogue content.** Bones `speaks to X` / `answers Y` do not license the fork choosing what they said. Dialogue content lives in the dialogue file, not in the prose. If a bone is bare `speaks to`, the prose is bare `spoke to` (+ pronoun resolution).
+- **Body detail beyond facets.** Bone `lowers the head` does not license `eyes down`. The feel facets carry body detail; absent facet, body detail is fault.
+- **Spatial / direction detail.** Bone `enters the margin` does not license `from the dock side`. Bone `enters the village` does not license `through the yard gate`. The location-state facet carries spatial detail; bone alone is bare.
+- **Route / transit detail.** Bone `exits the X` does not license `back out the way he'd come`. The exit is bare.
+- **Scene prose / atmospheric padding.** Bone `the flies relay X` does not license `— quick, low, threading the stalls`. No invented adjectives, no invented gerunds, no invented appositives.
+- **Cognitive content beyond NI / mem.** The narrator's interior is exactly what NI and mem facets say. Inventing additional Taylor-interior at Phase 1 is fault.
+
+These are blocker-severity faults. A Phase 1 fork that returns invented prose is rejected and re-dispatched with the fence quoted in the prompt. The project-default profile's `project.bone-faithfulness-fence` block enumerates the four invention classes; profile validation faults if any are set true.
+
+The fence operates AT Phase 1 — it is not Phase 7's job to clean up after invention. Phase 7's strict Q1/Q9 will catch some invented prose as REWORD or CUT, but the cost of cleanup is high and feedback-noisy. The cheaper discipline is the Phase 1 refusal.
+
 ## Pet Peeves
 
 **paraphrasing a facet clause** — severity: blocker, with two bounded exceptions. Bones can shift tense and person at Phase 4. Facet clauses can shift tense and person at Phase 4. Neither can have their words substituted or their semantic content rewritten outside the two bounded carve-outs:
@@ -209,7 +230,11 @@ Outside those carve-outs, paraphrase remains blocker. The schema's stitch-interf
 
 **rendering vibes or state** — severity: blocker. Schema-forbidden. The fact that a vibe's token-bundle reads as natural English is a trap.
 
-**adding prose** — severity: blocker. Allowed additions: punctuation, capitalization, the connectives "and" / "then" / em-dash / colon / semicolon. New words inside facet clauses or new sentences not derived from a bone or cited facet are fault.
+**adding prose** — severity: blocker. Allowed additions: punctuation, capitalization, the connectives "and" / "then" / em-dash / colon / semicolon. New words inside facet clauses or new sentences not derived from a bone or cited facet are fault. See § Bone-faithfulness fence for the enumerated invention classes (dialogue content / body detail / spatial detail / route detail / scene prose / cognitive content).
+
+**orchestrator-consolidated Phase 1** — severity: blocker. The orchestrator (the `/and-stitch` command body) MUST NOT render prose itself. Every Phase 1 anchor is a fork (or batched into scene-level forks when per-anchor dispatch is infeasible — but still real Agent calls, not orchestrator inline-generation). The render-log must show one fork-id per rendered prose block. If the render-log shows Phase 1 prose without fork-id entries, the run is FAULT-PHASE-1-CONSOLIDATED and must be re-run. Inline-simulation is the worst failure mode of this pipeline; the per-fork isolation exists exactly to stop the orchestrator from soaking in the full graph and "filling in."
+
+**hand-waved Phase 7** — severity: blocker. Phase 7 logs one Q-line per sentence in the post-Phase-6 draft. A render-log with "0 cuts logged" but no per-sentence Q-evaluation entries is FAULT-PHASE-7-NO-SWEEP. Either dispatch per-sentence forks (or per-paragraph forks that walk sentences serially), or escalate as an explicit waiver with reason. The 0-moves outcome is legitimate only when the per-sentence sweep actually produces 0 moves; absent the sweep entries, the outcome is not earned.
 
 **inter-fork memory** — severity: blocker. A fork that reasons about what an earlier fork "would have wanted" is not a clean fork. Read the input, read the log if needed, decide.
 

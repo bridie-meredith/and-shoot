@@ -29,6 +29,17 @@ scope: episode | scene | project
 applies-to: <episode-slug | scene-label | project-slug>
 persona: <stitcher-persona-slug>            # default: neutral
 
+project:                                    # project-scoped fences (typically authored at the project-default profile only)
+  anti-jargon:                              # invented compounds and jargon-nominalizations the project has accumulated. Phase 1 forks see this list and pre-empt; Phase 7 Q9 references it. Substring match, case-insensitive.
+    - <token>                               # e.g. watch-cost / mother-singing / density-compound / pricing
+  hollow-prose-patterns:                    # surface patterns Q5 cuts on sight under strict mode
+    - <pattern>                             # e.g. "X was the verdict" / "X is what Y does when Z runs out"
+  bone-faithfulness-fence:                  # what Phase 1 forks MUST NOT invent in prose
+    invent-dialogue-content: false          # bone "speaks to X" does not license "asked where" / "told me Y"
+    invent-body-detail: false               # bone "exits the margin" does not license "slid past the gatepost"
+    invent-spatial-detail: false            # bone "enters the village" does not license "through the yard gate"
+    invent-scene-prose: false               # no "quick, low, threading the stalls" beyond bone/facet content
+
 voice:
   tense: past | present                     # default: past
   person: first | third                     # default: first
@@ -271,6 +282,8 @@ Validation faults:
 - `FAULT-PROFILE-UNKNOWN-PATTERN` — `protected-patterns` lists a pattern with no detector.
 - `FAULT-PROFILE-INVALID-PARALLEL` — `parallel: full` with `continuity-context` not `none`.
 - `FAULT-PROFILE-MISSING-PERSONA` — `persona:` set to a slug with no card at `staff/stitcher/personas/<slug>.md`.
+- `FAULT-PROFILE-PERSONA-MISMATCH-PROJECT` — resolved persona is `neutral` AND a project-default profile at `active-project/stitch-profile.md` exists declaring a non-neutral persona, OR a project-scoped persona exists at `active-project/staff/stitcher/personas/`. Pipeline must escalate to user — running with `neutral` against a project that has authored a tuned persona is almost always a misconfiguration. User must either confirm `neutral` explicitly (`--persona neutral`) or correct the profile.
+- `FAULT-PROFILE-MISSING-PROJECT-ANTI-JARGON` — soft. Project-default profile exists but lacks `project.anti-jargon`. Emit warning at Phase 0; do not block. Phase 1 forks will fall back to persona-card tuning notes only.
 
 ---
 
