@@ -113,9 +113,38 @@ Before dispatching Phase 1, emit a one-screen summary to the user:
   asinine patterns: <K patterns loaded>
   bone-fence:       enforced (dialogue=no, body=no, spatial=no, route=no, scene-prose=no, cognitive=no)
   feedback-file:    <present | absent>
+  interval-bridge:  <mode> (length-target=<brief|medium>, voice=<pov-frame|omniscient|author>)
 ```
 
-This summary is the gate. If anything looks wrong (persona is `neutral` when it shouldn't be; anti-jargon list is empty when the project has one; voice config is unexpected), the user catches it here, not at the polish file 1,500 words later.
+This summary is the gate. If anything looks wrong (persona is `neutral` when it shouldn't be; anti-jargon list is empty when the project has one; voice config is unexpected; interval-bridge mode is wrong), the user catches it here, not at the polish file 1,500 words later.
+
+---
+
+## Phase 0.6 — Interval-bridge preamble
+
+Dispatched as a single Agent call (one fork). Produces the brief frame paragraph prepended to the polish.
+
+**Skip if** `interval-bridge.enabled: false` in the resolved profile.
+
+**Mode resolution** (when `mode: auto`):
+- Read `active-project/staff/showrunner/memory.md` for this episode's `prior_episode:` field.
+- `prior_episode: none` (or absent) → mode = `cold-start`.
+- `prior_episode: <slug>` → mode = `prior-episode`. Verify `active-project/polish/<prior-slug>.md` exists; if absent, escalate to user (the bridge needs the prior polish to read from).
+
+**Fork inputs:**
+- Mode (cold-start | prior-episode)
+- `length-target`, `voice`, `set-off` from profile
+- For `cold-start`: the listed `cold-start-sources` resolved to file content (series-plan plot block, protagonist-arc, named world-build cards, this episode's chunk).
+- For `prior-episode`: prior polish's last 1–2 paragraphs (the terminal state on the page), showrunner memory's prior-episode terminal-state notes, this episode's chunk, the interval-delta (computed: time-gap if specified in chunk; locale-shift if first scene of new episode is in a different location than prior episode's last scene).
+- `forbidden-content` list as a fence (the fork's output must not add new plot content, paraphrase cast cards, or reach for author-meta).
+
+**Fork output:**
+- The bridge paragraph (≤length-target words).
+- A faithfulness log: every claim in the bridge mapped to its source.
+
+The bridge is written to `active-project/polish/<slug>.preamble.md` as a standalone artifact, then prepended to `<slug>.md` at Phase 8 (clean) and to `<slug>.annotated.md` with a `<trace scope="preamble">` block (annotated).
+
+**Why this exists:** for the first episode of a series, the reader has no graph context — the bones+facets assume the upstream graph as background, but the polish is supposed to read standalone. For subsequent episodes, the reader has time between sessions and needs a recap. The interval-bridge handles both as the same problem: bridge the implicit/explicit gap between the prior chapter's end and this chapter's start, briefly and compellingly. The pipeline previously omitted this entirely, producing polish files that read as fragments without through-line.
 
 ---
 
@@ -249,9 +278,10 @@ Each fork logs the per-sentence Q-line plus any moves. Output draft: `polish/<sl
 
 Single fork. Walk Phase 7 draft:
 - Assign stable line-IDs (sequential; gaps allowed where Phase 7 cut)
-- Write clean polish: `active-project/polish/<slug>.md` (no line-IDs, no traces)
-- If `output.mode: dual`: write annotated polish: `active-project/polish/<slug>.annotated.md` with `[L<N>]` prefixes and `<trace>...</trace>` blocks per sentence
-- Finalize render-log with STATS section (word count, sentence count, paragraph count, bones rendered/merged/dropped, facets rendered/dropped, reshow count, reword count)
+- Prepend the Phase 0.6 interval-bridge preamble (if enabled): italic-rendered + horizontal rule before the body
+- Write clean polish: `active-project/polish/<slug>.md` (no line-IDs, no traces; preamble + body)
+- If `output.mode: dual`: write annotated polish: `active-project/polish/<slug>.annotated.md` with `[L<N>]` prefixes, `<trace>...</trace>` blocks per sentence, and `<trace scope="preamble">` for the bridge
+- Finalize render-log with STATS section (word count, sentence count, paragraph count, bones rendered/merged/dropped, facets rendered/dropped, reshow count, reword count, preamble-mode + length)
 - Update showrunner memory: `stitched: true`
 
 ---

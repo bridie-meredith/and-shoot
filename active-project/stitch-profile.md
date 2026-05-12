@@ -100,6 +100,30 @@ output:
   mode: dual
   line-ids: stable
   trace-verbosity: change-only
+
+interval-bridge:
+  enabled: true
+  mode: auto                                # cold-start for s01e01; prior-episode for s01e02+
+  voice: pov-frame                          # in narrator's first-person voice as a frame device
+  length-target: brief                      # ≤80 words
+  cold-start-sources:
+    - series-plan.plot.start                # the displacement event itself
+    - series-plan.protagonist_arc           # what Taylor was at the end of the implicit prior chapter (Worm-Khepri)
+    - episode.chunk                         # this episode's opening situation
+    - world-build:taylor-300m-sphere-flea-bottom-scope  # the swarm-came-with-her fact
+    - cond-westerosi-superstition-frame-125ac  # village's "came-back-wrong" register
+  prior-episode-sources:
+    - prior-episode.terminal-state          # from showrunner memory; the last scene of the prior polish
+    - prior-episode.unfinished-business     # carry-forward stakes (e.g. the lord's-man's record entry persists)
+    - episode.chunk
+    - interval-delta                        # time-gap or locale-shift between prior-terminal and this-open
+  set-off:
+    style: italic
+    separator: rule
+  forbidden-content:
+    - plot-content-not-in-graph
+    - character-card-paraphrase
+    - explicit-author-meta
 ---
 
 # and-shoot project-default stitch profile
