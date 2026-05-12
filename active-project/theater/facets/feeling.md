@@ -37,7 +37,7 @@ characterization.
 
 # source: feeling-oc-tanner-elder
 2 @6 oc-tanner-elder: does not lift the gaze from the ledger before he answers | expressed: yes
-3 @131 oc-tanner-elder: squares the paper edge against the desk before he answers | expressed: partial
+3 @131 oc-tanner-elder: takes one breath that does not leave fast before he speaks | expressed: partial
 
 # source: oc-tanner-father
 # source: oc-tanner-father
@@ -55,4 +55,4 @@ characterization.
 
 5 @15 taylor-hebert-flea-bottom: her hand stays steady on the pen through the entry | expressed: no
 6 @53 taylor-hebert-flea-bottom: her weight does not shift toward the elder | expressed: partial
-7 @145 taylor-hebert-flea-bottom: the pen does not lift between the words | expressed: no
+7 @145 taylor-hebert-flea-bottom: her spine holds the same angle through the last entry as through the first word | expressed: no

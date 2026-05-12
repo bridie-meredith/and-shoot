@@ -2,31 +2,31 @@
 
 1 @8 actor:taylor-hebert-flea-bottom.knowledge.first-clerk-record: unknown -> recorded-at-elder
 2 @11 actor:taylor-hebert-flea-bottom.knowledge.first-clerk-record: recorded-at-elder -> file-crossed-fish-gate-beyond-range
-3 @15 actor:taylor-hebert-flea-bottom.log_entries_episode: 0 -> 1
+# 3 deleted — log_entries_episode counter chain removed (cape-fic density-on-flat)
 4 @22 actor:taylor-hebert-flea-bottom.stats.fauna_control_radius_m: 300 -> 400
 5 @22 actor:taylor-hebert-flea-bottom.swarm_network_composition: single-species-local -> multi-species-coordinated-flies-wasps-beetles-spiders
-6 @24 actor:taylor-hebert-flea-bottom.log_entries_episode: 1 -> 2
+# 6 deleted — log_entries_episode counter
 7 @26 actor:taylor-hebert-flea-bottom.physical_condition: intact -> sleep-cycled-night-one
-8 @30 actor:taylor-hebert-flea-bottom.log_entries_episode: 2 -> 3
+# 8 deleted — log_entries_episode counter
 9 @40 actor:taylor-hebert-flea-bottom.knowledge.second-clerk-record: unknown -> recorded-at-apothecary
 10 @42 actor:taylor-hebert-flea-bottom.knowledge.second-clerk-record: recorded-at-apothecary -> entry-sealed-irreversible
-11 @47 actor:taylor-hebert-flea-bottom.log_entries_episode: 3 -> 4
+# 11 deleted — log_entries_episode counter
 12 @67 actor:taylor-hebert-flea-bottom.inventory: [] -> [coin-from-elder]
-13 @70 actor:taylor-hebert-flea-bottom.log_entries_episode: 4 -> 5
-14 @93 actor:taylor-hebert-flea-bottom.log_entries_episode: 5 -> 6
+# 13 deleted — log_entries_episode counter
+# 14 deleted — log_entries_episode counter
 15 @103 actor:taylor-hebert-flea-bottom.knowledge.father-petitioned-elder: unknown -> known-via-elder
-16 @107 actor:taylor-hebert-flea-bottom.log_entries_episode: 6 -> 7
+# 16 deleted — log_entries_episode counter
 17 @114 actor:taylor-hebert-flea-bottom.stats.fauna_control_radius_m: 400 -> 500
-18 @116 actor:taylor-hebert-flea-bottom.log_entries_episode: 7 -> 8
+# 18 deleted — log_entries_episode counter
 19 @118 actor:taylor-hebert-flea-bottom.physical_condition: sleep-cycled-night-one -> sleep-cycled-night-two
-20 @123 actor:taylor-hebert-flea-bottom.log_entries_episode: 8 -> 9
+# 20 deleted — log_entries_episode counter
 21 @125 actor:taylor-hebert-flea-bottom.knowledge.red-keep-beyond-ceiling: unknown -> known-400m-beyond-current-radius
 22 @133 actor:taylor-hebert-flea-bottom.knowledge.messenger-to-elder: unknown -> messenger-observed-at-junction
 23 @142 actor:taylor-hebert-flea-bottom.knowledge.formal-account-sealed: unknown -> sealed-and-handed-to-middleman
-24 @145 actor:taylor-hebert-flea-bottom.log_entries_episode: 9 -> 10
+# 24 deleted — log_entries_episode counter
 25 @155 actor:taylor-hebert-flea-bottom.stats.fauna_control_radius_m: 500 -> 600
-26 @162 actor:taylor-hebert-flea-bottom.knowledge.record-discipline-state: parallel-logs-honest -> close-states-recorded-as-coincidence
-27 @164 actor:taylor-hebert-flea-bottom.log_entries_episode: 10 -> 11
+26 @162 actor:taylor-hebert-flea-bottom.knowledge.record-discipline-state: parallel-logs-honest -> close-states-recorded-without-cause-assigned
+# 27 deleted — log_entries_episode counter
 
 # field-extension: knowledge.first-clerk-record (per-episode awareness field tracking the first Hightower clerk's record event and its disposition; persistent past beat — Taylor carries the knowledge forward)
 # field-extension: knowledge.second-clerk-record (parallel field for second clerk at apothecary)

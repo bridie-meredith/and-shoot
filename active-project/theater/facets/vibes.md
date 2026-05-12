@@ -6,7 +6,7 @@ author: showrunner (R1)
 # E1 — First clerk records, exits Fish Gate with file (@3–@11, tens:3@11)
 # Fan-out: actor:taylor (POV, knowledge) + episode scope
 
-1 @11 actor:taylor-hebert-flea-bottom ++ the-Tya-shaped-debt: [first-external-record-now-beyond-reach, the-file-carries-the-name-out-the-gate, debt-acquiring-administrative-mobility] | licensed-by: state-update:37, proto:11, tens:3
+1 @11 actor:taylor-hebert-flea-bottom ++ the-Tya-shaped-debt: [first-external-record-now-beyond-reach, name-carried-beyond-retrieval-window, debt-acquiring-administrative-mobility] | licensed-by: state-update:37, proto:11, tens:3
 
 2 @15 episode + first-clerk-file-sealed-and-gone: [record-written-and-departed, no-retrieval-window, first-external-claim-on-the-body-now-ambulatory] | licensed-by: state-update:37, state-update:36, proto:11, proto:15, tens:3
 
@@ -23,9 +23,9 @@ author: showrunner (R1)
 
 6 @125 actor:taylor-hebert-flea-bottom + red-keep-as-ceiling-known: [400m-beyond-current-radius, beyond-reach-not-beyond-perception, ceiling-acknowledged-not-dissolved] | licensed-by: state-update:56, proto:125, tens:2
 
-7 @125 season + range-at-season-ceiling: [600m-achieved-red-keep-400m-past-reach, s01-range-arc-complete, the-front-arrived-at-its-structural-wall] | licensed-by: state-update:60, state-update:56, proto:125, proto:162
+7 @125 season + range-at-season-ceiling: [ceiling-named-not-yet-reached, red-keep-400m-past-current-radius, front-met-structural-wall] | licensed-by: state-update:56, proto:125
 
-8 @162 series + apparatus-blindness: [architecture-changed-file-unknown, capability-expanding-legibility-not-matching, she-does-not-know-what-file-she-is-in] | licensed-by: state-update:61, state-update:32, proto:162, world-build:first-misreading-as-event
+8 @162 series + apparatus-blindness: [architecture-changed-file-unknown, capability-expanding-legibility-not-matching, file-status-opaque-to-subject] | licensed-by: state-update:61, state-update:32, proto:162, world-build:first-misreading-as-event
 
 # E3 — Second clerk seals record at apothecary (@39–@42, tens:3@42)
 # Fan-out: actor:taylor (POV, knowledge) + loc:loc-eastern-quarter-apothecary + episode scope
@@ -48,13 +48,13 @@ author: showrunner (R1)
 # E5 — Broken maester sets the pen; formal log entry made (@90, tens:3)
 # Fan-out: actor:oc-broken-maester (documentation-register shift) + actor:taylor (structural pairing) + episode scope
 
-15 @90 actor:oc-broken-maester + formal-log-open: [ambient-noting-crossed-into-record, pen-set-as-the-register-change, citadel-grammar-applied-to-her-insects] | licensed-by: state-update:28, proto:89, proto:90, tens:3
+15 @90 actor:oc-broken-maester + formal-log-open: [ambient-noting-crossed-into-record, pen-set-as-the-register-change, citadel-grammar-applied-to-her-insects] | licensed-by: proto:89, proto:90, tens:3
 
-16 @90 actor:oc-broken-maester ++ insect-as-anomaly-named: [anomaly-elevated-from-observation-to-formal-entry, notation-committed-to-record-not-margins, pen-set-as-the-crossing-point] | licensed-by: state-update:28, proto:89, proto:90, tens:3
+16 @90 actor:oc-broken-maester ++ insect-as-anomaly-named: [anomaly-elevated-from-observation-to-formal-entry, notation-committed-to-record-not-margins, pen-set-as-the-crossing-point] | licensed-by: proto:89, proto:90, tens:3
 
 17 @93 actor:taylor-hebert-flea-bottom ++ passive-sense-texture: [pen-scratch-relayed-before-framed-as-event, stop-of-writing-detected-via-insects-not-inference, ambient-layer-feeding-her-register-of-his-register] | licensed-by: proto:89, proto:90, proto:91, proto:92, proto:93, tens:3
 
-18 @94 episode + two-logs-written-side-by-side: [maester-formal-entry-and-taylor-log-in-mutual-ignorance, two-records-of-the-same-world-in-different-grammars, season-axis-closed-on-parallel-documentation] | licensed-by: state-update:28, state-update:49, proto:90, proto:93, proto:94, tens:3
+18 @94 episode + two-logs-written-side-by-side: [maester-formal-entry-and-taylor-log-in-mutual-ignorance, two-records-of-the-same-world-in-different-grammars, season-axis-closed-on-parallel-documentation] | licensed-by: proto:90, proto:93, proto:94, tens:3
 
 # E6 — Father petitions elder; village-claim formalized through official channel (@96–@101)
 # Fan-out: actor:oc-tanner-father (claim formalized) + actor:oc-tanner-elder (ledger extended) + episode scope
@@ -83,19 +83,19 @@ author: showrunner (R1)
 # E8 — Perimeter walk; Taylor faces Red Keep; wall-facing commitment at season close (@115, @125, @162, tens:3@162)
 # Fan-out: actor:taylor (range + commitment) + loc:loc-flea-bottom-base (site of denouement) + season scope
 
-28 @125 actor:taylor-hebert-flea-bottom ++ range-as-intimacy: [range-as-the-instrument-that-named-its-own-ceiling, proximity-now-includes-the-known-wall-beyond-reach, 600m-map-includes-what-600m-cannot-touch] | licensed-by: state-update:56, state-update:60, proto:125, tens:2
+28 @125 actor:taylor-hebert-flea-bottom ++ range-as-intimacy: [range-as-the-instrument-that-named-its-own-ceiling, proximity-now-includes-the-known-wall-beyond-reach, map-names-what-it-cannot-touch] | licensed-by: state-update:56, proto:125, tens:2
 
 29 @162 actor:taylor-hebert-flea-bottom ++ body-not-mine: [wall-facing-as-the-body-committing-to-the-record-before-the-mind, posture-as-decision-enacted-before-language, the-wall-held-in-the-angle-she-learned-not-chose] | licensed-by: state-update:61, proto:162, tens:3
 
 30 @162 loc:loc-flea-bottom-base + denouement-commitment-registered: [wall-facing-here-is-the-season-close, base-as-the-site-where-record-discipline-shifts, the-wall-of-this-room-as-the-season-axis] | licensed-by: state-update:61, proto:162, tens:3
 
-31 @162 season + season-closed-on-asymmetry: [two-logs-coexist-without-contact, reader-sees-what-taylor-does-not, close-states-recorded-as-coincidence-is-the-season-exit-condition] | licensed-by: state-update:61, state-update:28, proto:162, proto:165, tens:3
+31 @162 season + season-closed-on-asymmetry: [two-logs-coexist-without-contact, reader-sees-what-taylor-does-not, close-states-recorded-without-cause-is-the-season-exit-condition] | licensed-by: state-update:61, proto:162, proto:165, tens:3
 
 # E9 — Record-discipline flip: close-states recorded as coincidence (@162)
 # Fan-out: actor:taylor (clinical-self-erasure deepens; faustian-pressure first entry) + episode scope
 
-32 @162 actor:taylor-hebert-flea-bottom ++ clinical-self-erasure: [record-discipline-flipped-at-the-wall, the-log-now-calls-parallel-truths-coincidence, she-does-not-experience-this-as-a-flip] | licensed-by: state-update:61, proto:162, tens:3
+32 @162 actor:taylor-hebert-flea-bottom ++ clinical-self-erasure: [record-discipline-flipped-at-the-wall, the-log-now-calls-parallel-truths-coincidence, log-instrument-now-shaping-what-counts] | licensed-by: state-update:61, proto:162, tens:3
 
 33 @162 actor:taylor-hebert-flea-bottom + faustian-pressure-first-entry: [first-deliberate-omission-committed-to-record, the-log-instrument-now-actively-shaping-what-counts, calibration-and-research-on-the-same-page] | licensed-by: state-update:61, proto:162, tens:3, world-build:faustian-pressure
 
-34 @165 episode + season-close-record-discipline-shifted: [close-states-logged-as-coincidence-is-the-exit-condition, the-shift-in-the-record-not-announced, the-log-writes-the-last-word-on-its-own-terms] | licensed-by: state-update:61, state-update:62, proto:163, proto:164, proto:165, tens:3
+34 @165 episode + season-close-record-discipline-shifted: [close-states-logged-without-cause-is-the-exit-condition, the-shift-in-the-record-not-announced, the-log-writes-the-last-word-on-its-own-terms] | licensed-by: state-update:61, proto:163, proto:164, proto:165, tens:3

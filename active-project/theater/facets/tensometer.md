@@ -18,7 +18,7 @@ s01e03.md's per-episode body was mechanically split correctly: it already contai
 # 0c @515 removed (proto-line deleted in cycle 2 fixer)
 
 3 @3 1
-4 @4 2
+4 @4 1
 5 @5 1
 6 @6 1
 7 @7 2
@@ -26,7 +26,8 @@ s01e03.md's per-episode body was mechanically split correctly: it already contai
 9 @9 1
 10 @11 3
 # axis: stakes-visibility + reversal-proximity peaks — clerk crosses Fish Gate with the file entry; the recording physically leaves Taylor's observable range; Scene 330-342 rupture resolved
-11 @10 1
+11 @10 2
+# axis: approach-charge — clerk exits the junction bearing the record; the exit IS the pre-commit load for the Fish Gate crossing one beat ahead; bridges the ambient @9 to the rupture @11
 12 @12 1
 13 @13 1
 14 @14 1
@@ -65,7 +66,7 @@ s01e03.md's per-episode body was mechanically split correctly: it already contai
 45 @47 1
 46 @48 1
 47 @50 2
-48 @51 2
+48 @51 1
 49 @52 1
 50 @53 1
 51 @54 2
@@ -102,7 +103,8 @@ s01e03.md's per-episode body was mechanically split correctly: it already contai
 82 @87 1
 83 @88 1
 84 @89 2
-85 @90 3
+85 @90 2
+# axis: approach-charge (reversal-proximity light) — maester pen-set is the scene's dramatic beat as relayed through Taylor's insect network; from Khepri-register POV this is ambient escalation (pen-stop of a figure two removes from direct position), not Taylor's own body-charge or peak stakes-visibility; approach-charge fires because the pen-stop shifts her informational tracking state
 86 @91 2
 87 @92 1
 88 @93 1
@@ -114,7 +116,7 @@ s01e03.md's per-episode body was mechanically split correctly: it already contai
 94 @100 2
 95 @101 2
 96 @102 2
-97 @103 2
+97 @103 1
 98 @104 1
 99 @105 2
 100 @106 1
@@ -170,7 +172,8 @@ s01e03.md's per-episode body was mechanically split correctly: it already contai
 148 @158 1
 149 @159 2
 150 @160 1
-151 @161 1
+151 @161 2
+# axis: approach-charge — threshold crossing (entering loc-flea-bottom-base) IS the pre-commit load for the wall-facing one beat ahead; bridges the denouement walk 1s to the terminal rupture @162; structurally parallel to @10 bridge construction
 152 @162 3
 # axis: reversal-proximity + body-charge — wall-facing IS the decision to record the close-states as coincidence; the season's terminal reader-asymmetry is committed through Taylor's body before the log entries; denouement registration resolved
 153 @163 1
