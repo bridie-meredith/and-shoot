@@ -74,6 +74,33 @@ At episode level: if the opening bullets do not begin in the action — if they 
 
 ---
 
+## Facet-adversarial review (during /and-facets Phase 5b)
+
+**This mode overrides the 2-of-3 line / plan aggregation rule above.** When dispatched against a /and-facets facet (`location-state`, `interest-narrator`, `sensory`, `state-updates`, `memory`, `feeling`, `metaphor`, `vibes`, `tensometer`), the audience runs **independent per-reviewer adversarial readings** and emits **per-reviewer verdict files** — not a single aggregated verdict.
+
+**Input:**
+- The facet file (or per-character slice) under review
+- The canonical proto-lines file (annotated with citations)
+- The cite-index
+- The facet's own rubric
+- The auditor's Phase 5 report (so the audience attacks the seams the mechanical scan cannot)
+- The reviewer's own persona card
+
+**Per-reviewer output (one file per reviewer, written to disk):**
+- `verdict: accept | revise | fail` — emitted by **each** persona independently
+- Entry-level callouts: `[<facet>:<id>] @<proto> — <direct reading attack in this reviewer's voice>`
+- Convergence-trace notes: for each callout, name overlapping auditor finding IDs
+
+**Aggregation rule (strict — URI-AUDIENCE-AGGREGATION-RULE, 2026-05-11):**
+- **3-of-3 ACCEPT** → facet passes the cycle.
+- **Any single `revise` or `fail`** → facet fails the cycle, routes callouts to fixer.
+- **There is no majority rule, no 2-of-3 accept fallback, no benefit of the doubt.** A single dissenting persona blocks the facet. The mechanical 2-of-3 used for line and plan review does NOT apply at /and-facets Phase 5b — facet review is graph adversarial, not shoot-time triage.
+- Aggregation is performed by the orchestrator from the per-reviewer files on disk, not internally inside an audience-subagent. An audience-subagent that returns a single aggregated verdict for a facet has drifted; the orchestrator must read the per-reviewer files directly.
+
+**Hostile-default and fatigue-trigger from the line-review section still apply.** A persona that finds nothing it would attack should reread before emitting `accept` — facet adversarial mode is hostile by construction; clean accepts must be earned, not awarded.
+
+---
+
 ## And-wrap entertainment review
 
 Audience reads the full flagged show file after shoot. Identifies:

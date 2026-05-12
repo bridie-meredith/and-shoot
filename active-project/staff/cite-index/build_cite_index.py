@@ -254,18 +254,93 @@ def body_integrity_check(base_bodies: dict[int, str], inflight_files: list[Path]
 # --- Phase 2: Citation union ----------------------------------------------
 
 
+def _facet_prefix_from_inflight_name(path: Path) -> str | None:
+    """Extract the facet prefix from an _inflight/ proto-lines copy filename.
+
+    Filename shapes:
+      proto-lines-<prefix>.md
+      proto-lines-<prefix>-<character-slug>.md   (sliced facets: feel-<slug>, state-<slug>)
+
+    Returns the canonical facet prefix as used in the bracket-token form
+    `[<prefix>:<id>]` on proto-lines. None if the name does not match.
+    """
+    stem = path.stem  # e.g. "proto-lines-mem" or "proto-lines-feel-taylor-hebert-flea-bottom"
+    if not stem.startswith("proto-lines-"):
+        return None
+    tail = stem[len("proto-lines-"):]
+    # Multi-segment facet prefixes used in citations: loc-state.
+    # Single-segment prefixes per FACET_FILES values.
+    if tail.startswith("loc-state"):
+        return "loc-state"
+    head = tail.split("-", 1)[0]
+    # Slice facet author files write slug-suffixed citations under the base prefix.
+    # feeling -> feel; state-updates env+actor -> state; per FACET_FILES.
+    return head
+
+
 def union_citations(
     base_cites: dict[int, list[tuple[str, int]]],
     inflight_files: list[Path],
 ) -> dict[int, list[tuple[str, int]]]:
-    """Merge citation lists across base + all _inflight copies."""
+    """Merge citation lists across base + all _inflight copies.
+
+    URI-030 fix (2026-05-11): citations are unioned per-(proto-id, facet-prefix)
+    with a deletion cascade — when an _inflight-r2/ copy is present for a facet
+    prefix, IT is the source of truth for that prefix's citations on every
+    proto-line it covers, including the absence of a citation (i.e., a R2-deleted
+    citation token does NOT get re-added from an older _inflight/ copy under
+    union). Other prefixes are unioned across both rings as before.
+
+    Without this rule, a R2 judge that strips `[mem:5]` from its
+    _inflight-r2/proto-lines-mem.md copy after DELETing mem:5 sees the citation
+    re-added by union with _inflight/proto-lines-mem.md (which was authored
+    pre-R2 and still has the bracket token). The R2 delete-cascade is silently
+    reverted in the canonical merge.
+
+    The owning-prefix rule: each inflight copy is responsible for its own
+    facet prefix only. A copy's bracket tokens for OTHER prefixes are
+    ignored — only the original-prefix author for those other prefixes
+    can claim authorship. This preserves the design contract that authors
+    cite their own facet, not others.
+    """
+    # Bucket inflight files by ring (r1 = _inflight, r2 = _inflight-r2) and prefix.
+    r1: dict[str, list[Path]] = defaultdict(list)
+    r2: dict[str, list[Path]] = defaultdict(list)
+    for path in inflight_files:
+        prefix = _facet_prefix_from_inflight_name(path)
+        if prefix is None:
+            continue
+        bucket = r2 if path.parent.name == "_inflight-r2" else r1
+        bucket[prefix].append(path)
+
+    # Establish the authoritative ring per prefix: R2 wins if present.
+    authoritative_by_prefix: dict[str, list[Path]] = {}
+    for prefix, paths in r2.items():
+        authoritative_by_prefix[prefix] = paths
+    for prefix, paths in r1.items():
+        authoritative_by_prefix.setdefault(prefix, paths)
+
+    # base_cites carries upstream `tens:` citations. Seed merged with all of
+    # those EXCEPT for prefixes whose authoritative ring will replace them.
+    authoritative_prefixes = set(authoritative_by_prefix.keys())
     merged: dict[int, set[tuple[str, int]]] = defaultdict(set)
     for pid, cites in base_cites.items():
-        merged[pid].update(cites)
-    for path in inflight_files:
-        _, _, cites, _ = parse_proto_file(path)
-        for pid, toks in cites.items():
-            merged[pid].update(toks)
+        for prefix, eid in cites:
+            if prefix in authoritative_prefixes:
+                continue
+            merged[pid].add((prefix, eid))
+
+    # For each prefix, pull citations only of THAT prefix from its
+    # authoritative copies. Absence of a token in the authoritative copy is
+    # interpreted as a delete (URI-030 fix).
+    for prefix, paths in authoritative_by_prefix.items():
+        for path in paths:
+            _, _, cites, _ = parse_proto_file(path)
+            for pid, toks in cites.items():
+                for tok in toks:
+                    if tok[0] == prefix:
+                        merged[pid].add(tok)
+
     return {pid: sorted(toks) for pid, toks in merged.items()}
 
 

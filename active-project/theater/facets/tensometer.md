@@ -186,10 +186,10 @@ s01e02.md's per-episode body was mechanically split correctly: it already contai
 ## Frequency-band (cycle 3 corrected — F7-bone residual cleanup)
 
 After cycle-3 additions (@519, @520, @521 all rung 3; @526, @527 rung 1 beat-10 placement bones):
-- Total entries: ~168
-- 3s: 7/168 ≈ 4.2% (standard band 5-10% / relaxed band 4.0-10% per-episode) — within relaxed band at 0.2 points above the relaxed per-episode floor
-- 2s: ~24/168 ≈ 14.3% (standard band 20-30% / relaxed band 12-22%) — within relaxed band
-- 1s: ~137/168 ≈ 81.5% (standard band 60-75% / relaxed band 75-85%) — within relaxed band
+- Total entries: 155 (per-episode canonical body; cite-index `### tens (155 entries)` confirms — corrected r4-cycle3 per find-001; prior footer figure ~168 inflated by season-window scope and is retracted)
+- 3s: 7/155 ≈ 4.5% (standard band 5-10% / relaxed band 4.0-10% per-episode) — within relaxed band
+- 2s: ~24/155 ≈ 15.5% (standard band 20-30% / relaxed band 12-22%) — within relaxed band
+- 1s: ~124/155 ≈ 80.0% (standard band 60-75% / relaxed band 75-85%) — within relaxed band
 - Scalar inflation refused (AP4 honored). Scene-level rupture criteria met in all named scenes (A, H, L). Beat-10 bones (@526, @527) rated 1 — procedural placement, no rupture.
 
 ### Frequency-band exemption claim (URI-034, 2026-05-11)

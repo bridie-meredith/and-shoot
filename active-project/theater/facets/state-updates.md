@@ -85,52 +85,51 @@ author: studio (fresh fork)
 # episode: s01e02
 
 7 @5 actor:oc-tanner-father.position: loc-tanner-village -> market-side-junction
-8 @22 actor:oc-tanner-father.stance-on-tya-category: privately-concluded-not-tya -> bodily-committed-withdrawal
-# field-extension: stance-on-tya-category (new field tracking the father's load-bearing conclusion-about-the-girl across the episode; tracked-state aspect, not perception — per card "He is withdrawing from her. The withdrawal is protective.")
-9 @22 actor:oc-tanner-father.proximity-to-taylor: speaking-distance -> stepped-back-mother-foregrounded
+# entry-2 DELETED 2026-05-11 (facets-audience-gate-r2 cycle 3 fixer Op-B): stance-on-tya-category old-state ungrounded — no canonical write-back produces "privately-concluded-not-tya". Margit referral 3 filed for schema-field triage. Gap preserved in slice ID space; downstream renumbering happens at consolidation.
+8 @22 actor:oc-tanner-father.proximity-to-taylor: speaking-distance -> stepped-back-mother-foregrounded
 # field-extension: proximity-to-taylor (posture-as-state: persists across @23-@26 while mother handles the speech, load-bearing for the visit's transactional shape; per rubric §"Posture-as-state requires multi-beat persistence AND load-bearing on the next move")
-10 @27 actor:oc-tanner-father.position: market-side-junction -> loc-tanner-village
-11 @97 actor:oc-tanner-father.position: loc-tanner-village -> market-side-junction
-12 @100 actor:oc-tanner-father.transactional-posture: informal-grief-claim -> formalized-wage-claim
+9 @27 actor:oc-tanner-father.position: market-side-junction -> loc-tanner-village
+10 @97 actor:oc-tanner-father.position: loc-tanner-village -> market-side-junction
+11 @100 actor:oc-tanner-father.transactional-posture: informal-grief-claim -> formalized-wage-claim
 # field-extension: transactional-posture (tracks the family's claim-shape escalation across visits; per episode goal "claim on Taylor escalates from informal grief to formalized customary wage-claim across three visits")
-13 @107 actor:oc-tanner-father.wage-claim-state: claim-extended -> first-payment-accepted
+12 @107 actor:oc-tanner-father.wage-claim-state: claim-extended -> first-payment-accepted
 # field-extension: wage-claim-state (the customary-wage relationship is now active and committed; persists past episode close into s01e03+)
-14 @110 actor:oc-tanner-father.position: market-side-junction -> loc-tanner-village
+13 @110 actor:oc-tanner-father.position: market-side-junction -> loc-tanner-village
 
 # source: oc-tanner-mother
 # source: oc-tanner-mother
 # facet: state-updates
 # episode: s01e02
 
-15 @6 actor:oc-tanner-mother.position: loc-tanner-village -> market-side-junction
-16 @28 actor:oc-tanner-mother.position: market-side-junction -> loc-tanner-village
-17 @98 actor:oc-tanner-mother.position: loc-tanner-village -> market-side-junction
-18 @111 actor:oc-tanner-mother.position: market-side-junction -> loc-tanner-village
-19 @164 actor:oc-tanner-mother.position: loc-tanner-village -> loc-flea-bottom-base
-20 @165 actor:oc-tanner-mother.position: loc-flea-bottom-base -> loc-flea-bottom-base-room
-21 @167 actor:oc-tanner-mother.posture: standing -> seated
-22 @173 actor:oc-tanner-mother.posture: seated -> standing
-23 @173 actor:oc-tanner-mother.vigil-state: kept-for-tya -> extinguished
+14 @6 actor:oc-tanner-mother.position: loc-tanner-village -> market-side-junction
+15 @28 actor:oc-tanner-mother.position: market-side-junction -> loc-tanner-village
+16 @98 actor:oc-tanner-mother.position: loc-tanner-village -> market-side-junction
+17 @111 actor:oc-tanner-mother.position: market-side-junction -> loc-tanner-village
+18 @164 actor:oc-tanner-mother.position: loc-tanner-village -> loc-flea-bottom-base
+19 @165 actor:oc-tanner-mother.position: loc-flea-bottom-base -> loc-flea-bottom-base-room
+20 @167 actor:oc-tanner-mother.posture: standing -> seated
+21 @173 actor:oc-tanner-mother.posture: seated -> standing
+22 @173 actor:oc-tanner-mother.vigil-state: kept-for-tya -> extinguished
 # field-extension: vigil-state (new field for s01e02 vigil-end tracking; tracked grief-axis state, irreversible per card hard-fence "she does not resolve" — the ritual is what ends, not the ambiguity)
-24 @174 actor:oc-tanner-mother.position: loc-flea-bottom-base-room -> loc-flea-bottom-base
+23 @174 actor:oc-tanner-mother.position: loc-flea-bottom-base-room -> loc-flea-bottom-base
 
 # source: taylor-hebert-flea-bottom
 # source: taylor-hebert-flea-bottom
 # facet: state-updates
 # episode: s01e02
 
-25 @3 actor:taylor-hebert-flea-bottom.location: loc-tanner-village -> loc-flea-bottom-junction
-26 @22 actor:taylor-hebert-flea-bottom.knowledge.tanner-claim: informal-grief -> named-trade-stance
+24 @3 actor:taylor-hebert-flea-bottom.location: loc-tanner-village -> loc-flea-bottom-junction
+25 @22 actor:taylor-hebert-flea-bottom.knowledge.tanner-claim: informal-grief -> named-trade-stance
 # field-extension: knowledge.tanner-claim (new field for s01e02 tanner-family-claim escalation tracking) — tracked-state aspect (drives subsequent visits and payment), not perception
-27 @31 actor:taylor-hebert-flea-bottom.research_log_active: false -> true
-28 @41 actor:taylor-hebert-flea-bottom.location: loc-flea-bottom-junction -> loc-flea-bottom-base
-29 @107 actor:taylor-hebert-flea-bottom.knowledge.tanner-wage-claim: implicit -> paid-precedent-set
+26 @31 actor:taylor-hebert-flea-bottom.research_log_active: false -> true
+27 @41 actor:taylor-hebert-flea-bottom.location: loc-flea-bottom-junction -> loc-flea-bottom-base
+28 @107 actor:taylor-hebert-flea-bottom.knowledge.tanner-wage-claim: implicit -> paid-precedent-set
 # field-extension: knowledge.tanner-wage-claim (new field for s01e02 customary-wage-claim formalization) — tracked-state aspect (precedent locks for season arc), not perception
-30 @117 actor:taylor-hebert-flea-bottom.fauna_control_radius_m: 300 -> 400
-31 @125 actor:taylor-hebert-flea-bottom.physical_condition: intact -> migraine-onset
-32 @145 actor:taylor-hebert-flea-bottom.knowledge.broken-maester: ambient-signal -> named-log-entry
+29 @117 actor:taylor-hebert-flea-bottom.fauna_control_radius_m: 300 -> 400
+30 @125 actor:taylor-hebert-flea-bottom.physical_condition: intact -> migraine-onset
+31 @145 actor:taylor-hebert-flea-bottom.knowledge.broken-maester: ambient-signal -> named-log-entry
 # field-extension: knowledge.broken-maester (new field for s01e02 broken-maester transition from passive-sense ambient to actively-logged target) — tracked-state aspect (anchors s02-s03 maester arc), not perception
-33 @151 actor:taylor-hebert-flea-bottom.knowledge.broken-maester-pattern: unrecognized -> pattern-recognized
+32 @151 actor:taylor-hebert-flea-bottom.knowledge.broken-maester-pattern: unrecognized -> pattern-recognized
 # field-extension: knowledge.broken-maester-pattern (rhythm/phrase pattern recognition) — tracked-state aspect (load-bearing for downstream maester-as-target arc)
-34 @171 actor:taylor-hebert-flea-bottom.knowledge.vigil-candle: lit -> extinguished
+33 @171 actor:taylor-hebert-flea-bottom.knowledge.vigil-candle: lit -> extinguished
 # field-extension: knowledge.vigil-candle (new field for s01e02 vigil-candle state — village's grief-symbol status) — tracked-state aspect (the candle's extinction is the episode's terminal beat for the grief-shape change), not perception

@@ -1,4 +1,4 @@
-# proto-lines — s01e02 (R2 in-flight: memory cascade)
+# proto-lines — s01e02
 
 episode: s01e02
 narrator: taylor-hebert-flea-bottom
@@ -35,10 +35,10 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 17 oc-tanner-mother stills
 18 oc-tanner-father lifts the trade goods [narrator:4]
 19 oc-tanner-father speaks to oc-tanner-elder
-20 oc-tanner-elder speaks to oc-tanner-father [feel:1] [mem:13] [narrator:5] [state:1] [vibes:4]
+20 oc-tanner-elder speaks to oc-tanner-father [feel:1] [narrator:5] [state:1] [vibes:4]
 21 oc-tanner-mother faces taylor-hebert-flea-bottom
-22 oc-tanner-father steps back [narrator:6] [state:2] [state:3] [vibes:1] [vibes:2] [vibes:3]
-23 oc-tanner-mother speaks to taylor-hebert-flea-bottom
+22 oc-tanner-father steps back [feel:1] [narrator:6] [state:2] [state:3] [vibes:1] [vibes:2] [vibes:3]
+23 oc-tanner-mother speaks to taylor-hebert-flea-bottom [narrator:33]
 24 taylor-hebert-flea-bottom speaks to oc-tanner-mother
 25 oc-tanner-mother pivots toward the road south [narrator:7]
 26 oc-tanner-father pivots toward the road south
@@ -91,10 +91,10 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 84 the lords-man speaks to the tenant family
 85 the lords-man's man breaks the door latch [narrator:16] [sensory:2] [state:3]
 86 the lords-man's man moves the family possessions
-87 the tenant family exits the two-room dwelling [feel:2] [narrator:17]
+87 the tenant family exits the two-room dwelling [feel:2] [mem:9] [narrator:17]
 88 the neighbor presses the doorway [mem:4] [narrator:18]
 89 the flies relay the lords-man's man [meta:1] [vibes:12] [vibes:13]
-90 the beetles relay the door lintel [mem:9]
+90 the beetles relay the door lintel
 91 the flies relay the wall
 92 the neighbor withdraws
 93 taylor-hebert-flea-bottom opens the log
@@ -115,10 +115,10 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 109 taylor-hebert-flea-bottom faces oc-tanner-father
 110 oc-tanner-father exits the junction [state:8]
 111 oc-tanner-mother exits the junction [state:4]
-113 taylor-hebert-flea-bottom opens the log
+113 taylor-hebert-flea-bottom opens the log [loc-state:13]
 114 taylor-hebert-flea-bottom writes the entry
 115 taylor-hebert-flea-bottom closes the log
-117 the flies spread the autumn-density network [state:6] [vibes:8] [vibes:11]
+117 the flies spread the autumn-density network [narrator:34] [state:6] [vibes:8] [vibes:11]
 118 the wasps spread the dock-side relay
 119 the spiders spread the eastern-quarter relay
 120 taylor-hebert-flea-bottom walks the perimeter
@@ -144,7 +144,7 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 143 the visitor exits the side-alley door
 144 taylor-hebert-flea-bottom opens the log
 145 taylor-hebert-flea-bottom writes the entry [state:8]
-146 taylor-hebert-flea-bottom closes the log
+146 taylor-hebert-flea-bottom closes the log [narrator:35]
 148 the beetles relay the rhythm
 149 the beetles relay the phrase [mem:11] [narrator:27] [state:1]
 150 the beetles relay the rhythm
@@ -162,13 +162,13 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 164 oc-tanner-mother enters loc-flea-bottom-base [loc-state:11] [sensory:4] [state:5]
 165 oc-tanner-mother enters the base room [loc-state:12] [state:6]
 166 oc-tanner-mother faces taylor-hebert-flea-bottom
-167 oc-tanner-mother sits [state:7]
+167 oc-tanner-mother sits [narrator:36] [state:7]
 168 taylor-hebert-flea-bottom faces oc-tanner-mother
 169 oc-tanner-mother speaks to taylor-hebert-flea-bottom [vibes:20]
 170 taylor-hebert-flea-bottom speaks to oc-tanner-mother [feel:4]
 171 oc-tanner-mother speaks to taylor-hebert-flea-bottom [narrator:30] [state:10] [vibes:21]
-172 oc-tanner-mother lowers the gaze
-173 oc-tanner-mother stands [feel:1] [narrator:31] [sensory:5] [state:4] [state:8] [state:9] [vibes:18] [vibes:19] [vibes:22] [vibes:23]
+172 oc-tanner-mother lowers the gaze [narrator:37]
+173 oc-tanner-mother stands [feel:1] [mem:12] [narrator:31] [sensory:5] [state:4] [state:8] [state:9] [vibes:18] [vibes:19] [vibes:22] [vibes:23]
 174 oc-tanner-mother exits the base room [state:10]
 176 taylor-hebert-flea-bottom opens the log
 177 taylor-hebert-flea-bottom writes the entry [narrator:32]

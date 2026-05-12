@@ -1,3 +1,32 @@
+## SESSION-START — 2026-05-11T23:30:00Z — facets-audience-gate-r2-cycle3-deletes
+dispatch: s01e02 Phase 5b cycle 3 — two DELETE-with-cascade operations: Op-A (narrator:32 @177 channel-saturation DELETE) + Op-B (state:8 @22 old-state-ungrounded DELETE + margit referral)
+target: active-project/theater/facets/interest-narrator.md + active-project/theater/facets/state-updates.md + active-project/theater/facets/_inflight-r2/proto-lines-narrator.md + proto-lines-state-oc-tanner-father.md
+audit-report: active-project/staff/auditor/facets-audience-gate-r2.md
+findings-queued: 2 (Op-A, Op-B)
+
+## SESSION-START — 2026-05-11T23:30:00Z — facets-audience-gate-r2-cycle3-deletes
+dispatch: s01e02 Phase 5b cycle 3 — two DELETE-with-cascade operations: Op-A (narrator:32 @177 channel-saturation DELETE) + Op-B (state:8 @22 old-state-ungrounded DELETE + margit referral)
+target: active-project/theater/facets/interest-narrator.md + active-project/theater/facets/state-updates.md + active-project/theater/facets/_inflight-r2/proto-lines-narrator.md + _inflight/proto-lines-state-oc-tanner-father.md (created fresh)
+audit-report: active-project/staff/auditor/facets-audience-gate-r2.md
+findings-queued: 2 (Op-A, Op-B)
+
+## Op-A (narrator:32) — RESOLVED — 2026-05-11T23:45:00Z
+fault: narrator:32 @177 — NI firing alone on procedural log-write beat; no co-cited facets; channel-saturation (apparatus-log-as-instrument without graph backing); dark-fantasy rubric refuse on lonely fire at procedural beat
+scope: line
+change: (1) interest-narrator.md: removed entry line `32 @177 the log entry must hold the change without naming what the change means to her` — gap preserved (entry 31 remains at line above; entry 33 follows); (2) _inflight-r2/proto-lines-narrator.md @177: stripped `[narrator:32]` — line is now bare `177 taylor-hebert-flea-bottom writes the entry`; (3) grep check: no `licensed-by: narrator:32` in any facet file — cite-index confirms narrator:32 had no lic-in entries; cite-index will need tens:154 @177 co=[narrator:32] update at downstream cite-index rebuild (not a licensed-by clause; no fixer action)
+criteria met: yes — entry 32 absent from interest-narrator.md; [narrator:32] absent from @177 in inflight-r2; no licensed-by references found
+
+## Op-B (state:8) — RESOLVED — 2026-05-11T23:50:00Z
+fault: state:8 @22 actor:oc-tanner-father.stance-on-tya-category: privately-concluded-not-tya -> bodily-committed-withdrawal — old-state card-characterization-derived with no canonical memory or s01e01 state anchor; write-back-canonicity rubric fails; dark-fantasy demand
+scope: line
+change: (1) state-updates.md: removed entry line `8 @22 actor:oc-tanner-father.stance-on-tya-category: ...` AND its `# field-extension: stance-on-tya-category ...` comment line; entry 9 @22 proximity-to-taylor remains untouched (independent canonical anchor via posture-as-state rubric); (2) _inflight-r2/proto-lines-state-oc-tanner-father.md — does not exist (state facet not R2-judged); _inflight/proto-lines-state-oc-tanner-father.md — also did not exist; created fresh R1 copy at active-project/theater/facets/_inflight/proto-lines-state-oc-tanner-father.md — verbatim oc-tanner-father slice (entries 7, 9-14) with entry 8 absent and header annotation; note: no [state:8] token was present in proto-lines @22 (the entry was licensed by vibes:1/2/3 co-location at @22, not a direct proto-line citation token); (3) grep check: no `licensed-by: state:8` in any facet file — vibes.md uses `state-update-oc-tanner-father:2` notation not `state:8`; (4) margit referral written to active-project/staff/margit/inbox.md as Referral 3 — tanner-father stance-on-tya-category schema question; two options presented: (a) formal actor-schema stance field with project-activation init-state, (b) keep stance as card-internal behavior off the state-updates ledger
+criteria met: yes — entry 8 and field-extension comment absent from state-updates.md; entry 9 intact; R1 inflight created with entry 8 stripped; no licensed-by:state:8 references found; margit referral written
+
+## SESSION-END — 2026-05-11T23:55:00Z — facets-audience-gate-r2-cycle3-deletes
+findings-applied: 2 (Op-A narrator:32 DELETE cascade; Op-B state:8 DELETE cascade + margit referral)
+findings-skipped: 0
+exit: CLEAN
+
 ## SESSION-START — 2026-05-11T22:00:00Z — facets-audience-gate-r1-cycle2-fix-pass2
 dispatch: s01e02 Phase 5b cycle 2 audience-gate — 5 minimum-change items: tens:70 @83 r=1→2 (both tensometer files), narrator:27 @149 Khepri-threshold label swap, mem:10 @125 DELETE, mem:2 @30 DELETE, state:1 record_anomaly_logged type-mismatch fix
 target: tensometer.md + tensometer-s01e02.md + interest-narrator.md + memory.md + proto-lines/s01e02.md + state-updates-oc-broken-maester.md
