@@ -1,0 +1,251 @@
+---
+description: Stitcher pipeline for one episode. Eight phases — lens-anchored render → redundancy cull → compression → voice transform → local flow → buildup preservation → editorial reflection → finalize. Output - polish/<slug>.md + polish/<slug>.annotated.md + staff/stitcher/render-log-<slug>.md. Usage - /and-stitch [episode-slug] [--profile <path>] [--persona <slug>]
+---
+
+Stitcher pipeline. One episode in, clean polish + annotated traced polish + per-fork render-log out. The Stitcher assembles a final prose draft from the proto-line bones and the facet graph; each phase forks at its natural decision granularity (per-anchor, per-paragraph, per-window, per-sentence, etc.). No inter-fork memory; the render-log is the only cross-phase artifact.
+
+You are the orchestrator. Eight phases run in strict sequence:
+
+```
+proto-lines/<slug>.md + facets/* + _cite-index.md
+        │
+        ▼
+   PHASE 0 — VALIDATE + LOAD
+            Resolve profile (scene override → episode → project → schema default).
+            Resolve persona. Read feedback-<slug>.md if present.
+            Initialize render-log.
+        │
+        ▼
+   PHASE 1 — LENS-ANCHORED RENDER (per-anchor forks)
+            For each anchor: load lenses (tens, NI, mem, sensory, feel);
+            apply lens decider (rules 1–6); render bone through lens hierarchy.
+            Paragraphs serial; anchors within parallel by default.
+        │
+        ▼
+   PHASE 2 — REDUNDANCY CULL (per anchor + echo window)
+            Closing-phrase echo + image-set-overlap detection across co-anchored
+            and window-adjacent facets.
+        │
+        ▼
+   PHASE 3 — COMPRESSION (per merge-candidate run)
+            Same-subject merges; pronoun substitution after first mention;
+            tens=1 zero-cite collapses (respecting protected patterns).
+        │
+        ▼
+   PHASE 4 — VOICE TRANSFORM (per paragraph)
+            Tense + person shifts; POV-pronoun resolution; third-party preserve;
+            bone-object-policy; sensory arrow rendering.
+        │
+        ▼
+   PHASE 5 — LOCAL FLOW (per sliding window)
+            Within-anchor reorder; forward sensory deferral; backward NI promotion;
+            un-merge to rescue swallowed facets. Refuses on temporal-lock / cross-bone / cross-scene.
+        │
+        ▼
+   PHASE 6 — BUILDUP PRESERVATION (per protected pattern)
+            Detect and restore countdowns / three-beat rhythms / threshold sequences.
+            Flag PATTERN-ABANDONED when protective facet was cut at Phase 7
+            (downstream signal back to Phase 7's bones-cuttable license).
+        │
+        ▼
+   PHASE 7 — EDITORIAL REFLECTION (per sentence, the only taste pass)
+            Q1–Q9 binary answers under strict-Q-mode. Routes to CUT / CUT-CLAUSE /
+            CUT-ASININE / CUT-HOLLOW / CUT-BONE / RESHOW / REWORD / SIMPLIFY-PUNCT.
+            Bones cut only under bones-cuttable license (anchor-also-cut).
+            RESHOW requires ≥2 graph sources. REWORD density-capped at 2/sentence.
+        │
+        ▼
+   PHASE 8 — FINALIZE (single)
+            Assign stable line-IDs (gaps allowed).
+            Write polish/<slug>.md (clean) + polish/<slug>.annotated.md (traced).
+            Finalize render-log + STATS.
+```
+
+Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phases fork at larger but still-small decision units. The agent definition and active persona are shared across forks within a phase (system-prompt-stable, user-turn-per-fork pattern); each fork loads minimal additional context for its decision.
+
+## Args
+
+- `$1` — optional. Episode slug (e.g. `s01e01`). If omitted, use `active.episode` from `active-project/staff/showrunner/memory.md`.
+- `--profile <path>` — optional. Override the active profile path. Default: `active-project/theater/stitch-profile.md`.
+- `--persona <slug>` — optional. Override the active persona. Default: read from profile's `persona:` field; fallback `neutral`.
+
+---
+
+## Phase 0 — Validate + Load
+
+1. Resolve episode slug. Verify `active-project/theater/proto-lines/<slug>.md` exists.
+2. Verify `active-project/theater/facets/_cite-index.md` exists. Abort if not — stitcher requires the cite-index from `/and-facets`.
+3. **Profile resolution.** Read in order:
+   - Per-scene profile if any matches the active scene (`stitch-profile-<scene-label>.md`)
+   - Episode default (`active-project/theater/stitch-profile.md`)
+   - Project default (`active-project/stitch-profile.md`) if present
+   - Schema defaults from `schemas/stitch-profile.schema.md`
+   Shallow-merge top-down. Validate per the schema's fault list.
+4. **Persona resolution.** Load `active-project/staff/stitcher/personas/<active>.md` (or library fallback `staff/stitcher/personas/<active>.md`). Default `neutral` if profile carries no `persona:` field. Validate persona's lens-bias and Phase-7-bias tables against the schema.
+5. **POV resolution.** Read `narrator:` from proto-lines header. If profile's `voice.pov` is unset, use the header value. Fault if both are absent.
+6. **Scene boundary detection.** Parse `active-project/theater/facets/interest-narrator.md` for the sparsity-gradient section; extract scene labels and anchor ranges. Paragraph breaks fall on scene boundaries (or on explicit time-skip blanks in proto-lines).
+7. **Feedback intake (if present).** Read `active-project/staff/stitcher/feedback-<slug>.md`:
+   - Line-level directives (CUT/KEEP/MERGE/UNMERGE/LENS/RESHOW-REVERT/REWORD-REVERT) → write to `anchor-overrides:` block in a session-scoped profile copy (do not mutate the canonical profile)
+   - Pattern-level entries (PATTERN blocks) → flag for human review; do not auto-apply unless explicitly PROMOTED
+   - Free-form notes → list in render-log Phase 0 entry for human review
+8. **Initialize render-log.** Create `active-project/staff/stitcher/render-log-<slug>.md` with header (profile path, persona slug, narrator, voice config, phase-7-mode, generated-date).
+
+State machine: showrunner memory `stitched: false` → in-progress → `stitched: true` at Phase 8 completion.
+
+---
+
+## Phase 1 — Lens-anchored render
+
+Per-anchor forks. Walk bones in proto-line order. Group anchors by paragraph (scene boundaries + time-skip blanks). Within each paragraph, fan out anchors in parallel per `phase-1.parallel` setting; default `within-paragraph` parallelizes within paragraphs and serializes across.
+
+Per-fork dispatch (one Agent call per anchor):
+- Shared inputs (cached, loaded once per Phase 1 dispatch): stitcher card, active persona, active profile
+- Per-fork inputs:
+  - The bone at @N (verbatim)
+  - The facets at @N (verbatim — tens, narrator, memory, sensory, feel that fire)
+  - Scene label
+  - Narrator slug (POV)
+  - Previous 1–2 rendered lines in same paragraph (per `phase-1.continuity-context`)
+- Per-fork output:
+  - One or more sentences for @N (multi-line at peaks where multiple facets render)
+  - Render-log entry (fork-id, lens-decider trace, structural-decision)
+
+The fork applies the lens decider (rules 1–6) per `staff/stitcher/card.md § Lens decider`. The persona's lens-bias table overrides rules 1–5 where applicable. Tiebreaker per profile's `phase-1.lens-decider.tiebreaker` (default: neutral-default kinetic order).
+
+Output draft: `active-project/polish/<slug>.phase-1.draft.md`. Log fork entries to render-log under `## Phase 1 — lens-anchored render`.
+
+---
+
+## Phase 2 — Redundancy cull
+
+Per-anchor forks with `phase-2.echo-window` context (default 1 — same-anchor only).
+
+For each anchor with 2+ facets rendered at Phase 1:
+- Apply the configured detector (default `closing-phrase-echo`)
+- When echo fires: drop the facet not in `redundancy.preserve-anchor` (default: preserve narrator)
+- Log `DROP-ECHO` / `DROP-IMAGE-OVERLAP` / `KEEP-OVER-ECHO`
+
+Output draft: `polish/<slug>.phase-2.draft.md`.
+
+---
+
+## Phase 3 — Compression
+
+Per-merge-candidate run. Walk the Phase 2 draft in paragraph order. Identify:
+- Same-subject adjacent bones with continuous action → `MERGE-SAME-SUBJECT`
+- Repeated subjects within paragraph → `SUBSTITUTE-PRONOUN`
+- Runs of tens=1 zero-cite bones outside protected patterns → `COLLAPSE-TENS1-RUN`
+- Exit trios → `MERGE-EXIT-TRIO` (per `compression.exit-trio-merge`)
+- Time-skip-adjacent zero-cite bones → `MERGE-TIMESKIP`
+
+Refuse merges when protected patterns would break (`NO-MERGE` with `pattern-protected` reason). Phase 6 verifies pattern intactness later; the refusal here is the first defense.
+
+Output draft: `polish/<slug>.phase-3.draft.md`.
+
+---
+
+## Phase 4 — Voice transform
+
+Per-paragraph forks. Walk paragraphs. For each paragraph:
+- Apply tense shift per `voice.tense` (default past)
+- Apply person shift per `voice.person` (default first)
+- POV-pronoun resolution per `voice-transform.feeling-clause-pov-resolution` (default auto)
+- Preserve third-party names per `voice-transform.third-party-preserve`
+- Render sensory arrows per `voice-transform.sensory-arrow-rendering` (default prose-template; drop-if-covered for worm-tight)
+- Apply bone-object-policy (default idiom-fit)
+- Apply contractions per `voice.contractions`
+
+Output draft: `polish/<slug>.phase-4.draft.md`. Log each transform as `TENSE-SHIFT` / `PERSON-SHIFT-POV` / `POV-PRONOUN-RESOLVE` / `PRESERVE-THIRD-PARTY` / `SENSORY-PROSE-FIT` / `SENSORY-DROP-COVERED` / `BONE-OBJECT-IDIOM-FIT` / `CONTRACTION`.
+
+---
+
+## Phase 5 — Local flow
+
+Per-sliding-window forks (window size per `local-flow.window-size`, default 3). For each window:
+- Within-anchor cite reorder per `local-flow.within-anchor-order` (default em-dash-fusion for 2-cite anchors)
+- Forward sensory deferral (cumulative deltas only; cap per `sensory-deferral-cap`)
+- Backward NI promotion (no temporal-lock words; cap per `ni-promotion-cap`)
+- Un-merge to rescue swallowed facets per `un-merge-license`
+- Refuse moves that violate cross-bone-temporal / cross-scene / temporal-lock
+
+Log per move: `MIGRATE-SENSORY-FORWARD` / `MIGRATE-NI-BACKWARD` / `WITHIN-ANCHOR-REORDER` / `EM-DASH-FUSE` / `UN-MERGE` / `REFUSE-MIGRATE`.
+
+Output draft: `polish/<slug>.phase-5.draft.md`.
+
+---
+
+## Phase 6 — Buildup preservation
+
+Per-protected-pattern forks. For each pattern listed in `protected-patterns`:
+- Detect occurrences in the current draft
+- Confirm intactness (`PATTERN-OK`) or restore (`RESTORE-PATTERN`)
+- If the protective facet was cut at Phase 2 or by an upstream condition, log `PATTERN-ABANDONED` — Phase 7 will read this and may elect `CUT-BONE` for the bones in the abandoned pattern
+- Flag patterns not in the protected list but detected as structural: `NEW-PATTERN-CANDIDATE` (no action; for human review)
+
+Output draft: `polish/<slug>.phase-6.draft.md`.
+
+---
+
+## Phase 7 — Editorial reflection
+
+Per-sentence forks. The only taste pass.
+
+For each sentence in the Phase 6 draft:
+- Answer Q1–Q9 binary (yes/no) per the card § Phase 7
+- Apply persona's Phase-7 biases (per-question aggressiveness)
+- Under strict `cut-aggressiveness`: borderline = reject
+- Route to move per the move-class taxonomy:
+  - Q1=no → CUT (unless bones-cuttable license fires)
+  - Q5 or Q8 + boundary → CUT-CLAUSE
+  - Q8=yes + ≥2 graph sources → RESHOW (fork loads expanded graph context)
+  - Q8=yes + no sources → CUT-ASININE
+  - Q9=yes + clean substitution → REWORD (≤2 per sentence)
+  - Q9=yes + 3+ awkward in sentence → escalate to RESHOW (per `reword-density-cap`)
+  - PATTERN-ABANDONED bones (from Phase 6) + Q1=no → CUT-BONE
+
+Each fork logs the per-sentence Q-line plus any moves.
+
+Output draft: `polish/<slug>.phase-7.draft.md`.
+
+---
+
+## Phase 8 — Finalize
+
+Single fork. Walk Phase 7 draft:
+- Assign stable line-IDs (sequential; gaps allowed where Phase 7 cut)
+- Write clean polish: `active-project/polish/<slug>.md` (no line-IDs, no traces)
+- If `output.mode: dual`: write annotated polish: `active-project/polish/<slug>.annotated.md` with `[L<N>]` prefixes and `<trace>...</trace>` blocks per sentence
+- Finalize render-log with STATS section (word count, sentence count, paragraph count, bones rendered/merged/dropped, facets rendered/dropped, reshow count, reword count)
+- Update showrunner memory: `stitched: true`
+
+---
+
+## Re-stitch on feedback
+
+If `staff/stitcher/feedback-<slug>.md` was read at Phase 0 with new line-level directives or PROMOTED pattern-level entries, the run proceeds as a re-stitch:
+
+- Per `feedback.re-stitch-scope` (default `fork-plus-downstream`):
+  - **`fork-only`**: only the originating fork for each affected anchor re-runs; downstream phases reuse their prior log entries
+  - **`fork-plus-downstream`**: originating fork + every downstream phase whose log entries reference the affected anchor or line-ID re-runs
+  - **`full`**: re-run the entire chain
+- Unaffected lines: preserved verbatim from the prior polish file
+- Line-IDs: preserved across re-stitches (a cut line's ID stays cut; a kept line's ID stays kept; new lines get fresh IDs)
+- Render-log: appended-to, not rewritten. The new run's entries follow the prior run's; the auditor can read run-by-run history.
+
+---
+
+## Exit conditions
+
+- **Success**: Phase 8 STATS emitted; clean + annotated polish files present; render-log finalized; showrunner memory updated.
+- **Phase 0 abort**: missing inputs (proto-lines, cite-index, profile). Print the missing-input path and exit.
+- **Mid-phase fault**: any per-fork dispatch returns a validation fault (e.g. RESHOW without ≥2 sources, REWORD with invented compound). Phase pauses; fault logged; re-dispatch the offending fork after fix, or escalate to user.
+- **Phase 7 RESHOW failure cascade**: if a sentence's RESHOW output fails its own Q-check, fall through to CUT-ASININE. Log both attempts.
+
+---
+
+## What this command does not do
+
+- Does not modify proto-lines or facets. Source pipeline is upstream (`/and-protolines-v2`, `/and-facets`).
+- Does not address audience flags or NEEDS_EDIT annotations. Those are the editor's job in `/and-wrap`.
+- Does not commit changes to canonical profile or persona. Session-scoped overrides from feedback are applied to a working copy; promotion to canonical files is a separate step (see `staff/stitcher/tuning-guide.md § Promotion`).
+- Does not parallelize across episodes. One episode per dispatch.

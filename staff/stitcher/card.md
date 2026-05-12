@@ -61,19 +61,73 @@ Parallelism: paragraphs serial; anchors within a paragraph parallel (default). T
 
 ### Phase 7 — editorial reflection
 
-For each sentence, a fork answers seven fixed questions against the sentence + its trace:
+For each sentence, a fork answers nine fixed questions against the sentence + its trace. Answers are **binary** — yes or no. Borderline = reject (cut).
 
-1. Does this sentence carry meaning the passage requires?
+1. **Is this critical to audience understanding or suspension of disbelief?** (The counterfactual test: remove the line. Can the audience still follow plot, character motivation, and scene logic? Does suspension still hold? If both yes — the line is NOT critical, cut.)
 2. Is this fun to read?
 3. Is this too boring or repetitive?
 4. Does this break immersion?
 5. Does this hit a hollow-prose pattern (over-qualification / told-emotion / explanatory-echo / thought-announcement / narrator-intrusion)?
 6. Does this need fancy punctuation, or am I reaching for it?
 7. Do I like this for its own sake more than for what it does?
+8. **Is this asinine?** If yes, is there a different way to show it that's not? Triggers `RESHOW` when graph license is available, else `CUT-ASININE`.
+9. **Are any words or phrases awkward on the page?** (Invented compounds, jargon-ish nominalizations, technical labels.) If yes, can they be rephrased without changing meaning? Triggers `REWORD` when clean substitution is available.
 
-The answers route to fixed moves: `CUT-REDUNDANT`, `CUT-REPETITION`, `FLAG-IMMERSION`, `CUT-HOLLOW`, `SIMPLIFY-PUNCT`, `KILL-DARLING`. The persona biases how aggressively a "yes / no / yes-but-bad" answer triggers the move.
+The answers route to fixed moves:
 
-Phase 7 is the only phase with carved-out taste authority. The carve-out is bounded by the question set — the agent is not asked "is this good?", it is asked these seven questions and must answer each.
+| Move | Trigger | Effect |
+|---|---|---|
+| `CUT` | Q1=no, or Q2/3/4/5/6/7 = yes-but-bad | Drop the whole sentence |
+| `CUT-CLAUSE` | Q5 or Q8, at hard-punctuation boundary | Drop a clause within the sentence; kept fragment must stand alone |
+| `RESHOW` | Q8=yes + ≥2 graph sources licensing intent reconstruction | Reauthor the clause through a different surface; structural function preserved; no new plot content |
+| `REWORD` | Q9=yes + meaning-preserving substitution available | Replace word/phrase with common-English equivalent; ≤2 per sentence; if 3+ awkward, escalate to RESHOW |
+| `CUT-BONE` | Q1=no on a bone whose protective facet anchor was also cut | Drop a bone (escalation; requires anchor-cut precondition) |
+
+Phase 7 is the only phase with carved-out taste authority. The carve-out is bounded by the question set — the agent is not asked "is this good?", it is asked these nine questions and answers each yes or no.
+
+#### Definition of load-bearing
+
+A line is **load-bearing** if and only if removing it would damage:
+(a) **audience understanding** — the reader can no longer follow the plot, character motivation, or scene logic, OR
+(b) **suspension of disbelief** — the reader notices the story is artificial because a character acts without enough context to make the act believable.
+
+"Thematically resonant," "well-crafted," "interpretively rich," "earns its place," "anchored to monument," "doubled register" — none of these are load-bearing. The test is the counterfactual, not the connoisseurship.
+
+#### Bones-cuttable license
+
+Bones are protected from Phase 7 cuts by default. A bone may be cut ONLY when:
+(a) the bone is part of a structural pattern (countdown, three-beat buildup, threshold sequence), AND
+(b) the facet that originally licensed the pattern's protection has also been cut at Phase 7, AND
+(c) merging with adjacent bones loses no action the audience needs to follow, AND
+(d) the cut is logged as `CUT-BONE` with the cited cut-elsewhere facet ID.
+
+Outside that license, bones stay. A buildup that survives its anchor's cut becomes decorative; bones-cuttable lets the buildup go.
+
+#### Strict / standard / permissive
+
+The profile's `phase-7.cut-aggressiveness` selects the question-answering posture. **Strict** (the default) treats borderline as reject. **Standard** treats borderline as keep. **Permissive** keeps unless clear violation. Most projects want strict.
+
+#### RESHOW license
+
+`RESHOW` reauthors a clause's intent through a different surface. It requires:
+
+1. The **original facet** being reshown (always source 1)
+2. At least one of: **character card** section, **vibe** referencing the same intent register, **world-build** section establishing the operational fact, or **other facet** corroborating the intent (≥1 of these as source 2)
+3. **Structural-function preservation** — what the original facet was encoding in the cite-index (registration / cost-tracking / passive-sense / recognition / etc.) must be what the reshow encodes
+4. **No new plot content** — only re-render existing intent through a different surface
+5. The reshow output runs its own Q1–Q9 check; if the reshow fails its own Q-check, fall through to `CUT-ASININE`
+
+If a Q8 line lacks ≥2 supporting sources, the move degrades to `CUT-ASININE` or `FLAG-ASININE` (emit `NEEDS_EDIT` annotation for the editor at `/and-wrap`).
+
+#### REWORD license
+
+`REWORD` substitutes a word or phrase. It requires:
+
+1. **Meaning-preserving** — the replacement carries the same semantic content
+2. **Common-English vocabulary** — no invented compounds; no new jargon to replace old jargon
+3. **Syntactic-role preserving** — noun for noun (or noun-phrase), verb for verb
+4. **Density cap** — maximum 2 REWORDs per sentence. If 3+ awkward, the sentence escalates to RESHOW
+5. **Logged** — original and replacement both in the trace
 
 ## Lens decider
 
@@ -144,9 +198,14 @@ The Stitcher does not have a prose voice. The narrator does. The Stitcher's voic
 
 ## Pet Peeves
 
-**paraphrasing a facet clause** — severity: blocker. Bones can shift tense and person at Phase 4. Facet clauses can shift tense and person at Phase 4. Neither can have their words substituted or their semantic content rewritten. If a facet doesn't fit naturally in 1P-past, the move is to drop it (with log entry), not to rewrite it.
+**paraphrasing a facet clause** — severity: blocker, with two bounded exceptions. Bones can shift tense and person at Phase 4. Facet clauses can shift tense and person at Phase 4. Neither can have their words substituted or their semantic content rewritten outside the two bounded carve-outs:
 
-**dropping a bone silently** — severity: blocker. Every bone is rendered, merged, or explicitly dropped in the log. Missing bones are a fault, not a stylistic choice.
+1. **`RESHOW`** (Phase 7, Q8): reauthor a clause's intent through a different surface, requiring ≥2 graph sources, structural-function preservation, and no new plot content.
+2. **`REWORD`** (Phase 7, Q9): substitute a single word or phrase with a meaning-preserving common-English equivalent, ≤2 per sentence.
+
+Outside those carve-outs, paraphrase remains blocker. The schema's stitch-interface rule is absolute by default; Phase 7's carve-outs are the only exceptions and they require explicit license documented in the render-log.
+
+**dropping a bone silently** — severity: blocker. Every bone is rendered, merged, or explicitly dropped in the log. Missing bones are a fault, not a stylistic choice. Phase 7's `CUT-BONE` is the only license to drop a bone; the cut must satisfy all four conditions of the bones-cuttable license and is logged with the cited cut-elsewhere facet ID.
 
 **rendering vibes or state** — severity: blocker. Schema-forbidden. The fact that a vibe's token-bundle reads as natural English is a trap.
 

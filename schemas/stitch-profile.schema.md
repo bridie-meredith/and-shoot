@@ -116,9 +116,16 @@ protected-patterns:
 
 phase-7:
   enabled: true
-  questions: standard                       # standard | strict | permissive
-  cut-aggressiveness: standard              # standard | aggressive | conservative
+  questions: standard                       # standard (Q1-Q9) | strict-only (Q1) | extended (future)
+  cut-aggressiveness: strict                # strict (borderline=reject) | standard | permissive
   persona-overrides: enabled
+  reshow-enabled: true                      # Q8 may trigger RESHOW with ≥2-source license
+  reshow-min-sources: 2                     # minimum graph sources licensing a reshow
+  reword-enabled: true                      # Q9 may trigger REWORD
+  reword-density-cap: 2                     # max REWORDs per sentence; 3+ escalates to RESHOW
+  reword-vocabulary-policy: common-english  # no invented compounds in replacements
+  bones-cuttable: anchor-cut-only           # never | anchor-cut-only | strict-q1 | always
+  borderline-policy: reject                 # reject (strict) | keep (standard) | flag (permissive)
 
 output:
   mode: dual                                # dual | clean-only
@@ -210,9 +217,16 @@ A list of named patterns Phase 6 restores if Phase 3 flattened them. Each patter
 Editorial reflection configuration.
 
 - **`enabled`** — boolean. Disabling skips Phase 7 entirely.
-- **`questions`** — which version of the seven-question set. `standard` is the canonical seven; `strict` adds additional questions; `permissive` drops the more aggressive ones.
-- **`cut-aggressiveness`** — how readily a "yes / no / yes-but-bad" answer triggers a move. `standard` is the default; `aggressive` cuts on borderline; `conservative` keeps unless clear violation.
+- **`questions`** — which question set runs. `standard` is the canonical nine (Q1–Q9, including Q8 RESHOW and Q9 REWORD). `strict-only` runs only Q1 (the load-bearing counterfactual). `extended` is reserved for future projects that add domain-specific questions.
+- **`cut-aggressiveness`** — answer posture. **`strict`** (default) treats borderline as reject; the burden of proof is on keeping. `standard` treats borderline as keep. `permissive` keeps unless clear violation. Most projects want strict.
 - **`persona-overrides`** — whether persona's `## Phase 7 biases` section is consulted.
+- **`reshow-enabled`** — whether Q8 may trigger a `RESHOW` move (clause reauthored through different surface, requiring ≥2 graph sources).
+- **`reshow-min-sources`** — minimum number of citable graph sources required to license a RESHOW. Default 2 (the original facet + 1 corroborating source from character cards / vibes / world-build / other facets).
+- **`reword-enabled`** — whether Q9 may trigger a `REWORD` move (single word/phrase substitution with meaning-preserving common-English equivalent).
+- **`reword-density-cap`** — max REWORDs per sentence. 2 by default. 3+ awkward words escalates the sentence to RESHOW.
+- **`reword-vocabulary-policy`** — `common-english` forbids invented compounds in replacements. The replacement uses natural English; no new jargon to replace old jargon.
+- **`bones-cuttable`** — when Phase 7 may cut a bone. `never` (strictest preservation), `anchor-cut-only` (default — bone may cut only if a protective facet anchor was also cut at Phase 7 and adjacent merge loses no action), `strict-q1` (any bone failing Q1 cuts), `always` (bones treated like any other line).
+- **`borderline-policy`** — `reject` (strict — borderline = cut), `keep` (standard), `flag` (permissive — emit NEEDS_EDIT annotation for the editor).
 
 ### `output:`
 
