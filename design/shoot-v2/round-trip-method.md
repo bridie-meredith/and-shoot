@@ -2,7 +2,7 @@
 
 Living log of changes made to writers and reviewers during the dialogue-corpus round-trip experiment. Goal: distill reusable best-practice patterns for future shoot-v2 tuning.
 
-Status: in-progress (round 3 challenge phase issued; writer defenses pending).
+Status: v1 reference (round 3 challenge phase issued; writer defenses pending). Operational protocol has moved to `dialogue-tuning-v2.md`, which preserves the eight v1 writer patterns + the V2/V3 reviewer stages here and re-fits the pipeline around facets-as-lenses. Read this doc for the *evidence* behind those patterns; read v2 for the *protocol* that's wired into the pipeline.
 
 ---
 
