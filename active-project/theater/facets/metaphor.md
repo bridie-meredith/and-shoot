@@ -1,7 +1,6 @@
 facet: metaphor
-episode: s01e02
-author: editor (R1, refuse-by-default); anchor-rewrite by R2 judge 2026-05-11
+episode: s01e03
+author: editor (R2.4 judge; single fire)
 ---
 
-1 @89 simile: the flies are an ear pressed to a wall | licensed-by: feel:7 +tens:1
-
+1 @145 simile: the entry goes down like a tally — each item clean, the sum not known | licensed-by: feeling:7 + tens:1 + ni:35

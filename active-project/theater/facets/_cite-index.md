@@ -1,381 +1,444 @@
-# Cite-Index — s01e02
-generated: 2026-05-11
-source: active-project/theater/proto-lines/s01e02.md + active-project/theater/facets/
+# Cite-Index — s01e03
+generated: 2026-05-12
+source: active-project/theater/proto-lines/s01e03.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 281 facet entries; 65/155 protolines decorated (41.9%)
+totals: 335 facet entries; 84/155 protolines decorated (54.2%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
-| 0 (bare)   | 90 |
-| 1          | 40 |
-| 2          | 10 |
-| 3          | 7 |
-| 4          | 2 |
-| 5          | 4 |
-| 7          | 1 |
-| 10          | 1 |
+| 0 (bare)   | 71 |
+| 1          | 38 |
+| 2          | 25 |
+| 3          | 10 |
+| 4          | 3 |
+| 5          | 1 |
+| 6          | 3 |
+| 7          | 3 |
+| 9          | 1 |
 
 ## Per-facet entries
 
 ### tens (155 entries)
-  tens:1 @3 r=2 back=N co=[loc-state:1, state:1] lic-in=[meta:1, vibes:12]
-  tens:2 @4 r=2 back=N co=[narrator:1] lic-in=[vibes:6]
-  tens:3 @5 r=1 co=[loc-state:2, state:1] lic-in=[vibes:1, vibes:2, vibes:3, vibes:5, vibes:7, vibes:9, vibes:11, vibes:14, vibes:18, vibes:19, vibes:21, vibes:22, vibes:23]
-  tens:4 @6 r=1 co=[state:1]
-  tens:5 @7 r=1
-  tens:6 @8 r=1
-  tens:7 @9 r=1 co=[narrator:2]
-  tens:8 @10 r=1
-  tens:9 @11 r=1
-  tens:10 @12 r=2 back=N co=[narrator:3]
-  tens:11 @13 r=1 co=[feel:1]
-  tens:12 @14 r=1
-  tens:13 @15 r=1
-  tens:14 @16 r=2 back=N
-  tens:15 @17 r=2 back=N
-  tens:16 @18 r=2 back=N co=[narrator:4]
-  tens:17 @19 r=1
-  tens:18 @20 r=1 co=[feel:1, mem:13, narrator:5, state:1, vibes:4]
-  tens:19 @21 r=1
-  tens:20 @22 r=3 back=N co=[feel:1, narrator:6, state:2, state:3, vibes:1, vibes:2, vibes:3]
-  tens:21 @23 r=1 co=[narrator:33]
-  tens:22 @24 r=1
-  tens:23 @25 r=2 back=N co=[narrator:7]
-  tens:24 @26 r=2 back=N
-  tens:25 @27 r=1 co=[state:4]
-  tens:26 @28 r=1 co=[state:2]
-  tens:27 @30 r=1 co=[narrator:8]
-  tens:28 @31 r=1 co=[state:3]
-  tens:29 @32 r=1
-  tens:30 @34 r=1
-  tens:31 @35 r=1 co=[narrator:9]
-  tens:32 @37 r=1
-  tens:33 @41 r=1 co=[loc-state:3, sensory:1, state:1, state:4]
-  tens:34 @42 r=1
-  tens:35 @55 r=1
-  tens:36 @44 r=1
-  tens:37 @45 r=1
-  tens:38 @46 r=1
-  tens:39 @49 r=1
-  tens:40 @50 r=1 co=[loc-state:4]
-  tens:41 @51 r=2 back=N
-  tens:42 @52 r=1
-  tens:43 @53 r=1 co=[narrator:10]
-  tens:44 @54 r=1 co=[feel:2]
-  tens:45 @56 r=1
-  tens:46 @57 r=1
-  tens:47 @58 r=1
-  tens:48 @60 r=1
-  tens:49 @61 r=1
-  tens:50 @62 r=1
-  tens:51 @63 r=1
-  tens:52 @64 r=1 co=[mem:3, narrator:11]
-  tens:53 @65 r=1
-  tens:54 @66 r=1
-  tens:55 @67 r=1
-  tens:56 @68 r=1
-  tens:57 @69 r=1 co=[narrator:12]
-  tens:58 @70 r=1
-  tens:59 @71 r=1
-  tens:60 @72 r=1
-  tens:61 @73 r=1 co=[state:2]
-  tens:62 @74 r=1
-  tens:63 @75 r=1
-  tens:64 @76 r=1
-  tens:65 @77 r=2 back=N co=[narrator:13]
-  tens:66 @78 r=2 back=N co=[narrator:14]
-  tens:67 @79 r=1
-  tens:68 @80 r=1
-  tens:69 @81 r=1
-  tens:70 @83 r=2 back=N co=[loc-state:5, narrator:15]
-  tens:71 @84 r=1
-  tens:72 @85 r=3 back=N co=[narrator:16, sensory:2, state:3]
-  tens:73 @86 r=2 back=N
-  tens:74 @87 r=3 back=N co=[feel:2, narrator:17]
-  tens:75 @88 r=2 back=N co=[mem:4, narrator:18]
-  tens:76 @89 r=1 co=[meta:1, vibes:12, vibes:13]
-  tens:77 @90 r=1 co=[mem:9]
-  tens:78 @91 r=1
-  tens:79 @92 r=1
-  tens:80 @93 r=1
-  tens:81 @94 r=1
-  tens:82 @95 r=1
-  tens:83 @97 r=1 co=[loc-state:6, state:5]
-  tens:84 @98 r=1 co=[state:3]
-  tens:85 @99 r=1
-  tens:86 @100 r=1 co=[narrator:19, state:6]
-  tens:87 @101 r=1
-  tens:88 @102 r=1
-  tens:89 @103 r=1
-  tens:90 @104 r=2 back=N co=[narrator:20]
-  tens:91 @105 r=2 back=N
-  tens:92 @106 r=3 back=N co=[feel:3, narrator:21, vibes:5]
-  tens:93 @107 r=2 back=N co=[feel:2, state:5, state:7, vibes:6, vibes:7]
-  tens:94 @108 r=1 co=[narrator:22]
-  tens:95 @109 r=1
-  tens:96 @110 r=1 co=[state:8]
-  tens:97 @111 r=1 co=[state:4]
-  tens:98 @113 r=1 co=[loc-state:13]
-  tens:99 @114 r=1
-  tens:100 @115 r=1
-  tens:101 @117 r=1 co=[narrator:34, state:6, vibes:8, vibes:11]
-  tens:102 @118 r=1
-  tens:103 @119 r=1
-  tens:104 @120 r=1
-  tens:105 @121 r=1
-  tens:106 @122 r=1
-  tens:107 @123 r=1
-  tens:108 @124 r=2 back=N
-  tens:109 @126 r=2 back=N
-  tens:110 @127 r=2 back=N co=[narrator:24]
-  tens:111 @125 r=3 back=N co=[narrator:23, sensory:3, state:7, vibes:9, vibes:10]
-  tens:112 @128 r=1
-  tens:113 @129 r=1
-  tens:114 @130 r=1
-  tens:115 @132 r=1 co=[loc-state:7]
-  tens:116 @133 r=1
-  tens:117 @136 r=1 co=[loc-state:8]
-  tens:118 @137 r=1
-  tens:119 @138 r=1
-  tens:120 @139 r=2 back=N co=[narrator:25]
-  tens:121 @140 r=2 back=N co=[narrator:26]
-  tens:122 @141 r=1
-  tens:123 @142 r=1
-  tens:124 @143 r=1
-  tens:125 @144 r=1
-  tens:126 @145 r=1 co=[state:8]
-  tens:127 @146 r=1 co=[narrator:35]
-  tens:128 @148 r=1
-  tens:129 @149 r=2 back=N co=[mem:11, narrator:27, state:1]
-  tens:130 @150 r=2 back=N
-  tens:131 @151 r=3 back=N co=[narrator:28, state:9, vibes:14]
-  tens:132 @152 r=1
-  tens:133 @153 r=1
-  tens:134 @154 r=1
-  tens:135 @156 r=1 co=[loc-state:9]
-  tens:136 @157 r=1
-  tens:137 @158 r=1 co=[loc-state:10]
-  tens:138 @159 r=2 back=N co=[mem:7, narrator:29, vibes:15, vibes:16, vibes:17]
-  tens:139 @160 r=1
-  tens:140 @161 r=1
-  tens:141 @162 r=1
-  tens:142 @164 r=1 co=[loc-state:11, sensory:4, state:5]
-  tens:143 @165 r=1 co=[loc-state:12, state:6]
-  tens:144 @166 r=1
-  tens:145 @167 r=2 back=N co=[narrator:36, state:7]
-  tens:146 @168 r=1
-  tens:147 @169 r=1 co=[vibes:20]
-  tens:148 @170 r=1 co=[feel:4]
-  tens:149 @171 r=1 co=[narrator:30, state:10, vibes:21]
-  tens:150 @172 r=2 back=N co=[narrator:37]
-  tens:151 @173 r=3 back=N co=[feel:1, narrator:31, sensory:5, state:4, state:8, state:9, vibes:18, vibes:19, vibes:22, vibes:23]
-  tens:152 @174 r=1 co=[state:10]
-  tens:153 @176 r=1
-  tens:154 @177 r=1
-  tens:155 @178 r=1
+  tens:1 @1 r=2 back=N co=[loc-state:1, narrator:1] lic-in=[meta:1]
+  tens:2 @2 r=2 back=N lic-in=[vibes:6, vibes:19, vibes:20, vibes:23, vibes:25, vibes:28]
+  tens:3 @3 r=1 co=[loc-state:2, narrator:2] lic-in=[vibes:1, vibes:2, vibes:9, vibes:10, vibes:11, vibes:12, vibes:13, vibes:14, vibes:15, vibes:16, vibes:17, vibes:18, vibes:24, vibes:26, vibes:27, vibes:29, vibes:30, vibes:31, vibes:32, vibes:33, vibes:34]
+  tens:4 @4 r=2 back=N
+  tens:5 @5 r=1
+  tens:6 @6 r=1 co=[feel:1, feel:2]
+  tens:7 @7 r=2 back=N co=[narrator:3, state:1]
+  tens:8 @8 r=2 back=N co=[narrator:4, state:1, state:2]
+  tens:9 @9 r=1 co=[state:3]
+  tens:10 @11 r=3 back=N co=[loc-state:3, mem:10, narrator:5, sensory:1, state:2, state:4, vibes:1]
+  tens:11 @10 r=1
+  tens:12 @12 r=1
+  tens:13 @13 r=1
+  tens:14 @14 r=1 co=[state:5]
+  tens:15 @15 r=1 co=[feel:1, narrator:6, state:3, vibes:2]
+  tens:16 @16 r=1 co=[state:6]
+  tens:17 @18 r=1
+  tens:18 @19 r=1
+  tens:19 @20 r=1
+  tens:20 @21 r=1
+  tens:21 @22 r=1 co=[state:4, state:5, vibes:3]
+  tens:22 @23 r=1 co=[loc-state:4]
+  tens:23 @24 r=1 co=[state:6]
+  tens:24 @25 r=1
+  tens:25 @26 r=2 back=N co=[loc-state:5, state:7]
+  tens:26 @27 r=2 back=N
+  tens:27 @28 r=1
+  tens:28 @29 r=1 co=[state:7]
+  tens:29 @30 r=1 co=[state:8]
+  tens:30 @31 r=1 co=[state:8]
+  tens:31 @33 r=1
+  tens:32 @34 r=1 co=[loc-state:6, narrator:8, sensory:2]
+  tens:33 @35 r=1
+  tens:34 @36 r=1
+  tens:35 @37 r=1
+  tens:36 @38 r=1
+  tens:37 @39 r=2 back=N co=[state:9]
+  tens:38 @40 r=2 back=N co=[narrator:9, state:9, state:10]
+  tens:39 @42 r=3 back=N co=[narrator:10, state:10, state:12, vibes:9, vibes:10]
+  tens:40 @41 r=1 co=[state:11]
+  tens:41 @43 r=1 co=[sensory:3]
+  tens:42 @44 r=1
+  tens:43 @45 r=1
+  tens:44 @46 r=1
+  tens:45 @47 r=1 co=[narrator:11, state:11]
+  tens:46 @48 r=1 co=[vibes:11]
+  tens:47 @50 r=2 back=N co=[loc-state:7, narrator:12]
+  tens:48 @51 r=2 back=N
+  tens:49 @52 r=1
+  tens:50 @53 r=1 co=[feel:2]
+  tens:51 @54 r=2 back=N co=[mem:4, narrator:13]
+  tens:52 @56 r=1 co=[loc-state:8]
+  tens:53 @57 r=1
+  tens:54 @58 r=1
+  tens:55 @59 r=2 back=N co=[narrator:14]
+  tens:56 @60 r=1
+  tens:57 @61 r=1
+  tens:58 @62 r=2 back=N co=[narrator:15]
+  tens:59 @63 r=1
+  tens:60 @64 r=1 co=[loc-state:9]
+  tens:61 @65 r=1
+  tens:62 @66 r=2 back=N
+  tens:63 @67 r=3 back=N co=[narrator:16, sensory:4, state:1, state:12, state:13, vibes:12]
+  tens:64 @68 r=3 back=N co=[narrator:17, state:14, vibes:13]
+  tens:65 @69 r=1 co=[state:15]
+  tens:66 @70 r=1 co=[narrator:18, state:13]
+  tens:67 @71 r=1 co=[state:16, vibes:14]
+  tens:68 @73 r=1
+  tens:69 @74 r=1
+  tens:70 @75 r=1 co=[loc-state:10]
+  tens:71 @76 r=1
+  tens:72 @77 r=1 co=[loc-state:11]
+  tens:73 @78 r=1
+  tens:74 @79 r=1
+  tens:75 @80 r=1
+  tens:76 @81 r=1
+  tens:77 @82 r=1
+  tens:78 @83 r=2 back=N co=[narrator:19]
+  tens:79 @84 r=2 back=N
+  tens:80 @85 r=1
+  tens:81 @86 r=1 co=[loc-state:12]
+  tens:82 @87 r=1
+  tens:83 @88 r=1
+  tens:84 @89 r=2 back=N co=[narrator:20]
+  tens:85 @90 r=3 back=N co=[feel:1, mem:11, narrator:21, sensory:5, state:19, vibes:15, vibes:16]
+  tens:86 @91 r=2 back=N co=[narrator:22]
+  tens:87 @92 r=1 co=[state:17]
+  tens:88 @93 r=1 co=[narrator:23, state:14, vibes:17]
+  tens:89 @94 r=1 co=[state:18, vibes:18]
+  tens:90 @96 r=1 co=[loc-state:13, narrator:24, state:1]
+  tens:91 @97 r=2 back=N
+  tens:92 @98 r=2 back=N co=[feel:1, feel:4, narrator:39, state:2, vibes:19, vibes:20]
+  tens:93 @99 r=1
+  tens:94 @100 r=2 back=N co=[vibes:21]
+  tens:95 @101 r=2 back=N co=[state:3]
+  tens:96 @102 r=2 back=N co=[loc-state:14]
+  tens:97 @103 r=2 back=N co=[narrator:25, state:15]
+  tens:98 @104 r=1
+  tens:99 @105 r=2 back=N co=[mem:7, narrator:26]
+  tens:100 @106 r=1
+  tens:101 @107 r=1 co=[state:16]
+  tens:102 @108 r=1 co=[vibes:22]
+  tens:103 @110 r=1
+  tens:104 @111 r=1
+  tens:105 @112 r=1
+  tens:106 @113 r=1
+  tens:107 @114 r=1 co=[state:17, vibes:4]
+  tens:108 @115 r=1 co=[loc-state:15]
+  tens:109 @116 r=1 co=[state:18]
+  tens:110 @117 r=1
+  tens:111 @118 r=2 back=N co=[loc-state:16, state:19]
+  tens:112 @119 r=2 back=N
+  tens:113 @120 r=1 co=[narrator:28]
+  tens:114 @121 r=2 back=N
+  tens:115 @122 r=1
+  tens:116 @123 r=1 co=[narrator:29, state:20]
+  tens:117 @124 r=1
+  tens:118 @125 r=2 back=N co=[mem:8, narrator:30, state:20, state:21, vibes:6, vibes:7, vibes:28]
+  tens:119 @127 r=1 co=[loc-state:17, narrator:31]
+  tens:120 @128 r=2 back=N
+  tens:121 @129 r=2 back=N co=[state:2, vibes:23]
+  tens:122 @130 r=1
+  tens:123 @131 r=2 back=N co=[feel:2, feel:3]
+  tens:124 @132 r=1
+  tens:125 @133 r=2 back=N co=[narrator:40, state:22, vibes:25]
+  tens:126 @134 r=2 back=N
+  tens:127 @136 r=1
+  tens:128 @137 r=1 co=[loc-state:18, narrator:32, sensory:6, state:3]
+  tens:129 @138 r=2 back=N co=[state:21]
+  tens:130 @139 r=3 back=N co=[narrator:33, sensory:7, state:4, state:22, vibes:24, vibes:27]
+  tens:131 @140 r=2 back=N co=[narrator:34, state:23]
+  tens:132 @141 r=1
+  tens:133 @142 r=1 co=[state:23]
+  tens:134 @143 r=2 back=N co=[narrator:41, vibes:26]
+  tens:135 @144 r=1
+  tens:136 @145 r=1 co=[feel:3, meta:1, narrator:35, state:24]
+  tens:137 @146 r=1
+  tens:138 @148 r=1 co=[loc-state:19, sensory:8, state:24]
+  tens:139 @149 r=1
+  tens:140 @150 r=1
+  tens:141 @151 r=1
+  tens:142 @152 r=1
+  tens:143 @153 r=2 back=N co=[loc-state:20, narrator:36]
+  tens:144 @154 r=1
+  tens:145 @155 r=1 co=[state:25, vibes:5]
+  tens:146 @156 r=1
+  tens:147 @157 r=1 co=[loc-state:21]
+  tens:148 @158 r=1 co=[loc-state:22]
+  tens:149 @159 r=2 back=N
+  tens:150 @160 r=1
+  tens:151 @161 r=1 co=[loc-state:23, state:25]
+  tens:152 @162 r=3 back=N co=[mem:12, narrator:37, state:26, vibes:8, vibes:29, vibes:30, vibes:31, vibes:32, vibes:33]
+  tens:153 @163 r=1 co=[state:26]
+  tens:154 @164 r=1 co=[narrator:38, state:1, state:27]
+  tens:155 @165 r=1 co=[state:27, vibes:34]
 
-### loc-state (13 entries)
-  loc-state:1 @3 back=Y co=[state:1]
-  loc-state:2 @5 back=Y co=[state:1]
-  loc-state:3 @41 back=Y co=[sensory:1, state:1, state:4]
-  loc-state:4 @50 back=Y
-  loc-state:5 @83 back=Y co=[narrator:15]
-  loc-state:6 @97 back=Y co=[state:5]
-  loc-state:7 @132 back=Y
-  loc-state:8 @136 back=Y
-  loc-state:9 @156 back=Y
-  loc-state:10 @158 back=Y
-  loc-state:11 @164 back=Y co=[sensory:4, state:5]
-  loc-state:12 @165 back=Y co=[state:6]
-  loc-state:13 @113 back=Y
+### loc-state (23 entries)
+  loc-state:1 @1 back=Y co=[narrator:1]
+  loc-state:2 @3 back=Y co=[narrator:2]
+  loc-state:3 @11 back=Y co=[mem:10, narrator:5, sensory:1, state:2, state:4, vibes:1]
+  loc-state:4 @23 back=Y
+  loc-state:5 @26 back=Y co=[state:7]
+  loc-state:6 @34 back=Y co=[narrator:8, sensory:2]
+  loc-state:7 @50 back=Y co=[narrator:12]
+  loc-state:8 @56 back=Y
+  loc-state:9 @64 back=Y
+  loc-state:10 @75 back=Y
+  loc-state:11 @77 back=Y
+  loc-state:12 @86 back=Y
+  loc-state:13 @96 back=Y co=[narrator:24, state:1]
+  loc-state:14 @102 back=Y
+  loc-state:15 @115 back=Y
+  loc-state:16 @118 back=Y co=[state:19]
+  loc-state:17 @127 back=Y co=[narrator:31]
+  loc-state:18 @137 back=Y co=[narrator:32, sensory:6, state:3]
+  loc-state:19 @148 back=Y co=[sensory:8, state:24]
+  loc-state:20 @153 back=Y co=[narrator:36]
+  loc-state:21 @157 back=Y
+  loc-state:22 @158 back=Y
+  loc-state:23 @161 back=Y co=[state:25]
 
-### narrator (36 entries)
-  narrator:1 @4 back=Y
-  narrator:2 @9 back=Y
-  narrator:3 @12 back=Y
-  narrator:4 @18 back=Y
-  narrator:5 @20 back=Y co=[feel:1, mem:13, state:1, vibes:4]
-  narrator:6 @22 back=Y co=[feel:1, state:2, state:3, vibes:1, vibes:2, vibes:3]
-  narrator:7 @25 back=Y
-  narrator:8 @30 back=Y
-  narrator:9 @35 back=Y
-  narrator:10 @53 back=Y
-  narrator:11 @64 back=Y co=[mem:3]
-  narrator:12 @69 back=Y
-  narrator:13 @77 back=Y
-  narrator:14 @78 back=Y
-  narrator:15 @83 back=Y co=[loc-state:5]
-  narrator:16 @85 back=Y co=[sensory:2, state:3]
-  narrator:17 @87 back=Y co=[feel:2]
-  narrator:18 @88 back=Y co=[mem:4]
-  narrator:19 @100 back=Y co=[state:6]
-  narrator:20 @104 back=Y
-  narrator:21 @106 back=Y co=[feel:3, vibes:5]
-  narrator:22 @108 back=Y
-  narrator:23 @125 back=Y co=[sensory:3, state:7, vibes:9, vibes:10]
-  narrator:24 @127 back=Y
-  narrator:25 @139 back=Y
-  narrator:26 @140 back=Y
-  narrator:27 @149 back=Y co=[mem:11, state:1]
-  narrator:28 @151 back=Y co=[state:9, vibes:14]
-  narrator:29 @159 back=Y co=[mem:7, vibes:15, vibes:16, vibes:17]
-  narrator:30 @171 back=Y co=[state:10, vibes:21]
-  narrator:31 @173 back=Y co=[feel:1, sensory:5, state:4, state:8, state:9, vibes:18, vibes:19, vibes:22, vibes:23]
-  narrator:33 @23 back=Y
-  narrator:34 @117 back=Y co=[state:6, vibes:8, vibes:11]
-  narrator:35 @146 back=Y
-  narrator:36 @167 back=Y co=[state:7]
-  narrator:37 @172 back=Y
+### narrator (39 entries)
+  narrator:1 @1 back=Y co=[loc-state:1]
+  narrator:2 @3 back=Y co=[loc-state:2]
+  narrator:3 @7 back=Y co=[state:1]
+  narrator:4 @8 back=Y co=[state:1, state:2]
+  narrator:5 @11 back=Y co=[loc-state:3, mem:10, sensory:1, state:2, state:4, vibes:1]
+  narrator:6 @15 back=Y co=[feel:1, state:3, vibes:2]
+  narrator:8 @34 back=Y co=[loc-state:6, sensory:2]
+  narrator:9 @40 back=Y co=[state:9, state:10]
+  narrator:10 @42 back=Y co=[state:10, state:12, vibes:9, vibes:10]
+  narrator:11 @47 back=Y co=[state:11]
+  narrator:12 @50 back=Y co=[loc-state:7]
+  narrator:13 @54 back=Y co=[mem:4]
+  narrator:14 @59 back=Y
+  narrator:15 @62 back=Y
+  narrator:16 @67 back=Y co=[sensory:4, state:1, state:12, state:13, vibes:12]
+  narrator:17 @68 back=Y co=[state:14, vibes:13]
+  narrator:18 @70 back=Y co=[state:13]
+  narrator:19 @83 back=Y
+  narrator:20 @89 back=Y
+  narrator:21 @90 back=Y co=[feel:1, mem:11, sensory:5, state:19, vibes:15, vibes:16]
+  narrator:22 @91 back=Y
+  narrator:23 @93 back=Y co=[state:14, vibes:17]
+  narrator:24 @96 back=Y co=[loc-state:13, state:1]
+  narrator:25 @103 back=Y co=[state:15]
+  narrator:26 @105 back=Y co=[mem:7]
+  narrator:28 @120 back=Y
+  narrator:29 @123 back=Y co=[state:20]
+  narrator:30 @125 back=Y co=[mem:8, state:20, state:21, vibes:6, vibes:7, vibes:28]
+  narrator:31 @127 back=Y co=[loc-state:17]
+  narrator:32 @137 back=Y co=[loc-state:18, sensory:6, state:3]
+  narrator:33 @139 back=Y co=[sensory:7, state:4, state:22, vibes:24, vibes:27]
+  narrator:34 @140 back=Y co=[state:23]
+  narrator:35 @145 back=Y co=[feel:3, meta:1, state:24]
+  narrator:36 @153 back=Y co=[loc-state:20]
+  narrator:37 @162 back=Y co=[mem:12, state:26, vibes:8, vibes:29, vibes:30, vibes:31, vibes:32, vibes:33]
+  narrator:38 @164 back=Y co=[state:1, state:27]
+  narrator:39 @98 back=Y co=[feel:1, feel:4, state:2, vibes:19, vibes:20]
+  narrator:40 @133 back=Y co=[state:22, vibes:25]
+  narrator:41 @143 back=Y co=[vibes:26]
 
-### sensory (5 entries)
-  sensory:1 @41 back=Y co=[loc-state:3, state:1, state:4]
-  sensory:2 @85 back=Y co=[narrator:16, state:3]
-  sensory:3 @125 back=Y co=[narrator:23, state:7, vibes:9, vibes:10]
-  sensory:4 @164 back=Y co=[loc-state:11, state:5]
-  sensory:5 @173 back=Y co=[feel:1, narrator:31, state:4, state:8, state:9, vibes:18, vibes:19, vibes:22, vibes:23]
+### sensory (8 entries)
+  sensory:1 @11 back=Y co=[loc-state:3, mem:10, narrator:5, state:2, state:4, vibes:1]
+  sensory:2 @34 back=Y co=[loc-state:6, narrator:8]
+  sensory:3 @43 back=Y
+  sensory:4 @67 back=Y co=[narrator:16, state:1, state:12, state:13, vibes:12]
+  sensory:5 @90 back=Y co=[feel:1, mem:11, narrator:21, state:19, vibes:15, vibes:16]
+  sensory:6 @137 back=Y co=[loc-state:18, narrator:32, state:3]
+  sensory:7 @139 back=Y co=[narrator:33, state:4, state:22, vibes:24, vibes:27]
+  sensory:8 @148 back=Y co=[loc-state:19, state:24]
 
-### state (33 entries)
-  state:1 @41 back=Y co=[loc-state:3, sensory:1, state:4]
-  state:2 @73 back=Y
-  state:3 @85 back=Y co=[narrator:16, sensory:2]
-  state:4 @173 back=Y co=[feel:1, narrator:31, sensory:5, state:8, state:9, vibes:18, vibes:19, vibes:22, vibes:23]
-  state:5 @149 back=N co=[mem:11, narrator:27, state:1]
-  state:6 @20 back=N co=[feel:1, mem:13, narrator:5, state:1, vibes:4]
-  state:7 @5 back=N co=[loc-state:2, state:1]
-  state:8 @22 back=N co=[feel:1, narrator:6, state:2, state:3, vibes:1, vibes:2, vibes:3]
-  state:9 @27 back=N co=[state:4]
-  state:10 @97 back=N co=[loc-state:6, state:5]
-  state:11 @100 back=N co=[narrator:19, state:6]
-  state:12 @107 back=N co=[feel:2, state:5, state:7, vibes:6, vibes:7]
-  state:13 @110 back=N co=[state:8]
-  state:14 @6 back=N co=[state:1]
-  state:15 @28 back=N co=[state:2]
-  state:16 @98 back=N co=[state:3]
-  state:17 @111 back=N co=[state:4]
-  state:18 @164 back=N co=[loc-state:11, sensory:4, state:5]
-  state:19 @165 back=N co=[loc-state:12, state:6]
-  state:20 @167 back=N co=[narrator:36, state:7]
-  state:21 @173 back=N co=[feel:1, narrator:31, sensory:5, state:4, state:8, state:9, vibes:18, vibes:19, vibes:22, vibes:23]
-  state:22 @173 back=N co=[feel:1, narrator:31, sensory:5, state:4, state:8, state:9, vibes:18, vibes:19, vibes:22, vibes:23]
-  state:23 @174 back=N co=[state:10]
-  state:24 @3 back=N co=[loc-state:1, state:1]
-  state:25 @22 back=N co=[feel:1, narrator:6, state:2, state:3, vibes:1, vibes:2, vibes:3]
-  state:26 @31 back=N co=[state:3]
-  state:27 @41 back=N co=[loc-state:3, sensory:1, state:1, state:4]
-  state:28 @107 back=N co=[feel:2, state:5, state:7, vibes:6, vibes:7]
-  state:29 @117 back=N co=[narrator:34, state:6, vibes:8, vibes:11]
-  state:30 @125 back=N co=[narrator:23, sensory:3, state:7, vibes:9, vibes:10]
-  state:31 @145 back=N co=[state:8]
-  state:32 @151 back=N co=[narrator:28, state:9, vibes:14]
-  state:33 @171 back=N co=[narrator:30, state:10, vibes:21]
+### state (62 entries)
+  state:1 @7 back=Y co=[narrator:3]
+  state:2 @8 back=Y co=[narrator:4, state:1]
+  state:3 @9 back=Y
+  state:4 @11 back=Y co=[loc-state:3, mem:10, narrator:5, sensory:1, state:2, vibes:1]
+  state:5 @14 back=Y
+  state:6 @16 back=Y
+  state:7 @29 back=Y
+  state:8 @31 back=Y
+  state:9 @39 back=Y
+  state:10 @40 back=Y co=[narrator:9, state:9]
+  state:11 @41 back=Y
+  state:12 @42 back=Y co=[narrator:10, state:10, vibes:9, vibes:10]
+  state:13 @67 back=Y co=[narrator:16, sensory:4, state:1, state:12, vibes:12]
+  state:14 @68 back=Y co=[narrator:17, vibes:13]
+  state:15 @69 back=Y
+  state:16 @71 back=Y co=[vibes:14]
+  state:17 @92 back=Y
+  state:18 @94 back=Y co=[vibes:18]
+  state:19 @90 back=Y co=[feel:1, mem:11, narrator:21, sensory:5, vibes:15, vibes:16]
+  state:20 @125 back=Y co=[mem:8, narrator:30, state:21, vibes:6, vibes:7, vibes:28]
+  state:21 @138 back=Y
+  state:22 @139 back=Y co=[narrator:33, sensory:7, state:4, vibes:24, vibes:27]
+  state:23 @140 back=Y co=[narrator:34]
+  state:24 @148 back=Y co=[loc-state:19, sensory:8]
+  state:25 @161 back=Y co=[loc-state:23]
+  state:26 @163 back=Y
+  state:27 @165 back=Y co=[vibes:34]
+  state:28 @164 back=N co=[narrator:38, state:1, state:27]
+  state:29 @67 back=N co=[narrator:16, sensory:4, state:1, state:12, state:13, vibes:12]
+  state:30 @129 back=N co=[state:2, vibes:23]
+  state:31 @137 back=N co=[loc-state:18, narrator:32, sensory:6, state:3]
+  state:32 @139 back=N co=[narrator:33, sensory:7, state:4, state:22, vibes:24, vibes:27]
+  state:33 @96 back=N co=[loc-state:13, narrator:24, state:1]
+  state:34 @98 back=N co=[feel:1, feel:4, narrator:39, state:2, vibes:19, vibes:20]
+  state:35 @101 back=N co=[state:3]
+  state:36 @8 back=N co=[narrator:4, state:1, state:2]
+  state:37 @11 back=N co=[loc-state:3, mem:10, narrator:5, sensory:1, state:2, state:4, vibes:1]
+  state:38 @15 back=N co=[feel:1, narrator:6, state:3, vibes:2]
+  state:39 @22 back=N co=[state:4, state:5, vibes:3]
+  state:40 @22 back=N co=[state:4, state:5, vibes:3]
+  state:41 @24 back=N co=[state:6]
+  state:42 @26 back=N co=[loc-state:5, state:7]
+  state:43 @30 back=N co=[state:8]
+  state:44 @40 back=N co=[narrator:9, state:9, state:10]
+  state:45 @42 back=N co=[narrator:10, state:10, state:12, vibes:9, vibes:10]
+  state:46 @47 back=N co=[narrator:11, state:11]
+  state:47 @67 back=N co=[narrator:16, sensory:4, state:1, state:12, state:13, vibes:12]
+  state:48 @70 back=N co=[narrator:18, state:13]
+  state:49 @93 back=N co=[narrator:23, state:14, vibes:17]
+  state:50 @103 back=N co=[narrator:25, state:15]
+  state:51 @107 back=N co=[state:16]
+  state:52 @114 back=N co=[state:17, vibes:4]
+  state:53 @116 back=N co=[state:18]
+  state:54 @118 back=N co=[loc-state:16, state:19]
+  state:55 @123 back=N co=[narrator:29, state:20]
+  state:56 @125 back=N co=[mem:8, narrator:30, state:20, state:21, vibes:6, vibes:7, vibes:28]
+  state:57 @133 back=N co=[narrator:40, state:22, vibes:25]
+  state:58 @142 back=N co=[state:23]
+  state:59 @145 back=N co=[feel:3, meta:1, narrator:35, state:24]
+  state:60 @155 back=N co=[state:25, vibes:5]
+  state:61 @162 back=N co=[mem:12, narrator:37, state:26, vibes:8, vibes:29, vibes:30, vibes:31, vibes:32, vibes:33]
+  state:62 @164 back=N co=[narrator:38, state:1, state:27]
 
 ### mem (6 entries)
-  mem:3 @64 back=Y co=[narrator:11]
-  mem:4 @88 back=Y co=[narrator:18]
-  mem:7 @159 back=Y co=[narrator:29, vibes:15, vibes:16, vibes:17]
-  mem:9 @90 back=Y
-  mem:11 @149 back=Y co=[narrator:27, state:1]
-  mem:13 @20 back=Y co=[feel:1, narrator:5, state:1, vibes:4]
+  mem:4 @54 back=Y co=[narrator:13]
+  mem:7 @105 back=Y co=[narrator:26]
+  mem:8 @125 back=Y co=[narrator:30, state:20, state:21, vibes:6, vibes:7, vibes:28]
+  mem:10 @11 back=Y co=[loc-state:3, narrator:5, sensory:1, state:2, state:4, vibes:1]
+  mem:11 @90 back=Y co=[feel:1, narrator:21, sensory:5, state:19, vibes:15, vibes:16]
+  mem:12 @162 back=Y co=[narrator:37, state:26, vibes:8, vibes:29, vibes:30, vibes:31, vibes:32, vibes:33]
 
-### feel (9 entries)
-  feel:1 @20 back=Y co=[mem:13, narrator:5, state:1, vibes:4]
-  feel:2 @54 back=Y
-  feel:3 @22 back=N co=[feel:1, narrator:6, state:2, state:3, vibes:1, vibes:2, vibes:3]
-  feel:4 @107 back=N co=[feel:2, state:5, state:7, vibes:6, vibes:7]
-  feel:5 @173 back=N co=[feel:1, narrator:31, sensory:5, state:4, state:8, state:9, vibes:18, vibes:19, vibes:22, vibes:23]
-  feel:6 @13 back=N co=[feel:1]
-  feel:7 @87 back=N co=[feel:2, narrator:17] lic-in=[meta:1]
-  feel:8 @106 back=N co=[feel:3, narrator:21, vibes:5]
-  feel:9 @170 back=N co=[feel:4]
+### feel (7 entries)
+  feel:1 @90 back=Y co=[mem:11, narrator:21, sensory:5, state:19, vibes:15, vibes:16]
+  feel:2 @6 back=Y co=[feel:1]
+  feel:3 @131 back=Y co=[feel:2]
+  feel:4 @98 back=Y co=[feel:1, narrator:39, state:2, vibes:19, vibes:20]
+  feel:5 @15 back=N co=[feel:1, narrator:6, state:3, vibes:2]
+  feel:6 @53 back=N co=[feel:2]
+  feel:7 @145 back=N co=[feel:3, meta:1, narrator:35, state:24]
 
 ### meta (1 entries)
-  meta:1 @89 back=Y co=[vibes:12, vibes:13] lic-out=[feel:7, tens:1]
+  meta:1 @145 back=Y co=[feel:3, narrator:35, state:24] lic-out=[feeling:7, tens:1, ni:35]
 
-### vibes (23 entries)
-  vibes:1 @22 back=Y co=[feel:1, narrator:6, state:2, state:3, vibes:2, vibes:3] lic-out=[state-update-oc-tanner-father:2, state-update-oc-tanner-father:3, feeling-oc-tanner-father:1, tens:3]
-  vibes:2 @22 back=Y co=[feel:1, narrator:6, state:2, state:3, vibes:1, vibes:3] lic-out=[state-update-oc-tanner-father:2, proto:22, tens:3]
-  vibes:3 @22 back=Y co=[feel:1, narrator:6, state:2, state:3, vibes:1, vibes:2] lic-out=[state-update-oc-tanner-father:2, proto:22, tens:3]
-  vibes:4 @20 back=Y co=[feel:1, mem:13, narrator:5, state:1] lic-out=[state-update-oc-tanner-elder:1, feeling-oc-tanner-elder:1, proto:20, proto:19]
-  vibes:5 @106 back=Y co=[feel:3, narrator:21] lic-out=[state-update-taylor:5, feeling-taylor-hebert-flea-bottom:3, tens:3]
-  vibes:6 @107 back=Y co=[feel:2, state:5, state:7, vibes:7] lic-out=[state-update-oc-tanner-father:7, feeling-oc-tanner-father:2, proto:107, tens:2]
-  vibes:7 @107 back=Y co=[feel:2, state:5, state:7, vibes:6] lic-out=[state-update-taylor:5, state-update-oc-tanner-father:7, proto:107, tens:3]
-  vibes:8 @117 back=Y co=[narrator:34, state:6, vibes:11] lic-out=[state-update-taylor:6, proto:117, proto:118, proto:119]
-  vibes:9 @125 back=Y co=[narrator:23, sensory:3, state:7, vibes:10] lic-out=[state-update-taylor:7, proto:125, proto:123, tens:3]
-  vibes:10 @125 back=Y co=[narrator:23, sensory:3, state:7, vibes:9] lic-out=[state-update-taylor:7, proto:125, proto:124]
-  vibes:11 @117 back=Y co=[narrator:34, state:6, vibes:8] lic-out=[state-update-taylor:6, state-update-taylor:7, proto:117, proto:125, tens:3]
-  vibes:12 @89 back=Y co=[meta:1, vibes:13] lic-out=[proto:89, proto:93, proto:94, proto:95, tens:1]
-  vibes:13 @89 back=Y co=[meta:1, vibes:12] lic-out=[proto:89, proto:94, proto:95]
-  vibes:14 @151 back=Y co=[narrator:28, state:9] lic-out=[state-update-taylor:9, proto:149, proto:151, tens:3]
-  vibes:15 @159 back=Y co=[mem:7, narrator:29, vibes:16, vibes:17] lic-out=[state-update-taylor:8, proto:159, proto:160, proto:161]
-  vibes:16 @159 back=Y co=[mem:7, narrator:29, vibes:15, vibes:17] lic-out=[state-update-oc-broken-maester:1, proto:159, proto:139, proto:140]
-  vibes:17 @159 back=Y co=[mem:7, narrator:29, vibes:15, vibes:16] lic-out=[state-update-taylor:8, proto:159, proto:162]
-  vibes:18 @173 back=Y co=[feel:1, narrator:31, sensory:5, state:4, state:8, state:9, vibes:19, vibes:22, vibes:23] lic-out=[state-update-oc-tanner-mother:9, state-update-oc-tanner-mother:8, feeling-oc-tanner-mother:1, tens:3]
-  vibes:19 @173 back=Y co=[feel:1, narrator:31, sensory:5, state:4, state:8, state:9, vibes:18, vibes:22, vibes:23] lic-out=[state-update-oc-tanner-mother:9, proto:173, feeling-oc-tanner-mother:1, tens:3]
-  vibes:20 @169 back=Y lic-out=[state-update-oc-tanner-mother:5, state-update-oc-tanner-mother:6, proto:169, proto:170, proto:171]
-  vibes:21 @171 back=Y co=[narrator:30, state:10] lic-out=[state-update-taylor:10, state-update-oc-tanner-mother:9, proto:171, tens:3]
-  vibes:22 @173 back=Y co=[feel:1, narrator:31, sensory:5, state:4, state:8, state:9, vibes:18, vibes:19, vibes:23] lic-out=[state-update-oc-tanner-mother:5, state-update-oc-tanner-mother:9, proto:173, tens:3]
-  vibes:23 @173 back=Y co=[feel:1, narrator:31, sensory:5, state:4, state:8, state:9, vibes:18, vibes:19, vibes:22] lic-out=[state-update-oc-tanner-mother:9, state-update-taylor:10, proto:173, tens:3]
+### vibes (34 entries)
+  vibes:1 @11 back=Y co=[loc-state:3, mem:10, narrator:5, sensory:1, state:2, state:4] lic-out=[state-update-taylor-hebert-flea-bottom:2, proto:11, tens:3]
+  vibes:2 @15 back=Y co=[feel:1, narrator:6, state:3] lic-out=[state-update-taylor-hebert-flea-bottom:2, state-update-taylor-hebert-flea-bottom:1, proto:11, proto:15, tens:3]
+  vibes:3 @22 back=Y co=[state:4, state:5] lic-out=[state-update-taylor-hebert-flea-bottom:4, state-update-taylor-hebert-flea-bottom:5, proto:18, proto:19, proto:20, proto:21]
+  vibes:4 @114 back=Y co=[state:17] lic-out=[state-update-taylor-hebert-flea-bottom:17, proto:114, proto:115]
+  vibes:5 @155 back=Y co=[state:25] lic-out=[state-update-taylor-hebert-flea-bottom:25, proto:155, proto:156]
+  vibes:6 @125 back=Y co=[mem:8, narrator:30, state:20, state:21, vibes:7, vibes:28] lic-out=[state-update-taylor-hebert-flea-bottom:21, proto:125, tens:2]
+  vibes:7 @125 back=Y co=[mem:8, narrator:30, state:20, state:21, vibes:6, vibes:28] lic-out=[state-update-taylor-hebert-flea-bottom:25, state-update-taylor-hebert-flea-bottom:21, proto:125, proto:162]
+  vibes:8 @162 back=Y co=[mem:12, narrator:37, state:26, vibes:29, vibes:30, vibes:31, vibes:32, vibes:33] lic-out=[state-update-taylor-hebert-flea-bottom:26, state-update-oc-tanner-elder:4, proto:162]
+  vibes:9 @42 back=Y co=[narrator:10, state:10, state:12, vibes:10] lic-out=[state-update-taylor-hebert-flea-bottom:10, state-update-taylor-hebert-flea-bottom:9, proto:42, tens:3]
+  vibes:10 @42 back=Y co=[narrator:10, state:10, state:12, vibes:9] lic-out=[state-update-taylor-hebert-flea-bottom:10, proto:39, proto:40, proto:41, proto:42, tens:3]
+  vibes:11 @48 back=Y lic-out=[state-update-taylor-hebert-flea-bottom:10, proto:42, proto:48, tens:3]
+  vibes:12 @67 back=Y co=[narrator:16, sensory:4, state:1, state:12, state:13] lic-out=[state-update-oc-tanner-elder:1, proto:67, feeling-oc-tanner-elder:1, tens:3]
+  vibes:13 @68 back=Y co=[narrator:17, state:14] lic-out=[state-update-oc-tanner-elder:1, state-update-taylor-hebert-flea-bottom:12, proto:68, tens:3]
+  vibes:14 @71 back=Y co=[state:16] lic-out=[state-update-oc-tanner-elder:1, state-update-taylor-hebert-flea-bottom:12, proto:67, proto:68, tens:3]
+  vibes:15 @90 back=Y co=[feel:1, mem:11, narrator:21, sensory:5, state:19, vibes:16] lic-out=[state-update-oc-broken-maester:3, proto:89, proto:90, tens:3]
+  vibes:16 @90 back=Y co=[feel:1, mem:11, narrator:21, sensory:5, state:19, vibes:15] lic-out=[state-update-oc-broken-maester:3, proto:89, proto:90, tens:3]
+  vibes:17 @93 back=Y co=[narrator:23, state:14] lic-out=[proto:89, proto:90, proto:91, proto:92, proto:93, tens:3]
+  vibes:18 @94 back=Y co=[state:18] lic-out=[state-update-oc-broken-maester:3, state-update-taylor-hebert-flea-bottom:14, proto:90, proto:93, proto:94, tens:3]
+  vibes:19 @98 back=Y co=[feel:1, feel:4, narrator:39, state:2, vibes:20] lic-out=[state-update-oc-tanner-father:2, proto:97, proto:98, tens:2]
+  vibes:20 @98 back=Y co=[feel:1, feel:4, narrator:39, state:2, vibes:19] lic-out=[state-update-oc-tanner-father:2, proto:98, tens:2]
+  vibes:21 @100 back=Y lic-out=[state-update-oc-tanner-father:2, proto:98, proto:99, proto:100, feeling-oc-tanner-elder:1]
+  vibes:22 @108 back=Y lic-out=[state-update-oc-tanner-father:2, state-update-oc-tanner-elder:1, proto:98, proto:103]
+  vibes:23 @129 back=Y co=[state:2] lic-out=[state-update-oc-tanner-elder:2, proto:129, proto:128, tens:2]
+  vibes:24 @139 back=Y co=[narrator:33, sensory:7, state:4, state:22, vibes:27] lic-out=[state-update-oc-tanner-elder:4, proto:138, proto:139, proto:140, tens:3]
+  vibes:25 @133 back=Y co=[narrator:40, state:22] lic-out=[state-update-taylor-hebert-flea-bottom:22, proto:133, proto:134, tens:2]
+  vibes:26 @143 back=Y co=[narrator:41] lic-out=[state-update-taylor-hebert-flea-bottom:23, proto:143, proto:144, proto:145, tens:3]
+  vibes:27 @139 back=Y co=[narrator:33, sensory:7, state:4, state:22, vibes:24] lic-out=[state-update-oc-tanner-elder:2, state-update-oc-tanner-elder:4, proto:139, tens:3]
+  vibes:28 @125 back=Y co=[mem:8, narrator:30, state:20, state:21, vibes:6, vibes:7] lic-out=[state-update-taylor-hebert-flea-bottom:21, state-update-taylor-hebert-flea-bottom:25, proto:125, tens:2]
+  vibes:29 @162 back=Y co=[mem:12, narrator:37, state:26, vibes:8, vibes:30, vibes:31, vibes:32, vibes:33] lic-out=[state-update-taylor-hebert-flea-bottom:26, proto:162, tens:3]
+  vibes:30 @162 back=Y co=[mem:12, narrator:37, state:26, vibes:8, vibes:29, vibes:31, vibes:32, vibes:33] lic-out=[state-update-taylor-hebert-flea-bottom:26, proto:162, tens:3]
+  vibes:31 @162 back=Y co=[mem:12, narrator:37, state:26, vibes:8, vibes:29, vibes:30, vibes:32, vibes:33] lic-out=[state-update-taylor-hebert-flea-bottom:26, state-update-oc-broken-maester:3, proto:162, proto:165, tens:3]
+  vibes:32 @162 back=Y co=[mem:12, narrator:37, state:26, vibes:8, vibes:29, vibes:30, vibes:31, vibes:33] lic-out=[state-update-taylor-hebert-flea-bottom:26, proto:162, tens:3]
+  vibes:33 @162 back=Y co=[mem:12, narrator:37, state:26, vibes:8, vibes:29, vibes:30, vibes:31, vibes:32] lic-out=[state-update-taylor-hebert-flea-bottom:26, proto:162, tens:3]
+  vibes:34 @165 back=Y co=[state:27] lic-out=[state-update-taylor-hebert-flea-bottom:26, state-update-taylor-hebert-flea-bottom:27, proto:163, proto:164, proto:165, tens:3]
 
 ## Pile-ups (>4 facets co-located on one protoline)
 
-- **@173** (10): feel:1, narrator:31, sensory:5, state:4, state:8, state:9, vibes:18, vibes:19, vibes:22, vibes:23
-    `oc-tanner-mother stands`
-- **@22** (7): feel:1, narrator:6, state:2, state:3, vibes:1, vibes:2, vibes:3
-    `oc-tanner-father steps back`
-- **@20** (5): feel:1, mem:13, narrator:5, state:1, vibes:4
-    `oc-tanner-elder speaks to oc-tanner-father`
-- **@107** (5): feel:2, state:5, state:7, vibes:6, vibes:7
-    `oc-tanner-father takes the coins`
-- **@125** (5): narrator:23, sensory:3, state:7, vibes:9, vibes:10
-    `taylor-hebert-flea-bottom drops the stylus`
-- **@159** (5): mem:7, narrator:29, vibes:15, vibes:16, vibes:17
-    `the beetles relay oc-broken-maester`
+- **@162** (9): mem:12, narrator:37, state:26, vibes:8, vibes:29, vibes:30, vibes:31, vibes:32, vibes:33
+    `taylor-hebert-flea-bottom faces the wall`
+- **@11** (7): loc-state:3, mem:10, narrator:5, sensory:1, state:2, state:4, vibes:1
+    `the clerk crosses the Fish Gate`
+- **@90** (7): feel:1, mem:11, narrator:21, sensory:5, state:19, vibes:15, vibes:16
+    `oc-broken-maester sets the pen`
+- **@125** (7): mem:8, narrator:30, state:20, state:21, vibes:6, vibes:7, vibes:28
+    `taylor-hebert-flea-bottom faces the Red Keep`
+- **@67** (6): narrator:16, sensory:4, state:1, state:12, state:13, vibes:12
+    `oc-tanner-elder places the coin`
+- **@98** (6): feel:1, feel:4, narrator:39, state:2, vibes:19, vibes:20
+    `oc-tanner-father speaks to oc-tanner-elder`
+- **@139** (6): narrator:33, sensory:7, state:4, state:22, vibes:24, vibes:27
+    `oc-tanner-elder seals the account`
+- **@42** (5): narrator:10, state:10, state:12, vibes:9, vibes:10
+    `the second clerk releases the record book`
 
 ## Lonely entries (no co-location, no inbound license)
 _Round-2 deletion candidates — but check the rubric before cutting._
 
-- tens:14 @16  `oc-tanner-father stills`
-- tens:15 @17  `oc-tanner-mother stills`
-- tens:24 @26  `oc-tanner-father pivots toward the road south`
-- tens:41 @51  `oc-tanner-elder pauses`
-- tens:73 @86  `the lords-man's man moves the family possessions`
-- tens:91 @105  `taylor-hebert-flea-bottom opens the purse`
-- tens:108 @124  `taylor-hebert-flea-bottom wakes`
-- tens:109 @126  `taylor-hebert-flea-bottom holds the eyes`
-- tens:130 @150  `the beetles relay the rhythm`
-- loc-state:4 @50  `taylor-hebert-flea-bottom enters the market-side junction`
-- loc-state:7 @132  `the visitor enters the side alley`
-- loc-state:8 @136  `the visitor enters the upper room`
-- loc-state:9 @156  `oc-broken-maester exits the apothecary`
-- loc-state:10 @158  `oc-broken-maester enters the upper room`
-- loc-state:13 @113  `taylor-hebert-flea-bottom opens the log`
-- narrator:1 @4  `oc-tanner-elder faces the road`
-- narrator:2 @9  `taylor-hebert-flea-bottom approaches the junction`
-- narrator:3 @12  `oc-tanner-father stills`
-- narrator:4 @18  `oc-tanner-father lifts the trade goods`
-- narrator:7 @25  `oc-tanner-mother pivots toward the road south`
-- narrator:8 @30  `taylor-hebert-flea-bottom opens the log`
-- narrator:9 @35  `the wasps relay the Watch patrol`
-- narrator:10 @53  `the wasps relay the pass`
-- narrator:12 @69  `taylor-hebert-flea-bottom exhales`
-- narrator:13 @77  `taylor-hebert-flea-bottom wakes`
-- narrator:14 @78  `taylor-hebert-flea-bottom holds the eyes`
-- narrator:20 @104  `taylor-hebert-flea-bottom exhales`
-- narrator:22 @108  `oc-tanner-father speaks to taylor-hebert-flea-bottom`
-- narrator:24 @127  `taylor-hebert-flea-bottom lowers the chin`
-- narrator:25 @139  `the beetles relay the register`
-- narrator:26 @140  `taylor-hebert-flea-bottom holds the feet`
-- narrator:33 @23  `oc-tanner-mother speaks to taylor-hebert-flea-bottom`
-- narrator:35 @146  `taylor-hebert-flea-bottom closes the log`
-- narrator:37 @172  `oc-tanner-mother lowers the gaze`
-- state:2 @73  `taylor-hebert-flea-bottom walks the perimeter`
-- mem:9 @90  `the beetles relay the door lintel`
-- feel:2 @54  `oc-tanner-elder faces taylor-hebert-flea-bottom`
-- vibes:20 @169  `oc-tanner-mother speaks to taylor-hebert-flea-bottom`
+- tens:4 @4  `the clerk faces oc-tanner-elder`
+- tens:26 @27  `taylor-hebert-flea-bottom holds the eyes`
+- tens:48 @51  `oc-tanner-elder speaks to taylor-hebert-flea-bottom`
+- tens:62 @66  `taylor-hebert-flea-bottom extends the palm`
+- tens:79 @84  `oc-broken-maester exits the dried-goods stall`
+- tens:91 @97  `oc-tanner-father approaches oc-tanner-elder`
+- tens:112 @119  `taylor-hebert-flea-bottom holds the eyes`
+- tens:114 @121  `taylor-hebert-flea-bottom straightens the spine`
+- tens:120 @128  `the messenger faces oc-tanner-elder`
+- tens:126 @134  `taylor-hebert-flea-bottom holds the feet`
+- tens:149 @159  `the spiders relay the window`
+- loc-state:4 @23  `taylor-hebert-flea-bottom walks the perimeter`
+- loc-state:8 @56  `taylor-hebert-flea-bottom enters the dock-side alley`
+- loc-state:9 @64  `taylor-hebert-flea-bottom exits the dock-side alley`
+- loc-state:10 @75  `oc-broken-maester enters the eastern-quarter alley`
+- loc-state:11 @77  `oc-broken-maester enters the eastern-quarter market`
+- loc-state:12 @86  `oc-broken-maester enters the apothecary`
+- loc-state:14 @102  `oc-tanner-elder approaches taylor-hebert-flea-bottom`
+- loc-state:15 @115  `taylor-hebert-flea-bottom walks the perimeter`
+- loc-state:21 @157  `taylor-hebert-flea-bottom crosses the market-side junction`
+- loc-state:22 @158  `taylor-hebert-flea-bottom enters the eastern-quarter approach`
+- narrator:14 @59  `taylor-hebert-flea-bottom speaks to the dock-side cluster`
+- narrator:15 @62  `the dock-side cluster thins`
+- narrator:19 @83  `oc-broken-maester faces the jars`
+- narrator:20 @89  `the beetles relay the pen-scratch`
+- narrator:22 @91  `taylor-hebert-flea-bottom holds the feet`
+- narrator:28 @120  `taylor-hebert-flea-bottom faces the wall`
+- sensory:3 @43  `the second clerk exits the apothecary`
+- state:3 @9  `the clerk closes the record book`
+- state:5 @14  `taylor-hebert-flea-bottom opens the log`
+- state:6 @16  `taylor-hebert-flea-bottom closes the log`
+- state:7 @29  `taylor-hebert-flea-bottom opens the log`
+- state:8 @31  `taylor-hebert-flea-bottom closes the log`
+- state:9 @39  `the second clerk opens the record book`
+- state:11 @41  `the second clerk closes the record book`
+- state:15 @69  `taylor-hebert-flea-bottom opens the log`
+- state:17 @92  `taylor-hebert-flea-bottom opens the log`
+- state:21 @138  `oc-tanner-elder writes the account`
+- state:26 @163  `taylor-hebert-flea-bottom opens the log`
+- vibes:11 @48  `taylor-hebert-flea-bottom closes the log`
+- vibes:21 @100  `oc-tanner-elder speaks to oc-tanner-father`
+- vibes:22 @108  `taylor-hebert-flea-bottom closes the log`
 
 ## Bare protolines (no citations accrued)
 _Round-2 add candidates if the rubric licenses a fire here._
 
-@7, @8, @10, @11, @14, @15, @16, @17, @19, @21, @24, @26, @32, @34, @37, @42, @44, @45, @46, @49, @51, @52, @55, @56, @57, @58, @60, @61, @62, @63, @65, @66, @67, @68, @70, @71, @72, @74, @75, @76, @79, @80, @81, @84, @86, @91, @92, @93, @94, @95, @99, @101, @102, @103, @105, @109, @114, @115, @118, @119, @120, @121, @122, @123, @124, @126, @128, @129, @130, @133, @137, @138, @141, @142, @143, @144, @148, @150, @152, @153, @154, @157, @160, @161, @162, @166, @168, @176, @177, @178
+@2, @4, @5, @10, @12, @13, @18, @19, @20, @21, @25, @27, @28, @33, @35, @36, @37, @38, @44, @45, @46, @51, @52, @57, @58, @60, @61, @63, @65, @66, @73, @74, @76, @78, @79, @80, @81, @82, @84, @85, @87, @88, @97, @99, @104, @106, @110, @111, @112, @113, @117, @119, @121, @122, @124, @128, @130, @132, @134, @136, @141, @144, @146, @149, @150, @151, @152, @154, @156, @159, @160

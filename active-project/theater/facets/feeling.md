@@ -1,73 +1,58 @@
 ---
 facet: feeling
-sources: [oc-broken-maester, oc-dock-runner, oc-tanner-elder, oc-tanner-father, oc-tanner-mother, taylor-hebert-flea-bottom]
+sources: [oc-broken-maester, oc-tanner-elder, oc-tanner-father, taylor-hebert-flea-bottom]
 note: consolidated by build_cite_index from per-source slices. Single top-of-file frontmatter per r3-signal-001.
 ---
 
 # source: oc-broken-maester
-# source: oc-broken-maester
-# facet: feeling
-# episode: s01e02
-# R2 judge pass 2026-05-11: 0 keeps (R1 slice was empty), 0 deletes, 0 adds. No-add cleared at @137/@138 and @148-150 per default-to-silence; persona card §Voice ("Does not perform deference. Does not perform hope.") and the brake-not-ally structural function hold the maester at ambient-signal register through this episode.
+# source: feeling-oc-broken-maester
 
-
-# source: oc-dock-runner
-# source: oc-dock-runner
-# facet: feeling
-# episode: s01e02
-
-# No entries. The runner appears in s01e02 only at @37 (`the wasps relay oc-dock-runner`) —
-# a relay-glimpse via the POV's swarm-perception, not an on-stage somatic presence.
-# No posture, breath, gaze, or gesture is observable on-page; the runner has no scene-eligible
-# beat where a somatic tell could fire without inventing presence beyond what the proto-lines render.
-# Multi-justification cannot clear: scene-eligibility fails (no scene; relay-target only),
-# Q1 collapses to a non-question (no interior to disambiguate against absent on-page body),
-# and the runner's card §Voice ("comfortable with silence", "irony as default register") plus
-# Hard Fence 2 ("does not commit to causes") tilts the runner toward minimum-legibility
-# from the outside even when on-stage. Default-to-silence per rubric.
-
-# R2 re-test (2026-05-11): no-add cleared. Re-read at-rest against the locked graph and the
-# canonical proto-lines. The runner has exactly one anchor (@37) and that anchor is a POV-swarm
-# relay-target — the body the rubric requires (posture, breath, gaze, micro-action) is not on
-# page; it would have to be invented from outside the proto-line surface. G2 fails on motive
-# (the only "wanting" available is graph-niche, never at-rest evidence — F-R2-2 by construction).
-# G3 fails on adjacent-context (no anchor stands at-rest because there is no on-page body to
-# anchor against). G5 position: @37 sits inside a relay-cluster (@34/@35/@37/@42/@44 — swarm-
-# perception sweep), an interior-administrative band where a non-POV character's somatic fire
-# would not open or close anything the scene is doing. Card §Voice ("comfortable with silence",
-# "irony as default register") and Hard Fence 2 ("does not commit to causes") confirm the
-# minimum-legibility default. No fire. Cap-refusal logged in shard.
+1 @90 oc-broken-maester: his hand stays on the pen after he sets it down, fingers not lifting from the shaft | expressed: no
 
 # source: oc-tanner-elder
-# source: oc-tanner-elder
-# facet: feeling
-# episode: s01e02
+# source: feeling-oc-tanner-elder
 
-1 @20 oc-tanner-elder: keeps the gaze on the trade goods through the speaking | expressed: partial
-2 @54 oc-tanner-elder: stands square at his working pitch and brings the placement-look onto her face | expressed: partial
+# Slice — oc-tanner-elder
+
+R1 authored two fires at the two scene-eligible quiet/mid-curve beats where the elder
+is structurally invited to body-bear a register-pressure without the surrounding facets
+already carrying the read. R2.3 judgment cold-reads both as earning their place: card
+hard-fence "does not warm" is honored in both (gaze-discipline and paper-squaring are
+bureaucratic-precision tells, not affective ones); the two body-vocabularies are distinct;
+the two beats are scene-disjoint (clerk-1 junction vs. messenger junction); the tens
+distribution sits at 1 + 2 (no peak-concentration).
+
+R2.3 considered five add candidates and refused all five for one of two reasons:
+(a) high-density anchor (@67 coin-placement, @139 seal-account) — the proto-line stack
+already saturates the elder's structural read, Q1 fails; (b) narrator-or-vibes-already-
+covers (@100 father, @103 Taylor-relay, @137 writing-room entry, @138 writing) — adding
+a body-tell would compound rather than license invisible interior. Refusals logged in
+the decision shard as CAP-REFUSAL lines.
+
+Card hard-fence honored across both fires: no warmth, no curiosity-about-Tya, no
+sympathy register. Both tells render the non-warming discipline as positive
+characterization.
+
+---
+
+# source: feeling-oc-tanner-elder
+2 @6 oc-tanner-elder: does not lift the gaze from the ledger before he answers | expressed: yes
+3 @131 oc-tanner-elder: squares the paper edge against the desk before he answers | expressed: partial
 
 # source: oc-tanner-father
 # source: oc-tanner-father
-# facet: feeling
-# episode: s01e02
-# R2 judge pass 2026-05-11: 1 swap (@18→@22), 1 KEEP, 0 adds.
 
-3 @22 oc-tanner-father: lets the weight come back to the rear foot and keeps the gaze on the strap-end at his hip | expressed: partial
-4 @107 oc-tanner-father: closes the hand on the coins without lifting the gaze to her face | expressed: partial
+# R2.3 judge pass — KEEP 1 / DELETE 0 / ADD 0 / REVISE 0.
+# Scope: tanner-father is on-stage in one scene only (@96-101: market-side junction;
+# the formal-petition exchange with oc-tanner-elder). Per-scene per-character cap ≤1
+# binds the slice to exactly one fire. R1 sited it at @98 (the speaking-beat,
+# registration-commit). R2.3 holds it on cold-read.
 
-# source: oc-tanner-mother
-# source: oc-tanner-mother
-# facet: feeling
-# episode: s01e02
-
-5 @173 oc-tanner-mother: the stained crease of her thumb passes once across the edge of the bench before her weight comes off it | expressed: partial
+4 @98 oc-tanner-father: stands square at the elder, hands at his sides | expressed: yes
 
 # source: taylor-hebert-flea-bottom
-# source: taylor-hebert-flea-bottom
-# facet: feeling
-# episode: s01e02
+# source: feeling-taylor-hebert-flea-bottom
 
-6 @13 taylor-hebert-flea-bottom: sets the shoulders square and does not shift the weight off either foot | expressed: partial
-7 @87 taylor-hebert-flea-bottom: keeps the palm flat against the log's edge and does not close the hand | expressed: no
-8 @106 taylor-hebert-flea-bottom: counts the coins a second time across the open palm before extending | expressed: partial
-9 @170 taylor-hebert-flea-bottom: keeps the gaze on the log and does not raise the chin when answering | expressed: partial
+5 @15 taylor-hebert-flea-bottom: her hand stays steady on the pen through the entry | expressed: no
+6 @53 taylor-hebert-flea-bottom: her weight does not shift toward the elder | expressed: partial
+7 @145 taylor-hebert-flea-bottom: the pen does not lift between the words | expressed: no

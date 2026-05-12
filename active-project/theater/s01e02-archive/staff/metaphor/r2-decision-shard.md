@@ -1,0 +1,29 @@
+---
+facet: metaphor
+episode: s01e01
+layer: R2.metaphor
+f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
+---
+
+meta:1 @52 — The cold read of "the yard becomes a floor plan" names something real: Taylor mapping the tanner-father's yard as operational geometry, her swarm-instinct colonizing domestic space with tactical overlay. That is a genuine figure in Reading A terms, and the proto-line (father crosses the yard) doesn't carry it on its own. But the anchor is memory:2 — the Conquest-charter-language monument, firing at @77 on the lords-man's entry into the record. Those two things do not mirror each other. The "floor plan" figure reaches for Taylor's surveillance-and-mapping register, which is a real register in her behavior pack, but that register has no monument entry in memory.md. Memory:2 was nominated because it was the closest available entry, not because the figure structurally mirrors the charter-language callback. That gap is fatal: the metaphor rubric requires the anchor to be the entry's reason to exist, and when I read the anchor against the figure I cannot close the distance between "this yard is a floor plan" and "the word on the page is older than the country's name for itself." There is no memory or feeling fire co-located at @52 that could substitute. The delete-only rule at cross-facet pass applies; I am not rewriting toward a different figure, I am removing an unlicensed fire.
+VERDICT: DELETE (cascade @52 — strip [meta:1] from proto-line; update cite-index tens:49, tens:1)
+
+meta:2 @73 — "The record book is a door already shut." The cold read holds. At this beat the lords-man enters the village; the record is the administrative event the episode has been building toward since the reeve's slowing at @67. The figure says: this book is not a door that will close — it is already closed. That is a different register from NI:18's "a line of ink in a record she will not be allowed to read," which is precise and documentary. The metaphor's figure is threshold-irreversibility, not documentary-precision; they don't double each other. The anchor is memory:3 — the refusal-to-look / locker-tutor / helpless-protector monument, which includes in its margit-referral scope the monument-locker. The locker is precisely a door that was already shut; the shape of that monument is irreversible threshold closure. The record book at @73 enacts that same shape in a Westerosi administrative register. The callback holds without naming the locker — the "door already shut" carries the shape, not the proper noun. The provisional feeling anchor feeling:(taylor @73) does not resolve: Taylor's feeling file has no entry at @73. Dropping it leaves memory:3 + tens:1 = two layers, which clears the minimum. The figure is sparse, non-ornate, and fits Taylor's prose register. I rewrite the licensed-by field to drop the unresolvable feeling cite and confirm the entry stands.
+VERDICT: KEEP (anchor rewrite: licensed-by: memory:3 +feeling:(taylor @73) +tens:1 -> licensed-by: memory:3 +tens:1)
+
+PATTERN-SCAN: Two entries entered R2; one exits. The surviving entry is the stronger of the two — triple-layered in R1 intent, double-layered in R2 reality, but the figure holds and the anchor resolves. The deleted entry was trying to do real work (the surveillance-instinct figure is a genuine moment in Taylor's psychology at @52) but had no monument to stand on. The pattern this surfaces is not a within-file saturation problem — there is no saturation at one entry — but a lesson about what happens when a figure is authored toward a monument that doesn't exist yet in the memory file. The "floor plan" metaphor would have been legitimate if memory.md had a mapping-as-operational-instinct monument entry. It did not. Nominated anchors that don't mirror the figure are the structural failure mode this file avoided in the surviving entry and failed in the deleted one.
+
+CAP-REFUSAL: metaphor:add-candidate @92 — memory:3 and feel:9 (mother) co-locate here, but AP4 risk is real: memory:3 fires at @92 and its text already carries figurative weight ("the woman's face holds the wood"). A metaphor citing memory:3 at its own anchor beat risks restating the figure memory:3 is already doing. The wanting is niche-driven (scene H is blank after meta:1's deletion) not at-rest. G2 discipline refuses this.
+
+CAP-REFUSAL: metaphor:add-candidate @134 — memory:4 (fauna-silence-at-scale / Endbringer-arrival monument) fires here; tens:1 quiet. But NI:34 already renders the silence as a shaped absence ("the silence in the beetles is not the silence of the beetles; the silence is the shape of what the maester just looked at"). A metaphor at @134 would AP3-risk against NI:34, which is already carrying the paradox-figure. The figure NI:34 deploys is as strong as any metaphor-figure I could write here; displacing it with a metaphor entry would add weight without adding meaning.
+
+CAP-REFUSAL: metaphor:add-candidate @77 — memory:2 fires here with tens:1 (post-peak quiet after the @75 rung-3). But NI:18 at @77 is already figurative ("a line of ink in a record she will not be allowed to read"). The niche exists but the wanting is dishonest: I am looking at @77 because meta:1 at @52 was deleted and scene C is now blank, not because the proto-line at-rest calls for a metaphor. G2 refuses this.
+
+---
+
+## Arbiter Summary
+- Total verdicts reviewed: 2 (existing entries) + 3 (add-candidates refused)
+- Interventions fired: 0
+- Most-common trigger: n/a
+- DISCIPLINE-FAIL count: 0
+- Pattern: Both verdicts reached by reading the figure against its nominated anchor rather than running AP-label checks. The delete on meta:1 names specifically the floor-plan/charter-language gap; the keep on meta:2 names specifically the threshold-closure / monument-locker structural mirror. No arbiter intervention required; the justifications are entry-specific throughout.

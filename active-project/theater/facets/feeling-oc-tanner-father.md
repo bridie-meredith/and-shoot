@@ -1,7 +1,9 @@
 # source: oc-tanner-father
-# facet: feeling
-# episode: s01e02
-# R2 judge pass 2026-05-11: 1 swap (@18→@22), 1 KEEP, 0 adds.
 
-1 @22 oc-tanner-father: lets the weight come back to the rear foot and keeps the gaze on the strap-end at his hip | expressed: partial
-2 @107 oc-tanner-father: closes the hand on the coins without lifting the gaze to her face | expressed: partial
+# R2.3 judge pass — KEEP 1 / DELETE 0 / ADD 0 / REVISE 0.
+# Scope: tanner-father is on-stage in one scene only (@96-101: market-side junction;
+# the formal-petition exchange with oc-tanner-elder). Per-scene per-character cap ≤1
+# binds the slice to exactly one fire. R1 sited it at @98 (the speaking-beat,
+# registration-commit). R2.3 holds it on cold-read.
+
+4 @98 oc-tanner-father: stands square at the elder, hands at his sides | expressed: yes

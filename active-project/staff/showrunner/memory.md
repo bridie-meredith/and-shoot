@@ -101,7 +101,7 @@ seasons:
         facets_path: active-project/theater/facets/
         round_1_complete: true
         round_2_complete: true
-        audit_path: active-project/staff/auditor/facets-final-audit-r5.md   # canonical latest; r3/r4/r5 are sequential SIGNAL-closure audits in this session
+        audit_path: active-project/theater/s01e01-archive/auditor/facets-final-audit-r5.md   # canonical latest; r3/r4/r5 are sequential SIGNAL-closure audits; relocated to s01e01-archive 2026-05-12 during s01e03 setup
         audit_complete: true
         audit_findings: 14   # initial r1: 4 HARD + 1 HARD-proximity + 9 SIGNAL; 5 pile-ups all warranted
         audit_findings_hard_initial: 4
@@ -110,9 +110,9 @@ seasons:
         audit_paths_chronological:
           - active-project/theater/s01e01-archive/auditor/facets-final-audit-r1.md  # r1 (initial; 4 HARD; archived 2026-05-11 during s01e02 run)
           - active-project/theater/s01e01-archive/auditor/facets-final-audit-r2.md  # r2 (post-fixer-1; 1 HARD residual = flag-005; archived 2026-05-11)
-          - active-project/staff/auditor/facets-final-audit-r3.md    # r3 (post-URI-034-tens-exemption; 0 HARD, 7 SIGNAL — flag-005 downgraded pending card amendment)
-          - active-project/staff/auditor/facets-final-audit-r4.md    # r4 (post-fixer-2 + card amendment; 0 HARD, 4 SIGNAL — flag-005 EXEMPT; 2 new SIGNALs)
-          - active-project/staff/auditor/facets-final-audit-r5.md    # r5 (post-fixer-3; 0 HARD, 2 SIGNAL — both editor-call deferrals by design); CANONICAL FINAL
+          - LOST: facets-final-audit-r3.md (s01e01 r3 overwritten by s01e02 r3 during /and-facets s01e02 run; pre-this-session data loss; content not recoverable)
+          - active-project/theater/s01e01-archive/auditor/facets-final-audit-r4.md    # r4 (post-fixer-2 + card amendment; 0 HARD, 4 SIGNAL — flag-005 EXEMPT; 2 new SIGNALs); relocated 2026-05-12
+          - active-project/theater/s01e01-archive/auditor/facets-final-audit-r5.md    # r5 (post-fixer-3; 0 HARD, 2 SIGNAL — both editor-call deferrals by design); CANONICAL FINAL; relocated 2026-05-12
         remediation_passes_hard: 1 of 1 (r1 -> r2; criterion-2 budget; cleared 4 HARD)
         remediation_passes_signal: 2 (r3 -> r4 fixer, r4 -> r5 manual; SIGNAL-only closure cycles)
         audit_findings_hard_residual: 0   # flag-005 confirmed EXEMPT-TONE-LAW-SLOW-BURN in r4/r5 against the now-amended cond-series-tone-constraints-125ac card
@@ -145,24 +145,24 @@ seasons:
         aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 505, 508, 509, 510, 511, 512, 519, 520, 521, 526, 527, 528)
         aggregate_range_revised_at: 2026-05-11   # URI-028 honest-form declaration
         per_episode_tens_band_verdict: {1s: 81.5, 2s: 14.3, 3s: 4.2, status: "exempt-tone-law-slow-burn (URI-034 Exemption 5)"}
-        facets_path: active-project/theater/facets/
+        facets_path: active-project/theater/s01e02-archive/facets/   # archived 2026-05-12 during s01e03 setup
         round_1_complete: true
         round_2_complete: true
-        audit_path: active-project/staff/auditor/facets-final-audit-r4-s01e02-cycle3.md   # canonical post-cycle-3 + cycle-4 cap-exception; HARD=0; 5 SIGNAL (3 cleared via preemptive fixer pass; 2 carry-forward — find-002 URI-CONSOLIDATION-CITE-DRIFT, find-005 @20 pile-up borderline)
+        audit_path: active-project/theater/s01e02-archive/auditor/facets-final-audit-r4-s01e02-cycle3.md   # canonical post-cycle-3 + cycle-4 cap-exception; HARD=0; 5 SIGNAL; relocated 2026-05-12
         audit_complete: true
         audit_findings_hard_initial: 1   # r1: 1 HARD (metaphor:2 unresolvable mem:5 anchor — R2 concurrent-fork collision)
         audit_findings_hard_residual: 0   # r2 + r3 + r4 all CLEAN
         audit_paths_chronological:
-          - active-project/staff/auditor/facets-final-audit.md                                # r1 (1 HARD + 7 SIGNAL)
-          - active-project/staff/auditor/facets-final-audit-r2.md                             # r2 (post-fixer DELETE meta:2; CLEAN HARD=0)
-          - active-project/staff/auditor/facets-final-audit-r3.md                             # r3 (post-Phase-5b-cycle-2-fixer; CLEAN HARD=0; recalibrated CONSTRAINT scan clean)
-          - active-project/staff/auditor/facets-final-audit-r4-s01e02-cycle3.md               # r4 (post-cycle-3 author re-dispatches; HARD=0; SIGNAL=5; CANONICAL FINAL)
+          - active-project/theater/s01e02-archive/auditor/facets-final-audit.md                                # r1 (1 HARD + 7 SIGNAL); relocated 2026-05-12
+          - active-project/theater/s01e02-archive/auditor/facets-final-audit-r2.md                             # r2 (post-fixer DELETE meta:2; CLEAN HARD=0); relocated 2026-05-12
+          - active-project/theater/s01e02-archive/auditor/facets-final-audit-r3.md                             # r3 (post-Phase-5b-cycle-2-fixer; CLEAN HARD=0); relocated 2026-05-12
+          - active-project/theater/s01e02-archive/auditor/facets-final-audit-r4-s01e02-cycle3.md               # r4 (post-cycle-3; HARD=0; SIGNAL=5; CANONICAL FINAL); relocated 2026-05-12
         remediation_passes_hard: 1 of 1 (r1 -> r2; cleared 1 HARD via DELETE meta:2)
-        r2_decisions_path: active-project/theater/facets/.r2-decisions.md
-        r2_decisions_supplement_path: active-project/staff/memory/r2-decision-shard-cycle3.md   # cycle-3 memory R2 structural rebuild supplement (RELOCATE mem:9, DELETE mem:12, ADD mem:13)
+        r2_decisions_path: active-project/theater/s01e02-archive/facets/.r2-decisions.md   # relocated 2026-05-12
+        r2_decisions_supplement_path: active-project/theater/s01e02-archive/staff/memory/r2-decision-shard-cycle3.md   # cycle-3 memory R2 structural rebuild supplement; relocated 2026-05-12
         r2_f_r2_counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 1, f-r2-4: 0}   # elder shard mis-classified REVISE as F-R2-3 per audit r1 M-002
         r2_discipline_fails: 0
-        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md   # cycle 3 + cycle-4 cap-exception consolidated; cycle 2 at facets-audience-gate-r2.md; cycle 1 at facets-audience-gate-r1.md
+        audience_gate_path: active-project/theater/s01e02-archive/auditor/facets-audience-gate-r3.md   # cycle 3 + cycle-4 cap-exception consolidated; cycle 2 + cycle 1 in same archive dir; relocated 2026-05-12
         audience_gate_complete: true   # 9 of 9 facets at 3-of-3 ACCEPT; cap-exception ratified
         audience_gate_cycles: 3 + 1-cap-exception (memory single-field repair; ratification documented in facets-audience-gate-r3.md)
         audience_gate_cap_burned: false   # cap=3 fully used; cycle-4 cap-exception ratified for memory mem:13 target-reference rewrite (audience-convergent single-field repair)
@@ -189,7 +189,7 @@ seasons:
         cycle3_signal_carry_forward: [find-002 URI-CONSOLIDATION-CITE-DRIFT (pre-existing pipeline; exceeds episode scope), find-005 @20 pile-up borderline (editor advisory at wrap)]
         cycle4_cap_exception: mem:13 target-reference rewrite (cond-westerosi-customary-authority-125ac → free-text Westerosi mechanism gloss); 3-of-3 ACCEPT; ratified in facets-audience-gate-r3.md §"Cap-exception ratification" on convergent-audience-single-field-repair grounds
       - slug: s01e03
-        status: protolined
+        status: faceted-r2   # Phase 4 fanin clean 2026-05-12; 7 R2 judges merged (22 author copies total post-R2); .r2-decisions.md consolidated (f-r2-counts all-zero; no DISCIPLINE-FAILs; orchestrator-corrected R2.2 memory ID discipline + R2.3 broken-maester cite-token form); cite-index rebuilt (335 facet entries; 54.2% protoline density)
         narrator: taylor-hebert-flea-bottom
         interlude: false
         chunk: "The Hightower apparatus opens its file on Taylor across two clerks and a senior operative's written request through the elder; the village-claim closes around her externally via the lord's-man record; range reaches 600m with the Red Keep 400m beyond ceiling; the season closes on two log entries written side-by-side — the architecture has changed but she does not know what file she is in."
@@ -214,4 +214,4 @@ seasons:
 
 active:
   season: s01
-  episode: s01e02
+  episode: s01e03

@@ -1,53 +1,18 @@
 ---
 facet: feeling
-episode: s01e02
-layer: R2-judge
+episode: s01e03
+layer: R2.3
 character: oc-broken-maester
 f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
 ---
 
-# R2 Judge — feeling / oc-broken-maester / s01e02
+feel:1 @90 oc-broken-maester — Cold read on this one lands cleanly. The proto-line names the act (sets the pen) and the somatic tell does what the proto-line cannot: it shows the body lingering in the act after the motor event has completed. The fingers-not-lifting is the brake-position register made physical — a chain-stripped observer holding the just-recorded act without dramatizing it, exactly the "does not perform" register the card and the chain-stripped-register vibe-key both name. Reading the entry without referring to what comes next: the hold-after is the bearing-of-the-cost of the writing session terminating, and it stands on its own at the anchor — it doesn't lean on @91 (Taylor's holds-feet) or @93 (her entry-on-her-side records the pen-on-his) to mean what it means. The pen-scratch-to-silence at sensory:5 is environmental; the narrator-interest at @90 is Taylor reading the close from outside via relay; vibes:15/16 are register-framing on the apparatus level. None of those show the maester's own body weighing what he has just committed to record. Q1-interior passes: this fire is the only window onto his interior at the structural turn of his episode arc. Position-gate: @90 is the tens=3 reversal-proximity peak — the entry fires at the peak holding the consequence live (the writing session is closed and the body has not yet released the instrument), which is the commit-stance position the gate licenses. The word "shaft" is mildly fussy register for a pen-barrel, but it reads in-register for a man who still reads aloud key phrases of Citadel grammar; not worth revising. Form is clean — somatic-only, no named-feeling vocabulary, no hedge, no simile, no metaphor. The fingers-not-lifting construction sits in the same permitted-form slot as "does not lift gaze."
+VERDICT: KEEP
 
-R1 slice for s01e02 was empty (0 fires; R1 refused on Q1/Q2 grounds across all on-stage beats,
-default-to-silence per card §Voice "Does not perform deference. Does not perform hope."). R2
-graph-aware re-pass tested four candidate windows against the locked graph and the card. All
-four candidates refused; no adds. No keeps (R1 had none); no deletes. The at-rest reading still
-wants silence; no-add cleared.
+CAP-REFUSAL: feeling:add-candidate @83 oc-broken-maester (faces the jars) — NI:19 ("the jars are faced and not taken — the routine has refused itself") already carries the cost of the refusal at this beat for the audience; Q1 fails. The body-show is also weaker here than at @90 — facing-the-jars is the deliberation, not the consequence. The scene's per-character cap is rightly spent on the pen-set, not on the deliberation upstream of it.
 
-(Prior s01e01 shard content for this character has been superseded by this s01e02 pass per the
-arbiter brief; episode tag is the authoritative scope.)
+CAP-REFUSAL: feeling:add-candidate @84 oc-broken-maester (exits the dried-goods stall) — lonely entry per cite-index, but Q2-weak: the refusal is settled by the time he exits, and the peak that wants the cost-bearing is @90, not the exit. Per-scene cap is already correctly spent on the pen-set. The maester's scene-shape concentrates its weight at the writing-room termination, not at the market refusal — adding a second fire would diffuse what the single fire correctly holds.
 
----
+CAP-REFUSAL: feeling:add-candidate @89 oc-broken-maester (beetles relay the pen-scratch) — proto-line subject is the beetle relay, not the maester; the perception-frame is Taylor's relay-side, not the maester's body. Position category is approach-zone immediately preceding the @90 peak — an add here would steal weight from the peak that earns the fire. Refuse on Q1 (the audience reads what it needs from the relay), on fork-of-record (the body shown would not be the proto-line's grammatical subject), and on G5 (pre-peak add weakens the commit-stance).
 
-## Existing-entry verdicts
-
-None. R1 slice for s01e02 had zero fires.
-
-## Adds considered
-
-CAP-REFUSAL: feeling-oc-broken-maester:candidate-A @137 — The visitor speaks to the maester. I sat with this beat the longest because it is the only window in the s01e02 episode where the maester is co-present with another on-stage figure who could read a tell. The temptation is real: a maester receiving a visitor's speech is a moment where a held breath, a hand on the page, an angle of the chin could carry a clause at stitch-time. I tested whether the card §Voice would support such a tell, and it pushed back hard — "Quiet register. Reads aloud key phrases. Wry precision. Does not perform deference. Does not perform hope." The card is naming an anti-performance discipline as the structural register; the only body-shape consistent with it at this beat is the absence of any visible adjustment. The proto-line frames the beat as the visitor's speech-act, not as the maester's reception, and the at-rest reading honors that framing. Q1 fails because there is no audience-side interior to disambiguate — the maester's interior at the receiving beat is "Citadel structure receiving an utterance," which is what the proto-line already carries by who-speaks-to-whom. I did not believe in the fire.
-
-CAP-REFUSAL: feeling-oc-broken-maester:candidate-B @138 — The maester speaks to the visitor. The wry-precision register could in principle accompany the outbound speech with a small body-tell (a hand returning to the record, a glance, a half-pause before the phrase commits). I traced the motive carefully because G2 honest-motive is where this kind of fire fails — the graph-revealed niche (no maester feeling-fire anywhere in the s01e02 episode) is exactly the pressure that tempts an at-rest reading into manufactured cause. The at-rest reading does not want the fire: the maester's function is to say a thing exactly and have it not be collected, and any somatic accompaniment to the saying converts him from ambient-signal to characterized-figure at the exact beat where ambient-signal IS the load-bearing role. The downstream beetles-relay-the-phrase at @149 and the named-in-her-log vibes at @159 carry the maester's interior structurally without needing his body to step forward. Q2 fails: the interior at this beat is the saying itself, and the proto-line is already the saying. I did not believe in the fire.
-
-CAP-REFUSAL: feeling-oc-broken-maester:candidate-C @148-150 — The rhythm/phrase relay window. This was the candidate the brief explicitly named, so I tested it twice. The graph here is rich on the POV side (narrator:27 at @149, state-update:9 on Taylor's pattern-recognition at @151, vibes:14 on rhythm-isolated-before-recognized) and rich on the maester side too (state-update:5 record_anomaly_logged: true -> phrase-isolated, vibes:16 insect-as-anomaly-named). The cold read produced the same thing each time: the rhythm itself IS the body-fact. The beetles are perceiving an articulation cadence — a man reading aloud while working a phrase — and that cadence-as-body-show is the somatic content the proto-line bodies @148/@149/@150 already stage. A feeling-fire describing the body underneath the rhythm (a hand on the page, a held breath between the rhythm and the phrase) would duplicate what the rhythm is doing as a tell. Q1 fails by the rubric's own definition: the audience CAN read the interior from proto-line + state-update + vibes. I did not believe in the fire even with the brief's explicit prompt.
-
-CAP-REFUSAL: feeling-oc-broken-maester:candidate-D @156-159 — The crossing window. The maester exits the apothecary, enters the side alley, enters the upper room, and the beetles relay him. Pure spatial relocation, no on-stage observer except the swarm. The vibe-fire at @159 (++ the-brake-that-does-not-stop-her, + insect-as-anomaly-named) does the structural work of naming the brake-function as it enters the record; a feeling-fire at any of @156/@157/@158/@159 would have to manufacture posture beyond what the proto-lines render (a heaviness in the step, a pause at the landing, a hand to the lintel) and would steal the vibe's structural work. Q1 fails (the relay itself is the disambiguation); Q2 fails (the interior of a man walking up his own stairs at the end of a workday is not where the episode's stakes live for him — the stakes were the saying at @138 and the phrase-commit at @149, neither of which earned a fire). G5 position-gate also fails here: @159 sits at the trailing edge of the maester's K-scene window and the scene's curve has already done its work in the vibes; an add would close in body-register what is already closing in vibe-register. I did not believe in the fire.
-
-## Pattern scan
-
-PATTERN-SCAN: Across the four refusals the throughline is that this card's structural function — heard, not collected; right, too late; ambient signal becoming named — is mechanically incompatible with on-stage somatic-show in the episode where the function is being instantiated. The maester does not perform; the rubric's Q1 gate folds into the card's §Voice discipline at every candidate. The shape of the no-add is not absence of taste but consistency with the brake-not-ally architecture the card is naming. If a later episode stages the maester as observer-of-cost (s4 foreclosure, e.g.) the calculus changes — at the line he is structured to name, the body could carry the naming. In s01e02 the structural beats are ambient and the no-add holds. No formulaic across-character pattern is implicated by this slice (zero fires, zero contribution to within-character or cross-character vocabulary saturation). Held against the consolidated feeling.md for s01e02, the maester's silence does not echo or duplicate the within-character signatures of tanner-elder (gaze-held-on-goods, distance-not-closed), tanner-father (weight-back + gaze-on-strap, hand-closes-on-coins), tanner-mother (thumb-across-bench-edge), or Taylor (shoulders-square, palm-on-log, coin-count, gaze-on-log) — the maester slot remains structurally empty, which is the correct shape.
-
-## Discipline notes
-
-Arbiter T1 / T4 did not fire. Justifications carry entry-specific phrasing (Citadel-structure-receiving-an-utterance; saying-as-the-act; rhythm-as-body-fact; relay-as-the-disambiguation) rather than rubric-label recitation. The four CAP-REFUSAL verdicts were not niche-driven cap-fills in reverse — they are honest no-adds traced from the card's load-bearing anti-performance discipline against the locked graph. The brief's explicit prompt to re-test @137/@138 and @148-150 was honored as a test, not as a directive to fire; the at-rest reading still wants silence and the no-add is cleared.
-
-## R2 Pass Summary
-
-- KEEP: 0
-- DELETE: 0
-- ADD: 0
-- CAP-REFUSALS: 4 (candidates A/B/C/D — @137, @138, @148-150, @156-159)
-- Arbiter interventions: 0
-- DISCIPLINE-FAIL: 0
-- Flagged seams: 0 (no body-integrity issues; no cross-facet contract violations; the no-add
-  is the structurally correct verdict given the card and the locked graph).
+PATTERN-SCAN: The slice is a single entry; no within-character pattern can form on n=1. Cross-character scan on this slice's own terms: the @90 fire uses card-distinctive vocabulary (the hold-after, the not-lifting from the shaft) that does not echo Taylor's "hand stays steady on the pen" at @15 or her "pen does not lift between the words" at @145; Taylor's fires center on the writing-act being performed steadily, the maester's centers on the writing-act being terminated and lingered-after. Same prop, opposite registers — that is the intended pairing and reads as design, not as vocabulary collision. Nothing flags on the maester's slice.

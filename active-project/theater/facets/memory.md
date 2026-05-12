@@ -1,16 +1,36 @@
----
 facet: memory
-episode: s01e02
-author: taylor-hebert-flea-bottom (POV impersonator, fresh fork, facet-authoring mode)
-r2: graph-aware judge pass (memory-judge fork, 2026-05-11)
-r2-cycle3: structural revision pass (memory-judge fork, 2026-05-11) — mem:9 relocated @87→@90; mem:12 DELETED; mem:13 ADDED at @20 (Westerosi-monument clamp restored)
-mem-9-ni-spine-defense: r4-cycle3 find-003 — mem:9 @90 has no NI co-cite at @89/@90/@91. Defense per memory-rubric exception path (apparatus-quiet register): the @90 anchor is a trailing-edge quiet beat where the network's silence IS what the entry carries; an NI entry at this anchor would be redundant with what the silence-as-perception already names. NI-spine is held by the adjacent ascending NI run at @88 (narrator:18 documenting the eviction's institutional register) which the memory's "wrong kind of quiet" reads as the residue of. The relocate from @87 (rupture peak; previously NI-spined by narrator:17) trades NI-co-cite at the peak for NI-spine continuity across the trailing edge — both r3 and r4 SHAPE-OK reads support the trailing-edge placement. Defense documented; no fixer change required.
+episode: s01e03
+author: taylor-hebert-flea-bottom (POV; R2.2 judge mutation 2026-05-12; orchestrator-corrected for ID discipline 2026-05-12)
 ---
 
-3 @64 the shoulder-set drops back and down and the breath leaves before the network goes -> (earth-bet: pre-deployment ritual carried over — the prior life's swarm-control instinct registering on a 400m approach)
-4 @88 the neighbor presses the doorway and withdraws and the witnessing without recourse has its own architecture -> (earth-bet: institutional record-cruelty / administrative-violence pattern, glossed through smallfolk-eviction register)
-7 @159 the beetles relay the maester's second crossing and the behavioral-read-through is the kind of data the prior life learned to weigh before the apparatus knew what it was weighing -> (earth-bet: swarm-feed as cognition extension — the prior life's parallel-track register)
-9 @90 the family has crossed the threshold and the network around the dwelling has gone the wrong kind of quiet -> s01e01:134
-11 @149 the phrase the beetles carried is shaped like a word the prior life had a different name for and the door she walks past is in the same room as the phrase -> s01e01:114
-13 @20 the elder's counter-frame fits a slot the smallfolk-wage has carried in this country since before the lords could record it and the price is named without being said -> (westeros: smallfolk-customary-wage-as-pre-record-institutional-memory — the elder names the price in a register older than the lords' recording, and the interior knows this register has an end-date)
-# r4-cycle3 cycle-3-fixer: target-reference rewritten from cond-* card to free-text Westerosi mechanism gloss per audience cycle-3 cape-fic + dark-fantasy convergent demand. The condition-card-as-monument shape was the mem:2 r1 reject error class recurring; condition cards describe ambient world-rules, not the institutional monuments the memory rubric requires. The smallfolk-customary-wage mechanism is a Westerosi-canonical institutional-memory pattern; the gloss form matches mem:3 / mem:4 / mem:7 register. cond-westerosi-customary-authority-125ac still operates as the underlying world-rule the mechanism rests on, but is no longer the target-reference. Margit Referral 4 will be filed for whether smallfolk-customary-wage warrants its own cond- or behavior-card monument promotion.
+# R2.2 mutation summary
+# KEEP: 3 (mem:4 @54, mem:7 @105, mem:8 @125)
+# DELETE: 6 (mem:1 @2, mem:2 @23, mem:3 @46, mem:5 @59, mem:6 @89, mem:9 @143)
+#   — mem:1, mem:2, mem:3, mem:9: spineless fires (narrator-interest silent at anchor; rubric §Licensing-discipline mandatory spine co-citation failure)
+#   — mem:5: per-scene-cap collision with mem:4 in Scene 4 + monument-trigger weakness (target-ref names a frame, not a behavior-pack monument family)
+#   — mem:6: content-truth mismatch (description claims "pen has stopped" at @89 where proto-line and NI:20 register active pen-scratch relay; the load belongs at @90)
+# ADD: 3 (@11 -> mem:10; @90 -> mem:11; @162 -> mem:12) — under add-cap=5; IDs taken next-available after R1 max=9 per Phase 3 discipline (no reordering of existing IDs; deletions leave gaps)
+#   — mem:10 @11: tens=3 peak with explicit displacement-clamp construction; institutional-record-departure (Scene 1)
+#   — mem:11 @90: tens=3 peak with explicit displacement-clamp; dying-tutor session-terminus (Scene 5, replaces failed mem:6)
+#   — mem:12 @162: tens=3 denouement peak with explicit displacement-clamp; refusal-to-look + record-discipline-shift (Scene 9)
+# Per-scene cap honored. Doubled-register present (Earth-Bet displacement: 4 entries; Westerosi clamp: 1; intra-episode callback / mixed: 1). Family diversity ≥ 4. Sparsity 6/165 ≈ 3.6% (within 1-5% band).
+
+# Deletion gaps: 1, 2, 3, 5, 6, 9. KEEPs: 4, 7, 8. ADDs: 10, 11, 12.
+
+4 @54 the words leave the elder's mouth and the relay carries the act and not the content and there is a country where the apparatus also wrote the act and let the cost go uncited -> the previous-life classification-architecture / register-of-act-without-content
+# R1 → R2.2 KEEP: tens=2 release-zone (trailing edge of @50-@54 elder-approach cluster); spine NI:13 @54 fires; Earth-Bet displacement on administrative-record-cruelty / classification-architecture monument family; the negation-by-naming carve-out from variant card §Memory monuments / Earth-Bet ("permitted at low frequency") licenses "there is a country where" construction. Scene 4 fire.
+
+7 @105 the breath leaves before the entry the way the breath used to leave before the network went -> s01e02:64
+# R1 → R2.2 KEEP: tens=2; spine NI:26 @105 fires ("the breath out comes before the answer does"); Earth-Bet displacement on swarm-deployment-breath-out tell (base card §Non-verbal tics: "The breath out before the swarm goes — Half a beat before she deploys the swarm, the breath leaves"); intra-project callback to s01e02:64 (taylor-hebert-flea-bottom rolls the shoulders — body-deployment routine). Scene 6 fire.
+
+8 @125 the keep sits four hundred paces past the ceiling and what the keep will be is what the interior already has the count of years for -> the Westerosi-monument clamp on the seat-as-future-stage / the keep older than this country's name for what is coming to it
+# R1 → R2.2 KEEP: tens=2; spine NI:30 @125 fires ("the keep sits four hundred paces past the ceiling, noted and not reached"); Westerosi-monument clamp on Dance-of-Dragons foreknowledge (variant card §Memory monuments / Westerosi monuments: "She knows: who lights it, who survives, who burns, who hangs. She cannot say any of it without exposure. The interior tracks the timeline constantly"); doubled-register exemplar — interior foreknowledge of the seat-as-future-stage held against the spoken-layer silence. Scene 7 fire.
+
+10 @11 the gate carries the entry past where she can reach it and the previous life weighed how a file moves when its reader is upstream of its writer -> the previous-life classification-architecture / file-departing-upstream-from-its-witness
+# R2.2 ADD: tens=3 peak; spine NI:5 @11 ("the gate-line has just been crossed and the file is past the seam"); explicit displacement-clamp construction on the institutional-record-departure pattern; the file crossing the seam IS the load — record-leaves-her-range moment licenses the peak fire per quiet-beat-anchor carve-out. Scene 1 fire.
+
+11 @90 the pen sets and the body weighs a closed session against an open one the way a body that has lost a tutor before learns the difference -> the previous-life dying-tutor / helpless-protector pattern / tutor-figure whose session terminates
+# R2.2 ADD: tens=3 peak; spine NI:21 @90 ("the pen has stopped and the session is closed"); explicit displacement-clamp on broken-maester-as-tutor-figure displacement → dying-tutor pattern (base card §Memory monuments / Pre-cape personal monuments + variant card §Memory monuments / Earth-Bet). Replaces failed mem:6 @89 (which mis-anchored the displacement one beat early). Scene 5 fire.
+
+12 @162 the wall holds the direction the file went and the body sets the angle before the mind sets the language and the body has set this kind of angle before in a country that learned what a record stops naming -> the previous-life refusal-to-look / enclosed-space-with-the-decision-the-record-will-not-name
+# R2.2 ADD: tens=3 denouement peak (pile-up beat — 8 co-citations); spine NI:37 @162 ("the wall is faced because the close-states are about to be entered as coincidence"); explicit displacement-clamp on refusal-to-look pattern (base card §Voice tells: "Refusal to look directly — Certain topics ... appear in the prose as gaps") + clinical-self-erasure accumulating to the record-discipline-shift (cond-clinical-self-erasure: the s4 architecture assembling before she has named the foreclosure); body-charge tell (variant card §Non-verbal tics) registers the decision before the mind. Scene 9 fire — denouement structural climax.
