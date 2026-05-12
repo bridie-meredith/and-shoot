@@ -1,6 +1,3 @@
-# source: oc-tanner-elder
-# facet: feeling
-# episode: s01e02
-
-1 @20 oc-tanner-elder: keeps the gaze on the trade goods through the speaking | expressed: partial
-2 @54 oc-tanner-elder: stands square at his working pitch and brings the placement-look onto her face | expressed: partial
+# source: feeling-oc-tanner-elder
+1 @6 oc-tanner-elder: does not lift the gaze from the ledger before he answers | expressed: yes
+2 @131 oc-tanner-elder: squares the paper edge against the desk before he answers | expressed: partial

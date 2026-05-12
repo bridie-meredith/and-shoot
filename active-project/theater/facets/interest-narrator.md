@@ -1,42 +1,43 @@
----
 facet: interest-narrator
-episode: s01e02
-author: taylor-hebert-flea-bottom (POV impersonator, facet-authoring mode; R2 judge pass 2026-05-11)
+episode: s01e03
+author: taylor-hebert-flea-bottom (POV; R1)
 ---
 
-1 @4 the elder's road-watch is the wrong angle for greeting and the right angle for a handoff
-2 @9 the junction-clearance has already been priced; the body is walking into a posted claim
-3 @12 the father's stilling is the shape adults make when the word for her has just changed
-4 @18 the trade goods are being staged as instrument, not gift; the framing is now visible
-5 @20 the elder's counter-frame has been priced and accepted across the table
-6 @22 the step-back is the body confirming a new category and the body is rarely wrong
-7 @25 the south-road pivot closes the visit on terms not hers
-8 @30 the log is the apparatus and the apparatus has not yet failed
-9 @35 the Watch patrol-tempo is a perimeter she did not have to walk
-10 @53 the pass-timing has just resolved an open question about the patrol-interval
-11 @64 the shoulder-roll is operational telemetry, not relief
-12 @69 the exhale is the four-hundred-meter cost surfacing where the accounting can see it
-13 @77 the waking is data — duration unrecorded, recovery threshold not yet measured
-14 @78 the eye-hold is the apparatus checking whether the apparatus still functions
-15 @83 the lords-man's gait has the wrong leverage-load for an Eastern-Quarter alley
-16 @85 the latch-break is the threshold of formal claim being crossed against the dwelling
-17 @87 the family's exit is a shape she has watched at this resolution before and the network around it is too quiet
-18 @88 the neighbor's doorway-press is a witness-position that has already been priced and will be retracted
-19 @100 the father's address has arrived with a different verb than the first visit carried
-20 @104 the exhale is the budget being read against a wage-claim with no ceiling
-21 @106 the coin-extension is the second cost the morning has booked and the first the body has signed for
-22 @108 the parting sentence is the schedule of the next visit in a verb that does not name itself
-23 @125 the stylus-drop is the apparatus reporting failure before the apparatus has noticed
-24 @127 the chin-lower is the body conceding what the log will not yet say
-25 @139 the beetles' register-relay is a name being said in a room she should not have access to
-26 @140 the feet-hold is the body refusing the displacement the relay has just queued
-27 @149 the phrase the beetles carried is closer to a foreknowledge-band threshold than anything the network has relayed
-28 @151 the stilling is the apparatus going quiet around a fragment that should not be in the register
-29 @159 the maester's relay-route through the beetles names him as ambient signal, no longer hypothesis
-30 @171 the second sentence is the vigil-candle as fact, no longer as fixture
-31 @173 the standing IS the vigil ending; the speech-act was preparation
-33 @23 the address has arrived at a name the body answered to and a person not there
-34 @117 the outer-district nodes have come live and the ceiling is no longer where it was
-35 @146 the close has filed him under a name the network did not name him by until today
-36 @167 the sit is not the posture the visits carried and the visit-shape has just changed register
-37 @172 the gaze-lower is what the body does before it stands into a sentence the mouth will not finish
+1 @1 the wall beetle has the candle in the seam already
+2 @3 the seam at the junction has just taken a clerk-shaped weight
+3 @7 the book has opened against the name she does not use
+4 @8 the entry being written is about her and the relay carries only its making
+5 @11 the gate-line has just been crossed and the file is past the seam
+6 @15 the second hand is hers and mirrors the one she did not see
+7 @22 the apothecary's ground floor has entered the seam at six hundred paces
+8 @34 the second seam carries a second clerk; the apparatus is not one hand
+9 @40 the second entry is being made while her side stays silent
+10 @42 the cover of the book has sealed the second commit
+11 @47 the log holds two entries that should not be the same shape
+12 @50 the elder arrives carrying go-between weight
+13 @54 the second sentence is the proposition; she had heard it before he spoke it
+14 @59 speaking aloud is the cheaper currency at this distance
+15 @62 the cluster thins on the beat the proposition lands
+16 @67 the coin is placed and the entry is now formally owed
+17 @68 the fist closes around the cost she had already priced
+18 @70 the coin and the entry are filed against each other in the same hand
+19 @83 the jars are faced and not taken — the routine has refused itself
+20 @89 the pen-scratch is the only voice he keeps now
+21 @90 the pen has stopped and the session is closed
+22 @91 the feet hold against the floor's give
+23 @93 the entry on her side records the pen on his
+24 @96 the father has come to the same junction the first clerk used
+25 @103 the formal register repeats and what it carries has changed
+26 @105 the breath out comes before the answer does
+27 @114 the south-wall perimeter has doubled in reach overnight
+28 @120 the wall holds the direction the file went
+29 @123 the entry records the night's expansion without flinch
+30 @125 the keep sits four hundred paces past the ceiling, noted and not reached
+31 @127 a third figure has entered the junction wearing the shape of the first two
+32 @137 the elder enters the writing room as a clerk would
+33 @139 the seal has closed on an account she will not read
+34 @140 the account is in transit beyond the seam
+35 @145 the entry records the account she could not read
+36 @153 the gate-line is the threshold the first file crossed
+37 @162 the wall is faced because the close-states are about to be entered as coincidence
+38 @164 her column and the column she will not read close on the same hour

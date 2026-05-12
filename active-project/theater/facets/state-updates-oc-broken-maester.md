@@ -1,6 +1,6 @@
-# source: oc-broken-maester
-# facet: state-updates
-# episode: s01e02
+# source: state-updates-oc-broken-maester
 
-1 @149 actor:oc-broken-maester.record_anomaly_logged: anomaly-noted -> phrase-isolated
-# field-extension: record_anomaly_logged value-set widened from boolean-logged-flag to a documentation-sharpening ordinal — true (general anomaly noted) -> phrase-isolated (specific phrase captured in record). Per rubric §"Field-extension protocol": tracked-state aspect (documentation state on his thirty-year record), not perception. The proto-line "the beetles relay the phrase" is the beetles registering an articulation event the maester produces; the canonical change on his side is that his anomaly-log moves from loose-noting to phrase-specific entry. Persistence: holds past the beat (a phrase committed to his record stays in the record). Tens @149=2 escalation; @151=3 is Taylor's recognition rupture (her side, not his). Authority: oc-broken-maester fork writes oc-broken-maester. Cross-facet: this is a non-POV actor-state shift (Taylor is POV); narrator-interest co-citation NOT required. Anti-pattern scan: not registration-as-state (the maester's record-state is a tracked field, not a perception); not held-against-turn (@149 is not @39-class); not posture (record-state is documentation, not body); not pre-empting (the phrase is articulated at @149, not @148 rhythm-relay nor @150 rhythm-relay-after).
+1 @74 actor:oc-broken-maester.location: upper-room-above-apothecary -> eastern-quarter-street
+2 @88 actor:oc-broken-maester.location: eastern-quarter-street -> upper-room-above-apothecary
+3 @90 actor:oc-broken-maester.documentation_status: ambient-notes -> formal-log-entry
+# field-extension: documentation_status (new field for s01e03 register-shift tracking — ambient anomaly noting crosses to formal record-entry register at the @90 pen-set beat, tens=3 reversal-proximity peak; "two log entries written side-by-side" pairs his record with Taylor's at season close)
