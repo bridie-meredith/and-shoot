@@ -273,7 +273,16 @@ Editorial reflection configuration.
 - **`feedback-file`** — path to the line-keyed feedback file. Default convention is `staff/stitcher/feedback-<slug>.md`.
 - **`re-stitch-scope`** — what re-runs when feedback lands. `fork-only` re-runs just the originating fork; `fork-plus-downstream` (default) also re-runs downstream phases whose log entries reference the affected anchor or line-ID; `full` re-runs the entire chain.
 
-### `interval-bridge:`
+### `interval-bridge:` (LEGACY FALLBACK ONLY — superseded by exposition facet 2026-05-12)
+
+**Superseded by the exposition facet.** Authoring of the episode-open frame paragraph(s) and first-mention glosses moved upstream to `/and-facets` Round-1, performed by the `exposition-author` subagent. The exposition facet (`schemas/facet.schema.md` § exposition) carries audience-modeled, source-cited, R2-judged, audit-checked, audience-gate-cleared content. The stitcher's Phase 0.6 reads that facet directly and assembles the preamble from `scope: episode-open-*` entries.
+
+The `interval-bridge:` block in this schema and in project profiles is retained ONLY as a fallback path for episodes whose exposition facet is absent (typically pre-2026-05-12 episodes that pre-date the wiring). In fallback mode, the stitcher dispatches an in-stitch Agent fork to author the preamble at render-time — but this fork's output is not audit-gated and lacks source-traceability. The fallback path is transitional; flag affected episodes for `/and-facets` re-run.
+
+For new projects and new episodes, do NOT rely on this block. Author the exposition facet at `/and-facets` time and let Phase 0.6 consume it.
+
+The following field documentation is retained for the fallback path:
+
 
 A brief frame paragraph prepended to the polish file, bridging the gap between the end of the prior chapter and the start of this one.
 

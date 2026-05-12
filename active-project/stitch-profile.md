@@ -102,7 +102,15 @@ output:
   trace-verbosity: change-only
 
 interval-bridge:
-  enabled: true
+  # LEGACY / FALLBACK ONLY (2026-05-12 — superseded by exposition facet).
+  # The exposition-author subagent in /and-facets Round-1 now authors the
+  # preamble + context paragraphs upstream with cited sources, audience-
+  # modeling, R2-judging, and audit-gating. The stitcher Phase 0.6 reads
+  # the exposition facet directly. This interval-bridge: block runs ONLY
+  # when active-project/theater/facets/exposition-<slug>.md is absent
+  # (legacy episodes pre-2026-05-12 wiring; re-run /and-facets to author
+  # the missing facet). See schemas/facet.schema.md § exposition.
+  enabled: true                             # fallback-armed; not normally invoked
   mode: auto                                # cold-start for s01e01; prior-episode for s01e02+
   voice: pov-frame                          # in narrator's first-person voice as a frame device
   length-target: brief                      # ≤80 words

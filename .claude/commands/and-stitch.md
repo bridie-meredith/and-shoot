@@ -113,38 +113,61 @@ Before dispatching Phase 1, emit a one-screen summary to the user:
   asinine patterns: <K patterns loaded>
   bone-fence:       enforced (dialogue=no, body=no, spatial=no, route=no, scene-prose=no, cognitive=no)
   feedback-file:    <present | absent>
-  interval-bridge:  <mode> (length-target=<brief|medium>, voice=<pov-frame|omniscient|author>)
+  exposition:       <present | ABSENT (legacy-fallback)>
+                    if present: <N> entries (preamble=<n>, first-mention=<n>, scene-orient=<n>; refused-at-R2=<n>)
+                    cross-episode register: <N> terms reader-resident from prior episodes
 ```
 
-This summary is the gate. If anything looks wrong (persona is `neutral` when it shouldn't be; anti-jargon list is empty when the project has one; voice config is unexpected; interval-bridge mode is wrong), the user catches it here, not at the polish file 1,500 words later.
+This summary is the gate. If anything looks wrong (persona is `neutral` when it shouldn't be; anti-jargon list is empty when the project has one; voice config is unexpected; exposition is absent for a project where it should exist), the user catches it here, not at the polish file 1,500 words later. **`exposition: ABSENT` on a project that has run `/and-facets` post-2026-05-12 is a strong signal something went wrong upstream** — re-run `/and-facets` rather than proceeding with legacy fallback.
 
 ---
 
-## Phase 0.6 — Interval-bridge preamble
+## Phase 0.6 — Read exposition facet (preamble assembly)
 
-Dispatched as a single Agent call (one fork). Produces the brief frame paragraph prepended to the polish.
+The exposition facet is authored upstream at `/and-facets` time by the `exposition-author` subagent. Phase 0.6 reads that facet and assembles the preamble. **This phase does NOT dispatch an Agent call** — exposition is graph-resident, audience-modeled, source-cited, and already-judged through R2 + audit + audience-gate. The stitcher's job is to **consume** it, not re-author it.
 
-**Skip if** `interval-bridge.enabled: false` in the resolved profile.
+**1. Read exposition facet.**
+- Load `active-project/theater/facets/exposition-<slug>.md`.
+- If absent: **fallback mode** — emit `WARN-EXPOSITION-FACET-ABSENT` to the user and dispatch the legacy interval-bridge fork (see § Legacy fallback below). This path exists for episodes authored before exposition was wired upstream; flag for `/and-facets` re-run when convenient.
+- If present: parse entries; categorize by scope.
 
-**Mode resolution** (when `mode: auto`):
-- Read `active-project/staff/showrunner/memory.md` for this episode's `prior_episode:` field.
-- `prior_episode: none` (or absent) → mode = `cold-start`.
-- `prior_episode: <slug>` → mode = `prior-episode`. Verify `active-project/polish/<prior-slug>.md` exists; if absent, escalate to user (the bridge needs the prior polish to read from).
+**2. Categorize entries.**
+- **Episode-open pool**: entries with `scope: episode-open-preamble`, `scope: episode-open-context`, or `scope: prior-episode-bridge`. Always at `@0` (synthetic anchor). These render as the preamble.
+- **Per-anchor first-mention pool**: entries with `scope: first-mention-term`, `first-mention-object`, `first-mention-place`. Keyed by `@<anchor>`. These fold in during Phase 1 forks at their cited anchors.
+- **Per-anchor scene-orient pool**: entries with `scope: scene-open-orient`. Keyed by `@<anchor>`. Render at scene-open during Phase 1, BEFORE the scene's first bone-rendered sentence.
+- **Refused/dropped entries**: if any entry in the file has a `refused: <reason>` field or has been DELETED at R2 (gap-line in monotonic ID sequence with `# DELETED` comment), skip — do not render. The R2 judge's refusals are the canonical authority.
 
-**Fork inputs:**
-- Mode (cold-start | prior-episode)
-- `length-target`, `voice`, `set-off` from profile
-- For `cold-start`: the listed `cold-start-sources` resolved to file content (series-plan plot block, protagonist-arc, named world-build cards, this episode's chunk).
-- For `prior-episode`: prior polish's last 1–2 paragraphs (the terminal state on the page), showrunner memory's prior-episode terminal-state notes, this episode's chunk, the interval-delta (computed: time-gap if specified in chunk; locale-shift if first scene of new episode is in a different location than prior episode's last scene).
-- `forbidden-content` list as a fence (the fork's output must not add new plot content, paraphrase cast cards, or reach for author-meta).
+**3. Assemble preamble.**
+Order the episode-open pool by entry ID. Render each in sequence:
+- `renders-as: italic-preamble` → italicized paragraph.
+- `renders-as: preamble-paragraph` → italicized paragraph following the preamble (the preamble can be one paragraph or several; the schema allows ≤4 episode-open entries total).
+- Apply voice transform per profile `voice.person` and `voice.tense` (the exposition-author's R1+R2 should have rendered in the profile's voice, but the stitcher re-checks: any 3rd-person pronouns in entries where `voice: pov-frame: first-person` is profile-default trigger a **fault** at this phase — emit `FAULT-EXPOSITION-VOICE-MISMATCH` and either auto-rewrite via REWORD or escalate to user).
+- Separate the preamble block from the body with a single horizontal rule (`---`).
 
-**Fork output:**
-- The bridge paragraph (≤length-target words).
-- A faithfulness log: every claim in the bridge mapped to its source.
+**4. Write preamble artifact.**
+Save assembled preamble to `active-project/polish/<slug>.preamble.md`. Phase 8 prepends this to the final polish.
 
-The bridge is written to `active-project/polish/<slug>.preamble.md` as a standalone artifact, then prepended to `<slug>.md` at Phase 8 (clean) and to `<slug>.annotated.md` with a `<trace scope="preamble">` block (annotated).
+**5. Stage anchor pools for Phase 1.**
+Make the first-mention pool and scene-orient pool available to Phase 1 fork dispatches. Each scene-fork's input payload now includes:
+- The exposition entries firing at its anchor range (per their `@<anchor>` keys).
+- The `renders-as` directive for each entry.
 
-**Why this exists:** for the first episode of a series, the reader has no graph context — the bones+facets assume the upstream graph as background, but the polish is supposed to read standalone. For subsequent episodes, the reader has time between sessions and needs a recap. The interval-bridge handles both as the same problem: bridge the implicit/explicit gap between the prior chapter's end and this chapter's start, briefly and compellingly. The pipeline previously omitted this entirely, producing polish files that read as fragments without through-line.
+**Render-log entries** under `## Phase 0.6 — exposition consumption`:
+- The full preamble as rendered.
+- For each preamble entry: source-claim mapping (already cited by the facet; the render-log copies this for the auditor's trace).
+- Total entries categorized by scope; refused-at-R2 entries listed for the auditor.
+
+### Legacy fallback (when exposition facet absent)
+
+If `active-project/theater/facets/exposition-<slug>.md` does not exist:
+
+1. Emit `WARN-EXPOSITION-FACET-ABSENT` to the user. Recommend `/and-facets <slug>` re-run to author the missing facet.
+2. Read the legacy `interval-bridge:` block from the resolved profile (still defined in `schemas/stitch-profile.schema.md` for backwards-compat).
+3. Dispatch the legacy interval-bridge fork as previously specified. The fork's output is provisional — the auditor will not have source-traceability for it because no upstream facet authored the content with cited sources. Flag the polish in the render-log as `legacy-preamble-from-stitcher-fork` so downstream consumers know.
+
+This fallback is for transition — episodes authored under the old pipeline still produce. New episodes (post 2026-05-12) should always have an exposition facet from `/and-facets`. The fallback path will be deprecated once all in-flight episodes have been re-audited.
+
+**Why this design:** for the first episode of a series, the reader has no graph context — the bones+facets assume the upstream graph as background, but the polish is supposed to read standalone. For subsequent episodes, the reader has time between sessions and needs a recap. AND for any episode, audience-specific terms / objects / places require glossing for the union-of-personas-gap. The exposition facet handles all three as one upstream-authored-and-audited problem — bridge the implicit/explicit gap between the prior chapter's end and this chapter's start, plus brief in-line glosses for what the audience can't be expected to know, all source-cited and audit-gated. The stitcher is the renderer, not the author.
 
 ---
 
@@ -159,6 +182,7 @@ Per-fork dispatch:
 - Per-fork inputs:
   - The bone at @N (verbatim)
   - The facets at @N (verbatim — tens, narrator, memory, sensory, feel that fire)
+  - **Exposition entries at @N** (verbatim from `exposition-<slug>.md` per Phase 0.6 staging): any `first-mention-*` or `scene-open-orient` entries keyed to this anchor, with their `<gloss-text>`, `scope`, and `renders-as` directive. These are graph-resident license to render the gloss content — the fork MUST fold the gloss exactly as specified by `renders-as`, NOT rewrite or invent around it.
   - Scene label
   - Narrator slug (POV)
   - Previous 1–2 rendered lines in same paragraph (per `phase-1.continuity-context`)
@@ -167,8 +191,28 @@ Per-fork dispatch:
   - **Project asinine patterns** (from `project.asinine-patterns`) — fork must reshow or drop
   - **Bone-faithfulness fence** (from `project.bone-faithfulness-fence` + card § Bone-faithfulness fence) — fork must not invent dialogue / body / spatial / route / scene / cognitive detail
 - Per-fork output:
-  - One or more sentences for @N (multi-line at peaks where multiple facets render)
-  - Render-log entry (fork-id, lens-decider trace, structural-decision, any pre-empted Q5/Q8/Q9 cut)
+  - One or more sentences for @N (multi-line at peaks where multiple facets render; exposition fold-in counts as graph-resident, not invention)
+  - Render-log entry (fork-id, lens-decider trace, structural-decision, exposition entries folded with their render-as positions, any pre-empted Q5/Q8/Q9 cut)
+
+### Exposition fold-in mechanics
+
+When an exposition entry fires at the fork's anchor, the fork renders it per its `renders-as` directive (defined in `schemas/facet.schema.md` § exposition):
+
+| renders-as | Where the gloss text lands |
+|---|---|
+| `scene-bridge` | Single short sentence at the scene-open, BEFORE the first bone's rendered prose for the scene. Renders only on the first anchor of a new scene (post-time-skip-blank). |
+| `inline-appositive` | Em-dash appositive immediately after the first-mention noun in the bone-rendered sentence: `"the reeve — the lord's bookkeeper — came through the gate"`. |
+| `em-dash-fold` | Em-dash phrase mid-sentence: `"the morning bowl — porridge and salt — on the table"`. Functionally similar to inline-appositive but more flexible on placement (mid-sentence vs immediately-after-noun). |
+| `parenthetical-aside` | Parenthetical immediately after the first-mention sentence: `"He spoke to the reeve. (Our reeve was the lord's hand for village peace.)"`. Reads as narrator-aside; acceptable in first-person pov-frame. |
+| `post-bone-clause` | Full clause after the bone, period-separated: `"He opened the book. Different rank than the reeve — he rode from the lord himself."`. Heavier than appositive; reserved for content that needs sentence-length. |
+| `italic-preamble` / `preamble-paragraph` | Handled at Phase 0.6 (preamble assembly); does NOT appear in Phase 1 fork outputs. |
+
+**Hard rule: the fork renders the gloss text VERBATIM modulo voice-transform.** The exposition-author's R1+R2 already shaped the gloss for audience-fit, anti-jargon, hollow-prose, asinine, voice. The fork does not re-author. The fork applies only:
+- Voice transform (tense/person/contractions) per the active profile.
+- The `renders-as` positional placement.
+- POV-pronoun resolution if the gloss uses 3rd-person pronouns the profile says should be 1st-person.
+
+**Cross-episode register check (informational only).** The fork can check `active-project/staff/exposition-author/glossed-terms.md` to see which terms were glossed in prior episodes. The R2 judge should have already culled re-gloss entries; if one slips through, the fork emits a `WARN-EXPOSITION-REGLOSS` to the render-log but still renders (the judge's call is canonical; the warning is for the next-episode auditor to catch).
 
 The fork applies the lens decider (rules 1–6) per `staff/stitcher/card.md § Lens decider`. The persona's lens-bias table overrides rules 1–5 where applicable. Tiebreaker per profile's `phase-1.lens-decider.tiebreaker` (default: neutral-default kinetic order).
 
@@ -260,7 +304,8 @@ Per-fork dispatch:
 For each sentence in the Phase 6 draft:
 - Answer Q1–Q9 binary (yes/no) per the card § Phase 7
 - Apply persona's Phase-7 biases (per-question aggressiveness)
-- Under strict `cut-aggressiveness`: borderline = reject
+- **Exposition-derived sentences (preamble paragraphs, scene-orient bridges, fold-in glosses): apply Q9 (anti-jargon) and Q6 (fancy punctuation) normally; treat Q1 (load-bearing) as pre-cleared by upstream audience-modeling and Q5 (hollow-prose) / Q8 (asinine) as pre-cleared by R2 + audit. Borderline Q1/Q5/Q8 on exposition-derived prose = KEEP (the audience-gap is the load-bearing claim; second-guessing it at Phase 7 invalidates the upstream gap-test). Q9 + Q6 still cut/reword normally — a Q9 jargon-hit on exposition is a fault that should have been caught at the audit stage; surface as `FAULT-EXPOSITION-AUDIT-MISS` and REWORD inline.**
+- Under strict `cut-aggressiveness`: borderline = reject (except for exposition-derived per above)
 - Route to move per the move-class taxonomy:
   - Q1=no → CUT (unless bones-cuttable license fires)
   - Q5 or Q8 + boundary → CUT-CLAUSE
@@ -278,10 +323,11 @@ Each fork logs the per-sentence Q-line plus any moves. Output draft: `polish/<sl
 
 Single fork. Walk Phase 7 draft:
 - Assign stable line-IDs (sequential; gaps allowed where Phase 7 cut)
-- Prepend the Phase 0.6 interval-bridge preamble (if enabled): italic-rendered + horizontal rule before the body
+- Prepend the Phase 0.6 exposition preamble: italic-rendered paragraphs + horizontal rule before the body
 - Write clean polish: `active-project/polish/<slug>.md` (no line-IDs, no traces; preamble + body)
-- If `output.mode: dual`: write annotated polish: `active-project/polish/<slug>.annotated.md` with `[L<N>]` prefixes, `<trace>...</trace>` blocks per sentence, and `<trace scope="preamble">` for the bridge
-- Finalize render-log with STATS section (word count, sentence count, paragraph count, bones rendered/merged/dropped, facets rendered/dropped, reshow count, reword count, preamble-mode + length)
+- If `output.mode: dual`: write annotated polish: `active-project/polish/<slug>.annotated.md` with `[L<N>]` prefixes, `<trace>...</trace>` blocks per sentence, and `<trace scope="preamble">` for the bridge (the trace cites the exposition entry IDs that fed the preamble)
+- For each fold-in rendered at Phase 1, the annotated trace cites `exposition:<id>` alongside the bone and lens facets — exposition is now a first-class citation in the trace alongside narrator/feel/mem/sensory/metaphor
+- Finalize render-log with STATS section (word count, sentence count, paragraph count, bones rendered/merged/dropped, facets rendered/dropped, reshow count, reword count, preamble-source: `exposition-facet` or `legacy-fallback`, exposition entries-rendered/refused-at-R2/cross-episode-register-skipped)
 - Update showrunner memory: `stitched: true`
 
 ---

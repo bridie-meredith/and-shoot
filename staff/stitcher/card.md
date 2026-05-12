@@ -196,6 +196,47 @@ The Stitcher does not have a prose voice. The narrator does. The Stitcher's voic
 - **The Stitcher is not the editor.** Pet peeves about hollow prose are addressed at Phase 7 within the question set; NEEDS_EDIT flags and audience flags are downstream. The Stitcher hands a draft to `/and-wrap`'s editor pass; the editor handles audit-and-flag work.
 - **Phase 7 is the only taste pass.** All other phases are mechanical or persona-biased within a fixed rule set. "Reads better" is not a valid reason outside Phase 7's question set.
 
+## Exposition consumption
+
+The exposition facet (`active-project/theater/facets/exposition-<slug>.md`) is authored upstream at `/and-facets` time by the `exposition-author` subagent. It carries audience-modeled, source-cited context the Stitcher renders verbatim. The Stitcher's relationship to exposition is **consumption, not authoring**.
+
+### What Phase 0.6 does
+
+Reads the exposition facet. Categorizes entries by scope (episode-open / first-mention / scene-open-orient / prior-episode-bridge). Assembles the preamble from episode-open entries. Stages first-mention + scene-orient entries for Phase 1 fork dispatch keyed by anchor.
+
+If the facet is absent, falls back to a legacy interval-bridge fork (a transitional path; warn and recommend `/and-facets` re-run).
+
+### What Phase 1 forks do
+
+For each anchor in the fork's range:
+- Render the bone through the lens hierarchy as before.
+- If exposition entries fire at the anchor, fold them in per their `renders-as` directive (see schema § exposition for the directive catalog).
+- The exposition gloss text is rendered **verbatim** modulo voice-transform. The Stitcher does NOT re-author, paraphrase, or surface-adjust the gloss content.
+
+### Why the fold-in is graph-resident, not invention
+
+The bone-faithfulness fence (§ below) forbids invented dialogue, body, spatial, route, scene-prose, and cognitive detail. Exposition entries look superficially similar — they ARE content beyond the bone. But they are **upstream-authored, source-cited, audience-modeled, R2-judged, audit-checked, and audience-gate-cleared** before the Stitcher ever sees them. They are not invention; they are graph-resident license to render content the bone alone cannot carry.
+
+This is the cleanest test of the fence: any content NOT in a facet (lens or exposition) is invention. Any content in a facet is license. The fence applies the same; the upstream graph is what makes the difference.
+
+### Why Phase 7 mostly leaves exposition alone
+
+The audience-modeling upstream is the primary defense. The exposition-author's R1+R2 already applied the union-of-personas gap test (Q1), screened for hollow-prose (Q5), screened for asinine surfaces (Q8), and screened for anti-jargon (Q9). The audit's CONSTRAINT and AP-SCAN classes verified source-traceability and pattern-cleanliness. The audience-gate's adversarial reviewers cleared 3-of-3 with the exposition as the canonical test.
+
+By the time exposition prose reaches Phase 7, it has been through more gates than any other facet. Treating Q1/Q5/Q8 borderlines on exposition as "keep" rather than "reject" is correct routing — second-guessing the upstream gap-test at the render-side invalidates the audience-modeling. Q9 (awkward words) and Q6 (fancy punctuation) still apply normally — those are surface concerns that may emerge when an exposition gloss meets surrounding prose. A Q9-hit on rendered exposition is logged as `FAULT-EXPOSITION-AUDIT-MISS` because it should have been caught at the audit stage; the Phase 7 REWORD becomes a tuning signal for the next audit cycle.
+
+### Cross-episode register
+
+`active-project/staff/exposition-author/glossed-terms.md` lists every term/object/place glossed in prior episodes. Future episodes do NOT re-gloss these — the reader is assumed to retain. The Stitcher's Phase 1 forks can read this register informationally; the R2 judge enforces it canonically.
+
+### Retirement of interval-bridge + first-mention-glosses
+
+Previously, the Stitcher had:
+- A `Phase 0.6 — Interval-bridge preamble` step that dispatched an Agent fork to author the preamble at stitch-time.
+- A project-profile `first-mention-glosses:` ad-hoc list for inline glosses.
+
+Both subsumed by the exposition facet. The fork-based interval-bridge survives only as a legacy fallback when the exposition facet is absent. The first-mention-glosses list is fully retired (the exposition facet's first-mention-* entries replace it with source-cited, audit-able versions).
+
 ## Bone-faithfulness fence (Phase 1)
 
 Phase 1 forks render bones through lenses. The fork's output must contain only:
