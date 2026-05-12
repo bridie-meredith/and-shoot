@@ -1,3 +1,9 @@
+## SESSION-START — 2026-05-12T00:00:00Z — facets-final-audit-r1-hard-findings
+dispatch: Phase 5 remediation s01e03 — three HARD findings: flag-001 (STR-001) feeling citation token rewrites, flag-004 (STR-004) state-update citation token rewrites, flag-014 (CON-001) vibes licensed-by canonical token rewrites
+target: active-project/theater/proto-lines/s01e03.md + active-project/theater/facets/vibes.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 3
+
 ## SESSION-START — 2026-05-11T23:30:00Z — facets-audience-gate-r2-cycle3-deletes
 dispatch: s01e02 Phase 5b cycle 3 — two DELETE-with-cascade operations: Op-A (narrator:32 @177 channel-saturation DELETE) + Op-B (state:8 @22 old-state-ungrounded DELETE + margit referral)
 target: active-project/theater/facets/interest-narrator.md + active-project/theater/facets/state-updates.md + active-project/theater/facets/_inflight-r2/proto-lines-narrator.md + proto-lines-state-oc-tanner-father.md
@@ -615,3 +621,35 @@ criteria met: yes
 findings-applied: 5
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-12T00:30:00Z — facets-final-audit-r1-hard-findings-pass2
+dispatch: Phase 5 remediation s01e03 — three HARD findings: flag-001 (STR-001) feeling citation token rewrites in proto-lines/s01e03.md, flag-004 (STR-004) state-update citation token rewrites in proto-lines/s01e03.md, flag-014 (CON-001) vibes licensed-by canonical token rewrites in vibes.md; cite-index rebuild after
+target: active-project/theater/proto-lines/s01e03.md + active-project/theater/facets/vibes.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 3
+
+## flag-004 (STR-004) — RESOLVED — 2026-05-12T01:10:00Z
+fault: state-update citation tokens in proto-lines/s01e03.md use per-slice local IDs that collide with env-slice IDs in consolidated state-updates.md
+scope: line
+change: 35 targeted token rewrites in proto-lines/s01e03.md across 31 proto-line anchors. Full systematic scan performed: every [state:N] token verified against consolidated state-updates.md. Env-slice entries at their own anchors (IDs 1-27 where N=anchor entry ID) left unchanged; per-character slice citations rewritten. Rewrites: @8 state:1→36, @11 state:2→37, @15 state:3→38, @22 state:4→39+state:5→40, @24 state:6→41, @26 state:7→42, @30 state:8→43, @40 state:9→44, @42 state:10→45, @47 state:11→46, @67 state:1→29+state:12→47, @70 state:13→48, @93 state:14→49, @96 state:1→33 (audit example), @98 state:2→34, @101 state:3→35, @103 state:15→50, @107 state:16→51, @114 state:17→52, @116 state:18→53, @118 state:19→54, @123 state:20→55, @125 state:21→56 (audit example), @129 state:2→30, @133 state:22→57, @137 state:3→31, @139 state:4→32, @142 state:23→58, @145 state:24→59, @155 state:25→60, @162 state:26→61, @164 state:1→28+state:27→62 (audit example).
+criteria met: yes — all per-character slice citations now use consolidated IDs; mapping table at active-project/staff/fixer/s01e03-state-update-cite-mapping.md
+
+## cite-index-rebuild — BLOCKED — 2026-05-12T01:35:00Z
+note: fixer has no shell execution capability (Read/Write/Edit tools only); cannot invoke build_cite_index.py. Additionally: inflight files in _inflight/ and _inflight-r2/ carry pre-fix per-slice local IDs for both state and feel prefixes — running tool without --skip-merge would clobber canonical corrections via citation union override. Orchestrator must run: python3 active-project/staff/cite-index/build_cite_index.py s01e03 --skip-merge (cite-index only from canonical state) OR update inflight files first (out of scope per criteria). Recommend --skip-merge for this pass.
+
+## flag-014 (CON-001) — RESOLVED — 2026-05-12T01:25:00Z
+fault: vibes.md all 34 entries use non-canonical state-update-<slug>:N and feeling-<slug>:N licensed-by source tokens
+scope: line
+change: rewrote all non-canonical licensed-by tokens across all 34 vibes entries using consolidated ID mapping. state-update-taylor-hebert-flea-bottom:N → state-update:(35+N); state-update-oc-tanner-elder:N → state-update:(28+N); state-update-oc-tanner-father:N → state-update:(32+N); state-update-oc-broken-maester:3 → state-update:28. feeling-oc-tanner-elder:1 → feeling:2 (vibes:12, vibes:21). Total tokens rewritten: 51 state-update-* tokens + 2 feeling-* tokens across 33 vibes entries. vibes:17 had no non-canonical tokens (proto: and tens: only). Mapping tables at active-project/staff/fixer/s01e03-vibes-state-update-mapping.md + s01e03-vibes-feeling-mapping.md.
+criteria met: yes — all licensed-by source tokens now use schema-canonical form state-update:<N> and feeling:<N>
+
+## flag-001 (STR-001) — RESOLVED — 2026-05-12T00:45:00Z
+fault: feeling citation tokens in proto-lines/s01e03.md use per-slice local IDs that resolve to wrong entries in consolidated feeling.md
+scope: line
+change: 6 targeted token rewrites in proto-lines/s01e03.md — @6: removed [feel:1], kept [feel:2]; @15: [feel:1]→[feel:5]; @53: [feel:2]→[feel:6]; @98: removed [feel:1], kept [feel:4]; @131: removed [feel:2], kept [feel:3]; @145: [feel:3]→[feel:7]. Verified consolidated feeling.md mapping before edits (feel:1=maester@90, feel:2=elder@6, feel:3=elder@131, feel:4=father@98, feel:5=taylor@15, feel:6=taylor@53, feel:7=taylor@145 — all confirmed correct).
+criteria met: yes — all 6 proto-line anchors now cite the consolidated ID matching their anchor position
+
+## SESSION-END — 2026-05-12T01:40:00Z — facets-final-audit-r1-hard-findings-pass2
+findings-applied: 3 (flag-001 STR-001, flag-004 STR-004, flag-014 CON-001)
+findings-skipped: 0
+exit: DEPENDENCY-FLAGGED — cite-index rebuild blocked: fixer has no shell execution capability; orchestrator must run build_cite_index.py; inflight files carry pre-fix IDs and require --skip-merge flag to avoid clobbering canonical corrections
