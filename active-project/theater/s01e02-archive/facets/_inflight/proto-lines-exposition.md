@@ -44,7 +44,7 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 26 oc-tanner-father pivots toward the road south
 27 oc-tanner-father exits the junction [state:4]
 28 oc-tanner-mother exits the junction [state:2]
-30 taylor-hebert-flea-bottom opens the log [exposition:5] [narrator:8]
+30 taylor-hebert-flea-bottom opens the log [narrator:8] [exposition:5]
 31 taylor-hebert-flea-bottom writes the entry [state:3]
 32 taylor-hebert-flea-bottom closes the log
 34 the flies relay oc-tanner-elder [exposition:6]
@@ -103,7 +103,7 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 97 oc-tanner-father enters the market-side junction [loc-state:6] [state:5]
 98 oc-tanner-mother enters the market-side junction [state:3]
 99 oc-tanner-father faces taylor-hebert-flea-bottom
-100 oc-tanner-father speaks to taylor-hebert-flea-bottom [exposition:3] [narrator:19] [state:6]
+100 oc-tanner-father speaks to taylor-hebert-flea-bottom [narrator:19] [state:6] [exposition:3]
 101 taylor-hebert-flea-bottom faces oc-tanner-father
 102 taylor-hebert-flea-bottom speaks to oc-tanner-father
 103 oc-tanner-father speaks to taylor-hebert-flea-bottom
@@ -168,7 +168,7 @@ aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 50
 170 taylor-hebert-flea-bottom speaks to oc-tanner-mother [feel:4]
 171 oc-tanner-mother speaks to taylor-hebert-flea-bottom [narrator:30] [state:10] [vibes:21]
 172 oc-tanner-mother lowers the gaze [narrator:37]
-173 oc-tanner-mother stands [exposition:4] [feel:1] [narrator:31] [sensory:5] [state:4] [state:8] [state:9] [vibes:18] [vibes:19] [vibes:22] [vibes:23]
+173 oc-tanner-mother stands [feel:1] [narrator:31] [sensory:5] [state:4] [state:8] [state:9] [vibes:18] [vibes:19] [vibes:22] [vibes:23] [exposition:4]
 174 oc-tanner-mother exits the base room [state:10]
 176 taylor-hebert-flea-bottom opens the log
 177 taylor-hebert-flea-bottom writes the entry

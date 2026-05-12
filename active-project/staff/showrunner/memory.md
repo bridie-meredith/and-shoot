@@ -195,6 +195,17 @@ seasons:
         cycle3_signal_fixes: [find-001 tens-footer recompute, find-003 mem:9 NI-spine defense documented, find-004 vibes stale licensed-by removed]
         cycle3_signal_carry_forward: [find-002 URI-CONSOLIDATION-CITE-DRIFT (pre-existing pipeline; exceeds episode scope), find-005 @20 pile-up borderline (editor advisory at wrap)]
         cycle4_cap_exception: mem:13 target-reference rewrite (cond-westerosi-customary-authority-125ac → free-text Westerosi mechanism gloss); 3-of-3 ACCEPT; ratified in facets-audience-gate-r3.md §"Cap-exception ratification" on convergent-audience-single-field-repair grounds
+        exposition_retrofit:
+          applied: 2026-05-12 (claude/add-exposition-facet-pZ9TO)
+          scope: R1 blind author + Phase 2 merge only
+          entries: 7 (1 prior-episode-bridge @0 + 3 first-mention [fish-gate, customary-wage-claim, vigil-candle] + 2 scene-open-orient + 1 flagged-for-R2-drop)
+          sparsity: 5.2% (at-ceiling; over 1-5% band by 0.2 — scene-orient-c@34 flagged as natural drop candidate)
+          facet_file: active-project/theater/s01e02-archive/facets/exposition-s01e02.md
+          deferred:
+            - Phase 3 R2 judge (graph-aware KEEP/DELETE/REWORD)
+            - Phase 5 auditor mechanical pass (CONSTRAINT source-traceability + AP-SCAN scans)
+            - Phase 5b audience-gate adversarial review (3-of-3 persona ACCEPT)
+          rationale: user-direction "not really tuned but we'll manage without" — verification deferred to stitcher Phase 7 reflection at /and-stitch s01e02 time, or to a targeted retroactive audit pass if desired before stitch.
       - slug: s01e03
         status: audited-r1   # FLIPPED 2026-05-12 — Phase 5b cycle 3 cleared 9-of-9 facets to 3-of-3 ACCEPT (cap=3 fully used). Phase 5 r4 CLEAN (0 HARD; 13 SIGNAL all advisory; 5 SIGNAL CLOSED across cycles: flag-012 curve-shape, flag-017 vibes AP8, flag-018 tens AP2, flag-020 vibes forward-license, flag-022 vibes:32 AP8, flag-023 tens metadata staleness). Bidirectional loop VALIDATED. Cycle-by-cycle: c1 0-of-9 pass, c2 4-of-9 pass (state-updates/memory/feeling/metaphor), c3 5-of-5 re-fired facets pass (tensometer/location-state/interest-narrator/sensory/vibes). Critical cap-burn risk averted on interest-narrator dark-fantasy (FAIL c1+c2 → ACCEPT c3 once NI rewrites made displacement-trigger/foreknowledge-clamp/age-mismatch registers explicit on textual surface).
         audit_path: active-project/staff/auditor/facets-final-audit.md
@@ -239,6 +250,18 @@ seasons:
         aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 507, 513, 514, 522, 523, 524)
         aggregate_range_revised_at: 2026-05-11   # URI-028 honest-form declaration
         per_episode_tens_band_verdict: {1s: 65.2, 2s: 30.3, 3s: 4.5, status: "exempt-tone-law-slow-burn-on-3s-only (URI-034 Exemption 5; 1s/2s within standard band)"}
+        exposition_retrofit:
+          applied: 2026-05-12 (claude/add-exposition-facet-pZ9TO)
+          scope: R1 blind author + Phase 2 merge only
+          entries: 5 final (1 prior-episode-bridge @0 + 1 first-mention-term [clerk] + 1 first-mention-place [red-keep] + 2 scene-open-orient; 1 dropped post-author in fish-gate overlap reconciliation with s01e02 retrofit; IDs renumbered)
+          sparsity: 3.2% (within 1-5% band)
+          facet_file: active-project/theater/facets/exposition-s01e03.md
+          deferred:
+            - Phase 3 R2 judge (graph-aware KEEP/DELETE/REWORD; would cross-check the 7 scene-orient refusals against actual loc-state/NI fires the R1 author was blind to)
+            - Phase 5 auditor mechanical pass (CONSTRAINT source-traceability + AP-SCAN scans)
+            - Phase 5b audience-gate adversarial review (3-of-3 persona ACCEPT; canonical test for exposition specifically since the facet is audience-modelled by construction)
+          rationale: user-direction "not really tuned but we'll manage without" — verification deferred to stitcher Phase 7 reflection at /and-stitch s01e03 time, or to a targeted retroactive audit pass if desired before stitch.
+          notable_design_call: clerk gloss @3 deliberately avoids naming Hightower/Hand-of-the-King to preserve the season's terminal reader-asymmetry (per beat-26); whether that's the right call is a season-shape question, surfacing here for visibility.
     orchestrator_verdict_file: active-project/staff/auditor/season-s01-orchestrator-verdict.md
   - slug: s02
     chunk: "The glass-candle acquisition and sustained high-density relay load accumulate against the broken maester's sharpening documentation across the same months; the Khepri-mantle threshold crosses late in the season, the maester names it and is not heard, and Taylor arrives in s03 already changed — what cannot survive is the pre-threshold Taylor and the maester's belief that naming the line constitutes a brake."
