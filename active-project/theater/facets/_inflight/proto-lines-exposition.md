@@ -16,15 +16,15 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 
 1 the beetles relay the cold candle [loc-state:1] [narrator:1]
 2 the beetles relay oc-broken-maester
-3 the clerk enters the market-side junction [exposition:2] [loc-state:2] [narrator:2]
+3 the clerk enters the market-side junction [loc-state:2] [narrator:2] [exposition:2]
 4 the clerk faces oc-tanner-elder
 5 the clerk speaks to oc-tanner-elder
 6 oc-tanner-elder speaks to the clerk [feel:2]
 7 the clerk opens the record book [narrator:3] [state:1]
-8 the clerk writes the entry [narrator:4] [state:2] [state:36]
+8 the clerk writes the entry [narrator:4] [state:36] [state:2]
 9 the clerk closes the record book [state:3]
 10 the clerk exits the junction
-11 the clerk crosses the Fish Gate [loc-state:3] [mem:10] [narrator:5] [sensory:1] [state:4] [state:37] [vibes:1]
+11 the clerk crosses the Fish Gate [loc-state:3] [mem:10] [narrator:5] [sensory:1] [state:37] [state:4] [vibes:1]
 12 the flies relay the junction
 13 the flies relay the clerk
 14 taylor-hebert-flea-bottom opens the log [state:5]
@@ -51,9 +51,9 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 37 the second clerk speaks to the apothecary owner
 38 the apothecary owner speaks to the second clerk
 39 the second clerk opens the record book [state:9]
-40 the second clerk writes the entry [narrator:9] [state:10] [state:44]
+40 the second clerk writes the entry [narrator:9] [state:44] [state:10]
 41 the second clerk closes the record book [state:11]
-42 the second clerk releases the record book [narrator:10] [narrator:42] [state:12] [state:45] [vibes:9] [vibes:10]
+42 the second clerk releases the record book [narrator:10] [narrator:42] [state:45] [state:12] [vibes:9] [vibes:10]
 43 the second clerk exits the apothecary [sensory:3]
 44 the flies relay the doorframe
 45 the flies relay the second clerk
@@ -76,7 +76,7 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 64 taylor-hebert-flea-bottom exits the dock-side alley [loc-state:9]
 65 oc-tanner-elder speaks to taylor-hebert-flea-bottom
 66 taylor-hebert-flea-bottom extends the palm
-67 oc-tanner-elder places the coin [narrator:16] [narrator:43] [sensory:4] [state:13] [state:29] [state:47] [vibes:12]
+67 oc-tanner-elder places the coin [narrator:16] [narrator:43] [sensory:4] [state:29] [state:47] [state:13] [vibes:12]
 68 taylor-hebert-flea-bottom closes the fist [narrator:17] [state:14] [vibes:13]
 69 taylor-hebert-flea-bottom opens the log [state:15]
 70 taylor-hebert-flea-bottom writes the entry [narrator:18]
@@ -131,7 +131,7 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 122 taylor-hebert-flea-bottom opens the log
 123 taylor-hebert-flea-bottom writes the entry [narrator:29]
 124 taylor-hebert-flea-bottom closes the log
-125 taylor-hebert-flea-bottom faces the Red Keep [exposition:3] [mem:8] [narrator:30] [state:20] [state:56] [vibes:6] [vibes:7] [vibes:28]
+125 taylor-hebert-flea-bottom faces the Red Keep [mem:8] [narrator:30] [state:20] [state:56] [vibes:6] [vibes:7] [vibes:28] [exposition:3]
 127 the messenger enters the market-side junction [loc-state:17] [narrator:31]
 128 the messenger faces oc-tanner-elder
 129 the messenger speaks to oc-tanner-elder [state:30] [vibes:23]
@@ -143,7 +143,7 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 136 oc-tanner-elder exits the junction
 137 oc-tanner-elder enters the writing room [loc-state:18] [narrator:32] [sensory:6] [state:31]
 138 oc-tanner-elder writes the account [state:21]
-139 oc-tanner-elder seals the account [narrator:33] [narrator:44] [sensory:7] [state:22] [state:32] [vibes:24] [vibes:27]
+139 oc-tanner-elder seals the account [narrator:33] [narrator:44] [sensory:7] [state:32] [state:22] [vibes:24] [vibes:27]
 140 the middleman takes the account [narrator:34] [state:23]
 141 the middleman exits the writing room
 142 the flies relay the middleman [state:58]
