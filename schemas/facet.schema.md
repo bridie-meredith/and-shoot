@@ -220,7 +220,7 @@ Audience-modeled context — the reader-gap content. For each thing a fresh read
   - `first-mention-object` — series-specific object whose presence needs orientation (e.g. `the log`).
   - `first-mention-place` — location whose context the audience needs.
   - `prior-episode-bridge` — recap content for subsequent-episode interval-bridge.
-  - `scene-open-orient` — micro-bridge at scene boundary (time / place / why-here).
+  - `scene-open-orient` — micro-bridge at scene boundary (time / place / why-here). **Conditional fire** (see fire-rule below).
 - **`renders-as: <position>`** — one of:
   - `italic-preamble` — italic paragraph before the body (episode-open scopes only).
   - `preamble-paragraph` — additional preamble paragraph (episode-open-context only).
@@ -234,7 +234,16 @@ Audience-modeled context — the reader-gap content. For each thing a fresh read
 
 **Author:** `exposition-author` — a dedicated audience-modeled subagent that loads the active audience persona cards (`active-project/audience/`) and the series/world-build sources, then asks per-anchor: "would the union of these audience personas know what X is on cold read?" If no, an exposition entry is authored.
 
-**Per-anchor cap ≤2.** Multiple exposition entries on the same anchor are permitted only when one is episode-open-scope and one is first-mention-scope (rare; typically @1 of episode-1).
+**Per-anchor cap ≤2.** Multiple exposition entries on the same anchor are permitted only as one of these pairs: episode-open-* + scene-open-orient, scene-open-orient + first-mention-*, episode-open-* + first-mention-*. No two entries of the same scope on the same anchor.
+
+**Scene-open-orient conditional fire-rule (2026-05-12 dogfood-validated).** A `scene-open-orient` entry fires for a scene boundary if AND ONLY IF:
+- (a) the proto-line has a time-skip blank immediately preceding the scene-open anchor (i.e. the scene is genuinely discontinuous from the prior scene, not a paragraph break within a continuous time-frame), AND
+- (b) `location-state` does NOT fire at the scene-open anchor (loc-state at-establishment carries the time/place; if it fires, the scene-orient is wallpaper), AND
+- (c) no `interest-narrator` entry in the first 2 anchors of the new scene carries time-of-day or place-shift content (NI-cognition of "the morning was already half-gone" or "the city smell came up before the wall did" makes the scene-orient redundant; in that case NI carries the load).
+
+The exposition-author MUST audit each scene-boundary against these three conditions and refuse to fire when (b) or (c) holds. The lens facets carry the orientation; exposition stays out. This is the validated routing principle from the s01e01 dogfood — the Phase 2 author (full graph in hand) refused scene-orient entries that the Phase 1 author (no facets) authored, and the audit-trail was: lens facet covers, exposition refuses.
+
+When scene-orient fires, the entry is brief (≤15 words) and emits as `renders-as: scene-bridge` — a single short sentence at the scene-open, BEFORE the first bone's rendered prose. Examples (from s01e01): "After breakfast I went out to the yard." / "Mid-morning, my mother came back in." / "The next morning, the elder came." / "Down at street level," / "Within the hour,"
 
 **Sparsity 1-5%.** Higher than feeling/sensory because the audience-gap surface is significant in cross-genre projects (Worm-in-Westeros has gap on both sides); lower than NI because most of the prose carries via lens-facets without needing exposition.
 
