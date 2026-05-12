@@ -161,7 +161,6 @@ aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 50
 145 taylor-hebert-flea-bottom writes the entry
 146 taylor-hebert-flea-bottom closes the log
 147
-
 148 taylor-hebert-flea-bottom exits loc-flea-bottom-base
 149 taylor-hebert-flea-bottom enters the first alley
 150 taylor-hebert-flea-bottom walks the first alley
