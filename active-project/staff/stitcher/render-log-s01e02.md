@@ -187,4 +187,138 @@ User flagged three issues after first polish-read.
    - @169/@170/@171: Scene N mother's two-speech vigil close (the climax)
    This is an upstream pipeline gap — dialogue-writer phase missing from this episode's shoot-v2 chain. Escalated to user; decision pending on whether to author dialogue now (via per-character impersonator forks) and re-stitch, or proceed without.
 
+---
 
+## Re-stitch run — 2026-05-12 (dialogue facet integration)
+
+trigger: dialogue facets authored upstream (5 character files in `active-project/theater/dialogue/`); `/and-stitch` revised to consume them at Phase 0.7 as graph-resident utterances (parallel to exposition facet at Phase 0.6).
+re-stitch-scope: speech-bone-anchors only (Scenes A, E, I, L, O re-rendered; 9 non-speech scenes preserved verbatim from prior polish).
+profile: unchanged (worm-tight, first-person past).
+persona: unchanged (worm-tight).
+
+### Phase 0.7 — dialogue intake
+
+source: `active-project/theater/dialogue/` (5 character files, 1 empty by design)
+
+| character file | entries | behavior-card |
+|---|---|---|
+| taylor-hebert-flea-bottom.md | 4 | taylor-hebert-westeros |
+| oc-tanner-father.md | 5 | westeros-smallfolk |
+| oc-tanner-elder.md | 2 | westeros-smallfolk |
+| oc-tanner-mother.md | 3 | westeros-smallfolk |
+| oc-broken-maester.md | 1 | westeros-maester |
+| oc-dock-runner.md | 0 (intentional — no speech-bone for dock-runner; @37 is "the wasps relay oc-dock-runner", observation) | westeros-smallfolk |
+
+**Anchor→utterance map (built at Phase 0.7):**
+
+| anchor | speaker | dialogue-id | scope |
+|---|---|---|---|
+| @14 | oc-tanner-father | :1 | first-tanner-visit opening |
+| @15 | taylor | :1 | first-visit acknowledgement |
+| @19 | oc-tanner-father | :2 | trade-reference handoff (to elder) |
+| @20 | oc-tanner-elder | :1 | trade-reference acknowledgement |
+| @23 | oc-tanner-mother | :1 | edge-of-question close |
+| @24 | taylor | :2 | first-visit close |
+| @52 | oc-tanner-elder | :2 | carter dispatch |
+| @100 | oc-tanner-father | :3 | customary-wage opening |
+| @102 | taylor | :3 | transactional collapse |
+| @103 | oc-tanner-father | :4 | wage-claim hold |
+| @108 | oc-tanner-father | :5 | scheduled-return close |
+| @138 | oc-broken-maester | :1 | Citadel-register relay |
+| @169 | oc-tanner-mother | :2 | vigil-room open |
+| @170 | taylor | :4 | vigil-room cutting line |
+| @171 | oc-tanner-mother | :3 | vigil-room release |
+
+**Cross-validation:**
+- Speech bones in proto-lines/s01e02.md: 16 (excluding the @7/@8 `greets` which are action bones, not speech).
+- Anchors covered with dialogue facets: 14
+- Bare speech bones: 2
+  - **@84 lords-man speaks to the tenant family** — no dialogue facet for the lords-man (off-cast character; POV-distance bone, overheard at the eviction). Legacy-silent-speech preserved: "He spoke to the family at the door."
+  - **@137 the visitor speaks to the maester** — no dialogue facet for the visitor (off-cast). POV-distance; the beetles haven't picked up register yet. Legacy-silent-speech: "The visitor spoke; I did not hear what."
+  Both are POV-perceptual-distance bones; the bone-faithfulness fence holds. Not faults; expected by-design.
+- Unmoored utterances: 0
+- Speaker mismatches: 0
+
+### Phase 1 — speech-bone re-render (5 scene-cluster forks)
+
+Dispatch granularity: per-scene-cluster, parallel.
+
+| fork-id | scene | anchors with dialogue | utterances folded | attribution-verbs | log |
+|---|---|---|---|---|---|
+| RS1-A | Scene A junction | @14/@15/@19/@20/@23/@24 | 6 | said (3), answered (2) — speaker continuity carries the 6th (oc-tanner-mother @23 second sentence is single-utterance continuation) | folded: dialogue:oc-tanner-father:1, :2; dialogue:taylor-hebert-flea-bottom:1, :2; dialogue:oc-tanner-elder:1; dialogue:oc-tanner-mother:1 |
+| RS1-E | Scene E carter pass-off | @52 | 1 | said | folded: dialogue:oc-tanner-elder:2 |
+| RS1-I | Scene I customary wage | @100/@102/@103/@108 | 4 | said (3), answered (1) | folded: dialogue:oc-tanner-father:3, :4, :5; dialogue:taylor-hebert-flea-bottom:3 |
+| RS1-L | Scene L maester relay | @138 (also @137 bare) | 1 | colon-introduction via wall-relay framing — `the maester's voice came down:` (positional, not attribution-verb; the relay is the said-equivalent) | folded: dialogue:oc-broken-maester:1 |
+| RS1-O | Scene O vigil-room | @169/@170/@171 | 3 | said (2), answered (1) | folded: dialogue:oc-tanner-mother:2, :3; dialogue:taylor-hebert-flea-bottom:4 |
+
+All 5 forks rendered cleanly. No attribution-verb escapes (all within default-set {said, answered, replied, asked} — no `intoned`/`growled`/`whispered`). Utterances rendered VERBATIM. No FAULT-DIALOGUE-AUDIT-MISS (no Q9 anti-jargon hits on utterances).
+
+Scene A multi-utterance handling notes:
+- @14 (oc-tanner-father:1) is two sentences ("We come down with the hides." + "Your mother would see you.") — rendered as single attribution + speaker-continuity for the second sentence ("L7 + L8" in annotated form).
+- @23 (oc-tanner-mother:1) is similarly two sentences ("You've grown thin, child." + "Are you eating?") — same handling (L17 + L18).
+- @19/@20 is a multi-speaker exchange (father → elder → father→elder). Rendered in proto-line order with attribution switching at the speaker change ("He raised the trade goods. 'Old Tom...' / The elder answered him across the table. 'Aye...'"). MULTI-SPEAKER-ANCHOR-CLUSTER noted.
+
+Scene I parenthetical exposition fold-in:
+- exposition:3 @100 parenthetical-aside ("What the Crownlands called the customary wage — ...") is positioned AFTER the @100 utterance sentence (L61), per renders-as positional spec. The aside is the gloss for "wage-claim" introduced by the utterance.
+
+Scene L wall-relay framing:
+- The maester's voice reaches Taylor only via the beetles' register-relay through the wall (per the proto-lines architecture and the maester's behavior card). Phase 1 fork rendered the attribution with the relay-distance frame ("the beetles brought the register through the wall, and from the upper room the maester's voice came down:") rather than direct "the maester said" — respects POV-perception fence. Render-log notes this as a justified divergence from default attribution-verb form (the colon + register-frame IS the said-equivalent for a relayed utterance).
+
+### Phase 2–6 — no-ops on re-rendered scenes
+
+The dialogue weaving introduces no new echoes (utterances are content-distinct from surrounding narration), no merge candidates (utterance + attribution is its own micro-pattern; not subject to same-subject merge with adjacent bones), and no protected-pattern disturbances. Phase 5 within-anchor reorder declined: utterance-before-attribution vs attribution-before-utterance was chosen at Phase 1 per voice-fit and is stable.
+
+Non-re-rendered scenes (B, C, D, F, G, H, J, K, M, N) preserve their prior post-Phase-6 state verbatim — no re-walks.
+
+### Phase 7 — per-sentence sweep on re-rendered scenes
+
+Per the new `and-stitch.md` rule (2026-05-12): **dialogue utterances are pre-cleared on Q1/Q5/Q8/Q9/Q6** — the dialogue-writer fork's behavior-card-anchored authoring plus audience-gate is the upstream gap-test that the stitcher cannot second-guess. Attribution clauses ARE subject to Q1–Q9 normally.
+
+Per-sentence Q-line sweep (re-rendered scenes only):
+
+- **Scene A (15 new sentences L7–L21 covering utterances + attributions + preserved non-speech):** all KEEP. 4 utterance sentences pre-cleared. 4 attribution clauses Q1=load-bearing (specifies speaker) / Q5=no / Q8=no / Q9=no (no anti-jargon in "he said" / "my mother said" / "I answered"). Speaker-continuity-omission at L8/L18 evaluated as KEEP (Q1 still load-bearing — speaker disambiguated by L7/L17 immediate predecessor).
+- **Scene E (1 new sentence L34):** KEEP. Utterance pre-cleared; "the elder said" attribution Q1=yes / Q5=no / Q8=no / Q9=no.
+- **Scene I (12 new sentences L60–L74 covering utterances + attributions + preserved non-speech + exposition):** all KEEP.
+  - L60 ("He turned to me.") — Q1=yes (staging line establishing speaker for L61); kept rather than fusing into L61 to give the utterance its own beat.
+  - L65 ("I let the breath out.") — Phase 7 un-FUSE from the prior version's "He spoke again, and I let the breath out." The dialogue facet's @103 utterance now occupies the L64 sentence; the breath-beat at @104 stands alone (NI:20 load-bearing standalone weight). Recorded as `UN-MERGE @103/@104` per local-flow's `un-merge-license: true`.
+- **Scene L (1 new sentence L85):** KEEP. Utterance pre-cleared; the relay-frame ("the beetles brought the register through the wall, and from the upper room the maester's voice came down:") is attribution-equivalent — Q1=yes (load-bearing perceptual distance), Q5=no, Q8=no, Q9=no.
+- **Scene O (3 new sentences L104–L106):** all KEEP. Utterances pre-cleared. "my mother said" / "I answered" attributions clean. L105's POV-posture clause ("without raising my chin from the log") preserved from prior render — feel:9 lens fold, KEEP.
+
+Move tally (re-stitch increment):
+- cuts: 0
+- rewords: 0
+- reshows: 0
+- un-merges: 1 (@103/@104)
+- attributions added: 14
+- bare-speech-lines retained (LEGACY-SILENT-SPEECH): 2 (@84, @137)
+
+### Phase 8 — Finalize
+
+Stable line-IDs: episode renumbered sequentially due to scene-paragraph re-renders (L1–L113). Cut bones from prior run (@91) remain cut; bones-cuttable license intact. Annotated polish traces extended to cite `dialogue:<character>:<id>` as first-class facet alongside narrator/feel/mem/sensory/metaphor/exposition.
+
+Word count: 1094 (delta +159 vs prior 935 — the dialogue weaving adds ~17% body; net-narrative density unchanged because non-speech prose was already at worm-tight floor).
+
+### STATS
+
+- word-count: 1094
+- sentence-count: ~113 (L-IDs)
+- paragraph-count: 16 (preamble + 15 scenes)
+- bones rendered: 117 / merged: 32 / dropped: 1 (@91, cut prior run)
+- facets rendered: 287 entries from `_cite-index.md` (s01e02-archive) + 5 exposition entries (preamble + 4 anchor folds) + 14 dialogue utterances; biased silent: ~245 (lens-bias-only, not surfaced as content)
+- preamble-source: exposition-facet (s01e02-archive/facets/exposition-s01e02.md)
+- exposition entries-rendered: 5 / refused-at-R2: 0 / cross-episode-register-skipped: 6 (log/reeve/lords-man/flea-bottom/maester/Watch all reader-resident from s01e01, no re-gloss)
+- dialogue-source: dialogue-facet (theater/dialogue/, 5 character files post-2026-05-12)
+- dialogue character-files-loaded: 6 (5 with entries + 1 intentional empty)
+- dialogue utterances-rendered: 15 (14 anchor-keyed + 1 multi-sentence single-utterance continuation at @14 and @23)
+- dialogue bare-speech-bones: 2 (@84 lords-man, @137 visitor — POV-distance, by-design)
+- dialogue unmoored-utterances: 0
+- dialogue speaker-mismatches: 0
+
+### Render notes (re-stitch)
+
+- The `dialogue: ABSENT` failure mode flagged in the prior post-stitch surface-fixes round 3 is now resolved at the source — dialogue facets are upstream-authored and stitcher-consumed.
+- The dialogue facet integration validates the parallel-to-exposition design pattern: graph-resident content authored once at `/and-facets`, audience-gated at the same upstream gate, consumed verbatim at stitch. No invented content; no Phase 7 second-guessing; trace-citable end-to-end.
+- Two bare bones (@84/@137) document the legitimate POV-distance use case: not every speech-act in the proto-lines warrants an utterance — bones that exist only as overheard or perceived-without-content remain silent action.
+- For next-episode dialogue-writer fork tuning: the multi-utterance-single-anchor case (oc-tanner-father:1, oc-tanner-mother:1 — each two sentences keyed to one anchor) renders cleanly under "speaker continuity carries the second sentence without fresh attribution." Confirm this is the intended file-format vs. one-sentence-per-entry.
+
+showrunner memory: `stitched: true` (re-asserted; was already true from prior stitch).

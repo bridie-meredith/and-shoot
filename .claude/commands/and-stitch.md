@@ -4,6 +4,8 @@ description: Stitcher pipeline for one episode. Eight phases — lens-anchored r
 
 Stitcher pipeline. One episode in, clean polish + annotated traced polish + per-fork render-log out. The Stitcher assembles a final prose draft from the proto-line bones and the facet graph; each phase forks at its natural decision granularity (per-anchor, per-paragraph, per-window, per-sentence, etc.). No inter-fork memory; the render-log is the only cross-phase artifact.
 
+Dialogue and exposition are both **graph-resident facets** consumed by the stitcher (not authored by it). Exposition feeds the preamble + per-anchor first-mention/scene-orient glosses; dialogue feeds the verbatim utterance for every `X speaks to Y` proto-line bone. Both are loaded at Phase 0.6 / 0.7 and surfaced to Phase 1 forks as license to render content the bone-faithfulness fence would otherwise forbid.
+
 You are the orchestrator. Eight phases run in strict sequence:
 
 ```
@@ -116,9 +118,14 @@ Before dispatching Phase 1, emit a one-screen summary to the user:
   exposition:       <present | ABSENT (legacy-fallback)>
                     if present: <N> entries (preamble=<n>, first-mention=<n>, scene-orient=<n>; refused-at-R2=<n>)
                     cross-episode register: <N> terms reader-resident from prior episodes
+  dialogue:         <present | ABSENT (no-speech-episode | legacy-fallback)>
+                    if present: <K> character files, <N> total utterances
+                    anchors covered: <M> of <S> "speaks-to" bones in proto-lines
+                    unmoored utterances: <U>  # entries whose @anchor has no matching proto-line
+                    bare speech bones: <B>    # "speaks-to" bones with no dialogue entry — flagged for re-author
 ```
 
-This summary is the gate. If anything looks wrong (persona is `neutral` when it shouldn't be; anti-jargon list is empty when the project has one; voice config is unexpected; exposition is absent for a project where it should exist), the user catches it here, not at the polish file 1,500 words later. **`exposition: ABSENT` on a project that has run `/and-facets` post-2026-05-12 is a strong signal something went wrong upstream** — re-run `/and-facets` rather than proceeding with legacy fallback.
+This summary is the gate. If anything looks wrong (persona is `neutral` when it shouldn't be; anti-jargon list is empty when the project has one; voice config is unexpected; exposition is absent for a project where it should exist; dialogue is missing on an episode that clearly has speaking bones), the user catches it here, not at the polish file 1,500 words later. **`exposition: ABSENT` on a project that has run `/and-facets` post-2026-05-12 is a strong signal something went wrong upstream** — re-run `/and-facets` rather than proceeding with legacy fallback. **`dialogue: ABSENT` with `B > 0` bare speech bones is the canonical failure mode for the dialogue facet** — re-run `/and-facets` so the dialogue-writer fork can author utterances; do not let the stitcher invent dialogue under the bone-faithfulness fence.
 
 ---
 
@@ -171,6 +178,66 @@ This fallback is for transition — episodes authored under the old pipeline sti
 
 ---
 
+## Phase 0.7 — Read dialogue facets (utterance assembly)
+
+The dialogue facet is authored upstream at `/and-facets` time by the per-character `dialogue-writer` fork (one file per speaking character — see `schemas/dialogue.schema.md`). Phase 0.7 reads those files and builds an anchor→utterance lookup that Phase 1 forks consume. **This phase does NOT dispatch an Agent call** — dialogue is graph-resident, voice-shaped against each character's behavior card, audience-modeled, and audit-gated upstream. The stitcher's job is to **render**, not re-author or re-voice.
+
+**1. Read dialogue files.**
+- Enumerate `active-project/theater/dialogue/*.md`. Each file is one character's utterances across the episode.
+- For each file, read frontmatter: `character:`, `episode:`, `behavior-card:`. Reject (warn-and-skip) any file whose `episode:` does not match the active episode slug.
+- If the directory is empty AND the proto-lines file contains any `<X> speaks to <Y>` bones: **fallback mode** — emit `WARN-DIALOGUE-FACET-ABSENT` to the user with the count of bare speech bones. Recommend `/and-facets <slug>` re-run. Do NOT proceed with bone-fence-invented dialogue; the legacy path is to render speech bones as **silent action** (`he turned to her` rather than `he said "..."`), logged as `LEGACY-SILENT-SPEECH` per bone.
+- If the directory has files but a specific speech bone has no anchored utterance: **flag the gap** for re-author (`FAULT-DIALOGUE-MISSING-AT-<anchor>`). Do not paper over with invented dialogue. The Phase 1 fork for that anchor renders silent action and logs the fault; the user is expected to re-run `/and-facets` for that character.
+
+**2. Build the anchor→utterance lookup.**
+
+Parse every entry under each character file:
+
+```
+<id> @<proto-line-id> | <objective> | <utterance>
+```
+
+Index by `@<proto-line-id>` into a map:
+
+```
+dialogue-by-anchor[<proto-line-id>] = [
+  { character: <slug>, dialogue-id: <id>, objective: <text>, utterance: <text>, behavior-card: <slug> },
+  ...
+]
+```
+
+Multiple utterances may share an anchor (multi-utterance exchange under one bone). Preserve **file order** within an anchor — the dialogue-writer fork authored them in screen-time order; the stitcher renders them in that order under the bone's beat.
+
+**3. Cross-validate against proto-lines.**
+- Every `<X> speaks to <Y>` bone in proto-lines should have ≥1 entry in `dialogue-by-anchor[<that-bone-id>]`. Bones with no entry → log `BARE-SPEECH-BONE` (count surfaces at Phase 0.5).
+- Every entry in `dialogue-by-anchor` should point at a `<X> speaks to <Y>` bone whose speaker matches the entry's `character:`. Mismatches → log `DIALOGUE-SPEAKER-MISMATCH` (e.g. entry from `oc-tanner-father` keyed `@15` but proto-line 15 is `taylor speaks to ...`).
+- Entries with `@anchor` not present in proto-lines → log `UNMOORED-UTTERANCE`. These will not render (no bone to attach to).
+
+These cross-checks surface to Phase 0.5 pre-flight and to the render-log under `## Phase 0.7 — dialogue intake`. They do not halt the run unless `--strict-dialogue` is set on the call.
+
+**4. Stage anchor pools for Phase 1.**
+The `dialogue-by-anchor` map is made available to Phase 1 fork dispatches. For each fork whose anchor is a speech bone, the fork's input payload includes:
+- Every utterance entry keyed at that anchor (verbatim).
+- Each entry's `character:` slug (to drive attribution) and `behavior-card:` slug (to drive attribution-verb constraints).
+
+**Render-log entries** under `## Phase 0.7 — dialogue intake`:
+- Per character file loaded: filename, entry count, behavior-card slug.
+- Summary table: anchors covered / total speech bones; bare bones (with anchor IDs); unmoored utterances; speaker mismatches.
+- The dialogue-writer's authored objectives are preserved in the log for the auditor's trace, but they do NOT render in the polish — only utterances do.
+
+### Legacy fallback (when dialogue facet absent)
+
+For episodes authored before the dialogue facet was wired upstream:
+
+1. Emit `WARN-DIALOGUE-FACET-ABSENT` with the count of speech bones.
+2. Phase 1 forks for those bones render silent action only — `he turned to her, mouth closing on the word he didn't say` is acceptable; `he said "no"` is not. The bone-faithfulness fence holds: no invented dialogue.
+3. Flag every silent-speech bone in the render-log as `LEGACY-SILENT-SPEECH`. The polish is provisional — re-run `/and-facets <slug>` to author the missing utterances and re-stitch.
+
+This fallback parallels the exposition-absent path and will be deprecated once all in-flight episodes have dialogue facets.
+
+**Why this design:** dialogue is character voice, not narrator voice. Letting the stitcher invent dialogue under the bone-faithfulness fence violates the character primitive's exclusive authority over what their characters say. Authoring dialogue upstream as a per-character fork (one hermetic run per character, loading their behavior card + ltm + stm + state) is the only place where the voice is correctly shaped against the union-of-prompts that character has across the whole episode. The stitcher is the renderer — verbatim utterance + connective attribution, nothing more.
+
+---
+
 ## Phase 1 — Lens-anchored render
 
 **Hard rule: forks only, no orchestrator-inline rendering.** The `/and-stitch` command body MUST dispatch Agent calls to produce Phase 1 prose. The orchestrator's job is to fan out, collect, assemble — never to render. A Phase 1 prose block in the polish file that does not correspond to a fork-id entry in the render-log is `FAULT-PHASE-1-CONSOLIDATED` and the run must be re-dispatched. (See `staff/stitcher/card.md § Pet Peeves "orchestrator-consolidated Phase 1"`.)
@@ -183,6 +250,7 @@ Per-fork dispatch:
   - The bone at @N (verbatim)
   - The facets at @N (verbatim — tens, narrator, memory, sensory, feel that fire)
   - **Exposition entries at @N** (verbatim from `exposition-<slug>.md` per Phase 0.6 staging): any `first-mention-*` or `scene-open-orient` entries keyed to this anchor, with their `<gloss-text>`, `scope`, and `renders-as` directive. These are graph-resident license to render the gloss content — the fork MUST fold the gloss exactly as specified by `renders-as`, NOT rewrite or invent around it.
+  - **Dialogue entries at @N** (verbatim from `dialogue/<character>.md` per Phase 0.7 staging): for a `<X> speaks to <Y>` speech bone, every utterance keyed `@N` with its `<character>`, `<dialogue-id>`, `<behavior-card>`, and `<utterance>` (and `<objective>` for trace). These are graph-resident license to render character speech — without them, the bone-faithfulness fence forbids speech. Multi-utterance anchors render in file order under one beat.
   - Scene label
   - Narrator slug (POV)
   - Previous 1–2 rendered lines in same paragraph (per `phase-1.continuity-context`)
@@ -213,6 +281,23 @@ When an exposition entry fires at the fork's anchor, the fork renders it per its
 - POV-pronoun resolution if the gloss uses 3rd-person pronouns the profile says should be 1st-person.
 
 **Cross-episode register check (informational only).** The fork can check `active-project/staff/exposition-author/glossed-terms.md` to see which terms were glossed in prior episodes. The R2 judge should have already culled re-gloss entries; if one slips through, the fork emits a `WARN-EXPOSITION-REGLOSS` to the render-log but still renders (the judge's call is canonical; the warning is for the next-episode auditor to catch).
+
+### Dialogue fold-in mechanics
+
+When the fork's anchor is a `<X> speaks to <Y>` proto-line bone, every dialogue entry keyed `@N` renders under that bone. Dialogue is graph-resident: the bone-faithfulness fence's `dialogue=no` clause forbids **invented** dialogue, not **facet-licensed** dialogue. The fork:
+
+| step | rule |
+|---|---|
+| **Verbatim utterance** | Render the `<utterance>` field exactly as authored. No paraphrase, no re-voicing, no rewording — even Q9 anti-jargon is **not** applied to utterances at Phase 1 (the dialogue-writer fork loaded the project anti-jargon list and the character's behavior card; a Q9 hit on a finalized utterance is `FAULT-DIALOGUE-AUDIT-MISS` for the auditor, not a stitcher rewrite license). |
+| **Attribution** | Generated as connective tissue only. Use the speaker's display name (resolved from the character's persona card, NOT the slug). Verbs constrained to: `said`, `answered`, `replied`, `asked` (default); plus any verb explicitly listed in the speaker's behavior-card `preferred-attribution-verbs:` field if present. No invented verbs (no `intoned`, `growled`, `whispered` unless the behavior card lists them). |
+| **Beat placement** | Attribution may precede, follow, or split the utterance per voice-fit. Single-utterance anchor: `He said, "<utterance>"` or `"<utterance>," he said.` Multi-utterance same-anchor (file-order preserved): render successive utterances under one attribution if the speaker is the same; introduce a fresh attribution when the speaker changes within the anchor. |
+| **POV reference** | If the speaker is the narrator (POV actor), use first-person pronoun per `voice.person` and the active profile. Third-party speakers keep their display name on first mention in a scene; pronoun thereafter per `voice-transform.third-party-preserve`. |
+| **Multi-speaker anchor** | When `dialogue-by-anchor[@N]` lists entries from multiple speakers (the bone is `X speaks to Y` but Y's response shares the anchor), render in file order, switching attribution per speaker. The render-log notes `MULTI-SPEAKER-ANCHOR @N`. |
+| **Sensory + feel co-citations** | When a speech bone co-cites `feel:` or `sensory:` facets, render those per the standard lens decider as accompanying narration (before, after, or splitting the utterance). The lens decider's tens rule still governs whether feel/sensory beats the speech beat for the sentence rhythm. Default neutral-kinetic order: speech first, then feel/sensory beat. |
+
+**Bare speech bone (no dialogue entry):** the fork renders silent action only. Acceptable: `He turned to her, mouth opening on a word that did not arrive.` Unacceptable: any speech-shaped clause with a quote, or any paraphrase-of-content. Log `LEGACY-SILENT-SPEECH @N` and `FAULT-DIALOGUE-MISSING @N`. The user sees the count at Phase 0.5 and at Phase 8 STATS; the polish is provisional until the dialogue facet is re-authored.
+
+**Render-log per fork (speech bones):** the fork-id line names the dialogue entries folded (`folded: dialogue:<character>:<id>, dialogue:<character>:<id>`), the attribution verb chosen, and the speaker-attribution-form (display-name / pronoun / first-person).
 
 The fork applies the lens decider (rules 1–6) per `staff/stitcher/card.md § Lens decider`. The persona's lens-bias table overrides rules 1–5 where applicable. Tiebreaker per profile's `phase-1.lens-decider.tiebreaker` (default: neutral-default kinetic order).
 
@@ -305,7 +390,8 @@ For each sentence in the Phase 6 draft:
 - Answer Q1–Q9 binary (yes/no) per the card § Phase 7
 - Apply persona's Phase-7 biases (per-question aggressiveness)
 - **Exposition-derived sentences (preamble paragraphs, scene-orient bridges, fold-in glosses): apply Q9 (anti-jargon) and Q6 (fancy punctuation) normally; treat Q1 (load-bearing) as pre-cleared by upstream audience-modeling and Q5 (hollow-prose) / Q8 (asinine) as pre-cleared by R2 + audit. Borderline Q1/Q5/Q8 on exposition-derived prose = KEEP (the audience-gap is the load-bearing claim; second-guessing it at Phase 7 invalidates the upstream gap-test). Q9 + Q6 still cut/reword normally — a Q9 jargon-hit on exposition is a fault that should have been caught at the audit stage; surface as `FAULT-EXPOSITION-AUDIT-MISS` and REWORD inline.**
-- Under strict `cut-aggressiveness`: borderline = reject (except for exposition-derived per above)
+- **Dialogue-derived sentences (the utterance itself, NOT the surrounding attribution clause): treat Q1 / Q5 / Q8 / Q9 / Q6 as ALL pre-cleared by the dialogue-writer fork's behavior-card-anchored authoring plus the audience-gate. Borderline = KEEP. A Q9 jargon-hit on an utterance is `FAULT-DIALOGUE-AUDIT-MISS` and surfaces for re-author at `/and-facets`; the stitcher does NOT REWORD utterances (the verbatim invariant from Phase 1 holds through Phase 7). The attribution clause (`he said`, `she answered`) IS subject to all of Q1–Q9 normally — Phase 7 may cut a redundant attribution (`Q1=no → CUT`) but cannot touch the utterance it attributed.**
+- Under strict `cut-aggressiveness`: borderline = reject (except for exposition-derived and dialogue-utterance-derived per above)
 - Route to move per the move-class taxonomy:
   - Q1=no → CUT (unless bones-cuttable license fires)
   - Q5 or Q8 + boundary → CUT-CLAUSE
@@ -327,7 +413,8 @@ Single fork. Walk Phase 7 draft:
 - Write clean polish: `active-project/polish/<slug>.md` (no line-IDs, no traces; preamble + body)
 - If `output.mode: dual`: write annotated polish: `active-project/polish/<slug>.annotated.md` with `[L<N>]` prefixes, `<trace>...</trace>` blocks per sentence, and `<trace scope="preamble">` for the bridge (the trace cites the exposition entry IDs that fed the preamble)
 - For each fold-in rendered at Phase 1, the annotated trace cites `exposition:<id>` alongside the bone and lens facets — exposition is now a first-class citation in the trace alongside narrator/feel/mem/sensory/metaphor
-- Finalize render-log with STATS section (word count, sentence count, paragraph count, bones rendered/merged/dropped, facets rendered/dropped, reshow count, reword count, preamble-source: `exposition-facet` or `legacy-fallback`, exposition entries-rendered/refused-at-R2/cross-episode-register-skipped)
+- For each utterance rendered at Phase 1, the annotated trace cites `dialogue:<character>:<id>` alongside the speech bone — dialogue is also a first-class citation. Multi-utterance anchors emit one citation per entry. The attribution clause carries the bone citation; the utterance carries the dialogue citation.
+- Finalize render-log with STATS section (word count, sentence count, paragraph count, bones rendered/merged/dropped, facets rendered/dropped, reshow count, reword count, preamble-source: `exposition-facet` or `legacy-fallback`, exposition entries-rendered/refused-at-R2/cross-episode-register-skipped, dialogue-source: `dialogue-facet` or `legacy-silent-speech`, dialogue character-files-loaded / utterances-rendered / bare-speech-bones / unmoored-utterances / speaker-mismatches)
 - Update showrunner memory: `stitched: true`
 
 ---
@@ -360,7 +447,7 @@ If `staff/stitcher/feedback-<slug>.md` was read at Phase 0 with new line-level d
 
 ## What this command does not do
 
-- Does not modify proto-lines or facets. Source pipeline is upstream (`/and-protolines-v2`, `/and-facets`).
+- Does not modify proto-lines or facets. Source pipeline is upstream (`/and-protolines-v2`, `/and-facets`). This includes the dialogue facet — utterances are verbatim through every phase; stitcher's only freedom on speech bones is the attribution clause and beat placement.
 - Does not address audience flags or NEEDS_EDIT annotations. Those are the editor's job in `/and-wrap`.
 - Does not commit changes to canonical profile or persona. Session-scoped overrides from feedback are applied to a working copy; promotion to canonical files is a separate step (see `staff/stitcher/tuning-guide.md § Promotion`).
 - Does not parallelize across episodes. One episode per dispatch.
