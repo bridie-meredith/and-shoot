@@ -50,6 +50,14 @@ Usage:
 Flags:
   --skip-merge       Run cite-index only (legacy mode; no _inflight read).
                      Used by R2/R3 which mutate the canonical state directly.
+  --facets-dir DIR   Override the facets directory location. Defaults to
+                     active-project/theater/facets. Used by retrofits running
+                     against an archived episode directory.
+  --only-prefix P    Restrict the merge to a single facet prefix. Only the
+                     matching _inflight/proto-lines-<P>.md file is consulted;
+                     slice consolidation is skipped. Used to retrofit a new
+                     facet onto a previously-finalised episode without
+                     regressing post-R2 fixer edits on the other facets.
 """
 
 from __future__ import annotations
@@ -75,6 +83,20 @@ FACET_FILES: dict[str, str] = {
     "metaphor.md": "meta",
     "vibes.md": "vibes",
 }
+
+# Exposition is authored per-episode as `exposition-<slug>.md`. Resolved at
+# runtime from the episode slug rather than carried as a fixed filename, but
+# the citation prefix is stable.
+EXPOSITION_PREFIX = "exposition"
+
+
+def resolve_facet_files(facets_dir: Path, episode: str) -> dict[str, str]:
+    """Return the filename->prefix map for THIS episode (adds exposition if present)."""
+    files = dict(FACET_FILES)
+    expo = facets_dir / f"exposition-{episode}.md"
+    if expo.exists():
+        files[expo.name] = EXPOSITION_PREFIX
+    return files
 
 # Facets that are written as per-character slices in R1 parallel mode.
 # slice-file pattern: <slice-base>-<character-slug>.md
@@ -420,11 +442,12 @@ def consolidate_slices(facets_dir: Path) -> dict[str, tuple[Path, list[Path]]]:
 def stale_citation_check(
     cites_by_id: dict[int, list[tuple[str, int]]],
     facets_dir: Path,
+    facet_files: dict[str, str],
 ) -> list[str]:
     """Every [<prefix>:<id>] on a proto-line must resolve to an entry."""
     errors: list[str] = []
     entries_by_prefix: dict[str, set[int]] = {}
-    for fname, prefix in FACET_FILES.items():
+    for fname, prefix in facet_files.items():
         ents = parse_facet_file(facets_dir / fname, prefix)
         entries_by_prefix[prefix] = {e["id"] for e in ents}
     for pid, toks in cites_by_id.items():
@@ -446,9 +469,10 @@ def build_index(
     proto_bodies: dict[int, str],
     proto_cites: dict[int, list[tuple[str, int]]],
     protoline_path: Path,
+    facet_files: dict[str, str],
 ) -> str:
     entries_by_facet: dict[str, list[dict]] = {}
-    for fname, prefix in FACET_FILES.items():
+    for fname, prefix in facet_files.items():
         entries_by_facet[prefix] = parse_facet_file(facets_dir / fname, prefix)
 
     for prefix, ents in entries_by_facet.items():
@@ -501,7 +525,7 @@ def build_index(
     out.append(f"# Cite-Index — {episode}")
     out.append(f"generated: {date.today().isoformat()}")
     out.append(f"source: {protoline_path} + {facets_dir}/")
-    out.append(f"scope: 9 facet files + 1 proto-lines file")
+    out.append(f"scope: {len(facet_files)} facet files + 1 proto-lines file")
     out.append(
         f"totals: {total_entries} facet entries; "
         f"{total_decorated}/{total_bones} protolines decorated "
@@ -521,7 +545,7 @@ def build_index(
 
     out.append("## Per-facet entries")
     out.append("")
-    for fname, prefix in FACET_FILES.items():
+    for fname, prefix in facet_files.items():
         ents = entries_by_facet[prefix]
         out.append(f"### {prefix} ({len(ents)} entries)")
         if not ents:
@@ -603,12 +627,22 @@ def main(argv: list[str]) -> int:
         action="store_true",
         help="cite-index only; skip _inflight merge + slice consolidation",
     )
+    parser.add_argument(
+        "--facets-dir",
+        default=None,
+        help="override the facets directory (defaults to active-project/theater/facets)",
+    )
+    parser.add_argument(
+        "--only-prefix",
+        default=None,
+        help="restrict merge to a single facet prefix; skip slice consolidation. "
+             "Used to retrofit a new facet without regressing post-R2 fixer edits.",
+    )
     args = parser.parse_args(argv[1:])
 
     episode = args.episode
     project_root = Path("active-project")
-    facets_dir = project_root / "theater" / "facets"
-    inflight_dir = facets_dir / "_inflight"
+    facets_dir = Path(args.facets_dir) if args.facets_dir else project_root / "theater" / "facets"
     protoline_path = project_root / "theater" / "proto-lines" / f"{episode}.md"
 
     if not facets_dir.exists():
@@ -618,6 +652,7 @@ def main(argv: list[str]) -> int:
         print(f"protoline file not found: {protoline_path}", file=sys.stderr)
         return 1
 
+    facet_files = resolve_facet_files(facets_dir, episode)
     header, base_bodies, base_cites, _ = parse_proto_file(protoline_path)
 
     if not args.skip_merge:
@@ -626,6 +661,13 @@ def main(argv: list[str]) -> int:
         for d in sorted(facets_dir.glob("_inflight*")):
             if d.is_dir():
                 inflight_files.extend(sorted(d.glob("proto-lines-*.md")))
+        if args.only_prefix:
+            # Retrofit mode: consider only the named prefix's _inflight copy.
+            only = args.only_prefix
+            inflight_files = [
+                p for p in inflight_files
+                if _facet_prefix_from_inflight_name(p) == only
+            ]
         if inflight_files:
             body_errors = body_integrity_check(base_bodies, inflight_files)
             if body_errors:
@@ -640,17 +682,21 @@ def main(argv: list[str]) -> int:
         protoline_path.write_text(canonical_text)
         print(f"merged {len(inflight_files)} author copies → {protoline_path}")
 
-        # Phase 3: slice consolidation
-        slice_report = consolidate_slices(facets_dir)
-        for target, (path, sources) in slice_report.items():
-            src_names = ", ".join(s.name for s in sources)
-            print(f"consolidated {target} from [{src_names}]")
+        # Phase 3: slice consolidation. Skipped in --only-prefix retrofit mode
+        # because re-consolidating from slices on an already-finalised episode
+        # would clobber post-Phase-5 fixer edits applied directly to the
+        # consolidated files.
+        if not args.only_prefix:
+            slice_report = consolidate_slices(facets_dir)
+            for target, (path, sources) in slice_report.items():
+                src_names = ", ".join(s.name for s in sources)
+                print(f"consolidated {target} from [{src_names}]")
 
         # Refresh post-merge state for downstream checks
         _, base_bodies, merged_cites, _ = parse_proto_file(protoline_path)
 
         # Phase 4: stale-citation check
-        stale_errors = stale_citation_check(merged_cites, facets_dir)
+        stale_errors = stale_citation_check(merged_cites, facets_dir, facet_files)
         if stale_errors:
             print("STALE-CITATION FAIL — citations don't resolve to facet entries:", file=sys.stderr)
             for err in stale_errors:
@@ -660,7 +706,7 @@ def main(argv: list[str]) -> int:
         merged_cites = base_cites
 
     # Phase 5: cite-index
-    index_text = build_index(episode, facets_dir, base_bodies, merged_cites, protoline_path)
+    index_text = build_index(episode, facets_dir, base_bodies, merged_cites, protoline_path, facet_files)
     out_path = facets_dir / "_cite-index.md"
     out_path.write_text(index_text)
     print(f"wrote {out_path}")
