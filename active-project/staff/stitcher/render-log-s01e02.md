@@ -170,4 +170,21 @@ This is the first stitch under bones-only-write semantics (V2 architecture). Pri
 
 **Source archive deviation:** all facets for s01e02 read from `theater/s01e02-archive/facets/` because `/and-shoot` Phase 0 already archived the episode before this stitch ran (active `facets/` directory now holds s01e03 content). Proto-lines read from canonical `theater/proto-lines/s01e02.md`. This is the expected wrap-after-shoot pattern.
 
+## Post-stitch surface fixes (2026-05-12, user feedback round)
+
+User flagged three issues after first polish-read.
+
+1. **FAULT-EXPOSITION-AUDIT-MISS @0** — preamble line "The tanner-village was a day's walk south and had stayed there." Q8 asinine surface (non-sentient-negation: locations don't move, saying it "stayed" is non-sentient-negation contrast). The upstream exposition-author's R2 + audience-gate should have caught — per stitcher card § Exposition consumption, Phase 7 normally treats Q1/Q5/Q8 on exposition as pre-cleared by upstream gap-test. User override applied: dropped "and had stayed there." Polish + annotated polish updated inline. Flagged for next exposition-author re-audit cycle: pattern "locations-can't-do-X non-sentient-negation" should be added to `staff/exposition-author/anti-asinine-patterns.md` (file may not yet exist; promote to AP-SCAN class via shared auditor library per URI-026 TASTE-FLAG → AP-SCAN promotion path).
+
+2. **Phase 7 Q9 miss @10** — "the arrival entered" was bone @10's coded noun-form (proto-line: `the arrival enters the junction`). Rendered literally as English subject reads unclear (Q9 awkward) + redundant with L3 ("My father crossed in from the market side, my mother a step behind him"). Phase 7 P7-1 fork FUSED @9/@10/@11 but did not REWORD @10's awkward noun-form. Post-stitch correction: collapsed @10 into "them" (the father+mother as established subjects); L4 now reads "I walked into the junction and pivoted toward them." This is an instance of "bone-coded noun-form" not being on the worm-tight Q9 invented-compound list yet — promote to Q9 tuning notes: bone-coded indefinite-article noun-subjects ("the arrival", "the visitor" in some contexts) need REWORD to specific subject or pronoun when the antecedent is in the prior sentence.
+
+3. **FAULT-DIALOGUE-MISSING — entire episode** — user asked "we're missing the dialogue. did we run it?" Answer: **no dialogue-writer phase was ever run for s01e02.** The 17 `speaks to` bones in proto-lines/s01e02.md carry zero `<character-slug>:<id>` citations. No `theater/dialogue/` directory exists in active or archive. The stitcher's bone-faithfulness fence forbids inventing dialogue content, so all 17 speech-act bones rendered as bare "spoke to me / I answered" surfaces. Load-bearing speeches missing utterance content:
+   - @14/@15/@19/@20/@23/@24: Scene A first tanner-visit (father presents trade goods; elder counter-frames in customary-wage register; mother addresses Taylor with Tya-name)
+   - @52: Scene E elder speaks to carter
+   - @84: Scene H lord's-man speaks to tenant family at eviction
+   - @100/@102/@103/@108: Scene I second tanner-visit (customary-wage transaction — the moral spine of the episode)
+   - @137/@138: Scene K visitor-and-maester exchange
+   - @169/@170/@171: Scene N mother's two-speech vigil close (the climax)
+   This is an upstream pipeline gap — dialogue-writer phase missing from this episode's shoot-v2 chain. Escalated to user; decision pending on whether to author dialogue now (via per-character impersonator forks) and re-stitch, or proceed without.
+
 
