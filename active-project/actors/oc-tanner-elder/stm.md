@@ -1,4 +1,9 @@
 STM:
+- Placed the girl in Flea Bottom upper room above the eastern-quarter apothecary; paid for the room before she lifted the pack
+- Routed her through the dock-runner at the market-side junction; first network placement set
+- Knows she is Tya-who-came-back-wrong; placed her in strange-but-reliable category; second-placement (network) used same protocol on same ledger
+- Acceptance is conditional and permanent in its conditionality; she earns it monthly
+- Does not warm; does not investigate; the placement's reputation impact is what he monitors
 - Placed Taylor into dock-side runner work this episode; paid her cut at the alley mouth
 - Relayed tanner-father's check-in to Taylor verbatim; serves as the two-way relay between father's monitoring and Taylor's awareness
 - Received and accepted a formal written request from a senior operative (messenger); agreed to write and seal an account by midday the following day
@@ -7,3 +12,4 @@ STM:
 - Continues to operate on trade-reference and conditional-acceptance logic; no suspicion that anything has changed
 - Does not know about clerk-1 (Fish Gate junction) or clerk-2 (apothecary upper room) as components of the same apparatus he just fed
 - Tanner-father remains at monitoring distance; elder is the contact point for both
+- Will route again only when the placement reads as reliable to the dock-runner's first report

@@ -156,6 +156,28 @@ flagged: 14 (10 corrective, 4 positive anchors)
 accepted: Clinical/body-tracking/fauna-relay register holds across most scenes. Earth-Bet hard-fence preserved (no Worm-proper-nouns; Westeros transplant terminology consistent). Three-note-buildup at scene-L, "dusk cut the apothecary corner to a strip" at scene-M, and the mother's vigil-close line at scene-N all land canon-precise. Log-trio protected pattern lands as percussion, not refrain-fatigue.
 why: Confusion clusters at pronoun ambiguity (L13/L19/L25 — "he" routes to wrong antecedent on first read) and inverted cause/effect ordering at L23 (stylus-drop peak fogged). The 400m range-expansion peak at L15 is flattened by three identical exhale-reports where canon-Taylor would body-track specific physiological signatures. Two narrator-explanation seams (Fish Gate gloss, customary-wage parenthetical) read as exposition welded into Taylor's frame rather than emerging from it. No mechanics violations; no lore leaks; no Earth-Bet fence breaches. Carry-forward live watches (insect-network/glass-candle theory; maester distance precision) remain unresolved at execution but are not in s01e02 scope.
 
+## Wrap review s01e01 — 2026-05-13
+
+flagged: 11 corrective + 5 accept-anchors = 16 total annotations
+
+accepted: Earth-Bet fence holds throughout — no Worm-proper-nouns, no shard-jargon in register, no canon-timeline intrusions. Log-trio at scene-A / scene-L / scene-N correctly maintained as percussion. Three-beat anaphora at scene-K (corners-gave / corners-gave / corners-didn't-give) is the best single passage in the episode: limit-acknowledgment in register. "The first note was a song Tya knew. The spiders in the rafters didn't know it." lands as the clearest insect-proxy-as-measure sentence in the draft — this is the episode showing it knows what it's doing. "The word I gave the runner was the word I had given before, to a person I could have burned and did not." is foreknowledge-clamped Taylor at full registration; the negative-space self-reference is exactly right. Protected patterns (doubled-walk, departure-road-pair, threshold-cross) all execute correctly. No lore leaks; no mechanics violations outright; no timeline contradictions.
+
+why / what was flagged:
+
+PATTERN-LEVEL: Author-explanation seams ventriloquized through Taylor's first-person register appear three times across three scenes (reeve definition Scene E; maester definition Scene J; gold cloaks definition Scene M). Taylor knows all three of these institutions at this point in the story. None of these explanations can be her internal thought; all three are the author explaining to the reader. This is the top concern from this review — the pattern is persistent and erodes the POV discipline that is otherwise the episode's strongest attribute.
+
+MECHANICS PRECISION: Two proprioceptive-relay overreach flags. (1) Scene J: "a maester, by the chain of his voice" conflates a visual identifier (the maester's chain) with an auditory relay channel (voice) in a passage where Taylor's insects have not been established as having a visual line on his person from below. The chain is a sight-identification; if she is identifying him by sound alone, the phrase is misleading about what sense is operative. (2) Scene L: "his gaze left the south wall" — tracking gaze-direction is outside the established proprioceptive-relay parameters (she senses body position, arm extension, footfall weight; she does not relay eye-direction). Both are flagged as mechanics-precision issues under the live watch requiring Taylor's shard-capability to be precisely bounded in execution.
+
+REGISTER DRIFT (minor, distributed): Preamble close ("They weren't wrong about the wrong part" — quippy self-awareness inconsistent with foreknowledge-clamped instrument-Taylor); Scene C ("honest by what I wasn't saying" — register-explanation seam where the action should stand without narrated ethics); Scene D ("the cost of staying" — abstraction inside a specifics-inventory); Scene I ("a season I had not yet reached" — retrospective-narrator framing that belongs in the preamble, not the body).
+
+no new mechanics violations: All s01e01 shard-capability uses (sphere-radius, fauna-variety-spread, proprioceptive-relay, limit-acknowledgment at corners) remain within established parameters. The 300m sphere is explicitly named in the interval bridge and the fauna-spread operates within it. No capability exceeds established ceiling. Carry-forward live watch on distance-from-maester-precision: not yet resolved in s01e01 (maester is upstairs, range unquantified in prose; noted but not a HARD flag at s01e01 scope — expected to be resolved later).
+
+updated carry-forward watches (unchanged from prior):
+1. [CARRY-FORWARD] Taylor's in-world theory for insect-network/glass-candle interaction must appear in prose before the s4 experiment.
+2. [CARRY-FORWARD] Distance from maester must be established with precision at least once.
+
+new pattern note for editor: Author-explanation seams (three instances in s01e01; two in s01e02 per prior review) are now a cross-episode pattern. If the editor remediates the three s01e01 instances, the pattern will have appeared in both pilot episodes. Subsequent episodes should be held to zero instances — Taylor-as-narrator does not gloss world-institutions to herself; she moves through them.
+
 ## Wrap review s01e03 — 2026-05-13
 flagged: 7 (2 high-severity, 3 medium, 2 low)
 earth-bet-fence: 0 hard breaches; 1 register-bleed risk (flag-001)

@@ -1,9 +1,14 @@
 STM:
-- Has been observed via Taylor's beetle network through multiple sessions; not yet aware of the observation
+- Has now correlated the insect anomaly with the new resident below; the laugh at the south-wall footfall was direction-specific to her
+- The insect anomaly has been present in his records for some weeks; now has a likely source
+- Will continue observation; the listener may be useful before she is dangerous, or both
+- Keeps active records; thirty years of such records in the secondary room; the new observations will be entered without naming the source by name
 - Active records continue: pen running through the sage-errand absence; sessions are uninterrupted and long-form
 - Pen-set with hand-on-shaft hold past the close is now a body-recognized tell in Taylor's log; she has categorized him as parallel-documentation kin
-- Chain stripped by Citadel; consultation arrangement with apothecary below remains the operating structure
-- Has not yet correlated the insect anomaly with Taylor specifically
+- Chain was stripped by Citadel; lives by consultation arrangement with apothecary below
+- His position is brake-not-ally; he is not certain yet what the brake is for, only that one will be needed
+- Spoke aloud to a room he knew was being listened to; the speaking-to-the-room is a deliberate channel now
+- Has been observed via Taylor's beetle network through multiple sessions; not yet aware of being directly watched as observer
 - Is a named log entry in Taylor's record as of this season; the categorization is Taylor's, not his — he does not know he is being witnessed or named
 - Functions as the sole figure in range whose documentation practice Taylor reads as cognate to her own; this is the axis on which the brake relationship will eventually form
 - Not yet engaged as brake; no direct contact with Taylor
