@@ -1,5 +1,5 @@
 ---
-description: Stitcher pipeline for one episode. Eight phases — lens-anchored render → redundancy cull → compression → voice transform → local flow → buildup preservation → editorial reflection → finalize. Output - polish/<slug>.md + polish/<slug>.annotated.md + staff/stitcher/render-log-<slug>.md. Usage - /and-stitch [episode-slug] [--profile <path>] [--persona <slug>]
+description: Stitcher pipeline for one episode. Eight phases — lens-anchored render → redundancy cull → compression → voice transform → local flow → buildup preservation → editorial reflection → finalize. Output - draft/<slug>.md + draft/<slug>.annotated.md + staff/stitcher/render-log-<slug>.md. Phase 1 has two modes — per-anchor (default) and scene-window (opt-in via profile; one fork per scene with overlap-read context, breaks multi-bone percussion). Usage - /and-stitch [episode-slug] [--profile <path>] [--persona <slug>]
 ---
 
 Stitcher pipeline. One episode in, clean polish + annotated traced polish + per-fork render-log out. The Stitcher assembles a final prose draft from the proto-line bones and the facet graph; each phase forks at its natural decision granularity (per-anchor, per-paragraph, per-window, per-sentence, etc.). No inter-fork memory; the render-log is the only cross-phase artifact.
@@ -59,7 +59,7 @@ proto-lines/<slug>.md + facets/* + _cite-index.md
         ▼
    PHASE 8 — FINALIZE (single)
             Assign stable line-IDs (gaps allowed).
-            Write polish/<slug>.md (clean) + polish/<slug>.annotated.md (traced).
+            Write draft/<slug>.md (clean) + draft/<slug>.annotated.md (traced).
             Finalize render-log + STATS.
 ```
 
@@ -71,7 +71,8 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
 - `--profile <path>` — optional. Override the active profile path. Default: `active-project/theater/stitch-profile.md`.
 - `--persona <slug>` — optional. Override the active persona. Default: read from profile's `persona:` field; fallback `neutral`.
 - `--allow-bare-speech` — optional. Explicit opt-in to the legacy silent-speech fallback (Phase 0.7 § Legacy fallback). Without this flag, an episode with `speaks to` bones and an empty/missing dialogue facet HARD-ABORTS at Phase 0.5; the user must run `/and-facets <slug>` first. Pass this flag only when knowingly stitching a pre-2026-05-12 episode whose dialogue facet cannot be retroactively authored. Marked in the render-log header.
-- `--keep-drafts` — optional. Retain the Phase 1–7 `<slug>.phase-*.draft.md` intermediate files in `active-project/polish/` after a successful run. Default behavior at Phase 8 is to prune them (the render-log retains the trace; the drafts are reproducible). Debugging use only.
+- `--keep-drafts` — optional. Retain the Phase 1–7 `<slug>.phase-*.draft.md` intermediate files in `active-project/draft/` after a successful run. Default behavior at Phase 8 is to prune them (the render-log retains the trace; the drafts are reproducible). Debugging use only.
+- `--phase-1-mode <per-anchor|scene-window>` — optional. Override the active profile's `phase-1.mode` field. Default resolves from profile; schema default is `per-anchor`. `scene-window` dispatches one fork per dramatist-marked scene with overlap-read context (back-look on prior rendered scene; forward-look on next scene's bones+facets). Use when the episode's prose feels metronomic across multi-bone clusters and the bones/facets are otherwise healthy — see § "Phase 1 — scene-window mode" below.
 
 ---
 
@@ -120,6 +121,9 @@ Before dispatching Phase 1, emit a one-screen summary to the user:
   exposition:       <present | ABSENT (legacy-fallback)>
                     if present: <N> entries (preamble=<n>, first-mention=<n>, scene-orient=<n>; refused-at-R2=<n>)
                     cross-episode register: <N> terms reader-resident from prior episodes
+  phase-1-mode:     <per-anchor | scene-window>     # from profile.phase-1.mode; default per-anchor
+                    if scene-window: <S> scene-forks (boundaries from <tensometer | scene-map facet>)
+  output-dir:       active-project/draft/           # stitcher output (not polished — editor pass lands in active-project/polish/)
   dialogue:         <present | ABSENT (no-speech-episode | legacy-fallback)>
                     if present: <K> character files, <N> total utterances
                     anchors covered: <M> of <S> "speaks-to" bones in proto-lines
@@ -161,7 +165,7 @@ Order the episode-open pool by entry ID. Render each in sequence:
 - Separate the preamble block from the body with a single horizontal rule (`---`).
 
 **4. Write preamble artifact.**
-Save assembled preamble to `active-project/polish/<slug>.preamble.md`. Phase 8 prepends this to the final polish.
+Save assembled preamble to `active-project/draft/<slug>.preamble.md`. Phase 8 prepends this to the final polish.
 
 **5. Stage anchor pools for Phase 1.**
 Make the first-mention pool and scene-orient pool available to Phase 1 fork dispatches. Each scene-fork's input payload now includes:
@@ -334,7 +338,109 @@ The rule does NOT fire when:
 
 The fork applies the lens decider (rules 1–6) per `staff/stitcher/card.md § Lens decider`. The persona's lens-bias table overrides rules 1–5 where applicable. Tiebreaker per profile's `phase-1.lens-decider.tiebreaker` (default: neutral-default kinetic order).
 
-Output draft: `active-project/polish/<slug>.phase-1.draft.md`. Log fork entries to render-log under `## Phase 1 — lens-anchored render`. **Every rendered prose block must have a corresponding fork-id line in the log.** No fork-id ⇒ FAULT-PHASE-1-CONSOLIDATED.
+Output draft: `active-project/draft/<slug>.phase-1.draft.md`. Log fork entries to render-log under `## Phase 1 — lens-anchored render`. **Every rendered prose block must have a corresponding fork-id line in the log.** No fork-id ⇒ FAULT-PHASE-1-CONSOLIDATED.
+
+---
+
+## Phase 1 — scene-window mode (opt-in)
+
+**When this fires.** Profile carries `phase-1.mode: scene-window`, or `--phase-1-mode scene-window` is passed at the command line. Default (`per-anchor`) leaves the per-anchor fork machinery above unchanged.
+
+**Why it exists.** Three dogfoods on s01e02 (breath-pass, organic-render-p4, scene-window-dogfood — see `active-project/staff/stitcher/`) showed the per-anchor fork is structurally unable to break percussion that spans multiple bones: stilling-trios rendered as three identical "went still" verbs, exhale-pairs as two identical "I exhaled.", `I + verb` chains accumulating across paragraphs. The fork sees only its own anchor (plus the previous 1–2 rendered lines per `continuity-context`); it cannot see that this is the third log-trio in 10 bones or that the next sentence will be the third stilling. Scene-window mode lifts the fork unit from one anchor to one scene so the fork can see and break local percussion within bone-faithfulness.
+
+**Dispatch granularity.** One Agent call per dramatist-marked scene. Typical episode: ~10–14 scene-forks vs ~150 per-anchor forks. Each scene-fork's input is wider (~3× per-anchor) but the total fork count drops ~10×; net token cost typically ~30% of per-anchor.
+
+### Scene-boundary resolution
+
+Scene boundaries are required at Phase 1 dispatch in this mode. Resolution order:
+
+1. **Scene-map facet** (preferred, not yet emitted by `/and-facets` as of 2026-05-13). When `active-project/theater/facets/scene-map-<slug>.md` exists, parse it as the boundary source. Schema: one line per scene, `<scene-label>: <bone-id-start>–<bone-id-end> (<location-slug>, <time-of-day>, <one-line>)`. This is the target authoring path; `/and-facets` work to emit it is tracked separately.
+2. **Tensometer derivation** (cheapest path; current default). Parse the scene-footer section of `active-project/theater/facets/tensometer-<slug>.md` for named-scene declarations (e.g. `SCENE A (159–181)`). Cross-reference with `interest-narrator.md`'s sparsity gradient + `location-state.md` transitions + time-skip blanks in proto-lines to fill in scenes the tensometer narrates only by reference. This path is fragile against tensometer-prose drift; promote to the scene-map facet when it's available.
+3. **Failure mode.** If neither produces ≥3 scenes covering all bones, emit `FAULT-PHASE-1-NO-SCENE-MAP` and either escalate to user or fall back to `per-anchor` mode (record the fallback in the render-log header).
+
+Validate the scene-map: every bone in `proto-lines/<slug>.md` must fall inside exactly one scene's bone-range. Coverage gaps or overlaps → `FAULT-PHASE-1-SCENE-MAP-COVERAGE`.
+
+### Fork input payload
+
+Each scene-fork's inputs:
+
+| Source | Content |
+|---|---|
+| Scene's bones | All bones with IDs inside the scene's range, in order, verbatim from `proto-lines/<slug>.md`. |
+| Scene's facet citations | Every facet entry citing a bone in the scene's range — pulled from `_cite-index.md` and the per-facet files. NI, sensory, feel, memory, metaphor, loc-state, exposition, dialogue, tens. The fork sees the lens against the whole scene, not against a single anchor. |
+| **Back-look context** | The rendered prose of scene N-1 (empty for the first scene of the episode). Read-only. Used for anti-repetition of openers, verb-register, cadence across the scene boundary. The fork MUST NOT re-render or modify scene N-1's prose. |
+| **Forward-look context** | The bones + facets of scene N+1 (not the rendered prose — it doesn't exist yet). Empty for the last scene. Read-only. Used for transition-sentence awareness: if scene N+1 opens with a particular pattern (relay sweep, log-trio variant, peak), scene N can avoid closing on a clashing or duplicative form. |
+| Persona card + active profile | Same as per-anchor. The persona's lens-bias table and Phase-7 biases apply unchanged. |
+| Tensometer slice for the scene | Per-bone tens scores so the fork knows which bones are peaks (tens=2/3) inside the scene and must stand alone. |
+| Project anti-jargon list, hollow-prose patterns, asinine patterns, bone-faithfulness fence | Same as per-anchor. |
+
+### Fork procedure
+
+For each scene N in order (forks serialize across scenes — back-look requires prior scene's rendered prose):
+
+1. **Load inputs.** Bones, facets, back-look, forward-look, persona, profile, tensometer slice.
+2. **Plan the scene's prose-shape.** Identify percussion risks within the scene: clustered same-verb bones (stillings, exhales, openings), repeated subject anaphora (`I + verb` chains), protected-pattern instances (log-trio, cardinal-distribution quartet, three-note buildup) and which variant fits the scene's other instances.
+3. **Render.** Produce the scene as one prose block. Choose paragraph breaks, verb-register variance, sentence-fusion within bone-faithfulness, log-trio variant selection, opener variance. The fork applies the lens decider (rules 1–6) per bone; the difference from per-anchor is that the fork *also* sees the cluster and can vary the surface choices accordingly.
+4. **Per-bone discipline walk (mandatory).** After rendering, walk the scene's bone list in order and confirm every bone has a renderable trace in the prose — either as a rendered sentence, an em-dash fuse, a fused-into-prior, or a CUT-BONE with rationale. **This step is the catch for the scene-window failure mode** (see § Failure modes below). The fork emits a `bone-walk:` block in its render-log entry listing each bone-id and its disposition. A bone with no trace is `FAULT-BONE-FOLDED-INTO-SUMMARY` — re-render to restore the bone.
+5. **Emit fork output.** Rendered scene + render-log entry (see § Render-log entry shape below).
+
+### Constraints that still bind in scene-window mode
+
+- **Bone-faithfulness fence.** Per-bone, not per-scene. Every bone's SVO meaning must be preserved (rendered, fused, or CUT-BONE with rationale logged). The wider window is for variance choice — NOT a license to invent body, dialogue, spatial, route, scene-prose, or cognitive detail outside the graph.
+- **Dialogue verbatim.** Same as per-anchor. Utterance text from the dialogue facet is not rewritten; attribution is connective tissue only.
+- **Protected patterns.** Log-trio, cardinal-distribution quartet, three-note buildup, countdown, threshold-cross, return-of, fauna-relay refrain remain recognizable. The fork picks the variant (canonical / compressed / single-verb / truncated-tail / payload-tail) that fits the scene's other instances rather than a global default. The fork does NOT abolish a protected pattern.
+- **Q9 anti-jargon.** Same as per-anchor. The fork must not emit stitcher-coined hyphenated nominalizations (`alley-sound`, `placement-look`, `autumn-density`). Q9 hits in *bones themselves* (the bone-author put a coined compound in the SVO) are upstream faults: emit `FAULT-BONE-AUDIT-MISS @<id>` in the render-log and render the bone as-is — Phase 7 cannot REWORD a bone-content compound without violating bone-faithfulness.
+- **Sensory + loc-state co-anchor fold.** Same rule as per-anchor (see § Sensory + loc-state co-anchor fold above). In scene-window mode this rule retires from special-case to natural fork judgment — but the rule is still in force as a fence.
+- **Exposition fold-in mechanics.** Same as per-anchor. The exposition facet's `renders-as` directive is verbatim-honored.
+
+### Constraints that loosen vs. per-anchor
+
+- **Multi-bone fusion within tens=1 runs.** The fork may fuse 2–3 adjacent tens=1 bones into one sentence when the scene's percussion calls for it AND none of the bones is a peak AND no speech bone is in the run. Per-anchor refused these on fork-window grounds, not on rule grounds.
+- **Verb-register variance.** The fork may pick differentiating verbs across an `I + verb` chain or a same-action cluster (e.g. three stillings → stopped / held / held with) provided each chosen verb is idiom-fit to its bone's action (bone-faithfulness fence still per-bone).
+- **Protected-pattern variant selection.** The fork chooses log-trio form per scene-position (first instance / mid-episode / under-pressure / load-bearing close) and per other-instance density. Per-anchor had a global default and rarely varied; scene-window is expected to vary based on the cluster it sees.
+- **Re-paragraphing within scene.** The fork chooses paragraph breaks inside its scene. Phase 6 paragraph-grouping does not override scene-window paragraph choices.
+
+### Render-log entry shape
+
+Per scene-fork:
+
+```
+fork-<NNN> scene-<label> bones=@<start>–@<end>  scene-window-render
+   bones-consumed: @<start>, ..., @<end>
+   back-look: <prior-scene-label | empty>
+   forward-look: <next-scene-label | empty>
+   variance-moves:
+     - <move-1> (e.g. "stilling-trio differentiated: stopped/held/held-with at @12/@16/@17")
+     - <move-2>
+   refusals:
+     - <refusal-1> (e.g. "did not fuse @14/@15 speech-pair: address-register needs own beat")
+   bone-walk:
+     - @<id> -> <rendered-sentence-index | FUSE-into-L<n> | CUT-BONE | RESHOW>
+     - ...
+   drift-risk: <none | minor | flag with bone IDs>
+```
+
+The `bone-walk:` block is the auditable trace for the per-bone discipline walk. Every bone in the scene appears exactly once.
+
+### Failure modes specific to scene-window
+
+| Fault | Trigger | Recovery |
+|---|---|---|
+| `FAULT-BONE-FOLDED-INTO-SUMMARY` | Per-bone walk finds a bone with no rendered trace, no fuse target, no CUT-BONE entry. The wider window let the fork summarize a cluster and lose a bone. | Re-render the scene with the missing bone restored. Recurrent at the same bone-id across re-runs ⇒ flag the bone as fusion-resistant. |
+| `FAULT-PHASE-1-NO-SCENE-MAP` | Neither scene-map facet nor tensometer derivation produces a usable boundary set. | Fall back to `per-anchor` mode (record in render-log header) or escalate to user to author scene-map. |
+| `FAULT-PHASE-1-SCENE-MAP-COVERAGE` | Scene-map resolved but a bone falls outside every scene's range or inside multiple. | Refuse the dispatch; surface the coverage gap; fix scene-map. |
+| `FAULT-BONE-AUDIT-MISS @<id>` | Bone-content carries a Q9-coined hyphen-compound the stitcher cannot REWORD without violating bone-faithfulness. | Render the bone as-is; surface to upstream (`/and-protolines-v2` rubric pass). NOT a stitcher fix. |
+| `FAULT-NI-VERB-FOLD-STRETCH @<id>` | The fork's bone-verb chosen folds an NI register-verb beyond the bone's SVO (e.g. NI says "names X as ambient signal", bone says "relays X", fork renders "named X through"). Defensible under lens-fold license; surface as soft Q-check for the auditor. | Keep render; surface in `drift-risk:` field. Auditor decides. |
+
+### Convergence with per-anchor
+
+Scene-window mode is not strictly-better than per-anchor in all cases. The s01e02 dogfood confirmed:
+
+- **Convergence** on protected-pattern scenes (cardinal-quartet, three-note buildup), short transit scenes (wake/log/sleep), and hard scene-jumps (time-and-place discontinuity) — both modes produce the same prose.
+- **Material gain** on multi-bone percussion clusters (stilling-trios, exhale-pairs, opener-chains), seams where transition-awareness pays (relay-register carry, name-prime), and lens-fold positioning at peaks (sensory spike at known peak, NI fold at transitional verb).
+- **Material risk** on bone-folding-into-summary (caught by the per-bone walk) and NI verb-fold stretches (caught as soft Q-check by the auditor).
+
+Use scene-window when prior runs of the same episode read metronomic at multi-bone seams. Use per-anchor when bones are already tens-balanced with low percussion accumulation (the modes converge fully on such episodes and per-anchor is cheaper per-fork to reason about).
 
 ---
 
@@ -347,7 +453,7 @@ For each anchor with 2+ facets rendered at Phase 1:
 - When echo fires: drop the facet not in `redundancy.preserve-anchor` (default: preserve narrator)
 - Log `DROP-ECHO` / `DROP-IMAGE-OVERLAP` / `KEEP-OVER-ECHO`
 
-Output draft: `polish/<slug>.phase-2.draft.md`.
+Output draft: `active-project/draft/<slug>.phase-2.draft.md`.
 
 ---
 
@@ -362,7 +468,7 @@ Per-merge-candidate run. Walk the Phase 2 draft in paragraph order. Identify:
 
 Refuse merges when protected patterns would break (`NO-MERGE` with `pattern-protected` reason). Phase 6 verifies pattern intactness later; the refusal here is the first defense.
 
-Output draft: `polish/<slug>.phase-3.draft.md`.
+Output draft: `active-project/draft/<slug>.phase-3.draft.md`.
 
 ---
 
@@ -377,7 +483,7 @@ Per-paragraph forks. Walk paragraphs. For each paragraph:
 - Apply bone-object-policy (default idiom-fit)
 - Apply contractions per `voice.contractions`
 
-Output draft: `polish/<slug>.phase-4.draft.md`. Log each transform as `TENSE-SHIFT` / `PERSON-SHIFT-POV` / `POV-PRONOUN-RESOLVE` / `PRESERVE-THIRD-PARTY` / `SENSORY-PROSE-FIT` / `SENSORY-DROP-COVERED` / `BONE-OBJECT-IDIOM-FIT` / `CONTRACTION`.
+Output draft: `active-project/draft/<slug>.phase-4.draft.md`. Log each transform as `TENSE-SHIFT` / `PERSON-SHIFT-POV` / `POV-PRONOUN-RESOLVE` / `PRESERVE-THIRD-PARTY` / `SENSORY-PROSE-FIT` / `SENSORY-DROP-COVERED` / `BONE-OBJECT-IDIOM-FIT` / `CONTRACTION`.
 
 ---
 
@@ -392,7 +498,7 @@ Per-sliding-window forks (window size per `local-flow.window-size`, default 3). 
 
 Log per move: `MIGRATE-SENSORY-FORWARD` / `MIGRATE-NI-BACKWARD` / `WITHIN-ANCHOR-REORDER` / `EM-DASH-FUSE` / `UN-MERGE` / `REFUSE-MIGRATE`.
 
-Output draft: `polish/<slug>.phase-5.draft.md`.
+Output draft: `active-project/draft/<slug>.phase-5.draft.md`.
 
 ---
 
@@ -404,7 +510,7 @@ Per-protected-pattern forks. For each pattern listed in `protected-patterns`:
 - If the protective facet was cut at Phase 2 or by an upstream condition, log `PATTERN-ABANDONED` — Phase 7 will read this and may elect `CUT-BONE` for the bones in the abandoned pattern
 - Flag patterns not in the protected list but detected as structural: `NEW-PATTERN-CANDIDATE` (no action; for human review)
 
-Output draft: `polish/<slug>.phase-6.draft.md`.
+Output draft: `active-project/draft/<slug>.phase-6.draft.md`.
 
 ---
 
@@ -435,7 +541,7 @@ For each sentence in the Phase 6 draft:
   - Q9=yes + 3+ awkward in sentence → escalate to RESHOW (per `reword-density-cap`)
   - PATTERN-ABANDONED bones (from Phase 6) + Q1=no → CUT-BONE
 
-Each fork logs the per-sentence Q-line plus any moves. Output draft: `polish/<slug>.phase-7.draft.md`.
+Each fork logs the per-sentence Q-line plus any moves. Output draft: `active-project/draft/<slug>.phase-7.draft.md`.
 
 ---
 
@@ -444,12 +550,12 @@ Each fork logs the per-sentence Q-line plus any moves. Output draft: `polish/<sl
 Single fork. Walk Phase 7 draft:
 - Assign stable line-IDs (sequential; gaps allowed where Phase 7 cut)
 - Prepend the Phase 0.6 exposition preamble: italic-rendered paragraphs + horizontal rule before the body
-- Write clean polish: `active-project/polish/<slug>.md` (no line-IDs, no traces; preamble + body)
-- If `output.mode: dual`: write annotated polish: `active-project/polish/<slug>.annotated.md` with `[L<N>]` prefixes, `<trace>...</trace>` blocks per sentence, and `<trace scope="preamble">` for the bridge (the trace cites the exposition entry IDs that fed the preamble)
+- Write clean polish: `active-project/draft/<slug>.md` (no line-IDs, no traces; preamble + body)
+- If `output.mode: dual`: write annotated polish: `active-project/draft/<slug>.annotated.md` with `[L<N>]` prefixes, `<trace>...</trace>` blocks per sentence, and `<trace scope="preamble">` for the bridge (the trace cites the exposition entry IDs that fed the preamble)
 - For each fold-in rendered at Phase 1, the annotated trace cites `exposition:<id>` alongside the bone and lens facets — exposition is now a first-class citation in the trace alongside narrator/feel/mem/sensory/metaphor
 - For each utterance rendered at Phase 1, the annotated trace cites `dialogue:<character>:<id>` alongside the speech bone — dialogue is also a first-class citation. Multi-utterance anchors emit one citation per entry. The attribution clause carries the bone citation; the utterance carries the dialogue citation.
 - Finalize render-log with STATS section (word count, sentence count, paragraph count, bones rendered/merged/dropped, facets rendered/dropped, reshow count, reword count, preamble-source: `exposition-facet` or `legacy-fallback`, exposition entries-rendered/refused-at-R2/cross-episode-register-skipped, dialogue-source: `dialogue-facet` or `legacy-silent-speech`, dialogue character-files-loaded / utterances-rendered / bare-speech-bones / unmoored-utterances / speaker-mismatches)
-- **Prune intermediates.** After the clean + annotated polish are confirmed on disk, delete the Phase 1–7 draft files for this episode: `active-project/polish/<slug>.phase-*.draft.md` and the standalone preamble at `active-project/polish/<slug>.preamble.md` (its content is already prepended to the clean polish). The render-log retains the trace of every intermediate phase; the draft files are reproducible from the render-log + facet graph and should not accumulate in the polish directory. Pass `--keep-drafts` at command-invocation to retain them (debugging only). The `active-project/polish/deprecated/` directory, if present, is out of scope for Phase 8 — pre-rerun archives are user-managed (move to `projects/<title>/archive/` at project close, or delete when no longer needed).
+- **Prune intermediates.** After the clean + annotated polish are confirmed on disk, delete the Phase 1–7 draft files for this episode: `active-project/draft/<slug>.phase-*.draft.md` and the standalone preamble at `active-project/draft/<slug>.preamble.md` (its content is already prepended to the clean polish). The render-log retains the trace of every intermediate phase; the draft files are reproducible from the render-log + facet graph and should not accumulate in the polish directory. Pass `--keep-drafts` at command-invocation to retain them (debugging only). The `active-project/draft/deprecated/` directory, if present, is out of scope for Phase 8 — pre-rerun archives are user-managed (move to `projects/<title>/archive/` at project close, or delete when no longer needed).
 - Update showrunner memory: `stitched: true`
 
 ---

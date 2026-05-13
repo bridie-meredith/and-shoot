@@ -20,7 +20,7 @@ Runs as a multi-pass chain. Each phase forks at its natural decision granularity
 
 Reads: `theater/proto-lines/<slug>.md`, `theater/facets/*`, `theater/facets/_cite-index.md`, `theater/stitch-profile.md` (episode default), optional per-scene profile overrides, `staff/stitcher/personas/<active>.md` (the active persona), optional `staff/stitcher/feedback-<slug>.md` (line-keyed feedback from prior runs).
 
-Writes: `polish/<slug>.md` (clean prose, ship-ready), `polish/<slug>.annotated.md` (same prose with inline per-line trace blocks — output: dual mode), `staff/stitcher/render-log-<slug>.md` (per-fork decision log).
+Writes: `draft/<slug>.md` (clean draft, pre-editor), `draft/<slug>.annotated.md` (same prose with inline per-line trace blocks — output: dual mode), `staff/stitcher/render-log-<slug>.md` (per-fork decision log). The editor pass in `/and-wrap` reads from `draft/` and writes the ship-ready manuscript to `polish/`.
 
 Does not generate content. Does not paraphrase facet content. Does not make plot or continuity decisions. Does not address audience flags or NEEDS_EDIT (that is the editor's job in `/and-wrap`).
 
@@ -163,8 +163,8 @@ Pattern-level feedback (see § Feedback loop) accumulates in the persona's `## T
 
 Default `output: dual`. Two files written at Phase 8:
 
-- `polish/<slug>.md` — clean prose, ship-ready. No line-IDs, no trace blocks.
-- `polish/<slug>.annotated.md` — same prose; each sentence prefixed with `[L<N>]` and followed by a `<trace>...</trace>` block recording source anchor, lens-decider rule that fired, persona override status, facets rendered, phase-history.
+- `draft/<slug>.md` — clean draft, pre-editor. No line-IDs, no trace blocks. The editor pass in `/and-wrap` consumes this and writes the ship-ready manuscript to `polish/<slug>.md`.
+- `draft/<slug>.annotated.md` — same prose; each sentence prefixed with `[L<N>]` and followed by a `<trace>...</trace>` block recording source anchor, lens-decider rule that fired, persona override status, facets rendered, phase-history.
 
 Line-IDs are stable across edits (assigned at Phase 8; gaps allowed when sentences are cut later). The render-log indexes per fork; each line in the annotated output traces to one fork.
 
@@ -301,4 +301,4 @@ Outside those carve-outs, paraphrase remains blocker. The schema's stitch-interf
 
 ## What the Stitcher hands off
 
-A `polish/<slug>.md` clean draft, a `polish/<slug>.annotated.md` traced draft, and a `render-log-<slug>.md`. The editor pass in `/and-wrap` takes the clean draft, plus the auditor's findings and the audience flags, and does its own work. The Stitcher's job is done when both drafts are internally consistent, every fork's decision is in the log, and every annotated line traces to exactly one fork.
+A `draft/<slug>.md` clean draft, a `draft/<slug>.annotated.md` traced draft, and a `render-log-<slug>.md`. The editor pass in `/and-wrap` takes the clean draft, plus the auditor's findings and the audience flags, and does its own work — its output lands in `polish/<slug>.md`. The Stitcher's job is done when both drafts are internally consistent, every fork's decision is in the log, and every annotated line traces to exactly one fork.

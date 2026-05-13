@@ -71,7 +71,8 @@ active-project/   — sole active project
   audience/       — 3 active audience persona working dirs
   staff/          — showrunner/studio/auditor/fixer/margit working memory
   theater/        — episode-plan.md + show.md (current episode)
-  polish/         — closed manuscripts
+  draft/          — stitcher output (pre-editor; clean + annotated drafts)
+  polish/         — editor output / closed manuscripts (post-/and-wrap)
 
 projects/         — completed series archive
 ```
@@ -133,7 +134,7 @@ Project-local slash commands in `.claude/commands/`.
 | `/and-project <title-slug> "<brief>" <audience-1> <audience-2> <audience-3>` | Project activation. Scaffolds `active-project/`, runs world-building (1a–1d) and series plan, presents output at the series-level audit checkpoint for human review. Season planning is owned by `/and-season s01` Phase 1 (auto-fires when no season plan exists). |
 | `/and-season <season-slug>` | Season-scope orchestrator. Auto-plans the season in Phase 1 if no `season-<slug>-plan.md` exists (handles s01 and subsequent seasons; reads previous-season terminal state when applicable), then expands content beats into bones, runs full season-scope review with bone-gate, judges at Phase 6 (orchestrator-critic), writes per-episode files at Phase 7. |
 | `/and-facets <slug>` | Per-episode facet pipeline. Produces ten facet files + per-character dialogue files under `theater/dialogue/<slug>.md`. **Dialogue-coverage gate (URI-DIALOGUE-COVERAGE-GATE, 2026-05-12):** if proto-lines contains any `speaks to` bones, every such bone MUST be cited by ≥1 dialogue entry AND every speaker MUST have a non-empty dialogue file before `audited-r1` is set at Phase 6a. Phase 5 CONSTRAINT emits HARD findings on bare bones / missing files; Phase 6a re-verifies. |
-| `/and-stitch <slug>` | Per-episode stitcher. Reads proto-lines + facets + dialogue + exposition; produces `polish/<slug>.md` (clean) + `polish/<slug>.annotated.md` (traced). **Dialogue gate (URI-DIALOGUE-COVERAGE-GATE):** if proto-lines has `speaks to` bones and the dialogue facet is empty/missing or any speech bone is bare, Phase 0.5 HARD-ABORTS. Opt-in `--allow-bare-speech` reroutes to legacy silent-action fallback (pre-2026-05-12 episodes only). |
+| `/and-stitch <slug>` | Per-episode stitcher. Reads proto-lines + facets + dialogue + exposition; produces `draft/<slug>.md` (clean) + `draft/<slug>.annotated.md` (traced). Output lands in `draft/` because stitcher output is pre-editor; the `/and-wrap` editor pass writes the ship-ready manuscript to `polish/`. **Phase 1 modes (URI-SCENE-WINDOW, 2026-05-13):** `per-anchor` (default) dispatches one fork per anchor; `scene-window` (opt-in via profile `phase-1.mode: scene-window` or `--phase-1-mode scene-window`) dispatches one fork per dramatist-marked scene with overlap-read context, breaking multi-bone percussion within bone-faithfulness. The scene-window fork includes a mandatory per-bone discipline walk to catch invention-by-summary faults. **Dialogue gate (URI-DIALOGUE-COVERAGE-GATE):** if proto-lines has `speaks to` bones and the dialogue facet is empty/missing or any speech bone is bare, Phase 0.5 HARD-ABORTS. Opt-in `--allow-bare-speech` reroutes to legacy silent-action fallback (pre-2026-05-12 episodes only). |
 
 ---
 

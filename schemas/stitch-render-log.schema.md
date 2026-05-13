@@ -32,7 +32,7 @@ generated: <ISO date>
 ## Phase 1 — lens-anchored render
 author: stitcher-fork (per anchor)
 input: theater/proto-lines/<slug>.md + facets/* + _cite-index.md + profile + persona
-output: polish/<slug>.phase-1.draft.md
+output: draft/<slug>.phase-1.draft.md
 
 <fork-entries>
 
@@ -94,7 +94,7 @@ Optional second line for refusals or when a move needs explicit citation:
 
 ## Move classes by phase
 
-### Phase 1 — lens-anchored render
+### Phase 1 — lens-anchored render (per-anchor mode)
 
 | Move class | Meaning |
 |---|---|
@@ -103,6 +103,66 @@ Optional second line for refusals or when a move needs explicit citation:
 | `render-bone` | Bone-only render (no lenses firing). |
 | `em-dash-fuse` | Bone + single facet fused via em-dash. |
 | `skip-blank` | Time-skip blank id observed; paragraph break recorded. |
+
+### Phase 1 — scene-window render (scene-window mode)
+
+When `phase-1.mode: scene-window`, the Phase 1 section uses scene-fork entries instead of per-anchor fork entries. The header records the boundary source and overlap-read config:
+
+```
+## Phase 1 — scene-window render
+author: stitcher-fork (per scene)
+mode: scene-window
+boundary-source: <tensometer-derive | scene-map-facet | hybrid>
+back-look: <prior-rendered-scene | none>
+forward-look: <next-scene-bones-facets | none>
+input: theater/proto-lines/<slug>.md + facets/* + _cite-index.md + profile + persona
+output: draft/<slug>.phase-1.draft.md
+
+<scene-fork-entries>
+```
+
+Per scene-fork:
+
+```
+fork-<NNN> scene-<label> bones=@<start>–@<end>  scene-window-render
+   bones-consumed: @<start>, ..., @<end>
+   back-look: <prior-scene-label | empty>
+   forward-look: <next-scene-label | empty>
+   variance-moves:
+     - <move-description>
+   refusals:
+     - <refusal-description>
+   bone-walk:
+     - @<id> -> <rendered-line-id | FUSE-into-L<n> | CUT-BONE | RESHOW>
+     - ...
+   drift-risk: <none | minor | flag with bone IDs>
+```
+
+Move classes for scene-fork-level entries (the scene-fork itself records one of these as its overall verdict):
+
+| Move class | Meaning |
+|---|---|
+| `scene-window-render` | Standard scene-fork render. Bones consumed, prose emitted, per-bone walk clean. |
+| `scene-window-fallback-per-anchor` | Scene-fork dispatch failed (no scene-map, coverage gap, or runtime fault) and the run fell back to per-anchor for this scene. Records the trigger in `reason`. |
+
+Per-bone-walk dispositions (each bone in the scene maps to exactly one):
+
+| Disposition | Meaning |
+|---|---|
+| `-> L<N>` | Bone rendered as line N (or one of multiple lines for peak bones). |
+| `FUSE-into-L<N>` | Bone fused into another bone's rendered sentence (em-dash, comma-appositive, conjunction). |
+| `CUT-BONE` | Bone cut under bones-cuttable license. Cite the cut-elsewhere facet or rationale. |
+| `RESHOW` | Bone rendered via a reauthored surface citing ≥2 graph sources (rare at Phase 1; usually Phase 7's territory). |
+
+Scene-window-specific fault classes (record as fork-level entries with the fault as move-class):
+
+| Fault | Meaning |
+|---|---|
+| `FAULT-BONE-FOLDED-INTO-SUMMARY` | Per-bone walk found a bone with no disposition. Wider window summarized the cluster and lost a bone. Triggers re-render of the scene. |
+| `FAULT-PHASE-1-NO-SCENE-MAP` | Neither scene-map-facet nor tensometer-derive produced a usable boundary set. Triggers fallback or escalation per `phase-1.scene-window.fallback-on-no-scene-map`. |
+| `FAULT-PHASE-1-SCENE-MAP-COVERAGE` | A bone falls outside every scene's range or inside multiple. Coverage gap or overlap in the scene-map. |
+| `FAULT-BONE-AUDIT-MISS @<id>` | Bone carries a Q9-coined hyphen-compound in its SVO content. Stitcher cannot REWORD without violating bone-faithfulness; surfaces upstream as a `/and-protolines-v2` rubric pass. |
+| `FAULT-NI-VERB-FOLD-STRETCH @<id>` | NI register-verb folded into bone-verb beyond the bone's SVO (defensible under lens-fold license; soft Q-check for auditor). Render kept; recorded in `drift-risk:`. |
 
 ### Phase 2 — redundancy cull
 
@@ -185,8 +245,8 @@ No `borderline` value under `cut-aggressiveness: strict`. Borderline = `n` for Q
 | Move class | Meaning |
 |---|---|
 | `ASSIGN-LINE-ID` | Stable line-IDs assigned. Records the mapping fork-id → L-id. |
-| `WRITE-CLEAN` | `polish/<slug>.md` written. |
-| `WRITE-ANNOTATED` | `polish/<slug>.annotated.md` written (when `output: dual`). |
+| `WRITE-CLEAN` | `draft/<slug>.md` written. |
+| `WRITE-ANNOTATED` | `draft/<slug>.annotated.md` written (when `output: dual`). |
 | `WRITE-LOG` | Render-log finalized. |
 | `STATS` | Final counts: words, sentences, paragraphs, bones rendered, bones merged, bones dropped, facets rendered, facets dropped, reshow count, reword count. |
 
@@ -225,7 +285,7 @@ No `borderline` value under `cut-aggressiveness: strict`. Borderline = `n` for Q
 ## Phase 7 — editorial reflection
 author: stitcher-fork (per sentence)
 phase-7-mode: strict
-output: polish/s01e01.phase-7.draft.md
+output: draft/s01e01.phase-7.draft.md
 
 L18  Q1=y Q2=y Q3=n Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n  |  PASS
 L19  Q1=y Q2=y Q3=n Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n  |  PASS
@@ -269,7 +329,7 @@ phase-7-summary:
 
 The render-log is the auditor's primary input for stitch review. The auditor checks:
 
-1. Every bone in `proto-lines/<slug>.md` has a corresponding `render-bone`, `MERGE-*`, `CUT-BONE`, or `DROP-*` entry.
+1. Every bone in `proto-lines/<slug>.md` has a corresponding `render-bone`, `MERGE-*`, `CUT-BONE`, or `DROP-*` entry (per-anchor mode), or appears in exactly one scene-fork's `bone-walk:` block with a non-empty disposition (scene-window mode).
 2. Every facet drop has a reason that maps to the taxonomy.
 3. Every `RESHOW` has ≥2 graph source citations and a `function-preserved` field.
 4. Every `REWORD` has `original:` and `replacement:` fields and density ≤2 per sentence.
