@@ -1,11 +1,19 @@
 STM:
 - Now in Flea Bottom base; pack down; perimeter mapped; two exits + window + roofline reachable to spiders
-- 300m insect radius arrived intact at KL; cardinal-quartet of fauna (flies / beetles / wasps / spiders) holds the perimeter; flies higher than I'd extrapolated from village
-- Maester in upper room above me is ambient surveillance; he laughed at me when his network registered the listener before I did; brake-not-ally established
+- Insect range: 600m (expanded from 300m); Red Keep 400m beyond ceiling; relay infrastructure (glass-candle) not yet acquired
+- Cardinal-quartet of fauna (flies / beetles / wasps / spiders) holds the perimeter; KL fauna density absorbs the relay without observable shard-cost
+- Hightower apparatus has an open file in three loci; Taylor reads it as "more than one hand in this work" — pattern recognized, faction label absent
+- Two log entries closed on the same hour at season-end: Taylor's and the elder's sealed account via middleman — neither author knows about the other's entry
+- Body-knowledge firing without direction: blank-column recognition (cause field empty), seal-wrong-side memory, denomination-older-than-this-hand — Worm/Khepri accumulation present on surface
 - Body's Tya-memory surfaces unbidden (chin-angle, reach-for-salt); calibration cost is on me
-- First irreversible city-commit gave the dock-runner the word I gave before to a person I could have burned; the city will route it before nightfall
-- Watch crosses Fish Gate margin on a cadence two beats off; the count is a count I haven't seen before
+- Broken maester: named log entry and body-recognized parallel-documenter; pen-set recognized as the hold from sessions-that-didn't-reopen; brake-not-ally established but not yet engaged as brake
+- Tanner-father: routes through elder, no direct contact; placement confirmed "she's placed, earns it monthly"
 - Tanner-elder placed me into the network like he placed me into the labour web; the weight was different
 - Lord's-man entered me into a record I am not allowed to read; a line of ink in a Hightower-adjacent ledger
+- First irreversible city-commit gave the dock-runner the word I gave before to a person I could have burned; the city will route it before nightfall
+- Watch crosses Fish Gate margin on a cadence two beats off; the count is a count I haven't seen before
 - Village grief-debt remains open and transactional; mother turned to the wall; father set his eyes on the work; mother held the wood she would not turn to watch at the gate
-- Khepri-mantle sealed; glass-candle relay research not yet begun
+- Khepri-mantle: sealed; not yet approached; glass-candle relay research not yet begun
+- Clinical log discipline holding: every scene closed with a log entry; no missed entries; self-erasure register intact
+- Season-close perimeter walk completed; two-column wall perception at south wall; facing the Red Keep with interior count of years for what it will become
+- Tanner-family wage-claim on customary record; vigil candle extinguished; village-claim closed externally — tanner-origin cost-surface ongoing but changed shape

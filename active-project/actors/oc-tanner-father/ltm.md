@@ -3,3 +3,4 @@
 [2026-05-13] EVENT: assigned yard-edge task without lifting hands from the work | the household is reduced to routing-pair countdowns; the girl is task-class, not daughter-class
 [2026-05-13] EVENT: routed the household problem through the tanner-elder to the city | did not raise his eyes to the gate as she crossed; the work was the wall the work has always been
 [2026-05-13] EVENT: Watch attention rising on the village since the girl came back | the cost is registering on him; he has not named the cost
+[2026-05-13] EVENT: walked to junction at afternoon shift; addressed the elder, not Taylor; confirmed "come down to see she's still placed"; walked off | why significant: surveillance-at-distance pattern established; no longer attempts direct contact; uses the elder as the transactional surface; the check-in is a monitoring action, not a confrontation or reengagement
