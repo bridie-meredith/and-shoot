@@ -231,6 +231,29 @@ seasons:
           rationale: user-direction "not really tuned but we'll manage without" — verification deferred to stitcher Phase 7 reflection at /and-stitch s01e02 time, or to a targeted retroactive audit pass if desired before stitch.
       - slug: s01e03
         status: audited-r1   # FLIPPED 2026-05-12 — Phase 5b cycle 3 cleared 9-of-9 facets to 3-of-3 ACCEPT (cap=3 fully used). Phase 5 r4 CLEAN (0 HARD; 13 SIGNAL all advisory; 5 SIGNAL CLOSED across cycles: flag-012 curve-shape, flag-017 vibes AP8, flag-018 tens AP2, flag-020 vibes forward-license, flag-022 vibes:32 AP8, flag-023 tens metadata staleness). Bidirectional loop VALIDATED. Cycle-by-cycle: c1 0-of-9 pass, c2 4-of-9 pass (state-updates/memory/feeling/metaphor), c3 5-of-5 re-fired facets pass (tensometer/location-state/interest-narrator/sensory/vibes). Critical cap-burn risk averted on interest-narrator dark-fantasy (FAIL c1+c2 → ACCEPT c3 once NI rewrites made displacement-trigger/foreknowledge-clamp/age-mismatch registers explicit on textual surface).
+        stitched: true   # 2026-05-13 /and-stitch s01e03 — per-anchor mode (scene-map absent; URI-SCENE-WINDOW post-dates s01e03 /and-facets); 11 scene-cluster forks; worm-tight persona
+        stitched_at: 2026-05-13
+        stitch_profile: active-project/theater/stitch-profile.md   # episode-default reused for s01e03; project-default at active-project/stitch-profile.md provides anti-jargon/hollow/asinine/bone-fence
+        stitch_persona: worm-tight
+        stitch_lens_policy: bias-only
+        polish_path: active-project/draft/s01e03.md   # stitcher output; /and-wrap editor pass will produce active-project/polish/s01e03.md
+        polish_annotated_path: active-project/draft/s01e03.annotated.md
+        render_log_path: active-project/staff/stitcher/render-log-s01e03.md
+        word_count_body: ~1480
+        word_count_total: 1531
+        line_id_count: 126
+        bones_rendered: 155
+        bones_cut: 0
+        phase_7_moves: { keep: ~95, cut: 5, cut_clause: 7, reword: 1, simplify_punct: 1, reshow: 0 }
+        exposition_entries_rendered: 5   # 1 preamble (italic) + 1 first-mention-term clerk @3 (post-bone-clause) + 1 first-mention-place red-keep @125 (em-dash-fold) + 2 scene-open-orient @18 @73 (scene-bridge)
+        cross_episode_register_skipped: [reeve, lord's-man, fish-gate, log, the-Watch, maester, customary-wage-claim, vigil-candle, flea-bottom]
+        stitch_dialogue_admin_fix:
+          issue: "theater/dialogue/ held stale s01e02 files at /and-stitch start; canonical s01e03 dialogue was at theater/dialogue-s01e03/ (non-standard path)"
+          resolution: "stale s01e02 dialogue archived to theater/s01e02-archive/dialogue/; s01e03 dialogue moved to theater/dialogue/; theater/dialogue-s01e03/ removed"
+          done_at: 2026-05-13
+        stitch_process_gaps:
+          - URI-PHASE-2-5-FORK-OVER-CUT (NEW 2026-05-13) — Phase 2–5 combined cleanup fork over-cut 4 plot-load-bearing items (exposition:2 clerk-gloss, narrator:8 apparatus-pattern, narrator:37 season-peak structural commit, mem:8/mem:12 specifics) on Q5/Q8/Q9 strict-cut. Worm-tight Plot-load-bearing-NI carve-out (REWORD-not-CUT for Q1=yes lines) was not surfaced in the fork prompt. Orchestrator restored all 4 items with surface-only rewords. Pattern-lesson: Phase 2–5 fork prompts MUST include the carve-out explicitly OR pre-flag enumerated protected items in the prompt; Phase 7 prompt successfully used pre-flagged enumeration (8 of 8 protected items preserved).
+          - URI-SCENE-MAP-ABSENT-PRE-URI-SCENE-WINDOW (NEW 2026-05-13) — s01e03 has no scene-map facet (URI-SCENE-WINDOW landed 2026-05-13, after s01e03 /and-facets run completed 2026-05-12). Stitcher fell back to per-anchor mode per episode profile setting (`phase-1.fork-granularity: per-anchor`). For future episodes with scene-map available, scene-window mode is the schema default.
         audit_path: active-project/staff/auditor/facets-final-audit.md
         audit_complete: true
         audit_findings: 13   # all SIGNAL post-r4

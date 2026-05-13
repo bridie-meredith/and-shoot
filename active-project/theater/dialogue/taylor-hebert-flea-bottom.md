@@ -1,8 +1,6 @@
 character: taylor-hebert-flea-bottom
-episode: s01e02
+episode: s01e03
 behavior-card: taylor-hebert-westeros
 ---
-1 @15 | acknowledge the father's standing without claiming or refusing the daughter-role | "Goodman. I have not forgotten."
-2 @24 | close the visit without taking on the mother's grief-claim | "Goodwife. The road is yours."
-3 @102 | collapse the customary-wage frame to a transaction without conceding its moral premise | "Name the sum. I will see it paid."
-4 @170 | give the mother oblique permission to end her vigil — Tya is the unnamed gap | "She is not here, goodwife."
+1 @53 | acquire the count for the dock-side without performing reception of the elder's framing | "The dock-side. How many."
+2 @59 | clear the cluster by supplying a tya-frame omen the wasp-relay will physically enforce | "There is nothing here. The birds are restless."

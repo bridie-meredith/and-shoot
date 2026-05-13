@@ -1,5 +1,6 @@
 character: oc-broken-maester
-episode: s01e02
+episode: s01e03
 behavior-card: westeros-maester
 ---
-1 @138 | acknowledge the visitor and open the consultation in the at-home Citadel-trained register Taylor's beetles will relay as register-shape (cadence + institutional-we), without grasping for the chain | "Yes, yes. Come, sit. Let us see what you have brought."
+1 @79 | open a transactional exchange with the stall-keeper and name the goods sought | "Goodman. A measure of the dried sage, if you have it kept dry, and half of the salt-fish."
+2 @81 | press the freshness of the sage with the maester's examination reflex surfacing on goods | "Yes, yes. The sage, if I may — was it dried at the turn of the moon, or the moon before?"
