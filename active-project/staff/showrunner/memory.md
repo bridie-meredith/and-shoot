@@ -185,7 +185,12 @@ seasons:
         upstream_tuning_queue_entries: [URI-028, URI-029, URI-030, URI-031, URI-032, URI-033, URI-034, URI-035, URI-036, URI-037, URI-038, URI-039, URI-040, URI-041, URI-042]
         upstream_tuning_queue_addressed: [URI-028, URI-029, URI-032, URI-034, URI-035, URI-036, URI-037, URI-038, URI-039, URI-040, URI-041, URI-042]   # 2026-05-11 fourth round: Phase 5b audience-gate wired into /and-facets, closing URI-035 by design (validation deferred to s01e02). URI-030/031/033 (R2 protocol + tooling) remain open.
       - slug: s01e02
-        status: audited-r1   # FLIPPED 2026-05-12 — Phase 5b cycle 3 + cycle-4 cap-exception cleared 9-of-9 facets to 3-of-3 ACCEPT. cycle-4 cap-exception ratified for memory single-field repair (mem:13 target-reference rewrite) per audience-convergent demand; documented in facets-audience-gate-r3.md §"Cap-exception ratification".
+        status: wrapped   # 2026-05-13 /and-wrap s01e02 complete (URI-WRAP-V2); prior status audited-r1 (post /and-facets cycle-3 + cycle-4 cap-exception, 2026-05-12)
+        wrapped: true
+        wrapped_at: 2026-05-13
+        draft_path: active-project/draft/s01e02.md   # stitcher output (pre-editor); 1094 words
+        draft_annotated_path: active-project/draft/s01e02.annotated.md
+        polish_path: active-project/polish/s01e02.md   # editor output (post-wrap); 1105 words; word-count delta +11
         narrator: taylor-hebert-flea-bottom
         interlude: false
         chunk: "The tanner-family's claim escalates from informal grief to formalized customary wage-claim across three visits; the broken maester transitions from ambient signal to named log entry; range expands from 300m to 400m with first physiological cost; the mother extinguishes the vigil candle."
@@ -251,6 +256,25 @@ seasons:
             - Phase 5 auditor mechanical pass (CONSTRAINT source-traceability + AP-SCAN scans)
             - Phase 5b audience-gate adversarial review (3-of-3 persona ACCEPT)
           rationale: user-direction "not really tuned but we'll manage without" — verification deferred to stitcher Phase 7 reflection at /and-stitch s01e02 time, or to a targeted retroactive audit pass if desired before stitch.
+        wrap_artifacts:
+          audience_merge: active-project/staff/editor/wrap-audience-s01e02.md
+          audience_per_persona:
+            - active-project/staff/editor/wrap-audience-cape-fic-reader-s01e02.md   # 10 flags
+            - active-project/staff/editor/wrap-audience-dark-fantasy-reader-s01e02.md   # 14 flags (incl. anchors)
+            - active-project/staff/editor/wrap-audience-worm-canon-pedant-s01e02.md   # 14 flags (10 corrective + 4 anchors)
+          auditor_report: active-project/staff/auditor/s01e02-wrap-audit.md   # 7 HARD (4 BONE-COVERAGE, 1 EXPOSITION-VERBATIM, 2 CONTINUITY); 1 SIGNAL (possessive-register); all dispositions prose-surface or acknowledge per URI-WRAP-V2-DISPO
+          edit_log: active-project/staff/editor/wrap-edit-log-s01e02.md
+        wrap_stats:
+          edits_total: 22
+          edits_by_class: { EDIT-AUDIT-REMEDIATE: 7, EDIT-AUDIENCE-REMEDIATE: 8, EDIT-PROSE-ECONOMY: 1, EDIT-VOICE-CONSISTENCY: 2, KEEP-OVER-FINDING: 2, KEEP-OVER-FLAG: 5 }
+          audience_flags_addressed: "18 of 28 corrective; 7 of 7 shared concerns (L13/L15-fish/L15-exhale/L19/L21/L23/L25)"
+          audience_overrides: 5
+          audit_findings_addressed: "7 of 7 HARD (5 prose changes + 2 KEEP-OVER-FINDING for @139 trace-only + @0 upstream-documented user-override); 1 of 1 SIGNAL (@104 possessive-register POSSESS-FIX)"
+          bones_restored: 3   # @42 flies-relay-carter + @44 flies-relay-wind (Scene D one-clause insert); @101 taylor-faces-father (Scene I reciprocal-face beat)
+          bones_cut_as_warmup: 0
+          editor_introduced_faults: 0
+          per_bone_walk: "134 active bones | rendered=133, cut-by-stitcher=1 (@91 licensed), restored-by-editor=3 (@42 @44 @101), KEEP-OVER-FINDING-trace=1 (@139 surface present in relay-frame), cut-as-warmup=0, lost=0"
+        shared_audience_concern_top: "inline-gloss interruption pattern (Fish Gate em-dash at Scene F; customary-wage parenthetical at Scene I) — flagged by all three personas; addressed by bracket/em-dash removal mirroring the s01e01 wrap precedent (reeve gloss Scene E; maester gloss Scene J); gloss content kept verbatim. Second cross-episode concern: peak-flattening by metronomic repetition (exhale-triplet at @77/@78 400m-range peak; double-'gave' at @173 mother-stands peak) — addressed by single-verb variance within bone-faithfulness."
       - slug: s01e03
         status: audited-r1   # FLIPPED 2026-05-12 — Phase 5b cycle 3 cleared 9-of-9 facets to 3-of-3 ACCEPT (cap=3 fully used). Phase 5 r4 CLEAN (0 HARD; 13 SIGNAL all advisory; 5 SIGNAL CLOSED across cycles: flag-012 curve-shape, flag-017 vibes AP8, flag-018 tens AP2, flag-020 vibes forward-license, flag-022 vibes:32 AP8, flag-023 tens metadata staleness). Bidirectional loop VALIDATED. Cycle-by-cycle: c1 0-of-9 pass, c2 4-of-9 pass (state-updates/memory/feeling/metaphor), c3 5-of-5 re-fired facets pass (tensometer/location-state/interest-narrator/sensory/vibes). Critical cap-burn risk averted on interest-narrator dark-fantasy (FAIL c1+c2 → ACCEPT c3 once NI rewrites made displacement-trigger/foreknowledge-clamp/age-mismatch registers explicit on textual surface).
         audit_path: active-project/staff/auditor/facets-final-audit.md
