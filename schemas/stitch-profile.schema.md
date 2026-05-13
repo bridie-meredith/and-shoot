@@ -63,9 +63,16 @@ render:
   nonpeak-priority: [narrator, feel, sensory, memory, metaphor]
 
 phase-1:
-  fork-granularity: per-anchor
-  continuity-context: previous-2-lines      # previous-2-lines | previous-paragraph | none
-  parallel: within-paragraph                # within-paragraph | full | sequential
+  mode: scene-window                        # scene-window (default) | per-anchor
+  fork-granularity: scene-window            # legacy alias of mode; honored when mode is absent
+  continuity-context: previous-2-lines      # previous-2-lines | previous-paragraph | none (per-anchor mode only)
+  scene-window:                             # scene-window mode config; ignored when mode: per-anchor
+    boundary-source: scene-map-facet        # scene-map-facet (default) | tensometer-derive | hybrid
+    back-look: prior-rendered-scene         # prior-rendered-scene (default) | none
+    forward-look: next-scene-bones-facets   # next-scene-bones-facets (default) | none
+    per-bone-discipline-walk: required      # required (default) | advisory — controls FAULT-BONE-FOLDED-INTO-SUMMARY emission
+    fallback-on-no-scene-map: per-anchor    # per-anchor (default — soft fallback) | escalate (hard abort, user-resolved)
+  parallel: within-paragraph                # within-paragraph | full | sequential (per-anchor mode only; scene-window forks serialize across scenes by definition)
   lens-decider:
     enable-rule-1-foreknowledge-clamp: true
     enable-rule-2-sensory-spike: true
@@ -203,10 +210,16 @@ Free-form human notes — why this profile, what's been tuned, what's an open qu
 
 The lens-anchored render configuration.
 
-- **`fork-granularity`** — `per-anchor` is the working default. Other values not yet supported.
-- **`continuity-context`** — what previous output each fork sees. `previous-2-lines` (default) gives continuity but serializes adjacent forks within a paragraph. `previous-paragraph` is more serial; `none` is maximally parallel but accepts continuity drift (Phase 5 and 7 catch it).
-- **`parallel`** — `within-paragraph` runs forks in parallel within a paragraph (serial across paragraphs); `full` parallelizes everything (only valid with `continuity-context: none`); `sequential` runs one fork at a time.
-- **`lens-decider`** — rule toggles. Each `enable-rule-N-*` flag turns one rule on or off; disabling rules is for experimentation. Defaults: all on.
+- **`mode`** — `scene-window` (default, URI-SCENE-WINDOW 2026-05-13) dispatches one Agent call per dramatist-marked scene with overlap-read context (back-look on prior rendered scene; forward-look on next scene's bones+facets); the fork sees the whole scene and breaks percussion across multi-bone clusters within bone-faithfulness. `per-anchor` dispatches one Agent call per anchor with `continuity-context` lookback; the fork sees one bone at a time. Per-anchor is the fallback mode (used when scene-map is absent or per-bone discipline is preferred for low-percussion episodes). See `.claude/commands/and-stitch.md § Phase 1 — scene-window mode` for the full procedure including the mandatory per-bone discipline walk.
+- **`fork-granularity`** — legacy alias of `mode`. Honored as a fallback when `mode` is absent. New profiles should set `mode`.
+- **`continuity-context`** — `per-anchor` mode only. What previous output each fork sees. `previous-2-lines` (default) gives continuity but serializes adjacent forks within a paragraph. `previous-paragraph` is more serial; `none` is maximally parallel but accepts continuity drift (Phase 5 and 7 catch it). Ignored under `scene-window` mode (the back-look/forward-look settings replace it).
+- **`scene-window.boundary-source`** — where Phase 1 reads scene boundaries from. `scene-map-facet` (default, URI-SCENE-WINDOW 2026-05-13) reads `theater/facets/scene-map-<slug>.md` (emitted by `/and-facets` Phase 4d as derived structural facet). `tensometer-derive` parses the scene-footer section of `tensometer-<slug>.md` plus cross-references `interest-narrator.md` sparsity gradient, `location-state.md` transitions, and time-skip blanks (legacy fallback for pre-URI-SCENE-WINDOW episodes whose facet graph predates the scene-map emission). `hybrid` reads scene-map-facet when present, falls through to tensometer-derive when absent.
+- **`scene-window.back-look`** — what prior context a scene-fork reads. `prior-rendered-scene` (default) gives the fork read-only access to scene N-1's already-rendered prose for anti-repetition discipline (openers, verb-register, cadence). `none` runs forks without back-look (cheaper, drops cross-scene variance awareness).
+- **`scene-window.forward-look`** — what next context a scene-fork reads. `next-scene-bones-facets` (default) gives the fork read-only access to scene N+1's bones + facet citations so the scene N close can avoid clashing with the scene N+1 open. `none` drops forward-look awareness.
+- **`scene-window.per-bone-discipline-walk`** — `required` (default) makes the per-bone walk a hard step in every scene-fork's output; missing-bone-trace emits `FAULT-BONE-FOLDED-INTO-SUMMARY`. `advisory` makes the walk optional and demotes the fault to a warning. Required is strongly recommended — the wider window's failure mode is invention-by-summary, and the walk is the catch.
+- **`scene-window.fallback-on-no-scene-map`** — what to do when neither `scene-map-facet` nor `tensometer-derive` produces a usable boundary set. `per-anchor` (default, soft fallback) drops the run to per-anchor mode and records the fallback in the render-log header. `escalate` hard-aborts the run and surfaces `FAULT-PHASE-1-NO-SCENE-MAP` for user resolution.
+- **`parallel`** — `within-paragraph` runs forks in parallel within a paragraph (serial across paragraphs); `full` parallelizes everything (only valid with `continuity-context: none`); `sequential` runs one fork at a time. Ignored under `scene-window` mode — scene-forks serialize across scenes because back-look requires the prior scene's rendered prose.
+- **`lens-decider`** — rule toggles. Each `enable-rule-N-*` flag turns one rule on or off; disabling rules is for experimentation. Defaults: all on. Applies to both modes; in scene-window the decider runs per-bone inside the scene-fork.
 - **`lens-decider.rule-5-window`** — recent-focus damping lookback. Higher values dampen lens-rhythm saturation more aggressively.
 - **`lens-decider.persona-overrides`** — whether persona's `## Lens biases` table is consulted. Default enabled.
 - **`lens-decider.tiebreaker`** — `neutral-default` falls through to neutral-persona kinetic order. `explore` (future enhancement, not v1) emits both candidates with a `CHOICE-DEFERRED` trace tag.
@@ -326,6 +339,8 @@ Validation faults:
 - `FAULT-PROFILE-MISSING-PERSONA` — `persona:` set to a slug with no card at `staff/stitcher/personas/<slug>.md`.
 - `FAULT-PROFILE-PERSONA-MISMATCH-PROJECT` — resolved persona is `neutral` AND a project-default profile at `active-project/stitch-profile.md` exists declaring a non-neutral persona, OR a project-scoped persona exists at `active-project/staff/stitcher/personas/`. Pipeline must escalate to user — running with `neutral` against a project that has authored a tuned persona is almost always a misconfiguration. User must either confirm `neutral` explicitly (`--persona neutral`) or correct the profile.
 - `FAULT-PROFILE-MISSING-PROJECT-ANTI-JARGON` — soft. Project-default profile exists but lacks `project.anti-jargon`. Emit warning at Phase 0; do not block. Phase 1 forks will fall back to persona-card tuning notes only.
+- `FAULT-PROFILE-INVALID-PHASE-1-MODE` — `phase-1.mode` set to a value other than `per-anchor` or `scene-window`.
+- `FAULT-PROFILE-SCENE-WINDOW-PARALLEL-CONFLICT` — soft. `phase-1.mode: scene-window` with `phase-1.parallel: full` set explicitly. Scene-forks serialize across scenes; the `parallel` field is ignored under `scene-window`. Warn at Phase 0; do not block.
 
 ---
 

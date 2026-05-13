@@ -121,3 +121,8 @@ Remaining live watches (unchanged):
 - Distance from maester must be established with precision at least once.
 - Fixed-anchor logic must be honored explicitly when Taylor leaves Flea Bottom.
 - S2 unlock cause must be legible as relay-load accumulation in prose, not behavioral change alone.
+
+## Wrap review s01e02 — 2026-05-13
+flagged: 10
+accepted: Asymmetry mechanics intact — beetle-through-the-wall, Tya-debt running tab paid and precedented, first physiological cost arriving on schedule, three-note buildup at scene-L, mother's "you are warm" as knowing-without-naming. Plan-level rule architecture honored.
+why: The bones are right; the peaks are flattened. Father's step-back, the 400m exhale-cost, the stylus-drop, and Taylor's anchored-at-base posture during the eastern-quarter observation all land less sharply than the scene-map promises because surrounding low-variance prose or pronoun fuzziness blurs the causal chain. Fixed-anchor live-watch (carry-forward from OQ-4/5) is not yet honored explicitly in prose — scene-K is the first place it costs comprehension. Pacing and confusion are the editor's real surface; voice and entertainment hold.

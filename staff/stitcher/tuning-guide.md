@@ -10,13 +10,13 @@ Status: **draft (tuning)** — this guide will accumulate worked examples as tun
 
 ```
 1.  /and-stitch <episode-slug>
-        produces polish/<slug>.md (clean), polish/<slug>.annotated.md (with traces),
+        produces draft/<slug>.md (clean), draft/<slug>.annotated.md (with traces),
         and staff/stitcher/render-log-<slug>.md
 
-2.  Read polish/<slug>.md
+2.  Read draft/<slug>.md
         if it reads right end-to-end, done
 
-3.  When a line reads wrong, open polish/<slug>.annotated.md
+3.  When a line reads wrong, open draft/<slug>.annotated.md
         find the [L<N>] you want to fix
         read its <trace> block
 

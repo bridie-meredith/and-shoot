@@ -1,8 +1,8 @@
 ---
-description: Unified facet pipeline for one episode. Single command, six phases — R1 fanout → R1 fanin → R2 fanout → R2 fanin → audit (mechanical) → audience-gate (adversarial, blocking). Tens is upstream-supplied by /and-season. Output - active-project/theater/facets/ + audit report + audience-gate verdict. Usage - /and-facets [episode-slug]
+description: Unified facet pipeline for one episode. Single command, six phases — R1 fanout → R1 fanin → R2 fanout → R2 fanin → audit (mechanical) → audience-gate (adversarial, blocking). Tens is upstream-supplied by /and-season. Output - active-project/theater/facets/ + active-project/theater/dialogue/ + audit report + audience-gate verdict. Usage - /and-facets [episode-slug]
 ---
 
-Unified facet pipeline. One episode in, audited + audience-accepted graph out. The four legacy sub-commands (-r1, -r2, -r3, -audit) are folded into this command; R3 is retired (the relaxation pass was default-skipped in the prior chain and is gone in this collapse). Phase 5b — audience adversarial gate — is the final blocking gate; the auditor's mechanical scan and the audience's adversarial reading must BOTH come back clean before /and-facets is "done."
+Unified facet pipeline. One episode in, audited + audience-accepted graph out. The four legacy sub-commands (-r1, -r2, -r3, -audit) are folded into this command; R3 is retired (the relaxation pass was default-skipped in the prior chain and is gone in this collapse). Phase 5b — audience adversarial gate — is the final blocking gate; the auditor's mechanical scan and the audience's adversarial reading must BOTH come back clean before /and-facets is "done." **Dialogue (eleventh facet, added 2026-05-12)** is folded in alongside exposition — R1 author + R2 judge + audit-class additions + audience-gate inclusion. Discipline lifts from v1 round-trip work (`design/shoot-v2/round-trip-method.md`, `dialogue-corpus.md`) via the locked rubric at `staff/dialogue-writer/rubric-dialogue.md`; no separate dialogue-tuning round-trip — the v1 protocol plugs in as facet discipline.
 
 You are the orchestrator. Six phases run in strict sequence:
 
@@ -59,7 +59,7 @@ proto-lines/<slug>.md  (bones; upstream tens citations already accrued)
             (only after Phase 5 = 0 HARD AND Phase 5b = ACCEPT)
 ```
 
-R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/state/vibes) + base proto-lines + upstream `tensometer.md`. R2 is **graph-aware**: every judge gets all nine R1 facet files + the cite-index. The audit is **cross-cutting**: one fork, full graph. The audience-gate is **adversarial-graph-aware**: per-facet adversarial reviewers attack the locked graph the way the auditor's mechanical scan cannot.
+R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/state/vibes) + base proto-lines + upstream `tensometer.md`. R2 is **graph-aware**: every judge gets all ten R1 facet outputs (nine facet files + per-character dialogue files) + the cite-index. The audit is **cross-cutting**: one fork, full graph. The audience-gate is **adversarial-graph-aware**: per-facet adversarial reviewers attack the locked graph the way the auditor's mechanical scan cannot.
 
 ## Args
 
@@ -78,10 +78,14 @@ R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/
    - `audited-r1` — both Phase 5 + Phase 5b cleared; already done. Print "already audited; re-run requires explicit re-audit" and exit unless re-audit is wanted.
 3. Read the proto-lines file. Lift the seven extended-header fields: `episode`, `narrator`, `goal`, `cast`, `locations`, `prior_episode`, `aggregate_range`.
 4. **Upstream tens precondition.** Locate `active-project/theater/facets/tensometer-<season-slug>e<NN>.md` (final per-episode form from /and-season Phase 7 Step 4). Copy/rename to `active-project/theater/facets/tensometer.md` as the working surface. Abort with the resolution path if missing — facets cannot run without the bone-gate tens output.
-5. Confirm `active-project/theater/facets/` is empty apart from `tensometer.md`. If other facet files exist for this episode, abort with paths printed; archive first to re-run. (Skip this check on partial-run resume.)
+5. Confirm `active-project/theater/facets/` is empty apart from `tensometer.md`. If other facet files exist for this episode, abort with paths printed; archive first to re-run. (Skip this check on partial-run resume.) Confirm `active-project/theater/dialogue/` is empty (or does not exist — `mkdir -p` is fine); if per-character dialogue files exist for this episode, abort with paths printed; archive first to re-run.
 6. Confirm warehouse loc cards for every slug in `locations:` resolve. Confirm every `cast:` slug resolves under `active-project/actors/<slug>/`.
-7. Read `schemas/facet.schema.md`, `schemas/proto-line.schema.md`, `schemas/audit-report.schema.md` once (orchestrator reference).
+7. Read `schemas/facet.schema.md`, `schemas/proto-line.schema.md`, `schemas/audit-report.schema.md`, `schemas/dialogue.schema.md` once (orchestrator reference).
 8. Create `active-project/theater/facets/_inflight/` and `active-project/theater/facets/_inflight-r2/`.
+9. **Speaking-character + speech-bone inventory (URI-DIALOGUE-COVERAGE-GATE, 2026-05-12).** Grep the canonical proto-lines for `speaks to` bones. Record:
+   - `speech_bones`: the full list of proto-line IDs where the SVO is `<X> speaks to <Y>`.
+   - `speakers`: the distinct set of subject slugs across those bones (i.e. characters who must produce a dialogue file).
+   Stash this inventory in the render summary and pass it to Phase 5 (CONSTRAINT § dialogue-coverage) and Phase 6a (persist precondition). If `speech_bones` is non-empty, dialogue is **mandatory** for this run — Phase 1 author #11 must produce one `theater/dialogue/<speaker-slug>.md` file per speaker with ≥1 entry, AND every speech bone must be cited by ≥1 entry post-R2 merge. A "speech episode with empty dialogue" terminal state is a build defect, not an acceptable run outcome.
 
 Print:
 ```
@@ -91,6 +95,7 @@ Goal: <one sentence>
 Cast: <slug>, <slug>, ...
 Locations: <slug>, ...
 Proto-lines: <path>  (<count> bones)
+Speech bones: <count>  (speakers: <slug>, <slug>, ...)
 Upstream tens: <path>  (<count> entries; 1s/2s/3s = X/Y/Z)
 Starting phase: <Phase 1 | Phase 3 | Phase 5>
 ```
@@ -103,7 +108,7 @@ Starting phase: <Phase 1 | Phase 3 | Phase 5>
 
 - **One parallel Agent block.** All R1 authors fire in a single message with concurrent Agent tool calls. Sequential dispatch is a build defect.
 - **No shared-file race.** Each author writes (i) its facet file (or per-character slice — distinct paths) and (ii) an annotated proto-lines copy under `_inflight/proto-lines-<facet>.md` (or `_inflight/proto-lines-<facet>-<slug>.md` for per-character). The base proto-lines file is **not** mutated during R1.
-- **Citation write-back on the author's copy.** Each author copies the base proto-lines file to its `_inflight/` path and appends `[<facet-prefix>:<id>]` to every proto-line it decorated. Prefixes: `loc-state`, `narrator`, `sensory`, `state`, `mem`, `feel`, `meta`, `vibes`. Upstream `tens:` citations on the base proto-line are preserved.
+- **Citation write-back on the author's copy.** Each author copies the base proto-lines file to its `_inflight/` path and appends `[<facet-prefix>:<id>]` to every proto-line it decorated. Prefixes: `loc-state`, `narrator`, `sensory`, `state`, `mem`, `feel`, `meta`, `vibes`. **Dialogue authors append `[<character-slug>:<id>]` instead of a facet-prefix token** (per `schemas/dialogue.schema.md` § Stitch interface — the citation IS the character slug, no `dialogue:` namespace). Upstream `tens:` citations on the base proto-line are preserved.
 - **Forbid loading other R1 facet files.** Each author reads only its rubric + the inputs the rubric names + the base proto-lines + the upstream `tensometer.md` (where used as a correlative gate). No cross-R1-facet peeking.
 - **Per-file cull is the author's last act.** Per `schemas/facet.schema.md` § "Per-file cull" — delete-only, one pass.
 - **Body integrity.** Authors append citations only; SVO bodies in `_inflight/` must be byte-identical to the base. Merge tool aborts the run if any body diverges.
@@ -131,7 +136,9 @@ Starting phase: <Phase 1 | Phase 3 | Phase 5>
 
 **10. exposition (exposition-author)** — base proto-lines; upstream `tensometer.md` (peak/transitional gate for which anchors warrant heavier render-as); audience persona cards `active-project/audience/*/`; series-plan; world-build cards; condition cards; character cards (for series-specific objects); `active-project/staff/showrunner/memory.md` (for `prior_episode`); cross-episode register `active-project/staff/exposition-author/glossed-terms.md` (if exists); `rubric-exposition.md`; schema § exposition. Audience-modeled-by-construction: the union-of-audience-personas gap test is the central authoring discipline. Forbid: lens facet rubrics (R1 stays blind), source prose. Out: `exposition-<slug>.md` + `_inflight/proto-lines-exposition.md` + register write-back annotated. The exposition author DOES NOT read other R1 facet outputs at R1 (audience-pure gap-identification); the cross-check against lens facets is the R2 judge's job.
 
-(Nine authors. State-updates-actor and feeling each fan out further by cast size, making the parallel block larger by cast count; exposition adds a single dispatch.)
+**11. dialogue (dialogue-writer) — per-behavior-card fanout** — for each distinct behavior card present in the cast (resolved by reading `cards/dialects/<character-slug>.card.md` for every `cast:` slug and grouping by card), one fork in the parallel block. Each fork authors all speakers sharing that card. Reads: behavior card stack (margit-composed: leaf → `inherits:` parent → universal overlay → `references:` adjacent cards); speaker persona + ltm + stm + state for every speaker the fork covers; base proto-lines (the speaking-beat anchors are proto-lines where this card's speakers appear as subject of a `speaks` SVO); upstream `tensometer.md` (correlative — peak anchors pressure register state); `staff/dialogue-writer/rubric-dialogue.md`; schema `schemas/dialogue.schema.md`. Discipline: eight v1 round-trip writer patterns (per-card forks, card-stack load order, blind to originals, intent-as-state, multi-draft + chosen-mark, affirmative card-signature citation, anti-patterns explicit, calibration anchor) — all load-bearing per the rubric. Forbid: other R1 facet outputs (R1 stays blind), show files / source prose, behavior cards not in this fork's domain. Out: per-character dialogue files at `active-project/theater/dialogue/<character-slug>.md` per `schemas/dialogue.schema.md` (file location is outside `theater/facets/` per existing schema); drafts sidecar at `active-project/staff/dialogue-writer/<character-slug>.drafts.md` (multi-draft + chosen-mark + card-signature citations); annotated proto-lines copy at `_inflight/proto-lines-dialogue-<card-slug>.md` with `[<character-slug>:<id>]` citations on speaking-beat anchors.
+
+(Ten authors. State-updates-actor and feeling each fan out further by cast size, making the parallel block larger by cast count; exposition adds a single dispatch; dialogue fans out by distinct-behavior-card count present in the cast — typically 3–5 in a Westeros episode.)
 
 ---
 
@@ -145,7 +152,7 @@ Five sub-phases inside the tool (see its module docstring):
 
 1. **Body-integrity check.** Every `_inflight/proto-lines-*.md` SVO body must match base byte-for-byte. Divergence → abort.
 2. **Citation union.** Per proto-line ID, merge `[<prefix>:<id>]` tokens across base + all author copies. Deterministic order. Write canonical `theater/proto-lines/<slug>.md`.
-3. **Slice consolidation.** `feeling-<slug>.md` → `feeling.md`; `state-updates-env.md` + `state-updates-<slug>.md` → `state-updates.md`. IDs renumbered monotonically; per-source `# source: <slug>` markers preserved.
+3. **Slice consolidation.** `feeling-<slug>.md` → `feeling.md`; `state-updates-env.md` + `state-updates-<slug>.md` → `state-updates.md`. IDs renumbered monotonically; per-source `# source: <slug>` markers preserved. **Dialogue files are NOT consolidated** — per `schemas/dialogue.schema.md`, ID space is per-character and `theater/dialogue/<character-slug>.md` is the canonical per-character location. The cite-index builder treats per-character dialogue file IDs as a distinct citation namespace (`<character-slug>:<id>`) from the facet prefixes.
 4. **Stale-citation check.** Every `[<prefix>:<id>]` on canonical proto-lines must resolve to a facet-file entry. Unresolved → abort.
 5. **Cite-index build.** `theater/facets/_cite-index.md` derived from canonical merged state.
 
@@ -159,8 +166,8 @@ Set status `protolined` → `faceted-r1` in showrunner memory.
 
 **Dispatch discipline:**
 
-- **One parallel Agent block.** All five midband judges (NI, memory, feeling-per-character, metaphor, exposition) fire concurrently. Each judge sees the locked R1 graph; none sees the others' R2 mutations.
-- **Full nine-facet graph + cite-index in every dispatch payload.** Non-negotiable.
+- **One parallel Agent block.** All six midband judges (NI, memory, feeling-per-character, metaphor, exposition, dialogue-per-character) fire concurrently. Each judge sees the locked R1 graph; none sees the others' R2 mutations.
+- **Full nine-facet graph + per-character dialogue files + cite-index in every dispatch payload.** Non-negotiable. Dialogue judges additionally receive the drafts sidecars for their characters (card-signature + facet-license citations on chosen drafts).
 - **No shared-file race.** Each judge writes (i) its mutated facet file (deletes leave gaps; adds take next-available ID) and (ii) an annotated proto-lines copy under `_inflight-r2/proto-lines-<facet>.md` (or per-character for feeling) reflecting its citation cascades + adds. The base canonical proto-lines file is **not** mutated during R2.
 - **Self-scoped deletion only.** A judge may delete only its own facet's entries. Cross-facet deletion authority is reserved for Phase 5 audit.
 - **Citation cascade on the author's proto-lines copy.** When the judge deletes `<own>:<id>`, it strips `[<own>:<id>]` from every proto-line in its `_inflight-r2/` copy. The cite-index makes affected proto-lines cheap to identify.
@@ -182,6 +189,8 @@ Set status `protolined` → `faceted-r1` in showrunner memory.
 
 **R2.5 exposition (exposition-author, judge mode)** — all R1 facet files (including the now-locked lens facets) + cite-index + audience persona cards + cross-episode register + `rubric-exposition.md`. Override exposition-author: facet-judge mode. The R2 judge is the critical pass that converts the audience-pure R1 output into graph-trusted final state. Decide per existing exposition entry: KEEP (gap still real after lens-facets reviewed; no other facet covers it; sources still resolve) / DELETE (lens facet covers — NI established the term in body, mem carries the callback, loc-state covered the scene-orient) / REWORD (gap is real but surface chose heavy render-as where lighter would do; or anti-jargon list growth in R1 cull mandates re-rendering). Adds: rare — when R1 lens-facet author chose NOT to cover a register exposition can pick up. Add-cap 3. Provisional-anchor resolution: R1 entries with descriptive anchor-hints get bound to actual proto-line IDs via cite-index walk. Scene-open-orient fire-rule re-validated against locked graph (the s01e01 dogfood lesson: Phase 2 exposition refused 11 of 11 scene-orient entries that Phase 1 had authored, because NI/loc-state covered them; R2 enforces this routing). Out: mutated `exposition-<slug>.md` + `_inflight-r2/proto-lines-exposition.md` + decision-shard `staff/exposition-author/r2-decision-shard.md`.
 
+**R2.6 dialogue (dialogue-writer, judge mode, per-character ×N speaking characters)** — for each speaking character in the cast, one fork in the same parallel block (judge mode). Reads: the dialogue file under judgment + its drafts sidecar; all nine other R1 facet files + cite-index; behavior card stack (re-loaded); speaker persona + ltm + stm + state; `staff/dialogue-writer/rubric-dialogue.md`. **Graph payload filtering (rubric § contamination disciplines):** facet entries passed as facts-not-prose (somatic-tell text / monument-name / interest-focus / vibe-target fields only, stripped of rationale); speaker's own slices (`feeling-<speaker>`, `state-updates-<speaker>`, NI iff speaker is POV) first-class; other characters' slices as one-line abstracts. Decide per existing dialogue entry: KEEP (card signature affirmatively demonstrated; facet-license citations resolve in locked graph; somatic-tell / monument adjacency claimed by chosen draft is structurally present; no hard-fence violation; behavior monument rules respected) / DELETE-<reason> (card signature missing — inoffensive ≠ on-card; forbidden vocabulary; facet-license citation does not resolve; hard-fence proper-noun hit; DEDUP with NI / feeling / memory rendering same content) / REWRITE (internal mini-V3 surfaces closable seam; delete + new ID with revised draft citing different §-section or different facet license). Add-cap: 3 per character (adds are exceptional — R1 covers speaking beats; R2 adds only when a beat is genuinely silent that card + graph license a line for). Out: mutated `theater/dialogue/<character-slug>.md` + `_inflight-r2/proto-lines-dialogue-<character>.md` + decision-shard `staff/dialogue-writer/r2-decision-shard-<character>.md`.
+
 Vibes is not re-judged in R2; the showrunner-authored R1 vibes facet stands as-is unless the audit flags it. (R2 vibes judging is a future extension.)
 
 ---
@@ -190,7 +199,7 @@ Vibes is not re-judged in R2; the showrunner-authored R1 vibes facet stands as-i
 
 ### 4a. Decision-log consolidation
 
-Concatenate the five layer shards (R2.1 NI, R2.2 memory, R2.3 feeling — all per-character shards merged in `cast:` order, R2.4 metaphor, R2.5 exposition) into `active-project/theater/facets/.r2-decisions.md` under one `## <facet-slug>` heading per shard. Sum the per-shard `f-r2-counts:` into a single top-of-file frontmatter block per `schemas/audit-report.schema.md` § Consolidated file:
+Concatenate the six layer shards (R2.1 NI, R2.2 memory, R2.3 feeling — all per-character shards merged in `cast:` order, R2.4 metaphor, R2.5 exposition, R2.6 dialogue — all per-character shards merged in `cast:` order) into `active-project/theater/facets/.r2-decisions.md` under one `## <facet-slug>` heading per shard. Sum the per-shard `f-r2-counts:` into a single top-of-file frontmatter block per `schemas/audit-report.schema.md` § Consolidated file:
 
 ```yaml
 ---
@@ -226,6 +235,36 @@ Body-integrity, citation union, slice consolidation, stale-citation check, cite-
 
 Set status `faceted-r1` → `faceted-r2` in showrunner memory.
 
+### 4d. Scene-map emission (URI-SCENE-WINDOW, 2026-05-13)
+
+Emit `active-project/theater/facets/scene-map-<episode-slug>.md` per `schemas/scene-map.schema.md`. This is a derived structural facet, not authored — the orchestrator combines existing graph sources mechanically. No Agent dispatch.
+
+**Derivation procedure:**
+1. **Candidate boundaries from proto-lines.** Walk `theater/proto-lines/<slug>.md`; record blank-line positions (time-skip markers) and the bone IDs flanking each.
+2. **Location-state transitions.** Walk `theater/facets/location-state.md`; record every entry whose `<location-slug>` differs from the prior loc-state entry. Each such transition is a candidate boundary.
+3. **NI sparsity-gradient and time-cognition.** Walk `theater/facets/interest-narrator.md`; record entries citing time-of-day shifts (`already half-gone`, `the morning was`, etc.) or post-time-skip cognition.
+4. **Tensometer labelling authority.** Read the scene-footer section of `theater/facets/tensometer-<slug>.md` (or `tensometer-<season-slug>e<NN>.md` for bone-gate-sourced tens). The tensometer's named scenes (A, B, …) are the canonical labels. Reconcile candidate-boundary count against the tensometer's named-scene count:
+   - If the tensometer names N scenes and candidate boundaries imply M scenes:
+     - M == N: assign labels A..N to the candidates in order.
+     - M > N: the candidates include sub-scene splits the tensometer did not name. Merge consecutive candidates that share `<location-slug>` and `<time-of-day>` until M == N.
+     - M < N: the tensometer named more scenes than boundaries imply. Trust the tensometer's count; insert boundaries at the next NI-cognition-of-time-shift inside the under-counted range.
+5. **Per-scene header derivation.** For each scene's range:
+   - `<location-slug>`: the loc-state entry citing the scene's first non-transitional bone. Use `unstated` only when no loc-state cites any bone in the range.
+   - `<time-of-day>`: from NI cognition entries inside the range, OR from exposition `scene-open-orient` entries, OR carried-forward from the prior scene if the range is `continuous`.
+   - `<one-line>`: condense the tensometer's narrated scene description to ≤80 chars. If the tensometer's scene-footer is sparse, derive from the cluster's peak bone's NI/feel entries.
+6. **Per-scene tens-aware field derivation (URI-SCENE-RHYTHM, 2026-05-13).** For each scene, walk the tensometer's per-bone entries inside the scene's range and compute:
+   - **`rhythm-shape`**: classify the tens topology per the rules in `schemas/scene-map.schema.md` § Per-scene tens-aware fields. The classifier is mechanical (all-tens=1 → flat-low; tens=3 in last-third → rising-to-peak; etc.).
+   - **`peak-bones`**: list every bone with tens ≥ 2; format `@<id>=<tens>`.
+   - **`peak-shadow-bones`**: for each peak bone, add the immediately-prior and immediately-next bone IDs if they exist in-scene and have tens=1. Deduplicate.
+   - **`fusion-eligible-runs`**: walk the scene's tens=1 bones; group consecutive runs of length ≥3; exclude any bone in `peak-shadow-bones`; emit surviving runs as `@<start>-@<end>`. A run split by a peak-shadow bone produces two shorter runs, each of which emits only if it independently has length ≥3.
+   - **`protected-patterns`**: run the pattern detectors (log-trio, cardinal-quartet, three-note-buildup, routing-countdown, threshold-cross, return-of, fauna-relay-refrain) over the scene's bone sequence; emit each detected pattern as `<pattern-name> @<start>-@<end>`. Pattern definitions follow `phase-1.protected-patterns` from `schemas/stitch-profile.schema.md`.
+7. **Coverage check.** Validate every bone in proto-lines lands in exactly one scene's range. Emit `FAULT-SCENE-MAP-COVERAGE-GAP @<id>` for uncovered bones, `FAULT-SCENE-MAP-COVERAGE-OVERLAP @<id>` for double-covered bones. Both are HARD; surface to Phase 5 audit.
+8. **Write file.** Per schema. Include frontmatter (`scene-map`, `generated`, `source`, `auto-derived: true`, `total-scenes`, `total-bones`) + body blocks (header line + indented tens-aware fields per scene) + coverage footer.
+
+The scene-map ships alongside the cite-index as part of Phase 4c's structural-emission output. Both are re-derivable from upstream sources; both are consumed by downstream pipelines.
+
+If the tensometer's scene-footer is empty or absent (rare; pre-URI-SCENE-WINDOW episodes), fall back to candidate-boundary-only derivation and label scenes A.., flagging the emission with `frontmatter.source: derived from proto-lines + loc-state + ni (no tensometer scene-footer)`. The auditor's coverage check still fires.
+
 ---
 
 ## Phase 5 — AUDIT: single auditor dispatch
@@ -235,11 +274,15 @@ Dispatch **auditor** (fork) with the full graph:
 **Read inputs:**
 - Proto-lines: `active-project/theater/proto-lines/<slug>.md` (canonical, post-R2).
 - All ten facet files at `active-project/theater/facets/` (`tensometer`, `location-state`, `interest-narrator`, `sensory`, `state-updates`, `memory`, `feeling`, `metaphor`, `vibes`, `exposition-<slug>`).
+- Scene-map: `active-project/theater/facets/scene-map-<slug>.md` (derived structural facet, emitted at Phase 4d).
+- All per-character dialogue files at `active-project/theater/dialogue/<character-slug>.md` (one per speaking character).
+- All per-character dialogue drafts sidecars at `active-project/staff/dialogue-writer/<character-slug>.drafts.md` (for CONSTRAINT § citation-completeness).
 - Cite-index: `_cite-index.md` (post-R2).
 - R2 decision-log: `.r2-decisions.md`.
 - All active warehouse cards (`active-project/warehouse/*.card.md`) — for constraint checks against cond-* and loc-* cards.
+- All behavior cards in scope (`cards/dialects/<character-slug>.card.md` and composition stack via margit) for every speaking character — for CONSTRAINT § behavior-card-compliance checks.
 - Series + season plans (showrunner memory) — for series-law constraint checks.
-- Schemas: `facet.schema.md`, `audit-report.schema.md`.
+- Schemas: `facet.schema.md`, `dialogue.schema.md`, `audit-report.schema.md`.
 
 **Forbid loading:** behavior cards, vibes-as-bias, audience personas (except for exposition CONSTRAINT § license-completeness check, which requires loading the persona slugs to verify `licensed-by:` references resolve — load names only, not content), source prose. The auditor reads the graph mechanically against constraints, not aesthetically.
 
@@ -247,17 +290,17 @@ Dispatch **auditor** (fork) with the full graph:
 
 ### Audit classes (eleven; with exposition-specific rules layered into FREQUENCY-BAND, CONSTRAINT, and AP-SCAN)
 
-1. **STRUCTURAL** — schema/format/integrity (headers, line shape, ID monotonicity, anchor resolution, bidirectional citation, proto-body integrity).
-2. **FREQUENCY-BAND** — per-rubric quantitative gates (tens 60-75/20-30/5-10; sensory 3-6%; memory 5-12%; feeling 2-5%/char; metaphor 0-3%; NI 15-25%; **exposition 1-5% per episode, episode-open ≤4 entries, first-mention ≤12 entries, scene-open-orient ≤1 per scene**). **Tens exemption recognition (URI-034, 2026-05-11):** when a tens file's footer declares a frequency-band exemption per `design/shoot-v2/rubric-tensometer.md` §"Frequency-band exemptions" with the named exemption slug + quoted positive-criteria match, the auditor re-checks the criteria against the file/episode state. If every positive criterion is satisfied with quoted evidence, the breach is recorded as `exempt-<slug>` and does NOT count as a HARD finding. A claimed exemption with unmet or unquoted criteria is upheld as HARD with `exemption-claim-malformed-{criterion-failed}` as the rationale. "Opening-window low-charge" alone is not an exemption — it must cite the rubric's Exemption 1 with criteria (a) through (d) quoted.
+1. **STRUCTURAL** — schema/format/integrity (headers, line shape, ID monotonicity, anchor resolution, bidirectional citation, proto-body integrity). **Dialogue-specific:** every dialogue entry's `@<proto-line-id>` resolves; every `<character-slug>:<id>` citation in proto-lines resolves to an existing dialogue entry; entry-ID monotonicity per-character (`schemas/dialogue.schema.md` § Entry fields); behavior-card slug in dialogue file header matches a real card.
+2. **FREQUENCY-BAND** — per-rubric quantitative gates (tens 60-75/20-30/5-10; sensory 3-6%; memory 5-12%; feeling 2-5%/char; metaphor 0-3%; NI 15-25%; **exposition 1-5% per episode, episode-open ≤4 entries, first-mention ≤12 entries, scene-open-orient ≤1 per scene**; **dialogue sparsity unconstrained — content-driven, not flag-driven — but per-anchor cap ≤3 utterances and ≤1 utterance per speaker per anchor unless deliberate single-turn split documented in drafts sidecar**). **Tens exemption recognition (URI-034, 2026-05-11):** when a tens file's footer declares a frequency-band exemption per `design/shoot-v2/rubric-tensometer.md` §"Frequency-band exemptions" with the named exemption slug + quoted positive-criteria match, the auditor re-checks the criteria against the file/episode state. If every positive criterion is satisfied with quoted evidence, the breach is recorded as `exempt-<slug>` and does NOT count as a HARD finding. A claimed exemption with unmet or unquoted criteria is upheld as HARD with `exemption-claim-malformed-{criterion-failed}` as the rationale. "Opening-window low-charge" alone is not an exemption — it must cite the rubric's Exemption 1 with criteria (a) through (d) quoted.
 3. **METADATA-INCONSISTENCY** — file headers / round-notes / r1_to_r2 summary lines that contradict actual content.
 4. **CURVE-SHAPE** — tens-rubric § "Curve-shape rubric (episode-level)": scene-level peaks; rise-to-peak adjacency; release; no flatlining 30+; episode-level act structure; climax beat exists and is dense.
 5. **CONTRADICTION** — two facet entries set incompatible state on the same anchor; both flagged.
-6. **DEDUP** — cross-facet-same-anchor / within-facet-different-anchor / within-facet-same-anchor.
+6. **DEDUP** — cross-facet-same-anchor / within-facet-different-anchor / within-facet-same-anchor. **Dialogue-specific:** utterance content rendered by NI / feeling / memory at the same anchor (the speaker says aloud what another facet already shows — one yields; default is the lens facet yields to dialogue when the speaker uses the same phrasing the lens would, since dialogue is verbatim render and lens is render-as signal).
 7. **SUPERFLUOUS** — lonely entries that don't survive rubric scrutiny. Convention: tens rating=1 and off-anchor vibes are never superfluous.
-8. **CONSTRAINT** — cross-facet contract violations: memory without NI-spine; metaphor without resolvable `licensed-by:` anchor; feeling duplicating POV NI; vibes with unresolvable or forward-citing `licensed-by:`; state-updates `<old>` contradicting prior state; POV-perceptual access on NI; **exposition source-traceability (every claim in `<gloss-text>` must trace to a `<sources>` entry; unresolvable claim → HARD); exposition license-completeness (every entry's `<licensed-by>` field must name ≥1 persona-card slug + a specific gap-claim — missing/malformed → SIGNAL); exposition scene-orient fire-rule (`scene-open-orient` entries must satisfy (a) time-skip-blank-precedes + (b) loc-state-silent-at-anchor + (c) NI-silent-on-time-or-place-in-first-2-anchors-of-new-scene; any violation → HARD because the entry fires when lens should carry); exposition re-gloss check (cross-reference `<key>` against `active-project/staff/exposition-author/glossed-terms.md`; hit → HARD)**.
+8. **CONSTRAINT** — cross-facet contract violations: memory without NI-spine; metaphor without resolvable `licensed-by:` anchor; feeling duplicating POV NI; vibes with unresolvable or forward-citing `licensed-by:`; state-updates `<old>` contradicting prior state; POV-perceptual access on NI; **exposition source-traceability (every claim in `<gloss-text>` must trace to a `<sources>` entry; unresolvable claim → HARD); exposition license-completeness (every entry's `<licensed-by>` field must name ≥1 persona-card slug + a specific gap-claim — missing/malformed → SIGNAL); exposition scene-orient fire-rule (`scene-open-orient` entries must satisfy (a) time-skip-blank-precedes + (b) loc-state-silent-at-anchor + (c) NI-silent-on-time-or-place-in-first-2-anchors-of-new-scene; any violation → HARD because the entry fires when lens should carry); exposition re-gloss check (cross-reference `<key>` against `active-project/staff/exposition-author/glossed-terms.md`; hit → HARD); exposition first-mention-character coverage (walk proto-lines and identify every named individual appearing in narrator-prose for the first time — by definite description like `the carter` / `the dock-runner` / `the lord's-man` / `the maester` or by name like `Tom` / `Ben`. For each, verify a `first-mention-character` exposition entry exists keyed to that anchor. POV character excluded — covered in episode-open preamble. Dialogue-only mentions excluded — a name uttered by a speaker is the speaker's reference, not a prose introduction. Missing entry → HARD: `[exposition:--] @<anchor> — first-mention-character-coverage — no gloss for <character-noun-phrase> on first prose mention`)**; **dialogue behavior-card-compliance (every utterance respects the speaker's behavior card §hard fences, §forbidden vocabulary, §monument rules; violation → HARD); dialogue citation-completeness (every chosen-mark entry in the drafts sidecar has both card-signature §-cite AND facet-license citation post-R2; missing one axis → SIGNAL; missing both → HARD); dialogue objective-anchoring (every entry's `<objective>` field is non-empty and matches a speech-act the proto-line bone licenses — missing/unmatched → SIGNAL); dialogue-coverage (URI-DIALOGUE-COVERAGE-GATE — every Phase 0 `speech_bones` ID is cited by ≥1 `<character-slug>:<id>` token on the canonical proto-lines, AND every Phase 0 `speakers` slug has a non-empty `theater/dialogue/<slug>.md` file. Bare speech bone (a `<X> speaks to <Y>` proto-line with zero dialogue citations post-R2) → HARD per bone. Missing speaker file (a speaker slug from Phase 0 inventory with no dialogue file on disk) → HARD per speaker. This is the structural gate that prevents the FAULT-DIALOGUE-MISSING failure mode — emit `[dialogue:--] @<proto> — dialogue-coverage — bare speech bone: <subject> speaks to <object>` and `[dialogue:--] @-- — dialogue-coverage — missing speaker file: <slug>`.)**; **scene-map coverage (URI-SCENE-WINDOW, 2026-05-13 — every bone in `proto-lines/<slug>.md` MUST fall inside exactly one scene's `@<start>-@<end>` range in `theater/facets/scene-map-<slug>.md`. Uncovered bone → HARD `[scene-map:--] @<id> — scene-map-coverage — gap`. Double-covered bone → HARD `[scene-map:--] @<id> — scene-map-coverage — overlap with scene-<labels>`. Dangling anchor (scene's `@<start>` or `@<end>` does not match any proto-line ID) → HARD `[scene-map:--] scene-<label> @<id> — scene-map-coverage — dangling-anchor`. Duplicate scene-label → HARD. Frontmatter `total-scenes` / `total-bones` mismatch with body → HARD. Per the schema's coverage validation table.)**; **scene-map per-scene caps (URI-SCENE-WINDOW — sensory ≤3 per scene, feeling ≤1 per character per scene, metaphor ≤1 cross-character per scene, exposition `scope: scene-open-orient` ≤1 per scene. Per-scene boundaries read from `scene-map-<slug>.md`'s ranges, not inferred from prose. Breach → HARD per facet type with scene-label cited in the finding: `[<facet>:<count>] scene-<label> @<bone-range> — per-scene-cap — <count> entries exceed cap of <N>`.)**; **loc-state transition-run continuity-license (URI-SCENE-RHYTHM, 2026-05-13 — per `design/shoot-v2/rubric-location-state.md § Transition-run continuity license`. Continuity-carry entry (loc-state entry whose sensory note begins `continuity-from <prior-loc-state-id>:`) is valid only when (a) the entry's anchor bone is inside a scene-map `fusion-eligible-runs` range AND (b) the scene's `rhythm-shape` is `flat-low` / `resolving` / `release-only` AND (c) the `<prior-loc-state-id>` resolves to an earlier loc-state entry in the file AND (d) no other continuity-carry entry exists in the same fusion-eligible-run. Violations: (a) → HARD `FAULT-LOC-STATE-CONTINUITY-MISPLACED`; (c) → HARD `FAULT-LOC-STATE-CONTINUITY-DANGLING`; (d) → HARD `FAULT-LOC-STATE-CONTINUITY-OVERPACK`; (b) is enforced by the licensing rule (entry should not have been authored on a momentum scene; flagged at audit as HARD-misplaced). Carry-note duplicating prior loc-state's sensory note verbatim → SIGNAL `WARN-LOC-STATE-CONTINUITY-NO-INCREMENT`.)**.
 
-   **Earth-Bet hard-fence proper-noun scan (URI-AUDITOR-CONSTRAINT-CALIBRATION, 2026-05-11):** case-insensitive substring scan against the Earth-Bet proper-noun list across **every text field** of every facet entry — including but not limited to: NI free-text rationale, memory target-reference glosses (the parenthetical `(earth-bet: ...)` and the `s<NN>e<NN>:<id>` slug components alike), metaphor `licensed-by:` notes and figure text, vibes entity-target-primary fields, feeling somatic-tell text, state-updates field names AND `<old>` / `<new>` values, sensory disambiguation notes, loc-state composite-state and observable-affordance fields. Slug components matter: a margit-referral slug embedding `khepri-` or `gold-morning-` is a hard-fence violation even when no full English phrase is rendered. Names to scan (non-exhaustive starter list — refresh against the canonical Earth-Bet hard-fence list at every audit): Brockton Bay, Skitter, Lung, Khepri, Bakuda, PRT, Endbringer, Gold Morning, Scion, Echidna, Behemoth, Leviathan, Simurgh, Cauldron, Coil, Tattletale, Bitch, Grue, Regent, Imp, Aisha, Glaive, Glory Girl, Panacea. Any hit is HARD; emit `[<facet>:<id>] @<proto> — earth-bet-hard-fence — <name> at <field>: "<surrounding-text>"`.
-9. **AP-SCAN** — per-rubric anti-pattern mechanical scan (tens AP1-3, memory AP-functional-callback, feeling AP-named-feeling-vocab, metaphor AP3 / AP7 / AP12, vibes AP-multi-source / AP8 sentence-parsability, etc.).
+   **Earth-Bet hard-fence proper-noun scan (URI-AUDITOR-CONSTRAINT-CALIBRATION, 2026-05-11; dialogue extension 2026-05-12):** case-insensitive substring scan against the Earth-Bet proper-noun list across **every text field** of every facet entry **AND every dialogue utterance** — including but not limited to: NI free-text rationale, memory target-reference glosses (the parenthetical `(earth-bet: ...)` and the `s<NN>e<NN>:<id>` slug components alike), metaphor `licensed-by:` notes and figure text, vibes entity-target-primary fields, feeling somatic-tell text, state-updates field names AND `<old>` / `<new>` values, sensory disambiguation notes, loc-state composite-state and observable-affordance fields, **dialogue `<utterance>` text and `<objective>` text**. Slug components matter: a margit-referral slug embedding `khepri-` or `gold-morning-` is a hard-fence violation even when no full English phrase is rendered. Names to scan (non-exhaustive starter list — refresh against the canonical Earth-Bet hard-fence list at every audit): Brockton Bay, Skitter, Lung, Khepri, Bakuda, PRT, Endbringer, Gold Morning, Scion, Echidna, Behemoth, Leviathan, Simurgh, Cauldron, Coil, Tattletale, Bitch, Grue, Regent, Imp, Aisha, Glaive, Glory Girl, Panacea. Any hit is HARD; emit `[<facet>:<id>] @<proto> — earth-bet-hard-fence — <name> at <field>: "<surrounding-text>"`.
+9. **AP-SCAN** — per-rubric anti-pattern mechanical scan (tens AP1-3, memory AP-functional-callback, feeling AP-named-feeling-vocab, metaphor AP3 / AP7 / AP12, vibes AP-multi-source / AP8 sentence-parsability, etc.). **Dialogue anti-patterns (v1 round-trip findings, lifted from `rubric-dialogue.md`):** AP-chassis-contamination (em-dash + semicolon spine on non-Taylor speakers — Taylor's chassis bleeding across cards); AP-modern-hr-speak (procedural/compliance-English in Westerosi register: "labor-eligibility," "procedural grounds," etc.); AP-deposition-cadence (legalistic Q-and-A cadence in non-administrative speakers); AP-nominalization-substituting-plain-English (compound noun-phrases where colloquial register's card calls for verb-driven clauses).
 10. **TASTE-FLAG** — audience-attack-anticipation candidates: atmosphere-thin / momentum-stall / voice-fidelity. Signal-only; feeds bidirectional tuning loop.
 11. **PILE-UP REVIEW** — proto-lines with >4 co-located facets; verdict per pile-up: warranted | over-decoration.
 
@@ -338,7 +381,7 @@ The final gate. The auditor's mechanical scan caught what mechanical scans can c
 
 ### Reviewer assembly (variable per facet)
 
-For each of the ten facets, the orchestrator picks the reviewer set:
+For each of the ten facets **plus dialogue (per-character)**, the orchestrator picks the reviewer set:
 
 1. **Specialist personas** — if `staff/audience/<slug>/card.md` files exist with `target-facet: <facet>` in frontmatter, those specialists fire as the reviewer set for that facet. Example: the `sensory` facet currently has `sensory-disambiguation-pedant`, `sensory-modality-coverage`, `sensory-old-state-reader`.
 2. **Active project audience (fallback)** — for facets without specialists, the 3 active personas under `active-project/audience/<slug>/card.md` fire in graph-aware adversarial mode (NOT prose mode). Each persona reads the facet entries through its own lens (atmosphere / register / source-fidelity / etc.).
@@ -347,7 +390,17 @@ Reviewer membership is recorded in the verdict file. New specialist personas aut
 
 ### Dispatch shape
 
-One parallel Agent block per facet, all facets fired concurrently. For ten facets at three reviewers each (specialists or fallback), that is up to 30 concurrent audience dispatches in a single message. (Two of the ten — `tensometer` and `vibes` — may run with a single reviewer dispatch if the audience cards do not yet hold facet-attack rubrics for them; verdict notes which facets ran undermanned.)
+One parallel Agent block per facet, all facets fired concurrently. For ten facets + dialogue-per-character at three reviewers each (specialists or fallback), that is up to (10 + N speaking characters) × 3 concurrent audience dispatches in a single message. (Two of the ten — `tensometer` and `vibes` — may run with a single reviewer dispatch if the audience cards do not yet hold facet-attack rubrics for them; verdict notes which facets ran undermanned. Dialogue per-character runs with full 3-reviewer dispatch using the active-project audience until specialist dialogue personas are authored — see open question in `design/shoot-v2/dialogue-tuning-v2.md`.)
+
+### Dialogue reviewer protocol (V2 + V3, per `staff/dialogue-writer/rubric-dialogue.md`)
+
+Dialogue's audience-gate inherits v1 round-trip tuning. Per reviewer per character file, **two stages** in the same verdict file:
+
+**Stage 1 — V2 strict affirmative-demonstration.** Per entry: ACCEPT (Q1 — line affirmatively demonstrates ≥1 card signature with §-citation; Q2 — line does not violate any card §forbidden vocabulary / §forbidden cadence / §hard fence) / REVISE / FAIL. Inoffensive lines fail Q1. On-card-but-violating fails Q2.
+
+**Stage 2 — V3 adversarial seam-finding.** For every line, accepts included, this persona produces its strongest hostile counter-argument from its lens (atmosphere / board-move / voice-precision — or facet-equivalents from the active audience). Persona-distinct constraint: seams must differ by lens, not generic craft-criticism. Facet evidence is fair attack surface: the chosen draft cites facet-licenses; the seam may attack those citations directly ("the slip claims `feeling-taylor:7` as license, but that entry is a held-breath tell that doesn't carry register-slip in stitch").
+
+Aggregation: strict 3-of-3 ACCEPT per character (URI-AUDIENCE-AGGREGATION-RULE). Single dissent fails the character. Convergence on failure: fixer dispatches dialogue-writer in **defense-or-revise mode** — defended accepts stay; revisions get multi-draft + chosen-mark + rejection-notes treatment per the rubric.
 
 **Exposition is the canonical audience-gate test.** Because the exposition-author IS audience-modeled by construction (the union-of-personas gap test is its central authoring discipline), the audience-gate reviewers have a stronger relationship to exposition than to any other facet. The three personas each read the exposition entries against their own reading-experience and answer:
 - Did the gloss successfully orient me to the term/object/place/circumstance?
@@ -406,8 +459,8 @@ Per facet:
 **Strict-aggregation enforcement (URI-AUDIENCE-AGGREGATION-RULE, 2026-05-11).** Aggregation is performed by the orchestrator from the per-reviewer verdict files on disk. The orchestrator does NOT delegate aggregation to an audience-subagent. The 2-of-3 majority rule that applies to line and plan review (`.claude/agents/audience.md`) does NOT apply here — a single dissenting persona fails the facet. An audience-subagent that returns a single aggregated verdict instead of writing per-reviewer files has drifted; re-dispatch with explicit "write one verdict file per persona under `active-project/staff/audience/<persona-slug>/`; do not aggregate" instructions.
 
 Across all facets:
-- **all 9 facets pass** → Phase 5b passes. Proceed to Phase 6.
-- **any facet fails** → enter remediation cycle.
+- **all 10 facets + all per-character dialogue files pass** → Phase 5b passes. Proceed to Phase 6.
+- **any facet or any character dialogue fails** → enter remediation cycle.
 
 ### Remediation cycle
 
@@ -458,9 +511,10 @@ A `validated` verdict requires at least one shared finding across the two paths.
 
 ### 6a. Persist
 
-**Precondition:** Phase 5 = 0 HARD AND Phase 5b = ACCEPT (3-of-3 per facet, all ten facets including exposition). If either gate is unclean, do not persist — return to the appropriate phase.
+**Precondition:** Phase 5 = 0 HARD AND Phase 5b = ACCEPT (3-of-3 per facet, all ten facets including exposition, AND 3-of-3 per character dialogue file) AND dialogue-coverage gate clean (URI-DIALOGUE-COVERAGE-GATE — for every speaker in Phase 0's `speakers` inventory, `theater/dialogue/<speaker-slug>.md` exists with ≥1 entry, AND every proto-line ID in Phase 0's `speech_bones` carries ≥1 `<character-slug>:<id>` citation on the canonical proto-lines) AND scene-map coverage gate clean (URI-SCENE-WINDOW — `theater/facets/scene-map-<slug>.md` exists, every bone in proto-lines lands in exactly one scene, no dangling anchors, no duplicate labels). If any of the four gates is unclean, do not persist — return to the appropriate phase. The dialogue-coverage and scene-map gates are non-bypassable: a speech episode that finalizes without dialogue is the FAULT-DIALOGUE-MISSING failure mode; an episode without a clean scene-map breaks scene-window stitcher dispatch. Both must be remediated before `audited-r1` is set.
 
 1. Confirm `facets-final-audit.md` (final-cycle Phase 5 report) and `facets-audience-gate-r<N>.md` (final-cycle Phase 5b report) both written.
+1a. Re-verify dialogue-coverage from Phase 0 inventory. For each `speakers` slug, stat `active-project/theater/dialogue/<slug>.md` and confirm non-empty body (≥1 entry past the frontmatter). For each `speech_bones` proto-line ID, grep the canonical proto-lines for at least one `[<character-slug>:<id>]` citation token on that line. Any miss → re-enter Phase 5 with the bare-bone/missing-file list dispatched to fixer; cycle the gate until clean. Cap-burn here flips orchestrator-critic to NOT-SUCCESSFUL.
 2. Update `active-project/staff/showrunner/memory.md`:
    - Status: `audited-r1-mechanical` → `audited-r1`.
    - `audit_path: active-project/staff/auditor/facets-final-audit.md`.
@@ -483,9 +537,10 @@ A `validated` verdict requires at least one shared finding across the two paths.
 ========================================================
 
 Phase 1 — R1 fanout:
-  10 facet files authored (9 in parallel + tens upstream)
-  <count> total entries; <count>/<count> protolines decorated
+  10 facet files authored (9 in parallel + tens upstream) + <count> per-character dialogue files
+  <count> total facet entries + <count> dialogue utterances; <count>/<count> protolines decorated
   Exposition: <count> entries (episode-open=<n>, first-mention=<n>, scene-open-orient=<n>)
+  Dialogue: <count> entries across <count> characters / <count> behavior cards
 
 Phase 2 — R1 fanin (merge):
   <count> _inflight/ copies merged; canonical proto-lines written
@@ -494,19 +549,21 @@ Phase 2 — R1 fanin (merge):
   Cite-index built
 
 Phase 3 — R2 fanout (judge):
-  5 midband facets judged in parallel
+  6 midband facets judged in parallel
   R1 → R2 deltas:
     narrator-interest:    K=<n> D=<n> A=<n>  (cap-refusals: <n>)
     memory:               K=<n> D=<n> A=<n>  (cap-refusals: <n>)
     feeling:              K=<n> D=<n> A=<n>  (per-character: <slug>=K<n>/D<n>/A<n>, ...)
     metaphor:             K=<n> D=<n> A=<n>  (cap-refusals: <n>)
     exposition:           K=<n> D=<n> A=<n>  (scene-orient-refusals-via-fire-rule: <n>)
+    dialogue:             K=<n> D=<n> A=<n> R=<n>  (per-character: <slug>=K<n>/D<n>/A<n>/R<n>, ...)
 
 Phase 4 — R2 fanin (consolidate + merge):
   Decision-log: .r2-decisions.md (f-r2-counts: F1=<n> F2=<n> F3=<n> F4=<n>)
   Arbiter interventions: <count>; discipline-fails: <count>
   Citation accrual: R1 <count> → R2 <count>
   Cite-index rebuilt
+  Scene-map emitted: <N> scenes covering <N> bones (source: <tensometer-canonical | derived-fallback>)
 
 Phase 5 — Audit (mechanical):
   Mode: flag-only
@@ -529,6 +586,7 @@ Phase 5b — Audience-gate (adversarial):
     metaphor:          <accept | revise | fail>
     vibes:             <accept | revise | fail>
     exposition:        <accept | revise | fail>  (audience-side adds: <n>)
+    dialogue:          <accept | revise | fail>  (per-character: <slug>=<accept|revise|fail>, ...; cycle-3 seam-defensibility rate: <%>)
   Reviewers fired: <count> dispatches (specialists: <n>; fallback active-audience: <n>)
   Convergence trace: <count> shared / <count> audience-only / <count> auditor-only findings
   Bidirectional loop: <validated | one-sided | not-validated>

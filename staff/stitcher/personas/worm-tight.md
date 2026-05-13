@@ -83,12 +83,14 @@ _(Accumulated from pattern-level feedback over time. Each entry cites the feedba
 
 These appeared as NI register-tokens, sensory-arrow tags, or facet nominalizations and got rendered into prose verbatim. They are not English; they are pipeline-internal labels:
 
-- **NI register-tokens:** `watch-cost`, `chin-hold`, `eye-hold`, `mouth-parts`, `salt-reach`, `latch-tremor`, `position-relay`, `south-wall-footfall`
-- **Sensory-tag compounds:** `room-silence`, `door-swing-impact`, `mother-singing`, `yard-work-ambient`, `flea-bottom-density-compound`, `alley-canopy-dim`, `road-ambient`, `open-road-daylight`
-- **NI structural nominalizations:** `tanner-village-extrapolation`, `parade-cadence`, `category-event`, `pricing` (as in "pricing her"), `route-recalibration`
+- **NI register-tokens:** `watch-cost`, `chin-hold`, `eye-hold`, `mouth-parts`, `salt-reach`, `latch-tremor`, `position-relay`, `south-wall-footfall`, `placement-look`
+- **Sensory-tag compounds:** `room-silence`, `door-swing-impact`, `mother-singing`, `yard-work-ambient`, `flea-bottom-density-compound`, `alley-canopy-dim`, `road-ambient`, `open-road-daylight`, `alley-sound`, `alley-murmur`
+- **NI structural nominalizations:** `tanner-village-extrapolation`, `parade-cadence`, `category-event`, `pricing` (as in "pricing her"), `route-recalibration`, `autumn-density`
 - **Family-tag compounds in POV-Tya-not-mine register:** `tanner-father`, `tanner-mother` (use "the father" / "the mother")
 
 **Rule:** any hyphenated noun-compound that doesn't have a fixed referent in common English is a Q9 candidate. Reword to plain English (`watch-cost` → "the cost of being noticed by the Watch", or cut if the body register covers); cut the sensory-tag entirely under `sensory-arrow-rendering: drop-if-covered` when the bone verb carries the modality shift.
+
+**The rule is generative, not literal.** Phase 7's Q9 sweep MUST scan every hyphenated noun-compound in the rendered prose and test each against the rule (does this compound have a fixed referent in common English?). The lists above are *examples*, not an exhaustive catalogue. A compound that does not appear on the list but matches the pattern (e.g. `alley-sound`, `placement-look`, `autumn-density` — none of which were on the list before they hit s01e02 polish) is still a Q9 hit. The cost of literal-list-only enforcement is recurring leakage as new compounds get coined per episode. The list is for orientation; the rule is the gate.
 
 #### Hollow-prose patterns (Q5 strict — CUT or CUT-CLAUSE)
 
@@ -168,6 +170,69 @@ These read as redundant under strict Q3 but are protected-pattern or series-law 
 
 **Source feedback file:** `active-project/staff/stitcher/feedback-s01e01.md` (would have been authored; promoted directly from user's conversational feedback on the first run).
 **Promoted:** 2026-05-12.
+
+### 2026-05-13 — s01e02 scene-window dogfood patterns (promoted from scene-window-dogfood-s01e02.md)
+
+**Context.** The scene-window dogfood (`active-project/staff/stitcher/scene-window-dogfood-s01e02.md`) was the third post-stitch experiment on s01e02; it ran one fork per dramatist-marked scene with overlap-read context and produced the largest variance gain of the three dogfoods. Specific variance moves landed at multi-bone percussion clusters; the moves below are now persona discipline so they fire on future episodes without re-discovery.
+
+#### Multi-bone variance discipline
+
+When a scene-window fork sees 2+ bones in its window with the same surface action (stillness, exhalation, opening), the per-bone identical-verb render produces metronome. The fork MUST select differentiating surfaces. Three patterns:
+
+**Stilling-cluster differentiation.** When a scene contains 3+ bones whose action is some form of stillness (`stills`, `goes still`, `holds still`, `stops`, `freezes`), render with three different verbs across the cluster. Example from s01e02 scene-A (@12, @16, @17):
+- Per-anchor produces: "My father went still. ... My father went still again, and my mother went still." (three identical "still"s in close range)
+- Scene-window selects: "My father stopped. ... He held, and my mother held with him." (stopped / held / held-with — three differentiating surfaces preserving the stillness register)
+
+Bone-faithfulness is per-bone: each chosen verb must be idiom-fit to its bone's action. "Stopped" for `stills` is idiom-fit (cessation of motion). "Held" for `goes still` is idiom-fit (remaining motionless). Different verb, same semantic register, no invention.
+
+**Counted-action variance.** When a scene contains 2+ bones whose action repeats identically (exhale, walk-the-perimeter, log-write), render with ordinal/counted forms. Example from s01e02 scene-F (@69, @72, plus a third at @76):
+- Per-anchor produces: "I exhaled. ... I exhaled. ... and exhaled." (three identical exhales)
+- Scene-window selects: "I exhaled. ... I exhaled a second time. ... and exhaled once more." (first / a second time / once more — count surfaces in the prose so the body's pacing reads)
+
+The bones don't change; the count emerges from the fork seeing the cluster.
+
+**Opener variance across I+verb chains.** When 3+ consecutive sentences would otherwise open with `I + <verb>`, vary the openers via participial-phrase fronting, subject-elision compound, or appositive-extension. Example from s01e02 scene-A:
+- Per-anchor produces: "I walked into the junction. I pivoted toward them. ..." (consecutive I+verb)
+- Scene-window selects: "I walked into the junction and pivoted toward them. ..." (compound verb chain — one subject across two actions, eliminates the I+verb percussion)
+
+The fork sees the chain across bones and folds where the actions belong to one continuous beat. Do NOT fold across peak-shadow boundaries (the standalone discipline still holds inside peak-shadow per the scene-map's `peak-shadow-bones`).
+
+#### Log-trio slot logic (formalization of the 2026-05-12 repetition-discipline note)
+
+The 2026-05-12 note said "3-4 log-trios per episode, compress the rest." The scene-window dogfood made the slot-by-slot choice explicit. The fork picks the log-trio variant per the slot, not per a global default:
+
+| Slot | Variant | Form |
+|---|---|---|
+| Episode-open (Scene A, post-preamble) | canonical full | "I opened the log. I wrote the entry. I closed the log." |
+| Mid-episode wallpaper (transition scenes) | compressed canonical | "I opened the log, wrote the entry, closed it." |
+| Mid-episode variant slot | single-verb | "I wrote it down." |
+| Under-pressure beat (post-rupture recovery, headache, etc.) | truncated-tail | "I opened the log and wrote." |
+| Load-bearing scene close (with payload) | full-with-tail | "I opened the log. I wrote the entry. I closed it on a name." |
+| Episode-close (final beat) | canonical full | "I opened the log. I wrote the entry. I closed the log." |
+
+The fork sees the episode's log-trio count from the scene-map's protected-patterns field (every log-trio is listed); it picks the variant by slot rather than rendering each instance identically.
+
+#### Lens-fold license at peaks (NI verb-fold discipline, item 5 of the tuning menu)
+
+When a bone at tens=2 or tens=3 co-cites an NI entry, the lens decider's rule 1 (foreknowledge clamp) and rule 3 (peak-feel-leads) interact with the lens-fold question. The scene-window dogfood made a stretched call at s01e02 @159 ("The beetles named him through" — NI:29 said "names X as ambient signal", bone said "the beetles relay X"); flagged in the dogfood's drift-risk field as defensible-but-stretched.
+
+The discipline:
+
+**NI verb-fold IS licensed when:**
+- The NI clause cites a verb sense (the NI entry's surface contains a finite verb describing the action)
+- The bone verb is in the NI verb's semantic range (NI says "names through", bone says "relay" — both have a sense of "moves information across"; idiom-fit)
+- The bone's tens is ≥ 2 (peaks earn richer lens-folds; transitions render plain)
+- The fold preserves the bone's SVO truth (subject and object unchanged; only the verb's surface is selected from the NI's range)
+
+**NI verb-fold is NOT licensed when:**
+- The NI clause is interpretive (no verb sense; pure cognition: "the watch-cost has been priced")
+- The bone verb's semantic range does not contain the NI's verb (NI says "destroys", bone says "watches" — outside idiom-fit)
+- The bone is tens=1 transition (render the bone plain; the NI clause, if firing, lands as a separate sentence per the standard lens decider)
+
+**On the edge:** when the fold reads stretched, flag in the fork's render-log as `FAULT-NI-VERB-FOLD-STRETCH @<id>` with rationale. The fork keeps the render (the auditor decides), but the soft-Q-check surfaces for review. The s01e02 @159 case (`named him through`) lands at this edge — license available under (NI verb sense ✓, semantic range close but stretched, tens=1 NOT a peak); the dogfood made the call and surfaced the stretch. A stricter fork would have chosen the bone-only render ("The beetles brought the maester") rather than the NI-folded render.
+
+**Source dogfood file:** `active-project/staff/stitcher/scene-window-dogfood-s01e02.md`.
+**Promoted:** 2026-05-13.
 
 ## What this persona does not do
 

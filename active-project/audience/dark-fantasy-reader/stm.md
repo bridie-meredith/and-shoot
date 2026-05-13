@@ -118,3 +118,8 @@ Carry-forward watches (unchanged):
 - Tanner-elder relationship must stay conditional; warmth-drift is a flag.
 - Demonstration must be written in Khepri-register, not triumph-register; execution risk persists.
 - S2 Khepri-crossing must land as Faustian threshold (maester naming it and being not heard must read as horror, not misunderstanding).
+
+## Wrap review s01e02 — 2026-05-13
+flagged: 14
+accepted: Clinical-self-erasure register is architectural — log-trio, fauna-relay, cardinal-quartet, three-note buildup do their work; "closed it on a name" and the mother's "Whatever you are, you are warm" are earned peaks; no relief beat at close.
+why: The grimdark structure holds; the sentence-level prose has two recurring execution problems — inline em-dash/parenthetical glosses (Fish Gate, customary-wage, vigil-candle) reading as tutorial inserts that break first-person POV, and generic procedural verbs (pivoted, turned, possessions, trade goods) leaving gaps where Westeros-specific texture should sit. Tanner-family scenes (A, I) carry the heaviest grimdark load and are weakest at sentence level; Taylor's dialogue to her parents is inert formula where the Tya-shaped wrongness should be audible.
