@@ -1,5 +1,5 @@
 ---
-description: Stitcher pipeline for one episode. Eight phases — lens-anchored render → redundancy cull → compression → voice transform → local flow → buildup preservation → editorial reflection → finalize. Output - draft/<slug>.md + draft/<slug>.annotated.md + staff/stitcher/render-log-<slug>.md. Phase 1 has two modes — per-anchor (default) and scene-window (opt-in via profile; one fork per scene with overlap-read context, breaks multi-bone percussion). Usage - /and-stitch [episode-slug] [--profile <path>] [--persona <slug>]
+description: Stitcher pipeline for one episode. Eight phases — lens-anchored render → redundancy cull → compression → voice transform → local flow → buildup preservation → editorial reflection → finalize. Output - draft/<slug>.md + draft/<slug>.annotated.md + staff/stitcher/render-log-<slug>.md. Phase 1 default is scene-window (one fork per scene with overlap-read context, breaks multi-bone percussion); per-anchor remains as fallback. Usage - /and-stitch [episode-slug] [--profile <path>] [--persona <slug>] [--phase-1-mode <scene-window|per-anchor>]
 ---
 
 Stitcher pipeline. One episode in, clean polish + annotated traced polish + per-fork render-log out. The Stitcher assembles a final prose draft from the proto-line bones and the facet graph; each phase forks at its natural decision granularity (per-anchor, per-paragraph, per-window, per-sentence, etc.). No inter-fork memory; the render-log is the only cross-phase artifact.
@@ -72,7 +72,7 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
 - `--persona <slug>` — optional. Override the active persona. Default: read from profile's `persona:` field; fallback `neutral`.
 - `--allow-bare-speech` — optional. Explicit opt-in to the legacy silent-speech fallback (Phase 0.7 § Legacy fallback). Without this flag, an episode with `speaks to` bones and an empty/missing dialogue facet HARD-ABORTS at Phase 0.5; the user must run `/and-facets <slug>` first. Pass this flag only when knowingly stitching a pre-2026-05-12 episode whose dialogue facet cannot be retroactively authored. Marked in the render-log header.
 - `--keep-drafts` — optional. Retain the Phase 1–7 `<slug>.phase-*.draft.md` intermediate files in `active-project/draft/` after a successful run. Default behavior at Phase 8 is to prune them (the render-log retains the trace; the drafts are reproducible). Debugging use only.
-- `--phase-1-mode <per-anchor|scene-window>` — optional. Override the active profile's `phase-1.mode` field. Default resolves from profile; schema default is `per-anchor`. `scene-window` dispatches one fork per dramatist-marked scene with overlap-read context (back-look on prior rendered scene; forward-look on next scene's bones+facets). Use when the episode's prose feels metronomic across multi-bone clusters and the bones/facets are otherwise healthy — see § "Phase 1 — scene-window mode" below.
+- `--phase-1-mode <scene-window|per-anchor>` — optional. Override the active profile's `phase-1.mode` field. Default resolves from profile; schema default is `scene-window` (URI-SCENE-WINDOW, 2026-05-13). `scene-window` dispatches one fork per dramatist-marked scene with overlap-read context (back-look on prior rendered scene; forward-look on next scene's bones+facets) — see § "Phase 1 — scene-window mode" below. `per-anchor` is the legacy fallback: one fork per bone with `continuity-context` lookback. Use per-anchor when the scene-map facet is absent, when the episode has low percussion accumulation (modes converge), or for fork-isolation debugging.
 
 ---
 
@@ -80,6 +80,7 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
 
 1. Resolve episode slug. Verify `active-project/theater/proto-lines/<slug>.md` exists.
 2. Verify `active-project/theater/facets/_cite-index.md` exists. Abort if not — stitcher requires the cite-index from `/and-facets`.
+2a. If resolved `phase-1.mode` is `scene-window` (the default) and `scene-window.boundary-source` resolves to `scene-map-facet` (the default), verify `active-project/theater/facets/scene-map-<slug>.md` exists. If absent: emit `WARN-SCENE-MAP-FACET-ABSENT`, fall back per `phase-1.scene-window.fallback-on-no-scene-map` (default `per-anchor` — soft fallback recorded in render-log header). With `escalate`, abort and surface `FAULT-PHASE-1-NO-SCENE-MAP` to the user.
 3. **Profile resolution.** Read in order:
    - Per-scene profile if any matches the active scene (`stitch-profile-<scene-label>.md`)
    - Episode default (`active-project/theater/stitch-profile.md`)
@@ -121,8 +122,9 @@ Before dispatching Phase 1, emit a one-screen summary to the user:
   exposition:       <present | ABSENT (legacy-fallback)>
                     if present: <N> entries (preamble=<n>, first-mention=<n>, scene-orient=<n>; refused-at-R2=<n>)
                     cross-episode register: <N> terms reader-resident from prior episodes
-  phase-1-mode:     <per-anchor | scene-window>     # from profile.phase-1.mode; default per-anchor
-                    if scene-window: <S> scene-forks (boundaries from <tensometer | scene-map facet>)
+  phase-1-mode:     <scene-window | per-anchor>     # from profile.phase-1.mode; default scene-window
+                    if scene-window: <S> scene-forks (boundaries from <scene-map facet | tensometer>)
+                    if per-anchor:   <N> per-anchor forks (fallback mode; ad-hoc or legacy episodes)
   output-dir:       active-project/draft/           # stitcher output (not polished — editor pass lands in active-project/polish/)
   dialogue:         <present | ABSENT (no-speech-episode | legacy-fallback)>
                     if present: <K> character files, <N> total utterances
@@ -255,7 +257,7 @@ Without `--allow-bare-speech`, this path is unreachable — Phase 0.5 and Phase 
 
 **Hard rule: forks only, no orchestrator-inline rendering.** The `/and-stitch` command body MUST dispatch Agent calls to produce Phase 1 prose. The orchestrator's job is to fan out, collect, assemble — never to render. A Phase 1 prose block in the polish file that does not correspond to a fork-id entry in the render-log is `FAULT-PHASE-1-CONSOLIDATED` and the run must be re-dispatched. (See `staff/stitcher/card.md § Pet Peeves "orchestrator-consolidated Phase 1"`.)
 
-**Dispatch granularity.** Default is per-anchor (one Agent call per @N). If the episode's anchor count exceeds the session's practical dispatch budget, batch to per-scene (one Agent call per scene; the subagent walks anchors serially within scene with previous-2-lines continuity, applies the lens decider one anchor at a time, and returns rendered prose + per-anchor log entries). Per-scene batching is acceptable; orchestrator inline rendering is not. Document the dispatch granularity in the render-log header.
+**Dispatch granularity (per-anchor mode).** One Agent call per @N. **Default mode is scene-window** (see § Phase 1 — scene-window mode below); the per-anchor procedure documented in the rest of this section runs only when `phase-1.mode: per-anchor` is set in the profile or `--phase-1-mode per-anchor` is passed at the command line. If running per-anchor and the episode's anchor count exceeds the session's practical dispatch budget, batch to per-scene (one Agent call per scene; the subagent walks anchors serially within scene with previous-2-lines continuity, applies the lens decider one anchor at a time, and returns rendered prose + per-anchor log entries). Per-scene batching of per-anchor forks is acceptable; orchestrator inline rendering is not. Document the dispatch granularity in the render-log header. Note: the per-scene *batching* form (anchor-by-anchor inside scene) is distinct from scene-window *mode* (one render covering the whole scene with overlap-read context) — see scene-window section below.
 
 Per-fork dispatch:
 - Shared inputs (cached, loaded once per Phase 1 dispatch): stitcher card, active persona, active profile
@@ -342,9 +344,9 @@ Output draft: `active-project/draft/<slug>.phase-1.draft.md`. Log fork entries t
 
 ---
 
-## Phase 1 — scene-window mode (opt-in)
+## Phase 1 — scene-window mode (default, URI-SCENE-WINDOW)
 
-**When this fires.** Profile carries `phase-1.mode: scene-window`, or `--phase-1-mode scene-window` is passed at the command line. Default (`per-anchor`) leaves the per-anchor fork machinery above unchanged.
+**When this fires.** Default Phase 1 mode as of 2026-05-13 (URI-SCENE-WINDOW). Active when profile carries `phase-1.mode: scene-window` (the schema default) or when `--phase-1-mode scene-window` is passed at the command line. The per-anchor mode described above remains available as opt-in fallback (`phase-1.mode: per-anchor` in profile, or `--phase-1-mode per-anchor`); use it when the scene-map facet is absent, the episode has low percussion accumulation, or fork-isolation debugging is wanted.
 
 **Why it exists.** Three dogfoods on s01e02 (breath-pass, organic-render-p4, scene-window-dogfood — see `active-project/staff/stitcher/`) showed the per-anchor fork is structurally unable to break percussion that spans multiple bones: stilling-trios rendered as three identical "went still" verbs, exhale-pairs as two identical "I exhaled.", `I + verb` chains accumulating across paragraphs. The fork sees only its own anchor (plus the previous 1–2 rendered lines per `continuity-context`); it cannot see that this is the third log-trio in 10 bones or that the next sentence will be the third stilling. Scene-window mode lifts the fork unit from one anchor to one scene so the fork can see and break local percussion within bone-faithfulness.
 
@@ -354,9 +356,9 @@ Output draft: `active-project/draft/<slug>.phase-1.draft.md`. Log fork entries t
 
 Scene boundaries are required at Phase 1 dispatch in this mode. Resolution order:
 
-1. **Scene-map facet** (preferred, not yet emitted by `/and-facets` as of 2026-05-13). When `active-project/theater/facets/scene-map-<slug>.md` exists, parse it as the boundary source. Schema: one line per scene, `<scene-label>: <bone-id-start>–<bone-id-end> (<location-slug>, <time-of-day>, <one-line>)`. This is the target authoring path; `/and-facets` work to emit it is tracked separately.
-2. **Tensometer derivation** (cheapest path; current default). Parse the scene-footer section of `active-project/theater/facets/tensometer-<slug>.md` for named-scene declarations (e.g. `SCENE A (159–181)`). Cross-reference with `interest-narrator.md`'s sparsity gradient + `location-state.md` transitions + time-skip blanks in proto-lines to fill in scenes the tensometer narrates only by reference. This path is fragile against tensometer-prose drift; promote to the scene-map facet when it's available.
-3. **Failure mode.** If neither produces ≥3 scenes covering all bones, emit `FAULT-PHASE-1-NO-SCENE-MAP` and either escalate to user or fall back to `per-anchor` mode (record the fallback in the render-log header).
+1. **Scene-map facet** (default, URI-SCENE-WINDOW 2026-05-13). When `active-project/theater/facets/scene-map-<slug>.md` exists, parse it per `schemas/scene-map.schema.md`. The scene-map is emitted at `/and-facets` Phase 4d as a derived structural facet and validated for coverage at Phase 5 audit; if the file passed those gates, its boundaries are canonical. This is the canonical authoring path.
+2. **Tensometer derivation** (legacy fallback). Parse the scene-footer section of `active-project/theater/facets/tensometer-<slug>.md` for named-scene declarations (e.g. `SCENE A (159–181)`). Cross-reference with `interest-narrator.md`'s sparsity gradient + `location-state.md` transitions + time-skip blanks in proto-lines to fill in scenes the tensometer narrates only by reference. Used when the scene-map facet is missing — typically pre-URI-SCENE-WINDOW episodes whose `/and-facets` run predates the scene-map emission step. Fragile against tensometer-prose drift; re-run `/and-facets` to author the scene-map facet when convenient.
+3. **Failure mode.** If neither produces ≥3 scenes covering all bones, emit `FAULT-PHASE-1-NO-SCENE-MAP` and either escalate to user or fall back to `per-anchor` mode per `phase-1.scene-window.fallback-on-no-scene-map` (record the fallback in the render-log header).
 
 Validate the scene-map: every bone in `proto-lines/<slug>.md` must fall inside exactly one scene's bone-range. Coverage gaps or overlaps → `FAULT-PHASE-1-SCENE-MAP-COVERAGE`.
 

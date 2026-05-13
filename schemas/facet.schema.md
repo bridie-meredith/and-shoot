@@ -275,6 +275,22 @@ Replaces shoot-v1's `STUDIO:` bullets. Environmental state at each proto-line: w
 
 Proto-lines cite this facet (`[loc-state:<id>]`) when the environment is load-bearing for the action. Proto-lines without a location-state citation render in the most recent cited environment.
 
+### scene-map (`facets/scene-map-<episode-slug>.md`) — derived structural facet
+
+Enumerates the episode's scenes as machine-readable ranges over proto-line IDs. Auto-derived at `/and-facets` Phase 4c from `tensometer` + `location-state` + `interest-narrator` + proto-lines. Not human-authored; not subject to R1/R2 review or audience-gate.
+
+```
+<scene-label> @<start>-@<end> | <location-slug> | <time-of-day> | <one-line>
+```
+
+The `<scene-label>` field (e.g. `scene-A`) replaces the per-anchor `<id>` of the uniform line shape because scene-map entries are keyed by scene, not by proto-line. The anchor is a closed range rather than a single ID. This is the one facet type that deviates from the uniform line shape — accepted because scene boundaries are intrinsically about ranges and the file is derived, not authored.
+
+**Author:** `/and-facets` Phase 4c orchestrator (mechanical derivation; no Agent dispatch).
+
+**Consumed by:** `/and-stitch` Phase 1 scene-window mode (fork boundaries), `/and-facets` Phase 5 audit (per-scene cap enforcement), `/and-wrap` editor (future — scene-cut marker placement).
+
+**Full schema:** `schemas/scene-map.schema.md` (line shape, derivation algorithm, coverage validation, consumers).
+
 ---
 
 ## Per-file cull

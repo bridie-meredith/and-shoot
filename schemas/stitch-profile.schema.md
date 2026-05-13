@@ -63,11 +63,11 @@ render:
   nonpeak-priority: [narrator, feel, sensory, memory, metaphor]
 
 phase-1:
-  mode: per-anchor                          # per-anchor (default) | scene-window
-  fork-granularity: per-anchor              # legacy alias of mode; honored when mode is absent
+  mode: scene-window                        # scene-window (default) | per-anchor
+  fork-granularity: scene-window            # legacy alias of mode; honored when mode is absent
   continuity-context: previous-2-lines      # previous-2-lines | previous-paragraph | none (per-anchor mode only)
   scene-window:                             # scene-window mode config; ignored when mode: per-anchor
-    boundary-source: tensometer-derive      # tensometer-derive (default) | scene-map-facet | hybrid
+    boundary-source: scene-map-facet        # scene-map-facet (default) | tensometer-derive | hybrid
     back-look: prior-rendered-scene         # prior-rendered-scene (default) | none
     forward-look: next-scene-bones-facets   # next-scene-bones-facets (default) | none
     per-bone-discipline-walk: required      # required (default) | advisory — controls FAULT-BONE-FOLDED-INTO-SUMMARY emission
@@ -210,10 +210,10 @@ Free-form human notes — why this profile, what's been tuned, what's an open qu
 
 The lens-anchored render configuration.
 
-- **`mode`** — `per-anchor` (default) dispatches one Agent call per anchor with `continuity-context` lookback; the fork sees one bone at a time. `scene-window` dispatches one Agent call per dramatist-marked scene with overlap-read context (back-look on prior rendered scene; forward-look on next scene's bones+facets); the fork sees the whole scene and can break percussion across multi-bone clusters within bone-faithfulness. See `.claude/commands/and-stitch.md § Phase 1 — scene-window mode (opt-in)` for the full procedure including the mandatory per-bone discipline walk.
+- **`mode`** — `scene-window` (default, URI-SCENE-WINDOW 2026-05-13) dispatches one Agent call per dramatist-marked scene with overlap-read context (back-look on prior rendered scene; forward-look on next scene's bones+facets); the fork sees the whole scene and breaks percussion across multi-bone clusters within bone-faithfulness. `per-anchor` dispatches one Agent call per anchor with `continuity-context` lookback; the fork sees one bone at a time. Per-anchor is the fallback mode (used when scene-map is absent or per-bone discipline is preferred for low-percussion episodes). See `.claude/commands/and-stitch.md § Phase 1 — scene-window mode` for the full procedure including the mandatory per-bone discipline walk.
 - **`fork-granularity`** — legacy alias of `mode`. Honored as a fallback when `mode` is absent. New profiles should set `mode`.
 - **`continuity-context`** — `per-anchor` mode only. What previous output each fork sees. `previous-2-lines` (default) gives continuity but serializes adjacent forks within a paragraph. `previous-paragraph` is more serial; `none` is maximally parallel but accepts continuity drift (Phase 5 and 7 catch it). Ignored under `scene-window` mode (the back-look/forward-look settings replace it).
-- **`scene-window.boundary-source`** — where Phase 1 reads scene boundaries from. `tensometer-derive` (default) parses the scene-footer section of `tensometer-<slug>.md` plus cross-references `interest-narrator.md` sparsity gradient, `location-state.md` transitions, and time-skip blanks. `scene-map-facet` reads `theater/facets/scene-map-<slug>.md` (preferred long-term path; not yet emitted by `/and-facets`). `hybrid` reads scene-map-facet when present, falls through to tensometer-derive when absent.
+- **`scene-window.boundary-source`** — where Phase 1 reads scene boundaries from. `scene-map-facet` (default, URI-SCENE-WINDOW 2026-05-13) reads `theater/facets/scene-map-<slug>.md` (emitted by `/and-facets` Phase 4d as derived structural facet). `tensometer-derive` parses the scene-footer section of `tensometer-<slug>.md` plus cross-references `interest-narrator.md` sparsity gradient, `location-state.md` transitions, and time-skip blanks (legacy fallback for pre-URI-SCENE-WINDOW episodes whose facet graph predates the scene-map emission). `hybrid` reads scene-map-facet when present, falls through to tensometer-derive when absent.
 - **`scene-window.back-look`** — what prior context a scene-fork reads. `prior-rendered-scene` (default) gives the fork read-only access to scene N-1's already-rendered prose for anti-repetition discipline (openers, verb-register, cadence). `none` runs forks without back-look (cheaper, drops cross-scene variance awareness).
 - **`scene-window.forward-look`** — what next context a scene-fork reads. `next-scene-bones-facets` (default) gives the fork read-only access to scene N+1's bones + facet citations so the scene N close can avoid clashing with the scene N+1 open. `none` drops forward-look awareness.
 - **`scene-window.per-bone-discipline-walk`** — `required` (default) makes the per-bone walk a hard step in every scene-fork's output; missing-bone-trace emits `FAULT-BONE-FOLDED-INTO-SUMMARY`. `advisory` makes the walk optional and demotes the fault to a warning. Required is strongly recommended — the wider window's failure mode is invention-by-summary, and the walk is the catch.
