@@ -248,12 +248,18 @@ Emit `active-project/theater/facets/scene-map-<episode-slug>.md` per `schemas/sc
      - M == N: assign labels A..N to the candidates in order.
      - M > N: the candidates include sub-scene splits the tensometer did not name. Merge consecutive candidates that share `<location-slug>` and `<time-of-day>` until M == N.
      - M < N: the tensometer named more scenes than boundaries imply. Trust the tensometer's count; insert boundaries at the next NI-cognition-of-time-shift inside the under-counted range.
-5. **Per-scene field derivation.** For each scene's range:
+5. **Per-scene header derivation.** For each scene's range:
    - `<location-slug>`: the loc-state entry citing the scene's first non-transitional bone. Use `unstated` only when no loc-state cites any bone in the range.
    - `<time-of-day>`: from NI cognition entries inside the range, OR from exposition `scene-open-orient` entries, OR carried-forward from the prior scene if the range is `continuous`.
    - `<one-line>`: condense the tensometer's narrated scene description to ≤80 chars. If the tensometer's scene-footer is sparse, derive from the cluster's peak bone's NI/feel entries.
-6. **Coverage check.** Validate every bone in proto-lines lands in exactly one scene's range. Emit `FAULT-SCENE-MAP-COVERAGE-GAP @<id>` for uncovered bones, `FAULT-SCENE-MAP-COVERAGE-OVERLAP @<id>` for double-covered bones. Both are HARD; surface to Phase 5 audit.
-7. **Write file.** Per schema. Include frontmatter (`scene-map`, `generated`, `source`, `auto-derived: true`, `total-scenes`, `total-bones`) + body lines + coverage footer.
+6. **Per-scene tens-aware field derivation (URI-SCENE-RHYTHM, 2026-05-13).** For each scene, walk the tensometer's per-bone entries inside the scene's range and compute:
+   - **`rhythm-shape`**: classify the tens topology per the rules in `schemas/scene-map.schema.md` § Per-scene tens-aware fields. The classifier is mechanical (all-tens=1 → flat-low; tens=3 in last-third → rising-to-peak; etc.).
+   - **`peak-bones`**: list every bone with tens ≥ 2; format `@<id>=<tens>`.
+   - **`peak-shadow-bones`**: for each peak bone, add the immediately-prior and immediately-next bone IDs if they exist in-scene and have tens=1. Deduplicate.
+   - **`fusion-eligible-runs`**: walk the scene's tens=1 bones; group consecutive runs of length ≥3; exclude any bone in `peak-shadow-bones`; emit surviving runs as `@<start>-@<end>`. A run split by a peak-shadow bone produces two shorter runs, each of which emits only if it independently has length ≥3.
+   - **`protected-patterns`**: run the pattern detectors (log-trio, cardinal-quartet, three-note-buildup, routing-countdown, threshold-cross, return-of, fauna-relay-refrain) over the scene's bone sequence; emit each detected pattern as `<pattern-name> @<start>-@<end>`. Pattern definitions follow `phase-1.protected-patterns` from `schemas/stitch-profile.schema.md`.
+7. **Coverage check.** Validate every bone in proto-lines lands in exactly one scene's range. Emit `FAULT-SCENE-MAP-COVERAGE-GAP @<id>` for uncovered bones, `FAULT-SCENE-MAP-COVERAGE-OVERLAP @<id>` for double-covered bones. Both are HARD; surface to Phase 5 audit.
+8. **Write file.** Per schema. Include frontmatter (`scene-map`, `generated`, `source`, `auto-derived: true`, `total-scenes`, `total-bones`) + body blocks (header line + indented tens-aware fields per scene) + coverage footer.
 
 The scene-map ships alongside the cite-index as part of Phase 4c's structural-emission output. Both are re-derivable from upstream sources; both are consumed by downstream pipelines.
 

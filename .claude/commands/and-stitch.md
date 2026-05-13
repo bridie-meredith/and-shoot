@@ -370,10 +370,11 @@ Each scene-fork's inputs:
 |---|---|
 | Scene's bones | All bones with IDs inside the scene's range, in order, verbatim from `proto-lines/<slug>.md`. |
 | Scene's facet citations | Every facet entry citing a bone in the scene's range — pulled from `_cite-index.md` and the per-facet files. NI, sensory, feel, memory, metaphor, loc-state, exposition, dialogue, tens. The fork sees the lens against the whole scene, not against a single anchor. |
+| **Scene-map tens-aware fields** (URI-SCENE-RHYTHM, 2026-05-13) | The scene's `rhythm-shape`, `peak-bones`, `peak-shadow-bones`, `fusion-eligible-runs`, `protected-patterns` from `scene-map-<slug>.md`. These give the fork concrete bone-level rhythm guidance: which bones must stand alone (peaks + their shadows), where multi-bone fusion is safe (fusion-eligible-runs), what overall variance posture the scene wants (rhythm-shape). See § "Tens-aware rhythm guidance" below. |
 | **Back-look context** | The rendered prose of scene N-1 (empty for the first scene of the episode). Read-only. Used for anti-repetition of openers, verb-register, cadence across the scene boundary. The fork MUST NOT re-render or modify scene N-1's prose. |
 | **Forward-look context** | The bones + facets of scene N+1 (not the rendered prose — it doesn't exist yet). Empty for the last scene. Read-only. Used for transition-sentence awareness: if scene N+1 opens with a particular pattern (relay sweep, log-trio variant, peak), scene N can avoid closing on a clashing or duplicative form. |
 | Persona card + active profile | Same as per-anchor. The persona's lens-bias table and Phase-7 biases apply unchanged. |
-| Tensometer slice for the scene | Per-bone tens scores so the fork knows which bones are peaks (tens=2/3) inside the scene and must stand alone. |
+| Tensometer slice for the scene | Per-bone tens scores (redundant with `peak-bones` derived above, but the raw tens entries also carry NI/sensory cross-references the fork uses for lens-fold positioning). |
 | Project anti-jargon list, hollow-prose patterns, asinine patterns, bone-faithfulness fence | Same as per-anchor. |
 
 ### Fork procedure
@@ -386,6 +387,26 @@ For each scene N in order (forks serialize across scenes — back-look requires 
 4. **Per-bone discipline walk (mandatory).** After rendering, walk the scene's bone list in order and confirm every bone has a renderable trace in the prose — either as a rendered sentence, an em-dash fuse, a fused-into-prior, or a CUT-BONE with rationale. **This step is the catch for the scene-window failure mode** (see § Failure modes below). The fork emits a `bone-walk:` block in its render-log entry listing each bone-id and its disposition. A bone with no trace is `FAULT-BONE-FOLDED-INTO-SUMMARY` — re-render to restore the bone.
 5. **Emit fork output.** Rendered scene + render-log entry (see § Render-log entry shape below).
 
+### Tens-aware rhythm guidance (URI-SCENE-RHYTHM, 2026-05-13)
+
+The scene-map facet supplies five rhythm fields per scene. The scene-window fork honors them as follows:
+
+| Field | Fork behavior |
+|---|---|
+| `rhythm-shape: flat-low` | Transition scene; relay sweeps; logged-and-moved. Variance posture: aggressive fusion eligible, log-trio variant selection encouraged, opener variance important (these scenes are where percussion accumulates). |
+| `rhythm-shape: flat-mid` | Pressure beats; stakes visible without rupture. Variance posture: moderate. Standalone-treat pressure bones (tens=2 carries weight); fusion only across genuine tens=1 fills. |
+| `rhythm-shape: rising` | Approach scene. Variance posture: structured pacing — short standalone for ascending bones; do not fuse-and-flatten the climb. |
+| `rhythm-shape: rising-to-peak` | Full arc with climax at end. Variance posture: tighten as the peak approaches; peak-bone standalone-treated; release-tail (post-peak) can fuse. |
+| `rhythm-shape: peak-and-release` | Rupture in first/middle third with low tail. Variance posture: standalone for peak + peak-shadow; aggressive variance and fusion-license on the tail's flat-low run. |
+| `rhythm-shape: double-peak` | Two ruptures in one scene. Variance posture: each peak standalone; the inter-peak run is rarely fusion-eligible because peak-shadow extends from both sides. |
+| `rhythm-shape: resolving` / `release-only` | Post-prior-scene-peak settle. Variance posture: aggressive — these are charge-release scenes; fusion and variance both encouraged. |
+| `peak-bones: @<id>=<tens>, ...` | Each listed bone MUST be rendered standalone. No fusion across a peak-bone boundary. The peak's sentence stands alone in its paragraph or carries the paragraph's anchor weight. This formalizes the long-standing peak-stands-alone discipline. |
+| `peak-shadow-bones: @<id>, ...` | Each listed bone MUST be rendered standalone — even though it's tens=1, it's flanking a peak and the short-sentence rhythm IS the charge/release pacing. Do not fuse a peak-shadow bone with another tens=1 bone, even when the persona's lens-bias would otherwise allow it. |
+| `fusion-eligible-runs: @<start>-@<end>, ...` | Each listed range is a run of 3+ consecutive tens=1 bones with NO peak-shadow inside. The fork has explicit license to fuse aggressively inside these ranges — multi-bone same-subject merge, em-dash continuation, comma-list parallel-structure, semicolon-fold for relay pairs. Per-anchor and earlier scene-window decisions sometimes refused these fusions on peak-adjacency grounds; the scene-map's derivation already excluded peak-shadow, so the license is safe to spend here. |
+| `protected-patterns: <name> @<start>-@<end>, ...` | Each listed pattern overrides fusion-eligible-runs at its bone range. The fork picks a variant within the pattern's variant set (canonical / compressed / single-verb / truncated-tail / payload-tail) rather than collapsing it. A protected pattern that overlaps a fusion-eligible-run STAYS protected — the run's license does not extend over it. The pattern's variant choice is the fork's variance lever for that range. |
+
+**The fusion-eligible-run is the lever that addresses bone-percussion in low-charge stretches.** Previous discussion considered changing the tens rubric (item 7 of the tuning menu) to make peak-adjacent bones fusion-eligible; that's rejected. Instead, the scene-map's mechanical derivation reads the existing tens topology and pre-computes which tens=1 runs are safe to fuse without touching peak treatment. The stitcher gets the granular guidance without the rubric ripple.
+
 ### Constraints that still bind in scene-window mode
 
 - **Bone-faithfulness fence.** Per-bone, not per-scene. Every bone's SVO meaning must be preserved (rendered, fused, or CUT-BONE with rationale logged). The wider window is for variance choice — NOT a license to invent body, dialogue, spatial, route, scene-prose, or cognitive detail outside the graph.
@@ -397,10 +418,11 @@ For each scene N in order (forks serialize across scenes — back-look requires 
 
 ### Constraints that loosen vs. per-anchor
 
-- **Multi-bone fusion within tens=1 runs.** The fork may fuse 2–3 adjacent tens=1 bones into one sentence when the scene's percussion calls for it AND none of the bones is a peak AND no speech bone is in the run. Per-anchor refused these on fork-window grounds, not on rule grounds.
+- **Multi-bone fusion within fusion-eligible-runs** (URI-SCENE-RHYTHM). The fork has explicit license to fuse 2+ adjacent tens=1 bones inside any `fusion-eligible-runs` range. The scene-map's derivation already excluded peak-shadow bones, so the license is safe to spend without re-checking peak-adjacency. Per-anchor refused these on fork-window grounds, not on rule grounds; scene-window with rhythm-aware scene-map promotes the license to explicit.
 - **Verb-register variance.** The fork may pick differentiating verbs across an `I + verb` chain or a same-action cluster (e.g. three stillings → stopped / held / held with) provided each chosen verb is idiom-fit to its bone's action (bone-faithfulness fence still per-bone).
-- **Protected-pattern variant selection.** The fork chooses log-trio form per scene-position (first instance / mid-episode / under-pressure / load-bearing close) and per other-instance density. Per-anchor had a global default and rarely varied; scene-window is expected to vary based on the cluster it sees.
+- **Protected-pattern variant selection.** The fork reads the scene-map's `protected-patterns` field and chooses a variant within the pattern's variant set (canonical / compressed / single-verb / truncated-tail / payload-tail / load-bearing-full) per scene-position and per other-instance density across the episode. Per-anchor had a global default and rarely varied; scene-window's per-scene awareness plus the explicit pattern list makes variance selection the norm.
 - **Re-paragraphing within scene.** The fork chooses paragraph breaks inside its scene. Phase 6 paragraph-grouping does not override scene-window paragraph choices.
+- **Variance posture per `rhythm-shape`.** The fork takes posture cues from the scene's classified shape: aggressive variance + fusion on `flat-low` / `resolving` / `release-only`; structured pacing on `rising` / `rising-to-peak`; tightened-around-peak on `peak-and-release`. See § Tens-aware rhythm guidance above.
 
 ### Render-log entry shape
 
