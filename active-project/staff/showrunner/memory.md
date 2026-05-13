@@ -51,7 +51,7 @@ series:
 seasons:
   - slug: s01
     chunk: "Taylor's insect-range expands through Flea Bottom while the tanner-village's ongoing claim on the body she inhabits and the Hightower apparatus's first miscategorized intelligence file close simultaneously around her; the season forecloses the possibility of working unnamed — she is already a misread fact in someone else's record before she understands what she is building."
-    status: active
+    status: wrapped   # FLIPPED 2026-05-13 — s01e03 /and-wrap complete; provisional_split 3 episodes exhausted; season-final manuscript at active-project/polish/s01e03.md
     plan_path: active-project/staff/showrunner/season-s01-plan.md
     content_beats: 26
     phase_1_converged_at: attempt-2-of-3
@@ -230,13 +230,28 @@ seasons:
             - Phase 5b audience-gate adversarial review (3-of-3 persona ACCEPT)
           rationale: user-direction "not really tuned but we'll manage without" — verification deferred to stitcher Phase 7 reflection at /and-stitch s01e02 time, or to a targeted retroactive audit pass if desired before stitch.
       - slug: s01e03
-        status: audited-r1   # FLIPPED 2026-05-12 — Phase 5b cycle 3 cleared 9-of-9 facets to 3-of-3 ACCEPT (cap=3 fully used). Phase 5 r4 CLEAN (0 HARD; 13 SIGNAL all advisory; 5 SIGNAL CLOSED across cycles: flag-012 curve-shape, flag-017 vibes AP8, flag-018 tens AP2, flag-020 vibes forward-license, flag-022 vibes:32 AP8, flag-023 tens metadata staleness). Bidirectional loop VALIDATED. Cycle-by-cycle: c1 0-of-9 pass, c2 4-of-9 pass (state-updates/memory/feeling/metaphor), c3 5-of-5 re-fired facets pass (tensometer/location-state/interest-narrator/sensory/vibes). Critical cap-burn risk averted on interest-narrator dark-fantasy (FAIL c1+c2 → ACCEPT c3 once NI rewrites made displacement-trigger/foreknowledge-clamp/age-mismatch registers explicit on textual surface).
+        status: wrapped   # FLIPPED 2026-05-13 — /and-wrap complete: 0 HARD, 1 SIGNAL converged with audience HIGH (CONTINUITY "the interior" antecedent), 0 bones lost, 0 editor-introduced faults. Previously audited-r1: Phase 5b cycle 3 cleared 9-of-9 facets to 3-of-3 ACCEPT (cap=3 fully used). Phase 5 r4 CLEAN (0 HARD; 13 SIGNAL all advisory; 5 SIGNAL CLOSED across cycles: flag-012 curve-shape, flag-017 vibes AP8, flag-018 tens AP2, flag-020 vibes forward-license, flag-022 vibes:32 AP8, flag-023 tens metadata staleness). Bidirectional loop VALIDATED. Cycle-by-cycle: c1 0-of-9 pass, c2 4-of-9 pass (state-updates/memory/feeling/metaphor), c3 5-of-5 re-fired facets pass (tensometer/location-state/interest-narrator/sensory/vibes). Critical cap-burn risk averted on interest-narrator dark-fantasy (FAIL c1+c2 → ACCEPT c3 once NI rewrites made displacement-trigger/foreknowledge-clamp/age-mismatch registers explicit on textual surface).
+        wrapped: true
+        wrapped_at: 2026-05-13
+        wrap_edit_log_path: active-project/staff/editor/wrap-edit-log-s01e03.md
+        wrap_audit_path: active-project/staff/auditor/s01e03-wrap-audit.md
+        wrap_audience_path: active-project/staff/editor/wrap-audience-s01e03.md
+        wrap_word_count_polish: 1606
+        wrap_word_count_draft: 1531
+        wrap_edits_total: 9
+        wrap_audience_flags_addressed: 21 of 21
+        wrap_audit_findings_addressed: 1 of 1 (SIGNAL CONTINUITY — converged with audience HIGH on "the interior" antecedent)
+        wrap_bones_lost: 0
+        wrap_editor_introduced_faults: 0
+        wrap_process_gaps:
+          - URI-SCENE-MAP-ABSENT-PRE-URI-SCENE-WINDOW (ADDRESSED 2026-05-13 at /and-wrap pre-step): scene-map-s01e03.md hand-authored from render-log scene-boundary enumeration + tensometer-s01e03 tens fields per scene-map.schema.md. Future episodes will auto-derive at /and-facets Phase 4d.
+          - URI-WRAP-V2-DOGFOOD-S01E03 (NEW 2026-05-13): second /and-wrap dogfood run on s01e03. Auditor returned 0 HARD, 1 SIGNAL — disposition-tagging spec from URI-WRAP-V2-DISPO (introduced 2026-05-13 from s01e02 dogfood) saw minimal application this run because no graph-repair HARDs surfaced; the editor's prose-surface treatment was clean across all classes. Convergence pattern: the single auditor SIGNAL (CONTINUITY "the interior") converged with two audience HIGH flags on the same sentence — strong signal that auditor's CONTINUITY class + audience confusion-category flags reliably co-fire on the same surface fault. Recurrence noted: dark-fantasy-reader observed the Red Keep em-dash POV-gloss appositive recurs from s01e02 wrap (Fish Gate, customary-wage, vigil-candle); same fault class. Worth a stitcher-side check on whether the Phase 0.6 exposition-fold for "first-mention-place em-dash-fold" renders-as directive is being correctly translated into Taylor's POV register; if the answer is "no, the em-dash-fold mechanically inserts an author-gloss appositive even when Taylor's POV would not gloss," that's an upstream tuning issue.
         stitched: true   # 2026-05-13 /and-stitch s01e03 — per-anchor mode (scene-map absent; URI-SCENE-WINDOW post-dates s01e03 /and-facets); 11 scene-cluster forks; worm-tight persona
         stitched_at: 2026-05-13
         stitch_profile: active-project/theater/stitch-profile.md   # episode-default reused for s01e03; project-default at active-project/stitch-profile.md provides anti-jargon/hollow/asinine/bone-fence
         stitch_persona: worm-tight
         stitch_lens_policy: bias-only
-        polish_path: active-project/draft/s01e03.md   # stitcher output; /and-wrap editor pass will produce active-project/polish/s01e03.md
+        polish_path: active-project/polish/s01e03.md   # editor pass output (URI-WRAP-V2); draft at active-project/draft/s01e03.md retained
         polish_annotated_path: active-project/draft/s01e03.annotated.md
         render_log_path: active-project/staff/stitcher/render-log-s01e03.md
         word_count_body: ~1480
@@ -321,4 +336,10 @@ seasons:
 
 active:
   season: s01
+  episode: s01e03 [wrapped, season-final]
+
+last_wrap:
   episode: s01e03
+  date: 2026-05-13
+  outcome: clean (0 HARD, 1 SIGNAL converged with audience HIGH, 0 bones lost, 0 editor-introduced faults)
+  polish_path: active-project/polish/s01e03.md

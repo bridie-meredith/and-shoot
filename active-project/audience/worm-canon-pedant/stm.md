@@ -155,3 +155,27 @@ Updated carry-forward watches:
 flagged: 14 (10 corrective, 4 positive anchors)
 accepted: Clinical/body-tracking/fauna-relay register holds across most scenes. Earth-Bet hard-fence preserved (no Worm-proper-nouns; Westeros transplant terminology consistent). Three-note-buildup at scene-L, "dusk cut the apothecary corner to a strip" at scene-M, and the mother's vigil-close line at scene-N all land canon-precise. Log-trio protected pattern lands as percussion, not refrain-fatigue.
 why: Confusion clusters at pronoun ambiguity (L13/L19/L25 — "he" routes to wrong antecedent on first read) and inverted cause/effect ordering at L23 (stylus-drop peak fogged). The 400m range-expansion peak at L15 is flattened by three identical exhale-reports where canon-Taylor would body-track specific physiological signatures. Two narrator-explanation seams (Fish Gate gloss, customary-wage parenthetical) read as exposition welded into Taylor's frame rather than emerging from it. No mechanics violations; no lore leaks; no Earth-Bet fence breaches. Carry-forward live watches (insect-network/glass-candle theory; maester distance precision) remain unresolved at execution but are not in s01e02 scope.
+
+## Wrap review s01e03 — 2026-05-13
+flagged: 7 (2 high-severity, 3 medium, 2 low)
+earth-bet-fence: 0 hard breaches; 1 register-bleed risk (flag-001)
+verdict: ACCEPT-WITH-FLAGS
+
+accepted: Displacement-clamp operating correctly in most passages — "a reader upstream of its writer," "the body counted the blank," "the knowing was older than this hand," "closed it on him," "the word the record used when it would not write the actual word." Season-close paragraph (final paragraph) lands as intended. Dock-side cluster and father/elder relay scenes are efficient. Log-trio protected pattern holds as percussion throughout.
+
+flagged-high:
+1. Line 59 — "the way it used to leave before the network went": displacement-clamp register bleed. "The network went" carries Gold Morning semantic weight through a phrase that contains no Worm proper nouns — threads under the hard fence while conveying exactly the forbidden content. Rephrase to anatomical or procedural Westeros anchor.
+2. Line 65 — "the interior had the count of years for what the seat above the city was going to be": "the interior" has no legible antecedent; the sentence constructs the Red Keep as the subject of its own future-knowledge. Intended meaning (Taylor's body-memory of authority-architectures) misfires. Rewrite to anchor the locus explicitly to Taylor's body.
+
+flagged-medium:
+3. Line 15 — "He addressed the keeper. The keeper answered. He pressed again. The keeper answered.": four beats of null exchange at peak-approach bones @39-@42; deflates scene-C tension.
+4. Lines 9 and 63 — duplicate fauna-relay-spread: identical species list and syntactic order at both protected-pattern appearances; scene-H gives no textual signal of expanded range, reads as copy of scene-B.
+5. Line 41 — maester market dialogue: sage-drying-time inquiry is procedural drag before pen-set peak; second turn of keeper exchange is excess line-weight.
+
+flagged-low:
+6. Line 75 — "The flies had the middleman.": inert standalone surveillance note with no relay consequence.
+7. Lines 41/63/79 — maester distance precision: carry-forward watch from OQ-4/5 through s01e02 still unresolved at execution. The 400m→600m range expansion is confirmed but Taylor's precise distance from the maester is never stated.
+
+carry-forward watches (unchanged, still unresolved at execution):
+- Taylor's in-world theory for insect-network/glass-candle interaction must appear in prose before the s4 experiment.
+- Distance from maester must be established with precision at least once.

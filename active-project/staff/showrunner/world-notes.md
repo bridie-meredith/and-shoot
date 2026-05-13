@@ -89,3 +89,19 @@
 - DECIDED Taylor is the only cape-power POV. Westerosi characters do not have parahuman-equivalent abilities; their powers are dragons, swords, gold, and information.
 - DECIDED Smallfolk characters are first-class cast members, not background texture.
 - DECIDED Nobility cast members exist as antagonist-instruments and witness-figures (those who watch Taylor and try to absorb her) — never as romantic partners or earned-loyalty allies.
+
+# 2026-05-13 — s01 season-close state (post-/and-wrap s01e03)
+
+- Taylor's insect range: 600m (Red Keep is 400m beyond ceiling per scene-H "south-wall column" + "I faced the Red Keep")
+- Hightower apparatus file on Taylor: open in three loci as of season-close — clerk-1 record at market-side junction (Fish Gate crossed; file beyond Taylor's witness), clerk-2 record at apothecary upper room, operative's sealed account in middleman's possession via formal written request through oc-tanner-elder
+- Taylor's awareness: does not know about clerks 1/2 explicitly as Hightower apparatus; reads them as "more than one hand in this work" — pattern but no faction label
+- Village-claim status: closed externally via lord's-man record (s01e02 close)
+- Tanner-family wage-claim: on customary record (s01e03 preamble)
+- Mother's vigil candle: extinguished (s01e02 close)
+- Broken maester: named log entry; sole research-witness (s01e03 pen-set scene-F locks in his recognition)
+- Tanner-father: visits elder confirming Taylor "still placed" (scene-G); no direct contact with Taylor; routes through elder
+- Glass-candle: not yet acquired (s02 territory)
+- Khepri-mantle threshold: not yet crossed (s02 close territory)
+- Dance of the Dragons: not yet ignited (s03 territory)
+
+Next planned: /and-season s02 (no plan yet; s02 chunk in series memory.seasons[s02])

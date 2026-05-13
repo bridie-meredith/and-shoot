@@ -1,6 +1,11 @@
 STM:
-- Woke in Tya's body; fever-death complete before arrival; no competing consciousness
-- Community calls her Tya-who-came-back-wrong; she does not correct them
-- 300m insect radius active from story open; passive ambient always-on
-- Khepri-mantle sealed; glass-candle relay research not yet begun
-- Recently arrived in Flea Bottom via tanner-elder placement
+- Insect range: 600m; Red Keep 400m beyond ceiling; relay infrastructure (glass-candle) not yet acquired
+- Hightower apparatus has an open file in three loci; Taylor reads it as "more than one hand in this work" — pattern recognized, faction label absent
+- Two log entries closed on the same hour at season-end: Taylor's and the elder's sealed account via middleman — neither author knows about the other's entry
+- Body-knowledge firing without direction: blank-column recognition (cause field empty), seal-wrong-side memory, denomination-older-than-this-hand — Worm/Khepri accumulation present on surface
+- Broken maester: named log entry and body-recognized parallel-documenter; pen-set recognized as the hold from sessions-that-didn't-reopen; not yet engaged as brake
+- Tanner-father: routes through elder, no direct contact; placement confirmed "she's placed, earns it monthly"
+- Khepri-mantle: sealed; not yet approached
+- Clinical log discipline holding: every scene closed with a log entry; no missed entries; self-erasure register intact
+- Season-close perimeter walk completed; two-column wall perception at south wall; facing the Red Keep with interior count of years for what it will become
+- Tanner-family wage-claim on customary record; vigil candle extinguished; village-claim closed externally — tanner-origin cost-surface ongoing but changed shape
