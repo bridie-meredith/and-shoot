@@ -150,3 +150,8 @@ Updated carry-forward watches:
 1. [CARRY-FORWARD] Taylor's in-world theory for insect-network/glass-candle interaction must appear in prose before the s4 experiment.
 2. [CARRY-FORWARD] Distance from maester must be established with precision at least once.
 3. [RESOLVED — s01 plan level] Beat 20 log-language: corrected in draft 2. No longer an execution risk.
+
+## Wrap review s01e02 — 2026-05-13
+flagged: 14 (10 corrective, 4 positive anchors)
+accepted: Clinical/body-tracking/fauna-relay register holds across most scenes. Earth-Bet hard-fence preserved (no Worm-proper-nouns; Westeros transplant terminology consistent). Three-note-buildup at scene-L, "dusk cut the apothecary corner to a strip" at scene-M, and the mother's vigil-close line at scene-N all land canon-precise. Log-trio protected pattern lands as percussion, not refrain-fatigue.
+why: Confusion clusters at pronoun ambiguity (L13/L19/L25 — "he" routes to wrong antecedent on first read) and inverted cause/effect ordering at L23 (stylus-drop peak fogged). The 400m range-expansion peak at L15 is flattened by three identical exhale-reports where canon-Taylor would body-track specific physiological signatures. Two narrator-explanation seams (Fish Gate gloss, customary-wage parenthetical) read as exposition welded into Taylor's frame rather than emerging from it. No mechanics violations; no lore leaks; no Earth-Bet fence breaches. Carry-forward live watches (insect-network/glass-candle theory; maester distance precision) remain unresolved at execution but are not in s01e02 scope.
