@@ -1,1 +1,2 @@
 [2026-05-10] ACTIVATION: provisioned for flea-bottom-dance project | role: ongoing cost surface, suspicion/withdrawal axis, Tya-origin
+[2026-05-13] EVENT: walked to junction at afternoon shift; addressed the elder, not Taylor; confirmed "come down to see she's still placed"; walked off | why significant: surveillance-at-distance pattern established; no longer attempts direct contact; uses the elder as the transactional surface; the check-in is a monitoring action, not a confrontation or reengagement
