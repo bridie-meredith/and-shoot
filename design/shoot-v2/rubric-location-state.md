@@ -105,6 +105,37 @@ These are the contamination patterns the active project's prior `STUDIO:` bullet
 
 ---
 
+## Transition-run continuity license (URI-SCENE-RHYTHM, 2026-05-13)
+
+The three-axis rubric above is calibrated for state-change beats (movement, threshold, environment-turnover). It correctly refuses entries on tens=1 transition runs that don't change state. But s01e02 dogfoods (breath-pass, organic-render-p4, scene-window) all identified the same gap: transition runs render facet-bare, and the stitcher has nothing to weave through them. The bones are correctly atomic; the renders feel metronomic because no atmospheric tissue persists across the run.
+
+The transition-run continuity license is a narrow additive — NOT a relaxation of the necessity / interestingness / frugality axes. It fires for ONE specific structural slot per fusion-eligible-run:
+
+**When the license fires:**
+- The anchor bone is inside a scene-map `fusion-eligible-runs` range (3+ consecutive tens=1 bones, no peak-shadow), AND
+- The scene's `rhythm-shape` is `flat-low`, `resolving`, or `release-only` (transition postures), AND
+- A prior scene established a sensory baseline (a loc-state entry citing an environment) that the audience can register as continuing into this run.
+
+**What the license permits:** ONE continuity-carry loc-state entry per fusion-eligible-run, anchored to the run's first bone. Entry shape:
+
+```
+<id> @<bone-id> <location-slug> | <time> | <weather> | <conditions> | continuity-from <prior-loc-state-id>: <one-clause carry-note>
+```
+
+The `continuity-from` token names the prior loc-state entry whose baseline is being carried. The `<one-clause carry-note>` names what specifically persists — usually a sensory thread (alley-sound through the window, wind-off-the-road carrying, relay-register active) that was established earlier and remains audible through the transition run.
+
+**What the license does NOT permit:**
+- New state-change content (use a normal loc-state entry at the change beat).
+- Inherited re-naming (Anti-pattern 4 still applies in spirit; the carry-note must not just repeat the prior loc-state's sensory note verbatim).
+- Multiple carry-notes per run (one is the entire license).
+- Continuity carry across `rhythm-shape: rising` / `rising-to-peak` / `peak-and-release` / `double-peak` scenes (those have tens momentum that absorbs facet-bare bones differently; the stitcher should not weave continuity through an approach).
+
+**Stitcher consumption.** The scene-window fork reads the `continuity-from` entry and folds the carry-note as connective tissue across the run — em-dash continuation, `still` connective adverb, participial-phrase carry-forward. The render is NOT a standalone sentence; it is tissue that lets the run breathe. Worked example from s01e02 scene-D (bones @41–@49, six of seven facet-bare): `"The flies still had the carter and the wind."` The `still` is the carry-marker; the relay-register established in scene-C is the persisting baseline being carried into scene-D's flat-low run.
+
+**Auditor enforcement.** Continuity-carry entry whose `<bone-id>` is NOT inside a fusion-eligible-run → HARD `FAULT-LOC-STATE-CONTINUITY-MISPLACED`. Entry whose `<prior-loc-state-id>` does not resolve to an earlier loc-state entry in the file → HARD `FAULT-LOC-STATE-CONTINUITY-DANGLING`. Multiple continuity-carry entries on the same fusion-eligible-run → HARD `FAULT-LOC-STATE-CONTINUITY-OVERPACK`. Entry whose carry-note duplicates the prior loc-state's sensory note verbatim → SIGNAL `WARN-LOC-STATE-CONTINUITY-NO-INCREMENT`.
+
+---
+
 ## V1 lenient form (retained for lift comparison only)
 
 V1: ACCEPT iff the entry does not violate the form (well-formed slug, time, weather, conditions, sensory note) AND the anchor proto-line is plausibly an environment beat. No necessity test, no interestingness test, no frugality test.

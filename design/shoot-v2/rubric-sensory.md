@@ -307,7 +307,7 @@ V1 exists only to produce a baseline accept-rate for round-trip comparison after
 ## What sensory-flags is not
 
 - Not narration. Not paraphrase of the SVO. Not an inventory of all perceptible state.
-- Not loc-state. Loc-state holds sustained sensory level; sensory-flags holds inflection. Loc-state is the baseline; sensory-flags is the delta on top.
+- Not loc-state. Loc-state holds sustained sensory level; sensory-flags holds inflection. Loc-state is the baseline; sensory-flags is the delta on top. **Note (URI-SCENE-RHYTHM, 2026-05-13):** transition-run continuity (an established sensory baseline persisting through a tens=1 transition stretch, e.g. alley-sound carrying across a flat-low scene) belongs in loc-state's transition-run continuity license, NOT in sensory-flags. Sensory-flags fires on inflection (spike/drop/change); continuity is sustained baseline carry — the loc-state continuity-carry slot is the correct home. See `design/shoot-v2/rubric-location-state.md § Transition-run continuity license`.
 - Not narrator-interest. Narrator-interest is what the POV character registers. Sensory-flags is what changes *out there*, audience-side. The two facets may co-fire on the same beat but are independent.
 - Not memory-flags. Memory-flags fires the licensing layer for figurative reach. Sensory-flags fires the disambiguation layer for bare environmental language. Independent.
 - Not state-updates. State-updates writes back to canonical memory (persistent). Sensory-flags is stitcher selection signal only (no writeback). Pattern-aligned (delta shape), domain-distinct.
