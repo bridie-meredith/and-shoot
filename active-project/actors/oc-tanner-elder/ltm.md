@@ -1,1 +1,4 @@
 [2026-05-10] ACTIVATION: provisioned for flea-bottom-dance project | role: Flea Bottom conditional embedder; placed Taylor into labor web
+[2026-05-13] EVENT: s01e01 — spoke to father in "tone he used for strangers he placed" | routing is the same tone for any class; the household problem became a tone-of-routing
+[2026-05-13] EVENT: paid for the upper room in Flea Bottom; routed Taylor through the road-walk | "his eyes went past me to the road before I lifted the pack" — the placement was set before she lifted the pack
+[2026-05-13] EVENT: returned to the market-side junction with the dock-runner; placed Taylor into the network | "He was placing me into the network like he'd placed me into the labour web. The weight was different." — second placement uses same protocol but exposes the girl to a different ledger

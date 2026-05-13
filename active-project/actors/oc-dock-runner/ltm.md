@@ -1,1 +1,4 @@
 [2026-05-10] ACTIVATION: provisioned for flea-bottom-dance project | role: legs, route knowledge, early trust test with Taylor
+[2026-05-13] EVENT: s01e01 — entered Fish Gate margin while the Watch's cadence was two beats off; cut eyes to alley mouth; pivoted | read the new resident before approaching; the pivot was a test, not an evasion of the Watch
+[2026-05-13] EVENT: returned with tanner-elder to market-side junction; first transactional exchange with the girl | the girl gave a word she had given before to a person she could have burned and did not; trust ledger initialized at small positive balance
+[2026-05-13] EVENT: assessed the girl as dangerous-reliable-unknown; the danger is directional, not random | will route her word through the city before nightfall; will not yet identify what she actually is

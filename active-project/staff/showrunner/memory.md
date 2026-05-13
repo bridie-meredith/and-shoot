@@ -86,18 +86,40 @@ seasons:
     protolines_complete: 2026-05-11
     episodes:
       - slug: s01e01
-        status: audited-r1   # FLIPPED 2026-05-11 per /and-facets resume r5 — flag-005 closed as EXEMPT-TONE-LAW-SLOW-BURN once card amendment landed; 0 HARD across r3/r4/r5 audit passes; only carry-forward editor-call SIGNALs (NI density 25.2%, non-POV feeling sparsity) remain by design
+        status: wrapped   # 2026-05-13 /and-wrap s01e01 complete (URI-WRAP-V2 second-run after s01e02); prior status audited-r1 (post /and-facets r5)
         stitched: true   # 2026-05-12 /and-stitch s01e01 (first-person past-tense profile); polish + annotated + render-log produced
         stitched_at: 2026-05-12
         stitch_profile: active-project/theater/stitch-profile.md
         stitch_persona: neutral
-        polish_path: active-project/polish/s01e01.md
-        polish_annotated_path: active-project/polish/s01e01.annotated.md
+        wrapped: true
+        wrapped_at: 2026-05-13
+        draft_path: active-project/draft/s01e01.md   # stitcher output (pre-editor); 1623 words
+        draft_annotated_path: active-project/draft/s01e01.annotated.md   # CAVEAT per wrap-audit flag-003: annotated diverges from clean (pre-Phase-7 generation); editor bone-walked against proto-lines directly
+        polish_path: active-project/polish/s01e01.md   # editor output (post-wrap); 1542 words; word-count delta -81
         render_log_path: active-project/staff/stitcher/render-log-s01e01.md
         narrator: taylor-hebert-flea-bottom
         interlude: false
         chunk: "Taylor wakes in Tya's body and the tanner-village category closes around her on the first morning; she moves to King's Landing via the tanner-elder, maps her 300m sphere in Flea Bottom, identifies the broken maester's upper room as ambient surveillance, and runs her first transactional exchange via the dock-runner."
-        proto_lines_path: active-project/theater/proto-lines/s01e01.md
+        proto_lines_path: active-project/theater/proto-lines/s01e01.md   # staged from theater/s01e01-archive/proto-lines/ for /and-wrap auditor canonical-path access 2026-05-13
+        scene_map_path: active-project/theater/facets/scene-map-s01e01.md   # HAND-AUTHORED at /and-wrap 2026-05-13 (s01e01 stitched pre-URI-SCENE-WINDOW; scene-map facet did not yet exist); 13 scenes A-N skip G; 146 bones in exactly one scene
+        wrap_artifacts:
+          audience_merge: active-project/staff/editor/wrap-audience-s01e01.md
+          audience_per_persona:
+            - active-project/staff/editor/wrap-audience-cape-fic-reader-s01e01.md   # 11 flags
+            - active-project/staff/editor/wrap-audience-dark-fantasy-reader-s01e01.md   # 13 flags
+            - active-project/staff/editor/wrap-audience-worm-canon-pedant-s01e01.md   # 11 corrective + 5 accept-anchors
+          auditor_report: active-project/staff/auditor/s01e01-wrap-audit.md   # 2 HARD (both prose-surface), 4 SIGNAL
+          edit_log: active-project/staff/editor/wrap-edit-log-s01e01.md
+        wrap_stats:
+          edits_total: 17
+          edits_by_class: { EDIT-AUDIT-REMEDIATE: 4, EDIT-AUDIENCE-REMEDIATE: 9, EDIT-PROSE-ECONOMY: 2, EDIT-CONTINUITY: 1, EDIT-VOICE-CONSISTENCY: 1, KEEP-OVER-FLAG: 5 }
+          audience_flags_addressed: "5 shared + 6 solo"
+          audience_overrides: 5
+          audit_findings_addressed: "2 HARD + 4 SIGNAL"
+          bones_cut_as_warmup: 0
+          editor_introduced_faults: 0
+          per_bone_walk: "146 bones | rendered=132, fused=6 (stitcher), cut-by-stitcher=14 (licensed), cut-as-warmup=0, lost=0"
+        shared_audience_concern_top: "institutional-parenthetical pattern (reeve / lord's-man / maester / gold cloaks) — flagged by all three personas; cross-episode (also flagged at s01e02 wrap); editor compressed/relocated where exposition-verbatim allowed, kept where verbatim-protected (KEEP-OVER-FLAG with rationale)"
       - slug: s01e02
         stitched: true   # 2026-05-12 /and-stitch s01e02 — first run under V2 bones-only-write lens semantics; V1 (lenses-as-content) rejected by user as "garbage"; V2 + Phase 7 expanded smoothing leeway (FUSE/POSSESS-FIX) is the accepted form
         stitched_at: 2026-05-12
