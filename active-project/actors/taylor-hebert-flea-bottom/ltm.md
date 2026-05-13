@@ -1,1 +1,11 @@
 [2026-05-10] ACTIVATION: provisioned for flea-bottom-dance project | story-open: Tya's body, tanner village, 300m range, Khepri sealed
+[2026-05-13] EVENT: s01e01 close — Tya's body-memory surfaced unbidden (chin-angle, reach-for-salt) before I'd adjusted for it | confirms body remembers what I haven't been told; the calibration cost is on me, not on the household
+[2026-05-13] EVENT: father reached verdict mid-meal — "any stranger he was still working out" | the verdict is settled; suspicion has become a stable register; the household will not soften back
+[2026-05-13] EVENT: mother tried the three-note song; dropped it at the third when I did not fill it | her test was specific; her failure was specific; she turned to the wall and left the room
+[2026-05-13] EVENT: lord's-man entered me into a record I am not allowed to read | a line of ink now in a Hightower-adjacent ledger; first miscategorized intelligence file forms in someone else's archive
+[2026-05-13] EVENT: tanner-elder routed me to King's Landing — "I would have refused if refusal had been on offer" | the village solved the household problem by exporting me; village grief-debt remains open and transactional
+[2026-05-13] EVENT: crossed yard gate at last-threshold-that-cost-nothing | mother held the wood she would not turn to watch; father set his eyes on the work and did not lift them to the gate
+[2026-05-13] EVENT: 300m sphere arrived intact at Flea Bottom; flies higher than I'd extrapolated from village; cardinal-quartet of fauna spread (flies / beetles / wasps / spiders) | KL fauna density absorbs the relay without observable shard-cost; sphere mechanics unchanged by environment
+[2026-05-13] EVENT: identified maester in upper room above FB base as ambient surveillance source | first scholar-class observer inside operating radius; the chained learning the realm runs on
+[2026-05-13] EVENT: maester laughed at me — beetles fell silent in the same beat | he knows the listener is here, and his network signaled the recognition before I did; the brake-not-ally has named me without naming me
+[2026-05-13] EVENT: gave the dock-runner the word I had given before, to a person I could have burned and did not | first irreversible commit in this city; the city will route the word before nightfall; the prior-word reference is foreknowledge weight without context for this body

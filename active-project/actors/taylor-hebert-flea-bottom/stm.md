@@ -1,6 +1,11 @@
 STM:
-- Woke in Tya's body; fever-death complete before arrival; no competing consciousness
-- Community calls her Tya-who-came-back-wrong; she does not correct them
-- 300m insect radius active from story open; passive ambient always-on
+- Now in Flea Bottom base; pack down; perimeter mapped; two exits + window + roofline reachable to spiders
+- 300m insect radius arrived intact at KL; cardinal-quartet of fauna (flies / beetles / wasps / spiders) holds the perimeter; flies higher than I'd extrapolated from village
+- Maester in upper room above me is ambient surveillance; he laughed at me when his network registered the listener before I did; brake-not-ally established
+- Body's Tya-memory surfaces unbidden (chin-angle, reach-for-salt); calibration cost is on me
+- First irreversible city-commit gave the dock-runner the word I gave before to a person I could have burned; the city will route it before nightfall
+- Watch crosses Fish Gate margin on a cadence two beats off; the count is a count I haven't seen before
+- Tanner-elder placed me into the network like he placed me into the labour web; the weight was different
+- Lord's-man entered me into a record I am not allowed to read; a line of ink in a Hightower-adjacent ledger
+- Village grief-debt remains open and transactional; mother turned to the wall; father set his eyes on the work; mother held the wood she would not turn to watch at the gate
 - Khepri-mantle sealed; glass-candle relay research not yet begun
-- Recently arrived in Flea Bottom via tanner-elder placement
