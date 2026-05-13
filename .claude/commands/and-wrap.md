@@ -157,9 +157,38 @@ The auditor checks the **rendered prose against the graph** — a different audi
 
 8. **EARTH-BET-HARD-FENCE.** Re-scan the rendered prose for the Earth-Bet proper-noun list (per `/and-facets` Phase 5 CONSTRAINT). Any hit is HARD even if it slipped through the facet-graph audit upstream — the wrap auditor is the last gate before ship.
 
-**Output.** `active-project/staff/auditor/<slug>-wrap-audit.md` per `schemas/audit-report.schema.md`. Classified findings; HARD findings block the run, SIGNAL findings advise the editor.
+**Output.** `active-project/staff/auditor/<slug>-wrap-audit.md` per `schemas/audit-report.schema.md`. Classified findings with severity + **disposition** (URI-WRAP-V2-DISPO, 2026-05-13).
 
-If HARD findings exist, route to fixer per the standard repair flow OR escalate to user. The editor cannot proceed with HARD findings unresolved — its job is prose surface, not graph repair. Only SIGNAL findings flow into the editor as advisory.
+### HARD finding disposition (URI-WRAP-V2-DISPO, 2026-05-13)
+
+The auditor MUST attach a `disposition:` tag to every HARD finding. Disposition determines whether the editor (Phase 3) handles the finding, whether the fixer is routed, or whether the user is escalated. Three values:
+
+- **`disposition: prose-surface`** — the fault is correctable by edits inside the editor's allowed-moves contract. Examples: a missing bone restorable via a one-sentence insert within bone-faithfulness; a pronoun ambiguity resolvable by replacing `He` with `The visitor`; a possessive-register break (`the breath` → `my breath`). The editor handles in Pass A as a must-fix.
+- **`disposition: graph-repair`** — the fault requires changes outside the editor's allowed moves. Examples: an utterance whose text was modified from the dialogue facet's source (only theater/dialogue/ can be restored from); an invented character/place the editor cannot just delete because plot reference is at stake; a SCENE-MAP-RESPECT violation indicating upstream stitcher drift; an Earth-Bet hard-fence leak. Routes to fixer for minimum-change repair OR escalates to user. Editor is blocked until cleared.
+- **`disposition: acknowledge`** — the fault is real per the audit ruleset but the rendered form is intentional (typically a post-stitch user-override or a known-good deviation). The editor logs `KEEP-OVER-FINDING` with the auditor's note as rationale and proceeds. Acknowledge-disposition HARDs do NOT block the editor; they flow through as informational.
+
+The disposition is the **auditor's call**, not the orchestrator's. The auditor sees the graph, the prose, and the render-log; it knows whether a fault is editor-fixable or graph-deep. The orchestrator routes mechanically per the disposition tag.
+
+**Per-class disposition guidance** (typical mappings; the auditor's case-by-case judgment can override):
+
+| Class | Typical disposition |
+|---|---|
+| BONE-COVERAGE | `prose-surface` — editor inserts restoring sentence within bone-faithfulness fence (the bone exists in graph; the prose just dropped it) |
+| DIALOGUE-VERBATIM | `graph-repair` — utterance text is verbatim-invariant; only theater/dialogue/ is the source |
+| EXPOSITION-VERBATIM | `graph-repair` by default; `acknowledge` when the rendered form is an intentional user-override |
+| NO-INVENTION | `prose-surface` for small deletions (cut invented sentence); `graph-repair` when bone-faithfulness is at structural risk |
+| CONTINUITY | `prose-surface` — pronoun, tense, possessive, blocking-within-prose |
+| BLOCKING | `prose-surface` when prose contradicts state-updates; `graph-repair` when state-updates themselves are missing the transition |
+| SCENE-MAP-RESPECT | `graph-repair` — indicates stitcher violated scene-map; re-stitch territory |
+| EARTH-BET-HARD-FENCE | `graph-repair` — escalate to user; a hard-fence leak is structural |
+
+### Routing rule
+
+After the audit:
+- **Graph-repair HARDs > 0** → block editor. Route each graph-repair HARD to fixer for minimum-change repair, OR escalate to user. The editor cannot proceed until graph-repair HARDs are cleared.
+- **Prose-surface HARDs and Acknowledge HARDs** → flow to editor as Pass A inputs alongside SIGNAL findings (the editor's existing must-fix tier). The editor's allowed-moves contract covers them; the per-bone discipline walk verifies bone-coverage HARDs are resolved.
+
+The previous spec language ("editor cannot proceed with HARD findings unresolved — its job is prose surface, not graph repair") is **revised** per URI-WRAP-V2-DISPO: HARDs are now disposition-tagged, and only `graph-repair`-disposition HARDs block the editor. `prose-surface` and `acknowledge` HARDs flow through. This refinement was surfaced by the first /and-wrap dogfood on s01e02 (2026-05-13), where the auditor returned 7 HARDs all classified as prose-surface or acknowledge; treating them as blockers would have forced ~5 fixer dispatches for what is one whole-text editor pass.
 
 ---
 
@@ -172,7 +201,7 @@ Dispatch the editor (`staff/editor/card.md`) as a single Agent call. The editor 
 - `active-project/staff/stitcher/render-log-<slug>.md` (full provenance for any sentence)
 - `active-project/theater/facets/scene-map-<slug>.md` (scene boundaries + rhythm-shape; informs cross-scene continuity work)
 - `active-project/staff/editor/wrap-audience-<slug>.md` (audience flags from Phase 1, if not skipped)
-- `active-project/staff/auditor/<slug>-wrap-audit.md` (audit report from Phase 2, if not skipped — SIGNAL findings only; HARDs blocked the phase)
+- `active-project/staff/auditor/<slug>-wrap-audit.md` (audit report from Phase 2, if not skipped — SIGNAL findings + `disposition: prose-surface` HARDs (must-fix in Pass A) + `disposition: acknowledge` HARDs (log KEEP-OVER-FINDING and pass). `disposition: graph-repair` HARDs would have blocked the phase and been routed to fixer or escalated; the editor never sees them.)
 - `active-project/theater/dialogue/<character-slug>.md` for each speaker (utterance verbatim reference — editor does NOT modify these)
 - `active-project/theater/facets/exposition-<slug>.md` (exposition gloss reference — editor does NOT modify these)
 - `editor-mode: strict | standard | permissive` (cut-aggressiveness override from CLI flag)
@@ -208,7 +237,7 @@ Dispatch the editor (`staff/editor/card.md`) as a single Agent call. The editor 
 1. **Read everything.** Draft, annotated draft, render-log, scene-map, audience flags, audit findings, dialogue, exposition.
 2. **Plan the pass.** List intended moves by category (prose-economy cuts, whole-text variance breaks, continuity fixes, repetition culls, audience-flag remediations, audit-finding remediations, paragraph adjustments). For each, name the target sentence(s) by line excerpt or scene/paragraph reference.
 3. **Apply moves in order.**
-   - Pass A: HARD-equivalent rule violations (continuity, blocking, audience-flag-shared-by-≥2-personas) — these are the must-fix items.
+   - Pass A: Must-fix items. Auditor `disposition: prose-surface` HARDs (URI-WRAP-V2-DISPO); audience-flag-shared-by-≥2-personas; continuity/blocking issues identifiable from the draft alone. Auditor `disposition: acknowledge` HARDs are logged here as KEEP-OVER-FINDING but require no prose change.
    - Pass B: Audience flags from individual personas (advisory).
    - Pass C: Auditor SIGNAL findings.
    - Pass D: Whole-text prose pass (economy, variance, repetition, paragraph adjustments, voice consistency).
