@@ -69,9 +69,10 @@ Bake a **declared, measurable, auditable substance contract** into the pipeline 
   ↓
 /and-facets b01c01 (per-facet runners; tensometer dropped)
   ↓
-/and-stitch b01c01 (eight-phase prose render; Phase 7 editorial reflection is the
-                    substance-aware polish; output IS the manuscript)
+/and-stitch b01c01 (unchanged; eight-phase prose render → draft/<chapter>.md)
   ↓ [optional /and-review at any point for spot-checks / verdicts]
+
+[final-edits / polish / ship-ready manuscript: deferred until upstream is proven]
 ```
 
 **Six live commands; three removed; one renamed.**
@@ -87,16 +88,16 @@ Bake a **declared, measurable, auditable substance contract** into the pipeline 
 | `/and-review` | **net new** | Universal review primitive with subcommand router. Reviews anything (signature / chunk / contract / bones / facets / prose / cast / consistency / tree / feedback / verdict) on demand. Absorbs `/and-judge-book` (orchestrator-critic) via `verdict <book>` subcommand. |
 | `/and-judge-book` | **DROPPED** | Absorbed by `/and-review verdict <book>`. |
 | `/and-facets` | overhauled (light) | Tensometer facet removed from R1/R2 fanout. Otherwise unchanged. |
-| `/and-stitch` | **overhauled (light)** | Phase 7 editorial reflection becomes substance-aware (absorbs former `/and-wrap` editor allowed-moves: prose economy, repetition cull, audience-flag remediation, audit-finding remediation, within fences). Output IS the manuscript. |
-| `/and-wrap` | **DROPPED** | Review work absorbed by `/and-review prose`; editor work absorbed by `/and-stitch` Phase 7. |
+| `/and-stitch` | unchanged | Out of scope for this overhaul. Existing Phase 7 (editorial reflection) is what it is. Output is `draft/<chapter>.md` — the deliverable until upstream substance machinery is proven. |
+| `/and-wrap` | **DROPPED** | Wasn't pulling its weight. Polish concerns deferred entirely until upstream chain is working end-to-end. |
 
 ### Why drop /and-judge-book and /and-wrap entirely
 
 **`/and-judge-book`** existed to fire the orchestrator-critic verdict against a finished book. That's a single review type. `/and-review` is the universal review primitive — folding the verdict into `/and-review verdict <book>` consolidates the review surface. A separate command added a row in the table without separate value.
 
-**`/and-wrap`** had three phases: audience review, auditor pass, editor pass. The review phases are absorbed by `/and-review prose <chapter>` (same reviewers, on-demand instead of mandatory). The editor pass is absorbed by `/and-stitch`'s existing Phase 7 (editorial reflection), which becomes the substance-aware allowed-moves surface — prose economy, repetition cull, audience-flag remediation, audit-finding remediation, all within the fences (no plot invention, no dialogue modification, no scene reorder). Result: one prose-craft command (`/and-stitch`), one review primitive (`/and-review`), no separate polish step. The draft `/and-stitch` produces is the manuscript.
+**`/and-wrap`** wasn't pulling its weight. Three phases (audience review, auditor pass, editor pass), but the editor pass produced marginal changes on top of what `/and-stitch`'s Phase 7 (editorial reflection) already did, and the audience+auditor phases were mandatory dispatch cost for a review the user might or might not want at that moment. Dropped outright.
 
-Tradeoff: `/and-wrap` Phase 3's whole-text view (cross-scene percussion, repetition cull across chapters) is harder to preserve when the editor is folded into `/and-stitch`, which is a per-chapter command. Mitigation: `/and-review prose <chapter>` and `/and-review tree b01 --prose` can flag cross-chapter issues; `/and-stitch <chapter> revise` re-fires with that feedback. The whole-book percussion pass becomes iterative-via-feedback rather than a single batched editor invocation.
+**Polish / final-edits is deferred entirely as a concern.** The substance overhaul ships when the upstream chain — `/and-project` → `/and-series` → `/and-substance series` → `/and-cast` → `/and-substance` (recursive) → `/and-write` → `/and-facets` → `/and-stitch` — produces a draft that is *substantively right*. Prose polish, cross-chapter percussion, repetition culling across the book, ship-ready manuscript work: all of that waits until the substance machinery is proven. `/and-stitch` is **unchanged** by this overhaul (its existing Phase 7 editorial reflection is what it is); `/and-review prose <chapter>` and any prose-focused review subcommands are **deferred**. The chain ends at `draft/<chapter>.md`; that's the deliverable until upstream is trusted.
 
 ### Why drop /and-season entirely
 
@@ -155,7 +156,7 @@ Every new command except `/and-project` is **re-runnable**. The authoring loop i
 | `/and-cast` | yes | `revise` / `redo` (margit decommissions current roster to `actors/<slug>-decommissioned-<timestamp>/` on redo). |
 | `/and-write` | yes | Per-chapter. `revise` (re-write specific bone ranges flagged SIGNAL by bone-gate) / `redo` (full rewrite — preserves chunks, replaces bones). |
 | `/and-review` | yes (idempotent) | Any subcommand can be re-fired any number of times. Each invocation persists a new timestamped report; nothing else is mutated. `verdict` subcommand updates `books[<slug>].orchestrator_critic_verdict` in place. |
-| `/and-stitch` | yes | Per-chapter. Default mode re-runs the full eight-phase pipeline. `revise --feedback <report>` re-fires Phase 7 only with named feedback. |
+| `/and-stitch` | yes (unchanged) | Per-chapter. Re-running re-runs the full eight-phase pipeline. No new revise mode in this overhaul. |
 
 **Phase 0 protocol for re-runnable commands:**
 
@@ -412,7 +413,7 @@ Top-level router dispatches to one of N pre-defined review types. No authored wr
 | `/and-review signature` | series only | audience + dramatist + auditor | Series signature health: are the axes the right axes? Anchors honest? Cost ledger paid across the arc? Antagonist pressure named per axis? |
 | `/and-review bones <chapter-slug>` | chapter slug | bones critics (SVO craft) + bone-gate logic | Per-bone axis-movement bonefide? Per-scene Δ delivered? Cost-paid? `SUBSTANCE-FELT`/`-FLAT` per scene. |
 | `/and-review facets <chapter-slug>` | chapter slug | per-facet rubric runners | Facet-by-facet review against rubric. |
-| `/and-review prose <chapter-slug>` | chapter slug | audience + auditor | Polished prose — felt-substance per scene; `SUBSTANCE-COVERAGE` audit. (Overlaps `/and-wrap` Phase 1/2 but on-demand, no editor invocation.) |
+| `/and-review prose <chapter-slug>` | chapter slug | audience + auditor | **DEFERRED.** Felt-substance per scene + `SUBSTANCE-COVERAGE` audit on rendered prose. Not in scope until upstream chain produces drafts the user wants to spot-check. Listed here so the eventual subcommand has a home, but skipped during initial build. |
 | `/and-review cast` | — | dramatist + auditor | Roster substance-fit: does the roster have carriers for every signature axis perspective? Viability check. |
 | `/and-review consistency [<root-slug>]` | optional root (defaults to series) | dramatist + auditor | Cross-level: do per-book Δ aggregates sum to series Δ? Do chapter dramatic shapes honor book drama? Do scene contracts fit within chapter contract? Cost-ledger entries paid? Cyclical commitments honored? |
 | `/and-review tree [<root-slug>]` | optional root | all of the above, scoped to the subtree | Full sweep at and below root. Defaults to whole series. |
@@ -431,16 +432,11 @@ Top-level router dispatches to one of N pre-defined review types. No authored wr
 
 Estimated size: ~300–400 lines (the router + N subcommand implementations; each subcommand is small because the reviewers do the heavy lifting).
 
-### `/and-stitch` (overhauled (light) — Phase 7 absorbs editor work)
+### `/and-stitch` (unchanged — out of scope for this overhaul)
 
-Eight-phase pipeline unchanged in shape (lens-anchored render → redundancy cull → compression → voice transform → local flow → buildup preservation → editorial reflection → finalize). Substance work lands in Phase 7 (editorial reflection), which becomes the substance-aware allowed-moves surface formerly housed in `/and-wrap` Phase 3:
+Eight-phase pipeline (lens-anchored render → redundancy cull → compression → voice transform → local flow → buildup preservation → editorial reflection → finalize). Output `draft/<chapter>.md` (clean) + `draft/<chapter>.annotated.md` (traced). The clean draft is the deliverable until upstream substance machinery is proven and the user wants to revisit polish.
 
-- **Allowed moves in Phase 7:** prose economy, repetition cull, audience-flag remediation (when fed via `/and-stitch <chapter> revise --feedback <review-report>`), audit-finding remediation, paragraph adjustments, voice consistency.
-- **Forbidden in Phase 7:** plot invention, dialogue verbatim modification, exposition verbatim modification, scene reordering. Bone-respect is absolute.
-- **Output:** `draft/<chapter>.md` (clean) + `draft/<chapter>.annotated.md` (traced). The clean draft IS the manuscript. No separate `polish/` step.
-- **Revise mode (NEW):** `/and-stitch <chapter> revise --feedback <review-report>` re-fires Phase 7 only, carrying review-report findings (typically from `/and-review prose <chapter>`). Earlier phases skipped — the bones-to-prose work isn't redone, just the editorial polish.
-
-Cross-chapter percussion (formerly a strength of `/and-wrap`'s whole-text view): handled via `/and-review tree <book> --prose`, which flags inter-chapter issues; the user then re-fires `/and-stitch <chapter> revise` for each flagged chapter.
+No `revise --feedback` mode, no Phase 7 substance-allowed-moves enhancement. Both flagged in earlier plan drafts; both deferred.
 
 ---
 
@@ -465,8 +461,9 @@ Cross-chapter percussion (formerly a strength of `/and-wrap`'s whole-text view):
    - `.claude/commands/and-substance.md` (recursive; four levels; chunker only)
    - `.claude/commands/and-cast.md`
    - `.claude/commands/and-write.md` (bones crafter; carries five-pass SVO pipeline + substance bone-gate)
-   - `.claude/commands/and-review.md` (universal review primitive; subcommand router incl. `verdict`)
-   - `.claude/commands/and-stitch.md` (Phase 7 absorbs former `/and-wrap` editor allowed-moves; new `revise --feedback` mode)
+   - `.claude/commands/and-review.md` (universal review primitive; subcommand router incl. `verdict`; `prose` subcommand stubbed-deferred)
+
+   **Not touched:** `/and-facets` (light edit only — remove tensometer from R1/R2 fanout; no other changes) and `/and-stitch` (unchanged; still produces `draft/<chapter>.md` from bones+facets — the chain's terminal authoring step).
 6. **Update CLAUDE.md.** New command table rows; `/and-season` removed; primary-pattern line updated to the new chain; substance framework added to schemas/authority section.
 7. **Commit + push** to `claude/improve-story-substance-CVi58` at logical breakpoints.
 
@@ -478,6 +475,7 @@ Cross-chapter percussion (formerly a strength of `/and-wrap`'s whole-text view):
 - **Facet rubric changes — partial.** Bones and facets (feeling, memory-flags, scene-map, dialogue, exposition, etc.) are preserved. **Tensometer is removed** — its purpose (per-bone substance-density signal) is now served directly by the substance contract + scene-level bone-gate. `/and-facets` no longer emits a tensometer file; `design/shoot-v2/rubric-tensometer.md` is archived; CLAUDE.md's "shared reviewer resources" line (URI-026) is updated to drop the tens rubric. The Tens-gate in URI-026 is replaced by the substance bone-gate at `/and-substance scene` Phase 5.
 - **Impersonator card "values block."** Deferred — follow-on card-schema task after one full new-chain run.
 - **Shoot-v2 chain overhaul.** `/and-facets` and `/and-stitch` unchanged structurally. `/and-facets` drops tensometer from its R1/R2 fanout. They operate on the per-chapter bones files `/and-write` emits.
+- **Final-edits / polish / ship-ready manuscript work.** Deferred entirely until the upstream chain (project → series → substance → cast → substance recursive → write → facets → stitch → draft) is proven to produce substantively-right drafts end-to-end. The whole "is the prose ready to ship?" question waits. `/and-wrap` is dropped without replacement; `/and-stitch` is unchanged; `/and-review`'s `prose` subcommand is stubbed-deferred. Whole-text concerns (cross-chapter percussion, repetition cull across the book, polish/ directory) come back after the substance machinery is trusted.
 - **Persona library expansion for non-audience staff.** `/and-project` records library-default version; substantive variant composition is a follow-on.
 
 ---
@@ -503,14 +501,14 @@ Cross-chapter percussion (formerly a strength of `/and-wrap`'s whole-text view):
 - `archive/commands/and-project-pre-substance.md`, `and-season-dissolved.md`, `and-wrap-dissolved.md`, `and-protolines-pre-substance.md` exist (plus v2 variants if present).
 - `archive/rubrics/rubric-tensometer-replaced-by-substance.md` exists; `design/shoot-v2/rubric-tensometer.md` gone.
 - `/and-facets` command body no longer emits tensometer; CLAUDE.md URI-026 line no longer references tens rubric.
-- `.claude/commands/and-{project,series,substance,cast,write,review,stitch}.md` exist and parse.
+- `.claude/commands/and-{project,series,substance,cast,write,review}.md` exist and parse.
+- `.claude/commands/and-stitch.md` is **unchanged from current** (no Phase 7 enhancement, no revise mode).
 - No active `.claude/commands/and-season.md`, `and-wrap.md`, `and-judge-book.md`, or `and-protolines*.md`.
 - `/and-substance` command body contains NO bone-writing logic (chunker only — produces chunks + contracts).
 - `/and-write` command body contains NO chunk authoring (reads beat chunks; produces bones only).
-- `/and-review` parses all router subcommands (chunk / contract / signature / bones / facets / prose / cast / consistency / tree / feedback / verdict); reports persist to `staff/reviews/`.
-- `/and-stitch` Phase 7 contains the substance-aware allowed-moves (formerly `/and-wrap` Phase 3); `revise --feedback` mode re-fires Phase 7 only.
-- `polish/` directory not populated by the new chain — manuscript is `draft/<chapter>.md`. (`polish/` from prior projects remains for historical reference.)
+- `/and-review` parses live router subcommands (chunk / contract / signature / bones / facets / cast / consistency / tree / feedback / verdict); reports persist to `staff/reviews/`. `prose` subcommand stubbed as DEFERRED.
+- `polish/` directory not touched by the new chain — manuscript is `draft/<chapter>.md`. Polish concerns deferred entirely.
 - `archive/commands/README.md` updated.
-- `CLAUDE.md` updated — `/and-season` and `/and-wrap` rows removed; new rows for `/and-series`, `/and-substance`, `/and-cast`, `/and-write`, `/and-review`; primary-pattern line reflects new chain (ends at `/and-stitch`, no separate polish).
+- `CLAUDE.md` updated — `/and-season` and `/and-wrap` rows removed; new rows for `/and-series`, `/and-substance`, `/and-cast`, `/and-write`, `/and-review`; primary-pattern line reflects new chain (ends at `/and-stitch`, no separate polish step, polish deferred).
 - Each new command's Phase 0 validates upstream and supports re-run modes (except `/and-project`, which hard-aborts).
 - Commit + push lands clean on `claude/improve-story-substance-CVi58`.
