@@ -1,7 +1,17 @@
-# Plan Audit Findings — to address next session
+# Plan Audit Findings — RESOLVED
 
 **Source:** Self-audit of `design/substance/plan.md`, 2026-05-16.
-**Status:** Open. Address before the plan is executed.
+**Status:** RESOLVED 2026-05-16 (same day). All 21 findings addressed in-plan.
+- CRITICAL (10) — applied as direct edits to plan.md.
+- IMPORTANT (5) — resolved with documented decisions in new "Decisions on spec gaps" section of plan.md.
+- SHOULD-FIX (4) — applied as direct edits.
+- DEFER (4) — recorded in new "Notes on deferred concerns" section of plan.md.
+
+This file kept for historical traceability. Re-audit before execution; if it passes, this file can be archived.
+
+---
+
+## Original findings list (historical)
 
 21 findings total. CRITICAL (10) must be fixed before any implementation work begins; IMPORTANT (5) need spec before execution; SHOULD-FIX (4) are consistency cleanup; DEFER (4) are worth noting.
 
