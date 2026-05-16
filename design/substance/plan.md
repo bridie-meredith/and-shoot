@@ -72,7 +72,7 @@ Bake a **declared, measurable, auditable substance contract** into the pipeline 
 /and-wrap (substance-aware editor)
 ```
 
-**Six live commands; one removed; one renamed.**
+**Seven live commands; one removed; one renamed.**
 
 | command | status | scope |
 |---|---|---|
@@ -82,6 +82,8 @@ Bake a **declared, measurable, auditable substance contract** into the pipeline 
 | `/and-cast` | **net new** | Cast roster + series-level human audit checkpoint. |
 | `/and-season` | **DROPPED** | Chunking jobs absorbed by `/and-substance` (book/chapter/scene levels); bone-writing job absorbed by `/and-write`. |
 | `/and-write` | **renamed + overhauled** (was `/and-protolines`) | Reads beat chunks + substance contracts from `/and-substance scene` output. Runs five-pass SVO pipeline (inventory → constraint → shape → trim → continuity) + substance bone-gate. Emits per-chapter bones file. |
+| `/and-review` | **net new** | Universal review primitive. Reviews any target (signature / chunk / contract / bones / prose / cast / whole-tree) on demand. Fires appropriate reviewers, produces a report, no authored writes. |
+| `/and-judge-book` | **net new** | Orchestrator-critic verdict for a finished book. Fires when `/and-substance book` + `/and-write` (all chapters) complete. |
 | `/and-facets`/`/and-stitch` | unchanged structurally | Operate on the per-chapter bones file `/and-write` emits. Tensometer facet removed from `/and-facets`. |
 | `/and-wrap` | **overhauled** | Three-phase v2. Substance-aware: `SUBSTANCE-FELT`/`-FLAT`/`-SUSPECT` audience flags; `SUBSTANCE-COVERAGE` auditor class; editor allowed-moves extended for substance remediation within fences. |
 
@@ -141,6 +143,7 @@ Every new command except `/and-project` is **re-runnable**. The authoring loop i
 | `/and-substance` (any level) | yes | `revise` (refine in place — same children, retune contracts), `add` (add new sub-chunks or axes/costs without touching existing), `redo` (replace all children — current set kept as prior to avoid). |
 | `/and-cast` | yes | `revise` / `redo` (margit decommissions current roster to `actors/<slug>-decommissioned-<timestamp>/` on redo). |
 | `/and-write` | yes | Per-chapter. `revise` (re-write specific bone ranges flagged SIGNAL by bone-gate) / `redo` (full rewrite — preserves chunks, replaces bones). |
+| `/and-review` | yes (idempotent) | Any subcommand can be re-fired any number of times. Each invocation persists a new timestamped report; nothing else is mutated. |
 | `/and-judge-book` | yes | Per-book. Re-firing re-judges against current state; useful after re-running `/and-substance` or `/and-write` at any level. |
 | `/and-wrap` | yes | Per-chapter. |
 
@@ -386,6 +389,37 @@ Reads beat chunks + substance contracts produced by `/and-substance scene`. Prod
 
 Estimated size: ~300–400 lines (carries the existing five-pass SVO pipeline + substance bone-gate + emission).
 
+### `/and-review` (net new — universal review primitive with subcommand router)
+
+Top-level router dispatches to one of N pre-defined review types. No authored writes; reports persist to `staff/reviews/<type>-<target>-<timestamp>.md`.
+
+**Router subcommands:**
+
+| subcommand | target | fires | what it reviews |
+|---|---|---|---|
+| `/and-review chunk <slug>` | any chunk slug (series / b01 / b01c01 / b01c01s01 / b01c01s01b01) | audience + dramatist + auditor | Does the chunk match its substance contract? Is it the right depth for its level? Does it feel meaningful? Cost language honest? |
+| `/and-review contract <slug>` | any chunk slug | dramatist + auditor | Is the substance contract well-formed? Do per-axis Δ-magnitudes sum correctly to parent? Cost-ledger consistent? No rank claims without backing? |
+| `/and-review signature` | series only | audience + dramatist + auditor | Series signature health: are the axes the right axes? Anchors honest? Cost ledger paid across the arc? Antagonist pressure named per axis? |
+| `/and-review bones <chapter-slug>` | chapter slug | bones critics (SVO craft) + bone-gate logic | Per-bone axis-movement bonefide? Per-scene Δ delivered? Cost-paid? `SUBSTANCE-FELT`/`-FLAT` per scene. |
+| `/and-review facets <chapter-slug>` | chapter slug | per-facet rubric runners | Facet-by-facet review against rubric. |
+| `/and-review prose <chapter-slug>` | chapter slug | audience + auditor | Polished prose — felt-substance per scene; `SUBSTANCE-COVERAGE` audit. (Overlaps `/and-wrap` Phase 1/2 but on-demand, no editor invocation.) |
+| `/and-review cast` | — | dramatist + auditor | Roster substance-fit: does the roster have carriers for every signature axis perspective? Viability check. |
+| `/and-review consistency [<root-slug>]` | optional root (defaults to series) | dramatist + auditor | Cross-level: do per-book Δ aggregates sum to series Δ? Do chapter dramatic shapes honor book drama? Do scene contracts fit within chapter contract? Cost-ledger entries paid? Cyclical commitments honored? |
+| `/and-review tree [<root-slug>]` | optional root | all of the above, scoped to the subtree | Full sweep at and below root. Defaults to whole series. |
+| `/and-review feedback <feedback-file> [<root-slug>]` | feedback file + optional root | audience + auditor | Re-fires reviewers carrying named feedback as context. Use case: "review s01 against `active-project/feedback.md`." |
+
+**Common phases (every subcommand):**
+
+1. Phase 0 — Parse subcommand. Validate target exists in memory / on disk.
+2. Phase 1 — Compose review brief specific to subcommand (which reviewers, what rubric, what scope).
+3. Phase 2 — Dispatch reviewers in parallel (audience persona forks per persona; dramatist; auditor).
+4. Phase 3 — Aggregate findings into a structured report. Classify HARD / SIGNAL / TASTE per the existing auditor taxonomy.
+5. Phase 4 — Persist report to `staff/reviews/<subcommand>-<target>-<timestamp>.md`. Surface to user. Optionally offer to materialize findings into a fix queue for the appropriate authoring command (e.g., HARD findings on `chunk b01c03` → fix queue for `/and-substance chapter b01c03 revise`).
+
+**Relationship to inline reviews.** Authoring commands (`/and-substance` Phase 5, `/and-write` Phases 5/6, `/and-wrap` Phases 1/2) still have inline review *gates* that catch problems before persistence. `/and-review` is for AFTER persistence — going back to spot-check or sweep on demand. Same reviewer infrastructure (audience cards, dramatist, auditor) is shared. The inline gates can call into the same review subroutines `/and-review` dispatches.
+
+Estimated size: ~300–400 lines (the router + N subcommand implementations; each subcommand is small because the reviewers do the heavy lifting).
+
 ### `/and-judge-book` (net new — orchestrator-critic gate for a finished book)
 
 Fires the orchestrator-critic against the book-scope output once every chapter under the book has bones authored.
@@ -430,6 +464,7 @@ Three-phase v2 unchanged in shape. Substance work:
    - `.claude/commands/and-substance.md` (recursive; four levels; chunker only)
    - `.claude/commands/and-cast.md`
    - `.claude/commands/and-write.md` (bones crafter; carries five-pass SVO pipeline + substance bone-gate)
+   - `.claude/commands/and-review.md` (universal review primitive; subcommand router)
    - `.claude/commands/and-judge-book.md` (orchestrator-critic verdict)
    - `.claude/commands/and-wrap.md`
 6. **Update CLAUDE.md.** New command table rows; `/and-season` removed; primary-pattern line updated to the new chain; substance framework added to schemas/authority section.
@@ -468,7 +503,8 @@ Three-phase v2 unchanged in shape. Substance work:
 - `archive/commands/and-project-pre-substance.md`, `and-season-dissolved.md`, `and-wrap-pre-substance.md`, `and-protolines-pre-substance.md` exist (plus v2 variants if present).
 - `archive/rubrics/rubric-tensometer-replaced-by-substance.md` exists; `design/shoot-v2/rubric-tensometer.md` gone.
 - `/and-facets` command body no longer emits tensometer; CLAUDE.md URI-026 line no longer references tens rubric.
-- `.claude/commands/and-{project,series,substance,cast,write,judge-book,wrap}.md` exist and parse.
+- `.claude/commands/and-{project,series,substance,cast,write,review,judge-book,wrap}.md` exist and parse.
+- `/and-review` parses all router subcommands (chunk / contract / signature / bones / facets / prose / cast / consistency / tree / feedback); reports persist to `staff/reviews/`.
 - No active `.claude/commands/and-season.md` or `.claude/commands/and-protolines*.md`.
 - `/and-substance` command body contains NO bone-writing logic (chunker only — produces chunks + contracts, persists to memory).
 - `/and-write` command body contains NO chunk authoring (reads beat chunks as input; produces bones only).
