@@ -8,6 +8,13 @@ All ambient state modifier cards. Maintained by margit — update on every card 
 
 planetos:
   - cond-clinical-self-erasure
+  - cond-dragon-gate-arrival-and-witch-label [project: dragon-gate-foreclosure — warehouse only]
+  - cond-fauna-control-rules-dragon-gate-addendum [project: dragon-gate-foreclosure — warehouse only]
+  - cond-kl-authority-dragon-gate-129ac [project: dragon-gate-foreclosure — warehouse only]
+  - cond-patron-dialect-operational-model [project: dragon-gate-foreclosure — warehouse only]
+  - cond-reincarnation-mechanics-dragon-gate [project: dragon-gate-foreclosure — warehouse only]
+  - cond-series-tone-dragon-gate [project: dragon-gate-foreclosure — warehouse only]
+  - cond-watch-persons-risk-sweep [project: dragon-gate-foreclosure — warehouse only]
   - cond-crownlands-superstition-frame-125ac
   - cond-fauna-control-rules
   - cond-fauna-control-rules-125ac-addendum

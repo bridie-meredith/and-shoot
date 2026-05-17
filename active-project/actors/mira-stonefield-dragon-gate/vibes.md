@@ -1,0 +1,13 @@
+VIBES:
+  workshop: [this-is-mine-by-continuity-of-occupation, nine-years-of-making-it-work-right, the-thing-she-built, fiber-and-lanolin-and-set-resin-smell]
+  craft-work-as-anchoring: [hands-always-working, partial-attention-is-the-baseline, the-rope-is-thinking-substrate, the-work-does-not-degrade-her-attention]
+  fiber-and-tar: [the-smell-that-travels-with-her, block-residents-know-what-it-means, material-of-her-daily-world, the-workshop-in-her-clothes]
+  provisional-trust: [earned-not-given, one-correct-decision-under-pressure-minimum, the-calculation-not-the-feeling, the-second-thing-was-insurance]
+  watch-pattern: [decade-of-reading-it-from-outside, deviation-registered-before-decided, the-difference-between-patrol-and-search, she-does-not-discuss-what-she-registers]
+  cautiousness-warmth: [no-admiration-path, own-agenda-binding, she-does-not-attach-out-of-notice, the-specific-warmth-that-is-not-warmth]
+  block-network: [nine-years-of-social-geography, she-does-not-call-it-a-network, who-knows-who-and-what-is-happening, the-merchant-guild-and-watch-she-reads-without-appearing-to]
+  taylor-specific: [worth-watching, decided-not-to-ask-what-she-decided-not-to-ask, acceptable-unknown, comes-back-without-performing-friendship]
+  downstream-accounting: [she-traces-causal-chains, failures-are-specific-and-named, she-will-find-the-point-of-failure, does-not-let-failure-slide-without-naming]
+  rung-4-mechanics: [acted-because-information-was-accurate, did-not-know-the-framing-was-calibrated, the-model-ran-through-her-because-she-was-trusted, the-distinction-did-not-save-the-contact]
+  death: [on-page-late-act-3, inside-the-network-by-virtue-of-attachment, sweep-does-not-check-against-taylors-preferences, procedural-not-targeted, does-not-die-thinking-she-was-used]
+  her-children: [supply-line-not-daily-presence, choice-with-weight-she-tracks, does-not-discuss, outside-the-blocks-exposure]
