@@ -58,3 +58,16 @@ Screen-writer's Bundle 2 advocacy not sustained.
 
 ### Carry-forward flags
 Bundle 3 irony-closure flag (hardened from Batch C, now DEMAND): chronicler entry must name the true-believer's counterfactual explicitly; this flag has survived two sessions unaddressed by Bundle 2 proposals and is now non-negotiable for any closing-pages structure. Chronicler placement before the cost-bearer's death is the required sequence; any reversal of that order collapses the irony gap.
+
+---
+
+## Session: Batch E
+
+### Bundle verdicts
+- Bundle 1: REVISE — chronicler-throughout forecloses Taylor's road-to-hell reasoning; interiority is only accessible as reported thought; the piece cannot sustain irony at sentence level because the gap between intent and outcome requires Taylor's perspective to be legible, not mediated; irony-closure DEMAND cannot be satisfied from inside institutional narration.
+- Bundle 2: ACCEPT — close-third body makes protagonist-as-antagonist recognition available; cold coda is the structural slot where the chronicler names the counterfactual explicitly; two-register is a prose execution problem but the irony-closure architecture is sound; this is the only bundle where the DEMAND is satisfiable.
+- Bundle 3: REVISE — multi-POV distributes the irony; tragic-elegiac announces its register rather than sustaining it at sentence level; condemned-via-comparison names the theme out loud, which is what the piece should be doing silently; fatigue trigger.
+
+### Triad outcome
+Bundle 2: ACCEPT (3-of-3 — pedant + dark-fantasy + snob). Bundles 1 and 3: REVISE (3-of-3 respectively). Triad pick: Bundle 2.
+Screen-writer's Bundle 1 advocacy not sustained.

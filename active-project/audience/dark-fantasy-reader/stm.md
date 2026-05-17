@@ -57,3 +57,16 @@ Screen-writer's Bundle 2 advocacy not sustained.
 
 ### Carry-forward flags
 Bundle 3 cost-legibility flag (hardened from Batch C): causal chain from Taylor's kill to wrong-rider outcome must be unambiguous; any prose reading that allows "bad luck" or "faction chaos" as the operative cause is a cost-evasion failure.
+
+---
+
+## Session: Batch E
+
+### Bundle verdicts
+- Bundle 1: REVISE — ironic-cold register from page one cannot accumulate dread before it spends it; a close at the same temperature as the open has not earned its cold landing; cost-bearer's death in ironic-cold was always cold — the reader has no prior warmth to lose; carry-forward cold-landing requirement is formally met but substantively evaded.
+- Bundle 2: ACCEPT — grim-literary body builds weight; cold coda delivers the temperature drop; cost-bearer's death in close-third grim body at cold-but-not-pathos register satisfies the carry-forward flag; the reader feels the difference between body and close.
+- Bundle 3: REVISE — tragic-elegiac is the pathos register; screen-writer flags direct conflict with cold-landing carry-forward; condemned-via-structural-comparison is catharsis-before-weight, not earned bleakness; flag triggered; rejected.
+
+### Triad outcome
+Bundle 2: ACCEPT (2-of-3 — pedant + dark-fantasy). Bundles 1 and 3: REVISE (3-of-3 and 3-of-3 respectively). Triad pick: Bundle 2.
+Screen-writer's Bundle 1 advocacy not sustained.

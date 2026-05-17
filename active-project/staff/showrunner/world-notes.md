@@ -58,5 +58,22 @@
 - Plot: The patron-collision lands MID-STRUCTURE when the unbonding's consequences diverge from what the patron expected — BEFORE the climax. The climax belongs to Taylor's recognition, not the patron's betrayal. [1b]
 - Plot: The opposite-number must be VISIBLE on-page enough that the chronicler's later naming of their counterfactual lands. The reader must have met them; retrospective mirroring is structural intent but cannot be ONLY retrospective. [1b carry-forward]
 
+## Cost / end-state / closing (resolved 1b Batch D — Bundle 3)
+- Plot: Cost-bearer = a MINOR TARGARYEN CHILD, a collateral cousin (not a claimant), whom the opposite-number was specifically protecting. Taylor encounters the child through her patron and undertakes informal protection as a gesture of faction solidarity — care-adjacent rather than direct charge. [1b]
+- Plot: End-state valence = BAD-PLACE. Taylor is alive. The child is dead. The dragon is with the worst possible rider. The Dance is beginning. Worst-outcome reading; unambiguous. [1b]
+- Plot: Closing image = TWO BEATS in fixed order. (1) Chronicler entry first, explicitly naming the opposite-number's counterfactual. (2) Cost-bearer's (cousin's) death as the final image. The reader exits on the death, knowing what the counterfactual would have been. [1b]
+- Behavior (binding): The cost-bearer's death must be rendered as consequence-confirmation, NOT as pathos-scene. Death lands cold; the chronicler-frame did the moral work. [1b carry-forward]
+- Lore (binding): Taylor's knowledge of the opposite-number's protection-relationship with the cousin requires an established narrative path. The PATRON is the bridge — Black-faction Rhaenyra-adjacent patron brings Taylor into proximity with the opposite-number (via the amplification-theory and faction-adjacency), and Taylor learns of the cousin via that path. Cast selection in 1c must preserve this access chain. [1b carry-forward — pedant]
+- Plot: Closing-image ordering chronicler-before-cost-bearer is HARD requirement. Reversal or omission of explicit counterfactual = automatic revise. [1b carry-forward — snob, hardened across C+D]
+
+## Presentational layer (resolved 1b Batch E — Bundle 2)
+- Behavior: POV = close-third Taylor EXCLUSIVE in the body. No multi-POV; no frame-narration in body. [1b]
+- Behavior: Chronicler appears ONLY as the closing coda — a hard register-break in different voice (and potentially different type-treatment). The register-break IS the irony mechanism: body = Taylor's interpretation; coda = history's verdict. [1b]
+- Behavior: Tone register = TWO-REGISTER. Body grim-literary, in Taylor's voice — compressed, tactical, emotionally honest but not sentimental. Coda cold-register; chronicler delivers counterfactual and cousin's death cold. [1b]
+- Behavior: Audience cohort = Worm-literate primary, ASOIAF-literate secondary. Taylor's interior carries Worm-readers without exposition. ASOIAF foreknowledge runs the dramatic-irony engine. Story is self-contained enough to work for neither, but bluntest for both-literate readers. [1b]
+- Plot: Supporting cast composition = ONE named canon figure as the Black-faction Rhaenyra-adjacent patron (specific name 1c). Opposite-number = invented OC in a named Targaryen household — a younger rider, documented-but-non-chronicled, to free the doppelganger-mirror from canon constraint. Cost-bearer cousin = invented OC in a canon household. Other canon ASOIAF figures may appear as background/atmosphere only. NO Worm characters carry over. [1b]
+- Behavior: Moral framing = IRONIZED through structure, not voice. Close-third Taylor does NOT editorialize. Irony emerges from the gap between her reasoning (rendered fully and fairly) and the outcomes the reader can see coming. The chronicler coda's explicit counterfactual-naming is the moment the irony becomes explicit. Narrative does NOT condemn in authorial voice and does NOT endorse her reasoning. [1b]
+- Behavior (binding): The two-register architecture must EARN ITSELF. The coda register-break is NOT a tonal shift — it IS the chronicler voice arriving with the counterfactual the body could not yet name. Disproportionate structural load on the coda; body must be strong, coda must be precise. [1b carry-forward — audience hardened + dramatist preserved]
+
 ## Advisory pin (from taste-judge)
 - False-ally's betrayal must land as a mid-structure compounding factor, not as the climactic recognition. Climax belongs to the protagonist-as-antagonist beat. [taste-judge Phase 1.5, advisory]

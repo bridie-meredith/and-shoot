@@ -58,3 +58,16 @@ Screen-writer's Bundle 2 advocacy not sustained.
 
 ### Carry-forward flags
 Bundle 3 political-access flag: Taylor's knowledge of the true-believer's protection relationship must be routed through the opposite-number's publicly observable action, not through Taylor's own political access; any plan that requires Taylor to have insider knowledge of Targaryen protection politics is a lore-leak.
+
+---
+
+## Session: Batch E
+
+### Bundle verdicts
+- Bundle 1: REVISE — maester-as-grammatical-voice from page one refracts Taylor's interiority through institutional narration; her tactical paranoia and cognitive register — the specific things that make Worm-Taylor recognizable — can only enter as reported thought; voice legibility fails.
+- Bundle 2: ACCEPT — close-third Taylor in the body is the correct configuration; Taylor's interiority is present and unmediated; two-register architecture is a prose question, not a lore question; no carry-forward flags triggered.
+- Bundle 3: REVISE — multi-POV that includes opposite-number's perspective puts the protection-relationship information inside the reader's head via a route Taylor has no access to; structural lore-leak configuration; political-access carry-forward flag triggered.
+
+### Triad outcome
+Bundle 2: ACCEPT (2-of-3 — pedant + dark-fantasy). Bundles 1 and 3: REVISE (3-of-3 and 3-of-3 respectively). Triad pick: Bundle 2.
+Screen-writer's Bundle 1 advocacy not sustained.
