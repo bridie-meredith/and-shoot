@@ -1,4 +1,1 @@
 STM:
-- s01e02 close: active_location=loc-flea-bottom-base; operational_radius advanced to 400m (first physiological cost confirmed); vigil-candle extinguished (tanner household; mourning-frame closed); two-room-dwelling latch broken (eviction scene; permanent)
-- Location seam flagged: Taylor's return to base after @50 has no explicit proto-line anchor — implied by @77 waking; carried as open seam for editor
-- s01e03 facet-authoring (state-updates-env R1): 27 entries written; 5 OC prop slugs introduced (oc-record-book-market-junction, oc-record-book-apothecary, oc-coin, oc-maester-pen, oc-elder-account); operational_radius advanced 400m->600m at @125; studio.active_location transit fired @148/@161; winter-onset weather set; lord's-man account sealed and dispatched at @139/@140 (village-claim axis closed externally)

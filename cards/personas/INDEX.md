@@ -45,21 +45,29 @@ planetos:
   - edric-cray
   - lem-lemoncloak
   - mira-stonefield
+  - mira-stonefield-dragon-gate
   - mira-stonefield-jaehaerys
+  - oc-black-adjacent-contact
+  - oc-block-fixture
   - oc-broken-maester
   - oc-castellan-harrenhal
   - oc-child-peer
+  - oc-contacts-business-partner
   - oc-craftsman-father
   - oc-craftsman-mother
   - oc-dock-runner
   - oc-girl-from-hamlet
   - oc-lords-steward
+  - oc-persons-risk-officer
   - oc-plumms-man
+  - oc-rung3-steward
   - oc-tallow-chandler
   - oc-tanner-elder
   - oc-tanner-father
   - oc-tanner-mother
   - oc-tributary-village-newcomer
+  - oc-ward-septon-dragon-gate
+  - oc-watch-captain-dragon-gate
   - otto-hightower
   - peasant-woman-forest
   - plumms-man
@@ -70,6 +78,7 @@ planetos:
   - ser-harwick-plumm
   - septon-dying-protector
   - septon-rowan
+  - taylor-hebert-dragon-gate
   - taylor-hebert-flea-bottom
   - taylor-hebert-jaehaerys
   - taylor-hebert-westeros
@@ -83,6 +92,15 @@ planetos:
 
 full:
   - beric-dondarrion
+  - mira-stonefield-dragon-gate
+  - oc-black-adjacent-contact
+  - oc-block-fixture
+  - oc-contacts-business-partner
+  - oc-persons-risk-officer
+  - oc-rung3-steward
+  - oc-ward-septon-dragon-gate
+  - oc-watch-captain-dragon-gate
+  - taylor-hebert-dragon-gate
   - census-officer
   - clerk
   - oc-census-officer
@@ -156,7 +174,7 @@ scant:
 
 ## by_trope
 
-young-depressed-hero: [taylor-hebert, taylor-hebert-westeros, taylor-hebert-jaehaerys, taylor-hebert-flea-bottom]
+young-depressed-hero: [taylor-hebert, taylor-hebert-westeros, taylor-hebert-jaehaerys, taylor-hebert-flea-bottom, taylor-hebert-dragon-gate]
 master-manipulator: [lisa-wilbourn, thomas-calvert]
 feral-pragmatist: [rachel-lindt]
 sociopathic-charmer: [jack-slash, alec-vasil]
@@ -168,18 +186,22 @@ ruthless-operator: [sophia-hess, colin-wallis]
 broken-by-circumstance: [elle-labyrinth, marissa-newland]
 noise-and-terror: [shatterbird, night-and-fog]
 political-power: [thomas-calvert]
-westerosi-local: [peasant-woman-forest, westerosi-traveling-maester, mira-stonefield, mira-stonefield-jaehaerys, edric-cray, rymer-hedge, ser-aemon-bracken, ser-edwyn-celtigar, septon-rowan, oc-castellan-harrenhal, septon-dying-protector, oc-craftsman-mother, oc-craftsman-father, oc-tanner-mother, oc-tanner-father, oc-tanner-elder, oc-dock-runner, oc-tallow-chandler, oc-broken-maester]
+westerosi-local: [peasant-woman-forest, westerosi-traveling-maester, mira-stonefield, mira-stonefield-jaehaerys, mira-stonefield-dragon-gate, edric-cray, rymer-hedge, ser-aemon-bracken, ser-edwyn-celtigar, septon-rowan, oc-castellan-harrenhal, septon-dying-protector, oc-craftsman-mother, oc-craftsman-father, oc-tanner-mother, oc-tanner-father, oc-tanner-elder, oc-dock-runner, oc-tallow-chandler, oc-broken-maester, oc-watch-captain-dragon-gate, oc-ward-septon-dragon-gate, oc-block-fixture, oc-rung3-steward]
 administrative-functionary: [census-officer, oc-census-officer, clerk, plumms-man, oc-plumms-man]
 riverlands-background: [peasant-woman-forest, oc-girl-from-hamlet, oc-tributary-village-newcomer]
 brutal-pragmatist: [lem-lemoncloak]
 dying-cause: [beric-dondarrion]
 faith-recovered: [thoros-of-myr]
-corrupt-official: [ser-harwick-plumm, oc-castellan-harrenhal]
+corrupt-official: [ser-harwick-plumm, oc-castellan-harrenhal, oc-watch-captain-dragon-gate, oc-rung3-steward]
 targaryen-era: [rhaenyra-targaryen, viserys-i-targaryen, ser-edwyn-celtigar, aegon-ii-targaryen, aemond-targaryen, otto-hightower]
 riverlands-power: [ser-aemon-bracken]
 faith-operator: [septon-rowan]
 hedge-knight: [rymer-hedge]
-institutional-antagonist: [oc-castellan-harrenhal, oc-lords-steward, otto-hightower]
+institutional-antagonist: [oc-castellan-harrenhal, oc-lords-steward, otto-hightower, oc-watch-captain-dragon-gate, oc-persons-risk-officer]
+foreclosure-mechanism: [oc-watch-captain-dragon-gate, oc-rung3-steward, oc-persons-risk-officer]
+foreign-merchant: [oc-black-adjacent-contact, oc-contacts-business-partner]
+ambient-witness: [oc-block-fixture]
+faith-operator-kl: [oc-ward-septon-dragon-gate]
 opening-loss: [septon-dying-protector]
 riverlands-child: [oc-child-peer]
 smallfolk-parent: [oc-craftsman-mother, oc-craftsman-father, oc-tanner-mother, oc-tanner-father]
@@ -233,3 +255,12 @@ OC slots for margit to construct at project activation when a generic role is se
 - aegon-ii-targaryen (canon HOTD; green faction figurehead antagonist; scant; authored flea-bottom-dance provisioning 2026-05-10)
 - otto-hightower (canon HOTD; Hightower intelligence architect; scant; authored flea-bottom-dance provisioning 2026-05-10)
 - aemond-targaryen (canon HOTD; green faction coercive instrument, Vhagar rider; scant; authored flea-bottom-dance provisioning 2026-05-10)
+- taylor-hebert-dragon-gate (protagonist dragon-gate-foreclosure variant; full; ~19yo, 125–129 AC KL, block-level range hard cap, patron-dialect foreclosure arc; variant-of: taylor-hebert-flea-bottom; authored dragon-gate-foreclosure provisioning 2026-05-17)
+- mira-stonefield-dragon-gate (dragon-gate-foreclosure variant of mira-stonefield; KL craft-worker, rope-braider, Dragon Gate block resident, Taylor's genuine attachment; full; variant-of: mira-stonefield; authored dragon-gate-foreclosure provisioning 2026-05-17)
+- oc-watch-captain-dragon-gate (oc-corrupt-official slot / institutional-calculation; Watch captain, Dragon Gate precinct; signs release and signs death paperwork; opaque throughout; full; authored dragon-gate-foreclosure provisioning 2026-05-17)
+- oc-black-adjacent-contact (oc-wildcard slot / foreign-merchant; Daveth; Rung-6 victim; named irreversible cost; no interiority; full; authored dragon-gate-foreclosure provisioning 2026-05-17)
+- oc-persons-risk-officer (oc-old-hardass slot / institutional-functionary; Ser Rowan Vane; runs M27-28 persons-risk sweep; immediate-cause actor; full; authored dragon-gate-foreclosure provisioning 2026-05-17)
+- oc-rung3-steward (institutional-transmission-node; Aldric Fenwick; Rung-3 actor; enforcement-overshoot seed; Act 2 throughline; full; authored dragon-gate-foreclosure provisioning 2026-05-17)
+- oc-ward-septon-dragon-gate (oc-local-expert slot / Faith-institutional; Septon Aldyn; witch-label originator; low-frequency; full; authored dragon-gate-foreclosure provisioning 2026-05-17)
+- oc-block-fixture (ambient-witness slot; Nolla Stave; dockside water-carrier; world-going-on-without-Taylor; disclaims confidant-role; full; authored dragon-gate-foreclosure provisioning 2026-05-17)
+- oc-contacts-business-partner (functional-commercial slot; Corwyn Bane; Rung-4 present / Rung-6 absent; the absence is the cost; full; authored dragon-gate-foreclosure provisioning 2026-05-17)

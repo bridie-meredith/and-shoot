@@ -6,6 +6,7 @@ world: planetos
 origin: authored
 quality: full
 references: [cond-fauna-control-rules]
+# warehouse copy — source: cards/conditions/cond-no-parahuman-infrastructure.card.md
 ---
 
 # No Parahuman Infrastructure — Hard World-Law (Planetos)
@@ -20,33 +21,31 @@ None. This is a world-law card with no ambient sensory expression. Its presence 
 
 ## Duration
 
-Permanent. This rule holds for the full project duration. It cannot be modified within any project using this card. Any future project fork that introduces parahuman infrastructure must be a separate project with a revised constraint set.
+Permanent. This rule holds for the full project duration. It cannot be modified within any project using this card.
 
 ## The Prohibitions
 
-**No Shards in Planetos.** No Shard entity is present on Planetos. Taylor's power is not an active Shard-connection; it is a retained cognitive restructuring — the multithreaded parallel awareness her trigger event produced has persisted into the new body, but the entity that originally produced and buffered it is not reachable from this world. She cannot be re-contacted, re-powered, re-triggered, or de-powered by any Shard action. There is no infrastructure to be acted on.
+**No Shards in Planetos.** Taylor's power is not an active Shard-connection; it is a retained cognitive restructuring. She cannot be re-contacted, re-powered, re-triggered, or de-powered by any Shard action. There is no infrastructure to be acted on.
 
-**No Shard buffering.** The physical cost curve defined in `cond-fauna-control-rules` is the direct consequence of missing Shard buffering. The cost curve is permanent and structural, not a temporary debuff that heals or upgrades. No in-world event, magical system, or character intervention can remove or reduce the cost curve. If a scene implies Taylor's power use is becoming easier over time (beyond normal operational skill), that is a fence violation.
+**No Shard buffering.** The physical cost curve defined in `cond-fauna-control-rules` and `cond-fauna-control-rules-dragon-gate-addendum` is the direct consequence of missing Shard buffering. The cost curve is permanent and structural. No in-world event can remove or reduce it.
 
-**No trigger events.** No character in this world can trigger. Trigger events require Shard contact. Shard contact is not possible on Planetos. Taylor cannot cause trigger events in Westerosi characters, even by deliberate trauma application. This is not because she lacks the capacity to cause trauma; it is because the receiving infrastructure does not exist.
+**No trigger events.** No character in this world can trigger. Trigger events require Shard contact. Shard contact is not possible on Planetos. Taylor cannot cause trigger events in Westerosi characters.
 
-**No other capes.** No other parahuman exists or will exist in Planetos during this project. Characters with unusual capabilities — a warg, a glass-candle seer, a shadowbinder, a faceless man — are native Planetos abilities operating on Planetos-native mechanisms. They are not para-human. They do not interact with Taylor's ability in any mechanistic way. They are not analogous to capes and must not be written as if they are.
+**No other capes.** No other parahuman exists or will exist in Planetos during this project. Wargs, glass-candle seers, shadowbinders, faceless men — native Planetos abilities operating on native mechanisms. Not parahuman. Do not interact mechanistically with Taylor's ability.
 
-**No Cauldron, no PRT, no cape registry.** No institutional apparatus from Earth-Bet is present or reachable. Taylor cannot contact former teammates. She cannot access Cauldron resources. She cannot draw on PRT protocols except as internal knowledge she carries. The institutional context for her prior life is entirely internal to her and inaccessible to anyone in this world.
+**No Cauldron, no PRT, no cape registry.** No institutional apparatus from Earth-Bet is present or reachable.
 
-**No return channel.** There is no mechanism, magical or otherwise, in Planetos that could return Taylor to Earth-Bet. This is a separate constraint from the reincarnation rules card; here it is specifically the absence of any Shard-mediated transit pathway. If a scene implies a return path exists or is being sought, that is a fence violation.
+**No return channel.** There is no mechanism in Planetos that could return Taylor to Earth-Bet.
 
 ## What This Card Does Not Prohibit
 
-- Taylor using her fauna-control within the species scope and cost curve defined by `cond-fauna-control-rules`.
-- Taylor carrying internal knowledge of Worm-universe events, cape powers, Shard mechanics, and Earth-Bet geography. This knowledge is hers; it simply has no external referent in this world.
+- Taylor using her fauna-control within the species scope and cost curve defined in `cond-fauna-control-rules` and `cond-fauna-control-rules-dragon-gate-addendum`.
+- Taylor carrying internal knowledge of Worm-universe events, cape powers, and Earth-Bet geography.
 - Planetos-native magic systems operating on their own rules.
-- Taylor recognizing patterns in Planetos magic that remind her of parahuman mechanics. Recognition is not equivalence.
+- Taylor recognizing patterns in Planetos magic that remind her of parahuman mechanics (recognition is not equivalence).
 
 ## Interaction Notes
 
-**With `cond-fauna-control-rules`:** The cost curve on the fauna-control card is the operative expression of the no-Shard-buffering rule. Both cards should be loaded together for any scene involving Taylor's power use.
+**With `cond-fauna-control-rules-dragon-gate-addendum`:** The Dragon Gate range cap (~100–150m, non-expanding) is the operative expression of the no-Shard-buffering rule in this project. Both cards should be loaded together for any scene involving Taylor's power use.
 
-**With the project persona card:** The persona card's Hard Fences carry overlapping content ("Power mechanics (binding): Fauna control only"). This card provides the world-law framing that the persona card's fence implies but does not state: the reason fauna-control is the only power is that no infrastructure for other powers exists.
-
-**For auditor use:** Any scene implying power creep (Taylor's abilities expanding beyond the defined cost curve without consequence), the appearance of a second cape, or a Shard-mediated event should be flagged against this card.
+**For auditor use:** Power creep (abilities expanding beyond the defined cost curve without consequence), appearance of a second cape, or a Shard-mediated event should be flagged against this card.

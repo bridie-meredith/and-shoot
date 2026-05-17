@@ -31,7 +31,7 @@ project activation → season start → (episode start → shoot)* → bulk and-
 | coach | Prompt translator. Bullet → impersonator prompt. | `staff/coach/` |
 | impersonator | Character primitive. One per active actor per episode. | spawned per-actor |
 | studio | Set and environment manager. Records all state changes. | `staff/studio/` |
-| audience | Critic config. 3 persona cards. Reviews lines and plans. | `active-project/audience/` |
+| audience | Critic config. Default 3 persona cards for plan and line review (active-project/audience/). Override modes: facet-adversarial review at `/and-facets` Phase 5b (per-reviewer verdicts, 3-of-3 accept) and taste-judge at `/and-project` Phase 1.5 (single-card from `staff/audience/taste-judge/`, returns menu picks). | `active-project/audience/` + `staff/audience/taste-judge/` |
 | dramatist | Structural critic. Plans and wrap review. | stateless |
 | auditor | Fault-finder. Constraint/state/drift audit. Returns report. | `staff/auditor/` |
 | fixer | Targeted correction. Meets auditor criteria with minimum change. | `staff/fixer/` |
@@ -55,7 +55,7 @@ staff/            — production staff: agent homes + audience persona library
   auditor/        — agent home
   fixer/          — agent home
   editor/         — agent home
-  audience/       — audience persona library (18 personas; INDEX.md; 3 selected per project)
+  audience/       — audience persona library (19 personas; INDEX.md; 3 selected per project for plan-review duty; `taste-judge/` is a single-card library entry reserved for `/and-project` Phase 1.5 menu picks and never copied into active-project)
   orchestrator-critic/ — run-judge card (`card.md`); library-only standard for `/and-season` success at Phase 6
 
 cards/            — story-facing card library (on-stage characters, locations, props, conditions, behaviors)

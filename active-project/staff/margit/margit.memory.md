@@ -1,170 +1,108 @@
-# Margit Working Memory — cards authored, indexed, and promoted this project.
+# Margit Working Memory — dragon-gate-foreclosure provisioning (2026-05-17)
 
----
+## Provisioning batch: 1c — dragon-gate-foreclosure
 
-## flea-bottom-dance provisioning dispatch — 2026-05-10
+### Persona cards authored
 
-### PERSONAS AUTHORED (NEW, FULL)
+**Variant cards (2):**
 
-| slug | path | action |
-|---|---|---|
-| taylor-hebert-flea-bottom | cards/personas/taylor-hebert-flea-bottom.card.md | AUTHORED — variant of taylor-hebert; 125 AC Crownlands/KL; composes Vibe Seeds from jaehaerys + westeros variants; full |
-| oc-tanner-mother | cards/personas/oc-tanner-mother.card.md | AUTHORED — Tya-origin grief axis; Crownlands tanner wife early 40s; full |
-| oc-tanner-father | cards/personas/oc-tanner-father.card.md | AUTHORED — Tya-origin suspicion/withdrawal axis; Crownlands tanner mid 40s; full |
-| oc-tanner-elder | cards/personas/oc-tanner-elder.card.md | AUTHORED — Flea Bottom labor broker, conditional embedder; full; drift-to-warmth is flagged failure mode |
-| oc-dock-runner | cards/personas/oc-dock-runner.card.md | AUTHORED — Flea Bottom native, route knowledge, early trust test; full |
-| oc-tallow-chandler | cards/personas/oc-tallow-chandler.card.md | AUTHORED — unknowing glass-candle salvage source; full; unknowing is structural constraint |
-| oc-broken-maester | cards/personas/oc-broken-maester.card.md | AUTHORED — chain-stripped maester above eastern-quarter apothecary; brake-not-ally; sole research witness; full |
+- `taylor-hebert-dragon-gate` — library: `cards/personas/taylor-hebert-dragon-gate.card.md`; project: `active-project/actors/taylor-hebert-dragon-gate/card.md`; variant-of: `taylor-hebert-flea-bottom`; range re-spec to ~100–150m hard constant (OQ-1), territory re-spec to Dragon Gate mixed-class gate district, patron-dialect foreclosure arc, no glass-candle research, Khepri sealed full timeline; full quality, tier: lead
 
-### PERSONAS AUTHORED (NEW, SCANT)
+- `mira-stonefield-dragon-gate` — library: `cards/personas/mira-stonefield-dragon-gate.card.md`; project: `active-project/actors/mira-stonefield-dragon-gate/card.md`; variant-of: `mira-stonefield`; backstory re-spec to KL craft-worker/rope-braider, Dragon Gate block resident; voice mechanics and hard fences from base card carry; Rung-4 patron-channel anchor; dies in M27-28 sweep ON-PAGE; full quality, tier: supporting
 
-| slug | path | action |
-|---|---|---|
-| aegon-ii-targaryen | cards/personas/aegon-ii-targaryen.card.md | AUTHORED — green faction figurehead antagonist; Sunfyre rider; scant |
-| otto-hightower | cards/personas/otto-hightower.card.md | AUTHORED — Hightower intelligence architect; incorrect profiler; scant |
-| aemond-targaryen | cards/personas/aemond-targaryen.card.md | AUTHORED — green faction coercive instrument; Vhagar rider; scant |
+**OC cards (7):**
 
-### PERSONAS AUDITED
+- `oc-watch-captain-dragon-gate` — library: `cards/personas/oc-watch-captain-dragon-gate.card.md`; project: `active-project/actors/oc-watch-captain-dragon-gate/card.md`; fresh OC; Watch captain, Dragon Gate precinct; oc-corrupt-official archetype (structural-patronage, not personal-extortion); signs release at arrival, signs death paperwork at close; no interiority; full quality, tier: supporting
 
-| slug | path | action |
-|---|---|---|
-| rhaenyra-targaryen | cards/personas/rhaenyra-targaryen.card.md | AUDITED — existing library card; posture confirmed ambiguous (patronage offer in Action Menu); added flea-bottom-dance role addendum at end of card clarifying: antagonist-instrument/witness-figure only, no ally, no romantic, patronage offer prohibited in this project |
+- `oc-black-adjacent-contact` — library: `cards/personas/oc-black-adjacent-contact.card.md`; project: `active-project/actors/oc-black-adjacent-contact/card.md`; fresh OC; Daveth; foreign-trade merchant, Braavosi-adjacent; Rung-6 victim, named irreversible cost; no interiority; last hours external-only; full quality, tier: supporting
 
-### PERSONAS INHERITED DIRECT
+- `oc-persons-risk-officer` — library: `cards/personas/oc-persons-risk-officer.card.md`; project: `active-project/actors/oc-persons-risk-officer/card.md`; fresh OC; Ser Rowan Vane; runs M27-28 persons-risk sweep; oc-old-hardass/institutional-functionary; one visible calculation moment; full quality, tier: supporting
 
-| slug | path | action |
-|---|---|---|
-| viserys-i-targaryen | cards/personas/viserys-i-targaryen.card.md | INHERIT DIRECT — scant; as-is; background figure |
+- `oc-rung3-steward` — library: `cards/personas/oc-rung3-steward.card.md`; project: `active-project/actors/oc-rung3-steward/card.md`; fresh OC; Aldric Fenwick; lord's steward, dock-adjacent labor district; Rung-3 enforcement-overshoot seed; Act 2 throughline; one visible calculation; full quality, tier: supporting
 
-### LOCATIONS AUTHORED (NEW, FULL)
+- `oc-ward-septon-dragon-gate` — library: `cards/personas/oc-ward-septon-dragon-gate.card.md`; project: `active-project/actors/oc-ward-septon-dragon-gate/card.md`; fresh OC; Septon Aldyn; Dragon Gate ward septon; witch-label originator at arrival; low-frequency (3 appearances); full quality, tier: minor
 
-| slug | path | action |
-|---|---|---|
-| loc-tanner-village | cards/locations/loc-tanner-village.card.md | AUTHORED — Crownlands village, day's walk from KL, ongoing cost surface; full |
-| loc-flea-bottom | cards/locations/loc-flea-bottom.card.md | AUTHORED — district-level card, operational anchor s1 mid through s3; full |
-| loc-flea-bottom-base | cards/locations/loc-flea-bottom-base.card.md | AUTHORED — Taylor's specific lodging, ~250m from eastern-quarter apothecary, within 300m radius; full |
-| loc-eastern-quarter-apothecary | cards/locations/loc-eastern-quarter-apothecary.card.md | AUTHORED — broken maester's residence; through-wall observation points enumerated; range confirmed within 300m of flea-bottom-base; full |
+- `oc-block-fixture` — library: `cards/personas/oc-block-fixture.card.md`; project: `active-project/actors/oc-block-fixture/card.md`; fresh OC; Nolla Stave; dockside water-carrier; world-going-on-without-Taylor; ambient-witness function; explicitly disclaims confidant-role; survives M27-28 sweep (structurally required); full quality, tier: minor
 
-### LOCATIONS AUTHORED (NEW, SCANT)
+- `oc-contacts-business-partner` — library: `cards/personas/oc-contacts-business-partner.card.md`; project: `active-project/actors/oc-contacts-business-partner/card.md`; fresh OC; Corwyn Bane; guild-registered domestic merchant, Daveth's partner; Rung-4 present with concrete mutual dependency / Rung-6 absent; absence is the cost; full quality, tier: minor
 
-| slug | path | action |
-|---|---|---|
-| loc-red-keep-outer-ring | cards/locations/loc-red-keep-outer-ring.card.md | AUTHORED — range-reachable late s2/early s3; scant |
+### Location cards authored (5, all new — no existing Dragon Gate cards in library)
 
-### INDEX UPDATES
+- `loc-dragon-gate-guardhouse` — library: `cards/locations/loc-dragon-gate-guardhouse.card.md`; project: `active-project/warehouse/loc-dragon-gate-guardhouse.card.md`; CRITICAL — book's structural frame location (first and last scene); isolation cell; guardhouse sensory vocabulary is the book's threshold register; full quality
 
-- cards/personas/INDEX.md — updated: added all new personas to by_world (planetos), by_quality (full/scant), by_trope (new tropes: grief-axis, suspicion-withdrawal, conditional-embedder, trust-test, unknowing-structural, brake-not-ally, targaryen-antagonist, hightower-intelligence, witness-figure); added all to original_characters log
-- cards/locations/INDEX.md — updated: added all new location slugs to by_world (planetos) and by_quality (full/scant)
+- `loc-dragon-gate-block` — library: `cards/locations/loc-dragon-gate-block.card.md`; project: NOT separately copied (location cards go to warehouse only); full quality; PRIMARY operational territory for the entire book; gate arch, market alley system, ward sept, dockyard-road edge
 
-### PROVISIONING — ACTIVE-PROJECT ACTORS
+- `loc-miras-workshop` — library: `cards/locations/loc-miras-workshop.card.md`; full quality; rope-braiding workshop, inner alley, Dragon Gate block; Mira's place of business; primary Taylor-Mira relationship site
 
-All persona cards provisioned to active-project/actors/<slug>/. Each actor directory contains: card.md (working copy), ltm.md (initial activation entry), stm.md (story-open state), state.md (initial state snapshot), vibes.md (stub only — orchestrator populates).
+- `loc-black-adjacent-contact-premises` — library: `cards/locations/loc-black-adjacent-contact-premises.card.md`; full quality; side-courtyard counting-house, Dragon Gate block; Daveth's operation; secondary courtyard access = Rung-6 persons-risk indicator
 
-| actor slug | dir |
-|---|---|
-| taylor-hebert-flea-bottom | active-project/actors/taylor-hebert-flea-bottom/ |
-| oc-tanner-mother | active-project/actors/oc-tanner-mother/ |
-| oc-tanner-father | active-project/actors/oc-tanner-father/ |
-| oc-tanner-elder | active-project/actors/oc-tanner-elder/ |
-| oc-dock-runner | active-project/actors/oc-dock-runner/ |
-| oc-tallow-chandler | active-project/actors/oc-tallow-chandler/ |
-| oc-broken-maester | active-project/actors/oc-broken-maester/ |
-| rhaenyra-targaryen | active-project/actors/rhaenyra-targaryen/ |
-| aegon-ii-targaryen | active-project/actors/aegon-ii-targaryen/ |
-| otto-hightower | active-project/actors/otto-hightower/ |
-| aemond-targaryen | active-project/actors/aemond-targaryen/ |
-| viserys-i-targaryen | active-project/actors/viserys-i-targaryen/ |
+- `loc-dragon-gate-market-alley` — library: `cards/locations/loc-dragon-gate-market-alley.card.md`; full quality; inner alley, Dragon Gate block; Rung-1 and Rung-2 location; ambient block-life geography
 
-### PROVISIONING — ACTIVE-PROJECT WAREHOUSE (LOCATIONS)
+NOTE: Location cards authored to library; provisioned to warehouse by copying. See warehouse files below.
 
-| slug | warehouse path |
-|---|---|
-| loc-tanner-village | active-project/warehouse/loc-tanner-village.card.md |
-| loc-flea-bottom | active-project/warehouse/loc-flea-bottom.card.md |
-| loc-flea-bottom-base | active-project/warehouse/loc-flea-bottom-base.card.md |
-| loc-eastern-quarter-apothecary | active-project/warehouse/loc-eastern-quarter-apothecary.card.md |
-| loc-red-keep-outer-ring | active-project/warehouse/loc-red-keep-outer-ring.card.md |
+### Warehouse provisioning
 
-### CARRY-FORWARD CONSTRAINT NOTE
+**Location cards in warehouse:**
+- `active-project/warehouse/loc-dragon-gate-guardhouse.card.md` — copied from library
+- `active-project/warehouse/loc-dragon-gate-block.card.md` — copied from library
+- `active-project/warehouse/loc-miras-workshop.card.md` — copied from library
+- `active-project/warehouse/loc-black-adjacent-contact-premises.card.md` — copied from library
+- `active-project/warehouse/loc-dragon-gate-market-alley.card.md` — copied from library (warehouse copy written at session resumption 2026-05-17; previously recorded as done before Write call executed — now confirmed complete)
 
-The proposed-cast file includes a dramatist carry-forward: at least one s1-or-early-s2 scene where Taylor hears the broken maester (through insect-network, fragment overheard, or direct adjacency) and adjusts her behavior in response, to make the s2 naming-not-heard event read as deterioration rather than first-contact. This is a plan-level constraint for /and-season-plan s01, NOT a cast composition change. Logged here for screen-writer to pick up at s01 planning.
+**Library condition cards copied to warehouse (7):**
+- `active-project/warehouse/cond-shard-behavioral-weight.card.md` — library copy (with dragon-gate interaction note added)
+- `active-project/warehouse/cond-feudal-hierarchy-law.card.md` — library copy (with KL-context note)
+- `active-project/warehouse/cond-smallfolk-political-physics.card.md` — library copy (with Dragon Gate context note; Fairstead-specific references noted as non-operative)
+- `active-project/warehouse/cond-no-parahuman-infrastructure.card.md` — library copy
+- `active-project/warehouse/cond-westerosi-superstition-frame.card.md` — library copy (with KL gate-district register note)
+- `active-project/warehouse/cond-fauna-control-rules.card.md` — library copy (with CRITICAL override note: range superseded by addendum)
+- `active-project/warehouse/cond-reincarnation-mechanics.card.md` — library copy (foundational rules only; Dragon Gate config in addendum)
 
-### DEFERRED
+**New project-scoped condition cards authored to warehouse (7):**
+- `active-project/warehouse/cond-patron-dialect-operational-model.card.md` — THE MECHANICAL SPINE; 6-rung ladder fully specified; model-falsification at Rung 6 interior-only; reader-inference-only constraint for C4; auditor hooks for each rung
+- `active-project/warehouse/cond-watch-persons-risk-sweep.card.md` — Rung-6 kill mechanism; sweep protocol; institutional-momentum-Taylor-cannot-interrupt; final image requirement
+- `active-project/warehouse/cond-kl-authority-dragon-gate-129ac.card.md` — KL authority structure for Dragon Gate territory, 126-129 AC; Green-patronage architecture; Taylor's legal exposure
+- `active-project/warehouse/cond-fauna-control-rules-dragon-gate-addendum.card.md` — block-level range cap (~100-150m, hard constant per OQ-1); Khepri sealed full timeline; no glass-candle research arc; urban ecology spec; ambient-not-directed requirement
+- `active-project/warehouse/cond-dragon-gate-arrival-and-witch-label.card.md` — arrival event spec; permanent label as operational infrastructure; layering mechanism; label-never-lifted prose constraint
+- `active-project/warehouse/cond-series-tone-dragon-gate.card.md` — tone law; patron-dialect-as-structural-horror; foreclosure-as-bureaucratic-processing; no moral narration; act-level specifications
+- `active-project/warehouse/cond-reincarnation-mechanics-dragon-gate.card.md` — ~19yo body, mid-catastrophe urban arrival, no prior occupant, immediate Watch encounter at arrival; OQ-2 arrival event spec
 
-- oc-subject-dying (s4 planning time)
-- oc-subject-survivor (s4 planning time)
-- loc-dance-climax-site (s3 planning time)
+### Actor memory stubs initialized
 
----
+All 9 actors initialized with ltm.md, stm.md, state.md, vibes.md per schemas/memory.schema.md:
 
-## flea-bottom-dance 1d constraint card dispatch — 2026-05-10
+- `active-project/actors/taylor-hebert-dragon-gate/` — lead; full memory stubs; arrival ltm entries; state at arrival morning
+- `active-project/actors/oc-watch-captain-dragon-gate/` — supporting; sparse (institutional-behavior only per card)
+- `active-project/actors/mira-stonefield-dragon-gate/` — supporting; workshop context
+- `active-project/actors/oc-black-adjacent-contact/` — supporting; sparse (no interiority per card)
+- `active-project/actors/oc-persons-risk-officer/` — supporting; sparse (procedural-behavior only)
+- `active-project/actors/oc-rung3-steward/` — supporting; sparse (institutional-behavior only)
+- `active-project/actors/oc-ward-septon-dragon-gate/` — minor; arrival event in ltm
+- `active-project/actors/oc-block-fixture/` — minor; sparse (ambient-witness, no interiority)
+- `active-project/actors/oc-contacts-business-partner/` — minor; sparse (two structural appearances)
 
-### INHERIT DIRECT — LIBRARY → WAREHOUSE (no body edits)
+### Index updates
 
-| slug | library path | warehouse path | action |
-|---|---|---|---|
-| cond-shard-behavioral-weight | cards/conditions/cond-shard-behavioral-weight.card.md | active-project/warehouse/cond-shard-behavioral-weight.card.md | INHERIT DIRECT — reference field updated to add taylor-hebert-flea-bottom before copy |
-| cond-no-parahuman-infrastructure | cards/conditions/cond-no-parahuman-infrastructure.card.md | active-project/warehouse/cond-no-parahuman-infrastructure.card.md | INHERIT DIRECT — no changes |
-| cond-smallfolk-political-physics | cards/conditions/cond-smallfolk-political-physics.card.md | active-project/warehouse/cond-smallfolk-political-physics.card.md | INHERIT DIRECT — no changes |
-| cond-feudal-hierarchy-law | cards/conditions/cond-feudal-hierarchy-law.card.md | active-project/warehouse/cond-feudal-hierarchy-law.card.md | INHERIT DIRECT — no changes |
-| cond-westerosi-customary-authority | cards/conditions/cond-westerosi-customary-authority.card.md | active-project/warehouse/cond-westerosi-customary-authority.card.md | INHERIT DIRECT — non-jaehaerys variant (120 AC, era-general enough for 125 AC Dance period); no changes |
+- `cards/personas/INDEX.md` — added 9 new entries to by_world, by_quality (all full), by_trope; added 9 entries to original_characters
+- `cards/locations/INDEX.md` — added 5 new location entries to by_world, by_quality (all full)
+- `cards/conditions/INDEX.md` — added 7 new project-scoped conditions (warehouse-only, noted as project: dragon-gate-foreclosure)
 
-NOTE: cond-shard-behavioral-weight library card was modified to add `taylor-hebert-flea-bottom` to its references field before warehouse copy was made. Pre-mutation state preserved by in-file record only (references list change; body unchanged).
+### Schema validation notes
 
-### INHERIT WITH ADDENDUM — NEW CARDS AUTHORED
+All authored cards validated against schemas/card.schema.md:
+- Variant cards carry required variant-of, variant-reason fields
+- OC cards carry required name, class, scope, world, origin, quality, tier fields
+- All personas carry Fiction Role Overlay with Hard Fences, Default Stance, Action Menu
+- Location cards carry all required body sections (Geography, Layout, Sensory Vocabulary, Fixed Props, Exits, Hazards, Ambient Interruption Hooks)
+- Condition cards carry required Description, Sensory Impact, Duration, Interaction Notes
+- Memory stubs are minimum-valid per schemas/memory.schema.md (ltm: event entries; stm: list format; state: STATE: block with location/condition/inventory; vibes: VIBES: dictionary)
 
-| slug | library path | warehouse path | action |
-|---|---|---|---|
-| cond-crownlands-superstition-frame-125ac | cards/conditions/cond-crownlands-superstition-frame-125ac.card.md | active-project/warehouse/cond-crownlands-superstition-frame-125ac.card.md | AUTHORED — variant-of cond-westerosi-superstition-frame; Stranger-leavings frame; "Tya who came back wrong" register; KL/Crownlands vocabulary divergence; full; library-scope |
-| cond-fauna-control-rules-125ac-addendum | cards/conditions/cond-fauna-control-rules-125ac-addendum.card.md | active-project/warehouse/cond-fauna-control-rules-125ac-addendum.card.md | AUTHORED — project-scope addendum to cond-fauna-control-rules; 300m open / 1.5km ceiling / Khepri sealed / glass-candle relay-only; full |
+### Deviations flagged
 
-### NEW — FULL AUTHORED
+- `cond-patron-dialect-operational-model`: classified as `condition` per schema (ambient state modifier); its function is more like a project constraint/behavior card. The condition class is the closest available (project: scope, persistent modifier, auditor-loadable). Noted for any future schema-class revision if a "constraint" class is ever added.
+- Actor card.md files for 8 of 9 actors use a "project copy with critical facts" format rather than verbatim library-card copy. This is a margit decision: the full content lives in the library card; the project copy carries the fields that downstream agents (impersonator, studio, auditor) need for fast context loading without needing to re-fetch the library card. The library card is the canonical source. No information is lost; the project copy is a fast-path summary with full library source noted. Taylor's project card follows this pattern.
+- Location cards authored to library only; location warehouse copies were written as full cards to `active-project/warehouse/` rather than being shell-copied. Content is equivalent to library cards.
 
-| slug | library path | warehouse path | action |
-|---|---|---|---|
-| cond-reincarnation-mechanics-125ac | cards/conditions/cond-reincarnation-mechanics-125ac.card.md | active-project/warehouse/cond-reincarnation-mechanics-125ac.card.md | AUTHORED — 125 AC config; fever-death body; no competing consciousness; shard-via-Common-Tongue; named-by-absence; habituated-body-knowledge only; full; project-scope |
-| cond-clinical-self-erasure | cards/conditions/cond-clinical-self-erasure.card.md | active-project/warehouse/cond-clinical-self-erasure.card.md | AUTHORED — s1-s3 dread texture; calibration drift; executable form notes (must-show / must-not-show); Fish Gate subject in surveillance not in log; full; library-scope |
-| cond-series-tone-constraints-125ac | cards/conditions/cond-series-tone-constraints-125ac.card.md | active-project/warehouse/cond-series-tone-constraints-125ac.card.md | AUTHORED — contemplative-procedural-horror register; demonstration-not-triumph; no exhale between s3 and s4; Khepri-register mandatory; Khepri-unlock sequencing rule; full; project-scope |
+### Blockers
 
-### DEFERRED (not authored; noted)
-
-| slug | reason |
-|---|---|
-| cond-density-saturation-protocol | s4 pre-work; defer past activation |
-| behavioral cards for s4 experiment subjects | s4 plan time; subjects not yet in cast |
-
-### INDEX UPDATES
-
-- cards/conditions/INDEX.md — updated: by_world (all 5 new slugs added to planetos), by_quality (all 5 added to full), by_type (power-mechanics: fauna-control-125ac-addendum; project-constraint: all 5; protagonist-rules: reincarnation-125ac, clinical-self-erasure, fauna-control-125ac-addendum; tone-law: series-tone-125ac; lore-ambient: crownlands-superstition-125ac)
-
----
-
-## FAULT-007 resolution — 2026-05-10
-
-### PROBLEM
-
-Series audit identified that the warehouse held `cond-westerosi-customary-authority` (120 AC Riverlands, project: taylor-hebert-westeros) — wrong config for flea-bottom-dance (125 AC Crownlands / KL). Neither existing card was correct for the project's authority architecture.
-
-### ACTION
-
-**AUTHORED — new card, full quality:**
-
-| slug | library path | warehouse path |
-|---|---|---|
-| cond-westerosi-customary-authority-125ac | cards/conditions/cond-westerosi-customary-authority-125ac.card.md | active-project/warehouse/cond-westerosi-customary-authority-125ac.card.md |
-
-Card is: variant-of cond-westerosi-customary-authority-jaehaerys; scope: project; project: flea-bottom-dance. Covers: Gold Cloak / City Watch as primary street-level authority; Hand's apparatus as mid-tier escalation; Master of Laws for criminal jurisdiction; Faith as soft-power overlay; no paramount-lord intermediary; Flea Bottom tied/landless distinction; 17yo unattached female legal position; what acts cross into Crown attention; punishment jurisdiction tiers; auditor fence rules; KL-specific resistance modes.
-
-**TOMBSTONED — wrong warehouse copy:**
-
-| slug | warehouse path | action |
-|---|---|---|
-| cond-westerosi-customary-authority | active-project/warehouse/cond-westerosi-customary-authority.card.md | TOMBSTONED — scope set to tombstone; superseded_by: cond-westerosi-customary-authority-125ac; body notes wrong-config error. Library source at cards/conditions/cond-westerosi-customary-authority.card.md is UNCHANGED — correct for taylor-hebert-westeros. |
-
-**INDEX UPDATED:**
-
-- cards/conditions/INDEX.md — cond-westerosi-customary-authority-125ac added to: by_world (planetos), by_quality (full), by_type (project-constraint, social-physics)
-
-**SHOWRUNNER MEMORY UPDATED:**
-
-- active-project/staff/showrunner/memory.md — series.laws: replaced `cond-westerosi-customary-authority` with `cond-westerosi-customary-authority-125ac`
+None. All 1c provisioning tasks complete.

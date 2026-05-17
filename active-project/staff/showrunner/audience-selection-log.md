@@ -1,13 +1,14 @@
-## Audience selection
+# Audience Selection Log
 
-brief axes: post-Worm-canon Taylor (Khepri-weighted protagonist) + Westeros pre-Dance grimdark register + powers-as-research-substrate (rule-consistency load) + smallfolk-vs-nobility political register + fear-as-stopping-mechanism (horror-adjacent).
+## Audience selection
+brief axes: Worm/ASOIAF crossover with heavy canon weight from both sides (post-Khepri Taylor + pre-Dance King's Landing); grimdark register with sustained moral consequence; thematic spine ("road to hell paved with good intentions") that wants meaning-tracking; compressed one-book tragedy of competence; character-interior horror against macro-political stakes.
 
 selected:
-  - worm-canon-pedant: subject-match axis — covers Khepri-weight and Taylor's voice/calibration; the entire premise rests on the post-Gold-Morning Taylor being recognizably her, not a Westerosi OC wearing the name.
-  - dark-fantasy-reader: tone/world-weight axis — Dance of the Dragons + arcane experimentation on smallfolk is grimdark by construction; reader who can sit with cost and refuses cheap horror.
-  - cape-fic-reader: rule-consistency axis — powers-as-research-substrate requires asymmetric-power coherence and cost-curve legibility; tracks scope creep and bug-power consistency separately from Worm canon accuracy.
+  - worm-canon-pedant: covers source-material/power-mechanics axis — Taylor post-Khepri carries enormous Worm-canon weight (her power presentation, her psychology, what she will and will not do); this is the strictest possible reader for keeping that authentic.
+  - dark-fantasy-reader: covers grimdark / earned-consequence / world-weight axis — Westeros at pre-Dance + Taylor's atrocity history demand a reader who can sit with bleakness when it is honest and who will reject cheap grimness or unearned suffering.
+  - literary-snob: covers voice / theme / meaning axis — the "road to hell" theme is structural and the foreclosure-of-good-outcomes shape is theme-first; the prose must carry this and the reader must be tracking it.
 
 rejected:
-  - literary-snob: voice/meaning is a real load on this brief (Faustian framing, identity-without-arrival) but the heavier loads are canon, tone, and power-rules; can add later if voice-drift emerges.
-  - pulp-enthusiast: project is contemplative-horror-arcanist register, not momentum-driven; pacing axis is wrong fit.
-  - youjo-senki-reader: sardonic-operational voice would be apt but stub; not expanding for a non-load-bearing axis.
+  - cape-fic-reader: solid character-stakes reader but overlaps heavily with worm-canon-pedant on parahuman-specific axes; worm-canon-pedant is the stricter, more material-specific match here.
+  - pulp-enthusiast: a tragedy of competence is not paced as escalation-pulp; pulp reader axis would misread the structural deceleration into catastrophe.
+  - dramatist (other stubs): not full personas; the three full personas above already cover the three most load-bearing axes for this brief without forcing a stub expansion.

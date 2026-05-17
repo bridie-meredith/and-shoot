@@ -83,7 +83,7 @@ The Shard functions as a pressure-multiplier on Taylor's existing internal failu
 
 When Taylor's coalition is under pressure and she is considering whether to trust an ally with sensitive information, the Shard's weight makes "don't tell them" feel more defensible than "tell them." When Taylor is considering whether to escalate against an institutional threat or hold back for a better moment, the Shard's weight makes "escalate now" feel more right than "wait." When Taylor is considering whether to absorb a cost herself or share it with the coalition, the Shard makes "absorb it alone" feel safer than "share it."
 
-In isolation, each of these nudges is small. Across the series, they compound. The coalition-cost arc (OQ-9/C) is partly the natural consequence of Taylor's pre-existing failure modes, and partly the consequence of those failure modes being consistently nudged in the wrong direction by a force she cannot perceive.
+In isolation, each of these nudges is small. Across the series, they compound.
 
 ## Scene-Level Guidance for Impersonators
 
@@ -100,8 +100,8 @@ Taylor should never be written as though she is aware of the Shard's influence, 
 
 **With `cond-no-parahuman-infrastructure`:** The no-Shard-buffering rule and the behavioral-weight rule are complementary. The Shard cannot run its optimization cycle (no infrastructure); what it does instead is weight Taylor's existing tendencies. Both cards should be read together.
 
-**With `cond-series-tone-constraints-125ac`:** The escalation rule in the tone card and the Shard's behavioral weight are additive. The tone card establishes that Taylor's escalation-reflex is structural and is not corrected away. This card establishes the Shard's contribution to why that reflex is harder to self-correct than Taylor's baseline temperament alone would produce.
+**With `cond-patron-dialect-operational-model`:** The Shard's escalation-weight and the patron-dialect model are additive in this project. The Shard weights toward action; the model provides the operational framework that makes action feel accurate. Together they produce a pattern Taylor experiences as correct judgment.
 
-**With `taylor-hebert-flea-bottom` persona card:** The persona card's Hard Fences and Action Menu describe Taylor's behaviors. This card explains why those behaviors consistently lean toward escalation at the margin. The persona card is the surface; this card is one layer of mechanism beneath it.
+**With `taylor-hebert-dragon-gate` persona card:** The persona card's Hard Fences and Action Menu describe Taylor's behaviors. This card explains why those behaviors consistently lean toward action and escalation at the margin.
 
-**For auditor use:** If Taylor is written as perceiving the Shard's influence — as noticing she is being nudged, as questioning whether her judgment is externally colored — that is a fence violation. If Taylor is consistently choosing de-escalation without cost or effort, that is a probable violation of both this card and `cond-series-tone-constraints-125ac`. If the Shard's weight is being used to make Taylor act against her own values or interests in a way that is grossly out of character (rather than at-the-margin), that is an over-application of this card.
+**For auditor use:** If Taylor is written as perceiving the Shard's influence — as noticing she is being nudged, as questioning whether her judgment is externally colored — that is a fence violation. If Taylor is consistently choosing de-escalation without cost or effort, that is a probable violation.
