@@ -67,6 +67,23 @@ LAW (OQ-6 resolved, structural shape): The closing-shape is foreclosure-pure. Th
 
 LAW (OQ-6 resolved, binding execution obligation): The insect-ambient-register must be a consistent prose mechanism FROM EARLY in the book. The closing image of range-capped insects registering Taylor's own stillness must be EARNED by prior use of the insect-register as the operational mode of her perception — not introduced at the terminus as a device. Tracked through screen-writer and shoot stages.
 
+LORE (OQ-7 resolved): The book carries 9 named recurring characters and at most 1 canon glimpse. Named recurring (binding cast):
+  1. Taylor Hebert (POV).
+  2. The Captain of the Dragon Gate precinct — Taylor's Watch-track patron. Opaque throughout. Readable through institutional behavior only, never interiority. Signs her release at arrival (OQ-2); signs her death-paperwork at close (OQ-6).
+  3. Mira — rope-braider, Dragon Gate block resident, Taylor's genuine attachment. The Rung-4 (M18–19) anchor. Established credibly in prose well before her rung. Her death in the Watch persons-risk sweep expansion is ON-PAGE in late Act 3.
+  4. The Black-adjacent contact (Rung 6, M27–28) — named, on-page enough that his burning lands. NO interiority. Last hours rendered externally via Taylor's insect-ambient-register and second-hand Watch procedure.
+  5. The Watch officer running the M27–28 persons-risk sweep — immediate-cause actor of the kill chain.
+  6. The Rung-3 steward at M14–15 — named for cross-scene tracking. Gets ONE moment of visible calculation rendered as behavior; the visible decision is what carries causal weight, the name is bookkeeping. Recurs through Act 2 as the throughline of the patron-enforcement-overshoot mechanism that seeds the M27–28 sweep.
+  7. The Dragon Gate ward septon — the one who shouted "witch" at arrival. Low-frequency: arrival, one mid-book hostility beat, absent from close.
+  8. One lateral block-fixture (a stall-holder or dockside water-carrier) — non-operational ambient presence. Exists laterally to the ladder. Their continued undamaged existence underscores what Taylor's network does not protect. World-going-on-without-Taylor, NOT community-Taylor-is-part-of.
+  9. The contact's business-partner — appears in the Rung 4 (M18–19) context, named, ABSENT from Rung 6. The absence is the cost.
+
+LAW (OQ-7 resolved, canon presence): At most one canon glimpse. The Hand's carriage passes once through the Dragon Gate in Act 2, identifiable by sigil, neither stopping nor acknowledging. Viserys I's death is registered as a street-crier announcement. Aegon II's proclamation, if heard at all in the closing, is ambient. No canonical figure speaks on-page.
+
+LAW (OQ-7 resolved, smallfolk-as-substrate): No named family for Mira or the Black-adjacent contact. The Rung-1 tanner's apprentice, Rung-2 merchant + guild liaison, Rung-5 unlicensed physician + guild auditor are present as fixtures Taylor moves through; they are unnamed or named only at the function-tag level (role-tag, not personal-name). The block is hostile-and-indifferent, not soft-and-adopting. The reader holds the world as substrate, not as Taylor's community.
+
+LAW (OQ-7 resolved, antagonist-shape): The book has no human antagonist. The captain is opaque institutional behavior; the steward is a transmitting node; the Watch sweep officer is the immediate-cause actor. The antagonist is the patron-machinery itself — the Watch persons-risk infrastructure plus the Hightower patronage chain plus the Faith-of-the-Seven Green-adjacency — operating through faces whose interiority is closed to Taylor and to the reader. Foreclosure lives in the structure, not in any person's choices.
+
 ## Tone / register constraints
 
 TONE: Grimdark with honest weight, not aestheticized cruelty. Bleakness must be earned by causal chains the reader can reconstruct.

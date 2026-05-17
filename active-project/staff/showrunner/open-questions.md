@@ -23,3 +23,7 @@ What is the final state the book closes on? Subordinate: does Taylor survive? Do
 
 ### OQ-7: Cast scope
 How many named recurring non-Taylor characters does the book carry? Subordinate: which of the canonical pre-Dance figures (Viserys, Otto, Alicent, Rhaenyra, Daemon, Larys Strong, Criston Cole, Helaena, Aegon, Aemond, the Sea Snake) appear on-page versus off-page; how many original-character smallfolk anchor Taylor's attachment-network. Dependent on OQ-4 and OQ-6.
+
+---
+
+ALL 7 OQs RESOLVED. See 1b-log.md and world-notes.md for full decisions.
