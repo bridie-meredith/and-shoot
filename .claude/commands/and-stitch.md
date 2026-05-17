@@ -1,15 +1,23 @@
 ---
-description: Stitcher pipeline for one episode. Eight phases — lens-anchored render → redundancy cull → compression → voice transform → local flow → buildup preservation → editorial reflection → finalize. Output - draft/<slug>.md + draft/<slug>.annotated.md + staff/stitcher/render-log-<slug>.md. Phase 1 default is scene-window (one fork per scene with overlap-read context, breaks multi-bone percussion); per-anchor remains as fallback. Usage - /and-stitch [episode-slug] [--profile <path>] [--persona <slug>] [--phase-1-mode <scene-window|per-anchor>]
+description: Stitcher pipeline for one chapter. Eight phases — lens-anchored render → redundancy cull → compression → voice transform → local flow (speaker-paragraph breaks) → buildup preservation → editorial reflection → finalize (strips scene-callout markers). Output - draft/<book>-<chapter>.md + draft/<book>-<chapter>.annotated.md + staff/stitcher/render-log-<book>-<chapter>.md. URI-SUBSTANCE-OVERHAUL (2026-05-17): bones-path renamed; tensometer-derivation fallback removed; speaker-paragraph rule enforced at Phase 5; scene-callout markers stripped at Phase 8. Usage - /and-stitch <book>-<chapter> [--profile <path>] [--persona <slug>] [--phase-1-mode <scene-window|per-anchor>]
 ---
 
-Stitcher pipeline. One episode in, clean polish + annotated traced polish + per-fork render-log out. The Stitcher assembles a final prose draft from the proto-line bones and the facet graph; each phase forks at its natural decision granularity (per-anchor, per-paragraph, per-window, per-sentence, etc.). No inter-fork memory; the render-log is the only cross-phase artifact.
+Stitcher pipeline. One chapter in, clean draft + annotated traced draft + per-fork render-log out. The stitcher assembles a prose draft from the bones and the facet graph; each phase forks at its natural decision granularity (per-anchor, per-paragraph, per-window, per-sentence, etc.). No inter-fork memory; the render-log is the only cross-phase artifact.
+
+**URI-SUBSTANCE-OVERHAUL (2026-05-17) mutations:**
+- Phase 0 reads `theater/bones/<book>-<chapter>.md` (not `theater/proto-lines/<slug>.md`). Slug-arg shape: `<book>-<chapter>` (e.g. `b01-c01`).
+- Phase 0 scene-boundary detection no longer falls back to tensometer derivation. The scene-map facet is emitted upstream by `/and-write` Phase 7 and validated at `/and-facets` Phase 4d; if missing, Phase 0 fault-aborts or falls back to per-anchor mode per profile (no tens-parse path).
+- Phase 5 (local flow) enforces a hard rendering rule: **any new speaker starts a new paragraph.** Each `speaks to` bone's rendered dialogue paragraph begins on its own line.
+- Phase 8 (finalize) HARD-strips any surviving `## Scene N` / `[SCENE BREAK]` / `--- SCENE ---` markers from `draft/<book>-<chapter>.md` (clean). The annotated draft may retain machine-readable scene markers.
+
+Under the polish-deferred boundary, `draft/<book>-<chapter>.md` is the terminal deliverable. No `/and-wrap` editor pass follows.
 
 Dialogue and exposition are both **graph-resident facets** consumed by the stitcher (not authored by it). Exposition feeds the preamble + per-anchor first-mention/scene-orient glosses; dialogue feeds the verbatim utterance for every `X speaks to Y` proto-line bone. Both are loaded at Phase 0.6 / 0.7 and surfaced to Phase 1 forks as license to render content the bone-faithfulness fence would otherwise forbid.
 
 You are the orchestrator. Eight phases run in strict sequence:
 
 ```
-proto-lines/<slug>.md + facets/* + _cite-index.md
+theater/bones/<book>-<chapter>.md + theater/facets/* + theater/dialogue/<book>-<chapter>.md + _cite-index-<book>-<chapter>.md
         │
         ▼
    PHASE 0 — VALIDATE + LOAD
@@ -78,7 +86,7 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
 
 ## Phase 0 — Validate + Load
 
-1. Resolve episode slug. Verify `active-project/theater/proto-lines/<slug>.md` exists.
+1. Resolve chapter slug. Normalize to `<book>-<chapter>` form. Verify `active-project/theater/bones/<book>-<chapter>.md` exists.
 2. Verify `active-project/theater/facets/_cite-index.md` exists. Abort if not — stitcher requires the cite-index from `/and-facets`.
 2a. If resolved `phase-1.mode` is `scene-window` (the default) and `scene-window.boundary-source` resolves to `scene-map-facet` (the default), verify `active-project/theater/facets/scene-map-<slug>.md` exists. If absent: emit `WARN-SCENE-MAP-FACET-ABSENT`, fall back per `phase-1.scene-window.fallback-on-no-scene-map` (default `per-anchor` — soft fallback recorded in render-log header). With `escalate`, abort and surface `FAULT-PHASE-1-NO-SCENE-MAP` to the user.
 3. **Profile resolution.** Read in order:
@@ -357,7 +365,7 @@ Output draft: `active-project/draft/<slug>.phase-1.draft.md`. Log fork entries t
 Scene boundaries are required at Phase 1 dispatch in this mode. Resolution order:
 
 1. **Scene-map facet** (default, URI-SCENE-WINDOW 2026-05-13). When `active-project/theater/facets/scene-map-<slug>.md` exists, parse it per `schemas/scene-map.schema.md`. The scene-map is emitted at `/and-facets` Phase 4d as a derived structural facet and validated for coverage at Phase 5 audit; if the file passed those gates, its boundaries are canonical. This is the canonical authoring path.
-2. **Tensometer derivation** (legacy fallback). Parse the scene-footer section of `active-project/theater/facets/tensometer-<slug>.md` for named-scene declarations (e.g. `SCENE A (159–181)`). Cross-reference with `interest-narrator.md`'s sparsity gradient + `location-state.md` transitions + time-skip blanks in proto-lines to fill in scenes the tensometer narrates only by reference. Used when the scene-map facet is missing — typically pre-URI-SCENE-WINDOW episodes whose `/and-facets` run predates the scene-map emission step. Fragile against tensometer-prose drift; re-run `/and-facets` to author the scene-map facet when convenient.
+2. **Tensometer derivation** (REMOVED 2026-05-17 under URI-SUBSTANCE-OVERHAUL). The tensometer-fallback path is dead code under the new chain — tensometer is gone. The scene-map facet is the only canonical source; if missing, fall back per `phase-1.scene-window.fallback-on-no-scene-map` (default `per-anchor`, soft fallback recorded in render-log header) or escalate per profile.
 3. **Failure mode.** If neither produces ≥3 scenes covering all bones, emit `FAULT-PHASE-1-NO-SCENE-MAP` and either escalate to user or fall back to `per-anchor` mode per `phase-1.scene-window.fallback-on-no-scene-map` (record the fallback in the render-log header).
 
 Validate the scene-map: every bone in `proto-lines/<slug>.md` must fall inside exactly one scene's bone-range. Coverage gaps or overlaps → `FAULT-PHASE-1-SCENE-MAP-COVERAGE`.
@@ -519,8 +527,9 @@ Per-sliding-window forks (window size per `local-flow.window-size`, default 3). 
 - Backward NI promotion (no temporal-lock words; cap per `ni-promotion-cap`)
 - Un-merge to rescue swallowed facets per `un-merge-license`
 - Refuse moves that violate cross-bone-temporal / cross-scene / temporal-lock
+- **Speaker-paragraph rule (URI-SUBSTANCE-OVERHAUL, 2026-05-17).** Any new speaker starts a new paragraph. Each `speaks to` bone's rendered dialogue paragraph begins on its own line. Back-to-back dialogue between two speakers always paragraph-breaks between speakers. Mixed action-and-dialogue paragraphs are allowed only when the action is the same character's. The fork enforces this as a hard rendering rule — paragraph-break violations are `FAULT-LOCAL-FLOW-SPEAKER-PARAGRAPH` and must be repaired before Phase 5 closes.
 
-Log per move: `MIGRATE-SENSORY-FORWARD` / `MIGRATE-NI-BACKWARD` / `WITHIN-ANCHOR-REORDER` / `EM-DASH-FUSE` / `UN-MERGE` / `REFUSE-MIGRATE`.
+Log per move: `MIGRATE-SENSORY-FORWARD` / `MIGRATE-NI-BACKWARD` / `WITHIN-ANCHOR-REORDER` / `EM-DASH-FUSE` / `UN-MERGE` / `REFUSE-MIGRATE` / `SPEAKER-PARAGRAPH-BREAK`.
 
 Output draft: `active-project/draft/<slug>.phase-5.draft.md`.
 
@@ -574,7 +583,8 @@ Each fork logs the per-sentence Q-line plus any moves. Output draft: `active-pro
 Single fork. Walk Phase 7 draft:
 - Assign stable line-IDs (sequential; gaps allowed where Phase 7 cut)
 - Prepend the Phase 0.6 exposition preamble: italic-rendered paragraphs + horizontal rule before the body
-- Write clean polish: `active-project/draft/<slug>.md` (no line-IDs, no traces; preamble + body)
+- Write clean polish: `active-project/draft/<book>-<chapter>.md` (no line-IDs, no traces; preamble + body)
+- **Scene-callout suppression (URI-SUBSTANCE-OVERHAUL, 2026-05-17).** HARD-strip any surviving `## Scene N` markdown headers, `[SCENE BREAK]` literals, `--- SCENE ---` separators, or similar scene-callout markers from the clean draft. Scene boundaries are conveyed by paragraph break only (an empty line between paragraphs, no extra inline marker). Any surviving scene-callout in the clean draft is a build defect — `FAULT-PHASE-8-SCENE-CALLOUT-LEAK`; the fault is repaired by stripping the marker before the file is finalized. The annotated draft MAY retain machine-readable scene markers (it's the traced/debug view); the clean draft must not.
 - If `output.mode: dual`: write annotated polish: `active-project/draft/<slug>.annotated.md` with `[L<N>]` prefixes, `<trace>...</trace>` blocks per sentence, and `<trace scope="preamble">` for the bridge (the trace cites the exposition entry IDs that fed the preamble)
 - For each fold-in rendered at Phase 1, the annotated trace cites `exposition:<id>` alongside the bone and lens facets — exposition is now a first-class citation in the trace alongside narrator/feel/mem/sensory/metaphor
 - For each utterance rendered at Phase 1, the annotated trace cites `dialogue:<character>:<id>` alongside the speech bone — dialogue is also a first-class citation. Multi-utterance anchors emit one citation per entry. The attribution clause carries the bone citation; the utterance carries the dialogue citation.

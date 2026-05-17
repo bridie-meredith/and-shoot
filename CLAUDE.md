@@ -1,24 +1,35 @@
 # and-shoot
 
-Autonomous fiction pipeline. The system authors creative fiction across a series → season → episode hierarchy with minimal human orchestration.
+Autonomous fiction pipeline. The system authors creative fiction across a series → book → chapter → scene hierarchy with declared substance contracts at every level. Reviews fire inline at each authoring command; the only blocking human checkpoint is the series-level audit inside `/and-cast`.
 
-**Human role:** gatekeeper at series-level audit only. Season and episode loops run agent-to-agent with no required human checkpoints unless an audit escalates past season scope.
+**Human role:** approve at the series-level audit checkpoint (Phase 5 of `/and-cast`). Book-, chapter-, and scene-level loops run agent-to-agent with no required human checkpoints unless an audit escalates past series scope.
 
 ---
 
 ## Primary pattern
 
 ```
-project activation → season start → (episode start → shoot)* → bulk and-wrap → repeat
+/and-project                            ← scope + staff binding
+  ↓
+/and-series                             ← series chunk + structural prompts
+  ↓
+/and-substance series                   ← signature (state axes + cost ledger + antagonist pressure + chunk_targets) + per-book Δ + book chunks
+  ↓
+/and-cast                               ← roster + series-level audit checkpoint  ← ONLY blocking human checkpoint
+  ↓
+/and-substance book b01                 ← book drama + per-chapter Δ + chapter chunks + handoff_in/out
+  ↓
+loop per chapter:
+  /and-substance chapter b01c01         ← per-scene chunks + scene_conflict + pov_narrator + dramatic_shape + goal
+  /and-write b01c01                     ← scene-decomposition into bones-with-deltas + five-pass SVO + substance bone-gate
+  /and-facets b01c01                    ← ten facets + dialogue + scene-map validation (tensometer dropped)
+  /and-stitch b01c01                    ← draft/b01-c01.md (terminal deliverable; polish deferred)
+  [optional] /and-review verdict b01    ← orchestrator-critic on the book
 ```
 
-**Default flow is shoot → shoot → shoot.** /and-wrap is opt-in and typically run in bulk after a stretch of episodes is shot. /and-shoot Phase 0 auto-archives the previous episode's theater files into `theater/<slug>-archive/` so they survive until wrap is called.
+`/and-substance --cascade` chains chapter → write → facets → stitch for every chapter under the named root. `/and-cut` mid-cascade saves a resume checkpoint.
 
-- **Project activation** — archive previous active-project, scaffold new one, world-build, plan series and first season, human audit checkpoint, first episode start.
-- **Season start** — revisit series plan, establish season drama, plan episodes.
-- **Episode start** — screen-writer expands episode chunk into script, audience and dramatist review, shoot begins.
-- **Shoot** — showrunner reads bullets, coach translates to prompts, impersonators and studio execute, audience reviews each line. Phase 0 of the next /and-shoot archives this episode's theater files.
-- **And-wrap** (URI-WRAP-V2, 2026-05-13) — opt-in, single or bulk. Three phases on the stitcher draft: audience review (advisory), auditor pass (rendered-prose-against-graph audit), editor pass (whole-text prose work + flag/finding remediation). Reads from `draft/<slug>.md` and the upstream graph (render-log, scene-map, facets, dialogue, exposition); writes to `polish/<slug>.md`. The editor is the only phase with whole-episode view. v1 (per-line `show.md`) archived at `archive/commands/and-wrap.md`.
+**Polish / `/and-wrap` is deferred** under this overhaul until upstream substance machinery is proven end-to-end. `/and-stitch`'s `draft/<book>-<chapter>.md` is the terminal deliverable. `/and-review prose <chapter>` is stubbed-deferred; un-defer lift target pre-pinned to `archive/commands/and-wrap-polish-deferred.md` Phases 1-2.
 
 ---
 
@@ -27,74 +38,82 @@ project activation → season start → (episode start → shoot)* → bulk and-
 | Agent | Role | Owned by |
 |-------|------|----------|
 | showrunner | Memory holder. Reads/writes series memory and state files. Does NOT orchestrate — command bodies do. No Agent tool. | `staff/showrunner/` |
-| screen-writer | Plan generator. Series/season/episode bullet plans. | `staff/screen-writer/` |
-| coach | Prompt translator. Bullet → impersonator prompt. | `staff/coach/` |
-| impersonator | Character primitive. One per active actor per episode. | spawned per-actor |
-| studio | Set and environment manager. Records all state changes. | `staff/studio/` |
-| audience | Critic config. 3 persona cards. Reviews lines and plans. | `active-project/audience/` |
-| dramatist | Structural critic. Plans and wrap review. | stateless |
-| auditor | Fault-finder. Constraint/state/drift audit. Returns report. | `staff/auditor/` |
+| screen-writer | Plan generator. Series / book / chapter / scene chunk authoring + signature proposal. | `staff/screen-writer/` |
+| coach | Prompt translator. Used in legacy per-line shoot only (archived). | `staff/coach/` |
+| impersonator | Character primitive. Used in legacy per-line shoot + facet authoring (state-updates, narrator-interest, feeling, memory). | spawned per-actor |
+| studio | Set and environment manager. State + location-state + sensory facet authors. | `staff/studio/` |
+| audience | Critic config. 3 persona cards. Reviews chunks, bones, plans. | `active-project/audience/` |
+| dramatist | Structural critic. Plans, handoff, dramatic-shape review. | stateless |
+| auditor | Fault-finder. Constraint / state / drift audit; substance bone-gate. | `staff/auditor/` |
 | fixer | Targeted correction. Meets auditor criteria with minimum change. | `staff/fixer/` |
 | margit | Card warehouse. Stores, indexes, validates, promotes. | `staff/margit/` |
-| editor | Final draft. `/and-wrap` v2 (URI-WRAP-V2) only. Reads stitcher draft + render-log + scene-map + audience flags + auditor SIGNAL findings. Whole-text view: cross-scene percussion, voice consistency, repetition cull, continuity, prose economy. Writes ship-ready manuscript to `polish/<slug>.md`. Allowed-moves contract enforces graph respect (no plot invention, dialogue verbatim, exposition gloss verbatim, scene-map fixed, peak-shadow standalone). | `staff/editor/` |
-| orchestrator-critic | Run-judge card. Defines the standard `/and-season` must satisfy to be considered a success — convergence + quality + routing + runtime. Library-only; not a subagent (main session reads the card and produces a verdict at Phase 6 of `/and-season`). | `staff/orchestrator-critic/` |
+| editor | Final draft. Library-only under polish-deferred chain; not currently dispatched. Bound at `/and-project` for future revival. | `staff/editor/` |
+| orchestrator-critic | Run-judge card. Defines the standard `/and-review verdict <book>` must satisfy to PASS. Library-only; not a subagent. | `staff/orchestrator-critic/` |
 
 ---
 
 ## Directory map
 
 ```
-schemas/          — schema authority (read this before writing any new file format)
+schemas/          — schema authority
 
 staff/            — production staff: agent homes + audience persona library
   showrunner/     — agent home: card.md + ltm.md + stm.md
   margit/         — agent home
-  coach/          — agent home
+  coach/          — agent home (legacy per-line shoot)
   screen-writer/  — agent home
   studio/         — agent home
   auditor/        — agent home
   fixer/          — agent home
-  editor/         — agent home
+  editor/         — agent home (library-only; polish-deferred)
   audience/       — audience persona library (18 personas; INDEX.md; 3 selected per project)
-  orchestrator-critic/ — run-judge card (`card.md`); library-only standard for `/and-season` success at Phase 6
+  orchestrator-critic/ — run-judge card
 
 cards/            — story-facing card library (on-stage characters, locations, props, conditions, behaviors)
-  personas/       — on-stage character cards (flat; INDEX.md for lookup by world/quality/trope/OC)
-  locations/      — location cards (flat; INDEX.md)
-  props/          — prop cards (flat; INDEX.md)
-  conditions/     — condition cards (flat; INDEX.md)
-  dialects/       — behavior cards (class: behavior — voice + non-verbal tics + memory monuments; flat; INDEX.md). Directory rename to behaviors/ pending.
+  personas/       — on-stage character cards
+  locations/      — location cards
+  props/          — prop cards
+  conditions/     — condition cards
+  dialects/       — behavior cards (rename to behaviors/ pending; deferred under this overhaul)
 
 active-project/   — sole active project
-  actors/         — active cast (persona card + ltm/stm/state/vibes per actor)
+  actors/         — active cast (provisioned by /and-cast Phase 4)
   warehouse/      — active locations, props, conditions
   audience/       — 3 active audience persona working dirs
-  staff/          — showrunner/studio/auditor/fixer/margit working memory
-  theater/        — episode-plan.md + show.md (current episode)
-  draft/          — stitcher output (pre-editor; clean + annotated drafts)
-  polish/         — editor output / closed manuscripts (post-/and-wrap)
+  staff/          — showrunner / studio / auditor / fixer / margit / screen-writer / editor working memory
+    reviews/      — /and-review reports (canonical reports directory)
+  theater/
+    bones/        — bones files: <book>-<chapter>.md (emitted by /and-write Phase 7)
+    facets/       — facets per chapter: <facet>-<book>-<chapter>.md (flat naming convention; tensometer dropped)
+    dialogue/     — per-character dialogue files (per character, per chapter)
+  draft/          — stitcher output (terminal deliverable; polish deferred)
+  polish/         — not written by the current chain (polish-deferred)
 
 projects/         — completed series archive
+archive/          — archived commands, rubrics, and historical specs
+  commands/       — archived command bodies (see archive/commands/README.md)
+  rubrics/        — archived rubrics (see archive/rubrics/README.md)
 ```
 
 ---
 
 ## Schema authority
 
-All file formats are defined in `schemas/`. Read the relevant schema before creating any new schema-typed file.
+All file formats are defined in `schemas/`.
 
 | File type | Schema |
 |-----------|--------|
 | Cards | `schemas/card.schema.md` |
 | Actor memory (LTM/STM/state/vibes) | `schemas/memory.schema.md` |
 | Showrunner memory | `schemas/showrunner-memory.schema.md` |
-| Episode plan | `schemas/episode-plan.schema.md` |
-| Show file | `schemas/show-file.format.md` |
 | Audit report | `schemas/audit-report.schema.md` |
-| Per-character dialogue file (shoot-v2) | `schemas/dialogue.schema.md` |
-| Proto-line file (shoot-v2) | `schemas/proto-line.schema.md` |
-| Facet file (shoot-v2) | `schemas/facet.schema.md` |
-| Scene-map (derived structural facet, shoot-v2) | `schemas/scene-map.schema.md` |
+| Per-character dialogue file | `schemas/dialogue.schema.md` |
+| Bones file | `schemas/bones.schema.md` |
+| Facet file | `schemas/facet.schema.md` |
+| Scene-map (upstream-emitted by /and-write Phase 7) | `schemas/scene-map.schema.md` |
+| Substance framework | `design/substance/{README,questionnaire,delta-targets,rerun-protocol,staleness-cascade,run-book,plan}.md` |
+
+Legacy schemas preserved for reference: `episode-plan.schema.md`, `show-file.format.md` (pre-substance; no longer authored).
 
 ---
 
@@ -102,27 +121,32 @@ All file formats are defined in `schemas/`. Read the relevant schema before crea
 
 **Nothing changes without being recorded.** If an actor moved, their state file records it. If a prop changed hands, studio's state file records it. If a change is not in a state file, it did not happen.
 
-**Showrunner memory is cross-session.** `active-project/staff/showrunner/memory.md` is read at every session open. It is the fast path to reconstructing full working context without scanning history.
+**Showrunner memory is cross-session.** `active-project/staff/showrunner/memory.md` is read at every session open. It is the fast path to reconstructing full working context.
 
 **Actor memory lives in active-project.** At project close, the active-project directory is archived to `projects/<title>/`. Actor memory travels with it.
 
-**Vibe-clouds are built at each planning level.** Series, season, and episode each have a vibe-cloud. All three are active during shoot; episode-level takes priority on key conflicts. Agents check vibes before generating output; vibes bias but do not override constraints.
+**Vibe-clouds are built at series and book level.** Both are active during authoring; book-level takes priority on key conflicts. Chapter / scene / bone-level shaping comes from the substance contract, not a vibe-cloud.
+
+**Per-bone state-delta lives in showrunner memory only.** `chapters[].scenes[].bones[].substance_delta` is the source of truth; the flattened bones file is comment-clean.
+
+**Staleness cascade.** Re-running an upstream command stale-marks downstream artifacts (per `design/substance/staleness-cascade.md`). The cascade is surfacing-only (warns, does not block) except for `project.series_audit.stale_since`, which HARD-aborts `/and-substance book` until re-approved.
 
 ---
 
 ## Rules
 
 1. Read the relevant schema before writing any new schema-typed file.
-2. Command bodies (`/and-project`, `/and-shoot`, `/and-wrap`) are the orchestrators. They dispatch sub-agents directly. Showrunner does NOT orchestrate and does NOT have the Agent tool — it is a memory holder only. Cascading dispatch through showrunner is the inline-simulation failure mode and is structurally prevented.
-3. Coach is the sole translator of bullets into prompts. The command body does not write impersonator prompts directly.
+2. Command bodies (`/and-project`, `/and-series`, `/and-substance`, `/and-cast`, `/and-write`, `/and-facets`, `/and-stitch`, `/and-review`) are the orchestrators. They dispatch sub-agents directly. Showrunner does NOT orchestrate and does NOT have the Agent tool — it is a memory holder only.
+3. Screen-writer authors chunks at every level. `/and-substance` is the chunker-only command (stops at scene chunks). `/and-write` is the bone-authoring command (decomposes scenes into bones with per-bone deltas).
 4. Nothing moves without being recorded (state rule — absolute).
-5. The show file is append-only during shoot. Rejected lines are deleted before retry. Failed lines (budget exhausted) are marked [NEEDS_EDIT:] and left.
-6. Audience membership is defined at project activation. It does not change mid-episode.
-7. Human checkpoints: series-level audit only. Everything else is agent-resolved unless an escalation requires human decision.
-8. Card schema authority is `schemas/card.schema.md`. Margit validates against it. No card class outside the five defined (persona, location, prop, condition, behavior). **Exception:** `staff/orchestrator-critic/card.md` is staff-facing (judges production, not story content) and is explicitly outside the cards/ taxonomy. Staff-facing critic cards are documented in their own card frontmatter.
-9. All agent dispatches use the Agent tool. Inline generation is not a substitute for a dispatch — an agent that is not spawned in isolation does not have the context isolation the pipeline depends on.
-10. `/and-season` runs are gated at Phase 6 by `staff/orchestrator-critic/card.md`. PASS/PASS-WITH-NOTES/FAIL is the verdict on whether the run satisfied the standard. FAIL escalates to user; downstream work is gated on user decision. **Bone-gate (URI-026, 2026-05-10):** `/and-season` Phase 4 Step 1.5 (tens authoring) + Step 2 (audience+mechanic combined verdict) is the upstream bone-gate. Tens-gate residual HARD findings auto-trigger F7 (FAIL) per the card's failure-mode enumeration — bones-first principle: deformed proto-lines cannot be rescued by downstream facet skin.
-11. **Shared reviewer resources (URI-026, 2026-05-10).** Reviewer assets are authored once and consumed from both `/and-season` and `/and-facets`. The audience persona cards' `Threshold Discipline` and `Season-Scope Adversarial` body sections, the auditor class library (`CURVE-SHAPE` / `AP-SCAN` / `FREQUENCY-BAND` definitions in `.claude/commands/and-facets-audit.md`), and the tens rubric (`design/shoot-v2/rubric-tensometer.md`) are the canonical shared surfaces. No pipeline-specific reimplementation. Patterns the audience flags at `/and-season` bone-gate graduate into AP-SCAN entries via the shared auditor's TASTE-FLAG → AP-SCAN promotion path; auditor class refinements land once and benefit both pipelines.
+5. Bones files are append-only during a single `/and-write` invocation. Re-running `revise` or `redo` clears `gate_verdict` on bones in scope and re-runs the SVO + bone-gate; flat IDs are preserved for unchanged bones in revise mode.
+6. Audience membership is defined at `/and-project`. It does not change mid-project except via `/and-cast revise --swap`.
+7. Human checkpoints: series-level audit only (inside `/and-cast` Phase 5). `/and-substance book b<NN>` Phase 0 HARD-aborts if `project.series_audit.approved_at` is missing or `stale_since` is set.
+8. Card schema authority is `schemas/card.schema.md`. Margit validates against it. No card class outside the five defined (persona, location, prop, condition, behavior). **Exception:** `staff/orchestrator-critic/card.md` is staff-facing (judges production, not story content) and is explicitly outside the cards/ taxonomy.
+9. All agent dispatches use the Agent tool. Inline generation is not a substitute.
+10. **`/and-write` Phase 6 substance bone-gate is the bones-first authoring gate.** Per-bone axis-movement verification + per-scene aggregate Δ delivery + cost-paid check + opposing-force-visible. Replaces URI-026 tens-gate. `SUBSTANCE-FLAT-<axis>` and `SUBSTANCE-SUSPECT-cheap-gain-<axis>` are HARD findings. Deformed substance contracts cannot be rescued by downstream facet skin.
+11. **Shared reviewer resources.** The audience persona cards' `Threshold Discipline` body sections and the auditor class library (`CURVE-SHAPE` / `AP-SCAN` / `FREQUENCY-BAND` definitions in `.claude/commands/and-facets.md`) are the canonical shared surfaces. No pipeline-specific reimplementation. Patterns the audience flags at `/and-write` bone-gate graduate into AP-SCAN entries via the auditor's TASTE-FLAG → AP-SCAN promotion path.
+12. **Re-runnability.** Every command except `/and-project` is re-runnable per `design/substance/rerun-protocol.md`. Phase 0 of every re-runnable command implements the same shape: read upstream → check own output (prompt mode) → surface cascade → run.
 
 ---
 
@@ -132,15 +156,25 @@ Project-local slash commands in `.claude/commands/`.
 
 | Command | Purpose |
 |---------|---------|
-| `/and-project <title-slug> "<brief>" <audience-1> <audience-2> <audience-3>` | Project activation. Scaffolds `active-project/`, runs world-building (1a–1d) and series plan, presents output at the series-level audit checkpoint for human review. Season planning is owned by `/and-season s01` Phase 1 (auto-fires when no season plan exists). |
-| `/and-season <season-slug>` | Season-scope orchestrator. Auto-plans the season in Phase 1 if no `season-<slug>-plan.md` exists (handles s01 and subsequent seasons; reads previous-season terminal state when applicable), then expands content beats into bones, runs full season-scope review with bone-gate, judges at Phase 6 (orchestrator-critic), writes per-episode files at Phase 7. |
-| `/and-facets <slug>` | Per-episode facet pipeline. Produces ten facet files + per-character dialogue files under `theater/dialogue/<slug>.md` + scene-map derived structural facet at `theater/facets/scene-map-<slug>.md` (URI-SCENE-WINDOW, 2026-05-13 — emitted at Phase 4d, coverage-validated at Phase 5 CONSTRAINT). **Dialogue-coverage gate (URI-DIALOGUE-COVERAGE-GATE, 2026-05-12):** if proto-lines contains any `speaks to` bones, every such bone MUST be cited by ≥1 dialogue entry AND every speaker MUST have a non-empty dialogue file before `audited-r1` is set at Phase 6a. Phase 5 CONSTRAINT emits HARD findings on bare bones / missing files; Phase 6a re-verifies. **Scene-map coverage gate (URI-SCENE-WINDOW):** every bone must land in exactly one scene; gaps/overlaps/dangling-anchors are HARD findings re-verified at Phase 6a. |
-| `/and-stitch <slug>` | Per-episode stitcher. Reads proto-lines + facets + dialogue + exposition + scene-map; produces `draft/<slug>.md` (clean) + `draft/<slug>.annotated.md` (traced). Output lands in `draft/` because stitcher output is pre-editor; the `/and-wrap` editor pass writes the ship-ready manuscript to `polish/`. **Phase 1 modes (URI-SCENE-WINDOW, 2026-05-13):** `scene-window` (default) dispatches one fork per dramatist-marked scene with overlap-read context (back-look on prior rendered scene; forward-look on next scene's bones+facets), breaking multi-bone percussion within bone-faithfulness; the fork runs a mandatory per-bone discipline walk to catch invention-by-summary faults. `per-anchor` (fallback, `--phase-1-mode per-anchor` or `phase-1.mode: per-anchor` in profile) dispatches one fork per anchor; used when the scene-map facet is absent, the episode has low percussion accumulation, or fork-isolation debugging is wanted. **Dialogue gate (URI-DIALOGUE-COVERAGE-GATE):** if proto-lines has `speaks to` bones and the dialogue facet is empty/missing or any speech bone is bare, Phase 0.5 HARD-ABORTS. Opt-in `--allow-bare-speech` reroutes to legacy silent-action fallback (pre-2026-05-12 episodes only). |
-| `/and-wrap [slug \| --all-stitched \| s01e01..s01e05]` | Per-episode editor pass. Wraps stitcher draft into ship-ready manuscript. **URI-WRAP-V2 (2026-05-13).** Three phases: (1) audience review of rendered prose by the project's three audience personas — advisory flags only, not blocking; (2) auditor pass — rendered-prose-against-graph audit, eight classes (BONE-COVERAGE, DIALOGUE-VERBATIM, EXPOSITION-VERBATIM, NO-INVENTION, CONTINUITY, BLOCKING, SCENE-MAP-RESPECT, EARTH-BET-HARD-FENCE); HARD findings block the editor; (3) editor pass — single Agent dispatch with whole-text view; allowed-moves: prose economy, cross-scene variance, continuity, repetition cull, audience-flag remediation, audit-finding remediation, paragraph adjustments, voice consistency; forbidden: plot invention, dialogue/exposition modification, scene reordering, peak-shadow fusion, protected-pattern abolition. Mandatory per-bone discipline walk; `lost=0` required. Reads `draft/<slug>.md` + render-log + scene-map + facets + audience cards; writes `polish/<slug>.md`. v1 archived at `archive/commands/and-wrap.md` (built around v1 `show.md`; not applicable to shoot-v2). |
+| `/and-project <title-slug> "<brief>" <aud-1> <aud-2> <aud-3> [--screen-writer ...] [--dramatist ...] [--auditor ...] [--editor ...] [--orchestrator-critic ...]` | Project activation. Scaffolds `active-project/`, world-building (1a-1d), staff binding. Series chunk + structural prompts owned by `/and-series`. Non-re-runnable. |
+| `/and-series [revise\|redo]` | Series chunk (Star-Wars-trilogy paragraph) + structural prompts (book count, length ranges, cyclical, POV, cross-book continuity, world evolution, series-end shape). |
+| `/and-substance series\|book <slug>\|chapter <slug> [revise\|add\|redo] [--cascade [--resume\|--restart]]` | Recursive chunker. Three invocation levels; four chunk levels produced (series → book → chapter → scene). At series level: authors the signature. At chapter level: authors `pov_narrator` + `dramatic_shape` + `goal`. `--cascade` chains through `/and-write` + `/and-facets` + `/and-stitch` to `draft/<chapter>.md`. |
+| `/and-cast [revise\|redo] [--retire ...] [--add ...] [--swap ...]` | Cast roster + series-level audit checkpoint (the only blocking human checkpoint). |
+| `/and-write <chapter-slug> [revise\|redo] [--from-signals]` | Decompose scenes into bones-with-deltas + five-pass SVO + substance bone-gate + emit flattened bones file + scene-map facet. Replaces `/and-protolines`. |
+| `/and-facets <book>-<chapter>` | Per-chapter facet pipeline. Ten facets + dialogue + scene-map validation (downgraded from derivation under URI-SUBSTANCE-OVERHAUL). Tensometer dropped. URI-DIALOGUE-COVERAGE-GATE + URI-SCENE-WINDOW enforced. |
+| `/and-stitch <book>-<chapter>` | Per-chapter stitcher. Eight-phase render (lens-anchored → redundancy cull → compression → voice transform → local flow + speaker-paragraph breaks → buildup preservation → editorial reflection → finalize + scene-callout strip). Tensometer-fallback removed from Phase 0. Output: `draft/<book>-<chapter>.md` — **terminal deliverable** under the polish-deferred chain. |
+| `/and-review [<subcommand> [<args>]]` | Universal review primitive with subcommand router. Subcommands: `chunk` / `bone` / `contract` / `signature` / `bones` / `facets` / `cast` / `consistency` / `tree` / `feedback` / `verdict` / `prose` (DEFERRED). Verdict subcommand absorbs the former `/and-judge-book` and fires the orchestrator-critic against a book. |
+| `/and-cut` | Mid-pipeline stop. Saves resume checkpoint; prints "you are here" with `next:` and (if cascade was in-progress) `resume:` lines. |
 
 ---
 
 ## Not in scope
 
-- Gacha system — deferred
-- Workshop-artifact card class — excluded
+- Gacha system — deferred.
+- Workshop-artifact card class — excluded.
+- Polish / `/and-wrap` revival — deferred until substance machinery is proven.
+- Absolute-length floor mechanism — OOS, follow-on issue.
+- Emotional-substance orthogonality check — OOS, follow-on issue.
+- Plot-arc-completion dramatist check — OOS, follow-on issue.
+- World-detail consistency — OOS, follow-on issue.
+- `cards/dialects/` → `cards/behaviors/` directory rename — deferred (not lockstep with substance overhaul).

@@ -1,13 +1,21 @@
 ---
-description: Unified facet pipeline for one episode. Single command, six phases — R1 fanout → R1 fanin → R2 fanout → R2 fanin → audit (mechanical) → audience-gate (adversarial, blocking). Tens is upstream-supplied by /and-season. Output - active-project/theater/facets/ + active-project/theater/dialogue/ + audit report + audience-gate verdict. Usage - /and-facets [episode-slug]
+description: Unified facet pipeline for one chapter. Single command, six phases — R1 fanout → R1 fanin → R2 fanout → R2 fanin → audit (mechanical) → audience-gate (adversarial, blocking). Tensometer dropped under the substance overhaul; scene-map facet is upstream-emitted by /and-write Phase 7 (Phase 4d here is validation, not derivation). Output - active-project/theater/facets/ + active-project/theater/dialogue/ + audit report + audience-gate verdict. Usage - /and-facets <book>-<chapter>
 ---
 
-Unified facet pipeline. One episode in, audited + audience-accepted graph out. The four legacy sub-commands (-r1, -r2, -r3, -audit) are folded into this command; R3 is retired (the relaxation pass was default-skipped in the prior chain and is gone in this collapse). Phase 5b — audience adversarial gate — is the final blocking gate; the auditor's mechanical scan and the audience's adversarial reading must BOTH come back clean before /and-facets is "done." **Dialogue (eleventh facet, added 2026-05-12)** is folded in alongside exposition — R1 author + R2 judge + audit-class additions + audience-gate inclusion. Discipline lifts from v1 round-trip work (`design/shoot-v2/round-trip-method.md`, `dialogue-corpus.md`) via the locked rubric at `staff/dialogue-writer/rubric-dialogue.md`; no separate dialogue-tuning round-trip — the v1 protocol plugs in as facet discipline.
+Unified facet pipeline. One chapter in, audited + audience-accepted graph out. The four legacy sub-commands (-r1, -r2, -r3, -audit) are folded into this command; R3 is retired. Phase 5b — audience adversarial gate — is the final blocking gate; the auditor's mechanical scan and the audience's adversarial reading must BOTH come back clean before /and-facets is "done." **Dialogue** is folded in alongside exposition — R1 author + R2 judge + audit-class additions + audience-gate inclusion. Discipline lifts from v1 round-trip work (`design/shoot-v2/round-trip-method.md`, `dialogue-corpus.md`) via the locked rubric at `staff/dialogue-writer/rubric-dialogue.md`.
+
+**URI-SUBSTANCE-OVERHAUL (2026-05-17) mutations:**
+- Tensometer facet **removed** from R1/R2 fanout. R1 rubric input lists no longer read `tensometer.md`. Where pressure-signal is needed, rubrics consult `series.substance.*` + per-chapter `substance_delta` from showrunner memory instead.
+- Phase 4d scene-map **downgraded from derivation to validation**. `/and-write` Phase 7 emits the scene-map facet directly from `chapters[].scenes[]` in memory; Phase 4d confirms its presence + runs the URI-SCENE-WINDOW coverage check.
+- Phase 0 input-path renamed: `theater/proto-lines/<slug>.md` → `theater/bones/<book>-<chapter>.md`. Slug-arg shape: `<book>-<chapter>` (e.g. `b01-c01`).
+- Phase 0 step 4 tens-precondition abort **removed** as dead code.
+- Facet output-path convention: flat naming under `theater/facets/` — `<facet>-<book>-<chapter>.md`, `<facet>-<book>-<chapter>-<character>.md`, `_cite-index-<book>-<chapter>.md`, `scene-map-<book>-<chapter>.md`.
 
 You are the orchestrator. Six phases run in strict sequence:
 
 ```
-proto-lines/<slug>.md  (bones; upstream tens citations already accrued)
+theater/bones/<book>-<chapter>.md  (bones; upstream from /and-write Phase 7)
+theater/facets/scene-map-<book>-<chapter>.md  (scene-map; upstream from /and-write Phase 7)
         │
         ▼
    PHASE 1 — FANOUT (R1 parallel authoring)
@@ -59,44 +67,44 @@ proto-lines/<slug>.md  (bones; upstream tens citations already accrued)
             (only after Phase 5 = 0 HARD AND Phase 5b = ACCEPT)
 ```
 
-R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/state/vibes) + base proto-lines + upstream `tensometer.md`. R2 is **graph-aware**: every judge gets all ten R1 facet outputs (nine facet files + per-character dialogue files) + the cite-index. The audit is **cross-cutting**: one fork, full graph. The audience-gate is **adversarial-graph-aware**: per-facet adversarial reviewers attack the locked graph the way the auditor's mechanical scan cannot.
+R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/state/vibes) + base bones. R2 is **graph-aware**: every judge gets all R1 facet outputs (facet files + per-character dialogue files) + the cite-index. The audit is **cross-cutting**: one fork, full graph. The audience-gate is **adversarial-graph-aware**: per-facet adversarial reviewers attack the locked graph the way the auditor's mechanical scan cannot.
 
 ## Args
 
-- `$1` — optional. Episode slug (e.g. `s01e01`). If omitted, use `active.episode` from `active-project/staff/showrunner/memory.md`.
+- `$1` — required. Chapter slug in `<book>-<chapter>` form (e.g. `b01-c01`), or the in-memory chapter slug `b01c01` (the command normalizes either form). If omitted, use `active.chapter` from `active-project/staff/showrunner/memory.md`.
 
 ---
 
 ## Phase 0 — Validate
 
-1. Resolve episode slug.
-2. Read `active-project/staff/showrunner/memory.md`. Determine resume point:
-   - `protolined` — fresh run; start at Phase 1.
+1. Resolve chapter slug. Normalize to `<book>-<chapter>` form for file paths and to `b<NN>c<MM>` for showrunner-memory lookup.
+2. Read `active-project/staff/showrunner/memory.md`. Determine resume point from `chapters[<slug>].status`:
+   - `bones-written` — fresh run; start at Phase 1.
    - `faceted-r1` — partial-run resume; skip Phase 1+2, start at Phase 3.
    - `faceted-r2` — partial-run resume; skip Phase 1–4, start at Phase 5.
    - `audited-r1-mechanical` — Phase 5 cleared (0 HARD) but audience-gate not yet run or in mid-cycle. Resume at Phase 5b.
    - `audited-r1` — both Phase 5 + Phase 5b cleared; already done. Print "already audited; re-run requires explicit re-audit" and exit unless re-audit is wanted.
-3. Read the proto-lines file. Lift the seven extended-header fields: `episode`, `narrator`, `goal`, `cast`, `locations`, `prior_episode`, `aggregate_range`.
-4. **Upstream tens precondition.** Locate `active-project/theater/facets/tensometer-<season-slug>e<NN>.md` (final per-episode form from /and-season Phase 7 Step 4). Copy/rename to `active-project/theater/facets/tensometer.md` as the working surface. Abort with the resolution path if missing — facets cannot run without the bone-gate tens output.
-5. Confirm `active-project/theater/facets/` is empty apart from `tensometer.md`. If other facet files exist for this episode, abort with paths printed; archive first to re-run. (Skip this check on partial-run resume.) Confirm `active-project/theater/dialogue/` is empty (or does not exist — `mkdir -p` is fine); if per-character dialogue files exist for this episode, abort with paths printed; archive first to re-run.
+3. Read the bones file at `active-project/theater/bones/<book>-<chapter>.md`. Lift the seven extended-header fields: `episode`, `narrator`, `goal`, `cast`, `locations`, `prior_episode`, `aggregate_range`. (The field name `episode:` is preserved for downstream-compatibility; value is the chapter slug.)
+4. **Upstream scene-map precondition.** Confirm `active-project/theater/facets/scene-map-<book>-<chapter>.md` exists (emitted by `/and-write` Phase 7). Abort if missing — `/and-write` must be re-run.
+5. Confirm `active-project/theater/facets/` is empty of this-chapter's facet outputs apart from `scene-map-<book>-<chapter>.md`. If other facet files for this chapter exist, abort with paths printed; archive first to re-run. (Skip this check on partial-run resume.) Confirm `active-project/theater/dialogue/<book>-<chapter>.md` does not exist or `mkdir -p` is clean.
 6. Confirm warehouse loc cards for every slug in `locations:` resolve. Confirm every `cast:` slug resolves under `active-project/actors/<slug>/`.
-7. Read `schemas/facet.schema.md`, `schemas/proto-line.schema.md`, `schemas/audit-report.schema.md`, `schemas/dialogue.schema.md` once (orchestrator reference).
+7. Read `schemas/facet.schema.md`, `schemas/bones.schema.md`, `schemas/audit-report.schema.md`, `schemas/dialogue.schema.md` once (orchestrator reference).
 8. Create `active-project/theater/facets/_inflight/` and `active-project/theater/facets/_inflight-r2/`.
-9. **Speaking-character + speech-bone inventory (URI-DIALOGUE-COVERAGE-GATE, 2026-05-12).** Grep the canonical proto-lines for `speaks to` bones. Record:
-   - `speech_bones`: the full list of proto-line IDs where the SVO is `<X> speaks to <Y>`.
-   - `speakers`: the distinct set of subject slugs across those bones (i.e. characters who must produce a dialogue file).
-   Stash this inventory in the render summary and pass it to Phase 5 (CONSTRAINT § dialogue-coverage) and Phase 6a (persist precondition). If `speech_bones` is non-empty, dialogue is **mandatory** for this run — Phase 1 author #11 must produce one `theater/dialogue/<speaker-slug>.md` file per speaker with ≥1 entry, AND every speech bone must be cited by ≥1 entry post-R2 merge. A "speech episode with empty dialogue" terminal state is a build defect, not an acceptable run outcome.
+9. **Speaking-character + speech-bone inventory (URI-DIALOGUE-COVERAGE-GATE).** Grep the canonical bones file for `speaks to` bones. Record:
+   - `speech_bones`: the full list of bone flat_ids where the SVO is `<X> speaks to <Y>`.
+   - `speakers`: the distinct set of subject slugs across those bones.
+   If `speech_bones` is non-empty, dialogue is **mandatory** — Phase 1 dialogue author must produce one `theater/dialogue/<book>-<chapter>.md` entry per speaker with ≥1 entry, AND every speech bone must be cited by ≥1 entry post-R2 merge.
 
 Print:
 ```
-Episode: <slug>
+Chapter: <slug>
 Narrator: <slug>
 Goal: <one sentence>
 Cast: <slug>, <slug>, ...
 Locations: <slug>, ...
-Proto-lines: <path>  (<count> bones)
+Bones: <path>  (<count> bones)
+Scene-map: <path>  (<S> scenes covering 1-<N>)
 Speech bones: <count>  (speakers: <slug>, <slug>, ...)
-Upstream tens: <path>  (<count> entries; 1s/2s/3s = X/Y/Z)
 Starting phase: <Phase 1 | Phase 3 | Phase 5>
 ```
 
@@ -109,34 +117,34 @@ Starting phase: <Phase 1 | Phase 3 | Phase 5>
 - **One parallel Agent block.** All R1 authors fire in a single message with concurrent Agent tool calls. Sequential dispatch is a build defect.
 - **No shared-file race.** Each author writes (i) its facet file (or per-character slice — distinct paths) and (ii) an annotated proto-lines copy under `_inflight/proto-lines-<facet>.md` (or `_inflight/proto-lines-<facet>-<slug>.md` for per-character). The base proto-lines file is **not** mutated during R1.
 - **Citation write-back on the author's copy.** Each author copies the base proto-lines file to its `_inflight/` path and appends `[<facet-prefix>:<id>]` to every proto-line it decorated. Prefixes: `loc-state`, `narrator`, `sensory`, `state`, `mem`, `feel`, `meta`, `vibes`. **Dialogue authors append `[<character-slug>:<id>]` instead of a facet-prefix token** (per `schemas/dialogue.schema.md` § Stitch interface — the citation IS the character slug, no `dialogue:` namespace). Upstream `tens:` citations on the base proto-line are preserved.
-- **Forbid loading other R1 facet files.** Each author reads only its rubric + the inputs the rubric names + the base proto-lines + the upstream `tensometer.md` (where used as a correlative gate). No cross-R1-facet peeking.
+- **Forbid loading other R1 facet files.** Each author reads only its rubric + the inputs the rubric names + the base proto-lines. No cross-R1-facet peeking. Tens reads are dropped under the substance overhaul; where pressure-signal is needed, the per-chapter `substance_delta` from showrunner memory is the substitute.
 - **Per-file cull is the author's last act.** Per `schemas/facet.schema.md` § "Per-file cull" — delete-only, one pass.
 - **Body integrity.** Authors append citations only; SVO bodies in `_inflight/` must be byte-identical to the base. Merge tool aborts the run if any body diverges.
 - **Each dispatch returns:** path to written facet file, path to `_inflight/` proto-lines copy, entry count, cull count, any flagged seams.
 
 ### R1 authors (nine in the parallel block)
 
-**1. location-state (studio)** — base proto-lines; all loc cards named in `locations:`; schema § location-state; `design/shoot-v2/rubric-location-state.md`; movement-verb gate; upstream `tensometer.md` (correlative). Forbid: other facet rubrics, vibes. Out: `location-state.md` + `_inflight/proto-lines-loc-state.md`.
+**1. location-state (studio)** — base proto-lines; all loc cards named in `locations:`; schema § location-state; `design/shoot-v2/rubric-location-state.md`; movement-verb gate; per-chapter `substance_delta` from showrunner memory (pressure-signal substitute). Forbid: other facet rubrics, vibes. Out: `location-state.md` + `_inflight/proto-lines-loc-state.md`.
 
-**2. narrator-interest (POV impersonator)** — POV stack (card + behavior cards + LTM + STM + state); base proto-lines; upstream `tensometer.md`; `rubric-narrator-interest.md`; schema § interest flags — narrator. Override impersonator: facet-authoring (no show.md, no action costs). Forbid: other characters' cards, audience personas, source prose. Out: `interest-narrator.md` + `_inflight/proto-lines-narrator.md`.
+**2. narrator-interest (POV impersonator)** — POV stack (card + behavior cards + LTM + STM + state); base proto-lines; per-chapter `substance_delta` from showrunner memory; `rubric-narrator-interest.md`; schema § interest flags — narrator. Override impersonator: facet-authoring (no show.md, no action costs). Forbid: other characters' cards, audience personas, source prose. Out: `interest-narrator.md` + `_inflight/proto-lines-narrator.md`.
 
-**3. sensory (studio — fresh fork)** — base proto-lines; upstream `tensometer.md` (correlative); all loc cards; `rubric-sensory.md`; disambiguation gate; per-scene cap ≤3; sparsity 3-6%; modality ≥2 per episode. Out: `sensory.md` + `_inflight/proto-lines-sensory.md`.
+**3. sensory (studio — fresh fork)** — base proto-lines; per-chapter `substance_delta` from showrunner memory (pressure-signal substitute); all loc cards; `rubric-sensory.md`; disambiguation gate; per-scene cap ≤3; sparsity 3-6%; modality ≥2 per episode. Out: `sensory.md` + `_inflight/proto-lines-sensory.md`.
 
-**4. state-updates env (studio — fresh fork)** — base proto-lines; upstream `tensometer.md`; all loc + prop cards; `rubric-state-updates.md`; schema § state updates (`<target>.<field>: <old> -> <new>`, `target` ∈ {`studio`, `prop:<slug>`}). Scope: environmental + location + prop only. Out: `state-updates-env.md` + `_inflight/proto-lines-state-env.md`.
+**4. state-updates env (studio — fresh fork)** — base proto-lines; per-chapter `substance_delta` from showrunner memory; all loc + prop cards; `rubric-state-updates.md`; schema § state updates (`<target>.<field>: <old> -> <new>`, `target` ∈ {`studio`, `prop:<slug>`}). Scope: environmental + location + prop only. Out: `state-updates-env.md` + `_inflight/proto-lines-state-env.md`.
 
-**5. state-updates actor (per-character impersonators ×N)** — for each `cast:` slug, one impersonator dispatch in the same parallel block. Character stack + base proto-lines + upstream `tensometer.md` + `rubric-state-updates.md` § actor-state. Override impersonator: facet-authoring. Out: `state-updates-<slug>.md` + `_inflight/proto-lines-state-<slug>.md`.
+**5. state-updates actor (per-character impersonators ×N)** — for each `cast:` slug, one impersonator dispatch in the same parallel block. Character stack + base proto-lines + per-chapter `substance_delta` from showrunner memory + `rubric-state-updates.md` § actor-state. Override impersonator: facet-authoring. Out: `state-updates-<slug>.md` + `_inflight/proto-lines-state-<slug>.md`.
 
-**6. memory (POV impersonator — fresh fork; do not re-use NI fork's STM)** — POV stack; base proto-lines; upstream `tensometer.md` (inverted-tens density gate); `rubric-memory-flags.md`; schema § memory flags. NI co-citation is a R2 concern. Override impersonator: facet-authoring. Out: `memory.md` + `_inflight/proto-lines-mem.md`.
+**6. memory (POV impersonator — fresh fork; do not re-use NI fork's STM)** — POV stack; base proto-lines; per-chapter `substance_delta` from showrunner memory (substance-density substitute); `rubric-memory-flags.md`; schema § memory flags. NI co-citation is a R2 concern. Override impersonator: facet-authoring. Out: `memory.md` + `_inflight/proto-lines-mem.md`.
 
-**7. feeling (per-character impersonators ×N)** — for each `cast:` slug, one impersonator dispatch in the same parallel block. Character stack + base proto-lines + upstream `tensometer.md` (correlative) + `rubric-feeling.md`; schema § feeling flags — per-character per-scene cap ≤1 hard; sparsity 2-5%; multi-justification ≥3 of 5. Forbid: named-feeling vocabulary, hedges, similes. Override impersonator: facet-authoring. NI non-redundancy is a R2 concern. Out: `feeling-<slug>.md` + `_inflight/proto-lines-feel-<slug>.md`.
+**7. feeling (per-character impersonators ×N)** — for each `cast:` slug, one impersonator dispatch in the same parallel block. Character stack + base proto-lines + per-chapter `substance_delta` from showrunner memory + `rubric-feeling.md`; schema § feeling flags — per-character per-scene cap ≤1 hard; sparsity 2-5%; multi-justification ≥3 of 5. Forbid: named-feeling vocabulary, hedges, similes. Override impersonator: facet-authoring. NI non-redundancy is a R2 concern. Out: `feeling-<slug>.md` + `_inflight/proto-lines-feel-<slug>.md`.
 
-**8. metaphor (editor)** — base proto-lines; upstream `tensometer.md` (curve-discipline; AP7 default-refuse at tens ≠ 3); `rubric-metaphor.md`; schema § metaphor flags; sparsity 0-3%; per-scene cap ≤1 cross-character. R1 metaphor entries may carry **provisional** `licensed-by:` notes naming the intended anchor by description; resolution to machine-readable `<prefix>:<id>` form happens in R2. Forbid: vibes, audience personas, behavior cards. Out: `metaphor.md` + `_inflight/proto-lines-meta.md`.
+**8. metaphor (editor)** — base proto-lines; per-chapter `substance_delta` from showrunner memory (curve-discipline substitute; AP7 default-refuse on bones outside hinge-magnitude band); `rubric-metaphor.md`; schema § metaphor flags; sparsity 0-3%; per-scene cap ≤1 cross-character. R1 metaphor entries may carry **provisional** `licensed-by:` notes naming the intended anchor by description; resolution to machine-readable `<prefix>:<id>` form happens in R2. Forbid: vibes, audience personas, behavior cards. Out: `metaphor.md` + `_inflight/proto-lines-meta.md`.
 
-**9. vibes-updates (showrunner)** — base proto-lines; upstream `tensometer.md`; all actor vibes files; all loc card VIBES sections; `staff/studio/vibes.md`; `rubric-vibes.md` + `rubric-vibes-v1.1-patch.md`; schema § vibes-updates (entity-target-primary form; `licensed-by:` mandatory; R1 provisional anchor-hints OK, resolution in R2). Showrunner-as-author is the one exception to the "showrunner does not author" rule. Out: `vibes.md` + `_inflight/proto-lines-vibes.md`.
+**9. vibes-updates (showrunner)** — base proto-lines; per-chapter `substance_delta` from showrunner memory; all actor vibes files; all loc card VIBES sections; `staff/studio/vibes.md`; `rubric-vibes.md` + `rubric-vibes-v1.1-patch.md`; schema § vibes-updates (entity-target-primary form; `licensed-by:` mandatory; R1 provisional anchor-hints OK, resolution in R2). Showrunner-as-author is the one exception to the "showrunner does not author" rule. Out: `vibes.md` + `_inflight/proto-lines-vibes.md`.
 
-**10. exposition (exposition-author)** — base proto-lines; upstream `tensometer.md` (peak/transitional gate for which anchors warrant heavier render-as); audience persona cards `active-project/audience/*/`; series-plan; world-build cards; condition cards; character cards (for series-specific objects); `active-project/staff/showrunner/memory.md` (for `prior_episode`); cross-episode register `active-project/staff/exposition-author/glossed-terms.md` (if exists); `rubric-exposition.md`; schema § exposition. Audience-modeled-by-construction: the union-of-audience-personas gap test is the central authoring discipline. Forbid: lens facet rubrics (R1 stays blind), source prose. Out: `exposition-<slug>.md` + `_inflight/proto-lines-exposition.md` + register write-back annotated. The exposition author DOES NOT read other R1 facet outputs at R1 (audience-pure gap-identification); the cross-check against lens facets is the R2 judge's job.
+**10. exposition (exposition-author)** — base proto-lines; per-chapter `substance_delta` from showrunner memory (peak/transitional gate substitute for which anchors warrant heavier render-as); audience persona cards `active-project/audience/*/`; series-plan; world-build cards; condition cards; character cards (for series-specific objects); `active-project/staff/showrunner/memory.md` (for `prior_episode`); cross-episode register `active-project/staff/exposition-author/glossed-terms.md` (if exists); `rubric-exposition.md`; schema § exposition. Audience-modeled-by-construction: the union-of-audience-personas gap test is the central authoring discipline. Forbid: lens facet rubrics (R1 stays blind), source prose. Out: `exposition-<slug>.md` + `_inflight/proto-lines-exposition.md` + register write-back annotated. The exposition author DOES NOT read other R1 facet outputs at R1 (audience-pure gap-identification); the cross-check against lens facets is the R2 judge's job.
 
-**11. dialogue (dialogue-writer) — per-behavior-card fanout** — for each distinct behavior card present in the cast (resolved by reading `cards/dialects/<character-slug>.card.md` for every `cast:` slug and grouping by card), one fork in the parallel block. Each fork authors all speakers sharing that card. Reads: behavior card stack (margit-composed: leaf → `inherits:` parent → universal overlay → `references:` adjacent cards); speaker persona + ltm + stm + state for every speaker the fork covers; base proto-lines (the speaking-beat anchors are proto-lines where this card's speakers appear as subject of a `speaks` SVO); upstream `tensometer.md` (correlative — peak anchors pressure register state); `staff/dialogue-writer/rubric-dialogue.md`; schema `schemas/dialogue.schema.md`. Discipline: eight v1 round-trip writer patterns (per-card forks, card-stack load order, blind to originals, intent-as-state, multi-draft + chosen-mark, affirmative card-signature citation, anti-patterns explicit, calibration anchor) — all load-bearing per the rubric. Forbid: other R1 facet outputs (R1 stays blind), show files / source prose, behavior cards not in this fork's domain. Out: per-character dialogue files at `active-project/theater/dialogue/<character-slug>.md` per `schemas/dialogue.schema.md` (file location is outside `theater/facets/` per existing schema); drafts sidecar at `active-project/staff/dialogue-writer/<character-slug>.drafts.md` (multi-draft + chosen-mark + card-signature citations); annotated proto-lines copy at `_inflight/proto-lines-dialogue-<card-slug>.md` with `[<character-slug>:<id>]` citations on speaking-beat anchors.
+**11. dialogue (dialogue-writer) — per-behavior-card fanout** — for each distinct behavior card present in the cast (resolved by reading `cards/dialects/<character-slug>.card.md` for every `cast:` slug and grouping by card), one fork in the parallel block. Each fork authors all speakers sharing that card. Reads: behavior card stack (margit-composed: leaf → `inherits:` parent → universal overlay → `references:` adjacent cards); speaker persona + ltm + stm + state for every speaker the fork covers; base proto-lines (the speaking-beat anchors are proto-lines where this card's speakers appear as subject of a `speaks` SVO); per-chapter `substance_delta` from showrunner memory (peak anchors pressure register state); `staff/dialogue-writer/rubric-dialogue.md`; schema `schemas/dialogue.schema.md`. Discipline: eight v1 round-trip writer patterns (per-card forks, card-stack load order, blind to originals, intent-as-state, multi-draft + chosen-mark, affirmative card-signature citation, anti-patterns explicit, calibration anchor) — all load-bearing per the rubric. Forbid: other R1 facet outputs (R1 stays blind), show files / source prose, behavior cards not in this fork's domain. Out: per-character dialogue files at `active-project/theater/dialogue/<character-slug>.md` per `schemas/dialogue.schema.md` (file location is outside `theater/facets/` per existing schema); drafts sidecar at `active-project/staff/dialogue-writer/<character-slug>.drafts.md` (multi-draft + chosen-mark + card-signature citations); annotated proto-lines copy at `_inflight/proto-lines-dialogue-<card-slug>.md` with `[<character-slug>:<id>]` citations on speaking-beat anchors.
 
 (Ten authors. State-updates-actor and feeling each fan out further by cast size, making the parallel block larger by cast count; exposition adds a single dispatch; dialogue fans out by distinct-behavior-card count present in the cast — typically 3–5 in a Westeros episode.)
 
@@ -235,35 +243,17 @@ Body-integrity, citation union, slice consolidation, stale-citation check, cite-
 
 Set status `faceted-r1` → `faceted-r2` in showrunner memory.
 
-### 4d. Scene-map emission (URI-SCENE-WINDOW, 2026-05-13)
+### 4d. Scene-map validation (URI-SCENE-WINDOW, downgraded from derivation under URI-SUBSTANCE-OVERHAUL 2026-05-17)
 
-Emit `active-project/theater/facets/scene-map-<episode-slug>.md` per `schemas/scene-map.schema.md`. This is a derived structural facet, not authored — the orchestrator combines existing graph sources mechanically. No Agent dispatch.
+Under the substance overhaul, `/and-write` Phase 7 emits the scene-map facet directly from `chapters[].scenes[]` in showrunner memory. Phase 4d **no longer derives** — it validates.
 
-**Derivation procedure:**
-1. **Candidate boundaries from proto-lines.** Walk `theater/proto-lines/<slug>.md`; record blank-line positions (time-skip markers) and the bone IDs flanking each.
-2. **Location-state transitions.** Walk `theater/facets/location-state.md`; record every entry whose `<location-slug>` differs from the prior loc-state entry. Each such transition is a candidate boundary.
-3. **NI sparsity-gradient and time-cognition.** Walk `theater/facets/interest-narrator.md`; record entries citing time-of-day shifts (`already half-gone`, `the morning was`, etc.) or post-time-skip cognition.
-4. **Tensometer labelling authority.** Read the scene-footer section of `theater/facets/tensometer-<slug>.md` (or `tensometer-<season-slug>e<NN>.md` for bone-gate-sourced tens). The tensometer's named scenes (A, B, …) are the canonical labels. Reconcile candidate-boundary count against the tensometer's named-scene count:
-   - If the tensometer names N scenes and candidate boundaries imply M scenes:
-     - M == N: assign labels A..N to the candidates in order.
-     - M > N: the candidates include sub-scene splits the tensometer did not name. Merge consecutive candidates that share `<location-slug>` and `<time-of-day>` until M == N.
-     - M < N: the tensometer named more scenes than boundaries imply. Trust the tensometer's count; insert boundaries at the next NI-cognition-of-time-shift inside the under-counted range.
-5. **Per-scene header derivation.** For each scene's range:
-   - `<location-slug>`: the loc-state entry citing the scene's first non-transitional bone. Use `unstated` only when no loc-state cites any bone in the range.
-   - `<time-of-day>`: from NI cognition entries inside the range, OR from exposition `scene-open-orient` entries, OR carried-forward from the prior scene if the range is `continuous`.
-   - `<one-line>`: condense the tensometer's narrated scene description to ≤80 chars. If the tensometer's scene-footer is sparse, derive from the cluster's peak bone's NI/feel entries.
-6. **Per-scene tens-aware field derivation (URI-SCENE-RHYTHM, 2026-05-13).** For each scene, walk the tensometer's per-bone entries inside the scene's range and compute:
-   - **`rhythm-shape`**: classify the tens topology per the rules in `schemas/scene-map.schema.md` § Per-scene tens-aware fields. The classifier is mechanical (all-tens=1 → flat-low; tens=3 in last-third → rising-to-peak; etc.).
-   - **`peak-bones`**: list every bone with tens ≥ 2; format `@<id>=<tens>`.
-   - **`peak-shadow-bones`**: for each peak bone, add the immediately-prior and immediately-next bone IDs if they exist in-scene and have tens=1. Deduplicate.
-   - **`fusion-eligible-runs`**: walk the scene's tens=1 bones; group consecutive runs of length ≥3; exclude any bone in `peak-shadow-bones`; emit surviving runs as `@<start>-@<end>`. A run split by a peak-shadow bone produces two shorter runs, each of which emits only if it independently has length ≥3.
-   - **`protected-patterns`**: run the pattern detectors (log-trio, cardinal-quartet, three-note-buildup, routing-countdown, threshold-cross, return-of, fauna-relay-refrain) over the scene's bone sequence; emit each detected pattern as `<pattern-name> @<start>-@<end>`. Pattern definitions follow `phase-1.protected-patterns` from `schemas/stitch-profile.schema.md`.
-7. **Coverage check.** Validate every bone in proto-lines lands in exactly one scene's range. Emit `FAULT-SCENE-MAP-COVERAGE-GAP @<id>` for uncovered bones, `FAULT-SCENE-MAP-COVERAGE-OVERLAP @<id>` for double-covered bones. Both are HARD; surface to Phase 5 audit.
-8. **Write file.** Per schema. Include frontmatter (`scene-map`, `generated`, `source`, `auto-derived: true`, `total-scenes`, `total-bones`) + body blocks (header line + indented tens-aware fields per scene) + coverage footer.
+**Validation procedure:**
+1. Confirm `active-project/theater/facets/scene-map-<book>-<chapter>.md` exists (it should — Phase 0 step 4 already pre-checked). If absent at this point, abort.
+2. Read the scene-map. Validate the URI-SCENE-WINDOW coverage check: every bone in `theater/bones/<book>-<chapter>.md` lands in exactly one scene's `@<start>-@<end>` range; no gaps; no overlaps; no dangling anchors; no duplicate scene labels; frontmatter `total-scenes` / `total-bones` match body.
+3. Validate the tens-aware fields (`rhythm-shape`, `peak-bones`, `peak-shadow-bones`, `fusion-eligible-runs`, `protected-patterns`) are populated per `schemas/scene-map.schema.md` if the facet was emitted with them. Under the substance overhaul these fields are derived from the per-bone `substance_delta.axis_moves.magnitude` (treated as the new pressure-signal) instead of tensometer entries; `/and-write` Phase 7 computes them at emit time.
+4. **Coverage failures HARD-fault** and surface to Phase 5 audit. The orchestrator does not derive a fallback — under the new chain, scene-map emission is `/and-write`'s job, and a missing/broken scene-map indicates upstream did not run cleanly.
 
-The scene-map ships alongside the cite-index as part of Phase 4c's structural-emission output. Both are re-derivable from upstream sources; both are consumed by downstream pipelines.
-
-If the tensometer's scene-footer is empty or absent (rare; pre-URI-SCENE-WINDOW episodes), fall back to candidate-boundary-only derivation and label scenes A.., flagging the emission with `frontmatter.source: derived from proto-lines + loc-state + ni (no tensometer scene-footer)`. The auditor's coverage check still fires.
+The tensometer-fallback path (which previously parsed `tensometer-<slug>.md`'s scene-footer when the scene-map facet was missing) is removed as dead code.
 
 ---
 
