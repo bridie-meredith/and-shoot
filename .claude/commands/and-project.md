@@ -1,8 +1,8 @@
 ---
-description: Activate a new and-shoot project. Scaffolds active-project/, runs world-building and series planning (steps 1a–1d + series plan), and presents output for human audit. Season planning is out of scope — run /and-season s01 after activation (Phase 1 will auto-plan the season since no plan yet exists). No titles. Usage: /and-project ["<brief>"]
+description: Activate a new and-shoot project. Scaffolds active-project/, runs boundary-scoping (Phase 1.4 checkpoint), world-building, and series planning (steps 1a–1d + series plan), and presents output for human audit. Season planning is out of scope — run /and-season s01 after activation (Phase 1 will auto-plan the season since no plan yet exists). No titles. Usage: /and-project ["<brief>"]
 ---
 
-Full project activation for the and-shoot pipeline. Three phases: scaffold (mechanical, direct), brief expansion (screen-writer), planning (you orchestrate directly). Human sees the planning output at the end — not the deliberation that produced it.
+Full project activation for the and-shoot pipeline. Phases: scaffold (mechanical, direct), boundary scoping (fork; checkpoint), brief expansion (screen-writer), audience selection, planning (you orchestrate directly). **Two human checkpoints:** boundary-scope (Phase 1.4, before any editorial work) and series-level audit (Phase 3, after planning). The boundary-scope checkpoint exists to prevent the orchestrator from interpolating load-bearing decisions (patron identity, faction, world-physics calibrations, scope, timeline, closing image, etc.) on top of the user's prompt without surfacing them. Brief expansion and all downstream planning run inside the bounds the user confirms at Phase 1.4.
 
 **Scope.** /and-project ends at the series-level audit. Season planning (drama, vibe-cloud delta, content beats) is owned by `/and-season <slug>` Phase 1, which auto-fires when no `season-<slug>-plan.md` exists. After human approval at the audit checkpoint, the next command is `/and-season s01` (which plans the season then continues into bone authoring + interpretive split). Separation of duties: /and-project = world + series; /and-season = season planning + bone authoring + interpretive split.
 
@@ -138,16 +138,118 @@ Verify `cards/personas/INDEX.md` and `cards/locations/INDEX.md` exist. Print lin
 ### 6. Print scaffold complete
 
 ```
-Scaffold complete. Running brief expansion.
+Scaffold complete. Running boundary scope.
+```
+
+---
+
+## Phase 1.4 — Boundary scoping (fork; first human checkpoint)
+
+This phase exists to surface the load-bearing decisions implicit in the brief BEFORE any editorial work begins. It runs as an isolated fork — never inline. The main session does not contaminate the boundary analysis with its own interpolations; it only reads the fork's report, presents it, captures user response, and writes the binding sheet.
+
+**Critical rule: NEVER INLINE.** All boundary analysis happens inside the fork. If the main session ever does its own boundary analysis (e.g., "let me also think about what's required..."), the isolation property is broken and downstream decisions will silently carry the contamination.
+
+### 1. Dispatch the fork
+
+Use the Agent tool with `subagent_type: general-purpose`. The fork's prompt MUST:
+
+- Pass the user's brief VERBATIM (no paraphrase, no compression).
+- Pass the structural end-requirement framing line where applicable ("the protagonist ends in a [bad-place / good-place / ambiguous-place], and the reason is [<cause structure>]").
+- Forbid editorial choices: "If the prompt does not fix it, mark it OPEN. Do not invent setting specifics, factions, range numbers, neighborhoods, timelines, antagonists, or closing images."
+- Forbid reading any prior /and-project artifacts (no world-notes.md, no series-plan.md, no boundary-scope.r*.md from prior revise loops, no shelved `projects/` content).
+- Require four output sections, in this order, with these headings verbatim:
+  1. **BOUNDARIES (what the prompt FIXES)** — every load-bearing decision the prompt fixes. For each: value + source phrase from the prompt + confidence (HIGH/MEDIUM/LOW). Fields to scan include but are not limited to: protagonist, protagonist condition at story-open, start-location, time-period, world-physics constraints, format/length, thematic spine, end-requirement, tonal register, audience.
+  2. **OPEN PARAMETERS (what the prompt does NOT fix)** — enumerate every load-bearing decision the pipeline will need to make that the prompt does not specify. For each: name the decision and (one line) what kinds of values are admissible. Aim for completeness over brevity. Do not pick.
+  3. **STORY TYPE (that fits the boundaries)** — 2–3 structural shapes that fit the boundaries. One-line distinction each. The end-requirement is the strongest determinant.
+  4. **CHARACTER ARCHETYPES (that fit the boundaries and story type)** — per implied role (protagonist characterization, foil, false-ally, true-ally, antagonist-as-person, antagonist-as-institution, victim-by-which-cost-is-paid, witness, opposite-number), 2–4 archetype options.
+
+The fork writes its full report to `active-project/staff/showrunner/boundary-scope.md`. Length budget: under 800 words total.
+
+### 2. Read the report
+
+Main session reads `boundary-scope.md`. **Do not re-analyze, re-rank, or compress.** If the fork enumerated 22 open parameters, the user sees 22. Compression is a contamination vector — deciding which open parameters are "important enough to show" is an editorial decision under the guise of presentation.
+
+### 3. Present checkpoint to the human
+
+```
+--- BOUNDARY SCOPE — Phase 1.4 checkpoint ---
+
+[full contents of boundary-scope.md surfaced near-verbatim;
+trim only purely-mechanical headers; preserve every list item]
+
+Respond:
+  APPROVE-OPEN  — proceed with all open parameters genuinely open
+  SELECT        — pick a story-type and/or pin open parameters.
+                  Format: "story-type: <name>. pinned: <key>: <value>, ..."
+  REVISE        — supply additional prompt context or name a fork
+                  misreading; fork will re-run on a fresh isolated context
+```
+
+### 4. Handle user response
+
+**APPROVE-OPEN** → go to step 5 with `story_type: open`, no pinned parameters.
+
+**SELECT** → parse the user's response. For each pinned parameter:
+- Validate that the name appears in the fork's OPEN PARAMETERS list.
+- Validate that the value is admissible per the fork's enumerated value-kind for that parameter.
+- If the user pins a name the fork did not enumerate, surface a sub-checkpoint before proceeding (the user may want to revise; do not silently expand the open-parameters set).
+- If the user pins a value the fork did not enumerate but is plausibly within the admissible value-kind, accept it; otherwise surface a sub-checkpoint.
+
+Then go to step 5 with the validated selections.
+
+**REVISE** → rename existing `boundary-scope.md` → `boundary-scope.r1.md` (or `.r2.md` etc. on subsequent revisions). Re-dispatch the fork in a NEW isolated context with `<original brief> + <user's revision notes>`. The new fork MUST NOT read any prior `boundary-scope.r*.md` files. Loop back to step 2.
+
+### 5. Write the prompt-binding sheet
+
+Write `active-project/staff/showrunner/prompt-binding.md`:
+
+```
+# Prompt Binding Sheet — generated at Phase 1.4 checkpoint
+# This is the canonical input for all downstream phases.
+
+## Original prompt (verbatim)
+<the user's brief as supplied, character-for-character>
+
+## Boundaries (fixed by prompt — verbatim from boundary-scope.md §1)
+<copied verbatim from the fork's report>
+
+## User checkpoint response: <APPROVE-OPEN | SELECT>
+
+## Story-type
+<chosen-name | open>
+
+## Pinned open parameters
+- <name>: <value>
+- <name>: <value>
+(or: none)
+
+## Remaining open parameters
+- <name>
+- <name>
+...
+```
+
+The binding sheet is the operative contract for everything downstream. Brief-expansion reads it. 1a reads it. 1b loops only on remaining-open parameters that need OQs. 1c/1d/series-plan all consume it.
+
+### 6. Print phase-complete
+
+```
+Boundary scope confirmed. Binding sheet written.
+Running brief expansion within the confirmed bounds.
 ```
 
 ---
 
 ## Phase 1.5 — Brief expansion
 
-**If no brief was provided (random-brief mode):** before dispatching screen-writer, tell screen-writer to generate the brief. Screen-writer reads `staff/audience/INDEX.md` and `cards/` to get a sense of available material, then proposes any premise — any genre, any source world, any structural register. No constraints on content. Screen-writer writes the generated brief to `active-project/staff/showrunner/brief-generated.md`. Use this as the brief for all subsequent steps, including the brief expansion below.
+**If no brief was provided (random-brief mode):** before dispatching screen-writer, tell screen-writer to generate the brief. Screen-writer reads `staff/audience/INDEX.md` and `cards/` to get a sense of available material, then proposes any premise — any genre, any source world, any structural register. No constraints on content. Screen-writer writes the generated brief to `active-project/staff/showrunner/brief-generated.md`. Use this as the brief for all subsequent steps. In random-brief mode, run Phase 1.4 (boundary scope) on the generated brief BEFORE this expansion — the generated brief is just another brief.
 
-Dispatch screen-writer with the brief. Screen-writer does **not** generate a plan. It maps the concept-space the brief opens — the full range of stories this brief could become before any direction is chosen.
+Dispatch screen-writer with the brief AND the binding sheet at `active-project/staff/showrunner/prompt-binding.md`. Screen-writer reads the binding sheet first. Screen-writer does **not** generate a plan. It maps the concept-space the brief opens — the full range of stories this brief could become INSIDE THE BOUNDS the user confirmed at Phase 1.4.
+
+**Binding-sheet discipline:**
+- Alternative framings must respect the chosen story-type. If `story-type: open`, framings may span the fork's 2–3 story-type options; if a story-type is chosen, framings stay inside it.
+- Building blocks must respect pinned open parameters. A pinned parameter is a decided fact for this expansion, not a variable to range over.
+- Adjacent concepts and unframed material can range freely over remaining-open parameters; this is where the expansion does its most useful work.
 
 Screen-writer produces three sections:
 
@@ -213,7 +315,17 @@ You orchestrate all planning steps directly. At each step that dispatches a suba
 
 ---
 
-**1a (internal):** Read the brief. Read `active-project/staff/showrunner/brief-expansion.md` — this is the concept-space the brief opens. Before writing constraints and open questions, ask: does the first instinct cover the full space, or only the first-order reading? The expansion is not binding — it is a check. If a building block or alternative framing is more interesting than the obvious direction, let it shape what is extracted. Write decided constraints to `active-project/staff/showrunner/world-notes.md`. Write open questions (dependency-ordered) to `active-project/staff/showrunner/open-questions.md`. Proceed immediately to 1b — do not surface these to the human.
+**1a (internal):** Read `active-project/staff/showrunner/prompt-binding.md` FIRST. This is the canonical contract — boundaries the prompt fixed, parameters the user pinned at the Phase 1.4 checkpoint, and parameters that remain open. Then read `active-project/staff/showrunner/brief-expansion.md` for the concept-space material.
+
+Seed `active-project/staff/showrunner/world-notes.md` directly from the binding sheet:
+- Every Boundary becomes a decided constraint (annotate source: `[boundary]`).
+- Every Pinned Open Parameter becomes a decided constraint (annotate source: `[pinned at Phase 1.4 checkpoint]`).
+
+Seed `active-project/staff/showrunner/open-questions.md` from the binding sheet's Remaining Open Parameters list (dependency-ordered). Do NOT open OQs for anything already in the boundaries or pinned. Opening an OQ for an already-decided parameter is a contamination bug — it gives the orchestrator a second chance to overwrite a user decision under the guise of "resolving" it.
+
+If the brief expansion suggests a framing that would require contradicting a boundary or pin, do not silently absorb it. Either drop the framing or escalate as a sub-checkpoint to the user. The expansion informs OQ phrasing inside the open-parameters; it does not override the binding sheet.
+
+Proceed immediately to 1b — do not surface these to the human.
 
 ---
 
@@ -330,8 +442,21 @@ SEASON 1
   the bones and splits into episodes (multiple of 3) by interpretive cut.
 
 LOG FILES
+  active-project/staff/showrunner/boundary-scope.md
+  active-project/staff/showrunner/prompt-binding.md
   active-project/staff/showrunner/brief-expansion.md
-  ...
+  active-project/staff/showrunner/audience-selection-log.md
+  active-project/staff/showrunner/world-notes.md
+  active-project/staff/showrunner/open-questions.md
+  active-project/staff/showrunner/1b-log.md
+  active-project/staff/showrunner/1c-candidate-menu.md
+  active-project/staff/showrunner/1c-log.md
+  active-project/staff/auditor/1d-audit.md
+  active-project/staff/auditor/series-audit.md
+  active-project/staff/fixer/fixer-log.md
+  active-project/staff/showrunner/series-plan.md
+  active-project/staff/showrunner/series-plan-log.md
+  active-project/staff/showrunner/memory.md
 
 [Audit checkpoint. Review the above. Reply to proceed to /and-season s01, or give notes for revision.]
 ```
@@ -347,3 +472,5 @@ If there are escalations requiring human decision, present them before the audit
 - Log files are the audit trail, not the outputs. The human sees summaries; the log files prove execution.
 - Season planning is not part of activation. Activation ends at the series-level audit. Human approval at the audit checkpoint triggers `/and-season s01`, whose Phase 1 auto-plans the season (drama + vibe-cloud delta + content beats) before continuing into bone authoring + interpretive split into episodes (multiple of 3).
 - No titles are authored at any planning level (series, season, beat, episode). Slugs only.
+- **Boundary-scope fork must never run inline.** The fork's isolation is the load-bearing property that prevents the orchestrator from contaminating boundary analysis with its own interpolations. If the main session ever does "let me also think about what's required from the brief" outside the fork, the property is broken and downstream phases will silently carry the contamination. Re-dispatch a fresh fork; never substitute the main session.
+- **The prompt-binding sheet is the contract.** Downstream phases read `prompt-binding.md`, not the raw brief. The brief is preserved verbatim inside the binding sheet for traceability; phases consume the synthesized contract. Bypassing the binding sheet to re-read the brief is equivalent to re-litigating Phase 1.4 silently.
