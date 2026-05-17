@@ -1,2 +1,8 @@
 VIBES:
-  [stub — vibe-cloud population happens at 1c step 6 after series/season/episode vibe-cloud derivation by showrunner. Do not populate here.]
+  archival-distance: [citadel-register-not-emotional-distance, passive-constructions-where-agency-is-ambiguous, the-professional-register-of-someone-for-whom-historical-analysis-is-method-and-product, does-not-grieve-in-the-coda-records, cold-precision-is-not-performance-it-is-training]
+  deduction-path: [ward-s-dragonpit-sessions-frequency-pattern, abrupt-cessation-at-date-of-death, claiming-window-that-opened-in-aftermath, ulf-s-documented-approach-and-claim, subsequent-deployment-and-betrayal, the-inference-follows-from-the-chain]
+  counterfactual-naming: [not-speculation-not-what-might-have-been, the-chain-implies, labeled-as-deduction-not-certainty, the-structural-load-bearer-of-the-moral-register, had-vaegon-completed-the-bond-the-window-would-not-have-been-available-to-ulf]
+  record-access: [ward-assignment-documents, dragonpit-session-logs-household-movements, claiming-window-documentation, household-rolls-including-lyra-s-ward-status-and-death, taylor-is-the-gap-in-the-record-not-a-name]
+  institutional-restraint: [does-not-name-what-he-cannot-document, notes-the-gap-as-a-gap, does-not-speculate-beyond-the-chain, the-woman-who-killed-vaegon-is-absent-from-the-record, he-records-what-is-in-the-record]
+  lyra-final-entry: [in-the-household-rolls-as-a-ward, her-death-is-in-the-records, he-records-it, cold-one-sentence, the-closing-image-is-his-final-entry]
+  register-break: [body-is-taylor-s-interpretation, coda-is-history-s-verdict, he-is-the-mechanism-by-which-the-dramatic-irony-becomes-explicit, the-register-break-is-the-irony-mechanism, he-is-not-a-second-narrator-he-is-the-institutional-voice]

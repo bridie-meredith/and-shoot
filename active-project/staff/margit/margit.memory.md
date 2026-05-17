@@ -101,3 +101,59 @@ Added to `by_quality.full`: all 9 above
 Added to `by_trope`: young-depressed-hero (taylor-hebert-flea-bottom-mirror); targaryen-era (rhaenys-targaryen, ulf-the-white, oc-vaegon-targaryen, oc-lyra-targaryen-ward, oc-maester-edwyn); witness-figure (oc-maester-edwyn); false-ally (rhaenys-targaryen); doppelganger-opposite-number (oc-vaegon-targaryen); cost-bearer (oc-lyra-targaryen-ward); wrong-rider (ulf-the-white); flea-bottom-texture (oc-renderer-flea-bottom, oc-flea-bottom-boy, oc-apothecary-assistant); prevention-tragedy (taylor-hebert-flea-bottom-mirror, oc-vaegon-targaryen)
 
 Added to `original_characters`: all 9, with full descriptive log entries
+
+---
+
+## Phase 1c Step 5 + 1d Prep — Condition card authoring and warehouse provisioning
+
+**Date:** 2026-05-17
+**Operation:** Author 10 approved condition cards (2 EXISTS-copy, 10 NEW); copy all 12 to active-project warehouse; update `cards/conditions/INDEX.md`.
+
+---
+
+### Cards processed
+
+| slug | library path | warehouse path | authored/existed | schema validation | INDEX updated |
+|---|---|---|---|---|---|
+| `cond-feudal-hierarchy-law` | `cards/conditions/cond-feudal-hierarchy-law.card.md` | `active-project/warehouse/cond-feudal-hierarchy-law.card.md` | existed (pre-step) | PASS | already indexed |
+| `cond-smallfolk-political-physics` | `cards/conditions/cond-smallfolk-political-physics.card.md` | `active-project/warehouse/cond-smallfolk-political-physics.card.md` | existed (copy) | PASS | already indexed |
+| `cond-kl-feudal-physics-mirror` | `cards/conditions/cond-kl-feudal-physics-mirror.card.md` | `active-project/warehouse/cond-kl-feudal-physics-mirror.card.md` | authored this session | PASS | added |
+| `cond-dragon-bonding-claiming-rules` | `cards/conditions/cond-dragon-bonding-claiming-rules.card.md` | `active-project/warehouse/cond-dragon-bonding-claiming-rules.card.md` | authored this session | PASS | added |
+| `cond-kl-witch-label-formation` | `cards/conditions/cond-kl-witch-label-formation.card.md` | `active-project/warehouse/cond-kl-witch-label-formation.card.md` | authored this session | PASS | added |
+| `cond-flea-bottom-social-physics` | `cards/conditions/cond-flea-bottom-social-physics.card.md` | `active-project/warehouse/cond-flea-bottom-social-physics.card.md` | authored this session | PASS | added |
+| `cond-smallfolk-court-access-mirror` | `cards/conditions/cond-smallfolk-court-access-mirror.card.md` | `active-project/warehouse/cond-smallfolk-court-access-mirror.card.md` | authored this session | PASS | added |
+| `cond-dance-faction-state-previserys` | `cards/conditions/cond-dance-faction-state-previserys.card.md` | `active-project/warehouse/cond-dance-faction-state-previserys.card.md` | authored this session | PASS | added |
+| `cond-flicker-discipline-mirror` | `cards/conditions/cond-flicker-discipline-mirror.card.md` | `active-project/warehouse/cond-flicker-discipline-mirror.card.md` | authored this session | PASS | added |
+| `cond-shard-deposit-mechanics-mirror` | `cards/conditions/cond-shard-deposit-mechanics-mirror.card.md` | `active-project/warehouse/cond-shard-deposit-mechanics-mirror.card.md` | authored this session | PASS | added |
+| `cond-series-tone-mirror` | `cards/conditions/cond-series-tone-mirror.card.md` | `active-project/warehouse/cond-series-tone-mirror.card.md` | authored this session | PASS | added |
+| `cond-patron-amplification-theory-mirror` | `cards/conditions/cond-patron-amplification-theory-mirror.card.md` | `active-project/warehouse/cond-patron-amplification-theory-mirror.card.md` | authored this session | PASS | added |
+
+### Schema validation notes
+
+All 10 new cards: `class: condition`, `scope: project`, `project: mirror-tragedy`, `world: planetos`, `origin: authored`, `quality: full`. All required condition sections present (Description, Sensory Impact, Duration, Interaction Notes). Auditor-use notes present on all 10. World-notes.md binding rules quoted verbatim on binding cards (flicker-discipline-mirror, shard-deposit-mechanics-mirror, series-tone-mirror, patron-amplification-theory-mirror).
+
+**Specific compliance notes:**
+- `cond-flicker-discipline-mirror`: 7 binding rules enumerated. Rules 1–7 carry from world-notes.md. Hard fences in Rule 7. Kill-misfire mechanics in Rule 6.
+- `cond-series-tone-mirror`: Two hard structural requirements for coda documented (explicit counterfactual, closing-image ordering with automatic-revise trigger on violation).
+- `cond-patron-amplification-theory-mirror`: Binding constraint prohibiting patron explicit wrong-theory acknowledgment during alignment phase is present and scoped.
+- `cond-dragon-bonding-claiming-rules`: All mechanics drawn from Fire & Blood / ASOIAF canon. Dragonseeds precedent documented. No invented bonding rules.
+- `cond-smallfolk-court-access-mirror`: Complete 8-step access chain (Flea Bottom → Dragonpit interior) documented for auditor use.
+- `cond-shard-deposit-mechanics-mirror`: Supersedes `cond-reincarnation-mechanics-125ac` for this project (noted in card). Uniqueness clause documented.
+
+### INDEX.md update — `cards/conditions/INDEX.md`
+
+Added to `by_world/planetos`: cond-dance-faction-state-previserys, cond-dragon-bonding-claiming-rules, cond-flea-bottom-social-physics, cond-flicker-discipline-mirror, cond-kl-feudal-physics-mirror, cond-kl-witch-label-formation, cond-patron-amplification-theory-mirror, cond-series-tone-mirror, cond-shard-deposit-mechanics-mirror, cond-smallfolk-court-access-mirror
+
+Added to `by_quality/full`: all 10 above
+
+Added to `by_type/project-constraint`: all 10 above
+
+Added to `by_type/social-physics`: cond-kl-feudal-physics-mirror, cond-flea-bottom-social-physics, cond-smallfolk-court-access-mirror
+
+Added to `by_type/protagonist-rules`: cond-flicker-discipline-mirror, cond-shard-deposit-mechanics-mirror
+
+Added to `by_type/tone-law`: cond-series-tone-mirror
+
+Added to `by_type/institutional-behavior`: cond-patron-amplification-theory-mirror
+
+Added to `by_type/lore-ambient`: cond-kl-witch-label-formation, cond-dance-faction-state-previserys, cond-dragon-bonding-claiming-rules

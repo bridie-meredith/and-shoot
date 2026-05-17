@@ -16,13 +16,20 @@ planetos:
   - cond-series-tone-dragon-gate [project: dragon-gate-foreclosure — warehouse only]
   - cond-watch-persons-risk-sweep [project: dragon-gate-foreclosure — warehouse only]
   - cond-crownlands-superstition-frame-125ac
+  - cond-dance-faction-state-previserys [project: mirror-tragedy — warehouse only]
+  - cond-dragon-bonding-claiming-rules [project: mirror-tragedy — warehouse only]
   - cond-fauna-control-rules
   - cond-fauna-control-rules-125ac-addendum
   - cond-feudal-hierarchy-law
   - cond-faith-of-seven-jaehaerys
+  - cond-flea-bottom-social-physics [project: mirror-tragedy — warehouse only]
+  - cond-flicker-discipline-mirror [project: mirror-tragedy — warehouse only]
   - cond-impressment-census-120ac
+  - cond-kl-feudal-physics-mirror [project: mirror-tragedy — warehouse only]
+  - cond-kl-witch-label-formation [project: mirror-tragedy — warehouse only]
   - cond-maester-network-behavior
   - cond-no-parahuman-infrastructure
+  - cond-patron-amplification-theory-mirror [project: mirror-tragedy — warehouse only]
   - cond-reincarnation-mechanics
   - cond-reincarnation-mechanics-84ac
   - cond-reincarnation-mechanics-125ac
@@ -31,7 +38,10 @@ planetos:
   - cond-series-tone-constraints
   - cond-series-tone-constraints-84ac
   - cond-series-tone-constraints-125ac
+  - cond-series-tone-mirror [project: mirror-tragedy — warehouse only]
   - cond-shard-behavioral-weight
+  - cond-shard-deposit-mechanics-mirror [project: mirror-tragedy — warehouse only]
+  - cond-smallfolk-court-access-mirror [project: mirror-tragedy — warehouse only]
   - cond-smallfolk-political-physics
   - cond-suppression-policy-progression
   - cond-westerosi-customary-authority
@@ -64,13 +74,20 @@ full:
   - cond-watch-persons-risk-sweep [project: dragon-gate-foreclosure — warehouse only]
   - cond-clinical-self-erasure
   - cond-crownlands-superstition-frame-125ac
+  - cond-dance-faction-state-previserys [project: mirror-tragedy — warehouse only]
+  - cond-dragon-bonding-claiming-rules [project: mirror-tragedy — warehouse only]
   - cond-fauna-control-rules
   - cond-fauna-control-rules-125ac-addendum
   - cond-feudal-hierarchy-law
   - cond-faith-of-seven-jaehaerys
+  - cond-flea-bottom-social-physics [project: mirror-tragedy — warehouse only]
+  - cond-flicker-discipline-mirror [project: mirror-tragedy — warehouse only]
   - cond-impressment-census-120ac
+  - cond-kl-feudal-physics-mirror [project: mirror-tragedy — warehouse only]
+  - cond-kl-witch-label-formation [project: mirror-tragedy — warehouse only]
   - cond-maester-network-behavior
   - cond-no-parahuman-infrastructure
+  - cond-patron-amplification-theory-mirror [project: mirror-tragedy — warehouse only]
   - cond-reincarnation-mechanics
   - cond-reincarnation-mechanics-84ac
   - cond-reincarnation-mechanics-125ac
@@ -79,7 +96,10 @@ full:
   - cond-series-tone-constraints
   - cond-series-tone-constraints-84ac
   - cond-series-tone-constraints-125ac
+  - cond-series-tone-mirror [project: mirror-tragedy — warehouse only]
   - cond-shard-behavioral-weight
+  - cond-shard-deposit-mechanics-mirror [project: mirror-tragedy — warehouse only]
+  - cond-smallfolk-court-access-mirror [project: mirror-tragedy — warehouse only]
   - cond-smallfolk-political-physics
   - cond-suppression-policy-progression
   - cond-westerosi-customary-authority
@@ -125,13 +145,20 @@ environmental:
 project-constraint:
   - cond-clinical-self-erasure
   - cond-crownlands-superstition-frame-125ac
+  - cond-dance-faction-state-previserys [project: mirror-tragedy]
+  - cond-dragon-bonding-claiming-rules [project: mirror-tragedy]
   - cond-fauna-control-rules
   - cond-fauna-control-rules-125ac-addendum
   - cond-feudal-hierarchy-law
   - cond-faith-of-seven-jaehaerys
+  - cond-flea-bottom-social-physics [project: mirror-tragedy]
+  - cond-flicker-discipline-mirror [project: mirror-tragedy]
   - cond-impressment-census-120ac
+  - cond-kl-feudal-physics-mirror [project: mirror-tragedy]
+  - cond-kl-witch-label-formation [project: mirror-tragedy]
   - cond-maester-network-behavior
   - cond-no-parahuman-infrastructure
+  - cond-patron-amplification-theory-mirror [project: mirror-tragedy]
   - cond-reincarnation-mechanics
   - cond-reincarnation-mechanics-84ac
   - cond-reincarnation-mechanics-125ac
@@ -140,7 +167,10 @@ project-constraint:
   - cond-series-tone-constraints
   - cond-series-tone-constraints-84ac
   - cond-series-tone-constraints-125ac
+  - cond-series-tone-mirror [project: mirror-tragedy]
   - cond-shard-behavioral-weight
+  - cond-shard-deposit-mechanics-mirror [project: mirror-tragedy]
+  - cond-smallfolk-court-access-mirror [project: mirror-tragedy]
   - cond-smallfolk-political-physics
   - cond-suppression-policy-progression
   - cond-westerosi-customary-authority
@@ -156,11 +186,14 @@ protagonist-rules:
   - cond-shard-behavioral-weight
   - cond-clinical-self-erasure
   - cond-fauna-control-rules-125ac-addendum
+  - cond-flicker-discipline-mirror [project: mirror-tragedy]
+  - cond-shard-deposit-mechanics-mirror [project: mirror-tragedy]
 
 tone-law:
   - cond-series-tone-constraints
   - cond-series-tone-constraints-84ac
   - cond-series-tone-constraints-125ac
+  - cond-series-tone-mirror [project: mirror-tragedy]
 
 social-physics:
   - cond-westerosi-customary-authority
@@ -169,13 +202,20 @@ social-physics:
   - cond-smallfolk-political-physics
   - cond-feudal-hierarchy-law
   - cond-impressment-census-120ac
+  - cond-kl-feudal-physics-mirror [project: mirror-tragedy]
+  - cond-flea-bottom-social-physics [project: mirror-tragedy]
+  - cond-smallfolk-court-access-mirror [project: mirror-tragedy]
 
 institutional-behavior:
   - cond-faith-of-seven-jaehaerys
   - cond-maester-network-behavior
   - cond-suppression-policy-progression
+  - cond-patron-amplification-theory-mirror [project: mirror-tragedy]
 
 lore-ambient:
   - cond-riverlands-84ac-state
   - cond-westerosi-superstition-frame
   - cond-crownlands-superstition-frame-125ac
+  - cond-kl-witch-label-formation [project: mirror-tragedy]
+  - cond-dance-faction-state-previserys [project: mirror-tragedy]
+  - cond-dragon-bonding-claiming-rules [project: mirror-tragedy]
