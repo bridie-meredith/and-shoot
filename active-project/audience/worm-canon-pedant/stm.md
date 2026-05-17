@@ -86,3 +86,12 @@ Screen-writer's Bundle 1 advocacy not sustained.
 
 ### Carry-forward flags
 Silverwing canon-assignment flag (NEW): any season or episode plan that continues the Vaegon/Silverwing bond must name the lore basis for that assignment relative to Silverwing's canonical claiming history during the Dance; unmarked departure from Silverwing's documented arc is a lore-leak.
+
+---
+
+## Session: Series Plan Review Attempt 2
+
+### Verdict: ACCEPT
+
+### Carry-forward check
+- Silverwing canon-assignment flag: RESOLVED. Lore footnote present and specific — Alysanne died 100 AC, Silverwing went wild and remained unclaimed through the pre-Dance window, Ulf claims in 129 AC. Vaegon bond-work pinned to the 29-year unclaimed gap. No invented claiming rules. Flag satisfied; remains active for season-level planning to verify it holds at episode grain.

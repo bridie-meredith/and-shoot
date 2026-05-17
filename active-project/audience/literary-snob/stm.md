@@ -71,3 +71,18 @@ Bundle 3 irony-closure flag (hardened from Batch C, now DEMAND): chronicler entr
 ### Triad outcome
 Bundle 2: ACCEPT (3-of-3 — pedant + dark-fantasy + snob). Bundles 1 and 3: REVISE (3-of-3 respectively). Triad pick: Bundle 2.
 Screen-writer's Bundle 1 advocacy not sustained.
+
+---
+
+## Session: Series Plan Review
+
+### Verdict: ACCEPT
+
+### Axes reviewed
+- Force-and-collision register: Chunk language throughout ("amplification-theory forms," "doppelganger logic locks in," "road was finished, stone already laid") operates in force-and-collision framing; no motivation-chain language present; tracks.
+- Chronicler-coda counterfactual slot: S03 explicitly contains the structural slot — chronicler coda names Vaegon's counterfactual before the closing image; irony-closure DEMAND from Batches C and D is satisfied at plan level; sequence is correct.
+- Two-register architecture: Body close-third grim-literary, coda cold-register chronicler; register-break is preserved as the irony mechanism; bridging notes close on the chronicler's voice, not Taylor's; tracks.
+- Propositional-statement risk (advisory): Bridging note "whether any instrument could have read the difference in time" is stated near-propositionally; execution must render this through structural implication, not have the chronicler voice that sentence as a thesis. Not a plan-level block; flagged for episode-level prose execution.
+
+### Carry-forward flags
+Propositional-statement flag (NEW, advisory): the series question named in the bridging notes must not appear as an explicit sentence in the coda; the chronicler names the counterfactual, not the theme; theme is the gap, not the statement.

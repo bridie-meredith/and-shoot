@@ -70,3 +70,18 @@ Bundle 3 cost-legibility flag (hardened from Batch C): causal chain from Taylor'
 ### Triad outcome
 Bundle 2: ACCEPT (2-of-3 — pedant + dark-fantasy). Bundles 1 and 3: REVISE (3-of-3 and 3-of-3 respectively). Triad pick: Bundle 2.
 Screen-writer's Bundle 1 advocacy not sustained.
+
+---
+
+## Session: Series Plan Review
+
+### Verdict: ACCEPT
+
+### Axes reviewed
+- Season weight distribution: S01 wrong-reading-authorizes-access accumulation, S02 doppelganger-logic compound, S03 kill-consequence-cold-close — road-to-hell pacing is correct; no time-marking beats visible at plan level.
+- S03 consequence register: "Cold in the closing image" is consequence-as-image, not catharsis-before-weight; two-season accumulation lands the bill; cold-landing carry-forward from Batch E is satisfied.
+- Cost-bearer-death register: Plan does not aestheticize the death; causal chain from Taylor's kill to wrong-rider outcome is stated as unambiguous in the bridging notes; cost-legibility flags from Batches C and D not triggered.
+- False-certainty engine: S02 doppelganger logic tightens conviction rather than vindicating it; flicker used against Taylor, not for her; carry-forward flag not triggered.
+
+### Carry-forward flags
+No new flags. All prior carry-forward flags remain active for season-level planning.
