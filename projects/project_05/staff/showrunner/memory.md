@@ -1,0 +1,391 @@
+# showrunner memory — schema: schemas/showrunner-memory.schema.md
+
+routing:
+  show_file: active-project/theater/show.md
+  episode_plan: active-project/theater/episode-plan.md
+  series_plan: active-project/staff/showrunner/series-plan.md
+  season_plan: active-project/staff/showrunner/season-s01-plan.md
+
+series:
+  theme: protection-and-research-share-the-same-instrument; the guise of saving-the-world may already be eating the saving; cowing the world by being more frightening than the dragons that hold it.
+  laws:
+    - cond-shard-behavioral-weight
+    - cond-no-parahuman-infrastructure
+    - cond-smallfolk-political-physics
+    - cond-feudal-hierarchy-law
+    - cond-westerosi-customary-authority-125ac
+    - cond-fauna-control-rules
+    - cond-fauna-control-rules-125ac-addendum
+    - cond-reincarnation-mechanics-125ac
+  lore:
+    - cond-westerosi-superstition-frame
+    - cond-crownlands-superstition-frame-125ac
+  behaviors:
+    - cond-clinical-self-erasure
+    - cond-series-tone-constraints-125ac
+  plot:
+    start: post-Khepri Taylor wakes in the just-dead body of Tya, a tanner-family daughter in a Crownlands village outside King's Landing, ~125 AC; shard reseeds at arrival; village reads her as "Tya who came back wrong."
+    end: the Dance is over by rational deterrence after one rider-control demonstration; Taylor intact, smallfolk marginally better protected, the burned falsification record permanent, one experimental subject dead and one alive in four-hour memory increments, the scientific-caution self-narrative gone.
+    protagonist_arc: from displacement-and-research-onset, through Khepri-threshold crossing (s2 peak), through the demonstration that cows both factions (s3 climax), into the foreclosure that detonates after the war ends (s4) — solitude as permanent condition, one witness (broken maester) who names the line and is not heard.
+    series_question: when the guise of saving-the-world stops being a guise, can the person who paid that cost the first time stop themselves the second?
+  cast_roster:
+    - taylor-hebert-flea-bottom    # protagonist, only POV
+    - oc-tanner-mother             # Tya-origin grief axis
+    - oc-tanner-father             # Tya-origin suspicion axis
+    - oc-tanner-elder              # Flea Bottom conditional embedder
+    - oc-dock-runner               # Flea Bottom legs / trust-test
+    - oc-tallow-chandler           # unknowing glass-candle salvage source
+    - oc-broken-maester            # sole research witness; brake-not-ally
+    - rhaenyra-targaryen           # black faction antagonist-instrument
+    - aegon-ii-targaryen           # green faction figurehead antagonist
+    - otto-hightower               # Hightower intelligence architect
+    - aemond-targaryen             # green faction coercive instrument
+    - viserys-i-targaryen          # background; dies pre-Dance
+  stage_elements:
+    - loc-tanner-village
+    - loc-flea-bottom
+    - loc-flea-bottom-base
+    - loc-eastern-quarter-apothecary
+    - loc-red-keep-outer-ring
+
+seasons:
+  - slug: s01
+    chunk: "Taylor's insect-range expands through Flea Bottom while the tanner-village's ongoing claim on the body she inhabits and the Hightower apparatus's first miscategorized intelligence file close simultaneously around her; the season forecloses the possibility of working unnamed — she is already a misread fact in someone else's record before she understands what she is building."
+    status: wrapped   # FLIPPED 2026-05-13 — s01e03 /and-wrap complete; provisional_split 3 episodes exhausted; season-final manuscript at active-project/polish/s01e03.md
+    plan_path: active-project/staff/showrunner/season-s01-plan.md
+    content_beats: 26
+    phase_1_converged_at: attempt-2-of-3
+    drama: "The tanner-village's claim on Tya's body and the Hightower apparatus's first miscategorized intelligence file close around Taylor on the same season-timeline, with neither knowing the other exists and neither closeable from inside. What cannot survive the season is the possibility of working unnamed: by season close, Taylor is already a misread fact in someone else's record before she understands what she is building, and the village's grief-debt remains an open transactional surface she cannot pay off."
+    bones_path: active-project/theater/proto-lines/s01.bones.md
+    bones_complete: 2026-05-11
+    bones_active_count: 456 active-bone lines (with SVO content) across season-global IDs 1-528 with deletion gaps; ~48 numbered blank time-skip lines (504 total numbered lines including blanks). Corrected 2026-05-11 — prior count "~480 (across IDs 1-517 with deletion gaps)" was pre-cycle-3 and missed F7-bone-rescue additions 518-528.
+    phase_2_cycles: 3 of 3 max
+    phase_3_cycles: 2 of 3 max (per-window URI-026 cap=2 reached)
+    provisional_split: 3 episodes (cuts at IDs 155/159 and 328/330; 6-episode SPLIT-INFEASIBLE)
+    tens_files:
+      - active-project/theater/facets/tensometer-s01-window-01.md
+      - active-project/theater/facets/tensometer-s01-window-02.md
+      - active-project/theater/facets/tensometer-s01-window-03.md
+    audit_reports_dir: active-project/staff/auditor/season-s01-pass-*
+    residuals:
+      - tens-gate-residual-W1-Scene-L-no-rupture (maester laughs without commit)
+      - tens-gate-residual-W2-Scene-A-no-3 (family-visit junction)
+      - tens-gate-residual-W2-Scene-H-no-3 (headache cluster no peak)
+      - tens-gate-residual-W2-Scene-L-no-3 (mother's vigil-candle close)
+      - tens-gate-residual-W3-frequency-band-below-floor (4/152 = 2.6%)
+      - tens-gate-residual-W3-scene-330-342-no-3 (first Hightower clerk)
+      - tens-gate-residual-W3-scene-361-375-no-3 (second clerk)
+      - tens-gate-residual-W3-scene-477-494-no-rupture (denouement walk; no transit exception)
+      - pov-leak-71-77 (lord's-man records the file; no insect relay anchor)
+      - audience-S3-1-of-3-revise (cape-fic, dark-fantasy, worm-canon: 3-of-3 REVISE on range-expansion template + beat 10)
+      - audience-S6-localized-drift-W12 (beat 10 thin/relay-mapping flagged by cape-fic + dark-fantasy)
+      - audience-S9-2-of-3-comprehensibility-risk (cape-fic fragile-chains, worm-canon formula-lock)
+    convergence: PARTIAL — Sweep A 12 of 18 clean; Sweep B 14 of 17 clean. Convergence per spec ("all-clean reports across both sweeps and no fixes in between") not achieved.
+    orchestrator_verdict: "PASS-WITH-NOTES — F7-bone CLEARED by cycle-3 cleanup (IDs 518-528); high-dispatch (~95 vs 60-hard); long-run (~12h); deep-iteration on S10/S7/boundary; rubric-recalibration-recommended; frequency-band W2/W3 below floor (structural); audience-S3 not re-fired (carry-forward to edit pass)"
+    orchestrator_verdict_file: active-project/staff/auditor/season-s01-orchestrator-verdict.md
+    protolines_complete: 2026-05-11
+    episodes:
+      - slug: s01e01
+        status: wrapped   # 2026-05-13 /and-wrap s01e01 complete (URI-WRAP-V2 second-run after s01e02); prior status audited-r1 (post /and-facets r5)
+        stitched: true   # 2026-05-12 /and-stitch s01e01 (first-person past-tense profile); polish + annotated + render-log produced
+        stitched_at: 2026-05-12
+        stitch_profile: active-project/theater/stitch-profile.md
+        stitch_persona: neutral
+        wrapped: true
+        wrapped_at: 2026-05-13
+        draft_path: active-project/draft/s01e01.md   # stitcher output (pre-editor); 1623 words
+        draft_annotated_path: active-project/draft/s01e01.annotated.md   # CAVEAT per wrap-audit flag-003: annotated diverges from clean (pre-Phase-7 generation); editor bone-walked against proto-lines directly
+        polish_path: active-project/polish/s01e01.md   # editor output (post-wrap); 1542 words; word-count delta -81
+        render_log_path: active-project/staff/stitcher/render-log-s01e01.md
+        narrator: taylor-hebert-flea-bottom
+        interlude: false
+        chunk: "Taylor wakes in Tya's body and the tanner-village category closes around her on the first morning; she moves to King's Landing via the tanner-elder, maps her 300m sphere in Flea Bottom, identifies the broken maester's upper room as ambient surveillance, and runs her first transactional exchange via the dock-runner."
+        proto_lines_path: active-project/theater/proto-lines/s01e01.md   # staged from theater/s01e01-archive/proto-lines/ for /and-wrap auditor canonical-path access 2026-05-13
+        scene_map_path: active-project/theater/facets/scene-map-s01e01.md   # HAND-AUTHORED at /and-wrap 2026-05-13 (s01e01 stitched pre-URI-SCENE-WINDOW; scene-map facet did not yet exist); 13 scenes A-N skip G; 146 bones in exactly one scene
+        wrap_artifacts:
+          audience_merge: active-project/staff/editor/wrap-audience-s01e01.md
+          audience_per_persona:
+            - active-project/staff/editor/wrap-audience-cape-fic-reader-s01e01.md   # 11 flags
+            - active-project/staff/editor/wrap-audience-dark-fantasy-reader-s01e01.md   # 13 flags
+            - active-project/staff/editor/wrap-audience-worm-canon-pedant-s01e01.md   # 11 corrective + 5 accept-anchors
+          auditor_report: active-project/staff/auditor/s01e01-wrap-audit.md   # 2 HARD (both prose-surface), 4 SIGNAL
+          edit_log: active-project/staff/editor/wrap-edit-log-s01e01.md
+        wrap_stats:
+          edits_total: 17
+          edits_by_class: { EDIT-AUDIT-REMEDIATE: 4, EDIT-AUDIENCE-REMEDIATE: 9, EDIT-PROSE-ECONOMY: 2, EDIT-CONTINUITY: 1, EDIT-VOICE-CONSISTENCY: 1, KEEP-OVER-FLAG: 5 }
+          audience_flags_addressed: "5 shared + 6 solo"
+          audience_overrides: 5
+          audit_findings_addressed: "2 HARD + 4 SIGNAL"
+          bones_cut_as_warmup: 0
+          editor_introduced_faults: 0
+          per_bone_walk: "146 bones | rendered=132, fused=6 (stitcher), cut-by-stitcher=14 (licensed), cut-as-warmup=0, lost=0"
+        shared_audience_concern_top: "institutional-parenthetical pattern (reeve / lord's-man / maester / gold cloaks) — flagged by all three personas; cross-episode (also flagged at s01e02 wrap); editor compressed/relocated where exposition-verbatim allowed, kept where verbatim-protected (KEEP-OVER-FLAG with rationale)"
+      - slug: s01e02
+        stitched: true   # 2026-05-12 /and-stitch s01e02 — first run under V2 bones-only-write lens semantics; V1 (lenses-as-content) rejected by user as "garbage"; V2 + Phase 7 expanded smoothing leeway (FUSE/POSSESS-FIX) is the accepted form
+        stitched_at: 2026-05-12
+        stitch_profile: active-project/theater/stitch-profile.md   # episode-default; applies-to: s01e01 (used as project-default — same POV/tense/person)
+        stitch_persona: worm-tight
+        stitch_lens_policy: bias-only   # PROMOTION CANDIDATE — new profile flag for the stitcher schema; V2 dispatched all 7 Phase 1 forks with lenses as bias-context only, not as content
+        polish_path: active-project/polish/s01e02.md
+        polish_annotated_path: active-project/polish/s01e02.annotated.md
+        polish_phase_1_v2_draft_path: active-project/polish/s01e02.phase-1-v2.draft.md   # retained for tuning comparison
+        render_log_path: active-project/staff/stitcher/render-log-s01e02.md
+        narrator: taylor-hebert-flea-bottom
+        interlude: false
+        chunk: "The tanner-family's claim on Taylor escalates from informal grief to formalized customary wage-claim across three visits; the broken maester transitions from ambient signal to named log entry; range expands from 300m to 400m with first physiological cost; the mother extinguishes the vigil candle — the village's grief has changed shape but the transactional surface does not close."
+        proto_lines_path: active-project/theater/proto-lines/s01e02.md
+        source_archive_deviation: facets read from theater/s01e02-archive/facets/ — /and-shoot Phase 0 already archived this episode before /and-stitch ran; active theater/facets/ holds s01e03 content; proto-lines stayed in canonical theater/proto-lines/s01e02.md
+        word_count_body: 870
+        word_count_total: 980
+        line_id_count: 104
+        bones_rendered: 133
+        bones_cut: 1   # @91 CUT-BONE under bones-cuttable license; Q1=no, no protective facet, redundant with @89 metaphor
+        phase_7_moves: { keep: 89, fuse: 14, reword: 5, possess_fix: 5, cut_bone: 1, cut: 0, reshow: 0 }
+        exposition_entries_rendered: 6   # 1 preamble (italic), 2 scene-bridges (B/C openings), 3 first-mention folds (Fish-Gate @66 em-dash, customary-wage @100 parenthetical, vigil-candle @164 em-dash)
+        cross_episode_register_skipped: [log, reeve, lords-man, flea-bottom, maester, the-Watch]   # reader-resident from s01e01
+        tens_path: active-project/theater/facets/tensometer-s01e01.md
+        cast: [taylor-hebert-flea-bottom, oc-tanner-father, oc-tanner-mother, oc-tanner-elder, oc-broken-maester, oc-dock-runner]
+        locations: [loc-flea-bottom, loc-flea-bottom-base]
+        prior_episode: none
+        aggregate_range: 1-155 (+ interpolated narrative-scope: 495, 504, 506, 516, 517, 518, 525)
+        aggregate_range_revised_at: 2026-05-11   # URI-028 honest-form declaration; body not yet re-rendered against full roster
+        per_episode_tens_band_verdict: {1s: 80.1, 2s: 14.9, 3s: 5.0, status: "exempt-tone-law-slow-burn (URI-034 Exemption 5)", rationale: "all three rungs within relaxed band per cond-series-tone-constraints-125ac §Relaxed tens frequency-band; flag-005 closeable"}
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
+        audit_path: active-project/theater/s01e01-archive/auditor/facets-final-audit-r5.md   # canonical latest; r3/r4/r5 are sequential SIGNAL-closure audits; relocated to s01e01-archive 2026-05-12 during s01e03 setup
+        audit_complete: true
+        audit_findings: 14   # initial r1: 4 HARD + 1 HARD-proximity + 9 SIGNAL; 5 pile-ups all warranted
+        audit_findings_hard_initial: 4
+        reaudit_path: active-project/theater/s01e01-archive/auditor/facets-final-audit-r2.md
+        reaudit_complete: true
+        audit_paths_chronological:
+          - active-project/theater/s01e01-archive/auditor/facets-final-audit-r1.md  # r1 (initial; 4 HARD; archived 2026-05-11 during s01e02 run)
+          - active-project/theater/s01e01-archive/auditor/facets-final-audit-r2.md  # r2 (post-fixer-1; 1 HARD residual = flag-005; archived 2026-05-11)
+          - LOST: facets-final-audit-r3.md (s01e01 r3 overwritten by s01e02 r3 during /and-facets s01e02 run; pre-this-session data loss; content not recoverable)
+          - active-project/theater/s01e01-archive/auditor/facets-final-audit-r4.md    # r4 (post-fixer-2 + card amendment; 0 HARD, 4 SIGNAL — flag-005 EXEMPT; 2 new SIGNALs); relocated 2026-05-12
+          - active-project/theater/s01e01-archive/auditor/facets-final-audit-r5.md    # r5 (post-fixer-3; 0 HARD, 2 SIGNAL — both editor-call deferrals by design); CANONICAL FINAL; relocated 2026-05-12
+        remediation_passes_hard: 1 of 1 (r1 -> r2; criterion-2 budget; cleared 4 HARD)
+        remediation_passes_signal: 2 (r3 -> r4 fixer, r4 -> r5 manual; SIGNAL-only closure cycles)
+        audit_findings_hard_residual: 0   # flag-005 confirmed EXEMPT-TONE-LAW-SLOW-BURN in r4/r5 against the now-amended cond-series-tone-constraints-125ac card
+        audit_findings_signal_residual: 2 # NI density 25.2% (editor-call); non-POV feeling sparsity (editor-call) — both designed deferrals, not faults
+        r2_decisions_path: active-project/theater/facets/.r2-decisions.md
+        r2_f_r2_counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
+        r2_discipline_fails: 0
+        process_gaps:
+          - cite-index parser bug (rpartition strips only last trailing bracket; patched in active-project/staff/cite-index/build_cite_index.py) — see URI-029
+          - R2 inflight-r2/ protocol misunderstanding (judges did not carry forward R1 citations; canonical proto-lines rebuilt from facet files directly as Phase 4 fallback) — see URI-030
+          - /and-season Phase 7 Step 4 leaked season-window bones into per-episode tens (4 of 5 initial HARD findings traced here) — see URI-028 [ADDRESSED 2026-05-11]
+          - frequency-band rubric lacks exemption taxonomy (flag-005 residual HARD cannot be cleanly closed) — see URI-034 [ADDRESSED 2026-05-11; card sync landed in r4 cycle]
+          - memory rubric admitted Earth-Bet proper nouns as margit-referral slug components — see URI-032 [ADDRESSED 2026-05-11; mem:6 + mem:9 fence violations cleaned in r3/r4 fixer cycles]
+          - /and-facets bidirectional-loop criterion structurally not-validatable in current shape — see URI-035 [ADDRESSED 2026-05-11 BY DESIGN: Phase 5b audience adversarial gate wired into .claude/commands/and-facets.md as the final blocking gate (3 cycles max, fixer-routed remediation); orchestrator-critic criterion 4 replaced (bidirectional-loop → audience-gate ACCEPT 3-of-3 per facet). NOT VALIDATED on s01e01 per user direction (implement-only; s01e01 retains SHIPPABLE-WITH-CAVEATS verdict). First validation will be s01e02 /and-facets run.]
+          - build_cite_index consolidate_slices stripped frontmatter on output, producing multi-block YAML in consolidated state-updates.md and feeling.md — see URI-040 [ADDRESSED 2026-05-11 in this session: tool patched to emit single top-of-file frontmatter; slices converted to plain-comment headers across state-updates + feeling]
+          - per-character slice files defaulted to YAML frontmatter that the consolidator would stack — see URI-041 [ADDRESSED 2026-05-11: convention now plain-comment slice headers; consolidator owns the canonical frontmatter]
+          - URI-034 rubric amendment landed without sync to the tone-law card body — see URI-042 [ADDRESSED 2026-05-11 in r4 cycle: cond-series-tone-constraints-125ac amended additively with Tensometer register characterization paragraph + Relaxed tens frequency-band section; auditor confirmed criteria (a)/(b) on r4 read]
+        upstream_tuning_queue_entries: [URI-028, URI-029, URI-030, URI-031, URI-032, URI-033, URI-034, URI-035, URI-036, URI-037, URI-038, URI-039, URI-040, URI-041, URI-042]
+        upstream_tuning_queue_addressed: [URI-028, URI-029, URI-032, URI-034, URI-035, URI-036, URI-037, URI-038, URI-039, URI-040, URI-041, URI-042]   # 2026-05-11 fourth round: Phase 5b audience-gate wired into /and-facets, closing URI-035 by design (validation deferred to s01e02). URI-030/031/033 (R2 protocol + tooling) remain open.
+      - slug: s01e02
+        status: wrapped   # 2026-05-13 /and-wrap s01e02 complete (URI-WRAP-V2); prior status audited-r1 (post /and-facets cycle-3 + cycle-4 cap-exception, 2026-05-12)
+        wrapped: true
+        wrapped_at: 2026-05-13
+        draft_path: active-project/draft/s01e02.md   # stitcher output (pre-editor); 1094 words
+        draft_annotated_path: active-project/draft/s01e02.annotated.md
+        polish_path: active-project/polish/s01e02.md   # editor output (post-wrap); 1105 words; word-count delta +11
+        narrator: taylor-hebert-flea-bottom
+        interlude: false
+        chunk: "The tanner-family's claim escalates from informal grief to formalized customary wage-claim across three visits; the broken maester transitions from ambient signal to named log entry; range expands from 300m to 400m with first physiological cost; the mother extinguishes the vigil candle."
+        proto_lines_path: active-project/theater/proto-lines/s01e02.md
+        tens_path: active-project/theater/facets/tensometer-s01e02.md
+        cast: [taylor-hebert-flea-bottom, oc-tanner-father, oc-tanner-mother, oc-tanner-elder, oc-broken-maester, oc-dock-runner]
+        locations: [loc-flea-bottom-base]
+        prior_episode: s01e01
+        aggregate_range: 159-328 (+ interpolated narrative-scope: 496, 500, 501, 502, 505, 508, 509, 510, 511, 512, 519, 520, 521, 526, 527, 528)
+        aggregate_range_revised_at: 2026-05-11   # URI-028 honest-form declaration
+        per_episode_tens_band_verdict: {1s: 81.5, 2s: 14.3, 3s: 4.2, status: "exempt-tone-law-slow-burn (URI-034 Exemption 5)"}
+        facets_path: active-project/theater/s01e02-archive/facets/   # archived 2026-05-12 during s01e03 setup
+        round_1_complete: true
+        round_2_complete: true
+        audit_path: active-project/theater/s01e02-archive/auditor/facets-final-audit-r4-s01e02-cycle3.md   # canonical post-cycle-3 + cycle-4 cap-exception; HARD=0; 5 SIGNAL; relocated 2026-05-12
+        audit_complete: true
+        audit_findings_hard_initial: 1   # r1: 1 HARD (metaphor:2 unresolvable mem:5 anchor — R2 concurrent-fork collision)
+        audit_findings_hard_residual: 0   # r2 + r3 + r4 all CLEAN
+        audit_paths_chronological:
+          - active-project/theater/s01e02-archive/auditor/facets-final-audit.md                                # r1 (1 HARD + 7 SIGNAL); relocated 2026-05-12
+          - active-project/theater/s01e02-archive/auditor/facets-final-audit-r2.md                             # r2 (post-fixer DELETE meta:2; CLEAN HARD=0); relocated 2026-05-12
+          - active-project/theater/s01e02-archive/auditor/facets-final-audit-r3.md                             # r3 (post-Phase-5b-cycle-2-fixer; CLEAN HARD=0); relocated 2026-05-12
+          - active-project/theater/s01e02-archive/auditor/facets-final-audit-r4-s01e02-cycle3.md               # r4 (post-cycle-3; HARD=0; SIGNAL=5; CANONICAL FINAL); relocated 2026-05-12
+        remediation_passes_hard: 1 of 1 (r1 -> r2; cleared 1 HARD via DELETE meta:2)
+        r2_decisions_path: active-project/theater/s01e02-archive/facets/.r2-decisions.md   # relocated 2026-05-12
+        r2_decisions_supplement_path: active-project/theater/s01e02-archive/staff/memory/r2-decision-shard-cycle3.md   # cycle-3 memory R2 structural rebuild supplement; relocated 2026-05-12
+        r2_f_r2_counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 1, f-r2-4: 0}   # elder shard mis-classified REVISE as F-R2-3 per audit r1 M-002
+        r2_discipline_fails: 0
+        audience_gate_path: active-project/theater/s01e02-archive/auditor/facets-audience-gate-r3.md   # cycle 3 + cycle-4 cap-exception consolidated; cycle 2 + cycle 1 in same archive dir; relocated 2026-05-12
+        audience_gate_complete: true   # 9 of 9 facets at 3-of-3 ACCEPT; cap-exception ratified
+        audience_gate_cycles: 3 + 1-cap-exception (memory single-field repair; ratification documented in facets-audience-gate-r3.md)
+        audience_gate_cap_burned: false   # cap=3 fully used; cycle-4 cap-exception ratified for memory mem:13 target-reference rewrite (audience-convergent single-field repair)
+        audience_gate_facet_accept_rate: 9 of 9   # tensometer + metaphor + feeling + vibes cleared cycle 1-2; loc-state + interest-narrator + sensory + state-updates cleared cycle 3; memory cleared cycle 4 cap-exception
+        bidirectional_loop: validated   # URI-035 second validation; both audience-only structural findings (Earth-Bet substring scan cycle 2 + mem:13 monument-type cycle 3) drove auditor recalibration URIs (URI-AUDITOR-CONSTRAINT-CALIBRATION closed; URI-AUDITOR-MONUMENT-TYPE-CALIBRATION new)
+        process_gaps:
+          - URI-030 (re-encountered cycle 2; ADDRESSED 2026-05-12): cite-index union can't represent deletes. Fix landed in build_cite_index.py:union_citations — per-prefix authoritative ring routing (R2 wins over R1 for that prefix; absence in authoritative copy = delete). Idempotent re-run produces zero diff on clean state.
+          - URI-AUDITOR-CONSTRAINT-CALIBRATION (NEW cycle 2; ADDRESSED 2026-05-12): Phase 5 CONSTRAINT scan missed 2 Earth-Bet proper-noun fence violations. Fix landed in .claude/commands/and-facets.md Phase 5 CONSTRAINT class — case-insensitive substring scan across ALL facet entry content fields, including margit-referral slug components.
+          - URI-AUDIENCE-AGGREGATION-RULE (NEW cycle 2; ADDRESSED 2026-05-12): audience-subagent applied 2-of-3 majority on state-updates cycle 2 and loc-state cycle 1, contradicting spec. Fix landed in .claude/agents/audience.md facet-adversarial mode section + .claude/commands/and-facets.md aggregation section — orchestrator aggregates from disk; single dissent blocks.
+          - URI-AUDIENCE-CYCLE-2-MEMORY-STALL (NEW cycle 2; ADDRESSED 2026-05-12): 600s watchdog stall on memory cycle-2 dispatch. Fix landed in .claude/commands/and-facets.md Reviewer-stall handling section — payload-trim retry + default-conservative mechanical-inference fallback. Validated cycle 3 + cycle 4: trimmed memory payloads completed cleanly, no stall.
+          - URI-035 CLOSED: Phase 5b adversarial gate validated TWICE (cycle 2 first validation + cycle 3 second validation). Both surfaced structural calibration findings the mechanical scan missed.
+          - URI-CONSOLIDATION-CITE-DRIFT (NEW cycle 3): slice-consolidation renumbering shifts consolidated IDs when entries are deleted from source slices, but proto-line citation tokens are not cascade-corrected. Surfaced when fixer Op-B deleted state-updates stance-on-tya entry; cite-index re-build renumbered all post-gap state IDs by -1 leaving proto-line tokens stale. Pre-existing structural pipeline bug; exceeds episode-scope remediation. Documented as SIGNAL find-002 in audit r4.
+          - URI-AUDITOR-MONUMENT-TYPE-CALIBRATION (NEW cycle 3): audience cycle-3 caught mem:13 using a condition-card slug as monument target-reference (same error class as mem:2 r1 reject). Auditor's CONSTRAINT class for memory did not flag the monument-type defect. Required calibration: extend CONSTRAINT class for memory facet — target-reference must be (a) §"Memory monuments" slug from behavior pack, (b) prior proto-line callback `s<NN>e<NN>:<id>`, or (c) free-text mechanism gloss; NOT a condition card slug. Cycle-4 cap-exception fix (free-text Westerosi gloss) cleared the entry; the auditor recalibration is upstream tuning for future episodes.
+        upstream_tuning_queue_entries: [URI-030, URI-035, URI-AUDITOR-CONSTRAINT-CALIBRATION, URI-AUDIENCE-AGGREGATION-RULE, URI-AUDIENCE-CYCLE-2-MEMORY-STALL, URI-CONSOLIDATION-CITE-DRIFT, URI-AUDITOR-MONUMENT-TYPE-CALIBRATION]
+        upstream_tuning_queue_addressed: [URI-030, URI-035, URI-AUDITOR-CONSTRAINT-CALIBRATION, URI-AUDIENCE-AGGREGATION-RULE, URI-AUDIENCE-CYCLE-2-MEMORY-STALL]   # 2026-05-12 — five URIs closed via cycle-3 process-fix pass; two remain open (URI-CONSOLIDATION-CITE-DRIFT structural pipeline bug; URI-AUDITOR-MONUMENT-TYPE-CALIBRATION pending auditor class library extension)
+        carry_forward_audience_callouts: []   # all cycle-2 callouts addressed in cycle-3 author re-dispatches + cycle-4 cap-exception; no carry-forward
+        cycle3_dispatches:
+          - studio loc-state R1 re-author (3 rewrites + 1 add closing sensory:3 gap)
+          - fixer Op-A DELETE narrator:32 @177 + cascade
+          - fixer Op-B DELETE state:8 stance-on-tya @22 + cascade + margit referral 3
+          - memory R2 structural rebuild (RELOCATE mem:9 @87→@90, DELETE mem:12 @173, ADD mem:13 @20)
+          - margit triage (2 monument-card referrals filed for mem:3 + mem:7)
+        cycle3_signal_fixes: [find-001 tens-footer recompute, find-003 mem:9 NI-spine defense documented, find-004 vibes stale licensed-by removed]
+        cycle3_signal_carry_forward: [find-002 URI-CONSOLIDATION-CITE-DRIFT (pre-existing pipeline; exceeds episode scope), find-005 @20 pile-up borderline (editor advisory at wrap)]
+        cycle4_cap_exception: mem:13 target-reference rewrite (cond-westerosi-customary-authority-125ac → free-text Westerosi mechanism gloss); 3-of-3 ACCEPT; ratified in facets-audience-gate-r3.md §"Cap-exception ratification" on convergent-audience-single-field-repair grounds
+        exposition_retrofit:
+          applied: 2026-05-12 (claude/add-exposition-facet-pZ9TO)
+          scope: R1 blind author + Phase 2 merge only
+          entries: 7 (1 prior-episode-bridge @0 + 3 first-mention [fish-gate, customary-wage-claim, vigil-candle] + 2 scene-open-orient + 1 flagged-for-R2-drop)
+          sparsity: 5.2% (at-ceiling; over 1-5% band by 0.2 — scene-orient-c@34 flagged as natural drop candidate)
+          facet_file: active-project/theater/s01e02-archive/facets/exposition-s01e02.md
+          deferred:
+            - Phase 3 R2 judge (graph-aware KEEP/DELETE/REWORD)
+            - Phase 5 auditor mechanical pass (CONSTRAINT source-traceability + AP-SCAN scans)
+            - Phase 5b audience-gate adversarial review (3-of-3 persona ACCEPT)
+          rationale: user-direction "not really tuned but we'll manage without" — verification deferred to stitcher Phase 7 reflection at /and-stitch s01e02 time, or to a targeted retroactive audit pass if desired before stitch.
+        wrap_artifacts:
+          audience_merge: active-project/staff/editor/wrap-audience-s01e02.md
+          audience_per_persona:
+            - active-project/staff/editor/wrap-audience-cape-fic-reader-s01e02.md   # 10 flags
+            - active-project/staff/editor/wrap-audience-dark-fantasy-reader-s01e02.md   # 14 flags (incl. anchors)
+            - active-project/staff/editor/wrap-audience-worm-canon-pedant-s01e02.md   # 14 flags (10 corrective + 4 anchors)
+          auditor_report: active-project/staff/auditor/s01e02-wrap-audit.md   # 7 HARD (4 BONE-COVERAGE, 1 EXPOSITION-VERBATIM, 2 CONTINUITY); 1 SIGNAL (possessive-register); all dispositions prose-surface or acknowledge per URI-WRAP-V2-DISPO
+          edit_log: active-project/staff/editor/wrap-edit-log-s01e02.md
+        wrap_stats:
+          edits_total: 22
+          edits_by_class: { EDIT-AUDIT-REMEDIATE: 7, EDIT-AUDIENCE-REMEDIATE: 8, EDIT-PROSE-ECONOMY: 1, EDIT-VOICE-CONSISTENCY: 2, KEEP-OVER-FINDING: 2, KEEP-OVER-FLAG: 5 }
+          audience_flags_addressed: "18 of 28 corrective; 7 of 7 shared concerns (L13/L15-fish/L15-exhale/L19/L21/L23/L25)"
+          audience_overrides: 5
+          audit_findings_addressed: "7 of 7 HARD (5 prose changes + 2 KEEP-OVER-FINDING for @139 trace-only + @0 upstream-documented user-override); 1 of 1 SIGNAL (@104 possessive-register POSSESS-FIX)"
+          bones_restored: 3   # @42 flies-relay-carter + @44 flies-relay-wind (Scene D one-clause insert); @101 taylor-faces-father (Scene I reciprocal-face beat)
+          bones_cut_as_warmup: 0
+          editor_introduced_faults: 0
+          per_bone_walk: "134 active bones | rendered=133, cut-by-stitcher=1 (@91 licensed), restored-by-editor=3 (@42 @44 @101), KEEP-OVER-FINDING-trace=1 (@139 surface present in relay-frame), cut-as-warmup=0, lost=0"
+        shared_audience_concern_top: "inline-gloss interruption pattern (Fish Gate em-dash at Scene F; customary-wage parenthetical at Scene I) — flagged by all three personas; addressed by bracket/em-dash removal mirroring the s01e01 wrap precedent (reeve gloss Scene E; maester gloss Scene J); gloss content kept verbatim. Second cross-episode concern: peak-flattening by metronomic repetition (exhale-triplet at @77/@78 400m-range peak; double-'gave' at @173 mother-stands peak) — addressed by single-verb variance within bone-faithfulness."
+      - slug: s01e03
+        status: wrapped   # FLIPPED 2026-05-13 — /and-wrap complete: 0 HARD, 1 SIGNAL converged with audience HIGH (CONTINUITY "the interior" antecedent), 0 bones lost, 0 editor-introduced faults. Previously audited-r1: Phase 5b cycle 3 cleared 9-of-9 facets to 3-of-3 ACCEPT (cap=3 fully used). Phase 5 r4 CLEAN (0 HARD; 13 SIGNAL all advisory; 5 SIGNAL CLOSED across cycles: flag-012 curve-shape, flag-017 vibes AP8, flag-018 tens AP2, flag-020 vibes forward-license, flag-022 vibes:32 AP8, flag-023 tens metadata staleness). Bidirectional loop VALIDATED. Cycle-by-cycle: c1 0-of-9 pass, c2 4-of-9 pass (state-updates/memory/feeling/metaphor), c3 5-of-5 re-fired facets pass (tensometer/location-state/interest-narrator/sensory/vibes). Critical cap-burn risk averted on interest-narrator dark-fantasy (FAIL c1+c2 → ACCEPT c3 once NI rewrites made displacement-trigger/foreknowledge-clamp/age-mismatch registers explicit on textual surface).
+        wrapped: true
+        wrapped_at: 2026-05-13
+        wrap_edit_log_path: active-project/staff/editor/wrap-edit-log-s01e03.md
+        wrap_audit_path: active-project/staff/auditor/s01e03-wrap-audit.md
+        wrap_audience_path: active-project/staff/editor/wrap-audience-s01e03.md
+        wrap_word_count_polish: 1606
+        wrap_word_count_draft: 1531
+        wrap_edits_total: 9
+        wrap_audience_flags_addressed: 21 of 21
+        wrap_audit_findings_addressed: 1 of 1 (SIGNAL CONTINUITY — converged with audience HIGH on "the interior" antecedent)
+        wrap_bones_lost: 0
+        wrap_editor_introduced_faults: 0
+        wrap_process_gaps:
+          - URI-SCENE-MAP-ABSENT-PRE-URI-SCENE-WINDOW (ADDRESSED 2026-05-13 at /and-wrap pre-step): scene-map-s01e03.md hand-authored from render-log scene-boundary enumeration + tensometer-s01e03 tens fields per scene-map.schema.md. Future episodes will auto-derive at /and-facets Phase 4d.
+          - URI-WRAP-V2-DOGFOOD-S01E03 (NEW 2026-05-13): second /and-wrap dogfood run on s01e03. Auditor returned 0 HARD, 1 SIGNAL — disposition-tagging spec from URI-WRAP-V2-DISPO (introduced 2026-05-13 from s01e02 dogfood) saw minimal application this run because no graph-repair HARDs surfaced; the editor's prose-surface treatment was clean across all classes. Convergence pattern: the single auditor SIGNAL (CONTINUITY "the interior") converged with two audience HIGH flags on the same sentence — strong signal that auditor's CONTINUITY class + audience confusion-category flags reliably co-fire on the same surface fault. Recurrence noted: dark-fantasy-reader observed the Red Keep em-dash POV-gloss appositive recurs from s01e02 wrap (Fish Gate, customary-wage, vigil-candle); same fault class. Worth a stitcher-side check on whether the Phase 0.6 exposition-fold for "first-mention-place em-dash-fold" renders-as directive is being correctly translated into Taylor's POV register; if the answer is "no, the em-dash-fold mechanically inserts an author-gloss appositive even when Taylor's POV would not gloss," that's an upstream tuning issue.
+        stitched: true   # 2026-05-13 /and-stitch s01e03 — per-anchor mode (scene-map absent; URI-SCENE-WINDOW post-dates s01e03 /and-facets); 11 scene-cluster forks; worm-tight persona
+        stitched_at: 2026-05-13
+        stitch_profile: active-project/theater/stitch-profile.md   # episode-default reused for s01e03; project-default at active-project/stitch-profile.md provides anti-jargon/hollow/asinine/bone-fence
+        stitch_persona: worm-tight
+        stitch_lens_policy: bias-only
+        polish_path: active-project/polish/s01e03.md   # editor pass output (URI-WRAP-V2); draft at active-project/draft/s01e03.md retained
+        polish_annotated_path: active-project/draft/s01e03.annotated.md
+        render_log_path: active-project/staff/stitcher/render-log-s01e03.md
+        word_count_body: ~1480
+        word_count_total: 1531
+        line_id_count: 126
+        bones_rendered: 155
+        bones_cut: 0
+        phase_7_moves: { keep: ~95, cut: 5, cut_clause: 7, reword: 1, simplify_punct: 1, reshow: 0 }
+        exposition_entries_rendered: 5   # 1 preamble (italic) + 1 first-mention-term clerk @3 (post-bone-clause) + 1 first-mention-place red-keep @125 (em-dash-fold) + 2 scene-open-orient @18 @73 (scene-bridge)
+        cross_episode_register_skipped: [reeve, lord's-man, fish-gate, log, the-Watch, maester, customary-wage-claim, vigil-candle, flea-bottom]
+        stitch_dialogue_admin_fix:
+          issue: "theater/dialogue/ held stale s01e02 files at /and-stitch start; canonical s01e03 dialogue was at theater/dialogue-s01e03/ (non-standard path)"
+          resolution: "stale s01e02 dialogue archived to theater/s01e02-archive/dialogue/; s01e03 dialogue moved to theater/dialogue/; theater/dialogue-s01e03/ removed"
+          done_at: 2026-05-13
+        stitch_process_gaps:
+          - URI-PHASE-2-5-FORK-OVER-CUT (NEW 2026-05-13) — Phase 2–5 combined cleanup fork over-cut 4 plot-load-bearing items (exposition:2 clerk-gloss, narrator:8 apparatus-pattern, narrator:37 season-peak structural commit, mem:8/mem:12 specifics) on Q5/Q8/Q9 strict-cut. Worm-tight Plot-load-bearing-NI carve-out (REWORD-not-CUT for Q1=yes lines) was not surfaced in the fork prompt. Orchestrator restored all 4 items with surface-only rewords. Pattern-lesson: Phase 2–5 fork prompts MUST include the carve-out explicitly OR pre-flag enumerated protected items in the prompt; Phase 7 prompt successfully used pre-flagged enumeration (8 of 8 protected items preserved).
+          - URI-SCENE-MAP-ABSENT-PRE-URI-SCENE-WINDOW (NEW 2026-05-13) — s01e03 has no scene-map facet (URI-SCENE-WINDOW landed 2026-05-13, after s01e03 /and-facets run completed 2026-05-12). Stitcher fell back to per-anchor mode per episode profile setting (`phase-1.fork-granularity: per-anchor`). For future episodes with scene-map available, scene-window mode is the schema default.
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audit_findings: 13   # all SIGNAL post-r4
+        audit_findings_hard_initial: 3   # URI-CONSOLIDATION-CITE-DRIFT family
+        audit_findings_hard_residual: 0
+        audit_findings_signal_residual: 13
+        audit_paths_chronological:
+          - active-project/staff/auditor/facets-final-audit.md  # r1->r2->r3->r4 sequential (each cycle overwrites; canonical=r4)
+        remediation_passes_hard: 1 of 1 (r1->r2; cleared 3 HARD via token-form rewrite; 6 feel + 35 state-update + 53 vibes licensed-by = 94 rewrites)
+        remediation_passes_signal: 2 (r3 cycle-1-fixer-pass, r4 cycle-2-fixer-pass; 5 SIGNAL CLOSED across cycles)
+        r2_decisions_path: active-project/theater/facets/.r2-decisions.md
+        r2_f_r2_counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
+        r2_discipline_fails: 0
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md
+        audience_gate_complete: true   # 9 of 9 facets at 3-of-3 ACCEPT at cycle 3 (cap)
+        audience_gate_cycles: 3 of 3 max
+        audience_gate_cap_burned: false   # cap=3 fully used but all facets cleared at cap
+        audience_gate_facet_accept_rate: 9 of 9
+        bidirectional_loop: validated   # URI-035 third validation; shared findings across audience + auditor on vibes AP8, tens AP2, curve-shape 1->3 jumps, NI density, Earth-Bet fence; audience-only findings drove substantive content remediation
+        process_gaps:
+          - URI-PHASE-5B-STALE-AUDIT-MISREAD (NEW 2026-05-12) — Phase 5b cycle-2 vibes reviewers attacked text from audit r3 flag-022 (`the-log-now-calls-parallel-truths-coincidence`) that had been overwritten in the file BEFORE cycle-2 audience fired (to `parallel-truths-as-coincidence-in-log`). False-positive 3-of-3 REVISE on a facet whose actual file state already matched the reviewers' proposed fix. Mitigation cycle-3: explicit "read the actual file, not the audit excerpt" instructions in prompts (cleared). Long-term: re-run audit after any orchestrator-applied post-audit edit OR enforce direct-file verification in audience prompts.
+          - URI-EXEMPTION-5-BOUNDARY-FRAGILITY (NEW 2026-05-12) — flag-021 documents 3.9% per-episode 3s rate sitting 0.1 points below the relaxed per-episode floor after worm-canon-pedant-demanded @90 downgrade (POV-fidelity correct). SIGNAL per auditor r3/r4. Carry-forward: Exemption 5 now has zero per-episode margin; further 3s attrition in s01e04+ retroactively invalidates the season-average claim. Watch the boundary.
+          - URI-NI-AUGMENTATION-REGISTER-SURFACE (NEW 2026-05-12) — Cycle-1 NI augmentation entries (narrator:42-45) added by fixer to address dark-fantasy file-level FAIL on doubled-register vacancy. Cycle-2 dark-fantasy FAIL re-fired: augmentation entries read as "still apparatus-tracking." Cycle-3 fixer rewrote entries to put displacement registers on TEXTUAL SURFACE ("older than this hand," "the body has been on the other side of this kind of seal," "different room"). Pattern lesson: when audience flags register absence, fix must surface the register textually, not in subtext or augmentation count.
+          - flag-021 SIGNAL (3.9% Exemption 5 breach) — orchestrator decision documented in tensometer footer; auditor r4 classifies SIGNAL; carry-forward.
+          - flag-008 SIGNAL (NI density 25.8% at-ceiling) — editor-call deferral by design.
+          - flag-009 SIGNAL (Taylor feeling 1.9% below floor) — editor-call deferral by design.
+        upstream_tuning_queue_entries: [URI-PHASE-5B-STALE-AUDIT-MISREAD, URI-EXEMPTION-5-BOUNDARY-FRAGILITY, URI-NI-AUGMENTATION-REGISTER-SURFACE]
+        upstream_tuning_queue_addressed: [URI-PHASE-5B-STALE-AUDIT-MISREAD]   # via cycle-3 prompt augmentation; long-term tooling fix queued
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
+        narrator: taylor-hebert-flea-bottom
+        interlude: false
+        chunk: "The Hightower apparatus opens its file on Taylor across two clerks and a senior operative's written request through the elder; the village-claim closes around her externally via the lord's-man record; range reaches 600m with the Red Keep 400m beyond ceiling; the season closes on two log entries written side-by-side — the architecture has changed but she does not know what file she is in."
+        proto_lines_path: active-project/theater/proto-lines/s01e03.md
+        tens_path: active-project/theater/facets/tensometer-s01e03.md
+        cast: [taylor-hebert-flea-bottom, oc-tanner-father, oc-tanner-elder, oc-broken-maester]
+        locations: [loc-flea-bottom-base]
+        prior_episode: s01e02
+        aggregate_range: 330-494 (+ interpolated narrative-scope: 497, 498, 499, 503, 507, 513, 514, 522, 523, 524)
+        aggregate_range_revised_at: 2026-05-11   # URI-028 honest-form declaration
+        per_episode_tens_band_verdict: {1s: 65.2, 2s: 30.3, 3s: 4.5, status: "exempt-tone-law-slow-burn-on-3s-only (URI-034 Exemption 5; 1s/2s within standard band)"}
+        exposition_retrofit:
+          applied: 2026-05-12 (claude/add-exposition-facet-pZ9TO)
+          scope: R1 blind author + Phase 2 merge only
+          entries: 5 final (1 prior-episode-bridge @0 + 1 first-mention-term [clerk] + 1 first-mention-place [red-keep] + 2 scene-open-orient; 1 dropped post-author in fish-gate overlap reconciliation with s01e02 retrofit; IDs renumbered)
+          sparsity: 3.2% (within 1-5% band)
+          facet_file: active-project/theater/facets/exposition-s01e03.md
+          deferred:
+            - Phase 3 R2 judge (graph-aware KEEP/DELETE/REWORD; would cross-check the 7 scene-orient refusals against actual loc-state/NI fires the R1 author was blind to)
+            - Phase 5 auditor mechanical pass (CONSTRAINT source-traceability + AP-SCAN scans)
+            - Phase 5b audience-gate adversarial review (3-of-3 persona ACCEPT; canonical test for exposition specifically since the facet is audience-modelled by construction)
+          rationale: user-direction "not really tuned but we'll manage without" — verification deferred to stitcher Phase 7 reflection at /and-stitch s01e03 time, or to a targeted retroactive audit pass if desired before stitch.
+          notable_design_call: clerk gloss @3 deliberately avoids naming Hightower/Hand-of-the-King to preserve the season's terminal reader-asymmetry (per beat-26); whether that's the right call is a season-shape question, surfacing here for visibility.
+    orchestrator_verdict_file: active-project/staff/auditor/season-s01-orchestrator-verdict.md
+  - slug: s02
+    chunk: "The glass-candle acquisition and sustained high-density relay load accumulate against the broken maester's sharpening documentation across the same months; the Khepri-mantle threshold crosses late in the season, the maester names it and is not heard, and Taylor arrives in s03 already changed — what cannot survive is the pre-threshold Taylor and the maester's belief that naming the line constitutes a brake."
+    status: planned
+  - slug: s03
+    chunk: "The Dance ignites and both factions' years of misclassification deliver their envoys to Taylor's door at the same time the faction-convergence engagement forces her hand; the rider-control demonstration terminates the Dance by rational deterrence and terminates also each faction's capacity to model her as a threat with a knowable ceiling."
+    status: planned
+  - slug: s04
+    chunk: "The density-saturation experiment and the surviving subject share the same Fish Gate margin Taylor's log has always under-recorded; the foreclosure event — one subject dead, one broken into four-hour memory increments, the falsification record burned — detonates after the war ends and takes with it the scientific-caution self-narrative the research arc has rested on since s01."
+    status: planned
+
+active:
+  season: s01
+  episode: s01e03 [wrapped, season-final]
+
+last_wrap:
+  episode: s01e03
+  date: 2026-05-13
+  outcome: clean (0 HARD, 1 SIGNAL converged with audience HIGH, 0 bones lost, 0 editor-introduced faults)
+  polish_path: active-project/polish/s01e03.md
