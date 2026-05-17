@@ -70,9 +70,9 @@ Bake a **declared, measurable, auditable substance contract** into the pipeline 
                    produces SVO bones; substance bone-gate)
                                   ← fires once per chapter
   ↓
-/and-facets b01c01 (per-facet runners; tensometer dropped)
+/and-facets b01c01 (per-facet runners; tensometer dropped; scene-map Phase 4d validates the upstream-emitted scene-map facet)
   ↓
-/and-stitch b01c01 (unchanged; eight-phase prose render → draft/<chapter>.md)
+/and-stitch b01c01 (eight-phase prose render → draft/<chapter>.md; tensometer-fallback path removed from Phase 0)
   ↓ [optional /and-review at any point for spot-checks / verdicts]
 
 [final-edits / polish / ship-ready manuscript: deferred until upstream is proven]
@@ -90,8 +90,8 @@ Bake a **declared, measurable, auditable substance contract** into the pipeline 
 | `/and-write` | **renamed + substantively overhauled** (was `/and-protolines`) | NOT a simple rename: input shape changes (was "episode chunk" → now scene chunks with substance contracts from `/and-substance chapter` output), and `/and-write` now owns scene-decomposition (a job the prior plan parked at `/and-substance scene`). New scene-decomposition Phase authors bones-with-deltas from each scene; substance bone-gate verifies per-bone Δ + scene aggregate Δ + cost-paid. Runs five-pass SVO pipeline + decomposition + substance bone-gate. Emits per-chapter bones file. |
 | `/and-review` | **net new** | Universal review primitive with subcommand router. Reviews anything (signature / chunk / contract / bones / facets / prose / cast / consistency / tree / feedback / verdict) on demand. Absorbs `/and-judge-book` (orchestrator-critic) via `verdict <book>` subcommand. |
 | `/and-judge-book` | **DROPPED** | Absorbed by `/and-review verdict <book>`. |
-| `/and-facets` | overhauled (light) | Tensometer facet removed from R1/R2 fanout. Otherwise unchanged. |
-| `/and-stitch` | unchanged | Out of scope for this overhaul. Existing Phase 7 (editorial reflection) is what it is. Output is `draft/<chapter>.md` — the deliverable until upstream substance machinery is proven. |
+| `/and-facets` | overhauled (light) | Tensometer facet removed from R1/R2 fanout. Phase 4d scene-map downgrades from derivation to validation (consumes the upstream-emitted scene-map facet from `/and-write` Phase 7). R1 rubric input lists drop tens reads; substance-contract reads substitute where pressure-signal is needed. |
+| `/and-stitch` | overhauled (very light) | Eight-phase pipeline preserved; Phase 0 tensometer-derivation fallback removed as dead code under the new chain. Output is `draft/<chapter>.md` — the deliverable until upstream substance machinery is proven. |
 | `/and-wrap` | **DROPPED** | Wasn't pulling its weight. Polish concerns deferred entirely until upstream chain is working end-to-end. |
 
 ### Why drop /and-judge-book and /and-wrap entirely
@@ -100,7 +100,7 @@ Bake a **declared, measurable, auditable substance contract** into the pipeline 
 
 **`/and-wrap`** wasn't pulling its weight. Three phases (audience review, auditor pass, editor pass), but the editor pass produced marginal changes on top of what `/and-stitch`'s Phase 7 (editorial reflection) already did, and the audience+auditor phases were mandatory dispatch cost for a review the user might or might not want at that moment. Dropped outright.
 
-**Polish / final-edits is deferred entirely as a concern.** The substance overhaul ships when the upstream chain — `/and-project` → `/and-series` → `/and-substance series` → `/and-cast` → `/and-substance` (recursive) → `/and-write` → `/and-facets` → `/and-stitch` — produces a draft that is *substantively right*. Prose polish, cross-chapter percussion, repetition culling across the book, ship-ready manuscript work: all of that waits until the substance machinery is proven. `/and-stitch` is **unchanged** by this overhaul (its existing Phase 7 editorial reflection is what it is); `/and-review prose <chapter>` and any prose-focused review subcommands are **deferred**. The chain ends at `draft/<chapter>.md`; that's the deliverable until upstream is trusted.
+**Polish / final-edits is deferred entirely as a concern.** The substance overhaul ships when the upstream chain — `/and-project` → `/and-series` → `/and-substance series` → `/and-cast` → `/and-substance` (recursive) → `/and-write` → `/and-facets` → `/and-stitch` — produces a draft that is *substantively right*. Prose polish, cross-chapter percussion, repetition culling across the book, ship-ready manuscript work: all of that waits until the substance machinery is proven. `/and-stitch` is **structurally unchanged** by this overhaul (its eight-phase pipeline shape is preserved; the one narrow mutation is Phase 0 tensometer-fallback removal); `/and-review prose <chapter>` and any prose-focused review subcommands are **deferred**. The chain ends at `draft/<chapter>.md`; that's the deliverable until upstream is trusted.
 
 ### Why drop /and-season entirely
 
@@ -159,7 +159,7 @@ Every new command except `/and-project` is **re-runnable**. The authoring loop i
 | `/and-cast` | yes | `revise` (swap/add/retire; new actors get fresh margit Phase 4 provisioning — working dir + LTM + STM + state + vibes; retired actors are decommissioned to `actors/<slug>-decommissioned-<timestamp>/`; untouched actors are left as-is) / `redo` (margit decommissions full current roster, full re-provisioning from scratch). |
 | `/and-write` | yes | Per-chapter. `revise` (re-decompose specific scenes flagged SIGNAL by bone-gate, or re-write specific bone ranges) / `redo` (full rewrite — preserves scene chunks, replaces all bones). |
 | `/and-review` | yes (idempotent) | Any subcommand can be re-fired any number of times. Each invocation persists a new timestamped report; nothing else is mutated. `verdict` subcommand updates `books[<slug>].orchestrator_critic_verdict` in place. |
-| `/and-stitch` | yes (unchanged) | Per-chapter. Re-running re-runs the full eight-phase pipeline. No new revise mode in this overhaul. |
+| `/and-stitch` | yes (lightly mutated) | Per-chapter. Re-running re-runs the full eight-phase pipeline. No new revise mode in this overhaul; the one narrow mutation is Phase 0 tensometer-fallback removal. |
 
 **Phase 0 protocol for re-runnable commands:**
 
@@ -194,7 +194,7 @@ git mv .claude/commands/and-protolines.md   archive/commands/and-protolines-pre-
 
 Update `archive/commands/README.md`:
 
-> **2026-05-16 — substance overhaul.** Two reasons. (1) The pre-substance chain optimized per-line craft, dramatic shape, mechanic discipline, continuity, and prose economy — but had no declared substance contract; episodes shipped through it were structurally clean and substance-flat. (2) `/and-project` conflated scope with series content; `/and-season` conflated recursive chunking (book→chapter→scene) with bone-writing and emission; `/and-wrap`'s editor pass produced marginal lift on top of `/and-stitch`'s existing Phase 7 editorial reflection. Replacement chain: `/and-project` (scope+staff) → `/and-series` (series chunk + structural prompts) → `/and-substance series` (signature + per-book Δ) → `/and-cast` (roster) → series-level audit checkpoint → `/and-substance book/chapter` (recursive chunker authoring; three invocation levels; four chunk levels stopping at scene) → `/and-write` (scene-decomposition into bones-with-deltas + five-pass SVO + substance bone-gate; replaces `/and-protolines`) → `/and-facets` (tensometer dropped) → `/and-stitch` (unchanged). The bone is the smallest substance unit — it carries its own declared axis-movement; the former "beat chunk" planning level is collapsed into the bone itself. `/and-review` is the universal review primitive with subcommand router (includes `verdict <book>`, absorbing the former `/and-judge-book`). Dissolved: `/and-season` (into `/and-substance` + `/and-write`); `/and-wrap` (polish concerns deferred entirely until upstream substance machinery is proven; `/and-stitch`'s `draft/<chapter>.md` is the terminal deliverable); `/and-judge-book` (into `/and-review verdict`). Renamed-overhauled: `/and-protolines` → `/and-write`. URI-026 tens-gate replaced by `/and-write` substance bone-gate; tensometer facet retired. See `design/substance/`.
+> **2026-05-16 — substance overhaul.** Two reasons. (1) The pre-substance chain optimized per-line craft, dramatic shape, mechanic discipline, continuity, and prose economy — but had no declared substance contract; episodes shipped through it were structurally clean and substance-flat. (2) `/and-project` conflated scope with series content; `/and-season` conflated recursive chunking (book→chapter→scene) with bone-writing and emission; `/and-wrap`'s editor pass produced marginal lift on top of `/and-stitch`'s existing Phase 7 editorial reflection. Replacement chain: `/and-project` (scope+staff) → `/and-series` (series chunk + structural prompts) → `/and-substance series` (signature + per-book Δ) → `/and-cast` (roster) → series-level audit checkpoint → `/and-substance book/chapter` (recursive chunker authoring; three invocation levels; four chunk levels stopping at scene) → `/and-write` (scene-decomposition into bones-with-deltas + five-pass SVO + substance bone-gate; emits flat-integer-ID bones file + scene-map facet; replaces `/and-protolines`) → `/and-facets` (tensometer dropped; scene-map derivation downgraded to validation) → `/and-stitch` (tensometer-fallback removed from Phase 0). The bone is the smallest substance unit — it carries its own declared axis-movement; the former "beat chunk" planning level is collapsed into the bone itself. `/and-review` is the universal review primitive with subcommand router (includes `verdict <book>`, absorbing the former `/and-judge-book`). Dissolved: `/and-season` (into `/and-substance` + `/and-write`); `/and-wrap` (polish concerns deferred entirely until upstream substance machinery is proven; `/and-stitch`'s `draft/<chapter>.md` is the terminal deliverable); `/and-judge-book` (into `/and-review verdict`). Renamed-overhauled: `/and-protolines` → `/and-write`. URI-026 tens-gate replaced by `/and-write` substance bone-gate; tensometer facet retired. See `design/substance/`.
 
 ---
 
@@ -324,8 +324,10 @@ books:
           axes_in_motion: [...]
           density_target: <range>
         stale_since: <iso-timestamp> | null
-        # from /and-substance chapter
+        # from /and-substance chapter Phase 3 (pov_narrator) + Phase 4 (dramatic_shape, goal)
+        pov_narrator: <actor-slug>         # resolved from series.structure.pov; populated on every chapter so /and-write can write the bones-file `narrator:` header
         dramatic_shape: <rising | climax | falling | hinge | ...>
+        goal: <one-line "what this chapter shows the audience"; bones-file `goal:` header source>
         scenes:
           - slug: b01c01s01
             chunk: |
@@ -338,11 +340,12 @@ books:
               opposing_force: <one line>
               stakes_axis: <axis-slug>
             stale_since: <iso-timestamp> | null
-            bones:                         # from /and-write Phase 1 (scene-decomposition)
-              - slug: b01c01s01n01        # n-prefix for bones (b would collide with book)
+            bones:                         # from /and-write Phase 1 (scene-decomposition); per-bone state-delta lives here in memory, NEVER in the flattened bones file
+              - slug: b01c01s01n01        # n-prefix for bones (b would collide with book); the authoring/audit handle
+                flat_id: <int>             # assigned at /and-write Phase 7 serialization (scene-order monotonic, file-scoped); the file/citation handle that /and-facets writes `[<facet>:<flat_id>]` against
                 svo: |
-                  <one-line subject-verb-object bone — scene-action-sized; e.g. "Maya confronts Tomas about the missing key.">
-                substance_delta:           # per-bone — the smallest substance unit
+                  <one-line subject-verb-object bone — scene-action-sized; e.g. "maya confronts tomas" or "taylor-hebert speaks to septon-dying-protector" for a dialogue bone>
+                substance_delta:           # per-bone — the smallest substance unit; consumed by /and-write Phase 6 bone-gate and /and-review bone <slug>; NOT written to the flattened bones file
                   axis_moves:
                     - axis: <axis-slug>
                       direction: + | -
@@ -352,10 +355,9 @@ books:
                     direction: -
                     magnitude: <1-3>
                   cost_ledger_anchor: <cost-ledger-entry-id> | null  # link to series.substance.cost_ledger when this bone pays one
-                facet_tags: [feeling, dialogue, memory-flag, ...]   # optional pre-tagging for /and-facets
-                gate_verdict:              # filled by /and-write Phase 6
-                  bonefide: true | false   # does the SVO actually cause the declared Δ?
-                  flat: false | <axis>     # SUBSTANCE-FLAT on this bone
+                gate_verdict:              # filled by /and-write Phase 6 ONLY on PASS; cleared at /and-write Phase 0 on revise/redo before re-firing Phase 6
+                  bonefide: true           # does the SVO actually cause the declared Δ? Only PASS is persisted; HARD findings block Phase 7 emission so the bone doesn't ship.
+                  flat: false              # SUBSTANCE-FLAT on this bone — only PASS state (false) is persisted
         # chapter-level fields filled by /and-write
         bones_file: theater/bones/b01-c01.md
         bones_count: <N>
@@ -372,7 +374,7 @@ books:
       stale_since: <iso-timestamp> | null   # set when any /and-substance or /and-write under this book re-runs after the verdict was recorded
 ```
 
-**Bones as scene-children, not flat-per-chapter.** The source of truth is `chapters[].scenes[].bones[]` in showrunner memory. The per-chapter file `theater/bones/<book>-<chapter>.md` is a **flattened view** emitted by `/and-write` Phase 7 for downstream `/and-facets`/`/and-stitch` consumption — bones in scene order, with scene-boundary markers preserved (so the scene-map facet `/and-facets` derives can resolve every bone to its scene without extra lookup). If schemas and memory disagree, memory wins; the file is regenerated from memory.
+**Bones as scene-children, not flat-per-chapter.** The source of truth is `chapters[].scenes[].bones[]` in showrunner memory. The per-chapter file `theater/bones/<book>-<chapter>.md` is a **flattened view** emitted by `/and-write` Phase 7 for downstream `/and-facets`/`/and-stitch` consumption — bones serialized in scene order with flat integer IDs, no scene markers in body (the co-emitted scene-map facet at `theater/facets/scene-map-<chapter>.md` carries scene boundaries as flat_id ranges so `/and-facets` Phase 4d can validate coverage without re-deriving). If schemas and memory disagree, memory wins; both file artifacts are regenerated from memory.
 
 ---
 
@@ -413,8 +415,8 @@ Single command body. Argument is the invocation level: `series` / `book <slug>` 
 1. **Phase 0 — Validate + mode select.** Read upstream chunk + parent substance commitment. Abort if upstream missing. If own output populated, prompt `revise` / `add` (where applicable) / `redo`. If downstream chunks or `/and-write` bones exist, surface cascade + offer staleness-marking.
 2. **Phase 1 — Read parent.** Series: read `series.chunk` + structural commitments. Book: read book chunk + per-book Δ. Chapter: read chapter chunk + per-chapter Δ.
 3. **Phase 2 — Author sub-chunks.** One prose paragraph per child unit. Series → per-book chunks. Book → per-chapter chunks. Chapter → per-scene chunks (substantial; scenes typically fill most of a chapter, 1–3 scenes per chapter default).
-4. **Phase 3 — Author sub-chunk substance contracts.** For each sub-chunk: which axes shift, direction, target Δ-magnitude, cost, density target. **Chapter level additionally authors per-scene `scene_conflict`** (protagonist_force / opposing_force / stakes_axis) so every scene has named opposition.
-5. **Phase 4 — Level-specific extras.** Series: authors the signature itself (state axes, anchors, cost ledger, antagonist pressure). Book: authors the book drama statement. Chapter: authors the chapter dramatic shape (rising / climax / falling / hinge) and the chapter-arc completion line ("what changed by end of this chapter, in one sentence").
+4. **Phase 3 — Author sub-chunk substance contracts.** For each sub-chunk: which axes shift, direction, target Δ-magnitude, cost, density target. **Chapter level additionally authors per-scene `scene_conflict`** (protagonist_force / opposing_force / stakes_axis) so every scene has named opposition. **Chapter level also authors `chapters[].pov_narrator`** (per `series.structure.pov`: `single` → inherited from series; `rotating-per-book` → inherited from book; `multi` → picked per chapter from the cast roster); always populated on every chapter so `/and-write` Phase 7 can write the bones-file `narrator:` header without further lookup.
+5. **Phase 4 — Level-specific extras.** Series: authors the signature itself (state axes, anchors, cost ledger, antagonist pressure). Book: authors the book drama statement. Chapter: authors the chapter dramatic shape (rising / climax / falling / hinge) and `chapters[].goal` — a one-line "what this chapter shows the audience" string distilled from the chapter's substance contract + dramatic-arc completion. The `goal` is the per-chapter north star Pass 4 (trim) and downstream `/and-facets` Phase 0 consume as the bones-file `goal:` header field.
 6. **Phase 5 — Chunk-quality review.** Audience + dramatist + auditor at this level. Accept/revise loop (3-try cap). **Audience:** does this chunk feel substantive — does the named Δ feel earned, the cost feel real, the meaningfulness land? `SUBSTANCE-FELT` vs `SUBSTANCE-FLAT-<axis>` vs `SUBSTANCE-SUSPECT-cheap-gain-<axis>`. **Dramatist:** is the chunk shape sound? Do the children fit within the parent's Δ? Scenes-not-too-small (chapter-level check)? Cyclical / cross-book / structural commitments honored? Chapter has dramatic-arc completion? **Auditor:** does the chunk text match the substance contract (no rank claim without described cause; cost-ledger consistency)?
 7. **Phase 6 — Persist.** Write chunks + contracts to showrunner memory at this level's nesting depth. **No bones at any level** — bones are written by `/and-write`.
 
@@ -442,13 +444,22 @@ Reads scene chunks + substance contracts produced by `/and-substance chapter`. *
 1. **Phase 0 — Validate + mode select.** Read all scene chunks under the chapter. Abort if any scene is unsubstanced (`substance_delta` missing or `scene_conflict` unpopulated). If `theater/bones/<book>-<chapter>.md` already exists, prompt `revise` (re-decompose specific scenes flagged SIGNAL by bone-gate, or re-write specific bone ranges) / `redo` (full rewrite — scene chunks preserved, all bones replaced).
 2. **Phase 1 — Scene-decomposition (the work that used to be `/and-substance scene`).** For each scene chunk: decompose into N bones (within `series.structure.book_length.bones_per_scene` range, typical 5–15). Each bone declares one axis-movement (occasionally two) with declared cost and links to the cost-ledger when applicable. Bones are scene-action-sized — one scene-significant action per bone, not micro-beats. The scene's substance contract is the aggregation target: per-axis sum of bone-Δ must equal the scene's declared Δ within ±1 rank.
 3. **Phase 2 — Constraint audit.** Verify each bone's declared Δ is well-formed (no rank claims without parent-cost backing; no axis movements outside the scene's contract; no costs unaccounted-for in the cost ledger). Verify aggregate-bones-Δ ≈ scene-Δ per axis.
-4. **Phase 3 — Shape (SVO writing).** For each bone, author the SVO craft: subject-verb-object, line economy, voice-consistent. The bone's declared Δ is the cause-claim the SVO must visibly support.
+4. **Phase 3 — Shape (SVO writing).** For each bone, author the SVO craft: subject-verb-object, line economy, voice-consistent, governed by `schemas/bones.schema.md § field rules` (harsh-SVO discipline: no copulas, no negations, no perception verbs, no modifiers, no conjunctions, no interiority, no compound objects). **Speech bones** — any bone whose declared axis-movement is communication-mediated (community / knowledge / reputation / trust class) — MUST take the licensed dialogue form `<speaker-slug> speaks to <listener-slug>`. This is the URI-DIALOGUE-COVERAGE-GATE anchor; non-`speaks to` speech forms (`says`, `tells`, `whispers`, etc.) are banned. Conversely, a `speaks to` bone whose substance_delta lists only physical-action axes is malformed — speech bones must move at least one communication-class axis.
 5. **Phase 4 — Trim.** Drop bones that don't cause Δ (chatter bones — schema violation, not just style). Bones for setup/transition are allowed only if they pay a later gain (cost-ledger link required). Capped at density-target ratio.
 6. **Phase 5 — Continuity audit.** State-thread check across bones (props move, actors track, conditions persist). Cross-scene continuity within the chapter (handoff from scene N to scene N+1).
 7. **Phase 6 — Substance bone-gate.** **Replaces URI-026 tens-gate.** For each bone: verify the declared axis movement is **bonefide** (SVO actually causes named Δ; no rank claim without visible cause; otherwise `SUBSTANCE-FLAT-<axis>` HARD). For each scene: verify per-axis Δ delivered within ±1 rank of contract; verify `scene_conflict.opposing_force` is visible in the bones (something is *against* something). For each scene under the chapter: verify cost-ledger entries are paid by visible bones (`SUBSTANCE-SUSPECT-cheap-gain-<axis>` HARD if cost not visible). Audience review (3 personas) per scene window: `SUBSTANCE-FELT` PASS / `SUBSTANCE-FLAT-<axis>` HARD / `SUBSTANCE-SUSPECT-cheap-gain-<axis>` HARD. **HARD/SIGNAL classification:** flat-bones, cost-not-paid, missing-opposing-force, per-axis-Δ-mismatch-beyond-±2 → HARD (blocks emission). Bones-count-below-density-target, per-axis-Δ-mismatch-within-±1-to-±2, chatter-bones-just-over-cap → SIGNAL (records but passes).
-8. **Phase 7 — Emit + downstream-gate pre-verify.** Write bones to `active-project/theater/bones/<book>-<chapter>.md` (flattened scene-ordered view of `chapters[].scenes[].bones[]` in memory; source of truth stays in memory). Before write, pre-verify the two downstream `/and-facets` gates so this command HARD-aborts rather than letting `/and-facets` Phase 0 abort later: (a) **URI-DIALOGUE-COVERAGE-GATE** — every `speaks to` bone has an addressee and a speaker resolvable from the cast roster; the file shape supports per-character dialogue file emission downstream. (b) **URI-SCENE-WINDOW** — every bone is taggable to exactly one scene slug under the chapter (no dangling anchors, no scene-spanning bones); the scene-map facet `/and-facets` will derive can resolve every bone. Both pre-verifications are HARD findings at this Phase; SIGNAL versions are tolerated and recorded. File ready for `/and-facets`.
+8. **Phase 7 — Emit + downstream-gate pre-verify + scene-map co-emit.** Two artifacts written, both derived from `chapters[].scenes[].bones[]` in showrunner memory (source of truth stays in memory):
 
-Estimated size: ~400–500 lines (scene-decomposition + five-pass SVO pipeline + substance bone-gate + emission). The size grew vs. the prior plan because `/and-write` absorbs scene-level decomposition that was previously parked at `/and-substance scene`.
+   **(a) Flattened bones file** at `active-project/theater/bones/<book>-<chapter>.md`. Conforms to `schemas/bones.schema.md` (renamed from `schemas/proto-line.schema.md`; format preserved for downstream `/and-facets`/`/and-stitch` compatibility):
+   - **Flat integer IDs.** At serialization, walk scenes in order and assign each bone a monotonic positive integer `flat_id`, starting at 1, file-scoped. The in-memory bone slug (`b01c01s01n01`) is the authoring/audit handle; the flat_id is the file/citation handle. The `flat_id ↔ slug` map is persisted on `bones[].flat_id: <int>` so reviewers can cross-walk. Re-running `/and-write redo` produces the same flat_ids as long as scene/bone counts are stable; revise mode preserves flat_ids for unchanged bones (revised bones get new flat_ids at end of the chapter or via gap-filling — pick gap-filling to keep monotonicity tight).
+   - **Full 7-field header** (same as the existing schema's extended header — `/and-facets` Phase 0 reads all seven): `episode: <chapter-slug>` (the schema-field name stays `episode:` for compatibility; value is the chapter slug like `b01c01`), `narrator: <chapters[].pov_narrator>`, `goal: <chapters[].goal>`, `cast: <comma-list>` (computed via slug-grep over the chapter's bone SUBJECTs + `speaks to` listeners), `locations: <comma-list>` (computed via slug-grep over OBJECTs resolved against warehouse loc cards), `prior_episode: <prior-chapter-slug | none>` (the previous chapter in chapter order; `none` for the first chapter of the first book), `aggregate_range: 1-<N>` (kept for schema compatibility; trivially 1-N since `/and-write` authors the chapter directly).
+   - **Body format unchanged.** Plain SVO lines, one bone per line, blank-numbered-ID lines as time-skip markers, no scene markers in the body, no YAML metadata, no facet pre-tags. Per-bone state-delta lives only in memory.
+
+   **(b) Scene-map facet** at `active-project/theater/facets/scene-map-<chapter>.md`, conforming to `schemas/scene-map.schema.md`. Emitted directly from the in-memory `scenes[]` structure (one scene-map entry per `scenes[]` element; bone-range computed from the flat_ids of bones inside each scene). This **replaces** `/and-facets` Phase 4d's prior tensometer-based derivation; `/and-facets` Phase 4d downgrades to coverage-validation only (still fires the URI-SCENE-WINDOW coverage check, but no longer derives).
+
+   **Downstream-gate pre-verify** (HARD, blocks write): (a) **URI-DIALOGUE-COVERAGE-GATE** — every `speaks to` bone has an addressee and a speaker resolvable from the cast roster. (b) **URI-SCENE-WINDOW** — every bone lands inside exactly one scene's flat_id range; no dangling anchors; no scene-spanning bones. Both pre-verifications run before write; SIGNAL versions are tolerated and recorded. On pass, both artifacts ship; `/and-facets` Phase 0 finds the bones file ready and the scene-map facet pre-emitted.
+
+Estimated size: ~450–550 lines (scene-decomposition + five-pass SVO pipeline + substance bone-gate + dual emission). The size grew vs. the prior plan because `/and-write` absorbs scene-level decomposition that was previously parked at `/and-substance scene` AND now also owns scene-map emission.
 
 ### `/and-review` (net new — universal review primitive with subcommand router)
 
@@ -485,11 +496,33 @@ Top-level router dispatches to one of N pre-defined review types. No authored wr
 
 Estimated size: ~300–400 lines (the router + N subcommand implementations; each subcommand is small because the reviewers do the heavy lifting).
 
-### `/and-stitch` (unchanged — out of scope for this overhaul)
+### `/and-facets` (light mutation — two narrow edits beyond tensometer-drop)
+
+Bones and the ten facets (location-state, narrator-interest, sensory, state-updates env, state-updates actor, memory, feeling, metaphor, vibes-updates, exposition) + per-character dialogue files are preserved. R1 fanout → R1 fanin → R2 fanout → R2 fanin → audit → audience-gate pipeline shape is preserved.
+
+**Two mutations on top of tensometer-drop:**
+
+1. **R1 author input list no longer includes `tensometer.md`.** Every R1 facet rubric that today reads upstream tensometer (correlative gate, peak-anchors, inverted-tens density, AP7 default-refuse, curve-discipline, etc.) is updated to read the **scene-map facet** (now upstream-emitted by `/and-write` Phase 7 — see below) where it needs scene-boundary information, and to drop the tens-correlation reads entirely. Rubrics that used tens as a substantive signal (memory inverted-tens density, metaphor AP7-at-tens-3, vibes peak-anchors) lose that signal; the substance contract upstream is the replacement (per-bone delta + per-scene aggregate is consulted from showrunner memory by the rubric author when scene-importance pressure matters). Rubric files updated alongside the facets command body.
+
+2. **Phase 4d scene-map: derivation → validation.** `/and-write` Phase 7 already emits the scene-map facet directly from `chapters[].scenes[]`. `/and-facets` Phase 4d no longer derives — it validates: confirm the upstream-emitted `theater/facets/scene-map-<chapter>.md` exists; run the URI-SCENE-WINDOW coverage check (every bone in `theater/bones/<book>-<chapter>.md` lands in exactly one scene's flat_id range; no gaps; no overlaps; no dangling anchors); HARD-fault on coverage break. The tensometer-fallback path inside the Phase 4d derivation (which used candidate-boundary + sparsity-gradient walking) is removed as dead code.
+
+Everything else in `/and-facets` is unchanged: Phase 0 still reads the 7-field bones-file header (which `/and-write` now emits); the body-integrity check, citation union, slice consolidation, stale-citation check still operate on flat integer IDs in the bones file (which `/and-write` now assigns at serialization); URI-DIALOGUE-COVERAGE-GATE still fires per `speaks to` bones (which `/and-write` Phase 3 still emits in the licensed form); R2 fanout + audit + audience-gate operate as today.
+
+The `tens:` citation prefix is removed from the recognized list in `schemas/bones.schema.md § citation prefixes`. No other facet citation prefix is changed.
+
+Estimated edit size: ~80–150 lines across `.claude/commands/and-facets.md` (drop tensometer fanout + R1 rubric input updates), `design/shoot-v2/rubric-*.md` files (drop tens references; substitute scene-map + memory-consulted substance contract where pressure-signal is needed), and `schemas/bones.schema.md` (drop `tens:` citation prefix).
+
+### `/and-stitch` (light mutation — one narrow edit)
 
 Eight-phase pipeline (lens-anchored render → redundancy cull → compression → voice transform → local flow → buildup preservation → editorial reflection → finalize). Output `draft/<chapter>.md` (clean) + `draft/<chapter>.annotated.md` (traced). The clean draft is the deliverable until upstream substance machinery is proven and the user wants to revisit polish.
 
-No `revise --feedback` mode, no Phase 7 substance-allowed-moves enhancement. Both flagged in earlier plan drafts; both deferred.
+**One mutation on top of tensometer-drop:**
+
+- **Phase 0 scene-boundary detection: drop the tensometer-derivation fallback path.** Under the new chain, `/and-write` Phase 7 always emits the scene-map facet; `/and-facets` Phase 4d validates it. The fallback path (which previously parsed `tensometer-<slug>.md`'s scene-footer when the scene-map facet was missing) becomes dead code. Remove it. Pre-URI-SCENE-WINDOW episodes are out of scope (new chain only; existing flea-bottom-dance project keeps its layout).
+
+R1 lens-anchored render forks, redundancy cull, compression, voice transform, local flow, buildup preservation, Phase 7 editorial reflection, Phase 8 finalize — all unchanged. No `revise --feedback` mode, no Phase 7 substance-allowed-moves enhancement; both deferred per the polish-deferred boundary.
+
+Estimated edit size: ~30–50 lines (Phase 0 fallback removal + tens-reference cleanup in the stitcher fork prompts).
 
 ---
 
@@ -545,7 +578,7 @@ Items flagged as DEFER in the self-audit. Not blockers; recorded so the implemen
 2. **Design docs.** `design/substance/README.md` (incl. full recursive design at three invocation levels / four chunk levels + the bone-is-the-beat principle) + `questionnaire.md` + `delta-targets.md`.
 3. **Schema updates.**
    - `schemas/showrunner-memory.schema.md` — `project:` block, restructured `series:` with substance subblock, `books[]` nesting (chapters, scenes, scene_conflict block, scenes[].bones[] with per-bone state-delta, chunk-count fields at each authoring level, `bones_file` pointer, `stale_since` at each level, structured `orchestrator_critic_verdict` block).
-   - `git mv schemas/proto-line.schema.md schemas/bones.schema.md` — rename to match `/and-write` output naming. Update internal references in the schema body (s/proto-line/bone/g where it refers to the unit itself; keep historical references in archived schemas alone). Update CLAUDE.md's schema authority table accordingly.
+   - `git mv schemas/proto-line.schema.md schemas/bones.schema.md` — rename to match `/and-write` output naming. Update internal references in the schema body (s/proto-line/bone/g where it refers to the unit itself; keep historical references in archived schemas alone). **Body format preserved as-is** (flat integer IDs, monotonic, file-scoped; 7-field extended header with field names unchanged; no body markers; post-extraction citation accrual) — downstream `/and-facets` Phase 0 / body-integrity check / citation union operate against the same shape. **Removed:** the `tens:` citation prefix from the recognized prefix list (tensometer is gone). Update CLAUDE.md's schema authority table accordingly.
 4. **Archive current commands + tensometer rubric.**
    - `git mv .claude/commands/and-project.md      archive/commands/and-project-pre-substance.md`
    - `git mv .claude/commands/and-season.md       archive/commands/and-season-dissolved.md`
@@ -564,7 +597,7 @@ Items flagged as DEFER in the self-audit. Not blockers; recorded so the implemen
    - `.claude/commands/and-write.md` (bones crafter; carries scene-decomposition + five-pass SVO pipeline + substance bone-gate)
    - `.claude/commands/and-review.md` (universal review primitive; subcommand router incl. `verdict`; `prose` subcommand stubbed-deferred)
 
-   **Not touched:** `/and-facets` (light edit only — remove tensometer from R1/R2 fanout; no other changes) and `/and-stitch` (unchanged; still produces `draft/<chapter>.md` from bones+facets — the chain's terminal authoring step).
+   **Lightly mutated** (narrow edits, not net-new): `/and-facets` (remove tensometer from R1/R2 fanout + downgrade Phase 4d scene-map from derivation to validation + update R1 rubric input lists to drop tens reads + substitute substance-contract reads where pressure-signal is needed) and `/and-stitch` (drop Phase 0 tensometer-derivation fallback path). Rubric files under `design/shoot-v2/rubric-*.md` updated alongside the facets command body.
 6. **Update CLAUDE.md.** Full enumerated change set:
    - **Primary pattern section.** Replace the `project activation → season start → (episode start → shoot)* → bulk and-wrap → repeat` block with the new chain: `/and-project → /and-series → /and-substance series → /and-cast → [series audit checkpoint] → /and-substance book/chapter → /and-write (decomposes scenes into bones) → /and-facets → /and-stitch → draft/<chapter>.md (terminal deliverable; polish deferred)`. Remove "Season start," "Episode start," "Shoot," "And-wrap" prose subsections — the names no longer exist. Add a short paragraph noting that polish/`/and-wrap` is dropped and `/and-stitch`'s output is the deliverable until upstream is proven.
    - **Agent routing table.** No agent additions/removals expected (the new commands reuse existing agents: showrunner, screen-writer, audience, dramatist, auditor, fixer, margit, orchestrator-critic). Confirm `editor` row stays or is marked DEFERRED (since `/and-wrap` is dropped and `/and-stitch` Phase 7 is the standing in for editorial work for now); remove the `editor` row entirely or annotate it as `library-only; not currently dispatched` — pick the latter to preserve the card for the eventual polish revival.
@@ -583,8 +616,8 @@ Items flagged as DEFER in the self-audit. Not blockers; recorded so the implemen
 - **Retrofitting flea-bottom-dance.** Current active project keeps its state. New chain applies to the next `/and-project` run.
 - **Facet rubric changes — partial.** Bones and facets (feeling, memory-flags, scene-map, dialogue, exposition, etc.) are preserved. **Tensometer is removed** — its purpose (per-bone substance-density signal) is now served directly by the per-bone state-delta + bone-gate. `/and-facets` no longer emits a tensometer file; `design/shoot-v2/rubric-tensometer.md` is archived; CLAUDE.md's "shared reviewer resources" line (URI-026) is updated to drop the tens rubric. The Tens-gate in URI-026 is replaced by the substance bone-gate at `/and-write` Phase 6 (per-bone axis-movement verification + per-scene aggregate Δ delivery + cost-paid check against the upstream scene contracts authored by `/and-substance chapter`). `/and-substance` is the chunker only (stops at scene chunks); scene-decomposition + bone-writing + bone-gate logic all live in `/and-write`.
 - **Impersonator card "values block."** Deferred — follow-on card-schema task after one full new-chain run.
-- **Shoot-v2 chain overhaul.** `/and-facets` and `/and-stitch` unchanged structurally. `/and-facets` drops tensometer from its R1/R2 fanout. They operate on the per-chapter bones files `/and-write` emits.
-- **Final-edits / polish / ship-ready manuscript work.** Deferred entirely until the upstream chain (project → series → substance → cast → substance recursive → write → facets → stitch → draft) is proven to produce substantively-right drafts end-to-end. The whole "is the prose ready to ship?" question waits. `/and-wrap` is dropped without replacement; `/and-stitch` is unchanged; `/and-review`'s `prose` subcommand is stubbed-deferred. Whole-text concerns (cross-chapter percussion, repetition cull across the book, polish/ directory) come back after the substance machinery is trusted.
+- **Shoot-v2 chain overhaul.** `/and-facets` and `/and-stitch` are **lightly mutated** (not unchanged): `/and-facets` drops tensometer from R1/R2 fanout AND downgrades Phase 4d scene-map from derivation to validation (the scene-map facet is now upstream-emitted by `/and-write` Phase 7); `/and-stitch` drops its Phase 0 tensometer-derivation fallback as dead code. Both edits are narrow (light command-body edits + rubric updates; full specs in the `/and-facets` and `/and-stitch` command-spec sections above). The shoot-v2 pipeline shape — bones → ten facets + dialogue → cite-index → stitcher draft — is preserved. Bones file format is preserved (flat integer IDs, 7-field header, no body markers, post-extraction citation accrual) so `/and-facets` Phase 0 + body-integrity checks + citation accrual all operate as today.
+- **Final-edits / polish / ship-ready manuscript work.** Deferred entirely until the upstream chain (project → series → substance → cast → substance recursive → write → facets → stitch → draft) is proven to produce substantively-right drafts end-to-end. The whole "is the prose ready to ship?" question waits. `/and-wrap` is dropped without replacement; `/and-stitch` is structurally preserved (one narrow Phase 0 mutation only); `/and-review`'s `prose` subcommand is stubbed-deferred. Whole-text concerns (cross-chapter percussion, repetition cull across the book, polish/ directory) come back after the substance machinery is trusted.
 - **Persona library expansion for non-audience staff.** `/and-project` records library-default version; substantive variant composition is a follow-on.
 
 ---
@@ -606,13 +639,17 @@ Items flagged as DEFER in the self-audit. Not blockers; recorded so the implemen
 ## Verification on completion
 
 - `design/substance/{README,questionnaire,delta-targets}.md` exist; README documents the three-invocation / four-chunk-level design + the bone-is-the-beat principle (per-bone state-delta authored by `/and-write`, not by `/and-substance`).
-- `schemas/showrunner-memory.schema.md` updated with: `project:` block; restructured `series:` (incl. `structure.book_length.{chapters_per_book, scenes_per_chapter, bones_per_scene}` ranges — note: `beats_per_scene` removed; `bones_per_scene` replaces it); `substance.cost_ledger[].anchor.{book, chapter, scene}` fine-grained anchors; `books[]` nesting down to scenes with `structure.{chapter_count, scene_count}` populated at each authoring level; `scenes[].scene_conflict.{protagonist_force, opposing_force, stakes_axis}` block; `scenes[].bones[]` with `svo`, `substance_delta.{axis_moves, cost, cost_ledger_anchor}`, `facet_tags`, `gate_verdict.{bonefide, flat}`; `bones_file` pointer; `stale_since` field at each level; `orchestrator_critic_verdict.{ruling, report_path, verdict_at, stale_since}` block.
-- `schemas/proto-line.schema.md` renamed to `schemas/bones.schema.md`; internal references updated; the schema now reflects bones as scene-children with per-bone state-delta (was previously a flat per-chapter list); CLAUDE.md schema authority table reflects the rename.
+- `schemas/showrunner-memory.schema.md` updated with: `project:` block; restructured `series:` (incl. `structure.book_length.{chapters_per_book, scenes_per_chapter, bones_per_scene}` ranges — note: `beats_per_scene` removed; `bones_per_scene` replaces it); `substance.cost_ledger[].anchor.{book, chapter, scene}` fine-grained anchors; `books[]` nesting down to scenes with `structure.{chapter_count, scene_count}` populated at each authoring level; `chapters[].pov_narrator` + `chapters[].goal` fields; `scenes[].scene_conflict.{protagonist_force, opposing_force, stakes_axis}` block; `scenes[].bones[]` with `slug`, `flat_id`, `svo`, `substance_delta.{axis_moves, cost, cost_ledger_anchor}`, `gate_verdict.{bonefide, flat}` (PASS-only persistence; `facet_tags` removed per bones-facets compatibility resolution); `bones_file` pointer; `stale_since` field at each level; `orchestrator_critic_verdict.{ruling, report_path, verdict_at, stale_since}` block.
+- `schemas/proto-line.schema.md` renamed to `schemas/bones.schema.md`; internal references updated; body format preserved (flat integer IDs, 7-field extended header, no body markers, post-extraction citation accrual); `tens:` citation prefix removed from the recognized list; in-memory bones-as-scene-children + per-bone state-delta documented in `showrunner-memory.schema.md` (not in bones.schema.md, which governs the file shape only); CLAUDE.md schema authority table reflects the rename.
 - `archive/commands/and-project-pre-substance.md`, `and-season-dissolved.md`, `and-wrap-dissolved.md`, `and-protolines-pre-substance.md` exist (plus v2 variants if present).
 - `archive/rubrics/rubric-tensometer-replaced-by-substance.md` exists; `design/shoot-v2/rubric-tensometer.md` gone.
 - `/and-facets` command body no longer emits tensometer; CLAUDE.md URI-026 line no longer references tens rubric.
 - `.claude/commands/and-{project,series,substance,cast,write,review}.md` exist and parse.
-- `.claude/commands/and-stitch.md` is **unchanged from current** (no Phase 7 enhancement, no revise mode).
+- `.claude/commands/and-facets.md` is **lightly edited** — tensometer fanout dropped from R1/R2; Phase 4d scene-map derivation downgraded to validation (consumes the upstream-emitted scene-map facet); R1 rubric input lists updated to drop tens reads.
+- `.claude/commands/and-stitch.md` is **lightly edited** — Phase 0 tensometer-derivation fallback path removed (dead code under new chain); no Phase 7 enhancement, no revise mode.
+- `/and-write` Phase 7 emits both `theater/bones/<book>-<chapter>.md` (flattened scene-ordered bones file with flat integer IDs + 7-field header) AND `theater/facets/scene-map-<chapter>.md` (scene-map facet derived directly from `scenes[]` in memory). Bones file body remains comment-clean (no scene markers, no YAML, no facet pre-tags); per-bone state-delta lives only in showrunner memory.
+- Speech bones in the bones file use the licensed dialogue form `<speaker-slug> speaks to <listener-slug>`. Substance_delta on speech bones lists at least one communication-class axis (community / knowledge / reputation / trust).
+- `chapters[]` in showrunner memory carries `pov_narrator` and `goal` fields, populated by `/and-substance chapter` Phases 3 and 4 respectively; `/and-write` Phase 7 reads them to populate the bones-file `narrator:` and `goal:` headers without further lookup.
 - No active `.claude/commands/and-season.md`, `and-wrap.md`, `and-judge-book.md`, or `and-protolines*.md`.
 - `/and-substance` command body contains NO bone-writing logic and NO scene-decomposition logic (chunker only — produces chunks + contracts; stops at scene chunks).
 - `/and-substance` accepts exactly three invocation levels (`series` / `book` / `chapter`); a `scene` invocation is rejected with a clear error pointing the user at `/and-write`.

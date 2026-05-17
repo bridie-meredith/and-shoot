@@ -1,8 +1,30 @@
 # Bones-vs-/and-facets Compatibility Gaps
 
 **Source:** Cross-check of the revised plan's new bones schema (`scenes[].bones[]` with per-bone state-delta) against what `/and-facets` and `/and-stitch` actually consume from the bones file.
-**Status:** Open. Must resolve before plan execution — the plan says `/and-facets` and `/and-stitch` are "unchanged" except for tensometer-drop, but the new bones structure as written would break both.
+**Status:** RESOLVED 2026-05-17. All 9 gaps addressed in `plan.md` revision (commit pending). Resolution strategy: **preserve the existing bones-file format** (flat integer IDs, 7-field header, comment-clean body, post-extraction citation accrual) so `/and-facets` Phase 0 / body-integrity / citation accrual stay intact; **mutate `/and-facets` and `/and-stitch` narrowly** where tensometer-drop forces it (Phase 4d derivation → validation; Phase 0 fallback removal).
 **Date:** 2026-05-17.
+
+---
+
+## RESOLUTION SUMMARY (where each gap landed in plan.md)
+
+- **Gap 1 (bone IDs):** In-memory bones keep slugs (`b01c01s01n01`) for authoring/audit; `/and-write` Phase 7 assigns flat integer `flat_id` at serialization. Bones file uses flat ints. Schema YAML now shows both fields on `bones[]`.
+- **Gap 2 (header fields):** `/and-write` Phase 7 emits the full 7-field header sourced from showrunner memory. `chapters[].pov_narrator` and `chapters[].goal` added to schema; authored by `/and-substance chapter` Phases 3 and 4.
+- **Gap 3 (scene-map source):** `/and-write` Phase 7 emits the scene-map facet directly from `chapters[].scenes[]` in memory. `/and-facets` Phase 4d downgrades to validation-only. Documented in the new `/and-facets` command-spec subsection.
+- **Gap 4 (scene markers in body):** No markers in the flattened file body. Scene boundaries conveyed via the co-emitted scene-map facet. Schema YAML note updated.
+- **Gap 5 (state-delta in file):** Per-bone state-delta lives only in memory. Bones file is comment-clean per the existing schema. Schema YAML annotated explicitly.
+- **Gap 6 (speech-bone form):** `<speaker-slug> speaks to <listener-slug>` form mandatory; `/and-write` Phase 3 spec updated; substance_delta on speech bones must list at least one communication-class axis.
+- **Gap 7 (facet_tags):** Dropped from the schema YAML.
+- **Gap 8 (gate_verdict lifecycle):** Persisted only on PASS; cleared at `/and-write` Phase 0 on revise/redo. Schema annotated.
+- **Gap 9 (new chapter fields):** `pov_narrator` + `goal` added to `chapters[]` schema and to `/and-substance chapter` Phase 3/4.
+
+Also landed: the "shoot-v2 chain unchanged" Out-of-scope line is updated to acknowledge the narrow `/and-facets` and `/and-stitch` mutations; rubric files under `design/shoot-v2/rubric-*.md` get an update pass alongside the facets command body to drop tens reads.
+
+This file is now historical. Re-audit when the plan is implemented to confirm the resolutions actually shipped.
+
+---
+
+## Original gaps (kept for historical traceability)
 
 The plan asserts the downstream chain (`/and-facets`, `/and-stitch`) is preserved. That promise only holds if the **flattened per-chapter bones file** preserves the existing `schemas/proto-line.schema.md` shape exactly. The current plan does not say so, and several details point the other way. Below: the gaps, with recommended resolution.
 
