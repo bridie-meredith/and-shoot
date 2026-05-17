@@ -6,8 +6,8 @@ world: planetos
 origin: authored
 quality: full
 references:
-  - cond-westerosi-customary-authority-jaehaerys
   - cond-feudal-hierarchy-law
+  - cond-flea-bottom-social-physics
 ---
 
 # Smallfolk Political Physics — Subjugation as Internalized State (Jaehaerys I Riverlands)
@@ -116,10 +116,14 @@ Taylor's organizing operates on this substrate. Understanding what it offers and
 
 ## Interaction Notes
 
-**With `cond-westerosi-customary-authority-jaehaerys`:** That card describes the behavioral physics from the outside; this card describes them from the inside. Both should be loaded for scenes involving Taylor's relationship to smallfolk characters and her organizing work.
+**With `cond-kl-feudal-physics-mirror` (KL projects — primary companion):** That card is the KL-specific institutional-physics layer. For King's Landing scenes involving Taylor's relationship to smallfolk characters, load `cond-kl-feudal-physics-mirror` as the behavioral-physics companion for this card. `cond-westerosi-customary-authority-jaehaerys` (Riverlands 84–101 AC companion) is not stocked in this project.
+
+**With `cond-flea-bottom-social-physics` (KL projects — primary smallfolk-physics card for KL scenes):** That card governs the specific social physics of Flea Bottom — the district Taylor actually operates in. For scenes involving KL smallfolk characters, `cond-flea-bottom-social-physics` is the operative card for district-specific dynamics. This card provides the underlying internalized-subjugation substrate that applies across Westerosi smallfolk settings; the Flea Bottom card governs the KL-specific expressions of that substrate.
 
 **With `cond-feudal-hierarchy-law`:** That card is the legal structure that produces these internalized physics. This card is what the legal structure looks like once it has been lived for generations. They are complementary, not redundant.
 
-**With Mira Stonefield-Jaehaerys:** The peer-authority-earned key in Mira's vibes is a direct expression of this card. Mira embodies the community's survival calculus. Earning her means demonstrating, to someone who has survived sixty years of this substrate, that Taylor's offer is worth the armor it dents.
+**KL project note — named Riverlands characters:** This card was authored for a Riverlands project. The named characters in the body text (Mira Stonefield-Jaehaerys, Septon Rowan, Aldric Pryor, Clem Ferris) are Riverlands-specific cast and are not members of the King's Landing approved cast for this project. Their names appear as illustrative examples of the political-physics roles (community elder, parish septon, lord's agent, reeve's household). For KL scenes, load `cond-flea-bottom-social-physics` as the operative card for district-specific character dynamics. The structural roles described here (community elder who holds the survival calculus, informal network nodes, authority-adjacent figures) apply in KL but are filled by KL-specific characters defined in the project cast.
 
-**For auditor use:** Any scene where smallfolk characters act as if they have no internalized cost for being visible to power is a violation of this card. Any scene where Taylor accesses the whisper network or informal credit economy without having built the requisite trust is a violation. Any scene where the community collectively resists Taylor and the scene treats this as mere cowardice rather than rational risk management is a register violation.
+**With the KL community elder / informal-authority figure:** The survival-calculus role described in this card (the peer authority whose endorsement gates Taylor's access to the community network) is structurally present in Flea Bottom. The specific character who holds it is a KL-cast figure defined in the project's 1c cast selection, not Mira Stonefield-Jaehaerys.
+
+**For auditor use:** Any scene where smallfolk characters act as if they have no internalized cost for being visible to power is a violation of this card. Any scene where Taylor accesses the whisper network or informal credit economy without having built the requisite trust is a violation. Any scene where the community collectively resists Taylor and the scene treats this as mere cowardice rather than rational risk management is a register violation. For KL-specific scene violations involving Flea Bottom social dynamics, cross-reference `cond-flea-bottom-social-physics`; that card is the primary operative card for district-level KL smallfolk scenes. This card supplies the underlying substrate; any apparent contradiction between the two cards resolves in favor of `cond-flea-bottom-social-physics` for KL scenes.

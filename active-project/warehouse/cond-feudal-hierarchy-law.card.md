@@ -6,9 +6,7 @@ world: planetos
 origin: authored
 quality: full
 references:
-  - cond-westerosi-customary-authority-jaehaerys
   - cond-smallfolk-political-physics
-  - cond-suppression-policy-progression
 ---
 
 # Feudal Hierarchy Law — Westerosi Legal Structure at 84–101 AC (Jaehaerys I)
@@ -17,7 +15,7 @@ references:
 
 The underlying legal structure of the Westerosi feudal hierarchy as it applies in the Riverlands at 84–101 AC. Covers: what each level of the hierarchy can demand from those below it, the nominal Faith-provided protections for smallfolk, what recourse (essentially none) smallfolk have in practice, and how the hierarchy reads a smallfolk who acts as though she has agency she does not legally possess.
 
-**Distinct from `cond-westerosi-customary-authority-jaehaerys`**, which governs the in-the-moment behavioral physics of deference (how bodies move, how voices pitch, what physical compliance looks like). This card governs the underlying legal structure — what the law actually permits and prohibits, what rights and obligations each level carries, and what Taylor is doing wrong, legally, when she organizes.
+**Distinct from `cond-westerosi-customary-authority-jaehaerys`** (Riverlands 84–101 AC companion card; not stocked in this project — KL projects use `cond-kl-feudal-physics-mirror` for the behavioral-physics layer), which governs the in-the-moment behavioral physics of deference (how bodies move, how voices pitch, what physical compliance looks like). This card governs the underlying legal structure — what the law actually permits and prohibits, what rights and obligations each level carries, and what Taylor is doing wrong, legally, when she organizes.
 
 ## Sensory Impact
 
@@ -37,7 +35,7 @@ In practice, the Iron Throne's authority in Fairstead is felt through layers. Th
 **Great House Tully (Riverrun):**
 The paramount lord of the Riverlands. All Riverlands lords hold their lands from Tully in theory and in practice. Tully can demand: military levies from bannermen, administrative compliance with Tully's directives, attendance at Riverrun for important occasions, resolution of inter-lord disputes. Tully's administrative apparatus is the functional layer above minor lords like Ryger.
 
-Tully's interest in Fairstead is the same as the Iron Throne's interest in Fairstead: Taylor does not exist to Riverrun unless she becomes large enough to warrant the report. That is the Stage 4 threshold in `cond-suppression-policy-progression`.
+Tully's interest in Fairstead is the same as the Iron Throne's interest in Fairstead: Taylor does not exist to Riverrun unless she becomes large enough to warrant the report. That is the Stage 4 threshold in `cond-suppression-policy-progression` (Riverlands companion card; not stocked in this project — the KL equivalent is the escalation path described in `cond-kl-feudal-physics-mirror`).
 
 **House Ryger of Willow Wood (minor Tully bannerman):**
 The local feudal authority. Their legal powers over Fairstead and its inhabitants include:
@@ -108,14 +106,14 @@ A smallfolk girl who acts as though she has agency she does not legally possess 
 
 3. **An actual legal problem:** She is a smallfolk acting outside the legal constraints that govern her stratum, without obvious cognitive impairment and without obvious patronage. This interpretation requires the lord to decide how to handle a case the law did not anticipate — and the lord's discretion in such cases is wide.
 
-Taylor's organizing success gradually moves her from category 1 toward category 3 in Pryor's assessment. The Stage 3 threshold in `cond-suppression-policy-progression` is the point where the lord has decided she is category 3 and is taking appropriate action.
+Taylor's organizing success gradually moves her from category 1 toward category 3. The Stage 3 threshold in `cond-suppression-policy-progression` (Riverlands companion; not stocked in this project) names the point where the lord has decided she is category 3 and is taking appropriate action. In KL, the operative equivalent is the City Watch escalation chain described in `cond-kl-feudal-physics-mirror`.
 
 ## Interaction Notes
 
-**With `cond-westerosi-customary-authority-jaehaerys`:** That card is the behavioral physics — how the legal structure is expressed in daily body language and social practice. This card is the underlying law. The behavioral physics card is what Taylor lives in every moment; this card is what the lord can do when he decides to act on the law.
+**With `cond-kl-feudal-physics-mirror` (KL projects):** That card is the KL-specific behavioral and institutional physics layer on top of this card. Load `cond-kl-feudal-physics-mirror` as the operative behavioral-physics card for King's Landing scenes; `cond-westerosi-customary-authority-jaehaerys` (the Riverlands 84–101 AC behavioral companion) is not stocked in this project.
 
 **With `cond-smallfolk-political-physics`:** That card is the law as it has been internalized by smallfolk over generations — what the law feels like from inside the stratum it governs. This card is the law as it is written and applied from above.
 
-**With `cond-suppression-policy-progression`:** The stages of suppression in that card map to specific legal authorities the lord is invoking at each stage. Stage 1 is the lord's administrative record-keeping authority. Stage 2 is the lord's monitoring authority. Stage 3 is the lord's directive authority. Stage 4 is the lord's low- or high-justice authority depending on what Taylor has done.
+**With `cond-suppression-policy-progression` (Riverlands companion; not stocked in this project):** That card maps suppression stages to specific legal authorities. Not applicable for KL use. The operative enforcement escalation chain for King's Landing is described in `cond-kl-feudal-physics-mirror`.
 
 **For auditor use:** Any scene implying that smallfolk have meaningful formal legal recourse against the lord's administrative apparatus is a legal-physics violation. Any scene implying Taylor can invoke her legal rights to stop institutional action against her is a violation — she has no such rights. The only legal tools available to her are the informal ones: invisibility, flight, competing authority (Faith advocacy), and the slow pressure of reputational cost on the lord.
