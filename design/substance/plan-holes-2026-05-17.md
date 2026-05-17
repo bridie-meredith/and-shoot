@@ -1,8 +1,8 @@
 # Plan Holes — Reuse-Pass Review
 
 **Source:** End-to-end review of `design/substance/plan.md` post-reuse-mutation (commit `92bffd8`), 2026-05-17.
-**Status:** UNRESOLVED. Surface to next session. Resolution order recommended at the bottom.
-**Companion docs:** `audit-findings.md` (RESOLVED), `bones-facets-compatibility.md` (RESOLVED), `intent-gaps.md` (PARTIALLY RESOLVED — items 4-8, 10, 11 still open and re-surfaced here as item E).
+**Status:** RESOLVED 2026-05-17 (plan-holes pass). Holes A–D, F–H applied as plan edits; Hole E user-ruled split (carve in #4 #6 #10; OOS-track #5 #7 #8 #11) applied. See plan.md "Plan-holes pass 2026-05-17" revision marker in the header.
+**Companion docs:** `audit-findings.md` (RESOLVED), `bones-facets-compatibility.md` (RESOLVED), `intent-gaps.md` — items 4-8, 10, 11 disposition decided here per Hole E split: #4 #6 #10 carved into plan; #5 #7 #8 #11 listed under plan.md "Out of scope" with explicit follow-on tracking.
 
 ---
 

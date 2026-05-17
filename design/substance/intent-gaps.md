@@ -1,7 +1,7 @@
 # Plan Intent Gaps vs. Active-Project Feedback
 
 **Source:** Critical read of `design/substance/plan.md` against `active-project/feedback.md` (s01e01–s01e03 user feedback).
-**Status:** PARTIALLY RESOLVED 2026-05-17 — gaps 1, 2, 3, and 9 addressed in plan revision. Gaps 4, 5, 6, 7, 8, 10, 11 remain open.
+**Status:** RESOLVED 2026-05-17 (plan-holes pass) — gaps 1, 2, 3, 9 addressed in 2026-05-17 plan revision; gaps 4, 6, 10 carved into the plan (stitcher rendering patch, cross-chapter handoff, chapter≈episode README mapping) per Hole E user-ruled split; gaps 5, 7, 8, 11 OOS-tracked under plan.md "Out of scope" with explicit follow-on issue tracking.
 **Date:** 2026-05-16 (status updated 2026-05-17).
 
 ---
