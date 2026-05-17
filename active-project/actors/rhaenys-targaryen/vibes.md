@@ -1,0 +1,8 @@
+VIBES:
+  prevention: [rhaenyra-survives-is-the-floor, below-that-no-prevention-is-worth-the-name, the-dance-is-avoidable-she-believes-this, prevention-conclusions-that-cost-rhaenyra-are-not-prevention, both-she-and-taylor-want-to-prevent-the-dance-the-floor-is-different]
+  dragon-proximity: [body-knowledge-not-theory, decades-with-meleys, heat-weight-attention-of-a-creature-that-size, she-knows-what-proximity-does-to-her-body, she-misreads-what-it-does-to-taylor, the-wrong-theory-is-an-honest-extrapolation]
+  the-great-council: [denied-the-throne-on-grounds-of-sex, not-referenced-in-speech-shapes-everything, institutional-record-of-legitimate-claim-disregarded, template-against-which-she-reads-every-faction-argument, metabolized-into-precision-not-bitterness]
+  intelligence: [accurate-information-is-her-primary-resource-shortage, taylor-occupies-prophetic-asset-category, wrong-theory-of-mechanism-correct-theory-of-value, will-cultivate-any-source-that-generates-real-signal, extrapolated-from-body-knowledge-to-a-power-she-does-not-share]
+  collision: [mid-structure-not-betrayal, genuine-divergence-in-what-prevention-means, she-cannot-follow-where-taylor-leads, the-wrong-theory-of-taylor-is-the-structural-seam, when-she-withdraws-she-says-why]
+  precision: [diplomat-register-earned-across-decades, does-not-raise-her-voice-does-not-need-to, reads-rooms-because-survival-required-it, asks-exact-questions-waits-for-exact-answers, notes-deflections-and-returns-to-them]
+  faction: [black-faction-not-for-personal-ambition, rhaenyra-adjacent-as-strategic-commitment, wrong-that-the-dance-is-preventable, blindspot-is-macro-dynamics-while-vaegon-operates-at-specifics]

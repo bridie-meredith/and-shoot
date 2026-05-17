@@ -47,6 +47,7 @@ planetos:
   - mira-stonefield
   - mira-stonefield-dragon-gate
   - mira-stonefield-jaehaerys
+  - oc-apothecary-assistant
   - oc-black-adjacent-contact
   - oc-block-fixture
   - oc-broken-maester
@@ -56,21 +57,27 @@ planetos:
   - oc-craftsman-father
   - oc-craftsman-mother
   - oc-dock-runner
+  - oc-flea-bottom-boy
   - oc-girl-from-hamlet
   - oc-lords-steward
+  - oc-lyra-targaryen-ward
+  - oc-maester-edwyn
   - oc-persons-risk-officer
   - oc-plumms-man
+  - oc-renderer-flea-bottom
   - oc-rung3-steward
   - oc-tallow-chandler
   - oc-tanner-elder
   - oc-tanner-father
   - oc-tanner-mother
   - oc-tributary-village-newcomer
+  - oc-vaegon-targaryen
   - oc-ward-septon-dragon-gate
   - oc-watch-captain-dragon-gate
   - otto-hightower
   - peasant-woman-forest
   - plumms-man
+  - rhaenys-targaryen
   - rhaenyra-targaryen
   - rymer-hedge
   - ser-aemon-bracken
@@ -80,9 +87,11 @@ planetos:
   - septon-rowan
   - taylor-hebert-dragon-gate
   - taylor-hebert-flea-bottom
+  - taylor-hebert-flea-bottom-mirror
   - taylor-hebert-jaehaerys
   - taylor-hebert-westeros
   - thoros-of-myr
+  - ulf-the-white
   - viserys-i-targaryen
   - westerosi-traveling-maester
 
@@ -93,14 +102,23 @@ planetos:
 full:
   - beric-dondarrion
   - mira-stonefield-dragon-gate
+  - oc-apothecary-assistant
   - oc-black-adjacent-contact
   - oc-block-fixture
   - oc-contacts-business-partner
+  - oc-flea-bottom-boy
+  - oc-lyra-targaryen-ward
+  - oc-maester-edwyn
   - oc-persons-risk-officer
+  - oc-renderer-flea-bottom
   - oc-rung3-steward
+  - oc-vaegon-targaryen
   - oc-ward-septon-dragon-gate
   - oc-watch-captain-dragon-gate
+  - rhaenys-targaryen
   - taylor-hebert-dragon-gate
+  - taylor-hebert-flea-bottom-mirror
+  - ulf-the-white
   - census-officer
   - clerk
   - oc-census-officer
@@ -174,7 +192,7 @@ scant:
 
 ## by_trope
 
-young-depressed-hero: [taylor-hebert, taylor-hebert-westeros, taylor-hebert-jaehaerys, taylor-hebert-flea-bottom, taylor-hebert-dragon-gate]
+young-depressed-hero: [taylor-hebert, taylor-hebert-westeros, taylor-hebert-jaehaerys, taylor-hebert-flea-bottom, taylor-hebert-dragon-gate, taylor-hebert-flea-bottom-mirror]
 master-manipulator: [lisa-wilbourn, thomas-calvert]
 feral-pragmatist: [rachel-lindt]
 sociopathic-charmer: [jack-slash, alec-vasil]
@@ -193,7 +211,7 @@ brutal-pragmatist: [lem-lemoncloak]
 dying-cause: [beric-dondarrion]
 faith-recovered: [thoros-of-myr]
 corrupt-official: [ser-harwick-plumm, oc-castellan-harrenhal, oc-watch-captain-dragon-gate, oc-rung3-steward]
-targaryen-era: [rhaenyra-targaryen, viserys-i-targaryen, ser-edwyn-celtigar, aegon-ii-targaryen, aemond-targaryen, otto-hightower]
+targaryen-era: [rhaenyra-targaryen, rhaenys-targaryen, viserys-i-targaryen, ser-edwyn-celtigar, aegon-ii-targaryen, aemond-targaryen, otto-hightower, ulf-the-white, oc-vaegon-targaryen, oc-lyra-targaryen-ward, oc-maester-edwyn]
 riverlands-power: [ser-aemon-bracken]
 faith-operator: [septon-rowan]
 hedge-knight: [rymer-hedge]
@@ -213,7 +231,13 @@ unknowing-structural: [oc-tallow-chandler]
 brake-not-ally: [oc-broken-maester]
 targaryen-antagonist: [aegon-ii-targaryen, aemond-targaryen]
 hightower-intelligence: [otto-hightower]
-witness-figure: [rhaenyra-targaryen, oc-broken-maester]
+witness-figure: [rhaenyra-targaryen, oc-broken-maester, oc-maester-edwyn]
+false-ally: [rhaenys-targaryen]
+doppelganger-opposite-number: [oc-vaegon-targaryen]
+cost-bearer: [oc-lyra-targaryen-ward]
+wrong-rider: [ulf-the-white]
+flea-bottom-texture: [oc-renderer-flea-bottom, oc-flea-bottom-boy, oc-apothecary-assistant]
+prevention-tragedy: [taylor-hebert-flea-bottom-mirror, oc-vaegon-targaryen]
 
 ---
 
@@ -264,3 +288,12 @@ OC slots for margit to construct at project activation when a generic role is se
 - oc-ward-septon-dragon-gate (oc-local-expert slot / Faith-institutional; Septon Aldyn; witch-label originator; low-frequency; full; authored dragon-gate-foreclosure provisioning 2026-05-17)
 - oc-block-fixture (ambient-witness slot; Nolla Stave; dockside water-carrier; world-going-on-without-Taylor; disclaims confidant-role; full; authored dragon-gate-foreclosure provisioning 2026-05-17)
 - oc-contacts-business-partner (functional-commercial slot; Corwyn Bane; Rung-4 present / Rung-6 absent; the absence is the cost; full; authored dragon-gate-foreclosure provisioning 2026-05-17)
+- taylor-hebert-flea-bottom-mirror (protagonist mirror-tragedy variant; full; post-Gold-Morning, involuntary precognitive flicker only, Shard-mediated involuntary deposit, weeks in KL at open, suspected-witch Flea Bottom, novel scope; variant-of: taylor-hebert; authored witch-of-flea-bottom provisioning 2026-05-17)
+- rhaenys-targaryen (canon HOTD; The Queen Who Never Was; Black faction patron / false-ally; Meleys rider; amplification-theory error; full; authored witch-of-flea-bottom provisioning 2026-05-17)
+- oc-vaegon-targaryen (opposite-number / doppelganger-mirror slot; thin-blood Targaryen ward, Silverwing patience-claimer, prevention-logic mirror to Taylor, Lyra's guardian; full; authored witch-of-flea-bottom provisioning 2026-05-17)
+- oc-lyra-targaryen-ward (cost-bearer slot; Targaryen ward child age 8–10; Vaegon's specific protected; cold-register death is closing image; full; authored witch-of-flea-bottom provisioning 2026-05-17)
+- ulf-the-white (canon HOTD; dragonseed wrong rider; claims Silverwing after Vaegon's death; betrays Blacks; walk-on at claiming-window; full; authored witch-of-flea-bottom provisioning 2026-05-17)
+- oc-maester-edwyn (maester-chronicler / coda-only witness slot; household-attached, deduction-from-record counterfactual; cold archival register; coda only; full; authored witch-of-flea-bottom provisioning 2026-05-17)
+- oc-renderer-flea-bottom (Flea Bottom texture slot; tallow-renderer, non-question cover, Fish Gate margin; full; authored witch-of-flea-bottom provisioning 2026-05-17)
+- oc-flea-bottom-boy (Flea Bottom texture slot; district child 10–12, transactional intelligence trades, roof-routes; full; authored witch-of-flea-bottom provisioning 2026-05-17)
+- oc-apothecary-assistant (Flea Bottom texture slot; apothecary's literate assistant, wrong-theory witch-label framing; full; authored witch-of-flea-bottom provisioning 2026-05-17)

@@ -1,0 +1,10 @@
+VIBES:
+  flicker-texture: [involuntary-not-active, ambient-not-directed, costs-her-not-aids-her, near-dragon-louder-not-clearer, she-is-not-choosing-to-see, fires-on-its-own-schedule, interpretation-is-guesswork-not-knowledge, each-glimpse-creates-debt-not-intelligence]
+  gold-morning-weight: [not-grief-geological, survivor-who-was-mechanism-not-bystander, the-extinction-training-cannot-be-put-down, competence-earned-through-catastrophe-is-load-bearing-and-unchecked, the-vow-precedes-this-world, she-has-made-choices-that-killed-and-continued-operating]
+  prevention: [the-shape-of-every-action, prior-to-any-relationship-here, will-outlast-any-alliance-she-forms, the-bad-act-is-mandatory-in-her-reasoning-not-a-choice, locally-defensible-globally-inverted]
+  dragon: [wmd-class-not-wonder, catastrophe-response-not-awe, flicker-misfires-near-them-louder-not-clearer, patron-misreads-cost-as-amplification, gold-morning-trigger, near-a-dragon-she-is-less-reliable-not-more]
+  structural-read: [core-capability-and-core-failure-mode, correct-at-pattern-level-wrong-at-instance-level, precision-misapplied, seductively-clean-analysis-is-most-dangerous-cognitive-state, no-auditor-to-catch-the-errors]
+  isolation: [no-contessa-no-peer-no-system-that-reads-her, errors-accumulate-without-correction, operating-in-a-foreign-operating-environment, the-witch-label-is-all-the-world-can-produce, she-is-not-becoming-westerosi]
+  the-child: [specific-and-named-not-symbolic, reflexive-protection-without-the-relationship, inadequate-cover-is-the-trigger, she-does-not-call-it-attachment, the-reflex-predates-this-world]
+  faction: [pre-gold-morning-fracture-mechanics-in-new-vocabulary, correct-pattern-wrong-instances, she-is-a-prevention-loyalist-not-a-faction-loyalist, institutional-solutions-she-does-not-believe-in]
+  competence: [the-form-her-safety-takes, also-the-form-her-blindness-takes, she-has-never-learned-to-distrust-her-own-reads, this-is-what-that-costs]

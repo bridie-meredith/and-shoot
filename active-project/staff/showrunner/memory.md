@@ -7,58 +7,76 @@ routing:
   season_plan: ~
 
 series:
-  theme: Foreclosure as structure. Road to hell paved with good intentions. Each defensible choice closes off a better outcome that was still possible. The book's final state is its verdict — theme is structure, never statement.
+  theme: "road to hell paved with good intentions — protagonist's good-faith choices, executed through Worm-trained competence in a world that does not run on Worm-physics, produce the catastrophe she was trying to prevent (the Dance of the Dragons)"
   laws:
-    - Earth-Bet does not intrude. No portals, no capes, no Tinker tech.
-    - Westerosi cruelty is the local register; not flagged as anomaly.
-    - One series, one arc, one closing. The ending IS the verdict.
-    - Taylor's insect-control range-capped to ~one city block (~100-150m hard constant). Khepri-vector inert. AU divergence must be legible in prose.
-    - Witch-label is permanent operational infrastructure. Never lifted, never corrected, only layered.
-    - Patron-dialect model invisible to Taylor as a model. Prose never names it. Reader-inference only.
-    - Model-falsification meta-statement NEVER appears in prose (lit-snob C4 non-negotiable).
-    - No moral narration.
-    - Captain remains opaque. No interiority rendered.
-    - No named family for Mira or for the contact. Smallfolk as substrate.
+    - "ASOIAF Westeros physics — magic scarce, dragons real, no parahuman ecosystem"
+    - "no parahuman support structure exists in Westeros — Taylor's errors cannot be corrected by a system that understands her"
+    - "Targaryen blood prerequisite for dragon-bonding; claiming-window mechanics post-bonder-death; no invented bonding rules (cond-dragon-bonding-claiming-rules)"
+    - "Westerosi feudal political physics — Watch jurisdiction, Red Keep authority radius, Flea Bottom as semi-autonomous bottom-of-enforcement zone"
   lore:
-    - Setting King's Landing late Viserys I, 126-129 AC, pre-Dance.
-    - Dragons exist as bonded political weapons. Faith of Seven is Green-adjacent via Hightower patronage.
-    - Taylor's first faction-gravity is Watch-track via Captain of Dragon Gate precinct (Hightower-channel promotions).
+    - "Start-location: King's Landing"
+    - "Time-period: pre-Dance, Viserys I declining court, factions forming"
+    - "Silverwing canonically unclaimed 100–129 AC (Alysanne died 100 AC; Ulf claims 129 AC). Vaegon's bond-work pinned to this 29-year gap."
+    - "Black vs Green pre-Viserys-death faction state; Rhaenyra as named heir; Aegon II as potential Green claimant; Otto and Alicent Hightower as Green anchors"
   behaviors:
-    - Taylor's power presents ambient-not-directed; she knows without choosing to know within her cap.
-    - Taylor reaches for the lever that works when the alternative is watching people die — reflex, not malice.
-    - Taylor carries Khepri-weight. Not Skitter-era. Operational model "speaking the patron's dialect" is invisible to her as a model.
+    - "flicker discipline (binding): involuntary, unreliable, costs interpretively; near-dragon louder NOT clearer; no reliable deployment; no distinguishing correct flicker from misfire"
+    - "patron amplification-theory (binding): Rhaenys believes dragon-proximity amplifies Taylor's flicker; the theory is WRONG and invisible-while-operating; no scene where the patron acknowledges the wrong-theory during alignment phase"
+    - "two-register architecture (binding): body close-third grim-literary Taylor; coda cold institutional chronicler; the register-break IS the irony mechanism"
+    - "moral framing: ironized through structure, not voice; close-third Taylor does not editorialize; the chronicler coda's explicit counterfactual-naming is the moment irony becomes explicit"
+    - "witch-label formation: forms from behavior, not power-display; label travels up hierarchy — witch at street-level, prophetess at patron-level, foreign-witch at court-level"
   plot:
-    start: "126 AC late summer. Mid-market-fire at Dragon Gate. Insects respond to her distress visibly; gold cloaks and septon witness; septon shouts 'witch'. Held overnight, released as 'lunatic-not-worth-paperwork'."
-    end: "129 AC late. Taylor processed by the Watch persons-risk sweep three days after the Black-adjacent contact she vouched for dies in custody. Captain signs her papers. Dies in Dragon Gate guardhouse — not executed, not martyred, processed. Final image: her own range-capped insects registering no movement inside the building she is in. Viserys dead off-page; war begun off-page."
-    protagonist_arc: "36-month back-loaded compression. Act 1 (M1-12) grief-recovery + block-network seeding under unreadable friction. Act 2 (M13-26) faction temperature bleeds into street-level, cost-per-intervention rises each quarter. Act 3 (M27-36) last viable pivot at M27-28 under accumulated weight, pivot closes wrong, war begins, book closes on consequent atrocity. 6-rung patron-dialect ladder anchors the arc."
-    series_question: "Whether competence and accurate observation are enough to keep one's hand clean inside an institution one cannot audit. The book's answer is structural, not stated."
+    start: "Taylor Hebert, post Gold Morning, deposited weeks ago by a dying Shard fragment into King's Landing. Suspected witch at Flea Bottom margins. No swarm, no QA — only an involuntary precognitive flicker that misfires near dragons. Selectively prescient (Gold-Morning pattern-recognition reads catastrophe coming) but with no canon ASOIAF knowledge."
+    end: "Bad-place. Taylor kills Vaegon Targaryen (the destined bonder of Silverwing — the opposite-number, a true-believer who would have been proven right) on a flicker misfire interpreted through Gold-Morning lens. Silverwing falls to Ulf the White (the wrong rider Vaegon was preventing). Lyra (the cousin Vaegon was protecting) dies cold in the closing image with the wrong dragon visible above. Chronicler coda names Vaegon's counterfactual explicitly. Taylor is alive and broken; the Dance is beginning in the distance and the story does not follow it in."
+    protagonist_arc: "The competence that ended Gold Morning produces the Dance. Prevention, executed by the wrong instrument, becomes the catastrophe it was trying to forestall. Recognition arrives between the kill and the chronicler coda — Taylor sees the wrong rider above the smoke and understands the configuration she read as the threat was always going to be produced by her hand. She does not die. The belief that her Worm-trained instruments are reliable in a world that does not run on Worm-physics dies."
+    series_question: "What does a survivor of extinction do when her survival-training is the wrong tool for the world she has been deposited into — and the only available instrument for reading the difference is the same instrument that misled her?"
   cast_roster:
-    - taylor-hebert-dragon-gate    # POV, block-capped insect-control, post-Khepri grief-shaped
-    - oc-watch-captain-dragon-gate # patron, Green-adjacent one-remove, opaque
-    - mira-stonefield-dragon-gate  # rope-braider, genuine attachment, dies on-page Act 3
-    - oc-black-adjacent-contact    # Rung-6 M27-28 victim
-    - oc-persons-risk-officer      # Watch sweep immediate-cause actor
-    - oc-rung3-steward             # M14-15 enforcement-overshoot anchor
-    - oc-ward-septon-dragon-gate   # low-frequency: arrival, one mid-book beat
-    - oc-block-fixture             # lateral world-going-on, non-operational
-    - oc-contacts-business-partner # Rung-4 present, Rung-6 absent
-  off_page_canon:
-    - otto-hightower               # Act 2 carriage glimpse
-    - viserys-i-targaryen          # Act 3 street-crier announcement
+    - slug: taylor-hebert-flea-bottom-mirror
+      role: protagonist
+      type: variant-of-canon (worm)
+    - slug: rhaenys-targaryen
+      role: patron / false-ally
+      type: canon (asoiaf)
+    - slug: oc-vaegon-targaryen
+      role: opposite-number (destined bonder of Silverwing)
+      type: oc
+    - slug: oc-lyra-targaryen-ward
+      role: cost-bearer cousin
+      type: oc
+    - slug: ulf-the-white
+      role: wrong rider (claims Silverwing post-kill)
+      type: canon (asoiaf)
+    - slug: oc-maester-edwyn
+      role: maester-chronicler (coda-only)
+      type: oc
+    - slug: oc-renderer-flea-bottom
+      role: Flea Bottom inner circle
+      type: oc
+    - slug: oc-flea-bottom-boy
+      role: Flea Bottom inner circle
+      type: oc
+    - slug: oc-apothecary-assistant
+      role: Flea Bottom inner circle
+      type: oc
   stage_elements:
-    - loc-dragon-gate-block          # PRIMARY operational territory
-    - loc-dragon-gate-guardhouse     # CRITICAL — bookends arrival + death
-    - loc-miras-workshop             # Rung-4 Mira anchor
-    - loc-black-adjacent-contact-premises  # Daveth's counting-house
-    - loc-dragon-gate-market-alley   # Rung-1, Rung-2, ambient block-life
+    - "loc-flea-bottom (+ loc-flea-bottom-mirror overlay) — Taylor's operational base"
+    - "loc-velaryon-kl-townhouse — Rhaenys's KL premises; patron consultations"
+    - "loc-dragonpit-exterior + loc-dragonpit-interior — dragon-adjacent + kill site"
+    - "loc-sept-of-baelor-margin — neutral meeting ground for Taylor / Vaegon crossing"
+    - "loc-kl-burning-street — closing-image site (Lyra dies; Silverwing + Ulf visible above)"
 
 seasons:
   - slug: s01
+    title: ~
+    chunk: "Taylor's witch-margin existence at Flea Bottom pulls Rhaenys-adjacent patron attention; the amplification-theory forms and the patron's wrong reading of Taylor's dragon-adjacent distress becomes operational, authorizing Taylor's access into Black-faction proximity. That authorization destroys the only condition under which Taylor's foreignness could have been read correctly — once the wrong theory is installed and operative, no one in the household has standing or motive to test it."
     status: planned
-    chunk: |
-      The Watch's persons-risk infrastructure — built on Taylor's contracted labor and filed reports — runs inside a Hightower patronage chain that harvests the same data it appears to commission, invisible at every level until the Dance activates it as a targeting apparatus.
-
-      The collision produces a closed loop: the infrastructure turns on the contact Taylor vouched for, then on Taylor, with no external authority positioned to audit the institution that ran both operations.
+  - slug: s02
+    title: ~
+    chunk: "Taylor perceives Vaegon's action-pattern — his sustained presence in Lyra's orbit, his patient approach to Silverwing, his positioning between the dragon and the faction's worst riders — and the perception is real and accurate; she maps it through her threat-frame, which turns protection-logic into preemptive-strike-logic, and the doppelganger-lock completes. What cannot survive the lock is the divergence between his path and hers: past this point there is no version of the story where the kill does not happen, even if her nerve falters, because the threat-identification is finished."
+    status: planned
+  - slug: s03
+    title: ~
+    chunk: "Taylor's kill executes the intervention; Vaegon dies; the unbonded dragon falls to the worst available claimant; Lyra's protection ends. The recognition arrives in the window between the kill and the coda — Taylor sees the wrong rider above the smoke and the configuration she read as the threat is now exactly present, produced by her hand — before the chronicler entry closes the register. The chronicler coda names Vaegon's counterfactual; the cousin dies cold in the closing image with the wrong dragon above."
+    status: planned
 
 active:
   season: ~

@@ -15,18 +15,24 @@ planetos:
   - loc-dragon-gate-block
   - loc-dragon-gate-guardhouse
   - loc-dragon-gate-market-alley
+  - loc-dragonpit-exterior
+  - loc-dragonpit-interior
   - loc-eastern-quarter-apothecary
   - loc-flea-bottom
   - loc-flea-bottom-base
+  - loc-flea-bottom-mirror
   - loc-harrenhal-exterior
   - loc-harrenhal-sept-environs
+  - loc-kl-burning-street
   - loc-local-sept
   - loc-market-square
   - loc-miras-workshop
   - loc-red-keep-outer-ring
   - loc-river-ferry-dock
   - loc-river-market-town
+  - loc-sept-of-baelor-margin
   - loc-tanner-village
+  - loc-velaryon-kl-townhouse
   - oc-riverlands-river-ford
   - oc-riverlands-ruined-tower
   - reach-smallfolk-village
@@ -45,6 +51,10 @@ full:
   - loc-dragon-gate-block
   - loc-dragon-gate-guardhouse
   - loc-dragon-gate-market-alley
+  - loc-dragonpit-exterior
+  - loc-dragonpit-interior
+  - loc-flea-bottom-mirror
+  - loc-kl-burning-street
   - loc-miras-workshop
   - loc-blue-fork-river-road
   - loc-craftsman-workshop-home
@@ -57,7 +67,9 @@ full:
   - loc-market-square
   - loc-river-ferry-dock
   - loc-river-market-town
+  - loc-sept-of-baelor-margin
   - loc-tanner-village
+  - loc-velaryon-kl-townhouse
   - oc-riverlands-river-ford
   - oc-riverlands-ruined-tower
   - reach-smallfolk-village

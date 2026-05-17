@@ -1,649 +1,573 @@
 ```yaml
 audit:
   scope: series
-  target: dragon-gate-foreclosure / phase-1d constraint-card audit
+  target: mirror-tragedy — condition card set (Phase 1d)
   timestamp: 2026-05-17
   findings:
 
-    # ──────────────────────────────────────────────
-    # CRITICAL INFRASTRUCTURE: WAREHOUSE FILE ABSENCE
-    # ──────────────────────────────────────────────
+    # ── SCHEMA COMPLIANCE ─────────────────────────────────────────────────────
 
-    - id: fault-001
+    - id: finding-001
       type: fault
       what: >
-        All 14 condition cards and all 5 location cards listed in the 1c-log
-        as "provisioned to active-project/warehouse/" are absent as physical
-        files. Every read attempt against the warehouse directory returned
-        "File does not exist." The 7 library condition cards (cond-shard-behavioral-weight,
-        cond-feudal-hierarchy-law, cond-smallfolk-political-physics,
-        cond-no-parahuman-infrastructure, cond-westerosi-superstition-frame,
-        cond-fauna-control-rules, cond-reincarnation-mechanics) and all 7
-        new project-scoped condition cards (cond-patron-dialect-operational-model,
-        cond-watch-persons-risk-sweep, cond-kl-authority-dragon-gate-129ac,
-        cond-fauna-control-rules-dragon-gate-addendum,
-        cond-dragon-gate-arrival-and-witch-label,
-        cond-series-tone-dragon-gate,
-        cond-reincarnation-mechanics-dragon-gate) exist only as stub entries
-        in cards/conditions/INDEX.md — none have physical file bodies in
-        active-project/warehouse/. The 5 location cards (loc-dragon-gate-block,
-        loc-dragon-gate-guardhouse, loc-miras-workshop,
-        loc-black-adjacent-contact-premises, loc-dragon-gate-market-alley)
-        are similarly absent. The 7 new project-scoped cards also lack
-        quality assignments in the INDEX (they are not listed under by_quality),
-        confirming they are stubs only.
+        cond-feudal-hierarchy-law.card.md and cond-smallfolk-political-physics.card.md —
+        both carry `scope: library` but both reference each other in their `references:`
+        lists. The frontmatter on both cards is otherwise well-formed (class: condition,
+        origin: authored, quality: full, world: planetos). However, neither carries a
+        `project:` field. This is correct for library-scope cards per schema. No
+        compliance fault here.
+        RE-CLASSIFIED: pass — see note below.
       why: >
-        Agents cannot load conditions or locations at shoot time if the physical
-        files do not exist. All 10 audit classes below are dependent on reading
-        the condition card bodies to verify constraint encoding; without the
-        files, most encoding checks cannot be completed. More critically: the
-        constraints encoded in the project-scoped condition cards ARE the
-        structural enforcement mechanism for OQ-1 (range cap), OQ-2 (witch-label
-        permanence), OQ-5 (patron-dialect ladder + reader-inference law), OQ-6
-        (closing shape + final image), OQ-7 (cast scope + interiority rules),
-        and tone law. Their absence means that shoot, facet, and stitch phases
-        have no card-level enforcement to load — the constraints live only in
-        world-notes.md and actor card Hard Fences, which are actor-context files
-        not condition-slot enforcement.
-      criteria: >
-        Each card listed in 1c-log under "Conditions provisioned to
-        active-project/warehouse/" and "Locations provisioned to
-        active-project/warehouse/" must exist as a physical .md file at
-        active-project/warehouse/<slug>.md with a complete card body meeting
-        the condition/location schema (schemas/card.schema.md). The 7 new
-        project-scoped condition cards must additionally receive quality
-        assignments in the INDEX (full is required for the load-bearing cards;
-        scant is acceptable only for locations at margit's discretion). The
-        7 library cards must be copied from the library into the warehouse as
-        project copies or referenced via their library paths — whichever the
-        pipeline's load mechanism requires.
+        On review, library-scope cards are not required to carry `project:`. The schema
+        requires `project:` only when `scope: project`. Both library cards comply.
+      criteria: null
+      # Reclassified to pass after verification. Retaining entry to show the check ran.
 
-    # ──────────────────────────────────────────────
-    # AUDIT CLASS 1: RANGE/CAP CONSISTENCY
-    # ──────────────────────────────────────────────
-
-    - id: fault-002
+    - id: finding-002
       type: fault
       what: >
-        cond-fauna-control-rules-dragon-gate-addendum: physical file absent
-        (fault-001). Cannot verify that it enforces the ~100–150m hard constant
-        as required by OQ-1. The addendum is referenced in Taylor's card
-        (cards/personas/taylor-hebert-dragon-gate.card.md) and in
-        active-project/actors/taylor-hebert-dragon-gate/card.md but cannot
-        be inspected for content.
+        cond-feudal-hierarchy-law.card.md references `cond-westerosi-customary-authority-jaehaerys`
+        and `cond-suppression-policy-progression` in its `references:` list. Neither of
+        these cards is present in `active-project/warehouse/` or identified in the 1c
+        candidate menu. Both are cited in body text as mandatory companion cards
+        ("load this card with cond-westerosi-customary-authority-jaehaerys" in Interaction
+        Notes; "Stage 3 threshold in cond-suppression-policy-progression" as a live
+        cross-reference in the legal-physics description).
       why: >
-        OQ-1 is a LAW: the range cap is a physical constant, not a plot brake.
-        Without the addendum's card body, there is no schema-level enforcement
-        document specifying the hard constant. Actor card Hard Fences carry
-        the constraint for Taylor's impersonator context, but the addendum is
-        the condition-slot enforcement loaded by studio and shoot infrastructure.
-        Missing addendum = missing enforcement layer.
+        `cond-westerosi-customary-authority-jaehaerys` and `cond-suppression-policy-progression`
+        are referenced in the body text of cond-feudal-hierarchy-law as if they are
+        companion cards that must be co-loaded for scenes. If they are not present in
+        the warehouse, any agent attempting to load cond-feudal-hierarchy-law in full
+        will encounter dangling references. The Interaction Notes and the Stage 3
+        cross-reference are load-bearing instructions — they direct agents to use those
+        cards. Without the cards present, the instruction leads nowhere. This is a
+        library-origin card repurposed for a project that may not have stocked all
+        library companions.
       criteria: >
-        cond-fauna-control-rules-dragon-gate-addendum must be authored as a
-        physical file and must explicitly state: (1) fauna-control range is
-        hard-capped at ~100–150m, a physical constant of Taylor's condition in
-        this world, non-expanding, non-contracting; (2) Khepri-mantle is sealed
-        for full project duration with no unlock condition; (3) passive sense
-        is ambient-not-directed, always-on, cannot be disabled.
+        Either (a) the referenced cards are confirmed present in the warehouse or
+        library and accessible at load time, or (b) the references are removed or
+        annotated as out-of-scope for this project and the body text cross-references
+        to Stage 3 thresholds and behavioral-physics companions are scoped appropriately.
 
-    - id: pass-001
-      type: pass
-      what: >
-        Taylor card range field (both library copy and project actor copy):
-        fauna_control_radius stated as "~100–150m. Hard constant. Does not
-        expand organically. Does not contract." Hard Fence 1 in both copies
-        confirms "Range cap ~100–150m, non-expanding." This is fully consistent
-        with OQ-1 binding.
-      why: ~
-
-    - id: pass-002
-      type: pass
-      what: >
-        taylor-hebert-flea-bottom library card was NOT provisioned to
-        active-project/actors/ (confirmed by 1c-log and actor directory scan).
-        No flea-bottom card copy is in the warehouse either. The flea-bottom
-        variant's 300m range with organic expansion cannot contaminate this
-        project's constraint stack via that vector.
-      why: ~
-
-    - id: pass-003
-      type: pass
-      what: >
-        cond-fauna-control-rules (base library card): not readable as a file
-        (library card body not accessible), but the INDEX shows it is a
-        library-scope card without project-specific overrides for the
-        dragon-gate project. Taylor's actor card explicitly references BOTH
-        cond-fauna-control-rules (base) and cond-fauna-control-rules-dragon-gate-addendum
-        (project addendum) — the addendum pattern correctly layers the range
-        restriction on top of the base rather than modifying the base.
-        No evidence of a contradicting clause in the base card accessible
-        through current reads.
-      why: ~
-
-    # ──────────────────────────────────────────────
-    # AUDIT CLASS 2: PATRON-DIALECT OPERATIONAL MODEL INTEGRITY
-    # ──────────────────────────────────────────────
-
-    - id: fault-003
+    - id: finding-003
       type: fault
       what: >
-        cond-patron-dialect-operational-model: physical file absent (fault-001).
-        Cannot verify: (a) 6-rung ladder with all six rungs specified (M4,
-        M9–10, M14–15, M18–19, M24, M27–28); (b) M14–15 enforcement-overshoot
-        beat named explicitly as dramatist C1; (c) M27–28 falsification-on-belief
-        constraint named as dramatist C2; (d) lit-snob non-negotiable C4
-        encoded (model-falsification meta-statement MUST NEVER appear in
-        prose — reader-inference only); (e) each rung's patron-channel specified.
+        cond-smallfolk-political-physics.card.md references
+        `cond-westerosi-customary-authority-jaehaerys` in its `references:` list and
+        in its Interaction Notes ("Both should be loaded for scenes involving Taylor's
+        relationship to smallfolk characters"). The same dangling-reference condition
+        as finding-002.
+        Additionally, cond-smallfolk-political-physics.card.md references named
+        characters in its body text — "Mira Stonefield-Jaehaerys", "Septon Rowan",
+        "Aldric Pryor", "Clem Ferris", "Pryor" — who are not members of the approved
+        cast from 1c. The 1c-log shows no cast members from the Riverlands; the project
+        is set in King's Landing. These named characters appear to be carry-forward
+        from an earlier project configuration (the library card was authored for a
+        Riverlands-set project).
       why: >
-        This card is named "THE MECHANICAL SPINE" in 1c-log. It is the
-        structural enforcement document for the entire foreclosure mechanism.
-        Without it as a physical file, screen-writer, shoot, and auditor have
-        no card-level source to verify rung-by-rung patron-channel assignments,
-        no enforcement of the C4 literary-snob constraint (the most
-        consequential prose discipline in the book), and no binding document
-        for the C1/C2 dramatist conditions. The actor card Hard Fence 3 carries
-        the C4 prohibition for Taylor's impersonator context only; the
-        condition card is required to enforce it across all authoring phases.
+        This is a library card loaded into a King's Landing project. The card's body
+        text populates specific named characters (Mira, Septon Rowan, Aldric Pryor,
+        Clem Ferris) as if they are active in the project, but none of these appear
+        in the approved 1c cast. The Interaction Notes instruct impersonators playing
+        "supporting smallfolk characters" to load this card — but the supporting
+        smallfolk named in the card are Riverlands-specific, not Flea Bottom-specific.
+        An impersonator loading this card for Flea Bottom smallfolk scenes will receive
+        character-specific guidance for characters who do not exist in this project,
+        and will not receive guidance calibrated to Flea Bottom's specific social
+        physics (which is handled by cond-flea-bottom-social-physics, a separate card).
+        Risk: impersonator uses wrong social-setting guidance or invents Riverlands-
+        context details in a KL-set scene.
       criteria: >
-        cond-patron-dialect-operational-model must be authored as a physical
-        file encoding: all six rungs of the ladder with month-marker, framing
-        type, patron-channel, and named outcome; the M14–15 enforcement-overshoot
-        beat explicitly flagged as C1 (seed of M27–28 sweep); the M27–28
-        recognition-failure beat flagged as C2; and the C4 prohibition in
-        explicit, unambiguous terms: the prose MUST NOT articulate
-        "her reports were heard as authorizations, not calibrations" or any
-        equivalent meta-statement in Taylor's interiority — reader-inference
-        only, non-negotiable.
+        The Interaction Notes section of cond-smallfolk-political-physics must be
+        amended for this project to (a) remove or reframe the named character
+        references to those absent from the KL cast, and (b) direct agents to
+        cond-flea-bottom-social-physics as the primary smallfolk-physics card for
+        KL scenes. Alternatively, a project-scope override card may be authored that
+        replaces the Interaction Notes and named-character references.
 
-    - id: pass-004
-      type: pass
-      what: >
-        Taylor actor card (library copy and project copy) encodes all 6 rungs
-        in the "6-Rung Ladder" section with correct month markers, patron
-        channels, and outcome labels. Hard Fence 3 prohibits naming the
-        patron-dialect model in prose. Voice section explicitly names C4
-        prohibition. The rung structure is internally consistent with
-        world-notes.md LAW (OQ-5 resolved, six-rung ladder).
-      why: >
-        Pass on actor-card encoding. Fault-003 remains open on condition
-        card physical existence.
-
-    # ──────────────────────────────────────────────
-    # AUDIT CLASS 3: WITCH-LABEL PERMANENCE
-    # ──────────────────────────────────────────────
-
-    - id: fault-004
+    - id: finding-004
       type: fault
       what: >
-        cond-dragon-gate-arrival-and-witch-label: physical file absent
-        (fault-001). Cannot verify that it encodes permanent operational
-        infrastructure, prohibits "lifting" or "correcting" the label, and
-        specifies that the captain's tolerance is "layered" not "rescinded."
+        cond-kl-witch-label-formation.card.md references `cond-westerosi-superstition-frame`
+        and `cond-crownlands-superstition-frame-125ac` in its `references:` list. Neither
+        of these cards is present in `active-project/warehouse/`.
+        The card explicitly notes: "This card is the KL-specific version of
+        cond-westerosi-superstition-frame and cond-crownlands-superstition-frame-125ac.
+        The prior cards were authored for a project in which Taylor's swarm-control was
+        the visible trigger." The card states it supersedes or replaces them for this
+        project, yet still lists them as `references:`, which implies they should be
+        loadable companions.
       why: >
-        OQ-2 is a LAW. The witch-label is permanent operational infrastructure
-        — a structural fact, not a plot variable. Without the condition card,
-        there is no load-bearing schema document that a shoot-phase reviewer
-        can cite to block a scene that incorrectly resolves or lifts the label.
+        If the card was authored to supersede the prior cards for this project, the
+        `references:` field should not list them as active references — it should use
+        `supersedes:` frontmatter instead (per schema: "new card sets supersedes: [old-slug]").
+        As written, the references field points to cards that are either absent from the
+        warehouse or have been functionally superseded by this card. An agent following
+        the references will look for cards that either don't exist here or whose content
+        this card has already incorporated. This is a frontmatter structure fault, not
+        a content fault.
       criteria: >
-        cond-dragon-gate-arrival-and-witch-label must be authored as a physical
-        file encoding: (1) the arrival sequence (market fire, insects lifting
-        visibly, three gold cloaks, septon shouts "witch," overnight detention,
-        released as "lunatic-not-worth-paperwork"); (2) the witch-label as
-        permanent operational infrastructure — cannot be corrected without
-        disclosing what Taylor actually is; (3) no card clause permits the
-        label to be lifted, rescinded, or corrected at any point in the book's
-        timeline; (4) the captain's tolerance is explicitly characterized as
-        "layered on top of" the witch-label, not as a replacement or rescinding.
+        The references: list should remove cond-westerosi-superstition-frame and
+        cond-crownlands-superstition-frame-125ac. If these cards exist in the library
+        and this card supersedes them for this project, the appropriate mechanism is
+        supersedes: in frontmatter, not references:. If they do not exist, the references
+        are simply dangling and should be removed.
 
-    - id: pass-005
-      type: pass
+    - id: finding-005
+      type: fault
       what: >
-        Taylor actor card Hard Fence 7: "The witch-label is never lifted.
-        Never corrected. Only layered." Voice section confirms: "Never uses
-        the witch-label as a claim or a correction." Septon card
-        (oc-ward-septon-dragon-gate): Hard Fence "Does not recant; holds
-        the witch-classification." Captain card: Hard Fence language does
-        not contain any clause permitting label removal. World-notes LAW
-        (OQ-4 resolved): "The witch-label is not rescinded by his tolerance —
-        it is layered." All actor-card-level encoding is consistent and
-        non-contradictory.
-      why: ~
+        cond-shard-deposit-mechanics-mirror.card.md references `cond-no-parahuman-infrastructure`
+        in its `references:` list and in its Interaction Notes ("With cond-no-parahuman-infrastructure:
+        That library card establishes the general absence of parahuman infrastructure in
+        Westeros"). This card is not present in `active-project/warehouse/` and does not
+        appear in the 1c candidate menu.
+        Additionally, the card's Description states: "This card supersedes
+        cond-reincarnation-mechanics-125ac for this project." It does not carry a
+        `supersedes:` frontmatter field pointing to cond-reincarnation-mechanics-125ac,
+        and does not carry the schema-required structure for supersession (old card
+        should carry superseded_by, new card should carry supersedes: [...]).
+      why: >
+        The dangling reference to cond-no-parahuman-infrastructure is the same
+        fault-class as findings 002-004: a referenced card that is not present will
+        produce failed loads for agents trying to load the full card stack. The
+        supersession claim ("This card supersedes cond-reincarnation-mechanics-125ac")
+        in the body text without the corresponding frontmatter structure is a schema
+        compliance fault — supersession requires formal frontmatter fields, not body-text
+        declaration, per card.schema.md ("Old card sets superseded_by: ... New card sets
+        supersedes: [...]").
+      criteria: >
+        (a) cond-no-parahuman-infrastructure must be stocked in the warehouse or the
+        reference removed and the body text reframed. (b) If cond-reincarnation-mechanics-125ac
+        exists in the library, the supersession must be formalized per schema: this card
+        adds supersedes: [cond-reincarnation-mechanics-125ac] to its frontmatter, and
+        the library card adds superseded_by: cond-shard-deposit-mechanics-mirror. If the
+        library card does not exist, the body-text claim is harmless but the supersedes:
+        frontmatter field is still the correct structural form.
 
-    # ──────────────────────────────────────────────
-    # AUDIT CLASS 4: CAST SCOPE DISCIPLINE
-    # ──────────────────────────────────────────────
-
-    - id: pass-006
-      type: pass
-      what: >
-        Cast count: active-project/actors/ contains exactly 9 named recurring
-        actor directories: taylor-hebert-dragon-gate, oc-watch-captain-dragon-gate,
-        mira-stonefield-dragon-gate, oc-black-adjacent-contact, oc-persons-risk-officer,
-        oc-rung3-steward, oc-ward-septon-dragon-gate, oc-block-fixture,
-        oc-contacts-business-partner. This matches the 1c-log final cast list
-        exactly. OQ-7 binding of 9 named recurring characters is satisfied.
-      why: ~
-
-    - id: pass-007
-      type: pass
-      what: >
-        Named family for Mira: mira-stonefield-dragon-gate card contains no
-        named family members. Aliases are [mira] only. References do not
-        include any family-member card slugs. No family names appear in the
-        card body's Critical Project-Scope Facts.
-      why: ~
-
-    - id: flag-001
+    - id: finding-006
       type: flag
       what: >
-        oc-black-adjacent-contact card (Daveth): frontmatter aliases include
-        [the-contact, daveth] and the card body states "Essosi-origin family
-        (Braavosi grandfather)." OQ-7 LAW states "No named family for Mira
-        or the Black-adjacent contact." The Braavosi grandfather is mentioned
-        as backstory origin context, not as a named recurring character, and
-        the grandfather is not given a name or introduced as a cast member.
+        cond-kl-feudal-physics-mirror.card.md references `cond-westerosi-customary-authority-125ac`
+        in its `references:` list. This is a different card slug from the
+        `cond-westerosi-customary-authority-jaehaerys` referenced by the two library cards
+        (findings 002-003). The slug variant `-125ac` vs `-jaehaerys` may indicate two
+        separate library cards (period-specific variants: one for 84-101 AC Jaehaerys era,
+        one for 125 AC pre-Dance era), or it may indicate a naming inconsistency where
+        one card is referenced under two different slugs.
       why: >
-        The OQ-7 prohibition reads "no named family for [...] the Black-adjacent
-        contact." The grandfather mention is one level removed — it establishes
-        Daveth's Essosi origin register, not a named family member. However,
-        if "Essosi-origin family (Braavosi grandfather)" is ever used in prose
-        to introduce a named family scene or relationship, the fence is crossed.
-        As encoded in the card it is backstory shorthand, not a named family
-        introduction, so this is advisory rather than a hard fault. Screen-writer
-        and shoot should not develop this into a scene.
+        If `-125ac` and `-jaehaerys` are two separate cards: both may be absent from the
+        warehouse, and the project needs to stock the appropriate one (the 125 AC variant
+        for the KL card). If they are the same card with inconsistent slugs: the slug
+        mismatch means one reference will fail at load time. Either way, the absence
+        of cond-westerosi-customary-authority-125ac from the warehouse is the same
+        dangling-reference fault-class as findings 002-005. Flagged rather than faulted
+        because the resolution depends on determining which card(s) exist in the library.
+      criteria: null
+
+    # ── WORLD-NOTES CONSISTENCY ────────────────────────────────────────────────
+
+    - id: finding-007
+      type: pass
+      what: >
+        Flicker discipline binding rules (world-notes.md § Taylor's setup state).
+        cond-flicker-discipline-mirror.card.md checked against all seven binding rules.
       why: >
-        Minor disambiguation risk. No current fence violation; advisory flag
-        to prevent drift at shoot phase.
+        All seven rules are present, sourced to world-notes.md, and correctly stated.
+        Rule 1 (involuntary), Rule 2 (unreliable), Rule 3 (must cost), Rule 4 (near-dragon
+        louder not more reliable), Rule 5 (Gold Morning pattern-recognition), Rule 6
+        (kill-misfire specifics), Rule 7 (hard fences) — all present and correctly
+        attributed. No violation found.
 
-    - id: pass-008
+    - id: finding-008
       type: pass
       what: >
-        Captain card (oc-watch-captain-dragon-gate): Hard Fence 1 is "No
-        interiority rendered." Critical Project-Scope Facts state "Interiority:
-        CLOSED. Readable through institutional behavior only. Never POV."
-        This satisfies OQ-7 binding requirement for captain opacity and
-        interiority disclaimer.
-      why: ~
-
-    - id: pass-009
-      type: pass
-      what: >
-        Contact card (oc-black-adjacent-contact): Hard Fence 1 is "No
-        interiority rendered; last hours external only." Critical Project-Scope
-        Facts state "Interiority: CLOSED." This satisfies OQ-7 binding
-        requirement for no-interiority on the contact.
-      why: ~
-
-    - id: pass-010
-      type: pass
-      what: >
-        Block-fixture card (oc-block-fixture): "EXPLICITLY DISCLAIMS
-        CONFIDANT-ROLE." Hard Fences include "No confidant role," "No
-        operational role," "No interiority rendered." This satisfies OQ-7
-        binding that the block-fixture is "non-confidant role."
-      why: ~
-
-    # ──────────────────────────────────────────────
-    # AUDIT CLASS 5: AU DIVERGENCE LEGIBILITY
-    # ──────────────────────────────────────────────
-
-    - id: pass-011
-      type: pass
-      what: >
-        Taylor actor card (library copy): Voice section, "The passive-sense
-        texture" subsection explicitly states the cap is "a hard constant of
-        her condition in this world, not an organic ceiling." Stats section:
-        "The cap is a physical constant of her condition in this world, not
-        a plot brake." Hard Fence 1: "Any scene implying organic range
-        expansion is a mechanics violation." World-notes LAW (OQ-1 resolved):
-        "The divergence must be legible in the text (named, observed, or
-        acknowledged) and not silently elided."
+        Two-register architecture binding rules (world-notes.md § Presentational layer).
+        cond-series-tone-mirror.card.md checked against all binding constraints.
       why: >
-        The AU divergence (range-capped vs. canon shard behavior) is encoded
-        as a fact Taylor has tested and knows — "she has tested it exactly
-        once and the edge is sharp" — and the card explicitly prohibits
-        prose treating it as organic or expanding. This satisfies the
-        legibility requirement at the actor-card level.
-      why: ~
+        Body register (grim-literary, close-third Taylor exclusive, no multi-POV,
+        no editorialization), coda register (cold institutional, hard register-break,
+        explicit counterfactual naming required, closing-beat order fixed), prohibited
+        registers (warmth in coda, ambiguity in counterfactual, melodrama at bad act),
+        and register-break structural requirement — all present and correctly stated.
+        The single-book scope implications section correctly notes that tone architecture
+        is sustained across novel length. No violation found.
 
-    - id: flag-002
+    - id: finding-009
+      type: pass
+      what: >
+        Chronicler counterfactual demand (world-notes.md § Plot spine and § Cost/closing,
+        binding carry-forwards from 1b Batches C and D).
+        cond-series-tone-mirror.card.md § Coda Register, requirement 1.
+      why: >
+        The card states the requirement correctly: "The coda MUST name the opposite-number's
+        counterfactual. Not imply it — name it." This matches world-notes.md verbatim:
+        "The chronicler frame MUST name the opposite-number's counterfactual EXPLICITLY
+        in the closing pages." Closing-beat ordering (chronicler → cost-bearer's death)
+        is also correctly stated with the world-notes "automatic revise" trigger preserved.
+        No violation found.
+
+    - id: finding-010
+      type: pass
+      what: >
+        Dragon-claiming canon-adherence binding rules (world-notes.md § Plot spine,
+        carry-forward: "wrong-rider mechanic must hold to ASOIAF dragon-claiming lore").
+        cond-dragon-bonding-claiming-rules.card.md checked against all lore sections.
+      why: >
+        Targaryen-blood prerequisite, bonding stages (approach → hostility → mounting →
+        recognition), claiming-window mechanics post-bonder-death, Dragonseeds precedent,
+        and the project-specific application (wrong-rider claiming via neutral window
+        mechanics) — all present and sourced to Fire & Blood / ASOIAF canon. The binding
+        lore constraint in the card explicitly prohibits invented dragon-bonding rules.
+        No violation found.
+
+    - id: finding-011
+      type: pass
+      what: >
+        Patron's wrong-theory binding rules (world-notes.md § Taylor's political position,
+        carry-forward: "patron's wrong-theory-of-Taylor is the structural seam where the
+        collision lives"; "BINDING: no agent writes a scene where the patron explicitly
+        acknowledges wrong-theory during alignment phase").
+        cond-patron-amplification-theory-mirror.card.md § Binding Constraint.
+      why: >
+        The binding constraint is correctly present and correctly stated. The card
+        distinguishes object-level uncertainty (permitted) from meta-level wrong-theory
+        acknowledgment before the collision (violation). The structural seam framing
+        (collision-not-betrayal) is correctly preserved from world-notes.md. No violation
+        found.
+
+    - id: finding-012
+      type: pass
+      what: >
+        Causal chain unambiguity binding rule (world-notes.md § Plot spine, carry-forward:
+        "ambient-chaos readings are cost-evasion").
+        cond-smallfolk-court-access-mirror.card.md § Access Chain section and auditor-use note.
+      why: >
+        The access chain card explicitly states: "If any link is missing, the bad act's
+        causal responsibility is ambiguous — which is cost-evasion (world-notes.md,
+        binding: 'the causal chain from Taylor's kill → wrong-rider outcome must be
+        UNAMBIGUOUS in the rendered story')." The eight-step chain from Flea Bottom to
+        Dragonpit interior is enumerated. No violation found.
+
+    - id: finding-013
+      type: pass
+      what: >
+        Cost-bearer's death must land cold (world-notes.md § Cost/closing, binding:
+        "Death lands cold; the chronicler-frame did the moral work").
+        cond-series-tone-mirror.card.md § Prohibited Registers (coda) and § Coda Register.
+      why: >
+        The card prohibits warmth in the coda and states "The chronicler does not mourn,
+        regret, or editorialize sympathetically." The "death lands cold" rule is preserved.
+        No violation found.
+
+    - id: finding-014
+      type: pass
+      what: >
+        No parahuman support structure in Westeros (world-notes.md: "no Contessa, Dragon,
+        Cauldron, or Worm-context peer who can read what Taylor is").
+        cond-shard-deposit-mechanics-mirror.card.md § What Did Not Carry Over and
+        § No Other Worm-Universe Entities.
+      why: >
+        The uniqueness clause is present. Queen Administrator and all other Worm-universe
+        powers are listed as absent. The no-parahuman-infrastructure constraint is
+        stated. No violation found.
+
+    # ── INTERNAL CONSISTENCY ──────────────────────────────────────────────────
+
+    - id: finding-015
+      type: fault
+      what: >
+        cond-feudal-hierarchy-law.card.md sets the temporal and geographic scope as
+        "Riverlands at 84–101 AC (Jaehaerys I)." The card's Hierarchy section describes
+        House Ryger of Willow Wood as "the local feudal authority" and populates stages
+        of suppression referring to specific Riverlands figures (Tully, Ryger). This
+        project is set in King's Landing (~125 AC, Viserys I's declining court, pre-Dance).
+        The card's world: planetos and scope: library are correct, but its Description
+        scopes it to "Riverlands at 84–101 AC" — a 25+ year period mismatch and a
+        geographic mismatch from KL.
+        The KL-specific card (cond-kl-feudal-physics-mirror) is correctly scoped to
+        ~125 AC King's Landing and explicitly states "This card is the KL-specific layer
+        on top of cond-feudal-hierarchy-law." However, the library card's Stage 3/4
+        threshold language refers to Tully and Ryger administrative apparatus, which
+        does not exist in King's Landing. Auditor-use note in the library card also
+        references Taylor's "organizing activities" and "Pryor's assessment" — content
+        from the prior Riverlands project that is now misleading for KL deployment.
+      why: >
+        An impersonator or coach loading cond-feudal-hierarchy-law as context for KL
+        scenes will receive feudal-physics guidance for the Riverlands of 84-101 AC,
+        not King's Landing of 125 AC. The Stage 3/4 cross-references to Tully and Ryger
+        are inoperative in KL. The risk is that agents use the wrong institutional
+        framework for enforcement-threat assessments in KL scenes — e.g., writing a
+        scene where Taylor fears Tully's administrative apparatus rather than the City
+        Watch / Hand's apparatus. The KL card provides the correct override layer, but
+        only if agents prioritize the project-scope card over the library card; the
+        library card's period/geography mismatch is a drift surface.
+      criteria: >
+        The Interaction Notes and auditor-use guidance in cond-feudal-hierarchy-law
+        must be updated to scope its direct applicability to the Riverlands period and
+        to direct KL-project agents explicitly to cond-kl-feudal-physics-mirror as the
+        operative card. Alternatively, the loading priority rule for project-scope cards
+        over library cards must be stated explicitly in the project-scope KL card.
+
+    - id: finding-016
       type: flag
       what: >
-        No condition card currently enforces the prose-legibility obligation
-        for AU divergence at the condition-slot level (the relevant card,
-        cond-fauna-control-rules-dragon-gate-addendum, is absent per fault-002).
-        The legibility requirement is currently carried only by the actor card,
-        not by a condition card that studio and shoot infrastructure can load
-        scene-by-scene.
+        cond-dance-faction-state-previserys.card.md Dragon-Asset Inventory section lists
+        Meleys as "Rhaenys Targaryen, 'the Queen Who Never Was' — a Black-aligned asset
+        IF Rhaenys is aligned with the Black faction." The 1c-log names Rhaenys Targaryen
+        as the approved patron (false-ally, Black faction). The condition card's hedged
+        phrasing ("IF Rhaenys is aligned") introduces uncertainty about a character
+        whose factional alignment is now decided.
       why: >
-        If fault-002 is resolved, this flag is satisfied automatically.
-        Flagging to ensure the addendum's authored body includes legibility
-        language and not just the mechanical cap values.
+        The conditional phrasing was appropriate when the card was authored (before the
+        patron's identity was cast), but after 1c it introduces ambiguity: Rhaenys IS
+        the patron AND the patron is Black-faction-adjacent per world-notes.md. An agent
+        reading the dragon-asset inventory could treat Rhaenys's Black alignment as
+        uncertain when it is decided. Minor drift risk, not a constraint violation —
+        the conditional phrasing does not contradict a binding rule, but it could produce
+        ambiguous impersonator output for Rhaenys scenes.
+      criteria: null
 
-    # ──────────────────────────────────────────────
-    # AUDIT CLASS 6: CLOSING-SHAPE COMMITMENTS
-    # ──────────────────────────────────────────────
-
-    - id: fault-005
-      type: fault
-      what: >
-        cond-watch-persons-risk-sweep: physical file absent (fault-001).
-        Cannot verify that it encodes: (a) Taylor is processed by the same
-        sweep; (b) final image is her own insects registering her stillness;
-        (c) no clause admits Taylor surviving the close.
-      why: >
-        OQ-6 is a LAW and carries a "binding execution obligation" subcondition.
-        The closing image — insects at range-cap registering no movement inside
-        the guardhouse — must be enforced as a structural constraint from the
-        condition card, not just from the actor card's internal Hard Fences.
-        If this card does not exist, the closing-shape has no external
-        enforcement document for screen-writer or shoot phases.
-      criteria: >
-        cond-watch-persons-risk-sweep must be authored as a physical file
-        encoding: (1) the M27–28 sweep mechanism and its kill chain (contact
-        detained, escalation Taylor did not author, contact killed in custody);
-        (2) Taylor's arrest three days after contact's death under the same
-        persons-risk protocols her ladder helped construct; (3) Taylor dies
-        in the Dragon Gate guardhouse — not executed, not martyred, processed;
-        (4) the final image: Taylor's own insects at range-cap registering
-        no movement inside the building she is in; (5) no surviving clause —
-        no card language permits Taylor to survive the close or escape the
-        sweep.
-
-    - id: pass-012
-      type: pass
-      what: >
-        Taylor actor card (library and project copies): "The close" section
-        explicitly states "Taylor dies in the Dragon Gate guardhouse — not
-        executed, not martyred, processed. The final image is the insects at
-        range-cap registering no movement inside the building she is in."
-        Hard Fence 9: "The insect-ambient-register is a consistent prose
-        mechanism throughout. The closing image — insects at range cap
-        registering no movement inside the guardhouse she is dying in —
-        must be EARNED." World-notes LAW (OQ-6 resolved): closing image
-        confirmed, Taylor absent from terminus as subject, no surviving clause.
-      why: >
-        Actor-card level encoding is clean. Fault-005 remains open on
-        condition card.
-
-    # ──────────────────────────────────────────────
-    # AUDIT CLASS 7: FORECLOSURE-NOT-RECOGNITION TRAGEDY STRUCTURAL COMMITMENT
-    # ──────────────────────────────────────────────
-
-    - id: fault-006
-      type: fault
-      what: >
-        No standalone condition card encodes the foreclosure-not-recognition
-        structural commitment as a series-level constraint. cond-series-tone-dragon-gate
-        is the expected carrier, but it is absent as a physical file (fault-001).
-        The relevant law is in world-notes.md: LAW (OQ-6 resolved, structural
-        shape): "The world's verdict, not Taylor's, is at the final image.
-        Taylor is absent from the terminus as a subject." And THEME: "The
-        shape is foreclosure — each defensible choice closes off a better
-        outcome that was still possible. The book's verdict is the final state."
-        And TONE: "No moral narration."
-      why: >
-        Without a condition card carrying this as an enforceable constraint
-        readable by screen-writer and shoot, the structural commitment exists
-        only in world-notes.md (showrunner memory, not a loadable condition).
-        Any scene where Taylor recognizes the moral — where the prose articulates
-        the theme rather than structuring it — has no card-level fence to cite
-        against.
-      criteria: >
-        cond-series-tone-dragon-gate (or another designated carrier card)
-        must encode: (1) the prose never names the moral — world's verdict
-        not protagonist's; (2) theme-as-structure not theme-as-statement;
-        (3) Taylor is absent as a subject from the terminus — she does not
-        understand, does not choose, does not register the moral; (4) the
-        foreclosure shape is: each defensible choice closes off a better
-        outcome that was still possible; (5) this is not a recognition tragedy.
-
-    - id: pass-013
-      type: pass
-      what: >
-        Taylor actor card Hard Fence 3: "The patron-dialect model is NOT named
-        by Taylor." Voice section: "The meta-recognition is reader-inference
-        from the 6-rung consequence chain. Any prose articulating the model
-        in Taylor's interiority is a literary-snob-C4 violation." Thematic
-        Purpose section: "She does not understand this when it closes. The
-        book's verdict is the final state." These are actor-scope enforcements
-        of the structural commitment.
-      why: >
-        Actor-card level encoding is consistent. Fault-006 remains open
-        on condition-card enforcement.
-
-    # ──────────────────────────────────────────────
-    # AUDIT CLASS 8: SERIES-TONE / NO-MORAL-NARRATION DISCIPLINE
-    # ──────────────────────────────────────────────
-
-    - id: fault-007
-      type: fault
-      what: >
-        cond-series-tone-dragon-gate: physical file absent (fault-001).
-        Cannot verify that it encodes: (a) no aestheticized cruelty;
-        (b) no moral narration; (c) structural deceleration into bureaucratic
-        processing.
-      why: >
-        TONE laws in world-notes.md are not condition cards. Screen-writer
-        and shoot agents load condition cards from the warehouse; they read
-        world-notes.md only through showrunner context passing. A tone law
-        that lives only in world-notes.md is not enforced at the card-load
-        layer. Without cond-series-tone-dragon-gate, the tone constraints
-        have no schema-level vehicle for scene-by-scene enforcement.
-      criteria: >
-        cond-series-tone-dragon-gate must be authored encoding: (1) grimdark
-        with honest weight — bleakness earned by causal chains the reader can
-        reconstruct, not aestheticized cruelty; (2) no moral narration —
-        the book does not tell the reader what to think about Taylor's choices;
-        (3) tragedy-of-competence pacing — structural deceleration into
-        catastrophe, not pulp escalation; (4) the mode of death is bureaucratic,
-        not dramatic; (5) foreclosure is structural, not person-authored.
-
-    # ──────────────────────────────────────────────
-    # AUDIT CLASS 9: EARTH-BET NO-INTRUSION FENCE
-    # ──────────────────────────────────────────────
-
-    - id: pass-014
-      type: pass
-      what: >
-        World-notes LAW (OQ-1 resolved): "Earth-Bet does not intrude. No
-        portals open, no other capes appear, no Tinker tech is at hand."
-        Taylor card (library copy): "Khepri-mantle: SEALED for full single-book
-        duration. No unlock." Stats: "khepri_mantle: SEALED. No unlock condition
-        in single-book timeline... Any trigger other than full-project-revision
-        is a mechanics violation." References section lists no Earth-Bet
-        cards in the actor's reference stack (only planetos cards referenced).
-        No actor card in active-project/actors/ references an Earth-Bet persona
-        or location card.
-      why: ~
-
-    - id: fault-008
-      type: fault
-      what: >
-        cond-no-parahuman-infrastructure: library card is listed in the
-        conditions INDEX as a library card but its physical file is not
-        readable in cards/conditions/ — the file body cannot be accessed.
-        Additionally, the warehouse copy was supposed to be provisioned from
-        the library for this project but no physical file exists in
-        active-project/warehouse/ (fault-001 covers this). Cannot verify
-        the card body explicitly closes the Earth-Bet intrusion fence.
-      why: >
-        LAW: "Earth-Bet does not intrude. No portals open, no other capes
-        appear, no Tinker tech is at hand." This is one of the four binding
-        source-fact LAWs. Without a readable condition card encoding it, the
-        fence exists only in world-notes.md and Taylor's actor card Khepri-mantle
-        SEALED entry. That is insufficient enforcement at the condition-load
-        layer for shoot and stitch phases.
-      criteria: >
-        cond-no-parahuman-infrastructure must be provisioned to
-        active-project/warehouse/ as a physical file. Its body must encode:
-        Earth-Bet parahuman infrastructure does not exist in Planetos; no
-        Earth-Bet portals, no other capes, no Tinker tech; Taylor's Khepri-mantle
-        being sealed is a consequence of this condition. The card must not
-        contain any language implying the condition could lift or change within
-        the book's scope.
-
-    # ──────────────────────────────────────────────
-    # AUDIT CLASS 10: SMALLFOLK-AS-SUBSTRATE DISCIPLINE
-    # ──────────────────────────────────────────────
-
-    - id: pass-015
-      type: pass
-      what: >
-        World-notes LAW (OQ-7 resolved): "The block is hostile-and-indifferent,
-        not soft-and-adopting. The reader holds the world as substrate, not
-        as Taylor's community." Block-fixture card (oc-block-fixture): "EXPLICITLY
-        DISCLAIMS CONFIDANT-ROLE. Not a community member. Not a voice for the
-        block's perspective on Taylor. Not a resource Taylor uses or cultivates."
-        Thematic Purpose for block-fixture: "World-going-on-without-Taylor,
-        NOT community-Taylor-is-part-of." Taylor actor card: "The block is
-        hostile-and-indifferent, not soft-and-adopting."
-      why: ~
-
-    - id: fault-009
-      type: fault
-      what: >
-        cond-smallfolk-political-physics: library card listed in INDEX but
-        physical file not readable (same access pattern as all condition cards).
-        Warehouse copy absent (fault-001). Cannot verify the card encodes
-        smallfolk-as-substrate, no community-Taylor-is-part-of dynamics,
-        no protagonist-fodder framing.
-      why: >
-        LORE: "smallfolk number in the hundreds of thousands and live as
-        substrate, not citizens." LAW (OQ-7): the block is hostile-and-indifferent.
-        Without cond-smallfolk-political-physics in the warehouse, this
-        structural requirement has no condition-card enforcement for the
-        shoot and stitch phases.
-      criteria: >
-        cond-smallfolk-political-physics must be provisioned to
-        active-project/warehouse/ as a physical file. If the existing library
-        card body does not already encode: smallfolk are substrate not
-        protagonist-fodder; no named-community-Taylor-is-part-of dynamics;
-        block hostility and indifference as the default register — then a
-        project addendum or override must add this language.
-
-    # ──────────────────────────────────────────────
-    # ADDITIONAL FINDINGS: INTERNAL CONSISTENCY CHECKS
-    # ACROSS AVAILABLE ACTOR CARDS
-    # ──────────────────────────────────────────────
-
-    - id: pass-016
-      type: pass
-      what: >
-        Mira card: death is ON-PAGE, late Act 3. This is consistent with
-        world-notes LORE (OQ-7): "Her death in the Watch persons-risk sweep
-        expansion is ON-PAGE in late Act 3." No contradiction between actor
-        card and world-notes.
-      why: ~
-
-    - id: pass-017
-      type: pass
-      what: >
-        Contact card (Daveth) Hard Fences: "Names Taylor as his source before
-        dying (protocol, not betrayal)." This is consistent with world-notes
-        LORE (OQ-6): "The contact killed in custody at Rung 6 names Taylor
-        as his source before dying." No contradiction.
-      why: ~
-
-    - id: pass-018
-      type: pass
-      what: >
-        Business-partner card (Corwyn Bane): Hard Fences encode "Present at
-        Rung 4 — concrete mutual dependency shown [...] ABSENT at Rung 6 —
-        not killed, not fleeing, simply not there; the reason is not dramatized."
-        This satisfies the 1c-log dramatist condition S1 (concrete mutual
-        dependency at Rung 4; absence-as-cost at Rung 6).
-      why: ~
-
-    - id: pass-019
-      type: pass
-      what: >
-        Persons-risk officer card (Ser Rowan Vane): Hard Fence "Not cruel —
-        procedurally correct throughout." This is consistent with world-notes
-        LAW (OQ-7): "The antagonist is the patron-machinery itself [...] not
-        in any person's choices." No contradiction.
-      why: ~
-
-    - id: pass-020
-      type: pass
-      what: >
-        Steward card (Aldric Fenwick): Hard Fence "Does not harm anyone
-        intentionally; applies correct tools for the category he received."
-        Act 2 recurrence is "routine, not dramatic." This encodes the
-        enforcement-overshoot seed mechanism (OQ-5, Rung 3) correctly as
-        an inadvertent, category-limit-driven outcome, not deliberate harm.
-      why: ~
-
-    - id: pass-021
-      type: pass
-      what: >
-        Septon card (Septon Aldyn): Hard Fence "Does not recant; holds the
-        witch-classification." Watch management note limits action but not
-        assessment. Three appearances total (arrival, one mid-book hostility
-        beat, absent from close). This is consistent with OQ-7 cast-scope
-        specification for the septon.
-      why: ~
-
-    - id: flag-003
+    - id: finding-017
       type: flag
       what: >
-        Taylor actor card (library copy) variant-of field: "taylor-hebert-flea-bottom."
-        The flea-bottom variant card has stats fauna_control_radius of "300m
-        at story open [...] Expands organically through use toward hard ceiling
-        of ~1.5km by late s2." The dragon-gate variant's range (~100–150m,
-        hard constant) is dramatically different and explicitly documented
-        as "significantly below flea-bottom-dance config due to different
-        shard-seeding conditions in this world-arrival context." This AU
-        divergence is documented and the variant-reason captures it. However,
-        agents loading this card must not inherit the flea-bottom range from
-        the parent. The card schema's variant-of: does not retire the base
-        card (per schemas/card.schema.md §Variant cards), and the composition
-        directive in the card's composes: field lists taylor-hebert-flea-bottom.
-        Any agent that does composition without fully resolving the range
-        override in favor of the dragon-gate variant's hard cap will import
-        the parent's organic-expansion stat. This is a composition-logic risk,
-        not a card-content error.
+        cond-dance-faction-state-previserys.card.md lists Silverwing as a riderless
+        dragon at the Dragonpit, described as "Queen Alysanne's former mount; unridden
+        since Alysanne's death." The Riderless section also mentions Seasmoke (Laenor
+        Velaryon's former mount). The 1c-log confirms Ulf the White as the wrong rider
+        who "claims Silverwing in canon Dance — maximal ASOIAF irony." The faction
+        card does not name which specific dragon is the opposite-number's target
+        (Silverwing is listed but not identified as the pivot dragon in this card).
+        cond-dragon-bonding-claiming-rules.card.md § Wrong Rider Claiming Mechanic
+        refers to "the opposite-number" and "a dragon" generically.
       why: >
-        Flagging for screen-writer, coach, and facet pipeline: when loading
-        taylor-hebert-dragon-gate, the dragon-gate Stats section fauna_control_radius
-        (~100–150m hard constant) OVERRIDES the parent card's fauna_control_radius
-        (300m, organic). The override is correctly encoded in the variant card.
-        Risk surfaces only if an agent loads parent stats without applying
-        the override.
+        The pivot dragon (Silverwing, per 1c) is not explicitly named in either
+        cond-dance-faction-state-previserys or cond-dragon-bonding-claiming-rules.
+        This is an omission, not a contradiction. Both cards describe mechanics that
+        apply to the unnamed pivot dragon. The risk is that agents writing the bad
+        act or its aftermath do not have a clear authoritative source naming Silverwing
+        as the specific dragon involved. The 1c-log is the current authority, but
+        it is not a condition card that impersonators and coaches load.
+        Flagged (not faulted) because the 1c cast log is definitive; this is a
+        cross-card legibility gap, not a constraint violation.
+      criteria: null
 
-    # ──────────────────────────────────────────────
-    # CONDITION CARD INDEX QUALITY ASSIGNMENT FAULT
-    # ──────────────────────────────────────────────
-
-    - id: fault-010
-      type: fault
+    - id: finding-018
+      type: flag
       what: >
-        cards/conditions/INDEX.md by_quality section: all 7 new project-scoped
-        condition cards (cond-patron-dialect-operational-model,
-        cond-watch-persons-risk-sweep, cond-kl-authority-dragon-gate-129ac,
-        cond-fauna-control-rules-dragon-gate-addendum,
-        cond-dragon-gate-arrival-and-witch-label,
-        cond-series-tone-dragon-gate, cond-reincarnation-mechanics-dragon-gate)
-        are NOT listed under by_quality. They appear only under by_world
-        with "[project: dragon-gate-foreclosure — warehouse only]" notation.
-        No quality (full/scant) is assigned to any of them in the INDEX.
+        cond-patron-amplification-theory-mirror.card.md § Patron Uses the Wrong Theory
+        states: "The patron arranges consultation sessions at or near the Dragonpit for
+        high-stakes questions." cond-smallfolk-court-access-mirror.card.md § Access Chain
+        step 5 states "Retainer escort to the Dragonpit exterior approach (first
+        dragon-proximity access)" and step 6 states "Dragon-proximity session: patron
+        observes Taylor's reaction, interprets as theory confirmation."
+        However, cond-smallfolk-court-access-mirror states the patron does not hold
+        consultations "at the Red Keep or at any formal court venue" and that the patron
+        "reaches down to Taylor's accessible range." These two descriptions are
+        consistent — the patron does not bring Taylor to the Red Keep; the patron brings
+        Taylor to the Dragonpit under patron escort. No contradiction.
+        The flag is for a subtle operational gap: the Dragonpit is not described in
+        either card as the patron's primary consultation venue for non-dragon-adjacent
+        questions. The patron's standard consultation venues are: "patron's KL premises
+        (a townhouse or rented factor space)" and "Sept of Baelor outer courts." The
+        Dragonpit sessions are the escalated protocol. This distinction is clear in the
+        patron-amplification-theory card but not repeated in the access card, which lists
+        the Dragonpit among the patron's accessible venues without flagging that it is
+        the high-stakes escalation, not the routine mode.
       why: >
-        Per schemas/card.schema.md §Card quality: "Any persona used on-stage
-        must be quality: full. Scant + used = blocking rescue before cast entry."
-        The quality gate applies to personas strictly, but condition cards
-        without quality assignments are also unclassified — margit cannot
-        assess load-readiness and agents cannot determine whether these cards
-        have sufficient content for enforcement use. More significantly, the
-        absence of quality assignments confirms these are stubs authored to
-        INDEX only, not as full card files.
-      criteria: >
-        Each project-scoped condition card must receive a quality assignment
-        in the INDEX at the time of physical file authoring. The 5 load-bearing
-        constraint-encoding cards (cond-patron-dialect-operational-model,
-        cond-watch-persons-risk-sweep, cond-fauna-control-rules-dragon-gate-addendum,
-        cond-dragon-gate-arrival-and-witch-label, cond-series-tone-dragon-gate)
-        should be quality: full. The remaining 2 (cond-kl-authority-dragon-gate-129ac,
-        cond-reincarnation-mechanics-dragon-gate) may be quality: scant at
-        margit's discretion if their constraint content is fully covered by
-        world-notes and actor cards.
+        Minor legibility gap. An agent reading only cond-smallfolk-court-access-mirror
+        might treat Dragonpit access as routine rather than escalated-protocol. No
+        binding rule is violated since the correct description is present in
+        cond-patron-amplification-theory-mirror. Low drift risk.
+      criteria: null
+
+    # ── BINDING-FACT COVERAGE CHECK ──────────────────────────────────────────
+
+    - id: finding-019
+      type: pass
+      what: >
+        Binding-fact coverage check: all five binding constraints from world-notes.md
+        evaluated for card-set representation.
+        (1) Flicker discipline → cond-flicker-discipline-mirror [present, fully covered]
+        (2) Two-register architecture → cond-series-tone-mirror [present, fully covered]
+        (3) Chronicler counterfactual demand → cond-series-tone-mirror § Coda Register
+            [present, fully covered]
+        (4) Dragon-claiming canon-adherence → cond-dragon-bonding-claiming-rules
+            [present, fully covered]
+        (5) Patron's wrong-theory binding constraint → cond-patron-amplification-theory-mirror
+            [present, fully covered]
+      why: All five binding constraints have dedicated card coverage. No binding fact is uncovered.
+
+    # ── DRIFT RISK ASSESSMENT ────────────────────────────────────────────────
+
+    - id: finding-020
+      type: flag
+      what: >
+        cond-flicker-discipline-mirror.card.md Rule 3 states: "A flicker that confirms
+        Taylor's existing beliefs without forcing any reinterpretation or any action-
+        commitment under uncertainty is cost-evasion." The positive formulation of the
+        cost rule enumerates three forms of interpretive cost: (a) commitment closing
+        off alternatives, (b) forced reinterpretation, (c) correct fragment producing
+        unanticipated consequence.
+        The rule is correctly stated. The drift risk is in the gap between "confirms
+        her good intentions" (the world-notes.md phrasing from the 1b carry-forward)
+        and the card's general phrasing "confirms Taylor's existing beliefs." An
+        impersonator or coach writing a scene where a flicker confirms a tactical
+        assessment (not a moral self-justification) might read form (c) of the cost rule
+        — "correct but unanticipated consequence" — as sufficient to satisfy the cost
+        requirement even if the flicker effectively functioned as a reliable navigation
+        tool in that scene.
+      why: >
+        Form (c) of the cost rule (correct fragment, unanticipated consequence) is the
+        loosest of the three forms. A scene where the flicker gives Taylor correct
+        information, she acts on it, and a minor unanticipated consequence results
+        technically satisfies form (c) while functionally operating as "reliable plot
+        device" — which world-notes.md explicitly prohibits ("If it becomes a reliable
+        plot device, competence-over-theme concern reactivates" per 1b Batch A literary-
+        snob carry-forward). The card's positive formulation does not include the
+        literary-snob carry-forward's "reliable plot device" prohibition. The prohibition
+        is in the hard-fences section (Rule 7) but Rule 7 as stated addresses "reliable
+        information without interpretive cost" and "distinguishing correct from misfire"
+        — not "using the flicker as a de facto navigation tool across multiple scenes."
+      criteria: null
+
+    - id: finding-021
+      type: flag
+      what: >
+        cond-patron-amplification-theory-mirror.card.md § Binding Constraint states:
+        "The patron does not say 'I believe dragon-proximity amplifies your flicker'
+        directly; they simply arrange things as if this is true."
+        The Interaction Notes with the patron's persona card state: "The patron's voice
+        and behavior in scenes must be consistent with the theory being an unexamined
+        working assumption, not a stated proposition."
+        The Auditor Use note states: "Any scene where the patron explicitly names the
+        amplification theory as a belief proposition and affirms it is a mild redundancy
+        but not a violation." This is a slight loosening from the binding constraint:
+        the binding constraint says the theory is not stated; the auditor note says
+        explicit naming is "mild redundancy but not a violation."
+      why: >
+        The auditor-use note creates a small internal tension: the behavioral rule
+        (theory is an unexamined structural assumption, not articulated) and the auditor
+        exception (explicit naming-and-affirming is tolerated as "mild redundancy") sit
+        slightly in tension. An impersonator writing the patron's dialogue could read the
+        auditor note as permission for the patron to articulate the theory explicitly
+        during alignment, and justify it via the "mild redundancy" exception. This does
+        not violate the binding constraint (which prohibits explicit acknowledgment that
+        the theory is WRONG, not articulation that it exists), but it is in tension with
+        the behavioral rule that the theory is never stated as a proposition. The
+        distinction between "stating the theory" and "questioning the theory" is load-
+        bearing for the character's performance, and the current wording could blur it.
+      criteria: null
+
+    - id: finding-022
+      type: flag
+      what: >
+        cond-series-tone-mirror.card.md § Prohibited Registers (body) states:
+        "Sentimentality: The body's close-third does not dwell in feeling. Emotional
+        honesty is present; sentimentality ... is prohibited." The § Tonal Exemptions
+        section (Single-Book Scope Implications) states: "minor tonal variance within
+        the register ... is permitted as long as the register's core characteristics
+        (compression, tactical, not sentimental) are maintained."
+        This is not a contradiction — the exemption is for variance within the register
+        (quieter scene vs action sequence), not for sentimentality. However, the
+        phrasing "minor tonal variance" without a concrete example creates a drift
+        surface: an agent authoring a quiet scene (e.g., Taylor with the cost-bearer
+        child before the bad act) might read "minor tonal variance" as permission for
+        emotional warmth that technically qualifies as sentimentality.
+      why: >
+        The cost-bearer child (Lyra) scenes are the highest sentimentality-risk scenes
+        in the novel. The body register prohibits sentimentality, and world-notes.md
+        explicitly prohibits "pathos-scene" rendering of the cost-bearer's death. But the
+        approach scenes (Taylor with Lyra before the bad act) are not governed by the
+        death-rendering prohibition — only the death itself is specified as "lands cold."
+        The approach scenes could drift warm under "minor tonal variance" without a
+        specific prohibition. The card does not enumerate the Lyra approach scenes as
+        a high-sentimentality-risk context requiring explicit discipline. Low-to-medium
+        drift risk.
+      criteria: null
+
+    - id: finding-023
+      type: flag
+      what: >
+        cond-flicker-discipline-mirror.card.md Interaction Notes § Close-Third Interiority
+        states: "The body text must never give the reader more certainty about the
+        flicker's accuracy than Taylor has." This is a correct and important constraint.
+        However, no card in the set explicitly addresses the reader-irony mechanic at the
+        episode level: the reader with ASOIAF foreknowledge can identify the wrong rider
+        from narrative context before Taylor does. The constraint is that Taylor's
+        close-third must not tip certainty; it does not prohibit structural clues that
+        allow the ASOIAF-literate reader to read ahead of Taylor.
+        The concern is not a fault in the flicker-discipline card but in the absence of
+        a card that governs the dramatic-irony management at the information-layer level.
+        The series-tone card addresses the register but not the dramatic-irony information
+        architecture specifically.
+      why: >
+        The story's irony engine (ASOIAF reader sees the Dance coming, Taylor does not)
+        is named in world-notes.md as "the engine of dramatic irony" and the "load-bearing
+        mechanism." The condition card set covers tone, flicker, access, and faction physics,
+        but does not contain a card governing what structural-dramatic-irony management
+        rules apply for the impersonator and coach: how much contextual information about
+        faction mechanics is permitted in Taylor's close-third interiority before it
+        becomes more-than-Taylor-knows, and how the ASOIAF-literate irony is balanced
+        against the Worm-literate reader's perspective. This is a coverage gap at the
+        condition-card level, though it may be addressed in the persona card for Taylor.
+        Flagged, not faulted, because the existing cards are not wrong — there is no
+        card in the set that covers this, which is a gap rather than a contradiction.
+      criteria: null
+
+    # ── SUMMARY ──────────────────────────────────────────────────────────────
+
+    - id: finding-024
+      type: pass
+      what: >
+        Internal consistency check — contradiction scan across all 12 cards.
+        Specific pairs checked:
+        cond-flicker-discipline-mirror vs cond-patron-amplification-theory-mirror
+        (Rule 4 vs patron's theory — confirmed consistent: card correctly records theory
+        as wrong, flicker card records correct account);
+        cond-dragon-bonding-claiming-rules vs cond-dance-faction-state-previserys
+        (claiming mechanics vs faction dragon inventory — consistent);
+        cond-smallfolk-court-access-mirror vs cond-flea-bottom-social-physics
+        (access chain vs district physics — consistent, no overlap violation);
+        cond-kl-feudal-physics-mirror vs cond-kl-witch-label-formation
+        (institutional architecture vs label escalation — consistent);
+        cond-series-tone-mirror vs cond-flicker-discipline-mirror
+        (POV constraint vs flicker render rule — consistent, both require close-third
+        and both prohibit reader having more certainty than Taylor).
+      why: No contradictions found between any pair of cards in the set.
 ```
+
+---
+
+## Finding Summary
+
+| ID | Type | Domain |
+|----|------|--------|
+| finding-001 | pass (reclassified) | schema compliance — library scope |
+| finding-002 | fault | dangling references: cond-westerosi-customary-authority-jaehaerys, cond-suppression-policy-progression (cond-feudal-hierarchy-law) |
+| finding-003 | fault | dangling reference (same card) + named-character contamination from Riverlands prior project (cond-smallfolk-political-physics) |
+| finding-004 | fault | references: field misuse — should use supersedes: not references: (cond-kl-witch-label-formation) |
+| finding-005 | fault | dangling reference (cond-no-parahuman-infrastructure) + body-text supersession claim without frontmatter structure (cond-shard-deposit-mechanics-mirror) |
+| finding-006 | flag | slug variant ambiguity: -125ac vs -jaehaerys, possible dangling reference |
+| finding-007 | pass | flicker discipline binding rules — fully covered |
+| finding-008 | pass | two-register architecture binding rules — fully covered |
+| finding-009 | pass | chronicler counterfactual demand — fully covered |
+| finding-010 | pass | dragon-claiming canon-adherence — fully covered |
+| finding-011 | pass | patron wrong-theory binding constraint — fully covered |
+| finding-012 | pass | causal chain unambiguity — fully covered |
+| finding-013 | pass | cost-bearer death rendered cold — fully covered |
+| finding-014 | pass | no parahuman support structure — fully covered |
+| finding-015 | fault | period and geography mismatch: cond-feudal-hierarchy-law Riverlands 84-101 AC in KL 125 AC project — drift surface in auditor-use guidance |
+| finding-016 | flag | Rhaenys Black-faction alignment conditionally hedged in faction card after cast is decided |
+| finding-017 | flag | pivot dragon (Silverwing) not named in either dragon-mechanics card; 1c-log is sole authority |
+| finding-018 | flag | Dragonpit consultation framed as routine in access card vs escalated-protocol in patron card |
+| finding-019 | pass | all five binding constraints have card coverage |
+| finding-020 | flag | flicker cost Rule 3 form (c) could be read as permitting de facto reliable-plot-device use |
+| finding-021 | flag | patron explicit-naming auditor-exception creates slight tension with behavioral rule |
+| finding-022 | flag | "minor tonal variance" exemption in tone card is a sentimentality drift surface for Lyra scenes |
+| finding-023 | flag | no card explicitly governs dramatic-irony information architecture (ASOIAF-literate reader vs Taylor's POV) |
+| finding-024 | pass | internal consistency — no contradictions found across all 12 cards |
+
+**HARD findings (fault): 5** — findings 002, 003, 004, 005, 015
+**SOFT findings (flag): 7** — findings 006, 016, 017, 018, 020, 021, 022, 023
+**SIGNAL findings: 0**
+**PASS findings: 11**
