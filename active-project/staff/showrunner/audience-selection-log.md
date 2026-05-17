@@ -1,14 +1,12 @@
-# Audience Selection Log
-
 ## Audience selection
-brief axes: Worm/ASOIAF crossover with heavy canon weight from both sides (post-Khepri Taylor + pre-Dance King's Landing); grimdark register with sustained moral consequence; thematic spine ("road to hell paved with good intentions") that wants meaning-tracking; compressed one-book tragedy of competence; character-interior horror against macro-political stakes.
+brief axes: Worm-canon character (Taylor Hebert, post Gold Morning) — parahuman mechanics and post-apocalypse psychology are load-bearing. ASOIAF/Westeros setting before Dance of Dragons — grimdark register, feudal political physics, dragons-as-WMD, no parahuman ecosystem. Historical-irony tragedy story-type with explicit road-to-hell theme — voice, irony, and earned-consequence are central. One-book closed arc.
 
 selected:
-  - worm-canon-pedant: covers source-material/power-mechanics axis — Taylor post-Khepri carries enormous Worm-canon weight (her power presentation, her psychology, what she will and will not do); this is the strictest possible reader for keeping that authentic.
-  - dark-fantasy-reader: covers grimdark / earned-consequence / world-weight axis — Westeros at pre-Dance + Taylor's atrocity history demand a reader who can sit with bleakness when it is honest and who will reject cheap grimness or unearned suffering.
-  - literary-snob: covers voice / theme / meaning axis — the "road to hell" theme is structural and the foreclosure-of-good-outcomes shape is theme-first; the prose must carry this and the reader must be tracking it.
+  - worm-canon-pedant: Worm canon and Taylor's parahuman state at post-Gold-Morning are central source-material commitments; this reader catches power-mechanic drift and protagonist-state inconsistency the other readers can't.
+  - dark-fantasy-reader: Westeros baseline is grimdark; the road-to-hell tragedy requires earned consequence with no narrative bailout; this reader patrols the bleakness-must-be-honest axis and rejects unearned darkness or unearned reprieve.
+  - literary-snob: historical-irony tragedy lives or dies on voice and meaning — the gap between what Taylor believes and what the reader sees has to land in prose, not just plot; this reader covers the meaning/voice/theme axis.
 
 rejected:
-  - cape-fic-reader: solid character-stakes reader but overlaps heavily with worm-canon-pedant on parahuman-specific axes; worm-canon-pedant is the stricter, more material-specific match here.
-  - pulp-enthusiast: a tragedy of competence is not paced as escalation-pulp; pulp reader axis would misread the structural deceleration into catastrophe.
-  - dramatist (other stubs): not full personas; the three full personas above already cover the three most load-bearing axes for this brief without forcing a stub expansion.
+  - cape-fic-reader: worm-canon-pedant is more precise for this Worm-anchored brief; cape-fic-reader's general-cape-fiction patterns are redundant.
+  - pulp-enthusiast: this is not a momentum-first story; tragedy structure demands patience and accumulation, not escalation per scene.
+  - stubs not selected — all stubs would require expansion before use, and the three full personas above cover the required axes.

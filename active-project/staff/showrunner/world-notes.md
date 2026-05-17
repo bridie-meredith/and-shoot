@@ -1,92 +1,62 @@
 # World Notes — Decided Constraints
-# Internal. Written in step 1a. One constraint per line. Law/Lore/Behavior prefix where applicable.
+# Seeded at 1a from prompt-binding.md. One constraint per line. Source annotation in brackets.
 
-## Source-fact constraints (binding from the brief)
+## Protagonist
+- Protagonist is Taylor Hebert. [boundary]
+- Protagonist condition at story-open: post Gold Morning — carrying the Worm-canon endgame state (apocalypse-survivor, escalation-trained, post-trauma). [boundary]
+- Protagonist characterization: zealot-of-prevention — vow to prevent another Gold Morning is the load-bearing cause-chain that makes each bad act locally defensible. [taste-judge Phase 1.5]
 
-LORE: Setting is Westeros, King's Landing, in the late reign of Viserys I — calendar-year window 125–129 AC, "before the Dance of the Dragons." The Dance is a coming event, not an active war at story open.
-LORE: Protagonist is Taylor Hebert, displaced from Earth-Bet after Gold Morning. Post-Khepri. Age ~19. She broke an extra-dimensional god by hijacking every parahuman on Earth; she is the survivor of an extinction-level event that she partly authored.
-LORE: Westeros physics. Dragons exist and are bonded political weapons. Magic is rare, ambiguous, and read by ordinary people as miracle or witchcraft. The Faith of the Seven is the establishment religion in King's Landing; the Red Keep is the political center; smallfolk number in the hundreds of thousands and live as substrate, not citizens.
-LAW: Earth-Bet does not intrude. No portals open, no other capes appear, no Tinker tech is at hand. Taylor is alone with what she brought in her body.
-LAW: Westerosi cruelty is the local register and is not narratively flagged as anomaly. Chattel-smallfolk, dynastic warfare, dragonfire-as-policy, judicial torture — these are weather, not events.
-LAW: The book is one series, one arc, one closing. No sequel hook. The ending must adjudicate the road-to-hell pattern.
+## Setting / world physics
+- Lore: Start-location is King's Landing, Westeros. [boundary]
+- Lore: Time-period is before the Dance of the Dragons — Targaryen era, dragons extant, civil war pending and historically inevitable. [boundary]
+- Law: ASOIAF Westeros physics — magic scarce, dragons real, no parahuman ecosystem. Taylor is a foreign-physics intrusion. [boundary]
+- Law: No parahuman support structure exists in Westeros — no Contessa, Dragon, Cauldron, or Worm-context peer who can read what Taylor is. Her errors cannot be corrected by a system that understands her. [boundary, derived]
 
-## Theme (binding)
+## Theme and end-requirement
+- Thematic spine: road to hell is paved with good intentions; protagonist commits bad acts for good reasons, consequences invert the good. [boundary]
+- End-requirement (causation, FIXED): protagonist's own choices, made in good faith, produce the bad outcome. [boundary]
+- End-state valence (OPEN): bad-place / ambiguous-place / pyrrhic-good. End-state-causation is fixed; end-state coordinates are not. [boundary; deferred to OQ]
 
-THEME: Road to hell is paved with good intentions. Taylor does bad things for good reasons that later turn out to be bad. The shape is foreclosure — each defensible choice closes off a better outcome that was still possible. The book's verdict is the final state.
+## Story-type
+- Story-type: historical-irony tragedy. Reader foreknowledge of the Dance is the engine of dramatic irony; the gap between what Taylor believes she is preventing and what the reader sees she is producing is the load-bearing mechanism. [taste-judge Phase 1.5]
 
-## Character-physics constraints (derived, binding)
+## Archetype roster (decided facts, not OQs)
+- Foil: true innocent untouched by apocalypse-logic. [taste-judge Phase 1.5]
+- False-ally: Targaryen patron whose interests align with Taylor's until they don't; collision-not-betrayal. [taste-judge Phase 1.5]
+- True-ally: single low-status loyalist whose loyalty is the cost-bearer. [taste-judge Phase 1.5]
+- Antagonist-as-person: ultimately Taylor herself; the climactic recognition is the protagonist as her own antagonist. [taste-judge Phase 1.5]
+- Antagonist-as-institution: the inevitability of the Dance. [taste-judge Phase 1.5]
+- Victim-by-which-cost-is-paid: a named innocent in Taylor's care. [taste-judge Phase 1.5]
+- Witness: a maester-chronicler whose in-world framing closes the dramatic-irony loop. [taste-judge Phase 1.5]
+- Opposite-number: a true-believer who acts badly for good reasons and is proven right. [taste-judge Phase 1.5]
 
-BEHAVIOR: Taylor's power presents as ambient-not-directed when she has it. Insect awareness is closer to peripheral vision than active surveillance. She knows without choosing to know.
-BEHAVIOR: Taylor reaches for the lever that works when the alternative is watching people die. This is reflex, not malice. The story relies on this reflex being legible to the reader.
-BEHAVIOR: Taylor carries Khepri-weight. She has done atrocity at scale and filed it as necessary. Every key her vibe-cloud activates is shaped by that history. She is not the Skitter-era Taylor and the prose must not write her as if she were.
-BEHAVIOR: Taylor is grief-shaped — father dead, team gone, mission gone, identity revised three times. She forms attachment to individuals and to a street, and those attachments are the load-bearing structure of her bad decisions.
+## Format
+- One-book series — single closed arc, novel-scale, not season-stretched. [boundary]
 
-## Resolved open questions
+## Taylor's setup state (resolved 1b Batch A — Bundle C)
+- Lore: Mechanism of arrival is Shard-mediated involuntary deposit — a dying Shard fragment carrying residual Worm-logic deposited Taylor as a byproduct of its own death-process. [1b]
+- Behavior: Power state = altered by transit. Queen Administrator is gone; swarm-control is gone. Taylor has an involuntary precognitive flicker: brief, uncontrollable, fragmentary glimpses of near-future states. Unreliable. Unverifiable. [1b]
+- Behavior: Flicker discipline (carry-forward, BINDING) — flicker is involuntary, unreliable, and must cost. Any reliable deployment is a lore-leak. Any scene where flicker confirms her good intentions is cost-evasion. Each glimpse must cost something interpretive, not just informational. [1b carry-forward, audience-triad]
+- Lore: Time of arrival relative to story-open = just-arrived. Weeks at most. Disoriented and still calibrating. [1b]
+- Lore: Knowledge state = selectively prescient. She recognizes pre-catastrophe structural patterns from Gold Morning (escalating succession instability reads like pre-Scion political fracture to her). She has NO canon ASOIAF knowledge — no Dance specifics, no Targaryen factions named, no timeline. She is working from analogy, not memory. [1b]
 
-LAW (OQ-1 resolved): Taylor arrives with her insect-control intact but spatially range-capped to approximately one city block. Khepri-vector is inert (no parahumans exist in Planetos). She knows without choosing to know within her cap, and not at all outside it. The cap is a physical constant of her condition in this world, not a plot brake — the prose treats it as fact, not contrivance. This is an AU divergence from canon shard behavior; the divergence must be legible in the text (named, observed, or acknowledged) and not silently elided. The cap is the structural enforcer of the foreclosure theme: it forces Taylor to use people as reach-extenders, and that use is the foreclosure mechanism.
+## Taylor's political position (resolved 1b Batch B — Bundle 2 revised)
+- Lore: Political position at story-open = SUSPECTED WITCH at the margins of Flea Bottom. Arrived weeks ago with nothing; survived on Gold-Morning resourcefulness; has acquired a reputation for knowing things she should not. Low-status, zero institutional access at start, but visible enough from above to be noticed. [1b]
+- Lore: Targaryen-faction proximity = BLACK FACTION. The false-ally Targaryen patron is Rhaenyra-adjacent (NOT Rhaenyra herself) and reaches down to Taylor as a prophetic asset. Timing of story-open: Viserys I's declining court, factions forming. [1b]
+- Lore: The patron's interest in Taylor is built on a MISTAKEN theory — they believe dragon-proximity amplifies Taylor's flicker. This theory is wrong; the flicker remains involuntary and unreliable, and near a dragon it costs Taylor (Gold-Morning trauma trigger; interpretive cost, not informational gain). The patron misreads Taylor's reaction-intensity as proof of their amplification theory. [1b]
+- Behavior: The false-ally arc — patron's alignment with Taylor is genuine through mid-structure (both want to prevent war). Divergence arrives when their prevention-conclusions become mutually exclusive. The patron's wrong-theory-of-Taylor is the structural seam where the collision lives. [1b]
+- Behavior (binding): Dragon involvement is CENTRAL to the bad act. The bad act is dragon-adjacent (intervenes on a dragon's bonding-fate as a WMD-proliferation problem). The intervention is committed on a flicker misfire interpreted through Gold-Morning lens. [1b — bad-act specifics belong to Batch C; this records structural commitment only]
 
-LORE (OQ-2 resolved): Taylor's arrival is mid-catastrophe — a market fire near Dragon Gate, the eastern landward entrance to King's Landing. She arrives disoriented in open ground; the insects of the block respond to her distress without her directing them (flies and beetles lift visibly toward the heat). Three gold cloaks on riot-control see; a septon shouts "witch." She is held overnight in the Dragon Gate guardhouse, questioned in Old Valyrian she does not speak, released the next morning as "lunatic-not-worth-paperwork" on a Gold Cloak captain's word.
+## Plot spine (resolved 1b Batch C — Bundle 3, mirror-tragedy)
+- Plot: The load-bearing bad act = Taylor KILLS the destined bonder of a dragon she reads as the Dance's first strike. The destined bonder is a young Targaryen who is the story's OPPOSITE-NUMBER (true-believer who acts badly for good reasons and would have been proven right). [1b]
+- Plot: Taylor's flicker showed her the dragon above a burning city with its rider's silhouette. She interprets this as removal of the match from the powder keg. She is right about the dragon being dangerous; wrong about which rider is the problem. [1b]
+- Plot: The "later turns out to be bad" mechanism = the dead opposite-number leaves a power vacuum. The unbonded dragon is claimed by the faction's WORST available bonder — the rider the dead opposite-number was actively preventing from rising. Taylor's prevention produces the EXACT configuration she saw in the flicker, with a different rider. [1b]
+- Plot: The Dance is BACKDROP. The story closes at the moment of recognition. Chronicler frame arrives in closing pages as confirmation. The Dance is already beginning in the distance; the story does not follow it in. [1b]
+- Lore (binding): The wrong-rider claiming mechanic must hold to ASOIAF dragon-claiming lore — unbonded dragon post-bonder-death is unmoored; claiming-windows exist in the Dance period. No invented dragon-bonding rules. [1b carry-forward]
+- Behavior (binding): The causal chain from Taylor's kill → wrong-rider outcome must be UNAMBIGUOUS in the rendered story. Ambient-chaos readings are cost-evasion. [1b carry-forward]
+- Behavior (binding): The chronicler frame MUST name the opposite-number's counterfactual EXPLICITLY in the closing pages. That naming is the structural load-bearer of the moral register. [1b carry-forward]
+- Plot: The patron-collision lands MID-STRUCTURE when the unbonding's consequences diverge from what the patron expected — BEFORE the climax. The climax belongs to Taylor's recognition, not the patron's betrayal. [1b]
+- Plot: The opposite-number must be VISIBLE on-page enough that the chronicler's later naming of their counterfactual lands. The reader must have met them; retrospective mirroring is structural intent but cannot be ONLY retrospective. [1b carry-forward]
 
-LAW (OQ-2 resolved): Taylor's operational territory is the Dragon Gate market-and-gate block — merchants, travelers, dockyard-edge traffic, and the City Watch. Not Flea Bottom; not the Red Keep proper. The block is mixed-class, gate-adjacent, and surveilled-from-above by the Watch as a matter of routine.
-
-LAW (OQ-2 resolved): Taylor's identity-handle in King's Landing is "the lunatic woman near Dragon Gate, the one the septon called a witch." This label is permanent operational infrastructure. She cannot correct it without disclosing what she actually is, and any disclosure forecloses the leverage the misread provides. She is filed as foreign (does not speak Westerosi cleanly), possibly mad, possibly cursed, and not currently worth the Watch's paperwork — a status that can be revoked.
-
-LORE (OQ-3 resolved): Taylor arrives King's Landing in late summer 126 AC. The book covers the three-year window from arrival to the opening of the Dance of the Dragons (129 AC). Viserys I dies near the book's back end (~month 36); his death is off-page or registered as news-from-the-Keep, not as a dramatized hinge. The book closes at the first irrecoverable street-level atrocity, which is the direct consequence of Taylor's wrong pivot compounded by the political collapse she cannot reach.
-
-LAW (OQ-3 resolved): The book is back-loaded in compression. Act 1 (months 1–12, ~126–127 AC) is grief-recovery, block-network seeding, operational groundwork — granular hostility is already present (neighborhood distrust, Watch indifference, septon's outsider-language) but Taylor cannot yet read what the friction means. The calm of Act 1 belongs to her perception, not to the world. Act 2 (months 13–26, ~127–128 AC) is the period when faction temperature bleeds into street-level operations; the cost-per-intervention rises each quarter; her block-network meets loyalty-splits her earlier groundwork didn't map; Watch cooperation becomes contingent and transactional. Operational resistance accumulates as terrain-tightening — pressure earned, not announced. Act 3 (months 27–36, ~128–129 AC) opens with the last viable pivot available under accumulated weight; Taylor takes the pivot badly (from the logic of everything built before, not from ignorance); the pivot closes wrong by month 28–29; Viserys's off-page death follows in the back end of Act 3, the war begins, and the book closes on the consequent atrocity.
-
-LAW (OQ-3 resolved, dramatist condition): Act 2 must contain one explicit RECOGNITION-FAILURE BEAT — a scene where Taylor acts on her old model of the city and pays a named irreversible cost. This beat is the mechanical spine of the back-loaded accumulation. Without it the Act 2 pressure is atmospheric rather than dramatic. The beat's location, scale, and irreversibility are open — its existence is binding.
-
-LORE (OQ-4 resolved): Taylor's first faction-gravity is Watch-track. The Captain of the Dragon Gate precinct — the gold cloak captain who signed her overnight release as "lunatic-not-worth-paperwork" — is her first patron. He releases her not from mercy but because a witch-labeled foreign lunatic is a low-cost, deniable sensor-node for ward-level disturbances his officers either miss or report upward in ways that cost him politically. His promotions came through Hightower-controlled channels. He is Green-adjacent at one remove — undeclared, undocumented, but real — and he serves a commander who serves the Hand's patronage network.
-
-LAW (OQ-4 resolved): Taylor does not sell allegiance to the captain. She builds. The Act 1 block-network she seeds in good faith is constructed on the captain's institutional cover; the moment faction lines harden in Act 2, that network IS Green intelligence infrastructure — not because she ever chose Green, but because she built on the captain's foundation. This is the structural foreclosure: she had no agency to choose faction, and the patronage architecture she could not see from inside her block-cap claimed her network before she knew faction-loyalty existed as a category.
-
-LAW (OQ-4 resolved, fusion with OQ-3 condition): The required Act 2 recognition-failure beat is mechanically downstream of the captain-patronage. The beat takes this shape: Taylor acts on her Act-1 model (network is hers, Watch is tolerant, faction is upstream-not-relevant), the captain's Green-infrastructure dependency is activated by a hardening faction event, and a Black-adjacent contact Taylor vouched for is exposed and burned by her own network's data flowing upward through the captain. The named irreversible cost is the specific person burned. The mechanical spine of the back-loaded accumulation is: Taylor builds, the captain harvests, Taylor does not see the harvest until the cost lands.
-
-LAW (OQ-4 resolved, vibe-cloud consequence): Taylor's social handle is "the one the captain lets alone." This is a real but thin protection — read by the block's petty merchants as minimal endorsement that elevates her half-step above "the witch they haven't moved on yet." Her power presentation must remain ambient-not-directed throughout; the captain never witnesses a demonstration. The witch-label is not rescinded by his tolerance — it is layered.
-
-BEHAVIOR (OQ-5 resolved, operational model): Taylor's working self-model is "speaking the patron's dialect" — the operational belief that a true report delivered in the wrong register goes unheard, so calibrating register is service-to-accuracy, not distortion. This model treats patron categories (Watch riot-risk, guild stability-risk, steward sedition-risk, Watch persons-risk) as NEUTRAL TRANSMISSION CHANNELS rather than as ENFORCEMENT MECHANISMS WITH THEIR OWN MOMENTUM. The model is binding and operational — it is what she does, not what she thinks about doing. She does not name it as framing.
-
-LAW (OQ-5 resolved, six-rung ladder): The book contains a 6-rung ladder of bad-things-for-good-reasons, each using the same operational logic (frame-true-for-effect / patron's-dialect) but varying target, scale, and patron-channel. The ladder is binding:
-  Rung 1 (M4, seed): Tanner's apprentice's grain-watering framed as riot-risk (not illness) to the Watch captain. Small clean success.
-  Rung 2 (M9–10): Merchant short-weight framed as guild-stability risk (not fraud) to the guild liaison. Merchant fined; buyers see partial restitution.
-  Rung 3 (M14–15, REQUIRED ENFORCEMENT-OVERSHOOT BEAT): Dockworker slowdown framed as sedition-adjacent (not wage-dispute) to a lord's steward. Slowdown ends. Workers receive nothing. Taylor blames the steward's category limits, not her own framing. This rung MUST plant the patron-enforcement-overshoot mechanism in deniable form — the seed of the M27–28 Watch sweep.
-  Rung 4 (M18–19, Mira rung): A smuggling rumor about a Black-adjacent contact framed in Watch-risk language to Mira (Taylor's genuine attachment). Smuggling is real; Mira acts at Watch level; contact protected off-record. Taylor sees the model "working" on someone she cares about. Mira must be credibly established in prose before this rung — delivery obligation.
-  Rung 5 (M24): Unlicensed physician's treatment-practice framed as poisoning-risk (not unlicensed-practice) to a guild auditor for records access. Physician suspended pending review.
-  Rung 6 (M27–28, RECOGNITION-FAILURE BEAT): A Black-adjacent contact's border-crossing pattern framed as smuggling-of-persons-risk to a Watch officer for record-review access. Contact detained. The detention itself, operating inside Watch-persons-risk protocols, triggers an escalation Taylor did not author and cannot interrupt. Contact killed in custody during a wider Watch sweep of persons-risk detainees. THE NAMED IRREVERSIBLE COST is the specific contact's death.
-
-LAW (OQ-5 resolved, model falsification — interior only): At Rung 6, Taylor's interior must register the collapse of "speaking the patron's dialect" — the felt break, the moment "something has gone wrong that my dialect cannot name." The prose MUST NOT articulate the meta-statement "her reports were heard as authorizations, not calibrations." That recognition is reader-inference from the 6-rung consequence chain. This is non-negotiable per literary-snob (theme-as-structure not theme-as-statement) and is the discipline that distinguishes this book from didactic tragedy.
-
-LAW (OQ-5 resolved, the wrong pivot at M27–28): Rung 6 IS the wrong pivot that closes the last viable choice. Taylor took this rung BECAUSE the model worked at Rung 4 (Mira). The pivot was available — she could have used a different patron-channel (the Faith, the foreign merchant, the dockyard guild) or could have not pursued the border-crossing intelligence at all. She did not see the pivot as a pivot because the model told her this was just another rung. The foreclosure is structural: the model that built her network is the model that kills her contact.
-
-LORE (OQ-6 resolved): The book closes on Taylor dead in the Dragon Gate Watch guardhouse. Sequence: the contact killed in custody at Rung 6 names Taylor as his source before dying. The Watch officer running the persons-risk sweep is Green-adjacent via the captain's network. The captain, calculating that a foreign-lunatic-with-insect-witchcraft now attached to persons-risk intelligence is a liability rather than an asset, signs the paperwork. Taylor is arrested three days after the contact's death and detained under the persons-risk protocols her own ladder helped construct. She dies in the Watch guardhouse — not executed, not martyred, processed. Viserys is dead off-page; the war has begun off-page; her paperwork reflects the new regime's intake numbers as administrative realignment.
-
-LAW (OQ-6 resolved, the final image): The book's last image is Taylor's own insects, range-capped to the block, registering no movement inside the building she is in. The image is external, observational, silent. The surveillance apparatus she built outlives her by minutes and reports back faithfully on her own disappearance. The shard does not mourn — it counts. The mode of death is bureaucratic, not dramatic.
-
-LAW (OQ-6 resolved, structural shape): The closing-shape is foreclosure-pure. The mechanism Taylor built — patron-dialect, framing-true-for-effect, Watch persons-risk infrastructure — runs correctly on her. The world's verdict, not Taylor's, is at the final image. Taylor is absent from the terminus as a subject. This is the structurally honest shape for road-to-hell-paved-with-good-intentions: she does not understand, does not choose, does not register the moral; she is processed.
-
-LAW (OQ-6 resolved, binding execution obligation): The insect-ambient-register must be a consistent prose mechanism FROM EARLY in the book. The closing image of range-capped insects registering Taylor's own stillness must be EARNED by prior use of the insect-register as the operational mode of her perception — not introduced at the terminus as a device. Tracked through screen-writer and shoot stages.
-
-LORE (OQ-7 resolved): The book carries 9 named recurring characters and at most 1 canon glimpse. Named recurring (binding cast):
-  1. Taylor Hebert (POV).
-  2. The Captain of the Dragon Gate precinct — Taylor's Watch-track patron. Opaque throughout. Readable through institutional behavior only, never interiority. Signs her release at arrival (OQ-2); signs her death-paperwork at close (OQ-6).
-  3. Mira — rope-braider, Dragon Gate block resident, Taylor's genuine attachment. The Rung-4 (M18–19) anchor. Established credibly in prose well before her rung. Her death in the Watch persons-risk sweep expansion is ON-PAGE in late Act 3.
-  4. The Black-adjacent contact (Rung 6, M27–28) — named, on-page enough that his burning lands. NO interiority. Last hours rendered externally via Taylor's insect-ambient-register and second-hand Watch procedure.
-  5. The Watch officer running the M27–28 persons-risk sweep — immediate-cause actor of the kill chain.
-  6. The Rung-3 steward at M14–15 — named for cross-scene tracking. Gets ONE moment of visible calculation rendered as behavior; the visible decision is what carries causal weight, the name is bookkeeping. Recurs through Act 2 as the throughline of the patron-enforcement-overshoot mechanism that seeds the M27–28 sweep.
-  7. The Dragon Gate ward septon — the one who shouted "witch" at arrival. Low-frequency: arrival, one mid-book hostility beat, absent from close.
-  8. One lateral block-fixture (a stall-holder or dockside water-carrier) — non-operational ambient presence. Exists laterally to the ladder. Their continued undamaged existence underscores what Taylor's network does not protect. World-going-on-without-Taylor, NOT community-Taylor-is-part-of.
-  9. The contact's business-partner — appears in the Rung 4 (M18–19) context, named, ABSENT from Rung 6. The absence is the cost.
-
-LAW (OQ-7 resolved, canon presence): At most one canon glimpse. The Hand's carriage passes once through the Dragon Gate in Act 2, identifiable by sigil, neither stopping nor acknowledging. Viserys I's death is registered as a street-crier announcement. Aegon II's proclamation, if heard at all in the closing, is ambient. No canonical figure speaks on-page.
-
-LAW (OQ-7 resolved, smallfolk-as-substrate): No named family for Mira or the Black-adjacent contact. The Rung-1 tanner's apprentice, Rung-2 merchant + guild liaison, Rung-5 unlicensed physician + guild auditor are present as fixtures Taylor moves through; they are unnamed or named only at the function-tag level (role-tag, not personal-name). The block is hostile-and-indifferent, not soft-and-adopting. The reader holds the world as substrate, not as Taylor's community.
-
-LAW (OQ-7 resolved, antagonist-shape): The book has no human antagonist. The captain is opaque institutional behavior; the steward is a transmitting node; the Watch sweep officer is the immediate-cause actor. The antagonist is the patron-machinery itself — the Watch persons-risk infrastructure plus the Hightower patronage chain plus the Faith-of-the-Seven Green-adjacency — operating through faces whose interiority is closed to Taylor and to the reader. Foreclosure lives in the structure, not in any person's choices.
-
-## Tone / register constraints
-
-TONE: Grimdark with honest weight, not aestheticized cruelty. Bleakness must be earned by causal chains the reader can reconstruct.
-TONE: Tragedy-of-competence pacing — structural deceleration into catastrophe, not pulp escalation. The reader must feel the foreclosure of better outcomes.
-TONE: Interiority is heavy. Court-intrigue exterior, character-horror interior. The book's dread lives between what Taylor sees and what she decides to do about it.
-TONE: No moral narration. The book does not tell the reader what to think about Taylor's choices. The final state is the verdict.
+## Advisory pin (from taste-judge)
+- False-ally's betrayal must land as a mid-structure compounding factor, not as the climactic recognition. Climax belongs to the protagonist-as-antagonist beat. [taste-judge Phase 1.5, advisory]
