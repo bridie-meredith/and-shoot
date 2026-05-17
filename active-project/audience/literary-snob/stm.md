@@ -86,3 +86,12 @@ Screen-writer's Bundle 1 advocacy not sustained.
 
 ### Carry-forward flags
 Propositional-statement flag (NEW, advisory): the series question named in the bridging notes must not appear as an explicit sentence in the coda; the chronicler names the counterfactual, not the theme; theme is the gap, not the statement.
+
+---
+
+## Session: Series Plan Review Attempt 2
+
+### Verdict: ACCEPT
+
+### Carry-forward check
+- Propositional-statement carry-forward: SATISFIED. The near-thesis line ("whether any instrument could have read the difference in time") does not appear in the revised plan. Bridging notes operate entirely in event-sequence language: "The chronicler's counterfactual names where the road forked; the cousin's death is the cost the reader exits on." No propositional statement present. Flag remains active for episode-level prose execution — the chronicler must not voice the theme as a sentence when the coda is written.

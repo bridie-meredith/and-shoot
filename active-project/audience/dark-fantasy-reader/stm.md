@@ -85,3 +85,12 @@ Screen-writer's Bundle 1 advocacy not sustained.
 
 ### Carry-forward flags
 No new flags. All prior carry-forward flags remain active for season-level planning.
+
+---
+
+## Session: Series Plan Review Attempt 2
+
+### Verdict: ACCEPT
+
+### Carry-forward check
+- Cold-landing carry-forward: SATISFIED. S03 sequence is kill → recognition → chronicler coda → cousin's death cold. Recognition is Taylor seeing the confirmation of her error — a cost beat, not a catharsis beat — and it lands before the chronicler closes the register. The closing image is the cousin dying with the wrong dragon above. Pathos is not the exit temperature; the wrong dragon is. Flag not triggered.
