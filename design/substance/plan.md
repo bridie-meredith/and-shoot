@@ -78,29 +78,29 @@ Bake a **declared, measurable, auditable substance contract** into the pipeline 
 [final-edits / polish / ship-ready manuscript: deferred until upstream is proven]
 ```
 
-**Six live commands; three removed; one renamed.**
+**Six live commands; two dropped; one polish-deferred; one renamed. No command is built from scratch — every "new" command is a lift-and-adapt of an existing asset, identified in the Asset reuse map below.**
 
-| command | status | scope |
-|---|---|---|
-| `/and-project` | **overhauled (shrinks)** | Scope + staff binding. No story content. |
-| `/and-series` | **net new** | Series chunk (Star-Wars-style paragraph) + structural prompts (book count, length, cyclical, POV, cross-book continuity, world evolution, series-end shape). |
-| `/and-substance` | **net new, recursive** | Single command body, fires at three invocation levels (`series`/`book`/`chapter`). Authors chunks + substance contracts at the four chunk levels (series, book, chapter, scene). Stops at scene chunks — does NOT decompose scenes into bones and does NOT write bones. |
-| `/and-cast` | **net new** | Cast roster + series-level human audit checkpoint. |
-| `/and-season` | **DROPPED** | Chunking jobs absorbed by `/and-substance`; bone-writing + scene-decomposition jobs absorbed by `/and-write`. |
-| `/and-write` | **renamed + substantively overhauled** (was `/and-protolines`) | NOT a simple rename: input shape changes (was "episode chunk" → now scene chunks with substance contracts from `/and-substance chapter` output), and `/and-write` now owns scene-decomposition (a job the prior plan parked at `/and-substance scene`). New scene-decomposition Phase authors bones-with-deltas from each scene; substance bone-gate verifies per-bone Δ + scene aggregate Δ + cost-paid. Runs five-pass SVO pipeline + decomposition + substance bone-gate. Emits per-chapter bones file. |
-| `/and-review` | **net new** | Universal review primitive with subcommand router. Reviews anything (signature / chunk / contract / bones / facets / prose / cast / consistency / tree / feedback / verdict) on demand. Absorbs `/and-judge-book` (orchestrator-critic) via `verdict <book>` subcommand. |
-| `/and-judge-book` | **DROPPED** | Absorbed by `/and-review verdict <book>`. |
-| `/and-facets` | overhauled (light) | Tensometer facet removed from R1/R2 fanout. Phase 4d scene-map downgrades from derivation to validation (consumes the upstream-emitted scene-map facet from `/and-write` Phase 7). R1 rubric input lists drop tens reads; substance-contract reads substitute where pressure-signal is needed. |
-| `/and-stitch` | overhauled (very light) | Eight-phase pipeline preserved; Phase 0 tensometer-derivation fallback removed as dead code under the new chain. Output is `draft/<chapter>.md` — the deliverable until upstream substance machinery is proven. |
-| `/and-wrap` | **DROPPED** | Wasn't pulling its weight. Polish concerns deferred entirely until upstream chain is working end-to-end. |
+| command | status | scope | primary lift source |
+|---|---|---|---|
+| `/and-project` | **overhauled (shrinks)** | Scope + staff binding. No story content. | current `/and-project.md` Phases 1, 1.5, 1.6, 2 1a/1b/1d |
+| `/and-series` | **extracted + extended** (was inline in `/and-project`) | Series chunk (Star-Wars-style paragraph) + structural prompts (book count, length, cyclical, POV, cross-book continuity, world evolution, series-end shape). | current `/and-project.md` Series Plan section + Phase 3 Present-results (relocated); structural prompts are the only net-new content |
+| `/and-substance` | **generalized + recursive** | Single command body, fires at three invocation levels (`series`/`book`/`chapter`). Authors chunks + substance contracts at the four chunk levels (series, book, chapter, scene). Stops at scene chunks — does NOT decompose scenes into bones and does NOT write bones. | current `/and-season.md` Phase 1 (chunker authoring loop) + Phase 3 (review-sweep dispatch shape); recursion glue + substance-signature authoring + `--cascade` are net-new |
+| `/and-cast` | **extracted + extended** (was inline in `/and-project`) | Cast roster + series-level human audit checkpoint. | current `/and-project.md` Phase 2 1c (cast selection) + Phase 3 (audit checkpoint); margit provisioning logic preserved from current `/and-project` Phase 1; `revise` decommission-routing is net-new |
+| `/and-season` | **DROPPED** | Chunking jobs absorbed by `/and-substance`; bone-writing + scene-decomposition jobs absorbed by `/and-write`. Content lifted in pieces — see Asset reuse map. | n/a (source command) |
+| `/and-write` | **lifted from `/and-protolines-v2` + 2 phases** | Five-pass SVO pipeline lifted verbatim from `/and-protolines-v2`. New Phase 1 scene-decomposition (front-loaded) and new Phase 6 substance bone-gate (replaces v2 Phase 6 persist; persist re-numbered to Phase 7 and extended with scene-map co-emit). Input shape changes (was "episode chunk" → now scene chunks with substance contracts from `/and-substance chapter`). | `/and-protolines-v2.md` Passes 1-5 verbatim; `/and-season.md` Pass S10 bone-gate (lines 460-499) adapted to substance contracts; `/and-season.md` Phase 7 Steps 1-3 (lines 616-676) lifted for flat_id assignment + file emission |
+| `/and-review` | **router + thin wrappers over existing review primitives** | Universal review primitive with subcommand router. Every subcommand body invokes a review primitive that already exists somewhere in the codebase; router is the only originally-authored code. | router is net-new (~80 lines); subcommand bodies are wiring-only over existing primitives — see Asset reuse map for the primitive→subcommand mapping |
+| `/and-judge-book` | **DROPPED** | Absorbed by `/and-review verdict <book>`. Note: `/and-judge-book` was never written as a standalone command; its content lived inside `/and-season.md` Phase 6. The lift target is `/and-season.md` lines 577-609. | n/a (never existed standalone) |
+| `/and-facets` | overhauled (light) | Tensometer facet removed from R1/R2 fanout. Phase 4d scene-map downgrades from derivation to validation (consumes the upstream-emitted scene-map facet from `/and-write` Phase 7). R1 rubric input lists drop tens reads; substance-contract reads substitute where pressure-signal is needed. | current `/and-facets.md` (edit-in-place) |
+| `/and-stitch` | overhauled (very light) | Eight-phase pipeline preserved; Phase 0 tensometer-derivation fallback removed as dead code under the new chain. Output is `draft/<chapter>.md` — the deliverable until upstream substance machinery is proven. | current `/and-stitch.md` (edit-in-place) |
+| `/and-wrap` | **POLISH-DEFERRED** (not dissolved) | Polish concerns deferred entirely until upstream chain is working end-to-end. Command archived intact at `archive/commands/and-wrap-polish-deferred.md` with intent to revive as `/and-review prose` + future polish revival; Phase 2 (8-class auditor pass) and Phase 3 (editor allowed-moves contract + procedure) are the un-defer targets. | n/a (preserved for revival) |
 
-### Why drop /and-judge-book and /and-wrap entirely
+### Why drop /and-judge-book; why polish-defer (not dissolve) /and-wrap
 
-**`/and-judge-book`** existed to fire the orchestrator-critic verdict against a finished book. That's a single review type. `/and-review` is the universal review primitive — folding the verdict into `/and-review verdict <book>` consolidates the review surface. A separate command added a row in the table without separate value.
+**`/and-judge-book`** existed only in draft form (its content lives inside `/and-season.md` Phase 6, lines 577-609). It fires the orchestrator-critic verdict against a finished book — a single review type. `/and-review` is the universal review primitive; folding the verdict into `/and-review verdict <book>` consolidates the review surface. The lift target for `/and-review verdict` is `/and-season.md` Phase 6 verbatim, rescoped to book.
 
-**`/and-wrap`** wasn't pulling its weight. Three phases (audience review, auditor pass, editor pass), but the editor pass produced marginal changes on top of what `/and-stitch`'s Phase 7 (editorial reflection) already did, and the audience+auditor phases were mandatory dispatch cost for a review the user might or might not want at that moment. Dropped outright.
+**`/and-wrap`** wasn't pulling its weight at the moment because its editor pass produced marginal changes on top of `/and-stitch`'s Phase 7 (editorial reflection), and its audience+auditor phases were mandatory dispatch cost for a review the user might or might not want at that moment. Dropped from the live command set, **but archived as `-polish-deferred`, not `-dissolved`** — its Phase 2 (8-class auditor pass: BONE-COVERAGE, DIALOGUE-VERBATIM, EXPOSITION-VERBATIM, NO-INVENTION, CONTINUITY, BLOCKING, SCENE-MAP-RESPECT, EARTH-BET-HARD-FENCE) and its Phase 3 (editor allowed-moves contract + procedure + failure modes) are the future un-defer targets for `/and-review prose <chapter>` and any eventual polish revival. Preserving the spec saves a re-author later.
 
-**Polish / final-edits is deferred entirely as a concern.** The substance overhaul ships when the upstream chain — `/and-project` → `/and-series` → `/and-substance series` → `/and-cast` → `/and-substance` (recursive) → `/and-write` → `/and-facets` → `/and-stitch` — produces a draft that is *substantively right*. Prose polish, cross-chapter percussion, repetition culling across the book, ship-ready manuscript work: all of that waits until the substance machinery is proven. `/and-stitch` is **structurally unchanged** by this overhaul (its eight-phase pipeline shape is preserved; the one narrow mutation is Phase 0 tensometer-fallback removal); `/and-review prose <chapter>` and any prose-focused review subcommands are **deferred**. The chain ends at `draft/<chapter>.md`; that's the deliverable until upstream is trusted.
+**Polish / final-edits is deferred entirely as a concern.** The substance overhaul ships when the upstream chain — `/and-project` → `/and-series` → `/and-substance series` → `/and-cast` → `/and-substance` (recursive) → `/and-write` → `/and-facets` → `/and-stitch` — produces a draft that is *substantively right*. Prose polish, cross-chapter percussion, repetition culling across the book, ship-ready manuscript work: all of that waits until the substance machinery is proven. `/and-stitch` is **structurally unchanged** by this overhaul (its eight-phase pipeline shape is preserved; the one narrow mutation is Phase 0 tensometer-fallback removal); `/and-review prose <chapter>` is **stubbed-deferred** with its un-defer lift target pre-pinned to `/and-wrap.md` Phases 2–3. The chain ends at `draft/<chapter>.md`; that's the deliverable until upstream is trusted.
 
 ### Why drop /and-season entirely
 
@@ -147,6 +147,127 @@ After dissolution, no command body contains the literal word "season."
 
 ---
 
+## Asset reuse map
+
+Every "new" command in the table above is a lift-and-adapt of an existing asset, plus a small named delta. The implementer SHOULD open the source file, copy the relevant section into the new command body, and apply only the listed edits. Writing-from-scratch is reserved for the genuinely-new items called out in the "net new" column.
+
+### `/and-write` (target: `.claude/commands/and-write.md`)
+
+| target phase | lift from | adaptation |
+|---|---|---|
+| Phase 0 — Validate + mode select | `/and-protolines-v2.md` Phase 0 (lines 44-68) | replace "episode chunk" reads with "scene chunks under chapter"; add `revise`/`redo` mode prompt per shared re-run protocol |
+| Phase 1 — Scene-decomposition | **net new** | the only original authoring in this command — decompose each scene chunk into 5-15 bones with per-bone Δ; ~80 lines |
+| Phase 2 — Constraint audit | `/and-protolines-v2.md` Pass 2 (lines 94-116) verbatim | add per-bone Δ well-formedness checks + aggregate-bones-Δ ≈ scene-Δ check (lift verification logic from `/and-season.md` Pass S10) |
+| Phase 3 — Shape (SVO writing) | `/and-protolines-v2.md` Pass 3 (lines 117-139) verbatim | speech-bone licensed-form check unchanged (URI-DIALOGUE-COVERAGE-GATE anchor preserved) |
+| Phase 4 — Trim | `/and-protolines-v2.md` Pass 4 (lines 140-163) verbatim | rationale shifts from "chatter" to "no declared Δ → schema violation"; trim criterion changes but dispatch shape preserved |
+| Phase 5 — Continuity audit | `/and-protolines-v2.md` Pass 5 (lines 164-189) verbatim | no change |
+| Phase 6 — Substance bone-gate | `/and-season.md` Pass S10 bone-gate (lines 460-499) | replace tens-correlation with substance-contract verification (bonefide / per-axis Δ delivery / cost-paid / opposing-force visible) |
+| Phase 7 — Emit + scene-map co-emit | `/and-season.md` Phase 7 Steps 1-3 (lines 616-676) | rescope from season-split-output to per-chapter; add scene-map facet co-emission; lift flat_id assignment logic verbatim |
+
+**Net-new line count for `/and-write`:** ~150 lines (Phase 1 scene-decomposition + Phase 6 substance contract logic + Phase 7 scene-map co-emit). The remainder is verbatim or near-verbatim lift from `/and-protolines-v2` and `/and-season`. Total command size ~350-400 lines, of which ~200-250 are lifts.
+
+### `/and-substance` (target: `.claude/commands/and-substance.md`)
+
+| target phase | lift from | adaptation |
+|---|---|---|
+| Phase 0 — Validate + mode select | shared re-run protocol (`design/substance/rerun-protocol.md`) | reference, not duplicate |
+| Phase 1 — Read parent | `/and-season.md` Phase 1 step 1a (lines 50-64) | generalize "prior season" to "parent chunk at next-higher level" |
+| Phase 2 — Author sub-chunks | `/and-season.md` Phase 1 step 1d (lines 75-84) | generalize "content beats" to "child chunks at this level"; per-level dispatcher table picks the right screen-writer prompt |
+| Phase 3 — Author sub-chunk substance contracts | **net new** | the substance-contract authoring (Δ axes, costs, density target, scene_conflict) is original to this overhaul; ~50 lines |
+| Phase 4 — Level-specific extras | `/and-season.md` Phase 1 step 1c (book drama, lines 71-74) for book level | series level (signature authoring: state axes, anchors, cost ledger, antagonist pressure) is **net new** ~80 lines; chapter level (dramatic_shape + goal) is ~20 net-new lines |
+| Phase 5 — Chunk-quality review | `/and-season.md` Phase 1 step 1e (lines 85-93) + Phase 3 sweep-A pattern (lines 224-302) | lift the fork-then-collate-then-fix-route shape verbatim; parameterize reviewer count by level |
+| Phase 6 — Persist | `/and-season.md` Phase 1 step 1f (lines 94-103) + Phase 5 (lines 527-575) | rescope persistence target from season-plan to chunks-under-current-level in showrunner memory |
+| `--cascade` flag | `/and-protolines-season-v2.md` (per-episode loop pattern) | adapt cross-episode loop to per-child-chunk cascade; checkpoint after each child completes |
+
+**Net-new line count for `/and-substance`:** ~150-180 lines (substance-contract authoring + series-level signature authoring + recursion glue + cascade flag). Remainder ~200 lines is `/and-season` lift. Total ~350-400 lines.
+
+### `/and-series` (target: `.claude/commands/and-series.md`)
+
+| target phase | lift from | adaptation |
+|---|---|---|
+| Phase 0 | shared re-run protocol | reference |
+| Phase 1 — Structural prompts | **net new** | book count, length ranges, cyclical, POV, cross-book continuity, world evolution, series-end shape — original prompts; ~30-50 lines |
+| Phase 2 — Series chunk authoring | `/and-project.md` Series Plan section (the screen-writer-authored prose-paragraph step) | strip out per-season chunk authoring (handled by `/and-substance series` recursively); keep just the series-chunk-paragraph step |
+| Phase 3 — Audience + dramatist review | `/and-project.md` review dispatch in the same section | verbatim |
+| Phase 4 — Persist | `/and-project.md` series-plan persistence step | retarget to `series.chunk` + `series.structure.*` in showrunner memory |
+
+**Net-new line count for `/and-series`:** ~50 lines (structural prompts). Total command ~100-130 lines.
+
+### `/and-cast` (target: `.claude/commands/and-cast.md`)
+
+| target phase | lift from | adaptation |
+|---|---|---|
+| Phase 0 | shared re-run protocol | reference; the `revise`/`redo` decommission-routing is net-new (~25 lines) |
+| Phase 1 — Substance-driven cast brief | `/and-project.md` Phase 2 1c — Candidate menu + cast selection (lines 256-285) | feed brief from `series.chunk` + `series.substance.*` instead of from series plan |
+| Phase 2 — Margit candidate menu | `/and-project.md` Phase 2 1c subsection | verbatim |
+| Phase 3 — Screen-writer selection + dramatist viability | `/and-project.md` Phase 2 1c "Attempt N" subsection (lines 286-289) + dramatist viability check | verbatim |
+| Phase 4 — Margit provisioning | `/and-project.md` Phase 1 step 4 margit-provisioning logic + the cast-side of Phase 2 1c | preserved; fresh-provisioning-for-added-only on `revise` is the documented branch |
+| Phase 5 — Series-level audit checkpoint | `/and-project.md` Phase 3 — Present results (lines 311-342) | rescope checkpoint payload to include signature + per-book Δ + cast (broader than current `/and-project` Phase 3 payload) |
+
+**Net-new line count for `/and-cast`:** ~30 lines (revise/redo decommission-routing + checkpoint-payload extension). Total ~150-180 lines, mostly lift.
+
+### `/and-review` (target: `.claude/commands/and-review.md`)
+
+The router is the only original code. Every subcommand body invokes a primitive that already exists.
+
+| subcommand | primitive source | net-new wiring |
+|---|---|---|
+| `verdict <book-slug>` | `/and-season.md` Phase 6 (lines 577-609) verbatim | rescope target from season to book; Phase 0 abort-conditions list (already enumerated in plan); ~15 lines |
+| `chunk <slug>` | `/and-season.md` Phase 1 step 1e review-dispatch pattern (lines 85-93) | parameterize target slug by chunk-level; ~20 lines |
+| `bone <slug>` | `/and-season.md` Pass S10 bone-gate per-bone check (lines 460-499) | extract per-bone subroutine; ~20 lines |
+| `contract <slug>` | `/and-season.md` Pass S1 constraint audit (lines 307-318) + Pass S3.5 ruleset compliance (lines 369-385) | per-chunk dispatch; ~25 lines |
+| `signature` | `/and-season.md` Phase 3 sweep-A shape pattern at series scope (lines 319-345) | series-only; ~20 lines |
+| `bones <chapter-slug>` | `/and-write.md` Phase 6 substance bone-gate (which itself lifts from S10) | post-hoc re-fire of the same bone-gate; ~15 lines |
+| `facets <chapter-slug>` | `/and-facets.md` R1 fanout per-facet rubric runners | extract into named subroutine; call from both `/and-facets` and `/and-review facets`; ~25 lines wiring |
+| `cast` | `/and-cast.md` Phase 3 dramatist viability check + auditor fork | post-hoc fork; ~15 lines |
+| `consistency [<root>]` | `/and-season.md` Phase 1 step 1g cross-season audit (lines 104-115) | generalize "cross-season" to "cross-level under root"; ~30 lines |
+| `tree [<root>]` | composition of the above subcommands scoped to subtree | dispatch loop; ~25 lines |
+| `feedback <file> [<root>]` | `design/shoot-v2/audience-review-originals-v2.md` workflow | reviewer-with-named-context dispatch; ~25 lines |
+| `prose <chapter-slug>` (STUBBED-DEFERRED) | `/and-wrap.md` Phase 1 (audience review, lines 77-128) + Phase 2 (8-class auditor, lines 129-194) | not implemented in this overhaul; un-defer lift target pre-pinned |
+| router + Phase 0 parse + Phase 1-4 shared shape | **net new** | ~80 lines |
+
+**Net-new line count for `/and-review`:** ~80 (router) + ~10-30 lines × 11 live subcommands ≈ ~280 lines total, of which router is ~80 and the rest is thin wiring. The actual review logic (audience-card forks, dramatist, auditor, orchestrator-critic) is reused infrastructure.
+
+### Shared lifts factored out
+
+Two protocols apply identically to multiple new commands and SHOULD be factored into one design-doc reference rather than re-specified per-command:
+
+| protocol | source | factored to | referenced by |
+|---|---|---|---|
+| Phase 0 re-run protocol (read upstream → check own output → cascade warning → run) | this plan, "Re-runnability" section, steps 1-4 | `design/substance/rerun-protocol.md` (new design doc) | `/and-series`, `/and-substance` (all levels), `/and-cast`, `/and-write`, `/and-review` (idempotent variant) |
+| Staleness-cascade rules (mark-stale / keep-fresh / abort surfacing; staleness-log; warn-not-block on stale parents; verdict-block invalidation) | this plan, "Surfacing — defined" + "Staleness cascade" + "Staleness also invalidates" subsections | `design/substance/staleness-cascade.md` (new design doc) | same five commands + `/and-review verdict` |
+
+Factoring these two protocols cuts roughly ~150 lines of repeated specification across the five new command bodies.
+
+### Existing infrastructure used unchanged
+
+These assets stay exactly as-is — no edit required, no lift needed, the new commands simply call into them:
+
+- `staff/orchestrator-critic/card.md` — consumed by `/and-review verdict`
+- `staff/audience/` 18-persona library + per-project 3-persona selection — consumed by every review dispatch
+- `staff/{showrunner, screen-writer, coach, impersonator, studio, auditor, fixer, margit, dramatist, editor}/card.md` — agents unchanged
+- `design/shoot-v2/rubric-{feeling, memory-flags, narrator-interest, sensory, state-updates, metaphor, vibes, location-state}.md` — preserved; light edits to drop tens-correlation reads only
+- `design/shoot-v2/svo-writer-pass{1..5}-brief.md` — preserved verbatim (SVO craft unchanged)
+- `cards/` library (personas, locations, props, conditions, behaviors) — preserved
+- Bones file body format (flat integer IDs, monotonic, 7-field extended header, no body markers, post-extraction citation accrual) — preserved
+- `schemas/{card, memory, audit-report, dialogue, facet, scene-map, stitch-*}.schema.md` + `schemas/show-file.format.md` — preserved (only `proto-line.schema.md` → `bones.schema.md` rename + `tens:` prefix drop)
+
+### Total net-new vs lifted
+
+| command | total estimate | net-new | lifted |
+|---|---|---|---|
+| `/and-series` | ~100-130 | ~50 | ~50-80 |
+| `/and-substance` | ~350-400 | ~150-180 | ~200 |
+| `/and-cast` | ~150-180 | ~30 | ~120-150 |
+| `/and-write` | ~350-400 | ~150 | ~200-250 |
+| `/and-review` | ~280 | ~80 (router) + thin wiring | ~150-200 inside the subcommand wrappers (calling into existing primitives) |
+| Shared protocol docs | ~150 (two design docs) | ~150 | factored from repeated per-command specs |
+| **Totals** | **~1,400-1,540** | **~610-690** | **~770-880** |
+
+Compared to the prior estimate (~1,450-1,750 lines treated as net-new across five commands), roughly **55-60% of the substance overhaul is a lift-and-adapt operation**, not original authoring. The plan's previous size estimates ("`/and-substance` ~350-450 lines net new", "`/and-write` ~450-550 lines net new", etc.) reflected total-size, not original-content. Reframe accordingly during implementation: open the lift source, copy the relevant section, apply the listed adaptation, then write only the net-new phases from scratch.
+
+---
+
 ## Re-runnability
 
 Every new command except `/and-project` is **re-runnable**. The authoring loop is: draft → review → revise → revise → settle. Hard-abort-on-existing would force manual state deletion to iterate, which is wrong for creative work.
@@ -181,16 +302,21 @@ When a downstream command next runs and reads a parent block with `stale_since` 
 ## Archive plan
 
 ```
-git mv .claude/commands/and-project.md      archive/commands/and-project-pre-substance.md
-git mv .claude/commands/and-season.md       archive/commands/and-season-dissolved.md
-git mv .claude/commands/and-wrap.md         archive/commands/and-wrap-dissolved.md
-git mv .claude/commands/and-protolines.md   archive/commands/and-protolines-pre-substance.md
-# and-protolines-v2 and and-protolines-season-v2: archived alongside; replaced by /and-write
+git mv .claude/commands/and-project.md             archive/commands/and-project-pre-substance.md
+git mv .claude/commands/and-season.md              archive/commands/and-season-dissolved.md
+git mv .claude/commands/and-wrap.md                archive/commands/and-wrap-polish-deferred.md
+git mv .claude/commands/and-protolines.md          archive/commands/and-protolines-pre-substance.md
+git mv .claude/commands/and-protolines-v2.md       archive/commands/and-protolines-v2-lifted-to-and-write.md
+git mv .claude/commands/and-protolines-season-v2.md archive/commands/and-protolines-season-v2-lifted-to-and-substance-cascade.md
 ```
 
-`/and-season` and `/and-wrap` use the `-dissolved` suffix to mark they aren't coming back — their jobs moved into other commands (`/and-substance` + `/and-write` for season; `/and-review` + `/and-stitch` Phase 7 for wrap). `/and-project` and `/and-protolines` are overhauls/renames; their pre-overhaul versions stay reachable via `-pre-substance`.
+**Archive suffix conventions (revised):**
+- `-pre-substance` — overhaul or rename of a command that has a successor (`/and-project`, `/and-protolines`).
+- `-dissolved` — command whose jobs migrated piecewise into other commands and isn't coming back as a standalone (`/and-season`).
+- `-polish-deferred` — command whose spec is intentionally preserved for future revival (`/and-wrap`). Its Phase 2 (8-class auditor pass) and Phase 3 (editor allowed-moves contract + procedure) are the un-defer lift targets for `/and-review prose` + future polish revival. Do NOT mark this as dissolved — the spec is the deferral artifact.
+- `-lifted-to-<command>` — command body is the primary lift source for a successor (`/and-protolines-v2` → `/and-write`; `/and-protolines-season-v2` → `/and-substance --cascade`). The archive copy is the canonical reference the implementer reads while writing the successor.
 
-`/and-series`, `/and-substance`, `/and-cast`, `/and-write`, `/and-review` are net new — nothing to archive (other than `/and-protolines` which is the predecessor to `/and-write`).
+`/and-series`, `/and-substance`, `/and-cast`, `/and-write`, `/and-review` are not "net new from scratch" — they are each a lift-and-adapt of one or more archived assets plus a small named delta. See "Asset reuse map" above for the per-command lift sources.
 
 Update `archive/commands/README.md`:
 
@@ -394,7 +520,9 @@ Output: project-scope-approval checkpoint. Human reviews. On approval, `/and-ser
 
 Estimated size: ~50% of current `/and-project`.
 
-### `/and-series` (net new — series chunk + structural prompts)
+### `/and-series` (extracted from `/and-project` + structural prompts)
+
+**Lift basis:** Open `archive/commands/and-project-pre-substance.md` Series Plan section + Phase 3 Present-results. Phases 2-4 below are content relocation from there. Phase 1 (structural prompts) is the only net-new authoring step.
 
 1. Phase 0 — Validate + mode select. Read `project:` block; abort if scope/staff incomplete. If `series.chunk` populated, prompt `revise`/`redo`. If downstream populated, surface cascade and offer staleness-marking.
 2. Phase 1 — Structural prompts. Interactive: book count, book length (chapters per book + scenes per chapter + bones per scene), cyclical?, POV, cross-book continuity, world evolution, series-end shape. Persist to `series.structure.*`.
@@ -402,9 +530,11 @@ Estimated size: ~50% of current `/and-project`.
 4. Phase 3 — Review. Audience + dramatist accept/revise loop (3-try cap).
 5. Phase 4 — Persist `series.chunk` + `series.structure.*`. No checkpoint here.
 
-Estimated size: ~150–200 lines.
+Estimated size: ~100-130 lines total — ~50 net-new (structural prompts) + ~50-80 lifted from `/and-project` Series Plan section.
 
-### `/and-substance` (net new — recursive, three invocation levels)
+### `/and-substance` (generalized + recursive, three invocation levels)
+
+**Lift basis:** Open `archive/commands/and-season-dissolved.md` Phase 1 (lines 44-131) for the chunker authoring loop (read parent → author children → review → persist) and Phase 3 (lines 224-302) for the parallel-fork review-sweep dispatch pattern. Phases 1, 2, 5, 6 below are direct lifts with parameterization. Phase 3 (substance-contract authoring) and Phase 4 series-level signature authoring are the net-new work. `--cascade` flag adapts the per-episode loop from `archive/commands/and-protolines-season-v2-lifted-to-and-substance-cascade.md`.
 
 **Four chunk levels exist** (series → book → chapter → scene); **three invocation levels** author them (`series` produces book chunks; `book` produces chapter chunks; `chapter` produces scene chunks). Scenes are produced but never invoke — they are the deepest chunks and are consumed by `/and-write`, which decomposes each scene into bones (the bones live in `scenes[].bones[]`; per-bone deltas are authored by `/and-write`, not `/and-substance`).
 
@@ -422,9 +552,11 @@ Single command body. Argument is the invocation level: `series` / `book <slug>` 
 
 **`--cascade` flag (book/chapter levels).** Default off (manual level-by-level invocation). With `--cascade`, `/and-substance book b01` auto-fires `/and-substance chapter` for each chapter under b01, then `/and-write` for each chapter (each `/and-write` invocation reads the chapter's scenes and authors bones). Reviews still fire at each level; failure at any level halts the cascade. Useful for late-stage runs where the substance contract is settled and the user wants one command to drive everything to bones.
 
-Estimated size: ~350–450 lines (recursive across three invocation levels; one fewer level than the prior plan).
+Estimated size: ~350-400 lines total — ~150-180 net-new (substance-contract authoring + series-level signature authoring + recursion glue + cascade flag) + ~200 lifted from `/and-season` Phases 1, 3.
 
-### `/and-cast` (net new — cast roster + series audit checkpoint)
+### `/and-cast` (extracted from `/and-project` Phase 2 1c + Phase 3 + revise routing)
+
+**Lift basis:** Open `archive/commands/and-project-pre-substance.md` Phase 2 1c (Candidate menu + cast selection, lines 256-310) for Phases 1-4 below, and Phase 3 (Present results, lines 311-342) for Phase 5. Margit provisioning logic lifts from current `/and-project.md` Phase 1 step 4. The `revise`/`redo` decommission-routing is the only net-new authoring.
 
 1. Phase 0 — Validate + mode select. Read `series.chunk` + `series.structure.*` + `series.substance.*`. Abort if upstream missing. If `series.cast_roster` populated, prompt `revise` (swap/add/retire — untouched actors are preserved as-is; added actors flow through Phases 1–4 normally; retired actors are decommissioned by margit to `actors/<slug>-decommissioned-<timestamp>/`; swapped actors are retire+add in one pass) / `redo` (margit decommissions the full current roster, then re-run Phases 1–4 from scratch).
 2. Phase 1 — Substance-driven cast brief. Screen-writer composes brief from chunk + signature: which axes need which carriers. In `revise` mode, the brief is scoped to the requested swap/add/retire delta only.
@@ -433,9 +565,11 @@ Estimated size: ~350–450 lines (recursive across three invocation levels; one 
 5. Phase 4 — Margit provisioning (actor working dirs, LTM/STM/state/vibes). Fresh provisioning for every added actor; untouched actors keep their existing working dirs unchanged.
 6. Phase 5 — Series-level audit checkpoint. Auditor (fork) against full picture (project scope + series chunk + structural commitments + signature + per-book Δ + cast). Result to user. On approval, `/and-substance book b01` next.
 
-Estimated size: ~200–250 lines.
+Estimated size: ~150-180 lines total — ~30 net-new (revise/redo decommission-routing + checkpoint-payload extension) + ~120-150 lifted from `/and-project` Phase 2 1c and Phase 3.
 
-### `/and-write` (renamed + overhauled — was `/and-protolines`; the bones crafter)
+### `/and-write` (lifted from `/and-protolines-v2` + scene-decomposition + substance bone-gate)
+
+**Lift basis:** Open `archive/commands/and-protolines-v2-lifted-to-and-write.md` and copy Passes 1-5 wholesale; the five-pass SVO pipeline is unchanged and the per-pass fork briefs at `design/shoot-v2/svo-writer-pass{1..5}-brief.md` are preserved as-is. Open `archive/commands/and-season-dissolved.md` Pass S10 bone-gate (lines 460-499) for Phase 6's verification-shape (adapt tens-correlation to substance-contract), and Phase 7 Steps 1-3 (lines 616-676) for the flat_id assignment + per-chapter file emission logic. Net-new authoring: Phase 1 scene-decomposition (front-loaded, ~80 lines) and the substance-contract verification logic inside Phase 6 (~80 lines) and scene-map co-emission inside Phase 7 (~30 lines).
 
 Reads scene chunks + substance contracts produced by `/and-substance chapter`. **Decomposes each scene into bones-with-deltas, then SVOs them.** Produces the per-chapter bones file. Replaces `/and-protolines` as the shoot-v2 chain entry.
 
@@ -459,9 +593,11 @@ Reads scene chunks + substance contracts produced by `/and-substance chapter`. *
 
    **Downstream-gate pre-verify** (HARD, blocks write): (a) **URI-DIALOGUE-COVERAGE-GATE** — every `speaks to` bone has an addressee and a speaker resolvable from the cast roster. (b) **URI-SCENE-WINDOW** — every bone lands inside exactly one scene's flat_id range; no dangling anchors; no scene-spanning bones. Both pre-verifications run before write; SIGNAL versions are tolerated and recorded. On pass, both artifacts ship; `/and-facets` Phase 0 finds the bones file ready and the scene-map facet pre-emitted.
 
-Estimated size: ~450–550 lines (scene-decomposition + five-pass SVO pipeline + substance bone-gate + dual emission). The size grew vs. the prior plan because `/and-write` absorbs scene-level decomposition that was previously parked at `/and-substance scene` AND now also owns scene-map emission.
+Estimated size: ~350-400 lines total — ~150 net-new (scene-decomposition + substance-contract verification + scene-map co-emit) + ~200-250 lifted from `/and-protolines-v2` (five-pass SVO body) and `/and-season` (bone-gate + Phase 7 emission logic). The size is roughly the same as the prior `/and-write` estimate; the framing change is that most of the body is lift, not original authoring.
 
-### `/and-review` (net new — universal review primitive with subcommand router)
+### `/and-review` (router + thin wrappers over existing review primitives)
+
+**Lift basis:** Only the router and the Phase 0-4 shared shape are net-new (~80 lines). Every subcommand body is a thin wrapper that invokes a review primitive that already exists in the codebase. See the Asset reuse map's `/and-review` table above for the per-subcommand lift source. Key targets: `/and-season.md` Phase 6 (verdict subcommand), Phase 1 step 1e (chunk subcommand), Pass S10 (bone subcommand), Pass S1/S3.5 (contract subcommand), Phase 1 step 1g (consistency subcommand); `/and-facets.md` R1 fanout (facets subcommand); `design/shoot-v2/audience-review-originals-v2.md` (feedback subcommand); `/and-wrap.md` Phases 1-2 (prose subcommand — STUBBED-DEFERRED).
 
 Top-level router dispatches to one of N pre-defined review types. No authored writes; reports persist to `staff/reviews/<type>-<target>-<timestamp>.md`.
 
@@ -494,7 +630,7 @@ Top-level router dispatches to one of N pre-defined review types. No authored wr
 
 **`/and-cast` Phase 5 vs `/and-review tree --series-scope`.** The series-level audit checkpoint inside `/and-cast` is a synchronous blocking gate (the command body owns it; on FAIL the command halts before persisting cast handoff). `/and-review` is post-hoc — fires after persistence, never blocks an authoring command's own flow. They share auditor infrastructure but are not interchangeable: keep the inline auditor fork inside `/and-cast` Phase 5; use `/and-review tree` for later spot-checks against the same scope.
 
-Estimated size: ~300–400 lines (the router + N subcommand implementations; each subcommand is small because the reviewers do the heavy lifting).
+Estimated size: ~280 lines total — ~80 net-new (router + shared phases) + ~200 thin-wrapper wiring around existing review primitives. The actual review logic (audience-card forks, dramatist, auditor, orchestrator-critic, per-facet rubric runners) is not re-implemented; it's invoked via existing dispatch shapes lifted from `/and-season` and `/and-facets`.
 
 ### `/and-facets` (light mutation — two narrow edits beyond tensometer-drop)
 
@@ -585,20 +721,25 @@ Items flagged as DEFER in the self-audit. Not blockers; recorded so the implemen
    - `git mv .claude/commands/and-wrap.md         archive/commands/and-wrap-dissolved.md`
    - `git mv .claude/commands/and-protolines.md   archive/commands/and-protolines-pre-substance.md`
    - `git mv .claude/commands/and-protolines-v2.md archive/commands/and-protolines-v2-pre-substance.md` (if present)
-   - `git mv .claude/commands/and-protolines-season-v2.md archive/commands/and-protolines-season-v2-pre-substance.md` (if present)
+   - Move `/and-wrap` to `-polish-deferred` (not `-dissolved`); its Phase 2 (8-class auditor pass) and Phase 3 (editor allowed-moves contract + procedure) are the un-defer lift targets for `/and-review prose` and a future polish revival.
+   - Rename `/and-protolines-v2` to `-lifted-to-and-write` (it IS the lift source for `/and-write` Passes 1-5); rename `/and-protolines-season-v2` to `-lifted-to-and-substance-cascade` (lift source for the `--cascade` flag).
    - `git mv design/shoot-v2/rubric-tensometer.md archive/rubrics/rubric-tensometer-replaced-by-substance.md`
    - Update `archive/commands/README.md` and (new) `archive/rubrics/README.md`.
    - Update `/and-facets` command body to drop tensometer from R1/R2 fanout + facet list. Update CLAUDE.md's URI-026 shared-resources line to remove tens-rubric reference.
-5. **Write new + overhauled commands** in pipeline order:
-   - `.claude/commands/and-project.md`
-   - `.claude/commands/and-series.md`
-   - `.claude/commands/and-substance.md` (recursive; three invocation levels stopping at chapter; chunker only)
-   - `.claude/commands/and-cast.md`
-   - `.claude/commands/and-write.md` (bones crafter; carries scene-decomposition + five-pass SVO pipeline + substance bone-gate)
-   - `.claude/commands/and-review.md` (universal review primitive; subcommand router incl. `verdict`; `prose` subcommand stubbed-deferred)
+5. **Author shared protocol design docs (factored from per-command repetition).**
+   - `design/substance/rerun-protocol.md` — Phase 0 re-run protocol (read upstream → check own output → cascade warning → run). Referenced by `/and-series`, `/and-substance`, `/and-cast`, `/and-write`, `/and-review`. Pure factor-out from "Re-runnability" section of this plan; no original content.
+   - `design/substance/staleness-cascade.md` — mark-stale / keep-fresh / abort surfacing; staleness-log location; warn-not-block-on-stale-parents rule; verdict-block invalidation. Pure factor-out from "Surfacing — defined" + "Staleness cascade" + "Staleness also invalidates" subsections.
+   - Both docs are factored-out specs, not original work — saves ~150 lines of repeated specification across the five new command bodies.
+6. **Write new + overhauled commands** in pipeline order. **Implementer protocol:** for each command below, open the listed lift source(s) FIRST, copy the relevant phase content into the new command body, then apply the listed adaptations and add only the net-new phases from scratch. The Asset reuse map above is the canonical lift index. Do NOT write any "new" command from a blank file.
+   - `.claude/commands/and-project.md` (shrink current `/and-project` by extracting Series Plan to `/and-series` and Phase 2 1c + Phase 3 to `/and-cast`; add staff persona binding block)
+   - `.claude/commands/and-series.md` (lift Series Plan section from `archive/commands/and-project-pre-substance.md`; net-new: structural prompts only)
+   - `.claude/commands/and-substance.md` (lift `archive/commands/and-season-dissolved.md` Phase 1 + Phase 3 sweep-A pattern; net-new: substance-contract authoring + signature authoring at series level + recursion glue + cascade flag)
+   - `.claude/commands/and-cast.md` (lift `archive/commands/and-project-pre-substance.md` Phase 2 1c + Phase 3; net-new: revise/redo decommission-routing only)
+   - `.claude/commands/and-write.md` (lift `archive/commands/and-protolines-v2-lifted-to-and-write.md` Passes 1-5 verbatim + `archive/commands/and-season-dissolved.md` Pass S10 bone-gate + Phase 7 emission; net-new: Phase 1 scene-decomposition + substance-contract verification inside Phase 6 + scene-map co-emit inside Phase 7)
+   - `.claude/commands/and-review.md` (lift `archive/commands/and-season-dissolved.md` Phase 6 for `verdict`, Phase 1 1e for `chunk`, Pass S10 for `bone`, Pass S1+S3.5 for `contract`, Phase 1 1g for `consistency`; lift `/and-facets.md` R1 fanout for `facets`; net-new: router + Phase 0-4 shared shape only; `prose` subcommand stubbed-deferred with un-defer lift target pre-pinned to `archive/commands/and-wrap-polish-deferred.md` Phases 1-2)
 
    **Lightly mutated** (narrow edits, not net-new): `/and-facets` (remove tensometer from R1/R2 fanout + downgrade Phase 4d scene-map from derivation to validation + update R1 rubric input lists to drop tens reads + substitute substance-contract reads where pressure-signal is needed) and `/and-stitch` (drop Phase 0 tensometer-derivation fallback path). Rubric files under `design/shoot-v2/rubric-*.md` updated alongside the facets command body.
-6. **Update CLAUDE.md.** Full enumerated change set:
+7. **Update CLAUDE.md.** Full enumerated change set:
    - **Primary pattern section.** Replace the `project activation → season start → (episode start → shoot)* → bulk and-wrap → repeat` block with the new chain: `/and-project → /and-series → /and-substance series → /and-cast → [series audit checkpoint] → /and-substance book/chapter → /and-write (decomposes scenes into bones) → /and-facets → /and-stitch → draft/<chapter>.md (terminal deliverable; polish deferred)`. Remove "Season start," "Episode start," "Shoot," "And-wrap" prose subsections — the names no longer exist. Add a short paragraph noting that polish/`/and-wrap` is dropped and `/and-stitch`'s output is the deliverable until upstream is proven.
    - **Agent routing table.** No agent additions/removals expected (the new commands reuse existing agents: showrunner, screen-writer, audience, dramatist, auditor, fixer, margit, orchestrator-critic). Confirm `editor` row stays or is marked DEFERRED (since `/and-wrap` is dropped and `/and-stitch` Phase 7 is the standing in for editorial work for now); remove the `editor` row entirely or annotate it as `library-only; not currently dispatched` — pick the latter to preserve the card for the eventual polish revival.
    - **Directory map.** Update `theater/` line: replace `proto-lines.md` reference with `bones/<book>-<chapter>.md`. Keep `draft/` and `polish/` lines but annotate `polish/` as "not written by the current chain — polish deferred." Add `staff/reviews/` line for `/and-review` reports.
@@ -607,7 +748,7 @@ Items flagged as DEFER in the self-audit. Not blockers; recorded so the implemen
    - **Rules section.** Update Rule 10 (URI-026 bone-gate): remove tens-gate language; replace with "`/and-write` Phase 6 substance bone-gate is the bones-first authoring gate. Deformed substance contracts cannot be rescued by downstream facet skin." Update Rule 11 (URI-026 shared reviewer resources): remove `design/shoot-v2/rubric-tensometer.md` reference; keep the audience persona `Threshold Discipline` and AP-SCAN promotion path lines.
    - **Commands table.** Remove rows for `/and-season`, `/and-wrap`, `/and-protolines`, `/and-protolines-v2`, `/and-protolines-season-v2`. Add rows for `/and-series`, `/and-substance`, `/and-cast`, `/and-write`, `/and-review`. Update `/and-facets` row to drop tensometer mention. Update `/and-stitch` row to mark its `draft/<chapter>.md` as the terminal deliverable.
    - **"Not in scope" section.** No change (gacha / workshop-artifact still excluded). Optionally add "Polish / `/and-wrap` revival — deferred until substance machinery is proven."
-7. **Commit + push** to `claude/improve-story-substance-CVi58` at logical breakpoints.
+8. **Commit + push** to the active substance-overhaul branch at logical breakpoints.
 
 ---
 
@@ -617,14 +758,14 @@ Items flagged as DEFER in the self-audit. Not blockers; recorded so the implemen
 - **Facet rubric changes — partial.** Bones and facets (feeling, memory-flags, scene-map, dialogue, exposition, etc.) are preserved. **Tensometer is removed** — its purpose (per-bone substance-density signal) is now served directly by the per-bone state-delta + bone-gate. `/and-facets` no longer emits a tensometer file; `design/shoot-v2/rubric-tensometer.md` is archived; CLAUDE.md's "shared reviewer resources" line (URI-026) is updated to drop the tens rubric. The Tens-gate in URI-026 is replaced by the substance bone-gate at `/and-write` Phase 6 (per-bone axis-movement verification + per-scene aggregate Δ delivery + cost-paid check against the upstream scene contracts authored by `/and-substance chapter`). `/and-substance` is the chunker only (stops at scene chunks); scene-decomposition + bone-writing + bone-gate logic all live in `/and-write`.
 - **Impersonator card "values block."** Deferred — follow-on card-schema task after one full new-chain run.
 - **Shoot-v2 chain overhaul.** `/and-facets` and `/and-stitch` are **lightly mutated** (not unchanged): `/and-facets` drops tensometer from R1/R2 fanout AND downgrades Phase 4d scene-map from derivation to validation (the scene-map facet is now upstream-emitted by `/and-write` Phase 7); `/and-stitch` drops its Phase 0 tensometer-derivation fallback as dead code. Both edits are narrow (light command-body edits + rubric updates; full specs in the `/and-facets` and `/and-stitch` command-spec sections above). The shoot-v2 pipeline shape — bones → ten facets + dialogue → cite-index → stitcher draft — is preserved. Bones file format is preserved (flat integer IDs, 7-field header, no body markers, post-extraction citation accrual) so `/and-facets` Phase 0 + body-integrity checks + citation accrual all operate as today.
-- **Final-edits / polish / ship-ready manuscript work.** Deferred entirely until the upstream chain (project → series → substance → cast → substance recursive → write → facets → stitch → draft) is proven to produce substantively-right drafts end-to-end. The whole "is the prose ready to ship?" question waits. `/and-wrap` is dropped without replacement; `/and-stitch` is structurally preserved (one narrow Phase 0 mutation only); `/and-review`'s `prose` subcommand is stubbed-deferred. Whole-text concerns (cross-chapter percussion, repetition cull across the book, polish/ directory) come back after the substance machinery is trusted.
+- **Final-edits / polish / ship-ready manuscript work.** Deferred entirely until the upstream chain (project → series → substance → cast → substance recursive → write → facets → stitch → draft) is proven to produce substantively-right drafts end-to-end. The whole "is the prose ready to ship?" question waits. `/and-wrap` is archived as `-polish-deferred` (not `-dissolved`) — its Phase 1 (audience review) + Phase 2 (8-class auditor pass) + Phase 3 (editor allowed-moves contract + procedure) are the future un-defer lift target for `/and-review prose <chapter>` and any polish revival. `/and-stitch` is structurally preserved (one narrow Phase 0 mutation only); `/and-review`'s `prose` subcommand is stubbed-deferred with its un-defer lift target pre-pinned. Whole-text concerns (cross-chapter percussion, repetition cull across the book, polish/ directory) come back after the substance machinery is trusted.
 - **Persona library expansion for non-audience staff.** `/and-project` records library-default version; substantive variant composition is a follow-on.
 
 ---
 
 ## Open questions for user
 
-1. **Archive suffix.** `-pre-substance` for overhauls/renames (`/and-project`, `/and-protolines`); `-dissolved` for commands whose jobs migrated elsewhere and aren't coming back (`/and-season`, `/and-wrap`, `/and-judge-book`). OK?
+1. **Archive suffix.** Four conventions: `-pre-substance` for overhauls/renames (`/and-project`, `/and-protolines`); `-dissolved` for commands whose jobs migrated piecewise into other commands and aren't coming back as standalones (`/and-season`); `-polish-deferred` for commands intentionally preserved for future revival (`/and-wrap` — its Phase 2 + Phase 3 are the un-defer lift target for `/and-review prose`); `-lifted-to-<command>` for command bodies that ARE the primary lift source for a successor (`/and-protolines-v2` → `-lifted-to-and-write`; `/and-protolines-season-v2` → `-lifted-to-and-substance-cascade`). OK?
 2. **Universal axis set.** `design/substance/README.md` ships with 9 universal axes (wealth, health, community, emotional, capability, knowledge, reputation, agency, trust). Add / remove?
 3. **Chunk-Δ defaults.** Default ratio (series Δ ≥ 6 ranks, book Δ = 2–3, chapter Δ ≈ 1, scene Δ = 0–1). Close enough for first run, or calibrate now?
 4. **`/and-substance --cascade` default.** Recommend default OFF (manual level-by-level invocation preserves per-level review checkpoints and dispatch budget). `--cascade` as opt-in for late-stage runs. Confirm?
@@ -641,7 +782,8 @@ Items flagged as DEFER in the self-audit. Not blockers; recorded so the implemen
 - `design/substance/{README,questionnaire,delta-targets}.md` exist; README documents the three-invocation / four-chunk-level design + the bone-is-the-beat principle (per-bone state-delta authored by `/and-write`, not by `/and-substance`).
 - `schemas/showrunner-memory.schema.md` updated with: `project:` block; restructured `series:` (incl. `structure.book_length.{chapters_per_book, scenes_per_chapter, bones_per_scene}` ranges — note: `beats_per_scene` removed; `bones_per_scene` replaces it); `substance.cost_ledger[].anchor.{book, chapter, scene}` fine-grained anchors; `books[]` nesting down to scenes with `structure.{chapter_count, scene_count}` populated at each authoring level; `chapters[].pov_narrator` + `chapters[].goal` fields; `scenes[].scene_conflict.{protagonist_force, opposing_force, stakes_axis}` block; `scenes[].bones[]` with `slug`, `flat_id`, `svo`, `substance_delta.{axis_moves, cost, cost_ledger_anchor}`, `gate_verdict.{bonefide, flat}` (PASS-only persistence; `facet_tags` removed per bones-facets compatibility resolution); `bones_file` pointer; `stale_since` field at each level; `orchestrator_critic_verdict.{ruling, report_path, verdict_at, stale_since}` block.
 - `schemas/proto-line.schema.md` renamed to `schemas/bones.schema.md`; internal references updated; body format preserved (flat integer IDs, 7-field extended header, no body markers, post-extraction citation accrual); `tens:` citation prefix removed from the recognized list; in-memory bones-as-scene-children + per-bone state-delta documented in `showrunner-memory.schema.md` (not in bones.schema.md, which governs the file shape only); CLAUDE.md schema authority table reflects the rename.
-- `archive/commands/and-project-pre-substance.md`, `and-season-dissolved.md`, `and-wrap-dissolved.md`, `and-protolines-pre-substance.md` exist (plus v2 variants if present).
+- `archive/commands/and-project-pre-substance.md`, `and-season-dissolved.md`, `and-wrap-polish-deferred.md`, `and-protolines-pre-substance.md`, `and-protolines-v2-lifted-to-and-write.md`, `and-protolines-season-v2-lifted-to-and-substance-cascade.md` exist.
+- `design/substance/rerun-protocol.md` and `design/substance/staleness-cascade.md` exist as factored-out shared-protocol references; each of the five re-runnable new commands references them rather than duplicating the spec inline.
 - `archive/rubrics/rubric-tensometer-replaced-by-substance.md` exists; `design/shoot-v2/rubric-tensometer.md` gone.
 - `/and-facets` command body no longer emits tensometer; CLAUDE.md URI-026 line no longer references tens rubric.
 - `.claude/commands/and-{project,series,substance,cast,write,review}.md` exist and parse.
