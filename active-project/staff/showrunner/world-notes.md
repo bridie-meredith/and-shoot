@@ -59,6 +59,14 @@ LAW (OQ-5 resolved, model falsification — interior only): At Rung 6, Taylor's 
 
 LAW (OQ-5 resolved, the wrong pivot at M27–28): Rung 6 IS the wrong pivot that closes the last viable choice. Taylor took this rung BECAUSE the model worked at Rung 4 (Mira). The pivot was available — she could have used a different patron-channel (the Faith, the foreign merchant, the dockyard guild) or could have not pursued the border-crossing intelligence at all. She did not see the pivot as a pivot because the model told her this was just another rung. The foreclosure is structural: the model that built her network is the model that kills her contact.
 
+LORE (OQ-6 resolved): The book closes on Taylor dead in the Dragon Gate Watch guardhouse. Sequence: the contact killed in custody at Rung 6 names Taylor as his source before dying. The Watch officer running the persons-risk sweep is Green-adjacent via the captain's network. The captain, calculating that a foreign-lunatic-with-insect-witchcraft now attached to persons-risk intelligence is a liability rather than an asset, signs the paperwork. Taylor is arrested three days after the contact's death and detained under the persons-risk protocols her own ladder helped construct. She dies in the Watch guardhouse — not executed, not martyred, processed. Viserys is dead off-page; the war has begun off-page; her paperwork reflects the new regime's intake numbers as administrative realignment.
+
+LAW (OQ-6 resolved, the final image): The book's last image is Taylor's own insects, range-capped to the block, registering no movement inside the building she is in. The image is external, observational, silent. The surveillance apparatus she built outlives her by minutes and reports back faithfully on her own disappearance. The shard does not mourn — it counts. The mode of death is bureaucratic, not dramatic.
+
+LAW (OQ-6 resolved, structural shape): The closing-shape is foreclosure-pure. The mechanism Taylor built — patron-dialect, framing-true-for-effect, Watch persons-risk infrastructure — runs correctly on her. The world's verdict, not Taylor's, is at the final image. Taylor is absent from the terminus as a subject. This is the structurally honest shape for road-to-hell-paved-with-good-intentions: she does not understand, does not choose, does not register the moral; she is processed.
+
+LAW (OQ-6 resolved, binding execution obligation): The insect-ambient-register must be a consistent prose mechanism FROM EARLY in the book. The closing image of range-capped insects registering Taylor's own stillness must be EARNED by prior use of the insect-register as the operational mode of her perception — not introduced at the terminus as a device. Tracked through screen-writer and shoot stages.
+
 ## Tone / register constraints
 
 TONE: Grimdark with honest weight, not aestheticized cruelty. Bleakness must be earned by causal chains the reader can reconstruct.
