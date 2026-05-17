@@ -1,8 +1,23 @@
 # Plan Intent Gaps vs. Active-Project Feedback
 
 **Source:** Critical read of `design/substance/plan.md` against `active-project/feedback.md` (s01e01–s01e03 user feedback).
-**Status:** Open. Surface for next session before plan execution.
-**Date:** 2026-05-16.
+**Status:** PARTIALLY RESOLVED 2026-05-17 — gaps 1, 2, 3, and 9 addressed in plan revision. Gaps 4, 5, 6, 7, 8, 10, 11 remain open.
+**Date:** 2026-05-16 (status updated 2026-05-17).
+
+---
+
+## RESOLVED in 2026-05-17 plan revision
+
+- **Gap 1 (bones-grain):** Beat level dropped entirely. Bones are now scene-children with per-bone state-delta, authored by `/and-write` during scene-decomposition. Each bone declares one axis-movement; bone-without-Δ is now a schema violation, not a craft choice. Matches user's "protolines should cover the action and movement of a scene."
+- **Gap 2 (scenes-are-big):** `series.structure.book_length.scenes_per_chapter: 1-3` default committed in the schema. `design/substance/delta-targets.md` will spec scenes as substantial.
+- **Gap 3 (SUBSTANCE-FLAT HARD/SIGNAL):** Classified HARD in `/and-write` Phase 6 bone-gate. `SUBSTANCE-FLAT-<axis>`, `SUBSTANCE-SUSPECT-cheap-gain`, missing-opposing-force, cost-not-paid, per-axis-Δ-mismatch-beyond-±2 all block emission.
+- **Gap 9 (scene-level antagonist pressure):** `scenes[].scene_conflict.{protagonist_force, opposing_force, stakes_axis}` block added to scene chunk schema. Authored by `/and-substance chapter` Phase 3; verified by `/and-write` Phase 6 bone-gate (opposing_force must be visible in bones).
+
+---
+
+## STILL OPEN
+
+The remaining gaps are independent of the bones-grain restructure and need to be addressed before implementation:
 
 The plan's "Triggering feedback" header (`plan.md:5-12`) excerpts 7 lines from the 19-line feedback file. Some of the feedback that wasn't excerpted points at real architectural questions the plan currently glosses or punts on. Below: where the plan misses or partly misses the user's intent, organized by severity.
 
