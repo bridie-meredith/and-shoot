@@ -71,3 +71,18 @@ Bundle 3 political-access flag: Taylor's knowledge of the true-believer's protec
 ### Triad outcome
 Bundle 2: ACCEPT (2-of-3 — pedant + dark-fantasy). Bundles 1 and 3: REVISE (3-of-3 and 3-of-3 respectively). Triad pick: Bundle 2.
 Screen-writer's Bundle 1 advocacy not sustained.
+
+---
+
+## Session: Series Plan Review
+
+### Verdict: ACCEPT
+
+### Axes reviewed
+- Flicker discipline: Plan correctly frames flicker as misfire engine across all three season chunks; no reliable-deployment language present; carry-forward flag not triggered.
+- Dragon-bonding canon: Claiming-window mechanic for unbonded dragon preserved; no invented bonding rules at plan level; tracks.
+- Patron amplification-theory: Wrong-reading-becomes-operational framing is correctly invisible-while-operating; not re-validated anywhere in season chunks; tracks.
+- Lore-leak risk: FLAG — Silverwing is a canon dragon with a documented Dance-era claiming arc; the plan assigns Vaegon (an OC) bond-work with Silverwing without naming the lore basis for that assignment. World-notes provide OC cover ("documented-but-non-chronicled"), but a named canon dragon is not covered by that language. Season-level planning must either name the lore basis for Vaegon's Silverwing bond-work or substitute a less-documented or unnamed dragon.
+
+### Carry-forward flags
+Silverwing canon-assignment flag (NEW): any season or episode plan that continues the Vaegon/Silverwing bond must name the lore basis for that assignment relative to Silverwing's canonical claiming history during the Dance; unmarked departure from Silverwing's documented arc is a lore-leak.

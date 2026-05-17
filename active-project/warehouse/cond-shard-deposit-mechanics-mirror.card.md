@@ -6,8 +6,8 @@ project: mirror-tragedy
 world: planetos
 origin: authored
 quality: full
-references:
-  - cond-no-parahuman-infrastructure
+supersedes:
+  - cond-reincarnation-mechanics-125ac
 ---
 
 # Shard Deposit Mechanics Mirror — Taylor's Arrival Mechanism (This Project)
@@ -102,7 +102,7 @@ This is the structural basis for the "no one can correct her" axiom: without a p
 
 **With `cond-flicker-discipline-mirror`:** The flicker is the transit's sole parahuman residual. This card describes what the transit was and what it deposited; that card governs how the deposit operates.
 
-**With `cond-no-parahuman-infrastructure`:** That library card establishes the general absence of parahuman infrastructure in Westeros. This card establishes Taylor's specific arrival state — she is a foreign-physics intrusion in a world with no category for what she is.
+**No parahuman infrastructure (inline):** The general absence of parahuman infrastructure in Westeros is established directly in this card's "What Did Not Carry Over" and "No Other Worm-Universe Entities" sections, sourced verbatim from world-notes.md. No companion card is required for this constraint; it is fully stated here.
 
 **With `cond-kl-witch-label-formation`:** The no-local-identity condition shapes which witch-label mechanism applies. The "appeared without origin" foundation is this card; the label's mechanics are the witch-label card's domain.
 

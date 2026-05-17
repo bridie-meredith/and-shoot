@@ -6,9 +6,10 @@ project: mirror-tragedy
 world: planetos
 origin: authored
 quality: full
-references:
+supersedes:
   - cond-westerosi-superstition-frame
   - cond-crownlands-superstition-frame-125ac
+references:
   - cond-flea-bottom-social-physics
   - cond-kl-feudal-physics-mirror
 ---
