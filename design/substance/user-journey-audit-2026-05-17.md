@@ -1,7 +1,7 @@
 # User-Journey Audit — Plan Walkthrough from New-Project Start
 
 **Source:** Read of `design/substance/plan.md` (post-Holes-2026-05-17 pass, commit `6fed2fc`) through the lens of a user about to execute a new project end-to-end.
-**Status:** NEW. Surface for triage.
+**Status:** RESOLVED 2026-05-17 (user-journey pass). All 4 blockers (B1-B4) + 8 friction items (F1-F8) + 7 gaps (G1-G7) addressed as plan edits. B4 produced new doc `design/substance/run-book.md`. See plan.md "User-journey pass 2026-05-17" revision marker.
 **Lens:** What does the user type next? What do they see? Where do they trip? This audit is strictly about user-facing surface — implementation-level concerns are covered by prior audits (`audit-findings.md`, `bones-facets-compatibility.md`, `plan-holes-2026-05-17.md`).
 
 ---

@@ -1,6 +1,8 @@
 # Substance Overhaul — Implementation Plan
 
-**Status:** DRAFT, 2026-05-16 (revised 2026-05-17; plan-holes pass 2026-05-17). Awaiting user approval before execution.
+**Status:** DRAFT, 2026-05-16 (revised 2026-05-17; plan-holes pass 2026-05-17; user-journey pass 2026-05-17). Awaiting user approval before execution.
+
+**User-journey pass 2026-05-17 (post-`user-journey-audit-2026-05-17.md`):** addresses 4 blockers + 8 friction items + 7 gaps from the end-to-end user-experience audit. Headline edits: `/and-project` invocation explicit (B1 — three positional + five optional staff override flags); substance questionnaire user-flow specified (B2 — screen-writer-proposes / user-edits / one-pass); series-level audit-checkpoint approval mechanic (B3 — y/N/feedback prompt with `project.series_audit.approved_at` gate); new user-facing run book authored at `design/substance/run-book.md` (B4). Friction resolutions: `--cascade` extended through `/and-facets` + `/and-stitch` (F1), `/and-cast revise` actor-selection via `--retire`/`--add`/`--swap` flags + interactive editor (F2), `/and-write` Phase 7 emit-summary surfaces SIGNAL count + suggested follow-up commands (F3), `/and-cut` exit-summary prints literal resume command (F4), bare `/and-review` prints subcommand discovery (F5), `/and-series` Phase 1 defaults table with required-vs-optional prompts (F6), first-chapter `handoff_in` fallback (F7), cascade-failure surfacing (F8). Gap resolutions: chapter status drops to `bones-written` on any bone change (G1), positional-mode + Phase-0-prompt both supported (G2), book/chapter/scene/bone slug auto-generation rules (G3), `cost_ledger` scene-anchor refinement at chapter Phase 3 (G4), `/and-project` staff defaults vs. override flags (G5), `staff/reviews/` directory added to `/and-project` scaffold (G6), `/and-substance chapter --cascade` single-chapter convenience (G7).
 
 **Revision 2026-05-17 (post intent-gaps audit):** beat level dropped; bones are now scene-children with their own per-bone state-delta, authored by `/and-write` during scene-decomposition. `/and-substance` shrinks from four invocation levels to three (`series` / `book` / `chapter`); the former `/and-substance scene` is absorbed into `/and-write` Phase 1. Scene-conflict block added to scene chunks. `SUBSTANCE-FLAT` classified HARD at the bone-gate. Scenes default to 1–3 per chapter. See `intent-gaps.md` for the surrounding rationale.
 
@@ -317,6 +319,18 @@ Every new command except `/and-project` is **re-runnable**. The authoring loop i
 3. Cascade warning. Surface downstream blocks that depend on what's about to change; offer staleness-marking (see "Surfacing" below).
 4. Run.
 
+**Re-run mode syntax (G2 — positional + prompt, both supported).** Every re-runnable command accepts the mode as an optional positional argument after the subject slug, OR via the interactive Phase 0 prompt when omitted:
+
+| invocation | behavior |
+|---|---|
+| `/and-write b01c01` | If `bones_file` exists, Phase 0 prompts `revise` / `redo`; user picks. |
+| `/and-write b01c01 revise` | Mode preselected to `revise`; Phase 0 prompt skipped; goes straight to scope-selection (SIGNAL-prompt or `--from-signals` flag or explicit scene/bone-range positional). |
+| `/and-write b01c01 redo` | Mode preselected to `redo`; Phase 0 prompt skipped. |
+| `/and-cast`, `/and-cast revise`, `/and-cast revise --retire <slug>` | Same pattern; flags layer on top of positional mode. |
+| `/and-substance series add` | Add mode where applicable (chunkers that support `add`). |
+
+Documented once in `design/substance/rerun-protocol.md`; each re-runnable command's spec references it instead of re-stating.
+
 **Surfacing — defined.** When Phase 0 detects downstream work that depends on the about-to-change output, "surface" means: (a) print a numbered list of the affected downstream artifacts (chunks, bones files, verdict block) with their slugs and last-write timestamps; (b) prompt the user to choose `mark-stale` (write `stale_since: <iso-timestamp>` on each affected downstream block; leave content intact) / `keep-fresh` (leave staleness fields null; user accepts that downstream may be silently outdated) / `abort` (cancel the re-run). Default is `mark-stale`. The chosen mode is recorded in showrunner memory under `staff/showrunner/staleness-log.md` (one entry per cascade event: who-ran-what, what was marked, user choice).
 
 When a downstream command next runs and reads a parent block with `stale_since` set, it prints a warning line ("parent <slug> stale since <timestamp>; consider re-running parent first") but does NOT block. Stale-marking is informational, not enforcing.
@@ -397,6 +411,10 @@ Framework reference. Authoring authority for substance terminology, state-axis c
 ### `design/substance/questionnaire.md`
 
 1–9 archetype questionnaire (story / protagonist / world / antagonist) used by `/and-substance` at any level to pin axis ranks honestly. Per-archetype question banks. Example scoring trace.
+
+### `design/substance/run-book.md`
+
+**User-facing run book (B4 — first-time-execution guide).** Linear command sequence with the literal invocation, expected prompts, recommended defaults, and exit-state hand-off line per command. Companion to the implementer-facing plan.md and framework-facing README.md. Authored in this resolution pass at `design/substance/run-book.md`. ~280 lines.
 
 ### `design/substance/delta-targets.md`
 
@@ -595,6 +613,8 @@ books:
 
 **State-machine transitions.** Each value advances monotonically; status only ever moves forward. Re-running a command that has already advanced past its own status (e.g. re-running `/and-facets` on a `stitched` chapter) is allowed in `revise`/`redo` modes — Phase 0 of the re-running command resets status to the earliest value it owns (`/and-facets` resets to `bones-written`, `/and-stitch` resets to `audited-r1` or whichever R2 state was last reached, etc.) and the staleness-cascade rules mark downstream as stale per "Surfacing — defined." Re-run mode-resets are recorded in `staff/showrunner/staleness-log.md` alongside the cascade entry.
 
+**Partial-revise status semantics (G1).** Any bone change — even from `/and-write revise --from-signals` scoped to a subset of scenes — drops chapter `status` back to `bones-written` on Phase 7 emit, regardless of how many scenes were touched. Reasoning: downstream artifacts (facet outputs, scene-map, draft) were derived from the prior bones; the bones changed; downstream is by definition stale. Staleness cascade marks `theater/facets/<facet>-<book>-<chapter>.md` (all facets) + `draft/<book>-<chapter>.md` + `draft/<book>-<chapter>.annotated.md` stale via the surfacing protocol; user re-runs `/and-facets <chapter>` then `/and-stitch <chapter>` (or just re-fires `/and-substance chapter <chapter> --cascade` if the in-flight chunk-decisions were stable) to advance status back to `stitched`. The drop is unconditional even when revise scope was tiny — there's no "minor revise; downstream still good" branch because bone-level Δ propagates non-locally through facet citation accrual.
+
 **Resume-point detection.** `/and-facets` Phase 0 reads `chapters[<slug>].status` to determine whether to resume R1 / R2 / mechanical-audit / audience-gate. `/and-stitch` Phase 0 reads the same field to confirm `audited-r1` (or `faceted-r2`) is reached before running. Phase 0 of any command aborts if the parent status is below its own minimum precondition (e.g. `/and-stitch` aborts on `planned` or `scened`).
 
 ---
@@ -603,11 +623,42 @@ books:
 
 ### `/and-project` (overhauled — strict scope + staff)
 
+**Invocation** *(B1 — argument shape):*
+
+```
+/and-project <title-slug> "<brief>" <audience-1> <audience-2> <audience-3>
+             [--screen-writer <persona-slug>]
+             [--dramatist <persona-slug>]
+             [--auditor <persona-slug>]
+             [--editor <persona-slug>]
+             [--orchestrator-critic <card-version>]
+```
+
+Three positional arguments + three positional audience slugs (required; user picks from `staff/audience/INDEX.md`) + five optional staff override flags. Each unspecified staff slot binds to its library default (G5 — staff defaults vs. interactive: default-only, no Phase prompts; user overrides via the listed flags at invocation time or via a later `/and-project revise` command after defaults need adjustment). The orchestrator-critic flag takes a card version string (e.g. `v3`) — the only non-persona-slug arg, because `staff/orchestrator-critic/card.md` is a single staff-facing card with version history, not a persona library.
+
 Three jobs only:
 
-1. Scaffold (directory tree, stub files, audience working dirs).
-2. Project scope (Phase 1.5 brief expansion, Phase 2 1a constraints, Phase 2 1b open-question resolution, Phase 2 1d world-law finalization). Output: `project.constraints` block + `staff/showrunner/world-notes.md` + condition cards.
-3. Staff selection (audience ×3 + screen-writer / dramatist / auditor / editor / orchestrator-critic library defaults bound to this project). Output: `project.staff` block.
+1. **Scaffold** (directory tree, stub files, audience working dirs). Includes `staff/reviews/` (G6 — `/and-review` reports land here) and `staff/showrunner/` (for `staleness-log.md`, `cascade-checkpoint.md`, `memory.md`). Full scaffold tree:
+   ```
+   active-project/
+     actors/                         # populated by /and-cast Phase 4
+     warehouse/                      # locations + props + conditions (Phase 2 1d emits initial conditions)
+     audience/<aud-1>/  <aud-2>/  <aud-3>/   # working dirs for the three audience personas; LTM seeded from library cards
+     staff/
+       showrunner/  memory.md  staleness-log.md  cascade-checkpoint.md  world-notes.md
+       studio/      stm.md  state.md  vibes.md
+       auditor/     stm.md
+       fixer/       stm.md
+       margit/      stm.md
+       screen-writer/ stm.md
+       editor/      stm.md
+       reviews/                      # /and-review reports
+     theater/                        # bones + facets + dialogue (per chapter); populated downstream
+     draft/                          # /and-stitch output (per chapter)
+     polish/                         # not written by the current chain (polish-deferred)
+   ```
+2. **Project scope** (Phase 1.5 brief expansion, Phase 2 1a constraints, Phase 2 1b open-question resolution, Phase 2 1d world-law finalization). Output: `project.constraints` block + `staff/showrunner/world-notes.md` + condition cards.
+3. **Staff binding**. Audience trio bound from the three positional slugs. Non-audience staff bound from override flags if present, else from library defaults. Output: `project.staff` block populated.
 
 Does NOT do: cast, series chunk, structural prompts, substance signature, audit checkpoint.
 
@@ -619,11 +670,25 @@ Estimated size: ~50% of current `/and-project`.
 
 **Lift basis:** Open `archive/commands/and-project-pre-substance.md` Series Plan section + Phase 3 Present-results. Phases 2-4 below are content relocation from there. Phase 1 (structural prompts) is the only net-new authoring step.
 
-1. Phase 0 — Validate + mode select. Read `project:` block; abort if scope/staff incomplete. If `series.chunk` populated, prompt `revise`/`redo`. If downstream populated, surface cascade and offer staleness-marking.
-2. Phase 1 — Structural prompts. Interactive: book count, book length (chapters per book + scenes per chapter + bones per scene), cyclical?, POV, cross-book continuity, world evolution, series-end shape. Persist to `series.structure.*`.
-3. Phase 2 — Series chunk authoring. Screen-writer takes project scope + structure. Produces a brief substance-bearing prose paragraph (Star-Wars-trilogy-style). Substance implicit, not yet measured.
-4. Phase 3 — Review. Audience + dramatist accept/revise loop (3-try cap).
-5. Phase 4 — Persist `series.chunk` + `series.structure.*`. No checkpoint here.
+1. **Phase 0 — Validate + mode select.** Read `project:` block; abort if scope/staff incomplete. If `series.chunk` populated, prompt `revise`/`redo` (G2 — `/and-series revise` skips the prompt). If downstream populated, surface cascade and offer staleness-marking.
+2. **Phase 1 — Structural prompts** *(F6 — defaults in brackets; press enter to accept).* Seven interactive prompts with defaults sourced from `design/substance/delta-targets.md` where applicable:
+
+   | prompt | type | default | source / rationale |
+   |---|---|---|---|
+   | `book_count` | integer (>=1, multiple of 3 if cyclical) | **required, no default** | series scope decision; no library-defensible default |
+   | `chapters_per_book` | range "min-max" | `[4-8]` | `delta-targets.md` band; chapters are terminal consumption units |
+   | `scenes_per_chapter` | range | `[1-3]` | per intent-gaps item #2 (scenes are substantial) |
+   | `bones_per_scene` | range | `[5-15]` | per plan §"Bones-grain principle" (scene-action-sized) |
+   | `cyclical` | true/false | `[false]` | most series are non-cyclical; opt-in |
+   | `pov` | single \| multi \| rotating-per-book | **required, no default** | shape decision; affects `chapters[].pov_narrator` flow |
+   | `cross_book_continuity` | structured (recurring_antagonists / ongoing_subplots) | `[empty lists]` | empty default — user adds as needed |
+   | `world_evolution` | static \| evolving | `[evolving]` | most modern series evolve world-state across books |
+   | `series_end_shape` | definitive \| open-ended \| ambiguous \| tragic \| triumphant | **required, no default** | shape decision; affects book-N's substance Δ |
+
+   Each prompt prints the default in brackets; pressing enter accepts. Required prompts (`book_count`, `pov`, `series_end_shape`) re-prompt on empty input. Persist all answers to `series.structure.*`.
+3. **Phase 2 — Series chunk authoring.** Screen-writer takes project scope + structure. Produces a brief substance-bearing prose paragraph (Star-Wars-trilogy-style). Substance implicit, not yet measured.
+4. **Phase 3 — Review.** Audience + dramatist accept/revise loop (3-try cap).
+5. **Phase 4 — Persist `series.chunk` + `series.structure.*`.** No checkpoint here.
 
 Estimated size: ~100-130 lines total — ~50 net-new (structural prompts) + ~50-80 lifted from `/and-project` Series Plan section.
 
@@ -640,12 +705,53 @@ Single command body. Argument is the invocation level: `series` / `book <slug>` 
 1. **Phase 0 — Validate + mode select.** Read upstream chunk + parent substance commitment. Abort if upstream missing. If own output populated, prompt `revise` / `add` (where applicable) / `redo`. If downstream chunks or `/and-write` bones exist, surface cascade + offer staleness-marking.
 2. **Phase 1 — Read parent.** Series: read `series.chunk` + structural commitments. Book: read book chunk + per-book Δ. Chapter: read chapter chunk + per-chapter Δ.
 3. **Phase 2 — Author sub-chunks.** One prose paragraph per child unit. Series → per-book chunks. Book → per-chapter chunks. Chapter → per-scene chunks (substantial; scenes typically fill most of a chapter, 1–3 scenes per chapter default).
-4. **Phase 3 — Author sub-chunk substance contracts.** For each sub-chunk: which axes shift, direction, target Δ-magnitude, cost, density target. **Chapter level additionally authors per-scene `scene_conflict`** (protagonist_force / opposing_force / stakes_axis) so every scene has named opposition. **Chapter level also authors `chapters[].pov_narrator`** (per `series.structure.pov`: `single` → inherited from series; `rotating-per-book` → inherited from book; `multi` → picked per chapter from the cast roster); always populated on every chapter so `/and-write` Phase 7 can write the bones-file `narrator:` header without further lookup.
+4. **Phase 3 — Author sub-chunk substance contracts.** For each sub-chunk: which axes shift, direction, target Δ-magnitude, cost, density target. **Chapter level additionally authors per-scene `scene_conflict`** (protagonist_force / opposing_force / stakes_axis) so every scene has named opposition. **Chapter level also authors `chapters[].pov_narrator`** (per `series.structure.pov`: `single` → inherited from series; `rotating-per-book` → inherited from book; `multi` → picked per chapter from the cast roster); always populated on every chapter so `/and-write` Phase 7 can write the bones-file `narrator:` header without further lookup. **Book level Phase 3 additionally authors `chapters[].handoff_in` + `chapters[].handoff_out`** for every chapter under the book *(F7 — first-chapter fallback explicit).* For chapter N where N>1: `handoff_in.source_chapter = chapter N-1`; the four list fields (open_threads / world_state / character_state) are authored to mirror chapter N-1's `handoff_out` (the dramatist Phase 5 cross-check verifies the mirror is tight). For the **first chapter of the first book** (`handoff_in.source_chapter: null`): `open_threads: []` (empty — nothing carried over); `world_state` is seeded from `project.constraints.settings` (the world's starting conditions); `character_state` is seeded from `series.substance.state_axes[].start_rank` for the protagonist + any antagonist-perspective axes with declared starts. For the **first chapter of book N>1**: `handoff_in.source_chapter = last chapter of book N-1`; mirrors that chapter's `handoff_out`. The dramatist Phase 5 cross-check skips the *very first* chapter-pair (b01c01 has no prior pair to compare against); every other adjacent pair (within-book + cross-book at book boundaries) is checked.
 5. **Phase 4 — Level-specific extras.** Series: authors the signature itself (state axes, anchors, cost ledger, antagonist pressure). Book: authors the book drama statement. Chapter: authors the chapter dramatic shape (rising / climax / falling / hinge) and `chapters[].goal` — a one-line "what this chapter shows the audience" string distilled from the chapter's substance contract + dramatic-arc completion. The `goal` is the per-chapter north star Pass 4 (trim) and downstream `/and-facets` Phase 0 consume as the bones-file `goal:` header field.
+
+   **Substance questionnaire user-flow (B2 — series-level signature authoring).** Phase 4 at the **series** level is the only place the 1–9 archetype questionnaire (`design/substance/questionnaire.md`) enters the loop. The flow is **agent-proposes, user-edits, one-pass**:
+
+   - **Step 4a — Screen-writer proposes.** Screen-writer agent reads `project.brief` + `project.constraints` + `series.chunk` + `series.structure.*`. For each universal axis (~9 — wealth/health/community/emotional/capability/knowledge/reputation/agency/trust per Open Question 2's library default), it produces a `start_rank` and `end_rank` (1-9 each) per perspective (protagonist / antagonist / world), with one-line justification per rank citing the source text. Also drafts the cost-ledger entries (gain ↔ cost pairings) and antagonist-pressure entries. Persists a draft `series.substance.*` block.
+   - **Step 4b — User edits.** Phase 4 surfaces the draft as a YAML stub at `staff/showrunner/signature-draft.md` (rendered table view in shell output for review; full YAML on disk for edit). User reads, optionally edits any rank inline, optionally adds/removes axes (default catalog is recommended baseline, not mandatory), optionally rewrites a cost-ledger entry, and types `accept` (or runs `/and-substance series` again with the edited file in place).
+   - **Step 4c — Persist on accept.** Edited draft moves from `signature-draft.md` to `series.substance.*` in showrunner memory. Phase 5 review (audience + dramatist + auditor) runs against the accepted signature.
+
+   Avoids the failure mode of prompting the user through 30+ axis-by-perspective questions cold; preserves user authority over every rank. The questionnaire doc (`design/substance/questionnaire.md`) is the screen-writer's authoring rubric, not a user-facing prompt sequence — the questions guide the agent's proposal, not the user's keystrokes. Document the trace in `questionnaire.md` with a worked example showing draft → edits → accepted state.
 6. **Phase 5 — Chunk-quality review.** Audience + dramatist + auditor at this level. Accept/revise loop (3-try cap). **Audience:** does this chunk feel substantive — does the named Δ feel earned, the cost feel real, the meaningfulness land? `SUBSTANCE-FELT` vs `SUBSTANCE-FLAT-<axis>` vs `SUBSTANCE-SUSPECT-cheap-gain-<axis>`. **Dramatist:** is the chunk shape sound? Do the children fit within the parent's Δ? Scenes-not-too-small (chapter-level check)? Cyclical / cross-book / structural commitments honored? Chapter has dramatic-arc completion? **Book-level dramatist additionally verifies cross-chapter handoff** (carved in from intent-gaps item #6, s01e02/e03 "episodes barely fit together"): for every chapter pair (N, N+1) under the book, `chapters[N].handoff_out` is consistent with `chapters[N+1].handoff_in` — same open-threads list, same world-state items, same character-axis ranks at the boundary. Mismatches (orphan threads in `handoff_in`, dropped threads in `handoff_out`, character-axis discontinuity without an authoring cause) HARD-fail and force revise on the offending chapter chunks. **Auditor:** does the chunk text match the substance contract (no rank claim without described cause; cost-ledger consistency)?
 7. **Phase 6 — Persist.** Write chunks + contracts to showrunner memory at this level's nesting depth. **No bones at any level** — bones are written by `/and-write`.
 
-**`--cascade` flag (book/chapter levels).** Default off (manual level-by-level invocation). With `--cascade`, `/and-substance book b01` auto-fires `/and-substance chapter` for each chapter under b01, then `/and-write` for each chapter (each `/and-write` invocation reads the chapter's scenes and authors bones). Reviews still fire at each level; failure at any level halts the cascade. Useful for late-stage runs where the substance contract is settled and the user wants one command to drive everything to bones.
+   **Slug auto-generation (G3).** Each persist phase generates child slugs deterministically:
+   - `/and-substance series` Phase 6 generates `books[*].slug` as `b01`, `b02`, …, `bN` (`N = series.structure.book_count`).
+   - `/and-substance book b<NN>` Phase 6 generates `chapters[*].slug` as `b<NN>c01`, `b<NN>c02`, …, `b<NN>cM` (`M = books[b<NN>].structure.chapter_count`).
+   - `/and-substance chapter b<NN>c<MM>` Phase 6 generates `scenes[*].slug` as `b<NN>c<MM>s01`, …, `b<NN>c<MM>sP` (`P = chapters[b<NN>c<MM>].structure.scene_count`).
+   - `/and-write b<NN>c<MM>` Phase 7 generates `bones[*].slug` as `b<NN>c<MM>s<KK>n01`, …, `b<NN>c<MM>s<KK>nQ` (`Q = bone count per scene; n-prefix per schema YAML §"books[]" subsection`).
+   `add` mode appends to the existing list (next index continues monotonically). `redo` regenerates from index 1.
+
+   **Cost-ledger scene-anchor refinement (G4).** Phase 3 at the chapter level additionally refines `series.substance.cost_ledger[].anchor.{chapter, scene}` fields when a per-scene `substance_delta.cost` is paid by a specific scene under the chapter. (Series-level Phase 4 wrote `anchor.book` only; book-level Phase 3 may refine `anchor.chapter`; chapter-level Phase 3 refines `anchor.scene`.) Refinement is non-destructive — coarser anchors stay populated; finer anchors add on top so `/and-write` Phase 6 bone-gate resolves against the finest-grained populated field.
+
+**`--cascade` flag** *(F1 — scope extended to full draft; F8 — failure surfacing; G7 — chapter-level cascade semantics).* Default off (manual level-by-level invocation). With `--cascade`, the command drives the pipeline forward to `draft/<book>-<chapter>.md` for every chapter in scope:
+
+| Invocation | Cascade unwinds to |
+|---|---|
+| `/and-substance series --cascade` | per book under series: `/and-substance book` → per chapter under book: `/and-substance chapter` → `/and-write` → `/and-facets` → `/and-stitch` |
+| `/and-substance book b<NN> --cascade` | per chapter under b<NN>: `/and-substance chapter` → `/and-write` → `/and-facets` → `/and-stitch` |
+| `/and-substance chapter b<NN>c<MM> --cascade` | `/and-write b<NN>c<MM>` → `/and-facets b<NN>c<MM>` → `/and-stitch b<NN>c<MM>` (G7 — single-chapter convenience; degenerate but documented) |
+
+Rationale: prior bones-only cascade scope (`--cascade` stopping at `/and-write`) mismatched user mental-model ("drive everything to draft"). New scope cascades through facets + stitcher so the artifact at completion is `draft/<book>-<chapter>.md`. Reviews still fire at each level inside each command; failure at any level halts the cascade. Useful for late-stage runs where the substance contract is settled and the user wants one command to drive everything to ship.
+
+Checkpoint flush after every command completion (book persist / chapter persist / bones emit / facets emit / draft emit) so `/and-cut` mid-cascade preserves the exact resume point — see §"Re-runnability edge cases (F2)" for the cascade-checkpoint schema.
+
+**Cascade failure surfacing (F8).** When a cascade halts mid-way (any inner command FAILs), the user sees:
+
+```
+[failing command's normal failure output, including the offending finding(s)]
+
+Cascade halted at /and-write b01c03: 2 HARD findings (SUBSTANCE-FLAT-emotional ×1, COST-NOT-PAID ×1).
+Checkpoint: staff/showrunner/cascade-checkpoint.md (reason: halted-on-failure)
+Resume: /and-substance book b01 --cascade --resume
+```
+
+Two surfaces: (a) the failing command's normal failure output (so the user sees the actual finding), (b) a cascade-summary trailer with the checkpoint path and resume command. The cascade-summary trailer is what makes the checkpoint discoverable; without it the user has to remember the checkpoint file exists.
+
+**`--resume` flag.** `/and-substance <root> --cascade --resume` reads `cascade-checkpoint.md`, validates `root` matches `cascade.root`, validates checkpoint is not stale (warns + offers `--restart` if older than the root's `stale_since`), and re-fires from `next.command`. Without `--resume`, a fresh `--cascade` invocation that finds an existing checkpoint warns and prompts `--resume` vs. `--restart`.
 
 Estimated size: ~350-400 lines total — ~150-180 net-new (substance-contract authoring + series-level signature authoring + recursion glue + cascade flag) + ~200 lifted from `/and-season` Phases 1, 3.
 
@@ -653,12 +759,33 @@ Estimated size: ~350-400 lines total — ~150-180 net-new (substance-contract au
 
 **Lift basis:** Open `archive/commands/and-project-pre-substance.md` Phase 2 1c (Candidate menu + cast selection, lines 256-310) for Phases 1-4 below, and Phase 3 (Present results, lines 311-342) for Phase 5. Margit provisioning logic lifts from current `/and-project.md` Phase 1 step 4. The `revise`/`redo` decommission-routing is the only net-new authoring.
 
-1. Phase 0 — Validate + mode select. Read `series.chunk` + `series.structure.*` + `series.substance.*`. Abort if upstream missing. If `series.cast_roster` populated, prompt `revise` (swap/add/retire — untouched actors are preserved as-is; added actors flow through Phases 1–4 normally; retired actors are decommissioned by margit to `actors/<slug>-decommissioned-<timestamp>/`; swapped actors are retire+add in one pass) / `redo` (margit decommissions the full current roster, then re-run Phases 1–4 from scratch).
-2. Phase 1 — Substance-driven cast brief. Screen-writer composes brief from chunk + signature: which axes need which carriers. In `revise` mode, the brief is scoped to the requested swap/add/retire delta only.
-3. Phase 2 — Margit candidate menu (filtered from `cards/personas/INDEX.md`). Skipped for actors being retired.
-4. Phase 3 — Screen-writer selection + dramatist viability check. Viability check considers the full post-revise roster, not only the added actors.
-5. Phase 4 — Margit provisioning (actor working dirs, LTM/STM/state/vibes). Fresh provisioning for every added actor; untouched actors keep their existing working dirs unchanged.
-6. Phase 5 — Series-level audit checkpoint. Auditor (fork) against full picture (project scope + series chunk + structural commitments + signature + per-book Δ + cast). Result to user. On approval, `/and-substance book b01` next.
+**Invocation:**
+
+```
+/and-cast [revise|redo] [--retire <slug>]... [--add <slug>]... [--swap <old>=<new>]...
+```
+
+No positional args on a fresh run. `revise` / `redo` are optional positional mode args (G2 — both forms supported: bare `/and-cast` enters interactive mode-prompt at Phase 0; `/and-cast revise` skips the prompt and goes straight into revise). The `--retire` / `--add` / `--swap` flags (F2 — actor-selection mechanic) drive scripted revise; in their absence, Phase 0 enters an interactive editor (prints current roster, accepts a multi-line block — `retire: <slugs>`, `add: <slugs>`, `swap: <old>=<new>`) and the rest of the command scopes to the entered delta.
+
+1. **Phase 0 — Validate + mode select.** Read `series.chunk` + `series.structure.*` + `series.substance.*`. Abort if upstream missing. If `series.cast_roster` populated and mode is unset, prompt `revise` / `redo`. In `revise` mode: read the `--retire` / `--add` / `--swap` flags if present, otherwise prompt the user with the current roster + a multi-line entry block for the three delta lists. (Swap is sugar for retire+add in one pass.) Untouched actors are preserved as-is; retired actors are decommissioned by margit to `actors/<slug>-decommissioned-<timestamp>/`. In `redo` mode: margit decommissions the full current roster; Phases 1–4 re-run from scratch.
+2. **Phase 1 — Substance-driven cast brief.** Screen-writer composes brief from chunk + signature: which axes need which carriers. In `revise` mode, the brief is scoped to the requested swap/add/retire delta only.
+3. **Phase 2 — Margit candidate menu** (filtered from `cards/personas/INDEX.md`). Skipped for actors being retired.
+4. **Phase 3 — Screen-writer selection + dramatist viability check.** Viability check considers the full post-revise roster, not only the added actors.
+5. **Phase 4 — Margit provisioning** (actor working dirs, LTM/STM/state/vibes). Fresh provisioning for every added actor; untouched actors keep their existing working dirs unchanged.
+6. **Phase 5 — Series-level audit checkpoint** *(B3 — approval mechanic).* Auditor (fork) against full picture (project scope + series chunk + structural commitments + signature + per-book Δ + cast roster). Auditor report persists at `staff/reviews/series-audit-<timestamp>.md`. Phase 5 ends with a binary prompt:
+
+   ```
+   Series-level audit complete. <N> findings (<H> HARD, <S> SIGNAL, <T> TASTE).
+   Report: staff/reviews/series-audit-<timestamp>.md
+
+   Approve and proceed? [y/N/feedback]
+   ```
+
+   - **`y`** — persist `project.series_audit: { approved_at: <iso-timestamp>, approved_by: user, report_path: <path> }` to showrunner memory; exit cleanly with `next: /and-substance book b01` printed.
+   - **`N`** (default) — exit without approval; user reads the report, decides what to revise, runs `/and-cast revise <flags>` or `/and-series revise` or `/and-substance series revise` as appropriate. Approval block stays unset; downstream commands cannot run.
+   - **`feedback`** — opens a free-text entry the user fills with notes; the feedback is persisted to `staff/reviews/series-audit-<timestamp>-feedback.md` and `/and-cast` exits. User then runs the appropriate revise command, which reads the feedback file.
+
+   `/and-substance book b01` Phase 0 HARD-aborts if `project.series_audit.approved_at` is missing (the audit-checkpoint enforcement — plan Rule 7 made concrete). On any upstream re-run that invalidates the audit (`/and-series revise`, `/and-substance series revise/redo`, `/and-cast revise/redo`), the existing approval is stale-marked (`project.series_audit.stale_since: <iso-timestamp>`) and `/and-cast` Phase 5 must re-prompt for approval before downstream can re-run.
 
 Estimated size: ~150-180 lines total — ~30 net-new (revise/redo decommission-routing + checkpoint-payload extension) + ~120-150 lifted from `/and-project` Phase 2 1c and Phase 3.
 
@@ -688,13 +815,28 @@ Reads scene chunks + substance contracts produced by `/and-substance chapter`. *
 
    **Downstream-gate pre-verify** (HARD, blocks write): (a) **URI-DIALOGUE-COVERAGE-GATE** — every `speaks to` bone has an addressee and a speaker resolvable from the cast roster. (b) **URI-SCENE-WINDOW** — every bone lands inside exactly one scene's flat_id range; no dangling anchors; no scene-spanning bones. Both pre-verifications run before write; SIGNAL versions are tolerated and recorded. On pass, both artifacts ship; `/and-facets` Phase 0 finds the bones file ready and the scene-map facet pre-emitted.
 
-Estimated size: ~350-400 lines total — ~150 net-new (scene-decomposition + substance-contract verification + scene-map co-emit) + ~200-250 lifted from `/and-protolines-v2` (five-pass SVO body) and `/and-season` (bone-gate + Phase 7 emission logic). The size is roughly the same as the prior `/and-write` estimate; the framing change is that most of the body is lift, not original authoring.
+   **Emit-summary surfacing (F3 — SIGNAL discoverability).** On successful emit, Phase 7 prints a summary line to the user that makes SIGNAL findings discoverable:
+
+   ```
+   /and-write b01c01: PASS. <N> bones across <S> scenes. Bones file: theater/bones/b01-c01.md
+                              Scene-map: theater/facets/scene-map-b01-c01.md
+
+   Bone-gate verdict: PASS (<H> HARD: 0, <S> SIGNAL: 3, <T> TASTE: 0).
+   3 SIGNAL findings recorded — see `/and-review bones b01c01` to inspect, or
+                                  `/and-write b01c01 revise --from-signals` to address.
+   ```
+
+   The SIGNAL-count line only prints when SIGNAL count > 0. The two suggested follow-up commands are literal — the user can copy-paste. (Hole F1 introduced `--from-signals`; this surface is what makes it discoverable.)
+
+Estimated size: ~350-400 lines total — ~150 net-new (scene-decomposition + substance-contract verification + scene-map co-emit + emit-summary) + ~200-250 lifted from `/and-protolines-v2` (five-pass SVO body) and `/and-season` (bone-gate + Phase 7 emission logic). The size is roughly the same as the prior `/and-write` estimate; the framing change is that most of the body is lift, not original authoring.
 
 ### `/and-review` (router + thin wrappers over existing review primitives)
 
 **Lift basis:** Only the router and the Phase 0-4 shared shape are net-new (~80 lines). Every subcommand body is a thin wrapper that invokes a review primitive that already exists in the codebase. See the Asset reuse map's `/and-review` table above for the per-subcommand lift source. Key targets: `/and-season.md` Phase 6 (verdict subcommand), Phase 1 step 1e (chunk subcommand), Pass S10 (bone subcommand), Pass S1/S3.5 (contract subcommand), Phase 1 step 1g (consistency subcommand); `/and-facets.md` R1 fanout (facets subcommand); `design/shoot-v2/audience-review-originals-v2.md` (feedback subcommand); `/and-wrap.md` Phases 1-2 (prose subcommand — STUBBED-DEFERRED).
 
 Top-level router dispatches to one of N pre-defined review types. No authored writes; reports persist to `staff/reviews/<type>-<target>-<timestamp>.md`.
+
+**Bare-invocation discovery (F5).** `/and-review` with no subcommand prints the full subcommand table + a one-line usage hint per subcommand + a recommended next-action ("To verify your latest book is ship-ready, run `/and-review verdict <book-slug>`. To inspect SIGNAL findings on a chapter you just wrote, run `/and-review bones <chapter-slug>`.") — no review fires. Same behavior on `/and-review --help` and `/and-review help`.
 
 **Router subcommands:**
 
@@ -704,7 +846,7 @@ Top-level router dispatches to one of N pre-defined review types. No authored wr
 | `/and-review bone <slug>` | bone slug (b01c01s01n01) | auditor + audience-fork | Does the SVO actually cause the declared Δ (bonefide check)? Is the cost real (cost-ledger anchored)? Substance-flat? |
 | `/and-review contract <slug>` | any chunk slug | dramatist + auditor | Is the substance contract well-formed? Do per-axis Δ-magnitudes sum correctly to parent? Cost-ledger consistent? No rank claims without backing? |
 | `/and-review signature` | series only | audience + dramatist + auditor | Series signature health: are the axes the right axes? Anchors honest? Cost ledger paid across the arc? Antagonist pressure named per axis? |
-| `/and-review bones <chapter-slug>` | chapter slug | bones critics (SVO craft) + bone-gate logic | Per-bone axis-movement bonefide? Per-scene Δ delivered? Cost-paid? `SUBSTANCE-FELT`/`-FLAT` per scene. |
+| `/and-review bones <chapter-slug>` | chapter slug | bones critics (SVO craft) + bone-gate logic | Per-bone axis-movement bonefide? Per-scene Δ delivered? Cost-paid? `SUBSTANCE-FELT`/`-FLAT` per scene. Output includes per-bone SIGNAL list from `chapters[].scenes[].bones[].gate_verdict.signals[]` with the explicit suggestion "`/and-write <chapter> revise --from-signals` to address" — F3 SIGNAL discoverability surface. Re-fire clears SIGNALs that no longer apply. |
 | `/and-review facets <chapter-slug>` | chapter slug | per-facet rubric runners | Facet-by-facet review against rubric. |
 | `/and-review prose <chapter-slug>` | chapter slug | audience + auditor | **DEFERRED.** Felt-substance per scene + `SUBSTANCE-COVERAGE` audit on rendered prose. Not in scope until upstream chain produces drafts the user wants to spot-check. Listed here so the eventual subcommand has a home, but skipped during initial build. |
 | `/and-review cast` | — | dramatist + auditor | Roster substance-fit: does the roster have carriers for every signature axis perspective? Viability check. |
@@ -809,7 +951,15 @@ These were flagged as IMPORTANT spec gaps in the self-audit. Resolved in-plan ra
 Items flagged as DEFER in the self-audit. Not blockers; recorded so the implementer knows the team is aware.
 
 - **Dispatch budget.** Naive worst case under the revised plan (6 books × 6 chapters × 3 scenes × per-level reviews ×3 retries, plus per-chapter `/and-write` with internal bone-gate dispatches) is in the low hundreds of subagent dispatches per series — meaningfully lower than the prior plan's beat-level recursion (which multiplied dispatches by an additional 5× per scene). Mitigations available: per-level review parallelism (audience personas + dramatist + auditor fire concurrently — already the pattern), lower retry caps for `/and-write` revisions (capped at 2 instead of 3 since revise is targeted), `--cascade` flag with checkpoint flush every chapter (so `/and-cut` can resume). Treat as observation, not a redesign blocker; revisit after first end-to-end run produces real numbers.
-- **`/and-cut` interaction.** `/and-substance --cascade` should checkpoint after every chapter completes (i.e. after `/and-substance chapter` finishes a chapter's scenes, or after `/and-write` finishes a chapter's bones — whichever the cascade is currently at). `/and-cut` mid-cascade saves the resume point (`next: /and-write b01c04` or `next: /and-substance chapter b01c05`). Detail to land in the `/and-substance` command body, not in this plan.
+- **`/and-cut` interaction (F4 — resume command discoverability).** `/and-substance --cascade` checkpoints after every command-body completion inside the cascade (book persist / chapter persist / bones emit / facets emit / draft emit — see §"Re-runnability edge cases (F2)" schema). `/and-cut` mid-cascade reads the current checkpoint, writes `reason: halted-on-cut`, and its "you are here" exit summary prints the literal resume command from `cascade.next.command` so the user can copy-paste it next session:
+
+  ```
+  Cut at: /and-write b01c04 (in-progress, mid-cascade)
+  Checkpoint: staff/showrunner/cascade-checkpoint.md (reason: halted-on-cut)
+  Resume: /and-substance book b01 --cascade --resume
+  ```
+
+  Outside a cascade (i.e. `/and-cut` after a single command finished cleanly), the exit summary still prints `next:` from the just-completed command's natural successor in the chain (e.g. after `/and-write b01c01` finishes cleanly, `/and-cut` prints `next: /and-facets b01c01`). The `next:` line is the user's primary resume signal; the checkpoint file is the cascade-state on disk.
 - **Filesystem migration.** Active project `flea-bottom-dance` is out-of-scope; its existing `theater/proto-lines/...` layout is left alone. New projects use `theater/bones/<book>-<chapter>.md`. No migration script needed.
 - **Estimated sizes are loose.** `/and-substance` 350–450 lines (three invocation levels) and `/and-write` 400–500 lines (decomposition + SVO pipeline + bone-gate) are working estimates. Total command-body line count under the revised plan is similar to the prior plan — work just shifted from `/and-substance` to `/and-write`. Not a blocker — size will be what it is.
 
