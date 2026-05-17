@@ -81,6 +81,15 @@ Taylor's power MUST present as ambient-not-directed throughout this project. Thi
 - Taylor's active deployments must be rendered in ways that preserve plausible-deniability in the "ambient/involuntary" register. She does not openly deploy to witnesses who do not already have reason to believe in directed control. Mira knows something is wrong about the way animals respond to Taylor; Mira does not know the control is directed.
 - The auditor must check: is this power use consistent with "lunatic who animals respond to strangely" rather than "woman who explicitly commands insects"? If not, the maintenance of the witch-label-as-cover is at risk.
 
+## AU-Divergence Legibility (LAW — OQ-1 Resolution)
+
+The ~100–150m hard cap is an AU divergence from canon shard behavior (canon allows organic range expansion; this project does not). **This divergence MUST be legible in the prose — named, observed, or acknowledged by a POV character — and must not be silently elided.**
+
+- Taylor must register the cap as a limit at least once in the text, in a manner visible to the reader. A single clear moment of recognition (testing the edge, noting the hard boundary, acknowledging to herself the ceiling does not move) satisfies this requirement.
+- The acknowledgment does not need to be a dedicated scene; it may be embedded in an action sequence or interiority moment. It must be present.
+- Silently writing the cap as if it is simply "Taylor's range in this city" without any character-level recognition of its distinctness from prior operation is a violation of this constraint.
+- Auditor check: is there at least one prose moment where the range cap registers as a limit, whether through Taylor's direct interiority, a test, or an acknowledgment to another character?
+
 ## Interaction Notes
 
 **With `cond-fauna-control-rules` (base card):** The base card's species scope, cost curve, and wrongness-perception rules carry without modification. Only range, Khepri-mantle status, and the glass-candle arc are overridden here.
