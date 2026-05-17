@@ -22,3 +22,14 @@ Verdicts:
 - Option 3 (Maegor's Holdfast, "spy"): REVISE. Two days of detention is two days the prose must account for what she knows and doesn't act on. "She knows without choosing to know" in a detention cell requires active narrative management to avoid an either/or: either she uses the ambient knowledge (reveal scene, breaks the premise) or the prose explains why she doesn't (exposition). Neither is clean.
 
 Pattern updated: The canonical legibility of the identity-handle matters — observers must misread her in a way that is internally consistent with Planetos interpretive frames. "Witch" earns that. The arrival moment is where AU-divergence acknowledgment can be embedded in prose; Option 2 is the only arrival where the divergence is demonstrable without a dedicated exposition beat.
+
+## Round 3 — OQ-3 Plan Review (2026-05-17, /and-project Phase 1b)
+
+Topic: Taylor Hebert time-of-arrival within pre-Dance window. Three options (Dragon Gate arrival, witch-label, block-cap, settled from prior rounds).
+
+Verdicts:
+- Option A (126 AC late summer, ~3 years before Viserys dies): ACCEPT. Three years gives grief-shaped recovery room that this reader will believe. Post-Khepri decommissioned state does not resolve fast; canon grief cycles in Worm are long and depression is not a recovery arc in early chapters. Three years also gives the witch-label compound time sufficient for slow-accumulation shard-behavior signaling — AU divergence demonstrable in prose at the pace the text needs, not squeezed into political noise. War off-page at close is clean: no canon events to contradict, no timeline pressure to accelerate Taylor's functional-actor status.
+- Option B (127 AC early winter, ~18 months): REVISE. Eighteen months compresses grief-to-functional-actor into a period where faction-bleeding noise is already present. Political escalation competes with the shard-behavior-as-observable-signal register this reader needs. The AU divergence may not get its naming moment before the political temperature crowds it out. Too tight.
+- Option C (128 AC autumn, ~6-8 months): REVISE. Open political crisis means the book cannot pace slowly. A Taylor operationally coherent at month two post-Khepri is not canonically supported — that is not how that works. Witch-label compound time is minimal; AU divergence acknowledgment would need to be rushed. The grief-shaped pacing that earns this character's functional-actor arc is structurally incompatible with a crisis-majority book.
+
+Pattern updated: Time architecture must be long enough to honor the grief-paced recovery this character canonically requires AND to let the witch-label's slow compound function as Worm-style threat-accumulation. Option A is the only option where both demands can be met without the text having to argue for them. Option A is also the only option where no canon behavior is being rushed or invented to fit political timeline pressure.

@@ -25,6 +25,12 @@ BEHAVIOR: Taylor is grief-shaped — father dead, team gone, mission gone, ident
 
 LAW (OQ-1 resolved): Taylor arrives with her insect-control intact but spatially range-capped to approximately one city block. Khepri-vector is inert (no parahumans exist in Planetos). She knows without choosing to know within her cap, and not at all outside it. The cap is a physical constant of her condition in this world, not a plot brake — the prose treats it as fact, not contrivance. This is an AU divergence from canon shard behavior; the divergence must be legible in the text (named, observed, or acknowledged) and not silently elided. The cap is the structural enforcer of the foreclosure theme: it forces Taylor to use people as reach-extenders, and that use is the foreclosure mechanism.
 
+LORE (OQ-2 resolved): Taylor's arrival is mid-catastrophe — a market fire near Dragon Gate, the eastern landward entrance to King's Landing. She arrives disoriented in open ground; the insects of the block respond to her distress without her directing them (flies and beetles lift visibly toward the heat). Three gold cloaks on riot-control see; a septon shouts "witch." She is held overnight in the Dragon Gate guardhouse, questioned in Old Valyrian she does not speak, released the next morning as "lunatic-not-worth-paperwork" on a Gold Cloak captain's word.
+
+LAW (OQ-2 resolved): Taylor's operational territory is the Dragon Gate market-and-gate block — merchants, travelers, dockyard-edge traffic, and the City Watch. Not Flea Bottom; not the Red Keep proper. The block is mixed-class, gate-adjacent, and surveilled-from-above by the Watch as a matter of routine.
+
+LAW (OQ-2 resolved): Taylor's identity-handle in King's Landing is "the lunatic woman near Dragon Gate, the one the septon called a witch." This label is permanent operational infrastructure. She cannot correct it without disclosing what she actually is, and any disclosure forecloses the leverage the misread provides. She is filed as foreign (does not speak Westerosi cleanly), possibly mad, possibly cursed, and not currently worth the Watch's paperwork — a status that can be revoked.
+
 ## Tone / register constraints
 
 TONE: Grimdark with honest weight, not aestheticized cruelty. Bleakness must be earned by causal chains the reader can reconstruct.
