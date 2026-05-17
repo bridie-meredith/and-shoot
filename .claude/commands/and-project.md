@@ -1,8 +1,8 @@
 ---
-description: Activate a new and-shoot project. Scaffolds active-project/, runs boundary-scoping (Phase 1.4 checkpoint), world-building, and series planning (steps 1a–1d + series plan), and presents output for human audit. Season planning is out of scope — run /and-season s01 after activation (Phase 1 will auto-plan the season since no plan yet exists). No titles. Usage: /and-project ["<brief>"]
+description: Activate a new and-shoot project. Scaffolds active-project/, runs boundary-scoping (Phase 1.4 fork), taste selection (Phase 1.5 taste-judge), world-building, and series planning (steps 1a–1d + series plan), and presents output for human audit. Season planning is out of scope — run /and-season s01 after activation. No titles. Usage: /and-project ["<brief>"]
 ---
 
-Full project activation for the and-shoot pipeline. Phases: scaffold (mechanical, direct), boundary scoping (fork; checkpoint), brief expansion (screen-writer), audience selection, planning (you orchestrate directly). **Two human checkpoints:** boundary-scope (Phase 1.4, before any editorial work) and series-level audit (Phase 3, after planning). The boundary-scope checkpoint exists to prevent the orchestrator from interpolating load-bearing decisions (patron identity, faction, world-physics calibrations, scope, timeline, closing image, etc.) on top of the user's prompt without surfacing them. Brief expansion and all downstream planning run inside the bounds the user confirms at Phase 1.4.
+Full project activation for the and-shoot pipeline. Phases: scaffold (mechanical, direct), boundary scoping (isolated fork), taste selection (taste-judge impersonator fork), brief expansion (screen-writer), audience selection, planning (you orchestrate directly). **Single human checkpoint:** series-level audit (Phase 3, after planning). Boundary scope and taste selection both run as isolated forks before any editorial work — the boundary fork enumerates what the prompt fixed vs. what it left open, and the taste-judge picks story-type and archetypes from the boundary fork's menus by entertainment fit. The taste-judge is a single impersonator dispatch loading `staff/audience/taste-judge/card.md` (the user's pre-installed stand-in card); the user is not asked to select. The orchestrator never picks inline — that contamination path is what these two forks exist to prevent.
 
 **Scope.** /and-project ends at the series-level audit. Season planning (drama, vibe-cloud delta, content beats) is owned by `/and-season <slug>` Phase 1, which auto-fires when no `season-<slug>-plan.md` exists. After human approval at the audit checkpoint, the next command is `/and-season s01` (which plans the season then continues into bone authoring + interpretive split). Separation of duties: /and-project = world + series; /and-season = season planning + bone authoring + interpretive split.
 
@@ -143,9 +143,9 @@ Scaffold complete. Running boundary scope.
 
 ---
 
-## Phase 1.4 — Boundary scoping (fork; first human checkpoint)
+## Phase 1.4 — Boundary scoping (fork; isolated)
 
-This phase exists to surface the load-bearing decisions implicit in the brief BEFORE any editorial work begins. It runs as an isolated fork — never inline. The main session does not contaminate the boundary analysis with its own interpolations; it only reads the fork's report, presents it, captures user response, and writes the binding sheet.
+This phase exists to surface the load-bearing decisions implicit in the brief BEFORE any editorial work begins. It runs as an isolated fork — never inline. The fork writes its report and the pipeline continues; the user is not asked to select anything at this phase. Selection happens at Phase 1.5 via the taste-judge dispatch.
 
 **Critical rule: NEVER INLINE.** All boundary analysis happens inside the fork. If the main session ever does its own boundary analysis (e.g., "let me also think about what's required..."), the isolation property is broken and downstream decisions will silently carry the contamination.
 
@@ -167,44 +167,65 @@ The fork writes its full report to `active-project/staff/showrunner/boundary-sco
 
 ### 2. Read the report
 
-Main session reads `boundary-scope.md`. **Do not re-analyze, re-rank, or compress.** If the fork enumerated 22 open parameters, the user sees 22. Compression is a contamination vector — deciding which open parameters are "important enough to show" is an editorial decision under the guise of presentation.
+Main session reads `boundary-scope.md` for handoff to Phase 1.5. **Do not re-analyze, re-rank, or compress.** Do not pick from the menus. Do not present anything to the user. Compression and pre-selection by the orchestrator are both contamination vectors — the taste-judge at Phase 1.5 sees the fork's report as the fork produced it.
 
-### 3. Present checkpoint to the human
+### 3. Print phase-complete
 
 ```
---- BOUNDARY SCOPE — Phase 1.4 checkpoint ---
-
-[full contents of boundary-scope.md surfaced near-verbatim;
-trim only purely-mechanical headers; preserve every list item]
-
-Respond:
-  APPROVE-OPEN  — proceed with all open parameters genuinely open
-  SELECT        — pick a story-type and/or pin open parameters.
-                  Format: "story-type: <name>. pinned: <key>: <value>, ..."
-  REVISE        — supply additional prompt context or name a fork
-                  misreading; fork will re-run on a fresh isolated context
+Boundary scope written. Dispatching taste-judge.
 ```
 
-### 4. Handle user response
+---
 
-**APPROVE-OPEN** → go to step 5 with `story_type: open`, no pinned parameters.
+## Phase 1.5 — Taste selection (taste-judge fork; isolated)
 
-**SELECT** → parse the user's response. For each pinned parameter:
-- Validate that the name appears in the fork's OPEN PARAMETERS list.
-- Validate that the value is admissible per the fork's enumerated value-kind for that parameter.
-- If the user pins a name the fork did not enumerate, surface a sub-checkpoint before proceeding (the user may want to revise; do not silently expand the open-parameters set).
-- If the user pins a value the fork did not enumerate but is plausibly within the admissible value-kind, accept it; otherwise surface a sub-checkpoint.
+The taste-judge picks story-type and archetypes from the menus the boundary-scope fork produced. The user does not pick — a single stand-in agent picks based on entertainment fit. This is the design decision that keeps the pipeline moving without forcing the user to choose between equally-valid framings, while still surfacing those framings (via `boundary-scope.md`) for review at the Phase 3 series-level audit if the user wants to redirect.
 
-Then go to step 5 with the validated selections.
+**Critical rule: SINGLE AGENT, ISOLATED FORK.** The taste-judge is one impersonator fork loading one persona card — the user-stand-in card. Not the audience triad (the triad's job is plan review, not menu pick). Not an inline main-session decision (that defeats the purpose — main session interpolation is what Phase 1.4 was added to prevent).
 
-**REVISE** → rename existing `boundary-scope.md` → `boundary-scope.r1.md` (or `.r2.md` etc. on subsequent revisions). Re-dispatch the fork in a NEW isolated context with `<original brief> + <user's revision notes>`. The new fork MUST NOT read any prior `boundary-scope.r*.md` files. Loop back to step 2.
+### 1. Locate the taste-judge persona card
+
+The user-stand-in persona card lives at `staff/audience/taste-judge/card.md`. It is pre-installed (not project-scoped) and represents the user's entertainment taste as a single persona. If absent, halt Phase 1.5 and escalate to the user with: "Taste-judge persona card not found. Author `staff/audience/taste-judge/card.md` representing your entertainment taste, then re-run /and-project from Phase 1.5."
+
+### 2. Dispatch the taste-judge
+
+Use the Agent tool with `subagent_type: impersonator`. Dispatch ONE fork. The fork's prompt MUST:
+
+- Identify the persona card path: `staff/audience/taste-judge/card.md`.
+- Identify the input path: `active-project/staff/showrunner/boundary-scope.md`.
+- Frame the task as a meta-decision dispatch — explicitly NOT a show-file line. "You are loading this persona for a one-shot taste decision. Read the boundary-scope. Pick from each menu by entertainment fit, as that persona would. Write your picks + one-sentence reason each to the taste-selection file. Do not produce a show-file line. Do not write to any file other than the taste-selection path."
+- Require these output sections, written to `active-project/staff/showrunner/taste-selection.md`:
+  1. **Story-type pick** — the chosen story-type from the fork's STORY TYPE menu. One sentence: why this is most entertaining for the persona.
+  2. **Archetype picks (per role)** — for each role the fork enumerated, the chosen archetype. One sentence per role: why this archetype is most entertaining for the persona.
+  3. **Notes** — optional. Any tension the persona felt between story-type and archetype fit; any open parameter the persona has a strong preference on (advisory only — not pinning).
+
+Length budget: under 400 words.
+
+### 3. Read the taste-judge's picks
+
+Main session reads `taste-selection.md`. Validate that:
+- Story-type pick appears in the boundary-scope's STORY TYPE menu (verbatim slug or near-verbatim).
+- Each archetype pick appears in the boundary-scope's corresponding role menu.
+
+If a pick is off-menu, dispatch the taste-judge again with a constraint clarification ("your prior pick `<name>` is not in the menu; pick from these options: <list>"). Two retries max. After two retries, escalate to user.
+
+### 4. Print the picks (informational; no checkpoint)
+
+Print a one-line summary of the picks for transparency. This is NOT a checkpoint — the pipeline does not pause. Format:
+
+```
+Taste-judge picks:
+  story-type: <chosen>
+  archetypes: <role>: <pick>; <role>: <pick>; ...
+Continuing.
+```
 
 ### 5. Write the prompt-binding sheet
 
 Write `active-project/staff/showrunner/prompt-binding.md`:
 
 ```
-# Prompt Binding Sheet — generated at Phase 1.4 checkpoint
+# Prompt Binding Sheet — generated at Phase 1.5
 # This is the canonical input for all downstream phases.
 
 ## Original prompt (verbatim)
@@ -213,15 +234,17 @@ Write `active-project/staff/showrunner/prompt-binding.md`:
 ## Boundaries (fixed by prompt — verbatim from boundary-scope.md §1)
 <copied verbatim from the fork's report>
 
-## User checkpoint response: <APPROVE-OPEN | SELECT>
+## Story-type (taste-judge pick at Phase 1.5)
+<chosen-name>
+reason: <one-sentence reason from taste-selection.md>
 
-## Story-type
-<chosen-name | open>
+## Archetype picks per role (taste-judge picks at Phase 1.5)
+- <role>: <pick> — <reason>
+- <role>: <pick> — <reason>
+...
 
 ## Pinned open parameters
-- <name>: <value>
-- <name>: <value>
-(or: none)
+(none at Phase 1.5; pinning is reserved for user override at the Phase 3 audit checkpoint)
 
 ## Remaining open parameters
 - <name>
@@ -234,21 +257,21 @@ The binding sheet is the operative contract for everything downstream. Brief-exp
 ### 6. Print phase-complete
 
 ```
-Boundary scope confirmed. Binding sheet written.
+Taste selection written. Binding sheet written.
 Running brief expansion within the confirmed bounds.
 ```
 
 ---
 
-## Phase 1.5 — Brief expansion
+## Phase 1.6 — Brief expansion
 
-**If no brief was provided (random-brief mode):** before dispatching screen-writer, tell screen-writer to generate the brief. Screen-writer reads `staff/audience/INDEX.md` and `cards/` to get a sense of available material, then proposes any premise — any genre, any source world, any structural register. No constraints on content. Screen-writer writes the generated brief to `active-project/staff/showrunner/brief-generated.md`. Use this as the brief for all subsequent steps. In random-brief mode, run Phase 1.4 (boundary scope) on the generated brief BEFORE this expansion — the generated brief is just another brief.
+**If no brief was provided (random-brief mode):** before dispatching screen-writer, tell screen-writer to generate the brief. Screen-writer reads `staff/audience/INDEX.md` and `cards/` to get a sense of available material, then proposes any premise — any genre, any source world, any structural register. No constraints on content. Screen-writer writes the generated brief to `active-project/staff/showrunner/brief-generated.md`. Use this as the brief for all subsequent steps. In random-brief mode, run Phase 1.4 (boundary scope) AND Phase 1.5 (taste selection) on the generated brief BEFORE this expansion — the generated brief is just another brief.
 
-Dispatch screen-writer with the brief AND the binding sheet at `active-project/staff/showrunner/prompt-binding.md`. Screen-writer reads the binding sheet first. Screen-writer does **not** generate a plan. It maps the concept-space the brief opens — the full range of stories this brief could become INSIDE THE BOUNDS the user confirmed at Phase 1.4.
+Dispatch screen-writer with the brief AND the binding sheet at `active-project/staff/showrunner/prompt-binding.md`. Screen-writer reads the binding sheet first. Screen-writer does **not** generate a plan. It maps the concept-space the brief opens — the full range of stories this brief could become INSIDE THE BOUNDS established at Phase 1.4 and the story-type/archetype picks made at Phase 1.5.
 
 **Binding-sheet discipline:**
-- Alternative framings must respect the chosen story-type. If `story-type: open`, framings may span the fork's 2–3 story-type options; if a story-type is chosen, framings stay inside it.
-- Building blocks must respect pinned open parameters. A pinned parameter is a decided fact for this expansion, not a variable to range over.
+- Alternative framings must respect the chosen story-type. Framings stay inside the taste-judge's pick.
+- Building blocks must respect the archetype picks. The chosen archetypes for each role are decided facts for this expansion, not variables to range over.
 - Adjacent concepts and unframed material can range freely over remaining-open parameters; this is where the expansion does its most useful work.
 
 Screen-writer produces three sections:
@@ -272,9 +295,11 @@ Brief expansion complete. Selecting audience.
 
 ---
 
-## Phase 1.6 — Audience selection
+## Phase 1.7 — Audience selection
 
 Read `staff/audience/INDEX.md`. From the **Full personas** table, select 3 personas whose axes best cover the story's subject matter, tone, and genre expectations as revealed by the brief and brief expansion.
+
+**Note:** the audience triad selected here is for plan-review duty (in 1b, 1c, series plan). The taste-judge at Phase 1.5 is a SEPARATE single-persona dispatch loading `staff/audience/taste-judge/card.md` — do not confuse the two roles. The taste-judge picks story-type and archetypes from a menu; the audience triad reviews plans and lines for entertainment and quality.
 
 Selection criteria:
 - **Coverage:** the 3 should cover different reader axes. Do not select three momentum-focused or three character-focused personas — variety across axes produces more useful signal.
@@ -473,4 +498,5 @@ If there are escalations requiring human decision, present them before the audit
 - Season planning is not part of activation. Activation ends at the series-level audit. Human approval at the audit checkpoint triggers `/and-season s01`, whose Phase 1 auto-plans the season (drama + vibe-cloud delta + content beats) before continuing into bone authoring + interpretive split into episodes (multiple of 3).
 - No titles are authored at any planning level (series, season, beat, episode). Slugs only.
 - **Boundary-scope fork must never run inline.** The fork's isolation is the load-bearing property that prevents the orchestrator from contaminating boundary analysis with its own interpolations. If the main session ever does "let me also think about what's required from the brief" outside the fork, the property is broken and downstream phases will silently carry the contamination. Re-dispatch a fresh fork; never substitute the main session.
-- **The prompt-binding sheet is the contract.** Downstream phases read `prompt-binding.md`, not the raw brief. The brief is preserved verbatim inside the binding sheet for traceability; phases consume the synthesized contract. Bypassing the binding sheet to re-read the brief is equivalent to re-litigating Phase 1.4 silently.
+- **The prompt-binding sheet is the contract.** Downstream phases read `prompt-binding.md`, not the raw brief. The brief is preserved verbatim inside the binding sheet for traceability; phases consume the synthesized contract. Bypassing the binding sheet to re-read the brief is equivalent to re-litigating Phase 1.4/1.5 silently.
+- **Taste-judge persona card.** Phase 1.5 requires `staff/audience/taste-judge/card.md` to exist. This card represents the user's entertainment taste as a single persona; it is pre-installed (not project-scoped) and reused across every /and-project run. If the user wants to redirect what counts as "entertaining," they edit this card — not the /and-project command, not the per-project artifacts. Until this card is authored, Phase 1.5 escalates and the pipeline halts.
