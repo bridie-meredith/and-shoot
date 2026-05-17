@@ -2,6 +2,24 @@
 
 ---
 
+## Phase 1c Step 6 — Actor vibes.md population
+
+**Date:** 2026-05-17
+**Operation:** Populated 9 actor vibes.md files. All non-stub. Special discipline applied to Taylor (flicker-texture + Worm-weight), Vaegon (doppelganger-mirror), Edwyn (archival deduction-path), Lyra (cold-render-not-pathos).
+
+**Status per actor:**
+- `taylor-hebert-flea-bottom-mirror`: already populated (9 keys; flicker-texture and gold-morning-weight mandatory keys confirmed present)
+- `rhaenys-targaryen`: already populated (7 keys)
+- `oc-vaegon-targaryen`: already populated (7 keys; doppelganger-mirror key confirmed present)
+- `oc-lyra-targaryen-ward`: already populated (6 keys; cold-render key confirmed present)
+- `ulf-the-white`: already populated (5 keys)
+- `oc-maester-edwyn`: already populated (7 keys; archival-distance and deduction-path keys confirmed present)
+- `oc-renderer-flea-bottom`: already populated (5 keys)
+- `oc-flea-bottom-boy`: written this step (5 keys)
+- `oc-apothecary-assistant`: written this step (5 keys)
+
+---
+
 ## Phase 1c Step 5 — Location card authoring and warehouse provisioning
 
 **Date:** 2026-05-17
