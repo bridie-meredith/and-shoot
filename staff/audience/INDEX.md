@@ -1,10 +1,16 @@
 # Audience Persona Library
 
-18 personas available. 3 are selected per project at activation and placed in `active-project/audience/`.
+19 personas available. 3 are selected per project at activation for plan-review duty and placed in `active-project/audience/`. One additional persona — `taste-judge` — is reserved for single-card menu selection at /and-project Phase 1.5; it is loaded directly from this library and never copied into a project.
 
-Default starting cast: `cape-fic-reader`, `literary-snob`, `pulp-enthusiast` — covers character-stakes, voice/register, and plot momentum axes.
+Default plan-review starting cast: `cape-fic-reader`, `literary-snob`, `pulp-enthusiast` — covers character-stakes, voice/register, and plot momentum axes.
 
-## Full personas (ready to use)
+## Reserved single-card personas
+
+| Slug | Role | Notes |
+|------|------|-------|
+| taste-judge | /and-project Phase 1.5 menu picks — story-type + archetype selection | user-stand-in; composes engaged-reader + craft-skeptic + literary-snob; edited to redirect what counts as "entertaining" |
+
+## Full personas (ready to use for plan review)
 
 | Slug | Axis | Notes |
 |------|------|-------|

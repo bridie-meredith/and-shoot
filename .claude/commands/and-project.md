@@ -2,7 +2,7 @@
 description: Activate a new and-shoot project. Scaffolds active-project/, runs boundary-scoping (Phase 1.4 fork), taste selection (Phase 1.5 taste-judge), world-building, and series planning (steps 1a–1d + series plan), and presents output for human audit. Season planning is out of scope — run /and-season s01 after activation. No titles. Usage: /and-project ["<brief>"]
 ---
 
-Full project activation for the and-shoot pipeline. Phases: scaffold (mechanical, direct), boundary scoping (isolated fork), taste selection (taste-judge impersonator fork), brief expansion (screen-writer), audience selection, planning (you orchestrate directly). **Single human checkpoint:** series-level audit (Phase 3, after planning). Boundary scope and taste selection both run as isolated forks before any editorial work — the boundary fork enumerates what the prompt fixed vs. what it left open, and the taste-judge picks story-type and archetypes from the boundary fork's menus by entertainment fit. The taste-judge is a single impersonator dispatch loading `staff/audience/taste-judge/card.md` (the user's pre-installed stand-in card); the user is not asked to select. The orchestrator never picks inline — that contamination path is what these two forks exist to prevent.
+Full project activation for the and-shoot pipeline. Phases: scaffold (mechanical, direct), boundary scoping (isolated fork), taste selection (taste-judge single-card critic fork), brief expansion (screen-writer), audience selection, planning (you orchestrate directly). **Single human checkpoint:** series-level audit (Phase 3, after planning). Boundary scope and taste selection both run as isolated forks before any editorial work — the boundary fork enumerates what the prompt fixed vs. what it left open, and the taste-judge picks story-type and archetypes from the boundary fork's menus by entertainment fit. The taste-judge is a single audience/critic dispatch loading `staff/audience/taste-judge/card.md` in single-card configuration (the user's pre-installed stand-in card); the user is not asked to select. The orchestrator never picks inline — that contamination path is what these two forks exist to prevent.
 
 **Scope.** /and-project ends at the series-level audit. Season planning (drama, vibe-cloud delta, content beats) is owned by `/and-season <slug>` Phase 1, which auto-fires when no `season-<slug>-plan.md` exists. After human approval at the audit checkpoint, the next command is `/and-season s01` (which plans the season then continues into bone authoring + interpretive split). Separation of duties: /and-project = world + series; /and-season = season planning + bone authoring + interpretive split.
 
@@ -181,7 +181,7 @@ Boundary scope written. Dispatching taste-judge.
 
 The taste-judge picks story-type and archetypes from the menus the boundary-scope fork produced. The user does not pick — a single stand-in agent picks based on entertainment fit. This is the design decision that keeps the pipeline moving without forcing the user to choose between equally-valid framings, while still surfacing those framings (via `boundary-scope.md`) for review at the Phase 3 series-level audit if the user wants to redirect.
 
-**Critical rule: SINGLE AGENT, ISOLATED FORK.** The taste-judge is one impersonator fork loading one persona card — the user-stand-in card. Not the audience triad (the triad's job is plan review, not menu pick). Not an inline main-session decision (that defeats the purpose — main session interpolation is what Phase 1.4 was added to prevent).
+**Critical rule: SINGLE AGENT, ISOLATED FORK.** The taste-judge is one audience/critic fork loaded with one persona card — the user-stand-in card. The audience class is the right dispatch because the critic already does what's needed with a persona card: load it, read the input, return a verdict (here: menu picks + per-pick reason). Single-card config, not the standing 3-persona plan-review triad — the plan-review triad is a separate Phase 1.7 selection. Not an inline main-session decision (that defeats the purpose — main session interpolation is what Phase 1.4 was added to prevent).
 
 ### 1. Locate the taste-judge persona card
 
@@ -189,11 +189,11 @@ The user-stand-in persona card lives at `staff/audience/taste-judge/card.md`. It
 
 ### 2. Dispatch the taste-judge
 
-Use the Agent tool with `subagent_type: impersonator`. Dispatch ONE fork. The fork's prompt MUST:
+Use the Agent tool with `subagent_type: audience`. Dispatch ONE fork in single-card configuration. The fork's prompt MUST:
 
-- Identify the persona card path: `staff/audience/taste-judge/card.md`.
+- Identify the persona card path: `staff/audience/taste-judge/card.md`. This is the only persona loaded for this dispatch — not the project's 3-persona triad.
 - Identify the input path: `active-project/staff/showrunner/boundary-scope.md`.
-- Frame the task as a meta-decision dispatch — explicitly NOT a show-file line. "You are loading this persona for a one-shot taste decision. Read the boundary-scope. Pick from each menu by entertainment fit, as that persona would. Write your picks + one-sentence reason each to the taste-selection file. Do not produce a show-file line. Do not write to any file other than the taste-selection path."
+- Frame the task as menu selection. "Read the boundary-scope. Apply the persona's selection discipline (§ in the card). Pick one option per menu — story-type, then each archetype role. One sentence of reason per pick, naming the structural fit, not the taste preference. Write picks to the taste-selection file. Do not write to any other file. Do not return prose review; return picks."
 - Require these output sections, written to `active-project/staff/showrunner/taste-selection.md`:
   1. **Story-type pick** — the chosen story-type from the fork's STORY TYPE menu. One sentence: why this is most entertaining for the persona.
   2. **Archetype picks (per role)** — for each role the fork enumerated, the chosen archetype. One sentence per role: why this archetype is most entertaining for the persona.
