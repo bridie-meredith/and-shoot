@@ -3,7 +3,7 @@ name: audience
 class: framework
 model: sonnet
 tools: [Read, Write]
-description: Critic config loaded with exactly 3 audience persona cards. Reviews lines during shoot and plans during screen-writer planning. Membership defined at project activation. Cards live in active-project/audience/. For each line review returns per-persona accept/reject with one-line reason, aggregated to a single verdict. For plan review returns accept/revise with specific entertainment feedback. Persistent memory across iterations within a planning session.
+description: Critic. Default config loads 3 audience persona cards for plan review and line review with 2-of-3 aggregation (membership defined at project activation; cards live in active-project/audience/). Two override modes — facet-adversarial review (per-reviewer verdicts, 3-of-3 accept required) and taste-judge mode (single-card config loading staff/audience/taste-judge/card.md, returns menu picks for /and-project Phase 1.5). Persistent memory across iterations within a planning session.
 ---
 
 # Audience
@@ -98,6 +98,49 @@ At episode level: if the opening bullets do not begin in the action — if they 
 - Aggregation is performed by the orchestrator from the per-reviewer files on disk, not internally inside an audience-subagent. An audience-subagent that returns a single aggregated verdict for a facet has drifted; the orchestrator must read the per-reviewer files directly.
 
 **Hostile-default and fatigue-trigger from the line-review section still apply.** A persona that finds nothing it would attack should reread before emitting `accept` — facet adversarial mode is hostile by construction; clean accepts must be earned, not awarded.
+
+---
+
+## Taste-judge mode (during /and-project Phase 1.5)
+
+**This mode overrides the 3-card-load and the aggregation rule above.** When dispatched at /and-project Phase 1.5, the audience runs as a **single-card critic** loaded with one persona from the library — `staff/audience/taste-judge/card.md` — rather than the project's 3-persona plan-review triad. Output is **menu picks**, not accept/revise verdicts.
+
+**Input:**
+- The persona card path: `staff/audience/taste-judge/card.md` (library, not active-project)
+- The boundary-scope report at `active-project/staff/showrunner/boundary-scope.md`
+
+**Behavior:**
+- Load the single persona card. No other persona cards are loaded for this dispatch.
+- Read the boundary-scope report. The fork wrote it; it carries BOUNDARIES, OPEN PARAMETERS, STORY TYPE menu, and CHARACTER ARCHETYPES menus.
+- Apply the persona's selection discipline (§ in the card body).
+- Pick one option per menu — story-type first, then one archetype per role enumerated.
+- Each pick gets one sentence of reason naming the structural fit, not the taste preference.
+
+**Output (written to disk):**
+
+Write to `active-project/staff/showrunner/taste-selection.md`:
+
+```
+## Story-type pick
+<chosen-name>
+reason: <one sentence — structural fit, not preference>
+
+## Archetype picks
+- <role>: <pick> — <one sentence reason>
+- <role>: <pick> — <one sentence reason>
+...
+
+## Notes
+<optional — observations about tensions between picks, advisory only>
+```
+
+**Constraints:**
+- No aggregation (single card).
+- No accept/revise verdict (this mode returns picks, not judgments).
+- No writes to any file other than `taste-selection.md`.
+- Picks must come from the menu verbatim or near-verbatim. Off-menu picks are an error condition; the orchestrator may retry the dispatch with a constraint clarification.
+
+**This mode does NOT use STM/LTM.** Taste-judge is a one-shot meta-decision dispatch per project activation; persistent memory across iterations does not apply.
 
 ---
 

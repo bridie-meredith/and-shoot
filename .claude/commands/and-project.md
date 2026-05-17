@@ -138,7 +138,29 @@ Verify `cards/personas/INDEX.md` and `cards/locations/INDEX.md` exist. Print lin
 ### 6. Print scaffold complete
 
 ```
-Scaffold complete. Running boundary scope.
+Scaffold complete.
+```
+
+If a brief was provided ($1 non-empty), proceed to Phase 1.4. If absent, proceed to Phase 1.2 (random-brief generation) first.
+
+---
+
+## Phase 1.2 — Random-brief generation (conditional; only if $1 was empty)
+
+If a brief was provided, skip this phase entirely.
+
+If not: dispatch screen-writer with no constraints. Screen-writer reads `staff/audience/INDEX.md` and `cards/` to get a sense of available material, then proposes any premise — any genre, any source world, any structural register. Output written to `active-project/staff/showrunner/brief-generated.md`. From this point forward, the generated brief is the brief — Phase 1.4, Phase 1.5, Phase 1.6, and all downstream phases use it identically to a user-supplied brief.
+
+This phase exists because Phase 1.4 (boundary scoping) requires a brief to scope. The original /and-project routed brief-generation through Phase 1.5 brief-expansion; that ordering was inverted when Phase 1.4 was added. Brief generation now happens once, up front, before any analytical work.
+
+Print:
+```
+Brief generated. Running boundary scope.
+```
+
+If a brief was provided and this phase was skipped, follow Phase 1's "Scaffold complete." with a transition print before Phase 1.4:
+```
+Running boundary scope.
 ```
 
 ---
@@ -265,7 +287,7 @@ Running brief expansion within the confirmed bounds.
 
 ## Phase 1.6 — Brief expansion
 
-**If no brief was provided (random-brief mode):** before dispatching screen-writer, tell screen-writer to generate the brief. Screen-writer reads `staff/audience/INDEX.md` and `cards/` to get a sense of available material, then proposes any premise — any genre, any source world, any structural register. No constraints on content. Screen-writer writes the generated brief to `active-project/staff/showrunner/brief-generated.md`. Use this as the brief for all subsequent steps. In random-brief mode, run Phase 1.4 (boundary scope) AND Phase 1.5 (taste selection) on the generated brief BEFORE this expansion — the generated brief is just another brief.
+Random-brief mode no longer interacts with this phase. Brief generation runs at Phase 1.2 (before boundary scope); by the time this phase runs, the brief exists at `active-project/staff/showrunner/brief-generated.md` (random-brief mode) or as the user-supplied `$1` argument.
 
 Dispatch screen-writer with the brief AND the binding sheet at `active-project/staff/showrunner/prompt-binding.md`. Screen-writer reads the binding sheet first. Screen-writer does **not** generate a plan. It maps the concept-space the brief opens — the full range of stories this brief could become INSIDE THE BOUNDS established at Phase 1.4 and the story-type/archetype picks made at Phase 1.5.
 
