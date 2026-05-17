@@ -97,3 +97,16 @@ Verdicts:
 Recommendation: B (3-of-3 accept). A passes but carries the Mira off-page execution obligation; B resolves that obligation structurally (Mira's death on-page, named steward gives overshoot beat a face through which harm travels). C fails on canon-characterization grounds: social network width exceeds post-Khepri grief-small-bonds model.
 
 Pattern updated: Cast scope for post-Khepri grief-shaped Taylor must preserve the small-bonds model — a social universe where attachments are few and intense, not broad and community-structured. Named cast can expand to ~9 if all additions are original-character nodes (patron-channels, structural devices, cost-markers) rather than attachment-cluster members. The canon small-bonds model is not a plan-level gate on A or B; it is an active filter on C. Mira attachment established before M18–19 remains a standing textual obligation regardless of which cast option is taken.
+
+## Round 10 — Full Series Plan Review (2026-05-17, /and-project Phase 1b)
+
+Topic: Consolidated full series plan presented for series-level audit checkpoint. All prior OQs settled: Dragon Gate arrival, witch-label, block-cap (~1 city block), 126 AC, Watch-track captain (opaque), "speaking the patron's dialect" 6-rung ladder (M4–M27–28), M18–19 Mira rung (on-page death), M27–28 sweep-killing of Black-adjacent contact, Taylor processed at close, insects-register-her-own-stillness terminus. 9-named cast (Option B).
+
+Verdict: ACCEPT. The consolidated plan matches all settled OQ positions without introducing new canon violations. AU divergence (range cap) is structurally named and demonstrable in the operational architecture without exposition-bombing — ambient-not-directed is preserved across all 6 ladder rungs (every rung is verbal framing through patron-channel, no directed surveillance). Grief architecture honored: 12-month recovery window with granular friction present-but-unreadable-to-Taylor before operational escalation. M27–28 Watch-sweep is Earth-Bet institutional-chain grounded, PRT-analog in register. "Speaking the patron's dialect" as self-narration is canonically consistent post-Khepri reconstruction. Hightower patronage architecture invisible to Taylor is consistent with her ambient-not-directed constraint and canonical threat-audit failure gap. No invented shard behavior anywhere on the ladder.
+
+Outstanding execution obligations carried forward (not plan-level fatal):
+1. Insect-ambient-perception must be a consistent prose register from early chapters — not a technique surfacing only at terminus. If not established throughout: closing image reads as arranged.
+2. Mira established credibly before M18–19 or the rung's emotional weight does not function.
+3. Named Rung-3 steward (Aldric Fenwick) must remain a patron-channel node in execution, not drift toward a Taylor-knows-this-person dynamic.
+
+Pattern updated: Full series plan accepted at plan level. All canon obligations are execution-layer. The series is ready for series-level audit checkpoint. Standing obligation: AU divergence naming must be earned in prose in Act 1 before faction pressure competes. The three execution obligations above are carried into screen-writer and shoot tracking.

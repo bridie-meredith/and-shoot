@@ -39,3 +39,12 @@ criteria met: yes
 findings-applied: 2
 findings-skipped: 0 (2 advisory items logged, no action required)
 exit: CLEAN
+
+---
+
+## SESSION — series-audit follow-up — 2026-05-17
+
+### Real finding addressed
+- fault-001 (series-audit.md): RESOLVED. memory.md seasons[0] was missing `status:` field required by showrunner-memory.schema.md. Added `status: planned` to s01 entry. One-line fix; no other changes.
+
+exit: CLEAN
