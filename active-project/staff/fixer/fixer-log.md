@@ -117,6 +117,60 @@ findings-applied: 3 (chapter_count, drama, chapters[18])
 findings-skipped: 0
 exit: CLEAN
 
+## SESSION-START — 2026-05-18T14:00:00Z — write-b01c01-pass2
+dispatch: resolve 4 FAULT-FORM findings from /and-write Phase 2 auditor on chapter b01c01; return corrected bone list as text only (no file persist — showrunner persists at Phase 7 emit)
+target: bones b01c01s01n04, b01c01s01n06, b01c01s02n02, b01c01s02n07 (in-memory; no bones file written yet)
+audit-report: active-project/staff/auditor/write-b01c01-pass2.md
+findings-queued: 4 (fault-001 CONJUNCTION-split, fault-002 NO-VERB, fault-003 NO-VERB, fault-004 NO-VERB)
+
+## fault-001 — RESOLVED — 2026-05-18T14:01:00Z
+fault: b01c01s01n04 — compound bone compressing coll's needle-extension and taylor's needle-taking into one line (FAULT-FORM-CONJUNCTION)
+scope: line
+change: split into b01c01s01n04 (coll extends the needle, knowledge +0.01) and new b01c01s01n09 (taylor-hebert-kl-122ac takes the needle, knowledge +0.01); aggregate +0.02 preserved; s01 sum 0.20 preserved
+criteria met: yes
+
+## fault-002 — RESOLVED — 2026-05-18T14:01:00Z
+fault: b01c01s01n06 — "the insects move" bare intransitive motion verb without destination (FAULT-FORM-NO-VERB)
+scope: line
+change: recast to "the insects cover the flagstones" — transitive verb, environmental surface as object, spatially anchored; knowledge +0.03 preserved
+criteria met: yes
+
+## fault-003 — RESOLVED — 2026-05-18T14:01:00Z
+fault: b01c01s02n02 — "the insects move" bare intransitive motion verb without destination (FAULT-FORM-NO-VERB)
+scope: line
+change: recast to "the insects fill the block" — transitive verb, environmental-scale object distinct from s01n06 recast, spatially anchored at block/street level consistent with mid-day density-reading scene; knowledge +0.04 preserved
+criteria met: yes
+
+## fault-004 — RESOLVED — 2026-05-18T14:01:00Z
+fault: b01c01s02n07 — "the needle moves" bare intransitive motion verb without destination (FAULT-FORM-NO-VERB)
+scope: line
+change: recast to "the needle threads the mesh" — transitive verb, net-mesh as direct object, spatially anchored in craft action; knowledge +0.03 preserved
+criteria met: yes
+
+## SESSION-END — 2026-05-18T14:02:00Z — write-b01c01-pass2
+findings-applied: 4 (1 conjunction-split producing 1 new bone, 3 NO-VERB recasts)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-18T15:00:00Z — write-b01c01-pass5-fault-001
+dispatch: resolve 1 FAULT-STATE finding from /and-write Phase 5 auditor on chapter b01c01 — Coll state file location contradicts chapter chunk Hook anchor
+target: active-project/actors/coll-net-mender-flea-bottom/state.md
+audit-report: active-project/staff/auditor/write-b01c01-pass5.md
+findings-queued: 1 (fault-001 FAULT-STATE)
+
+## fault-001 — RESOLVED — 2026-05-18T15:01:00Z
+fault: coll-net-mender-flea-bottom/state.md location field (fish-gate-district-outdoor-work-spot) contradicted chapter b01c01 chunk Hook anchor where Coll is co-present with Taylor
+scope: line
+change: updated state.md location field from fish-gate-district-outdoor-work-spot to hook-flea-bottom-outdoor-work-spot; all other fields untouched; card.md historical Fish Gate district record not touched
+criteria met: yes — state file and chapter chunk now name the same district without contradiction
+
+## SESSION-END — 2026-05-18T15:01:00Z — write-b01c01-pass5-fault-001
+findings-applied: 1
+findings-skipped: 0
+exit: CLEAN
+
+2026-05-18T15:01:00Z /and-write b01c01 pass5: 1 FAULT-STATE resolved (coll state-file location reconciled to chapter chunk Hook anchor).
+
 ## fault-002 — RESOLVED — 2026-05-18T12:42:00Z
 fault: both Aemond cards stated age: 10-11 at 122 AC (born 106 AC) — internally inconsistent and wrong per F&B canon; memory.md cast_roster also said "age 10-11"
 scope: line
