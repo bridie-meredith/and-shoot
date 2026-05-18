@@ -97,6 +97,26 @@ scope: line
 change: prepended superseded header to active-project/staff/showrunner/signature-draft.md marking it as historical authoring record, pointing to memory.md series.substance.cost_ledger as authoritative, and explicitly noting the cl-knowledge-contempt vs cl-intelligence-arrangement divergence so no downstream agent anchors bones to the wrong entry. Contents of signature-draft.md preserved intact — no rewrite.
 criteria met: yes — file marked superseded; canonical pointer to memory.md included; divergence documented; historical record preserved
 
+## SESSION-START — 2026-05-18T13:00:00Z — b01-schema-migration
+dispatch: translate screen-writer's approved b01-draft.md into schema-correct entries in showrunner memory.md (chapter_count, drama, chapters[18])
+target: active-project/staff/showrunner/memory.md
+audit-report: n/a — this is Phase 6 persist after audience ACCEPT 3-of-3 / dramatist ACCEPT / auditor PASS (pass 2)
+findings-queued: 3 edits (chapter_count, drama, chapters[])
+
+## b01-schema-migration — WORKING — 2026-05-18T13:05:00Z
+note: all 18 chapters read from b01-draft.md; memory.md read; schema read; building edit now
+
+## b01-schema-migration — RESOLVED — 2026-05-18T13:20:00Z
+fault: books[b01].chapters was empty []; chapter_count and drama were also unset
+scope: episode (three coordinated field edits within one file)
+change: (1) chapter_count already populated as 18 in memory.md at time of edit (prior step had written it); comment normalized. (2) drama already populated in memory.md (prior step had written it). (3) chapters[] populated with 18 schema-correct entries b01c01–b01c18; each entry carries: slug, chunk (block-literal from approved draft), structure.scene_count, substance_delta.axes_in_motion + density_target, handoff_in (open_threads + world_state + character_state + source_chapter), handoff_out (open_threads + world_state + character_state + target_chapter), status: planned, pov_narrator/dramatic_shape/goal deferred comment. b01c18 carries pov_note: "INTERLUDE — Archmaester Corvan retrospective; non-Taylor POV". Orphan informational fields (dramatic_role, trajectory_deltas_carried, dramatic_shape_note) omitted — already demoted to comments in draft. Load-bearing inline comments from draft (d03 capability sub-shift, Aemond deferred, contempt-roster deferred) preserved. active: and routing: blocks untouched.
+criteria met: yes — 18 entries; unique slugs b01c01–b01c18; c01.handoff_in.source_chapter null; c18.handoff_out.target_chapter null; all status: planned; drama populated; chapter_count: 18
+
+## SESSION-END — 2026-05-18T13:20:00Z — b01-schema-migration
+findings-applied: 3 (chapter_count, drama, chapters[18])
+findings-skipped: 0
+exit: CLEAN
+
 ## fault-002 — RESOLVED — 2026-05-18T12:42:00Z
 fault: both Aemond cards stated age: 10-11 at 122 AC (born 106 AC) — internally inconsistent and wrong per F&B canon; memory.md cast_roster also said "age 10-11"
 scope: line
