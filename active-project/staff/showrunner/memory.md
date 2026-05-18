@@ -30,9 +30,9 @@ project:
     editor: editor
     orchestrator_critic: v1.3
   series_audit:
-    approved_at: ~
-    approved_by: ~
-    report_path: ~
+    approved_at: 2026-05-18T123000Z
+    approved_by: user
+    report_path: active-project/staff/reviews/series-audit-2026-05-18T120000Z.md
     stale_since: ~
 
 series:
@@ -416,7 +416,31 @@ series:
       - "no spectacle of magic — only its residue and others' fear of it"
       - "the atonement that is the repetition"
       - "earned collapse, not surprise"
-  cast_roster: []
+  cast_roster:
+    - slug: taylor-hebert-kl-122ac
+      role: Post-Gold-Morning Taylor, Khepri-residue insect-network, cold-utilitarian POV, sole first-person narrator
+      perspective: protagonist
+    - slug: otto-hightower
+      role: Hand of the King (off formal record), intelligence architect, primary antagonist, calibrated-ask pressure source
+      perspective: antagonist
+    - slug: aemond-targaryen-122ac
+      role: Green-faction coercive arm, Vhagar rider at age 12 (born 110 AC; claimed Vhagar at age 10 at Driftmark in 120 AC), walk-on at structural crisis points; each appearance must shift a named plot axis
+      perspective: antagonist
+    - slug: wren-stitch-maker-flea-bottom-ward
+      role: Cost-bearer; seamstress-family ward age 11; the un-priced relationship; observer-training habit; d14 closing-image death
+      perspective: supporting
+    - slug: sera-hightower-kl-122ac
+      role: Protect-target; Hightower cadet-branch ward age 14; court-tier; structural legitimacy-question; does not know Taylor exists
+      perspective: supporting
+    - slug: gylda-saltwater-flea-bottom
+      role: Witness-mirror; water-carrier age ~40s; names too-many-places pattern once at d09-d10; non-confidant hard fence
+      perspective: supporting
+    - slug: coll-net-mender-flea-bottom
+      role: Flea Bottom fixture; net-mender age ~50s; stationary block-visibility; non-interpretive community-substrate carrier; never names
+      perspective: world
+    - slug: corvan-archmaester-retrospective-coda
+      role: Maester-chronicler; Archmaester writing c.160 AC; coda-only archival voice; counterfactual naming; does not know Taylor's name
+      perspective: world
   stage_elements: []
 
 books:
@@ -432,7 +456,7 @@ books:
         - { axis: position,                     direction: ~,    target_delta_magnitude: 0, cost_ledger_anchor: cl-social-tether-build,         notes: "1→1 net; INTENTIONAL rise-and-fall (peak 5 d07, collapse d14); direction null because net is zero — intra-book shape is visibility-phase then entrapment-phase, not a net upward arc" }
         - { axis: social-tether,                direction: down, target_delta_magnitude: 1, cost_ledger_anchor: cl-social-tether-build,         notes: "2→1; d01 embedded → d04 load-bearing → d10 exposed → d14 severed" }
         - { axis: relational-anchor-status,     direction: down, target_delta_magnitude: 2, cost_ledger_anchor: [cl-unpriced-cost-bearer, cl-protection-buys-consolidation], notes: "3→1; d02 named-outside-ledger → d08 load-bearing → d14 unprotected-at-burn; two ledger entries each contribute -1 summing to -2 net; see cl-unpriced-cost-bearer description for compounding mechanism" }
-        - { axis: moral-legibility-to-self,     direction: down, target_delta_magnitude: 3, cost_ledger_anchor: cl-unpriced-cost-bearer,        notes: "7→4; d02 first-crack → d06 rationalizing → d10/d11 suppression → d14 recognition-too-late" }
+        - { axis: moral-legibility-to-self,     direction: down, target_delta_magnitude: 3, cost_ledger_anchor: cl-unpriced-cost-bearer,        notes: "7→4; d02 first-crack → d06 rationalizing → d10/d11 suppression → d14 recognition-too-late. cl-unpriced-cost-bearer contributes -1 directly; additional -2 net is consequence-driven by Wren-related observations at d06 (rationalizing trades), d10/d11 (suppression of seeing what the architecture has become) — these are not paid trades but recognition-events triggered by accumulating ledger costs elsewhere. Bone-gate at /and-write Phase 6 should accept consequence-anchored bones on this axis when no direct ledger trade is appropriate." }
         - { axis: political-register-toward-elite, direction: up, target_delta_magnitude: 4, cost_ledger_anchor: ~,                               notes: "5→9; d05 resentment → d09 articulated → d13 contempt-without-refusal; consequence-axis driven by trajectory d05/d09/d13 observation sequence, not a direct ledger trade; note: rising IS the cost — nine_means = contempt-without-refusal; +1 direction recorded because axis moves toward its damaging end" }
         - { axis: knowledge,                    direction: up,   target_delta_magnitude: 5, cost_ledger_anchor: cl-intelligence-arrangement,    notes: "3→8; d04 coverage → d07 systematic → d09 full court picture" }
         - { axis: agency,                       direction: down, target_delta_magnitude: 4, cost_ledger_anchor: cl-network-position,            notes: "5→1; d10 no-exit confirmed; d14 dead-or-expelled; steepest single loss-arc" }

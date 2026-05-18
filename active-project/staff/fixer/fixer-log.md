@@ -52,3 +52,53 @@ criteria met: yes
 findings-applied: 7
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-18T12:30:00Z — series-audit-2026-05-18-fix-pass
+dispatch: resolve 2 HARD + 4 SIGNAL findings from series-audit-2026-05-18T120000Z.md; TASTE findings (007-009) untouched
+target: active-project/warehouse/cond-road-to-hell-chain-shape.md + active-project/actors/aemond-targaryen-122ac/card.md + cards/personas/aemond-targaryen-122ac.card.md + active-project/staff/showrunner/memory.md + active-project/staff/showrunner/signature-draft.md + active-project/actors/gylda-saltwater-flea-bottom/card.md
+audit-report: active-project/staff/reviews/series-audit-2026-05-18T120000Z.md
+findings-queued: 6 (fault-001 HARD, fault-002 HARD, fault-003 SIGNAL, fault-004 SIGNAL, fault-005 SIGNAL subsumed by fault-001, fault-006 SIGNAL)
+
+## fault-001 — RESOLVED — 2026-05-18T12:35:00Z
+fault: cond-road-to-hell-chain-shape.md referenced wrong cost-bearer (Nessa), wrong companion card (cond-nessa-scene-frequency), and wrong inciting good intention (prevent Lucerys Velaryon's death)
+scope: line
+change: (1) Chain Structure paragraph: replaced "prevent Lucerys Velaryon's death" inciting good intention with resolved path-4 framing (atonement-for-Khepri operating rule meeting Otto's first offer; shielding Sera/protecting Wren); replaced "Nessa's death" closing-image with "Wren's death"; (2) inciting-good-intention legibility paragraph: updated to atonement operating rule + first Otto offer; (3) Retroactive-Reconstruction closing-image anchor: "Nessa's death" → "Wren's death"; (4) Interaction Notes: replaced cond-nessa-scene-frequency reference + "Nessa's death" with cond-cost-bearer-scene-frequency + "Wren's death (wren-stitch-maker-flea-bottom-ward)"; (5) frontmatter references: added cond-cost-bearer-scene-frequency. Pre-fix backup written to warehouse/cond-road-to-hell-chain-shape.pre-2026-05-18T123000Z.md.
+criteria met: yes — all Nessa references replaced with Wren; companion card updated; inciting good intention reflects resolved path-4; gate loads now point to correct closing image and correct companion card
+
+## fault-005 — RESOLVED (subsumed) — 2026-05-18T12:35:00Z
+fault: cond-road-to-hell-chain-shape.md inciting good intention stated as "prevent Lucerys Velaryon's death" (path-brainstorm framing, not resolved path-4)
+scope: line
+change: addressed in same pass as fault-001 — inciting good intention corrected to atonement-for-Khepri operating rule meeting Otto's first offer
+criteria met: yes — confirmed resolved as part of fault-001 fix
+
+## fault-002 — WORKING — 2026-05-18T12:40:00Z
+note: fixing Aemond age across 5 files — both card copies, memory.md cast_roster, cast-provisioning-log.md, cast-selection.md; pre-fix backups per margit preservation rule
+
+## fault-006 — RESOLVED — 2026-05-18T12:45:00Z
+fault: active-project/actors/gylda-saltwater-flea-bottom/card.md had tier: supporting; schema definition and structural role (one naming scene, non-confidant, does not return) match tier: minor
+scope: line
+change: changed tier field from "supporting" to "minor" in active-project/actors/gylda-saltwater-flea-bottom/card.md. Single field change; no other card content altered.
+criteria met: yes — tier: minor per schema definition "background, walk-on, or single-scene character"; frequency-expectation mismatch and model-spawn miscalibration resolved
+
+## SESSION-END — 2026-05-18T12:46:00Z — series-audit-2026-05-18-fix-pass
+findings-applied: 6 (fault-001 confirmed resolved from prior session; fault-002 HARD fixed; fault-003 SIGNAL fixed; fault-004 SIGNAL fixed; fault-005 confirmed subsumed by fault-001; fault-006 SIGNAL fixed)
+findings-skipped: 3 (fault-007, fault-008, fault-009 — TASTE findings, per dispatch: do not touch)
+exit: CLEAN
+
+## fault-004 — RESOLVED — 2026-05-18T12:44:00Z
+fault: moral-legibility-to-self 3-unit decline has only 1 ledger anchor (cl-unpriced-cost-bearer = -1); remaining -2 not documented, risking bone-gate rejection of consequence-anchored bones
+scope: line
+change: extended notes field of the moral-legibility-to-self axes_in_motion entry in active-project/staff/showrunner/memory.md (books[b01].substance_delta). Appended: "cl-unpriced-cost-bearer contributes -1 directly; additional -2 net is consequence-driven by Wren-related observations at d06 (rationalizing trades), d10/d11 (suppression of seeing what the architecture has become) — these are not paid trades but recognition-events triggered by accumulating ledger costs elsewhere. Bone-gate at /and-write Phase 6 should accept consequence-anchored bones on this axis when no direct ledger trade is appropriate." Original notes text preserved; text appended.
+criteria met: yes — option (b) applied; axis explicitly documented as partially consequence-driven; bone-gate acceptance rule stated for consequence-anchored bones; no additional ledger entries added
+
+## fault-003 — RESOLVED — 2026-05-18T12:43:00Z
+fault: signature-draft.md contains cl-knowledge-contempt in cost_ledger; memory.md has cl-intelligence-arrangement; divergence creates bone-gate ambiguity
+scope: line
+change: prepended superseded header to active-project/staff/showrunner/signature-draft.md marking it as historical authoring record, pointing to memory.md series.substance.cost_ledger as authoritative, and explicitly noting the cl-knowledge-contempt vs cl-intelligence-arrangement divergence so no downstream agent anchors bones to the wrong entry. Contents of signature-draft.md preserved intact — no rewrite.
+criteria met: yes — file marked superseded; canonical pointer to memory.md included; divergence documented; historical record preserved
+
+## fault-002 — RESOLVED — 2026-05-18T12:42:00Z
+fault: both Aemond cards stated age: 10-11 at 122 AC (born 106 AC) — internally inconsistent and wrong per F&B canon; memory.md cast_roster also said "age 10-11"
+scope: line
+change: updated age field and all age-register mentions in (1) active-project/actors/aemond-targaryen-122ac/card.md, (2) cards/personas/aemond-targaryen-122ac.card.md to "12 at 122 AC (born 110 AC; claimed Vhagar at age 10 at Driftmark in 120 AC)"; updated memory.md cast_roster role line; updated cast-provisioning-log.md card action note and roster splice section; updated cast-selection.md slot 3 description and final roster table. Pre-fix backups written at active-project/actors/aemond-targaryen-122ac/card.pre-2026-05-18T124000Z.md and cards/personas/aemond-targaryen-122ac.pre-2026-05-18T124000Z.card.md.
+criteria met: yes — born year (110 AC) and age (12) now internally consistent; F&B canon honored; cast_roster memory.md entry updated; vibe seeds updated (claimed at age 10; "nine years" corrected to "nine years" to Dance per revised age); structural function unchanged

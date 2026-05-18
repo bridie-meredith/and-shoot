@@ -1,3 +1,12 @@
+# SUPERSEDED — 2026-05-18
+# This file is the intermediate authoring product from /and-substance series.
+# It is preserved as a historical authoring record and MUST NOT be treated as authoritative.
+# The canonical cost_ledger and substance records are in:
+#   active-project/staff/showrunner/memory.md → series.substance.cost_ledger
+# Divergence noted: this file contains id: cl-knowledge-contempt; memory.md contains
+# id: cl-intelligence-arrangement for the same knowledge-axis gain slot. memory.md is authoritative.
+# Do not anchor bones to cl-knowledge-contempt; use cl-intelligence-arrangement from memory.md.
+
 state_axes:
 
   - slug: moral-framework
