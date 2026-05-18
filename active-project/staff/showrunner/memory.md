@@ -30,9 +30,9 @@ project:
     editor: editor
     orchestrator_critic: v1.3
   series_audit:
-    approved_at: ~
-    approved_by: ~
-    report_path: ~
+    approved_at: 2026-05-18T123000Z
+    approved_by: user
+    report_path: active-project/staff/reviews/series-audit-2026-05-18T120000Z.md
     stale_since: ~
 
 series:
