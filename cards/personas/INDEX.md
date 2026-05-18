@@ -38,6 +38,7 @@ earth-bet:
 planetos:
   - aegon-ii-targaryen
   - aemond-targaryen
+  - aemond-targaryen-122ac
   - beric-dondarrion
   - census-officer
   - clerk
@@ -75,6 +76,12 @@ planetos:
   - oc-ward-septon-dragon-gate
   - oc-watch-captain-dragon-gate
   - otto-hightower
+  - coll-net-mender-flea-bottom
+  - corvan-archmaester-retrospective-coda
+  - gylda-saltwater-flea-bottom
+  - sera-hightower-kl-122ac
+  - taylor-hebert-kl-122ac
+  - wren-stitch-maker-flea-bottom-ward
   - peasant-woman-forest
   - plumms-man
   - rhaenys-targaryen
@@ -172,6 +179,7 @@ full:
   - taylor-hebert
   - taylor-hebert-flea-bottom
   - taylor-hebert-jaehaerys
+  - taylor-hebert-kl-122ac
   - taylor-hebert-westeros
   - thoros-of-myr
   - thomas-calvert
@@ -183,7 +191,6 @@ scant:
   - oc-girl-from-hamlet
   - oc-plumms-man
   - oc-tributary-village-newcomer
-  - otto-hightower
   - peasant-woman-forest
   - victoria-dallon
   - viserys-i-targaryen
@@ -192,7 +199,7 @@ scant:
 
 ## by_trope
 
-young-depressed-hero: [taylor-hebert, taylor-hebert-westeros, taylor-hebert-jaehaerys, taylor-hebert-flea-bottom, taylor-hebert-dragon-gate, taylor-hebert-flea-bottom-mirror]
+young-depressed-hero: [taylor-hebert, taylor-hebert-westeros, taylor-hebert-jaehaerys, taylor-hebert-flea-bottom, taylor-hebert-dragon-gate, taylor-hebert-flea-bottom-mirror, taylor-hebert-kl-122ac]
 master-manipulator: [lisa-wilbourn, thomas-calvert]
 feral-pragmatist: [rachel-lindt]
 sociopathic-charmer: [jack-slash, alec-vasil]
@@ -211,7 +218,7 @@ brutal-pragmatist: [lem-lemoncloak]
 dying-cause: [beric-dondarrion]
 faith-recovered: [thoros-of-myr]
 corrupt-official: [ser-harwick-plumm, oc-castellan-harrenhal, oc-watch-captain-dragon-gate, oc-rung3-steward]
-targaryen-era: [rhaenyra-targaryen, rhaenys-targaryen, viserys-i-targaryen, ser-edwyn-celtigar, aegon-ii-targaryen, aemond-targaryen, otto-hightower, ulf-the-white, oc-vaegon-targaryen, oc-lyra-targaryen-ward, oc-maester-edwyn]
+targaryen-era: [rhaenyra-targaryen, rhaenys-targaryen, viserys-i-targaryen, ser-edwyn-celtigar, aegon-ii-targaryen, aemond-targaryen, aemond-targaryen-122ac, otto-hightower, ulf-the-white, oc-vaegon-targaryen, oc-lyra-targaryen-ward, oc-maester-edwyn, sera-hightower-kl-122ac, wren-stitch-maker-flea-bottom-ward, gylda-saltwater-flea-bottom, coll-net-mender-flea-bottom, corvan-archmaester-retrospective-coda]
 riverlands-power: [ser-aemon-bracken]
 faith-operator: [septon-rowan]
 hedge-knight: [rymer-hedge]
@@ -234,7 +241,12 @@ hightower-intelligence: [otto-hightower]
 witness-figure: [rhaenyra-targaryen, oc-broken-maester, oc-maester-edwyn]
 false-ally: [rhaenys-targaryen]
 doppelganger-opposite-number: [oc-vaegon-targaryen]
-cost-bearer: [oc-lyra-targaryen-ward]
+cost-bearer: [oc-lyra-targaryen-ward, wren-stitch-maker-flea-bottom-ward]
+protect-target: [sera-hightower-kl-122ac]
+witness-mirror: [gylda-saltwater-flea-bottom]
+flea-bottom-world-fixture: [coll-net-mender-flea-bottom, oc-renderer-flea-bottom, oc-flea-bottom-boy, oc-block-fixture]
+maester-chronicler-coda: [oc-maester-edwyn, corvan-archmaester-retrospective-coda]
+hightower-apparatus: [otto-hightower, sera-hightower-kl-122ac, aemond-targaryen-122ac]
 wrong-rider: [ulf-the-white]
 flea-bottom-texture: [oc-renderer-flea-bottom, oc-flea-bottom-boy, oc-apothecary-assistant]
 prevention-tragedy: [taylor-hebert-flea-bottom-mirror, oc-vaegon-targaryen]
@@ -297,3 +309,11 @@ OC slots for margit to construct at project activation when a generic role is se
 - oc-renderer-flea-bottom (Flea Bottom texture slot; tallow-renderer, non-question cover, Fish Gate margin; full; authored witch-of-flea-bottom provisioning 2026-05-17)
 - oc-flea-bottom-boy (Flea Bottom texture slot; district child 10–12, transactional intelligence trades, roof-routes; full; authored witch-of-flea-bottom provisioning 2026-05-17)
 - oc-apothecary-assistant (Flea Bottom texture slot; apothecary's literate assistant, wrong-theory witch-label framing; full; authored witch-of-flea-bottom provisioning 2026-05-17)
+- otto-hightower (upgraded scant→full; canon HOTD; Hightower intelligence architect, proposal-register antagonist; tier: lead; upgraded taylor-westeros-good-intentions Phase 4 provisioning 2026-05-18)
+- aemond-targaryen-122ac (new variant; 122 AC age-specific; 10-11yo, Vhagar-directed coercive instrument, Otto-directed, dramatist F3 hard fence; full; authored taylor-westeros-good-intentions Phase 4 2026-05-18)
+- taylor-hebert-kl-122ac (new variant; post-Gold-Morning adult, Khepri-residue insect-network, cold-utilitarian, 122 AC KL, single-book closed arc; full; composed from taylor-hebert; authored taylor-westeros-good-intentions Phase 4 2026-05-18)
+- wren-stitch-maker-flea-bottom-ward (cost-bearer slot; Flea Bottom stitch-maker ward age 11, observer-training habit, mutual-silence relationship, d14 death in charted street; full; authored taylor-westeros-good-intentions Phase 4 2026-05-18)
+- sera-hightower-kl-122ac (protect-target slot; Hightower cadet-branch ward age 14, court-tier, structural legitimacy-question, does not know Taylor exists; full; authored taylor-westeros-good-intentions Phase 4 2026-05-18)
+- gylda-saltwater-flea-bottom (witness-mirror slot; Flea Bottom water-carrier age ~40s, block-knowledge observation, one naming scene d09-d10, non-confidant hard fence; full; authored taylor-westeros-good-intentions Phase 4 2026-05-18)
+- coll-net-mender-flea-bottom (Flea Bottom fixture slot; net-mender age ~50s, fifteen years same spot, stationary non-interpretive community-substrate carrier, never names; full; authored taylor-westeros-good-intentions Phase 4 2026-05-18)
+- corvan-archmaester-retrospective-coda (maester-chronicler coda slot; Archmaester writing c.160 AC, retrospective archival voice, deduction from documentary record, does not know Taylor's name, F4 constraint; full; authored taylor-westeros-good-intentions Phase 4 2026-05-18)

@@ -416,7 +416,31 @@ series:
       - "no spectacle of magic — only its residue and others' fear of it"
       - "the atonement that is the repetition"
       - "earned collapse, not surprise"
-  cast_roster: []
+  cast_roster:
+    - slug: taylor-hebert-kl-122ac
+      role: Post-Gold-Morning Taylor, Khepri-residue insect-network, cold-utilitarian POV, sole first-person narrator
+      perspective: protagonist
+    - slug: otto-hightower
+      role: Hand of the King (off formal record), intelligence architect, primary antagonist, calibrated-ask pressure source
+      perspective: antagonist
+    - slug: aemond-targaryen-122ac
+      role: Green-faction coercive arm, Vhagar rider at age 10-11, walk-on at structural crisis points; each appearance must shift a named plot axis
+      perspective: antagonist
+    - slug: wren-stitch-maker-flea-bottom-ward
+      role: Cost-bearer; seamstress-family ward age 11; the un-priced relationship; observer-training habit; d14 closing-image death
+      perspective: supporting
+    - slug: sera-hightower-kl-122ac
+      role: Protect-target; Hightower cadet-branch ward age 14; court-tier; structural legitimacy-question; does not know Taylor exists
+      perspective: supporting
+    - slug: gylda-saltwater-flea-bottom
+      role: Witness-mirror; water-carrier age ~40s; names too-many-places pattern once at d09-d10; non-confidant hard fence
+      perspective: supporting
+    - slug: coll-net-mender-flea-bottom
+      role: Flea Bottom fixture; net-mender age ~50s; stationary block-visibility; non-interpretive community-substrate carrier; never names
+      perspective: world
+    - slug: corvan-archmaester-retrospective-coda
+      role: Maester-chronicler; Archmaester writing c.160 AC; coda-only archival voice; counterfactual naming; does not know Taylor's name
+      perspective: world
   stage_elements: []
 
 books:
