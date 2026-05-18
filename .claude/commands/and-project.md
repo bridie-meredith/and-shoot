@@ -319,6 +319,16 @@ Running brief expansion within the confirmed bounds.
 
 ## Phase 2 — Project scope (world-building)
 
+**Critical rule: NEVER INLINE.** Same isolation discipline as Phase 1.7. Every artifact produced by Phase 2 — `brief-expansion.md`, the world-frame draft, `world-notes.md`, `open-questions.md`, the 1b resolutions, the 1d constraint cards, the audit and fixer outputs — is authored by a subagent or fork, never by the main session. The main session orchestrates: it dispatches, reads, validates inputs are on-menu, writes the index lines into showrunner memory, and prints phase-complete. It does NOT compose content.
+
+**Inline-prone failure mode (named, so it can be refused):** When the user issues a "no clarifying questions" / "keep going" / "make the reasonable call" directive mid-run, the temptation is for the main session to make Phase 2.2 / 2.3 decisions inline. **Do not.** The correct response to that directive is to dispatch the screen-writer fork specified in Phase 2.2-fork-mode (below) and proceed without the user-interactive prompt — the fork makes the calls, not the main session. Main-session interpolation here defeats the purpose of the substance pipeline, contaminates downstream audits, and is the exact failure mode Phase 1.7's NEVER-INLINE rule was added to prevent.
+
+**Forbidden main-session writes during Phase 2:**
+- `active-project/staff/showrunner/world-notes.md` (only Phase 2.2 / 2.3 forks write here; main session may only append a one-line "1b resolutions consolidated" pointer after the 1b sweep)
+- `active-project/staff/showrunner/open-questions.md` (Phase 2.3 fork only)
+- any condition / persona / location card body (margit only)
+- any review report (`1b-dramatist-review.md`, `1b-audience-review.md`, `1d-audit.md`, `fixer-log.md`) — main session ONLY writes a review-report file when the dispatched reviewer agent lacks Write tool access (dramatist is the named exception), and then ONLY by transcribing the agent's returned content verbatim without editorial change.
+
 ### 2.1 — Brief expansion (screen-writer fork)
 
 Dispatch screen-writer with the brief AND the binding sheet at `active-project/staff/showrunner/prompt-binding.md`. Screen-writer reads the binding sheet first. Screen-writer does NOT generate a plan. It maps the concept-space the brief opens — the full range of stories this brief could become INSIDE THE BOUNDS established at Phase 1.7 and the story-type/archetype picks made at Phase 1.8.
@@ -338,20 +348,30 @@ Screen-writer produces three sections, written to `active-project/staff/showrunn
 
 This is not a planning step. It is the field planning draws from.
 
-### 2.2 — Brief expansion follow-up questions (3–5 prompts; user-interactive)
+### 2.2 — World-frame follow-up (fork-first; user-interactive optional)
 
-After the brief expansion lands, ask the user 3–5 follow-up questions about the world-frame. Surface decisions that will save continuity revisions later. Examples (calibrate to the brief):
-- Currency: what coin system? What buys a loaf, what buys a house?
-- Class structure: how many strata? What's the local class language?
-- Geography: where does this take place? What are the proximate places?
-- Hard fences: any out-of-world fences (e.g. proper-noun bans for crossover stories)?
-- Tone bounds: any tonal commitments the world enforces (no comic relief / always-comic / fairytale-stasis)?
+**Default mode is fork-first.** Dispatch a screen-writer fork to draft the world-frame from `prompt-binding.md` + `brief-expansion.md` + the boundary-scope `BOUNDARIES` section. The fork produces a proposed world-frame covering, at minimum, the five dimensions below — each with a concrete proposed value and one-line rationale tied back to the brief or binding sheet:
 
-User answers route to `project.constraints.{settings, themes_as_bounds, hard_fences}` in memory.
+- Currency: coin system + smallfolk-scale buying power.
+- Class structure: strata + class language register.
+- Geography: setting place + proximate places at scene-zero reach.
+- Hard fences: out-of-world fences (proper-noun bans for crossover stories; canon scope; POV fences; title fences; end-locus fences).
+- Tone bounds: tonal commitments the world enforces.
 
-### 2.3 — Step 1a: Decided constraints + open questions (internal)
+The fork writes its proposal to `active-project/staff/showrunner/world-frame-proposal.md`.
 
-Read the brief verbatim + the brief expansion + user answers from 2.2. Write decided constraints to `world-notes.md`. Write open questions (dependency-ordered) to `open-questions.md`. Proceed immediately to 2.4 — do not surface to user.
+**User-interactive overlay (optional).** After the fork lands, surface the proposal to the user with 3–5 calibrated questions ONLY if the user has not pre-issued a no-clarifying-questions / keep-going directive. If the user is unavailable, the user has issued a no-clarifying-questions directive, or three or more dimensions of the fork's proposal are LOW-confidence per its own rationale, the proposal stands as drafted. The main session does NOT make alternative calls inline; it accepts the fork's proposal verbatim or it dispatches a revise-round to the fork with named concerns (max one revise-round).
+
+User answers (when collected) feed back to the fork as constraints for a single revise-round; the fork rewrites `world-frame-proposal.md`. Main session never edits the proposal directly.
+
+### 2.3 — Step 1a: Decided constraints + open questions (fork)
+
+Dispatch the screen-writer fork (continuation of 2.2 or fresh dispatch — either is acceptable) to consolidate `world-frame-proposal.md` + brief verbatim + `brief-expansion.md` + any 2.2 user answers into two outputs:
+
+1. `active-project/staff/showrunner/world-notes.md` — decided constraints, organized into `Settings`, `Themes-as-bounds`, `Hard fences` sections matching the showrunner-memory schema's `project.constraints.*` shape.
+2. `active-project/staff/showrunner/open-questions.md` — open questions in dependency order. Each OQ states the decision name + admissible-value range + the constraint (what disqualifies values).
+
+Main session does NOT write to either file. It reads both for downstream dispatch and proceeds immediately to 2.4 — do not surface to user.
 
 ### 2.4 — Step 1b: Open question resolution
 

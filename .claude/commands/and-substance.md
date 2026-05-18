@@ -33,7 +33,7 @@ Re-runnable per `design/substance/rerun-protocol.md`. Cascade-aware per `design/
 ### Phase 0 — Validate + mode select
 
 1. Read `staff/showrunner/memory.md`. Confirm upstream:
-   - **`series` level:** `series.chunk` + `series.structure.*` populated. If not, abort: `/and-substance series Phase 0 abort: series.chunk missing — run /and-series first.`
+   - **`series` level:** `series.chunk.path` + `series.chunk.prose` + `series.structure.*` populated. If not, abort: `/and-substance series Phase 0 abort: series.chunk missing — run /and-series first.` (Schema note: `series.chunk` is a structured object under `/and-series` v2; v1-compat consumers in this command body read `series.chunk.prose` for the string form. Migration TODO: read `series.chunk.path` + `.trajectory` directly.)
    - **`book b<NN>` level:** `books[b<NN>].chunk` + `books[b<NN>].substance_delta` populated (authored by `/and-substance series` Phase 6). `project.series_audit.approved_at` set, `stale_since` null. If audit not approved, **HARD-ABORT:** `/and-substance book Phase 0 abort: project.series_audit not approved — run /and-cast Phase 5 and approve.`
    - **`chapter b<NN>c<MM>` level:** `books[b<NN>].chapters[b<NN>c<MM>].chunk` + `substance_delta` populated (authored by `/and-substance book` Phase 6).
 2. Check own output:
@@ -51,8 +51,8 @@ Re-runnable per `design/substance/rerun-protocol.md`. Cascade-aware per `design/
 
 | level | reads |
 |---|---|
-| `series` | `series.chunk` + `series.structure.*` + `project.constraints.*` + `series.{laws, lore, behaviors}` + `staff/showrunner/world-notes.md` |
-| `book b<NN>` | `books[b<NN>].chunk` + `books[b<NN>].substance_delta` + `series.chunk` + `series.substance.*` + `series.structure.book_length.*` + `books[b<NN-1>].handoff_out` if `NN > 1` |
+| `series` | `series.chunk.prose` + `series.chunk.path` + `series.chunk.trajectory` + `series.structure.*` + `project.constraints.*` + `series.{laws, lore, behaviors}` + `staff/showrunner/world-notes.md` |
+| `book b<NN>` | `books[b<NN>].chunk` + `books[b<NN>].substance_delta` + `series.chunk.prose` + `series.chunk.path` + `series.substance.*` + `series.structure.book_length.*` + `books[b<NN-1>].handoff_out` if `NN > 1` |
 | `chapter b<NN>c<MM>` | `chapters[b<NN>c<MM>].chunk` + `chapters[b<NN>c<MM>].substance_delta` + `books[b<NN>].drama` + `books[b<NN>].substance_delta` + `series.substance.*` + `series.structure.book_length.scenes_per_chapter` |
 
 ### Phase 2 — Author sub-chunks
@@ -123,7 +123,7 @@ Dramatist Phase 5 cross-checks the handoff mirror for every adjacent pair except
 
 Phase 4 at series level is where the signature itself is born. The 1–9 archetype questionnaire (`design/substance/questionnaire.md`) is the screen-writer's authoring rubric, not a user prompt sequence.
 
-- **Step 4a — Screen-writer proposes.** Dispatch screen-writer with `project.brief` + `project.constraints` + `series.chunk` + `series.structure.*`. For each universal axis (~9: wealth / health / community / emotional / capability / knowledge / reputation / agency / trust), screen-writer:
+- **Step 4a — Screen-writer proposes.** Dispatch screen-writer with `project.brief` + `project.constraints` + `series.chunk.prose` + `series.chunk.path` + `series.chunk.trajectory` + `series.structure.*`. For each universal axis (~9: wealth / health / community / emotional / capability / knowledge / reputation / agency / trust), screen-writer:
   - Produces `start_rank` (1-9) and `end_rank` (1-9) per perspective (protagonist / antagonist / world), with one-line justification per rank citing source text.
   - Writes `one_means` / `five_means` / `nine_means` anchors calibrated to the story-world.
   - Drafts cost-ledger entries (gain ↔ cost pairings) and antagonist-pressure entries.

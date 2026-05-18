@@ -54,9 +54,25 @@ Required at scaffold; `series_audit.*` filled by `/and-cast` Phase 5 on `y` appr
 
 ```yaml
 series:
-  # from /and-series
-  chunk: |
-    <substance-bearing prose paragraph; Star-Wars-trilogy register>
+  # from /and-series — structured chunk: path + trajectory IS the chunk; prose is a rendering
+  chunk:
+    path:
+      motivation: <one-line; what gets the protagonist up at start-state>
+      anchor: <one-line; the person/thing the motivation attaches to — may be null>
+      escalation: <one-line; what converts small protagonist actions into larger ones>
+      trade: <one-line; the act that turns "good intention" into "hell" — the road-to-hell hinge>
+      irony: <one-line; how the trade returns as the catastrophe>
+    trajectory:
+      start_state:                            # axis-keyed map; axes are project-specific
+        <axis>: <state-at-book-open>
+      end_state:                              # may inherit from project.constraints.hard_fences
+        <axis>: <state-at-book-close>
+      deltas:                                 # ordered; each names what changes and (where useful) what causes it
+        - <delta-1>
+        - <delta-2>
+    lens_used: relational | political | interior | penitential | escape | vocational | structural | accidental | composed
+    prose: |                                  # rendered by Phase 2; human-facing only
+      <prose paragraph rendering of path + trajectory>
   structure:
     book_count: <N>
     book_length:
@@ -271,6 +287,8 @@ routing:
 **bones[].gate_verdict.signals[]** — preserved across runs so `/and-write revise --from-signals` can target SIGNAL-flagged bones for partial-revise. `/and-review bones <chapter>` re-fire auto-clears signals that no longer apply.
 
 **orchestrator_critic_verdict** — written by `/and-review verdict <book>`. `stale_since` is set by any `/and-substance` or `/and-write` re-run at-or-under the book after the verdict was recorded.
+
+**series.chunk** — structured object as of `/and-series` v2. The path + trajectory IS the canonical chunk; `prose` is a human-facing rendering produced by Phase 2 and may lag behind structural revisions. Downstream consumers that need a string read `series.chunk.prose`; consumers that need decision-grade premise data read `series.chunk.path` and `series.chunk.trajectory`. Migration TODO: /and-substance series should be rewritten to read the structured form directly (v1 reads .prose for backward compatibility).
 
 ---
 

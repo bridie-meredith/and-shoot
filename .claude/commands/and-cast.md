@@ -23,7 +23,7 @@ Re-runnable. See `design/substance/rerun-protocol.md`.
 
 ## Phase 0 — Validate + mode select
 
-1. Read `staff/showrunner/memory.md`. Confirm `series.chunk`, `series.structure.*`, `series.substance.*` are populated. If any missing, abort: `/and-cast Phase 0 abort: <field> missing — run <upstream-command> first.`
+1. Read `staff/showrunner/memory.md`. Confirm `series.chunk.path`, `series.chunk.prose`, `series.structure.*`, `series.substance.*` are populated. If any missing, abort: `/and-cast Phase 0 abort: <field> missing — run <upstream-command> first.` (Schema note: `series.chunk` is structured under `/and-series` v2; v1-compat consumers read `series.chunk.prose` for the string form.)
 2. Inspect `series.cast_roster`:
    - **Empty:** proceed to fresh-authoring mode.
    - **Populated, `$1` = `revise`:** read `--retire` / `--add` / `--swap` flags if present, else prompt with current roster + multi-line entry block.
@@ -37,7 +37,7 @@ Re-runnable. See `design/substance/rerun-protocol.md`.
 ## Phase 1 — Substance-driven cast brief
 
 Dispatch **screen-writer** with:
-- `series.chunk`
+- `series.chunk.prose` + `series.chunk.path` + `series.chunk.trajectory`
 - `series.substance.*` (signature: state_axes, cost_ledger, antagonist_pressure, chunk_targets)
 - `project.brief` + `project.constraints.*`
 - `series.structure.*` (POV pattern affects narrator-carrier requirements)
@@ -118,7 +118,7 @@ This is the **only blocking human checkpoint** in the chain.
 
 Dispatch **auditor** (fork) against the full picture:
 - `project.brief` + `project.constraints.*`
-- `series.chunk` + `series.structure.*`
+- `series.chunk.path` + `series.chunk.trajectory` + `series.chunk.prose` + `series.structure.*`
 - `series.substance.*` (signature + cost ledger + antagonist pressure)
 - `series.laws`, `series.lore`, `series.behaviors`
 - `series.cast_roster` (just-finalized)

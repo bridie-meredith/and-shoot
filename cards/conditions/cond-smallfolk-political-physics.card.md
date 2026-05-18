@@ -18,7 +18,7 @@ The internalized political physics of Westerosi smallfolk subjugation in the Riv
 
 **This card is the subjugated state from the inside.** `cond-westerosi-customary-authority-jaehaerys` is the behavioral physics from the outside (what authority looks like). `cond-feudal-hierarchy-law` is the underlying legal structure. This card is what the law and the behavioral physics look like when they have been so thoroughly internalized that they feel like common sense.
 
-Impersonators playing supporting smallfolk characters must load this card. It governs how Mira Stonefield-Jaehaerys, Septon Rowan's parishioners, the people at the market square, and any Fairstead smallfolk understand their own situation. It is the baseline against which Taylor's presence and organizing are measured.
+Impersonators playing supporting smallfolk characters must load this card. It governs how Nessa Stonefield-Jaehaerys, Septon Rowan's parishioners, the people at the market square, and any Fairstead smallfolk understand their own situation. It is the baseline against which Taylor's presence and organizing are measured.
 
 ## Sensory Impact
 
@@ -93,7 +93,7 @@ Individual compliance is a survival technology; collective compliance is a shiel
 
 This is why Taylor's organizing is both assisted by and in tension with the smallfolk community's existing habits. The community's collective compliance is their armor. Taylor's organizing proposes to dent that armor — to make some people visible, to draw attention to the market town, to create a record that the collective compliance was insufficient to prevent. The community's resistance to Taylor's organizing is not stupidity or cowardice; it is a correct assessment of what their existing strategy has achieved and what Taylor's strategy threatens to cost them.
 
-Mira Stonefield-Jaehaerys, as the community-elder figure, is the person who holds this calculus most explicitly. Her skepticism of Taylor is not personal antipathy; it is structural: Taylor's arrival disturbs an equilibrium that the community has worked to maintain. The question of whether Taylor's disruption offers enough in return to justify the cost of losing the armor is the question Mira is evaluating throughout S1.
+Nessa Stonefield-Jaehaerys, as the community-elder figure, is the person who holds this calculus most explicitly. Her skepticism of Taylor is not personal antipathy; it is structural: Taylor's arrival disturbs an equilibrium that the community has worked to maintain. The question of whether Taylor's disruption offers enough in return to justify the cost of losing the armor is the question Nessa is evaluating throughout S1.
 
 ## Taylor's Organizing Against This Substrate
 
@@ -112,7 +112,7 @@ Taylor's organizing operates on this substrate. Understanding what it offers and
 - The learned invisibility habit makes the community resistant to the visibility that any effective organizing requires
 - The posture of non-threat is culturally ingrained; asking the community to drop it even partially is asking them to take on risk they have spent generations learning to avoid
 
-**The community-legitimacy problem:** Taylor needs Mira's endorsement before the community will engage with her. She cannot bypass it. This is not a personal obstacle; it is a structural feature of how this substrate operates. The community's informal authority (the elder, the woman with standing) is the gate through which any outside organizing must pass. Until Taylor has that gate open, her whisper-chain reach is limited to people who are already isolated from the community's protective collective.
+**The community-legitimacy problem:** Taylor needs Nessa's endorsement before the community will engage with her. She cannot bypass it. This is not a personal obstacle; it is a structural feature of how this substrate operates. The community's informal authority (the elder, the woman with standing) is the gate through which any outside organizing must pass. Until Taylor has that gate open, her whisper-chain reach is limited to people who are already isolated from the community's protective collective.
 
 ## Interaction Notes
 
@@ -120,6 +120,6 @@ Taylor's organizing operates on this substrate. Understanding what it offers and
 
 **With `cond-feudal-hierarchy-law`:** That card is the legal structure that produces these internalized physics. This card is what the legal structure looks like once it has been lived for generations. They are complementary, not redundant.
 
-**With Mira Stonefield-Jaehaerys:** The peer-authority-earned key in Mira's vibes is a direct expression of this card. Mira embodies the community's survival calculus. Earning her means demonstrating, to someone who has survived sixty years of this substrate, that Taylor's offer is worth the armor it dents.
+**With Nessa Stonefield-Jaehaerys:** The peer-authority-earned key in Nessa's vibes is a direct expression of this card. Nessa embodies the community's survival calculus. Earning her means demonstrating, to someone who has survived sixty years of this substrate, that Taylor's offer is worth the armor it dents.
 
 **For auditor use:** Any scene where smallfolk characters act as if they have no internalized cost for being visible to power is a violation of this card. Any scene where Taylor accesses the whisper network or informal credit economy without having built the requisite trust is a violation. Any scene where the community collectively resists Taylor and the scene treats this as mere cowardice rather than rational risk management is a register violation.
