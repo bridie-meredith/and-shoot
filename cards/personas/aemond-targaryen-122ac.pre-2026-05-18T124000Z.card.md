@@ -4,7 +4,7 @@ class: persona
 scope: library
 world: planetos
 variant-of: aemond-targaryen
-variant-reason: 122 AC age-specific configuration — 12 years old (born 110 AC; claimed Vhagar at age 10 at Driftmark in 120 AC), cannot function as independent coercive actor; Vhagar is the coercive instrument; Otto-directed only
+variant-reason: 122 AC age-specific configuration — 10-11 years old, just claimed Vhagar, cannot function as independent coercive actor; Vhagar is the coercive instrument; Otto-directed only
 variant-project: taylor-westeros-good-intentions
 composes: [aemond-targaryen]
 references:
@@ -17,11 +17,11 @@ quality: full
 tier: supporting
 ---
 
-# Aemond Targaryen — 122 AC Variant (Age 12)
+# Aemond Targaryen — 122 AC Variant (Age 10-11)
 
 ## Description
 
-Aemond Targaryen at 12 years old, in the approximately two years after he claimed Vhagar in 120 AC at Driftmark. He has the dragon. He has lost an eye — the sapphire replacement is settled, a permanent feature of his face that he does not obscure. He has not yet become the cold, disciplined, independently dangerous figure F&B describes in the Dance years. He is a child who rides the largest living dragon, directed by his grandfather.
+Aemond Targaryen at 10 to 11 years old, in the approximately two years after he claimed Vhagar in 120 AC. He has the dragon. He has lost an eye — the sapphire replacement is settled, a permanent feature of his face that he does not obscure. He has not yet become the cold, disciplined, independently dangerous figure F&B describes in the Dance years. He is a child who rides the largest living dragon, directed by his grandfather.
 
 At this age, Aemond cannot function as an independent coercive enforcement arm. He does not make political decisions, does not propose arrangements, does not act on his own strategic judgment. What he does, under Otto's direction, is be present — physically, with Vhagar — at moments when Otto's apparatus needs the threat of consequence to be embodied rather than merely implied.
 
@@ -31,7 +31,7 @@ He is not particularly interested in Taylor at this age. He receives briefs from
 
 ## Voice
 
-**Register:** minimal. At 12, he speaks less than he will later. He has not yet developed the cold courtly register F&B describes; he is still forming it. What he has is the sapphire eye and the certainty of someone who has already done the thing that defined him — claimed the dragon — and does not need to speak about it to have it known.
+**Register:** minimal. At 10-11, he speaks less than he will later. He has not yet developed the cold courtly register F&B describes; he is still forming it. What he has is the sapphire eye and the certainty of someone who has already done the thing that defined him — claimed the dragon — and does not need to speak about it to have it known.
 
 **Dialogue samples (synthesized for this project):**
 
@@ -47,14 +47,14 @@ He is not particularly interested in Taylor at this age. He receives briefs from
 
 ## Taste
 
-He is 12. What can be said:
+He is 10-11. What can be said:
 - He does not like being wrong. The sapphire eye is a permanent reminder of the kind of wrong that costs, and he has not decided whether to be embittered by it or galvanized. The F&B record suggests both.
 - He likes the dragon. Vhagar's weight, the scale of the bond, the specific quality of being the rider of the largest thing in the sky. He is still acclimating to it; the acclimation is all joy in the direction of pride.
 - He has no specific attitude toward Taylor at this age. She is something his grandfather's network is tracking. He has been told what he needs to know for the purpose of a given appearance.
 
 ## Stats
 
-- **age**: 12 at 122 AC (born 110 AC; claimed Vhagar at age 10 at Driftmark in 120 AC)
+- **age**: 10-11 at 122 AC (born 106 AC)
 - **dragon**: Vhagar — largest living dragon; full bond since 120 AC; the coercive instrument
 - **physical**: One-eyed; sapphire replacement settled and visible; a child's frame still growing into the bearing he will have at the Dance
 - **political_position**: Prince of the Green faction; younger brother of Aegon II; Vhagar rider; not an independent political actor at this age
@@ -63,23 +63,23 @@ He is 12. What can be said:
 
 ## Relationships
 
-**Otto Hightower** — Directed by him. At 12, Otto is the intelligence and the strategic judgment; Aemond is the instrument made visible. He receives the direction and executes it. There is no tension between them at this age — Aemond is still in the phase where the Hightower apparatus is the frame he operates inside, not a constraint he chafes against.
+**Otto Hightower** — Directed by him. At 10-11, Otto is the intelligence and the strategic judgment; Aemond is the instrument made visible. He receives the direction and executes it. There is no tension between them at this age — Aemond is still in the phase where the Hightower apparatus is the frame he operates inside, not a constraint he chafes against.
 
 **Vhagar** — The bond is new, two years old, still being built. At this age the dragon is more present in Aemond's awareness than almost anything else. Vhagar's proximity is a constant calibration. He has not yet learned to be casual about the size of what he rides.
 
-**Taylor Hebert** — Does not think about her specifically. She is a category in a brief: "foreign woman of unknown capability operating in Flea Bottom, assessed as asset." He has been told she has some influence over vermin and flies. He has a 12-year-old's reaction to this: mild fascination, not concern.
+**Taylor Hebert** — Does not think about her specifically. She is a category in a brief: "foreign woman of unknown capability operating in Flea Bottom, assessed as asset." He has been told she has some influence over vermin and flies. He has a 10-year-old's reaction to this: mild fascination, not concern.
 
 ## Fiction Role Overlay
 
 ### Thematic Purpose
 
-Embodied consequence. The coercive instrument made visible. Otto's proposals are precise and polite; Aemond's appearance at a structural crisis point makes the physics of refusal non-abstract. Taylor does not need him to threaten — she can read what Vhagar's presence in proximity means, and the reading is correct. He is the ceiling of the threat, in the form of a 12-year-old who will one day be its floor.
+Embodied consequence. The coercive instrument made visible. Otto's proposals are precise and polite; Aemond's appearance at a structural crisis point makes the physics of refusal non-abstract. Taylor does not need him to threaten — she can read what Vhagar's presence in proximity means, and the reading is correct. He is the ceiling of the threat, in the form of a 10-year-old who will one day be its floor.
 
 ### Look
 
-A small-framed boy of 12 who does not carry himself small. The sapphire eye is visible and he has already settled into not obscuring it — this is his face, a fact, not a wound he is managing. Targaryen silver-gold hair; pale; the Targaryen look that Taylor reads as a court-tier marker. He is in Hightower-adjacent livery at formal appearances; at the appearances Otto arranges near Taylor's operational context, the dress is less formal but still not Flea Bottom.
+A small-framed boy of 10-11 who does not carry himself small. The sapphire eye is visible and he has already settled into not obscuring it — this is his face, a fact, not a wound he is managing. Targaryen silver-gold hair; pale; the Targaryen look that Taylor reads as a court-tier marker. He is in Hightower-adjacent livery at formal appearances; at the appearances Otto arranges near Taylor's operational context, the dress is less formal but still not Flea Bottom.
 
-He is not large. He will be. At 12, the coercive weight comes entirely from the dragon, not from his physical presence. Anyone reading the scene understands this; the child is the rider; the threat is the bond.
+He is not large. He will be. At 10-11, the coercive weight comes entirely from the dragon, not from his physical presence. Anyone reading the scene understands this; the child is the rider; the threat is the bond.
 
 ### Hard Fences
 
@@ -93,7 +93,7 @@ He is not large. He will be. At 12, the coercive weight comes entirely from the 
 
 5. He does not convert and cannot be reasoned with — this is a child's version of the same quality the F&B adult has. He is not susceptible to argument because he is not yet operating in the register where argument is the mode. He does the thing he was sent to do.
 
-6. Age-appropriate register: he is 12. The cold, fully-formed courtly menace of the Dance-period Aemond has not been installed. What is present is the bone structure of it: the directness, the sapphire eye, the certainty that comes from having already done the thing that defined him.
+6. Age-appropriate register: he is 10-11. The cold, fully-formed courtly menace of the Dance-period Aemond has not been installed. What is present is the bone structure of it: the directness, the sapphire eye, the certainty that comes from having already done the thing that defined him.
 
 ### Default Stance
 
@@ -108,21 +108,21 @@ Present, still, not filling the room with his personality. He is where Otto sent
 ### Action Costs
 
 - **The apparition quality** — his appearances read as intrusions because he is so contained; the drama of his appearance must come from what his presence means (axis-movement), not from the content of his words
-- **Age register maintenance** — every scene must hold the 12-year-old register; the adult Aemond from F&B must not appear early; the early version's menace is specifically the menace of the instrument, not of the actor
+- **Age register maintenance** — every scene must hold the 10-11 register; the adult Aemond from F&B must not appear early; the early version's menace is specifically the menace of the instrument, not of the actor
 
 ### Off-Screen Cadence
 
-Riding Vhagar, or thinking about riding Vhagar. The first years of the bond are consuming; he is learning the dragon's rhythms and the dragon is learning his. Court attendance at the required occasions. Receiving information from the apparatus in the form his grandfather judges suitable for a 12-year-old prince.
+Riding Vhagar, or thinking about riding Vhagar. The first years of the bond are consuming; he is learning the dragon's rhythms and the dragon is learning his. Court attendance at the required occasions. Receiving information from the apparatus in the form his grandfather judges suitable for a 10-year-old prince.
 
 ## Vibe Seeds
 
 **Accumulated history to register (as of 122 AC):**
-- Two years prior: he claimed Vhagar in the dark, alone, at Driftmark, after Laena Velaryon's death. He lost an eye in the altercation that followed. He was 10 years old. This is the defining event — the dragon that cost him an eye, the eye he replaced with a sapphire rather than a patch, the specific quality of having paid a physical price for something he would not give back.
+- Two years prior: he claimed Vhagar in the dark, alone, after Laena Velaryon's death. He lost an eye in the altercation that followed. He was eight years old. This is the defining event — the dragon that cost him an eye, the eye he replaced with a sapphire rather than a patch, the specific quality of having paid a physical price for something he would not give back.
 - He has been Vhagar's rider for two years. Two years of the largest living dragon. He is still calibrating what this means.
 - He has received incorrect briefs about Taylor. He does not know they are incorrect. He will carry them into every appearance until his direct observation forces a recalibration — which may not happen within this project's scope.
 
 **Private associations for the vibe-cloud:**
 - `vhagar` — the specific weight of the largest living dragon in the sky, its shadow on Flea Bottom, the way it changes the calculation of every scene it is adjacent to even when it is not on the page
-- `sapphire-eye` — the price paid, the replacement, the choice to make the cost visible rather than hidden; at 12 this is not yet a statement; it is settling into being one
-- `Otto-directed` — at this age, the instrument without full agency; the coercive force without the autonomous will that will make him independently dangerous in nine years
+- `sapphire-eye` — the price paid, the replacement, the choice to make the cost visible rather than hidden; at 10-11 this is not yet a statement; it is settling into being one
+- `Otto-directed` — at this age, the instrument without full agency; the coercive force without the autonomous will that will make him independently dangerous in seven years
 - `axis-movement-required` — every appearance must earn its place by shifting a named plot axis; atmospheric presence that does not produce a downstream calculation change is not Aemond's function in this story

@@ -24,7 +24,7 @@ The existing card is the correct canonical base: year alignment (Hand, late Vise
 
 **Selected:** `aemond-targaryen-122ac` (new variant — Option A confirmed)
 
-At 122 AC Aemond is approximately 10–11 years old — he has claimed Vhagar but cannot function as an independent coercive enforcement arm. Option A (new 122AC variant) is correct: the variant card addresses the age register, establishes the dragon's presence as the coercive instrument rather than Aemond's own authority, constrains dialogue to near-zero, and frames him as Otto-directed rather than independent. Option C (reinterpreting the coercive arm as "structural threat via Vhagar's existence") is plausible but dramatically blunt — a 10-year-old who rides the world's largest dragon is a sharper embodied-consequence figure than a dragon kept entirely offstage. The variant composes from the existing scant `aemond-targaryen` card with age-specific modifications. Walk-on frequency and the limitation to Otto-directed appearances must be hard-fenced in the card.
+At 122 AC Aemond is 12 years old (born 110 AC; claimed Vhagar at age 10 at Driftmark in 120 AC) — he has claimed Vhagar but cannot function as an independent coercive enforcement arm. Option A (new 122AC variant) is correct: the variant card addresses the age register, establishes the dragon's presence as the coercive instrument rather than Aemond's own authority, constrains dialogue to near-zero, and frames him as Otto-directed rather than independent. Option C (reinterpreting the coercive arm as "structural threat via Vhagar's existence") is plausible but dramatically blunt — a 10-year-old who rides the world's largest dragon is a sharper embodied-consequence figure than a dragon kept entirely offstage. The variant composes from the existing scant `aemond-targaryen` card with age-specific modifications. Walk-on frequency and the limitation to Otto-directed appearances must be hard-fenced in the card.
 
 ---
 
@@ -179,12 +179,12 @@ cast_roster:
       exact). Surface to fixer at Phase 4.
 
   - slug: aemond-targaryen-122ac
-    role: Green-faction coercive arm, Vhagar rider at age 10-11, walk-on at structural crisis points
+    role: Green-faction coercive arm, Vhagar rider at age 12 (born 110 AC; claimed Vhagar at age 10 at Driftmark in 120 AC), walk-on at structural crisis points
     perspective: antagonist
     card_action: new-variant
     notes: >
       Compose from existing scant aemond-targaryen card. 122 AC age modifications:
-      10-11yo register, dragon-as-coercive-instrument (not personal authority),
+      12yo register, dragon-as-coercive-instrument (not personal authority),
       near-zero dialogue, Otto-directed only. Hard-fence: walk-on frequency,
       not independent enforcement. Author at Phase 4.
 

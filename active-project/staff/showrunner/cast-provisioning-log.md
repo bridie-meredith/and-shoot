@@ -41,7 +41,7 @@ All eight actors from the final roster table (cast-selection.md) provisioned to 
 
 - **Directory created:** `active-project/actors/aemond-targaryen-122ac/`
 - **Card status:** new-variant (composed from aemond-targaryen base); quality full; tier supporting
-- **Card action taken:** Composed from `cards/personas/aemond-targaryen.card.md` (unchanged). New variant card at `cards/personas/aemond-targaryen-122ac.card.md`. 122 AC modifications: age 10-11, Vhagar-directed coercive instrument (dragon is the threat, not the boy), near-zero dialogue, Otto-directed only.
+- **Card action taken:** Composed from `cards/personas/aemond-targaryen.card.md` (unchanged). New variant card at `cards/personas/aemond-targaryen-122ac.card.md`. 122 AC modifications: age 12 (born 110 AC; claimed Vhagar at age 10 at Driftmark in 120 AC), Vhagar-directed coercive instrument (dragon is the threat, not the boy), near-zero dialogue, Otto-directed only.
 - **HARD FENCE PER DRAMATIST F3:** Explicitly recorded on card: each on-stage appearance must produce a named consequence on at least one plot axis — Taylor's calculation shifts, protect-target exposure changes, or apparatus dependency tightens. Walk-on appearance that shifts no axis = scenery = cut at /and-write Phase 6.
 - **Vibes-cloud authored:** Yes — vhagar/sapphire-eye/child-instrument/axis-gate/presence keys
 - **Stub files written:** ltm.md, stm.md, state.md — minimal-valid per schema
@@ -130,7 +130,7 @@ cast_roster:
     perspective: antagonist
 
   - slug: aemond-targaryen-122ac
-    role: Green-faction coercive arm, Vhagar rider at age 10-11, walk-on at structural crisis points; each appearance must shift a named plot axis
+    role: Green-faction coercive arm, Vhagar rider at age 12 (born 110 AC; claimed Vhagar at age 10 at Driftmark in 120 AC), walk-on at structural crisis points; each appearance must shift a named plot axis
     perspective: antagonist
 
   - slug: wren-stitch-maker-flea-bottom-ward

@@ -5,7 +5,7 @@ scope: project
 project: taylor-westeros-good-intentions
 world: planetos
 variant-of: aemond-targaryen
-variant-reason: 122 AC age-specific configuration — 12 years old (born 110 AC; claimed Vhagar at age 10 at Driftmark in 120 AC), Otto-directed only; hard-fenced per dramatist F3
+variant-reason: 122 AC age-specific configuration — 10-11 years old, just claimed Vhagar, Otto-directed only; hard-fenced per dramatist F3
 variant-project: taylor-westeros-good-intentions
 composes: [aemond-targaryen]
 references:
@@ -18,11 +18,11 @@ quality: full
 tier: supporting
 ---
 
-# Aemond Targaryen — 122 AC Variant (Age 12)
+# Aemond Targaryen — 122 AC Variant (Age 10-11)
 
 ## Description
 
-Aemond Targaryen at 12 years old — approximately two years after claiming Vhagar in 120 AC at Driftmark. The sapphire eye is settled. The dragon bond is two years old and still being built. He is a child who rides the largest living dragon, directed by his grandfather Otto.
+Aemond Targaryen at 10 to 11 years old — approximately two years after claiming Vhagar in 120 AC. The sapphire eye is settled. The dragon bond is two years old and still being built. He is a child who rides the largest living dragon, directed by his grandfather Otto.
 
 At this age he cannot function as an independent coercive enforcement arm. He does not make political decisions or act on personal strategic judgment. He appears, under Otto's direction, at moments when the threat of consequence needs to be embodied rather than merely implied. The dragon is the coercive instrument; Aemond is the rider; Otto is the intelligence behind the instrument.
 
@@ -48,7 +48,7 @@ He has been told Taylor is a foreign woman of unusual capability in Flea Bottom.
 
 ## Stats
 
-- **age**: 12 at 122 AC (born 110 AC; claimed Vhagar at age 10 at Driftmark in 120 AC)
+- **age**: 10-11 at 122 AC (born 106 AC)
 - **dragon**: Vhagar — largest living dragon; full bond since 120 AC; the coercive instrument
 - **physical**: One-eyed; sapphire replacement visible and settled; child's frame still growing
 - **political_position**: Green faction prince; Vhagar rider; not an independent political actor
@@ -67,11 +67,11 @@ He has been told Taylor is a foreign woman of unusual capability in Flea Bottom.
 
 ### Thematic Purpose
 
-Embodied consequence. He is the ceiling of the threat, in the form of a 12-year-old who will one day be its floor.
+Embodied consequence. He is the ceiling of the threat, in the form of a 10-year-old who will one day be its floor.
 
 ### Look
 
-Small-framed boy of 12 who does not carry himself small. Sapphire eye visible, not obscured. Targaryen silver-gold hair. The coercive weight comes entirely from the dragon, not from his physical presence.
+Small-framed boy of 10-11 who does not carry himself small. Sapphire eye visible, not obscured. Targaryen silver-gold hair. The coercive weight comes entirely from the dragon, not from his physical presence.
 
 ### Hard Fences
 
@@ -86,7 +86,7 @@ An Aemond walk-on that does not shift any named axis is scenery. It must be cut 
 1. He does not act independently. All appearances are Otto-directed.
 2. Near-zero dialogue. Presence is the message.
 3. Walk-on frequency — structural crisis points d10-d14 window only. Not a mid-arc recurring scene partner.
-4. Age-appropriate register — 12; the cold fully-formed courtly menace of the Dance-period Aemond is not yet installed.
+4. Age-appropriate register — 10-11; the cold fully-formed courtly menace of the Dance-period Aemond is not yet installed.
 5. Cannot be reasoned with — a child's version of the same quality: not susceptible to argument; executes the directive.
 
 ### Default Stance
@@ -110,7 +110,7 @@ Riding Vhagar or thinking about it. Court attendance. Receiving apparatus inform
 ## Vibe Seeds
 
 **Accumulated history to register (as of 122 AC):**
-- Claimed Vhagar alone in the dark at age 10 at Driftmark; lost an eye in the altercation that followed; replaced it with a sapphire. This is the defining event. The price paid, visible, not hidden.
+- Claimed Vhagar alone in the dark at age eight; lost an eye in the altercation that followed; replaced it with a sapphire. This is the defining event. The price paid, visible, not hidden.
 - Two years with the largest living dragon.
 - Briefed incorrectly about Taylor. Carries the incorrect brief.
 

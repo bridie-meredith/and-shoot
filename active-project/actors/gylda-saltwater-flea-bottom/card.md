@@ -11,7 +11,7 @@ references:
 aliases: [gylda, the-water-carrier]
 origin: authored
 quality: full
-tier: supporting
+tier: minor
 ---
 
 # Gylda Saltwater — Flea Bottom Water-Carrier
