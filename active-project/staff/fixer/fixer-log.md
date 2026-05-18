@@ -52,3 +52,21 @@ criteria met: yes
 findings-applied: 7
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-18T12:30:00Z — series-audit-2026-05-18-fix-pass
+dispatch: resolve 2 HARD + 4 SIGNAL findings from series-audit-2026-05-18T120000Z.md; TASTE findings (007-009) untouched
+target: active-project/warehouse/cond-road-to-hell-chain-shape.md + active-project/actors/aemond-targaryen-122ac/card.md + cards/personas/aemond-targaryen-122ac.card.md + active-project/staff/showrunner/memory.md + active-project/staff/showrunner/signature-draft.md + active-project/actors/gylda-saltwater-flea-bottom/card.md
+audit-report: active-project/staff/reviews/series-audit-2026-05-18T120000Z.md
+findings-queued: 6 (fault-001 HARD, fault-002 HARD, fault-003 SIGNAL, fault-004 SIGNAL, fault-005 SIGNAL subsumed by fault-001, fault-006 SIGNAL)
+
+## fault-001 — RESOLVED — 2026-05-18T12:35:00Z
+fault: cond-road-to-hell-chain-shape.md referenced wrong cost-bearer (Nessa), wrong companion card (cond-nessa-scene-frequency), and wrong inciting good intention (prevent Lucerys Velaryon's death)
+scope: line
+change: (1) Chain Structure paragraph: replaced "prevent Lucerys Velaryon's death" inciting good intention with resolved path-4 framing (atonement-for-Khepri operating rule meeting Otto's first offer; shielding Sera/protecting Wren); replaced "Nessa's death" closing-image with "Wren's death"; (2) inciting-good-intention legibility paragraph: updated to atonement operating rule + first Otto offer; (3) Retroactive-Reconstruction closing-image anchor: "Nessa's death" → "Wren's death"; (4) Interaction Notes: replaced cond-nessa-scene-frequency reference + "Nessa's death" with cond-cost-bearer-scene-frequency + "Wren's death (wren-stitch-maker-flea-bottom-ward)"; (5) frontmatter references: added cond-cost-bearer-scene-frequency. Pre-fix backup written to warehouse/cond-road-to-hell-chain-shape.pre-2026-05-18T123000Z.md.
+criteria met: yes — all Nessa references replaced with Wren; companion card updated; inciting good intention reflects resolved path-4; gate loads now point to correct closing image and correct companion card
+
+## fault-005 — RESOLVED (subsumed) — 2026-05-18T12:35:00Z
+fault: cond-road-to-hell-chain-shape.md inciting good intention stated as "prevent Lucerys Velaryon's death" (path-brainstorm framing, not resolved path-4)
+scope: line
+change: addressed in same pass as fault-001 — inciting good intention corrected to atonement-for-Khepri operating rule meeting Otto's first offer
+criteria met: yes — confirmed resolved as part of fault-001 fix

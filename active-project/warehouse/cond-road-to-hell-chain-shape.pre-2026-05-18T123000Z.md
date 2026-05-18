@@ -9,7 +9,6 @@ quality: full
 references:
   - cond-taylor-pov-behavior
   - cond-maester-chronicler-voice
-  - cond-cost-bearer-scene-frequency
 ---
 
 # Road-to-Hell Chain Shape — Structural Rule for Mistake-Beat Sequencing
@@ -28,13 +27,13 @@ Persistent and load-bearing across all acts. The chain is not complete until the
 
 ## Chain Structure
 
-**Minimum three auditable-mistake beats between the inciting good intention and the closing-image cost.** The inciting good intention is Taylor's atonement-for-Khepri operating rule (be useful without taking control) meeting Otto's first offer: route intelligence in exchange for shielding Sera (protect-target), keeping Wren (`wren-stitch-maker-flea-bottom-ward`) from burning. The first trade is the auditable mistake that makes the rest necessary. The closing-image cost is Wren's death in Flea Bottom violence of the Dance's opening. Between these two poles, the story requires a minimum of three beats that meet the auditable-mistake definition below.
+**Minimum three auditable-mistake beats between the inciting good intention and the closing-image cost.** The inciting good intention is Taylor's stated objective (prevent Lucerys Velaryon's death — "if Lucerys lives, the war does not start"). The closing-image cost is Nessa's death in Flea Bottom violence of the Dance's opening. Between these two poles, the story requires a minimum of three beats that meet the auditable-mistake definition below.
 
 **Each beat must be causal.** The next beat's bad act follows from the prior beat's choice, not from external fate, coincidence, or narrative convenience. A causal chain means: Beat N's choice narrows the available exits and makes Beat N+1's bad act the cold-utilitarian-correct response to the narrowed situation. External events may pressure the choice but may not substitute for it — the beat must be Taylor's choice, not the world's imposition.
 
 **Each beat must be locatable at a specific scene.** At /and-review verdict, the chain must be traceable: "The first auditable-mistake beat occurs in [book-chapter-scene identifier]. The second occurs in [identifier]." A beat that can only be identified at act scale — "somewhere in act two, Taylor made a bad choice" — is not locatable and fails the chain verification.
 
-**The inciting good intention must be legible in scene one.** Taylor's atonement operating rule and the first Otto offer are not retrospective framings; they are established at story open as the cold-utilitarian rationale. The reader knows what Taylor is trying to do and what she accepted. This legibility is required for the retroactive-reconstruction to land — the reader must be able to compare what Taylor intended against what the chain produced.
+**The inciting good intention must be legible in scene one.** Taylor's stated objective (prevent Lucerys's death) is not a retrospective framing; it is established at story open as the cold-utilitarian rationale. The reader knows what Taylor is trying to do. This legibility is required for the retroactive-reconstruction to land — the reader must be able to compare what Taylor intended against what the chain produced.
 
 ## Auditable-Mistake Definition
 
@@ -52,7 +51,7 @@ A choice that fails condition 1 is not an auditable mistake; it is a character-f
 
 **No beat in the chain may be legible only forward.** A beat that reads as a setup when first encountered but cannot be identified as the narrowing step until after the closing image has been reached is a retroactive-reconstruction failure. The beats are legible as choices at the time they occur; their causal contribution to the chain is legible at the time they occur (though the reader may not yet know the chain's full shape). The retroactive view reveals the chain's shape; it does not create the beats.
 
-**The closing image is the reconstruction anchor.** The reader's backward trace begins at Wren's death and works toward the inciting good intention. Each beat in the chain must be reachable from the closing image through a sequence of causal steps. A beat that is not reachable by backward trace from the closing image is not part of the chain.
+**The closing image is the reconstruction anchor.** The reader's backward trace begins at Nessa's death and works toward the inciting good intention. Each beat in the chain must be reachable from the closing image through a sequence of causal steps. A beat that is not reachable by backward trace from the closing image is not part of the chain.
 
 ## Prohibition on Authorial Correction
 
@@ -68,6 +67,6 @@ A choice that fails condition 1 is not an auditable mistake; it is a character-f
 
 **With `cond-maester-chronicler-voice`:** The coda names the explicit counterfactual — what would have happened had Taylor not intervened. That counterfactual is the retroactive-reconstruction's terminal point. The chain's legibility is confirmed when the coda's counterfactual can be directly connected to the inciting good intention through the auditable-mistake beats. Both cards must be loaded for /and-review verdict.
 
-**With `cond-cost-bearer-scene-frequency`:** The closing-image cost is Wren's death (`wren-stitch-maker-flea-bottom-ward`). This card governs the chain that leads to that cost; `cond-cost-bearer-scene-frequency` governs the structural presence requirement that gives the cost earned weight. Both must be loaded for act-boundary checks.
+**With `cond-nessa-scene-frequency`:** The closing-image cost is Nessa's death. This card governs the chain that leads to that cost; the mira-scene-frequency card governs the structural presence requirement that gives the cost earned weight. Both must be loaded for act-boundary checks.
 
 **For auditor use:** Flag any /and-review verdict where fewer than three auditable-mistake beats can be located at specific scene identifiers. Flag any beat where the causal connection to the prior beat runs through external fate rather than Taylor's choice. Flag any scene where Taylor's inner monologue signals regret or foresight at the moment of a chain beat. Flag any narrative framing that applies special prose weight to a choice at the time it is made. Flag any beat that is not reachable by backward trace from the closing image.
