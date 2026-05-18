@@ -5,7 +5,7 @@
 ---
 
 STATE:
-  location: fish-gate-district-outdoor-work-spot
+  location: hook-flea-bottom-outdoor-work-spot
   condition: [cond-kl-social-physics-122ac, cond-westerosi-witness-vocabulary]
   inventory: []
   stats:

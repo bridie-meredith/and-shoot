@@ -152,6 +152,25 @@ findings-applied: 4 (1 conjunction-split producing 1 new bone, 3 NO-VERB recasts
 findings-skipped: 0
 exit: CLEAN
 
+## SESSION-START — 2026-05-18T15:00:00Z — write-b01c01-pass5-fault-001
+dispatch: resolve 1 FAULT-STATE finding from /and-write Phase 5 auditor on chapter b01c01 — Coll state file location contradicts chapter chunk Hook anchor
+target: active-project/actors/coll-net-mender-flea-bottom/state.md
+audit-report: active-project/staff/auditor/write-b01c01-pass5.md
+findings-queued: 1 (fault-001 FAULT-STATE)
+
+## fault-001 — RESOLVED — 2026-05-18T15:01:00Z
+fault: coll-net-mender-flea-bottom/state.md location field (fish-gate-district-outdoor-work-spot) contradicted chapter b01c01 chunk Hook anchor where Coll is co-present with Taylor
+scope: line
+change: updated state.md location field from fish-gate-district-outdoor-work-spot to hook-flea-bottom-outdoor-work-spot; all other fields untouched; card.md historical Fish Gate district record not touched
+criteria met: yes — state file and chapter chunk now name the same district without contradiction
+
+## SESSION-END — 2026-05-18T15:01:00Z — write-b01c01-pass5-fault-001
+findings-applied: 1
+findings-skipped: 0
+exit: CLEAN
+
+2026-05-18T15:01:00Z /and-write b01c01 pass5: 1 FAULT-STATE resolved (coll state-file location reconciled to chapter chunk Hook anchor).
+
 ## fault-002 — RESOLVED — 2026-05-18T12:42:00Z
 fault: both Aemond cards stated age: 10-11 at 122 AC (born 106 AC) — internally inconsistent and wrong per F&B canon; memory.md cast_roster also said "age 10-11"
 scope: line
