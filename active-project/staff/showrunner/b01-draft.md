@@ -1,5 +1,61 @@
 # /and-substance book b01 — screen-writer draft
 
+## Revise log (attempt 2 of 3 — 2026-05-18)
+
+### HARD findings addressed
+
+**HARD-1 — c11 SUBSTANCE-SUSPECT (political-register-toward-elite):** Added a specific threshold-crossing image to the chunk. The triggering moment: through the insect-feed, Taylor watches a report on smallfolk displacement — body-temperature clusters readable through the feed, the density of packed people, legible as numbers — brought into a chamber in Maegor's Holdfast. The chamber's senior figure receives the document, registers its weight, and places it unopened to one side. Twenty minutes later by Taylor's insect-reckoning, the same figure signs the succession instrument that will route the political play through that same ward. The document is still unread. This is the beat where the contempt arrives as a conclusion — not more resentment-color, but a specific completed observation: the ward's people are not absent from the model; they are the surface the model is printed on, invisible as paper is invisible. Taylor names that: she files the entry. The +1.5 now rests on this image, not on category language alone.
+
+**HARD-2 — c04/c05 STRUCTURAL-GAP (d03 split):**
+- **Info-path chosen: Otto-told.** c04 chunk revised so that Otto, in their meeting, names Sera Hightower by name and names the threat-shape — that her position in the succession calculus is unstable, that the probability distribution on her survival without an inside adjustment is unfavorable, and that Taylor is the kind of instrument who could adjust it. He leaves the calculation to Taylor. He does not press for acceptance. He leaves. c04 handoff updated: Otto's conversation now explicitly includes the court-tier information Taylor will use in c05's model.
+- **World-pressure between c04 close and c05 open:** Added to c04 chunk — after Otto leaves, in the same evening, Taylor's insect-feed registers a Green-faction courtier moving through Flea Bottom with the particular quality of someone mapping coverage rather than traversing the ward; systematic sweep-pattern, not transit. This is Otto's apparatus continuing to do calibrated work in the world. Taylor reads it. The refusal holds through this. But the apparatus is visibly present and moving, and the information Otto left about Sera is sitting in Taylor's model like an unresolved entry.
+- **c05 chunk updated** to explicitly name the information-source: the Sera Hightower probability model is assembled from (a) what Otto named in the c04 meeting and (b) what Taylor's systematic reading in the gap between c04 and c05 has filled in from ward-layer and rumor-pickup. The c05 chunk now explicitly attributes the court-tier picture to Otto's c04 provision as primary source.
+
+### SIGNAL findings addressed
+
+**signal-001 — c01 knowledge cost_ledger_anchor:** Changed from `cl-intelligence-arrangement` to `~`. Added note: "passive orientation; pre-arrangement; unanchored knowledge gain at baseline."
+
+**signal-002 — c02 capability and knowledge cost_ledger_anchors:** Capability anchor changed from `cl-network-position` to `~`; note updated to "first-deployment; self-directed rescue; pre-Otto-arrangement, not yet network expansion." Knowledge anchor changed from `cl-intelligence-arrangement` to `~`; note updated to "watch-sweep-pattern observation; pre-arrangement; unanchored."
+
+**signal-003 — c04/c05/c09 position-rise re-anchored:** All three position-rise entries changed from `cl-social-tether-build` to `cl-otto-trade`. c04 note: "identification-as-asset; pre-acceptance position-visibility shift through Otto recognizing Taylor's capability." c05 note: "acceptance formalizes asset-identification; position visibility crystallizes through the first trade." c09 note: "Otto's-unofficial-instrument; arrangement named; position-visibility now formal in the one court layer that uses Taylor."
+
+**signal-004 — c09 capability +0.5 removed:** c09 capability entry removed from axes_in_motion. No trajectory allocation for capability at d07.
+
+**note-002 — dramatic_role → dramatic_shape comment:** All `dramatic_role:` and `trajectory_deltas_carried:` YAML fields removed; both demoted to a single comment line above each chapter block.
+
+### Deferred items
+
+- Dramatist SIGNAL 1 (c09 scene_count under-dense) — defer to `/and-substance chapter b01c09`.
+- Dramatist SIGNAL 2 (Aemond c11 axis shift) — defer to `/and-substance chapter b01c11`.
+- Dramatist SIGNAL 3 (d03 capability floating) — resolved by signal-004 removal; comment added to c04 substance_delta.
+- Auditor note-001 (missing condition card) — false positive; card exists at `cards/conditions/cond-cost-bearer-scene-frequency.card.md`.
+- Auditor note-003 (sub-1 rank floor) — within band per `design/substance/delta-targets.md`; no action.
+- Audience c16 single-axis thinness — scene-level note; no chunk-text change required; flagged for `/and-substance chapter b01c16`.
+- Audience c03/c08 Westerosi texture — scene-level note; flagged for `/and-substance chapter b01c03` and `/and-substance chapter b01c08`.
+- worm-canon-pedant c11 "whose names" roster stub — partially addressed: chunk now names the Green-faction inner circle (chamber senior figures, the succession-instrument signatories) as the contempt-naming scope; full individual-name roster deferred to `/and-substance chapter b01c11`.
+
+### Roll-up re-verification (post-revise)
+
+Capability: c09 +0.5 removed. New sum: c02(+1.0) + c06(+1.0) + c14(+1.0) + c15(+0.5) = +3.5. Target +4. |3.5 − 4| = 0.5. Within ±1. ✓
+
+All other axes unchanged from prior draft. Summary:
+
+| axis | target | sum | |target − sum| | result |
+|---|---|---|---|---|
+| moral-framework | −2 | c05(−1.0)+c09(−0.5)+c15(−0.5) = −2.0 | 0.0 | ✓ |
+| capability | +4 | c02(+1.0)+c06(+1.0)+c14(+1.0)+c15(+0.5) = +3.5 | 0.5 | ✓ |
+| position (net) | 0 | rise c04+c05+c09 = +1.5; fall c12+c17 = −2.0; net −0.5 | 0.5 | ✓ |
+| social-tether | −1 | rise c02+c06 = +1.0; fall c12+c17 = −1.5; net −0.5 | 0.5 | ✓ |
+| relational-anchor-status | −2 | c03+c08+c10+c13+c17 = −2.5 | 0.5 | ✓ |
+| moral-legibility-to-self | −3 | c03+c08+c12+c13+c17 = −3.0 | 0.0 | ✓ |
+| political-register-toward-elite | +4 | c07+c11+c16+c17 = +4.0 | 0.0 | ✓ |
+| knowledge | +5 | c01+c02+c04+c06+c07+c09+c10+c11+c14 = +5.5 | 0.5 | ✓ |
+| agency | −4 | c05+c06+c09+c12+c14+c15+c17 = −4.0 | 0.0 | ✓ |
+
+All axes within ±1 of book target. ✓
+
+---
+
 ## Phase 4: book drama
 
 What cannot survive this book is the prohibition — not because it was weak, but because it was exactly strong enough to survive every confrontation except the arithmetic. Taylor Hebert arrives in King's Landing holding one line she will not cross: no one becomes an instrument again. That prohibition is not a sentiment; it is the load-bearing architecture of her atonement, the one thing that separates what she is doing in Flea Bottom from what she did at Gold Morning. Over the course of this book, Otto Hightower does not destroy the prohibition — he prices it. Each intelligence delivery asks for a fraction less than what the prohibition would cost in lives; each accepted trade slightly lowers the threshold for the next one; by the time the network is fully deployed and Taylor can see its moral shape clearly, she has been inside the repetition for long enough that seeing it constitutes recognition, not refusal. What gets crushed is not Taylor's awareness — her accounting never stops running — but the gap between seeing and stopping. What gets extinguished is the possibility that the penitential framework could have been a working instrument rather than a mirror. What gets named, at the close, is the exchange rate: she empowered the Greens to delay a war, the war ignited anyway on a clock she did not control, and Wren died in the street Taylor had charted. The irony is structural: the prevention apparatus that worked — that genuinely delayed the Dance, that kept Sera Hightower alive through the succession crisis — produced the conditions under which Taylor could not reroute the violence when it came. The ledger is legible. The ledger being legible is the cost.
@@ -9,6 +65,8 @@ What cannot survive this book is the prohibition — not because it was weak, bu
 ## Phase 2+3: chapter chunks + contracts
 
 ### b01c01 — flea-bottom-anonymous-baseline
+
+# dramatic_shape (informational): rising; trajectory_deltas_carried: []
 
 ```yaml
 chunk: |
@@ -20,7 +78,7 @@ structure:
 substance_delta:
   axes_in_motion:
     - { axis: capability, direction: null, target_delta_magnitude: 0, cost_ledger_anchor: ~, notes: "dormant; passive insect-sense only; establishes suppressed baseline at rank 3" }
-    - { axis: knowledge, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-intelligence-arrangement, notes: "Flea Bottom geography read; ward-level pattern established; 3→3.5" }
+    - { axis: knowledge, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: ~, notes: "Flea Bottom geography read; ward-level pattern established; 3→3.5; passive orientation; pre-arrangement; unanchored knowledge gain at baseline" }
   density_target: "0.5-0.6"
 
 handoff_in:
@@ -55,14 +113,13 @@ handoff_out:
     - "wren: present, recurring, unnamed as significant"
     - "otto: offstage"
   target_chapter: b01c02
-
-dramatic_role: setup
-trajectory_deltas_carried: []
 ```
 
 ---
 
 ### b01c02 — first-deployment-rescue-insects-visible
+
+# dramatic_shape (informational): rising; trajectory_deltas_carried: [d01]
 
 ```yaml
 chunk: |
@@ -73,9 +130,9 @@ structure:
 
 substance_delta:
   axes_in_motion:
-    - { axis: capability, direction: up, target_delta_magnitude: 1.0, cost_ledger_anchor: cl-network-position, notes: "suppressed → first-deployment (localized, defensive); 3→4; d01 shift" }
+    - { axis: capability, direction: up, target_delta_magnitude: 1.0, cost_ledger_anchor: ~, notes: "suppressed → first-deployment (localized, defensive); 3→4; d01 shift; first-deployment; self-directed rescue; pre-Otto-arrangement, not yet network expansion" }
     - { axis: social-tether, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-social-tether-build, notes: "anonymous → smallfolk-present; Wren + Coll layer laid; 2→2.5; d01 social-embed; direction records initial rise before net-fall" }
-    - { axis: knowledge, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-intelligence-arrangement, notes: "watch-sweep patterns + ward movement first read; 3.5→4" }
+    - { axis: knowledge, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: ~, notes: "watch-sweep patterns + ward movement first read; 3.5→4; watch-sweep-pattern observation; pre-arrangement; unanchored" }
   density_target: "0.6-0.7"
 
 handoff_in:
@@ -108,14 +165,13 @@ handoff_out:
     - "wren: rescued; present; still unnamed as significant node in Taylor's ledger"
     - "otto: offstage"
   target_chapter: b01c03
-
-dramatic_role: setup
-trajectory_deltas_carried: [d01]
 ```
 
 ---
 
 ### b01c03 — attachment-named-first-crack-in-accounting
+
+# dramatic_shape (informational): rising; trajectory_deltas_carried: [d02]
 
 ```yaml
 chunk: |
@@ -159,26 +215,26 @@ handoff_out:
     - "wren: attached; not named as variable in Taylor's model; Taylor knows she has done this"
     - "otto: offstage"
   target_chapter: b01c04
-
-dramatic_role: setup
-trajectory_deltas_carried: [d02]
 ```
 
 ---
 
 ### b01c04 — otto-identifies-pattern-first-refusal
 
+# dramatic_shape (informational): rising; trajectory_deltas_carried: [d03-refusal-beat]
+
 ```yaml
 chunk: |
-  Otto Hightower finds Taylor before Taylor knows she has been findable. The witnesses from the sweep — one of them a smallfolk-layer informant in the Green-faction network — carried the insect-density anomaly upward through a chain of three relays, and Otto has a picture: a foreign woman with some variety of insect-witchery operating in Flea Bottom, pattern-reading capability, no known patron, no name on record. He does not send an intermediary. He appears himself, in a street-merchant's plain wool, and the conversation is direct: he has a function that requires her specific capability and offers a specific exchange. Taylor refuses. She refuses clearly and without hesitation: she names the prohibition — atonement-via-refusal-of-control, the operating rule that does not bend because bending it is what made Gold Morning — and Otto receives the refusal without pressure. He nods, adjusts his posture as though making a note, and leaves. The chapter's dramatic weight is the refusal: Taylor articulating the prohibition in full for the first time to someone who has reason to hear it, and the refusal holding. The reader watches Otto not press and understands that he has learned something from the refusal — not that she cannot be moved, but where the threshold is. Taylor runs the accounting afterward and files the encounter as: prohibition held; function declined; position unchanged. The chapter also begins the court-knowledge intake: Taylor, to track whether Otto will resurface, begins reading the Flea Bottom political layer more systematically, which is the first step toward the surveillance architecture.
+  Otto Hightower finds Taylor before Taylor knows she has been findable. The witnesses from the sweep — one of them a smallfolk-layer informant in the Green-faction network — carried the insect-density anomaly upward through a chain of three relays, and Otto has a picture: a foreign woman with some variety of insect-witchery operating in Flea Bottom, pattern-reading capability, no known patron, no name on record. He does not send an intermediary. He appears himself, in a street-merchant's plain wool, and the conversation is direct. He names the function he needs: court-layer intelligence that his network cannot reach from above. He names the exchange he is offering. And he names Sera Hightower — her position in the succession calculus, the threat-shape as he reads it, the probability distribution on her survival without an inside adjustment. He does not ask Taylor to accept. He names the situation and leaves the calculation to her. Taylor refuses. She refuses clearly and without hesitation: she names the prohibition — atonement-via-refusal-of-control, the operating rule that does not bend because bending it is what made Gold Morning — and Otto receives the refusal without pressure. He nods, adjusts his posture as though making a note, and leaves. The chapter's dramatic weight is the refusal: Taylor articulating the prohibition in full for the first time to someone who has reason to hear it, and the refusal holding. The reader watches Otto not press and understands that he has learned something from the refusal — not that she cannot be moved, but where the threshold is. Taylor runs the accounting afterward and files the encounter as: prohibition held; function declined; position unchanged. That evening, Taylor's insect-feed registers a Green-faction courtier moving through the Flea Bottom ward with the particular quality of someone mapping coverage rather than traversing it — a systematic sweep-pattern, not transit. Otto's apparatus is not paused. It is calibrating. The refusal holds through this too. But the apparatus is visibly present, and Sera Hightower's survival picture — the information Otto left in the room — sits in Taylor's model like an entry not yet closed. The chapter also begins the court-knowledge intake: Taylor, to track whether Otto will resurface, begins reading the Flea Bottom political layer more systematically, which is the first step toward the surveillance architecture.
+  # d03 capability sub-shift "systematic-reading-begun" is absorbed within c02's already-claimed +1.0 (continuous deployment expansion); no separate magnitude needed here.
 
 structure:
   scene_count: 4
 
 substance_delta:
   axes_in_motion:
-    - { axis: position, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-social-tether-build, notes: "anonymous → known-to-one-agent-outside-Flea-Bottom; 1→1.5; d03 first beat (refusal); position rises with visibility even during refusal" }
-    - { axis: knowledge, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-intelligence-arrangement, notes: "Otto identified; Green-faction structure begins mapping; 4→4.5; systematic reading begun" }
+    - { axis: position, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-otto-trade, notes: "anonymous → known-to-one-agent-outside-Flea-Bottom; 1→1.5; d03 first beat (refusal); identification-as-asset; pre-acceptance position-visibility shift through Otto recognizing Taylor's capability" }
+    - { axis: knowledge, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-intelligence-arrangement, notes: "Otto identified; Green-faction structure begins mapping; Sera Hightower's threat-shape named by Otto in meeting; 4→4.5; systematic reading begun" }
   density_target: "0.6-0.7"
 
 handoff_in:
@@ -198,29 +254,30 @@ handoff_in:
 handoff_out:
   open_threads:
     - "Otto's offer declined but his presence means Taylor is now a known quantity to one court-adjacent layer"
-    - "Otto has heard the prohibition named; the refusal has given him the information he needs to calibrate the next ask"
+    - "Otto named Sera Hightower in the meeting: her succession-calculus position, the threat-shape, the probability distribution; this information is in Taylor's model, unresolved"
+    - "Otto's apparatus is not paused: a courtier swept the ward the same evening; the apparatus is calibrating"
     - "Taylor beginning systematic Flea Bottom political-layer reading to track whether Otto resurfaces"
     - "Wren's ledger-exclusion and the first crack in self-accounting both unresolved"
   world_state:
     - "122 AC; Taylor known to Otto's network; her Flea Bottom position now carries court-layer visibility (upward only)"
     - "insect-read shifting from defensive-localized toward systematic; no formal coverage yet"
+    - "Otto's apparatus visibly present and moving in the ward even after the refusal"
   character_state:
-    - "taylor: moral-framework 3 (prohibition stated and held); capability 4; position 1.5 (known to one court-adjacent agent); social-tether 2.5; relational-anchor 2.5; moral-legibility 6.5; political-register 5; knowledge 4.5 (Otto identified; Green-faction map begun); agency 5"
+    - "taylor: moral-framework 3 (prohibition stated and held); capability 4; position 1.5 (known to one court-adjacent agent); social-tether 2.5; relational-anchor 2.5; moral-legibility 6.5; political-register 5; knowledge 4.5 (Otto identified; Green-faction map begun; Sera Hightower's threat-shape received); agency 5"
     - "wren: attached; daily presence"
-    - "otto: active; has heard the refusal; has what he needed from it"
+    - "otto: active; has heard the refusal; has what he needed from it; apparatus calibrating"
   target_chapter: b01c05
-
-dramatic_role: rising
-trajectory_deltas_carried: [d03-refusal-beat]
 ```
 
 ---
 
 ### b01c05 — calculation-dissolves-refusal-first-trade
 
+# dramatic_shape (informational): rising; trajectory_deltas_carried: [d03-acceptance-beat]
+
 ```yaml
 chunk: |
-  The calculation does what Otto did not: it returns a result that destroys the refusal. Taylor runs the prevention model with the information she has now assembled — Sera Hightower's position in the succession calculus, the probability distribution on her survival without an inside adjustment, the downstream consequences of that particular loss for the Green-faction stability that is the only thing between the Dance and Flea Bottom burning. The numbers are not ambiguous. The prohibition is the only item in the model that blocks the acceptable outcome, and blocking the acceptable outcome means Wren dies in the violence Taylor could have prevented. Taylor does not decide quickly. She holds the refusal through one full iteration, through two. The prohibition holds long enough that the second answer is a choice — she can see both answers clearly, she has not been coerced, the door is still open. She accepts on the second answer. She contacts Otto's channel through a Flea Bottom relay and names her terms: she will route the intelligence his faction cannot reach in exchange for his quiet shielding of Sera Hightower in the succession calculus. The first trade. The chapter closes on Taylor running the accounting of the decision — every line entered, every cost acknowledged, the ledger reading as she believed it should — and the reader can see the auditable mistake: the prohibition named, the prohibition held through one answer, the prohibition crossed on the second. She crossed it. She chose to.
+  The calculation does what Otto did not: it returns a result that destroys the refusal. Taylor runs the prevention model with the information she has now assembled — the court-tier picture of Sera Hightower's position that Otto named in their meeting, supplemented by what Taylor's systematic ward-layer reading in the days since has filled in: rumor-pickup at the market level, the movements of Green-faction household staff through Flea Bottom, the particular patterns of courier-transit that confirm the succession angle Otto named is real. The Sera Hightower probability model is not conjecture. It is built from what Otto provided and from what Taylor's own reading has verified. The probability distribution on Sera's survival without an inside adjustment is unfavorable. The downstream consequences of that particular loss for the Green-faction stability that is the only thing between the Dance and Flea Bottom burning are not ambiguous. The numbers are not ambiguous. The prohibition is the only item in the model that blocks the acceptable outcome, and blocking the acceptable outcome means Wren dies in the violence Taylor could have prevented. Taylor does not decide quickly. She holds the refusal through one full iteration, through two. The prohibition holds long enough that the second answer is a choice — she can see both answers clearly, she has not been coerced, the door is still open. She accepts on the second answer. She contacts Otto's channel through a Flea Bottom relay and names her terms: she will route the intelligence his faction cannot reach in exchange for his quiet shielding of Sera Hightower in the succession calculus. The first trade. The chapter closes on Taylor running the accounting of the decision — every line entered, every cost acknowledged, the ledger reading as she believed it should — and the reader can see the auditable mistake: the prohibition named, the prohibition held through one answer, the prohibition crossed on the second. She crossed it. She chose to.
 
 structure:
   scene_count: 4
@@ -228,23 +285,25 @@ structure:
 substance_delta:
   axes_in_motion:
     - { axis: moral-framework, direction: down, target_delta_magnitude: 1.0, cost_ledger_anchor: cl-otto-trade, notes: "refusal-of-control → first-sanctioned-exception; 3→2; d03 acceptance beat; the prohibition crossed with full accounting" }
-    - { axis: position, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-social-tether-build, notes: "known-to-one-agent → known-quantity-to-one-court-layer; 1.5→2; d03 position shift on acceptance" }
+    - { axis: position, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-otto-trade, notes: "known-to-one-agent → known-quantity-to-one-court-layer; 1.5→2; d03 position shift on acceptance; acceptance formalizes asset-identification; position visibility crystallizes through the first trade" }
     - { axis: agency, direction: down, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-otto-trade, notes: "self-directed → first-commitment-to-arrangement; 5→4.5; cl-otto-trade gain-agency -1 begins here" }
   density_target: "0.7-0.8"
 
 handoff_in:
   open_threads:
     - "Otto's offer declined but his presence means Taylor is now a known quantity to one court-adjacent layer"
-    - "Otto has heard the prohibition named; the refusal has given him the information he needs to calibrate the next ask"
+    - "Otto named Sera Hightower in the meeting: her succession-calculus position, the threat-shape, the probability distribution; this information is in Taylor's model, unresolved"
+    - "Otto's apparatus is not paused: a courtier swept the ward the same evening; the apparatus is calibrating"
     - "Taylor beginning systematic Flea Bottom political-layer reading to track whether Otto resurfaces"
     - "Wren's ledger-exclusion and the first crack in self-accounting both unresolved"
   world_state:
     - "122 AC; Taylor known to Otto's network; her Flea Bottom position now carries court-layer visibility (upward only)"
     - "insect-read shifting from defensive-localized toward systematic; no formal coverage yet"
+    - "Otto's apparatus visibly present and moving in the ward even after the refusal"
   character_state:
     - "taylor: moral-framework 3 (prohibition stated and held); capability 4; position 1.5; social-tether 2.5; relational-anchor 2.5; moral-legibility 6.5; political-register 5; knowledge 4.5; agency 5"
     - "wren: attached; daily presence"
-    - "otto: active; has heard the refusal; has what he needed from it"
+    - "otto: active; has heard the refusal; apparatus calibrating"
   source_chapter: b01c04
 
 handoff_out:
@@ -263,14 +322,13 @@ handoff_out:
     - "otto: arrangement live; quiet protection of Sera Hightower in effect"
     - "sera-hightower: protected; does not know Taylor exists"
   target_chapter: b01c06
-
-dramatic_role: rising
-trajectory_deltas_carried: [d03-acceptance-beat]
 ```
 
 ---
 
 ### b01c06 — network-construction-surveillance-architecture-built
+
+# dramatic_shape (informational): rising; trajectory_deltas_carried: [d04]
 
 ```yaml
 chunk: |
@@ -319,14 +377,13 @@ handoff_out:
     - "wren: inside coverage perimeter; not flagged; not entered in ledger"
     - "otto: intelligence deliveries received; architecture load-bearing for Green-faction picture"
   target_chapter: b01c07
-
-dramatic_role: rising
-trajectory_deltas_carried: [d04]
 ```
 
 ---
 
 ### b01c07 — court-feed-delivers-first-resentment
+
+# dramatic_shape (informational): rising; trajectory_deltas_carried: [d05]
 
 ```yaml
 chunk: |
@@ -373,14 +430,13 @@ handoff_out:
     - "gylda: introduced; non-interpretive; peripheral"
     - "otto: arrangement operational"
   target_chapter: b01c08
-
-dramatic_role: rising
-trajectory_deltas_carried: [d05]
 ```
 
 ---
 
 ### b01c08 — wren-inside-architecture-rationalization-deepens
+
+# dramatic_shape (informational): rising; trajectory_deltas_carried: [d06]
 
 ```yaml
 chunk: |
@@ -427,14 +483,13 @@ handoff_out:
     - "wren: surveilled; Taylor has not told her; ledger shows nothing"
     - "otto: full Flea Bottom ground layer received; arrangement stable"
   target_chapter: b01c09
-
-dramatic_role: rising
-trajectory_deltas_carried: [d06]
 ```
 
 ---
 
 ### b01c09 — otto-names-arrangement-systematic-override-rationalized
+
+# dramatic_shape (informational): hinge; trajectory_deltas_carried: [d07]
 
 ```yaml
 chunk: |
@@ -446,8 +501,7 @@ structure:
 substance_delta:
   axes_in_motion:
     - { axis: moral-framework, direction: down, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-otto-trade, notes: "first-sanctioned-exception → systematic-override-rationalized; 2→1.5; d07 shift" }
-    - { axis: capability, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-network-position, notes: "systematic-reading-made-systematic; courier-layer route-mapping generalizes the architecture; 5→5.5; d07 capability refinement — the same network reads differently now that Otto has named its function" }
-    - { axis: position, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-social-tether-build, notes: "known-quantity → Otto's-unofficial-instrument; 2→2.5; d07 position shift" }
+    - { axis: position, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-otto-trade, notes: "known-quantity → Otto's-unofficial-instrument; 2→2.5; d07 position shift; Otto's-unofficial-instrument; arrangement named; position-visibility now formal in the one court layer that uses Taylor" }
     - { axis: knowledge, direction: up, target_delta_magnitude: 1.0, cost_ledger_anchor: cl-intelligence-arrangement, notes: "opposing faction's structure now mapped at courier level; 6→7; systematic court picture" }
     - { axis: agency, direction: down, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-otto-trade, notes: "arrangement structural; exit-cost rising; 4→3.5; cl-otto-trade agency -1 deepens" }
   density_target: "0.7-0.8"
@@ -480,18 +534,17 @@ handoff_out:
     - "opposing-faction courier-layer compromised via Taylor's route-maps"
     - "Green-faction intelligence picture: systematic Flea Bottom + court-layer coverage"
   character_state:
-    - "taylor: moral-framework 1.5 (systematic-override-rationalized); capability 5; position 2.5 (Otto's-unofficial-instrument); social-tether 3; relational-anchor 2; moral-legibility 6; political-register 6; knowledge 7; agency 3.5"
+    - "taylor: moral-framework 1.5 (systematic-override-rationalized); capability 5 (no trajectory allocation for capability at d07; see signal-004 resolution); position 2.5 (Otto's-unofficial-instrument); social-tether 3; relational-anchor 2; moral-legibility 6; political-register 6; knowledge 7; agency 3.5"
     - "wren: inside network; load-bearing for coverage without appearing in ledger"
     - "otto: arrangement formalized; Taylor named as function in his apparatus"
   target_chapter: b01c10
-
-dramatic_role: rising
-trajectory_deltas_carried: [d07]
 ```
 
 ---
 
 ### b01c10 — wren-load-bearing-anchor-without-entry
+
+# dramatic_shape (informational): rising; trajectory_deltas_carried: [d08]
 
 ```yaml
 chunk: |
@@ -539,25 +592,26 @@ handoff_out:
     - "aemond: registered; walk-on; succession-pressure axis shifted by his presence"
     - "otto: arrangement stable"
   target_chapter: b01c11
-
-dramatic_role: rising
-trajectory_deltas_carried: [d08]
 ```
 
 ---
 
 ### b01c11 — sustained-sequence-delivers-articulated-contempt
 
+# dramatic_shape (informational): hinge; trajectory_deltas_carried: [d09]
+
 ```yaml
 chunk: |
-  A succession maneuver in the Maegor's Holdfast layer requires Taylor to run a sustained intelligence sequence — tracking a specific political play through multiple court feeds over several days. What she reads is not only the strategic content. She watches briefings received but not read, instruments signed but not understood, dynastic prerogative performed as though the smallfolk whose lives the succession calculus routes around are a weather event rather than a consequence. The contempt arrives not as a feeling but as a conclusion. She has been consolidating the continuation of this. She names whose names — in the accounting, in the entries, in the lines of the ledger she has been keeping. The contempt is articulate and cold: she knows exactly who benefits from the intelligence she has been delivering, she has watched them receive that benefit in close feed, and the observation has produced a specific and legible assessment. She files the next intelligence delivery. The assessment does not change what she does. Gylda appears near the chapter's middle — water-carrier crossing multiple blocks, saying something that rhymes with "too-many-places" without precisely naming it — and Taylor files that observation too without acting on it. The contempt, once named, becomes load-bearing in a different way: it is the thing she carries forward, the clear cold register that will make the final accounting legible at close.
+  A succession maneuver in the Maegor's Holdfast layer requires Taylor to run a sustained intelligence sequence — tracking a specific political play through multiple court feeds over several days. What she reads accumulates until a specific day produces the threshold-crossing image. Through the insect-feed, Taylor watches a report delivered to a chamber in Maegor's Holdfast: a document on smallfolk displacement, the body-temperature clusters of packed people legible through the feed as numbers, the density of the displaced ward readable in the warmth signature the insects carry back. The chamber's senior figure — one of the Green-faction inner circle whose instruments Taylor has been reading for months — receives the document, registers its physical weight, and places it unopened to one side. Twenty minutes later, by Taylor's insect-reckoning, the same figure signs the succession instrument that will route the political play through that same ward. The document is still unread. This is the moment the contempt arrives — not as more resentment-color, but as a completed observation, a conclusion: the ward's people are not a variable in the model; they are not even absent from the model; they are the surface the model is printed on, invisible as paper is invisible. The succession maneuver was designed, executed, and recorded without the displaced ward appearing anywhere in the accounting. Taylor has been consolidating the continuation of this. She names whose names — the Green-faction inner circle, the succession-instrument signatories, the figures in the specific chambers she has been reading — in the accounting, in the entries, in the lines of the ledger she has been keeping. The contempt is articulate and cold: she knows exactly who benefits from the intelligence she has been delivering, she has watched them receive that benefit in close feed, and the observation has produced a specific and legible assessment. She files the next intelligence delivery. The assessment does not change what she does. Gylda appears near the chapter's middle — water-carrier crossing multiple blocks, saying something that rhymes with "too-many-places" without precisely naming it — and Taylor files that observation too without acting on it. The contempt, once named, becomes load-bearing in a different way: it is the thing she carries forward, the clear cold register that will make the final accounting legible at close.
+  # Aemond walk-on in c11 and axis-move assignment: deferred to /and-substance chapter b01c11.
+  # Contempt-naming roster: Green-faction inner circle and succession-instrument signatories named as scope; individual name roster deferred to /and-substance chapter b01c11.
 
 structure:
   scene_count: 3
 
 substance_delta:
   axes_in_motion:
-    - { axis: political-register-toward-elite, direction: up, target_delta_magnitude: 1.5, cost_ledger_anchor: ~, notes: "readable-resentment → articulated-contempt; 6→7.5; d09 shift; consequence-axis; conclusion not feeling" }
+    - { axis: political-register-toward-elite, direction: up, target_delta_magnitude: 1.5, cost_ledger_anchor: ~, notes: "readable-resentment → articulated-contempt; 6→7.5; d09 shift; consequence-axis; conclusion not feeling; threshold-crossing image: displacement report placed unread, succession instrument signed through the same ward" }
     - { axis: knowledge, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-intelligence-arrangement, notes: "court picture: more complete than most Small Council members; 7.5→8; d09 full court picture" }
   density_target: "0.7-0.8"
 
@@ -595,14 +649,13 @@ handoff_out:
     - "aemond: active; succession-pressure registered"
     - "otto: arrangement operational; intelligence picture robust"
   target_chapter: b01c12
-
-dramatic_role: rising
-trajectory_deltas_carried: [d09]
 ```
 
 ---
 
 ### b01c12 — no-exit-confirmed-first-recognition-suppressed
+
+# dramatic_shape (informational): climax; trajectory_deltas_carried: [d10]
 
 ```yaml
 chunk: |
@@ -653,14 +706,13 @@ handoff_out:
     - "wren: load-bearing; not in ledger; in danger Taylor has not calculated"
     - "otto: arrangement too load-bearing to exit; full Green-faction intelligence architecture"
   target_chapter: b01c13
-
-dramatic_role: climax
-trajectory_deltas_carried: [d10]
 ```
 
 ---
 
 ### b01c13 — otto-network-identifies-wren-taylor-intercepts-second-recognition-rationalized
+
+# dramatic_shape (informational): climax; trajectory_deltas_carried: [d11]
 
 ```yaml
 chunk: |
@@ -708,14 +760,13 @@ handoff_out:
     - "wren: protected from use-vector; does not know; still outside ledger"
     - "otto: network operational; does not know Taylor blocked Wren's identification"
   target_chapter: b01c14
-
-dramatic_role: climax
-trajectory_deltas_carried: [d11]
 ```
 
 ---
 
 ### b01c14 — sera-critical-threat-full-network-deployment-begins
+
+# dramatic_shape (informational): climax; trajectory_deltas_carried: [d12-first-beat]
 
 ```yaml
 chunk: |
@@ -764,14 +815,13 @@ handoff_out:
     - "aemond: operative; specific move made; succession plot axis shifted"
     - "otto: full-deployment output received"
   target_chapter: b01c15
-
-dramatic_role: climax
-trajectory_deltas_carried: [d12-first-beat]
 ```
 
 ---
 
 ### b01c15 — full-deployment-irrevocable-khepri-repetition-sera-survives
+
+# dramatic_shape (informational): climax; trajectory_deltas_carried: [d12-completion-beat]
 
 ```yaml
 chunk: |
@@ -820,14 +870,13 @@ handoff_out:
     - "wren: unlisted; inside network; one interception protecting her from direct use"
     - "otto: full apparatus secured; Taylor non-extractable"
   target_chapter: b01c16
-
-dramatic_role: climax
-trajectory_deltas_carried: [d12-completion-beat]
 ```
 
 ---
 
 ### b01c16 — trades-worked-review-produces-contempt-without-refusal
+
+# dramatic_shape (informational): falling; trajectory_deltas_carried: [d13]
 
 ```yaml
 chunk: |
@@ -874,14 +923,13 @@ handoff_out:
     - "gylda: too-many-places named; Taylor registered it accurately"
     - "otto: full apparatus; position consolidated; arrangement stable"
   target_chapter: b01c17
-
-dramatic_role: falling
-trajectory_deltas_carried: [d13]
 ```
 
 ---
 
 ### b01c17 — dance-ignites-wren-dies-taylor-expelled-final-accounting
+
+# dramatic_shape (informational): falling; dramatic_shape_note: "catastrophe / resolution discharge"; trajectory_deltas_carried: [d14]
 
 ```yaml
 chunk: |
@@ -934,15 +982,14 @@ handoff_out:
     - "aemond: Dance trigger; walk-on complete; plot-axis shift registered"
     - "otto: apparatus intact; Taylor managed as completed asset"
   target_chapter: b01c18
-
-dramatic_role: falling
-trajectory_deltas_carried: [d14]
 ```
 
 ---
 
 ### b01c18 — corvan-archmaester-retrospective-coda
 pov_note: "INTERLUDE — Archmaester Corvan retrospective; non-Taylor POV"
+
+# dramatic_shape (informational): falling; dramatic_shape_note: "coda / retrospective close"; trajectory_deltas_carried: []
 
 ```yaml
 chunk: |
@@ -981,9 +1028,6 @@ handoff_out:
     - "corvan: chronicle complete; no verdict filed; the practitioner remains unnamed"
     - "taylor: retroactively present only as a pattern in evidential records; name permanently unknown to this voice"
   target_chapter: null
-
-dramatic_role: coda
-trajectory_deltas_carried: []
 ```
 
 ---
@@ -998,14 +1042,16 @@ handoff_chain_complete: b01c01 (source: null) → b01c02 → b01c03 → b01c04 �
 
 axes_roll_up_check (per axis sum-roll-up to book Δ within ±1):
   - moral-framework: book target -2 / chapters sum: c05(-1.0) + c09(-0.5) + c15(-0.5) = -2.0 / within ±1: ✓
-  - capability: book target +4 / chapters sum: c02(+1.0) + c06(+1.0) + c09(+0.5) + c14(+1.0) + c15(+0.5) = +4.0 / within ±1: ✓
-  - position: book target 0 net / rise: c04(+0.5) + c05(+0.5) + c09(+0.5) = +1.5 / fall: c12(-1.0) + c17(-1.0) = -2.0 / net: -0.5 → within ±1 of 0: ✓ (note: net 0 = intentional rise-and-fall; -0.5 within ±1 tolerance)
+  - capability: book target +4 / chapters sum: c02(+1.0) + c06(+1.0) + c14(+1.0) + c15(+0.5) = +3.5 / |3.5 - 4| = 0.5 / within ±1: ✓ (c09 capability +0.5 removed per signal-004; no trajectory allocation at d07)
+  - position (net): book target 0 net / rise: c04(+0.5) + c05(+0.5) + c09(+0.5) = +1.5 / fall: c12(-1.0) + c17(-1.0) = -2.0 / net: -0.5 → within ±1 of 0: ✓
   - social-tether: book target -1 / rises: c02(+0.5) + c06(+0.5) = +1.0 / falls: c12(-1.0) + c17(-0.5) = -1.5 / net: -0.5 → within ±1 of -1: ✓
-  - relational-anchor-status: book target -2 / chapters sum: c03(-0.5) + c08(-0.5) + c10(-0.5) + c13(-0.5) + c17(-0.5) = -2.5 → within ±1 of -2: ✓ (c17 takes relational below floor; net sum -2.5; within ±1 tolerance band applied: |−2.5 − (−2)| = 0.5 ✓)
+  - relational-anchor-status: book target -2 / chapters sum: c03(-0.5) + c08(-0.5) + c10(-0.5) + c13(-0.5) + c17(-0.5) = -2.5 → within ±1 of -2: ✓
   - moral-legibility-to-self: book target -3 / chapters sum: c03(-0.5) + c08(-0.5) + c12(-1.0) + c13(-0.5) + c17(-0.5) = -3.0 / within ±1: ✓
   - political-register-toward-elite: book target +4 / chapters sum: c07(+1.0) + c11(+1.5) + c16(+1.0) + c17(+0.5) = +4.0 / within ±1: ✓
-  - knowledge: book target +5 / chapters sum: c01(+0.5) + c02(+0.5) + c04(+0.5) + c06(+1.0) + c07(+0.5) + c09(+1.0) + c10(+0.5) + c11(+0.5) + c14(+0.5) + c15(0) = +5.5 → within ±1 of +5: ✓
+  - knowledge: book target +5 / chapters sum: c01(+0.5) + c02(+0.5) + c04(+0.5) + c06(+1.0) + c07(+0.5) + c09(+1.0) + c10(+0.5) + c11(+0.5) + c14(+0.5) = +5.5 → within ±1 of +5: ✓
   - agency: book target -4 / chapters sum: c05(-0.5) + c06(-0.5) + c09(-0.5) + c12(-1.0) + c14(-0.5) + c15(-0.5) + c17(-0.5) = -4.0 / within ±1: ✓
 
 all axes within ±1 of book target ✓
+revise_pass: 2
+revise_date: 2026-05-18
 ```
