@@ -2,6 +2,32 @@
 
 ## Mutation Log
 
+### 2026-05-18 — Step 1c (Phase 2): Cast candidate menu authored for taylor-hebert-westeros-good-intentions
+
+Candidate menu output: `active-project/staff/showrunner/cast-candidate-menu.md`
+
+Inputs read: cast-brief.md, memory.md, boundary-scope.md, prompt-binding.md, cards/personas/INDEX.md, cards/personas/{taylor-hebert-westeros, taylor-hebert-flea-bottom-mirror, otto-hightower, aemond-targaryen, oc-lyra-targaryen-ward, oc-maester-edwyn, oc-block-fixture, oc-renderer-flea-bottom, oc-flea-bottom-boy, oc-broken-maester, oc-dock-runner, oc-tanner-mother}.card.md, projects/project_07/staff/showrunner/1c-candidate-menu.md (name-collision check), projects/project_05 and project_06 actor lists (name-collision check), cards/conditions/cond-nessa-scene-frequency.card.md (confirms Nessa disqualified).
+
+**Phase 2 findings summary:**
+
+| Slot | Status | Recommended slug(s) |
+|---|---|---|
+| TAYLOR-HEBERT | New variant required | `taylor-hebert-kl-122ac` (not-yet-authored) |
+| OTTO-HIGHTOWER | Exists (scant) — quality upgrade recommended | `otto-hightower` (exists: cards/personas/otto-hightower.card.md) |
+| AEMOND-TARGARYEN | Age mismatch at 122 AC — 122AC variant recommended | `aemond-targaryen-122ac` (not-yet-authored); base `aemond-targaryen` exists (scant) |
+| ALICENT-HIGHTOWER | Not in library — conditional on protect-target selection | `alicent-hightower` (not-yet-authored; conditional) |
+| COST-BEARER | OC required — 6 candidates proposed | Profiles A–F; screen-writer selects at Phase 3 |
+| PROTECT-TARGET | OC required (A/B preferred) — 5 candidates proposed | Profiles 6-A1, 6-A2, 6-B1, 6-B2, 6-C1 |
+| WITNESS-MIRROR | OC required — 4 candidates proposed | Profiles 7-A through 7-D |
+| FLEA-BOTTOM-FIXTURE | OC required — 4 candidates proposed | Profiles 8-A through 8-D |
+| MAESTER-CHRONICLER | OC required — 4 candidates proposed | Profiles 9-A through 9-D |
+
+**Name-novelty confirmed:** All OC names in the menu (Pell, Wren, Bram, Alis, Jonn, Sabel, Sera, Torrhen, Orla, Hyla, Brynn, Halvard, Gylda, Osric, Brea, Coll, Pott, Helwy, Rivin, Corvan, Halvyn, Perwyn, Orlith) are confirmed novel against the disqualified-names register. No prior project or library OC name is reused.
+
+**Pending at Phase 3:** Screen-writer selects from all slots. Margit will author new cards at Phase 4 for all selected OC candidates.
+
+---
+
 ### 2026-05-17 — Step 1d: Constraint cards authored for taylor-hebert-kl-122ac
 
 10 constraint cards authored (laws + lore + behaviors). Each card written to both library (`cards/conditions/<slug>.card.md`) and warehouse (`active-project/warehouse/<slug>.md`). Index updated at `cards/conditions/INDEX.md`.
