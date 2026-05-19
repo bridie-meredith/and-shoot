@@ -9,12 +9,12 @@ verdict: accept
 
 # Verdict reasoning
 
-Six entries across 24 bones — that's the right density for a scene that doesn't move tactically: Taylor is working a static room, and the loc-state fires on the two moments that actually change the board (Coll opening the sight-line to the Hook at @9, Watch column passing at @15). Entry 5 (@15) is the one I care about — it pays off the angle established in entry 2, which is exactly the kind of setup-lands-here structure that earns its keep. The sensory note on @4 (stone releasing heat) is a slow clock I can use to track how long she's been sitting there, which is tactically legible. The six entries aren't dead set-dressing; they're positional facts — who can see what, from where, and when.
+Six entries across 24 bones and they earn their keep as positional facts. Entry 2 opens a sightline (@9, Coll faces the street, the Hook visible from the angle she makes); entry 5 pays it off at @15 when the Watch column passes at exactly that curve. That's setup-paid-earlier landing correctly — the loc-state layer is functioning as board-state tracking, not atmosphere. Entry 6 (@20) delivers the time-skip in one move: same alley-mouth as @1, light angle shifted, third or fourth day established through spatial anchor instead of narration. The frugality reads as competence. I have no complaint.
 
 # Entry-level callouts (revise / fail only)
 
-_None._
+n/a
 
 # Convergence trace (orchestrator-critic input)
 
-_No callouts; no convergence trace required._
+n/a — accept verdict
