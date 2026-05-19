@@ -9,25 +9,27 @@ round: r1
 
 scene-B open @11:
   (a) time-skip-blank-@10: YES
-  (b) loc-state-at-@11: FIRES (entry 3 — "midday | corner-room-interior | working-hour noise through the wall — the alley at its loudest registered density of the day; distinct from the morning quiet of @1") — carries time-shift + place
-  verdict: REFUSE (b fails — loc-state carries)
+  (b) loc-state-at-@11: FIRES (location-state entry 3 — "midday | corner-room-interior | working-hour noise through the wall — the alley at its loudest registered density of the day; distinct from the morning quiet of @1") — carries time-shift + place
+  (c) NI-first-2-anchors-of-scene-B (@11, @12): NI entry 3 @12 carries cognitive content about block-reading via the flies; not time/place orient, but loc-state already covers
+  verdict: REFUSE (b fails — loc-state carries time + place; exposition would be wallpaper)
 
 scene-C open @20:
   (a) time-skip-blank-@19: YES
-  (b) loc-state-at-@20: FIRES (entry 6 — "morning | alley-street-mouth | third or fourth day — light angle shifted earlier than the arrival morning") — carries time-shift + place
-  verdict: REFUSE (b fails — loc-state carries)
+  (b) loc-state-at-@20: FIRES (location-state entry 6 — "morning | alley-street-mouth | third or fourth day — light angle shifted earlier than the arrival morning") — carries time-shift + place
+  (c) NI-first-2-anchors-of-scene-C (@20, @21): NI entry 5 @21 carries the approach geometry, not time/place orient
+  verdict: REFUSE (b fails — loc-state carries time + place; exposition would be wallpaper)
 
-both scene boundaries refused; lens facets carry the orientation.
+both scene boundaries refused; lens facets carry orientation. zero scene-open-orient entries this chapter.
 
 ---
 
-1 @0 episode-open-preamble: I am twenty years old in this reckoning, give or take what I do not count, and the city around me is King's Landing in the year one hundred and twenty-two after the Conquest — the late seasons of Viserys's reign, with a war the small folk do not yet have a name for moving toward them under the surface of the court. I live in Flea Bottom, the slum that fills the lower ground south of the three hills, the place the rest of the city forgets on purpose. I came here with a rule. Be useful. Do not take control of anyone again. | scope: episode-open-preamble | renders-as: italic-preamble | sources: project.brief, series.chunk.path.motivation, cond-kl-geography-122ac, loc-flea-bottom, taylor-hebert-kl-122ac.description | licensed-by: cape-fic-reader:cape-fic-doesnt-know-122ac-westeros-or-flea-bottom-geography, dark-fantasy-reader:dark-fantasy-needs-planetos-specific-time-and-place-orientation, worm-canon-pedant:worm-canon-needs-the-once-deployed-override-rendered-as-the-prohibition-without-naming
+1 @0 episode-open-preamble: I am twenty years old in this reckoning, give or take what I do not count, and the city around me is King's Landing in the year one hundred and twenty-two after the Conquest — late in Viserys's reign, with a war the small folk do not yet have a name for moving toward them under the surface of the court. I live in Flea Bottom, the slum that fills the lower ground south of the three hills, the part of the city the rest of the city forgets on purpose. I came here with a rule. Be useful. Do not take control of anyone again, the way I once did, at the end of the world I came from. | scope: episode-open-preamble | renders-as: italic-preamble | sources: project.brief, series.chunk.path.motivation, cond-kl-geography-122ac, loc-flea-bottom, taylor-hebert-kl-122ac.description, cond-khepri-residue-122ac, cond-earth-bet-noun-fence | licensed-by: cape-fic-reader:cape-fic-doesnt-know-122ac-westeros-or-flea-bottom-as-the-citys-poorest-slum, dark-fantasy-reader:dark-fantasy-needs-planetos-specific-time-and-place-orientation-and-the-protagonists-operating-rule-as-stakes-frame, worm-canon-pedant:worm-canon-needs-the-once-deployed-override-rendered-as-the-prohibition-without-naming-per-noun-fence
 
-2 @3 coll: Coll has been mending nets at this corner for fifteen years — a stationary fixture of the block, fifties, taciturn, his speech ordered by the work in his hands. | scope: first-mention-character | renders-as: inline-appositive | sources: coll-net-mender-flea-bottom.description, coll-net-mender-flea-bottom.voice | licensed-by: cape-fic-reader:no-prior-roster-anchor-for-named-individual, dark-fantasy-reader:no-prior-roster-anchor-for-named-individual, worm-canon-pedant:no-prior-roster-anchor-for-named-individual
+2 @3 coll: Coll has mended nets at the corner outside this room for fifteen years — a fixture of the block, in his fifties, his speech ordered by the work in his hands. | scope: first-mention-character | renders-as: inline-appositive | sources: coll-net-mender-flea-bottom.description, coll-net-mender-flea-bottom.voice, coll-net-mender-flea-bottom.stats | licensed-by: cape-fic-reader:no-prior-roster-anchor-for-named-individual-entering-prose, dark-fantasy-reader:no-prior-roster-anchor-for-named-individual-entering-prose, worm-canon-pedant:no-prior-roster-anchor-for-named-individual-entering-prose
 
-3 @15 the-watch: The Watch is the city's standing patrol — gold-cloaked, hundreds-strong, and in Flea Bottom they are an enforcement presence on a schedule the block has long since learned to read. | scope: first-mention-term | renders-as: parenthetical-aside | sources: cond-kl-social-physics-122ac, cond-kl-geography-122ac | licensed-by: cape-fic-reader:cape-fic-doesnt-know-westeros-watch-as-institution, worm-canon-pedant:worm-canon-doesnt-know-westeros-watch-as-institution
+3 @15 the-watch: The Watch is the city's standing patrol — gold-cloaked, hundreds-strong, its Flea Bottom passes on a schedule the block reads by long habit. | scope: first-mention-term | renders-as: parenthetical-aside | sources: cond-kl-social-physics-122ac, cond-kl-geography-122ac | licensed-by: cape-fic-reader:cape-fic-doesnt-know-westerosi-city-watch-as-institution, dark-fantasy-reader:dark-fantasy-needs-the-watch-as-specific-kl-institution-not-generic-medieval-guard, worm-canon-pedant:worm-canon-doesnt-know-westerosi-city-watch-as-institution
 
-4 @20 wren: Wren is eleven — a ward of one of the stitch-maker households a few doors over, the kind of child the Hook keeps in light work and two meals for keeping. | scope: first-mention-character | renders-as: inline-appositive | sources: wren-stitch-maker-flea-bottom-ward.description, cond-kl-social-physics-122ac | licensed-by: cape-fic-reader:no-prior-roster-anchor-for-named-individual, dark-fantasy-reader:no-prior-roster-anchor-for-named-individual, worm-canon-pedant:no-prior-roster-anchor-for-named-individual
+4 @20 wren: Wren is eleven — a ward of one of the stitch-maker households a few doors over, the kind of child the Hook keeps in light work and two meals for keeping. | scope: first-mention-character | renders-as: inline-appositive | sources: wren-stitch-maker-flea-bottom-ward.description, wren-stitch-maker-flea-bottom-ward.stats, cond-kl-social-physics-122ac | licensed-by: cape-fic-reader:no-prior-roster-anchor-for-named-individual-entering-prose, dark-fantasy-reader:no-prior-roster-anchor-for-named-individual-entering-prose, worm-canon-pedant:no-prior-roster-anchor-for-named-individual-entering-prose
 
 # Cross-episode register write-back
 
