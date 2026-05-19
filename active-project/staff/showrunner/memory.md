@@ -508,7 +508,24 @@ books:
             - "wren: present, recurring, unnamed as significant"
             - "otto: offstage"
           target_chapter: b01c02
-        status: audited-r1-mechanical    # advanced by /and-facets Phase 5 audit + r2-verify 2026-05-19; was faceted-r2
+        status: audited-r1-mechanical    # advanced by /and-facets Phase 5 audit + r2-verify 2026-05-19; was faceted-r2; Phase 5b audience-gate ran cycle 1 only (user early-cap; 7 ACCEPT / 5 FAIL) — see audience_gate_* fields
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_path_r2_verify: active-project/staff/auditor/facets-final-audit-r2-verify.md
+        audit_complete: true
+        audit_findings: 9         # 2 HARD remediated cycle-0; 7 SIGNAL standing
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r1.md
+        audience_gate_complete: false        # cycle 1 of 3 ran; user elected early-cap-burn; 5 facets not 3-of-3 ACCEPT
+        audience_gate_cycles: 1
+        audience_gate_cap_burned: true       # early-cap by user election (not protocol cap at cycle 3)
+        audience_gate_failing_facets: [location-state, interest-narrator, sensory, state-updates, memory]
+        audience_gate_accepted_facets: [feeling, metaphor, vibes, exposition, dialogue-taylor-hebert-kl-122ac, dialogue-coll-net-mender-flea-bottom, dialogue-wren-stitch-maker-flea-bottom-ward]
+        bidirectional_loop: validated        # AP-001 NI X-is-what-Y converged across auditor + 2 reviewers
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
+        process_deviations:
+          - "Phase 5b audience-subagent in facet-adversarial mode substituted library personas (pulp-enthusiast, literary-snob) for active-project trio members on 3 dispatches (metaphor, feeling, dialogue-coll). All three ACCEPTed under their substituted lineup; verdicts stand but trio-convergence count excludes these. Follow-on: enumerate persona slugs explicitly in dispatch prompts, or tune audience-subagent loader."
+          - "Phase 5 mechanical-audit re-fire after fixer was performed as targeted in-band re-verification (CONSTRAINT scope only) rather than full auditor re-dispatch; documented in facets-final-audit-r2-verify.md."
         bones_file: theater/bones/b01-c01.md
         bones_count: 24
         substance_bone_gate_verdict: PASS    # Phase 6 mechanical PASS (HARD: 0, SIGNAL: 3) + audience SUBSTANCE-FELT PASS (9/9 verdicts, no HARD votes)
