@@ -9,7 +9,7 @@ variant-reason: 122 AC King's Landing configuration — adult, Khepri-residue in
 variant-project: taylor-westeros-good-intentions
 composes: [taylor-hebert]
 references:
-  - cond-khepri-residue-122ac
+  - cond-override-architecture-residue-122ac
   - cond-taylor-pov-behavior
   - cond-earth-bet-noun-fence
 persona-purpose: [on-stage-character]

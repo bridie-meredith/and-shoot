@@ -9,7 +9,7 @@ VIBES:
   insects: [surveillance, presence-without-declaration, cost-that-accumulates, the-network-that-is-also-the-cage]
   ledger: [explicit-accounting, the-gap-where-Wren-should-be, rationalization-as-rigor, cold-is-not-affectless]
   atonement: [the-repetition, prohibition-that-holds-until-it-doesn't, the-second-answer-was-a-choice, gold-morning-weight]
-  khepri-residue: [surveillance-not-override, unconsented-instrumentalization, rhymes-without-replicating, the-gap-must-stay-visible]
+  override-architecture-residue: [surveillance-not-override, unconsented-instrumentalization, rhymes-without-replicating, the-gap-must-stay-visible]
   otto: [arithmetic-as-menace, calibrated-to-my-refusal-threshold, correct-about-everything-except-the-frame, the-calculation-returns-the-same-answer]
   wren: [the-anomaly-in-the-ledger, protection-and-surveillance-are-the-same-architecture, silence-as-the-relationship, un-priced-means-unprotectable]
   contempt: [accurate-and-useless, articulated-by-d09, complete-without-exit-by-d13, the-ledger-entry-that-names-the-empowered]

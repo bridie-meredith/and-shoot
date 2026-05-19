@@ -65,7 +65,7 @@ series:
     world_evolution: evolving
     series_end_shape: tragic
   laws:
-    - cond-khepri-residue-122ac
+    - cond-override-architecture-residue-122ac
     - cond-earth-bet-noun-fence
     - cond-westerosi-magic-dormant-122ac
     - cond-dragon-proximity-122ac

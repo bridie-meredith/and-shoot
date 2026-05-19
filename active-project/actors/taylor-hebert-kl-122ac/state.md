@@ -6,7 +6,7 @@
 
 STATE:
   location: flea-bottom-hook-district
-  condition: [cond-khepri-residue-122ac, cond-earth-bet-noun-fence, cond-kl-social-physics-122ac]
+  condition: [cond-override-architecture-residue-122ac, cond-earth-bet-noun-fence, cond-kl-social-physics-122ac]
   inventory: []
   stats:
     insect_network_range: 200m_normal
