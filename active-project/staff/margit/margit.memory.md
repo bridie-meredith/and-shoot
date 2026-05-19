@@ -2,6 +2,18 @@
 
 ## Mutation Log
 
+### 2026-05-19 — Cycle-2 monument referral resolution: mem:2 @23
+
+**Referral type:** monument-card target-reference resolution (dispatched from fixer cycle-2 remediation report)
+**Decision:** USE-EXISTING
+**Card surveyed and confirmed:** `monument-override-architecture-prohibition-122ac` at `cards/conditions/monument-override-architecture-prohibition-122ac.card.md`
+**mem:2 @23 target-reference:** already correct; no edit required
+**Phantom interim slug noted:** `cond-override-architecture-residue-122ac` (named in referral brief as fixer's interim) does not exist on disk; fixer set the correct slug in the live field before dispatch
+**Report file:** `active-project/staff/margit/cycle-2-monument-referral.md`
+**Index action:** none required (card already indexed; monument-interior type already established)
+
+---
+
 ### 2026-05-18 — Phase 4 Actor Provisioning: taylor-westeros-good-intentions
 
 All eight actors provisioned. Files written per schemas/card.schema.md and schemas/memory.schema.md.

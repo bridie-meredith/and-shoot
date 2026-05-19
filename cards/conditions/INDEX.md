@@ -7,6 +7,7 @@ All ambient state modifier cards. Maintained by margit — update on every card 
 ## by_world
 
 planetos:
+  - monument-override-architecture-prohibition-122ac
   - cond-khepri-residue-122ac [project: taylor-westeros-good-intentions]
   - cond-earth-bet-noun-fence [project: taylor-westeros-good-intentions]
   - cond-westerosi-magic-dormant-122ac [project: taylor-westeros-good-intentions]
@@ -79,6 +80,7 @@ tombstoned:
 ## by_quality
 
 full:
+  - monument-override-architecture-prohibition-122ac
   - cond-khepri-residue-122ac [project: taylor-westeros-good-intentions]
   - cond-earth-bet-noun-fence [project: taylor-westeros-good-intentions]
   - cond-westerosi-magic-dormant-122ac [project: taylor-westeros-good-intentions]
@@ -146,6 +148,9 @@ full:
 ---
 
 ## by_type
+
+monument-interior:
+  - monument-override-architecture-prohibition-122ac
 
 communication:
   - condition-language-barrier

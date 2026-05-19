@@ -33,7 +33,20 @@ anchors-in-scope: @3 (coll → taylor; first social encounter)
   - `coll persona card` §Hard Fences §1 — *does not name anything* (no "you," no greeting-with-name, no pattern-recognition; he registers her presence by making a place for the work, not by classifying her).
   - `coll persona card` §Hard Fences §2 — *non-interpretive register* (no question of her business, no read of her purpose; the needle is the subject, not she).
   - `cond-kl-social-physics-122ac` §KL-Specific Authority Texture / smallfolk lateral — courtesy-without-arrangement: the offer is not vouching, not credentialing, not patron-relationship; it is the lateral smallfolk move that lets a stranger enter a spot without owing.
-- **facet-licenses:** (R1 blind — to be filled at R2 from locked graph; expected slots: `state-coll:<extends-the-needle>`, `narrator:<post-payment-arrival>`)
+- **facet-licenses:** [resolved from locked graph by cycle-2 fixer, 2026-05-19]
+  - `state-coll:6 @3` — `actor:coll-net-mender-flea-bottom.block_baseline_new_faces: none-this-week -> one-new-face-fish-gate-lane`: the offer fires at the same anchor as this state mutation; the dialogue line is the speech-act that instantiates the block-registration (Coll names the work-spot as available, which is the form the block-fixture presence-registration takes; the offer IS the non-interpretive registration).
+  - `state-taylor:8 @3` — `actor:taylor-hebert-kl-122ac.knowledge.coll-as-vouching-vector: unmapped -> registered-as-block-fixture-with-verbal-contact`: Taylor's knowledge state mutates at @3 as a direct consequence of this dialogue line; the offer is the verbal-contact that licenses the mutation.
+  - note: expected slot `narrator:<post-payment-arrival>` — no NI fire exists at @3 in the locked interest-narrator file (nearest entries: narrator:1 @1, narrator:2 @8); the anticipated co-load did not materialize; the two state citations above constitute the facet-license record for this entry. `state-env:3 @5` (needle held-by mutation) fires at @5, not @3, and is therefore not a direct co-load for the @3 dialogue entry.
+
+### Cape-fic-reader Stage 2 seam — defense note (cycle-2 fixer, 2026-05-19)
+
+**Seam:** "Needle's been waiting" — anticipatory-object ascription; "waiting" attributes interiority to the tool; cape-fic-reader calls this a literary move inconsistent with Coll's non-interpretive register (§Hard Fences §2).
+
+**Defense:** "Needle's been waiting" functions as Flea-Bottom trade-idiom for availability-state, not genuine purposive attribution. The construction "X has been waiting" in smallfolk craft-speech means "X is here and unoccupied" — a persistence-state report, not an anthropomorphization. Compare structural equivalents: "The seat's been empty," "The well's been dry" — neither credits the thing with intent. Coll's card samples ("The well's gone bad. Two nights now.") use the persistence-report form for object states. "Needle's been waiting" is a persistence-report (the needle has been idle, here, available for whoever sits) delivered in the same sentence-form as his canonical samples. The "waiting" is grammatical idiom for the idle-state duration, not a claim about what the needle desires or expects.
+
+**Why not revise:** The alternative phrasing ("Needle's idle. Sit, then." / "Needle's here. Sit, then.") strips the warmth that makes the courtesy structurally distinct from mere permission-to-sit. The sidecar's central structural claim is that the offer makes space for Taylor to enter the spot without owing anything — the idiomatic "been waiting" form does this by framing the needle as ready-without-demand (not you-are-needed, not I-have-been-waiting-for-you). "Needle's idle" is colder; it reads as permission-but-no-welcome, which loses the distinction from Draft C (conditional test). The card's §Hard Fences §2 bans *interpretive* moves about people or situations; it does not ban idiomatic persistence-state idioms about objects. "Needle's been waiting" is object-state language, not interpretation.
+
+**Verdict: defend.** The seam is closeable on the distinction between idiomatic persistence-state language (permitted) and genuine anticipatory-object ascription (forbidden). This entry holds Draft A.
 
 ### Draft B (rejected)
 

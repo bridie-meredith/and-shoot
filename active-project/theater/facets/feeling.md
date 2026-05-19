@@ -59,7 +59,8 @@ source: taylor-hebert-kl-122ac
 round: r2
 ---
 
-1 @23 taylor-hebert-kl-122ac: her hand stills at her side and the turn comes one beat late | expressed: no
+1 @23 taylor-hebert-kl-122ac: her hand stills at her side | expressed: no
+# second clause "and the turn comes one beat late" cut (cycle-2 fixer, 2026-05-19): exits body-register (subject "the turn" is temporal-abstraction, not a body part; latency observation, not somatic action); one-clause form discipline per rubric URI-FACETS-CYCLE-1; dark-fantasy-reader + worm-canon-pedant 2-of-3 dissent
 
 # source: wren-stitch-maker-flea-bottom-ward
 ---
