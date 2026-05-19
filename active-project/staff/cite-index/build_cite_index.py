@@ -282,6 +282,8 @@ def _facet_prefix_from_inflight_name(path: Path) -> str | None:
     Filename shapes:
       proto-lines-<prefix>.md
       proto-lines-<prefix>-<character-slug>.md   (sliced facets: feel-<slug>, state-<slug>)
+      proto-lines-dialogue-<character-slug>.md   (dialogue facet — prefix IS the slug
+                                                  per schemas/dialogue.schema.md § Stitch interface)
 
     Returns the canonical facet prefix as used in the bracket-token form
     `[<prefix>:<id>]` on proto-lines. None if the name does not match.
@@ -290,6 +292,9 @@ def _facet_prefix_from_inflight_name(path: Path) -> str | None:
     if not stem.startswith("proto-lines-"):
         return None
     tail = stem[len("proto-lines-"):]
+    # Dialogue: the citation prefix is the character-slug, not "dialogue".
+    if tail.startswith("dialogue-"):
+        return tail[len("dialogue-"):]
     # Multi-segment facet prefixes used in citations: loc-state.
     # Single-segment prefixes per FACET_FILES values.
     if tail.startswith("loc-state"):
@@ -439,10 +444,28 @@ def consolidate_slices(facets_dir: Path) -> dict[str, tuple[Path, list[Path]]]:
 # --- Phase 4: Stale-citation check ----------------------------------------
 
 
+def _load_dialogue_entries(project_root: Path) -> dict[str, set[int]]:
+    """Per schemas/dialogue.schema.md, dialogue files live at
+    active-project/theater/dialogue/<character-slug>.md with `<id> @<anchor> | ...`
+    entry shape and per-character ID namespace. The citation prefix on
+    proto-lines is the character-slug itself, not a facet prefix.
+    """
+    out: dict[str, set[int]] = {}
+    dialogue_dir = project_root / "theater" / "dialogue"
+    if not dialogue_dir.exists():
+        return out
+    for path in sorted(dialogue_dir.glob("*.md")):
+        slug = path.stem
+        ents = parse_facet_file(path, slug)
+        out[slug] = {e["id"] for e in ents}
+    return out
+
+
 def stale_citation_check(
     cites_by_id: dict[int, list[tuple[str, int]]],
     facets_dir: Path,
     facet_files: dict[str, str],
+    dialogue_entries: dict[str, set[int]] | None = None,
 ) -> list[str]:
     """Every [<prefix>:<id>] on a proto-line must resolve to an entry."""
     errors: list[str] = []
@@ -450,6 +473,9 @@ def stale_citation_check(
     for fname, prefix in facet_files.items():
         ents = parse_facet_file(facets_dir / fname, prefix)
         entries_by_prefix[prefix] = {e["id"] for e in ents}
+    if dialogue_entries:
+        for slug, ids in dialogue_entries.items():
+            entries_by_prefix[slug] = ids
     for pid, toks in cites_by_id.items():
         for prefix, eid in toks:
             if prefix not in entries_by_prefix:
@@ -696,7 +722,8 @@ def main(argv: list[str]) -> int:
         _, base_bodies, merged_cites, _ = parse_proto_file(protoline_path)
 
         # Phase 4: stale-citation check
-        stale_errors = stale_citation_check(merged_cites, facets_dir, facet_files)
+        dialogue_entries = _load_dialogue_entries(project_root)
+        stale_errors = stale_citation_check(merged_cites, facets_dir, facet_files, dialogue_entries)
         if stale_errors:
             print("STALE-CITATION FAIL — citations don't resolve to facet entries:", file=sys.stderr)
             for err in stale_errors:
