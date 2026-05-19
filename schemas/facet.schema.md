@@ -18,16 +18,6 @@ Every facet file uses the same line shape, regardless of facet type:
 - **`@<proto-line-id>`** — required anchor. The proto-line this facet entry decorates. Multiple facet entries may share the same anchor (e.g. several audience interest flags on the same beat).
 - **`<content>`** — facet-type-specific. See per-type rules below.
 
-#### Boundary-carry ID exception (tensometer only, URI-038, 2026-05-11)
-
-In `tensometer-<season-slug>-window-<NN>.md` review-window files only (the intermediate form produced at `/and-season` Phase 3 S10 Step 2; NOT in finalized `tensometer-<season-slug>e<NN>.md` files), entries representing boundary-carry bones from the windowN's open region (the first 10 bones — bones that signal active constraints from windowN-1's close per the boundary-carry discipline at Phase 3 S10 Step 4) MAY use the alpha-suffix form `0a`, `0b`, `0c`, ... for their `<id>` field. These entries sort before the first monotonic integer (`1`, `2`, ...) entry and are visually distinguishable as pre-window-open carry-throughs.
-
-This is a review-phase convention. The Phase 7 Step 4 finalization MUST normalize boundary-carry alpha-suffix IDs to monotonic integers continuing from the prior tens-entry-ID sequence (typically: rename `0a` → `1`, `0b` → `2`, and shift the rest of the file's IDs accordingly). The finalized per-episode tensometer file is strictly monotonic per the rule above — no alpha-suffix IDs survive into the deliverable form.
-
-Inline-rupture bones inserted mid-scene at S10 Step 3 (e.g. `17a @519 3` placed between `17` and `18` to signal a Scene-A rupture inserted at file-position-after-bone-17) follow the same convention: alpha-suffix IDs permitted in `-window-` files for narrative-position clarity; normalized to monotonic integers at Phase 7 Step 4.
-
-A `# boundary-carry` or `# inline-rupture` comment immediately preceding the alpha-suffix entry is recommended for traceability but not required for schema compliance.
-
 Header (frontmatter) optional but recommended for traceability:
 
 ```
@@ -41,31 +31,11 @@ author: <agent-slug>
 
 ## Facet types and content shape
 
-### tensometer (`facets/tensometer.md` — canonical; or `facets/tensometer-<season-slug>e<NN>.md` — bone-gate provenance)
+### tensometer
 
-Tension scalar per proto-line, scale 1–3.
+**DEPRECATED 2026-05-17 (URI-SUBSTANCE-OVERHAUL).** The tensometer facet type is no longer authored or emitted in the substance-overhaul chain. Tensometer was removed from the R1/R2 fanout at `/and-facets`; the `/and-season` bone-gate path that produced `facets/tensometer-<season-slug>e<NN>.md` files is superseded. This section is retained as a historical reference only and must not be read as an active authoring target.
 
-```
-<id> @<proto-line-id> <1|2|3>
-```
-
-- 1 — quiet; ambient or transitional.
-- 2 — pressure; stakes visible, escalation possible.
-- 3 — peak; rupture, crisis, or held-breath threshold.
-
-**Author:** dramatist (single rater pass).
-
-**Dual provenance (URI-026, 2026-05-10).** Tens has two valid authoring sources:
-
-1. **Primary (bone-gate):** `/and-season` Phase 4 Step 1.5 — per-proposed-episode dramatist fork during the season-scope bone-gate. Output path: `facets/tensometer-<season-slug>e<NN>.md` (slug-suffixed). This is the load-bearing source: it gates audience review of bones at Phase 4 Step 2 and feeds Phase 6 F7 (bone-gate residual). The per-episode file ships as part of /and-season's proto-line deliverable.
-
-2. **Legacy:** `/and-facets-r1` Layer 1 — per-episode dramatist fork during the facet graph build. Output path: `facets/tensometer.md` (flat canonical). Retained operationally during Phase 1 of the migration; deferred for deletion in Phase 2.
-
-**No path collision.** The slug-suffixed primary path and the flat canonical legacy path are distinct files; no single-writer guard needed.
-
-**/and-shoot integration.** Phase 0 renames `facets/tensometer-<season-slug>e<NN>.md` → `facets/tensometer.md` for current-episode work. The slug-suffixed copy remains as canonical archive.
-
-**Shared class library (URI-026).** The tens-relevant subset of `.claude/commands/and-facets-audit.md`'s rubric classes (`FREQUENCY-BAND`, `CURVE-SHAPE`, `AP-SCAN`) is consumed by both `/and-season` Phase 4 Step 2 (bone-gate mechanic verdict) and `/and-facets-audit` (per-episode audit). The audit command is the shared review surface; no /and-season-specific reimplementation.
+The successor pressure-signal surface is the scene-map facet (`facets/scene-map-<book>-<chapter>.md`), emitted by `/and-write` Phase 7 from `chapters[].scenes[].bones[].substance_delta.axis_moves.magnitude` in showrunner memory. Per-scene `rhythm-shape` and `peak-bones` fields in the scene-map replace the tensometer's per-bone scalar (1/2/3) as the pressure-signal read surface for rubrics and auditor classes. See `schemas/scene-map.schema.md` for the authoritative field definitions.
 
 ---
 
@@ -275,21 +245,21 @@ Replaces shoot-v1's `STUDIO:` bullets. Environmental state at each proto-line: w
 
 Proto-lines cite this facet (`[loc-state:<id>]`) when the environment is load-bearing for the action. Proto-lines without a location-state citation render in the most recent cited environment.
 
-### scene-map (`facets/scene-map-<episode-slug>.md`) — derived structural facet
+### scene-map (`facets/scene-map-<episode-slug>.md`) — upstream-emitted structural facet
 
-Enumerates the episode's scenes as machine-readable ranges over proto-line IDs. Auto-derived at `/and-facets` Phase 4c from `tensometer` + `location-state` + `interest-narrator` + proto-lines. Not human-authored; not subject to R1/R2 review or audience-gate.
+Enumerates the episode's scenes as machine-readable ranges over proto-line IDs. Emitted by `/and-write` Phase 7 from `chapters[].scenes[].bones[].substance_delta.axis_moves.magnitude` in showrunner memory; validated (not derived) at `/and-facets` Phase 4d. Not subject to R1/R2 review or audience-gate.
 
 ```
 <scene-label> @<start>-@<end> | <location-slug> | <time-of-day> | <one-line>
 ```
 
-The `<scene-label>` field (e.g. `scene-A`) replaces the per-anchor `<id>` of the uniform line shape because scene-map entries are keyed by scene, not by proto-line. The anchor is a closed range rather than a single ID. This is the one facet type that deviates from the uniform line shape — accepted because scene boundaries are intrinsically about ranges and the file is derived, not authored.
+The `<scene-label>` field (e.g. `scene-A`) replaces the per-anchor `<id>` of the uniform line shape because scene-map entries are keyed by scene, not by proto-line. The anchor is a closed range rather than a single ID. This is the one facet type that deviates from the uniform line shape — accepted because scene boundaries are intrinsically about ranges and the file is upstream-authored by `/and-write`, not authored inline at facet time.
 
-**Author:** `/and-facets` Phase 4c orchestrator (mechanical derivation; no Agent dispatch).
+**Author:** `/and-write` Phase 7 orchestrator (emitted from substance_delta data in showrunner memory; no Agent dispatch).
 
 **Consumed by:** `/and-stitch` Phase 1 scene-window mode (fork boundaries), `/and-facets` Phase 5 audit (per-scene cap enforcement), `/and-wrap` editor (future — scene-cut marker placement).
 
-**Full schema:** `schemas/scene-map.schema.md` (line shape, derivation algorithm, coverage validation, consumers).
+**Full schema:** `schemas/scene-map.schema.md` (line shape, field definitions, coverage validation, consumers).
 
 ---
 
@@ -311,7 +281,7 @@ After all per-file culls complete, a holistic pass checks for contradictions acr
 
 The stitcher reads proto-lines in citation order. For each citation, it fetches the corresponding facet entry and uses it as guidance for *selection and arrangement*, not for prose generation. Per the stitcher edit budget (only "and"), facet content is either quoted or used as a selection signal — it is not paraphrased into the manuscript.
 
-Some facets are pure selection signals (tensometer, interest flags) — they bias which proto-lines the stitcher chooses to render in full vs. compress. Others are content-bearing (location-state, metaphor) — their content may appear in the stitched output verbatim, surrounded by selected proto-line and dialogue text.
+Some facets are pure selection signals (interest flags, scene-map `rhythm-shape` + `peak-bones`) — they bias which proto-lines the stitcher chooses to render in full vs. compress. Others are content-bearing (location-state, metaphor) — their content may appear in the stitched output verbatim, surrounded by selected proto-line and dialogue text.
 
 ---
 
