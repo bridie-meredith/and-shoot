@@ -1,77 +1,25 @@
+---
 reviewer: dark-fantasy-reader
-character: taylor-hebert-kl-122ac
 facet: dialogue
+character: taylor-hebert-kl-122ac
+cycle: 1
 episode: b01c01
-cycle: r1
 date: 2026-05-19
-
+verdict: accept
 ---
 
-## Stage 1 — V2 strict affirmative-demonstration
+# Stage 1 — V2 strict affirmative-demonstration
 
-### Entry 1 @25 | "I cannot say."
+- [taylor-hebert-kl-122ac:1] @25 — Q1: PASS — "I cannot say" affirmatively demonstrates card signatures relevant to the dark-fantasy-reader's lens of earned restraint and atmosphere-sustaining precision. §Syntax (base): stripped to load-bearing token — nothing performed, no affect-signaling, no escalation. A line this short earns its place in a dark-fantasy register by refusing to stage itself. §Vocabulary §Hedges-that-are-not-hedges (base): the double-reading — inability on the surface, refusal underneath — is load-bearing for atmosphere: the Flea Bottom block hears "she doesn't know"; the reader who has been inside Taylor's cognition knows the line means something harder. That gap between what the street receives and what the reader knows is where consequence lives. §Voice-tells (base): the silence given enough surface to count as speech — demonstrated as restraint that has cost, not restraint that is merely terse. §Cadence (base): terminates on "say" — the last word is the act of speech-production being declined; the reader feels the weight of what isn't said because the line ends on the precise word for not-saying-it. §Vocabulary §Refuses (leaf): "I cannot" not "I can't" — the uncontracted form sustains period register; a contracted form would fracture the world-surface. §Anchor-sample (leaf): the calibration anchor correctly trimmed for adult-Flea-Bottom register — institutional cover absent because no analogue exists; structural move intact. All six demonstrations enacted in the three-word utterance and the move it performs. Drafts B and C correctly rejected. Q1 PASS. Q2: PASS — no anachronistic idiom, no Earth-Bet proper noun, no septon/maester vocabulary, no apology language, no modern HR-speak, no deposition cadence, no em-dash spine, no contraction, no closing softener, no protective directive. Clean against full card-stack forbidden lists. Stage-1 verdict: accept.
 
-**Q1 — Affirmative card-signature demonstration:**
+# Stage 2 — V3 adversarial seam-finding
 
-The dark-fantasy-reader lens: atmosphere, consequence-propagation, and earned restraint. Does the line demonstrate the card or coast on being inoffensive?
+- [taylor-hebert-kl-122ac:1] @25 — seam: The dark-fantasy-reader's lens attacks earned restraint: does the refusal cost something visible, or is it atmospherically correct but unearned? "I cannot say" is three words at controlled temperature. The scene builds to it across four bones (@21-@24): Wren approaches, speaks, Taylor faces her, holds her eyes. The chapter hinge sits at @23 (feel:1, mem:2, meta:1, narrator:7, vibes:17 — auditor confirmed WARRANTED pile-up; prohibition catches pattern-read). The spoken line at @25 is the output of that hinge: Taylor has recognized the auto-initiating pattern-read, has caught it under the prohibition, and has produced the minimum verbal exit. The restraint is structurally correct. The seam is whether the *reader feels the weight of that suppression* or merely receives a three-word dismissal. That weight lives in feel:1 @23 and mem:2 @23 — two bones before the spoken line. Facet-license attack: the sidecar defers R2 facet-license citation to "expected to cite feeling-taylor:@25 and narrator:@25 if those entries carry the somatic-tell / interest-focus." The cite-index shows no feel entry at @25 and no narrator entry at @25. The nearest somatic-tell is feel:1 @23; the nearest attention-focus is narrator:6 @24. Both are prior bones. The rubric §V2-extension design: "the slip / register-shift / weighted-monument does not have to land in the surface of the utterance alone — it lands in the slot, with adjacent fired facets carrying co-load." The co-load facets exist at @23-@24, not at @25. The stitcher must place feel:1 and mem:2 proximate to the spoken line for the restraint to be felt as earned. If the stitcher creates any prose distance between the hinge-beat and the three words, the line reads as ordinary dismissal. This is the dark-fantasy-reader's hard concern: restraint that looks dark without paying a bill.
 
-Examining the sidecar's six §-citations:
+# Verdict reasoning
 
-- `taylor-hebert §Syntax — "Fragments are common and intentional ... stripped to the load-bearing token."` Three words. Subject, modal, infinitive. Every softener stripped. What remains is the minimum verbal mass that counts as an utterance in the social space of a Flea Bottom street. A line this short earns its place in a dark-fantasy register by refusing to perform — no staging, no affect-signaling, no register-escalation. Demonstrated.
+The line passes Q1 and Q2. The earned-restraint seam is real but it is a stitcher-proximity concern, not a dialogue-authoring failure: the rubric explicitly licenses co-load across adjacent fired facets. The co-load facets (feel:1 @23, mem:2 @23) are present in the graph and will fire at stitch. The dialogue writer correctly deferred R1 facet-license citations per rubric pattern 3. The weight is in the graph; whether the reader feels it is in the stitcher's hands. The line is accepted; the seam is flagged for the stitcher as a proximity obligation.
 
-- `taylor-hebert §Vocabulary §Hedges-that-are-not-hedges.` "Cannot say" reads as humble inability. It is a speech-act refusal. The double-reading — inability on the surface, refusal underneath — is the card's precision-instrument signature. In a dark-fantasy lens this matters because the world's other inhabitants take the surface reading. The Flea Bottom block, any passerby, Wren herself: they hear "she doesn't know." Only the reader who has been inside Taylor's cognition knows the line means something harder. That asymmetry — between what the street receives and what the reader knows — is the dark-fantasy register at work: the world does not see what the reader sees, and that gap is where consequence lives. Demonstrated.
+# Convergence trace (orchestrator-critic input)
 
-- `taylor-hebert §Voice-tells — "held silence after a question ... she lets it."` The bone requires a speech-act. The held silence is not available. The sidecar's formulation — "the silence given just enough surface to count as speech" — is exactly right for a dark-fantasy authoring discipline: she does not perform the refusal, she does not escalate it, she hands the child something that sounds like an answer and is not. The restraint is the tells cost. Demonstrated.
-
-- `taylor-hebert §Cadence — "trailing fragment endings."` Line terminates on "say" — the verb being refused. In a dark-fantasy register: the punch is always in the last word, and the last word here is the act of speech-production being declined. The reader feels the weight of what isn't said because the line ends on the precise word for not-saying-it. Demonstrated.
-
-- `taylor-hebert-westeros §Vocabulary §Refuses — "contractions are reduced."` "I cannot" not "I can't." The uncontracted form holds period register. This matters for atmosphere: a contracted form ("can't") reads as present-day casual, which fractures the world-surface the reader is inside. The full form sustains Planetos-plausible sonic texture. Demonstrated.
-
-- `taylor-hebert-westeros §Anchor-sample — "I do not know, ser. Septon Aldric kept the ledger."` The sidecar identifies this as the calibration anchor and explains the adult-Flea-Bottom trimming: the deflection-by-precision move holds; the sept-ward address vocabulary and institutional cover-clause are stripped because the adult speaker has no equivalent institution to deflect toward. The structural template is intact; the register-appropriate trimming is legible and correct. Demonstrated.
-
-**Q1: PASS.** Six demonstrated signatures. The line is not inoffensive non-violation — each claimed demonstration is enacted in the three-word utterance or in the move it performs. The chosen-mark claim holds under hostile examination.
-
-**Q2 — Card not violated:**
-
-Checking against forbidden vocabulary and cadence from the full card stack:
-
-- No anachronistic idiom. "Cannot say" is period-plausible across virtually any pre-modern register. Clean.
-- No Earth-Bet proper noun. Clean. (R2 verify global scan confirmed clean post-fixer; dialogue utterances pass-listed in auditor r2 report.)
-- No septon/maester address vocabulary on speaker side. Wren is a child and is not addressed by any title at all. The gap-keeping silence on address-forms is itself correct per the bone's "without warmth and without coldness" intent. Clean.
-- No apology language. Clean.
-- No modern HR-speak or deposition cadence. "I cannot say" is not "I'm not in a position to comment at this time." The cadence is period-correct and spoken-register-correct. Clean.
-- No em-dash + semicolon spine in spoken one-liner (named anti-pattern). Clean.
-- No closing softener ("I think," "if it please you"). Clean.
-- No protective directive. Clean.
-- No warmth or coldness spike. Three words at controlled temperature. Clean.
-
-**Q2: PASS.**
-
-**Stage 1 verdict: ACCEPT**
-
----
-
-## Stage 2 — V3 adversarial seam-finding (dark-fantasy-reader lens: earned restraint / atmosphere / consequence-propagation)
-
-The dark-fantasy-reader lens does not attack vocabulary or grammar. It attacks whether the line is *earned* and whether the restraint *costs something visible*.
-
-**Strongest hostile counter-argument:**
-
-The line is atmospherically correct. Three words, uncontracted, gap-keeping, period-plausible. But the dark-fantasy-reader's defining suspicion is of restraint that looks dark without paying a bill. "I cannot say" is an extremely short utterance in a chapter whose bones show Wren approaching (@21), Wren speaking (@22), Taylor facing her (@23), Taylor holding her eyes (@24), and then Taylor speaking (@25) and Wren leaving (@26). The restraint of "I cannot say" depends entirely on the scene cost being visible somewhere — if Wren simply leaves and the reader is given no sense of what the refusal cost either of them, the restraint is aesthetic, not load-bearing.
-
-The auditor's R1 report identifies the @23 pile-up (feel:1, mem:2, meta:1, narrator:7, vibes:17) as the chapter hinge — "pattern-read auto-initiates + caught by rule." This is where the prohibition's cost lives. The dialogue entry at @25 is the output of that hinge: Taylor has recognized the pattern-read starting, has caught herself, and has produced a line that exits the beat without warmth. But the dialogue facet carries only the spoken word. Whether the reader feels the weight of what wasn't said — whether Wren's departure (@26) accumulates as a consequence that matters — depends on whether the stitcher places the hinge-beat's somatic-tell (feel:1) and the memory-reach (mem:2) in close enough proximity to the three-word exit that the reader feels the gap between what Taylor knows and what she offers.
-
-The dark-fantasy seam: **"I cannot say" as a line is correct but the cost it requires to be felt is carried entirely by other facets. If the stitcher separates the hinge-facets from the dialogue line — if feel:1 and mem:2 land three paragraphs before the spoken word — the line reads as ordinary dismissal, not earned restraint.**
-
-The rubric §V2-facet-citation-extension: "the slip / register-shift / weighted-monument does not have to land in the surface of the utterance alone — it lands in the slot, with adjacent fired facets carrying co-load." The sidecar acknowledges at its close that R1 is blind to other facet outputs and that R2 fold-in (when graph-aware) is expected to cite feeling-taylor:@25 and narrator:@25 if those entries carry the somatic-tell / interest-focus the chosen draft's refusal-by-precision claim implies. But feel:2 is at @21 (back=N), and there is no feeling entry at @25 in the cite-index. The somatic tell at the hinge is feel:1 at @23 — two bones before the spoken line. The facet-license citation the sidecar defers to R2 may not exist at @25.
-
-**Seam specificity:** The sidecar notes "facet-license citation (rubric §V2-extension): not asserted at R1 — R1 is blind to other facet outputs per pattern 3. R2 fold-in... expected to cite feeling-taylor:@25 and narrator:@25 if those entries carry the somatic-tell." But the cite-index shows no feel entry at @25, no narrator entry at @25. The nearest feel entry is @23 (feel:1) and the nearest narrator entry at @25's cluster is narrator:6 @24 (hold-the-eyes). The closest somatic-tell and attention-focus entries are one and two bones prior to the line, respectively. The sidecar's R2 fold-in expectation is, as of this cycle, unmet — the graph does not contain a feeling or NI entry at @25 that could serve as the co-load the rubric requires for the "slot carries the load with adjacent facets" design.
-
-**This is a findable gap.** The rubric §citation-completeness: "A chosen line missing either citation axis is a SIGNAL finding; missing both is HARD." At R1, facet-license citations are deferred. At R2, they are required. This is R1. If a dialogue R2 review fires, the gap must be addressed. For this cycle, the seam is noted.
-
-**Strength of seam:** Moderate-high from this lens. The atmosphere depends on co-fire. Co-fire evidence at @25 is absent from the cite-index. The line passes Stage 1 because the §-citations are demonstrated in the utterance itself. The seam is structural, not lexical, and it is a pipeline seam between the dialogue facet and the stitcher's proximity decisions — not a revise trigger at this cycle.
-
----
-
-verdict: ACCEPT
-seam: "I cannot say" earns its restraint in the card, not in the chapter. The weight it requires the reader to feel — earned vs. aesthetic — depends on feel:1 @23 and mem:2 @23 landing proximate to the spoken line in stitch. No feeling or NI entry exists at @25 to serve as co-load at the slot level. Sidecar's deferred R2 facet-license citation cannot be fulfilled at @25 from the current graph. Stitcher must close the gap by proximity; rubric §citation-completeness gap to be flagged at R2 if dialogue runs again graph-aware.
+Stage 2 seam overlaps with auditor r1 TASTE-FLAG TF-001 (bare work-bone gap / stitcher-guidance gap — "stitcher should treat @6-@7 and @16-@17 as fusion-candidates by inference") in kind if not in target: both are pipeline gaps where the facet authoring is correct but the stitcher lacks explicit co-fire guidance for proximity-sensitive beats. TF-001 targets bare work-bones @6-@7/@16-@17; this seam targets the dialogue line at @25 needing feel:1/@23 and mem:2/@23 proximate in render. Not the same finding but the same gap-type. The dark-fantasy-reader seam is a novel callout; no named auditor finding directly tracks @25 proximity. The closest named finding is TASTE-FLAG TF-001 (SIGNAL) by structural analogy.
