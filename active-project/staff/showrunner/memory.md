@@ -508,7 +508,7 @@ books:
             - "wren: present, recurring, unnamed as significant"
             - "otto: offstage"
           target_chapter: b01c02
-        status: faceted-r2          # advanced by /and-facets Phase 4 fanin 2026-05-19; was faceted-r1
+        status: audited-r1-mechanical    # advanced by /and-facets Phase 5 audit + r2-verify 2026-05-19; was faceted-r2
         bones_file: theater/bones/b01-c01.md
         bones_count: 24
         substance_bone_gate_verdict: PASS    # Phase 6 mechanical PASS (HARD: 0, SIGNAL: 3) + audience SUBSTANCE-FELT PASS (9/9 verdicts, no HARD votes)

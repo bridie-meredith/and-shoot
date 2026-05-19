@@ -97,7 +97,7 @@ _(no entries)_
   vibes:18 @26 back=Y co=[state:11, vibes:20] lic-out=[proto:9, proto:20, proto:21, proto:26]
   vibes:19 @20 back=Y co=[exposition:4, loc-state:6, vibes:13] lic-out=[proto:20, proto:21, proto:26]
   vibes:20 @26 back=Y co=[state:11, vibes:18] lic-out=[proto:23, proto:24, proto:25]
-  vibes:21 @26 back=N co=[state:11, vibes:18, vibes:20] lic-out=[proto:21, proto:22, proto:25]
+  vibes:21 @- back=- lic-out=[proto:21, proto:22, proto:25]
   vibes:22 @- back=-
   vibes:23 @- back=-
 
