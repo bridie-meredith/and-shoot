@@ -2,7 +2,7 @@
 facet: interest-narrator
 episode: b01c01
 author: taylor-hebert-kl-122ac (impersonator, facet-mode)
-round: r1
+round: r2
 ---
 
 1 @1 the room's two exits price out before the door-keeper does; the back-passage is the one that costs nothing to walk
@@ -16,3 +16,5 @@ round: r1
 5 @21 the approach surfaces the geometry before the face does; she has already mapped which adults this child belongs to
 
 6 @24 the assessment finishes itself behind the eyes and the rule catches it on the way out; face, not node, is what she holds
+
+7 @23 the turn comes a beat late because the read has already begun and the rule's catch is the slower mechanism

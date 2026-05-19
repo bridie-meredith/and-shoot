@@ -2,22 +2,25 @@
 facet: exposition
 episode: b01c01
 author: exposition-author
-round: r1
+round: r2
+r2-summary: 4 entries reviewed; 4 KEEP, 0 DELETE, 0 REWORD, 0 ADD. Both scene-open-orient candidates (@11, @20) re-refused against locked loc-state + NI graph. Sparsity 16.7% earned by cold-start chapter load (preamble + three first-mention entries land on the chapter's three named entities + the Watch institution; no lens facet can substitute).
 ---
 
-# Fire-audit — scene-open-orient
+# Fire-audit — scene-open-orient (R2 re-validation against locked graph)
 
 scene-B open @11:
   (a) time-skip-blank-@10: YES
   (b) loc-state-at-@11: FIRES (location-state entry 3 — "midday | corner-room-interior | working-hour noise through the wall — the alley at its loudest registered density of the day; distinct from the morning quiet of @1") — carries time-shift + place
   (c) NI-first-2-anchors-of-scene-B (@11, @12): NI entry 3 @12 carries cognitive content about block-reading via the flies; not time/place orient, but loc-state already covers
   verdict: REFUSE (b fails — loc-state carries time + place; exposition would be wallpaper)
+  R2-confirm: locked loc-state:3 + NI:3 confirm R1 refusal. No fire.
 
 scene-C open @20:
   (a) time-skip-blank-@19: YES
   (b) loc-state-at-@20: FIRES (location-state entry 6 — "morning | alley-street-mouth | third or fourth day — light angle shifted earlier than the arrival morning") — carries time-shift + place
   (c) NI-first-2-anchors-of-scene-C (@20, @21): NI entry 5 @21 carries the approach geometry, not time/place orient
   verdict: REFUSE (b fails — loc-state carries time + place; exposition would be wallpaper)
+  R2-confirm: locked loc-state:6 + NI:5 confirm R1 refusal. No fire.
 
 both scene boundaries refused; lens facets carry orientation. zero scene-open-orient entries this chapter.
 
@@ -27,7 +30,7 @@ both scene boundaries refused; lens facets carry orientation. zero scene-open-or
 
 2 @3 coll: Coll has mended nets at the corner outside this room for fifteen years — a fixture of the block, in his fifties, his speech ordered by the work in his hands. | scope: first-mention-character | renders-as: inline-appositive | sources: coll-net-mender-flea-bottom.description, coll-net-mender-flea-bottom.voice, coll-net-mender-flea-bottom.stats | licensed-by: cape-fic-reader:no-prior-roster-anchor-for-named-individual-entering-prose, dark-fantasy-reader:no-prior-roster-anchor-for-named-individual-entering-prose, worm-canon-pedant:no-prior-roster-anchor-for-named-individual-entering-prose
 
-3 @15 the-watch: The Watch is the city's standing patrol — gold-cloaked, hundreds-strong, its Flea Bottom passes on a schedule the block reads by long habit. | scope: first-mention-term | renders-as: parenthetical-aside | sources: cond-kl-social-physics-122ac, cond-kl-geography-122ac | licensed-by: cape-fic-reader:cape-fic-doesnt-know-westerosi-city-watch-as-institution, dark-fantasy-reader:dark-fantasy-needs-the-watch-as-specific-kl-institution-not-generic-medieval-guard, worm-canon-pedant:worm-canon-doesnt-know-westerosi-city-watch-as-institution
+3 @15 the-watch: the Watch — the city's gold-cloaked standing patrol, hundreds-strong, its Flea Bottom passes on a schedule the block reads by long habit. | scope: first-mention-term | renders-as: em-dash-fold | sources: cond-kl-social-physics-122ac, cond-kl-geography-122ac | licensed-by: cape-fic-reader:cape-fic-doesnt-know-westerosi-city-watch-as-institution, dark-fantasy-reader:dark-fantasy-needs-the-watch-as-specific-kl-institution-not-generic-medieval-guard, worm-canon-pedant:worm-canon-doesnt-know-westerosi-city-watch-as-institution
 
 4 @20 wren: Wren is eleven — a ward of one of the stitch-maker households a few doors over, the kind of child the Hook keeps in light work and two meals for keeping. | scope: first-mention-character | renders-as: inline-appositive | sources: wren-stitch-maker-flea-bottom-ward.description, wren-stitch-maker-flea-bottom-ward.stats, cond-kl-social-physics-122ac | licensed-by: cape-fic-reader:no-prior-roster-anchor-for-named-individual-entering-prose, dark-fantasy-reader:no-prior-roster-anchor-for-named-individual-entering-prose, worm-canon-pedant:no-prior-roster-anchor-for-named-individual-entering-prose
 

@@ -2,7 +2,9 @@
 facet: memory
 episode: b01c01
 author: taylor-hebert-kl-122ac (impersonator, facet-mode, fresh fork)
-round: r1
+round: r2
+r2-judge: taylor-hebert-kl-122ac (impersonator, facet-judge-override, fresh fork)
+r2-disposition: 2 KEEP, 0 DELETE, 0 ADD
 ---
 
 1 @15 the patrol moving past in a measured count rhymes with another uniform she had reasons to track from the inside of a doorway -> (earth-bet: administrative-observation-apparatus displacement)
