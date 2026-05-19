@@ -10,7 +10,7 @@ date: 2026-05-19
 
 ## Stage 1 — V2 Affirmative Demonstration
 
-**Q1 — Affirmatively demonstrates ≥1 card signature?**
+**Q1 — Affirmatively demonstrates >=1 card signature?**
 
 The drafts sidecar claims eight §-citations across westeros-smallfolk and the coll persona card. Checking each against the utterance text:
 
@@ -35,8 +35,8 @@ Checking against hard fences and forbidden vocabulary:
 - `westeros-smallfolk §Refuses to say` scan: No Latinate multi-syllable vocabulary. No anachronistic idiom (no "okay," "fine," "yeah"). No noble-register deference markers. No first-person-plural class generalization. CLEAN.
 - `westeros-grrm-mannerisms` overlay check: No "month," "week," "birthday" violations. No phonetic misspelling that would read as parody (none used). No compound-forming failures. CLEAN.
 - `cond-earth-bet-noun-fence` check: Line is Coll's speech, not Taylor's. Card governs Taylor's speech. Not applicable to this speaker. CLEAN.
-- `coll-card §Hard Fences` (all five): No naming, no interpretation, no friendship-signaling, no focal-character behavior. CLEAN.
-- Per-anchor cap: 1 utterance at @3. Well under ≤3. CLEAN.
+- `coll-card §Hard Fences` (all applied fences): No naming, no interpretation, no friendship-signaling, no focal-character behavior. CLEAN.
+- Per-anchor cap: 1 utterance at @3. Well under <=3. CLEAN.
 
 **Q2 verdict: PASS.**
 
@@ -54,14 +54,26 @@ The cape-fic-reader tracks what each character knows and when. The board-move he
 
 **Strongest hostile counter-argument:**
 
-The drafts sidecar claims the line demonstrates `coll-card §Hard Fences §2 — non-interpretive register` because "no question of her business, no read of her purpose; the needle is the subject, not she." But "Needle's been waiting" contains an implicit claim: the needle has been *waiting*. Waiting for what, or whom? A needle does not wait. Objects wait *for* something or someone. The verb "waiting" is the authoring fork's contamination of Coll's non-interpretive register — it attributes anticipation (a purposive, interpretive state) to a tool, in order to make the offer feel ready and welcoming. This is a register-slip: in Coll's world, the needle is not waiting for anyone. The needle needs mending done. The correct non-interpretive phrasing would name the tool's state or work-status, not its anticipatory orientation. Compare the card's own voice-sample: "Thirty-seven stitches on the second net today. Worse than yesterday." — that is the technical observation register. "Needle's been waiting" is a small literary move: it personalizes the needle with anticipatory interiority to soften the offer. Coll, per his card, does not make literary moves. His register is state-of-what-is-present, not state-of-what-is-anticipated.
+The drafts sidecar claims the line demonstrates `coll-card §Hard Fences §2 — non-interpretive register` because "no question of her business, no read of her purpose; the needle is the subject, not she." But "Needle's been waiting" contains an implicit claim: the needle has been *waiting*. Waiting for what, or whom? A needle does not wait. Objects wait *for* something or someone. The verb "waiting" is the authoring fork's contamination of Coll's non-interpretive register — it attributes anticipation (a purposive, interpretive state) to a tool, in order to make the offer feel ready and welcoming.
 
-This seam is real but closable: the register-slip is minor and the line still lands as an offer. It does not break the fiction or cause an asymmetry error. It is a craft seam, not a board-coherence failure.
+This is a small register-slip: in Coll's world, the needle is not waiting for anyone. The needle needs mending done. The correct non-interpretive phrasing would name the tool's state or work-status, not its anticipatory orientation. Compare the card's own voice-sample: "The well's gone bad. Two nights now." — that is the technical observation register. "Needle's been waiting" is a small literary move: it personalizes the needle with anticipatory interiority to soften the offer. Coll, per his card, does not make literary moves. His register is state-of-what-is-present, not state-of-what-is-anticipated.
+
+This seam is real but closable: the register-slip is minor and the line still lands correctly as a work-spot offer. It does not break the fiction or cause an information-asymmetry error.
 
 **Secondary check — facet-license citation completeness:**
 
-The drafts sidecar notes "R1 blind — facet-license slots to be filled at R2" and leaves citations unfilled. The rubric (CONSTRAINT § citation-completeness) states missing facet-license citation is a SIGNAL finding; missing both axes is HARD. The card-signature citations are present (Q1 passed). The facet-license citations are missing — the R2 audit should have filled these from the locked graph. Auditor r2-verify PASS on "dialogue behavior-card-compliance" confirms no card violations, but does not confirm the citation-completeness constraint was resolved (the r2-verify does not re-check the drafts sidecar citation-completeness for this specific line; it checks the final output file, which per schema does not carry the sidecar's R1-blind note).
+The drafts sidecar notes "R1 blind — facet-license slots to be filled at R2" and leaves citations unfilled. The rubric (CONSTRAINT § citation-completeness) states missing facet-license citation is a SIGNAL finding. The card-signature citations are present (Q1 passed). The facet-license citations are missing from the sidecar — the note remains in R1-blind tense. The auditor's r2-verify ruled PASS on dialogue behavior-card-compliance without explicitly re-checking whether the sidecar was updated post-R2. The graph is constructable (state:6 @3 and vibes:5 @3 co-locate with this entry) but the sidecar does not confirm it.
 
-**The seam from my lens:** The "Needle's been waiting" phrasing imports an anticipatory-object metaphor that is a small literary move inconsistent with Coll's strictly state-of-present, non-interpretive register. This is the aperture the stitcher could exploit — a stitcher giving voice to this line might amplify the "waiting" into something warmer than Coll's card licenses. The seam is at the word level: `waiting` does small interpretive work that Coll's card forbids at the characterological level.
+**Stage 2 seam (cape-fic-reader):** `waiting` is an anticipatory-object ascription — a minor but real register-slip in Coll's non-interpretive voice. The line passes the board-move test and the information-asymmetry gate. The seam is at voice texture, not at coherence. Secondary seam: facet-license column left in R1-blind state in the sidecar; auditor cleared it but the sidecar does not confirm R2 consultation.
 
-**Stage 2 seam (cape-fic-reader):** `waiting` is an anticipatory-object ascription that is a minor but real register-slip in Coll's non-interpretive voice. The line passes the board-move test; the seam is at voice texture, not at coherence.
+---
+
+## Final Verdict
+
+verdict: accept
+
+Seam routed to fixer for awareness:
+- Primary: `waiting` as anticipatory-object ascription is a small interpretive move in a non-interpretive speaker's voice. Defensible; not a line failure.
+- Secondary: facet-license citation in sidecar remains in R1-blind placeholder form. Administrative gap; auditor ruled PASS at r2-verify.
+
+Convergence-trace: secondary seam overlaps with auditor CONSTRAINT §citation-completeness (r2-verify PASS). Primary seam is novel — not flagged by auditor's mechanical scan.
