@@ -1,79 +1,25 @@
-persona: worm-canon-pedant
+---
+reviewer: worm-canon-pedant
 facet: dialogue
 character: wren-stitch-maker-flea-bottom-ward
-episode: b01c01
 cycle: 1
-stage: V2 + V3
+episode: b01c01
 date: 2026-05-19
-
+verdict: revise
 ---
 
-## V2 — Strict Affirmative-Demonstration
+# Stage 1 — V2 strict affirmative-demonstration
 
-### Entry reviewed
-`1 @22 | open to the stranger by asking after the work without naming what she has noticed | "Mistress Coll teach you that knot?"`
+- [wren-stitch-maker-flea-bottom-ward:1] @22 — Q1: PASS — line affirmatively demonstrates `westeros-smallfolk §Voice tells — authority-by-elder` with the structural mechanism the sidecar names precisely (the elder licenses the approach; the relation Wren can place is Coll, not the stranger). Demonstrates `§Cadence — Short sentences` and `westeros-grrm-mannerisms §Latinate refusal`. Critical for this lens: the line is register-distinct from Taylor — no inverted-predicate, no cold-accounting structure, no utilitarian-direct syntax. The sidecar explicitly guards against Taylor-register contamination ("no em-dash + semicolon chassis") and the line is clean of it. Wren's voice is demonstrably not Taylor's. Q2: PASS — Earth-Bet substring scan clean against canonical fence list (Brockton Bay, Skitter, Lung, Khepri, Bakuda, PRT, Endbringer, Gold Morning, Scion, Echidna, Behemoth, Leviathan, Simurgh, Cauldron, Coil, Tattletale, Bitch, Grue, Regent, Imp, Aisha, Glaive, Glory Girl, Panacea — no hit); no `cond-earth-bet-noun-fence §Banned Terms` in utterance; no Taylor-register bleed; no `cond-westerosi-witness-vocabulary` violation (line stays inside the trade-frame, does not describe Taylor's capability). Stage-1 verdict: accept.
 
-### Q1 — Affirmatively demonstrates ≥1 card signature?
+# Stage 2 — V3 adversarial seam-finding
 
-PASS.
+- [wren-stitch-maker-flea-bottom-ward:1] @22 — seam: The worm-canon-pedant's specific lens is information-state coherence and power-mechanics consistency. The sidecar claims that at @22 "she does not yet know there is anything to not-ask about." That is a speaker information-state claim. From this lens: what has a close-observing Flea Bottom child who has been watching from "her own household-errands" actually seen by the time she speaks at @22? The proto-lines establish insects covering flagstones at @8 and filling the block at @12 — a sustained insect-anomaly across multiple bones before Wren's approach at @21. The vibes at @22 are vibes:14 (back=Y, persistent-state cloud) and vibes:15 (back=Y), co-cited with `wren-stitch-maker-flea-bottom-ward:1`. The atmosphere at the moment of dialogue is already anomalously loaded. The canon-pedant's question: if Taylor's insect network has been visibly operating since @8, and Wren has observation-before-action as a trained instinct (per her persona card §Default Stance), at what point did Wren arrive relative to @8? The sidecar does not specify. The facet-license `state-wren-stitch-maker-flea-bottom-ward:@22` is cited for "her approach posture and the trained-close-attention tell that the question rides on" — but if the state entry fires at @22 without establishing when Wren entered the street, the information-state claim ("she has not yet registered the anomaly") is unsupported. Worm-canon-pedant concern: a child who has been trained to close attention (observation-before-action), present in a street where insects have covered the flagstones, should register the insect-anomaly before approaching. If she has been present since @8, "Mistress Coll teach you that knot?" is the right question only if she is specifically isolating the knot from the insect-context she has also observed — which would make the line a stronger restraint-demonstration, not an innocent craft-question. That reading is more interesting and more consistent with the card, but it is not the reading the sidecar advances; facet-license attack: the sidecar's premise (Wren as pre-anomaly opener, not yet registering the flies) requires the `state-wren:@22` entry to specify either (a) Wren arrived late, after most of the insect-work, or (b) her close-attention has registered the insects but her opening still routes to the knot — the latter being the more canon-consistent reading given her observation habit. If the state entry specifies neither, the information-state is a gap. The feel:2 entry fires at @21, not @22 (per cite-index) — the somatic-tell the sidecar cites for @22 is misanchored, which compounds the gap.
 
-The worm-canon-pedant lens for a non-Taylor, non-Worm character is the consistency axis: does this character's voice match what the cards declare, without cross-contamination from Taylor's register or from Earth-Bet vocabulary? The pedant's Q1 here is: does the line demonstrate card signature rather than merely avoid violation — and is there any Taylor-register bleed?
+# Verdict reasoning
 
-Card-signature citation from the sidecar:
+Stage-1 passes on both Q1 and Q2: card-compliant, Earth-Bet-clean, register-distinct from Taylor, no information-state contradiction visible within the line itself. The Stage-2 probe surfaces two compounding concerns: (1) the feel:2 facet-license misanchoring (cite-index: @21, not @22), shared with cape-fic-reader's finding; and (2) a power-mechanics consistency question specific to this lens — if Wren has the observation habit the card declares, and the insect-anomaly has been on-stage since @8, the sidecar's "pre-anomaly opener" premise requires the state entry to carry arrival-timing that would make that premise coherent. The fact that the only feeling entry for Wren fires at @21 (approach) rather than @22 (speech) raises the question of whether the somatic-licensing architecture at @22 is sufficiently built. Under URI-AUDIENCE-AGGREGATION-RULE (single dissent fails), this reviewer emits revise.
 
-- `westeros-smallfolk §Voice tells — authority-by-elder`: Demonstrated. The elder is named, the elder's authority licenses the question. This is the correct non-Taylor move — Taylor would not ask this way; Taylor's register is direct, utilitarian, not elder-routing. Wren's five words are structurally distinct from any line Taylor would produce. That distinctness is itself a card-signature demonstration: no cross-contamination, no Taylor-chassis bleed.
+# Convergence trace (orchestrator-critic input)
 
-- `westeros-smallfolk §Cadence — Short sentences`: Demonstrated. Five words, single interrogative, no subordination. Taylor's chapter-1 voice (per the NI-cadence audit and the narrator AP-SCAN finding) trends toward inverted predicates and cold-accounting structures. Wren's line has none of that. The cadence difference is structurally visible.
-
-- `westeros-grrm-mannerisms` overlay (Latinate refusal): *teach*, *knot* — both Anglo-Saxon roots. No *instruct*, *demonstrate*, *indicate*. The overlay card's highest-priority anchor (Latinate substitution ban) is affirmatively respected, not just passively avoided.
-
-For the worm-canon-pedant, the additional axis is Taylor's registration of the line: Wren does not name what she has noticed. This is the "not-asking choice" that the drafts sidecar describes as still forming. For the pedant, this is the relevant power-mechanics equivalent in the Worm sense: Wren's restraint is the behavioral signature of the not-asking relationship that the cost-bearer condition (per `cond-cost-bearer-scene-frequency`) requires to be built across acts. The line demonstrates that Wren is performing correct restraint for a first-meeting-before-the-not-asking-choice-is-formed. The restraint is structurally consistent with the relationship the book requires.
-
-Facet-license citations: both axes present (card-signatures + `state-wren:@22`, `feel-wren:@22`). Citation completeness: PASS.
-
-Q1: PASS.
-
-### Q2 — Card not violated?
-
-PASS.
-
-Hard fences checked against the worm-canon-pedant's specific concerns:
-
-- Earth-Bet proper-noun scan: "Mistress Coll teach you that knot?" — substring scan against the canonical fence list (Brockton Bay, Skitter, Lung, Khepri, Bakuda, PRT, Endbringer, Gold Morning, Scion, Echidna, Behemoth, Leviathan, Simurgh, Cauldron, Coil, Tattletale, Bitch, Grue, Regent, Imp, Aisha, Glaive, Glory Girl, Panacea): no hit. PASS.
-- `cond-earth-bet-noun-fence §Banned Terms`: no parahuman vocabulary in the utterance text. PASS.
-- `westeros-smallfolk §Refuses to say`: no anachronistic idiom, no noble-register, no Latinate multi-syllable. PASS.
-- Taylor-register contamination check: the line contains no cold-utilitarian structure, no inverted-predicate, no explicit cost-accounting register. Wren's voice is distinguishable from Taylor's. PASS.
-- `cond-westerosi-witness-vocabulary`: Wren is not describing Taylor's capability in this line — she is asking about a knot, which is the correct surface-level framing. No witness-vocabulary violation. PASS.
-- Per-anchor caps, AP-SCAN: PASS (per other reviewer assessments; worm-canon-pedant concurs).
-
-Q2: PASS.
-
-### V2 verdict: ACCEPT
-
-The line is card-correct, register-distinct from Taylor, free of Earth-Bet contamination, and structurally positioned correctly for the first-meeting-before-the-not-asking-choice state. That tracks.
-
----
-
-## V3 — Adversarial Seam-Finding (worm-canon-pedant lens)
-
-Lens: canon consistency, cross-contamination detection, information-state coherence, Worm-character voice fidelity.
-
-**Strongest hostile counter-argument:**
-
-The line is clean on every fence. The worm-canon-pedant's adversarial probe has to be aimed at the one axis that belongs exclusively to this lens: is the framing of what Wren has not asked about consistent with what Taylor's power-set would actually produce as observable behavior for a Flea Bottom child?
-
-The drafts sidecar says Wren has been watching from household errands and has decided to come close enough to speak. She has seen the knot. She does not ask about the flies, the routes, the foreign-cadence — "the question stays inside the trade-frame." This is presented as Wren's correct restraint. But the canon-pedant notices: if Taylor is running her insect-network in a Flea Bottom street, what has a close-observing child actually seen? From the proto-lines, by @22 (when Wren speaks), the chapter has established: insects covering the flagstones (@8), insects filling the block (@12), Taylor handling the nets for hours. A child watching from nearby would have seen Taylor working in the middle of an insect anomaly — not just a knot.
-
-The sidecar states Wren "does not yet know there is anything to not-ask about. The opening is a child's polite-curious work-opening." But the cite-index shows that @22 is heavily co-cited with vibes:14 and vibes:15 (back=Y, co=[state:8, wren-stitch-maker-flea-bottom-ward:1]), which are persistent-state vibes firing at @22. The vibes signal that the scene is already atmospherically loaded with insect-anomaly by the time Wren speaks. The sidecar's claim that Wren "does not yet know there is anything to not-ask about" is in tension with the facet-evidence that the scene has been insect-anomalous for twelve proto-lines by the time she approaches.
-
-The worm-canon-pedant's seam: the sidecar positions Wren's first line as a pre-anomaly opening — she sees a knot, she asks about the knot, she does not yet register the insect-weirdness. But the facets establish that the insect-weirdness has been on-scene since @8. If a close-observing child (per the sidecar: "she has been watching from her own household-errands") has been present in the street during @8 through @21, she has been watching Taylor work in an insect anomaly for an extended period before she approaches. The question "Mistress Coll teach you that knot?" is the right line for a child who has only seen the knot. It may be the wrong line for a child who has been present through the insect-cover sequence and is still leading with the knot only.
-
-The seam is not a card-violation. It is an information-state coherence question: what has Wren actually observed before @22, and is the dialogue line's implicit information-state ("she has not yet registered the anomaly") consistent with the vibes-and-state facets that describe what the scene has looked like for twelve proto-lines?
-
-**Seam statement:** Wren's opening question presupposes she has seen the knot and not (yet) the insect-anomaly. The vibes at @22 (vibes:14, vibes:15, back=Y) co-located with the wren-dialogue citation suggest the anomaly-atmosphere is already present at the beat. If Wren has been in the street since @8 (insects cover the flagstones), the sidecar's claim that "she does not yet know there is anything to not-ask about" requires support from Wren's state/feel entries — specifically, that those entries establish her as a recent arrival at @22 or as having been too distant for the insect-behavior to register. If the state and feel entries only establish approach-posture and opening-register, the information-state claim is asserted without facet backing.
-
-**Seam class:** information-state coherence / lore-consistency seam. The dialogue line is correct for its stated premise; the seam is whether the stated premise is consistent with the scene's observable state as established by other facets. Routes to a cross-check of `state-wren:@22` and `feel-wren:@22` for arrival-timing or observation-distance specificity.
-
-**Verdict effect on V2 ACCEPT:** V2 ACCEPT stands. The line is card-correct. The seam is upstream and requires facet-content examination, not dialogue revision. The worm-canon-pedant would flag this for a targeted cross-check: does `state-wren-stitch-maker-flea-bottom-ward:@22` establish when Wren arrived relative to the insect-cover sequence?
-
-**Seam severity:** MODERATE-HIGH for this lens. If Wren was present through @8-@21 and the state entry does not establish her as a recent arrival, the "not-yet-anomaly-aware" premise is a lore-consistency gap. The dialogue line cannot fix this; only the state and feel facets can.
+Finding 1 (feel:2 anchor at @21, not @22): not in r1 or r2-verify auditor reports. The auditor checked citation-completeness as presence of both axes in the sidecar, not anchor-resolution against the cite-index. Convergence with cape-fic-reader callout — both identify the same misanchoring from different lenses. Finding 2 (arrival-timing gap in `state-wren:@22`): not in any auditor finding; the auditor passed state-updates for the scene without examining per-character state entries for observation-state specificity. No overlap with C-001, C-002, or any named SIGNAL finding. Both callouts route to fixer cycle 2: (a) verify feel:2 anchor and update sidecar citation if the entry is correctly at @21; (b) check `state-wren-stitch-maker-flea-bottom-ward:@22` for arrival-timing or observation-state specificity consistent with the "pre-anomaly opener" premise.
