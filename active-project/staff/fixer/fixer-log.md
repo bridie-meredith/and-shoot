@@ -171,6 +171,29 @@ exit: CLEAN
 
 2026-05-18T15:01:00Z /and-write b01c01 pass5: 1 FAULT-STATE resolved (coll state-file location reconciled to chapter chunk Hook anchor).
 
+## SESSION-START — 2026-05-19T09:00:00Z — facets-b01c01-hard-remediation
+dispatch: fix 2 CONSTRAINT HARD findings (C-001 + C-002) from active-project/staff/auditor/facets-final-audit.md; minimum-change edits to vibes.md only
+target: active-project/theater/facets/vibes.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 2 (C-001 vibes:21 citation mismatch, C-002 vibes:17 earth-bet fence breach)
+
+## C-001 — RESOLVED — 2026-05-19T09:05:00Z
+fault: vibes:21 declared @26 anchor but licensed-by cites proto:21, proto:22, proto:25 — none anchored at @26; cite-index recorded back=N (graph integrity break)
+scope: line
+change: dropped @26 from vibes:21 entry line in active-project/theater/facets/vibes.md; entry is now off-anchor (no bracket), consistent with schema optional-anchor rule; licensed-by and token-bundle unchanged
+criteria met: yes — off-anchor shape matches licensed-by topology (build-up @21, utterance @22, conclusion @25); back=N graph break resolved; no proto-line edited
+
+## C-002 — RESOLVED — 2026-05-19T09:06:00Z
+fault: vibes:17 keyword `khepri-residue` contains Earth-Bet proper-noun substring "khepri"; audit-class-8 slug rule applies to facet graph entries even for operator-only content; fence violation per cond-earth-bet-noun-fence
+scope: line
+change: renamed keyword from `khepri-residue` to `override-architecture-residue` in vibes:17 entry body; renamed licensed-by reference from `world-build:khepri-residue-122ac` to `world-build:override-architecture-residue-122ac`; warehouse file cond-khepri-residue-122ac.md not touched (operator-facing slug, not narrator-rendered); token-bundle unchanged
+criteria met: yes — no Earth-Bet proper-noun substring in keyword or citation slug; rendering convention matches narrator-interest + memory entries ("the override-architecture"); warehouse card untouched per dispatch scope
+
+## SESSION-END — 2026-05-19T09:07:00Z — facets-b01c01-hard-remediation
+findings-applied: 2 (C-001 + C-002)
+findings-skipped: 0 (SIGNAL findings not in scope per dispatch)
+exit: CLEAN
+
 ## fault-002 — RESOLVED — 2026-05-18T12:42:00Z
 fault: both Aemond cards stated age: 10-11 at 122 AC (born 106 AC) — internally inconsistent and wrong per F&B canon; memory.md cast_roster also said "age 10-11"
 scope: line

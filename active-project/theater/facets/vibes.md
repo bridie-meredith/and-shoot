@@ -44,7 +44,7 @@ round: r1
 
 16 @24 actor:taylor-hebert-kl-122ac ++ wren: [face-not-node-held-on-first-contact, the-refusal-to-complete-the-read, silence-as-the-initial-grammar-of-the-relationship] | licensed-by: proto:23, proto:24, proto:25
 
-17 @23 actor:taylor-hebert-kl-122ac ++ khepri-residue: [the-pattern-read-initiated-and-stopped, the-gap-held-by-choice-not-incapacity, unconsented-instrumentalization-refused-at-the-first-opportunity] | licensed-by: proto:23, proto:24, world-build:capability-prohibition-intact, world-build:khepri-residue-122ac
+17 @23 actor:taylor-hebert-kl-122ac ++ override-architecture-residue: [the-pattern-read-initiated-and-stopped, the-gap-held-by-choice-not-incapacity, unconsented-instrumentalization-refused-at-the-first-opportunity] | licensed-by: proto:23, proto:24, world-build:capability-prohibition-intact, world-build:override-architecture-residue-122ac
 
 18 @26 actor:coll-net-mender-flea-bottom ++ never-names: [present-when-wren-arrives-does-not-intervene, the-witnessing-without-naming-function-begins, the-noting-without-acting-is-already-operative] | licensed-by: proto:9, proto:20, proto:21, proto:26
 
@@ -52,7 +52,7 @@ round: r1
 
 20 @26 episode ++ prohibition-in-action: [face-not-node-is-the-rule-made-visible, the-prohibition-enacted-against-taylor's-own-trained-reading, the-rule-costs-something-here] | licensed-by: proto:23, proto:24, proto:25, world-build:capability-prohibition-intact
 
-21 @26 actor:wren-stitch-maker-flea-bottom-ward ++ trust: [the-trust-preceded-by-deliberate-approach, she-chose-to-speak-to-the-outsider, the-asymmetric-trust-initiated-from-wren's-side] | licensed-by: proto:21, proto:22, proto:25
+21 actor:wren-stitch-maker-flea-bottom-ward ++ trust: [the-trust-preceded-by-deliberate-approach, she-chose-to-speak-to-the-outsider, the-asymmetric-trust-initiated-from-wren's-side] | licensed-by: proto:21, proto:22, proto:25
 
 # ── Off-anchor: series-baseline vibes active during b01c01 ───────────────────
 
