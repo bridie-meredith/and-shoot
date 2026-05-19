@@ -383,6 +383,24 @@ target: design/shoot-v2/rubric-state-updates.md + rubric-memory-flags.md + rubri
 audit-report: n/a — user-supplied line-by-line cleanup dispatch
 findings-queued: ~18 targeted line edits across 5 files
 
+## SESSION-START — 2026-05-19T15:00:00Z — write-b01c01-phase2-svo-fix-pass
+- 2026-05-19 /and-write b01c01 Phase 2: fault-001 b01c01s01n04 svo "coll-net-mender-flea-bottom faces the street" → "coll-net-mender-flea-bottom lifts the eyes" (rationale: unambiguous physical action replacing stance-naming verb)
+- 2026-05-19 /and-write b01c01 Phase 2: fault-002 b01c01s02n02 svo "coll-net-mender-flea-bottom pulls the net taut" → "coll-net-mender-flea-bottom pulls the net" (rationale: stripped result-state adjective extending object)
+- 2026-05-19 /and-write b01c01 Phase 2: fault-003 b01c01s02n06 svo "taylor-hebert-kl-122ac draws the needle through the mesh" → "the needle crosses the mesh" (rationale: object-as-subject form strips prepositional padding; mesh becomes direct destination; variety against heavy Taylor-subject load)
+- 2026-05-19 /and-write b01c01 Phase 2: fault-004 b01c01s02n09 svo "coll-net-mender-flea-bottom sets the net aside" → "coll-net-mender-flea-bottom folds the net" (rationale: stripped adverbial result-direction; folds chosen over drops to avoid collision with s01n08 drops-the-pack)
+- 2026-05-19 /and-write b01c01 Phase 2: fault-005 b01c01s03n03 svo "taylor-hebert-kl-122ac faces wren-stitch-maker-flea-bottom-ward" → "taylor-hebert-kl-122ac lifts the eyes" (rationale: stance-naming replaced with clean gaze-shift action; symmetry with fault-001 recast; lift→hold progression with s03n06 preserved)
+
+## SESSION-END — 2026-05-19T15:05:00Z — write-b01c01-phase2-svo-fix-pass
+findings-applied: 5 (fault-001 through fault-005)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-19T15:00:00Z — write-b01c01-phase2-svo-fix-pass
+dispatch: apply minimum-change SVO recasts to 5 bones in showrunner memory (b01c01 /and-write Phase 2 auditor findings)
+target: active-project/staff/showrunner/memory.md
+audit-report: inline dispatch (5 faults: fault-001 through fault-005; slugs b01c01s01n04, b01c01s02n02, b01c01s02n06, b01c01s02n09, b01c01s03n03)
+findings-queued: 5
+
 ## fault-002 — RESOLVED — 2026-05-18T12:42:00Z
 fault: both Aemond cards stated age: 10-11 at 122 AC (born 106 AC) — internally inconsistent and wrong per F&B canon; memory.md cast_roster also said "age 10-11"
 scope: line

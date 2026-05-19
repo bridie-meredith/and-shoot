@@ -1,94 +1,77 @@
+# /and-write Phase 2 — constraint audit — b01c01
+
 audit:
   scope: /and-write Phase 2 constraint audit
   target: b01c01
-  timestamp: 2026-05-18
-  chapter: b01c01
-  bones_audited: 23
-  verdict: FAULTS-4
-
-# Classified Report — /and-write Phase 2 — b01c01
+  timestamp: 2026-05-19
+  bones_audited: 27
+  verdict: FAULTS-3
 
 ---
 
-## Per-bone classification table
+## Per-bone classification (27 rows)
 
-| bone       | SVO form                                                                               | axis / delta    | classification        | rationale |
-|------------|----------------------------------------------------------------------------------------|-----------------|-----------------------|-----------|
-| b01c01s01n01 | taylor-hebert-kl-122ac enters the corner-room                                        | knowledge +0.03 | CORRECT               | Valid transitive motion; `the corner-room` permitted unnamed-noun form; axis and sub-rank magnitude accepted per tuning notes; cost_ledger_anchor `~` correct. |
-| b01c01s01n02 | taylor-hebert-kl-122ac pays the-door-keeper                                          | knowledge +0.03 | CORRECT               | `pays` is concrete-physical transitive; `the-door-keeper` resolves as unnamed building fixture under `the <noun>` form; no cast slug exists for this entity; consistent with chapter chunk's anonymous-building framing; cost_ledger_anchor `~` correct. |
-| b01c01s01n03 | coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac                         | knowledge +0.05 | CORRECT               | Valid speech bone; both speaker and listener in cast roster; `knowledge` is a communication-class axis satisfying the speech-bone substance requirement; cost_ledger_anchor `~` correct. |
-| b01c01s01n04 | taylor-hebert-kl-122ac takes the needle coll-net-mender-flea-bottom extends          | knowledge +0.02 | FAULT-FORM-CONJUNCTION | The trailing phrase `coll-net-mender-flea-bottom extends` is a relative clause that embeds a second action (coll extending the needle) within a single bone. Two discrete events — coll's extension and taylor's taking — are compressed into one line. Schema requires: if two things happen, they are two bones. |
-| b01c01s01n05 | taylor-hebert-kl-122ac threads the needle                                            | knowledge null 0 | CORRECT              | Concrete-physical transitive; null delta at sub-rank magnitude is accepted per tuning notes for this establishment chapter; cost_ledger_anchor `~` correct. |
-| b01c01s01n06 | the insects move                                                                      | knowledge +0.03 | FAULT-FORM-NO-VERB    | `move` is a motion verb; the bone supplies no destination. Schema rule is categorical: bare intransitive motion verbs without destination fault FAULT-FORM-NO-VERB. The landing-clean exception (`taylor exhales`) does not extend to motion verbs implying destination. `the insects move` does not satisfy the narrow intransitive exception because motion implies a terminus that is absent. |
-| b01c01s01n07 | taylor-hebert-kl-122ac handles the nets                                              | knowledge +0.02 | CORRECT               | `handles` in craft context (net-mending) denotes active hand-manipulation — a discrete physical act, not sustained carrying or stative possession. Not on explicit deny-list; closer to `works` than `carries` in semantic class. |
-| b01c01s01n08 | coll-net-mender-flea-bottom faces the street                                         | knowledge +0.02 | CORRECT               | `faces <X>` is explicitly licensed as a valid transitive recast (cited in schema's `turns to` ban section). `the street` is a valid unnamed-noun object. |
-| b01c01s02n01 | taylor-hebert-kl-122ac threads the needle                                            | knowledge null 0 | CORRECT              | Same form as s01n05; CORRECT for same reasons. |
-| b01c01s02n02 | the insects move                                                                      | knowledge +0.04 | FAULT-FORM-NO-VERB    | Same form as s01n06. `move` without destination; bare intransitive motion verb; categorical ban applies. |
-| b01c01s02n03 | the walls cool                                                                        | knowledge +0.03 | CORRECT               | `cool` is an intransitive verb describing thermal state-change, not a motion verb implying destination. Analogous to `taylor exhales` — complete without a terminus. No modifier, no negation, no abstraction as object. |
-| b01c01s02n04 | taylor-hebert-kl-122ac handles the nets                                              | knowledge +0.03 | CORRECT               | Same form as s01n07; CORRECT for same reasons. |
-| b01c01s02n05 | the city-watch passes the hook                                                        | knowledge +0.04 | CORRECT               | `passes <object>` is transitive with `the hook` as direct object/destination landmark; `the city-watch` and `the hook` are valid unnamed-noun forms; concrete-physical motion with destination supplied. |
-| b01c01s02n06 | taylor-hebert-kl-122ac holds the feet                                                | knowledge null 0 | CORRECT               | Narrow `holds` license satisfied: (1) `the feet` is a body part of the subject taylor-hebert-kl-122ac, and (2) the action is stillness-against-pressure (seated working posture, feet held still during needlework). License conditions met. |
-| b01c01s02n07 | the needle moves                                                                      | knowledge +0.03 | FAULT-FORM-NO-VERB    | `move` is a motion verb; no destination supplied. Same categorical ban as s01n06/s02n02. The needle progressing through net-mesh is an observable event but `moves` without destination fails the schema rule; a transitive form with the net as object would satisfy (`the needle crosses the mesh`, `the needle pierces the net`). |
-| b01c01s02n08 | taylor-hebert-kl-122ac drops the nets                                                | knowledge +0.03 | CORRECT               | `drops` is a concrete-physical transitive verb; `the nets` is a valid unnamed-noun form object; no modifier, no abstraction. |
-| b01c01s03n01 | wren-stitch-maker-flea-bottom-ward enters the street                                 | knowledge +0.02 | CORRECT               | Valid transitive motion with destination; wren in cast roster; cost_ledger_anchor `~` correct. |
-| b01c01s03n02 | wren-stitch-maker-flea-bottom-ward approaches taylor-hebert-kl-122ac                 | knowledge +0.02 | CORRECT               | `approaches <person>` is transitive — taylor-hebert-kl-122ac is the destination terminus. Not bare intransitive. Both in cast. |
-| b01c01s03n03 | wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac                  | knowledge +0.02 | CORRECT               | Valid speech bone; both in cast; `knowledge` satisfies communication-class axis requirement. |
-| b01c01s03n04 | taylor-hebert-kl-122ac faces wren-stitch-maker-flea-bottom-ward                     | knowledge null 0 | CORRECT               | `faces <X>` explicitly licensed as valid transitive recast per schema. |
-| b01c01s03n05 | taylor-hebert-kl-122ac holds the eyes                                                | knowledge null 0 | CORRECT               | Narrow `holds` license satisfied: (1) `the eyes` is a body part of the subject taylor-hebert-kl-122ac, and (2) stillness-against-pressure (holding the gaze fixed under social pressure of Wren's attention, resisting the impulse to break or reassess). License conditions met. |
-| b01c01s03n06 | taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward                 | knowledge +0.02 | CORRECT               | Valid speech bone; both in cast; `knowledge` satisfies communication-class axis requirement. |
-| b01c01s03n07 | wren-stitch-maker-flea-bottom-ward leaves the street                                 | knowledge +0.02 | CORRECT               | `leaves <object>` is transitive — `the street` is the origin object; not bare intransitive motion. |
-
----
-
-## Scene aggregate verification
-
-| scene   | bone-sum knowledge | target | match |
-|---------|--------------------|--------|-------|
-| b01c01s01 | 0.03+0.03+0.05+0.02+0+0.03+0.02+0.02 = 0.20 | 0.20 | CORRECT |
-| b01c01s02 | 0+0.04+0.03+0.03+0.04+0+0.03+0.03 = 0.20   | 0.20 | CORRECT |
-| b01c01s03 | 0.02+0.02+0.02+0+0+0.02+0.02 = 0.10         | 0.10 | CORRECT |
-
-Note: The three FAULT-FORM-NO-VERB bones (s01n06, s02n02, s02n07) currently carry knowledge deltas of +0.03, +0.04, +0.03 respectively. If fixer rewrites these bones, the knowledge delta values on those bones must be preserved so scene aggregates continue to match their targets.
+| bone | svo | classification | rationale |
+|------|-----|----------------|-----------|
+| b01c01s01n01 | `taylor-hebert-kl-122ac enters the corner-room` | PASS | `enters` is directed-motion transitive with named destination. No copula, negation, perception, non-action, modifier, conjunction, or multi-subject fault. No constraint violation. |
+| b01c01s01n02 | `taylor-hebert-kl-122ac pays the building-keeper` | PASS | `pays` is direct-action transitive. `the building-keeper` is a licensed unnamed-noun form. Copper-stars payment consistent with cond-kl-social-physics-122ac (Taylor at copper-star level at story open). No Earth-Bet jargon. |
+| b01c01s01n03 | `the building-keeper pockets the copper-stars` | PASS | `pockets` is direct-action transitive. Ambient subject licensed. Copper-stars as smallest currency unit consistent with cond-kl-social-physics-122ac. No constraint violation. |
+| b01c01s01n04 | `coll-net-mender-flea-bottom faces the street` | PASS | `faces <X>` is explicitly licensed as a valid transitive recast for `turns to <X>`. No fault applies per dispatch narrow-license catalog. No constraint violation. |
+| b01c01s01n05 | `taylor-hebert-kl-122ac crosses the yard` | PASS | `crosses` is directed-motion transitive with named space as object. No fault-form. No constraint violation. |
+| b01c01s01n06 | `coll-net-mender-flea-bottom works the net` | PASS | `works` is direct-action transitive. Net is Coll's prop consistent with role slug. No constraint violation. |
+| b01c01s01n07 | `taylor-hebert-kl-122ac circles the block` | PASS | `circles` is directed-motion transitive with named spatial object. Flea Bottom consistent with cond-kl-geography-122ac. No Earth-Bet jargon. |
+| b01c01s01n08 | `taylor-hebert-kl-122ac drops the pack` | PASS | `drops` is direct-action transitive. Pack is a physical prop consistent with arrival context. Axis null/0 correct for non-knowledge-bearing settling beat. |
+| b01c01s01n09 | `coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac` | PASS | Licensed speech-bone form `<speaker> speaks to <listener>`. Moves knowledge (communication-class axis). Licensed. Both actors present in Flea Bottom. |
+| b01c01s01n10 | `taylor-hebert-kl-122ac holds the feet` | PASS | Narrow `holds` license applies: object is a body part of subject AND action is stillness-against-pressure. Explicitly licensed per dispatch. Capability null/0 correct for discipline/stillness beat. |
+| b01c01s02n01 | `taylor-hebert-kl-122ac lifts the basket` | PASS | `lifts` is direct-action transitive. Basket consistent with working-day labor context. Axis null/0 correct for non-knowledge-bearing opening beat. |
+| b01c01s02n02 | `coll-net-mender-flea-bottom pulls the net taut` | FAULT-FORM-MODIFIER | `taut` is a resultative adjective appended to the direct object. The dispatch FAULT-FORM-MODIFIER catalog prohibits adjectives as modifiers on the object. The complete SVO is `pulls the net`; `taut` extends it with a result-state descriptor that does not belong in the bone field. |
+| b01c01s02n03 | `taylor-hebert-kl-122ac threads the needle` | PASS | `threads` is direct-action transitive. Needle is a working prop consistent with net-mending context. Knowledge up 0.03 valid. |
+| b01c01s02n04 | `the insects fill the block` | PASS | `fill` is an ambient-drift transitive verb. Subject `the insects` is a licensed unnamed collective. No active-sweep verb. Passive-ambient description consistent with rank-3 ceiling in cond-override-architecture-residue-122ac. No Earth-Bet jargon. Dual axis (knowledge up 0.05; capability null 0) both valid. |
+| b01c01s02n05 | `the walls cool` | PASS | `cool` is an ambient-drift intransitive verb describing environmental thermal change; not a position-naming stand/sit/lie form. Consistent with passive insect-sense thermal registration at rank 3. No Earth-Bet jargon. Dual axis (knowledge up 0.04; capability null 0) both valid. |
+| b01c01s02n06 | `taylor-hebert-kl-122ac draws the needle through the mesh` | FAULT-FORM-MODIFIER | `through the mesh` is a prepositional phrase extending the direct object with a path description. The dispatch FAULT-FORM-MODIFIER catalog prohibits prepositional padding on the object. The complete SVO is `draws the needle`; the prepositional phrase does not belong in the bone field. |
+| b01c01s02n07 | `the city-watch passes the hook` | PASS | `passes` is directed-motion transitive with named location as object. `the city-watch` is a licensed unnamed collective. The Hook is a canonical Flea Bottom street per cond-kl-geography-122ac. Watch patrolling the Hook consistent with cond-kl-social-physics-122ac. Knowledge up 0.05 valid. |
+| b01c01s02n08 | `taylor-hebert-kl-122ac holds the eyes` | PASS | Narrow `holds` license applies: object is a body part of subject AND action is stillness-against-pressure. Explicitly licensed per dispatch. Dual axis null/0 correct for discipline/stillness beat. |
+| b01c01s02n09 | `coll-net-mender-flea-bottom sets the net aside` | FAULT-FORM-MODIFIER | `aside` is an adverb appended to the verb naming the result-direction of the action. The dispatch FAULT-FORM-MODIFIER catalog prohibits adverbs. The complete SVO is `sets the net`; `aside` extends it with a directional result-modifier that does not belong in the bone field. |
+| b01c01s03n01 | `wren-stitch-maker-flea-bottom-ward enters the street` | PASS | `enters` is directed-motion transitive with named destination. wren-stitch-maker-flea-bottom-ward is a listed cast member. No constraint violation. Dual axis (knowledge up 0.02; capability null 0) both valid. |
+| b01c01s03n02 | `wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac` | PASS | Licensed speech-bone form. Moves knowledge (communication-class axis). Licensed. Both actors present. |
+| b01c01s03n03 | `taylor-hebert-kl-122ac faces wren-stitch-maker-flea-bottom-ward` | PASS | `faces <X>` is explicitly licensed as a valid transitive recast for `turns to <X>`. No fault applies per dispatch narrow-license catalog. No constraint violation. |
+| b01c01s03n04 | `taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward` | PASS | Licensed speech-bone form. Moves knowledge (communication-class axis). Licensed. Both actors present. |
+| b01c01s03n05 | `wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac` | PASS | Licensed speech-bone form. Moves knowledge (communication-class axis). Licensed. Both actors present. |
+| b01c01s03n06 | `taylor-hebert-kl-122ac holds the eyes` | PASS | Narrow `holds` license applies: body-part-of-subject, stillness-against-pressure. Explicitly licensed per dispatch. Capability null 0 correct. |
+| b01c01s03n07 | `wren-stitch-maker-flea-bottom-ward crosses the street` | PASS | `crosses` is directed-motion transitive with named space as object. Axis null/0 correct for departure beat. |
+| b01c01s03n08 | `taylor-hebert-kl-122ac lifts the needle` | PASS | `lifts` is direct-action transitive. Needle is a working prop consistent with net-mending context. Capability null 0 correct for closing beat. |
 
 ---
 
-## Constraint audit (active conditions)
+## Per-scene aggregate verification
 
-No constraint violations found. Checked:
+| scene | axis | bone-level sum | target | delta from target | result |
+|-------|------|---------------|--------|-------------------|--------|
+| s01 | knowledge | 0.02+0.03+0.01+0.04+0.02+0.02+0.04+0+0.02+0 = **0.20** | 0.20 | 0.00 | PASS (exact) |
+| s01 | capability | all null/0 | null | — | PASS |
+| s02 | knowledge | 0+0+0.03+0.05+0.04+0.03+0.05+0+0.03 = **0.23** | 0.20 | +0.03 | PASS (within ±0.1 tolerance) |
+| s02 | capability | all null/0 | null | — | PASS |
+| s03 | knowledge | 0.02+0.03+0.01+0.02+0.02+0+0+0 = **0.10** | 0.10 | 0.00 | PASS (exact) |
+| s03 | capability | all null/0 | null | — | PASS |
 
-- **cond-khepri-residue-122ac**: No bone names Khepri or Earth-Bet parahuman terminology. Insect-sense is represented as physical observation only (the insects move, the walls cool, the city-watch passes the hook). PASS.
-- **cond-earth-bet-noun-fence**: No parahuman jargon in any bone. Bones are pre-dialogue; constraint applies at dialogue-authoring time but no leakage in bone text. PASS.
-- **cond-westerosi-magic-dormant-122ac**: No bone moves capability above null/0 this chapter. All capability deltas null at 0. Insect-sense stays passive. PASS.
-- **cond-kl-witch-label-formation-122ac**: No bone positions Taylor as visibly anomalous to on-scene witnesses in a way that would form a witch-label. The `the insects move` bones are scene-internal; no witness reaction bone present. PASS.
-- **cond-dragon-proximity-122ac**: No dragons on-stage. PASS.
-- **cond-kl-social-physics-122ac**: Vouching-through-proximity satisfied by s01n02 (pays the door-keeper), s01n03 (coll speaks), s01n08 (coll faces the street). The chapter chunk notes (SIGNAL-003) that at least one s01 bone must make vouching-knowledge acquisition explicit — s01n03 (coll speaks, knowledge +0.05) addresses this. PASS.
-- **cond-taylor-pov-behavior**: No interiority in bones; no bone reports Taylor's thoughts or feelings as SVO events. All interiority is correctly deferred to facets. PASS.
-- **cond-westerosi-witness-vocabulary**: No anachronistic vocabulary in bone text. PASS.
-- **cond-road-to-hell-chain-shape**: Establishment chapter; no antagonist pressure present; hinge shape correctly absent of escalation. PASS.
-- **cond-cost-bearer-scene-frequency**: Wren appears in s03 (enters, approaches, speaks, leaves) — one scene of three, well within frequency bounds for an establishment chapter. PASS.
+No FAULT-AGGREGATE-DELTA-MISMATCH findings.
 
 ---
 
-## Cost ledger audit
+## Constraint audit
 
-All 23 bones declare `cost_ledger_anchor: ~`. Per dispatch context, no cost ledger entries resolve at or below b01c01. All anchors correctly null. No FAULT-COST-LEDGER-UNRESOLVED findings.
-
----
-
-## Physical / state audit
-
-- taylor-hebert-kl-122ac: present in all three scenes as subject or listener. State consistent with handoff_in (position 1, Flea Bottom anonymous). PASS.
-- coll-net-mender-flea-bottom: present in s01 as speaker and observer. State consistent with chapter chunk (block fixture, street-facing corner). PASS.
-- wren-stitch-maker-flea-bottom-ward: enters at s03. State consistent with handoff_in ("Wren not yet named as significant; present at chapter edge"). PASS.
-- No props in active-project/warehouse requiring inventory check. Unnamed entities (the corner-room, the nets, the needle, the insects, the walls, the street, the hook, the city-watch, the eyes, the feet) are all permitted under schema's `the <noun>` form. PASS.
-
----
-
-## Bone-delta malformation audit
-
-- All axes declared are `knowledge` or `capability` (null). Both are in series.substance.state_axes[].slug. PASS.
-- All magnitudes are sub-rank (0.02–0.05) or zero. Per dispatch tuning notes, sub-1 magnitudes are accepted for this establishment chapter. No FAULT-BONE-DELTA-MALFORMED raised on magnitude grounds.
-- All capability deltas are null/0, correctly reflecting cond-westerosi-magic-dormant-122ac and the chapter's dormant baseline. PASS.
+| constraint card | verdict | notes |
+|----------------|---------|-------|
+| cond-override-architecture-residue-122ac | PASS | No bone implies Khepri-mantle (human coordination/override). All capability deltas null/0. Ambient-drift bones (s02n04 `fill`, s02n05 `cool`) use passive-ambient verbs only; no active-sweep verb present. No range violation implied. KL passive-awareness load (s02n04, s02n05) is consistent with the card's description of Flea Bottom as high-density requiring suppression. No parahuman terms. |
+| cond-earth-bet-noun-fence | PASS | No Worm-canon proper noun, power-classification term, institutional term (PRT, Protectorate, Wards, Undersiders, Cauldron), cape-name, or Earth-Bet geography in any bone SVO. "Khepri" absent. Gold Morning absent. |
+| cond-westerosi-magic-dormant-122ac | PASS | No Westerosi native magic mechanism invoked. No glass-candle, greenseer, shadowbinding, or faceless-man element in any bone. |
+| cond-kl-witch-label-formation-122ac | PASS | No bone positions Taylor as visibly anomalous to witnesses in a label-accumulating way. Ambient-drift bones are internal-perspective reads, not observer-visible events. No single-observation label formation implied. No behavioral-foreknowledge flicker trigger. |
+| cond-kl-court-state-122ac | PASS | No court-level characters on-stage. Daemon not present. Lucerys not referenced. Otto Hightower not present. No scene implies Taylor has direct court-level intelligence. |
+| cond-kl-geography-122ac | PASS | All bones set in Flea Bottom / the Hook / adjacent streets. `the city-watch passes the hook` (s02n07) correctly names the Hook as a canonical Flea Bottom street. No geographic placement errors. |
+| cond-kl-social-physics-122ac | PASS | Payment in copper-stars (s01n02–n03) consistent with Taylor's story-open economic position. Watch patrolling the Hook (s02n07) consistent with district-patrol patterns. No gold dragons. No Watch response faster than latency permits. |
+| cond-taylor-pov-behavior | PASS | No interiority, thought-figures, or abstraction-as-object in any bone SVO. All bones are external action. No theme-narration present at bone level. |
+| cond-westerosi-witness-vocabulary | PASS | No Westerosi character uses parahuman vocabulary in any bone. No mechanism-correct identification present. No dragon-connection attribution. |
+| cond-road-to-hell-chain-shape | PASS | Chapter b01c01 is the story-open establishment chapter. No auditable-mistake beat required here. Wren (the closing-image cost-bearer) is correctly introduced at s03. No bone enacts or approaches thematic irony as a statement. No authorial-correction framing at bone SVO level. |
 
 ---
 
@@ -97,46 +80,26 @@ All 23 bones declare `cost_ledger_anchor: ~`. Per dispatch context, no cost ledg
 findings:
   - id: fault-001
     type: fault
-    what: b01c01s01n04 — "taylor-hebert-kl-122ac takes the needle coll-net-mender-flea-bottom extends"
-    why: The relative clause `coll-net-mender-flea-bottom extends` embeds a second discrete action (coll extending the needle) inside a bone whose subject is taylor. Two agents perform two actions; compressing them into one line violates the one-bone-one-action rule and produces a compound subject-action structure that downstream facet authoring cannot cleanly cite. The dialogue facet and narrator-interest facet would have ambiguous anchor targets.
-    criteria: The bone must be split into two clean SVO bones — one recording coll's extension of the needle, one recording taylor's taking of it — such that each bone has a single subject performing a single discrete action. The two bones together must carry the same aggregate knowledge delta (+0.02) as the current single bone, distributed between them so the scene sum remains 0.20.
+    what: b01c01s02n02 — svo `coll-net-mender-flea-bottom pulls the net taut`
+    why: `taut` is a resultative adjective appended to the direct object, naming the result-state achieved by the action. FAULT-FORM-MODIFIER. The bone field must contain the action on the object only; result-state descriptors are not permitted in the SVO field. The rhythm-anchor function of this bone and its null knowledge delta are not affected by the form fault; substance is well-formed.
+    criteria: the corrected SVO must carry the action on the direct object without appending a resultative adjective or result-state modifier; the null knowledge delta and rhythm-anchor function must be preserved
 
   - id: fault-002
     type: fault
-    what: b01c01s01n06 — "the insects move"
-    why: `move` is a motion verb and the bone supplies no destination. The schema ban on bare intransitive motion without destination is categorical; the landing-clean exception (`taylor exhales`) does not extend to motion verbs. A downstream stitcher rendering `the insects move` has no directional or spatial anchor to render; the facet chain (sensory, location-state) cannot attach specific environmental data to a terminally vague motion event.
-    criteria: The bone must supply a destination or be recast with a transitive verb that takes the environment as its object (e.g., the insects cross a surface, the insects fill a gap, the insects thread a crack), such that the motion event is spatially anchored and facets can cite a specific location-state event. Knowledge delta +0.03 must be preserved.
+    what: b01c01s02n06 — svo `taylor-hebert-kl-122ac draws the needle through the mesh`
+    why: `through the mesh` is a prepositional phrase extending the direct object with a path description. FAULT-FORM-MODIFIER. The dispatch catalog enumerates prepositional padding (into, onto, towards, in the X, with the X, by the X) as a fault; `through the mesh` is the same class. The complete bone action is `draws the needle`; the path phrase does not belong in the SVO field. The knowledge delta (+0.03) is well-formed and must be preserved.
+    criteria: the corrected SVO must carry the action on the direct object without a prepositional phrase extending the object or path; knowledge delta +0.03 must be preserved in the corrected form
 
   - id: fault-003
     type: fault
-    what: b01c01s02n02 — "the insects move"
-    why: Identical form to fault-002. Bare intransitive motion verb without destination. Same downstream consequence.
-    criteria: Same as fault-002 criteria. Knowledge delta +0.04 must be preserved.
-
-  - id: fault-004
-    type: fault
-    what: b01c01s02n07 — "the needle moves"
-    why: `move` is a motion verb and the bone supplies no destination. `the needle moves` during net-mending is a concrete in-scene event, but the bone fails to anchor where the needle moves (through the mesh, across the net, along a seam). Bare intransitive motion; same categorical schema violation as fault-002 and fault-003.
-    criteria: The bone must supply a destination or be recast with a transitive verb that takes the net or mesh as its object (e.g., the needle crosses the mesh, the needle pierces the net, the needle threads the cord), such that the motion event has a spatial anchor. Knowledge delta +0.03 must be preserved.
+    what: b01c01s02n09 — svo `coll-net-mender-flea-bottom sets the net aside`
+    why: `aside` is an adverb appended to the verb naming the result-direction of the action. FAULT-FORM-MODIFIER. The dispatch catalog explicitly prohibits adverbs. The complete bone action is `sets the net`; the directional adverb does not belong in the SVO field. The knowledge delta (+0.03) is well-formed and must be preserved.
+    criteria: the corrected SVO must carry the action on the direct object without an adverb or result-direction extension; knowledge delta +0.03 must be preserved in the corrected form
 
 ---
 
-## Gotcha resolutions (auditable record of close calls)
+## Verdict
 
-- **s01n02 the-door-keeper hyphen**: Hyphenated unnamed entity form; schema permits `the <noun>` for unnamed environment elements; the door-keeper is an unnamed building fixture consistent with the chapter chunk's anonymous-building framing. Not a violation; hyphen is punctuation, not a compound-subject form.
-- **s01n04 compound-form detection**: Classified as FAULT-FORM-CONJUNCTION (two actions in one line). Not FAULT-FORM-MULTI-SUBJECT — the subjects are distinct agents (taylor / coll) performing distinct actions; the violation is the compression of two actions, not a multi-subject subject-slot.
-- **s01n06 / s02n02 / s02n07 `moves` vs. `exhales` exception**: The schema's landing-clean intransitive exception is illustrated by `taylor exhales` — a verb that is complete without a destination. `Move` is semantically incomplete without destination (it implies spatial relocation); the exception does not extend to it. Classified FAULT-FORM-NO-VERB on all three.
-- **s01n07 / s02n04 `handles`**: Not on explicit deny-list; `handles` in active craft context (turning, pulling, checking mesh) denotes a discrete physical act rather than sustained carrying or stative possession. CORRECT.
-- **s01n08 `faces the street`**: `faces <X>` is explicitly named in schema as a valid transitive recast for the banned `turns to` form. CORRECT.
-- **s02n03 `the walls cool`**: Thermal state-change intransitive; not a motion verb; no destination implied; analogous to `taylor exhales`. CORRECT.
-- **s02n05 `the city-watch passes the hook`**: Transitive motion with `the hook` as destination-object. Not bare intransitive. CORRECT.
-- **s02n06 `holds the feet` / s03n05 `holds the eyes`**: Narrow `holds` license applies to both. s02n06: feet are subject's body part; stillness-against-pressure (working posture). s03n05: eyes are subject's body part; stillness-against-pressure (gaze held under social pressure). Both CORRECT.
-- **s03n02 `approaches taylor`**: Transitive — taylor is the destination terminus. Not bare intransitive. CORRECT.
-- **s03n07 `leaves the street`**: Transitive — the street is the origin-object. Not bare intransitive. CORRECT.
-- **Scene aggregates**: All three scene sums match targets exactly (0.20, 0.20, 0.10). Fixer must preserve the per-bone delta values on all four faulty bones when recasting SVO form.
+FAULTS-3
 
----
-
-VERDICT: FAULTS-4
-Bones with clean FAULT: fault-001 (b01c01s01n04), fault-002 (b01c01s01n06), fault-003 (b01c01s02n02), fault-004 (b01c01s02n07).
-19 of 23 bones CORRECT. All scene aggregates CORRECT. No constraint, physical, cost-ledger, or aggregate-delta findings.
+24 of 27 bones PASS. All three scene aggregate deltas PASS. All 10 constraint cards PASS. No FAULT-PHYSICAL, no FAULT-CONSTRAINT, no FAULT-BONE-DELTA-MALFORMED, no FAULT-AGGREGATE-DELTA-MISMATCH, no FAULT-COST-LEDGER-UNRESOLVED findings. The three faults are form-only (FAULT-FORM-MODIFIER in the SVO field); all three bones carry well-formed substance deltas that fixer must preserve. `faces` bones (s01n04, s03n03) are LICENSED per dispatch narrow-license catalog — not faulted. `holds` bones (s01n10, s02n08, s03n06) are LICENSED — not faulted. Speech bones (s01n09, s03n02, s03n04, s03n05) are LICENSED — not faulted.

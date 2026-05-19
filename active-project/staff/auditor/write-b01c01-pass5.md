@@ -1,89 +1,61 @@
-```yaml
 audit:
-  scope: chapter
+  scope: /and-write Phase 5 continuity
   target: b01c01
-  gate: /and-write Phase 5 continuity
-  timestamp: 2026-05-18
-  findings:
+  timestamp: 2026-05-19
+  bones_audited: 27
+  verdict: CONTINUITY-OK
 
-    - id: fault-001
-      type: fault
-      what: >
-        coll-net-mender-flea-bottom state file (active-project/actors/coll-net-mender-flea-bottom/state.md)
-        records location as "fish-gate-district-outdoor-work-spot". Bones b01c01s01n03, b01c01s01n04,
-        b01c01s01n08 place Coll on-stage at the corner-room off the Hook (Flea Bottom), which the
-        chapter chunk and scene chunk both anchor to Hook district. Fish Gate is one of KL's seven
-        named gates and is a distinct district from Flea Bottom / Hook. The two locations do not
-        overlap under the KL geography constraint (cond-kl-geography-122ac).
-      why: >
-        A downstream studio fork reading Coll's state file to author location-state or sensory facets
-        will load fish-gate-district-outdoor-work-spot as his scene location and produce a facet in
-        contradiction with the bones. The /and-stitch lens-anchor pass will have no consistent location
-        anchor for Coll. If the state file is not corrected before /and-facets, the location-state
-        facet will contain a geography fault that propagates to the draft.
-      criteria: >
-        Coll's state file location must resolve to a location consistent with the Hook / Flea Bottom
-        anchor established by the chapter chunk and scene chunk. Either the state file is updated to
-        a Hook-district location, or the chapter/scene chunk is revised to place the work-corner at
-        Fish Gate — whichever is the intended canonical location. The two records must name the same
-        district.
+## Per-class checks
 
-    - id: flag-001
-      type: flag
-      what: >
-        s01 bone slugs in dispatch order: n01, n02, n03, n04, n09, n05, n07, n06, n08.
-        Slug n09 appears fifth in sequence between n04 and n05; slugs n06 and n07 are reversed
-        relative to their numeric handles. These are authoring-handle slugs, not flat_ids, so
-        non-sequential ordering is not a schema violation. However, the non-monotonic slug order
-        suggests n09 was inserted after initial numbering and n06/n07 were sequenced by authoring
-        logic rather than slug-order.
-      why: >
-        At Phase 7 serialization, /and-write assigns flat_ids by walking scenes in the declared order.
-        If the ordered bone list above is the canonical scene order, Phase 7 will assign flat_ids
-        correctly regardless of slug numbering. No downstream fault if Phase 7 serializes in this
-        declared order. Noted for Phase 7 emit confirmation: the serializer must use the declared
-        physical order (n01→n02→n03→n04→n09→n05→n07→n06→n08), not slug-numeric order.
+- reachability: PASS — all three goal elements delivered. "Operating rule in its intact form": enacted
+  at s01n10, s02n08, s03n06 (three holds-form bones). "Ward it will fail to protect": Flea Bottom
+  established as locus across all three scenes. "Child who will pay the price": Wren introduced at
+  s03n01, exits at s03n07 un-named-as-significant; s03n08 confirms non-filing. Knowledge delta
+  3→3.5 traceable across scene subtotals (s01 ≈0.19 / s02 ≈0.20 / s03 ≈0.10 = 0.49, within the
+  0.5 target band).
 
-    - id: flag-002
-      type: flag
-      what: >
-        No time-skip blank-numbered bone exists between b01c01s02n08 (taylor drops the nets,
-        end of the working day) and b01c01s03n01 (wren enters the street). The s03 chunk
-        states Wren appears "on the third or fourth day." Without a blank-numbered line at the
-        scene boundary, Phase 7 serialization will render the s02→s03 transition as continuous
-        same-day action.
-      why: >
-        The stitcher reads blank-numbered lines as non-trivial elapsed-interval markers and renders
-        a paragraph break. Without this marker, the draft will compress a multi-day gap into an
-        immediate transition, contradicting the chapter chunk's explicit "third or fourth day"
-        placement of Wren's appearance. This is not a bone-content fault but a Phase 7 emit
-        requirement.
-      criteria: ~
+- state consistency: PASS — Taylor's state file location (flea-bottom-hook-district) consistent with
+  all bones; no bone places her outside that perimeter. Coll's state file location
+  (hook-flea-bottom-outdoor-work-spot) consistent with s01 yard and s02 net-work; correct absence
+  in s03 (multi-day gap, no Coll bone authored). Wren's state file location
+  (stitch-maker-household-hook-district) consistent with entering the street at s03n01. Taylor's
+  inventory is empty per state file; no bone uses a prop not in inventory (copper stars are
+  currency, not inventory-tracked props; mending nets are ambient set props). Time-skips: s01→s02
+  (same-day working rhythm, no cross-day actor relocation required), s02→s03 (multi-day gap per
+  s03 chunk "third or fourth day") — no state inconsistency introduced by either skip.
 
-    - id: flag-003
-      type: flag
-      what: >
-        handoff_out specifies "insect-sense reads at passive: density, temperature, movement patterns
-        below deployment threshold." Density is delivered by b01c01s01n06 (insects cover the
-        flagstones) and b01c01s02n02 (insects fill the block). Temperature is delivered by
-        b01c01s02n03 (the walls cool). Movement patterns: b01c01s02n05 (the city-watch passes the
-        hook) is street-level environmental observation; no bone explicitly marks movement-pattern
-        reading via passive insect-sense. The third handoff_out element is implicit rather than
-        bone-delivered.
-      why: >
-        The handoff_out's "movement patterns" claim is partially unsubstantiated at bone level.
-        This does not block /and-facets — the chapter chunk explicitly narrates movement-pattern
-        reading as part of the working day — but the sensory facet author will have no bone to cite
-        for insect-sense movement-reading. The sensory facet may either invent an uncited assertion
-        or leave the movement-pattern element undelivered.
-      criteria: ~
+- reference resolution: PASS — all three principal cast slugs (taylor-hebert-kl-122ac,
+  coll-net-mender-flea-bottom, wren-stitch-maker-flea-bottom-ward) resolve against actor state
+  files in active-project/actors/. Ambient actors (building-keeper, city-watch) are single-scene
+  unnamed fixtures; no card required. Location anchor (Flea Bottom / Hook) confirmed by
+  cond-kl-geography-122ac. No unresolvable slug in any of the 27 bones.
 
-  verdict: FAULTS-1
-  verdict_note: >
-    One fault (fault-001: Coll location state mismatch). Two informational flags requiring Phase 7
-    emit action (flag-001: slug order confirmation; flag-002: time-skip marker between s02 and s03)
-    and one advisory flag for facet authoring (flag-003: movement-pattern delivery gap).
-    All five fault-class axes checked: FAULT-POV clean, FAULT-REFERENCE clean,
-    FAULT-REACHABILITY clean, FAULT-HANDOFF-IN-MISMATCH clean (source_chapter null; seed state
-    honored), FAULT-STATE one finding (fault-001).
-```
+- POV: PASS — all 27 bones are observable from Taylor's first-person position. Taylor-subject bones
+  and Coll/Wren-subject bones are external observable actions. Ambient-subject bones ("the needle
+  crosses the mesh", "the insects fill the block", "the walls cool", "the boots strike the
+  cobbles", "the city-watch passes the hook") are either Taylor's own physical action, Taylor's
+  passive insect-sense read, or environmental percepts available at her location. No bone requires
+  access to another character's inner state. No perception-verb leak detected on any of the 27
+  bones.
+
+- handoff_in honored: PASS — source_chapter is null; no prior chapter to contradict. Opening bones
+  honor all handoff_in baseline conditions: no patron on-stage, no institutional cover, copper-star
+  payment at s01n02, capability held dormant at opening (s01n10 null-delta), Otto offstage
+  throughout, Aemond offstage, dragons not on-stage, Wren absent from s01 and s02 and not named
+  significant before s03n01. Character-state ranks consistent with stated baseline (capability 3
+  dormant, position 1, moral-framework 3 enacted via three holds-form bones).
+
+- handoff_out supported: PASS — rent corner off the Hook: established at s01n01-02. Coll
+  social-cover-by-proximity without explicit arrangement: s01n04/n06/n09. Insect-sense passive
+  throughout: all capability axis entries hold null delta across all three scenes. Wren as
+  recurring-unnamed: s03 full sequence, exits at s03n07, non-filing confirmed at s03n08. Knowledge
+  3→3.5: aggregate scene deltas sum to ≈0.49 (rounds to 0.5 target). Agency unchanged at 5: no
+  agency bone present. All handoff_out claims are directly traceable to specific bones.
+
+## Findings
+
+(none)
+
+## Verdict
+
+CONTINUITY-OK
