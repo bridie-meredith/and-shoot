@@ -217,6 +217,172 @@ findings-applied: 2 (C-001 + C-002 verified; cite-index refreshed manually)
 findings-skipped: 0
 exit: CLEAN
 
+## SESSION-START — 2026-05-19T12:00:00Z — pipeline-adaptation-audit-fix
+dispatch: translate 15 HARD findings from pipeline-adaptation-audit.md — tensometer→scene-map/substance-delta across rubrics, schemas, command body, orchestrator-critic card
+target: schemas/facet.schema.md + schemas/scene-map.schema.md + design/shoot-v2/rubric-*.md + .claude/commands/and-facets.md + staff/orchestrator-critic/card.md
+audit-report: active-project/staff/auditor/pipeline-adaptation-audit.md
+findings-queued: 15 HARD (STRUCT-001 through STRUCT-011, META-001, DEDUP-001 through DEDUP-003, CONTRA-001 through CONTRA-004; per dispatch scope: all except CON-001, CON-002, META-002, META-003, STRUCT-012)
+
+## STRUCT-001 — RESOLVED — 2026-05-19T12:05:00Z
+fault: schemas/facet.schema.md tensometer section was active-authoring-sounding despite tensometer being dropped
+scope: line
+change: section was already marked DEPRECATED 2026-05-17 (URI-SUBSTANCE-OVERHAUL) in a prior session; confirmed correct. Also removed residual tensometer mention in stitch-interface section ("tensometer, interest flags" → "interest flags, scene-map rhythm-shape + peak-bones").
+criteria met: yes — tensometer section reads as historical archive; stitch-interface updated
+
+## STRUCT-002 — RESOLVED — 2026-05-19T12:06:00Z
+fault: schemas/facet.schema.md scene-map entry described auto-derivation at Phase 4c from tensometer + other sources
+scope: line
+change: rewrote scene-map section to describe upstream emission by /and-write Phase 7 from substance_delta data; Phase 4d validates; tensometer removed as derivation source
+criteria met: yes
+
+## META-001 — RESOLVED — 2026-05-19T12:06:00Z
+fault: scene-map frontmatter spec in facet.schema.md required source field naming tensometer
+scope: line
+change: resolves via STRUCT-002 — scene-map section now describes emission from substance_delta; frontmatter source field described in schema rewrite (STRUCT-003) correctly reflects actual derivation inputs
+criteria met: yes — resolves with STRUCT-002 + STRUCT-003
+
+## STRUCT-003 — RESOLVED — 2026-05-19T12:10:00Z
+fault: schemas/scene-map.schema.md entire document used tensometer as scene-labelling authority; fusion-eligible-runs defined in terms of tensometer scalars; override path pointed to tensometer
+scope: episode (full schema rewrite)
+change: full rewrite of schemas/scene-map.schema.md — authoring agent changed to /and-write Phase 7; source changed to substance_delta.axis_moves.magnitude + dramatic_shape; rhythm-shape derivation rules rewritten in terms of magnitudes (flat-low if max ≤ 0.05; rising if ascending; resolving if descending; etc.); peak-bones definition changed to 75th-percentile OR magnitude ≥ 0.15; fusion-eligible-runs redefined as contiguous runs in flat-low/resolving zones with no cost-ledger-anchor citations; override path points to showrunner memory / re-run /and-write; pressure-signal translation table added; frontmatter source field updated; Phase 4d validation (not derivation) described
+criteria met: yes
+
+## CONTRA-002 — RESOLVED — 2026-05-19T12:10:00Z
+fault: schemas/facet.schema.md said scene-map auto-derived at Phase 4c; command body Phase 4d said /and-write Phase 7 emits and Phase 4d validates — direct contradiction
+scope: line
+change: resolves via STRUCT-002 — schema now matches command body (emission by /and-write Phase 7, validation at Phase 4d)
+criteria met: yes
+
+## CONTRA-003 — RESOLVED — 2026-05-19T12:10:00Z
+fault: schemas/scene-map.schema.md override path said to edit tensometer/loc-state/NI source and re-run Phase 4c — completely wrong under overhaul
+scope: line
+change: resolves via STRUCT-003 — schema rewrite includes corrected override path (revise showrunner memory substance contract or re-run /and-write; no direct edits to scene-map)
+criteria met: yes
+
+## STRUCT-008 — RESOLVED — 2026-05-19T12:25:00Z
+fault: rubric-memory-flags.md told authors to load tensometer file; tensometer language throughout (quiet-beat test, inverted tens-density, curve-shape, cross-facet contract, calibration anchors, author notes)
+scope: episode (multiple targeted line-level changes throughout the rubric)
+change: (1) preamble: "scene-map facet file" replaces "tensometer file"; added paragraph naming substance_delta as pressure-signal source surfaced through scene-map. (2) Quiet-beat anchor ACCEPT: rhythm-shape flat-low/resolving replaces tens=1; peak-bones replaces tens=3. (3) Quiet-beat cross-axis test: scene-map consultation replaces tensometer lookup. (4) Curve-shape episode-level: "inverted pressure-signal alignment" + scene-map fields replace tens-density language. (5) Scene-level shape: "scene-map @<start>-@<end> ranges" replaces tensometer scene-frame. (6) Cross-facet tensometer section: replaced with scene-map section naming rhythm-shape + peak-bones. (7) AP-6: "peak-bone fire" replaces "tens=3 fire". (8) All 6 calibration anchors: tens labels replaced with scene-map rhythm-shape / peak-bones labels. (9) Author notes: scene-map file replaces tensometer file in load list. (10) Reviewer notes: "pressure-signal-distribution" replaces "tens-distribution". (11) Cross-author dependencies: "scene-map" replaces "tensometer". (12) What-memory-flags-does-not-condition: "scene-map (forward)" replaces "Tensometer (forward)". (13) Per-scene-cap: scene-map ranges replace tensometer-derived structural marks.
+criteria met: yes — all tensometer references replaced with substance-delta equivalents; DEDUP-001 and DEDUP-002 covered by this rubric translation
+
+## DEDUP-001 — RESOLVED — 2026-05-19T12:25:00Z
+fault: pressure-signal concept split across tensometer (rubrics) and substance_delta/scene-map (command body); no bridge
+scope: line
+change: rubric-memory-flags.md updated (STRUCT-008); rubric-sensory.md and rubric-state-updates.md updated (STRUCT-009, STRUCT-010); scene-map schema rewritten (STRUCT-003). Single authoritative translation now in scene-map schema (rhythm-shape + peak-bones fields as canonical pressure-signal read surface); rubrics cite scene-map. Option (c) from DEDUP-001 criteria.
+criteria met: yes — resolves with STRUCT-008, STRUCT-009, STRUCT-010, STRUCT-003
+
+## DEDUP-002 — RESOLVED — 2026-05-19T12:25:00Z
+fault: quiet-beat definition in rubric used tens=1/trailing-tens=2; scene-map schema had rhythm-shape encoding same concept; unconnected
+scope: line
+change: resolves with STRUCT-008 — rubric-memory-flags.md now defines quiet-beat as "rhythm-shape: flat-low OR rhythm-shape: resolving per scene-map"; bridge to scene-map made explicit
+criteria met: yes
+
+## STRUCT-009 — RESOLVED — 2026-05-19T12:35:00Z
+fault: rubric-sensory.md told authors to load tensometer file; calibration anchors cited tens values; cross-facet contract named tensometer; AP-10 named tensometer
+scope: line (multiple targeted changes throughout)
+change: (1) preamble: scene-map file replaces tensometer file. (2) AP-10: "Pressure-signal gating misread" replaces "Tens-gating misread"; scene-map fields cited. (3) Curve-shape episode-level: "Pressure-signal correlation observation" replaces "Tens-correlation observation"; scene-map fields cited. (4) Scene-level shape: scene-map ranges replace tensometer scene-frame. (5) All 4 calibration anchors: tens=3/2/1 labels replaced with scene-map rhythm-shape/peak-bones labels. (6) Cross-facet contract: scene-map section replaces tensometer section. (7) Author notes: scene-map file replaces tensometer file. (8) What-sensory-flags-does-not-condition: "Scene-map (forward)" replaces "Tensometer (forward)". (9) Cross-author dependencies: "scene-map correlation" replaces "tensometer correlation". (10) Not-loc-state: tens=1 language replaced with flat-low. (11) AP-12: peak-bones-class language replaces high-tens language.
+criteria met: yes
+
+## STRUCT-010 — RESOLVED — 2026-05-19T12:50:00Z
+fault: rubric-state-updates.md depended on tensometer file; @64-class/@39-class beat references; cross-facet contract named tensometer
+scope: line (multiple targeted changes throughout)
+change: (1) preamble: "scene-map facet file" replaces tensometer; added paragraph on substance_delta as pressure-signal. (2) Reality ACCEPT: "peak-bones-class beats" replaces "tensometer @64-class beats". (3) Reality REJECT held-against-turn: "approach-to-peak class" with scene-map zone description replaces "@39 class". (4) Cross-axis test: scene-map consultation replaces tensometer lookup; peak-bones-class / held-against-turn descriptions revised. (5) AP-1: "scene-map pressure-signal" replaces "tensometer". (6) AP-3: "approach-to-peak bone" replaces "@39-class beat". (7) Curve-shape episode-level: "scene-map pressure-signal" replaces "tensometer transitions and peaks"; rhythm-shape zones replace tens-zone language. (8) Scene-level: "peak-bones-class beat" replaces "tens=3 peak-rupture"; flat-low replaces tens=1. (9) Cross-facet kickback: "scene-map shows peak-bones-class cluster" replaces "tensometer fires 3-cluster". (10) Cross-facet contract tensometer section: replaced with scene-map section. (11) What-state-updates-does-not-condition: "Scene-map fields" replaces "Tensometer ratings". (12) Calibration anchors @39 and @64: held-against-turn / peak-bones-class language replaces tensometer references. (13) Author notes: scene-map file replaces tensometer in load lists. (14) AP-9: flat-low / peak-bones-class language replaces tens language. (15) What-state-updates-is-not: "scene-map pressure-signal" replaces "tensometer"; "body-charge territory (substance_delta)" replaces "tensometer's territory".
+criteria met: yes
+
+## STRUCT-011 — RESOLVED — 2026-05-19T12:55:00Z
+fault: rubric-narrator-interest.md had tensometer references (earning axis triggers, curve-shape, author notes, back-contract) — auditor found as SIGNAL; dispatch requires verify + translate if found
+scope: line (multiple targeted changes; audit upgraded to HARD by dispatch criteria since refs exist)
+change: see STRUCT-011 edits below
+criteria met: yes (verified: refs exist; translated)
+
+## STRUCT-004 — RESOLVED — 2026-05-19T13:05:00Z
+fault: .claude/commands/and-facets.md Phase 5 read inputs listed tensometer as one of ten facet files; CURVE-SHAPE defined as checking tens-rubric curve-shape section
+scope: line
+change: (1) Phase 5 read inputs: "All ten facet files" → "All nine facet files"; tensometer removed from list. (2) CURVE-SHAPE class redefined: evaluates chapter's pressure-signal curve against dramatic_shape in showrunner memory + per-scene rhythm-shape from scene-map; SHAPE-OK/SHAPE-FAIL rules defined in terms of rhythm-shape coherence with dramatic_shape.
+criteria met: yes
+
+## STRUCT-005 — RESOLVED — 2026-05-19T13:06:00Z
+fault: Phase 5b per-facet aggregate table included tensometer row; would cause every overhaul run to appear to have incomplete gate
+scope: line
+change: removed tensometer row from per-facet aggregate table; nine facets listed
+criteria met: yes
+
+## STRUCT-006 — RESOLVED — 2026-05-19T13:07:00Z
+fault: Phase 6b master summary said "10 facet files authored (9 in parallel + tens upstream)"; internal count contradiction with Phase 1 which correctly said nine authors
+scope: line
+change: changed to "9 facet files authored"; dropped parenthetical. Also fixed scene-map line (was "source: tensometer-canonical | derived-fallback" → "source: /and-write Phase 7 emission from substance_delta"). Also fixed dispatch-shape from "ten facets" to "nine facets"; removed tensometer mention from undermanned-reviewer note.
+criteria met: yes
+
+## STRUCT-007 — RESOLVED (consequential) — 2026-05-19T13:07:00Z
+fault: Phase 4d validation referenced pre-overhaul schema/field definitions based on tensometer; schema was stale (STRUCT-003)
+scope: line
+change: resolves consequentially with STRUCT-003 — Phase 4d already describes validation against schemas/scene-map.schema.md; that schema is now correctly rewritten to substance-delta-derived fields; Phase 4d instruction references the corrected schema. No additional command-body edit needed beyond schema correction.
+criteria met: yes — resolves with STRUCT-003
+
+## DEDUP-003 — RESOLVED — 2026-05-19T13:08:00Z
+fault: CURVE-SHAPE class defined in command body, memory-flags rubric curve-shape section, and orchestrator-critic card all in tensometer terms; three surfaces, none translated
+scope: line
+change: CURVE-SHAPE class in .claude/commands/and-facets.md Phase 5 redefined in substance-delta/scene-map terms (STRUCT-004). Memory-flags rubric curve-shape section translated (STRUCT-008). Orchestrator-critic card B6 path fixed (CONTRA-004). Cross-surface duplication resolved.
+criteria met: yes
+
+## CONTRA-001 — RESOLVED — 2026-05-19T13:09:00Z
+fault: command body told authors to drop tens reads; rubrics told authors to load tensometer — direct instruction contradiction
+scope: line
+change: resolves via STRUCT-008, STRUCT-009, STRUCT-010 — rubrics now name scene-map file as the pressure-signal read surface; no separate command-body edit needed (command body Phase 1 already says "tens reads are dropped; substance_delta is the substitute")
+criteria met: yes
+
+## CONTRA-004 — RESOLVED — 2026-05-19T13:10:00Z
+fault: staff/orchestrator-critic/card.md B6 referenced .claude/commands/and-facets-audit.md — a pre-overhaul path that no longer exists; correct path is .claude/commands/and-facets.md
+scope: line
+change: replaced .claude/commands/and-facets-audit.md with .claude/commands/and-facets.md Phase 5 audit classes in B6 text
+criteria met: yes
+
+## SESSION-END — 2026-05-19T13:15:00Z — pipeline-adaptation-audit-fix
+findings-applied: 15 (STRUCT-001 through STRUCT-011, META-001, DEDUP-001 through DEDUP-003, CONTRA-001 through CONTRA-004)
+findings-skipped: 0 (all in-scope findings addressed; CON-001, CON-002, META-002, META-003, STRUCT-012 are out of scope per dispatch)
+exit: CLEAN
+
+## SESSION-END — 2026-05-19T14:21:00Z — tensometer-translation-cleanup
+findings-applied: 5 file targets — 9 edits to rubric-state-updates.md, 2 edits to rubric-memory-flags.md, 3 edits to rubric-narrator-interest.md, 5 edits to and-facets.md, 1 edit to orchestrator-critic/card.md
+findings-skipped: 0
+exit: CLEAN
+
+## orchestrator-critic — RESOLVED — 2026-05-19T14:20:00Z
+fault: staff/orchestrator-critic/card.md line 113 B6 bone-gate check referenced per-episode tensometer-<slug>e<NN>.md file
+scope: line
+change: replaced "Per-proposed-episode tensometer-<slug>e<NN>.md file exists with valid rubric-formatted content." with "Per-chapter scene-map-<book>-<chapter>.md file exists with valid scene-map-schema-formatted content (rhythm-shape + peak-bones populated; coverage validated against bones file)."
+criteria met: yes
+
+## and-facets — RESOLVED — 2026-05-19T14:18:00Z
+fault: .claude/commands/and-facets.md had 5 tensometer references: R2.1 "tens=2/3 anchors", R2.2 "tens-transitions and tens=3 peaks", FREQUENCY-BAND "tens 60-75/20-30/5-10" entry + Tens exemption paragraph, handoff "Tens is upstream-only" bullet, shared assets "tens rubric at rubric-tensometer.md"
+scope: line (5 targeted edits)
+change: (1) R2.1: "tens=2/3 anchors" → "peak-bones and rising-zone anchors". (2) R2.2: "tens-transitions and tens=3 peaks" → "rhythm-shape transitions and peak-bones". (3) FREQUENCY-BAND: removed "tens 60-75/20-30/5-10;" from the gate list AND removed the entire Tens exemption recognition (URI-034) paragraph. (4) handoff bullet: replaced "Tens is upstream-only..." with "Scene-map is upstream-only — emitted by /and-write Phase 7 from chapters[].scenes[].bones[].substance_delta.axis_moves.magnitude in showrunner memory; /and-facets Phase 4d validates only." (5) shared reviewer assets: dropped "tens rubric at design/shoot-v2/rubric-tensometer.md" from the list.
+criteria met: yes
+
+## ru-narrator-interest — RESOLVED — 2026-05-19T14:14:00Z
+fault: rubric-narrator-interest.md calibration anchors at lines 207/217/219 used tensometer=1 / tensometer=1 release zone labels
+scope: line (3 edits)
+change: (1) line 207 (@4 entry): "tensometer=1 ambient" → "flat-low zone (ambient)". (2) line 217 (@50 NONE): "tensometer=1, no transition" → "flat-low zone, no transition". (3) line 219 (@67 NONE): "the tens has just released to 1" → "the scene has just shifted to release-only"; "tensometer=1 release zone" → "release-only zone".
+criteria met: yes
+
+## ru-memory-flags — RESOLVED — 2026-05-19T14:12:00Z
+fault: rubric-memory-flags.md line 25 used tens=1/tens=2/tens=3 quiet-beat rule; line 210 used "tens=1 zones"
+scope: line (2 edits)
+change: (1) line 25: "concentrate in tens=1 beats and at the trailing edge of tens=2 beats. They are forbidden by default at tens=3" → "concentrate in bones with rhythm-shape: flat-low or rhythm-shape: resolving. They are forbidden by default in bones listed in the scene's peak-bones array"; "inverse of narrator-interest's tens-alignment — narrator-interest fires on transitions and peaks" → "inverse of narrator-interest's pressure-signal-alignment — narrator-interest fires on rising zones and peak-bones". (2) line 210: "tens=1 zones" → "flat-low and resolving zones".
+criteria met: yes
+
+## ru-state-updates — RESOLVED — 2026-05-19T14:10:00Z
+fault: multiple tensometer references in rubric-state-updates.md — @64/@39 class language, "lighter than tensometer's", consumer-side validator language, calibration anchor tens labels, ceiling defense "tensometer co-citation"
+scope: line (9 targeted edits)
+change: (1) line 20: tensometer's @64/@39 → peak-bones strong-expect / held-against-turn class description. (2) line 117: @63 approach annotation: "tensometer 2" → "rising zone". (3) line 153: "lighter than tensometer's or narrator-interest's" → "lighter than narrator-interest's". (4) line 181: "consumer-side validator for tensometer and narrator-interest" → "consumer-side validator for the scene-map pressure-signal surface and narrator-interest". (5-8) calibration anchor @24/@38/@39/@43/@48/@57 tens labels replaced with scene-map equivalents (peak-bones / rising rhythm-shape). (9) line 239: "tensometer co-citation expectation" → "peak-bones co-citation expectation".
+criteria met: yes
+
+## SESSION-START — 2026-05-19T14:00:00Z — tensometer-translation-cleanup
+dispatch: cleanup pass on translation misses across 5 files — rubric-state-updates.md, rubric-memory-flags.md, rubric-narrator-interest.md, and-facets.md, orchestrator-critic/card.md
+target: design/shoot-v2/rubric-state-updates.md + rubric-memory-flags.md + rubric-narrator-interest.md + .claude/commands/and-facets.md + staff/orchestrator-critic/card.md
+audit-report: n/a — user-supplied line-by-line cleanup dispatch
+findings-queued: ~18 targeted line edits across 5 files
+
 ## fault-002 — RESOLVED — 2026-05-18T12:42:00Z
 fault: both Aemond cards stated age: 10-11 at 122 AC (born 106 AC) — internally inconsistent and wrong per F&B canon; memory.md cast_roster also said "age 10-11"
 scope: line

@@ -110,11 +110,11 @@ B5. **Schema compliance.**
 - Body comment-clean per the proto-line schema.
 
 B6. **Bone-gate convergence (URI-026, 2026-05-10).**
-- Per-proposed-episode `tensometer-<slug>e<NN>.md` file exists with valid rubric-formatted content.
+- Per-chapter `scene-map-<book>-<chapter>.md` file exists with valid scene-map-schema-formatted content (rhythm-shape + peak-bones populated; coverage validated against bones file).
 - `season-<slug>-pass-S4-split-mechanic-{episode-slug}.md` per episode returns `MECHANIC-CLEAN` or all `MECHANIC-FAIL-{class}` findings are routed to bone-regen + cleared within inner iteration cap (2 per window).
 - Per-persona split-review files contain both `§ Audience taste verdict` and `§ Mechanic arithmetic verdict` sections with `OWNER:` tags.
 - No `tens-gate-residual-HARD` findings open at end-of-run. Any open ⇒ F7 (FAIL).
-- Shared-reviewer accounting: the mechanic-arithmetic auditor invoked at Step 2 cited the class definitions from `.claude/commands/and-facets-audit.md` (FREQUENCY-BAND / CURVE-SHAPE / AP-SCAN tens-subset). No /and-season-specific rubric reimplementation.
+- Shared-reviewer accounting: the mechanic-arithmetic auditor invoked at Step 2 cited the class definitions from `.claude/commands/and-facets.md` Phase 5 audit classes (FREQUENCY-BAND / CURVE-SHAPE / AP-SCAN). No /and-season-specific rubric reimplementation.
 
 B7. **F-R2-* counts from `/and-facets` (URI-026 follow-on, Plan A A2, 2026-05-10).**
 - If `active-project/theater/facets/.r2-decisions.md` exists, read its top-of-file `f-r2-counts: {f-r2-1: N, f-r2-2: N, f-r2-3: N, f-r2-4: N}` frontmatter (schema: `schemas/audit-report.schema.md` §"R2 decision-shard frontmatter").

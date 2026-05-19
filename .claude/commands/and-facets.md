@@ -187,9 +187,9 @@ Set status `protolined` → `faceted-r1` in showrunner memory.
 
 ### R2 judges (five in the parallel block)
 
-**R2.1 narrator-interest (POV impersonator, judge mode)** — POV stack + behavior cards + nine R1 facet files + cite-index + `rubric-narrator-interest.md`. Override impersonator: facet-judge mode. Decide per existing NI entry: KEEP / DELETE-<reason>. Adds: tens=2/3 anchors with memory/feeling but no NI, or lonely-entry adjacency where NI would license co-location. Add-cap 5. Out: mutated `interest-narrator.md` + `_inflight-r2/proto-lines-narrator.md` + decision-shard `staff/interest-narrator/r2-decision-shard.md`.
+**R2.1 narrator-interest (POV impersonator, judge mode)** — POV stack + behavior cards + nine R1 facet files + cite-index + `rubric-narrator-interest.md`. Override impersonator: facet-judge mode. Decide per existing NI entry: KEEP / DELETE-<reason>. Adds: peak-bones and rising-zone anchors with memory/feeling but no NI, or lonely-entry adjacency where NI would license co-location. Add-cap 5. Out: mutated `interest-narrator.md` + `_inflight-r2/proto-lines-narrator.md` + decision-shard `staff/interest-narrator/r2-decision-shard.md`.
 
-**R2.2 memory (POV impersonator, fresh fork)** — POV stack + nine R1 facet files + cite-index + warehouse cond-* cards (monuments) + `rubric-memory.md`. Decide per existing memory: KEEP (monument-grade callback, NI-spine co-cited, target reference resolvable) / DELETE (functional callback, NI-spine missing without defense, unresolvable target reference). Adds: tens-transitions and tens=3 peaks without memory; NI-present + memory-absent. Hard fences: no Earth-Bet proper nouns. Add-cap 5. Out: mutated `memory.md` + `_inflight-r2/proto-lines-mem.md` + decision-shard `staff/memory/r2-decision-shard.md`.
+**R2.2 memory (POV impersonator, fresh fork)** — POV stack + nine R1 facet files + cite-index + warehouse cond-* cards (monuments) + `rubric-memory.md`. Decide per existing memory: KEEP (monument-grade callback, NI-spine co-cited, target reference resolvable) / DELETE (functional callback, NI-spine missing without defense, unresolvable target reference). Adds: rhythm-shape transitions and peak-bones without memory; NI-present + memory-absent. Hard fences: no Earth-Bet proper nouns. Add-cap 5. Out: mutated `memory.md` + `_inflight-r2/proto-lines-mem.md` + decision-shard `staff/memory/r2-decision-shard.md`.
 
 **R2.3 feeling (per-character impersonators ×N, judge mode)** — for each `cast:` slug, one impersonator dispatch in the same parallel block (POV and non-POV both eligible). Character stack + nine R1 facet files + cite-index + `rubric-feeling.md`. Decide per existing feeling entry for that character: KEEP (somatic-tell card-matched, multi-justification ≥3 of 5, scene cap ≤1) / DELETE (duplicates POV NI register, forbidden vocabulary, multi-justification fail, cap breach). Adds: memory or NI co-cite where somatic register would land. Add-cap 5 per character. Out: mutated `feeling-<slug>.md` slice + `_inflight-r2/proto-lines-feel-<slug>.md` + decision-shard `staff/feeling/r2-decision-shard-<slug>.md`.
 
@@ -263,8 +263,8 @@ Dispatch **auditor** (fork) with the full graph:
 
 **Read inputs:**
 - Proto-lines: `active-project/theater/proto-lines/<slug>.md` (canonical, post-R2).
-- All ten facet files at `active-project/theater/facets/` (`tensometer`, `location-state`, `interest-narrator`, `sensory`, `state-updates`, `memory`, `feeling`, `metaphor`, `vibes`, `exposition-<slug>`).
-- Scene-map: `active-project/theater/facets/scene-map-<slug>.md` (derived structural facet, emitted at Phase 4d).
+- All nine facet files at `active-project/theater/facets/` (`location-state`, `interest-narrator`, `sensory`, `state-updates`, `memory`, `feeling`, `metaphor`, `vibes`, `exposition-<slug>`).
+- Scene-map: `active-project/theater/facets/scene-map-<book>-<chapter>.md` (upstream-emitted by `/and-write` Phase 7; validated at Phase 4d).
 - All per-character dialogue files at `active-project/theater/dialogue/<character-slug>.md` (one per speaking character).
 - All per-character dialogue drafts sidecars at `active-project/staff/dialogue-writer/<character-slug>.drafts.md` (for CONSTRAINT § citation-completeness).
 - Cite-index: `_cite-index.md` (post-R2).
@@ -281,9 +281,9 @@ Dispatch **auditor** (fork) with the full graph:
 ### Audit classes (eleven; with exposition-specific rules layered into FREQUENCY-BAND, CONSTRAINT, and AP-SCAN)
 
 1. **STRUCTURAL** — schema/format/integrity (headers, line shape, ID monotonicity, anchor resolution, bidirectional citation, proto-body integrity). **Dialogue-specific:** every dialogue entry's `@<proto-line-id>` resolves; every `<character-slug>:<id>` citation in proto-lines resolves to an existing dialogue entry; entry-ID monotonicity per-character (`schemas/dialogue.schema.md` § Entry fields); behavior-card slug in dialogue file header matches a real card.
-2. **FREQUENCY-BAND** — per-rubric quantitative gates (tens 60-75/20-30/5-10; sensory 3-6%; memory 5-12%; feeling 2-5%/char; metaphor 0-3%; NI 15-25%; **exposition 1-5% per episode, episode-open ≤4 entries, first-mention ≤12 entries, scene-open-orient ≤1 per scene**; **dialogue sparsity unconstrained — content-driven, not flag-driven — but per-anchor cap ≤3 utterances and ≤1 utterance per speaker per anchor unless deliberate single-turn split documented in drafts sidecar**). **Tens exemption recognition (URI-034, 2026-05-11):** when a tens file's footer declares a frequency-band exemption per `design/shoot-v2/rubric-tensometer.md` §"Frequency-band exemptions" with the named exemption slug + quoted positive-criteria match, the auditor re-checks the criteria against the file/episode state. If every positive criterion is satisfied with quoted evidence, the breach is recorded as `exempt-<slug>` and does NOT count as a HARD finding. A claimed exemption with unmet or unquoted criteria is upheld as HARD with `exemption-claim-malformed-{criterion-failed}` as the rationale. "Opening-window low-charge" alone is not an exemption — it must cite the rubric's Exemption 1 with criteria (a) through (d) quoted.
+2. **FREQUENCY-BAND** — per-rubric quantitative gates (sensory 3-6%; memory 5-12%; feeling 2-5%/char; metaphor 0-3%; NI 15-25%; **exposition 1-5% per episode, episode-open ≤4 entries, first-mention ≤12 entries, scene-open-orient ≤1 per scene**; **dialogue sparsity unconstrained — content-driven, not flag-driven — but per-anchor cap ≤3 utterances and ≤1 utterance per speaker per anchor unless deliberate single-turn split documented in drafts sidecar**).
 3. **METADATA-INCONSISTENCY** — file headers / round-notes / r1_to_r2 summary lines that contradict actual content.
-4. **CURVE-SHAPE** — tens-rubric § "Curve-shape rubric (episode-level)": scene-level peaks; rise-to-peak adjacency; release; no flatlining 30+; episode-level act structure; climax beat exists and is dense.
+4. **CURVE-SHAPE** — evaluates the chapter's pressure-signal curve against the `dramatic_shape` declaration in showrunner memory + per-scene `rhythm-shape` from the scene-map. SHAPE-OK when scene-level `rhythm-shape` values are coherent with the chapter-level `dramatic_shape` (e.g., a `hinge` chapter shows scene-level `flat-low` zones building toward a `peak-bones` hinge beat with `resolving` afterward; a `rising` chapter shows ascending `rhythm-shape` values across scenes; a `denouement` chapter shows predominantly `resolving` and `release-only` scenes). SHAPE-FAIL when the scene-map's rhythm-shape sequence contradicts the declared dramatic_shape (e.g., a `hinge` chapter with no `peak-bones`-class bone anywhere, or a `rising` chapter that begins with `resolving` scenes).
 5. **CONTRADICTION** — two facet entries set incompatible state on the same anchor; both flagged.
 6. **DEDUP** — cross-facet-same-anchor / within-facet-different-anchor / within-facet-same-anchor. **Dialogue-specific:** utterance content rendered by NI / feeling / memory at the same anchor (the speaker says aloud what another facet already shows — one yields; default is the lens facet yields to dialogue when the speaker uses the same phrasing the lens would, since dialogue is verbatim render and lens is render-as signal).
 7. **SUPERFLUOUS** — lonely entries that don't survive rubric scrutiny. Convention: tens rating=1 and off-anchor vibes are never superfluous.
@@ -380,7 +380,7 @@ Reviewer membership is recorded in the verdict file. New specialist personas aut
 
 ### Dispatch shape
 
-One parallel Agent block per facet, all facets fired concurrently. For ten facets + dialogue-per-character at three reviewers each (specialists or fallback), that is up to (10 + N speaking characters) × 3 concurrent audience dispatches in a single message. (Two of the ten — `tensometer` and `vibes` — may run with a single reviewer dispatch if the audience cards do not yet hold facet-attack rubrics for them; verdict notes which facets ran undermanned. Dialogue per-character runs with full 3-reviewer dispatch using the active-project audience until specialist dialogue personas are authored — see open question in `design/shoot-v2/dialogue-tuning-v2.md`.)
+One parallel Agent block per facet, all facets fired concurrently. For nine facets + dialogue-per-character at three reviewers each (specialists or fallback), that is up to (9 + N speaking characters) × 3 concurrent audience dispatches in a single message. (`vibes` may run with a single reviewer dispatch if the audience cards do not yet hold facet-attack rubrics for it; verdict notes which facets ran undermanned. Dialogue per-character runs with full 3-reviewer dispatch using the active-project audience until specialist dialogue personas are authored — see open question in `design/shoot-v2/dialogue-tuning-v2.md`.)
 
 ### Dialogue reviewer protocol (V2 + V3, per `staff/dialogue-writer/rubric-dialogue.md`)
 
@@ -449,7 +449,7 @@ Per facet:
 **Strict-aggregation enforcement (URI-AUDIENCE-AGGREGATION-RULE, 2026-05-11).** Aggregation is performed by the orchestrator from the per-reviewer verdict files on disk. The orchestrator does NOT delegate aggregation to an audience-subagent. The 2-of-3 majority rule that applies to line and plan review (`.claude/agents/audience.md`) does NOT apply here — a single dissenting persona fails the facet. An audience-subagent that returns a single aggregated verdict instead of writing per-reviewer files has drifted; re-dispatch with explicit "write one verdict file per persona under `active-project/staff/audience/<persona-slug>/`; do not aggregate" instructions.
 
 Across all facets:
-- **all 10 facets + all per-character dialogue files pass** → Phase 5b passes. Proceed to Phase 6.
+- **all 9 facets + all per-character dialogue files pass** → Phase 5b passes. Proceed to Phase 6.
 - **any facet or any character dialogue fails** → enter remediation cycle.
 
 ### Remediation cycle
@@ -501,7 +501,7 @@ A `validated` verdict requires at least one shared finding across the two paths.
 
 ### 6a. Persist
 
-**Precondition:** Phase 5 = 0 HARD AND Phase 5b = ACCEPT (3-of-3 per facet, all ten facets including exposition, AND 3-of-3 per character dialogue file) AND dialogue-coverage gate clean (URI-DIALOGUE-COVERAGE-GATE — for every speaker in Phase 0's `speakers` inventory, `theater/dialogue/<speaker-slug>.md` exists with ≥1 entry, AND every proto-line ID in Phase 0's `speech_bones` carries ≥1 `<character-slug>:<id>` citation on the canonical proto-lines) AND scene-map coverage gate clean (URI-SCENE-WINDOW — `theater/facets/scene-map-<slug>.md` exists, every bone in proto-lines lands in exactly one scene, no dangling anchors, no duplicate labels). If any of the four gates is unclean, do not persist — return to the appropriate phase. The dialogue-coverage and scene-map gates are non-bypassable: a speech episode that finalizes without dialogue is the FAULT-DIALOGUE-MISSING failure mode; an episode without a clean scene-map breaks scene-window stitcher dispatch. Both must be remediated before `audited-r1` is set.
+**Precondition:** Phase 5 = 0 HARD AND Phase 5b = ACCEPT (3-of-3 per facet, all nine facets including exposition, AND 3-of-3 per character dialogue file) AND dialogue-coverage gate clean (URI-DIALOGUE-COVERAGE-GATE — for every speaker in Phase 0's `speakers` inventory, `theater/dialogue/<speaker-slug>.md` exists with ≥1 entry, AND every proto-line ID in Phase 0's `speech_bones` carries ≥1 `<character-slug>:<id>` citation on the canonical proto-lines) AND scene-map coverage gate clean (URI-SCENE-WINDOW — `theater/facets/scene-map-<book>-<chapter>.md` exists, every bone in the bones file lands in exactly one scene, no dangling anchors, no duplicate labels). If any of the four gates is unclean, do not persist — return to the appropriate phase. The dialogue-coverage and scene-map gates are non-bypassable: a speech chapter that finalizes without dialogue is the FAULT-DIALOGUE-MISSING failure mode; a chapter without a clean scene-map breaks scene-window stitcher dispatch. Both must be remediated before `audited-r1` is set.
 
 1. Confirm `facets-final-audit.md` (final-cycle Phase 5 report) and `facets-audience-gate-r<N>.md` (final-cycle Phase 5b report) both written.
 1a. Re-verify dialogue-coverage from Phase 0 inventory. For each `speakers` slug, stat `active-project/theater/dialogue/<slug>.md` and confirm non-empty body (≥1 entry past the frontmatter). For each `speech_bones` proto-line ID, grep the canonical proto-lines for at least one `[<character-slug>:<id>]` citation token on that line. Any miss → re-enter Phase 5 with the bare-bone/missing-file list dispatched to fixer; cycle the gate until clean. Cap-burn here flips orchestrator-critic to NOT-SUCCESSFUL.
@@ -527,7 +527,7 @@ A `validated` verdict requires at least one shared finding across the two paths.
 ========================================================
 
 Phase 1 — R1 fanout:
-  10 facet files authored (9 in parallel + tens upstream) + <count> per-character dialogue files
+  9 facet files authored + <count> per-character dialogue files
   <count> total facet entries + <count> dialogue utterances; <count>/<count> protolines decorated
   Exposition: <count> entries (episode-open=<n>, first-mention=<n>, scene-open-orient=<n>)
   Dialogue: <count> entries across <count> characters / <count> behavior cards
@@ -553,7 +553,7 @@ Phase 4 — R2 fanin (consolidate + merge):
   Arbiter interventions: <count>; discipline-fails: <count>
   Citation accrual: R1 <count> → R2 <count>
   Cite-index rebuilt
-  Scene-map emitted: <N> scenes covering <N> bones (source: <tensometer-canonical | derived-fallback>)
+  Scene-map validated: <N> scenes covering <N> bones (source: /and-write Phase 7 emission from substance_delta)
 
 Phase 5 — Audit (mechanical):
   Mode: flag-only
@@ -566,7 +566,6 @@ Phase 5 — Audit (mechanical):
 Phase 5b — Audience-gate (adversarial):
   Cycles: <count> / 3
   Per-facet aggregate (final cycle):
-    tensometer:        <accept | revise | fail>
     location-state:    <accept | revise | fail>
     interest-narrator: <accept | revise | fail>
     sensory:           <accept | revise | fail>
@@ -620,9 +619,9 @@ The critic does NOT mutate facets or cancel the run. It produces the standard; o
 
 ## Notes
 
-- **Tens is upstream-only.** Per URI-026 (2026-05-10), `/and-season` Phase 4 Step 1.5 authors tens as the bone-gate; `/and-season` Phase 7 Step 4 finalizes per-episode tens files. /and-facets Phase 0 stages the file as `tensometer.md`. There is no in-pipeline tens authoring.
+- **Scene-map is upstream-only** — emitted by `/and-write` Phase 7 from `chapters[].scenes[].bones[].substance_delta.axis_moves.magnitude` in showrunner memory; `/and-facets` Phase 4d validates only. There is no in-pipeline scene-map authoring.
 - **R3 retired.** The relaxation pass was default-skipped in the prior chain (s01e01 produced a fixed point under R2). The fanout-fanin-fanout-fanin-audit shape replaces the four sub-commands; R3's behavior — "repeat the judge round" — is recoverable as a re-run of the command with `faceted-r2` already on disk, but is not the default flow.
 - **Audience interest-flags are skipped.** When tuned, it joins the R1 parallel block (one dispatch per persona).
 - **Vibe-cloud write-back is deferred.** Post-author propagation of vibe deltas to actor/loc/studio files happens in and-wrap or a follow-on showrunner dispatch.
 - **Cross-facet deletion authority** belongs to the audit only. Once auditor is tuned for delete-authority, HARD findings execute as deletes with cascade. Until then, audit is flag-only and remediation routes back to authors as a separate work cycle (re-run /and-facets after fixes land, or fire targeted author dispatches).
-- **Shared reviewer assets** (audience persona `Threshold Discipline` + `Season-Scope Adversarial` body sections; auditor class library — `CURVE-SHAPE` / `AP-SCAN` / `FREQUENCY-BAND` definitions; tens rubric at `design/shoot-v2/rubric-tensometer.md`) are authored once and consumed from both `/and-season` and `/and-facets`. Patterns the audience flags at `/and-season` bone-gate graduate into AP-SCAN entries via the shared auditor's TASTE-FLAG → AP-SCAN promotion path.
+- **Shared reviewer assets** (audience persona `Threshold Discipline` + `Season-Scope Adversarial` body sections; auditor class library — `CURVE-SHAPE` / `AP-SCAN` / `FREQUENCY-BAND` definitions) are authored once and consumed from both `/and-season` and `/and-facets`. Patterns the audience flags at `/and-season` bone-gate graduate into AP-SCAN entries via the shared auditor's TASTE-FLAG → AP-SCAN promotion path.
