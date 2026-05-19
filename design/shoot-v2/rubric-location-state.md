@@ -49,6 +49,7 @@ ACCEPT signatures:
 
 REJECT signatures:
 - Anchor is a stillness/hold beat (`X holds Y configuration`, `X stays`, `the cart sits`) — these are location-card content or tensometer territory, not loc-state.
+- **Anchor is a dexterity-stillness verb** (`threads`, `sews`, `knots`, `stitches`, `pours`, `weighs`, `mends`, `splices`, `picks`, `wipes`, `folds`) — hand-work done in-place. The character is not moving *through* the location; they are working *in it*. Dexterity verbs do not license a loc-state fire unless the fire is first-beat-in-new-location or carries a valid `continuity-from <prior-loc-state-id>:` token under the transition-run continuity license. (URI-FACETS-CYCLE-1, 2026-05-19 — promoted from audience-gate cycle-1 attack on b01c01 loc-state:3 @11 "threads the needle": both dark-fantasy-reader and worm-canon-pedant independently flagged the anchor-verb-licensing seam the mechanical scan could not see.)
 - Anchor is a pure dialogue beat (`X speaks to Y`) and no positioning is in question — speaking does not need environment unless the speaking *is* the move (e.g. shouted across a yard, whispered behind a hand).
 - Anchor is interiority pushed into physical SVO (perception-feed beats per Phase 0 note #1) — those cite narrator/feel, not loc-state.
 - Anchor is environmental persistence (Phase 0 note #10) — persistence is location-card content; loc-state fires on change, not on hold.

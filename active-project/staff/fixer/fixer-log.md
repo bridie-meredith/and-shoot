@@ -406,3 +406,91 @@ fault: both Aemond cards stated age: 10-11 at 122 AC (born 106 AC) — internall
 scope: line
 change: updated age field and all age-register mentions in (1) active-project/actors/aemond-targaryen-122ac/card.md, (2) cards/personas/aemond-targaryen-122ac.card.md to "12 at 122 AC (born 110 AC; claimed Vhagar at age 10 at Driftmark in 120 AC)"; updated memory.md cast_roster role line; updated cast-provisioning-log.md card action note and roster splice section; updated cast-selection.md slot 3 description and final roster table. Pre-fix backups written at active-project/actors/aemond-targaryen-122ac/card.pre-2026-05-18T124000Z.md and cards/personas/aemond-targaryen-122ac.pre-2026-05-18T124000Z.card.md.
 criteria met: yes — born year (110 AC) and age (12) now internally consistent; F&B canon honored; cast_roster memory.md entry updated; vibe seeds updated (claimed at age 10; "nine years" corrected to "nine years" to Dance per revised age); structural function unchanged
+
+## SESSION-START — 2026-05-19T16:00:00Z — facets-b01c01-cycle2-remediation
+dispatch: cycle-2 fixer for /and-facets b01c01 — resolve 9 facet failures from audience-gate cycle-1 (facets-audience-gate-r1.md); minimum-change edits + sub-agent dispatches per per-facet routing
+target: active-project/theater/facets/{location-state,feeling,interest-narrator,sensory,memory,state-updates}.md + active-project/theater/facets/exposition-b01-c01.md + active-project/theater/dialogue/{coll-net-mender-flea-bottom,wren-stitch-maker-flea-bottom-ward}.md + active-project/staff/dialogue-writer/{coll-net-mender-flea-bottom,wren-stitch-maker-flea-bottom-ward}.drafts.md
+audit-report: active-project/staff/auditor/facets-audience-gate-r1.md
+findings-queued: 9 facet failures (location-state, interest-narrator, sensory, state-updates, memory, feeling, exposition, dialogue-coll, dialogue-wren)
+
+## loc-state — RESOLVED — 2026-05-19T16:05:00Z
+fault: loc-state:3 @11 fails necessity-axis (dexterity-stillness anchor verb "threads the needle"); loc-state:4 @13 is persistence-as-state (Anti-pattern 3); 2-of-3 reviewer dissent on both entries
+scope: line
+change: cut loc-state:3 @11 and loc-state:4 @13 from location-state.md; renumbered surviving entries (old 5→3, old 6→4); cut entries replaced with comment lines documenting the cuts and the dependency collapse (sensory @13 ADD is not required because loc-state:4 no longer names a thermal event at @13)
+criteria met: yes — necessity-axis fail on loc-state:3 resolved by cut; persistence-as-state Anti-pattern 3 on loc-state:4 resolved by cut; dependency declared (sensory thermal-gap at @13 collapses)
+
+## feeling — RESOLVED — 2026-05-19T16:07:00Z
+fault: feel:1 @23 second clause "the turn comes one beat late" exits body-register (temporal-latency observation with subject "the turn" — not a body part); one-clause form discipline violation per rubric URI-FACETS-CYCLE-1; 2-of-3 dissent (dark-fantasy-reader + worm-canon-pedant)
+scope: line
+change: cut second clause from feel:1 @23; entry is now "her hand stills at her side | expressed: no"; comment line documents the cut; no other entry touched
+criteria met: yes — one-clause form restored; body-register maintained; somatic-tell (hand stilling) preserved intact as the somatic action the chapter hinge requires
+
+## dialogue-wren — PARTIALLY RESOLVED — 2026-05-19T16:12:00Z
+fault: (a) sidecar facet-license cites feel-wren:@22 but feeling file places feel:2 at @21; (b) state-wren:@22 specificity gap (dark-fantasy + worm-canon-pedant: arrival-timing or observation-state not specified)
+scope: line (a) + dispatch (b)
+change: (a) corrected sidecar citation from `feel-wren-stitch-maker-flea-bottom-ward:@22` to `feel-wren-stitch-maker-flea-bottom-ward:@21` with explanatory note; the @21 approach-tell (eyes tracking before head turns) is the correct license for the "observation-before-action" structural claim; no ADD of a new feeling entry at @22 needed — @21 entry is sufficient. (b) state-wren:@22 specificity gap flagged for impersonator-wren dispatch below
+criteria met: (a) yes — citation-resolution gap closed; (b) pending impersonator-wren dispatch
+
+## sensory — RESOLVED — 2026-05-19T16:20:00Z
+fault: (a) thermal silent-gap at @13 (loc-state names thermal event, sensory silent); (b) unanchored old-states at sensory:1 @1 (smell) and sensory:2 @9 (sound) — old-state tokens have no explicit loc-state lineage
+scope: line
+change: (a) DEPENDENCY RESOLVED — loc-state:4 @13 cut in loc-state fix; thermal event no longer exists in the facet graph; thermal ADD at @13 is not required; comment line added to sensory.md documenting the collapse. (b) Added sensory-baseline studio notes to location-state.md adjacent to entry 1 (@1), documenting smell baseline (tallow-smoke-and-rendered-fat) and sound baseline (corner-room-interior-quiet) with sources (loc-flea-bottom card §Sensory palette + oc-corner-room); updated sensory:1 and sensory:2 old-state entries with old-state-source tokens referencing the documented baselines
+criteria met: yes — thermal gap: no longer exists (dependency collapsed); old-state anchoring: baselines documented in loc-state file, sensory entries updated to reference documented sources; rubric's "explicit loc-state baseline" requirement met by studio-note documentation
+
+## interest-narrator — RESOLVED — 2026-05-19T16:30:00Z
+fault: (a) narrator:2/4/6 use "X is what Y" inverted-predicate template — AP-10 cap ≤1/file; (b) file-level doubled-register failure — zero Westerosi-monument fires across 7 entries; 2-of-3 dissent (cape-fic + dark-fantasy)
+scope: bullet (a) + ADD (b)
+change: (a) narrator:2 @8 rewritten from "useful without controlling is what the threshold means today" to "the flagstones put themselves two meters into her before the discipline catches; the knowledge goes to ground at the seam where the rule says stop" (shows holding-cost; drops "X is what Y" chassis). narrator:4 @15 rewritten from "the cost of being legible is what she counts, not the patrol's count of her" to "the Watch column moves at the road-arc and she prices the column from the doorway, not from the column's tally" (reports one-number register; drops inverted-predicate). narrator:6 @24 KEPT as sole "X is what Y" instance (structurally load-bearing; worm-canon-pedant accepted). (b) ADD: narrator:5a @22 — Westerosi-monument clamp fire at Wren-adjacency window; foreknowledge-clamp construction (the child-ward who will not appear in the survival records; Taylor has read enough of the city's social physics to recognize the record-absence pattern without naming the event); no Earth-Bet proper nouns; in-world framing
+criteria met: yes — AP-10 template at 1/file (narrator:6 only); Westerosi-monument register now present (5a @22); doubled-register requirement met; file carries both Earth-Bet displacement (narrator:7 @23 via mem:2 rhyme) and Westerosi-monument clamp (narrator:5a @22)
+
+## state-updates — RESOLVED — 2026-05-19T16:45:00Z
+fault: entries 10/11/12/13/15/17 — 3-of-3 dissent on multiple axes: cape-fic (discipline-hold + passive-acquisition contradiction, social-integration too fast, vague new-value); dark-fantasy (social-integration too fast, acquisition-source gap); worm-canon-pedant (active-holding ambiguity, auto-initiating unmarked canon departure)
+scope: bullet (multiple targeted edits within state-updates.md)
+change: (10) added field-extension clarification: `active-holding` = attentional-allocation management, NOT suppression; passive data continues to arrive; cite-index back=N documented as interior-only. (11) FLAGGED and effectively cut: comment marks entry for removal; discipline-hold prevents passive data from entering canonical knowledge-state at @12; knowledge-map entry deferred to post-hold or subsequent chapter. (12) revised new-value from `patrol-pattern-read-passively` to `patrol-first-sighting-logged` (one pass = one sighting, not a pattern). (13) revised new-value from `recurring-needle-handler-coll-block` to `needle-handler-at-coll-block-day-one-complete` (no recurrence signal from Coll in bones; first session complete only). (15) added field-extension note citing `cond-khepri-residue-122ac` as the mechanism for `auto-initiating` (AU departure from baseline canon; now explicitly marked). (17) CUT: `ward-layer-deeper` is a direction not a state value; no bones-acquisition anchor at @26; fires against the prohibition-catch at @24; deferred to subsequent chapter.
+criteria met: yes — discipline-hold/passive-acquisition contradiction resolved (entry 11 cut, entry 10 clarified); social-integration timing corrected (entry 13); patrol-cadence overclaim corrected (entry 12); auto-initiating marked with canon-departure citation (entry 15); vague-value entry cut (entry 17)
+
+## memory — RESOLVED (margit referral PENDING) — 2026-05-19T16:55:00Z
+fault: (a) mem:1 @15 quiet-beat instrument fired at chapter's institutional-pressure peak (8 co-fires); (b) mem:2 @23 target-reference ships on free-text gloss with no monument card; (c) file-level single-register failure (both fires Earth-Bet; zero Westerosi-monument clamp)
+scope: bullet (relocate) + ADD (Westerosi-monument) + margit routing (mem:2 monument card)
+change: (a) relocated mem:1 from @15 to @16 — aftermath of Watch pass; scene-map confirms @16 is quiet-beat eligible (scene-B flat-low, no peak-bones; @16 is post-Watch-clear, nets-work resuming); echo arrives in working-pause, not while column is at threshold. (b) mem:2 @23 updated with margit-referral-pending note; candidate monument card named (`monument-override-architecture-prohibition`, referencing cond-override-architecture-residue-122ac + cond-no-parahuman-infrastructure); current target-reference points to `cond-override-architecture-residue-122ac` as nearest existing card pending margit confirmation; margit referral action needed: see remediation report. (c) ADDed mem:3 @17 — Westerosi-monument clamp fire (Watch-register as Conquest-charter institutional record that will have a terminal entry; foreknowledge-window clamp on the interval between last formation report and the silence; no Earth-Bet proper noun; displaced-child-adjacent because the same administrative apparatus that records Taylor's presence records nothing from the Dance-era collapse; construction holds both Earth-Bet displacement rhyme and Westerosi-monument foreknowledge)
+criteria met: (a) yes — mem:1 now in quiet-beat slot (@16, flat-low zone, post-Watch); (b) partial — margit referral dispatched in remediation report; target-reference updated to nearest existing card; (c) yes — Westerosi-monument clamp present (mem:3 @17); doubled-register requirement met
+
+## dialogue-coll — PARTIALLY RESOLVED — 2026-05-19T16:15:00Z
+fault: (a) sidecar facet-licenses left in R1-blind placeholder "to be filled at R2 from locked graph"; (b) "Needle's been waiting" anticipatory-object ascription flagged by cape-fic-reader
+scope: line (a) + defense note (b)
+change: (a) resolved facet-license citations from locked graph: state-coll:6 @3 (Coll block-registration fires at @3) and state-taylor:8 @3 (Taylor's knowledge.coll-as-vouching-vector fires at @3); note added that expected narrator slot at @3 did not materialize (no NI entry at @3 in locked file); (b) defense note added to sidecar: "Needle's been waiting" is trade-idiom persistence-state (object idle/available), not genuine anticipatory ascription; defended; Draft A held
+criteria met: (a) yes — per-entry facet-license citations filled from locked graph; (b) defense entered; if cycle-2 gate rejects the defense, line becomes revise target for cycle-3
+
+## exposition — RESOLVED — 2026-05-19T17:05:00Z
+fault: exposition:4 @20 Wren appositive uses "the Hook" as structural frame without orienting it; cape-fic-reader cannot model Wren's vulnerability without knowing what the Hook is; embedded-noun-gloss-completeness HARD per rubric URI-FACETS-CYCLE-1
+scope: ADD (new entry at @20)
+change: added exposition:5 @20 — first-mention-place entry for "the Hook" — "the Hook — one of Flea Bottom's ward-organized precincts; children there work light tasks in exchange for two meals and a sleeping place." (21 words; ≤30 word cap met); scope: first-mention-place; renders-as: inline-appositive; sources: cond-kl-social-physics-122ac, wren-stitch-maker-flea-bottom-ward.description; licensed-by all three personas with specific gap-claims; per-anchor cap: @20 now has first-mention-character (entry 4) + first-mention-place (entry 5) — permitted pair; cross-episode register write-back updated to include the-hook
+criteria met: yes — embedded-noun-gloss-completeness resolved; the Hook is now glossed at the same anchor as its first use inside Wren's appositive; cape-fic-reader can now model the Hook as a ward-labor-exchange precinct before reading Wren's social position
+
+## dialogue-wren-state — RESOLVED — 2026-05-19T17:10:00Z
+fault: state-wren:@22 (`noticed-as-presence-on-block`) lacks arrival-timing or observation-state specificity; dark-fantasy + worm-canon-pedant: "pre-anomaly opener" premise unsupported without knowing when Wren arrived relative to insect-work at @8/@12
+scope: line (field-extension comment to entry 19)
+change: added arrival-timing specification comment to state-wren entry 19 @22: Wren's arrival is established by state:18 @20 (location change from stitch-maker-household to street); she was NOT present during scene-B (@8-@18); she arrived @20, approached @21, spoke @22; she has been on-street for ≤2 bones before speaking; the insect-atmosphere at @22 is environment she walks into, not duration she has accumulated; state entry now explicitly supports the sidecar's "pre-anomaly opener" premise
+criteria met: yes — specificity gap resolved by referencing state:18's arrival-timing; observation-state derivable from arrival at @20; "pre-anomaly opener" premise now state-supported without a new entry
+
+## SESSION-END — 2026-05-19T17:20:00Z — facets-b01c01-cycle2-remediation
+findings-applied: 9 (loc-state: 2 cuts; feeling: 1 second-clause cut; sensory: old-state baselines documented + thermal-gap dependency collapsed; interest-narrator: 2 entries rewritten + 1 monument ADD; state-updates: 5 entries revised/cut + 1 clarified; memory: 1 relocated + 1 monument ADD + margit referral noted; exposition: 1 Hook ADD; dialogue-coll: facet-license filled + defense note; dialogue-wren: feel-citation corrected + state specificity resolved)
+findings-skipped: 0 (all 9 facet failures processed; margit referral for mem:2 monument card is pending action flagged in remediation report — not a skip, a routing)
+exit: CLEAN (one margit referral pending; documented in remediation report)
+
+## SESSION-START — 2026-05-19T18:00:00Z — cycle2-signal002-physical-delete
+dispatch: physically delete state-updates.md entry 11 and its cut-flag comment; check renumber-vs-gap; SIGNAL-002 close
+target: active-project/theater/facets/state-updates.md
+audit-report: active-project/staff/auditor/facets-final-audit-cycle2.md
+findings-queued: 1 (SIGNAL-002)
+
+## SIGNAL-002 — RESOLVED — 2026-05-19T18:05:00Z
+fault: state-updates.md entry 11 (@12 actor:taylor-hebert-kl-122ac.knowledge.hook-block-density-map: unmapped -> block-density-mapped-passively) was live physical entry despite being flagged for cut; fires canonical knowledge acquisition under active discipline-hold at @8 with no released-from-hold transition
+scope: line
+change: physically deleted entry 11 line and its cut-flag comment block from state-updates.md; replaced with single gap-documentation comment: "entry 11 DELETED (cycle-2 fixer pass-2, 2026-05-19 — SIGNAL-002 physical cut): ID gap 10→12 intentional; cite-index references state:11 in co= fields of state:17 and state:20; IDs 12+ not renumbered to preserve cite-index integrity." No renumbering: cite-index _cite-index.md references state:11 in co= fields of state:17 @26 and state:20 @26 (lines 63, 66); renumbering would break those references. Dialogue files (coll, wren, taylor) and staff/dialogue-writer drafts confirmed free of state:1x numeric ID references. Gap 10→12 is the correct path.
+criteria met: yes — no live physical entry at former entry-11 slot; discipline-hold/passive-acquisition contradiction resolved; state:11 ID preserved as dead reference in cite-index (gap-documented); IDs 12-20 unchanged
+
+## SESSION-END — 2026-05-19T18:06:00Z — cycle2-signal002-physical-delete
+findings-applied: 1 (SIGNAL-002)
+findings-skipped: 0
+exit: CLEAN

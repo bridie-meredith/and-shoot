@@ -1,71 +1,25 @@
-persona: dark-fantasy-reader
+---
+reviewer: dark-fantasy-reader
 facet: dialogue
 character: wren-stitch-maker-flea-bottom-ward
-episode: b01c01
 cycle: 1
-stage: V2 + V3
+episode: b01c01
 date: 2026-05-19
-
+verdict: revise
 ---
 
-## V2 — Strict Affirmative-Demonstration
+# Stage 1 — V2 strict affirmative-demonstration
 
-### Entry reviewed
-`1 @22 | open to the stranger by asking after the work without naming what she has noticed | "Mistress Coll teach you that knot?"`
+- [wren-stitch-maker-flea-bottom-ward:1] @22 — Q1: PASS — line affirmatively demonstrates `westeros-smallfolk §Voice tells — authority-by-elder`: the sidecar traces why this is structurally not-generic — "Mistress Coll" is the epistemological authority the question routes through, exactly as the card's sample ("Old Mother says it's the cold come early") demonstrates. A child in this world names the elder before she names the observation; this is Planetos-specific social physics, not decorative politeness. Also demonstrates `§Cadence — Short sentences` (five words, no chaining) and `westeros-grrm-mannerisms §Specific GRRM verbal tics — Latinate refusal` (*teach*, *knot* over *instruct*, *demonstrate*). Q2: PASS — Earth-Bet scan clean; no anachronistic idiom; no noble-register; no card §forbidden vocabulary hit; child-smallfolk-note correctly invoked (no softener in unforced register); per-anchor cap met. Stage-1 verdict: accept.
 
-### Q1 — Affirmatively demonstrates ≥1 card signature?
+# Stage 2 — V3 adversarial seam-finding
 
-PASS.
+- [wren-stitch-maker-flea-bottom-ward:1] @22 — seam: The dark-fantasy-reader does not flinch at small; it flinches at small that does not accrue. The sidecar's central claim is: "the absence of the larger question is structurally present in the smallness of the asked one." That latency argument requires the reader to register what Wren is not asking. But what Wren is not asking is the anomaly — the flies, the routes, the foreign-cadence. By @22, the chapter has run twelve proto-lines of insect-cover (@8, @12) and Taylor working in an extended insect-atmosphere. The vibes at @22 are vibes:14 and vibes:15 (back=Y — persistently loaded), co-located with the dialogue citation. The scene at the moment of Wren's speech is already atmospherically weighted with the anomaly. The dark-fantasy-reader's demand: if the world is dangerous and the anomaly is present, does the child's response to it (a polite craft-question, no softener, no register-tell) read as chosen-restraint or as authored-convenience? The sidecar defends it as chosen-restraint — "she does not yet know there is anything to not-ask about." But if the vibes-and-state facets at @22 carry the insect-atmosphere as already-visible, then Wren has been in a street where unusual things have been happening for the duration of Taylor's work, and "she does not yet know" is a speaker-state claim that must be carried by the `state-wren:@22` and `feel-wren:@22` entries. If those entries only establish approach-posture and opening somatic register, the "not-yet-aware" premise is author-asserted without facet backing — and the dark-fantasy demand (the world pushes back; costs accrue; nothing is given for free) is not met; facet-license attack: `state-wren-stitch-maker-flea-bottom-ward:@22` is the cited anchor for the observation-first motivation, but if the state entry does not specify that Wren arrived at @22 rather than having been present since the insect-cover at @8, then the structural claim that this is a pre-anomaly opening is unsupported. The world's anomaly has been on-stage since @8; the line's premise (Wren is approaching a stranger, not yet reading the anomaly) requires the state entry to carry her arrival-timing or observation-distance. Without it, the "correctly small" opening risks reading as authored convenience rather than earned restraint.
 
-The dark-fantasy-reader lens cares about consequence-propagation, Westerosi local-color specificity, and world-weight. The question here is whether the line lands as Planetos-specific and class-accurate — not generic "child speaks to adult" but recognizably this world, this class, this kind of child.
+# Verdict reasoning
 
-The card signature demonstrated is `westeros-smallfolk §Voice tells — authority-by-elder`. From the samples section: "Old Mother says it's the cold come early." The smallfolk move is to name the elder and let the elder's authority do the work. "Mistress Coll teach you that knot?" is structurally identical to that sample pattern: the elder's name, attributed as the source of knowledge, before the observation can be claimed. A child in Flea Bottom does not say "that's a strange knot" — she says "Mistress Coll teach you that?" The elder is the epistemological authority even for the simple craft question. That is world-specific. It is not generic medieval politeness.
+Stage-1 passes: the line is genuinely Planetos-specific, demonstrates the elder-routing card signature at the structural level, and is clean of all fences. The dark-fantasy-reader's Stage-2 attack is not a card-violation finding but a world-weight adequacy question: the sidecar's claim that this is a pre-anomaly opening, made by a child who does not yet know there is anything to not-ask, requires the `state-wren:@22` and `feel-wren:@22` facet entries to carry arrival-timing or observation-distance specificity. If they do not — if they carry only approach-posture and somatic opening-register — the latency claim ("absence is structurally present") is authorial assertion. Under facet-adversarial review (URI-AUDIENCE-AGGREGATION-RULE: single dissent fails), this reviewer emits revise on the basis that the facet-license co-load for the structural claim is unverifiable from the cite-index and the sidecar alone, and the line's only-utterance weight for a cost-bearer first appearance depends on that co-load resolving correctly.
 
-Additional signature: `westeros-smallfolk §Cadence — Short sentences`. Five words. No trailing softener because this is not a pressure situation; the card permits the unforced form. The sparseness reads as smallfolk cadence, not as minimalist modern prose — the lack of subordination is load-bearing.
+# Convergence trace (orchestrator-critic input)
 
-The line demonstrates Planetos-specificity at the class level. "Mistress" as the honorific for Coll is correct (tradeswoman/goodwife register, per the card's forms-of-address §). The question does not say "did someone teach you that" — the naming of the specific elder, by the correct honorific, is where the world-weight lives in this five-word line.
-
-Q1: PASS.
-
-### Q2 — Card not violated?
-
-PASS.
-
-Hard fences:
-
-- Earth-Bet proper-noun scan: "Mistress Coll teach you that knot?" — clean against the canonical list. PASS.
-- `westeros-smallfolk §Refuses to say`: No Latinate vocabulary, no anachronistic idiom, no noble-register intrusion, no irony up the hierarchy. PASS.
-- `westeros-grrm-mannerisms`: No time-vocabulary errors, no Latinate affixes, plain Anglo-Saxon throughout (*teach*, *knot*). PASS.
-- Child-smallfolk note: the card says "extra trailing softeners and faster pacing under pressure." No pressure in this beat — the unforced form (no softener) is correct. PASS.
-- Per-anchor caps: 1 utterance at @22. PASS.
-- AP-SCAN: no chassis contamination, no HR-speak, no deposition cadence. PASS.
-
-Q2: PASS.
-
-### V2 verdict: ACCEPT
-
-The line's Westerosi local-color is genuine — the elder-routing is not decoration but class-specific epistemological structure. The dark-fantasy-reader cares that the world was there before the protagonist; this line shows Wren as a person who lives inside that world's authority structure, not as a child written for the scene's convenience.
-
----
-
-## V3 — Adversarial Seam-Finding (dark-fantasy-reader lens)
-
-Lens: consequence-propagation, world-weight, earned Westerosi texture, enemies/forces that don't pause for the protagonist's needs.
-
-**Strongest hostile counter-argument:**
-
-The line is on-register and demonstrates the card. The seam is not in the register — it is in the function. The dark-fantasy-reader's demand is not that lines sound right but that they cost something or establish something that will cost something later.
-
-"Mistress Coll teach you that knot?" opens a relationship that is structurally load-bearing: Wren is the cost-bearer of the book, and b01c01 is establishing the not-asking relationship that will make Wren's death a ledger-anomaly failure rather than a random civilian casualty. The first line Wren speaks is therefore the first brick in the structure that has to eventually hold the closing image.
-
-The seam is this: the drafts sidecar positions the line as "small enough that Taylor can answer with one word and end it, or answer with a question back and invite." That is correct and intentional. But the dark-fantasy-reader asks: does this opening actually threaten anything? The ledger-anomaly rule (from `cond-cost-bearer-scene-frequency`) requires that the reader accumulate a relationship with Wren across the book — the weight of the closing image is proportional to what was built. At @22 in chapter 1, what is being built?
-
-The line is correctly small. The seam is that "correctly small" may not be enough. The drafts sidecar says "the absence of the larger question is structurally present in the smallness of the asked one." That is a claim about latent weight — that the question's smallness points to what Wren is not asking. But that latency is only readable if the reader already knows what Wren has seen (the flies, the routes, the foreign-cadence). The facet-licensed support for that pre-knowledge is `state-wren:@22` and `feel-wren:@22`. If those entries do not establish what Wren has observed before she speaks — if they only fire at @22 and carry observation-state but not the specific withheld content — then the "absence is structurally present" claim is authorial assertion, not built structure. A dark-fantasy world does not give the reader the weight for free. The weight has to be built from specifics.
-
-**Seam statement:** The sidecar's claim that "the absence of the larger question is structurally present in the smallness of the asked one" requires the reader to already know what Wren has not asked about. The facet-licenses at @22 (`state-wren`, `feel-wren`) fire at the dialogue anchor, not earlier. If those entries carry the full observation-history (the flies, the foreign knot, the routes Taylor has watched), the structural latency claim holds. If they only establish the somatic register of approaching a stranger, the latency is missing — and the dark-fantasy demand ("the world was there before them; the cost accrues") is not met by this line's weight alone. The seam is upstream: do the @22 state and feel entries carry the observation-specificity that would make the question's smallness legible as pointed omission rather than merely a polite opening?
-
-**Seam class:** facet-support adequacy — not a card violation, but a question of whether the upstream facets carry enough specificity to make the structural claim in the sidecar defensible. The line itself is correct; the weight of the line depends on facet content this review cannot directly audit.
-
-**Verdict effect on V2 ACCEPT:** The V2 ACCEPT stands. The seam is upstream of the dialogue line and cannot be closed by revising the dialogue entry. It routes to a targeted check of `feel-wren-stitch-maker-flea-bottom-ward:@22` and `state-wren-stitch-maker-flea-bottom-ward:@22` for observation-specificity.
-
-**Seam severity:** MODERATE. The line earns its accept. The dark-fantasy-reader's concern is structural (what does this scene actually build toward the closing image) — that concern routes to the facet authors, not to the dialogue-writer.
+The world-weight adequacy seam (does `state-wren:@22` carry arrival-timing specificity sufficient to support the pre-anomaly premise) does not overlap with any r1 or r2-verify auditor finding. The r1 auditor passed dialogue behavior-card-compliance and DEDUP without noting state-entry content specificity as a concern. The vibes:14 and vibes:15 pile-up at @22 was noted in the PILE-UP REVIEW (all WARRANTED) but the question of whether Wren's state entry is consistent with the vibes-atmosphere at that anchor was not examined. This callout is audience-only. No convergence with named auditor findings C-001, C-002, or any SIGNAL finding. Routes to fixer for cycle 2: targeted check of `state-wren-stitch-maker-flea-bottom-ward:@22` for arrival-timing or observation-distance content.

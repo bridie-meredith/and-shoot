@@ -84,6 +84,17 @@ Single- or two-justification fires fail the gate. Default to silence.
 
 The somatic tell must be SHOWN, not implied.
 
+### One-clause form discipline (REJECT)
+
+The form is **`<subject> <verb> <object/locator>`** — ONE clause. The body-register is what the rubric licenses; temporal commentary, latency observation, or rule-naming carried in a second clause exits the licensed register and converts the entry from somatic-tell to author-voice gloss.
+
+REJECT signatures:
+- **Compound somatic-tell exiting body-register.** *"her hand stills at her side and the turn comes one beat late"* — first clause is somatic; the conjoined second clause is a temporal-latency observation about timing, not a body action. The connector `and` joins a body-show to a non-body observation. Refuse the second clause; keep the first OR replace with a different single body-action that carries the latency the second clause was reaching for (head-orientation, gaze, breath, weight-shift).
+- **Second-clause subject-shift.** A compound where the second clause's subject is *the turn*, *the moment*, *the silence*, *the gap* — any abstraction-noun that is not the character's body. The body-action is the subject of the licensed clause; any sentence-final clause whose subject is the action-of-the-body rather than the body-doing-the-action has exited the somatic register.
+- **Sentence-final rule-statement.** *"her hand stills and the rule catches it"* — the rule-naming exits body-register. The rule is the narrator-interest layer's territory, not feeling's. If the rule needs to fire at this beat, fire narrator-interest, not feeling.
+
+(URI-FACETS-CYCLE-1, 2026-05-19 — promoted from audience-gate cycle-1 attack on b01c01 feel:1 @23: dark-fantasy-reader + worm-canon-pedant independently flagged the second-clause body-register exit the AP-SCAN does not surface.)
+
 ---
 
 ## Per-scene + per-episode + per-season caps
