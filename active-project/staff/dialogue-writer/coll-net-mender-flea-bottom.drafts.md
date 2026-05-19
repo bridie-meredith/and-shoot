@@ -19,34 +19,50 @@ anchors-in-scope: @3 (coll → taylor; first social encounter)
 
 ### Draft A (CHOSEN)
 
-> "Needle's been waiting. Sit, then."
+> "Needle's idle. Sit, then."
+
+- **revision history:** original chosen line "Needle's been waiting. Sit, then." revised by dialogue-writer at cycle-2 ratification (2026-05-19) per cape-fic-reader Stage 2 seam adoption; see `cycle-2-ratification.md` and the cycle-2 resolution block below for full rationale. Card-signature inventory below applies to the revised line; differences from original are: §Vocabulary anchor shifts from "needle = trade-tool, named by function" to "idle = net-trade work-state vocabulary" (stronger §Voice tells "counts in repairs" / "reference points are net-technical" fit); §Hard Fences §2 fit strengthens (cold persistence-state report replacing warmer-idiomatic "been waiting"); all other signatures preserved.
 
 - **card-signatures:**
-  - `westeros-smallfolk` §Syntax — *subject-implied opening* ("[The] needle's been waiting" drops the article-subject; canonical: "Won't be no trouble," "Done already").
+  - `westeros-smallfolk` §Syntax — *subject-implied opening* ("[The] needle's idle" drops the article-subject; canonical: "Won't be no trouble," "Done already").
   - `westeros-smallfolk` §Cadence — *short sentences, stacked, not chained* (two declaratives, no subordination; matches "I went to the mill. The wheel were broken.").
   - `westeros-smallfolk` §Direct samples — register echo of "The well's gone bad. Two nights now." (subject-implied + flat-fact + no analysis).
-  - `westeros-smallfolk` §Vocabulary §Reaches for — *agricultural / lived-environment vocabulary* (the needle = his trade-tool, named by function not by toponym).
+  - `westeros-smallfolk` §Vocabulary §Reaches for — *trade-vocabulary state-report* (the needle's work-state named by its trade-functional term: "idle" = not currently in use, the net-mender's own frame for a tool between stitches).
   - `westeros-smallfolk` §Cadence — *trailing softener* ("then" as sentence-final soft-connector; canonical: "I reckon," "or so they say").
-  - `coll persona card` §Voice tells — *Counts in repairs* (his frame-of-reference is the work; the needle leads the utterance, not the person).
-  - `coll persona card` §Voice tells — *Flat delivery* (no affect; states what is, makes space).
-  - `coll persona card` §Voice tells — *Short sentences for observations* (two clauses, six words total).
+  - `coll persona card` §Voice tells — *Counts in repairs* (the utterance leads with the tool's work-state, which is his native frame-of-reference; "idle" is the net-mender's own measurement of the tool's status).
+  - `coll persona card` §Voice tells — *Flat delivery* (no affect; states what is, makes space; "idle" carries zero anticipatory orientation, closer to flat-delivery floor than "been waiting").
+  - `coll persona card` §Voice tells — *Short sentences for observations* (two clauses, five words total).
   - `coll persona card` §Hard Fences §1 — *does not name anything* (no "you," no greeting-with-name, no pattern-recognition; he registers her presence by making a place for the work, not by classifying her).
-  - `coll persona card` §Hard Fences §2 — *non-interpretive register* (no question of her business, no read of her purpose; the needle is the subject, not she).
-  - `cond-kl-social-physics-122ac` §KL-Specific Authority Texture / smallfolk lateral — courtesy-without-arrangement: the offer is not vouching, not credentialing, not patron-relationship; it is the lateral smallfolk move that lets a stranger enter a spot without owing.
+  - `coll persona card` §Hard Fences §2 — *non-interpretive register* — verbatim: "He does not speculate, moralize, analyze, or build a model from his observations." "Idle" is a pure work-state description, the kind the card's samples already make ("The well's gone bad. Two nights now."); no interiority projected onto the tool.
+  - `cond-kl-social-physics-122ac` §KL-Specific Authority Texture / smallfolk lateral — courtesy-without-arrangement: the offer is not vouching, not credentialing, not patron-relationship; it is the lateral smallfolk move that lets a stranger enter a spot without owing. The cold-courtesy framing (offer the work-spot without warmth, let the stranger enter without owing) is preserved and arguably strengthened — Coll is the colder of the block-presences; Gylda is the warmer.
 - **facet-licenses:** [resolved from locked graph by cycle-2 fixer, 2026-05-19]
   - `state-coll:6 @3` — `actor:coll-net-mender-flea-bottom.block_baseline_new_faces: none-this-week -> one-new-face-fish-gate-lane`: the offer fires at the same anchor as this state mutation; the dialogue line is the speech-act that instantiates the block-registration (Coll names the work-spot as available, which is the form the block-fixture presence-registration takes; the offer IS the non-interpretive registration).
   - `state-taylor:8 @3` — `actor:taylor-hebert-kl-122ac.knowledge.coll-as-vouching-vector: unmapped -> registered-as-block-fixture-with-verbal-contact`: Taylor's knowledge state mutates at @3 as a direct consequence of this dialogue line; the offer is the verbal-contact that licenses the mutation.
   - note: expected slot `narrator:<post-payment-arrival>` — no NI fire exists at @3 in the locked interest-narrator file (nearest entries: narrator:1 @1, narrator:2 @8); the anticipated co-load did not materialize; the two state citations above constitute the facet-license record for this entry. `state-env:3 @5` (needle held-by mutation) fires at @5, not @3, and is therefore not a direct co-load for the @3 dialogue entry.
 
-### Cape-fic-reader Stage 2 seam — defense note (cycle-2 fixer, 2026-05-19)
+### Cape-fic-reader Stage 2 seam — cycle-2 resolution: REVISE (dialogue-writer ratification, 2026-05-19)
 
-**Seam:** "Needle's been waiting" — anticipatory-object ascription; "waiting" attributes interiority to the tool; cape-fic-reader calls this a literary move inconsistent with Coll's non-interpretive register (§Hard Fences §2).
+**Seam (cape-fic-reader cycle-1):** "Needle's been waiting" — anticipatory-object ascription; "waiting" attributes interiority to the tool; cape-fic-reader calls this a literary move inconsistent with Coll's non-interpretive register (§Hard Fences §2). Revise candidate offered: "Needle's idle. Sit, then."
 
-**Defense:** "Needle's been waiting" functions as Flea-Bottom trade-idiom for availability-state, not genuine purposive attribution. The construction "X has been waiting" in smallfolk craft-speech means "X is here and unoccupied" — a persistence-state report, not an anthropomorphization. Compare structural equivalents: "The seat's been empty," "The well's been dry" — neither credits the thing with intent. Coll's card samples ("The well's gone bad. Two nights now.") use the persistence-report form for object states. "Needle's been waiting" is a persistence-report (the needle has been idle, here, available for whoever sits) delivered in the same sentence-form as his canonical samples. The "waiting" is grammatical idiom for the idle-state duration, not a claim about what the needle desires or expects.
+**Cycle-2 fixer position (superseded):** Defend. Argued "been waiting" is idiomatic persistence-state language about objects (parallel to "the seat's been empty"), not genuine anthropomorphization; §Hard Fences §2 was glossed as banning interpretive moves "about people or situations" but permitting idiomatic object-state idioms.
 
-**Why not revise:** The alternative phrasing ("Needle's idle. Sit, then." / "Needle's here. Sit, then.") strips the warmth that makes the courtesy structurally distinct from mere permission-to-sit. The sidecar's central structural claim is that the offer makes space for Taylor to enter the spot without owing anything — the idiomatic "been waiting" form does this by framing the needle as ready-without-demand (not you-are-needed, not I-have-been-waiting-for-you). "Needle's idle" is colder; it reads as permission-but-no-welcome, which loses the distinction from Draft C (conditional test). The card's §Hard Fences §2 bans *interpretive* moves about people or situations; it does not ban idiomatic persistence-state idioms about objects. "Needle's been waiting" is object-state language, not interpretation.
+**Dialogue-writer ratification verdict: REVISE.** The fixer's defense was structurally licit (1-of-3 dissent permits hold under cycle-2 minimum-change), but on the merits cape-fic-reader's call is the more card-faithful read. Reasoning:
 
-**Verdict: defend.** The seam is closeable on the distinction between idiomatic persistence-state language (permitted) and genuine anticipatory-object ascription (forbidden). This entry holds Draft A.
+1. **§Hard Fences §2 verbatim.** "Non-interpretive register. He counts in repairs and describes what he sees. He does not speculate, moralize, analyze, or build a model from his observations." The ban scopes to the *type of cognitive operation* (speculate / moralize / analyze / model-build), not to a categorical people-vs-objects axis. The fixer's "people or situations" gloss is paraphrase, not text. Both framings converge on the answer for this line — "been waiting" is not strictly an interpretive move — but the verbatim card text is the stricter authority.
+
+2. **"Waiting" carries more anticipatory load than the alternatives.** In default English, "wait" is transitive-by-default — one waits *for* something. The persistence-state idiom ("the seat's been waiting") exists but is a *warmer* register move. "Been empty" / "been idle" are colder, more state-of-the-object, fewer anticipatory entailments. The seam cape-fic identified is real: "waiting" sits *nearer* the interpretive line than equivalents the card's own samples reach for ("The well's gone bad. Two nights now." — pure work/world-state, zero orientation-toward).
+
+3. **Cast differentiation: Coll is the colder block-presence.** Gylda is the warmer (names the pattern once; the structural warmth-carrier of the pair). Coll is described in his card as "not Taylor's friend," "fixture," "flat delivery," "does not engage Taylor directly in any load-bearing way." The "warmth" the fixer wanted to preserve in "been waiting" is itself slightly off-register for Coll; the structural courtesy at @3 is *cold* courtesy — make space, do not vouch, do not welcome, let the stranger enter the spot without owing. "Needle's idle" lands cold-courtesy directly; "Needle's been waiting" tilts a half-step toward warm-welcome, which is Gylda's territory.
+
+4. **"Idle" is stronger net-trade vocabulary than "been waiting."** The card's Voice tells specify: "Counts in repairs. His reference points are net-technical." "Idle" is the net-mender's own work-state vocabulary — a tool not currently in use. "Been waiting" is a household / interpersonal idiom imported into the net-spot. "Idle" routes through the card's specified frame-of-reference; "been waiting" routes around it.
+
+5. **Surface-structure preservation.** "Needle's idle. Sit, then." preserves: subject-implied opening (smallfolk §Syntax), two-declarative subject-implied stack (smallfolk §Cadence), trailing softener "then" (smallfolk §Cadence), no-naming (§Hard Fences §1), no interrogative, no vouching-shape, no class-deference miscalibration. The board-move (offer the work-spot without incurring social debt) is preserved; only the surface phrasing shifts from warmer-idiomatic to colder-trade-vocabulary.
+
+**Final line:** "Needle's idle. Sit, then."
+
+**Facet-license citations (verified, unchanged from fixer's resolution):** `state-coll:6 @3` and `state-taylor:8 @3` both resolve correctly to `active-project/theater/facets/state-updates.md` entries 6 and 8 respectively. The co-load relationships hold: Coll's block-baseline mutation IS the speech-act of the non-naming offer; Taylor's coll-as-vouching-vector mutation IS licensed by the verbal-contact this line delivers. The revise does not change which state-mutations the line co-loads with — it changes only the surface vocabulary; the structural facet-license pattern is identical.
+
+**Cross-reference:** `active-project/staff/dialogue-writer/cycle-2-ratification.md` carries the formal verdict block.
 
 ### Draft B (rejected)
 
