@@ -1,5 +1,5 @@
 # Cite-Index — b01-c01
-generated: 2026-05-19 (cycle-3 re-audit regeneration — sensory density remediation)
+generated: 2026-05-19 (cycle-3 re-audit regeneration — auditor dispatch, sensory density remediation post-cut verification)
 source: active-project/theater/facets/ (all facet files; proto-lines file EXCLUDED — stale per HARD-001; co= derived from same-@-position co-residence in current facet files)
 scope: 12 facet files (location-state, interest-narrator, memory, sensory, state-updates [consolidated], feeling [consolidated], metaphor, vibes, exposition, scene-map)
 note: state:11 gap (DELETED cycle-2 SIGNAL-002); state:17 gap (CUT cycle-2 fixer); loc-state:3 @11 + loc-state:4 @13 CUT → current loc-state numbering is 4 entries (1@1, 2@9, 3@15, 4@20); narrator:5a @22 ADD; exposition:5 @20 ADD; mem:1 relocated @15→@12; mem:3 added @8; sensory:2 @9 CUT (cycle-3 density remediation) → sensory now 2 entries (sensory:1 @1, sensory:2 @15 [was sensory:3])
@@ -45,6 +45,7 @@ _(no entries)_
   sensory:1 @1 back=Y co=[loc-state:1, narrator:1, state:1, vibes:1, vibes:2, vibes:3, vibes:4]
   sensory:2 @15 back=Y co=[exposition:3, loc-state:3, narrator:4, state:12, vibes:10, vibes:12]
   # sensory:2 ID-note: was sensory:3 in cycle-2 cite-index; renumbered after sensory:2 @9 CUT (cycle-3 density remediation, 2026-05-19)
+  # AUDIT-NOTE (cycle-3 re-audit, 2026-05-19): sensory:2 @15 old-state `hook-street-ambient` has no old-state-source token; unanchored-old-state HARD finding raised in cycle-3 audit report (facets-final-audit-cycle3-re-audit.md). Cycle-3 Phase 5b on sensory BLOCKED pending fixer resolution.
 
 ### state (18 active entries; gaps at 11 [DELETED] and 17 [CUT])
   state:1 @1 back=Y co=[loc-state:1, narrator:1, sensory:1, vibes:1, vibes:2, vibes:3, vibes:4]

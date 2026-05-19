@@ -11,3 +11,14 @@ renumber-decision: renumber — former sensory:3 becomes sensory:2; cite-index c
 cite-index-impact: sensory:2 @9 entry removed from cite-index; vibes:7 co-citation to former sensory:2 becomes a dangling reference until cite-index regen; former sensory:3 (now sensory:2) co-citations at @15 are ID-stale (six co-citations: exposition:3, loc-state:3, narrator:4, state:12, vibes:10, vibes:12) — regen required.
 modality-coverage-post-cut: smell (sensory:1 @1) + sound (sensory:2 @15) = 2 modalities; coverage requirement (>=2) satisfied.
 notes: sensory:3 @15 is the chapter's highest co-citation beat (7 total facet entries at @15 including sensory); cutting the acoustic signal at the chapter's structural threat-marker beat (Watch-column-passing) would be the higher-cost loss; the cut of sensory:2 @9 is the minimum-change remediation consistent with rubric axes.
+
+---
+
+work-item: fault-C3-001 unanchored old-state on sensory:2 @15
+date: 2026-05-19
+resolution-path: (a) loc-state:2 sensory-baseline studio note + old-state-source token on sensory:2
+baseline-documented: sound: hook-street-ambient at loc-state:2 @9
+source-citation-target: loc-flea-bottom card §Sensory palette (Hook-alley street-level sound); cond-kl-geography-122ac (Hook as waterfront-adjacent lane with fluid smallfolk foot-traffic; door-open-as-acoustic-transition)
+sensory:2 @15 old-state-source token added: old-state-source: loc-state:2 sensory-baseline-note (sound: hook-street-ambient post-door-open baseline established at @9; documented in location-state.md @9 studio note, cycle-3 within-cycle remediation 2026-05-19)
+signal-C3-001 stale-comment update: loc-state:1 cycle-2 sound-baseline note updated to record that sensory:2 @9 was cut at cycle-3 and that the sound chain from corner-room-interior-quiet is no longer active; note points forward to the loc-state:2 @9 studio note as the surviving anchor
+notes: no new sensory entries added; no anchor or new-state on sensory:2 @15 changed; edits confined to location-state.md (baseline note at @9 + stale-comment at @1) and sensory.md (old-state-source token at sensory:2 @15) per scope discipline
