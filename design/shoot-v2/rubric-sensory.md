@@ -4,7 +4,7 @@ Authoring + review rubric for `facets/sensory.md` entries (working filename; pre
 
 Status: V1 draft (Phase 0). Will be locked at end of Phase 1.
 
-The rubric depends on the locked location-state file (for environmental baseline at each beat) and the locked tensometer file (correlative observation only, NOT gating). It does NOT depend on narrator-interest, memory-flags, or state-updates content; sensory-flags is independent of those facets.
+The rubric depends on the locked location-state file (for environmental baseline at each beat) and the scene-map facet file (`theater/facets/scene-map-<book>-<chapter>.md`) (correlative observation only, NOT gating — `rhythm-shape` and `peak-bones` fields provide the same structural orientation that tensometer scalars previously provided). It does NOT depend on narrator-interest, memory-flags, or state-updates content; sensory-flags is independent of those facets.
 
 ---
 
@@ -196,9 +196,9 @@ These are the contamination patterns the writer must resist and the reviewer mus
 7. **Cross-modal blur.** Naming two modalities in one entry instead of splitting or culling.
 8. **Generic naming.** `quiet -> loud`, `dark -> bright`, `cold -> hot` without specifying source/cue.
 9. **Loc-state contradiction.** Old-state contradicts the locked location-state baseline. Cross-facet violation.
-10. **Tens-gating misread.** Author treats high-tens beats as eligible / low-tens as ineligible (or vice versa). Sensory-flags is independent of tensometer; tens-correlation is observation, not gating.
+10. **Pressure-signal gating misread.** Author treats bones in `peak-bones` arrays as eligible / bones in `flat-low` zones as ineligible (or vice versa). Sensory-flags is independent of the scene-map pressure-signal; rhythm-shape correlation is observation, not gating.
 11. **Stage-named flagging.** Naming the flag as flag (`sound: nothing -> SOUND_SPIKE`) instead of naming the change.
-12. **Density-on-charged-beats.** Firing on every charged-tens beat to hit dramatic peaks. Sensory inflections do correlate with high-tens beats (rupture, peak), but many high-tens beats have no perceptual modality change; firing for charge alone is anti-pattern.
+12. **Density-on-charged-beats.** Firing on every `peak-bones`-class beat to hit dramatic peaks. Sensory inflections do correlate with peak-bones-class beats (rupture, peak), but many such beats have no perceptual modality change; firing for charge alone is anti-pattern.
 13. **Interior-cue mistaken for environmental cue.** *the air thickens around her* — is this environmental humidity-up, or interior-pressure registration? Default to interior unless studio's state file independently records the environmental change.
 
 ---
@@ -213,13 +213,13 @@ The full sensory-flags file across an episode must satisfy:
 
 - **Sparsity.** 3–6% of proto-lines fire (s01e01 expected: ~2–5 entries on 77 beats). Sparsity is load-bearing — the disambiguation function depends on contrast against unflagged baseline.
 - **Modality-coverage health-check.** ≥2 modalities represented across the file. A sound-only file fails coverage; a sound+tactile or sound+light or sound+thermal file passes. Cross-modal authoring discipline is the structural addition for sensory-flags relative to single-axis facets.
-- **Tens-correlation observation (not gating).** Sensory fires distribute across tens-zones. Correlation observation: high-tens beats often fire (rupture, peak); tens=1 environmental beats also fire (a chill in an idle moment). The rubric does NOT require any particular tens-distribution. The mechanic auditor reports the distribution as observation, not verdict.
+- **Pressure-signal correlation observation (not gating).** Sensory fires distribute across scene zones. Correlation observation: bones in `peak-bones` arrays often fire (rupture, peak); `flat-low` environmental bones also fire (a chill in an idle moment). The rubric does NOT require any particular rhythm-shape distribution. The mechanic auditor reports the distribution as observation, consulting the scene-map file (`theater/facets/scene-map-<book>-<chapter>.md`) for `rhythm-shape` and `peak-bones` context — not as a verdict.
 - **Bare-not-charged audit (file-level).** Each fire's proto-line text searched for charged-self-carrying words. Zero fires on charged words.
 - **Inflection-not-sustained audit (file-level).** Each fire's surrounding 3-5 beats checked for sustained level vs. change-point. Zero fires on sustained-level beats.
 
 ### Scene-level shape
 
-For each scene (per tensometer's scene-frame definition or studio's scene-marking):
+For each scene (per the scene-map file's `@<start>-@<end>` ranges):
 
 - **Per-scene cap ≤ 3 (frugality rule).** A scene may carry **at most 3 sensory fires** — frugal by design. Prefer modality-diversity over modality-repeat: two sound-spikes in one scene → cull the weaker; sound + thermal + light all firing once each in one scene → all three permitted (within the 3 cap). The cap is hard, not a guideline. Most scenes will carry 0–1 fires; 2–3 fires per scene is reserved for confrontation-class scenes with multiple genuine cross-modal inflections.
 - **Inflection-pair coherence.** When a `drop` and a subsequent `up` fire on the same modality (e.g., @24 sound:drop + @30 sound:up), the pair should reach a sensible *back-to-baseline* state. The new-state of the up should match the old-state of the drop (modulo natural variation). If they don't match, one entry is wrong.
@@ -244,7 +244,7 @@ Sensory-flags' upstream and downstream consumers.
 ### Anchor expectations (consumer side)
 
 - **Location-state (locked, upstream).** Sensory-flags' old-state must match the most recent loc-state baseline for the beat's location. Cross-facet violation if contradicting. Loc-state holds sustained sensory level; sensory-flags holds inflection on top of that level. Pattern: loc-state is the level, sensory-flags is the delta.
-- **Tensometer (locked, upstream — correlative-not-gating).** Sensory-flags is **independent of tensometer**. Per user's pre-Phase-0 instruction: fires may occur in any tens-zone. Correlation observation only — high-tens beats often have sensory inflections (rupture, peak); some high-tens beats do not. The locked tens cross-facet note ("Loudness-flag author: @24 stylus-stop perception, @64 stylus-mark, smaller volume-event") is **anchor-expectation, not anchor-requirement**. @24 fires (perceptibility large; bare verb); @64 likely refuses (perceptibility small; sub-threshold). Sensory-flags does not inherit memory-flags' inverted-tens-density rule and does not inherit any tens-gating rule.
+- **Scene-map (upstream — correlative-not-gating).** Sensory-flags is **independent of the scene-map pressure-signal**. Fires may occur in any scene zone. Correlation observation only — bones in `peak-bones` arrays often have sensory inflections (rupture, peak); some peak-bones-class bones do not. The scene-map's `rhythm-shape` and `peak-bones` fields (loaded from `theater/facets/scene-map-<book>-<chapter>.md`) are **correlative context, not anchor-requirement**. @24 fires (perceptibility large; bare verb — and happens to be in `peak-bones`); @64 likely refuses (perceptibility small; sub-threshold — regardless of scene-map classification). Sensory-flags does not inherit memory-flags' inverted pressure-signal rule and does not inherit any scene-map-gating rule.
 - **State-updates (parallel, structural).** Sensory-flags and state-updates share the delta-shape `<target>: <old> -> <new>` pattern. They are distinct facets: state-updates writes back to canonical memory (persistent change); sensory-flags is stitcher selection signal only (no writeback). A sensory-flag may co-occur with a state-update on the same beat (a perceptual inflection that is also a persistent state change), but they fire independently and are not gated on each other.
 
 ### Back-contract (what sensory-flags owes downstream)
@@ -255,7 +255,7 @@ Sensory-flags' upstream and downstream consumers.
 
 ### What sensory-flags does NOT condition
 
-- Tensometer (forward). Sensory-flags does not change tens.
+- Scene-map (forward). Sensory-flags does not change scene-map fields.
 - Narrator-interest (forward). Sensory-flags does not require narrator-interest co-citation. They are independent.
 - Memory-flags (forward). Sensory-flags does not gate memory-flags. They are independent.
 - State-updates (forward). Sensory-flags does not gate state-updates. They are independent.
@@ -267,13 +267,13 @@ Sensory-flags' upstream and downstream consumers.
 
 Six worked examples spanning the rubric. Used during Phase 1 reviewer tuning and Phase 2 writer-fork.
 
-- **`s01e01:13 the officer speaks to the yard` — FIRE.** Sound:up. Delta: `sound: yard-ambient-murmur -> officer-command-voice`. Bare verb ("speaks"); audience-perceptible (command-voice register is universally legible once flagged); inflection-not-sustained (this is the establishment beat; subsequent officer-speech beats are sustained at the new level). Tens=1 (correlative observation). ACCEPT.
+- **`s01e01:13 the officer speaks to the yard` — FIRE.** Sound:up. Delta: `sound: yard-ambient-murmur -> officer-command-voice`. Bare verb ("speaks"); audience-perceptible (command-voice register is universally legible once flagged); inflection-not-sustained (this is the establishment beat; subsequent officer-speech beats are sustained at the new level). Scene-map: bone in `flat-low` rhythm zone (correlative observation — sensory fires in any zone). ACCEPT.
 
-- **`s01e01:24 the stylus stops on the board` — FIRE.** Sound:drop. Delta: `sound: stylus-on-wax-rhythm -> silence`. Bare verb ("stops"); audience-perceptible (silence-cut is universally legible); inflection (transient — @30 resumes the rhythm). Tens=3 (correlative observation; high-tens beat with sensory inflection — both fire). Anchor-expected per locked tens cross-facet note. ACCEPT.
+- **`s01e01:24 the stylus stops on the board` — FIRE.** Sound:drop. Delta: `sound: stylus-on-wax-rhythm -> silence`. Bare verb ("stops"); audience-perceptible (silence-cut is universally legible); inflection (transient — @30 resumes the rhythm). Scene-map: bone listed in scene's `peak-bones` array (correlative observation; peak-bones-class beat with sensory inflection — both fire; sensory is not gated by this). ACCEPT.
 
-- **`s01e01:30 the stylus moves on taylor's name` — FIRE.** Sound:up. Delta: `sound: silence -> stylus-on-wax-rhythm`. Bare verb ("moves"); audience-perceptible; paired-event with @24 (drop). Tens=2 (correlative). ACCEPT. Inflection-pair-coherence test: @24's old-state was `stylus-on-wax-rhythm`; @30's new-state is `stylus-on-wax-rhythm`. Match — back-to-baseline rhythm pair coherent.
+- **`s01e01:30 the stylus moves on taylor's name` — FIRE.** Sound:up. Delta: `sound: silence -> stylus-on-wax-rhythm`. Bare verb ("moves"); audience-perceptible; paired-event with @24 (drop). Scene-map: bone in `rising` zone (correlative). ACCEPT. Inflection-pair-coherence test: @24's old-state was `stylus-on-wax-rhythm`; @30's new-state is `stylus-on-wax-rhythm`. Match — back-to-baseline rhythm pair coherent.
 
-- **`s01e01:41 the seal breaks at the crease under his thumb` — FIRE.** Sound:spike. Delta: `sound: yard-quiet -> wax-crack`. Bare phrasing ("breaks at the crease under his thumb" foregrounds tactile mechanism, not audible event); audience-perceptible (the seal-break crack is universally legible once flagged); inflection (transient discrete event). Tens=1 (correlative). ACCEPT.
+- **`s01e01:41 the seal breaks at the crease under his thumb` — FIRE.** Sound:spike. Delta: `sound: yard-quiet -> wax-crack`. Bare phrasing ("breaks at the crease under his thumb" foregrounds tactile mechanism, not audible event); audience-perceptible (the seal-break crack is universally legible once flagged); inflection (transient discrete event). Scene-map: bone in `flat-low` zone (correlative). ACCEPT.
 
 - **`s01e01:73 taylor steps into the shadow of the frame` — REFUSE.** Modality candidate light:down. The proto-line word "shadow" is **charged** — it self-carries light-dimming for the audience. Adding `light: sun -> shadow` is redundant intensity-restatement. **Calibration anchor for charged-word redundancy.** Refusal-CORRECT.
 
@@ -283,7 +283,7 @@ Six worked examples spanning the rubric. Used during Phase 1 reviewer tuning and
 
 ## Author / reviewer notes
 
-- **Author:** studio writer-fork. Loads: locked location-state file (for old-state baseline at each beat), locked tensometer file (correlative observation only — NOT gating), the proto-lines file, this rubric, the corpus-selection note. **Two-pass authoring:**
+- **Author:** studio writer-fork. Loads: locked location-state file (for old-state baseline at each beat), scene-map facet file (`theater/facets/scene-map-<book>-<chapter>.md`) (correlative observation only — NOT gating; `rhythm-shape` and `peak-bones` replace the pre-overhaul tensometer scalar for correlative context), the bones file, this rubric, the corpus-selection note. **Two-pass authoring:**
   1. **Per-beat pass.** Walk the proto-line file. For each beat, decide FIRE or NONE. If FIRE, identify modality, write the old-state from loc-state (or prior sensory entry on same modality), write the new-state, verify bare-not-charged, verify audience-side perceptibility, verify inflection-not-sustained.
   2. **File-shape pass.** Read the file as a curve. Check episode-level density (3–6%), modality-coverage (≥2 modalities), bare-not-charged audit (zero fires on charged words), inflection-not-sustained audit (zero fires on sustained beats), inflection-pair coherence (drop/up pairs reach back to baseline). Either fix misfires (NONE→FIRE add for missing coverage; FIRE→NONE strip for charged-word / sustained / sub-threshold) or flag screen-writer kickback for structural gaps. **Do not inflate to hit density.**
 - **Reviewer (mechanic auditor):** under this rubric. Per-entry verdict for fires: CORRECT (all three axes earned, no anti-pattern fired) or INCORRECT (named axis-failure or anti-pattern). Per-entry verdict for refusals: CORRECT (no modality earned / charged-word / sustained / interior-only) or MISSED (a modality + bare-word + inflection earned a fire that the author skipped). File-level verdict: SHAPE-OK / SHAPE-FAIL with named density / modality-coverage / bare-charged / sustained failure mode. Cross-facet contract pre-ship check is mandatory (loc-state baseline match; tens correlation observation noted; no narrator-interest / memory-flags gating).
@@ -292,7 +292,7 @@ Six worked examples spanning the rubric. Used during Phase 1 reviewer tuning and
 - **Cull:** sensory-flags has per-file cull (per `schemas/facet.schema.md`). Cull is delete-only — entries that fail any axis or any anti-pattern are deleted. No rewrites at cull time. The Phase 2 writer-fork output IS the cull-stage authoring; revision happens in Phase 4 only.
 - **Floor defense.** If the author defends a NONE against a reviewer push to FIRE by citing rubric (charged word self-carries, sustained-not-inflection, sub-threshold, fauna-feed-extension), accept the defense. Sparsity is load-bearing; over-firing dissolves the disambiguation gradient.
 - **Ceiling defense.** If the author defends a FIRE that the reviewer would push to NONE, the burden is on the author to name (a) the modality, (b) the inflection class (up/down/spike/drop), (c) the bare proto-line word, (d) the audience-side perceptibility argument, (e) the loc-state baseline match. A FIRE that survives ceiling defense should also pass the modality-coverage file-level test and the inflection-pair-coherence test where applicable.
-- **Cross-author dependencies.** Sensory-flags is single-author (studio). No cross-author dependency check at Phase 5; the cross-facet contract check (vs. loc-state, tensometer correlation, no narrator-interest / memory-flags / state-updates gating) replaces it.
+- **Cross-author dependencies.** Sensory-flags is single-author (studio). No cross-author dependency check at Phase 5; the cross-facet contract check (vs. loc-state, scene-map correlation, no narrator-interest / memory-flags / state-updates gating) replaces it.
 
 ---
 
@@ -307,7 +307,7 @@ V1 exists only to produce a baseline accept-rate for round-trip comparison after
 ## What sensory-flags is not
 
 - Not narration. Not paraphrase of the SVO. Not an inventory of all perceptible state.
-- Not loc-state. Loc-state holds sustained sensory level; sensory-flags holds inflection. Loc-state is the baseline; sensory-flags is the delta on top. **Note (URI-SCENE-RHYTHM, 2026-05-13):** transition-run continuity (an established sensory baseline persisting through a tens=1 transition stretch, e.g. alley-sound carrying across a flat-low scene) belongs in loc-state's transition-run continuity license, NOT in sensory-flags. Sensory-flags fires on inflection (spike/drop/change); continuity is sustained baseline carry — the loc-state continuity-carry slot is the correct home. See `design/shoot-v2/rubric-location-state.md § Transition-run continuity license`.
+- Not loc-state. Loc-state holds sustained sensory level; sensory-flags holds inflection. Loc-state is the baseline; sensory-flags is the delta on top. **Note (URI-SCENE-RHYTHM, 2026-05-13):** transition-run continuity (an established sensory baseline persisting through a `flat-low` transition stretch, e.g. alley-sound carrying across a flat-low scene) belongs in loc-state's transition-run continuity license, NOT in sensory-flags. Sensory-flags fires on inflection (spike/drop/change); continuity is sustained baseline carry — the loc-state continuity-carry slot is the correct home. See `design/shoot-v2/rubric-location-state.md § Transition-run continuity license`.
 - Not narrator-interest. Narrator-interest is what the POV character registers. Sensory-flags is what changes *out there*, audience-side. The two facets may co-fire on the same beat but are independent.
 - Not memory-flags. Memory-flags fires the licensing layer for figurative reach. Sensory-flags fires the disambiguation layer for bare environmental language. Independent.
 - Not state-updates. State-updates writes back to canonical memory (persistent). Sensory-flags is stitcher selection signal only (no writeback). Pattern-aligned (delta shape), domain-distinct.

@@ -1,5 +1,5 @@
 ---
-name: cond-khepri-residue-122ac
+name: cond-override-architecture-residue-122ac
 class: condition
 subclass: law
 scope: project
@@ -7,18 +7,14 @@ project: taylor-westeros-good-intentions
 world: planetos
 origin: authored
 quality: full
-status: superseded
-superseded-by: cond-override-architecture-residue-122ac
-superseded-at: 2026-05-19
+supersedes: cond-khepri-residue-122ac
 superseded-reason: "slug-fence violation — pre-overhaul slug embedded Earth-Bet proper noun `khepri`; renamed to mechanism-descriptive form per `.claude/commands/and-facets.md` Earth-Bet hard-fence rule."
 references:
   - cond-fauna-control-rules
   - cond-no-parahuman-infrastructure
 ---
 
-# Khepri Residue — Power-State Rules at 122 AC King's Landing Open (SUPERSEDED)
-
-> **SUPERSEDED 2026-05-19 — DO NOT LOAD AS ACTIVE CONSTRAINT.** The canonical card is `cond-override-architecture-residue-122ac`. Slug renamed to remove Earth-Bet proper noun `khepri` from the slug-fence scan surface. Card body content preserved here for historical reference.
+# Khepri Residue — Power-State Rules at 122 AC King's Landing Open
 
 ## Description
 

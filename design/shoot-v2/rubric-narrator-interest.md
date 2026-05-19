@@ -101,17 +101,17 @@ The earning axis is the spotlight test. **Most beats do not fire.** The author m
 The canonical reasons attention lands are below; they are the *typical* triggers, not an exhaustive list. The underlying test is whether the beat earned the spotlight relative to its neighbors.
 
 ACCEPT signatures (typical triggers):
-- **Tensometer peak (tens=3).** Ruptures, commits, irreversible registrations. Her attention almost always lands here. A 3 with no narrator-interest fire requires explicit rationale (narrator disengaged / off-screen / explicitly looking away).
-- **Tensometer transition into peak.** The beat immediately before a 3, or the beat where 1→2 first lights. Approach to a turn is where pre-calc surfaces and cost gets priced.
+- **Peak-bones-class beat.** Bone listed in the scene's `peak-bones` array in the scene-map (ruptures, commits, irreversible registrations). Her attention almost always lands here. A peak-bones-class bone with no narrator-interest fire requires explicit rationale (narrator disengaged / off-screen / explicitly looking away).
+- **Approach to peak (rising zone transition).** A bone in a `rising` scene zone where magnitude is ascending toward peak, or the first bone where the scene transitions from `flat-low` to `rising`. Approach to a turn is where pre-calc surfaces and cost gets priced.
 - **Behavior-pack trigger fires.** Displacement triggers (enclosed space, child-harm, fire-at-scale, sudden fauna silence, helpless-protector-figure); mask-thinning (Septon Aldric proximity, peer-children); foreknowledge-clamp (Westerosi-monument-adjacency, Dance-timeline brush); fauna-track tilt (sound the room hasn't registered yet).
-- **Cross-facet anchor demand.** A downstream facet (memory-flag, loudness, audience-interest, interior state-update) needs to attach here, and narrator-interest is the spine.
+- **Cross-facet anchor demand.** A downstream facet (memory-flag, sensory, audience-interest, interior state-update) needs to attach here, and narrator-interest is the spine.
 
 REJECT signatures:
-- **Density-on-flat.** Firing on an ambient 1-beat with no transition, no behavior-pack trigger, no cross-facet need. Ambient beats are *correctly silent.* Silence is the default.
+- **Density-on-flat.** Firing on a `flat-low` ambient bone with no transition, no behavior-pack trigger, no cross-facet need. Ambient bones are *correctly silent.* Silence is the default.
 - **Plot-importance inflation.** Firing because the writer knows the beat is load-bearing for the season. Narrative weight does not earn the spotlight; her attention does.
-- **Fire-because-it's-charged.** Firing on every tens=2 by default. Many 2s do not earn — the charge may be the scene's, not hers. Tens=2 fires when the charge is perceptually *hers*.
-- **Persistent-narration.** Same registration sustained across consecutive beats. One fire per registration. If something keeps mattering, the next fire must register *change*, not repetition.
-- **No-contrast firing.** Firing such that the file has no contrast — every other beat fires, every approach beat fires, every transition beat fires. The contrast between fire and silence is the signal; saturating the file destroys the signal.
+- **Fire-because-it's-charged.** Firing on every bone in a `rising` zone by default. Many such bones do not earn — the charge may be the scene's, not hers. A bone in a `rising` zone earns a fire when the charge is perceptually *hers*.
+- **Persistent-narration.** Same registration sustained across consecutive bones. One fire per registration. If something keeps mattering, the next fire must register *change*, not repetition.
+- **No-contrast firing.** Firing such that the file has no contrast — every other bone fires, every approach bone fires, every transition bone fires. The contrast between fire and silence is the signal; saturating the file destroys the signal.
 
 ---
 
@@ -121,7 +121,7 @@ REJECT signatures:
 - **The base-register test.** Read the entry alongside the base-card sample box. Does it read in the same register without breaking? If a base-card sample could be substituted in voice and rhythm, the entry passes. If the entry reads as omniscient-narrator or as a different character's voice, it fails.
 - **The earning test.** Name the trigger in five words or fewer. *Tens transition into peak*, *displacement on enclosed space*, *Septon-proximity mask-thin*, *foreknowledge-clamp on king-name*, *cross-facet anchor for memory-flag*. If you cannot name a trigger, do not fire.
 - **The doubled-register test (POV-character-variant-specific).** For Taylor-Westeros: does the entry hold the doubled register? The interior knows; the spoken layer does not leak. A narrator-interest entry that reads as something Taylor *would say aloud in mask register* is a fail — it should be base-register interiority. Conversely, a narrator-interest entry that *names* an Earth-Bet monument or a Dance specific (date, name, content) is a hard fence violation.
-- **The density test.** Across the episode, expect the narrator-interest density curve to align with tensometer transitions and behavior-pack triggers. A full-corpus run should fire on roughly **15–25% of proto-lines** for a Taylor-POV variant — sparser than tensometer (100% coverage), sparser than location-state (which fires on environment-frame turnover, ~7% on s01e01), denser than memory-flags (rare callbacks). Spotlight, not ledger. Outside that band, investigate: too dense = density-on-flat / no-contrast contamination; too sparse = mask-too-perfect / narrator-disengaged-episode.
+- **The density test.** Across the chapter, expect the narrator-interest density curve to align with scene-map pressure-signal transitions and behavior-pack triggers (load the scene-map facet file `theater/facets/scene-map-<book>-<chapter>.md` for `rhythm-shape` and `peak-bones` context). A full-corpus run should fire on roughly **15–25% of bones** for a Taylor-POV variant — sparser than location-state, denser than memory-flags (rare callbacks). Spotlight, not ledger. Outside that band, investigate: too dense = density-on-flat / no-contrast contamination; too sparse = mask-too-perfect / narrator-disengaged-episode.
 
 ---
 
@@ -150,18 +150,18 @@ The narrator-interest file as a whole must demonstrate doubled-register shape ac
 The full narrator-interest file across an episode must satisfy:
 
 - **Contrast.** Fires must be visibly sparser than silences. The stitcher reads fires as render-weight; if every beat fires, there is no weight gradient and the spotlight has no value. The single most important file-level test.
-- **Density alignment with tensometer.** Density should be visibly higher around tens-transitions and tens=3 clusters. Ratio of fires-per-beat in non-1 zones should exceed ratio in 1-only stretches by at least 2×.
+- **Density alignment with scene-map pressure-signal.** Density should be visibly higher around `rising` zones and bones in `peak-bones` arrays. Ratio of fires-per-bone in non-`flat-low` scenes should exceed ratio in `flat-low`-only scenes by at least 2×. Load the scene-map facet file (`theater/facets/scene-map-<book>-<chapter>.md`) for classification.
 - **Doubled-register visibility.** Across the file, both registers should show: (a) Westerosi-mask cover register visible in cross-facet contract anchors (mask-thinning at Septon-proximity, mask-too-perfect under adult observation); (b) base-register interior with Earth-Bet shadow and Dance-foreknowledge-clamp visible at displacement triggers and at Westerosi-monument adjacency. **A file with only one register visible is a fail.**
 - **Behavior-pack channel diversity.** Across an episode of >50 beats, expect at least three distinct channels exercised across the fires: passive fauna-feed, eyes-to-exits, pre-calc, cost-tracking, refusal-to-look, mask-thin, foreknowledge-clamp, fauna-track tilt, age-mismatch. A file that uses only one or two channels (e.g. all passive-fauna registrations) is undercovering. (Coverage is *across the fires that earn*, not coverage by inflating fires to hit channels.)
 - **Frequency band.** 15–25% of proto-lines fire (s01e01 expected: ~12–19 entries on 77 beats). Outside band, investigate: too dense = density-on-flat / no-contrast contamination; too sparse = mask-too-perfect file-level OR narrator-disengaged-episode (kickback signal to screen-writer).
 
 ### Scene-level shape
 
-For each scene (per tensometer's scene-frame definition):
+For each scene (per the scene-map file's `@<start>-@<end>` ranges):
 
 - **At least one fire per scene.** A scene where the POV character registers nothing is structurally suspicious. Default expectation: every scene contains at least one perceptual registration. Refusal must be flagged with explicit rationale (scene-as-respite, scene-as-pure-transit).
-- **Peak-cluster density.** A scene that contains a tens=3 beat must have a narrator-interest entry on or adjacent to the 3-beat. The narrator notices ruptures.
-- **Approach-zone permitted-sparse.** A long approach zone of tens=1 (e.g. s01e01 @1–@22) is permitted-sparse but not zero — the approach is where the eyes-to-exits sweep, the passive-fauna establishment, and the pre-calc surfacing are licensed even on 1-beats.
+- **Peak-cluster density.** A scene that contains a `peak-bones`-class bone must have a narrator-interest entry on or adjacent to that bone. The narrator notices ruptures.
+- **Approach-zone permitted-sparse.** A long `flat-low` approach zone is permitted-sparse but not zero — the approach is where the eyes-to-exits sweep, the passive-fauna establishment, and the pre-calc surfacing are licensed even in `flat-low` bones.
 
 ### When curve-shape fails
 
@@ -189,13 +189,13 @@ Narrator-interest's downstream consumers. Once narrator-interest is locked, thes
 
 ### Back-contract (what narrator-interest owes to upstream facets)
 
-- **Tensometer alignment.** Density must align with tensometer transitions and peaks per §"Curve-shape rubric". Narrator-interest is the consumer-side test that tensometer's curve is *perceptually load-bearing* and not just structurally drawn.
+- **Scene-map pressure-signal alignment.** Density must align with the scene-map's `rhythm-shape` transitions and `peak-bones` entries per §"Curve-shape rubric". Narrator-interest is the consumer-side test that the substance-delta pressure curve is *perceptually load-bearing* and not just structurally drawn.
 - **Location-state alignment (soft).** Loc-state fires at environment-frame turnover; narrator-interest density at loc-state fires is expected (the narrator notices when the frame changes). Soft alignment, not hard gate.
 
 ### What narrator-interest does NOT condition
 
 - Dialogue file content. Dialogue fires on its own register; narrator-interest is interiority. A line of dialogue may be content-rich without a narrator-interest co-citation (the speaker is the narrator's interlocutor, the narrator hears the line, but the entry fires only if she perceives *more* than the line says).
-- Tensometer (forward). Narrator-interest does not change tens ratings. If a beat's narrator-interest entry suggests a higher charge than its tens scalar, the auditor flags for cross-facet review — but tens stays locked.
+- Scene-map (forward). Narrator-interest does not change scene-map fields. If a beat's narrator-interest entry suggests different charge than the scene-map classification, the auditor flags for cross-facet review — but the scene-map stays locked (override is via /and-write re-run).
 - Vibes-updates. Vibe shifts are showrunner's call; narrator-interest is one signal among many.
 
 ---
@@ -204,25 +204,25 @@ Narrator-interest's downstream consumers. Once narrator-interest is locked, thes
 
 Five worked examples spanning the rubric. Used during Phase 1 reviewer tuning and Phase 2 writer-fork.
 
-- `s01e01:4 the beetles hold the seam in the flagstone gaps` — **fire.** Channel: passive fauna-feed (base-card primary channel); Westeros-variant: insects still part of her continuous register, this is establishing baseline. Voice: inventory-tell, reads in base register. Earning: tensometer=1 ambient, but episode-opening; one of three approach-zone fires expected to establish channel coverage. Entry shape: *the beetles' seam-hold is steady; the wheel-tremor has not arrived.*
+- `s01e01:4 the beetles hold the seam in the flagstone gaps` — **fire.** Channel: passive fauna-feed (base-card primary channel); Westeros-variant: insects still part of her continuous register, this is establishing baseline. Voice: inventory-tell, reads in base register. Earning: `flat-low` zone (ambient), but episode-opening; one of three approach-zone fires expected to establish channel coverage. Entry shape: *the beetles' seam-hold is steady; the wheel-tremor has not arrived.*
 
-- `s01e01:23 the officer's gaze fixes on taylor at the yard's far end` — **fire.** Channel: cost-tracking + eyes-to-exits (he is the threat-vector; her exit-sweep just got narrowed). Voice: cost-language, clinical. Earning: tensometer=2, transition 1→2 (first non-1 in the scene). Entry shape: *the watch-cost has just been priced to her name.*
+- `s01e01:23 the officer's gaze fixes on taylor at the yard's far end` — **fire.** Channel: cost-tracking + eyes-to-exits (he is the threat-vector; her exit-sweep just got narrowed). Voice: cost-language, clinical. Earning: scene-map `rising` zone (first non-flat bone in the scene — transition into rising pressure). Entry shape: *the watch-cost has just been priced to her name.*
 
-- `s01e01:24 the stylus stops on the board` — **fire.** Channel: pre-calc surfacing (she had already calculated the parallel-mark threshold; this is the beat where the calc surfaces). Voice: pre-calc tense, specificity. Earning: tensometer=3, peak. Entry shape: *she had already counted what the pause would commit; the pause has just committed.*
+- `s01e01:24 the stylus stops on the board` — **fire.** Channel: pre-calc surfacing (she had already calculated the parallel-mark threshold; this is the beat where the calc surfaces). Voice: pre-calc tense, specificity. Earning: bone listed in scene's `peak-bones` array (climax peak). Entry shape: *she had already counted what the pause would commit; the pause has just committed.*
 
-- `s01e01:38 taylor puts the letter into the air in front of the officer` — **fire.** Channel: cost-tracking + age-mismatch (the body's eleven-year-old reach versus the cognition's evaluation of the commit threshold). Voice: cost-language, body-physical-fact. Earning: tensometer=3, climax peak. Entry shape: *the exposure is paid; the body reaches at the height the cognition has already cleared.*
+- `s01e01:38 taylor puts the letter into the air in front of the officer` — **fire.** Channel: cost-tracking + age-mismatch (the body's eleven-year-old reach versus the cognition's evaluation of the commit threshold). Voice: cost-language, body-physical-fact. Earning: bone listed in scene's `peak-bones` array (climax peak). Entry shape: *the exposure is paid; the body reaches at the height the cognition has already cleared.*
 
-- `s01e01:33 the door stays shut` — **fire.** Channel: refusal-to-look-directly (Osmynd on the pallet, dying — Earth-Bet displacement trigger: child-harm-adjacent, helpless-tutor-figure). Voice: clinical-of-the-horrible, gap-narration. Earning: tensometer=2, behavior-pack displacement trigger. Entry shape: *the threshold holds and what is on the other side stays the size she will not name.* (This is the doubled-register exemplar: Earth-Bet shadow surfaces via the dying-protector-figure pattern without naming a monument.)
+- `s01e01:33 the door stays shut` — **fire.** Channel: refusal-to-look-directly (Osmynd on the pallet, dying — Earth-Bet displacement trigger: child-harm-adjacent, helpless-tutor-figure). Voice: clinical-of-the-horrible, gap-narration. Earning: scene-map `rising` zone with behavior-pack displacement trigger (not peak-bones-class, but the displacement trigger earns the fire). Entry shape: *the threshold holds and what is on the other side stays the size she will not name.* (This is the doubled-register exemplar: Earth-Bet shadow surfaces via the dying-protector-figure pattern without naming a monument.)
 
-- `s01e01:50 taylor turns to mira` — **NONE.** Channel: none lights (turning is transitional; no perceptual channel is invoked). Voice: n/a. Earning: tensometer=1, no transition, no behavior-pack trigger, no cross-facet anchor demand. Refusal-CORRECT.
+- `s01e01:50 taylor turns to mira` — **NONE.** Channel: none lights (turning is transitional; no perceptual channel is invoked). Voice: n/a. Earning: `flat-low` zone, no transition, no behavior-pack trigger, no cross-facet anchor demand. Refusal-CORRECT.
 
-- `s01e01:67 the officer's near foot lifts toward the horse` — **NONE.** Channel: arguably eyes-to-exits (his exit-vector is the next move) but the tens has just released to 1 and the scene is closing; her attention has shifted past the officer. Voice: n/a. Earning: tensometer=1 release zone, no transition, narrator-disengaging from the threat. Refusal-CORRECT (boundary case; defensible on disengagement).
+- `s01e01:67 the officer's near foot lifts toward the horse` — **NONE.** Channel: arguably eyes-to-exits (his exit-vector is the next move) but the scene has just shifted to `release-only` and the scene is closing; her attention has shifted past the officer. Voice: n/a. Earning: `release-only` zone, no transition, narrator-disengaging from the threat. Refusal-CORRECT (boundary case; defensible on disengagement).
 
 ---
 
 ## Author / reviewer notes
 
-- **Author:** dialogue-writer fork for the POV character (interiority output mode of the same fork that writes spoken dialogue). For `taylor-hebert-westeros`, the fork loads: base behavior card, Westeros-variant card, persona card, the locked tensometer file (for transition/peak alignment), the locked location-state file (for frame-turnover alignment), and this rubric. Two-pass authoring:
+- **Author:** dialogue-writer fork for the POV character (interiority output mode of the same fork that writes spoken dialogue). For `taylor-hebert-westeros`, the fork loads: base behavior card, Westeros-variant card, persona card, the scene-map facet file (`theater/facets/scene-map-<book>-<chapter>.md`) (for `rhythm-shape` + `peak-bones` transition/peak alignment — replaces pre-overhaul tensometer scalar), the locked location-state file (for frame-turnover alignment), and this rubric. Two-pass authoring:
   1. **Per-beat pass.** Walk the proto-line file. For each beat, decide FIRE or NONE. If FIRE, write the entry, name the channel, name the trigger.
   2. **File-shape pass.** Read the file as a curve. Check episode-level density alignment, doubled-register visibility, behavior-pack channel coverage. Either fix misfires (NONE→FIRE add for missing coverage; FIRE→NONE strip for density-on-flat-1) or flag screen-writer kickback for structural gaps. **Do not inflate to hit density.**
 - **Reviewer (mechanic auditor):** under this rubric. Per-entry verdict for fires: CORRECT (all three axes earned, no anti-pattern fired) or INCORRECT (named axis-failure or anti-pattern). Per-entry verdict for refusals: CORRECT (no axis earned a fire) or MISSED (a channel + trigger combination earned a fire that the author skipped). File-level verdict: SHAPE-OK / SHAPE-FAIL with named density / coverage / register failure mode. Cross-facet contract pre-ship check.

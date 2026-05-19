@@ -6,12 +6,30 @@ project: taylor-westeros-good-intentions
 world: planetos
 origin: authored
 quality: full
+status: superseded
+superseded-by: cond-cost-bearer-scene-frequency
+superseded-at: 2026-05-19
+superseded-reason: >
+  Cost-bearer identity resolved at /and-cast Phase 3 to Wren
+  (wren-stitch-maker-flea-bottom-ward, age 11) rather than the
+  pre-resolution placeholder Nessa (age 8). The canonical card is
+  cond-cost-bearer-scene-frequency. This file is retained for
+  preservation only; do NOT load it as an active constraint.
 references:
   - cond-taylor-pov-behavior
   - cond-maester-chronicler-voice
 ---
 
-# Nessa — Cost-Bearer Presence and Closing-Image Rule
+> **SUPERSEDED 2026-05-19 — DO NOT LOAD AS ACTIVE CONSTRAINT.**
+> The cost-bearer of this project is Wren (wren-stitch-maker-flea-bottom-ward,
+> age 11), resolved at `/and-cast` Phase 3. The canonical scene-frequency /
+> closing-image / ledger-anomaly card is `cond-cost-bearer-scene-frequency`.
+> This file documents an earlier brainstorm path naming "Nessa" as the
+> cost-bearer; that name was explicitly rejected by name-novelty discipline
+> in the cast brief. Retained in the warehouse for preservation; not part of
+> the active constraint set.
+
+# Nessa — Cost-Bearer Presence and Closing-Image Rule (SUPERSEDED)
 
 ## Description
 
