@@ -2,6 +2,18 @@
 
 ## Mutation Log
 
+### 2026-05-19 — Cycle-2 monument referral resolution: mem:1 @16
+
+**Referral type:** monument-card target-reference resolution (cycle-2 within-cycle remediation pass; HARD-002)
+**Decision:** CREATE — new monument card authored
+**Survey result:** Only one existing monument card (`monument-override-architecture-prohibition-122ac`). That card covers the override-capability / vow monument (deployed-capability, threshold-of-doing). Distinct from the administrative-observation-apparatus monument (surveillance-of-parahuman / once-uniform-watcher matrix, threshold-of-recognizing). Families are genuinely distinct; no existing card covers the target family.
+**Card authored:** `cards/conditions/monument-administrative-observation-apparatus-122ac.card.md` — class: condition, scope: library, world: planetos, quality: full. Covers the Earth-Bet institutional-observation apparatus (cape-policing / cape-tracking bureaucracy), the family-of-shape recognition that fires on uniformed institutional formations in organized measured motion, the observation-axis dual-position Taylor occupied (observed / observer), the rhyme-structure monument trigger.
+**INDEX updated:** `cards/conditions/INDEX.md` — slug added to by_world (planetos), by_quality (full), by_type (monument-interior).
+**mem:1 target-reference updated:** `active-project/theater/facets/memory.md` line 15 — target-reference changed from free-text `(earth-bet: administrative-observation-apparatus displacement)` to resolved slug `monument-administrative-observation-apparatus-122ac`. Entry text and anchor (@16) untouched.
+**Report file:** `active-project/staff/margit/cycle-2-monument-referral-mem1.md`
+
+---
+
 ### 2026-05-19 — Cycle-2 monument referral resolution: mem:2 @23
 
 **Referral type:** monument-card target-reference resolution (dispatched from fixer cycle-2 remediation report)

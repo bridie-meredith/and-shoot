@@ -477,3 +477,20 @@ criteria met: yes — specificity gap resolved by referencing state:18's arrival
 findings-applied: 9 (loc-state: 2 cuts; feeling: 1 second-clause cut; sensory: old-state baselines documented + thermal-gap dependency collapsed; interest-narrator: 2 entries rewritten + 1 monument ADD; state-updates: 5 entries revised/cut + 1 clarified; memory: 1 relocated + 1 monument ADD + margit referral noted; exposition: 1 Hook ADD; dialogue-coll: facet-license filled + defense note; dialogue-wren: feel-citation corrected + state specificity resolved)
 findings-skipped: 0 (all 9 facet failures processed; margit referral for mem:2 monument card is pending action flagged in remediation report — not a skip, a routing)
 exit: CLEAN (one margit referral pending; documented in remediation report)
+
+## SESSION-START — 2026-05-19T18:00:00Z — cycle2-signal002-physical-delete
+dispatch: physically delete state-updates.md entry 11 and its cut-flag comment; check renumber-vs-gap; SIGNAL-002 close
+target: active-project/theater/facets/state-updates.md
+audit-report: active-project/staff/auditor/facets-final-audit-cycle2.md
+findings-queued: 1 (SIGNAL-002)
+
+## SIGNAL-002 — RESOLVED — 2026-05-19T18:05:00Z
+fault: state-updates.md entry 11 (@12 actor:taylor-hebert-kl-122ac.knowledge.hook-block-density-map: unmapped -> block-density-mapped-passively) was live physical entry despite being flagged for cut; fires canonical knowledge acquisition under active discipline-hold at @8 with no released-from-hold transition
+scope: line
+change: physically deleted entry 11 line and its cut-flag comment block from state-updates.md; replaced with single gap-documentation comment: "entry 11 DELETED (cycle-2 fixer pass-2, 2026-05-19 — SIGNAL-002 physical cut): ID gap 10→12 intentional; cite-index references state:11 in co= fields of state:17 and state:20; IDs 12+ not renumbered to preserve cite-index integrity." No renumbering: cite-index _cite-index.md references state:11 in co= fields of state:17 @26 and state:20 @26 (lines 63, 66); renumbering would break those references. Dialogue files (coll, wren, taylor) and staff/dialogue-writer drafts confirmed free of state:1x numeric ID references. Gap 10→12 is the correct path.
+criteria met: yes — no live physical entry at former entry-11 slot; discipline-hold/passive-acquisition contradiction resolved; state:11 ID preserved as dead reference in cite-index (gap-documented); IDs 12-20 unchanged
+
+## SESSION-END — 2026-05-19T18:06:00Z — cycle2-signal002-physical-delete
+findings-applied: 1 (SIGNAL-002)
+findings-skipped: 0
+exit: CLEAN

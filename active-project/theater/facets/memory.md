@@ -12,7 +12,7 @@ cycle-2-revision: 2026-05-19 (fixer dispatch — peak-anchor relocation + Wester
 # @15 is the chapter's institutional-pressure peak (8 co-fires); quiet-beat instrument belongs in aftermath;
 # scene-map: scene-B @11-@20, rhythm-shape: flat-low, peak-bones: none — @16 is quiet-beat eligible;
 # the patrol has passed at @15; @16 is when the count settles into the hands; correct slot for interior-reaching-backward
-1 @16 the patrol moving past in a measured count rhymes with another uniform she had reasons to track from the inside of a doorway -> (earth-bet: administrative-observation-apparatus displacement)
+1 @16 the patrol moving past in a measured count rhymes with another uniform she had reasons to track from the inside of a doorway -> monument-administrative-observation-apparatus-122ac
 # relocated from @15; instrument timing: the echo arrives in the working-pause after the Watch clears the arc, not while the column is at the threshold
 
 2 @23 the read runs before the rule catches it; the architecture she came here to refuse arrives on its own legs and is held at the threshold of deployment -> monument-override-architecture-prohibition-122ac
