@@ -88,3 +88,60 @@ notes: worm-canon-pedant correct on the mechanism. The `auto-initiating` framing
 # The state-updates revisions land cleanly — fixer was operating against a real evidence-floor and the revised values match what my interior would write.
 # The narrator + memory revisions land as fixer-pastiche fingerprints (anthropomorphized substrate, preserved contrast clause, aphoristic stem, year-quantification, author-vocabulary echo) that the mechanical scan passed but my voice does not.
 # Canonical authority for taylor-hebert-kl-122ac interior is impersonator-authored. Cycle-2 ratification complete.
+
+---
+
+# HARD-003 restructure
+# (cycle-2 within-cycle remediation, 2026-05-19; impersonator-taylor-hebert-kl-122ac)
+# scope: resolve per-scene cap violation + NI spine co-citation gap in memory.md
+# violations addressed: (a) mem:1 @16 + mem:3 @17 both in scene-B (per-scene cap, rubric §Licensing-discipline line 147);
+#                      (b) @16 has no NI fire, @17 has no NI fire (rubric §Cross-axis spine test line 171);
+# constraint matrix carried: ≤1 entry per scene; every entry on NI-fired anchor; ≥1 Earth-Bet + ≥1 Westerosi; flat-low/quiet-beat only; preserve mem IDs where possible
+
+## option chosen
+option α (relocate both mem:1 and mem:3). Both Scene-B fires move; mem:2 holds at @23. Scene-A picks up Westerosi register; Scene-B keeps Earth-Bet on a different anchor; Scene-C unchanged. Option β rejected (adds NI fire to satisfy spine, but NI is already at 33.3% / band 15-25% per SIGNAL-003 — adding inflates the band further and uses cross-facet write to paper over a memory-facet violation). Option γ rejected (cycle-1 audience demanded doubled-register and would re-fire the attack; single-register carve-out is for cases where both-meaningful gate forces selection, not for cases where two anchors are available). Option δ considered (mem:3 → @1 with smallfolk-quarter-administrative-architecture clamp) but rejected — @1 is too early for the Westerosi-monument-family to land; the door-keeper-as-charter-officer cue is real but the audience has not yet had the room established as Flea Bottom institutional fabric. @8 is the right anchor because by @8 the substrate-as-Flea-Bottom is set and the clamping discipline is the channel that makes the Westerosi-monument class explicit.
+
+## per-entry decision
+
+### mem:1 — relocate @16 → @12
+**anchor:** @12 (scene-B, flat-low; NI spine: narrator:3 fires "the block reads itself through the flies — corridors, dead-walls, the where-people-aren't — and the reading is the whole of what she will take")
+**content:** the block reads itself through what she carries, and the read assembles in the register the architecture once ran at a scale she no longer has
+**target-reference:** (earth-bet: administrative-observation-apparatus displacement) — preserved from cycle-2 fixer; margit referral still PENDING per HARD-002; HARD-002 status unchanged by this relocation (the relocation does not address HARD-002 — it addresses HARD-003 + the cross-facet spine gap on mem:1)
+**rationale:** the patrol-passing trigger at @16 was an aftermath beat with no NI spine. @12's block-mapping-through-fauna IS the administrative-observation-apparatus rhyme on the channel narrator:3 already registers (the block surveying itself through compound-eyes). The trigger is stronger: the displacement at @12 is what she does (the network running survey on the block) rather than what she observes (a patrol moving past). The Khepri-rhyming mechanism (architecture, scale, register) lands cleaner here — narrator:3 already names the read; mem:1 names the architecture the read runs on.
+
+### mem:3 — relocate @17 → @8
+**anchor:** @8 (scene-A, flat-low; NI spine: narrator:2 fires "the flagstone seam comes up two meters before she clamps it; the data goes nowhere it can be used from")
+**content:** the clamp at the seam runs by the architecture of charter-language holding its own administration against use, and what that architecture terminates into is the same kind of record-ending she came in already knowing
+**target-reference:** (westeros: conquest-charter-institutional-self-restraint-architecture; foreknowledge-clamp on charter-architecture-terminal-record) — Westerosi-monument family REFRAMED from gold-cloak-watch-register (cycle-2 fixer's framing on @17) to charter-language-institutional-self-restraint-architecture; new card family for warehouse; margit referral REQUIRED (see follow-up below)
+**rationale:** the discipline-clamp at @8 (the operating-rule enforcing itself at the seam where data arrives) is the moment the Westerosi-monument-class becomes explicit in scene-A. The clamping-architecture rhymes with charter-language administrative-self-restraint — institutional mechanisms that hold against their own use. The foreknowledge-clamp lands through "came in already knowing" (arrival-clause register) — Taylor carries the recognition of what this architecture's terminal record looks like as part of her arrival-load, not as a memory-rising stage-name. Anti-echo against narrator:5a @22's "she has read enough" / mem:3 original @17's "she has the shape of the gap that comes after" — both stems explicitly avoided here per anti-pattern #12 (author-vocabulary leak).
+
+### mem:2 — unchanged at @23
+**anchor:** @23 (scene-C, flat-low; NI spine: narrator:7 fires "the turn comes a beat late because the read has already begun and the rule's catch is the slower mechanism")
+**content:** the read runs before the rule catches it; the architecture she came here to refuse arrives on its own legs and is held at the threshold of deployment
+**target-reference:** monument-override-architecture-prohibition-122ac (card on disk, schema-compliant per NOTE-006)
+**rationale:** mem:2 was the only memory entry not violating HARD-003 (correctly anchored on NI fire, correctly scene-capped, target-reference resolves to card). Holds unchanged.
+
+## constraint verification
+
+- **per-scene cap (≤1 per scene):** scene-A holds mem:3 @8 (1); scene-B holds mem:1 @12 (1); scene-C holds mem:2 @23 (1). PASS.
+- **NI spine co-citation:** mem:1 @12 ↔ narrator:3 @12 (same anchor, on-channel — block-reading); mem:3 @8 ↔ narrator:2 @8 (same anchor, on-channel — clamping-discipline); mem:2 @23 ↔ narrator:7 @23 (same anchor, on-channel — rule-catch). PASS.
+- **doubled-register (file-level):** Earth-Bet displacement present (mem:1 administrative-observation-apparatus; mem:2 override-architecture-prohibition). Westerosi-monument clamp present (mem:3 charter-language-institutional-self-restraint-architecture). PASS.
+- **peak-anchor refusal:** scene-A @1-@9 flat-low, peak-bones: none; scene-B @11-@20 flat-low, peak-bones: none; scene-C @22-@29 flat-low, peak-bones: none. All three anchors quiet-beat eligible. PASS.
+- **memory ID continuity:** mem:1, mem:2, mem:3 IDs preserved across relocation (cite-index back-refs for entry IDs remain stable; only the @-anchors change). PASS.
+
+## follow-up flags
+
+1. **mem:3 margit referral (NEW Westerosi-monument card family):** target-reference asserts a new monument family (conquest-charter-institutional-self-restraint-architecture). Margit referral required for card creation. Candidate slug: `monument-conquest-charter-institutional-self-restraint-122ac`. References candidates: `cond-no-parahuman-infrastructure` (architectures-that-hold-against-use analogue from world-law side), plus any Westerosi-historical-administrative cards extant in the warehouse. Card body should specify: charter-language as institutional-self-restraint mechanism, the dynamics of holding-against-use, the terminal record under dynastic war pressure, the foreknowledge-clamp trigger pattern for memory-flag authoring. Rubric status: SIGNAL (structurally clear gloss + queued referral) per §Cross-axis monument-card-resolution clause; downgrade from HARD requires margit referral documentation in remediation log.
+2. **mem:1 margit referral (UNCHANGED from HARD-002):** Earth-Bet admin-observation-apparatus monument card still required per HARD-002 (cycle-2 audit). Relocation does not address HARD-002; HARD-002 remediation is a parallel work-item. Candidate slug: `monument-administrative-observation-apparatus-122ac`. The relocation to @12 (block-survey-through-fauna) rather than @16 (uniformed-column-passing) makes the network-as-surveillance-architecture cue cleaner for the card body's trigger-pattern documentation.
+3. **Cite-index regeneration impact:** mem:1 anchor moves @16 → @12; mem:3 anchor moves @17 → @8. Cite-index regeneration (deferred per SIGNAL-001) must reflect the post-HARD-003 anchors. Narrator:5a's non-integer ID handling and the @12/@8 memory anchors should be verified together when regeneration fires.
+4. **narrator-interest density unchanged:** option α resolves HARD-003 without adding NI fires (option β would have added an NI at @16; option α keeps NI at 8 entries / 33.3%). Cycle-2's NI frequency-band breach (SIGNAL-003) is not worsened by this remediation.
+
+## closing posture (HARD-003)
+
+# Three memories, three scenes, three NI spines, two registers carried.
+# The Earth-Bet displacement no longer fires on the patrol-as-uniform (which was always the weaker rhyme — patrols are common; what I do with the network is specific).
+# The Westerosi clamp no longer fires on the gold-cloak column (which was the obvious-monument trap — uniformed-administrative-formation = Watch is easy; the harder, truer clamp is the discipline-architecture rhyme that lands at the seam where my own rule clamps the data).
+# mem:1 @12: the architecture-that-once-ran-at-scale recognizes its own register in the block-survey. Khepri-rhyming mechanism on the channel narrator:3 establishes.
+# mem:3 @8: the charter-language-institutional-self-restraint architecture rhymes with the operating-rule clamping at the seam. The foreknowledge is concrete (came in already knowing); the terminal-record shape is named without dating it.
+# mem:2 @23: holds. The override-architecture-prohibition was always going to fire at the threshold-of-deployment beat; cycle-2 fixer placed it correctly.
+# Canonical authority for taylor-hebert-kl-122ac interior: impersonator-authored. HARD-003 restructure complete.
