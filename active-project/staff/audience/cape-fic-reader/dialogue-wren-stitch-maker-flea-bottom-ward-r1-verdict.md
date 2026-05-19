@@ -1,72 +1,25 @@
-persona: cape-fic-reader
+---
+reviewer: cape-fic-reader
 facet: dialogue
 character: wren-stitch-maker-flea-bottom-ward
-episode: b01c01
 cycle: 1
-stage: V2 + V3
+episode: b01c01
 date: 2026-05-19
-
+verdict: revise
 ---
 
-## V2 — Strict Affirmative-Demonstration
+# Stage 1 — V2 strict affirmative-demonstration
 
-### Entry reviewed
-`1 @22 | open to the stranger by asking after the work without naming what she has noticed | "Mistress Coll teach you that knot?"`
+- [wren-stitch-maker-flea-bottom-ward:1] @22 — Q1: PASS — line affirmatively demonstrates `westeros-smallfolk §Voice tells — authority-by-elder` (routes question through Coll by name, the structural mechanism the sidecar names as the reason Draft C beats A and B), `§Vocabulary/forms-of-address — *Mistress*` (class-correct honorific for trade-elder), and `§Cadence — Short sentences` (five words, zero subordination). Citation-completeness per CONSTRAINT §: card §-sections cited; facet-license citations present (`state-wren:@22`, `feel-wren:@22`). Q2: PASS — no Earth-Bet substring in utterance; no anachronistic idiom; no Latinate vocabulary (*teach*, *knot* are Anglo-Saxon); no noble-register intrusion; no AP-SCAN violations; per-anchor cap (1 of ≤3). Stage-1 verdict: accept.
 
-### Q1 — Affirmatively demonstrates ≥1 card signature?
+# Stage 2 — V3 adversarial seam-finding
 
-PASS.
+- [wren-stitch-maker-flea-bottom-ward:1] @22 — seam: Cape-fic-reader tracks information-state geometry: who knows what, when, and whether the board-move is legible to the reader at the moment it fires. The sidecar positions this line as an observation-first opening — "her eyes were on the knot before her mouth opened" — with the structural co-load carried by `feel-wren-stitch-maker-flea-bottom-ward:@22`. But the cite-index shows `feel:2` anchoring at **@21** (`wren-stitch-maker-flea-bottom-ward approaches taylor-hebert-kl-122ac`), not @22. There is no `feel` entry at @22 in the cite-index co-citation list for `wren-stitch-maker-flea-bottom-ward:1`. The somatic-tell co-load that the sidecar claims — "body bears the cost while the mouth makes the small, in-trade move" — is asserted to fire at @22, but the graph places the feeling entry one anchor earlier. For the cape-fic-reader: the cited license does not resolve at the declared anchor. The "observation-before-action" structural claim (Wren's eyes on the knot, not her approach-posture generally) is therefore graph-unsupported at @22. The line can stand on its card-signature citations alone, but the facet-license co-load cited in the sidecar does not close the seam it is cited to close; facet-license attack: `feel-wren-stitch-maker-flea-bottom-ward:@22` resolves in the cite-index at @21, not @22 — the somatic-co-load license cited by the sidecar does not anchor at the dialogue entry's proto-line.
 
-The drafts sidecar cites three card-§-sections with specificity:
+# Verdict reasoning
 
-- `westeros-smallfolk §Voice tells — authority-by-elder`: The line routes the question through Coll by name. This is not merely on-card-compatible; the elder-naming is the structural mechanism of the opening move. "Mistress Coll" is the relation Wren can place — the citation explains why this draft over Drafts A and B, both of which skip the elder-routing. Affirmative demonstration of the §-feature is legible.
+Stage-1 passes on both Q1 and Q2: the line is on-card, demonstrates card signatures with specific §-citations, and is clean of all fences. However, the V3 adversarial read surfaces a structural citation-resolution failure that the rubric's CONSTRAINT § citation-completeness and R2 judge-mode mandate ("facet-license citations resolve in locked graph") treat as load-bearing: the sidecar cites `feel-wren-stitch-maker-flea-bottom-ward:@22` as the structural co-load for the "body bears cost / mouth makes move" claim, but the cite-index places the Wren feeling entry at @21, not @22. A facet-license that does not anchor at the cited proto-line is a graph seam, not merely a craft note. Under facet-adversarial review rules (URI-AUDIENCE-AGGREGATION-RULE: single dissent fails), this reviewer emits revise.
 
-- `westeros-smallfolk §Cadence — Short sentences`: Five words. No subordination. Single interrogative stacking one fact (Coll-as-teacher) onto one object (the knot). This demonstrates the cadence pattern rather than merely complying with it — the spare construction does active work.
+# Convergence trace (orchestrator-critic input)
 
-- `westeros-smallfolk §Vocabulary — Forms of address (descending)`: "Mistress" is the smallfolk trade-elder honorific, class-correctly applied. The card names "Mistress" (the goodwife/tradeswoman variant). Usage is precise, not generic.
-
-The GRRM overlay signature (plain Anglo-Saxon: *teach*, *knot*, refusing *instruct* / *demonstrate*) is cited and holds. This is the overlay card's high-priority fence (Latinate substitution refusal) affirmatively demonstrated.
-
-Card-signature citation-completeness: card §-sections cited, facet-license citations present (`state-wren:@22`, `feel-wren:@22`). Both citation axes populated. CONSTRAINT § citation-completeness: PASS.
-
-Q1: PASS.
-
-### Q2 — Card not violated?
-
-PASS.
-
-Hard fences checked:
-
-- Earth-Bet proper-noun scan across "Mistress Coll teach you that knot?": clean. No substring hit on canonical fence list.
-- `westeros-smallfolk §Refuses to say`: No Latinate multi-syllable vocabulary. No anachronistic idiom (*okay, fine, yeah*). No noble register (*my lord*, *indeed*, *certainly*). No irony directed up the hierarchy. No bare proper-noun reference to a noble figure (Coll is a trade-elder, not a lord). PASS.
-- `westeros-smallfolk §Authoring notes — child smallfolk`: The card states "extra trailing softeners and faster pacing under pressure." This is not a pressure situation — the card explicitly permits the unforced version without a softener. The line has no softener. PASS.
-- `westeros-grrm-mannerisms` overlay: No time-keeping vocabulary errors. No anachronism. No Latinate substitution. PASS.
-- `cond-earth-bet-noun-fence`: The utterance text is clean. PASS.
-- Per-anchor caps: 1 utterance at @22 (≤3). PASS.
-- AP-SCAN: no em-dash + semicolon chassis; no modern HR-speak; no deposition cadence; no nominalization substituting for plain English. PASS.
-
-Q2: PASS.
-
-### V2 verdict: ACCEPT
-
-Both Q1 and Q2 pass. The line is not merely inoffensive — the elder-routing structure, the honorific precision, and the cadence compaction collectively demonstrate the card rather than comply with it. The chosen-mark claim ("card-signature work is doubled: smallfolk authority-by-elder vocabulary AND Wren's observation-before-action stance, both demonstrated in five words") is defensible on the evidence.
-
----
-
-## V3 — Adversarial Seam-Finding (cape-fic-reader lens)
-
-Lens: information asymmetry, who-knows-what-when coherence, rule-consistency, earned trust.
-
-**Strongest hostile counter-argument:**
-
-The information-structure of the question is correct, but the rule being demonstrated — "Wren routes the opening through the elder she can place before the stranger she cannot" — is never actually tested by this single line. The line *states* that Wren has been watching Taylor long enough to identify a specific knot. That is an information-state claim: Wren has observed the knot being tied, attributed it as noteworthy (unusual, not a local pattern), and then chosen to approach. The proto-line anchor @21 carries `[narrator:5]` and the cite-index has narrator:5 as lonely (no co-located facets, no inbound license). The NI entry at @21 is the one that should establish that Taylor's knot is unusual enough to prompt the question — that Wren's approach is observationally motivated, not arbitrary. If narrator:5 is weak or underspecified at @21, the information-asymmetry premise of the dialogue line is hanging without structural support: Wren asks about the knot, but the reader hasn't been told the knot is strange.
-
-The drafts sidecar says: "her eyes were on the knot before her mouth opened" — that claim is licensed by `state-wren:@22`. But the state facet fires at @22, after the approach has already happened at @21. The watching-the-knot motivation is claimed at @22, not established at @21. The cape-fic-reader tracks: does Wren know something at @22 that the reader was shown at @21? If narrator:5 at @21 only establishes Wren's approach posture without establishing the knot-observation specificity, the information-structure is unearned. The dialogue line is correct within itself; the question is whether the licensing work lives where the sidecar claims.
-
-**Seam statement:** The facet-license claim (`state-wren:@22` for the knot-observation motivation) fires at the dialogue anchor, not at the approach anchor (@21) where the reader would need to see what drew Wren in. Narrator:5 @21 is lonely and carries no back-licensed co-entries. If narrator:5 does not name the knot-as-anomaly, the question "Mistress Coll teach you that knot?" arrives before the information-state that would make it legible as observation-first rather than arbitrary approach. The seam is not in the line; the seam is in the facet-licensing geometry upstream of the line.
-
-**Seam class:** facet-license citation not fully resolved in the graph — the claimed observation-first motivation is downstream of the approach anchor, not upstream. This is a graph-adjacency seam, not a card-compliance seam.
-
-**Verdict effect on V2 ACCEPT:** The seam does not directly invalidate Q1 or Q2 for the dialogue line itself. The line demonstrates the card. The seam is an upstream support question. Under the rubric (§V3 — "Facet evidence is fair attack surface"), this is a legitimate seam, not a card-violation finding. The V2 ACCEPT stands.
-
-**Seam severity:** MODERATE. The line can stand. The seam should route to fixer or to a targeted narrator:5 check — does that entry establish the knot-anomaly or only the approach posture?
+The feeling-anchor mismatch (feel:2 at @21, not @22) does not appear in the r1 auditor report or the r2-verify. The r2-verify CONSTRAINT § citation-completeness check confirmed that both citation axes (card-signatures and facet-licenses) are present in the sidecar — it did not verify that the facet-license anchor matches the dialogue entry's proto-line anchor. This is a seam the mechanical scan did not surface. No direct overlap with any named auditor finding (C-001, C-002 are both vibes-class; this is dialogue-feel class). Callout routes to fixer as a new citation-resolution gap for cycle 2.
