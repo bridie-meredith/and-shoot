@@ -1,9 +1,9 @@
 # Cite-Index — b01-c01
-generated: 2026-05-19 (cycle-2 within-cycle re-audit regeneration)
+generated: 2026-05-19 (cycle-3 re-audit regeneration — sensory density remediation)
 source: active-project/theater/facets/ (all facet files; proto-lines file EXCLUDED — stale per HARD-001; co= derived from same-@-position co-residence in current facet files)
 scope: 12 facet files (location-state, interest-narrator, memory, sensory, state-updates [consolidated], feeling [consolidated], metaphor, vibes, exposition, scene-map)
-note: state:11 gap (DELETED cycle-2 SIGNAL-002); state:17 gap (CUT cycle-2 fixer); loc-state:3 @11 + loc-state:4 @13 CUT → current loc-state numbering is 4 entries (1@1, 2@9, 3@15, 4@20); narrator:5a @22 ADD; exposition:5 @20 ADD; mem:1 relocated @15→@12; mem:3 added @8
-totals: 67 facet entries; 19/24 protolines decorated (79.2%)
+note: state:11 gap (DELETED cycle-2 SIGNAL-002); state:17 gap (CUT cycle-2 fixer); loc-state:3 @11 + loc-state:4 @13 CUT → current loc-state numbering is 4 entries (1@1, 2@9, 3@15, 4@20); narrator:5a @22 ADD; exposition:5 @20 ADD; mem:1 relocated @15→@12; mem:3 added @8; sensory:2 @9 CUT (cycle-3 density remediation) → sensory now 2 entries (sensory:1 @1, sensory:2 @15 [was sensory:3])
+totals: 66 facet entries; 19/24 protolines decorated (79.2%)
 
 ## Density distribution (protolines by citation count)
 
@@ -18,6 +18,8 @@ totals: 67 facet entries; 19/24 protolines decorated (79.2%)
 | 7          | 1     |
 | 8          | 1     |
 
+_Note: @9 drops from 3 citations to 2 (loc-state:2, vibes:7) after sensory:2 cut. Distribution row "3" decreases by 1, "2" increases by 1 vs. cycle-2._
+
 ## Per-facet entries
 
 ### tens (0 entries)
@@ -25,24 +27,24 @@ _(no entries)_
 
 ### loc-state (4 entries)
   loc-state:1 @1 back=Y co=[narrator:1, sensory:1, state:1, vibes:1, vibes:2, vibes:3, vibes:4]
-  loc-state:2 @9 back=Y co=[sensory:2, vibes:7]
-  loc-state:3 @15 back=Y co=[exposition:3, narrator:4, sensory:3, state:12, vibes:10, vibes:12]
+  loc-state:2 @9 back=Y co=[vibes:7]
+  loc-state:3 @15 back=Y co=[exposition:3, narrator:4, sensory:2, state:12, vibes:10, vibes:12]
   loc-state:4 @20 back=Y co=[exposition:4, exposition:5, state:18, vibes:19]
 
 ### narrator (8 entries)
   narrator:1 @1 back=Y co=[loc-state:1, sensory:1, state:1, vibes:1, vibes:2, vibes:3, vibes:4]
   narrator:2 @8 back=Y co=[mem:3, state:10]
   narrator:3 @12 back=Y co=[mem:1, vibes:8, vibes:11]
-  narrator:4 @15 back=Y co=[exposition:3, loc-state:3, sensory:3, state:12, vibes:10, vibes:12]
+  narrator:4 @15 back=Y co=[exposition:3, loc-state:3, sensory:2, state:12, vibes:10, vibes:12]
   narrator:5 @21 back=Y co=[feel:2, vibes:13]
   narrator:5a @22 back=Y co=[state:14, state:19, vibes:14, vibes:15]
   narrator:6 @24 back=Y co=[state:15, vibes:16]
   narrator:7 @23 back=Y co=[feel:1, mem:2, meta:1, vibes:17]
 
-### sensory (3 entries)
+### sensory (2 entries)
   sensory:1 @1 back=Y co=[loc-state:1, narrator:1, state:1, vibes:1, vibes:2, vibes:3, vibes:4]
-  sensory:2 @9 back=Y co=[loc-state:2, vibes:7]
-  sensory:3 @15 back=Y co=[exposition:3, loc-state:3, narrator:4, state:12, vibes:10, vibes:12]
+  sensory:2 @15 back=Y co=[exposition:3, loc-state:3, narrator:4, state:12, vibes:10, vibes:12]
+  # sensory:2 ID-note: was sensory:3 in cycle-2 cite-index; renumbered after sensory:2 @9 CUT (cycle-3 density remediation, 2026-05-19)
 
 ### state (18 active entries; gaps at 11 [DELETED] and 17 [CUT])
   state:1 @1 back=Y co=[loc-state:1, narrator:1, sensory:1, vibes:1, vibes:2, vibes:3, vibes:4]
@@ -56,7 +58,7 @@ _(no entries)_
   state:9 @5 back=N co=[state:3]
   state:10 @8 back=N co=[mem:3, narrator:2]
   # state:11 DELETED (cycle-2 within-cycle remediation, SIGNAL-002) — ID gap preserved; IDs 12+ not renumbered
-  state:12 @15 back=N co=[exposition:3, loc-state:3, narrator:4, sensory:3, vibes:10, vibes:12]
+  state:12 @15 back=N co=[exposition:3, loc-state:3, narrator:4, sensory:2, vibes:10, vibes:12]
   state:13 @18 back=N co=[state:5]
   state:14 @22 back=N co=[narrator:5a, state:19, vibes:14, vibes:15]
   state:15 @24 back=N co=[narrator:6, vibes:16]
@@ -85,12 +87,12 @@ _(no entries)_
   vibes:4 @1 back=Y co=[loc-state:1, narrator:1, sensory:1, state:1, vibes:1, vibes:2, vibes:3] lic-out=[proto:1, proto:2, proto:3]
   vibes:5 @3 back=Y co=[exposition:2, state:6, state:8] lic-out=[proto:3, proto:4, proto:5]
   vibes:6 @4 back=Y lic-out=[proto:4, proto:5]
-  vibes:7 @9 back=Y co=[loc-state:2, sensory:2] lic-out=[proto:9]
+  vibes:7 @9 back=Y co=[loc-state:2] lic-out=[proto:9]
   vibes:8 @12 back=Y co=[mem:1, narrator:3, vibes:11] lic-out=[proto:12]
   vibes:9 @14 back=Y lic-out=[proto:7, proto:14, proto:17]
-  vibes:10 @15 back=Y co=[exposition:3, loc-state:3, narrator:4, sensory:3, state:12, vibes:12] lic-out=[proto:15]
+  vibes:10 @15 back=Y co=[exposition:3, loc-state:3, narrator:4, sensory:2, state:12, vibes:12] lic-out=[proto:15]
   vibes:11 @12 back=Y co=[mem:1, narrator:3, vibes:8] lic-out=[proto:12, proto:13]
-  vibes:12 @15 back=Y co=[exposition:3, loc-state:3, narrator:4, sensory:3, state:12, vibes:10] lic-out=[proto:12, proto:15, proto:16]
+  vibes:12 @15 back=Y co=[exposition:3, loc-state:3, narrator:4, sensory:2, state:12, vibes:10] lic-out=[proto:12, proto:15, proto:16]
   vibes:13 @21 back=N co=[feel:2, narrator:5] lic-out=[proto:20, proto:21]
   vibes:14 @22 back=Y co=[narrator:5a, state:14, state:19, vibes:15] lic-out=[proto:22, proto:23, proto:24, proto:25]
   vibes:15 @22 back=Y co=[narrator:5a, state:14, state:19, vibes:14] lic-out=[proto:23, proto:24, proto:25]
@@ -106,7 +108,7 @@ _(no entries)_
 ### exposition (5 entries)
   exposition:1 @0 back=N
   exposition:2 @3 back=Y co=[state:6, state:8, vibes:5]
-  exposition:3 @15 back=Y co=[loc-state:3, narrator:4, sensory:3, state:12, vibes:10, vibes:12]
+  exposition:3 @15 back=Y co=[loc-state:3, narrator:4, sensory:2, state:12, vibes:10, vibes:12]
   exposition:4 @20 back=Y co=[exposition:5, loc-state:4, state:18, vibes:19]
   exposition:5 @20 back=Y co=[exposition:4, loc-state:4, state:18, vibes:19]
 
@@ -114,7 +116,7 @@ _(no entries)_
 
 - **@1** (8): loc-state:1, narrator:1, sensory:1, state:1, vibes:1, vibes:2, vibes:3, vibes:4
     `taylor-hebert-kl-122ac enters the corner-room`
-- **@15** (7): exposition:3, loc-state:3, narrator:4, sensory:3, state:12, vibes:10, vibes:12
+- **@15** (7): exposition:3, loc-state:3, narrator:4, sensory:2, state:12, vibes:10, vibes:12
     `the city-watch passes the hook`
 - **@22** (5): narrator:5a, state:14, state:19, vibes:14, vibes:15
     `wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac`
