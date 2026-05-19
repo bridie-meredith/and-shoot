@@ -2,6 +2,17 @@
 
 ## Mutation Log
 
+### 2026-05-19 — Cycle-2 monument referral resolution: mem:3 @8 (third referral within cycle-2)
+
+**Referral type:** monument-card target-reference resolution (cycle-2 third referral; mem:3 Westerosi-monument-card)
+**Decision:** USE-EXISTING
+**Survey result:** Three monument cards on disk. `monument-conquest-charter-institutional-self-restraint-122ac` already authored (earlier in cycle-2 within-cycle remediation pass). Card confirmed to fully cover the charter-language-institutional-self-restraint-architecture family: discipline-clamp rhyme component + foreknowledge-clamp on terminal-record component + peak-activation at scene-A @8 b01c01 named explicitly in the card's Monument body and Interaction notes.
+**Card used:** `cards/conditions/monument-conquest-charter-institutional-self-restraint-122ac.card.md` — class: condition, scope: library, world: planetos, quality: full. Already indexed in by_world (planetos), by_quality (full), by_type (monument-interior). No index update required.
+**mem:3 target-reference:** already set to correct slug in line 29 of `active-project/theater/facets/memory.md`. PENDING comment block on lines 30-31 updated to RESOLVED.
+**Report file:** `active-project/staff/margit/cycle-2-monument-referral-mem3.md`
+
+---
+
 ### 2026-05-19 — Cycle-2 monument referral resolution: mem:1 @16
 
 **Referral type:** monument-card target-reference resolution (cycle-2 within-cycle remediation pass; HARD-002)
