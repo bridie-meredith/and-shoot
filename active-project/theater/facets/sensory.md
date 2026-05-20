@@ -13,11 +13,11 @@ author: studio
 # to 1/27 = 3.7% which is within band 3-6%. ID gap 2 intentional.
 # Modality silent-gap callouts (sound @15/@17, smell @11) acknowledged but deferred — see defer block below.)
 
-3 @17 sound: street-quiet-of-mid-afternoon -> bootfall-on-cobbles-from-the-Hook-bend
-
-# audience-gate-cycle-3-note
-# sensory:3 added at cycle-3 to satisfy sensory-modality-coverage ≥2 modality floor.
-# @17 chosen (boots strike the cobbles — city-watch pass, discrete audible onset; bare proto-line, no cite conflict).
-# @15 (the insects fill the block) sound callout: advisory carry-forward; @17 addition satisfies modality floor.
-# ID 3 is next-available (ID 2 gap is intentional per F-009 cycle-2 deletion; do not renumber).
-# smell silent-gap at @11 remains advisory; loc-state:3 deletion removed its anchor; not escalated.
+# 3 @17 sound: street-quiet-of-mid-afternoon -> bootfall-on-cobbles-from-the-Hook-bend
+# sensory:3 DELETED (user directive 2026-05-20 — audience-gate cycle-3 rejection): sensory-old-state-reader
+# specialist returned NEW HARD: old-state "street-quiet-of-mid-afternoon" is unanchored to any prior
+# loc-state or sensory baseline. Entry was added at cycle-3 (F-015a) to satisfy modality floor; the
+# fix introduced a new unanchored-old-state finding. Per user direction, removed rather than chased
+# to a fourth cycle. ID gap 3 intentional (follows gap at ID 2 from F-009 cycle-2 deletion). Modality
+# floor advisory reopened: sensory.md is back to 1 modality (light only, sensory:1 @3). Accepted
+# tradeoff per user direction.

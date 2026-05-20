@@ -1,6 +1,9 @@
 # proto-lines (R2 fork) — memory
 # source: active-project/theater/proto-lines/b01-c01.md (locked R1 graph)
-# R2 mutations: 0 KEEP-all (mem:1 @9, mem:2 @18 both confirmed against locked graph)
+# R2 mutations: 0 KEEP-all (mem:1 @9, mem:2 @18 both confirmed against locked graph).
+# POST-R2: mem:1 @9 DELETED (user directive 2026-05-20): audience-gate cycles 1+2 uniformly rejected
+# the feel-as-spine defense (rubric requires NI co-citation; NI silent at @9; no carve-out). Removed
+# per cap-burn final verdict; ID gap 1 preserved; mem:2 ID unchanged.
 # citation cascade: no tokens stripped; no tokens added
 
 1 taylor-hebert-kl-122ac enters the corner-room [loc-state:1] [state:9] [vibes:7]
@@ -11,7 +14,7 @@
 6 taylor-hebert-kl-122ac circles the block [narrator:2] [state:11]
 7 taylor-hebert-kl-122ac drops the pack [state:1] [state:12]
 8 coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac [coll-net-mender-flea-bottom:1] [state:6] [state:13]
-9 taylor-hebert-kl-122ac holds the feet [feel:1] [mem:1] [vibes:12]
+9 taylor-hebert-kl-122ac holds the feet [feel:1] [vibes:12]
 11 taylor-hebert-kl-122ac lifts the basket [exposition:4] [loc-state:3] [state:2]
 12 coll-net-mender-flea-bottom pulls the net [state:7]
 13 taylor-hebert-kl-122ac threads the needle [state:3] [state:14]

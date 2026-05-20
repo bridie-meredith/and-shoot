@@ -635,3 +635,15 @@ criteria met: n/a — skip is correct action per dispatch
 findings-applied: 3 (F-014 NI-6 rewrite; F-015b loc-state light-field; F-015a sensory:3 sound entry + proto-lines)
 findings-skipped: 1 (memory — explicit cap-burn skip per dispatch; not a fixer failure)
 exit: CLEAN (cap-burn on memory documented; orchestrator-critic verdict to close)
+
+## SESSION-START — 2026-05-20T13:00:00Z — facets-rejected-removal
+dispatch: remove two audience-gate cycle-3 rejected facet entries (sensory:3 @17 + mem:1 @9); per user directive post-cap-burn; minimum-change deletions only; no card routing
+target: active-project/theater/facets/sensory.md + active-project/theater/facets/memory.md + active-project/theater/proto-lines/b01-c01.md + active-project/theater/facets/_inflight-r2/proto-lines-sensory.md + active-project/theater/facets/_inflight-r2/proto-lines-mem.md + active-project/theater/facets/_cite-index.md
+audit-report: active-project/staff/auditor/facets-audience-gate-r3.md
+findings-queued: 2 (sensory:3 deletion + mem:1 deletion; 7 files total across both)
+
+## sensory:3-removal — RESOLVED — 2026-05-20T13:05:00Z
+fault: sensory:3 @17 old-state "street-quiet-of-mid-afternoon" unanchored (NEW HARD from cycle-3 audience-gate); cycle-3 add introduced the finding
+scope: line
+change: (1) sensory.md: deleted live entry "3 @17 sound: ..." + "# audience-gate-cycle-3-note" block; replaced with gap-documentation comment (F-009-style) documenting cycle-3 rejection and user directive; ID gap 3 preserved. (2) proto-lines/b01-c01.md @17: stripped [sensory:3] token; line is now bare. (3) _inflight-r2/proto-lines-sensory.md: appended deletion clause to cite-cascade header; stripped [sensory:3] from @17 line.
+criteria met: yes — live entry removed; documentation comment in place; [sensory:3] absent from all proto-lines surfaces; ID gap preserved

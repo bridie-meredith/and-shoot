@@ -10,6 +10,9 @@ aggregate_range: 1-29
 
 # R2 sensory judge — citation cascade
 # sensory:1 @3 KEEP. sensory:2 @16 DELETED (cycle-2 F-009). sensory:3 @17 ADDED (cycle-3 F-015a).
+# sensory:3 @17 DELETED (user directive 2026-05-20): audience-gate cycle-3 sensory-old-state-reader
+# returned NEW HARD — old-state "street-quiet-of-mid-afternoon" unanchored to any prior loc-state or
+# sensory baseline. User directed removal; modality-floor advisory accepted as tradeoff.
 
 1 taylor-hebert-kl-122ac enters the corner-room [loc-state:1] [state:9] [vibes:7]
 2 taylor-hebert-kl-122ac pays the building-keeper [state:10] [vibes:8]
@@ -26,7 +29,7 @@ aggregate_range: 1-29
 14 the needle crosses the mesh
 15 the insects fill the block [narrator:3] [vibes:13] [vibes:14]
 16 the walls cool [state:4]
-17 the boots strike the cobbles [sensory:3]
+17 the boots strike the cobbles
 18 the city-watch passes the hook [exposition:6] [loc-state:4] [mem:2] [narrator:4] [vibes:15]
 19 taylor-hebert-kl-122ac holds the eyes [vibes:16]
 20 coll-net-mender-flea-bottom folds the net [state:5] [state:8] [state:15] [state:16]
