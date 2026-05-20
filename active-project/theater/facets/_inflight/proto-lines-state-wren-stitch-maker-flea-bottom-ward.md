@@ -31,11 +31,11 @@ aggregate_range: 1-29
 20 coll-net-mender-flea-bottom folds the net
 
 21
-22 wren-stitch-maker-flea-bottom-ward enters the street [state:1]
-23 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac [state:2]
+22 wren-stitch-maker-flea-bottom-ward enters the street [state:19]
+23 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac [state:20]
 24 taylor-hebert-kl-122ac lifts the eyes
 25 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward
 26 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
 27 taylor-hebert-kl-122ac holds the eyes
-28 wren-stitch-maker-flea-bottom-ward crosses the street [state:3] [state:4]
+28 wren-stitch-maker-flea-bottom-ward crosses the street [state:21] [state:22]
 29 taylor-hebert-kl-122ac lifts the needle

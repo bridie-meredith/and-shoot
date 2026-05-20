@@ -36,6 +36,6 @@ aggregate_range: 1-29
 24 taylor-hebert-kl-122ac lifts the eyes
 25 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward
 26 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
-27 taylor-hebert-kl-122ac holds the eyes [feel:1]
+27 taylor-hebert-kl-122ac holds the eyes [feel:3]
 28 wren-stitch-maker-flea-bottom-ward crosses the street
 29 taylor-hebert-kl-122ac lifts the needle

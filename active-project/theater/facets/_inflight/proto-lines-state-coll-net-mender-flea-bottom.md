@@ -15,12 +15,12 @@ aggregate_range: 1-29
 5 coll-net-mender-flea-bottom works the net
 6 taylor-hebert-kl-122ac circles the block
 7 taylor-hebert-kl-122ac drops the pack
-8 coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac [state:1]
+8 coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac [state:6]
 9 taylor-hebert-kl-122ac holds the feet
 
 10
 11 taylor-hebert-kl-122ac lifts the basket
-12 coll-net-mender-flea-bottom pulls the net [state:2]
+12 coll-net-mender-flea-bottom pulls the net [state:7]
 13 taylor-hebert-kl-122ac threads the needle
 14 the needle crosses the mesh
 15 the insects fill the block
@@ -28,7 +28,7 @@ aggregate_range: 1-29
 17 the boots strike the cobbles
 18 the city-watch passes the hook
 19 taylor-hebert-kl-122ac holds the eyes
-20 coll-net-mender-flea-bottom folds the net [state:3]
+20 coll-net-mender-flea-bottom folds the net [state:8]
 
 21
 22 wren-stitch-maker-flea-bottom-ward enters the street
