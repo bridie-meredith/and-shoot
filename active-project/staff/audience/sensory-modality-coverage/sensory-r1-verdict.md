@@ -2,23 +2,37 @@
 reviewer: sensory-modality-coverage
 facet: sensory
 cycle: 1
-episode: b01c01
-date: 2026-05-19
-verdict: revise
+episode: b01-c01
+date: 2026-05-20
+verdict: fail
 ---
 
 # Verdict reasoning
 
-Three entries across 24 proto-lines = 12.5% density; rubric band is 3-6% (1-2 entries on 24 bones). Breach-high. Modality tally: smell 1, sound 2, thermal 0, everything else 0. Sound is 67% of the file. The episode's own loc-state:4 explicitly names a thermal event at @13 — stone wall releasing morning-caught warmth, a discrete afternoon surface-cooling — and the proto-line at @13 ("the walls cool") is bare. The sensory file has zero thermal entries. A workshop-interior episode running morning-to-afternoon in Flea Bottom with loc-state-named thermal texture and zero thermal fires is skipping its own location's palette.
+Two entries across 27 proto-lines = 7.4% density. Rubric band ceiling is 6%. Breach-high — already flagged as auditor S-008 (r1 FREQUENCY-BAND SIGNAL). I read frequency-band breach as a structural fail, not an advisory, when combined with what the distribution looks like.
 
-# Entry-level callouts (revise / fail only)
+Modality tally: 1 light (sensory:1 @3), 1 thermal (sensory:2 @16). Two modalities — passes the ≥2 floor on paper. But this is a cosmetically satisfying number that conceals three real problems.
 
-- [sensory:--] @13 — thermal silent-gap. loc-state:4 @13 records: "the stone of the far wall has begun releasing its morning-caught warmth; the cooling is in the surface, not the air." The proto-line @13 is "the walls cool" — a bare verb. The inflection is discrete (afternoon transition), audience-perceptible (a stone wall's surface-cooling is a register-shift in an enclosed room), and has explicit loc-state backing. The file skips it. This is not a speculation about what might fire; the loc-state author named it, the proto-line licenses it, and the sensory author did not fire. Add ≥1 thermal entry at @13.
+First: sensory:2 @16 is suspect. The proto-line is "the walls cool" — "cool" names the thermal event. If the disambiguation-pedant strikes it as a charged-verb redundancy (and the gate analysis supports that reading), the file collapses to 1 entry and 1 modality (light only). Single-channel; coverage fails outright.
 
-- [sensory:--] FILE-LEVEL — sound dominance (67%) combined with density breach (12.5%). Two of three fires are on sound. If the thermal gap at @13 is filled without removing a sound entry, density climbs to 16.7% — worse. The correct resolution requires both: add thermal @13 and interrogate whether one of the two sound fires is the weaker candidate for removal. The coverage lens does not determine which sound entry to pull (that is the disambiguation-pedant's scope), but the distribution problem is real: smell-only + sound-dominant + thermal-absent is not a texturally balanced file for this location.
+Second: the episode has two explicit audible inflection beats with no sound fires at all. At @15 (`the insects fill the block`) the scene's atmosphere shifts — a swarm filling a block is a discrete environmental sound onset, bare proto-line verb, audience-perceptible. At @17 (`the boots strike the cobbles`) the city-watch passage generates a specific sound cue — "boots strike cobbles" is locomotion-bare with respect to the sound-register (the proto-line names the action, not the audible quality or volume of the strike). Both are missed fires. Zero sound coverage in a Flea Bottom episode with a watch-patrol and an insect-swarm is a silent gap in the most audience-accessible modality.
 
-# Convergence trace (orchestrator-critic input)
+Third: loc-state:3 @11 explicitly names a smell event — "tallow-smoke from the rendering-alley still threading across the yard." That is a loc-state author describing a discrete environmental smell presence. No sensory fire at @11 for smell. The rubric's cross-facet contract section (§ Cross-facet modality silent-gap) is unambiguous: a loc-state sensory note that names a discrete perceptual event must be accompanied by a sensory-flag at the same anchor, or the loc-state language must be downgraded to non-event ambient. Neither happened. The file skips a smell inflection the loc-state author directly named.
 
-- The Phase 5 auditor independently flagged density at FB-002 (sensory 12.5%, FREQUENCY-BAND SIGNAL). My verdict confirms and escalates the density breach from advisory SIGNAL to substantive revise driver, paired with the thermal silent-gap.
-- The thermal silent-gap at @13 is original to this review. The auditor's r1 and r2-verify reports do not surface it; the auditor passed CURVE-SHAPE and did not flag the loc-state:4 thermal event as a missed fire.
-- Sound dominance (67%) analysis is original to this review; the auditor did not compute per-modality distribution.
+The result: an episode with no sound, no smell, the sole thermal entry suspect on disambiguation grounds, and a density breach on top. The sensory file does not texture this episode; it places two entries and leaves the location's actual perceptual palette — rain-recent mud, tallow-smoke, insect-swarm, watch-boots on cobbles — unfired. That is a fail, not a revise. The required fixes are not minor rebalancing; they require additions at @11 (smell), @15 (sound), @17 (sound), and culling or reauthoring of sensory:2 to bring density inside the band.
+
+# Entry-level callouts
+
+[sensory:--] @11 — tallow-smoke silent-gap. loc-state:3 @11 names "tallow-smoke from the rendering-alley still threading across the yard" — discrete smell event, named by the loc-state author. No sensory fire. Rubric §Cross-facet modality silent-gap: add `smell:` entry at @11 or downgrade loc-state:3 language to non-event ambient.
+
+[sensory:--] @15 — insect-swarm sound silent-gap. `the insects fill the block` — bare proto-line; a swarm filling a block is a discrete audible onset; audience-perceptible; no sound fire. Add ≥1 sound entry at @15.
+
+[sensory:--] @17 — boots-on-cobbles sound silent-gap. `the boots strike the cobbles` — bare locomotion verb; the watch-patrol's audible presence is register-distinguishable from street-ambient; no sound fire. Candidate for sound spike entry.
+
+[sensory:--] FILE-LEVEL — 0 sound fires across entire episode. Sound is the most accessible modality; its absence is a coverage failure. Flea Bottom + city-watch-passage + insect-swarm with no sound fires is not a discipline of sparsity — it is a category miss.
+
+# Convergence trace
+
+- FILE-LEVEL density breach — convergent with auditor S-008 (r1, FREQUENCY-BAND: sensory 7.4% vs ceiling 6%). Auditor called it advisory SIGNAL; I read it as a fail driver because the distribution context makes it structurally worse than arithmetic.
+- @11 smell silent-gap — convergent with rubric §Cross-facet modality silent-gap (URI-FACETS-CYCLE-1, 2026-05-19, promoted to rubric from prior audience-gate attacks). The rubric explicitly names this failure mode; my callout applies the rubric's language to loc-state:3's tallow-smoke note. Not surfaced by the r1 or r2 auditor — original to this review.
+- @15 and @17 sound silent-gaps — original to this review. The r1 auditor did not compute per-modality distribution or flag sound absence.
