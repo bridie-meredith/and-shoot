@@ -547,3 +547,9 @@ criteria met: yes — annotation present; mechanical-action carve-out documented
 findings-applied: 6 (F-001 confirmed from prior session; F-002 confirmed from prior session; F-003 proto-lines strip completed; F-004 exposition:5 consolidated into :6 + proto-lines stripped; F-005 confirmed from prior cycle; F-006 rubric-carve-out annotation applied)
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-20T11:00:00Z — facets-b01c01-audience-gate-cycle2
+dispatch: cycle-2 fixer for /and-facets b01c01 Phase 5b — 7 failing facets from audience-gate cycle-1; minimum-change per F-007 through F-013
+target: active-project/theater/facets/location-state.md + interest-narrator.md + sensory.md + state-updates.md + memory.md + active-project/theater/dialogue/wren-stitch-maker-flea-bottom-ward.md + active-project/staff/dialogue-writer/taylor-hebert-kl-122ac.drafts.md + active-project/theater/proto-lines/b01-c01.md
+audit-report: audience-gate cycle-1 per-reviewer verdict files (per-facet, per-persona)
+findings-queued: 7 (F-007 through F-013)
