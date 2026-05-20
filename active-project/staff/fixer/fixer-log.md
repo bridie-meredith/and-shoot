@@ -494,3 +494,21 @@ criteria met: yes — no live physical entry at former entry-11 slot; discipline
 findings-applied: 1 (SIGNAL-002)
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-20T09:00:00Z — facets-b01c01-hard-r1-six-findings
+dispatch: fix 6 HARD findings (F-001 through F-006) from active-project/staff/auditor/facets-final-audit.md; minimum-change edits to facet files + rubric annotation; no card routing
+target: active-project/theater/facets/memory.md, exposition-b01-c01.md, interest-narrator.md, state-updates.md + _inflight-r2/proto-lines-exposition.md + _inflight-r2/proto-lines-narrator.md + canonical proto-lines b01-c01.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 6 (F-001 CONSTRAINT, F-002 CONSTRAINT, F-003 CONSTRAINT, F-004 CONSTRAINT, F-005 AP-SCAN, F-006 RUBRIC-FIDELITY)
+
+## F-001 — RESOLVED — 2026-05-20T09:05:00Z
+fault: mem:1 @9 — NI-spine-absent — co-citations [feel:1, vibes:12] but no NI at @9; no R2-verified defense on record for canonical entry
+scope: line
+change: appended `# defense: feel-as-spine` comment block under mem:1 in active-project/theater/facets/memory.md; cites feeling-as-spine rationale (substance IS interior-feeling-of-rule-catching; feel:1 carries the interior register; NI would duplicate; "exceptional with documented author defense" rubric clause); no entry mutation
+criteria met: yes — defense comment present; CONSTRAINT class accepts SIGNAL-with-documented-defense per rubric exceptional clause
+
+## F-002 — RESOLVED — 2026-05-20T09:10:00Z
+fault: exposition:4 @11 — scene-orient-fire-rule condition (b) violated; loc-state:3 fires at @11; R2 refusal stood but delete not executed
+scope: line
+change: deleted exposition:4 body; replaced with gap-documentation comment in exposition-b01-c01.md; stripped [exposition:4] from canonical proto-lines/b01-c01.md @11 and from _inflight-r2/proto-lines-exposition.md @11 and _inflight-r2/proto-lines-narrator.md @11; ID gap preserved (no renumber)
+criteria met: yes — no live exposition:4 entry; [exposition:4] token absent from all proto-lines files at @11
