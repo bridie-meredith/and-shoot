@@ -36,3 +36,22 @@ Non-POV beats (@4, @5, @8, @12, @20, @23, @26, @28): all refused under AP12 (edi
 **Sparsity:** 0 fires / 27 bones = 0.0%. Within 0-3% tolerance. Zero-fires-per-episode explicitly acceptable.
 
 **Per-scene cap:** satisfied by default (0 per scene; cap ≤1).
+
+---
+
+# R2 verdict — zero-fire refusal confirmed
+
+**R2 judge:** editor (facet-judge mode, graph-aware)
+**R2 run:** b01-c01 Phase 3
+
+With the locked graph in hand (mem:1 @9, mem:2 @18, feel:1 @9, feel:2 @27, feel:3 @27 now confirmed), R2 reviewed all three anchor clusters for add-eligibility. The refusal stands at 0 adds.
+
+**@9 — mem:1 + feel:1 — Scene A:** Two layers present (memory + feeling), which nominally clears multi-justification. But the memory entry's own language ("the feet hold and the architecture stays the shape she will not build") already deploys the figurative-architecture shape. Any metaphor at @9 casting the held feet as "architecture that will not be built" restates what mem:1 already carries — AP4. The callback register also requires a prior narrative monument; mem:1 cites a condition card (cond-override-architecture-residue-122ac), not a cross-episode narrative event. prior_episode: none hard-limits callback range. No new figure available that clears Q1. Refusal confirmed.
+
+**@18 — mem:2 — Scene B:** Single anchor (memory only; no feeling at @18). Multi-justification requires ≥2 layers from {memory, feeling, tens}; tens is unfiled throughout this chapter. One layer fails the gate. Additionally, the memory entry's figure ("the patrol's line through the bend is older than the patrol") is already figurative-compressed, raising AP4 risk. NI:4 at the same beat occupies the perceptual register. No add.
+
+**@27 — feel:2 + feel:3 — Scene C:** Two feeling layers present; multi-justification clears. But no memory anchor exists here, which eliminates the callback register. Only dark-humor is available. The dark-humor figure at @27 would have to land as grim irony against the hand-stop / eyes-hold moment — but NI:6 already carries the un-naming figure ("she will not write the name above the block"), and vibes:21 already carries the ledger-gap figure ("the-gap-in-the-ledger-begins-here"). Q1 fails: the figurative space at @27 is already fully occupied by NI + vibes. A metaphor here would add a third archival-register close at the scene's heaviest beat, which G5 warns against — the scene needs to hold the weight live, not file it a second time. Refusal confirmed.
+
+**R2 adds:** 0.
+**R2 deletions of existing entries:** 0 (no entries to delete).
+**Metaphor.md status:** unchanged in entry count; R2 verdict appended.
