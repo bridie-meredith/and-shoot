@@ -195,4 +195,69 @@ bone-walk:
 - @29 → paragraph-5 tail ("I lifted the needle.")
 drift-risk: **flag** — @24 render "I lifted the eyes from the mesh" adds spatial-direction phrase "from the mesh" that is NOT licensed by any facet at @24 (no state-update, no loc-state at @24). The mesh is named at @14 bone. Fence question: does "from the mesh" extend the bone-verb's spatial framing in a way that the fence forbids? Provisional ruling: minor fence-stretch. Surfacing to Phase 7 for Q1 / Q9 evaluation; CUT-CLAUSE candidate if Q1=no.
 
+---
+
+## Phase 2 — Redundancy cull
+
+Per-anchor echo-window=1 (same-anchor only). Detector: closing-phrase-echo (default).
+
+Multi-facet anchors scanned: @3 (loc-state:2 + sensory:1), @4 (narrator:1 + exposition:3), @18 (NI:4 + mem:2 + loc-state:4 + exposition:6), @22 (NI:5 + loc-state:5 + exposition:8), @27 (feel:2 + feel:3 + narrator:6).
+
+No closing-phrase echoes detected. No image-set overlaps (detector disabled by default).
+
+0 culls. Clean.
+
+---
+
+## Phase 3 — Compression
+
+Walked Phase 2 draft. Same-subject merges already applied aggressively at Phase 1 under fusion-eligible-runs license. Pronoun-substitution check: Coll first-mention at @4 with exposition, subsequent mentions at @5 ("He"), @8 ("Coll said" - attribution), @12 ("Coll pulled"), @20 ("Coll folded") — fork-001/002 already used "He" at @5 and "Coll" at recurring subject positions; pronoun discipline holds. Wren first-mention at @22, "she"/"her" used at @27/@28; clean.
+
+Exit-trio candidates: none (scene-A close, scene-B close, scene-C close already fused or short-flank rendered).
+
+Time-skip-adjacent zero-cite: @14 ("the needle crosses the mesh") fused into S1 of scene-B already.
+
+Tens1-run-collapse: tens facet not authored (chapter has 0 tens entries).
+
+0 compression moves. Clean.
+
+---
+
+## Phase 4 — Voice transform
+
+Tense + person already applied during Phase 1 rendering (forks were briefed with past-tense first-person POV). Per-paragraph re-check:
+
+- All action-verb clauses in past tense ✓
+- POV-pronoun resolution applied at feel:1 @9 (she→I, her→my), feel:2 @27 (her→my), feel:3 @27 (her→her [Wren, third-party preserve]; "on taylor's" → "on mine"), narrator:6 @27 (she→I, will-not→would-not)
+- Third-party preserve: Coll keeps display name at first mention + pronoun thereafter ✓; Wren keeps display name at first mention + pronoun thereafter ✓
+- Exposition gloss-register present-tense preserved (Coll "keeps", "runs", "asks"; the-Hook "keep their rooms", city-watch "moves through"; Wren "kept in light work" past-as-portrait; — this is canonical pov-frame gloss convention; not a voice mismatch)
+- Sensory arrow rendering: sensory:1 @3 "light: corner-room-dim -> overcast-yard-diffuse" rendered as prose-template "the light shifted from the dim of the corner-room into the overcast diffuse of the yard" ✓
+- Contractions: "There's mending", "you've not been here", "there's no work" — dialogue verbatim contractions ✓; body prose has no contractions; profile default `contractions: true` means contractions licensed but body-prose authored without them — within profile tolerance.
+
+0 transform moves applied (already applied at Phase 1). Clean.
+
+---
+
+## Phase 5 — Local flow
+
+Per-window scan (window-size=3):
+
+- Within-anchor cite reorder: none required; lens decider's ordering held at Phase 1.
+- Forward sensory deferral: only sensory entry is sensory:1 @3, already folded with loc-state via co-anchor rule. No deferral.
+- Backward NI promotion: NI clauses already lead their anchors per rule 4.
+- Un-merge to rescue swallowed facets: nothing swallowed.
+- **Speaker-paragraph rule (URI-SUBSTANCE-OVERHAUL hard rule)**: scene-C has 4 speech bones (@23, @25, @26 — @25 mixed with @24 same-character action). Phase 1 fork-003 produced 5-paragraph speaker-discipline shape: Wren-enters / Wren-utterance / Taylor-action+utterance / Wren-utterance / scene-close. **Audit:** each `speaks to` bone's dialogue is on its own paragraph; back-to-back speakers (@23→@25 and @25→@26) paragraph-break correctly. Compliant. No `FAULT-LOCAL-FLOW-SPEAKER-PARAGRAPH`.
+
+0 flow moves. Clean.
+
+---
+
+## Phase 6 — Buildup preservation
+
+Scene-map declares `protected-patterns: none` for all three scenes. Schema-default protected patterns checked: three-note-buildup, countdown, threshold-cross, return-of — none detected in the draft (no buildup sequences; no countdown; no threshold-cross sequence; no return-of pattern recurring across chapter-this-is-first-chapter).
+
+Candidate emergent pattern: "I held" surface (@9 "I held my feet", @19 "I held the eyes", @27 "I held the eyes") — three iterations across scenes A, B, C. This is structurally the chapter's holding-discipline beat. NOT in the protected-patterns list at scene-map. Logging as **NEW-PATTERN-CANDIDATE** for human review (no Phase 6 action; for next-chapter scene-map authoring).
+
+0 preservation moves. Clean.
+
 
