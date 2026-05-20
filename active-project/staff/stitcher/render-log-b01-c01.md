@@ -1,75 +1,198 @@
 # Render-log — b01-c01
 
-generated: 2026-05-19
+generated: 2026-05-19 (initial; halted pre-Phase-1 on stale dialogue anchors)
+re-run: 2026-05-20 (current — post rejected-items fixer + post dialogue-facet re-author)
 slug: b01-c01
-profile: (schema defaults; no episode/project profile authored)
+profile: schema defaults (no episode/project profile authored)
 persona: neutral
 narrator: taylor-hebert-kl-122ac
 voice: first-person past-tense, contractions on (schema default)
-phase-7-mode: per-paragraph (schema default)
-phase-1-mode: scene-window (schema default)
+phase-7-mode: per-scene (3 scene-forks; sentences walked serially inside each)
+phase-1-mode: scene-window (default; boundaries from scene-map-b01-c01.md)
 flags: (none)
 
 ---
 
-## Phase 0 — Validate + Load
+## Phase 0 — Validate + Load (2026-05-20 re-run)
 
 - bones file present: `active-project/theater/bones/b01-c01.md` (27 bones, flat IDs 1-29 with time-skip blanks at @10, @21)
-- cite-index present: `active-project/theater/facets/_cite-index.md`
-- scene-map present: `active-project/theater/facets/scene-map-b01-c01.md` (3 scenes, all rhythm-shape flat-low, no peaks, no protected patterns)
-- exposition present: `active-project/theater/facets/exposition-b01-c01.md` (5 entries)
-- dialogue files present: 3 files (coll, taylor, wren) — but anchor IDs are stale against the redo'd bones (see Phase 0.5 abort below)
+- cite-index present: `active-project/theater/facets/_cite-index.md` (stale entries for sensory:2 + sensory:3 + mem:1 — expected; excluded from scope per prior audit dispatch + rejected-items fixer)
+- scene-map present: `active-project/theater/facets/scene-map-b01-c01.md` (3 scenes; all rhythm-shape flat-low; no peaks; no protected patterns; coverage 27/27)
+- exposition present: `active-project/theater/facets/exposition-b01-c01.md` (5 live entries: 1, 2, 3, 6, 8; ID gaps at 4, 5, 7 from R2 deletions)
+- dialogue files present: 3 files (coll, taylor, wren), 4 utterances; all 4 speech bones covered (@8, @23, @25, @26)
 - feedback file: absent
 - showrunner memory read OK
 
-State machine: stitched: false → in-progress (halted pre-Phase-1)
+State machine: stitched: false → in-progress
+
+### Prior-run abort condition resolved
+
+Prior run (2026-05-19) HARD-ABORTED at Phase 0.5 on URI-DIALOGUE-COVERAGE-GATE — bones had been re-done with shifted flat IDs and dialogue facet anchors were stale. The /and-facets cycles 1-3 (2026-05-18 through 2026-05-20) re-authored the dialogue facet against the new bones IDs. Current dialogue files:
+  - coll:1 @8 — matches `@8 coll-net-mender-flea-bottom speaks to taylor` ✓
+  - taylor:1 @25 — matches `@25 taylor speaks to wren` ✓
+  - wren:1 @23 — matches `@23 wren speaks to taylor` ✓
+  - wren:2 @26 — matches `@26 wren speaks to taylor` ✓
+
+All 4 speech bones covered. No bare speech bones. No unmoored utterances. No speaker mismatches. Gate PASS.
+
+### Rejected-items removal (2026-05-20)
+
+Prior to this stitcher run, the rejected-items fixer removed two audience-gate-rejected items:
+- `sensory:3 @17` (cycle-3 audience-gate HARD: unanchored old-state); ID gap preserved
+- `memory mem:1 @9` (cycles 1+2 uniform reject: feel-as-spine defense rebuffed); ID gap preserved
+
+Citation surfaces updated: proto-lines stripped `[sensory:3]` from @17 and `[mem:1]` from @9; cite-index updated to remove mem:1 entry and strip mem:1 co-cite from feel:1 and vibes:12. Sensory.md is now back to 1 modality (light only); memory.md is single-Westerosi-register at @18. Both tradeoffs accepted by user directive.
 
 ---
 
-## Phase 0.5 — Pre-flight HARD ABORT
+## Phase 0.5 — Pre-flight summary
 
-**Dialogue gate (URI-DIALOGUE-COVERAGE-GATE) triggered. Stitcher refuses to consume the graph.**
-
-The bones file was redone at commit `b2e992b` (2026-05-19 /and-write redo) which renumbered every flat ID. The downstream dialogue facet was NOT re-authored against the new bones; the dialogue entries reference OLD bones IDs:
-
-| dialogue entry | dialogue-file @anchor | current bones at that @ | actual speech bone in current bones |
-|---|---|---|---|
-| coll @3 | `@3 \| "Needle's idle. Sit, then."` | `taylor crosses the yard` (not a speech bone) | `@8 coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac` |
-| wren @22 | `@22 \| "Mistress Coll teach you that knot?"` | `wren-stitch-maker-flea-bottom-ward enters the street` (not a speech bone) | `@23 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac` |
-| taylor @25 | `@25 \| "I cannot say."` | `taylor speaks to wren` (MATCH) | `@25` |
-| (missing) | — | — | `@26 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac` (no entry anywhere; this bone is new in redo) |
-
-**Bare speech bones (current bones speech bones with no dialogue entry keyed at that ID):** @8, @23, @26 — 3 of 4 speech bones.
-
-**Stale-anchored dialogue entries:** coll:1 @3 (should be @23), wren:1 @22 (should be @23).
-
-Per Phase 0.5: "If proto-lines contains any `speaks to` bones AND bare speech bones > 0, ABORT before Phase 1 dispatch." Triggered.
-
-### Broader staleness (informational; surfaced for user)
-
-The bones-redo invalidated more than dialogue. The following facet entries also reference OLD bones IDs that have shifted in the new flat-ID assignment:
-
-- `exposition:2 @3` (Coll first-mention inline-appositive) — Coll's first prose mention in current bones is @4 (`coll lifts the eyes`); @3 is now Taylor's bone. Should be @4 or @8.
-- `exposition:3 @15` (the-Watch first-mention em-dash-fold) — the Watch column's bone in current bones is @18 (`the city-watch passes the hook`); @15 is now `the insects fill the block`. Should be @18.
-- `exposition:4 @20` + `exposition:5 @20` (Wren + the-Hook first-mention inline-appositive) — Wren's first appearance in current bones is @22 (`wren enters the street`); @20 is now `coll folds the net`. Both should be @22.
-- `cite-index` pile-up labels reference OLD SVO labels (e.g. `@23 taylor-hebert-kl-122ac faces wren-stitch-maker-flea-bottom-ward`, but new bones @23 is `wren speaks to taylor`). The per-facet @-keys in cite-index were carried forward without SVO refresh.
-- `feeling-coll` R2 decision-shard documents intent at OLD anchors `@3`, `@4`, `@9` referring to OLD coll-bones positions.
-- `feeling-wren` entry keyed `@21` is a time-skip blank in current bones — was wren-related in OLD bones.
-- `memory` and other facets — TBD; spot-check shows mem:2 @23 was authored against the OLD "taylor faces wren" SVO at @23 but the current @23 SVO is "wren speaks to taylor" — content may still align in spirit but anchor semantics differ.
-
-The audit-pipeline appears to have passed `/and-facets cycle-3` without catching these anchor-against-bones mismatches; the audience-gate reviewed dialogue/facet CONTENT in isolation, not against bones flat-IDs.
-
-**Recommendation:** re-run `/and-facets b01-c01` to re-author the stale facet entries (or run a scoped anchor-remap fix). Then re-run `/and-stitch b01c01`.
-
-**Opt-out path:** pass `--allow-bare-speech` to proceed with legacy silent-speech for @8/@23/@26 (Taylor's @25 utterance would still render normally), accepting that the chapter's three other speech bones will render as silent action only. The dialogue lines authored in the dialogue files would NOT be used (they're keyed at non-speech bones). The polish would be substantially degraded.
+Gate PASS. See message-trace for the full summary. Proceeding to Phase 0.6.
 
 ---
 
-## Run halted
+## Phase 0.6 — Exposition consumption
 
-No Phase 1 dispatch attempted. No draft files written.
+Exposition facet read: `active-project/theater/facets/exposition-b01-c01.md`.
 
-User choice (2026-05-19): re-run `/and-facets b01-c01` first to re-author stale dialogue + exposition anchors against the redo'd bones. `/and-stitch b01c01` to be re-invoked after /and-facets returns clean.
+Categorized live entries:
+- **Episode-open pool** (preamble): entries 1 (italic-preamble) + 2 (preamble-paragraph), both @0
+- **Per-anchor first-mention pool**: entry 3 (Coll, inline-appositive, @4), entry 6 (the-Hook, inline-appositive, @18), entry 8 (Wren, inline-appositive, @22)
+- **Per-anchor scene-orient pool**: empty (entries 4, 5, 7 deleted at R2 — see exposition.md DELETED/CONSOLIDATED comment trail)
+- **Refused/dropped**: 3 deletions (4, 5, 7) — skip per upstream R2 authority
 
-next: /and-facets b01-c01
-resume: /and-stitch b01c01 (after /and-facets PASS)
+Voice-mismatch check: first-person consistent throughout. Preamble uses present-tense framing ("I am twenty years old... I live in... I pay") — canonical italic-preamble form (present-tense frame positioned before past-tense body). NO `FAULT-EXPOSITION-VOICE-MISMATCH` raised; framing tense is per voice.pov-frame discipline.
+
+Preamble assembled and written to `active-project/draft/b01-c01.preamble.md`. Two italic paragraphs + horizontal rule separator. Will be prepended at Phase 8.
+
+Cross-episode register check: no prior glossed-terms file (first episode). No re-gloss warnings.
+
+Anchor pools staged for Phase 1:
+- scene-A fork: exposition:3 @4 (inline-appositive, Coll)
+- scene-B fork: exposition:6 @18 (inline-appositive, the-Hook)
+- scene-C fork: exposition:8 @22 (inline-appositive, Wren)
+
+---
+
+## Phase 0.7 — Dialogue intake
+
+Dialogue files loaded:
+- `theater/dialogue/coll-net-mender-flea-bottom.md`: 1 entry, behavior-card=cond-westerosi-witness-vocabulary
+- `theater/dialogue/taylor-hebert-kl-122ac.md`: 1 entry, behavior-card=cond-taylor-pov-behavior
+- `theater/dialogue/wren-stitch-maker-flea-bottom-ward.md`: 2 entries, behavior-card=cond-westerosi-witness-vocabulary
+
+dialogue-by-anchor lookup:
+- @8: coll:1 "There's mending if you can hold a needle."
+- @23: wren:1 "You walked the block three times this morning. Mistress Coll knows your name and you've not been here a fortnight."
+- @25: taylor:1 "There's no work here. Go on."
+- @26: wren:2 "The flies were on the meat-stall and they were not on you. The stall is closer."
+
+Cross-validation:
+- speech bones in bones file: @8 (coll), @23 (wren), @25 (taylor), @26 (wren) — 4 total
+- anchors covered: 4 of 4 ✓
+- bare speech bones: 0
+- unmoored utterances: 0
+- speaker mismatches: 0
+
+URI-DIALOGUE-COVERAGE-GATE: PASS.
+
+Anchor pools staged for Phase 1 scene forks:
+- scene-A fork: dialogue:coll:1 @8
+- scene-B fork: (no speech bones in scene-B)
+- scene-C fork: dialogue:wren:1 @23, dialogue:taylor:1 @25, dialogue:wren:2 @26
+
+---
+
+## Phase 1 — Lens-anchored render (scene-window mode)
+
+Three scene-forks; serialized across scenes (back-look requires prior rendered scene's prose).
+
+### fork-001 — scene-A bones=@1-@9
+
+bones-consumed: @1, @2, @3, @4, @5, @6, @7, @8, @9
+back-look: empty (first scene)
+forward-look: scene-B (informational)
+variance-moves:
+- fused @1+@2 same-subject continuous action; loc-state:1 folded via comma-clause appositive on the building-keeper
+- @3 sensory + loc-state co-anchor fold rule applied: single perceptual unit, em-dash + comma-clause
+- @4 NI leads (rule 4); exposition inline-appositive em-dash-bracketed after first-mention "Coll"; @5 follows as short bone-only clause
+- fused @6+@7 same-subject continuation under fusion-eligible-runs license; narrator:2 em-dash appositive
+- @8 dialogue verbatim with default `said` attribution
+- @9 feel:1 folded via comma-fold "I held my feet, and I set my weight even on both feet"; POV-pronoun resolution she→I, her→my
+refusals:
+- no invented spatial / route / direction detail
+- no invented body detail on @4
+- no invented dialogue / attribution-verb on @8
+- no invented interior on @7
+- no memory render at @9 (mem:1 removed)
+- no rendering of state, vibes, tens; no metaphor (zero-fire); exposition only at its renders-as inline-appositive directive
+bone-walk:
+- @1 → sentence-1 (lead clause)
+- @2 → FUSE-into-L1
+- @3 → sentence-2 (sensory + loc-state co-anchor fold)
+- @4 → sentence-3 (NI leads; exposition inline-appositive em-dash bracket after "Coll")
+- @5 → sentence-4 (bone-only short clause)
+- @6 → sentence-5 (NI leads; narrator:2 em-dash appositive)
+- @7 → FUSE-into-L5 (same-subject continuation)
+- @8 → sentence-6 (dialogue verbatim + `said`)
+- @9 → sentence-7 (feel:1 folded via comma-fold; POV-resolve)
+drift-risk: minor — @9 fold "I held my feet" reads slightly stylized; bone verb preserved verbatim. Phase 4 mechanical pass acknowledged.
+
+### fork-002 — scene-B bones=@11-@20
+
+bones-consumed: @11, @12, @13, @14, @15, @16, @17, @18, @19, @20
+back-look: scene-A rendered prose
+forward-look: scene-C (informational)
+variance-moves:
+- fused @11+@12 same-clause comma-and merge (working-day setup; subject-swap permitted by fusion license)
+- semicolon-joined @13+@14 parallel "needle" chain into same sentence (aggressive fusion)
+- @15 NI lens-fold (rule 4; narrator:3 only); em-dash continuation from bone-verb into NI clause; voice-transformed she→I, present→past
+- @16 stands alone short (rhythm flank; sensory:2 deleted upstream — bare bone)
+- @17 stands alone short bare bone (sensory:3 removed by prior fixer)
+- @18 heaviest cluster: NI-lead + memory-tail per rule 4; loc-state:4 perceptual frame folded into NI clause; exposition em-dash inline-appositive after first-mention "the Hook"; semicolon-folded to memory; voice-transformed throughout
+- @19+@20 closing comma-and merge (mirrors @11+@12 opener cadence)
+refusals:
+- monument-label `(westeros: flea-bottom-hook-as-coercive-geometry-monument)` NOT rendered as text (index reference only)
+- no fence violations across spatial / body / dialogue / scene-prose / cognitive
+bone-walk:
+- @11 → "I lifted the basket" (head of @11+@12 merge)
+- @12 → "Coll pulled the net" (tail of @11+@12)
+- @13 → "I threaded the needle" (head of @13+@14)
+- @14 → "the needle crossed the mesh" (tail of @13+@14)
+- @15 → NI-led em-dash continuation; full sentence
+- @16 → short bare sentence ("The walls cooled.")
+- @17 → short bare sentence ("The boots struck the cobbles.")
+- @18 → heaviest single sentence; bone + 4 facet fires; exposition inline-appositive; NI semicolon-folded to memory
+- @19 → "I held the eyes" (head of @19+@20)
+- @20 → "Coll folded the net" (tail of @19+@20)
+drift-risk: none — exposition gloss preserved present-tense per pov-frame convention (gloss-register, not body-verb register)
+
+### fork-003 — scene-C bones=@22-@29
+
+bones-consumed: @22, @23, @24, @25, @26, @27, @28, @29
+back-look: scenes A + B rendered prose
+forward-look: empty (last scene)
+variance-moves:
+- @22 cluster: NI leads + loc-state perceptual frame folded into bone-verb + exposition inline-appositive em-dash-bracketed after first-mention "Wren"; whole opening as one paragraph
+- speaker-paragraph rule applied at scene-C: 5 paragraphs total (Wren-enters / Wren-utterance / Taylor-action+utterance / Wren-utterance / scene-close)
+- @24+@25 mixed action-and-dialogue paragraph (same-character allowance)
+- @27 cluster: feel-leads (rule 4); feel:2 (Taylor POV-resolved) + feel:3 (Wren, third-party preserve) + narrator:6 (past + POV-resolve she→I, will-not→would-not) — all folded into one sentence
+- @27-@29 scene-close run fused (non-dialogue stretch; fusion-eligible-runs license)
+refusals:
+- no monument rendered (zero memory at scene-C)
+- no metaphor (zero-fire)
+- no sensory at any scene-C anchor
+- no state / vibes / tens rendered
+- attribution verbs limited to `said`; no embellishment
+bone-walk:
+- @22 → sentence-1 (NI + loc-state + exposition + bone; one paragraph)
+- @23 → paragraph-2 (Wren dialogue verbatim)
+- @24 → paragraph-3 head (Taylor lifts eyes; "from the mesh" added — see drift-risk)
+- @25 → paragraph-3 tail (Taylor dialogue verbatim)
+- @26 → paragraph-4 (Wren dialogue verbatim)
+- @27 → paragraph-5 head (feel-cluster + narrator:6 fold)
+- @28 → paragraph-5 mid ("She crossed the street.")
+- @29 → paragraph-5 tail ("I lifted the needle.")
+drift-risk: **flag** — @24 render "I lifted the eyes from the mesh" adds spatial-direction phrase "from the mesh" that is NOT licensed by any facet at @24 (no state-update, no loc-state at @24). The mesh is named at @14 bone. Fence question: does "from the mesh" extend the bone-verb's spatial framing in a way that the fence forbids? Provisional ruling: minor fence-stretch. Surfacing to Phase 7 for Q1 / Q9 evaluation; CUT-CLAUSE candidate if Q1=no.
+
+
