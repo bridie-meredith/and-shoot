@@ -606,3 +606,32 @@ dispatch: cycle-3 fixer for /and-facets b01c01 Phase 5b — resolve 2 actionable
 target: active-project/theater/facets/interest-narrator.md + active-project/theater/facets/sensory.md + active-project/theater/facets/location-state.md + active-project/theater/facets/_inflight-r2/proto-lines-narrator.md + canonical proto-lines
 audit-report: active-project/staff/audience/dark-fantasy-reader/interest-narrator-r2-verdict.md + active-project/staff/audience/sensory-modality-coverage/sensory-r2-verdict.md + active-project/staff/audience/sensory-old-state-reader/sensory-r2-verdict.md
 findings-queued: 3 actionable sub-tasks (F-014, F-015a sound, F-015b loc-state); 1 skip (memory — cap-burn)
+
+## F-014 — RESOLVED — 2026-05-20T12:10:00Z
+fault: interest-narrator NI-6 @27 in policy-declaration register ("she will not write the name..."); zero displacement-trigger fires across 6 entries; dark-fantasy-reader revise verdict with in-place rewrite path specified
+scope: line
+change: NI-6 @27 body rewritten from "she will not write the name above the block, not in the feed and not on the page she keeps for herself" to "the threshold holds and what is on the other side stays the size she will not name." — gap-narration pattern per dark-fantasy calibration anchor; cost of refusal rendered as held weight rather than policy stated; interest-narrator.md entry 6 body only; band stays at 6/27 = 22.2%; [narrator:6] token in proto-lines unchanged (body edit, no cite cascade); _inflight-r2/proto-lines-narrator.md @27 already carries [narrator:6] and requires no change
+criteria met: yes — (a) policy-declaration register eliminated; (b) displacement-trigger register carried through refusal-to-look channel (gap-narration: "what is on the other side stays the size she will not name"); (c) cold-utilitarian voice maintained; (d) band ceiling not breached (22.2%)
+
+## F-015b — RESOLVED — 2026-05-20T12:15:00Z
+fault: sensory-old-state-reader: sensory:1 @3 old-state "corner-room-dim" anchored only to geometry cue ("door-shadow across the entry") in loc-state:1; no explicit light-level field; two-step inference flagged as moderate-revise
+scope: line
+change: loc-state:1 @1 in location-state.md extended with explicit light-level field: "light: threshold-dim, interior-corner dim under overcast morning backlight" appended to existing field list; sensory:1 @3 old-state "corner-room-dim" now traces near-verbatim to declared loc-state:1 light field; no cite-index change (loc-state:1 was already cited at @1; no new token); _inflight-r2/proto-lines-loc-state.md: field-add is internal to loc-state:1 entry, no cite token change required
+criteria met: yes — explicit light-level field present in loc-state:1; sensory:1 old-state lineage resolved to near-verbatim match; two-step inference gap closed
+
+## F-015a — RESOLVED — 2026-05-20T12:20:00Z
+fault: sensory-modality-coverage: file is light-only single-modality (sensory:1 light @3, sensory:2 deleted); ≥1 sound entry required; @15 or @17 identified as clean addition anchors
+scope: line
+change: (1) sensory:3 @17 added to sensory.md: "sound: street-quiet-of-mid-afternoon -> bootfall-on-cobbles-from-the-Hook-bend"; studio-voice; ≤1 line; no narrative or moralization; @17 ("the boots strike the cobbles") is bare proto-line with no prior sensory citation; ID 3 is next-available (ID 2 gap preserved per F-009 cycle-2 deletion; no renumber). (2) [sensory:3] added to canonical proto-lines/b01-c01.md at @17. (3) created _inflight-r2/proto-lines-sensory.md with [sensory:3] at @17 (new file; no prior sensory inflight file existed). Modality coverage post-fix: light (@3) + sound (@17) = 2 modalities; floor met.
+criteria met: yes — ≥1 sound entry present (sensory:3 @17); studio-voice maintained; ID gap 2 preserved; canonical proto-lines and inflight sensory file updated; modality floor satisfied
+
+## memory — SKIPPED — 2026-05-20T12:21:00Z
+fault: memory facet cycle-2 fail (3 revise on feel-as-spine defense); all three remediation paths have unacceptable costs
+scope: escalate
+change: none — memory.md untouched per dispatch cap-burn ruling; all three paths (add NI @9 = band-ceiling breach; delete mem:1 = SHAPE-FAIL single-register; rubric authority ruling = out of scope) cost more than the cap allows; orchestrator-critic verdict to document cap-burn with rationale
+criteria met: n/a — skip is correct action per dispatch
+
+## SESSION-END — 2026-05-20T12:25:00Z — facets-b01c01-cycle3
+findings-applied: 3 (F-014 NI-6 rewrite; F-015b loc-state light-field; F-015a sensory:3 sound entry + proto-lines)
+findings-skipped: 1 (memory — explicit cap-burn skip per dispatch; not a fixer failure)
+exit: CLEAN (cap-burn on memory documented; orchestrator-critic verdict to close)

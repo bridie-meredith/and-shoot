@@ -1,4 +1,4 @@
-# bones — b01c01
+# bones — b01c01 (R2 sensory annotated copy)
 
 episode: b01c01
 narrator: taylor-hebert-kl-122ac
@@ -7,6 +7,9 @@ cast: taylor-hebert-kl-122ac, coll-net-mender-flea-bottom, wren-stitch-maker-fle
 locations: flea-bottom
 prior_episode: none
 aggregate_range: 1-29
+
+# R2 sensory judge — citation cascade
+# sensory:1 @3 KEEP. sensory:2 @16 DELETED (cycle-2 F-009). sensory:3 @17 ADDED (cycle-3 F-015a).
 
 1 taylor-hebert-kl-122ac enters the corner-room [loc-state:1] [state:9] [vibes:7]
 2 taylor-hebert-kl-122ac pays the building-keeper [state:10] [vibes:8]
