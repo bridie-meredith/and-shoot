@@ -526,6 +526,22 @@ books:
         bones_file: theater/bones/b01-c01.md
         bones_count: 27    # 9 s01 + 10 s02 + 8 s03; max(flat_id) = 29 (deletions s01n03/s01n11/s03n09 leave gaps; blank time-skips at flat 10, 21)
         substance_bone_gate_verdict: PASS    # Phase 6 mechanical PASS (HARD: 0, SIGNAL: 0) + audience SUBSTANCE-FELT 9/9 (3 personas × 3 scenes; no HARD votes)
+        stitched: true    # /and-stitch 2026-05-20 PASS — post rejected-items removal (mem:1 @9, sensory:3 @17) — clean draft active-project/draft/b01-c01.md + annotated b01-c01.annotated.md + render-log render-log-b01-c01.md
+        stitch_path: active-project/draft/b01-c01.md
+        stitch_render_log: active-project/staff/stitcher/render-log-b01-c01.md
+        stitch_stats:
+          words: 599
+          paragraphs: 14    # 2 preamble + 12 body
+          sentences: 22    # 2 preamble + 20 body
+          bones_rendered: 27
+          dialogue_utterances: 4
+          exposition_entries_rendered: 5
+          cut_clauses: 5
+          rewords: 1
+          reshows: 0
+          cut_bones: 0
+          faults_surfaced: 4    # 1 FAULT-EXPOSITION-AUDIT-MISS, 3 FAULT-AUDIT-MISS (Q9-hits on facet content; render-as-is; surfaced for upstream review)
+          fence_stretches_resolved: 1    # @24 "from the mesh" CUT-CLAUSE
         substance_delta_measured:
           axes_moved: { capability: 0, knowledge: 0.53 }   # scene-sum: s01 0.19 + s02 0.24 + s03 0.10 = 0.53 against chapter target 0.5 (within band)
           density_measured: ~     # facet/stitch-layer measurement; bone-density approximated within target band 0.6-0.9 by scene aggregation

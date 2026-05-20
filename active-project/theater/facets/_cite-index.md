@@ -63,12 +63,11 @@ _(no entries)_
   state:21 @28 back=Y co=[state:22]
   state:22 @28 back=Y co=[state:21]
 
-### mem (2 entries)
-  mem:1 @9 back=Y co=[feel:1, vibes:12]
+### mem (1 entry)
   mem:2 @18 back=Y co=[exposition:6, loc-state:4, narrator:4, vibes:15]
 
 ### feel (3 entries)
-  feel:1 @9 back=Y co=[mem:1, vibes:12]
+  feel:1 @9 back=Y co=[vibes:12]
   feel:2 @27 back=Y co=[feel:3, narrator:6, vibes:20, vibes:21]
   feel:3 @27 back=Y co=[feel:2, narrator:6, vibes:20, vibes:21]
 
@@ -87,7 +86,7 @@ _(no entries)_
   vibes:9 @4 back=Y co=[exposition:3, narrator:1, vibes:10] lic-out=[proto:4]
   vibes:10 @4 back=Y co=[exposition:3, narrator:1, vibes:9] lic-out=[proto:4, proto:5]
   vibes:11 @5 back=Y co=[vibes:10] lic-out=[proto:5]
-  vibes:12 @9 back=Y co=[feel:1, mem:1] lic-out=[proto:9]
+  vibes:12 @9 back=Y co=[feel:1] lic-out=[proto:9]
   vibes:13 @15 back=Y co=[narrator:3, vibes:14] lic-out=[proto:15]
   vibes:14 @15 back=Y co=[narrator:3, vibes:13] lic-out=[proto:15]
   vibes:15 @18 back=Y co=[exposition:6, loc-state:4, mem:2, narrator:4] lic-out=[proto:18]
