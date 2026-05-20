@@ -508,7 +508,7 @@ books:
             - "wren: present, recurring, unnamed as significant"
             - "otto: offstage"
           target_chapter: b01c02
-        status: faceted-r1    # /and-facets Phase 1+2 complete 2026-05-20; R1 fanout 15 authors, cite-index built; citation graph clean except expected @0 synthetic anchors for episode-open exposition
+        status: faceted-r2    # /and-facets Phase 3+4 complete 2026-05-20; R2 fanout 10 judges (NI, memory, feeling×3, metaphor, exposition, dialogue×3); decisions: KEEP-all R1 entries / 0 ADD / 0 DELETE per locked-graph reconciliation; .r2-decisions.md consolidated; cite-index rebuilt clean; scene-map validated 27/27 bones in 3 scenes
         bones_file: theater/bones/b01-c01.md
         bones_count: 27    # 9 s01 + 10 s02 + 8 s03; max(flat_id) = 29 (deletions s01n03/s01n11/s03n09 leave gaps; blank time-skips at flat 10, 21)
         substance_bone_gate_verdict: PASS    # Phase 6 mechanical PASS (HARD: 0, SIGNAL: 0) + audience SUBSTANCE-FELT 9/9 (3 personas × 3 scenes; no HARD votes)

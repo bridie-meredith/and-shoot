@@ -1,7 +1,7 @@
-# bones — b01c01 (R2 fork) — dialogue / coll-net-mender-flea-bottom
+# bones — b01c01 (R2 fork) — dialogue / taylor-hebert-kl-122ac
 # source: active-project/theater/proto-lines/b01-c01.md (locked R1 graph)
-# scope: Coll speaking-beat anchor (@8 only)
-# R2 mutations: 0 KEEP-all (coll-net-mender-flea-bottom:1 @8 KEEP)
+# scope: Taylor speaking-beat anchor (@25 only)
+# R2 mutations: 0 KEEP-all (taylor-hebert-kl-122ac:1 @25 KEEP)
 # citation cascade: no tokens stripped; no tokens added
 
 episode: b01c01
@@ -19,7 +19,7 @@ aggregate_range: 1-29
 5 coll-net-mender-flea-bottom works the net
 6 taylor-hebert-kl-122ac circles the block
 7 taylor-hebert-kl-122ac drops the pack
-8 coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac [coll-net-mender-flea-bottom:1]
+8 coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac
 9 taylor-hebert-kl-122ac holds the feet
 
 10
@@ -38,7 +38,7 @@ aggregate_range: 1-29
 22 wren-stitch-maker-flea-bottom-ward enters the street
 23 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
 24 taylor-hebert-kl-122ac lifts the eyes
-25 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward
+25 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward [taylor-hebert-kl-122ac:1]
 26 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
 27 taylor-hebert-kl-122ac holds the eyes
 28 wren-stitch-maker-flea-bottom-ward crosses the street
