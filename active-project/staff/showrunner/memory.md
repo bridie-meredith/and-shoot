@@ -508,7 +508,21 @@ books:
             - "wren: present, recurring, unnamed as significant"
             - "otto: offstage"
           target_chapter: b01c02
-        status: faceted-r2    # /and-facets Phase 3+4 complete 2026-05-20; R2 fanout 10 judges (NI, memory, feeling×3, metaphor, exposition, dialogue×3); decisions: KEEP-all R1 entries / 0 ADD / 0 DELETE per locked-graph reconciliation; .r2-decisions.md consolidated; cite-index rebuilt clean; scene-map validated 27/27 bones in 3 scenes
+        status: audited-r1-mechanical    # /and-facets Phase 5 cleared HARD=0 post-fixer cycle 1; Phase 5b audience-gate CAP-BURNED at cycle 3 with 10/12 facets passing 3-of-3; 2 facets short (sensory, memory) — do NOT advance to audited-r1
+        audit_path: active-project/staff/auditor/facets-final-audit-r3.md
+        audit_complete: true
+        audit_findings: 0    # HARD; ~15 SIGNAL carry-forward
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md
+        audience_gate_complete: true
+        audience_gate_cycles: 3
+        audience_gate_cap_burned: true
+        audience_gate_facets_passed: [location-state, interest-narrator, state-updates, feeling, metaphor, vibes, exposition, dialogue-coll, dialogue-taylor, dialogue-wren]
+        audience_gate_facets_failed: [sensory, memory]
+        bidirectional_loop: validated
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
+        orchestrator_critic_verdict: NOT-SUCCESSFUL   # cap-burn → NOT-SUCCESSFUL per critic card hot-button
         bones_file: theater/bones/b01-c01.md
         bones_count: 27    # 9 s01 + 10 s02 + 8 s03; max(flat_id) = 29 (deletions s01n03/s01n11/s03n09 leave gaps; blank time-skips at flat 10, 21)
         substance_bone_gate_verdict: PASS    # Phase 6 mechanical PASS (HARD: 0, SIGNAL: 0) + audience SUBSTANCE-FELT 9/9 (3 personas × 3 scenes; no HARD votes)

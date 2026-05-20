@@ -2,44 +2,77 @@
 reviewer: sensory-old-state-reader
 facet: sensory
 cycle: 3
-episode: b01c01
-date: 2026-05-19
-verdict: accept
+episode: b01-c01
+date: 2026-05-20
+verdict: revise
 ---
 
 # Verdict reasoning
 
-Cycle-3 introduced one structural change with old-state-lineage consequences: the cut of sensory:2 @9 destroyed the sound-modality chain's only prior anchor for the surviving sensory:2 @15 (was sensory:3). The within-cycle remediation added a loc-state:2 @9 studio note to re-establish that anchor. I read both surviving entries against both files.
+Cycle-2 I held a revise. My finding: sensory:1 @3's old-state "corner-room-dim" required an explicit light-level field in loc-state:1, not just the inference-chain through "door-shadow across the entry." The fixer's cycle-2 defense-anchor comment documented the inference correctly but did not constitute explicit loc-state anchoring. I demanded: add an explicit light-level note to loc-state:1 so "corner-room-dim" traces near-verbatim.
 
-## sensory:1 @1 — smell: tallow-smoke-ambient -> tallow-smoke-room-density
+Cycle-3 addresses that demand and introduces one new entry. I walk both now.
 
-Old-state-source token: `loc-state:1 sensory-baseline-note (smell: tallow-smoke-ambient, Hook-alley exterior morning; documented in location-state.md @1 studio note, cycle-2 ratification 2026-05-19; rendered-fat component removed — loc-flea-bottom §Sensory localizes that note to the rendering yards not the Hook alley exterior)`
+## sensory:1 @3 — light: corner-room-dim -> overcast-yard-diffuse
 
-Lineage walk: loc-state:1 @1 exists. The studio note at loc-state:1 reads: "smell at loc-state:1 = tallow-smoke-ambient (Hook-alley exterior, morning; sourced from loc-flea-bottom card §Sensory palette + b01c01 chapter-layer canonical usage; tallow-smoke carries at range from the rendering yards into the Hook alley; rendered-fat token removed...)." The old-state `tallow-smoke-ambient` traces exactly to this note. The new-state `tallow-smoke-room-density` describes the intensification when crossing the threshold into the interior. No loc-state contradiction exists. No inheritance skip. Delta direction consistent with a threshold-crossing (exterior ambient → interior density). Old-state is anchored. PASS.
+My cycle-2 revise finding: resolved.
 
-Note: loc-state:1 @1 also carries a second studio note documenting the now-cut sound baseline (corner-room-interior-quiet). The note correctly appends a cycle-3 lineage clarification: the sound chain from corner-room-interior-quiet is no longer active; the surviving sound entry anchors to loc-state:2 @9. I read this as housekeeping, not a new sensory-1 problem. The smell-chain for sensory:1 is unaffected.
+The cycle-3 fix added an explicit light field to loc-state:1 @1: `light: threshold-dim, interior-corner dim under overcast morning backlight`.
 
-## sensory:2 @15 — sound: hook-street-ambient -> watch-column-passing
+Lineage walk: loc-state:1 @1 is the most recent prior loc-state entry before @3. Its light field now reads: "threshold-dim, interior-corner dim under overcast morning backlight." sensory:1's old-state is "corner-room-dim." I apply my near-verbatim test: "interior-corner dim" against "corner-room-dim." These are near-verbatim. "Interior-corner" and "corner-room" describe the same spatial register. "Dim" is shared. The modifier "under overcast morning backlight" contextualizes the source. Single-step lineage: loc-state:1 light field → sensory:1 old-state. Not two-step inference through shadow geometry. The explicit field is present and the trace is direct.
 
-Old-state-source token: `loc-state:2 sensory-baseline-note (sound: hook-street-ambient post-door-open baseline established at @9; documented in location-state.md @9 studio note, cycle-3 within-cycle remediation 2026-05-19)`
+My cycle-2 demand is met. sensory:1 PASS.
 
-Lineage walk: loc-state:2 @9 exists. The cycle-3 within-cycle studio note reads: "sound at loc-state:2 = hook-street-ambient (Hook street-level sound baseline established at the door-open-street-facing transition; with the facing door open, the interior acoustic environment shifts from corner-room-interior-quiet to the street-level ambient of Hook alley foot-traffic and waterfront district activity; this is the established post-door-open sound baseline that persists through @15 until the Watch column spike at sensory:2 @15; sourced from loc-flea-bottom card §Sensory palette [Hook-alley street-level sound] + cond-kl-geography-122ac...)."
+## sensory:3 @17 — sound: street-quiet-of-mid-afternoon -> bootfall-on-cobbles-from-the-Hook-bend
 
-The old-state `hook-street-ambient` traces to this note verbatim. The note is correctly authored: it identifies `sound: hook-street-ambient` as the baseline, sources it to loc-flea-bottom and cond-kl-geography-122ac, explains the mechanism (door-open-street-facing acoustic transition), marks the persistence range (@9 through @15), and explicitly names its function as the old-state anchor for sensory:2 @15.
+This entry is new. I walk its old-state lineage cold.
 
-The new-state `watch-column-passing` is a transient spike above the hook-street-ambient baseline. The delta direction is consistent with loc-state:3 @15's content ("the Watch column passes at the Hook's curve — visible from the corner-room's street-facing side"). Sound accompanies the Watch column; no charged word in the proto-line self-carries the acoustic profile. The delta is coherent with the loc-state narrative at @15. PASS.
+Old-state: `street-quiet-of-mid-afternoon`
 
-## Cite-index AUDIT-NOTE status
+I identify the most recent prior loc-state entry at @17. Walking the loc-state file:
+- loc-state:1 @1: flea-bottom | morning | rain-recent | threshold-open | light field added
+- loc-state:2 @3: flea-bottom | morning | rain-recent | mud-recent, yard-open
+- loc-state:3 deleted (F-007)
+- loc-state:4 @18: flea-bottom | afternoon | overcast | cobbles, hook-corner-visible
+- loc-state:5 @22: flea-bottom | afternoon | overcast | street-open
 
-The cite-index at `_cite-index.md` carries an AUDIT-NOTE: "sensory:2 @15 old-state `hook-street-ambient` has no old-state-source token; unanchored-old-state HARD finding raised in cycle-3 audit report." This note documents the pre-remediation state. The remediation (within-cycle studio dispatch, 2026-05-19) added the old-state-source token to sensory:2 @15 in sensory.md and added the loc-state:2 @9 studio note in location-state.md. The cite-index note is a historical artifact. The sensory.md file itself — the authoritative source — now carries the token. I read the token as present and valid. The HARD finding is resolved.
+The most recent prior loc-state before @17 is loc-state:2 @3. That entry reads: `flea-bottom | morning | rain-recent | mud-recent, yard-open | the far-yard drain-channel at the distance where Coll works the net`. It has no sound field. It declares time = morning. It describes the yard, not the street.
 
-## Full anchor summary
+The old-state of sensory:3 is `street-quiet-of-mid-afternoon`. I apply the lineage test:
 
-- sensory:1 @1: old-state `tallow-smoke-ambient` → loc-state:1 @1 studio note (smell). Anchored. Pass.
-- sensory:2 @15: old-state `hook-street-ambient` → loc-state:2 @9 studio note (sound). Anchored. Pass.
+1. "street-quiet" — does this trace to any loc-state field before @17? No. loc-state:2 @3 is yard-context, no sound field. No prior loc-state entry declares a street-sound baseline on the sound modality. There is no sound-modality prior sensory entry (sensory:2 was deleted). No loc-state carries "street-quiet" or any equivalent sound baseline for the Hook exterior at any point before @17.
 
-Both surviving entries have anchored old-states tracing to authored studio notes with named sources. No free-floating baselines. No loc-state contradictions. No inheritance skips.
+2. "mid-afternoon" — does this trace to any loc-state field before @17? No. loc-state:4 declaring afternoon fires at @18 — one beat after @17. loc-state:2 @3 declares morning. There is no loc-state between @3 and @18 (loc-state:3 deleted at F-007). The afternoon time-of-day at @17 is not established by any prior loc-state entry.
+
+The old-state "street-quiet-of-mid-afternoon" is not traceable to any prior loc-state entry or prior sensory entry on the sound modality. This is the unanchored-old-state pattern named in my card's loc-state-gap-protoline failure mode: "A sensory fire at a protoline that has NO prior loc-state entry establishing a baseline is unanchored." At @17, no loc-state has established a street-sound baseline, and no prior sensory-sound entry exists (sensory:2 was the only sound-candidate and was deleted). The old-state is a free-floating baseline invented for this entry.
+
+Additionally, the time component — "mid-afternoon" — is not yet established at @17. loc-state:4 @18 establishes "afternoon" one beat later. The sensory entry's old-state asserts a time-of-day context the loc-state file does not declare until the next beat. This is a forward-reference masquerading as an old-state: the afternoon palette is one beat downstream, not yet present.
+
+**This is a HARD finding under my rubric.** Entry's old-state does not resolve to (a) the most recent loc-state file's sensory or conditions baseline (loc-state:2 @3 is morning, yard, no sound field) OR (b) a prior sensory-flag entry on the sound modality (none exists). "street-quiet-of-mid-afternoon" is structurally unanchored.
+
+Required fix: one of the following paths —
+- (a) Add a sound-baseline studio note to loc-state:2 @3 (or a new loc-state entry before @17) establishing the Hook exterior street-sound as "street-quiet" in the afternoon approach to the Watch pass. This gives the old-state a loc-state lineage.
+- (b) Revise the old-state name to trace to what loc-state:2 actually establishes — but loc-state:2 is yard-context with no sound field, so this path requires a loc-state edit regardless.
+- (c) Revise sensory:3's old-state away from a time-of-day-stamped street baseline to a formulation derivable from what the bones establish by narrative progression — but narrative progression alone is not a rubric-valid old-state source; loc-state is the required anchor.
+
+The simplest fix: add an explicit sound-baseline note to loc-state:4 @18 that retroactively (as a carry-forward note) establishes the pre-Watch street ambient — but this has the same forward-reference problem since @18 is after @17. The correct fix is a studio note at or before @17 on the sound modality declaring "street-quiet" as the ambient level. loc-state:2 @3 is the nearest prior anchor point; a sound-field addition there would cover the gap.
+
+## Verdict
+
+sensory:1: PASS (cycle-2 demand met; explicit light field in loc-state:1 makes "corner-room-dim" near-verbatim traceable).
+
+sensory:3: HARD FINDING — old-state "street-quiet-of-mid-afternoon" unanchored. No prior loc-state entry establishes a street-sound baseline before @17. "mid-afternoon" time-of-day not declared by any loc-state before @17 (loc-state:4 fires at @18). Free-floating baseline.
+
+Overall verdict: **revise**. One entry passes; one entry carries a HARD unanchored-old-state finding.
+
+# Entry-level callouts
+
+[sensory:1] @3 — RESOLVED. Cycle-2 demand (explicit light field on loc-state:1) met. "interior-corner dim" in loc-state:1 traces near-verbatim to "corner-room-dim" in sensory:1 old-state. Single-step lineage. PASS.
+
+[sensory:3] @17 — HARD FINDING. Old-state `street-quiet-of-mid-afternoon` unanchored. Most recent prior loc-state is loc-state:2 @3 (morning, yard, no sound field). No prior sensory-sound entry exists. "mid-afternoon" time-of-day not established by any loc-state before @17; loc-state:4 @18 establishes afternoon one beat later. The baseline is invented: no loc-state or prior sensory entry on the sound modality establishes "street-quiet" or "mid-afternoon" before @17. Required fix: add explicit sound-baseline note (establishing Hook exterior street-ambient as quiet before the Watch pass) to loc-state:2 @3 or to a new loc-state entry before @17.
 
 # Convergence trace
 
-The unanchored-old-state HARD finding (fault-C3-001 in the cycle-3 audit) drove the within-cycle remediation. The resolution path taken — adding a sensory-baseline studio note at loc-state:2 @9 as Path (a) anchor per rubric §1 — is the correct rubric-sanctioned resolution. I find the anchor present, correctly authored, and sufficient.
+- [sensory:1] @3 lineage gap — RESOLVED. My cycle-1 (fail) and cycle-2 (revise) findings demanded an explicit loc-state:1 light field. Cycle-3 fix delivered it. Near-verbatim trace confirmed. Finding closed.
+- [sensory:3] @17 unanchored old-state — NEW finding, not surfaced in prior cycles (entry did not exist). Not present in any prior auditor report (the entry is cycle-3-new). My old-state lineage walk is the first pass against this entry. The HARD finding is original to this cycle-3 review.
+- No convergence with mechanical auditor findings on this new entry (cite-index shows @17 was a bare protoline before cycle-3; no prior facet decoration; no prior auditor finding on the sensory old-state axis for @17).

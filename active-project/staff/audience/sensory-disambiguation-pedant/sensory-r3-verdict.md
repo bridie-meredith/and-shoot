@@ -2,25 +2,45 @@
 reviewer: sensory-disambiguation-pedant
 facet: sensory
 cycle: 3
-episode: b01c01
-date: 2026-05-19
+episode: b01-c01
+date: 2026-05-20
 verdict: accept
 ---
 
 # Verdict reasoning
 
-Cycle-3 removed sensory:2 @9. That entry's status: it was the entry I did not attack in cycle-2 (my cycle-2 accept carried). The cut is welcome — the door-open structural event in loc-state:2 is exactly the kind of action-verb-adjacent charge situation where the sensory flag risks doubling. Removing it is correct; I'm not re-litigating the cut.
+Cycle-2 I accepted. My single finding from cycle-1 — sensory:2 @16, action-verb-self-charge ("the walls cool"; "cool" IS the thermal event) — was cut at cycle-2. That finding is satisfied and closed. Cycle-2 the surviving file had one entry: sensory:1 @3 (light), which I accepted then and hold now.
 
-Two surviving entries under disambiguation scan:
+Cycle-3 adds one entry: sensory:3 @17. I run it through the disambiguation gate.
 
-**sensory:1 @1** — smell: tallow-smoke-ambient -> tallow-smoke-room-density. Bare-word test: the proto-line is "taylor-hebert-kl-122ac enters the corner-room." The word "enters" is bare. No charged smell-word in the proto-line. The smell modality is not self-carried by the SVO; without the flag, the audience receives an entrance action with no olfactory register. Flag does work. Modality match: smell is natural for a tallow-smoke environment. Delta is an inflection (ambient exterior → room-density interior). Action-verb test: "enters" is a movement verb, not a sensory-action verb (it does not name the olfactory event; it names the physical crossing). Flag earns its place. PASS.
+**sensory:3 @17** — `sound: street-quiet-of-mid-afternoon -> bootfall-on-cobbles-from-the-Hook-bend`
 
-**sensory:2 @15** — sound: hook-street-ambient -> watch-column-passing. Bare-word test: the proto-line is "the city-watch passes the hook." The word "passes" is bare. No charged sound-word ("march," "thunder," "tramp," "clatter" at self-charging register) is evident in the proto-line surface. The Watch column's acoustic profile is not self-carried by "passes." Without the flag, the audience receives a visual event (a column moving past) with no acoustic register. Flag provides the sound spike. Modality match: sound is the natural axis for a column-passing event. Delta is a transient spike (hook-street-ambient → watch-column-passing; the spike is the column, not a new sustained level). PASS.
+Proto-line @17: `the boots strike the cobbles`
 
-No charged-word fires. No ambient-texture-without-inflection fires. No action-verb-self-charge fires. Both entries survive the disambiguation gate unchanged from cycle-2.
+Bare-vs-charged audit: "strike" is a plain impact verb. I hold it against the action-verb-self-charge class from my card: "lights the lamp," "opens the shutter," "ignites the candle," "extinguishes." Those verbs ARE the perceptual event — the lamp-light comes on, the dawn cuts in, the flame catches. "Strike" names a physical contact. It does not name an auditory event. "Boots strike the cobbles" tells the audience contact occurred; it does not tell the audience what they hear — the specific register of city-watch bootfall on stone, the rhythm distinguishable from ordinary foot-traffic on an afternoon street. The sound modality is not self-carried by "strike." The proto-line is bare on the sound axis.
 
-The cut of sensory:2 @9 did not change the disambiguation status of either surviving entry — they were not modified, only renumbered. Carried accept is warranted.
+This is distinct from "the thunder cracks" or "a shriek cuts through" — those words carry their volume. "Strike" carries impact; the acoustic register of cobblestone bootfall is the flag's work, not the word's.
 
-# Cycle-2 carry confirmation
+Modality match: sound is the natural axis for a bootfall event. Correct.
 
-Cycle-2 verdict: ACCEPT. No entries flagged by disambiguation-pedant in cycle-2. Cycle-3 changes (cut of sensory:2 @9, renumbering of sensory:3 → sensory:2) do not introduce new disambiguation questions. Accept carried.
+Delta description: `street-quiet-of-mid-afternoon -> bootfall-on-cobbles-from-the-Hook-bend`. New-state names a specific onset (bootfall, directional cue from the Hook bend). Not generic: "bootfall-on-cobbles-from-the-Hook-bend" is specific enough to distinguish from general foot-traffic. Old-state is the old-state-reader's lane; I do not adjudicate lineage.
+
+Inflection class: this is a spike (transient onset; the Watch column passes and the street returns to ambient). The entry correctly records an audible onset, not a sustained level.
+
+Does the flag do work the language does not? Yes. Without the flag, the stitcher reads a physical action at a plot beat. With the flag, it has a signal to foreground the auditory arrival of authority — the cobble-strike as a distinct perceptual event the prose should surface. The flag earns its place.
+
+No charged-word redundancy. No action-verb-self-charge doubling. No modality mismatch. No ambient-texture-without-inflection failure. Gate clears.
+
+**sensory:1 @3** — unchanged from cycle-2. "Crosses" is bare locomotion; light modality is correct for a threshold crossing from dim interior to diffuse overcast yard; flag does work the language does not. Gate continues to clear.
+
+Accept.
+
+# Entry-level callouts
+
+None. Both surviving entries pass the disambiguation gate. sensory:3's addition does not introduce any charged-word or action-verb-self-charge problem.
+
+# Convergence trace
+
+- [sensory:3] @17 — bare-word test on "boots strike the cobbles": CORRECT. "Strike" does not self-carry sound register. The fixer's cycle-3 note confirms @17 is "bare proto-line, no cite conflict" — consistent with my independent read. No auditor finding on this axis exists; my disambiguation gate is the primary check here.
+- [sensory:1] @3 — unchanged. Gate cleared in cycle-1, confirmed in cycle-2, no modification in cycle-3. Verdict held.
+- [sensory:2] @16 — deleted at cycle-2 (F-009). Charged-verb finding satisfied. Not present in cycle-3 file; no further action.
