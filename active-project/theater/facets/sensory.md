@@ -13,13 +13,11 @@ author: studio
 # to 1/27 = 3.7% which is within band 3-6%. ID gap 2 intentional.
 # Modality silent-gap callouts (sound @15/@17, smell @11) acknowledged but deferred — see defer block below.)
 
-# audience-gate-cycle-1-defer
-# sensory-modality-coverage callouts deferred to cycle-3 or chapter 2:
-# (a) sound silence at @15/@17 (city-watch + insect-swarm produce no sound entry)
-# (b) smell silent-gap at @11 (tallow-smoke present in environment per loc-flea-bottom card sensory palette;
-#     no smell entry fires at or near @11 despite active environment marker)
-# Adding 3 new sensory entries at @11/@15/@17 expands this facet substantially and reopens the sparsity band
-# question. Minimum-change discipline: sensory:2 cut at @16 addresses the charged-verb fault AND brings
-# sparsity within band immediately (1/27 = 3.7%). Modality coverage is deferred.
-# Sensory-old-state-reader callout on sensory:2 @16 old-state structural unanchoring is also resolved by
-# the cut (entry no longer exists).
+3 @17 sound: street-quiet-of-mid-afternoon -> bootfall-on-cobbles-from-the-Hook-bend
+
+# audience-gate-cycle-3-note
+# sensory:3 added at cycle-3 to satisfy sensory-modality-coverage ≥2 modality floor.
+# @17 chosen (boots strike the cobbles — city-watch pass, discrete audible onset; bare proto-line, no cite conflict).
+# @15 (the insects fill the block) sound callout: advisory carry-forward; @17 addition satisfies modality floor.
+# ID 3 is next-available (ID 2 gap is intentional per F-009 cycle-2 deletion; do not renumber).
+# smell silent-gap at @11 remains advisory; loc-state:3 deletion removed its anchor; not escalated.

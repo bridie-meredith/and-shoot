@@ -600,3 +600,9 @@ criteria met: yes — body-part precision removed; person-scale "you" preserves 
 findings-applied: 7 (F-007 through F-013; F-007 pre-logged, confirmed; F-008 through F-013 resolved in this session)
 findings-skipped: 0
 exit: CLEAN (three audience-gate-cycle-1-defer carry-forwards documented: F-008 dark-fantasy displacement-trigger at @22-@23 band-ceiling blocked; F-009 modality silent-gaps sound+smell deferred; F-011 feel-as-spine NI-equivalence awaits rubric authority ruling)
+
+## SESSION-START — 2026-05-20T12:00:00Z — facets-b01c01-cycle3
+dispatch: cycle-3 fixer for /and-facets b01c01 Phase 5b — resolve 2 actionable facet failures (F-014 interest-narrator NI-6 rewrite, F-015 sensory sound-add + loc-state light-level); memory skip per cap-burn ruling (last cycle before cap = 3)
+target: active-project/theater/facets/interest-narrator.md + active-project/theater/facets/sensory.md + active-project/theater/facets/location-state.md + active-project/theater/facets/_inflight-r2/proto-lines-narrator.md + canonical proto-lines
+audit-report: active-project/staff/audience/dark-fantasy-reader/interest-narrator-r2-verdict.md + active-project/staff/audience/sensory-modality-coverage/sensory-r2-verdict.md + active-project/staff/audience/sensory-old-state-reader/sensory-r2-verdict.md
+findings-queued: 3 actionable sub-tasks (F-014, F-015a sound, F-015b loc-state); 1 skip (memory — cap-burn)

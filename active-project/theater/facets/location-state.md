@@ -3,7 +3,7 @@ episode: b01c01
 author: studio
 ---
 
-1 @1 flea-bottom | morning | rain-recent | threshold-open | the door-shadow across the entry marks where the building-keeper stands
+1 @1 flea-bottom | morning | rain-recent | threshold-open | the door-shadow across the entry marks where the building-keeper stands | light: threshold-dim, interior-corner dim under overcast morning backlight
 2 @3 flea-bottom | morning | rain-recent | mud-recent, yard-open | the far-yard drain-channel at the distance where Coll works the net
 # loc-state:3 DELETED (F-007, audience-gate cycle-1 2026-05-20 — anchor verb "lifts the basket" at @11 is dexterity-in-place, not transitional;
 # continuity-from 2 token requires scene-map fusion-eligible-runs verification that fails because @11 is in scene-B,

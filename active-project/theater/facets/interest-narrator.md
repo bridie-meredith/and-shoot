@@ -8,7 +8,7 @@ author: taylor-hebert-kl-122ac (impersonator, facet-authoring mode)
 3 @15 every body within the block is legible and she touches none of them; passive holds, day-long, a continuous suppression cost.
 4 @18 boots strike behind the wall, four spans and tracked through the feed without head-turn; staying invisible costs more in dense streets than she would have estimated.
 5 @22 a girl comes in through the swarm before she comes in through the door; the entry is filed without a name above the line.
-6 @27 she will not write the name above the block, not in the feed and not on the page she keeps for herself.
+6 @27 the threshold holds and what is on the other side stays the size she will not name.
 
 # audience-gate-cycle-1-defer
 # dark-fantasy-reader requested an NI entry at @22 or @23 carrying Earth-Bet shadow /
