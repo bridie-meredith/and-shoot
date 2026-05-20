@@ -2,8 +2,9 @@
 
 character: coll-net-mender-flea-bottom
 episode: b01c01
-behavior-card: westeros-smallfolk (leaf for class); composes westeros-grrm-mannerisms (universal overlay); coll persona card as character-leaf
-anchors-in-scope: @3 (coll → taylor; first social encounter)
+behavior-card: cond-westerosi-witness-vocabulary (composes with cond-kl-social-physics-122ac); coll persona card as character-leaf
+anchors-in-scope (current fork, bones re-cut): @8 (coll → taylor; first speech-beat per b01-c01.md bone 8)
+anchors-in-scope (prior session, archived below): @3 (legacy anchor; bones re-shaped since)
 
 ---
 
