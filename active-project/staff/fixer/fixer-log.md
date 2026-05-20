@@ -647,3 +647,14 @@ fault: sensory:3 @17 old-state "street-quiet-of-mid-afternoon" unanchored (NEW H
 scope: line
 change: (1) sensory.md: deleted live entry "3 @17 sound: ..." + "# audience-gate-cycle-3-note" block; replaced with gap-documentation comment (F-009-style) documenting cycle-3 rejection and user directive; ID gap 3 preserved. (2) proto-lines/b01-c01.md @17: stripped [sensory:3] token; line is now bare. (3) _inflight-r2/proto-lines-sensory.md: appended deletion clause to cite-cascade header; stripped [sensory:3] from @17 line.
 criteria met: yes — live entry removed; documentation comment in place; [sensory:3] absent from all proto-lines surfaces; ID gap preserved
+
+## mem:1-removal — RESOLVED — 2026-05-20T13:10:00Z
+fault: mem:1 @9 feel-as-spine defense rejected by all 3 audience reviewers across cycles 1+2; rubric mandates NI co-citation; NI silent at @9; no carve-out exists; cap-burn final verdict
+scope: line
+change: (1) memory.md: deleted live entry "1 @9 the feet hold and the architecture stays the shape she will not build -> monument-override-architecture-prohibition" + entire "# defense: feel-as-spine" comment block (lines 7-27); replaced with gap-documentation comment (F-009-style) documenting audience-gate cycles 1+2 rejection and user directive; ID gap 1 preserved; mem:2 @18 intact. (2) proto-lines/b01-c01.md @9: stripped [mem:1] token; [feel:1] and [vibes:12] untouched. (3) _inflight-r2/proto-lines-mem.md: appended deletion clause to R2-mutations header; stripped [mem:1] from @9 line. (4) _cite-index.md: (a) "### mem (2 entries)" → "### mem (1 entry)"; (b) deleted "mem:1 @9 back=Y co=[feel:1, vibes:12]" line; (c) feel:1 @9 co-citations updated to remove mem:1; (d) vibes:12 @9 co-citations updated to remove mem:1.
+criteria met: yes — live entry and defense block removed; documentation comment in place; [mem:1] absent from all proto-lines surfaces; cite-index header count corrected; feel:1 and vibes:12 co-citations updated; ID gap 1 preserved
+
+## SESSION-END — 2026-05-20T13:15:00Z — facets-rejected-removal
+findings-applied: 2 (sensory:3 deletion + mem:1 deletion; 6 files mutated)
+findings-skipped: 0
+exit: CLEAN
