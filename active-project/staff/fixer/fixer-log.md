@@ -553,3 +553,50 @@ dispatch: cycle-2 fixer for /and-facets b01c01 Phase 5b — 7 failing facets fro
 target: active-project/theater/facets/location-state.md + interest-narrator.md + sensory.md + state-updates.md + memory.md + active-project/theater/dialogue/wren-stitch-maker-flea-bottom-ward.md + active-project/staff/dialogue-writer/taylor-hebert-kl-122ac.drafts.md + active-project/theater/proto-lines/b01-c01.md
 audit-report: audience-gate cycle-1 per-reviewer verdict files (per-facet, per-persona)
 findings-queued: 7 (F-007 through F-013)
+
+## F-007 — RESOLVED — 2026-05-20T11:05:00Z
+fault: loc-state:3 @11 dexterity-in-place anchor; continuity-from 2 token fails cross-scene fusion-eligible-runs check
+scope: line
+change: loc-state:3 deleted from location-state.md (gap-documented); [loc-state:3] stripped from proto-lines @11; no _inflight-r2 file to update
+criteria met: yes
+
+## F-008 — RESOLVED — 2026-05-20T11:10:00Z
+fault: NI-1 @4 "the network" label — mechanism-label adjacent to Earth-Bet boundary; not in Taylor's canonical interior vocabulary; unanimous callout
+scope: line (NI-1 rewrite) + defer-documentation (dark-fantasy doubled-register escalation)
+change: NI-1 @4 rewritten to "the flies in the wall-bottom register the eye-lift before the eye lifts"; band-ceiling defer comment appended for dark-fantasy displacement-trigger request (6→7/27 would breach 25% cap)
+criteria met: yes
+
+## F-009 — RESOLVED (partial defer) — 2026-05-20T11:15:00Z
+fault: sensory-disambiguation-pedant: sensory:2 @16 "cool" redundant with proto-line; sensory-modality-coverage: cap-breach + sound silence + smell silent-gap; sensory-old-state-reader: sensory:1 old-state unanchored to loc-state light-field; sensory:2 old-state structurally unanchored
+scope: line (sensory:2 delete + sensory:1 defense-anchor + modality defer documentation)
+change: (1) deleted sensory:2 @16 (replaced with gap-doc comment in sensory.md); stripped [sensory:2] from canonical proto-lines/b01-c01.md @16; no _inflight-r2/proto-lines-sensory.md exists. (2) added defense-anchor comment under sensory:1 @3 citing loc-state:1 "door-shadow across the entry" geometry cue + pre-noon time-of-day implication as old-state lineage. (3) appended audience-gate-cycle-1-defer block to sensory.md documenting sound (@15/@17) and smell (@11) modality silent-gap callouts as deferred; minimum-change discipline respected (adding 3 entries would reopen sparsity-band question). Sparsity post-fix: 1/27 = 3.7%, within 3-6% band.
+criteria met: yes (charged-verb fault resolved; old-state anchoring documented; modality deferred with carry-forward block)
+
+## F-010 — RESOLVED — 2026-05-20T11:20:00Z
+fault: rubric-carve-out block in per-source taylor-hebert slice not propagated to consolidated state-updates.md top-of-file position; all 3 reviewers require it between frontmatter close and first source header
+scope: line
+change: inserted full rubric-carve-out comment block (29 lines) at top of state-updates.md between closing --- and # source: env; cite-index builder NOT rerun per dispatch instruction
+criteria met: yes
+
+## F-011 — RESOLVED — 2026-05-20T11:25:00Z
+fault: (a) feel:1 not valid NI-spine substitute per rubric; (b) cond-override-architecture-residue-122ac slug form fails URI-FACETS-CYCLE-1 monument- prefix requirement; (c) file-level doubled-register risk if mem:1 cut
+scope: line (slug rewrite + defense annotation rewrite + defer note)
+change: (1) mem:1 target-reference changed from cond-override-architecture-residue-122ac to monument-override-architecture-prohibition; (2) defense annotation rewritten to cite rubric NI mandate explicitly + acknowledge gap + document feel-as-spine rationale + defer to rubric authority ruling; (3) audience-gate-cycle-1-defer note appended with delete vs. NI-add options
+criteria met: yes — slug corrected; defense cites rubric accurately; gap acknowledged; carry-forward documented
+
+## F-012 — RESOLVED — 2026-05-20T11:30:00Z
+fault: taylor-hebert-kl-122ac.drafts.md chosen draft (Draft B @25) facet-licenses: [DEFERRED-TO-R2] unresolved
+scope: line
+change: replaced facet-licenses: [DEFERRED-TO-R2] with [state:17 @25, vibes:20 @25, feel:2 @27 (post-beat carrier), narrator:6 @27 (post-beat carrier)] in Draft B (chosen); rejected drafts A and C left unchanged
+criteria met: yes
+
+## F-013 — RESOLVED — 2026-05-20T11:35:00Z
+fault: wren dialogue entry 2 @26 "they were not on your hand" — body-part precision reads as insect-tracking awareness leaking; worm-canon-pedant: use person-scale language
+scope: line
+change: "they were not on your hand" changed to "they were not on you" in active-project/theater/dialogue/wren-stitch-maker-flea-bottom-ward.md entry 2 @26; same change applied to chosen Draft B text in active-project/staff/dialogue-writer/wren-stitch-maker-flea-bottom-ward.drafts.md with inline change note
+criteria met: yes — body-part precision removed; person-scale "you" preserves proximity-argument structure
+
+## SESSION-END — 2026-05-20T11:40:00Z — facets-b01c01-audience-gate-cycle2
+findings-applied: 7 (F-007 through F-013; F-007 pre-logged, confirmed; F-008 through F-013 resolved in this session)
+findings-skipped: 0
+exit: CLEAN (three audience-gate-cycle-1-defer carry-forwards documented: F-008 dark-fantasy displacement-trigger at @22-@23 band-ceiling blocked; F-009 modality silent-gaps sound+smell deferred; F-011 feel-as-spine NI-equivalence awaits rubric authority ruling)
