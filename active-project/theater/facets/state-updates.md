@@ -36,6 +36,38 @@ author: taylor-hebert-kl-122ac (impersonator, facet-authoring mode)
 target-scope: actor:taylor-hebert-kl-122ac.* only
 ---
 
+# rubric-carve-out — POV co-citation requirement (rubric-state-updates.md § Cross-facet contract)
+#
+# The cross-facet contract calling for narrator-interest co-citation on POV-actor
+# state entries scopes to mental / perceptual / relational state mutations
+# (knowledge.*, social-state.*, mask-state, exposure-state). Mechanical-action
+# state deltas (position, lodging-payment, inventory.<item>) do NOT trigger the
+# NI co-citation requirement; mechanical actions are bone-SVO-carried and NI
+# fires on them only when interior register adds load.
+#
+# Coverage in this chapter:
+# - state:3 @6 (knowledge.flea-bottom-geometry) — NI-spine present: narrator:2 @6 ✓
+# - state:5 @8 (social-state.with-coll) — NI-absent; defensible: spoken-acknowledgment
+#   beat carried by dialogue:coll:1 + state-on-bone; narrator:2 @6 establishes the
+#   wider block-reading interiority that this single-beat acknowledgment lands inside
+# - state:8 @20 (knowledge.coll-pattern) — NI-absent; defensible: day-close inventory
+#   tick falls in flat-low rhythm-shape; NI:4 @18 carries the working-day's cost
+#   register; NI:5 @22 picks up at scene-C open; the trailing-edge of scene-B does
+#   not require a third NI fire to anchor a knowledge-state close
+# - state:9 @25 (social-state.with-wren) — NI-absent; defensible: speech-act IS
+#   the state-delta-producer (dialogue:taylor:1 @25 carries the moment); NI:6 @27
+#   resolves the interior register two beats later (face-not-node hold)
+# - state:1, :2, :4, :6, :7 — mechanical-action class (position, payment,
+#   inventory); carve-out applies; NI co-citation not required
+#
+# This carve-out documents the band-ceiling collision the audit surfaces: the
+# chapter has 0 peak-bones (all scenes rhythm-shape: flat-low) and a substance
+# contract of mechanical-establishment, which structurally limits NI fires to
+# 6/27 = 22.2% (within band 15-25%). Adding NI entries to satisfy mechanical
+# state pairing would breach band ceiling and violate the AP refuse-by-default
+# discipline. Accepted-with-defense per the rubric's "exceptional with documented
+# author defense" clause.
+
 9 @1 actor:taylor-hebert-kl-122ac.position: arrival-transient -> hook-district-corner-room
 10 @2 actor:taylor-hebert-kl-122ac.lodging-payment-status: unpaid -> paid-current-period
 11 @6 actor:taylor-hebert-kl-122ac.knowledge.flea-bottom-geometry: arrival-baseline -> hook-block-route-mapped
