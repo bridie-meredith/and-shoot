@@ -1,50 +1,67 @@
----
 facet: exposition
-episode: b01c01
-author: exposition-author
-round: r2
-r2-summary: 4 entries reviewed; 4 KEEP, 0 DELETE, 0 REWORD, 0 ADD. Both scene-open-orient candidates (@11, @20) re-refused against locked loc-state + NI graph. Sparsity 16.7% earned by cold-start chapter load (preamble + three first-mention entries land on the chapter's three named entities + the Watch institution; no lens facet can substitute).
+episode: b01-c01
+author: exposition-author (R1)
+voice: pov-frame first-person
 ---
 
-# Fire-audit — scene-open-orient (R2 re-validation against locked graph)
+# exposition — b01-c01 (R1)
 
-scene-B open @11:
-  (a) time-skip-blank-@10: YES
-  (b) loc-state-at-@11: FIRES (location-state entry 3 — "midday | corner-room-interior | working-hour noise through the wall — the alley at its loudest registered density of the day; distinct from the morning quiet of @1") — carries time-shift + place
-  (c) NI-first-2-anchors-of-scene-B (@11, @12): NI entry 3 @12 carries cognitive content about block-reading via the flies; not time/place orient, but loc-state already covers
-  verdict: REFUSE (b fails — loc-state carries time + place; exposition would be wallpaper)
-  R2-confirm: locked loc-state:3 + NI:3 confirm R1 refusal. No fire.
+# Fire-audit (scene-open-orient candidates)
+# Scene-A @1: no time-skip-blank precedes (chapter open; preamble covers); condition (a) fails. NO FIRE.
+# Scene-B @11: time-skip-blank @10 precedes; condition (a) met. R1 cannot read loc-state/NI;
+#   firing scene-open-orient as candidate; R2 (graph-aware) will refuse if (b) loc-state-at-anchor or (c) NI-time-or-place-in-first-2-anchors covers.
+# Scene-C @22: time-skip-blank @21 precedes; condition (a) met. R1 candidate; R2 will refuse on lens-cover.
 
-scene-C open @20:
-  (a) time-skip-blank-@19: YES
-  (b) loc-state-at-@20: FIRES (location-state entry 6 — "morning | alley-street-mouth | third or fourth day — light angle shifted earlier than the arrival morning") — carries time-shift + place
-  (c) NI-first-2-anchors-of-scene-C (@20, @21): NI entry 5 @21 carries the approach geometry, not time/place orient
-  verdict: REFUSE (b fails — loc-state carries time + place; exposition would be wallpaper)
-  R2-confirm: locked loc-state:6 + NI:5 confirm R1 refusal. No fire.
+1 @0 episode-open-preamble: I am twenty years old by the calendar I came in with, and the year here is 122 AC — late in Viserys-the-First's reign, though no one in Flea Bottom counts the king's years, only feast, shortage, and the lord's levy. I live in King's Landing now, in the slum south of the three hills. I came here with a rule. Be useful without taking control. Do not do, again, what I once did at the end of the world I came from. | scope: episode-open-preamble | renders-as: italic-preamble | sources: project.constraints.settings, cond-kl-court-state-122ac, cond-kl-geography-122ac, cond-kl-social-physics-122ac, cond-override-architecture-residue-122ac, cond-earth-bet-noun-fence, b01c01.chunk, b01c01s01.chunk | licensed-by: cape-fic-reader:cape-fic-doesnt-know-122-AC-as-westerosi-date-or-kings-landing-as-place-or-flea-bottom-as-slum, dark-fantasy-reader:dark-fantasy-needs-the-prohibition-frame-and-the-world-i-came-from-without-earth-bet-naming, worm-canon-pedant:worm-canon-needs-the-once-deployed-override-rendered-as-the-prohibition-without-naming-khepri
 
-both scene boundaries refused; lens facets carry orientation. zero scene-open-orient entries this chapter.
+2 @0 episode-open-context: Flea Bottom is the city's lowest ground, the warren south of Aegon's Hill where the smallfolk live who count their coin in copper — pennies for a small meal, stars for a cup of water or a courtesy paid. I pay copper stars for a corner-room off the Hook, a curving lane near the river where the most marginal of Flea Bottom keeps to itself, and I mend nets to pay for the next week. | scope: episode-open-context | renders-as: preamble-paragraph | sources: cond-kl-geography-122ac, cond-kl-social-physics-122ac, b01c01.chunk, b01c01s01.chunk | licensed-by: cape-fic-reader:cape-fic-doesnt-know-flea-bottom-position-or-copper-currency-or-the-hook-as-waterfront-margin, worm-canon-pedant:worm-canon-doesnt-know-kl-internal-geography-or-westerosi-currency-units, dark-fantasy-reader:dark-fantasy-needs-flea-bottom-specifically-as-the-slum-and-not-generic-medieval-poor-quarter
 
----
+3 @4 coll: Coll — the net-mender who keeps the corner of the building's street face, a man in his fifties whose range of observation runs exactly one street and who asks nothing of strangers who can hold a needle. | scope: first-mention-character | renders-as: inline-appositive | sources: coll-net-mender-flea-bottom.card, b01c01s01.chunk, cond-kl-social-physics-122ac | licensed-by: cape-fic-reader:cape-fic-has-no-roster-anchor-for-coll-as-a-named-individual-entering-prose, dark-fantasy-reader:dark-fantasy-needs-collas-flea-bottom-fixture-not-generic-old-man, worm-canon-pedant:worm-canon-has-no-prior-anchor-for-this-named-individual
 
-1 @0 episode-open-preamble: I am twenty years old in this reckoning, give or take what I do not count, and the city around me is King's Landing in the year one hundred and twenty-two after the Conquest — late in Viserys's reign, with a war the small folk do not yet have a name for moving toward them under the surface of the court. I live in Flea Bottom, the slum that fills the lower ground south of the three hills, the part of the city the rest of the city forgets on purpose. I came here with a rule. Be useful. Do not take control of anyone again, the way I once did, at the end of the world I came from. | scope: episode-open-preamble | renders-as: italic-preamble | sources: project.brief, series.chunk.path.motivation, cond-kl-geography-122ac, loc-flea-bottom, taylor-hebert-kl-122ac.description, cond-override-architecture-residue-122ac, cond-earth-bet-noun-fence | licensed-by: cape-fic-reader:cape-fic-doesnt-know-122ac-westeros-or-flea-bottom-as-the-citys-poorest-slum, dark-fantasy-reader:dark-fantasy-needs-planetos-specific-time-and-place-orientation-and-the-protagonists-operating-rule-as-stakes-frame, worm-canon-pedant:worm-canon-needs-the-once-deployed-override-rendered-as-the-prohibition-without-naming-per-noun-fence
+4 @11 scene-open-orient: The next morning, the working day. | scope: scene-open-orient | renders-as: scene-bridge | sources: b01c01s02.chunk, scene-map:scene-B | licensed-by: cape-fic-reader:cape-fic-needs-time-shift-marker-after-scene-A-close-if-no-lens-carries, dark-fantasy-reader:dark-fantasy-needs-day-bridge-after-time-skip-blank-if-no-lens-carries, worm-canon-pedant:worm-canon-needs-explicit-discontinuity-marker-if-no-lens-carries
 
-2 @3 coll: Coll has mended nets at the corner outside this room for fifteen years — a fixture of the block, in his fifties, his speech ordered by the work in his hands. | scope: first-mention-character | renders-as: inline-appositive | sources: coll-net-mender-flea-bottom.description, coll-net-mender-flea-bottom.voice, coll-net-mender-flea-bottom.stats | licensed-by: cape-fic-reader:no-prior-roster-anchor-for-named-individual-entering-prose, dark-fantasy-reader:no-prior-roster-anchor-for-named-individual-entering-prose, worm-canon-pedant:no-prior-roster-anchor-for-named-individual-entering-prose
+5 @18 the-city-watch: the city-watch — King's Landing's standing patrol in gold cloaks, a few hundred strong, who move through Flea Bottom on a rotation the block knows by sound. | scope: first-mention-term | renders-as: em-dash-fold | sources: cond-kl-social-physics-122ac, cond-kl-geography-122ac | licensed-by: cape-fic-reader:cape-fic-doesnt-know-westerosi-watch-as-institution-distinct-from-generic-guard, worm-canon-pedant:worm-canon-doesnt-know-kl-watch-as-gold-cloaked-standing-patrol, dark-fantasy-reader:dark-fantasy-needs-watch-as-westerosi-institution-not-generic-medieval-guard
 
-3 @15 the-watch: the Watch — the city's gold-cloaked standing patrol, hundreds-strong, its Flea Bottom passes on a schedule the block reads by long habit. | scope: first-mention-term | renders-as: em-dash-fold | sources: cond-kl-social-physics-122ac, cond-kl-geography-122ac | licensed-by: cape-fic-reader:cape-fic-doesnt-know-westerosi-city-watch-as-institution, dark-fantasy-reader:dark-fantasy-needs-the-watch-as-specific-kl-institution-not-generic-medieval-guard, worm-canon-pedant:worm-canon-doesnt-know-westerosi-city-watch-as-institution
+6 @18 the-hook: the Hook — a curving lane at Flea Bottom's waterfront edge, the slum's lowest margin, where the most transient and least-protected smallfolk keep their rooms. | scope: first-mention-place | renders-as: inline-appositive | sources: cond-kl-geography-122ac, cond-kl-social-physics-122ac, wren-stitch-maker-flea-bottom-ward.card | licensed-by: cape-fic-reader:cape-fic-doesnt-know-the-hook-as-flea-bottoms-waterfront-margin, worm-canon-pedant:worm-canon-doesnt-know-kl-flea-bottom-internal-geography, dark-fantasy-reader:dark-fantasy-needs-the-hook-as-place-frame-not-institution
 
-4 @20 wren: Wren is eleven — a ward of one of the stitch-maker households a few doors over, the kind of child the Hook keeps in light work and two meals for keeping. | scope: first-mention-character | renders-as: inline-appositive | sources: wren-stitch-maker-flea-bottom-ward.description, wren-stitch-maker-flea-bottom-ward.stats, cond-kl-social-physics-122ac | licensed-by: cape-fic-reader:no-prior-roster-anchor-for-named-individual-entering-prose, dark-fantasy-reader:no-prior-roster-anchor-for-named-individual-entering-prose, worm-canon-pedant:no-prior-roster-anchor-for-named-individual-entering-prose
+7 @22 scene-open-orient: On the third or fourth day, near evening. | scope: scene-open-orient | renders-as: scene-bridge | sources: b01c01s03.chunk, scene-map:scene-C | licensed-by: cape-fic-reader:cape-fic-needs-multi-day-skip-marker-after-scene-B-close-if-no-lens-carries, dark-fantasy-reader:dark-fantasy-needs-day-bridge-after-time-skip-blank-if-no-lens-carries, worm-canon-pedant:worm-canon-needs-explicit-discontinuity-marker-if-no-lens-carries
 
-5 @20 the-hook: the Hook — a curving lane at Flea Bottom's waterfront edge, the slum's lowest margin, where the most transient and least-protected smallfolk live. | scope: first-mention-place | renders-as: inline-appositive | sources: cond-kl-geography-122ac, cond-kl-social-physics-122ac, wren-stitch-maker-flea-bottom-ward.description | licensed-by: cape-fic-reader:cape-fic-doesnt-know-the-hook-as-flea-bottoms-waterfront-margin-lane-housing-the-most-marginal-smallfolk, worm-canon-pedant:worm-canon-doesnt-know-kl-flea-bottom-internal-geography-or-the-hook-as-waterfront-margin, dark-fantasy-reader:dark-fantasy-needs-the-hook-as-place-frame-not-institution-establishing-wren-lives-at-the-slum-floor
-# ADD (cycle-2 fixer, 2026-05-19): cape-fic-reader requested Hook gloss; embedded-noun-gloss-completeness HARD per rubric URI-FACETS-CYCLE-1; the Hook is introduced inside exposition:4's Wren gloss as the structural frame for Wren's dependency without orientation; per-anchor cap: @20 now has first-mention-character (entry 4) + first-mention-place (entry 5) — allowed pair; gloss is ≤30 words; renders-as: inline-appositive (cheapest; folds before the Wren appositive or simultaneously); render-order at stitch: the-hook gloss fires first (the place frame) then wren gloss (the individual situated in that place); embedded-noun-gloss-completeness resolved (Hook is now on the per-episode glossed record)
-# REVISE (cycle-2 exposition-author ratification, 2026-05-19): fixer's gloss content was materially wrong — characterized the Hook as "ward-organized precincts" (institutional frame). cond-kl-geography-122ac authoritative: "The Hook is a specific lane within Flea Bottom — a curved street near the waterfront where the most marginal Flea Bottom residents concentrate". cond-kl-social-physics-122ac corroborates: "The Hook's fluidity (waterfront-adjacent; transient population...)". The Hook is a PLACE (sub-district lane), not an institutional ward-organization; the fixer conflated Wren's ward-status (which entry 4 already covers via "a ward of one of the stitch-maker households") with the Hook itself. scope: first-mention-place retained (correct: the Hook is a place); renders-as: inline-appositive retained; sources: added cond-kl-geography-122ac (the authoritative geography source for the Hook, was missing); licensed-by claims rewritten to reference place-frame not institutional-frame. 23 words; under 30-word cap.
+8 @22 wren: Wren — a stitch-maker's ward from two buildings over, eleven years old, kept in light work and two meals for trim-work and thread-sorting, with the close-watching habit a trade like that teaches. | scope: first-mention-character | renders-as: inline-appositive | sources: wren-stitch-maker-flea-bottom-ward.card, b01c01s03.chunk, cond-kl-social-physics-122ac | licensed-by: cape-fic-reader:cape-fic-has-no-roster-anchor-for-wren-as-named-individual-entering-prose, dark-fantasy-reader:dark-fantasy-needs-wren-as-flea-bottom-ward-not-generic-child, worm-canon-pedant:worm-canon-has-no-prior-anchor-for-this-named-individual
 
-# Cross-episode register write-back
+# Cross-episode register write-back (b01c01 baseline establishment)
+# - kings-landing-122ac | first-mention-anchor: @0 | gloss-id: 1
+# - flea-bottom | first-mention-anchor: @0 | gloss-id: 1 (preamble) + @0 gloss-id: 2 (context)
+# - the-prohibition | first-mention-anchor: @0 | gloss-id: 1
+# - copper-currency-star-penny | first-mention-anchor: @0 | gloss-id: 2
+# - coll | first-mention-anchor: @4 | gloss-id: 3
+# - the-city-watch | first-mention-anchor: @18 | gloss-id: 5
+# - the-hook | first-mention-anchor: @18 | gloss-id: 6
+# - wren | first-mention-anchor: @22 | gloss-id: 8
 
-- flea-bottom | glossed-in: b01c01 | gloss-id: 1 | first-mention-anchor: @0
-- kings-landing-122ac | glossed-in: b01c01 | gloss-id: 1 | first-mention-anchor: @0
-- the-prohibition | glossed-in: b01c01 | gloss-id: 1 | first-mention-anchor: @0
-- coll | glossed-in: b01c01 | gloss-id: 2 | first-mention-anchor: @3
-- the-watch | glossed-in: b01c01 | gloss-id: 3 | first-mention-anchor: @15
-- wren | glossed-in: b01c01 | gloss-id: 4 | first-mention-anchor: @20
-- the-hook | glossed-in: b01c01 | gloss-id: 5 | first-mention-anchor: @20
-# ADD (cycle-2 fixer, 2026-05-19): the-hook added to cross-episode register; embedded-noun-gloss-completeness HARD per URI-FACETS-CYCLE-1; resolved at @20 first-mention-place entry
+# Flagged seams (R1 author-handoff notes; for R2 + audience-gate review)
+# - Sparsity 8 / 27 in-scope proto-lines = 29.6%, above the 1-5% band. Cold-start chapter override: chapter 1 of 18
+#   carries cold-read load no other chapter will, including the episode-open preamble + context (mandatory at series open),
+#   first-mention of the chapter's three named individuals (Coll, the building-keeper considered then refused,
+#   Wren), first-mention of the city-watch + the Hook (both will recur across the book), and two scene-open
+#   candidates that R2 will likely refuse against lens-cover. Authored generously per the R1-generous / R2-trim shape.
+# - Dark-fantasy reader's Khepri-side gap is intentionally only partially bridged in prose (preamble: "what I once did
+#   at the end of the world I came from") per the Earth-Bet hard-fence. The remainder is reserved for vibes / memory
+#   facets to carry offstage. R1 cannot bridge what the fence forbids naming.
+# - building-keeper @2 considered as first-mention-character candidate and REFUSED at R1 cull: single-mention,
+#   plain-English compound (building + keeper), recognizable as rent-collecting role from context; no later return;
+#   not in cast roster; the rubric's "single-mention non-load-bearing terms can survive without gloss" clause applies.
+# - "the corner-room" @1 considered as first-mention-place and REFUSED at R1 cull: common-English compound,
+#   loc-state lens-facet expected to carry at-establishment per never-gloss "loc-state firing at-establishment".
+# - "the insects fill the block" @15: Khepri-residue surface. Cannot be glossed in-prose under the Earth-Bet
+#   fence. Residue resolution lives in vibes / memory facets. R1 deliberately silent at this anchor.
+# - Embedded-noun audit per rubric URI-FACETS-CYCLE-1: Wren gloss-text (entry 8) references "stitch-maker"
+#   (plain-English compound, no gloss needed) and implicitly the household; "two buildings over" presupposes
+#   no proper noun. The Hook is glossed at entry 6 @18 which is PRIOR to entry 8 @22 — chain resolves.
+#   Coll gloss-text (entry 3) references no embedded proper nouns. The-city-watch gloss (entry 5) references
+#   King's Landing (covered by preamble entry 1) + Flea Bottom (covered by preamble entry 1 + context entry 2).
+#   Preamble (entry 1) references Viserys-the-First (proper noun, not separately glossed) — judged acceptable
+#   under the "always-known register" path: late-Viserys-I reign is the cold-start frame for the chapter and the
+#   king's name appearing in the preamble's own framing sentence does not delegate context to an unoriented term;
+#   the preamble's claim is that the year is 122 AC late-Viserys-reign, which is self-contained as a calendar marker.
+#   Aegon's Hill (entry 2) — proper noun, not separately glossed, judged acceptable as a place-of-the-city named
+#   in the city-orientation context paragraph (always-known to anyone who has read the preamble naming KL).

@@ -1,61 +1,54 @@
 facet: vibes
 episode: b01c01
 author: showrunner
-round: r1
 ---
 
-# vibes-updates — b01c01 (R1 provisional)
+# vibes — b01c01
 
-# ── Scene-A (@1-@9): arrival, vouching, labor-spot earned without debt ──────
+# OFF-SCREEN / WORLD-BUILD LICENSED (no proto-line anchor)
 
-1 @1 actor:taylor-hebert-kl-122ac ++ insects: [passive-ambient-not-deployed, insect-sense-held-at-threshold, the-network-runs-while-the-hand-works-the-needle] | licensed-by: proto:8, world-build:capability-suppressed-rank-3-baseline
+1 loc:flea-bottom + penitential-grey: [stone-before-lime, tallow-smoke-permanent, rain-smell-absorbed-into-walls, beauty-not-available-at-this-altitude] | licensed-by: world-build:KL-stone-tallow-atmosphere, world-build:penitential-grey-key
 
-2 @1 actor:taylor-hebert-kl-122ac ++ king's-landing: [flea-bottom-specificity-not-city-abstraction, the-cheaper-streets-underfoot, stone-tallow-density-at-ground-level] | licensed-by: proto:1, proto:2, world-build:flea-bottom-sensory-vocabulary
+2 loc:flea-bottom + gallows-calendar: [feast-and-shortage-and-levy, the-rhythm-that-is-the-law, no-comfort-without-a-cost-attached, smallfolk-time-as-a-sequence-of-impositions] | licensed-by: world-build:KL-smallfolk-social-physics, world-build:gallows-calendar-key
 
-3 @1 loc:flea-bottom + corner-room-as-threshold: [vouching-physics-embedded-in-the-floor, cost-paid-at-the-door-before-any-work-begins, entry-is-a-social-transaction] | licensed-by: proto:1, proto:2, proto:3, world-build:flea-bottom-social-physics
+3 loc:flea-bottom + smallfolk-substrate: [population-density-as-location-character, every-surface-occupied, the-ward-is-also-the-people-in-it, substrate-legible-through-density-patterns] | licensed-by: world-build:KL-smallfolk-social-physics, world-build:flea-bottom-geography
 
-4 @1 episode + arrival-at-cost-threshold: [social-entry-as-contract, labor-spot-as-the-smallest-legible-belonging, no-debt-incurred-at-opening] | licensed-by: proto:1, proto:2, proto:3
+4 episode + operating-rule-intact: [prohibition-active-and-unchallenged, chapter-closes-with-the-rule-standing, baseline-before-the-first-exception, the-intact-form] | licensed-by: world-build:chapter-goal, world-build:b01c01-chunk
 
-5 @3 actor:coll-net-mender-flea-bottom ++ stationary-observation: [she-passes-the-vouching-test-he-administers-without-declaration, the-anomaly-assessed-and-admitted, anomaly-absorbed-into-the-normal-baseline] | licensed-by: proto:3, proto:4, proto:5
+5 episode + prohibition-load-bearing: [rule-is-not-background-it-is-weight, dormancy-requires-ongoing-enforcement, the-central-discipline-named, capability-held-by-choice-not-absence] | licensed-by: world-build:b01c01-substance-delta, world-build:capability-dormant-rank-3
 
-6 @4 actor:coll-net-mender-flea-bottom ++ community-substrate: [the-needle-extended-is-the-door-opened, one-thread-added-to-the-fabric-by-one-gesture, access-granted-without-formal-account] | licensed-by: proto:4, proto:5
+6 series + the-atonement-that-is-the-repetition: [the-structural-irony-of-the-series, good-act-and-harm-enabled-are-the-same-act, the-ledger-completes-with-the-same-entry, atoning-by-repeating-the-architecture] | licensed-by: world-build:series-chunk, world-build:tragic-causal-key
 
-7 @9 actor:coll-net-mender-flea-bottom ++ ambient-fixture: [he-faces-the-street-not-her, the-ward-tracked-by-not-attending-to, baseline-restored-after-anomaly-admission] | licensed-by: proto:9
+# ON-SCREEN LICENSED (proto-line anchored)
 
-# ── Scene-B (@11-@18): working-day, passive insect-sense, prohibition enacted ─
+7 @1 loc:flea-bottom + stone-and-tallow: [rough-threshold-surface, first-texture-received, the-physical-fact-of-the-district, nothing-decorative-in-the-material] | licensed-by: proto:1, world-build:KL-sensory-vocabulary
 
-8 @12 actor:taylor-hebert-kl-122ac ++ insects: [city-block-as-perimeter-not-target, passive-fill-not-active-sweep, the-network-at-ambient-not-operational] | licensed-by: proto:12, world-build:capability-suppressed-rank-3-baseline
+8 @2 loc:flea-bottom + vouching-physics: [anonymous-coin-for-space, no-claim-purchased, settlement-without-debt, transaction-as-the-only-entry-form] | licensed-by: proto:2, world-build:KL-social-physics-122ac
 
-9 @14 actor:taylor-hebert-kl-122ac ++ ledger: [net-work-as-the-permitted-surface, the-permitted-channel-alongside-the-suppressed-channel, manual-labor-as-the-cost-paid-for-staying-within-the-rule] | licensed-by: proto:7, proto:14, proto:17, world-build:capability-prohibition-intact
+9 @4 actor:coll-net-mender-flea-bottom ++ non-interpretive: [anomaly-received-without-naming, registers-the-stranger-without-classifying-the-stranger] | licensed-by: proto:4, world-build:coll-card
 
-10 @15 loc:flea-bottom ++ corner-room-as-threshold: [city-watch-passes-without-incident, the-ward-reads-normal-to-the-watch, presence-concealed-by-conformity-not-power] | licensed-by: proto:15
+10 @4 actor:coll-net-mender-flea-bottom ++ stationary-observation: [range-confirmed-one-street, anomaly-departures-registered-at-series-open] | licensed-by: proto:4, proto:5
 
-11 @12 loc:flea-bottom ++ corner-room-as-threshold: [walls-as-insect-medium, block-density-passively-mapped, the-location-rendered-as-network-substrate] | licensed-by: proto:12, proto:13
+11 @5 actor:coll-net-mender-flea-bottom ++ never-names: [not-naming-is-the-courtesy, return-to-work-while-the-read-continues] | licensed-by: proto:5, world-build:cond-westerosi-witness-vocabulary
 
-12 @15 episode + prohibition-in-action: [capability-available-rule-the-only-gap, the-prohibition-holds-without-external-pressure, cost-paid-in-forgone-reach] | licensed-by: proto:12, proto:15, proto:16, world-build:capability-prohibition-intact
+12 @9 actor:taylor-hebert-kl-122ac ++ override-architecture-residue: [held-below-deployment-by-discipline] | licensed-by: proto:9, world-build:capability-dormant-rank-3
 
-# ── Scene-C (@20-@26): Wren arrives, face-not-node held ──────────────────────
+13 @15 actor:taylor-hebert-kl-122ac ++ insects: [passive-fill-not-deployment, the-not-deploying-of-what-is-present] | licensed-by: proto:15, world-build:capability-dormant-rank-3
 
-13 @21 actor:wren-stitch-maker-flea-bottom-ward ++ observation: [she-watched-before-she-approached, the-approach-deliberate-not-impulsive, she-noticed-what-the-street-did-not-notice] | licensed-by: proto:20, proto:21
+14 @15 loc:flea-bottom ++ smallfolk-substrate: [insect-legible-density, population-readable-through-what-lives-in-the-walls] | licensed-by: proto:15, world-build:override-architecture-residue-122ac
 
-14 @22 actor:wren-stitch-maker-flea-bottom-ward ++ silence: [mutual-silence-begun-on-first-contact, the-un-asked-question-present-from-the-first-word, both-sides-already-doing-the-work] | licensed-by: proto:22, proto:23, proto:24, proto:25
+15 @18 loc:flea-bottom ++ gallows-calendar: [watch-rotation-as-district-rhythm, the-enforcement-beat-in-the-smallfolk-calendar] | licensed-by: proto:18, world-build:KL-smallfolk-social-physics
 
-15 @22 actor:wren-stitch-maker-flea-bottom-ward ++ un-priced: [the-exclusion-from-the-ledger-begins-here, the-anomaly-category-created-on-first-contact, the-error-of-refusal-starts-now] | licensed-by: proto:23, proto:24, proto:25, world-build:cost-bearer-scene-frequency
+16 @19 actor:taylor-hebert-kl-122ac ++ ledger: [accounting-runs-under-watch-pressure, eyes-held-while-the-ledger-continues] | licensed-by: proto:19, world-build:cold-utilitarian-key
 
-16 @24 actor:taylor-hebert-kl-122ac ++ wren: [face-not-node-held-on-first-contact, the-refusal-to-complete-the-read, silence-as-the-initial-grammar-of-the-relationship] | licensed-by: proto:23, proto:24, proto:25
+17 @22 actor:wren-stitch-maker-flea-bottom-ward ++ observation: [entrance-as-inventory, the-scene-taken-in-before-the-step-is-completed] | licensed-by: proto:22, world-build:wren-card
 
-17 @23 actor:taylor-hebert-kl-122ac ++ override-architecture-residue: [the-pattern-read-initiated-and-stopped, the-gap-held-by-choice-not-incapacity, unconsented-instrumentalization-refused-at-the-first-opportunity] | licensed-by: proto:23, proto:24, world-build:capability-prohibition-intact, world-build:override-architecture-residue-122ac
+18 @23 actor:wren-stitch-maker-flea-bottom-ward ++ silence: [first-question-seeds-the-silence, the-opening-that-becomes-the-pattern] | licensed-by: proto:23, world-build:wren-card
 
-18 @26 actor:coll-net-mender-flea-bottom ++ never-names: [present-when-wren-arrives-does-not-intervene, the-witnessing-without-naming-function-begins, the-noting-without-acting-is-already-operative] | licensed-by: proto:9, proto:20, proto:21, proto:26
+19 @24 actor:taylor-hebert-kl-122ac ++ ledger: [child-registered-before-categorized, the-first-assessment-before-the-gap-opens] | licensed-by: proto:24, world-build:cold-utilitarian-key
 
-19 @20 loc:flea-bottom ++ corner-room-as-threshold: [street-as-the-geometry-of-encounter, wren-enters-the-mapped-space, the-ward-geography-is-also-the-stage] | licensed-by: proto:20, proto:21, proto:26
+20 @25 actor:taylor-hebert-kl-122ac ++ atonement: [rule-intact-at-first-contact-with-cost-bearer, prohibition-holds-through-the-child-question] | licensed-by: proto:25, proto:27, world-build:b01c01-chunk
 
-20 @26 episode ++ prohibition-in-action: [face-not-node-is-the-rule-made-visible, the-prohibition-enacted-against-taylor's-own-trained-reading, the-rule-costs-something-here] | licensed-by: proto:23, proto:24, proto:25, world-build:capability-prohibition-intact
+21 @27 actor:wren-stitch-maker-flea-bottom-ward ++ un-priced: [not-entered-at-first-meeting, the-gap-in-the-ledger-begins-here] | licensed-by: proto:27, world-build:relational-anchor-status-rank-3
 
-21 actor:wren-stitch-maker-flea-bottom-ward ++ trust: [the-trust-preceded-by-deliberate-approach, she-chose-to-speak-to-the-outsider, the-asymmetric-trust-initiated-from-wren's-side] | licensed-by: proto:21, proto:22, proto:25
-
-# ── Off-anchor: series-baseline vibes active during b01c01 ───────────────────
-
-22 actor:taylor-hebert-kl-122ac ++ atonement: [the-repetition-of-the-prohibition-is-the-atonement, the-rule-held-one-more-time, cost-paid-in-forgone-knowledge] | licensed-by: canon:capability-prohibition-intact-b01c01, world-build:taylor-atonement-framework
-
-23 actor:taylor-hebert-kl-122ac ++ earning-collapse: [the-first-day-is-the-day-before-the-first-mistake, legible-in-retrospect-not-in-the-moment, the-good-intention-intact-at-chapter-close] | licensed-by: world-build:earning-collapse-arc, world-build:cost-bearer-scene-frequency
+22 @29 actor:taylor-hebert-kl-122ac ++ atonement: [return-to-needle-after-child, discipline-re-grounded-in-the-work] | licensed-by: proto:29, world-build:b01c01-substance-delta

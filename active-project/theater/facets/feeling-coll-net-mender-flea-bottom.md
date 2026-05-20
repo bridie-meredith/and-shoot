@@ -1,44 +1,41 @@
----
 facet: feeling
-episode: b01c01
-source: coll-net-mender-flea-bottom
-author: impersonator-coll-net-mender-flea-bottom
-round: r2
+episode: b01-c01
+author: coll-net-mender-flea-bottom (impersonator, facet-authoring mode)
+character: coll-net-mender-flea-bottom
 ---
 
-# feeling — coll-net-mender-flea-bottom — b01c01
-
-# R2 judge verdict: KEEP zero-fires shape. No adds.
+# No entries.
 #
-# R1 default-to-silence is rubric-correct. R2 considered adds at @3, @4, @9
-# and refused all three at the cold-read against persona-card hard fence #2
-# (non-interpretive register) and Q1.
+# Coll is non-interpretive, witness-only, never names what he sees. The bone-SVOs at
+# every Coll-subject anchor self-carry his witness-posture; supplementing them with a
+# feeling-flag would duplicate the bone-content (rubric AP12 / AP2) and / or attribute
+# an interpretive layer his card hard-fences against ("He is not performing affect
+# around his observations. They are what they are.").
 #
-# Coll is on-stage only in Scene-A (@3, @4, @9). His register is
-# REGISTERING-PRESENCE, not INTERPRETING. Per the shared brief, he
-# notices nothing pattern-worthy yet — Taylor's block-regularity
-# becomes registerable around d06; this is day-of-arrival. State
-# carries `taylor_pattern_registered: not-yet`.
+# Refuse-by-default rationale per candidate bone:
 #
-# Per-beat R2 evaluation:
+# @4 coll lifts the eyes — the eye-lift IS the somatic tell; the bone-SVO carries the
+#   calibration shift in full. Q1 fails (audience reads the read from "lifts the eyes"
+#   alone). Any supplement is AP12 duplication.
 #
-# @3 coll speaks to taylor — dialogue beat; the speech carries
-#   itself. Q1 fails (no hidden interior to disambiguate; his
-#   register is flat-factual by card §Voice — "She was by the Fish
-#   Gate lane two mornings running"). No memory or NI co-cite at @3
-#   licenses a somatic-tell R1 missed. REFUSE.
+# @5 coll works the net — default stance, no calibration shift. Continuance of the
+#   work is the register. No interior to render.
 #
-# @4 coll extends the needle — Flea Bottom courtesy gesture without
-#   arrangement (per shared brief). The proto-line IS the gesture.
-#   Q1 fails (no interior under the courtesy; this is the block's
-#   ambient form, not a personal disposition). Loading interior
-#   under the gesture would violate hard fence #2. REFUSE.
+# @8 coll speaks to taylor — dialogue facet + voice card carry the load. Somatic
+#   supplement during a flat-factual line would manufacture affect the card forbids.
 #
-# @9 coll faces the street — return to default stance. Pattern is
-#   not yet registered (state file confirms `not-yet`); first
-#   contact, baseline day. Q2 fails (interior is null at this beat;
-#   nothing structural to render). REFUSE.
+# @12 coll pulls the net — Scene-B continuance of the work-posture. The brief
+#   flagged "feigned-indifference" as a candidate register here, but Coll's card
+#   rules out feigned anything: there is no interpretive layer to feign from. Hard-
+#   fence #2 (non-interpretive register) refuses.
 #
-# Default-to-silence per rubric. Zero fires is the correct shape
-# for a stationary non-interpretive fixture on day-of-arrival.
-# R2 cold-read confirms.
+# @20 coll folds the net — Scene-B closure. Almost-fire (see flagged seam). Refused
+#   because (a) "folds the net" already shows day-end closure in his work-register,
+#   (b) at d02 he has not yet accumulated the pattern (card stipulates ~d06), so the
+#   Q2-meaningful gate is shaky, (c) any added somatic-tell risks the performance-of-
+#   noting the card explicitly forbids.
+#
+# Scene C — no Coll-subject bone. He is environmental only. No anchor to fire at.
+#
+# Per-character total: 0 entries. Within the brief's expected 0-2 range. Per-scene
+# cap (≤1) trivially satisfied. Sparsity contribution: 0 fires.

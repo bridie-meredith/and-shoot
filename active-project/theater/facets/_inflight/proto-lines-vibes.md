@@ -1,32 +1,43 @@
-# proto-lines — b01c01 — vibes decoration copy
-# facet: vibes | episode: b01c01 | author: showrunner | round: r1
-# Bone bodies are byte-identical to active-project/theater/proto-lines/b01-c01.md.
-# [vibes:<id>] tokens appended to decorated lines only.
-# Off-anchor entries (vibes:22, vibes:23) do not decorate proto-lines.
+# bones — b01c01
 
-1 taylor-hebert-kl-122ac enters the corner-room [vibes:1] [vibes:2] [vibes:3] [vibes:4]
-2 taylor-hebert-kl-122ac pays the-door-keeper
-3 coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac [vibes:5]
-4 coll-net-mender-flea-bottom extends the needle [vibes:6]
-5 taylor-hebert-kl-122ac takes the needle
-6 taylor-hebert-kl-122ac threads the needle
-7 taylor-hebert-kl-122ac handles the nets
-8 the insects cover the flagstones
-9 coll-net-mender-flea-bottom faces the street [vibes:7]
+episode: b01c01
+narrator: taylor-hebert-kl-122ac
+goal: the operating rule in its intact form, the ward it will fail to protect, and the child who will pay the price of its failure.
+cast: taylor-hebert-kl-122ac, coll-net-mender-flea-bottom, wren-stitch-maker-flea-bottom-ward
+locations: flea-bottom
+prior_episode: none
+aggregate_range: 1-29
+
+1 taylor-hebert-kl-122ac enters the corner-room [vibes:7]
+2 taylor-hebert-kl-122ac pays the building-keeper [vibes:8]
+3 taylor-hebert-kl-122ac crosses the yard
+4 coll-net-mender-flea-bottom lifts the eyes [vibes:9] [vibes:10]
+5 coll-net-mender-flea-bottom works the net [vibes:10] [vibes:11]
+6 taylor-hebert-kl-122ac circles the block
+7 taylor-hebert-kl-122ac drops the pack
+8 coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac
+9 taylor-hebert-kl-122ac holds the feet [vibes:12]
+
 10
-11 taylor-hebert-kl-122ac threads the needle
-12 the insects fill the block [vibes:8] [vibes:11]
-13 the walls cool
-14 taylor-hebert-kl-122ac handles the nets [vibes:9]
-15 the city-watch passes the hook [vibes:10] [vibes:12]
-16 taylor-hebert-kl-122ac holds the feet
-17 the needle threads the mesh
-18 taylor-hebert-kl-122ac drops the nets
-19
-20 wren-stitch-maker-flea-bottom-ward enters the street [vibes:13] [vibes:19]
-21 wren-stitch-maker-flea-bottom-ward approaches taylor-hebert-kl-122ac
-22 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac [vibes:14] [vibes:15]
-23 taylor-hebert-kl-122ac faces wren-stitch-maker-flea-bottom-ward [vibes:17]
-24 taylor-hebert-kl-122ac holds the eyes [vibes:16]
-25 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward [vibes:21]
-26 wren-stitch-maker-flea-bottom-ward leaves the street [vibes:18] [vibes:20]
+
+11 taylor-hebert-kl-122ac lifts the basket
+12 coll-net-mender-flea-bottom pulls the net
+13 taylor-hebert-kl-122ac threads the needle
+14 the needle crosses the mesh
+15 the insects fill the block [vibes:13] [vibes:14]
+16 the walls cool
+17 the boots strike the cobbles
+18 the city-watch passes the hook [vibes:15]
+19 taylor-hebert-kl-122ac holds the eyes [vibes:16]
+20 coll-net-mender-flea-bottom folds the net
+
+21
+
+22 wren-stitch-maker-flea-bottom-ward enters the street [vibes:17]
+23 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac [vibes:18]
+24 taylor-hebert-kl-122ac lifts the eyes [vibes:19]
+25 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward [vibes:20]
+26 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
+27 taylor-hebert-kl-122ac holds the eyes [vibes:20] [vibes:21]
+28 wren-stitch-maker-flea-bottom-ward crosses the street
+29 taylor-hebert-kl-122ac lifts the needle [vibes:22]

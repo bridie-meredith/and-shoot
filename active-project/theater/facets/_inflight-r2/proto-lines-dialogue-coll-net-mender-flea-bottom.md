@@ -1,40 +1,21 @@
-# bones — b01c01
+# R2 annotated proto-lines copy — dialogue-coll-net-mender-flea-bottom
 
-episode: b01c01
-narrator: taylor-hebert-kl-122ac
-goal: the operating rule in its intact form, the ward it will fail to protect, and the child who will pay the price of its failure.
-cast: taylor-hebert-kl-122ac, coll-net-mender-flea-bottom, wren-stitch-maker-flea-bottom-ward
-locations: flea-bottom
-prior_episode: none
-aggregate_range: 1-26
+scope: dialogue-writer judge fork for coll-net-mender-flea-bottom
+generated: 2026-05-20 (R2, graph-aware)
+parent file: active-project/theater/proto-lines/b01-c01.md
+mutations: KEEP-only (no deletes, no adds); citation cascade unchanged from R1
 
-1 taylor-hebert-kl-122ac enters the corner-room
-2 taylor-hebert-kl-122ac pays the-door-keeper
-3 coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac [coll-net-mender-flea-bottom:1]
-4 coll-net-mender-flea-bottom extends the needle
-5 taylor-hebert-kl-122ac takes the needle
-6 taylor-hebert-kl-122ac threads the needle
-7 taylor-hebert-kl-122ac handles the nets
-8 the insects cover the flagstones
-9 coll-net-mender-flea-bottom faces the street
+## Citation cascade — speaking-beat anchors for coll-net-mender-flea-bottom
 
-10
+Only one Coll `speaks` bone exists in b01-c01: bone 8. Token `[coll-net-mender-flea-bottom:1]` is present at @8 in the canonical proto-lines file and remains in place at R2.
 
-11 taylor-hebert-kl-122ac threads the needle
-12 the insects fill the block
-13 the walls cool
-14 taylor-hebert-kl-122ac handles the nets
-15 the city-watch passes the hook
-16 taylor-hebert-kl-122ac holds the feet
-17 the needle threads the mesh
-18 taylor-hebert-kl-122ac drops the nets
+@8 coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac [coll-net-mender-flea-bottom:1] [state:6] [state:13]
 
-19
+R2 mutations on this character's dialogue entries:
+- coll-net-mender-flea-bottom:1 @8 — KEEP (verdict below)
 
-20 wren-stitch-maker-flea-bottom-ward enters the street
-21 wren-stitch-maker-flea-bottom-ward approaches taylor-hebert-kl-122ac
-22 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
-23 taylor-hebert-kl-122ac faces wren-stitch-maker-flea-bottom-ward
-24 taylor-hebert-kl-122ac holds the eyes
-25 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward
-26 wren-stitch-maker-flea-bottom-ward leaves the street
+No tokens stripped (no deletions); no tokens added (no R2 adds — Coll has no other `speaks` bones).
+
+## R2 KEEP summary
+
+- coll-net-mender-flea-bottom:1 @8 — "There's mending if you can hold a needle." — KEEP. Card-signatures intact (Voice, Voice tells, Hard Fences §1, Action Menu). Facet-licenses resolved at R2: state:6 @8 (Coll's social-engagement-with-taylor mutation), state:13 @8 (Taylor's social-state.with-coll mutation). Expected R1-hint slots `loc-state @8` and `narrator @8` did not resolve in the locked graph; dropped as non-fires. Both state-citations resolve in the cite-index (state:6 and state:13 each carry the `co=[coll-net-mender-flea-bottom:1, ...]` back-citation).

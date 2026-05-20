@@ -1,5 +1,5 @@
 character: taylor-hebert-kl-122ac
 episode: b01c01
-behavior-card: taylor-hebert-westeros
+behavior-card: cond-taylor-pov-behavior
 ---
-1 @25 | decline the speech-act Wren has solicited; hold the prohibition (do not enter her into the ledger); keep the gap open without warmth and without coldness | "I cannot say."
+1 @25 | close the child's bid without cruelty; give minimum information; hold the operating rule visibly intact | "There's no work here. Go on."

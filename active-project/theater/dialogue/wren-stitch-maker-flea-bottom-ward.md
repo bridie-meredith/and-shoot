@@ -1,5 +1,6 @@
 character: wren-stitch-maker-flea-bottom-ward
 episode: b01c01
-behavior-card: westeros-smallfolk
+behavior-card: cond-westerosi-witness-vocabulary
 ---
-1 @22 | open to the stranger by asking after the work without naming what she has noticed | "Mistress Coll teach you that knot?"
+1 @23 | name the route-pattern she has observed without asking its cause | "You walked the block three times this morning. Mistress Coll knows your name and you've not been here a fortnight."
+2 @26 | extend with the body-pattern she has observed; do not ask why | "The flies were on the meat-stall and they were not on your hand. The stall is closer."
