@@ -8,9 +8,11 @@ Format: `- <key> | glossed-in: <episode> | gloss-id: <id> | first-mention-anchor
 
 ---
 
-- flea-bottom | glossed-in: b01c01 | gloss-id: 1 | first-mention-anchor: @0
 - kings-landing-122ac | glossed-in: b01c01 | gloss-id: 1 | first-mention-anchor: @0
 - the-prohibition | glossed-in: b01c01 | gloss-id: 1 | first-mention-anchor: @0
-- coll | glossed-in: b01c01 | gloss-id: 2 | first-mention-anchor: @3
-- the-watch | glossed-in: b01c01 | gloss-id: 3 | first-mention-anchor: @15
-- wren | glossed-in: b01c01 | gloss-id: 4 | first-mention-anchor: @20
+- flea-bottom | glossed-in: b01c01 | gloss-id: 2 | first-mention-anchor: @0
+- copper-currency-star-penny | glossed-in: b01c01 | gloss-id: 2 | first-mention-anchor: @0
+- coll | glossed-in: b01c01 | gloss-id: 3 | first-mention-anchor: @4
+- the-city-watch | glossed-in: b01c01 | gloss-id: 5 | first-mention-anchor: @18
+- the-hook | glossed-in: b01c01 | gloss-id: 6 | first-mention-anchor: @18
+- wren | glossed-in: b01c01 | gloss-id: 8 | first-mention-anchor: @22
