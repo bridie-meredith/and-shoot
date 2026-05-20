@@ -2,34 +2,48 @@
 reviewer: cape-fic-reader
 facet: memory
 cycle: 2
-episode: b01c01
-date: 2026-05-19
-verdict: accept
+episode: b01-c01
+date: 2026-05-20
+verdict: revise
 ---
 
 # Verdict reasoning
 
-Cycle-1 demanded: Westerosi-monument clamp (zero in cycle-1 file), and mem:1 off the chapter peak. Both addressed. The file now runs 2 Earth-Bet + 1 Westerosi across three separate scenes, one entry per scene. That is the doubled-register and per-scene-cap discipline the rubric requires. The informational architecture the foreknowledge character depends on — Taylor reading institutions through accumulated pattern-weight while the surface carries nothing — now has its Westerosi layer. The stitcher gets the license to render both dimensions.
+One of the two cycle-1 failures is fixed. The other is documented but not cured.
 
-# Entry-level assessments
+The slug is now `monument-override-architecture-prohibition`. That is a `monument-` prefix, mechanism-descriptive, no Earth-Bet proper noun. URI-FACETS-CYCLE-1 passes on the target-reference field. That complaint from cycle-1 is resolved.
 
-**[mem:3] @8** — The new Westerosi entry. "The clamp at the seam runs by the architecture of charter-language holding its own administration against use, and what that architecture terminates into is the same kind of record-ending she came in already knowing." Scene-A, flat-low, peak-bones none — quiet-beat anchor PASS. NI spine: narrator:2 @8 confirmed (cite-index: mem:3 co=[narrator:2, state:10]). Monument card on disk: `monument-conquest-charter-institutional-self-restraint-122ac`. Hard-fence: no Earth-Bet proper nouns, no Dance-era names. Target-reference resolves via card slug. The foreknowledge-clamp component ("the same kind of record-ending she came in already knowing") is the tactical-foreknowledge dimension I track: she knows how this class of architecture ends before the world she is in has shown her. That is the information-asymmetry channel working. ACCEPT.
+The NI co-citation failure is not resolved. The rewritten defense annotation now correctly quotes the rubric: "Every memory-flag entry must have a narrator-interest fire on the same @<proto-line-id>." It acknowledges NI is silent at @9. It articulates why the author chose not to add NI — adding it would push NI density to 25.9%, breaching the 25% band ceiling. And then it states the defense relies on rubric authority's downstream ruling.
 
-**[mem:1] @12** — Relocated from @15 (cycle-1 reject) to @12. Scene-B, flat-low, peak-bones none. The trigger reframe (block-survey-through-carried-network rather than patrol-passing) stays within the administrative-observation-apparatus family — the card confirms the passive-network-as-surveillance-architecture pathway. NI spine: narrator:3 @12 confirmed. Monument card on disk: `monument-administrative-observation-apparatus-122ac`. Description: "the block reads itself through what she carries, and the read assembles in the register the architecture once ran at a scale she no longer has." No proper nouns. "At a scale she no longer has" carries the capability-displacement without naming the apparatus. This is now in the correct slot — the gap, not the loud beat. The instrument is in its eligible zone. ACCEPT.
+That is an accurate account of the situation. It is not a valid cure for the missing spine.
 
-**[mem:2] @23** — Unchanged from cycle-1 accept. NI spine: narrator:7 @23. Monument card on disk: `monument-override-architecture-prohibition-122ac`. Description discipline holds. The hinge beat earns the fire. ACCEPT.
+I track established rules. When a hard rule is broken, I want either the rule followed or the exception formally granted. What I have here is documentation of a mandatory requirement being un-met, with a note that someone upstream is expected to rule on it. The ruling has not occurred. The rubric's REJECT signature on missing NI co-citation does not have a "carry forward pending ruling" carve-out. The mandatory requirement is mandatory now, not after the ruling arrives.
 
-# File-level checks
+The fixer's choice makes sense as an authoring constraint decision — you cannot add NI without breaching the band ceiling, so you cannot currently bring mem:1 into compliance without either deleting it (losing the Earth-Bet register) or taking a different structural path. That is a real dilemma. But a documented dilemma is not a resolved dilemma.
 
-- Doubled-register: 2 Earth-Bet (mem:1, mem:2) + 1 Westerosi (mem:3). PASS.
-- Per-scene cap: scene-A=mem:3@8, scene-B=mem:1@12, scene-C=mem:2@23. PASS.
-- NI spine: all three entries have confirmed co-citation in cite-index. PASS.
-- Peak-anchor refusal: all three anchors in flat-low scenes, no peak-bones declared in any scene. PASS.
-- Hard-fence: no Earth-Bet proper nouns, no Dance-era specifics, no year-quantifications. PASS.
-- Monument-card resolution: all three target-references resolve to cards on disk. PASS.
+The entry's description still passes. "The feet hold and the architecture stays the shape she will not build" is the correct construction — refusal-to-look, no proper noun, displacement-cue shape identifiable. The slug now resolves correctly. Both of those are correct. The spine is still absent.
+
+mem:2 @18 unchanged. Accept. NI spine confirmed (narrator:4 @18, cite-index verified). Scene-B flat-low, no peak-bones. Westerosi-monument clamp (institutional coercive geometry as geological prior), displacement-cue construction holds. Free-text gloss target-reference is a soft advisory concern, not blocking.
+
+Doubled-register: the defer block correctly names the risk. If mem:1 is culled, the file goes single-register. The defer block does not resolve this; it names it as a pending problem. That is accurate. It is also still a pending problem.
+
+---
+
+# Entry-level callouts
+
+**[memory:mem:1] @9 — "the feet hold and the architecture stays the shape she will not build"**
+slug form: CLEARED — `monument-override-architecture-prohibition` carries correct `monument-` prefix, mechanism-descriptive, no Earth-Bet proper noun; URI-FACETS-CYCLE-1 passes
+NI co-citation: PERSISTS — narrator-interest is still silent at @9 in the locked file; the rewritten defense annotation correctly identifies the gap and correctly quotes the mandatory rubric requirement, then defers to rubric authority rather than supplying the fire; "pending ruling" is not a rubric-recognized resolution path; REJECT signature "missing narrator-interest co-citation" still triggered; description passes; slug passes; spine absent
+
+**[memory:mem:2] @18 — "the patrol's line through the bend is older than the patrol"**
+accept: NI spine confirmed (narrator:4 @18); scene-B flat-low, no peak-bones; Westerosi-monument clamp identifiable from description; free-text gloss target-reference is soft-path advisory, not blocking; unchanged from cycle-1 accept
+
+---
 
 # Convergence trace
 
-- [mem:1 relocation]: cycle-1 callout naming @15 as chapter peak, quiet-instrument in wrong slot — fully addressed by @12 placement in flat-low zone. No remaining peak-anchor concern.
-- [file-level doubled-register]: cycle-1 demand for Westerosi clamp — met by mem:3 @8 with monument card on disk.
-- [mem:2 monument-card gap]: cycle-1 noted margit referral not made — resolved in cycle-2 within-cycle remediation.
+**mem:1 — slug fix:** Fixer F-011 renamed the target-reference field. The cycle-1 audience callout on slug form is RESOLVED. No residual callout.
+
+**mem:1 — NI co-citation:** The cycle-2 fix rewrote the defense annotation to accurately describe the gap — acknowledging NI is absent, explaining the ceiling constraint, and deferring to rubric authority. The fixer's F-011 criteria state "acknowledges gap + defers to ruling authority" as criteria-met. From the audience adversarial reading, documentation-of-gap and resolution-of-gap are different things. The annotation is now accurate; the underlying mandatory requirement remains unmet. No auditor finding addresses this distinction in cycle-2. Audience raises it as the continuing failure.
+
+**doubled-register risk:** Unchanged from cycle-1. If mem:1 is culled, the file loses its Earth-Bet entry and becomes single-register. The defer block names this correctly. No resolution until rubric authority ruling or structural fix.

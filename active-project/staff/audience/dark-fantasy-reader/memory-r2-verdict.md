@@ -2,39 +2,49 @@
 reviewer: dark-fantasy-reader
 facet: memory
 cycle: 2
-episode: b01c01
-date: 2026-05-19
-verdict: accept
+episode: b01-c01
+date: 2026-05-20
+verdict: revise
 ---
 
 # Verdict reasoning
 
-Cycle-1 demanded: one register with no footnotes — the Westerosi-monument layer entirely absent, the foreknowledge-bearer dimension not rendered, the doubled-register character reduced to Taylor-the-Earth-Bet-survivor in a medieval city. That demand is answered. Mem:3 @8 delivers the foreknowledge-bearing layer: the charter-language self-restraint architecture terminating into a record-ending she came in already knowing. That is the weight the conceit promises. The character carrying a history that will break — and knowing the shape of the breaking before anyone around her does — now has a licensing entry that earns the stitcher's rendering license for that dimension.
+The slug fix is real and correct. `monument-override-architecture-prohibition` has the right form — mechanism-descriptive, `monument-` prefix, no Earth-Bet proper noun bleeding through. I mark that resolved.
 
-Mem:1 was moved out of the chapter's institutional-pressure peak into the working-through gap. The interior-reaching-backward instrument is now in the aftermath zone, where the body-work settles and the weight has room. That was the structural correction I asked for.
+The NI problem is still there. The rewritten defense annotation is honest now, which is an improvement over cycle-1 where the defense misidentified feel:1 as the spine by redefinition. The cycle-2 annotation no longer does that — it acknowledges NI is absent, explains that adding NI would breach the band ceiling, and explicitly states the defense relies on rubric authority's downstream ruling. That is an accurate account of a genuine authoring constraint. It is not earned darkness.
 
-# Entry-level assessments
+This is why the spine requirement matters to me, specifically. When the interior catches itself about to enact the architecture it has vowed to refuse — that catch is the moment where the foreknowledge-bearing narrator's spotlight should fall. Feeling-facet gives the somatic register: the feet hold, the weight settles. That is real. But the narrator's registration of why this beat matters — the spotlight confirming that the moment carries monument-weight, not just body-sensation — is the narrator-interest entry. Without it, the stitcher is licensed to render figurative content at @9 on the basis of a monument-fire the narrative infrastructure has not confirmed. The license is there in the file; the confirmation is not. That is infrastructure that does not hold.
 
-**[mem:3] @8** — "The clamp at the seam runs by the architecture of charter-language holding its own administration against use, and what that architecture terminates into is the same kind of record-ending she came in already knowing." Scene-A, flat-low, peak-bones none — quiet-beat anchor confirmed. NI spine: narrator:2 @8 (cite-index confirmed). Monument card: `monument-conquest-charter-institutional-self-restraint-122ac` on disk. The entry carries both the discipline-clamp rhyme (the charter holds itself the way her rule holds her — same family, different origins) and the foreknowledge-clamp (the terminal-record weight, "she came in already knowing"). The "came in already knowing" construction is the correct register for this character and this reader: not prophecy, not dread-announcement, but accumulated structural weight carried in the body. The world pushes back against the protagonist in a way that costs something — what it costs here is the knowledge of what this architecture will eventually produce, held without being able to say it aloud. ACCEPT.
+I understand the ceiling constraint. Adding NI at @9 pushes density to 25.9% — past the 25% cap. That is a real authoring problem: the cure for the missing spine costs more than the authoring budget allows. But a cure that costs too much is not the same as a cure that exists. The defer block says "preferred resolution: rubric authority ruling." Until that ruling exists, the entry is firing without spine. The rubric's mandatory requirement does not suspend pending an upstream ruling.
 
-**[mem:1] @12** — Relocated from @15 (cycle-1 reject: interior-reaching-backward on the chapter's institutional-pressure peak) to @12. Scene-B, flat-low, peak-bones none. NI spine: narrator:3 @12 confirmed. Description: "the block reads itself through what she carries, and the read assembles in the register the architecture once ran at a scale she no longer has." The "at a scale she no longer has" carries the cost dimension that matters to this reader — something was lost, it is carried without being mourned, the body-knowledge of the prior capacity is the load. The block mapping itself through the insect-network at the scale of a district-survey, assembling in the register of a prior administrative-observation apparatus: this is the quiet-beat instrument working correctly. The interior reaching backward while the foreground is genuinely low-charge. ACCEPT.
+The description is still the best thing in the file. "The feet hold and the architecture stays the shape she will not build" is the refusal-to-look construction working as designed — no proper noun, the monument's shape carried without the monument's name. If the spine were there, this entry would land.
 
-Note: narrator:3's tail-clause ("the reading is the whole of what she will take") was flagged in cycle-1 as an accounting-close that steps on the image. That is a watch-item on narrator:3, not on mem:1. The memory-flag description at @12 does not replicate the tail-clause problem — "the read assembles in the register the architecture once ran at a scale she no longer has" opens backward rather than closing forward. The watch-item does not propagate to this entry.
+mem:2 @18 passes unchanged. "The patrol's line through the bend is older than the patrol" — that is the register I am here for. The institution as geological formation. The coercive geometry preceding the people who fill it. The NI spine is confirmed (narrator:4 @18). Scene-B flat-low. The Westerosi-monument clamp is the one entry in this file that shows the doubled-register character carrying foreknowledge of what this kind of apparatus produces. It works. It earns its keep.
 
-**[mem:2] @23** — Unchanged. Monument card on disk: `monument-override-architecture-prohibition-122ac`. "The architecture she came here to refuse arrives on its own legs and is held at the threshold of deployment." The two-phase structure (read assembles before permission; vow catches at threshold) is the monument's phenomenology per the card. The dangerous capability moving before permission is the dark-fantasy-legible shape. The cost is the decision made in a breath, registered as "cost paid again" in the card's interior-register description. Hinge beat earns it. ACCEPT.
+If mem:1 is culled and not replaced, the file loses its Earth-Bet entry and goes single-register on the Westerosi clamp side only. Single-register is a named shape failure. The defer block documents this. Documenting it is not resolving it.
 
-# File-level checks
+Verdict: revise. The slug is fixed. The NI co-citation is absent and the mandatory requirement has no documented suspension mechanism in the rubric.
 
-- Doubled-register: 2 Earth-Bet (mem:1, mem:2) + 1 Westerosi (mem:3). Cycle-1 single-register failure addressed. PASS.
-- Per-scene cap: scene-A=mem:3@8, scene-B=mem:1@12, scene-C=mem:2@23. PASS.
-- NI spine: all three entries co-cited with confirmed narrator-interest fires. PASS.
-- Peak-anchor refusal: all three anchors in flat-low zones. All scene peak-bones arrays empty. PASS.
-- Hard-fence: no Earth-Bet proper nouns, no Dance-era specifics by name, no year-quantifications. PASS.
-- Monument-card resolution: all three target-references resolve to cards on disk. PASS.
-- Foreknowledge-bearer rendering: mem:3 delivers Westerosi foreknowledge weight; mem:2 delivers override-architecture threshold weight. The stitcher has license to render both dimensions. PASS.
+---
+
+# Entry-level callouts
+
+**[memory:mem:1] @9 — "the feet hold and the architecture stays the shape she will not build"**
+slug form: CLEARED — `monument-override-architecture-prohibition` is mechanism-descriptive, carries correct prefix, URI-FACETS-CYCLE-1 passes
+NI co-citation: PERSISTS — the rewritten defense annotation is now accurate rather than definitionally confused; it acknowledges the absence, explains the ceiling constraint, and defers to ruling authority; but honest documentation of a mandatory requirement's absence is not a valid substitute for the requirement; the rubric's REJECT signature on missing NI co-citation applies; the "preferred resolution: rubric authority ruling" language in the defer block names a pending resolution, not an existing one; description passes displacement-discipline; entry cannot ship without the ruling or the spine
+
+**[memory:mem:2] @18 — "the patrol's line through the bend is older than the patrol"**
+accept: NI spine confirmed (narrator:4 @18, cite-index verified); scene-B flat-low, no peak-bones; Westerosi-monument clamp identifiable from displacement-cue construction; free-text gloss target-reference is soft-path advisory; unchanged from cycle-1 accept
+
+**[file-level] doubled-register shape:**
+still flagged: mem:1 carries the Earth-Bet register; if culled, the file is single-register Westerosi-only; the defer block correctly names this as a pending problem; rubric episode-level shape criterion requires at least one Earth-Bet displacement fire; the problem is documented, not resolved
+
+---
 
 # Convergence trace
 
-- [cycle-1 file-level Westerosi silence]: mem:3 @8 answers the demand directly. Monument card authored and on disk.
-- [cycle-1 mem:1 peak-anchor]: @15→@12 relocation places the quiet instrument in its correct zone.
-- [cycle-1 mem:2 monument-card gap]: target-reference now resolves to monument card slug on disk.
+**mem:1 — slug form:** Fixer F-011 renamed the target-reference. Cycle-1 audience callout on slug form RESOLVED. No residual concern.
+
+**mem:1 — NI co-citation:** The cycle-2 annotation rewrite improved the defense from definitionally confused (cycle-1: feel:1 redeclared as spine) to honest documentation of a structural gap. The fixer's F-011 criteria mark this as resolved on documentation grounds. From the adversarial reading, documentation-resolved and rubric-resolved are different categories. The mandatory requirement remains unmet. The annotation no longer misreads the rubric; it accurately describes what the rubric requires and then documents that the requirement is unmet. That is an improvement in honesty; it is not an improvement in compliance. No auditor finding names this distinction in cycle-2. Audience raises it as the continuing failure.
+
+**doubled-register risk:** Unchanged. No auditor finding. Consequence of the mem:1 NI failure being unresolved: if the rubric authority ruling comes back against feel-as-spine and mem:1 is culled, the file requires a replacement Earth-Bet entry with confirmed NI spine and licit quiet-beat anchor.

@@ -2,21 +2,19 @@
 reviewer: dark-fantasy-reader
 facet: location-state
 cycle: 1
-episode: b01c01
-date: 2026-05-19
+episode: b01-c01
+date: 2026-05-20
 verdict: revise
 ---
 
 # Verdict reasoning
 
-Two entries fire on stillness beats where nothing moves and no threshold is crossed, and the world starts feeling like set dressing the moment that happens. Entry 3 (@11) gives me ambient noise density while Taylor threads a needle — that's the room describing itself at her, not the room turning on something she does. Entry 4 (@13) is the far wall releasing stored warmth while she keeps working — thermal persistence, which is the exact thing the rubric calls out by name as Anti-pattern 3. The auditor passed both without applying the three-axis test; it was satisfied that entry 3 displaced an exposition fire and that entry 4 existed. Neither of those defenses is necessity. A world that earns its texture doesn't annotate the protagonist's stillness twice.
+Four of these entries make the world feel like a place that existed before anyone arrived to observe it: the door-shadow that tells you exactly where the building-keeper has planted himself, the drain-channel at the yard's far end that makes the crossing meaningful, the Watch rounding the Hook at the exact alley-mouth that makes their presence a physical intrusion rather than a plot device, Wren's entry through the alley-mouth step that names where she comes from before we hear her. Entry 3 breaks the logic. It fires on a hand-work beat — lifting a basket, in the same yard Taylor has occupied since entry 2 — and reaches for a continuity license whose structural conditions (fusion-eligible-run, flat-low rhythm-shape) are nowhere confirmed. The world earns its texture through moves that cost something, and a location annotation that cannot show its license papers is set dressing by another name.
 
 # Entry-level callouts (revise / fail only)
 
-- [location-state:3] @11 — fires on a stillness beat (threading needle), not a movement or positioning verb; describes ambient noise volume at peak — atmosphere, not a specific focus-element the threading action turns on; @9 already opened this location-and-moment; strip test passes cleanly; the auditor's "time-skip orient" defense is a displacement argument, not a necessity argument; entry fails necessity and interestingness axes both.
-- [location-state:4] @13 — fires on a stillness beat (walls cool — "the cooling is in the surface, not the air"); the sensory note describes thermal persistence of a static condition, not a state-change; this is precisely Anti-pattern 3 (persistence-as-state); no new actor has entered, no condition has resolved or activated, no time has advanced beyond what loc-state:3 already marked; entry fails frugality and necessity axes.
+- [loc-state:3] @11 — anchor verb "lifts the basket" is dexterity-in-place or at best ambiguous-transitional; the rubric's necessity axis requires either a transitional/positioning verb, first-beat-in-new-location, or a verified continuity-carry license; the continuity-from 2 token is present but the license conditions are unverifiable from available inputs — no scene-map confirms bone @11 is inside a fusion-eligible-run with a flat-low/resolving rhythm-shape; the sensory note (tallow-smoke from rendering-alley) is a new atmospheric texture, not a specific perceptible thing the basket-lift depends on; strip test: the bone resolves cleanly in the environment inherited from loc-state:2; entry fails the necessity and interestingness axes pending license confirmation.
 
 # Convergence trace (orchestrator-critic input)
 
-- [location-state:3] @11 — Auditor SUPERFLUOUS review passed loc-state:3 explicitly ("Scene-B time/place-orient post-time-skip; load-bearing (this is why exposition's scene-orient at @11 was refused)"). The auditor's pass rests on structural displacement, not the necessity/interestingness/frugality axes. My attack occupies ground the mechanical scan did not probe: the necessity test (anchor verb is not transitional or positioning; @11 is not first-beat-in-new-location; @9 already opened the location-and-moment). No auditor finding directly overlaps with this challenge.
-- [location-state:4] @13 — Auditor SUPERFLUOUS review passed loc-state:4 without discussion in the pass list (it is named in the SUPERFLUOUS section only in the affirmative: "all survive rubric scrutiny"). The auditor TASTE-FLAG TF-001 flags bare work-bone stitcher gaps at @6-7/@16-17 but is concerned with absence of decoration on stillness beats, not presence; not a direct overlap. Anti-pattern 3 (persistence-as-state) is named in the rubric; the auditor did not invoke it against loc-state:4. No direct auditor finding overlaps.
+- [loc-state:3] @11 — Auditor r2 did not re-examine location-state; r2 scope was F-001 through F-006 verification, none of which touch loc-state:3. Auditor r1 SUPERFLUOUS pass on loc-state:3 used a displacement argument (refused exposition:4 at @11 because loc-state:3 was already there), which is not a necessity/interestingness argument and is therefore not an overlapping check. The dexterity-verb REJECT promotion (URI-FACETS-CYCLE-1, 2026-05-19) named this entry-class explicitly; the mechanical scan did not reapply it to the current file's entry 3. No auditor finding ID directly overlaps with this callout.

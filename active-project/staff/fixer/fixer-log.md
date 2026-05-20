@@ -494,3 +494,144 @@ criteria met: yes — no live physical entry at former entry-11 slot; discipline
 findings-applied: 1 (SIGNAL-002)
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-20T09:00:00Z — facets-b01c01-hard-r1-six-findings
+dispatch: fix 6 HARD findings (F-001 through F-006) from active-project/staff/auditor/facets-final-audit.md; minimum-change edits to facet files + rubric annotation; no card routing
+target: active-project/theater/facets/memory.md, exposition-b01-c01.md, interest-narrator.md, state-updates.md + _inflight-r2/proto-lines-exposition.md + _inflight-r2/proto-lines-narrator.md + canonical proto-lines b01-c01.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 6 (F-001 CONSTRAINT, F-002 CONSTRAINT, F-003 CONSTRAINT, F-004 CONSTRAINT, F-005 AP-SCAN, F-006 RUBRIC-FIDELITY)
+
+## SESSION-START — 2026-05-20T10:00:00Z — facets-b01c01-hard-r1-six-findings-cont
+dispatch: complete remediation of F-001 through F-006; prior session resolved F-001 and F-002 and logged them; F-003 through F-006 require action and logging
+target: active-project/theater/facets/exposition-b01-c01.md + interest-narrator.md + state-updates.md + _inflight-r2/proto-lines-exposition.md + _inflight-r2/proto-lines-narrator.md + active-project/theater/proto-lines/b01-c01.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 4 remaining (F-003 CONSTRAINT, F-004 CONSTRAINT, F-005 AP-SCAN, F-006 RUBRIC-FIDELITY)
+
+## F-001 — RESOLVED — 2026-05-20T09:05:00Z
+fault: mem:1 @9 — NI-spine-absent — co-citations [feel:1, vibes:12] but no NI at @9; no R2-verified defense on record for canonical entry
+scope: line
+change: appended `# defense: feel-as-spine` comment block under mem:1 in active-project/theater/facets/memory.md; cites feeling-as-spine rationale (substance IS interior-feeling-of-rule-catching; feel:1 carries the interior register; NI would duplicate; "exceptional with documented author defense" rubric clause); no entry mutation
+criteria met: yes — defense comment present; CONSTRAINT class accepts SIGNAL-with-documented-defense per rubric exceptional clause
+
+## F-002 — RESOLVED — 2026-05-20T09:10:00Z
+fault: exposition:4 @11 — scene-orient-fire-rule condition (b) violated; loc-state:3 fires at @11; R2 refusal stood but delete not executed
+scope: line
+change: deleted exposition:4 body; replaced with gap-documentation comment in exposition-b01-c01.md; stripped [exposition:4] from canonical proto-lines/b01-c01.md @11 and from _inflight-r2/proto-lines-exposition.md @11 and _inflight-r2/proto-lines-narrator.md @11; ID gap preserved (no renumber)
+criteria met: yes — no live exposition:4 entry; [exposition:4] token absent from all proto-lines files at @11
+
+## F-003 — RESOLVED — 2026-05-20T10:05:00Z
+fault: exposition:7 @22 — scene-orient-fire-rule condition (b) violated; loc-state:5 fires at @22; R2 refusal stood but delete not executed; prior session deleted from facet file but did not strip proto-lines tokens
+scope: line
+change: exposition:7 facet file gap already in place (gap-doc comment); stripped [exposition:7] from canonical active-project/theater/proto-lines/b01-c01.md @22, from _inflight-r2/proto-lines-exposition.md @22, and from _inflight-r2/proto-lines-narrator.md @22; ID gap preserved (no renumber); [exposition:8] remains in all three @22 lines
+criteria met: yes — no live exposition:7 entry in facet file; [exposition:7] token absent from all proto-lines files at @22
+
+## F-005 — RESOLVED — 2026-05-20T10:15:00Z
+fault: interest-narrator:-- @6/@18/@27 — AP-template-saturation — "X is what Y" predicate-nominative inversion in 3 of 6 NI entries (50%); URI-AP-SCAN-SATURATION threshold 40% for facets with band ≤25%
+scope: line
+change: all three "X is what Y" constructions already rewritten in the prior cycle-2 remediation session (facets-b01c01-cycle2-remediation); interest-narrator.md confirmed: entry 2 @6 rewrites to "the block reads on a second pass — which courts feed which alleys..."; entry 4 @18 rewrites to "boots strike behind the wall, four spans and tracked through the feed without head-turn; staying invisible costs more in dense streets than she would have estimated."; entry 6 @27 rewrites to "she will not write the name above the block, not in the feed and not on the page she keeps for herself."; zero "X is what Y" constructions remain; citation IDs preserved; _inflight-r2/proto-lines-narrator.md citations unchanged (entries revised, not deleted); no proto-lines token strip required
+criteria met: yes — 0/6 entries carry "X is what Y" construction; saturation 0% < threshold 40%; AP-template-saturation finding resolved
+
+## F-004 — RESOLVED — 2026-05-20T10:10:00Z
+fault: exposition:5+exposition:6 @18 — per-anchor-cap breach; first-mention-term + first-mention-place pair not in permitted-pairs enumeration; rubric read confirmed no combined scope and no exemption for this pair
+scope: line
+change: removed exposition:5 as a numbered entry (replaced with gap-doc comment in exposition-b01-c01.md); folded city-watch gloss into exposition:6's gloss text as a semicolon-appended contextual phrase ("the city-watch, King's Landing's gold-cloaked standing patrol, moves through on a rotation the block knows by sound"); updated exposition:6 licensed-by to cover watch-institution gap for all three personas; updated cross-episode register write-back to note the-city-watch now folded into gloss-id 6; stripped [exposition:5] from all three proto-lines files at @18 (canonical b01-c01.md, _inflight-r2/proto-lines-exposition.md, _inflight-r2/proto-lines-narrator.md); ID gap 5 preserved (no renumber); exposition:6 untouched as numbered entry
+criteria met: yes — single entry at @18 (exposition:6, first-mention-place); per-anchor-cap satisfied; watch gloss content preserved within the place-gloss
+
+## F-006 — RESOLVED — 2026-05-20T10:20:00Z
+fault: state-updates file — POV co-citation gap 8/9 — rubric-state-updates.md § Cross-facet contract mandates NI co-citation for all actor:taylor.* state entries; 8 of 9 entries lack it; adding 8 NI entries would breach band ceiling (6→14 NI = 51.8% vs 15-25% ceiling)
+scope: line
+change: option (c) applied — appended `# rubric-carve-out` annotation block to state-updates.md (before the first source block, after consolidated frontmatter); annotation documents: (1) rubric's own §Cross-facet contract explicitly scopes requirement to knowledge.*, mask-state, exposure-state — not mechanical-action states; (2) mechanical-action entries (position, inventory, lodging-payment, work-routine) are exempt per rubric's own scoping; (3) knowledge.coll-pattern and social-state.* entries that fall closer to the scoped zone are accepted-with-defense: adding NI would breach band ceiling; substance contract is mechanical-establishment/0-peak-bones; density-on-flat anti-pattern prohibits inflation to hit co-citation coverage; (4) citations to rubric-state-updates.md §Cross-facet contract and §Anti-patterns #9
+criteria met: yes — annotation present; mechanical-action carve-out documented with rubric citation; option (c) as specified; no NI entries added; no band breach
+
+## SESSION-END — 2026-05-20T10:25:00Z — facets-b01c01-hard-r1-six-findings-cont
+findings-applied: 6 (F-001 confirmed from prior session; F-002 confirmed from prior session; F-003 proto-lines strip completed; F-004 exposition:5 consolidated into :6 + proto-lines stripped; F-005 confirmed from prior cycle; F-006 rubric-carve-out annotation applied)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-20T11:00:00Z — facets-b01c01-audience-gate-cycle2
+dispatch: cycle-2 fixer for /and-facets b01c01 Phase 5b — 7 failing facets from audience-gate cycle-1; minimum-change per F-007 through F-013
+target: active-project/theater/facets/location-state.md + interest-narrator.md + sensory.md + state-updates.md + memory.md + active-project/theater/dialogue/wren-stitch-maker-flea-bottom-ward.md + active-project/staff/dialogue-writer/taylor-hebert-kl-122ac.drafts.md + active-project/theater/proto-lines/b01-c01.md
+audit-report: audience-gate cycle-1 per-reviewer verdict files (per-facet, per-persona)
+findings-queued: 7 (F-007 through F-013)
+
+## F-007 — RESOLVED — 2026-05-20T11:05:00Z
+fault: loc-state:3 @11 dexterity-in-place anchor; continuity-from 2 token fails cross-scene fusion-eligible-runs check
+scope: line
+change: loc-state:3 deleted from location-state.md (gap-documented); [loc-state:3] stripped from proto-lines @11; no _inflight-r2 file to update
+criteria met: yes
+
+## F-008 — RESOLVED — 2026-05-20T11:10:00Z
+fault: NI-1 @4 "the network" label — mechanism-label adjacent to Earth-Bet boundary; not in Taylor's canonical interior vocabulary; unanimous callout
+scope: line (NI-1 rewrite) + defer-documentation (dark-fantasy doubled-register escalation)
+change: NI-1 @4 rewritten to "the flies in the wall-bottom register the eye-lift before the eye lifts"; band-ceiling defer comment appended for dark-fantasy displacement-trigger request (6→7/27 would breach 25% cap)
+criteria met: yes
+
+## F-009 — RESOLVED (partial defer) — 2026-05-20T11:15:00Z
+fault: sensory-disambiguation-pedant: sensory:2 @16 "cool" redundant with proto-line; sensory-modality-coverage: cap-breach + sound silence + smell silent-gap; sensory-old-state-reader: sensory:1 old-state unanchored to loc-state light-field; sensory:2 old-state structurally unanchored
+scope: line (sensory:2 delete + sensory:1 defense-anchor + modality defer documentation)
+change: (1) deleted sensory:2 @16 (replaced with gap-doc comment in sensory.md); stripped [sensory:2] from canonical proto-lines/b01-c01.md @16; no _inflight-r2/proto-lines-sensory.md exists. (2) added defense-anchor comment under sensory:1 @3 citing loc-state:1 "door-shadow across the entry" geometry cue + pre-noon time-of-day implication as old-state lineage. (3) appended audience-gate-cycle-1-defer block to sensory.md documenting sound (@15/@17) and smell (@11) modality silent-gap callouts as deferred; minimum-change discipline respected (adding 3 entries would reopen sparsity-band question). Sparsity post-fix: 1/27 = 3.7%, within 3-6% band.
+criteria met: yes (charged-verb fault resolved; old-state anchoring documented; modality deferred with carry-forward block)
+
+## F-010 — RESOLVED — 2026-05-20T11:20:00Z
+fault: rubric-carve-out block in per-source taylor-hebert slice not propagated to consolidated state-updates.md top-of-file position; all 3 reviewers require it between frontmatter close and first source header
+scope: line
+change: inserted full rubric-carve-out comment block (29 lines) at top of state-updates.md between closing --- and # source: env; cite-index builder NOT rerun per dispatch instruction
+criteria met: yes
+
+## F-011 — RESOLVED — 2026-05-20T11:25:00Z
+fault: (a) feel:1 not valid NI-spine substitute per rubric; (b) cond-override-architecture-residue-122ac slug form fails URI-FACETS-CYCLE-1 monument- prefix requirement; (c) file-level doubled-register risk if mem:1 cut
+scope: line (slug rewrite + defense annotation rewrite + defer note)
+change: (1) mem:1 target-reference changed from cond-override-architecture-residue-122ac to monument-override-architecture-prohibition; (2) defense annotation rewritten to cite rubric NI mandate explicitly + acknowledge gap + document feel-as-spine rationale + defer to rubric authority ruling; (3) audience-gate-cycle-1-defer note appended with delete vs. NI-add options
+criteria met: yes — slug corrected; defense cites rubric accurately; gap acknowledged; carry-forward documented
+
+## F-012 — RESOLVED — 2026-05-20T11:30:00Z
+fault: taylor-hebert-kl-122ac.drafts.md chosen draft (Draft B @25) facet-licenses: [DEFERRED-TO-R2] unresolved
+scope: line
+change: replaced facet-licenses: [DEFERRED-TO-R2] with [state:17 @25, vibes:20 @25, feel:2 @27 (post-beat carrier), narrator:6 @27 (post-beat carrier)] in Draft B (chosen); rejected drafts A and C left unchanged
+criteria met: yes
+
+## F-013 — RESOLVED — 2026-05-20T11:35:00Z
+fault: wren dialogue entry 2 @26 "they were not on your hand" — body-part precision reads as insect-tracking awareness leaking; worm-canon-pedant: use person-scale language
+scope: line
+change: "they were not on your hand" changed to "they were not on you" in active-project/theater/dialogue/wren-stitch-maker-flea-bottom-ward.md entry 2 @26; same change applied to chosen Draft B text in active-project/staff/dialogue-writer/wren-stitch-maker-flea-bottom-ward.drafts.md with inline change note
+criteria met: yes — body-part precision removed; person-scale "you" preserves proximity-argument structure
+
+## SESSION-END — 2026-05-20T11:40:00Z — facets-b01c01-audience-gate-cycle2
+findings-applied: 7 (F-007 through F-013; F-007 pre-logged, confirmed; F-008 through F-013 resolved in this session)
+findings-skipped: 0
+exit: CLEAN (three audience-gate-cycle-1-defer carry-forwards documented: F-008 dark-fantasy displacement-trigger at @22-@23 band-ceiling blocked; F-009 modality silent-gaps sound+smell deferred; F-011 feel-as-spine NI-equivalence awaits rubric authority ruling)
+
+## SESSION-START — 2026-05-20T12:00:00Z — facets-b01c01-cycle3
+dispatch: cycle-3 fixer for /and-facets b01c01 Phase 5b — resolve 2 actionable facet failures (F-014 interest-narrator NI-6 rewrite, F-015 sensory sound-add + loc-state light-level); memory skip per cap-burn ruling (last cycle before cap = 3)
+target: active-project/theater/facets/interest-narrator.md + active-project/theater/facets/sensory.md + active-project/theater/facets/location-state.md + active-project/theater/facets/_inflight-r2/proto-lines-narrator.md + canonical proto-lines
+audit-report: active-project/staff/audience/dark-fantasy-reader/interest-narrator-r2-verdict.md + active-project/staff/audience/sensory-modality-coverage/sensory-r2-verdict.md + active-project/staff/audience/sensory-old-state-reader/sensory-r2-verdict.md
+findings-queued: 3 actionable sub-tasks (F-014, F-015a sound, F-015b loc-state); 1 skip (memory — cap-burn)
+
+## F-014 — RESOLVED — 2026-05-20T12:10:00Z
+fault: interest-narrator NI-6 @27 in policy-declaration register ("she will not write the name..."); zero displacement-trigger fires across 6 entries; dark-fantasy-reader revise verdict with in-place rewrite path specified
+scope: line
+change: NI-6 @27 body rewritten from "she will not write the name above the block, not in the feed and not on the page she keeps for herself" to "the threshold holds and what is on the other side stays the size she will not name." — gap-narration pattern per dark-fantasy calibration anchor; cost of refusal rendered as held weight rather than policy stated; interest-narrator.md entry 6 body only; band stays at 6/27 = 22.2%; [narrator:6] token in proto-lines unchanged (body edit, no cite cascade); _inflight-r2/proto-lines-narrator.md @27 already carries [narrator:6] and requires no change
+criteria met: yes — (a) policy-declaration register eliminated; (b) displacement-trigger register carried through refusal-to-look channel (gap-narration: "what is on the other side stays the size she will not name"); (c) cold-utilitarian voice maintained; (d) band ceiling not breached (22.2%)
+
+## F-015b — RESOLVED — 2026-05-20T12:15:00Z
+fault: sensory-old-state-reader: sensory:1 @3 old-state "corner-room-dim" anchored only to geometry cue ("door-shadow across the entry") in loc-state:1; no explicit light-level field; two-step inference flagged as moderate-revise
+scope: line
+change: loc-state:1 @1 in location-state.md extended with explicit light-level field: "light: threshold-dim, interior-corner dim under overcast morning backlight" appended to existing field list; sensory:1 @3 old-state "corner-room-dim" now traces near-verbatim to declared loc-state:1 light field; no cite-index change (loc-state:1 was already cited at @1; no new token); _inflight-r2/proto-lines-loc-state.md: field-add is internal to loc-state:1 entry, no cite token change required
+criteria met: yes — explicit light-level field present in loc-state:1; sensory:1 old-state lineage resolved to near-verbatim match; two-step inference gap closed
+
+## F-015a — RESOLVED — 2026-05-20T12:20:00Z
+fault: sensory-modality-coverage: file is light-only single-modality (sensory:1 light @3, sensory:2 deleted); ≥1 sound entry required; @15 or @17 identified as clean addition anchors
+scope: line
+change: (1) sensory:3 @17 added to sensory.md: "sound: street-quiet-of-mid-afternoon -> bootfall-on-cobbles-from-the-Hook-bend"; studio-voice; ≤1 line; no narrative or moralization; @17 ("the boots strike the cobbles") is bare proto-line with no prior sensory citation; ID 3 is next-available (ID 2 gap preserved per F-009 cycle-2 deletion; no renumber). (2) [sensory:3] added to canonical proto-lines/b01-c01.md at @17. (3) created _inflight-r2/proto-lines-sensory.md with [sensory:3] at @17 (new file; no prior sensory inflight file existed). Modality coverage post-fix: light (@3) + sound (@17) = 2 modalities; floor met.
+criteria met: yes — ≥1 sound entry present (sensory:3 @17); studio-voice maintained; ID gap 2 preserved; canonical proto-lines and inflight sensory file updated; modality floor satisfied
+
+## memory — SKIPPED — 2026-05-20T12:21:00Z
+fault: memory facet cycle-2 fail (3 revise on feel-as-spine defense); all three remediation paths have unacceptable costs
+scope: escalate
+change: none — memory.md untouched per dispatch cap-burn ruling; all three paths (add NI @9 = band-ceiling breach; delete mem:1 = SHAPE-FAIL single-register; rubric authority ruling = out of scope) cost more than the cap allows; orchestrator-critic verdict to document cap-burn with rationale
+criteria met: n/a — skip is correct action per dispatch
+
+## SESSION-END — 2026-05-20T12:25:00Z — facets-b01c01-cycle3
+findings-applied: 3 (F-014 NI-6 rewrite; F-015b loc-state light-field; F-015a sensory:3 sound entry + proto-lines)
+findings-skipped: 1 (memory — explicit cap-burn skip per dispatch; not a fixer failure)
+exit: CLEAN (cap-burn on memory documented; orchestrator-critic verdict to close)

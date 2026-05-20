@@ -2,25 +2,49 @@
 reviewer: cape-fic-reader
 facet: state-updates
 cycle: 1
-episode: b01c01
-date: 2026-05-19
+episode: b01-c01
+date: 2026-05-20
 verdict: revise
 ---
 
 # Verdict reasoning
 
-The prop and environment entries are clean — corner room, needle handoff, thermal, nets down, all track as genuine persistent mutations with clear acquisition paths. The rot is in Taylor's `knowledge.*` chain. Entries 11 and 12 (`hook-block-density-map: unmapped -> block-density-mapped-passively` at @12, `watch-patrol-cadence-hook: unknown -> patrol-pattern-read-passively` at @15) fire as canonical knowledge-state acquisitions while entry 10 says her insect-sense is in discipline-hold at @8 (`threshold-held-against-density-spike`) with no released-from-hold transition before @12. The facet is writing tactical intelligence into canonical state through a vector the same facet says is clamped. That's a who-knows-what-when break that corrupts the downstream ledger. Also entry 17 (`ward-social-geometry-hook: block-mapped -> ward-layer-deeper`) is a gradient note, not a field value — `ward-layer-deeper` cannot be applied as a clean write-back.
+Most of the entry work is clean. The prop/env layer (pack grounded, needle cycles, net-condition, thermal, folded-net) tracks correctly — all genuine persistent mutations with clear acquisition paths. The capability-silence on @15/@18/@22 is exactly the constraint-honoring move: insect-sense at-passive, no deployment threshold crossed, no fire. That discipline is what earns tactical trust in a power-set like this. The cull notes are sound — transient locomotion dropped, eye-movements dropped, posture-as-state correctly refused.
+
+The problem is a delivery failure, not an entry-quality failure. The `# rubric-carve-out` annotation block — the on-file defense justifying why 8 of 9 taylor-state entries carry no NI co-citation — exists in the per-character source file (`state-updates-taylor-hebert-kl-122ac.md`) but did not make it into the consolidated `state-updates.md` at the required position. The consolidated file goes from frontmatter close (`---` at line 5) directly to `# source: env` at line 7. The auditor's fault-001 is correct.
+
+From a who-knows-what-when perspective this matters concretely: anyone reading the consolidated file to audit or write against it sees 8 taylor-state entries — including two knowledge.* entries and two social-state.* entries, which the rubric explicitly calls out as requiring NI co-citation — with zero on-file defense. The defense is real; it just isn't attached to the deliverable. That breaks the information-chain in exactly the direction that causes downstream corruption: the state gets written to canonical memory, and the next chapter's author inherits entries they cannot verify were legitimate.
+
+The fix is mechanical — place the carve-out annotation block at the correct position in the consolidated file. Entry content does not need revision.
 
 # Entry-level callouts
 
-- [state:11] @12 `actor:taylor-hebert-kl-122ac.knowledge.hook-block-density-map: unmapped -> block-density-mapped-passively` — entry 10 fires at @8 saying her insect-sense is `threshold-held-against-density-spike`. No hold-released transition exists between @8 and @12. She cannot have passively mapped block density while holding the threshold. The acquisition vector is not there; this is registration-as-state contamination on a beat that should be silent.
+[state-updates:state:11] @6 — `actor:taylor-hebert-kl-122ac.knowledge.flea-bottom-geometry: arrival-baseline -> hook-block-route-mapped`
+The one taylor-state knowledge entry that has NI co-citation (narrator:2 @6 confirmed). This is the clean case. Its correctness makes the remaining 8 entries' NI-absence more visible in the consolidated file, because a reader can see the pattern and then see it break without explanation at the file level.
 
-- [state:12] @15 `actor:taylor-hebert-kl-122ac.knowledge.watch-patrol-cadence-hook: unknown -> patrol-pattern-read-passively` — one Watch pass does not make a cadence. `patrol-pattern-read` implies recurrent observation across multiple passes establishing a temporal pattern. A single pass at @15 is the first data point, not a pattern registration. Persistence test: does Taylor now canonically know the Watch cadence after one sighting? That's not how pattern-reading works even under normal cognition, let alone under discipline-hold. This entry is pre-empting — it fires the knowledge state at the evidence-gathering beat, not at a pattern-confirmation beat.
+[state-updates:state:8] @20 — `actor:taylor-hebert-kl-122ac.knowledge.coll-pattern: unread -> day-cycle-pattern-read`
+knowledge.* field. Rubric requires NI co-citation. Defense exists in the source file (day-close tick in flat-low; NI:4 @18 carries the cost register; trailing edge of scene-B doesn't require a third NI fire). That defense is reasonable — I accept it. But it is not in the consolidated file. Without the carve-out annotation at the correct position, this entry reads as a missed fire against the rubric's POV co-citation requirement.
 
-- [state:17] @26 `actor:taylor-hebert-kl-122ac.knowledge.ward-social-geometry-hook: block-mapped -> ward-layer-deeper` — `ward-layer-deeper` is a direction, not a state value. What does Taylor canonically know now that she did not know before? That Wren is a Ward? That Ward presence is thicker than she thought? The new-value is ambiguous; the showrunner cannot apply this as a clean mutation against the canonical state file. Compare the rubric's anchors: `provisional-labor-eligible`, `name-on-line-with-parallel-margin-marks` — those are discrete field values. This is a vibe note dressed as state.
+[state-updates:state:17] @25 — `actor:taylor-hebert-kl-122ac.social-state.with-wren: unknown-ward -> spoken-once`
+social-state.* field. Rubric requires NI co-citation. Defense exists in the source file (speech-act IS the delta-producer; NI:6 @27 resolves two beats later). I accept the defense — the speech act at @25 is the state-change moment, and NI trailing two beats is defensible. But again: not in the consolidated file. Same problem.
+
+[state-updates:state:13] @8 — `actor:taylor-hebert-kl-122ac.social-state.with-coll: unobserved-block-fixture -> acknowledged-once-by-block-fixture`
+social-state.* field. Rubric requires NI co-citation. Defense in source file: spoken-acknowledgment beat carried by dialogue:coll:1 + state-on-bone; narrator:2 @6 establishes the block-reading interiority this lands inside. Defensible. Not in consolidated file. Same structural problem.
+
+[state-updates:state:6] @8 — `actor:coll-net-mender-flea-bottom.social-engagement-with-taylor: unspoken-block-stranger -> minimal-verbal-exchanged`
+Non-POV actor. No NI co-citation required. Field-extension inline documented. The entry is clean; the field-extension note is present. No complaint.
+
+[state-updates:state:7] @12 — `actor:coll-net-mender-flea-bottom.work-state: between-days -> at-work-on-net`
+Lonely entry in the cite-index (no co-location, no inbound license). The reality axis holds: Coll's work-state does flip at @12 and persist through @20. The pay-off at state:8 (day-packed-net-folded) makes the chain real. But the consolidated file has no annotation addressing the lone-entry status. Given the absence of the top-of-file carve-out, this entry looks more vulnerable than it is.
 
 # Convergence trace
 
-- [state:11] @12: Auditor did not flag this entry. The r1 auditor's CURVE-SHAPE pass cleared state-updates globally and the pile-up review covered @12 only as a narrative reference (narrator:3, vibes:8/11). Anti-pattern #1 (registration-as-state) from the rubric is adjacent, but the auditor's AP-SCAN was scoped to narrator. No direct convergence.
-- [state:12] @15: Auditor found the @15 pile-up WARRANTED as a Scene-B peak. It did not evaluate whether a single-pass observation supports `patrol-pattern-read` as a canonical state value. The persistence test (§Frugality) is the rubric axis the auditor would cite; it did not apply it here. No direct convergence.
-- [state:17] @26: No auditor finding. The frugality axis's loose-new-value concern is uncharted in the r1 and r2 reports. No convergence.
+[state-updates:state:11] @6 — directly overlaps fault-001 (F-006 UNRESOLVED from auditor r2): the auditor confirms this is the one co-cited entry; its correctness makes the remaining 8 entries' gap more visible. The auditor's criteria (b) require the carve-out to classify each of the 8 uncovered entries explicitly.
+
+[state-updates:state:8] @20 — directly overlaps fault-001 criteria (b) and (c): knowledge.coll-pattern is in the "accepted-with-defense" subclass; the carve-out must cite §Anti-patterns #9 (density-on-flat) as the reason NI entries were not added.
+
+[state-updates:state:17] @25 — directly overlaps fault-001 criteria (b): social-state.with-wren is in the "accepted-with-defense" subclass; must be named explicitly in the consolidated file.
+
+[state-updates:state:13] @8 — overlaps fault-001 criteria (b): social-state.with-coll is the other "accepted-with-defense" entry; same requirement.
+
+[state-updates — file-level] — fault-001 is the direct auditor finding this verdict converges on. The rubric-carve-out annotation is present in the per-character source file and absent from the consolidated deliverable. The fixer report claimed the fix was executed; the mutation did not reach the target file. This is the single actionable item.

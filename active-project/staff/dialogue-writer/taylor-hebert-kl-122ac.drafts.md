@@ -65,7 +65,7 @@ Card-stack load order (rubric §pattern 2; leaf-last):
   - **leaf §Voice / "Earth-Bet proper nouns are absent from her speech ... She thinks in functional descriptions: the flies, the swarm, what I can feel, what I can do with the rats."** Operating fully here. Functional descriptions only; no parahuman vocabulary; no naming of her work.
   - **cond-earth-bet-noun-fence §Substitution Register** — Westerosi-language framing only; silence-adjacent compression; she does not explain herself.
   - **cond-taylor-pov-behavior §Affect — Suppressed, Not Absent** — the brusqueness is a body-signal of suppression cost being paid; the analytical register stays primary.
-- facet-licenses: [DEFERRED-TO-R2]
+- facet-licenses: [state:17 @25, vibes:20 @25, feel:2 @27 (post-beat carrier), narrator:6 @27 (post-beat carrier)]
 - rationale: this is the line that demonstrates the operating rule under load at the chapter's pivot. Wren has approached; Taylor gives the minimum-true statement that closes the bid (no work here for a child to attach to), then the cold-utilitarian close ("Go on") that does the refusal cleanly enough not to constitute cruelty — the child is sent on, not driven off. The two-clause shape is Taylor's reasoning architecture spoken aloud: name the prohibition, give the second answer. The second answer here is not "yes you may stay"; it is "go on" — the operating rule is intact, and the chapter goal requires it visibly intact at the moment Wren first asks for proximity. The seam — that Wren will not in fact go on, that the refusal will not hold, that the architecture Taylor came here to refuse will route around this exact refusal in three days — is left for the reader and for bone 26.
 
 ### Draft C

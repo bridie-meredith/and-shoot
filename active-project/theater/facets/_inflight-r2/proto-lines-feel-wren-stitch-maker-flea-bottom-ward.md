@@ -1,20 +1,45 @@
-# proto-lines (R2 fork) — feeling / wren-stitch-maker-flea-bottom-ward
-# scope: scene-C @22-@29 (Wren-eligible anchors)
+# bones — b01c01 (R2 fork) — feeling / wren-stitch-maker-flea-bottom-ward
 # source: active-project/theater/proto-lines/b01-c01.md (locked R1 graph)
-# fork-purpose: citation-cascade tracking for R2 KEEP/DELETE/ADD on feel-wren entries only
-# this fork annotates the Wren-feeling entry against its anchor; on DELETE, strip [feel:<id>]
-# from the protoline cite-list. KEEP leaves cite-list intact.
+# scope: Wren-eligible anchors (Scene-C @22-@29)
+# R2 mutations: 0 KEEP-all (feel:3 @27 KEEP — wren's-eyes-stay-on-taylor's; per-scene cap clean)
+# citation cascade: no tokens stripped; no tokens added
 
-22 wren-stitch-maker-flea-bottom-ward enters the street [exposition:7] [exposition:8] [loc-state:5] [narrator:5] [state:19] [vibes:17]
-23 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac [state:20] [vibes:18] [wren-stitch-maker-flea-bottom-ward:1]
-24 taylor-hebert-kl-122ac lifts the eyes [vibes:19]
-25 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward [state:17] [taylor-hebert-kl-122ac:1] [vibes:20]
-26 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac [wren-stitch-maker-flea-bottom-ward:2]
-27 taylor-hebert-kl-122ac holds the eyes [feel:2] [feel:3] [narrator:6] [vibes:20] [vibes:21]
-28 wren-stitch-maker-flea-bottom-ward crosses the street [state:21] [state:22]
-29 taylor-hebert-kl-122ac lifts the needle [state:18] [vibes:22]
+episode: b01c01
+narrator: taylor-hebert-kl-122ac
+goal: the operating rule in its intact form, the ward it will fail to protect, and the child who will pay the price of its failure.
+cast: taylor-hebert-kl-122ac, coll-net-mender-flea-bottom, wren-stitch-maker-flea-bottom-ward
+locations: flea-bottom
+prior_episode: none
+aggregate_range: 1-29
 
-# R2 verdict trace (feel-wren scope only)
-# - feel:3 @27 KEEP — cross-SVO defended; cite [feel:3] retained on @27.
-# - no adds (per-scene cap ≤1; one fire total in-chapter)
-# - cascade strips: none.
+1 taylor-hebert-kl-122ac enters the corner-room
+2 taylor-hebert-kl-122ac pays the building-keeper
+3 taylor-hebert-kl-122ac crosses the yard
+4 coll-net-mender-flea-bottom lifts the eyes
+5 coll-net-mender-flea-bottom works the net
+6 taylor-hebert-kl-122ac circles the block
+7 taylor-hebert-kl-122ac drops the pack
+8 coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac
+9 taylor-hebert-kl-122ac holds the feet
+
+10
+11 taylor-hebert-kl-122ac lifts the basket
+12 coll-net-mender-flea-bottom pulls the net
+13 taylor-hebert-kl-122ac threads the needle
+14 the needle crosses the mesh
+15 the insects fill the block
+16 the walls cool
+17 the boots strike the cobbles
+18 the city-watch passes the hook
+19 taylor-hebert-kl-122ac holds the eyes
+20 coll-net-mender-flea-bottom folds the net
+
+21
+22 wren-stitch-maker-flea-bottom-ward enters the street
+23 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
+24 taylor-hebert-kl-122ac lifts the eyes
+25 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward
+26 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
+27 taylor-hebert-kl-122ac holds the eyes [feel:3]
+28 wren-stitch-maker-flea-bottom-ward crosses the street
+29 taylor-hebert-kl-122ac lifts the needle

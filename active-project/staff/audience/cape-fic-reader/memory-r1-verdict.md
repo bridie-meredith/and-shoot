@@ -2,27 +2,45 @@
 reviewer: cape-fic-reader
 facet: memory
 cycle: 1
-episode: b01c01
-date: 2026-05-19
+episode: b01-c01
+date: 2026-05-20
 verdict: revise
 ---
 
 # Verdict reasoning
 
-Two fires. Both Earth-Bet displacement. Zero Westerosi-monument clamp. The rubric is explicit at file level: at least one of each register is required; a single-register file is a shape failure, full stop. From where I sit tracking information-asymmetry and foreknowledge as the tactical engine of this story, the Westerosi-monument layer is the foreknowledge dimension — Taylor reads these institutions knowing things they do not, knowing how the succession apparatus will turn. Silence on that register does not mean discipline; it means the stitcher cannot produce that dimension in the rendered chapter. That is a capability gap, not sparsity.
+Two entries in this file. mem:2 @18 is fine — it is doing its job. mem:1 @9 is where I stop.
 
-The secondary problem is placement: mem:1 fires on the chapter's loudest bone (8 co-located facets, the only external institutional-pressure event), which is where the quiet-beat instrument does not belong.
+The `# defense: feel-as-spine` annotation is the thing I was specifically asked to evaluate, so I read it carefully. The claim is that feel:1 @9 is the spine of mem:1 @9 and that adding a narrator-interest entry at @9 would duplicate the interior register that feeling already holds. That is a reasonable authorial instinct. It is not a valid rubric defense.
+
+The rubric's licensing-discipline section says: "Narrator-interest co-citation. Mandatory. Every memory-flag entry must have a narrator-interest fire on the same @<proto-line-id>." Mandatory. I checked the locked narrator-interest file. There is no entry at @9. The entries are at @4, @6, @15, @18, @22, and @27. The feeling facet has feel:1 at @9 — that is a different facet, authored by a different fork, doing a different job. The defense conflates two separate facets and calls one a substitute for the other. It is not. Feeling-flags register somatic enactment; narrator-interest registers the interior's spotlight and forward-pressure read. They are not interchangeable.
+
+The rubric's REJECT list under licensing-discipline is explicit: "Missing narrator-interest co-citation. A fire on a beat where narrator-interest is silent. The narrator must have registered the trigger first; if she didn't, the memory-flag is firing without spine." The narrator did not register the trigger at @9. The memory-flag is firing without spine.
+
+Second problem at mem:1: the target-reference is `cond-override-architecture-residue-122ac`. That is a condition-card slug form. The rubric requires a `monument-`-prefixed mechanism-descriptive slug or a documented margit referral. The URI-FACETS-CYCLE-1 cross-axis test is explicit: "A bare gloss text in target-reference without a margit-resolved slug fails the licensing-discipline axis." A `cond-` slug is not a monument slug. That is two licensing-discipline failures on one entry.
+
+The description itself ("the feet hold and the architecture stays the shape she will not build") is the cleanest thing in the file. The refusal-to-look construction is correct, no proper nouns, the displacement-cue shape holds. If the entry were brought into compliance on spine and slug form, the description would earn its keep.
+
+mem:2 @18 passes. NI spine is present (narrator:4 at @18 in the cite-index). Scene-B flat-low, no peak-bones, quiet-beat anchor licit. "The patrol's line through the bend is older than the patrol" — no proper nouns, institutional-coercive-geometry cue, shape-without-naming. The Westerosi-monument register is the one I care about for the foreknowledge engine this story runs on, and this is the entry that fires it. The free-text gloss target-reference (`(westeros: flea-bottom-hook-as-coercive-geometry-monument)`) is a soft-path tolerance under the rubric — structurally clear, card queued implied. I note it as an advisory concern but it does not block my accept on mem:2.
+
+Doubled register: Earth-Bet (mem:1) and Westerosi clamp (mem:2). Both registers are nominally present. If mem:1 is culled, the file goes single-register, which is a shape failure at file level. The revision path must either cure mem:1's licensing failures or replace it with a valid Earth-Bet entry.
+
+---
 
 # Entry-level callouts
 
-- [mem:1] @15 — The displacement cue is real: counting a uniform from inside a doorway rhymes with a prior institution. I accept the monument-trigger and the description's discipline. What I reject is the placement. @15 is the chapter's institutional peak — 8 co-cited facets, Scene-B climax. The rubric puts memory-flags in the gaps where foreground pressure is low enough for the interior to reach backward. The gap here is @16-@17, bare bones where the work resumes after the Watch has passed. That is when the body-count settles in. As placed on @15, the quiet instrument is fighting for space with seven other facet types on the chapter's loudest beat.
+**[memory:mem:1] @9 — "the feet hold and the architecture stays the shape she will not build"**
+reject: the defense substitutes feel:1 (feeling-facet) for a narrator-interest co-citation — these are different facets; narrator-interest is silent at @9; rubric licensing-discipline REJECT signature "missing narrator-interest co-citation" is triggered without ambiguity; additionally, target-reference `cond-override-architecture-residue-122ac` is a condition-card slug, not a `monument-`-prefixed mechanism-descriptive slug as URI-FACETS-CYCLE-1 requires; two licensing-discipline failures; description survives but cannot carry the entry alone
 
-- [mem:2] @23 — This one I accept without reservation. "The architecture she came here to refuse arrives on its own legs and is held at the threshold of deployment" is a cue that produces a shape, not a procedural account. NI spine confirmed (narrator:7 @23). The hinge beat earns it. One unresolved gap: there is no monument card — this ships on a free-text gloss with a vibes-entry reference (`world-build:override-architecture-residue-122ac`) standing in. The margit referral for the monument card was not made. That is pipeline debt that lands on the stitcher's routing surface.
+**[memory:mem:2] @18 — "the patrol's line through the bend is older than the patrol"**
+accept: NI spine confirmed (narrator:4 @18); scene-B flat-low, no peak-bones, quiet-beat anchor licit; displacement-cue construction holds; Westerosi-monument clamp identifiable from the cue; free-text gloss target-reference is soft-path tolerance (structurally clear), advisory but not blocking
 
-- [file-level] — Single-register file. Both fires are Earth-Bet displacement. The chapter has Westerosi-monument-adjacent beats that were not fired: the Watch uniforming at @15 could have grounded a Conquest-charter clamp on institutional-record language (or, better, relocated to @16-@17 in the aftermath zone); @25 where Taylor speaks the prohibition rule aloud carries suppression-language adjacency; the Flea Bottom work-beat stretch (@6-@14) sits in a specific precinct with local-current monument pressure. None of these fired. A minimum of one Westerosi clamp is required for the file to pass.
+---
 
 # Convergence trace
 
-- [mem:1] peak-anchor: the Phase 5 auditor identified @15 as the Scene-B peak in the CURVE-SHAPE assessment ("the chapter's only external institutional pressure event") but did not flag mem:1's placement on that peak as a problem — the auditor's PASS note for mem:1 confirmed NI-spine and stopped there. The auditor did not run the quiet-beat anchor test on memory-flags specifically. No auditor convergence on this callout; audience raises it independently.
-- [mem:2] monument-card gap: the Phase 5 auditor (r2-verify) noted `world-build:override-architecture-residue-122ac` as the vibes reference and treated the rename of `khepri-residue` as fully remediated. The card-gap propagating to mem:2's target-reference was not flagged. No auditor convergence; audience raises it independently.
-- [file-level single-register]: the Phase 5 auditor's CURVE-SHAPE verdict was SHAPE-OK at the run level. The memory-facet internal curve-shape requirement (doubled-register visibility) is a separate check that the auditor did not perform as a named finding. The memory rubric's own curve-shape section states this as a SHAPE-FAIL criterion; the auditor scan did not run it. No auditor convergence; audience raises it independently.
+**mem:1 — NI co-citation failure:** The auditor r2 verdict on F-001 ("RESOLVED") scoped only to whether the annotation block is present and parseable in the file — that is a documentation-presence check, not a substantive licensing-theory check. The auditor report states: "The defense annotation is present at the correct position and parses cleanly without disrupting the entry body." It does not adjudicate whether feel:1 can substitute for narrator-interest. The audience adversarial reading attacks exactly the seam the mechanical scan cannot: the annotation is present and the legal theory it contains is wrong. No auditor convergence on this callout — audience raises it independently.
+
+**mem:1 — monument-card slug failure:** URI-FACETS-CYCLE-1 was promoted to the rubric body (rubric §Cross-axis tests, monument-card resolution test). The auditor r2 did not run a slug-form check on mem:1's target-reference as a named finding — F-001's resolution criteria focused on the annotation block, not the underlying target-reference field. No auditor convergence on this callout; audience raises it independently.
+
+**mem:2 — advisory gloss:** No HARD auditor finding on mem:2's target-reference. The rubric's SIGNAL/HARD distinction places structurally clear free-text glosses at SIGNAL level. Consistent with auditor r1/r2 signal-carry-forward posture. Audience callout is advisory, consistent with signal-level treatment.

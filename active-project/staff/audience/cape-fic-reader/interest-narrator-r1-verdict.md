@@ -2,23 +2,22 @@
 reviewer: cape-fic-reader
 facet: interest-narrator
 cycle: 1
-episode: b01c01
-date: 2026-05-19
+episode: b01-c01
+date: 2026-05-20
 verdict: revise
 ---
 
 # Verdict reasoning
 
-Seven entries for twenty-four bones should be a working spotlight — tight enough to signal what she's actually ahead of. The problem is that three of those seven entries (narrator:2, narrator:4, narrator:6) use the same inverted-predicate mold ("X is what Y"), and in a sparse file that template reads faster than the content does. By narrator:6 I'm tracking syntax, not tactical output. The asymmetry that makes Taylor's register interesting is that she has already priced the beat before it lands; these three entries read as labeling after the fact, not pre-calc surfacing. That is not the register I came for.
+The AP-template chassis on NI-2/4/6 is gone and the file is cleaner for it — "the block reads on a second pass" and "a girl comes in through the swarm before she comes in through the door" both deliver tactical asymmetry in Taylor's actual register. But NI-1 @4 is still a problem and it's the file's lead entry: "the network has him before he has her" names the capability mechanism with a proper-noun-adjacent label before this chapter has established what "the network" covers in its own terms. The asymmetry beat should land on the speed-of-recognition, not on the mechanism's name. And NI-4 @18's rewrite swapped the template for a soft estimate-close — "than she would have estimated" — which is a different voice miss at the same entry: Taylor's cost-tracking doesn't estimate, it calculates and then prices the gap.
 
-# Entry-level callouts
+# Entry-level callouts (revise / fail only)
 
-- [narrator:2] @8 — "useful without controlling is what the threshold means today" — this is a definition of a rule she already holds, delivered after the flagstone-beat fires. The word "today" is the tell: if she has already calculated the threshold, there is no "today" qualification. Pre-calc does not hedge its own conclusions. The entry reads as author-placed commentary about her stance, not interior cognition that priced the beat in advance. Fatigue signature: eye-glaze on unmotivated knowledge. She should already know this; the entry should show what the knowing *does*, not what the rule means.
+- [narrator:1] @4 — "the network has him before he has her": the label "the network" functions as a capability-noun that this chapter has not yet defined in its own terms; an asymmetry beat that names the mechanism before the scene has put the mechanism's scope on the table reads as author shorthand, not as perceptual pre-calc surfacing; the fire earns on channel (passive fauna-feed license is clear — she clocks his eye-lift before his head follows), but the content over-declares relative to what the chapter's established vocabulary licenses; revise the content to render the speed-and-precedence without the mechanism label
 
-- [narrator:4] @15 — "the cost of being legible is what she counts, not the patrol's count of her" — the cost-language is right and the tactical read is correct: she is counting her own exposure, not the patrol's tally. But the second clause ("not the patrol's count of her") names the contrast explicitly, which softens the close. Base-register Taylor does not explain the contrast; she reports the one number. The "X is what Y" construction is now the second instance and the pattern is becoming visible over the content.
-
-- [narrator:6] @24 — "face, not node, is what she holds" — the content earns the fire: she is suppressing her own pattern-read, which is the rule functioning as a cost paid in real time. That is the asymmetry beat I want. But "is what she holds" is the third inverted-predicate landing in seven entries, and I have lost the ability to read it clean. The discipline act she is performing needs a harder close; "holds" as the final word deflates the weight of the suppression.
+- [narrator:4] @18 — "boots strike behind the wall, four spans and tracked through the feed without head-turn; staying invisible costs more in dense streets than she would have estimated": the first clause is correct — distances counted, feed-channel named, cost-register active; the second clause undermines it with "than she would have estimated," which is a hedging-comparison construction the rubric explicitly rejects (voice fidelity §REJECT: hyperbole / softeners; "estimated" introduces a conditional that pre-calc tense forecloses); she had already priced the suppression floor; the entry should report the cost as fact, not as a gap between an estimate and the reality
 
 # Convergence trace
 
-- [narrator:2], [narrator:4], [narrator:6] — all overlap with auditor AP-001 (AP-SCAN SIGNAL: "X is what Y" inverted-predicate construction ×3; auditor called it "edge-of-fatigue"). From this seat it is past the edge: three of seven entries is not a voice tell, it is a template. The auditor filed advisory; this persona rejects on the same entries.
+- [narrator:1] @4: auditor Phase 5 (r1) carried a TASTE-FLAG on this entry (atmosphere-thin, label "the network" near Earth-Bet boundary, S-series signal); from this seat the attack is on the information-asymmetry axis — the label pre-empts the asymmetry rather than enabling it — which is a different failure mode from atmosphere-thin; convergent on the entry, divergent on the named fault
+- [narrator:4] @18: the auditor's r2 report confirmed F-005 resolution (AP-template cleared, "no new AP patterns introduced") but did not re-examine voice fidelity at the clause level post-rewrite; this callout is not convergent with any auditor finding; it surfaces from the rewrite itself
