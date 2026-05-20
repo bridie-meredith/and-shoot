@@ -1,52 +1,26 @@
 ---
-persona: cape-fic-reader
+reviewer: cape-fic-reader
 facet: location-state
-episode: b01c01
 cycle: 2
-phase: 5b
-date: 2026-05-19
-verdict: ACCEPT
+episode: b01-c01
+date: 2026-05-20
+verdict: accept
 ---
-# Verdict
 
-Four tight entries; the two that got cut were the loose ones; what remains is clean board-state tracking.
+# Verdict reasoning
 
-# Stage 1 — strict affirmative-demonstration
+My cycle-1 callout was singular: loc-state:3 @11 was invoking the continuity-from license without a confirmed fusion-eligible-run in the scene-map. The fix is a clean deletion — not a rewrite, not a token shuffle, a removal with gap-documentation that explains exactly why the entry cannot stand. That is the correct resolution.
 
-**loc-state:1 @1** (corner-room-threshold — alley-mouth narrows to a doorway; step in is the only gap):
-- Necessity axis: anchor verb is `enters`; first beat in this location-and-moment; entry serves as place-anchor for all subsequent inherited beats in scene-A. PASS.
-- Interestingness axis: one concrete focus-element — the single entry gap between alley and work-floor. Selected; nothing else in the room named. PASS.
-- Frugality axis: first loc-state in location-and-moment. No prior entry to conflict with. PASS.
+The four surviving entries (1, 2, 4, 5 — the gap at 3 is intentional and documented) were accepted in cycle-1 and nothing has changed about them. They set board position at threshold moments: the building-keeper's door-shadow on entry (@1), the yard drain-channel that marks where Coll works (@3), the Hook corner alley-mouth where the Watch rounds into view (@18), the alley-mouth step where Wren comes into the street (@22). Each one gives me a position before I need it. That is what location-state is supposed to do.
 
-**loc-state:2 @9** (door-open-street-facing — Hook visible; near-alley foot-traffic readable from threshold):
-- Necessity axis: the state-change is the door opening onto the street-facing side — a genuine physical-state transition that creates a sightline where none existed. Anchor is a threshold-opening action. PASS.
-- Interestingness axis: focus-element is "the Hook visible through the facing side" — named, singular, directional. PASS.
-- Frugality axis: marks a condition change (door-open vs prior door-implied-shut); not a re-citation of @1. PASS.
+Scene-B now opens with no loc-state fire through bones @11 to @17. That is correct inheritance behavior under the rubric — one entry licenses all subsequent bones until the environment turns over, and it turns over at @18 when the Watch shows up. The gap is not absence; it is frugality functioning as designed.
 
-**loc-state:3 @15** (afternoon / hook-mouth-visible — Watch column passes at the Hook's curve, visible from the angle opened at @9):
-- Necessity axis: new entrant (Watch column) plus time-advance (morning → afternoon) — both are genuine state-changes. The Watch column is only legible at this position because @9 established the sightline angle; the entry closes that loop. PASS.
-- Interestingness axis: focus-element is the Watch column at the Hook's curve, precisely positioned. "The angle Coll opened in @9" is the structural callback that makes this not just atmosphere — it's a tactical location fact paying off prior setup. PASS.
-- Frugality axis: state has changed twice (time-of-day, new entrant at a specific location-point). Not inherited re-naming of @9. PASS.
+The cite-index still shows loc-state:3 as a live entry (stale — index was not rebuilt). That is a mechanical artifact in a derivative tracking file. The facet file itself is clean.
 
-**loc-state:4 @20** (morning / alley-street-mouth — same alley-mouth as @1; light angle shifted earlier, establishing third-or-fourth day):
-- Necessity axis: anchor verb is `enters`; Wren crossing at the alley-street-mouth is a positioning/movement beat. The light-angle comparison to @1 is what makes the elapsed-time legible — the entry isn't delivering atmosphere, it's delivering a timestamped spatial anchor. PASS.
-- Interestingness axis: focus-element is the light-angle differential against @1 — one perceptible comparison, not a list. PASS.
-- Frugality axis: new day, new time-of-day-register (morning again but different from arrival morning), new entrant. State has turned over. PASS.
+# Entry-level callouts (revise/fail only)
 
-# Stage 2 — adversarial seam-finding
+None.
 
-**loc-state:1 @1:** The sensory note gives us entry-gap geometry — useful for blocking — but it's possible the location card already specifies that the alley-mouth is the only entry to the corner-room. If so, the entry is inherited re-naming and fails frugality on axis 3. Without reading the loc-flea-bottom card I can't close this. From the facet-level view this is a weak seam: the entry is first-beat-in-location, so even if the location card names the threshold, the place-anchor license saves it. Narrow concern, not a block.
+# Convergence trace
 
-**loc-state:2 @9:** No meaningful attack. Door-opening as sightline-change is the cleanest state-change pattern the rubric describes.
-
-**loc-state:3 @15:** This is the entry dark-fantasy-reader and worm-canon-pedant complained about in r1 as *old* loc-state:3 @11. That entry is gone. The current loc-state:3 is @15 (Watch passes the Hook) — formerly loc-state:5 in r1 notation, which I explicitly praised in my cycle-1 verdict as "entry 5 pays it off" for the sightline setup. No new attack.
-
-**loc-state:4 @20:** Light-angle-as-elapsed-days is the cleverest piece of the file. The cape reader seam I'd probe: does the time-of-day field say "morning" when the light angle is described as "shifted earlier than the arrival morning"? That is internally coherent — it's still morning, just an earlier light position than day-one morning. The time field is correct. No block.
-
-# Cycle-2 delta evaluation
-
-My cycle-1 verdict was ACCEPT on the 6-entry file. I flagged no entries for revision. The cycle-2 cuts removed old loc-state:3 @11 (dexterity-stillness, never my complaint) and old loc-state:4 @13 (persistence-as-state, also not my r1 callout). The surviving entries are precisely the four I implicitly accepted; they renumbered cleanly. The studio sensory-baseline comments are documentation, not new entries — I do not evaluate them as loc-state fires. The cycle-2 delta resolves the two REVISE verdicts from other personas and leaves my accepts intact.
-
-# Aggregate stance
-
-ACCEPT. Four entries, all three axes earned per entry, prior-cycle acceptance preserved, no new attack strong enough to block.
+Cycle-1 callout [loc-state:3] @11 resolved by deletion (F-007). No auditor finding directly overlapped with this attack in cycle-1 (auditor r2 scope was F-001 through F-006 only; auditor r1 SUPERFLUOUS pass on loc-state:3 used structural-displacement argument rather than three-axis or license-verification analysis). No residual issues. Stale cite-index entry is a mechanical artifact below this reviewer's threshold — the facet file governs.
