@@ -260,4 +260,133 @@ Candidate emergent pattern: "I held" surface (@9 "I held my feet", @19 "I held t
 
 0 preservation moves. Clean.
 
+---
+
+## Phase 7 — Editorial reflection
+
+Three scene-forks dispatched in parallel (fork-A001, fork-B002, fork-C003). Each fork walked its scene's sentences serially, emitting one Q-line per sentence under strict cut-aggressiveness (borderline=reject; except exposition-derived prose and dialogue-utterance content per the upstream-pre-cleared routing rule).
+
+### fork-A001 — scene-A Q-sweep (7 sentences)
+
+- S1 (L3) → CUT-CLAUSE + REWORD: Q3/Q5 explanatory-echo "at the door-shadow across the entry, where he stood at the threshold-dim"; Q9 hit "interior-corner" (stitcher-coined sensory nominalization outside facet content). Reworded "interior-corner" → "the room's corner". Dropped middle clause.
+- S2 (L4) → CUT-CLAUSE: Q5 explanatory-echo / Q6 em-dash reach. Dropped bracketed "the light shifted from the dim of the corner-room into the overcast diffuse of the yard" (sensory:1 arrow content; the bone-action + co-anchored loc-state carries the threshold transit).
+- S3 (L5) → KEEP + FAULT-EXPOSITION-AUDIT-MISS (Q6 borderline; pre-cleared) + 2x FAULT-AUDIT-MISS (sensory:1 "wall-bottom" Q9-hit, narrator:1 "eye-lift" Q9-hit — both facet-cited; render as-is, surfaced for upstream auditor)
+- S4 (L6) → KEEP
+- S5 (L7) → KEEP (Q6 em-dash NI-fold structural; not reach)
+- S6 (L8) → KEEP (utterance pre-cleared)
+- S7 (L9) → CUT-CLAUSE: Q5 explanatory-echo "I held my feet" + "I set my weight even on both feet" same action twice. Bones-cuttable license does NOT fire (no protected pattern at @9, no Phase 2/6 cut to chain).
+
+**Scene-A stats**: 0 cuts, 3 cut-clauses, 1 reword, 0 reshows, 3 faults-surfaced, 4 keeps.
+
+### fork-B002 — scene-B Q-sweep (6 sentences)
+
+- S1 (L10) → KEEP (4-bone fusion clean)
+- S2 (L11) → KEEP + FAULT-AUDIT-MISS-passive-held (NI facet @15 "passive held" Q9-hit state-verb-fragment; upstream audit miss)
+- S3 (L12) → KEEP (3-word environmental beat; counterfactual-positive)
+- S4 (L13) → KEEP (4-word boot-on-cobble bare bone after sensory:3 removal)
+- S5 (L14) → CUT-CLAUSE: Q3 within-scene repetition of L11's "continuous suppression cost". Dropped trailing "staying invisible cost more in dense streets than I would have estimated;". Exposition appositive + memory-tail preserved.
+- S6 (L15) → KEEP (two-bone fusion mirrors L10 opener cadence)
+
+**Scene-B stats**: 0 cuts, 1 cut-clause, 0 rewords, 0 reshows, 1 fault-surfaced, 5 keeps.
+
+### fork-C003 — scene-C Q-sweep (7 sentences)
+
+- S1 (L16) → KEEP (exposition appositive pre-cleared; "came in" tripling is NI:5 doubled-register intentional; hyphenated compounds locative/trade-fixed, not Q9)
+- S2 (L17) → KEEP (utterance pre-cleared)
+- S3 (L18) → CUT-CLAUSE + FENCE-STRETCH-RESOLVED: dropped "from the mesh" (Phase 1 scene-window fork unlicensed spatial extension at @24; no state-update or loc-state at @24 licensed the phrase). Drift-risk from Phase 1 resolved.
+- S4 (L19) → KEEP (utterance pre-cleared)
+- S5 (L20) → KEEP (substance-hinge; three semicolons fold three facet-cited layers — feel:2 + feel:3 + narrator:6 — all load-bearing per chapter goal)
+- S6 (L21) → KEEP (bone @28 closing structural beat)
+- S7 (L22) → KEEP (chapter-close return-to-work bone)
+
+**Note on Scene-C fork Q-line polarity**: fork-C003 emitted Q1=n labels across all sentences, but rationales consistently describe lines as critical (high Q1 weight). Treating as fork-side labelling glitch; moves and post-Phase-7 prose are canonical per the move-table (the moves are correct: 1 CUT-CLAUSE on S3, all others KEEP).
+
+**Scene-C stats**: 0 cuts, 1 cut-clause, 0 rewords, 0 reshows, 0 faults-surfaced, 6 keeps. 1 fence-stretch resolved.
+
+### Phase 7 aggregate
+
+- 0 cuts (whole-sentence)
+- 5 cut-clauses (S1+S2+S7 in Scene-A; S5 in Scene-B; S3 in Scene-C)
+- 1 reword (S1 in Scene-A: "interior-corner" → "the room's corner")
+- 0 reshows
+- 0 cut-bones (no bones-cuttable license fired)
+- 4 faults-surfaced for upstream review:
+  - FAULT-EXPOSITION-AUDIT-MISS Scene-A S3 (Q6 borderline em-dash on exposition:3 appositive — pre-cleared, surfaced only)
+  - FAULT-AUDIT-MISS sensory:1 "wall-bottom" (Q9-hit on facet content)
+  - FAULT-AUDIT-MISS narrator:1 "eye-lift" (Q9-hit on facet content)
+  - FAULT-AUDIT-MISS narrator:3 "passive held" (Q9-hit state-verb-fragment on facet content)
+- 1 fence-stretch resolved: Scene-C S3 "from the mesh" CUT-CLAUSE (Phase 1 unlicensed spatial extension at @24)
+- 15 keeps (out of 20 total body sentences)
+
+---
+
+## Phase 8 — Finalize
+
+1. **Paragraph structure preserved from Phase 1 scene-window choices.** Phase 7 has no paragraph-break authority; the per-fork outputs that added paragraph breaks at S6/S7 boundaries in scene-C and at S2/S3/S4 boundaries in scene-B were treated as overlay and reverted to Phase 1's paragraph structure.
+2. **Stable line-IDs assigned**: L1-L22 (2 preamble + 20 body; sequential; no gaps for this chapter since no whole-sentence cuts fired).
+3. **Preamble prepended**: italic-rendered exposition:1 + exposition:2 paragraphs, then horizontal-rule `---`, then body.
+4. **Scene-callout strip**: scanned for `## Scene N`, `[SCENE BREAK]`, `--- SCENE ---` markers — none present. The single `---` between preamble and body is the schema-licensed preamble-body separator (per Phase 0.6 spec).
+5. **Clean draft written**: `active-project/draft/b01-c01.md` (no line-IDs, no trace blocks, 599 words across 14 paragraphs including the preamble's 2).
+6. **Annotated draft written**: `active-project/draft/b01-c01.annotated.md` with `[L<N>]` prefixes and `<trace>` blocks per sentence (preamble traces tagged `scope="preamble"`; body traces cite fork-id + scene + bones-consumed + facets-folded + lens-decider-rule + Phase 7 move).
+7. **Intermediate drafts pruned**: `active-project/draft/b01-c01.phase-1.draft.md`, `b01-c01.phase-6.draft.md`, `b01-c01.preamble.md` will be deleted post-verification.
+8. **Showrunner memory**: state machine `stitched: false → true` (b01c01 anchor).
+
+### STATS
+
+| Metric | Value |
+|---|---|
+| word count (body) | ~400 |
+| word count (preamble) | ~200 |
+| word count (total) | 599 |
+| sentence count (body) | 20 |
+| sentence count (preamble) | 2 |
+| paragraph count (body) | 12 (3 scene-A + 4 scene-B + 5 scene-C) |
+| paragraph count (preamble) | 2 |
+| bones rendered | 27 (all bones from bones file; ID range 1-29 with gaps at 10, 21 time-skip blanks) |
+| bones merged (fused) | 12 (@2 into @1; @7 into @6; @11+@12+@13+@14 cluster; @19+@20; @24+@25; @28 standalone but in scene-close paragraph) |
+| bones dropped | 0 (no CUT-BONE) |
+| facets rendered | 5 categories — narrator (6 entries), loc-state (4 of 4 live entries; loc-state:3 deleted upstream), sensory (1 live entry; sensory:2, sensory:3 deleted upstream), feel (3 of 3 entries), memory (1 of 1 live entry; mem:1 removed upstream) |
+| facets dropped | 0 stitcher-side (all upstream deletions accounted for: mem:1 + sensory:3 removed by rejected-items fixer; loc-state:3 + sensory:2 + exposition:4 + exposition:5 + exposition:7 deleted at /and-facets R2/cycle-2; metaphor zero-fire across chapter) |
+| reshow count | 0 |
+| reword count | 1 ("interior-corner" → "the room's corner") |
+| cut-clause count | 5 |
+| cut count (whole sentence) | 0 |
+| cut-bone count | 0 |
+| preamble-source | exposition-facet (Phase 0.6 graph-resident; not legacy-fallback) |
+| exposition entries-rendered | 5 (entries 1, 2, 3, 6, 8 — preamble + 3 inline-appositive first-mention glosses) |
+| exposition entries-refused-at-R2 | 3 (entries 4, 5, 7 — pre-stitcher deletion authority) |
+| cross-episode-register-skipped | 0 (first episode; no prior glossed-terms) |
+| dialogue-source | dialogue-facet (Phase 0.7 graph-resident; not legacy-silent-speech) |
+| dialogue character-files-loaded | 3 (coll, taylor, wren) |
+| dialogue utterances-rendered | 4 (coll:1 @8, wren:1 @23, taylor:1 @25, wren:2 @26) |
+| bare-speech-bones | 0 |
+| unmoored-utterances | 0 |
+| speaker-mismatches | 0 |
+
+### Audit faults surfaced (for upstream review)
+
+| Fault | Anchor | Detail |
+|---|---|---|
+| FAULT-EXPOSITION-AUDIT-MISS | S3 @4 | Q6 em-dash borderline on exposition:3 inline-appositive (pre-cleared; surfaced only) |
+| FAULT-AUDIT-MISS | S3 @4 | Q9 "wall-bottom" sensory-tag compound in narrator:1 (sensory:1 area) — facet-content, render as-is |
+| FAULT-AUDIT-MISS | S3 @4 | Q9 "eye-lift" NI register-token in narrator:1 — facet-content, render as-is |
+| FAULT-AUDIT-MISS | S2 @15 | Q9 "passive held" state-verb-fragment register hit in narrator:3 — facet-content, render as-is |
+| FENCE-STRETCH-RESOLVED | S3 @24 | Phase 1 scene-window fork added unlicensed spatial extension "from the mesh"; Phase 7 CUT-CLAUSE resolved |
+
+### NEW-PATTERN-CANDIDATE
+
+"I held" surface recurring across @9 (feet) / @19 (eyes) / @27 (eyes) — chapter's holding-discipline structural beat. Three iterations, scene-distributed. Not in scene-map's protected-patterns list at scene-map authoring; flagged for next-chapter scene-map authoring consideration.
+
+---
+
+## Run complete
+
+State: `stitched: false → true` (b01c01).
+
+Deliverables:
+- `active-project/draft/b01-c01.md` (clean) — terminal deliverable under polish-deferred chain
+- `active-project/draft/b01-c01.annotated.md` (traced, dual mode output)
+- `active-project/staff/stitcher/render-log-b01-c01.md` (this file)
+
+Polish-deferred boundary: no `/and-wrap` editor pass under the current chain. `b01-c01.md` is the terminal deliverable.
 
