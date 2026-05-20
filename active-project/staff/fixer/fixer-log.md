@@ -501,6 +501,12 @@ target: active-project/theater/facets/memory.md, exposition-b01-c01.md, interest
 audit-report: active-project/staff/auditor/facets-final-audit.md
 findings-queued: 6 (F-001 CONSTRAINT, F-002 CONSTRAINT, F-003 CONSTRAINT, F-004 CONSTRAINT, F-005 AP-SCAN, F-006 RUBRIC-FIDELITY)
 
+## SESSION-START — 2026-05-20T10:00:00Z — facets-b01c01-hard-r1-six-findings-cont
+dispatch: complete remediation of F-001 through F-006; prior session resolved F-001 and F-002 and logged them; F-003 through F-006 require action and logging
+target: active-project/theater/facets/exposition-b01-c01.md + interest-narrator.md + state-updates.md + _inflight-r2/proto-lines-exposition.md + _inflight-r2/proto-lines-narrator.md + active-project/theater/proto-lines/b01-c01.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 4 remaining (F-003 CONSTRAINT, F-004 CONSTRAINT, F-005 AP-SCAN, F-006 RUBRIC-FIDELITY)
+
 ## F-001 — RESOLVED — 2026-05-20T09:05:00Z
 fault: mem:1 @9 — NI-spine-absent — co-citations [feel:1, vibes:12] but no NI at @9; no R2-verified defense on record for canonical entry
 scope: line
@@ -512,3 +518,32 @@ fault: exposition:4 @11 — scene-orient-fire-rule condition (b) violated; loc-s
 scope: line
 change: deleted exposition:4 body; replaced with gap-documentation comment in exposition-b01-c01.md; stripped [exposition:4] from canonical proto-lines/b01-c01.md @11 and from _inflight-r2/proto-lines-exposition.md @11 and _inflight-r2/proto-lines-narrator.md @11; ID gap preserved (no renumber)
 criteria met: yes — no live exposition:4 entry; [exposition:4] token absent from all proto-lines files at @11
+
+## F-003 — RESOLVED — 2026-05-20T10:05:00Z
+fault: exposition:7 @22 — scene-orient-fire-rule condition (b) violated; loc-state:5 fires at @22; R2 refusal stood but delete not executed; prior session deleted from facet file but did not strip proto-lines tokens
+scope: line
+change: exposition:7 facet file gap already in place (gap-doc comment); stripped [exposition:7] from canonical active-project/theater/proto-lines/b01-c01.md @22, from _inflight-r2/proto-lines-exposition.md @22, and from _inflight-r2/proto-lines-narrator.md @22; ID gap preserved (no renumber); [exposition:8] remains in all three @22 lines
+criteria met: yes — no live exposition:7 entry in facet file; [exposition:7] token absent from all proto-lines files at @22
+
+## F-005 — RESOLVED — 2026-05-20T10:15:00Z
+fault: interest-narrator:-- @6/@18/@27 — AP-template-saturation — "X is what Y" predicate-nominative inversion in 3 of 6 NI entries (50%); URI-AP-SCAN-SATURATION threshold 40% for facets with band ≤25%
+scope: line
+change: all three "X is what Y" constructions already rewritten in the prior cycle-2 remediation session (facets-b01c01-cycle2-remediation); interest-narrator.md confirmed: entry 2 @6 rewrites to "the block reads on a second pass — which courts feed which alleys..."; entry 4 @18 rewrites to "boots strike behind the wall, four spans and tracked through the feed without head-turn; staying invisible costs more in dense streets than she would have estimated."; entry 6 @27 rewrites to "she will not write the name above the block, not in the feed and not on the page she keeps for herself."; zero "X is what Y" constructions remain; citation IDs preserved; _inflight-r2/proto-lines-narrator.md citations unchanged (entries revised, not deleted); no proto-lines token strip required
+criteria met: yes — 0/6 entries carry "X is what Y" construction; saturation 0% < threshold 40%; AP-template-saturation finding resolved
+
+## F-004 — RESOLVED — 2026-05-20T10:10:00Z
+fault: exposition:5+exposition:6 @18 — per-anchor-cap breach; first-mention-term + first-mention-place pair not in permitted-pairs enumeration; rubric read confirmed no combined scope and no exemption for this pair
+scope: line
+change: removed exposition:5 as a numbered entry (replaced with gap-doc comment in exposition-b01-c01.md); folded city-watch gloss into exposition:6's gloss text as a semicolon-appended contextual phrase ("the city-watch, King's Landing's gold-cloaked standing patrol, moves through on a rotation the block knows by sound"); updated exposition:6 licensed-by to cover watch-institution gap for all three personas; updated cross-episode register write-back to note the-city-watch now folded into gloss-id 6; stripped [exposition:5] from all three proto-lines files at @18 (canonical b01-c01.md, _inflight-r2/proto-lines-exposition.md, _inflight-r2/proto-lines-narrator.md); ID gap 5 preserved (no renumber); exposition:6 untouched as numbered entry
+criteria met: yes — single entry at @18 (exposition:6, first-mention-place); per-anchor-cap satisfied; watch gloss content preserved within the place-gloss
+
+## F-006 — RESOLVED — 2026-05-20T10:20:00Z
+fault: state-updates file — POV co-citation gap 8/9 — rubric-state-updates.md § Cross-facet contract mandates NI co-citation for all actor:taylor.* state entries; 8 of 9 entries lack it; adding 8 NI entries would breach band ceiling (6→14 NI = 51.8% vs 15-25% ceiling)
+scope: line
+change: option (c) applied — appended `# rubric-carve-out` annotation block to state-updates.md (before the first source block, after consolidated frontmatter); annotation documents: (1) rubric's own §Cross-facet contract explicitly scopes requirement to knowledge.*, mask-state, exposure-state — not mechanical-action states; (2) mechanical-action entries (position, inventory, lodging-payment, work-routine) are exempt per rubric's own scoping; (3) knowledge.coll-pattern and social-state.* entries that fall closer to the scoped zone are accepted-with-defense: adding NI would breach band ceiling; substance contract is mechanical-establishment/0-peak-bones; density-on-flat anti-pattern prohibits inflation to hit co-citation coverage; (4) citations to rubric-state-updates.md §Cross-facet contract and §Anti-patterns #9
+criteria met: yes — annotation present; mechanical-action carve-out documented with rubric citation; option (c) as specified; no NI entries added; no band breach
+
+## SESSION-END — 2026-05-20T10:25:00Z — facets-b01c01-hard-r1-six-findings-cont
+findings-applied: 6 (F-001 confirmed from prior session; F-002 confirmed from prior session; F-003 proto-lines strip completed; F-004 exposition:5 consolidated into :6 + proto-lines stripped; F-005 confirmed from prior cycle; F-006 rubric-carve-out annotation applied)
+findings-skipped: 0
+exit: CLEAN

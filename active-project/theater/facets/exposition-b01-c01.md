@@ -20,9 +20,9 @@ voice: pov-frame first-person
 
 # exposition:4 DELETED (F-002, 2026-05-20 — scene-orient-fire-rule condition (b) violated: loc-state:3 fires at @11, covering the orientation; scene-open-orient must not fire when loc-state covers the anchor; R2 refusal stood but delete was not executed)
 
-5 @18 the-city-watch: the city-watch — King's Landing's standing patrol in gold cloaks, a few hundred strong, who move through Flea Bottom on a rotation the block knows by sound. | scope: first-mention-term | renders-as: em-dash-fold | sources: cond-kl-social-physics-122ac, cond-kl-geography-122ac | licensed-by: cape-fic-reader:cape-fic-doesnt-know-westerosi-watch-as-institution-distinct-from-generic-guard, worm-canon-pedant:worm-canon-doesnt-know-kl-watch-as-gold-cloaked-standing-patrol, dark-fantasy-reader:dark-fantasy-needs-watch-as-westerosi-institution-not-generic-medieval-guard
+# exposition:5 CONSOLIDATED INTO exposition:6 (F-004, 2026-05-20 — per-anchor-cap breach: first-mention-term + first-mention-place pair not in permitted-pairs enumeration; watch gloss folded into Hook gloss as contextual phrase; exposition:5 removed as numbered entry; ID gap preserved)
 
-6 @18 the-hook: the Hook — a curving lane at Flea Bottom's waterfront edge, the slum's lowest margin, where the most transient and least-protected smallfolk keep their rooms. | scope: first-mention-place | renders-as: inline-appositive | sources: cond-kl-geography-122ac, cond-kl-social-physics-122ac, wren-stitch-maker-flea-bottom-ward.card | licensed-by: cape-fic-reader:cape-fic-doesnt-know-the-hook-as-flea-bottoms-waterfront-margin, worm-canon-pedant:worm-canon-doesnt-know-kl-flea-bottom-internal-geography, dark-fantasy-reader:dark-fantasy-needs-the-hook-as-place-frame-not-institution
+6 @18 the-hook: the Hook — a curving lane at Flea Bottom's waterfront edge, the slum's lowest margin, where the most transient and least-protected smallfolk keep their rooms; the city-watch, King's Landing's gold-cloaked standing patrol, moves through on a rotation the block knows by sound. | scope: first-mention-place | renders-as: inline-appositive | sources: cond-kl-geography-122ac, cond-kl-social-physics-122ac, wren-stitch-maker-flea-bottom-ward.card, cond-kl-social-physics-122ac | licensed-by: cape-fic-reader:cape-fic-doesnt-know-the-hook-as-flea-bottoms-waterfront-margin-or-westerosi-watch-as-institution, worm-canon-pedant:worm-canon-doesnt-know-kl-flea-bottom-internal-geography-or-watch-as-gold-cloaked-standing-patrol, dark-fantasy-reader:dark-fantasy-needs-the-hook-as-place-frame-not-institution
 
 # exposition:7 DELETED (F-003, 2026-05-20 — scene-orient-fire-rule condition (b) violated: loc-state:5 fires at @22, covering the orientation; scene-open-orient must not fire when loc-state covers the anchor; R2 refusal stood but delete was not executed)
 
@@ -34,7 +34,7 @@ voice: pov-frame first-person
 # - the-prohibition | first-mention-anchor: @0 | gloss-id: 1
 # - copper-currency-star-penny | first-mention-anchor: @0 | gloss-id: 2
 # - coll | first-mention-anchor: @4 | gloss-id: 3
-# - the-city-watch | first-mention-anchor: @18 | gloss-id: 5
+# - the-city-watch | first-mention-anchor: @18 | gloss-id: 6 (folded into Hook gloss; F-004 consolidation)
 # - the-hook | first-mention-anchor: @18 | gloss-id: 6
 # - wren | first-mention-anchor: @22 | gloss-id: 8
 

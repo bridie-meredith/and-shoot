@@ -20,10 +20,10 @@
 15 the insects fill the block [narrator:3] [vibes:13] [vibes:14]
 16 the walls cool [sensory:2] [state:4]
 17 the boots strike the cobbles
-18 the city-watch passes the hook [exposition:5] [exposition:6] [loc-state:4] [mem:2] [narrator:4] [vibes:15]
+18 the city-watch passes the hook [exposition:6] [loc-state:4] [mem:2] [narrator:4] [vibes:15]
 19 taylor-hebert-kl-122ac holds the eyes [vibes:16]
 20 coll-net-mender-flea-bottom folds the net [state:5] [state:8] [state:15] [state:16]
-22 wren-stitch-maker-flea-bottom-ward enters the street [exposition:7] [exposition:8] [loc-state:5] [narrator:5] [state:19] [vibes:17]
+22 wren-stitch-maker-flea-bottom-ward enters the street [exposition:8] [loc-state:5] [narrator:5] [state:19] [vibes:17]
 23 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac [state:20] [vibes:18] [wren-stitch-maker-flea-bottom-ward:1]
 24 taylor-hebert-kl-122ac lifts the eyes [vibes:19]
 25 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward [state:17] [taylor-hebert-kl-122ac:1] [vibes:20]
