@@ -2,40 +2,55 @@
 reviewer: worm-canon-pedant
 facet: memory
 cycle: 2
-episode: b01c01
-date: 2026-05-19
-verdict: accept
+episode: b01-c01
+date: 2026-05-20
+verdict: revise
 ---
 
 # Verdict reasoning
 
-Four cycle-1 findings: (1) single-register failure, (2) mem:1 @15 peak-slot violation, (3) mem:2 monument-card gap, (4) target-reference erosion on mem:1's "administrative-observation-apparatus" flattening the PRT-trigger-period classification-violence dimension. All four are addressed.
+The slug rename clears URI-FACETS-CYCLE-1. `monument-override-architecture-prohibition` — mechanism-descriptive, `monument-` prefix, no Earth-Bet proper noun as a slug component. That is the correct form. The cycle-1 callout on the `cond-` prefix is resolved.
 
-Mem:3 @8 adds the Westerosi-monument clamp register. Mem:1 relocates to a flat-low slot. Mem:2's target-reference resolves to a monument card on disk. The monument-administrative-observation-apparatus card for mem:1 covers the full family-of-shape — both axes of the observation apparatus (observer and observed), plus the passive-network-as-surveillance pathway that the @12 trigger uses. Anti-pattern #14 (target-reference erosion) is remediated by the card covering the classification dimension at card depth, with the slug being mechanism-descriptive.
+The NI co-citation failure is not resolved. I will be precise about what changed and what did not.
 
-# Entry-level assessments
+What changed: the defense annotation was rewritten. In cycle-1, the annotation asserted "feel:1 @9 is the spine of this entry" — which redefined "spine" away from its rubric-specific meaning (narrator-interest co-citation) and imported a clause from the peak-bone exception subsection to justify the substitution. That misreading is gone. The cycle-2 annotation correctly quotes the mandatory NI requirement, correctly acknowledges NI is silent at @9, and correctly states the defense relies on rubric authority's downstream ruling. It is an accurate description of the situation.
 
-**[mem:3] @8** — Monument: `monument-conquest-charter-institutional-self-restraint-122ac`. Card on disk, scope confirmed. NI spine: narrator:2 @8 (cite-index: mem:3 co=[narrator:2, state:10]). Scene-A, flat-low, peak-bones none. Description: "the clamp at the seam runs by the architecture of charter-language holding its own administration against use, and what that architecture terminates into is the same kind of record-ending she came in already knowing." Hard-fence check: no Earth-Bet proper nouns (PRT, Wards, Brockton, Cauldron, etc.), no Dance-era identifiers (Aegon, Rhaenyra, Aemond, Dance, Hour of the Wolf), no year-quantification ("forty years and then not" construction is absent; "came in already knowing" replaces counted-interval). Both monument components present in the description: discipline-clamp rhyme ("the architecture of charter-language holding its own administration against use") + foreknowledge-clamp on terminal-record ("what that architecture terminates into is the same kind of record-ending she came in already knowing"). The monument's card-confirmed peak-activation note identifies scene-A @8 (b01c01) as the flagstone-seam trigger-beat. Description matches the trigger-pattern. Monument-trigger: PASS. Displacement-discipline: PASS. Licensing-discipline: PASS. Target-reference resolution: PASS.
+What did not change: NI is still silent at @9. The locked narrator-interest file has entries at @4, @6, @15, @18, @22, and @27. @9 is not in that list. That is the same fact as cycle-1.
 
-**[mem:1] @12** — Monument: `monument-administrative-observation-apparatus-122ac`. Card on disk. Margit-resolved per file header (cycle-2 within-cycle remediation). NI spine: narrator:3 @12 (cite-index: mem:1 co=[narrator:3, vibes:8, vibes:11]). Scene-B, flat-low, peak-bones none — peak-slot violation from cycle-1 remediated. Trigger reframe: block-survey-through-carried-fauna-network rather than patrol-passing-column. Card body: "passive-network-as-surveillance-architecture both light the same monument" (confirmed in within-cycle remediation note citing card family-of-shape recognition clause). The @12 trigger activates the "from having watched" dimension of the apparatus — Taylor running surveillance coverage via network, the block assembling its own read through what she carries, the register of the administrative-observation apparatus recognizing the shape of the coverage. This is licit per the card's observation-axis section covering both "the observed" and "the observer" dimensions. Description: "the block reads itself through what she carries, and the read assembles in the register the architecture once ran at a scale she no longer has." No Earth-Bet proper nouns. "Architecture once ran at a scale she no longer has" is mechanism-descriptive displacement covering the capability at scope without naming the apparatus or the deployment. Anti-pattern #14 remediation: the card now carries the full family-of-shape (including the PRT-trigger-period classification-violence axis) in card-depth, not in the facet metadata — the slug mechanism-describes the family without flattening it. PASS on all axes.
+The cycle-2 defense invents a new mechanism: "pending rubric authority ruling." I checked the rubric for any mention of a pending-ruling resolution path. There is none. The rubric's licensing-discipline section on NI co-citation reads: "Mandatory. Every memory-flag entry must have a narrator-interest fire on the same @<proto-line-id>... A fire on a beat where narrator-interest is silent. Reject or flag back to narrator-interest author for missed-fire repair." The two options are reject or flag-back-for-repair. Both options result in action, not deferred acceptance. The "pending ruling" language in the defense annotation names a preferred resolution path that the rubric does not provide for.
 
-**[mem:2] @23** — Monument: `monument-override-architecture-prohibition-122ac`. Card on disk (cycle-1 demanded margit referral; cycle-2 resolves with card on disk). NI spine: narrator:7 @23. Scene-C, flat-low. Description: "the read runs before the rule catches it; the architecture she came here to refuse arrives on its own legs and is held at the threshold of deployment." Two-phase structure present: "the read runs before the rule catches it" (architecture assembles before permission) + "held at the threshold of deployment" (vow catches). Card body confirms this is the monument's phenomenology: "The architecture reads first; the prohibition catches second." Displacement-discipline: no Earth-Bet proper nouns, no Khepri by name, "architecture" and "threshold of deployment" are mechanism-descriptive. Hard-fence: PASS. ACCEPT. Previously accepted in cycle-1 per monument-trigger and displacement-discipline; now additionally confirmed on target-reference resolution.
+The fixer's F-011 criteria state: "defense annotation explicitly cites rubric NI requirement + acknowledges gap + defers to ruling authority = criteria met." That is a documentation-presence criterion. Criteria-met on documentation is not criteria-met on rubric compliance. The auditor confirmed the annotation is present and parseable — same limitation as cycle-1 F-001. The mechanical scan confirms the documentation exists; the adversarial reading confirms the underlying mandatory requirement remains unmet.
 
-# File-level checks
+Addendum on the defer block. The defer block identifies two resolution paths: (a) delete mem:1 — single-register risk noted, but mem:2 is Westerosi-class so no doubled-register problem is created on the Westerosi side; (b) add NI @9 — band-ceiling breach at 25.9% > 25% cap. The block is accurate on both. On path (a): deleting mem:1 removes the Earth-Bet entry. The rubric's episode-level shape criterion requires at least one Earth-Bet displacement fire AND one Westerosi-monument clamp fire. Deleting mem:1 without a replacement Earth-Bet entry would leave mem:2 @18 as the file's only entry, which is Westerosi-only — a named SHAPE-FAIL. The defer block acknowledges this; the parenthetical "(single-register risk — only one monument fire remains)" confirms awareness. On path (b): the NI band ceiling is a different rubric (narrator-interest rubric, not memory-flags rubric) and a different constraint. Exceeding it requires an exception there, not a substitution here. The two constraints are on different facets and neither grants the other a waiver.
 
-- Doubled-register: 2 Earth-Bet (mem:1 @12, mem:2 @23) + 1 Westerosi (mem:3 @8). Cycle-1 single-register failure addressed. PASS.
-- Per-scene cap: scene-A=mem:3@8 only; scene-B=mem:1@12 only; scene-C=mem:2@23 only. One entry per scene. PASS.
-- NI spine co-citation: mem:1↔narrator:3@12 (CONFIRMED), mem:2↔narrator:7@23 (CONFIRMED), mem:3↔narrator:2@8 (CONFIRMED). All confirmed in cite-index. PASS.
-- Peak-anchor refusal: scene-map shows all three scenes as flat-low, peak-bones arrays empty. All three anchors in eligible quiet-beat zones. PASS.
-- Hard-fence (Earth-Bet proper nouns): locker, Bakuda, Leviathan, Khepri, Brockton, S9, Endbringer, Cauldron, PRT, Wards — none present in any description field. PASS.
-- Hard-fence (Dance-era specifics): Aegon, Rhaenyra, Aemond, Vhagar, Dance, Hour, Doom by name — none present in any description field. PASS.
-- Hard-fence (year-quantification): no "forty years and then not" or similar constructions. PASS.
-- Monument-card resolution: all three target-references resolve to slugs with cards on disk. PASS.
-- Anti-pattern #14 (target-reference erosion): all three target-references use mechanism-descriptive slugs with full card coverage. PASS.
+The monument-trigger for mem:1 @9 remains valid. "@9: taylor-hebert-kl-122ac holds the feet" — the body catching itself before deploying an override-architecture pattern traces to the Gold Morning / Khepri-period override-architecture-prohibition monument family. The trigger is plausible. The description's displacement-cue construction is canon-compliant: "the architecture stays the shape she will not build" — refusal-to-look on the override-capability without naming the apparatus. Hard-fence passes: no locker, no Khepri, no Brockton, no Endbringer, no Cauldron, no PRT, no Wards. The monument-trigger and displacement-discipline axes both pass. The licensing-discipline axis fails on NI co-citation, same as cycle-1.
+
+mem:2 @18 passes. "The patrol's line through the bend is older than the patrol" — no Earth-Bet proper nouns, no Dance-era identifiers by name, mechanism-descriptive displacement cue (institutional coercive geometry persisting through personnel turnover). NI spine confirmed: narrator:4 at @18 in the cite-index. Scene-B, flat-low, no peak-bones. The free-text gloss target-reference (`(westeros: flea-bottom-hook-as-coercive-geometry-monument)`) lacks a margit-resolved slug — that is a soft-path gap, SIGNAL-level under the rubric, not blocking.
+
+Verdict: revise. Slug form cleared. NI co-citation: mandatory requirement, no rubric-recognized pending-ruling carve-out, still absent.
+
+---
+
+# Entry-level callouts
+
+**[memory:mem:1] @9 — "the feet hold and the architecture stays the shape she will not build"**
+slug form: CLEARED — `monument-override-architecture-prohibition` passes URI-FACETS-CYCLE-1; mechanism-descriptive, `monument-` prefix, no Earth-Bet proper noun as slug component
+NI co-citation: PERSISTS — narrator-interest silent at @9 in locked file; cycle-2 defense annotation correctly identifies the gap (improvement over cycle-1 misreading) but does not supply the missing fire; "preferred resolution: rubric authority ruling" is not a rubric-recognized resolution path; the two rubric-offered options are reject or flag-back-for-repair; neither is "accept pending ruling"; REJECT signature "missing narrator-interest co-citation" still triggered; monument-trigger axis PASSES (Khepri-period override-architecture-prohibition family plausible at @9); displacement-discipline axis PASSES (hard-fence clean, refusal-to-look construction valid); licensing-discipline axis FAILS on NI co-citation count
+
+**[memory:mem:2] @18 — "the patrol's line through the bend is older than the patrol"**
+accept: NI spine confirmed (narrator:4 @18, cite-index verified); scene-B flat-low, no peak-bones; displacement-cue construction passes hard-fence on both Earth-Bet proper noun check and Dance-era identifier check; Westerosi-monument clamp (institutional coercive geometry as geological prior) identifiable from description; free-text gloss target-reference is soft-path SIGNAL, structurally clear, advisory only; unchanged from cycle-1 accept
+
+**[file-level] doubled-register shape:**
+flagged: mem:1 is the file's sole Earth-Bet entry; mem:2 is the Westerosi entry; if mem:1 is culled without replacement, the file is single-register Westerosi-only — named SHAPE-FAIL per rubric §Curve-shape rubric / Episode-level shape; defer block correctly identifies this risk; rubric authority ruling required before the path forward on mem:1 is clear
+
+---
 
 # Convergence trace
 
-- [cycle-1 single-register failure]: mem:3 @8 Westerosi-monument ADD answers the demand. Monument card authored by margit and on disk. Single-register shape failure remediated.
-- [cycle-1 mem:1 @15 peak-slot violation]: relocation to @12 confirmed; flat-low zone confirmed via scene-map; NI spine at @12 confirmed via cite-index. Peak-slot violation remediated.
-- [cycle-1 mem:2 monument-card gap]: `monument-override-architecture-prohibition-122ac` card on disk; target-reference in facet file now resolves to card slug. Gap closed.
-- [cycle-1 target-reference erosion on mem:1]: `monument-administrative-observation-apparatus-122ac` card covers the full observation-apparatus family including classification-violence axis at card depth; mechanism-descriptive slug does not flatten the monument content. Anti-pattern #14 remediated.
+**mem:1 — slug form:** Fixer F-011 renamed the target-reference from `cond-override-architecture-residue-122ac` to `monument-override-architecture-prohibition`. Cycle-1 callout on `cond-` prefix form RESOLVED. URI-FACETS-CYCLE-1 passes on this field.
+
+**mem:1 — NI co-citation:** The cycle-2 defense annotation is now accurate — it no longer misreads the rubric or imports a clause from a different subsection. The annotation correctly describes the mandatory requirement and correctly acknowledges the gap. Fixer F-011 criteria mark documentation-presence as criteria-met. Audience adversarial reading distinguishes documentation-of-gap from closure-of-gap. The mandatory requirement is unmet; accurate documentation of an unmet mandatory requirement does not satisfy the requirement. No auditor cycle-2 finding names this distinction. Audience raises it independently as the continuing licensing-discipline failure.
+
+**mem:1 — pending-ruling mechanism:** The cycle-2 defense introduces "pending rubric authority ruling" as a resolution path. The rubric does not define this path. The rubric's offered paths for a NI-silent beat are: reject the memory-flag entry, or flag back to narrator-interest author for missed-fire repair. Neither path is deferred acceptance. The pending-ruling mechanism is an authoring invention; audience declines to accept it as a valid rubric resolution path until the rubric authority grants it.
+
+**doubled-register risk:** No auditor finding. Audience carry-forward from cycle-1. If mem:1 is culled, the rubric's episode-level shape criterion (Earth-Bet AND Westerosi both required) triggers a SHAPE-FAIL. Defer block documents the risk accurately. No resolution until mem:1's NI situation is settled.
