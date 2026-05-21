@@ -77,7 +77,7 @@ source: taylor-hebert-kl-122ac
 ---
 11 @5 actor:taylor-hebert-kl-122ac.capability-deployment-history: dormant-never-deployed-in-kl -> deployed-defensive-flea-bottom
 12 @15 actor:taylor-hebert-kl-122ac.social-tether-wren: peripheral-permitted-attachment -> crystallized-observer-bond
-13 @26 actor:taylor-hebert-kl-122ac.knowledge.flea-bottom-social-physics: observational-sweep-pattern -> categorical-structural
+13 @25 actor:taylor-hebert-kl-122ac.knowledge.flea-bottom-social-physics: observational-sweep-pattern -> categorical-structural
 
 # source: wren-stitch-maker-flea-bottom-ward
 facet: state-updates
