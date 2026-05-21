@@ -22,6 +22,36 @@ scope: line
 change: (1) wren sidecar Draft B facet-licenses updated from placeholder to `[vibes:13 @19]` with R2.6 resolution note; (2) taylor sidecar Entry 1 facet-licenses updated from placeholder to `[vibes:14 @20]`; (3) taylor sidecar Entry 2 facet-licenses updated from placeholder to `[vibes:14 @20]`; keyword in vibes:14 was changed in item-1 so citation still resolves correctly (same ID, same anchor)
 criteria met: yes — all three chosen-mark entries now carry concrete `<facet>:<id>` citations; no utterance content changed
 
+## SESSION-END — 2026-05-21T15:40:00Z — facets-b01c02-cycle2-remediation
+findings-applied: 10 (items 1-4 direct; items 5-8+8b direct edits; item 9 monument cards authored)
+findings-skipped: 0
+exit: CLEAN
+cite-index-rebuild-needed: YES (sensory:2 moved @22→@23; cite-index manually updated but orchestrator should confirm with build_cite_index.py if available)
+
+## item-9 — RESOLVED — 2026-05-21T15:35:00Z
+fault: memory mem:2 @25 peak-bone exception depends on `monument-conquest-charter-language` being a real behavior-pack family; worm-canon-pedant blocks — exception justification rests on unanchored card; `monument-cost-borne-by-the-unconsenting` (mem:1 target-reference) also unconfirmed; both auditor-SIGNAL from R2.2 shard
+scope: card (authored both monument cards)
+change: authored two behavior-class project-scoped cards in the warehouse (margit confirm-or-author routing):
+  (1) active-project/warehouse/monument-conquest-charter-language.md — class: behavior, scope: project, world: planetos; body: monument family for Westerosi-institutional displacement-cue (conquest edicts / charter-terms / struck decisions that outlive their authors); trigger definition; displacement-cue form rules; rubric positioning (Westerosi-clamp, settle-tail preferred, peak-bone exception path defined); calibration anchor to b01c02 mem:2 @25; interaction notes.
+  (2) active-project/warehouse/monument-cost-borne-by-the-unconsenting.md — class: behavior, scope: project, world: planetos; body: monument family for Earth-Bet displacement on unconsenting-cost-to-bystanders (persons bearing cost of Taylor's decisions without having consented to be inside the radius); trigger definition; displacement-cue form rules; rubric positioning (Earth-Bet displacement, quiet-beat preferred, peak-bone default-forbidden); calibration anchor to b01c02 mem:1 @8; interaction notes including social-isolation / peer-exposure pattern adjacency.
+criteria met: yes — both monument slugs now resolve to on-disk behavior-class cards; mem:2 peak-bone exception is anchored (conquest-charter monument is a confirmed behavior-pack family with trigger definition matching "a tongue that outlived the hand that set it"); mem:1 anchor is confirmed advisory-resolved; worm-canon-pedant's blocking condition (unanchored monument card) addressed; no re-anchor or cull of mem:2 needed
+
+## item-8b — RESOLVED — 2026-05-21T15:28:00Z
+fault: sensory:1 @7 old-state `watch-press-alley-ambient` unanchored (no loc-state conditions note establishes the ambient baseline before @7); sensory:2 @22 (a) action-verb self-charge — proto-line "lights the lamp" IS the light-onset; (b) old-state `unlit-lodging-interior` unanchored; INTERACTION: cannot cut sensory:2 without breaking ≥2-modality floor (sensory:1 is sound; sensory:2 is light); coordinate with item-7 loc-state fix
+scope: line (two sensory entry revisions + two loc-state conditions-note additions + proto-lines move + cite-index update)
+change: (A3 upstream-first sequence applied):
+  STEP 1 (upstream — loc-state conditions backfills):
+    (1) loc-state:2 @4 extended with conditions note: watch-press-alley-ambient baseline documented as ordinary morning street noise and shoe-leather on cobbles before column arrival — anchor for sensory:1 old-state.
+    (2) loc-state:11 @22 extended with conditions note: unlit-lodging-interior baseline documented as lodging interior unlit at night scene-open (time-skip @21 blank) — anchor for sensory:2 old-state at @23.
+  STEP 2 (sensory entries):
+    (3) sensory:1 @7: old-state token unchanged (watch-press-alley-ambient); added old-state-source comment referencing loc-state:2 @4 conditions note as the explicit baseline anchor.
+    (4) sensory:2 relocated from @22 to @23: self-charge resolved (no longer fires on the lamp-lighting verb; fires at @23 "opens the ledger" — first bone worked under the stable lit state); old-state-source comment added referencing loc-state:11 @22 conditions note.
+  STEP 3 (proto-lines + cite-index):
+    (5) proto-lines b01-c02.md: [sensory:2] moved from @22 line to @23 line.
+    (6) _cite-index.md updated: sensory:2 anchor changed @22→@23; loc-state:11 co-citations updated (sensory:2 removed); state:3 and state:4 co-citations updated (sensory:2 removed); state:5 and exposition:5 co-citations updated (sensory:2 added at @23).
+criteria met: yes — (a) self-charge resolved: sensory:2 fires at @23 (ledger opens under lamp), not at @22 (lamp-lighting verb); (b) both old-states anchored to explicit loc-state conditions notes; (c) ≥2-modality floor maintained: sound (@7) + light (@23) = 2 modalities; sensory:1 @7 anchor unchanged; sensory:2 anchor moved @22→@23 (cite-index reflects)
+proto-line-citation-moved: YES — [sensory:2] moved from proto-line @22 to @23; cite-index updated; orchestrator should note this move for any downstream cite-index rebuild
+
 ## item-8 — RESOLVED — 2026-05-21T15:22:00Z
 fault: state-updates — four sub-items: (10) hard-fence comment unresolved + "substrate-level"/"registered-as-anomaly" cape vocabulary; (12) `crystallized-observer-bond` overclaims bond-formation speed; (13) `categorical-structural` overclaims from single sweep + one accounting (fixer adjudicates: 2-of-3 revise, 1-of-3 defend via parallel-processing — revise required per 3-of-3 ACCEPT threshold); (15) `attachment-crystallized-deliberate-observer` strips Westerosi uncanny/dread register
 scope: line (four separate field-value edits)

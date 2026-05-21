@@ -33,7 +33,7 @@ _(no entries)_
   loc-state:8 @14 back=Y
   loc-state:9 @15 back=Y co=[feel:2, narrator:4, state:12, state:15, vibes:6, vibes:7]
   loc-state:10 @17 back=Y co=[vibes:9]
-  loc-state:11 @22 back=Y co=[sensory:2, state:3, state:4]
+  loc-state:11 @22 back=Y co=[state:3, state:4]
 
 ### narrator (6 entries)
   narrator:1 @4 back=Y co=[exposition:4, loc-state:2]
@@ -45,14 +45,14 @@ _(no entries)_
 
 ### sensory (2 entries)
   sensory:1 @7 back=Y co=[loc-state:5]
-  sensory:2 @22 back=Y co=[loc-state:11, state:3, state:4]
+  sensory:2 @23 back=Y co=[exposition:5, state:5]
 
 ### state (15 entries)
   state:1 @1 back=Y
   state:2 @5 back=Y co=[loc-state:3, narrator:2, state:11, vibes:1, vibes:2, vibes:3, vibes:4]
-  state:3 @22 back=Y co=[loc-state:11, sensory:2, state:4]
-  state:4 @22 back=Y co=[loc-state:11, sensory:2, state:3]
-  state:5 @23 back=Y co=[exposition:5]
+  state:3 @22 back=Y co=[loc-state:11, state:4]
+  state:4 @22 back=Y co=[loc-state:11, state:3]
+  state:5 @23 back=Y co=[exposition:5, sensory:2]
   state:6 @25 back=Y co=[mem:2, narrator:5, state:13, vibes:11]
   state:7 @26 back=Y
   state:8 @27 back=Y
@@ -94,7 +94,7 @@ _(no entries)_
 ### exposition (3 entries)
   exposition:1 @0 back=N
   exposition:4 @4 back=Y co=[loc-state:2, narrator:1]
-  exposition:5 @23 back=Y co=[state:5]
+  exposition:5 @23 back=Y co=[sensory:2, state:5]
 
 ## Pile-ups (>4 facets co-located on one protoline)
 

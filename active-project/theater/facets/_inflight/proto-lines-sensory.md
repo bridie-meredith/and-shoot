@@ -27,8 +27,8 @@ aggregate_range: 1-29
 18 taylor-hebert-kl-122ac threads the needle
 19 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
 20 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward
-22 taylor-hebert-kl-122ac lights the lamp [sensory:2]
-23 taylor-hebert-kl-122ac opens the ledger
+22 taylor-hebert-kl-122ac lights the lamp
+23 taylor-hebert-kl-122ac opens the ledger [sensory:2]
 24 taylor-hebert-kl-122ac writes the line
 25 taylor-hebert-kl-122ac strikes the line
 26 taylor-hebert-kl-122ac underlines the entry
