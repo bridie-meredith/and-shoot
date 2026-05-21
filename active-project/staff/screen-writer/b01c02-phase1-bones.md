@@ -5,12 +5,10 @@
 # density_target: 0.7-0.8 | bones target: 7-12 | stakes_axis: capability
 
 bones:
-  - slug: b01c02s01n01
-    svo: the boots strike the cobbles
-    shape: moving
-    axis_moves:
-      - {axis: knowledge, direction: up, magnitude: 1}
-    notes: watch-sweep approach registered through insect-heat before street-visible; first ward-threat reading; sweep pattern begins entering Taylor's picture.
+  # b01c02s01n01 deleted at Phase 4 trim (2-of-3 audience vote: dark-fantasy-reader + worm-canon-pedant).
+  # Reason: opens on generic-medieval sensory register (ambient sound) before insect-feed; inverts Taylor's
+  # established sensory priority. n02 already carries sweep-approach information through the canonical primary sensor.
+  # Per protocol: do not renumber; slug-gap expected.
 
   - slug: b01c02s01n02
     svo: the insects fill the lane
@@ -196,3 +194,29 @@ bones:
     shape: chatter
     cost_ledger_anchor: cl-unpriced-cost-bearer
     notes: ledger closed — accounting scene ends; the physical closure anchors cl-unpriced-cost-bearer as the surface seed moment (two witnesses unpriced; Wren's attachment not entered as a variable; incompleteness acknowledged as methodological, not as error); the chatter bone marks the scene's physical close.
+
+## phase-3 additions
+
+### insert_after: b01c02s01n04 (becomes new s01n04b → Phase 7 flat_id)
+  - slug: b01c02s01n11
+    svo: taylor-hebert-kl-122ac faces the alley-mouth
+    shape: moving
+    axis_moves:
+      - {axis: capability, direction: up, magnitude: 1}
+    notes: threshold-crossing bone — the direction-of-attention commits capability from passive insect-sense to active routing; the body-turn toward the alley-mouth is the physical act that makes n05 a deployed consequence rather than an ellipsis; per dramatist brief: capability crosses from sense to act at the moment of deliberate orientation.
+
+### insert_after: b01c02s02n02
+  - slug: b01c02s02n09
+    svo: taylor-hebert-kl-122ac faces the alley-mouth
+    shape: moving
+    axis_moves:
+      - {axis: social-tether, direction: up, magnitude: 1}
+    cost_ledger_anchor: cl-social-tether-build
+    notes: attentional-shift anchor — Taylor's re-orientation from Coll-cover to the alley-mouth establishes Wren's position as the observed locus before n03 crystallizes her as observer; the physical-act anchor prevents the magnitude-2 social-tether move at n03 from arriving without a prior orientation beat; per dramatist brief.
+
+### insert_after: b01c02s03n05
+  - slug: b01c02s03n08
+    svo: taylor-hebert-kl-122ac sets the pen
+    shape: chatter
+    cost_ledger_anchor: cl-unpriced-cost-bearer
+    notes: pressure-arrives bone — pen placed at page-edge while the ledger gap registers; the unpriced residue (witnesses unpriced, Wren-as-methodological-decision) surfaces as a specific recognition before the hand-held disciplines against it; per dramatist brief: the dual-held discipline at n06 resists an impulse that must first be enacted as a physical-act anchor.
