@@ -14,15 +14,17 @@
    - `scene_conflict.stakes_axis` may resolve to either `axes_in_motion[]` or `axes_held[]`; `/and-write` Phase 6 bone-gate validates against the union.
    - `design/substance/delta-targets.md` updated with the three-bone-shape table (held / chatter / malformed).
 
-2. **Pinned per-actor positions on every signature axis.** `series.substance.actor_baselines[]` block added to `active-project/staff/showrunner/memory.md`:
-   - **taylor-hebert-kl-122ac:** 9 entries, lifted-from-state-axes (the protagonist-perspective verbatim).
-   - **otto-hightower:** 9 entries, lifted-from-state-axes (antagonist-perspective archetype).
-   - **aemond-targaryen-122ac:** 2 entries, inferred-from-role-card (capability + position; walk-on shape).
-   - **wren-stitch-maker-flea-bottom-ward:** 5 entries, inferred-from-role-card + scene-pinned-b01c01 (cost-bearer arc).
-   - **sera-hightower-kl-122ac:** 2 entries, inferred-from-role-card (protect-target; preserved-by-architecture).
-   - **gylda-saltwater-flea-bottom:** 3 entries, inferred-from-role-card (witness-mirror; names the pattern once at d09-d10).
-   - **coll-net-mender-flea-bottom:** 4 entries, scene-pinned-b01c01 (static fixture; Flea Bottom social-physics baseline).
-   - **corvan-archmaester-retrospective-coda:** 2 entries, frame-coda (no in-book Δ).
+2. **Pinned per-actor positions on every signature axis (dense 8 × 9 = 72-cell matrix).** `series.substance.actor_baselines[]` block added to `active-project/staff/showrunner/memory.md`. Each cell carries an explicit `applicability` field: `moves` (start_rank ≠ end_rank), `static` (start_rank = end_rank — examined and pinned, not skipped), or `not-applicable` (deliberate exclusion with rationale). Absent entries are schema violations under the new shape — no judgment-by-omission. Final distribution:
+   - **taylor-hebert-kl-122ac:** 9 moves (lifted-from-state-axes; protagonist-perspective verbatim).
+   - **otto-hightower:** 9 moves (lifted-from-state-axes; Otto IS the antagonist-perspective archetype).
+   - **aemond-targaryen-122ac:** 4 static + 5 not-applicable (walk-on; appearances DEPLOY pre-existing capability at structural crisis points).
+   - **wren-stitch-maker-flea-bottom-ward:** 2 moves + 3 static + 4 not-applicable (cost-bearer arc on social-tether + relational-anchor-status).
+   - **sera-hightower-kl-122ac:** 4 static + 5 not-applicable (protect-target; positions preserved by architecture).
+   - **gylda-saltwater-flea-bottom:** 1 moves + 3 static + 5 not-applicable (witness-mirror; knowledge spike at d09-d10 only).
+   - **coll-net-mender-flea-bottom:** 4 static + 5 not-applicable (Flea Bottom social-physics baseline; non-interpretive substrate).
+   - **corvan-archmaester-retrospective-coda:** 2 static + 7 not-applicable (frame-coda voice c.160 AC; in-book Δ exempt).
+
+   Total: 21 moves + 20 static + 31 not-applicable = 72 cells.
 
 3. **Active-project memory converted.** All `direction: null` and `direction: ~` and `magnitude: 0` entries in `active-project/staff/showrunner/memory.md` rewritten under the new split:
    - Chunk-level: book b01 position-axis split into rise + fall phase entries; chapter b01c01 + scenes s01/s02/s03 capability-null entries moved to `axes_held`; chapter b01c18 (Corvan coda) moved to `axes_held` with `chapter_class: frame-coda` (exempt from bone-gate).
@@ -60,10 +62,16 @@ The parent plan's pre-flight checklist had eight items. Two are now done. The re
 
 ### NEAR-TERM — should land within next 2-3 chapters
 
-**F4. Validate the rest of the cast's actor_baselines against book chunks 02–17.** [P1 · S effort]
-- Otto/Aemond/Wren/Sera/Gylda/Coll/Corvan baselines are seeded from role cards + b01c01 scene-pinning. The book-level chunks for c02-c17 may further pin or contradict these. At `/and-substance chapter` Phase 3 for each subsequent chapter, screen-writer should consult `actor_baselines[]` and emit `scene-pinned-<chapter-slug>` updates where chapter scenes resolve previously-inferred entries.
-- Wren's `social-tether: 5→1` arc passes through d04 (load-bearing) and d10 (exposed) — both pin points should land as `scene-pinned-b01c08` (where Wren becomes coverage-load-bearing) and `scene-pinned-b01c11` (where the network gets exposed).
-- Aemond's two entries (capability + position) need at least one additional entry on position-of-faction-violence or social-tether when his walk-on appearances hit; add at scene-pinning time.
+**F4. Validate the 72-cell actor_baselines matrix as chapters resolve cells.** [P1 · S effort per chapter]
+- The dense matrix is seeded; the work going forward is **promotion** of cells, not adding new ones. At `/and-substance chapter` Phase 3 for each subsequent chapter, screen-writer should:
+  - Re-examine `static` cells touched by the chapter's scenes — confirm the position is still flat, or promote to `moves` if the chapter actually arcs it.
+  - Re-examine `not-applicable` cells if the chapter brings that actor into a previously-untouched axis — promote to `moves` or `static` with `source: scene-pinned-<chapter-slug>`.
+  - Update `source` to `scene-pinned-<chapter-slug>` on any cell the chapter newly resolves.
+- Specific high-likelihood promotions to watch for across c02-c17:
+  - Wren `social-tether` is already `moves 5→1` — confirm d04 (load-bearing) + d10 (exposed) waypoints when those chapters author.
+  - Aemond's currently `not-applicable` cells on knowledge, agency may need promotion if a walk-on chapter actually shifts those — the role-card commits "each appearance must shift a named plot axis," so each walk-on should produce at least one promotion.
+  - Gylda's currently `not-applicable` political-register-toward-elite may promote at d09-d10 if the naming-the-pattern moment positions her against the elite layer.
+  - Corvan b01c18 INTERLUDE chapter is `chapter_class: frame-coda` and exempt from bone-gate — his cells should stay `static` or `not-applicable` (no promotions expected).
 
 **F5. Inspect b01c02-c17 chunk-level `substance_delta` blocks** for any remaining `direction: ~` / `direction: null` entries. [P1 · XS effort]
 - A grep over the full memory file found none post-conversion, but the b01-level chunks (lines ~800–1530) weren't all individually rewritten — only the rise-and-fall position-axis entry was touched. Run a clean re-scan after `/and-substance book b01` re-fires (or as a one-shot check) and convert any remaining cases.
@@ -91,6 +99,6 @@ F4 and F5 are async — they can land across c02-c04 as the per-chapter scene-pi
 
 - `schemas/showrunner-memory.schema.md` — added `state_axes[].notes`, `actor_baselines[]` block, `axes_in_motion[]` explicit shape at all chunk levels, `axes_held[]` at all levels including bone, standardized `direction: up|down`, added field-notes paragraphs.
 - `design/substance/delta-targets.md` — `axis_moves` direction enum updated to `up|down`; new "three bone shapes" section (held / chatter / malformed).
-- `active-project/staff/showrunner/memory.md` — converted all chunk-level + bone-level null/zero entries; added `series.substance.actor_baselines[]` (32 entries across 8 cast members); cleaned `substance_delta_measured.axes_moved` for b01c01.
+- `active-project/staff/showrunner/memory.md` — converted all chunk-level + bone-level null/zero entries; added `series.substance.actor_baselines[]` (dense 8×9=72-cell matrix; every actor × every axis with explicit applicability marker); cleaned `substance_delta_measured.axes_moved` for b01c01.
 
 No command bodies were edited in this session — F1 captures that work.

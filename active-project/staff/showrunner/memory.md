@@ -341,91 +341,154 @@ series:
         class: plot
 
     actor_baselines:
-      # Per-actor positional grid (added 2026-05-21). state_axes above pins per-perspective aggregate positions
-      # (protagonist / antagonist / world). actor_baselines disambiguates within a perspective — two
-      # antagonist-perspective actors with very different arcs, supporting-perspective actors who do not
-      # share a single arc, etc. Sparse by design — an actor only has entries on axes where their
-      # position is load-bearing.
+      # Per-actor positional grid (added 2026-05-21; densified 2026-05-21 pass-2 for systematic coverage).
+      # DENSE MATRIX: every cast_roster actor × every state_axes axis. 8 actors × 9 axes = 72 cells.
+      # No omissions — `applicability: not-applicable` makes the deliberate exclusion explicit at the cell.
+      #
+      # state_axes above pins per-perspective aggregate positions (protagonist / antagonist / world).
+      # actor_baselines disambiguates within a perspective — two antagonist-perspective actors with very
+      # different arcs, supporting-perspective actors who do not share a single arc, etc.
+      #
+      # `applicability` values:
+      #   moves           — start_rank ≠ end_rank; actor's position arcs across the book
+      #   static          — start_rank = end_rank; actor's position is deliberately pinned (examined, not skipped)
+      #   not-applicable  — actor does not participate in this axis's machinery; rationale REQUIRED in notes
       #
       # `source` lineage values:
       #   lifted-from-state-axes       — verbatim from the perspective-aggregate above
       #   inferred-from-role-card      — built from cast-roster role descriptions + book chunk
       #   scene-pinned-<chapter-slug>  — pinned when a chapter's scenes resolved the actor's position
       #
-      # POPULATION STATUS:
-      #   taylor-hebert-kl-122ac      — full (9 axes, lifted from protagonist-perspective)
-      #   otto-hightower              — full (lifted from antagonist-perspective; Otto is the antagonist-perspective archetype)
-      #   aemond-targaryen-122ac      — sparse (walk-on at structural crisis points; capability + position only)
-      #   wren-stitch-maker-flea-bottom-ward — partial (cost-bearer arc; relational-anchor + social-tether + position + capability + knowledge)
-      #   sera-hightower-kl-122ac     — partial (protect-target arc; position + social-tether)
-      #   gylda-saltwater-flea-bottom — partial (witness-mirror; knowledge at d09-d10 only)
-      #   coll-net-mender-flea-bottom — partial (static fixture; flat baselines on participation axes)
-      #   corvan-archmaester-retrospective-coda — frame-coda (c.160 AC archmaester; in-book Δ exempt)
+      # COVERAGE TABLE (axis × actor; m=moves, s=static, x=not-applicable):
+      #                        mf  cap pos st  ras mls pre kn  ag
+      #   taylor               m   m   m   m   m   m   m   m   m       (9 moves — protagonist; lifted)
+      #   otto                 m   m   m   m   m   m   m   m   m       (9 moves — antagonist primary; lifted)
+      #   aemond               x   s   s   s   x   x   x   x   s       (walk-on; 4 static, 5 n/a)
+      #   wren                 x   s   s   m   m   x   x   s   x       (cost-bearer; 2 moves, 3 static, 4 n/a)
+      #   sera                 x   s   s   s   x   x   x   x   s       (protect-target; 4 static, 5 n/a)
+      #   gylda                x   s   s   s   x   x   x   m   x       (witness-mirror; 1 moves, 3 static, 5 n/a)
+      #   coll                 x   s   s   s   x   x   x   s   x       (fixture; 4 static, 5 n/a)
+      #   corvan               x   x   s   x   x   x   x   s   x       (frame-coda; 2 static, 7 n/a)
+      #   ---
+      #   total cells filled: 8 × 9 = 72; moves 21, static 20, not-applicable 31.
 
-      # --- taylor-hebert-kl-122ac (protagonist) — lifted-from-state-axes ---
-      - { actor: taylor-hebert-kl-122ac, axis: moral-framework,              start_rank: 3, end_rank: 1, source: lifted-from-state-axes, notes: "3→1; d03 first-exception → d07 systematic → d12 irrevocable" }
-      - { actor: taylor-hebert-kl-122ac, axis: capability,                   start_rank: 3, end_rank: 7, source: lifted-from-state-axes, notes: "3→7; dormant by choice → Khepri-rhyming-surveillance-architecture; suppressed-baseline at b01c01" }
-      - { actor: taylor-hebert-kl-122ac, axis: position,                     start_rank: 1, end_rank: 1, source: lifted-from-state-axes, notes: "1→5→1 net=0; visibility-phase (d01–d09) → entrapment-phase (d10–d14)" }
-      - { actor: taylor-hebert-kl-122ac, axis: social-tether,                start_rank: 2, end_rank: 1, source: lifted-from-state-axes, notes: "2→1; embedded → load-bearing → exposed → severed at d14 (Wren death + Otto channel dissolved)" }
-      - { actor: taylor-hebert-kl-122ac, axis: relational-anchor-status,     start_rank: 3, end_rank: 1, source: lifted-from-state-axes, notes: "3→1; the un-priced relationship's position to the ledger; cl-unpriced-cost-bearer + cl-protection-buys-consolidation each -1" }
-      - { actor: taylor-hebert-kl-122ac, axis: moral-legibility-to-self,     start_rank: 7, end_rank: 4, source: lifted-from-state-axes, notes: "7→4; atoning-and-aware → recognition-too-late; inverted emotional rubric — starts high" }
-      - { actor: taylor-hebert-kl-122ac, axis: political-register-toward-elite, start_rank: 5, end_rank: 9, source: lifted-from-state-axes, notes: "5→9; resentment → contempt-without-refusal; rising IS the cost" }
-      - { actor: taylor-hebert-kl-122ac, axis: knowledge,                    start_rank: 3, end_rank: 8, source: lifted-from-state-axes, notes: "3→8; immediate-block → more complete picture than most Small Council members" }
-      - { actor: taylor-hebert-kl-122ac, axis: agency,                       start_rank: 5, end_rank: 1, source: lifted-from-state-axes, notes: "5→1; self-directed → locked into no-exit then expelled; steepest single loss-arc" }
+      # ============================================================================================
+      # taylor-hebert-kl-122ac (protagonist) — 9 moves, lifted-from-state-axes
+      # ============================================================================================
+      - { actor: taylor-hebert-kl-122ac, axis: moral-framework,                  applicability: moves,  start_rank: 3,    end_rank: 1,    source: lifted-from-state-axes, notes: "3→1; d03 first-exception → d07 systematic → d12 irrevocable" }
+      - { actor: taylor-hebert-kl-122ac, axis: capability,                       applicability: moves,  start_rank: 3,    end_rank: 7,    source: lifted-from-state-axes, notes: "3→7; dormant by choice → Khepri-rhyming-surveillance-architecture; suppressed-baseline at b01c01" }
+      - { actor: taylor-hebert-kl-122ac, axis: position,                         applicability: moves,  start_rank: 1,    end_rank: 1,    source: lifted-from-state-axes, notes: "1→5→1 net=0; visibility-phase (d01–d09) → entrapment-phase (d10–d14); start_rank=end_rank but applicability=moves because intra-book trajectory is two-phase" }
+      - { actor: taylor-hebert-kl-122ac, axis: social-tether,                    applicability: moves,  start_rank: 2,    end_rank: 1,    source: lifted-from-state-axes, notes: "2→1; embedded → load-bearing → exposed → severed at d14 (Wren death + Otto channel dissolved)" }
+      - { actor: taylor-hebert-kl-122ac, axis: relational-anchor-status,         applicability: moves,  start_rank: 3,    end_rank: 1,    source: lifted-from-state-axes, notes: "3→1; the un-priced relationship's position to the ledger; cl-unpriced-cost-bearer + cl-protection-buys-consolidation each -1" }
+      - { actor: taylor-hebert-kl-122ac, axis: moral-legibility-to-self,         applicability: moves,  start_rank: 7,    end_rank: 4,    source: lifted-from-state-axes, notes: "7→4; atoning-and-aware → recognition-too-late; inverted emotional rubric — starts high" }
+      - { actor: taylor-hebert-kl-122ac, axis: political-register-toward-elite,  applicability: moves,  start_rank: 5,    end_rank: 9,    source: lifted-from-state-axes, notes: "5→9; resentment → contempt-without-refusal; rising IS the cost" }
+      - { actor: taylor-hebert-kl-122ac, axis: knowledge,                        applicability: moves,  start_rank: 3,    end_rank: 8,    source: lifted-from-state-axes, notes: "3→8; immediate-block → more complete picture than most Small Council members" }
+      - { actor: taylor-hebert-kl-122ac, axis: agency,                           applicability: moves,  start_rank: 5,    end_rank: 1,    source: lifted-from-state-axes, notes: "5→1; self-directed → locked into no-exit then expelled; steepest single loss-arc" }
 
-      # --- otto-hightower (antagonist; primary; intelligence architect) — lifted-from-state-axes ---
-      - { actor: otto-hightower, axis: moral-framework,              start_rank: 7, end_rank: 8, source: lifted-from-state-axes, notes: "factional moral system intact and strengthening; Green-faction's working ethics; Otto IS the antagonist-perspective archetype" }
-      - { actor: otto-hightower, axis: capability,                   start_rank: 5, end_rank: 8, source: lifted-from-state-axes, notes: "5→8; intelligence apparatus reach: court informants → full-spectrum coverage from Flea Bottom to Holdfast (with Taylor's network as ground layer)" }
-      - { actor: otto-hightower, axis: position,                     start_rank: 6, end_rank: 8, source: lifted-from-state-axes, notes: "6→8; advisory-from-outside → Hand-in-fact; factional standing consolidates" }
-      - { actor: otto-hightower, axis: social-tether,                start_rank: 7, end_rank: 9, source: lifted-from-state-axes, notes: "7→9; single-layer faction → cross-layer factional dominance" }
-      - { actor: otto-hightower, axis: relational-anchor-status,     start_rank: 5, end_rank: 6, source: lifted-from-state-axes, notes: "5→6; instrumentalized relational anchors; minor strengthening as inner-circle attachment + utility deepens" }
-      - { actor: otto-hightower, axis: moral-legibility-to-self,     start_rank: 6, end_rank: 7, source: lifted-from-state-axes, notes: "6→7; instrumental self-reading → fully self-confirming" }
-      - { actor: otto-hightower, axis: political-register-toward-elite, start_rank: 7, end_rank: 8, source: lifted-from-state-axes, notes: "7→8; structurally reinforced dynastic prerogative" }
-      - { actor: otto-hightower, axis: knowledge,                    start_rank: 7, end_rank: 9, source: lifted-from-state-axes, notes: "7→9; experienced court-layer reach → complete KL intelligence picture (via Taylor's coverage layer)" }
-      - { actor: otto-hightower, axis: agency,                       start_rank: 7, end_rank: 9, source: lifted-from-state-axes, notes: "7→9; constrained-but-directing → structural maximum over dynastic outcomes" }
+      # ============================================================================================
+      # otto-hightower (antagonist primary; intelligence architect) — 9 moves, lifted-from-state-axes
+      # Otto is the antagonist-perspective archetype; perspective-aggregate fits him exactly.
+      # ============================================================================================
+      - { actor: otto-hightower, axis: moral-framework,                  applicability: moves,  start_rank: 7,    end_rank: 8,    source: lifted-from-state-axes, notes: "7→8; factional moral system intact and strengthening; Green-faction's working ethics; Otto IS the antagonist-perspective archetype" }
+      - { actor: otto-hightower, axis: capability,                       applicability: moves,  start_rank: 5,    end_rank: 8,    source: lifted-from-state-axes, notes: "5→8; intelligence apparatus reach: court informants → full-spectrum coverage from Flea Bottom to Holdfast (with Taylor's network as ground layer)" }
+      - { actor: otto-hightower, axis: position,                         applicability: moves,  start_rank: 6,    end_rank: 8,    source: lifted-from-state-axes, notes: "6→8; advisory-from-outside → Hand-in-fact; factional standing consolidates" }
+      - { actor: otto-hightower, axis: social-tether,                    applicability: moves,  start_rank: 7,    end_rank: 9,    source: lifted-from-state-axes, notes: "7→9; single-layer faction → cross-layer factional dominance" }
+      - { actor: otto-hightower, axis: relational-anchor-status,         applicability: moves,  start_rank: 5,    end_rank: 6,    source: lifted-from-state-axes, notes: "5→6; instrumentalized relational anchors; minor strengthening as inner-circle attachment + utility deepens" }
+      - { actor: otto-hightower, axis: moral-legibility-to-self,         applicability: moves,  start_rank: 6,    end_rank: 7,    source: lifted-from-state-axes, notes: "6→7; instrumental self-reading → fully self-confirming" }
+      - { actor: otto-hightower, axis: political-register-toward-elite,  applicability: moves,  start_rank: 7,    end_rank: 8,    source: lifted-from-state-axes, notes: "7→8; structurally reinforced dynastic prerogative" }
+      - { actor: otto-hightower, axis: knowledge,                        applicability: moves,  start_rank: 7,    end_rank: 9,    source: lifted-from-state-axes, notes: "7→9; experienced court-layer reach → complete KL intelligence picture (via Taylor's coverage layer)" }
+      - { actor: otto-hightower, axis: agency,                           applicability: moves,  start_rank: 7,    end_rank: 9,    source: lifted-from-state-axes, notes: "7→9; constrained-but-directing → structural maximum over dynastic outcomes" }
 
-      # --- aemond-targaryen-122ac (antagonist; walk-on; Vhagar rider) — inferred-from-role-card ---
-      # Aemond's role: "Green-faction coercive arm, Vhagar rider at age 12; walk-on at structural crisis points;
-      # each appearance must shift a named plot axis." Sparse — he isn't running a per-axis arc, he's
-      # a structural-crisis intervention with extreme starting positions.
-      - { actor: aemond-targaryen-122ac, axis: capability, start_rank: 9, end_rank: 9, source: inferred-from-role-card, notes: "Vhagar (largest living dragon); rank 9 throughout; static — Aemond's capability does not arc, his appearances DEPLOY the capability" }
-      - { actor: aemond-targaryen-122ac, axis: position,   start_rank: 7, end_rank: 7, source: inferred-from-role-card, notes: "Green-faction prince; court-tier high; static across walk-on appearances" }
+      # ============================================================================================
+      # aemond-targaryen-122ac (antagonist walk-on; Vhagar rider) — 4 static + 5 not-applicable
+      # Walk-on archetype: appearances DEPLOY pre-existing capability at structural crisis points;
+      # no per-axis arc; positions are pinned-static where he has them.
+      # ============================================================================================
+      - { actor: aemond-targaryen-122ac, axis: moral-framework,                  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "walk-on; Green-faction loyalty given as a structural fact, not interrogated; no ethical-accounting arc to track" }
+      - { actor: aemond-targaryen-122ac, axis: capability,                       applicability: static,         start_rank: 9,    end_rank: 9,    source: inferred-from-role-card, notes: "Vhagar (largest living dragon); rank 9 throughout; Aemond's appearances DEPLOY the capability, do not arc it" }
+      - { actor: aemond-targaryen-122ac, axis: position,                         applicability: static,         start_rank: 7,    end_rank: 7,    source: inferred-from-role-card, notes: "Green-faction prince; court-tier high; static across walk-on appearances" }
+      - { actor: aemond-targaryen-122ac, axis: social-tether,                    applicability: static,         start_rank: 8,    end_rank: 8,    source: inferred-from-role-card, notes: "royal birth + Green-faction inner-circle; cross-layer factional embedded by birthright" }
+      - { actor: aemond-targaryen-122ac, axis: relational-anchor-status,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "not a relational-anchor track participant; cost-bearer / protect-target machinery does not include Aemond" }
+      - { actor: aemond-targaryen-122ac, axis: moral-legibility-to-self,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "archetype-flat coercive arm; the book does not interrogate Aemond's self-accounting" }
+      - { actor: aemond-targaryen-122ac, axis: political-register-toward-elite,  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "Aemond IS elite; the axis tracks register TOWARD elite from non-elite positions — does not apply" }
+      - { actor: aemond-targaryen-122ac, axis: knowledge,                        applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "not a knowledge-tracking arc; Aemond's awareness is local-to-appearance, not a court-intelligence picture in the book's terms" }
+      - { actor: aemond-targaryen-122ac, axis: agency,                           applicability: static,         start_rank: 8,    end_rank: 8,    source: inferred-from-role-card, notes: "royal prince + Vhagar rider; high agency but static — walk-on appearances do not arc this" }
 
-      # --- wren-stitch-maker-flea-bottom-ward (supporting/cost-bearer; dies at d14) — inferred-from-role-card + scene-pinned-b01c01 ---
-      # Wren is the load-bearing axis for Taylor's relational-anchor-status arc — see cl-unpriced-cost-bearer.
-      # Her own positions are mostly flat (she is a child, no power, no court) except for the d14 death event.
-      - { actor: wren-stitch-maker-flea-bottom-ward, axis: relational-anchor-status, start_rank: 3, end_rank: 1, source: inferred-from-role-card, notes: "named-outside-ledger (d02) → load-bearing-but-still-unpriced (d08) → unprotected-at-burn (d14); arc is from Taylor's POV but Wren's actual life-events track this — observed → necessary-to-coverage → dead" }
-      - { actor: wren-stitch-maker-flea-bottom-ward, axis: social-tether,            start_rank: 5, end_rank: 1, source: inferred-from-role-card, notes: "5→1; seamstress-family ward + ward-community embedded → dead at d14; social-tether IS the seamstress-ward layer until the violence" }
-      - { actor: wren-stitch-maker-flea-bottom-ward, axis: position,                 start_rank: 1, end_rank: 1, source: inferred-from-role-card, notes: "smallfolk-ward; no court layer; static across the book (cannot rise — child + cost-bearer slot)" }
-      - { actor: wren-stitch-maker-flea-bottom-ward, axis: capability,               start_rank: 1, end_rank: 1, source: inferred-from-role-card, notes: "child seamstress-ward; no power; static" }
-      - { actor: wren-stitch-maker-flea-bottom-ward, axis: knowledge,                start_rank: 3, end_rank: 3, source: scene-pinned-b01c01,    notes: "distributed-attention habit (asks too many questions; watches what adults pretend not to see); rank 3 stable — Wren's knowledge does not arc, her habit is established at b01c01 and remains a witnessing tool until d14" }
+      # ============================================================================================
+      # wren-stitch-maker-flea-bottom-ward (supporting/cost-bearer) — 2 moves + 3 static + 4 not-applicable
+      # Wren's load-bearing axis is relational-anchor-status (Taylor's POV) and social-tether (her own
+      # ward-community); the rest are static-at-low (child, no power) or not-applicable (child, not
+      # interrogated as a moral-accounting agent).
+      # ============================================================================================
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: moral-framework,                  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "11-year-old ward; the book does not interrogate Wren as an ethical-accounting agent — she is the cost-bearer, not a moral actor with an arc" }
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: capability,                       applicability: static,         start_rank: 1,    end_rank: 1,    source: inferred-from-role-card, notes: "child seamstress-ward; no power; static throughout" }
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: position,                         applicability: static,         start_rank: 1,    end_rank: 1,    source: inferred-from-role-card, notes: "smallfolk-ward; no court layer; static (cannot rise — child + cost-bearer slot)" }
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: social-tether,                    applicability: moves,          start_rank: 5,    end_rank: 1,    source: inferred-from-role-card, notes: "5→1; seamstress-family ward + ward-community embedded → dead at d14; social-tether IS the seamstress-ward layer until the violence" }
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: relational-anchor-status,         applicability: moves,          start_rank: 3,    end_rank: 1,    source: inferred-from-role-card, notes: "3→1; named-outside-ledger (d02) → load-bearing-but-still-unpriced (d08) → unprotected-at-burn (d14); arc reads via Taylor's POV but Wren's life-events track it — observed → necessary-to-coverage → dead" }
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: moral-legibility-to-self,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "child; not interrogated as a self-accounting agent" }
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: political-register-toward-elite,  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "smallfolk-ward; outside the layer that registers toward elite in a tracked way" }
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: knowledge,                        applicability: static,         start_rank: 3,    end_rank: 3,    source: scene-pinned-b01c01,    notes: "distributed-attention habit established at b01c01 (asks too many questions; watches what adults pretend not to see); rank 3 stable — habit is the witnessing tool, not an arc" }
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: agency,                           applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "child agency at survival-grain; not an axis the book tracks for Wren's arc" }
 
-      # --- sera-hightower-kl-122ac (supporting/protect-target; lives — that's the function of the architecture) — inferred-from-role-card ---
-      # Sera is the load-bearing axis for the cl-protection-buys-consolidation ledger entry — she is what Taylor's
-      # arrangement preserves. Her own positions are stable BY DESIGN because the architecture protects her.
-      - { actor: sera-hightower-kl-122ac, axis: position,      start_rank: 4, end_rank: 4, source: inferred-from-role-card, notes: "Hightower cadet-branch ward; court-tier present-but-vulnerable; STABLE — the architecture is what keeps this from collapsing to 1; survives the succession crisis" }
-      - { actor: sera-hightower-kl-122ac, axis: social-tether, start_rank: 6, end_rank: 6, source: inferred-from-role-card, notes: "Hightower cadet-branch + court-ward network; stable — same architecture preserves the tether" }
+      # ============================================================================================
+      # sera-hightower-kl-122ac (supporting/protect-target) — 4 static + 5 not-applicable
+      # Sera's stability IS the dramatic event: cl-protection-buys-consolidation preserves her by
+      # design. Her positions hold throughout the book because the architecture holds them.
+      # ============================================================================================
+      - { actor: sera-hightower-kl-122ac, axis: moral-framework,                  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "court ward age 14; archetype-flat in book's frame; not interrogated as moral-accounting agent" }
+      - { actor: sera-hightower-kl-122ac, axis: capability,                       applicability: static,         start_rank: 2,    end_rank: 2,    source: inferred-from-role-card, notes: "court ward age 14; minimal personal capability; static" }
+      - { actor: sera-hightower-kl-122ac, axis: position,                         applicability: static,         start_rank: 4,    end_rank: 4,    source: inferred-from-role-card, notes: "Hightower cadet-branch ward; court-tier present-but-vulnerable; STABLE because the architecture preserves it from collapsing to 1; survives the succession crisis" }
+      - { actor: sera-hightower-kl-122ac, axis: social-tether,                    applicability: static,         start_rank: 6,    end_rank: 6,    source: inferred-from-role-card, notes: "Hightower cadet-branch + court-ward network; stable — same architecture preserves the tether" }
+      - { actor: sera-hightower-kl-122ac, axis: relational-anchor-status,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "different track from cost-bearer; Sera is protect-target, not relational-anchor for Taylor — does not know Taylor exists" }
+      - { actor: sera-hightower-kl-122ac, axis: moral-legibility-to-self,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "not interrogated as self-accounting agent" }
+      - { actor: sera-hightower-kl-122ac, axis: political-register-toward-elite,  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "Sera IS elite cadet-branch; the axis tracks register TOWARD elite from non-elite — does not apply" }
+      - { actor: sera-hightower-kl-122ac, axis: knowledge,                        applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "not a knowledge-tracking arc participant; the book does not pin Sera's intelligence picture" }
+      - { actor: sera-hightower-kl-122ac, axis: agency,                           applicability: static,         start_rank: 2,    end_rank: 2,    source: inferred-from-role-card, notes: "court ward; constrained agency; static throughout (preserved-not-empowered)" }
 
-      # --- gylda-saltwater-flea-bottom (supporting/witness-mirror; names the pattern once at d09-d10) — inferred-from-role-card ---
-      # Gylda's role is structural: she names the too-many-places pattern once. Sparse entry on knowledge
-      # for the moment-of-naming; otherwise static.
-      - { actor: gylda-saltwater-flea-bottom, axis: knowledge,      start_rank: 2, end_rank: 4, source: inferred-from-role-card, notes: "2→4 at d09-d10 only; water-carrier observes too-many-places pattern and names it once; non-confidant hard fence means knowledge does not propagate" }
-      - { actor: gylda-saltwater-flea-bottom, axis: position,       start_rank: 1, end_rank: 1, source: inferred-from-role-card, notes: "Flea Bottom smallfolk; no court layer; static" }
-      - { actor: gylda-saltwater-flea-bottom, axis: social-tether,  start_rank: 4, end_rank: 4, source: inferred-from-role-card, notes: "Flea Bottom water-carrier network; cross-block visibility; static" }
+      # ============================================================================================
+      # gylda-saltwater-flea-bottom (supporting/witness-mirror) — 1 moves + 3 static + 5 not-applicable
+      # Gylda's load-bearing event is the d09-d10 naming of the too-many-places pattern; knowledge
+      # spike but non-confidant hard fence means it does not propagate.
+      # ============================================================================================
+      - { actor: gylda-saltwater-flea-bottom, axis: moral-framework,                  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "Flea Bottom water-carrier; not interrogated as moral-accounting agent" }
+      - { actor: gylda-saltwater-flea-bottom, axis: capability,                       applicability: static,         start_rank: 1,    end_rank: 1,    source: inferred-from-role-card, notes: "water-carrier; no power; static" }
+      - { actor: gylda-saltwater-flea-bottom, axis: position,                         applicability: static,         start_rank: 1,    end_rank: 1,    source: inferred-from-role-card, notes: "Flea Bottom smallfolk; no court layer; static" }
+      - { actor: gylda-saltwater-flea-bottom, axis: social-tether,                    applicability: static,         start_rank: 4,    end_rank: 4,    source: inferred-from-role-card, notes: "Flea Bottom water-carrier network; cross-block visibility; static" }
+      - { actor: gylda-saltwater-flea-bottom, axis: relational-anchor-status,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "not a relational-anchor for Taylor; witness-mirror role is structural, not relational" }
+      - { actor: gylda-saltwater-flea-bottom, axis: moral-legibility-to-self,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "not interrogated as self-accounting agent" }
+      - { actor: gylda-saltwater-flea-bottom, axis: political-register-toward-elite,  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "no register-toward tracked for Gylda; the book uses her as observer, not as political-positioned actor" }
+      - { actor: gylda-saltwater-flea-bottom, axis: knowledge,                        applicability: moves,          start_rank: 2,    end_rank: 4,    source: inferred-from-role-card, notes: "2→4 at d09-d10 only; observes too-many-places pattern and names it once; non-confidant hard fence means knowledge does not propagate further; the move IS the named-once event" }
+      - { actor: gylda-saltwater-flea-bottom, axis: agency,                           applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "not an agency-tracked arc; Gylda's role is the moment-of-naming, not directional action" }
 
-      # --- coll-net-mender-flea-bottom (world fixture; non-interpretive substrate; never names) — scene-pinned-b01c01 ---
-      # Coll is the static fixture against which Taylor's arc plays. He does not arc. His positions are
-      # flat throughout the book and constitute the "world" baseline for Flea Bottom social physics.
-      - { actor: coll-net-mender-flea-bottom, axis: position,      start_rank: 1, end_rank: 1, source: scene-pinned-b01c01, notes: "block-fixture; no court layer; static — Coll IS the Flea Bottom social-physics baseline" }
-      - { actor: coll-net-mender-flea-bottom, axis: social-tether, start_rank: 5, end_rank: 5, source: scene-pinned-b01c01, notes: "one-block embedded; range of observation exactly one street; static" }
-      - { actor: coll-net-mender-flea-bottom, axis: capability,    start_rank: 1, end_rank: 1, source: scene-pinned-b01c01, notes: "net-mending; no power; static" }
-      - { actor: coll-net-mender-flea-bottom, axis: knowledge,     start_rank: 4, end_rank: 4, source: scene-pinned-b01c01, notes: "intimate block-level knowledge of Flea Bottom; does not name what he sees; static — Coll's knowledge does not propagate or arc, it provides cover" }
+      # ============================================================================================
+      # coll-net-mender-flea-bottom (world/fixture; non-interpretive substrate) — 4 static + 5 not-applicable
+      # Coll IS the Flea Bottom social-physics baseline against which Taylor's arc plays. All present
+      # axes hold flat; the role is "non-interpretive community-substrate carrier; never names."
+      # ============================================================================================
+      - { actor: coll-net-mender-flea-bottom, axis: moral-framework,                  applicability: not-applicable, start_rank: null, end_rank: null, source: scene-pinned-b01c01, notes: "non-interpretive substrate; the role explicitly refuses moral-accounting voice ('never names'); does not arc on this axis by design" }
+      - { actor: coll-net-mender-flea-bottom, axis: capability,                       applicability: static,         start_rank: 1,    end_rank: 1,    source: scene-pinned-b01c01, notes: "net-mending; no power; static" }
+      - { actor: coll-net-mender-flea-bottom, axis: position,                         applicability: static,         start_rank: 1,    end_rank: 1,    source: scene-pinned-b01c01, notes: "block-fixture; no court layer; static — Coll IS the Flea Bottom social-physics baseline" }
+      - { actor: coll-net-mender-flea-bottom, axis: social-tether,                    applicability: static,         start_rank: 5,    end_rank: 5,    source: scene-pinned-b01c01, notes: "one-block embedded; range of observation exactly one street; static" }
+      - { actor: coll-net-mender-flea-bottom, axis: relational-anchor-status,         applicability: not-applicable, start_rank: null, end_rank: null, source: scene-pinned-b01c01, notes: "not a relational-anchor track participant for Taylor; Coll provides proximity-as-cover, not relational anchoring" }
+      - { actor: coll-net-mender-flea-bottom, axis: moral-legibility-to-self,         applicability: not-applicable, start_rank: null, end_rank: null, source: scene-pinned-b01c01, notes: "non-interpretive substrate; the role refuses interpretive interiority by construction" }
+      - { actor: coll-net-mender-flea-bottom, axis: political-register-toward-elite,  applicability: not-applicable, start_rank: null, end_rank: null, source: scene-pinned-b01c01, notes: "no register tracked; Coll's role is substrate-carrier, not political-positioned" }
+      - { actor: coll-net-mender-flea-bottom, axis: knowledge,                        applicability: static,         start_rank: 4,    end_rank: 4,    source: scene-pinned-b01c01, notes: "intimate block-level knowledge of Flea Bottom; does not name what he sees; static — Coll's knowledge does not propagate or arc, it provides cover" }
+      - { actor: coll-net-mender-flea-bottom, axis: agency,                           applicability: not-applicable, start_rank: null, end_rank: null, source: scene-pinned-b01c01, notes: "not an agency-tracked arc; the fixture role is non-directional by design" }
 
-      # --- corvan-archmaester-retrospective-coda (world/coda; archmaester writing c.160 AC) — frame-coda ---
-      # Corvan is a frame voice in the b01c18 INTERLUDE chapter. He has no in-book delta — his arc is
-      # outside the substance bone-gate scope.
-      - { actor: corvan-archmaester-retrospective-coda, axis: position,   start_rank: 5, end_rank: 5, source: inferred-from-role-card, notes: "Archmaester at the Citadel (c.160 AC); frame-coda voice; no in-book Δ — exempt from bone-gate" }
-      - { actor: corvan-archmaester-retrospective-coda, axis: knowledge,  start_rank: 6, end_rank: 6, source: inferred-from-role-card, notes: "retrospective archival picture; incomplete by design (does not know Taylor's name); frame-coda — no Δ across the book" }
+      # ============================================================================================
+      # corvan-archmaester-retrospective-coda (world/coda) — 2 static + 7 not-applicable
+      # Frame-coda voice writing c.160 AC; outside the 122 AC book's time-frame; b01c18 INTERLUDE
+      # chapter is bone-gate exempt per chapter_class:frame-coda.
+      # ============================================================================================
+      - { actor: corvan-archmaester-retrospective-coda, axis: moral-framework,                  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "frame voice; outside 122 AC scope; not interrogated as in-book moral actor" }
+      - { actor: corvan-archmaester-retrospective-coda, axis: capability,                       applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "frame voice; not a capability-bearing actor in the in-book sense" }
+      - { actor: corvan-archmaester-retrospective-coda, axis: position,                         applicability: static,         start_rank: 5,    end_rank: 5,    source: inferred-from-role-card, notes: "Archmaester at the Citadel (c.160 AC); frame-coda voice; in-book Δ exempt — position pinned for grid consistency only" }
+      - { actor: corvan-archmaester-retrospective-coda, axis: social-tether,                    applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "frame voice; in-book tether does not apply (writes from 38 years later)" }
+      - { actor: corvan-archmaester-retrospective-coda, axis: relational-anchor-status,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "frame voice; no relational anchor to Taylor or cost-bearer apparatus" }
+      - { actor: corvan-archmaester-retrospective-coda, axis: moral-legibility-to-self,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "frame voice; the chronicle is about Taylor's apparatus, not Corvan's self-accounting" }
+      - { actor: corvan-archmaester-retrospective-coda, axis: political-register-toward-elite,  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "frame voice; Corvan's register is archival-evidential, not political-positioned in the tracked sense" }
+      - { actor: corvan-archmaester-retrospective-coda, axis: knowledge,                        applicability: static,         start_rank: 6,    end_rank: 6,    source: inferred-from-role-card, notes: "retrospective archival picture; incomplete by design (does not know Taylor's name); frame-coda — no Δ across the book; pinned for grid consistency only" }
+      - { actor: corvan-archmaester-retrospective-coda, axis: agency,                           applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "frame voice; no in-book agency to track" }
 
     cost_ledger:
       - id: cl-otto-trade

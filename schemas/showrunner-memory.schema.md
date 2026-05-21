@@ -103,19 +103,27 @@ series:
         end_rank: <1-9>
         class: plot | emotional            # optional; used by future emotional-substance orthogonality check (OOS)
         notes: <one line>                  # optional; phase-shape, two-phase axes, consequence-vs-trade anchoring
-    actor_baselines:                       # per-actor, per-axis positions — disambiguates within a perspective
+    actor_baselines:                       # per-actor, per-axis positions — DENSE matrix: every actor × every axis
       # The state_axes block above pins per-perspective aggregate positions (the dramatic shape).
-      # actor_baselines pins per-actor positions where the perspective aggregate is insufficient — e.g.
-      # two antagonist-perspective actors (Otto vs Aemond) with very different per-axis arcs, or
-      # supporting-perspective actors (cost-bearer vs protect-target vs witness-mirror) who do not share an arc.
-      # An actor need not have an entry on every axis — only on the axes where that actor's position is
-      # load-bearing for the story. Static-fixture actors (world-perspective) may have zero entries.
+      # actor_baselines pins per-actor positions because the perspective aggregate hides divergent
+      # actors (Otto vs Aemond both antagonist; Wren / Sera / Gylda all supporting with different arcs).
+      #
+      # Authoring discipline: dense matrix. Every cast_roster actor × every state_axes axis gets an
+      # entry. The `applicability` field disambiguates absent-because-omitted from absent-because-out-of-scope:
+      #
+      #   moves           — start_rank ≠ end_rank; this actor's position moves on this axis across the book
+      #   static          — start_rank = end_rank; this actor's position is fixed; the cell is examined and pinned
+      #   not-applicable  — this actor does not participate in this axis's machinery; rationale REQUIRED in notes
+      #
+      # This shape prevents judgment-by-omission: an actor with no entry on an axis is a SCHEMA VIOLATION,
+      # not a meaningful absence. Use applicability:not-applicable to record the deliberate exclusion.
       - actor: <actor-slug>                # must match a slug in series.cast_roster
         axis: <axis-slug>                  # must match a slug in series.substance.state_axes[]
-        start_rank: <1-9>
-        end_rank: <1-9>
+        applicability: moves | static | not-applicable
+        start_rank: <1-9> | null           # REQUIRED for applicability:moves and applicability:static; null only for not-applicable
+        end_rank: <1-9> | null             # REQUIRED for applicability:moves and applicability:static; null only for not-applicable
         source: lifted-from-state-axes | inferred-from-role-card | scene-pinned-<chapter-slug>
-        notes: <one line>
+        notes: <one line>                  # rationale REQUIRED for applicability:not-applicable; recommended for moves/static
     cost_ledger:
       - id: <ledger-entry-id>              # stable handle for `bones[].substance_delta.cost_ledger_anchor`
         gain: <axis-slug> +<delta>
@@ -328,7 +336,14 @@ routing:
 - **`axes_held[]`** lists axes deliberately held flat by discipline. Each entry: `{axis, rationale}`. The held axis is load-bearing for the scene's stakes — that is *what makes a held-flat axis different from a chatter bone*. A chatter bone has neither `axis_moves` nor `axes_held` and must pay a cost-ledger entry to justify its existence.
 - **`scene_conflict.stakes_axis`** may resolve to either `axes_in_motion[]` (the axis the conflict moves) or `axes_held[]` (the axis the conflict holds) — both are valid stakes. `/and-write` Phase 6 substance bone-gate checks against the union when validating that the stakes axis appears.
 
-**series.substance.actor_baselines[]** — per-actor positional grid. `state_axes[].perspective ∈ {protagonist, antagonist, world}` pins per-perspective aggregate positions, but a perspective can hide divergent actors (two antagonist actors with very different per-axis arcs; a cost-bearer and a protect-target both `supporting` perspective). `actor_baselines[]` pins per-actor positions on the axes where that actor's position is load-bearing. Sparse by design — actors with no dramatic motion on an axis simply don't have an entry for that axis. `source:` records lineage: `lifted-from-state-axes` (verbatim from the perspective-aggregate), `inferred-from-role-card` (built from cast-roster role description), or `scene-pinned-<chapter-slug>` (set when a specific chapter resolved the actor's position on that axis).
+**series.substance.actor_baselines[]** — per-actor positional grid, authored as a **dense matrix** (every cast_roster actor × every state_axes axis). `state_axes[].perspective ∈ {protagonist, antagonist, world}` pins per-perspective aggregate positions, but a perspective hides divergent actors (Otto vs Aemond both antagonist; cost-bearer / protect-target / witness-mirror all supporting). The dense-matrix discipline prevents judgment-by-omission: an absent entry is a schema violation, not a meaningful absence.
+
+Each cell carries an `applicability` field:
+- **`moves`** — `start_rank ≠ end_rank`; this actor's position arcs on this axis across the book. Both ranks required.
+- **`static`** — `start_rank = end_rank`; this actor's position is fixed (examined and deliberately pinned). Both ranks required.
+- **`not-applicable`** — this actor does not participate in this axis's machinery (walk-on with no per-axis arc; archetype-flat character; frame-coda voice outside scope). Ranks may be null; `notes:` REQUIRED to record the deliberate exclusion.
+
+`source:` records lineage: `lifted-from-state-axes` (verbatim from perspective-aggregate), `inferred-from-role-card` (built from cast-roster role description), or `scene-pinned-<chapter-slug>` (set when a specific chapter resolved the actor's position on that axis).
 
 **bones[].flat_id** — assigned at `/and-write` Phase 7 serialization. Stable within a run; `revise` mode preserves flat_ids for unchanged bones (gap-filling for new bones).
 
