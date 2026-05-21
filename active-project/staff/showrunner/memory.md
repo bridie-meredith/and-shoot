@@ -1002,10 +1002,23 @@ books:
             - "wren: rescued; present; still unnamed as significant node in Taylor's ledger"
             - "otto: offstage"
           target_chapter: b01c03
-        status: scened   # /and-substance chapter b01c02 Phase 6 — 2026-05-21; pov_narrator + dramatic_shape + goal + scenes[] authored
+        status: bones-written   # /and-write Phase 7 — 2026-05-21; 5-pass + bone-gate complete; flattened bones + scene-map emitted
         pov_narrator: taylor-hebert-kl-122ac    # series.structure.pov = single → inherited from protagonist
         dramatic_shape: hinge                    # first-flex hinge: prohibition pivots from theoretical-intact to road-tested-strained in s01's deployment; differs from b01c01's baseline-placement hinge (no antagonist pressure, no collision there); dramatist Phase 5 ACCEPT confirmed the two hinge functions are structurally distinguishable.
         goal: "the prohibition in its first real test — deployed against a genuine threat, technically held, and already bent enough that the accounting cannot close cleanly."   # audience-facing chapter purpose; bones-file header source for /and-write Phase 7
+        bones_file: theater/bones/b01-c02.md
+        bones_count: 27   # 10 (s01) + 9 (s02) + 8 (s03); s01n01 deleted at Phase 4 (2-of-3 audience vote); Phase 3 additions s01n11 + s02n09 + s03n08 included
+        substance_bone_gate_verdict: PASS
+        substance_delta_measured:
+          axes_moved:
+            capability:    { ticks: 4,  rank_delta: 0.4, target: 1.0, gap: -0.6 }  # within ±1; hinge-pivot bone @5 carries 3 ticks; threshold-crossing @4 carries 1 tick
+            social-tether: { ticks: 5,  rank_delta: 0.5, target: 0.5, gap:  0.0 }  # chapter aggregate exact-match (s01 0.1 + s02 0.4 + s03 0.1 = 0.6 with addition; effective 0.5 vs target 0.5)
+            knowledge:     { ticks: 13, rank_delta: 1.3, target: 0.5, gap: +0.8 }  # within ±1; sweep-pattern observation cluster in s01 + categorical-structural cluster in s03; type-distinction preserved per worm-canon-pedant TASTE-FLAG
+          axes_held:
+            capability:      { scenes: [s02, s03], witnessed_at_bones: [13, 18, 28] }   # @13 coll proxy-hold (SIGNAL fragility — Phase 6 auditor); @18 taylor threads needle; @28 taylor holds hand
+            moral-framework: { scenes: [s03],      witnessed_at_bones: [28] }            # @28 dual-discipline body-part hold
+          density_measured: { s01: 0.78, s02: 0.75, s03: 0.65 }   # all scenes within their target bands
+          felt_verdict: PASS   # audience 9-of-9 SUBSTANCE-FELT across all three scenes
         scenes:
           - slug: b01c02s01
             chunk: |
@@ -1065,6 +1078,18 @@ books:
         #   cape-fic-reader: witness-residue (two unpriced witnesses from s01) must remain unresolved forward; a future chapter that prices them without consequence-friction is cleanup-without-consequence.
         #   dark-fantasy-reader: Coll-as-loyal-sidekick-function is a hostile read; future scenes must preserve Coll-as-person-who-already-did-the-accounting. Witness vocabulary-gap should remain dangerous, not resolve into incuriosity.
         #   worm-canon-pedant: knowledge-type distinction (observational sweep-pattern → categorical structural knowledge in s03) flagged for bone-gate attention; the jump-type must be preserved in interior-scene bones, not collapsed into homogeneous-knowledge.
+        # /and-write 5-pass + bone-gate review (2026-05-21):
+        #   Phase 2 constraint audit: 5 faults (4 FAULT-FORM + 1 FAULT-BONE-DELTA-MALFORMED) repaired by fixer; sub-rank-tick scale ruling (1 mag = 0.1 rank) persisted.
+        #   Phase 3 dramatist: ACCEPT (order unchanged); 3 missing-transition additions authored (s01n11 faces-the-alley-mouth threshold-crossing; s02n09 faces-the-alley-mouth attentional-shift; s03n08 sets-the-pen pressure-arrives).
+        #   Phase 4 audience trim: 3-of-3 ACCEPT; s01n01 (the boots strike the cobbles) auto-deleted on 2-of-3 vote (dark-fantasy + worm-canon-pedant — wrong-sensor-priority / canon-register).
+        #   Phase 5 continuity: CONTINUITY-OK; zero faults; two advisory flags (singular near-witness vs chunk-plural; insect object-as-subject convention from c01).
+        #   Phase 6 bone-gate auditor: PASS; 0 HARD; 1 SIGNAL (s02n02 proxy-hold — capability-held satisfied independently by s02n06 @18 taylor threads the needle).
+        #   Phase 6 bone-gate audience: 9-of-9 SUBSTANCE-FELT across all 3 scenes × 3 personas (coverage discipline A9 verified).
+        # /and-write Phase 6 audience TASTE-FLAGs (forward to /and-facets + future-chapter monitoring):
+        #   cape-fic-reader: cost-register at s01 is double-anchored by witness residue (@8) + held-feet (@9); cleared SUBSTANCE-SUSPECT-cheap-gain-capability. The double-anchoring pattern is the surface to preserve at facet-authoring.
+        #   dark-fantasy-reader: Wren-as-future-cost-bearer crystallization at @15 lands as world-building consequence; preserve at facet-authoring; do NOT facet-skin the cost-bearer load.
+        #   worm-canon-pedant: pen-set bone @25 carries the s03 sequence past SUBSTANCE-SUSPECT-cheap-gain-knowledge by making the ledger gap a specific recognition before the held-hand discipline. Facet-authoring must preserve the moral-framework strain as a real impulse-resisted, not a technicality.
+        #   coverage TASTE-FLAGs from Phase 4 trim still forward: SVO surface collision @4 vs @14 "faces the alley-mouth" needs distinct facet treatment; insect-routing precision at @5 must not drift toward directed-individual-agency override in stitch.
 
       - slug: b01c03
         chunk: |
