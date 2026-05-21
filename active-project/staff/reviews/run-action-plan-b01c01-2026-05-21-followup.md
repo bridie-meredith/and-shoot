@@ -83,14 +83,14 @@ The parent plan's pre-flight checklist had eight items. Two are now done. The re
 ## Pre-flight checklist for `/and-substance chapter b01c02` (refreshed)
 
 ```
-[ ] F1  /and-substance + /and-write command bodies synced with new schema (axes_held + direction:up|down)
+[x] F1  /and-substance + /and-write command bodies synced with new schema (axes_held + direction:up|down) (done 2026-05-21)
 [x] F2  sensory + memory rubrics tuned to V3 via facet-tuning-process harness (done 2026-05-21)
-[ ] A1  anchor-refresh HARD-ABORT at /and-facets Phase 0
-[ ] A2  cap-burn semantics codified
-[ ] A3  cycle-N fixer ADD policy decided  (rubric-side anti-pattern #14 done in F2; orchestration still owed)
-[ ] A4  pipeline-adaptation audit re-run
-[ ] A9  bone-gate audience covers ALL scenes
-[ ] A12 world-notes.md Lucerys/Nessa cleanup
+[x] A1  anchor-refresh HARD-ABORT at /and-facets Phase 0 (done 2026-05-21)
+[x] A2  cap-burn semantics codified (canonical = DELETE; done 2026-05-21)
+[x] A3  cycle-N fixer ADD pre-validation (rubric anti-pattern #14 + orchestration Phase 5b; done 2026-05-21)
+[ ] A4  pipeline-adaptation audit re-run (queued — auditor dispatch next)
+[x] A9  bone-gate audience covers ALL scenes (done 2026-05-21 — per-scene coverage gate at /and-write Phase 6)
+[x] A12 world-notes.md Lucerys/Nessa cleanup (done 2026-05-21)
 ```
 
 F4 and F5 are async — they can land across c02-c04 as the per-chapter scene-pinning naturally generates them.

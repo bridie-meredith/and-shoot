@@ -34,7 +34,7 @@ Re-runnable per `design/substance/rerun-protocol.md`. Cascade-aware per `design/
 
 1. Read `staff/showrunner/memory.md`. Confirm upstream:
    - **`series` level:** `series.chunk.path` + `series.chunk.prose` + `series.structure.*` populated. If not, abort: `/and-substance series Phase 0 abort: series.chunk missing — run /and-series first.` (Schema note: `series.chunk` is a structured object under `/and-series` v2; v1-compat consumers in this command body read `series.chunk.prose` for the string form. Migration TODO: read `series.chunk.path` + `.trajectory` directly.)
-   - **`book b<NN>` level:** `books[b<NN>].chunk` + `books[b<NN>].substance_delta` populated (authored by `/and-substance series` Phase 6). `project.series_audit.approved_at` set, `stale_since` null. If audit not approved, **HARD-ABORT:** `/and-substance book Phase 0 abort: project.series_audit not approved — run /and-cast Phase 5 and approve.`
+   - **`book b<NN>` level:** `books[b<NN>].chunk` + `books[b<NN>].substance_delta` populated (authored by `/and-substance series` Phase 6). `project.series_audit.approved_at` set, `stale_since` null. If audit not approved, **HARD-ABORT:** `/and-substance book Phase 0 abort: project.series_audit not approved — run /and-cast Phase 5 and approve.` Additionally: **`series.substance.actor_baselines[]` must be DENSE** — for every actor in `series.cast_roster[]` and every axis in `series.substance.state_axes[]`, an entry must exist with `applicability ∈ {moves, static, not-applicable}`. If any cell is missing, **HARD-ABORT:** `/and-substance book Phase 0 abort: actor_baselines[] sparse — run /and-substance series add actor_baselines to fill the matrix. Missing cells: <list of actor × axis pairs>.` (Per the 2026-05-21 axis-bookkeeping split; `actor_baselines[]` is authored at `/and-substance series` Step 4d post-cast pass.)
    - **`chapter b<NN>c<MM>` level:** `books[b<NN>].chapters[b<NN>c<MM>].chunk` + `substance_delta` populated (authored by `/and-substance book` Phase 6).
 2. Check own output:
    - **`series`:** `books[*].chunk` populated AND `series.substance.*` populated.
@@ -74,17 +74,32 @@ Persist child slugs at Phase 6 per the slug-auto-generation rules below.
 
 ### Phase 3 — Author sub-chunk substance contracts
 
-For each sub-chunk, screen-writer authors a `substance_delta` block:
+For each sub-chunk, screen-writer authors a `substance_delta` block per the 2026-05-21 axis-bookkeeping split (`schemas/showrunner-memory.schema.md`):
+
 ```yaml
-axes_in_motion: [<axis-slug>, <axis-slug>, ...]
-density_target: <range>
+substance_delta:
+  axes_in_motion:                          # axes that actually move at this chunk level
+    - axis: <axis-slug>                    # must match series.substance.state_axes[].slug
+      direction: up | down                 # REQUIRED; null/~ malformed (use axes_held for held-flat)
+      target_delta_magnitude: <positive>   # REQUIRED; > 0 (zero malformed — use axes_held)
+      cost_ledger_anchor: <id> | [<id>, ...] | null
+      notes: <one line>
+  axes_held:                               # axes deliberately held flat by discipline; load-bearing dormancy
+    - axis: <axis-slug>
+      rationale: <one line>                # names the discipline the chunk enacts on this axis
+  density_target: <range>
 ```
-Per-axis: which way is it moving (direction implied by axis-slug + parent context), declared target Δ magnitude, declared cost (if not paying a parent-level cost-ledger entry).
+
+Per-axis discipline:
+- **`axes_in_motion[]`** lists axes that move across this chunk. Direction (`up | down`) + magnitude (> 0) + cost-ledger anchor when applicable. `direction: null` / `magnitude: 0` are schema violations.
+- **`axes_held[]`** lists axes deliberately held flat (the held axis is load-bearing — usually the scene's stakes-axis). Hinge chapters often have axes-held entries on the discipline axis (e.g. capability held by the protagonist's prohibition). A held axis contributes zero to the per-axis Δ aggregate by definition.
+- **`scene_conflict.stakes_axis`** may resolve to either `axes_in_motion[]` (the conflict moves it) or `axes_held[]` (the conflict holds it); `/and-write` Phase 6 bone-gate validates against the union.
 
 Contracts must:
-- Sum-roll-up to parent within ±1 rank (audited at Phase 5).
+- Sum-roll-up to parent within ±1 rank, on `axes_in_motion[]` only (audited at Phase 5). Held axes have zero rank-Δ contribution.
 - Honor `series.substance.chunk_targets.<this-level>` bands (delta + density + bone-count where applicable).
 - Reference cost-ledger entries when paying a series-level cost (sets `cost_ledger_anchor`).
+- Have at least one of `axes_in_motion[]` or `axes_held[]` non-empty per non-frame chunk. A chunk with both empty is malformed unless `chapter_class: frame-coda` is set (b01c18 Corvan-coda pattern is the canonical exempt case).
 
 **Chapter level additionally authors per-scene `scene_conflict`** for every scene:
 ```yaml
@@ -142,7 +157,14 @@ Phase 4 at series level is where the signature itself is born. The 1–9 archety
   When ready, type `accept`. Type `redraft` to ask the screen-writer for a fresh proposal.
   ```
 
-- **Step 4c — Persist on accept.** Edited YAML moves from `signature-draft.md` to `series.substance.*` in memory. Phase 5 review runs against the accepted signature.
+- **Step 4c — Persist on accept.** Edited YAML moves from `signature-draft.md` to `series.substance.*` in memory. Phase 5 review runs against the accepted signature. **NOTE:** `series.substance.actor_baselines[]` (per-actor positional grid, dense 8×9 matrix or similar per `schemas/showrunner-memory.schema.md`) is NOT authored at this step — the cast roster doesn't exist yet (cast is provisioned by `/and-cast` after `/and-substance series`). `actor_baselines[]` is authored later: see Step 4d below for the post-cast pass.
+
+- **Step 4d — Post-cast actor_baselines pass (`/and-substance series add actor_baselines`, fires after `/and-cast` lands).** Dispatch screen-writer with `series.substance.state_axes[]` (the 9 axes authored at 4a) + `series.cast_roster[]` (provisioned by `/and-cast`) + every cast member's role description. Screen-writer authors the dense actor × axis matrix (every cast member × every state-axis = N × M cells) with explicit `applicability` per cell:
+  - `moves` (start_rank ≠ end_rank; actor arcs on this axis across the book) — with both ranks pinned and `source: lifted-from-state-axes | inferred-from-role-card`.
+  - `static` (start_rank = end_rank; deliberately pinned, examined not skipped) — with `source` + rationale in `notes`.
+  - `not-applicable` (actor does not participate in this axis's machinery) — with `notes` REQUIRED naming the deliberate exclusion (e.g. "walk-on; no per-axis arc"; "frame-coda; outside in-book scope"; "Aemond IS elite; axis tracks register TOWARD elite from non-elite — does not apply").
+  
+  No cell may be omitted — absence is a schema violation. The dense matrix prevents judgment-by-omission. Writes draft to `staff/showrunner/actor-baselines-draft.md`; user edits in place; `accept` persists to `series.substance.actor_baselines[]`. The first `/and-substance book b<NN>` Phase 0 HARD-ABORTS if the matrix is empty or missing any cast × axis cell.
 
 **Book level — drama statement.** Screen-writer authors `books[b<NN>].drama` — a one-paragraph "what cannot survive this book" statement. Names the structural collision at book scope.
 

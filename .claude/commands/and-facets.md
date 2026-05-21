@@ -86,6 +86,17 @@ R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/
    - `audited-r1` — both Phase 5 + Phase 5b cleared; already done. Print "already audited; re-run requires explicit re-audit" and exit unless re-audit is wanted.
 3. Read the bones file at `active-project/theater/bones/<book>-<chapter>.md`. Lift the seven extended-header fields: `episode`, `narrator`, `goal`, `cast`, `locations`, `prior_episode`, `aggregate_range`. (The field name `episode:` is preserved for downstream-compatibility; value is the chapter slug.)
 4. **Upstream scene-map precondition.** Confirm `active-project/theater/facets/scene-map-<book>-<chapter>.md` exists (emitted by `/and-write` Phase 7). Abort if missing — `/and-write` must be re-run.
+4a. **Anchor-refresh gate (URI-FACETS-ANCHOR-REFRESH, A1 — 2026-05-21).** HARD-ABORT (not warn) if the bones file is newer than any pre-existing facet for this chapter OR if any pre-existing facet contains anchor IDs that no longer resolve in the current bones file. Run two checks:
+    - **mtime check:** `mtime(theater/bones/<book>-<chapter>.md)` vs `mtime(theater/facets/<facet>-<book>-<chapter>.md)` for every facet file at this chapter (excluding `scene-map-<book>-<chapter>.md`, which is bones-co-emitted by `/and-write` Phase 7). If bones is newer than ANY facet, HARD-ABORT.
+    - **anchor-resolution check:** scan every pre-existing facet file for `@<flat_id>` anchors and `[<facet>:<flat_id>]` citations. Build the set of bone flat_ids in the current bones file. Any anchor whose flat_id is not in the current bones file (deletion gap OR id-space shift from `/and-write redo`) is a `STALE-ANCHOR` HARD finding.
+    On HARD-ABORT, print:
+    ```
+    /and-facets Phase 0 HARD-ABORT (anchor-refresh): bones file at <path> is newer than existing facets, OR existing facets cite anchors that no longer resolve in the current bones.
+    Stale facets: <list of paths>
+    Stale anchors: <list of [<facet>:<flat_id>]>
+    Resolution: archive existing facet files to active-project/theater/_archive/<timestamp>-stale-from-rewrite/ and re-run /and-facets <chapter> for a clean traversal.
+    ```
+    The user re-archives stale facets manually before re-invocation. The check protects against the b01c01 cap-burn root cause where `/and-write redo` shifted bone IDs and stale facets pointed at dead anchors at `/and-stitch` Phase 0.5.
 5. Confirm `active-project/theater/facets/` is empty of this-chapter's facet outputs apart from `scene-map-<book>-<chapter>.md`. If other facet files for this chapter exist, abort with paths printed; archive first to re-run. (Skip this check on partial-run resume.) Confirm `active-project/theater/dialogue/<book>-<chapter>.md` does not exist or `mkdir -p` is clean.
 6. Confirm warehouse loc cards for every slug in `locations:` resolve. Confirm every `cast:` slug resolves under `active-project/actors/<slug>/`.
 7. Read `schemas/facet.schema.md`, `schemas/bones.schema.md`, `schemas/audit-report.schema.md`, `schemas/dialogue.schema.md` once (orchestrator reference).
@@ -476,6 +487,12 @@ Across all facets:
 
 1. Aggregate revise/fail callouts across all reviewers. Dedupe by `[<facet>:<id>]`.
 2. Dispatch **fixer** with the consolidated callouts + the facet rubrics. Fixer routes per-entry — small revisions to the facet file directly; cross-facet conflicts to the responsible author via Agent.
+
+   **Cycle-N ADD pre-validation (URI-FACETS-CYCLE-N-ADD, A3 — 2026-05-21).** If the fixer's response includes any ADD operation (a new facet entry that did not exist in the prior cycle), the ADD MUST pre-validate against the full per-entry rubric BEFORE the fixer commits it. The fixer dispatches per-ADD a brief self-audit pass: load the relevant facet rubric (e.g. `design/shoot-v2/rubric-sensory.md`); walk every REJECT signature / anti-pattern; for cross-facet anchor rubrics (sensory old-state, memory NI co-citation, metaphor licensed-by, etc.), validate that the required anchor exists in its upstream artifact (loc-state, narrator-interest, memory) BEFORE the ADD writes. If any pre-validation fails:
+   - **Cycle 1 or 2 ADD pre-validation fail:** the fixer must FIRST land the upstream artifact edit (e.g. add the missing loc-state baseline before the sensory ADD) and only then commit the ADD; the upstream edit lands as its own fixer entry in the consolidated callouts.
+   - **Cycle 3 ADD pre-validation fail (the cap-burn case):** REFUSE the ADD entirely. Cycle 3 has no remediation budget (this is the last cycle before cap); an ADD that fails pre-validation at cycle 3 would land a new HARD that the cycle-3 audit catches with no slot to remediate. The fixer instead recommends DELETE-on-cycle-3 of the entries that drove the original callout (per the cap-burn ship-anyway semantics in Phase 5b/cap-burn handling); the user is notified the ADD path was refused.
+
+   The fixer logs every ADD attempt + pre-validation result to `staff/fixer/and-facets-cycle<N>-fixes.md` with verdict (`ADD-LANDED` / `ADD-LANDED-AFTER-UPSTREAM-EDIT` / `ADD-REFUSED-CYCLE-3`). Promotes the rubric-side enforcement in `rubric-sensory.md` anti-pattern #14 to a process-side enforcement at orchestration time. (Promoted from b01c01 cycle-3 cap-burn: sensory:3 @17 cycle-3 ADD by fixer introduced unanchored-old-state HARD on the modality-floor-fix path; no cycle remained to remediate.)
 3. Re-fire Phase 5 (auditor, full eleven-class scan) — fixer changes may surface new mechanical findings.
 4. Re-fire Phase 5b (audience, all facets that did not 3-of-3 accept in the prior cycle; facets that passed do not re-fire).
 5. Increment cycle counter.
@@ -491,7 +508,28 @@ A reviewer dispatch may stall at the 600s agent-watchdog with no verdict file wr
 
 ### Cycle cap
 
-Cap: **3 audience cycles** per `/and-season` convention. On cap-burn (3 cycles without 3-of-3 accept across all facets), the orchestrator-critic verdict goes NOT-SUCCESSFUL with the failing facets named; the run does NOT flip status to `audited-r1`; the user is notified for escalation.
+Cap: **3 audience cycles** per `/and-season` convention. On cap-burn (3 cycles without 3-of-3 accept across all facets), the canonical resolution path is **(a) automatic DELETE of offending entries with logged tradeoffs** (URI-FACETS-CAP-BURN-SEMANTICS, A2 — 2026-05-21).
+
+**Codified cap-burn semantics (canonical path = automatic DELETE):**
+
+1. Identify offending entries — the set of `[<facet>:<flat_id>]` callouts that drove the final-cycle revise/fail aggregation. Dedupe.
+2. Dispatch **fixer** in **cap-burn DELETE mode** with the offending entries + the chapter's substance contracts + every relevant facet rubric. Fixer's only allowed operation is DELETE — no revise, no ADD (ADD is structurally banned at cap-burn per the A3 cycle-3 rule above). Per offending entry:
+   - DELETE the entry from its facet file.
+   - Update the cite-index to remove the citation (the cite-index builder must tolerate carve-out preambles per A5; until that lands, the fixer hand-edits `_cite-index.md`).
+   - If the DELETE leaves a file-level shape gap (modality-floor breach, doubled-register breach, density floor breach), record the trade-off in the cap-burn report — do NOT chase it with an ADD.
+3. Write the cap-burn report to `staff/auditor/facets-cap-burn-<chapter>-<timestamp>.md` documenting:
+   - Each deleted entry with its callout chain.
+   - Each file-level shape gap the DELETE introduced, with explicit "ACCEPTED-AT-CAP-BURN" annotation and the substance trade-off (e.g. "deleted mem:1 @9; file goes single-register Westerosi-only; doubled-register file-level shape fail accepted at cap-burn — rationale: NI ceiling collision blocks spine-fix path; see URI-FACETS-V3-FEEL-AS-SPINE for the rubric-side resolution lifted into c02").
+   - Pointer to the orchestrator-critic verdict that codifies the trade-off in showrunner memory.
+4. Set `chapters[<slug>].audience_gate_cap_burned: true` AND `chapters[<slug>].cap_burn_deletions: [<list of deleted entries>]` in showrunner memory.
+5. The orchestrator-critic verdict goes **NOT-SUCCESSFUL** with the failing facets + cap-burn deletions named in the verdict body. NOT-SUCCESSFUL is recorded but is NOT a HARD-BLOCK against `/and-stitch` — the chapter ships as-is with the deletions, the cap-burn report attached. The downstream chapters do not inherit the cap-burn debt; each chapter's audience-gate runs fresh.
+6. Status flip: `audited-r1-mechanical` → `audited-r1` (cap-burn DELETE is treated as a resolution path; the status reflects that the audience-gate has been resolved, even if NOT-SUCCESSFULly). `audience_gate_cap_burned: true` is the audit trail.
+
+**Why DELETE is canonical:** (a) is what the b01c01 user-directive resolution did in practice, codifying that user judgment as the default; (b) "automatic rubric-authority-ruling mini-phase" is heavyweight (needs a separate command + ruling protocol) and is the deferred path under URI-FACETS-RUBRIC-RULING; (c) "hard stop / `/and-stitch` refuses" would block all chain progress on any cap-burn, which is too conservative given that cap-burn debt is chapter-local. Rubric-side resolution of recurring cap-burn root causes is the long-term fix; see CLAUDE.md rule 11 (TASTE-FLAG → RUBRIC-FIDELITY promotion via rubric REJECT-section edit auto-promotes to mechanical check next cycle). The b01c01 → V3 rubric pipeline is the worked example.
+
+**ADD ban at cap-burn (cross-reference to A3 above).** The fixer's cap-burn dispatch is DELETE-only. ADD operations at cap-burn would either (1) require a remediation budget the cap doesn't provide, or (2) introduce new HARDs that no slot can catch. The A3 cycle-3 ADD pre-validation rule above bans ADDs in cycle 3; this A2 rule bans ADDs at cap-burn (which IS cycle 3 cleanup); the two rules are co-deployed.
+
+**Escalation path.** If the user wants to attempt a fourth-cycle escalation (against the canonical DELETE path), the override is explicit: the user must (a) name the specific offending entries, (b) propose the structural fix (rubric edit / upstream artifact edit), (c) re-fire Phase 5b for the named facet only. The override is an out-of-band intervention recorded in `staff/auditor/facets-cap-burn-<chapter>-<timestamp>.md` § escalation; the run does not auto-extend the cycle cap.
 
 ### Output to disk
 

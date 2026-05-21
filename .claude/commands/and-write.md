@@ -85,9 +85,13 @@ Dispatch **screen-writer** with:
 **Screen-writer task — per scene:**
 
 1. Decompose the scene chunk into N bones, N inside `bones_per_scene` range (typical 5-15).
-2. **Each bone declares one axis-movement** (occasionally two for hinge bones) with declared cost. Cost links to `series.substance.cost_ledger[].id` when applicable. Scene-action-sized: one scene-significant action per bone, not micro-beats.
-3. The scene's `substance_delta` is the **aggregation target**: per-axis sum of bone-Δ must equal scene-Δ within ±1 rank.
-4. Honor `scene_conflict`: the protagonist_force is visible across multiple bones; the opposing_force is visible in at least one bone (or HARD `OPPOSING-FORCE-MISSING` at Phase 6).
+2. **Each bone takes one of three shapes** per the 2026-05-21 axis-bookkeeping split (`schemas/showrunner-memory.schema.md`):
+   - **Moving bone (typical).** `axis_moves: [{axis, direction: up|down, magnitude: > 0}]` — one axis-movement (occasionally two for hinge bones). Cost links to `series.substance.cost_ledger[].id` when applicable.
+   - **Held bone (discipline-enacting).** `axis_moves: []` + `axes_held: [{axis, rationale}]` — the SVO enacts a discipline that holds an axis flat (e.g. `taylor holds the feet` enacts capability-held). The held axis is load-bearing for the scene's stakes; `rationale` names the discipline.
+   - **Chatter bone (setup / transition).** `axis_moves: []` + no `axes_held` — pure setup/transition, allowed only when it pays a later gain (`cost_ledger_anchor` REQUIRED). Trim pass culls chatter over the density cap.
+   Scene-action-sized in all three cases: one scene-significant action per bone, not micro-beats. `direction: null` / `magnitude: 0` in `axis_moves[]` is malformed (Phase 2 `FAULT-BONE-DELTA-MALFORMED`).
+3. The scene's `substance_delta` is the **aggregation target**: per-axis sum of bone-Δ from `axis_moves[]` must equal scene's `axes_in_motion[<axis>]` target within ±1 rank. Held axes contribute zero by definition and must each have at least one bone in the scene with that axis in its bone-level `axes_held[]`.
+4. Honor `scene_conflict`: the protagonist_force is visible across multiple bones; the opposing_force is visible in at least one bone (or HARD `OPPOSING-FORCE-MISSING` at Phase 6). In held-discipline scenes, the opposing_force may be enacted by the held bone itself (the rule catches the assessment; the body holds against pressure) — the rationale on `axes_held[]` should name how the bone-level enactment satisfies the opposing-force requirement.
 5. Author with full SVO discipline. Speech bones use `speaks to` form.
 
 Each bone is appended to `chapters[<chapter>].scenes[<scene>].bones[]` in memory with `slug: b<NN>c<MM>s<KK>n<II>` (auto-generated). `flat_id` is NOT yet assigned (Phase 7 owns flat_id assignment).
@@ -116,7 +120,7 @@ Dispatch **auditor** (fork) with:
 | FAULT-FORM | SVO shape violation (copula, negation, conjunction, modifier, perception verb, interiority — per `schemas/bones.schema.md`) |
 | FAULT-CONSTRAINT | Violates a cond-* card, series law, or lore fact |
 | FAULT-PHYSICAL | Prop not on set, actor not present, exit doesn't exist |
-| FAULT-BONE-DELTA-MALFORMED | `substance_delta.axis_moves[].axis` not in `series.substance.state_axes[].slug`; magnitude outside `chunk_targets.bone.delta_per_axis`; cost lists an axis not in scene's `substance_delta.axes_in_motion[]` or in cost_ledger anchor scope |
+| FAULT-BONE-DELTA-MALFORMED | `substance_delta.axis_moves[].axis` not in `series.substance.state_axes[].slug`; `axis_moves[].direction` not in `{up, down}` (null / `~` / `+` / `-` all malformed); `axis_moves[].magnitude` not strictly positive (zero or negative malformed — use `axes_held[]` for held-flat axes or empty `axis_moves: []` for chatter bones); magnitude outside `chunk_targets.bone.delta_per_axis`; cost lists an axis not in scene's `substance_delta.axes_in_motion[]` or in cost_ledger anchor scope; `axes_held[]` entry missing `rationale` field; `axes_held[]` entry's axis not in `series.substance.state_axes[].slug`; chatter bone (`axis_moves: []` + no `axes_held`) without `cost_ledger_anchor` (chatter bones must pay a later gain) |
 | FAULT-AGGREGATE-DELTA-MISMATCH | Aggregate per-axis bone-Δ for this scene differs from scene `substance_delta` by more than ±1 rank |
 | FAULT-COST-LEDGER-UNRESOLVED | `bones[].substance_delta.cost_ledger_anchor` points at an id missing from `series.substance.cost_ledger[]` |
 
@@ -214,17 +218,31 @@ Auditor returns report at `staff/auditor/write-<chapter>-pass5.md`.
 
 **Replaces URI-026 tens-gate.** This is the substance overhaul's primary authoring gate. Dispatch **auditor** (third fork) + the three **audience personas** in parallel against scene-window slices.
 
+**Frame-coda exemption (2026-05-21).** If `chapters[<slug>].substance_delta.chapter_class: frame-coda` is set, Phase 6 substance bone-gate is skipped entirely. Frame-coda chapters (e.g. archmaester-retrospective interludes) are reviewed for frame-shape by dramatist only; their bones do not need to deliver protagonist-axis Δ. Phase 7 emission proceeds without bone-gate verdict writes.
+
 ### Per-bone verification (auditor)
 
-For each bone:
+For each bone, classify by shape (per the 2026-05-21 axis-bookkeeping split):
+
+**Moving bones (`axis_moves` non-empty):**
 - **Bonefide check:** the SVO physically causes the declared Δ. "maya confronts tomas, +2 community, -1 emotional" is bonefide if confronting tomas plausibly causes those movements given the scene contract. "maya enters the yard, +2 community" is not bonefide.
 - **Rank claim has visible cause:** no axis-move without a physical action that drives it. Otherwise `SUBSTANCE-FLAT-<axis>` (HARD).
+
+**Held bones (`axis_moves: []` + `axes_held` non-empty):**
+- **Discipline-enactment check:** the SVO enacts a stillness-against-pressure / dormancy / restraint pattern on the held axis. Licit verbs: `holds` (narrow body-part-stillness license per `schemas/bones.schema.md`), bare-action-with-discipline-rationale (e.g. `the insects fill the block` with `axes_held: [{axis: capability, rationale: "ambient-drift verb; rule holds capability at rank N"}]`). The rationale must name the discipline the bone enacts. Otherwise `HELD-AXIS-NOT-ENACTED` (HARD).
+- **Held axis is load-bearing:** the held axis must appear in the scene's `axes_held[]` list (parent contract) OR the scene's `scene_conflict.stakes_axis` resolves to this axis. A bone-level `axes_held` entry on an axis the parent scene didn't declare is `HELD-AXIS-UNCONTRACTED` (HARD).
+
+**Chatter bones (`axis_moves: []` + no `axes_held`):**
+- **Cost-ledger payment check:** must have `cost_ledger_anchor` pointing at a `series.substance.cost_ledger[]` entry that resolves at-or-under this scene. Otherwise `CHATTER-UNPAID` (HARD).
+- **Density-cap check:** count of chatter bones per scene cannot exceed `(1 - density_target.min) × bone_count`. Beyond → SIGNAL `CHATTER-OVER-CAP` (the trim pass should have culled).
 
 ### Per-scene verification (auditor)
 
 For each scene:
-- **Per-axis Δ delivered within ±1 rank of contract:** aggregate bone-Δ on each axis is within ±1 of `scenes[].substance_delta.axes_in_motion[<axis>]`. Beyond ±2 → HARD `AXIS-DELTA-MISMATCH`; ±1-±2 → SIGNAL.
-- **`scene_conflict.opposing_force` visible:** at least one bone shows the opposing force pushing. Otherwise `OPPOSING-FORCE-MISSING` (HARD).
+- **Per-axis Δ delivered within ±1 rank of contract (axes_in_motion only):** aggregate bone-Δ on each axis is within ±1 of `scenes[].substance_delta.axes_in_motion[]` where `axes_in_motion[].axis == <axis>`. Beyond ±2 → HARD `AXIS-DELTA-MISMATCH`; ±1-±2 → SIGNAL. Held axes contribute zero by definition and are not checked under this rule.
+- **Held axes have bone-level enactment:** for each entry in `scenes[].substance_delta.axes_held[]`, at least one bone in the scene must have that axis in its bone-level `axes_held[]`. Otherwise `HELD-AXIS-NOT-WITNESSED` (HARD).
+- **`scene_conflict.stakes_axis` is in union:** resolves to either `scenes[].substance_delta.axes_in_motion[<axis>]` OR `scenes[].substance_delta.axes_held[<axis>]`. Otherwise `STAKES-AXIS-MISSING` (HARD).
+- **`scene_conflict.opposing_force` visible:** at least one bone shows the opposing force pushing. In held-discipline scenes (stakes_axis ∈ axes_held), a bone whose `axes_held` rationale names the opposing-force enactment satisfies this check (the rule catching the pull is the opposing force made visible). Otherwise `OPPOSING-FORCE-MISSING` (HARD).
 - **Cost-ledger entries paid by visible bones:** for each `series.substance.cost_ledger[]` entry whose anchor resolves at-or-under this scene, at least one bone has `substance_delta.cost_ledger_anchor` matching the entry's id AND the bone's cost direction matches. Otherwise `SUBSTANCE-SUSPECT-cheap-gain-<axis>` (HARD) OR `COST-NOT-PAID` (HARD).
 
 ### Per-scene-window audience review
@@ -233,6 +251,28 @@ Each of the three audience personas reviews per scene window:
 - `SUBSTANCE-FELT` PASS — the scene's declared Δ lands felt by this persona.
 - `SUBSTANCE-FLAT-<axis>` HARD — the persona doesn't feel the declared movement on `<axis>`.
 - `SUBSTANCE-SUSPECT-cheap-gain-<axis>` HARD — the persona feels the gain but doesn't feel the cost.
+
+**Per-scene coverage discipline (URI-WRITE-BONE-GATE-COVERAGE, A9 — 2026-05-21).** Every scene in the chapter must be reviewed by all three personas. Output: one verdict file per persona, with an explicit per-scene block for EVERY scene in the chapter. The verdict file shape:
+
+```yaml
+---
+reviewer: <persona-slug>
+chapter: <chapter-slug>
+phase: write-bone-gate
+date: <YYYY-MM-DD>
+scenes_reviewed: [<scene-slug>, <scene-slug>, ...]   # MUST equal the chapter's full scene list
+---
+
+## scene <scene-slug>
+verdict: SUBSTANCE-FELT | SUBSTANCE-FLAT-<axis> | SUBSTANCE-SUSPECT-cheap-gain-<axis>
+<reasoning>
+
+## scene <scene-slug>
+verdict: ...
+...
+```
+
+Orchestrator validation: before persisting bone-gate verdicts, verify `scenes_reviewed[]` in every persona's verdict file equals the chapter's full scene list (`chapters[<slug>].scenes[].slug`). If any scene is missing from any persona's coverage, **HARD-ABORT:** re-dispatch that persona with the missing scenes named in the brief. **Promoted from b01c01 audit-gap discovered post-hoc: s03 was never voted by the audience trio in the bone-gate; only the auditor covered it. The per-scene coverage check makes coverage gaps mechanically detectable instead of discovery-by-postmortem.**
 
 ### HARD / SIGNAL classification
 
