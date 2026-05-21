@@ -18,10 +18,10 @@ aggregate_range: 1-29
 8 the near witness faces the alley-mouth [loc-state:6] [mem:1] [narrator:3] [vibes:8]
 9 taylor-hebert-kl-122ac holds the feet
 10 coll-net-mender-flea-bottom works the net
-12 coll-net-mender-flea-bottom lifts the eyes [loc-state:7] [state:10] [vibes:10]
+12 coll-net-mender-flea-bottom lifts the eyes [feel:1] [loc-state:7] [state:10] [vibes:10]
 13 coll-net-mender-flea-bottom pulls the net
 14 taylor-hebert-kl-122ac faces the alley-mouth [loc-state:8]
-15 wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac [feel:2] [loc-state:9] [narrator:4] [state:12] [state:15] [vibes:6] [vibes:7]
+15 wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac [feel:3] [loc-state:9] [narrator:4] [state:12] [state:15] [vibes:6] [vibes:7]
 16 taylor-hebert-kl-122ac lifts the eyes
 17 the near witness crosses the lane [loc-state:10] [vibes:9]
 18 taylor-hebert-kl-122ac threads the needle
@@ -33,5 +33,12 @@ aggregate_range: 1-29
 25 taylor-hebert-kl-122ac strikes the line [mem:2] [narrator:5] [state:6] [vibes:11]
 26 taylor-hebert-kl-122ac underlines the entry [state:7] [state:13]
 27 taylor-hebert-kl-122ac sets the pen [state:8]
-28 taylor-hebert-kl-122ac holds the hand [feel:1] [narrator:6]
+28 taylor-hebert-kl-122ac holds the hand [feel:2] [meta:1] [narrator:6]
 29 taylor-hebert-kl-122ac closes the ledger [state:9] [vibes:12]
+
+# R2.5 exposition citation cascade:
+# - exposition:2 DELETED — token stripped from @2 (water-carrier; single-mention fixture).
+# - exposition:3 DELETED — token stripped from @8 (near-witness; narrator:3 + mem:1 cover).
+# - exposition:4 RE-ANCHORED @5 → @4 — token moved off the peak hinge into the approach zone.
+# - exposition:1 @0 (prior-episode-bridge) carries no proto-line token (renders at @0 preamble).
+# - exposition:5 @23 token retained (reworded content; anchor unchanged).
