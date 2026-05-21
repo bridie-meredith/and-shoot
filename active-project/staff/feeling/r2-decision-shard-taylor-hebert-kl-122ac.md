@@ -1,0 +1,19 @@
+---
+facet: feeling
+episode: b01c02
+layer: R2.3
+character: taylor-hebert-kl-122ac
+cite_index_hash: 7fb82f0caa9c055b998f3e5ea32bda516cd64f170329d49a22f8fb11a39d08f6
+f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
+---
+
+# R2.3 — feeling judge, taylor-hebert-kl-122ac slice (b01c02)
+
+feel:2 @28 — Read cold, with the proto-line "taylor holds the hand" and nothing else: "her hand closes short of the page and does not finish the reach" stands on its own. The hand stopping before the page is a body-event the bare proto-line leaves invisible — "holds the hand" names a hold but shows no body. The entry shows the hold. I block out @29 with my hand: the entry still works without the ledger closing — it is not leaning on the close; the unfinished reach is complete at its own anchor as the body refusing the extension. The co-cites are narrator:6 and meta:1. NI:6 — "the not-closing is the only line tonight she is sure of" — is cognition: she knows which line she trusts. The feeling entry is the somatic show of that same beat, the hand actually closing short. Distinct jobs, no POV-duplicate-with-NI: NI registers what she's sure of, feeling shows the hand doing it. The tell matches her card: §Voice has "affect appears in brief body-signals before the analytical voice reasserts," and the §Signature "second answer" is refusal held long enough to be legible — the hand stopping short of the reach is exactly that refusal in the body, not narrated. This is a scene-C peak-bone and the scene-map's named dual-discipline hold (capability + moral-framework both held); it is the episode's structural refusal pivot, the at-night sibling of the C4 calibration anchor (@39 body-commit fires). It earns its clause. Form is clean — one body-action clause plus a permitted verbalized-micro-action of refraining ("does not finish the reach"); no second-clause subject-shift to an abstraction-noun, no temporal-latency gloss, no rule-statement, no named-feeling vocabulary, no hedge, no simile. It is taylor's only fire in scene-C and her only fire in the chapter — the cap is intact and the sparsity (one fire on 27 beats) is the rubric's intended frugal shape.
+VERDICT: KEEP
+
+PATTERN-SCAN: Across the consolidated feeling file the three fires read as three distinct cost-registers and three distinct vocabularies — coll drops his eyes back to the mesh (deflection-into-craft), wren's eyes go to the alley-mouth before her head turns (attention-leading-the-body), taylor's hand closes short of the page (refusal-held-in-the-hand). No somatic-tell verb repeats; no construction template repeats; nothing in taylor's single slice can saturate against itself. Nothing patterned in my scope.
+
+CAP-REFUSAL: feel:<candidate> @24 taylor-hebert-kl-122ac — I considered a build-beat fire at "writes the line," but it fails on two counts and I did not believe in it on either. The per-scene per-character cap is already spent at @28, and that is the right place to spend it: the ledger sequence @22-@27 is deliberately at-rest in administrative register, the somatic break reserved for the peak. A fire at @24 would not be at-rest evidence calling for an entry — it would be filling the bare-proto-line niche the cite-index flags. The honest read of scene-C wants exactly one taylor somatic fire, and it is the one R1 already placed.
+
+FLAGGED SEAM (note only, not my mutation): metaphor meta:1 @28 carries `licensed-by: feeling:PROVISIONAL +memory:@9`. Per the shared brief this resolves against feel:2 @28 — feel:2 exists, is KEPT, and carries the hand-holding somatic register meta:1's allegory ("the hand holds what the feet held at dawn") depends on. The provisional anchor resolves cleanly. The `+memory:@9` fragment is a separate matter for the metaphor judge; memory has no entry at @9 in this graph (mem:1 @8, mem:2 @25), so that half of the license does not resolve — surfaced here for R2's metaphor layer, outside feeling's self-scoped authority.
