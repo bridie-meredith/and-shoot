@@ -8,8 +8,8 @@ Audit reports are returned by auditor to showrunner. They are never stored in th
 
 ```yaml
 audit:
-  scope: episode | season | series
-  target: <episode slug, season slug, or series>
+  scope: bone | scene | chapter | book | series | pipeline
+  target: <slug at the named scope — e.g. b01c01s01n03, b01c01s01, b01c01, b01, series, or "pipeline" for the meta-state tri-walk>
   timestamp: <ISO date>
   findings:
     - id: <fault-NNN>
@@ -18,6 +18,16 @@ audit:
       why: <why it matters — what downstream consequence this creates>
       criteria: <what fixer must achieve to resolve — only required for fault and escalate>
 ```
+
+Scope vocabulary (post-URI-SUBSTANCE-OVERHAUL, 2026-05-17):
+- `bone` — single bone (e.g. `b01c01s01n03`).
+- `scene` — single scene chunk (e.g. `b01c01s01`).
+- `chapter` — single chapter (e.g. `b01c01`).
+- `book` — single book (e.g. `b01`).
+- `series` — series-level.
+- `pipeline` — pipeline meta-state (schema ↔ command-body ↔ rubric tri-walk; target is the literal string `pipeline`). Used by `/and-review pipeline`.
+
+Pre-overhaul `episode | season` are dropped from this enum. Reports written before the overhaul under those scopes are preserved in `archive/` and `active-project/projects/`; they remain readable but new reports use the current vocabulary.
 
 ---
 
@@ -71,24 +81,24 @@ Fixer determines the minimum change to meet the criteria. Auditor does not presc
 
 ```yaml
 audit:
-  scope: episode
-  target: s01e02
-  timestamp: 2026-05-04
+  scope: chapter
+  target: b01c02
+  timestamp: 2026-05-21
   findings:
     - id: fault-001
       type: fault
-      what: show file line 23
-      why: Mira uses a keycard she lost in episode 1 (state file shows inventory: empty since s01e01 close)
+      what: bones file line 23 (bone b01c02s01n04)
+      why: Mira uses a keycard she lost in b01c01 (state file shows inventory: empty since b01c01 close)
       criteria: line must not require Mira to possess or use the keycard
     - id: fault-002
       type: flag
-      what: episode script bullet 14
+      what: chapter chunk for b01c02 scene s02 bullet 14
       why: bullet calls for interior monologue but actor has no established interiority in this scene — editor may want to address tone
     - id: fault-003
       type: escalate
-      what: season plan chunk for s01e02
-      why: episode chunk requires resolving the Mira trust arc but season plan placed that resolution in s01e04; the episode cannot deliver its chunk without contradicting the season plan
-      criteria: showrunner must decide whether to advance the season resolution or revise the episode chunk
+      what: book chunk for b01 (chapter b01c02 entry)
+      why: chapter chunk requires resolving the Mira trust arc but book chunk placed that resolution in b01c04; the chapter cannot deliver its chunk without contradicting the book chunk
+      criteria: showrunner must decide whether to advance the book-level resolution or revise the chapter chunk
 ```
 
 ---
@@ -103,7 +113,7 @@ audit:
 ---
 report: r2-decision-shard
 facet: <facet slug>             # e.g. memory | feeling-taylor | sensory | vibes | ...
-episode: <episode slug>          # e.g. s01e01
+episode: <chapter slug>          # e.g. b01c01 — field name kept for downstream-compat with the bones-file header; value is the chapter slug under the substance overhaul
 date: <ISO date>
 cite_index_hash: <sha>           # REQUIRED (V3, A6, 2026-05-21) — SHA of theater/facets/_cite-index.md at shard-authoring time; /and-facets Phase 3 cross-session stale-shard check compares this to current cite-index SHA
 f-r2-counts: {f-r2-1: N, f-r2-2: N, f-r2-3: N, f-r2-4: N}
@@ -122,7 +132,7 @@ VERDICT: KEEP | DELETE | ADD — F-R2-<n>:<class> if classified, else clean.>
 ```
 ---
 report: r2-decisions-consolidated
-episode: <episode slug>
+episode: <chapter slug>          # field name kept for downstream-compat; value is the chapter slug (e.g. b01c01)
 date: <ISO date>
 shards: <list of source shard paths>
 f-r2-counts: {f-r2-1: N, f-r2-2: N, f-r2-3: N, f-r2-4: N}

@@ -296,7 +296,7 @@ Dispatch **auditor** (fork) with the full graph:
 - R2 decision-log: `.r2-decisions.md`.
 - All active warehouse cards (`active-project/warehouse/*.card.md`) — for constraint checks against cond-* and loc-* cards.
 - All behavior cards in scope (`cards/dialects/<character-slug>.card.md` and composition stack via margit) for every speaking character — for CONSTRAINT § behavior-card-compliance checks.
-- Series + season plans (showrunner memory) — for series-law constraint checks.
+- Series plans (showrunner memory: `series.chunk`, `series.substance`, `series.laws`, `series.lore`, `series.behaviors`) — for series-law constraint checks.
 - Schemas: `facet.schema.md`, `dialogue.schema.md`, `audit-report.schema.md`.
 
 **Forbid loading:** behavior cards, vibes-as-bias, audience personas (except for exposition CONSTRAINT § license-completeness check, which requires loading the persona slugs to verify `licensed-by:` references resolve — load names only, not content), source prose. The auditor reads the graph mechanically against constraints, not aesthetically.
@@ -700,4 +700,4 @@ The critic does NOT mutate facets or cancel the run. It produces the standard; o
 - **Audience interest-flags are skipped.** When tuned, it joins the R1 parallel block (one dispatch per persona).
 - **Vibe-cloud write-back is deferred.** Post-author propagation of vibe deltas to actor/loc/studio files happens in and-wrap or a follow-on showrunner dispatch.
 - **Cross-facet deletion authority** belongs to the audit only. Once auditor is tuned for delete-authority, HARD findings execute as deletes with cascade. Until then, audit is flag-only and remediation routes back to authors as a separate work cycle (re-run /and-facets after fixes land, or fire targeted author dispatches).
-- **Shared reviewer assets** (audience persona `Threshold Discipline` + `Season-Scope Adversarial` body sections; auditor class library — `CURVE-SHAPE` / `AP-SCAN` / `FREQUENCY-BAND` definitions) are authored once and consumed from both `/and-season` and `/and-facets`. Patterns the audience flags at `/and-season` bone-gate graduate into AP-SCAN entries via the shared auditor's TASTE-FLAG → AP-SCAN promotion path.
+- **Shared reviewer assets** (audience persona `Threshold Discipline` body sections; auditor class library — `CURVE-SHAPE` / `AP-SCAN` / `FREQUENCY-BAND` / `RUBRIC-FIDELITY` definitions) are authored once and consumed from both `/and-write` and `/and-facets`. Patterns the audience flags at `/and-write` Phase 6 bone-gate (per-scene audience coverage review) graduate into AP-SCAN entries via the auditor's TASTE-FLAG → AP-SCAN promotion path. Patterns the audience flags at `/and-facets` Phase 5b graduate into RUBRIC-FIDELITY entries by adding the rule to the relevant facet rubric's REJECT / anti-pattern / cross-facet contract section.

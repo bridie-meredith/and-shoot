@@ -2,112 +2,70 @@
 description: Stop the current pipeline, save a resume checkpoint, and print a clean "you are here" summary. Use before stepping back to revisit plans, wiping context, or ending a session mid-run. Usage: /and-cut
 ---
 
-Pause the current pipeline. Write a resume checkpoint. Print state. Nothing is deleted.
+Pause the current pipeline. Read the cascade checkpoint (if a cascade is in flight), report position from showrunner memory, and print the resume command. Nothing is deleted.
+
+`/and-cut` is non-destructive. It reads `staff/showrunner/memory.md` + `staff/showrunner/cascade-checkpoint.md` and prints "you are here." If a cascade is in-progress (`active.cascade_in_progress: true`), it annotates the existing checkpoint with `reason: halted-on-cut`. Otherwise it writes nothing besides the cut-log breadcrumb.
 
 ---
 
 ## Phase 1 — Survey state
 
-Read `active-project/staff/showrunner/memory.md`.
+Read `active-project/staff/showrunner/memory.md`. Extract:
 
-Then check the following files for existence and content:
+- `active.book`
+- `active.chapter`
+- `active.cascade_in_progress`
+- For the active chapter (if any): `books[<active.book>].chapters[<active.chapter>].status` (one of: `planned`, `bones-written`, `audited-r1`, `faceted-r2`, `stitched`).
+- For the active book (if any): `books[<active.book>].orchestrator_critic_verdict` (if present).
+- `project.series_audit.approved_at` + `project.series_audit.stale_since` (to detect pre-cast or post-cast position).
+
+Then check the following files for existence:
 
 | File | Meaning if present |
 |------|--------------------|
-| `active-project/theater/show.md` | Shoot in progress or complete |
-| `active-project/theater/shoot-log.md` | Shoot log — how far through bullets |
-| `active-project/theater/episode-plan.md` | Plan complete |
-| `active-project/theater/episode-plan-log.md` | Plan review ran |
-| `active-project/theater/wrap-structure-log.md` | Wrap started — structure step ran |
-| `active-project/theater/wrap-audience-log.md` | Wrap started — audience step ran |
-| `active-project/staff/auditor/<episode-slug>-wrap-audit.md` | Auditor step ran |
-| `active-project/polish/<episode-slug>.md` | Wrap complete — final draft exists |
+| `active-project/staff/showrunner/cascade-checkpoint.md` | Cascade was invoked at some point (may or may not still be running) |
+| `active-project/theater/bones/<book>-<chapter>.md` | Bones emitted for the active chapter |
+| `active-project/theater/facets/scene-map-<book>-<chapter>.md` | `/and-write` Phase 7 scene-map facet present |
+| `active-project/theater/facets/_cite-index.md` | `/and-facets` Phase 2 cite-index built |
+| `active-project/draft/<book>-<chapter>.md` | `/and-stitch` Phase 8 draft emitted |
 
-Derive current pipeline position:
+Derive `pipeline_position`:
 
-- **between-episodes** — active episode is `complete`; next episode is `planned`; no in-progress theater files for the next episode
-- **pre-shoot** — active episode is `planned`; no show.md or show.md is header-only (≤ 4 lines)
-- **mid-shoot** — active episode is `planned`; show.md has content beyond the header; no wrap logs present
-- **shoot-complete** — active episode is `shot`; show.md has content; no wrap logs present
-- **mid-wrap** — active episode is `shot`; one or more wrap logs exist but polish file does not
-- **wrap-complete** — active episode is `complete`; polish file exists
+- **pre-series** — `project.series_audit.approved_at` is missing. Next step: `/and-series`, `/and-substance series`, `/and-cast`.
+- **pre-book** — series audit approved; no `books[<b>].chunk` populated. Next step: `/and-substance book b<NN>`.
+- **pre-chapter** — book has `chunk` + `drama` + chapters[] populated; active chapter has no `pov_narrator` / `dramatic_shape` / `goal`. Next step: `/and-substance chapter b<NN>c<MM>`.
+- **pre-write** — active chapter is `planned` (substance contract populated, no bones). Next step: `/and-write b<NN>c<MM>`.
+- **pre-facets** — active chapter is `bones-written`. Next step: `/and-facets b<NN>c<MM>`.
+- **pre-stitch** — active chapter is `audited-r1` or `faceted-r2`. Next step: `/and-stitch b<NN>c<MM>`.
+- **chapter-complete** — active chapter is `stitched`. Next step: `/and-substance chapter b<NN>c<MM+1>` (or next book's c01 if last chapter in book).
+- **book-complete** — every chapter under active book is `stitched`. Next step: `/and-review verdict b<NN>` (optional) → `/and-substance book b<NN+1>`.
+- **cascade-in-progress** — `active.cascade_in_progress: true`. Position derived from `cascade-checkpoint.md` `last_completed` + `next` instead of the per-chapter status fields above.
 
 ---
 
-## Phase 2 — Write checkpoint
+## Phase 2 — Handle cascade-in-progress (if any)
 
-Write `active-project/staff/showrunner/cut-state.md`:
+If `active.cascade_in_progress: true`:
 
-```markdown
-# cut-state — <ISO date>
+1. Read `staff/showrunner/cascade-checkpoint.md`. Validate it parses per the schema in `.claude/commands/and-substance.md § Cascade § Checkpoint`.
+2. Update the checkpoint in place: set `reason: halted-on-cut`. Leave `last_completed` and `next` untouched (the cascade resumes from `next.command`).
+3. The resume command is `/and-substance <cascade.root> --cascade --resume`.
 
-## Position
-pipeline_phase: <between-episodes | pre-shoot | mid-shoot | shoot-complete | mid-wrap | wrap-complete>
-active_season: <slug>
-active_episode: <slug>
-episode_status: <planned | shot | complete>
+If `active.cascade_in_progress: false`:
 
-## In-progress files
-<list each theater/ file that exists with a one-line status, e.g.:>
-- show.md: present — <line count> lines
-- shoot-log.md: present — bullet N of M complete
-- wrap-structure-log.md: present
-- [none]
-
-## Resume instructions
-<one of the blocks below, selected by pipeline_phase>
-```
-
-Resume instructions by phase:
-
-**between-episodes:**
-```
-Next: /and-shoot  (begins s<NN>e<NN>)
-Nothing in progress. Clean cut.
-```
-
-**pre-shoot:**
-```
-Next: /and-shoot  (plan not yet started or header-only)
-Nothing to recover.
-```
-
-**mid-shoot:**
-```
-Next: review show.md to find last completed bullet, then either:
-  (a) continue: re-run /and-shoot — it will detect show.md has content and stop; delete show.md + shoot-log.md manually to restart from scratch
-  (b) abandon and restart: delete active-project/theater/show.md and active-project/theater/shoot-log.md, then re-run /and-shoot
-```
-
-**shoot-complete:**
-```
-Next: /and-wrap
-Shoot is done. Run wrap to close the episode.
-```
-
-**mid-wrap:**
-```
-Next: /and-wrap — but check existing wrap logs first.
-Wrap logs already exist. If wrap was interrupted, delete wrap-structure-log.md and wrap-audience-log.md manually, then re-run /and-wrap.
-```
-
-**wrap-complete:**
-```
-Wrap is done. Final draft at active-project/polish/<slug>.md.
-Next: /and-shoot  (begins next episode)
-```
+- No checkpoint mutation. Resume command is derived from `pipeline_position` directly (no `--cascade --resume` form needed).
 
 ---
 
 ## Phase 3 — Annotate showrunner memory
 
-Append a `cut:` line to `active-project/staff/showrunner/memory.md` under a `# cut-log` section (create the section if it doesn't exist):
+Append a `cut:` line to `active-project/staff/showrunner/memory.md` under a `# cut-log` section (create the section if it doesn't exist, at the very end of the file after `routing:`):
 
 ```
-cut: <ISO date> — <pipeline_phase> — <active_episode>
+cut: <ISO date> — <pipeline_position> — book=<active.book> chapter=<active.chapter> cascade=<true|false>
 ```
 
-This leaves a breadcrumb in the memory file without disrupting any existing fields.
+Breadcrumb only. No state mutation.
 
 ---
 
@@ -116,29 +74,34 @@ This leaves a breadcrumb in the memory file without disrupting any existing fiel
 Print to the user:
 
 ```
---- CUT: <pipeline_phase> ---
+--- CUT: <pipeline_position> ---
 
 YOU ARE HERE
-  season:  <slug>
-  episode: <slug> (<status>)
-  phase:   <pipeline_phase>
+  book:    <active.book or "none">
+  chapter: <active.chapter or "none"> (<status or "n/a">)
+  cascade: <true | false>
+  phase:   <pipeline_position>
 
-IN-PROGRESS FILES
-  <list or "none">
+IN-PROGRESS ARTIFACTS
+  <list each existing file from the Phase 1 file table with a one-line status, or "none">
 
-TO RESUME
-  <resume instructions from checkpoint, verbatim>
+NEXT
+  <single resume command line, e.g. "/and-substance chapter b01c02" or "/and-write b01c01">
 
-Checkpoint saved: active-project/staff/showrunner/cut-state.md
-Context is safe to wipe. Run the resume command above when you return.
+[if cascade-in-progress, add:]
+RESUME
+  /and-substance <cascade.root> --cascade --resume
+  Checkpoint: staff/showrunner/cascade-checkpoint.md (reason: halted-on-cut)
+
+Context is safe to wipe. Run the NEXT (or RESUME) command above when you return.
 ```
 
 ---
 
 ## Notes
 
-- `/and-cut` is non-destructive. It reads state and writes a checkpoint. Nothing is deleted or modified except the cut-log annotation in memory.md.
-- It is safe to run at any point in the pipeline, including between episodes.
-- The cut-state.md file is overwritten each time `/and-cut` runs. Only the most recent cut is kept.
-- To actually clear in-progress work (restart a shoot from scratch), the human must delete the relevant files manually. `/and-cut` tells them exactly which files and why — it does not delete anything itself.
-- The cut-log in memory.md accumulates across sessions. It is a breadcrumb trail, not state.
+- `/and-cut` is non-destructive. It reads state, optionally annotates the cascade-checkpoint's `reason` field to `halted-on-cut`, and appends a breadcrumb to `memory.md` under `# cut-log`. Nothing else is mutated or deleted.
+- It is safe to run at any pipeline position, including pre-series.
+- The cut-log in `memory.md` accumulates across sessions. It is a breadcrumb trail, not state.
+- To actually clear in-progress work (e.g. wipe bones + facets + draft to restart a chapter from scratch), the human or a targeted `revise` / `redo` re-run of the appropriate authoring command handles it. `/and-cut` only reports.
+- A bare `cascade-checkpoint.md` (file exists but `active.cascade_in_progress: false` in memory) is a stale checkpoint from a prior, completed cascade. `/and-cut` reports it under IN-PROGRESS ARTIFACTS but does not mutate it.
