@@ -26,6 +26,7 @@ Subcommands:
   facets <chapter-slug>         per-facet rubric runners on a chapter
   cast                          dramatist + auditor on the roster
   consistency [<root-slug>]     cross-level + cross-chapter sweep (defaults to series)
+  pipeline                      schema ↔ command-body ↔ rubric tri-walk; catches cross-file drift
   tree [<root-slug>]            full review sweep at and below root (defaults to series)
   feedback <feedback-file> [<root-slug>]   reviewers fire carrying named feedback as context
   verdict <book-slug>           orchestrator-critic on a book; absorbs former /and-judge-book
@@ -36,6 +37,7 @@ Recommended next-actions:
   To inspect SIGNAL findings on a chapter:         /and-review bones <chapter-slug>
   To check a planning chunk you just wrote:        /and-review chunk <chunk-slug>
   To sweep an in-progress book:                    /and-review tree <book-slug>
+  To audit pipeline drift after schema/rubric edits: /and-review pipeline
 
 All reports persist to active-project/staff/reviews/<subcommand>-<target>-<timestamp>.md
 ```
@@ -163,6 +165,30 @@ What it reviews:
 - **Cross-chapter handoff sweep:** for every adjacent chapter pair under root, verify `handoff_out` ↔ `handoff_in` consistency (open-threads / world-state / character-state lists align); flag orphans, drops, or character-axis discontinuities.
 
 Lift basis: `/and-season` Phase 1 step 1g cross-season audit (generalized to cross-level under root).
+
+### `pipeline` (URI-REVIEW-PIPELINE, A10 — 2026-05-21)
+
+Target: none (operates on the entire pipeline meta-state).
+
+Reviewers: auditor (single fork, schema-audit mode).
+
+What it reviews — the schema-vs-command-body-vs-rubric tri-walk:
+1. **Schema vs command bodies.** For every field reference in `.claude/commands/*.md`, verify the field exists in the appropriate schema under `schemas/` (`showrunner-memory.schema.md`, `bones.schema.md`, `facet.schema.md`, `scene-map.schema.md`, `audit-report.schema.md`, `dialogue.schema.md`, `stitch-*.schema.md`). Flag stale field names, paths, enum values; deprecated direction encoding (`+|-|null` vs `up|down`); ghost references to dropped concepts (tensometer, `tens:`, URI-026, `/and-season`, etc.).
+2. **Schema vs rubrics.** For every schema-field reference in `design/shoot-v2/rubric-*.md`, verify the field exists in the relevant schema. Particularly: `axes_held[]`, `axes_in_motion[]`, `dramatic_shape` enum values, `rhythm-shape`, `peak-bones`, `chapter_class`.
+3. **Command bodies vs rubrics.** For every rubric reference in command bodies, verify the rubric path exists and the named rubric clauses are present at current version. Flag stale "Schema rename (pending)" notices, V3-lock-date inconsistencies, dispatch payloads referencing dropped facet types.
+4. **Residue scan.** Grep for known-deprecated terms across `schemas/`, `.claude/commands/`, `design/shoot-v2/rubric-*.md`, `active-project/`. Known-deprecated set: `tensometer`, `tens:` (as load-bearing prefix), `URI-026`, `tens-gate`, `/and-season`, `/and-judge-book`, `/and-shoot` (the legacy season-shoot), `direction: + | -`, `direction: null` (in non-historical contexts), `chapter_class` (if referenced but not in schema). Legitimate historical references in `archive/`, `design/substance/plan-holes-*.md`, etc. are TASTE-FLAGs, not HARDs.
+5. **CLAUDE.md sync.** Verify the agent routing table, schema authority table, directory map all reflect current state. Particularly the `theater/` subdir map and the schema authority table's coverage.
+
+Output: classified findings report at `active-project/staff/reviews/pipeline-<timestamp>.md` per `schemas/audit-report.schema.md`. Findings classes:
+- `STRUCT-<NNN>` for schema-vs-command-body / schema-vs-rubric / command-body-vs-rubric drift.
+- `RESIDUE-<NNN>` for deprecated-term residue (tensometer / `tens:` / URI-026 / etc.).
+- `TASTE-FLAG` for intentional historical documentation that looks like drift.
+
+HARD findings block the immediate next chain dispatch (e.g. `/and-substance chapter b<NN>c<MM>` aborts if `pipeline` returned HARDs since its last clean run); SIGNAL findings are reported but pass. The user is expected to dispatch `pipeline` after any significant schema / rubric / command-body change OR before the first chapter of every new book.
+
+Lift basis: the auditor-fork `pipeline-adaptation-audit-2026-05-21.md` worked example. Promoted from reactive-fork to a routine subcommand under URI-REVIEW-PIPELINE (A10 from `run-action-plan-b01c01-2026-05-20.md`).
+
+**When to run.** Recommended before each new book's first chapter (catches drift from the prior book's command-body / rubric edits) AND after any session that touched 3+ command-body / schema / rubric files (the audit catches cross-file inconsistencies the per-file fixer pass missed).
 
 ### `tree [<root-slug>]`
 

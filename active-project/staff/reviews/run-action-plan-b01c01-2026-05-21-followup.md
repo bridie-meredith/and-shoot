@@ -75,8 +75,7 @@ The parent plan's pre-flight checklist had eight items. Two are now done. The re
   - Gylda's currently `not-applicable` political-register-toward-elite may promote at d09-d10 if the naming-the-pattern moment positions her against the elite layer.
   - Corvan b01c18 INTERLUDE chapter is `chapter_class: frame-coda` and exempt from bone-gate — his cells should stay `static` or `not-applicable` (no promotions expected).
 
-**F5. Inspect b01c02-c17 chunk-level `substance_delta` blocks** for any remaining `direction: ~` / `direction: null` entries. [P1 · XS effort]
-- A grep over the full memory file found none post-conversion, but the b01-level chunks (lines ~800–1530) weren't all individually rewritten — only the rise-and-fall position-axis entry was touched. Run a clean re-scan after `/and-substance book b01` re-fires (or as a one-shot check) and convert any remaining cases.
+**F5. Inspect b01c02-c17 chunk-level `substance_delta` blocks** for any remaining `direction: ~` / `direction: null` entries. **DONE 2026-05-21** — grep confirmed memory.md is clean; only Corvan-coda b01c18 has empty `axes_in_motion: []` (correct, frame-coda).
 
 ---
 
@@ -85,25 +84,42 @@ The parent plan's pre-flight checklist had eight items. Two are now done. The re
 ```
 [x] F1  /and-substance + /and-write command bodies synced with new schema (axes_held + direction:up|down) (done 2026-05-21)
 [x] F2  sensory + memory rubrics tuned to V3 via facet-tuning-process harness (done 2026-05-21)
+[x] F5  b01c02-c17 chunk-level substance_delta rescan (done 2026-05-21 — clean)
 [x] A1  anchor-refresh HARD-ABORT at /and-facets Phase 0 (done 2026-05-21)
 [x] A2  cap-burn semantics codified (canonical = DELETE; done 2026-05-21)
 [x] A3  cycle-N fixer ADD pre-validation (rubric anti-pattern #14 + orchestration Phase 5b; done 2026-05-21)
-[x] A4  pipeline-adaptation audit re-run (done 2026-05-21 — auditor returned 5 HARD + 6 SIGNAL + 3 TASTE-FLAG; all HARDs + 4 actionable SIGNALs resolved same-session; see `staff/auditor/pipeline-adaptation-audit-2026-05-21.md`)
+[x] A4  pipeline-adaptation audit re-run (done 2026-05-21 — 5 HARD + 6 SIGNAL + 3 TASTE-FLAG; all HARDs + 4 actionable SIGNALs resolved same-session)
+[x] A5  cite-index builder deletion-aware (done 2026-05-21 — canonical `# DELETED <prefix>:<id>` marker recognized; auto-strip on render; deletion-aware stale-citation check)
+[x] A6  R2 stale-shard verification at /and-facets Phase 3 (done 2026-05-21 — cite_index_hash freshness check)
 [x] A9  bone-gate audience covers ALL scenes (done 2026-05-21 — per-scene coverage gate at /and-write Phase 6)
+[x] A10 /and-review pipeline subcommand (done 2026-05-21 — schema↔command-body↔rubric tri-walk promoted from reactive-fork to routine subcommand)
+[x] A11 prune persist-time intermediates (done 2026-05-21 — `_drafts/` archive subdir; signature/actor-baselines/b<NN>/b<NN>c<MM> drafts pruned at Phase 6)
 [x] A12 world-notes.md Lucerys/Nessa cleanup (done 2026-05-21)
+[x] A14 inline `# rubric-carve-out` schema support (done 2026-05-21 — facet.schema.md "Rubric carve-out preamble" section + parser contract + per-entry annotation rules)
 ```
 
-F4 and F5 are async — they can land across c02-c04 as the per-chapter scene-pinning naturally generates them.
+All BLOCKING + HIGH + MEDIUM items now done. F4 (per-chapter actor_baselines promotion) is async per-chapter work. A13 (formal `/and-review verdict b01`) requires c02+ to exist. A15 (per-bone direction=null mechanical check) is done via F1. A16 (project-scoped stitch-profile tuning) is not blocking; revisit when polish is undeferred.
 
 ---
 
 ## Files touched this session
 
-- `schemas/showrunner-memory.schema.md` — added `state_axes[].notes`, `actor_baselines[]` block, `axes_in_motion[]` explicit shape at all chunk levels, `axes_held[]` at all levels including bone, standardized `direction: up|down`, added field-notes paragraphs.
+- `schemas/showrunner-memory.schema.md` — added `state_axes[].notes`, `actor_baselines[]` block, `axes_in_motion[]` explicit shape at all chunk levels, `axes_held[]` at all levels including bone, standardized `direction: up|down`, added field-notes paragraphs, added `chapter_class: standard | frame-coda` field.
+- `schemas/facet.schema.md` — new "Rubric carve-out preamble" section (A14); parser contract for `# rubric-carve-out` / `# pragma carve-out` headers + per-entry annotation rules.
+- `schemas/audit-report.schema.md` — `cite_index_hash` field added to R2 decision shard frontmatter (A6); `/and-season` reference replaced with current consumers.
 - `design/substance/delta-targets.md` — `axis_moves` direction enum updated to `up|down`; new "three bone shapes" section (held / chatter / malformed).
-- `active-project/staff/showrunner/memory.md` — converted all chunk-level + bone-level null/zero entries; added `series.substance.actor_baselines[]` (dense 8×9=72-cell matrix; every actor × every axis with explicit applicability marker); cleaned `substance_delta_measured.axes_moved` for b01c01.
-- `design/shoot-v2/rubric-sensory.md` — V3 lock; short-chapter floor-vs-ceiling exemption clause; anti-pattern #14 (cycle-N ADD pre-validation).
-- `design/shoot-v2/rubric-memory-flags.md` — V3 lock; feel-as-spine equivalence carve-out on Licensing-discipline axis (and propagated through REJECT, cross-axis test, anti-pattern #7, ceiling defense).
-- `design/shoot-v2/sensory-memory-v3-tuning-summary.md` — harness pass record + re-audit walk against b01c01 cap-burn corpus.
-
-No command bodies were edited in this session — F1 captures that work.
+- `active-project/staff/showrunner/memory.md` — converted all chunk-level + bone-level null/zero entries; added `series.substance.actor_baselines[]` (dense 8×9=72-cell matrix); cleaned `substance_delta_measured.axes_moved` for b01c01.
+- `active-project/staff/cite-index/build_cite_index.py` — A5 deletion-aware: `DELETION_RE` regex, `parse_deletions()` + `collect_deletions()` functions, auto-strip stale tokens on canonical render, deletion-aware `stale_citation_check`.
+- `active-project/staff/showrunner/world-notes.md` — A12 Lucerys/Nessa cleanup.
+- `active-project/staff/showrunner/staleness-log.md` — cascade event appended.
+- `active-project/staff/reviews/run-postmortem-harness-2026-05-20.md` (read-only context).
+- `active-project/staff/auditor/pipeline-adaptation-audit-2026-05-21.md` — A4 audit report + resolution trace.
+- `design/shoot-v2/rubric-sensory.md` — V3 lock; short-chapter floor-vs-ceiling exemption; anti-pattern #14; STRUCT-007 "Schema rename" notice cleaned.
+- `design/shoot-v2/rubric-memory-flags.md` — V3 lock; feel-as-spine equivalence carve-out propagated through ACCEPT, REJECT, cross-axis test, anti-pattern #7, ceiling defense.
+- `design/shoot-v2/sensory-memory-v3-tuning-summary.md` — V3 harness pass record + re-audit walk.
+- `.claude/commands/and-substance.md` — F1 schema sync (Phase 3 axes_in_motion + axes_held); F1 Phase 4 Step 4d post-cast actor_baselines pass; Phase 0 book-level HARD-ABORT for sparse actor_baselines; A11 persist-time draft pruning at Phase 6; STRUCT-004 stakes_axis comment fix; STRUCT-003 chapter_class chapter-level authoring.
+- `.claude/commands/and-write.md` — F1 Phase 1 three bone shapes; F1 Phase 2 FAULT-BONE-DELTA-MALFORMED extension; F1 Phase 6 bone-gate split per shape + chapter_class:frame-coda exemption; A9 per-scene audience coverage gate.
+- `.claude/commands/and-facets.md` — A1 Phase 0 step 4a anchor-refresh HARD-ABORT; A6 Phase 3 R2 stale-shard pre-check; A3 Phase 5b cycle-N ADD pre-validation; A2 Phase 5b cap-burn DELETE semantics + canonical deletion marker shape; STRUCT-008/009/011 residue fixes; CURVE-SHAPE denouement → falling.
+- `.claude/commands/and-stitch.md` — STRUCT-001/002 tensometer residue purge (dispatch payload, rhythm guidance section renamed, COLLAPSE-TENS1-RUN → COLLAPSE-FLAT-LOW-RUN, scene-window flow ASCII).
+- `.claude/commands/and-review.md` — A10 new `pipeline` subcommand (schema↔command-body↔rubric tri-walk) + discovery-table entry.
+- `CLAUDE.md` — STRUCT-005 `theater/proto-lines/` directory documented; pipeline subcommand mention in command table.

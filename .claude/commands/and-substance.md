@@ -208,6 +208,14 @@ After persist, advance any applicable status:
 - `book` Phase 6 sets each new `chapters[].status = planned`.
 - `chapter` Phase 6 sets `chapters[<slug>].status = scened`.
 
+**Persist-time intermediate cleanup (URI-SUBSTANCE-DRAFT-PRUNE, A11 — 2026-05-21).** After the YAML accept moves working content from `staff/showrunner/<level>-draft.md` to memory, move the draft file to `staff/showrunner/_drafts/<level>-draft-<timestamp>.md` (do NOT delete — preserve for post-hoc inspection). The `_drafts/` subdir is git-tracked but conceptually archival; the top-level `staff/showrunner/` keeps only active working files. Drafts named for pruning:
+- `signature-draft.md` (series level, Step 4a/c)
+- `actor-baselines-draft.md` (series level, Step 4d)
+- `b<NN>-draft.md` (book level, Phase 4 drama statement)
+- `b<NN>c<MM>-draft.md` (chapter level, Phase 4)
+
+The SUPERSEDED-by-memory marker is preserved in the pruned file's header for traceability. Re-runs (`add` / `redo`) write a fresh draft at the top-level path; the prior version stays archived.
+
 ### Phase 7 — Print summary + exit-state
 
 ```

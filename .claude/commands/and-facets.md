@@ -183,6 +183,20 @@ Set status `protolined` → `faceted-r1` in showrunner memory.
 
 ## Phase 3 — FANOUT: R2 parallel judging
 
+**R2 stale-shard pre-check (URI-FACETS-R2-STALE-SHARD, A6 — 2026-05-21).** Before dispatching the R2 fanout, verify that any pre-existing R2 decision shards under `staff/<facet>/r2-decision-shard.md` (and `staff/feeling/r2-decision-shard-<slug>.md`) reflect the current R1 cite-index — NOT a prior session's. The check:
+
+1. Each shard's frontmatter must carry `cite_index_hash: <sha>` (the SHA of `theater/facets/_cite-index.md` at the time the shard was authored). The R2 judges write this field at shard authoring time.
+2. Compute the current `_cite-index.md` SHA. For each pre-existing shard, compare to the shard's recorded `cite_index_hash`.
+3. **If mismatch (cite-index changed since the shard was written):** HARD-ABORT with:
+   ```
+   /and-facets Phase 3 HARD-ABORT (R2 stale shard): <list of shards> were authored against cite-index <prior-sha> but current cite-index is <current-sha>.
+   Resolution: archive stale shards to staff/<facet>/_archive/<timestamp>/ and let R2 re-author against the current R1 graph.
+   ```
+4. **If shard is missing `cite_index_hash` field entirely (pre-A6 shards from prior sessions):** HARD-ABORT with: `R2 shards lack cite_index_hash provenance; cannot verify freshness. Archive shards and let R2 re-author.`
+5. **If shards are absent entirely (fresh Phase 3 run):** no-op; proceed to dispatch.
+
+Per the postmortem: "The R2 shards from one session were re-used in a different session against changed R1 content." The b01c01 cap-burn didn't surface this directly but the pattern is documented as a process gap. This check makes the cross-session shard-staleness mechanically detectable.
+
 **Dispatch discipline:**
 
 - **One parallel Agent block.** All six midband judges (NI, memory, feeling-per-character, metaphor, exposition, dialogue-per-character) fire concurrently. Each judge sees the locked R1 graph; none sees the others' R2 mutations.
@@ -515,7 +529,11 @@ Cap: **3 audience cycles** per `/and-season` convention. On cap-burn (3 cycles w
 1. Identify offending entries — the set of `[<facet>:<flat_id>]` callouts that drove the final-cycle revise/fail aggregation. Dedupe.
 2. Dispatch **fixer** in **cap-burn DELETE mode** with the offending entries + the chapter's substance contracts + every relevant facet rubric. Fixer's only allowed operation is DELETE — no revise, no ADD (ADD is structurally banned at cap-burn per the A3 cycle-3 rule above). Per offending entry:
    - DELETE the entry from its facet file.
-   - Update the cite-index to remove the citation (the cite-index builder must tolerate carve-out preambles per A5; until that lands, the fixer hand-edits `_cite-index.md`).
+   - Write a canonical deletion marker in place of the entry (A5, 2026-05-21):
+     ```
+     # DELETED <prefix>:<id> @<anchor> - <reason> (cap-burn cycle <N>, <YYYY-MM-DD>)
+     ```
+     The cite-index builder reads this marker, auto-strips stale `[<prefix>:<id>]` tokens from proto-lines, and surfaces the deletion in the `# DELETED ENTRIES` section of `_cite-index.md`. **No hand-editing of `_cite-index.md` is required** — `build_cite_index.py` does the cascade automatically.
    - If the DELETE leaves a file-level shape gap (modality-floor breach, doubled-register breach, density floor breach), record the trade-off in the cap-burn report — do NOT chase it with an ADD.
 3. Write the cap-burn report to `staff/auditor/facets-cap-burn-<chapter>-<timestamp>.md` documenting:
    - Each deleted entry with its callout chain.

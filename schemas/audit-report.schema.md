@@ -105,6 +105,7 @@ report: r2-decision-shard
 facet: <facet slug>             # e.g. memory | feeling-taylor | sensory | vibes | ...
 episode: <episode slug>          # e.g. s01e01
 date: <ISO date>
+cite_index_hash: <sha>           # REQUIRED (V3, A6, 2026-05-21) — SHA of theater/facets/_cite-index.md at shard-authoring time; /and-facets Phase 3 cross-session stale-shard check compares this to current cite-index SHA
 f-r2-counts: {f-r2-1: N, f-r2-2: N, f-r2-3: N, f-r2-4: N}
 ---
 
