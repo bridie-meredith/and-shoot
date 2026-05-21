@@ -522,7 +522,7 @@ A reviewer dispatch may stall at the 600s agent-watchdog with no verdict file wr
 
 ### Cycle cap
 
-Cap: **3 audience cycles** per `/and-season` convention. On cap-burn (3 cycles without 3-of-3 accept across all facets), the canonical resolution path is **(a) automatic DELETE of offending entries with logged tradeoffs** (URI-FACETS-CAP-BURN-SEMANTICS, A2 — 2026-05-21).
+Cap: **3 audience cycles** (pre-overhaul `/and-season` audience-loop convention; carried forward into `/and-facets` Phase 5b under URI-FACETS-CAP-BURN-SEMANTICS, A2 — 2026-05-21). On cap-burn (3 cycles without 3-of-3 accept across all facets), the canonical resolution path is **(a) automatic DELETE of offending entries with logged tradeoffs**.
 
 **Codified cap-burn semantics (canonical path = automatic DELETE):**
 

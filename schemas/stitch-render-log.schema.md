@@ -31,7 +31,7 @@ generated: <ISO date>
 
 ## Phase 1 — lens-anchored render
 author: stitcher-fork (per anchor)
-input: theater/proto-lines/<slug>.md + facets/* + _cite-index.md + profile + persona
+input: theater/bones/<book>-<chapter>.md + facets/* + _cite-index.md + profile + persona
 output: draft/<slug>.phase-1.draft.md
 
 <fork-entries>
@@ -56,7 +56,7 @@ Multi-line forks (Phase 1 forks rendering 3+ sentences from one anchor at a peak
 
 ```
 fork-043 @43 -> L25,L26,L27  render-anchor lens=feel-leads (rule-3, persona override)
-   lenses-loaded: tens=3, narrator:12, memory:6, sensory:3 (tag=drop), feel:8
+   lenses-loaded: narrator:12, memory:6, sensory:3 (tag=drop), feel:8
    rule-1: skip (no foreknowledge in NI:12)
    rule-2: would-fire (sensory drop) -> SUPERSEDED at rule-6
    rule-3: candidate
@@ -112,10 +112,10 @@ When `phase-1.mode: scene-window`, the Phase 1 section uses scene-fork entries i
 ## Phase 1 — scene-window render
 author: stitcher-fork (per scene)
 mode: scene-window
-boundary-source: <tensometer-derive | scene-map-facet | hybrid>
+boundary-source: <scene-map-facet | per-anchor-fallback>   # scene-map-facet is canonical post-URI-SUBSTANCE-OVERHAUL (2026-05-17); per-anchor-fallback recorded when scene-map was absent/invalid and the run fell back per phase-1.scene-window.fallback-on-no-scene-map
 back-look: <prior-rendered-scene | none>
 forward-look: <next-scene-bones-facets | none>
-input: theater/proto-lines/<slug>.md + facets/* + _cite-index.md + profile + persona
+input: theater/bones/<book>-<chapter>.md + facets/* + _cite-index.md + profile + persona
 output: draft/<slug>.phase-1.draft.md
 
 <scene-fork-entries>
@@ -159,9 +159,9 @@ Scene-window-specific fault classes (record as fork-level entries with the fault
 | Fault | Meaning |
 |---|---|
 | `FAULT-BONE-FOLDED-INTO-SUMMARY` | Per-bone walk found a bone with no disposition. Wider window summarized the cluster and lost a bone. Triggers re-render of the scene. |
-| `FAULT-PHASE-1-NO-SCENE-MAP` | Neither scene-map-facet nor tensometer-derive produced a usable boundary set. Triggers fallback or escalation per `phase-1.scene-window.fallback-on-no-scene-map`. |
+| `FAULT-PHASE-1-NO-SCENE-MAP` | Scene-map facet absent or coverage-invalid; no usable boundary set from scene-map. Triggers fallback or escalation per `phase-1.scene-window.fallback-on-no-scene-map`. (Pre-overhaul this fault also covered tensometer-derive failure; tensometer-derive was removed under URI-SUBSTANCE-OVERHAUL 2026-05-17.) |
 | `FAULT-PHASE-1-SCENE-MAP-COVERAGE` | A bone falls outside every scene's range or inside multiple. Coverage gap or overlap in the scene-map. |
-| `FAULT-BONE-AUDIT-MISS @<id>` | Bone carries a Q9-coined hyphen-compound in its SVO content. Stitcher cannot REWORD without violating bone-faithfulness; surfaces upstream as a `/and-protolines-v2` rubric pass. |
+| `FAULT-BONE-AUDIT-MISS @<id>` | Bone carries a Q9-coined hyphen-compound in its SVO content. Stitcher cannot REWORD without violating bone-faithfulness; surfaces upstream as an `/and-write` Phase 6 bone-gate / SVO rubric pass. |
 | `FAULT-NI-VERB-FOLD-STRETCH @<id>` | NI register-verb folded into bone-verb beyond the bone's SVO (defensible under lens-fold license; soft Q-check for auditor). Render kept; recorded in `drift-risk:`. |
 
 ### Phase 2 — redundancy cull
@@ -178,7 +178,7 @@ Scene-window-specific fault classes (record as fork-level entries with the fault
 |---|---|
 | `MERGE-SAME-SUBJECT` | Bones N..M merged into one sentence (same subject, continuous action). |
 | `SUBSTITUTE-PRONOUN` | Subject replaced with pronoun after first mention. |
-| `COLLAPSE-TENS1-RUN` | Run of tens=1 zero-cite bones collapsed. |
+| `COLLAPSE-FLAT-LOW-RUN` | Run of zero-cite bones inside a `rhythm-shape: flat-low` zone collapsed. (Formerly `COLLAPSE-TENS1-RUN` pre-overhaul; renamed under URI-SUBSTANCE-OVERHAUL 2026-05-17 — references the scene-map's `rhythm-shape` field instead of the removed `tens=1` scalar.) |
 | `MERGE-EXIT-TRIO` | Terminal three-bone sequence collapsed. |
 | `MERGE-TIMESKIP` | Blank-id-adjacent bone fused. |
 | `NO-MERGE` | Merge candidate declined (records why — usually `pattern-protected` or `facet-anchor-present`). |

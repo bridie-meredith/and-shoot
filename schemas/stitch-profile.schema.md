@@ -11,7 +11,7 @@ Status: **draft (tuning)**. The knob inventory will expand as more scenes surfac
 ## File path conventions
 
 - **Episode default:** `active-project/theater/stitch-profile.md` — one profile per active episode. Read by every fork.
-- **Per-scene override (optional):** `active-project/theater/stitch-profile-<scene-label>.md` — overrides episode default for the matching scene only. Scene labels resolve via `interest-narrator.md`'s sparsity-gradient section.
+- **Per-scene override (optional):** `active-project/theater/stitch-profile-<scene-label>.md` — overrides episode default for the matching scene only. Scene labels resolve via `theater/facets/scene-map-<book>-<chapter>.md` (per-scene `label:` field; the scene-map is upstream-emitted by `/and-write` Phase 7).
 - **Project default (optional):** `active-project/stitch-profile.md` — applies to any episode without an episode-level profile.
 
 Resolution order: scene override → episode default → project default → schema defaults.
@@ -54,7 +54,6 @@ render:
     memory: true
     sensory: true
     metaphor: true
-    tens: false                             # always false — selection signal only (fault if true)
     state: false                            # always false — continuity only (fault if true)
     vibes: false                            # always false — bias only (fault if true)
     location-state: at-establishment        # at-establishment | always | never
@@ -67,7 +66,7 @@ phase-1:
   fork-granularity: scene-window            # legacy alias of mode; honored when mode is absent
   continuity-context: previous-2-lines      # previous-2-lines | previous-paragraph | none (per-anchor mode only)
   scene-window:                             # scene-window mode config; ignored when mode: per-anchor
-    boundary-source: scene-map-facet        # scene-map-facet (default) | tensometer-derive | hybrid
+    boundary-source: scene-map-facet        # scene-map-facet (only valid value post-URI-SUBSTANCE-OVERHAUL, 2026-05-17; tensometer-derive | hybrid removed)
     back-look: prior-rendered-scene         # prior-rendered-scene (default) | none
     forward-look: next-scene-bones-facets   # next-scene-bones-facets (default) | none
     per-bone-discipline-walk: required      # required (default) | advisory — controls FAULT-BONE-FOLDED-INTO-SUMMARY emission
@@ -98,7 +97,7 @@ redundancy:
 compression:
   same-subject-merge: true
   pronoun-substitution: after-first         # after-first | strategic | preserve-all
-  tens1-run-collapse: preserve-buildups     # aggressive | preserve-buildups | off
+  flat-low-run-collapse: preserve-buildups  # aggressive | preserve-buildups | off (formerly tens1-run-collapse pre-overhaul; renamed under URI-SUBSTANCE-OVERHAUL 2026-05-17 to reference rhythm-shape: flat-low instead of the removed tens scalar)
   exit-trio-merge: true
   zero-cite-bone-policy: render             # render | merge-with-adjacent | drop
 
@@ -196,14 +195,14 @@ Free-form human notes — why this profile, what's been tuned, what's an open qu
 
 - **`tense`** — applied at Phase 4. Affects bone verbs, NI clauses, feel clauses, mem clauses, sensory arrow forms.
 - **`person`** — applied at Phase 4. POV character (per `pov:`) maps to the chosen person; everyone else stays third-person.
-- **`pov`** — defaults to the proto-lines file's `narrator:` field. Override only when proto-lines narrator and rendered POV intentionally differ (e.g. a flashback in another character's POV).
+- **`pov`** — defaults to the bones file's `narrator:` field (`theater/bones/<book>-<chapter>.md` header). Override only when the bones-file narrator and rendered POV intentionally differ (e.g. a flashback in another character's POV).
 - **`contractions`** — `true` renders "did not" → "didn't" etc.
 
 ### `render:`
 
-- **`facet-types`** — boolean per type. `bones: false` is a fault. `tens`, `state`, `vibes` forced false by the schema; setting true is a fault.
+- **`facet-types`** — boolean per type. `bones: false` is a fault. `state`, `vibes` forced false by the schema; setting true is a fault. The `tens:` field was removed under URI-SUBSTANCE-OVERHAUL (2026-05-17); the tensometer facet no longer exists in the pipeline.
 - **`cap-per-anchor`** — maximum cites rendered at a single anchor. Excess dropped per priority list. Counts the bone plus rendered facets.
-- **`peak-priority`** / **`nonpeak-priority`** — ordered list. At tens=3 (peak) anchors, when cap is reached, render in `peak-priority` order. Tens=1 and tens=2 use `nonpeak-priority`. First wins.
+- **`peak-priority`** / **`nonpeak-priority`** — ordered list. At peak anchors (bones in the scene-map's `peak-bones[]` list, per `schemas/scene-map.schema.md`), when cap is reached, render in `peak-priority` order. Non-peak anchors use `nonpeak-priority`. First wins. (Pre-overhaul this was governed by the tensometer `tens=3 | tens=1 | tens=2` scalar; under the substance overhaul, `peak-bones` from the scene-map is the canonical peak/non-peak source.)
 - **`location-state`** — render-or-not is anchor-dependent. `at-establishment` renders at the first anchor in a new location; skips thereafter unless conditions field changes. `always` renders every cite. `never` skips entirely.
 
 ### `phase-1:`
@@ -213,11 +212,11 @@ The lens-anchored render configuration.
 - **`mode`** — `scene-window` (default, URI-SCENE-WINDOW 2026-05-13) dispatches one Agent call per dramatist-marked scene with overlap-read context (back-look on prior rendered scene; forward-look on next scene's bones+facets); the fork sees the whole scene and breaks percussion across multi-bone clusters within bone-faithfulness. `per-anchor` dispatches one Agent call per anchor with `continuity-context` lookback; the fork sees one bone at a time. Per-anchor is the fallback mode (used when scene-map is absent or per-bone discipline is preferred for low-percussion episodes). See `.claude/commands/and-stitch.md § Phase 1 — scene-window mode` for the full procedure including the mandatory per-bone discipline walk.
 - **`fork-granularity`** — legacy alias of `mode`. Honored as a fallback when `mode` is absent. New profiles should set `mode`.
 - **`continuity-context`** — `per-anchor` mode only. What previous output each fork sees. `previous-2-lines` (default) gives continuity but serializes adjacent forks within a paragraph. `previous-paragraph` is more serial; `none` is maximally parallel but accepts continuity drift (Phase 5 and 7 catch it). Ignored under `scene-window` mode (the back-look/forward-look settings replace it).
-- **`scene-window.boundary-source`** — where Phase 1 reads scene boundaries from. `scene-map-facet` (default, URI-SCENE-WINDOW 2026-05-13) reads `theater/facets/scene-map-<slug>.md` (emitted by `/and-facets` Phase 4d as derived structural facet). `tensometer-derive` parses the scene-footer section of `tensometer-<slug>.md` plus cross-references `interest-narrator.md` sparsity gradient, `location-state.md` transitions, and time-skip blanks (legacy fallback for pre-URI-SCENE-WINDOW episodes whose facet graph predates the scene-map emission). `hybrid` reads scene-map-facet when present, falls through to tensometer-derive when absent.
+- **`scene-window.boundary-source`** — where Phase 1 reads scene boundaries from. `scene-map-facet` is the only valid value post-URI-SUBSTANCE-OVERHAUL (2026-05-17): reads `theater/facets/scene-map-<book>-<chapter>.md` (emitted by `/and-write` Phase 7 directly from `chapters[].scenes[]` in showrunner memory; validated — not derived — at `/and-facets` Phase 4d). The pre-overhaul `tensometer-derive` and `hybrid` paths are removed; the tensometer facet no longer exists. When the scene-map facet is absent, fall back per `scene-window.fallback-on-no-scene-map` (default `per-anchor` mode).
 - **`scene-window.back-look`** — what prior context a scene-fork reads. `prior-rendered-scene` (default) gives the fork read-only access to scene N-1's already-rendered prose for anti-repetition discipline (openers, verb-register, cadence). `none` runs forks without back-look (cheaper, drops cross-scene variance awareness).
 - **`scene-window.forward-look`** — what next context a scene-fork reads. `next-scene-bones-facets` (default) gives the fork read-only access to scene N+1's bones + facet citations so the scene N close can avoid clashing with the scene N+1 open. `none` drops forward-look awareness.
 - **`scene-window.per-bone-discipline-walk`** — `required` (default) makes the per-bone walk a hard step in every scene-fork's output; missing-bone-trace emits `FAULT-BONE-FOLDED-INTO-SUMMARY`. `advisory` makes the walk optional and demotes the fault to a warning. Required is strongly recommended — the wider window's failure mode is invention-by-summary, and the walk is the catch.
-- **`scene-window.fallback-on-no-scene-map`** — what to do when neither `scene-map-facet` nor `tensometer-derive` produces a usable boundary set. `per-anchor` (default, soft fallback) drops the run to per-anchor mode and records the fallback in the render-log header. `escalate` hard-aborts the run and surfaces `FAULT-PHASE-1-NO-SCENE-MAP` for user resolution.
+- **`scene-window.fallback-on-no-scene-map`** — what to do when `scene-map-facet` is absent or coverage-invalid. `per-anchor` (default, soft fallback) drops the run to per-anchor mode and records the fallback in the render-log header. `escalate` hard-aborts the run and surfaces `FAULT-PHASE-1-NO-SCENE-MAP` for user resolution.
 - **`parallel`** — `within-paragraph` runs forks in parallel within a paragraph (serial across paragraphs); `full` parallelizes everything (only valid with `continuity-context: none`); `sequential` runs one fork at a time. Ignored under `scene-window` mode — scene-forks serialize across scenes because back-look requires the prior scene's rendered prose.
 - **`lens-decider`** — rule toggles. Each `enable-rule-N-*` flag turns one rule on or off; disabling rules is for experimentation. Defaults: all on. Applies to both modes; in scene-window the decider runs per-bone inside the scene-fork.
 - **`lens-decider.rule-5-window`** — recent-focus damping lookback. Higher values dampen lens-rhythm saturation more aggressively.
@@ -235,7 +234,7 @@ The lens-anchored render configuration.
 
 - **`same-subject-merge`** — bones N and N+1 with same subject and continuous action merge.
 - **`pronoun-substitution`** — `after-first` substitutes "she" for second-onward occurrence of "the mother" within a paragraph; `strategic` substitutes only when repetition would saturate; `preserve-all` disables.
-- **`tens1-run-collapse`** — `aggressive` collapses any run of ≥3 tens=1 zero-cite bones; `preserve-buildups` keeps the buildup-pattern detector active to protect structural sequences; `off` disables collapse.
+- **`flat-low-run-collapse`** — `aggressive` collapses any run of ≥3 zero-cite bones inside a `rhythm-shape: flat-low` zone (per the scene-map's per-scene `rhythm-shape` field); `preserve-buildups` keeps the buildup-pattern detector active to protect structural sequences; `off` disables collapse. (Pre-overhaul name: `tens1-run-collapse`, referencing the now-removed `tens=1` scalar; renamed under URI-SUBSTANCE-OVERHAUL 2026-05-17.)
 - **`exit-trio-merge`** — boolean. The specific case of three terminal bones (set-bowl / face-wall / exit pattern).
 - **`zero-cite-bone-policy`** — what to do with bones carrying no facet citations. `render` keeps them; `merge-with-adjacent` folds them into neighbor; `drop` removes (logged).
 
@@ -330,8 +329,8 @@ Phase 0 reads:
 Each layer shallow-merges over the next. Field-level merge: a scene profile with `voice.person: first` does not need to restate the full `voice:` block.
 
 Validation faults:
-- `FAULT-PROFILE-MISSING-POV` — `voice.pov` unset and proto-lines header has no `narrator:` field.
-- `FAULT-PROFILE-FORBIDDEN-RENDER` — `render.facet-types.tens|state|vibes` set true.
+- `FAULT-PROFILE-MISSING-POV` — `voice.pov` unset and bones-file header (`theater/bones/<book>-<chapter>.md § narrator:`) has no `narrator:` field.
+- `FAULT-PROFILE-FORBIDDEN-RENDER` — `render.facet-types.state|vibes` set true. (Pre-overhaul this also covered `render.facet-types.tens`; the `tens:` field was removed from the schema under URI-SUBSTANCE-OVERHAUL 2026-05-17.)
 - `FAULT-PROFILE-BONES-OFF` — `render.facet-types.bones` set false.
 - `FAULT-PROFILE-INCONSISTENT-VOICE` — `voice.person: first` with no resolvable `pov:`.
 - `FAULT-PROFILE-UNKNOWN-PATTERN` — `protected-patterns` lists a pattern with no detector.

@@ -134,12 +134,13 @@ SCOPE: worm-tight
 SEEN-AT: [L20]
 PROPOSED-RULE: Q8 fires automatically on this structural pattern; cut tail at semicolon.
 
-PATTERN: feel-clause always leads at tens=3 peak when feel is co-cited
+PATTERN: feel-clause always leads at peak-bones when feel is co-cited
 DETAIL: Body before meaning. The mother's stillness should land before the silence's named
-        significance. Sensory-spike rule 2 should be overridden by feel at tens=3.
+        significance. Sensory-spike rule 2 should be overridden by feel at peak-bones (per
+        the scene-map's per-scene peak-bones[] list).
 SCOPE: worm-tight
 SEEN-AT: [L25] (Scene C)
-PROPOSED-RULE: At tens=3 with feel firing, feel leads regardless of sensory tag.
+PROPOSED-RULE: At any bone in scene-map peak-bones[] with feel firing, feel leads regardless of sensory tag.
 ```
 
 ### Promotion
@@ -178,6 +179,6 @@ The default surgical scope means most feedback is cheap to apply. A handful of l
 ## What the feedback file is not
 
 - Not a place to rewrite facets. Facet content is authored upstream of the stitcher.
-- Not a place to rewrite bones. Bones live in proto-lines and are authored by `/and-protolines-v2` or `/and-season`.
+- Not a place to rewrite bones. Bones live in `theater/bones/<book>-<chapter>.md` and are authored by `/and-write` (the substance-overhaul replacement for the pre-overhaul `/and-protolines` + `/and-season` bone-gate chain).
 - Not a substitute for profile or persona files. Long-term tuning lives in profiles and personas; the feedback file is the bridge.
 - Not a journal. One-line entries per line-ID; PATTERN blocks for promotion-candidates. No retrospectives.

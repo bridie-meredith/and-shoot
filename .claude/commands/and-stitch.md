@@ -75,7 +75,7 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
 
 ## Args
 
-- `$1` — optional. Episode slug (e.g. `s01e01`). If omitted, use `active.episode` from `active-project/staff/showrunner/memory.md`.
+- `$1` — optional. Chapter slug (e.g. `b01-c01` or `b01c01`; normalized to `<book>-<chapter>` form at Phase 0). If omitted, use `active.chapter` from `active-project/staff/showrunner/memory.md`.
 - `--profile <path>` — optional. Override the active profile path. Default: `active-project/theater/stitch-profile.md`.
 - `--persona <slug>` — optional. Override the active persona. Default: read from profile's `persona:` field; fallback `neutral`.
 - `--allow-bare-speech` — optional. Explicit opt-in to the legacy silent-speech fallback (Phase 0.7 § Legacy fallback). Without this flag, an episode with `speaks to` bones and an empty/missing dialogue facet HARD-ABORTS at Phase 0.5; the user must run `/and-facets <slug>` first. Pass this flag only when knowingly stitching a pre-2026-05-12 episode whose dialogue facet cannot be retroactively authored. Marked in the render-log header.
@@ -118,8 +118,8 @@ Before dispatching Phase 1, emit a one-screen summary to the user:
   persona:          <slug>           # FAULT if neutral and project has tuned persona
   voice:            <person>-person <tense>-tense, contractions <on/off>
   POV:              <actor-slug>
-  anchors:          <N>              # from proto-lines
-  scenes:           <M>              # from interest-narrator sparsity gradient
+  anchors:          <N>              # from bones file (theater/bones/<book>-<chapter>.md)
+  scenes:           <M>              # from scene-map facet (theater/facets/scene-map-<book>-<chapter>.md)
   phase-1 forks:    <M scene-forks>  # or <N per-anchor forks> if dispatch-budget allows
   phase-7 forks:    <M scene-forks> per-sentence inside
   anti-jargon:      <K tokens loaded from project.anti-jargon>
@@ -460,7 +460,7 @@ The `bone-walk:` block is the auditable trace for the per-bone discipline walk. 
 | `FAULT-BONE-FOLDED-INTO-SUMMARY` | Per-bone walk finds a bone with no rendered trace, no fuse target, no CUT-BONE entry. The wider window let the fork summarize a cluster and lose a bone. | Re-render the scene with the missing bone restored. Recurrent at the same bone-id across re-runs ⇒ flag the bone as fusion-resistant. |
 | `FAULT-PHASE-1-NO-SCENE-MAP` | Scene-map facet absent and no per-anchor fallback configured. (Tensometer-derivation fallback was removed 2026-05-17 under URI-SUBSTANCE-OVERHAUL.) | Fall back to `per-anchor` mode (record in render-log header) or escalate to user to author scene-map. |
 | `FAULT-PHASE-1-SCENE-MAP-COVERAGE` | Scene-map resolved but a bone falls outside every scene's range or inside multiple. | Refuse the dispatch; surface the coverage gap; fix scene-map. |
-| `FAULT-BONE-AUDIT-MISS @<id>` | Bone-content carries a Q9-coined hyphen-compound the stitcher cannot REWORD without violating bone-faithfulness. | Render the bone as-is; surface to upstream (`/and-protolines-v2` rubric pass). NOT a stitcher fix. |
+| `FAULT-BONE-AUDIT-MISS @<id>` | Bone-content carries a Q9-coined hyphen-compound the stitcher cannot REWORD without violating bone-faithfulness. | Render the bone as-is; surface to upstream (`/and-write` Phase 6 bone-gate / SVO rubric pass). NOT a stitcher fix. |
 | `FAULT-NI-VERB-FOLD-STRETCH @<id>` | The fork's bone-verb chosen folds an NI register-verb beyond the bone's SVO (e.g. NI says "names X as ambient signal", bone says "relays X", fork renders "named X through"). Defensible under lens-fold license; surface as soft Q-check for the auditor. | Keep render; surface in `drift-risk:` field. Auditor decides. |
 
 ### Convergence with per-anchor
