@@ -705,3 +705,50 @@ criteria met: yes
 findings-applied: 6 (s01n03, s01n08, s01n10, s02n05, s03n04, s03n06)
 findings-skipped: 0 (FLAG s02n02 no change required per audit — correctly excluded from repairs)
 exit: CLEAN
+
+## SESSION-START — 2026-05-21T12:00:00Z — write-b01c02-pass2-verify
+dispatch: verify and apply 6 faults from /and-write Phase 2 audit on b01c02 — 4 FAULT-FORM + 1 FAULT-BONE-DELTA-MALFORMED (re-dispatch; prior session at 00:00:00Z already resolved all 6)
+target: active-project/staff/screen-writer/b01c02-phase1-bones.md
+audit-report: active-project/staff/auditor/write-b01c02-pass2.md
+findings-queued: 6 (s01n03, s01n08, s01n10, s02n05, s03n04, s03n06)
+
+## b01c02s01n03 — RESOLVED — 2026-05-21T12:01:00Z
+fault: FAULT-FORM — "steps into the doorway" banned prepositional-destination form
+scope: line
+change: verified pre-applied — svo reads "the water-carrier enters the doorway"; no edit required
+criteria met: yes
+
+## b01c02s01n08 — RESOLVED — 2026-05-21T12:01:00Z
+fault: FAULT-FORM — "the two witnesses" plural subject violates singular-subject schema rule
+scope: line
+change: verified pre-applied — svo reads "the near witness faces the alley-mouth"; no edit required
+criteria met: yes
+
+## b01c02s02n05 — RESOLVED — 2026-05-21T12:01:00Z
+fault: FAULT-FORM — "the two witnesses" plural subject violates singular-subject schema rule
+scope: line
+change: verified pre-applied — svo reads "the near witness crosses the lane"; no edit required
+criteria met: yes
+
+## b01c02s03n04 — RESOLVED — 2026-05-21T12:01:00Z
+fault: FAULT-FORM — shape: held contradicted by discrete action verb "strikes"; axes_held invoked body-part license on a ledger mark
+scope: line
+change: verified pre-applied — shape: moving, axis_moves: knowledge up 1, notes reflect knowledge-categorical anchor; no edit required
+criteria met: yes
+
+## b01c02s03n06 — RESOLVED — 2026-05-21T12:01:00Z
+fault: FAULT-FORM — "holds the pen" fails narrow holds license (pen not a body part, not pressure-resisting)
+scope: line
+change: verified pre-applied — svo reads "holds the hand"; dual axes_held (capability + moral-framework both with body-part stillness-against-pressure rationales); notes carry dual-discipline framing; no edit required
+criteria met: yes
+
+## b01c02s01n10 — RESOLVED — 2026-05-21T12:01:00Z
+fault: FAULT-BONE-DELTA-MALFORMED — cost_ledger_anchor cl-social-tether-build on knowledge-axis bone; anchor-to-bone-axis mismatch
+scope: line
+change: verified pre-applied — no cost_ledger_anchor field on this bone; knowledge axis_moves intact; no edit required
+criteria met: yes
+
+## SESSION-END — 2026-05-21T12:02:00Z — write-b01c02-pass2-verify
+findings-applied: 6 (all pre-applied by prior session 2026-05-21T00:00:00Z; verified in-place)
+findings-skipped: 0 (FLAG s02n02 no change required per audit — confirmed excluded)
+exit: CLEAN
