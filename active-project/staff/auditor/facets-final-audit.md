@@ -290,7 +290,7 @@ The cite-index records `exposition:1 @0 back=N`. The schema confirms: `back=N` i
 
 **Memory co-citation with narrator:**
 - mem:1 @8: cite-index shows `co=[loc-state:6, narrator:3, vibes:8]`. narrator:3 is the co-citation spine. Consistent with rubric (NI spine required; narrative:3 fires at @8). Pass.
-- mem:2 @25: cite-index shows `co=[narrator:5, state:6, vibes:11]`. narrator:5 is the co-citation spine. The peak-bone exception has been granted under R2.2. Consistent. Pass.
+- mem:2 @25: cite-index shows `co=[narrator:5, state:6, state:13, vibes:11]`. narrator:5 is the co-citation spine. The peak-bone exception has been granted under R2.2. Consistent. Pass.
 
 **Feeling co-citation with narrator (POV-non-redundancy):**
 - feel:1 @28 (taylor): cite-index shows `co=[narrator:6]`. narrator:6 @28 fires ("the not-closing is the only line tonight she is sure of"). The R2.3 Taylor shard documents Q1 (POV-non-redundancy): NI registers cognition ("the only line she is sure of"); feeling shows the hand doing it. Distinct jobs. Pass.
@@ -306,7 +306,7 @@ Per the rubric's citation-completeness requirement (URI-FACETS-CYCLE-1): every c
 
 ### Finding RF-003 (HARD fault)
 
-Reclassifying: the rubric states "A sidecar that documents the facet-license axis in R1-blind placeholder form and is not resolved at R2 with a concrete `<facet>:<id>` citation is a SIGNAL finding per entry." SIGNAL (not HARD) per the rubric's own classification — the shard has resolved it; the sidecar is the non-updated artifact, not the deployed graph. The cite-index correctly shows co-location. The rubric escalates to HARD only on cycle-2 when a block-assertion is made without per-entry resolution. This is cycle-1 (first audit). Reclassified as SIGNAL.
+Reclassifying: the rubric states "A sidecar that documents the facet-license axis in R1-blind placeholder form and is not resolved at R2 with a concrete `<facet>:<id>` citation is a SIGNAL finding per entry." SIGNAL (not HARD) per the rubric's own classification — the shard has resolved it; the sidecar is the non-updated artifact, not the deployed graph. The rubric escalates to HARD only on cycle-2 when a block-assertion is made without per-entry resolution. This is cycle-1 (first audit). Reclassified as SIGNAL.
 
 - **id:** flag-009
 - **type:** flag
@@ -362,3 +362,92 @@ Both flags are carries from the R2.2 shard decision and are not new findings. No
 | flag-007 (PU-001) | SIGNAL | showrunner (vibes author) |
 | flag-008 (RF-002) | SIGNAL | state-updates rubric maintainer; showrunner |
 | flag-009 (RF-003) | SIGNAL | dialogue-writer forks (taylor-hebert-kl-122ac; wren-stitch-maker-flea-bottom-ward) |
+
+---
+
+## Cycle-2 re-audit
+
+cycle: 2
+mode: FLAG-ONLY (remediation-verification)
+date: 2026-05-21
+scope: fault-001 + fault-002 resolution confirmation + blast-radius delta-scan
+
+### fault-001 resolution: CONFIRMED RESOLVED
+
+Verification target: `/home/user/and-shoot/active-project/staff/exposition-author/glossed-terms.md`
+
+- `water-carrier` entry: line 19 reads `# STRUCK: water-carrier | glossed-in: b01c02 | gloss-id: 2 | first-mention-anchor: @2 — DELETED at R2.5 (single-mention non-load-bearing fixture); removed from register so future chapters may re-gloss if term recurs`. The entry is correctly struck with a rationale comment. Future-chapter re-gloss path is explicitly restored. RESOLVED.
+- `near-witness` entry: line 20 reads `# STRUCK: near-witness | glossed-in: b01c02 | gloss-id: 3 | first-mention-anchor: @8 — DELETED at R2.5 (NI-establishing coverage dropped; function carried by narrator:3 + mem:1); removed from register so future chapters may re-gloss if term recurs`. Correctly struck with rationale. RESOLVED.
+- `pressed-labor-sweep` anchor: line 21 reads `first-mention-anchor: @4`. The cycle-1 criteria required correction from @5 to @4. RESOLVED.
+
+fault-001 status: CLOSED.
+
+### fault-002 resolution: CONFIRMED RESOLVED
+
+Verification targets:
+- `/home/user/and-shoot/active-project/theater/proto-lines/b01-c02.md` line 33: `25 taylor-hebert-kl-122ac strikes the line [mem:2] [narrator:5] [state:6] [state:13] [vibes:11]` — state:13 token present at @25. CONFIRMED.
+- `/home/user/and-shoot/active-project/theater/facets/_cite-index.md` line 63: `state:13 @25 back=Y co=[mem:2, narrator:5, state:6, vibes:11]` — state:13 anchored at @25; narrator:5 appears in the co-citation set; the POV-actor-state NI co-citation requirement is met. CONFIRMED.
+- `/home/user/and-shoot/active-project/theater/facets/state-updates.md` line 80: `13 @25 actor:taylor-hebert-kl-122ac.knowledge.flea-bottom-social-physics: observational-sweep-pattern -> categorical-structural` — consolidated file anchor is @25. CONFIRMED.
+- `/home/user/and-shoot/active-project/theater/facets/state-updates-taylor-hebert-kl-122ac.md` line 8: `3 @25 actor:taylor-hebert-kl-122ac.knowledge.flea-bottom-social-physics: observational-sweep-pattern -> categorical-structural` — slice file anchor is @25. CONFIRMED.
+
+The rubric §Cross-facet-contract POV-actor-state NI-co-citation requirement is satisfied: state:13 at @25 pairs with narrator:5 at @25.
+
+fault-002 status: CLOSED.
+
+### Delta-scan: blast radius of re-anchor
+
+Three sub-questions from the dispatch brief.
+
+#### (a) @25 pile-up (5 facets: mem:2, narrator:5, state:6, state:13, vibes:11) — warranted or over-decoration?
+
+Cite-index confirms the pile-up as: `@25 (5): mem:2, narrator:5, state:6, state:13, vibes:11` on bone `taylor-hebert-kl-122ac strikes the line`.
+
+Distinct-jobs check:
+- mem:2: displacement-clamp memory fire (Westerosi monument/charter-language resonance; exception-licensed peak-bone fire per R2.2).
+- narrator:5: NI spine — Taylor's interior registration of the recognition event.
+- state:6: `prop:oc-ledger.current-entry: blank -> struck` — physical prop-state write.
+- state:13: `actor:taylor.knowledge.flea-bottom-social-physics: observational-sweep-pattern -> categorical-structural` — knowledge-axis reclassification write.
+- vibes:11: word-algebra vibe token (no prose surface).
+
+All five entries occupy distinct facet channels and serve non-overlapping jobs. No two entries would produce overlapping prose at stitch time. @25 is already identified as a peak-bone in the cycle-1 audit (scene-C peak: "ledger gap surfaces before the held hand disciplines against it"). Peak-bone pile-up protection applies.
+
+Context: the cycle-1 audit accepted @5 (8-facet pile-up) and @15 (7-facet pile-up) without fault. The @25 pile-up at 5 is the smallest of the three pile-ups in the chapter. No new pile-up density finding is warranted.
+
+Finding: NO new finding. The @25 pile-up is peak-bone-warranted and below the density of already-accepted pile-ups. All entries serve distinct facet jobs.
+
+#### (b) state:7 @26 now lonely — SUPERFLUOUS?
+
+The re-anchor moved state:13 from @26 to @25, leaving @26 with only state:7 (`prop:oc-ledger.current-entry: struck -> struck-categorical-underlined`). The cite-index now shows `state:7 @26 back=Y` as a lone entry (previously it co-occupied @26 with state:13).
+
+The cycle-1 audit conducted a strip-test on state:7 @26 under Class 7 SUPERFLUOUS and reached: "marginally passes" — the categorical underline distinction is a genuine persistent delta from the strike state (struck ≠ struck-categorical-underlined per the substance contract). That strip-test evaluation was independent of whether state:13 shared the anchor; it was based solely on the Reality axis of state:7 itself. The rationale is unchanged by the re-anchor.
+
+state:7 @26 now appears in the lonely-entries list. Loneliness alone is not a SUPERFLUOUS verdict — the cycle-1 protocol explicitly requires a strip-test, which state:7 already passed on its own merits. The entry persists for the same reason it survived cycle-1.
+
+Finding: NO new finding. state:7 @26 remains a marginal-pass under the strip-test established in cycle-1. Loneliness is a flag-level status that was already implicitly reviewed; no new fault is introduced.
+
+#### (c) state:13 at @25 (strike beat) vs. @26 (underline beat) — CONTRADICTION/DEDUP/RUBRIC-FIDELITY?
+
+Semantic placement: The cycle-1 fault-002 criteria explicitly nominated @25 as the semantically correct anchor, stating: "the underline at @26 is the physical act; the categorical recognition fires at the ledger-gap moment @25." The fixer executed option (b) per those criteria. The knowledge reclassification (observational-sweep-pattern → categorical-structural) fires at the cognitive recognition event (the strike), not at the physical underline act. @25 is the correct semantic anchor. No CONTRADICTION.
+
+DEDUP check: state:13 @25 (knowledge reclassification on actor:taylor field) and state:6 @25 (prop:oc-ledger.current-entry physical-state on oc-ledger) are distinct fields on distinct targets. Their prose surfaces are non-overlapping. No DEDUP.
+
+RUBRIC-FIDELITY residual check: The POV-actor-state NI co-citation requirement is now satisfied (state:13 @25 paired with narrator:5 @25). No residual RUBRIC-FIDELITY violation. The re-anchor does not conflict with any other rubric clause — state:13 at @25 does not violate the per-scene cap (one POV-actor-knowledge entry in scene-C), and @25 is a sanctioned peak-bone anchor.
+
+Finding: NO new finding.
+
+### Cycle-2 summary
+
+| finding-ref | cycle-1 status | cycle-2 verdict |
+|-------------|---------------|-----------------|
+| fault-001 | HARD | RESOLVED — glossed-terms.md correctly struck; anchor corrected |
+| fault-002 | HARD | RESOLVED — state:13 re-anchored @25; NI co-citation satisfied in proto-lines, cite-index, consolidated state-updates, and slice file |
+| @25 pile-up (5 facets) | new from re-anchor | NO FINDING — peak-bone warranted; distinct jobs; below existing pile-up density |
+| state:7 @26 now lonely | new from re-anchor | NO FINDING — strip-test from cycle-1 holds independently; loneliness not SUPERFLUOUS |
+| state:13 @25 semantic/DEDUP/RUBRIC | new from re-anchor | NO FINDING — semantically correct per cycle-1 criteria; no DEDUP; no residual rubric violation |
+
+```
+hard_total (after cycle 2): 0
+signal_total (unchanged): 8
+```
+
+All cycle-1 SIGNAL findings (flag-001 through flag-009, excluding fault-001/fault-002) carry forward unmodified. No new findings of any class introduced by the remediation.
