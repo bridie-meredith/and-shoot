@@ -102,6 +102,28 @@ series:
         start_rank: <1-9>
         end_rank: <1-9>
         class: plot | emotional            # optional; used by future emotional-substance orthogonality check (OOS)
+        notes: <one line>                  # optional; phase-shape, two-phase axes, consequence-vs-trade anchoring
+    actor_baselines:                       # per-actor, per-axis positions — DENSE matrix: every actor × every axis
+      # The state_axes block above pins per-perspective aggregate positions (the dramatic shape).
+      # actor_baselines pins per-actor positions because the perspective aggregate hides divergent
+      # actors (Otto vs Aemond both antagonist; Wren / Sera / Gylda all supporting with different arcs).
+      #
+      # Authoring discipline: dense matrix. Every cast_roster actor × every state_axes axis gets an
+      # entry. The `applicability` field disambiguates absent-because-omitted from absent-because-out-of-scope:
+      #
+      #   moves           — start_rank ≠ end_rank; this actor's position moves on this axis across the book
+      #   static          — start_rank = end_rank; this actor's position is fixed; the cell is examined and pinned
+      #   not-applicable  — this actor does not participate in this axis's machinery; rationale REQUIRED in notes
+      #
+      # This shape prevents judgment-by-omission: an actor with no entry on an axis is a SCHEMA VIOLATION,
+      # not a meaningful absence. Use applicability:not-applicable to record the deliberate exclusion.
+      - actor: <actor-slug>                # must match a slug in series.cast_roster
+        axis: <axis-slug>                  # must match a slug in series.substance.state_axes[]
+        applicability: moves | static | not-applicable
+        start_rank: <1-9> | null           # REQUIRED for applicability:moves and applicability:static; null only for not-applicable
+        end_rank: <1-9> | null             # REQUIRED for applicability:moves and applicability:static; null only for not-applicable
+        source: lifted-from-state-axes | inferred-from-role-card | scene-pinned-<chapter-slug>
+        notes: <one line>                  # rationale REQUIRED for applicability:not-applicable; recommended for moves/static
     cost_ledger:
       - id: <ledger-entry-id>              # stable handle for `bones[].substance_delta.cost_ledger_anchor`
         gain: <axis-slug> +<delta>
@@ -146,7 +168,15 @@ books:
     structure:                             # /and-substance series Phase 2
       chapter_count: <N>                   # picked inside series.structure.book_length.chapters_per_book
     substance_delta:                       # /and-substance series Phase 3
-      axes_in_motion: [...]                # which series-axes shift across this book
+      axes_in_motion:                      # axes that ACTUALLY move across this book; held axes go in axes_held
+        - axis: <axis-slug>                # must match series.substance.state_axes[].slug
+          direction: up | down             # REQUIRED; null/~ is malformed (use axes_held for held-flat axes)
+          target_delta_magnitude: <positive number>   # REQUIRED; > 0 (zero is malformed — use axes_held)
+          cost_ledger_anchor: <id> | [<id>, ...] | null
+          notes: <one line>
+      axes_held:                           # axes deliberately held flat at this level — load-bearing dormancy
+        - axis: <axis-slug>
+          rationale: <one line>            # why held; usually names the discipline / scene_conflict that holds it
       density_target: <range>
     stale_since: <iso-timestamp> | null    # set when /and-substance series re-runs with `redo` after persistence
     vibe_cloud:                            # book-level vibe-cloud, authored by /and-substance series
@@ -160,8 +190,17 @@ books:
         structure:                         # /and-substance book Phase 2
           scene_count: <N>                 # picked inside series.structure.book_length.scenes_per_chapter
         substance_delta:                   # /and-substance book Phase 3
-          axes_in_motion: [...]
+          axes_in_motion:                  # axes that actually move across this chapter
+            - axis: <axis-slug>
+              direction: up | down         # REQUIRED; no null
+              target_delta_magnitude: <positive number>   # REQUIRED; > 0
+              cost_ledger_anchor: <id> | [<id>, ...] | null
+              notes: <one line>
+          axes_held:                       # axes deliberately held flat at this chapter
+            - axis: <axis-slug>
+              rationale: <one line>
           density_target: <range>
+          chapter_class: standard | frame-coda    # OPTIONAL; defaults to `standard`. `frame-coda` marks an interlude / retrospective chapter outside the protagonist-axis scope (e.g. b01c18 archmaester-retrospective coda). Frame-coda chapters are exempt from /and-write Phase 6 substance bone-gate per its frame-coda exemption clause. Authored by /and-substance chapter Phase 4 alongside dramatic_shape + goal + pov_narrator.
         stale_since: <iso-timestamp> | null
         status: planned                    # state-machine enum; see below
         pov_narrator: <actor-slug>         # /and-substance chapter Phase 3; resolved from series.structure.pov
@@ -182,7 +221,15 @@ books:
             chunk: |
               <scene chunk authored by /and-substance chapter; substantial>
             substance_delta:               # /and-substance chapter Phase 3
-              axes_in_motion: [...]
+              axes_in_motion:              # axes that actually move across this scene
+                - axis: <axis-slug>
+                  direction: up | down     # REQUIRED; no null
+                  target_delta_magnitude: <positive number>   # REQUIRED; > 0
+                  cost_ledger_anchor: <id> | [<id>, ...] | null
+                  notes: <one line>
+              axes_held:                   # axes deliberately held flat at this scene; stakes_axis often appears here
+                - axis: <axis-slug>
+                  rationale: <one line>
               density_target: <range>
             scene_conflict:                # /and-substance chapter Phase 3
               protagonist_force: <one line>
@@ -195,14 +242,17 @@ books:
                 svo: |
                   <one-line SVO bone — scene-action-sized>
                 substance_delta:
-                  axis_moves:
+                  axis_moves:              # axes the bone ACTUALLY moves; empty list = chatter bone (must pay a cost-ledger entry)
                     - axis: <axis-slug>
-                      direction: + | -
-                      magnitude: <1-3>
+                      direction: up | down # REQUIRED; null/~ malformed (use axes_held for held-flat axes)
+                      magnitude: <positive number>   # REQUIRED; > 0 (zero is malformed — use axes_held or empty axis_moves)
+                  axes_held:               # axes deliberately held flat at this bone — stillness-against-pressure, dormancy-enacted
+                    - axis: <axis-slug>
+                      rationale: <one line>  # why held; usually names the discipline being enacted by the SVO action
                   cost:
                     axis: <axis-slug> | null
-                    direction: -
-                    magnitude: <1-3>
+                    direction: down        # cost is always negative on its axis (or the axis moves toward its damaging end — see cost_note pattern in cost_ledger entries)
+                    magnitude: <positive number>
                   cost_ledger_anchor: <cost-ledger-entry-id> | null
                 gate_verdict:              # filled by /and-write Phase 6 ONLY on PASS; cleared at Phase 0 on revise/redo
                   bonefide: true
@@ -281,6 +331,20 @@ routing:
 **chapters[].pov_narrator** — always populated on every chapter so `/and-write` Phase 7 can write the bones-file `narrator:` header without further lookup. Resolution: `series.structure.pov = single` → inherited from series; `rotating-per-book` → inherited from book; `multi` → picked per chapter from cast roster.
 
 **bones[].substance_delta** — the per-bone state-delta lives here, in memory, NEVER in the flattened bones file. The bones file is comment-clean.
+
+**axes_in_motion vs axes_held (at every chunk level + bone level)** — split as of 2026-05-21. Pre-split, `axes_in_motion` carried entries with `direction: null, magnitude: 0` to record dormancy-enacted / stillness-against-pressure axes; the convention is dropped because it makes "this axis moved" indistinguishable from "this axis was deliberately held" at the bookkeeping layer. Under the split:
+- **`axes_in_motion[]`** lists axes that actually move. `direction ∈ {up, down}`, `magnitude > 0` (book/chapter/scene: `target_delta_magnitude`; bone: `magnitude`). Null/zero entries are malformed.
+- **`axes_held[]`** lists axes deliberately held flat by discipline. Each entry: `{axis, rationale}`. The held axis is load-bearing for the scene's stakes — that is *what makes a held-flat axis different from a chatter bone*. A chatter bone has neither `axis_moves` nor `axes_held` and must pay a cost-ledger entry to justify its existence.
+- **`scene_conflict.stakes_axis`** may resolve to either `axes_in_motion[]` (the axis the conflict moves) or `axes_held[]` (the axis the conflict holds) — both are valid stakes. `/and-write` Phase 6 substance bone-gate checks against the union when validating that the stakes axis appears.
+
+**series.substance.actor_baselines[]** — per-actor positional grid, authored as a **dense matrix** (every cast_roster actor × every state_axes axis). `state_axes[].perspective ∈ {protagonist, antagonist, world}` pins per-perspective aggregate positions, but a perspective hides divergent actors (Otto vs Aemond both antagonist; cost-bearer / protect-target / witness-mirror all supporting). The dense-matrix discipline prevents judgment-by-omission: an absent entry is a schema violation, not a meaningful absence.
+
+Each cell carries an `applicability` field:
+- **`moves`** — `start_rank ≠ end_rank`; this actor's position arcs on this axis across the book. Both ranks required.
+- **`static`** — `start_rank = end_rank`; this actor's position is fixed (examined and deliberately pinned). Both ranks required.
+- **`not-applicable`** — this actor does not participate in this axis's machinery (walk-on with no per-axis arc; archetype-flat character; frame-coda voice outside scope). Ranks may be null; `notes:` REQUIRED to record the deliberate exclusion.
+
+`source:` records lineage: `lifted-from-state-axes` (verbatim from perspective-aggregate), `inferred-from-role-card` (built from cast-roster role description), or `scene-pinned-<chapter-slug>` (set when a specific chapter resolved the actor's position on that axis).
 
 **bones[].flat_id** — assigned at `/and-write` Phase 7 serialization. Stable within a run; `revise` mode preserves flat_ids for unchanged bones (gap-filling for new bones).
 

@@ -85,6 +85,7 @@ active-project/   — sole active project
   theater/
     bones/        — bones files: <book>-<chapter>.md (emitted by /and-write Phase 7)
     facets/       — facets per chapter: <facet>-<book>-<chapter>.md (flat naming convention; tensometer dropped)
+    proto-lines/  — canonical merged proto-line file with [<facet>:<id>] citations from R1+R2 union (intermediate artifact written by /and-facets Phase 2 / build_cite_index.py; consumed by /and-facets Phase 5 auditor + /and-stitch Phase 0/1)
     dialogue/     — per-character dialogue files (per character, per chapter)
   draft/          — stitcher output (terminal deliverable; polish deferred)
   polish/         — not written by the current chain (polish-deferred)
@@ -163,7 +164,7 @@ Project-local slash commands in `.claude/commands/`.
 | `/and-write <chapter-slug> [revise\|redo] [--from-signals]` | Decompose scenes into bones-with-deltas + five-pass SVO + substance bone-gate + emit flattened bones file + scene-map facet. Replaces `/and-protolines`. |
 | `/and-facets <book>-<chapter>` | Per-chapter facet pipeline. Ten facets + dialogue + scene-map validation (downgraded from derivation under URI-SUBSTANCE-OVERHAUL). Tensometer dropped. URI-DIALOGUE-COVERAGE-GATE + URI-SCENE-WINDOW enforced. |
 | `/and-stitch <book>-<chapter>` | Per-chapter stitcher. Eight-phase render (lens-anchored → redundancy cull → compression → voice transform → local flow + speaker-paragraph breaks → buildup preservation → editorial reflection → finalize + scene-callout strip). Tensometer-fallback removed from Phase 0. Output: `draft/<book>-<chapter>.md` — **terminal deliverable** under the polish-deferred chain. |
-| `/and-review [<subcommand> [<args>]]` | Universal review primitive with subcommand router. Subcommands: `chunk` / `bone` / `contract` / `signature` / `bones` / `facets` / `cast` / `consistency` / `tree` / `feedback` / `verdict` / `prose` (DEFERRED). Verdict subcommand absorbs the former `/and-judge-book` and fires the orchestrator-critic against a book. |
+| `/and-review [<subcommand> [<args>]]` | Universal review primitive with subcommand router. Subcommands: `chunk` / `bone` / `contract` / `signature` / `bones` / `facets` / `cast` / `consistency` / `pipeline` / `tree` / `feedback` / `verdict` / `prose` (DEFERRED). Verdict subcommand absorbs the former `/and-judge-book` and fires the orchestrator-critic against a book. Pipeline subcommand runs the schema-vs-command-body-vs-rubric tri-walk that catches cross-file drift (URI-REVIEW-PIPELINE; 2026-05-21). |
 | `/and-cut` | Mid-pipeline stop. Saves resume checkpoint; prints "you are here" with `next:` and (if cascade was in-progress) `resume:` lines. |
 
 ---

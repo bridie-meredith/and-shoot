@@ -121,6 +121,27 @@ PROTO_RE = re.compile(r"^(\d+)\s+(.*)$")
 # Citation-token regex (inside [...] on protoline or licensed-by clauses).
 CITE_TOKEN_RE = re.compile(r"([a-z][a-z0-9-]*):(\d+)")
 
+# --- Deletion-marker regex (A5, 2026-05-21) -------------------------------
+# Canonical deletion-marker shape inside a facet file:
+#   # DELETED <prefix>:<id> [@<anchor>] - <reason>
+# Or alternate (legacy/inline-comment) shapes:
+#   # <prefix>:<id> DELETED (<reason>)
+#   # mem:1 DELETED (user directive 2026-05-20 — ...)
+# The cite-index builder reads these to (a) auto-strip stale proto-line citations
+# pointing at deleted entries, and (b) report a `# DELETED ENTRIES` section in the
+# cite-index for audit-trail visibility. Removes the cap-burn hand-rebuild loop.
+DELETION_RE = re.compile(
+    r"^\s*#\s*"
+    r"(?:DELETED\s+)?"                              # leading 'DELETED' optional
+    r"([a-z][a-z0-9-]*):(\d+)"                      # <prefix>:<id>
+    r"(?:\s+@(\d+))?"                               # optional @<anchor>
+    r"\s+(?:DELETED|deleted)\b"                     # 'DELETED' (case-flex) somewhere after the id is the canonical marker
+    r"|"
+    r"^\s*#\s*DELETED\s+"                           # alternate: 'DELETED' leads
+    r"([a-z][a-z0-9-]*):(\d+)"                      # <prefix>:<id>
+    r"(?:\s+@(\d+))?"                               # optional @<anchor>
+)
+
 
 # --- Proto-line parsing ----------------------------------------------------
 
@@ -243,6 +264,32 @@ def _extract_licenses(rest: str) -> list[tuple[str, int]]:
         return []
     after = rest.split("licensed-by:", 1)[1]
     return [(p, int(i)) for p, i in CITE_TOKEN_RE.findall(after)]
+
+
+def parse_deletions(path: Path, prefix: str) -> set[int]:
+    """Scan a facet file for canonical deletion markers and return deleted IDs (A5, 2026-05-21).
+
+    Recognized marker shapes (all lines must start with #):
+      # DELETED <prefix>:<id> [@<anchor>] - <reason>
+      # <prefix>:<id> DELETED (<reason>)
+      # <prefix>:<id> @<anchor> ... DELETED ...
+
+    Lines with a different prefix are ignored (a memory file's deletion marker for
+    'mem:N' is the memory parser's concern; the sensory parser would ignore it).
+    """
+    deletions: set[int] = set()
+    if not path.exists():
+        return deletions
+    for raw in path.read_text().splitlines():
+        m = DELETION_RE.match(raw)
+        if not m:
+            continue
+        # Either group set: (1,2,3) from first alternation OR (4,5,6) from second.
+        p = m.group(1) or m.group(4)
+        i = m.group(2) or m.group(5)
+        if p == prefix and i is not None:
+            deletions.add(int(i))
+    return deletions
 
 
 # --- Phase 1: Body-integrity check ----------------------------------------
@@ -461,13 +508,28 @@ def _load_dialogue_entries(project_root: Path) -> dict[str, set[int]]:
     return out
 
 
+def collect_deletions(
+    facets_dir: Path,
+    facet_files: dict[str, str],
+) -> dict[str, set[int]]:
+    """Build the deletion map {prefix: {deleted_ids}} across all facet files (A5)."""
+    out: dict[str, set[int]] = defaultdict(set)
+    for fname, prefix in facet_files.items():
+        path = facets_dir / fname
+        if not path.exists():
+            continue
+        out[prefix] |= parse_deletions(path, prefix)
+    return dict(out)
+
+
 def stale_citation_check(
     cites_by_id: dict[int, list[tuple[str, int]]],
     facets_dir: Path,
     facet_files: dict[str, str],
     dialogue_entries: dict[str, set[int]] | None = None,
+    deletions: dict[str, set[int]] | None = None,
 ) -> list[str]:
-    """Every [<prefix>:<id>] on a proto-line must resolve to an entry."""
+    """Every [<prefix>:<id>] on a proto-line must resolve to an entry OR a known deletion (A5)."""
     errors: list[str] = []
     entries_by_prefix: dict[str, set[int]] = {}
     for fname, prefix in facet_files.items():
@@ -476,13 +538,19 @@ def stale_citation_check(
     if dialogue_entries:
         for slug, ids in dialogue_entries.items():
             entries_by_prefix[slug] = ids
+    deletions = deletions or {}
     for pid, toks in cites_by_id.items():
         for prefix, eid in toks:
             if prefix not in entries_by_prefix:
                 errors.append(f"@{pid}: unknown facet prefix '{prefix}:{eid}'")
                 continue
-            if eid not in entries_by_prefix[prefix]:
-                errors.append(f"@{pid}: stale citation [{prefix}:{eid}] (no such entry)")
+            if eid in entries_by_prefix[prefix]:
+                continue
+            if eid in deletions.get(prefix, set()):
+                # Known-deletion: not stale. The render step should have stripped
+                # this token; if it didn't, that's a render-step bug, not a stale-cite.
+                continue
+            errors.append(f"@{pid}: stale citation [{prefix}:{eid}] (no such entry)")
     return errors
 
 
@@ -704,6 +772,27 @@ def main(argv: list[str]) -> int:
 
         # Phase 2: citation union → canonical proto-lines
         merged_cites = union_citations(base_cites, inflight_files) if inflight_files else base_cites
+
+        # A5 (2026-05-21): strip tokens pointing at known-deleted entries before
+        # writing canonical. Cap-burn DELETE flow at /and-facets Phase 5b writes
+        # `# DELETED <prefix>:<id> ...` markers into the facet files; the cite-
+        # index builder reads them and removes stale tokens from proto-lines.
+        deletions = collect_deletions(facets_dir, facet_files)
+        if any(deletions.values()):
+            stripped: dict[int, list[tuple[str, int]]] = {}
+            strip_count = 0
+            for pid, toks in merged_cites.items():
+                kept = []
+                for (p, i) in toks:
+                    if i in deletions.get(p, set()):
+                        strip_count += 1
+                        continue
+                    kept.append((p, i))
+                stripped[pid] = kept
+            merged_cites = stripped
+            del_summary = ", ".join(f"{p}:{len(s)}" for p, s in sorted(deletions.items()) if s)
+            print(f"deletion-aware render: stripped {strip_count} stale tokens against deletions [{del_summary}]")
+
         canonical_text = render_proto_file(header, base_bodies, merged_cites)
         protoline_path.write_text(canonical_text)
         print(f"merged {len(inflight_files)} author copies → {protoline_path}")
@@ -721,9 +810,9 @@ def main(argv: list[str]) -> int:
         # Refresh post-merge state for downstream checks
         _, base_bodies, merged_cites, _ = parse_proto_file(protoline_path)
 
-        # Phase 4: stale-citation check
+        # Phase 4: stale-citation check (deletion-aware per A5)
         dialogue_entries = _load_dialogue_entries(project_root)
-        stale_errors = stale_citation_check(merged_cites, facets_dir, facet_files, dialogue_entries)
+        stale_errors = stale_citation_check(merged_cites, facets_dir, facet_files, dialogue_entries, deletions)
         if stale_errors:
             print("STALE-CITATION FAIL — citations don't resolve to facet entries:", file=sys.stderr)
             for err in stale_errors:

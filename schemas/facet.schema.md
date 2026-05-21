@@ -271,6 +271,41 @@ Convergence: one cull pass per file. If the author cannot produce a culled file 
 
 ---
 
+## Rubric carve-out preamble (V3, 2026-05-21 — A14)
+
+A facet file may carry a **rubric carve-out preamble** between the YAML frontmatter and the first entry. The preamble documents a scoped carve-out from a cross-facet rubric requirement that applies file-locally rather than globally. Promoted from F-006's file-local annotation pattern in b01c01 (state-updates.md POV co-citation carve-out).
+
+**Shape:**
+```
+# rubric-carve-out — <one-line summary>
+#
+# <rubric-name> (file path) § <section-name>
+#
+# Carve-out scope: <which entry-class(es) are exempt>
+# Carve-out rule: <how the file-local rule differs from the rubric's default>
+# Coverage justification: <why this carve-out is legitimate>
+#
+# Per-entry annotations (cite which carve-out clause applies):
+# - <facet>:<id> @<anchor>: <annotation>
+# - ...
+```
+
+**Parser contract:**
+- Lines matching `^# rubric-carve-out` are recognized comment-block headers.
+- Lines matching `^# pragma carve-out` are the alternate-spelling header form (admissible).
+- The preamble extends from the header line through the first blank line OR the first non-`#` content line, whichever comes first.
+- All `#`-prefixed lines in the preamble are passed through unchanged by the cite-index builder (`active-project/staff/cite-index/build_cite_index.py`) — they do not produce entries, they do not stale-check, they do not consolidate-renumber.
+- The slice-consolidation step (when present) preserves preambles from each source slice in the consolidated output under the corresponding `# source: <slug>` marker.
+
+**Authoring discipline:**
+- Carve-outs are scoped per-entry, not per-axis. A carve-out that exempts the entire facet from a rubric requirement is a rubric edit (per CLAUDE.md rule 11), not a carve-out preamble.
+- Each per-entry annotation must name (a) which carve-out clause applies, (b) the rubric clause being carved-out from, (c) the defensibility argument. Multiple annotations can share a clause.
+- Carve-outs propagate to audit time: the auditor's RUBRIC-FIDELITY class checks per-entry annotations against the carve-out preamble; entries claiming a carve-out without annotation FAIL.
+
+**Relationship to rubric edits:** carve-out preambles are file-local exceptions; recurring carve-outs across multiple chapters should be promoted to rubric REJECT/anti-pattern edits (CLAUDE.md rule 11's TASTE-FLAG → RUBRIC-FIDELITY promotion path). A carve-out preamble that lives in three or more chapter files is a rubric edit candidate.
+
+---
+
 ## Cross-facet consistency
 
 After all per-file culls complete, a holistic pass checks for contradictions across facet files (e.g. two state-update entries setting the same field to different values for the same proto-line). The contradiction rule: **delete both, flag for re-author.** Do not pick a winner.

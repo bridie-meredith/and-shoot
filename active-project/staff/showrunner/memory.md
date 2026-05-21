@@ -340,6 +340,156 @@ series:
         end_rank: 1
         class: plot
 
+    actor_baselines:
+      # Per-actor positional grid (added 2026-05-21; densified 2026-05-21 pass-2 for systematic coverage).
+      # DENSE MATRIX: every cast_roster actor × every state_axes axis. 8 actors × 9 axes = 72 cells.
+      # No omissions — `applicability: not-applicable` makes the deliberate exclusion explicit at the cell.
+      #
+      # state_axes above pins per-perspective aggregate positions (protagonist / antagonist / world).
+      # actor_baselines disambiguates within a perspective — two antagonist-perspective actors with very
+      # different arcs, supporting-perspective actors who do not share a single arc, etc.
+      #
+      # `applicability` values:
+      #   moves           — start_rank ≠ end_rank; actor's position arcs across the book
+      #   static          — start_rank = end_rank; actor's position is deliberately pinned (examined, not skipped)
+      #   not-applicable  — actor does not participate in this axis's machinery; rationale REQUIRED in notes
+      #
+      # `source` lineage values:
+      #   lifted-from-state-axes       — verbatim from the perspective-aggregate above
+      #   inferred-from-role-card      — built from cast-roster role descriptions + book chunk
+      #   scene-pinned-<chapter-slug>  — pinned when a chapter's scenes resolved the actor's position
+      #
+      # COVERAGE TABLE (axis × actor; m=moves, s=static, x=not-applicable):
+      #                        mf  cap pos st  ras mls pre kn  ag
+      #   taylor               m   m   m   m   m   m   m   m   m       (9 moves — protagonist; lifted)
+      #   otto                 m   m   m   m   m   m   m   m   m       (9 moves — antagonist primary; lifted)
+      #   aemond               x   s   s   s   x   x   x   x   s       (walk-on; 4 static, 5 n/a)
+      #   wren                 x   s   s   m   m   x   x   s   x       (cost-bearer; 2 moves, 3 static, 4 n/a)
+      #   sera                 x   s   s   s   x   x   x   x   s       (protect-target; 4 static, 5 n/a)
+      #   gylda                x   s   s   s   x   x   x   m   x       (witness-mirror; 1 moves, 3 static, 5 n/a)
+      #   coll                 x   s   s   s   x   x   x   s   x       (fixture; 4 static, 5 n/a)
+      #   corvan               x   x   s   x   x   x   x   s   x       (frame-coda; 2 static, 7 n/a)
+      #   ---
+      #   total cells filled: 8 × 9 = 72; moves 21, static 20, not-applicable 31.
+
+      # ============================================================================================
+      # taylor-hebert-kl-122ac (protagonist) — 9 moves, lifted-from-state-axes
+      # ============================================================================================
+      - { actor: taylor-hebert-kl-122ac, axis: moral-framework,                  applicability: moves,  start_rank: 3,    end_rank: 1,    source: lifted-from-state-axes, notes: "3→1; d03 first-exception → d07 systematic → d12 irrevocable" }
+      - { actor: taylor-hebert-kl-122ac, axis: capability,                       applicability: moves,  start_rank: 3,    end_rank: 7,    source: lifted-from-state-axes, notes: "3→7; dormant by choice → Khepri-rhyming-surveillance-architecture; suppressed-baseline at b01c01" }
+      - { actor: taylor-hebert-kl-122ac, axis: position,                         applicability: moves,  start_rank: 1,    end_rank: 1,    source: lifted-from-state-axes, notes: "1→5→1 net=0; visibility-phase (d01–d09) → entrapment-phase (d10–d14); start_rank=end_rank but applicability=moves because intra-book trajectory is two-phase" }
+      - { actor: taylor-hebert-kl-122ac, axis: social-tether,                    applicability: moves,  start_rank: 2,    end_rank: 1,    source: lifted-from-state-axes, notes: "2→1; embedded → load-bearing → exposed → severed at d14 (Wren death + Otto channel dissolved)" }
+      - { actor: taylor-hebert-kl-122ac, axis: relational-anchor-status,         applicability: moves,  start_rank: 3,    end_rank: 1,    source: lifted-from-state-axes, notes: "3→1; the un-priced relationship's position to the ledger; cl-unpriced-cost-bearer + cl-protection-buys-consolidation each -1" }
+      - { actor: taylor-hebert-kl-122ac, axis: moral-legibility-to-self,         applicability: moves,  start_rank: 7,    end_rank: 4,    source: lifted-from-state-axes, notes: "7→4; atoning-and-aware → recognition-too-late; inverted emotional rubric — starts high" }
+      - { actor: taylor-hebert-kl-122ac, axis: political-register-toward-elite,  applicability: moves,  start_rank: 5,    end_rank: 9,    source: lifted-from-state-axes, notes: "5→9; resentment → contempt-without-refusal; rising IS the cost" }
+      - { actor: taylor-hebert-kl-122ac, axis: knowledge,                        applicability: moves,  start_rank: 3,    end_rank: 8,    source: lifted-from-state-axes, notes: "3→8; immediate-block → more complete picture than most Small Council members" }
+      - { actor: taylor-hebert-kl-122ac, axis: agency,                           applicability: moves,  start_rank: 5,    end_rank: 1,    source: lifted-from-state-axes, notes: "5→1; self-directed → locked into no-exit then expelled; steepest single loss-arc" }
+
+      # ============================================================================================
+      # otto-hightower (antagonist primary; intelligence architect) — 9 moves, lifted-from-state-axes
+      # Otto is the antagonist-perspective archetype; perspective-aggregate fits him exactly.
+      # ============================================================================================
+      - { actor: otto-hightower, axis: moral-framework,                  applicability: moves,  start_rank: 7,    end_rank: 8,    source: lifted-from-state-axes, notes: "7→8; factional moral system intact and strengthening; Green-faction's working ethics; Otto IS the antagonist-perspective archetype" }
+      - { actor: otto-hightower, axis: capability,                       applicability: moves,  start_rank: 5,    end_rank: 8,    source: lifted-from-state-axes, notes: "5→8; intelligence apparatus reach: court informants → full-spectrum coverage from Flea Bottom to Holdfast (with Taylor's network as ground layer)" }
+      - { actor: otto-hightower, axis: position,                         applicability: moves,  start_rank: 6,    end_rank: 8,    source: lifted-from-state-axes, notes: "6→8; advisory-from-outside → Hand-in-fact; factional standing consolidates" }
+      - { actor: otto-hightower, axis: social-tether,                    applicability: moves,  start_rank: 7,    end_rank: 9,    source: lifted-from-state-axes, notes: "7→9; single-layer faction → cross-layer factional dominance" }
+      - { actor: otto-hightower, axis: relational-anchor-status,         applicability: moves,  start_rank: 5,    end_rank: 6,    source: lifted-from-state-axes, notes: "5→6; instrumentalized relational anchors; minor strengthening as inner-circle attachment + utility deepens" }
+      - { actor: otto-hightower, axis: moral-legibility-to-self,         applicability: moves,  start_rank: 6,    end_rank: 7,    source: lifted-from-state-axes, notes: "6→7; instrumental self-reading → fully self-confirming" }
+      - { actor: otto-hightower, axis: political-register-toward-elite,  applicability: moves,  start_rank: 7,    end_rank: 8,    source: lifted-from-state-axes, notes: "7→8; structurally reinforced dynastic prerogative" }
+      - { actor: otto-hightower, axis: knowledge,                        applicability: moves,  start_rank: 7,    end_rank: 9,    source: lifted-from-state-axes, notes: "7→9; experienced court-layer reach → complete KL intelligence picture (via Taylor's coverage layer)" }
+      - { actor: otto-hightower, axis: agency,                           applicability: moves,  start_rank: 7,    end_rank: 9,    source: lifted-from-state-axes, notes: "7→9; constrained-but-directing → structural maximum over dynastic outcomes" }
+
+      # ============================================================================================
+      # aemond-targaryen-122ac (antagonist walk-on; Vhagar rider) — 4 static + 5 not-applicable
+      # Walk-on archetype: appearances DEPLOY pre-existing capability at structural crisis points;
+      # no per-axis arc; positions are pinned-static where he has them.
+      # ============================================================================================
+      - { actor: aemond-targaryen-122ac, axis: moral-framework,                  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "walk-on; Green-faction loyalty given as a structural fact, not interrogated; no ethical-accounting arc to track" }
+      - { actor: aemond-targaryen-122ac, axis: capability,                       applicability: static,         start_rank: 9,    end_rank: 9,    source: inferred-from-role-card, notes: "Vhagar (largest living dragon); rank 9 throughout; Aemond's appearances DEPLOY the capability, do not arc it" }
+      - { actor: aemond-targaryen-122ac, axis: position,                         applicability: static,         start_rank: 7,    end_rank: 7,    source: inferred-from-role-card, notes: "Green-faction prince; court-tier high; static across walk-on appearances" }
+      - { actor: aemond-targaryen-122ac, axis: social-tether,                    applicability: static,         start_rank: 8,    end_rank: 8,    source: inferred-from-role-card, notes: "royal birth + Green-faction inner-circle; cross-layer factional embedded by birthright" }
+      - { actor: aemond-targaryen-122ac, axis: relational-anchor-status,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "not a relational-anchor track participant; cost-bearer / protect-target machinery does not include Aemond" }
+      - { actor: aemond-targaryen-122ac, axis: moral-legibility-to-self,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "archetype-flat coercive arm; the book does not interrogate Aemond's self-accounting" }
+      - { actor: aemond-targaryen-122ac, axis: political-register-toward-elite,  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "Aemond IS elite; the axis tracks register TOWARD elite from non-elite positions — does not apply" }
+      - { actor: aemond-targaryen-122ac, axis: knowledge,                        applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "not a knowledge-tracking arc; Aemond's awareness is local-to-appearance, not a court-intelligence picture in the book's terms" }
+      - { actor: aemond-targaryen-122ac, axis: agency,                           applicability: static,         start_rank: 8,    end_rank: 8,    source: inferred-from-role-card, notes: "royal prince + Vhagar rider; high agency but static — walk-on appearances do not arc this" }
+
+      # ============================================================================================
+      # wren-stitch-maker-flea-bottom-ward (supporting/cost-bearer) — 2 moves + 3 static + 4 not-applicable
+      # Wren's load-bearing axis is relational-anchor-status (Taylor's POV) and social-tether (her own
+      # ward-community); the rest are static-at-low (child, no power) or not-applicable (child, not
+      # interrogated as a moral-accounting agent).
+      # ============================================================================================
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: moral-framework,                  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "11-year-old ward; the book does not interrogate Wren as an ethical-accounting agent — she is the cost-bearer, not a moral actor with an arc" }
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: capability,                       applicability: static,         start_rank: 1,    end_rank: 1,    source: inferred-from-role-card, notes: "child seamstress-ward; no power; static throughout" }
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: position,                         applicability: static,         start_rank: 1,    end_rank: 1,    source: inferred-from-role-card, notes: "smallfolk-ward; no court layer; static (cannot rise — child + cost-bearer slot)" }
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: social-tether,                    applicability: moves,          start_rank: 5,    end_rank: 1,    source: inferred-from-role-card, notes: "5→1; seamstress-family ward + ward-community embedded → dead at d14; social-tether IS the seamstress-ward layer until the violence" }
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: relational-anchor-status,         applicability: moves,          start_rank: 3,    end_rank: 1,    source: inferred-from-role-card, notes: "3→1; named-outside-ledger (d02) → load-bearing-but-still-unpriced (d08) → unprotected-at-burn (d14); arc reads via Taylor's POV but Wren's life-events track it — observed → necessary-to-coverage → dead" }
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: moral-legibility-to-self,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "child; not interrogated as a self-accounting agent" }
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: political-register-toward-elite,  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "smallfolk-ward; outside the layer that registers toward elite in a tracked way" }
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: knowledge,                        applicability: static,         start_rank: 3,    end_rank: 3,    source: scene-pinned-b01c01,    notes: "distributed-attention habit established at b01c01 (asks too many questions; watches what adults pretend not to see); rank 3 stable — habit is the witnessing tool, not an arc" }
+      - { actor: wren-stitch-maker-flea-bottom-ward, axis: agency,                           applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "child agency at survival-grain; not an axis the book tracks for Wren's arc" }
+
+      # ============================================================================================
+      # sera-hightower-kl-122ac (supporting/protect-target) — 4 static + 5 not-applicable
+      # Sera's stability IS the dramatic event: cl-protection-buys-consolidation preserves her by
+      # design. Her positions hold throughout the book because the architecture holds them.
+      # ============================================================================================
+      - { actor: sera-hightower-kl-122ac, axis: moral-framework,                  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "court ward age 14; archetype-flat in book's frame; not interrogated as moral-accounting agent" }
+      - { actor: sera-hightower-kl-122ac, axis: capability,                       applicability: static,         start_rank: 2,    end_rank: 2,    source: inferred-from-role-card, notes: "court ward age 14; minimal personal capability; static" }
+      - { actor: sera-hightower-kl-122ac, axis: position,                         applicability: static,         start_rank: 4,    end_rank: 4,    source: inferred-from-role-card, notes: "Hightower cadet-branch ward; court-tier present-but-vulnerable; STABLE because the architecture preserves it from collapsing to 1; survives the succession crisis" }
+      - { actor: sera-hightower-kl-122ac, axis: social-tether,                    applicability: static,         start_rank: 6,    end_rank: 6,    source: inferred-from-role-card, notes: "Hightower cadet-branch + court-ward network; stable — same architecture preserves the tether" }
+      - { actor: sera-hightower-kl-122ac, axis: relational-anchor-status,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "different track from cost-bearer; Sera is protect-target, not relational-anchor for Taylor — does not know Taylor exists" }
+      - { actor: sera-hightower-kl-122ac, axis: moral-legibility-to-self,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "not interrogated as self-accounting agent" }
+      - { actor: sera-hightower-kl-122ac, axis: political-register-toward-elite,  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "Sera IS elite cadet-branch; the axis tracks register TOWARD elite from non-elite — does not apply" }
+      - { actor: sera-hightower-kl-122ac, axis: knowledge,                        applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "not a knowledge-tracking arc participant; the book does not pin Sera's intelligence picture" }
+      - { actor: sera-hightower-kl-122ac, axis: agency,                           applicability: static,         start_rank: 2,    end_rank: 2,    source: inferred-from-role-card, notes: "court ward; constrained agency; static throughout (preserved-not-empowered)" }
+
+      # ============================================================================================
+      # gylda-saltwater-flea-bottom (supporting/witness-mirror) — 1 moves + 3 static + 5 not-applicable
+      # Gylda's load-bearing event is the d09-d10 naming of the too-many-places pattern; knowledge
+      # spike but non-confidant hard fence means it does not propagate.
+      # ============================================================================================
+      - { actor: gylda-saltwater-flea-bottom, axis: moral-framework,                  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "Flea Bottom water-carrier; not interrogated as moral-accounting agent" }
+      - { actor: gylda-saltwater-flea-bottom, axis: capability,                       applicability: static,         start_rank: 1,    end_rank: 1,    source: inferred-from-role-card, notes: "water-carrier; no power; static" }
+      - { actor: gylda-saltwater-flea-bottom, axis: position,                         applicability: static,         start_rank: 1,    end_rank: 1,    source: inferred-from-role-card, notes: "Flea Bottom smallfolk; no court layer; static" }
+      - { actor: gylda-saltwater-flea-bottom, axis: social-tether,                    applicability: static,         start_rank: 4,    end_rank: 4,    source: inferred-from-role-card, notes: "Flea Bottom water-carrier network; cross-block visibility; static" }
+      - { actor: gylda-saltwater-flea-bottom, axis: relational-anchor-status,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "not a relational-anchor for Taylor; witness-mirror role is structural, not relational" }
+      - { actor: gylda-saltwater-flea-bottom, axis: moral-legibility-to-self,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "not interrogated as self-accounting agent" }
+      - { actor: gylda-saltwater-flea-bottom, axis: political-register-toward-elite,  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "no register-toward tracked for Gylda; the book uses her as observer, not as political-positioned actor" }
+      - { actor: gylda-saltwater-flea-bottom, axis: knowledge,                        applicability: moves,          start_rank: 2,    end_rank: 4,    source: inferred-from-role-card, notes: "2→4 at d09-d10 only; observes too-many-places pattern and names it once; non-confidant hard fence means knowledge does not propagate further; the move IS the named-once event" }
+      - { actor: gylda-saltwater-flea-bottom, axis: agency,                           applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "not an agency-tracked arc; Gylda's role is the moment-of-naming, not directional action" }
+
+      # ============================================================================================
+      # coll-net-mender-flea-bottom (world/fixture; non-interpretive substrate) — 4 static + 5 not-applicable
+      # Coll IS the Flea Bottom social-physics baseline against which Taylor's arc plays. All present
+      # axes hold flat; the role is "non-interpretive community-substrate carrier; never names."
+      # ============================================================================================
+      - { actor: coll-net-mender-flea-bottom, axis: moral-framework,                  applicability: not-applicable, start_rank: null, end_rank: null, source: scene-pinned-b01c01, notes: "non-interpretive substrate; the role explicitly refuses moral-accounting voice ('never names'); does not arc on this axis by design" }
+      - { actor: coll-net-mender-flea-bottom, axis: capability,                       applicability: static,         start_rank: 1,    end_rank: 1,    source: scene-pinned-b01c01, notes: "net-mending; no power; static" }
+      - { actor: coll-net-mender-flea-bottom, axis: position,                         applicability: static,         start_rank: 1,    end_rank: 1,    source: scene-pinned-b01c01, notes: "block-fixture; no court layer; static — Coll IS the Flea Bottom social-physics baseline" }
+      - { actor: coll-net-mender-flea-bottom, axis: social-tether,                    applicability: static,         start_rank: 5,    end_rank: 5,    source: scene-pinned-b01c01, notes: "one-block embedded; range of observation exactly one street; static" }
+      - { actor: coll-net-mender-flea-bottom, axis: relational-anchor-status,         applicability: not-applicable, start_rank: null, end_rank: null, source: scene-pinned-b01c01, notes: "not a relational-anchor track participant for Taylor; Coll provides proximity-as-cover, not relational anchoring" }
+      - { actor: coll-net-mender-flea-bottom, axis: moral-legibility-to-self,         applicability: not-applicable, start_rank: null, end_rank: null, source: scene-pinned-b01c01, notes: "non-interpretive substrate; the role refuses interpretive interiority by construction" }
+      - { actor: coll-net-mender-flea-bottom, axis: political-register-toward-elite,  applicability: not-applicable, start_rank: null, end_rank: null, source: scene-pinned-b01c01, notes: "no register tracked; Coll's role is substrate-carrier, not political-positioned" }
+      - { actor: coll-net-mender-flea-bottom, axis: knowledge,                        applicability: static,         start_rank: 4,    end_rank: 4,    source: scene-pinned-b01c01, notes: "intimate block-level knowledge of Flea Bottom; does not name what he sees; static — Coll's knowledge does not propagate or arc, it provides cover" }
+      - { actor: coll-net-mender-flea-bottom, axis: agency,                           applicability: not-applicable, start_rank: null, end_rank: null, source: scene-pinned-b01c01, notes: "not an agency-tracked arc; the fixture role is non-directional by design" }
+
+      # ============================================================================================
+      # corvan-archmaester-retrospective-coda (world/coda) — 2 static + 7 not-applicable
+      # Frame-coda voice writing c.160 AC; outside the 122 AC book's time-frame; b01c18 INTERLUDE
+      # chapter is bone-gate exempt per chapter_class:frame-coda.
+      # ============================================================================================
+      - { actor: corvan-archmaester-retrospective-coda, axis: moral-framework,                  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "frame voice; outside 122 AC scope; not interrogated as in-book moral actor" }
+      - { actor: corvan-archmaester-retrospective-coda, axis: capability,                       applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "frame voice; not a capability-bearing actor in the in-book sense" }
+      - { actor: corvan-archmaester-retrospective-coda, axis: position,                         applicability: static,         start_rank: 5,    end_rank: 5,    source: inferred-from-role-card, notes: "Archmaester at the Citadel (c.160 AC); frame-coda voice; in-book Δ exempt — position pinned for grid consistency only" }
+      - { actor: corvan-archmaester-retrospective-coda, axis: social-tether,                    applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "frame voice; in-book tether does not apply (writes from 38 years later)" }
+      - { actor: corvan-archmaester-retrospective-coda, axis: relational-anchor-status,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "frame voice; no relational anchor to Taylor or cost-bearer apparatus" }
+      - { actor: corvan-archmaester-retrospective-coda, axis: moral-legibility-to-self,         applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "frame voice; the chronicle is about Taylor's apparatus, not Corvan's self-accounting" }
+      - { actor: corvan-archmaester-retrospective-coda, axis: political-register-toward-elite,  applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "frame voice; Corvan's register is archival-evidential, not political-positioned in the tracked sense" }
+      - { actor: corvan-archmaester-retrospective-coda, axis: knowledge,                        applicability: static,         start_rank: 6,    end_rank: 6,    source: inferred-from-role-card, notes: "retrospective archival picture; incomplete by design (does not know Taylor's name); frame-coda — no Δ across the book; pinned for grid consistency only" }
+      - { actor: corvan-archmaester-retrospective-coda, axis: agency,                           applicability: not-applicable, start_rank: null, end_rank: null, source: inferred-from-role-card, notes: "frame voice; no in-book agency to track" }
+
     cost_ledger:
       - id: cl-otto-trade
         gain: agency -1
@@ -453,7 +603,10 @@ books:
       axes_in_motion:
         - { axis: moral-framework,              direction: down, target_delta_magnitude: 2, cost_ledger_anchor: cl-otto-trade,                  notes: "3→1 protagonist; d03 first-exception → d07 systematic → d12 irrevocable" }
         - { axis: capability,                   direction: up,   target_delta_magnitude: 4, cost_ledger_anchor: cl-network-position,            notes: "3→7; d01 localized → d04 Khepri-rhyming-surveillance-architecture → d12 fully-deployed; architecture is surveillance+unconsented-instrumentalization, not control-override" }
-        - { axis: position,                     direction: ~,    target_delta_magnitude: 0, cost_ledger_anchor: cl-social-tether-build,         notes: "1→1 net; INTENTIONAL rise-and-fall (peak 5 d07, collapse d14); direction null because net is zero — intra-book shape is visibility-phase then entrapment-phase, not a net upward arc" }
+        # position axis is split into two phase-entries under the 2026-05-21 axis-bookkeeping split (no more direction:null);
+        # net = 0 across the book is the algebraic aggregate of these two phases, not a "no movement" claim.
+        - { axis: position,                     direction: up,   target_delta_magnitude: 4, cost_ledger_anchor: cl-social-tether-build,         notes: "visibility-phase d01–d09; 1→5; rise to Otto's-unofficial-instrument; arrangement formalizes; position-visibility crystallizes" }
+        - { axis: position,                     direction: down, target_delta_magnitude: 4, cost_ledger_anchor: cl-social-tether-build,         notes: "entrapment-phase d10–d14; 5→1; collapse to no-exit then expulsion; intra-book net = 0 against visibility-phase entry above" }
         - { axis: social-tether,                direction: down, target_delta_magnitude: 1, cost_ledger_anchor: cl-social-tether-build,         notes: "2→1; d01 embedded → d04 load-bearing → d10 exposed → d14 severed" }
         - { axis: relational-anchor-status,     direction: down, target_delta_magnitude: 2, cost_ledger_anchor: [cl-unpriced-cost-bearer, cl-protection-buys-consolidation], notes: "3→1; d02 named-outside-ledger → d08 load-bearing → d14 unprotected-at-burn; two ledger entries each contribute -1 summing to -2 net; see cl-unpriced-cost-bearer description for compounding mechanism" }
         - { axis: moral-legibility-to-self,     direction: down, target_delta_magnitude: 3, cost_ledger_anchor: cl-unpriced-cost-bearer,        notes: "7→4; d02 first-crack → d06 rationalizing → d10/d11 suppression → d14 recognition-too-late. cl-unpriced-cost-bearer contributes -1 directly; additional -2 net is consequence-driven by Wren-related observations at d06 (rationalizing trades), d10/d11 (suppression of seeing what the architecture has become) — these are not paid trades but recognition-events triggered by accumulating ledger costs elsewhere. Bone-gate at /and-write Phase 6 should accept consequence-anchored bones on this axis when no direct ledger trade is appropriate." }
@@ -474,8 +627,9 @@ books:
           scene_count: 3
         substance_delta:
           axes_in_motion:
-            - { axis: capability, direction: null, target_delta_magnitude: 0, cost_ledger_anchor: ~, notes: "dormant; passive insect-sense only; establishes suppressed baseline at rank 3" }
             - { axis: knowledge, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: ~, notes: "Flea Bottom geography read; ward-level pattern established; 3→3.5; passive orientation; pre-arrangement; unanchored knowledge gain at baseline" }
+          axes_held:
+            - { axis: capability, rationale: "dormant by choice; passive insect-sense only; establishes suppressed baseline at rank 3; the prohibition holds for the whole chapter — this is the discipline before it is tested" }
           density_target: "0.6-0.9"  # tuned up from 0.5-0.6 at /and-substance chapter Phase 5 to envelope scene densities (s01 0.6-0.7 / s02 0.7-0.8 / s03 0.7-0.9); chapter chunk prose itself reads at the lower-mid of band; original book-level estimate was authoring drift
         handoff_in:
           open_threads:
@@ -543,7 +697,8 @@ books:
           faults_surfaced: 4    # 1 FAULT-EXPOSITION-AUDIT-MISS, 3 FAULT-AUDIT-MISS (Q9-hits on facet content; render-as-is; surfaced for upstream review)
           fence_stretches_resolved: 1    # @24 "from the mesh" CUT-CLAUSE
         substance_delta_measured:
-          axes_moved: { capability: 0, knowledge: 0.53 }   # scene-sum: s01 0.19 + s02 0.24 + s03 0.10 = 0.53 against chapter target 0.5 (within band)
+          axes_moved: { knowledge: 0.53 }                  # scene-sum: s01 0.19 + s02 0.24 + s03 0.10 = 0.53 against chapter target 0.5 (within band)
+          axes_held_verified: [capability]                 # capability held at rank 3 across all 3 scenes; 7 of 27 bones carry capability in axes_held (4 of those are stillness-against-pressure holds discipline bones, 3 are ambient-drift held-by-rule). Discipline enacted, not just stated. Replaces prior `axes_moved: { capability: 0 }` bookkeeping under the 2026-05-21 axis split.
           density_measured: ~     # facet/stitch-layer measurement; bone-density approximated within target band 0.6-0.9 by scene aggregation
           felt_verdict: PASS-3-of-3   # cape-fic-reader + dark-fantasy-reader + worm-canon-pedant all SUBSTANCE-FELT across all three scene windows; one stitch-layer informational flag from worm-canon-pedant on s02n04 'fill' verb stability (avoid drift to active-class sweep at stitch)
         # /and-write Phase 7 flat_id assignment (scene-internal walk in dramatist-shaped order; deletions left as slug-gaps; blank-numbered time-skips at flat 10, 21):
@@ -559,13 +714,14 @@ books:
               Taylor Hebert arrives at the corner off the Hook the way she arrives everywhere now — without announcement, without apparatus, paying copper stars for a sleeping space in a building that does not ask about prior addresses. The transaction is the method: she is not here to be known, she is here to be present, and the distinction is the entire operating rule she carried out of Gold Morning — useful without controlling, present without possessing, anonymity as the proof-of-concept that she can be in a place without threading through it. Coll the net-mender occupies the building's street-facing corner the way a fixture occupies space: not by arrangement but by accumulated duration, his range of observation exactly one street in any direction, his interest in strangers bounded by whether they can hold a needle. The collision of the scene is small and structural: King's Landing operates on vouching, and Taylor cannot afford to be vouched-for in any way that creates a claim or a debt or a name above the street level — and yet without some social surface against which to settle, a stranger alone in Flea Bottom reads as wrong in ways that accumulate. Coll resolves this by being a wall: his proximity functions as cover without arrangement, his lack of questions is not incuriosity but the Flea Bottom courtesy of not naming what you see in a neighbor's work. Taylor pays for the corner, inventories the ward at ground level — stone, tallow-smoke, the gallows calendar of feast and shortage and levy — and notes, with the deliberate attention she has been training toward, that no one here has a power that requires containing. She is paying attention to that absence. The insect-sense runs at the threshold of passive, reading walls and flagstones and the temperature of rooms through what lives in them, and she keeps it there: below deployment, below the line that would make it an act rather than a sense.
             substance_delta:
               axes_in_motion:
-                - { axis: capability, direction: null, target_delta_magnitude: 0, cost_ledger_anchor: ~, notes: "insect-sense held passive at threshold; capability rank 3 unchanged; dormancy enacted, not just stated" }
                 - { axis: knowledge, direction: up, target_delta_magnitude: 0.2, cost_ledger_anchor: ~, notes: "immediate ward geometry established: the Hook, Coll's block, social physics of Flea Bottom vouching; 3→3.2; passive orientation layer" }
+              axes_held:
+                - { axis: capability, rationale: "insect-sense held passive at threshold; capability rank 3 unchanged; dormancy enacted, not just stated; the held axis IS the scene's stakes_axis" }
               density_target: "0.6-0.7"
             scene_conflict:
               protagonist_force: "Taylor establishing street-level presence without incurring debt, claim, or visibility above the block"
               opposing_force: "Flea Bottom's social physics require vouching; a stranger who settles without vouching reads as wrong and accumulates notice"
-              stakes_axis: capability   # refusal to deploy insect-sense above passive is the load-bearing discipline; capability stays at zero by choice
+              stakes_axis: capability   # held axis (axes_held) — refusal to deploy insect-sense above passive is the load-bearing discipline; capability stays at rank 3 by choice. Bone-gate Phase 6 validates against axes_in_motion ∪ axes_held.
             bones:
               # Phase 1 scene-decomposition + Phase 2 fixer (s01n04 'faces' → 'lifts the eyes') +
               # Phase 3 dramatist (n05↔n04 cause-before-effect swap) + Phase 3 bridge n11 (yard-exit).
@@ -614,9 +770,10 @@ books:
               - slug: b01c01s01n08
                 svo: "taylor-hebert-kl-122ac drops the pack"
                 substance_delta:
-                  axis_moves:
-                    - { axis: knowledge, direction: null, magnitude: 0, notes: "physical-anchor — settling enacted; no axis moved; pack-down marks occupation of space without claim; stillness marker before scene-close hinge" }
+                  axis_moves: []                       # chatter bone — pure transition / occupation marker
+                  axes_held: []
                   cost_ledger_anchor: ~
+                  # chatter-rationale: physical-anchor — settling enacted; pack-down marks occupation of space without claim; stillness marker before scene-close hinge. Density-cap permits chatter at this scene position.
               - slug: b01c01s01n09
                 svo: "coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac"
                 substance_delta:
@@ -626,8 +783,9 @@ books:
               - slug: b01c01s01n10
                 svo: "taylor-hebert-kl-122ac holds the feet"
                 substance_delta:
-                  axis_moves:
-                    - { axis: capability, direction: null, magnitude: 0, notes: "stillness-against-pressure — licensed holds form on body part; insect-sense runs at passive threshold; capability held at rank 3 by discipline enacted, not just stated; the load-bearing dormancy bone" }
+                  axis_moves: []
+                  axes_held:
+                    - { axis: capability, rationale: "stillness-against-pressure — licensed holds form on body part; insect-sense runs at passive threshold; capability held at rank 3 by discipline enacted, not just stated; the load-bearing dormancy bone — satisfies scene's stakes_axis: capability via axes_held" }
                   cost_ledger_anchor: ~
 
           - slug: b01c01s02
@@ -635,13 +793,14 @@ books:
               The working day has a rhythm Taylor can run the ledger inside of: Coll mends nets at the street corner, and she mends nets beside him, and the work is repetitive enough that the accounting-mind can run a background process without visibly stalling. What she is running in the background is Flea Bottom — not the social surface of it, which Coll mediates for her by existing beside her, but the substrate geometry that the insect-sense opens and the operating rule governs. She can read the ward through the insects in the walls: density means population, temperature means occupation, movement patterns trace the routes the smallfolk use and the gaps they avoid. She reads it. She does not deploy. The chapter's central discipline is enacted here in its clearest form — sense without instrumentalization, observation without action, the gap between capability available and capability held at bay made visible in the texture of the work. The needle moves. The awareness runs. The prohibition holds. The collision this scene is staging is the smallest possible version of the book's central event: the insect-sense could route, could track, could do any number of things it is not being asked to do, and the only thing preventing it is a rule Taylor authored and is enforcing on herself. She notes the geography she has built by the end of the day — block-level density maps, movement corridors, the location of the city watch's patrol rotation relative to the Hook — as passive observation, not as intelligence. The distinction is real to her. She enters it in the accounting as knowledge gained, cost zero, tool unused.
             substance_delta:
               axes_in_motion:
-                - { axis: capability, direction: null, target_delta_magnitude: 0, cost_ledger_anchor: ~, notes: "insect-sense passive throughout; prohibition enacted against no external pressure; capability rank 3 unchanged; this scene is the discipline before it is tested" }
                 - { axis: knowledge, direction: up, target_delta_magnitude: 0.2, cost_ledger_anchor: ~, notes: "block-level density maps, movement corridors, watch patrol rotation read passively; 3.2→3.4; ward-pattern orientation; pre-arrangement; unanchored" }
+              axes_held:
+                - { axis: capability, rationale: "insect-sense passive throughout; prohibition enacted against no external pressure; capability rank 3 unchanged; this scene is the discipline before it is tested" }
               density_target: "0.7-0.8"
             scene_conflict:
               protagonist_force: "Taylor reading the ward through insect-sense while holding the prohibition against deployment"
               opposing_force: "the capability is available and the ward's geometry is legible; the rule is the only thing holding the gap open"
-              stakes_axis: capability   # the refusal to move is the event; capability stays at zero by choice
+              stakes_axis: capability   # held axis (axes_held); the refusal to move is the event; capability stays at rank 3 by choice
             bones:
               # Phase 1 scene-decomposition + Phase 2 fixer (n02 'taut' strip, n06 'through the mesh' → 'the needle crosses the mesh',
               # n09 'aside' → 'folds') + Phase 3 dramatist reorder (hand-work / ambient drift / watch-pressure grouped) +
@@ -654,15 +813,17 @@ books:
               - slug: b01c01s02n01
                 svo: "taylor-hebert-kl-122ac lifts the basket"
                 substance_delta:
-                  axis_moves:
-                    - { axis: knowledge, direction: null, magnitude: 0, notes: "physical anchor; establishes the working-day rhythm underway; posture-act opening beat (avoids 'threads the needle' collision with s01n06-equivalent label)" }
+                  axis_moves: []                       # chatter bone — working-day rhythm opener
+                  axes_held: []
                   cost_ledger_anchor: ~
+                  # chatter-rationale: posture-act opening beat; establishes the working-day rhythm underway (avoids 'threads the needle' collision with s01n06-equivalent label)
               - slug: b01c01s02n02
                 svo: "coll-net-mender-flea-bottom pulls the net"
                 substance_delta:
-                  axis_moves:
-                    - { axis: knowledge, direction: null, magnitude: 0, notes: "rhythm-anchor; Coll's physical presence beside Taylor; social-cover-by-proximity established in s01 continues; sets the repetitive working beat" }
+                  axis_moves: []                       # chatter bone — co-presence rhythm anchor
+                  axes_held: []
                   cost_ledger_anchor: ~
+                  # chatter-rationale: rhythm-anchor; Coll's physical presence beside Taylor; social-cover-by-proximity established in s01 continues; sets the repetitive working beat
               - slug: b01c01s02n03
                 svo: "taylor-hebert-kl-122ac threads the needle"
                 substance_delta:
@@ -680,14 +841,16 @@ books:
                 substance_delta:
                   axis_moves:
                     - { axis: knowledge, direction: up, magnitude: 0.05, notes: "block-level density registered passively; ambient drift at rank 3 ceiling; ward-pattern orientation — population density across the Hook; pre-arrangement; unanchored" }
-                    - { axis: capability, direction: null, magnitude: 0, notes: "ambient-drift verb 'fill'; passive sense at rank 3; capability available and visible; the rule is the only thing holding it at 3; signal-002 mitigation — not active sweep" }
+                  axes_held:
+                    - { axis: capability, rationale: "ambient-drift verb 'fill'; passive sense at rank 3; capability available and visible; the rule is the only thing holding it at 3; signal-002 mitigation — not active sweep" }
                   cost_ledger_anchor: ~
               - slug: b01c01s02n05
                 svo: "the walls cool"
                 substance_delta:
                   axis_moves:
                     - { axis: knowledge, direction: up, magnitude: 0.04, notes: "temperature gradient registered passively; occupation pattern read — which walls are peopled, which are empty; movement-corridor inference begins; pre-arrangement; unanchored" }
-                    - { axis: capability, direction: null, magnitude: 0, notes: "ambient-drift verb 'cool'; ward legibility in plain view; capability could route from this; rule holds it at observation only; opposing-force visible" }
+                  axes_held:
+                    - { axis: capability, rationale: "ambient-drift verb 'cool'; ward legibility in plain view; capability could route from this; rule holds it at observation only; opposing-force visible" }
                   cost_ledger_anchor: ~
               - slug: b01c01s02n10
                 svo: "the boots strike the cobbles"
@@ -704,10 +867,11 @@ books:
               - slug: b01c01s02n08
                 svo: "taylor-hebert-kl-122ac holds the eyes"
                 substance_delta:
-                  axis_moves:
-                    - { axis: knowledge, direction: null, magnitude: 0, notes: "stillness-against-pressure; narrow holds license — body part; discipline enacted: capability available, gaze held level, no sweep issued; prohibition holds; gap between capability and action made physical" }
-                    - { axis: capability, direction: null, magnitude: 0, notes: "discipline bone; capability at its ceiling, held by the rule Taylor authored; the watch passing is the pressure; the body is the instrument of the prohibition" }
+                  axis_moves: []
+                  axes_held:
+                    - { axis: capability, rationale: "discipline bone; capability at its ceiling, held by the rule Taylor authored; the watch passing is the pressure; the body is the instrument of the prohibition; the load-bearing dormancy beat of the scene — satisfies scene's stakes_axis: capability via axes_held" }
                   cost_ledger_anchor: ~
+                  # NOTE 2026-05-21: prior shape had a second 'knowledge null/0' entry alongside capability null. Dropped under the axis-bookkeeping split — knowledge does not move and is not held by discipline at this bone (no information enters; no information is refused). The capability hold carries the bone alone.
               - slug: b01c01s02n09
                 svo: "coll-net-mender-flea-bottom folds the net"
                 substance_delta:
@@ -721,13 +885,14 @@ books:
               # SIGNAL-002 from auditor: explicit "Khepri" naming in interior monologue is in tension with chapter chunk's "Khepri-haunted without naming Khepri" register commitment; classified SIGNAL (not HARD) because the discipline lives in chapter-chunk prose rather than project.constraints.hard_fences; routed to /and-write for bone-level smoothing
             substance_delta:
               axes_in_motion:
-                - { axis: capability, direction: null, target_delta_magnitude: 0, cost_ledger_anchor: ~, notes: "pattern-reading runs and is caught by the rule; capability not deployed; rank 3 unchanged; the assessment-and-catch is the proof-of-function, not a delta" }
                 - { axis: knowledge, direction: up, target_delta_magnitude: 0.1, cost_ledger_anchor: ~, notes: "Wren registered as face-not-node; ward social geometry one layer deeper; 3.4→3.5; minimal gain because Taylor deliberately refuses full assessment" }
+              axes_held:
+                - { axis: capability, rationale: "pattern-reading runs and is caught by the rule; capability not deployed; rank 3 unchanged; the assessment-and-catch is the proof-of-function — held axis carries the scene's structural event even though knowledge is what moves" }
               density_target: "0.7-0.9"
             scene_conflict:
               protagonist_force: "Taylor refusing to complete the instrumental assessment of Wren — holding her as a face, not a node"
               opposing_force: "Taylor's own trained pattern-reading initiates the assessment automatically; the prohibition must actively catch it"
-              stakes_axis: knowledge   # only knowledge axis moving here; refusal to complete assessment is the load-bearing event; the delta is intentionally constrained by that refusal
+              stakes_axis: knowledge   # in-motion axis; the constrained delta IS the load-bearing event (refusal-to-complete-assessment caps the knowledge gain). Capability-as-held is the secondary axis that proves the prohibition is functioning.
             bones:
               # Phase 1 scene-decomposition + Phase 2 fixer (s03n03 'faces' → 'lifts the eyes') +
               # Phase 3 dramatist (order unchanged for s03) + Phase 3 bridge n09 (Wren proximity-establishment).
@@ -737,7 +902,8 @@ books:
                 substance_delta:
                   axis_moves:
                     - { axis: knowledge, direction: up, magnitude: 0.02, notes: "Wren's face registers in Taylor's field — proximity initiates face-entry, below the threshold of model-entry" }
-                    - { axis: capability, direction: null, magnitude: 0, notes: "assessment-pattern initiates on contact; rule catches before deployment; capability rank unchanged" }
+                  axes_held:
+                    - { axis: capability, rationale: "assessment-pattern initiates on contact; rule catches before deployment; capability rank unchanged" }
                   cost_ledger_anchor: ~
               # b01c01s03n09 deleted at Phase 4 audience trim (2-of-3 vote: cape-fic-reader + dark-fantasy-reader).
               # Dramatist bridge n09 (Wren approaches Taylor): absorbed by the speak bone n02 that follows;
@@ -754,7 +920,8 @@ books:
                 substance_delta:
                   axis_moves:
                     - { axis: knowledge, direction: up, magnitude: 0.01, notes: "physical orientation deepens face-recognition; proximity-dwell registers Wren's position in ward geometry at street-corner granularity" }
-                    - { axis: capability, direction: null, magnitude: 0, notes: "opposing-force bone — trained pattern-reading initiates full assessment automatically on direct orientation (node-id, observation-radius, trust-network map); operating rule catches before close; capability not deployed; assessment-starting is proof-of-function, catch is rule working as intended" }
+                  axes_held:
+                    - { axis: capability, rationale: "opposing-force bone — trained pattern-reading initiates full assessment automatically on direct orientation (node-id, observation-radius, trust-network map); operating rule catches before close; capability not deployed; assessment-starting is proof-of-function, catch is rule working as intended" }
                   cost_ledger_anchor: ~
               - slug: b01c01s03n04
                 svo: "taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward"
@@ -771,20 +938,23 @@ books:
               - slug: b01c01s03n06
                 svo: "taylor-hebert-kl-122ac holds the eyes"
                 substance_delta:
-                  axis_moves:
-                    - { axis: capability, direction: null, magnitude: 0, notes: "stillness-against-pressure: eye-orientation is the pressure surface; assessment-run is caught mid-cycle by the operating rule; Taylor holds gaze-direction fixed against trained pull toward completing the node-map; rule working as intended; the hold prevents rather than produces information-entry" }
+                  axis_moves: []
+                  axes_held:
+                    - { axis: capability, rationale: "stillness-against-pressure: eye-orientation is the pressure surface; assessment-run is caught mid-cycle by the operating rule; Taylor holds gaze-direction fixed against trained pull toward completing the node-map; rule working as intended; the hold prevents rather than produces information-entry — load-bearing held bone for the scene's structural collision" }
                   cost_ledger_anchor: ~
               - slug: b01c01s03n07
                 svo: "wren-stitch-maker-flea-bottom-ward crosses the street"
                 substance_delta:
-                  axis_moves:
-                    - { axis: knowledge, direction: null, magnitude: 0, notes: "Wren's departure; no further face-data registered; exit is the cost-bearer-placement beat — Wren leaves the scene un-named-as-significant, recurring in ward geometry from this point forward without having been filed as a node" }
+                  axis_moves: []                       # chatter bone — cost-bearer-placement beat
+                  axes_held: []
                   cost_ledger_anchor: ~
+                  # chatter-rationale: Wren's departure; no further face-data registered; exit is the cost-bearer-placement beat — Wren leaves the scene un-named-as-significant, recurring in ward geometry from this point forward without having been filed as a node
               - slug: b01c01s03n08
                 svo: "taylor-hebert-kl-122ac lifts the needle"
                 substance_delta:
-                  axis_moves:
-                    - { axis: capability, direction: null, magnitude: 0, notes: "closing bone; Taylor returns to physical task — assessment closed, ledger not opened, Wren not filed; brevity of return-to-task is the tell: child, present, noted, not filed; operating rule held; gap between this moment and the future ledger-pricing of Wren begins here" }
+                  axis_moves: []
+                  axes_held:
+                    - { axis: capability, rationale: "closing bone; Taylor returns to physical task — assessment closed, ledger not opened, Wren not filed; brevity of return-to-task is the tell: child, present, noted, not filed; operating rule held; gap between this moment and the future ledger-pricing of Wren begins here" }
                   cost_ledger_anchor: ~
         # Prior /and-write run history (cleared at redo 2026-05-19; preserved for historical reference):
         #   - SIGNAL-003 (s01 social-physics knowledge-acquisition implicit): RESOLVED at /and-write Phase 1 — b01c01s01n03 (coll speaks to taylor) was the explicit vouching-knowledge anchor.
@@ -1523,10 +1693,15 @@ books:
         structure:
           scene_count: 3
         substance_delta:
-          axes_in_motion:
-            - { axis: moral-legibility-to-self, direction: null, target_delta_magnitude: 0, cost_ledger_anchor: ~, notes: "coda chapter; Corvan POV; no protagonist-axis moves; world-perspective accounting only" }
-            - { axis: knowledge, direction: null, target_delta_magnitude: 0, cost_ledger_anchor: ~, notes: "Corvan's picture is incomplete by design; no knowledge-axis move; coda closes the book's knowledge arc without extending it" }
+          # b01c18 is an INTERLUDE / frame chapter — Archmaester Corvan POV at c.160 AC, not Taylor.
+          # No protagonist-axis moves at this chapter; both axes intentionally held.
+          # /and-write Phase 6 substance bone-gate is exempted at this chapter per chapter_class: frame-coda below.
+          axes_in_motion: []
+          axes_held:
+            - { axis: moral-legibility-to-self, rationale: "coda chapter; Corvan POV; protagonist not on-stage; protagonist-perspective accounting frozen at b01c17 close" }
+            - { axis: knowledge, rationale: "Corvan's picture is incomplete by design; the chapter's substance lives in world-perspective archival framing, not protagonist-knowledge extension" }
           density_target: "0.5-0.6"
+          chapter_class: frame-coda          # exempt from standard bone-gate Δ checks; reviewed by dramatist for frame-shape only
         handoff_in:
           open_threads:
             - "OPEN for coda: the network Taylor built outlasted its architect; Aemond's action is the final plot-axis shift registered"
