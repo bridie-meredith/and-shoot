@@ -66,13 +66,23 @@ A scene's `scene_conflict.stakes_axis` must appear in the scene's `substance_del
 
 A bone moves ±1 on one axis typically. Hinge bones (the scene's climactic action) may move ±2 or ±3 on one axis, or move two axes in one event.
 
-**Typical:** `axis_moves: [{axis: community, direction: +, magnitude: 1}]`. One axis, ±1.
+**Typical:** `axis_moves: [{axis: community, direction: up, magnitude: 1}]`. One axis, direction-then-magnitude (no null direction, no zero magnitude).
 
-**Hinge:** `axis_moves: [{axis: reputation, direction: +, magnitude: 2}, {axis: trust, direction: -, magnitude: 1}]`. Two axes, the second often paying the first.
+**Hinge:** `axis_moves: [{axis: reputation, direction: up, magnitude: 2}, {axis: trust, direction: down, magnitude: 1}]`. Two axes, the second often paying the first.
 
 A bone with three or more axis-moves is suspect — that much state-change in one SVO is rare; the bone is usually trying to do too much and should be split.
 
-A bone with zero axis-moves is a **chatter bone** — setup or transition. Chatter bones are allowed only when they pay a later gain (cost-ledger link required). The trim pass culls chatter bones over the density cap.
+### Three bone shapes for "no Δ on this axis"
+
+After the 2026-05-21 axis-bookkeeping split (`schemas/showrunner-memory.schema.md`), three distinct shapes encode "the bone did not move axis X" — and the bone-gate treats them differently:
+
+| shape | encoding | meaning | bone-gate treatment |
+|---|---|---|---|
+| **Held bone** | `axes_held: [{axis: X, rationale: ...}]` | The axis was *deliberately* held flat by discipline; the holding is the scene's load-bearing event (e.g. "Taylor holds the feet" — capability held at rank 3 by choice, the prohibition enacted). | Counts toward density. The held axis is valid `scene_conflict.stakes_axis`. The rationale must name the discipline. |
+| **Chatter bone** | `axis_moves: []` and no `axes_held` | Setup / transition. Does not pay an axis-move at this bone; must pay a later gain (cost-ledger link required). | Counts against density cap. Trim pass culls excess chatter. |
+| **Malformed bone** | `axis_moves: [{axis: X, direction: null, magnitude: 0}]` | Rejected by schema. | HARD `FAULT-BONE-DELTA-MALFORMED` at `/and-write` Phase 2. Recast to held or chatter. |
+
+The split exists because a chatter bone and a held-discipline bone are not the same thing — the first is incidental, the second is load-bearing — and conflating them at the bookkeeping layer hides the difference from the substance bone-gate. A held-discipline bone whose held axis is the scene's `stakes_axis` satisfies the scene contract; a chatter bone never does.
 
 ---
 
