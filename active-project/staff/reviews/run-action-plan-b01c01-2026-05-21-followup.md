@@ -45,11 +45,13 @@
   - Validate that the chunk's `axes_in_motion[]` + `axes_held[]` together cover the parent contract's union.
   - Treat `chapter_class: frame-coda` as a bone-gate exemption (b01c18 Corvan coda).
 
-**F2. Facet tuning harness pass on sensory + memory (A7 + A8 from the parent plan).** [P0 · M effort]
-- The harness lives at `design/shoot-v2/facet-tuning-process.md` (five-phase replicable pattern). Locked V2 rubrics at `design/shoot-v2/rubric-sensory.md` and `design/shoot-v2/rubric-memory-flags.md`. Worked examples: `sensory-tuning-final.md`, `memory-tuning-r2-final.md`.
-- **Sensory (A8 — sparsity-vs-modality arithmetic collision):** Run Phase 1 reviewer-tune against b01c01's authored sensory corpus. Defend-or-update the modality-floor clause to scale with `dramatic_shape` (hinge chapters get exemption) OR raise the sparsity ceiling for chapters under 30 bones OR drop modality-floor when chapter substance is single-axis. Lock as V3.
-- **Memory (A7 — feel-as-spine equivalence):** Run Phase 1 reviewer-tune against `mem:1 @9` and the three remediation paths that blocked uniformly. Add a "feel-as-spine equivalence clause" — memory entries may co-cite `feel:N` instead of `narrator:N` when the chapter's substance lives in feeling, not memory. Lift the held axes (axes_held) as a permitted co-citation surface (memory of a held-discipline moment is anchored to the held axis, not to a movement). Lock as V3.
-- Update auditor's `RUBRIC-FIDELITY` AP-SCAN entries to enforce the V3 rules mechanically in cycle 1.
+**F2. Facet tuning harness pass on sensory + memory (A7 + A8 from the parent plan). — DONE 2026-05-21**
+- Harness pass executed (compressed Phase 0 + Phase 1 walk; cap-burn evidence served as the corpus). Both rubrics locked at V3.
+- **Sensory V3** — `design/shoot-v2/rubric-sensory.md`. Two clauses added: (1) Short-chapter floor-vs-ceiling exemption — when `bone_count < 30` AND modality count equals floor, sparsity ceiling relaxes to `max(6%, 2/bone_count)`; modality-floor takes precedence over sparsity-ceiling because monoculture is the load-bearing pathology. (2) Anti-pattern #14 — Cycle-N ADD without pre-validation; fixer ADDs must satisfy the full per-entry rubric (including old-state lineage) before committing, since same-cycle audit has no remediation budget.
+- **Memory V3** — `design/shoot-v2/rubric-memory-flags.md`. Feel-as-spine equivalence carve-out added on the Licensing-discipline axis (and propagated to the REJECT signature, cross-axis test, anti-pattern #7, and ceiling-defense protocol for consistency). When chapter `dramatic_shape: hinge` AND scene's `stakes_axis` is in `axes_held[]` AND a feel-flag fires on the same anchor AND all other discipline gates clear, memory-flag entries may co-cite the feel-flag as spine in place of narrator-interest. The carve-out is structurally compatible with the 2026-05-21 axis-bookkeeping split — held-discipline scenes are exactly the `axes_held[]` scenes the new schema makes mechanically checkable.
+- Summary doc + re-audit walk at `design/shoot-v2/sensory-memory-v3-tuning-summary.md`. The `mem:1 @9` cap-burn is V3-resolvable retroactively (all four carve-out conditions hold for b01c01); the `sensory:3 @17` cap-burn still needs a chapter-level loc-state repair (V3 provides the rule that would have caught the issue at pre-add time, not a content fix).
+- **No command body or auditor AP-SCAN edits needed** — per CLAUDE.md rule 11, the auditor's RUBRIC-FIDELITY class enumerates REJECT / anti-pattern / cross-facet sections at audit time, so the V3 rubric edits auto-promote to mechanical checks next cycle.
+- Open: cycle-N ADD pre-validation enforcement at orchestration time (F1 / A3) is still owed at the command-body layer; rubric anti-pattern #14 flags the pattern at audit time but doesn't prevent it at fixer time.
 
 **F3. The remaining BLOCKING items from `run-action-plan-b01c01-2026-05-20.md`.** [P0]
 The parent plan's pre-flight checklist had eight items. Two are now done. The remaining six:
@@ -82,10 +84,10 @@ The parent plan's pre-flight checklist had eight items. Two are now done. The re
 
 ```
 [ ] F1  /and-substance + /and-write command bodies synced with new schema (axes_held + direction:up|down)
-[ ] F2  sensory + memory rubrics tuned to V3 via facet-tuning-process harness
+[x] F2  sensory + memory rubrics tuned to V3 via facet-tuning-process harness (done 2026-05-21)
 [ ] A1  anchor-refresh HARD-ABORT at /and-facets Phase 0
 [ ] A2  cap-burn semantics codified
-[ ] A3  cycle-N fixer ADD policy decided
+[ ] A3  cycle-N fixer ADD policy decided  (rubric-side anti-pattern #14 done in F2; orchestration still owed)
 [ ] A4  pipeline-adaptation audit re-run
 [ ] A9  bone-gate audience covers ALL scenes
 [ ] A12 world-notes.md Lucerys/Nessa cleanup
@@ -100,5 +102,8 @@ F4 and F5 are async — they can land across c02-c04 as the per-chapter scene-pi
 - `schemas/showrunner-memory.schema.md` — added `state_axes[].notes`, `actor_baselines[]` block, `axes_in_motion[]` explicit shape at all chunk levels, `axes_held[]` at all levels including bone, standardized `direction: up|down`, added field-notes paragraphs.
 - `design/substance/delta-targets.md` — `axis_moves` direction enum updated to `up|down`; new "three bone shapes" section (held / chatter / malformed).
 - `active-project/staff/showrunner/memory.md` — converted all chunk-level + bone-level null/zero entries; added `series.substance.actor_baselines[]` (dense 8×9=72-cell matrix; every actor × every axis with explicit applicability marker); cleaned `substance_delta_measured.axes_moved` for b01c01.
+- `design/shoot-v2/rubric-sensory.md` — V3 lock; short-chapter floor-vs-ceiling exemption clause; anti-pattern #14 (cycle-N ADD pre-validation).
+- `design/shoot-v2/rubric-memory-flags.md` — V3 lock; feel-as-spine equivalence carve-out on Licensing-discipline axis (and propagated through REJECT, cross-axis test, anti-pattern #7, ceiling defense).
+- `design/shoot-v2/sensory-memory-v3-tuning-summary.md` — harness pass record + re-audit walk against b01c01 cap-burn corpus.
 
 No command bodies were edited in this session — F1 captures that work.
