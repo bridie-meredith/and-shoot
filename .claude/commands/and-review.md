@@ -69,7 +69,7 @@ What it reviews:
 - Cost language honest?
 - For scene-level: is `scene_conflict` populated with concrete forces (not generic "tension")?
 
-Lift basis: `/and-season` Phase 1 step 1e review-dispatch pattern (parameterized by chunk-level).
+Lift basis: pre-overhaul `/and-season` Phase 1 step 1e review-dispatch pattern; adapted to the substance-chain hierarchy (series → book → chapter → scene chunks; per-chunk-level dispatch).
 
 ### `bone <slug>`
 
@@ -97,7 +97,7 @@ What it reviews:
 - Cost-ledger consistent?
 - No rank claims without backing?
 
-Lift basis: `/and-season` Pass S1 constraint audit + Pass S3.5 ruleset compliance (per-chunk dispatch).
+Lift basis: pre-overhaul `/and-season` Pass S1 constraint audit + Pass S3.5 ruleset compliance; adapted to per-chunk dispatch across the substance-chain hierarchy.
 
 ### `signature`
 
@@ -112,7 +112,7 @@ What it reviews:
 - Antagonist pressure named per axis?
 - Chunk_targets bands sane?
 
-Lift basis: `/and-season` Phase 3 sweep-A shape pattern at series scope.
+Lift basis: pre-overhaul `/and-season` Phase 3 sweep-A shape pattern; adapted to series-signature scope under the substance overhaul.
 
 ### `bones <chapter-slug>`
 
@@ -164,7 +164,7 @@ What it reviews:
 - Cyclical commitments honored?
 - **Cross-chapter handoff sweep:** for every adjacent chapter pair under root, verify `handoff_out` ↔ `handoff_in` consistency (open-threads / world-state / character-state lists align); flag orphans, drops, or character-axis discontinuities.
 
-Lift basis: `/and-season` Phase 1 step 1g cross-season audit (generalized to cross-level under root).
+Lift basis: pre-overhaul `/and-season` Phase 1 step 1g cross-season audit; generalized to cross-level + cross-chapter sweep under root in the substance-chain hierarchy.
 
 ### `pipeline` (URI-REVIEW-PIPELINE, A10 — 2026-05-21)
 

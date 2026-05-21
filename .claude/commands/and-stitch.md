@@ -75,7 +75,7 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
 
 ## Args
 
-- `$1` — optional. Episode slug (e.g. `s01e01`). If omitted, use `active.episode` from `active-project/staff/showrunner/memory.md`.
+- `$1` — optional. Chapter slug (e.g. `b01-c01` or `b01c01`; normalized to `<book>-<chapter>` form at Phase 0). If omitted, use `active.chapter` from `active-project/staff/showrunner/memory.md`.
 - `--profile <path>` — optional. Override the active profile path. Default: `active-project/theater/stitch-profile.md`.
 - `--persona <slug>` — optional. Override the active persona. Default: read from profile's `persona:` field; fallback `neutral`.
 - `--allow-bare-speech` — optional. Explicit opt-in to the legacy silent-speech fallback (Phase 0.7 § Legacy fallback). Without this flag, an episode with `speaks to` bones and an empty/missing dialogue facet HARD-ABORTS at Phase 0.5; the user must run `/and-facets <slug>` first. Pass this flag only when knowingly stitching a pre-2026-05-12 episode whose dialogue facet cannot be retroactively authored. Marked in the render-log header.
@@ -97,8 +97,8 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
    Shallow-merge top-down. Validate per the schema's fault list.
 4. **Persona resolution.** Load `active-project/staff/stitcher/personas/<active>.md` (or library fallback `staff/stitcher/personas/<active>.md`). Default `neutral` if profile carries no `persona:` field. Validate persona's lens-bias and Phase-7-bias tables against the schema.
    - **Project-mismatch check.** If resolved persona is `neutral` AND `active-project/stitch-profile.md` declares a non-neutral persona OR `active-project/staff/stitcher/personas/` contains a project-scoped persona card: emit `FAULT-PROFILE-PERSONA-MISMATCH-PROJECT` and escalate to user. Do not proceed until user either (a) corrects the profile or (b) passes `--persona neutral` explicitly as an override. Silent `neutral` against a tuned project is the canonical failure mode for this pipeline.
-5. **POV resolution.** Read `narrator:` from proto-lines header. If profile's `voice.pov` is unset, use the header value. Fault if both are absent.
-6. **Scene boundary detection.** Parse `active-project/theater/facets/interest-narrator.md` for the sparsity-gradient section; extract scene labels and anchor ranges. Paragraph breaks fall on scene boundaries (or on explicit time-skip blanks in proto-lines).
+5. **POV resolution.** Read `narrator:` from the bones file header (`active-project/theater/bones/<book>-<chapter>.md` § `narrator:` field — the seven-field extended header per `schemas/bones.schema.md`). If profile's `voice.pov` is unset, use the header value. Fault if both are absent.
+6. **Scene boundary detection.** Default (scene-window mode): scene boundaries are sourced at Phase 1 from `active-project/theater/facets/scene-map-<book>-<chapter>.md` (per the scene-window mode's Scene-boundary resolution below); no Phase 0 work needed beyond verifying the scene-map facet exists per step 2a. Per-anchor mode (opt-in fallback): paragraph breaks fall on scene boundaries derived during Phase 1 fork-by-fork, or on explicit time-skip blanks in the bones file.
 7. **Feedback intake (if present).** Read `active-project/staff/stitcher/feedback-<slug>.md`:
    - Line-level directives (CUT/KEEP/MERGE/UNMERGE/LENS/RESHOW-REVERT/REWORD-REVERT) → write to `anchor-overrides:` block in a session-scoped profile copy (do not mutate the canonical profile)
    - Pattern-level entries (PATTERN blocks) → flag for human review; do not auto-apply unless explicitly PROMOTED
@@ -118,8 +118,8 @@ Before dispatching Phase 1, emit a one-screen summary to the user:
   persona:          <slug>           # FAULT if neutral and project has tuned persona
   voice:            <person>-person <tense>-tense, contractions <on/off>
   POV:              <actor-slug>
-  anchors:          <N>              # from proto-lines
-  scenes:           <M>              # from interest-narrator sparsity gradient
+  anchors:          <N>              # from bones file (theater/bones/<book>-<chapter>.md)
+  scenes:           <M>              # from scene-map facet (theater/facets/scene-map-<book>-<chapter>.md)
   phase-1 forks:    <M scene-forks>  # or <N per-anchor forks> if dispatch-budget allows
   phase-7 forks:    <M scene-forks> per-sentence inside
   anti-jargon:      <K tokens loaded from project.anti-jargon>
@@ -364,7 +364,7 @@ Output draft: `active-project/draft/<slug>.phase-1.draft.md`. Log fork entries t
 
 Scene boundaries are required at Phase 1 dispatch in this mode. Resolution order:
 
-1. **Scene-map facet** (default, URI-SCENE-WINDOW 2026-05-13). When `active-project/theater/facets/scene-map-<slug>.md` exists, parse it per `schemas/scene-map.schema.md`. The scene-map is emitted at `/and-facets` Phase 4d as a derived structural facet and validated for coverage at Phase 5 audit; if the file passed those gates, its boundaries are canonical. This is the canonical authoring path.
+1. **Scene-map facet** (default, URI-SCENE-WINDOW 2026-05-13; emission re-sourced under URI-SUBSTANCE-OVERHAUL 2026-05-17). When `active-project/theater/facets/scene-map-<slug>.md` exists, parse it per `schemas/scene-map.schema.md`. The scene-map facet is emitted by `/and-write` Phase 7 directly from `chapters[].scenes[]` in showrunner memory; `/and-facets` Phase 4d validates (not derives) the facet for coverage against the bones file. If the file passed those gates, its boundaries are canonical. This is the canonical authoring path.
 2. **Tensometer derivation** (REMOVED 2026-05-17 under URI-SUBSTANCE-OVERHAUL). The tensometer-fallback path is dead code under the new chain — tensometer is gone. The scene-map facet is the only canonical source; if missing, fall back per `phase-1.scene-window.fallback-on-no-scene-map` (default `per-anchor`, soft fallback recorded in render-log header) or escalate per profile.
 3. **Failure mode.** If neither produces ≥3 scenes covering all bones, emit `FAULT-PHASE-1-NO-SCENE-MAP` and either escalate to user or fall back to `per-anchor` mode per `phase-1.scene-window.fallback-on-no-scene-map` (record the fallback in the render-log header).
 
@@ -460,7 +460,7 @@ The `bone-walk:` block is the auditable trace for the per-bone discipline walk. 
 | `FAULT-BONE-FOLDED-INTO-SUMMARY` | Per-bone walk finds a bone with no rendered trace, no fuse target, no CUT-BONE entry. The wider window let the fork summarize a cluster and lose a bone. | Re-render the scene with the missing bone restored. Recurrent at the same bone-id across re-runs ⇒ flag the bone as fusion-resistant. |
 | `FAULT-PHASE-1-NO-SCENE-MAP` | Scene-map facet absent and no per-anchor fallback configured. (Tensometer-derivation fallback was removed 2026-05-17 under URI-SUBSTANCE-OVERHAUL.) | Fall back to `per-anchor` mode (record in render-log header) or escalate to user to author scene-map. |
 | `FAULT-PHASE-1-SCENE-MAP-COVERAGE` | Scene-map resolved but a bone falls outside every scene's range or inside multiple. | Refuse the dispatch; surface the coverage gap; fix scene-map. |
-| `FAULT-BONE-AUDIT-MISS @<id>` | Bone-content carries a Q9-coined hyphen-compound the stitcher cannot REWORD without violating bone-faithfulness. | Render the bone as-is; surface to upstream (`/and-protolines-v2` rubric pass). NOT a stitcher fix. |
+| `FAULT-BONE-AUDIT-MISS @<id>` | Bone-content carries a Q9-coined hyphen-compound the stitcher cannot REWORD without violating bone-faithfulness. | Render the bone as-is; surface to upstream (`/and-write` Phase 6 bone-gate / SVO rubric pass). NOT a stitcher fix. |
 | `FAULT-NI-VERB-FOLD-STRETCH @<id>` | The fork's bone-verb chosen folds an NI register-verb beyond the bone's SVO (e.g. NI says "names X as ambient signal", bone says "relays X", fork renders "named X through"). Defensible under lens-fold license; surface as soft Q-check for the auditor. | Keep render; surface in `drift-risk:` field. Auditor decides. |
 
 ### Convergence with per-anchor
@@ -621,7 +621,7 @@ If `staff/stitcher/feedback-<slug>.md` was read at Phase 0 with new line-level d
 
 ## What this command does not do
 
-- Does not modify proto-lines or facets. Source pipeline is upstream (`/and-protolines-v2`, `/and-facets`). This includes the dialogue facet — utterances are verbatim through every phase; stitcher's only freedom on speech bones is the attribution clause and beat placement.
-- Does not address audience flags or NEEDS_EDIT annotations. Those are the editor's job in `/and-wrap`.
+- Does not modify bones or facets. Source pipeline is upstream (`/and-write` for bones; `/and-facets` for facets). This includes the dialogue facet — utterances are verbatim through every phase; stitcher's only freedom on speech bones is the attribution clause and beat placement.
+- Does not address audience flags or NEEDS_EDIT annotations. Those are the editor's concern under a future polish revival (`/and-wrap` is currently deferred; `draft/<book>-<chapter>.md` is the terminal deliverable).
 - Does not commit changes to canonical profile or persona. Session-scoped overrides from feedback are applied to a working copy; promotion to canonical files is a separate step (see `staff/stitcher/tuning-guide.md § Promotion`).
 - Does not parallelize across episodes. One episode per dispatch.

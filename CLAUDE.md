@@ -112,6 +112,9 @@ All file formats are defined in `schemas/`.
 | Bones file | `schemas/bones.schema.md` |
 | Facet file | `schemas/facet.schema.md` |
 | Scene-map (upstream-emitted by /and-write Phase 7) | `schemas/scene-map.schema.md` |
+| Stitcher profile | `schemas/stitch-profile.schema.md` |
+| Stitcher feedback | `schemas/stitch-feedback.schema.md` |
+| Stitcher render-log | `schemas/stitch-render-log.schema.md` |
 | Substance framework | `design/substance/{README,questionnaire,delta-targets,rerun-protocol,staleness-cascade,run-book,plan}.md` |
 
 Legacy schemas preserved for reference: `episode-plan.schema.md`, `show-file.format.md` (pre-substance; no longer authored).

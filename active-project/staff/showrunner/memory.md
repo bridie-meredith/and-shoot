@@ -967,6 +967,7 @@ books:
         structure:
           scene_count: 3
         substance_delta:
+          chapter_class: standard   # on-protagonist-arc; three moving axes; not a temporally-displaced retrospective coda (/and-write Phase 6 substance bone-gate fires normally)
           axes_in_motion:
             - { axis: capability, direction: up, target_delta_magnitude: 1.0, cost_ledger_anchor: ~, notes: "suppressed → first-deployment (localized, defensive); 3→4; d01 shift; first-deployment; self-directed rescue; pre-Otto-arrangement, not yet network expansion" }
             - { axis: social-tether, direction: up, target_delta_magnitude: 0.5, cost_ledger_anchor: cl-social-tether-build, notes: "anonymous → smallfolk-present; Wren + Coll layer laid; 2→2.5; d01 social-embed; direction records initial rise before net-fall" }
@@ -1001,8 +1002,69 @@ books:
             - "wren: rescued; present; still unnamed as significant node in Taylor's ledger"
             - "otto: offstage"
           target_chapter: b01c03
-        status: planned
-        # pov_narrator, dramatic_shape, goal authored later by /and-substance chapter
+        status: scened   # /and-substance chapter b01c02 Phase 6 — 2026-05-21; pov_narrator + dramatic_shape + goal + scenes[] authored
+        pov_narrator: taylor-hebert-kl-122ac    # series.structure.pov = single → inherited from protagonist
+        dramatic_shape: hinge                    # first-flex hinge: prohibition pivots from theoretical-intact to road-tested-strained in s01's deployment; differs from b01c01's baseline-placement hinge (no antagonist pressure, no collision there); dramatist Phase 5 ACCEPT confirmed the two hinge functions are structurally distinguishable.
+        goal: "the prohibition in its first real test — deployed against a genuine threat, technically held, and already bent enough that the accounting cannot close cleanly."   # audience-facing chapter purpose; bones-file header source for /and-write Phase 7
+        scenes:
+          - slug: b01c02s01
+            chunk: |
+              The pressed-labor sweep comes through Flea Bottom the way all watch-mobilizations come: percussion before visibility — boots on stone in the wrong cadence, the street's social noise dropping a register as people read the pressure-front and begin finding reasons to be elsewhere. Taylor reads it first through the insects, which register the watch's heat-signature moving in organized columns down the Hook and the adjacent laneways, and then through the street itself, which reads the same way but slower: a water-carrier stepping back into a doorway, a net-mender's needles going still, the particular geometry of smallfolk bodies reorienting away from something. Wren is in the path of it. Taylor knows this before she can see the child — the insect-feed has the ward at sufficient density that Wren's specific heat and motion signature are legible at thirty yards, which is itself a fact Taylor registers and files as cost before she acts. The deployment is not a control act. She is clear on this while it is happening and after. The insects do not route through Wren's nervous system, do not override her decisions, do not hijack her body in any way the prohibition covers. What they do is close off the wrong turns — the laneways that feed into the sweep's path — and leave the right one open: a side-alley that Wren's own feet can find if they are looking for exit, and that a child with good distributed-attention habits can read as available. Wren finds the alley. The insects move at a density and precision that two witnesses standing at the lane's mouth will register as wrong — not as insects, necessarily, but as the air having a quality it did not have a moment ago, as a space that seemed closed reading as open — and Taylor, standing at the corner where Coll is still at his net, does not look at the alley. The sweep passes. Wren is not in it.
+            substance_delta:
+              axes_in_motion:
+                - { axis: capability, direction: up, target_delta_magnitude: 1.0, cost_ledger_anchor: ~, notes: "suppressed-baseline → first-deployment; rank 3→4; the act is localized and defensive (non-control routing); pre-Otto, unanchored to ledger trade; the full chapter capability move lands here" }
+                - { axis: social-tether, direction: up, target_delta_magnitude: 0.1, cost_ledger_anchor: cl-social-tether-build, notes: "rescue creates the seed attachment — Wren is now a known variable in Taylor's deployment, not only a face on the street; social-tether rank 2→2.1; Wren-layer seed" }
+                - { axis: knowledge, direction: up, target_delta_magnitude: 0.2, cost_ledger_anchor: ~, notes: "watch-sweep approach pattern first read: column formation, heat-signature advance, Hook approach route, press-levy timing; 3.5→3.7; sweep-pattern-observation; pre-arrangement; unanchored" }
+              density_target: "0.7-0.8"
+            scene_conflict:
+              protagonist_force: "Taylor routing Wren clear of the sweep without physical contact, name-call, or any act that reads as intervention from street level"
+              opposing_force: "the insect deployment violates the spirit-threshold of the prohibition even as it observes the letter; the capability is now unambiguously deployed, not sensed"
+              stakes_axis: capability   # in-motion axis; the first rank-change of this axis in the book; the prohibition flexes here
+
+          - slug: b01c02s02
+            chunk: |
+              The sweep clears and the street returns to itself in the particular way of Flea Bottom streets that have been through a watch-press: carefully, with the deliberate amnesia of people who did not see anything and know that nothing was seen. Coll is already working the net again when Taylor reaches the corner, and his eyes come up once to find her face and then go back down, and he does not say the thing his face said. This is the Flea Bottom courtesy. Wren, from the far side of the alley mouth, is watching Taylor the way Taylor watched Wren in the earlier days: too directly, too steadily, with the look of someone running an accounting. Taylor notes this and does not look back. The two witnesses at the lane's mouth are already moving on — they are not standing still and pointing; they are doing the thing witnesses do in Flea Bottom, which is to continue functioning while carrying a question they cannot name. Taylor reads them through the insects: heart-rate above settled, attention still pulled toward the alley mouth, neither of them has the vocabulary for what they saw but both of them have a word-shaped gap where the vocabulary would go. Coll's geometry-sight — his reading of the alley's changed angles, the lane's traffic-weighting in the moments of the sweep, the way a space closes and opens — is a different kind of knowing; he grew up in wards where the geography is always communicating and the correct response is to not have needed to notice. He will not name what he saw. He is already demonstrating the not-naming. Wren, however, is specifically attached now, in a way that has a different shape from her prior appearing-and-asking: she is in Taylor's quadrant, watching, because a thing has been done for her and she has run the accounting and found the source.
+            substance_delta:
+              axes_in_motion:
+                - { axis: social-tether, direction: up, target_delta_magnitude: 0.3, cost_ledger_anchor: cl-social-tether-build, notes: "Wren-attached + Coll-witness layer crystallizes; rank 2.1→2.4; Coll's non-naming confirms his function as social-cover anchor; Wren's specific attachment is a new social-tether node; cl-social-tether-build anchors the Wren-layer build" }
+                - { axis: knowledge, direction: up, target_delta_magnitude: 0.2, cost_ledger_anchor: ~, notes: "witness-residue read: heart-rate above settled, attention-pull toward alley, vocabulary-gap registered; Coll's geometry-sight read at a distance; Wren's attachment behavior mapped; 3.7→3.9; witness-pattern observation; pre-arrangement; unanchored" }
+              axes_held:
+                - { axis: capability, rationale: "capability held at rank 4 post-deployment; no further insects moved; the new baseline is real and is not extended; Taylor is accounting for what happened, not continuing to act; held-at-new-rank is the discipline" }
+              density_target: "0.7-0.8"
+            scene_conflict:
+              protagonist_force: "Taylor reading the aftermath without naming it — registering witnesses, Coll's silence, Wren's attachment, without entering any of it into the ledger as cost"
+              opposing_force: "the street is already organizing itself around what happened; two witnesses have a question they cannot name; Wren has run her own accounting; the costs are accruing whether or not Taylor enters them"
+              stakes_axis: social-tether   # in-motion axis; the Wren + Coll layer crystallizing is the scene's load-bearing movement
+
+          - slug: b01c02s03
+            chunk: |
+              The accounting runs that night. Taylor opens the ledger with the precision she has been trained toward and the honesty she has been maintaining since Gold Morning: line by line, category by category, the way you do it when the categories are the atonement and you cannot afford to let any entry go unchallenged. The action was: insect deployment, localized, defensive, non-control. The outcome was: Wren routed clear, sweep averted for one child, two witnesses with a question-shaped gap they cannot name. The classification question is whether deployment-without-control falls inside or outside the prohibition. Taylor examines this. She looks at it from the outside, from the inside, from the edge cases: is routing-without-override a meaningful distinction from control, or is it the same thing with a smaller footprint? She arrives at a verdict: it is a meaningful distinction. The prohibition is no nervous system override, no hijack of the body — it is not a prohibition against deployment, it is a prohibition against one specific mode of deployment. The insects guided; Wren's own feet chose. The verdict is: compliant, defensible, cost-acknowledged. Taylor enters the cost line — two unpriced witnesses — and notes that the accounting for Wren herself is incomplete but that the incompleteness is not a ledger failure, it is the appropriate result of treating Wren as a person and not a variable. She believes this. The scene makes legible, without editorializing, the exact shape of a rationalization that is also correct: the distinction Taylor is drawing is real, the witnesses are genuinely unpriced, and the verdict she has reached is one she can defend to herself. The reader has watched the deployment. The reader knows what the ledger is not entering.
+            substance_delta:
+              axes_in_motion:
+                - { axis: social-tether, direction: up, target_delta_magnitude: 0.1, cost_ledger_anchor: cl-social-tether-build, notes: "Wren entered into the ledger's negative space as 'incompleteness is the appropriate result of treating her as a person, not a variable' — the methodological-decision entry IS a social-tether crystallization (Wren is now a node Taylor knows she is not pricing); Coll's non-naming logged as social-fabric fact; rank 2.4→2.5; final social-tether seat for the chapter (addresses Phase 5 auditor flag-001: event-specific anchor named)" }
+                - { axis: knowledge, direction: up, target_delta_magnitude: 0.1, cost_ledger_anchor: ~, notes: "categorical knowledge: the deployment-without-control distinction named and examined; the distinction's architectural meaning — what falls inside the prohibition and what does not — registered as structural knowledge; 3.9→4.0; categorical-accounting; pre-arrangement; unanchored" }
+              axes_held:
+                - { axis: capability, rationale: "capability held at rank 4; the accounting scene is interior and static; no deployment; no insect-movement; the new baseline sits at 4, held in place by an accounting that has resolved around it rather than extending it — the discipline after the flex, not the flex itself" }
+                - { axis: moral-framework, rationale: "moral-framework held at rank 3 (strained but not breached); the verdict Taylor reaches is that the prohibition held; the reader does not quite believe the verdict with her; the axis is not moved here — the strain is visible and real but the breach is not yet; holding at 3 is the scene's primary structural event alongside the knowledge move" }
+              density_target: "0.6-0.7"
+              # cl-unpriced-cost-bearer anchor note: the accounting scene surfaces the seed moment (two witnesses unpriced;
+              # Wren's attachment not entered as a variable) that this ledger entry will later anchor at b01c03+ when
+              # Taylor explicitly removes Wren from the prevention model. Per Phase 3 cost-ledger refinement (G4): no
+              # refinement at b01c02 — no trade is closed here. cl-unpriced-cost-bearer.anchor.chapter remains as
+              # authored at series level (book b01; chapter unset; finest-grained anchor = b01).
+            scene_conflict:
+              protagonist_force: "Taylor constructing a verdict that holds the prohibition intact — the deployment was compliant, the distinction is real, the accounting is honest"
+              opposing_force: "the ledger cannot close cleanly because the witness-costs are unpriced and Wren's attachment is entered as a methodological decision rather than a relationship; the verdict is structurally load-bearing but the reader can read the seam"
+              stakes_axis: knowledge   # in-motion axis; the categorical-structural knowledge gain IS the scene's event — Taylor naming what category the action falls into
+        # Phase 5 review (2026-05-21):
+        #   audience: PASS 3-of-3 (cape-fic-reader + dark-fantasy-reader + worm-canon-pedant; all SUBSTANCE-FELT)
+        #   dramatist: ACCEPT — clean rise-peak-fall (event / reverberation / accounting); hinge-function distinct from b01c01's baseline-hinge; load-bearing pivot for /and-write Phase 6 named as "the insect deployment in s01 — capability crosses from dormant to deployed in a single localized rescue act that is technically compliant with the prohibition and already costs more than Taylor's accounting will admit"
+        #   auditor: ACCEPT (zero faults; flag-001 on s03 social-tether note addressed inline pre-persist)
+        # Sum-roll-up (exact): capability s01 1.0 = chapter 1.0; social-tether s01 0.1 + s02 0.3 + s03 0.1 = 0.5 = chapter 0.5; knowledge s01 0.2 + s02 0.2 + s03 0.1 = 0.5 = chapter 0.5.
+        # Audience TASTE-FLAGs (forward to bone-gate + future-chapter monitoring):
+        #   cape-fic-reader: witness-residue (two unpriced witnesses from s01) must remain unresolved forward; a future chapter that prices them without consequence-friction is cleanup-without-consequence.
+        #   dark-fantasy-reader: Coll-as-loyal-sidekick-function is a hostile read; future scenes must preserve Coll-as-person-who-already-did-the-accounting. Witness vocabulary-gap should remain dangerous, not resolve into incuriosity.
+        #   worm-canon-pedant: knowledge-type distinction (observational sweep-pattern → categorical structural knowledge in s03) flagged for bone-gate attention; the jump-type must be preserved in interior-scene bones, not collapsed into homogeneous-knowledge.
 
       - slug: b01c03
         chunk: |
