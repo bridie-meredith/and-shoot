@@ -765,3 +765,26 @@ scope: line
 change: struck water-carrier and near-witness entries (converted to comment lines explaining the R2.5 deletion so future chapters can re-gloss if terms recur); corrected pressed-labor-sweep first-mention-anchor from @5 to @4
 criteria met: yes — water-carrier and near-witness removed from live register; pressed-labor-sweep reads @4
 files touched: active-project/staff/exposition-author/glossed-terms.md
+
+## SESSION-START — 2026-05-21T14:00:00Z — facets-b01c02-cycle1-hard-fixes
+dispatch: resolve 2 HARD findings (fault-001 CONSTRAINT, fault-002 RUBRIC-FIDELITY) from active-project/staff/auditor/facets-final-audit.md for chapter b01c02; minimum change only; SIGNAL findings not in scope
+target: active-project/staff/exposition-author/glossed-terms.md + active-project/theater/facets/state-updates-taylor-hebert-kl-122ac.md + active-project/theater/proto-lines/b01-c02.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 2
+
+## fault-001 — NO-CHANGE-NEEDED — 2026-05-21T14:05:00Z
+fault: glossed-terms.md stale water-carrier + near-witness entries and wrong @5 anchor on pressed-labor-sweep
+scope: line
+change: no edits made — file already correct on all three criteria: water-carrier line 19 is struck (# STRUCK: comment), near-witness line 20 is struck (# STRUCK: comment), pressed-labor-sweep line 21 reads first-mention-anchor: @4
+criteria met: yes — all three criteria pre-satisfied; no spurious change applied per dispatch instruction
+
+## fault-002 — RESOLVED — 2026-05-21T14:08:00Z
+fault: state:13 @26 (POV actor-state) had no narrator-interest co-citation at @26; narrator:5 fires at @25; rubric requires same-anchor co-citation for actor:taylor.* entries
+scope: line (two coordinated edits; consolidated state-updates.md already showed @25 — no edit needed there)
+change: (1) active-project/theater/facets/state-updates-taylor-hebert-kl-122ac.md — entry 3 anchor changed from @26 to @25. (2) active-project/theater/proto-lines/b01-c02.md — [state:13] token moved from @26 to @25; @25 now reads [mem:2] [narrator:5] [state:6] [state:13] [vibes:11] (sorted numeric order); @26 now reads [state:7] only.
+criteria met: yes — state:13 now anchored at @25; narrator:5 @25 serves as NI co-citation spine; @25 anchor ("taylor-hebert-kl-122ac strikes the line" / ledger-gap surfaces) is semantically coherent for categorical-structural recognition; state-updates.md consolidated file was already correct (no third edit needed)
+
+## SESSION-END — 2026-05-21T14:08:00Z — facets-b01c02-cycle1-hard-fixes
+findings-applied: 1 (fault-002 — 2 file edits)
+findings-skipped: 1 (fault-001 — NO-CHANGE-NEEDED; all criteria pre-satisfied in file)
+exit: CLEAN

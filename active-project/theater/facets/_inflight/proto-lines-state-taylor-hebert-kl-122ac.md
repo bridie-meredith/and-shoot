@@ -30,8 +30,8 @@ aggregate_range: 1-29
 22 taylor-hebert-kl-122ac lights the lamp
 23 taylor-hebert-kl-122ac opens the ledger
 24 taylor-hebert-kl-122ac writes the line
-25 taylor-hebert-kl-122ac strikes the line
-26 taylor-hebert-kl-122ac underlines the entry [state:13]
+25 taylor-hebert-kl-122ac strikes the line [state:13]
+26 taylor-hebert-kl-122ac underlines the entry
 27 taylor-hebert-kl-122ac sets the pen
 28 taylor-hebert-kl-122ac holds the hand
 29 taylor-hebert-kl-122ac closes the ledger
