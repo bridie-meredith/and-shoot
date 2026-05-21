@@ -63,9 +63,8 @@ looking for it. I just saw."
     wasn't there when it went wrong") WITHOUT reaching for "witchery"/"the touch" —
     correct for a witness in the not-fearful, has-decided-not-to-make-it-a-problem
     relationship; she reports the phenomenon, not the category.
-- facet-licenses: [DEFERRED-TO-R2 — feeling/NI at @19 expected to carry the
-  eyes-down recessed posture + held-attention somatic tell; resolve to concrete
-  <facet>:<id> @19 at R2 against locked graph]
+- facet-licenses: [vibes:13 @19]
+  # R2 resolved from DEFERRED-TO-R2: vibes:13 @19 (wren ++ silence; the-one-moment-speech-replaces-silence) is the co-load for the somatic register of speaking once in the insects scene; confirmed from locked graph at R2.6 shard
 - Earth-Bet scan: CLEAR (no parahuman proper nouns; "flies"/"lane"/"quiet" only).
 - age check: 11-year-old, trade-trained-attention register — sharp WITHIN the
   observation register, incomplete OUTSIDE it. No framework-claim, no precocity;

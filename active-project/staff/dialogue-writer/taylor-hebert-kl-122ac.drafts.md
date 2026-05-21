@@ -59,9 +59,8 @@ card-signatures:
   Persona §Signature Moves — closure-without-declaration: the coverage that does not declare
     itself; she names a true small fact (the watch DID come through) and withholds the
     larger one (the insects closed the lane-mouths). Half-honest, base-card pattern.
-facet-licenses: [DEFERRED-TO-R2 — feeling-taylor / sensory-taylor at @20; R1 is blind to
-  other facet files. R2 resolves to a concrete <facet>:<id> @20 citation for the somatic
-  tell co-loading the suppressed affect.]
+facet-licenses: [vibes:14 @20]
+  # R2 resolved from DEFERRED-TO-R2: vibes:14 @20 (taylor ++ wren-layer-actualization; speech-exchange-as-the-first-actualized-wren-layer) confirmed from locked graph at R2.6 shard
 
 rejection notes:
   B — "there is nothing in it" editorializes; it argues the point rather than stating a fact
@@ -100,8 +99,8 @@ card-signatures:
     (gets her off a watch-press street) without declaring that it is coverage.
   §Voice tells — affect-as-event: the only tell of the attachment is the named "Wren";
     everything else is operational. Affect suppressed, not absent.
-facet-licenses: [DEFERRED-TO-R2 — narrator-interest / feeling-taylor at @20; R1 blind.
-  R2 resolves the attention-on-Wren or somatic co-load to a concrete <facet>:<id> @20.]
+facet-licenses: [vibes:14 @20]
+  # R2 resolved from DEFERRED-TO-R2: vibes:14 @20 (taylor ++ wren-layer-actualization) serves as co-load for both entries; confirmed from locked graph at R2.6 shard
 
 rejection notes:
   B — "You should not be here" rebukes Wren and centers Wren's transgression; the brief's

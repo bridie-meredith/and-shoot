@@ -23,7 +23,7 @@ author: showrunner
 
 # ── E1: First deployment — insects close lane-mouths (@5) ────────────────────
 
-1 @5 actor:taylor-hebert-kl-122ac ++ insects: [routing-without-contact, first-deployment-constraint-intact, the-lane-that-closes-as-tool-not-command] | licensed-by: proto:5, world-build:prohibition-first-test
+1 @5 episode + first-deployment-routing-mode: [routing-without-contact, first-deployment-constraint-intact, the-lane-that-closes-as-tool-not-command] | licensed-by: proto:5, world-build:prohibition-first-test
 
 2 @5 actor:taylor-hebert-kl-122ac ++ override-architecture-residue: [the-constraint-tested-not-broken, rhyme-with-prior-architecture-made-visible-in-action] | licensed-by: proto:5, world-build:override-architecture-residue-card
 
@@ -60,4 +60,4 @@ author: showrunner
 
 13 @19 actor:wren-stitch-maker-flea-bottom-ward ++ silence: [the-one-moment-speech-replaces-silence, the-break-that-proves-the-silence-is-chosen, voice-used-once-in-the-scene-that-uses-insects] | licensed-by: proto:19, proto:20
 
-14 @20 actor:taylor-hebert-kl-122ac ++ earning-collapse: [speech-exchange-as-the-first-actualized-wren-layer, the-moment-the-un-priced-speaks-back] | licensed-by: proto:19, proto:20, world-build:earning-collapse-three-mistakes
+14 @20 actor:taylor-hebert-kl-122ac ++ wren-layer-actualization: [speech-exchange-as-the-first-actualized-wren-layer, the-moment-the-un-priced-speaks-back] | licensed-by: proto:19, proto:20, world-build:earning-collapse-three-mistakes
