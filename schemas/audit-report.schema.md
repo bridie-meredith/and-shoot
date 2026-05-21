@@ -95,7 +95,7 @@ audit:
 
 ## R2 decision-shard frontmatter (URI-026 follow-on, 2026-05-10)
 
-`/and-facets-r2` emits per-layer decision shards at `active-project/staff/<facet>/r2-decision-shard.md` (per-character for the feeling layer). These shards are consolidated at Phase 6 of `/and-facets` into `active-project/theater/facets/.r2-decisions.md`. The consolidated file is the cross-pipeline contract that `/and-season`'s orchestrator-critic Phase 6 verdict reads to surface F-R2-* counts in F7.
+`/and-facets-r2` emits per-layer decision shards at `active-project/staff/<facet>/r2-decision-shard.md` (per-character for the feeling layer). These shards are consolidated at Phase 6 of `/and-facets` into `active-project/theater/facets/.r2-decisions.md`. The consolidated file is the cross-pipeline contract that `/and-facets` Phase 6's orchestrator-critic verdict (and `/and-review verdict <book>` at the book level) reads to surface F-R2-* counts. (Reference updated 2026-05-21: pre-overhaul `/and-season` is replaced by `/and-facets` Phase 6 + `/and-review verdict` under the substance overhaul.)
 
 ### Shard format
 

@@ -88,7 +88,7 @@ The parent plan's pre-flight checklist had eight items. Two are now done. The re
 [x] A1  anchor-refresh HARD-ABORT at /and-facets Phase 0 (done 2026-05-21)
 [x] A2  cap-burn semantics codified (canonical = DELETE; done 2026-05-21)
 [x] A3  cycle-N fixer ADD pre-validation (rubric anti-pattern #14 + orchestration Phase 5b; done 2026-05-21)
-[ ] A4  pipeline-adaptation audit re-run (queued — auditor dispatch next)
+[x] A4  pipeline-adaptation audit re-run (done 2026-05-21 — auditor returned 5 HARD + 6 SIGNAL + 3 TASTE-FLAG; all HARDs + 4 actionable SIGNALs resolved same-session; see `staff/auditor/pipeline-adaptation-audit-2026-05-21.md`)
 [x] A9  bone-gate audience covers ALL scenes (done 2026-05-21 — per-scene coverage gate at /and-write Phase 6)
 [x] A12 world-notes.md Lucerys/Nessa cleanup (done 2026-05-21)
 ```

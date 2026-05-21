@@ -106,7 +106,7 @@ Contracts must:
 scene_conflict:
   protagonist_force: <one line>     # what the protagonist is pushing for
   opposing_force: <one line>        # what is pushing back
-  stakes_axis: <axis-slug>          # must appear in this scene's substance_delta.axes_in_motion
+  stakes_axis: <axis-slug>          # must appear in this scene's substance_delta.axes_in_motion[] OR axes_held[] (union; per 2026-05-21 axis-bookkeeping split — held-discipline scenes pin stakes to the held axis)
 ```
 
 **Book level additionally authors `chapters[].handoff_in` + `chapters[].handoff_out`** for every chapter:
@@ -168,15 +168,16 @@ Phase 4 at series level is where the signature itself is born. The 1–9 archety
 
 **Book level — drama statement.** Screen-writer authors `books[b<NN>].drama` — a one-paragraph "what cannot survive this book" statement. Names the structural collision at book scope.
 
-**Chapter level — dramatic_shape + goal + pov_narrator.**
+**Chapter level — dramatic_shape + goal + pov_narrator + chapter_class.**
 - `chapters[].dramatic_shape`: one of `rising` / `climax` / `falling` / `hinge`. Picked per chapter to honor book drama curve.
 - `chapters[].goal`: one-line "what this chapter shows the audience." Pass 4 trim and `/and-write` Phase 7 `goal:` header source.
 - `chapters[].pov_narrator`: resolved from `series.structure.pov`:
   - `single` → inherited from series (the protagonist actor slug).
   - `rotating-per-book` → inherited from book-level POV decision.
   - `multi` → picked per chapter from cast roster (screen-writer chooses based on chunk).
+- `chapters[].substance_delta.chapter_class`: one of `standard` (default) | `frame-coda`. Set to `frame-coda` ONLY when the chapter is an interlude / retrospective outside the protagonist-axis scope (e.g. b01c18 archmaester-retrospective coda authored from a non-Taylor POV at a temporally-displaced moment). Frame-coda chapters are exempt from `/and-write` Phase 6 substance bone-gate; the per-chapter Δ contract still authors `axes_held[]` rationale to document why the chapter is outside the standard accounting. The default (omitted or `standard`) is the normal substance-bone-gate path.
 
-Always populated on every chapter so `/and-write` can write the bones-file header without further lookup.
+Always populated on every chapter so `/and-write` can write the bones-file header without further lookup. `chapter_class` defaults to `standard` if omitted.
 
 ### Phase 5 — Chunk-quality review
 

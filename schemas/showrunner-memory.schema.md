@@ -200,6 +200,7 @@ books:
             - axis: <axis-slug>
               rationale: <one line>
           density_target: <range>
+          chapter_class: standard | frame-coda    # OPTIONAL; defaults to `standard`. `frame-coda` marks an interlude / retrospective chapter outside the protagonist-axis scope (e.g. b01c18 archmaester-retrospective coda). Frame-coda chapters are exempt from /and-write Phase 6 substance bone-gate per its frame-coda exemption clause. Authored by /and-substance chapter Phase 4 alongside dramatic_shape + goal + pov_narrator.
         stale_since: <iso-timestamp> | null
         status: planned                    # state-machine enum; see below
         pov_narrator: <actor-slug>         # /and-substance chapter Phase 3; resolved from series.structure.pov

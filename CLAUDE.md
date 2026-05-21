@@ -85,6 +85,7 @@ active-project/   — sole active project
   theater/
     bones/        — bones files: <book>-<chapter>.md (emitted by /and-write Phase 7)
     facets/       — facets per chapter: <facet>-<book>-<chapter>.md (flat naming convention; tensometer dropped)
+    proto-lines/  — canonical merged proto-line file with [<facet>:<id>] citations from R1+R2 union (intermediate artifact written by /and-facets Phase 2 / build_cite_index.py; consumed by /and-facets Phase 5 auditor + /and-stitch Phase 0/1)
     dialogue/     — per-character dialogue files (per character, per chapter)
   draft/          — stitcher output (terminal deliverable; polish deferred)
   polish/         — not written by the current chain (polish-deferred)

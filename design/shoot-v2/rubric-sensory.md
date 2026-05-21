@@ -332,14 +332,13 @@ V1 exists only to produce a baseline accept-rate for round-trip comparison after
 
 ---
 
-## Schema rename (pending)
+## Schema rename (COMPLETE)
 
-`schemas/facet.schema.md` § "loudness flags" requires update at Phase 5 ship to:
+`schemas/facet.schema.md` § "sensory flags" carries the renamed section as of 2026-05-07 (line 80 onward; loudness-only definition deprecated at line 94). The rename items below were all landed:
 
-- Rename section heading to "sensory flags".
-- Update file path from `facets/loudness.md` to `facets/sensory.md`.
-- Update content shape from `<up|down|spike|drop> <one-clause description>` to `<modality>: <old> -> <new>` with optional `# tag: <up|down|spike|drop>` annotation.
-- Update author from "studio" to "studio" (unchanged).
-- Add modality enumeration (sound / light / smell / thermal / humidity / pressure / tactile).
+- ~~Rename section heading to "sensory flags".~~ DONE.
+- ~~Update file path from `facets/loudness.md` to `facets/sensory.md`.~~ DONE.
+- ~~Update content shape from `<up|down|spike|drop> <one-clause description>` to `<modality>: <old> -> <new>` with optional `# tag: <up|down|spike|drop>` annotation.~~ DONE.
+- ~~Add modality enumeration (sound / light / smell / thermal / humidity / pressure / tactile).~~ DONE.
 
-The schema edit is deferred to Phase 5 to avoid premature lock; the locked rubric and locked facet file are the authority during tuning.
+(Section retained as completion record; the "pending" status was stale through V2 → V3 lock and was cleaned at 2026-05-21 per STRUCT-007 of pipeline-adaptation-audit-2026-05-21.)
