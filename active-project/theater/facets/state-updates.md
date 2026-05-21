@@ -67,7 +67,7 @@ episode: b01c02
 author: impersonator-coll-net-mender-flea-bottom
 source: coll-net-mender-flea-bottom
 ---
-10 @12 actor:coll-net-mender-flea-bottom.stats.taylor_pattern_registered: not-yet -> registered-as-anomaly  # field-extension: tracked-state aspect already present on state.md stats schema; first-touch. Substrate-level registration, non-declarative — the glance lifts once and accumulates as presence-data, no model built, nothing named (hard fence 1/2 honored).
+10 @12 actor:coll-net-mender-flea-bottom.stats.taylor_pattern_registered: not-yet -> glance-filed-unrepeated  # field-extension: tracked-state aspect; first-touch. Passive, non-declarative: the glance lifts once and a presence registers — no model built, nothing named, Coll is not a cape and has no shard-derived detection. Hard fence 1 (no naming, no categorical model) honored. Hard fence 2 (no physical approach or verbal inquiry) honored — the glance only; Coll returns to work. Both fences confirmed honored at @12.
 
 # source: taylor-hebert-kl-122ac
 facet: state-updates
@@ -76,8 +76,8 @@ author: impersonator-taylor-hebert-kl-122ac
 source: taylor-hebert-kl-122ac
 ---
 11 @5 actor:taylor-hebert-kl-122ac.capability-deployment-history: dormant-never-deployed-in-kl -> deployed-defensive-flea-bottom
-12 @15 actor:taylor-hebert-kl-122ac.social-tether-wren: peripheral-permitted-attachment -> crystallized-observer-bond
-13 @25 actor:taylor-hebert-kl-122ac.knowledge.flea-bottom-social-physics: observational-sweep-pattern -> categorical-structural
+12 @15 actor:taylor-hebert-kl-122ac.social-tether-wren: peripheral-permitted-attachment -> recognized-observer-bond-forming
+13 @25 actor:taylor-hebert-kl-122ac.knowledge.flea-bottom-social-physics: observational-sweep-pattern -> structural-first-read-provisional
 
 # source: wren-stitch-maker-flea-bottom-ward
 facet: state-updates
@@ -86,4 +86,4 @@ author: impersonator-wren-stitch-maker-flea-bottom-ward
 source: wren-stitch-maker-flea-bottom-ward
 ---
 14 @6 actor:wren-stitch-maker-flea-bottom-ward.location: street-hook-district-flea-bottom -> alley-off-the-hook-flea-bottom
-15 @15 actor:wren-stitch-maker-flea-bottom-ward.stats.taylor_awareness: observed-and-decided-not-to-ask -> attachment-crystallized-deliberate-observer
+15 @15 actor:wren-stitch-maker-flea-bottom-ward.stats.taylor_awareness: observed-and-decided-not-to-ask -> watching-with-dread-held-alongside-pull

@@ -20,7 +20,7 @@ episode: b01c02
 author: impersonator-taylor-hebert-kl-122ac
 source: taylor-hebert-kl-122ac
 ---
-1 @28 taylor-hebert-kl-122ac: her hand closes short of the page and does not finish the reach | expressed: no
+1 @28 taylor-hebert-kl-122ac: her hand draws back from the ledger's edge | expressed: no
 
 # source: wren-stitch-maker-flea-bottom-ward
 facet: feeling
@@ -28,4 +28,4 @@ episode: b01c02
 author: impersonator-wren-stitch-maker-flea-bottom-ward
 source: wren-stitch-maker-flea-bottom-ward
 ---
-2 @15 wren-stitch-maker-flea-bottom-ward: her eyes go to the alley-mouth before her head turns to it, then settle back on Taylor and stay | expressed: partial
+2 @15 wren-stitch-maker-flea-bottom-ward: her eyes come to rest on Taylor and do not leave | expressed: partial
