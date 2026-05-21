@@ -1,41 +1,37 @@
-# bones — b01c01
+# bones — b01c02
 
-episode: b01c01
+episode: b01c02
 narrator: taylor-hebert-kl-122ac
-goal: the operating rule in its intact form, the ward it will fail to protect, and the child who will pay the price of its failure.
-cast: taylor-hebert-kl-122ac, coll-net-mender-flea-bottom, wren-stitch-maker-flea-bottom-ward
+goal: the prohibition in its first real test — deployed against a genuine threat, technically held, and already bent enough that the accounting cannot close cleanly.
+cast: taylor-hebert-kl-122ac, wren-stitch-maker-flea-bottom-ward, coll-net-mender-flea-bottom
 locations: flea-bottom
-prior_episode: none
+prior_episode: b01c01
 aggregate_range: 1-29
 
-1 taylor-hebert-kl-122ac enters the corner-room
-2 taylor-hebert-kl-122ac pays the building-keeper
-3 taylor-hebert-kl-122ac crosses the yard
-4 coll-net-mender-flea-bottom lifts the eyes
-5 coll-net-mender-flea-bottom works the net
-6 taylor-hebert-kl-122ac circles the block
-7 taylor-hebert-kl-122ac drops the pack
-8 coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac
-9 taylor-hebert-kl-122ac holds the feet [feel:1]
-
-10
-11 taylor-hebert-kl-122ac lifts the basket
-12 coll-net-mender-flea-bottom pulls the net
-13 taylor-hebert-kl-122ac threads the needle
-14 the needle crosses the mesh
-15 the insects fill the block
-16 the walls cool
-17 the boots strike the cobbles
-18 the city-watch passes the hook
-19 taylor-hebert-kl-122ac holds the eyes
-20 coll-net-mender-flea-bottom folds the net
-
-21
-22 wren-stitch-maker-flea-bottom-ward enters the street
-23 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
-24 taylor-hebert-kl-122ac lifts the eyes
-25 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward
-26 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
-27 taylor-hebert-kl-122ac holds the eyes [feel:2]
-28 wren-stitch-maker-flea-bottom-ward crosses the street
-29 taylor-hebert-kl-122ac lifts the needle
+1 the insects fill the lane
+2 the water-carrier enters the doorway
+3 taylor-hebert-kl-122ac lifts the eyes
+4 taylor-hebert-kl-122ac faces the alley-mouth
+5 the insects close the lane-mouths
+6 wren-stitch-maker-flea-bottom-ward enters the alley
+7 the city-watch passes the hook
+8 the near witness faces the alley-mouth
+9 taylor-hebert-kl-122ac holds the feet
+10 coll-net-mender-flea-bottom works the net
+12 coll-net-mender-flea-bottom lifts the eyes
+13 coll-net-mender-flea-bottom pulls the net
+14 taylor-hebert-kl-122ac faces the alley-mouth
+15 wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac
+16 taylor-hebert-kl-122ac lifts the eyes
+17 the near witness crosses the lane
+18 taylor-hebert-kl-122ac threads the needle
+19 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
+20 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward
+22 taylor-hebert-kl-122ac lights the lamp
+23 taylor-hebert-kl-122ac opens the ledger
+24 taylor-hebert-kl-122ac writes the line
+25 taylor-hebert-kl-122ac strikes the line
+26 taylor-hebert-kl-122ac underlines the entry
+27 taylor-hebert-kl-122ac sets the pen
+28 taylor-hebert-kl-122ac holds the hand [feel:1]
+29 taylor-hebert-kl-122ac closes the ledger

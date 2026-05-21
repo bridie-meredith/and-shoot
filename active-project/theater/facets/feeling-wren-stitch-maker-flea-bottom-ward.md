@@ -1,8 +1,6 @@
 facet: feeling
-episode: b01-c01
+episode: b01c02
 author: impersonator-wren-stitch-maker-flea-bottom-ward
-character: wren-stitch-maker-flea-bottom-ward
-scene-scope: scene-C @22-@29
+source: wren-stitch-maker-flea-bottom-ward
 ---
-
-1 @27 wren-stitch-maker-flea-bottom-ward: her eyes stay on taylor's | expressed: partial
+1 @15 wren-stitch-maker-flea-bottom-ward: her eyes go to the alley-mouth before her head turns to it, then settle back on Taylor and stay | expressed: partial

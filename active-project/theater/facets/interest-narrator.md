@@ -1,19 +1,11 @@
 facet: interest-narrator
-episode: b01-c01
-author: taylor-hebert-kl-122ac (impersonator, facet-authoring mode)
+episode: b01c02
+author: impersonator-taylor-hebert-kl-122ac
 ---
 
-1 @4 his eyes start to lift one breath before they lift; the flies in the wall-bottom register the eye-lift before the eye lifts.
-2 @6 the block reads on a second pass — which courts feed which alleys, who owes the well-step, where the watch does not turn.
-3 @15 every body within the block is legible and she touches none of them; passive holds, day-long, a continuous suppression cost.
-4 @18 boots strike behind the wall, four spans and tracked through the feed without head-turn; staying invisible costs more in dense streets than she would have estimated.
-5 @22 a girl comes in through the swarm before she comes in through the door; the entry is filed without a name above the line.
-6 @27 the threshold holds and what is on the other side stays the size she will not name.
-
-# audience-gate-cycle-1-defer
-# dark-fantasy-reader requested an NI entry at @22 or @23 carrying Earth-Bet shadow /
-# displacement-trigger (doubled-register absence: six entries, none fire Earth-Bet shadow
-# on Wren-arrival). Adding such an entry would push band density from 6/27 = 22.2% to
-# 7/27 = 25.9%, breaching the 25% band ceiling. Deferred — addressing in chapter 2 or
-# via rubric exception request. Cycle-2 gate expected to pass 2-of-3 on this file;
-# carry-forward documented here as defense path.
+1 @4 the feed had turned the lane into a column before her eyes finished crossing to the alley-mouth; the body is catching up to a reading already filed
+2 @5 the lane-mouths closing is not a hand on anyone — routing is what the prohibition still permits her to call clean
+3 @8 two faces hold the anomaly a beat too long; the watch-cost of being seen has just been priced to a count she did not choose
+4 @15 Wren is looking at her the way you look at a thing you have decided about, and that look does not have a column in the ledger
+5 @25 the pen lifts before the strike finishes; she had already counted what the entry would not hold, and the count is short
+6 @28 the hand stays where it is — the reach is cleared, the body could close it, and the not-closing is the only line tonight she is sure of

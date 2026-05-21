@@ -1,7 +1,6 @@
 facet: feeling
-episode: b01-c01
-author: taylor-hebert-kl-122ac (impersonator, facet-authoring mode)
+episode: b01c02
+author: impersonator-taylor-hebert-kl-122ac
+source: taylor-hebert-kl-122ac
 ---
-
-1 @9 taylor-hebert-kl-122ac: she sets her weight even on both feet | expressed: no
-2 @27 taylor-hebert-kl-122ac: her hand stops over the needle | expressed: partial
+1 @28 taylor-hebert-kl-122ac: her hand closes short of the page and does not finish the reach | expressed: no
