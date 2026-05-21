@@ -33,5 +33,5 @@ aggregate_range: 1-29
 25 taylor-hebert-kl-122ac strikes the line
 26 taylor-hebert-kl-122ac underlines the entry
 27 taylor-hebert-kl-122ac sets the pen
-28 taylor-hebert-kl-122ac holds the hand [feel:1]
+28 taylor-hebert-kl-122ac holds the hand [feel:2]
 29 taylor-hebert-kl-122ac closes the ledger

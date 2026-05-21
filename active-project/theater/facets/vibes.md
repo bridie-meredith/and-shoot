@@ -3,16 +3,25 @@ episode: b01c02
 author: showrunner
 ---
 
-# Event ledger (authoring reference — not machine-parsed)
-# E1  @5        insects close lane-mouths — first deployment, routing not override
-# E2  @6 @15    Wren cleared via route, crystallizes as observer, magnitude-2 social-tether pivot
-# E3  @8 @17    near-witnesses carry vocabulary gap — not named actors; routed to episode + loc
-# E4  @12       Coll not-naming enacted in a glance
-# E5  @22-@29   ledger opened and closed with unpriced residue
-# E6  @28       hand held — capability + moral-framework dual hold
-# E7  @19-@20   speech exchange actualizes Wren-layer
+# rubric-carve-out — AP11 semantic-adjacency advisory, entry 11
+#
+# rubric-vibes.md (design/shoot-v2/rubric-vibes.md) §Anti-patterns AP11 (V1.1 Patch 3)
+#
+# Carve-out scope: entry 11, token "the-gap-where-wren-and-the-witnesses-should-be"
+# Carve-out rule: pre-seeded bundle carries "the-gap-where-Wren-should-be"; on-screen
+#   event adds the near-witnesses as a second element entering the same gap. Strings do
+#   not overlap (formal gate passes). Semantic adjacency acknowledged: event-frames are
+#   distinct (Wren alone vs. Wren + witnesses) and downstream operators would distinguish
+#   them (NI biased toward Wren isolation vs. NI biased toward compound unpriced-residue).
+# Coverage justification: the near-witnesses are a new qualitative element not present
+#   in the pre-seeded token; refusing on semantic-adjacency grounds would lose the
+#   compound-gap signal that @8/@17 introduce.
+#
+# Per-entry annotations:
+# - vibes:11 @25: AP11 advisory — event-frame distinction: pre-seeded covers Wren-only gap;
+#     this token covers Wren-and-witnesses compound gap from on-screen near-witness events.
 
-# ── E1: First deployment — insects close lane-mouths ──────────────────────────
+# ── E1: First deployment — insects close lane-mouths (@5) ────────────────────
 
 1 @5 actor:taylor-hebert-kl-122ac ++ insects: [routing-without-contact, first-deployment-constraint-intact, the-lane-that-closes-as-tool-not-command] | licensed-by: proto:5, world-build:prohibition-first-test
 
@@ -22,7 +31,7 @@ author: showrunner
 
 4 @5 episode + first-deployment: [prohibition-tested-in-scene, routing-not-override-confirmed, the-constraint-holds-at-cost] | licensed-by: proto:5, world-build:chapter-goal-prohibition-first-test
 
-# ── E2: Wren cleared via route, crystallizes as observer (@6 @15) ─────────────
+# ── E2: Wren cleared via route, crystallizes as observer (@6, @15) ───────────
 
 5 @6 actor:wren-stitch-maker-flea-bottom-ward ++ observation: [walked-through-the-cleared-lane, anomaly-perceived-without-vocabulary, the-witnessed-effect-not-the-witnessed-act] | licensed-by: proto:6, proto:15
 
@@ -30,7 +39,7 @@ author: showrunner
 
 7 @15 actor:taylor-hebert-kl-122ac ++ wren: [the-witness-who-walked-the-routed-lane, the-crystallization-that-makes-unpriced-concrete, wren-layer-from-theoretical-to-operational] | licensed-by: proto:6, proto:15, world-build:social-tether-wren-layer
 
-# ── E3: Near-witnesses carry vocabulary gap (@8 @17) ─────────────────────────
+# ── E3: Near-witnesses carry vocabulary gap (@8, @17) ────────────────────────
 
 8 @8 loc:flea-bottom + witness-vocabulary-gap: [the-social-fabric-that-registered-without-naming, anomaly-absorbed-into-district-memory, the-departure-that-carries-no-account] | licensed-by: proto:8, proto:17, world-build:cond-westerosi-witness-vocabulary
 
@@ -41,21 +50,14 @@ author: showrunner
 10 @12 actor:coll-net-mender-flea-bottom ++ never-names: [enacted-in-a-glance-not-speech, the-function-demonstrated-not-declared, present-through-scene-A-residue-into-scene-B] | licensed-by: proto:12, world-build:never-names-structural-differentiation
 
 # ── E5: Ledger opened and closed with unpriced residue (@22-@29) ─────────────
+# AP11 advisory on entry 11: see rubric-carve-out preamble above.
 
 11 @25 actor:taylor-hebert-kl-122ac ++ ledger: [the-accounting-that-cannot-close, the-strike-through-is-not-deletion, the-gap-where-wren-and-the-witnesses-should-be] | licensed-by: proto:24, proto:25, proto:29
 
 12 @29 actor:wren-stitch-maker-flea-bottom-ward ++ un-priced: [the-ledger-entry-that-gets-struck, present-in-the-gap-not-on-the-page, the-error-made-concrete-by-accounting] | licensed-by: proto:24, proto:25, proto:29
 
-13 @29 episode ++ first-deployment: [accounting-that-cannot-close-is-the-cost, unpriced-residue-is-the-hinge-not-closure] | licensed-by: proto:25, proto:28, proto:29
-
-14 @22 loc:flea-bottom + night-accounting-host: [lamp-and-ledger-in-the-district, the-district-absorbs-the-private-reckoning, the-location-that-holds-both-the-act-and-its-accounting] | licensed-by: proto:22, proto:23, world-build:flea-bottom-operational-and-domestic
-
-# ── E6: Hand held — dual-discipline body hold (@28) ──────────────────────────
-
-15 @28 actor:taylor-hebert-kl-122ac ++ atonement: [the-hold-costs-something, capability-available-and-refused, the-refusal-that-closes-the-ledger-but-not-the-gap] | licensed-by: proto:28, world-build:prohibition-moral-framework-hold
-
 # ── E7: Speech exchange actualizes Wren-layer (@19-@20) ─────────────────────
 
-16 @19 actor:wren-stitch-maker-flea-bottom-ward ++ silence: [the-one-moment-speech-replaces-silence, the-break-that-proves-the-silence-is-chosen, voice-used-once-in-the-scene-that-uses-insects] | licensed-by: proto:19, proto:20
+13 @19 actor:wren-stitch-maker-flea-bottom-ward ++ silence: [the-one-moment-speech-replaces-silence, the-break-that-proves-the-silence-is-chosen, voice-used-once-in-the-scene-that-uses-insects] | licensed-by: proto:19, proto:20
 
-17 @20 actor:taylor-hebert-kl-122ac ++ earning-collapse: [speech-exchange-as-the-first-actualized-wren-layer, the-moment-the-un-priced-speaks-back] | licensed-by: proto:19, proto:20, world-build:earning-collapse-three-mistakes
+14 @20 actor:taylor-hebert-kl-122ac ++ earning-collapse: [speech-exchange-as-the-first-actualized-wren-layer, the-moment-the-un-priced-speaks-back] | licensed-by: proto:19, proto:20, world-build:earning-collapse-three-mistakes

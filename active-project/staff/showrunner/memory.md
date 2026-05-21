@@ -1002,7 +1002,7 @@ books:
             - "wren: rescued; present; still unnamed as significant node in Taylor's ledger"
             - "otto: offstage"
           target_chapter: b01c03
-        status: bones-written   # /and-write Phase 7 — 2026-05-21; 5-pass + bone-gate complete; flattened bones + scene-map emitted
+        status: faceted-r1   # /and-facets Phase 2 — 2026-05-21; R1 fanout (16 authors) + merge + cite-index complete; 59 facet entries, 20/27 protolines decorated
         pov_narrator: taylor-hebert-kl-122ac    # series.structure.pov = single → inherited from protagonist
         dramatic_shape: hinge                    # first-flex hinge: prohibition pivots from theoretical-intact to road-tested-strained in s01's deployment; differs from b01c01's baseline-placement hinge (no antagonist pressure, no collision there); dramatist Phase 5 ACCEPT confirmed the two hinge functions are structurally distinguishable.
         goal: "the prohibition in its first real test — deployed against a genuine threat, technically held, and already bent enough that the accounting cannot close cleanly."   # audience-facing chapter purpose; bones-file header source for /and-write Phase 7

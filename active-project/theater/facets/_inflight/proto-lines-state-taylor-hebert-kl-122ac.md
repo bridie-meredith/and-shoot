@@ -12,7 +12,7 @@ aggregate_range: 1-29
 2 the water-carrier enters the doorway
 3 taylor-hebert-kl-122ac lifts the eyes
 4 taylor-hebert-kl-122ac faces the alley-mouth
-5 the insects close the lane-mouths [state:1]
+5 the insects close the lane-mouths [state:11]
 6 wren-stitch-maker-flea-bottom-ward enters the alley
 7 the city-watch passes the hook
 8 the near witness faces the alley-mouth
@@ -21,7 +21,7 @@ aggregate_range: 1-29
 12 coll-net-mender-flea-bottom lifts the eyes
 13 coll-net-mender-flea-bottom pulls the net
 14 taylor-hebert-kl-122ac faces the alley-mouth
-15 wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac [state:2]
+15 wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac [state:12]
 16 taylor-hebert-kl-122ac lifts the eyes
 17 the near witness crosses the lane
 18 taylor-hebert-kl-122ac threads the needle
@@ -31,7 +31,7 @@ aggregate_range: 1-29
 23 taylor-hebert-kl-122ac opens the ledger
 24 taylor-hebert-kl-122ac writes the line
 25 taylor-hebert-kl-122ac strikes the line
-26 taylor-hebert-kl-122ac underlines the entry [state:3]
+26 taylor-hebert-kl-122ac underlines the entry [state:13]
 27 taylor-hebert-kl-122ac sets the pen
 28 taylor-hebert-kl-122ac holds the hand
 29 taylor-hebert-kl-122ac closes the ledger

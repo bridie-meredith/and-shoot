@@ -13,7 +13,7 @@ aggregate_range: 1-29
 3 taylor-hebert-kl-122ac lifts the eyes
 4 taylor-hebert-kl-122ac faces the alley-mouth
 5 the insects close the lane-mouths
-6 wren-stitch-maker-flea-bottom-ward enters the alley [state:1]
+6 wren-stitch-maker-flea-bottom-ward enters the alley [state:14]
 7 the city-watch passes the hook
 8 the near witness faces the alley-mouth
 9 taylor-hebert-kl-122ac holds the feet
@@ -21,7 +21,7 @@ aggregate_range: 1-29
 12 coll-net-mender-flea-bottom lifts the eyes
 13 coll-net-mender-flea-bottom pulls the net
 14 taylor-hebert-kl-122ac faces the alley-mouth
-15 wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac [state:2]
+15 wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac [state:15]
 16 taylor-hebert-kl-122ac lifts the eyes
 17 the near witness crosses the lane
 18 taylor-hebert-kl-122ac threads the needle

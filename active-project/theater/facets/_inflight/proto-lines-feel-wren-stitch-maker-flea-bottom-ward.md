@@ -21,7 +21,7 @@ aggregate_range: 1-29
 12 coll-net-mender-flea-bottom lifts the eyes
 13 coll-net-mender-flea-bottom pulls the net
 14 taylor-hebert-kl-122ac faces the alley-mouth
-15 wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac [feel:1]
+15 wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac [feel:3]
 16 taylor-hebert-kl-122ac lifts the eyes
 17 the near witness crosses the lane
 18 taylor-hebert-kl-122ac threads the needle

@@ -18,7 +18,7 @@ aggregate_range: 1-29
 8 the near witness faces the alley-mouth
 9 taylor-hebert-kl-122ac holds the feet
 10 coll-net-mender-flea-bottom works the net
-12 coll-net-mender-flea-bottom lifts the eyes [state:10]
+12 coll-net-mender-flea-bottom lifts the eyes
 13 coll-net-mender-flea-bottom pulls the net
 14 taylor-hebert-kl-122ac faces the alley-mouth
 15 wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac
@@ -26,7 +26,7 @@ aggregate_range: 1-29
 17 the near witness crosses the lane
 18 taylor-hebert-kl-122ac threads the needle
 19 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
-20 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward
+20 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward [taylor-hebert-kl-122ac:1] [taylor-hebert-kl-122ac:2]
 22 taylor-hebert-kl-122ac lights the lamp
 23 taylor-hebert-kl-122ac opens the ledger
 24 taylor-hebert-kl-122ac writes the line
