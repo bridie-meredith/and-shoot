@@ -658,3 +658,50 @@ criteria met: yes — live entry and defense block removed; documentation commen
 findings-applied: 2 (sensory:3 deletion + mem:1 deletion; 6 files mutated)
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-21T00:00:00Z — write-b01c02-pass2
+dispatch: resolve 6 faults from /and-write Phase 2 audit on b01c02 — 4 FAULT-FORM + 1 FAULT-BONE-DELTA-MALFORMED; FLAG s02n02 no change required per audit
+target: active-project/staff/screen-writer/b01c02-phase1-bones.md
+audit-report: active-project/staff/auditor/write-b01c02-pass2.md
+findings-queued: 6 (s01n03, s01n08, s01n10, s02n05, s03n04, s03n06)
+
+## b01c02s01n03 — RESOLVED — 2026-05-21T00:01:00Z
+fault: FAULT-FORM — "steps into the doorway" banned prepositional-destination form
+scope: line
+change: svo recast from "the water-carrier steps into the doorway" to "the water-carrier enters the doorway"; axis_moves + notes unchanged
+criteria met: yes
+
+## b01c02s01n08 — RESOLVED — 2026-05-21T00:02:00Z
+fault: FAULT-FORM — "the two witnesses" plural subject violates singular-subject schema rule
+scope: line
+change: svo recast from "the two witnesses face the alley-mouth" to "the near witness faces the alley-mouth"; axis_moves + notes unchanged
+criteria met: yes
+
+## b01c02s02n05 — RESOLVED — 2026-05-21T00:03:00Z
+fault: FAULT-FORM — "the two witnesses" plural subject violates singular-subject schema rule
+scope: line
+change: svo recast from "the two witnesses cross the lane" to "the near witness crosses the lane"; axis_moves + notes unchanged; same near-witness slug consistent with s01n08 fix
+criteria met: yes
+
+## b01c02s03n04 — RESOLVED — 2026-05-21T00:04:00Z
+fault: FAULT-FORM — shape: held contradicted by discrete action verb "strikes"; axes_held invoked body-part license on a ledger mark not a body part
+scope: line
+change: reclassified from shape: held / axes_held (moral-framework) to shape: moving / axis_moves (knowledge up magnitude 1); notes updated to reflect knowledge-categorical-decision anchor; moral-framework held requirement transferred to s03n06 (see below)
+criteria met: yes
+
+## b01c02s03n06 — RESOLVED — 2026-05-21T00:05:00Z
+fault: FAULT-FORM — "holds the pen" fails narrow holds license (pen is not a body part, not pressure-resisting)
+scope: line
+change: svo recast from "holds the pen" to "holds the hand"; added second axes_held entry for moral-framework (body-part stillness-against-pressure; impulse to extend accounting is the pressure resisted); capability axes_held rationale updated to name "the hand" explicitly; notes updated to dual-discipline framing; this bone now satisfies both s03 held-axis requirements
+criteria met: yes
+
+## b01c02s01n10 — RESOLVED — 2026-05-21T00:06:00Z
+fault: FAULT-BONE-DELTA-MALFORMED — cost_ledger_anchor cl-social-tether-build (gain=social-tether, cost=position) present on a knowledge-axis bone; anchor-to-bone-axis mismatch
+scope: line
+change: removed cost_ledger_anchor field from b01c02s01n10; svo + axis_moves + notes unchanged; knowledge gains in s01 are unanchored per scene substance_delta per audit option (a)
+criteria met: yes
+
+## SESSION-END — 2026-05-21T00:07:00Z — write-b01c02-pass2
+findings-applied: 6 (s01n03, s01n08, s01n10, s02n05, s03n04, s03n06)
+findings-skipped: 0 (FLAG s02n02 no change required per audit — correctly excluded from repairs)
+exit: CLEAN

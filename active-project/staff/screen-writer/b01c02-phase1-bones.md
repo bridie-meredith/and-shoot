@@ -20,7 +20,7 @@ bones:
     notes: insect-feed delivers organized column heat-signatures of approaching watch; column-formation mapped before visual confirmation; sweep geometry legible at insect-range.
 
   - slug: b01c02s01n03
-    svo: the water-carrier steps into the doorway
+    svo: the water-carrier enters the doorway
     shape: moving
     axis_moves:
       - {axis: knowledge, direction: up, magnitude: 1}
@@ -55,7 +55,7 @@ bones:
     notes: sweep passes; watch column count, route, and press-levy timing confirmed at close range; sweep-pattern logged as ward-pattern data.
 
   - slug: b01c02s01n08
-    svo: the two witnesses face the alley-mouth
+    svo: the near witness faces the alley-mouth
     shape: moving
     axis_moves:
       - {axis: knowledge, direction: up, magnitude: 1}
@@ -73,7 +73,6 @@ bones:
     shape: moving
     axis_moves:
       - {axis: knowledge, direction: up, magnitude: 1}
-    cost_ledger_anchor: cl-social-tether-build
     notes: Coll continues working — his non-response is the Flea Bottom courtesy active; his eyes do not find the alley; this bone is the social-cover confirmation that Taylor's act left no readable trace at street level.
 
 ## scene b01c02s02
@@ -113,7 +112,7 @@ bones:
     notes: Taylor orients toward Wren's position; does not hold the gaze; the look-and-not-holding registers Wren's attachment behavior without entering it into the model.
 
   - slug: b01c02s02n05
-    svo: the two witnesses cross the lane
+    svo: the near witness crosses the lane
     shape: moving
     axis_moves:
       - {axis: knowledge, direction: up, magnitude: 1}
@@ -172,10 +171,10 @@ bones:
 
   - slug: b01c02s03n04
     svo: taylor-hebert-kl-122ac strikes the line
-    shape: held
-    axes_held:
-      - {axis: moral-framework, rationale: "stillness-against-pressure — licensed holds form on body part; the striking-through of a ledger line is the physical act of restraint that enacts the prohibition's structural standing; the hand draws the line through what would be the full cost-entry for the two witnesses and Wren's attachment; the prohibition holds at rank 3 by the act of closing a line rather than extending the accounting; striking is the body holding the line"}
-    notes: Taylor draws a line through a ledger entry — not erasing, not extending; the physical act of closing the entry enacts the verdict 'compliant, defensible, cost-acknowledged'; the moral-framework held bone.
+    shape: moving
+    axis_moves:
+      - {axis: knowledge, direction: up, magnitude: 1}
+    notes: knowledge move — the striking is the categorical decision to close the line; the act of striking is the physical anchor for the verdict 'compliant, defensible, cost-acknowledged'; what is struck is the would-be expanded cost-entry the verdict refuses to write.
 
   - slug: b01c02s03n05
     svo: taylor-hebert-kl-122ac underlines the entry
@@ -185,11 +184,12 @@ bones:
     notes: the categorical distinction named and underlined — deployment-without-control falls inside the prohibition as a meaningful distinction; the underlining is the physical act of the knowledge-bone: the categorical structural knowledge enters the ledger as a stable entry.
 
   - slug: b01c02s03n06
-    svo: taylor-hebert-kl-122ac holds the pen
+    svo: taylor-hebert-kl-122ac holds the hand
     shape: held
     axes_held:
-      - {axis: capability, rationale: "stillness-against-pressure — licensed holds form on body part; the pen is held still above the page; no further insects are moved, no further deployment is enacted; the hand holding the pen without writing is the capability-held discipline bone for s03; the new baseline at rank 4 sits in place, held in position by an accounting that has resolved around it rather than extending it"}
-    notes: pen held above the page without writing; the stillness-with-pen bone enacts the capability-held discipline; the accounting scene is interior and static — the held-still pen is the physical proof that no deployment continues.
+      - {axis: capability, rationale: "stillness-against-pressure — licensed holds form on body part (the hand); no further insects are moved; the hand held still is the capability-held discipline at the new baseline rank 4."}
+      - {axis: moral-framework, rationale: "stillness-against-pressure — licensed holds form on body part (the hand); the hand held still is the prohibition's structural standing at rank 3 enacted physically; the impulse to extend the accounting into the unpriced costs is held; the body holds the line at the prohibition's edge."}
+    notes: body-part hold — the hand stilled is the dual-discipline bone; capability held at rank 4 (no further deployment); moral-framework held at rank 3 (the prohibition's standing); the impulse to extend the accounting is the pressure the hand resists.
 
   - slug: b01c02s03n07
     svo: taylor-hebert-kl-122ac closes the ledger
