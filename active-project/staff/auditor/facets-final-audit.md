@@ -451,3 +451,187 @@ signal_total (unchanged): 8
 ```
 
 All cycle-1 SIGNAL findings (flag-001 through flag-009, excluding fault-001/fault-002) carry forward unmodified. No new findings of any class introduced by the remediation.
+
+---
+
+## Cycle-3 re-audit
+
+cycle: 3
+mode: FLAG-ONLY (remediation-verification, pre-Phase-5b-cycle-2)
+date: 2026-05-21
+scope: 10 cycle-2 fixer items + blast-radius delta-scan; confirm hard_total = 0 before Phase 5b cycle-2 fires
+
+### Per-item resolution status
+
+#### item-1: vibes:14 keyword earning-collapse → wren-layer-actualization
+
+Verification: `vibes.md` entry 14 reads `actor:taylor-hebert-kl-122ac ++ wren-layer-actualization: [speech-exchange-as-the-first-actualized-wren-layer, the-moment-the-un-priced-speaks-back] | licensed-by: proto:19, proto:20, world-build:earning-collapse-three-mistakes`. Keyword renamed. Token bundle and anchor unchanged. Cite-index ID (`vibes:14`) unaffected; taylor sidecar facet-licenses cite by ID — no breakage.
+
+The cycle-1 TASTE-FLAG (flag-006) driving condition (ambiguous deflationary keyword) is resolved. The `licensed-by` field retains the `world-build:earning-collapse-three-mistakes` free-gloss source, which was advisory-only in cycle-1 and remains advisory. The flag-006 routing was satisfied by the keyword rename path; no residual HARD concern.
+
+Status: RESOLVED. flag-006 CLOSED.
+
+#### item-2: vibes:1 @5 retarget actor:taylor → episode scope
+
+Verification: `vibes.md` entry 1 reads `episode + first-deployment-routing-mode: [routing-without-contact, first-deployment-constraint-intact, the-lane-that-closes-as-tool-not-command] | licensed-by: proto:5, world-build:prohibition-first-test`. Target changed from `actor:taylor-hebert-kl-122ac ++ insects` to `episode + first-deployment-routing-mode`. The `routing-without-contact` token now carries `episode` scope. AP1 transience concern from flag-007 is resolved: episode-scoped vibes are chapter-local by definition; downstream operators reading this at b01c03+ will not read it as a current actor-wide deployment mode.
+
+Cite-index: `vibes:1 @5 back=Y co=[loc-state:3, narrator:2, state:2, state:11, vibes:2, vibes:3, vibes:4]` — co-citations are anchor-based, not target-based. No cite-index change needed; confirmed correct.
+
+Note: vibes:4 @5 also carries `episode + first-deployment` target. Two entries now target episode scope at @5 (`vibes:1` and `vibes:4`). The rubric's op-coherence gate requires keyword uniqueness per target. `vibes:1` keyword is `first-deployment-routing-mode`; `vibes:4` keyword is `first-deployment`. These are distinct keywords on the same `episode` target — the `+` op (new keyword required) is satisfied for each independently. No collision.
+
+Status: RESOLVED. flag-007 CLOSED.
+
+#### item-3: dialogue sidecars facet-license DEFERRED placeholders → concrete citations
+
+Verification:
+- Wren sidecar Draft B `facet-licenses`: `[vibes:13 @19]` with resolution comment present. Old DEFERRED placeholder gone from chosen block. CONFIRMED.
+- Taylor sidecar Entry 1 `facet-licenses`: `[vibes:14 @20]` with resolution comment present. CONFIRMED.
+- Taylor sidecar Entry 2 `facet-licenses`: `[vibes:14 @20]` with resolution comment present. CONFIRMED.
+
+Cite-index cross-check: `vibes:13 @19 back=Y co=[wren-stitch-maker-flea-bottom-ward:1]`; `vibes:14 @20 back=Y co=[taylor-hebert-kl-122ac:1, taylor-hebert-kl-122ac:2]`. Citations resolve bidirectionally.
+
+Status: RESOLVED. flag-009 CLOSED.
+
+#### item-4: exposition:4 @4 Flea Bottom inline appositive
+
+Verification: `exposition-b01-c02.md` entry 4 gloss text reads "In Flea Bottom, the city's poorest ward, there is rarely anyone who can." Inline appositive present. Cold-join orientation concern from flag-004 (CN-002) is resolved: a reader arriving at b01c02 without b01c01 context now has the location defined within the gloss itself.
+
+Status: RESOLVED. flag-004 CLOSED.
+
+#### item-5: feeling entries recast to single-clause body-subject form
+
+Verification:
+- feel:1 @28 (taylor): `her hand draws back from the ledger's edge`. Single clause; subject is Taylor's body part ("her hand"); somatic; no second-clause subject shift. Callout: "Recast as ONE clause whose subject is Taylor's body." SATISFIED.
+- feel:2 @15 (wren): `her eyes come to rest on Taylor and do not leave`. Subject is Wren's body part ("her eyes"); two predicates sharing the same subject ("come to rest" + "do not leave") — a compound predicate, not a subject-shift. Callout: "Compress to ONE clause (subject = Wren's body) capturing the deliberate reanchoring ('stay'); drop the reflex eye-lead subordination." The compound predicate structure satisfies the intent: single subject = Wren's body, stay-register captured in "do not leave," subordination dropped.
+
+Status: RESOLVED. No new rubric-form finding.
+
+#### item-6: narrator:4 @15 softener-tail removal and age-mismatch channel
+
+Verification: `interest-narrator.md` entry 4 reads "Wren is looking at her the way someone twice her years looks at a thing already decided, and that look does not have a column in the ledger."
+
+- Softener-tail "about" at end of first clause: REMOVED. Previous form ended "a thing you have decided about"; new form ends "a thing already decided." Trailing preposition gone. SATISFIED.
+- Age-mismatch channel ("someone twice her years") now surfaces in the first clause, before the ledger frame. Previous form lacked the age-mismatch signal entirely. SATISFIED.
+- Rubric AP-10 (inverted-predicate) status: "that look does not have a column in the ledger" is the definitional negative — same structural shape as before; single instance, not a new saturation concern.
+
+Status: RESOLVED. No new finding.
+
+#### item-7: loc-state:4 @6 sensory-note perceptible focus-element
+
+Verification: `location-state.md` entry 4 sensory-note reads "Wren's figure against the far-end threshold, the sealed lane-mouth directly behind her." Concrete perceptible things named (Wren's figure; the sealed lane-mouth position). Previous form named a relational quantity ("remaining clear ground"); new form names what Taylor's eye would actually settle on. Callout satisfied.
+
+Status: RESOLVED. No new finding.
+
+#### item-8: state-updates value revisions (entries 10, 12, 13, 15)
+
+Verification:
+- state:10 @12 (coll): `not-yet -> glance-filed-unrepeated`. Cape-architecture vocabulary ("registered-as-anomaly") replaced with Westerosi-register value. Hard fence acknowledgement comment names both fences explicitly and records them as honored. SATISFIED.
+- state:12 @15 (taylor.social-tether-wren): `peripheral-permitted-attachment -> recognized-observer-bond-forming`. Overclaim ("crystallized") provisionalised. SATISFIED.
+- state:13 @25 (taylor.knowledge): `observational-sweep-pattern -> structural-first-read-provisional`. Overclaim ("categorical-structural") provisionalised per fixer adjudication (worm-canon-pedant accepted; 2-of-3 reject → 3-of-3 threshold not met without revision). NI co-citation at @25 (narrator:5) confirmed in cycle-2. The new value `structural-first-read-provisional` retains the fast-synthesis signal while satisfying the provisioning requirement. No residual RUBRIC-FIDELITY concern.
+- state:15 @15 (wren.taylor_awareness): `observed-and-decided-not-to-ask -> watching-with-dread-held-alongside-pull`. Dread register added alongside the rational track. SATISFIED.
+
+Slice files cross-checked: `state-updates-taylor-hebert-kl-122ac.md` entries 2 and 3 match consolidated file values at @15 and @25 respectively. `state-updates-coll-net-mender-flea-bottom.md` entry 1 matches consolidated file value at @12. `state-updates-wren-stitch-maker-flea-bottom-ward.md` entry 2 matches consolidated file value at @15.
+
+Status: RESOLVED. No new finding.
+
+#### item-8b: sensory:2 @22→@23 relocation + loc-state conditions notes + cite-index update
+
+This is the most complex item; all five integrity checks follow.
+
+**Cite-index integrity after sensory:2 @22→@23 move:**
+
+Proto-lines at @22: `22 taylor-hebert-kl-122ac lights the lamp [loc-state:11] [state:3] [state:4]` — sensory:2 token absent. CORRECT.
+Proto-lines at @23: `23 taylor-hebert-kl-122ac opens the ledger [exposition:5] [sensory:2] [state:5]` — sensory:2 token present. CORRECT.
+Cite-index sensory:2 row: `sensory:2 @23 back=Y co=[exposition:5, state:5]` — anchor @23; old @22 anchor gone. CORRECT.
+Cite-index @22 co-citation list for loc-state:11: `loc-state:11 @22 back=Y co=[state:3, state:4]` — sensory:2 correctly removed. CORRECT.
+Cite-index @23 co-citation lists: `state:5 @23 back=Y co=[exposition:5, sensory:2]`; `exposition:5 @23 back=Y co=[sensory:2, state:5]` — both gained sensory:2. CORRECT.
+Sensory.md entry 2: `2 @23 light: unlit-lodging-interior -> lamp-lit-tight-radius` — anchor @23. CORRECT.
+No dangling reference at @22 for sensory:2. No duplicate citation. All three files (proto-lines, cite-index, sensory.md) agree on @23.
+
+**Sensory action-verb self-charge resolution:**
+
+The cycle-1 / cycle-2 callout identified that sensory:2 at @22 doubled the lamp-lighting verb ("lights the lamp" IS the light-onset). Relocated to @23 ("opens the ledger"), which is the first bone worked under the stable lit state — the lamp is already lit, the ledger is being opened. The @23 bone is not a lighting-action verb. Self-charge eliminated. SATISFIED.
+
+**Old-state anchors for sensory:1 and sensory:2:**
+
+- sensory:1 old-state `watch-press-alley-ambient`: loc-state:2 @4 conditions note reads "ambient-sound baseline before column arrival — ordinary morning street noise and shoe-leather on cobbles; no column-echo yet; this is the watch-press-alley-ambient state (anchor for sensory:1 old-state)." Named anchor explicitly matches the old-state slug. SATISFIED.
+- sensory:2 old-state `unlit-lodging-interior`: loc-state:11 @22 conditions note reads "interior-darkness baseline before @22 — lodging-interior unlit, night scene-open (time-skip blank @21); this is the unlit-lodging-interior old-state (anchor for sensory:2 old-state at @23)." Named anchor explicitly matches the old-state slug; the @23 cross-reference is explicit. SATISFIED.
+- Sensory.md records: `old-state-source: loc-state:11 @22 conditions note (unlit-lodging-interior baseline — lodging interior unlit at night scene-open, @21 time-skip; lamp-lighting verb self-charge avoided by anchoring here at @23, the first bone worked under the stable lit state)`. Source note present and correctly names the upstream conditions anchor. SATISFIED.
+
+**Per-scene sensory cap after @22→@23 move:**
+
+Scene boundaries per scene-map: scene-A @1–@10; scene-B @12–@20; scene-C @22–@29. @23 is within scene-C. sensory:1 @7 is scene-A. No sensory fire in scene-B. Scene-C has exactly 1 sensory fire (sensory:2 @23). Per-scene cap ≤3 is met (1 < 3). PASS.
+
+Modality floor: sound (sensory:1 @7) + light (sensory:2 @23) = 2 distinct modalities. Short-chapter floor (≥2) maintained. PASS.
+
+Status: RESOLVED. No new finding.
+
+#### item-9: monument cards authored in warehouse
+
+Verification:
+- `active-project/warehouse/monument-conquest-charter-language.md`: present. `class: behavior`, `scope: project`, `project: taylor-westeros-good-intentions`, `quality: full`, `origin: authored`. Earth-Bet fence: card body contains no Earth-Bet proper nouns, facility names, or named prior-world persons. Displacement-cue form section explicitly prohibits Earth-Bet proper nouns. Calibration anchor cue text is clean. Target slug `monument-conquest-charter-language` matches mem:2 target-reference. FENCE CLEAN.
+- `active-project/warehouse/monument-cost-borne-by-the-unconsenting.md`: present. `class: behavior`, `scope: project`, `project: taylor-westeros-good-intentions`, `quality: full`, `origin: authored`. Earth-Bet fence: card body contains no Earth-Bet proper nouns in the displacement-cue form section. The `## Interaction notes` section references the "locker-period pattern" — this is a thematic description of an Earth-Bet behavioral pattern used as an analogy note for the card's authors, not a displacement-cue surface that reaches the prose. It does not name Earth-Bet proper nouns (no school name, no individual names). FENCE CLEAN.
+- mem:1 and mem:2 target-references (`monument-cost-borne-by-the-unconsenting` and `monument-conquest-charter-language`) now resolve to on-disk warehouse cards. The cycle-1 SIGNAL (card-resolution gap noted in Dimension 4) is resolved.
+
+**Schema compliance check — behavior card `## Direct samples` requirement:**
+
+The schema (`schemas/card.schema.md`) states under behavior class: "A behavior card with no direct samples is incomplete — the samples are the load-bearing section." Required section: `## Direct samples` (verbatim quotes or excerpts, tagged with origin). Neither monument card has a section labeled `## Direct samples`. Each card has a `## Interaction notes` section containing a calibration anchor with a verbatim cue text (e.g., `b01c02 mem:1 @8 — "the count of who saw was set by faces she did not pick..."`), but this section is labeled as interaction notes, not direct samples, and is not tagged with origin in the schema-required format.
+
+This is a schema structural gap. Severity classification: the monument cards are not performance-facing behavior cards — they are target-resolution anchors for memory facet entries. The schema's `## Direct samples` requirement was written for dialogue-authoring and audience-review use cases (dialogue-writer fork and audience reviewer consume samples). The monument cards are consumed by memory-facet authors and auditors for displacement-cue form validation, not by performance agents. The rubric for memory-flag exceptions requires only that the card exists and is fence-clean; it does not require quality: full in the persona-gate sense. The `quality: full` frontmatter field was set by the fixer, but the schema's definition of "full" for behavior cards includes the direct-samples section.
+
+- **id:** flag-010
+- **type:** flag
+- **what:** `monument-conquest-charter-language.md` and `monument-cost-borne-by-the-unconsenting.md` are `class: behavior` cards that do not contain a `## Direct samples` section. The calibration anchor cue text in `## Interaction notes` serves the role of samples functionally (verbatim displacement-cue text with chapter-specific attribution) but is not labeled or structured as a `## Direct samples` section per the behavior card schema. Both cards carry `quality: full` in frontmatter, but the schema's full-quality definition for behavior cards requires direct samples as a load-bearing section.
+- **why:** If a future dialogue-writer fork or audience reviewer loads these cards expecting a `## Direct samples` section (per schema-standard loading), the section will not be found and the agent may generate in the void or mis-classify the card as `quality: scant`. The calibration anchor material is correct and sufficient for monument-resolution purposes; the structural label is the gap.
+- **criteria:** Not a HARD finding — the memory exception validation is not blocked by the section label; the card content is present and fence-clean. This is advisory-structural. Margit should either (a) add a `## Direct samples` section to each card containing the calibration anchor cue text tagged with `origin: synthesized / b01c02 calibration-anchor`, or (b) confirm that monument cards are formally exempt from the `## Direct samples` requirement and annotate that exemption in the card schema or in a margit rubric note.
+- **routing:** margit; card schema maintainer (if a monument-card subclass exemption is the intended resolution).
+
+Status: RESOLVED for mem card-resolution gate (cards exist and are fence-clean). NEW SIGNAL (flag-010) for schema structural gap on direct-samples section.
+
+### Cycle-3 new findings
+
+| id | class | type | what |
+|----|-------|------|------|
+| flag-010 | CONSTRAINT/schema | flag | monument-conquest-charter-language.md and monument-cost-borne-by-the-unconsenting.md lack `## Direct samples` section required by behavior card schema; `quality: full` frontmatter set but schema full-quality definition includes direct samples as load-bearing section |
+
+### Cycle-3 closed items
+
+| item | cycle-2/callout finding | cycle-3 verdict |
+|------|------------------------|-----------------|
+| item-1: vibes:14 keyword | flag-006 (TASTE-FLAG) | RESOLVED — keyword renamed to wren-layer-actualization; operator-clarity restored |
+| item-2: vibes:1 retarget | flag-007 (PILE-UP-REVIEW) | RESOLVED — token moved to episode scope; AP1 transience concern eliminated |
+| item-3: dialogue sidecar facet-licenses | flag-009 (RUBRIC-FIDELITY) | RESOLVED — all three DEFERRED placeholders replaced with concrete citations |
+| item-4: exposition:4 appositive | flag-004 (CONSTRAINT/CN-002) | RESOLVED — "the city's poorest ward" appositive present; cold-join orientation satisfied |
+| item-5: feeling recast | callout #5 | RESOLVED — both entries satisfy single-clause body-subject form requirement |
+| item-6: narrator:4 revision | callout #6 | RESOLVED — softener-tail removed; age-mismatch channel surfaces before ledger frame |
+| item-7: loc-state:4 sensory-note | callout #7 | RESOLVED — concrete perceptible focus-element replaces spatial arithmetic |
+| item-8: state-updates value revisions | callout #8 | RESOLVED — all four values provisionalised; cape-vocab removed; dread register added |
+| item-8b: sensory:2 relocation | callout #8b | RESOLVED — @22→@23 move complete; cite-index/proto-lines/sensory.md in agreement; old-state anchors present; per-scene cap met; modality floor maintained |
+| item-9: monument cards | callout #9 | RESOLVED for card-resolution gate; flag-010 (new SIGNAL) raised for missing direct-samples section |
+
+### Carry-forward signal status
+
+Cycle-1 SIGNAL findings not addressed by cycle-2 fixer (these were signal-only, not routed to fixer):
+- flag-001 (STRUCTURAL): state-updates.md multi-block frontmatter — carry forward unmodified.
+- flag-002 (METADATA-INCONSISTENCY): R2.3 Taylor shard internal citation stale — carry forward unmodified.
+- flag-005 (AP-SCAN): cost/count vocabulary advisory for b01c03 brief — carry forward unmodified.
+- flag-008 (RUBRIC-FIDELITY): state-updates density advisory — carry forward unmodified.
+
+Cycle-1 SIGNAL findings resolved in cycle-3:
+- flag-004: CLOSED (appositive added).
+- flag-006: CLOSED (keyword renamed).
+- flag-007: CLOSED (token retargeted to episode scope).
+- flag-009: CLOSED (sidecars updated with concrete citations).
+
+New signal in cycle-3:
+- flag-010: NEW — monument card `## Direct samples` schema structural gap.
+
+```
+hard_total (after cycle 3): 0
+signal_total (after cycle 3): 5
+  carry-forward: flag-001, flag-002, flag-005, flag-008
+  new: flag-010
+  closed this cycle: flag-004, flag-006, flag-007, flag-009
+```
+
+No HARD findings introduced by the cycle-2 remediation. Phase 5b cycle-2 audience gate may proceed.
