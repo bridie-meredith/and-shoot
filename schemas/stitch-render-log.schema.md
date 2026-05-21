@@ -10,9 +10,9 @@ Status: **draft (tuning)**.
 
 ## File path
 
-`active-project/staff/stitcher/render-log-<episode-slug>.md`
+`active-project/staff/stitcher/render-log-<book>-<chapter>.md`
 
-One log per episode. Forks append; later phases never rewrite earlier entries.
+One log per chapter. Forks append; later phases never rewrite earlier entries.
 
 ---
 
@@ -285,7 +285,7 @@ No `borderline` value under `cut-aggressiveness: strict`. Borderline = `n` for Q
 ## Phase 7 — editorial reflection
 author: stitcher-fork (per sentence)
 phase-7-mode: strict
-output: draft/s01e01.phase-7.draft.md
+output: draft/b01-c01.phase-7.draft.md
 
 L18  Q1=y Q2=y Q3=n Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n  |  PASS
 L19  Q1=y Q2=y Q3=n Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n  |  PASS
@@ -329,7 +329,7 @@ phase-7-summary:
 
 The render-log is the auditor's primary input for stitch review. The auditor checks:
 
-1. Every bone in `proto-lines/<slug>.md` has a corresponding `render-bone`, `MERGE-*`, `CUT-BONE`, or `DROP-*` entry (per-anchor mode), or appears in exactly one scene-fork's `bone-walk:` block with a non-empty disposition (scene-window mode).
+1. Every bone in `theater/bones/<book>-<chapter>.md` has a corresponding `render-bone`, `MERGE-*`, `CUT-BONE`, or `DROP-*` entry (per-anchor mode), or appears in exactly one scene-fork's `bone-walk:` block with a non-empty disposition (scene-window mode).
 2. Every facet drop has a reason that maps to the taxonomy.
 3. Every `RESHOW` has ≥2 graph source citations and a `function-preserved` field.
 4. Every `REWORD` has `original:` and `replacement:` fields and density ≤2 per sentence.
