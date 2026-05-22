@@ -9,34 +9,38 @@ verdict: accept
 
 # Verdict reasoning
 
-Three entries. Same three from cycle 1. The blocking callout was exp:4's unoriented "Flea Bottom" inside an orientation clause. I demanded one inline appositive. The fixer added it. I re-read with the pattern-tracker live.
+Three entries. Same three from cycle-1. The blocking callout was exp:4's unoriented "Flea Bottom" inside an orientation clause. I demanded one inline appositive. The fixer added it. I re-read with the pattern-tracker live and the who-knows-what-when tracker running.
 
-**exp:1 @0 (prior-episode-bridge).** Unchanged from R1. The bridge gives me the prohibition's terms, the ledger, and the inciting condition in sequence — theory → ends. Cold-join read is clean.
+**exp:1 @0 (prior-episode-bridge).** Unchanged from cycle-1 and that is correct — it was clean and it stays clean. The bridge gives me the prohibition's terms in two clauses, plants the ledger, and fires the inciting condition at the close. "Theory ends" is still the right register for the bill arriving. Cold-join read is intact.
 
-The "the Hook" ADD-candidate I raised in R1: I asked the exposition-author to confirm it was on the always-known register from b01c01. Fix log item-4 confirms it: "the Hook" on glossed-terms register from b01c01, no bridge change needed. My obligation was register-confirmation-or-close; the register closes it. The who-knows-what-when tracking is clean — a cold-join reader entering at b01c02 gets the prior state correctly scoped. ACCEPT.
+The ADD-candidate I raised in cycle-1 — "the Hook" embedded in the bridge text, potentially unoriented for cold-join readers — is resolved. Fix-log item-4 confirms "the Hook" is on the glossed-terms register from b01c01; the bridge text requires no change. Who-knows-what-when tracking: a cold-join reader entering at b01c02 gets directional spatial sense from "come down the Hook" without needing the name glossed; continuous readers have it from prior episode. Register confirmation closes my ADD. ACCEPT.
 
-**exp:4 @4 (pressed-labor-sweep).** The R2 text: "when the city's hired watchmen need hands for a public work, they sweep a poor district and conscript whoever cannot prove they are wanted elsewhere. In Flea Bottom, the city's poorest ward, there is rarely anyone who can."
+**exp:4 @4 (pressed-labor-sweep).** The R2 text reads: "when the city's hired watchmen need hands for a public work, they sweep a poor district and conscript whoever cannot prove they are wanted elsewhere. In Flea Bottom, the city's poorest ward, there is rarely anyone who can."
 
-This is exactly the fix I called for. "In Flea Bottom, the city's poorest ward" — the appositive completes the category-to-instance move the R1 gloss left open. "A poor district" sets the frame; "Flea Bottom, the city's poorest ward" names the instance and confirms it belongs to the category. The faction-coherence read is now operational: a cold-join reader knows what Flea Bottom is and why the sweep's logic applies there specifically. The prohibition test registers as a real test against a real institutional mechanism in a legible place. ACCEPT.
+The cycle-1 failure was specific: the gloss defined the sweep generically then named "Flea Bottom" without apposition, leaving cold-join readers with an empty proper noun inside the clause that was supposed to orient them. The repair adds "the city's poorest ward" as an inline appositive. I now read: category frame ("a poor district") → instance name → appositive confirms instance belongs to category ("city's poorest ward"). The move is complete. A cold-join reader knows what Flea Bottom is and why the sweep's logic applies there with teeth. The prohibition test registers as a real test against a legible institutional mechanism in a located place. Faction-coherence read is operational. ACCEPT on the gap closure.
 
-One seam flagged but not a revise trigger from my reading-experience: the R2 gloss runs 38 words against a 30-word cap for first-mention-term. The rubric's form discipline sets that cap as HARD for the auditor. From my side — one extended inline appositive to close a genuine gap does not disrupt the read. It's eight extra words, not an extra paragraph. I'm noting the overage for the auditor's convergence trace; I am not calling it a revise.
+One seam I am flagging but not using as a revise trigger: the remediated gloss runs 38 words. The rubric's form discipline sets ≤30 words for `first-mention-term`. That is eight words over cap. From my reading-experience side the clause is not disruptive — a single expanded inline appositive is not a paragraph intrusion. But I am noting this for the auditor's HARD/SIGNAL determination. It is not a revise demand from me.
 
-**exp:5 @23 (ledger).** Unchanged. "The book I keep by lamplight — a running account of every cost my actions make that I cannot pay back." The ledger earns its anchor at the moment of physical use. "Cannot pay back" orients the accounting scene as a reckoning before the bone plays it out. ACCEPT.
+**exp:5 @23 (ledger).** Unchanged. "The book I keep by lamplight — a running account of every cost my actions make that I cannot pay back." Fires at the moment of physical use, not at the ambient pre-mention in the bridge. "Cannot pay back" orients the accounting scene as a reckoning before the bone plays it out. Twenty words, well inside cap, first-person. ACCEPT.
 
-**Verdict: ACCEPT.** The cycle-1 blocking callout is resolved. All three entries pass the faction-coherence and who-knows-what-when read. One seam (word-cap overage at exp:4) is flagged for auditor convergence — it is not a reading-experience revise trigger.
+**Verdict: ACCEPT.** Cycle-1 blocking callout resolved. ADD-candidate closed by register confirmation. All three entries pass the faction-coherence and who-knows-what-when read. One non-revise seam (word-cap overage at exp:4) flagged for auditor convergence.
 
 # Entry-level callouts
 
-**[exposition:4] @4 — word-cap overage. FLAGGED, NOT A REVISE TRIGGER.** R2 text runs 38 words; first-mention-term cap is 30 words. The eight-word overage is the cost of closing the embedded-noun gap with an inline appositive rather than a separate entry. From the reading-experience side the clause is not disruptive — it reads as a single expanded orientation, not a paragraph intrusion. Audit should confirm whether this constitutes a HARD CONSTRAINT violation or whether the R2 appositive fix is accepted as a justified cap exception under the embedded-noun completeness rule.
+**[exposition:4] @4 — embedded "Flea Bottom" resolved; word-cap overage flagged.** The URI-FACETS-CYCLE-1 embedded-noun gap is closed by "the city's poorest ward." The reading-experience attack is answered. The remaining seam is mechanical: 38 words against a 30-word cap. Auditor must classify HARD or justified exception under the embedded-noun completeness repair scenario. This reviewer does not call it a revise; the clause reads without disruption.
 
-**[exposition:1] @0 — ACCEPT. Hook ADD-candidate closed.** Register confirmation satisfies the R1 condition. No further action on this entry.
+**[exposition:1] @0 — ACCEPT. Hook ADD-candidate closed.** Fix-log item-4 confirms register coverage. No further action on this entry.
 
-**[exposition:5] @23 — ACCEPT.** No change; no new seams.
+**[exposition:5] @23 — ACCEPT.** Unchanged. No new seams.
+
+**Scan for new seams — no new revise triggers found.** Re-read the full facet against proto-lines at @0, @4, @23. No unoriented proper-noun frames in any gloss text after the appositive repair. No re-gloss violations. No anchor-cap violations. Voice is first-person throughout. No author-meta phrasing. Deleted entries (IDs 2 and 3) are correctly retired with no renumber; the ID gap does not produce a reading-experience seam.
 
 # Convergence trace
 
-**[exposition:4] word-cap overage:** No auditor finding in cycle 1 flagged the word count on exp:4. The R1 gloss already ran 34 words (also over cap); the R2 repair raised it to 38. Cycle-1 auditor flag-004 targeted the embedded-noun completeness violation, not the cap. The mechanical FREQUENCY-BAND / CONSTRAINT scan should surface this overage as a finding if re-run at cycle 2. Audience-gate surfaces it here; auditor owns the HARD/SIGNAL classification.
+**[exposition:4] embedded-Flea-Bottom:** Cycle-1 overlap with auditor flag-004 (CN-002). The rubric's resolution path for embedded-noun completeness requires each proper-noun frame resolve via (a) cross-episode register, (b) a co-anchor or prior-anchor exposition entry, or (c) always-known register. The R2 appositive satisfies (b) — an inline-appositive at the same anchor functions as a co-anchor orientation. URI-FACETS-CYCLE-1 check passes.
 
-**[exposition:4] embedded-Flea-Bottom resolved:** Cycle-1 overlap with auditor flag-004 (CN-002). R2 repair closes the URI-FACETS-CYCLE-1 embedded-noun completeness violation. Rubric § Embedded-noun gloss-completeness: "In Flea Bottom, the city's poorest ward" — "the city's poorest ward" resolves the proper-noun frame via inline appositive (option b in the rubric's resolution list). Mechanical check now passes.
+**[exposition:4] word-cap overage:** No auditor finding in cycle-1 covers this. The R1 gloss at 34 words was already over cap; the auditor flag-004 targeted embedded-noun violation, not the count. The R2 repair raised the count to 38. This reviewer surfaces the overage as a new seam; auditor owns the classification on re-run.
 
-**[exposition:1] Hook ADD-candidate:** No auditor finding. Fix-log item-4 closes the ADD via register confirmation. No further auditor action required on this point.
+**[exposition:1] Hook ADD-candidate:** No auditor finding. Fix-log item-4 closes via register confirmation. No further auditor action required.
+
+**[exposition:5] @23:** Auditor cycle-1 checks held. Unchanged at R2. No new mechanical seam.
