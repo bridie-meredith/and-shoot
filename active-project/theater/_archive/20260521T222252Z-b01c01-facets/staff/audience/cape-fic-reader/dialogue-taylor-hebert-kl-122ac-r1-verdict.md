@@ -1,0 +1,25 @@
+---
+reviewer: cape-fic-reader
+facet: dialogue
+character: taylor-hebert-kl-122ac
+cycle: 1
+episode: b01c01
+date: 2026-05-19
+verdict: accept
+---
+
+# Stage 1 — V2 strict affirmative-demonstration
+
+- [taylor-hebert-kl-122ac:1] @25 — Q1: PASS — "I cannot say" affirmatively demonstrates six card §-sections from the base and leaf cards. §Syntax (base): three-word fragment, subject-modal-verb, stripped to load-bearing token — enacted, not incidentally present. §Vocabulary §Hedges-that-are-not-hedges (base): "cannot say" reads as inability; it functions as refusal of the speech-act — precision-instrument masquerading as hedge, the signature cape-fic-reader tracks for information-asymmetry moves. §Voice-tells (base): verbalized minimum of the held-silence tell; the bone requires a speech-act so the silence is given the minimum surface to count as speech. §Cadence (base): line terminates on "say" — the verb of speech-act-production, which is the precise capacity being refused; load-bearing-word-final. §Vocabulary §Refuses (leaf): "I cannot" not "I can't" — uncontracted formal, Westerosi register overlay correctly applied. §Anchor-sample (leaf): cover-stripped analogue of the calibration deflection — same refusal-by-precision move, institutional cover omitted because no septon/ledger equivalent exists for the adult Flea Bottom speaker. Each citation is demonstrably enacted. Drafts B and C correctly rejected: B claims ignorance (wrong signature, wrong scope register), C enters the deferral-ledger (bone-prohibited). Q1 PASS. Q2: PASS — no anachronistic idiom, no Earth-Bet proper noun (auditor r2-verify global scan confirmed clean), no septon/maester vocabulary, no apology language, no modern HR-speak, no deposition cadence, no em-dash spine, no contraction, no closing softener, no protective directive. Hard-fence: zero hits. Stage-1 verdict: accept.
+
+# Stage 2 — V3 adversarial seam-finding
+
+- [taylor-hebert-kl-122ac:1] @25 — seam: The line's information-asymmetry claim — that Wren receives "inability" while the reader receives "refusal-of-the-speech-act" — is only operative if the reader already has enough card-anchor to decode the three-word fragment as precision-refusal rather than generic adult dismissal. At first encounter, with no prior Taylor utterances in this episode, "I cannot say" is indistinguishable from any Flea Bottom adult brushing off a child. The board-move is invisible in the surface text; it outsources all asymmetry-load to the surrounding facets (vibes:21, state:16, narrator:6 @24, feel:1 @23, mem:2 @23). Cape-fic-reader tracks whether the board-move lands for the reader without external commentary — and this line does not carry that weight unassisted. Additionally: the cite-index shows state:16 @25 back=N (no backward cascade). A terminal state that does not cascade is a missed asymmetry propagation opportunity: the line closes the beat without reshaping upstream understanding. Facet-license attack: the sidecar defers R2 facet-license citation to "R2 fold-in, expected to cite feeling-taylor:@25 and narrator:@25." But the cite-index contains no feel or narrator entry at @25 — feel:1 is at @23, narrator:6 is at @24. The R2 facet-license citation the sidecar deferred cannot be fulfilled at @25 from the current graph. The rubric §V2-extension §citation-completeness: "missing either citation axis: SIGNAL finding." The auditor's r2-verify reports dialogue compliance as a batch PASS but does not enumerate per-line facet-license resolution for the Taylor slot; the per-line gap is not a named auditor finding. The facet-license claim is structurally unsupported at this cycle.
+
+# Verdict reasoning
+
+"I cannot say" passes both Q1 and Q2 cleanly. The adversarial seam — that the board-move is invisible without co-fire from adjacent facets, and that the R1 facet-license deferral cannot be fulfilled at @25 from the current graph — is a pipeline design concern rather than a dialogue-facet failure: the rubric explicitly designs for co-load ("the slip / register-shift / weighted-monument does not have to land in the surface of the utterance alone — it lands in the slot, with adjacent fired facets carrying co-load"). The citation-completeness gap is an R2 obligation that is deferred by design at R1 and is not a blocking finding at this cycle per auditor report. The line passes.
+
+# Convergence trace (orchestrator-critic input)
+
+Stage 2 seam (facet-license citation deferred at R1; @25 has no feel or narrator entry in cite-index) partially overlaps with the auditor r1 report's dialogue batch PASS but does not correspond to any named HARD or SIGNAL finding in that report. The auditor r2-verify covers batch-level compliance only; per-line facet-license resolution was not enumerated. No auditor finding directly names this gap. This is an audience-adversarial-surface-only callout; the mechanical scan did not surface it because the citation-completeness check was not re-fired per-entry at R2. Closest auditor finding: r1 CONSTRAINT § citation-completeness batch PASS (non-finding). The cape-fic-reader seam is novel and advisory for this cycle.

@@ -1,54 +1,63 @@
 facet: vibes
-episode: b01c01
+episode: b01c02
 author: showrunner
 ---
 
-# vibes — b01c01
+# rubric-carve-out — AP11 semantic-adjacency advisory, entry 11
+#
+# rubric-vibes.md (design/shoot-v2/rubric-vibes.md) §Anti-patterns AP11 (V1.1 Patch 3)
+#
+# Carve-out scope: entry 11, token "the-gap-where-wren-and-the-witnesses-should-be"
+# Carve-out rule: pre-seeded bundle carries "the-gap-where-Wren-should-be"; on-screen
+#   event adds the near-witnesses as a second element entering the same gap. Strings do
+#   not overlap (formal gate passes). Semantic adjacency acknowledged: event-frames are
+#   distinct (Wren alone vs. Wren + witnesses) and downstream operators would distinguish
+#   them (NI biased toward Wren isolation vs. NI biased toward compound unpriced-residue).
+# Coverage justification: the near-witnesses are a new qualitative element not present
+#   in the pre-seeded token; refusing on semantic-adjacency grounds would lose the
+#   compound-gap signal that @8/@17 introduce.
+#
+# Per-entry annotations:
+# - vibes:11 @25: AP11 advisory — event-frame distinction: pre-seeded covers Wren-only gap;
+#     this token covers Wren-and-witnesses compound gap from on-screen near-witness events.
 
-# OFF-SCREEN / WORLD-BUILD LICENSED (no proto-line anchor)
+# ── E1: First deployment — insects close lane-mouths (@5) ────────────────────
 
-1 loc:flea-bottom + penitential-grey: [stone-before-lime, tallow-smoke-permanent, rain-smell-absorbed-into-walls, beauty-not-available-at-this-altitude] | licensed-by: world-build:KL-stone-tallow-atmosphere, world-build:penitential-grey-key
+1 @5 episode + first-deployment-routing-mode: [routing-without-contact, first-deployment-constraint-intact, the-lane-that-closes-as-tool-not-command] | licensed-by: proto:5, world-build:prohibition-first-test
 
-2 loc:flea-bottom + gallows-calendar: [feast-and-shortage-and-levy, the-rhythm-that-is-the-law, no-comfort-without-a-cost-attached, smallfolk-time-as-a-sequence-of-impositions] | licensed-by: world-build:KL-smallfolk-social-physics, world-build:gallows-calendar-key
+2 @5 actor:taylor-hebert-kl-122ac ++ override-architecture-residue: [the-constraint-tested-not-broken, rhyme-with-prior-architecture-made-visible-in-action] | licensed-by: proto:5, world-build:override-architecture-residue-card
 
-3 loc:flea-bottom + smallfolk-substrate: [population-density-as-location-character, every-surface-occupied, the-ward-is-also-the-people-in-it, substrate-legible-through-density-patterns] | licensed-by: world-build:KL-smallfolk-social-physics, world-build:flea-bottom-geography
+3 @5 loc:flea-bottom + operational-substrate: [lanes-as-routing-medium, alley-mouth-as-gate, insect-density-map-of-the-district, alleys-that-close-and-open-on-the-insects] | licensed-by: proto:5, world-build:flea-bottom-insect-ecology
 
-4 episode + operating-rule-intact: [prohibition-active-and-unchallenged, chapter-closes-with-the-rule-standing, baseline-before-the-first-exception, the-intact-form] | licensed-by: world-build:chapter-goal, world-build:b01c01-chunk
+4 @5 episode + first-deployment: [prohibition-tested-in-scene, routing-not-override-confirmed, the-constraint-holds-at-cost] | licensed-by: proto:5, world-build:chapter-goal-prohibition-first-test
 
-5 episode + prohibition-load-bearing: [rule-is-not-background-it-is-weight, dormancy-requires-ongoing-enforcement, the-central-discipline-named, capability-held-by-choice-not-absence] | licensed-by: world-build:b01c01-substance-delta, world-build:capability-dormant-rank-3
+# ── E2: Wren cleared via route, crystallizes as observer (@6, @15) ───────────
 
-6 series + the-atonement-that-is-the-repetition: [the-structural-irony-of-the-series, good-act-and-harm-enabled-are-the-same-act, the-ledger-completes-with-the-same-entry, atoning-by-repeating-the-architecture] | licensed-by: world-build:series-chunk, world-build:tragic-causal-key
+5 @6 actor:wren-stitch-maker-flea-bottom-ward ++ observation: [walked-through-the-cleared-lane, anomaly-perceived-without-vocabulary, the-witnessed-effect-not-the-witnessed-act] | licensed-by: proto:6, proto:15
 
-# ON-SCREEN LICENSED (proto-line anchored)
+6 @15 actor:wren-stitch-maker-flea-bottom-ward ++ trust: [trust-holds-after-direct-encounter, the-architecture-seen-face-to-face, the-watching-confirmed-as-safe-in-the-moment-of-testing] | licensed-by: proto:15, world-build:social-tether-magnitude-2-pivot
 
-7 @1 loc:flea-bottom + stone-and-tallow: [rough-threshold-surface, first-texture-received, the-physical-fact-of-the-district, nothing-decorative-in-the-material] | licensed-by: proto:1, world-build:KL-sensory-vocabulary
+7 @15 actor:taylor-hebert-kl-122ac ++ wren: [the-witness-who-walked-the-routed-lane, the-crystallization-that-makes-unpriced-concrete, wren-layer-from-theoretical-to-operational] | licensed-by: proto:6, proto:15, world-build:social-tether-wren-layer
 
-8 @2 loc:flea-bottom + vouching-physics: [anonymous-coin-for-space, no-claim-purchased, settlement-without-debt, transaction-as-the-only-entry-form] | licensed-by: proto:2, world-build:KL-social-physics-122ac
+# ── E3: Near-witnesses carry vocabulary gap (@8, @17) ────────────────────────
 
-9 @4 actor:coll-net-mender-flea-bottom ++ non-interpretive: [anomaly-received-without-naming, registers-the-stranger-without-classifying-the-stranger] | licensed-by: proto:4, world-build:coll-card
+8 @8 loc:flea-bottom + witness-vocabulary-gap: [the-social-fabric-that-registered-without-naming, anomaly-absorbed-into-district-memory, the-departure-that-carries-no-account] | licensed-by: proto:8, proto:17, world-build:cond-westerosi-witness-vocabulary
 
-10 @4 actor:coll-net-mender-flea-bottom ++ stationary-observation: [range-confirmed-one-street, anomaly-departures-registered-at-series-open] | licensed-by: proto:4, proto:5
+9 @17 episode + unpriced-witnesses: [two-faces-that-crossed-the-lane, no-vocabulary-for-what-they-saw, the-gap-the-ledger-cannot-reach] | licensed-by: proto:8, proto:17, world-build:cond-cost-bearer-unpriced-residue
 
-11 @5 actor:coll-net-mender-flea-bottom ++ never-names: [not-naming-is-the-courtesy, return-to-work-while-the-read-continues] | licensed-by: proto:5, world-build:cond-westerosi-witness-vocabulary
+# ── E4: Coll's not-naming enacted in a glance (@12) ─────────────────────────
 
-12 @9 actor:taylor-hebert-kl-122ac ++ override-architecture-residue: [held-below-deployment-by-discipline] | licensed-by: proto:9, world-build:capability-dormant-rank-3
+10 @12 actor:coll-net-mender-flea-bottom ++ never-names: [enacted-in-a-glance-not-speech, the-function-demonstrated-not-declared, present-through-scene-A-residue-into-scene-B] | licensed-by: proto:12, world-build:never-names-structural-differentiation
 
-13 @15 actor:taylor-hebert-kl-122ac ++ insects: [passive-fill-not-deployment, the-not-deploying-of-what-is-present] | licensed-by: proto:15, world-build:capability-dormant-rank-3
+# ── E5: Ledger opened and closed with unpriced residue (@22-@29) ─────────────
+# AP11 advisory on entry 11: see rubric-carve-out preamble above.
 
-14 @15 loc:flea-bottom ++ smallfolk-substrate: [insect-legible-density, population-readable-through-what-lives-in-the-walls] | licensed-by: proto:15, world-build:override-architecture-residue-122ac
+11 @25 actor:taylor-hebert-kl-122ac ++ ledger: [the-accounting-that-cannot-close, the-strike-through-is-not-deletion, the-gap-where-wren-and-the-witnesses-should-be] | licensed-by: proto:24, proto:25, proto:29
 
-15 @18 loc:flea-bottom ++ gallows-calendar: [watch-rotation-as-district-rhythm, the-enforcement-beat-in-the-smallfolk-calendar] | licensed-by: proto:18, world-build:KL-smallfolk-social-physics
+12 @29 actor:wren-stitch-maker-flea-bottom-ward ++ un-priced: [the-ledger-entry-that-gets-struck, present-in-the-gap-not-on-the-page, the-error-made-concrete-by-accounting] | licensed-by: proto:24, proto:25, proto:29
 
-16 @19 actor:taylor-hebert-kl-122ac ++ ledger: [accounting-runs-under-watch-pressure, eyes-held-while-the-ledger-continues] | licensed-by: proto:19, world-build:cold-utilitarian-key
+# ── E7: Speech exchange actualizes Wren-layer (@19-@20) ─────────────────────
 
-17 @22 actor:wren-stitch-maker-flea-bottom-ward ++ observation: [entrance-as-inventory, the-scene-taken-in-before-the-step-is-completed] | licensed-by: proto:22, world-build:wren-card
+13 @19 actor:wren-stitch-maker-flea-bottom-ward ++ silence: [the-one-moment-speech-replaces-silence, the-break-that-proves-the-silence-is-chosen, voice-used-once-in-the-scene-that-uses-insects] | licensed-by: proto:19, proto:20
 
-18 @23 actor:wren-stitch-maker-flea-bottom-ward ++ silence: [first-question-seeds-the-silence, the-opening-that-becomes-the-pattern] | licensed-by: proto:23, world-build:wren-card
-
-19 @24 actor:taylor-hebert-kl-122ac ++ ledger: [child-registered-before-categorized, the-first-assessment-before-the-gap-opens] | licensed-by: proto:24, world-build:cold-utilitarian-key
-
-20 @25 actor:taylor-hebert-kl-122ac ++ atonement: [rule-intact-at-first-contact-with-cost-bearer, prohibition-holds-through-the-child-question] | licensed-by: proto:25, proto:27, world-build:b01c01-chunk
-
-21 @27 actor:wren-stitch-maker-flea-bottom-ward ++ un-priced: [not-entered-at-first-meeting, the-gap-in-the-ledger-begins-here] | licensed-by: proto:27, world-build:relational-anchor-status-rank-3
-
-22 @29 actor:taylor-hebert-kl-122ac ++ atonement: [return-to-needle-after-child, discipline-re-grounded-in-the-work] | licensed-by: proto:29, world-build:b01c01-substance-delta
+14 @20 actor:taylor-hebert-kl-122ac ++ wren-layer-actualization: [speech-exchange-as-the-first-actualized-wren-layer, the-moment-the-un-priced-speaks-back] | licensed-by: proto:19, proto:20, world-build:earning-collapse-three-mistakes

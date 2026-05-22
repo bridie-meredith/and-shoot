@@ -2,69 +2,53 @@
 reviewer: worm-canon-pedant
 facet: vibes
 cycle: 1
-episode: b01-c01
-date: 2026-05-20
-verdict: accept
+episode: b01c02
+date: 2026-05-21
+verdict: revise
 ---
 
 # Verdict reasoning
 
-Running the canon checks in sequence. The vibe layer has two classes of concern for this reviewer: power mechanics fidelity and voice-register fidelity. Neither fails.
+Running the tally. Fourteen entries. I am checking two things simultaneously: first, whether the power-mechanics encoding is accurate for Taylor in this AU context; second, whether the keyword vocabulary is clean enough that downstream operators get the right voice register — because voice register errors in the vibe layer produce character-voice errors in the final text, and Taylor's voice register has a specific shape that does not admit casual substitution.
 
-**Power mechanics check.** The capability-dormant entries (vibes:12 at @9, vibes:13 at @15) correctly encode the suppression state. `held-below-deployment-by-discipline` at @9 is accurate to canonical Taylor — the shard runs constantly; the question is always whether she acts on the feed. `passive-fill-not-deployment` at @15 likewise: insects filling a block passively as ambient feed is canonical multitasking behavior, distinct from active deployment. The override-architecture-residue entry (vibes:12, `override-architecture-residue-residue`) is the correct name for what Khepri left: not capability removed, but an architecture pattern that persists and tries to fire. The rubric's world-build citation `world-build:capability-dormant-rank-3` is consistent with the substance contract's declared power-state.
+Entries 1-4 at @5: the four vibes on the deployment peak. Entry 1 `actor:taylor ++ insects: [routing-without-contact, first-deployment-constraint-intact, the-lane-that-closes-as-tool-not-command]`. This is a valid encoding. Taylor's power in this AU is operating under a prohibition-constraint regime, and the first deployment is routing-mode, not override. `first-deployment-constraint-intact` is a direct acknowledgment that the AU is diverging from canon in a named way — the prohibition structures what Taylor can call the deployment. That earns tolerance. `routing-without-contact` describes the specific mode accurately. I accept this as a canon-honest mechanism description for b01c02.
 
-The off-screen prohibition entries (vibes:4, vibes:5) encode the correct causal chain: the rule exists not because the capability is absent but because Taylor is enforcing it. `capability-held-by-choice-not-absence` is canon-accurate. Taylor post-Gold-Morning has full shard capability; the constraint is volitional. Marking it otherwise would be a canon error. It is not marked otherwise.
+Entry 2 `actor:taylor ++ override-architecture-residue: [the-constraint-tested-not-broken, rhyme-with-prior-architecture-made-visible-in-action]`: `override-architecture-residue` is the relevant concept — there is prior architecture (the original prohibition system, whatever built the constraint Taylor is navigating) and that architecture is now visible through the test. The encoding is correct.
 
-**Earth-Bet fence check.** Running adversarial token scan: no "khepri," "gold-morning," "gold morning," "brockton," "skitter," "scion," "end-bringer," "cauldron," "endbringer" substring in any keyword or token across the 22 entries. The fence is clean in the vibes facet. The world-build licensed-by citations use project-local glosses (`world-build:capability-dormant-rank-3`, `world-build:override-architecture-residue-122ac`, `world-build:cold-utilitarian-key`) rather than canonical Earth-Bet proper nouns, which is the correct pattern.
+Entry 3 `loc:flea-bottom + operational-substrate: [lanes-as-routing-medium, alley-mouth-as-gate, insect-density-map-of-the-district, alleys-that-close-and-open-on-the-insects]`: this is the environmental adaptation — Taylor's power has mapped the district into a routing medium. That tracks for how Taylor thinks about space (she maps environments for tactical use; this is canonical to her approach). No problem.
 
-**Voice-register check.** The cold-utilitarian-key entries (vibes:16 at @19, vibes:19 at @24) fire the ledger as the dominant cognitive register for Taylor: `accounting-runs-under-watch-pressure` and `child-registered-before-categorized`. Both are canonical Taylor — the ledger runs first, the social-categorization runs second or not at all. This is not a tribute act; it is the correct base register for post-Gold-Morning Taylor in a civilian context.
+Entry 4 `episode + first-deployment: [prohibition-tested-in-scene, routing-not-override-confirmed, the-constraint-holds-at-cost]`: clean. Episode-scoped. Confirms the AU divergence is named and bounded.
 
-One citation-schema issue investigated below. Does not break the canon mechanics.
+Now the flag-007 concern on entry 1: `routing-without-contact` applied to `actor:taylor` as a permanent sticker. The auditor correctly identifies the staleness risk. From my standpoint the specific issue is power-mechanics encoding. If Taylor's deployment architecture expands past routing-mode in b01c03+, a permanent actor-level vibe asserting `routing-without-contact` tells downstream operators that Taylor's *default* power mode is routing-without-contact. That is not Taylor's power. Taylor's power is full insect-control with tactile feedback and kinesthetic awareness. Routing is a constraint-imposed mode, not a power property. Permanently encoding it at the actor level conflates the constraint with the capability. That is the kind of quiet mechanics error that accumulates: three chapters from now, a dialogue-writer reading this vibe might write Taylor describing her power as if contact-avoidance is intrinsic rather than situationally imposed. This is not a flag; it is the auditor's flag confirmed from the power-mechanics axis.
+
+Entries 5-7 (Wren crystallization): I am checking ignorance played correctly. Wren has no vocabulary for what she saw. `anomaly-perceived-without-vocabulary` is the right encoding — Wren is a Flea Bottom ward with no frame for Earth-Bet parahumans. Entry 6 `trust-holds-after-direct-encounter, the-architecture-seen-face-to-face, the-watching-confirmed-as-safe-in-the-moment-of-testing`: this is the right kind of Wren-specific trust encoding. It is not trust given cheaply — it is trust formed by direct witness with specific evidence. Correct. Entry 7 `wren-layer-from-theoretical-to-operational`: Taylor's internal framing shifting from theoretical to operational tracks with how Taylor processes interpersonal relationships — she codes them as assets with activation conditions, and Wren's direct witness is the activation. That is canonically Taylor.
+
+Entries 8-9 (near-witnesses): clean. The vocabulary-gap tokens correctly encode that witnesses from Westeros have no schema for what they observed.
+
+Entry 10 (Coll never-names): `enacted-in-a-glance-not-speech` — structural behavioral encoding for a secondary character. No issue.
+
+Entries 11-12 (ledger unpriced residue): the cost-accounting vibe cluster. `the-accounting-that-cannot-close` — this is Taylor's psychological register: she tracks costs, runs ledgers, identifies gaps. The encoding is canonically correct for her character type. `present-in-the-gap-not-on-the-page` is good word-algebra. Accept.
+
+Entry 13 (Wren silence breaking): `voice-used-once-in-the-scene-that-uses-insects` — the constraint noted. Fine.
+
+Entry 14. This is the stop. `actor:taylor-hebert-kl-122ac ++ earning-collapse: [speech-exchange-as-the-first-actualized-wren-layer, the-moment-the-un-priced-speaks-back]`.
+
+The keyword is `earning-collapse`. My concern is voice-register, and it is specific: Taylor's character register in canon is not deflationary at crystallization moments. When Taylor makes a connection real — when a relationship she has been observing from distance becomes operational — her interior register is typically precise acknowledgment followed by recalibration, not collapse. "Collapse" as a keyword biases the dialogue-writer fork toward a register where Taylor is losing something at @20. But the token bundle says `the-moment-the-un-priced-speaks-back` — this is Wren activating as an element of Taylor's cost ledger, not Taylor losing ground. The keyword points the voice in the wrong direction. If the dialogue-writer reads `earning-collapse` and writes @20 in a diminishment register, Taylor's two lines — "The watch came through. They did not stop. That is all it was." and "Go home, Wren. The street is quiet now." — will come out as retreat instead of as the specific redirection Taylor uses when she is absorbing something she cannot fully process in the moment. That redirection is canonically Taylor; deflation is not. The auditor named this flag-006. The audience confirms it as a revise trigger on voice-register grounds.
+
+Two entries. Both require correction. The rest of the file is mechanics-honest and voice-clean.
 
 ---
 
 # Entry-level callouts
 
-**[vibes:10] @4 — dual-anchor: lic-out or range-fire?**
+`[vibes:14] @20 — keyword "earning-collapse" biases dialogue-writer toward deflationary Taylor voice; but the token bundle and the actual beat (@20 speech lines) require redirection-and-absorption register, which is Taylor's canonical mode at crystallization moments, not collapse; voice register that contradicts established character personality is a flag in my tally; rename keyword to something that encodes actualization, not loss`
 
-Auditor flagged as S-007 and S-014. Vibes:10 declared anchor @4; cite-index `lic-out=[proto:4, proto:5]`; bones file has `[vibes:10]` at @5 in addition to @4.
-
-Canon-mechanics read: `stationary-observation: [range-confirmed-one-street, anomaly-departures-registered-at-series-open]`. Coll watching Taylor from one street away, registering her as anomaly, is a single sustained observation across two consecutive beats (@4 lifts eyes, @5 works net while continuing to watch). The two-beat span is not a canon error — a person can maintain passive observation across multiple beats. The question is purely citation-schema: does the vibes system permit a single entry to be licensed by two consecutive proto-lines via its `licensed-by` field?
-
-The rubric says `licensed-by` is multi-source and each source independently justifies the vibe-event. Under that reading, proto:4 AND proto:5 both justify the `stationary-observation` vibe, and the single anchor at @4 marks where the vibe first fires. Proto:5 is cited as evidence that the observation was sustained, not as a second fire-point. This is the lic-out-forward-licensing reading, and it is consistent with the rubric's multi-source licensed-by allowance.
-
-The alternative reading — that the bones file's `[vibes:10]` at @5 represents a schema breach because a vibe entry should only decorate the single proto-line matching its declared anchor — would require a stricter interpretation of the anchor field than the rubric explicitly states. The rubric defines `[@<proto-line-id>]` as "required when the vibe is licensed by an on-screen beat" and says "omitted when licensed by off-screen / pre-episode / inter-episode reflective context." It does not explicitly bar the proto-lines file from citing a vibe-entry across more than one bone.
-
-Verdict: lic-out forward-licensing is the more defensible interpretation. The transparency gap (no annotation in vibes.md distinguishing primary-anchor from lic-out source) is an authoring-quality concern. Not a canon error; not a power-mechanics error. Consistent with auditor's advisory framing ("citation-tool artifact").
-
-**[vibes:20] @25 — dual-anchor: lic-out with register-coherence check**
-
-Auditor flagged as S-006. Vibes:20 declared anchor @25; cite-index `lic-out=[proto:25, proto:27]`; bones file has `[vibes:20]` at @27.
-
-Canon-mechanics read: `atonement: [rule-intact-at-first-contact-with-cost-bearer, prohibition-holds-through-the-child-question]`. This vibe fires at @25 (Taylor speaks to Wren, the rule holds). Proto:27 (Taylor holds the eyes) cites vibes:20 in the bones file. The question: does it make mechanical sense for the atonement-holds vibe to be cited at the gaze-hold beat?
-
-Canon-Taylor's closing-beat register when she encounters a future cost-bearer and does not act: she would not feel atonement. She would feel the ledger running and the prohibition holding. The distinction is: `rule-intact-at-first-contact-with-cost-bearer` is an accurate description of the vibe-state at @25 (word-exchange, the prohibition holds through the direct contact); at @27 (gaze-hold, return to needle) the active register is the ledger-gap-begins (vibes:21). Vibes:20 being cited at @27 adds the atonement-register to a beat that canon-Taylor's psychology would more cleanly assign to the un-priced ledger entry.
-
-This is a register-precision concern, not a canon violation. Taylor can simultaneously hold "rule intact" and "ledger gap opens" at the same beat — they are not contradictory states. The dual-citation at @27 is not a mechanics error; it is a layering choice that slightly dilutes the clean "gap opens" signal at the closing beat.
-
-Verdict: lic-out forward-licensing, same reasoning as vibes:10. The register concern is real but does not constitute a canon error — both vibes fire at psychologically coherent registers for canon-Taylor. Auditor S-006 correctly identifies the citation-schema seam; this reviewer confirms no power-mechanics or voice-register violation underlies it.
-
-**[vibes:12] — licensed-by citation: world-build:capability-dormant-rank-3 vs world-build:override-architecture-residue-122ac**
-
-Vibes:12 cites `world-build:capability-dormant-rank-3` as its license source. Vibes:14 (loc:flea-bottom smallfolk-substrate entry) also cites `world-build:override-architecture-residue-122ac`. The prior cycle verdict noted that `override-architecture-residue-122ac` as a gloss does not resolve to a renamed warehouse card (the condition card slug remains `cond-khepri-residue-122ac` per prior r2-verify). This is a licensed-by resolution gap in the world-build citation layer.
-
-Under the rubric, `world-build:<gloss>` is a named canon/world-build context reference, not a card-path pointer. It is not required to match a warehouse card slug verbatim; it identifies the design-document or world-build context by a human-readable gloss. Whether `override-architecture-residue-122ac` resolves to a specific warehouse card is a build-tooling question, not a canon-accuracy question. The vibe entry's content — `[passive-fill-not-deployment, the-not-deploying-of-what-is-present]` — is canon-accurate regardless of whether the gloss matches a card slug.
-
-Verdict: soft flag on licensed-by resolution gap, same as prior cycle. Not a canon mechanics error; the gloss-to-card slug mismatch is an authoring-quality item. Does not escalate.
+`[vibes:1] @5 — "routing-without-contact" on actor:taylor as permanent sticker conflates a constraint-imposed deployment mode with a power property; Taylor's power is not defined by contact-avoidance; permanently encoding this at actor level will bias power-mechanics descriptions downstream as the constraint evolves; the AU divergence is named (first-deployment-constraint-intact) but the permanence target is wrong; move to episode scope`
 
 ---
 
 # Convergence trace
 
-- **[vibes:10] dual-anchor** → overlaps auditor S-007 (DEDUP SIGNAL) and S-014 (CONSTRAINT advisory). This reviewer's canon-mechanics check finds no power mechanics error underlying the citation-schema seam. Lic-out reading is the correct interpretation. Consistent with auditor advisory framing.
+`[vibes:14] @20` — overlaps auditor flag-006 (TASTE-FLAG, TF-001): keyword `earning-collapse` ambiguous; auditor notes deflationary stitch risk. Worm-pedant attack names the specific canon mechanism: Taylor's voice register at crystallization-and-redirect beats is not deflationary. The dialogue-writer fork is the downstream operator at risk; the @20 speech lines are the specific surface where the misdirection would materialize. Auditor frames as advisory; pedant reads as direct voice-register flag.
 
-- **[vibes:20] dual-anchor** → overlaps auditor S-006 (DEDUP SIGNAL). This reviewer adds register-precision dimension: the atonement-holds signal at @27 is psychologically coherent but slightly dilutes the clean gap-opens close. No canon violation. Consistent with auditor SIGNAL classification; no escalation.
-
-- **[vibes:12/14] world-build gloss resolution gap** → overlaps prior cycle verdict callout on the same entry. No new auditor finding in r1 or r2 covering this angle. Remains an authoring-quality item.
-
-- **No vibes-specific HARD findings in r1 or r2 auditor reports.** The Earth-Bet fence is clean; power mechanics are correct throughout; voice register is canon-consistent. The two DEDUP SIGNALs (S-006, S-007) are citation-schema concerns that this reviewer has verified do not conceal any canon mechanics error. Facet accepts.
+`[vibes:1] @5` — overlaps auditor flag-007 (PILE-UP-REVIEW, PU-001): `routing-without-contact` on actor:taylor (permanent target) may go stale as deployment architecture evolves. Pedant attack names the mechanics layer: actor-level vibes describe capability properties; constraint-imposed deployment modes are not capability properties; the conflation is the fault, not merely the staleness. Target correction (actor -> episode) resolves both the staleness and the mechanics-encoding error.

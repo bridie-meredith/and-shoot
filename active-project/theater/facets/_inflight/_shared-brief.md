@@ -1,81 +1,64 @@
-# /and-facets b01-c01 — R1 shared brief (Phase 1)
+# /and-facets b01c02 — R1 shared author brief
 
-## Chapter context
+chapter: b01c02  (file-form: b01-c02)
+narrator / POV: taylor-hebert-kl-122ac  (first-person; series single-POV)
+cast: taylor-hebert-kl-122ac, wren-stitch-maker-flea-bottom-ward, coll-net-mender-flea-bottom
+locations: flea-bottom  → card at cards/locations/loc-flea-bottom.card.md
+goal: the prohibition in its first real test — deployed against a genuine threat, technically
+  held, and already bent enough that the accounting cannot close cleanly.
+dramatic_shape: hinge (first-flex hinge — prohibition pivots theoretical-intact → road-tested-strained)
 
-- **slug:** b01c01 (file form: b01-c01)
-- **POV narrator:** taylor-hebert-kl-122ac (first-person, sole POV)
-- **goal:** the operating rule in its intact form, the ward it will fail to protect, and the child who will pay the price of its failure.
-- **cast:**
-  - taylor-hebert-kl-122ac (POV; Khepri-residue insect-network, cold-utilitarian; rank 3 capability, rank 7 moral-legibility, rank 1 position, rank 2 social-tether; Earth-Bet hard-fence applies — NO parahuman jargon)
-  - coll-net-mender-flea-bottom (Flea Bottom net-mender, ~50s, stationary block-visibility; non-interpretive; never names what he sees)
-  - wren-stitch-maker-flea-bottom-ward (seamstress-family ward, age 11; observer-training habit; not-yet-significant in this chapter)
-- **locations:** flea-bottom (single; card at `cards/locations/loc-flea-bottom.card.md`)
-- **prior_episode:** none (b01c01 is chapter 1 of 18)
-- **aggregate_range:** 1-29 (27 bones; flat-IDs 10, 21 reserved as time-skip blanks; scenes A @1-9, B @11-20, C @22-29)
+## Inputs
 
-## Bones file (read for SVOs)
+- BASE proto-lines (the file you copy + annotate): active-project/theater/proto-lines/b01-c02.md
+  27 numbered SVO lines (bones 1-29, time-skip blanks @11 @21 absent).
+- bones file (reference): active-project/theater/bones/b01-c02.md
+- scene-map: active-project/theater/facets/scene-map-b01-c02.md
+  scene-A @1-@10 rise-peak-settle, peak @5; scene-B @12-@20 rise-peak-residue, peak @15;
+  scene-C @22-@29 build-verdict-close, peaks @25 @28.
 
-`active-project/theater/bones/b01-c01.md`
+## Per-chapter substance_delta (pressure-signal substitute — tensometer dropped)
 
-## Scene-map (upstream-emitted)
+Chapter axes: capability (s01 first-deployment, rank 3→4, hinge bone @5); social-tether
+(s01 0.1 + s02 0.3 + s03 0.1 = 0.5; Wren-layer + Coll-witness crystallize, pivot @15);
+knowledge (sweep-pattern observation s01 → witness-residue s02 → categorical-structural s03;
++0.5; the observational→categorical type-distinction MUST be preserved, not homogenised).
+axes_held: capability held @13/@18/@28; moral-framework held @28 (dual-discipline body hold).
 
-`active-project/theater/facets/scene-map-b01-c01.md`
-- scene-A @1-@9 | flea-bottom | day-of-arrival | rhythm-shape: flat-low
-- scene-B @11-@20 | flea-bottom | working-day | rhythm-shape: flat-low
-- scene-C @22-@29 | flea-bottom | third-or-fourth-day | rhythm-shape: flat-low
-
-All three scenes are `flat-low`. No `peak-bones` declared. This is a baseline-establishment chapter (chapter 1 of 18 in a hinge-shape tragedy; the dramatic_shape is `hinge` but the substance_delta is intentionally near-zero on most axes — capability stays dormant at rank 3, knowledge rises from 3 to 3.5).
-
-## Per-chapter substance_delta (from showrunner memory)
-
-- **capability:** direction null, target_delta_magnitude 0 (dormant; passive insect-sense held below deployment threshold; the chapter's central discipline)
-- **knowledge:** direction up, target_delta_magnitude 0.5 (Flea Bottom geography passively read; 3 → 3.5)
-
-All other axes at-rest for this chapter. The chapter is the prohibition in its intact form, the geometry mapped passively, and Wren introduced at chapter's edge.
-
-## Vibe-cloud keys (read for tonal bias)
-
-- cold-utilitarian interiority — the ledger runs even when the reader wishes it would not
-- penitential-grey King's Landing — stone, tallow, rain-smell; beauty available only to people not paying attention
-- tragic-causal — every good act auditable backward to the harm it enabled
-- contempt-without-refusal — clarity as its own trap
-- smallfolk-gallows register permitted; no comic relief
-- no spectacle of magic — only its residue and others' fear of it
-- the atonement that is the repetition
-- earned collapse, not surprise
+scene-A: pressed-labor watch sweep; Taylor reads column-formation through insects; deployment
+  hinge @5 (insects close lane-mouths — non-control routing, NOT override); Wren clears via
+  @6; two near-witnesses register the anomaly (@8 cost-residue); held-feet @9 boundary marker.
+scene-B: aftermath; Coll's not-naming enacted in a glance (@12); Taylor's attention to
+  alley-mouth; Wren crystallizes as observer @15 (magnitude-2 social-tether pivot); witnesses
+  depart carrying a vocabulary-gap (@17); speech exchange @19-@20 actualizes the Wren-layer.
+scene-C: night accounting; lamp/ledger; methodological-decision entry written @24, struck @25,
+  categorical distinction underlined @26; pen set @25/@27 as the gap registers; hand held @28
+  against extension (capability + moral-framework both held); ledger closed @29 with the
+  unpriced residue (two witnesses + Wren-not-priced) intact — cl-unpriced-cost-bearer seed.
 
 ## Hard fences (absolute)
 
-- **Earth-Bet proper-noun fence:** no parahuman jargon (Khepri, Brockton Bay, Skitter, Cauldron, PRT, Endbringer, Gold Morning, Scion, Lung, Bakuda, Tattletale, etc.) — case-insensitive substring scan; slug components count
-- **POV:** Taylor first-person only; no head-hop
-- **Magic:** dormant on KL court layer; rumor-permitted; not narrator-confirmed; insect-sense held at passive (no deployment in this chapter)
-- **Theme never spoken on-page**
+- Earth-Bet proper-noun fence: NO parahuman jargon (Skitter, Khepri, Brockton Bay, PRT,
+  Endbringer, Gold Morning, Scion, cape, parahuman, etc.) in ANY text field. Inner-monologue
+  references to the prior life stay oblique ("the thing she had done", "before").
+- POV: Taylor first-person only.
+- Westerosi register: 122 AC King's Landing, Flea Bottom. Currency gold dragon/silver
+  stag/copper. No anachronism, no modern/HR/procedural English.
 
-## R1 discipline (universal)
+## Output conventions
 
-- Read ONLY your rubric + the inputs your rubric names + the base bones/proto-lines file
-- DO NOT read other R1 facet outputs (R1 stays blind)
-- DO NOT mutate the base proto-lines file
-- Copy base proto-lines to your `_inflight/proto-lines-<prefix>.md` and append `[<prefix>:<id>]` to every bone you decorated
-- Body integrity: SVO bodies in your `_inflight/` copy MUST be byte-identical to the base
-- Per-file cull is your last act (delete-only; no rewrites)
-- Tens-reads are DROPPED under URI-SUBSTANCE-OVERHAUL — where pressure-signal is needed, consult per-chapter `substance_delta` (above) and scene-map `rhythm-shape` instead
+- Each author writes (i) its facet file under active-project/theater/facets/ and (ii) an
+  annotated copy of the base proto-lines under active-project/theater/facets/_inflight/.
+- Annotated copy: copy base proto-lines BYTE-IDENTICAL, append ONLY ` [<prefix>:<id>]`
+  citation tokens to lines you decorate. SVO bodies must not change (merge tool aborts on
+  body divergence).
+- Citation prefixes: loc-state, narrator, sensory, state, mem, feel, meta, vibes, exposition.
+  Dialogue authors append `[<character-slug>:<id>]` (the slug IS the citation, no namespace).
+- Facet entry format: per schemas/facet.schema.md. IDs monotonic from 1 per facet file.
+- Per-file cull is your last act: delete-only, one pass.
+- R1 is BLIND: read only your rubric + the inputs your rubric names + base proto-lines +
+  cards/state/vibes as your rubric directs. Do NOT read other facet rubrics or other R1
+  facet outputs.
 
-## Citation prefix table
-
-- location-state → `loc-state`
-- narrator-interest → `narrator`
-- sensory → `sensory`
-- state-updates → `state`
-- memory → `mem`
-- feeling → `feel`
-- metaphor → `meta`
-- vibes → `vibes`
-- exposition → `exposition`
-- dialogue → `<character-slug>` (NOT `dialogue:`; the citation IS the character slug)
-
-## Output paths
-
-- Facet file: `active-project/theater/facets/<facet>.md` (or `feeling-<slug>.md` / `state-updates-<env|slug>.md` / `exposition-b01-c01.md`)
-- Annotated proto-lines copy: `active-project/theater/facets/_inflight/proto-lines-<prefix>.md`
-- Dialogue file: `active-project/theater/dialogue/<character-slug>.md` (per `schemas/dialogue.schema.md`)
+Return to orchestrator: facet file path, _inflight copy path, entry count, cull count,
+any flagged seams.

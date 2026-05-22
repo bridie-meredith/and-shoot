@@ -1,45 +1,37 @@
-# bones — b01c01 (R2 fork) — dialogue / taylor-hebert-kl-122ac
-# source: active-project/theater/proto-lines/b01-c01.md (locked R1 graph)
-# scope: Taylor speaking-beat anchor (@25 only)
-# R2 mutations: 0 KEEP-all (taylor-hebert-kl-122ac:1 @25 KEEP)
-# citation cascade: no tokens stripped; no tokens added
+# bones — b01c02
 
-episode: b01c01
+episode: b01c02
 narrator: taylor-hebert-kl-122ac
-goal: the operating rule in its intact form, the ward it will fail to protect, and the child who will pay the price of its failure.
-cast: taylor-hebert-kl-122ac, coll-net-mender-flea-bottom, wren-stitch-maker-flea-bottom-ward
+goal: the prohibition in its first real test — deployed against a genuine threat, technically held, and already bent enough that the accounting cannot close cleanly.
+cast: taylor-hebert-kl-122ac, wren-stitch-maker-flea-bottom-ward, coll-net-mender-flea-bottom
 locations: flea-bottom
-prior_episode: none
+prior_episode: b01c01
 aggregate_range: 1-29
 
-1 taylor-hebert-kl-122ac enters the corner-room
-2 taylor-hebert-kl-122ac pays the building-keeper
-3 taylor-hebert-kl-122ac crosses the yard
-4 coll-net-mender-flea-bottom lifts the eyes
-5 coll-net-mender-flea-bottom works the net
-6 taylor-hebert-kl-122ac circles the block
-7 taylor-hebert-kl-122ac drops the pack
-8 coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac
+1 the insects fill the lane [state:1]
+2 the water-carrier enters the doorway [exposition:2] [loc-state:1]
+3 taylor-hebert-kl-122ac lifts the eyes
+4 taylor-hebert-kl-122ac faces the alley-mouth [loc-state:2] [narrator:1]
+5 the insects close the lane-mouths [exposition:4] [loc-state:3] [narrator:2] [state:2] [state:11] [vibes:1] [vibes:2] [vibes:3] [vibes:4]
+6 wren-stitch-maker-flea-bottom-ward enters the alley [loc-state:4] [state:14] [vibes:5]
+7 the city-watch passes the hook [loc-state:5] [sensory:1]
+8 the near witness faces the alley-mouth [exposition:3] [loc-state:6] [mem:1] [narrator:3] [vibes:8]
 9 taylor-hebert-kl-122ac holds the feet
-
-10
-11 taylor-hebert-kl-122ac lifts the basket
-12 coll-net-mender-flea-bottom pulls the net
-13 taylor-hebert-kl-122ac threads the needle
-14 the needle crosses the mesh
-15 the insects fill the block
-16 the walls cool
-17 the boots strike the cobbles
-18 the city-watch passes the hook
-19 taylor-hebert-kl-122ac holds the eyes
-20 coll-net-mender-flea-bottom folds the net
-
-21
-22 wren-stitch-maker-flea-bottom-ward enters the street
-23 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
-24 taylor-hebert-kl-122ac lifts the eyes
-25 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward [taylor-hebert-kl-122ac:1]
-26 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
-27 taylor-hebert-kl-122ac holds the eyes
-28 wren-stitch-maker-flea-bottom-ward crosses the street
-29 taylor-hebert-kl-122ac lifts the needle
+10 coll-net-mender-flea-bottom works the net
+12 coll-net-mender-flea-bottom lifts the eyes [feel:1] [loc-state:7] [state:10] [vibes:10]
+13 coll-net-mender-flea-bottom pulls the net
+14 taylor-hebert-kl-122ac faces the alley-mouth [loc-state:8]
+15 wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac [feel:3] [loc-state:9] [narrator:4] [state:12] [state:15] [vibes:6] [vibes:7]
+16 taylor-hebert-kl-122ac lifts the eyes
+17 the near witness crosses the lane [loc-state:10] [vibes:9]
+18 taylor-hebert-kl-122ac threads the needle
+19 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac [vibes:13] [wren-stitch-maker-flea-bottom-ward:1]
+20 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward [taylor-hebert-kl-122ac:1] [taylor-hebert-kl-122ac:2] [vibes:14]
+22 taylor-hebert-kl-122ac lights the lamp [loc-state:11] [sensory:2] [state:3] [state:4]
+23 taylor-hebert-kl-122ac opens the ledger [exposition:5] [state:5]
+24 taylor-hebert-kl-122ac writes the line
+25 taylor-hebert-kl-122ac strikes the line [mem:2] [narrator:5] [state:6] [vibes:11]
+26 taylor-hebert-kl-122ac underlines the entry [state:7] [state:13]
+27 taylor-hebert-kl-122ac sets the pen [state:8]
+28 taylor-hebert-kl-122ac holds the hand [feel:2] [meta:1] [narrator:6]
+29 taylor-hebert-kl-122ac closes the ledger [state:9] [vibes:12]

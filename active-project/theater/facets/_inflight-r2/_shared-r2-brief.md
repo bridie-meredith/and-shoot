@@ -1,76 +1,61 @@
-# /and-facets b01-c01 — R2 shared brief (Phase 3)
+# /and-facets b01c02 — R2 shared judge brief
 
-## Chapter context
+chapter: b01c02  (file-form: b01-c02)
+cite_index_sha: 7fb82f0caa9c055b998f3e5ea32bda516cd64f170329d49a22f8fb11a39d08f6
+  → every R2 decision-shard MUST carry `cite_index_hash: 7fb82f0caa9c055b998f3e5ea32bda516cd64f170329d49a22f8fb11a39d08f6`
+    in its frontmatter (URI-FACETS-R2-STALE-SHARD / A6).
 
-(Same as R1; refer to R1 shared brief at `_inflight/_shared-brief.md` for full context.)
+## What R2 is
 
-- Slug: b01c01 / file form b01-c01
-- POV: taylor-hebert-kl-122ac
-- Cast: taylor-hebert-kl-122ac, coll-net-mender-flea-bottom, wren-stitch-maker-flea-bottom-ward
-- Locations: flea-bottom
-- 27 bones; flat-IDs 1-29 with gaps at 10, 21 (time-skip blanks); scenes A @1-9, B @11-20, C @22-29 (all flat-low rhythm-shape)
+R2 is GRAPH-AWARE judging. Every judge sees the full locked R1 graph:
+- All facet files: active-project/theater/facets/{location-state,interest-narrator,sensory,
+  state-updates,memory,feeling,metaphor,vibes,exposition-b01-c02}.md
+- Per-character dialogue files: active-project/theater/dialogue/{taylor-hebert-kl-122ac,
+  wren-stitch-maker-flea-bottom-ward}.md
+- Cite-index: active-project/theater/facets/_cite-index.md
+- Canonical proto-lines: active-project/theater/proto-lines/b01-c02.md
+- Scene-map: active-project/theater/facets/scene-map-b01-c02.md
+- Locked rubric: design/shoot-v2/r2-judge-tuning/B-locked-rubric.md (gates G1-G5 as taste-questions)
+- Arbiter protocol: design/shoot-v2/r2-judge-tuning/C-arbiter-protocol.md (T1, T4)
 
-## R2 dispatch discipline
+## Discipline
 
-- **Graph-aware:** every judge sees the locked R1 graph (all facet files + per-character dialogue files + cite-index). None sees the others' R2 mutations.
-- **Self-scoped deletion only:** a judge may DELETE only its own facet's entries. Cross-facet deletion belongs to Phase 5 audit.
-- **Citation cascade on the author's proto-lines copy:** when you delete `<own>:<id>`, strip `[<own>:<id>]` from every proto-line in your `_inflight-r2/` copy.
-- **Add-cap ≤5 per judge per run** (metaphor ≤3 per refuse-by-default; exposition ≤3; dialogue ≤3 per character).
-- **No reordering of existing IDs.** Deleted IDs leave gaps. New entries get next-available IDs per facet.
-- **Provisional-anchor binding:** R1 metaphor / vibes entries with descriptive `licensed-by:` hints get resolved here. A judge whose hint cannot resolve cleanly against the locked graph deletes the entry as unanchorable.
-- **Locked-rubric + arbiter discipline:** carry `design/shoot-v2/r2-judge-tuning/B-locked-rubric.md` and `C-arbiter-protocol.md`; §Form re-test before every KEEP / DELETE / REVISE verdict.
-- **Position-gate (G5) on adds:** every add carries a position-category note (approach-zone / peak / trailing-edge / post-peak / quiet-beat / denouement). All three scenes are `flat-low` / quiet-beat in this chapter.
+- Single-pass per judge. No mid-layer rebuild. You see the locked R1 graph; you do NOT
+  see other judges' R2 mutations.
+- Self-scoped deletion only — you may delete only your own facet's entries. Deleted IDs
+  leave gaps (no renumbering). New entries take next-available IDs.
+- Add-cap ≤5 per judge (metaphor ≤3; dialogue ≤3 per character). Cap-refusals logged in shard.
+- §Form re-test before every KEEP / DELETE / REVISE verdict (operationalises G1).
+- Position-gate (G5) on adds: every add carries a position-category note
+  (approach-zone / peak / trailing-edge / post-peak / quiet-beat / denouement).
+- Provisional-anchor binding: R1 metaphor/vibes/dialogue entries with descriptive or
+  `DEFERRED-TO-R2` `licensed-by:` / facet-license hints get resolved here against the
+  locked graph. A hint that cannot resolve cleanly → DELETE the entry as unanchorable.
 
-## R1 graph inputs (every judge reads)
+## R1 seams flagged for R2 attention
 
-- `active-project/theater/proto-lines/b01-c01.md` (canonical merged proto-lines; post-Phase 2)
-- `active-project/theater/facets/_cite-index.md`
-- `active-project/theater/facets/location-state.md`
-- `active-project/theater/facets/interest-narrator.md`
-- `active-project/theater/facets/sensory.md`
-- `active-project/theater/facets/state-updates.md` (consolidated; per-source slices preserved as `# source:` markers)
-- `active-project/theater/facets/memory.md`
-- `active-project/theater/facets/feeling.md` (consolidated)
-- `active-project/theater/facets/metaphor.md`
-- `active-project/theater/facets/vibes.md`
-- `active-project/theater/facets/exposition-b01-c01.md`
-- `active-project/theater/dialogue/taylor-hebert-kl-122ac.md`
-- `active-project/theater/dialogue/coll-net-mender-flea-bottom.md`
-- `active-project/theater/dialogue/wren-stitch-maker-flea-bottom-ward.md`
-- `active-project/theater/facets/scene-map-b01-c01.md`
+- metaphor meta:1 @28 cites `feeling:PROVISIONAL` — resolve against feel:2 @28 (exists).
+- dialogue entries carry `facet-licenses: [DEFERRED-TO-R2]` — resolve each to a concrete
+  `<facet>:<id> @<anchor>` in the locked graph or SIGNAL per rubric.
+- memory mem:2 @25 is a peak-bone fire (scene-C peak-bones @25 @28) — contested; the R1
+  author defends it under the displacement-clamp exception. R2.2 adjudicates explicitly.
+- exposition entries 2 (water-carrier @2) and 3 (near-witness @8) — thin definite-description
+  individuals; R2.5 checks whether loc-state / narrator-interest lens facets already carry them.
+- vibes culled the @28 atonement entry — scene-C @28 carries no vibe; note only.
 
-## Output paths
+## Output per judge
 
-- Mutated facet file: in-place at `active-project/theater/facets/<facet>.md` (or per-character slice; or `theater/dialogue/<character>.md` for dialogue)
-- Annotated proto-lines copy: `active-project/theater/facets/_inflight-r2/proto-lines-<facet>.md` (or `-<character>.md` for per-character forks)
-- Decision-shard: `active-project/staff/<facet>/r2-decision-shard.md` (or `r2-decision-shard-<character>.md` for per-character)
+- Mutated facet file in place (deletes leave gaps; adds take next ID).
+- Decision-shard at staff/<facet>/r2-decision-shard.md (feeling: r2-decision-shard-<slug>.md;
+  dialogue: r2-decision-shard-<character>.md) — frontmatter MUST carry the cite_index_hash
+  above, plus per-shard `f-r2-counts:` and verdict justifications (name concrete entry
+  content, quote phrases — avoid rubric-label-only justifications, which trip arbiter T1).
+- Annotated proto-lines copy under active-project/theater/facets/_inflight-r2/ reflecting
+  your citation cascades + adds:
+    proto-lines-<facet>.md           (single-file facets)
+    proto-lines-feel-<character-slug>.md      (feeling per-character)
+    proto-lines-dialogue-<character-slug>.md  (dialogue per-character — character-slug, NOT card-slug)
+  Copy the canonical proto-lines BYTE-IDENTICAL; append/strip only your own facet-prefix tokens.
 
-## Position-gate context (all three scenes are flat-low)
-
-Every bone in this chapter is in a `flat-low` / quiet-beat scene. No peak-bones, no peak-shadow-bones. Approach-zone reasoning applies throughout. The chapter is baseline-establishment; intentional near-zero substance_delta on most axes.
-
-## Known R1 seams (surfaced by R1 authors; verify in R2)
-
-- **AP8 fault in vibes v21** — token `the-gap-in-the-ledger-begins-here` parses as a sentence (finite verb). Vibes R1 author flagged; not re-judged in R2 (vibes-judging deferred), but auditor will flag at Phase 5. R2 metaphor / dialogue / memory judges may treat this as a known seam.
-- **Cross-facet sound-baseline gap at @17** — sensory refused @17 (boots strike the cobbles) because no loc-state entry establishes a sound baseline; loc-state @17 names a discrete Watch-footfall sensory event. R2 may want to retire one or the other (this is a contradiction — Phase 5 audit territory).
-- **Feeling cross-facet @27** — Taylor's `feel:2` (hand-stops) and Wren's `feel:3` (eyes-stay) co-cite at @27; check for NI/dialogue redundancy.
-- **State-updates-taylor** field-extensions (7) — many `actor:taylor.*` extension-fields used (lodging-payment-status, knowledge.flea-bottom-geometry, knowledge.coll-pattern, inventory.pack, inventory.needle, social-state.with-coll, social-state.with-wren). Auditor will validate under Reality axis; if R2 judges find any duplicating NI / feeling / memory at the same anchor, surface as DEDUP candidates for Phase 5.
-- **Memory mem:2 target-reference** — free-text gloss, no monument-card resolution (`monument-flea-bottom-hook-coercive-geometry` margit-referral candidate). SIGNAL only.
-- **Exposition sparsity 29.6%** — above 1-5% band. Cold-start chapter override declared by R1 author (preamble + context + first-mentions for chapter 1 of 18).
-
-## Hard fences (absolute; same as R1)
-
-- No Earth-Bet proper nouns (case-insensitive substring scan; slug components count)
-- POV: Taylor first-person only
-- Magic dormant on KL court layer
-- Theme never spoken on-page
-- 122 AC Westerosi register
-
-## §Form re-test (operationalisation of G1, every KEEP / DELETE / REVISE)
-
-Before each verdict, re-read the entry text and ask:
-1. Is the SVO body intact in the proto-line cite?
-2. Does the entry's content satisfy its facet's rubric ACCEPT signature, not REJECT?
-3. Does the entry's cross-facet co-citations resolve in the locked graph?
-
-If any answer is no, the entry fails Form and gets DELETE or REVISE.
+Honor the Earth-Bet hard fence absolutely. Return: mutated facet path, shard path,
+_inflight-r2 copy path, K/D/A counts, cap-refusals, flagged seams.

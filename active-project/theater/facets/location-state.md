@@ -1,14 +1,16 @@
 facet: location-state
-episode: b01c01
+episode: b01c02
 author: studio
 ---
 
-1 @1 flea-bottom | morning | rain-recent | threshold-open | the door-shadow across the entry marks where the building-keeper stands | light: threshold-dim, interior-corner dim under overcast morning backlight
-2 @3 flea-bottom | morning | rain-recent | mud-recent, yard-open | the far-yard drain-channel at the distance where Coll works the net
-# loc-state:3 DELETED (F-007, audience-gate cycle-1 2026-05-20 — anchor verb "lifts the basket" at @11 is dexterity-in-place, not transitional;
-# continuity-from 2 token requires scene-map fusion-eligible-runs verification that fails because @11 is in scene-B,
-# different scene from @3 where loc-state:2 fires; ID gap 3 intentional; loc-state:3 also removed from canonical
-# proto-lines @11 and from exposition:4 sources — exposition:4 already deleted per F-002. NI:3 @12 carries
-# scene-orient interior register for scene-B; no scene-bridge needed.)
-4 @18 flea-bottom | afternoon | overcast | cobbles, hook-corner-visible | the Hook corner alley-mouth where the Watch rounds into view
-5 @22 flea-bottom | afternoon | overcast | street-open | the alley-mouth step where Wren comes into the street
+1 @2 flea-bottom | watch-press-day morning | none | lane-entry, doorway-mouth open | the doorway threshold: alley-width just wide enough for one body at a time, the street behind it already in watch-press movement
+2 @4 flea-bottom | watch-press-day morning | none | lane-mouth open, alley-interior visible | the alley-mouth framing from Taylor's position: the lane-depth visible to the turn, no cover past the threshold | conditions: ambient-sound baseline before column arrival — ordinary morning street noise and shoe-leather on cobbles; no column-echo yet; this is the watch-press-alley-ambient state (anchor for sensory:1 old-state)
+3 @5 flea-bottom | watch-press-day morning | none | lane-mouths sealed by insect-mass | the lane-mouth exits: insect-density drawn across each opening, column-approach route cut off
+4 @6 flea-bottom | watch-press-day morning | none | lane-mouths sealed, new entrant in alley | Wren's figure against the far-end threshold, the sealed lane-mouth directly behind her
+5 @7 flea-bottom | watch-press-day morning | none | watch column at the Hook | the Hook corner: the specific point where the Watch column turns and loses sightline into the sealed alley
+6 @8 flea-bottom | watch-press-day morning | none | lane-mouths sealed, watch past the Hook | the alley-mouth from the near-witness position: lane sealed, no gap to read through, nothing but blocked wall
+7 @12 flea-bottom | watch-press-day morning, aftermath | none | lane-mouths clearing, watch gone past | the alley interior after the sweep: lane-openings returning to their ordinary unblocked width
+8 @14 flea-bottom | watch-press-day morning, aftermath | none | lane-mouths open, coll present | the alley-mouth Taylor faces: open again, the Watch column well past, ordinary foot-traffic re-establishing
+9 @15 flea-bottom | watch-press-day morning, aftermath | none | open alley between taylor and wren | the open alley-width between them: no obstruction, faces mutually readable at three paces
+10 @17 flea-bottom | watch-press-day morning, aftermath | none | lane-mouth open, near-witness departing | the lane-width at the crossing point: enough room for the near-witness to pass without turning sideways
+11 @22 flea-bottom | night | none | lodging interior, lamp newly lit | the lamp: single flame, tight radius, the ledger surface lit and the rest of the room falling off into dark | conditions: interior-darkness baseline before @22 — lodging-interior unlit, night scene-open (time-skip blank @21); this is the unlit-lodging-interior old-state (anchor for sensory:2 old-state at @23)

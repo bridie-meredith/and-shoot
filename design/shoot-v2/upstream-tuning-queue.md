@@ -538,3 +538,43 @@ Cross-cutting: exemption stacking is FAIL. Honesty discipline: exemption claims 
 - **Resolution (2026-05-11):** Both. R1 hard cap raised from 60 to 100 in `staff/orchestrator-critic/card.md` §"Runtime budgets" — absorbs URI-026's worst-case load (~12 dispatches) plus a modest URI-037 rescue allowance (~25 dispatches). R1.5 added: post-cap rescue dispatches count toward R1 (no budget exemption); if a rescue would push past 100, the orchestrator must surface to user before invoking with an explicit `R1-breach-authorized-by-user-at-<timestamp>` note. Card v1.3 versioning entry documents the recalibration.
 - **Cost:** small (card text). Future-run budget planning has a more honest ceiling.
 
+
+---
+
+## URI-FACETS-B01C02-PROCESS-GAPS — process gaps surfaced during /and-facets b01c02 (2026-05-22)
+
+Three tooling/command-drift gaps surfaced during the b01c02 run. One was fixed in the
+command body during the run; the other two are queued here.
+
+1. **build_cite_index.py slice-consolidation citation-token remap — NOT IMPLEMENTED (queued).**
+   `consolidate_slices()` renumbers feeling/state-updates facet entries monotonically across
+   slices (env→coll→taylor→wren), but does NOT remap the `[<prefix>:<id>]` citation tokens
+   in the per-slice `_inflight/proto-lines-*` copies. The code comment at line ~459 ("Build
+   a remap table so we can rewrite stale-cites later if needed") describes intent never
+   implemented. Result: slice authors number per-slice from 1, and the merged proto-lines
+   carry colliding `[state:1]` / `[feel:1]` tokens that resolve to the wrong consolidated
+   entry. In b01c02 this was worked around by hand-remapping the `_inflight` copies before
+   each merge. **Fix:** implement the remap table in `consolidate_slices()` and apply it to
+   the `_inflight*/proto-lines-<sliceprefix>-<slug>.md` tokens during the union. **Cost:**
+   moderate (one function in build_cite_index.py).
+
+2. **/and-facets Phase 1 dialogue `_inflight` filename convention drifts from build_cite_index.py
+   (queued).** The Phase 1 dialogue-author spec says the annotated copy is
+   `_inflight/proto-lines-dialogue-<card-slug>.md`, but `_facet_prefix_from_inflight_name()`
+   derives the citation prefix from the filename tail after `dialogue-` and the dialogue
+   citation token is the CHARACTER slug (per schemas/dialogue.schema.md). With a card-slug
+   filename the tool derives the wrong prefix and the dialogue tokens are dropped from the
+   union. The tool docstring already says `proto-lines-dialogue-<character-slug>.md`. **Fix:**
+   correct the Phase 1 dialogue-author spec in `.claude/commands/and-facets.md` to
+   `<character-slug>`. **Cost:** small (command text).
+
+3. **Cross-chapter facet-namespace collision — FIXED IN COMMAND (URI-FACETS-CROSS-CHAPTER-ARCHIVE).**
+   The facet pipeline writes to chapter-unnamespaced shared paths; a prior chapter's faceted
+   output collides with a new chapter's run. Codified into `/and-facets` Phase 0 step 5 as an
+   auto-archive of prior-chapter facet output. No further action.
+
+Minor (not queued, noted only): the fixer's cycle-2 feeling fix edited the consolidated
+`feeling.md` but not the per-character slice files; a cite-index rebuild would have reverted
+it. Synced by hand during the run. Subsumed by gap 1 (if the tool is fixed to treat slices
+as the source of truth and rebuild consolidated files deterministically, fixer edits should
+target slices, not consolidated — a brief-discipline note for the fixer).

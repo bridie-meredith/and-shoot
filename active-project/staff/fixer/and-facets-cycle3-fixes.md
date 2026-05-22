@@ -1,113 +1,104 @@
-# and-facets b01c01 — cycle-3 fix report
-date: 2026-05-20
-cycle: 3 (last cycle before cap = 3)
-fixer-session: facets-b01c01-cycle3
+# /and-facets b01c02 — Phase 5b cycle-3 fix log
+date: 2026-05-22
+session: facets-b01c02-cycle3-remediation
+fixer: claude-sonnet-4-6
+callouts-received: 2 (Callout A — interest-narrator narrator:6 AP-10; Callout B — sensory:2 anchor-invalid)
+
+---
+
+## Callout A — interest-narrator narrator:6 @28
+
+disposition: FIXED-DIRECT
+
+### What was wrong
+
+narrator:6 @28 contained the text: "the hand stays where it is — the reach is cleared, the body could close it, and the not-closing is the only line tonight she is sure of."
+
+The clause "the not-closing IS the only line" is an AP-10 inverted-predicate ("the X is the Y") at sentence-final position. narrator:2 @5 already consumed the single licensed AP-10 instance (cap ≤1); narrator:6 was the second instance, a cap violation per rubric §Anti-patterns 10.
+
+### Fix applied
+
+narrator:6 @28 recast to: "the hand stays where it is — the reach is cleared, the body could close it — and tonight she is certain only of the not-closing."
+
+Content elements preserved:
+- (a) physical observation: "the hand stays where it is" — unchanged
+- (b) capability confirmation: "the reach is cleared, the body could close it" — unchanged
+- (c) restraint-as-only-certainty: expressed as "she is certain only of the not-closing" — states the condition directly; terminates on the content noun "not-closing"; no X-into-Y collapse; no trailing elective preposition
+
+AP-10 instance 2 eliminated. File-scope cap now 1 (narrator:2 only).
+
+### Files touched
+
+- active-project/theater/facets/interest-narrator.md — line 11, narrator:6 body recast
+
+### Proto-line citation moved
+
+No. narrator:6 token remains at @28.
+
+---
+
+## Callout B — sensory:2 anchor-invalid
+
+disposition: DELETED-CYCLE-3-NO-ADD-BUDGET
+
+### Proto-line walk — evaluation of non-sound non-fire candidates
+
+Per the callout instructions, a genuine walk of b01c02 bones for non-sound sensory inflection beats before confirming deletion. Evaluation criteria: disambiguation gate pass (not action-verb self-charged), anchored old-state, real perceptible inflection beat (not settled-state), full rubric compliance.
+
+The episode's only non-sound perceptual inflection is the dark-to-lit transition at @22 ("lights the lamp"). The structural problem is architectural: the inflection beat IS the self-charged verb. "Lights" names the light event. There is no proxy anchor before the inflection (pre-transition darkness is a sustained baseline, not an inflection beat) and no proxy anchor at the inflection itself that is not self-charged. Every bone after @22 is inside the settled lamp-lit state.
+
+Other bone candidates surveyed:
+
+- @19 ("wren speaks to taylor"): speech event, no perceptible non-sound modality inflection
+- @20 ("taylor speaks to wren"): speech event, same
+- @25 ("strikes the line"): physical manipulation, no temperature/smell/touch/light inflection; line-striking is not a sensory-modality event
+- @26 ("underlines the entry"), @27 ("sets the pen"), @28 ("holds the hand"), @29 ("closes the ledger"): all inside the settled lamp-lit state; accounting gestures; no non-sound sensory inflection
+- @6 ("wren enters the alley"): arrival event — possible visual but the visual delta (Wren's figure appearing at threshold) is already carried by loc-state:4 @6 as a location-state entry (sustained-state domain); no sensory-inflection not already owned by loc-state
+- @1 through @5: alley exterior, morning; insect-mass deployment is a visual event but the rubric's action-verb self-charge test applies — "the insects fill the lane" / "the insects close the lane-mouths" are the inflection verbs; the same architectural trap applies (fill, close = action-verb self-charge on the visual inflection)
+
+Conclusion: no genuine non-sound sensory inflection exists in b01c02 that satisfies the full rubric. Relocation is not viable. Per A3, no ADD budget remains. Deletion is the correct resolution.
+
+### Deletion record
+
+sensory:2 deleted. Canonical deletion marker written to sensory.md:
+
+`# DELETED sensory:2 @23 - no valid anchor (inflection beat @22 is action-verb self-charge; post-beats settled-state); cycle-3 A3 no-ADD-budget (cap-burn cycle 3, 2026-05-22)`
+
+### Files touched
+
+- active-project/theater/facets/sensory.md — sensory:2 entry replaced by canonical deletion marker
+- active-project/theater/proto-lines/b01-c02.md — `[sensory:2]` removed from @23 line
+- active-project/theater/facets/_cite-index.md — sensory:2 row removed; deletion note added; state:5 @23 co-citations updated (sensory:2 stripped); exposition:5 @23 co-citations updated (sensory:2 stripped); totals updated (55 → 54 entries)
+
+### Proto-line citation moved
+
+No move — citation removed entirely. `[sensory:2]` was at @23; it is now absent.
+
+### Cite-index changes
+
+- `### sensory (2 entries)` → `### sensory (1 entry)`
+- `sensory:2 @23 back=Y co=[exposition:5, state:5]` → deleted (deletion comment added)
+- `state:5 @23 co=[exposition:5, sensory:2]` → `co=[exposition:5]`
+- `exposition:5 @23 co=[sensory:2, state:5]` → `co=[state:5]`
+- totals line: 55 → 54 facet entries
+
+### Modality-floor trade-off — ACCEPTED AT CAP-BURN
+
+The deletion leaves sensory.md with 1 entry on 1 modality (sound only: sensory:1 @7). The rubric modality floor is ≥2. This is a modality-floor breach.
+
+This breach is an accepted cap-burn trade-off. The cycle-3 A3 constraint prohibits adding a new entry that fails pre-validation. No genuinely earned non-sound fire exists. Manufacturing a fire to hit the floor is explicitly prohibited by the callout and by rubric. The breach is documented and accepted; it is not chased with an ADD.
+
+The sensory facet is in a cap-burn-bound state: it holds the correct terminal form (sound-only, sensory:2 deleted, modality-floor breach documented) and is ready for cap-burn resolution or acceptance as-is.
+
+### loc-state:11 @22 conditions note
+
+loc-state:11 @22 carries a conditions note added in cycle-2 as the old-state anchor for sensory:2: "interior-darkness baseline before @22 — lodging-interior unlit, night scene-open (time-skip blank @21); this is the unlit-lodging-interior old-state (anchor for sensory:2 old-state at @23)." With sensory:2 deleted, the back-reference to sensory:2 is unreferenced. Per callout instructions, the conditions note is left in place as harmless environmental context. It accurately describes the pre-lamp state of the lodging interior and may be useful to stitcher or reader as environmental grounding. No edit made.
 
 ---
 
 ## Summary
 
-Cycle-3 addresses 2 actionable facet failures from audience-gate cycle-2. Memory is explicitly skipped per cap-burn ruling.
-
----
-
-## F-014: interest-narrator — NI-6 @27 rewrite
-
-**Finding:** dark-fantasy-reader revise verdict; NI-6 @27 rendered the name-withholding rule as a policy declaration rather than as a gap-narration cost. Anti-pattern 9 (Mask-too-perfect): zero displacement-trigger fires across 6 entries in a chapter whose declared goal is the child the chapter will fail to protect.
-
-**Minimum-change path identified by dark-fantasy-reader:** rewrite NI-6 @27 in-place toward gap-narration pattern; no new entry; no band-ceiling impact.
-
-**Change applied:**
-
-File: `active-project/theater/facets/interest-narrator.md`, entry 6 body.
-
-Before: `she will not write the name above the block, not in the feed and not on the page she keeps for herself.`
-
-After: `the threshold holds and what is on the other side stays the size she will not name.`
-
-**Criteria check:**
-- (a) Policy-declaration register eliminated: yes — "she will not write" replaced with "the threshold holds"; no rule stated
-- (b) Displacement-trigger register through refusal-to-look channel: yes — "what is on the other side stays the size she will not name" renders the gap (the child's weight not-named under the Wren proximity trigger)
-- (c) Cold-utilitarian Taylor voice: yes — declarative, no affect, pure observation of threshold-state
-- (d) Band ceiling not breached: yes — still 6/27 = 22.2%; no entry added or removed
-
-**Proto-lines impact:** none — [narrator:6] token at @27 unchanged; body edit, no cite cascade. _inflight-r2/proto-lines-narrator.md unchanged.
-
----
-
-## F-015b: location-state — loc-state:1 light-level field
-
-**Finding:** sensory-old-state-reader revise verdict; sensory:1 @3 old-state "corner-room-dim" has no explicit light-level field in loc-state:1; inference required two steps (geometry cue "door-shadow across the entry" → dim interior); flagged as moderate-revise.
-
-**Change applied:**
-
-File: `active-project/theater/facets/location-state.md`, entry 1 @1, field list extended.
-
-Added: `light: threshold-dim, interior-corner dim under overcast morning backlight`
-
-Full entry 1 now: `flea-bottom | morning | rain-recent | threshold-open | the door-shadow across the entry marks where the building-keeper stands | light: threshold-dim, interior-corner dim under overcast morning backlight`
-
-**Criteria check:**
-- Explicit light-level field present on loc-state:1: yes
-- sensory:1 @3 "corner-room-dim" traces near-verbatim to declared light field: yes ("threshold-dim" / "interior-corner dim" directly supports "corner-room-dim")
-- Lineage resolution: single-step (not two-step inference); rubric's old-state anchoring requirement met
-
-**Proto-lines impact:** none — loc-state:1 was already cited at @1; field-add is internal to the entry; no cite token change.
-
----
-
-## F-015a: sensory — sensory:3 sound entry at @17
-
-**Finding:** sensory-modality-coverage fail; file is single-modality (light only after sensory:2 @16 deletion at cycle-2 F-009); ≥1 sound entry required; @15 ("the insects fill the block") or @17 ("the boots strike the cobbles") identified as clean anchors.
-
-**Change applied:**
-
-File: `active-project/theater/facets/sensory.md`, new entry.
-
-Added: `3 @17 sound: street-quiet-of-mid-afternoon -> bootfall-on-cobbles-from-the-Hook-bend`
-
-@17 chosen: proto-line "the boots strike the cobbles" is bare (no prior sensory citation; no cite conflict). Entry body is studio-voice, ≤1 line, no narrative or moralization.
-
-ID: 3 (next-available; ID 2 gap preserved per F-009 cycle-2 deletion; no renumber per dispatch constraint).
-
-**Proto-lines updated:**
-- Canonical `active-project/theater/proto-lines/b01-c01.md` @17: added [sensory:3]
-- Created `active-project/theater/facets/_inflight-r2/proto-lines-sensory.md` with [sensory:3] at @17 (new file; no prior sensory inflight annotated copy existed)
-
-**Criteria check:**
-- ≥1 sound entry present: yes (sensory:3 @17)
-- Studio-voice: yes — field-transition format, no narrative
-- ID 2 gap preserved: yes
-- Canonical and inflight proto-lines updated: yes
-- Modality floor met: yes — light (@3) + sound (@17) = 2 modalities
-
----
-
-## Memory: SKIPPED — cap-burn
-
-**Rationale:** Memory facet has 3 revise on feel-as-spine defense (cycle-2 verdict). All three remediation paths have unacceptable costs:
-- Add NI @9: band-ceiling breach (exceeds 25% cap)
-- Delete mem:1: SHAPE-FAIL single-register (mem:3 alone cannot carry both fires)
-- Rubric authority ruling: out of scope for this run
-
-Dispatch explicitly rules: leave `active-project/theater/facets/memory.md` UNCHANGED. Orchestrator-critic verdict will document memory as cap-burned with rationale. `memory.md` is not touched.
-
----
-
-## Files modified
-
-| File | Change |
-|------|--------|
-| `active-project/theater/facets/interest-narrator.md` | NI-6 @27 body rewritten to gap-narration pattern |
-| `active-project/theater/facets/location-state.md` | loc-state:1 @1 light-level field appended |
-| `active-project/theater/facets/sensory.md` | sensory:3 @17 sound entry added (already present from prior partial session) |
-| `active-project/theater/proto-lines/b01-c01.md` | [sensory:3] added at @17 |
-| `active-project/theater/facets/_inflight-r2/proto-lines-sensory.md` | created; [sensory:3] at @17 |
-
-## Files NOT modified (per constraints)
-
-| File | Reason |
-|------|--------|
-| `active-project/theater/facets/memory.md` | cap-burn skip per dispatch |
-| `active-project/theater/facets/_inflight-r2/proto-lines-narrator.md` | NI-6 body change only; no cite cascade; [narrator:6] token unchanged |
-| `active-project/theater/facets/_inflight-r2/proto-lines-loc-state.md` | field-add internal to loc-state:1 entry; no cite token change |
+| Callout | Disposition | Files touched | Citation moved | Terminal state |
+|---------|-------------|---------------|----------------|----------------|
+| A — narrator:6 AP-10 | FIXED-DIRECT | interest-narrator.md | No | Clean pass-eligible |
+| B — sensory:2 anchor | DELETED-CYCLE-3-NO-ADD-BUDGET | sensory.md, proto-lines/b01-c02.md, _cite-index.md | Removed (not moved) | Cap-burn-bound (modality-floor breach) |

@@ -2,53 +2,33 @@
 reviewer: cape-fic-reader
 facet: state-updates
 cycle: 2
-episode: b01-c01
-date: 2026-05-20
+episode: b01c02
+date: 2026-05-21
 verdict: accept
 ---
 
 # Verdict reasoning
 
-Cycle-1 complaint was a single delivery failure: the rubric-carve-out annotation block was authored in the per-character source slice but did not propagate to the top-of-file position in the consolidated state-updates.md. The consolidated file ran straight from frontmatter close to `# source: env` with nothing between them. That meant any reader auditing the consolidated file saw 8 taylor-state entries — including knowledge.* and social-state.* class, both requiring NI co-citation per rubric — with zero on-file defense. Information chain broken exactly where downstream corruption risk is highest.
+Both cycle-1 callouts addressed. Reading the remediated file clean.
 
-Cycle-2 fixer inserted the full carve-out block between the frontmatter close (line 5) and `# source: env` (now line 39). Lines 7-38 of the current state-updates.md are the carve-out. The block covers:
+**State:10 @12 — resolved.** Cycle-1 objection was twofold: (a) the trailing comment "hard fence 1/2 honored" read like one constraint wasn't satisfied and the author moved on anyway, and (b) the new value `registered-as-anomaly` implied Coll had a model where the rubric said there should be none. The fix delivers on both. New value `glance-filed-unrepeated` is exactly the right weight — it records a single noticing without building classification. The comment now reads "Both fences confirmed honored at @12." No ambiguity. No partial-compliance claim left open. I can read this entry without stopping to ask which fence was broken.
 
-- state:11 @6 (knowledge.flea-bottom-geometry) — NI-spine present, confirmed ✓
-- state:13 @8 (social-state.with-coll) — NI-absent; defense: spoken-acknowledgment carried by dialogue:coll:1, narrator:2 @6 establishes the interiority block
-- state:16 @20 (knowledge.coll-pattern) — NI-absent; defense: day-close flat-low, NI:4 @18 carries cost register, third NI fire would breach band ceiling
-- state:17 @25 (social-state.with-wren) — NI-absent; defense: speech-act IS the delta-producer, NI:6 @27 resolves two beats later
-- state:9, :10, :12, :14, :15 — mechanical-action class, carve-out exemption applies
+**State:13 @25 — resolved.** Cycle-1 objection: `observational-sweep-pattern -> categorical-structural` is too large a knowledge upgrade for a single sweep-and-accounting event. The fix lands at `structural-first-read-provisional`. "First-read" explicitly signals this is Taylor's initial interpretation, not verified synthesis. "Provisional" signals it can be revised by subsequent evidence. This is the qualifying note I asked for — not a prior-exposure defense, but a hedging of the claim itself. The chapter earns a provisional structural read from one well-observed deployment. It does not earn categorical-structural. The distinction is real and the fix honors it.
 
-The who-knows-what-when chain is now readable before you reach any of the entries it defends. That is what was missing and that is now present. The four "accepted-with-defense" entries are named explicitly with their individual rationales. The band-ceiling collision is explained (6/27 = 22.2%, within 15-25% band; adding NI fires to satisfy mechanical state pairing would push past ceiling). The mechanic-action exemption class is stated.
+**State:12 @15 — fix confirmed (secondary check).** Cycle-1 did not flag state:12 directly, but the remediated value `recognized-observer-bond-forming` is a materially better write than `crystallized-observer-bond`. "Forming" signals ongoing process, not achieved outcome. A reader who tracks whether new characters earn their trust can accept "forming" — it acknowledges that the bond is not yet paid for.
 
-The capability-silence discipline flagged correct in Cycle 1 remains intact. No new entries on @15, @18, or @22. No deployment threshold crossed, no capability field fired. The cull notes in the taylor-hebert source section are unchanged and correct.
+**State:15 @15 — fix confirmed (secondary check).** The dark-fantasy-reader's domain, but `watching-with-dread-held-alongside-pull` reads as a politically coherent secondary-character reaction. A Flea Bottom ward's response to insect command should carry the dread note; it does now.
 
-The lonely entry at state:7 @12 (coll work-state open) still carries no co-location. I raised this in Cycle 1 as a concern that looked worse without the carve-out. With the carve-out present and explaining the file-level context, the lone work-state entry reads as what it is: an honest open to a two-entry work-cycle chain (state:7 opens at @12, state:8 closes at @20). Reality axis holds; frugality holds; the cycle-pair makes the lone opener legible. Not a blocking concern.
+Fresh pass on the full file: nothing new to flag. The oc-prop sequence (state:3-9) is mechanical bookkeeping that doesn't touch the tactical picture. The deployment entries (state:1, state:2, state:11) hold — first-deployment-in-setting, defensive use, no limits exceeded. Wren's location update (state:14) is a clean positional write. The only entries that carry real information-asymmetry weight are state:10 (Coll's noticing) and state:13 (Taylor's synthesis), and both are now correctly weighted.
 
-No new problems introduced by the Cycle-2 fix. The fix was position-only, minimum-change; entry content untouched. All Cycle-1 complaints resolved.
-
-Accept.
+File passes.
 
 # Entry-level callouts
 
-[state-updates:state:11] @6 — `actor:taylor-hebert-kl-122ac.knowledge.flea-bottom-geometry: arrival-baseline -> hook-block-route-mapped`
-Clean in Cycle 1, clean now. NI co-citation confirmed (narrator:2 @6 in cite-index). Carve-out's first coverage note makes the clean-case explicit. No issue.
-
-[state-updates:state:16] @20 — `actor:taylor-hebert-kl-122ac.knowledge.coll-pattern: unread -> day-cycle-pattern-read`
-knowledge.* field. Rubric requires NI co-citation. Defense now at file-top in the carve-out: flat-low scene-B close, NI:4 @18 carries cost register, band-ceiling collision documented. The information chain for this entry now works from the top of the deliverable. Cycle-1 complaint closed.
-
-[state-updates:state:17] @25 — `actor:taylor-hebert-kl-122ac.social-state.with-wren: unknown-ward -> spoken-once`
-social-state.* field. Rubric requires NI co-citation. Defense now at file-top: speech-act IS the delta-producer; NI:6 @27 resolves the interior register two beats later. The highest-stakes state write in the chapter has on-file justification at the point where a reader first encounters the file. Cycle-1 complaint closed.
-
-[state-updates:state:13] @8 — `actor:taylor-hebert-kl-122ac.social-state.with-coll: unobserved-block-fixture -> acknowledged-once-by-block-fixture`
-social-state.* field. Defense now at file-top: acknowledgment-beat carried by dialogue:coll:1 + state-on-bone; narrator:2 @6 establishes the interiority that this lands inside. Cycle-1 complaint closed.
+None. No surviving cycle-1 issues; no new seams identified.
 
 # Convergence trace
 
-[state-updates — file-level / fault-001] — Cycle-1: carve-out absent from consolidated file top. Cycle-2 fix: carve-out inserted at lines 7-38 between frontmatter close and `# source: env`. Position requirement satisfied. Fault-001 closed.
+- Cycle-1 [state-updates:10]: cape-fic-reader objected to ambiguous fence notation and the "registered-as-anomaly" value implying a model. Fixed by: new value `glance-filed-unrepeated` (no model implied), comment updated to confirm both fences. The auditor's CN-001/CN-002 scan (covering proper-noun fences) did not surface the fence-notation ambiguity; cape-fic-reader's callout was in the seam between mechanical constraint checking and power-mechanics claim verification. The fix closes that seam.
 
-[state-updates:state:16] @20 — Cycle-1 convergence with fault-001 criteria (b) and (c). Carve-out now names knowledge.coll-pattern in "NI-absent; defensible" subclass with explicit flat-low/band-ceiling rationale. Criteria met. Closed.
-
-[state-updates:state:17] @25 — Cycle-1 convergence with fault-001 criteria (b). social-state.with-wren named at file-top with speech-act defense. Criteria met. Closed.
-
-[state-updates:state:13] @8 — Cycle-1 convergence with fault-001 criteria (b). social-state.with-coll named at file-top with acknowledgment-block defense. Criteria met. Closed.
+- Cycle-1 [state-updates:13]: cape-fic-reader objected to the knowledge upgrade size relative to chapter evidence. Fixed by: `structural-first-read-provisional` introduces the provisional qualifier that caps the claim. Auditor's RF-001 checked form and co-citation; the substance-of-claim attack was cape-fic-reader's lane. Resolved.

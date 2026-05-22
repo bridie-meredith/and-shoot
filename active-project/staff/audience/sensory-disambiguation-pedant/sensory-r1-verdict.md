@@ -2,26 +2,27 @@
 reviewer: sensory-disambiguation-pedant
 facet: sensory
 cycle: 1
-episode: b01-c01
-date: 2026-05-20
+episode: b01c02
+date: 2026-05-21
 verdict: revise
 ---
 
 # Verdict reasoning
 
-Two entries. One clears the disambiguation gate. One does not.
+Two entries. I apply the disambiguation gate to each.
 
-sensory:1 @3 `light: corner-room-dim -> overcast-yard-diffuse` — proto-line is `taylor-hebert-kl-122ac crosses the yard`. "Crosses" is a bare locomotion verb. No charged word is present. The audience reads physical movement, not the light-register of the transition, from the proto-line alone. The flag does work the language does not: it names the modality-specific inflection (enclosed dim → open diffuse) that "crosses the yard" doesn't supply. No action-verb self-charge applies — "crosses" does not name a light event the way "opens the shutter" names one. Modality choice (light) matches the spatial transition. Gate clears. ACCEPT.
+**sensory:1 @7** — proto-line: `the city-watch passes the hook`. The verb `passes` is bare locomotion; it names position-change, not an auditory event. `city-watch` is not a charged sensory noun; the column's footfall is not in the language. The modality choice (sound) matches the natural perceptual axis of a marching watch column in a narrow alley. Q1 (audience-without-flag): without the flag the reader gets movement. With the flag, the reader gets the audible texture of the column's approach and passage. The flag adds work the language does not do. No action-verb self-charge: `passes` is locative, not a perception-naming verb in the class of `lights`, `opens`, `ignites`, `extinguishes`. Fire is disambiguation-clean. PASS.
 
-sensory:2 @16 `thermal: wall-daytime-ambient-warmth -> wall-surface-cooling` — proto-line is `the walls cool`. Stop there. "Cool" is the thermal event. This is not a bare verb; it is an action-verb self-charge: the verb's semantic content IS the sensory inflection, identical in structure to "lights the lamp" or "ignites" or "extinguishes." The flag `thermal: ... -> wall-surface-cooling` restates in delta-form exactly what "cool" already tells the audience. No disambiguation work is being done; the proto-line is not bare with respect to thermal modality — the word "cool" charges it. Firing a thermal flag on top of "the walls cool" is redundant intensity-restatement. REJECT. Cut sensory:2.
+**sensory:2 @22** — proto-line: `taylor-hebert-kl-122ac lights the lamp`. The verb is `lights`. Per the action-verb self-charge note: `lights the lamp` IS the sensory event. The verb's semantic content is the ignition act; the perceptual output — light onset — is what `lights` means in context. The audience does not need `light: unlit-lodging-interior -> lamp-lit-tight-radius` to land the light inflection; they already have it from `lights`. This is a textbook action-verb self-charge doubling. The rubric's calibration inventory names this form explicitly: "lights the lamp / opens the shutter / ignites / catches / extinguishes" — all charged. The fire is redundant. FAIL.
 
-Secondary note on sensory:1: the old-state "corner-room-dim" is an inference from loc-state:1's "door-shadow across the entry" — it names an ambient light level loc-state:1 does not explicitly declare. That question belongs to the old-state-reader specialist; I flag it as a border case but do not anchor my verdict on it. The disambiguation gate itself is the cleaner pass.
+One entry clears; one fails. File cannot pass on my axis.
 
 # Entry-level callouts
 
-[sensory:2] @16 — `the walls cool` — "cool" is the thermal event; the verb self-charges the inflection. `thermal: wall-daytime-ambient-warmth -> wall-surface-cooling` adds nothing the proto-line does not already carry. Action-verb-self-charge; charged-verb redundancy. Cut.
+`[sensory:2] @22 — "lights the lamp" is action-verb self-charged. The verb IS the light-onset; the flag doubles it. Charged-word redundancy (action-verb class). Cut.`
+
+Downstream consequence noted: if sensory:2 is cut, the file holds 1 entry on 1 modality (sound only). The modality floor (≥2) breaks. This is the modality-coverage specialist's blocking concern, not mine, but I name it here because the seam is load-bearing.
 
 # Convergence trace
 
-- [sensory:2] @16 — convergent with auditor S-008 (r1, FREQUENCY-BAND: sensory 7.4% vs ceiling 6%; breach-high). Striking sensory:2 resolves the frequency-band breach by dropping to 1 entry (3.7%), inside the band. Independently arrived at through the charged-verb gate, not the density metric.
-- [sensory:2] @16 — convergent with URI-FACETS-CYCLE-1 rubric promotion (rubric-sensory.md §1, 2026-05-19): the unanchored old-state note was promoted to HARD from prior audience-gate cycle-1 attacks on old-state quality. My charged-verb finding is an independent attack surface on the same entry, distinct from the old-state problem.
+- sensory:2 @22: no direct auditor finding in `facets-final-audit.md`. The auditor's FREQUENCY-BAND section treats the 2-entry file as advisory-only under the short-chapter floor-vs-ceiling exemption (bone_count 27 < 30, modality count = 2, floor met) and does not run per-entry disambiguation checks. The pedant's charged-word/action-verb finding is new relative to the mechanical audit. The auditor CURVE-SHAPE section confirms "Two fires, two distinct modalities (sound:1 @7; light:2 @22)" and passes on that basis — but passes file-level shape, not per-entry disambiguation. The disambiguation failure at sensory:2 is a seam the mechanical scan cannot surface; it requires reading the proto-line verb against the action-verb-self-charge rubric clause.

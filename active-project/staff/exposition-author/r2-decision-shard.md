@@ -1,63 +1,117 @@
 ---
 facet: exposition
-episode: b01c01
-layer: R2
+episode: b01c02
+layer: R2.5
+cite_index_hash: 7fb82f0caa9c055b998f3e5ea32bda516cd64f170329d49a22f8fb11a39d08f6
 f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
 ---
 
-# R2 exposition decision shard — b01c01
+# R2.5 exposition decision-shard — b01c02
 
-## Scene-open-orient re-validation (post-locked-graph)
+R2.5 judges the 5 R1 exposition entries against the now-locked R1 graph: 11 loc-state
+entries, 6 narrator-interest, 2 memory, the dialogue files, and the cite-index. The
+brief flags entries 2 (water-carrier @2) and 3 (near-witness @8) as thin
+definite-description individuals — the R1 seam. Both resolve to DELETE; the lens facets
+carry their function or the figures are non-load-bearing fixtures. Two entries reword
+(placement / word-cap / voice); two keep clean.
 
-Two scene-open candidates were live for re-check: @11 (Scene-B open) and @20 (Scene-C open). The R1 author refused both on the conditional fire-rule — (b) loc-state-silent-at-anchor and (c) NI-silent-on-time-or-place fail in both cases because lens facets carry the orientation work.
-
-Re-checking against the locked cite-index: loc-state:3 fires at @11 with "midday | corner-room-interior | working-hour noise through the wall — the alley at its loudest registered density of the day; distinct from the morning quiet of @1" — that line carries both the time-shift (morning → midday) and the place-anchor (corner-room-interior) and explicitly back-references @1's morning, doing exactly the orientation work a scene-bridge would do. An exposition scene-open-orient here would be wallpaper over a load-bearing lens entry. NI:3 at @12 adds the cognitive register (block-reading through the flies); even if loc-state were silent, NI is doing the inside-the-head orientation. (b) fails alone, and (c) corroborates.
-
-At @20, loc-state:6 fires "morning | alley-street-mouth | third or fourth day — light angle shifted earlier than the arrival morning" — again carries time (third-or-fourth-day, with the light-angle compared back to @1's arrival morning) + place (alley-street-mouth, same alley-mouth as @1). The compare-back-to-@1 register is exactly what a scene-bridge would have been doing. NI:5 at @21 covers the approach geometry. R1 refusal stands.
-
-Both refusals are correct against the locked graph. No scene-open-orient fires this chapter. The chapter relies on loc-state at-establishment + NI cognitive-register to carry scene boundaries — which is the rubric's prescribed shape ("Lens facets carry → exposition stays out").
-
-## Per-entry decisions
-
-exposition:1 @0 episode-open-preamble — Reading this cold against the locked graph, the preamble is doing the one job nothing else can do: it sets the calendar (122 AC, late Viserys, war moving under the surface), the place (King's Landing, Flea Bottom as the slum south of the three hills), the protagonist's age and provenance, and the rule she came with — "do not take control of anyone again, the way I once did, at the end of the world I came from." Every other facet on @1 (loc-state:1, NI:1, sensory:1, state:1, vibes:1-4) lands on the corner-room threshold itself; none of them touch the broader frame. Dark-fantasy-reader needs Planetos-specific time and place orientation or the chapter reads as generic medieval; cape-fic-reader has no anchor for "122 AC" as a Westeros date or Flea Bottom as a slum; worm-canon-pedant needs the once-deployed override rendered as "the prohibition" without naming Khepri, which the preamble does cleanly ("the way I once did, at the end of the world I came from"). Word count fits the ≤80 cap. Pov-frame first-person honored throughout ("I am twenty years old...", "I live in Flea Bottom...", "I came here with a rule"). Sources all resolve to cards on disk. Cold read: this is the chapter's only handle on the world the rest of the prose then operates inside.
+exposition:1 @0 prior-episode-bridge — Cold-read: this is the only thing standing at @0.
+There is no proto-line @0 prose for a lens facet to occupy — the bridge IS the @0 content,
+and the cite-index confirms it as a lonely entry (back=N). A reader joining at b01c02 has
+no anchor for "the rule," "the count," "a ledger by lamplight," or "came back into this
+body" — the whole episode is the prohibition's first test, and the test does not register
+without its terms. The bridge frames the rule as "only theory" and ends on "theory ends,"
+which is the dark-fantasy-reader's bill-not-yet-due framing done honestly. The Earth-Bet
+fence holds: "came back into this body and this city" carries the resurrection without
+naming it. 112 words, under the 120-word prior-episode-bridge cap; first-person voice
+throughout, correct for pov-frame. Nothing in the lens graph touches @0. Gap is real,
+sources resolve, no facet covers it.
 VERDICT: KEEP
 
-exposition:2 @3 first-mention-character coll — Coll appears in prose at @3 by name with no prior anchor; this is the canonical first-mention-character condition. State:6 fires at the same anchor but only registers Coll's interior baseline (block_baseline_new_faces field-extension); vibes:5 reads Coll's stationary-observation register; feeling-coll is explicitly silent ("REGISTERING-PRESENCE, not INTERPRETING; first-day contact"). None of these tell a fresh reader who Coll is — fifties, fifteen years at this corner, block fixture, speech ordered by the work in his hands. The inline-appositive render is the cheapest form; ≤30 words; voice reads as the POV's own naming of a person she's just been introduced to. All three personas converge on "yes" — none has a prior roster anchor for a named individual entering prose. Cold read: without this gloss, the reader meets "Coll" as a bare name and has to infer his place on the block from the speech-action alone, which is the canonical s01e02-carter miss the rule is designed to prevent.
-VERDICT: KEEP
+exposition:2 @2 water-carrier — Cold-read of the gap: the water-carrier enters at @2 and
+never appears again — not at @4, not in scene-B, not in scene-C. It is a figure passing
+through the doorway loc-state:1 already establishes ("the doorway threshold: alley-width
+just wide enough for one body at a time, the street behind it already in watch-press
+movement"). The compound noun "water-carrier" is its own definition — it states the trade
+in the name. The R1 gloss, "a Flea Bottom smallfolk who hauls water by the bucket to sell
+for coppers," restates what the noun already carries; it does not orient, it pads. The
+rubric's cull-pass directive is exact here: DROP entries glossing terms that appear once
+and aren't structurally load-bearing. The dark-fantasy-reader license claims the figure
+"reads as set dressing" without a gloss — but the water-carrier IS set dressing; it is
+morning-street texture, not a person the plot will touch. Glossing a fixture promotes it
+to a character the reader then waits to matter, and the wait is never paid. The gap the
+R1 author saw was the first-mention-character rule firing mechanically on a definite
+description; the rule's own exclusion logic (load-bearing test) refuses it.
+VERDICT: DELETE (cascade 1)
 
-exposition:3 @15 first-mention-term the-Watch — "the city-watch passes the hook" lands at @15. NI:4 at the same anchor reads the encounter cognitively ("the cost of being legible is what she counts, not the patrol's count of her") — that is interior register, not institutional gloss. Loc-state:5 references "the Watch column" by name but does no glossing. Sensory:3 marks the audio shift (hook-street-ambient → watch-column-passing). No lens facet tells the reader what the Watch IS — that it's the city's standing gold-cloaked patrol, hundreds-strong, with Flea Bottom passes on a readable schedule. Dark-fantasy-reader needs the Westerosi specificity (gold cloaks, standing patrol) or the encounter reads as generic medieval guard; cape-fic-reader and worm-canon-pedant have no Westerosi-institution anchor. Em-dash-fold is the cheapest medium-grade render that fits the institutional content; word count ~21, well under ≤30. The gloss folds mid-encounter without preamble-paragraph weight. Cold read: this is doing institutional first-mention work for an entity that will recur across the book; landing it here as a fold is the lowest-cost orientation surface.
-VERDICT: KEEP
+exposition:3 @8 near-witness — Cold-read against the lens graph: narrator:3 @8 reads
+"two faces hold the anomaly a beat too long; the watch-cost of being seen has just been
+priced to a count she did not choose." That sentence establishes the near-witness AS a
+watcher whose seeing carries a cost — which is the witness's entire function in this
+episode. mem:1 @8 ("the count of who saw was set by faces she did not pick") carries the
+same figure as cost-borne-by-the-unconsenting, in POV register. loc-state:6 @8 places the
+scene. The first-mention-character gloss would explain "the near-witness is someone who
+happened to be looking" — and the narrator lens has already said exactly that, in
+POV-frame, at the same anchor. Per rubric § Never-gloss: "NI establishing → exposition
+does NOT add." The R1 entry is redundant with narrator:3; it restates in orienting voice
+what the narrator already gives in lived voice. The lens carries; exposition stays out.
+VERDICT: DELETE (cascade 1)
 
-exposition:4 @20 first-mention-character wren — Wren appears in prose at @20 (Scene-C open) by name, no prior anchor. State:18 registers her location-change; vibes:13 reads her observation register; feeling-wren:2 at @21 reads her eyes tracking Taylor's hands. None tell a fresh reader Wren is eleven, a ward of a stitch-maker household a few doors over, kept in light work and two meals. The chapter's goal-statement names her as "the ward [the rule] will fail to protect, and the child who will pay the price of its failure" — making her cold-introduction the most load-bearing first-mention in the chapter. Inline-appositive renders at lowest cost; ≤30 words; voice reads as the POV's own naming of someone she has just been registered against. All three personas converge: no prior roster anchor. Cold read: without this gloss, the reader meets "Wren" as a bare name and has no register for the child's age, household-position, or block-economic status — all of which load the chapter's stakes.
-VERDICT: KEEP
+exposition:4 @5→@4 pressed-labor-sweep — Cold-read: the pressed-labor sweep is the
+episode's central threat — the thing the prohibition is being tested against — and no
+lens facet glosses its mechanism. narrator:2 @5 ("the lane-mouths closing is not a hand
+on anyone — routing is what the prohibition still permits her to call clean") is Taylor's
+tactical read of her own move, not an orientation to what a sweep is. loc-state:3 @5
+covers the sealed lane-mouths; vibes carry tone. None of them say "the city's hired
+watchmen sweep a poor district and conscript whoever cannot prove they are wanted
+elsewhere." Without that, the cape-fic-reader cannot register the prohibition's first
+test as a real test, and the dark-fantasy-reader gets generic menace instead of a
+feudal-urban practice with teeth. The gap is real; KEEP the content. But the R1 anchor
+@5 is wrong, and this is a G5 position call: @5 is the chapter's peak hinge (scene-map
+peak-bones: @5, protected pattern "insect-deployment commitment must not collapse") and a
+nine-facet pile-up. A 41-word parenthetical-aside dropped on the peak decelerates the
+most-protected escalation moment in the chapter — the gloss does work the scene needs,
+but at the wrong instant, where it absorbs the hinge's weight into an aside. The
+orientation has to arrive BEFORE the mechanism enacts at @5, not folded into it. @4
+("taylor faces the alley-mouth") is the approach-zone bone where Taylor first reads the
+column-formation (narrator:1: "the feed had turned the lane into a column"); a
+post-bone-clause there arms the reader for the test. Re-anchor @5 → @4; re-render
+parenthetical-aside → post-bone-clause.
+VERDICT: REVISE
 
-## R2 add candidates (CAP-3) — none fired
+exposition:5 @23 ledger — Cold-read: the ledger is a series-specific object whose first
+prose appearance is @23 ("taylor opens the ledger"), and rubric § Always-gloss names
+series-specific objects ("the log") as structural audience-gap. state:5 @23 co-locates
+but state-updates tracks the state-change, not what the object is; loc-state:11 lit the
+room; mem:2 @25 carries a callback, not a definition. The prior-episode-bridge mentions
+"a ledger by lamplight" lightly — the bridge and this first-mention work as the intended
+episode-open + first-mention pairing, the bridge naming it and @23 pinning it at first
+sight. The gap holds; KEEP the entry. Two surface faults: (1) the R1 gloss runs 33 words,
+over the ≤30 first-mention-object cap, and the overflow is a redundant trailing sentence
+"Writing the cost down is her practice" — which restates "keeps a running account"; drop
+it. (2) The R1 surface reads 3rd-person ("the book Taylor keeps... her actions") inside a
+pov-frame: first-person episode rendered as a post-bone-clause — a voice-fault the
+rubric's § Voice section names explicitly. Reworded to first-person, trimmed to 20 words:
+"the book I keep by lamplight — a running account of every cost my actions make that I
+cannot pay back." Re-gloss check clean: `ledger` on the register is this entry's own
+b01c02 write-back, not a prior episode.
+VERDICT: REVISE
 
-The R2 author scanned for adds against the locked graph at the four obvious candidate-anchors:
+PATTERN-SCAN: With water-carrier and near-witness deleted, the surviving three entries
+sit at three structurally distinct positions — @0 episode-open, @4 approach-zone threat-
+orientation, @23 scene-C object-introduction — with no repeated render-as template doing
+the same job twice and no construction echo across them. The R1 facet's flaw was not a
+pattern but a mechanical-fire habit: the first-mention-character rule fired on both thin
+definite descriptions (water-carrier, near-witness) without applying its own load-bearing
+/ lens-coverage exclusions. That is a per-entry miss, not a facet-wide formula. Nothing
+patterned remains after the cull.
 
-CAP-REFUSAL: exposition:5-candidate @0 first-mention-place "the corner-room" — the preamble at @0 + loc-state:1's at-establishment ("the alley-mouth narrows to a doorway here; the step in is the only gap between street and work-floor") together carry corner-room-as-place. Adding a first-mention-place gloss would duplicate loc-state at-establishment work. The rubric's never-gloss clause "loc-state firing at-establishment → exposition does NOT add time-of-day or location-shift" applies in spirit to place-shift as well. Refused.
+# No cap-refusals. Add-cap 3 unused — the bare proto-lines (@3, @9, @10, @13, @16, @18,
+# @24) are interior continuous-action bones the lens facets carry; none calls for an
+# exposition fire, and no lens author left an orientable register uncovered.
 
-CAP-REFUSAL: exposition:5-candidate @15 first-mention-place "the Hook" — "the Hook" appears in prose at @9 (within Scene-A's working-day fold) before its @15 first-mention as a navigation reference. Loc-state:2 establishes it ("the Hook visible through the facing side") and loc-state:5 anchors it ("the Hook's curve — visible from the corner-room's street-facing side at the angle Coll opened in @9"). The lens facets carry the place-shape; the reader infers from context that the Hook is a street-curve in the block. Adding a gloss would over-orient. Refused.
-
-CAP-REFUSAL: exposition:5-candidate @22 first-mention-term "stitch-maker" — used inside exposition:4's gloss-text ("a ward of one of the stitch-maker households a few doors over"). The compound is plain-English-decodable; it does not warrant its own gloss-entry. Refused.
-
-CAP-REFUSAL: exposition:5-candidate @0 episode-open-context "the prohibition" — already folded into the preamble ("I came here with a rule. Be useful. Do not take control of anyone again..."). Adding a second @0 entry to expand the prohibition into a separate context-paragraph would over-explain the load-bearing register the preamble is doing in its closing two sentences. Refused.
-
-## Sparsity audit
-
-4 entries / 24 in-scope proto-lines = 16.7%. Rubric band is 1-5% per episode. This is the cold-start override the R1 author flagged in their hand-off note.
-
-Audit: cold-start chapters carry structurally larger union-gap than mid-series chapters because no prior episode has glossed the recurring world-terms. b01c01 carries (a) the episode-open-preamble (mandatory cold-start; ≤80 words, single-instance), (b) three first-mention entries landing on the chapter's three named entities (Coll, the Watch, Wren) — all of which appear in prose for the first time in this chapter. The rubric's caps allow ≤12 first-mention entries per episode and ≤4 episode-open entries; this chapter uses 3 and 1 respectively, well under each cap. The 1-5% sparsity band is descriptive for typical episodes, not a hard fence — the rubric's authoritative caps are the per-scope-and-per-episode integer caps, which this chapter respects.
-
-The 4 entries earn their weight against the locked lens-facet graph. No DELETE candidate is available without leaving a cold-read gap that no other facet covers.
-
-## PATTERN-SCAN
-
-PATTERN-SCAN: Four entries, four distinct scopes (episode-open-preamble, first-mention-character × 2, first-mention-term × 1). No formulaic repetition across entries — the two first-mention-character entries (Coll, Wren) carry visibly different content shapes (Coll: age-tenure-work-register; Wren: age-household-economic-position) because the characters carry visibly different chapter-functions. The em-dash-fold at @15 sits cleanly between the two inline-appositives at @3 and @20, varying render-form by content-fit. No anti-jargon list growth in R1 cull mandated re-rendering. No same-construction-template detectable across the file. The facet, as a whole, reads as four discrete orientation surfaces each doing its own job — which is the shape a cold-start exposition facet should have.
-
-## Arbiter Summary
-
-- Total verdicts reviewed: 4 (existing entries) + 4 (add-candidates, all refused)
-- Interventions fired: 0
-- DISCIPLINE-FAIL count: 0
-- Pattern: R1 author's refusal-discipline at scene-open-orient + first-mention scope selection held up against locked-graph review without rewrite. Cold-start chapter required higher-than-typical sparsity; the at-rest evidence supports each entry against the audience-gap test without the niche-driven add motive firing. No T1 (rubric-label-heavy) or T4 (niche-driven-add) triggers caught.
+# Flagged seams for Phase 4 cite-index rebuild:
+# - glossed-terms.md carries near-witness (gloss-id 3, @8) and water-carrier (gloss-id 2,
+#   @2) lines added at R1 merge. BOTH must be struck — both entries DELETED at R2.5.
+# - pressed-labor-sweep first-mention-anchor moved @5 → @4; register line must update.
+# - Final register write-back for b01c02: pressed-labor-sweep @4, ledger @23 only.

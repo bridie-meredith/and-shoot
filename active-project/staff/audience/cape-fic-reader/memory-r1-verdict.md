@@ -2,45 +2,49 @@
 reviewer: cape-fic-reader
 facet: memory
 cycle: 1
-episode: b01-c01
-date: 2026-05-20
-verdict: revise
+episode: b01c02
+date: 2026-05-21
+verdict: accept
 ---
 
 # Verdict reasoning
 
-Two entries in this file. mem:2 @18 is fine — it is doing its job. mem:1 @9 is where I stop.
+Two fires. 7.4% density. Doubled register. I am reading these adversarially — not asking whether they are adequate but whether they pull forward.
 
-The `# defense: feel-as-spine` annotation is the thing I was specifically asked to evaluate, so I read it carefully. The claim is that feel:1 @9 is the spine of mem:1 @9 and that adding a narrator-interest entry at @9 would duplicate the interior register that feeling already holds. That is a reasonable authorial instinct. It is not a valid rubric defense.
+Pattern-hungry reading: I want to know what these entries are doing for the *information state of the episode*. Memory-flags is the licensing layer for figurative reach. If the two fires do not mark beats that change something the reader is tracking, they are inert. Let me check.
 
-The rubric's licensing-discipline section says: "Narrator-interest co-citation. Mandatory. Every memory-flag entry must have a narrator-interest fire on the same @<proto-line-id>." Mandatory. I checked the locked narrator-interest file. There is no entry at @9. The entries are at @4, @6, @15, @18, @22, and @27. The feeling facet has feel:1 at @9 — that is a different facet, authored by a different fork, doing a different job. The defense conflates two separate facets and calls one a substitute for the other. It is not. Feeling-flags register somatic enactment; narrator-interest registers the interior's spotlight and forward-pressure read. They are not interchangeable.
+**mem:1 @8.** Anchor: "the near witness faces the alley-mouth." The witness has seen the insects at work. Taylor is running the count of who saw — which she cannot control, because the witness was not a chosen participant. The displacement cue: "the count of who saw was set by faces she did not pick, the way a cost has settled on people who never agreed to carry it before."
 
-The rubric's REJECT list under licensing-discipline is explicit: "Missing narrator-interest co-citation. A fire on a beat where narrator-interest is silent. The narrator must have registered the trigger first; if she didn't, the memory-flag is firing without spine." The narrator did not register the trigger at @9. The memory-flag is firing without spine.
+This is information asymmetry working in the right direction. The witness knows something Taylor cannot take back. The unconsenting-cost pattern is the cape-fic version of collateral intel-spread: someone outside the operation now carries knowledge of what happened, and Taylor's ledger instinct fires on it even when the witness is not a threat-level asset. That is pull-forward: the reader is now tracking the witness as a loose element. The licensing fire at @8 earns the stitcher permission to render this with figurative weight — which means the stitcher can mark the witness as load-bearing in the prose. Without the fire, the witness is just a background character at @8.
 
-Second problem at mem:1: the target-reference is `cond-override-architecture-residue-122ac`. That is a condition-card slug form. The rubric requires a `monument-`-prefixed mechanism-descriptive slug or a documented margit referral. The URI-FACETS-CYCLE-1 cross-axis test is explicit: "A bare gloss text in target-reference without a margit-resolved slug fails the licensing-discipline axis." A `cond-` slug is not a monument slug. That is two licensing-discipline failures on one entry.
+Spine: narrator:3 @8 confirmed. Quiet-beat anchor: @8 is the settle-tail after the watchman passes at @7. Sound. Monument-trigger: unconsenting-cost-to-bystanders (Earth-Bet displacement on the peer-exposure pattern; institutional-observation-apparatus variant). Plausible. Description is fence-clean — no proper noun.
 
-The description itself ("the feet hold and the architecture stays the shape she will not build") is the cleanest thing in the file. The refusal-to-look construction is correct, no proper nouns, the displacement-cue shape holds. If the entry were brought into compliance on spine and slug form, the description would earn its keep.
+The one live concern is the warehouse card. `monument-cost-borne-by-the-unconsenting` is not confirmed as a card on disk. The auditor treats this as SIGNAL with a margit-referral path. Cape-fic-reader's concern is stitcher-routing: if the card does not exist, can the stitcher route the figurative license? The rubric permits a free-text gloss path (SIGNAL, not HARD) when the slug is mechanism-descriptive and the margit queue is the conservative move. The slug is mechanism-descriptive. Advisory. Does not change the verdict.
 
-mem:2 @18 passes. NI spine is present (narrator:4 at @18 in the cite-index). Scene-B flat-low, no peak-bones, quiet-beat anchor licit. "The patrol's line through the bend is older than the patrol" — no proper nouns, institutional-coercive-geometry cue, shape-without-naming. The Westerosi-monument register is the one I care about for the foreknowledge engine this story runs on, and this is the entry that fires it. The free-text gloss target-reference (`(westeros: flea-bottom-hook-as-coercive-geometry-monument)`) is a soft-path tolerance under the rubric — structurally clear, card queued implied. I note it as an advisory concern but it does not block my accept on mem:2.
+**mem:2 @25.** Anchor: "taylor-hebert-kl-122ac strikes the line." Peak-bone. Exception claimed. I am reading the exception independently.
 
-Doubled register: Earth-Bet (mem:1) and Westerosi clamp (mem:2). Both registers are nominally present. If mem:1 is culled, the file goes single-register, which is a shape failure at file level. The revision path must either cure mem:1's licensing failures or replace it with a valid Earth-Bet entry.
+The displacement-cue: "the struck line is a decision written down and then unwritten, and she has felt the weight of that kind of word before, in a tongue that outlived the hand that set it." Monument target: `monument-conquest-charter-language`.
 
----
+Exception criteria: (a) displacement-clamp construction holds — yes, "a tongue that outlived the hand that set it" is the charter-language displacement, a word that travels through historical contexts; (b) resonance-not-action argument — narrator:5 carries the peak-action (interior recognition event); the memory fires on what the action discharges, not on the action itself. Sequence is right: action → resonance.
+
+For cape-fic-reader: the struck ledger line as a rule-that-travels is a competence beat that carries load. Taylor is doing her accounting (cape-style, ledger-apparatus), and the memory fires on the *word* — the kind of word that exists in another context she is not naming. That is exactly the information-asymmetry this persona reads for: the reader is given a shape (a word with prior weight) without being given the cause (what that weight is from). Pull-reads.
+
+The auditor confirmed the peak-bone exception at R2.2 with explicit criteria. The cite-index confirms narrator:5 as spine at @25. The pile-up at @25 (5 entries) was adjudicated as peak-bone-warranted. Cape-fic-reader is satisfied.
+
+Monument-card-resolution for `monument-conquest-charter-language` is also unconfirmed — same SIGNAL as mem:1, same advisory treatment. Not blocking.
+
+File-level: scene-A fires once, scene-B zero, scene-C once. Per-scene cap clean. Both registers (Earth-Bet displacement, Westerosi clamp) represented. The sparsity is right — 25 unfired bones, the gradient is intact. The stitcher has permission at two points in the episode; everywhere else, silence. That is a usable licensing layer, not a saturated one.
+
+The file earns its keep. Accept.
 
 # Entry-level callouts
 
-**[memory:mem:1] @9 — "the feet hold and the architecture stays the shape she will not build"**
-reject: the defense substitutes feel:1 (feeling-facet) for a narrator-interest co-citation — these are different facets; narrator-interest is silent at @9; rubric licensing-discipline REJECT signature "missing narrator-interest co-citation" is triggered without ambiguity; additionally, target-reference `cond-override-architecture-residue-122ac` is a condition-card slug, not a `monument-`-prefixed mechanism-descriptive slug as URI-FACETS-CYCLE-1 requires; two licensing-discipline failures; description survives but cannot carry the entry alone
+**[mem:1 @8]** — accept. Unconsenting-cost displacement is the right cape-fic shape — collateral intel-spread to a non-participant. Quiet-beat anchor (settle-tail post-@7). Narrator:3 spine confirmed. Description fence-clean. Monument slug `monument-cost-borne-by-the-unconsenting` unconfirmed in warehouse — auditor SIGNAL, margit-referral path open. Advisory only.
 
-**[memory:mem:2] @18 — "the patrol's line through the bend is older than the patrol"**
-accept: NI spine confirmed (narrator:4 @18); scene-B flat-low, no peak-bones, quiet-beat anchor licit; displacement-cue construction holds; Westerosi-monument clamp identifiable from the cue; free-text gloss target-reference is soft-path tolerance (structurally clear), advisory but not blocking
-
----
+**[mem:2 @25]** — accept under peak-bone exception. "A tongue that outlived the hand that set it" is the charter-language displacement-cue; pull-reads as information asymmetry (shape given, cause withheld). Exception criteria met per R2.2 adjudication. Narrator:5 spine confirmed. Monument slug `monument-conquest-charter-language` unconfirmed in warehouse — same SIGNAL as mem:1. Advisory only. Note: if worm-canon-pedant objects to the unanchored monument card on the exception path, that is a valid escalation target that does not originate here.
 
 # Convergence trace
 
-**mem:1 — NI co-citation failure:** The auditor r2 verdict on F-001 ("RESOLVED") scoped only to whether the annotation block is present and parseable in the file — that is a documentation-presence check, not a substantive licensing-theory check. The auditor report states: "The defense annotation is present at the correct position and parses cleanly without disrupting the entry body." It does not adjudicate whether feel:1 can substitute for narrator-interest. The audience adversarial reading attacks exactly the seam the mechanical scan cannot: the annotation is present and the legal theory it contains is wrong. No auditor convergence on this callout — audience raises it independently.
+- [mem:1 @8]: auditor Class 4 CURVE-SHAPE: no finding (quiet-beat-licit, settle-tail). Auditor Class 8 CONSTRAINT: clean on hard-fence. Auditor Class 12 Dimension 3: narrator:3 co-citation pass. Auditor Dimension 4: monument-cost-borne-by-the-unconsenting SIGNAL (unconfirmed card, carry from R2.2 shard). No convergent fault. Cape-fic-reader and auditor fully aligned on mem:1.
 
-**mem:1 — monument-card slug failure:** URI-FACETS-CYCLE-1 was promoted to the rubric body (rubric §Cross-axis tests, monument-card resolution test). The auditor r2 did not run a slug-form check on mem:1's target-reference as a named finding — F-001's resolution criteria focused on the annotation block, not the underlying target-reference field. No auditor convergence on this callout; audience raises it independently.
-
-**mem:2 — advisory gloss:** No HARD auditor finding on mem:2's target-reference. The rubric's SIGNAL/HARD distinction places structurally clear free-text glosses at SIGNAL level. Consistent with auditor r1/r2 signal-carry-forward posture. Audience callout is advisory, consistent with signal-level treatment.
+- [mem:2 @25]: auditor pre-audit item 5 (peak-bone exception verified as formally valid under R2.2; both criteria adjudicated). Auditor Class 4 CURVE-SHAPE: exception granted, distribution acceptable. Auditor Class 12 Dimension 3: narrator:5 co-citation pass. Auditor Dimension 4: monument-conquest-charter-language SIGNAL (unconfirmed card, carry from R2.2 shard). Auditor cycle-2 delta-scan sub-question (a): @25 pile-up at 5 entries is peak-bone-warranted; all distinct jobs. Cape-fic-reader accepts all auditor findings on mem:2. No additional attack. The worm-canon-pedant may raise the card-resolution gap as a blocking condition on the exception path — that is a separate adversarial read and not within cape-fic-reader's domain.

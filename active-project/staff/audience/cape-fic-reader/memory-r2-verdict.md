@@ -2,48 +2,51 @@
 reviewer: cape-fic-reader
 facet: memory
 cycle: 2
-episode: b01-c01
-date: 2026-05-20
-verdict: revise
+episode: b01c02
+date: 2026-05-21
+verdict: accept
 ---
 
 # Verdict reasoning
 
-One of the two cycle-1 failures is fixed. The other is documented but not cured.
+Cycle-1 accept carried forward. Cycle-2 review scope: confirm that the monument-card-resolution advisory noted in R1 has been resolved, and re-attack the file with hostile eyes to ensure no seam opened during the cycle-2 fix session.
 
-The slug is now `monument-override-architecture-prohibition`. That is a `monument-` prefix, mechanism-descriptive, no Earth-Bet proper noun. URI-FACETS-CYCLE-1 passes on the target-reference field. That complaint from cycle-1 is resolved.
+The cycle-2 fix session (item-9) states that both monument cards have been authored and placed on disk. I am reading them now as a cape-fic-reader would: does the card give the stitcher something real to work with, or is it a hand-wave?
 
-The NI co-citation failure is not resolved. The rewritten defense annotation now correctly quotes the rubric: "Every memory-flag entry must have a narrator-interest fire on the same @<proto-line-id>." It acknowledges NI is silent at @9. It articulates why the author chose not to add NI — adding it would push NI density to 25.9%, breaching the 25% band ceiling. And then it states the defense relies on rubric authority's downstream ruling.
+**`monument-cost-borne-by-the-unconsenting` card — review.**
 
-That is an accurate account of the situation. It is not a valid cure for the missing spine.
+The card anchors mem:1 @8. It defines the monument family as the Earth-Bet displacement on unconsenting-cost-to-bystanders: "the accumulation of people who were near her decisions without choosing to be, who ended up carrying weight she generated." The calibration anchor is precisely b01c02 mem:1 @8 itself.
 
-I track established rules. When a hard rule is broken, I want either the rule followed or the exception formally granted. What I have here is documentation of a mandatory requirement being un-met, with a note that someone upstream is expected to rule on it. The ruling has not occurred. The rubric's REJECT signature on missing NI co-citation does not have a "carry forward pending ruling" carve-out. The mandatory requirement is mandatory now, not after the ruling arrives.
+Cape-fic-reader concern: does the card give the stitcher enough to route figurative permission, or does it merely describe the concept? The card's displacement-cue form is concrete — "faces she did not pick," "counts set by others," "the gap between what was chosen and who is paying." The stitcher now has a routing surface. The lic-in contract is clean. The card resolves.
 
-The fixer's choice makes sense as an authoring constraint decision — you cannot add NI without breaching the band ceiling, so you cannot currently bring mem:1 into compliance without either deleting it (losing the Earth-Bet register) or taking a different structural path. That is a real dilemma. But a documented dilemma is not a resolved dilemma.
+The advisory I flagged in R1 ("without the card, can the stitcher route the figurative license?") is answered: yes, now it can.
 
-The entry's description still passes. "The feet hold and the architecture stays the shape she will not build" is the correct construction — refusal-to-look, no proper noun, displacement-cue shape identifiable. The slug now resolves correctly. Both of those are correct. The spine is still absent.
+**`monument-conquest-charter-language` card — review.**
 
-mem:2 @18 unchanged. Accept. NI spine confirmed (narrator:4 @18, cite-index verified). Scene-B flat-low, no peak-bones. Westerosi-monument clamp (institutional coercive geometry as geological prior), displacement-cue construction holds. Free-text gloss target-reference is a soft advisory concern, not blocking.
+The card anchors mem:2 @25. It defines the monument family as Westerosi-clamp on institutional language that outlives its author: edicts, charters, struck decisions, provisional decrees. The monument trigger is "a formal decision inscribed, struck, or annulled."
 
-Doubled-register: the defer block correctly names the risk. If mem:1 is culled, the file goes single-register. The defer block does not resolve this; it names it as a pending problem. That is accurate. It is also still a pending problem.
+Cape-fic-reader reads this for information-asymmetry pull: does the card produce a surface the reader can feel? The cue-forms on the card — "charter language, struck decisions, edicts that travel, words that function without their authors" — are specific enough. The card's calibration anchor is b01c02 mem:2 @25 itself, which is correct (this is the first canonical deployment).
 
----
+The peak-bone exception at @25 was already accepted in R1 on the logic that the exception's clamp-construction earns the resonance-not-action. The R1 concern was whether the clamp construction was resting on an unanchored assertion. The card now anchors it. The exception stands.
+
+**Re-attack: does the cycle-2 fix session create any new seam in the memory facet?**
+
+Item-9 is the only fix that touches memory-facet territory (the monument cards themselves). The other items (1–8, 8b) touch vibes, exposition, feeling, narrator-interest, location-state, sensory, state-updates, and the proto-lines cite-index. None of these create a new dependency on the memory facet's entries.
+
+The cite-index update from item-8b (sensory:2 moved @22→@23) does not affect mem:1 or mem:2 — neither is co-cited with sensory:2. The cite-index shows mem:1 co=[loc-state:6, narrator:3, vibes:8] and mem:2 co=[narrator:5, state:6, state:13, vibes:11]. Neither co-citation set was touched in the fix session.
+
+Cape-fic-reader pattern-check: does the file still hold together as a licensing layer after the fix session? Checking: both fires are still in place (@8 and @25), both monument cards now exist on disk, both spines are intact (narrator:3 @8, narrator:5 @25), per-scene cap is clean, doubled register is present (Earth-Bet displacement + Westerosi clamp), sparsity is unchanged at 7.4% (2 of 27 bones). The gradient is intact. The stitcher has permission at two points.
+
+No new attack found. The cycle-1 advisory (monument-card-resolution) is resolved. The underlying accept verdict stands.
 
 # Entry-level callouts
 
-**[memory:mem:1] @9 — "the feet hold and the architecture stays the shape she will not build"**
-slug form: CLEARED — `monument-override-architecture-prohibition` carries correct `monument-` prefix, mechanism-descriptive, no Earth-Bet proper noun; URI-FACETS-CYCLE-1 passes
-NI co-citation: PERSISTS — narrator-interest is still silent at @9 in the locked file; the rewritten defense annotation correctly identifies the gap and correctly quotes the mandatory rubric requirement, then defers to rubric authority rather than supplying the fire; "pending ruling" is not a rubric-recognized resolution path; REJECT signature "missing narrator-interest co-citation" still triggered; description passes; slug passes; spine absent
+**[mem:1 @8]** — accept. Monument card `monument-cost-borne-by-the-unconsenting` now exists on disk (item-9). Stitcher routing surface is concrete. Cape-fic-reader R1 advisory resolved. Quiet-beat anchor, narrator:3 spine, fence-clean description: all unchanged and confirmed. Unconsenting-cost-to-bystanders displacement is the correct cape-fic shape — collateral intel-spread to a non-participant who now tracks as a loose element in the episode. No new seam.
 
-**[memory:mem:2] @18 — "the patrol's line through the bend is older than the patrol"**
-accept: NI spine confirmed (narrator:4 @18); scene-B flat-low, no peak-bones; Westerosi-monument clamp identifiable from description; free-text gloss target-reference is soft-path advisory, not blocking; unchanged from cycle-1 accept
-
----
+**[mem:2 @25]** — accept. Monument card `monument-conquest-charter-language` now exists on disk (item-9). Peak-bone exception's clamp-construction ("a tongue that outlived the hand that set it") is now anchored to a resolvable monument family. Worm-canon-pedant R1 revise trigger is extinguished: the exception is no longer asserting an unanchored monument. Narrator:5 spine, fence-clean description, resonance-not-action sequence: all unchanged and confirmed. Pull-reads: the stitcher may render the ledger-word as load-bearing, with the monument card as routing authority. No new seam.
 
 # Convergence trace
 
-**mem:1 — slug fix:** Fixer F-011 renamed the target-reference field. The cycle-1 audience callout on slug form is RESOLVED. No residual callout.
+- [mem:1 @8]: R1 auditor SIGNAL (unconfirmed warehouse card) → resolved by item-9. Cape-fic-reader R1 advisory discharged. No remaining finding. Auditor Class 8 hard-fence, Class 4 CURVE-SHAPE, Class 12 Dimension 3 spine: all unchanged from R1. Full convergence with worm-canon-pedant's R1 accept on mem:1 (confirmed on re-read: WCP accepted mem:1 in R1; the revise was solely on mem:2's unanchored exception). No new convergence gap.
 
-**mem:1 — NI co-citation:** The cycle-2 fix rewrote the defense annotation to accurately describe the gap — acknowledging NI is absent, explaining the ceiling constraint, and deferring to rubric authority. The fixer's F-011 criteria state "acknowledges gap + defers to ruling authority" as criteria-met. From the audience adversarial reading, documentation-of-gap and resolution-of-gap are different things. The annotation is now accurate; the underlying mandatory requirement remains unmet. No auditor finding addresses this distinction in cycle-2. Audience raises it as the continuing failure.
-
-**doubled-register risk:** Unchanged from cycle-1. If mem:1 is culled, the file loses its Earth-Bet entry and becomes single-register. The defer block names this correctly. No resolution until rubric authority ruling or structural fix.
+- [mem:2 @25]: R1 auditor SIGNAL (monument-conquest-charter-language unconfirmed) → resolved by item-9. Worm-canon-pedant R1 revise condition — "the exception's justification rests on an unanchored monument assertion" — is extinguished by the card's presence on disk. Cape-fic-reader R1 advisory on same slug discharged. No new attack from cape-fic-reader. Earth-Bet hard fence still passes (card slug carries no parahuman proper noun; description field clean).

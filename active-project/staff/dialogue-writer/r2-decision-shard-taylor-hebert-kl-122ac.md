@@ -1,32 +1,89 @@
 ---
 facet: dialogue
-episode: b01c01
-layer: R2
+episode: b01c02
+layer: R2.6
 character: taylor-hebert-kl-122ac
+cite_index_hash: 7fb82f0caa9c055b998f3e5ea32bda516cd64f170329d49a22f8fb11a39d08f6
 f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
 ---
 
-# R2 decision shard — taylor-hebert-kl-122ac — b01c01
+# R2.6 decision shard — taylor-hebert-kl-122ac, b01c02
 
-Taylor has one R1 entry (`:1 @25`) and the brief explicitly flags this as the speaker's only utterance with adds running cap-3 (R1 covers the speaking beat). The judge below treats the single entry on its own, then explains why @25 holds at one utterance and no other anchor opens.
+R2.6 judges Taylor's two dialogue entries against the locked R1 graph. Both sit at @20
+(`taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward`), a deliberate
+single-turn fact-then-redirect split. Scene-map protected-pattern @19-@20 forbids
+collapsing the exchange into one line, so the two-entry split is structurally required,
+not an overload — within the ≤3 per-anchor cap. Earth-Bet proper-noun scan across both
+utterances: no hits ("the watch", "the street", "Wren", "quiet" all clean). Variant
+register is correctly the adult BASE `taylor-hebert` chassis, not the eleven-year-old
+sept-ward child-mask overlay — no "ser/septon", no half-curtsy diction, no wide-eyed
+refusal; the sidecar's variant-register note holds.
 
----
+## Facet-license resolution (the DEFERRED-TO-R2 seam)
 
-dialogue:1 @25 — "I cannot say." Cold read on the three-word line holds and improves on re-read against the locked graph. The fragment ends on *say* — the verb that names the speech-act being refused — which is the base-card §Cadence trailing-load-bearing-word move executed at maximum compression: the refusal is structurally where the sentence terminates, not appended as a softener. *Cannot* is the base-card §Vocabulary §Hedges-that-are-not-hedges signature deployed in its purest form — the Westerosi listener parses "she does not know"; the line means "I will not produce an answer," and the gap between received-register and intended-register is the entire move. The uncontracted *I cannot* (not *I can't*) holds the leaf-card §Vocabulary §Refuses uncontracted-formal register without reaching for any sept-ward softener (no *ser*, no *I am sorry*, no half-curtsy address-form) — which is the scope-rule the drafts sidecar called out and held to. The held-silence-articulated-minimally pattern from base §Voice tells is enacted exactly here: the bone requires a speech-act so the silence cannot stay un-spoken, and the three-word fragment is what *just-enough-speech-to-count* looks like in this voice. Affirmative demonstration (Q1) lands on four card §-sections in the base + one in the leaf + one structural-anchor reference (the cover-stripped analogue of *I do not know, ser. Septon Aldric kept the ledger.*) and the demonstration is not generic — these are *this* line's signatures, not a generic Taylor line's. (Q2): no Earth-Bet proper noun, no anachronistic idiom (*okay/fine/sure/alright/yeah* all absent), no sept-ward institutional vocabulary on the speaker side (scope-rule held), no protective directive (*mind the wall / stay clear / go home* would enact the screen-and-route signature move the bone forbids), no em-dash + semicolon chassis. The drafts sidecar speculated `feeling-taylor:@25` and `narrator:@25` as expected R2 fold-in licenses; the locked graph does not place either at @25, but the structural payload resolves through the prior beats it depends on: `feeling-taylor:1 @23` (hand stills at her side, the turn comes one beat late — the somatic cost is paid one beat before the mouth makes the move; body bears the cost while the mouth refuses, which is the base-card affect-as-event signature operating across a two-beat span); `narrator:6 @24` (assessment finishes itself behind the eyes and the rule catches it on the way out; face, not node, is what she holds — the prior-beat NI is the interior the speech is the outside-skin of); `state-updates-taylor:10 @25` (first-class same-anchor speaker slice: `relational-anchor-status.wren: stranger -> face-not-node` — the speech-act IS the state-delta-producer, the utterance is what enacts the transition the state-file records); `mem:2 @23` (the read runs before the rule catches it; the architecture she came here to refuse arrives on its own legs and is held at the threshold of deployment -> override-architecture-prohibition — the monument-adjacency the refusal-by-precision claim rides without naming); `vibes:16 @24` (face-not-node-held-on-first-contact, the-refusal-to-complete-the-read, silence-as-the-initial-grammar-of-the-relationship) and `vibes:21 @26` (lic-out includes proto:25 — the prohibition-in-action carrying through the utterance). Citation-completeness post-R2: card-signatures axis solid (six §-sections cited in the drafts sidecar); facet-licenses axis resolves as the chain `feeling-taylor:1 @23 + narrator:6 @24 + state-updates-taylor:10 @25 + mem:2 @23 + vibes:16 @24` — load distributed across the @23-@25 hinge span as the substance contract requires (Scene-C: pattern-reading runs and is caught by rule; the @25 speech is the rule catching it audibly). G5 position read: @25 sits at the chapter's resolution-of-hinge — Scene-C peak that the chapter's `goal` clause is built around ("the child who will pay the price of its failure" arrives as Wren and the prohibition holds for the first and last clean time in the book). The utterance holds the prior peak's consequence live rather than archiving it — *I cannot say* is the prohibition speaking; the same sentence said at @20 would be administrative-filing, said here it is the rule's audible form. On-position; the add-at-close-in-archival-register failure mode B2a surfaced is not in play here because this is not an add and not archival register. DEDUP scan: no other facet at @25 carries the verbatim content of the utterance — `state-updates-taylor:10 @25` records the relational-status transition the speech produces but does not render the words; `vibes:21 @26` is downstream of the speech, not duplicative of it. Hard-fence scan: clean on the Earth-Bet proper-noun list; clean on the leaf-card forbidden-vocabulary; clean on the smallfolk register fences (no *m'lord/m'lady* misuse, no septon-vocabulary leak). The R1 chosen-mark rationale (Draft A over B and C) holds under graph-aware re-read: Draft B's *I do not know the answer to that* would have produced a content-refusal-with-implicit-invitation that the @23-@24 monument-and-NI load would not be able to ride (the somatic at @23 was the cost paid to refuse the speech-act, not the cost paid to refuse one specific item); Draft C's *Not today* would have entered Wren into the ledger as a deferred line-item, which `state-updates-taylor:10 @25` explicitly contradicts (the transition is to face-not-node, not to deferred-node). The chosen draft is the only one of the three that the locked graph's state-file would have recorded as producing the actual delta.
+Both R1 entries carry `facet-licenses: [DEFERRED-TO-R2]`, and the R1-blind sidecar
+guessed the co-load would be `feeling-taylor` / `sensory-taylor` / `narrator-interest`
+at @20. The locked graph contradicts that guess: `feeling-taylor-hebert-kl-122ac.md`
+fires its single entry at @28 only; `interest-narrator.md` fires at @4/@5/@8/@15/@25/@28
+and never at @20; `sensory.md` fires at @7 and @22 only. There is no somatic tell, no
+NI entry, and no sensory entry at @20 to cite. The hint cannot resolve to those facets.
+
+What DOES fire at @20 is `vibes:14` — `actor:taylor-hebert-kl-122ac ++ earning-collapse:
+[speech-exchange-as-the-first-actualized-wren-layer, the-moment-the-un-priced-speaks-back]`,
+licensed-by proto:19/proto:20. The cite-index confirms `vibes:14 @20 co=[taylor-hebert-kl-122ac:1,
+taylor-hebert-kl-122ac:2]`. The vibe-cloud entry IS the @20 graph carrier for the
+suppressed-affect register the sidecar's intent block describes — the un-priced
+attachment forming without warming the on-page line. Both entries resolve their
+facet-license to `vibes:14 @20`. The R1 expectation of a somatic co-load at @20 was
+unmet by the graph; that is a flagged seam (see below), not a deletion ground — Q1 is
+satisfied on card-signature alone, and the affect lands via the vibe-cloud bias.
+
+## Per-entry verdicts
+
+taylor-hebert-kl-122ac:1 @20 — "The watch came through. They did not stop. That is all
+it was." The cold read lands without unease. Three short declaratives with no connective
+that is not strictly necessary; the closing "That is all it was" does the base-card
+§Syntax move exactly — state the fact, end on the load-bearing word, let silence carry
+the rest, do not persuade. It is not merely on-card: it affirmatively demonstrates the
+persona §Signature Move "the coverage that does not declare itself" — every clause is
+literally true (the watch did come through, they did not stop) while the larger fact
+Wren has half-seen (the insects closing the lane-mouths) is withheld in what is not said,
+not in a falsehood. §Voice tells "the clinical-of-the-horrible" is present: a deployment
+just fired at the @5 hinge and the line stays flat — the gap between event and register
+is the load. Q2: no forbidden vocabulary, no softener ("honestly"/"I just" absent), no
+child-mask leak, Westerosi register held ("the watch" not "the patrol"). Read at rest
+covering @22 onward (G3), it is a complete closure speech-act, leaning on nothing
+adjacent. Facet-license resolves to vibes:14 @20.
 VERDICT: KEEP
 
----
+taylor-hebert-kl-122ac:2 @20 — "Go home, Wren. The street is quiet now." The cold read
+holds. "Go home, Wren" is the bare imperative — the directive is the move, not announced
+as a directive (base §Syntax). "The street is quiet now" is a status report, not a
+comfort — operational status-language (§Vocabulary reaches), and the doubled reading is
+the load: an all-clear to Taylor, care to Wren. The single named "Wren" is the only
+permitted softness, direct address rather than endearment, and it maps to persona
+§Relationships (Wren — "permits the attachment because refusing it would be cruelty"):
+the line covers Wren off a watch-press street without declaring the coverage. This is
+affirmative demonstration of the un-priced-attachment register the scene-C accounting
+needs held un-spent. Q2 clean: no rebuke (the rejected draft B "You should not be here"
+would have spent affect in the wrong direction and surfaced the un-priced variable);
+no anachronism; no proper-noun hit. G5 position: @20 is a scene-B peak-shadow bone on
+the trailing edge of the @15 crystallization peak (rhythm-shape rise-peak-residue) — a
+redirect that closes the actualized wren-layer exchange belongs at this trailing edge;
+it resolves rather than decelerates. Facet-license resolves to vibes:14 @20.
+VERDICT: KEEP
 
-# Adds considered (none taken)
+PATTERN-SCAN: Two entries, one anchor, one speaker — too small a surface for a
+formulaic-pattern read to bite. The pair is deliberately patterned (fact, then
+directive) and that patterning is the cadence the sidecar argues for, not a tic. The
+two utterances do not share a construction template: entry 1 is three flat declaratives
+ending on a fact; entry 2 is imperative-plus-justification. No low-frequency word
+saturates. Nothing to cut.
 
-CAP-REFUSAL: dialogue:cand-@2 — Taylor pays the door-keeper at @2 (state-updates-taylor:1 @2 records the social-tether transition: none -> paying-resident-at-corner-room). A spoken token at the rent-paying moment is conceivable (the *coin-and-word* exchange common in the smallfolk register). G2 (honest motive): the bone is *pays the door-keeper*, not *speaks to the door-keeper* — the transaction is the move; speech would over-narrate. No upstream call from the locked graph for a spoken beat here (no narrator entry at @2, no feeling entry at @2, no vibes entry at @2 — the rent-paying is silent across all ten lenses, which is the correct shape of *vouching-physics-embedded-in-the-floor* per vibes:3 @1). At-rest reading wants the transaction to carry without speech. Refuse.
-
-CAP-REFUSAL: dialogue:cand-@8 — *the insects cover the flagstones* @8. The narrator-interest fires here (`narrator:2 @8` — *the feed is loud at the flagstones and the rule says no further; useful without controlling is what the threshold means today*) and the state-update fires (`state-updates-taylor:4 @8` — *insect-sense-discipline.active-holding: ambient-passive -> threshold-held-against-density-spike*). The temptation is to add an internal-monologue-shaped fragment Taylor speaks aloud to herself as she enforces the threshold (the kind of one-word verbal tic the base card permits under the *breath out before the swarm goes* register). G5 (position): this is a Scene-A interior holding beat, not a speech-act beat — there is no second-person present at @8 to speak *to*, and Taylor's base card does not produce solo-spoken muttering (the §Voice tells *clinical-of-the-horrible* and *the inventory tell* both render the threshold-hold in interior register, not aloud). G2 (honest motive): the niche (a silent interior peak with no speech-act) does not produce wanting; the at-rest reading says the rule's enforcement is interior. Refuse.
-
-CAP-REFUSAL: dialogue:cand-additional-@25 — the per-anchor cap permits up to three utterances at @25 (interruption-of-self or beat-and-clarify). A second Taylor line at @25 — a clarifying *not what you are asking* or a softening *go on with the work* — would either rebuild the deferral Draft B was rejected for (re-opens the door Wren can re-approach), or enact the protective directive the bone explicitly forbids (*go home* / *mind the wall* / *stay clear* — screen-and-route signature). G2 (honest motive): the at-rest reading actively wants the silence after *I cannot say* to extend — the base card §Non-verbal tics *the held silence after a question* is doubled here as *the held silence after her own answer*, and the audience-pickup at @26 (Wren leaves) requires that silence to land cleanly. Two utterances would weaken the move that one utterance carries cleanly. Refuse.
-
-CAP-REFUSAL: dialogue:cand-@26 — *wren-stitch-maker-flea-bottom-ward leaves the street* @26. A parting word from Taylor (a *go safely* / *come back another day* / *good day to you*) would close Scene-C with the Westerosi-courtesy-register that a Hook-district adult might extend to a departing child. G5 (position) catches this as the episode-close pattern B2a flagged: any add at the final ~5% of the proto-line stream where another R2-touched entry closes in archival/accounting/filing register risks paired-archive seam. `vibes:18 @26` + `vibes:20 @26` + `state-updates-taylor:11 @26` all close Scene-C in *prohibition-enacted / ward-layer-deeper / face-not-node-held* register — these are register-extensions of the @25 refusal, not archival; a courtesy-parting word from Taylor at @26 would actively introduce the archival register the chapter's silence is refusing. G2 (honest motive): the at-rest reading wants the silence the @25 refusal opened to carry through the parting; the courtesy-parting would file Wren as *acknowledged-departing-acquaintance*, which contradicts the *face-not-node-held* delta the state-file records. The chapter's prohibition needs Wren to leave un-spoken-to. Refuse.
-
----
-
-PATTERN-SCAN: One entry in file — no within-character pattern surface to scan. Cross-character check against the other two dialogue files: Coll at @3 ("Needle's been waiting. Sit, then.") and Wren at @22 ("Mistress Coll teach you that knot?") share neither register, construction, nor anchor with this line. The three speakers' three utterances each work in a distinct register (Coll: subject-leading needle-as-fixture; Wren: in-trade authority-by-elder interrogative; Taylor: uncontracted Westerosi formal refusal-by-precision); the chapter's dialogue surface is three lines and each is doing different load. No formulaic repetition, no saturating low-frequency word, no shared somatic-tell pickup. Nothing patterned to flag.
+CAP-REFUSAL: none. R1 covers the only Taylor speaking beat in b01c02 (@20). The bare
+protolines (@3/@9/@10/@13/@16/@18/@24) are interior/action bones — @3 lifts the eyes,
+@9 holds the feet, @24 writes the line — none of them want a Taylor utterance the card
+and graph license; the scene-C accounting runs silent by design. No add candidates
+reached the gate. Add-cap 3 unused.
+</content>
+</invoke>

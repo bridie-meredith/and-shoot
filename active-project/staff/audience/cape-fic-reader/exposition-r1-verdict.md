@@ -2,39 +2,39 @@
 reviewer: cape-fic-reader
 facet: exposition
 cycle: 1
-episode: b01-c01
-date: 2026-05-20
-verdict: accept
+episode: b01c02
+date: 2026-05-21
+verdict: revise
 ---
 
-# Verdict Reasoning
+# Verdict reasoning
 
-Prior cycle (2026-05-19) I rejected on one specific count: exposition:4 @20 embedded "the Hook" inside Wren's first-mention-character gloss without the Hook being on the glossed-terms register yet. I tracked an open variable through the rest of the proto-lines and it never closed. That was a real gap.
+Three surviving entries. I'm the reader whose faction-coherence and who-knows-what-when wiring has the most at stake here. I read with the pattern-tracker live. Two entries pass. One has a structural problem inside its own text that I catch in real time, and the proposed ADD I raise at the bridge level is a secondary concern the author needs to respond to.
 
-The fixer cycle addressed it. Three things changed:
+**exp:1 @0 (prior-episode-bridge).** This does what a bridge needs to do. It gives me the prohibition's terms in two clauses ("never again reach into a living mind, never again make a person move"), it places the ledger ("I keep the count of every cost I cannot pay back in a ledger by lamplight"), and it fires the inciting condition in the last sentence ("theory ends"). The oblique resurrection handling — "came back into this body and this city" — is correct: I don't need the prior-life event named here; I need to know the rule and that this morning it is tested. The who-knows-what-when read is clean for a cold-join reader. First-person voice throughout. Within the 120-word cap for prior-episode-bridge. ACCEPT.
 
-1. F-004 consolidated the Hook's first-mention-place gloss (former exposition:5) into the existing watch-passage entry (exposition:6) at @18 — so the Hook is now fully glossed before Wren enters at @22.
-2. The Wren gloss text (now exposition:8 @22) no longer embeds "the Hook" as Wren's structural frame. The new text is: "a stitch-maker's ward from two buildings over, eleven years old, kept in light work and two meals for trim-work and thread-sorting, with the close-watching habit a trade like that teaches." No embedded Hook. The dependency chain resolves.
-3. F-002 and F-003 removed the scene-open-orient entries at @11 and @22 respectively. I do not miss them — the loc-state facet carries those transitions; exposition was providing redundant scaffolding.
+**exp:4 @4 (pressed-labor-sweep).** The threat mechanism is legible: "sweep a poor district and conscript whoever cannot prove they are wanted elsewhere." That's the faction logic I need to understand why the prohibition is under pressure. Re-anchor to @4 from @5 is correct — the threat must be oriented before it enacts at the peak hinge. The render-as (post-bone-clause) is appropriate weight. I have no complaint with the mechanism.
 
-What I now have is five entries: preamble and context at @0, Coll at @4, the combined Hook-and-watch at @18, Wren at @22. All five orient me. None of them leave an open variable.
+What I have a complaint with is the last sentence: "In Flea Bottom there is rarely anyone who can." The gloss spent its first clause defining the scenario generically — "a poor district" — and then names "Flea Bottom" in the concluding clause as if that name is already established for me. It isn't. The prior-episode-bridge at @0 says "this body and this city" — no district named. There is no first-mention-place entry for Flea Bottom in the b01c02 exposition graph. The bridge exists precisely because cold-join readers are in scope; this gloss then hands those same cold-join readers an unoriented proper noun inside the orientation clause itself. The rubric's embedded-noun completeness rule (URI-FACETS-CYCLE-1) applies: every proper-noun frame in a gloss-text must resolve via register, co-entry, or always-known. The auditor called this advisory (flag-004). I'm calling it a revise. The fix is minimal and is named in the auditor's own flag text: "In Flea Bottom, the city's poorest ward, there is rarely anyone who can." One inline appositive; the gloss otherwise holds. REVISE.
 
-The combined gloss at exposition:6 @18 is the entry I watched hardest in this cycle. Structure: [place-definition]; [institution-operating-through-that-place]. The Hook is defined as a curving lane, waterfront edge, lowest margin, where the most transient and least-protected smallfolk keep rooms. Then the semicolon: the city-watch, KL's gold-cloaked patrol, moves through on a rotation the block knows by sound. The join is clean. First half is geography. Second half is tactical. I now know the Hook is a place and I know the watch frequency relative to that place. That is exactly the information I needed when the scene-beats at @18 become load-bearing.
+**exp:5 @23 (ledger).** Post-bone-clause, first-person, 20 words, well inside the 30-word cap. "The book I keep by lamplight — a running account of every cost my actions make that I cannot pay back." The ledger is pre-seeded in the bridge at @0 ("a ledger by lamplight"), so @23 is a re-encounter at the moment of physical use. That's the correct anchor for a first-mention-object gloss: fire when the thing is first handled, not when it was mentioned in the preamble. The "cannot pay back" framing gives me the function before the accounting scene proceeds. ACCEPT.
 
-Wren at @22: "stitch-maker's ward from two buildings over, eleven, kept in light work and two meals for trim-work and thread-sorting, with the close-watching habit a trade like that teaches." The Hook is already on my register. The ward arrangement reads clearly as labor-for-board. "Close-watching habit a trade like that teaches" flags her as observant by condition, not by personality — cape-fic banks this as a character mechanics note. Accept.
+**Verdict: REVISE.** One targeted fix to exp:4: add inline-appositive resolving "Flea Bottom" for cold-join readers. One ADD flagged at exp:1 (secondary, lower priority). All other entries pass.
 
-# Entry-Level Callouts
+# Entry-level callouts
 
-None.
+**[exposition:4] @4 — embedded "Flea Bottom" unresolved inside the orientation clause itself.** The gloss defines the context generically ("a poor district") then names it specifically ("Flea Bottom") as if the name is on the reader's map. The bridge the prior-episode-bridge designed for cold-join readers does not name the district. This is the within-gloss register inconsistency — not a missing entry elsewhere, but a half-open door inside the gloss's own final sentence. Fix: "In Flea Bottom, the city's poorest ward, there is rarely anyone who can." Zero scope change; six words added.
 
-Prior ADD flag: "the Hook" gloss missing at @20 — resolved. The Hook is now glossed at @18 before Wren enters, and Wren's gloss no longer embeds the term as its structural frame. ADD demand is satisfied.
+**[exposition:1] @0 — ACCEPT, with ADD-candidate flagged.** The bridge is clean for what it does. However, it uses "the Hook" ("the city's hired men come down the Hook looking for bodies") as a directional reference. "The Hook" is an unoriented place-name inside an orientation surface. I am not calling this a revise-trigger on its own — "come down the Hook" carries spatial meaning even without knowing the name. But I want the exposition-author to confirm "the Hook" is on the always-known register (established in b01c01). If it is not, the bridge text should add an inline appositive. Lower priority than the Flea Bottom fix.
 
-@15 ("the insects fill the block") — still no gloss. I still read this as power-residue. Series-level Earth-Bet fence acceptance carries. No new ADD needed.
+**[exposition:5] @23 — ACCEPT.** Ledger gloss lands as character-practice. Function stated clearly. Voice correct.
 
-# Convergence Trace
+**PROPOSED ADD — "the Hook" disambiguation in exp:1.** If the cross-episode glossed-terms register does not carry "the Hook" as established in b01c01, the exposition-author should either add an inline-appositive in the bridge text or add a first-mention-place entry at the anchor where "the Hook" first appears in the chapter bones (the bridge at @0 is its first use in b01c02 prose). This is not a separate entry I'm demanding; it's a request for the author to audit the embedded noun and confirm or close the gap.
 
-- Prior verdict (2026-05-19 REVISE): rejection cause was embedded-noun gap — exposition:4 @20 embedding "the Hook" without prior gloss. Auditor's embedded-noun HARD finding (URI-FACETS-CYCLE-1) flagged the same seam the prior round. F-004 was the remediation.
-- [exposition:6] @18: F-004 RESOLVED per r2 audit. Auditor confirmed: single exposition entry at @18, licensed-by covers all three personas, cross-episode register write-back records city-watch as folded into Hook gloss. My read confirms the fold works at the prose surface.
-- [exposition:8] @22: F-003 RESOLVED — exposition:7 (scene-open-orient) deleted; F-002 RESOLVED — exposition:4 (scene-open-orient at @11) deleted. Neither deletion creates an orientation gap: loc-state facet carries the scene transitions at @11 and @22. Co-citations at @22: loc-state:5, narrator:5, state:19, vibes:17 — well-covered anchor.
-- [exposition:3] @4: co-cited by narrator:1, vibes:9, vibes:10. Coll gloss fires in appropriate company. No auditor findings against this entry.
-- [exposition:1] and [exposition:2] @0: no auditor findings; not fixer-touched; structurally identical to prior cycle; prior-round acceptance of these entries carries.
+# Convergence trace
+
+**[exposition:4] embedded-Flea-Bottom:** Overlaps auditor flag-004 (CN-002, CONSTRAINT — "Flea Bottom" in exp:4 @4 gloss-text may be unoriented for a cold-join reader). Auditor classified advisory; this reviewer calls it a revise-trigger per the embedded-noun completeness rule (URI-FACETS-CYCLE-1). The always-known-register argument the auditor raised fails when the prior-episode-bridge — the cold-join reader's entry point — does not name the district. The bridge's existence is proof that cold-join readers are modeled as a real audience; the embedded-noun rule then applies without exemption for b01c01-established terms.
+
+**[exposition:1] the-Hook ADD-candidate:** No auditor finding covers the Hook embedded in exp:1 bridge text. The flag-004 scan examined exp:4; the bridge's embedded nouns were not independently enumerated. This ADD surfaces the same class of issue in a different entry. Auditor's mechanical scan missed it because the check origin was exp:4-specific.
+
+**[exposition:5] @23:** Auditor Class 2 FREQUENCY-BAND: "Three entries for a 27-bone chapter is sparse; the rubric specifies audience-gap-driven necessity. All three surviving entries have been R2-validated. Pass." Confirmed from the reading-experience side: exp:5 justifies its anchor and earns its slot.

@@ -2,52 +2,49 @@
 reviewer: worm-canon-pedant
 facet: state-updates
 cycle: 2
-episode: b01-c01
-date: 2026-05-20
+episode: b01c02
+date: 2026-05-21
 verdict: accept
 ---
 
 # Verdict reasoning
 
-Cycle-1 finding: the consolidated state-updates.md did not carry the rubric-carve-out annotation at the required top-of-file position. The block was present in two places — the per-character source file and embedded in the taylor-hebert source slice within the consolidated file (lines 71-101 of the consolidated, inside the taylor-hebert section) — but not at the position between the consolidated frontmatter close and `# source: env`. The gate's automated checks look at the top-of-file position. Readers of the consolidated file encounter the entries before they encounter the defense. That is the wrong order for a file that is a canonical write-back contract.
+Cycle-1 issued two findings: state:10 (shard-vocabulary on non-cape character, unresolved fence-compliance notation), state:12 (crystallization speed wrong for canon Taylor). Running both against the remediated file.
 
-Specifically flagged as load-bearing: the carve-out for the taylor-state section is the record justifying capability-consistent interpretation of the co-citation pattern. Without it at file-top, anyone reading the next chapter's canonical state and finding knowledge.coll-pattern and social-state.with-wren with no NI co-citation might infer those knowledge-states were acquired through suppressed shard activity rather than ordinary observation. That is a Worm-canon inaccuracy vector. Taylor at this point of her arc observes through ordinary human attention; her insect-sense is at-passive; no deployment threshold was crossed at @15, @18, or @22. The capability-silence on those three beats is the canon-correct read. The carve-out documents why those silences also exempt the taylor-state entries from NI co-citation requirements.
+**state:10 @12 — resolved.** New value: `glance-filed-unrepeated`. Comment: "Hard fence 1 (no naming, no categorical model) honored. Hard fence 2 (no physical approach or verbal inquiry) honored — the glance only; Coll returns to work. Both fences confirmed honored at @12."
 
-Cycle-2 fixer inserted the full carve-out block at lines 7-38 of the current state-updates.md, between frontmatter close (line 5) and `# source: env` (line 39). Position requirement met.
+Two things are fixed. The "substrate-level" language is gone — the comment no longer uses shard-architecture vocabulary for a non-cape character's passive noticing. "Glance-filed-unrepeated" is plain behavioral language. No power mechanic implied; no shard-derived detection implied. Coll is a net-mender; his noticing is a net-mender's noticing. The second fix: "hard fence 1/2 honored" is replaced by explicit per-fence confirmation. Both fences are named and confirmed at @12. The compliance claim is no longer partial. I do not have a residual finding here.
 
-Reading the block at its new position: it covers all four criteria the Cycle-1 verdict enumerated.
+The new value `glance-filed-unrepeated` — checking against canon mechanic: a non-cape Westerosi character notices a stranger with an unusual presence. The value records that the glance happened once and was not repeated. No power mechanic exceeds established limits here because no power mechanic is invoked. This is behavioral state on a non-cape character. Tracks.
 
-(a) Scope citation for the cross-facet contract: "The cross-facet contract calling for narrator-interest co-citation on POV-actor state entries scopes to mental / perceptual / relational state mutations (knowledge.*, social-state.*, mask-state, exposure-state). Mechanical-action state deltas (position, lodging-payment, inventory.<item>) do NOT trigger the NI co-citation requirement." This is rubric §Cross-facet contract scope citation, present.
+**state:12 @15 — resolved.** New value: `recognized-observer-bond-forming`. Prior cycle-1 finding: `crystallized-observer-bond` was wrong speed for canon Taylor. Canon Taylor's social-attachment formation is slow, surveilling, and explicitly costly to her.
 
-(b) Per-entry classification of the four "accepted-with-defense" entries: state:11 @6 (NI-spine present, confirmed), state:13 @8 (defensible: spoken-acknowledgment + narrator:2 @6 interiority block), state:16 @20 (defensible: day-close flat-low, NI:4 @18 carries cost register, trailing-edge of scene-B does not require third NI fire), state:17 @25 (defensible: speech-act IS delta-producer, NI:6 @27 resolves two beats later). All four named. Criterion met.
+`recognized-observer-bond-forming` is not a claim that Taylor has formed a bond. It is a claim that Taylor has recognized that a bond is in formation — on Wren's side toward Taylor. That is a different claim and it is within canon Taylor's behavioral profile. Canon Taylor is acutely aware of when she is being watched. She catalogues observer dynamics from outside. Recognizing at @15 that a Flea Bottom ward is forming a tether toward her — that is Taylor's social-surveillance capacity operating correctly, not Taylor crystallizing attachment herself. The field name is `social-tether-wren`, which is ambiguous as to directionality, but the value `recognized-observer-bond-forming` implies Taylor is recognizing an incoming bond, not finalizing an outgoing one. That reading is canon-consistent.
 
-(c) Band-ceiling collision and §Anti-patterns #9 citation: "Adding NI entries to satisfy mechanical state pairing would breach band ceiling and violate the AP refuse-by-default discipline." The anti-patterns #9 reference (density-on-flat) is satisfied by substance — the carve-out explains that inflating NI fires to satisfy mechanical state pairing is the prohibited move. Criterion met.
+The field name's ambiguity (`social-tether-wren` could mean Taylor's tether to Wren OR Taylor's recognition of Wren's tether to her) is a flag for the showrunner's canonical write-back — the write-back will need to apply this as "Taylor recognizes that Wren is forming an observer bond" rather than "Taylor has formed a bond with Wren." The field's directionality should be specified at the schema level if this field carries forward. That is a showrunner flag, not a finding against the state-update entry itself.
 
-(d) Explicit statement resolving the auditor's fault: the carve-out is now at the position where the gate's structural check applies, making the defense visible to any reader of the consolidated deliverable before they encounter the entries it defends. The resolution is positional; the content was already correct.
+State:13 @25 — cycle-1 let this through on the strength of Taylor's parallel-processing capacity. The fix (`structural-first-read-provisional`) is more conservative than I required. I accepted the `categorical-structural` value; I accept `structural-first-read-provisional` without objection.
 
-The capability-silence discipline — which this reviewer cited as the most Worm-canon-relevant aspect of the file — is documented in the carve-out's closing lines: "substance_delta capability null, magnitude 0 — NO fire on capability fields. The discipline holding is the chapter; the absence of a state-update on capability is the structural fact." That phrasing is correct and precise. The absence of entries at @15, @18, @22 is not a miss. It is the right call. Now the file says so at the top, before the reader reaches those bones.
+Full re-pass on remaining entries:
 
-One observation carried from Cycle 1, non-blocking: the taylor-hebert source section within the consolidated file (lines 71-101) still carries the full carve-out text as an embedded block within the source slice. This creates an internal duplication — the block now appears twice in the consolidated file, once at top (lines 7-38) and once inside the source slice (lines 71-101). This is structural redundancy, not a contradiction. It was already the case that the source slice carried the block; the fixer's insert at top is the required propagation. The duplication is not a problem per the rubric and does not affect canonical state reads. Noted; non-blocking.
+State:11 @5 (`capability-deployment-history: dormant-never-deployed-in-kl -> deployed-defensive-flea-bottom`) — held from cycle 1. Power mechanics: insect-routing to redirect foot traffic. Canon Taylor: no Manton-effect concern (insects are not human), no range problem established, swarm positioning to influence pedestrian corridors is within documented deployment patterns. The "defensive" characterization is accurate for insect routing used to protect a ward rather than to advance Taylor's own position. Tracks.
 
-No remaining attacks. Accept.
+State:15 @15 (`wren-stitch-maker-flea-bottom-ward.stats.taylor_awareness: observed-and-decided-not-to-ask -> watching-with-dread-held-alongside-pull`) — this is Wren's state, authored by Wren's fork. Power-mechanics lane does not reach here: Wren is a non-cape Westerosi character; her attentional state does not involve power mechanics. Whether the value is register-correct is dark-fantasy-reader's lane. Whether the field embeds emotional register in a stats slot is dark-fantasy-reader's advisory note. No power-mechanics finding from me.
+
+The env and prop entries (state:1-9, state:14) do not raise power-mechanics or canon-consistency questions. Studio's authorship on `studio.*` and `prop:oc-*` entries is confirmed; no authority violations visible.
+
+No new findings. Both cycle-1 findings are resolved cleanly. File passes.
 
 # Entry-level callouts
 
-[state-updates:state:16] @20 — `actor:taylor-hebert-kl-122ac.knowledge.coll-pattern: unread -> day-cycle-pattern-read`
-knowledge.* field. NI co-citation required by rubric. NI-absent. Carve-out defense now at file-top: flat-low scene-B close, NI:4 @18 carries cost register, third NI fire would breach band ceiling. The "day-cycle-pattern-read" value is appropriately granular — she has observed one working day's rhythm, not built a behavioral model. This is ordinary human observation, not shard-mediated pattern analysis. The framing is canon-consistent. Cycle-1 complaint closed.
+Advisory note only (not blocking):
 
-[state-updates:state:17] @25 — `actor:taylor-hebert-kl-122ac.social-state.with-wren: unknown-ward -> spoken-once`
-social-state.* field. NI co-citation required by rubric. NI-absent. Carve-out defense now at file-top: speech-act IS the delta-producer; NI:6 @27 resolves interior register two beats later. "Spoken-once" is exactly the right granularity — no overclaim of social integration, no lore-leak into relationship dynamics that haven't been earned. First contact, tagged, persistent. Canon-accurate. Cycle-1 complaint closed.
-
-[state-updates — capability-silence at @15, @18, @22]
-NON-events, correctly held. Carve-out now documents all three explicitly: "substance_delta capability null, magnitude 0 — NO fire on capability fields." The sequencing from Cycle 1 is still correct: registration at @22 is NI territory (NI:5 fires), state-flip at @25 is state-updates territory (state:17 fires). The separation is canon-consistent and now documented at file-top.
+[state-updates:12] @15 — the field name `social-tether-wren` is directionally ambiguous. The remediated value `recognized-observer-bond-forming` reads as Taylor recognizing an incoming bond from Wren, which is canon-consistent. But if the field is written to canonical state as "Taylor's tether to Wren" rather than "Taylor's recognition of Wren's forming tether," downstream episodes will inherit the wrong directionality. The showrunner should specify directionality explicitly at write-back. Not a finding against the state-update entry; a write-back annotation flag.
 
 # Convergence trace
 
-[state-updates — file-level / fault-001] — Cycle-1: carve-out absent from consolidated file top. Cycle-2 fix: carve-out inserted at lines 7-38. Criteria (a) scope citation, (b) per-entry classification, (c) §Anti-patterns #9 by substance, (d) positional resolution — all met. Fault-001 closed.
+- Cycle-1 [state-updates:10] — two-part finding: (a) "substrate-level" shard vocabulary misapplied to non-cape character; (b) "hard fence 1/2 honored" unresolved compliance notation. Fix removes cape vocabulary entirely and names both fences with explicit per-fence confirmation. The auditor's CONSTRAINT scan (CN-001, CN-002) covered proper-noun fences but not Worm-vocabulary-register contamination or fence-compliance content; this seam was pedant-lane only. Both parts of the finding are resolved.
 
-[state-updates:state:16] @20 — Cycle-1 convergence with fault-001 criteria (b) and (c). knowledge.coll-pattern named in carve-out as "NI-absent; defensible" with flat-low/band-ceiling rationale. Criteria met. Closed.
+- Cycle-1 [state-updates:12] — crystallization-speed finding: canon Taylor's social-attachment formation pattern makes `crystallized-observer-bond` wrong speed. Fix delivers `recognized-observer-bond-forming`, which reframes the field value as Taylor recognizing an incoming bond from Wren rather than Taylor finalizing an outgoing bond. Canon-consistent. The auditor's RF-001 did not evaluate canon-character-behavior alignment; that was pedant-lane. Resolved.
 
-[state-updates:state:17] @25 — Cycle-1 convergence with fault-001 criteria (b). social-state.with-wren named at file-top with speech-act defense. Criteria met. Closed.
-
-[state-updates — duplication note] — Non-blocking structural observation: carve-out block appears at lines 7-38 (top-of-file insert) and again at lines 71-101 (embedded in taylor-hebert source slice). Content is identical. Not a contradiction; redundancy acceptable per minimum-change discipline. Not a blocking finding.
+- State:13 advisory: worm-pedant accepted `categorical-structural` in cycle 1 on the strength of Taylor's parallel-processing capacity. The fixer adjudication note records that the 3-of-3 threshold required revision despite the pedant's accept. `structural-first-read-provisional` is more conservative; it does not undermine the parallel-processing defense — it simply adds a qualifier that cape-fic and dark-fantasy required. The value is acceptable under canon.

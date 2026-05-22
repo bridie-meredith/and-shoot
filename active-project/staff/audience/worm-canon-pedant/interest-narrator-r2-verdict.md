@@ -2,48 +2,69 @@
 reviewer: worm-canon-pedant
 facet: interest-narrator
 cycle: 2
-episode: b01-c01
-date: 2026-05-20
-verdict: accept
+episode: b01c02
+date: 2026-05-21
+verdict: revise
 ---
 
 # Verdict reasoning
 
-NI-1 @4 rewrite: "the flies in the wall-bottom register the eye-lift before the eye lifts." Canon check against R1 callout.
+Cycle-1 blocking callout: narrator:4 @15 — form violation, trailing softener-tail preposition "about" after the load-bearing word "decided." Required resolution: remove "about" or rephrase to terminate on the decision-state word.
 
-R1 named two problems with "the network has him before he has her": (1) "the network" is not attested as Taylor's self-referential interior vocabulary for her passive-fauna capability in Worm canon — she tracks insects directly, not a named system; (2) "the network" sits proximate to Earth-Bet-adjacent Worm-canon vocabulary in a chapter where the Earth-Bet fence must hold.
+The remediated entry reads: "Wren is looking at her the way someone twice her years looks at a thing already decided, and that look does not have a column in the ledger."
 
-Both problems are resolved by the rewrite. "The flies in the wall-bottom" names specific insects at a specific location — exactly how canon Taylor tracks her swarm from inside her interiority. She does not think "the network"; she thinks the beetles in the floor seam, the flies at the bottom of the wall. The rewrite corrects the interior vocabulary to the source-text pattern. The pre-emption ("register the eye-lift before the eye lifts") renders the sequencing through perceptual fact, not through a capability-label. No Earth-Bet noun. No swarm-as-system terminology. The fence holds. R1 callout is closed.
+Form check on the remediated entry:
 
-Full file canon audit, cycle-2:
+First clause: "the way someone twice her years looks at a thing already decided" — terminates on "decided." Load-bearing word. The elective preposition "about" is gone. Form violation resolved.
 
-NI-1 @4 ("the flies in the wall-bottom register the eye-lift before the eye lifts"): passive-fauna interior vocabulary. Canon-correct — insect-specific, location-specific, no aggregate-system label. Pre-emption sequencing accurate to her perceptual timeline. Clean.
+Second clause: "that look does not have a column in the ledger" — terminates on "ledger." Privative predicate construction ("X does not have Y"), not an inverted-predicate. Not AP-10. Correctly formed.
 
-NI-2 @6 ("the block reads on a second pass — which courts feed which alleys, who owes the well-step, where the watch does not turn"): route-read as social-topology mapping. Taylor does this in canon — she processes environmental geometry through her swarm-map and extrapolates power/obligation flows. "Courts feed which alleys" is Westerosi vocabulary, not Worm jargon, but the cognitive behavior pattern is canon. No jargon misuse. Clean.
+Register check on "someone twice her years": this is a third-person age-class comparison replacing the prior "you" second-person generalization. Voice-fidelity test: is "someone twice her years" base-register Taylor interior? The base-card register uses behavioral classification in inventory-tell mode. Age-class categorization is a legitimate behavioral classification move — the cognition identifying the look-type by naming the age-register that produces it. "Twice her years" is a formulaic age-expression: it is not slang, not post-medieval idiom, not mask-register softener. It is period-adjacent and register-neutral. The rubric's mask-register REJECT signatures fire on spoken softeners ("if it please you," "I do not know, ser") in interior prose; "someone twice her years" is a categorization, not a performance. Pass.
 
-NI-3 @15 ("every body within the block is legible and she touches none of them; passive holds, day-long, a continuous suppression cost"): scope-of-passive-channel fire. "Legible" is accurate — her feed does produce social-legibility across a range. "Touches none of them" correctly names the non-intervention posture. "Passive holds, day-long, a continuous suppression cost" — the suppression cost is canon-mechanically accurate; her passive fauna-feed does require ongoing attention management in dense environments (Worm arc 8-12 parallels under Skitter-in-the-city passages). Clean.
+Monument leak check: no Earth-Bet proper noun. No Dance specific. No content, date, or name of a Westerosi monument. All six entries: confirmed clean, same as cycle-1.
 
-NI-4 @18 ("boots strike behind the wall, four spans and tracked through the feed without head-turn; staying invisible costs more in dense streets than she would have estimated"): the "than she would have estimated" softener was flagged as advisory-only in R1 from this seat. Re-examining: the cost-pricing register is sustained through the first clause. "She would have estimated" is a mild register drift — canon Taylor's cost-accounting in dense-environment passages runs on calculated-floor / actual-cost comparisons, not on estimate-vs-reality hedges. However, canon Taylor's interior in suppression-load states does show hedged accounting (arc 14-15 passages where she is operating under Skitter-persona maintenance load have slightly looser internal precision). The softener is register-adjacent. Advisory. Not a canon-voice contradiction. Not escalated.
+Narrator:4 cycle-1 callout: RESOLVED.
 
-NI-5 @22 ("a girl comes in through the swarm before she comes in through the door; the entry is filed without a name above the line"): passive-fauna pre-emption on Wren. The sequencing is correct — her feed delivers the presence before the physical body crosses the threshold, which is accurate to how canon passive-channel works at range. "The entry is filed without a name above the line" — "filed" and "above the line" are Westerosi-register administrative vocabulary mapping onto her operational record-keeping habit. No Worm-jargon misuse. No Earth-Bet noun. No canon-voice contradiction. This is the interior record-keeping behavior canon Taylor runs: person identified, slotted, processed, no name assigned to the slot because the operating rule bars it. Clean.
+Now the cycle-2 adversarial attack.
 
-NI-6 @27 ("she will not write the name above the block, not in the feed and not on the page she keeps for herself"): rule-declaration in interior mode. "The feed and the page she keeps for herself" — the doubled-record-system is canon-accurate: her swarm-feed (sensory network) and a separate written record she maintains. No Earth-Bet noun. The rule-declaration voice is canon-consistent with Taylor's operating-rule enforcement behavior under suppression load (she runs rules as hard constraints in interior monologue, not as felt obligations, in canon; arc 10-16 interior passages). The dark-fantasy-reader callout on this entry (cost-of-rule absent, gap-narration pattern missing) is a register note, not a canon-voice contradiction. From this seat: canon-voice is correct; the register choice between rulemaking and gap-narration is outside this reviewer's domain (that is dialect-audience fidelity vs. author's earning decision — the rubric assigns those to different review lanes).
+**AP-10 inverted-predicate cap check (≤1 per file).**
 
-Hard-fence across all six entries: no Earth-Bet proper nouns. No Worm-specific jargon in Westerosi diegesis. No power-mechanic overreach. No timeline contradiction. Fence holds.
+The rubric's anti-pattern 10 states: "Cap: ≤1 entry per file may use the inverted-predicate template. Two or more is an authorial pressure-tell that the AP-001 chassis is doing structural work the entries do not individually defend. Audit enumerates form-pattern matches against `is what`, `is the`, and `means today` constructions at sentence-final position."
 
-Band density: 6/29 = 20.7%. Inside the 15-25% range. No density violation.
+Enumerate across all six entries:
 
-R1 verdict: revise (NI-1 callout). Cycle-2: NI-1 rewrite resolves the sole blocking callout. No new canon violations introduced by the rewrite. Accept.
+- Narrator:1 @4: "the body is catching up to a reading already filed" — "is catching up" is a progressive; no inverted-predicate collapse. Not AP-10.
+- Narrator:2 @5: "routing is what the prohibition still permits her to call clean" — "is what" at sentence-final position. AP-10 instance 1. (Noted and passed in cycle-1 as the first and only licensed instance.)
+- Narrator:3 @8: "the watch-cost of being seen has just been priced to a count she did not choose" — "has been priced" is a passive progressive; no inverted-predicate collapse. Not AP-10.
+- Narrator:4 @15: "that look does not have a column in the ledger" — privative predicate ("does not have"). Not AP-10.
+- Narrator:5 @25: "the count is short" — predicate adjective ("is short"), stating a value, not an inverted-predicate definitional collapse. Not AP-10.
+- Narrator:6 @28: "the not-closing is the only line tonight she is sure of" — "the not-closing IS the only line." This resolves the concept of what-she-holds-certain into a named thing (the not-closing). That is an "the X is the Y" construction at sentence-final position. AP-10 instance 2.
+
+Result: two AP-10 instances. Narrator:2 (instance 1, licensed) + Narrator:6 (instance 2, cap violation).
+
+The cap is ≤1. Narrator:6 is the second instance and exceeds the cap.
+
+Was this flagged in cycle-1? No. The cycle-1 worm-canon-pedant review examined narrator:6 and flagged the trailing preposition "of" as advisory (idiomatic, not elective). It did not run the AP-10 sentence-final enumeration against narrator:6. The cycle-1 review performed the AP-10 check on narrator:5 (cleared it) and on narrator:2 (passed as instance 1). Narrator:6's "the not-closing is the only line tonight she is sure of" was not enumerated against the "is the" pattern. This is a seam the cycle-1 review missed.
+
+The cycle-2 adversarial mode requires hostile-default re-read. The AP-10 file-scope enumeration is a mechanical form check the rubric explicitly defines. Narrator:6's "the not-closing IS the only line" matches "the X is the Y" at sentence-final position (the clause terminates "the only line tonight she is sure of"; the predicate resolution is "the not-closing is the only line"). Cap violated.
+
+Per the rubric: "Two or more is an authorial pressure-tell that the AP-001 chassis is doing structural work the entries do not individually defend." Both narrator:2 and narrator:6 are at structurally significant beats — narrator:2 at the moral-accounting hinge (@5), narrator:6 at the restraint-decision close (@28). The chassis is carrying weight at two peaks. The rubric does not permit that regardless of individual merit.
+
+**Verdict: REVISE.** Narrator:6 must be revised to eliminate the second inverted-predicate instance. The revision must preserve the restraint-decision content and the body/cognition split without using the "the X is the Y" construction.
+
+Possible revision vectors: "the not-closing is the only line tonight she is sure of" → "she is certain only of the not-closing" (terminates on "not-closing," the content noun, no AP-10 collapse) or "the hand stays; the body could close and is not closing, and that is the one thing tonight that holds" (restructures to avoid the definitional-collapse). The exact form is the fixer's call; the constraint is that the second AP-10 instance must be eliminated.
+
+The cycle-1 worm-canon-pedant advisory on narrator:6's trailing preposition "of" (idiomatic vs. elective) is subsumed by this finding — any revision that eliminates the AP-10 instance will also resolve the trailing-preposition advisory.
 
 # Entry-level callouts
 
-No blocking callouts.
-
-Advisory carry-forward (not a block):
-- [narrator:4] @18 — "than she would have estimated": mild register drift from canon cost-accounting precision; arc 14-15 parallel provides some canon cover under suppression-load conditions; not escalated; advisory for editor pass.
+**[interest-narrator:6] @28 — "the hand stays where it is — the reach is cleared, the body could close it, and the not-closing is the only line tonight she is sure of." AP-10 inverted-predicate cap violation: "the not-closing IS the only line" matches the "the X is the Y" pattern at sentence-final position. This is the second AP-10 instance in the file; the cap is ≤1 (narrator:2 @5 consumed the single licensed instance). Per rubric §Anti-patterns 10: two or more inverted-predicate instances = authorial chassis doing structural work entries do not individually defend. The restraint-decision content is correct and earns its fire; the AP-10 construction must be replaced. Revise to terminate on the load-bearing content noun without the inverted-predicate collapse. "The hand stays where it is — the reach is cleared, the body could close, and tonight the not-closing is what holds" is also AP-10 ("is what"). Constraint: reformulate so the predicate states the condition directly rather than resolving an X into a Y identity. Example: "the hand stays where it is — the reach is cleared, the body could close it — and the not-closing is the one certain thing she takes out of tonight" still inverts; try "she is certain only of the not-closing" (terminates on content noun, no collapse).**
 
 # Convergence trace
 
-- [narrator:1] @4 (R1 worm-canon-pedant callout — "the network" not attested as Taylor's interior self-referential vocabulary for passive-fauna capability; Earth-Bet boundary proximity risk): ADDRESSED. Rewrite uses insect-specific perceptual vocabulary ("the flies in the wall-bottom") consistent with canon interior register. No aggregate-system label. No Earth-Bet boundary proximity. Auditor TASTE-FLAG (atmosphere-thin, "the network" near Earth-Bet boundary) also resolved by same edit. CLOSED.
-- [narrator:4] @18 (R1 advisory — "than she would have estimated" as register softener): NOT addressed by fixer (correct — outside F-008 unanimous scope). Carried as advisory. No escalation from this seat.
-- Dark-fantasy doubled-register demand: no canon-voice finding convergent with this. The doubled-register requirement is a rubric-shape concern; canon-voice of existing entries is not affected by its presence or absence. No position taken from this seat.
+- Cycle-1 blocking callout (narrator:4 @15 trailing preposition "about") — RESOLVED by the remediation. The form violation is cleared; the entry now terminates correctly on "decided."
+- Cycle-1 advisory (narrator:6 @28 trailing preposition "of" — idiomatic vs. elective) — SUBSUMED by the AP-10 finding. Any revision eliminating the second AP-10 instance will also address the trailing preposition.
+- New finding: narrator:6 AP-10 instance 2. Not present in cycle-1. Cycle-1 enumerated AP-10 on narrator:2 (instance 1, licensed) and narrator:5 (cleared), but did not enumerate narrator:6 against the "is the" pattern. This is a seam the cycle-1 review missed. The cycle-2 adversarial re-read surfaces it via the sentence-final enumeration the rubric mandates.
+- Convergence with rubric §Anti-patterns 10 (AP-10 URI-FACETS-CYCLE-1 2026-05-19): the rubric documents the cap was promoted from audience-gate cycle-1 attack on b01c01. The worm-canon-pedant is the primary dialect audience; the AP-10 finding is in-domain (form-pattern check on voice fidelity axis).
+- No convergence with HARD findings (fault-001, fault-002 — both closed at cycle-2).
+- No convergence with cape-fic-reader or dark-fantasy-reader cycle-2 verdicts — both accepted the file. This finding is the sole blocking callout for cycle-2.

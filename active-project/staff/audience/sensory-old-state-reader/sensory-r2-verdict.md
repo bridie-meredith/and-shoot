@@ -2,47 +2,53 @@
 reviewer: sensory-old-state-reader
 facet: sensory
 cycle: 2
-episode: b01-c01
-date: 2026-05-20
-verdict: revise
+episode: b01c02
+date: 2026-05-21
+verdict: accept
 ---
 
 # Verdict reasoning
 
-Cycle-1 I failed two entries on old-state lineage. sensory:1 @3 was a moderate finding — loc-state:1 exists, but "corner-room-dim" extrapolates past its explicit fields, which name a geometry cue ("door-shadow across the entry") not a declared interior light level. sensory:2 @16 was a HARD finding — loc-state:3 @11 had no thermal field and no prior sensory-thermal entry existed; "wall-daytime-ambient-warmth" was structurally unanchored.
+Cycle-1 findings: both old-states unanchored. Fix added conditions notes to loc-state:2 @4 (anchor for sensory:1) and loc-state:11 @22 (anchor for sensory:2); sensory:2 relocated @22→@23. I hold both files and re-walk the lineage for each entry.
 
-The cycle-2 fixer resolved the HARD finding by cutting sensory:2. The unanchored thermal old-state no longer exists in the file. That finding is satisfied.
+**sensory:1 @7 — sound: watch-press-alley-ambient -> watch-column-footfall**
 
-For sensory:1: the fixer added a defense-anchor comment under the entry:
+Cycle-1 finding: no loc-state sensory/conditions note in entries @2-@6 established the ambient-sound baseline. Fix: loc-state:2 @4 now carries a conditions note — "ambient-sound baseline before column arrival — ordinary morning street noise and shoe-leather on cobbles; no column-echo yet; this is the watch-press-alley-ambient state (anchor for sensory:1 old-state)."
 
-> `# defense-anchor: old-state "corner-room-dim" is inferred from loc-state:1's "door-shadow across the entry"`
-> `# geometry cue (shadow implies dim interior relative to exterior threshold) + the time-of-day implication`
-> `# of pre-noon Hook arrival. Not a free-floating old-state; anchored to the loc-state:1 light-field geometry.`
+Lineage walk: loc-state:2 @4 conditions note explicitly names `watch-press-alley-ambient` as the prior ambient baseline and marks it as the sensory:1 anchor. sensory:1 fires at @7 — three beats later, same location (flea-bottom), same morning-watch-press-day scene. No intervening loc-state entry between @4 and @7 introduces a sound-level change: loc-state:3 @5 describes lane-mouth sealing by insect-mass (spatial geometry, not sound); loc-state:4 @6 describes Wren at far threshold (spatial, not sound); loc-state:5 @7 is co-located with sensory:1 and describes the Hook spatial position (no sound-level change). The ambient baseline established at @4 carries unbroken to @7. Old-state traces directly to loc-state:2 @4 conditions note. No contradiction; no chain-skip.
 
-I walk the lineage now.
+PASS.
 
-The most recent prior loc-state at @3 is loc-state:1 @1. Its full text: `flea-bottom | morning | rain-recent | threshold-open | the door-shadow across the entry marks where the building-keeper stands`.
+**sensory:2 @23 — light: unlit-lodging-interior -> lamp-lit-tight-radius**
 
-The defense-anchor argument is: "door-shadow across the entry" is a geometry cue; a shadow across the entry implies dim interior relative to exterior threshold; therefore "corner-room-dim" is anchored.
+Cycle-1 finding: no loc-state entry between @17 and @22 established the lodging's pre-lamp darkness. Fix: (a) loc-state:11 @22 now carries a conditions note — "interior-darkness baseline before @22 — lodging-interior unlit, night scene-open (time-skip blank @21); this is the unlit-lodging-interior old-state (anchor for sensory:2 old-state at @23)"; (b) sensory:2 anchor relocated to @23.
 
-My rubric requires old-state to trace "verbatim or near-verbatim to a loc-state entry." I walk the specific test: does "corner-room-dim" appear verbatim or near-verbatim in loc-state:1? It does not. loc-state:1 names "the door-shadow across the entry" — a shadow placement, not a room illumination level. The defense-anchor comment asks me to accept a two-step inference: (1) a shadow across the entry implies the interior is dimmer than the exterior, (2) therefore "corner-room-dim" is a valid old-state name. That inference is plausible. It is not the same as explicit anchoring.
+Lineage walk: the conditions note on loc-state:11 @22 explicitly names `unlit-lodging-interior` as the pre-lamp darkness baseline and identifies itself as the anchor for sensory:2. The note grounds the darkness in the time-skip blank at @21 (scene-open at night, interior unlit from scene entry). sensory:2 fires at @23, claiming `unlit-lodging-interior` as old-state. The derivation chain: time-skip @21 establishes night interior entry; loc-state:11 @22 conditions note records pre-lamp darkness baseline; sensory:2 @23 inherits that baseline as old-state. Chain is explicit and traceable.
 
-The rubric's Axis 1 (modality-inflection) REJECT signature states: "Unanchored old-state (HARD). Entry's old-state does not resolve to (a) the most recent loc-state file's § sensory or § conditions baseline for the beat's location, OR (b) the most recent prior sensory-flag entry on the same modality." loc-state:1 has no § sensory or § conditions field. It has a spatial description that includes a shadow cue. The question is whether a shadow cue in a spatial description field constitutes a "light-field baseline" for sensory-flag old-state sourcing.
+I check for contradiction: at @23 the most-recent loc-state is loc-state:11 @22, whose conditions note describes the pre-@22 darkness. The main body of loc-state:11 @22 describes the post-lamp state ("lamp: single flame, tight radius"). The old-state in sensory:2 uses the pre-lamp darkness (from the conditions note), not the post-lamp state (from the main body). The conditions note explicitly frames the darkness as "baseline before @22" — this is the state the sensory entry is inheriting. No contradiction with the main-body post-lamp description, because the sensory entry is describing the transition FROM the darkness state that obtained before @22, not re-describing the current-at-@23 state.
 
-I will not call this HARD in cycle-2. The cycle-1 finding was already graded as moderate (loc-state exists, inference is plausible, not the absence case). The defense-anchor comment is the minimum-change response the fixer could apply without editing loc-state:1 or cutting sensory:1. The fixer explicitly chose not to add a light-level field to loc-state:1 — that would have been the clean resolution.
+Modality chain: light modality has no prior sensory-flag in this file before sensory:2 (sensory:1 is on sound). Old-state must trace to loc-state — it does, via the conditions note. Chain-skip test: no loc-state between @17 and @23 covers the lodging interior except loc-state:11 @22, which is the anchor. No skip.
 
-But the defense comment does not satisfy my standard. A comment in the sensory file asserting that an inference licenses the old-state is not the same as loc-state:1 declaring the light level. My rubric asks for explicit lineage, not documented inference. The shadow cue in loc-state:1 is a geometry fact, not a light-level declaration. A reader opening loc-state:1 cold does not see a declared interior light level; they see a shadow position.
+Timing note (staying in my lane): sensory:2's old-state refers to the pre-@22 darkness; the fire is at @23. The old-state traces correctly to the pre-@22 conditions note. Whether @23 is the right inflection beat for this fire is an inflection-not-sustained question — that is the disambiguation-pedant's axis, not mine. My axis is lineage only: does the old-state trace to a loc-state entry? Yes. Does it contradict that entry? No. PASS on lineage.
 
-I hold a revise verdict. The required fix remains what I stated in cycle-1: studio adds an explicit light-level note to loc-state:1 (e.g., "threshold-dim, interior backlight filtered by overcast morning") that makes "corner-room-dim" near-verbatim traceable. The defense-anchor comment is advisory; it is not a lineage chain.
+Both old-states now have verifiable loc-state lineage. No invented baselines. No contradictions. No chain-skips.
 
-Downgrade from fail to revise: cycle-1 was a fail (two entries, both with broken lineage). In cycle-2, one finding is resolved (sensory:2 cut). One entry remains with an insufficiently resolved old-state. One entry, one moderate finding, correct modality, no structural-absence failure. This is a revise, not a fail.
+ACCEPT.
 
 # Entry-level callouts
 
-[sensory:1] @3 — old-state `corner-room-dim` insufficiently anchored. loc-state:1 @1 names "door-shadow across the entry" — a shadow-position geometry descriptor, not a declared interior light level. The defense-anchor comment correctly identifies the inference chain but does not constitute explicit loc-state anchoring. Required fix: add an explicit light-level note to loc-state:1 (interior threshold illumination quality, e.g., "threshold-dim, morning-backlight filtered by overcast") so that "corner-room-dim" traces near-verbatim to a loc-state field.
+None. Both old-state lineages trace cleanly after the conditions note additions.
+
+Cycle-1 findings resolved:
+- `[sensory:1] @7 unanchored` → resolved by loc-state:2 @4 conditions note naming `watch-press-alley-ambient` as the ambient baseline anchor.
+- `[sensory:2] @22 unanchored` → resolved by loc-state:11 @22 conditions note naming `unlit-lodging-interior` as pre-lamp darkness baseline; relocation to @23 does not disturb the lineage claim.
+
+No new lineage-invention or lineage-contradiction seams introduced by the fix.
 
 # Convergence trace
 
-- [sensory:1] @3 baseline-extrapolation — original to cycle-1 review; not surfaced by the mechanical auditor (contradiction-check looks for explicit contradiction, not for absence of explicit anchoring; this seam is a lineage-gap, not a contradiction). The cycle-2 defense-anchor comment addresses the gap by inference documentation, not by explicit loc-state revision. My finding persists.
-- [sensory:2] @16 unanchored old-state — RESOLVED by cut. Convergent with URI-FACETS-CYCLE-1 HARD anti-pattern (rubric-sensory.md §1). The entry no longer exists; the finding is satisfied.
-- [sensory:1] @3 — downgrade from fail-driver to revise: cycle-1 was a moderate finding alongside the HARD sensory:2 finding; together they produced a fail. With sensory:2 gone, the remaining finding is a revise-class lineage gap, not a structural absence.
+- Cycle-1 unanchored-old-state findings: directly addressed by conditions note additions. The fix followed the rubric §Axis-1 prescribed path ("backfill the loc-state baseline"). Conditions notes are a correct vehicle for baselines that predate the anchor beat without requiring a new standalone loc-state entry.
+- A3 sequencing (rubric §14 anti-pattern URI-FACETS-V3-CYCLE-N-ADD): fix-log item 8b confirms upstream loc-state conditions notes landed first before sensory entries updated. The sequencing requirement is met. The conditions notes are in place before the sensory old-state claims depend on them.
+- URI-FACETS-CYCLE-1 HARD (unanchored old-state): both instances resolved. The conditions-note mechanism correctly backfills baseline anchors that were established by narrative context (watch-press-day morning ambient; night interior at scene-open) but not formally documented in the loc-state file until cycle-2.
+- Cite-index: sensory:2 now at @23, co=[exposition:5, state:5]. loc-state:11 @22 co-citations updated (sensory:2 removed from @22 co-citations). The cross-file consistency supports the lineage trace — no residual @22 citation for sensory:2 that would suggest a lingering anchor conflict.
+- Disambiguation-pedant cycle-2 and modality-coverage cycle-2 both surface concerns about the @23 anchor. Those concerns (inflection-beat-lagging; inflection-skip at @22) are outside my axis. I note their convergence here for the orchestrator's aggregation but do not let them migrate into my lineage verdict. The lineage is clean; the inflection-beat problem is theirs to name.

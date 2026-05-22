@@ -2,49 +2,57 @@
 reviewer: dark-fantasy-reader
 facet: memory
 cycle: 2
-episode: b01-c01
-date: 2026-05-20
-verdict: revise
+episode: b01c02
+date: 2026-05-21
+verdict: accept
 ---
 
 # Verdict reasoning
 
-The slug fix is real and correct. `monument-override-architecture-prohibition` has the right form — mechanism-descriptive, `monument-` prefix, no Earth-Bet proper noun bleeding through. I mark that resolved.
+Cycle-1 verdict was accept with two advisory notes and one drawn line. Re-reading hostile in cycle 2. The question is whether the card resolutions (item-9) close the advisories cleanly or introduce new surface to attack.
 
-The NI problem is still there. The rewritten defense annotation is honest now, which is an improvement over cycle-1 where the defense misidentified feel:1 as the spine by redefinition. The cycle-2 annotation no longer does that — it acknowledges NI is absent, explains that adding NI would breach the band ceiling, and explicitly states the defense relies on rubric authority's downstream ruling. That is an accurate account of a genuine authoring constraint. It is not earned darkness.
+**Item-9 scope:** both monument cards authored and placed on disk. Re-reading both cards as a dark-fantasy reader would: does the card carry weight, or is it an abstraction in costume?
 
-This is why the spine requirement matters to me, specifically. When the interior catches itself about to enact the architecture it has vowed to refuse — that catch is the moment where the foreknowledge-bearing narrator's spotlight should fall. Feeling-facet gives the somatic register: the feet hold, the weight settles. That is real. But the narrator's registration of why this beat matters — the spotlight confirming that the moment carries monument-weight, not just body-sensation — is the narrator-interest entry. Without it, the stitcher is licensed to render figurative content at @9 on the basis of a monument-fire the narrative infrastructure has not confirmed. The license is there in the file; the confirmation is not. That is infrastructure that does not hold.
+**`monument-cost-borne-by-the-unconsenting` — card read.**
 
-I understand the ceiling constraint. Adding NI at @9 pushes density to 25.9% — past the 25% cap. That is a real authoring problem: the cure for the missing spine costs more than the authoring budget allows. But a cure that costs too much is not the same as a cure that exists. The defer block says "preferred resolution: rubric authority ruling." Until that ruling exists, the entry is firing without spine. The rubric's mandatory requirement does not suspend pending an upstream ruling.
+Class: behavior, scope: project. Trigger: "a bystander, witness, or third party who has received some portion of the consequence of Taylor's action without having been a participant in the decision that created it." Displacement-cue form: names the cost-landing without Earth-Bet specifics; foregrounds the unconsenting quality; permits ledger-register language.
 
-The description is still the best thing in the file. "The feet hold and the architecture stays the shape she will not build" is the refusal-to-look construction working as designed — no proper noun, the monument's shape carried without the monument's name. If the spine were there, this entry would land.
+Dark-fantasy-reader concern: is this card dark-fantasy in its texture, or is it cape-fiction wearing dark-fantasy clothes? The test: does the card make the world heavier, or does it make it more legible?
 
-mem:2 @18 passes unchanged. "The patrol's line through the bend is older than the patrol" — that is the register I am here for. The institution as geological formation. The coercive geometry preceding the people who fill it. The NI spine is confirmed (narrator:4 @18). Scene-B flat-low. The Westerosi-monument clamp is the one entry in this file that shows the doubled-register character carrying foreknowledge of what this kind of apparatus produces. It works. It earns its keep.
+The card's phrasing is ledger-register — "carries weight she generated," "the gap between what was chosen and who is paying." That is the right register for a dark-fantasy world: not named horror but recorded cost. The witness at @8 was already in Flea Bottom before Taylor arrived, living in a world that had its own density. The cost landing on them is not dramatic in the cape-fic sense — it is accumulative in the dark-fantasy sense. The card supports this reading. The monument has density before the protagonist arrives; Taylor's action displaces some of that density onto a bystander. World-as-lived-in, not world-as-set-dressing. Accept.
 
-If mem:1 is culled and not replaced, the file loses its Earth-Bet entry and goes single-register on the Westerosi clamp side only. Single-register is a named shape failure. The defer block documents this. Documenting it is not resolving it.
+**`monument-conquest-charter-language` — card read.**
 
-Verdict: revise. The slug is fixed. The NI co-citation is absent and the mandatory requirement has no documented suspension mechanism in the rubric.
+Class: behavior, scope: project. Trigger: "a formal decision inscribed, struck, or annulled — any moment where a word is written down and then undone, superseded, overwritten, or where language is shown to have persisted past the hand that set it." The trigger is "the specific quality of Westerosi institutional speech: conquest edicts that remain law after the conqueror dies, succession charters that travel through dynastic crises, treaty-language that outlives the treaty."
 
----
+Dark-fantasy-reader concern from cycle 1: the description field's first clause ("she has felt the weight of that kind of word before") is borderline stage-naming, saved by the second clause. Does the card change this reading?
+
+The card does not change the description field — the field is what it was in cycle 1. The concern was about displacement-cue voice, not about monument-existence. Card existence does not worsen the voice problem and does not improve it. The cycle-1 ruling stands: the two-clause construction earns one use; the second clause produces the shape; borderline but not rejectable.
+
+What the card does add: it confirms the monument is Planetos-specific and historically dense — "conquest edicts that remain law after the conqueror dies, succession charters that travel through dynastic crises." This is the texture of a world with its own weight before any protagonist arrives. The monument is grounded in Westerosi institutional reality, not in generic consequence-language. That is what dark-fantasy requires. The card passes the dark-fantasy reader's test.
+
+**Re-attack: does the fix session introduce any new seam in the memory facet?**
+
+The only fix relevant to memory is item-9. No other items touch the memory facet's entries or their anchors. Cite-index update (item-8b: sensory:2 moved @22→@23) does not affect mem:1 or mem:2 co-citations. The two memory entries are at anchors @8 and @25, untouched by the session.
+
+Dark-fantasy-reader checks: does the world still push back against the protagonist at both fired beats after all the cycle-2 fixes? Yes. @8: the witness carries knowledge they cannot unknow, and Taylor's ledger instinct fires on the count she cannot control. @25: the struck word carries prior-world weight that Taylor recognizes without naming. Both beats cost something real. Both beats make the world heavier. The gradient is intact.
+
+**Carry-forward from cycle-1 drawn line:**
+
+"This two-clause construction should not recur without a distinct cue-shape in the second clause. One use earns it. A second use that follows the same approach-then-cue template reads as the author's chassis."
+
+This is a b01c03+ concern, not a cycle-2 blocking condition. The card's calibration anchor explicitly notes this is the "canonic first deployment" and instructs that "subsequent fires must produce a distinct cue-shape." The card authors the constraint directly. The carry-forward note is now on record in two places (this verdict and the monument card itself). Not blocking here.
+
+Accept.
 
 # Entry-level callouts
 
-**[memory:mem:1] @9 — "the feet hold and the architecture stays the shape she will not build"**
-slug form: CLEARED — `monument-override-architecture-prohibition` is mechanism-descriptive, carries correct prefix, URI-FACETS-CYCLE-1 passes
-NI co-citation: PERSISTS — the rewritten defense annotation is now accurate rather than definitionally confused; it acknowledges the absence, explains the ceiling constraint, and defers to ruling authority; but honest documentation of a mandatory requirement's absence is not a valid substitute for the requirement; the rubric's REJECT signature on missing NI co-citation applies; the "preferred resolution: rubric authority ruling" language in the defer block names a pending resolution, not an existing one; description passes displacement-discipline; entry cannot ship without the ruling or the spine
+**[mem:1 @8]** — accept. Monument card `monument-cost-borne-by-the-unconsenting` confirmed on disk. Card register is ledger-and-density, not atmosphere-and-naming — correct dark-fantasy texture. Consequence propagates: the witness carries something they cannot unknow. World-density preserved: the bystander was in Flea Bottom before Taylor arrived. Quiet-beat anchor (settle-tail, @8). Narrator:3 spine. Description fence-clean. Clinical-of-the-horrible register intact. Cycle-1 advisory resolved. No new seam.
 
-**[memory:mem:2] @18 — "the patrol's line through the bend is older than the patrol"**
-accept: NI spine confirmed (narrator:4 @18, cite-index verified); scene-B flat-low, no peak-bones; Westerosi-monument clamp identifiable from displacement-cue construction; free-text gloss target-reference is soft-path advisory; unchanged from cycle-1 accept
-
-**[file-level] doubled-register shape:**
-still flagged: mem:1 carries the Earth-Bet register; if culled, the file is single-register Westerosi-only; the defer block correctly names this as a pending problem; rubric episode-level shape criterion requires at least one Earth-Bet displacement fire; the problem is documented, not resolved
-
----
+**[mem:2 @25]** — accept, carried from cycle 1 with drawn line held. Monument card `monument-conquest-charter-language` confirmed on disk. Card is Planetos-specific and historically grounded — not generic weight, but institutional language with a real history behind it. Dark-fantasy reader requires the world to have been there before the protagonist; this monument satisfies that requirement. Peak-bone exception anchored: card confirms "struck decisions" as an explicit trigger instance. Resonance-not-action argument holds. Voice concern from cycle 1 (borderline stage-naming in first clause) unchanged — description field unchanged, cycle-1 ruling unchanged. Drawn line: two-clause approach-then-cue construction should not recur verbatim; card authors this constraint as a forward instruction. Not blocking in cycle 2.
 
 # Convergence trace
 
-**mem:1 — slug form:** Fixer F-011 renamed the target-reference. Cycle-1 audience callout on slug form RESOLVED. No residual concern.
+- [mem:1 @8]: R1 auditor SIGNAL on monument-cost-borne-by-the-unconsenting → resolved by item-9. Dark-fantasy-reader R1 prose-weight concern (does not depend on card routing; description does the work at reader level) is now resolved at both levels — reader level (description stands) and stitcher level (card provides routing). No remaining finding. Auditor AP-001 carry-forward advisory (cost/count vocabulary cluster in narrator; may retroactively read as authorial chassis if not varied in b01c03) is a session-level note, not a cycle-2 memory-facet finding. No mechanical convergence on that advisory. Confirmed as independent audience-side observation.
 
-**mem:1 — NI co-citation:** The cycle-2 annotation rewrite improved the defense from definitionally confused (cycle-1: feel:1 redeclared as spine) to honest documentation of a structural gap. The fixer's F-011 criteria mark this as resolved on documentation grounds. From the adversarial reading, documentation-resolved and rubric-resolved are different categories. The mandatory requirement remains unmet. The annotation no longer misreads the rubric; it accurately describes what the rubric requires and then documents that the requirement is unmet. That is an improvement in honesty; it is not an improvement in compliance. No auditor finding names this distinction in cycle-2. Audience raises it as the continuing failure.
-
-**doubled-register risk:** Unchanged. No auditor finding. Consequence of the mem:1 NI failure being unresolved: if the rubric authority ruling comes back against feel-as-spine and mem:1 is culled, the file requires a replacement Earth-Bet entry with confirmed NI spine and licit quiet-beat anchor.
+- [mem:2 @25]: R1 auditor SIGNAL on monument-conquest-charter-language → resolved by item-9. Worm-canon-pedant cycle-1 revise trigger (exception depended on unanchored monument) extinguished by card existence. Dark-fantasy-reader's stage-naming concern on "she has felt the weight of that kind of word before" remains an independent audience-side callout not enumerated by the mechanical scan — this is a displacement-cue voice concern, not a fence or spine concern. It did not block in cycle 1 and does not block in cycle 2. The card's forward-instruction on cue-shape diversity (calibration anchor section) captures the concern at the authoring level. Dark-fantasy-reader registers the note as carry-forward only.

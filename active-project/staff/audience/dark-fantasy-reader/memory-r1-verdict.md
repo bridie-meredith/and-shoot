@@ -2,48 +2,59 @@
 reviewer: dark-fantasy-reader
 facet: memory
 cycle: 1
-episode: b01-c01
-date: 2026-05-20
-verdict: revise
+episode: b01c02
+date: 2026-05-21
+verdict: accept
 ---
 
 # Verdict reasoning
 
-I read the `# defense: feel-as-spine` annotation the way I read every defense argument: does it name the weight, or does it name itself naming the weight? This one names itself. The annotation says "feel:1 @9 is the spine of this entry" — but what it has actually done is locate a feeling-flag at @9 and declare it a narrator-interest entry by redefinition. The rubric does not permit redefinition. The spine requirement is specific to narrator-interest. The narrator-interest file is silent at @9.
+Dark-fantasy reader enters hostile. Two fires, both claiming to carry weight. I want to know if the weight is real or if the text is borrowing atmosphere it hasn't paid for.
 
-The reason this matters to me, specifically, is the dark-fantasy register this project is working in. The doubled-register character carries two worlds simultaneously — the place she came from and the place she is in. The narrator-interest facet is the instrument that shows which of those worlds the interior is reaching toward on any given beat. When the interior catches itself about to build a pattern it has vowed to refuse, that catch is a moment where the foreknowledge-bearing narrator should register what is happening — not just the body enacting the rule, but the narrative weight of the rule itself catching. Feeling-facet gives me the somatic tell (the feet hold, the weight evens). Narrator-interest would give me the spotlight: this beat matters, watch it. Without the narrator's light on that catch, I get a body doing something I have to interpret without the text confirming the interpretation. The weight is not rendered; it is implied and then abandoned.
+Memory-flags is the licensing layer. What it is actually asking me to confirm: are these two beats genuine moments where accumulated consequence presses against the foreground, hard enough that the stitcher is entitled to render something weighted? Or are they mood-gestures in a file that knows what it is supposed to look like?
 
-That is not how earned darkness works. Earned darkness is specific. The rubric built the spine requirement because the monument-content of a memory-flag entry is only licit when the narrator has already registered the trigger. Without the narrator registering it, what I get is the stitcher with a license to render figurative content at @9 that the narrative infrastructure has not confirmed. That is a gap, not a defense.
+**mem:1 @8.**
 
-The second problem at mem:1 is the target-reference field: `cond-override-architecture-residue-122ac`. I am not going to pretend I do not notice that `cond-` is not `monument-`. The rubric's URI-FACETS-CYCLE-1 test is explicit: the slug must resolve as a monument card. A condition card is not a monument card. This is metadata squalor at the routing surface — the stitcher cannot use a condition card as a metaphor-license gate.
+"The count of who saw was set by faces she did not pick, the way a cost has settled on people who never agreed to carry it before."
 
-mem:2 @18 is a different story. "The patrol's line through the bend is older than the patrol." That is the dark-fantasy register I am here for: the institution as geological formation, the coercive geometry that precedes any individual who fills it. The narrator-interest spine is present (narrator:4 @18). The quiet-beat anchor holds (scene-B, flat-low, no peak-bones). The Westerosi-monument dimension is the one this entry delivers — the city-watch as ancient apparatus, the patrol-route as monument. That is correct. That is what the foreknowledge-bearing character carries: she walks through spaces that have been crushing people for longer than the people who currently work them.
+Clinical-of-the-horrible register. The sentence doesn't flinch; it does accounting. The gap between the flat delivery and the content is the load: unconsenting people now carry a cost because Taylor made a choice in their proximity. That is consequence that propagates — not consequence named and moved on from, but consequence recorded with ledger precision. The monument-family this touches is the institutional-observation-apparatus / unconsenting-cost pattern from the Earth-Bet inventory: the moment when Taylor's power-field extends past the radius she chose and touches someone who did not opt in.
 
-I accept mem:2. I reject mem:1 on the licensing-discipline axis on two counts: no narrator-interest spine, wrong slug form. The description of mem:1 is fine — "the shape she will not build" is exactly the kind of refusal-to-look construction this register requires — but the description cannot save the entry when the infrastructure under it is missing.
+This is dark-fantasy register done correctly. The world is not set dressing here — the near-witness at @8 is a person who was already in Flea Bottom before Taylor arrived, living in a world that was dangerous before she came, and is now carrying a piece of information she would probably prefer not to have. The protagonist's action created a cost for a bystander who had nothing to do with the threat being handled. That is what dark fantasy is supposed to feel like: the protagonist moves through a world that has its own density, and the motion displaces things.
 
-If mem:1 is removed and not replaced with a valid Earth-Bet entry, the file goes single-register. Single-register is a shape failure. The revision must address both: cure mem:1 or replace it.
+I am not going to push on this one. Quiet-beat anchor at @8 (settle-tail, post-Watch passage). Narrator:3 spine present. Description is flat and specific without naming the monument. Fence-clean. Accept.
 
----
+The warehouse card for `monument-cost-borne-by-the-unconsenting` is unresolved. The auditor treats this as SIGNAL. My concern is: without the card, the stitcher may not route to this entry's figurative permission correctly. But the prose-weight of the cue does not depend on the card existing — the description field does the work at the reader level. The routing problem is the stitcher's; the reading problem is mine. Advisory.
+
+**mem:2 @25.**
+
+This one I push harder on. Peak-bone fire. The rubric says these are default-forbidden. The exception has been granted — I am reading it independently.
+
+"The struck line is a decision written down and then unwritten, and she has felt the weight of that kind of word before, in a tongue that outlived the hand that set it."
+
+The first thing I check: does this sentence claim weight it hasn't earned, or does it earn it? The test for dark fantasy is whether the weight is structural or atmospheric. Atmospheric weight sounds like consequence; structural weight IS consequence — it propagates, it changes what comes next, it costs something specific.
+
+"A tongue that outlived the hand that set it." This is the displacement-cue carrying the Westerosi-monument clamp on charter-language. The word being struck is a ledger entry — Taylor's own accounting system for costs she cannot pay back. The clamp: this kind of word exists in another context, in a language that persisted beyond the authority that made it. Conquest-charter-language is the monument. Words that outlive their authors. Provisional decrees that travel.
+
+Is this structural or atmospheric? I am reading it as structural, narrowly. The ledger is Taylor's apparatus — it is the specific architecture she has invented for tracking what she owes in a world where she has no normal way to pay. The struck entry is a decision she made and then unmade within the same accounting sequence. The weight the sentence gestures toward — "she has felt the weight of that kind of word before" — is anchored in that architecture, not floating free of it. The word's prior weight explains why she has the ledger at all. That is structural weight: the memory is explaining the tool, not decorating the moment.
+
+What almost kills it: "she has felt the weight of that kind of word before, in a tongue that outlived the hand that set it" is close to the elegant-sentence-as-atmosphere anti-pattern. The sentence sounds weighty. It has the shape of consequence. Dark-fantasy readers know this shape and distrust it. The thing that saves it is that the ledger is a concrete artifact in the scene — bones @22 through @29 are the accounting sequence; the struck line at @25 is a physical act on a physical object that Taylor built for this specific purpose. The memory fires into that specificity, not into vague gravitas.
+
+The resonance-not-action argument holds: narrator:5 carries the recognition-event peak; memory fires on the discharge. The sequence is correct. The Westerosi-monument-clamp flavor is Planetos-specific — "a tongue that outlived the hand that set it" is the register of a world where history is written in conquest and conquest has its own vocabulary. Not generic medieval. Lands.
+
+One live concern: "she has felt the weight of that kind of word before" is the closest this entry comes to stage-naming the memory rather than producing the cue. The rubric's anti-pattern #3 is "Stage-named cue — *She remembers... / a memory rises...* — labeling rather than producing the cue." The phrase "she has felt the weight of that kind of word before" is borderline — it is saying "she has prior experience with this pattern," which is one clause short of "she remembers." What saves it is the following clause: "in a tongue that outlived the hand that set it." The second clause produces the shape; the first clause is the approach. Acceptable as a two-clause construction where the second clause does the monument-work. But this is the line. If the second clause had been weak, the first clause would make this a stage-naming reject.
+
+File-level: doubled register present (mem:1 Earth-Bet displacement; mem:2 Westerosi clamp). Per-scene cap honored. Sparsity at 7.4% is inside the band. The licensing gradient is intact. The world pushes back against the protagonist at @8 (the unconsenting witness) and at @25 (the word-that-outlives); both beats cost something real.
+
+Accept.
 
 # Entry-level callouts
 
-**[memory:mem:1] @9 — "the feet hold and the architecture stays the shape she will not build"**
-reject: the feel-as-spine defense substitutes a somatic-register facet (feeling:1) for a narrator-interest co-citation; narrator-interest is silent at @9 in the locked file; the rubric names missing NI co-citation as a REJECT signature without carve-out language that would admit feeling as a substitute; the target-reference `cond-override-architecture-residue-122ac` carries a `cond-` prefix instead of the required `monument-` prefix; URI-FACETS-CYCLE-1 names this as a licensing-discipline failure; description passes displacement-discipline but cannot compensate for two licensing failures
+**[mem:1 @8]** — accept. Consequence-that-propagates: unconsenting bystander carries information as cost. Clinical-of-the-horrible register correct — flat delivery, weighted content, gap is the load. Quiet-beat anchor (settle-tail). Narrator:3 spine. Description fence-clean. Monument `monument-cost-borne-by-the-unconsenting` unresolved in warehouse: auditor SIGNAL, advisory. Dark-fantasy concern: prose-weight holds regardless of card-routing. Not blocking.
 
-**[memory:mem:2] @18 — "the patrol's line through the bend is older than the patrol"**
-accept: NI spine present (narrator:4 @18); scene-B flat-low, no peak-bones; displacement-cue construction discipline holds; Westerosi-monument clamp (institutional coercive geometry preceding the institution's current members) identifiable from description; free-text gloss target-reference is soft-path tolerance, structurally clear; advisory concern on margit referral but not blocking
-
-**[file-level] doubled-register shape:**
-flagged: if mem:1 is culled and not replaced, the file is single-register (Earth-Bet displacement absent, only Westerosi clamp at mem:2); the rubric's episode-level shape criterion requires at least one Earth-Bet displacement fire AND one Westerosi-monument clamp; revision must either cure mem:1 or provide a substitute Earth-Bet entry at a licit quiet-beat anchor with confirmed NI co-citation
-
----
+**[mem:2 @25]** — accept, with a line drawn. "A tongue that outlived the hand that set it" earns its weight because the ledger is a concrete artifact and the memory explains the architecture, not the moment. Borderline on stage-naming in the first clause ("she has felt the weight of that kind of word before") — saved by the second clause's cue-production. Peak-bone exception formally granted; resonance-not-action argument holds. Westerosi-monument-clamp flavor is Planetos-specific, not generic. Monument `monument-conquest-charter-language` unresolved in warehouse: same SIGNAL as mem:1. The line drawn: this two-clause construction should not recur without a distinct cue-shape in the second clause. One use earns it. A second use that follows the same approach-then-cue template reads as the author's chassis.
 
 # Convergence trace
 
-**mem:1 — NI co-citation:** The auditor r2 RESOLVED verdict on F-001 is a documentation-presence finding: the annotation block exists and parses. The auditor report does not adjudicate whether feel:1 satisfies the spirit or letter of the mandatory NI requirement. The distinction between "annotation present" and "defense legally sound" is exactly the seam adversarial audience reading exists to attack. No overlapping auditor finding; audience callout is independent.
+- [mem:1 @8]: auditor Class 4 CURVE-SHAPE: no finding (quiet-beat-licit, settle-tail). Auditor Class 8: hard-fence clean. Auditor Class 12 Dimension 3: narrator:3 pass. Auditor Dimension 4: SIGNAL on monument-cost-borne-by-the-unconsenting (unconfirmed warehouse card). Auditor AP-001 (cost/count vocabulary cluster in narrator) is thematically adjacent — the cost-register that mem:1 draws on is the same register AP-001 identifies as clustering in narrator:3, :4, :5. If the cost-vocabulary is not varied in b01c03, mem:1's weight will retroactively read as authorial chassis. Carry-forward advisory.
 
-**mem:1 — monument-card slug form:** URI-FACETS-CYCLE-1 was promoted to the rubric body after the r1 audience cycle raised it as a gap the mechanical scan does not enumerate. The auditor r2's F-001 scope did not include a re-check of the target-reference field's slug form — F-001 was diagnosed as an annotation-block-absence finding, and the fix criteria were annotation-block-presence criteria. The slug-form failure is a distinct axis that F-001 remediation did not address and that the r2 scope did not revisit. Audience callout surfaces a new gap not covered by any current HARD finding.
-
-**mem:2 — soft-path gloss:** Consistent with rubric's SIGNAL-level treatment of structurally clear free-text glosses. Auditor r1/r2 carry-forward of signal findings is consistent with advisory treatment here.
-
-**file-level doubled-register:** The rubric's episode-level shape criterion (§Curve-shape rubric / Episode-level shape) requires at least one Earth-Bet AND one Westerosi fire. With mem:1 failing, the Earth-Bet side loses its single representative. The auditor did not perform a named doubled-register check as part of r1 or r2 audits. Audience raises it as a downstream consequence of the mem:1 failure.
+- [mem:2 @25]: auditor pre-audit item 5 (peak-bone exception confirmed valid under R2.2). Auditor Class 4 CURVE-SHAPE: exception granted, distribution acceptable. Auditor Class 12 Dimension 3: narrator:5 co-citation pass. Auditor Dimension 4: SIGNAL on monument-conquest-charter-language (unconfirmed warehouse card). Stage-naming borderline concern on "she has felt the weight of that kind of word before" has no overlapping auditor finding — this is a dialect-audience attack on displacement-cue quality that the mechanical scan does not enumerate. Auditor AP-SCAN covers narrator vocabulary saturation; this concern is on memory-flags description-field voice. No mechanical convergence; noted as an independent adversarial callout. The two-clause construction carry-forward note (one use earns it; second use is author chassis) is also not enumerated by the auditor and is an audience-side addition.

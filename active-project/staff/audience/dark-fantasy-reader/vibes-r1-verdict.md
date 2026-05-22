@@ -2,59 +2,43 @@
 reviewer: dark-fantasy-reader
 facet: vibes
 cycle: 1
-episode: b01-c01
-date: 2026-05-20
-verdict: accept
+episode: b01c02
+date: 2026-05-21
+verdict: revise
 ---
 
 # Verdict reasoning
 
-Sitting back and reading this. The question is not whether the schema is tidy — that is the auditor's job. The question is whether the vibe-layer reads as the right world, the right texture, the right cost-structure for dark fantasy in a Westerosi setting.
+Sitting back. Waiting to be convinced this world carries weight.
 
-It does.
+What I am looking for from the vibes facet: do the permanent marks on these entities encode genuine consequence? Does the unpriced-residue token cluster tell a story about a world that does not forgive, or does it tell a story about a protagonist who keeps almost paying and never quite does? Does the Westerosi witness-vocabulary gap feel like the world absorbing something monstrous into its silence, or like set dressing?
 
-The off-screen block (vibes:1-6) does the correct thing for this genre: it establishes the world as pre-existing and indifferent. Penitential-grey, gallows-calendar, smallfolk-substrate are not atmosphere for the protagonists — they are the conditions of the district before anyone with a viewpoint arrived. Vibes:2's token `the-rhythm-that-is-the-law` is precise; the calendar of impositions is the law, not something law enforces. That is Westerosi materiality handled correctly. Vibes:3's `population-density-as-location-character` positions the ward as a place, not a backdrop. Both fire without any on-screen proto-line anchor, which is correct — these truths predate any beat.
+The near-witness entries (8 and 9) are the strongest work in this file. Entry 8: `the-social-fabric-that-registered-without-naming, anomaly-absorbed-into-district-memory, the-departure-that-carries-no-account`. Entry 9: `two-faces-that-crossed-the-lane, no-vocabulary-for-what-they-saw, the-gap-the-ledger-cannot-reach`. This is right. The district absorbs without naming. The cost is not a cost anyone can see or invoice. That is what Westerosi witnesses do — they feel the wrongness of what they saw, they do not have a category for it, and the district memory holds the shape of the thing with no word attached. This is the Planetos-specific fear response correctly encoded.
 
-The prohibition-load-bearing vibe (vibes:5) is the most important single entry in the file. `[rule-is-not-background-it-is-weight, dormancy-requires-ongoing-enforcement, the-central-discipline-named, capability-held-by-choice-not-absence]` — the last token is the one that matters. If the reader ever smells "the power isn't used because it isn't available," that is cheap darkness. The vibe explicitly marks the opposite: capability held by choice, not absence. That is dark fantasy's required cost structure — the dangerous thing is present and restrained, and the restraint costs.
+Entry 10 (Coll, never-names): `enacted-in-a-glance-not-speech, the-function-demonstrated-not-declared`. Correct. Coll's structural differentiation is permanent and it is loaded with consequences.
 
-The atonement-series vibe (vibes:6) fires at series scope with `atoning-by-repeating-the-architecture` — the structural irony installed at operator-bias level before the chapter's first beat. A downstream metaphor or NI author reading this will understand that Taylor is not solving the problem; she is re-enacting it. That is the correct shape for earned bleakness. It does not explain itself. It biases.
+The ledger entries (11-12): unpriced residue, the gap the ledger cannot close. These are doing the right work. The world does not let the accounting close. That is consequence that propagates.
 
-The gallows-calendar on-screen fire (vibes:15 at @18) correctly anchors to the city-watch passage — the enforcement beat in the smallfolk calendar, rendered as `watch-rotation-as-district-rhythm`. A downstream studio or sensory author biased by this will not describe the watch's passage as an event; they will describe it as a rhythm, which is the distinction between a world-as-set-dressing and a world-as-place.
+Now. Entry 14. `actor:taylor-hebert-kl-122ac ++ earning-collapse`. This keyword says collapse. The token bundle says actualization, crystallization, the moment the un-priced speaks back. These are not the same thing. A collapse is a cost coming due catastrophically — something failing under its own weight. A crystallization is a cost becoming visible and operational without yet being paid. The distinction matters enormously in a dark fantasy register: earning-collapse biases the operators toward the deflationary reading, toward "she loses something here." But the bundle describes the opposite — Wren speaking is the unpriced-thing becoming real, which is accumulation, not collapse.
 
-Wren's un-priced entry (vibes:21 at @27, `[not-entered-at-first-meeting, the-gap-in-the-ledger-begins-here]`) is the chapter's darkest operative move in the vibe layer. The gap does not announce itself. The vibe marks the ledger-gap-begins at the gaze-hold moment, not at a dialogue line or a decision. The world's cost structure has already begun before the character who will pay it has a name in Taylor's accounting. That is consequence that propagates from the correct origin point.
+If downstream operators read `earning-collapse` and bias toward deflationary register at @20, the scene comes out wrong. The weight has not accumulated enough for catharsis yet — and catharsis before the weight accumulates is my specific walkout trigger. Not quite there yet with this single entry, but the keyword is doing prep work toward premature deflation. That is a hard flag from me.
 
-Two concerns investigated but not escalated, addressed below.
+The permanence concern on vibes:1 (`routing-without-contact` on actor:taylor): from a dark-fantasy standpoint this is an AP1 near-miss. Would `routing-without-contact` still be true at b01c03 open? Probably not if the deployment architecture evolves. A permanent vibe on an actor should describe what that actor *is*, not what they did in b01c02's specific constraint. This feels like a scene-tone token miscategorized as an identity token. The world does not let Taylor off this lightly — and permanently marking her as "routing-without-contact" lets her off. It makes the first-deployment mode look like a settled permanent truth instead of a constraint she is already bending.
+
+These two concerns are live. The rest of the file carries genuine weight.
 
 ---
 
 # Entry-level callouts
 
-**[vibes:4] — operating-rule-intact: token register check**
+`[vibes:14] @20 — `earning-collapse` as keyword biases operators deflationary when the event is accumulation. The un-priced speaking back is weight building, not weight discharging. A dialogue-writer reading this keyword will write the @20 exchange as diminishment; the token bundle says crystallization. The keyword is wrong and it is doing prep work toward catharsis-before-accumulation, which I will not tolerate. Rename: `wren-layer-made-operational` or `un-priced-crystallization`. The bundle is fine; the handle is doing the wrong work.`
 
-`[prohibition-active-and-unchallenged, chapter-closes-with-the-rule-standing, baseline-before-the-first-exception, the-intact-form]` — two of these tokens (`chapter-closes-with-the-rule-standing`, `baseline-before-the-first-exception`) are mildly prospective in register. They encode the rule's status by projecting forward to chapter-close rather than describing the present state of the prohibition. For a dark-fantasy reader, the concern is whether this prospective framing primes a relief register — the rule is intact now, therefore there is safety now. The surrounding bundle corrects this: vibes:5's `capability-held-by-choice-not-absence` marks that the absence of exception is an expenditure, not a gift. In aggregate the bundle reads as deferred-cost, not relief. The individual tokens are slightly loose but do not break the vibe's operator-bias function.
-
-Status: no finding. Aggregate bundle context overrides the individual token ambiguity.
-
-**[vibes:20 / vibes:21] @25/@27 — dual-anchor and competing register at @27**
-
-Vibes:20 declared anchor @25; cite-index records `lic-out=[proto:25, proto:27]`. Vibes:21 fires fresh at @27. Both appear in the @27 pile-up (auditor verdict: warranted).
-
-The concern from a dark-fantasy-reader standpoint: @27 is the chapter's closing beat — Taylor holds Wren's gaze without completing the assessment, returns to needle. This should read as the ledger-gap-begins beat, which is vibes:21's function. Vibes:20's atonement-register (`rule-intact-at-first-contact-with-cost-bearer, prohibition-holds-through-the-child-question`) is a confirmation-of-discipline signal. A downstream stitcher biased by both at @27 may generate a closing image that reads as "discipline confirmed, cost deferred" rather than "gap opens, cost begins." The distinction matters: the first version softens the chapter's dark-fantasy edge; the second preserves the consequence-propagating structure.
-
-This is where the dual-anchor matters for my reading. If vibes:20 lic-out-fires at @27, the atonement-holds signal competes with the gap-opens signal (vibes:21) at the same beat. For this genre, the gap-opens beat should dominate the closing image. The dual-citation risks flattening that dominance.
-
-Verdict on the dual-anchor: the lic-out reading (auditor's softer interpretation) is defensible — the proto:27 citation is citation accumulation, not a second author-fire, and vibes:20 is not re-authored with @27 as its primary anchor. The rendered output will weight the signals by what the stitcher reads in the bones file decoration, and the bones file at @27 carries `[vibes:20] [vibes:21]` both. The competition is real. But it does not constitute a rule violation, and the gap-opens signal is present in the vibe layer regardless of whether the atonement signal is also present.
-
-Status: soft flag. The dual-citation creates a register-competition at the chapter's most load-bearing closing beat. Does not rise to revise because the darker register (gap-opens) is present and correctly placed via vibes:21; the atonement signal's bleed is a rendering-quality concern, not a structural failure.
+`[vibes:1] @5 — `routing-without-contact` on `actor:taylor` as a permanent mark does not describe who Taylor is — it describes one moment's constraint. Permanent actor vibes should encode durable character-truth (what she is, what marks her), not the specific mode of a first deployment. If b01c03 shows the architecture evolving, this token will be asserting a world that accommodates her rather than one that costs her. Move to episode scope.`
 
 ---
 
 # Convergence trace
 
-- **[vibes:20] dual-anchor and register-competition** → overlaps auditor S-006 (DEDUP SIGNAL: vibes:20 dual-anchor). Auditor stops at citation-schema level. This reviewer adds the consequence: at the chapter's closing beat, the atonement-holds register bleeds into the gap-opens beat, potentially softening the chapter's dark-fantasy close. Both arrive at SIGNAL; neither escalates to revise or fail from this position.
+- `[vibes:14] @20` — converges with auditor flag-006 (TASTE-FLAG, TF-001): keyword ambiguity causing operator misdirection. The auditor identifies the misdirection mechanism (keyword vs. bundle); the dark-fantasy reader identifies the consequence: premature-deflation risk. The auditor framed it as advisory; the audience escalates it to revise trigger. The dark-fantasy fatigue pattern (catharsis-that-isn't-earned) is the downstream failure mode at stake.
 
-- **[vibes:5] prohibition-load-bearing and [vibes:6] atonement-series** → no auditor finding. These are the entries this reviewer cares most about; both pass adversarial reading cleanly. `capability-held-by-choice-not-absence` and `atoning-by-repeating-the-architecture` are exactly the correct operator-bias tokens for earned bleakness without cheap hope.
-
-- **[vibes:15] gallows-calendar @18 co-pile with exposition and loc-state** → auditor pile-up verdict: warranted. This reviewer concurs; the watch-passage-as-rhythm vs watch-passage-as-event distinction is precisely what the gallows-calendar vibe licenses, and its co-presence with loc-state:4 and exposition:6 at @18 does not dilute it.
-
-- **No vibes-specific HARD findings in r1 or r2 auditor reports.** The facet's two SIGNAL findings (S-006, S-007) are citation-schema concerns, not structural or content failures. The vibe layer is sound for this genre.
+- `[vibes:1] @5` — converges with auditor flag-007 (PILE-UP-REVIEW, PU-001): permanence question on actor target. The dark-fantasy reader's objection is the world-accommodation frame: a permanent actor vibe that asserts "routing without contact" makes the world look like it does not fully resist the protagonist — a strong flag in this persona's register. Target-scope correction (episode, not actor) resolves both the auditor's staleness concern and the dark-fantasy accommodation-of-protagonist concern.

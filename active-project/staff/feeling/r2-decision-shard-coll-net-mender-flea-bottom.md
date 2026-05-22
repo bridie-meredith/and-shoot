@@ -1,26 +1,18 @@
 ---
 facet: feeling
-episode: b01c01
-layer: R2
+episode: b01c02
+layer: R2.3
 character: coll-net-mender-flea-bottom
-f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
+cite_index_hash: 7fb82f0caa9c055b998f3e5ea32bda516cd64f170329d49a22f8fb11a39d08f6
+f-r2-counts: {f-r2-1: 1, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
 ---
 
-# R2 decision shard — feeling — coll-net-mender-flea-bottom — b01c01
+# R2.3 — feeling judge, coll-net-mender-flea-bottom
 
-R1 produced zero fires for Coll across his three on-stage beats (@3, @4, @9), defaulting to silence per rubric. Coming to the file cold as R2, the question is whether any beat licenses a somatic-tell that R1 missed — specifically, whether a memory or NI co-cite at one of Coll's anchors opens a non-redundant interior the proto-line and persona-card together leave invisible. The cite-index shows none: @3 carries only the dialogue + exposition + state + vibes citations (no memory, no NI — and NI is POV-only anyway, so for non-POV Coll the relevant co-cite would be a memory-flag or sensory inflection at a Coll-anchor, which is absent at @3, @4, and @9). The at-rest reading of his persona card confirms what R1 saw — hard fence #2 explicitly forbids interpretive register, hard fence #1 forbids naming, the card §Voice shows him as flat-factual ("Same woman. Foreign face. Watches things."), and the state file carries `taylor_pattern_registered: not-yet`. There is no interior at day-of-arrival to render somatically; the pattern that would register hasn't yet, and the gesture of extending the needle is the block's ambient form per the shared brief, not a personal disposition.
+feel:1 @12 — Reading this cold, two things surface before any rubric question. First the form: "drops his eyes back to the mesh on his knees and the shuttle takes the next stitch" is a compound, and the second clause's subject is the shuttle, not Coll. The rubric's one-clause REJECT signature names exactly this — a sentence-final clause whose subject is an object/abstraction rather than the body-doing-the-action has exited the somatic register. "The shuttle takes the next stitch" is the work resuming, a separate event, not Coll's body showing an interior. Strip it and what is left — "drops his eyes back to the mesh" — is Coll's default stance, the seated-shuttle posture his card names as his at-rest position. Second, and worse for the entry: the @12 beat is not invisible. The locked graph already carries it three ways. vibes:10 @12 fires `never-names: [enacted-in-a-glance-not-speech, the-function-demonstrated-not-declared]`; state:10 @12 writes `taylor_pattern_registered: not-yet -> registered-as-anomaly`; and the proto-line pair @12 "lifts the eyes" / @13 "pulls the net" stages the whole glance-and-return on its own. The feeling-flag's content is the return-to-work — which is precisely @13's proto-line and precisely what vibes:10's "enacted-in-a-glance-not-speech" licenses. There is no interior left for a feeling-flag to make visible; the show-not-tell layer has nothing to license. That is a Q1 failure. And the Q2 failure is structural to the character: Coll's card states "non-interpretive register," "the most non-interpretive of the cast," and his Action Costs section reads "None that land in the story. He is the ambient register." His hard fences forbid interpretive performance. A feeling-flag fired on him is anti-pattern 5 — procedural-flat-character forced — and the calibration anchors C1/C2 are the precedent: when the proto-line is the tell, the flag refuses. The brief's own caution ("non-interpretive fixture — guard against over-firing") points the same way. Three independent grounds, each sufficient: second-clause subject-shift form failure, Q1 redundancy against vibes:10 + state:10 + the @12/@13 proto-lines, and Q2 failure against a card that forbids scene-facing interior.
+VERDICT: DELETE (cascade 0)
 
-R1's three refusals stand without revision. No R2 adds.
+PATTERN-SCAN: One-entry slice; no within-character pattern to catch. The cross-character note is that the @12 beat is well-covered by vibes and state-updates already, and a feeling-flag here would have triplicated a registration the graph carries twice — the deletion removes a redundancy, not a distinct register. Coll's slice is now correctly empty; a non-interpretive ambient fixture firing zero feeling-flags is the rubric-correct shape, not under-coverage.
 
-feel-coll:- @3 coll speaks to taylor — the proto-line is the dialogue beat and the dialogue carries the factual-observational register the card §Voice anchors to ("She was by the Fish Gate lane two mornings running last week"). The cold read produces no unease — there is no hidden interior here to disambiguate, because by card construction Coll's interior at this register is its surface. Q1 fails. No memory or NI co-cite at @3 licenses a tell R1 missed. The at-rest reading does not want this entry.
-VERDICT: KEEP (R1 refusal stands)
-
-feel-coll:- @4 coll extends the needle — the gesture is the block's ambient form per the shared brief, not a personal courtesy gesture loaded with disposition. The proto-line IS the gesture; loading interior under it would name something the persona card explicitly fences against (hard fence #2, non-interpretive register). The cold read against the card produces the same refusal R1 produced. The at-rest reading does not want this entry — the wanting would only appear if I were filling a niche revealed by the absence of any cite at @4, which is exactly the dishonest motive G2 names.
-VERDICT: KEEP (R1 refusal stands)
-
-feel-coll:- @9 coll faces the street — return to default stance per card. The state file is the load-bearing evidence here: `taylor_pattern_registered: not-yet`. Coll has nothing to register somatically at this beat because the pattern that would eventually register (around d06) has not registered yet on day-of-arrival. Q2 fails — there is no structural interior at this beat to render. The cold read finds nothing; the at-rest reading finds nothing.
-VERDICT: KEEP (R1 refusal stands)
-
-PATTERN-SCAN: The Coll slice is a zero-fires file by design. Nothing patterned to flag — the absence is the correct shape for a stationary non-interpretive fixture on day-of-arrival, per persona card §Hard Fences and the state file's `taylor_pattern_registered: not-yet`. The file's shape will start to want a fire from approximately d06 onward when the pattern becomes registerable, but that is a downstream-chapter concern.
-
-CAP-REFUSAL: (none — no candidates approached the cap; the at-rest reading refused all three on-stage beats at the persona-card / Q1 / Q2 level before cap arithmetic mattered)
+CAP-REFUSAL: feel:<candidate> @10 — Coll works the net; default stance, no cost, no invisible interior. Adding here would be the niche-driven motive G2 names — there is room, not a wanting.
+CAP-REFUSAL: feel:<candidate> @13 — Coll pulls the net; same default work register. The proto-line is the act; no somatic cost to license. Refused.

@@ -2,40 +2,43 @@
 reviewer: dark-fantasy-reader
 facet: state-updates
 cycle: 1
-episode: b01-c01
-date: 2026-05-20
+episode: b01c02
+date: 2026-05-21
 verdict: revise
 ---
 
 # Verdict reasoning
 
-The world-side entries hold. Coll's work-cycle (between-days to at-work-on-net to day-packed-net-folded) is the file's best structural achievement: Flea Bottom's daily rhythm existed before Taylor arrived and ends on its own schedule with no regard for her. The thermal drop at @16, the net-condition close at @20, Wren's location flips at @22 and @28 — these are all entries where the world moves, not where Taylor's perception of it gets written into canonical memory. That is the correct use of state-updates. The needle-cycle within the chapter (not-held to in-hand to returned-to-work-set to in-hand again at @29) is clean inventory tracking without inflated significance.
+I'll start with what works. The oc-prop accounting sequence (state:3-9 covering lamp, ledger, pen) is actually doing something right — the physical objects tracking the moral accounting is consistent with the dark register this chapter is working in. A lamp that goes lit, a ledger that opens, an entry that gets struck and then underlined, a pen set down, the ledger closed — that's a genuine accumulation of physical weight. It earns its density.
 
-What fails is simpler and less interesting than an entry-quality debate: the defense for the 8 taylor-state entries with no NI co-citation is not in the deliverable file. The consolidated `state-updates.md` goes from frontmatter close to `# source: env` with nothing between them. The `# rubric-carve-out` annotation block, which exists in the per-character source file and does the work of justifying the NI-absence across the entire taylor-state section, was not propagated to the consolidated file at the required position. The auditor has named this as fault-001 and blocked the gate.
+The deployment entries (state:1, state:2) at @1 and @5 are clean world-mechanics writes that I don't contest.
 
-The reason this bothers me beyond the mechanical compliance issue: the two "accepted-with-defense" entries — knowledge.coll-pattern at @20 and social-state.with-wren at @25 — are the chapter's load-bearing relationship pivots. The coll-pattern read says Taylor has now mapped a person's daily rhythm into operational memory. The wren social-state says the ward-relationship is open, tagged, persistent. These are exactly the entries that need the clearest chain of justification, because they are the ones that will shape how future chapters read Taylor's social awareness. If the defense for leaving them uncovered by NI lives only in a source file that may not travel with the consolidated artifact, those entries are carrying canonical weight without visible grounding. That is the kind of gap that costs something later.
+What does not work is the Wren social-registration cluster.
+
+State:12 @15: `actor:taylor-hebert-kl-122ac.social-tether-wren: peripheral-permitted-attachment -> crystallized-observer-bond`. State:15 @15: `actor:wren-stitch-maker-flea-bottom-ward.stats.taylor_awareness: observed-and-decided-not-to-ask -> attachment-crystallized-deliberate-observer`.
+
+These two entries describe a mutual crystallization event between Taylor and Wren at the scene-B peak. A Westerosi smallfolk ward has watched a stranger command insects to seal an alley and redirect a watch patrol — and the state-update records that she became a "deliberate observer." My hot button is characters reacting to Worm-world elements with the wrong flavor of shock. "Attachment-crystallized-deliberate-observer" is a curious-rational-tracker response. A Flea Bottom child who witnessed the flies going round someone and the lane going quiet after would carry dread alongside any pull. The state-field labels bake in a sanitized rational response: Wren observed, decided not to ask, and now has crystallized attachment. The decision-not-to-ask moment is the closest this gets to appropriate Westerosi register — that restraint reads true. But crystallized attachment is too clean a positive outcome. It strips the superstition note, the fear register, the wrongness that a smallfolk would carry alongside whatever pull Taylor has earned.
+
+The world was there before Taylor arrived. A Flea Bottom ward who has lived in it doesn't experience anomalous fly-command as a tactical fact about an interesting new person. She experiences it as something that doesn't have a name yet and probably shouldn't. The state-update encodes the rational version of a reaction that should be carrying uncanny weight.
+
+State:13 @25: `knowledge.flea-bottom-social-physics: observational-sweep-pattern -> categorical-structural`. Taylor moves to categorical structural knowledge of Flea Bottom social mechanics after one accounting of one sweep. This is the earned-bleakness concern: cheap cognitive gain. Dark fantasy doesn't let its protagonists synthesize their environment this cleanly this fast. The world pushes back. The gap between "I've seen this pattern" and "I understand the structure" should cost something — time, error, consequence. The jump here is too smooth.
+
+These three entries together produce a chapter-close state where: Taylor has categorically understood the social physics (state:13), formed a crystallized social bond (state:12), and Wren has achieved deliberate-observer attachment (state:15). That is three positive-register outcomes from one sweep encounter. The dark-fantasy register demands that at least one of these costs something the text shows.
+
+The auditor's flag-008 (density 55.6%) touches this obliquely — but the density concern I care about isn't the count, it's that the positive-register outcomes cluster here without visible cost in the state graph.
 
 # Entry-level callouts
 
-[state-updates:state:8] @20 — `actor:taylor-hebert-kl-122ac.knowledge.coll-pattern: unread -> day-cycle-pattern-read`
-A full working-day observation cycle closes here. The knowledge-state accumulation is earned — this is not a single-pass registration, it is an end-of-day inventory of what one afternoon of proximity produced. The field-extension is sound. But the rubric requires NI co-citation on knowledge.* entries, and the defense for why that co-citation is absent (flat-low rhythm-shape at scene-B close, NI:4 @18 carries the cost register, third NI fire would breach band ceiling) lives only in the source file. Without the carve-out annotation in the consolidated file, this entry's NI-absence has no on-file justification. The defense is good; its location is wrong.
+[state-updates:15] @15 — `actor:wren-stitch-maker-flea-bottom-ward.stats.taylor_awareness: observed-and-decided-not-to-ask -> attachment-crystallized-deliberate-observer`. "Attachment-crystallized-deliberate-observer" is the wrong flavor of Westerosi smallfolk response to witnessed uncanny power. The rational-tracker label erases the fear and superstition that should be load-bearing in this world. A state that described something like "observed-uncanny-proximity-chosen-despite-dread" would be closer to register. As written it reads like a curious reader decided to keep watching, not a smallfolk child who just saw the flies obey someone.
 
-[state-updates:state:17] @25 — `actor:taylor-hebert-kl-122ac.social-state.with-wren: unknown-ward -> spoken-once`
-The wren relationship opens here. This is the chapter's terminal seam — the goal statement names it ("the ward it will fail to protect"). The social-state flip at @25 is real, persistent, and load-bearing for the entire series arc. The absence of NI co-citation on this entry is defended in the source file by the argument that the speech-act IS the delta-producer and NI:6 @27 resolves the interior register two beats later. That argument holds — the speech act is the moment of contact, not a perception of a pre-existing state. But the defense is not in the consolidated file. This entry is the chapter's highest-stakes state write. Its defense should be the most visible. It is currently invisible at the consolidated level.
+[state-updates:12] @15 — `actor:taylor-hebert-kl-122ac.social-tether-wren: peripheral-permitted-attachment -> crystallized-observer-bond`. The crystallization is too clean and too fast. One shared encounter (even a charged one) producing "crystallized" bond with a Flea Bottom ward Taylor has only permitted to be peripheral — that's hope-that-costs-nothing. The field should reflect that the bond is forming, fragile, not yet earned. "Crystallized" is a word for something finished, and this isn't finished yet.
 
-[state-updates:state:5] @20 — `prop:net.condition: worked-extended -> folded`
-Coll folds the net. The world closes its workday. This is the entry I would read aloud as the file's cleanest beat: no actor-state complexity, no cross-facet contract, no defense required. The world does what it does. Correct.
-
-[state-updates:state:19] @22 — `actor:wren-stitch-maker-flea-bottom-ward.location: stitch-maker-household-hook-district -> flea-bottom-street-near-taylor`
-Wren arrives from her own household. The location entry names where she came from. That detail — stitch-maker-household-hook-district — means the ward has a fixed address in the block, which is load-bearing for the series (she can be found, she can be lost). Clean entry, correct fire.
-
-[state-updates:state:21] @28 + [state-updates:state:22] @28 — Wren's departure entries
-Location and social-engagement both close at @28. The two-entry pair on the same beat is correctly structured (one per field, frugality honored). The closing of the social-engagement field to not-engaging is clean. No complaint.
+[state-updates:13] @25 — `knowledge.flea-bottom-social-physics: observational-sweep-pattern -> categorical-structural`. One sweep, one accounting. The world doesn't hand categorical structural understanding over in a single encounter. This is the cognitive equivalent of violence-without-aftermath: knowledge-without-cost. Something more provisional — structural-hypothesis or preliminary-categorical — would fit the dark register better without breaking the substance contract.
 
 # Convergence trace
 
-[state-updates:state:8] @20 — directly overlaps fault-001 (F-006 UNRESOLVED): knowledge.coll-pattern is named in the auditor's criteria as one of the two "accepted-with-defense" entries requiring explicit classification in the carve-out block.
+- [state-updates:15] and [state-updates:12]: the auditor's flag-003 (CONTRADICTION class) examined these two entries for cross-graph consistency and found no canonical contradiction between them. That pass confirms they are internally consistent with each other. My attack is not on consistency but on register — the consistent picture they paint is the wrong Westerosi register for uncanny-encounter aftermath. The auditor's mechanical scan cannot catch this; it is the seam I am attacking.
 
-[state-updates:state:17] @25 — directly overlaps fault-001 (F-006 UNRESOLVED): social-state.with-wren is the second "accepted-with-defense" entry. The auditor's criteria (b) require it to be named and (c) require §Anti-patterns #9 citation as the reason NI entries were not added.
+- [state-updates:13]: overlaps with auditor's fault-002/RF-001 (resolved — re-anchored to @25 with NI co-citation). The re-anchor is formally correct. My attack is on the value of `categorical-structural` as a knowledge state reachable in one chapter, not on the anchor or co-citation. The auditor's RUBRIC-FIDELITY check did not evaluate whether the knowledge claim is substantively earned; it checked that the form and co-citation are compliant.
 
-[state-updates — file-level] — the auditor's fault-001 is the direct mechanical finding this verdict tracks. The carve-out block exists in the source file; it did not propagate to the consolidated deliverable. The fixer report claimed execution; the file shows otherwise. Single actionable fix: insert the annotation block at the correct position in the consolidated file.
+- All three callouts are in the seam between the auditor's Reality-axis mechanical strip-test (does the field change persist?) and whether the change is register-correct and cost-proportionate. The auditor's Reality axis does not check cost-proportionality; that is what I am checking here.

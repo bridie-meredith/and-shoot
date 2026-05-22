@@ -2,25 +2,47 @@
 reviewer: dark-fantasy-reader
 facet: interest-narrator
 cycle: 1
-episode: b01-c01
-date: 2026-05-20
-verdict: revise
+episode: b01c02
+date: 2026-05-21
+verdict: accept
 ---
 
 # Verdict reasoning
 
-The rewritten entries cleared the chassis problem and two of the three are better for it — NI-2 @6 now earns its fire by mapping the block's social architecture through her read, which is the kind of thing a person who processes space differently would actually notice first, and NI-5 @22 ("a girl comes in through the swarm before she comes in through the door") is the chapter's best entry: it smells like Flea Bottom and registers what makes Taylor's perception alien without labeling it. NI-1 @4 is where the file earns its revise: "the network has him before he has her" is a technocratic label dropped into a setting where labels like that belong to a different world, and the auditor flagged it as atmosphere-thin for exactly this reason — the entry announces the mechanism instead of rendering the sensation of being ahead of someone before they know you exist. NI-6 @27's rewrite is safe but slightly hollow; the doubled-register problem from cycle 1 has not been addressed. Wren is on-stage from @22 onward and the rubric names child-harm adjacency as a displacement trigger. No displacement fire lands. The chapter's declared goal is "the ward it will fail to protect" and the narrator registers Wren only as an unfiled name. That is correct behavior for the operating rule, but the interior register should feel the cost of the suppression — not state it the way NI-6 states it, but carry the weight of refusing to look directly, which is the Earth-Bet shadow the rubric requires to be visible.
+Six fires. This reader sits back and waits. The file needs to show that the world is actually pressing against the protagonist — that her interiority registers cost, not capability.
 
-# Entry-level callouts (revise / fail only)
+It does. Mostly.
 
-- [narrator:1] @4 — "the network has him before he has her": "the network" is a mechanism-label that belongs to a different world's taxonomy; the setting is Flea Bottom and the reader has not been given a frame for what "the network" means in this scene's terms; the entry should render what it feels like to know before the other person moves — the anticipation of motion before it starts — not name the instrument that produces the advantage; atmosphere-thin, mechanism-declared-before-earned
+The two anchors I'm waiting for in any Taylor-Westeros chapter are: does the world push back in ways she cannot account for? And does her doubled register show — the Earth-Bet cognition inside the Westerosi body, both of them present at once? Both land here.
 
-- [narrator:6] @27 — "she will not write the name above the block, not in the feed and not on the page she keeps for herself": the rule-statement is clear and the grammar of the doubled self ("the feed and the page") does real work; but this is a fire on a child-proximity beat where the displacement-trigger channel is licensed and the interior register should show strain, not policy; "she will not write" is mask-register discipline declared as fact — it is what she does, not what it costs to do it; the rubric requires the Earth-Bet shadow to surface at displacement triggers; a protector-figure-withholding-the-name beat is the closest this chapter comes to a displacement trigger and the entry renders it as rulemaking instead of as refusal under pressure; revise toward the gap-narration pattern the rubric calibration anchor uses for the refusal-to-look channel
+@4 opens with the body catching up to a reading already filed. That is not a character who is on top of her situation — that is a character whose machinery runs faster than she can consciously track, and the body-lag is the tell. The world pressed first (the watch column formed); she processed it before she knew she was processing it. That is correct consequence-propagation: the threat moved, she moved, her body is last to know. No heroic beat here. Just a process running.
 
-- [File-level: doubled-register absent across all six entries] — every fire in this file runs in operational base-register (cost-tracking, passive-fauna, route-read); zero entries show Earth-Bet shadow or foreknowledge-clamp; the rubric's episode-level shape requirement (b) states "base-register interior with Earth-Bet shadow and Dance-foreknowledge-clamp visible at displacement triggers and Westerosi-monument adjacency" must appear; Wren's arrival at @22 is the chapter's licensed displacement-trigger anchor; the narrator-interest file contains no entry that makes the doubled register visible at or near that anchor
+@5 is the self-justification beat: "routing is what the prohibition still permits her to call clean." The word "still" carries weight — the prohibition is already bending at the second real test of the chapter, and she's checking whether she can still file it as clean. That is earned darkness: not the action, but the accounting that follows the action, and the accounting is already looking for a favorable interpretation. The world didn't stop because the protagonist needed it to stop; she routed around the problem and is now filing paperwork on whether that counts.
+
+@8 prices the exposure: "the watch-cost of being seen has just been priced to a count she did not choose." What I want from this entry is that the cost is real and she didn't control it. "A count she did not choose" — someone else's dwell-time set the price of her exposure. That is a consequence propagating from outside her control. The near-witness did not look away on cue; the price was set by faces she didn't pick (confirmed in mem:1's phrasing from the cite-index: "the count of who saw was set by faces she did not pick"). This is the world operating independently of the protagonist's needs. I'll take it.
+
+@15 is where I have the most time with the entry, because @15 is the moment where someone sees her — really sees her, past the cover — and that is the catastrophe this reader is waiting for. "Wren is looking at her the way you look at a thing you have decided about, and that look does not have a column in the ledger." The entry lands the recognition correctly: the look has no price, no column. The accounting system breaks here. The world has presented something the protagonist cannot file. That is consequence arriving without a receipt.
+
+The dark-fantasy concern would be: does this read as threat or as warmth? Wren deciding about Taylor should be terrifying in a world where discovery means danger. The entry is clinical about the break in the ledger, which is correct — the clinical register is doing the work that atmospheric horror would do in a lesser text. The gap between the flat register and the catastrophic content is where the darkness lives. I'm satisfied by the clinical-of-the-horrible here.
+
+@25: "the pen lifts before the strike finishes; she had already counted what the entry would not hold, and the count is short." The ledger cannot balance. She knows it while she's still striking the line. That is the chapter's substance event rendered from inside — the accounting that was always going to come up short, and she watches it come up short in real time, faster than the pen can complete its motion. Pre-calc surfacing on the failure, not the success. That is earned bleakness.
+
+@28: "the hand stays where it is — the reach is cleared, the body could close it, and the not-closing is the only line tonight she is sure of." The body can reach. The cognition holds it. "The only line tonight she is sure of" — everything else in the chapter is uncertain, including the clean-accounting of the prohibition. The not-closing is the one thing she can hold. This is restraint registered as the last solid thing in a chapter where everything else is slipping. That lands.
+
+On flag-005: the cost/count vocabulary cluster across narrator:3/4/5. The dark-fantasy reader does not have a fatigue trigger on accounting vocabulary — this reader has a fatigue trigger on suffering that doesn't propagate and hope that costs nothing. The cost-language is doing the opposite of the fatigue pattern: it is naming the price of every action in a world where prices accumulate. Three fires using cost-register vocabulary is Taylor's world working on her consistently through the chapter's middle section. That is consequence propagating, not cosmetic darkness. The vocabulary cluster is a feature, not a fault, from this reader's lens.
+
+The one place I pushed on: narrator:4 (@15) needs the look to read as threatening — as discovery, not as connection. "A thing you have decided about" is ambiguous between threat-read and attachment-read. The clinical "no column in the ledger" keeps it from resolving into warmth. I would have preferred the entry name the specific register of the look — decided-about as predatory, as fixed, as something Taylor cannot manipulate because it has already finished deciding. But the clinical frame holds the ambiguity correctly for a dark-fantasy read: the look cannot be priced, which means it cannot be managed, which is the dark register this reader needs. Marginally accept.
+
+File-level: the file shows a protagonist who does not get to win cleanly, who bends the prohibition and files the accounting as favorable, who watches a discovery she cannot price, who runs the ledger and finds it short. The world has pressed back at every turn and she is less certain at @28 than she was at @4. That is correct doubled-register shape for a dark-fantasy read.
+
+# Entry-level callouts
+
+None. All six entries accept on dark-fantasy adversarial reading. Narrator:4's ambiguity noted above is a marginal concern but does not breach any rubric axis.
 
 # Convergence trace
 
-- [narrator:1] @4: auditor Phase 5 r1 TASTE-FLAG (signal, S-series carry-forward): "atmosphere-thin label 'the network' near Earth-Bet boundary" — directly convergent; the auditor named the atmosphere problem from the mechanical side; this callout attacks from the reading-experience side (the label announces a mechanism in a setting that hasn't earned the vocabulary)
-- [narrator:6] @27: no auditor convergence; the auditor's r2 F-005 verification confirmed the rewrite cleared the AP-template but did not assess the earning axis post-rewrite; this callout is reader-side-only
-- [File-level doubled-register]: auditor SHAPE-OK verdict in r1 did not fully verify requirement (b); this callout was raised in cycle 1 (dark-fantasy-reader r1 verdict, 2026-05-19) and was not addressed by the fixer; prior feedback not addressed = escalated demand: the doubled-register absence is not advisory, it is a revise-blocker for this reviewer
+flag-005 (AP-SCAN, cost/count vocabulary cluster): CLEARED from this reviewer's lens. Cost-language is the correct register for a chapter whose substance event is an accounting that cannot close. Three of six fires using this register is consequence propagation, not authorial chassis. The dark-fantasy reader does not flag vocabulary that names price and accumulation; it flags hope that costs nothing. This file names cost on every fire. No overlap with revise demand from this reviewer.
+
+Partial convergence with cape-fic-reader callout on narrator:4 (channel ambiguity at @15): this reviewer notes the ambiguity (threat-read vs. attachment-read) but finds the clinical "no column" frame resolves it acceptably. Cape-fic-reader's channel-differentiation demand (age-mismatch explicit) is a reasonable escalation this reviewer does not independently share but does not dispute as a rubric basis.
+
+No overlap with HARD findings (fault-001, fault-002 — both closed at cycle-2).

@@ -2,45 +2,43 @@
 reviewer: sensory-disambiguation-pedant
 facet: sensory
 cycle: 3
-episode: b01-c01
-date: 2026-05-20
+episode: b01c02
+date: 2026-05-22
 verdict: accept
 ---
 
 # Verdict reasoning
 
-Cycle-2 I accepted. My single finding from cycle-1 — sensory:2 @16, action-verb-self-charge ("the walls cool"; "cool" IS the thermal event) — was cut at cycle-2. That finding is satisfied and closed. Cycle-2 the surviving file had one entry: sensory:1 @3 (light), which I accepted then and hold now.
+This is the final cycle. The file under review is one entry: sensory:1 @7. sensory:2 has been deleted and replaced with a canonical deletion marker naming the architectural reason: the sole non-sound inflection beat (@22 "lights the lamp") is action-verb self-charged, and every subsequent bone is settled-state.
 
-Cycle-3 adds one entry: sensory:3 @17. I run it through the disambiguation gate.
+My cycle-2 verdict named the only clean resolution: cut the entry. The fixer did exactly that. I apply the disambiguation gate to the surviving entry and assess whether the deletion record itself is correctly characterized.
 
-**sensory:3 @17** — `sound: street-quiet-of-mid-afternoon -> bootfall-on-cobbles-from-the-Hook-bend`
+**sensory:1 @7 — sound: watch-press-alley-ambient -> watch-column-footfall**
 
-Proto-line @17: `the boots strike the cobbles`
+Proto-line: `the city-watch passes the hook`. Unchanged across all three cycles. `passes` is bare locomotion — no perceptual register in the language. The column's audible footfall texture (boots on stone, echo off the Hook arch) is not carried by the verb. Sound is the natural modality for a military column in motion; the modality matches the bare-word's perceptual axis. No charged word. No action-verb self-charge — `passes` does not name a sound event, it names spatial transit; the sound is the background consequence of the transit, not the transit itself. Old-state from loc-state:2 @4 conditions note (unaltered this cycle). PASS on all four disambiguation-gate questions.
 
-Bare-vs-charged audit: "strike" is a plain impact verb. I hold it against the action-verb-self-charge class from my card: "lights the lamp," "opens the shutter," "ignites the candle," "extinguishes." Those verbs ARE the perceptual event — the lamp-light comes on, the dawn cuts in, the flame catches. "Strike" names a physical contact. It does not name an auditory event. "Boots strike the cobbles" tells the audience contact occurred; it does not tell the audience what they hear — the specific register of city-watch bootfall on stone, the rhythm distinguishable from ordinary foot-traffic on an afternoon street. The sound modality is not self-carried by "strike." The proto-line is bare on the sound axis.
+**sensory:2 DELETED — deletion assessment**
 
-This is distinct from "the thunder cracks" or "a shriek cuts through" — those words carry their volume. "Strike" carries impact; the acoustic register of cobblestone bootfall is the flag's work, not the word's.
+The deletion marker text: "no valid anchor (inflection beat @22 is action-verb self-charge; post-beats settled-state); cycle-3 A3 no-ADD-budget (cap-burn cycle 3, 2026-05-22)."
 
-Modality match: sound is the natural axis for a bootfall event. Correct.
+I check whether the deletion is correctly characterized as a self-charge case versus some other failure mode. My cycle-2 analysis: @22 `lights the lamp` — "lights" names the light event; the action-verb IS the perceptual act; same class as `ignites / extinguishes / catches`. Action-verb self-charge is the correct diagnosis. Post-@22 is settled lamp-lit state; a fire on any of those beats would be sustained-as-inflection, not an inflection beat. The cycle-3 fixer's proto-line walk (fix log, Callout B) surveyed @1-@5 (visual self-charge on "fill" / "close"); @6 (loc-state domain); @19, @20 (speech events, no non-sound inflection); @25-@29 (accounting gestures, settled state). The conclusion — no genuine non-sound inflection exists in b01c02 that satisfies the full rubric — is architecturally correct. I cannot find a counter-candidate the walk missed.
 
-Delta description: `street-quiet-of-mid-afternoon -> bootfall-on-cobbles-from-the-Hook-bend`. New-state names a specific onset (bootfall, directional cue from the Hook bend). Not generic: "bootfall-on-cobbles-from-the-Hook-bend" is specific enough to distinguish from general foot-traffic. Old-state is the old-state-reader's lane; I do not adjudicate lineage.
+The A3 no-ADD-budget clause (rubric anti-pattern §14 URI-FACETS-V3-CYCLE-N-ADD) correctly prohibits manufacturing a fire at the final cycle. The prohibition exists precisely because b01c01 cycle-3 produced an ADD that introduced a fresh HARD with no cycle left to fix it. The prohibition is not a technicality; it is the rubric's live load-bearing rule at this stage.
 
-Inflection class: this is a spike (transient onset; the Watch column passes and the street returns to ambient). The entry correctly records an audible onset, not a sustained level.
+The deletion is the correct and only clean resolution on my axis. The file now holds one entry, correctly fired, and a properly documented deletion record naming the disambiguation-gate failure that made the second entry unrescuable.
 
-Does the flag do work the language does not? Yes. Without the flag, the stitcher reads a physical action at a plot beat. With the flag, it has a signal to foreground the auditory arrival of authority — the cobble-strike as a distinct perceptual event the prose should surface. The flag earns its place.
+My axis: per-entry disambiguation gate. The lone surviving entry passes. The deleted entry is correctly characterized as a self-charge/settled-state failure. Nothing on my axis blocks acceptance.
 
-No charged-word redundancy. No action-verb-self-charge doubling. No modality mismatch. No ambient-texture-without-inflection failure. Gate clears.
-
-**sensory:1 @3** — unchanged from cycle-2. "Crosses" is bare locomotion; light modality is correct for a threshold crossing from dim interior to diffuse overcast yard; flag does work the language does not. Gate continues to clear.
-
-Accept.
+ACCEPT.
 
 # Entry-level callouts
 
-None. Both surviving entries pass the disambiguation gate. sensory:3's addition does not introduce any charged-word or action-verb-self-charge problem.
+None. sensory:1 @7 passes the disambiguation gate without qualification. sensory:2's deletion is correctly described.
 
 # Convergence trace
 
-- [sensory:3] @17 — bare-word test on "boots strike the cobbles": CORRECT. "Strike" does not self-carry sound register. The fixer's cycle-3 note confirms @17 is "bare proto-line, no cite conflict" — consistent with my independent read. No auditor finding on this axis exists; my disambiguation gate is the primary check here.
-- [sensory:1] @3 — unchanged. Gate cleared in cycle-1, confirmed in cycle-2, no modification in cycle-3. Verdict held.
-- [sensory:2] @16 — deleted at cycle-2 (F-009). Charged-verb finding satisfied. Not present in cycle-3 file; no further action.
+- Cycle-1: sensory:2 @22 action-verb self-charge. Finding named.
+- Cycle-2: sensory:2 @23 lagged-anchor / inflection-not-at-inflection-beat. Finding named. Clean-resolution paths: (a) cut, (b) no viable alternative anchor. The fixer's cycle-3 walk confirmed (b) exhaustively.
+- Fixer walk naming the @1-@5 "fill"/"close" self-charge trap: correct. Those visual inflection verbs belong to the same self-charge class I identified at @22.
+- No new disambiguation finding introduced at cycle 3. The file is structurally stable.
+- Modality-floor breach (sound-only file, 1 of 2 required modalities): I note this for the modality-coverage reviewer's axis. My axis has no blocking concern — the breach is a consequence of the correct deletion, not a disambiguation failure.

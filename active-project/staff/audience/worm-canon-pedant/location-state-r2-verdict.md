@@ -2,25 +2,25 @@
 reviewer: worm-canon-pedant
 facet: location-state
 cycle: 2
-episode: b01-c01
-date: 2026-05-20
+episode: b01c02
+date: 2026-05-21
 verdict: accept
 ---
 
 # Verdict reasoning
 
-My cycle-1 callout was one entry: loc-state:3 @11, anchor verb "lifts the basket," continuity-from 2 token formally invoked but license conditions unverifiable — no scene-map input confirmed bone @11 inside a fusion-eligible-run with a flat-low or resolving rhythm-shape. The rubric is explicit that the transition-run continuity license is a narrow additive and not a relaxation of the three axes. An exception claimed without demonstrated qualification is not an exception.
+Cycle 1 I accepted. The blocking callout came from dark-fantasy-reader on loc-state:4 @6. I re-examine the fix and the surrounding entries adversarially before confirming.
 
-That entry is deleted. The gap at ID 3 is intentional and documented in the facet file. The fix report (F-007) confirms the deletion rationale matches my cycle-1 analysis exactly: dexterity-in-place anchor verb, continuity-from token invoking a license whose fusion-eligible-run condition fails because @11 is in scene-B while loc-state:2 fires in scene-A. The explanation is precise.
+Item-7 fix: sensory note rewritten from "Wren's entry from the far end narrows the remaining clear ground between her and the sealed lane-mouths" to "Wren's figure against the far-end threshold, the sealed lane-mouth directly behind her." The replacement does not introduce any canon concern. Wren enters from the far end — consistent with selective insect positioning at the lane-mouths (Taylor sealed the column-approach exits, not all entries from all directions). Wren at the far-end threshold with the sealed mouth behind her: this is a perceptible fact about the alley geometry that Taylor's insects could register — insect presence at the mouths would detect Wren's arrival and her proximity to the sealed exit. No knowledge claim here that exceeds Taylor's established insect-network perception range. Tracks.
 
-The four surviving entries track correctly. Anchor verbs are unambiguous transitional or positioning verbs (`enters` at @1, the yard crossing at @3, the Watch movement through the environment at @18, Wren's street entry at @22). Each fires at a genuine state-change or first-beat-in-location. Sensory notes name one focus-element each. No entry re-names an established condition without change.
+Item-8b conditions notes: loc-state:2 adds the ambient-sound baseline before column arrival — ordinary morning street noise, no column-echo yet — labeled as old-state anchor for sensory:1. This is consistent with Taylor's soundscape perception via insect vibration-sensing (established canon capability). The label "watch-press-alley-ambient" is a project-original condition name, not a misapplication of Worm jargon. Clean. Loc-state:11 adds the pre-lamp darkness baseline as anchor for sensory:2 @23. The lodging interior is Westeros-setting; no canon concern. The sensory:2 relocation from @22 to @23 (per fix log item-8b and cite-index update) is noted — sensory:2 now fires at @23 ("taylor-hebert-kl-122ac opens the ledger") rather than @22 ("taylor-hebert-kl-122ac lights the lamp"). The sequence is: lamp lit at @22 (loc-state:11 fires, establishing single-flame radius), ledger opened at @23 (sensory:2 fires, consuming the light-old-state established at loc-state:11). The sequencing is correct — sensory:2's old-state now has a named upstream anchor. No canon issue.
 
-The cite-index lists loc-state:3 as a live entry — the dispatch notes it was not rebuilt after cycle-2. That is a staleness artifact in a derivative tracking file. I do not file errors against derivative metadata; I track errors in the canonical authoring layer. The facet file is canonical. The facet file is correct.
+Full 11-entry re-read at cycle-2 state: no power mechanics violations, no lore leaks, no range overextension. The insect-screen behavior (sealing lane-mouths at @5, holding through the Watch passage at @7, withdrawing after the sweep at @12) remains within Taylor's documented selective-positioning capability. The Watch loses sightline at the Hook, not because Taylor perceives through walls, but because her insects confirm the column's movement past the turn — consistent. Nothing in the 11 entries contradicts any established canon rule or the prohibition framework the chapter operates under.
 
-# Entry-level callouts (revise/fail only)
+# Entry-level callouts
 
 None.
 
 # Convergence trace
 
-Cycle-1 callout [loc-state:3] @11 resolved by deletion (F-007). Auditor r1 SUPERFLUOUS pass used structural-displacement reasoning rather than three-axis analysis; auditor r2 scope (F-001 through F-006) did not cover location-state; no auditor finding ID directly overlapped with this callout in cycle-1 — the attack was audience-only. The URI-FACETS-CYCLE-1 dexterity-verb REJECT clause was promoted from the prior audience-gate attack on this entry-class and is now rubric-canonized; the mechanical scan did not apply it in r2, but the deletion satisfies the complaint. No open findings remain in the surviving facet entries.
+Item-7 fix: no overlap with auditor findings. The auditor's Class 2 FREQUENCY-BAND confirmed anchor verb class at @6 (entry/movement: Wren enters) — the verb class is unchanged by the fix; only the sensory note was rewritten. The auditor's Class 8 CONSTRAINT (Earth-Bet hard-fence scan) cleared all loc-state text fields in cycle 1; the replacement text ("Wren's figure against the far-end threshold, the sealed lane-mouth directly behind her") contains no Earth-Bet proper nouns and does not trigger the fence. Item-8b: no auditor finding intersects with conditions-field content in loc-state:2 or loc-state:11; the sensory:2 relocation is a cite-index update, not a loc-state-facet change, and falls outside this facet's review scope. No new canon concern surfaced by the fix or by the conditions-field additions.
