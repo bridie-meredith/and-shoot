@@ -1002,7 +1002,17 @@ books:
             - "wren: rescued; present; still unnamed as significant node in Taylor's ledger"
             - "otto: offstage"
           target_chapter: b01c03
-        status: audited-r1-mechanical   # /and-facets Phase 5 — 2026-05-21; auditor 12-class scan; 2 HARD remediated (fixer cycle 1), cycle-2 re-audit HARD=0; 8 SIGNAL advisory; Phase 5b audience-gate pending
+        status: audited-r1   # /and-facets Phase 6 — 2026-05-22; Phase 5 HARD=0, Phase 5b audience-gate ACCEPT 3-of-3 all 11 targets (3 cycles, no cap-burn)
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audit_findings: 5   # final-state SIGNAL advisories (flag-001/002/005/008/010); 0 HARD
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md
+        audience_gate_complete: true
+        audience_gate_cycles: 3
+        bidirectional_loop: validated   # 4 shared findings across auditor + audience paths
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
         pov_narrator: taylor-hebert-kl-122ac    # series.structure.pov = single → inherited from protagonist
         dramatic_shape: hinge                    # first-flex hinge: prohibition pivots from theoretical-intact to road-tested-strained in s01's deployment; differs from b01c01's baseline-placement hinge (no antagonist pressure, no collision there); dramatist Phase 5 ACCEPT confirmed the two hinge functions are structurally distinguishable.
         goal: "the prohibition in its first real test — deployed against a genuine threat, technically held, and already bent enough that the accounting cannot close cleanly."   # audience-facing chapter purpose; bones-file header source for /and-write Phase 7

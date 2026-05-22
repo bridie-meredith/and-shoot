@@ -31,11 +31,11 @@ My cycle-2 named the structural conflict: the episode's only non-sound inflectio
 - @1/@5 ("the insects fill the lane" / "the insects close the lane-mouths"): visual inflection. Fixer correctly identifies "fill" / "close" as action-verb self-charge on the visual event. Confirmed.
 - @6 (Wren enters the alley): visual arrival. Already owned by loc-state:4 @6 as sustained-state domain. Not a sensory-inflection candidate.
 - @19/@20 (speech events): sound modality, not non-sound. Already covered; sound already fires at @7.
-- @25-@29 (accounting gestures, post-@22 settled lamp-lit): tactile candidate only if the ledger-touch, pen-set, ledger-close produce audience-side perceptible tactile register-shifts. I consider this harder than the fixer's summary allows — but the magnitude test applies: the tactile difference of a pen setting down or a ledger closing is sub-threshold. No audience-experiential register-shift. Rubric anti-pattern §5 (sub-threshold magnitude) correctly refuses these. The fixer's enumeration is right.
+- @25-@29 (accounting gestures, post-@22 settled lamp-lit): tactile candidate only if the ledger-touch, pen-set, ledger-close produce audience-side perceptible tactile register-shifts. The magnitude test applies: the tactile difference of a pen setting down or a ledger closing is sub-threshold at audience-experiential scale. Rubric anti-pattern §5 (sub-threshold magnitude) correctly refuses these. The fixer's enumeration is right.
 
 No candidate survives re-examination. The fixer's conclusion is correct: no genuine non-sound inflection exists in b01c02 that satisfies the full rubric.
 
-**The short-chapter floor-vs-ceiling exemption (V3)** does not rescue a modality-floor breach — the exemption relaxes the sparsity ceiling (6%), not the modality floor. A sound-only file at 1 modality does not benefit from the exemption because the exemption's premise is "when modality count equals the floor (2)." This file's modality count is 1, below the floor. The exemption is inapplicable. The breach is real and unmitigated.
+**The short-chapter floor-vs-ceiling exemption (V3)** does not rescue a modality-floor breach. The exemption relaxes the sparsity ceiling (6%), not the modality floor. The exemption's premise is "when modality count equals the floor (2)." This file's modality count is 1, below the floor. The exemption is inapplicable. The breach is real and unmitigated.
 
 **The cap-burn documentation is the correct terminal form** because:
 
@@ -47,9 +47,9 @@ No candidate survives re-examination. The fixer's conclusion is correct: no genu
 **Is there anything I can still block on from my distribution axis?**
 
 My axis is file-level distribution. The concerns I can raise are:
-- Modality count below floor: yes, breached. Documented.
+- Modality count below floor: breached. Documented.
 - Single-modality domination (>50%): 100% sound. Breached. Documented.
-- Missing inflection points for key environmental beats: lamp-lighting at @22 is genuinely missing from sensory. This is the silence that generated two cycles of revise. The silence is structural — the beat cannot be flagged without violating the self-charge rule.
+- Missing inflection points for key environmental beats: lamp-lighting at @22 is genuinely absent from sensory. This is the silence that generated two cycles of revise. The silence is structural — the beat cannot be flagged without violating the self-charge rule.
 - Sparsity band: 1/27 = 3.7%. Within the 3-6% band. Not a concern.
 
 All my concerns reduce to one root: the light-modality silence at @22. That silence cannot be filled without violating the disambiguation gate. Forcing a flag that the disambiguation-pedant would immediately reject is not a solution — it would generate a new HARD at a cycle with no budget to fix it. The documented cap-burn trade-off is the correct choice over a prohibited manufactured fix.
