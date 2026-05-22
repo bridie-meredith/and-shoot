@@ -21,9 +21,10 @@ Autonomous fiction pipeline. The system authors creative fiction across a series
   ↓
 loop per chapter:
   /and-substance chapter b01c01         ← per-scene chunks + scene_conflict + pov_narrator + dramatic_shape + goal
-  /and-write b01c01                     ← scene-decomposition into bones-with-deltas + five-pass SVO + substance bone-gate
+  /and-write b01c01                     ← scene-decomposition into bones-with-deltas + event-coverage map + five-pass SVO + substance bone-gate
+  /and-review bones b01c01              ← MANDATORY chunk→bones fidelity review (gates /and-facets)
   /and-facets b01c01                    ← ten facets + dialogue + scene-map validation (tensometer dropped)
-  /and-stitch b01c01                    ← draft/b01-c01.md (terminal deliverable; polish deferred)
+  /and-stitch b01c01                    ← draft/b01-c01.md + Phase 9 cold-read terminal gate (terminal deliverable; polish deferred)
   [optional] /and-review verdict b01    ← orchestrator-critic on the book
 ```
 
@@ -164,10 +165,10 @@ Project-local slash commands in `.claude/commands/`.
 | `/and-series [revise\|redo]` | Series chunk (Star-Wars-trilogy paragraph) + structural prompts (book count, length ranges, cyclical, POV, cross-book continuity, world evolution, series-end shape). |
 | `/and-substance series\|book <slug>\|chapter <slug> [revise\|add\|redo] [--cascade [--resume\|--restart]]` | Recursive chunker. Three invocation levels; four chunk levels produced (series → book → chapter → scene). At series level: authors the signature. At chapter level: authors `pov_narrator` + `dramatic_shape` + `goal`. `--cascade` chains through `/and-write` + `/and-facets` + `/and-stitch` to `draft/<chapter>.md`. |
 | `/and-cast [revise\|redo] [--retire ...] [--add ...] [--swap ...]` | Cast roster + series-level audit checkpoint (the only blocking human checkpoint). |
-| `/and-write <chapter-slug> [revise\|redo] [--from-signals]` | Decompose scenes into bones-with-deltas + five-pass SVO + substance bone-gate + emit flattened bones file + scene-map facet. Replaces `/and-protolines`. |
-| `/and-facets <book>-<chapter>` | Per-chapter facet pipeline. Ten facets + dialogue + scene-map validation (downgraded from derivation under URI-SUBSTANCE-OVERHAUL). Tensometer dropped. URI-DIALOGUE-COVERAGE-GATE + URI-SCENE-WINDOW enforced. |
-| `/and-stitch <book>-<chapter>` | Per-chapter stitcher. Eight-phase render (lens-anchored → redundancy cull → compression → voice transform → local flow + speaker-paragraph breaks → buildup preservation → editorial reflection → finalize + scene-callout strip). Tensometer-fallback removed from Phase 0. Output: `draft/<book>-<chapter>.md` — **terminal deliverable** under the polish-deferred chain. |
-| `/and-review [<subcommand> [<args>]]` | Universal review primitive with subcommand router. Subcommands: `chunk` / `bone` / `contract` / `signature` / `bones` / `facets` / `cast` / `consistency` / `pipeline` / `tree` / `feedback` / `verdict` / `prose` (DEFERRED). Verdict subcommand absorbs the former `/and-judge-book` and fires the orchestrator-critic against a book. Pipeline subcommand runs the schema-vs-command-body-vs-rubric tri-walk that catches cross-file drift (URI-REVIEW-PIPELINE; 2026-05-21). |
+| `/and-write <chapter-slug> [revise\|redo] [--from-signals]` | Decompose scenes into bones-with-deltas + event-coverage map + five-pass SVO + substance bone-gate (event-presence + stakes-aware + SIGNAL-disposition) + emit flattened bones file + scene-map facet. Replaces `/and-protolines`. |
+| `/and-facets <book>-<chapter>` | Per-chapter facet pipeline. Ten facets + dialogue + scene-map validation (downgraded from derivation under URI-SUBSTANCE-OVERHAUL). Tensometer dropped. URI-DIALOGUE-COVERAGE-GATE + URI-SCENE-WINDOW + bones-review precondition enforced. |
+| `/and-stitch <book>-<chapter>` | Per-chapter stitcher. Eight render phases (lens-anchored → redundancy cull → compression → voice transform → local flow + speaker-paragraph breaks → buildup preservation → editorial reflection → finalize + scene-callout strip + RECONCILE) + Phase 9 cold-read terminal gate (blocking; FAIL routes to `/and-write revise`). Tensometer-fallback removed from Phase 0. Output: `draft/<book>-<chapter>.md` — **terminal deliverable** under the polish-deferred chain. |
+| `/and-review [<subcommand> [<args>]]` | Universal review primitive with subcommand router. Subcommands: `chunk` / `bone` / `contract` / `signature` / `bones` / `facets` / `cast` / `consistency` / `pipeline` / `tree` / `feedback` / `staging` / `verdict` / `prose` (DEFERRED). `bones` is the mandatory chunk→bones fidelity review between `/and-write` and `/and-facets`; `staging` is the additive editorial pass (EXPAND/GROUND/STAGE/NEEDS-BEAT). Verdict subcommand absorbs the former `/and-judge-book` and fires the orchestrator-critic against a book. Pipeline subcommand runs the schema-vs-command-body-vs-rubric tri-walk that catches cross-file drift (URI-REVIEW-PIPELINE; 2026-05-21). |
 | `/and-cut` | Mid-pipeline stop. Saves resume checkpoint; prints "you are here" with `next:` and (if cascade was in-progress) `resume:` lines. |
 
 ---

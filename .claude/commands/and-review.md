@@ -29,6 +29,7 @@ Subcommands:
   pipeline                      schema ↔ command-body ↔ rubric tri-walk; catches cross-file drift
   tree [<root-slug>]            full review sweep at and below root (defaults to series)
   feedback <feedback-file> [<root-slug>]   reviewers fire carrying named feedback as context
+  staging <chapter-slug>        additive editorial pass (EXPAND/GROUND/STAGE/NEEDS-BEAT) on a stitched chapter
   verdict <book-slug>           orchestrator-critic on a book; absorbs former /and-judge-book
   prose <chapter-slug>          DEFERRED. polish-revival un-defer target pre-pinned
 
@@ -96,6 +97,7 @@ What it reviews:
 - Do per-axis Δ-magnitudes sum correctly to parent?
 - Cost-ledger consistent?
 - No rank claims without backing?
+- **Thematic-axis-coverage (URI-CONTRACT-THEMATIC-AXIS — chapter-level).** For a chapter chunk, does the contract declare — in `axes_in_motion[]` or `axes_held[]` — the axis the chapter `goal` names as its thesis? A chapter whose `goal` is about a moral-framework turn but whose contract never lists `moral-framework` at chapter level is under-declaring its own thesis. Flag `THEMATIC-AXIS-UNDECLARED-<axis>`. This is the check the purely-mechanical sum/enum review never makes — it asks whether the contract is about what the chapter is about.
 
 Lift basis: pre-overhaul `/and-season` Pass S1 constraint audit + Pass S3.5 ruleset compliance; adapted to per-chunk dispatch across the substance-chain hierarchy.
 
@@ -127,6 +129,10 @@ What it reviews:
 - `SUBSTANCE-FELT` / `-FLAT` per scene.
 
 Output includes per-bone SIGNAL list from `chapters[].scenes[].bones[].gate_verdict.signals[]` with explicit suggestion: `/and-write <chapter> revise --from-signals` to address. Re-fire clears SIGNALs that no longer apply.
+
+**Independent chunk→bones fidelity review (URI-WRITE-BONES-REVIEW-GATE).** Beyond the bone-gate re-fire, this subcommand runs the fidelity check the Phase 6 mechanical gate cannot: does the bone set, read as a whole, actually carry the scene chunks' events? Reviewers read each scene chunk and its `event_map[]` and confirm the decomposition did not hollow the chunk (the b01c02 failure: a chunk's load-bearing events dropped between chunk and bones while every mechanical gate passed). Verdict: PASS / PASS-WITH-NOTES / FAIL.
+
+**Mandatory-step record.** On completion this subcommand writes `chapters[<slug>].bones_review` to showrunner memory: `{reviewed_at, report_path, verdict, bones_file_mtime_at_review: mtime(theater/bones/<book>-<chapter>.md), stale_since: null}`. `/and-facets` Phase 0 HARD-aborts if this record is absent or stale — `/and-review bones` is the required gate between `/and-write` and `/and-facets`, not an optional spot-check.
 
 Lift basis: `/and-write` Phase 6 substance bone-gate (post-hoc re-fire).
 
@@ -207,6 +213,24 @@ Reviewers: audience + auditor, dispatched with the named feedback file as contex
 Use case: "review s01 against the notes I left in `active-project/feedback.md`."
 
 Lift basis: `design/shoot-v2/audience-review-originals-v2.md` workflow.
+
+### `staging <chapter-slug>` (URI-REVIEW-STAGING — the additive editorial pass)
+
+Target: chapter slug. Precondition: `draft/<book>-<chapter>.md` exists (chapter stitched).
+
+Reviewers: auditor + dramatist, graph-aware (read the assembled draft + the chapter's bones + scene chunks + `event_map[]`).
+
+**Why it exists.** Every editorial motion in the pipeline is subtractive — `/and-stitch` routes only to `CUT` / `CUT-CLAUSE` / `CUT-ASININE` / `CUT-HOLLOW` / `CUT-BONE` / `RESHOW` / `REWORD` / `SIMPLIFY-PUNCT`. A pipeline whose only editorial verbs cut and compress monotonically thins prose and certifies the thinnest survivable version as clean. `staging` is the one pass whose verbs *add*. It does not edit the draft — it cannot (the bone-faithfulness fence forbids the stitcher adding content, and this command is post-hoc). It produces findings that route back to `/and-write revise` as decomposition signals.
+
+What it reviews — finding verbs (the additive counterpart to the stitcher's cut verbs):
+- `EXPAND` — a beat the draft compressed past legibility; the bones need more decomposition here.
+- `GROUND` — an abstract / nominalized stretch with no physical or sensory anchor; the scene needs grounding bones (see also the sensory-grounding ownership rule).
+- `STAGE` — an event narrated as already-over or glossed in the abstract; it needs to be staged as an on-page causal sequence.
+- `NEEDS-BEAT` — a causal gap: the draft jumps from state A to state C with no B; a bridging bone is missing.
+
+Output: classified findings at `staff/reviews/staging-<chapter>-<timestamp>.md`. Findings are SIGNAL-class (non-blocking — `/and-review` never blocks), surfaced with a fix-queue offer for `/and-write <chapter> revise`. The `/and-stitch` Phase 9 terminal gate fires this subcommand's reviewer routine alongside the cold-read.
+
+Lift basis: net-new under the b01c02 postmortem (the pipeline had no additive editorial motion).
 
 ### `verdict <book-slug>`
 

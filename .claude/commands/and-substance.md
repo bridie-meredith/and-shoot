@@ -187,7 +187,7 @@ Dispatch the project's three audience personas + dramatist + auditor in parallel
 |---|---|
 | audience (×3) | Does this chunk *feel* substantive — Δ feel earned, cost feel real, meaningfulness land? Verdicts: `SUBSTANCE-FELT` / `SUBSTANCE-FLAT-<axis>` / `SUBSTANCE-SUSPECT-cheap-gain-<axis>` |
 | dramatist | Is the chunk shape sound? Do children fit within parent's Δ? Scenes-not-too-small (chapter level)? Cyclical / cross-book / structural commitments honored? Chapter dramatic-arc completion? **Book level additionally checks cross-chapter handoff:** for every adjacent chapter pair (N, N+1) under the book, `chapters[N].handoff_out` is consistent with `chapters[N+1].handoff_in`. Mismatches HARD-fail and force revise on the offending chapter chunks. |
-| auditor | Does the chunk text match the substance contract? No rank claim without described cause. Cost-ledger consistency. Per `schemas/audit-report.schema.md`. |
+| auditor | Does the chunk text match the substance contract? No rank claim without described cause. Cost-ledger consistency. Per `schemas/audit-report.schema.md`. **Thematic-axis-coverage (chapter level, URI-CONTRACT-THEMATIC-AXIS):** the chapter `goal` names a thesis; the contract must declare that thesis axis in `axes_in_motion[]` or `axes_held[]`. A `goal` about a moral-framework turn whose contract never lists `moral-framework` is under-declaring its own thesis — `THEMATIC-AXIS-UNDECLARED-<axis>`, HARD at this level (blocks persist, forces revise). The mechanical sum/enum checks never catch this; it asks whether the contract is about what the chapter is about. |
 
 **SUBSTANCE-FLAT and SUBSTANCE-SUSPECT-cheap-gain are HARD findings** at this level (per intent-gaps rationale). They block persist and force revise.
 
@@ -240,9 +240,11 @@ Per-level exit-state hand-off:
 
 | invocation | cascade unwinds to |
 |---|---|
-| `/and-substance series --cascade` | per book: `/and-substance book` → per chapter: `/and-substance chapter` → `/and-write` → `/and-facets` → `/and-stitch` |
-| `/and-substance book b<NN> --cascade` | per chapter under b<NN>: `/and-substance chapter` → `/and-write` → `/and-facets` → `/and-stitch` |
-| `/and-substance chapter b<NN>c<MM> --cascade` | `/and-write b<NN>c<MM>` → `/and-facets b<NN>c<MM>` → `/and-stitch b<NN>c<MM>` (single-chapter convenience, G7) |
+| `/and-substance series --cascade` | per book: `/and-substance book` → per chapter: `/and-substance chapter` → `/and-write` → `/and-review bones` → `/and-facets` → `/and-stitch` |
+| `/and-substance book b<NN> --cascade` | per chapter under b<NN>: `/and-substance chapter` → `/and-write` → `/and-review bones` → `/and-facets` → `/and-stitch` |
+| `/and-substance chapter b<NN>c<MM> --cascade` | `/and-write b<NN>c<MM>` → `/and-review bones b<NN>c<MM>` → `/and-facets b<NN>c<MM>` → `/and-stitch b<NN>c<MM>` (single-chapter convenience, G7) |
+
+`/and-review bones` is a mandatory cascade step — `/and-facets` Phase 0 HARD-aborts without a fresh `bones_review` record (URI-WRITE-BONES-REVIEW-GATE). `/and-stitch`'s Phase 9 cold-read terminal gate is the cascade's last step; a cold-read FAIL halts the cascade and routes to `/and-write revise`.
 
 Reviews still fire at each level inside each command. Failure at any level **halts the cascade**.
 
