@@ -1019,6 +1019,22 @@ books:
         bones_file: theater/bones/b01-c02.md
         bones_count: 27   # 10 (s01) + 9 (s02) + 8 (s03); s01n01 deleted at Phase 4 (2-of-3 audience vote); Phase 3 additions s01n11 + s02n09 + s03n08 included
         substance_bone_gate_verdict: PASS
+        stitched: true    # /and-stitch 2026-05-22 PASS — clean draft active-project/draft/b01-c02.md + annotated b01-c02.annotated.md + render-log render-log-b01-c02.md
+        stitch_path: active-project/draft/b01-c02.md
+        stitch_render_log: active-project/staff/stitcher/render-log-b01-c02.md
+        stitch_stats:
+          words: 675
+          paragraphs: 23    # 1 preamble + 22 body
+          sentences: 46    # 1 preamble + 45 body
+          bones_rendered: 27
+          dialogue_utterances: 3
+          exposition_entries_rendered: 3    # 1 preamble + 2 post-bone-clause first-mention glosses
+          cut_clauses: 2
+          rewords: 2
+          reshows: 0
+          cut_bones: 0
+          faults_surfaced: 0    # Q9 coined-compound hits at scene-A S2/S10 were stitcher-render artifacts reworded in-pass; no upstream facet-content faults
+          fence_stretches_resolved: 1    # @28 S14 unlicensed second-certainty clause CUT-CLAUSE
         substance_delta_measured:
           axes_moved:
             capability:    { ticks: 4,  rank_delta: 0.4, target: 1.0, gap: -0.6 }  # within ±1; hinge-pivot bone @5 carries 3 ticks; threshold-crossing @4 carries 1 tick
