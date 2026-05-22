@@ -106,7 +106,7 @@ No findings. Per-facet curve checks:
 
   However, state:12 @15 records `actor:taylor-hebert-kl-122ac.social-tether-wren: peripheral-permitted-attachment -> crystallized-observer-bond`. The `showrunner/memory.md` b01c02 scene B (`b01c02s02`) records social-tether moving from rank 2.1→2.4 in scene-B, and Wren-layer crystallizes here. The state-update field `social-tether-wren` is a Taylor-authored actor-state entry. Cross-checking the rubric: `actor:<POV-character>.*` entries require narrator-interest co-citation. `narrator:4 @15` fires: "Wren is looking at her the way you look at a thing you have decided about, and that look does not have a column in the ledger." This is Taylor registering Wren's crystallization from outside — the NI entry is Taylor's perception of Wren's state, not Taylor's own actor-state shifting. The state:12 field `social-tether-wren` is a POV actor-state shift (it changes Taylor's social-tether subfield). The narrator-interest co-citation requirement fires on `actor:taylor.*` entries; `narrator:4 @15` IS present. Co-citation satisfied.
 
-  The actual contradiction is subtler: state:15 @15 records `actor:wren-stitch-maker-flea-bottom-ward.stats.taylor_awareness: observed-and-decided-not-to-ask -> attachment-crystallized-deliberate-observer`. This entry is a non-POV actor-state entry written by `impersonator-wren-stitch-maker-flea-bottom-ward` (source: wren-stitch-maker-flea-bottom-ward). The rubric allows non-POV actor-state entries without narrator-interest co-citation — confirmed. The wren-fork authoring wren's state is authority-compliant. No contradiction.
+  The actual contradiction is subtler: state:15 @15 records `actor:wren-stitch-maker-flea-bottom.stats.taylor_awareness: observed-and-decided-not-to-ask -> attachment-crystallized-deliberate-observer`. This entry is a non-POV actor-state entry written by `impersonator-wren-stitch-maker-flea-bottom-ward` (source: wren-stitch-maker-flea-bottom-ward). The rubric allows non-POV actor-state entries without narrator-interest co-citation — confirmed. The wren-fork authoring wren's state is authority-compliant. No contradiction.
 
   The flag is: the R2 decision shard for Taylor's feeling entry (R2.3 Taylor) refers internally to `feel:3 @15` for the Wren entry, but the cite-index and the feeling.md file show `feel:2 @15`. This is a cross-reference inconsistency in the shard prose (not in the deployed facet graph). Already flagged as M-001. No additional finding.
 
@@ -635,3 +635,104 @@ signal_total (after cycle 3): 5
 ```
 
 No HARD findings introduced by the cycle-2 remediation. Phase 5b cycle-2 audience gate may proceed.
+
+---
+
+## Cycle-4 re-audit
+
+cycle: 4
+mode: FLAG-ONLY (delta-scan, pre-Phase-5b-cycle-3)
+date: 2026-05-22
+scope: cycle-3 fixer changes only — narrator:6 AP-10 recast + sensory:2 deletion; confirm no new HARD before Phase 5b cycle-3 fires
+
+### Check 1: Structural/cite-index integrity after sensory:2 deletion
+
+Three-way agreement check across proto-lines, cite-index, and sensory.md.
+
+**Proto-lines @23** (`active-project/theater/proto-lines/b01-c02.md` line 31): `23 taylor-hebert-kl-122ac opens the ledger [exposition:5] [state:5]` — `[sensory:2]` is absent. No dangling token. CLEAN.
+
+**Cite-index sensory section** (`active-project/theater/facets/_cite-index.md` lines 46-48): header reads `### sensory (1 entry)`; only `sensory:1 @7 back=Y co=[loc-state:5]` is present as a live entry; deletion comment present: `# sensory:2 DELETED — cycle-3 (2026-05-22); no valid anchor (inflection beat @22 action-verb self-charge; @23 settled-state); A3 no-ADD-budget`. CLEAN.
+
+**Co-citation updates verified:**
+- `state:5 @23 back=Y co=[exposition:5]` — sensory:2 stripped from co-citation set. MATCHES fixer log (expected: `co=[exposition:5, sensory:2]` → `co=[exposition:5]`). CLEAN.
+- `exposition:5 @23 back=Y co=[state:5]` — sensory:2 stripped from co-citation set. MATCHES fixer log (expected: `co=[sensory:2, state:5]` → `co=[state:5]`). CLEAN.
+
+**Totals line** (`_cite-index.md` line 5): `totals: 54 facet entries` — correctly reflects the 55→54 decrement from the deletion. CLEAN.
+
+**Sensory.md deletion marker** (`active-project/theater/facets/sensory.md` line 7): `# DELETED sensory:2 @23 - no valid anchor (inflection beat @22 is action-verb self-charge; post-beats settled-state); cycle-3 A3 no-ADD-budget (cap-burn cycle 3, 2026-05-22)`. Marker is present, anchored to the correct proto-line position (@23), and records the deletion rationale and cycle. This is a well-formed A5 canonical deletion marker.
+
+**Dangling-token sweep:** No `[sensory:2]` token appears anywhere in the proto-lines file. No orphaned co-citation referencing sensory:2 remains in the cite-index (the sensory:2 row is deleted; the two co-citing entries — state:5 and exposition:5 — have been updated). Three-way agreement is confirmed.
+
+**Modality-floor breach:** sensory.md now holds 1 entry on 1 modality (sound only: sensory:1 @7). The rubric modality floor is ≥2. This is a breach. Per the dispatch brief and fixer log, this is an ACCEPTED-AT-CAP-BURN trade-off — cap-burn DELETE with no ADD budget, no genuine non-sound inflection available in the chapter. This is NOT raised as a new HARD finding.
+
+- **id:** accepted-cap-burn-001
+- **type:** ACCEPTED-AT-CAP-BURN (not a finding)
+- **what:** sensory.md is sound-only (1 entry, 1 modality) after sensory:2 deletion. Modality floor ≥2 is breached.
+- **disposition:** Accepted cap-burn trade-off per cycle-3 A3 constraint and dispatch brief. No genuine non-sound inflection beat exists in b01c02 that satisfies full rubric compliance. Manufacturing a fire to hit the floor is prohibited. The breach is documented and closed; it does not count toward hard_total.
+
+Structural/cite-index integrity: CONFIRMED. No new HARD finding.
+
+### Check 2: AP-SCAN / RUBRIC-FIDELITY on narrator:6 recast
+
+**Current narrator:6 text** (`active-project/theater/facets/interest-narrator.md` line 11):
+`the hand stays where it is — the reach is cleared, the body could close it — and tonight she is certain only of the not-closing`
+
+**AP-10 inverted-predicate test:**
+The previous offending form was: "the not-closing IS the only line tonight she is sure of" — a subject-complement inversion where a nominal ("the not-closing") fills subject position and a predicate nominative ("the only line") defines it, the AP-10 definitional template.
+
+The recast form: "she is certain only of the not-closing" — grammatical structure is standard subject-predicate-complement (`she` [subject] + `is certain` [predicate adjective] + `only of the not-closing` [prepositional phrase]). The subject is a person pronoun, not an abstract nominal. The complement is an adjective phrase, not a predicate nominative inversion. AP-10 does not fire. CLEAN.
+
+**File-scope AP-10 count:**
+- narrator:2 @5: "routing is what the prohibition still permits her to call clean" — X-is-what-Y form; this IS the licensed AP-10 instance (cap ≤1 per the rubric). Count: 1.
+- narrator:6 @28 (recast): "she is certain only of the not-closing" — standard form; does not fire AP-10. Count contribution: 0.
+- All other narrator entries (1, 3, 4, 5): none contain inverted-predicate definitional frames. Count contribution: 0.
+
+File-scope AP-10 total: 1 (narrator:2 only). Cap = 1. CAP SATISFIED. No saturation.
+
+**New anti-pattern check on recast text:**
+- Softener-tail: the line terminates on "not-closing" — a content noun preceded by the article "the." No trailing elective preposition or dangling qualifier. CLEAN.
+- Nominalisation: "the not-closing" is a gerund-noun; this is a deliberate character-register choice (Taylor's interior converts states into countable objects). The rubric's nominalisation anti-pattern targets pile-ups of abstract nouns, not the character's canonical counting register. Single instance; register-coherent. CLEAN.
+- Parallel construction with feel:1 @28: feel:1 reads "her hand draws back from the ledger's edge" (somatic show); narrator:6 reads "she is certain only of the not-closing" (cognition registration). Distinct layers; no DEDUP.
+- AP-7 (peak-bone default-refuse): @28 is not the scene peak; @25 is scene-C peak. @28 is the closing hold beat. AP-7 does not apply.
+- No softener-tail, no AP-10, no additional anti-pattern introduced.
+
+AP-SCAN / RUBRIC-FIDELITY on narrator:6: CONFIRMED CLEAN. No new finding.
+
+### Check 3: New HARD findings of any class from cycle-3 remediation
+
+Delta inventory: the cycle-3 fixer touched three files.
+
+1. `active-project/theater/facets/interest-narrator.md` — narrator:6 body text only; anchor (@28), cite-index position, and co-citation (none; narrator:6 is lonely) all unchanged.
+2. `active-project/theater/facets/sensory.md` — sensory:2 entry replaced by deletion marker; sensory:1 unchanged.
+3. `active-project/theater/proto-lines/b01-c02.md` — `[sensory:2]` removed from @23 line; all other lines unchanged.
+4. `active-project/theater/facets/_cite-index.md` — sensory:2 row removed; state:5 and exposition:5 co-citations at @23 updated; totals decremented.
+
+For each class:
+- **STRUCTURAL:** No file structure changes. The cite-index `### sensory (1 entry)` header correctly reflects the reduced count. No multi-frontmatter or schema-coverage concern introduced. NO new finding.
+- **FREQUENCY-BAND:** Sensory density drops from 2/27 (7.4%) to 1/27 (3.7%). 3.7% is below the rubric's sparsity floor (6%), which would normally be a concern; however, the rubric's short-chapter exemption (URI-FACETS-V3-SHORT-CHAPTER) explicitly addresses density on chapters under 30 bones, and the modality-floor breach is the accepted cap-burn trade-off documented above. The density-floor concern is subsumed by the accepted cap-burn disposition and does not generate a new HARD. NO new finding.
+- **METADATA-INCONSISTENCY:** No metadata fields changed. NO new finding.
+- **CURVE-SHAPE:** Sensory curve: 1 fire in scene-A (sensory:1 @7), 0 in scene-B, 0 in scene-C. The inflection-pair check (drop/up pair on same modality) no longer applies — only one entry remains. The cross-modal curve check is moot (only one modality). No curve-shape anti-pattern introduced by the deletion. NO new finding.
+- **CONTRADICTION:** No contradictions introduced. The deletion removes a sensory entry that co-cited state:5 and exposition:5; those entries still fire independently and consistently. NO new finding.
+- **DEDUP:** No new duplication — the deletion removes content, does not add. NO new finding.
+- **SUPERFLUOUS:** sensory:1 @7 retains its co-citation with loc-state:5 (`loc-state:5 @7 back=Y co=[sensory:1]`); it is not newly lonely. NO new finding.
+- **CONSTRAINT:** No fence-relevant content changed. NO new finding.
+- **AP-SCAN:** narrator:6 AP-10 count confirmed at 1. No new AP pattern introduced. NO new finding.
+- **TASTE-FLAG:** No vibe-cloud or keyword changes. NO new finding.
+- **PILE-UP-REVIEW:** No pile-up changes. The @23 annotation dropped from 3 facets to 2 (exposition:5, state:5). It is no longer in the pile-up (>4) category. No new pile-up concern. NO new finding.
+- **RUBRIC-FIDELITY:** The narrator:6 recast preserves the facet's structural role (NI entry at @28, co-cited with feel:1). No rubric clause is newly violated. The sensory deletion does not affect any other facet's rubric compliance. NO new finding.
+
+### Cycle-4 summary
+
+| item | check | verdict |
+|------|-------|---------|
+| Callout A — narrator:6 AP-10 recast | AP-SCAN / RUBRIC-FIDELITY | CONFIRMED CLEAN — AP-10 eliminated; file-scope count = 1 (narrator:2 only); no new anti-pattern |
+| Callout B — sensory:2 deletion | Structural/cite-index integrity | CONFIRMED CLEAN — three-way agreement (proto-lines, cite-index, sensory.md); totals correct; no dangling token |
+| sensory modality-floor breach | Cap-burn trade-off | ACCEPTED-AT-CAP-BURN — not a HARD finding; documented and closed |
+| New HARD of any class | Full-class delta-scan | NO new HARD finding introduced by cycle-3 remediation |
+
+```
+hard_total (after cycle 4): 0
+signal_total (after cycle 4): 5 (carry-forward: flag-001, flag-002, flag-005, flag-008, flag-010 — unchanged)
+```
+
+Phase 5b cycle-3 audience gate may proceed.
