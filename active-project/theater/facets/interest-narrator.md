@@ -8,4 +8,4 @@ author: impersonator-taylor-hebert-kl-122ac
 3 @8 two faces hold the anomaly a beat too long; the watch-cost of being seen has just been priced to a count she did not choose
 4 @15 Wren is looking at her the way someone twice her years looks at a thing already decided, and that look does not have a column in the ledger
 5 @25 the pen lifts before the strike finishes; she had already counted what the entry would not hold, and the count is short
-6 @28 the hand stays where it is — the reach is cleared, the body could close it, and the not-closing is the only line tonight she is sure of
+6 @28 the hand stays where it is — the reach is cleared, the body could close it — and tonight she is certain only of the not-closing

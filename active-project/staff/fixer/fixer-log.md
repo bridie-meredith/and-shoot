@@ -22,6 +22,12 @@ scope: line
 change: (1) wren sidecar Draft B facet-licenses updated from placeholder to `[vibes:13 @19]` with R2.6 resolution note; (2) taylor sidecar Entry 1 facet-licenses updated from placeholder to `[vibes:14 @20]`; (3) taylor sidecar Entry 2 facet-licenses updated from placeholder to `[vibes:14 @20]`; keyword in vibes:14 was changed in item-1 so citation still resolves correctly (same ID, same anchor)
 criteria met: yes — all three chosen-mark entries now carry concrete `<facet>:<id>` citations; no utterance content changed
 
+## callout-A — RESOLVED — 2026-05-22T00:05:00Z
+fault: narrator:6 @28 second AP-10 inverted-predicate ("the not-closing is the only line") — cap ≤1 already consumed by narrator:2 @5
+scope: line
+change: recast final clause: "the not-closing is the only line tonight she is sure of" → "and tonight she is certain only of the not-closing"; preserves (a) "the hand stays where it is", (b) "the reach is cleared, the body could close it", (c) restraint-as-certainty via "she is certain only of the not-closing"; AP-10 "the X is the Y" definitional-collapse eliminated; terminates on content noun "not-closing"; no trailing elective preposition; em-dash spine per base-card pattern; no proto-line citation moved
+criteria met: yes — second AP-10 instance eliminated; all three content elements preserved; file-scope cap now 1 instance (narrator:2 only)
+
 ## SESSION-END — 2026-05-21T15:40:00Z — facets-b01c02-cycle2-remediation
 findings-applied: 10 (items 1-4 direct; items 5-8+8b direct edits; item 9 monument cards authored)
 findings-skipped: 0
@@ -78,6 +84,12 @@ fault: feel:1 @28 (taylor): two-predicate compound ("closes short of the page an
 scope: line (both entries)
 change: (1) feel:1 @28 recast from "her hand closes short of the page and does not finish the reach" to "her hand draws back from the ledger's edge" — single clause, subject = Taylor's hand (body), verb = draws back, locator = the ledger's edge; discloses the active-withdrawal vector (the body retreating from the accounting surface) not captured by "holds the hand" (stillness) or narrator:6 (the not-closing as the only sure line); no named-feeling vocabulary; expressed:no preserved. (2) feel:2 @15 recast from "her eyes go to the alley-mouth before her head turns to it, then settle back on Taylor and stay" to "her eyes come to rest on Taylor and do not leave" — single clause, subject = her eyes (Wren's body), verb = come to rest / do not leave; captures the deliberate reanchoring ("stay") as the load-bearing tell per worm-canon-pedant; drops the reflex eye-lead subordination; expressed:partial preserved
 criteria met: yes — (1) one-clause form restored; abstraction-noun second-clause eliminated; new vector (withdrawal from ledger) distinct from held-hand proto-line and narrator:6; (2) one clause; Wren's body as subject; deliberate-stay captured; reflex-subordination dropped
+
+## SESSION-START — 2026-05-22T00:00:00Z — facets-b01c02-cycle3-remediation
+dispatch: /and-facets b01c02 Phase 5b cycle-3 remediation — 2 callouts (A: narrator:6 AP-10 recast; B: sensory:2 anchor-invalid — walk proto-lines, relocate if clean fire exists, else delete with documented trade-off)
+target: active-project/theater/facets/interest-narrator.md + active-project/theater/facets/sensory.md
+audit-report: active-project/staff/fixer/and-facets-cycle3-callouts.md
+findings-queued: 2 (Callout A — narrator:6 AP-10 recast; Callout B — sensory:2 delete-or-relocate)
 
 ## item-4 — RESOLVED — 2026-05-21T15:08:00Z
 fault: exposition:4 @4 gloss text "In Flea Bottom there is rarely anyone who can" lacks appositive orienting a cold-join reader; "the Hook" in exposition:1 @0 bridge text also flagged for check
