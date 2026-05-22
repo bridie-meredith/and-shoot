@@ -152,6 +152,7 @@ Per-bone-walk dispositions (each bone in the scene maps to exactly one):
 | `-> L<N>` | Bone rendered as line N (or one of multiple lines for peak bones). |
 | `FUSE-into-L<N>` | Bone fused into another bone's rendered sentence (em-dash, comma-appositive, conjunction). |
 | `CUT-BONE` | Bone cut under bones-cuttable license. Cite the cut-elsewhere facet or rationale. |
+| `RENDERED-ILLEGIBLE` | Bone's SVO action survives in the prose only as a label/abstraction, not as a dramatized event (the bone-walk found a trace, but the trace does not let a reader recover the action). Distinct from `CUT-BONE` (which removes the bone outright). Records the rendered line and a one-line note on what dramatic content was lost. Surfaces upstream as an `/and-write revise` signal — the stitcher cannot fix it (the bone-faithfulness fence forbids adding the missing dramatization). |
 | `RESHOW` | Bone rendered via a reauthored surface citing ≥2 graph sources (rare at Phase 1; usually Phase 7's territory). |
 
 Scene-window-specific fault classes (record as fork-level entries with the fault as move-class):
@@ -163,6 +164,7 @@ Scene-window-specific fault classes (record as fork-level entries with the fault
 | `FAULT-PHASE-1-SCENE-MAP-COVERAGE` | A bone falls outside every scene's range or inside multiple. Coverage gap or overlap in the scene-map. |
 | `FAULT-BONE-AUDIT-MISS @<id>` | Bone carries a Q9-coined hyphen-compound in its SVO content. Stitcher cannot REWORD without violating bone-faithfulness; surfaces upstream as an `/and-write` Phase 6 bone-gate / SVO rubric pass. |
 | `FAULT-NI-VERB-FOLD-STRETCH @<id>` | NI register-verb folded into bone-verb beyond the bone's SVO (defensible under lens-fold license; soft Q-check for auditor). Render kept; recorded in `drift-risk:`. |
+| `FAULT-VARIANCE-ABSTRACTION @<id>` | An anti-repetition variance move traded a concrete bone-verb for a more abstract rendering (e.g. `lifts the eyes → turned my reading outward`). The variance lever may not reduce concreteness. Re-render the bone keeping a concrete verb; if two bones genuinely repeat a physical action, that is an upstream bones problem (surface as `/and-write revise` signal), not a render-time abstraction license. |
 
 ### Phase 2 — redundancy cull
 
@@ -248,7 +250,8 @@ No `borderline` value under `cut-aggressiveness: strict`. Borderline = `n` for Q
 | `WRITE-CLEAN` | `draft/<slug>.md` written. |
 | `WRITE-ANNOTATED` | `draft/<slug>.annotated.md` written (when `output: dual`). |
 | `WRITE-LOG` | Render-log finalized. |
-| `STATS` | Final counts: words, sentences, paragraphs, bones rendered, bones merged, bones dropped, facets rendered, facets dropped, reshow count, reword count. |
+| `STATS` | Final counts: words, sentences, paragraphs, bones rendered, bones merged, bones dropped, bones rendered-illegible, facets rendered, facets dropped, facets unrendered-remainder, reshow count, reword count. See § Accounting reconciliation. |
+| `RECONCILE` | Accounting reconciliation line. Asserts `rendered + merged + dropped + rendered-illegible == authored` for bones, and `rendered + dropped + unrendered-remainder == authored` for facets, against the cite-index entry count. A non-zero `unrendered-remainder` (facet entries that appear in neither the rendered nor the dropped column) is surfaced as `FLAG-UNRENDERED-REMAINDER`, never left silent. |
 
 ---
 
@@ -338,6 +341,7 @@ The render-log is the auditor's primary input for stitch review. The auditor che
 7. Every `RESTORE-PATTERN` matches a `protected-patterns` entry in the active profile.
 8. Phase 7 Q-answer lines: under strict-mode, no `borderline` values; every cut has a reason tag.
 9. Final stats match Phase 7 + Phase 8 reconciliation.
+10. The `RECONCILE` line is present and balances: bones `rendered + merged + dropped + rendered-illegible == authored`; facets `rendered + dropped + unrendered-remainder == authored` against the cite-index count. Any non-zero `unrendered-remainder` carries a `FLAG-UNRENDERED-REMAINDER` entry naming the unaccounted facet entries. A missing or unbalanced `RECONCILE` line is `FAULT-RECONCILE-MISSING`.
 
 If those check, the stitch run is auditable-clean regardless of the prose's taste qualities. Taste lives downstream in the editor.
 

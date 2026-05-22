@@ -1,5 +1,5 @@
 ---
-description: Stitcher pipeline for one chapter. Eight phases — lens-anchored render → redundancy cull → compression → voice transform → local flow (speaker-paragraph breaks) → buildup preservation → editorial reflection → finalize (strips scene-callout markers). Output - draft/<book>-<chapter>.md + draft/<book>-<chapter>.annotated.md + staff/stitcher/render-log-<book>-<chapter>.md. URI-SUBSTANCE-OVERHAUL (2026-05-17): bones-path renamed; tensometer-derivation fallback removed; speaker-paragraph rule enforced at Phase 5; scene-callout markers stripped at Phase 8. Usage - /and-stitch <book>-<chapter> [--profile <path>] [--persona <slug>] [--phase-1-mode <scene-window|per-anchor>]
+description: Stitcher pipeline for one chapter. Eight render phases + a terminal cold-read gate — lens-anchored render → redundancy cull → compression → voice transform → local flow (speaker-paragraph breaks) → buildup preservation → editorial reflection → finalize (strips scene-callout markers) → cold-read terminal gate (Phase 9, blocking). Output - draft/<book>-<chapter>.md + draft/<book>-<chapter>.annotated.md + staff/stitcher/render-log-<book>-<chapter>.md. URI-SUBSTANCE-OVERHAUL (2026-05-17): bones-path renamed; tensometer-derivation fallback removed; speaker-paragraph rule enforced at Phase 5; scene-callout markers stripped at Phase 8. Usage - /and-stitch <book>-<chapter> [--profile <path>] [--persona <slug>] [--phase-1-mode <scene-window|per-anchor>]
 ---
 
 Stitcher pipeline. One chapter in, clean draft + annotated traced draft + per-fork render-log out. The stitcher assembles a prose draft from the bones and the facet graph; each phase forks at its natural decision granularity (per-anchor, per-paragraph, per-window, per-sentence, etc.). No inter-fork memory; the render-log is the only cross-phase artifact.
@@ -14,7 +14,7 @@ Under the polish-deferred boundary, `draft/<book>-<chapter>.md` is the terminal 
 
 Dialogue and exposition are both **graph-resident facets** consumed by the stitcher (not authored by it). Exposition feeds the preamble + per-anchor first-mention/scene-orient glosses; dialogue feeds the verbatim utterance for every `X speaks to Y` proto-line bone. Both are loaded at Phase 0.6 / 0.7 and surfaced to Phase 1 forks as license to render content the bone-faithfulness fence would otherwise forbid.
 
-You are the orchestrator. Eight phases run in strict sequence:
+You are the orchestrator. Eight render phases plus a terminal cold-read gate (Phase 9) run in strict sequence:
 
 ```
 theater/bones/<book>-<chapter>.md + theater/facets/* + theater/dialogue/<book>-<chapter>.md + _cite-index-<book>-<chapter>.md
@@ -68,7 +68,14 @@ theater/bones/<book>-<chapter>.md + theater/facets/* + theater/dialogue/<book>-<
    PHASE 8 — FINALIZE (single)
             Assign stable line-IDs (gaps allowed).
             Write draft/<slug>.md (clean) + draft/<slug>.annotated.md (traced).
-            Finalize render-log + STATS.
+            Finalize render-log + STATS + RECONCILE.
+        │
+        ▼
+   PHASE 9 — COLD-READ TERMINAL GATE (blocking)
+            One uninformed general-purpose agent reads draft/<slug>.md cold
+            (no bones, no facets, no chunk) and answers the reader's questions.
+            Additive editorial pass (EXPAND/GROUND/STAGE/NEEDS-BEAT) fires alongside.
+            Cold-read FAIL routes to /and-write revise. PASS declares the chapter terminal.
 ```
 
 Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phases fork at larger but still-small decision units. The agent definition and active persona are shared across forks within a phase (system-prompt-stable, user-turn-per-fork pattern); each fork loads minimal additional context for its decision.
@@ -391,7 +398,7 @@ For each scene N in order (forks serialize across scenes — back-look requires 
 1. **Load inputs.** Bones, facets, back-look, forward-look, persona, profile, scene-map rhythm fields.
 2. **Plan the scene's prose-shape.** Identify percussion risks within the scene: clustered same-verb bones (stillings, exhales, openings), repeated subject anaphora (`I + verb` chains), protected-pattern instances (log-trio, cardinal-distribution quartet, three-note buildup) and which variant fits the scene's other instances.
 3. **Render.** Produce the scene as one prose block. Choose paragraph breaks, verb-register variance, sentence-fusion within bone-faithfulness, log-trio variant selection, opener variance. The fork applies the lens decider (rules 1–6) per bone; the difference from per-anchor is that the fork *also* sees the cluster and can vary the surface choices accordingly.
-4. **Per-bone discipline walk (mandatory).** After rendering, walk the scene's bone list in order and confirm every bone has a renderable trace in the prose — either as a rendered sentence, an em-dash fuse, a fused-into-prior, or a CUT-BONE with rationale. **This step is the catch for the scene-window failure mode** (see § Failure modes below). The fork emits a `bone-walk:` block in its render-log entry listing each bone-id and its disposition. A bone with no trace is `FAULT-BONE-FOLDED-INTO-SUMMARY` — re-render to restore the bone.
+4. **Per-bone discipline walk (mandatory).** After rendering, walk the scene's bone list in order and confirm every bone has a renderable trace in the prose — either as a rendered sentence, an em-dash fuse, a fused-into-prior, a CUT-BONE with rationale, or `RENDERED-ILLEGIBLE`. **This step is the catch for the scene-window failure mode** (see § Failure modes below). The fork emits a `bone-walk:` block in its render-log entry listing each bone-id and its disposition. A bone with no trace is `FAULT-BONE-FOLDED-INTO-SUMMARY` — re-render to restore the bone. **`RENDERED-ILLEGIBLE` discipline (URI-STITCH-ACCOUNTING-HONESTY):** when a bone's SVO action reaches the prose only as a label or abstraction — the bone-walk finds a trace, but the trace does not let a reader recover the action as a dramatized event — the fork records `RENDERED-ILLEGIBLE` (not a clean `-> L<N>`). This is distinct from `CUT-BONE` (which removes the bone). The stitcher cannot fix it — the bone-faithfulness fence forbids adding the missing dramatization — so `RENDERED-ILLEGIBLE` is an honest disposition that surfaces to the Phase 9 terminal gate and routes to `/and-write revise`. The pre-overhaul log had no category for "bone label survives, bone meaning does not"; this is that category.
 5. **Emit fork output.** Rendered scene + render-log entry (see § Render-log entry shape below).
 
 ### Rhythm-shape guidance (URI-SCENE-RHYTHM, 2026-05-13; URI-SUBSTANCE-OVERHAUL 2026-05-17)
@@ -426,7 +433,7 @@ The scene-map facet supplies five rhythm fields per scene. The scene-window fork
 ### Constraints that loosen vs. per-anchor
 
 - **Multi-bone fusion within fusion-eligible-runs** (URI-SCENE-RHYTHM). The fork has explicit license to fuse 2+ adjacent flat-low-zone bones inside any `fusion-eligible-runs` range. The scene-map's derivation already excluded peak-shadow bones, so the license is safe to spend without re-checking peak-adjacency. Per-anchor refused these on fork-window grounds, not on rule grounds; scene-window with rhythm-aware scene-map promotes the license to explicit.
-- **Verb-register variance.** The fork may pick differentiating verbs across an `I + verb` chain or a same-action cluster (e.g. three stillings → stopped / held / held with) provided each chosen verb is idiom-fit to its bone's action (bone-faithfulness fence still per-bone).
+- **Verb-register variance** (abstraction-aware, URI-STITCH-VARIANCE-CONCRETE). The fork may pick differentiating verbs across an `I + verb` chain or a same-action cluster (e.g. three stillings → stopped / held / held with) provided each chosen verb is idiom-fit to its bone's action (bone-faithfulness fence still per-bone) **AND each chosen verb is at least as concrete as the bone's own verb.** The variance lever may not trade a concrete physical verb for an abstract one (`lifts the eyes → turned my reading outward` is barred — it converts a physical action into an abstraction in the name of breaking repetition). If breaking repetition would require an abstract re-rendering, the fork does NOT abstract — it logs `FAULT-VARIANCE-ABSTRACTION @<id>` and renders the bone with a concrete verb, accepting the repetition. Repeated concrete physical actions across bones are an upstream bones problem (the bones should differ, or one is redundant); the fault surfaces as an `/and-write revise` signal, not a render-time abstraction license. Every variance move in the render-log `variance-moves:` block records the abstraction direction (concrete→concrete is clean; concrete→abstract is the fault).
 - **Protected-pattern variant selection.** The fork reads the scene-map's `protected-patterns` field and chooses a variant within the pattern's variant set (canonical / compressed / single-verb / truncated-tail / payload-tail / load-bearing-full) per scene-position and per other-instance density across the episode. Per-anchor had a global default and rarely varied; scene-window's per-scene awareness plus the explicit pattern list makes variance selection the norm.
 - **Re-paragraphing within scene.** The fork chooses paragraph breaks inside its scene. Phase 6 paragraph-grouping does not override scene-window paragraph choices.
 - **Variance posture per `rhythm-shape`.** The fork takes posture cues from the scene's classified shape: aggressive variance + fusion on `flat-low` / `resolving` / `release-only`; structured pacing on `rising` / `rising-to-peak`; tightened-around-peak on `peak-and-release`. See § Rhythm-shape guidance above.
@@ -587,9 +594,65 @@ Single fork. Walk Phase 7 draft:
 - If `output.mode: dual`: write annotated polish: `active-project/draft/<slug>.annotated.md` with `[L<N>]` prefixes, `<trace>...</trace>` blocks per sentence, and `<trace scope="preamble">` for the bridge (the trace cites the exposition entry IDs that fed the preamble)
 - For each fold-in rendered at Phase 1, the annotated trace cites `exposition:<id>` alongside the bone and lens facets — exposition is now a first-class citation in the trace alongside narrator/feel/mem/sensory/metaphor
 - For each utterance rendered at Phase 1, the annotated trace cites `dialogue:<character>:<id>` alongside the speech bone — dialogue is also a first-class citation. Multi-utterance anchors emit one citation per entry. The attribution clause carries the bone citation; the utterance carries the dialogue citation.
-- Finalize render-log with STATS section (word count, sentence count, paragraph count, bones rendered/merged/dropped, facets rendered/dropped, reshow count, reword count, preamble-source: `exposition-facet` or `legacy-fallback`, exposition entries-rendered/refused-at-R2/cross-episode-register-skipped, dialogue-source: `dialogue-facet` or `legacy-silent-speech`, dialogue character-files-loaded / utterances-rendered / bare-speech-bones / unmoored-utterances / speaker-mismatches)
+- Finalize render-log with STATS section (word count, sentence count, paragraph count, bones rendered/merged/dropped/rendered-illegible, facets rendered/dropped/unrendered-remainder, reshow count, reword count, preamble-source: `exposition-facet` or `legacy-fallback`, exposition entries-rendered/refused-at-R2/cross-episode-register-skipped, dialogue-source: `dialogue-facet` or `legacy-silent-speech`, dialogue character-files-loaded / utterances-rendered / bare-speech-bones / unmoored-utterances / speaker-mismatches)
+- **Accounting reconciliation (URI-STITCH-ACCOUNTING-HONESTY).** Emit a `RECONCILE` line per `schemas/stitch-render-log.schema.md § Accounting reconciliation`. Reconcile against the cite-index entry count: bones `rendered + merged + dropped + rendered-illegible` MUST equal authored bone count; facets `rendered + dropped + unrendered-remainder` MUST equal the cite-index facet-entry count. The pre-overhaul log tracked only what it *deleted* (every R2 tombstone has a rationale) and was blind to what it *never picked up* — facet entries that survived R2 but reached the draft as zero citations fell out of the accounting entirely (b01c02: 14 vibes + 15 state-updates entries vanished from both columns). Any non-zero `unrendered-remainder` is surfaced as a `FLAG-UNRENDERED-REMAINDER` entry naming the unaccounted facet entries — never left as a silent `dropped: 0`. A missing or unbalanced `RECONCILE` line is `FAULT-RECONCILE-MISSING` and Phase 8 must re-run the reconciliation.
 - **Prune intermediates.** After the clean + annotated polish are confirmed on disk, delete the Phase 1–7 draft files for this episode: `active-project/draft/<slug>.phase-*.draft.md` and the standalone preamble at `active-project/draft/<slug>.preamble.md` (its content is already prepended to the clean polish). The render-log retains the trace of every intermediate phase; the draft files are reproducible from the render-log + facet graph and should not accumulate in the polish directory. Pass `--keep-drafts` at command-invocation to retain them (debugging only). The `active-project/draft/deprecated/` directory, if present, is out of scope for Phase 8 — pre-rerun archives are user-managed (move to `projects/<title>/archive/` at project close, or delete when no longer needed).
 - Update showrunner memory: `stitched: true`
+
+---
+
+## Phase 9 — Cold-read terminal gate (URI-STITCH-COLD-READ — blocking)
+
+**The highest-leverage gate in the chain.** Every other gate in the pipeline measures a *part* — per-bone axis ticks, per-facet mechanical compliance, per-facet taste, per-sentence cut-worthiness, run-health criteria. Readability, jeopardy, and "did the scene happen" are emergent properties of the *assembled* chapter, and no other stage holds the whole and asks the reader's questions. b01c02 walked the entire pipeline green — every gate passed, the orchestrator-critic returned 7/7 — while missing all three of its core events. Phase 9 is the one check that measures the whole instead of a part. One dispatch.
+
+This phase runs after Phase 8 has written `draft/<book>-<chapter>.md`. It does NOT modify the draft. It either declares the chapter terminal (cold-read PASS) or routes it back to `/and-write revise` (cold-read FAIL).
+
+### Step 1 — Cold read (one `general-purpose` agent, uninformed)
+
+Dispatch ONE `general-purpose` agent with exactly this prompt (the agent must read only the draft — the test is void if it reads anything else):
+
+> You are a first-time reader. You have been handed one chapter of a novel and nothing else — no outline, no synopsis, no notes. Read it once, at reading pace, the way someone who picked up the book would.
+>
+> Read ONLY this file: `active-project/draft/<book>-<chapter>.md`. Do not open bones, facets, scene chunks, render-logs, showrunner memory, or any other project file. If you read anything else, the test is void — your value here is that you are uninformed.
+>
+> Then answer, from the text alone:
+> 1. **EVENTS** — What physically happens in this chapter? List the events in order, plainly. If a stretch of the chapter contains no event you can name, say so explicitly.
+> 2. **JEOPARDY** — Is anyone at risk of anything? Who, of what, and how do you know it from the text? If nothing is at stake, answer "no jeopardy."
+> 3. **CAUSALITY** — Does each scene connect to the next by cause? Point to any place where you could not tell why something happened, or why a character did what they did.
+> 4. **PAYOFF** — Does the chapter end on something earned — a consequence, a decision, a turn? Did the ending land, given what the chapter actually showed you (not what it gestured at)?
+> 5. **CONTINUE?** — Would you, as a reader, turn to the next chapter? Answer yes or no, one sentence why.
+> 6. **ONE-LINE SUMMARY** — Summarize the chapter in one sentence, the way you would to a friend.
+>
+> Be blunt. Do not be generous. If you were confused, say you were confused and where. Report under 500 words.
+
+Substitute the resolved `<book>-<chapter>` into the path. Persist the agent's answer to `staff/reviews/coldread-<chapter>-<timestamp>.md`.
+
+### Step 2 — Diff against intent (harness)
+
+The orchestrator reads `chapters[<slug>].goal` and the per-scene `scene_conflict` + `dramatic_shape` from showrunner memory and diffs them against the cold reader's answers. **Fail the terminal gate** when any of:
+- The cold reader's recovered events (answer 1) do not include the chapter's central event (the event named by `goal` / the dominant `scene_conflict.protagonist_force`).
+- Answer 5 is "no" (the reader would not continue).
+- Answer 2 is "no jeopardy" on a chapter whose `dramatic_shape` is not a pure coda (`frame-coda` chapters are exempt — they may legitimately carry no jeopardy).
+
+### Step 3 — Additive editorial pass (fires alongside, non-blocking)
+
+Run the `/and-review staging <chapter>` reviewer routine (auditor + dramatist, graph-aware) — the one pass whose verbs ADD rather than cut: `EXPAND` / `GROUND` / `STAGE` / `NEEDS-BEAT`. Its findings are SIGNAL-class and do not block on their own, but they are recorded and surfaced. Persist to `staff/reviews/staging-<chapter>-<timestamp>.md`. (The pipeline's other editorial motions are all subtractive; this is the additive counterweight — see `/and-review staging`.)
+
+### Step 4 — Verdict + memory
+
+Write `chapters[<slug>].cold_read = {read_at, verdict, recovered_summary: <answer 6>, report_path, staging_signals: <N>, stale_since: null}`.
+
+- **PASS** — the chapter is terminal. Print the cold reader's one-line summary, the staging-signal count, and `next:`. If `staging_signals > 0`, recommend `/and-write <chapter> revise` + re-cascade as an optional depth pass (non-blocking).
+- **FAIL** — the chapter is NOT terminal. It is a structural failure, not a polish problem — re-decompose from the bones up. Print the cold reader's answers, the diff finding (which intent element the reader could not recover), and route:
+  ```
+  /and-stitch Phase 9 COLD-READ FAIL — <chapter> is not terminal.
+  The cold reader could not recover: <central event | jeopardy | would-not-continue>.
+  Recovered summary: <answer 6>
+  Intended goal:      <chapters[].goal>
+  This is a structural failure — re-decompose, do not polish.
+  next: /and-write <chapter> revise   (then re-cascade /and-facets + /and-stitch)
+  ```
+  In a `--cascade` run, a Phase 9 FAIL halts the cascade per the standard cascade-failure surfacing (checkpoint `reason: halted-on-failure`).
 
 ---
 
@@ -609,7 +672,9 @@ If `staff/stitcher/feedback-<slug>.md` was read at Phase 0 with new line-level d
 
 ## Exit conditions
 
-- **Success**: Phase 8 STATS emitted; clean + annotated polish files present; render-log finalized; showrunner memory updated.
+- **Success**: Phase 8 STATS + RECONCILE emitted; clean + annotated polish files present; render-log finalized; Phase 9 cold-read returned PASS; `chapters[].cold_read` recorded; showrunner memory updated.
+- **Phase 9 cold-read FAIL**: the assembled chapter failed the terminal gate — the cold reader could not recover the chapter's central event / jeopardy, or would not continue. Not a stitch defect; a decomposition defect. Route to `/and-write <chapter> revise` and re-cascade. In a `--cascade` run, halts the cascade.
+- **Phase 8 fault**: `FAULT-RECONCILE-MISSING` — the render-log's `RECONCILE` line is absent or does not balance. Re-run the Phase 8 reconciliation.
 - **Phase 0 abort**: missing inputs (proto-lines, cite-index, profile). Print the missing-input path and exit.
 - **Phase 0 escalation**: `FAULT-PROFILE-PERSONA-MISMATCH-PROJECT` — resolved persona is `neutral` and a project-specific persona exists. Print the mismatch and exit; user must correct profile or pass `--persona neutral` explicitly.
 - **Phase 1 fault**: `FAULT-PHASE-1-CONSOLIDATED` — Phase 1 prose appears in the draft without per-fork log entries. Indicates orchestrator-inline rendering. Re-dispatch as real Agent forks.

@@ -236,6 +236,10 @@ books:
               opposing_force: <one line>
               stakes_axis: <axis-slug>
             stale_since: <iso-timestamp> | null
+            event_map:                     # /and-write Phase 1 (event-coverage contract); checked at Phase 6 event-presence gate
+              - event: <named event / load-bearing image / the scene_conflict.protagonist_force, one line>
+                bones: [<bone-slug>, ...]  # >=1 bone covering this event, OR empty with omission_rationale set
+                omission_rationale: <one line> | null   # REQUIRED non-null when bones is empty — a deliberate, justified omission
             bones:                         # /and-write Phase 1 (scene-decomposition); per-bone substance_delta lives here
               - slug: b01c01s01n01         # n-prefix for bones (b would collide with book)
                 flat_id: <int>             # assigned at /and-write Phase 7 serialization
@@ -266,6 +270,19 @@ books:
           axes_moved: [...]
           density_measured: <ratio>
           felt_verdict: SUBSTANCE-FELT | SUBSTANCE-FLAT-<axis> | SUBSTANCE-SUSPECT-cheap-gain-<axis>
+        bones_review:                      # written by /and-review bones <chapter>; /and-facets Phase 0 HARD-checks presence + freshness
+          reviewed_at: <iso-timestamp>
+          report_path: staff/reviews/bones-<chapter>-<timestamp>.md
+          verdict: PASS | PASS-WITH-NOTES | FAIL
+          bones_file_mtime_at_review: <iso-timestamp>   # bones-file mtime when the review ran; staleness check against current mtime
+          stale_since: <iso-timestamp> | null
+        cold_read:                         # written by /and-stitch Phase 9 cold-read terminal gate
+          read_at: <iso-timestamp>
+          verdict: PASS | FAIL
+          recovered_summary: <one-line cold reader's chapter summary>
+          report_path: staff/reviews/coldread-<chapter>-<timestamp>.md
+          staging_signals: <N>             # count of EXPAND/GROUND/STAGE/NEEDS-BEAT findings from the additive editorial pass
+          stale_since: <iso-timestamp> | null
     # book-level field filled by /and-review verdict <book-slug>
     orchestrator_critic_verdict:
       ruling: PASS | PASS-WITH-NOTES | FAIL

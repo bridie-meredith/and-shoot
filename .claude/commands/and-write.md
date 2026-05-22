@@ -93,6 +93,8 @@ Dispatch **screen-writer** with:
 3. The scene's `substance_delta` is the **aggregation target**: per-axis sum of bone-Δ from `axis_moves[]` must equal scene's `axes_in_motion[<axis>]` target within ±1 rank. Held axes contribute zero by definition and must each have at least one bone in the scene with that axis in its bone-level `axes_held[]`.
 4. Honor `scene_conflict`: the protagonist_force is visible across multiple bones; the opposing_force is visible in at least one bone (or HARD `OPPOSING-FORCE-MISSING` at Phase 6). In held-discipline scenes, the opposing_force may be enacted by the held bone itself (the rule catches the assessment; the body holds against pressure) — the rationale on `axes_held[]` should name how the bone-level enactment satisfies the opposing-force requirement.
 5. Author with full SVO discipline. Speech bones use `speaks to` form.
+6. **Sensory-grounding quota (URI-WRITE-SENSORY-GROUNDING — fixes the recurring modality-floor breach).** The decomposer owns the physical world. Every scene's bone set must include grounding bones — bones whose SVO is a concrete physical action situated in the scene's location, naming a physical object, surface, or sensory particular of the place — not only the protagonist's perceptual postures (`lifts the eyes`, `faces the alley-mouth`, `works the net`). Minimum one grounding bone per scene; for scenes longer than the `bones_per_scene` midpoint, scale toward roughly one grounding bone per five bones. A scene whose bone set is entirely perceptual posture / abstraction gives the facet layer nothing physical to anchor to and forces the sensory facet to collapse to a single modality (the c01 *and* c02 failure — a "documented trade-off" that fires every chapter is not a trade-off, it is the system's actual output). Grounding bones are normal moving / held / chatter bones — the quota is about the SVO being physically concrete and place-situated, not a new bone shape.
+7. **Event-coverage map (URI-WRITE-EVENT-COVERAGE — fixes the b01c02 hollow-chapter root cause).** After decomposing, the screen-writer extracts the scene chunk's **named events** — every concrete thing that happens in the chunk — plus the `scene_conflict.protagonist_force` and the chunk's load-bearing images. Each becomes a checklist entry. For each entry, name the bone(s) (≥1) that cover it. If an entry has no covering bone, the screen-writer MUST either add a bone for it or log a deliberate omission with a one-line `omission_rationale`. **The decomposition is not complete until every checklist entry maps to ≥1 bone or carries a non-null `omission_rationale`.** This is an authoring-time requirement, not a downstream gate — the screen-writer cannot finish Phase 1 without it. A rescue, a verdict, a threat materializing, a witness reacting are *events*, not perceptual postures; the event-coverage map exists because the SVO bone format stores actions cleanly but stores the causal relations *between* actions (the substance of a rescue, an accounting, a turn) only in the gaps between bones — and the gaps have no schema slot. The map forces those events to become bones rather than dissolving. Persist the result to `chapters[].scenes[].event_map[]` per `schemas/showrunner-memory.schema.md`.
 
 Each bone is appended to `chapters[<chapter>].scenes[<scene>].bones[]` in memory with `slug: b<NN>c<MM>s<KK>n<II>` (auto-generated). `flat_id` is NOT yet assigned (Phase 7 owns flat_id assignment).
 
@@ -216,7 +218,7 @@ Auditor returns report at `staff/auditor/write-<chapter>-pass5.md`.
 
 ## Phase 6 — Substance bone-gate
 
-**Replaces URI-026 tens-gate.** This is the substance overhaul's primary authoring gate. Dispatch **auditor** (third fork) + the three **audience personas** in parallel against scene-window slices.
+**Replaces URI-026 tens-gate.** This is the substance overhaul's primary authoring gate. Dispatch **auditor** (third fork) + the three **audience personas** in parallel against scene-window slices. The auditor's payload includes, per scene: the bones, the scene chunk text, `scene_conflict`, `substance_delta`, and `event_map[]` — the event-presence check below reads the chunk text and `event_map[]`, so both must be in the brief.
 
 **Frame-coda exemption (2026-05-21).** If `chapters[<slug>].substance_delta.chapter_class: frame-coda` is set, Phase 6 substance bone-gate is skipped entirely. Frame-coda chapters (e.g. archmaester-retrospective interludes) are reviewed for frame-shape by dramatist only; their bones do not need to deliver protagonist-axis Δ. Phase 7 emission proceeds without bone-gate verdict writes.
 
@@ -239,7 +241,11 @@ For each bone, classify by shape (per the 2026-05-21 axis-bookkeeping split):
 ### Per-scene verification (auditor)
 
 For each scene:
+- **Event-presence check (URI-WRITE-EVENT-COVERAGE — HARD).** Read `scenes[].event_map[]`. For every entry, confirm the named bone(s) still exist in the post-trim bone set and that the entry's event is actually carried by them (the bone SVO physically *is* the event, not a perceptual posture *about* it). Additionally, independently confirm the scene chunk's central event and its `scene_conflict.protagonist_force` each appear as ≥1 bone — this is checked against the chunk text, not only against the event_map (an event_map that omitted the central event is itself the defect). An event_map entry whose covering bones were trimmed away with no `omission_rationale`, or a central event / protagonist_force with no bone, is `EVENT-UNCOVERED-<event>` (HARD). "Axes moved" and "the scene happened" are different claims; this check gates the second. A scene can pass every axis-tick check and still fail here — that is the intended catch.
 - **Per-axis Δ delivered within ±1 rank of contract (axes_in_motion only):** aggregate bone-Δ on each axis is within ±1 of `scenes[].substance_delta.axes_in_motion[]` where `axes_in_motion[].axis == <axis>`. Beyond ±2 → HARD `AXIS-DELTA-MISMATCH`; ±1-±2 → SIGNAL. Held axes contribute zero by definition and are not checked under this rule.
+- **Stakes-axis-dominant check (URI-WRITE-STAKES-AWARE — HARD).** When `scene_conflict.stakes_axis` resolves to an `axes_in_motion[]` axis, that axis's delivered aggregate magnitude MUST be the largest delivered delta in the scene. If a non-stakes axis delivers a larger aggregate than the declared stakes axis, the scene is mis-shaped — `STAKES-AXIS-NOT-DOMINANT` (HARD). (A scene of *watching* delivering a knowledge overrun while its declared capability stakes axis under-delivers is the canonical failure this catches.) When `stakes_axis` resolves to an `axes_held[]` axis, this check is N/A (held axes deliver zero by design).
+- **Underdelivery-rationale check (URI-WRITE-STAKES-AWARE — HARD).** For every `axes_in_motion[]` axis whose delivered aggregate magnitude is below 50% of its `target_delta_magnitude`, the scene must carry an explicit one-line rationale (logged in the bone-gate report) for the shortfall. An axis under 50% of target with no rationale is `AXIS-UNDERDELIVERED-<axis>` (HARD) — the ±1 tolerance band is not wide enough to silently absorb a headline axis realized at 40% of target.
+- **Sensory-grounding check (URI-WRITE-SENSORY-GROUNDING — HARD).** The scene's bone set must contain ≥1 grounding bone (a concrete, place-situated physical action — see Phase 1 step 6). A scene whose entire bone set is perceptual posture / abstraction is `SENSORY-GROUNDING-ABSENT` (HARD) — it is a bones-revise trigger, not a downstream facet trade-off. The facet layer cannot author a physical world the bones did not give it; a sensory-empty bone set must fail here, at authoring time.
 - **Held axes have bone-level enactment:** for each entry in `scenes[].substance_delta.axes_held[]`, at least one bone in the scene must have that axis in its bone-level `axes_held[]`. Otherwise `HELD-AXIS-NOT-WITNESSED` (HARD).
 - **`scene_conflict.stakes_axis` is in union:** resolves to either `scenes[].substance_delta.axes_in_motion[<axis>]` OR `scenes[].substance_delta.axes_held[<axis>]`. Otherwise `STAKES-AXIS-MISSING` (HARD).
 - **`scene_conflict.opposing_force` visible:** at least one bone shows the opposing force pushing. In held-discipline scenes (stakes_axis ∈ axes_held), a bone whose `axes_held` rationale names the opposing-force enactment satisfies this check (the rule catching the pull is the opposing force made visible). Otherwise `OPPOSING-FORCE-MISSING` (HARD).
@@ -278,12 +284,12 @@ Orchestrator validation: before persisting bone-gate verdicts, verify `scenes_re
 
 | finding | severity |
 |---|---|
-| flat-bone, cost-not-paid, missing-opposing-force, per-axis-Δ-mismatch beyond ±2, SUBSTANCE-FLAT, SUBSTANCE-SUSPECT | HARD (blocks emission) |
+| flat-bone, cost-not-paid, missing-opposing-force, per-axis-Δ-mismatch beyond ±2, SUBSTANCE-FLAT, SUBSTANCE-SUSPECT, EVENT-UNCOVERED, STAKES-AXIS-NOT-DOMINANT, AXIS-UNDERDELIVERED, SENSORY-GROUNDING-ABSENT | HARD (blocks emission) |
 | bones-count-below-density-target, per-axis-Δ-mismatch ±1 to ±2, chatter-bone just-over-cap | SIGNAL (records but passes) |
 
 **HARD findings block Phase 7 emission.** Re-fire Phase 1 (scene-decomposition) on the offending scenes; cycle 1 of the same `/and-write` invocation; max 2 internal HARD-resolution cycles. After 2 cycles, surface to user.
 
-**SIGNAL findings record but pass.** They land in `chapters[].scenes[].bones[].gate_verdict.signals[]` for later `/and-write revise --from-signals` targeting or `/and-review bones <chapter>` post-hoc inspection.
+**SIGNAL findings record but pass — with disposition (URI-WRITE-SIGNAL-DISPOSITION).** Each SIGNAL must reach a disposition before Phase 7 emit: either **remediated** (re-decompose / re-shape the offending bone or scene) or **explicitly accepted** with a one-line rationale recorded in the bone-gate report. A SIGNAL with no disposition blocks emit — emission is gated on `every SIGNAL has disposition ∈ {remediated, accepted}`, not on SIGNAL count being zero. SIGNALs land in `chapters[].scenes[].bones[].gate_verdict.signals[]` with their disposition for later `/and-write revise --from-signals` targeting or `/and-review bones <chapter>` post-hoc inspection. The pre-overhaul behavior — log the SIGNAL and ship it untouched — is the failure this fixes (a fragile proxy-hold SIGNAL shipped unremediated through b01c02).
 
 Write `gate_verdict` per bone on PASS only — HARD findings block emission, so no PASS-state is written for bones inside a failing scene.
 
@@ -361,13 +367,18 @@ Bone-gate verdict: PASS (HARD: 0, SIGNAL: <K>, TASTE: 0).
 If SIGNAL count > 0, append:
 
 ```
-<K> SIGNAL findings recorded — see `/and-review bones <chapter>` to inspect, or
-                                  `/and-write <chapter> revise --from-signals` to address.
+<K> SIGNAL findings recorded (all dispositioned: remediated | accepted) —
+    see `/and-review bones <chapter>` to inspect, or
+    `/and-write <chapter> revise --from-signals` to address accepted SIGNALs.
 ```
 
 ```
-next: /and-facets <chapter>
+next: /and-review bones <chapter>   (MANDATORY — independent chunk→bones fidelity review;
+                                     /and-facets Phase 0 HARD-aborts without it)
+then: /and-facets <chapter>
 ```
+
+**`/and-review bones` is a mandatory step between `/and-write` and `/and-facets`** (URI-WRITE-BONES-REVIEW-GATE). The decomposition is the highest-consequence step in the chain and the Phase 6 bone-gate is the only check on it during `/and-write` itself — a mechanical gate, no independent review. `/and-review bones <chapter>` provides that independent review and writes the `chapters[<slug>].bones_review` record; `/and-facets` Phase 0 HARD-aborts if the record is absent or stale against the bones file.
 
 ---
 

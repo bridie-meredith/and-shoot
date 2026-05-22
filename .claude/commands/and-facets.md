@@ -97,6 +97,14 @@ R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/
     Resolution: archive existing facet files to active-project/theater/_archive/<timestamp>-stale-from-rewrite/ and re-run /and-facets <chapter> for a clean traversal.
     ```
     The user re-archives stale facets manually before re-invocation. The check protects against the b01c01 cap-burn root cause where `/and-write redo` shifted bone IDs and stale facets pointed at dead anchors at `/and-stitch` Phase 0.5.
+4b. **Bones-review precondition (URI-WRITE-BONES-REVIEW-GATE — HARD-ABORT).** Confirm `chapters[<slug>].bones_review` is present in showrunner memory AND fresh. Fresh means `bones_review.bones_file_mtime_at_review` equals the current `mtime(theater/bones/<book>-<chapter>.md)` (the bones file has not been re-emitted since the review ran) AND `bones_review.stale_since` is null. If `bones_review` is absent or stale, HARD-ABORT:
+    ```
+    /and-facets Phase 0 HARD-ABORT (bones-review): chapter <slug> has no fresh /and-review bones record.
+    The chunk→bones decomposition is the highest-consequence step in the chain and must be independently
+    reviewed before facet authoring proceeds.
+    Resolution: run /and-review bones <slug>, then re-invoke /and-facets <slug>.
+    ```
+    `/and-review bones` is the mandatory step between `/and-write` and `/and-facets`. A `bones_review.verdict: FAIL` does not by itself abort `/and-facets` (the user may knowingly proceed past notes), but absence or staleness does.
 5. **Facet-namespace clearance (URI-FACETS-CROSS-CHAPTER-ARCHIVE, 2026-05-21).** The facet pipeline writes to chapter-unnamespaced shared paths — `theater/facets/<facet>.md`, `theater/facets/_cite-index.md`, `theater/facets/.r2-decisions.md`, `theater/proto-lines/<slug>.md`, `theater/dialogue/<character-slug>.md`, `staff/<facet>/r2-decision-shard*.md`, `staff/auditor/facets-*.md`, `staff/audience/<persona>/*verdict*.md`. Two distinct cases:
 
     - **Prior-chapter facet output present (cross-chapter collision).** Scan `theater/facets/*.md` (excluding `scene-map-<book>-<chapter>.md` for the current chapter). Read each facet file's `episode:` header. If ANY facet file, the `_cite-index.md` header, or `theater/proto-lines/*.md` belongs to a **different** chapter than the current run, AUTO-ARCHIVE the entire prior-chapter working set (do not abort, do not require manual intervention). Archive procedure:
