@@ -2,7 +2,7 @@
 generated: 2026-05-21
 source: active-project/theater/proto-lines/b01-c02.md + active-project/theater/facets/
 scope: 10 facet files + 1 proto-lines file
-totals: 55 facet entries; 20/27 protolines decorated (74.1%)
+totals: 54 facet entries; 20/27 protolines decorated (74.1%)
 
 ## Density distribution (protolines by citation count)
 
@@ -43,16 +43,16 @@ _(no entries)_
   narrator:5 @25 back=Y co=[mem:2, state:6, state:13, vibes:11]
   narrator:6 @28 back=Y
 
-### sensory (2 entries)
+### sensory (1 entry)
   sensory:1 @7 back=Y co=[loc-state:5]
-  sensory:2 @23 back=Y co=[exposition:5, state:5]
+  # sensory:2 DELETED — cycle-3 (2026-05-22); no valid anchor (inflection beat @22 action-verb self-charge; @23 settled-state); A3 no-ADD-budget
 
 ### state (15 entries)
   state:1 @1 back=Y
   state:2 @5 back=Y co=[loc-state:3, narrator:2, state:11, vibes:1, vibes:2, vibes:3, vibes:4]
   state:3 @22 back=Y co=[loc-state:11, state:4]
   state:4 @22 back=Y co=[loc-state:11, state:3]
-  state:5 @23 back=Y co=[exposition:5, sensory:2]
+  state:5 @23 back=Y co=[exposition:5]
   state:6 @25 back=Y co=[mem:2, narrator:5, state:13, vibes:11]
   state:7 @26 back=Y
   state:8 @27 back=Y
@@ -94,7 +94,7 @@ _(no entries)_
 ### exposition (3 entries)
   exposition:1 @0 back=N
   exposition:4 @4 back=Y co=[loc-state:2, narrator:1]
-  exposition:5 @23 back=Y co=[sensory:2, state:5]
+  exposition:5 @23 back=Y co=[state:5]
 
 ## Pile-ups (>4 facets co-located on one protoline)
 

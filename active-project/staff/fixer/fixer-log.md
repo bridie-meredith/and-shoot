@@ -91,6 +91,26 @@ target: active-project/theater/facets/interest-narrator.md + active-project/thea
 audit-report: active-project/staff/fixer/and-facets-cycle3-callouts.md
 findings-queued: 2 (Callout A — narrator:6 AP-10 recast; Callout B — sensory:2 delete-or-relocate)
 
+## callout-A — RESOLVED — 2026-05-22T00:05:00Z
+fault: narrator:6 @28 second AP-10 inverted-predicate ("the not-closing is the only line") — cap ≤1 already consumed by narrator:2 @5
+scope: line
+change: recast final clause: "the not-closing is the only line tonight she is sure of" → "and tonight she is certain only of the not-closing"; preserves (a) "the hand stays where it is", (b) "the reach is cleared, the body could close it", (c) restraint-as-certainty via "she is certain only of the not-closing"; AP-10 "the X is the Y" definitional-collapse eliminated; terminates on content noun "not-closing"; no trailing elective preposition; em-dash spine per base-card pattern; no proto-line citation moved
+criteria met: yes — second AP-10 instance eliminated; all three content elements preserved; file-scope cap now 1 instance (narrator:2 only)
+
+## callout-B — RESOLVED — 2026-05-22T00:15:00Z
+fault: sensory:2 has no valid anchor — inflection beat @22 is action-verb self-charge ("lights the lamp"); @23 is first beat of settled state; structural bind confirmed by 2-of-3 specialists at cycle-2
+scope: line
+change: DELETE — sensory:2 removed; canonical deletion marker written in sensory.md; [sensory:2] stripped from proto-lines/b01-c02.md @23; cite-index updated (sensory:2 row deleted; state:5 and exposition:5 co-citations stripped; totals 55→54); proto-line walk conducted — no genuine non-sound fire found in b01c02 (all non-sound perceptual inflections are either action-verb self-charged or settled-state); relocation not viable; loc-state:11 @22 conditions note left as harmless environmental context
+criteria met: yes — sensory:2 deleted with canonical marker; all three files updated; modality-floor breach (sound-only) recorded as ACCEPTED-AT-CAP-BURN trade-off; no ADD chased
+
+## SESSION-END — 2026-05-22T00:20:00Z — facets-b01c02-cycle3-remediation
+findings-applied: 2 (callout-A FIXED-DIRECT; callout-B DELETED-CYCLE-3-NO-ADD-BUDGET)
+findings-skipped: 0
+exit: CLEAN
+fix-log: active-project/staff/fixer/and-facets-cycle3-fixes.md
+sensory-terminal-state: CAP-BURN-BOUND (modality-floor breach: 1 entry, 1 modality; floor ≥2 unmet; documented trade-off, not chased)
+interest-narrator-terminal-state: CLEAN PASS-ELIGIBLE (AP-10 cap now 1; all entries form-valid)
+
 ## item-4 — RESOLVED — 2026-05-21T15:08:00Z
 fault: exposition:4 @4 gloss text "In Flea Bottom there is rarely anyone who can" lacks appositive orienting a cold-join reader; "the Hook" in exposition:1 @0 bridge text also flagged for check
 scope: line
