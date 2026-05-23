@@ -2,17 +2,18 @@
 generated: 2026-05-23
 source: active-project/theater/proto-lines/b01-c01.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 52 facet entries; 20/27 protolines decorated (74.1%)
+totals: 52 facet entries; 21/27 protolines decorated (77.8%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
-| 0 (bare)   | 7 |
-| 1          | 8 |
+| 0 (bare)   | 6 |
+| 1          | 9 |
 | 2          | 5 |
 | 3          | 3 |
-| 4          | 2 |
+| 4          | 1 |
+| 5          | 1 |
 | 6          | 1 |
 | 7          | 1 |
 
@@ -33,7 +34,7 @@ totals: 52 facet entries; 20/27 protolines decorated (74.1%)
   narrator:3 @13 back=Y co=[vibes:5]
   narrator:4 @19 back=Y
   narrator:5 @24 back=Y
-  narrator:6 @26 back=Y co=[feel:1, vibes:7, vibes:8]
+  narrator:6 @26 back=Y co=[feel:1, vibes:7, vibes:8, wren-stitch-maker-flea-bottom-ward:2]
 
 ### sensory (4 entries)
   sensory:1 @6 back=Y co=[loc-state:3]
@@ -65,7 +66,7 @@ totals: 52 facet entries; 20/27 protolines decorated (74.1%)
   feel:1 @9 back=Y co=[exposition:3, mem:1, narrator:2, state:4, vibes:3, vibes:4]
   feel:2 @16 back=Y co=[mem:2]
   feel:3 @27 back=Y co=[vibes:9, vibes:10]
-  feel:4 @26 back=N co=[feel:1, narrator:6, vibes:7, vibes:8]
+  feel:4 @26 back=N co=[feel:1, narrator:6, vibes:7, vibes:8, wren-stitch-maker-flea-bottom-ward:2]
 
 ### meta (0 entries)
 _(no entries)_
@@ -77,8 +78,8 @@ _(no entries)_
   vibes:4 @9 back=Y co=[exposition:3, feel:1, mem:1, narrator:2, state:4, vibes:3] lic-out=[memory:1, proto:9]
   vibes:5 @13 back=Y co=[narrator:3] lic-out=[proto:13, state-update:4]
   vibes:6 @18 back=Y co=[exposition:4, state:4] lic-out=[state-update:4, state-update:5, proto:18]
-  vibes:7 @26 back=Y co=[feel:1, narrator:6, vibes:8] lic-out=[feeling:1, proto:26]
-  vibes:8 @26 back=Y co=[feel:1, narrator:6, vibes:7] lic-out=[feeling:1, proto:26]
+  vibes:7 @26 back=Y co=[feel:1, narrator:6, vibes:8, wren-stitch-maker-flea-bottom-ward:2] lic-out=[feeling:1, proto:26]
+  vibes:8 @26 back=Y co=[feel:1, narrator:6, vibes:7, wren-stitch-maker-flea-bottom-ward:2] lic-out=[feeling:1, proto:26]
   vibes:9 @27 back=Y co=[feel:3, vibes:10] lic-out=[feeling:3, proto:27]
   vibes:10 @- back=- lic-out=[state-update:1, state-update:2, memory:1, memory:2, proto:9, proto:27]
 
@@ -95,6 +96,8 @@ _(no entries)_
     `taylor-hebert-kl-122ac holds the feet`
 - **@1** (6): exposition:1, loc-state:1, state:1, state:2, vibes:1, vibes:2
     `taylor-hebert-kl-122ac pays the building-keeper`
+- **@26** (5): feel:1, narrator:6, vibes:7, vibes:8, wren-stitch-maker-flea-bottom-ward:2
+    `wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac`
 
 ## Lonely entries (no co-location, no inbound license)
 _Round-2 deletion candidates — but check the rubric before cutting._
@@ -111,4 +114,4 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 ## Bare protolines (no citations accrued)
 _Round-2 add candidates if the rubric licenses a fire here._
 
-@3, @5, @8, @11, @23, @25, @29
+@3, @5, @8, @11, @25, @29
