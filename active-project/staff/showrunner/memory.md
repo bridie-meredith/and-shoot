@@ -697,6 +697,12 @@ books:
         bones_file: theater/bones/b01-c01.md
         bones_count: 27    # 9 s01 + 10 s02 + 8 s03; max(flat_id) = 29 (s01n02 + s02n02 deleted at Phase 4 trim; blank time-skips at flat 10, 21)
         substance_bone_gate_verdict: PASS    # redo Phase 6 mechanical PASS (HARD: 0, SIGNAL: 0, auditor write-b01c01-bone-gate.md) + audience SUBSTANCE-FELT 3-of-3 × 3 scenes (cape-fic-reader + dark-fantasy-reader + worm-canon-pedant; cycle 1 of 1; no cap-burn); re-confirmed 2026-05-23 redo
+        bones_review:
+          reviewed_at: 2026-05-23
+          report_path: active-project/staff/reviews/bones-b01c01-2026-05-23.md
+          verdict: PASS-WITH-NOTES   # /and-review bones URI-WRITE-BONES-REVIEW-GATE; Layer 1 bone-gate re-fire PASS (0 HARD, 0 SIGNAL); Layer 2 fidelity PASS (all 9+8+9=26 independently-extracted events covered; all 10 named physical particulars present); cold-walk: operating-rule as discipline YES, ward YES, cost-bearer PARTIAL (Wren's flies-observation payload lives in bone rationale only — facet/dialogue will surface in prose). 4 NOTE-* findings all route to facets/stitch, none are bones failures.
+          bones_file_mtime_at_review: 2026-05-23T00:39:12Z
+          stale_since: ~
         stitched: ~    # stale-marked: prior draft/b01-c01.md was against the replaced bone set; must re-run /and-stitch after /and-facets
         stitch_path: ~    # stale-marked per staleness-cascade; prior: active-project/draft/b01-c01.md
         stitch_render_log: ~    # stale-marked; prior: active-project/staff/stitcher/render-log-b01-c01.md
