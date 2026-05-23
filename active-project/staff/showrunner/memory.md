@@ -679,21 +679,27 @@ books:
         #              staff/auditor/write-b01c01-pass2.md,
         #              staff/auditor/write-b01c01-pass5.md,
         #              staff/auditor/write-b01c01-bone-gate.md.
-        status: audited-r1-mechanical    # 2026-05-23 Phase 5 mechanical audit + cycle-2 fixer + post-audit adjudication + rubric edit complete (HARD=0, 9 SIGNAL); cycle-2 audit at staff/auditor/facets-final-audit-cycle2.md; Phase 5b cycle 2 dispatch in flight as of 2026-05-23 (33 reviewer dispatches: 11 failing-facets × 3 reviewers; dialogue-wren stays cycle-1 ACCEPT and does not re-fire); cap is 3 cycles (URI-FACETS-CAP-BURN-SEMANTICS A2); phase boundary committed
+        status: audited-r1-mechanical    # 2026-05-23 Phase 5 mechanical audit + cycle-2 fixer + post-audit adjudication + rubric edit complete (HARD=0, 9 SIGNAL); Phase 5b cycle 2 COMPLETE — 33 dispatches aggregated to 5 PASS / 6 FAIL (10 ACCEPTS across 11 retried facets — cycle-1 had 1 ACCEPT total). Cycle-3 routing required; 3 of 6 failing facets are orchestrator-judgment cases that should route to user adjudication BEFORE cycle-3 fixer dispatch (memory mem:1 dark-fantasy "is no longer doing"; dialogue-taylor taylor:2 @25 cost-show-at-anchor; sensory modality-coverage scene-C zero-fire + sparsity shape-level). Cap is 3 cycles (URI-FACETS-CAP-BURN-SEMANTICS A2); cycle 3 is the last remediation budget.
         audit_path: active-project/staff/auditor/facets-final-audit-cycle2.md    # 2026-05-23 post-cycle-2 audit; HARD=0 (initial 2 HARD + 1 FAULT-pending resolved by fix + exemption + post-directive MOOT); 9 SIGNAL pass-through to cycle-2 audience-gate
         audit_complete: true    # cycle-2 mechanical audit complete; HARD=0
         audit_findings: 9    # 9 SIGNAL pass-through to cycle-2 audience-gate; HARD=0; Earth-Bet hits=0 (proper-noun + extended category-noun sweep both clean post-H1 "power" removal)
-        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md    # 2026-05-23 cycle 2 of /and-facets b01-c01 Phase 5b (post-cycle-2-fixer + post-directive); supersedes cycle-1 r1 report (kept for historical reference)
-        audience_gate_complete: false    # cycle 2 in flight; aggregate pending
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md    # 2026-05-23 cycle 2 of /and-facets b01-c01 Phase 5b (post-cycle-2-fixer + post-directive); supersedes cycle-1 r1 report (kept for historical reference); cycle-3 routing recommendation in § "Cycle-3 fixer routing recommendation"
+        audience_gate_complete: false    # cycle 2 returned 5 ACCEPT / 6 FAIL; cycle 3 (last remediation budget) required
         audience_gate_cycle: 2    # of cap 3 (URI-FACETS-CAP-BURN-SEMANTICS A2); cycle 3 is the last remediation budget
-        audience_gate_cap_burned: false    # cycle 2; cap (3 cycles) not yet engaged
-        audience_gate_facets_passed: [dialogue-wren-stitch-maker-flea-bottom-ward]    # 3-of-3 ACCEPT cape-fic + dark-fantasy + worm-canon
-        audience_gate_facets_failed: [location-state, interest-narrator, sensory, state-updates, memory, feeling, metaphor, vibes, exposition, dialogue-coll-net-mender-flea-bottom, dialogue-taylor-hebert-kl-122ac]    # 11 facets revised/failed in cycle 1
-        audience_gate_headline_findings:    # surfaced before fixer dispatch in cycle-1 report (H1-H4)
-          - H1-narrator2-power-category-noun-fence-candidate    # worm-canon FAIL (the only FAIL of cycle 1); proper-noun scan missed it; adjudication required
-          - H2-NI-semicolon-Form-rule-vs-saturation    # worm-canon claims rubric §Form direct-rejection (three NI entries); auditor classified saturation SIGNAL
-          - H3-audit-report-stale-cite-graph-WHAT-fields    # several reviewers treated fault-001/002/003 as live; cite-index post-repair shows back=Y
-          - H4-state10-inline-comment-still-enumerates-patrol-rotation    # field value narrowed; comment did not follow
+        audience_gate_cap_burned: false    # cycle 2; cap (3 cycles) engaged but not exhausted
+        audience_gate_facets_passed: [dialogue-wren-stitch-maker-flea-bottom-ward, location-state, state-updates, feeling, metaphor, exposition]    # 6 facets cleared (1 carried from cycle 1 + 5 cleared in cycle 2)
+        audience_gate_facets_failed: [interest-narrator, sensory, memory, vibes, dialogue-coll-net-mender-flea-bottom, dialogue-taylor-hebert-kl-122ac]    # 6 facets fail cycle 2; require cycle-3 remediation
+        audience_gate_cycle2_headline_findings:    # surfaced in r2 report (O1-O5)
+          - O1-dark-fantasy-carries-4-of-6-cycle2-dissents    # NI / memory / dialogue-coll / dialogue-taylor — 3 explicitly invoke orchestrator-deference option
+          - O2-vibes-2-reviewer-remediable-in-one-fixer-pass    # cape-fic vibes:2 licensed-by trim + dark-fantasy vibes:5/7/8/9 token replacements; no ADDs; lowest cap-burn risk
+          - O3-sensory-modality-coverage-cap-burn-risk    # scene-C zero-fire + sparsity over-band; F5-precedent exemption rejected by adversarial reviewer; cycle-3 ADD must pre-validate or DELETE fallback
+          - O4-dialogue-coll-behavior-card-path-error    # dark-fantasy searched wrong paths; card exists at active-project/actors/<slug>/card.md per /and-cast Phase 4 convention; finding dismissed; facet-license cross-anchor finding stands separately
+          - O5-dialogue-taylor-primary-seam-unaddressed    # cycle-2 fixer did not land routing-item-9; cycle-3 options: defer / revise-line / NI ADD pre-validation
+        audience_gate_cycle1_headline_findings:    # historical (cycle 1)
+          - H1-narrator2-power-category-noun-fence-candidate    # RESOLVED cycle 2 — "power" removed from narrator:2
+          - H2-NI-semicolon-Form-rule-vs-saturation    # RESOLVED cycle 2 — F1 rewrites + "Remove semicolon check" rubric directive (§Form retired)
+          - H3-audit-report-stale-cite-graph-WHAT-fields    # RESOLVED cycle 2 — audit re-issued with post-repair WHAT fields
+          - H4-state10-inline-comment-still-enumerates-patrol-rotation    # RESOLVED cycle 2 — comment stripped per user directive
         audience_gate_prior_run_stale: true    # the prior STALE-marked r3 report (cap-burned) was on the now-replaced bone set; cycle 1 of the redo chain replaces it
         prior_stale_audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md    # historical, on replaced bone set; do not promote
         bidirectional_loop: validated    # preserved; loop structure unchanged across redo
