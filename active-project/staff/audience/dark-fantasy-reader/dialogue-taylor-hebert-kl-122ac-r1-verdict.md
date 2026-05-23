@@ -2,95 +2,30 @@
 reviewer: dark-fantasy-reader
 facet: dialogue-taylor-hebert-kl-122ac
 cycle: 1
-episode: b01c02
-date: 2026-05-21
-verdict: accept
+episode: b01c01
+date: 2026-05-23
+verdict: revise
 ---
+
+# Stage 1 — V2 strict
+
+- entry 2 (@25): Q1 pass §taylor-hebert §Syntax (subject-implied opening drops expletive-subject contraction; noun phrase leads), §taylor-hebert §Cadence (fragment closer "Go on." as load-bearing two-word imperative; period over exclamation; no softener), §taylor-hebert-kl-122ac §Voice KL modifications (plain street-register without Westerosi-idiom performance — no *aye, mayhap, lass* — consistent with accent-wrong-in-a-way-no-one-can-place). Q1 passes on three §-cites.
+- entry 2 (@25): Q2 pass — Earth-Bet proper-noun scan clean; no forbidden cadence (no em-dash, no semicolon spine, no nominalization); no Westerosi smallfolk idiom that would constitute mask-too-perfect slip; no self-justification; no theme-narration; hard fences intact.
+- entry 2 (@25): Stage 1 verdict: PASS.
+
+# Stage 2 — V3 adversarial (dark-fantasy lens)
+
+- entry 2 (@25): The dispatch brief names the exact seam: does this line carry the weight of refusing intimacy in a world where intimacy is dangerous, or does it read as flat refusal? The hostile reading is this — "Nothing for you here. Go on." is *clean*. It is a correct line. It demonstrates card signatures and protects cover and fires no forbidden vocabulary and lands the board-move. And it costs Taylor nothing that the reader can feel. The sidecar's intent specifies "minimum-surface deflection" as a design target; the line achieves minimum-surface so thoroughly that the cost disappears with it. A woman who has been charting Wren's circuits without Wren's knowledge, who has not entered Wren into any ledger, who is building the architecture she came here to refuse — that woman's dismissal of a child who is the chapter's cost-bearer should have some texture under the minimum-surface. Not warmth. Not hostility. *Weight*. The line as written is indistinguishable from a stranger dismissing a street child on any corner in any chapter. The facet-licenses in the sidecar point at NI:5 (the held assessment at @24) and vibes:9 (the downstream holds-the-eyes) as the structural context that makes @25's brevity load-bearing — but the sidecar's own DEDUP check confirms @25 is a bare proto-line with no co-located facet texture. The weight the sidecar claims is in adjacent bones, not in this one. The reader at @25 has the line alone. Two sentences. No somatic tell (feel:4 is Wren's, fires at @26, not Taylor's at @25). No NI. No vibes. The line speaks into a facet vacuum and the sidecar's defense says that is *correct* (bare proto-line, DEDUP does not fire, the silence is the rule's surface face). The dark-fantasy reader's problem: a dismissal that costs the dismisser nothing and shows the reader nothing is hope that costs nothing with the sign reversed. Flat refusal dressed as restraint. The weight is *claimed* in the sidecar's functional description of the chapter's architecture, but the weight is not *in* the line, and at a bare proto-line anchor there is no adjacent facet texture to carry it. The line earns its card-signature citations. It does not earn the costed-dismissal the dispatch brief requires to not trigger the walkout flag.
 
 # Verdict reasoning
 
-Both lines earn their place. The dark-fantasy-reader lens applies patience first and demands that the weight has already accumulated before accepting any moment of register-control as meaningful. Here it has: the insects closed the lane-mouths at @5, the sweep happened, the watch passed, and the settlement of that sequence is what makes Taylor's flat two-sentence exchange carry consequence rather than merely represent it. The lines pass Q1 and Q2. Stage 2 identifies one genuine seam around the "clinical-of-the-horrible" gap and one around the Westerosi register holding (or failing to hold) under scrutiny. Neither rises to REVISE. Verdict: ACCEPT with seams documented.
+The card signatures check out and the hard fences are clean — Q1 and Q2 pass mechanically. The seam is one layer down: the sidecar defends the line's brevity by pointing at NI:5 and vibes:9 as structural load-bearers, but @25 is a bare proto-line with no co-located facets, and the reader experiences the dismissal without any of that adjacent weight. In a chapter about a woman who has not let herself account for the child she is already protecting-without-naming, the line that refuses the child should cost her something the reader can feel — even if the cost is only a misfire in the assessment, a half-second of held breath before the rule reasserts. As written, Taylor refuses the child the way a stranger refuses a stranger. The world where intimacy is dangerous, and this particular attachment is the one unpriced variable in her ledger, should make this line harder to say than it reads.
 
----
+# Entry-level callouts
 
-# Stage 1 V2
-
-## Entry 1 @20 — "The watch came through. They did not stop. That is all it was."
-
-**Q1 — affirmatively demonstrates ≥1 card signature?**
-
-PASS.
-
-The dark-fantasy-reader lens: this line demonstrates Taylor's §Voice tell — "the clinical-of-the-horrible." The deployment just happened. Insects sealed lane-mouths. A real thing occurred. And the line about it is three declaratives with no connective tissue, no affect, no register shift. The gap between what just happened and the tone of the report is the load the line carries. This is not merely on-card ("fine, she talks clipped") — it affirmatively demonstrates the specific tell that makes Taylor dangerous to know: she is capable of narrating a horror as if it is logistics. The sidecar's §-citation is correct. The demonstration is structural, not incidental.
-
-The dark-fantasy-reader is watching for: does the world push back? Here the world did (the sweep, the insects, the deployment), and the line shows a person who absorbed the push and is already re-covering. That re-covering is characterization, not deflection of consequence. The consequence is present in the suppression.
-
-verdict: ACCEPT
-
-**Q2 — card not violated?**
-
-PASS.
-
-No reassurance register. No Earth-Bet proper nouns. No warmth-bleeding. "The watch" is the right noun — Westerosi city-watch, not patrol, not police. The three declaratives are each factually true. The line lies by omission, not by false statement, which is the base-card behavioral pattern per the sidecar (§Vocabulary refuses / half-honest pattern). No fence violations.
-
-verdict: ACCEPT
-
----
-
-## Entry 2 @20 — "Go home, Wren. The street is quiet now."
-
-**Q1 — affirmatively demonstrates ≥1 card signature?**
-
-PASS.
-
-The dark-fantasy-reader lens: "The street is quiet now" is a status report, not a comfort. The dark-fantasy lens reads it that way because the reader has absorbed the chapter's preceding events — the street was not quiet. It was lane-mouth-sealed, watch-swept, insect-routed. "Quiet now" carries the shadow of that. The line affirmatively demonstrates §Vocabulary reaches ("quiet now" as operational all-clear / status language, not reassurance) and §Relationships (the name "Wren" as the only permitted softness — the single tell of attachment in an otherwise operational line). The doubled reading — warmth available to Wren, withheld from the surface — is exactly the dark-fantasy-reader's preferred mode: consequence that is present but not announced, affect that is structurally visible without being performed.
-
-The demonstration is in the contrast: the operative frame of "street is quiet" is explicitly post-event. A character with no attachment would say "Go." The name and the status-justification together are the signal of the attachment that is forming. That doubled register is affirmatively demonstrated.
-
-verdict: ACCEPT
-
-**Q2 — card not violated?**
-
-PASS.
-
-No rebuke framing (correctly rejected in draft B per sidecar). No false comfort. Westerosi register intact. "Quiet now" is an accurate description (the watch has passed per @7, foot-traffic re-establishing per loc-state:8 @14). No fence violations.
-
-verdict: ACCEPT
-
----
-
-# Stage 2 V3 seams
-
-## Strongest hostile counter-argument — lens: dark-fantasy-reader
-
-### Entry 1 seam
-
-**The clinical tone is doing the work — but the line needs the chapter weight to land, and if the stitch isolates it, it reads as flat rather than loaded.**
-
-The dark-fantasy-reader's hostility here is structural: "The watch came through. They did not stop. That is all it was." is three sentences that, out of context, are unremarkable. The load comes entirely from what surrounds the line in the assembled chapter — the insects, the deployment, the gap between the event and the register. If the stitcher does not render the surrounding bones in a way that makes the flatness feel *costly* — if the prior scene material reads as adequately summarized rather than bodily remembered — then the clinical tone at @20 becomes simply a character who talks flatly, rather than a character whose flatness is the shape of something suppressed.
-
-The facet co-load at @20 is vibes:14 (`earning-collapse` / `wren-layer-actualization`). The auditor's TF-001 flags that `earning-collapse` as a keyword may bias the stitch toward a deflationary register. This is the exact failure mode the dark-fantasy-reader fears: the stitch reads the vibe token, maps `earning-collapse` to deflation, and renders @20 as a comedown rather than a crystallization-under-suppression. The dark-fantasy-reader reads crystallization-under-suppression differently from a comedown. One is weight being held. One is weight being shed. The line text is ambiguous between these; the co-load (vibes:14) is the disambiguation lever, and that lever is flagged as potentially miscalibrated.
-
-This is an open seam. The seam lives in the stitch-rendering of vibes:14, not in the dialogue text. The line itself is defensible.
-
-**Severity:** conditional on stitch-layer rendering of vibes:14. The dark-fantasy-reader would accept the line and mark the stitch-layer as the risk.
-
-### Entry 2 seam
-
-**"The street is quiet now" — the Westerosi word "street" versus "lane" or "way": register micro-slip.**
-
-The dark-fantasy-reader's granular hostility: this piece has spent its environmental vocabulary carefully (the "lane-mouths" in the bones, "Tickler's Lane" in Wren's speech @19, "Flea Bottom" in the chapter's location register). The sidecar chose "street" for Entry 2. The word "street" is period-neutral — it could appear in almost any historical or secondary-world fiction. "Lane" or "the way" would be Flea Bottom-specific and would resonate with the vocabulary of the location as the chapter has established it. The dark-fantasy-reader cares about world-density: Westerosi local color that lands as Planetos-specific, not generic medieval (from card §taste). "Street is quiet now" reads as slightly generic compared to "lane is quiet" or "the way is clear." 
-
-The sidecar did not address lexical selection at this level of granularity — the rejection notes focus on rebuke framing (draft B) and over-claim (draft C), not on the specificity of the noun. The base card's §Vocabulary section is not checked against "street" vs "lane" — the card specifies "operational nouns / status-language" but does not mandate topographic specificity. "Street" is within fence. But it is the weaker topographic choice.
-
-This seam is lens-specific: the dark-fantasy-reader catches register granularity that other readers may not notice. It is not a violation — it is a missed opportunity for world-density that the dark-fantasy-reader would flag.
-
-**Severity:** advisory. The line passes; the lexical choice is defensible but not optimal by dark-fantasy-reader standards. Would not call REVISE on this alone.
-
----
+- [taylor-hebert-kl-122ac:2] @25 — "Nothing for you here. Go on." The line is correct on every mechanical axis and costs Taylor nothing the reader can register. At a bare proto-line anchor (no co-located feel, NI, vibes, or state-update), the dismissal of the chapter's cost-bearer reads as flat refusal rather than costed discipline. The sidecar's defense offloads the weight to NI:5 (@24) and vibes:9 (@27) — bones the reader has already passed and not yet reached. The seam: the card's §Signature Moves names "the second answer" as the shape of Taylor's reasoning, but this line is the *first* answer with no texture of the second answer held beneath it. A revision that introduces some register of the rule catching — not warmth, not hostility, a fractional tell that the rule is *working* rather than absent — would close the gap without breaking the card's forbidden registers.
 
 # Convergence trace
 
-- Entry 1 seam (stitch-layer rendering of clinical tone risks reading as flat rather than loaded) overlaps with: auditor TF-001 (vibes:14 `earning-collapse` keyword ambiguous; may bias stitch toward deflationary register). The dark-fantasy-reader names the reader experience that results if the stitch-layer fails — the "clinical-of-the-horrible" effect collapses to ordinary flatness, which is a characterization failure, not just a lexical one.
-- Entry 2 seam ("street" vs. "lane" — register micro-slip on topographic noun) does NOT overlap with any auditor finding. This is a dark-fantasy-reader-specific lens attack: the auditor's Class 8 and AP-SCAN did not flag intra-Westerosi register granularity at the lexical level. This is a lens-exclusive callout that does not duplicate any mechanical finding.
-- Neither seam overlaps with auditor HARD findings (both closed at cycle-2).
+- fault-016 (TASTE-FLAG): auditor flags @22-@25 approach zone as atmosphere-thin with sparse facet coverage at @23 and @25. This callout converges directly — the adversarial reading above names the same structural gap (bare proto-line at @25, no co-located facet texture, weight claimed in adjacent bones not present in the anchor). The auditor's flag is a mechanical density reading; this is the experiential consequence of that density gap.
+- fault-008 (METADATA-INCONSISTENCY): the wren slice's PATTERN-SCAN references the deleted feel:3 @27 as a cross-facet complement to the @26 payload. Tangentially convergent — if the @26-@27 complement structure is stale, the downstream-license argument in the sidecar (vibes:9 @27 backward-licenses the @25 deflection) is weakened further. vibes:9's licensed-by also carries the deleted feeling:3 citation (fault-010, fault-011 HARD). The sidecar cites vibes:9 as a facet-license for the chosen draft; vibes:9 itself has a HARD unresolvable licensed-by. The citation chain from dialogue @25 → vibes:9 → feeling:3 (deleted) is broken at the second step.

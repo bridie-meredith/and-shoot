@@ -679,16 +679,23 @@ books:
         #              staff/auditor/write-b01c01-pass2.md,
         #              staff/auditor/write-b01c01-pass5.md,
         #              staff/auditor/write-b01c01-bone-gate.md.
-        status: audited    # R2 fanout complete 2026-05-23 (10 shards consolidated at theater/facets/.r2-decisions.md, f-r2-1=1 self-repaired, arbiter T1+T4 0 interventions, hard-fence Earth-Bet 0 hits); Phase 4c cite-index rebuilt; Phase 5 auditor returned 5 HARD + 14 SIGNAL, fixer repaired all 5 HARDs (3 STRUCTURAL loc-state offset + 1 stale state token + 1 vibes:9 dead lic-by + 1 state:10 NI content-alignment); R1 inflight files patched to lock the corrections across rebuilds; cite-index final = 49 entries, 22/27 protolines decorated, 81.5%, all corrected entries back=Y; /and-facets resumes at Phase 5b (audience-gate cycle 1, ~36 parallel dispatches: sensory specialists × 3 + 8 facets × 3 active-audience + 3 dialogue characters × 3)
+        status: audited-r1-mechanical    # 2026-05-23 Phase 5 mechanical audit + fixer pass complete (HARD=0; 14 SIGNAL pass-through); Phase 5b cycle 1 fired 36 reviewer dispatches and aggregated 1 ACCEPT (dialogue-wren) / 11 FAIL — cycle-2 fixer-dispatch required per .claude/commands/and-facets.md § Remediation cycle; phase boundary committed
         audit_path: active-project/staff/auditor/facets-final-audit.md    # 2026-05-23 redo audit; 5 HARD repaired, 14 SIGNAL pass-through to Phase 5b
         audit_complete: true    # 2026-05-23 mechanical audit + fixer pass complete; HARD=0 achieved
-        audit_findings: 14    # 14 SIGNAL advisories pass to Phase 5b without repair; HARD=0 post-fixer; Earth-Bet hits=0
-        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md    # STALE — pertains to prior bone set
-        audience_gate_complete: true    # STALE — pertains to prior bone set
-        audience_gate_cycles: 3    # STALE — pertains to prior bone set
-        audience_gate_cap_burned: ~    # redo Phase 6 audience: 3-of-3 SUBSTANCE-FELT all scenes, no cap-burn; prior cap-burn (true) was on the replaced bone set's downstream facets
-        audience_gate_facets_passed: [location-state, interest-narrator, state-updates, feeling, metaphor, vibes, exposition, dialogue-coll, dialogue-taylor, dialogue-wren]    # STALE — pertains to prior bone set; facets not yet re-run against redo bones
-        audience_gate_facets_failed: [sensory, memory]    # STALE — pertains to prior bone set
+        audit_findings: 14    # 14 SIGNAL advisories pass to Phase 5b without repair; HARD=0 post-fixer; Earth-Bet hits=0 (mechanical; H1 surfaces a category-noun "power" candidate that the proper-noun scan did not reach — pending adjudication)
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r1.md    # 2026-05-23 cycle 1 of /and-facets b01-c01 Phase 5b (post-bones-redo); supersedes the STALE r3 report from prior cap-burned run
+        audience_gate_complete: false    # cycle 1 returned 1 ACCEPT / 11 FAIL; cycle 2 required
+        audience_gate_cycle: 1    # of cap 3 (URI-FACETS-CAP-BURN-SEMANTICS A2)
+        audience_gate_cap_burned: false    # cycle 1; cap (3 cycles) not yet engaged
+        audience_gate_facets_passed: [dialogue-wren-stitch-maker-flea-bottom-ward]    # 3-of-3 ACCEPT cape-fic + dark-fantasy + worm-canon
+        audience_gate_facets_failed: [location-state, interest-narrator, sensory, state-updates, memory, feeling, metaphor, vibes, exposition, dialogue-coll-net-mender-flea-bottom, dialogue-taylor-hebert-kl-122ac]    # 11 facets revised/failed in cycle 1
+        audience_gate_headline_findings:    # surfaced before fixer dispatch in cycle-1 report (H1-H4)
+          - H1-narrator2-power-category-noun-fence-candidate    # worm-canon FAIL (the only FAIL of cycle 1); proper-noun scan missed it; adjudication required
+          - H2-NI-semicolon-Form-rule-vs-saturation    # worm-canon claims rubric §Form direct-rejection (three NI entries); auditor classified saturation SIGNAL
+          - H3-audit-report-stale-cite-graph-WHAT-fields    # several reviewers treated fault-001/002/003 as live; cite-index post-repair shows back=Y
+          - H4-state10-inline-comment-still-enumerates-patrol-rotation    # field value narrowed; comment did not follow
+        audience_gate_prior_run_stale: true    # the prior STALE-marked r3 report (cap-burned) was on the now-replaced bone set; cycle 1 of the redo chain replaces it
+        prior_stale_audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md    # historical, on replaced bone set; do not promote
         bidirectional_loop: validated    # preserved; loop structure unchanged across redo
         facets_path: active-project/theater/facets/
         round_1_complete: true    # STALE — pertains to prior bone set; facets must re-run against redo bones

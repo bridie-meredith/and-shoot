@@ -2,85 +2,52 @@
 reviewer: cape-fic-reader
 facet: dialogue-taylor-hebert-kl-122ac
 cycle: 1
-episode: b01c02
-date: 2026-05-21
-verdict: accept
+episode: b01c01
+date: 2026-05-23
+verdict: revise
+---
+
+# Stage 1 — V2 strict
+
+- entry 2 (@25): Q1 **pass §-cite (conditional)**, Q2 **pass**, verdict: **REVISE** (see Stage 2 seam — Q1 pass is earned on base-card chassis but the facet-license chain has a structural crack that undermines the claim).
+
+Q1 reasoning: The sidecar cites four distinct §-sections for draft A — taylor-hebert §Syntax (subject-implied opening, "Nothing for you here" drops the expletive-subject contraction), taylor-hebert §Cadence (fragment close on "Go on." as load-bearing imperative), taylor-hebert §Cadence (periods over exclamation, delivered flat), taylor-hebert-kl-122ac §Voice (plain street-register without Westerosi-idiom anchor — *absence* of lass/now/m'lady as the fingerprint). The affirmative demonstration is present: the line does not merely avoid violation, it enacts the subject-implied opening and fragment-close as positive moves. Q1 passes.
+
+Q2 reasoning: Hard-fence scan is clean per sidecar R2 audit notes. No Earth-Bet proper nouns. No forbidden cadence from the card compositions in the stack (the "There's" contraction failure was in the rejected draft B, not in the chosen A). No monument-naming. Q2 passes.
+
+The REVISE verdict is driven by Stage 2, not by Q1 or Q2 failure.
+
+---
+
+# Stage 2 — V3 adversarial (cape-fic lens)
+
+- entry 2 (@25): **Strongest hostile seam — the competent-under-asymmetry claim is asserted via facet-license but one of the three citations is structurally compromised.**
+
+The sidecar cites three facet-licenses for the chosen line:
+1. `state-updates-taylor-hebert-kl-122ac:5 @20` — clean. Resolves in cite-index.
+2. `interest-narrator:5 @24` — cite-index records `narrator:5 @24 back=Y` as a **lonely entry** (no co-location, no inbound license per cite-index "Lonely entries" section). The sidecar claims this NI entry establishes "observation-radius confirmed before she named it a radius; the circuit count was already in the entry before she decided not to enter it" as the interior discipline that the @25 deflection surfaces. The auditor's SUPERFLUOUS finding confirms narrator:5 @24 passes the three-axis test and is not deleted — but the lonely-entry status means the cite-index records no co-licensed facet fires at @24. The sidecar's claim that the @25 line is "the surface-action of NI:5's interior held-discipline" is the load-bearing structural argument for why this deflection is Taylor's *competent-under-asymmetry decision-cadence* and not generic gruff-dismissal. That argument depends on NI:5 carrying specific content (the assessment-radius registered before naming it). If NI:5 is sparse — if it is the single tick at @24, structurally isolated — the "interior held-discipline" claim is present on paper but not built up by co-licensed facet mass. Cape-fic reader wants to see the board: the information asymmetry (Taylor knows Wren is something; Wren doesn't know Taylor is reading her) should be legible *in the approach zone*. A lonely NI at @24 is a thin foundation for a board-move the sidecar is claiming as a load-bearing competence display.
+3. `vibes:9 @27` — **broken citation**. The sidecar's R2 audit notes confirm the citation resolves: "vibes:9 @27 back=Y." But auditor fault-011 (HARD) flags that vibes:9's `licensed-by` field contains `feeling:3` — a deleted entry. vibes:9 is itself structurally compromised at Phase 5 HARD level. The sidecar cites vibes:9 as a backward-license for the @25 deflection ("without the deflection landing as minimum-surface, the @27 holds-the-eyes would not be the rule continuing to hold"). This backward-license argument is using a vibes entry that the auditor has flagged HARD for unresolvable licensed-by. The @25 line's structural claim — that its function is confirmed by the downstream vibe consequence — rests on a vibes entry the fixer has not yet repaired.
+
+The seam is this: the @25 line is billed as Taylor's competent-under-asymmetry move (she reads Wren as an anomaly, holds the rule, deflects clean). Cape-fic reader wants that competence legible in the facet graph — the board should show the information-asymmetry in the approach zone so the deflection reads as *decision*, not reflex. The sidecar's case for "decision, not reflex" runs through NI:5 (lonely, no co-load) and vibes:9 (HARD-flagged upstream). The line itself is syntactically correct. The structural claim around it is thin. That is a seam worth raising.
+
+The cape-fic walkout trigger cited in the dispatch — "new character earning trust without paying for it; reverse here — character refusing intimacy correctly" — does not fire negatively. The refusal reads as correct. Taylor does not warm the address; the line holds distance. The positive version of this test passes. But the *competence* read (does this land as the operating rule firing, not just a gruff adult) is the question the facet infrastructure is not fully supporting.
+
 ---
 
 # Verdict reasoning
 
-Both lines pass Q1 and Q2 in Stage 1. Stage 2 identifies one live seam on citation-completeness (sidecar placeholder not updated) and one structural seam on the deflect-vs-conceal coherence in Entry 1. Neither seam, from this lens, rises to a REVISE call — the tactical board-move is sound, the constraint fence is unbroken, and the information-asymmetry the cape-fic-reader lives for is intact. Verdict: ACCEPT with noted seams for fixer awareness.
+The line itself is clean and earns Q1/Q2 on its own construction. But cape-fic reader is pattern-hungry: the information asymmetry that makes this deflection interesting (Taylor has read Wren as something; Wren doesn't know she's been read) should be structurally present in the graph, not just asserted in the sidecar's prose argument. The NI at @24 is lonely and the vibes:9 backward-license is HARD-flagged. The graph does not fully support the "competent decision, not generic dismissal" claim the sidecar is making for this line. A revise that either closes the NI:5 lonely-entry problem or anchors the backward-license in a repaired vibes:9 would make the board legible.
 
 ---
 
-# Stage 1 V2
+# Entry-level callouts
 
-## Entry 1 @20 — "The watch came through. They did not stop. That is all it was."
-
-**Q1 — affirmatively demonstrates ≥1 card signature?**
-
-PASS.
-
-The sidecar cites §Cadence (base card: "Short sentences when afraid / clipped under pressure" + KL-variant "slightly shorter sentences when managing a high-density area"), §Syntax ("topic-noun does the work / load-bearing word last"), §Vocabulary refuses (no reassurance-softener), and §Voice tells ("clinical-of-the-horrible" — deployment just happened, line stays flat). The cape-fic-reader lens confirms: this is not inoffensive. The line is doing active board-work. It deploys a half-truth (the watch DID come through — true fact; the insects closed the lane-mouths — withheld). That gap between the stated fact and the withheld fact is the exact information-asymmetry move this reader tracks. Wren is being managed. The reader sees it. Wren doesn't. That asymmetry is a cape-fic-reader hook, and it is produced by a specific card-signature (§Voice — closure-without-declaration). §-sections are cited; demonstration is not merely claimed.
-
-verdict: ACCEPT
-
-**Q2 — card not violated?**
-
-PASS.
-
-Earth-Bet proper-noun fence: clean (confirmed by auditor Class 8, no hits). No reassurance-softener, no modern register bleeds, no endearment. "The watch" is Westerosi-correct. No forbidden vocabulary from base card visible. The calibration anchor ("The watch came through" is named in the sidecar as the batch anchor mapped to a known-strong target) confirms the register is deliberately set.
-
-verdict: ACCEPT
-
----
-
-## Entry 2 @20 — "Go home, Wren. The street is quiet now."
-
-**Q1 — affirmatively demonstrates ≥1 card signature?**
-
-PASS.
-
-Sidecar cites §Syntax (bare imperative — "Go home, Wren" is the directive without announcing itself as one), §Cadence (two short sentences; the second is operational justification for the first), §Vocabulary reaches ("quiet now" as status report / all-clear, not comfort), and §Relationships (using Wren's name in the imperative as the single permitted softness — direct address, not endearment; affect suppressed, not absent). From cape-fic-reader lens: the name "Wren" inserted into the imperative is doing double work — it signals the un-priced attachment (Taylor's only tell of warmth is that she says the kid's name) while functionally delivering a board-move (get the witness off the street). The reader who is tracking attachment-formation will catch it. The reader who isn't will still read a clean directive. That doubled register is affirmatively demonstrated by the card signature §Relationships — "permits the attachment because refusing it would be cruelty" — and the doubling earns it.
-
-verdict: ACCEPT
-
-**Q2 — card not violated?**
-
-PASS.
-
-Westerosi register intact. No Earth-Bet nouns. No rebuke framing (the sidecar's rejection note on draft B correctly identifies that "You should not be here" would surface the un-priced variable). "Quiet now" is unfalsifiable by Wren (the auditor's Class 8 confirms the line is clean). No fence violations visible.
-
-verdict: ACCEPT
-
----
-
-# Stage 2 V3 seams
-
-## Strongest hostile counter-argument — lens: cape-fic-reader
-
-### Entry 1 seam
-
-**The deflect assumes Wren doesn't already have the evidence.**
-
-From a cape-fic-reader lens: the information-asymmetry move in Entry 1 depends on Wren not being able to test the claim. But proto-line @19 is Wren's speech bone. The auditor's Class 8 confirms wren:1 @19: "The flies were round you again. They were round you on Tickler's Lane two days gone, and the lane went quiet after. It goes quiet where you've been. I weren't looking for it. I just saw." Wren has already assembled the pattern. She observed the insects twice. She drew the causal connection herself. The deflect ("The watch came through. They did not stop. That is all it was.") offers an alternative explanation for *this* incident but does not address the pattern Wren just named — the lane going quiet *where she's been*, two days prior, is not explained by the watch coming through today. The line closes this exchange but does not close the information gap Wren just opened.
-
-This is a seam, not a fault, because the deflect is still operationally rational (Taylor's goal is to move Wren off the topic and off the street, not to win the epistemological argument). But a cape-fic-reader will notice that the deflect leaves the prior-incident untouched, which means Wren still holds data Taylor cannot explain away. The line's "that is all it was" applies to today — not to Tickler's Lane two days gone. If the stitcher renders this line without registering the gap in Taylor's deflect, a sharp cape-fic-reader will feel the miss. The seam here is not in the line itself but in the facet co-load: is there an NI entry or feeling entry at @20 that shows Taylor registering the gap in her own deflect? The sidecar notes that vibes:14 @20 is the licensed co-load (`earning-collapse` / `wren-layer-actualization` tokens) — but the auditor's TF-001 flags that `earning-collapse` is ambiguous and may bias the stitch toward a deflationary register rather than a crystallization. If the stitch renders @20 deflation-first (Taylor wins the exchange cleanly), this seam will land as a read-coherence failure for the cape-fic-reader. The seam is real; it lives in the stitch-layer, not the dialogue line. The line itself is defensible.
-
-**Severity:** conditional — depends on how vibes:14 is rendered at stitch. Seam is open.
-
-### Entry 2 seam
-
-**The name use is the only cape-fic-reader hook, and it cannot carry the load alone.**
-
-"Go home, Wren." The name in the imperative is the attachment signal. A cape-fic-reader tracking the relationship arc will catch it. But the seam is: if this is the only on-page signal of the un-priced attachment, it is doing a very large amount of work for a two-word fragment in an otherwise operational line. The sidecar's §Relationships citation argues the name is "the single permitted softness." The question from a cape-fic-reader lens is whether "single permitted softness" is sufficient to register as an attachment signal rather than simply as a naming convention (you say the person's name in a directive; this is normal; this does not necessarily signal warmth). The line needs the stitch context — narrator-interest, feeling, or vibe entries at @20 — to carry the attachment weight the sidecar claims is present. The cite-index confirms vibes:14 @20 is the co-load; but feel:1 fires at @28 (not @20), so there is no somatic tell co-loading the name-use at @20. The warmth claim is structurally supported by vibes alone, not by feeling. A cape-fic-reader who is tracking the attachment formation will want more than a vibe token and a name in an imperative to register that this is a load-bearing relational moment. The line is not wrong; it may be under-resourced at the facet co-load layer.
-
-**Severity:** open seam — co-load question, not a dialogue fault. The line itself passes.
+- [taylor-hebert-kl-122ac:2] @25 — sidecar cites `interest-narrator:5 @24` as the interior chassis for the @25 deflection, but narrator:5 is a lonely entry (no co-location, no inbound license) — the assessment-radius interiority claim is asserted without facet co-load; the board-move reads as structurally naked at the approach-zone anchor that is supposed to make the deflection legible as competence rather than reflex.
+- [taylor-hebert-kl-122ac:2] @25 — sidecar cites `vibes:9 @27` as backward-license confirming the deflection's minimum-surface function; auditor fault-011 (HARD) flags vibes:9 for unresolvable licensed-by (feeling:3 deleted at R2.3); the backward-license chain runs through a structurally compromised entry that fixer has not yet repaired; the @25 chosen draft's functional claim is contingent on a HARD-faulted downstream entry.
 
 ---
 
 # Convergence trace
 
-- Entry 1 seam (deflect leaves Tickler's Lane gap unaddressed) overlaps with: auditor TF-001 (vibes:14 `earning-collapse` ambiguous / stitch-register risk). The cape-fic-reader seam names the exact mechanism by which the wrong stitch-register becomes a read-coherence failure — the keyword `earning-collapse` biasing toward deflationary read when the deflect is already operationally incomplete as an explanation.
-- Entry 2 seam (name-use under-resourced at co-load) overlaps with: auditor flag-009 (RF-003 SIGNAL — sidecar `facet-licenses:` not updated from DEFERRED to resolved `vibes:14 @20`). The unresolved sidecar placeholder is precisely the record that should document whether the co-load is sufficient. Because the sidecar was not updated, the sufficiency claim rests on the R2 shard, which the dialogue-writer did not translate back into the entry-level citation.
-- No overlap with auditor HARD findings (both closed at cycle-2). The cape-fic-reader seams are downstream of SIGNAL-level findings only.
+- [taylor-hebert-kl-122ac:2] @25 backward-license seam overlaps **auditor fault-011** (HARD: vibes:9 licensed-by cites deleted feeling:3; unresolvable citation; CONSTRAINT violation). The audience callout is the read-level consequence of the mechanical fault: a structural HARD in vibes:9 undermines the sidecar's backward-license argument for the @25 chosen draft.
+- [taylor-hebert-kl-122ac:2] @25 approach-zone thin seam overlaps **auditor fault-016** (TASTE-FLAG: scene-C approach zone @22-@25 has sparse facet coverage; narrator:5 @24 alone before dialogue @25; momentum-stall risk flagged). The audience callout sharpens the fault-016 advisory from "momentum-stall risk" to a specific attack on the dialogue entry's structural claims: the competence-read that the @25 line is supposed to carry requires more approach-zone co-load than the graph currently supplies.

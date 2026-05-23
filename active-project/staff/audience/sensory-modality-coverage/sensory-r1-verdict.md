@@ -2,48 +2,30 @@
 reviewer: sensory-modality-coverage
 facet: sensory
 cycle: 1
-episode: b01c02
-date: 2026-05-21
-verdict: accept
+episode: b01c01
+date: 2026-05-23
+verdict: revise
 ---
 
 # Verdict reasoning
 
-File-level distribution read. Two entries, two modalities. I count.
-
-**Modality tally:**
-- sound: 1 fire (sensory:1 @7)
-- light: 1 fire (sensory:2 @22)
-- smell: 0
-- thermal: 0
-- humidity: 0
-- pressure: 0
-- tactile: 0
-
-**Coverage floor (≥2 modalities):** MET. Sound + light = 2 distinct modalities. The file is not monoculture.
-
-**Sparsity:** 2 / 27 = 7.4%. Above the 6% ceiling. The short-chapter floor-vs-ceiling exemption (V3) applies: bone_count 27 < 30, modality count equals the floor (2). The effective ceiling relaxes to max(6%, 2/27) = max(6%, 7.4%) = 7.4%. The density sits exactly at the relaxed ceiling. ADVISORY, not blocking. The auditor's FREQUENCY-BAND section confirms this read.
-
-**Distribution against episode shape:** Scene-A (bones @1–@9) carries sensory:1 @7 — the watch column passage. Scene-C (bones @22–@29) carries sensory:2 @22 — the lamp lighting. Scene-B (@10–@21) carries nothing. The distribution tracks the episode's perceptual logic: the alley exterior (scene-A) has the ambient-to-column sound inflection; the lodging interior (scene-C) has the darkness-to-lamplight inflection. Scene-B is the stitch exchange (dialogue, interior registration) where no environmental modality changes; the silence is correct.
-
-**Location palette fit:** Flea Bottom alley exterior → sound is the natural palette anchor (footfall, clank, voice-in-narrow-stone). Interior lodging at night → light is the natural palette anchor (pre-lamp darkness, lamp circle establishing). Both fires match the location's sensory palette at the beat.
-
-**Silent-gap audit for modalities that should fire but don't:** Thermal is the candidate gap. Flea Bottom in this world is not named as winter; no loc-state establishes a specific thermal condition requiring a sensory fire. The auditor's cross-facet modality silent-gap rule (loc-state sensory note that names a discrete perceptual event must carry a sensory-flag) would surface a thermal gap only if a loc-state sensory note named a thermal change-event. I do not have grounds to flag thermal absence without a loc-state anchor naming a thermal event. No silent-gap finding.
-
-**Per-scene cap (≤3 per scene):** Scene-A: 1. Scene-B: 0. Scene-C: 1. All within cap.
-
-**Inflection-pair coherence:** No drop/up pair on same modality. Not applicable.
-
-File is at coverage floor, correct distribution, correct palette fit. The short-chapter exemption legitimizes the density. Nothing in the file-level distribution pattern fails my axis.
-
-ACCEPT.
+Four fires, four modalities, 14.8% sparsity — the modality count exceeds the floor (4 > 2), so the V3 short-chapter exemption does NOT apply; standard 6% ceiling governs, and 14.8% is out-of-band above it. Worse: three of four fires cluster in scene B, leaving scene C — the chapter's payload zone, where the operating-rule failure preview lands at @26 — with zero sensory inflection across eight bones. The drain (@2), the insects (@13), and the alley-mouth approach (@22-29) are all palette-native Flea Bottom beats with bare verbs and earned perceptual inflections; all three are silent.
 
 # Entry-level callouts
 
-None. My scope is file-level; per-entry attacks fall to the other specialists.
+- [sensory:--] file — modality distribution: smell:1 / tactile:1 / thermal:1 / sound:1 = 25% each, no dominance fault; but scene-B carries 3 of 4 fires (@12, @14, @17) while scene-C carries 0 of 4. Distribution is scene-inverted: the lightest dramatic zone is the most textured; the heaviest dramatic zone (payload at @26) is perceptually bare.
+
+- [sensory:--] file — sparsity 14.8% (4/27) with 4 modalities. V3 exemption requires modality count to equal the floor (exactly 2). File has 4 modalities; exemption does not engage. Standard 6% ceiling applies. 14.8% is over-band, not advisory. File header's "within ADVISORY range" claim is unsupported by the rubric.
+
+- [sensory:--] @2 — "taylor-hebert-kl-122ac crosses the drain-channel." Bare verb ("crosses"); loc-state:2 explicitly establishes the drain as "wet stone gap at the yard crossing; footing costs a stride's width." Tactile inflection (wet-stone footing against prior open-air-circuit surface) is earned and skipped. Palette-native miss.
+
+- [sensory:--] @13 — "the insects fill the block." Bare verb ("fill"); narrator:3 fires on the same bone but sensory is silent. Sound modality (ambient-insect onset distinguishable from midday-ambient-murmur baseline established at @11) is earned: "fill" does not self-carry the auditory register; the density shift is audience-perceptible once flagged. Skipped.
+
+- [sensory:--] @22-@29 — scene C: zero sensory fires across eight bones. The alley-mouth approach (@22) carries loc-state:7 ("narrow enough that approach reads as deliberate") — spatial constriction has a tactile/pressure analog. @26 is the chapter payload (Wren's speech, operating-rule failure preview); five co-located interiority facets fire with no environmental sensory grounding. Scene C reads single-channel: all interiority, no perceptual skin.
 
 # Convergence trace
 
-- Sparsity advisory (7.4% vs. 6% ceiling): overlaps with auditor FREQUENCY-BAND finding (Class 2, no fault). The auditor applied the same V3 exemption logic and reached ADVISORY, not blocking. Consistent with my read.
-- Modality floor met (2): auditor CURVE-SHAPE confirms "Cross-modal coverage met." No divergence.
-- No silent-gap finding from modality-coverage lens given absence of loc-state thermal event note. The b01c01 cycle-1 thermal-gap flag (auditor URI-FACETS-CYCLE-1) arose because a loc-state sensory note explicitly named a thermal change-event at @13 with no sensory-flag ratification. That condition does not replicate here for b01c02.
+- Sparsity and scene-C silence: partial overlap with auditor fault-016 (TASTE-FLAG: "scene C atmosphere carries the chapter's structural weight; thin approach coverage may read as momentum stall before the payload lands"). Auditor named this as atmosphere-thin; this review names it as a sensory-specific inflection void. Overlapping concern, distinct diagnostic: auditor flags density-of-facets; this reviewer flags absence of environmental perceptual grounding specifically.
+- @2 drain-channel silent-gap: no auditor overlap (auditor did not probe sensory refusals at @2).
+- @13 insects silent-gap: no auditor overlap (auditor SUPERFLUOUS review confirmed sensory:2/@12 and sensory:3/@14 as warranted but did not probe the @13 sensory refusal).
+- Over-band sparsity ruling (V3 exemption does not apply with 4 modalities): no auditor overlap; the auditor accepted the file header's "ADVISORY range" characterization without auditing the V3 exemption clause's modality-count prerequisite.

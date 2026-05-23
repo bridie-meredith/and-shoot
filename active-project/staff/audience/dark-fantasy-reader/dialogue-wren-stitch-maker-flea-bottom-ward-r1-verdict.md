@@ -2,68 +2,33 @@
 reviewer: dark-fantasy-reader
 facet: dialogue-wren-stitch-maker-flea-bottom-ward
 cycle: 1
-episode: b01c02
-date: 2026-05-21
+episode: b01c01
+date: 2026-05-23
 verdict: accept
 ---
 
+# Stage 1 — V2 strict
+
+- entry 1 (@23): Q1: Pass. The sidecar cites §Voice / Voice tells ("Reports what she observed before she interprets it") and ("Does not ask the follow-up question she could ask") affirmatively — the line performs both in one move: the count is the observation, "I wasn't looking for you" is the un-asked-question delivered as a statement-of-fact. The absence of the follow-up IS the line's second sentence, which is the exact structural pattern §Voice licenses. Also cites §Default Stance (observation-before-acting) and cond-westerosi-witness-vocabulary §pattern-recognition lane. Multiple §-sections affirmatively demonstrated. Q2: Pass. No forbidden vocabulary; no analytic-vocabulary (no "circuits," no causal framing, no question form, no hedge); no Earth-Bet hit; hard fence 2 (does not ask Taylor what she is) intact; no em-dash spine; short declarative child-voice; past-tense form is consistent with card §Dialogue samples template. Verdict: accept.
+
+- entry 2 (@26): Q1: Pass. Sidecar cites §Voice / Voice tells ("Reports what she observed before she interprets it" — presence then absence, no causal claim), ("Does not hedge"), §Dialogue samples (direct echo of the fly-observation template), §Default Stance, cond-westerosi-witness-vocabulary §insect-events lane (negative-space inversion of "flies went to her hand"), §Hard Fences 2 (line states and stops; no follow-up). The chosen draft demonstrates the card's core mode — report the sensory fact, leave the gap, stop — in a single two-sentence structure. Q2: Pass. No forbidden vocabulary; no interpretation appended; no question form; period-split chosen over em-dash chassis; no Earth-Bet hit; no causal claim (draft C's "like they knew not to" would have been a violation; draft A holds the line); all hard fences intact. Verdict: accept.
+
+# Stage 2 — V3 adversarial (dark-fantasy lens)
+
+- entry 1 (@23): The seam is graph-thinness at the approach. @23 is a singleton in the cite-index — no co-located lens facets, only the dialogue entry itself. In a world that should feel hostile and specific, a speaking-beat with zero cross-facet texture risks rendering in the stitch as a floating line: voice without location, without body, without the world pressing in. The auditor named this (fault-016: "thin approach coverage… bare @23 — wren's first speech, dialogue only, no co-located lens facets"). The line is correct in itself; the risk is that the stitch renders it as a line said in a void rather than a line said by a Flea Bottom child who has walked this block and watched this woman for long enough to count the circuits. The card's §Look ("her eyes move to things before her head does") has no somatic entry at @23; the feeling-wren slot is silent here. The line lands — the world around the line may not. The seam is not inside the utterance; it is in what the utterance is given to stand on.
+
+- entry 2 (@26): The adversarial read is: does this land as a child registering the specific thing that cannot be explained in Planetos terms, or does it land as a clever child making a clever observation? The dark-fantasy lens is sensitive to the difference. "There were flies on the meat-stall. There weren't any on your hand." — the stripped draft is correct. The danger is that correctness here reads as restraint-as-craft rather than restraint-as-worldview. Wren doesn't ask because she is eleven and has made a decision; but the reader doesn't see the decision — they see a clean, precise report that any precocious child might deliver. What makes it Planetos-specific, what makes it superstition-adjacent rather than precocity-as-charm, is entirely load-carried by the co-located facets (narrator:6, feel:3/feel:4, vibes:7, vibes:8). The line alone does not carry the Worm-residue weight. The pile-up at @26 is the structural answer to this: five co-located facets provide the pressure that the dialogue itself is calibrated to withhold. If the stitch renders those co-fires correctly, the weight accumulates before the line and the line lands. If any co-fire is rendered thin, the line reads as precocious-child. This is a delivery-chain risk, not a line defect. The seam is structural: the line is correct only if the facet pile-up at @26 is rendered at full weight.
+
 # Verdict reasoning
 
-Dark-fantasy-reader asks whether this world was here before the protagonist. Wren is evidence it was. She has been watching long enough to have a pattern. She names the observation in the register of a child who has learned that seeing things correctly is more useful than saying them aloud — and then she says it aloud, once, carefully. That is Flea Bottom behavior: the economy of someone who cannot afford to be wrong about who to trust. The line earns the world it's inside. Accept.
+Both lines are correctly authored — affirmatively on-card, forbidden boundaries clean, no trope contamination. The @26 line holds the restraint the card demands: no causal claim, no question, no interpretation. The dark-fantasy reader's concern is not with the dialogue as text but with the delivery chain: @23 stands alone in a thin approach zone, and @26 is load-dependent on five co-firing facets doing their work in the stitch. The lines earn their place. Whether the chapter earns them around the lines is the stitcher's problem and the auditor's documented risk (fault-016). Accepting both entries; the seams are structural, not authorial.
 
----
+# Entry-level callouts (revise / fail only)
 
-# Stage 1 V2
-
-## Entry wren:1 @19
-
-**Utterance:** "The flies were round you again. They were round you on Tickler's Lane two days gone, and the lane went quiet after. It goes quiet where you've been. I weren't looking for it. I just saw."
-
-**Q1 — Affirmative card-signature demonstration:**
-
-From the dark-fantasy-reader lens — atmosphere, consequence-bearing register, and Planetos-specificity:
-
-- The line smells like this specific culture, not generic medieval. "Two days gone" is lived-time; it does not translate into universal English. "The flies were round you" is Flea Bottom insect-as-omen vocabulary — a child naming what she has observed through the frame her culture gave her (the smallfolk insect-event witness vocabulary). She does not say "I noticed something odd about the insects." She says what a smallfolk child in King's Landing would say.
-- The observation-before-interpretation sequencing is not just a register feature — it is culturally correct. A Flea Bottom ward does not lead with conclusions. She leads with facts in occurrence order and lets the facts accumulate until the weight is obvious. That is the behavior of someone who learned early that premature conclusions get you beaten.
-- "I weren't looking for it. I just saw." — This is the consequence-bearing closer. She has been watching Taylor for reasons she doesn't interrogate, and she has let what she saw accumulate past the point where she could unknow it. The line carries the cost of noticing: once you've seen this many times, you cannot pretend you haven't.
-- §persona Voice tells demonstrated: reports observation before interpretation; does not hedge; enacts not-asking by ending on a statement. All three are on the card and all three are present in the surface of the utterance.
-
-Q1: PASS — the line affirmatively demonstrates register features that are Planetos-specific and consequence-bearing, not merely inoffensive.
-
-**Q2 — Card not violated:**
-
-- No Earth-Bet proper nouns. No modern vocabulary.
-- Hard Fence 2 (not-asking must be enacted by absence) is held: she ends on "I just saw" with no question reached for. The not-asking is performed by silence, not announced.
-- Hard Fence 1 (no framework-claim, no precocity): "It goes quiet where you've been" is a generalized observation over two named instances — Tickler's Lane and the implied prior occurrence ("again"). It does not name a capability or mechanism. She does not say "you have a power" or "the Stranger is with you." The pattern-recognition stops at pattern-statement.
-- No forbidden vocabulary, no cadence violations.
-
-Q2: PASS.
-
-**Verdict: ACCEPT** — Q1 and Q2 both pass.
-
----
-
-# Stage 2 V3 seams
-
-Strongest hostile counter-argument from the dark-fantasy-reader lens:
-
-**Seam — the fear is missing.**
-
-Dark-fantasy-reader's lens: Westerosi characters react to uncanny things with superstition and fear, not with the adapted curiosity of someone who has processed a parahuman encounter. The card: "Westerosi characters reacting to Worm-world elements with the wrong flavor of shock (curiosity instead of superstition, adaptation instead of fear) → flag."
-
-The hostile reading: Wren has observed a stranger who draws flies and is followed by neighborhood quiet. She is 11 years old in Flea Bottom, a world where unexplained phenomena are attributed to the Stranger, to curses, to blood magic. Her response to this observation is not superstition or fear — it is the calm delivery of a pattern report. "I weren't looking for it. I just saw." That's the language of someone who has decided this is a fact to be noted and handed over, not a threat to be named or fled from. The drafts sidecar defends this by citing the "not-fearful, has-decided-not-to-make-it-a-problem relationship" — the cond-westerosi-witness-vocabulary card explicitly sanctions this stance for witnesses in that relationship mode.
-
-The seam: that defense works at the card level, but dark-fantasy-reader is asking a world-level question. Has this child earned the right to be un-afraid? The behavior is naturalistic only if the reader has been shown, somewhere before @19, that Wren has already processed the superstition response and come out the other side of it. If the reader hasn't seen that processing — if this is the first beat we get of Wren responding to the uncanny — then the calm delivery registers as the character skipping a step. The affect is missing.
-
-This is not a dialogue failure. The line is on-card; the card sanctions the stance. The seam belongs to the facet graph at @15 (the prior Wren anchor) and to whether feel:2 @15 and narrator:4 @15 together carry enough of Wren's prior-reckoning to justify the calm here. If those facets don't show us a child who has already made her peace with what she's seen, the calm at @19 reads as affect-free rather than earned-stillness.
-
-Verdict on the seam: the line accepts because the card sanctions the stance; the seam is an upstream responsibility (feel:2 @15 / narrator:4 @15). If those facets show the reckoning, @19 is consequence-bearing. If they don't, @19 will read as false composure. This is a flag for the stitch team, not a revise trigger for dialogue.
-
----
+None — verdict is accept.
 
 # Convergence trace
 
-- Auditor Class 5 CONTRADICTION: at @15, feel:2 (Wren interior) + narrator:4 (Taylor reading Wren's look) + state:15 (wren.stats.taylor_awareness: attachment-crystallized) — these three together are meant to carry the weight of Wren's prior-reckoning before @19. The dark-fantasy-reader's seam is whether those entries are sufficient. The auditor confirms no DEDUP and no contradiction at @15; the entries exist. Whether they are *sufficient* to earn Wren's calm at @19 is a taste judgment outside the auditor's mandate. Dark-fantasy-reader notes it.
-- Auditor Class 10 TASTE-FLAG flag-006 (vibes:14 @20 keyword `earning-collapse`) — the crystallization at @20 is Taylor-side, not Wren-side. The dark-fantasy-reader's concern is Wren-side (has she processed the fear). These are orthogonal.
-- Drafts sidecar behavior-card stack: cond-westerosi-witness-vocabulary is cited as licensing the "not-fearful, has-decided-not-to-make-it-a-problem" register. Dark-fantasy-reader accepts the card authority; the seam is at the level of whether the stitch context earns the condition the card licenses.
-- Drafts sidecar calibration anchor: the prior Wren dialogue samples ("You were on Tickler's Lane again this morning... I wasn't looking for you") are cited as the voice anchor. That earlier sample also reads as calm observation — meaning Wren's calm has been established as a pattern across multiple beats, not introduced cold here. This partially answers the dark-fantasy-reader's concern: the character's stance was established prior to @19 in the episode's prior beats. The seam weakens; the accept holds.
+- @23 singleton concern overlaps auditor fault-016 (scene-C approach zone thin, @23 bare of co-located lens facets, "momentum-stall risk").
+- @26 delivery-chain dependency overlaps auditor fault-016 (payload at @26 may feel abrupt if stitch renders @22-@25 without cross-facet texture) and pile-up review @26 (WARRANTED — the density is warranted precisely because the line cannot carry the payload alone).
+- V3 seam on @26 precocity-risk partially overlaps auditor fault-008 (wren-slice commentary stale after feel:3 @27 deletion) in the sense that the metadata inconsistency in the cross-facet picture may affect how Phase 5b reviewers read the co-fire completeness at @26.

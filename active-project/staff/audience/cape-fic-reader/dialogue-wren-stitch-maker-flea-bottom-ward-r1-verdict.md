@@ -2,74 +2,32 @@
 reviewer: cape-fic-reader
 facet: dialogue-wren-stitch-maker-flea-bottom-ward
 cycle: 1
-episode: b01c02
-date: 2026-05-21
+episode: b01c01
+date: 2026-05-23
 verdict: accept
 ---
 
+# Stage 1 — V2 strict
+
+- entry 1 (@23): Q1 pass §Voice / Voice tells ("Reports what she observed before she interprets it" — the line is the observation; "I wasn't looking for you" is the un-asked follow-up converted to a statement per §Voice / Voice tells "the absence of the follow-up is the tell"), §Default Stance (observation-before-acting operating verbally), §Stats / observation_habit (trained-close-attention-before-action producing speech); Q2 pass — no forbidden cadence (no analytic vocabulary, no question-form, no hedge, no precocious-wise framing, no em-dash or semicolon chassis, no Earth-Bet proper-noun hit); verdict: ACCEPT.
+
+- entry 2 (@26): Q1 pass §Voice / Voice tells ("There were flies around your hand" not "you had flies following you" — chosen draft is the exact-shape echo of this card sample; presence reported, absence reported, no causal claim; "Does not hedge. She says what she saw."), §Hard Fences 2 (does not ask the question; line states the observation and stops), §Default Stance (observation-before-acting; she reports, leaves interpretation as offering); Q2 pass — no forbidden vocabulary, no question-form, no causal framing, no hedge, no Earth-Bet hit, no precocious framing; verdict: ACCEPT.
+
+# Stage 2 — V3 adversarial (cape-fic lens)
+
+- entry 1 (@23): The seam is information-sequence purity. The auditor flags @22-@25 as a thin approach zone (fault-016: scene-C approach carries 0 memory-flags, 0 NI in the first two bones, @23 is singleton-dialogue-only in the cite-index). From the cape-fic lens: @23 arrives with zero co-located facets to texture the board-state — no feel, no NI, no vibes. The line itself works as a board-move (pattern named, un-asked follow-up delivered as negative-space), but the thin surround means the asymmetry signal at @23 has no cross-facet support in the stitch render. The reader who needs to register "Wren sees what Taylor did not account for" is working from dialogue alone at this anchor. That's not a line failure — it's a stitch-risk that the line cannot fix from inside the dialogue file. Advisory, not a seam in the line's construction.
+
+- entry 2 (@26): The seam is landing register. "There were flies on the meat-stall. There weren't any on your hand." — two bare declaratives, past tense, no affect marker. The sidecar argues this is the correct form: report presence, report absence, no causal claim, Wren does not name a cause. From the cape-fic lens: the risk is that the line lands as cute-child-being-observant rather than tactical-reveal. The cape-fic reader needs to feel the asymmetry shift — the child just clocked what Taylor's discipline missed — but the line has no weight-marker distinguishing it from any other Wren observation. The five co-located facets at @26 (feel:3/narrator:6/vibes:7/vibes:8) are doing the work of signaling this is the payload beat, but the dialogue line itself is structurally identical in register and construction to @23. In isolation, stripped of the facet pile-up, @26 does not announce itself as the chapter's pivot. The line depends entirely on the stitcher rendering the co-located facets to deliver the asymmetry beat. The sidecar knows this — it names narrator:6 @26 as the NI that carries the payload-landing in Taylor's interior, with the dialogue carrying Wren's external naming. That's the correct division of labor in the facet architecture. But it is a real seam: the dialogue itself is inert without the facets, and the facets have 3 HARD citation-offset faults that the fixer must correct before the stitch render is clean. If the cite-graph faults (fault-001 through fault-003) are carried into stitch unfixed, the @26 pile-up's cross-facet texture may not resolve correctly, and the line will land as cute-child rather than tactical-reveal.
+
 # Verdict reasoning
 
-Cape-fic-reader cares about information asymmetry and what it does to the board. This is exactly that: an 11-year-old ward has mapped something about Taylor that Taylor didn't know was visible. The line earns its keep because it reshapes who-knows-what-when. Wren now has a model; Taylor now has to account for it. That's a board state change delivered in 40 words. Accept.
+Both lines are on-card and affirmatively demonstrating their §-sections; neither violates a fence. The @26 line's dependence on the co-located facet pile-up to deliver the asymmetry beat is a stitch-risk, not a dialogue fault — the division of labor (dialogue carries external speech-act, narrator:6 carries interior registration of landing) is the correct facet-architecture answer to what would otherwise be an invisible slip. The 3 HARD cite-graph faults flagged in the auditor report are upstream of this file and outside the dialogue facet's scope; they must be fixed before the @26 pile-up resolves cleanly, but that failure is not in the dialogue line. Accept both entries; flag stitch-dependency risk at @26 as advisory.
 
-The facet-license DEFERRED placeholder in the sidecar is a shard-resolved administrative gap (auditor flag-009), not a content failure — vibes:13 @19 is confirmed on-disk in the cite-index. This reviewer does not fail entries on sidecar write-back hygiene; that's auditor territory.
+# Entry-level callouts (revise / fail only)
 
----
-
-# Stage 1 V2
-
-## Entry wren:1 @19
-
-**Utterance:** "The flies were round you again. They were round you on Tickler's Lane two days gone, and the lane went quiet after. It goes quiet where you've been. I weren't looking for it. I just saw."
-
-**Q1 — Affirmative card-signature demonstration:**
-
-The line affirmatively demonstrates the following, with §-citations as provided in the drafts sidecar (Draft B chosen block):
-
-- §smallfolk Cadence — "Short sentences. Stacked, not chained." Four declaratives in occurrence order; the causal link is left for the reader/Taylor to supply. The brown-well sample structure exactly.
-- §smallfolk Cadence — repeat-for-emphasis: "round you" twice; "went quiet" / "goes quiet" pairing replaces the intensifier vocabulary this register lacks.
-- §smallfolk Syntax — was/were inversion on singular subject: "I weren't" (class-marker; singular subject, plural verb form).
-- §smallfolk Vocabulary §Time markers — "two days gone" rather than "two days ago"; lived-time construction, in-register.
-- §grrm-mannerisms — exactly one phonetic marker ("weren't" inversion); rationed, not stacked.
-- §persona Voice tells — reports observation before interpretation ("The flies were round you" not "you control the flies"); does not hedge ("I just saw" is flat); enacts the not-asking by ending on a statement with no question reached for.
-- §cond-westerosi-witness-vocabulary — uses the licensed insect-event frame and pattern-recognition frame without reaching for "witchery" or a categorical mechanism-claim.
-
-Q1: PASS — the line demonstrates multiple card §-sections, not merely avoids violating them.
-
-**Q2 — Card not violated:**
-
-- No forbidden vocabulary found. No modern HR-speak, no deposition cadence, no nominalizations.
-- No Earth-Bet proper nouns (auditor Class 8 scan: CLEAN).
-- No hard fence violation: Hard Fence 2 (the not-asking must be enacted by absence, not announced) is honored — she does not say "I don't ask folk what they are" or any equivalent; she ends on "I just saw" and stops. Hard Fence 1 (no framework-claim, no precocity) is honored — she states the pattern and stops; no mechanism named, no capability attributed.
-- "It goes quiet where you've been" is the self-flagged seam (see Stage 2) but it does not cross into categorical mechanism-claim territory as written — it is a generalized observation across multiple named instances, not an attribution of capability. Q2 holds.
-
-Q2: PASS.
-
-**Verdict: ACCEPT** — Q1 and Q2 both pass.
-
----
-
-# Stage 2 V3 seams
-
-Strongest hostile counter-argument from the cape-fic-reader lens:
-
-**Seam — the board-move boundary and information-containment logic.**
-
-Cape-fic-reader's lens: who-knows-what-when coherence. The line works as a board-state reveal, but it raises a containment question the text doesn't answer and doesn't intend to. "The flies were round you again" + "It goes quiet where you've been" — Wren has assembled a pattern linking Taylor's insect-presence to the neighborhood going quiet. That's a very specific correlation for an 11-year-old to have mapped without being told anything. The brief's defense is "observational witness tier" — she has been watching and drawn an inference, not been given a briefing. That's fine.
-
-The hostile counter-argument: "It goes quiet where you've been" is one sentence doing double duty. At the observational tier it means: I noticed the lane was quiet in the aftermath. But the phrasing "where you've been" is a temporal-causal generalization — it could as easily read as: every location you inhabit subsequently exhibits quiet. That second reading is close to a capability attribution, and a cape-fic-reader will hear it that way. Not because the line is wrong but because the reader's ear is tuned for "ah, she's clocked the power." If the stitcher renders this line without adjacent context that anchors "quiet" to the immediate aftermath (not ongoing ambient suppression), the line could register as Wren knowing more about the capability's scope than she should.
-
-This is not a Q2 failure — the line doesn't name a capability and the hard fence is intact. But it is the border of the observational/categorical line that the drafts sidecar itself flags. The seam is: does the stitch context around @19 make the temporal reference legible as retrospective-observation rather than ongoing-prediction? If the sensory / loc-state / vibes facets at @19 don't carry that framing, the line bears the whole weight alone.
-
-Cite-index check: @19 carries `vibes:13` and `wren-stitch-maker-flea-bottom-ward:1` only. No loc-state, no sensory, no narrator. The stitch context at @19 is thin — the dialogue line will land nearly naked. That's the seam. The line is on-card and passes Q1+Q2, but the stitch isolation means the "where you've been" clause's register (retrospective-observation vs. capability-prediction) is unanchored by co-firing facets at that anchor.
-
-Severity: advisory. The line accepts; the seam belongs to the stitch team's lens anchoring problem, not to dialogue.
-
----
+None — verdict is accept.
 
 # Convergence trace
 
-- Auditor flag-009 (SIGNAL, RUBRIC-FIDELITY) — facet-licenses DEFERRED placeholder in sidecar — this audience finding does not add to the fault; the cite-index confirms vibes:13 @19 co-location is real. The sidecar write-back gap is the auditor's routing, not an audience REVISE trigger.
-- Auditor Class 8 CONSTRAINT — Earth-Bet hard-fence scan CLEAN on wren:1 @19 — confirms Q2 hard fence clear.
-- Auditor Class 6 DEDUP — no DEDUP at @19 — dialogue line not duplicating NI/feeling content at anchor.
-- Auditor Class 2 FREQUENCY-BAND — dialogue-coverage gate: speech_bone @19 covered — confirms entry is correctly placed.
-- Drafts sidecar self-flag (board-move boundary seam on "It goes quiet where you've been") — cape-fic-reader's V3 seam is the same seam the writer flagged. Convergent. The writer's defense holds for Q2; the stitch-isolation concern is an independent V3 observation.
+- fault-016 (TASTE-FLAG: scene-C approach zone thin; @22-@25 sparse facet coverage) overlaps with Stage 2 @23 advisory (thin surround, no cross-facet support at @23 for the asymmetry signal). Convergence: auditor named the risk before Phase 5b; Stage 2 seam confirms it from the cape-fic lens. Not a dialogue-file failure — a stitch-render risk that the auditor has already flagged for Phase 5b probing.
+- fault-001, fault-002, fault-003 (cite-graph HARD: loc-state citation offsets, stale state:4 token) are upstream structural faults that affect the @26 pile-up's render-coherence. Stage 2 @26 seam names the dependency: the line's payload-landing requires a clean stitch of the five co-located facets. If the HARDs are unresolved at stitch time, the cape-fic reader's asymmetry beat may not land. Convergence: Stage 2 seam and auditor HARD findings point to the same upstream vulnerability.

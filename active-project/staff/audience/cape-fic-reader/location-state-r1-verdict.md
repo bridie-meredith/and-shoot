@@ -2,19 +2,21 @@
 reviewer: cape-fic-reader
 facet: location-state
 cycle: 1
-episode: b01c02
-date: 2026-05-21
-verdict: accept
+episode: b01c01
+date: 2026-05-23
+verdict: revise
 ---
 
 # Verdict reasoning
 
-The 11 entries function as coherent positional tracking: exits controlled (insect-sealed mouths), Watch sightline mapped (the Hook), alley clearing post-sweep, three-paces gap when Taylor and Wren face each other, lane-width for the near-witness departure. Every major board-change is documented. Entry 14 (@14) is the thinnest — the post-sweep open-alley state was initiated at @12, and @14 re-establishes it at Taylor's explicit re-orientation — but without @14 the scene-B opening has Taylor moving from a Coll-bone directly into the Wren confrontation without her own positional anchor in the now-open alley, which is a real navigational gap. Entry @15 earns its place independently: the three-paces distance is the only entry that places Taylor and Wren in specific relation to each other, and that gap is the spatial fact the confrontation turns on. The lamp entry at @22 is the one that goes beyond traffic-control into genuine territory — single flame, tight radius, the rest of the room falling off — and it lands. No board-changes are missing, no entries misstate a position, nothing here breaks the established geometry.
+Six of seven entries are doing real tactical-board work — currency at threshold, footing costs, NPC placement, who-sees-whom at the Hook bend, approach geometry at the alley-mouth. The density reads as justified for those six. But loc-state:3 @6 is the one entry in the file that delivers ambient sensation (tallow-smoke funnel arm's-reach) with zero tactical yield: no sight-line consequence, no cover function, no route-cost, no change to who is visible to whom. The continuity-carry license lets it through on form, but the carry-note names a smell and stops there — a cape-fic reader skims that and comes up empty. Compound that with the systematic citation-offset fault-003 (watch-patrol note rendered against the wrong beat, well-step footing rendered against the wrong bone), and the stitcher will misplace the only genuinely good tactical entries (loc-state:6 the watch-line-of-sight) at render time, which breaks the board.
 
 # Entry-level callouts
 
-None.
+- [loc-state:3] @6 — continuity-carry fires on tallow-smoke "within arm's reach of the circuit path" and stops there. What does the smoke do to the board? If it covers approach, say so. If it marks a navigational waypoint with a hazard or sight-line implication, name it. Right now this is a smell note, and a smell note is not a tactical entry. The carry-license requires the carry-note to name what specifically persists — "tallow-smoke funnel drawing within arm's reach" tells me nothing about how the location shapes the move or the board state. A cape-fic reader passes the tallow-stall and keeps moving; nothing registers. Revise the carry-note to name the tactical consequence or cut the entry.
 
 # Convergence trace
 
-No callouts to trace. The auditor's Class 2 FREQUENCY-BAND confirmed all 11 entries attach to movement/positioning/entry/exit verbs or first-in-new-location anchors (no frequency finding). The auditor's Class 7 SUPERFLUOUS strip-tested loc-state:1 @2 and loc-state:8 @14 (the lonely entries per the cite-index) and cleared both. The auditor's clear on those two entries is consistent with this read — the frugality concern at @14 is real but does not cross into reject territory for this persona's tactical threshold. No overlapping finding IDs; the auditor-only concern (loc-state:8 SUPERFLUOUS strip-test marginal-pass) is noted but does not change the verdict here.
+- [loc-state:3] @6 — no direct auditor overlap (fault-007 flags density above guidance but the auditor does not isolate loc-state:3 as the weak entry; fault-007 defers the entry-level determination to audience-gate). Partial adjacency to fault-007 (density question) only; the specific attack (sensory-only carry-note with no tactical yield) is a cape-fic reading not surfaced by the mechanical scan.
+
+Note: fault-001 and fault-003 (cite-graph structural faults) are not callouts against the facet content itself but they directly threaten the tactical read: the systematic one-off citation offset places the watch-patrol loc-state:6 sensory note against the wrong proto-line at render time. If the stitcher pulls loc-state:4 (net-frame) for the well-step beat and loc-state:5 (well-step) for the Hook-bend beat, the board is misread at the two most tactically significant moments in scene B. These faults must be resolved before the stitch renders; the audience-gate finding does not add new callouts beyond what fault-001/003 already route to fixer, but the cape-fic reader confirms the stakes: board coherence breaks are not cosmetic.
