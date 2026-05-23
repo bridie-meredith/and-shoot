@@ -30,5 +30,5 @@ Rejection note — Draft C: "If you're staying" is conditional speculation — h
 - §Voice "short sentences for observations" — one clause, done
 
 **Facet-licenses:**
-- loc-state:4 @11 — the working corner / net-frame is the established location context; Draft A places the offer in the correct spatial register (the net-work is present and visible)
-- NOTE: R1 blind to other facet outputs; facet-license from loc-state:4 is provisional (resolves at R2 against locked graph)
+- exposition:2 @4 — Coll's net-mender first-mention gloss: "Net-mender, same corner since before Taylor arrived; ... range of interest runs one street; does not ask what strangers are." This is the on-disk locked-graph fact that licenses the chosen draft's card-signature ("offer work without asking"). Same scene as speech (scene A, @1-9); fires four bones upstream of the speech anchor (@4 → @8) as the proto-line's own framing of Coll's offer-mode. The phrase "does not ask what strangers are" is the structural license for the conditional-on-capability-only clause in the chosen draft.
+- R2 resolution note: R1 provisionally cited loc-state:4 @11 (the working-corner-with-Coll location-state anchor); cite-index confirms loc-state:4 fires at @11 (scene B, not scene A) and licenses the spatial register of the mid-day net-work — not the speech-act at @8. exposition:2 @4 is the same-scene, on-card license; replaces the cross-scene loc-state citation.

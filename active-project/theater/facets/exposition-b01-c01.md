@@ -1,6 +1,6 @@
 facet: exposition
 episode: b01c01
-author: exposition-author
+author: exposition-author (R1) + exposition-judge (R2.5)
 ---
 
 # Exposition-Flags — b01c01
@@ -9,86 +9,93 @@ author: exposition-author
 # Cross-episode register: active-project/staff/exposition-author/glossed-terms.md
 # Prior-episode: none (b01c01 is the series opener; all world-build terms are first-mentions).
 #
-# Gap identification method: each entry answers the question
-#   "What does a reader from this audience-persona lack that would make this proto-line opaque?"
-# Audience-gap gate:
-#   - cape-fic-reader: pattern-hungry; reads information asymmetry; needs Taylor's capability framed
-#     before the chapter's power-system can register as meaningful
-#   - dark-fantasy-reader: consequence-oriented; needs the world's physical/social rules established
-#     before the smallfolk stakes can land
-#   - worm-canon-pedant: power-mechanics accuracy; needs the insect-network's b01c01 scope confirmed;
-#     needs the prohibition framed explicitly so the Khepri-residue register lands correctly
+# R2.5 pass — graph-aware judge applied 2026-05-23.
+# cite-index sha256: c9d9284f144d447503712cabdad2b985e60c03d16234c1821562fac039c8113c
+# Pass-counts: KEEP 0, REWORD 3, DELETE 2, ADD 0.
+# Scene-orient-refusal count: 3 of 3 scene-opens (Scene A @1: loc-state:1 fires; Scene B @11: loc-state:4 fires;
+#   Scene C @22: loc-state:6+7 fire). All three scene-opens fail fire-rule (b) — lens carries.
+# Fire-audit (per scene-boundary): @1 REFUSED (loc-state covers); @11 REFUSED (loc-state covers); @22 REFUSED (loc-state covers).
 #
-# Per-scene caps: ≤3 per scene (series opener license; standard cap may relax at opener).
-# Sparsity: lighter rule at series opener — all first-mention world-build terms are eligible.
-# Anti-jargon: no Earth-Bet parahuman terms in exposition entries. World-build only.
+# Per-entry verdict summary (rationales in r2-decision-shard.md):
+#   exposition:1 @1 first-mention-place cluster — REWORD (lens does NOT cover institutional Flea Bottom social
+#     physics; loc-state names corner-room as state, exposition names ward as institution; schema-shape gap
+#     forces REWORD into full <key>: <gloss>: scope: ... | renders-as: ... | sources: ... | licensed-by: ... shape)
+#   exposition:2 @4 first-mention-character (coll) — REWORD (non-POV named individual in prose; NI does not fire
+#     at @4; no lens carries "fixture-not-confidant" social-status; schema-shape gap forces REWORD)
+#   exposition:3 @9 first-mention-term (the-prohibition) — DELETE (NI:2 @9 + mem:1 @9 + vibes:3/4 @9 + feel:1 @9
+#     collectively carry the prohibition register; rubric's never-gloss rule applies: "mem establishing a
+#     callback-anchor → exposition does NOT explain the callback's prior context"; the dogfood lesson is
+#     binding here — Phase 2 refuses where lens covers)
+#   exposition:4 @18 first-mention-place cluster (the-city-watch + the-hook) — DELETE (loc-state:6 @18 names
+#     both terms in body — "the Hook's bend: four-body patrol in gold cloaks"; rubric's never-gloss rule:
+#     "NI establishing place-name → exposition does NOT add a place-gloss for the same name"; loc-state is
+#     the equivalent at-establishment carrier here)
+#   exposition:5 @22 first-mention-character (wren) — REWORD (first-mention-character for non-POV named
+#     individual entering in prose; load-bearing for chapter payload at @26; lens facets do not carry her
+#     role/age/ward-arrangement; schema-shape gap forces REWORD; embedded-noun check passes — "Flea Bottom"
+#     on register, "stitch-maker" is common-English compound)
 #
-# Cross-episode register write-back:
-#   All entries below add to or confirm the glossed-terms.md register.
-#   Terms already in register (from prior b01c01 run): kings-landing-122ac, the-prohibition,
-#   flea-bottom, copper-currency-star-penny, coll, the-city-watch, the-hook, wren.
-#   All assigned gloss-ids preserved. No re-glossing needed.
+# Cross-episode register write-back (R2.5):
+#   - kings-landing-122ac: KEEP on register (entry 1 KEEPs the term)
+#   - flea-bottom: KEEP on register (entry 1 KEEPs the term)
+#   - copper-currency-star-penny: KEEP on register (entry 1 KEEPs the term)
+#   - coll: KEEP on register (entry 2 KEEPs)
+#   - the-prohibition: STRIKE from register (entry 3 DELETED — lens covers; future chapters may re-gloss
+#     if the term recurs and lens does not cover at that beat)
+#   - the-city-watch: STRIKE from register (entry 4 DELETED — loc-state covers; future chapters may
+#     re-gloss if loc-state does not carry)
+#   - the-hook: STRIKE from register (entry 4 DELETED — loc-state covers; future chapters may re-gloss)
+#   - wren: KEEP on register (entry 5 KEEPs)
 #
 # ─── SCENE A (@1-9) ─────────────────────────────────────────────────────────
 
-# @1: taylor pays the building-keeper. First bone. World-physics gap:
-#   Dark-fantasy-reader: "building-keeper" is Flea Bottom-specific. The social arrangement
-#   (rent in copper stars to a building-keeper rather than a landlord in the Westerosi guild sense)
-#   needs one clause of orientation. The payment amount implies class-position without stating it.
-#   Cape-fic-reader: knows Taylor is here somewhere, foreign and anonymous; the payment confirms
-#   both without stating either.
-#   Worm-canon-pedant: no gap at @1 specifically — this is pure setting-establishment.
-#   Audience gap: dark-fantasy-reader needs the payment framed as class-position signal.
-# gloss-id: 1 (kings-landing-122ac / flea-bottom / copper-currency-star-penny; first-mention cluster)
-1 @1 kings-landing-122ac / flea-bottom / copper-currency-star-penny: Flea Bottom, the bottommost ward of King's Landing — stone buildings packed around narrow hook-channels, rent paid in copper stars to whoever holds the corner, no titles, no guild rolls, subsistence-class permanent
+# @1: taylor pays the building-keeper.
+# R2.5 verdict: REWORD (content KEEP; schema-shape and license-completeness force re-render)
+# Lens coverage check: loc-state:1 @1 names "corner-room threshold where an anonymous copper-star transaction
+#   purchases entry" — body carries place-as-state + payment mechanic. Exposition's distinctive payload is the
+#   institutional/social orientation (Flea Bottom as bottommost-ward, no titles, no guild rolls, subsistence-
+#   class permanent) which loc-state's environmental register does not carry. Audience-gap holds for dark-
+#   fantasy-reader (Flea Bottom-as-Planetos-specific slum-district) and worm-canon-pedant (geographic anchor
+#   for series locus). Cape-fic-reader does not gap here.
+1 @1 kings-landing-122ac / flea-bottom / copper-currency-star-penny: Flea Bottom — the bottommost ward of King's Landing, stone tenements packed around hook-channels; rent goes in copper stars to whoever holds the corner, no titles and no guild rolls, subsistence-class permanent | scope: first-mention-place | renders-as: em-dash-fold | sources: world-build/kings-landing-122ac, cards/locations/flea-bottom, series-plan/series.lore | licensed-by: dark-fantasy-reader (Planetos-local-color-needs-naming-as-institution-not-just-environment), worm-canon-pedant (geographic-anchor-for-series-locus)
 
-# @4: coll works the net. Coll's first held bone.
-#   Dark-fantasy-reader: "net-mending" in Flea Bottom needs the context that this is shore-adjacent
-#   work — the Hook district feeds the city's river-traffic supply chain; Coll is part of it.
-#   Cape-fic-reader: Coll is not labeled as background fixture in the proto-line; the audience
-#   needs one marker that he is non-interpretive and does not expect explanation.
-#   Worm-canon-pedant: no specific gap, but Coll as a social-physics data point matters.
-#   Audience gap: dark-fantasy-reader + cape-fic-reader need Coll framed as fixture-not-confidant.
-# gloss-id: 3 (coll; first-mention)
-2 @4 coll: Net-mender, same corner since before Taylor arrived; the kind of presence a ward accumulates the way buildings accumulate moss — noticed without registering as notable; range of interest runs one street; does not ask what strangers are
+# @4: coll works the net. First-mention-character.
+# R2.5 verdict: REWORD (content KEEP; schema-shape forces re-render)
+# Lens coverage check: NI does not fire at @4. loc-state does not gloss Coll's social role. state-updates
+#   introduces Coll as environment-present but not as fixture-not-confidant. The exposition's payload
+#   (Coll's range of interest one street, does not ask what strangers are) is the explicit fixture-not-confidant
+#   orientation that lens facets do not carry. Dark-fantasy + cape-fic both need this to read Coll as
+#   non-interpretive substrate rather than expecting him to function as confidant.
+2 @4 coll: net-mender, same corner since before Taylor arrived — the kind of presence a ward accumulates the way buildings accumulate moss, noticed without registering as notable; his range of interest runs one street and he does not ask what strangers are | scope: first-mention-character | renders-as: em-dash-fold | sources: cards/personas/coll-net-mender-flea-bottom, series-plan/series.cast | licensed-by: cape-fic-reader (needs-coll-marked-as-fixture-not-confidant-so-reader-stops-expecting-interpretation), dark-fantasy-reader (smallfolk-substrate-needs-Planetos-specific-grounding)
 
-# @9: taylor holds the feet. The inverted establishing fact.
-#   Cape-fic-reader: needs the prohibition framed at its first on-screen confirmation — the operating
-#   rule is the series premise; without it, @9 reads as a pause, not as a discipline-beat.
-#   Worm-canon-pedant: needs the insect-sense's suppressed-baseline scope confirmed — what does
-#   "passive read" mean in practice? How does she hold it at passive? What does she choose not to do?
-#   Dark-fantasy-reader: the absence of magic-spectacle is itself meaningful; they need to know
-#   what was not deployed to understand that the not-deploying is the chapter's content.
-#   Audience gap: all three — the prohibition + the passive-read baseline are load-bearing
-#   orientation for the rest of the series.
-# gloss-id: 1 (the-prohibition; first-mention confirmation)
-3 @9 the-prohibition: The operating rule she set before she arrived — be useful without taking control; she can read the ward through the insects in the walls and under the flagstones, can run the density and the temperature, but she keeps the reading passive; she has decided to notice what does not require her
+# @9: DELETED exposition:3 @9 — the-prohibition — lens covers (NI:2 + mem:1 + feel:1 + vibes:3 + vibes:4 all fire
+# at @9 carrying the prohibition register; rubric's never-gloss rule explicitly excludes exposition from
+# explaining mem-callback-anchor context; the s01e01 Phase-2 dogfood lesson is binding — refuse where lens
+# carries; cluster of 7 co-located facets at @9 is the densest pile-up in the chapter and that density IS
+# the prohibition's articulation; exposition restating it would AP-double the mem/NI register).
+# DELETED exposition:3 @9 — lens-covers (NI:2 + mem:1 + vibes:3 + vibes:4 + feel:1 carry the prohibition; mem callback-anchor protected)
 
 # ─── SCENE B (@11-20) ────────────────────────────────────────────────────────
 
-# @18: city-watch passes the hook.
-#   Dark-fantasy-reader: "city-watch" + "the Hook" are KL geography/policing terms.
-#   The Watch is not the Gold Cloaks by name at Flea Bottom level — they are the street-level
-#   patrol presence. The Hook is the district's channel-corridor. Both need a gloss here because
-#   they carry class-physics weight (the Watch as coercive presence in smallfolk geography).
-#   Cape-fic-reader: no gap — the Watch is a straightforward policing layer.
-#   Worm-canon-pedant: no gap.
-#   Audience gap: dark-fantasy-reader needs both terms.
-# gloss-id: 5 (the-city-watch) + gloss-id: 6 (the-hook; first-mention pair)
-4 @18 the-city-watch / the-hook: The city's gold-cloaked patrol, street-level at the Hook — the channel-cut district where the ward's buildings compress into the tightest alleys; the Watch passes on a rotation Taylor has now timed
+# @18: DELETED exposition:4 @18 — the-city-watch / the-hook — lens covers (loc-state:6 @18 names "the Hook's
+# bend: four-body patrol in gold cloaks; working corner has unobstructed line-of-sight to the bend" — both
+# terms in body at the at-establishment fire; rubric's never-gloss rule "NI establishing place-name →
+# exposition does NOT add a place-gloss for the same name" applies — loc-state at-establishment is the
+# equivalent body-carrier here; the gold-cloaks designation that landed in loc-state is the Watch-gloss; the
+# unique geographic payload (channel-cut-district-with-compressed-alleys) is not load-bearing for @18 and
+# could only fire as scene-orient at scene-B-open @11, which itself fails fire-rule because loc-state:4 fires).
+# DELETED exposition:4 @18 — lens-covers (loc-state:6 names both Watch and Hook in body at @18)
 
 # ─── SCENE C (@22-29) ────────────────────────────────────────────────────────
 
-# @22: wren enters the alley-mouth.
-#   All three: Wren needs a single-line establishment. She is not labeled as cost-bearer; the
-#   audience does not know her structural role; but they need enough to read her first appearance
-#   as specific-child rather than generic-child.
-#   Cape-fic-reader: the "stitch-maker's ward" social arrangement tells them her class-tier
-#     and her presence-status (attached to a household, not a servant, not free).
-#   Dark-fantasy-reader: "ward" is a specific Flea Bottom arrangement; the smallfolk-ward
-#     social physics need one clause.
-#   Worm-canon-pedant: Wren as the observer-child who will be cost-bearer; they need enough
-#     to register that this introduction is load-bearing, not decorative.
-#   Audience gap: all three.
-# gloss-id: 8 (wren; first-mention)
-5 @22 wren: Ward of the stitch-maker's household two buildings over — a ward being the Flea Bottom arrangement for children the household takes for light work in exchange for shelter and two meals; she stitches trim-ends; she has been here long enough that she is not new to it; she watches what is happening before she acts on it
+# @22: wren enters the alley-mouth. First-mention-character (chapter payload-bearer).
+# R2.5 verdict: REWORD (content KEEP; schema-shape forces re-render)
+# Lens coverage check: loc-state:6/7 @22 establish the alley-mouth entry geometry but not Wren's social role.
+#   NI:5 @24 is interior cognition ABOUT Wren ("observation-radius confirmed before she named it a radius"),
+#   not first-mention introduction. NI:6 @26 carries the flies-observation cognition. feel-wren:1 @26 is
+#   Wren's somatic tell during speech. None of these gloss her role/age/class-tier as first-mention. The
+#   exposition's payload (ward of stitch-maker's household, eleven-ish, observes before acting) is the
+#   structural orientation cape-fic + dark-fantasy + worm-pedant all need to read Wren's @22-@26 sequence
+#   as load-bearing rather than decorative. Embedded-noun check: "Flea Bottom" on register (gloss-id 2);
+#   "stitch-maker" is common-English compound (a stitcher who mends; self-explanatory). PASS.
+5 @22 wren: ward of the stitch-maker's household two buildings over — a Flea Bottom arrangement where the household takes a child for light work in exchange for shelter and two meals; she stitches trim-ends, has been here long enough that she is not new to it, and watches what is happening before she acts on it | scope: first-mention-character | renders-as: em-dash-fold | sources: cards/personas/wren-stitch-maker-flea-bottom-ward, cards/conditions/flea-bottom-ward-arrangement, series-plan/series.cast | licensed-by: cape-fic-reader (cost-bearer-introduction-needs-class-tier-and-presence-status-marked), dark-fantasy-reader (smallfolk-ward-as-Planetos-specific-social-arrangement-not-generic-medieval), worm-canon-pedant (cost-bearer-anchor-needs-load-bearing-flag-at-first-on-screen)

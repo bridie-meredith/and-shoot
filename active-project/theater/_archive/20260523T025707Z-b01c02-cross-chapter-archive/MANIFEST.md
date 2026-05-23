@@ -30,6 +30,29 @@ staff/audience/<persona>/
   b01c02-phase4-trim.md
   b01c02-phase6-bone-gate.md
 
+# Supplementary archive (2026-05-23, /and-facets b01-c01 Phase 3 stale-shard check)
+# These shards were missed by the original 2026-05-23T02:57:07Z sweep but are
+# c02-namespaced (`episode: b01c02`) and carry the stale c02 cite-index hash
+# 7fb82f0caa9c055b998f3e5ea32bda516cd64f170329d49a22f8fb11a39d08f6. Archived to
+# satisfy URI-FACETS-R2-STALE-SHARD before c01 Phase 3 R2 fanout dispatch.
+
+staff/exposition-author/
+  r2-decision-shard.md          (c02 R2.5 exposition decision-shard)
+
+staff/feeling/
+  r2-decision-shard-coll-net-mender-flea-bottom.md       (c02 R2.3 coll)
+  r2-decision-shard-taylor-hebert-kl-122ac.md            (c02 R2.3 taylor)
+  r2-decision-shard-wren-stitch-maker-flea-bottom-ward.md (c02 R2.3 wren)
+
+staff/interest-narrator/
+  r2-decision-shard.md          (c02 R2.1 NI decision-shard)
+
+staff/memory/
+  r2-decision-shard.md          (c02 R2.2 memory decision-shard)
+
+staff/metaphor/
+  r2-decision-shard.md          (c02 R2.4 metaphor decision-shard)
+
 ## Restore
 
 cp -rn ./theater/facets/* ../../theater/facets/

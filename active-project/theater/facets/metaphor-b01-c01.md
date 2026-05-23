@@ -1,6 +1,6 @@
 facet: metaphor
 episode: b01c01
-author: editor
+author: editor (R1) / R2.4-judge-pass
 ---
 
 # Metaphor-Flags — b01c01
@@ -8,12 +8,16 @@ author: editor
 # Per-scene cap: ≤1 cross-character. Scene A (@1-9), Scene B (@11-20), Scene C (@22-29).
 # This file: 0 entries.
 #
-# Authoring rationale — refuse-by-default applied:
+# R1 refuse-by-default: 0 entries authored (see rationale block below).
+# R2.4 judge pass: 0 KEEPS / 0 DELETES / 0 ADDS / 4 CAP-REFUSALS.
+# Refuse-by-default sustained across all candidate beats.
+#
+# ─── R1 authoring rationale (preserved) ──────────────────────────────────────
 #
 # Memory anchors in b01c01: mem:1 @9, mem:2 @16.
 # Feeling anchors in b01c01: feel:1 @9, feel:2 @16 (taylor), feel:3 @27 (taylor), feel-wren:1 @26 (wren).
 #
-# Candidate assessment:
+# Candidate assessment (R1):
 #
 # @9 (mem:1 + feel:1 — double-anchor):
 #   mem:1 already carries an implicit comparison: "the block is not requiring anything of the kind
@@ -34,9 +38,18 @@ author: editor
 #   risks AP3 (doubles narrator:6 content). Q1 borderline. No clean metaphor figure available that
 #   adds what narrator:6 + feel-wren:1 + feel:3 don't already carry. REFUSE.
 #
-# Conclusion: all candidates fail Q1 or carry AP risk. Zero fires is the correct outcome for a
-#   flat-low chapter where the memory and feeling layers are already dense at the licensed beats.
-#   The stitcher inherits the figurative register from mem:1/@9, mem:2/@16, and narrator:6/@26
-#   without requiring a metaphor entry to license it.
+# ─── R2.4 judge assessment ────────────────────────────────────────────────────
+#
+# R2 finds the R1 refusals correct. See decision-shard at
+#   active-project/staff/metaphor/r2-decision-shard.md
+# for full taste-justification per candidate and per add-cap challenge.
+#
+# Conclusion: all candidates fail AP7 (no peak-bones anywhere in the chapter;
+#   magnitude-band discipline refuses non-peak-zone metaphor as a default),
+#   and secondary AP3/AP4 grounds independently sustain each refusal even if
+#   AP7 were waived. Zero fires is the correct outcome.
+#
+# The stitcher inherits the figurative register from mem:1/@9, mem:2/@16,
+#   and narrator:6/@26 without requiring a metaphor entry to license it.
 #
 # (file intentionally contains no entries — correct refuse-by-default outcome)

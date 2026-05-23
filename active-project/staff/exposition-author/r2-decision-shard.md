@@ -1,117 +1,74 @@
 ---
 facet: exposition
-episode: b01c02
+episode: b01c01
 layer: R2.5
-cite_index_hash: 7fb82f0caa9c055b998f3e5ea32bda516cd64f170329d49a22f8fb11a39d08f6
+cite_index_hash: c9d9284f144d447503712cabdad2b985e60c03d16234c1821562fac039c8113c
 f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
+verdict-counts: {KEEP: 0, REWORD: 3, DELETE: 2, ADD: 0, SCENE-ORIENT-REFUSAL: 3, CAP-REFUSAL: 3}
 ---
 
-# R2.5 exposition decision-shard — b01c02
+# R2.5 Exposition Decision Shard — b01c01
 
-R2.5 judges the 5 R1 exposition entries against the now-locked R1 graph: 11 loc-state
-entries, 6 narrator-interest, 2 memory, the dialogue files, and the cite-index. The
-brief flags entries 2 (water-carrier @2) and 3 (near-witness @8) as thin
-definite-description individuals — the R1 seam. Both resolve to DELETE; the lens facets
-carry their function or the figures are non-load-bearing fixtures. Two entries reword
-(placement / word-cap / voice); two keep clean.
+## Pre-flight: scene-open-orient fire-rule re-validation
 
-exposition:1 @0 prior-episode-bridge — Cold-read: this is the only thing standing at @0.
-There is no proto-line @0 prose for a lens facet to occupy — the bridge IS the @0 content,
-and the cite-index confirms it as a lonely entry (back=N). A reader joining at b01c02 has
-no anchor for "the rule," "the count," "a ledger by lamplight," or "came back into this
-body" — the whole episode is the prohibition's first test, and the test does not register
-without its terms. The bridge frames the rule as "only theory" and ends on "theory ends,"
-which is the dark-fantasy-reader's bill-not-yet-due framing done honestly. The Earth-Bet
-fence holds: "came back into this body and this city" carries the resurrection without
-naming it. 112 words, under the 120-word prior-episode-bridge cap; first-person voice
-throughout, correct for pov-frame. Nothing in the lens graph touches @0. Gap is real,
-sources resolve, no facet covers it.
-VERDICT: KEEP
+The s01e01 dogfood lesson is binding: Phase 2 refused 11 of 11 scene-orient entries that Phase 1 authored, because NI/loc-state covered them. I walked the three scene-opens against the rubric's three-clause fire-rule before reading the entries.
 
-exposition:2 @2 water-carrier — Cold-read of the gap: the water-carrier enters at @2 and
-never appears again — not at @4, not in scene-B, not in scene-C. It is a figure passing
-through the doorway loc-state:1 already establishes ("the doorway threshold: alley-width
-just wide enough for one body at a time, the street behind it already in watch-press
-movement"). The compound noun "water-carrier" is its own definition — it states the trade
-in the name. The R1 gloss, "a Flea Bottom smallfolk who hauls water by the bucket to sell
-for coppers," restates what the noun already carries; it does not orient, it pads. The
-rubric's cull-pass directive is exact here: DROP entries glossing terms that appear once
-and aren't structurally load-bearing. The dark-fantasy-reader license claims the figure
-"reads as set dressing" without a gloss — but the water-carrier IS set dressing; it is
-morning-street texture, not a person the plot will touch. Glossing a fixture promotes it
-to a character the reader then waits to matter, and the wait is never paid. The gap the
-R1 author saw was the first-mention-character rule firing mechanically on a definite
-description; the rule's own exclusion logic (load-bearing test) refuses it.
-VERDICT: DELETE (cascade 1)
+Scene A opens at @1. loc-state:1 fires at @1 ("the corner-room threshold where an anonymous copper-star transaction purchases entry"). Clause (b) FAILS — loc-state at-establishment carries the scene-orient. NI:1 fires at @2 (within first-2-anchors of scene) and carries threshold-cognition ("the drain channel puts the yard on one side and the alley-mouth on the other"), reinforcing the refusal. REFUSED.
 
-exposition:3 @8 near-witness — Cold-read against the lens graph: narrator:3 @8 reads
-"two faces hold the anomaly a beat too long; the watch-cost of being seen has just been
-priced to a count she did not choose." That sentence establishes the near-witness AS a
-watcher whose seeing carries a cost — which is the witness's entire function in this
-episode. mem:1 @8 ("the count of who saw was set by faces she did not pick") carries the
-same figure as cost-borne-by-the-unconsenting, in POV register. loc-state:6 @8 places the
-scene. The first-mention-character gloss would explain "the near-witness is someone who
-happened to be looking" — and the narrator lens has already said exactly that, in
-POV-frame, at the same anchor. Per rubric § Never-gloss: "NI establishing → exposition
-does NOT add." The R1 entry is redundant with narrator:3; it restates in orienting voice
-what the narrator already gives in lived voice. The lens carries; exposition stays out.
-VERDICT: DELETE (cascade 1)
+Scene B opens at @11. loc-state:4 fires at @11 with NEW time-of-day (midday) and new place-anchor (working corner off the Hook). Clause (b) FAILS. NI in first-2-anchors of scene B (anchors @11-@12) is silent. REFUSED on (b).
 
-exposition:4 @5→@4 pressed-labor-sweep — Cold-read: the pressed-labor sweep is the
-episode's central threat — the thing the prohibition is being tested against — and no
-lens facet glosses its mechanism. narrator:2 @5 ("the lane-mouths closing is not a hand
-on anyone — routing is what the prohibition still permits her to call clean") is Taylor's
-tactical read of her own move, not an orientation to what a sweep is. loc-state:3 @5
-covers the sealed lane-mouths; vibes carry tone. None of them say "the city's hired
-watchmen sweep a poor district and conscript whoever cannot prove they are wanted
-elsewhere." Without that, the cape-fic-reader cannot register the prohibition's first
-test as a real test, and the dark-fantasy-reader gets generic menace instead of a
-feudal-urban practice with teeth. The gap is real; KEEP the content. But the R1 anchor
-@5 is wrong, and this is a G5 position call: @5 is the chapter's peak hinge (scene-map
-peak-bones: @5, protected pattern "insect-deployment commitment must not collapse") and a
-nine-facet pile-up. A 41-word parenthetical-aside dropped on the peak decelerates the
-most-protected escalation moment in the chapter — the gloss does work the scene needs,
-but at the wrong instant, where it absorbs the hinge's weight into an aside. The
-orientation has to arrive BEFORE the mechanism enacts at @5, not folded into it. @4
-("taylor faces the alley-mouth") is the approach-zone bone where Taylor first reads the
-column-formation (narrator:1: "the feed had turned the lane into a column"); a
-post-bone-clause there arms the reader for the test. Re-anchor @5 → @4; re-render
-parenthetical-aside → post-bone-clause.
-VERDICT: REVISE
+Scene C opens at @22. loc-state:6 + loc-state:7 both fire at @22 with NEW time-of-day (afternoon) and entry-verb (alley-mouth-open, meat-stall-direction). Clause (b) FAILS. REFUSED.
 
-exposition:5 @23 ledger — Cold-read: the ledger is a series-specific object whose first
-prose appearance is @23 ("taylor opens the ledger"), and rubric § Always-gloss names
-series-specific objects ("the log") as structural audience-gap. state:5 @23 co-locates
-but state-updates tracks the state-change, not what the object is; loc-state:11 lit the
-room; mem:2 @25 carries a callback, not a definition. The prior-episode-bridge mentions
-"a ledger by lamplight" lightly — the bridge and this first-mention work as the intended
-episode-open + first-mention pairing, the bridge naming it and @23 pinning it at first
-sight. The gap holds; KEEP the entry. Two surface faults: (1) the R1 gloss runs 33 words,
-over the ≤30 first-mention-object cap, and the overflow is a redundant trailing sentence
-"Writing the cost down is her practice" — which restates "keeps a running account"; drop
-it. (2) The R1 surface reads 3rd-person ("the book Taylor keeps... her actions") inside a
-pov-frame: first-person episode rendered as a post-bone-clause — a voice-fault the
-rubric's § Voice section names explicitly. Reworded to first-person, trimmed to 20 words:
-"the book I keep by lamplight — a running account of every cost my actions make that I
-cannot pay back." Re-gloss check clean: `ledger` on the register is this entry's own
-b01c02 write-back, not a prior episode.
-VERDICT: REVISE
+Three of three scene-opens fail fire-rule. No scene-open-orient entries are licensable in this chapter. The R1 author appears not to have authored any (the existing five entries are all first-mention scopes), which is the correct outcome — but I confirmed the routing rather than assuming.
 
-PATTERN-SCAN: With water-carrier and near-witness deleted, the surviving three entries
-sit at three structurally distinct positions — @0 episode-open, @4 approach-zone threat-
-orientation, @23 scene-C object-introduction — with no repeated render-as template doing
-the same job twice and no construction echo across them. The R1 facet's flaw was not a
-pattern but a mechanical-fire habit: the first-mention-character rule fired on both thin
-definite descriptions (water-carrier, near-witness) without applying its own load-bearing
-/ lens-coverage exclusions. That is a per-entry miss, not a facet-wide formula. Nothing
-patterned remains after the cull.
+## Per-entry verdicts
 
-# No cap-refusals. Add-cap 3 unused — the bare proto-lines (@3, @9, @10, @13, @16, @18,
-# @24) are interior continuous-action bones the lens facets carry; none calls for an
-# exposition fire, and no lens author left an orientable register uncovered.
+### exposition:1 @1 — kings-landing-122ac / flea-bottom / copper-currency-star-penny
 
-# Flagged seams for Phase 4 cite-index rebuild:
-# - glossed-terms.md carries near-witness (gloss-id 3, @8) and water-carrier (gloss-id 2,
-#   @2) lines added at R1 merge. BOTH must be struck — both entries DELETED at R2.5.
-# - pressed-labor-sweep first-mention-anchor moved @5 → @4; register line must update.
-# - Final register write-back for b01c02: pressed-labor-sweep @4, ledger @23 only.
+I read this cold and the cluster does work the lens facets don't. loc-state:1 names "the corner-room threshold where an anonymous copper-star transaction purchases entry" — that carries the place-as-state and the payment mechanic in body. But Flea Bottom as an institution (the bottommost ward of King's Landing, no titles, no guild rolls, subsistence-class permanent) is not loc-state's register. loc-state is environmental; this is sociological. The dark-fantasy-reader specifically wants Planetos-local-color landing as Planetos-specific (hot-button: "Westerosi local color that lands as Planetos-specific, not generic medieval"). The worm-canon-pedant needs the geographic anchor named for series-locus tracking. Cape-fic-reader does not gap here (the payment mechanic is enough to read class-position from action), so I do not list them in licensed-by — that's a clean two-of-three persona license, which is sufficient. The R1 entry had no schema fields (no scope, renders-as, sources, licensed-by). That's a license-completeness fail per the rubric's CONSTRAINT class — REWORD to add the fields, choose `em-dash-fold` (cheapest viable for a cluster gloss that reads as an aside), and pin the gap-claims. Content survives; surface tightens.
+VERDICT: REWORD
+
+### exposition:2 @4 — coll (first-mention-character)
+
+Coll appears in prose at @3 (the lift-eyes bone) and @4 (the works-the-net bone). NI does not fire at @4 — Taylor's interiority is anchored elsewhere (@2, @9 in scene A). loc-state:1 doesn't name Coll; loc-state:4 names him at @11 as "coll-at-corner" condition, but that's mid-scene-B and after the first-mention. state-updates introduces Coll as present in environment but doesn't carry his social role. The R1 entry's payload is the fixture-not-confidant orientation: "range of interest runs one street; does not ask what strangers are" — that's the structural function lens facets do not establish. Dark-fantasy-reader needs Coll grounded as Planetos-specific smallfolk substrate; cape-fic-reader needs the marker that says stop expecting interpretation from him. The R1 entry is missing schema fields. REWORD to add them; keep the body content essentially intact, lean to `em-dash-fold` rendering.
+VERDICT: REWORD
+
+### exposition:3 @9 — the-prohibition
+
+The hardest call in the file. R1 argued all three personas gap on the prohibition — cape-fic needs it framed as series premise, worm-canon needs the passive-read scope confirmed, dark-fantasy needs to know what wasn't deployed. The R1 reasoning was made blind to the lens stack at @9. Now that I can see the stack: @9 is the chapter's densest pile-up (7 co-located facets). NI:2 carries "no one here has a power that requires containing; the sense runs along the walls and stops because the walls are the limit, not because something forced it back." That IS the prohibition stated in interior voice. mem:1 carries "the block is not requiring anything of the kind she is no longer doing -> (earth-bet: override-architecture-prohibition-enacted-via-inverse-observation)" — the displaced-register articulation of exactly the same operating rule. vibes:3 + vibes:4 carry "absence-as-the-evidence-of-discipline, the-prohibition-enacted-in-the-not-doing, first-on-screen-check-passes" and "the-block-does-not-require-her, the-check-is-the-practice, trained-attention-to-what-is-not-there." feel:1 carries the somatic correlate. The rubric's never-gloss rule is direct: "mem establishing a callback-anchor → exposition does NOT explain the callback's prior context." mem:1 IS the callback-anchor. The R1 exposition gloss is doing exactly what the rubric forbids — explaining the prohibition the mem-anchor refers back to. The s01e01 dogfood lesson is binding here: Phase-2 refuses where lens carries. The cape-fic argument that "the operating rule is the series premise without it @9 reads as pause not discipline" is what NI + mem + feel + vibes are FOR — that stack reads as discipline if it reads at all; if it doesn't, the stitcher will fail the cold-read gate downstream and the fix lives at /and-write or stitcher Phase 9, not at exposition. The exposition entry would AP-double the mem/NI register. DELETE.
+VERDICT: DELETE
+
+### exposition:4 @18 — the-city-watch / the-hook
+
+loc-state:6 @18 reads: "the Hook's bend: four-body patrol in gold cloaks; working corner has unobstructed line-of-sight to the bend." Both terms — the Hook and the Watch — land in loc-state's body at the at-establishment fire. The Watch becomes "four-body patrol in gold cloaks" which is functional first-mention orientation (the audience reads "gold cloaks" + "patrol" + "four-body" and gets uniformed policing presence without needing exposition). The Hook becomes "the Hook's bend" with adjacency to the working corner — that's geographic orientation in body. The rubric's never-gloss rule applies: "NI establishing place-name → exposition does NOT add a place-gloss for the same name." loc-state at-establishment is the lens-equivalent here (the rule explicitly catches both NI and loc-state under "lens-carries"). The R1 entry's unique payload is the channel-cut-district-with-compressed-alleys topology — that's not load-bearing for @18 (it's wallpaper at the watch-pass beat), and the only way to fire it would be as scene-B-open scene-orient, which fails fire-rule because loc-state:4 fires at @11. The cape-fic-reader does not gap on the Watch (they read it from "gold cloaks + patrol"). The dark-fantasy-reader's gap on "the Hook" is closed by loc-state's at-establishment naming. DELETE.
+VERDICT: DELETE
+
+### exposition:5 @22 — wren (first-mention-character)
+
+Wren enters in prose at @22 (the chapter's payload-bearer). loc-state:6/7 at @22 carry the alley-mouth geometry but not Wren's social role. NI fires at @24 (after first-mention) and at @26 — both interior cognition ABOUT Wren, neither functioning as introduction. feel-wren:1 @26 is Wren's somatic tell during speech. The dialogue-writer fork carries her speech-content but not her structural orientation. The R1 entry's payload — ward of the stitch-maker's household, eleven-ish, has been here long enough that she is not new, watches before she acts — is the structural first-mention-character coverage that all three personas need to read the @22-@28 sequence as load-bearing rather than decorative. Cape-fic-reader needs the cost-bearer-introduction with class-tier + presence-status (they're tracking the cast for who pays what; Wren needs to land as someone who can pay). Dark-fantasy-reader needs the smallfolk-ward arrangement as Planetos-specific (not generic medieval orphan trope). Worm-canon-pedant needs the cost-bearer-anchor flagged at first on-screen because the @26 flies-observation is the chapter payload and they're tracking whether the cost-bearer is properly seeded. Embedded-noun check: the gloss references "Flea Bottom" (on register, gloss-id 2) and "stitch-maker" (common-English compound, self-explanatory). No unresolved embedded proper-nouns. PASS the HARD-embedded-noun gate. The R1 entry's body content survives; schema-fields are added; render-as set to em-dash-fold (cheapest viable for the gloss length).
+VERDICT: REWORD
+
+## ADD candidates considered (cap 3; refused all)
+
+CAP-REFUSAL: building-keeper @1 — I considered this as a first-mention-term candidate. The role appears in proto-line @1 ("pays the building-keeper") and loc-state:1 carries "building-keeper-present" as condition. The audience-gap is thin — dark-fantasy-reader can read the role from action + condition (a person who keeps the building and collects rent), and cape-fic-reader doesn't need it spelled out. Worm-canon-pedant has no gap. The R1 author appears to have considered and refused this — that refusal is correct. Lens carries.
+
+CAP-REFUSAL: drain-channel @2 — common-English noun; loc-state:2 names it explicitly with state ("the drain-cut mud channel: wet stone gap at the yard crossing"). No audience-gap. Lens carries.
+
+CAP-REFUSAL: stitch-maker @22 — common-English compound (a stitcher who mends); self-explanatory; the gloss embedded inside the Wren entry contextualizes the role without needing a separate first-mention-term. The embedded-noun HARD-gate passes because stitch-maker is not a proper-noun frame. No ADD warranted.
+
+## Pattern-scan
+
+Reading the file as a whole after R2.5 mutation — three REWORDs and two DELETEs — the surviving entries cluster around character-introduction (Coll at @4, Wren at @22) and one place-cluster (the @1 institutional orient). The shape after the cuts is what an exposition file SHOULD look like at series-opener under the substance-overhaul routing: lens-facet-heavy chapter, exposition narrow to the gaps lens doesn't cover. The two DELETEs (the-prohibition @9, the-city-watch/the-hook @18) were both lens-redundancy faults the R1 audience-pure pass couldn't see. No formulaic surface pattern across the three survivors — each does distinct work (place-as-institution, character-as-fixture, character-as-cost-bearer). Pattern-scan clean.
+
+## Arbiter notes
+
+No arbiter interventions fired during this judge pass. Each verdict above names entry-specific content (the @9 mem-callback-anchor protection, the @18 loc-state body-carry of both terms, the @22 cost-bearer-seeding payload) rather than reciting rubric labels. T1 and T4 (the v2 active triggers) had no occasion to fire. f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}.
+
+## Frontmatter pass-count reconciliation
+
+- KEEP: 0 (all surviving entries required schema-shape REWORD to add scope/renders-as/sources/licensed-by fields)
+- REWORD: 3 (exposition:1, exposition:2, exposition:5 — IDs preserved, bodies re-rendered with schema compliance)
+- DELETE: 2 (exposition:3 @9 the-prohibition; exposition:4 @18 the-city-watch/the-hook)
+- ADD: 0
+- SCENE-ORIENT-REFUSAL: 3 (all three scene-opens refused on fire-rule clause b)
+- CAP-REFUSAL: 3 (building-keeper @1; drain-channel @2; stitch-maker @22)

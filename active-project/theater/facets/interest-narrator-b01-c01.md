@@ -1,15 +1,17 @@
 facet: interest-narrator
 episode: b01c01
 author: taylor-hebert-kl-122ac (POV fork)
+r2-pass: R2.1 judge (2026-05-23)
 ---
 
 # Narrator Interest — b01c01
 # Taylor-POV interiority registrations. Target 15-25% of 27 bones = 4-7 entries.
-# Actual: 6 entries = 22%. All three scenes carry at least one fire.
-# Channel diversity: eyes-to-exits, foreknowledge-clamp, pre-calc, cost-tracking,
-#   passive fauna-feed, refusal-to-look (displacement).
+# R1: 6 entries = 22%. R2.1: 1 DELETE (narrator:4), 1 ADD (narrator:7 @20). Final: 6 entries = 22%.
+# Channel diversity: eyes-to-exits (1), refusal-to-look/override-residue (2), passive fauna-feed (3),
+#   pre-calc surfacing (5), foreknowledge-clamp/cost-tracking (6), cost-tracking ledger-close (7).
 # Doubled-register: base-register interiority throughout; no mask-register bleed.
-# Inverted-predicate cap: 1 entry uses inverted-predicate form (narrator:4). Cap satisfied.
+# Inverted-predicate cap: 1 entry uses inverted-predicate form (narrator:6 — the payload anchor at @26).
+#   Cap satisfied after R2.1 delete of narrator:4 (which was the second chassis instance — lonely + form-heavy).
 
 # SCENE A (@1-9, morning) ─────────────────────────────────────────────────────
 
@@ -36,11 +38,17 @@ author: taylor-hebert-kl-122ac (POV fork)
 #   is not ambient background — it is the pressure against which the held bones operate.
 3 @13 every warm body in the block is legible; the density is running at the level that used to mean work, and she is not doing work
 
-# @19 — holds eyes during watch-pass. Cost-tracking channel.
-# Channel: cost-tracking + pre-calc. Trigger: the watch passing the Hook is the scene's
-#   pressure moment; her eyes-hold is the response to the trained pull to complete the route-map.
-# Earning: the watch is the scene's sole external pressure point; attention lands here.
-4 @19 four in gold; the patrol's rotation clears the bend in the same interval it has cleared it each time; the interval is the cost of one look
+# DELETED narrator:4 @19 — chassis-recurrence (AP-10 inverted-predicate, second instance after narrator:6); lonely entry; three-clause spine (form-heavy); the watch-pass beat carried structurally by exposition:4 + state:4 + vibes:6 + state-update:4.
+
+# @20 — day-close ledger framing. NOTE-002 carrier. ADDED at R2.1.
+# Channel: cost-tracking / ledger-close. Trigger: day-close + the chapter's declared ledger framing
+#   ("knowledge gained, cost zero, tool unused") carried in flat-20's chatter rationale only.
+# Position: denouement of scene-B; G5 hold-live (not archive): "nothing had been moved that needed
+#   not to be moved" registers the prohibition's continuing intactness, not its filed-completion.
+# G2: the at-rest reading wants this — the persona card names "ledger runs continuously" and the
+#   day-close is when her cost-tracking register surfaces; the bones-review NOTE-002 confirms the
+#   structural absence at this beat.
+7 @20 the day closed under the count she had been running; nothing had been moved that needed not to be moved
 
 # SCENE C (@22-29, afternoon) ─────────────────────────────────────────────────
 

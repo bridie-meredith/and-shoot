@@ -1,105 +1,62 @@
 facet: feeling
 episode: b01c01
 author: taylor-hebert-kl-122ac (impersonator fork)
+layer: R2.3-judged
 ---
 
-# Feeling-Flags — taylor-hebert-kl-122ac — b01c01
-# Per-character per-scene cap: ≤1. Sparsity 2-5% on 27 bones = 0-1 per character per episode typically.
-# This file: 3 entries (11.1%) — above sparsity floor but all three serve documented load-bearing purposes.
-# feel:1 @9 — required V3 spine for memory mem:1 @9 (memory rubric V3 feel-as-spine carve-out)
-# feel:2 @16 — required V3 spine for memory mem:2 @16
-# feel:3 @27 — Scene C entry; cost-tracking somatic at the flies-observation beat
-# Per-scene distribution: scene A (@1-9): feel:1. Scene B (@11-20): feel:2. Scene C (@22-29): feel:3.
-# All three scenes covered; no scene cap violated (≤1 per scene per character).
+# Feeling-Flags — taylor-hebert-kl-122ac — b01c01 (R2.3 judged)
+# R1 file inherited; R2.3 judge deleted one entry (feel:3 @27) and re-issued the slice at 2 fires.
+# 2 entries on 27 bones = 7.4%. Above the 2-5% sparsity band but both retained fires earn their
+# place on the doubled-register memory-spine carve-out (Earth-Bet displacement at @9 + Westerosi
+# clamp at @16). feel:3 @27 deleted on §Form temporal-latency seam (see r2-decision-shard).
 #
-# V3 feel-as-spine carve-out qualification for feel:1 and feel:2:
-#   All four conditions met:
+# Per-scene distribution: scene A (@1-9): feel:1. Scene B (@11-20): feel:2. Scene C (@22-29): empty.
+# Per-character per-scene cap ≤1: hard cap not violated in any scene.
+#
+# V3 feel-as-spine carve-out qualification for feel:1 and feel:2 — re-checked at R2.3:
 #   1. Chapter dramatic_shape: hinge. CHECK.
 #   2. Scene stakes_axis: capability in axes_held[]. CHECK (scenes A+B: axes_held capability).
 #   3. Feel-flag fires at memory-anchor beat. CHECK (feel:1 @9 for mem:1 @9; feel:2 @16 for mem:2 @16).
 #   4. Displacement-discipline: description names somatic without naming Earth-Bet. CHECK.
-#
-# Per-bone rationale below.
 
 # ─── SCENE A (@1-9) ─────────────────────────────────────────────────────────
 
-# @9: taylor-hebert-kl-122ac holds the feet.
-# Candidate: yes. This is the held-feet bone — the inverted establishing fact (NOTE-001).
-# The sense runs the block and finds nothing requiring override-architecture response.
-# The somatic-tell: she sets both feet even on the flagstones.
-# Q1: Without this flag, audience reads the held-feet only as a held-bone (pause). The somatic-tell
-#   adds: the equalization of weight is deliberate, body-level; she is not standing with one foot
-#   forward (commit-ready); she is standing level (assessment-mode, no deployment anticipated).
-#   The body-register carries the absence-assessment in somatic form — what the insect-sense found,
-#   the body confirms: nothing to move toward. Q1 passes.
-# Q2: Meaningful — this is the hinge chapter's scene A closing bone; the body-bear of the
-#   capability-axis-held is load-bearing for establishing Taylor's operating mode. Q2 passes.
-# Multi-justification (≥3 of 5):
-#   1. Somatic-tell-card-match: taylor card §Default Stance: "assessing / passive radar / eyes on exits"
-#      — the even-feet posture is the assessing-not-committing body-state. CHECK.
-#   2. Q1-interior passes. CHECK.
-#   3. Q2-meaningful passes. CHECK.
-#   4. Scene-eligible: first fire in scene A; cap not yet used. CHECK.
-#   5. Functional-register: painting-characterization (establishes her operating mode at baseline).
-#      CHECK.
-# Score: 5 of 5. FIRE.
+# @9: taylor-hebert-kl-122ac holds the feet. KEPT at R2.3.
+# Cold-read: the even-feet stance is the assessment-mode body-state — weight equal on the
+#   flagstones means she is not standing committed in any direction, which is the card's
+#   §Default Stance ("assessing / passive radar / eyes on exits") rendered as posture rather
+#   than cognition. Distinct from NI:2 @9 (which carries the cognitive content of the absence-
+#   observation) and from mem:1 @9 (which carries the monument-figure). The "even" qualifier
+#   is what earns the line — without it, "sets both feet on the flagstones" would be procedural;
+#   with it, the flatness of the weight-bear is what the body is doing while the sense runs.
+# Form re-test: one clause, body subject, body verb, locator — passes. No named-feeling, no
+#   simile, no hedge, no temporal-latency observation.
 # expressed: no — the even-feet stance is legible to a trained observer; in-scene Coll does not
 #   register it (non-interpretive).
 1 @9 taylor-hebert-kl-122ac: sets both feet even on the flagstones | expressed: no
 
 # ─── SCENE B (@11-20) ────────────────────────────────────────────────────────
 
-# @16: taylor-hebert-kl-122ac holds the hands.
-# Candidate: yes. Hands-held bone — Khepri's instrument withheld (NOTE-001 family; mem:2 anchor).
-# The somatic-tell: holds both hands flat against the mesh.
-# Q1: Without this flag, audience reads hands-held as a passive action (not sewing). The somatic-tell
-#   adds: the flatness against the mesh is a deliberate body-press — hands that could grip are placed
-#   flat; the pressure is into the material, not through it; not working the needle, holding the
-#   position. The audience-readable difference: this is not the hands resting, this is hands
-#   consciously held. Q1 passes.
-# Q2: Meaningful — this is the Westerosi-clamp anchor (mem:2); the hands withheld from the specific
-#   instrument-register that Khepri-pattern runs through. The body-bear of the withheld capability
-#   is structurally load-bearing for the doubled-register. Q2 passes.
-# Multi-justification (≥3 of 5):
-#   1. Somatic-tell-card-match: taylor card §Signature Moves: "The coverage that protects and doesn't
-#      declare itself" — the hands held flat are the non-declaration; the body-commit to not-using is
-#      the signature. CHECK.
-#   2. Q1-interior passes. CHECK.
-#   3. Q2-meaningful passes. CHECK.
-#   4. Scene-eligible: first fire in scene B; cap not yet used. CHECK.
-#   5. Functional-register: painting-characterization (the body-state of the withheld capability is
-#      the chapter's central characterization). CHECK.
-# Score: 5 of 5. FIRE.
+# @16: taylor-hebert-kl-122ac holds the hands. KEPT at R2.3.
+# Cold-read: the flat-against-mesh posture renders the withheld-instrument state without naming
+#   the instrument. The "flat against" carries the specific not-gripping posture — hands that
+#   could grip are pressed in, not lifted and not closed. No NI fires at @16, so the POV-duplicate
+#   risk is zero. mem:2 @16 carries the hands-as-labor-marker abstraction; this entry carries the
+#   body-press, which is a distinct register. The chapter's central characterization (architecture-
+#   residue held in body) needs a body-bearer; this is the load-bearing somatic anchor.
+# Form re-test: one clause, body subject, body verb, locator — passes. No named-feeling, no
+#   simile, no hedge, no temporal-latency observation.
 # expressed: no — the hands-flat posture is interior body-bear; no in-scene character reads it.
 2 @16 taylor-hebert-kl-122ac: holds both hands flat against the mesh | expressed: no
 
 # ─── SCENE C (@22-29) ────────────────────────────────────────────────────────
 
-# @27: taylor-hebert-kl-122ac holds the eyes.
-# Context: this is the bone after @26 (wren speaks the flies-observation — NOTE-003 carrier;
-#   the chapter's payload). Taylor holds the eyes = assessment-mode following the flies-report.
-# Candidate: yes.
-# The somatic-tell: drops the gaze one beat before lifting it again — the weight-measure before
-#   she returns to the needle.
-# Q1: Without this flag, audience reads holds-the-eyes as a general pause after speech. The somatic-tell
-#   adds: the brief downward shift (not away, down — into the work) is the cost-of-the-observation
-#   landing; it is the assessment-interval made visible as body-action. It is distinct from NI
-#   (which would be the cognitive process); this is the somatic-bear of the cost. Q1 passes.
-#   NOTE: NI does not fire at @27 (the NI file has no @27 entry). Non-redundancy confirmed.
-# Q2: Meaningful — Wren's flies-observation is the chapter's payload; Taylor's response-posture is
-#   the reader's cue that the observation landed as significant. The body-beat is structural to the
-#   scene's pivot. Q2 passes.
-# Multi-justification (≥3 of 5):
-#   1. Somatic-tell-card-match: taylor card §Look: "the tell: when insect-sense picks up something
-#      relevant, attention shifts fractionally before body does." The gaze-drop is the attention-shift
-#      expressed as body-action after the insect-observation has been verbalized to her externally.
-#      CHECK.
-#   2. Q1-interior passes. CHECK.
-#   3. Q2-meaningful passes (structural to scene pivot). CHECK.
-#   4. Scene-eligible: first fire in scene C; cap not yet used. CHECK.
-#   5. Functional-register: painting-characterization (the cost-of-the-observation landing as body).
-#      CHECK.
-# Score: 5 of 5. FIRE.
-# expressed: partial — Wren is present; she observes before acting; she may notice the gaze-drop
-#   but not its meaning.
-3 @27 taylor-hebert-kl-122ac: drops the gaze to the mesh one beat before lifting it | expressed: partial
+# feel:3 @27 DELETED at R2.3 on §Form temporal-latency seam.
+# Original entry: "drops the gaze to the mesh one beat before lifting it"
+# Reason: the second clause "one beat before lifting it" measures the duration BETWEEN two body
+#   actions, which is the §Form REJECT signature carved at URI-FACETS-CYCLE-1. The rubric
+#   tightened against second clauses that measure the timing-around-the-body rather than the
+#   body itself; this entry instantiates that pattern even though both verbs are body verbs.
+# No replacement issued at scene C: no candidate position survives the §Form gate AND the Q1
+#   POV-duplicate gate AND the proto-line-IS-the-tell gate (rubric C2 anchor). See r2-decision-
+#   shard for the four positions considered and refused.

@@ -1,17 +1,95 @@
 ---
 facet: feeling
-episode: b01c02
+episode: b01c01
 layer: R2.3
 character: wren-stitch-maker-flea-bottom-ward
-cite_index_hash: 7fb82f0caa9c055b998f3e5ea32bda516cd64f170329d49a22f8fb11a39d08f6
 f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
+verdict-counts: {keep: 1, delete: 0, revise: 0, add: 0, cap-refusal: 3}
+scene-cap-utilisation: {s01: 0/1 (off-stage), s02: 0/1 (off-stage), s03: 1/1}
+add-cap: {budget: 5, used: 0, remaining: 5 (blocked by per-scene cap, not by budget)}
+cite-index-sha: c9d9284f144d447503712cabdad2b985e60c03d16234c1821562fac039c8113c
+note-003-context: addressed by KEEP feel:4 @26 — somatic carrier of the cost-bearer-seeding payload beat; dialogue handles speech, feeling-flag handles pre-speech body-tell.
 ---
 
-# R2.3 — feeling judge, wren-stitch-maker-flea-bottom-ward, b01c02
+# R2.3 Feeling Judge — wren-stitch-maker-flea-bottom-ward — b01c01
 
-feel:3 @15 — Cold-read of "her eyes go to the alley-mouth before her head turns to it, then settle back on Taylor and stay." The first half — eyes-before-head — is wren's card §Look tell set down verbatim ("her eyes move to things before her head does. She tracks peripheral events"), so the body-register is unmistakably hers and not a generic going-still. The load-bearing half is the second: the gaze settling back on Taylor and *staying*. That staying is the somatic of the attachment-crystallization — a child who has worked something out fixing her attention on the person she worked it out about and not looking away. I checked the compound against the one-clause REJECT signature, because the entry joins three movements (eyes-go / head-turns-after / settle-and-stay). It survives: every clause is a body-action, and none of them shifts the subject to an abstraction-noun (the turn, the moment, the gap) or carries a temporal-latency observation or a rule-statement. It is a multi-beat body-show that stays entirely inside the somatic register the rubric licenses. On Q1 this is the contested beat — @15 is a seven-facet pile-up and narrator:4 fires the same anchor ("Wren is looking at her the way you look at a thing you have decided about"). But narrator:4 is Taylor's POV cognition reading wren from outside; it tells the reader Taylor *concludes* wren has decided. feel:3 is the only facet that puts the reader inside wren's body doing the deciding — the eyes-before-head, the gaze that settles and will not leave. The jobs stay distinct (NI registers, feeling shows), and the POV-non-redundancy clause does not even bind here since wren is non-POV; Q1 passes because feeling is the sole facet carrying wren's interior at all. Q2 is decisive: @15 is scene-B's protected peak, the magnitude-2 social-tether pivot, the bone state:15 writes attachment-crystallized against — the single most structural wren beat in the chapter. Multi-justification stacks four of five (card-match, Q1, Q2, functional-register: painting-characterization plus realization-made-physical). On G3, cover @16 onward and the entry still holds — the gaze settling and staying is a complete event at @15 and does not lean on the @19 speech that later confirms it. I considered revising toward the cleaner "her gaze settles on Taylor and stays" — the habitual eyes-before-head half slightly dilutes the crystallization-specific half — but the fused form is not a form violation, and the card-signature opening is what makes the tell legibly wren's rather than anyone's. I keep it whole.
+## Existing-entry verdicts
+
+feel:4 @26 — Reading this cold without leaning on the cite-index, what arrives is a
+child whose body confirms its training one beat before her mouth confirms her
+trade. "Moves the eyes to Taylor's hands before speaking" is the card §Look line
+made visible — eyes-before-head, peripheral tracking — operating at the exact
+moment the chapter's payload (NOTE-003: the flies-not-on-Taylor observation) is
+about to be delivered. The locator "before speaking" sequences the body action
+against the speech; it does not exit the body-register into a second-clause
+abstraction. There is no hedge, no comparison, no metaphor, no named-feeling. The
+construction is one clause: subject-verb-object-locator. Q1 passes because the
+proto-line (wren speaks to taylor) and the dialogue line ("There were flies on
+the meat-stall. There weren't any on your hand.") both carry the report-content
+but neither carries the pre-speech eye-move; the somatic is the missing layer.
+Q2 passes because Wren's observation-before-action habit is the trait that makes
+her cost-bearer-status load-bearing rather than incidental — surfacing the habit
+at the moment it produces the payload is structural to the chapter's seeding
+work. Position-gate: scene-C pivot, flat-low rhythm, payload-delivery beat — the
+somatic opens the moment (the body-completion-of-observation precedes the verbal
+report) rather than archiving it; it is the right register at the right moment.
+The slice's own anti-pre-pricing discipline holds: she shows that she observed,
+not that she understood; the meaning of the flies-observation is left to Taylor
+to process at @27, where Taylor's gaze-drop carries the cost-landing on Taylor's
+side. The two bodies do distinct work at adjacent beats.
 VERDICT: KEEP
 
-PATTERN-SCAN: The wren feeling slice is a single entry, so no within-character template can repeat. Reading the full feeling file end-to-end, the three fires play three distinct somatic registers at three different scene-positions: coll's eyes lifting once at @12 (the not-naming glance), wren's gaze tracking-then-fixing at @15 (the observer-attachment), Taylor's hand held against extension at @28 (the disciplined non-reach). No shared somatic-tell verb, no low-frequency word saturating across the file, no scene playing one register triplicated. The file is clean; nothing to cut.
+## ADD candidates considered and refused
 
-CAP-REFUSAL: feeling:<candidate> @6 wren-stitch-maker-flea-bottom-ward — wren enters the cleared alley here and a somatic tell (eyes catching the insect-residue, a half-step slowed) would be content-clean and card-matched. I refused it on two grounds. First, G5: @6 is approach-zone, and a register fire at approach-zone spends wren's somatic weight before the @15 pivot it should be saved for — it decelerates where the scene needs to climb. Second, and more honest: the add has room, not wanting. vibes:5 @6 already carries "anomaly-perceived-without-vocabulary"; the proto-line is a bare entrance; the rubric's posture is default-to-silence and 2-5% sparsity. Two wren fires in one chapter, one at approach-zone, is over-coverage. The @15 fire is the right and sufficient wren fire. The brief's memory/NI co-cite hint also cannot resolve for wren: she is non-POV, and memory and NI are POV-only facets — there is no wren-memory or wren-NI entry to co-cite a somatic register against.
+CAP-REFUSAL: feel:5-candidate @22 — a peripheral-tracking eye-move on Wren's
+entry would be the purest card §Look fire in the chapter (she arrives and her
+eyes go to the corner before her head turns). Refused on scene-cap ≤1 (hard):
+the cap is spent at @26 and @26 is the higher-leverage anchor because it is the
+NOTE-003 payload carrier. The entry beat is structurally less load-bearing; the
+payload beat wins on selection.
+
+CAP-REFUSAL: feel:5-candidate @23 — a body-tell preceding Wren's first question
+("You walked the block three times this morning. I wasn't looking for you.")
+would set up the not-looking framing somatically. Refused on scene-cap and on
+Q1: the dialogue line itself carries the not-looking framing in Wren's own
+voice; a somatic addition would risk register duplication. The dialogue's
+report-without-framing is the literary work; a body-tell in front of it would
+gild what is already cleanly carrying its own load.
+
+CAP-REFUSAL: feel:5-candidate @28 — a somatic at departure (eyes lingering one
+beat before she turns to cross) would carry the un-filed-exit cost as body.
+Refused on scene-cap and on hard-fence adjacency: @28 is the chatter bone whose
+rationale names "she leaves un-named-as-significant"; importing a body-tell here
+would risk smuggling recognition-of-significance into a beat the bones layer
+deliberately placed as un-filed. The chapter's cost-bearer-pre-pricing risk is
+precisely this: showing Wren as already-knowing the structure she is inside.
+The bones layer protected against this; the feeling-flag layer must not undo
+the protection. Hard fence #1 and #2 on her card (eleven, not precocious-wise;
+does not ask the question) point the same direction. REFUSE on form + cap.
+
+## PATTERN-SCAN
+
+PATTERN-SCAN: One entry in the wren slice; no within-character pattern is
+possible. Across the consolidated feeling.md, the eye-register appears at both
+@26 (wren moves eyes to Taylor's hands) and @27 (Taylor drops gaze to the mesh,
+one beat before lifting). This proximity is not formulaic — it is structural:
+Wren's gaze-to-hands delivers the observation; Taylor's gaze-to-mesh receives
+the cost. The verbs differ (moves / drops), the objects differ (Taylor's hands /
+the mesh), the temporal directions differ (Wren pre-speech / Taylor post-
+speech), and the functions differ (observation-completion / cost-landing). The
+ear catches that both are eye-tells but does not catch a repetition — the
+register is the right one for both bodies and they do different work at
+adjacent anchors. No revision argument follows from the pattern.
+
+## Arbiter Summary
+
+Total verdicts reviewed: 1 existing + 3 cap-refusals.
+Interventions fired: 0.
+DISCIPLINE-FAIL count: 0.
+Pattern: the wren slice arrived at R2.3 already disciplined — single fire on the
+load-bearing card signature at the load-bearing chapter beat, with explicit
+cost-bearer-pre-pricing management in the R1 rationale. The judge work was to
+re-test cold (G1 held), to confirm the cap blocked all other beats (it did),
+and to verify the @26 fire's relationship to NOTE-003 (dialogue handles speech,
+feeling handles body — clean layer separation). No mechanical recitation was
+needed because the entry's at-rest reading produced the keep on its own.
