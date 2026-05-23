@@ -91,8 +91,21 @@ EXPOSITION_PREFIX = "exposition"
 
 
 def resolve_facet_files(facets_dir: Path, episode: str) -> dict[str, str]:
-    """Return the filename->prefix map for THIS episode (adds exposition if present)."""
-    files = dict(FACET_FILES)
+    """Return the filename->prefix map for THIS episode (adds exposition if present).
+
+    Under the URI-FACETS-CHAPTER-NAMING convention (per /and-facets.md line 12),
+    facet files emit as `<facet>-<book>-<chapter>.md`. Prefer the chapter-
+    namespaced filename when present; fall back to the legacy un-namespaced
+    filename for backwards-compatibility with pre-2026-05 emissions.
+    """
+    files: dict[str, str] = {}
+    for legacy_name, prefix in FACET_FILES.items():
+        base = legacy_name.rsplit(".md", 1)[0]
+        chapter_name = f"{base}-{episode}.md"
+        if (facets_dir / chapter_name).exists():
+            files[chapter_name] = prefix
+        elif (facets_dir / legacy_name).exists():
+            files[legacy_name] = prefix
     expo = facets_dir / f"exposition-{episode}.md"
     if expo.exists():
         files[expo.name] = EXPOSITION_PREFIX
@@ -809,6 +822,11 @@ def main(argv: list[str]) -> int:
 
         # Refresh post-merge state for downstream checks
         _, base_bodies, merged_cites, _ = parse_proto_file(protoline_path)
+
+        # Re-resolve facet files after slice consolidation — feeling.md and
+        # state-updates.md are written by Phase 3 and were absent during the
+        # initial resolve_facet_files call.
+        facet_files = resolve_facet_files(facets_dir, episode)
 
         # Phase 4: stale-citation check (deletion-aware per A5)
         dialogue_entries = _load_dialogue_entries(project_root)

@@ -679,7 +679,7 @@ books:
         #              staff/auditor/write-b01c01-pass2.md,
         #              staff/auditor/write-b01c01-pass5.md,
         #              staff/auditor/write-b01c01-bone-gate.md.
-        status: bones-written    # reset per /and-write Phase 7 G1 rule: Phase 7 emit ALWAYS resets status to bones-written regardless of prior status; prior audited-r1-mechanical was on the now-replaced bone set
+        status: faceted-r1    # R1 fanout authored (commit 69a9410); Phase 2 cite-index built 2026-05-23 (52 entries across 9 facets + 3 dialogue files); /and-facets resumes at Phase 3 (R2 fanout)
         audit_path: active-project/staff/auditor/facets-final-audit-r3.md    # STALE — pertains to prior bone set; not valid against redo bones
         audit_complete: true    # STALE — pertains to prior bone set
         audit_findings: 0    # STALE — HARD count from prior run; ~15 SIGNAL carry-forward; not valid against redo bones
