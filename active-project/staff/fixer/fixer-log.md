@@ -160,8 +160,51 @@ target: active-project/theater/facets/interest-narrator-b01-c01.md + location-st
 audit-report: active-project/staff/auditor/facets-final-audit.md + active-project/staff/auditor/facets-audience-gate-r1.md
 findings-queued: 6 (F1-F6; H3/H4/fault-008 already complete)
 
-## F1 — WORKING — 2026-05-23T12:05:00Z
-note: authoring single-clause rewrites for narrator:2/3/6/7 — must remove "power" (narrator:2), eliminate all semicolons, preserve channel+earning content per rubric §Form lines 27-42
+## F1 — RESOLVED — 2026-05-23T12:10:00Z
+fault: narrator:2/3/6/7 violated §Form (semicolon-spine); narrator:2 also contained Earth-Bet category-noun "power" (H1)
+scope: line
+change: verified on-disk — rewrites pre-applied before this session; all four entries are single-clause, no semicolon; narrator:2 has no "power"; inverted-predicate cap at narrator:6 only; file-header comment already present
+criteria met: yes
+
+## F2 — RESOLVED — 2026-05-23T12:15:00Z
+fault: loc-state:3 @6 continuity-from token introduced NEW focus-element (tallow-stall) not inherited from loc-state:1's baseline — violates rubric transition-run continuity license
+scope: line
+change: dropped "continuity-from loc-state:1:" prefix from sensory-note field; added state-change justification comment (necessity-axis: tallow-stall is palpable sensory + spatial waypoint); sensory-note content unchanged
+criteria met: yes — no continuity-from token; state-change justified by necessity
+
+## F3 — RESOLVED — 2026-05-23T12:20:00Z
+fault: vibes:2 @6 third token `beauty-requires-not-paying-attention-she-pays-attention` parses as a sentence (two clauses with standalone subject + finite verb) — AP8 FAIL
+scope: line
+change: token rewritten to `attention-she-does-not-withhold` (noun-phrase; no standalone subject+finite-verb main predicate); preserves operator-bias toward deliberate sensory engagement
+criteria met: yes — noun-phrase form; AP8 PASS
+
+## F4 — RESOLVED — 2026-05-23T12:30:00Z
+fault: sensory:2/3/4 old-states unanchored — no prior loc-state entry establishes any tactile, thermal, or auditory baseline by name
+scope: line (three entries)
+change: all three old-states rewritten to derive from loc-state:4 @11 ("working corner off the Hook" + midday + overcast):
+  sensory:2: open-air-working-surface → working-corner-open-air (verbatim from loc-state:4 "working corner")
+  sensory:3: flea-bottom-stone-walls-midday-ambient → flea-bottom-midday-overcast-ambient (verbatim time+weather from loc-state:4)
+  sensory:4: flea-bottom-midday-ambient-sound → flea-bottom-working-corner-ambient (near-verbatim from loc-state:4 "working corner off the Hook")
+criteria met: yes — all three old-states trace verbatim or near-verbatim to loc-state:4 @11
+
+## F5 — RESOLVED — 2026-05-23T12:35:00Z
+fault: memory:2 @16 Westerosi-primary target-reference `hands-as-labor-marker-vs-authority-instrument` does not map to any trigger-class in rubric-memory-flags.md §Monument-trigger-class list
+scope: line
+change: dropped Westerosi-primary; target-reference changed to `(earth-bet: override-architecture-instrument-withheld)` only; file-level doubled-register exemption documented as c01-specific (hinge chapter; prohibition-intact baseline; no genuine Westerosi-monument cue has fired from the bones; doubled register accumulates across book)
+criteria met: yes — Westerosi-primary dropped; exemption documented with rubric-grounded rationale
+
+## F6 — RESOLVED — 2026-05-23T12:40:00Z
+fault: state-updates-env entry 3 @7 references `prop:oc-taylor-pack` which has no warehouse card — slug-resolution RUBRIC-FIDELITY failure
+scope: card (authored prop card)
+change: created active-project/warehouse/oc-taylor-pack.card.md — class=prop, scope=project, world=planetos, portability=portable, quality=full; all required body sections present per schemas/card.schema.md; functional-state axes documented; slug resolves
+criteria met: yes — card exists at warehouse path; validates against card schema
+
+## SESSION-END — 2026-05-23T12:45:00Z — facets-b01c01-cycle2-fixer
+findings-applied: 6 (F1 verified pre-applied; F2-F6 direct edits)
+findings-skipped: 0
+exit: CLEAN
+cite-index-rebuild: not needed — all fixes were content-only edits within existing entries; no IDs, anchors, or proto-line tokens changed
+fix-log: active-project/staff/fixer/and-facets-cycle2-fixes.md
 
 ## item-4 — RESOLVED — 2026-05-21T15:08:00Z
 fault: exposition:4 @4 gloss text "In Flea Bottom there is rarely anyone who can" lacks appositive orienting a cold-join reader; "the Hook" in exposition:1 @0 bridge text also flagged for check

@@ -20,9 +20,15 @@ author: studio
 # @2: movement verb "crosses" — threshold beat. Drain-channel requires specific navigation.
 2 @2 flea-bottom | morning | none | drain-channel-exposed | the drain-cut mud channel: wet stone gap at the yard crossing; footing costs a stride's width
 
-# @6: within fusion-eligible run @1-6. Continuity-from loc-state:1 (morning corner established).
-# The tallow-stall is a NEW focus-element not inherited from prior loc-state.
-3 @6 flea-bottom | morning | none | tallow-stall-active | continuity-from loc-state:1: the tallow-stall smoke-funnel drawing within arm's reach of the circuit path
+# @6: within fusion-eligible run @1-6. State-change beat: tallow-stall is a navigational
+# waypoint Taylor passes through — distinct sensory + tactical element new to @6.
+# Reclassified from continuity-from to state-change per F2 rubric repair
+#   (rubric-location-state.md § Transition-run continuity license: carry-note must name
+#   what PERSISTS from cited prior loc-state's baseline; tallow-stall is a NEW focus-element,
+#   not persistence from loc-state:1's corner-room-threshold + building-keeper-transaction
+#   baseline). State-change justification: necessity-axis satisfied — the tallow-stall
+#   smoke-funnel is a palpable sensory + spatial consequence of the circuit-path beat at @6.
+3 @6 flea-bottom | morning | none | tallow-stall-active | the tallow-stall smoke-funnel drawing within arm's reach of the circuit path
 
 # ─── SCENE B (@11-20) | midday ──────────────────────────────────────────
 

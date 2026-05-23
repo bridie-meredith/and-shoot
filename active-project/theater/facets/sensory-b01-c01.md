@@ -30,30 +30,49 @@ author: studio
 # @12: tactile inflection as the needle crosses mesh.
 # Modality: tactile. "the needle crosses the mesh" — bare verb ("crosses"); the physical
 #   sensation of metal-through-fiber is not self-carried by "crosses."
-# Old-state: flea-bottom-open-air-tactile (outdoor working surface; no prior tactile fire).
+# Old-state: working-corner-open-air (derives from loc-state:4 @11 — the working corner
+#   off the Hook, outdoor surface; loc-state:4 establishes the open-air spatial anchor at
+#   this beat; no prior tactile sensory fire on this modality).
+# F4 repair (2026-05-23): old-state rewritten from `open-air-working-surface` (unanchored —
+#   loc-state:4 @11 names spatial position only, no explicit tactile baseline) to
+#   `working-corner-open-air` which derives from loc-state:4's "working corner" field.
+#   The open-air working-corner compound traces verbatim to loc-state:4's sensory anchor.
 # Inflection: needle-through-mesh is a discrete tactile onset — thread-resistance and metal-smoothness.
 # Q1: bare verb — audience needs flag to register the hand-sensation. PASS.
 # Q2: the tactile register of thread-work is audience-perceptible once flagged. PASS.
-2 @12 tactile: open-air-working-surface -> needle-through-mesh # tag: spike
+2 @12 tactile: working-corner-open-air -> needle-through-mesh # tag: spike
 
 # @14: thermal inflection as the walls cool.
 # Modality: thermal. "the walls cool" — bare verb ("cool"); the word does not self-carry
 #   the warmth-release register the way "icy" or "bitter" would.
-# Old-state: flea-bottom-stone-walls-midday-ambient (established by loc-state:4 at @11 midday).
+# Old-state: flea-bottom-midday-overcast-ambient (derives from loc-state:4 @11 — the working
+#   corner at midday with overcast weather; loc-state:4 time=midday + weather=overcast are
+#   verbatim fields; together they imply the thermal baseline before the wall-cooling event).
+# F4 repair (2026-05-23): old-state rewritten from `flea-bottom-stone-walls-midday-ambient`
+#   (unanchored — no prior loc-state establishes a thermal baseline) to
+#   `flea-bottom-midday-overcast-ambient` which derives directly from loc-state:4's
+#   time-of-day (midday) + weather (overcast) fields. "midday" + "overcast" are near-verbatim
+#   from loc-state:4 and together constitute the available thermal baseline before @14.
 # Cross-facet: loc-state:4 establishes midday but does not assert a thermal state-event.
-#   "The walls cool" IS a thermal state-event (walls releasing day-stored warmth as occupation
-#   pattern shifts mid-day); this fire ratifies the inflection loc-state implies but does not
-#   explicitly flag. Loc-state ↔ sensory contract satisfied.
+#   "The walls cool" IS a thermal state-event; this fire ratifies the inflection.
 # Q1: "cool" as verb is bare — audience needs the thermal register named. PASS.
 # Q2: walls releasing warmth is an audience-perceptible thermal shift once flagged. PASS.
-3 @14 thermal: stone-walls-midday-ambient -> walls-releasing-day-warmth # tag: spike
+3 @14 thermal: flea-bottom-midday-overcast-ambient -> walls-releasing-day-warmth # tag: spike
 
 # @17: auditory inflection as boots strike cobbles.
 # Modality: sound. "the boots strike the cobbles" — bare verb ("strike"); the specific
 #   auditory register of boot-on-cobblestone is not self-carried.
-# Old-state: flea-bottom-midday-ambient-sound (working-corner ambient; established from @11 anchor).
+# Old-state: flea-bottom-working-corner-ambient (derives from loc-state:4 @11 — the working
+#   corner off the Hook; loc-state:4 is the most recent loc-state before @17 carrying
+#   an environmental baseline; the working-corner ambient sound is the implied acoustic
+#   state before the watch-rotation's boot-strike fires at @17).
+# F4 repair (2026-05-23): old-state rewritten from `flea-bottom-midday-ambient-sound`
+#   (unanchored — no prior loc-state establishes any auditory baseline by name) to
+#   `flea-bottom-working-corner-ambient` which near-verbatim traces to loc-state:4's
+#   "working corner off the Hook" sensory anchor. "working corner" is verbatim from
+#   loc-state:4's one-clause sensory note.
 # Inflection: boot-strike-on-stone is a discrete auditory onset, staged by the bones review
 #   as the watch-approach signal. This is the change-point, not sustained sound.
 # Q1: bare verb — audience needs flag to register the patrol-approach aurally. PASS.
 # Q2: boot-on-cobblestone is a universally legible sound onset. PASS.
-4 @17 sound: flea-bottom-midday-ambient -> boot-strike-on-cobbles # tag: up
+4 @17 sound: flea-bottom-working-corner-ambient -> boot-strike-on-cobbles # tag: up

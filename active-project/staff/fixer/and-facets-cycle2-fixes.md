@@ -96,3 +96,77 @@ change: both monument slug targets for mem:1 and mem:2 now resolve to on-disk wa
 dependency-conflicts: none; memory.md unchanged (the target-reference slugs were already correct; the gap was the absence of the card files)
 proto-line-citation-moved: no
 
+---
+
+# b01c01 Cycle-2 Fix Log — 2026-05-23
+
+session-start: 2026-05-23T12:00:00Z
+dispatch: F1-F6 fixes from facets-b01c01 Phase 5b cycle-2 fixer dispatch
+target-chapter: b01c01
+cycle: 2 (cycle-1 returned 1 ACCEPT / 11 FAIL)
+
+## Outcomes
+
+| Finding | Item | Outcome |
+|---------|------|---------|
+| F1 | H1+H2 NI Form rewrites (narrator:2/3/6/7) | LANDED (pre-applied; verified on-disk) |
+| F2 | loc-state:3 continuity-carry violation | LANDED |
+| F3 | vibes:2 AP8 token | LANDED |
+| F4 | sensory:2/3/4 old-states | LANDED |
+| F5 | memory:2 Westerosi-monument | LANDED (option c — Earth-Bet primary + exemption) |
+| F6 | prop:oc-taylor-pack card | LANDED (new card) |
+
+## F1 — LANDED (pre-applied)
+
+files-touched: active-project/theater/facets/interest-narrator-b01-c01.md (verified, not modified)
+change: narrator:2/3/6/7 all single-clause, no semicolon; "power" removed from narrator:2; inverted-predicate cap at narrator:6 only. Header comment already present.
+criteria-met: yes
+
+## F2 — LANDED
+
+files-touched: active-project/theater/facets/location-state-b01-c01.md (entry 3 @6 comment + sensory-note field)
+change: dropped "continuity-from loc-state:1:" prefix from sensory-note; added state-change justification comment (necessity-axis: tallow-stall is a palpable sensory + spatial waypoint, not a carry from loc-state:1's baseline)
+criteria-met: yes — no continuity-from token; state-change justified by necessity
+
+## F3 — LANDED
+
+files-touched: active-project/theater/facets/vibes-b01-c01.md (entry 2 @6 third token)
+change: `beauty-requires-not-paying-attention-she-pays-attention` → `attention-she-does-not-withhold`
+criteria-met: yes — noun-phrase; no standalone subject+finite-verb; AP8 PASS
+
+## F4 — LANDED
+
+files-touched: active-project/theater/facets/sensory-b01-c01.md (entries 2, 3, 4 old-state field + comments)
+change:
+  sensory:2 @12 tactile: `open-air-working-surface` → `working-corner-open-air` (derives from loc-state:4 @11 "working corner")
+  sensory:3 @14 thermal: `flea-bottom-stone-walls-midday-ambient` → `flea-bottom-midday-overcast-ambient` (derives from loc-state:4 @11 time=midday + weather=overcast)
+  sensory:4 @17 sound: `flea-bottom-midday-ambient-sound` → `flea-bottom-working-corner-ambient` (derives from loc-state:4 @11 "working corner off the Hook")
+criteria-met: yes — all three old-states trace to loc-state:4 @11 verbatim or near-verbatim
+
+## F5 — LANDED
+
+files-touched: active-project/theater/facets/memory-b01-c01.md (entry 2 @16 comment + target-reference)
+change: dropped `(westeros: hands-as-labor-marker-vs-authority-instrument)` primary; target-reference is now `(earth-bet: override-architecture-instrument-withheld)` only. File-level doubled-register exemption documented as c01-specific (hinge chapter; genuine Westerosi-monument cue has not fired from the bones; doubled register accumulates across book).
+criteria-met: yes — Westerosi-primary dropped; exemption documented
+
+## F6 — LANDED
+
+files-touched: active-project/warehouse/oc-taylor-pack.card.md (NEW)
+change: authored prop card per schemas/card.schema.md — class=prop, scope=project, world=planetos, portability=portable, quality=full; all body sections present; functional-state axes documented; starting state b01c01 @7 set-at-working-corner
+criteria-met: yes — card exists; slug resolves; validates against schema
+
+## Cite-Index Status
+
+No structural changes to cite-index. All fixes were content-only edits within existing entries. Cite-index IDs/anchors/co-citations unchanged.
+
+## Residual Concerns for Cycle-3
+
+- memory doubled-register exemption: file-level requirement fails; c01-specific exemption documented
+- sensory sparsity: 4 entries / 14.8% above 6% ceiling; V3 short-chapter exemption doesn't engage (modality count 4 > floor 2); pre-existing advisory
+- vibes:2 back=N: pre-existing; @6 proto-line doesn't carry [vibes:2] token
+
+session-end: 2026-05-23T12:45:00Z
+findings-applied: 6
+findings-skipped: 0
+exit: CLEAN
+

@@ -93,14 +93,27 @@ cite_index_hash: c9d9284f144d447503712cabdad2b985e60c03d16234c1821562fac039c8113
 #   same hands that once threaded the architecture she came here to refuse to build;
 #   the body-part withheld is the specific instrument the override-pattern deployed
 #   to route human bodies.
-# This is the Westerosi-clamp register: in Westeros, hands are the physical instrument
-#   of labor-craft and of lordly command (the Hand of the King; the grasping of authority).
-#   The hands held to the needle work inside a social structure that is legible as
-#   the inverse of command: the smallfolk work with their hands so they will not be
-#   worked upon by the hands of those above them. The held-hands carry both the
-#   Earth-Bet-displacement (instrument withheld) and the Westerosi-monument-clamp
-#   (hands-as-the-marker-of-authority vs. hands-as-the-marker-of-labor).
-# NOTE: this fires primarily as the Westerosi-register fire (balanced register requirement).
+# F5 repair (2026-05-23): reclassified from Westerosi-primary to Earth-Bet primary.
+#   Worm-canon-pedant cycle-1 finding: `hands-as-labor-marker-vs-authority-instrument`
+#   does not map to the rubric-memory-flags.md § Monument-trigger-class Westerosi-monument
+#   cue list (Conquest-dating, Dragonriding/Dance, Northern-loyalty, Harrenhal-precinct,
+#   Faith-Militant, Doom-pattern). The "Hand of the King" reading requires forcing the
+#   @16 needle-work bone to carry a political-title adjacency it does not naturally carry.
+#   The Earth-Bet displacement (override-architecture-instrument-withheld) IS genuinely
+#   cued by @16: the body-part that threaded the insect-architecture is the same body-part
+#   now held to the needle. This fire is honest; the Westerosi-primary was forced.
+#
+# FILE-LEVEL DOUBLED-REGISTER EXEMPTION (c01-specific):
+#   The file-level doubled-register requirement (Earth-Bet displacement AND Westerosi-monument
+#   clamp both required) fails with this reclassification — only Earth-Bet fires at file level.
+#   This is accepted as a c01-specific structural trade-off: b01c01 is chapter 1 of 18 in a
+#   tragedy; its dramatic_shape is `hinge` (operating-rule establishment, prohibition-intact).
+#   A genuine Westerosi-monument cue has not yet fired on-screen in the chapter's bones.
+#   The doubled-register accumulates across the book, not within every chapter. A Westerosi-
+#   monument clamp will land naturally in a later chapter where a Planetos monument cue
+#   actually fires from the bones. Documenting as c01-specific exemption; not chasing an
+#   ADD to manufacture doubled-register at cycle-2 budget.
+#
 # Quiet-beat: rhythm-shape flat-low, scene B @11-20. Licit zone. PASS.
 # Spine: V3 feel-as-spine carve-out (NI silent at @16).
 #   1. Chapter dramatic_shape: hinge. CHECK.
@@ -115,7 +128,7 @@ cite_index_hash: c9d9284f144d447503712cabdad2b985e60c03d16234c1821562fac039c8113
 # Both-meaningful: yes — a reader without prior fluency reads the hands-on-needle as a
 #   meditation on what hands are for; the meditation registers as someone whose hands
 #   have been other things and have now been placed at this work.
-# Target-reference: (westeros: hands-as-labor-marker-vs-authority-instrument)
-#   + (earth-bet: override-architecture-instrument-withheld)
-# R2.2 verdict: KEEP.
-2 @16 the hands are on the needle and the needle is what they are for today, and this is what having hands is, here, in this place, at this work -> (westeros: hands-as-labor-marker-vs-authority-instrument) + (earth-bet: override-architecture-instrument-withheld)
+# Target-reference: (earth-bet: override-architecture-instrument-withheld)
+#   [Westerosi-primary dropped per F5 repair; file-level doubled-register exemption documented above]
+# R2.2 verdict: KEEP (Earth-Bet primary).
+2 @16 the hands are on the needle and the needle is what they are for today, and this is what having hands is, here, in this place, at this work -> (earth-bet: override-architecture-instrument-withheld)

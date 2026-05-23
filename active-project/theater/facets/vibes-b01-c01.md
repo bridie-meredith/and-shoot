@@ -33,7 +33,13 @@ author: showrunner
 
 1 @1 actor:taylor-hebert-kl-122ac ++ insects: [flea-bottom-density-running-hot, passive-read-as-continuous-overhead, the-suppression-cost-that-does-not-appear-in-the-ledger] | licensed-by: state-update:1, state-update:2, proto:5
 
-2 @6 actor:taylor-hebert-kl-122ac ++ king's-landing: [tallow-smoke-as-the-constant, the-smell-that-confirms-the-register, beauty-requires-not-paying-attention-she-pays-attention] | licensed-by: state-update:1, state-update:2, proto:6
+2 @6 actor:taylor-hebert-kl-122ac ++ king's-landing: [tallow-smoke-as-the-constant, the-smell-that-confirms-the-register, attention-she-does-not-withhold] | licensed-by: state-update:1, state-update:2, proto:6
+# F3 repair (2026-05-23): third token rewritten from `beauty-requires-not-paying-attention-she-pays-attention`
+#   (AP8 fail — two-clause: "beauty requires not paying attention" + standalone "she pays attention")
+#   to `attention-she-does-not-withhold` (noun-phrase: "attention" as head, relative clause modifier
+#   "she does not withhold" — no standalone subject+finite-verb main predicate; reads as noun-phrase
+#   not a sentence). Token preserves operator-bias: biases downstream toward rendering Taylor's
+#   sensory engagement as deliberate, non-withheld attention — contrasted with beauty-as-requiring-inattention.
 
 # ─── Event E2: The inverted establishing fact — no one here has a power that requires containing (@9) ───
 #
