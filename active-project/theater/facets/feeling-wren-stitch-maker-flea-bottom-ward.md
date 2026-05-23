@@ -42,9 +42,14 @@ layer: R2.3
 #   vibes:8, wren:2 at the same anchor — the entry is not lonely and does not lean
 #   on the next proto-line (Taylor's @27 gaze-drop) to make sense. The eye-move
 #   completes its work at @26.
-# G4 pattern-scan (cross-character): see decision shard PATTERN-SCAN — eye-register
-#   appears at both @26 (Wren → Taylor's hands) and @27 (Taylor → mesh); proximity
-#   is structural (delivery / receipt), not formulaic; no revision argument.
+# G4 pattern-scan (cross-character): see decision shard PATTERN-SCAN — the eye-register
+#   at @26 (Wren → Taylor's hands) had an adjacent Taylor receipt-fire (feel:3 @27 in
+#   the taylor slice) at R1 that R2.3 DELETED on §Form temporal-latency-second-clause
+#   grounds. The delivery-receipt PAIR is no longer extant; only the delivery (this
+#   entry) remains. The chapter's payload weight at @26 rests on this entry plus the
+#   surrounding co-citations (narrator:6, vibes:7, vibes:8, wren:2) — without the
+#   Taylor-side somatic receipt at @27, the body-pair architecture is single-body, not
+#   two-body. Documented for audience-gate reviewers reading the cross-facet structure.
 # G5 position-gate: @26 is the scene-C pivot — the cost-bearer-seeding payload beat
 #   (NOTE-003 carrier). The somatic-before-speech opens the moment (body confirms
 #   observation-completed before the verbal report); it does not archive it. The

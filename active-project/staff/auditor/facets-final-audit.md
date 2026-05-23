@@ -1,19 +1,39 @@
 ---
 report: facets-final-audit
 chapter: b01c01
-timestamp: 2026-05-23
+timestamp: 2026-05-23 (re-issued post-fixer pass + post-Phase 5b cycle 1)
 audit-classes-run: 12
-HARD: 3
-SIGNAL: 7
-earth-bet-hits: 0
-cite-graph-coherence: FAIL
+HARD: 0    # 5 HARDs originally found (fault-001/002/003/011/012); all repaired by fixer pre-cycle-1
+SIGNAL: 14    # SIGNAL findings; carry through to audience-gate
+earth-bet-hits: 0    # proper-noun mechanical scan; category-noun "power" in narrator:2 was not in scope of mechanical scan but was surfaced by worm-canon-pedant at Phase 5b cycle 1 — see H1 below
+cite-graph-coherence: PASS    # post-repair; all five fault-001/002/003/011/012 HARDs landed
 scene-map-coverage: PASS
 sidecar-absent-flag: known (dialogue-taylor R1 fork; R2 authored forward) — not re-raised as HARD
+post-repair-banner: PRESENT (see § Post-repair status below)
 ---
 
 # Facets Final Audit — b01c01
 
-Phase 5 mechanical audit against 12 audit classes. HARD = 3 (cite-graph structural faults). SIGNAL = 7. Phase 6 is gated: HARD must reach 0 before Phase 5b fires.
+**REISSUED post-fixer + post-Phase-5b-cycle-1 (H3 adjudication, 2026-05-23).** The original audit was authored against the pre-fixer cite-graph state; multiple Phase 5b cycle-1 reviewers (worm-canon loc-state, sensory-disambiguation-pedant, sensory-old-state-reader) treated fault-001/002/003 as still-active because the WHAT fields described pre-repair state (back=N). The fixer repaired all five HARDs (fault-001/002/003/011/012) before Phase 5b cycle 1 dispatched, and `_cite-index.md` shows back=Y on the affected entries. This re-issue rewrites the WHAT fields to reflect the **post-repair** state so cycle-2 reviewers read ground truth.
+
+Original Phase 5 audit: 5 HARD + 14 SIGNAL findings. Post-fixer: 0 HARD + 14 SIGNAL. Phase 6 gate (HARD = 0) is met. Phase 5b cycle 1 ran on the post-repair graph and returned 1 ACCEPT (dialogue-wren) / 11 FAIL.
+
+## Post-repair status (added 2026-05-23 re-issue)
+
+- **fault-001** (loc-state:4 mis-cited at @15): REPAIRED. `_cite-index.md` line 26 shows `loc-state:5 @15 back=Y`. The @15 proto-line carries the correct citation for loc-state:5 (the well-step entry).
+- **fault-002** (stale state:4 token at @9): REPAIRED. `_cite-index.md` line 53 shows `state:9 @9 back=Y co=[feel:1, mem:1, narrator:2, vibes:3, vibes:4]`. The @9 proto-line carries [state:9] not [state:4].
+- **fault-003** (systematic loc-state one-off offset in scenes B/C): REPAIRED. `_cite-index.md` lines 26-28 show `loc-state:5 @15 back=Y`, `loc-state:6 @18 back=Y co=[state:4, vibes:6]`, `loc-state:7 @22 back=Y co=[exposition:5, state:1, state:2]`. The proto-lines and loc-state entries are aligned post-repair.
+- **fault-011** (vibes:9 unresolvable licensed-by): REPAIRED. The vibes:9 entry's `licensed-by` field no longer contains the deleted `feeling:3` reference; current value is `proto:27` only (verified by cape-fic-reader Phase 5b cycle 1 vibes verdict).
+- **fault-012** (state:10 NI content-alignment): REPAIRED at field level. The state:10 `<new>` value narrowed from `flea-bottom-block-level-with-patrol-rotation` to `flea-bottom-block-level-day-count-complete`, aligning with narrator:7's ledger-close licensing scope. **Note (H4, cycle 1)**: the state:10 inline COMMENT still enumerated "watch-rotation geometry" as accumulated knowledge; that comment was stripped at H4-adjudication (2026-05-23) post-cycle-1.
+
+## Phase 5b cycle 1 follow-on findings (surfaced 2026-05-23; addressed in cycle 2 fixer pass)
+
+- **H1** (worm-canon-pedant FAIL): narrator:2 @9 contains "a power that requires containing" — "power" as Earth-Bet parahuman category vocabulary. Auditor's proper-noun mechanical scan did not reach category nouns. **Adjudicated as Earth-Bet fence hit; rewriting narrator:2 to remove "power"; updating fence-list to include category-noun scope as a follow-on auditor calibration item.**
+- **H2** (worm-canon-pedant + cape-fic + dark-fantasy convergent): rubric `design/shoot-v2/rubric-narrator-interest.md` line 35 §Form — "Single clause. No semicolon-spine." — direct rule applies. 4 of 6 NI entries (narrator:2, narrator:3, narrator:6, narrator:7) carry semicolons. fault-014's saturation-SIGNAL classification did not catch the direct-Form rejection. **Adjudicated as Form direct rule; rewriting the four entries to single-clause.**
+- **H3** (this re-issue): meta-finding — audit report's pre-repair WHAT fields polluted cycle-1 reviewer reasoning. **Adjudicated as re-issue with post-repair WHAT fields (this version).**
+- **H4** (cape-fic + dark-fantasy + worm-canon): state:10 inline comment seam — addressed by stripping the comment's watch-rotation enumeration (smallest-surface fix).
+
+The 14 SIGNAL findings from the original audit remain on-file for reference below. Several converge with cycle-1 audience callouts; those convergences are documented in `facets-audience-gate-r1.md`.
 
 ---
 
@@ -23,25 +43,31 @@ audit:
   timestamp: 2026-05-23
   findings:
 
-## STRUCTURAL findings (3 HARD, 1 SIGNAL)
+## STRUCTURAL findings (0 HARD post-repair, 1 SIGNAL)
 
     - id: fault-001
       type: fault
-      what: proto-lines/b01-c01.md flat_id @15 carries citation token [loc-state:4]; cite-index records loc-state:4 as anchored at @11 (back=N at @11; back=N at @15 is absent from the cite-index entry — the token is present in proto-lines at @15 but the cite-index does not record loc-state:5 as back=Y)
-      why: The loc-state:4 entry anchors at @11 (the working-corner midday locus) per location-state-b01-c01.md line 4. Proto-lines @15 ("taylor-hebert-kl-122ac passes the well-step") carries [loc-state:4] instead of the expected [loc-state:5]. The stitcher resolves citations by following token→entry; a token pointing to the wrong entry places the wrong facet content (the net-frame anchor at @11) against the well-step proto-line at @15. The downstream stitch render will pull loc-state:4's sensory note ("the working corner off the Hook: Coll's net-frame at the far edge") for the well-step proto-line, corrupting the render-as at that anchor.
-      criteria: The citation token on proto-line @15 must resolve to loc-state entry 5 (anchored at @15: the well-step). Either the proto-line's [loc-state:4] token is corrected to [loc-state:5], or the loc-state file's entry numbering is reconciled such that the @15 entry has the ID that proto-lines @15 carries. The cite-index must be rebuilt post-correction to reflect coherent bidirectionality.
+      status: REPAIRED 2026-05-23 (fixer pre-cycle-1)
+      what (post-repair): proto-lines/b01-c01.md flat_id @15 now carries [loc-state:5]; cite-index shows loc-state:5 @15 back=Y. The mis-citation that placed [loc-state:4] at @15 has been corrected.
+      what (original, pre-repair): proto-lines/b01-c01.md flat_id @15 carries citation token [loc-state:4]; cite-index records loc-state:4 as anchored at @11.
+      why: Original mis-citation placed the @11 net-frame loc-state entry against the @15 well-step proto-line; fixer corrected the token to [loc-state:5] (the well-step entry). Cite-index rebuilt; bidirectional resolution intact.
+      criteria: SATISFIED. Proto-lines @15 carries [loc-state:5]; loc-state:5 anchors at @15; back=Y confirmed in cite-index.
 
     - id: fault-002
       type: fault
-      what: proto-lines/b01-c01.md flat_id @9 carries citation token [state:4]; cite-index records state:4 as anchored at @18 (back=Y at @18); flat_id @9 is not listed as a back=Y co-location for state:4 in the cite-index
-      why: State entry state:4 anchors at @18 (studio.active_conditions.watch-rotation: absent -> passing-the-hook) per state-updates.md. Proto-lines @9 ("taylor-hebert-kl-122ac holds the feet") carries [state:4] — a citation that does not correspond to any state-updates entry anchored at @9. The stitcher will attempt to resolve [state:4] at @9 and pull the watch-rotation state-change (an @18-anchored event) into the render of the @9 held-feet beat, producing an anachronistic sensory render-as. The state:9 entry (actor:taylor.knowledge.ward-geometry: null -> flea-bottom-block-level-passive) IS the correct @9 actor-state fire, but the proto-line carries [state:4] (the @18 env-entry) rather than [state:9] (the @9 actor-entry).
-      criteria: The stale [state:4] citation token on proto-line @9 must be removed. If the @9 beat warrants a state citation, the correct token is [state:9] (the actor:taylor.knowledge.ward-geometry @9 entry). The proto-lines file and cite-index must be rebuilt post-correction to reflect the accurate citation at @9.
+      status: REPAIRED 2026-05-23 (fixer pre-cycle-1)
+      what (post-repair): proto-lines/b01-c01.md flat_id @9 no longer carries the stale [state:4] token; the correct [state:9] citation is in place; cite-index shows state:9 @9 back=Y co=[feel:1, mem:1, narrator:2, vibes:3, vibes:4].
+      what (original, pre-repair): proto-lines/b01-c01.md flat_id @9 carried citation token [state:4]; state:4 anchors at @18 (env entry watch-rotation).
+      why: Original stale token placed an @18-anchored state-change against @9 held-feet beat. Fixer stripped [state:4] and inserted [state:9] (the @9 actor knowledge entry).
+      criteria: SATISFIED. Proto-lines @9 carries [state:9]; back=Y; co-located cluster matches @9 expected pile-up.
 
     - id: fault-003
       type: fault
-      what: cite-index section for loc-state shows loc-state:5 @15 back=N, loc-state:6 @18 back=N, loc-state:7 @22 back=N; proto-lines examination confirms @17 carries [loc-state:5] (not @18, where loc-state:6 anchors) and @22 carries [loc-state:6] (not [loc-state:7] as the facet entry requires)
-      why: Three loc-state entries have back=N, meaning the proto-lines either carry the wrong citation token for that anchor or carry no token at all. Specifically: (a) @17 "the boots strike the cobbles" carries [loc-state:5] in proto-lines, but loc-state:5 anchors at @15; the @17 proto-line should carry [loc-state:6] (the watch-rotation Hook entry). (b) @22 "wren-stitch-maker-flea-bottom-ward enters the alley-mouth" carries [loc-state:6] in proto-lines but loc-state:6 anchors at @18; the @22 proto-line should carry [loc-state:7] (the alley-mouth scene-C entry). This is a systematic one-off citation-offset across the second half of the loc-state file: each proto-line carries the citation token for the PRIOR loc-state entry rather than the current one. The stitcher will apply wrong loc-state sensory-notes at three anchor beats in scenes B and C.
-      criteria: Proto-lines @17, @18, and @22 must carry citation tokens matching the loc-state entry anchored at that flat_id: @17 → no loc-state token (or confirm loc-state:6 if a misplaced token is the source; loc-state:6 anchors at @18 not @17); @18 → [loc-state:6]; @22 → [loc-state:7]. The cite-index must be rebuilt post-correction. Root cause is likely a one-off numbering error introduced during the R2 loc-state citation-write-back to the inflight proto-lines copy.
+      status: REPAIRED 2026-05-23 (fixer pre-cycle-1)
+      what (post-repair): cite-index shows loc-state:5 @15 back=Y, loc-state:6 @18 back=Y co=[state:4, vibes:6], loc-state:7 @22 back=Y co=[exposition:5, state:1, state:2]. The systematic one-off citation-offset in scenes B/C has been reconciled across the second-half loc-state file.
+      what (original, pre-repair): cite-index showed loc-state:5/6/7 with back=N; proto-lines @17/@18/@22 carried citation tokens for the PRIOR loc-state entry, not the current one.
+      why: Original one-off numbering error during R2 loc-state citation-write-back. Fixer corrected the proto-line tokens at all affected anchors.
+      criteria: SATISFIED. All three loc-state entries report back=Y in cite-index post-rebuild.
 
     - id: fault-004
       type: flag
@@ -119,15 +145,20 @@ The Earth-Bet hard-fence scan is reported separately below (0 hits). The followi
 
     - id: fault-011
       type: fault
-      what: vibes:9 @27 licensed-by field cites feeling:3 — a deleted entry (feel:3 @27 removed at R2.3 on §Form temporal-latency seam); the CONSTRAINT class requires "vibes with unresolvable licensed-by → HARD" (per Phase 5 audit class 8 CONSTRAINT enumeration)
-      why: The rubric's CONSTRAINT class enumerates "vibes with unresolvable or forward-citing licensed-by" as HARD. feeling:3 is deleted; the citation is unresolvable. Even though proto:27 is the second citation and resolves cleanly, the CONSTRAINT class's language "unresolvable licensed-by" applies to the citation set — one broken citation in the set means the set is not fully clean. The R2 vibes judge did not update the licensed-by field when feel:3 was deleted (R2 vibes is not re-judged per Phase 3 note: "Vibes is not re-judged in R2; the showrunner-authored R1 vibes facet stands as-is unless the audit flags it").
-      criteria: vibes:9's licensed-by must not contain an unresolvable entry-reference. Remove feeling:3 from the licensed-by citation; confirm proto:27 provides sufficient anchor for the entry's license claim. The vibes facet author (showrunner) executes the repair; the cite-index must be rebuilt to confirm back-resolution is clean after the correction.
+      status: REPAIRED 2026-05-23 (fixer pre-cycle-1; verified by cape-fic-reader Phase 5b cycle 1 vibes verdict)
+      what (post-repair): vibes:9 @27 licensed-by field now reads `proto:27` only; the dead `feeling:3` citation has been removed.
+      what (original, pre-repair): vibes:9's licensed-by cited feeling:3 — a deleted entry (feel:3 @27 removed at R2.3 on §Form temporal-latency seam).
+      why: Original unresolvable citation per CONSTRAINT class. Fixer removed the dead feeling:3 reference; proto:27 alone resolves cleanly and provides anchor license for the @27 vibe.
+      criteria: SATISFIED. vibes:9 licensed-by no longer contains unresolvable references; cite-index rebuild confirms back-resolution clean.
 
     - id: fault-012
       type: fault
-      what: state-updates.md (taylor-hebert-kl-122ac slice), entry state:10 @20 (actor:taylor-hebert-kl-122ac.knowledge.ward-geometry: flea-bottom-block-level-passive -> flea-bottom-block-level-with-patrol-rotation) has no narrator-interest co-citation; rubric §Cross-facet contract for state-updates-actor:<POV>: requires NI co-citation on every actor:POV state-update entry
-      why: Per the RUBRIC-FIDELITY class (§Cross-facet contract in rubric-state-updates.md), every actor:<POV>.* entry must pair with a narrator-interest entry on the same beat. narrator:7 @20 fires on the same beat (the ledger-close entry: "the day closed under the count she had been running; nothing had been moved that needed not to be moved"). This IS a POV-interiority fire on the same bone. The cite-index confirms co-location: state:10 @20 co-cites [narrator:7, state:5] — so narrator:7 IS co-cited. However, the critical question is whether the NI entry's content licenses the knowledge-field mutation. narrator:7 is a ledger-close / cost-tracking register fire, not a ward-geometry knowledge-acquisition fire. The state-update says she now knows flea-bottom-block-level-with-patrol-rotation, but the NI at @20 does not register the patrol-rotation as a specific knowledge event — it registers the day as closed-under-count. The knowledge axis mutation at @20 is broader than what the co-cited NI entry registers. This is a partial cross-facet co-citation failure: the co-citation exists but the NI content does not fully license the specific field mutation named in the state-update. Elevated to HARD because the rubric-state-updates §Cross-facet contract is a named REQUIRED rule per RUBRIC-FIDELITY class.
-      criteria: Either (a) the state:10 entry's field mutation is narrowed to match what narrator:7's ledger-close register licenses (the day's read is complete, consistent with general ward-geometry-built-up but not specifically the patrol-rotation which was registered at @18-@19 by narrator:4 — now deleted), or (b) narrator:7 is updated to name the patrol-rotation as one of the day's counted items in its text (which would bring the NI text into alignment with the state field mutation). The co-citation structure is intact; the content alignment is the gap.
+      status: REPAIRED 2026-05-23 (fixer pre-cycle-1) at field level; comment-level residual addressed under H4 post-cycle-1
+      what (post-repair, field-level): state:10 @20 (actor:taylor-hebert-kl-122ac.knowledge.ward-geometry) `<new>` value narrowed from `flea-bottom-block-level-with-patrol-rotation` to `flea-bottom-block-level-day-count-complete`. The narrowed value aligns with narrator:7's ledger-close register: the count's run finishing intact, not a specific sub-acquisition (patrol-rotation) that would have required its own acquisition-beat NI.
+      what (post-repair, comment-level, post-H4): the inline COMMENT at state:10 originally enumerated "watch-rotation geometry" as accumulated knowledge feeding the @20 close (Phase 5b cycle-1 cape-fic + worm-canon + dark-fantasy converged on this seam — the field value was clean but the comment still claimed patrol-rotation as banked). H4 adjudication (2026-05-23 post-cycle-1) stripped the comment enumeration; the comment now describes the value `day-count-complete` as ambient-density + occupation-pattern coverage without enumerating sub-items not licensed by narrator:7.
+      what (original, pre-repair): state:10 `<new>` value was `flea-bottom-block-level-with-patrol-rotation`; the NI co-citation (narrator:7) only licensed "the day closed under the count," not the specific patrol-rotation sub-field. Partial cross-facet co-citation content-alignment failure.
+      why: Original rubric-state-updates §Cross-facet contract violation per RUBRIC-FIDELITY class.
+      criteria: SATISFIED. Field value narrowed; inline comment aligned with NI scope post-H4. The actor:POV-knowledge state-update at @20 is paired with narrator:7's licensing scope at field and comment levels.
 
     - id: fault-013
       type: flag
@@ -186,19 +217,23 @@ The Earth-Bet hard-fence scan is reported separately below (0 hits). The followi
 
 ---
 
-## Audit summary
+## Audit summary (post-repair, post-cycle-1, 2026-05-23 reissue)
 
 - Total entries reviewed: 49 facet entries + 4 dialogue utterances (3 characters) + 10 vibes entries + scene-map
-- HARD classes: STRUCTURAL 3 (fault-001, fault-002, fault-003: loc-state citation offset, stale state:4 token at @9, loc-state one-off offset in scenes B/C), CONSTRAINT 2 (fault-011: vibes:9 unresolvable licensed-by; fault-012: state:10 NI co-citation content-alignment gap)
-- SIGNAL classes: FREQUENCY-BAND 3 (fault-005/006/007), METADATA-INCONSISTENCY 1 (fault-008), DEDUP 2 (fault-009/010 advisory), AP-SCAN 2 (fault-014 saturation-candidate; fault-015 exposition simile), TASTE-FLAG 2 (fault-016 scene-C approach thin; fault-017 shared-license), RUBRIC-FIDELITY 2 (fault-018 confirmation; fault-019 prop slug)
+- HARD classes (post-repair): 0. Originally 5 HARDs (fault-001/002/003 STRUCTURAL; fault-011/012 CONSTRAINT); all repaired by fixer pre-Phase-5b-cycle-1; comment-level residual on fault-012 addressed at H4 adjudication post-cycle-1.
+- SIGNAL classes: FREQUENCY-BAND 3 (fault-005/006/007), METADATA-INCONSISTENCY 1 (fault-008; addressed at fault-008 wren-PATTERN-SCAN comment update post-cycle-1), DEDUP 2 (fault-009/010 advisory; fault-010 dead-citation portion now moot post-fault-011 repair), AP-SCAN 2 (fault-014 saturation-candidate, **escalated by H2 adjudication post-cycle-1 to direct Form-rule rejection per rubric line 35; four NI entries to be rewritten**; fault-015 exposition simile), TASTE-FLAG 2 (fault-016 scene-C approach thin; fault-017 shared-license), RUBRIC-FIDELITY 2 (fault-018 confirmation; fault-019 prop slug)
 - CURVE-SHAPE: SHAPE-OK (hinge chapter, flat-low baseline, no peak-bones; structurally correct)
-- Earth-Bet hard-fence scan: 0 hits across all text fields (facet entries, dialogue utterances, objectives, sidecar bodies)
-- Cite-graph coherence: FAIL (3 HARD: fault-001 loc-state:4 mis-cited at @15; fault-002 stale state:4 token at @9; fault-003 systematic loc-state one-off token offset in scenes B and C)
+- Earth-Bet hard-fence scan: 0 proper-noun hits; 1 category-noun candidate ("power" at narrator:2) surfaced post-cycle-1 by worm-canon-pedant (H1) — adjudicated as fence hit; rewrite landing in cycle-2 fixer pass; auditor calibration follow-on item is "extend Earth-Bet scan to category-noun scope."
+- Cite-graph coherence: PASS (all 5 HARD repairs verified in `_cite-index.md`)
 - Scene-map coverage: PASS (27/27 bones covered, no gaps, no overlaps, no dangling anchors, frontmatter totals match body)
 
-## Routing
+## Routing (post-cycle-1)
 
-- fault-001, fault-002, fault-003: cite-graph structural corrections → fixer (studio / cite-index rebuild). Proto-lines file and loc-state file citations must be reconciled; cite-index must be rebuilt post-correction.
-- fault-011: vibes:9 licensed-by correction → fixer (showrunner as vibes author). Remove the dead feeling:3 citation from vibes:9's licensed-by field.
-- fault-012: state:10 NI content-alignment → fixer (state-updates-actor taylor fork OR narrator-interest author). Either narrow the state:10 field mutation or expand narrator:7's text to name the patrol-rotation.
-- SIGNAL findings (fault-004 through fault-019 excluding HARDs): advisory; no fixer dispatch until after audience-gate verdict unless escalation criteria trigger.
+- All original HARDs (fault-001/002/003/011/012): REPAIRED. No further routing.
+- H1 (narrator:2 "power" category-noun fence hit): → fixer pass (NI POV-impersonator rewrite of narrator:2 to remove "power" + Form single-clause rewrite).
+- H2 (fault-014 escalation to direct Form rule per rubric line 35): → fixer pass (NI rewrite of narrator:2 + narrator:3 + narrator:6 + narrator:7 to single-clause, no-semicolon Form).
+- H3 (this re-issue): COMPLETE.
+- H4 (state:10 inline comment seam): COMPLETE (comment stripped 2026-05-23 post-cycle-1).
+- fault-008 (wren PATTERN-SCAN stale ref to deleted feel:3 @27): COMPLETE (commentary updated to reflect post-R2.3 single-body architecture).
+- Other SIGNAL findings (fault-005/006/007/009/013/015/016/017/018/019): advisory; cycle-2 fixer may address where direct rubric-rule applies (e.g., fault-009 V1.1 multi-token split is rubric-licensed; fault-019 prop card-resolution falls under URI-FACETS-CYCLE-1 monument-card-resolution which is direct-rule).
+- Phase 5b cycle-1 audience callouts beyond H1-H4 (loc-state:3 continuity-carry license violation, vibes:2 AP8 token, sensory:2/3/4 unanchored old-states, memory:2 Westerosi-monument forced-fit, etc.): consolidated in `facets-audience-gate-r1.md` § "Remediation routing"; cycle-2 fixer pass addresses direct-rubric-rule items; taste-level callouts deprioritized per user H2 adjudication note ("Less weight on pet peeves at this stage").

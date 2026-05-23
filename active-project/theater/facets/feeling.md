@@ -174,9 +174,14 @@ layer: R2.3
 #   vibes:8, wren:2 at the same anchor — the entry is not lonely and does not lean
 #   on the next proto-line (Taylor's @27 gaze-drop) to make sense. The eye-move
 #   completes its work at @26.
-# G4 pattern-scan (cross-character): see decision shard PATTERN-SCAN — eye-register
-#   appears at both @26 (Wren → Taylor's hands) and @27 (Taylor → mesh); proximity
-#   is structural (delivery / receipt), not formulaic; no revision argument.
+# G4 pattern-scan (cross-character): see decision shard PATTERN-SCAN — the eye-register
+#   at @26 (Wren → Taylor's hands) had an adjacent Taylor receipt-fire (feel:3 @27 in
+#   the taylor slice) at R1 that R2.3 DELETED on §Form temporal-latency-second-clause
+#   grounds. The delivery-receipt PAIR is no longer extant; only the delivery (this
+#   entry) remains. The chapter's payload weight at @26 rests on this entry plus the
+#   surrounding co-citations (narrator:6, vibes:7, vibes:8, wren:2) — without the
+#   Taylor-side somatic receipt at @27, the body-pair architecture is single-body, not
+#   two-body. Documented for audience-gate reviewers reading the cross-facet structure.
 # G5 position-gate: @26 is the scene-C pivot — the cost-bearer-seeding payload beat
 #   (NOTE-003 carrier). The somatic-before-speech opens the moment (body confirms
 #   observation-completed before the verbal report); it does not archive it. The
@@ -194,9 +199,14 @@ layer: R2.3
 #
 # No cost-bearer-pre-pricing: the tell is the physical habit (eyes-move), not the
 #   meaning attributed. Wren shows that she observed; she does not show that she
-#   understood. The meaning of the flies-observation is left to Taylor to process
-#   at @27 (feel:3 — Taylor drops gaze to the mesh one beat before lifting it).
-#   Two bodies, adjacent beats, distinct work.
+#   understood. The meaning of the flies-observation was originally to be processed
+#   at @27 (taylor slice-local feel:3 — Taylor drops gaze to the mesh one beat before
+#   lifting it), but that entry was DELETED at R2.3 on §Form temporal-latency seam.
+#   The delivery-receipt body-pair architecture is therefore single-body in the live
+#   graph; the @27 receipt does not exist as a feeling-flag fire. Downstream (stitch)
+#   must carry the Taylor-side response via the NI/state register at @27 (vibes:9
+#   "holds-the-eyes-does-not-file" is the live downstream signal of the receipt; no
+#   somatic-feel layer accompanies it).
 #
 # expressed: partial — Taylor is observing Wren and will register the gaze-direction;
 #   the gaze-to-hands is a tell available to the attentive observer.

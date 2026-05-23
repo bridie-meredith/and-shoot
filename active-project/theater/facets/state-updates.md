@@ -116,13 +116,14 @@ author: taylor-hebert-kl-122ac (character fork)
 9 @9 actor:taylor-hebert-kl-122ac.knowledge.ward-geometry: null -> flea-bottom-block-level-passive # field-extension: ward-geometry (b01c01 passive orientation layer)
 
 # @20: Knowledge state updated at the day-close ledger beat.
-# The working-day read has delivered: population density, temperature/occupation patterns,
-#   well-step movement corridors, watch-rotation geometry.
-# Narrator-interest: no fire at @20 (Coll folds the net; it's a chatter bone; narrator is not
-#   reaching forward). This is a studio-side environmental state change that produces a knowledge
-#   consequence — state-updates-actor fires on the character's knowledge without NI co-citation
-#   because the knowledge shift is not interior-registered at this beat (it accumulates through
-#   the day's bones; @20 is the session-close, not the acquisition peak).
+# The working-day read has delivered the day-count: ambient density and occupation-pattern coverage
+#   sufficient to declare the working-corner read complete. Specific filed items are NOT enumerated
+#   here — the value `day-count-complete` reflects what narrator:7's ledger-close licenses
+#   (the count's run finishing intact), not a list of individual acquired sub-fields.
+# Narrator-interest: narrator:7 @20 co-cites (the ledger-close interior register). The state-update
+#   IS NI-paired; the field mutation is narrowed to match what the ledger-close licenses (count
+#   run intact / day complete), not specific sub-acquisitions that would require their own
+#   acquisition-beat NI fires.
 # NOTE: the substance_delta knowledge gain is measured across all s02 bones; the @20 entry
 #   records the daily-ledger close, not a single-bone acquisition.
 10 @20 actor:taylor-hebert-kl-122ac.knowledge.ward-geometry: flea-bottom-block-level-passive -> flea-bottom-block-level-day-count-complete

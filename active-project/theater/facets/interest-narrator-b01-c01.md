@@ -2,6 +2,9 @@ facet: interest-narrator
 episode: b01c01
 author: taylor-hebert-kl-122ac (POV fork)
 r2-pass: R2.1 judge (2026-05-23)
+# 2026-05-23 cycle-2 fixer pass — rewrote narrator:2/3/6/7 for §Form single-clause compliance
+#   + H1 Earth-Bet category-noun removal (narrator:2 "power"). No semicolons remain in file.
+#   Inverted-predicate cap: narrator:6 is the one allowed use per file (≤1).
 ---
 
 # Narrator Interest — b01c01
@@ -27,7 +30,7 @@ r2-pass: R2.1 judge (2026-05-23)
 #   containing is the specific inversion). Cross-facet: memory anchor candidate.
 # Earning: this is the chapter's first held-discipline beat; the inverted establishing fact
 #   must surface here in the facet layer even if the flat SVO does not carry it.
-2 @9 no one here has a power that requires containing; the sense runs along the walls and stops because the walls are the limit, not because something forced it back
+2 @9 the sense runs the walls and the walls give it back unchanged, because nothing here has called for what she is not doing
 
 # SCENE B (@11-20, midday) ────────────────────────────────────────────────────
 
@@ -36,7 +39,7 @@ r2-pass: R2.1 judge (2026-05-23)
 #   and it is the only thing holding the discipline at observation-only.
 # Earning: this is the scene's opposing-force made visible in her interior; the insect-fill
 #   is not ambient background — it is the pressure against which the held bones operate.
-3 @13 every warm body in the block is legible; the density is running at the level that used to mean work, and she is not doing work
+3 @13 every warm body in the block is legible at the work-level density she is not working against
 
 # DELETED narrator:4 @19 — chassis-recurrence (AP-10 inverted-predicate, second instance after narrator:6); lonely entry; three-clause spine (form-heavy); the watch-pass beat carried structurally by exposition:4 + state:4 + vibes:6 + state-update:4.
 
@@ -48,7 +51,7 @@ r2-pass: R2.1 judge (2026-05-23)
 # G2: the at-rest reading wants this — the persona card names "ledger runs continuously" and the
 #   day-close is when her cost-tracking register surfaces; the bones-review NOTE-002 confirms the
 #   structural absence at this beat.
-7 @20 the day closed under the count she had been running; nothing had been moved that needed not to be moved
+7 @20 the day closed under the count she had been running with nothing moved that needed not to be moved
 
 # SCENE C (@22-29, afternoon) ─────────────────────────────────────────────────
 
@@ -65,4 +68,4 @@ r2-pass: R2.1 judge (2026-05-23)
 # Earning: this is the chapter's payload bone; Wren's observation proves the cost-bearer's
 #   seeing; attention must land here.
 # NOTE: ≤1 inverted-predicate per file — this entry uses the inverted form. Cap consumed.
-6 @26 the flies are what the read should have caught and didn't; what she sees is what the insects already knew, and she arrived at it without the insects
+6 @26 what the girl saw is what the read should have returned — the girl arrived at it without the insects

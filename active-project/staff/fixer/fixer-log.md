@@ -154,6 +154,15 @@ exit: CLEAN
 cite-index-rebuilt: YES (manual rebuild from canonical file state; build_cite_index.py not executable in this environment; cite-index written directly to active-project/theater/facets/_cite-index.md)
 hard-count-post-fix: 0 (all 5 HARDs resolved; Phase 5b unblocked)
 
+## SESSION-START — 2026-05-23T12:00:00Z — facets-b01c01-cycle2-fixer
+dispatch: /and-facets b01c01 Phase 5b cycle-2 fixer — F1 NI Form rewrites (narrator:2/3/6/7) + F2 loc-state:3 continuity-carry fix + F3 vibes:2 AP8 token + F4 sensory:2/3/4 old-state lineage + F5 memory:2 Westerosi monument + F6 prop:oc-taylor-pack margit referral
+target: active-project/theater/facets/interest-narrator-b01-c01.md + location-state-b01-c01.md + vibes-b01-c01.md + sensory-b01-c01.md + memory-b01-c01.md + active-project/warehouse/
+audit-report: active-project/staff/auditor/facets-final-audit.md + active-project/staff/auditor/facets-audience-gate-r1.md
+findings-queued: 6 (F1-F6; H3/H4/fault-008 already complete)
+
+## F1 — WORKING — 2026-05-23T12:05:00Z
+note: authoring single-clause rewrites for narrator:2/3/6/7 — must remove "power" (narrator:2), eliminate all semicolons, preserve channel+earning content per rubric §Form lines 27-42
+
 ## item-4 — RESOLVED — 2026-05-21T15:08:00Z
 fault: exposition:4 @4 gloss text "In Flea Bottom there is rarely anyone who can" lacks appositive orienting a cold-join reader; "the Hook" in exposition:1 @0 bridge text also flagged for check
 scope: line
