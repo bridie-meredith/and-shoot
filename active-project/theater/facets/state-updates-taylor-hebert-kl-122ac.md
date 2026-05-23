@@ -38,4 +38,4 @@ author: taylor-hebert-kl-122ac (character fork)
 #   the day's bones; @20 is the session-close, not the acquisition peak).
 # NOTE: the substance_delta knowledge gain is measured across all s02 bones; the @20 entry
 #   records the daily-ledger close, not a single-bone acquisition.
-5 @20 actor:taylor-hebert-kl-122ac.knowledge.ward-geometry: flea-bottom-block-level-passive -> flea-bottom-block-level-with-patrol-rotation
+5 @20 actor:taylor-hebert-kl-122ac.knowledge.ward-geometry: flea-bottom-block-level-passive -> flea-bottom-block-level-day-count-complete

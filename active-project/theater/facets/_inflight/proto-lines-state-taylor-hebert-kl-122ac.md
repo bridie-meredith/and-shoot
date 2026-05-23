@@ -12,7 +12,7 @@ author: taylor-hebert-kl-122ac (character fork)
 6 taylor-hebert-kl-122ac passes the tallow-stall
 7 taylor-hebert-kl-122ac drops the pack [state:3]
 8 coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac
-9 taylor-hebert-kl-122ac holds the feet [state:4]
+9 taylor-hebert-kl-122ac holds the feet [state:9]
 
 10
 

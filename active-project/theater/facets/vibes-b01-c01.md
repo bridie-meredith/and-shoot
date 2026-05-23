@@ -88,7 +88,7 @@ author: showrunner
 
 8 @26 actor:wren-stitch-maker-flea-bottom-ward ++ silence: [named-observation-did-not-ask-the-question, the-follow-up-withheld-on-screen, first-confirmed-shape-of-the-mutual-silence] | licensed-by: feeling:1, proto:26
 
-9 @27 actor:taylor-hebert-kl-122ac ++ wren: [the-flies-report-landed, the-anomaly-confirmed-on-screen, holds-the-eyes-does-not-file] | licensed-by: feeling:3, proto:27
+9 @27 actor:taylor-hebert-kl-122ac ++ wren: [the-flies-report-landed, the-anomaly-confirmed-on-screen, holds-the-eyes-does-not-file] | licensed-by: proto:27
 
 # ─── Event E5 continued: episode-scope establishment ─────────────────────────────────────────────
 #

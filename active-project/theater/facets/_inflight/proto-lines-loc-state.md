@@ -28,16 +28,16 @@ aggregate_range: 1-29
 12 the needle crosses the mesh
 13 the insects fill the block
 14 the walls cool
-15 taylor-hebert-kl-122ac passes the well-step [loc-state:4]
+15 taylor-hebert-kl-122ac passes the well-step [loc-state:5]
 16 taylor-hebert-kl-122ac holds the hands
-17 the boots strike the cobbles [loc-state:5]
-18 the city-watch passes the hook
+17 the boots strike the cobbles
+18 the city-watch passes the hook [loc-state:6]
 19 taylor-hebert-kl-122ac holds the eyes
 20 coll-net-mender-flea-bottom folds the net
 
 21
 
-22 wren-stitch-maker-flea-bottom-ward enters the alley-mouth [loc-state:6]
+22 wren-stitch-maker-flea-bottom-ward enters the alley-mouth [loc-state:7]
 23 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
 24 taylor-hebert-kl-122ac lifts the eyes
 25 taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward
