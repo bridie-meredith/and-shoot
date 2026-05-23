@@ -24,11 +24,13 @@ card-signatures:
   - §Default Stance — observation-before-acting; the line is the trained habit operating verbally
   - §Stats / observation_habit — trained-close-attention-before-action; the counted-circuits report is the habit producing speech
   - cond-westerosi-witness-vocabulary § Specific witness vocabulary for pattern-recognition — "She knew before it happened / she saw it coming" register; Wren is the smallfolk witness this card defines (Flea Bottom child) and the line is in the lane the card licenses
-facet-licenses: [DEFERRED-TO-R2]
+facet-licenses:
+  - loc-state:7 @22 — alley-mouth entry; the immediate spatial antecedent of @23. The bone-22 alley-mouth entry stages the close-orientation from which @23's direct address (eye-contact distance, deliberate-not-incidental approach) becomes a coherent board-move; the loc-state @22 carry licenses Wren standing where her direct-address line lands.
 
-rejection notes:
-  B: rejected — "circuits" is in Taylor's analytic vocabulary, not Wren's. A ward who watches fabric does not say "circuits." Also drops the "I wasn't looking for you" rider, which is the card's load-bearing tell (the absence of the follow-up).
-  C: rejected — analyzes the gait pattern with adverbial precision ("slow on the second turn, quick on the third"). Over-precise; pushes Wren toward street-wise-precocity, which Hard Fence 1 (§Hard Fences) prohibits. She is sharp within the close-attention register, not analytical across gait kinematics.
+r2-seam-disposition / (b) @23 "the block" vs named-lane sample:
+  REFUSE-rewrite. Hold "the block."
+  Argument for rewrite: Wren's card §Dialogue samples uses named lanes ("Tickler's Lane," "the Muddy Way") not the generic "the block"; her card §Relationships / Flea Bottom streets names her geographic competence by specific lanes; sidecar's chosen draft loses the named-lane register-signature.
+  Argument against (adopted): (1) Bone-5 of the locked graph reads "taylor-hebert-kl-122ac circles the block" — the chapter's own locus-language for Taylor's pre-corner walk is "the block." Wren echoing this exact locus-noun is graph-fidelity: the line is in the lane the protoline already named. (2) The card-sample lanes ("Tickler's Lane," "the Muddy Way") are register-pattern claims demonstrating Wren's geographic vocabulary across her life; they are not chapter-canon. Loc-state-b01-c01.md does not name any specific Hook-district lane (closest is loc-state:6 @18 "the Hook's bend"); importing a card-sample lane into @23 would introduce an un-grounded toponym not staged in loc-state or bones. (3) Per smallfolk-card §Vocabulary "Geography is named by function, not by toponym" — "the block" IS the function-name form. The card-sample lanes are the exception (lanes large enough to have proper names within Wren's beat); "the block" within the corner-off-the-Hook scene-A geometry is precisely what Wren would name it as. (4) Substituting an arbitrary lane name would be R2-prose-improvement against locked-graph evidence; the sidecar rejects this. Verdict: keep "the block."
 
 ---
 
