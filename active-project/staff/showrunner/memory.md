@@ -667,49 +667,52 @@ books:
             - "wren: present, recurring, unnamed as significant"
             - "otto: offstage"
           target_chapter: b01c02
-        status: audited-r1-mechanical    # /and-facets Phase 5 cleared HARD=0 post-fixer cycle 1; Phase 5b audience-gate CAP-BURNED at cycle 3 with 10/12 facets passing 3-of-3; 2 facets short (sensory, memory) — do NOT advance to audited-r1
-        audit_path: active-project/staff/auditor/facets-final-audit-r3.md
-        audit_complete: true
-        audit_findings: 0    # HARD; ~15 SIGNAL carry-forward
-        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md
-        audience_gate_complete: true
-        audience_gate_cycles: 3
-        audience_gate_cap_burned: true
-        audience_gate_facets_passed: [location-state, interest-narrator, state-updates, feeling, metaphor, vibes, exposition, dialogue-coll, dialogue-taylor, dialogue-wren]
-        audience_gate_facets_failed: [sensory, memory]
-        bidirectional_loop: validated
+        # /and-write b01c01 redo 2026-05-23 — replaces prior 27-bone perceptual-posture set.
+        # New bone set authored under post-c02-postmortem requirements: event-coverage map,
+        # sensory-grounding quota (13 grounding bones), held-discipline rationales naming
+        # the opposing-force. Prior bones[].* fields cleared per redo-mode protocol;
+        # new bones populated under each scene below.
+        # Audit-trail: staff/screen-writer/b01c01-phase1-decomposition.md (canonical),
+        #              staff/screen-writer/b01c01-phase3-dramatist.md,
+        #              staff/screen-writer/b01c01-phase4-audience.md,
+        #              staff/screen-writer/b01c01-phase6-audience.md,
+        #              staff/auditor/write-b01c01-pass2.md,
+        #              staff/auditor/write-b01c01-pass5.md,
+        #              staff/auditor/write-b01c01-bone-gate.md.
+        status: bones-written    # reset per /and-write Phase 7 G1 rule: Phase 7 emit ALWAYS resets status to bones-written regardless of prior status; prior audited-r1-mechanical was on the now-replaced bone set
+        audit_path: active-project/staff/auditor/facets-final-audit-r3.md    # STALE — pertains to prior bone set; not valid against redo bones
+        audit_complete: true    # STALE — pertains to prior bone set
+        audit_findings: 0    # STALE — HARD count from prior run; ~15 SIGNAL carry-forward; not valid against redo bones
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md    # STALE — pertains to prior bone set
+        audience_gate_complete: true    # STALE — pertains to prior bone set
+        audience_gate_cycles: 3    # STALE — pertains to prior bone set
+        audience_gate_cap_burned: ~    # redo Phase 6 audience: 3-of-3 SUBSTANCE-FELT all scenes, no cap-burn; prior cap-burn (true) was on the replaced bone set's downstream facets
+        audience_gate_facets_passed: [location-state, interest-narrator, state-updates, feeling, metaphor, vibes, exposition, dialogue-coll, dialogue-taylor, dialogue-wren]    # STALE — pertains to prior bone set; facets not yet re-run against redo bones
+        audience_gate_facets_failed: [sensory, memory]    # STALE — pertains to prior bone set
+        bidirectional_loop: validated    # preserved; loop structure unchanged across redo
         facets_path: active-project/theater/facets/
-        round_1_complete: true
-        round_2_complete: true
-        orchestrator_critic_verdict: NOT-SUCCESSFUL   # cap-burn → NOT-SUCCESSFUL per critic card hot-button
+        round_1_complete: true    # STALE — pertains to prior bone set; facets must re-run against redo bones
+        round_2_complete: true    # STALE — pertains to prior bone set
+        orchestrator_critic_verdict: NOT-SUCCESSFUL    # STALE — pertains to prior bone set; prior cap-burn triggered NOT-SUCCESSFUL per critic card; not valid against redo chain
         bones_file: theater/bones/b01-c01.md
-        bones_count: 27    # 9 s01 + 10 s02 + 8 s03; max(flat_id) = 29 (deletions s01n03/s01n11/s03n09 leave gaps; blank time-skips at flat 10, 21)
-        substance_bone_gate_verdict: PASS    # Phase 6 mechanical PASS (HARD: 0, SIGNAL: 0) + audience SUBSTANCE-FELT 9/9 (3 personas × 3 scenes; no HARD votes)
-        stitched: true    # /and-stitch 2026-05-20 PASS — post rejected-items removal (mem:1 @9, sensory:3 @17) — clean draft active-project/draft/b01-c01.md + annotated b01-c01.annotated.md + render-log render-log-b01-c01.md
-        stitch_path: active-project/draft/b01-c01.md
-        stitch_render_log: active-project/staff/stitcher/render-log-b01-c01.md
-        stitch_stats:
-          words: 599
-          paragraphs: 14    # 2 preamble + 12 body
-          sentences: 22    # 2 preamble + 20 body
-          bones_rendered: 27
-          dialogue_utterances: 4
-          exposition_entries_rendered: 5
-          cut_clauses: 5
-          rewords: 1
-          reshows: 0
-          cut_bones: 0
-          faults_surfaced: 4    # 1 FAULT-EXPOSITION-AUDIT-MISS, 3 FAULT-AUDIT-MISS (Q9-hits on facet content; render-as-is; surfaced for upstream review)
-          fence_stretches_resolved: 1    # @24 "from the mesh" CUT-CLAUSE
+        bones_count: 27    # 9 s01 + 10 s02 + 8 s03; max(flat_id) = 29 (s01n02 + s02n02 deleted at Phase 4 trim; blank time-skips at flat 10, 21)
+        substance_bone_gate_verdict: PASS    # redo Phase 6 mechanical PASS (HARD: 0, SIGNAL: 0, auditor write-b01c01-bone-gate.md) + audience SUBSTANCE-FELT 3-of-3 × 3 scenes (cape-fic-reader + dark-fantasy-reader + worm-canon-pedant; cycle 1 of 1; no cap-burn); re-confirmed 2026-05-23 redo
+        stitched: ~    # stale-marked: prior draft/b01-c01.md was against the replaced bone set; must re-run /and-stitch after /and-facets
+        stitch_path: ~    # stale-marked per staleness-cascade; prior: active-project/draft/b01-c01.md
+        stitch_render_log: ~    # stale-marked; prior: active-project/staff/stitcher/render-log-b01-c01.md
+        stitch_stats: ~    # stale-marked; prior stats (words:599, paragraphs:14, sentences:22, bones_rendered:27) pertain to replaced bone set
         substance_delta_measured:
-          axes_moved: { knowledge: 0.53 }                  # scene-sum: s01 0.19 + s02 0.24 + s03 0.10 = 0.53 against chapter target 0.5 (within band)
-          axes_held_verified: [capability]                 # capability held at rank 3 across all 3 scenes; 7 of 27 bones carry capability in axes_held (4 of those are stillness-against-pressure holds discipline bones, 3 are ambient-drift held-by-rule). Discipline enacted, not just stated. Replaces prior `axes_moved: { capability: 0 }` bookkeeping under the 2026-05-21 axis split.
-          density_measured: ~     # facet/stitch-layer measurement; bone-density approximated within target band 0.6-0.9 by scene aggregation
-          felt_verdict: PASS-3-of-3   # cape-fic-reader + dark-fantasy-reader + worm-canon-pedant all SUBSTANCE-FELT across all three scene windows; one stitch-layer informational flag from worm-canon-pedant on s02n04 'fill' verb stability (avoid drift to active-class sweep at stitch)
-        # /and-write Phase 7 flat_id assignment (scene-internal walk in dramatist-shaped order; deletions left as slug-gaps; blank-numbered time-skips at flat 10, 21):
-        #   s01: n01→1, n02→2, n05→3, n04→4, n06→5, n07→6, n08→7, n09→8, n10→9   (n03, n11 deleted at Phase 4)
-        #   s02: n01→11, n02→12, n03→13, n06→14, n04→15, n05→16, n10→17, n07→18, n08→19, n09→20
-        #   s03: n01→22, n02→23, n03→24, n04→25, n05→26, n06→27, n07→28, n08→29   (n09 deleted at Phase 4)
+          axes_moved: { knowledge: 0.48 }    # redo scene-sum: s01 0.19 + s02 0.20 + s03 0.09 = 0.48 against chapter target 0.5 (within ±1 rank band); prior value was 0.53 from replaced bone set
+          axes_held_verified: [capability]    # capability held across all 3 scenes; 9 of 27 bones carry capability in axes_held (up from 7 in prior set — new set adds s02n07 mid-day hold and s03n01 assessment-initiate hold); opposing-force named in rationale on all 9 held bones
+          density_measured: ~    # facet/stitch-layer measurement; bone-density approximated within target band; populated at /and-stitch
+          felt_verdict: PASS-3-of-3    # redo Phase 6 audience: cape-fic-reader + dark-fantasy-reader + worm-canon-pedant all SUBSTANCE-FELT across all three scene windows; no informational flags; cycle 1 of 1
+        # /and-write Phase 7 flat_id assignment — redo 2026-05-23 (scene-internal walk in Phase-3-dramatist-shaped order; deleted slugs leave slug-gaps only, no flat_id gaps; blank-numbered time-skips at flat 10, 21):
+        #   s01 (9 bones): n01→1, (n02 deleted), n03→2, n04→3, n05→4, n07→5, n06→6, n08→7, n09→8, n10→9
+        #     SVOs: n01=pays-building-keeper, n03=crosses-drain-channel, n04=coll-lifts-eyes, n05=coll-works-net(held), n07=circles-block, n06=passes-tallow-stall, n08=drops-pack(chatter), n09=coll-speaks, n10=holds-feet(held)
+        #   s02 (10 bones): n01→11, (n02 deleted), n03→12, n04→13, n05→14, n06→15, n07→16, n08→17, n09→18, n10→19, n11→20
+        #     SVOs: n01=threads-needle(chatter), n03=needle-crosses-mesh, n04=insects-fill-block, n05=walls-cool, n06=passes-well-step, n07=holds-hands(held), n08=boots-strike-cobbles, n09=city-watch-passes-hook, n10=holds-eyes(held), n11=coll-folds-net(chatter)
+        #   s03 (8 bones): n01→22, n02→23, n03→24, n04→25, n05→26, n06→27, n07→28, n08→29
+        #     SVOs: n01=wren-enters-alley-mouth, n02=wren-speaks(first-q), n03=taylor-lifts-eyes(held-assessment-runs), n04=taylor-speaks(deflection), n05=wren-speaks(flies-not-on-taylor), n06=taylor-holds-eyes(rule-catches), n07=wren-crosses-street(chatter), n08=taylor-lifts-needle(held-closing)
         pov_narrator: taylor-hebert-kl-122ac    # series.structure.pov = single → inherited from protagonist
         dramatic_shape: hinge                    # chapter 1 of 18 in tragedy; load-bearing baseline placement against which all subsequent collisions are audible; "rising" would imply tonal escalation that does not occur here (no antagonist pressure, no collision); reviewed and accepted by dramatist Phase 5
         goal: "the operating rule in its intact form, the ward it will fail to protect, and the child who will pay the price of its failure."   # audience-facing chapter purpose; bones-file header source for /and-write Phase 7
@@ -729,69 +732,104 @@ books:
               stakes_axis: capability   # held axis (axes_held) — refusal to deploy insect-sense above passive is the load-bearing discipline; capability stays at rank 3 by choice. Bone-gate Phase 6 validates against axes_in_motion ∪ axes_held.
             bones:
               # Phase 1 scene-decomposition + Phase 2 fixer (s01n04 'faces' → 'lifts the eyes') +
-              # Phase 3 dramatist (n05↔n04 cause-before-effect swap) + Phase 3 bridge n11 (yard-exit).
-              # Order: n01, n02, n03, n11, n05, n04, n06, n07, n08, n09, n10.
+              # Phase 3 dramatist reorder (n07 before n06: circuit precedes in-circuit landmark) +
+              # Phase 4 audience trim (n02 deleted 2-of-3: cape-fic-reader + dark-fantasy-reader).
+              # Canonical order per Phase 1 deliverable: n01, (n02 deleted), n03, n04, n05, n07, n06, n08, n09, n10.
+              # flat_ids: 1, 2, 3, 4, 5, 6, 7, 8, 9. Time-skip blank at flat 10.
               - slug: b01c01s01n01
-                svo: "taylor-hebert-kl-122ac enters the corner-room"
-                substance_delta:
-                  axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.02, notes: "building threshold registered; room geometry available as first ward layer" }
-                  cost_ledger_anchor: ~
-              - slug: b01c01s01n02
+                flat_id: 1
                 svo: "taylor-hebert-kl-122ac pays the building-keeper"
+                shape: moving
                 substance_delta:
                   axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.03, notes: "transaction-as-settlement enacted; anonymous entry purchased; operating rule confirmed viable at this threshold" }
-                  cost_ledger_anchor: ~
-              # b01c01s01n03 + b01c01s01n11 deleted at Phase 4 audience trim
-              # (2-of-3 vote: cape-fic-reader + dark-fantasy-reader).
-              # n03 (keeper pockets copper-stars): payment-receipt echo; n02 carries the transaction sufficiently.
-              # n11 (Taylor enters yard, dramatist bridge): collapses into n05 (crosses the yard) at prose level.
-              # Slugs preserved in skip; no renumbering. Aggregate s01 knowledge now 0.19 (was 0.21; within 0.15-0.25 PASS band).
-              - slug: b01c01s01n05
-                svo: "taylor-hebert-kl-122ac crosses the yard"
-                substance_delta:
-                  axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.02, notes: "yard geometry traversed; block layout legible at ground level" }
-                  cost_ledger_anchor: ~
-              - slug: b01c01s01n04
-                svo: "coll-net-mender-flea-bottom lifts the eyes"
-                substance_delta:
-                  axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.04, notes: "opposing-force bone — surveillance response: Coll's eye-lift registers Taylor's appearance in the open yard; block-level witness who does not name what he sees; range-of-observation one street; proximity-as-cover without arrangement visible" }
-                  cost_ledger_anchor: ~
-              - slug: b01c01s01n06
-                svo: "coll-net-mender-flea-bottom works the net"
-                substance_delta:
-                  axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.02, notes: "opposing-force bone (secondary) — feigned-indifference: Coll returns to work while still watching; needle-criterion signaled; lack of questions is Flea Bottom courtesy of not naming what you see in a neighbor's work; proximity-as-cover solidified" }
-                  cost_ledger_anchor: ~
-              - slug: b01c01s01n07
-                svo: "taylor-hebert-kl-122ac circles the block"
-                substance_delta:
-                  axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.04, notes: "ward perimeter established at ground level: stone, tallow-smoke, shortage-calendar rhythm; the Hook's feast-and-levy cadence legible from a single circuit" }
-                  cost_ledger_anchor: ~
-              - slug: b01c01s01n08
-                svo: "taylor-hebert-kl-122ac drops the pack"
-                substance_delta:
-                  axis_moves: []                       # chatter bone — pure transition / occupation marker
+                    - { axis: knowledge, direction: up, magnitude: 0.03, notes: "copper-star transaction enacted; anonymous entry purchased; operating rule confirmed viable at street threshold; currency names the place and the class register" }
                   axes_held: []
                   cost_ledger_anchor: ~
-                  # chatter-rationale: physical-anchor — settling enacted; pack-down marks occupation of space without claim; stillness marker before scene-close hinge. Density-cap permits chatter at this scene position.
-              - slug: b01c01s01n09
-                svo: "coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac"
+                  # grounding bone — copper stars name the Flea Bottom currency register; transaction IS the method; serves event-01
+              # b01c01s01n02 deleted at Phase 4 audience trim
+              # (2-of-3 vote: cape-fic-reader + dark-fantasy-reader).
+              # Reason: chatter beat echoes n01's payment without adding structural function;
+              # n01 (taylor pays building-keeper) carries the currency-grounding sufficiently.
+              # Slug preserved in skip; no flat_id assigned. Aggregate s01 knowledge unchanged at 0.19.
+              - slug: b01c01s01n03
+                flat_id: 2
+                svo: "taylor-hebert-kl-122ac crosses the drain-channel"
+                shape: moving
                 substance_delta:
                   axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.02, notes: "speech bone — minimal social surface established via needle-criterion exchange; no name given, no claim made, no vouching initiated; knowledge gain is the confirmed social physics" }
+                    - { axis: knowledge, direction: up, magnitude: 0.02, notes: "yard geometry traversed; the drain-channel is the first Flea Bottom surface-feature — mud, stone, water-cut; block layout legible at ground level" }
+                  axes_held: []
                   cost_ledger_anchor: ~
-              - slug: b01c01s01n10
-                svo: "taylor-hebert-kl-122ac holds the feet"
+                  # grounding bone — drain-channel is a load-bearing image from the chunk; names a specific Flea Bottom physical feature; serves event-02
+              - slug: b01c01s01n04
+                flat_id: 3
+                svo: "coll-net-mender-flea-bottom lifts the eyes"
+                shape: moving
+                substance_delta:
+                  axis_moves:
+                    - { axis: knowledge, direction: up, magnitude: 0.04, notes: "opposing-force bone — surveillance response; Coll's eye-lift registers Taylor's appearance in the open yard; block-level witness who does not name what he sees; range-of-observation one street; proximity-as-cover without arrangement becomes visible here" }
+                  axes_held: []
+                  cost_ledger_anchor: ~
+                  # the eye-lift is an EVENT proving the vouching-physics; serves event-03
+              - slug: b01c01s01n05
+                flat_id: 4
+                svo: "coll-net-mender-flea-bottom works the net"
+                shape: held
                 substance_delta:
                   axis_moves: []
                   axes_held:
-                    - { axis: capability, rationale: "stillness-against-pressure — licensed holds form on body part; insect-sense runs at passive threshold; capability held at rank 3 by discipline enacted, not just stated; the load-bearing dormancy bone — satisfies scene's stakes_axis: capability via axes_held" }
+                    - { axis: capability, rationale: "Coll's feigned-indifference is the opposing-force enacted: surveillance-without-naming; his return to work holds the social register at the Flea Bottom courtesy level — does not name what he sees in a neighbor's work; needle-criterion signaled by action" }
                   cost_ledger_anchor: ~
+                  # held bone for social-cover physics; the net-work is Coll's capability held at courtesy-not-testimony; serves event-04
+              - slug: b01c01s01n07
+                flat_id: 5
+                svo: "taylor-hebert-kl-122ac circles the block"
+                shape: moving
+                substance_delta:
+                  axis_moves:
+                    - { axis: knowledge, direction: up, magnitude: 0.05, notes: "ward inventory: stone, feast-shortage-levy rhythm, who-owes-the-well-step, which alleys feed which courts; ward geometry established at ground level; the circuit is the method — presence before deployment" }
+                  axes_held: []
+                  cost_ledger_anchor: ~
+                  # the block-circuit is the chapter's establishing physical EVENT; serves event-05; Taylor CHOOSING to read by foot, not by insect-sense. Phase 3 dramatist reorder: n07 before n06 — circuit precedes in-circuit landmark
+              - slug: b01c01s01n06
+                flat_id: 6
+                svo: "taylor-hebert-kl-122ac passes the tallow-stall"
+                shape: moving
+                substance_delta:
+                  axis_moves:
+                    - { axis: knowledge, direction: up, magnitude: 0.02, notes: "ward perimeter: tallow-stall names the block's sensory landscape; smoke-register of the place enters the ledger passively" }
+                  axes_held: []
+                  cost_ledger_anchor: ~
+                  # grounding bone — tallow-stall is a Flea Bottom place-locus; serves event-05; gives the facet layer a concrete olfactory anchor. Phase 3 dramatist reorder: n06 after n07 — the stall is a specific olfactory yield of the circuit
+              - slug: b01c01s01n08
+                flat_id: 7
+                svo: "taylor-hebert-kl-122ac drops the pack"
+                shape: chatter
+                substance_delta:
+                  axis_moves: []
+                  axes_held: []
+                  cost_ledger_anchor: "knowledge-gain-unanchored-baseline"
+                  # settling enacted; physical-anchor beat; pack-down marks occupation of space without claim; chatter pays the settling-in transition that enables n09
+              - slug: b01c01s01n09
+                flat_id: 8
+                svo: "coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac"
+                shape: moving
+                substance_delta:
+                  axis_moves:
+                    - { axis: knowledge, direction: up, magnitude: 0.03, notes: "speech bone — needle-criterion exchange; no name given, no claim made, no vouching initiated; the knowledge gain is the confirmed social physics: proximity-as-cover is available without arrangement" }
+                  axes_held: []
+                  cost_ledger_anchor: ~
+                  # serves event-07; Coll's single question is the entire social-cover mechanism made audible
+              - slug: b01c01s01n10
+                flat_id: 9
+                svo: "taylor-hebert-kl-122ac holds the feet"
+                shape: held
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - { axis: capability, rationale: "stillness-against-pressure — insect-sense runs at the passive threshold; the ward is legible through it; capability available and held at rank 3 by discipline enacted; this is the CHOOSING bone — Taylor declines to do what Khepri-Taylor would do; the inverted establishing fact ('no one here has a power that requires containing') is the context this bone enacts: she attends to the absence, and the attending is the hold; opposing-force: the capability is awake and the information is available" }
+                  cost_ledger_anchor: ~
+                  # load-bearing held bone; the operating rule's first physical enactment; serves event-08; opposing-force satisfied by axes_held rationale
 
           - slug: b01c01s02
             chunk: |
@@ -807,82 +845,118 @@ books:
               opposing_force: "the capability is available and the ward's geometry is legible; the rule is the only thing holding the gap open"
               stakes_axis: capability   # held axis (axes_held); the refusal to move is the event; capability stays at rank 3 by choice
             bones:
-              # Phase 1 scene-decomposition + Phase 2 fixer (n02 'taut' strip, n06 'through the mesh' → 'the needle crosses the mesh',
-              # n09 'aside' → 'folds') + Phase 3 dramatist reorder (hand-work / ambient drift / watch-pressure grouped) +
-              # Phase 3 bridge n10 (boots-strike-cobbles, watch approach signal).
-              # Order: n01, n02, n03, n06, n04, n05, n10, n07, n08, n09.
-              # Phase 4 audience flag (1-of-3 advisory; not auto-deleted): cape-fic-reader and dark-fantasy-reader
-              # both noted the s02n01+n02 rhythm-pair as borderline-redundant, but disagreed on which half to drop.
-              # ORCHESTRATOR DECISION: keep both — they establish the working-day rhythm and Taylor-beside-Coll co-presence.
-              # Downstream stitcher should consider compressing or interleaving at render time if the prose reads bumpy.
+              # Phase 1 scene-decomposition + Phase 2 fixer (n07 'holds the needle' → 'holds the hands'; licensed body-part-stillness) +
+              # Phase 3 dramatist reorder (hand-work n01/n03 / ambient-drift n04/n05/n06 / watch-pressure n08/n09/n10 / day-close n11) +
+              # Phase 3 bridge n08 (boots-strike-cobbles, watch approach signal).
+              # Phase 4 audience trim: n02 deleted 3-of-3 (all reviewers: cape-fic-reader + dark-fantasy-reader + worm-canon-pedant).
+              # Canonical order per Phase 1 deliverable: n01, (n02 deleted), n03, n04, n05, n06, n07, n08, n09, n10, n11.
+              # flat_ids: 11, 12, 13, 14, 15, 16, 17, 18, 19, 20. Time-skip blank at flat 21.
               - slug: b01c01s02n01
-                svo: "taylor-hebert-kl-122ac lifts the basket"
-                substance_delta:
-                  axis_moves: []                       # chatter bone — working-day rhythm opener
-                  axes_held: []
-                  cost_ledger_anchor: ~
-                  # chatter-rationale: posture-act opening beat; establishes the working-day rhythm underway (avoids 'threads the needle' collision with s01n06-equivalent label)
-              - slug: b01c01s02n02
-                svo: "coll-net-mender-flea-bottom pulls the net"
-                substance_delta:
-                  axis_moves: []                       # chatter bone — co-presence rhythm anchor
-                  axes_held: []
-                  cost_ledger_anchor: ~
-                  # chatter-rationale: rhythm-anchor; Coll's physical presence beside Taylor; social-cover-by-proximity established in s01 continues; sets the repetitive working beat
-              - slug: b01c01s02n03
+                flat_id: 11
                 svo: "taylor-hebert-kl-122ac threads the needle"
+                shape: chatter
                 substance_delta:
-                  axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.03, notes: "first passive read: hands find the rhythm; the accounting-mind opens; ward-pattern orientation begins; pre-arrangement; unanchored" }
-                  cost_ledger_anchor: ~
-              - slug: b01c01s02n06
+                  axis_moves: []
+                  axes_held: []
+                  cost_ledger_anchor: "knowledge-gain-unanchored-baseline"
+                  # working-day rhythm opener; the needle is a grounding object — names the physical tool of the cover; chatter pays the read that follows
+              # b01c01s02n02 deleted at Phase 4 audience trim
+              # (3-of-3 vote: cape-fic-reader + dark-fantasy-reader + worm-canon-pedant).
+              # Reason: redundant — Coll-at-the-net co-presence is sufficiently carried by s01n05 (held)
+              # and s02n11 (folds the net, day-close). Removing this beat tightens the s02 working-day
+              # rhythm onto n01+n03 (taylor threads / needle crosses mesh) without losing Coll proximity.
+              # Slug preserved in skip; no flat_id assigned. Aggregate s02 knowledge unchanged at 0.20.
+              - slug: b01c01s02n03
+                flat_id: 12
                 svo: "the needle crosses the mesh"
+                shape: moving
                 substance_delta:
                   axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.03, notes: "working rhythm continues; accounting-mind's background process runs against the net-work; movement corridors accumulate passively through the day's pass; pre-arrangement; unanchored" }
+                    - { axis: knowledge, direction: up, magnitude: 0.02, notes: "the working rhythm opens the accounting-mind's background process; hands-find-rhythm is the enabling condition for the passive read to run; ward-pattern orientation begins" }
+                  axes_held: []
                   cost_ledger_anchor: ~
+                  # grounding bone — the mesh is the physical surface where the scene is set; names the hand-work object; serves event-02
               - slug: b01c01s02n04
+                flat_id: 13
                 svo: "the insects fill the block"
+                shape: moving
                 substance_delta:
                   axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.05, notes: "block-level density registered passively; ambient drift at rank 3 ceiling; ward-pattern orientation — population density across the Hook; pre-arrangement; unanchored" }
+                    - { axis: knowledge, direction: up, magnitude: 0.05, notes: "read content: population density across the Hook registered passively — every body within the block legible; density map enters the ledger; pre-arrangement; unanchored" }
                   axes_held:
-                    - { axis: capability, rationale: "ambient-drift verb 'fill'; passive sense at rank 3; capability available and visible; the rule is the only thing holding it at 3; signal-002 mitigation — not active sweep" }
+                    - { axis: capability, rationale: "ambient-drift verb 'fill' signals passive not active; the read content is available; deployment would require one further act Taylor does not take; capability held at the observation-only threshold; this bone is the opposing-force made visible: the information is here and the rule is the only thing holding it at 3" }
                   cost_ledger_anchor: ~
+                  # grounding bone — the block is named; the insects in the walls are a Flea Bottom physical particular; serves event-03
               - slug: b01c01s02n05
+                flat_id: 14
                 svo: "the walls cool"
+                shape: moving
                 substance_delta:
                   axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.04, notes: "temperature gradient registered passively; occupation pattern read — which walls are peopled, which are empty; movement-corridor inference begins; pre-arrangement; unanchored" }
+                    - { axis: knowledge, direction: up, magnitude: 0.04, notes: "read content: temperature gradient registered — occupation pattern read; which walls are peopled, which are empty; movement-corridor inference becomes possible" }
                   axes_held:
-                    - { axis: capability, rationale: "ambient-drift verb 'cool'; ward legibility in plain view; capability could route from this; rule holds it at observation only; opposing-force visible" }
+                    - { axis: capability, rationale: "the temperature read is available for routing; the rule holds it at observation; opposing-force: the walls' geometry is legible for deployment; Taylor does not deploy" }
                   cost_ledger_anchor: ~
-              - slug: b01c01s02n10
-                svo: "the boots strike the cobbles"
+                  # grounding bone — 'the walls cool' is a Flea Bottom physical sensory particular (stone, temperature, occupation); serves event-04
+              - slug: b01c01s02n06
+                flat_id: 15
+                svo: "taylor-hebert-kl-122ac passes the well-step"
+                shape: moving
                 substance_delta:
                   axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.01, notes: "Phase 3 bridge (transition-002) — approach registers as pre-watch-pressure cue; footfall on stone establishes watch as approaching event; gives n07 the weight of an event rather than ambient continuation" }
+                    - { axis: knowledge, direction: up, magnitude: 0.03, notes: "movement-corridor content: the well-step is a Flea Bottom social locus — who owes it, who avoids it, which route the smallfolk use vs. which gaps they leave; the circuit-read reaches the movement-corridor layer" }
+                  axes_held: []
                   cost_ledger_anchor: ~
+                  # grounding bone — the well-step is a named Flea Bottom place-locus; serves event-05; gives the facet layer a spatial anchor for movement-corridor content
               - slug: b01c01s02n07
-                svo: "the city-watch passes the hook"
-                substance_delta:
-                  axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.05, notes: "watch patrol rotation registered; spatial position of watch relative to the Hook confirmed; ward-pattern orientation — patrol geometry known; pre-arrangement; unanchored" }
-                  cost_ledger_anchor: ~
-              - slug: b01c01s02n08
-                svo: "taylor-hebert-kl-122ac holds the eyes"
+                flat_id: 16
+                svo: "taylor-hebert-kl-122ac holds the hands"
+                shape: held
                 substance_delta:
                   axis_moves: []
                   axes_held:
-                    - { axis: capability, rationale: "discipline bone; capability at its ceiling, held by the rule Taylor authored; the watch passing is the pressure; the body is the instrument of the prohibition; the load-bearing dormancy beat of the scene — satisfies scene's stakes_axis: capability via axes_held" }
+                    - { axis: capability, rationale: "discipline bone mid-day: hands-held-at-work is the physical enactment of the prohibition — hands at the needle, read running through the walls, rule holding the gap open between available-capability and deployed-capability; the hold is on the body-part instrument that would route bodies if deployed (Khepri's hands moved chess-piece smallfolk); hands held to the needle-work is the clearest-form discipline the chunk names; the hands carry the cover-work and the hold simultaneously" }
                   cost_ledger_anchor: ~
-                  # NOTE 2026-05-21: prior shape had a second 'knowledge null/0' entry alongside capability null. Dropped under the axis-bookkeeping split — knowledge does not move and is not held by discipline at this bone (no information enters; no information is refused). The capability hold carries the bone alone.
-              - slug: b01c01s02n09
-                svo: "coll-net-mender-flea-bottom folds the net"
+                  # body-part-stillness held bone (hands plural licensed per schemas/bones.schema.md, matching s01n10 'holds the feet' precedent); serves event-02 (background-read / prohibition dynamic); Pass 2 fixer: SVO changed from 'holds the needle' (unlicensed) to 'holds the hands' (licensed body-part-stillness)
+              - slug: b01c01s02n08
+                flat_id: 17
+                svo: "the boots strike the cobbles"
+                shape: moving
                 substance_delta:
                   axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.03, notes: "end-of-day rhythm marker; working day closes; Taylor's passive register completes — block-level density maps, movement corridors, watch rotation all logged as knowledge gained, cost zero, tool unused; pre-arrangement; unanchored" }
+                    - { axis: knowledge, direction: up, magnitude: 0.02, notes: "watch approach: footfall on stone establishes the patrol as an incoming physical event; the patrol's sound is the first signal — boots on cobbles is auditory-grounding for the watch sequence" }
+                  axes_held: []
                   cost_ledger_anchor: ~
+                  # grounding bone — boots on cobbles names a Flea Bottom sensory particular (stone surface, sound); serves event-06; stages the watch as a physical event, not ambient continuation
+              - slug: b01c01s02n09
+                flat_id: 18
+                svo: "the city-watch passes the hook"
+                shape: moving
+                substance_delta:
+                  axis_moves:
+                    - { axis: knowledge, direction: up, magnitude: 0.04, notes: "watch patrol rotation confirmed: spatial position relative to the Hook, patrol line through the bend, rotation interval; patrol geometry enters the passive ledger; ward-pattern orientation — patrol knowledge known" }
+                  axes_held: []
+                  cost_ledger_anchor: ~
+                  # serves event-06; the watch pass is a named physical event — four bodies in gold cloaks on a known rotation; must read as the pressure moment that makes n10 load-bearing
+              - slug: b01c01s02n10
+                flat_id: 19
+                svo: "taylor-hebert-kl-122ac holds the eyes"
+                shape: held
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - { axis: capability, rationale: "discipline bone at the pressure moment: the watch is near, the insect-sense could route the bodies, the rule holds the hand still; eye-direction is the pressure surface — Taylor holds the eyes against the trained pull toward completing the route-map; the watch passing is the opposing force, the hold is the response; this is the scene's load-bearing discipline beat; satisfies scene's stakes_axis: capability via axes_held; opposing-force visible in n09 (the watch is the threat to notice)" }
+                  cost_ledger_anchor: ~
+                  # serves event-07; the hold-during-watch-pass is the scene's event — without this bone being staged correctly, the discipline is invisible
+              - slug: b01c01s02n11
+                flat_id: 20
+                svo: "coll-net-mender-flea-bottom folds the net"
+                shape: chatter
+                substance_delta:
+                  axis_moves: []
+                  axes_held: []
+                  cost_ledger_anchor: "knowledge-gain-unanchored-baseline"
+                  # end-of-day rhythm marker; working day closes; the ledger entry: knowledge gained, cost zero, tool unused — made implicit by the fold; chatter pays the day-close transition
 
           - slug: b01c01s03
             chunk: |
@@ -900,67 +974,94 @@ books:
               stakes_axis: knowledge   # in-motion axis; the constrained delta IS the load-bearing event (refusal-to-complete-assessment caps the knowledge gain). Capability-as-held is the secondary axis that proves the prohibition is functioning.
             bones:
               # Phase 1 scene-decomposition + Phase 2 fixer (s03n03 'faces' → 'lifts the eyes') +
-              # Phase 3 dramatist (order unchanged for s03) + Phase 3 bridge n09 (Wren proximity-establishment).
-              # Order: n01, n09, n02, n03, n04, n05, n06, n07, n08.
+              # Phase 3 dramatist (order unchanged for s03; n09 bridge deleted at Phase 4).
+              # Phase 4 audience trim: n09 deleted 2-of-3 (cape-fic-reader + dark-fantasy-reader):
+              # Dramatist bridge n09 (Wren approaches Taylor) absorbed by speak bone n02; dark-fantasy-reader
+              # flagged sentimental-warming risk on the cost-bearer pre-pricing.
+              # Canonical order per Phase 1 deliverable: n01, n02, n03, n04, n05, n06, n07, n08.
+              # flat_ids: 22, 23, 24, 25, 26, 27, 28, 29.
               - slug: b01c01s03n01
-                svo: "wren-stitch-maker-flea-bottom-ward enters the street"
+                flat_id: 22
+                svo: "wren-stitch-maker-flea-bottom-ward enters the alley-mouth"
+                shape: moving
                 substance_delta:
                   axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.02, notes: "Wren's face registers in Taylor's field — proximity initiates face-entry, below the threshold of model-entry" }
+                    - { axis: knowledge, direction: up, magnitude: 0.02, notes: "Wren's face registers in Taylor's field at the alley-mouth; proximity initiates face-entry at street-corner granularity; below the threshold of model-entry" }
                   axes_held:
-                    - { axis: capability, rationale: "assessment-pattern initiates on contact; rule catches before deployment; capability rank unchanged" }
+                    - { axis: capability, rationale: "assessment-pattern initiates on contact; the trained reading fires automatically on new-face; rule present but not yet engaged; capability rank unchanged" }
                   cost_ledger_anchor: ~
+                  # grounding bone — the alley-mouth is a specific Flea Bottom passage-locus; serves event-01; the entry is a physical event, not an ambient appearance
               # b01c01s03n09 deleted at Phase 4 audience trim (2-of-3 vote: cape-fic-reader + dark-fantasy-reader).
-              # Dramatist bridge n09 (Wren approaches Taylor): absorbed by the speak bone n02 that follows;
-              # dark-fantasy-reader flagged sentimental-warming risk on the cost-bearer pre-pricing.
-              # Slug preserved in skip; aggregate s03 knowledge unchanged at 0.10.
+              # Slug preserved in skip; no flat_id assigned. Aggregate s03 knowledge unchanged at 0.09.
               - slug: b01c01s03n02
+                flat_id: 23
                 svo: "wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac"
+                shape: moving
                 substance_delta:
                   axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.03, notes: "Wren's questions confirm her observer-radius and distributed-attention habit; Taylor receives ward-social-geometry data at face level" }
-                  cost_ledger_anchor: ~
-              - slug: b01c01s03n03
-                svo: "taylor-hebert-kl-122ac lifts the eyes"
-                substance_delta:
-                  axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.01, notes: "physical orientation deepens face-recognition; proximity-dwell registers Wren's position in ward geometry at street-corner granularity" }
-                  axes_held:
-                    - { axis: capability, rationale: "opposing-force bone — trained pattern-reading initiates full assessment automatically on direct orientation (node-id, observation-radius, trust-network map); operating rule catches before close; capability not deployed; assessment-starting is proof-of-function, catch is rule working as intended" }
-                  cost_ledger_anchor: ~
-              - slug: b01c01s03n04
-                svo: "taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward"
-                substance_delta:
-                  axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.02, notes: "Taylor's reply extends face-registration — Wren's approximate age, ward-affiliation (seamstress-ward, two buildings over) enter the face-layer; no model entry" }
-                  cost_ledger_anchor: ~
-              - slug: b01c01s03n05
-                svo: "wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac"
-                substance_delta:
-                  axis_moves:
-                    - { axis: knowledge, direction: up, magnitude: 0.02, notes: "second round of questions opens one additional layer of ward social geometry — Wren's questions map what the adults in this ward pretend not to see; implicit information about the ward's unspoken social ledger" }
-                  cost_ledger_anchor: ~
-              - slug: b01c01s03n06
-                svo: "taylor-hebert-kl-122ac holds the eyes"
-                substance_delta:
-                  axis_moves: []
-                  axes_held:
-                    - { axis: capability, rationale: "stillness-against-pressure: eye-orientation is the pressure surface; assessment-run is caught mid-cycle by the operating rule; Taylor holds gaze-direction fixed against trained pull toward completing the node-map; rule working as intended; the hold prevents rather than produces information-entry — load-bearing held bone for the scene's structural collision" }
-                  cost_ledger_anchor: ~
-              - slug: b01c01s03n07
-                svo: "wren-stitch-maker-flea-bottom-ward crosses the street"
-                substance_delta:
-                  axis_moves: []                       # chatter bone — cost-bearer-placement beat
+                    - { axis: knowledge, direction: up, magnitude: 0.03, notes: "Wren's first question ('You walked the block three times this morning') confirms her observation-radius — she has been counting Taylor's circuits; the distributed social accounting is demonstrated, not labelled; Taylor receives face-level data: this child watches the adults" }
                   axes_held: []
                   cost_ledger_anchor: ~
-                  # chatter-rationale: Wren's departure; no further face-data registered; exit is the cost-bearer-placement beat — Wren leaves the scene un-named-as-significant, recurring in ward geometry from this point forward without having been filed as a node
-              - slug: b01c01s03n08
-                svo: "taylor-hebert-kl-122ac lifts the needle"
+                  # serves event-02; Wren's question is the cost-bearer's first act of seeing — she catalogues Taylor's movement pattern; this is the capability that will matter later
+              - slug: b01c01s03n03
+                flat_id: 24
+                svo: "taylor-hebert-kl-122ac lifts the eyes"
+                shape: held
                 substance_delta:
                   axis_moves: []
                   axes_held:
-                    - { axis: capability, rationale: "closing bone; Taylor returns to physical task — assessment closed, ledger not opened, Wren not filed; brevity of return-to-task is the tell: child, present, noted, not filed; operating rule held; gap between this moment and the future ledger-pricing of Wren begins here" }
+                    - { axis: capability, rationale: "the assessment is the opposing-force enacted internally: trained pattern-reading initiates on direct orientation — node-id, observation-radius, trust-network map, access-point all fire automatically; the rule catches mid-cycle; Taylor holds the eye-lift against the trained pull toward completing the assessment; the hold IS the discipline; the assessment starting proves the rule is under load; opposing-force for this scene is Taylor's own trained reading" }
                   cost_ledger_anchor: ~
+                  # the held bone where the assessment runs and is caught — the scene's structural collision; serves event-03
+              - slug: b01c01s03n04
+                flat_id: 25
+                svo: "taylor-hebert-kl-122ac speaks to wren-stitch-maker-flea-bottom-ward"
+                shape: moving
+                substance_delta:
+                  axis_moves:
+                    - { axis: knowledge, direction: up, magnitude: 0.01, notes: "Taylor's deflection ('There's no work here. Go on.') is a speech-act that confirms: no name given, no claim made, no information exchanged; the deflection is the operating rule's surface response; knowledge tick is the confirmation that the rule is present and functioning at verbal level" }
+                  axes_held: []
+                  cost_ledger_anchor: ~
+                  # serves event-04; the deflection is the rule's surface action — not warmth, not hostility, the minimum-surface response
+              - slug: b01c01s03n05
+                flat_id: 26
+                svo: "wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac"
+                shape: moving
+                substance_delta:
+                  axis_moves:
+                    - { axis: knowledge, direction: up, magnitude: 0.03, notes: "Wren's second question names the meat-stall and the flies — Wren observes that the insects are not on Taylor; this is the cost-bearer's seeing: Wren sees clearly what the adults pretend not to see; the ward social geometry opens one layer deeper — this child's observation-radius includes the abnormal; the flies-not-on-Taylor detail is the chapter's payload observation" }
+                  axes_held: []
+                  cost_ledger_anchor: ~
+                  # serves event-05 and the meat-stall grounding; Wren's second question is the most consequential speech act in the chapter — it names what Wren can see, which is why she will pay; the meat-stall is named as a Flea Bottom locus
+              - slug: b01c01s03n06
+                flat_id: 27
+                svo: "taylor-hebert-kl-122ac holds the eyes"
+                shape: held
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - { axis: capability, rationale: "load-bearing held bone: the rule catches the assessment before completion; Taylor holds gaze-direction fixed against the trained pull toward completing the node-map; capability is not deployed; assessment-run is interrupted by the operating rule; Wren is not filed as a node; the hold prevents rather than produces information-entry; this is the scene's structural collision resolved — rule catches assessment, rule wins, Wren remains un-filed" }
+                  cost_ledger_anchor: ~
+                  # serves event-06; the second holds-the-eyes in this scene is distinct from n03 — n03 is the assessment initiating, n06 is the rule catching and closing it
+              - slug: b01c01s03n07
+                flat_id: 28
+                svo: "wren-stitch-maker-flea-bottom-ward crosses the street"
+                shape: chatter
+                substance_delta:
+                  axis_moves: []
+                  axes_held: []
+                  cost_ledger_anchor: "knowledge-gain-unanchored-baseline"
+                  # grounding bone — 'crosses the street' is a physical action in the Flea Bottom street-space; serves event-07; Wren's departure is the cost-bearer-placement beat: she leaves un-named-as-significant, recurring in ward geometry without being filed; chatter pays the chapter's final accounting
+              - slug: b01c01s03n08
+                flat_id: 29
+                svo: "taylor-hebert-kl-122ac lifts the needle"
+                shape: held
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - { axis: capability, rationale: "closing bone — the return to physical task is the operating rule's verdict on what just happened: the assessment is closed, the ledger is not opened, Wren is not filed; brevity of return-to-task is the tell (child, present, noted, not filed); the gap between this moment and the future ledger-pricing of Wren begins here; the held bone enacts the rule's persistence — the needle-lift is not relief, it is the rule continuing to hold" }
+                  cost_ledger_anchor: ~
+                  # serves event-08; the closing bone must be a RETURN not a flat resumption — it is the rule's verdict, not a shrug; the held form makes this explicit
         # Prior /and-write run history (cleared at redo 2026-05-19; preserved for historical reference):
         #   - SIGNAL-003 (s01 social-physics knowledge-acquisition implicit): RESOLVED at /and-write Phase 1 — b01c01s01n03 (coll speaks to taylor) was the explicit vouching-knowledge anchor.
         #   - SIGNAL-002 (Khepri naming smoothing for s03 chunk): RESOLVED at /and-write — no bone referenced Khepri; interiority deferred to facets.
