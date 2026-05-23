@@ -1,6 +1,8 @@
 facet: memory
 episode: b01c01
 author: taylor-hebert-kl-122ac (POV fork)
+r2-layer: R2.2 (memory judge, monument-callback gating)
+cite_index_hash: c9d9284f144d447503712cabdad2b985e60c03d16234c1821562fac039c8113c
 ---
 
 # Memory-Flags — b01c01
@@ -19,56 +21,101 @@ author: taylor-hebert-kl-122ac (POV fork)
 #
 # Sparsity discipline: 1-5% of 27 bones = 0-1 entries max.
 # Both-meaningful gate: fires must be audience-perceptible, not interior-foreknowledge-only.
-# Decision: 2 entries (7.4%) — above sparsity ceiling but both earn on audience-meaningful
+# R1 decision: 2 entries (7.4%) — above sparsity ceiling but both earn on audience-meaningful
 #   AND doubled-register requires both Earth-Bet + Westerosi to fire.
-#   After file-shape pass: the Earth-Bet displacement at @9 and the Westerosi clamp at @16
-#   are the two strongest fires across the chapter. Both clear the both-meaningful gate.
-#   Accepting 2 entries; filing as above-band with justification (doubled-register mandate).
+#
+# R2.2 judge verdict (monument-callback gating, taylor-POV fork):
+#   mem:1 @9 — KEEP. Monument-grade callback. NI-spine co-cited (narrator:2 @9). Feel:1 @9
+#     also fires, satisfying V3 carve-out independently. Target-reference resolvable to
+#     the override-architecture monument family via mechanism-form gloss. Earth-Bet
+#     displacement fire — file-level doubled-register requirement.
+#   mem:2 @16 — KEEP. Monument-grade callback. NI silent at @16 but V3 feel-as-spine
+#     carve-out satisfies on all four conditions: hinge dramatic_shape, s02 axes_held
+#     includes capability, feel:2 @16 fires, displacement-discipline holds. Target-reference
+#     dual: Westerosi-clamp primary (hands-as-labor-vs-authority) + Earth-Bet shadow
+#     (override-architecture-instrument-withheld). Westerosi-monument clamp fire —
+#     file-level doubled-register requirement.
+#
+#   ADD-cap budget (5): 0 used. Candidates considered and refused:
+#     @26 (Wren's flies-observation) — would inflate to 3 entries past doubled-register;
+#       no new monument family added (override-architecture again); per-scene cap on
+#       sparsity discipline forbids density-inflation.
+#     @29 (closing held needle-lift) — no feel-spine; V3 carve-out fails condition (3).
+#     @13 (insects fill block) — per-scene cap blocks (scene B already has mem:2).
+#     @19 (watch-pass eyes-hold) — per-scene cap blocks.
+#
+#   Hard-fence scan (Earth-Bet proper noun): PASS. No `khepri-`, `gold-morning-`,
+#     `brockton-bay-`, `skitter-`, `endbringer-`, `worm-`, `annette-`, `bakuda-`,
+#     `khepri`, or any other Earth-Bet proper noun in any description or
+#     target-reference. All Earth-Bet content surfaces as mechanism-form gloss
+#     (override-architecture, instrument-withheld) or as displacement-as-texture
+#     ("what she is no longer doing", "what having hands is").
+#
+#   Doubled-register verdict: PASS (mem:1 = Earth-Bet displacement; mem:2 = primary
+#     Westerosi-monument clamp with co-fired Earth-Bet shadow).
+#
+# Accepting 2 entries; filing as above-band with justification (doubled-register mandate).
 
 # ─── SCENE A ─────────────────────────────────────────────────────────────────
 
 # @9: holds-feet held bone. The inverted establishing fact. Earth-Bet displacement.
-# Monument: override-architecture-residue — the specific shape of what Khepri did
+# Monument: override-architecture-residue — the specific shape of what was once done
 #   (threaded through a city-sized insect population and moved human bodies); the
 #   displacement here is the INVERSE: she reads the block through the same channel
 #   and no one here has a power requiring containing. The inverted establishing fact
-#   is the Khepri-pattern showing through its absence.
+#   is the prior pattern showing through its absence.
 # Quiet-beat: rhythm-shape flat-low, scene A @1-9. Licit zone. PASS.
-# Spine: V3 feel-as-spine carve-out applies.
+# Spine: V3 feel-as-spine carve-out applies; NI-spine ALSO present.
 #   1. Chapter dramatic_shape: hinge. CHECK.
 #   2. Scene stakes_axis: capability in axes_held[]. CHECK (s01 axes_held: capability).
 #   3. Feel-flag fires on @9: feel:1 @9 (taylor-hebert-kl-122ac: sets both feet even
 #      on the flagstones — see feeling file). CHECK.
-#   4. Displacement-discipline and audience-meaningful: the absence-observation
-#      ("no one here has a power that requires containing") is audience-perceptible as
-#      a person attending to the absence of something they once had to contain.
-#      The cue is legible without source-material fluency. PASS.
-# Spine: feel:1 @9 (V3 carve-out).
-# Both-meaningful: yes — a reader without Worm fluency reads the held-feet as deliberate
-#   choice; the absence-attending registers as someone who has known what requiring-containing means.
+#   4. NI-spine fires on @9: narrator:2 @9. CHECK (the chapter's NOTE-001 carrier;
+#      "no one here has a power that requires containing" is the NI registration
+#      of the absence the memory-flag licenses).
+#   5. Displacement-discipline and audience-meaningful: the absence-observation
+#      ("the block is not requiring anything of the kind she is no longer doing")
+#      is audience-perceptible as a person attending to the absence of something
+#      they once had to do and refused to do again. The cue is legible without
+#      source-material fluency. PASS.
+# Spine: narrator:2 @9 (primary) + feel:1 @9 (V3 carve-out redundant).
+# Both-meaningful: yes — a reader without prior fluency reads the held-feet as deliberate
+#   choice; the absence-attending registers as someone who has known what
+#   requiring-containing means.
 # Target-reference: (earth-bet: override-architecture-prohibition-enacted-via-inverse-observation)
+# R2.2 verdict: KEEP.
 1 @9 the sense runs the block and the block is what it is, and the block is not requiring anything of the kind she is no longer doing -> (earth-bet: override-architecture-prohibition-enacted-via-inverse-observation)
 
 # ─── SCENE B (@11-20) ────────────────────────────────────────────────────────
 
-# @16: holds-hands held bone. Khepri's hands as the withheld instrument.
+# @16: holds-hands held bone. The instrument withheld.
 # Monument: override-architecture-residue — the hands held to the needle-work are the
-#   same hands that did not hold a needle at Gold Morning; the body-part withheld is
-#   the specific instrument the Khepri-pattern deployed to route human bodies.
+#   same hands that once threaded the architecture she came here to refuse to build;
+#   the body-part withheld is the specific instrument the override-pattern deployed
+#   to route human bodies.
 # This is the Westerosi-clamp register: in Westeros, hands are the physical instrument
 #   of labor-craft and of lordly command (the Hand of the King; the grasping of authority).
 #   The hands held to the needle work inside a social structure that is legible as
 #   the inverse of command: the smallfolk work with their hands so they will not be
 #   worked upon by the hands of those above them. The held-hands carry both the
-#   Earth-Bet-displacement (Khepri's instrument withheld) and the Westerosi-monument-clamp
+#   Earth-Bet-displacement (instrument withheld) and the Westerosi-monument-clamp
 #   (hands-as-the-marker-of-authority vs. hands-as-the-marker-of-labor).
 # NOTE: this fires primarily as the Westerosi-register fire (balanced register requirement).
 # Quiet-beat: rhythm-shape flat-low, scene B @11-20. Licit zone. PASS.
-# Spine: V3 feel-as-spine carve-out.
+# Spine: V3 feel-as-spine carve-out (NI silent at @16).
 #   1. Chapter dramatic_shape: hinge. CHECK.
 #   2. Scene stakes_axis: capability in axes_held[]. CHECK (s02 axes_held: capability).
 #   3. Feel-flag on @16: feel:2 @16 (taylor-hebert-kl-122ac: holds both hands flat against
 #      the mesh — see feeling file). CHECK.
-#   4. Displacement-discipline: description names the shape without naming Khepri. PASS.
-# Target-reference: (westeros: hands-as-labor-marker vs. hands-as-authority-instrument)
+#   4. Displacement-discipline: description names the shape without naming the monument
+#      or any Earth-Bet proper noun. The construction "what having hands is, here, in this
+#      place, at this work" produces the contrast between this labor-work and the other
+#      work-of-hands she once did. PASS.
+# Spine: feel:2 @16 (V3 carve-out, all four conditions explicit).
+# Both-meaningful: yes — a reader without prior fluency reads the hands-on-needle as a
+#   meditation on what hands are for; the meditation registers as someone whose hands
+#   have been other things and have now been placed at this work.
+# Target-reference: (westeros: hands-as-labor-marker-vs-authority-instrument)
+#   + (earth-bet: override-architecture-instrument-withheld)
+# R2.2 verdict: KEEP.
 2 @16 the hands are on the needle and the needle is what they are for today, and this is what having hands is, here, in this place, at this work -> (westeros: hands-as-labor-marker-vs-authority-instrument) + (earth-bet: override-architecture-instrument-withheld)
