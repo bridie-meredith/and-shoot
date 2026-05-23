@@ -114,7 +114,7 @@ rejection notes:
 
 ---
 
-## Flagged seams
+## Flagged seams (b01c02)
 
 - SEAM (citation-completeness): both chosen entries carry `facet-licenses: [DEFERRED-TO-R2]`.
   Per rubric CONSTRAINT § citation-completeness this is the R1-blind placeholder form and
