@@ -224,14 +224,8 @@
   cost_ledger_anchor: ~
   notes: "serves event-07; the hold-during-watch-pass is the scene's event — without this bone being staged correctly, the discipline is invisible"
 
-- slug: b01c01s02n11
-  svo: "coll-net-mender-flea-bottom folds the net"
-  shape: moving
-  axis_moves:
-    - { axis: knowledge, direction: up, magnitude: 0.00, notes: "end-of-day rhythm marker; working day closes; the ledger entry is implicit: knowledge gained, cost zero, tool unused; magnitude 0 because this bone closes the scene without adding new knowledge" }
-  axes_held: []
-  cost_ledger_anchor: ~
-  notes: "CORRECTION: magnitude 0 is malformed per schema (direction: null / magnitude: 0 faults FAULT-BONE-DELTA-MALFORMED). Reclassify as chatter."
+# Phase 1 self-correction: an initial malformed s02n11 entry (magnitude:0, moving shape)
+# was reclassified to chatter shape in the same authoring pass. The canonical bone is below.
 
 - slug: b01c01s02n11
   svo: "coll-net-mender-flea-bottom folds the net"
