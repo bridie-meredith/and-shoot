@@ -51,8 +51,11 @@ layer: R2.3-judged
 
 # ─── SCENE C (@22-29) ────────────────────────────────────────────────────────
 
-# feel:3 @27 DELETED at R2.3 on §Form temporal-latency seam.
-# Original entry: "drops the gaze to the mesh one beat before lifting it"
+# DELETION-NOTE (R2.3, taylor slice-local id 3 @27): original entry "drops the gaze to the
+#   mesh one beat before lifting it" REMOVED on §Form temporal-latency seam. Consolidated
+#   citation-strip is handled by URI-030 absence-as-delete (this slice's _inflight-r2/ copy
+#   has no [feel:*] at @27), NOT by the DELETION_RE marker — the marker is namespace-confused
+#   under slice consolidation (slice-local id 3 ≠ consolidated id 3, which is wren@26).
 # Reason: the second clause "one beat before lifting it" measures the duration BETWEEN two body
 #   actions, which is the §Form REJECT signature carved at URI-FACETS-CYCLE-1. The rubric
 #   tightened against second clauses that measure the timing-around-the-body rather than the

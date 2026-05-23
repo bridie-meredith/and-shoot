@@ -679,7 +679,7 @@ books:
         #              staff/auditor/write-b01c01-pass2.md,
         #              staff/auditor/write-b01c01-pass5.md,
         #              staff/auditor/write-b01c01-bone-gate.md.
-        status: faceted-r1    # R1 fanout authored (commit 69a9410); Phase 2 cite-index built 2026-05-23 (52 entries across 9 facets + 3 dialogue files); /and-facets resumes at Phase 3 (R2 fanout)
+        status: faceted-r2    # R2 fanout complete 2026-05-23 (10 shards: NI / memory / 3×feeling / metaphor / exposition / 3×dialogue); R2 consolidation at theater/facets/.r2-decisions.md (f-r2-1=1 HARD self-repaired by narrator:4 DELETE; f-r2-4=1 cite-graph repair entailed; arbiter T1+T4: 0 interventions; hard-fence Earth-Bet: 0 hits); Phase 4c cite-index rebuild complete (49 entries, 22/27 protolines decorated, 81.5%); /and-facets resumes at Phase 5 (auditor dispatch)
         audit_path: active-project/staff/auditor/facets-final-audit-r3.md    # STALE — pertains to prior bone set; not valid against redo bones
         audit_complete: true    # STALE — pertains to prior bone set
         audit_findings: 0    # STALE — HARD count from prior run; ~15 SIGNAL carry-forward; not valid against redo bones
