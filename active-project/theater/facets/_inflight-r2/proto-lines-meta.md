@@ -13,48 +13,48 @@
 
 # SCENE A — @1-9
 
-1  taylor-hebert-kl-122ac pays the building-keeper
+1 taylor-hebert-kl-122ac pays the building-keeper
    [R2-META: SKIP-CORRECT] No memory or feeling anchor at @1. AP1 would apply to any candidate
    here. The transaction is grounding-physical; the figurative content is carried by loc-state:1
    and exposition:1 without remainder. No magnitude at this bone (knowledge +0.03 only).
    AP7: below hinge-magnitude band (flat-low scene, no peak-bones). Refuse-correct.
 
-2  taylor-hebert-kl-122ac crosses the drain-channel
+2 taylor-hebert-kl-122ac crosses the drain-channel
    [R2-META: SKIP-CORRECT] No memory or feeling anchor. AP1 bars any entry. Grounding movement
    bone at knowledge +0.02; no figurative claim available that wouldn't be unlicensed novelty.
    AP7: below hinge-magnitude band. Refuse-correct.
 
-3  coll-net-mender-flea-bottom lifts the eyes
+3 coll-net-mender-flea-bottom lifts the eyes
    [R2-META: SKIP-CORRECT] No memory or feeling anchor. AP1. Additionally AP12 would apply
    (non-POV beat, Coll's interior not licensed). Bare bones entry at knowledge +0.04. No metaphor
    eligible. AP7: below band. Refuse-correct.
 
-4  coll-net-mender-flea-bottom works the net
+4 coll-net-mender-flea-bottom works the net
    [R2-META: SKIP-CORRECT] No memory or feeling anchor. AP1. exposition:2 covers Coll's function
    adequately. AP7: below band. Refuse-correct.
 
-5  taylor-hebert-kl-122ac circles the block
+5 taylor-hebert-kl-122ac circles the block
    [R2-META: SKIP-CORRECT] No memory or feeling anchor. AP1. A bare add-candidate from the
    cite-index (bare proto-line @5). Nothing in the at-rest reading of "circles the block" calls
    for a metaphor — it is the physically-enacted ward inventory, already the most direct-action
    bone in the scene. Adding a figure here would AP9 (painting-characterization without callback).
    AP7: below band. Refuse-correct.
 
-6  taylor-hebert-kl-122ac passes the tallow-stall
+6 taylor-hebert-kl-122ac passes the tallow-stall
    [R2-META: SKIP-CORRECT] No memory or feeling anchor. AP1. sensory:1 carries the olfactory
    register; vibes:2 carries the king's-landing overlay. No residual figure. AP7: below band.
    Refuse-correct.
 
-7  taylor-hebert-kl-122ac drops the pack
+7 taylor-hebert-kl-122ac drops the pack
    [R2-META: SKIP-CORRECT] No memory or feeling anchor. AP1. Chatter bone; no axis movement.
    AP7: below band. Refuse-correct.
 
-8  coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac
+8 coll-net-mender-flea-bottom speaks to taylor-hebert-kl-122ac
    [R2-META: SKIP-CORRECT] No memory or feeling anchor. AP1. AP12 risk (non-POV). Coll's
    dialogue is carried in the dialogue file; figurative elaboration outside Taylor's POV is
    not licensed here. AP7: below band. Refuse-correct.
 
-9  taylor-hebert-kl-122ac holds the feet
+9 taylor-hebert-kl-122ac holds the feet
    [R2-META: ADD-REFUSED] Strongest anchor pair in the chapter: mem:1 + feel:1 = double-anchor.
    Rubric multi-justification would pass (memory + feeling ≥2 layers). Functional register:
    memory-callback (mem:1 is the inverted establishing fact — override-architecture-residue).

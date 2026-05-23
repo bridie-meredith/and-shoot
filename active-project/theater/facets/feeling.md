@@ -8,195 +8,196 @@ note: consolidated by build_cite_index from per-source slices. Single top-of-fil
 facet: feeling
 episode: b01c01
 author: coll-net-mender-flea-bottom (impersonator fork)
+r2-judge: confirmed-empty (R2.3, 2026-05-23)
 ---
 
 # Feeling-Flags — coll-net-mender-flea-bottom — b01c01
 # Sparsity target: 2-5% on 27 bones = 0-1 entries. This file: 0 entries.
-# Coll is non-interpretive substrate. Per card: "counts in repairs, describes does not analyze,
-#   the state of what he sees not the meaning, reports presence not significance."
-# Per rubric §Authorship: "Procedural-flat-character forced" is AP5.
-# Rubric Q1: can the audience read Coll's interior from proto-line + cross-facets alone?
-#   For every Coll beat, YES — his interiority is structurally inert; the audience reads his
-#   presence as fixture, not as interior-bearing. Q1 fails for all candidates.
+# R1 outcome: zero fires. R2.3 judge outcome: zero adds. The empty file IS the verdict.
 #
-# Candidate-by-candidate:
+# Coll is the non-interpretive Flea Bottom ambient fixture. His card forbids interpretive
+# performance; §Action Costs reads "None that land in the story. He is the ambient register."
+# §Hard Fences: (1) "He does not name anything," (2) "Non-interpretive register. He counts in
+# repairs and describes what he sees. He does not speculate, moralize, analyze, or build a
+# model from his observations." A feeling-flag on Coll IS interpretive performance — it would
+# show his interior as a thing the reader is supposed to read. The card refuses that reading.
 #
-# @3: coll lifts the eyes. The proto-line IS the somatic action (Q1 fail — rubric C1/C2 pattern).
-#   The lift is his observation-act, fully readable from the proto-line. REFUSE.
+# Per rubric §Anti-pattern catalog AP5: "Procedural-flat-character forced. Firing for a
+# character whose persona card forbids interior performance (officer, clerk)." Coll is the
+# canonical fit for AP5; firing for him is the failure mode the anti-pattern names.
 #
-# @4: coll works the net. Default state, not interior-bearing. Q1 fail. REFUSE.
+# Bones-review NOTE-004 context (carried forward as judge-input): s02n02 (Coll-pulls-the-net
+# mid-day) was deleted at audience trim. Coll's mid-day co-presence in scene B (flat-12
+# through flat-19) lives only in s01n05 carry + s02n11 day-close. The absence of any Coll
+# feeling fire in that mid-day stretch is rubric-correct for the ambient fixture function.
+# The not-naming IS the discipline. Adding to fill the gap would be the inversion of what
+# the card licenses.
 #
-# @8: coll speaks. Speech-act bone. Feeling-flags is not the speech layer. No somatic-tell
-#   can be licensed for a speech bone where the dialogue facet covers the beat. REFUSE.
+# Candidate-by-candidate (judge-mode re-read of R1's refusals; cold-read confirms):
 #
-# @20: coll folds the net. Temporal-transition, day-close. Q1: readable as day-close without
-#   any interior-feeling cue. Q2: not meaningful-enough — Coll's day-close is a fixture-state
-#   signal already addressed by state-updates-env @20. REFUSE.
+# @3 (coll lifts the eyes): the proto-line IS the somatic action. Rubric anchors C1 and C2
+#   (refuse when proto-line carries the tell) apply directly. The lift IS the observation-act;
+#   feeling would duplicate. REFUSE. KEEP-AS-REFUSED.
 #
-# RESULT: 0 entries. Correct sparse outcome for a non-interpretive fixture character.
-# (file intentionally contains no entries; this is a valid empty feeling-flags file)
+# @4 (coll works the net): default-state bone. Not interior-bearing. The work is the work;
+#   it is the character's stance, not a register of cost. REFUSE. KEEP-AS-REFUSED.
+#
+# @8 (coll speaks): speech-act bone, dialogue facet owns the beat (per dialogue file: "There's
+#   mending if you can hold a needle"). Feeling on a speech-act bone for a non-interpretive
+#   character would convert the speech into a tell about the speech — exactly the interpretive
+#   performance the card forbids. REFUSE. KEEP-AS-REFUSED.
+#
+# @20 (coll folds the net): day-close temporal-transition. The fold is the fixture-state
+#   signal already in state-updates @20 (state:5 / state:10). Q1 fails; Q2 fails (not
+#   meaningful-enough at the somatic-tell layer; the fold IS the day-close signal). REFUSE.
+#   KEEP-AS-REFUSED.
+#
+# R2.3 add-pass scan (extreme refuse-by-default for this character; cap ≤5 per character,
+#   ≤1 per scene): no add-candidates survive cold-read. Every Coll beat that could carry a
+#   feel-fire either (a) is already carried by the proto-line, (b) belongs to dialogue or
+#   state-updates, or (c) would constitute AP5 procedural-flat-character forced. The card's
+#   §Action Costs explicit "None that land in the story" forecloses cost-bear somatic
+#   readings; the §Hard Fences foreclose interpretive readings.
+#
+# RESULT: 0 entries. R2 judge confirms R1. The empty file is the structural outcome a
+# non-interpretive ambient fixture produces under the rubric.
 
 # source: taylor-hebert-kl-122ac
 facet: feeling
 episode: b01c01
 author: taylor-hebert-kl-122ac (impersonator fork)
+layer: R2.3-judged
 ---
 
-# Feeling-Flags — taylor-hebert-kl-122ac — b01c01
-# Per-character per-scene cap: ≤1. Sparsity 2-5% on 27 bones = 0-1 per character per episode typically.
-# This file: 3 entries (11.1%) — above sparsity floor but all three serve documented load-bearing purposes.
-# feel:1 @9 — required V3 spine for memory mem:1 @9 (memory rubric V3 feel-as-spine carve-out)
-# feel:2 @16 — required V3 spine for memory mem:2 @16
-# feel:3 @27 — Scene C entry; cost-tracking somatic at the flies-observation beat
-# Per-scene distribution: scene A (@1-9): feel:1. Scene B (@11-20): feel:2. Scene C (@22-29): feel:3.
-# All three scenes covered; no scene cap violated (≤1 per scene per character).
+# Feeling-Flags — taylor-hebert-kl-122ac — b01c01 (R2.3 judged)
+# R1 file inherited; R2.3 judge deleted one entry (feel:3 @27) and re-issued the slice at 2 fires.
+# 2 entries on 27 bones = 7.4%. Above the 2-5% sparsity band but both retained fires earn their
+# place on the doubled-register memory-spine carve-out (Earth-Bet displacement at @9 + Westerosi
+# clamp at @16). feel:3 @27 deleted on §Form temporal-latency seam (see r2-decision-shard).
 #
-# V3 feel-as-spine carve-out qualification for feel:1 and feel:2:
-#   All four conditions met:
+# Per-scene distribution: scene A (@1-9): feel:1. Scene B (@11-20): feel:2. Scene C (@22-29): empty.
+# Per-character per-scene cap ≤1: hard cap not violated in any scene.
+#
+# V3 feel-as-spine carve-out qualification for feel:1 and feel:2 — re-checked at R2.3:
 #   1. Chapter dramatic_shape: hinge. CHECK.
 #   2. Scene stakes_axis: capability in axes_held[]. CHECK (scenes A+B: axes_held capability).
 #   3. Feel-flag fires at memory-anchor beat. CHECK (feel:1 @9 for mem:1 @9; feel:2 @16 for mem:2 @16).
 #   4. Displacement-discipline: description names somatic without naming Earth-Bet. CHECK.
-#
-# Per-bone rationale below.
 
 # ─── SCENE A (@1-9) ─────────────────────────────────────────────────────────
 
-# @9: taylor-hebert-kl-122ac holds the feet.
-# Candidate: yes. This is the held-feet bone — the inverted establishing fact (NOTE-001).
-# The sense runs the block and finds nothing requiring override-architecture response.
-# The somatic-tell: she sets both feet even on the flagstones.
-# Q1: Without this flag, audience reads the held-feet only as a held-bone (pause). The somatic-tell
-#   adds: the equalization of weight is deliberate, body-level; she is not standing with one foot
-#   forward (commit-ready); she is standing level (assessment-mode, no deployment anticipated).
-#   The body-register carries the absence-assessment in somatic form — what the insect-sense found,
-#   the body confirms: nothing to move toward. Q1 passes.
-# Q2: Meaningful — this is the hinge chapter's scene A closing bone; the body-bear of the
-#   capability-axis-held is load-bearing for establishing Taylor's operating mode. Q2 passes.
-# Multi-justification (≥3 of 5):
-#   1. Somatic-tell-card-match: taylor card §Default Stance: "assessing / passive radar / eyes on exits"
-#      — the even-feet posture is the assessing-not-committing body-state. CHECK.
-#   2. Q1-interior passes. CHECK.
-#   3. Q2-meaningful passes. CHECK.
-#   4. Scene-eligible: first fire in scene A; cap not yet used. CHECK.
-#   5. Functional-register: painting-characterization (establishes her operating mode at baseline).
-#      CHECK.
-# Score: 5 of 5. FIRE.
+# @9: taylor-hebert-kl-122ac holds the feet. KEPT at R2.3.
+# Cold-read: the even-feet stance is the assessment-mode body-state — weight equal on the
+#   flagstones means she is not standing committed in any direction, which is the card's
+#   §Default Stance ("assessing / passive radar / eyes on exits") rendered as posture rather
+#   than cognition. Distinct from NI:2 @9 (which carries the cognitive content of the absence-
+#   observation) and from mem:1 @9 (which carries the monument-figure). The "even" qualifier
+#   is what earns the line — without it, "sets both feet on the flagstones" would be procedural;
+#   with it, the flatness of the weight-bear is what the body is doing while the sense runs.
+# Form re-test: one clause, body subject, body verb, locator — passes. No named-feeling, no
+#   simile, no hedge, no temporal-latency observation.
 # expressed: no — the even-feet stance is legible to a trained observer; in-scene Coll does not
 #   register it (non-interpretive).
 1 @9 taylor-hebert-kl-122ac: sets both feet even on the flagstones | expressed: no
 
 # ─── SCENE B (@11-20) ────────────────────────────────────────────────────────
 
-# @16: taylor-hebert-kl-122ac holds the hands.
-# Candidate: yes. Hands-held bone — Khepri's instrument withheld (NOTE-001 family; mem:2 anchor).
-# The somatic-tell: holds both hands flat against the mesh.
-# Q1: Without this flag, audience reads hands-held as a passive action (not sewing). The somatic-tell
-#   adds: the flatness against the mesh is a deliberate body-press — hands that could grip are placed
-#   flat; the pressure is into the material, not through it; not working the needle, holding the
-#   position. The audience-readable difference: this is not the hands resting, this is hands
-#   consciously held. Q1 passes.
-# Q2: Meaningful — this is the Westerosi-clamp anchor (mem:2); the hands withheld from the specific
-#   instrument-register that Khepri-pattern runs through. The body-bear of the withheld capability
-#   is structurally load-bearing for the doubled-register. Q2 passes.
-# Multi-justification (≥3 of 5):
-#   1. Somatic-tell-card-match: taylor card §Signature Moves: "The coverage that protects and doesn't
-#      declare itself" — the hands held flat are the non-declaration; the body-commit to not-using is
-#      the signature. CHECK.
-#   2. Q1-interior passes. CHECK.
-#   3. Q2-meaningful passes. CHECK.
-#   4. Scene-eligible: first fire in scene B; cap not yet used. CHECK.
-#   5. Functional-register: painting-characterization (the body-state of the withheld capability is
-#      the chapter's central characterization). CHECK.
-# Score: 5 of 5. FIRE.
+# @16: taylor-hebert-kl-122ac holds the hands. KEPT at R2.3.
+# Cold-read: the flat-against-mesh posture renders the withheld-instrument state without naming
+#   the instrument. The "flat against" carries the specific not-gripping posture — hands that
+#   could grip are pressed in, not lifted and not closed. No NI fires at @16, so the POV-duplicate
+#   risk is zero. mem:2 @16 carries the hands-as-labor-marker abstraction; this entry carries the
+#   body-press, which is a distinct register. The chapter's central characterization (architecture-
+#   residue held in body) needs a body-bearer; this is the load-bearing somatic anchor.
+# Form re-test: one clause, body subject, body verb, locator — passes. No named-feeling, no
+#   simile, no hedge, no temporal-latency observation.
 # expressed: no — the hands-flat posture is interior body-bear; no in-scene character reads it.
 2 @16 taylor-hebert-kl-122ac: holds both hands flat against the mesh | expressed: no
 
 # ─── SCENE C (@22-29) ────────────────────────────────────────────────────────
 
-# @27: taylor-hebert-kl-122ac holds the eyes.
-# Context: this is the bone after @26 (wren speaks the flies-observation — NOTE-003 carrier;
-#   the chapter's payload). Taylor holds the eyes = assessment-mode following the flies-report.
-# Candidate: yes.
-# The somatic-tell: drops the gaze one beat before lifting it again — the weight-measure before
-#   she returns to the needle.
-# Q1: Without this flag, audience reads holds-the-eyes as a general pause after speech. The somatic-tell
-#   adds: the brief downward shift (not away, down — into the work) is the cost-of-the-observation
-#   landing; it is the assessment-interval made visible as body-action. It is distinct from NI
-#   (which would be the cognitive process); this is the somatic-bear of the cost. Q1 passes.
-#   NOTE: NI does not fire at @27 (the NI file has no @27 entry). Non-redundancy confirmed.
-# Q2: Meaningful — Wren's flies-observation is the chapter's payload; Taylor's response-posture is
-#   the reader's cue that the observation landed as significant. The body-beat is structural to the
-#   scene's pivot. Q2 passes.
-# Multi-justification (≥3 of 5):
-#   1. Somatic-tell-card-match: taylor card §Look: "the tell: when insect-sense picks up something
-#      relevant, attention shifts fractionally before body does." The gaze-drop is the attention-shift
-#      expressed as body-action after the insect-observation has been verbalized to her externally.
-#      CHECK.
-#   2. Q1-interior passes. CHECK.
-#   3. Q2-meaningful passes (structural to scene pivot). CHECK.
-#   4. Scene-eligible: first fire in scene C; cap not yet used. CHECK.
-#   5. Functional-register: painting-characterization (the cost-of-the-observation landing as body).
-#      CHECK.
-# Score: 5 of 5. FIRE.
-# expressed: partial — Wren is present; she observes before acting; she may notice the gaze-drop
-#   but not its meaning.
-3 @27 taylor-hebert-kl-122ac: drops the gaze to the mesh one beat before lifting it | expressed: partial
+# DELETION-NOTE (R2.3, taylor slice-local id 3 @27): original entry "drops the gaze to the
+#   mesh one beat before lifting it" REMOVED on §Form temporal-latency seam. Consolidated
+#   citation-strip is handled by URI-030 absence-as-delete (this slice's _inflight-r2/ copy
+#   has no [feel:*] at @27), NOT by the DELETION_RE marker — the marker is namespace-confused
+#   under slice consolidation (slice-local id 3 ≠ consolidated id 3, which is wren@26).
+# Reason: the second clause "one beat before lifting it" measures the duration BETWEEN two body
+#   actions, which is the §Form REJECT signature carved at URI-FACETS-CYCLE-1. The rubric
+#   tightened against second clauses that measure the timing-around-the-body rather than the
+#   body itself; this entry instantiates that pattern even though both verbs are body verbs.
+# No replacement issued at scene C: no candidate position survives the §Form gate AND the Q1
+#   POV-duplicate gate AND the proto-line-IS-the-tell gate (rubric C2 anchor). See r2-decision-
+#   shard for the four positions considered and refused.
 
 # source: wren-stitch-maker-flea-bottom-ward
 facet: feeling
 episode: b01c01
-author: wren-stitch-maker-flea-bottom-ward (impersonator fork)
+author: wren-stitch-maker-flea-bottom-ward (R1 impersonator fork) + r2.3-feeling-judge (R2.3 mutated slice)
+layer: R2.3
 ---
 
-# Feeling-Flags — wren-stitch-maker-flea-bottom-ward — b01c01
-# Sparsity target: 2-5% on 27 bones = 0-1 entries. This file: 1 entry.
-# Wren appears in scene C only (@22-29). Per-scene cap ≤1. Entry: @26.
+# Feeling-Flags — wren-stitch-maker-flea-bottom-ward — b01c01 (R2.3 judged)
+# Slice ID: 1 (local). Consolidated equivalent: feel:4 in feeling.md.
+# R1 fires: 1. R2.3 verdicts: KEEP 1 (entry 1 @26), ADD 0, DELETE 0.
+# Cap-refusals at @22 / @23 / @28 logged in
+#   active-project/staff/feeling/r2-decision-shard-wren-stitch-maker-flea-bottom-ward.md
 #
-# Wren fork is non-POV. Per rubric §Authorship:
-#   "Non-POV: dialogue-writer fork per character. Loads only that character's persona card
-#    + this rubric. No NI, no memory."
-# NI non-redundancy check is NOT applicable to non-POV. NI is POV-only.
-# The only content non-redundancy concern is with the dialogue facet (Wren speaks at @26).
+# Scene-presence: s03 only (@22-29). Per-scene cap ≤1 — hard. Cap utilisation: 1/1 in s03.
+# Add-cap budget: 5; used 0; blocked by per-scene cap, not by budget.
 #
-# Cross-facet non-redundancy check:
-#   Dialogue @26: wren names the flies-observation ("the flies weren't on you" / equivalent).
-#   The dialogue facet carries the speech-content.
-#   Feeling-flag at @26 would carry the SOMATIC TELL BEFORE or DURING the speech — the body-action
-#   that shows Wren's interior WHILE she names the observation.
-#   These are distinct layers. Non-redundancy confirmed.
+# Card §Look (load-bearing signature held to throughout R2.3):
+#   "her eyes move to things before her head does. She tracks peripheral events."
+#   Observation-before-action is the trained tell; the eye-move IS the card-signature
+#   in physical operation.
 #
-# Cost-bearer-pre-pricing risk flag (from phase notes):
-#   Wren's card §Hard Fences: she is eleven; not performed as precocious-wise.
-#   The feeling-flag must show Wren's body, not interpret her interior.
-#   The risk: a feeling-fire that reads as "she knows what Taylor is" would be cost-bearer
-#   pre-pricing — she already knows the structure. The anti-pattern: the feel-entry must
-#   show observation-as-body-action, not recognition-of-significance.
-#   Management: the tell is the observation-habit physical signature, NOT the meaning she
-#   attached to what she saw. Wren's card §Look: "her eyes move to things before her head does."
+# Card §Hard Fences (anti-pre-pricing discipline held):
+#   1. She is eleven; not written precocious-wise.
+#   2. She does not ask Taylor the question.
+#   → The feeling-flag must show observation-as-body, not recognition-of-significance.
+#   The R1 entry meets this discipline; R2.3 cold-read confirms no register exit.
 #
-# @26: wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac.
-# Context: the flies-observation (NOTE-003 carrier). She names what she saw.
-# The somatic-tell: her eyes move to Taylor's hands before she speaks.
-# Q1: Without this flag, audience reads the speech-beat with no body-register preceding it.
-#   The gaze-to-hands before-speech is not carried by the proto-line or the dialogue layer.
-#   The pre-speech eye-move shows: she looked before she named it; the report is accurate
-#   because the observation was completed before the reporting. Q1 passes.
-# Q2: Meaningful — this is Wren's structural beat, the chapter's payload. The body-tell that
-#   precedes her report characterizes the observation-before-action habit that is her defining
-#   trait (card §Description: "she watches what is happening around her before she acts on it").
-#   Q2 passes.
-# Multi-justification (≥3 of 5):
-#   1. Somatic-tell-card-match: wren card §Look: "her eyes move to things before her head does"
-#      — the gaze-to-hands is the observation-habit operating as physical tell. CHECK.
-#   2. Q1-interior passes. CHECK.
-#   3. Q2-meaningful passes (structural to chapter payload). CHECK.
-#   4. Scene-eligible: first fire in scene C; cap not yet used. CHECK.
-#   5. Functional-register: painting-characterization (the observation-before-action habit
-#      demonstrated at the moment it produces the chapter's payload). CHECK.
-# Score: 5 of 5. FIRE.
-# No cost-bearer-pre-pricing: the tell is the physical habit (eyes-move), not the meaning
-#   attributed. Wren shows that she observed; she does not show that she understood.
-# expressed: partial — Taylor is observing Wren and will register the gaze-direction; the
-#   gaze-to-hands is a tell available to the attentive observer.
-4 @26 wren-stitch-maker-flea-bottom-ward: moves the eyes to Taylor's hands before speaking | expressed: partial
+# Cross-facet non-redundancy at @26 (re-verified at R2.3):
+#   - Dialogue (wren:2 @26): "There were flies on the meat-stall. There weren't any
+#     on your hand." — speech-content layer.
+#   - NI (narrator:6 @26, Taylor POV): Taylor's attention at the beat — POV cognition.
+#   - Vibes (vibes:7, vibes:8 @26): vibe-cloud cues, non-somatic.
+#   - Feeling (entry 1 @26): Wren's pre-speech eye-move — body-show layer; not
+#     duplicated by any of the above. Non-POV feeling is the only facet capturing
+#     Wren's interior; non-redundancy confirmed.
+#
+# G1 cold-read (R2.3): the construction is single-clause SVO with locator. "Before
+#   speaking" sequences the body action against the speech; it does not exit the
+#   body-register into a second-clause abstraction. No hedge, no comparison, no
+#   metaphor, no named-feeling vocabulary. The somatic IS the entry.
+# G2 add-motive: n/a — no adds (per-scene cap spent at @26; @26 wins on payload-leverage).
+# G3 at-rest-without-adjacent-context: feel:4 co-cites feel:1, narrator:6, vibes:7,
+#   vibes:8, wren:2 at the same anchor — the entry is not lonely and does not lean
+#   on the next proto-line (Taylor's @27 gaze-drop) to make sense. The eye-move
+#   completes its work at @26.
+# G4 pattern-scan (cross-character): see decision shard PATTERN-SCAN — eye-register
+#   appears at both @26 (Wren → Taylor's hands) and @27 (Taylor → mesh); proximity
+#   is structural (delivery / receipt), not formulaic; no revision argument.
+# G5 position-gate: @26 is the scene-C pivot — the cost-bearer-seeding payload beat
+#   (NOTE-003 carrier). The somatic-before-speech opens the moment (body confirms
+#   observation-completed before the verbal report); it does not archive it. The
+#   correct register at the correct moment.
+#
+# Multi-justification (≥3 of 5; R2.3 re-confirmed):
+#   1. Somatic-tell-card-match: card §Look "eyes move to things before her head does."
+#      The gaze-to-hands IS the card line in physical operation. CHECK.
+#   2. Q1-interior: pre-speech eye-move not in proto-line or dialogue. CHECK.
+#   3. Q2-meaningful: structural to chapter payload (NOTE-003 cost-bearer-seed). CHECK.
+#   4. Scene-eligible: first fire in scene C; cap not yet used at fire-time. CHECK.
+#   5. Functional-register: painting-characterization — the defining habit at the
+#      moment it produces the chapter's payload observation. CHECK.
+# Score: 5 of 5.
+#
+# No cost-bearer-pre-pricing: the tell is the physical habit (eyes-move), not the
+#   meaning attributed. Wren shows that she observed; she does not show that she
+#   understood. The meaning of the flies-observation is left to Taylor to process
+#   at @27 (feel:3 — Taylor drops gaze to the mesh one beat before lifting it).
+#   Two bodies, adjacent beats, distinct work.
+#
+# expressed: partial — Taylor is observing Wren and will register the gaze-direction;
+#   the gaze-to-hands is a tell available to the attentive observer.
+3 @26 wren-stitch-maker-flea-bottom-ward: moves the eyes to Taylor's hands before speaking | expressed: partial

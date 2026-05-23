@@ -111,6 +111,49 @@ fix-log: active-project/staff/fixer/and-facets-cycle3-fixes.md
 sensory-terminal-state: CAP-BURN-BOUND (modality-floor breach: 1 entry, 1 modality; floor ≥2 unmet; documented trade-off, not chased)
 interest-narrator-terminal-state: CLEAN PASS-ELIGIBLE (AP-10 cap now 1; all entries form-valid)
 
+## SESSION-START — 2026-05-23T00:00:00Z — facets-b01c01-hard-findings
+dispatch: fix 5 HARD findings from facets-final-audit.md b01c01 — 3 STRUCTURAL (fault-001/002/003 proto-lines citation tokens) + 2 CONSTRAINT (fault-011 vibes:9 licensed-by; fault-012 state:10 field mutation)
+target: active-project/theater/proto-lines/b01-c01.md + active-project/theater/facets/vibes-b01-c01.md + active-project/theater/facets/state-updates-taylor-hebert-kl-122ac.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 5 (fault-001, fault-002, fault-003, fault-011, fault-012)
+
+## fault-001 — RESOLVED — 2026-05-23T10:01:00Z
+fault: proto-lines @15 carried [loc-state:4] instead of [loc-state:5]
+scope: line
+change: pre-applied in proto-lines/b01-c01.md before this session (file on disk already had [loc-state:5] at @15); cite-index rebuilt to reflect back=Y for loc-state:5 @15
+criteria met: yes — @15 carries [loc-state:5]; cite-index shows loc-state:5 @15 back=Y
+
+## fault-002 — RESOLVED — 2026-05-23T10:02:00Z
+fault: proto-lines @9 carried stale [state:4] (watch-rotation, @18 anchor) instead of [state:9] (@9 ward-geometry)
+scope: line
+change: pre-applied in proto-lines/b01-c01.md before this session (file on disk already had [state:9] at @9); cite-index rebuilt to reflect state:9 @9 back=Y; state:4 co-citations at @9 removed from all affected entries
+criteria met: yes — @9 carries [state:9]; cite-index updated; no stale state:4 at @9
+
+## fault-003 — RESOLVED — 2026-05-23T10:03:00Z
+fault: systematic loc-state one-off token offset: @17 had [loc-state:5], @18 missing [loc-state:6], @22 had [loc-state:6] instead of [loc-state:7]
+scope: line
+change: all three corrections pre-applied in proto-lines/b01-c01.md before this session (@17 bare of loc-state, @18 has [loc-state:6], @22 has [loc-state:7]); cite-index rebuilt to reflect loc-state:6 @18 back=Y, loc-state:7 @22 back=Y, sensory:4 @17 co-citations updated
+criteria met: yes — @17 has no loc-state token; @18 has [loc-state:6] (back=Y); @22 has [loc-state:7] (back=Y)
+
+## fault-011 — RESOLVED — 2026-05-23T10:04:00Z
+fault: vibes:9 licensed-by cited deleted feeling:3; unresolvable citation is HARD per CONSTRAINT class
+scope: line
+change: pre-applied in vibes-b01-c01.md before this session (licensed-by: proto:27 only; feeling:3 already removed); cite-index rebuilt — vibes:9 lic-out now shows [proto:27] only
+criteria met: yes — feeling:3 absent from vibes:9 licensed-by; proto:27 alone anchors the entry
+
+## fault-012 — RESOLVED — 2026-05-23T10:05:00Z
+fault: state:10 @20 field mutation named patrol-rotation specifically; narrator:7 co-cited NI is a day-close ledger register, not patrol-rotation registration
+scope: line
+change: state-updates.md (consolidated) entry state:10 @20 field new-value changed from flea-bottom-block-level-with-patrol-rotation to flea-bottom-block-level-day-count-complete; taylor slice (state-updates-taylor-hebert-kl-122ac.md) was already correct; only the consolidated file required the edit
+criteria met: yes — state:10 mutation now names day-count-complete semantics matching narrator:7's ledger-close register; patrol-rotation specifics removed
+
+## SESSION-END — 2026-05-23T10:06:00Z — facets-b01c01-hard-findings
+findings-applied: 5 (fault-001 proto-lines pre-applied; fault-002 proto-lines pre-applied; fault-003 proto-lines pre-applied; fault-011 vibes pre-applied; fault-012 state-updates consolidated file edited)
+findings-skipped: 0
+exit: CLEAN
+cite-index-rebuilt: YES (manual rebuild from canonical file state; build_cite_index.py not executable in this environment; cite-index written directly to active-project/theater/facets/_cite-index.md)
+hard-count-post-fix: 0 (all 5 HARDs resolved; Phase 5b unblocked)
+
 ## item-4 — RESOLVED — 2026-05-21T15:08:00Z
 fault: exposition:4 @4 gloss text "In Flea Bottom there is rarely anyone who can" lacks appositive orienting a cold-join reader; "the Hook" in exposition:1 @0 bridge text also flagged for check
 scope: line

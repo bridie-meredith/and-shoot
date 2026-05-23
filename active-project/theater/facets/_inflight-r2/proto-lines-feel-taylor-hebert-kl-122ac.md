@@ -80,13 +80,13 @@ aggregate_range: 1-29
    # [R2.3 CAP-REFUSAL feel-taylor @25] Speech-act bone. Feeling-flags is not the speech layer;
    #   dialogue-facet carries the speech-content. REFUSE.
 
-26 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac [feel:1] [narrator:6] [vibes:7] [vibes:8] [wren-stitch-maker-flea-bottom-ward:2]
+26 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac [narrator:6] [vibes:7] [vibes:8] [wren-stitch-maker-flea-bottom-ward:2]
    # [R2.3 CAP-REFUSAL feel-taylor @26] Chapter payload beat. NI:6 carries the assessment-landed
    #   register ("the flies are what the read should have caught and didn't"). Q1 POV-duplicate.
    #   feel:1 here is the WREN entry (different fork). Adding a taylor-feel at the same anchor
    #   would also stack against feel-wren:1 on a single proto-line. REFUSE.
 
-27 taylor-hebert-kl-122ac holds the eyes [feel:3] [vibes:9] [vibes:10]
+27 taylor-hebert-kl-122ac holds the eyes [vibes:9] [vibes:10]
    # [R2.3 DELETE feel:3 @27] Original entry: "drops the gaze to the mesh one beat before lifting it"
    #   §Form re-test FAILS: the second clause "one beat before lifting it" measures the duration
    #   between two body actions — a temporal-latency observation, the §Form REJECT signature
