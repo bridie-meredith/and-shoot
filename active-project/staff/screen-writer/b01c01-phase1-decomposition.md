@@ -29,13 +29,11 @@
   cost_ledger_anchor: ~
   notes: "grounding bone — copper stars name the Flea Bottom currency register; transaction IS the method (chunk's phrase); serves event-01"
 
-- slug: b01c01s01n02
-  svo: "the building-keeper pockets the copper-stars"
-  shape: chatter
-  axis_moves: []
-  axes_held: []
-  cost_ledger_anchor: "knowledge-gain-unanchored-baseline"
-  notes: "grounding bone — receipt of payment makes the currency physical and visible; serves event-01; chatter pays the knowledge-tick in n01 by grounding the exchange as a two-sided physical event"
+# b01c01s01n02 deleted at Phase 4 audience trim
+# (2-of-3 vote: cape-fic-reader + dark-fantasy-reader)
+# Reason: chatter beat echoes n01's payment without adding structural function;
+# n01 (taylor pays building-keeper) carries the currency-grounding sufficiently.
+# Slug preserved in skip; no renumbering. Aggregate s01 knowledge unchanged at 0.19.
 
 - slug: b01c01s01n03
   svo: "taylor-hebert-kl-122ac crosses the drain-channel"
@@ -64,15 +62,6 @@
   cost_ledger_anchor: ~
   notes: "held bone for social-cover physics; the net-work is Coll's capability held at courtesy-not-testimony; serves event-04"
 
-- slug: b01c01s01n06
-  svo: "taylor-hebert-kl-122ac passes the tallow-stall"
-  shape: moving
-  axis_moves:
-    - { axis: knowledge, direction: up, magnitude: 0.02, notes: "ward perimeter: tallow-stall names the block's sensory landscape; smoke-register of the place enters the ledger passively" }
-  axes_held: []
-  cost_ledger_anchor: ~
-  notes: "grounding bone — tallow-stall is a Flea Bottom place-locus; serves event-05; gives the facet layer a concrete olfactory anchor"
-
 - slug: b01c01s01n07
   svo: "taylor-hebert-kl-122ac circles the block"
   shape: moving
@@ -80,7 +69,16 @@
     - { axis: knowledge, direction: up, magnitude: 0.05, notes: "ward inventory: stone, feast-shortage-levy rhythm, who-owes-the-well-step, which alleys feed which courts; ward geometry established at ground level; the circuit is the method — presence before deployment" }
   axes_held: []
   cost_ledger_anchor: ~
-  notes: "the block-circuit is the chapter's establishing physical EVENT; serves event-05; Taylor is CHOOSING to read by foot, not by insect-sense"
+  notes: "the block-circuit is the chapter's establishing physical EVENT; serves event-05; Taylor is CHOOSING to read by foot, not by insect-sense. Phase 3 dramatist reorder: n07 moved before n06 — circuit precedes the in-circuit landmark."
+
+- slug: b01c01s01n06
+  svo: "taylor-hebert-kl-122ac passes the tallow-stall"
+  shape: moving
+  axis_moves:
+    - { axis: knowledge, direction: up, magnitude: 0.02, notes: "ward perimeter: tallow-stall names the block's sensory landscape; smoke-register of the place enters the ledger passively" }
+  axes_held: []
+  cost_ledger_anchor: ~
+  notes: "grounding bone — tallow-stall is a Flea Bottom place-locus; serves event-05; gives the facet layer a concrete olfactory anchor. Phase 3 dramatist reorder: n06 moved after n07 — the stall is a specific olfactory yield of the circuit, not a pre-circuit approach."
 
 - slug: b01c01s01n08
   svo: "taylor-hebert-kl-122ac drops the pack"
@@ -144,13 +142,13 @@
   cost_ledger_anchor: "knowledge-gain-unanchored-baseline"
   notes: "working-day rhythm opener; the needle is a grounding object — names the physical tool of the cover; chatter pays the read that follows"
 
-- slug: b01c01s02n02
-  svo: "coll-net-mender-flea-bottom pulls the net"
-  shape: chatter
-  axis_moves: []
-  axes_held: []
-  cost_ledger_anchor: "knowledge-gain-unanchored-baseline"
-  notes: "co-presence rhythm anchor; Coll-beside-Taylor established; the net is a grounding physical object; chatter pays the social-cover continuity"
+# b01c01s02n02 deleted at Phase 4 audience trim
+# (3-of-3 vote: cape-fic-reader + dark-fantasy-reader + worm-canon-pedant)
+# Reason: redundant — Coll-at-the-net co-presence is sufficiently carried by s01n05 (held)
+# and s02n11 (folds the net, day-close). Removing this beat tightens the s02 working-day
+# rhythm onto n01+n03 (taylor threads / needle crosses mesh) without losing Coll proximity.
+# Slug preserved in skip; no renumbering. Aggregate s02 knowledge unchanged at 0.20.
+# Stitch-carry: working-day rhythm cover now carried by s02n01 alone + s02n03 (needle crosses mesh).
 
 - slug: b01c01s02n03
   svo: "the needle crosses the mesh"
@@ -358,12 +356,18 @@
 
 ## Chapter-level reconciliation
 
-### Total bones: 29
-- Scene s01: 10 bones (n01–n10)
-- Scene s02: 11 bones (n01–n11)
+### Total bones: 27 (post-Phase-4 trim)
+- Scene s01: 9 bones (n01, n03–n10; n02 deleted at Phase 4 trim)
+- Scene s02: 10 bones (n01, n03–n11; n02 deleted at Phase 4 trim)
 - Scene s03: 8 bones (n01–n08)
 
-Note: s02n11 appears twice above (correcting a magnitude:0 malformed bone to chatter shape). The corrected entry is the valid one. Bone count 11 for s02 stands.
+Phase 1 authored 29; Phase 4 audience trim removed 2 chatter bones (s01n02 building-keeper-pockets-copper-stars 2-of-3; s02n02 coll-pulls-the-net 3-of-3). Aggregates unchanged (deleted bones were chatter with no axis movement).
+
+Note: s02n11 appears twice in the bones list above — the first instance is annotated as a self-correction (magnitude:0 malformed), the second is the corrected chatter form. The corrected entry is the canonical bone.
+
+### Phase 4 stitch-carry notes (for downstream awareness)
+- Distinct prose surface required for the two "holds the eyes" bones (s02n10 watch-pressure-hold vs s03n06 rule-catches-assessment-hold) — same SVO label, different structural function.
+- s03n07 (wren crosses the street) departure must read flat, not elegiac — the brevity is the tell; sentimentalizing the cost-bearer pre-pricing would corrupt the chapter goal.
 
 ### Axes_in_motion delivered
 - knowledge: s01 0.19 + s02 0.20 + s03 0.09 = 0.48 vs chapter target 0.5 (within ±1 rank band)
