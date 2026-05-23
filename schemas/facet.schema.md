@@ -123,7 +123,7 @@ Comparisons, similes, allegories. Sparse by design — fires only when licensed 
 <id> @<proto-line-id> <kind>: <text> | licensed-by: <anchor> [+<support> ...]
 ```
 
-`<kind>` is one of `metaphor | simile | allegory`. `<anchor>` is exactly one of `memory:<id>` or `feeling:<id>` (mandatory). `<support>` is zero-or-more of `tens:<reading>` | `sensory:<id>` | `ni:<id>` | the other anchor type. Multi-justification requires ≥2 layers from `{memory, feeling, tens}`; anchor counts as one.
+`<kind>` is one of `metaphor | simile | allegory`. `<anchor>` is exactly one of `memory:<id>` or `feeling:<id>` (mandatory). `<support>` is zero-or-more of `sensory:<id>` | `ni:<id>` | `peak-bone:<flat-id>` | the other anchor type. Multi-justification requires ≥2 layers from `{memory, feeling, peak-bone, sensory, ni}`; anchor counts as one. (Pre-overhaul `tens:<reading>` support removed under URI-SUBSTANCE-OVERHAUL; pressure-signal substitute is scene-map `peak-bones` membership.)
 
 Per-scene cap ≤1 cross-character. Sparsity 0-3% (zero-fires-per-episode acceptable). Functional registers: callback OR dark-humor (other registers refused). Hard fences absolute (no Earth-Bet proper nouns; AP5 is a label-fence, not a figure-fence — Earth-Bet monument resonance carried through structural figure is the intended doubled-register mechanism). Allegory single-anchor only (multi-beat allegory collapses to strongest beat or refuses). Audience-meaningful inherited transitively from the cited memory or feeling anchor.
 
@@ -160,9 +160,9 @@ Persistent operator-bias tags that stick to entities (actors, locations, props) 
 - `<op>` — `+` (add new keyword to target's vibe-set; token-bundle required) | `-` (retire keyword; token-bundle omitted) | `++` (extend tokens for an existing keyword; token-bundle required, must not duplicate existing tokens by string match). No `=` op.
 - `<keyword>` — hyphenated index handle. Semantic. One per vibe.
 - `<token>` — hyphenated word-algebra phrase, comma-separated within `[...]`. No prose, no sentences. Sentence-parsability test: a token is forbidden if it parses as a complete sentence with subject + finite verb + object. Long compressions (8+ segments) are permissible if structured as a single noun-phrase with compressed modifiers.
-- `<source>` — one or more of `state-update:<id>` | `memory:<id>` | `feeling:<id>` | `proto:<id>` | `tens:<reading>` | `canon:<gloss>` | `world-build:<gloss>`. ≥1 required.
+- `<source>` — one or more of `state-update:<id>` | `memory:<id>` | `feeling:<id>` | `proto:<id>` | `peak-bone:<flat-id>` | `canon:<gloss>` | `world-build:<gloss>`. ≥1 required. (Pre-overhaul `tens:<reading>` source removed under URI-SUBSTANCE-OVERHAUL; pressure-signal substitute is scene-map `peak-bones` membership.)
 
-Vibes are permanent stickers — a vibe added in s01e01 persists to s01e02+ unless explicitly retired with `-`. Transient mood / scene-tone / momentary feeling are NOT vibes (those belong to sensory / feeling / tens facets). Sparsity is liberal — no upper ceiling, since vibes are not rendered in prose. Pre-seeded projects (world-build authored vibe-clouds before facet authoring) force `++`-or-skip op behavior on pre-loaded keywords; gate-2 (op coherence) applies to all targets including episode/season/series scope without exception.
+Vibes are permanent stickers — a vibe added in s01e01 persists to s01e02+ unless explicitly retired with `-`. Transient mood / scene-tone / momentary feeling are NOT vibes (those belong to sensory / feeling facets). Sparsity is liberal — no upper ceiling, since vibes are not rendered in prose. Pre-seeded projects (world-build authored vibe-clouds before facet authoring) force `++`-or-skip op behavior on pre-loaded keywords; gate-2 (op coherence) applies to all targets including episode/season/series scope without exception.
 
 `licensed-by:` is mandatory and machine-resolvable. Multi-source preferred. Cross-target fan-out — events affecting multiple entities should fan-out fires across the affected entities (POV + on-stage co-witnesses + scope target + on-stage location if charged).
 

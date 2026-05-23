@@ -48,7 +48,7 @@ ACCEPT signatures:
 - A non-movement beat earns an entry only if it is the *first* beat in a new location-and-moment (entry serves as place-anchor for subsequent inherited beats).
 
 REJECT signatures:
-- Anchor is a stillness/hold beat (`X holds Y configuration`, `X stays`, `the cart sits`) — these are location-card content or tensometer territory, not loc-state.
+- Anchor is a stillness/hold beat (`X holds Y configuration`, `X stays`, `the cart sits`) — these are location-card content, not loc-state.
 - **Anchor is a dexterity-stillness verb** (`threads`, `sews`, `knots`, `stitches`, `pours`, `weighs`, `mends`, `splices`, `picks`, `wipes`, `folds`) — hand-work done in-place. The character is not moving *through* the location; they are working *in it*. Dexterity verbs do not license a loc-state fire unless the fire is first-beat-in-new-location or carries a valid `continuity-from <prior-loc-state-id>:` token under the transition-run continuity license. (URI-FACETS-CYCLE-1, 2026-05-19 — promoted from audience-gate cycle-1 attack on b01c01 loc-state:3 @11 "threads the needle": both dark-fantasy-reader and worm-canon-pedant independently flagged the anchor-verb-licensing seam the mechanical scan could not see.)
 - Anchor is a pure dialogue beat (`X speaks to Y`) and no positioning is in question — speaking does not need environment unless the speaking *is* the move (e.g. shouted across a yard, whispered behind a hand).
 - Anchor is interiority pushed into physical SVO (perception-feed beats per Phase 0 note #1) — those cite narrator/feel, not loc-state.
@@ -98,8 +98,8 @@ REJECT signatures:
 These are the contamination patterns the active project's prior `STUDIO:` bullets exhibit; the writer must resist and the reviewer must call them out.
 
 1. **Set-dressing sweep.** Dropping every salient item visible at scene-open into one entry. Symptom: multi-clause sensory note. Fix: one focus-element only; the rest is location-card.
-2. **Mood-painting on stillness.** "The yard holds the silence." "The cooling light." Atmosphere standing in for a perceptible focus. Fix: only fire on movement; atmospherics belong to dramatist (tensometer) or are deleted.
-3. **Persistence-as-state.** "The granary holds its three-week shape." Persistence is not state-change; the location card already says what shape the granary holds. Fix: delete or recast as a tensometer beat.
+2. **Mood-painting on stillness.** "The yard holds the silence." "The cooling light." Atmosphere standing in for a perceptible focus. Fix: delete the entry; atmospherics with no perceptible focus-element are not authored in this pipeline.
+3. **Persistence-as-state.** "The granary holds its three-week shape." Persistence is not state-change; the location card already says what shape the granary holds. Fix: delete the entry; persistence-of-state is location-card content, not a facet.
 4. **Inherited re-naming.** Re-citing the sept-yard at every Taylor beat in the sept-yard. Fix: cite once on entry; rely on inheritance until the environment turns over.
 5. **Plan-bullet residue.** Direct conversion of shoot-v1 STUDIO bullets that summarized a whole scene's setting. Fix: discard most; keep only the specific perceptible focus-elements that turn on individual movement beats.
 6. **Time/weather padding.** Filling the time and weather fields with detail that does no work in the conditions or the sensory note. Fix: time/weather only when the move depends on them (predawn → no light; rain-recent → muddy traction; wind-cold → carries sound).
@@ -108,12 +108,12 @@ These are the contamination patterns the active project's prior `STUDIO:` bullet
 
 ## Transition-run continuity license (URI-SCENE-RHYTHM, 2026-05-13)
 
-The three-axis rubric above is calibrated for state-change beats (movement, threshold, environment-turnover). It correctly refuses entries on tens=1 transition runs that don't change state. But s01e02 dogfoods (breath-pass, organic-render-p4, scene-window) all identified the same gap: transition runs render facet-bare, and the stitcher has nothing to weave through them. The bones are correctly atomic; the renders feel metronomic because no atmospheric tissue persists across the run.
+The three-axis rubric above is calibrated for state-change beats (movement, threshold, environment-turnover). It correctly refuses entries on flat-low zone bones (scene-map `rhythm-shape: flat-low` or `fusion-eligible-runs` membership) that don't change state. But s01e02 dogfoods (breath-pass, organic-render-p4, scene-window) all identified the same gap: transition runs render facet-bare, and the stitcher has nothing to weave through them. The bones are correctly atomic; the renders feel metronomic because no atmospheric tissue persists across the run.
 
 The transition-run continuity license is a narrow additive — NOT a relaxation of the necessity / interestingness / frugality axes. It fires for ONE specific structural slot per fusion-eligible-run:
 
 **When the license fires:**
-- The anchor bone is inside a scene-map `fusion-eligible-runs` range (3+ consecutive tens=1 bones, no peak-shadow), AND
+- The anchor bone is inside a scene-map `fusion-eligible-runs` range (3+ consecutive flat-low bones, no peak-shadow), AND
 - The scene's `rhythm-shape` is `flat-low`, `resolving`, or `release-only` (transition postures), AND
 - A prior scene established a sensory baseline (a loc-state entry citing an environment) that the audience can register as continuing into this run.
 
@@ -129,7 +129,7 @@ The `continuity-from` token names the prior loc-state entry whose baseline is be
 - New state-change content (use a normal loc-state entry at the change beat).
 - Inherited re-naming (Anti-pattern 4 still applies in spirit; the carry-note must not just repeat the prior loc-state's sensory note verbatim).
 - Multiple carry-notes per run (one is the entire license).
-- Continuity carry across `rhythm-shape: rising` / `rising-to-peak` / `peak-and-release` / `double-peak` scenes (those have tens momentum that absorbs facet-bare bones differently; the stitcher should not weave continuity through an approach).
+- Continuity carry across `rhythm-shape: rising` / `rising-to-peak` / `peak-and-release` / `double-peak` scenes (those have rising-rhythm momentum that absorbs facet-bare bones differently; the stitcher should not weave continuity through an approach).
 
 **Stitcher consumption.** The scene-window fork reads the `continuity-from` entry and folds the carry-note as connective tissue across the run — em-dash continuation, `still` connective adverb, participial-phrase carry-forward. The render is NOT a standalone sentence; it is tissue that lets the run breathe. Worked example from s01e02 scene-D (bones @41–@49, six of seven facet-bare): `"The flies still had the carter and the wind."` The `still` is the carry-marker; the relay-register established in scene-C is the persisting baseline being carried into scene-D's flat-low run.
 

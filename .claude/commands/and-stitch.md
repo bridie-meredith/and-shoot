@@ -17,7 +17,7 @@ Dialogue and exposition are both **graph-resident facets** consumed by the stitc
 You are the orchestrator. Eight render phases plus a terminal cold-read gate (Phase 9) run in strict sequence:
 
 ```
-theater/bones/<book>-<chapter>.md + theater/facets/* + theater/dialogue/<book>-<chapter>.md + _cite-index-<book>-<chapter>.md
+theater/bones/<book>-<chapter>.md + theater/facets/* + theater/dialogue/<character-slug>.md + theater/facets/_cite-index.md
         │
         ▼
    PHASE 0 — VALIDATE + LOAD
