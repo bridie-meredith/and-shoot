@@ -32,7 +32,7 @@ Per `schemas/facet.schema.md`:
 <id> @<proto-line-id> <one-clause description of what the narrator registers>
 ```
 
-- **Single clause.** No semicolon-spine. No comma-chained run-on (the chain is a *base-register* tell that lives in dialogue planning-cadence; the *interest-flag* is one observation per fire).
+- **One observation per fire.** The interest-flag is a single registration on a single beat; multiple independent observations stacked into one entry are anti-pattern (split or cut). Sentence chassis is unconstrained — semicolons, em-dashes, and clause-coordination are permitted when they fit the POV character's base-register cadence; the rule is observation-count, not punctuation-shape. (Semicolon-spine restriction removed 2026-05-23 per user directive; semicolons are now governed by base-card cadence patterns only — see §Voice fidelity ACCEPT signature "Em-dash or semicolon used per base-card pattern.")
 - **POV-restricted.** Speaker is always the POV character. No third-person omniscient registration (no "the officer thinks").
 - **Anchored.** Every entry must anchor to an existing proto-line ID via `@`.
 - **Sparse.** Not every proto-line fires. Sparsity is a load-bearing rubric property; see §"Curve-shape rubric" for density targets.

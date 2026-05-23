@@ -1,15 +1,28 @@
 ---
 report: facets-final-audit
 chapter: b01c01
-timestamp: 2026-05-23 (post-cycle-2-fixer)
+timestamp: 2026-05-23 (post-cycle-2-fixer; post-directive)
 audit-classes-run: 12
-HARD: 2
+HARD: 0    # 2 HARDs from initial cycle-2 audit (fault-008, fault-021) resolved by fix + adjudicated exemption; fault-020 (FAULT pending ruling) MOOT after 2026-05-23 user directive "Remove semicolon check" retired the §Form no-semicolon-spine rule
 SIGNAL: 9
 earth-bet-hits: 0
 cite-graph-coherence: PASS
 scene-map-coverage: PASS
-cycle: 2-post-fixer-pre-audience-gate
+cycle: 2-post-fixer-post-directive-pre-audience-gate
 ---
+
+# POST-DIRECTIVE UPDATE 2026-05-23 (this section overrides per-finding text below where it conflicts)
+
+User directive "Remove semicolon check" retires `rubric-narrator-interest.md` §Form "No semicolon-spine. No comma-chained run-on" clause. The §Form rule is now "one observation per fire" (anti-stacking discipline); sentence chassis is unconstrained. Effects on this audit report:
+
+- **fault-020 (FAULT pending §Form scope ruling)**: MOOT. The §Form rule the auditor was asking the orchestrator to disambiguate no longer exists. Narrator:1 @2 and narrator:5 @24 semicolons are rubric-compliant on punctuation grounds. Both pass the new "one observation per fire" check (single pre-calc observation expressed across two clauses, not two stacked observations). File-header attestation updated accordingly.
+- **fault-029 (AP-SCAN semicolon saturation)**: MOOT. With no §Form semicolon-spine rule there is no saturation metric to apply.
+- **fault-008 (METADATA-INCONSISTENCY HARD)**: LANDED via mechanical fix. Per-slice file feeling-wren-stitch-maker-flea-bottom-ward.md "No cost-bearer-pre-pricing" paragraph updated to match consolidated text (single-body architecture at @26).
+- **fault-021 (FREQUENCY-BAND HARD)**: LANDED via substance-grounded exemption (user adjudication option 2; F5 precedent). Sensory file header now documents the rubric-spirit-vs-letter analysis and the c01-specific exemption defense.
+- **fault-024 (RUBRIC-FIDELITY narrator:2/3/6/7 §Form pass)**: Reclassified as historical — the §Form rule the four rewrites were targeting has been retired. The rewrites stand (H1 "power" removal still warranted; the rewrites are not worse than the originals).
+- **fault-014 escalation-candidate** (cycle-1 AP-SCAN saturation HARD candidate): MOOT.
+
+Net post-directive findings count: **0 HARD, 9 SIGNAL** (the 9 SIGNAL flags below carry through to audience cycle 2 unchanged; none are §Form-related).
 
 # Facets Final Audit — b01c01 (Cycle 2, Post-Fixer)
 

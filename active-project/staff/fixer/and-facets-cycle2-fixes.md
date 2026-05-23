@@ -201,3 +201,39 @@ session-end: 2026-05-23T13:45:00Z
 findings-applied: 3 (1 mechanical fix + 2 documented exemptions)
 findings-skipped: 0
 exit: CLEAN
+
+---
+
+## Rubric Edit — 2026-05-23T14:00:00Z — "Remove semicolon check" directive
+
+session-start: 2026-05-23T14:00:00Z
+dispatch: user directive "Remove semicolon check"
+scope: rubric-side edit (not file-side)
+
+### What changed
+
+`design/shoot-v2/rubric-narrator-interest.md` § Form, line 35:
+- Old: "**Single clause.** No semicolon-spine. No comma-chained run-on (the chain is a *base-register* tell that lives in dialogue planning-cadence; the *interest-flag* is one observation per fire)."
+- New: "**One observation per fire.** The interest-flag is a single registration on a single beat; multiple independent observations stacked into one entry are anti-pattern (split or cut). Sentence chassis is unconstrained — semicolons, em-dashes, and clause-coordination are permitted when they fit the POV character's base-register cadence; the rule is observation-count, not punctuation-shape. (Semicolon-spine restriction removed 2026-05-23 per user directive; semicolons are now governed by base-card cadence patterns only — see §Voice fidelity ACCEPT signature 'Em-dash or semicolon used per base-card pattern.')"
+
+The §Voice fidelity ACCEPT signature "Em-dash or semicolon used per base-card pattern" was left intact — it provides the positive cadence guidance for semicolon use in NI entries, which is the surviving authority on punctuation shape.
+
+### Downstream knock-on effects
+
+1. `active-project/theater/facets/interest-narrator-b01-c01.md` header: documented the directive + the resulting MOOT status of fault-020, fault-014 saturation HARD candidate, and fault-029 saturation SIGNAL.
+2. `active-project/staff/auditor/facets-final-audit-cycle2.md` frontmatter + post-directive section: HARD count drops from 2 → 0 (fault-008 fix landed + fault-021 exemption landed); fault-020 reclassified MOOT; fault-029 reclassified MOOT; fault-024 reclassified historical (the rule it confirmed compliance against no longer exists).
+3. Cycle-2 audience-gate dispatches will NOT carry the §Form semicolon-spine attack as a valid reviewer line; if any audience persona raises it, the orchestrator dismisses the finding on rubric-directive grounds.
+4. The four cycle-2 narrator rewrites (narrator:2/3/6/7) STAND. They are not reverted — the H1 Earth-Bet category-noun removal at narrator:2 is independently warranted; the other three rewrites are not WORSE than the originals, just different; reverting would be churn for no audience gain.
+
+### Files NOT touched (intentionally)
+
+- `.claude/commands/and-facets.md` line 335 AP-chassis-contamination dialogue anti-pattern: this is the DIFFERENT anti-pattern about Taylor's em-dash+semicolon spine bleeding across non-Taylor speaker voices. It is about voice-fidelity across multiple speakers, not about NI §Form punctuation. The directive most naturally reads as NI-rubric scope only; dialogue chassis-contamination AP scan retained.
+- `design/shoot-v2/phase4-narrator-interest-defense.md` and related historical tuning docs: these are phase-1 artifacts recording the rubric history. They are not active rubric authority. Not touched.
+
+session-end: 2026-05-23T14:05:00Z
+rubric-files-edited: 1 (rubric-narrator-interest.md)
+facet-files-edited: 1 (NI header)
+audit-report-edited: 1 (cycle-2 audit frontmatter + post-directive section)
+findings-mooted: 3 (fault-020 + fault-014 saturation + fault-029)
+findings-reclassified: 1 (fault-024 → historical)
+exit: CLEAN

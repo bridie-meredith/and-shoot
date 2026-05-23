@@ -2,16 +2,25 @@ facet: interest-narrator
 episode: b01c01
 author: taylor-hebert-kl-122ac (POV fork)
 r2-pass: R2.1 judge (2026-05-23)
-# 2026-05-23 cycle-2 fixer pass — rewrote narrator:2/3/6/7 for §Form single-clause compliance
-#   + H1 Earth-Bet category-noun removal (narrator:2 "power").
+# 2026-05-23 cycle-2 fixer pass — rewrote narrator:2/3/6/7 for the then-active §Form
+#   single-clause rule + H1 Earth-Bet category-noun removal (narrator:2 "power").
 #   Inverted-predicate cap: narrator:6 is the one allowed use per file (≤1).
-# 2026-05-23 cycle-2 audit fault-020 header correction: narrator:1 @2 and narrator:5 @24
-#   retain semicolons. Those two entries were OUTSIDE the H2 audience-cycle-1 rewrite scope
-#   (audience flagged narrator:2/3/6/7 only). Per H2 user adjudication "Less weight on pet
-#   peeves at this stage", narrator:1 and narrator:5 are not rewritten in cycle 2; uniform
-#   §Form application is deferred. Post-cycle-2 semicolon count: 2 of 6 = 33%, below the
-#   40% AP-SCAN saturation threshold. If audience cycle 2 flags narrator:1 or narrator:5
-#   on §Form grounds, address then.
+# 2026-05-23 user directive ("Remove semicolon check") — the NI rubric §Form
+#   "No semicolon-spine" clause has been retired. Semicolons + em-dashes are now governed
+#   by base-card cadence patterns only (§Voice fidelity ACCEPT signature "Em-dash or
+#   semicolon used per base-card pattern"). The §Form rule is now "one observation per
+#   fire" (anti-stacking); sentence chassis is unconstrained.
+# Effect on b01c01 NI file:
+#   - narrator:2/3/6/7 cycle-2 rewrites stand (no revert; H1 "power" removal still
+#     warranted; the rewrites are not worse than the originals).
+#   - narrator:1 @2 and narrator:5 @24 (semicolon-spine) are now rubric-compliant on
+#     punctuation grounds; both remain subject to the "one observation per fire" check
+#     (narrator:1 carries the drain-channel sweep + the egress-pre-count — these are
+#     ONE observation expressed across two clauses, not two observations; narrator:5
+#     carries the radius-confirmed-pre-naming + the circuit-count-pre-decision — same
+#     structure, one pre-calc observation across two clauses; both pass the new rule).
+#   - fault-020 (cycle-2 audit) is MOOT post-directive. AP-SCAN saturation HARD
+#     (fault-014 escalation-candidate from cycle-1) is also moot.
 ---
 
 # Narrator Interest — b01c01
