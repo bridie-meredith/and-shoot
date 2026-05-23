@@ -3,8 +3,15 @@ episode: b01c01
 author: taylor-hebert-kl-122ac (POV fork)
 r2-pass: R2.1 judge (2026-05-23)
 # 2026-05-23 cycle-2 fixer pass — rewrote narrator:2/3/6/7 for §Form single-clause compliance
-#   + H1 Earth-Bet category-noun removal (narrator:2 "power"). No semicolons remain in file.
+#   + H1 Earth-Bet category-noun removal (narrator:2 "power").
 #   Inverted-predicate cap: narrator:6 is the one allowed use per file (≤1).
+# 2026-05-23 cycle-2 audit fault-020 header correction: narrator:1 @2 and narrator:5 @24
+#   retain semicolons. Those two entries were OUTSIDE the H2 audience-cycle-1 rewrite scope
+#   (audience flagged narrator:2/3/6/7 only). Per H2 user adjudication "Less weight on pet
+#   peeves at this stage", narrator:1 and narrator:5 are not rewritten in cycle 2; uniform
+#   §Form application is deferred. Post-cycle-2 semicolon count: 2 of 6 = 33%, below the
+#   40% AP-SCAN saturation threshold. If audience cycle 2 flags narrator:1 or narrator:5
+#   on §Form grounds, address then.
 ---
 
 # Narrator Interest — b01c01

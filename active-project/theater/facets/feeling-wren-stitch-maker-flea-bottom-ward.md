@@ -67,9 +67,14 @@ layer: R2.3
 #
 # No cost-bearer-pre-pricing: the tell is the physical habit (eyes-move), not the
 #   meaning attributed. Wren shows that she observed; she does not show that she
-#   understood. The meaning of the flies-observation is left to Taylor to process
-#   at @27 (feel:3 — Taylor drops gaze to the mesh one beat before lifting it).
-#   Two bodies, adjacent beats, distinct work.
+#   understood. The meaning of the flies-observation was originally to be processed
+#   at @27 (taylor slice-local feel:3 — Taylor drops gaze to the mesh one beat before
+#   lifting it), but that entry was DELETED at R2.3 on §Form temporal-latency seam.
+#   The delivery-receipt body-pair architecture is therefore single-body in the live
+#   graph; the @27 receipt does not exist as a feeling-flag fire. Downstream (stitch)
+#   must carry the Taylor-side response via the NI/state register at @27 (vibes:9
+#   "holds-the-eyes-does-not-file" is the live downstream signal of the receipt; no
+#   somatic-feel layer accompanies it).
 #
 # expressed: partial — Taylor is observing Wren and will register the gaze-direction;
 #   the gaze-to-hands is a tell available to the attentive observer.

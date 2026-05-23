@@ -4,14 +4,49 @@ author: studio
 ---
 
 # Sensory — b01c01
-# 27 bones. Short-chapter floor-vs-ceiling exemption (V3) applies: bone_count < 30.
-# Modality floor ≥2. Per-scene cap ≤3.
+# 27 bones. Short-chapter context (bone_count < 30). Modality floor ≥2. Per-scene cap ≤3.
 # All three scenes are flat-low; sensory fires are independent of scene-map pressure-signal.
-# Entries: 5 on 27 bones = 18.5% — above standard 6% ceiling but within V3 exemption range
-#   for modality-floor satisfaction on a short chapter. NOTE: 5 modalities represented
-#   (olfactory, tactile, auditory, thermal, visual); modality count exceeds the floor (2),
-#   so standard 6% ceiling applies per V3 exemption clause. Cull to 4 strongest entries.
-# CULLED to 4 entries covering 3 modalities = 14.8%. Within ADVISORY range.
+# Final disposition: 4 entries covering 4 modalities (smell, tactile, thermal, sound) = 14.8%.
+#
+# ─── DENSITY EXEMPTION (cycle-2 fault-021 adjudication, 2026-05-23) ─────────────────
+# Strict V3 reading (`rubric-sensory.md` line 9): "When bone_count < 30 AND modality count
+#   equals the floor (2), above-band density up to max(6%, 2/bone_count) is ADVISORY not
+#   blocking." At 4 modalities the V3 exemption does NOT engage by the rubric's plain text
+#   — strict reading gives a 6% standard ceiling; 14.8% is over-band; the cycle-2 mechanical
+#   auditor (fault-021) escalated this to HARD on the grounds the file's "Within ADVISORY
+#   range" claim was unsupported by cited rubric provision.
+#
+# Cycle-2 user adjudication (fault-021 option 2; substance-grounded exemption, F5 precedent):
+#   Scene B's flat-low midday work requires multi-modal texture to render the operating-rule
+#   baseline at the needlework + watch-pass beats. The tactile inflection at @12 (needle-
+#   through-mesh) is the discipline of held-hands made physical; the thermal inflection at @14
+#   (walls-releasing-day-warmth) is the chapter's operating-rule register made environmental;
+#   the auditory inflection at @17 (boot-strike-on-cobbles) is the watch-pass approach signal
+#   the bones review staged as the scene B opposing-force cue. Reducing to 2 modalities
+#   monocultures the chapter's most-textured zone and loses three load-bearing register-shifts
+#   on a hinge chapter where the registers ARE the substance.
+#
+# The rubric's V3 sub-clause was authored against a different failure mode (sound-only
+# monoculture on short chapters; modality-floor takes precedence over sparsity-ceiling
+# "because monoculture is the load-bearing pathology, not marginal density"). The c01 sensory
+# file inverts the V3 case: 4-modality coverage with above-band density. The V3 sub-clause's
+# spirit (modality-coverage takes precedence) supports the c01 disposition; the V3 sub-clause's
+# letter does not engage at modality > floor. The mismatch between V3 spirit and V3 letter on
+# the inverted case is the rubric-side issue, not the c01-file issue.
+#
+# Exemption granted: chapter b01c01 sensory file at 4 modalities / 14.8% density is accepted
+#   as a c01-specific structural trade-off. The 4 entries each satisfy the per-entry rubric
+#   (modality, disambiguation, magnitude, perceptibility, AND old-state lineage per F4 repair);
+#   the over-band density is justified by 4-modality coverage on a 27-bone hinge chapter
+#   where modality coverage is the load-bearing substance. Documented in spirit of F5 (memory
+#   doubled-register c01 exemption) — file-level rubric requirement traded against chapter-1
+#   substance preservation.
+#
+# Follow-on (RUBRIC-PROMOTION): a future rubric edit should clarify V3 sub-clause behavior
+#   when modality-count > floor on a short chapter. Two candidate amendments: (a) read V3 as
+#   "modality count ≥ floor → exemption engages with ceiling max(6%, modalities/bone_count)";
+#   (b) add an "over-band-with-modality-coverage" advisory tier separate from the V3
+#   exemption. Logged as a follow-on; not blocking c01.
 
 # SCENE A (@1-9, morning) ─────────────────────────────────────────────────────
 

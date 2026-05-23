@@ -170,3 +170,34 @@ findings-applied: 6
 findings-skipped: 0
 exit: CLEAN
 
+---
+
+## Cycle-2 Post-Audit Adjudication Pass — 2026-05-23
+
+session-start: 2026-05-23T13:30:00Z
+dispatch: orchestrator-direct after cycle-2 Phase 5 re-audit returned 2 HARD + 1 FAULT-pending-ruling
+audit-report: active-project/staff/auditor/facets-final-audit-cycle2.md
+
+The cycle-2 Phase 5 re-audit returned 2 HARDs (fault-008 per-slice stale ref; fault-021 sensory over-band) + 1 FAULT pending §Form scope ruling (fault-020 NI header attestation). The orchestrator landed three resolutions directly:
+
+### fault-008 — LANDED (per-slice file mechanical fix)
+file: active-project/theater/facets/feeling-wren-stitch-maker-flea-bottom-ward.md lines 68-72
+change: replaced the "No cost-bearer-pre-pricing" paragraph's stale two-body claim. The pre-cycle-1 text described a live feel:3 @27 Taylor-receipt forming a delivery-receipt pair with this entry; the R2.3 deletion of feel:3 @27 invalidated that architecture. Cycle-1 H3 audit re-issue declared this COMPLETE but the per-slice file was missed (only the consolidated feeling.md "No cost-bearer-pre-pricing" section was updated). The per-slice file is the primary authoring artifact; the cycle-2 re-audit caught this as HARD METADATA-INCONSISTENCY. Now the per-slice text matches the consolidated text: "delivery-receipt body-pair architecture is single-body in the live graph; the @27 receipt does not exist as a feeling-flag fire. Downstream (stitch) must carry the Taylor-side response via the NI/state register at @27 (vibes:9 'holds-the-eyes-does-not-file' is the live downstream signal of the receipt; no somatic-feel layer accompanies it)."
+
+### fault-020 — LANDED (header correction only per user H2-scope adjudication)
+file: active-project/theater/facets/interest-narrator-b01-c01.md header lines 5-13
+adjudication: user adjudication option 2 ("Header correction only"). The H2 cycle-1 audience callout scope was narrator:2/3/6/7 (the entries audience flagged for saturation). Narrator:1 @2 and narrator:5 @24 retain semicolons but were OUTSIDE H2 scope. Per user "Less weight on pet peeves at this stage" directive, uniform §Form application across narrator:1/5 is deferred. The file header is updated to (a) drop the false "No semicolons remain" attestation, (b) document the H2-scope-limited rewrite, (c) note that post-cycle-2 semicolon count is 2 of 6 = 33%, below the 40% AP-SCAN saturation threshold, (d) defer uniform §Form application until audience cycle-2 raises it (silence is acceptance).
+rubric-side: §Form "Single clause. No semicolon-spine." remains the rubric's plain text; the chapter-specific scope-limit is documented in the file header, not a rubric edit.
+
+### fault-021 — LANDED (substance-grounded exemption per user adjudication, F5 precedent)
+file: active-project/theater/facets/sensory-b01-c01.md header lines 6-44
+adjudication: user adjudication option 2 ("Document substance-grounded exemption"). Strict V3 reading: 4 modalities > floor of 2 → V3 short-chapter exemption does not engage → 14.8% > 6% standard ceiling → HARD over-band. Substance-grounded counter: scene B's flat-low midday work requires the tactile @12 (held-hands operating-rule discipline) + thermal @14 (operating-rule environmental register) + sound @17 (watch-pass opposing-force cue) inflections to render the chapter's most-textured zone; reducing to 2 modalities would monoculture the chapter's load-bearing register-shift work. The V3 sub-clause was authored against the monoculture-on-short-chapter failure mode (the V3 spirit favors modality-coverage over marginal density); the V3 letter does not engage at modality > floor. Exemption granted in spirit of F5 (memory doubled-register c01 exemption): file-level rubric requirement traded against chapter-1 substance preservation. Documented in the sensory file header with explicit rubric-spirit-vs-letter analysis and a follow-on RUBRIC-PROMOTION item flagged for future rubric authority pass.
+
+### Post-adjudication state
+
+All 3 cycle-2 audit findings resolved at landing or by adjudication. fault-008 is content-fixed and disk-verified. fault-020 and fault-021 are documented exemptions with rubric-grounded defenses; they will be probed by cycle-2 audience reviewers and must hold under adversarial review.
+
+session-end: 2026-05-23T13:45:00Z
+findings-applied: 3 (1 mechanical fix + 2 documented exemptions)
+findings-skipped: 0
+exit: CLEAN
