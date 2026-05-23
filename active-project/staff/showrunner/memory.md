@@ -526,6 +526,11 @@ series:
         description: "each protect-target extension defers cost-bearer's entry into the ledger another notch; each gain on the protect-target relationship is paid in cost-bearer non-pricing — the relational-anchor-status slides further from the ledger with every trade that keeps [protect-target] alive"
         cost_note: "note: political-register-toward-elite +1 is structurally a cost — axis nine_means = contempt-without-refusal; cost recorded as +1 because the axis moves toward its damaging end."
         anchor: { book: b01, chapter: ~, scene: ~ }
+      - id: knowledge-gain-unanchored-baseline
+        gain: knowledge +0   # the gain is the chatter bone's enabling work (presence-of-rhythm, settling, day-close) — no axis tick recorded
+        cost: ~              # no costed axis; chatter bones pay a later gain by establishing the conditions under which it lands
+        description: "pre-arrangement, unanchored chatter bones — physical-rhythm openers, settle-in beats, day-close markers — that establish the conditions for a later knowledge gain to be legible. Applies to chatter bones in b01c01 (pre-Otto-arrangement, pre-Wren-relational-anchoring) where the working-day rhythm IS the cover and the rhythm-establishing bones are the cost-ledger payment for the passive read that runs over them. Discharges at b01c01 chapter close — the rhythm-established cover persists into b01c02 without re-payment. Bookkeeping-only entry: no axis movement either direction; the gain is structural-legibility of the chapter's discipline, not a tick."
+        anchor: { book: b01, chapter: b01c01, scene: ~ }
 
     antagonist_pressure:
       - axis: moral-framework

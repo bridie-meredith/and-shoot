@@ -191,13 +191,13 @@
   notes: "grounding bone — the well-step is a named Flea Bottom place-locus; serves event-05; gives the facet layer a spatial anchor for movement-corridor content"
 
 - slug: b01c01s02n07
-  svo: "taylor-hebert-kl-122ac holds the needle"
+  svo: "taylor-hebert-kl-122ac holds the hands"
   shape: held
   axis_moves: []
   axes_held:
-    - { axis: capability, rationale: "discipline bone mid-day: the needle-hold is the physical enactment of the prohibition — hands at work, read running, rule holding the gap open between available-capability and deployed-capability; this is the clearest-form discipline the chunk names; the needle is the physical instrument of the cover and the physical instrument of the hold simultaneously" }
+    - { axis: capability, rationale: "discipline bone mid-day: hands-held-at-work is the physical enactment of the prohibition — hands at the needle, read running through the walls, rule holding the gap open between available-capability and deployed-capability; the hold is on the body-part instrument that would route bodies if deployed (Khepri's hands moved chess-piece smallfolk); hands held to the needle-work is the clearest-form discipline the chunk names; the hands carry the cover-work and the hold simultaneously" }
   cost_ledger_anchor: ~
-  notes: "grounding bone — the needle is a concrete physical object naming the discipline; serves event-02 (the background-read / prohibition dynamic); the held bone's rationale is the scene's structural statement"
+  notes: "body-part-stillness held bone (hands plural is licensed per schemas/bones.schema.md, matching the s01n10 'holds the feet' precedent); serves event-02 (the background-read / prohibition dynamic); the held bone's rationale is the scene's structural statement; Pass 2 fixer: SVO changed from 'holds the needle' (unlicensed — needle is not a body part or resisting-pressure object) to 'holds the hands' (licensed body-part-stillness)"
 
 - slug: b01c01s02n08
   svo: "the boots strike the cobbles"
