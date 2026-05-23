@@ -679,14 +679,14 @@ books:
         #              staff/auditor/write-b01c01-pass2.md,
         #              staff/auditor/write-b01c01-pass5.md,
         #              staff/auditor/write-b01c01-bone-gate.md.
-        status: audited-r1-mechanical    # 2026-05-23 Phase 5 mechanical audit + fixer pass complete (HARD=0; 14 SIGNAL pass-through); Phase 5b cycle 1 fired 36 reviewer dispatches and aggregated 1 ACCEPT (dialogue-wren) / 11 FAIL — cycle-2 fixer-dispatch required per .claude/commands/and-facets.md § Remediation cycle; phase boundary committed
-        audit_path: active-project/staff/auditor/facets-final-audit.md    # 2026-05-23 redo audit; 5 HARD repaired, 14 SIGNAL pass-through to Phase 5b
-        audit_complete: true    # 2026-05-23 mechanical audit + fixer pass complete; HARD=0 achieved
-        audit_findings: 14    # 14 SIGNAL advisories pass to Phase 5b without repair; HARD=0 post-fixer; Earth-Bet hits=0 (mechanical; H1 surfaces a category-noun "power" candidate that the proper-noun scan did not reach — pending adjudication)
-        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r1.md    # 2026-05-23 cycle 1 of /and-facets b01-c01 Phase 5b (post-bones-redo); supersedes the STALE r3 report from prior cap-burned run
-        audience_gate_complete: false    # cycle 1 returned 1 ACCEPT / 11 FAIL; cycle 2 required
-        audience_gate_cycle: 1    # of cap 3 (URI-FACETS-CAP-BURN-SEMANTICS A2)
-        audience_gate_cap_burned: false    # cycle 1; cap (3 cycles) not yet engaged
+        status: audited-r1-mechanical    # 2026-05-23 Phase 5 mechanical audit + cycle-2 fixer + post-audit adjudication + rubric edit complete (HARD=0, 9 SIGNAL); cycle-2 audit at staff/auditor/facets-final-audit-cycle2.md; Phase 5b cycle 2 dispatch in flight as of 2026-05-23 (33 reviewer dispatches: 11 failing-facets × 3 reviewers; dialogue-wren stays cycle-1 ACCEPT and does not re-fire); cap is 3 cycles (URI-FACETS-CAP-BURN-SEMANTICS A2); phase boundary committed
+        audit_path: active-project/staff/auditor/facets-final-audit-cycle2.md    # 2026-05-23 post-cycle-2 audit; HARD=0 (initial 2 HARD + 1 FAULT-pending resolved by fix + exemption + post-directive MOOT); 9 SIGNAL pass-through to cycle-2 audience-gate
+        audit_complete: true    # cycle-2 mechanical audit complete; HARD=0
+        audit_findings: 9    # 9 SIGNAL pass-through to cycle-2 audience-gate; HARD=0; Earth-Bet hits=0 (proper-noun + extended category-noun sweep both clean post-H1 "power" removal)
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md    # 2026-05-23 cycle 2 of /and-facets b01-c01 Phase 5b (post-cycle-2-fixer + post-directive); supersedes cycle-1 r1 report (kept for historical reference)
+        audience_gate_complete: false    # cycle 2 in flight; aggregate pending
+        audience_gate_cycle: 2    # of cap 3 (URI-FACETS-CAP-BURN-SEMANTICS A2); cycle 3 is the last remediation budget
+        audience_gate_cap_burned: false    # cycle 2; cap (3 cycles) not yet engaged
         audience_gate_facets_passed: [dialogue-wren-stitch-maker-flea-bottom-ward]    # 3-of-3 ACCEPT cape-fic + dark-fantasy + worm-canon
         audience_gate_facets_failed: [location-state, interest-narrator, sensory, state-updates, memory, feeling, metaphor, vibes, exposition, dialogue-coll-net-mender-flea-bottom, dialogue-taylor-hebert-kl-122ac]    # 11 facets revised/failed in cycle 1
         audience_gate_headline_findings:    # surfaced before fixer dispatch in cycle-1 report (H1-H4)
