@@ -679,10 +679,10 @@ books:
         #              staff/auditor/write-b01c01-pass2.md,
         #              staff/auditor/write-b01c01-pass5.md,
         #              staff/auditor/write-b01c01-bone-gate.md.
-        status: faceted-r2    # R2 fanout complete 2026-05-23 (10 shards: NI / memory / 3×feeling / metaphor / exposition / 3×dialogue); R2 consolidation at theater/facets/.r2-decisions.md (f-r2-1=1 HARD self-repaired by narrator:4 DELETE; f-r2-4=1 cite-graph repair entailed; arbiter T1+T4: 0 interventions; hard-fence Earth-Bet: 0 hits); Phase 4c cite-index rebuild complete (49 entries, 22/27 protolines decorated, 81.5%); /and-facets resumes at Phase 5 (auditor dispatch)
-        audit_path: active-project/staff/auditor/facets-final-audit-r3.md    # STALE — pertains to prior bone set; not valid against redo bones
-        audit_complete: true    # STALE — pertains to prior bone set
-        audit_findings: 0    # STALE — HARD count from prior run; ~15 SIGNAL carry-forward; not valid against redo bones
+        status: audited    # R2 fanout complete 2026-05-23 (10 shards consolidated at theater/facets/.r2-decisions.md, f-r2-1=1 self-repaired, arbiter T1+T4 0 interventions, hard-fence Earth-Bet 0 hits); Phase 4c cite-index rebuilt; Phase 5 auditor returned 5 HARD + 14 SIGNAL, fixer repaired all 5 HARDs (3 STRUCTURAL loc-state offset + 1 stale state token + 1 vibes:9 dead lic-by + 1 state:10 NI content-alignment); R1 inflight files patched to lock the corrections across rebuilds; cite-index final = 49 entries, 22/27 protolines decorated, 81.5%, all corrected entries back=Y; /and-facets resumes at Phase 5b (audience-gate cycle 1, ~36 parallel dispatches: sensory specialists × 3 + 8 facets × 3 active-audience + 3 dialogue characters × 3)
+        audit_path: active-project/staff/auditor/facets-final-audit.md    # 2026-05-23 redo audit; 5 HARD repaired, 14 SIGNAL pass-through to Phase 5b
+        audit_complete: true    # 2026-05-23 mechanical audit + fixer pass complete; HARD=0 achieved
+        audit_findings: 14    # 14 SIGNAL advisories pass to Phase 5b without repair; HARD=0 post-fixer; Earth-Bet hits=0
         audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md    # STALE — pertains to prior bone set
         audience_gate_complete: true    # STALE — pertains to prior bone set
         audience_gate_cycles: 3    # STALE — pertains to prior bone set
