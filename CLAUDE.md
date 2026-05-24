@@ -51,6 +51,7 @@ loop per chapter:
 | margit | Card warehouse. Stores, indexes, validates, promotes. | `staff/margit/` |
 | editor | Final draft. Library-only under polish-deferred chain; not currently dispatched. Bound at `/and-project` for future revival. | `staff/editor/` |
 | orchestrator-critic | Run-judge card. Defines the standard `/and-review verdict <book>` must satisfy to PASS. Library-only; not a subagent. | `staff/orchestrator-critic/` |
+| admin | User proxy. Receives questions the main session would otherwise route to the human; answers from persistent goals + methodology + LTM, or returns a structured escalation. Cross-session memory (`ltm.md` / `stm.md` / `goals.md` / `methodology.md`). Dispatch instead of `AskUserQuestion` for routine calls; admin decides whether to handle or escalate. | `staff/admin/` |
 
 ---
 
