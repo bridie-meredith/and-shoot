@@ -1185,8 +1185,8 @@ chapters:
         - axis: relational_anchor_status
           direction: up
           target_delta_magnitude: 1.5
-          cost_ledger_anchor: cl-d08
-          notes: "Vhagar-proximity backwash degrades compound-eye coverage at gap-lane boundary; the east-of-water-gate gap is perceptually confirmed as a negative shape in the feed; Wren's exclusion from the ledger becomes visible to Taylor as a structural absence against the disrupted feed; anchor: cl-d08 echo at d10 — the free-movement gap mechanism is now perceptual rather than abstract; journey-required cl03b (the coverage architecture whose gap is the perceptual mechanism)"
+          cost_ledger_anchor: cl04
+          notes: "Vhagar-proximity backwash degrades compound-eye coverage at gap-lane boundary; the east-of-water-gate gap is perceptually confirmed as a negative shape in the feed; Wren's exclusion from the ledger becomes visible to Taylor as a structural absence against the disrupted feed; anchor: cl04 (non-extractable confirmation cost — the closing-the-ledger-on-a-person event at d10 is the same accounting failure that the perceptual gap-confirmation now extends to Wren; 1.5 of 2.0 remaining drawn here, 0.5 unallocated); journey-required cl-d08 (the original gap mechanism that made this perception possible)"
         - axis: capability
           direction: up
           target_delta_magnitude: 1.0
