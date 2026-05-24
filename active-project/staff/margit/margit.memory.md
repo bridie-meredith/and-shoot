@@ -35,3 +35,41 @@ All 10 cards: quality full, scope library (library copy) / scope project (wareho
 ---
 
 *Scrub note (2026-05-24): Mutation log entries for /and-cast Phase 2 candidate menu, /and-cast Phase 4 actor provisioning, b01c01 cycle-1/2/3 monument referrals, and end-of-cycle library sync have been removed from this working memory as part of the post-c01 project scrub back to fresh-/and-series state. The promoted cards themselves remain in the canonical library at `cards/`; the scrubbed log entries are preserved in git history.*
+
+---
+
+### 2026-05-24 — /and-cast Phase 2: Cast Candidate Menu authored
+
+**Project:** taylor-hebert-westeros-road-to-hell
+**Output:** `active-project/staff/showrunner/cast-candidate-menu.md`
+
+**Library cards identified (5 roles, ready for Phase 4 copy):**
+
+| slug | role |
+|---|---|
+| `taylor-hebert-kl-122ac` | protagonist |
+| `otto-hightower` | antagonist |
+| `aemond-targaryen-122ac` | world-embodiment:opposite-number |
+| `wren-stitch-maker-flea-bottom-ward` | cost-bearer |
+| `sera-hightower-kl-122ac` | protect-target |
+
+**Library gaps among required roles (2 roles; margit-fork required at Phase 4):**
+
+| missing slug | role |
+|---|---|
+| `alicent-hightower` | world-embodiment:green-faction-institution |
+| `criston-cole` | world-embodiment:faction-violence-instrument |
+
+**Original-character provisioning required (3 roles; name-novelty discipline applies to all):**
+
+| role-slot | brief archetype guidance |
+|---|---|
+| supporting:Flea-Bottom-ward-network-anchor (ward-elder) | oc-old-hardass pattern; Flea Bottom-native |
+| supporting:Otto-courier-adjacent (intermediary) | oc-local-expert pattern; 122 AC KL courier-tier |
+| supporting:naive-idealist-foil | oc-young-idealist pattern; Faith or Black-adjacent; adult register |
+
+**Optional / nice-to-have:**
+- `rhaenyra-targaryen` (full card exists; 122 AC variant/addendum needed if elevated; decision deferred to Phase 3)
+- `helaena-targaryen` (no card exists; margit-fork required if elevated; can be dropped under scene-count pressure)
+
+**No mutations to library files in this phase.** Menu is read-only output. All provisioning deferred to Phase 4.
