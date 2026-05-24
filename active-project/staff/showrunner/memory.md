@@ -30,10 +30,10 @@ project:
     editor: editor
     orchestrator_critic: v1.3
   series_audit:
-    approved_at: ~
-    approved_by: ~
-    report_path: ~
-    stale_since: ~
+    approved_at: 2026-05-24T00:00:00Z
+    approved_by: user
+    report_path: active-project/staff/reviews/series-audit-2026-05-24.md
+    stale_since: null
 
 series:
   chunk:
