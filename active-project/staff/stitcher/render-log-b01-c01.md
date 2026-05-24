@@ -121,3 +121,209 @@ Anchor pools staged for Phase 1:
 
 ---
 
+## Phase 1 — Lens-anchored render (scene-window mode)
+
+Three scene-forks, serialized across scenes (back-look requires prior scene's rendered prose). Dispatched as general-purpose Agent forks under the stitcher-card protocol (no stitcher subagent type registered; general-purpose with full inline protocol).
+
+### fork-001 — scene-A bones=@1-@9 — scene-window-render
+
+bones-consumed: @1, @2, @3, @4, @5, @6, @7, @8, @9
+back-look: empty (first scene)
+forward-look: scene-B (bones @11-20; opens on "taylor threads the needle" — no clash with @9 held-feet close)
+
+lens-decider-trace:
+- @1: 1 lens fires (loc-state:1); exposition:1 em-dash-fold staged. 1-lens rule → fuse with bone via em-dash. Lens: loc-state fold. Co-cites: loc-state:1, exposition:1. (state:1/2, vibes:1/2 schema-forbidden.)
+- @2: 2 lenses fire (narrator:1, loc-state:2). Rule 1 fires: foreknowledge-clamp ("already counted"). Lens: narrator leads. Co-cites: narrator:1, loc-state:2.
+- @3: 0 lenses. Bone-only.
+- @4: 0 lens-facets; exposition:2 graph-resident em-dash-fold. (Held bone; exposition payload IS the holding-quality.)
+- @5: 0 lenses, 0 facets. Bone-only.
+- @6: 2 lenses fire (sensory:1, loc-state:3). Rule 2 does NOT fire (sensory tag `up`, not spike/drop). Rule 4 default kinetic: sensory leads. Co-anchor fold applied (em-dash + comma-appositive).
+- @7: 0 lenses. Bone-only (state:3 forbidden).
+- @8: BARE-SPEECH-BONE-CAP-BURN per cap-burn DELETE (fault-030 ACCEPTED-AT-CAP-BURN); LEGACY-SILENT-SPEECH. Render silent acknowledgment per cap-burn license.
+- @9: 3 renderable lenses (feel:1, mem:1, narrator:2). Rule 1 does NOT fire (no foreknowledge clamp). Rule 2 does NOT fire (no sensory). Rule 3 does NOT fire (no peak). Rule 4 default kinetic: feel leads, NI + mem fold after. Rule 5 damping not needed. Co-cites: feel:1, mem:1, narrator:2. (state:9, vibes:3/4 forbidden.)
+
+variance-moves:
+- Fused @1 + loc-state:1 + exposition:1 em-dash-fold into one entry-beat sentence (fusion-eligible-run opener license; flat-low aggressive posture).
+- Split @2 across L2/L3: narrator:1 foreknowledge-clamp + loc-state:2 yard-crossing kept verbatim across two sentences rather than compression-fused.
+- @4 folded exposition:2 verbatim via em-dash + semicolon; voice-transformed to first-person past-tense.
+- L6/L7 opener-variance: short standalone "I circled the block." vs heavy em-dash-folded "I passed the tallow-stall —" gives bone-percussion break inside the @1-6 fusion-eligible run.
+- @6 sensory+loc-state co-anchor fold applied as em-dash + comma-appositive perceptual unit.
+- @9 held-bone given dedicated 2-sentence beat (L10 feel-body land, L11 NI+mem cognition land); paragraph break after @8 enforces held-bone discipline.
+- L11 surfaces both narrator:2 and mem:1 verbatim per Phase-1-renders-both discipline; redundancy-cull deferred to Phase 2.
+
+refusals:
+- Did not invent dialogue for @8 — BARE per cap-burn (fault-030 ACCEPTED-AT-CAP-BURN); rendered as silent needle-action with attention-not-landing per prompt's explicit cap-burn license example. No quoted speech; the deleted line "There's mending if you can hold a needle." does not surface.
+- Did not fuse @8/@9 despite no peak-shadow declared — held-discipline at scene-close carries anti-fusion weight.
+- Did not render vibes:1/2/3/4 — schema-forbidden bias-only.
+- Did not render state:1/2/3/6/7/8/9 — schema-forbidden continuity-only.
+- Did not collapse mem:1 against narrator:2 at L11 — Phase 2 redundancy cull is the correct downstream resolution for the doubled register.
+- Did not invent body / spatial / route / scene-prose / cognitive detail beyond cited facets — bone-faithfulness fence held throughout.
+
+bone-walk:
+- @1 → L1 (fused: bone + loc-state:1 + exposition:1 em-dash-fold)
+- @2 → L2-L3 (split: narrator:1 foreknowledge-clamp at L2; bone + loc-state:2 at L3)
+- @3 → L4 (bone-only)
+- @4 → L5 (held; bone + exposition:2 em-dash-fold)
+- @5 → L6 (bone-only; opener-variance pivot)
+- @6 → L7 (sensory:1 + loc-state:3 co-anchor fold)
+- @7 → L8 (bone-only chatter; state:3 forbidden)
+- @8 → L9 (BARE-SPEECH-BONE-CAP-BURN; LEGACY-SILENT-SPEECH; silent needle-action per cap-burn license)
+- @9 → L10-L11 (held; feel:1 body-land at L10; narrator:2 + mem:1 cognition-fold at L11)
+
+drift-risk: minor — L11 surfaces narrator:2 and mem:1 verbatim and the two facets are deliberately near-duplicates (NOTE-001 doubled-register design). Cold-read will register the redundancy; the correct resolution is Phase 2 redundancy cull, not Phase 1 invention-side compression. Flagged as expected, not as fault.
+
+cap-burn-handling:
+- @8 rendered silent per cap-burn license (fault-030 ACCEPTED-AT-CAP-BURN); no invented speech content; deleted utterance does not appear; render-form follows prompt's example template (needle-continues-working + attention-not-landing-on-POV-face).
+
+### fork-002 — scene-B bones=@11-@20 — scene-window-render
+
+bones-consumed: @11, @12, @13, @14, @15, @16, @17, @18, @19, @20
+back-look: scene-A rendered prose (3 paragraphs; L1-L11)
+forward-look: scene-C (bones @22-@29; feel:3 @26 / narrator:5 @24 / narrator:6 @26 / loc-state:7 @22 / exposition:5 @22 / dialogue @23/@25/@26) — scene-B closes on @20 day-held ledger; scene-C opens on @22 Wren's alley-mouth entry — no clash.
+
+lens-decider-trace:
+- @11: rule 4 default; loc-state:4 leads (place-anchor first-beat in scene; sensory at @12 follows kinetic open). Co-cites: loc-state:4.
+- @12: rule 2 fires (sensory:2 tag=spike). Lens: sensory leads. Co-cites: sensory:2.
+- @13: rule 4 default; NI leads (narrator:3 passive fauna-feed). Co-cites: narrator:3.
+- @14: rule 2 fires (sensory:3 tag=spike). Lens: sensory leads. Co-cites: sensory:3.
+- @15: rule 4 default; loc-state:5 leads (well-step). Co-cites: loc-state:5.
+- @16: rule 5 recent-focus damping away from sensory/loc; held-bone discipline; mem:2 + feel:2 co-cite — fork CHOSE to render mem:2 verbatim and proactively cull feel:2 (see DRIFT below).
+- @17: rule 4 default (NOT rule 2 — sensory:4 tag is `up`, not spike/drop; fork's lens-trace MIS-CITED rule 2). Sensory leads regardless under default kinetic. Co-cites: sensory:4. **LENS-TRACE-MIS-CITATION (minor; outcome correct).**
+- @18: rule 4 default; loc-state:6 leads (Hook's bend at-establishment). Co-cites: loc-state:6. NO Watch/Hook gloss added (exposition entry 4 DELETED at R2.5; loc-state carries verbatim).
+- @19: 0 facets co-cite (narrator:4 was DELETED at R2.1). Bone-only; held-discipline at watch-pressure-moment. Stands alone.
+- @20: rule 4 default; narrator:7 leads (day-close ledger). Co-cites: narrator:7. (state:5, state:10 forbidden.)
+
+variance-moves:
+- @11+@12 chain-folded with colon → em-dash (fusion-eligible run @12-19 license; @11 outside run but cadence-fold via colon).
+- @13 standalone (NI verbatim — held line-break preserves the cognitive content).
+- @14+@15 fused with comma-and chain (eligible run; thermal + loc-state co-flow on ambient-drift beat).
+- @16 held standalone (anti-fusion at held-bone; mem:2 verbatim renders the held-state cognition).
+- @17+@18 fused (watch-pass pressure audible: boot-strike → patrol-naming on loc-state verbatim).
+- @19 held standalone ("I held the eyes" — three-word sentence; pressure-and-discipline beat lands).
+- @20 split across L10/L11 (Coll-fold bone L10; narrator:7 fused L11 — day-close ledger gets dedicated sentence).
+- Anti-repetition vs scene-A: opening kinetic hand-work distinct from scene-A's "I paid" / "The drain channel" / "I dropped" openers; no "sense ran the walls" echo; "held the eyes" new bone-object distinct from scene-A's "held the feet".
+
+refusals:
+- Did not add Watch / Hook gloss at @18 (exposition entries 3, 4 DELETED at R2.5; loc-state covers).
+- Did not invent NI at @19 (narrator:4 was deleted; held-bone stands alone; no fabricated cognition).
+- Did not render schema-forbidden vibes:5/6/7/8/9 or state-updates entries.
+- Did not invent body / dialogue / spatial / cognitive content beyond cited facets.
+
+bone-walk:
+- @11 → L1 (fused: bone + loc-state:4)
+- @12 → L2 (sensory-led)
+- @13 → L3 (NI-led standalone)
+- @14 → L4 (sensory-led)
+- @15 → L5 (loc-state-led fused with @14)
+- @16 → L6 (held; mem:2 verbatim)
+- @17 → L7 (sensory)
+- @18 → L8 (loc-state verbatim)
+- @19 → L9 (bone-only held; three-word standalone)
+- @20 → L10-L11 (bone L10 + narrator:7 L11)
+
+drift-risk: **MODERATE — three flags surfaced for Phase 2/Phase 7 reconciliation**:
+
+1. **DROP-FACET feel:2 @16** (Phase-1-proactive-cull). The fork rendered mem:2 verbatim ("the hands are on the needle...") and CULLED feel:2 ("holds both hands flat against the mesh") rather than rendering both. Phase 1 contract is to render all facet content and defer redundancy decisions to Phase 2. Fork's rationale: feel:2 + mem:2 + bone-V "holds the hands" at the same anchor would AP-stack the held-discipline beat. Phase 2 redundancy cull or Phase 5 un-merge license should validate the cull or rescue feel:2. If feel:2 is restored, the held-bone clause becomes: `I held both hands flat against the mesh. The hands were on the needle and the needle was what they were for today, and this was what having hands was, here, in this place, at this work.` Recovery is mechanical.
+
+2. **FAULT-PHASE-1-REWORD at L1**: loc-state:4 verbatim ends "the working position's spatial anchor established" — fork rendered "settled" instead. Unlicensed REWORD at Phase 1. Phase 7 Q9 (awkward words) or Phase 2 fidelity check should revert "settled" → "established". Near-synonym; meaning preserved; surface deviation noted.
+
+3. **LENS-TRACE-MIS-CITATION @17**: fork's trace claimed rule 2 fires on `tag=up`; rule 2 fires ONLY on `tag=spike` or `tag=drop`. The correct trace is rule 4 default kinetic (only sensory fires at @17 among the lens decider's domain; sensory leads trivially). Render outcome identical; auditor-trace correction only.
+
+(None of these block downstream phases. All are recoverable.)
+
+cap-burn-handling:
+- N/A for scene-B (no bare-speech bones).
+
+### fork-003 — scene-C bones=@22-@29 — scene-window-render
+
+bones-consumed: @22, @23, @24, @25, @26, @27, @28, @29
+back-look: scene-A + scene-B rendered prose (4 paragraphs scene-B + 3 paragraphs scene-A = 7 paragraphs; L1-L22 across forks-001-002)
+forward-look: none (last scene of chapter)
+
+lens-decider-trace:
+- @22: rule 4 default; loc-state:7 leads (alley-mouth entry); exposition:5 em-dash-fold rides inside the same sentence at first mention of Wren. Co-cites: loc-state:7, exposition:5.
+- @23: dialogue-bone; speaker-paragraph rule yields lens-decider; Wren utterance verbatim. No facet co-cite.
+- @24: rule 1 fires — foreknowledge-clamp ("had already mapped... before"). NI leads. Co-cites: narrator:5.
+- @25: dialogue-bone; speaker-paragraph rule yields lens-decider; Taylor utterance verbatim.
+- @26: dialogue-bone primary (Wren utterance verbatim, own paragraph); feel:3 folds as Wren's pre-speech body-show (before utterance); narrator:6 folds as Taylor-interior receipt at end of paragraph (inverted-predicate cap consumed). Foreknowledge "should have returned" register present but yields to dialogue primacy under speaker-paragraph rule.
+- @27: 0 facets co-cite (feel-taylor:3 @27 DELETED at R2.3 on §Form temporal-latency; vibes:9 schema-forbidden). Bone-only held; rule catches.
+- @28: 0 facets. Chatter bone-only (Wren-crosses-street).
+- @29: 0 facets. Bone-only held closing; the rule's verdict.
+
+variance-moves:
+- @22 aggressive em-dash-fold: exposition:5 placed as em-dash phrase immediately after "Wren" first-mention; loc-state:7 alley-mouth content folds at sentence tail. One sentence, ~50 words — earned by the cost-bearer-introduction load-bearing status.
+- Speaker-paragraph rule enforced: @22 own paragraph; @23 own; @24 own (held + NI); @25 own; @26 own (feel:3 + Wren-utterance + narrator:6 fold); @27+@28 fused (held + motion-chatter; @28 is not a speaker turn, so speaker-paragraph rule does not bar); @29 own.
+- Close-register variance: chapter closes on flat declarative "I lifted the needle." — distinct from scene-A "block was not requiring anything..." and scene-B "the day held under the count..." cadences. Brevity-as-tell.
+- Opener anti-repetition: scene-C opens with "A girl stepped into the alley-mouth" — subject = Wren, not "I"; breaks the back-look "I + verb" chain run.
+
+refusals:
+- Did not invent interior content at @27 (no facet fires; bone S+V+O only).
+- Did not expand @29 beyond held SVO; brevity-as-tell is the chapter-close discipline.
+- Did not name Khepri anywhere in interior; narrator:5/6 verbatim already compliant.
+- Did not use non-basic attribution verb at any dialogue beat ("said" throughout; no preferred-attribution-verbs section on either character card).
+- Did not render exposition:5 a second time (em-dash-fold once at @22).
+- Did not fuse @23 with @22 or @25 with @24 (speaker-paragraph rule).
+- Did not fuse @24 with @23 (held-bone anti-fuses).
+- Did not render schema-forbidden vibes:7/8/9/10 or state-updates entries.
+
+bone-walk:
+- @22 → L1 (entry; exposition:5 em-dash-fold inside the bone-rendered sentence at "Wren" first-mention; loc-state:7 alley-mouth body folds at sentence tail)
+- @23 → L2 (Wren speech verbatim; own paragraph)
+- @24 → L3-L4 (NI-lead foreknowledge-clamp at L3; held bone S+V+O at L4)
+- @25 → L5 (Taylor speech verbatim; own paragraph)
+- @26 → L6-L8 (feel:3 body-show at L6; Wren utterance verbatim at L7; narrator:6 inverted-predicate fold at L8)
+- @27 → L9 (held; rule catches)
+- @28 → L10 (chatter; shares paragraph with @27)
+- @29 → L11 (held closing needle-lift; standalone paragraph)
+
+drift-risk: **MODERATE — three small fidelity slips flagged for Phase 2/Phase 7**:
+
+1. **loc-state:7 RESTRUCTURED at L1**: facet verbatim ends "narrow enough that approach reads as deliberate, not incidental"; fork rendered "the approach read as deliberate, not incidental, in the narrowness of the way." The "narrowness of the way" is a noun-phrase paraphrase of "narrow enough that..." restructured for syntactic-fit with the surrounding em-dash-folded sentence. Information preserved; surface form deviates. Phase 7 Q9 / Phase 2 reconciliation could revert to closer verbatim.
+
+2. **feel:3 SURFACE SUBSTITUTION at L6**: facet verbatim is "wren-stitch-maker-flea-bottom-ward: moves the eyes to Taylor's hands before speaking". Faithful past + POV resolution would render: "Wren moved the eyes to my hands before speaking" (or "She moved the eyes to my hands before she spoke"). Fork rendered: "She moved her eyes to my hands before she spoke." Substituted "the eyes" → "her eyes" (idiom-fit but the project's bone-object-policy is `verbatim` and the chapter uses "the eyes / the hands / the feet" form consistently). Surface-form deviation; meaning preserved. Phase 7 Q9 could revert "her eyes" → "the eyes".
+
+3. **narrator:6 PAST-PERFECT INTERPRETATION at L8**: facet verbatim "what the girl saw is what the read should have returned — the girl arrived at it without the insects". Voice-transform to past would yield "...the girl arrived at it..." (simple past). Fork rendered "the girl had arrived at it" (past-perfect). Defensible as voice-transform interpretation (prior-action sequencing), but strictly the verbatim is simple past after voice-shift. Minor.
+
+(None block downstream phases.)
+
+dialogue-handling:
+- @23 wren:1 verbatim "You walked the block three times this morning. I wasn't looking for you." — attribution: "said"; speaker-name first-mention "she" (Wren just introduced in @22's paragraph; pronoun OK after immediate adjacency).
+- @25 taylor:2 verbatim "Nothing for you here. Go on." — attribution: "I said".
+- @26 wren:2 verbatim "There were flies on the meat-stall. There weren't any on your hand." — attribution: "she said".
+
+exposition-handling:
+- @22 exposition:5 em-dash-fold rendered verbatim modulo voice-transform: gloss inserted as em-dash phrase immediately after "Wren" first-mention; phrase carries ward-of-stitch-maker's-household + light-work-for-shelter-and-two-meals + stitches-trim-ends + has-been-here-long-enough + watches-before-acting. Tense shifted to past throughout. Rendered once; never restated.
+
+cap-burn-handling:
+- N/A for scene-C.
+
+---
+
+## Phase 1 — completion summary
+
+- 3 scene-forks dispatched, all returned successfully.
+- 27 bones rendered (per bone-walk: @1-9, @11-20, @22-29). 0 bones missing.
+- 11 + 11 + 11 = 33 sentences (rough; final line-ID count at Phase 8).
+- Schema-forbidden vibes + state-updates not rendered (correctly suppressed by all three forks).
+- Cap-burn @8 silent-action rendered per license.
+- Dialogue utterances verbatim across @23, @25, @26.
+- Exposition em-dash-folds at @1, @4, @22 verbatim modulo voice-transform.
+
+**Phase 1 drift consolidated for Phase 2/7 reconciliation:**
+
+| Flag | Anchor | Class | Recovery path |
+|---|---|---|---|
+| FACET-DEFERRED feel:2 | @16 (scene-B L6) | Phase-1-proactive-cull (feel:2 subsumed into mem:2) | Phase 2 redundancy cull validates or Phase 5 un-merge rescues |
+| FAULT-PHASE-1-REWORD "established" → "settled" | @11 loc-state:4 (scene-B L1) | Unlicensed REWORD | Phase 7 Q9 or Phase 2 fidelity check reverts |
+| LENS-TRACE-MIS-CITATION rule 2 | @17 (scene-B) | Auditor-trace; outcome correct | Render-log correction only; no prose change |
+| loc-state:7 RESTRUCTURED "narrowness of the way" | @22 (scene-C L1) | Paraphrase for syntactic fit | Phase 7 Q9 may revert |
+| feel:3 "the eyes" → "her eyes" | @26 (scene-C L6) | Surface substitution (bone-object-policy `verbatim` deviation) | Phase 7 Q9 reverts |
+| narrator:6 "arrived" → "had arrived" | @26 (scene-C L8) | Past-perfect interpretation | Defensible voice-transform; flag for Phase 7 |
+
+All flags are recoverable downstream. No bone missing, no invented dialogue, no schema-forbidden facets rendered.
+
+State machine: Phase 1 → in-progress (Phase 2 next).
+
+---
+
+
