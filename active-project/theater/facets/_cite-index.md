@@ -1,15 +1,15 @@
 # Cite-Index — b01-c01
-generated: 2026-05-23
+generated: 2026-05-24
 source: active-project/theater/proto-lines/b01-c01.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 49 facet entries; 22/27 protolines decorated (81.5%)
+totals: 49 facet entries; 21/27 protolines decorated (77.8%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
-| 0 (bare)   | 5 |
-| 1          | 10 |
+| 0 (bare)   | 6 |
+| 1          | 9 |
 | 2          | 6 |
 | 3          | 2 |
 | 4          | 1 |
@@ -110,4 +110,4 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 ## Bare protolines (no citations accrued)
 _Round-2 add candidates if the rubric licenses a fire here._
 
-@3, @5, @11, @19, @29
+@3, @5, @8, @11, @19, @29
