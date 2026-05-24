@@ -462,4 +462,283 @@ State machine: Phase 6 → complete (Phase 7 per-sentence editorial reflection n
 
 ---
 
+## Phase 7 — editorial reflection
+
+profile: phase-7.enabled=true; questions=Q1-Q9 standard; cut-aggressiveness=strict; reshow-min-sources=2; reword-density-cap=2 per sentence; bones-cuttable=anchor-cut-only; borderline-policy=reject (EXPOSITION-DERIVED + DIALOGUE-UTTERANCE-DERIVED borderlines = KEEP).
+persona: neutral (defers to profile defaults).
+project lists: anti-jargon / hollow-prose-patterns / asinine-patterns ALL empty (schema defaults). Q5/Q8/Q9 calls based on rubric definitions, not project-specific lists.
+
+Sentence inventory: 37 sentences across 14 paragraphs (¶1: 1 / ¶2: 6 / ¶3: 4 / ¶4: 3 / ¶5: 4 / ¶6: 3 / ¶7: 2 / ¶8: 1 / ¶9: 2 / ¶10: 2 / ¶11: 2 / ¶12: 4 / ¶13: 2 / ¶14: 1). All 37 walked serially below.
+
+### Q-walk
+
+```
+[¶1 S1] "I paid the building-keeper at the corner-room threshold..." anchor=@1(bone+lens+exposition-derived)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @1 + loc-state:1 + exposition:1 em-dash-fold; exposition-policy pre-clears Q1/Q5/Q8 borderlines; em-dashes carry licensed gloss, not reached-for; "subsistence-class permanent" / "anonymous copper-star transaction" graph-resident verbatim — no Q9 fault.
+
+[¶2 S1] "The drain channel put the yard on one side..." anchor=@2(bone+lens)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @2 + narrator:1 foreknowledge-clamp (verbatim "she has already counted what is between them" → first-person past). Semicolon-spine licensed by NI rubric post-2026-05-23 directive. Counterfactual cut loses the egress-pre-count signal that establishes Taylor's resting mode.
+
+[¶2 S2] "I crossed — wet stone gap at the yard crossing..." anchor=@2(bone+lens)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone-V "crossed" + loc-state:2 verbatim. The "footing cost a stride's width" carries the navigation cost. Em-dash punctuation necessary for apposition; not reached-for.
+
+[¶2 S3] "Coll lifted his eyes." anchor=@3(bone-only)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @3 SVO; first concrete Coll-action; non-cuttable counterfactually (without it Coll's @4 first-mention has no co-located action-frame).
+
+[¶2 S4] "He worked the net — net-mender, same corner since before I arrived..." anchor=@4(exposition-derived)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @4 + exposition:2 verbatim em-dash-fold (first-mention-character Coll). Exposition-policy: Q1/Q5/Q8 pre-cleared. Q9 check: "net-mender" is establishment-anchored (graph-resident); "noticed without registering as notable" is verbatim gloss prose. No FAULT-EXPOSITION-AUDIT-MISS. Semicolon-spine carries the range-of-interest payload; necessary punctuation.
+
+[¶2 S5] "I circled the block." anchor=@5(bone-only)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @5 SVO; opener-variance pivot inside fusion-eligible run @1-6 (Phase 1 variance-move); short standalone provides bone-percussion break. Cutting violates Phase 1 deliberate variance.
+
+[¶2 S6] "I passed the tallow-stall — the smoke-funnel drawing within arm's reach..." anchor=@6(bone+lens)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @6 + sensory:1 (smell olfactory inflection) + loc-state:3 ("smoke-funnel" verbatim graph-resident). "tallow-stall" / "smoke-funnel" are Westerosi-establishment + facet-anchored compounds; KEEP per prompt's Q9-scrutiny list.
+
+[¶3 S1] "I dropped the pack." anchor=@7(bone-only)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @7 SVO; physical settle-into-work beat; counterfactual cut removes the day's transition into the working-corner-posture. Brevity sets up the held-bone landing at @9.
+
+[¶3 S2] "Coll's needle moved, his attention not landing on my face." anchor=@8(bone+cap-burn-silent)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @8 rendered silent under BARE-SPEECH-BONE-CAP-BURN license (cap-burn DELETE on coll-net-mender-flea-bottom:1; fault-030 ACCEPTED-AT-CAP-BURN). The needle-action + attention-not-landing carries the silent-acknowledgment per cap-burn license example. Q1: load-bearing — without it the speech-bone's absence registers as missing rather than as silent-action-substituted. KEEP is mandatory.
+
+[¶3 S3] "I set both feet even on the flagstones." anchor=@9(feel:1 verbatim)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: feel:1 @9 verbatim (taylor-hebert-kl-122ac: sets both feet even on the flagstones). Held-bone body-landing for mem:1's monument-cognition that follows. Counterfactual cut removes the chapter's first held-discipline beat body-anchor.
+
+[¶3 S4] "The sense ran the walls and the walls gave it back unchanged, because nothing here had called for what I was not doing." anchor=@9(narrator:2 verbatim)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: narrator:2 @9 verbatim (NI-spine for mem:1; cap-burn-preserved as the chapter's NOTE-001 override-architecture-residue cognition). mem:1 was already culled at Phase 2 (DROP-IMAGE-OVERLAP). The remaining narrator:2 surface stands alone as the absence-attending cognition. CONTRACTION-WAIVE "was not" honored per Phase 4 verbatim-fidelity decision.
+
+[¶4 S1] "I threaded the needle, working corner off the Hook, Coll's net-frame at the far edge: midday under overcast, the working position's spatial anchor established." anchor=@11(bone+lens)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @11 + loc-state:4 verbatim (already REVERTED at Phase 4 from "settled" → "established"). "spatial anchor established" register noted in prompt as slightly clinical (Q8 candidate); per loc-state:4 graph-resident verbatim, KEEP unless clear FAULT-LOC-STATE-AUDIT-MISS — no such fault declared. Colon-and-comma punctuation chains the place-anchor first-beat sequence; not reached-for.
+
+[¶4 S2] "The needle crossed the mesh — thread-resistance and metal-smoothness, the hand-sensation taking its first count of the day." anchor=@12(bone+sensory:2)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: yes
+  → REWORD: "the hand-sensation taking its first count of the day" → "the hand taking its first count of the day"
+  rationale: sensory:2 verbatim is "tactile: working-corner-open-air -> needle-through-mesh # tag: spike" — the arrow renders as the "thread-resistance and metal-smoothness" pair (faithful prose-template). "hand-sensation" is stitcher prose interpreting the sensory arrow's destination; not graph-resident. Q9 hit: invented hyphenated nominalization compound. Clean substitution drops "-sensation" (the "count" already carries the sensory reading); meaning preserved; ≤2 substitutions per sentence (1 used). Per prompt's scrutiny list ("consider REWORD; or accept as fold variant") — strict default + neutral persona → REWORD applied. Q9-density cap (3+ → RESHOW) not approached.
+
+[¶4 S3] "Every warm body in the block was legible at the work-level density I was not working against." anchor=@13(narrator:3 verbatim)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: narrator:3 @13 verbatim (passive fauna-feed channel; chapter opposing-force interior register). "work-level density" graph-resident per prompt; KEEP. CONTRACTION-WAIVE "was not" honored. Counterfactual: removing loses the chapter's opposing-force visibility (the insect-fill against which held bones operate).
+
+[¶5 S1] "The walls cooled, releasing day-warmth into the overcast." anchor=@14(bone+sensory:3)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @14 + sensory:3 thermal inflection (verbatim arrow "flea-bottom-midday-overcast-ambient -> walls-releasing-day-warmth # tag: spike") rendered as prose-template. The participial "releasing day-warmth" carries the arrow destination cleanly; no invented compound.
+
+[¶5 S2] "I passed the well-step, the stone wet from mid-morning draws — sidefoot past the standing pool." anchor=@15(bone+loc-state:5)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @15 + loc-state:5 verbatim ("the well-step stone wet from mid-morning draws; passage is sidefoot to avoid the standing pool"). "well-step" Westerosi-establishment-anchored; "sidefoot" is loc-state verbatim. Em-dash punctuation for navigation-cost apposition; not reached-for.
+
+[¶5 S3] "I held both hands flat against the mesh." anchor=@16(feel:2 verbatim; UN-MERGE-RESCUED at Phase 5)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: feel:2 @16 verbatim (taylor-hebert-kl-122ac: holds both hands flat against the mesh). Body-anchor for held-bone "holds"; without it the bone-V would surface only via mem:2 cognition (RENDERED-ILLEGIBLE risk). Phase 5 UN-MERGE-RESCUE was the canonical mechanism. Confirmed not over-stacked: the body-press + cognition pair lands cleanly across two sentences.
+
+[¶5 S4] "The hands were on the needle and the needle was what they were for today, and this was what having hands was, here, in this place, at this work." anchor=@16(mem:2 verbatim)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: mem:2 @16 verbatim (graph-resident; monument-cognition; Earth-Bet displacement override-architecture-instrument-withheld). Counterfactual: removing loses the chapter's mid-day held-discipline monument-callback. The chapter's central characterization (architecture-residue held in body) needs this cognition; feel:2 above is body-anchor, mem:2 here is structural-meaning layer. Q3 (boring/repetitive): the doubled-register echoes "hands" but each clause does distinct register-work (hands-as-current-instrument / hands-as-essence). Strict default would consider; held-monument design forbids over-cut on a hinge-chapter quiet-by-design beat (prompt's final discipline reminder). KEEP.
+
+[¶6 S1] "The boots struck the cobbles." anchor=@17(bone+sensory:4)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @17 + sensory:4 (auditory inflection boot-strike-on-cobbles). Short kinetic SVO; watch-pass approach-signal opener. Anti-fusion against @18's loc-state-led pressure beat.
+
+[¶6 S2] "The city-watch passed the Hook's bend: four-body patrol in gold cloaks, the working corner with unobstructed line-of-sight to the bend." anchor=@18(loc-state:6 verbatim)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: loc-state:6 verbatim (exposition entry 4 was DELETED at R2.5; loc-state carries both Watch and Hook glosses). "four-body patrol in gold cloaks" carries the Watch designation; "Hook's bend" anchors place. Colon punctuation chains the patrol-naming after the place-anchor; not reached-for.
+
+[¶6 S3] "I held the eyes." anchor=@19(bone-only held)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @19 SVO held; three-word standalone pressure-and-discipline beat. narrator:4 was DELETED at R2.1 so the bone stands alone by design. Brevity-as-tell discipline. Counterfactual cut removes the watch-pressure-moment held register.
+
+[¶7 S1] "Coll folded the net." anchor=@20(bone-only)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @20 first-half (Coll-action exit signal at scene-B close); concise kinetic SVO. Counterfactual cut removes the day-close pivot that motivates narrator:7's ledger-fold next sentence.
+
+[¶7 S2] "The day held under the count I had been running, and the weight of what I had not done was in the count." anchor=@20(narrator:7 verbatim)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: narrator:7 @20 verbatim (day-close ledger; NOTE-002 carrier; G5 hold-live "nothing had been moved that needed not to be moved"). CONTRACTION-WAIVE "had not done" per Phase 4 verbatim-fidelity decision. Counterfactual: removing loses the chapter's cost-tracking ledger-close — the prohibition's continuing intactness register.
+
+[¶8 S1] "A girl stepped into the alley-mouth from the meat-stall direction — Wren, ward of the stitch-maker's household two buildings over..." anchor=@22(bone+lens+exposition-derived)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @22 + loc-state:7 verbatim (REVERTED at Phase 5 from "narrowness of the way" → verbatim form) + exposition:5 verbatim em-dash-fold (first-mention-character Wren cost-bearer-introduction). Long sentence (~70 words) earned by cost-bearer load-bearing status. Exposition-policy: Q1/Q5/Q8 pre-cleared. Q6 check: two em-dashes + one semicolon — necessary to fold gloss inside the entry-sentence + chain loc-state tail; not reached-for. Q9 check: "stitch-maker" is common-English compound; "Flea Bottom" / "ward" on register; "trim-ends" is establishment-anchored craft-vocabulary. No FAULT-EXPOSITION-AUDIT-MISS.
+
+[¶9 S1] "\"You walked the block three times this morning,\" she said." anchor=@23(dialogue-utterance + dialogue-attribution)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: wren:1 @23 utterance verbatim (DIALOGUE-UTTERANCE-DERIVED → Q1/Q5/Q8/Q9/Q6 ALL pre-cleared). Attribution clause "she said" subject to all Q-checks normally: Q1 load-bearing (first speaker-introduction in scene; pronoun anchors Wren as recently-introduced); not redundant.
+
+[¶9 S2] "\"I wasn't looking for you.\"" anchor=@23(dialogue-utterance continuation)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: wren:1 @23 second utterance-sentence verbatim. Dialogue-utterance-derived → all Q pre-cleared. No surrounding attribution to audit.
+
+[¶10 S1] "I had already mapped the observation-radius and run the circuit count before the held label registered that I had." anchor=@24(narrator:5 verbatim)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: narrator:5 @24 verbatim (pre-calc surfacing + foreknowledge-clamp channel). "the held label" graph-resident per prompt; KEEP. Counterfactual: removing loses the chapter's structural-collision register (assessment-fired-without-permission). Semicolon-free; complex sentence with one foreknowledge-clamp; passes "one observation per fire" check from NI rubric.
+
+[¶10 S2] "I lifted my eyes." anchor=@24(bone S+V+O held)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @24 held body-action; short standalone landing-beat after narrator:5 cognition. Counterfactual cut: removes the physical orienting-toward-Wren that sets up @25's dismissive line. Note: "my eyes" not "the eyes" here — bone-V is "lifts" with no facet co-cite at the body-action; the "my eyes" form is bone-rendered without bone-object-policy override (no feel facet fires at @24). Acceptable.
+
+[¶11 S1] "\"Nothing for you here,\" I said." anchor=@25(dialogue-utterance + dialogue-attribution)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: taylor:2 @25 utterance verbatim (DIALOGUE-UTTERANCE-DERIVED). Attribution "I said" Q-checked normally: Q1 load-bearing (first Taylor speech in chapter; speaker disambiguation needed); not redundant.
+
+[¶11 S2] "\"Go on.\"" anchor=@25(dialogue-utterance continuation)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: taylor:2 @25 second utterance-sentence verbatim. Dialogue-utterance-derived; all Q pre-cleared.
+
+[¶12 S1] "She moved the eyes to my hands before she spoke." anchor=@26(feel:3 verbatim)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: feel:3 @26 verbatim (REVERTED at Phase 5 from "her eyes" → "the eyes" per bone-object-policy verbatim discipline + chapter's "the eyes / the hands / the feet" convention). Pre-speech eye-move body-show; Wren's card §Look signature in physical operation. Load-bearing: NOTE-003 cost-bearer-seed delivery body-anchor.
+
+[¶12 S2] "\"There were flies on the meat-stall,\" she said." anchor=@26(dialogue-utterance + dialogue-attribution)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: wren:2 @26 utterance verbatim. Dialogue-utterance-derived; all Q pre-cleared. Attribution "she said" Q1-checked: load-bearing for speaker-disambiguation following Taylor's @25 turn.
+
+[¶12 S3] "\"There weren't any on your hand.\"" anchor=@26(dialogue-utterance continuation)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: wren:2 @26 second utterance-sentence verbatim — the chapter payload observation. Dialogue-utterance-derived; all Q pre-cleared.
+
+[¶12 S4] "What the girl saw was what the read should have returned — the girl arrived at it without the insects." anchor=@26(narrator:6 verbatim; inverted-predicate cap)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: narrator:6 @26 verbatim (REVERTED at Phase 5 from "had arrived" → "arrived" per simple-past voice-transform). Inverted-predicate form is the one allowed use per file; foreknowledge-clamp register cap consumed legitimately. Counterfactual: removing loses the Taylor-interior receipt of Wren's observation — the chapter's payload-cognition register.
+
+[¶13 S1] "I held the eyes." anchor=@27(bone-only held; vibes:9 schema-forbidden)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @27 SVO held; the deleted feel-taylor:3 @27 was the proto-receipt body-pair to feel:3 @26 — its deletion (R2.3 §Form temporal-latency seam) leaves @27 with only the bone surface. The held-eyes is the live downstream signal of receipt-without-filing. Counterfactual cut: removes the chapter's discipline-holding registration of the payload moment. Brevity-as-tell.
+
+[¶13 S2] "She crossed the street." anchor=@28(bone-only chatter)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @28 SVO; Wren-exit kinetic. Counterfactual: removes Wren's physical departure-from-scene — Wren must exit on-page; cutting leaves her standing in the alley-mouth as the chapter closes.
+
+[¶14 S1] "I lifted the needle." anchor=@29(bone-only held closing)
+  Q1: yes  Q2: yes  Q3: no   Q4: no
+  Q5: no   Q6: no   Q7: no   Q8: no   Q9: no
+  → KEEP
+  rationale: bone @29 SVO closing; held-needle-lift chapter-close. Brevity-as-tell per Phase 1 (the rule's verdict — return to work after the payload-collision). Counterfactual cut: removes the chapter's closing return-to-discipline beat.
+```
+
+### Phase 7 — completion summary
+
+- sentences Q-walked: 37 of 37 (¶1: 1 / ¶2: 6 / ¶3: 4 / ¶4: 3 / ¶5: 4 / ¶6: 3 / ¶7: 2 / ¶8: 1 / ¶9: 2 / ¶10: 2 / ¶11: 2 / ¶12: 4 / ¶13: 2 / ¶14: 1)
+- moves applied (count per move-class):
+  - KEEP: 36
+  - REWORD: 1 (¶4 S2 @12: "the hand-sensation" → "the hand")
+  - CUT: 0
+  - CUT-CLAUSE: 0
+  - CUT-ASININE: 0
+  - CUT-BONE: 0 (bones-cuttable license anchor-cut-only; no protective facets cut at Phase 7)
+  - RESHOW: 0 (no Q8 triggers; Q9-density never approached the 3+ escalation threshold)
+  - SIMPLIFY-PUNCT: 0 (em-dash + semicolon usage all licensed by exposition em-dash-fold, NI rubric post-directive, and lens-fold variance-moves; no "reached-for" punctuation found)
+- FAULT-EXPOSITION-AUDIT-MISS: 0 (Q9 + Q6 checks on exposition-derived sentences ¶1 / ¶2 S4 / ¶8 all PASS)
+- FAULT-DIALOGUE-AUDIT-MISS: 0 (Q9 checks on dialogue-utterance-derived sentences ¶9 / ¶11 / ¶12 all PASS; no utterance touched)
+- FAULT-PHASE-7-NO-SWEEP: false (37 Q-lines emitted; one per sentence)
+- bones-cuttable license invocation: NOT invoked (no PATTERN-ABANDONED bones from Phase 6; bone-CUT unauthorized)
+- borderline-policy applied: strict-reject default + EXPOSITION-DERIVED/DIALOGUE-UTTERANCE-DERIVED carve-out KEEP — all borderlines on graph-resident lens + exposition + dialogue content resolved KEEP per policy
+- persona discipline: neutral defers to profile defaults; no persona-specific bias applied
+
+### Q9 rationale shard — ¶4 S2 hand-sensation REWORD
+
+The single move-of-substance in this Phase 7 sweep is the REWORD at ¶4 S2 @12. Recording the full reasoning here because it is the only edit:
+
+- **Facet verbatim:** sensory:2 reads `tactile: working-corner-open-air -> needle-through-mesh # tag: spike` (per `active-project/theater/facets/sensory-b01-c01.md` line 78). The arrow's tactile destination is "needle-through-mesh"; the modality-flag is "tactile".
+- **Phase 1 fork-002 rendered:** "The needle crossed the mesh — thread-resistance and metal-smoothness, the hand-sensation taking its first count of the day." (scene-B L2).
+- **Faithful prose-template rendering** of the arrow would have produced the perceptual pair (thread-resistance + metal-smoothness) — both are tactile particulars of needle-through-mesh, graph-resident-faithful. The trailing clause "the hand-sensation taking its first count of the day" is **stitcher prose** interpreting the modality-flag (tactile → hand-sensation) and adding the temporal frame (first count of the day) which is itself a chapter-register echo.
+- **Q9 hit:** "hand-sensation" is an invented hyphenated nominalization compound (Q9 definition: invented compounds, jargon-ish nominalizations). Not graph-resident; not Westerosi-establishment-anchored; not facet-verbatim.
+- **Substitution surface:** "the hand taking its first count of the day". The "-sensation" nominalization is dropped; "the hand" alone reads cleanly because (a) the preceding em-dash-folded pair "thread-resistance and metal-smoothness" already named the sensory particulars, (b) "count" carries the rhythmic-register continuity with @20's "count I had been running" and the chapter's cost-tracking ledger framing, and (c) "the hand" preserves the chapter's "the hands / the eyes / the feet" definite-article convention.
+- **Density cap:** 1 substitution of ≤2 allowed per sentence. Q9-density did not approach the 3+ → RESHOW escalation threshold.
+- **License:** Q9 REWORD per `staff/stitcher/card.md` § Phase 7 — a single-word/phrase meaning-preserving common-English equivalent substitution. Logged here.
+- **Phase 7 draft delta:** `active-project/draft/b01-c01.phase-7.draft.md` differs from `active-project/draft/b01-c01.phase-6.draft.md` at exactly one location: ¶4 S2 (line 7 of the draft file), `"the hand-sensation taking its first count"` → `"the hand taking its first count"`. All other 36 sentences are byte-identical.
+
+### Phase 7 draft
+
+Phase 7 draft written: `active-project/draft/b01-c01.phase-7.draft.md`
+- word count: 549 (Phase 6: 551; delta -2 from "-sensation" removal)
+- sentence count: 37 (unchanged)
+- paragraph count: 14 (unchanged)
+- bones preserved: 27/27 (no cuts)
+- moves: 1 REWORD; 0 other move-class moves
+
+State machine: Phase 7 → complete (Phase 8 finalize + scene-callout strip + RECONCILE next).
+
+---
+
 
