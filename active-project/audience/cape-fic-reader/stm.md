@@ -13,3 +13,18 @@ STM:
   - b01c07 social_tether-prot-rise correction: the YAML carries it as axes_held while the roll-up note promotes it to axes_in_motion—the YAML itself needs the fix or downstream bone-gate will find the discrepancy; not an audience hard finding but a signal the draft is in two states
   - b01c20 social_tether-prot-collapse -3.5: the cascade logic is present but the chapter chunk asks a single scene-set (succession announcement → burn → expulsion) to carry three simultaneous LOCKED end-states plus recognition-too-late; heavy load for five scenes—manageable if the feed-signal loss is the hinge, but thin if the expulsion is given equal weight
 - threshold_discipline_check: applied — rejected lines where established limits would be bypassed without cost; verified information-asymmetry-that-reshapes-the-board shape is operative at every hinge chapter; applied "established limits bypassed without cost" check at each capability increment; no fatigue triggers fired
+
+## /and-substance book b01 Phase 5 attempt 2 re-review
+- aggregate: ACCEPT
+- hard_findings: none
+- soft_findings carried forward:
+  - b01c20 social_tether-prot-collapse -3.5: soft finding stands; chunk-level load unchanged; carried to /and-write as flagged
+- soft_findings resolved:
+  - b01c15 relational_anchor_status +1.5: RESOLVED — Vhagar-proximity backwash mechanism now explicitly named in chunk; thermal/pressure displacement degrades compound-eye coverage at gap-lane boundary; negative-shape perceptibility is now chunk-structural, not inferential; cl-d08 anchor present; double-duty concern discharged
+  - b01c07 social_tether-prot-rise: RESOLVED — YAML corrected to axes_in_motion; roll-up table corrected and annotated; discrepancy resolved
+- edit-cell spot checks:
+  - c07: social_tether-prot-rise in axes_in_motion confirmed; roll-up correction note present at file end; resolved
+  - c10: position-prot-rise 1.0 confirmed (H6 fix); political_register-world anchor still reads cl-world-d07 (not cl-world-d04 per task summary); auditor-lane finding, not carried as audience hard finding
+  - c13: dramatic_shape reads hinge; confirmed
+  - c20: relational_anchor_status target_delta_magnitude 1.5 confirmed; roll-up note confirms correction
+- threshold_discipline_check: re-applied to edited cells; no new limit-bypass-without-cost patterns introduced; no fatigue triggers fired
