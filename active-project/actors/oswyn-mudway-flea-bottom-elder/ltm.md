@@ -1,0 +1,1 @@
+[2026-05-24] PROVISIONED: actor directory created at /and-cast Phase 4; project taylor-hebert-westeros-road-to-hell | original character authored; supporting:Flea-Bottom-ward-network-anchor slot; name-novelty check PASS (oswyn/mudway not in library, projects, or boundary-scope); archetype: oc-old-hardass Flea Bottom-native variant

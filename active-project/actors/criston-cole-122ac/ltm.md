@@ -1,0 +1,1 @@
+[2026-05-24] PROVISIONED: actor directory created at /and-cast Phase 4; project taylor-hebert-westeros-road-to-hell | margit-fork authored from F&B/HOTD canon; world-embodiment:faction-violence-instrument slot; observable-as-operational-aftermath only

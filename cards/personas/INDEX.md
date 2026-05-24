@@ -39,11 +39,14 @@ planetos:
   - aegon-ii-targaryen
   - aemond-targaryen
   - aemond-targaryen-122ac
+  - alicent-hightower-122ac
   - beric-dondarrion
   - census-officer
   - clerk
   - oc-census-officer
+  - criston-cole-122ac
   - edric-cray
+  - jarvis-coin-kl-courier
   - lem-lemoncloak
   - mira-stonefield
   - mira-stonefield-dragon-gate
@@ -54,9 +57,11 @@ planetos:
   - oc-broken-maester
   - oc-castellan-harrenhal
   - oc-child-peer
+  - criston-cole-122ac
   - oc-contacts-business-partner
   - oc-craftsman-father
   - oc-craftsman-mother
+  - jarvis-coin-kl-courier
   - oc-dock-runner
   - oc-flea-bottom-boy
   - oc-girl-from-hamlet
@@ -75,11 +80,14 @@ planetos:
   - oc-vaegon-targaryen
   - oc-ward-septon-dragon-gate
   - oc-watch-captain-dragon-gate
+  - oswyn-mudway-flea-bottom-elder
   - otto-hightower
   - coll-net-mender-flea-bottom
   - corvan-archmaester-retrospective-coda
   - gylda-saltwater-flea-bottom
+  - rhaenyra-targaryen-122ac
   - sera-hightower-kl-122ac
+  - septon-halvard-flea-bottom
   - taylor-hebert-kl-122ac
   - wren-stitch-maker-flea-bottom-ward
   - peasant-woman-forest
@@ -107,6 +115,7 @@ planetos:
 ## by_quality
 
 full:
+  - alicent-hightower-122ac
   - beric-dondarrion
   - mira-stonefield-dragon-gate
   - oc-apothecary-assistant
@@ -122,7 +131,11 @@ full:
   - oc-vaegon-targaryen
   - oc-ward-septon-dragon-gate
   - oc-watch-captain-dragon-gate
+  - jarvis-coin-kl-courier
+  - oswyn-mudway-flea-bottom-elder
   - rhaenys-targaryen
+  - rhaenyra-targaryen-122ac
+  - septon-halvard-flea-bottom
   - taylor-hebert-dragon-gate
   - taylor-hebert-flea-bottom-mirror
   - ulf-the-white
@@ -218,7 +231,7 @@ brutal-pragmatist: [lem-lemoncloak]
 dying-cause: [beric-dondarrion]
 faith-recovered: [thoros-of-myr]
 corrupt-official: [ser-harwick-plumm, oc-castellan-harrenhal, oc-watch-captain-dragon-gate, oc-rung3-steward]
-targaryen-era: [rhaenyra-targaryen, rhaenys-targaryen, viserys-i-targaryen, ser-edwyn-celtigar, aegon-ii-targaryen, aemond-targaryen, aemond-targaryen-122ac, otto-hightower, ulf-the-white, oc-vaegon-targaryen, oc-lyra-targaryen-ward, oc-maester-edwyn, sera-hightower-kl-122ac, wren-stitch-maker-flea-bottom-ward, gylda-saltwater-flea-bottom, coll-net-mender-flea-bottom, corvan-archmaester-retrospective-coda]
+targaryen-era: [rhaenyra-targaryen, rhaenyra-targaryen-122ac, rhaenys-targaryen, viserys-i-targaryen, ser-edwyn-celtigar, aegon-ii-targaryen, aemond-targaryen, aemond-targaryen-122ac, alicent-hightower-122ac, criston-cole-122ac, otto-hightower, ulf-the-white, oc-vaegon-targaryen, oc-lyra-targaryen-ward, oc-maester-edwyn, sera-hightower-kl-122ac, wren-stitch-maker-flea-bottom-ward, gylda-saltwater-flea-bottom, coll-net-mender-flea-bottom, corvan-archmaester-retrospective-coda]
 riverlands-power: [ser-aemon-bracken]
 faith-operator: [septon-rowan]
 hedge-knight: [rymer-hedge]
@@ -246,7 +259,12 @@ protect-target: [sera-hightower-kl-122ac]
 witness-mirror: [gylda-saltwater-flea-bottom]
 flea-bottom-world-fixture: [coll-net-mender-flea-bottom, oc-renderer-flea-bottom, oc-flea-bottom-boy, oc-block-fixture]
 maester-chronicler-coda: [oc-maester-edwyn, corvan-archmaester-retrospective-coda]
-hightower-apparatus: [otto-hightower, sera-hightower-kl-122ac, aemond-targaryen-122ac]
+hightower-apparatus: [otto-hightower, alicent-hightower-122ac, sera-hightower-kl-122ac, aemond-targaryen-122ac, criston-cole-122ac]
+kl-courier-tier: [jarvis-coin-kl-courier]
+flea-bottom-ward-elder: [oswyn-mudway-flea-bottom-elder]
+faith-operator-flea-bottom: [septon-halvard-flea-bottom]
+black-faction-claimant: [rhaenyra-targaryen, rhaenyra-targaryen-122ac]
+road-to-hell-cast: [taylor-hebert-kl-122ac, otto-hightower, wren-stitch-maker-flea-bottom-ward, sera-hightower-kl-122ac, aemond-targaryen-122ac, alicent-hightower-122ac, criston-cole-122ac, rhaenyra-targaryen-122ac, oswyn-mudway-flea-bottom-elder, jarvis-coin-kl-courier, septon-halvard-flea-bottom]
 wrong-rider: [ulf-the-white]
 flea-bottom-texture: [oc-renderer-flea-bottom, oc-flea-bottom-boy, oc-apothecary-assistant]
 prevention-tragedy: [taylor-hebert-flea-bottom-mirror, oc-vaegon-targaryen]
@@ -317,3 +335,9 @@ OC slots for margit to construct at project activation when a generic role is se
 - gylda-saltwater-flea-bottom (witness-mirror slot; Flea Bottom water-carrier age ~40s, block-knowledge observation, one naming scene d09-d10, non-confidant hard fence; full; authored taylor-westeros-good-intentions Phase 4 2026-05-18)
 - coll-net-mender-flea-bottom (Flea Bottom fixture slot; net-mender age ~50s, fifteen years same spot, stationary non-interpretive community-substrate carrier, never names; full; authored taylor-westeros-good-intentions Phase 4 2026-05-18)
 - corvan-archmaester-retrospective-coda (maester-chronicler coda slot; Archmaester writing c.160 AC, retrospective archival voice, deduction from documentary record, does not know Taylor's name, F4 constraint; full; authored taylor-westeros-good-intentions Phase 4 2026-05-18)
+- alicent-hightower-122ac (world-embodiment:green-faction-institution slot; Queen Consort 122 AC, dynastic-maternal affect, observable-through-compound-eyes-only hard fence; full; margit-fork from F&B/HOTD canon; authored taylor-hebert-westeros-road-to-hell /and-cast Phase 4 2026-05-24)
+- criston-cole-122ac (world-embodiment:faction-violence-instrument slot; Kingsguard commander, Green-faction enforcement, procedural-not-cruel, observable-as-operational-aftermath; full; margit-fork from F&B/HOTD canon; authored taylor-hebert-westeros-road-to-hell /and-cast Phase 4 2026-05-24)
+- rhaenyra-targaryen-122ac (world-embodiment:black-faction-claimant slot; age ~25, Dragonstone base, Laenor-married, Laena-dead-120AC, Jacaerys+Lucerys young children, active succession agenda, Dragonstone-distance hard fence; full; 122 AC variant of rhaenyra-targaryen; authored taylor-hebert-westeros-road-to-hell /and-cast Phase 4 2026-05-24)
+- oswyn-mudway-flea-bottom-elder (supporting:Flea-Bottom-ward-network-anchor slot; net-weights caster age ~55, Hook district Mudway fixture, ward-coverage 2-3 blocks, unknowing-contact, name-novelty PASS; full; original character; authored taylor-hebert-westeros-road-to-hell /and-cast Phase 4 2026-05-24)
+- jarvis-coin-kl-courier (supporting:Otto-courier-adjacent slot; Green-faction courier-tier age ~28, transactional flat-affect, physical-exchange Flea-Bottom/upper-tier boundary, structural-exposure-vector, name-novelty PASS; full; original character; authored taylor-hebert-westeros-road-to-hell /and-cast Phase 4 2026-05-24)
+- septon-halvard-flea-bottom (supporting:naive-idealist-foil slot; Flea Bottom Faith practitioner age ~45, 7 years in precinct, principled-slower, tends sick and dying, no HOTD/F&B canonical identity, name-novelty PASS; full; original character; authored taylor-hebert-westeros-road-to-hell /and-cast Phase 4 2026-05-24)
