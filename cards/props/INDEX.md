@@ -2,4 +2,21 @@
 
 All prop cards. Maintained by margit — update on every card store or new authoring.
 
-(empty — no props authored yet)
+## by_world
+
+### planetos
+- [oc-taylor-pack](oc-taylor-pack.card.md) — portable canvas satchel; Taylor Hebert's carried gear (tools, coin, mending supply); chapter-to-chapter inventory anchor; full
+
+---
+
+## by_quality
+
+full:
+  - oc-taylor-pack
+
+---
+
+## by_type
+
+portable:
+  - oc-taylor-pack

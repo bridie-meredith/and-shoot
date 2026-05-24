@@ -10,7 +10,8 @@ planetos:
   - monument-override-architecture-prohibition-122ac
   - monument-administrative-observation-apparatus-122ac
   - monument-conquest-charter-institutional-self-restraint-122ac
-  - cond-khepri-residue-122ac [project: taylor-westeros-good-intentions]
+  - cond-khepri-residue-122ac [project: taylor-westeros-good-intentions; superseded by cond-override-architecture-residue-122ac]
+  - cond-override-architecture-residue-122ac [supersedes: cond-khepri-residue-122ac]
   - cond-earth-bet-noun-fence [project: taylor-westeros-good-intentions]
   - cond-westerosi-magic-dormant-122ac [project: taylor-westeros-good-intentions]
   - cond-dragon-proximity-122ac [project: taylor-westeros-good-intentions]
@@ -85,7 +86,8 @@ full:
   - monument-override-architecture-prohibition-122ac
   - monument-administrative-observation-apparatus-122ac
   - monument-conquest-charter-institutional-self-restraint-122ac
-  - cond-khepri-residue-122ac [project: taylor-westeros-good-intentions]
+  - cond-khepri-residue-122ac [project: taylor-westeros-good-intentions; superseded by cond-override-architecture-residue-122ac]
+  - cond-override-architecture-residue-122ac [supersedes: cond-khepri-residue-122ac]
   - cond-earth-bet-noun-fence [project: taylor-westeros-good-intentions]
   - cond-westerosi-magic-dormant-122ac [project: taylor-westeros-good-intentions]
   - cond-dragon-proximity-122ac [project: taylor-westeros-good-intentions]
@@ -172,7 +174,8 @@ power-mechanics:
   - cond-fauna-control-rules
   - cond-fauna-control-rules-125ac-addendum
   - cond-shard-behavioral-weight
-  - cond-khepri-residue-122ac [project: taylor-westeros-good-intentions]
+  - cond-khepri-residue-122ac [project: taylor-westeros-good-intentions; superseded]
+  - cond-override-architecture-residue-122ac
   - cond-westerosi-magic-dormant-122ac [project: taylor-westeros-good-intentions]
   - cond-dragon-proximity-122ac [project: taylor-westeros-good-intentions]
 
@@ -235,7 +238,8 @@ project-constraint:
   - cond-westerosi-superstition-frame
 
 protagonist-rules:
-  - cond-khepri-residue-122ac [project: taylor-westeros-good-intentions]
+  - cond-khepri-residue-122ac [project: taylor-westeros-good-intentions; superseded]
+  - cond-override-architecture-residue-122ac
   - cond-earth-bet-noun-fence [project: taylor-westeros-good-intentions]
   - cond-taylor-pov-behavior [project: taylor-westeros-good-intentions]
   - cond-no-parahuman-infrastructure

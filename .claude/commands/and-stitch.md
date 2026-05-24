@@ -640,9 +640,18 @@ Run the `/and-review staging <chapter>` reviewer routine (auditor + dramatist, g
 
 ### Step 4 — Verdict + memory
 
-Write `chapters[<slug>].cold_read = {read_at, verdict, recovered_summary: <answer 6>, report_path, staging_signals: <N>, stale_since: null}`.
+Write `chapters[<slug>].cold_read = {read_at, verdict, recovered_summary: <answer 6>, report_path, staging_signals: <N>, signal_clusters: <[...]>, stale_since: null}`.
 
-- **PASS** — the chapter is terminal. Print the cold reader's one-line summary, the staging-signal count, and `next:`. If `staging_signals > 0`, recommend `/and-write <chapter> revise` + re-cascade as an optional depth pass (non-blocking).
+**Cluster check (URI-STITCH-SIGNAL-CLUSTER — soft-gate; 2026-05-24).** Before printing the verdict, scan the staging report's findings and bin them by pattern label. A *cluster* is `N >= 5 SIGNAL findings sharing the same pattern label` (e.g. `body-staging-gap`, `opposing-force-prose-mute`, `held-bone-rationale-only`). The post-ship audit on b01c01 confirmed that pattern-clustered SIGNALs are not noise — they predict the prose-surface-of-substance gap that seven independent forks re-discovered post-ship. The fix is to act on the cluster pre-ship, not to ship and re-audit. Record `signal_clusters[]` in the cold_read block: each entry `{pattern: <label>, count: <N>, bone_ids: [<ids>]}`.
+
+- **PASS** — the chapter is terminal, no cluster present. Print the cold reader's one-line summary, the staging-signal count, and `next:`. If `staging_signals > 0` but no cluster, recommend `/and-write <chapter> revise` + re-cascade as an optional depth pass (non-blocking).
+- **PASS-WITH-DEPTH-PASS-REQUIRED** — Phase 9 cold-read returned PASS but the cluster check fired. The chapter ships at the terminal gate but a depth pass is *required* before the chapter is considered project-stable. Print the cold reader's one-line summary, the cluster summary (`<N> SIGNAL findings clustered on <pattern>: bones <ids>`), and route:
+  ```
+  /and-stitch Phase 9 PASS-WITH-DEPTH-PASS-REQUIRED — <chapter> ships but a depth pass is required.
+  Cluster: <N> SIGNAL findings on <pattern> across bones <ids>.
+  next: /and-write <chapter> revise --from-signals   (then re-cascade /and-facets + /and-stitch)
+  ```
+  In a `--cascade` run, this does NOT halt the cascade (the chapter is terminal at the gate) but the depth pass appears in the cascade's exit checkpoint as `pending_depth_passes: [<chapter>, ...]` so downstream chapters in the same cascade can choose to wait or proceed at the user's direction.
 - **FAIL** — the chapter is NOT terminal. It is a structural failure, not a polish problem — re-decompose from the bones up. Print the cold reader's answers, the diff finding (which intent element the reader could not recover), and route:
   ```
   /and-stitch Phase 9 COLD-READ FAIL — <chapter> is not terminal.
@@ -672,7 +681,7 @@ If `staff/stitcher/feedback-<slug>.md` was read at Phase 0 with new line-level d
 
 ## Exit conditions
 
-- **Success**: Phase 8 STATS + RECONCILE emitted; clean + annotated polish files present; render-log finalized; Phase 9 cold-read returned PASS; `chapters[].cold_read` recorded; showrunner memory updated.
+- **Success**: Phase 8 STATS + RECONCILE emitted; clean + annotated polish files present; render-log finalized; Phase 9 cold-read returned PASS or PASS-WITH-DEPTH-PASS-REQUIRED; `chapters[].cold_read` recorded with `signal_clusters[]`; showrunner memory updated. PASS-WITH-DEPTH-PASS-REQUIRED ships terminal but flags the chapter for `/and-write revise --from-signals` before project-stable.
 - **Phase 9 cold-read FAIL**: the assembled chapter failed the terminal gate — the cold reader could not recover the chapter's central event / jeopardy, or would not continue. Not a stitch defect; a decomposition defect. Route to `/and-write <chapter> revise` and re-cascade. In a `--cascade` run, halts the cascade.
 - **Phase 8 fault**: `FAULT-RECONCILE-MISSING` — the render-log's `RECONCILE` line is absent or does not balance. Re-run the Phase 8 reconciliation.
 - **Phase 0 abort**: missing inputs (proto-lines, cite-index, profile). Print the missing-input path and exit.

@@ -2,6 +2,45 @@
 
 ## Mutation Log
 
+### 2026-05-24 — End-of-cycle library sync: taylor-westeros-good-intentions b01c01 shipped
+
+**Operation:** promote. End-of-cycle library sync — b01c01 shipped; all project cards not yet in library promoted before project archive.
+
+**Cards promoted (10):**
+
+Personas (6):
+- `coll-net-mender-flea-bottom` → `cards/personas/coll-net-mender-flea-bottom.card.md` (scope: project→library)
+- `corvan-archmaester-retrospective-coda` → `cards/personas/corvan-archmaester-retrospective-coda.card.md` (scope: project→library)
+- `gylda-saltwater-flea-bottom` → `cards/personas/gylda-saltwater-flea-bottom.card.md` (scope: project→library)
+- `sera-hightower-kl-122ac` → `cards/personas/sera-hightower-kl-122ac.card.md` (scope: project→library)
+- `taylor-hebert-kl-122ac` → `cards/personas/taylor-hebert-kl-122ac.card.md` (scope: project→library)
+- `wren-stitch-maker-flea-bottom-ward` → `cards/personas/wren-stitch-maker-flea-bottom-ward.card.md` (scope: project→library)
+
+Condition (1):
+- `cond-override-architecture-residue-122ac` → `cards/conditions/cond-override-architecture-residue-122ac.card.md` (scope: project→library; supersedes cond-khepri-residue-122ac)
+
+Behavior / monument cards (2):
+- `monument-cost-borne-by-the-unconsenting` → `cards/dialects/monument-cost-borne-by-the-unconsenting.card.md` (scope: project→library; per-character: taylor-hebert-kl-122ac)
+- `monument-conquest-charter-language` → `cards/dialects/monument-conquest-charter-language.card.md` (scope: project→library; per-character: taylor-hebert-kl-122ac)
+
+Prop (1):
+- `oc-taylor-pack` → `cards/props/oc-taylor-pack.card.md` (scope: project→library)
+
+**Index updates:**
+- `cards/conditions/INDEX.md` — added cond-override-architecture-residue-122ac to by_world, by_quality (full), power-mechanics, protagonist-rules; updated cond-khepri-residue-122ac entries with superseded annotation
+- `cards/dialects/INDEX.md` — added monument-cost-borne-by-the-unconsenting and monument-conquest-charter-language to by_world (planetos) and by_character (taylor-hebert-kl-122ac)
+- `cards/props/INDEX.md` — initialized with oc-taylor-pack entry (by_world, by_quality, by_type)
+- `cards/personas/INDEX.md` — already listed all 6 persona slugs; no update required (index was pre-populated at provisioning)
+
+**Pre-mutation preservation:** no pre-existing library files at any of the 10 promoted paths; no .pre-timestamp files required.
+
+**Skipped:**
+- `active-project/actors/aemond-targaryen-122ac/card.md` — already in library at `cards/personas/aemond-targaryen-122ac.card.md`
+- `active-project/actors/otto-hightower/card.md` — already in library at `cards/personas/otto-hightower.card.md`
+- Warehouse cards already in library (`cond-kl-witch-label-formation-122ac`, `cond-kl-geography-122ac`, etc.) — scope remains library; identical content confirmed by index cross-check
+
+---
+
 ### 2026-05-19 — Cycle-2 monument referral resolution: mem:3 @8 (third referral within cycle-2)
 
 **Referral type:** monument-card target-reference resolution (cycle-2 third referral; mem:3 Westerosi-monument-card)
