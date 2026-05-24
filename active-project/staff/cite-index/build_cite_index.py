@@ -524,14 +524,26 @@ def _load_dialogue_entries(project_root: Path) -> dict[str, set[int]]:
 def collect_deletions(
     facets_dir: Path,
     facet_files: dict[str, str],
+    dialogue_dir: Path | None = None,
 ) -> dict[str, set[int]]:
-    """Build the deletion map {prefix: {deleted_ids}} across all facet files (A5)."""
+    """Build the deletion map {prefix: {deleted_ids}} across all facet files (A5).
+
+    Dialogue files live outside facets_dir (per schemas/dialogue.schema.md) and
+    use the character slug as the citation prefix. When dialogue_dir is provided,
+    its `<character-slug>.md` files are scanned with the slug as prefix so a
+    cap-burn DELETE marker written into a dialogue file participates in the
+    same auto-strip cascade as facet-file deletions.
+    """
     out: dict[str, set[int]] = defaultdict(set)
     for fname, prefix in facet_files.items():
         path = facets_dir / fname
         if not path.exists():
             continue
         out[prefix] |= parse_deletions(path, prefix)
+    if dialogue_dir is not None and dialogue_dir.exists():
+        for path in sorted(dialogue_dir.glob("*.md")):
+            slug = path.stem
+            out[slug] |= parse_deletions(path, slug)
     return dict(out)
 
 
@@ -790,7 +802,7 @@ def main(argv: list[str]) -> int:
         # writing canonical. Cap-burn DELETE flow at /and-facets Phase 5b writes
         # `# DELETED <prefix>:<id> ...` markers into the facet files; the cite-
         # index builder reads them and removes stale tokens from proto-lines.
-        deletions = collect_deletions(facets_dir, facet_files)
+        deletions = collect_deletions(facets_dir, facet_files, project_root / "theater" / "dialogue")
         if any(deletions.values()):
             stripped: dict[int, list[tuple[str, int]]] = {}
             strip_count = 0
