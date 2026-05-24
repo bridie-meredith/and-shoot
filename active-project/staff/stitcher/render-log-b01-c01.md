@@ -326,4 +326,140 @@ State machine: Phase 1 → in-progress (Phase 2 next).
 
 ---
 
+## Phase 2 — Redundancy cull
+
+Detector set per schema defaults: closing-phrase-echo + image-set-overlap. Echo-window 1 (same-anchor only). Preserve-anchor: narrator.
+
+Walked the Phase 1 draft per-anchor; ≥2-facet co-anchors enumerated against the cite-index.
+
+Decisions:
+
+- `KEEP-BOTH @1` — loc-state:1 + exposition:1 — different content classes (place-anchor vs first-mention gloss); no closing-phrase-echo, no image-set overlap. Em-dash-folded into one sentence already at Phase 1.
+- `KEEP-BOTH @2` — narrator:1 (foreknowledge-clamp) + loc-state:2 (yard-crossing). Different content. No overlap.
+- `KEEP-FOLD @6` — sensory:1 + loc-state:3 already folded as one perceptual unit at Phase 1; co-anchor fold preserved.
+- `NO-CULL @11` — loc-state:4 only co-cite at this anchor (no co-anchor cull candidate).
+- `NO-CULL feel:2 @16 (already-culled at Phase 1; un-merge candidacy at Phase 5)` — feel:2 was proactively-culled by fork-002 at Phase 1; Phase 2 defers rescue-decision to Phase 5 un-merge license, the canonical mechanism for facet rescue. Logged here as no-op; the rescue is executed at Phase 5.
+- `NO-CULL @18` — only loc-state:6 lives at @18 (state:4 schema-forbidden).
+- `NO-CULL @20` — only narrator:7 lives at @20 (state:5 schema-forbidden).
+- `KEEP-BOTH @22` — loc-state:7 + exposition:5 — different content classes (place-anchor vs cost-bearer first-mention). Already em-dash-folded into one cost-bearer-introduction sentence.
+- `KEEP-ALL @26` — feel:3 + narrator:6 + wren:2 dialogue. Three different surfaces (pre-speech body-show + post-speech receipt + verbatim utterance). No overlap.
+- `DROP-IMAGE-OVERLAP mem:1 @9` — at scene-A L11, narrator:2 + mem:1 are both surfaced verbatim with strong image-set overlap (`the sense ran the [walls|block]` repeats) and closing-phrase echo (`what I was not doing` ↔ `what I was no longer doing`). Per `preserve-anchor: narrator`, narrator:2 wins; mem:1 is DROPPED. Cull validates the Phase 1 fork-001 drift-risk note ("redundancy cull is the correct downstream answer").
+  - original (L11): `The sense ran the walls and the walls gave it back unchanged, because nothing here had called for what I was not doing; the sense ran the block and the block was what it was, and the block was not requiring anything of the kind I was no longer doing.`
+  - revised: `The sense ran the walls and the walls gave it back unchanged, because nothing here had called for what I was not doing.`
+
+Total culls: 1 (mem:1 @9). All other co-anchor pairs preserved.
+
+---
+
+## Phase 3 — Compression
+
+Profile: same-subject-merge=true; pronoun-substitution=after-first; flat-low-run-collapse=preserve-buildups; exit-trio-merge=true; zero-cite-bone-policy=render.
+
+Walked the draft for compression candidates. Decisions:
+
+- `NO-MERGE scene-A @1-@2` — different actions (paid / crossed / circled / passed); not a continuous-action sequence.
+- `NO-MERGE scene-A @8-@9` — different subjects (Coll silent / Taylor held); held-discipline at @9 carries anti-fusion weight (already enforced at Phase 1).
+- `NO-MERGE scene-B @11-@12` — different subjects (Taylor threaded the needle / the needle crossed the mesh); chain-folded at Phase 1 via colon → em-dash, but not merged into one clause.
+- `NO-MERGE scene-B @14-@15` — different subjects (walls cooled / I passed); already chain-folded at Phase 1 with comma-and.
+- `NO-MERGE scene-C *` — speaker-paragraph rule (Phase 5 enforced) bars cross-speaker merges; @22/@23/@24/@25/@26 are speaker-bounded.
+- `SUBSTITUTE-PRONOUN Coll → he` (after-first) — scene-A: "Coll lifted his eyes" (L4 first-mention) → "He worked the net..." (L5 second-mention, already pronouned at Phase 1) ✓. At L9 ("Coll's needle moved..."), the second-paragraph-onset resets first-mention semantics under the after-first rule; "Coll's" preserved for paragraph-anchored clarity. No additional substitutions.
+- `NO-COLLAPSE flat-low-run` — scene-map declares no protected patterns; chapter is all flat-low; aggressive collapse would over-thin a ~34-sentence chapter. `preserve-buildups` posture honors the low bone-density already in place.
+- `NO-MERGE exit-trio` — no exit-trio pattern present in this chapter.
+- `NO-MERGE-TIMESKIP @9 ↔ @11` — held discipline at scene-A close; opener kinetic at scene-B; distinct scenes across the time-skip blank.
+- `NO-MERGE-TIMESKIP @20 ↔ @22` — day-close ledger at scene-B close; cost-bearer entry at scene-C open; distinct scenes.
+
+Total compression moves: 0 (all candidates considered, all rejected). The draft was already at compression equilibrium post-Phase-1.
+
+---
+
+## Phase 4 — Voice transform
+
+Profile: tense=past; person=first; contractions=true; bone-object-policy=verbatim; feeling-clause-pov-resolution=auto; sensory-arrow-rendering=prose-template.
+
+Decisions:
+
+- `TENSE-OK` — full draft scan: no present-tense leakage. Phase 1 forks worked under past-tense throughout. No `TENSE-SHIFT` needed.
+- `PERSON-OK` — full draft scan: no third-person leakage on Taylor-POV interior passages. POV pronouns ("I", "my") consistent. No `PERSON-SHIFT-POV` needed.
+- `CONTRACTION-WAIVE was-not @9` — narrator:2 facet verbatim is `she is not doing`; voice-shifted to first-person past renders `I was not doing`. Schema default `voice.contractions: true` would suggest `wasn't`. However, the facet's authoritative surface is `is not` (uncontracted) and `bone-object-policy: verbatim` requires minimal-shift fidelity. DECISION: keep `was not` uncontracted to honor verbatim discipline. Logged as `CONTRACTION-WAIVE was-not @9 (verbatim-fidelity)`. Same waiver applies to `had not done` at scene-B L11 (narrator:7 verbatim register).
+- `POV-PRONOUN-RESOLVE-OK` — no third-party pronoun resolution issues found.
+- `REVERT-BONE-OBJECT-VERBATIM established @11 loc-state:4` — Phase 1 drift flag #2. Scene-B L1 rendered `settled` for loc-state:4's verbatim `established`. Unlicensed REWORD; near-synonym but surface-deviation. Reverted.
+  - original (scene-B L1): `...midday under overcast, the working position's spatial anchor settled.`
+  - revised: `...midday under overcast, the working position's spatial anchor established.`
+- `SENSORY-PROSE-FIT-OK` — sensory:1 (@6), sensory:2 (@12), sensory:3 (@14), sensory:4 (@17) all rendered as prose-template at Phase 1; perceptual content surfaces faithfully without arrow-notation residue. Validated.
+- `BONE-OBJECT-IDIOM-FIT-OK` — bone-object surfaces (eyes / hands / feet / needle / pack / net / boots / cobbles) all carry `the X` definite-article convention from the chapter's bone-object policy. No idiom-fit substitutions needed at Phase 4 (the `her eyes` and `had arrived` substitutions are handled at Phase 5 REVERT moves per the Phase 1 drift consolidation table).
+
+Total Phase 4 moves: 1 REVERT-BONE-OBJECT-VERBATIM, 2 CONTRACTION-WAIVE (explicit log of decisions), all other checks OK.
+
+---
+
+## Phase 5 — Local flow + speaker-paragraph
+
+Profile: window-size=3; sensory-deferral-cap=2; ni-promotion-cap=1; within-anchor-order=em-dash-fusion; un-merge-license=true; speaker-paragraph-rule=enforced.
+
+Decisions:
+
+- `SPEAKER-PARAGRAPH-BREAK-OK scene-C` — re-verified scene-C paragraph structure: @22 own ¶, @23 own ¶ (wren:1), @24 own ¶ (NI+held), @25 own ¶ (taylor:2), @26 own ¶ (feel:3 + wren:2 + narrator:6), @27+@28 fused ¶, @29 standalone closing ¶. URI-SUBSTANCE-OVERHAUL speaker-paragraph rule honored throughout. No new breaks needed.
+- `WITHIN-ANCHOR-REORDER-OK` — em-dash-fusion default applied at @4, @6, @22 at Phase 1; @9, @22 used compound clauses; nothing to reorder.
+- `REFUSE-MIGRATE-SENSORY-FORWARD` — sensory:2 @12, sensory:3 @14, sensory:4 @17 each at-anchor with bone; no migration candidate within the 3-bone window without disrupting bone-anchored beat. Cap-2 unused.
+- `REFUSE-MIGRATE-NI-BACKWARD` — narrator:1 @2 already at @2 leading position; narrator:3 @13 leading at-anchor; narrator:5 @24 leading at-anchor with foreknowledge-clamp; narrator:6 @26 in receipt position (fork-003 placement). No backward promotion candidates. Cap-1 unused.
+- `UN-MERGE-RESCUE feel:2 @16` — canonical rescue path for Phase 1 drift flag #1. feel:2 ("holds both hands flat against the mesh") is the body-anchored discipline beat that lands the held bone-V "holds" physically. Without it, the bone-V surfaces only through mem:2's cognition — `RENDERED-ILLEGIBLE` risk per URI-STITCH-ACCOUNTING-HONESTY. Inserted a feel:2-rendered sentence BEFORE the mem:2 sentence at scene-B paragraph 3 (the @16 anchor).
+  - original (scene-B L6, single sentence): `The hands were on the needle and the needle was what they were for today, and this was what having hands was, here, in this place, at this work.`
+  - revised (scene-B L6, two sentences): `I held both hands flat against the mesh. The hands were on the needle and the needle was what they were for today, and this was what having hands was, here, in this place, at this work.`
+  - Rationale: bone-V "holds" lands in feel:2 clause; mem:2 monument-cognition lands second; no RENDERED-ILLEGIBLE on bone-V. Redundancy concern noted; Phase 7 Q-check will validate the un-merge is not over-stacked.
+- `REVERT-PARAPHRASE loc-state:7 @22` — Phase 1 drift flag #4. Restructured `narrowness of the way` reverted to closer-to-verbatim `alley-mouth was narrow enough that approach read as deliberate, not incidental`. Bone-faithfulness fence's verbatim discipline preserved.
+  - original (scene-C L1 tail): `...and the approach read as deliberate, not incidental, in the narrowness of the way.`
+  - revised: `...and the alley-mouth was narrow enough that approach read as deliberate, not incidental.`
+- `REVERT-SURFACE-SUBSTITUTION feel:3 @26` — Phase 1 drift flag #5. `her eyes` reverted to `the eyes` per bone-object-policy `verbatim` and the chapter's consistent `the eyes / the hands / the feet` convention.
+  - original (scene-C L6): `She moved her eyes to my hands before she spoke.`
+  - revised: `She moved the eyes to my hands before she spoke.`
+- `REVERT-VOICE-TRANSFORM narrator:6 @26` — Phase 1 drift flag #6. `had arrived` (past-perfect interpretation) reverted to `arrived` (simple past) per facet verbatim shifted under the past-tense voice-transform.
+  - original (scene-C L8 tail): `...the girl had arrived at it without the insects.`
+  - revised: `...the girl arrived at it without the insects.`
+- `SPEAKER-PARAGRAPH-RECHECK post-un-merge` — un-merge at @16 added one sentence inside the existing scene-B paragraph 3; no new speaker; speaker-paragraph rule unaffected.
+
+Total Phase 5 moves: 1 UN-MERGE-RESCUE, 3 REVERT-* (paraphrase + surface-substitution + voice-transform). All operations within license.
+
+---
+
+## Phase 6 — Buildup preservation
+
+Profile: protected-patterns=none for this chapter per scene-map (`scene-A: protected-patterns: none`, `scene-B: protected-patterns: none`, `scene-C: protected-patterns: none`).
+
+Scan:
+
+- `NO-PATTERNS-DECLARED-OR-DETECTED` — scene-map declares no protected patterns across all three scenes. No protected-pattern abandonment risk. No new structural pattern detected on the flat-low chapter that warrants `NEW-PATTERN-CANDIDATE` flag.
+- `PATTERN-OK *` — no-op pass.
+
+Total Phase 6 moves: 0. Phase 6 is near-no-op as predicted by scene-map state.
+
+---
+
+## Phase 6 — completion summary
+
+- Phase 6 draft: `active-project/draft/b01-c01.phase-6.draft.md`
+- word count: 551
+- sentence-terminator count: 37 (approximate sentence count ~34, allowing for em-dash internal pauses)
+- paragraph count: 14 (scene-A 4 ¶, scene-B 3 ¶, scene-C 7 ¶)
+- bones preserved: 27/27 (no cuts; Phase 7 has cut-license, Phases 2-6 do not)
+- redundancy culls: 1 (mem:1 @9)
+- compression merges: 0
+- voice reverts: 1 (`established` @11)
+- un-merge rescues: 1 (feel:2 @16)
+- paraphrase reverts: 1 (loc-state:7 @22)
+- surface-substitution reverts: 1 (feel:3 `her eyes` → `the eyes` @26)
+- voice-transform reverts: 1 (narrator:6 `had arrived` → `arrived` @26)
+- protected-pattern actions: 0
+
+All six Phase 1 drift flags addressed:
+1. feel:2 @16 → RESCUED via UN-MERGE at Phase 5 ✓
+2. `settled` → `established` @11 → REVERTED at Phase 4 ✓
+3. LENS-TRACE-MIS-CITATION @17 → render-log-only correction; no prose change required (acknowledged from Phase 1 log) ✓
+4. loc-state:7 RESTRUCTURED @22 → REVERTED at Phase 5 ✓
+5. feel:3 `her eyes` @26 → REVERTED at Phase 5 ✓
+6. narrator:6 `had arrived` @26 → REVERTED at Phase 5 ✓
+
+State machine: Phase 6 → complete (Phase 7 per-sentence editorial reflection next).
+
+---
+
 
