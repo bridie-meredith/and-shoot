@@ -15,3 +15,11 @@ cl07's "recognition-too-late: moral_legibility_to_self +4" is canonically cohere
 Power mechanics are bounded correctly. Multi-shard hijack capability explicitly absent; residue-range limitation named; insect-network intelligence is correctly distinguished from nervous-system override. The witch-label antagonist-pressure uses Westeros-specific social physics, not parahuman jargon — which is the correct approach given the Earth-Bet noun fence.
 
 **MINOR NOTE (execution, not block):** moral_legibility_to_self floor-3 assertion should be derived explicitly in at least one chapter-level contract — name the characterization basis so subsequent forks can't drift it upward.
+
+---
+
+### phase-5-substance-series attempt 2 — 2026-05-24
+
+**SUBSTANCE-FELT**
+
+v2 revisions are mechanical schema corrections and antagonist_pressure additions. None disturb the canonically-grounded elements accepted at attempt 1. The slug renaming throughout (political_register_toward_elite → political_register-prot, position → position-prot-rise/collapse, social_tether → social_tether-prot-rise/collapse/antag) does not introduce character drift — these are perspective-suffixed labels for the same story content. The new antagonist_pressure entries for relational_anchor_status and political_register-prot do not introduce parahuman jargon or power-mechanic violations; the insect-network's role as surveillance infrastructure (not nervous-system override) is intact throughout. No new canon contradictions. Minor execution note from attempt 1 stands; still not a block.
