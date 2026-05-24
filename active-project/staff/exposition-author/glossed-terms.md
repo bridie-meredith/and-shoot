@@ -20,3 +20,22 @@ Format: `- <key> | glossed-in: <episode> | gloss-id: <id> | first-mention-anchor
 # STRUCK: near-witness | glossed-in: b01c02 | gloss-id: 3 | first-mention-anchor: @8 — DELETED at R2.5 (NI-establishing coverage dropped; function carried by narrator:3 + mem:1); removed from register so future chapters may re-gloss if term recurs
 - pressed-labor-sweep | glossed-in: b01c02 | gloss-id: 4 | first-mention-anchor: @4
 - ledger | glossed-in: b01c02 | gloss-id: 5 | first-mention-anchor: @23
+
+---
+
+# Cross-episode glossed-terms register
+# Authority: /and-stitch Phase 8 writeback per `.claude/commands/and-facets.md` § exposition-author
+# Updated by /and-stitch b01-c01 (cycle-3-cap-burn-redo); 2026-05-24
+
+## b01c01
+
+- kings-landing-122ac (exposition:1 @1; KEEP)
+- flea-bottom (exposition:1 @1; KEEP)
+- copper-currency-star-penny (exposition:1 @1; KEEP)
+- coll (exposition:2 @4; KEEP)
+- wren (exposition:5 @22; KEEP)
+
+# STRIKE entries (lens covers; no register-entry — future chapters may re-gloss if needed):
+# - the-prohibition (exposition:3 @9 DELETED at R2.5; lens NI:2 + mem:1 + feel:1 + vibes:3/4 covers)
+# - the-city-watch (exposition:4 @18 DELETED at R2.5; loc-state:6 covers)
+# - the-hook (exposition:4 @18 DELETED at R2.5; loc-state:6 covers)
