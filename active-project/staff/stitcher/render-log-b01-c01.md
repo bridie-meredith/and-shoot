@@ -861,3 +861,80 @@ Phase 9 (cold-read terminal gate) follows; orchestrator dispatches separately af
 ---
 
 
+
+## Phase 9 — Cold-read terminal gate (URI-STITCH-COLD-READ)
+
+### Step 1 — Cold read (uninformed general-purpose agent)
+
+Dispatched one general-purpose agent with the canonical Phase 9 prompt; agent instructed to read ONLY `active-project/draft/b01-c01.md`. Report persisted at `active-project/staff/reviews/coldread-b01c01-20260524T1.md`.
+
+**Cold reader's six answers (summary):**
+1. **EVENTS** — recovered: pays building-keeper, crosses drain, notes Coll, circles block, passes tallow-stall, drops pack, threads needle, watch patrol passes, Coll folds net, Wren approaches and names the three-circuit observation, narrator dismisses, Wren names the flies-not-on-hand observation, Wren crosses street, narrator lifts needle. Caveat: "the whole middle stretch is sensory positioning and counting — almost no event." (Recovery list is structurally complete; the cold reader registers the flat-low scene-B as low-event by-design.)
+2. **JEOPARDY** — "Faint and implied, not concrete... Stakes are atmospheric." NOT "no jeopardy"; hinge dramatic_shape does not require acute stakes.
+3. **CAUSALITY** — "Loose. The narrator's actions read as routine I have to take on faith." Wren's approach is "the only causally legible beat." (Khepri-haunted register goes over uninformed reader's head, by-design per chapter-chunk register commitment.)
+4. **PAYOFF** — "Partial. The flies line lands... But it isn't a decision, turn, or consequence; the narrator just lifts the needle." (Closing-bone @29 functioning as designed — the rule's verdict in held-form, brevity-as-tell.)
+5. **CONTINUE?** — "Weak yes — only because the flies detail promises something genuinely strange." YES (passes gate).
+6. **ONE-LINE SUMMARY** — "A covert outsider posing as a net-mender in Flea Bottom is quietly made by a local ward-girl who notices that insects won't land on him."
+
+### Step 2 — Diff against intent
+
+**chapters[b01c01].goal**: "the operating rule in its intact form, the ward it will fail to protect, and the child who will pay the price of its failure."
+
+Per-dimension diff:
+
+| Intent dimension | Recovered? | Evidence |
+|---|---|---|
+| Operating rule intact | YES (texture-rendered, not labeled) | "covert work and exposure-risk", "what I was not doing", "weight of what I had not done" — the rule's intactness is felt in the prose texture. Chapter chunk explicitly commits to "Khepri-haunted without naming Khepri" register; the cold reader perceives the discipline without decoding its monument; this is design-faithful recovery. |
+| The ward (it will fail to protect) | YES | "Flea Bottom" recognized as setting; Wren recognized as ward-girl. |
+| The child (who will pay the price) | YES (introduction-level; the "will pay" foreshadow is graph-resident, not chapter-payoff) | Wren introduced; observation-radius proven via flies line; cold reader summary: "quietly made by a local ward-girl who notices that insects won't land on him." |
+
+**Dominant scene_conflict.protagonist_force** (s03 — chapter payload): "Taylor refusing to complete the instrumental assessment of Wren — holding her as a face, not a node." Cold reader recovered: narrator's dismissal + return-to-task; surface events present, cognitive register undecoded but not contradicted.
+
+**Gate checks (per Phase 9 Step 2)**:
+- ✅ The cold reader's recovered events (answer 1) include the chapter's central event (multi-dimensional goal recovered).
+- ✅ Answer 5 is "weak yes" (NOT "no").
+- ✅ Answer 2 is "faint and implied" (NOT "no jeopardy"; hinge dramatic_shape exempts pure-coda requirement does not apply — the chapter is NOT a coda).
+
+**Cold-read verdict: PASS**
+
+### Step 3 — Additive editorial pass (staging, fires alongside, non-blocking)
+
+Dispatched `/and-review staging b01c01` reviewer routine in parallel with cold-read. Report at `active-project/staff/reviews/staging-b01c01-20260524T1.md`. **SIGNAL-class; non-blocking.**
+
+- **Total findings**: 11
+- **Breakdown**: EXPAND ×4 / GROUND ×3 / STAGE ×3 / NEEDS-BEAT ×1
+- **Cross-pass pattern**: body-staging is the systematic gap (5 of 11 findings). The held bones at @9 / @19 / @24 / @29 carry explicit opposing-force rationales in showrunner memory that did not surface in prose. Phase 5's un-merge-rescue at @16 (inserting "I held both hands flat against the mesh") is the correct treatment; the other held beats did not receive parallel surfacing.
+- **Headline finding**: FINDING-01 — `@19 watch-pass pressure-moment` rendered as three words ("I held the eyes.") against a load-bearing bone whose rationale specifies "the watch is near, the insect-sense could route the bodies, the rule holds the hand still… this is the scene's load-bearing discipline beat." The opposing-force verified at bone-gate rationale level does not surface in prose; cold reader registered the watch-pass as ambient rather than as the chapter's central refusal-under-pressure beat.
+- **Discipline respected**: cap-burn @8 NOT touched; no proposals would convert flat-low → rising/peak; all additives graph-rooted (facet or bone-rationale under-rendered), none taste-rooted.
+
+### Step 4 — Verdict + showrunner-memory writeback
+
+Wrote `chapters[b01c01].cold_read`:
+```yaml
+cold_read:
+  read_at: 2026-05-24T05:40:00Z
+  verdict: PASS
+  recovered_summary: "A covert outsider posing as a net-mender in Flea Bottom is quietly made by a local ward-girl who notices that insects won't land on him."
+  report_path: active-project/staff/reviews/coldread-b01c01-20260524T1.md
+  staging_report_path: active-project/staff/reviews/staging-b01c01-20260524T1.md
+  staging_signals: 11
+  staging_breakdown: { EXPAND: 4, GROUND: 3, STAGE: 3, NEEDS-BEAT: 1 }
+  staging_headline: "FINDING-01 — @19 watch-pass pressure-moment under-rendered (3-word standalone vs bone-rationale's load-bearing pressure-and-discipline beat)"
+  stale_since: null
+```
+
+### Phase 9 — completion summary
+
+**PASS** — chapter is **terminal** under the polish-deferred chain.
+
+- Cold reader recovered the central event across all three goal dimensions (operating rule intact / the ward / the child who will pay).
+- Cold reader would continue (weak yes; the flies line promises strangeness).
+- Jeopardy is "faint and implied" — appropriate for hinge dramatic_shape; not a pure coda exemption needed.
+- 11 staging-signal findings recorded as SIGNAL-class (non-blocking); optional depth pass available via `/and-write b01c01 revise` + re-cascade.
+
+State machine: **stitched: true; cold_read: PASS**.
+
+next: chapter b01c01 ships at `active-project/draft/b01-c01.md` (terminal deliverable under polish-deferred chain).
+      Optional depth pass: `/and-write b01c01 revise --from-signals` to address 11 staging signals (NON-BLOCKING; depth-only).
+
+---

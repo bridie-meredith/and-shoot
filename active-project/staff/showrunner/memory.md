@@ -725,6 +725,16 @@ books:
         stitch_path: active-project/draft/b01-c01.md
         stitch_render_log: active-project/staff/stitcher/render-log-b01-c01.md
         stitch_stats: {words: 551, paragraphs: 14, sentences: 37, bones_rendered: 27, dialogue_utterances: 3, exposition_entries_rendered: 3, reshow_count: 0, reword_count: 1, cut_clauses: 0, cut_bones: 0, faults_surfaced: 0, cap_burn_handling: "1 bare-speech-bone @8 ACCEPTED-AT-CAP-BURN"}
+        cold_read:
+          read_at: 2026-05-24T05:40:00Z
+          verdict: PASS    # Phase 9 cold-read terminal gate; uninformed general-purpose agent recovered central event across all three goal dimensions; would-continue weak-yes; jeopardy faint-but-present (hinge dramatic_shape; coda exemption not needed)
+          recovered_summary: "A covert outsider posing as a net-mender in Flea Bottom is quietly made by a local ward-girl who notices that insects won't land on him."
+          report_path: active-project/staff/reviews/coldread-b01c01-20260524T1.md
+          staging_report_path: active-project/staff/reviews/staging-b01c01-20260524T1.md
+          staging_signals: 11    # SIGNAL-class; non-blocking; optional /and-write revise --from-signals depth pass available
+          staging_breakdown: { EXPAND: 4, GROUND: 3, STAGE: 3, NEEDS-BEAT: 1 }
+          staging_headline: "FINDING-01 — @19 watch-pass pressure-moment under-rendered (3-word standalone vs bone-rationale's load-bearing pressure-and-discipline beat); systematic pattern across held bones @9/@19/@24/@29 — body-staging gap (5 of 11 findings)"
+          stale_since: ~
         substance_delta_measured:
           axes_moved: { knowledge: 0.48 }    # redo scene-sum: s01 0.19 + s02 0.20 + s03 0.09 = 0.48 against chapter target 0.5 (within ±1 rank band); prior value was 0.53 from replaced bone set
           axes_held_verified: [capability]    # capability held across all 3 scenes; 9 of 27 bones carry capability in axes_held (up from 7 in prior set — new set adds s02n07 mid-day hold and s03n01 assessment-initiate hold); opposing-force named in rationale on all 9 held bones
