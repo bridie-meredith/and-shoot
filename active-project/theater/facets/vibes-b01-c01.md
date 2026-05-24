@@ -33,7 +33,7 @@ author: showrunner
 
 1 @1 actor:taylor-hebert-kl-122ac ++ insects: [flea-bottom-density-running-hot, passive-read-as-continuous-overhead, the-suppression-cost-that-does-not-appear-in-the-ledger] | licensed-by: state-update:1, state-update:2, proto:5
 
-2 @6 actor:taylor-hebert-kl-122ac ++ king's-landing: [tallow-smoke-as-the-constant, the-smell-that-confirms-the-register, attention-she-does-not-withhold] | licensed-by: state-update:1, state-update:2, proto:6
+2 @6 actor:taylor-hebert-kl-122ac ++ king's-landing: [tallow-smoke-as-the-constant, the-smell-that-confirms-the-register, attention-she-does-not-withhold] | licensed-by: state-update:1, proto:6
 # F3 repair (2026-05-23): third token rewritten from `beauty-requires-not-paying-attention-she-pays-attention`
 #   (AP8 fail — two-clause: "beauty requires not paying attention" + standalone "she pays attention")
 #   to `attention-she-does-not-withhold` (noun-phrase: "attention" as head, relative clause modifier
@@ -62,7 +62,7 @@ author: showrunner
 # Not override-architecture (no deployment), but the surveillance-architecture at work.
 # Licenses ++ on taylor's `insects` with the on-screen-confirmed-coverage token.
 
-5 @13 actor:taylor-hebert-kl-122ac ++ insects: [every-warm-body-in-the-block-legible, density-at-level-that-used-to-mean-work, confirmed-on-screen-b01c01] | licensed-by: proto:13, state-update:4
+5 @13 actor:taylor-hebert-kl-122ac ++ insects: [every-warm-body-in-the-block-legible, density-at-level-that-used-to-mean-work, overhead-that-runs-without-charging-the-ledger] | licensed-by: proto:13, state-update:4
 
 # ─── Event E4: City-watch patrol rotation acquired (@18) ─────────────────────────────────────────
 #
@@ -90,11 +90,11 @@ author: showrunner
 #
 # Also: episode-scope + for the opening-chapter establishing beat.
 
-7 @26 actor:wren-stitch-maker-flea-bottom-ward ++ observation: [first-on-screen-naming-of-what-she-saw, reported-before-interpreted, the-flies-report-as-demonstration] | licensed-by: feeling:1, proto:26
+7 @26 actor:wren-stitch-maker-flea-bottom-ward ++ observation: [names-the-proximate-not-the-meaning, reported-before-interpreted, withholds-the-frame-delivers-the-data] | licensed-by: feeling:1, proto:26
 
-8 @26 actor:wren-stitch-maker-flea-bottom-ward ++ silence: [named-observation-did-not-ask-the-question, the-follow-up-withheld-on-screen, first-confirmed-shape-of-the-mutual-silence] | licensed-by: feeling:1, proto:26
+8 @26 actor:wren-stitch-maker-flea-bottom-ward ++ silence: [named-observation-did-not-ask-the-question, question-the-ward-keeps-to-itself, shape-of-the-mutual-silence-going-forward] | licensed-by: feeling:1, proto:26
 
-9 @27 actor:taylor-hebert-kl-122ac ++ wren: [the-flies-report-landed, the-anomaly-confirmed-on-screen, holds-the-eyes-does-not-file] | licensed-by: proto:27
+9 @27 actor:taylor-hebert-kl-122ac ++ wren: [the-flies-report-landed, the-gap-in-the-ledger-that-does-not-close, holds-the-eyes-does-not-file] | licensed-by: proto:27
 
 # ─── Event E5 continued: episode-scope establishment ─────────────────────────────────────────────
 #

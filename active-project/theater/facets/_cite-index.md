@@ -71,7 +71,7 @@ _(no entries)_
 
 ### vibes (10 entries)
   vibes:1 @1 back=Y co=[exposition:1, loc-state:1, state:1, state:2, vibes:2] lic-out=[state-update:1, state-update:2, proto:5]
-  vibes:2 @6 back=N co=[loc-state:3, sensory:1] lic-out=[state-update:1, state-update:2, proto:6]
+  vibes:2 @6 back=N co=[loc-state:3, sensory:1] lic-out=[state-update:1, proto:6]
   vibes:3 @9 back=Y co=[feel:1, mem:1, narrator:2, state:9, vibes:4] lic-out=[memory:1, proto:9]
   vibes:4 @9 back=Y co=[feel:1, mem:1, narrator:2, state:9, vibes:3] lic-out=[memory:1, proto:9]
   vibes:5 @13 back=Y co=[narrator:3] lic-out=[proto:13, state-update:4]

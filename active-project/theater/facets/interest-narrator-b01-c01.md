@@ -67,7 +67,7 @@ r2-pass: R2.1 judge (2026-05-23)
 # G2: the at-rest reading wants this — the persona card names "ledger runs continuously" and the
 #   day-close is when her cost-tracking register surfaces; the bones-review NOTE-002 confirms the
 #   structural absence at this beat.
-7 @20 the day closed under the count she had been running with nothing moved that needed not to be moved
+7 @20 the day held under the count she had been running and the weight of what she had not done was in the count
 
 # SCENE C (@22-29, afternoon) ─────────────────────────────────────────────────
 
@@ -76,7 +76,7 @@ r2-pass: R2.1 judge (2026-05-23)
 #   she has already run the first pass of the node-assessment before she can stop it).
 # Earning: the assessment starting is the scene's structural collision; the held label signals
 #   that something fired without permission; her attention is here because the rule is under load.
-5 @24 observation-radius confirmed before she named it a radius; the circuit count was already in the entry before she decided not to enter it
+5 @24 she had already mapped the observation-radius and run the circuit count before the held label registered that she had
 
 # @26 — Wren speaks (flies-not-on-taylor payload). NOTE-003 carrier. Foreknowledge-clamp channel.
 # Channel: cost-tracking + foreknowledge-clamp (the child sees what she should not be able to see;
