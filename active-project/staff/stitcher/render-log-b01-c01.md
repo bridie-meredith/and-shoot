@@ -741,4 +741,123 @@ State machine: Phase 7 → complete (Phase 8 finalize + scene-callout strip + RE
 
 ---
 
+## Phase 8 — finalize
+
+### Line-ID assignment trace
+
+Walked the Phase 7 draft paragraph-by-paragraph, sentence-by-sentence; assigned dense sequential L-numbers 1..37 (no gaps; Phase 7 had 0 cuts).
+
+```
+¶1  (1 sentence)  L1                        anchors: @1
+¶2  (6 sentences) L2 L3 L4 L5 L6 L7         anchors: @2 @2 @3 @4 @5 @6
+¶3  (4 sentences) L8 L9 L10 L11             anchors: @7 @8 @9 @9
+¶4  (3 sentences) L12 L13 L14               anchors: @11 @12 @13
+¶5  (4 sentences) L15 L16 L17 L18           anchors: @14 @15 @16 @16
+¶6  (3 sentences) L19 L20 L21               anchors: @17 @18 @19
+¶7  (2 sentences) L22 L23                   anchors: @20 @20
+¶8  (1 sentence)  L24                       anchors: @22
+¶9  (2 sentences) L25 L26                   anchors: @23 @23
+¶10 (2 sentences) L27 L28                   anchors: @24 @24
+¶11 (2 sentences) L29 L30                   anchors: @25 @25
+¶12 (4 sentences) L31 L32 L33 L34           anchors: @26 @26 @26 @26
+¶13 (2 sentences) L35 L36                   anchors: @27 @28
+¶14 (1 sentence)  L37                       anchors: @29
+```
+
+Total: 37 sentences across 14 paragraphs ✓ (matches Phase 7 inventory).
+
+Scene boundaries (from scene-map-b01-c01.md) rendered as HTML comments in annotated draft per URI-SUBSTANCE-OVERHAUL Phase 8 allowance:
+- `<!-- SCENE-A @1-9 -->` before L1 (covers L1-L11)
+- `<!-- SCENE-B @11-20 -->` before L12 (covers L12-L23)
+- `<!-- SCENE-C @22-29 -->` before L24 (covers L24-L37)
+
+Clean draft HARD-strip check: scanned `active-project/draft/b01-c01.md` for `## Scene N` / `[SCENE BREAK]` / `--- SCENE ---` / HTML scene-comments — NONE found. Scene boundaries surface as paragraph breaks only. PASS.
+
+### STATS
+
+```
+words:                551
+sentences:            37
+paragraphs:           14
+bones_rendered:       27     # all 27 authored bones (flat IDs 1-9, 11-20, 22-29) surfaced in final prose; @8 silently per cap-burn license
+bones_merged:         0      # Phase 7 had 0 merges; Phase 5 UN-MERGE-RESCUE at @16 added a sentence; no bone-fusion at any phase reduced bone count
+bones_dropped:        0      # no Phase 7 CUT-BONE; bones-cuttable license (anchor-cut-only) not invoked
+bones_rendered_illegible: 0  # feel:2 @16 was RENDERED-ILLEGIBLE risk at Phase 1 (proactive-cull); Phase 5 UN-MERGE-RESCUE restored bone-V "holds" body-anchor — no illegible bones remain
+facets_rendered:      24     # 7 loc-state + 6 narrator + 4 sensory + 1 mem (mem:2) + 3 feel + 3 exposition = 24 facet entries surfaced verbatim in prose
+facets_dropped:       25     # 1 Phase-2 DROP-IMAGE-OVERLAP (mem:1 @9) + 14 state:* (schema-forbidden render target) + 10 vibes:* (schema-forbidden render target)
+facets_unrendered_remainder: 0  # all 49 cite-index entries accounted for in rendered or dropped columns; no FLAG-UNRENDERED-REMAINDER
+reshow_count:         0      # no Q8 RESHOW triggers; Q9-density never approached 3+ escalation
+reword_count:         1      # Phase 7 ¶4 S2 @12: "the hand-sensation taking its first count" → "the hand taking its first count"
+cut_clauses:          0      # Phase 7 0 CUT-CLAUSE moves
+preamble_source:      none   # Phase 0.6: empty episode-open pool; R2.5 elected no episode-open content; body is the whole
+exposition_entries_rendered:     3       # exposition:1 @1, exposition:2 @4, exposition:5 @22 (all em-dash-fold verbatim modulo voice-transform)
+exposition_entries_refused_at_R2: 2      # exposition:3 @9 (the-prohibition; lens covers — NI:2+mem:1+feel:1+vibes:3/4) + exposition:4 @18 (the-city-watch+the-hook; loc-state:6 covers)
+cross_episode_register_skipped:  0       # series opener; all 5 KEEPs registered (kings-landing-122ac, flea-bottom, copper-currency-star-penny, coll, wren); 3 STRIKEs (the-prohibition, the-city-watch, the-hook) explicitly NOT registered per R2.5 deletions
+dialogue_source:      dialogue-facet     # 3 character files loaded at Phase 0.7; no legacy-silent-speech route except cap-burn @8
+dialogue_character_files_loaded: 3       # coll (BODY-EMPTY post-cap-burn-DELETE), taylor, wren
+dialogue_utterances_rendered:    3       # wren:1 @23, taylor:2 @25, wren:2 @26 (all verbatim, attribution=said throughout)
+dialogue_bare_speech_bones:      1       # @8 (coll) — ACCEPTED-AT-CAP-BURN per fault-030; rendered silent per cap-burn license
+dialogue_unmoored_utterances:    0
+dialogue_speaker_mismatches:     0
+cap_burn_handling:    [coll-net-mender-flea-bottom:1 @8] silent at @8 per fault-030 ACCEPTED-AT-CAP-BURN; rendered as needle-action + attention-not-landing-on-POV-face per cap-burn license template; no invented speech content; deleted utterance does not appear; logged at fork-001 as LEGACY-SILENT-SPEECH @8 + BARE-SPEECH-BONE-CAP-BURN @8 (NOT FAULT-DIALOGUE-MISSING)
+```
+
+### RECONCILE
+
+```
+RECONCILE: bones rendered=27+merged=0+dropped=0+illegible=0=27 | authored bones = 27 ✓
+RECONCILE: facets rendered=24+dropped=25+unrendered_remainder=0=49 | cite-index facet entries = 49 (after cap-burn DELETE of dialogue-coll:1) ✓
+```
+
+Both equalities balance. No FAULT-RECONCILE-MISSING, no FAULT-RECONCILE-IMBALANCE, no FLAG-UNRENDERED-REMAINDER.
+
+Schema-forbidden facet accounting note (per URI-SUBSTANCE-OVERHAUL convention): vibes:* (10 entries) and state:* (14 entries) appear in the cite-index but are schema-forbidden render targets. They are counted under `facets_dropped` with the rationale `# schema-forbidden render target` — they did not fail to render due to error; they correctly never had rendering license. The Phase 2 cull of mem:1 @9 is the only non-schema-forbidden drop (25 total = 24 schema-forbidden + 1 Phase 2 DROP-IMAGE-OVERLAP).
+
+### Cross-episode register write
+
+Appended `## b01c01` section to `active-project/staff/exposition-author/glossed-terms.md` with 5 KEEPs:
+- kings-landing-122ac (exposition:1 @1; KEEP)
+- flea-bottom (exposition:1 @1; KEEP)
+- copper-currency-star-penny (exposition:1 @1; KEEP)
+- coll (exposition:2 @4; KEEP)
+- wren (exposition:5 @22; KEEP)
+
+STRIKE entries (the-prohibition, the-city-watch, the-hook) explicitly NOT registered — lens covers; future chapters may re-gloss.
+
+### Showrunner memory update
+
+Edited `active-project/staff/showrunner/memory.md` at `chapters[b01c01]`:
+- `stitched`: `~` → `true`
+- `stitch_path`: `~` → `active-project/draft/b01-c01.md`
+- `stitch_render_log`: `~` → `active-project/staff/stitcher/render-log-b01-c01.md`
+- `stitch_stats`: `~` → `{words: 551, paragraphs: 14, sentences: 37, bones_rendered: 27, dialogue_utterances: 3, exposition_entries_rendered: 3, reshow_count: 0, reword_count: 1, cut_clauses: 0, cut_bones: 0, faults_surfaced: 0, cap_burn_handling: "1 bare-speech-bone @8 ACCEPTED-AT-CAP-BURN"}`
+
+Scoped to stitcher metadata only — no other fields touched. `chunk` / `scenes` / `substance` / `bones` / `handoff` / `audience-gate` / `orchestrator_critic_verdict` / `substance_bone_gate_verdict` all preserved as-is.
+
+### Intermediate-draft pruning
+
+Per Phase 8 spec (no `--keep-drafts` flag passed; debugging would use that flag), deleted:
+- `active-project/draft/b01-c01.phase-1.draft.md` (was 27 lines, 3379 bytes; mtime 2026-05-24T03:35Z)
+- `active-project/draft/b01-c01.phase-6.draft.md` (was 27 lines, 3294 bytes; mtime 2026-05-24T05:10Z)
+- `active-project/draft/b01-c01.phase-7.draft.md` (was 27 lines, 3284 bytes; mtime 2026-05-24T05:18Z)
+
+No `<slug>.preamble.md` to delete (Phase 0.6 produced no episode-open content; preamble_source=none).
+
+The render-log retains the full Phase 1-7 trace; intermediate drafts are reproducible from this log if needed.
+
+### Phase 8 — completion summary
+
+- Clean draft: `active-project/draft/b01-c01.md` (551 words, 37 sentences, 14 paragraphs; no line-IDs, no traces, no scene callouts)
+- Annotated draft: `active-project/draft/b01-c01.annotated.md` (L1..L37 dense; 37 trace blocks; 3 scene HTML-comments)
+- STATS block emitted; RECONCILE PASS (both equalities balanced)
+- Cross-episode register write: 5 KEEPs appended
+- Showrunner memory writeback: stitcher metadata 4 fields updated
+- Intermediate drafts pruned: 3 files deleted
+
+State machine: stitched: in-progress → **stitched: true**
+
+Phase 9 (cold-read terminal gate) follows; orchestrator dispatches separately after this Phase 8 completion.
+
+---
+
 

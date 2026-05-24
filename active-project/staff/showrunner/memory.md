@@ -721,10 +721,10 @@ books:
           verdict: PASS-WITH-NOTES   # /and-review bones URI-WRITE-BONES-REVIEW-GATE; Layer 1 bone-gate re-fire PASS (0 HARD, 0 SIGNAL); Layer 2 fidelity PASS (all 9+8+9=26 independently-extracted events covered; all 10 named physical particulars present); cold-walk: operating-rule as discipline YES, ward YES, cost-bearer PARTIAL (Wren's flies-observation payload lives in bone rationale only — facet/dialogue will surface in prose). 4 NOTE-* findings all route to facets/stitch, none are bones failures.
           bones_file_mtime_at_review: 2026-05-23T00:39:12Z
           stale_since: ~
-        stitched: ~    # stale-marked: prior draft/b01-c01.md was against the replaced bone set; must re-run /and-stitch after /and-facets
-        stitch_path: ~    # stale-marked per staleness-cascade; prior: active-project/draft/b01-c01.md
-        stitch_render_log: ~    # stale-marked; prior: active-project/staff/stitcher/render-log-b01-c01.md
-        stitch_stats: ~    # stale-marked; prior stats (words:599, paragraphs:14, sentences:22, bones_rendered:27) pertain to replaced bone set
+        stitched: true    # /and-stitch 2026-05-24 Phase 8 finalize PASS — clean draft active-project/draft/b01-c01.md + annotated b01-c01.annotated.md + render-log render-log-b01-c01.md (cycle-3-cap-burn-redo; RECONCILE PASS on both bones-axis and facets-axis); Phase 9 cold-read gate follows
+        stitch_path: active-project/draft/b01-c01.md
+        stitch_render_log: active-project/staff/stitcher/render-log-b01-c01.md
+        stitch_stats: {words: 551, paragraphs: 14, sentences: 37, bones_rendered: 27, dialogue_utterances: 3, exposition_entries_rendered: 3, reshow_count: 0, reword_count: 1, cut_clauses: 0, cut_bones: 0, faults_surfaced: 0, cap_burn_handling: "1 bare-speech-bone @8 ACCEPTED-AT-CAP-BURN"}
         substance_delta_measured:
           axes_moved: { knowledge: 0.48 }    # redo scene-sum: s01 0.19 + s02 0.20 + s03 0.09 = 0.48 against chapter target 0.5 (within ±1 rank band); prior value was 0.53 from replaced bone set
           axes_held_verified: [capability]    # capability held across all 3 scenes; 9 of 27 bones carry capability in axes_held (up from 7 in prior set — new set adds s02n07 mid-day hold and s03n01 assessment-initiate hold); opposing-force named in rationale on all 9 held bones
