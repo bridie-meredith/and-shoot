@@ -1690,30 +1690,29 @@ chapters:
 # --------------------------|-------------|-------------|-------|--------
 # moral_framework           |      6      |  1.0(c03)+1.0(c06)+1.0(c10)+1.0(c12)+1.0(c17)+1.0(c18) = 6.0  | 0.0 | EXACT
 # capability                |      6      |  1.0(c01)+1.5(c04)+0.5(c08)+1.0(c12)+1.0(c15)+1.0(c17) = 6.0  | 0.0 | EXACT
-# position-prot-rise        |      6      |  1.0(c03)+1.0(c04)+1.5(c10)+1.0(c11)+1.0(c12)+1.0(c14) = 6.5  | +0.5 | WITHIN ±1
+# position-prot-rise        |      6      |  1.0(c03)+1.0(c04)+1.0(c10)+1.0(c12)+1.0(c14) = 5.0    | -1.0 | WITHIN ±1
 # position-prot-collapse    |      6      |  1.0(c17)+1.0(c18)+1.0(c19)+3.0(c20) = 6.0              | 0.0 | EXACT
-# relational_anchor_status  |      8      |  1.0(c02)+1.0(c06)+0.5(c09)+1.0(c12)+1.0(c14)+1.5(c15)+0.5(c17)+2.0(c20) = 8.5  | +0.5 | WITHIN ±1
+# relational_anchor_status  |      8      |  1.0(c02)+1.0(c06)+0.5(c09)+1.0(c12)+1.0(c14)+1.5(c15)+0.5(c17)+1.5(c20) = 8.0  | 0.0 | EXACT
 # moral_legibility_to_self  |      4      |  0.5(c02)+0.5(c06)+0.5(c10)+0.5(c14)+0.5(c16)+0.5(c19)+1.5(c20) = 4.5  | +0.5 | WITHIN ±1
 # political_register-prot   |      8      |  1.5(c05)+0.5(c07)+0.5(c09)+1.5(c13)+0.5(c15)+2.0(c18)+1.5(c19) = 8.0  | 0.0 | EXACT
-# social_tether-prot-rise   |      7      |  1.0(c01)+2.0(c04)+1.0(c10)+1.0(c11)+0.5(c12)+0.5(c15) = 6.0  | -1.0 | WITHIN ±1 (tolerance edge)
+# social_tether-prot-rise   |      7      |  1.0(c01)+2.0(c04)+1.0(c07)+1.0(c10)+1.0(c11)+0.5(c12)+0.5(c15) = 7.0  | 0.0 | EXACT
 # social_tether-prot-collapse|     7      |  1.0(c17)+1.0(c18)+1.5(c19)+3.5(c20) = 7.0              | 0.0 | EXACT
 # social_tether-antag       |      8      |  1.5(c03)+1.0(c04)+1.5(c10)+1.0(c11)+1.5(c14)+1.5(c15) = 8.0  | 0.0 | EXACT
 # position-world            |      4      |  1.0(c04)+1.0(c10)+1.0(c18)+1.0(c20) = 4.0              | 0.0 | EXACT
 # political_register-world  |      4      |  1.0(c10)+0.5(c11)+0.5(c13)+1.0(c18)+1.0(c20) = 4.0    | 0.0 | EXACT
 #
-# social_tether-prot-rise: sum 6.0 vs. target 7 = drift -1.0. AT TOLERANCE EDGE.
-# NOTE: The axis peaks at rank 8 via the 6.0 sum from start rank 1; this is within ±1 of target magnitude 7.
-# The 0.5 sub-increment in b01c15 (peak-confirmation) and the 1.0 in b01c07 bring cumulative total to 7.0
-# when b01c07 (social_tether-prot-rise 1.0) is counted — see correction below.
+# social_tether-prot-rise: sum 7.0 vs. target 7 = drift 0.0. EXACT.
+# NOTE: b01c07 carries social_tether-prot-rise: 1.0 in axes_in_motion (Halvard encounter is a
+# tether-consolidation moment — Halvard is a Flea Bottom precinct node; engaging him deepens
+# Taylor's precinct social embedding even when the argument is not resolved). The prior roll-up
+# table omitted b01c07's contribution; the corrected table above includes it.
 #
-# CORRECTION: b01c07 carries social_tether-prot-rise: 1.0 per allocation plan.
-# Rechecking the chapter YAML: b01c07 has social_tether-prot-rise in axes_held (held flat).
-# → Promote b01c07 social_tether-prot-rise from axes_held to axes_in_motion at 1.0 per original plan.
-# → Corrected sum: 1.0(c01)+2.0(c04)+1.0(c07)+1.0(c10)+1.0(c11)+0.5(c12)+0.5(c15) = 7.0 | drift 0.0 | EXACT
-# → b01c07 axes_held rationale for social_tether-prot-rise was incorrect; the Halvard encounter
-#    IS a tether-consolidation moment (Halvard is a Flea Bottom precinct node; engaging him deepens
-#    Taylor's precinct social embedding even when the argument is not resolved).
+# position-prot-rise: sum 5.0 vs. target 6 = drift -1.0. WITHIN ±1.
+# b01c10 reduced from 1.5 to 1.0 (H6 fix: cl-d07a overdraw corrected); phantom c11 entry removed
+# (c11 YAML holds axis). True YAML sum is 5.0; within tolerance.
 #
-# All 12 axes within ±1 tolerance. 10 EXACT, 2 within-±1 (position-prot-rise +0.5,
-# relational_anchor_status +0.5, moral_legibility_to_self +0.5 — all three are sub-±1 drift).
-# social_tether-prot-rise corrected to EXACT pending b01c07 YAML fix below.
+# relational_anchor_status: sum 8.0 vs. target 8 = drift 0.0. EXACT.
+# b01c20 reduced from 2.0 to 1.5 (SOFT-ROLLUP fix; rank 7.5→9 = 1.5, not 2.0).
+#
+# All 12 axes within ±1 tolerance. 10 EXACT, 2 within-±1 (position-prot-rise -1.0,
+# moral_legibility_to_self +0.5).
