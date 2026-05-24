@@ -81,12 +81,13 @@ If the question is genuinely load-bearing (schema change, agent role change, a c
 
 ## Return-value discipline
 
-The caller's context is precious. Default shapes:
+The caller's context is precious. Default shapes. **Every shape ends with `dec-id:` — the `DEC-NNNN` id of the decisions.md entry that was written for this dispatch.**
 
 **Fast-track answer (most dispatches):**
 ```
 DECISION: <one-line answer>
 basis: <prior-ruling | goal-N | methodology-3X>
+dec-id: DEC-<NNNN>
 ```
 
 **Slow-track answer:**
@@ -96,6 +97,7 @@ basis: <which rule(s) drove it>
 trade-off: <what was given up>
 stm-noted: <yes>
 ltm-write: <yes/no, with reason if yes>
+dec-id: DEC-<NNNN>
 ```
 
 **Escalation (use the structured format from the agent file):**

@@ -10,4 +10,5 @@ Format per entry:
 
 ---
 
-[2026-05-24] Admin agent and persona authored — files in place, no dispatches yet → INITIALIZED | First session; awaiting first real question.
+[2026-05-24 18:48] DEC-0001 | Add separate decisions.md log vs extending STM/LTM → DECIDED: separate file | Methodology 3c (blast radius) — keeps STM prunable, LTM compact, log unbounded.
+[2026-05-24 18:46] Admin agent and persona authored — files in place, no dispatches yet → INITIALIZED | First session; awaiting first real question.
