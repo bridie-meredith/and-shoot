@@ -17,6 +17,8 @@ Schema: `schemas/card.schema.md` §behavior.
 
 ### planetos
 - [taylor-hebert-westeros](taylor-hebert-westeros.card.md) — per-character; Westeros 120 AC variant (eleven-year-old sept ward, doubled register); inherits taylor-hebert; references grrm-mannerisms + smallfolk + septon; full
+- [monument-cost-borne-by-the-unconsenting](monument-cost-borne-by-the-unconsenting.card.md) — per-character (taylor-hebert-kl-122ac); memory-monument family: Earth-Bet displacement, cost landing on unconsenting bearer; quiet-beat instrument; full
+- [monument-conquest-charter-language](monument-conquest-charter-language.card.md) — per-character (taylor-hebert-kl-122ac); memory-monument family: Westerosi-clamp, institutional language that outlives its author; quiet-beat instrument; full
 - [westeros-grrm-mannerisms](westeros-grrm-mannerisms.card.md) — shared; universal Westerosi prose eccentricities (time-keeping, X-and-twenty numbers, Anglo-Saxon morphology, universal monuments); full
 - [westeros-smallfolk](westeros-smallfolk.card.md) — shared class; baseborn commoners; full
 - [westeros-noble-courtly](westeros-noble-courtly.card.md) — shared class; highborn / courtly; full
@@ -31,6 +33,10 @@ Schema: `schemas/card.schema.md` §behavior.
 ### taylor-hebert
 - [taylor-hebert](taylor-hebert.card.md) — base, library, earth-bet
 - [taylor-hebert-westeros](taylor-hebert-westeros.card.md) — variant, project, planetos; inherits taylor-hebert
+
+### taylor-hebert-kl-122ac
+- [monument-cost-borne-by-the-unconsenting](monument-cost-borne-by-the-unconsenting.card.md) — monument family; Earth-Bet displacement; library; planetos
+- [monument-conquest-charter-language](monument-conquest-charter-language.card.md) — monument family; Westerosi-clamp; library; planetos
 
 ---
 
