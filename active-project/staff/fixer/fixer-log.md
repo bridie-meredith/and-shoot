@@ -206,6 +206,74 @@ exit: CLEAN
 cite-index-rebuild: not needed — all fixes were content-only edits within existing entries; no IDs, anchors, or proto-line tokens changed
 fix-log: active-project/staff/fixer/and-facets-cycle2-fixes.md
 
+## SESSION-START — 2026-05-24T00:00:00Z — facets-b01c01-cycle3-fixer
+dispatch: /and-facets b01c01 Phase 5b cycle-3 fixer — Callout A (interest-narrator:7/@20 + narrator:5/@24 content recast), Callout B (vibes:2 license trim + vibes:5/7/8/9 token replacements), Callout C (dialogue-coll C0 path-error dismissal + C1 facet-license cross-anchor ADD pre-validation or DELETE)
+target: active-project/theater/facets/interest-narrator-b01-c01.md + vibes-b01-c01.md + theater/dialogue/coll-net-mender-flea-bottom.md + staff/dialogue-writer/coll-net-mender-flea-bottom.drafts.md
+audit-report: active-project/staff/fixer/and-facets-cycle3-callouts.md + active-project/staff/auditor/facets-audience-gate-r2.md
+findings-queued: 9 (A1, A2, B1, B2, B3, B4, B5, C0, C1)
+
+## A1 — RESOLVED — 2026-05-24T00:10:00Z
+fault: narrator:7 @20 ledger-satisfaction register (rule held; nothing broke) instead of ledger-cost (the labor of the prohibition)
+scope: line
+change: "the day closed under the count she had been running with nothing moved that needed not to be moved" → "the day held under the count she had been running and the weight of what she had not done was in the count"
+criteria met: yes — cost register surfaces; weight of the not-doing is explicit; one observation; no AP-10; anchor @20 preserved
+
+## A2 — RESOLVED — 2026-05-24T00:12:00Z
+fault: narrator:5 @24 author-annotation register ("confirmed before she named it" = describing the reflex from outside)
+scope: line
+change: "observation-radius confirmed before she named it a radius; the circuit count was already in the entry before she decided not to enter it" → "she had already mapped the observation-radius and run the circuit count before the held label registered that she had"
+criteria met: yes — completed-fact form per calibration anchor; annotation register eliminated; held-label registers as Taylor's interior discipline catching itself; anchor @24 preserved
+
+## B1 — RESOLVED — 2026-05-24T01:00:00Z
+fault: vibes:2 @6 licensed-by included non-operative state-update:2 (time-of-day initialization); downstream tactical-coherence failure (cape-fic)
+scope: line
+change: removed state-update:2 from vibes:2 licensed-by chain (state-update:1, proto:6 remain); cite-index vibes:2 lic-out updated
+criteria met: yes — operative licenses only; state-update:2 removed
+
+## B2 — RESOLVED — 2026-05-24T01:02:00Z
+fault: vibes:5 @13 token `confirmed-on-screen-b01c01` provenance-as-vibe (gate-6 failure); no downstream operator behavior encoded
+scope: line
+change: `confirmed-on-screen-b01c01` → `overhead-that-runs-without-charging-the-ledger`
+criteria met: yes — disposition token encodes suppression-overhead-as-unledgered-cost; operator-actionable
+
+## B3 — RESOLVED — 2026-05-24T01:04:00Z
+fault: vibes:7 @26 two provenance tokens: `first-on-screen-naming-of-what-she-saw` (token #1) and `the-flies-report-as-demonstration` (token #3)
+scope: line
+change: token #1 → `names-the-proximate-not-the-meaning`; token #3 → `withholds-the-frame-delivers-the-data`; middle token `reported-before-interpreted` retained
+criteria met: yes — two distinct disposition tokens; distinct operator behaviors encoded; middle anchor preserved
+
+## B4 — RESOLVED — 2026-05-24T01:06:00Z
+fault: vibes:8 @26 token `the-follow-up-withheld-on-screen` provenance-as-vibe; `first-confirmed-shape-of-the-mutual-silence` also carries provenance-flavor
+scope: line
+change: `the-follow-up-withheld-on-screen` → `question-the-ward-keeps-to-itself`; `first-confirmed-shape-of-the-mutual-silence` → `shape-of-the-mutual-silence-going-forward`
+criteria met: yes — rule-of-relationship disposition encoded; provenance-flavor stripped from third token
+
+## B5 — RESOLVED — 2026-05-24T01:08:00Z
+fault: vibes:9 @27 token `the-anomaly-confirmed-on-screen` provenance-as-vibe at chapter payload beat (gate-6 failure)
+scope: line
+change: `the-anomaly-confirmed-on-screen` → `the-gap-in-the-ledger-that-does-not-close`
+criteria met: yes — relational-administration-gap as accumulating-cost encoded as durable disposition; operator-actionable for subsequent episodes
+
+## C0 — DISMISSAL-RECORDED — 2026-05-24T01:10:00Z
+fault: dark-fantasy Seam 2 cited behavior-card absence at cards/dialects/ and cards/personas/ paths
+scope: dismissal (no edit)
+change: card confirmed at active-project/actors/coll-net-mender-flea-bottom/card.md; §Voice sections verified present and matching sidecar citations; path-search error by reviewer
+criteria met: yes — dismissal recorded; correct path documented
+
+## C1 — ADD-REFUSED-CYCLE-3 + RECOMMENDED-DELETE-CYCLE-3 — 2026-05-24T01:20:00Z
+fault: dialogue sidecar facet-licenses exposition:2 @4 resolves at @4, not @8; @8 bare in cite-index; citation-completeness HARD
+scope: escalate (pre-validation failed; ADD refused; DELETE recommended)
+change: no files edited; pre-validation walked against rubric-state-updates.md; recommended state-updates ADD at @8 refused on: (1) reality axis — speech is not a tracked field; per-actor Coll file already carries REFUSE at @8 on this ground; (2) anti-pattern #9 density-on-flat (scene-A flat-low, no peak-bones); (3) authority — relationship-to-taylor is an invented-field (relational register, not tracked-state). RECOMMENDED-DELETE-CYCLE-3: delete coll-net-mender-flea-bottom:1 from dialogue file and proto-lines @8; requires showrunner approval (dependency: proto-lines + cite-index affected). Path-b rubric-edit flagged as follow-on for authoring-staff review.
+criteria met: no — structural fault persists; DELETE recommended; rubric-edit is follow-on
+
+## SESSION-END — 2026-05-24T01:25:00Z — facets-b01c01-cycle3-fixer
+findings-applied: 7 (A1, A2, B1, B2, B3, B4, B5 — all FIXED-DIRECT)
+findings-dismissed: 1 (C0 — DISMISSAL-RECORDED, no edit)
+findings-refused: 1 (C1 — ADD-REFUSED-CYCLE-3; pre-validation failed on 3 rubric axes)
+recommendations-pending-approval: 1 (C1 RECOMMENDED-DELETE-CYCLE-3)
+exit: DEPENDENCY-FLAGGED (C1 DELETE requires showrunner approval; proto-lines + cite-index affected)
+fix-log: active-project/staff/fixer/and-facets-cycle3-fixes.md
+
 ## item-4 — RESOLVED — 2026-05-21T15:08:00Z
 fault: exposition:4 @4 gloss text "In Flea Bottom there is rarely anyone who can" lacks appositive orienting a cold-join reader; "the Hook" in exposition:1 @0 bridge text also flagged for check
 scope: line

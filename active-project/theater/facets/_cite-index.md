@@ -1,15 +1,15 @@
 # Cite-Index — b01-c01
-generated: 2026-05-23
+generated: 2026-05-24
 source: active-project/theater/proto-lines/b01-c01.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 49 facet entries; 22/27 protolines decorated (81.5%)
+totals: 49 facet entries; 21/27 protolines decorated (77.8%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
-| 0 (bare)   | 5 |
-| 1          | 10 |
+| 0 (bare)   | 6 |
+| 1          | 9 |
 | 2          | 6 |
 | 3          | 2 |
 | 4          | 1 |
@@ -71,7 +71,7 @@ _(no entries)_
 
 ### vibes (10 entries)
   vibes:1 @1 back=Y co=[exposition:1, loc-state:1, state:1, state:2, vibes:2] lic-out=[state-update:1, state-update:2, proto:5]
-  vibes:2 @6 back=N co=[loc-state:3, sensory:1] lic-out=[state-update:1, state-update:2, proto:6]
+  vibes:2 @6 back=N co=[loc-state:3, sensory:1] lic-out=[state-update:1, proto:6]
   vibes:3 @9 back=Y co=[feel:1, mem:1, narrator:2, state:9, vibes:4] lic-out=[memory:1, proto:9]
   vibes:4 @9 back=Y co=[feel:1, mem:1, narrator:2, state:9, vibes:3] lic-out=[memory:1, proto:9]
   vibes:5 @13 back=Y co=[narrator:3] lic-out=[proto:13, state-update:4]
@@ -110,4 +110,4 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 ## Bare protolines (no citations accrued)
 _Round-2 add candidates if the rubric licenses a fire here._
 
-@3, @5, @11, @19, @29
+@3, @5, @8, @11, @19, @29

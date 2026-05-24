@@ -1,6 +1,19 @@
 # Dialogue Drafts Sidecar — coll-net-mender-flea-bottom — b01c01
 
-## Entry 1 — @8
+# DELETED coll-net-mender-flea-bottom:1 @8 - facet-license cross-anchor unresolvable
+# (sidecar's `Facet-licenses: exposition:2 @4` resolves at @4, not the speaking anchor @8;
+# cite-index walk for @8 returned only [coll-net-mender-flea-bottom:1] — bare of co-located
+# lens facets). Cycle-3 ADD pre-validation FAILED on three rubric axes for the recommended
+# state-updates-Coll candidate (Reality: speech is not a tracked field, on-disk REFUSE
+# already lodged; AP#9: scene-A flat-low density-on-flat; Authority: relationship-to-taylor
+# is invented-field per rubric §Field-extension). Cap-burn DELETE per
+# URI-FACETS-CAP-BURN-SEMANTICS A2, cap-burn cycle 3, 2026-05-24. Trade-off: bare-speech-bone
+# HARD at @8 per URI-DIALOGUE-COVERAGE-GATE — accepted at cap-burn. Rubric-edit Path (b)
+# (upstream-same-scene cross-anchor citation permission) flagged as follow-on for
+# authoring-staff / margit. Sidecar content below preserved for forensic / future-rubric-edit
+# revival.
+
+## Entry 1 — @8 (DELETED — see deletion marker above)
 
 **Intent (state fields):**
 - Board-move: offer work to a stranger without asking about her provenance; the offer is the observation-mode operating — he has noticed she is here consistently and is capable-looking; this is not charity, it is practical information
