@@ -727,9 +727,9 @@ chapters:
       axes_in_motion:
         - axis: position-prot-rise
           direction: up
-          target_delta_magnitude: 1.5
+          target_delta_magnitude: 1.0
           cost_ledger_anchor: cl-d07a
-          notes: "formalization of the arrangement; Otto names the function explicitly; position confirmed at near-peak; cl-d07a opens (naming forecloses informal-deniability)"
+          notes: "formalization of the arrangement; Otto names the function explicitly; position confirmed at near-peak; cl-d07a opens (naming forecloses informal-deniability); 1.0 of 2.0 drawn here, leaving 1.0 for cl-d07a completion at c14"
         - axis: social_tether-prot-rise
           direction: up
           target_delta_magnitude: 1.0
@@ -743,8 +743,8 @@ chapters:
         - axis: position-world
           direction: up
           target_delta_magnitude: 1.0
-          cost_ledger_anchor: cl-world-d07
-          notes: "arrangement formalized = Green succession channel solidifies; political_register-world + position-world gain from intelligence architecture Taylor accepted; cl-world-d07"
+          cost_ledger_anchor: cl-world-d04
+          notes: "arrangement formalized = Green succession channel solidifies; position-world gain from intelligence architecture Taylor accepted; cl-world-d04 (1.0 of 2.0 remaining at this point; journey-required cl03a)"
         - axis: political_register-world
           direction: up
           target_delta_magnitude: 1.0
@@ -963,6 +963,7 @@ chapters:
         - "capability at full deployment: architecture complete in scope"
         - "Wren: anchor rank 4.5 (structurally necessary to coverage map without ledger entry)"
         - "non-extractable confirmation: social tether at near-peak 8; approaching cl-antag-d10 completion"
+        - "Halvard: counter-argument thinning in Taylor's engagement"
       world_state:
         - "KL 122 AC; coverage at Khepri-rhyming scale; Flea Bottom and five wards fully mapped"
         - "Otto accepts coverage map with eastern gap; arranges alternate route for that channel"
@@ -1013,7 +1014,7 @@ chapters:
           rationale: "Otto's leverage holds; Halvard foreclosure is Taylor-unilateral and does not affect the patron-lever"
       density_target: 0.6-0.8
       chapter_class: standard
-    dramatic_shape: climax
+    dramatic_shape: hinge
     goal: |
       Show the audience Taylor naming the contempt with precision and then demonstrating that naming changes nothing about what she does next — the contempt-without-refusal shape at its first appearance.
     pov_narrator: taylor-hebert-kl-122ac
@@ -1025,6 +1026,7 @@ chapters:
         - "Wren: anchor rank 4.5; structurally necessary"
         - "Halvard: counter-argument thinning"
         - "Black-faction courier-adjacent figure in gap lanes"
+        - "non-extractable confirmation: social tether at near-peak 8; approaching cl-antag-d10 completion"
       world_state:
         - "KL 122 AC; coverage at scale; Green apparatus using Taylor's d06 list operationally"
         - "political_register-world rank 7.5"
@@ -1142,16 +1144,25 @@ chapters:
       Taylor's coverage map touches via a passage-adjacent ward. She sees him through
       compound eyes: a boy with a sapphire eye, moving with Vhagar's behavioral
       imprint, already performing the coercive register of someone who has never been
-      told no at physical scale. Taylor routes nothing of this to Jarvis. The chapter's
-      structural work: social_tether-antag reaches 9 (confirmation complete), social_
-      tether-prot-rise peaks at 8 (the tether is as embedded as it will be before the
-      collapse), and political_register-prot advances — Aemond through compound eyes
-      is one more item of court content that the feed returns with color Taylor cannot
-      neutralize. The cf-rhaenyra-pressure staging deepens: Dragonstone is aware the
-      lower-city apparatus is active; Taylor reads the threat obliquely through the
-      cloth merchant's absence. What shifts: both social_tether axes at peak; capability
+      told no at physical scale. Taylor routes nothing of this to Jarvis. Vhagar's
+      proximity backwash reaches into the passage-adjacent ward — a thermal and pressure
+      displacement Taylor has learned to read as the dragon's footprint even at distance.
+      The compound-eye feed in that ward degrades at the edges; the gap-lanes east of
+      the water-gate, which Taylor has kept deliberately uncovered, register as absence
+      against the disrupted feed. For the first time, the gap is not invisible — it is
+      perceptible as a gap, a negative shape where Wren moves without being mapped,
+      made visible by the same compound-eye architecture that reads everything else.
+      Taylor notes it. She does not open a ledger entry. The chapter's structural work:
+      social_tether-antag reaches 9 (confirmation complete), social_tether-prot-rise
+      peaks at 8 (the tether is as embedded as it will be before the collapse), and
+      political_register-prot advances — Aemond through compound eyes is one more item
+      of court content that the feed returns with color Taylor cannot neutralize. The
+      cf-rhaenyra-pressure staging deepens: Dragonstone is aware the lower-city
+      apparatus is active; Taylor reads the threat obliquely through the cloth
+      merchant's absence. What shifts: both social_tether axes at peak; capability
       acknowledged load-bearing; Aemond is now a face in the feed not just a logistics
-      reference.
+      reference; Wren's exclusion from the ledger is perceptually confirmed via the
+      gap-lane negative-shape.
     structure:
       scene_count: 4
     substance_delta:
@@ -1159,8 +1170,8 @@ chapters:
         - axis: social_tether-antag
           direction: up
           target_delta_magnitude: 1.5
-          cost_ledger_anchor: cl-antag-d10
-          notes: "non-extractable fully confirmed; social_tether-antag reaches 9 LOCKED; cl-antag-d10 completed in full"
+          cost_ledger_anchor: cl-antag-d03
+          notes: "non-extractable fully confirmed; social_tether-antag reaches 9 LOCKED; cl-antag-d03 remaining 1.5 drawn (cl-antag-d03 completed here; cl-antag-d10 completed at c14)"
         - axis: social_tether-prot-rise
           direction: up
           target_delta_magnitude: 0.5
@@ -1174,8 +1185,8 @@ chapters:
         - axis: relational_anchor_status
           direction: up
           target_delta_magnitude: 1.5
-          cost_ledger_anchor: null
-          notes: "Wren's anchor weight grows as the tether peaks and she remains outside it; the fuller the architecture the more visible her exclusion becomes; not yet a named recognition but structural weight accumulates"
+          cost_ledger_anchor: cl-d08
+          notes: "Vhagar-proximity backwash degrades compound-eye coverage at gap-lane boundary; the east-of-water-gate gap is perceptually confirmed as a negative shape in the feed; Wren's exclusion from the ledger becomes visible to Taylor as a structural absence against the disrupted feed; anchor: cl-d08 echo at d10 — the free-movement gap mechanism is now perceptual rather than abstract; journey-required cl03b (the coverage architecture whose gap is the perceptual mechanism)"
         - axis: capability
           direction: up
           target_delta_magnitude: 1.0
@@ -1332,8 +1343,8 @@ chapters:
         - axis: moral_framework
           direction: down
           target_delta_magnitude: 1.0
-          cost_ledger_anchor: cl05
-          notes: "protection deployment is mechanically identical to override architecture; Taylor cannot unname this; third material breach in the cascade sequence"
+          cost_ledger_anchor: cl03a
+          notes: "protection deployment is mechanically identical to override architecture; Taylor cannot unname this; third material breach in the cascade sequence; cl03a cost side: intelligence-network-build cost rolling over to use-vector-deployment is the on-page event (cl03a completed)"
         - axis: position-prot-collapse
           direction: down
           target_delta_magnitude: 1.0
@@ -1602,7 +1613,7 @@ chapters:
       axes_in_motion:
         - axis: relational_anchor_status
           direction: up
-          target_delta_magnitude: 2.0
+          target_delta_magnitude: 1.5
           cost_ledger_anchor: cl07c
           notes: "Wren dies in the coverage gap Taylor held open for her free movement; relational_anchor_status rank 9 LOCKED; cl07c: un-priced item is what the calculus came for; HIGH=WORST"
         - axis: position-prot-collapse
