@@ -353,15 +353,132 @@ series:
       bone:    { delta_per_axis: 1-3, axes_per_bone: 1-2 }
 
     # Phase 4b verdict (pulp-enthusiast taste-judge): ACCEPT (v1 substance; carried to v2).
-    # Phase 5 attempt 1 verdict aggregate: REVISE (audience SUBSTANCE-FLAT-antagonist_pressure;
+    # Phase 5 attempt 1 aggregate: REVISE (audience SUBSTANCE-FLAT-antagonist_pressure;
     #   dramatist ROLL-UP + CURVE-SHAPE FAIL; auditor fault-001/002/003/004).
-    # Phase 5 attempt 2 (v2 above): pending re-review.
+    # Phase 5 attempt 2 aggregate: ACCEPT (audience 3-of-3 SUBSTANCE-FELT; dramatist ACCEPT
+    #   all 5 checks PASS; auditor ACCEPT zero hard / 4 soft non-blocking).
     #
-    # Watch-items carried forward (pulp-enthusiast):
-    #   - Dance-ignition timeline (d10-d14): chapter contracts must keep visible on-page complications;
-    #     v2 antagonist_pressure entries now name d10/d12 eruption points explicitly.
+    # Downstream watch-items (carried forward into /and-cast and /and-substance book):
+    #   - Dance-ignition timeline (d10-d14): chapter contracts must keep visible on-page
+    #     complications; v2 antagonist_pressure entries name d10/d12 eruption points explicitly.
     #   - Position/social_tether rise/collapse: d14 collapse must read as complication cascade;
     #     v2 splits into independent -rise / -collapse axes with non-zero deltas at chapter level.
-    #   - relational_anchor_status: beats attached to plot events;
-    #     v2 distributes accumulation across cl-d06 / cl-d08 / cl-d11 / cl04 (trajectory-anchored).
-    # Reviewer reports: active-project/staff/showrunner/_drafts/{phase-4b-pulp-verdict, phase-5-auditor-report, phase-5-dramatist-review}.md
+    #   - relational_anchor_status: beats attached to plot events; v2 distributes accumulation
+    #     across cl-d06 / cl-d08 / cl-d11 / cl04 (trajectory-anchored).
+    #   - cl-d08b social_tether-prot-rise +1 at d08 inferentially-anchored (auditor flag-001);
+    #     /and-substance book Phase 3 may challenge if working from shifts blocks only.
+    #   - Slug naming convention mixed (auditor flag-002); latent confusion risk only.
+    #   - cl07c opportunity-missed annotation multi-sentence (auditor flag-003); not blocking.
+    # Reviewer reports: active-project/staff/showrunner/_drafts/{phase-4b-pulp-verdict,
+    #   phase-5-{audience-attempt1,auditor-report,dramatist-review,
+    #             audience-attempt2,auditor-report-attempt-2,dramatist-review-attempt-2}}.md
+
+# /and-substance series Phase 2 + Phase 3 — book chunk + structure + substance_delta + vibe_cloud
+# Authored 2026-05-24; roll-up verified 12 of 12 axes within ±1 tolerance (10 EXACT, 2 within-±1).
+# Draft preserved: active-project/staff/showrunner/_drafts/book-b01-draft-2026-05-24.md
+books:
+  - slug: b01
+    chunk: |
+      Taylor arrives in King's Landing as a penitent who has stripped herself
+      of every instrument of control — and discovers, inside the first season,
+      that the only path that keeps [cost-bearer] out of the coming war runs
+      directly through Otto Hightower's offer. She accepts, and in accepting
+      begins rebuilding the architecture she came to Westeros to atone for:
+      insect-surveillance threading the wards, unconsented observation of
+      bodies that do not know they are being read, calibrated intelligence
+      routed to a faction she will come to name and despise. The book traces
+      the full arc of that construction — from the first sanctioned exception
+      at d03, through the formalizing of position at d07, through the
+      non-extractable confirmation at d10, through the irrevocable Khepri-
+      repetition at d12, to the Dance's ignition and the locked burn at d14.
+      What cannot survive this book: Taylor as agent of refusal-of-control
+      (the prohibition is the most violated line); the un-priced relational
+      anchor ([cost-bearer] dies in the streets Taylor mapped); and
+      atonement-as-distinct-from-repetition (the ledger's final entry is the
+      recognition that the atonement was the repetition). The contempt arrives
+      accurate and complete and without exit. The trades worked. The accuracy
+      was the catastrophe.
+    structure:
+      chapter_count: 20
+      # Rationale: midpoint of 18-22 hard-fenced range. Distribution: chapters 1-9 absorb
+      # setup zone (d01-d06; front-loaded embeddedness before lock), chapters 10-16 absorb
+      # lock zone (d07-d10; non-extractable confirmation needs escalation room), chapters
+      # 17-20 absorb cascade (d11-d14; one delta per chapter — compressed to read as
+      # acceleration per pulp-enthusiast watch-item).
+    substance_delta:
+      axes_in_motion:
+        - axis: moral_framework
+          direction: down
+          target_delta_magnitude: 6
+          cost_ledger_anchor: [cl02, cl03a, cl-d06, cl05]
+          notes: "d03 first-sanctioned-exception → d07 systematic-override-rationalized → d12 irrevocable-Khepri-repetition; 6-rank collapse across full book"
+        - axis: capability
+          direction: up
+          target_delta_magnitude: 6
+          cost_ledger_anchor: [cl01a, cl03a, cl05]
+          notes: "d01 first-deployment → d04 Khepri-rhyming-surveillance → d12 fully-deployed-and-load-bearing; 6-rank rise across full book"
+        - axis: position-prot-rise
+          direction: up
+          target_delta_magnitude: 6
+          cost_ledger_anchor: [cl02, cl-d07a]
+          notes: "rise phase only (d03→d10); ranks 1→7; collapse handed to position-prot-collapse axis; gross motion tracked separately per RISE-THEN-COLLAPSE NOTE"
+        - axis: position-prot-collapse
+          direction: down
+          target_delta_magnitude: 6
+          cost_ledger_anchor: [cl07b]
+          notes: "collapse phase only (d10→d14); starts from peak ~7 confirmed at d10; collapses to 1 at d14 (dead/expelled); gross motion tracked separately"
+        - axis: relational_anchor_status
+          direction: up
+          target_delta_magnitude: 8
+          cost_ledger_anchor: [cl-d06, cl-d08, cl-d11, cl04]
+          notes: "monotonic pressure rise; HIGH=WORST; d02 named-but-outside-ledger → d06 structurally-at-risk → d08 load-bearing-in-network → d11 load-bearing-and-named → d14 unprotected-at-burn; rank 9 is the catastrophe"
+        - axis: moral_legibility_to_self
+          direction: up
+          target_delta_magnitude: 4
+          cost_ledger_anchor: [cl07a]
+          notes: "non-linear net-positive; start 4 (atoning-and-aware); cracks d02/d06/d10; recognition suppressed; full recognition too-late at d14; end 8 LOCKED"
+        - axis: political_register-prot
+          direction: up
+          target_delta_magnitude: 8
+          cost_ledger_anchor: [cl-d05, cl06]
+          notes: "monotonic contempt rise; d05 readable-resentment (+3) → d09 articulated-contempt → d13 contempt-without-refusal → d14 ledger-of-the-empowered; end 9 LOCKED"
+        - axis: social_tether-prot-rise
+          direction: up
+          target_delta_magnitude: 7
+          cost_ledger_anchor: [cl01b, cl03b, cl-d08b]
+          notes: "rise phase only (d01→d10); ranks 1→8; peaks at d07 (load-bearing formalized); non-extractable confirmed d10; collapse handed to social_tether-prot-collapse axis"
+        - axis: social_tether-prot-collapse
+          direction: down
+          target_delta_magnitude: 7
+          cost_ledger_anchor: [cl07a]
+          notes: "collapse phase only (d10→d14); starts from peak ~8; collapses to 1 at d14 (tether severed, patron dissolved, network transferred); gross motion tracked separately"
+        - axis: social_tether-antag
+          direction: up
+          target_delta_magnitude: 8
+          cost_ledger_anchor: [cl-antag-d03, cl-antag-d10]
+          notes: "Otto leverage rise; d03 offer-accepted (+4) → d10 non-extractable-confirmed (+4); mirrors position-prot rise; end 9 LOCKED"
+        - axis: position-world
+          direction: up
+          target_delta_magnitude: 4
+          cost_ledger_anchor: [cl-world-d04, cl07b]
+          notes: "Green-faction KL institutional consolidation; d04 Flea Bottom intelligence layer → d07 arrangement formalized → d14 locked; rises in exact proportion to moral_framework collapse"
+        - axis: political_register-world
+          direction: up
+          target_delta_magnitude: 4
+          cost_ledger_anchor: [cl-world-d07, cl07c]
+          notes: "Green succession position secured; mirrors political_register-prot contempt rise — Taylor despises what she consolidates; +2 ledger-explicit + ~+2 trajectory-narrative fill (within ±1 tolerance)"
+      axes_held: []
+      density_target: 0.7-0.9
+    stale_since: null
+    vibe_cloud:
+      keys:
+        - "cold-utilitarian interiority — the ledger runs even when the reader wishes it would not"
+        - "penitential-grey King's Landing — stone, tallow, rain-smell; beauty available only to people not paying attention"
+        - "tragic-causal (every good act auditable backward to the harm it enabled)"
+        - "contempt-without-refusal — the protagonist sees clearly, names accurately, and continues"
+        - "smallfolk-gallows register — permitted; no comic relief; gallows before spectacle"
+        - "residue not spectacle (magic) — insect-sense as texture and dread, never wonder"
+        - "atonement-as-repetition — the ledger's final entry names this explicitly"
+        - "rising entrapment — each chapter closes a door that was open at the chapter's open"
+    # drama: authored downstream at /and-substance book Phase 4
+    # chapters[]: authored downstream at /and-substance book Phase 2
