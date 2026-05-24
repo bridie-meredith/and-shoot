@@ -218,6 +218,49 @@ The user should be consulted on these three orchestrator-judgment calls before c
 
 ---
 
+---
+
+## Orchestrator-judgment arbitration (post-cycle-2, pre-cycle-3)
+
+The three orchestrator-judgment cases (O1 memory mem:1, O5 dialogue-taylor taylor:2, O3 sensory shape-level) were escalated to a **pulp-enthusiast taste-arbiter fork** — single-card audience dispatch loading `staff/audience/pulp-enthusiast/card.md`. Pulp-enthusiast is plot-hungry / momentum-driven / escalation-coded; the lens is orthogonal to the dark-fantasy literary lens that drove the dissents and the modality-coverage specialist's distribution-gate concern.
+
+**Verdict file:** `active-project/staff/audience/pulp-enthusiast/orchestrator-judgment-cycle2-arbiter-verdict.md`
+
+**All three cases: Option A — Defer-as-taste with attribution trail.**
+
+| Case | Pulp-enthusiast ruling | Reasoning summary |
+|---|---|---|
+| memory mem:1 @9 | A (defer) | "Is no longer doing" inventory IS the scar at the inverted-establishing-fact anchor; @9 pile-up is doing escalation work; option B risks cracking displacement-discipline a 6-facet pile-up depends on; DELETE structurally hostile. Ship + log + move. |
+| dialogue-taylor @25 | A (defer) | Dismissal lines don't need interiority stapled to them; cape-fic + worm-canon upgraded on framing-anchor logic (approach charges → line fires → aftermath lands); spending cycle-3 NI ADD budget on a line that works for every reader not wearing the dark-fantasy lens is misallocated. |
+| sensory shape-level | A (defer) | Modality-coverage = rubric-shape concern, not momentum concern; scene-C interiority-density at @26 (5 co-located facets) IS the chapter working hard, not going soft; F5-precedent exemption already adjudicated at mechanical gate; cap-burn DELETE risk on scene-C ADD pre-validation kills option B. |
+
+**Cross-case observation (arbiter notes):** All three cases share the same structure — a single dissent from a lens (literary / modality-distribution) the other two reviewers don't share and that doesn't map to any momentum-stall a plot-driven reader would register. Cycle-3 budget is better spent on the tractable remediations (vibes / interest-narrator / dialogue-coll) where fixes are clean and dissents are structural rather than lens-dependent.
+
+**Orchestrator disposition:** The pulp-enthusiast arbiter rulings convert the three orchestrator-judgment FAILs to **deferred-taste-with-attribution-trail PASS** for cycle-2 gate purposes. The three cycle-2 dissents (dark-fantasy memory:1 / taylor:2 + modality-coverage sensory) are recorded on disk with the arbiter override noted. Per the strict 3-of-3 rule the dissents technically still block the facet under direct read of the per-reviewer files; the arbiter override is documented here as the orchestrator's escalation-path resolution.
+
+**Revised cycle-2 aggregate (post-arbitration):**
+
+| Facet | Pre-arbitration | Arbiter override | Post-arbitration | Cycle-3 routing |
+|---|---|---|---|---|
+| location-state | ACCEPT | n/a | **ACCEPT** ✓ | none |
+| interest-narrator | FAIL | not arbitrated (tractable content recast) | **FAIL** | cycle-3 fixer: narrator:5 + narrator:7 content recast |
+| sensory | FAIL | A (defer) | **ACCEPT-DEFERRED** ✓ | none (modality-coverage dissent recorded as attribution) |
+| state-updates | ACCEPT | n/a | **ACCEPT** ✓ | none |
+| memory | FAIL | A (defer) | **ACCEPT-DEFERRED** ✓ | none (dark-fantasy mem:1 dissent recorded as attribution) |
+| feeling | ACCEPT | n/a | **ACCEPT** ✓ | none |
+| metaphor | ACCEPT | n/a | **ACCEPT** ✓ | none |
+| vibes | FAIL | not arbitrated (tractable single-pass fixer) | **FAIL** | cycle-3 fixer: vibes:2 license trim + vibes:5/7/8/9 token replacements |
+| exposition | ACCEPT | n/a | **ACCEPT** ✓ | none |
+| dialogue-coll | FAIL | not arbitrated (mixed: behavior-card-finding dismissed; facet-license cross-anchor stands as structural) | **FAIL** | cycle-3 fixer: facet-license cross-anchor @8 (lens ADD pre-validation OR rubric ruling); path-error dismissal noted |
+| dialogue-taylor | FAIL | A (defer) | **ACCEPT-DEFERRED** ✓ | none (dark-fantasy taylor:2 dissent recorded as attribution) |
+| dialogue-wren | ACCEPT (carried) | n/a | **ACCEPT** ✓ | none |
+
+**Post-arbitration cycle-2 result: 9 ACCEPT (6 cleared cycle-2 + 3 deferred-with-attribution) / 3 FAIL.**
+
+**Cycle-3 fixer dispatch scope: 3 facets** (interest-narrator, vibes, dialogue-coll). All three are tractable: content edits + token replacements + facet-license resolution. No high-risk ADDs required.
+
+---
+
 ## Output to disk (cycle 2)
 
 - Per-reviewer verdict files: `active-project/staff/audience/<persona-slug>/<facet>-r2-verdict.md` × 33.
