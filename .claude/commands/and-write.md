@@ -251,6 +251,10 @@ For each scene:
 - **`scene_conflict.opposing_force` visible:** at least one bone shows the opposing force pushing. In held-discipline scenes (stakes_axis ∈ axes_held), a bone whose `axes_held` rationale names the opposing-force enactment satisfies this check (the rule catching the pull is the opposing force made visible). Otherwise `OPPOSING-FORCE-MISSING` (HARD).
 - **Cost-ledger entries paid by visible bones:** for each `series.substance.cost_ledger[]` entry whose anchor resolves at-or-under this scene, at least one bone has `substance_delta.cost_ledger_anchor` matching the entry's id AND the bone's cost direction matches. Otherwise `SUBSTANCE-SUSPECT-cheap-gain-<axis>` (HARD) OR `COST-NOT-PAID` (HARD).
 
+### Per-chapter verification (auditor)
+
+- **Register-as-mannerism check (URI-WRITE-REGISTER-MANNERISM — SIGNAL; 2026-05-24).** Across the chapter's full bone set, count occurrences of each unique SVO `VERB OBJECT` pair (subject-independent). If any single `VERB OBJECT` pair appears in ≥3 bones, fire `REGISTER-AS-MANNERISM-<verb-object>` (SIGNAL) — the load-bearing idiom has graduated to register tic. Promoted from the b01c01 post-ship audit (worm-canon-pedant flagged "I held the eyes" appearing at L11/L19/L25 in twenty-seven lines as the discipline tic showing through). The check runs on the post-trim bone set. Disposition options: remediate (recast 1+ of the recurring bones to a synonymous beat) or accept-with-rationale (the recurrence is intentional refrain). The bare-intransitive exception (`exhales`, `breathes`) does not apply — those have no OBJECT to count against. The dialogue form `<speaker> speaks to <listener>` is exempt — repeated speech bones across a conversation are not mannerism.
+
 ### Per-scene-window audience review
 
 Each of the three audience personas reviews per scene window:
@@ -285,7 +289,7 @@ Orchestrator validation: before persisting bone-gate verdicts, verify `scenes_re
 | finding | severity |
 |---|---|
 | flat-bone, cost-not-paid, missing-opposing-force, per-axis-Δ-mismatch beyond ±2, SUBSTANCE-FLAT, SUBSTANCE-SUSPECT, EVENT-UNCOVERED, STAKES-AXIS-NOT-DOMINANT, AXIS-UNDERDELIVERED, SENSORY-GROUNDING-ABSENT | HARD (blocks emission) |
-| bones-count-below-density-target, per-axis-Δ-mismatch ±1 to ±2, chatter-bone just-over-cap | SIGNAL (records but passes) |
+| bones-count-below-density-target, per-axis-Δ-mismatch ±1 to ±2, chatter-bone just-over-cap, register-as-mannerism (verb-object pair ≥3 occurrences) | SIGNAL (records but passes) |
 
 **HARD findings block Phase 7 emission.** Re-fire Phase 1 (scene-decomposition) on the offending scenes; cycle 1 of the same `/and-write` invocation; max 2 internal HARD-resolution cycles. After 2 cycles, surface to user.
 
