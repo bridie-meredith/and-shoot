@@ -73,3 +73,65 @@ All 10 cards: quality full, scope library (library copy) / scope project (wareho
 - `helaena-targaryen` (no card exists; margit-fork required if elevated; can be dropped under scene-count pressure)
 
 **No mutations to library files in this phase.** Menu is read-only output. All provisioning deferred to Phase 4.
+
+---
+
+### 2026-05-24 — /and-cast Phase 4: Full Cast Provisioning
+
+**Project:** taylor-hebert-westeros-road-to-hell
+**Total actors provisioned:** 11
+**Mode:** library-copies (5) + margit-forks (3) + original-characters (3)
+
+#### A. Library Copies (5 actors)
+
+All five cards copied from library to `active-project/actors/<slug>/card.md`. Memory stubs (ltm, stm, state) and vibes.md created per schemas/memory.schema.md.
+
+| slug | library source | actor dir |
+|---|---|---|
+| `taylor-hebert-kl-122ac` | `cards/personas/taylor-hebert-kl-122ac.card.md` | `active-project/actors/taylor-hebert-kl-122ac/` |
+| `otto-hightower` | `cards/personas/otto-hightower.card.md` | `active-project/actors/otto-hightower/` |
+| `wren-stitch-maker-flea-bottom-ward` | `cards/personas/wren-stitch-maker-flea-bottom-ward.card.md` | `active-project/actors/wren-stitch-maker-flea-bottom-ward/` |
+| `sera-hightower-kl-122ac` | `cards/personas/sera-hightower-kl-122ac.card.md` | `active-project/actors/sera-hightower-kl-122ac/` |
+| `aemond-targaryen-122ac` | `cards/personas/aemond-targaryen-122ac.card.md` | `active-project/actors/aemond-targaryen-122ac/` |
+
+#### B. Margit-Forks (3 actors)
+
+New cards authored from F&B/HOTD canon. Dual-write: library path AND actor dir.
+
+| slug | library path | actor dir | notes |
+|---|---|---|---|
+| `alicent-hightower-122ac` | `cards/personas/alicent-hightower-122ac.card.md` | `active-project/actors/alicent-hightower-122ac/` | Queen Consort 122 AC; dynastic-maternal; compound-eyes-only |
+| `criston-cole-122ac` | `cards/personas/criston-cole-122ac.card.md` | `active-project/actors/criston-cole-122ac/` | Kingsguard commander; Green enforcement; observable-as-aftermath |
+| `rhaenyra-targaryen-122ac` | `cards/personas/rhaenyra-targaryen-122ac.card.md` | `active-project/actors/rhaenyra-targaryen-122ac/` | variant-of: rhaenyra-targaryen; 122 AC config; Dragonstone-distance; active-agenda carry-forward |
+
+#### C. Original Characters (3 actors)
+
+Fresh originals authored. Dual-write: library path AND actor dir. Name-novelty checks all PASS.
+
+| slug | library path | actor dir | name-novelty result | archetype |
+|---|---|---|---|---|
+| `oswyn-mudway-flea-bottom-elder` | `cards/personas/oswyn-mudway-flea-bottom-elder.card.md` | `active-project/actors/oswyn-mudway-flea-bottom-elder/` | PASS — "oswyn" and "mudway" not in library, projects/, or boundary-scope | oc-old-hardass Flea Bottom-native |
+| `jarvis-coin-kl-courier` | `cards/personas/jarvis-coin-kl-courier.card.md` | `active-project/actors/jarvis-coin-kl-courier/` | PASS — "jarvis" and "coin" not in library, projects/, or boundary-scope | oc-local-expert Green-courier-tier adapted |
+| `septon-halvard-flea-bottom` | `cards/personas/septon-halvard-flea-bottom.card.md` | `active-project/actors/septon-halvard-flea-bottom/` | PASS — "halvard" not in library, projects/, or boundary-scope; distinct from septon-rowan/septon-dying-protector/oc-ward-septon-dragon-gate; no recognizable HOTD/F&B canon name | naive-idealist-foil Flea Bottom Faith |
+
+#### Index Updates
+
+`cards/personas/INDEX.md` updated:
+- by_world/planetos: added alicent-hightower-122ac, criston-cole-122ac, jarvis-coin-kl-courier, oswyn-mudway-flea-bottom-elder, rhaenyra-targaryen-122ac, septon-halvard-flea-bottom
+- by_quality/full: added all 6 new cards
+- by_trope/targaryen-era: added alicent-hightower-122ac, criston-cole-122ac, rhaenyra-targaryen-122ac
+- new tropes added: kl-courier-tier, flea-bottom-ward-elder, faith-operator-flea-bottom, black-faction-claimant, road-to-hell-cast
+- original_characters: added all 6 new entries with authoring notes
+
+#### Showrunner Memory Updates
+
+`active-project/staff/showrunner/memory.md` updated:
+- `series.cast_roster` written (11 entries with slug, role, perspective)
+- `series.cast_roster_notes.carry_forward` written (4 carry-forward items from Phase 3 dramatist viability)
+
+#### Vibes Population
+
+All 11 actor vibes.md populated with:
+- Subset of `series.vibe_cloud.keys` (b01 vibe_cloud keys applicable to character)
+- Personal/private associations per card Vibe Seeds
+- Notable fences or carry-forward annotations for load-bearing characters (Wren d14, Aemond axis-movement, Alicent/Sera compound-eyes-only, Rhaenyra active-agenda-pressure-staging)

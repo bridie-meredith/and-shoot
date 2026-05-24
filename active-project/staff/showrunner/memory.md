@@ -482,3 +482,58 @@ books:
         - "rising entrapment — each chapter closes a door that was open at the chapter's open"
     # drama: authored downstream at /and-substance book Phase 4
     # chapters[]: authored downstream at /and-substance book Phase 2
+
+  cast_roster:
+    # Authored: /and-cast Phase 4 by margit 2026-05-24
+    - slug: taylor-hebert-kl-122ac
+      role: protagonist — POV anchor, cold-utilitarian ledger, Khepri-residue insect-network, 9 axes
+      perspective: protagonist
+    - slug: otto-hightower
+      role: antagonist — calculation-leverage patron, proposal-register only, Sera-protection trade, social_tether-antag primary carrier
+      perspective: antagonist
+    - slug: wren-stitch-maker-flea-bottom-ward
+      role: cost-bearer — un-priced relational anchor, relational_anchor_status primary carrier, d14 death hard fence
+      perspective: supporting
+    - slug: sera-hightower-kl-122ac
+      role: protect-target — legitimacy-question lever, position-prot-rise justification object, never meets Taylor
+      perspective: supporting
+    - slug: aemond-targaryen-122ac
+      role: world-embodiment:opposite-number — escalation-engine, Vhagar-proximity, axis-movement-per-appearance hard fence
+      perspective: world
+    - slug: alicent-hightower-122ac
+      role: world-embodiment:green-faction-institution — dynastic-maternal affect, position-world + political_register-world carrier, compound-eyes-only observable
+      perspective: world
+    - slug: criston-cole-122ac
+      role: world-embodiment:faction-violence-instrument — Green enforcement arm, relational_anchor_status indirect, observable as operational aftermath only
+      perspective: world
+    - slug: rhaenyra-targaryen-122ac
+      role: world-embodiment:black-faction-claimant — road-not-taken irony, political_register-world + political_register-prot, Dragonstone-distance, mediated channels only
+      perspective: world
+    - slug: oswyn-mudway-flea-bottom-elder
+      role: supporting:Flea-Bottom-ward-network-anchor — social_tether-prot-rise substrate, unknowing-contact, acts 1-2 tapering
+      perspective: supporting
+    - slug: jarvis-coin-kl-courier
+      role: supporting:Otto-courier-adjacent — social_tether-prot-rise + social_tether-antag structural vector, moral_framework made material, acts 1-2 receding
+      perspective: supporting
+    - slug: septon-halvard-flea-bottom
+      role: supporting:naive-idealist-foil — moral_legibility_to_self mirror, principled-slower, counter-argument Taylor stops engaging at d09, one encounter per act
+      perspective: supporting
+
+  cast_roster_notes:
+    carry_forward:
+      - id: cf-wren-d14-perceptual-mechanism
+        from: phase-3-dramatist-viability
+        target: /and-substance chapter (d14)
+        note: "Wren's d14 death — name perceptual mechanism (insect-feed in streets at ignition / Taylor proximate / feed-confirmation after expulsion); not specified by trajectory. Resolve at d14 chapter contract."
+      - id: cf-d10-courier-face
+        from: phase-3-dramatist-viability
+        target: /and-substance chapter (d05-d10 distribution)
+        note: "d10 courier (opposing-faction figure Taylor's route-map detains) must be a face, not a function. Stage prior insect-feed observation of this figure across d05-d09 chapter contracts so the d10 accounting has a body to close on. Not a cast slot — chapter-level staging obligation."
+      - id: cf-rhaenyra-pressure-staging
+        from: phase-3-dramatist-viability
+        target: /and-substance book / chapter
+        note: "Rhaenyra at Dragonstone; pressure on Taylor arrives through mediated channels (court rumor, intelligence-product inference, Black-faction encounter in KL). Name explicit pressure-staging mechanism at book/chapter substance — not background."
+      - id: cf-relational-anchor-environmental
+        from: phase-3-dramatist-viability + audit
+        target: studio (scene texture)
+        note: "relational_anchor_status partial environmental carrier (cond-kl-witch-label-formation-122ac). Carry to studio for staging — not a cast slot."
