@@ -591,3 +591,62 @@ criteria met: yes — action-verb self-charge HARD cleared; tactile silent-gap a
 findings-applied: 2 (sensory:1 defended no-change; sensory:2 replaced — sound@16→tactile@9)
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-25T10:00:00Z — and-facets-cycle1-fixes-state-updates
+dispatch: /and-facets Phase 5b cycle-1 remediation — state-updates facet, all 3 reviewers dissented; cross-reviewer dedupe + minimum-change fixes
+target: active-project/theater/facets/state-updates-taylor-hebert-kl-122ac.md + state-updates-wren-stitch-maker-flea-bottom-ward.md + state-updates.md
+audit-report: active-project/staff/audience/cape-fic-reader/state-updates-r1-verdict.md + dark-fantasy-reader/state-updates-r1-verdict.md + worm-canon-pedant/state-updates-r1-verdict.md
+findings-queued: 5 (deduped from 3 verdicts: 4 DELETE + 1 REVISE)
+
+## fault-SU-001 (state:4 DELETE) — RESOLVED — 2026-05-25T10:15:00Z
+fault: capability_axis @12 — chapter-aggregate substance delta posted as mid-bone canonical field-flip; anti-pattern #7 (ledger-as-state / pre-empting); REJECT worm-canon-pedant; CONTESTED dark-fantasy-reader
+scope: line
+change: entry deleted from state-updates-taylor-hebert-kl-122ac.md and state-updates.md; [state:4] removed from proto-lines @12; cite-index state:4 removed; co-citation lists stripped of state:4
+criteria met: yes — ledger-as-state entry removed; handoff_out capability-rank-3 record unchanged
+
+## fault-SU-002 (state:5 DELETE) — RESOLVED — 2026-05-25T10:15:00Z
+fault: posture @17 — POV actor-state entry with no narrator-interest co-citation at @17; lonely entry; rubric cross-facet contract violated; REJECT dark-fantasy-reader
+scope: line
+change: entry deleted from state-updates-taylor-hebert-kl-122ac.md and state-updates.md; [state:5] removed from proto-lines @17 (bone now bare); cite-index state:5 removed; @17 added to bare-protolines; deletion note: re-add pending NI author providing @17 entry
+criteria met: yes — cross-facet-contract-violating entry removed
+
+## fault-SU-003 (state:6 DELETE) — RESOLVED — 2026-05-25T10:15:00Z
+fault: social_tether_prot_axis @21 — field not on actor:taylor state.md (anti-pattern #6: invented field); also ledger-as-state; also registration framing; REJECT worm-canon-pedant; CONTESTED dark-fantasy-reader; FLAG cape-fic-reader
+scope: line
+change: entry deleted from both files; [state:6] removed from proto-lines @21; cite-index state:6 removed; co-citation lists stripped of state:6; @21 pile-up drops 8→7
+criteria met: yes — invented-field + ledger-as-state entry removed
+
+## fault-SU-004 (state:8 DELETE) — RESOLVED — 2026-05-25T10:15:00Z
+fault: ward-recognition @26 — cross-POV authority violation (Oswyn's categorization on Taylor's slice; already canonical in Oswyn slice state:2); NI co-citation absent; REJECT worm-canon-pedant and dark-fantasy-reader; FLAG cape-fic-reader
+scope: line
+change: entry deleted from both files; [state:8] removed from proto-lines @26; cite-index state:8 removed; co-citation lists stripped of state:8; Oswyn state:2 unchanged
+criteria met: yes — cross-POV authority violation + double-filing removed
+
+## fault-SU-005 (state:9 REVISE) — RESOLVED — 2026-05-25T10:20:00Z
+fault: wren relational_anchor_to_taylor — missing field-extension comment; value "observation-traced-d01-deterrence" contains authoring metadata + inaccurate affect charge; soft-flag worm-canon-pedant; value notes from dark-fantasy-reader and cape-fic-reader
+scope: line
+change: field-extension comment added; value changed to "observation-traced-chapter-1"; applied to state-updates-wren-stitch-maker-flea-bottom-ward.md and state-updates.md; cite-index state:9 back-link unchanged
+criteria met: yes — field-extension documented; clean value, no metadata, no inaccurate affect
+
+## SESSION-END — 2026-05-25T10:20:00Z — and-facets-cycle1-fixes-state-updates
+findings-applied: 5 (4 DELETE + 1 REVISE)
+findings-skipped: 0
+exit: CLEAN
+cross-facet-impact: narrator-interest author must add @17 NI entry before state:5 (taylor.posture) can be re-authored; @17 is now a bare protoline; all other changes are self-contained state-updates cleanup
+
+## mem:1 — NO-ACTION-DEFENDED — 2026-05-25T13:20:00Z
+fault: target-reference slug cond-override-architecture-residue-122ac uses cond-* class, not monument-* convention (flag-013); all 3 reviewers SIGNAL only — not HARD, not a revise verdict on the entry itself
+scope: n/a (no file change)
+change: none — SIGNAL flag carried forward as-is; margit referral required for slug-class correction; entry accepted on all other axes by all reviewers; fixer does not rename card slugs without margit authority
+criteria met: yes — SIGNAL disposition documented; margit referral flagged to showrunner
+
+## mem:2 — RESOLVED — 2026-05-25T13:25:00Z
+fault: spineless fire at @26; mem:2 co-cited only [state:2, state:8]; no narrator-interest at @26; no feel-flag at @26; V3 feel-as-spine carve-out fails condition (3); R2 judge's "graph spine" language conflated state-update co-citation with licensing-spine
+scope: line (upstream-first: interest-narrator-b01-c01.md ADD, then proto-lines, then cite-index)
+change: (1) narrator:9 @26 added to interest-narrator-b01-c01.md: "the chin-lift filed her in a category she recognized the shape of without needing the country's name for it." (2) [narrator:9] added to proto-lines/b01-c01.md @26 citation list (3) cite-index updated: narrator:9 @26 back=Y co=[mem:2, state:2]; mem:2 co-list updated to include narrator:9; memory-b01-c01.md unchanged
+criteria met: yes — mem:2 spine is narrator:9 @26; NI register-consistent (clinical, no feeling-word, inventory-tell); file-level checks pass post-repair (doubled-register, sparsity, pressure-signal inversion, per-scene cap)
+
+## SESSION-END — 2026-05-25T13:30:00Z — and-facets-cycle1-fixes-memory
+findings-applied: 1 (mem:2 spine repaired via narrator:9 ADD upstream + proto-lines + cite-index)
+findings-skipped: 1 (mem:1 NO-ACTION-DEFENDED: SIGNAL only; margit referral, not fixer scope)
+exit: CLEAN
