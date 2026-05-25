@@ -10,9 +10,8 @@ totals: 44 facet entries; 16/27 protolines decorated (59.3%)
 |------------|-------|
 | 0 (bare)   | 11 |
 | 1          | 9 |
-| 2          | 1 |
-| 3          | 2 |
-| 4          | 1 |
+| 2          | 2 |
+| 4          | 2 |
 | 6          | 2 |
 | 8          | 1 |
 
@@ -21,7 +20,7 @@ totals: 44 facet entries; 16/27 protolines decorated (59.3%)
 ### loc-state (0 entries)
 _(no entries)_
 
-### narrator (8 entries)
+### narrator (9 entries)
   narrator:1 @4 back=Y
   narrator:2 @8 back=Y
   narrator:3 @11 back=Y
@@ -30,6 +29,7 @@ _(no entries)_
   narrator:6 @27 back=Y co=[exposition:9, feel:4, state:9, vibes:9, vibes:10]
   narrator:7 @3 back=Y co=[mem:1]
   narrator:8 @24 back=Y co=[state:7]
+  narrator:9 @26 back=Y co=[mem:2, state:2, state:8]
 
 ### sensory (2 entries)
   sensory:1 @2 back=Y
@@ -37,20 +37,20 @@ _(no entries)_
 
 ### state (9 entries)
   state:1 @21 back=Y co=[exposition:8, feel:1, narrator:5, state:6, vibes:5, vibes:6, vibes:7]
-  state:2 @26 back=Y co=[mem:2, state:8]
+  state:2 @26 back=Y co=[mem:2, narrator:9, state:8]
   state:3 @12 back=Y co=[narrator:4, state:4, vibes:3, vibes:4, vibes:8]
   state:4 @12 back=Y co=[narrator:4, state:3, vibes:3, vibes:4, vibes:8]
   state:5 @17 back=Y
   state:6 @21 back=Y co=[exposition:8, feel:1, narrator:5, state:1, vibes:5, vibes:6, vibes:7]
-  state:7 @24 back=Y co=[feel:3, narrator:8]
-  state:8 @26 back=Y co=[mem:2, state:2]
+  state:7 @24 back=Y co=[narrator:8]
+  state:8 @26 back=Y co=[mem:2, narrator:9, state:2]
   state:9 @27 back=Y co=[exposition:9, feel:4, narrator:6, vibes:9, vibes:10]
 
 ### mem (2 entries)
   mem:1 @3 back=Y co=[narrator:7]
-  mem:2 @26 back=Y co=[state:2, state:8]
+  mem:2 @26 back=Y co=[narrator:9, state:2, state:8]
 
-### feel (4 entries)
+### feel (3 entries)
   feel:1 @21 back=Y co=[exposition:8, narrator:5, state:1, state:6, vibes:5, vibes:6, vibes:7]
   feel:2 @10 back=Y
   feel:4 @27 back=Y co=[exposition:9, narrator:6, state:9, vibes:9, vibes:10]

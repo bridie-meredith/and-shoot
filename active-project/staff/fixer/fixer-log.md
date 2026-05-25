@@ -469,6 +469,9 @@ target: active-project/theater/facets/sensory-b01-c01.md
 audit-report: active-project/staff/audience/sensory-disambiguation-pedant/sensory-r1-verdict.md + active-project/staff/audience/sensory-modality-coverage/sensory-r1-verdict.md
 findings-queued: tbd (reading verdicts now)
 
+## facets-cycle1-sensory — WORKING — 2026-05-25T08:10:00Z
+note: deduping across 2 dissenting reviewers; resolving sensory:2 disambiguation-HARD + tactile-silent-gap; pre-validating tactile ADD under anti-pattern #14; loc-state cross-facet impact assessed (no new edit required — existing carve-out covers new tactile entry)
+
 ## SESSION-START — 2026-05-25T09:00:00Z — facets-cycle1-fixes-memory
 dispatch: Phase 5b cycle-1 remediation for memory facet — all 3 reviewers dissented; dedupe callouts by [memory:id] and resolve with minimum change; ADD pre-validation per URI-FACETS-CYCLE-N-ADD
 target: active-project/theater/facets/memory-b01-c01.md
@@ -492,3 +495,29 @@ dispatch: Phase 5b cycle-1 remediation — location-state facet; 1 dissent from 
 target: active-project/theater/facets/location-state-b01-c01.md
 audit-report: active-project/staff/audience/dark-fantasy-reader/location-state-r1-verdict.md
 findings-queued: 2 callouts (treated as one ADD operation — one entry at @1 addresses both)
+
+## SESSION-START — 2026-05-25T13:00:00Z — and-facets-cycle1-fixes-memory
+dispatch: Phase 5b cycle-1 remediation — memory facet; all 3 reviewers dissented; cross-reviewer dedupe by [memory:id]; minimum-change resolve; ADD pre-validation per URI-FACETS-CYCLE-N-ADD
+target: active-project/theater/facets/memory-b01-c01.md
+audit-report: active-project/staff/audience/{cape-fic-reader,dark-fantasy-reader,worm-canon-pedant}/memory-r1-verdict.md
+findings-queued: 2 entries deduped (mem:1 SIGNAL-only; mem:2 REVISE — spineless fire at @26)
+
+## mem:2 — WORKING — 2026-05-25T13:05:00Z
+note: mem:2 spine gap requires upstream narrator-interest ADD at @26 first; then cite-index + proto-lines update; then per-task log write
+
+## feel:3-delete — RESOLVED — 2026-05-25T10:15:00Z
+fault: feel:3 @24 taylor Q1 fails — NI:8 @24 "set the body to the alley-mouth" already names body-direction event in somatic register; feel:3 "her head fixes toward the alley-mouth, away from the stitch-house lane" covers same direction with no distinct finer-grain tell; dark-fantasy-reader REVISE verdict (flag-011 overlap)
+scope: line
+change: DELETE feel:3; updated: feeling-taylor-hebert-kl-122ac.md (entry 2 deleted), feeling.md consolidated (entry deleted), proto-lines/b01-c01.md (@24 [feel:3] removed), _cite-index.md (feel:3 entry removed; narrator:8 + state:7 co-lists cleaned; feel section 4→3 entries; totals 44→43; density table 3-citation row decremented)
+criteria met: yes — Q1 redundancy eliminated; Taylor drops to 1 fire (feel:2 @10 = 3.7%, within 2-5% band); over-band flag auto-resolved; no other facets touched
+
+## ADD-pre-validation — RESOLVED — 2026-05-25T10:15:00Z
+fault: URI-FACETS-CYCLE-N-ADD pre-validation required before any ADD
+scope: n/a
+change: none — no ADD justified; 3 fires on 27 bones after deletion; default-to-silence applies
+criteria met: yes
+
+## SESSION-END — 2026-05-25T10:15:00Z — and-facets-cycle1-fixes-feeling
+findings-applied: 1 (feel:3 deleted) + ADD pre-validation clean
+findings-skipped: 0
+exit: CLEAN

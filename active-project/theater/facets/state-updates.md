@@ -63,11 +63,13 @@ author: impersonator:oswyn-mudway-flea-bottom-elder
 # episode: b01-c01
 
 3 @12 actor:taylor-hebert-kl-122ac.deployment-state: passive-subsistence-range -> active-crowd-yield-deployment  # field-extension: deployment-state (tracked-state aspect; tracks active-vs-suppressed posture of insect-network; cl01a canonical axis-move anchor); persistence absolute through chapter close — deployment is acknowledged-active in handoff_out
-4 @12 actor:taylor-hebert-kl-122ac.capability_axis: 2 -> 3  # canonical-axis stat increment matching chapter substance_delta capability+1.0 cl01a at anchor_bone b01c01s02n06; handoff_out specifies "Taylor: capability rank 3"
-5 @17 actor:taylor-hebert-kl-122ac.posture: in-the-gap -> hands-up-mouth-shut-witness-facing  # field-extension: posture (tracked per rubric §form); persistent across @17-@22 — load-bearing for the witness-categorization beats at @19, @20, @21 (the chunk: "the foreign woman who made the opening with her hands up and her mouth shut"); resolves at @24 when she turns toward the alley-mouth
-6 @21 actor:taylor-hebert-kl-122ac.social_tether_prot_axis: 1 -> 2  # canonical-axis stat increment matching chapter substance_delta social_tether-prot-rise+1.0 cl01b at anchor_bone b01c01s03n04; Oswyn's lane-mouth take is the bone the axis-move locks against — Taylor enters Oswyn's awareness layer and the tether-account opens
-7 @24 actor:taylor-hebert-kl-122ac.body-orientation: facing-the-child -> facing-the-alley-mouth-away-from-stitch-house  # field-extension: body-orientation (tracked-state aspect; not posture — this is the cardinal direction of attention); persistent through chapter close; bone rationale explicitly names "body-direction that excludes the stitch-house" — the not-looking is enacted as a direction-toward
-8 @26 actor:taylor-hebert-kl-122ac.ward-recognition: invisible-foreign-woman -> categorized-by-oswyn-as-something-other  # field-extension: ward-recognition (tracked-state aspect; the ward's category for Taylor); persistent — handoff_out specifies "Hook precinct knows the foreign woman who moved the crowd"; Oswyn's chin-lift is the categorization-completing body-tell, but the persistent field-shift is in Taylor's social-recognition status, not Oswyn's gesture
+4 @24 actor:taylor-hebert-kl-122ac.body-orientation: facing-the-child -> facing-the-alley-mouth-away-from-stitch-house  # field-extension: body-orientation (tracked-state aspect; not posture — this is the cardinal direction of attention); persistent through chapter close; bone rationale explicitly names "body-direction that excludes the stitch-house" — the not-looking is enacted as a direction-toward
+
+# CYCLE-1 DELETIONS from taylor-hebert-kl-122ac slice (2026-05-25):
+# DELETED — capability_axis @12: ledger-as-state / anti-pattern #7. Chapter-aggregate delta posted as mid-bone flip. No canonical state-update slot for ledger write-back. Handoff_out holds the rank-3 record.
+# DELETED — posture @17: POV actor-state without narrator-interest co-citation at @17. Rubric cross-facet contract requires NI co-citation. Entry may be re-added once NI author provides @17 entry.
+# DELETED — social_tether_prot_axis @21: field not present on actor:taylor state.md (anti-pattern #6); ledger-as-state error; registration framing.
+# DELETED — ward-recognition @26: cross-POV authority violation (Oswyn's categorization already filed in Oswyn slice state:2); NI co-citation absent; double-filing.
 
 # source: wren-stitch-maker-flea-bottom-ward
 # slice: state-updates-wren-stitch-maker-flea-bottom-ward
@@ -77,4 +79,4 @@ episode: b01-c01
 author: impersonator:wren-stitch-maker-flea-bottom-ward
 ---
 
-9 @27 actor:wren-stitch-maker-flea-bottom-ward.relational_anchor_to_taylor: nascent -> observation-traced-d01-deterrence
+5 @27 actor:wren-stitch-maker-flea-bottom-ward.relational_anchor_to_taylor: nascent -> observation-traced-chapter-1  # field-extension: relational_anchor_to_taylor (new field; tracks the chapter-by-chapter state of Wren's relational awareness of Taylor; nascent = present in ward range but no direct contact; observation-traced-chapter-1 = has directly observed Taylor's intervention and has a face); persistent through chapter close and into b01c02 per handoff_out ("Wren has seen Taylor's face")

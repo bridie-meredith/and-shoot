@@ -14,3 +14,4 @@ r2-judged: 2026-05-25
 6 @27 the ward's face had found hers; she filed the registration in the same fold where she kept the things that did not enter the ledger.
 7 @3 the holding cost a quarter of her at the count's edge, and she paid it on principle every morning.
 8 @24 she set the body to the alley-mouth so the stitch-house lane would not need to be registered again.
+9 @26 the chin-lift filed her in a category she recognized the shape of without needing the country's name for it.
