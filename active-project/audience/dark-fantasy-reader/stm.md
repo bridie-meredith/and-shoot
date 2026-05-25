@@ -70,3 +70,27 @@ notes:
   - s03 witch-label assembly reads as Westerosi-specific: superstition formed in the gap between what was seen and what the ward has a word for; Oswyn composing a category is the correct cultural reaction — not curiosity, not adaptation, category-formation; this reader's hot button (Westerosi characters reacting to Worm-world elements with the wrong flavor of shock) does not fire; the flavor is correct
   - Wren plant via stitch-house smell and not-looked-at in s03 is functional; the reader notes that the plant is light at plan stage — not enough weight to feel like a threat yet; acceptable as dormancy because the chapter goal explicitly defers cost legibility; not a hard finding
   - held axes across all three scenes read as load-bearing discipline, not absent content; the prohibition maintained in s01 makes s02's breach matter; catharsis has not arrived before weight; the chapter ends on accumulated unease, not resolution
+
+---
+
+## 2026-05-25 — /and-write b01c01 Phase 4 trim
+
+verdict: ACCEPT — 26 KEEP / 0 DROP across 26 bones (s01=6, s02=11, s03=9)
+
+carry_forward:
+  - s02n09 (taylor faces the child): the relational_anchor_status rationale claims Wren is in the crowd
+    but the SVO enacts Taylor's attention-direction only; at stitch-time the prose around n09 needs
+    either a physical tell for Wren's presence (passed over by the insect-sense, unnamed) or an
+    acceptance that the Wren anchor in s02 is carried entirely by the s03n07+n08 payoff; not a trim
+    drop but a watch item for the stitcher
+  - 'lifts the <body-part>' mannerism at 3 instances chapter-wide (s02n10 hands, s03n09 chin; s01n05
+    dropped but the pattern is still ≥2 active): on this reader's watch list for the stitch draft;
+    decomposer already flagged for Pass 3; if s03n09 becomes 'raises the chin' the world-texture
+    of the Oswyn beat is preserved — the image is not the problem, the repetition is
+
+strongest_world_texture_beat: "s03n08+n09 — tallow smoke settling at lane-level (same it was this morning)
+  and Oswyn's chin-lift; the ward's indifference to the moral event enacted in physics, and the
+  witch-label assembling in the correct Westerosi register (categorization-as-body, not fear-as-spectacle)"
+
+weakest_beat: "s02n09 — SVO enacts arrival, not anchor-dormancy; the Wren-in-the-crowd claim is
+  invisible at bone level"
