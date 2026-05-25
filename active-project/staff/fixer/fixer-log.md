@@ -14,3 +14,9 @@ criteria met: yes — scene notes now explicitly declare partial settlement, nam
 findings-applied: 1
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-25T01:00:00Z — write-b01c01-pass2-svo-recasts
+dispatch: minimum-change SVO recasts for 15 FAULT-FORM faults from write-b01c01-pass2 audit; patch svo: fields only in b01c01-bones-draft-pass1.md
+target: active-project/staff/showrunner/_drafts/b01c01-bones-draft-pass1.md
+audit-report: active-project/staff/auditor/write-b01c01-pass2.md
+findings-queued: 15

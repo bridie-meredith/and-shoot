@@ -29,7 +29,7 @@ scenes:
     bones:
 
       - slug: b01c01s01n01
-        svo: "the drain water threads under the angle"
+        svo: "the drain water threads the angle-gap"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -38,7 +38,7 @@ scenes:
           cost_ledger_anchor: null
 
       - slug: b01c01s01n02
-        svo: "the tallow smoke drifts from the stitch-house"
+        svo: "the tallow smoke crosses the stitch-house lane"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -58,7 +58,7 @@ scenes:
           cost_ledger_anchor: null
 
       - slug: b01c01s01n04
-        svo: "the insects propagate at the edge of range"
+        svo: "the insects propagate"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -68,17 +68,11 @@ scenes:
               rationale: "the pull is the test the prohibition passes each time; enacts the opposing force — the physical difficulty of suppression in a ward dense with bodies"
           cost_ledger_anchor: null
 
-      - slug: b01c01s01n05
-        svo: "taylor lifts the eyes"
-        substance_delta:
-          axis_moves: []
-          axes_held:
-            - axis: political_register-prot
-              rationale: "Taylor scans the alley for court-layer material and finds none — the ward is smallfolk-only; held at structural baseline rank 1; no insect-feed content for resentment to form on"
-          cost_ledger_anchor: null
+      # s01n05 DROPPED — FAULT-FORM-PERCEPTION; perception-surrogate in solo scene; no honest non-perception recast available.
+      # political_register-prot held rationale relocated to s01n07 (see below).
 
       - slug: b01c01s01n06
-        svo: "the cobbles press the angle-wall"
+        svo: "the angle-wall narrows the lane"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -95,6 +89,8 @@ scenes:
               rationale: "the morning argument: the exhalation is the body's verdict on another day of choosing the prohibition; self-accounting runs as maintenance, not reckoning — she is not yet in a situation"
             - axis: moral_framework
               rationale: "the prohibition survives the morning; the choosing-each-morning is the argument she makes to herself; no new ledger entry, only continuation"
+            - axis: political_register-prot
+              rationale: "[relocated from s01n05 — FAULT-FORM-PERCEPTION drop] Taylor holds the ward-read at structural baseline rank 1; the ward is smallfolk-only; no court-layer material enters the drain angle; no insect-feed content for resentment to form on; the exhalation closes the morning scan without a court-encounter"
           cost_ledger_anchor: null
 
     event_map:
@@ -150,7 +146,7 @@ scenes:
     bones:
 
       - slug: b01c01s02n01
-        svo: "the fish-cart blocks the lane crosswise"
+        svo: "the fish-cart blocks the lane"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -159,7 +155,7 @@ scenes:
           cost_ledger_anchor: null
 
       - slug: b01c01s02n02
-        svo: "the ground carries the child's breath"
+        svo: "the ground transmits the child's breath"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -197,7 +193,7 @@ scenes:
           cost_ledger_anchor: null
 
       - slug: b01c01s02n06
-        svo: "the insects propagate inward"
+        svo: "the insects propagate"
         substance_delta:
           axis_moves:
             - axis: capability
