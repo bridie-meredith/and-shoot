@@ -147,10 +147,18 @@ parking_lot:
         - active-project/staff/showrunner/memory.md:1855   # s02 chunk "uses a voice that does not ask whether they will comply"
         - active-project/staff/reviews/bones-b01c01-fidelity-2026-05-25T04-30-00Z.md
         - active-project/staff/reviews/bones-b01c01-2026-05-25T04-30-00Z.md
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-05-25T00:00:00Z
+      resolved_by: "URI-WRITE-DIALOGUE-COBONDED (CLAUDE.md Rule 15)"
+      resolution_note: |
+        Resolved structurally by the dialogue-cobonded process change. The
+        bones schema now explicitly licenses action-form dialogue-anchor
+        bones whose substance_delta declares a communication-class axis
+        movement (per schemas/bones.schema.md § Dialogue-anchor bones).
+        Routing (a) from this entry is now the default — no flat_id break,
+        bone 16 carries [taylor-hebert-kl-122ac:1, :2, :3] citations as
+        emitted by /and-write Phase 7 Step 3a. No further /and-facets action
+        needed; the routing question is no longer a per-chapter decision.
 
     - id: pl-2026-05-25-005
       created_at: 2026-05-25T00:00:00Z
