@@ -2294,7 +2294,24 @@ books:
           annotated_draft_path: draft/b01-c01.annotated.md
           render_log_path: staff/stitcher/render-log-b01-c01.md
           status: stitched
-          phase_9_status: pending
+          stitched: true
+          phase_9_verdict: PASS
+          depth_pass_recommended: true
+          cold_read:
+            read_at: 2026-05-25
+            verdict: PASS
+            recovered_summary: "A nameless transmigrator hiding in Flea Bottom breaks her own rule to save a choking child with her swarm of flies, and two locals notice her for the first time."
+            report_path: active-project/staff/reviews/coldread-b01-c01-2026-05-25.md
+            staging_signals: 15
+            staging_report_path: active-project/staff/reviews/staging-b01-c01-2026-05-25.md
+            signal_clusters: []  # peak-under-staged=4 (below >=5 threshold); no cluster fires
+            zone_density_observation: "scene-B peak triplet @11/@12/@13 concentrates 3 staging findings on adjacent bones (sub-pattern; staging review note for downstream attention)"
+            stale_since: null
+            cold_read_caveats:
+              - "how-bugs-part-crowd mechanic unclear in prose (rendered as \"I'd told them to go\" — implied mind-control, never staged as physical)"
+              - "treatment-beat missing between @17 hands-up and @22 child-clears-lane (cold reader noticed)"
+              - "chapter-close @27 lands quietly; cold reader expected sharper for ch1"
+              - "hyphen-compound density made middle re-readable 3x to confirm action (Q9 sweep applied 0 RE-WORDS; cold-reader flags suggest the threshold needs tuning)"
 
       - slug: b01c02
         status: planned

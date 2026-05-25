@@ -308,3 +308,80 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-05-25-011
+      created_at: 2026-05-25T00:00:00Z
+      created_by: "/and-stitch b01c01 Phase 9 cold-read terminal gate"
+      label: depth-pass-recommended-b01c01
+      target:
+        command: /and-write
+        scope: b01c01
+        phase: null
+      severity: SOFT
+      description: |
+        /and-stitch Phase 9 PASS (staging signals 15; no cluster above >=5 threshold).
+        Optional depth pass recommended per Phase 9 Step 4. Use /and-write b01c01
+        revise --from-signals to consume the staging report's findings
+        (peak-under-staged x4, held-bone-rationale-only x3, body-staging-gap x2,
+        others) — most are GROUND/STAGE/NEEDS-BEAT class.
+      context_refs:
+        - active-project/staff/reviews/staging-b01-c01-2026-05-25.md
+        - active-project/staff/reviews/coldread-b01-c01-2026-05-25.md
+      resolution_suggestion: "/and-write b01c01 revise --from-signals + re-cascade /and-facets + /and-stitch (typical depth-pass loop)"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-25-012
+      created_at: 2026-05-25T00:00:00Z
+      created_by: "/and-stitch b01c01 Phase 9 cold-read terminal gate"
+      label: cold-read-caveat-bug-mechanic-staging
+      target:
+        command: /and-write
+        scope: b01c01
+        phase: null
+      severity: SOFT
+      description: |
+        Cold reader (uninformed first-time reader) could not tell HOW Taylor's bugs
+        part the crowd. The rendered prose at @12 says "the insects propagated where
+        I'd told them to go" — registers as mind-control or unspecified mechanism.
+        The substance graph has the bug-mechanic implied; the bone-faithfulness fence
+        kept the staging out. STAGE this if depth-pass fires.
+      context_refs:
+        - active-project/staff/reviews/coldread-b01-c01-2026-05-25.md
+        - active-project/staff/reviews/staging-b01-c01-2026-05-25.md  # sensory-channel-named-not-felt @9
+      resolution_suggestion: |
+        /and-write revise; add a sub-bone STAGING the physical sensation of how the
+        crowd-yield happens (people feeling bugs at ankles, flinching, parting).
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-25-013
+      created_at: 2026-05-25T00:00:00Z
+      created_by: "/and-stitch b01c01 Phase 9 cold-read terminal gate"
+      label: q9-hyphen-density-threshold-tune
+      target:
+        command: future spec edit on stitcher persona / Phase 7 Q9 rubric
+        scope: cross-pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        Cold reader noted "prose dense with hyphen-compound nouns (angle-wall,
+        lane-mouth, chin-lift) and short declarative fragments that read like stage
+        directions. I had to reread the middle three times to confirm an event was
+        happening." Phase 7 Q9 sweep applied 0 REWORDS — the strict Q9 rule allows
+        bone/facet tokens through, and many of these hyphen-compounds ARE bone/facet
+        tokens. But aggregate density in rendered prose creates a different kind of
+        readability hit than per-sentence Q9 catches. Consider an aggregate-density
+        check at Phase 7 (or a stitcher persona variant that defaults to natural-English
+        unfolding for bone tokens).
+      context_refs:
+        - active-project/staff/reviews/coldread-b01-c01-2026-05-25.md
+      resolution_suggestion: "future stitcher persona / Phase 7 rubric edit"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
