@@ -251,10 +251,20 @@ parking_lot:
       context_refs:
         - active-project/theater/facets/feeling-b01-c01.md
         - active-project/staff/showrunner/memory.md  # b01c01 facets note
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-05-25T00:00:00Z
+      resolved_by: "/and-postop b01c01 Fork A substance-delivery audit"
+      resolution_note: |
+        OPTION (a). All 3 feeling entries judged structurally necessary:
+        feel:1 @21 (Oswyn apron-front somatic at tether-peak), feel:2 @10
+        (Taylor breath-empties at prohibition's-last-held-moment), feel:4 @27
+        (Wren eyes-first at chapter-close cost-bearer plant). 11.1% rate is
+        structural concentration in a 27-bone short chapter, not over-fire.
+        Recommended short-chapter exemption note for feeling rubric's
+        frequency band promoted to pl-2026-05-25-017 (target: future rubric
+        edit). Secondary anomaly on feel:2 @10 prose-anchor promoted to
+        pl-2026-05-25-014 (target: /and-facets b01c01 spot-check), orthogonal
+        to the rubric-band call.
 
     - id: pl-2026-05-25-009
       created_at: 2026-05-25T00:00:00Z
@@ -381,6 +391,118 @@ parking_lot:
       context_refs:
         - active-project/staff/reviews/coldread-b01-c01-2026-05-25.md
       resolution_suggestion: "future stitcher persona / Phase 7 rubric edit"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-25-014
+      created_at: 2026-05-25T00:00:00Z
+      created_by: "/and-postop b01c01 Fork A substance-delivery audit"
+      label: feel-2-at-10-render-anomaly
+      target:
+        command: /and-facets
+        scope: "b01c01"
+        phase: null
+      severity: SOFT
+      description: |
+        feel:2 @10 in feeling-b01-c01.md is authored but has no clear prose anchor
+        in the annotated draft at @10. Orthogonal to the rubric-band call resolved
+        in pl-2026-05-25-008 (which judged all three feeling entries structurally
+        necessary). If the entry's prose anchor is genuinely absent, this is a
+        cite-index walk that landed without prose rendering it. Suggested
+        resolution: /and-facets revise spot-check on feel:2 @10 — either
+        confirm the anchor is present (read-error on Fork A's part) or re-anchor
+        / drop the entry.
+      context_refs:
+        - active-project/theater/facets/feeling-b01-c01.md
+        - active-project/draft/b01-c01.annotated.md
+        - active-project/staff/reviews/substance-delivery-b01-c01-2026-05-25T-postop.md
+      resolution_suggestion: "/and-facets b01c01 revise (spot-check feel:2 @10)"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-25-015
+      created_at: 2026-05-25T00:00:00Z
+      created_by: "/and-postop b01c01 Phase 3 convergence (Forks B + C)"
+      label: opening-graf-em-dash-glossary-onboarding
+      target:
+        command: /and-write
+        scope: "b01c01"
+        phase: null
+      severity: SOFT
+      description: |
+        Naive cold-read (Fork B) and cape-fic-reader (Fork C) independently flagged
+        the opening graf 9 em-dash glossary stack (stitch-house / Hook / ward
+        defined inline within stacked parentheticals and em-dashes) as the
+        prose-surface drag point. Fork B drifted past it ("I knew I'd be told again");
+        Fork C called it "fidget, not walkout" but explicitly distrust-flagged. The
+        compound-hyphen-noun density across the chapter (graf 9 + lines 11-19
+        stacked one-liners) creates onboarding labor that costs immersion. Folds
+        into the existing depth-pass queue (pl-2026-05-25-002/003/004 already
+        staged for /and-write revise --from-signals) as an additional signal:
+        targeted prose-economy on the opening onboarding paragraph + dispersal
+        of glossary loads across scenes.
+      context_refs:
+        - active-project/staff/reviews/pleasure-read-b01-c01-2026-05-25T-postop.md
+        - active-project/staff/reviews/audience-cape-fic-reader-b01-c01-2026-05-25T-postop.md
+        - active-project/staff/showrunner/parking-lot.md  # see pl-2026-05-25-002/003/004
+      resolution_suggestion: "/and-write b01c01 revise --from-signals (rolled into existing depth-pass queue)"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-25-016
+      created_at: 2026-05-25T00:00:00Z
+      created_by: "/and-postop b01c01 Fork A substance-delivery audit"
+      label: held-axis-bare-assertion-at-7
+      target:
+        command: /and-write
+        scope: "b01c01"
+        phase: null
+      severity: SOFT
+      description: |
+        Fork A substance-delivery audit found @7 ("I exhaled") carrying three
+        held axes on a bare two-word verb with no opposing-pressure-resistance
+        on the page. Substance-layer finding only — neither Fork B (cold-read)
+        nor Fork C (cape-fic-reader) surfaced this at prose-reception layer,
+        but the prose-layer Of-visible check that Phase 6 bone-gate cannot do
+        (Phase 6 audits at rationale layer) catches it post-hoc. Folds into
+        the same depth-pass queue.
+      context_refs:
+        - active-project/staff/reviews/substance-delivery-b01-c01-2026-05-25T-postop.md
+        - active-project/theater/bones/b01-c01.md
+      resolution_suggestion: "/and-write b01c01 revise --from-signals (rolled into existing depth-pass queue)"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-25-017
+      created_at: 2026-05-25T00:00:00Z
+      created_by: "/and-postop b01c01 Fork A (resolution of pl-2026-05-25-008)"
+      label: feeling-rubric-short-chapter-exemption
+      target:
+        command: future spec edit on rubric-feeling
+        scope: cross-pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        pl-2026-05-25-008 resolved option (a): all 3 b01c01 feeling entries
+        structurally necessary; 11.1% rate is structural concentration in a
+        27-bone short chapter. Fork A drafted exemption text for the feeling
+        rubric's frequency band: short chapters (<~30 bones) may exceed the
+        2-5% band when each entry is load-bearing (no single entry recommended
+        for deletion in audience cycles). Promotion path: edit
+        design/shoot-v2/rubric-feeling.md or the equivalent rubric file at
+        next rubric-edit pass.
+      context_refs:
+        - active-project/staff/reviews/substance-delivery-b01-c01-2026-05-25T-postop.md
+        - active-project/staff/showrunner/parking-lot.md  # pl-2026-05-25-008
+      resolution_suggestion: "future rubric edit"
       status: open
       resolved_at: null
       resolved_by: null
