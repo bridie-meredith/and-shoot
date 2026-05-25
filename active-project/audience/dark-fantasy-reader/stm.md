@@ -70,3 +70,60 @@ notes:
   - s03 witch-label assembly reads as Westerosi-specific: superstition formed in the gap between what was seen and what the ward has a word for; Oswyn composing a category is the correct cultural reaction — not curiosity, not adaptation, category-formation; this reader's hot button (Westerosi characters reacting to Worm-world elements with the wrong flavor of shock) does not fire; the flavor is correct
   - Wren plant via stitch-house smell and not-looked-at in s03 is functional; the reader notes that the plant is light at plan stage — not enough weight to feel like a threat yet; acceptable as dormancy because the chapter goal explicitly defers cost legibility; not a hard finding
   - held axes across all three scenes read as load-bearing discipline, not absent content; the prohibition maintained in s01 makes s02's breach matter; catharsis has not arrived before weight; the chapter ends on accumulated unease, not resolution
+
+---
+
+## 2026-05-25 — /and-write b01c01 Phase 4 trim
+
+verdict: ACCEPT — 26 KEEP / 0 DROP across 26 bones (s01=6, s02=11, s03=9)
+
+carry_forward:
+  - s02n09 (taylor faces the child): the relational_anchor_status rationale claims Wren is in the crowd
+    but the SVO enacts Taylor's attention-direction only; at stitch-time the prose around n09 needs
+    either a physical tell for Wren's presence (passed over by the insect-sense, unnamed) or an
+    acceptance that the Wren anchor in s02 is carried entirely by the s03n07+n08 payoff; not a trim
+    drop but a watch item for the stitcher
+  - 'lifts the <body-part>' mannerism at 3 instances chapter-wide (s02n10 hands, s03n09 chin; s01n05
+    dropped but the pattern is still ≥2 active): on this reader's watch list for the stitch draft;
+    decomposer already flagged for Pass 3; if s03n09 becomes 'raises the chin' the world-texture
+    of the Oswyn beat is preserved — the image is not the problem, the repetition is
+
+strongest_world_texture_beat: "s03n08+n09 — tallow smoke settling at lane-level (same it was this morning)
+  and Oswyn's chin-lift; the ward's indifference to the moral event enacted in physics, and the
+  witch-label assembling in the correct Westerosi register (categorization-as-body, not fear-as-spectacle)"
+
+weakest_beat: "s02n09 — SVO enacts arrival, not anchor-dormancy; the Wren-in-the-crowd claim is
+  invisible at bone level"
+
+---
+
+## 2026-05-25 — /and-write b01c01 Phase 6 substance bone-gate
+
+verdict_per_scene:
+  b01c01s01: SUBSTANCE-FELT
+  b01c01s02: SUBSTANCE-FELT
+  b01c01s03: SUBSTANCE-FELT
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: []
+soft_findings:
+  - s02n09 Wren-dormancy claim invisible at bone level (carry-forward to stitch, not a bone-gate block)
+  - 'lifts the' mannerism count 2 active instances (Pass 3 domain; carry to stitch)
+
+world_texture_summary:
+  s01: "drain angle as body-sized anonymity-geometry; tallow smoke as dormant Wren plant; suppression
+    cost enacted in the dual-bone stillness-against-pull structure; no hot-buttons fire; the setting
+    exists independent of Taylor's presence in it"
+  s02: "fish-cart as functional crowd-physics cause; ground-transmission of fever as insect-sense
+    grounded before it becomes a problem; prohibition's final held moment (n04) makes the crossing
+    (n06) legible as threshold, not reflex; world yields by physics, not narrative courtesy"
+  s03: "Flea Bottom dispersal physics honest (holders remain); ward-elder positioning at lane-mouth
+    as the watching-station, not confrontation-point; chin-lift as pre-print categorization-by-body;
+    tallow smoke's continuity after the moral event is the world's indifference enacted in a single
+    sensory note; Wren's orientation delivered as naturalistic consequence without authorial staging"
+
+carry_forward_to_facets:
+  - s02n09 stitch-time watch: prose needs physical tell for Wren or acceptance that s03n10 carries
+    the plant; not a block at bone-gate but a stitch-domain concern
+  - 'lifts the' mannerism: decomposer Pass 3 domain; monitor at stitch draft
+  - no new bone-gate concerns introduced; Phase 4 carry-forwards either resolved (s03n10 confirms
+    Wren plant delivery) or correctly deferred to stitch domain

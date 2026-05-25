@@ -14,3 +14,369 @@ criteria met: yes — scene notes now explicitly declare partial settlement, nam
 findings-applied: 1
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-25T01:00:00Z — write-b01c01-pass2-svo-recasts
+dispatch: minimum-change SVO recasts for 15 FAULT-FORM faults from write-b01c01-pass2 audit; patch svo: fields only in b01c01-bones-draft-pass1.md
+target: active-project/staff/showrunner/_drafts/b01c01-bones-draft-pass1.md
+audit-report: active-project/staff/auditor/write-b01c01-pass2.md
+findings-queued: 15
+
+## /and-write b01c01 Phase 2 — 2026-05-25
+
+- bone: b01c01s01n01
+  before: "the drain water threads under the angle"
+  after: "the drain water threads the angle-gap"
+  fault_class: FAULT-FORM-MODIFIER
+  rationale: 'threads' carries transitive sense taking 'the angle-gap' as direct object, eliminating the banned prepositional phrase 'under the angle' while preserving the drain-water threading motion; no adverb, no preposition, no new deny-list verb introduced.
+
+- bone: b01c01s01n02
+  before: "the tallow smoke drifts from the stitch-house"
+  after: "the tallow smoke crosses the stitch-house lane"
+  fault_class: FAULT-FORM-MODIFIER
+  rationale: eliminates banned source-preposition 'from the stitch-house' by recasting to transitive 'crosses' with 'the stitch-house lane' as direct object — the stitch-house remains a named concrete entity in the bone, preserving the pl-002 SOFT anchor; no new fault introduced.
+
+- bone: b01c01s01n04
+  before: "the insects propagate at the edge of range"
+  after: "the insects propagate"
+  fault_class: FAULT-FORM-MODIFIER
+  rationale: strips the banned place-prepositional phrase 'at the edge of range'; bare intransitive 'propagate' is a physical-process verb that lands cleanly without implying a stated destination, exactly as the intransitive-lands-cleanly exception permits; range-threshold context is facet material.
+
+- bone: b01c01s01n05
+  before: "taylor lifts the eyes"
+  after: [DROPPED]
+  fault_class: FAULT-FORM-PERCEPTION
+  rationale: no honest non-perception recast available in a solo scene — eye-lifting is the mechanism of the scanning/observational act the event_map names; dropping the bone removes the perception-surrogate; the bone count for s01 drops from 7 to 6 (within the 5-15 schema range); political_register-prot held rationale relocated to s01n07 as a third axes_held entry with a note marking the relocation source.
+
+- bone: b01c01s01n06
+  before: "the cobbles press the angle-wall"
+  after: "the angle-wall narrows the lane"
+  fault_class: FAULT-FORM-INTERIORITY
+  rationale: recasts the interiority-as-environment-action (stative cobbles-pressing-wall geometry-figure) to a concrete transitive geometry-action — 'narrows' describes a physical dimensional fact as a discrete verb, subject is the wall, object is the lane; no place-preposition, no abstraction-as-object; social_tether-prot-rise held rationale (anonymity enacted by physical geometry) survives unchanged at the axes_held layer.
+
+- bone: b01c01s02n01
+  before: "the fish-cart blocks the lane crosswise"
+  after: "the fish-cart blocks the lane"
+  fault_class: FAULT-FORM-MODIFIER
+  rationale: drops the banned adverb 'crosswise'; 'the lane' remains as direct object; crosswise geometry is implied by a cart blocking a lane and can be carried in loc-state facet; no new fault introduced.
+
+- bone: b01c01s02n02
+  before: "the ground carries the child's breath"
+  after: "the ground transmits the child's breath"
+  fault_class: FAULT-FORM-NON-ACTION-VERB
+  rationale: replaces banned verb 'carries' (sustained-carrying deny-list) with 'transmits' — a discrete directional action not on any deny list; subject, object, and physical-fact semantic are preserved; 'the child's breath' as object remains borderline (breath transmitted through ground is a sensory-physical fact, not an abstraction) and is not separately faulted.
+
+- bone: b01c01s02n06
+  before: "the insects propagate inward"
+  after: "the insects propagate"
+  fault_class: FAULT-FORM-MODIFIER
+  rationale: strips the banned directional adverb 'inward'; bare intransitive 'propagate' is a physical-process verb landing cleanly without destination; the deployment semantics are preserved because 'propagate' records the spread event — the direction (into the crowd) is scene context, not needed in the bone; substance_delta (capability +1, cl01a) transfers unchanged; HIGH PRIORITY bone confirmed clean.
+
+- bone: b01c01s02n08
+  before: "the gap propagates outward"
+  after: "the gap propagates"
+  fault_class: FAULT-FORM-MODIFIER
+  rationale: strips the banned directional adverb 'outward'; same bare-intransitive logic as s02n06 — 'propagate' is a physical-process verb that lands cleanly; no destination implied, no new fault introduced.
+
+- bone: b01c01s02n11
+  before: "taylor gives the instruction"
+  after: "taylor raises the voice"
+  fault_class: FAULT-FORM-INTERIORITY
+  rationale: replaces abstraction-as-object 'the instruction' with a physical vocal-act recast — 'raises' is transitive and not on any deny list; 'the voice' is the physical sound-production output, not an abstract communication-content object; moral_legibility_to_self held rationale ("voice-of-instruction is the deployment's final act") survives because the physical vocal act is still the deployment's closing gesture; auditor's 'projects the voice' is equally valid — 'raises' chosen to avoid the 'lifts/raises/projects' verb-pattern mannerism already noted in decomposer_notes.
+
+- bone: b01c01s03n02
+  before: "the man with the fish-cart watches taylor"
+  after: "the fish-cart man faces taylor"
+  fault_class: FAULT-FORM-PERCEPTION
+  rationale: replaces banned perception verb 'watches' with 'faces' — licensed as a discrete transitive posture-act (confirmed CORRECT at s02n09 and s03n07 in the audit); subject recasts from 'the man with the fish-cart' (prepositional disambiguator) to 'the fish-cart man' (compound-noun unnamed-entity, cleaner per unnamed-entity convention); auditor's hint 'the fish-cart holder turns toward taylor' was rejected because 'turns toward' reintroduces a prepositional phrase.
+
+- bone: b01c01s03n03
+  before: "the two women from the upper alley stay"
+  after: "the two women face the lane"
+  fault_class: FAULT-FORM-NON-ACTION-VERB
+  rationale: replaces banned stative verb 'stay' with 'face' — licensed transitive posture-act; 'the lane' as direct object; holders-remaining semantic preserved as a body-direction toward the scene rather than a stative naming of position; subject-disambiguator 'from the upper alley' dropped per cleaner unnamed-entity form (auditor declined to fault subject-disambiguating tags, but the recast body-direction already identifies their orientation, making the disambiguator redundant); 'the two women' treated as collective-singular unnamed-entity, same pattern as 'the crowd'.
+
+- bone: b01c01s03n04
+  before: "oswyn-mudway-flea-bottom-elder stands at the lane-mouth"
+  after: "oswyn-mudway-flea-bottom-elder takes the lane-mouth"
+  fault_class: FAULT-FORM-NON-ACTION-VERB + FAULT-FORM-MODIFIER
+  rationale: replaces both faults in one recast — 'takes' is transitive and discrete (not stative position-naming), 'the lane-mouth' becomes a direct object (no prepositional phrase of place); the deliberate-positioning semantic (Oswyn arriving at the lane-mouth and claiming the position) is preserved; substance_delta (social_tether-prot-rise +1, cl01b) transfers unchanged; HIGH PRIORITY bone confirmed clean.
+
+- bone: b01c01s03n05
+  before: "the child departs"
+  after: "the child clears the lane"
+  fault_class: FAULT-FORM-NO-VERB
+  rationale: adds 'the lane' as direct object to the bare intransitive motion verb, resolving the FAULT-FORM-NO-VERB — 'clears' is transitive, implies departure and freeing of the space without stating where the child goes; slightly more concrete than 'leaves the lane' because it records the physical result (lane cleared) rather than just the departure direction.
+
+- bone: b01c01s03n08
+  before: "the tallow smoke settles at the lane-level"
+  after: "the tallow smoke layers the lane-floor"
+  fault_class: FAULT-FORM-MODIFIER
+  rationale: replaces banned place-prepositional phrase 'at the lane-level' with transitive 'layers' taking 'the lane-floor' as direct object — a concrete physical noun, not a prepositional phrase; the stitch-house smoke as a continuing lane-level physical fact is preserved (the settling-at-floor-level semantic is carried by 'layers the lane-floor'); pl-002 SOFT load-bearing continuity maintained; auditor's 'settles the lane' alternative rejected as causative-odd ('settles' transitive reads as causing the lane to settle).
+
+---
+
+Summary:
+- Bones patched: 14 (s01n01, s01n02, s01n04, s01n06, s02n01, s02n02, s02n06, s02n08, s02n11, s03n02, s03n03, s03n04, s03n05, s03n08)
+- Bones dropped: 1 (s01n05 — FAULT-FORM-PERCEPTION; perception-surrogate in solo scene; no honest non-perception recast available)
+- Held-axis rationale relocation: political_register-prot rationale from s01n05 relocated to s01n07 as a third axes_held entry
+- Note: 9 of the 15 faults were already applied in the draft before this session; 6 faults required patching in this session (s02n08, s02n11, s03n02, s03n03, s03n04, s03n05, s03n08 — 7 patches, all 6 remaining faults plus s03n08 which was also not yet applied)
+
+## b01c01s01n01 — RESOLVED — 2026-05-25T01:30:00Z
+fault: 'under the angle' prepositional phrase of place/direction (FAULT-FORM-MODIFIER)
+scope: line
+change: svo recast from "the drain water threads under the angle" to "the drain water threads the angle-gap"
+criteria met: yes
+
+## b01c01s01n02 — RESOLVED — 2026-05-25T01:30:00Z
+fault: 'from the stitch-house' prepositional phrase of source (FAULT-FORM-MODIFIER)
+scope: line
+change: svo recast from "the tallow smoke drifts from the stitch-house" to "the tallow smoke crosses the stitch-house lane"; stitch-house named entity preserved
+criteria met: yes
+
+## b01c01s01n04 — RESOLVED — 2026-05-25T01:30:00Z
+fault: 'at the edge of range' prepositional phrase of place (FAULT-FORM-MODIFIER)
+scope: line
+change: svo recast from "the insects propagate at the edge of range" to "the insects propagate"
+criteria met: yes
+
+## b01c01s01n05 — RESOLVED — 2026-05-25T01:30:00Z
+fault: 'lifts the eyes' perception-surrogate in solo scene (FAULT-FORM-PERCEPTION)
+scope: line
+change: bone dropped; political_register-prot held rationale relocated to s01n07 as third axes_held entry; s01 bone count drops from 7 to 6 (within 5-15 range)
+criteria met: yes
+
+## b01c01s01n06 — RESOLVED — 2026-05-25T01:30:00Z
+fault: 'the cobbles press the angle-wall' is interiority dressed as environment-action; stative geometry figure (FAULT-FORM-INTERIORITY)
+scope: line
+change: svo recast from "the cobbles press the angle-wall" to "the angle-wall narrows the lane"; social_tether-prot-rise held rationale unchanged
+criteria met: yes
+
+## b01c01s02n01 — RESOLVED — 2026-05-25T01:30:00Z
+fault: 'crosswise' adverb of manner (FAULT-FORM-MODIFIER)
+scope: line
+change: svo recast from "the fish-cart blocks the lane crosswise" to "the fish-cart blocks the lane"
+criteria met: yes
+
+## b01c01s02n02 — RESOLVED — 2026-05-25T01:30:00Z
+fault: 'carries' is on the sustained-carrying deny list (FAULT-FORM-NON-ACTION-VERB)
+scope: line
+change: svo recast from "the ground carries the child's breath" to "the ground transmits the child's breath"
+criteria met: yes
+
+## b01c01s02n06 — RESOLVED — 2026-05-25T01:30:00Z
+fault: 'inward' directional adverb (FAULT-FORM-MODIFIER); HIGH PRIORITY moving bone
+scope: line
+change: svo recast from "the insects propagate inward" to "the insects propagate"; substance_delta (capability +1, cl01a) unchanged
+criteria met: yes
+
+## b01c01s02n08 — RESOLVED — 2026-05-25T01:32:00Z
+fault: 'outward' directional adverb (FAULT-FORM-MODIFIER)
+scope: line
+change: svo recast from "the gap propagates outward" to "the gap propagates"
+criteria met: yes
+
+## b01c01s02n11 — RESOLVED — 2026-05-25T01:33:00Z
+fault: 'the instruction' is abstraction-as-object (FAULT-FORM-INTERIORITY)
+scope: line
+change: svo recast from "taylor gives the instruction" to "taylor raises the voice"; physical vocal-act semantic preserved; moral_legibility_to_self rationale unchanged
+criteria met: yes
+
+## b01c01s03n02 — RESOLVED — 2026-05-25T01:34:00Z
+fault: 'watches' is on the perception-verb deny list (FAULT-FORM-PERCEPTION)
+scope: line
+change: svo recast from "the man with the fish-cart watches taylor" to "the fish-cart man faces taylor"; 'faces' licensed as transitive posture-act; subject compound-noun form cleans the disambiguating prepositional tag
+criteria met: yes
+
+## b01c01s03n03 — RESOLVED — 2026-05-25T01:35:00Z
+fault: 'stay' is stative position-naming (FAULT-FORM-NON-ACTION-VERB)
+scope: line
+change: svo recast from "the two women from the upper alley stay" to "the two women face the lane"; holders-remaining semantic preserved as body-direction
+criteria met: yes
+
+## b01c01s03n04 — RESOLVED — 2026-05-25T01:36:00Z
+fault: 'stands' stative position-naming + 'at the lane-mouth' prepositional phrase of place (FAULT-FORM-NON-ACTION-VERB + FAULT-FORM-MODIFIER); HIGH PRIORITY moving bone
+scope: line
+change: svo recast from "oswyn-mudway-flea-bottom-elder stands at the lane-mouth" to "oswyn-mudway-flea-bottom-elder takes the lane-mouth"; substance_delta (social_tether-prot-rise +1, cl01b) unchanged
+criteria met: yes
+
+## b01c01s03n05 — RESOLVED — 2026-05-25T01:37:00Z
+fault: 'departs' is bare intransitive motion verb without destination (FAULT-FORM-NO-VERB)
+scope: line
+change: svo recast from "the child departs" to "the child clears the lane"; direct object added
+criteria met: yes
+
+## b01c01s03n08 — RESOLVED — 2026-05-25T01:38:00Z
+fault: 'at the lane-level' prepositional phrase of place (FAULT-FORM-MODIFIER); load-bearing for pl-002 SOFT
+scope: line
+change: svo recast from "the tallow smoke settles at the lane-level" to "the tallow smoke layers the lane-floor"; stitch-house continuity preserved; 'settles the lane' alternative rejected as causative-odd
+criteria met: yes
+
+## SESSION-END — 2026-05-25T01:38:00Z — write-b01c01-pass2-svo-recasts
+findings-applied: 15 (14 SVO patches + 1 bone drop with rationale relocation)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-25T02:00:00Z — write-b01c01-pass2-round2
+dispatch: minimum-change patches for 3 faults from write-b01c01-pass2 round 2 re-audit (fault-001 s02n05 'inward', fault-002 s03n06 'in the lane', fault-003 s01 event_map stale reference)
+target: active-project/staff/showrunner/_drafts/b01c01-bones-draft-pass1.md
+audit-report: active-project/staff/auditor/write-b01c01-pass2.md
+findings-queued: 3
+
+## fault-001 — RESOLVED — 2026-05-25T02:01:00Z
+fault: b01c01s02n05 svo contained banned adverb 'inward' (FAULT-FORM-MODIFIER)
+scope: line
+change: svo recast from "the lane-mouth presses the crowd inward" to "the lane-mouth presses the crowd"; adverb stripped, direct object retained; axes_held (political_register-prot) and rationale unchanged; no deviation from recast_hint
+criteria met: yes
+
+## fault-002 — RESOLVED — 2026-05-25T02:02:00Z
+fault: b01c01s03n06 svo contained banned prepositional phrase of place 'in the lane' (FAULT-FORM-MODIFIER)
+scope: line
+change: svo recast from "the gap closes in the lane" to "the gap closes"; bare intransitive chosen over transitive recast (lower-risk minimum change; parallels 'the crowd thins', 'the insects propagate', 'the gap propagates' already passing); axes_held (moral_framework) and rationale unchanged; no deviation from recast_hint (bare intransitive was primary recommended candidate)
+criteria met: yes
+
+## fault-003 — RESOLVED — 2026-05-25T02:03:00Z
+fault: s01 event_map entry 'ward read only at surfaces' had covered_by: [b01c01s01n05] — dead reference to dropped bone (FAULT-EVENT-MAP-STALE-REFERENCE)
+scope: line
+change: covered_by updated from [b01c01s01n05] to [b01c01s01n02, b01c01s01n07]; s01n02 carries the smell surface-read (tallow smoke / stitch-house lane); s01n07 carries the relocated political_register-prot rationale naming the ward-read held at structural baseline; omission_rationale remains null (event has live coverage); no deviation from dispatch recommendation
+criteria met: yes
+
+## /and-write b01c01 Phase 2 round 2 — 2026-05-25
+
+- fault-001 (b01c01s02n05): "the lane-mouth presses the crowd inward" → "the lane-mouth presses the crowd" — adverb stripped
+- fault-002 (b01c01s03n06): "the gap closes in the lane" → "the gap closes" — bare intransitive, prep phrase of place stripped
+- fault-003 (s01 event_map): covered_by [b01c01s01n05] → [b01c01s01n02, b01c01s01n07] — dead reference replaced with two existing bones covering the ward-surface-read event
+
+## SESSION-END — 2026-05-25T02:03:00Z — write-b01c01-pass2-round2
+findings-applied: 3
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-25T03:00:00Z — write-b01c01-pass5
+dispatch: Phase 5 continuity audit fixes — 1 FAULT-STATE (add b01c01s03n10) + flag-001 (decomposer_notes total correction) + flag-002 (deferred, outside /and-write scope)
+target: active-project/staff/showrunner/_drafts/b01c01-bones-draft-pass1.md
+audit-report: active-project/staff/auditor/write-b01c01-pass5.md
+findings-queued: 3 (1 FAULT-STATE + 2 documentation flags; flag-002 deferred on dispatch)
+
+## /and-write b01c01 Phase 5 — 2026-05-25
+
+- bone_added: b01c01s03n10
+  svo: "wren-stitch-maker-flea-bottom-ward faces taylor"
+  position: appended after s03n09
+  axes_held: [relational_anchor_status]
+  fault_addressed: FAULT-STATE (handoff_out 'Wren has seen Taylor's face' had no bone delivering the perceptual event)
+  rationale: "chapter-goal-clause-2 plant ('plant Wren's presence before it becomes legible as a cost') delivered at chapter-close; un-priced anchor's perceptual presence to reader, structural dormancy in Taylor's calculus"
+
+- event_map_updates_s03:
+  - added: "load-bearing image: Wren orients toward Taylor across the dispersing crowd (chapter-close cost-bearer plant)" covered_by [b01c01s03n10]
+  - amended: "stitch-house smell still present ..." covered_by add b01c01s03n10
+
+- decomposer_notes_corrections:
+  - s01: 7 → 6 (s01n05 dropped at Pass 2 round 1)
+  - s03: 9 → 10 (s03n10 added at Phase 5)
+  - chapter total: 27 (unchanged but redistribution noted)
+
+- flag-002 deferred (cast-selection.md staleness): outside /and-write scope; surface to /and-cast or margit catalog rebuild
+
+Closing summary: 1 bone added; 2 event_map entries updated; 1 decomposer_notes block corrected; 1 flag deferred.
+
+## FAULT-STATE (b01c01s03n10 add) — RESOLVED — 2026-05-25T03:05:00Z
+fault: handoff_out character_state "Wren has seen Taylor's face" had no bone delivering the perceptual event; bones established Wren's presence only through environmental rationale notes and sensory-plant bones where Wren was not a subject
+scope: line
+change: bone b01c01s03n10 appended as final bone of s03; svo "wren-stitch-maker-flea-bottom-ward faces taylor"; axes_held relational_anchor_status; s03 event_map updated with new cost-bearer-plant entry and amended stitch-house-smell entry to add n10 to covered_by; s03 header updated to Bone count: 10 with n10 note; decomposer_notes updated to reflect 6+11+10=27 with per-scene rationale
+criteria met: yes — bone makes Wren a subject performing a posture-act toward Taylor; slug identifies her to the reader; Taylor reads orientation-without-recognition (structural dormancy preserved); handoff_out claim grounded
+
+## flag-001 (decomposer_notes total correction) — RESOLVED — 2026-05-25T03:05:00Z
+fault: decomposer_notes chapter-level total claimed 7+11+9=27 bones but s01n05 was dropped (s01=6) and s03n10 was added (s03=10); totals were internally inconsistent
+scope: line
+change: decomposer_notes updated to read 6 (s01) + 11 (s02) + 10 (s03) = 27; per-scene corrections annotated with phase-of-change; held-axis coverage for s03 updated to include n10 as third relational_anchor_status covering bone; density math re-affirmed
+criteria met: yes
+
+## flag-002 (cast-selection.md staleness) — ESCALATED — 2026-05-25T03:05:00Z
+fault: cast-selection.md carries ward-elder slot as '[original] ward-elder, name TBD' (pre-Phase 4); bones file and memory.md use committed slug oswyn-mudway-flea-bottom-elder
+scope: escalate
+change: none — deferred as outside /and-write scope; cast-selection.md is /and-cast territory (or margit catalog rebuild); no edit made
+criteria met: n/a — deferred to /and-cast next invocation or margit catalog rebuild
+
+## SESSION-END — 2026-05-25T03:05:00Z — write-b01c01-pass5
+findings-applied: 2 (FAULT-STATE resolved; flag-001 resolved)
+findings-skipped: 1 (flag-002 deferred — outside /and-write scope; cast-selection.md is /and-cast / margit territory)
+exit: CLEAN
+
+## SESSION-START — 2026-05-25T04:00:00Z — write-b01c01-phase6-bone-gate
+dispatch: Phase 6 substance bone-gate repairs — 3 HARD (HELD-AXIS-UNCONTRACTED on s02n02, s02n04, s02n08) + 1 SIGNAL remediate (s01n04 SVO recast) + 2 SIGNAL accept-with-rationale (faces verb, s01n07 axes-per-bone)
+target: active-project/staff/showrunner/_drafts/b01c01-bones-draft-pass1.md
+audit-report: active-project/staff/auditor/write-b01c01-bone-gate.md
+findings-queued: 6 (3 HARD + 3 SIGNAL)
+
+## fault-001 (s02n02 HELD-AXIS-UNCONTRACTED) — RESOLVED — 2026-05-25T04:05:00Z
+fault: b01c01s02n02 held capability, which is in s02 axes_in_motion not axes_held; HELD-AXIS-UNCONTRACTED
+scope: line
+change: axes_held[0] changed from axis: capability to axis: moral_framework; rationale rewritten as prohibition-intact / baseline-perception-not-deployment (capability-as-baseline-perception → moral_framework-as-prohibition-intact)
+criteria met: yes — s02n02 no longer carries capability in axes_held; moral_framework is a contracted held axis for s02
+
+## fault-002 (s02n04 HELD-AXIS-UNCONTRACTED) — RESOLVED — 2026-05-25T04:06:00Z
+fault: b01c01s02n04 held both moral_framework (clean) and capability (uncontracted for s02); HELD-AXIS-UNCONTRACTED on capability entry
+scope: line
+change: capability axes_held entry dropped; moral_framework rationale extended to absorb threshold-crossing-legibility note ("the threshold-crossing at the next bone reads as a crossing because this bone holds the line right before it"); axes_held reduced from 2 to 1 entry
+criteria met: yes — s02n04 axes_held contains only moral_framework, a contracted held axis for s02
+
+## fault-003 (s02n08 HELD-AXIS-UNCONTRACTED) — RESOLVED — 2026-05-25T04:07:00Z
+fault: b01c01s02n08 held capability, which is in s02 axes_in_motion not axes_held; HELD-AXIS-UNCONTRACTED
+scope: line
+change: axes_held[0] changed from axis: capability to axis: moral_framework; rationale rewritten as crack-continuing / deployment-cascade-extending-prohibition-violation (capability-as-deployment-mechanism → moral_framework-as-crack-extending)
+criteria met: yes — s02n08 no longer carries capability in axes_held; moral_framework is a contracted held axis for s02
+
+## signal-001 (s01n04 propagate mannerism) — RESOLVED — 2026-05-25T04:08:00Z
+fault: bare intransitive 'propagate' appeared 3× chapter-wide (s01n04, s02n06, s02n08); URI-WRITE-REGISTER-MANNERISM ≥3 threshold hit; s01n04 and s02n06 were also identical SVOs
+scope: line
+change: s01n04 svo recast from "the insects propagate" to "the insects swell"; rationales unchanged; propagate count drops to 2× (s02n06, s02n08) — below threshold; identical-SVO pair eliminated
+criteria met: yes
+
+## signal-002 (faces-verb mannerism) — ACCEPTED-WITH-RATIONALE — 2026-05-25T04:09:00Z
+fault: verb 'faces/face' appears 5× chapter-wide across 4 distinct VERB+OBJECT pairs
+scope: n/a (no patch)
+change: none — ACCEPT-WITH-RATIONALE recorded; no single VERB+OBJECT pair hits ≥3 threshold (max 'faces taylor' at 2); body-orientation register is load-bearing for ward-categorization beats (witnesses face the foreign woman; the foreign woman faces her work; Wren faces Taylor); replacing 'faces' with synonyms would reintroduce banned prepositional forms ('turns to', 'pivots toward') or damage the posture-vocabulary register
+criteria met: yes — disposition recorded; no mechanical threshold crossed; register rationale documented
+
+## signal-003 (s01n07 axes-per-bone overage) — ACCEPTED-WITH-RATIONALE — 2026-05-25T04:10:00Z
+fault: b01c01s01n07 carries 3 axes_held entries (moral_legibility_to_self, moral_framework, political_register-prot); chunk_targets.bone.axes_per_bone: 1-2
+scope: n/a (no patch)
+change: none — ACCEPT-WITH-RATIONALE recorded; third axis (political_register-prot) is a repair-move consequence of s01n05 drop at Pass 2 round 1; removing it would require either a new s01 political_register-prot held bone (over-engineering) or losing scene-level held-coverage on political_register-prot (HELD-AXIS-NOT-WITNESSED fault); /and-facets flagged to distribute the three axes across separate facet entries
+criteria met: yes — disposition recorded; over-commitment is a documented repair-move artifact, not a substantive authoring choice
+
+## /and-write b01c01 Phase 6 — 2026-05-25
+
+- HARD-fix s02n02:
+  axes_held_before: [capability]
+  axes_held_after: [moral_framework]
+  rationale_change: "capability-as-baseline-perception → moral_framework-as-prohibition-intact"
+
+- HARD-fix s02n04:
+  axes_held_before: [moral_framework, capability]
+  axes_held_after: [moral_framework]
+  rationale_change: "merged threshold-crossing-legibility into moral_framework rationale; dropped redundant capability entry"
+
+- HARD-fix s02n08:
+  axes_held_before: [capability]
+  axes_held_after: [moral_framework]
+  rationale_change: "capability-as-deployment-mechanism → moral_framework-as-crack-extending"
+
+- SIGNAL-remediate s01n04:
+  svo_before: "the insects propagate"
+  svo_after: "the insects swell"
+  reason: "URI-WRITE-REGISTER-MANNERISM — propagate ∅ at 3× chapter-wide; recast lowest-stakes instance (s01n04); s02n06 moving bone and s02n08 deployment-cascade bone preserved"
+
+- SIGNAL-accept faces-verb mannerism:
+  disposition: accept-with-rationale
+  rationale: "no VERB+OBJECT pair hits ≥3 threshold (max faces taylor 2); body-orientation register is load-bearing for ward-categorization beats; synonyms would reintroduce banned forms or damage register"
+
+- SIGNAL-accept s01n07 3-axes-held overage:
+  disposition: accept-with-rationale
+  rationale: "third axis political_register-prot relocated from dropped s01n05 at Pass 2 round 1; removing would force authoring a new s01 political_register-prot held bone or losing scene-level held-coverage; repair-move consequence, not substantive over-commitment"
+
+Closing summary: 3 HARD repairs applied; 1 SIGNAL remediated; 2 SIGNALs accept-with-rationale.
+
+## SESSION-END — 2026-05-25T04:10:00Z — write-b01c01-phase6-bone-gate
+findings-applied: 4 (3 HARD patched; 1 SIGNAL remediated)
+findings-skipped: 2 (2 SIGNALs accepted-with-rationale — no patch required by disposition)
+exit: CLEAN

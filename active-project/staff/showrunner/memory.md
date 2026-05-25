@@ -1618,7 +1618,7 @@ books:
 
     chapters:
       - slug: b01c01
-        status: scened
+        status: bones-written
         chunk: |
           Taylor has been in King's Landing for three weeks, sleeping in a Flea Bottom alley
           and holding her insects at subsistence range by effort of will. When a ward child
@@ -1737,6 +1737,102 @@ books:
               opposing_force: "the physical difficulty of suppression in a ward dense with bodies and signal — three weeks of it, every morning"
               stakes_axis: moral_framework
             stale_since: null
+            # /and-write Phase 7 emit 2026-05-25 — bones authored, event_map persisted, bone-gate PASS.
+            event_map:
+              - event: "Taylor sleeping in the covered drain angle (opening location placement)"
+                bones: [b01c01s01n01, b01c01s01n06]
+                omission_rationale: null
+              - event: "insects held at subsistence range (the count; the work of suppression)"
+                bones: [b01c01s01n03, b01c01s01n04]
+                omission_rationale: null
+              - event: "ward read only at surfaces — bodies moving, foot traffic, smell"
+                bones: [b01c01s01n02, b01c01s01n07]
+                omission_rationale: null
+              - event: "stitch-house smell two lanes over (Wren plant; relational_anchor dormancy)"
+                bones: [b01c01s01n02]
+                omission_rationale: null
+              - event: "prohibition-maintenance: Taylor holds the prohibition each morning as the argument she makes to herself"
+                bones: [b01c01s01n07]
+                omission_rationale: null
+              - event: "protagonist_force: Taylor holds the prohibition against the sustained pull of the insects at the edge of her range"
+                bones: [b01c01s01n03, b01c01s01n04]
+                omission_rationale: null
+              - event: "opposing_force: three weeks of accumulated suppression work; physical difficulty of holding in a ward dense with bodies"
+                bones: [b01c01s01n04, b01c01s01n07]
+                omission_rationale: null
+              - event: "ward anonymity: the ward does not know her name"
+                bones: [b01c01s01n01, b01c01s01n06]
+                omission_rationale: null
+            bones:
+              - slug: b01c01s01n01
+                flat_id: 1
+                svo: "the drain water threads the angle-gap"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-rise
+                      rationale: "Taylor sleeps in the drain angle — the most anonymous possible position in the ward; anonymity enacted by the physical location itself; no name anyone will remember"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s01n02
+                flat_id: 2
+                svo: "the tallow smoke crosses the stitch-house lane"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: relational_anchor_status
+                      rationale: "the stitch-house smell is a physical fact Taylor registers at surfaces only — anchor present as environmental datum, not as a person; the cost-bearer's location is real before it is named"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s01n03
+                flat_id: 3
+                svo: "taylor-hebert-kl-122ac holds the feet"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: capability
+                      rationale: "stillness-against-pull — Taylor's feet planted while the insect-range pulls toward the ward's bodies; suppression by discipline, not incapacity; range-awareness established as a chosen threshold"
+                    - axis: moral_framework
+                      rationale: "the prohibition enacted as physical stillness; Taylor paying the daily suppression cost; the effortful maintenance is what makes the scene's tension the prohibition itself"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s01n04
+                flat_id: 4
+                svo: "the insects swell"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: capability
+                      rationale: "opposing-force enacted: the insect-pull at the range-threshold is the physical pressure Taylor's discipline holds against; the sensation sharpens from background to pull at this distance"
+                    - axis: moral_framework
+                      rationale: "the pull is the test the prohibition passes each time; enacts the opposing force — the physical difficulty of suppression in a ward dense with bodies"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              # b01c01s01n05 dropped at Pass 2 round 1 (FAULT-FORM-PERCEPTION; perception-surrogate in solo scene; no honest non-perception recast available); political_register-prot held rationale relocated to s01n07 as its third axes_held entry.
+              - slug: b01c01s01n06
+                flat_id: 5
+                svo: "the angle-wall narrows the lane"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-rise
+                      rationale: "the physical geometry of the drain angle is what anonymity looks like: a body-sized space between wall and drain; the cobbles are the ward's indifference concretized; the arrangement holds because the space holds"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s01n07
+                flat_id: 6
+                svo: "taylor-hebert-kl-122ac exhales"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_legibility_to_self
+                      rationale: "the morning argument: the exhalation is the body's verdict on another day of choosing the prohibition; self-accounting runs as maintenance, not reckoning — she is not yet in a situation"
+                    - axis: moral_framework
+                      rationale: "the prohibition survives the morning; the choosing-each-morning is the argument she makes to herself; no new ledger entry, only continuation"
+                    - axis: political_register-prot
+                      rationale: "[relocated from s01n05 — FAULT-FORM-PERCEPTION drop] Taylor holds the ward-read at structural baseline rank 1; the ward is smallfolk-only; no court-layer material enters the drain angle; no insect-feed content for resentment to form on; the exhalation closes the morning scan without a court-encounter"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [ACCEPT-axes-held-overage-repair-move] }
 
           - slug: b01c01s02
             chunk: |
@@ -1787,6 +1883,160 @@ books:
               opposing_force: "the crowd's compression, and underneath it, the prohibition against deploying insect-control on unconsenting persons"
               stakes_axis: moral_framework
             stale_since: null
+            # /and-write Phase 7 emit 2026-05-25 — Phase 3 dramatist reorder applied: n11 (voice; enabling act) precedes n10 (hands; closing visual the witnesses file) per chunk crowd-image "hands up and mouth shut".
+            event_map:
+              - event: "child collapses in crowd (the initiating event)"
+                bones: [b01c01s02n02, b01c01s02n03]
+                omission_rationale: null
+              - event: "crowd compression around the child (the physical danger mechanism)"
+                bones: [b01c01s02n01, b01c01s02n03, b01c01s02n05]
+                omission_rationale: null
+              - event: "fever-read without contact (the capability deployed)"
+                bones: [b01c01s02n02, b01c01s02n06]
+                omission_rationale: null
+              - event: "insect deployment — crowd-yield (the central action)"
+                bones: [b01c01s02n06, b01c01s02n07, b01c01s02n08]
+                omission_rationale: null
+              - event: "Taylor arrives at the child (physical approach through the gap)"
+                bones: [b01c01s02n08, b01c01s02n09]
+                omission_rationale: null
+              - event: "voice-of-instruction (Taylor speaks to the crowd-adjacent persons)"
+                bones: [b01c01s02n11]
+                omission_rationale: null
+              - event: "child breathes (the rescue succeeds)"
+                bones: [b01c01s02n02, b01c01s02n07]
+                omission_rationale: "The child-breathing outcome is carried as consequence of the crowd-yield and the fever-read bones; no additional bone is needed since the mechanism (gap propagates; crowd does not re-compress) is already the child breathing — adding a 'the child breathes' bone would double-count the causal chain. Omission deliberate."
+              - event: "crowd-lane stays open after the yield"
+                bones: [b01c01s02n08, b01c01s02n10]
+                omission_rationale: null
+              - event: "protagonist_force: Taylor clears crowd-pressure using insect-sense"
+                bones: [b01c01s02n06, b01c01s02n07, b01c01s02n08]
+                omission_rationale: null
+              - event: "opposing_force: crowd compression + the prohibition against deploying insect-control on unconsenting persons"
+                bones: [b01c01s02n03, b01c01s02n04]
+                omission_rationale: null
+              - event: "load-bearing image: fish-cart crosswise in the lane-mouth"
+                bones: [b01c01s02n01]
+                omission_rationale: null
+              - event: "load-bearing image: ankle-height insect sensation at the crowd-floor"
+                bones: [b01c01s02n06]
+                omission_rationale: null
+              - event: "Taylor visible as the foreign woman who opened the crowd with hands up and mouth shut"
+                bones: [b01c01s02n10, b01c01s02n11]
+                omission_rationale: null
+            bones:
+              - slug: b01c01s02n01
+                flat_id: 7
+                svo: "the fish-cart blocks the lane"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-rise
+                      rationale: "the cart-blockage is the ward's compression reading — smallfolk crowd physics enacted in the geometry of a halted street; Taylor has no tether-embedding yet; the environment is the ward's indifference to her"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s02n02
+                flat_id: 8
+                svo: "the ground transmits the child's breath"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "the prohibition is intact at this bone — the insect-sense reads body-vibration through the cobbles as passive baseline perception, not active deployment; moral_framework held as not-yet-cracked; the sense-mechanism is doing its baseline work, which the prohibition has always permitted; the scene's tension is what happens when this baseline is exceeded, which has not happened yet at this bone"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s02n03
+                flat_id: 9
+                svo: "the crowd compresses"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "opposing-force enacted: the crowd-compression is the physical pressure the prohibition-against-using-insects-on-persons now runs against; the stakes are whether the prohibition survives crowd-mechanics; it does not"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s02n04
+                flat_id: 10
+                svo: "taylor-hebert-kl-122ac holds the feet"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "the last beat of prohibition-maintenance before the crack — Taylor's body planted, the range pressing, the prohibition still running; this is the prohibition's final held moment in the scene; the threshold-crossing at the next bone reads as a crossing because this bone holds the line right before it"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s02n05
+                flat_id: 11
+                svo: "the lane-mouth presses the crowd"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: political_register-prot
+                      rationale: "the lane geometry is smallfolk-only pressure — no court material, no resentment source; held at baseline; the crowd-physics are entirely ward-layer"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s02n06
+                flat_id: 12
+                svo: "the insects propagate"
+                substance_delta:
+                  axis_moves:
+                    - axis: capability
+                      direction: up
+                      magnitude: 1
+                  axes_held: []
+                  cost_ledger_anchor: cl01a
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s02n07
+                flat_id: 13
+                svo: "the nearest dozen bodies yield"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "the crack: bodies yield to insect-pressure without consenting to yield; the prohibition against directing others is crossed without being filed as crossed; moral_framework held as load-bearing dormancy — the crack is visible here to the reader, not to Taylor"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s02n08
+                flat_id: 14
+                svo: "the gap propagates"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "the crack continues — the deployment's wave-effect persists as the gap propagates outward, bodies continuing to yield to insect-pressure; the prohibition's violation extends beat-by-beat without being filed as violation; moral_framework held as load-bearing dormancy through the deployment's cascade"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s02n09
+                flat_id: 15
+                svo: "taylor-hebert-kl-122ac faces the child"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: relational_anchor_status
+                      rationale: "Wren is in this crowd — the cost-bearer is in the frame as Taylor faces the child; anchor present-but-unregistered; Taylor does not turn toward the cost-bearer; anchor enacted as structural dormancy"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [ACCEPT-faces-mannerism-chapter-register] }
+              # Phase 3 dramatist reorder: n11 precedes n10 in scene order (flat_id 16 vs 17).
+              - slug: b01c01s02n11
+                flat_id: 16
+                svo: "taylor-hebert-kl-122ac raises the voice"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_legibility_to_self
+                      rationale: "the voice-of-instruction is the deployment's final act; the accounting has not run on this event yet; Taylor reads the deployment as a one-time lapse; the scene ends before the ledger opens"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s02n10
+                flat_id: 17
+                svo: "taylor-hebert-kl-122ac lifts the hands"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-rise
+                      rationale: "hands-up posture is the witness-facing gesture that makes Taylor visible as the opener-of-the-crowd; tether does not move here — witnesses are present but ward-embedding has not yet registered; this is the action the crowd sees"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
 
           - slug: b01c01s03
             chunk: |
@@ -1836,6 +2086,171 @@ books:
               opposing_force: "Oswyn Mudway's watching — the ward's process of categorizing her; the witch-label assembling in the gap between what was seen and what Flea Bottom has a word for"
               stakes_axis: social_tether-prot-rise
             stale_since: null
+            # /and-write Phase 7 emit 2026-05-25 — s03n10 added at Phase 5 to deliver handoff_out "Wren has seen Taylor's face" cost-bearer plant.
+            event_map:
+              - event: "crowd disperses — holders remain (Flea Bottom dispersal physics)"
+                bones: [b01c01s03n01, b01c01s03n02, b01c01s03n03]
+                omission_rationale: null
+              - event: "Oswyn Mudway stands at the lane-mouth and watches Taylor"
+                bones: [b01c01s03n04, b01c01s03n09]
+                omission_rationale: null
+              - event: "child gathered by someone who knows her name (aftermath confirmed)"
+                bones: [b01c01s03n05]
+                omission_rationale: null
+              - event: "witch-label assembly — the gap between what Oswyn saw and what Flea Bottom has a word for"
+                bones: [b01c01s03n04, b01c01s03n09]
+                omission_rationale: null
+              - event: "Taylor registers Oswyn registering her (the mutual-awareness beat)"
+                bones: [b01c01s03n04, b01c01s03n07]
+                omission_rationale: null
+              - event: "stitch-house smell still present — Taylor does not look toward it (Wren plant / ledger-anomaly enacted)"
+                bones: [b01c01s03n07, b01c01s03n08, b01c01s03n10]
+                omission_rationale: null
+              - event: "ward now has a category for Taylor that did not exist at dawn"
+                bones: [b01c01s03n04, b01c01s03n09]
+                omission_rationale: null
+              - event: "protagonist_force: Taylor reads the aftermath and attempts to remain invisible within it"
+                bones: [b01c01s03n07, b01c01s03n05]
+                omission_rationale: null
+              - event: "opposing_force: Oswyn Mudway's watching; witch-label assembling in the gap"
+                bones: [b01c01s03n04, b01c01s03n09]
+                omission_rationale: null
+              - event: "load-bearing image: Wren orients toward Taylor across the dispersing crowd (chapter-close cost-bearer plant)"
+                bones: [b01c01s03n10]
+                omission_rationale: null
+            bones:
+              - slug: b01c01s03n01
+                flat_id: 18
+                svo: "the crowd thins"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: political_register-prot
+                      rationale: "the crowd thinning is smallfolk-only dispersal — no court material enters the scene; held at baseline; the aftermath physics are ward-layer exclusively"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s03n02
+                flat_id: 19
+                svo: "the fish-cart man faces taylor-hebert-kl-122ac"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-rise
+                      rationale: "a holder watches Taylor instead of the child — early-stage witness attention, not yet ward-embedding; tether has not moved at this bone; the watching is the raw material of the label, not yet the label"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [ACCEPT-faces-mannerism-chapter-register] }
+              - slug: b01c01s03n03
+                flat_id: 20
+                svo: "the two women face the lane"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-rise
+                      rationale: "holders remain — multiple witnesses holding position after the resolution; the label's accumulation requires corroborating observers; this bone enacts the critical-mass condition before Oswyn's categorization"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [ACCEPT-faces-mannerism-chapter-register] }
+              - slug: b01c01s03n04
+                flat_id: 21
+                svo: "oswyn-mudway-flea-bottom-elder takes the lane-mouth"
+                substance_delta:
+                  axis_moves:
+                    - axis: social_tether-prot-rise
+                      direction: up
+                      magnitude: 1
+                  axes_held: []
+                  cost_ledger_anchor: cl01b
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s03n05
+                flat_id: 22
+                svo: "the child clears the lane"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: capability
+                      rationale: "capability held at its new floor: the deployment succeeded; the child is gathered and gone; no further capability deployment occurs; aftermath confirms the deployment's visibility without extending it"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s03n06
+                flat_id: 23
+                svo: "the gap closes"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "the physical gap that the insect-deployment opened has closed — the lane has returned to neutral; the prohibition's crack is visible only in retrospect; the lane closing is the environment's indifference to the moral event that just occurred"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s03n07
+                flat_id: 24
+                svo: "taylor-hebert-kl-122ac faces the alley-mouth"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: relational_anchor_status
+                      rationale: "facing the alley-mouth is the body-direction that excludes the stitch-house; the not-looking is enacted as a direction-toward, not as a negation; cost-bearer's location held as structural dormancy — Taylor does not look toward the anchor; the ledger-anomaly rule enacts here"
+                    - axis: moral_legibility_to_self
+                      rationale: "Taylor reads Oswyn's look and does not open the ledger on the deployment; she faces the alley rather than the stitch-house — the accounting is deferred in the same gesture"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [ACCEPT-faces-mannerism-chapter-register] }
+              - slug: b01c01s03n08
+                flat_id: 25
+                svo: "the tallow smoke layers the lane-floor"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: relational_anchor_status
+                      rationale: "the stitch-house smoke is still present — two lanes over, the same it was this morning; the cost-bearer's location marked again as a physical-sensory fact; quietly loaded, not announced; the continuity of the smell is the anchor's dormancy enacted concretely"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              - slug: b01c01s03n09
+                flat_id: 26
+                svo: "oswyn-mudway-flea-bottom-elder lifts the chin"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-rise
+                      rationale: "Oswyn's chin-lift is the composing-of-the-word: the body telling Taylor she has moved from invisible to present in his accounting; the witch-label's assembly in the gap between what he saw and what he has a word for — the categorization completing"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [] }
+              # s03n10 added at Phase 5 to honor handoff_out "Wren has seen Taylor's face in the crowd; no exchange, no names" — held bone, no axis movement, places the cost-bearer's perceptual orientation at chapter-close while preserving structural dormancy in Taylor's calculus (Taylor reads body-orientation; the slug identifies Wren to the reader only).
+              - slug: b01c01s03n10
+                flat_id: 27
+                svo: "wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: relational_anchor_status
+                      rationale: "Wren's body-direction crosses the dispersing crowd and settles toward Taylor; Taylor's insect-sense reads the orientation as a stranger-body holding a facing she has no name for; the cost-bearer's perceptual presence is delivered to the reader (the slug identifies her) without entering Taylor's calculus (Taylor reads a body, not Wren); structural dormancy of the un-priced anchor enacted as orientation-without-recognition; the chapter goal's second-clause plant ('Wren's presence before it becomes legible as a cost') lands here"
+                  cost_ledger_anchor: null
+                gate_verdict: { bonefide: true, flat: false, signals: [ACCEPT-faces-mannerism-chapter-register] }
+
+        # /and-write Phase 7 chapter-level emit fields — 2026-05-25
+        bones_file: theater/bones/b01-c01.md
+        bones_count: 27
+        substance_bone_gate_verdict: PASS
+        substance_delta_measured:
+          axes_moved:
+            - { axis: capability, direction: up, magnitude: 1.0, anchor_bone: b01c01s02n06, cost_ledger: cl01a }
+            - { axis: social_tether-prot-rise, direction: up, magnitude: 1.0, anchor_bone: b01c01s03n04, cost_ledger: cl01b }
+          density_measured: 1.0   # 0 chatter / 27 total — fully structural (all bones moving or held)
+          felt_verdict: SUBSTANCE-FELT   # audience trio 3-of-3 SUBSTANCE-FELT on all three scenes (Phase 6 bone-gate)
+        # Phase 7 emit notes:
+        #   Pipeline cycles: Pass 2 (3 rounds: 14 → 3 → CLEAN) + Pass 3 dramatist (REVISE-then-ACCEPT: s02 n11/n10 terminal swap)
+        #     + Pass 4 audience trim (3-of-3 ACCEPT, 26/0 KEEP/DROP) + Pass 5 continuity (FAULT-STATE → fixer added s03n10 → CLEAN)
+        #     + Pass 6 bone-gate (auditor 3 HARDs + 3 SIGNALs → fixer s02 axes_held capability→moral_framework + s01n04 propagate→swell
+        #     → CLEAN; audience 3-of-3 SUBSTANCE-FELT on all 3 scenes URI-WRITE-BONE-GATE-COVERAGE satisfied).
+        #   Bones-history: s01 dropped n05 (FAULT-FORM-PERCEPTION, rationale relocated to n07); s03 added n10 (handoff_out plant).
+        #   SIGNALs disposed: ACCEPT-axes-held-overage-repair-move (s01n07 3 axes_held; political_register-prot relocated from
+        #     dropped s01n05); ACCEPT-faces-mannerism-chapter-register (faces verb 5× across 4 VERB+OBJECT pairs;
+        #     body-orientation register is load-bearing for ward-categorization beats; no pair hits ≥3 threshold).
+        #   Parking-lot resolutions: pl-2026-05-25-002 SOFT (Wren stitch-house plant) resolved at authoring time
+        #     (s01n02 + s03n08 + s03n10 deliver the plant as quietly-loaded grounding bones + chapter-close orientation).
+        #     pl-2026-05-25-003 SOFT (SOFT-CURVE-moral_framework concentration) surfaced; b01c01 is a held-discipline
+        #     chapter with no moral_framework collapse on the moving axes — consistent with concentration rule (b01c01 ≠ d03/d07/d12).
+        #   Cast-selection.md staleness (Phase 5 flag-002) deferred outside /and-write scope; surface to /and-cast or margit catalog rebuild.
+        #   Draft archived: active-project/staff/showrunner/_drafts/b01c01-bones-draft-pass1.md
+        #   Reviewer reports: pass2 (3 rounds); pass3-dramatist; pass5 (2 rounds); bone-gate (2 rounds);
+        #     audience verdicts at active-project/audience/{cape-fic-reader,dark-fantasy-reader,worm-canon-pedant}/verdicts.md
 
       - slug: b01c02
         status: planned

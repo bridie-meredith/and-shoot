@@ -18,7 +18,7 @@ per-chapter verdicts (b01c01-b01c20):
   b01c04: SUBSTANCE-FELT — capability expansion via acceptance reads as earned; the Khepri-rhyming architecture beginning-to-form note in the delta is appropriately restrained (not overstated); future-cost collateral flagged in the tether-gain makes the trap legible without making Taylor see it, which is correct; Oswyn as unknowing node is a clean Khepri echo without invoking the word
   b01c05: SUBSTANCE-FELT — political_register-prot opening via feed content accumulation rather than a discrete event is right; Taylor does not have sudden opinions, she has accumulations; "filed under operational texture" is the exact Taylor move; cf-d10-courier-face planted without forcing it
   b01c06: SUBSTANCE-FELT — named-person delivery after explicit accounting is the rationalize-each-trade pattern correctly instantiated; Wren omission from deliverable as the un-priced move is structurally correct and the drama of it is visible; the relational_anchor_status gaining through omission-architecture is earned not asserted
-  b01c07: SUBSTANCE-FELT — Halvard counter-argument genuinely engaged without resolution is correct; Taylor does have a counter she believes (consequentialist, body-count denominated) and this matches her register; the social_tether-prot-rise gain through Halvard-as-precinct-node is a mild tension (Halvard engagement deepens community embedding even when intellectually contested — I accept this, though it will need prose support to read as tether-building rather than just conversation)
+  b01c07: SUBSTANCE-FELT — Halvard counter-argument genuinely engaged without resolution is correct; Taylor does have a counter she believes (consequentialist, body-count denominated) and this matches her register; the social_tether-prot-rise +1.0 gain through Halvard-as-precinct-node is a mild tension (Halvard engagement deepens community embedding even when intellectually contested — I accept this, though it will need prose support to read as tether-building rather than just conversation)
   b01c08: SUBSTANCE-FELT — Oswyn watcher-network integrated without his knowledge is the Khepri-echo that lands correctly at staging level; the chapter correctly does not enter this in the ledger, which is the problem; Aemond at logistics-noise level is appropriate for d08; the capability sub-increment (0.5) is appropriately modest
   b01c09: SUBSTANCE-FELT — Taylor surveilling Wren's daily pattern without calling it surveillance is exactly the moral_legibility suppression mechanism; the double-omission (Wren's coverage + courier withholding) not producing a recognition event is correct for this stage; courier Dragonpit observation withheld is the right kind of withholding
   b01c10: SUBSTANCE-FELT — formalization and detention in the same chapter produces the necessary collision; the accounting-and-filing of the courier's detention is correct (Taylor closes the ledger on a named person and files it); the moral_framework -1.0 for crossing systematic-override-rationalized threshold is earned; the scene-count 4 for a climax chapter is appropriate given the weight
@@ -96,3 +96,67 @@ notes:
   - s02 moral_framework held (not in axes_in_motion) while the breach is real: this is the correct axes-interiority discipline; the held status reflects Taylor's interiority — the breach happened, she has not processed it; the framing is accurate to how Taylor handles live crises (file later, survive now); no flag
   - s03 Oswyn composing a category ("does not have a word for yet and is composing one") is the right Westerosi superstition shape; the witch-label forms from observable evidence (she knew without touching, she moved the crowd with no visible mechanism) — no Worm-internal logic is required by the Flea Bottom witnesses, which is correct; no lore-leak vector
   - Wren as stitch-house smell not-looked-at: the anchor setup is thin at plan stage but the relational_anchor_status held-as-dormancy framing is correct (Wren is not in Taylor's calculus yet, and this chapter contract explicitly defers that); no canon violation; soft watch carried to /and-write on whether the plant will read as intentional setup or random detail without prose texture
+
+---
+
+## 2026-05-25 — /and-write b01c01 Phase 4 trim
+
+verdict: ACCEPT — 26 KEEP, 0 DROP
+file_verdict: ACCEPT
+
+carry_forward_to_stitch:
+  - s02n07 + s02n08 directionality watch: the chunk phrase "yield a step each inward" risks
+    reading as bodies stepping toward the child rather than away; the gap must propagate
+    outward from the child's location (insects at crowd perimeter → perimeter bodies yield
+    outward → gap opens). If prose collapses this to "insects push people toward the child"
+    the override-architecture fence is crossed. Soft watch; not a bone-level issue. Carry
+    to stitch review.
+  - pl-2026-05-25-002 SOFT resolved: stitch-house Wren plant lands at s01n02 (first
+    instance) + s03n07 + s03n08 (second instance with echo of the same smell). The
+    double-load is correct; the bone-level enactment earns "quietly loaded, not background
+    noise." Closed.
+  - b01c07 prose-burden soft finding from Phase 5 carries forward unchanged.
+
+canonically_on_target:
+  - s02n06 + s02n07: fauna-control at ankle-height, bodies yield to physical sensation
+    without nervous-system coordination — the override-architecture fence is present at
+    bone level, not just asserted in the contract
+  - s01n03 + s02n04 echo: 'taylor holds the feet' in both scenes enacts Khepri-residue
+    suppression-discipline as a maintained posture that eventually fails; threshold-crossing
+    legible as crossing, not surprise
+  - s02n11 ('taylor raises the voice'): cold-utilitarian register correctly rendered as
+    physical act, not dialogue content; "does not ask whether they will comply" is canon Taylor
+  - s03n07 + s03n08: not-looking enacted through body-direction and sensory continuity;
+    negative construction avoided; dormancy reads as structural, not incidental
+
+---
+
+## 2026-05-25 — /and-write b01c01 Phase 6 substance bone-gate
+
+verdict_per_scene:
+  b01c01s01: SUBSTANCE-FELT
+  b01c01s02: SUBSTANCE-FELT
+  b01c01s03: SUBSTANCE-FELT
+chapter_aggregate: SUBSTANCE-FELT
+hard_findings: []
+soft_findings:
+  - s02n07 + s02n08 directionality watch: carried from Phase 4 trim unchanged; prose-level
+    risk only; bones correctly scoped; carry to stitch review; not a bone-gate block
+canonicity_findings:
+  - override-architecture fence at s02n06 + s02n07: CLEAN — fauna-control at ankle-height,
+    bodies yield to sensation, no nervous-system coordination; the Khepri mantle is sealed
+  - Taylor interior register: cold-utilitarian throughout all three scenes; drained-quiet
+    and cost-aware in s01; cold-operational in s02; body-reading-as-data in s03
+  - moral_framework held-discipline: the breach is real and reader-visible at s02; Taylor
+    has not filed it; the ledger does not open in s03; held-discipline survives the chapter
+  - Wren-plant dormancy: both plant instances correctly execute structural dormancy;
+    present-but-unregistered throughout; no lore-leak
+key_moments_that_tracked:
+  - s02n06 + s02n07: the override-architecture fence is at bone level, not just contract
+  - s01n03 + s02n04 echo: Khepri-residue suppression-discipline as maintained threshold
+    that fails — the crossing is legible as a crossing
+  - s03n09 ending on Oswyn's body-signal, not Taylor's label-recognition: chapter closes
+    exactly where the goal specified — before legibility, at categorization-in-progress
+carry_forward:
+  - s02n07 + s02n08 directionality soft watch to stitch review (unchanged from Phase 4)
+  - b01c07 prose-burden soft finding carries forward unchanged to b01c07 /and-write

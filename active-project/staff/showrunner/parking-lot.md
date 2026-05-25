@@ -59,10 +59,23 @@ parking_lot:
         - active-project/audience/dark-fantasy-reader/stm.md
         - active-project/audience/worm-canon-pedant/stm.md
         - active-project/staff/showrunner/memory.md:1701  # b01c01 persist comment SOFT-WATCH line
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-05-25T00:00:00Z
+      resolved_by: "/and-write b01c01 Phase 7 emit"
+      resolution_note: |
+        Stitch-house plant authored as three concrete physical bones, not ambient detail:
+        s01n02 (flat_id 2) "the tallow smoke crosses the stitch-house lane" — opening
+        sensory ground naming the stitch-house as a working-class craft district fact;
+        s03n08 (flat_id 25) "the tallow smoke layers the lane-floor" — chapter-close
+        confirming the smell continues as the cost-bearer's location physical-presence;
+        s03n07 (flat_id 24) "taylor faces the alley-mouth" — the body-direction that
+        excludes the stitch-house, enacted positively per the no-negation rule.
+        s03n10 (flat_id 27) "wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac"
+        (added at Phase 5) delivers the chapter-close cost-bearer orientation that
+        the handoff_out asserts. Audience Phase 6 bone-gate verdicts: all three personas
+        SUBSTANCE-FELT; cape-fic-reader specifically noted "three-station dormancy arc
+        complete (s01n02 smoke → s02n09 in the crowd unregistered → s03n10 orienting
+        toward Taylor), reader knows who it is, Taylor does not." Decoration test passed.
 
     - id: pl-2026-05-25-003
       created_at: 2026-05-25T00:00:00Z
