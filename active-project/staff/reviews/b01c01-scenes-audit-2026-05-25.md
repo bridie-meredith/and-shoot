@@ -210,3 +210,11 @@ audit:
       Fix is scoped to either the cost ledger annotation, the scene/chapter contract magnitudes,
       or explicit partial-settlement notation — no structural change to the scene decomposition
       is required.
+
+## Attempt 2 re-verify — 2026-05-25
+
+fault-001: CLEARED
+  reason: s03 notes field now reads "partial-settlement of cl01b (+1 of +2 gain; ward-layer half — Oswyn); remaining +1 (court-layer half — Otto via Jarvis Coin) anchors at b01c03" — explicit partial-settlement declaration and downstream anchor both present; authoring notes cl01b block updated to match with split-anchor notation (b01c01s03 + b01c03) and court-layer rationale; target_delta_magnitude unchanged at 1.0, chapter contract untouched, cost ledger cl01b gain annotation untouched.
+  scope-discipline: PASS
+
+verdict (attempt 2): ACCEPT

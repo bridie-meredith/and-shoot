@@ -76,3 +76,23 @@ canonicity_findings:
   - b01c15 Vhagar-backwash: CANON-CONSISTENT — see above; no flag; perceptual mechanism earns the relational_anchor_status +1.5 on two grounds: (1) cl-d08 anchor now present; (2) mechanism is physically correct for the insect-network operating physics
 
 notes: Attempt 2 resolves both items under review. The Vhagar-proximity backwash mechanism is the most technically specific canonicity test in the book and it passes: physical disruption of biological relay, contrast-based gap perception, no range inflation, no mythology. The cl-d08 anchor addition converts the prior soft finding to closed. One soft finding carries forward (b01c07 prose burden). The overall canonicity picture is unchanged from attempt 1 and still clean. ACCEPT confirmed.
+
+---
+
+## 2026-05-25 — /and-substance chapter b01c01 Phase 5 review
+
+verdict_per_scene:
+  b01c01s01: SUBSTANCE-FELT
+  b01c01s02: SUBSTANCE-FELT
+  b01c01s03: SUBSTANCE-FELT
+chapter_goal_coverage:
+  first_act_of_control: LAND
+  witch_label_plant: LAND
+  wren_presence_plant: LAND
+overall: ACCEPT
+notes:
+  - s01 power mechanics correct: range-awareness established as measured, not vague; holding at subsistence range reads as active suppression consistent with Taylor's canon capacity to modulate the feed; the "line" is a calibrated limit, not a hand-wave; no flag
+  - s02 instinctive deployment is canon-true (Taylor does not suppress when lives are on the line — see every major Leviathan-era decision); "does not make a decision, or if she does she does not file it as one" is exactly the Taylor interiority pattern for the first deployment she cannot justify post-hoc; the crowd-pressure mechanism (insects move bodies at ankle-height, gap propagates) is within established capability range; no flag
+  - s02 moral_framework held (not in axes_in_motion) while the breach is real: this is the correct axes-interiority discipline; the held status reflects Taylor's interiority — the breach happened, she has not processed it; the framing is accurate to how Taylor handles live crises (file later, survive now); no flag
+  - s03 Oswyn composing a category ("does not have a word for yet and is composing one") is the right Westerosi superstition shape; the witch-label forms from observable evidence (she knew without touching, she moved the crowd with no visible mechanism) — no Worm-internal logic is required by the Flea Bottom witnesses, which is correct; no lore-leak vector
+  - Wren as stitch-house smell not-looked-at: the anchor setup is thin at plan stage but the relational_anchor_status held-as-dormancy framing is correct (Wren is not in Taylor's calculus yet, and this chapter contract explicitly defers that); no canon violation; soft watch carried to /and-write on whether the plant will read as intentional setup or random detail without prose texture
