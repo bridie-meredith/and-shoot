@@ -14,3 +14,24 @@ criteria met: yes — sensory:2's old-state "cobblestone-underfoot-pre-compressi
 findings-applied: 1 (unanchored-old-state HARD resolved via 3-file edit: loc-state:1 tactile field added, sensory:2 old-state updated, sensory header rewritten)
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-25T17:00:00Z — and-facets-cycle3-fixes-sensory
+dispatch: Phase 5b cycle-3 remediation re-dispatch — verify prior session edits landed correctly; single HARD from sensory-old-state-reader (unanchored-old-state on sensory:2 @9); protocol: loc-state:1 tactile REVISE, sensory:2 old-state REVISE, sensory carve-out header REVISE, cite-index verify
+target: active-project/theater/facets/location-state-b01-c01.md, active-project/theater/facets/sensory-b01-c01.md, active-project/theater/facets/_cite-index.md
+audit-report: active-project/staff/audience/sensory-old-state-reader/sensory-r2-verdict.md
+findings-queued: 1
+
+## sensory-cycle3-hard — RESOLVED (VERIFIED) — 2026-05-25T17:05:00Z
+fault: sensory:2 @9 old-state "lane-ambient" unanchored on tactile modality — loc-state:1 had no tactile field; no prior tactile sensory entry existed; unenumerated "scene-internal sensory anchor" carve-out path invoked; carve-out factual premise stale
+scope: line
+change: all four protocol operations verified complete in target files (prior session 16:00-16:10Z applied edits):
+  op-1 loc-state:1 @1 REVISE: tactile baseline "cobblestone-underfoot tactile ambient (uneven at angle-wall side, pre-compression)" present in sensory-baseline field; sourced from oc-stitch-house-lane.md Sensory Vocabulary
+  op-2 sensory:2 @9 REVISE: old-state confirmed as "cobblestone-underfoot-pre-compression" — resolves to loc-state:1's anchored tactile baseline via enumerated rubric path (most recent loc-state file's sensory field for the beat's location); unenumerated scene-internal path no longer invoked
+  op-3 sensory carve-out header REVISE: stale zero-entry claim absent; header now states loc-state:1 exists and tactile field added at cycle-3 remediation; per-entry annotation for sensory:2 cites loc-state:1 cross-facet anchor correctly
+  op-4 cite-index verify: sensory:2 @9 back=Y (no co-citations, correctly lonely); loc-state:1 @1 co=[exposition:5]; no co-citation between sensory:2 and loc-state:1 required (old-state dependency is rubric-structural, not cite-index-tracked); all back-links current
+criteria met: yes — sensory:2's old-state "cobblestone-underfoot-pre-compression" resolves against loc-state:1 @1's explicit tactile baseline; both enumerated rubric paths satisfied via path 1 (loc-state field); carve-out no longer claims unenumerated path; stale factual premise corrected
+
+## SESSION-END — 2026-05-25T17:05:00Z — and-facets-cycle3-fixes-sensory
+findings-applied: 1 (sensory-cycle3-hard verified resolved; all file edits confirmed in place from prior session)
+findings-skipped: 0
+exit: CLEAN

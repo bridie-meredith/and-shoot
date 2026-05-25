@@ -719,3 +719,20 @@ dispatch: Phase 5b cycle-3 remediation — sensory facet only; single HARD from 
 target: active-project/theater/facets/location-state-b01-c01.md (primary edit 1), active-project/theater/facets/sensory-b01-c01.md (primary edits 2+3), active-project/theater/facets/_cite-index.md (verification)
 audit-report: active-project/staff/audience/sensory-old-state-reader/sensory-r2-verdict.md
 findings-queued: 1 (unanchored-old-state HARD on sensory:2 @9)
+
+## SESSION-START — 2026-05-25T17:00:00Z — and-facets-cycle3-fixes-sensory
+dispatch: Phase 5b cycle-3 remediation re-dispatch — verify prior session edits landed; single HARD from sensory-old-state-reader (unanchored-old-state on sensory:2 @9); protocol: loc-state:1 tactile REVISE, sensory:2 old-state REVISE, sensory carve-out header REVISE, cite-index verify
+target: active-project/theater/facets/location-state-b01-c01.md, active-project/theater/facets/sensory-b01-c01.md, active-project/theater/facets/_cite-index.md
+audit-report: active-project/staff/audience/sensory-old-state-reader/sensory-r2-verdict.md
+findings-queued: 1
+
+## sensory-cycle3-hard — RESOLVED (VERIFIED) — 2026-05-25T17:05:00Z
+fault: sensory:2 @9 old-state "lane-ambient" unanchored on tactile modality — loc-state:1 had no tactile field; unenumerated carve-out path invoked; carve-out factual premise stale
+scope: line
+change: all four protocol operations verified complete (prior session 16:00-16:10Z applied edits); op-1 loc-state:1 @1 tactile field present; op-2 sensory:2 old-state is "cobblestone-underfoot-pre-compression" (resolves to loc-state:1); op-3 carve-out header corrected (no stale zero-entry claim; loc-state:1 cross-facet anchor cited); op-4 cite-index back-links current (sensory:2 @9 back=Y, lone; no co-citation to loc-state:1 needed)
+criteria met: yes — sensory:2 old-state resolves against loc-state:1's anchored tactile baseline via enumerated rubric path
+
+## SESSION-END — 2026-05-25T17:05:00Z — and-facets-cycle3-fixes-sensory
+findings-applied: 1 (verified; edits confirmed in place from prior session)
+findings-skipped: 0
+exit: CLEAN
