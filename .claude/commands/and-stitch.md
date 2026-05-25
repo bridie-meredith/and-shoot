@@ -639,20 +639,53 @@ The orchestrator reads `chapters[<slug>].goal` and the per-scene `scene_conflict
 
 Run the `/and-review staging <chapter>` reviewer routine (auditor + dramatist, graph-aware) — the one pass whose verbs ADD rather than cut: `EXPAND` / `GROUND` / `STAGE` / `NEEDS-BEAT`. Its findings are SIGNAL-class and do not block on their own, but they are recorded and surfaced. Persist to `staff/reviews/staging-<chapter>-<timestamp>.md`. (The pipeline's other editorial motions are all subtractive; this is the additive counterweight — see `/and-review staging`.)
 
+### Step 3.5 — Prose-rationale-mute audit (URI-STITCH-PROSE-RATIONALE-MUTE; 2026-05-25; soft-block at threshold)
+
+**The prose-layer counterpart to Phase 6's rationale-layer `opposing_force_visible` check.** Phase 6 audits *whether the bone's rationale names an opposing force, a body, a register-enactment*; this audit asks *whether the rendered prose actually stages it*. The b01c01 post-ship process audit found that 12 of 30 enumerated depth-of-quality issues classify as `WRONG-LAYER` — Phase 6 passed at rationale, Phase 9 staging review caught the prose-layer gap as advisory, the chapter shipped with the gap. This step inserts a mechanical pre-ship audit at the prose layer to close that gap.
+
+Dispatch ONE `auditor` fork with the following inputs (READ-ONLY):
+- `active-project/draft/<book>-<chapter>.md` — the rendered prose
+- `active-project/draft/<book>-<chapter>.annotated.md` — sentence-ID trace
+- `active-project/staff/showrunner/memory.md` — `chapters[<slug>].scenes[].bones[]` including each bone's `substance_delta.axes_held[].rationale` and any rationale-named opposing-force / body-staging / register-enactment elements
+- `active-project/staff/stitcher/render-log-<book>-<chapter>.md` — bone-to-prose mapping per Phase 1 bone-walk
+
+**Auditor task — per bone with a non-empty rationale:**
+For each bone whose `axes_held[].rationale` (or scene-level `scene_conflict.opposing_force` mapped to this bone via `held` enactment) names a concrete physical element — an opposing force, a body posture, a register-enactment — locate the bone's rendered prose span (via render-log + annotated draft). Apply a mechanical lexical-scan:
+- Does the prose span contain ≥1 concrete-physical token (a body part, a physical object, a surface, a sensory particular) that corresponds to the rationale-named element?
+- "I exhaled" carries three held axes via discipline-rationale → does the prose stage a body / a held breath / a held discipline beyond the bare verb?
+- A rationale of "rule holds capability through Wren-cost-bearer-in-frame" → does the prose physically place Wren in Taylor's perceptual frame?
+
+A bone whose rationale names a concrete element AND whose prose span fails to stage it with ≥1 concrete-physical token is `PROSE-RATIONALE-MUTE-<bone-id>` (SIGNAL). The auditor lists each finding with `bone_id`, `rationale_element`, `rationale_text`, `prose_span`.
+
+**Threshold (soft-block):** if `count(PROSE-RATIONALE-MUTE-*) >= 3` chapter-wide, the verdict at Step 4 is `PASS-WITH-DEPTH-PASS-REQUIRED` (mandatory depth-pass before project-stable; see Step 4 tightening). Below threshold, findings record as SIGNAL on the cold_read block but do not soft-block.
+
+Persist findings to `chapters[<slug>].cold_read.prose_rationale_audit` per schema. Auditor returns the count + the finding list. Spend: one auditor fork, one mechanical lexical pass — comparable to a Phase 7 sweep.
+
+This audit complements Phase 6's `OPPOSING-FORCE-MISSING` (rationale-layer HARD) without replacing it — neither check covers the other's failure mode. Phase 6 catches missing rationale; Phase 9 Step 3.5 catches present rationale + absent prose.
+
 ### Step 4 — Verdict + memory
 
-Write `chapters[<slug>].cold_read = {read_at, verdict, recovered_summary: <answer 6>, report_path, staging_signals: <N>, signal_clusters: <[...]>, stale_since: null}`.
+Write `chapters[<slug>].cold_read = {read_at, verdict, recovered_summary: <answer 6>, report_path, staging_signals: <N>, staging_report_path, signal_clusters: <[...]>, prose_rationale_audit: <{...}>, stale_since: null}`.
 
-**Cluster check (URI-STITCH-SIGNAL-CLUSTER — soft-gate; 2026-05-24).** Before printing the verdict, scan the staging report's findings and bin them by pattern label. A *cluster* is `N >= 5 SIGNAL findings sharing the same pattern label` (e.g. `body-staging-gap`, `opposing-force-prose-mute`, `held-bone-rationale-only`). The post-ship audit on b01c01 confirmed that pattern-clustered SIGNALs are not noise — they predict the prose-surface-of-substance gap that seven independent forks re-discovered post-ship. The fix is to act on the cluster pre-ship, not to ship and re-audit. Record `signal_clusters[]` in the cold_read block: each entry `{pattern: <label>, count: <N>, bone_ids: [<ids>]}`.
+**Cluster check (URI-STITCH-SIGNAL-CLUSTER — soft-gate; 2026-05-24; threshold tightened 2026-05-25).** Before printing the verdict, scan the staging report's findings and bin them by pattern label AND by zone (peak vs non-peak via `chapters[<slug>].cold_read.zone_density_observation` or per-bone peak-flag from staging review) AND by bone-class (axis-move vs held-vs chatter from `bones[].substance_delta`). A *cluster* fires when ANY of:
 
-- **PASS** — the chapter is terminal, no cluster present. Print the cold reader's one-line summary, the staging-signal count, and `next:`. If `staging_signals > 0` but no cluster, recommend `/and-write <chapter> revise` + re-cascade as an optional depth pass (non-blocking).
-- **PASS-WITH-DEPTH-PASS-REQUIRED** — Phase 9 cold-read returned PASS but the cluster check fired. The chapter ships at the terminal gate but a depth pass is *required* before the chapter is considered project-stable. Print the cold reader's one-line summary, the cluster summary (`<N> SIGNAL findings clustered on <pattern>: bones <ids>`), and route:
+- **same-pattern ≥5** — `N >= 5 SIGNAL findings sharing the same pattern label` (e.g. `body-staging-gap`, `opposing-force-prose-mute`, `held-bone-rationale-only`). (Original 2026-05-24 trigger; retained.)
+- **adjacent-in-peak-zone ≥3** — `N >= 3 SIGNAL findings sharing the same pattern label AND ≥3 of those findings are on bones inside a peak zone (3+ consecutive flat-ids inside the scene-conflict peak)`. The b01c01 cluster — 4 peak-under-staged findings at @11/@12/@13/@21 with 3 adjacent in scene-B's peak — sat below the same-pattern≥5 threshold and shipped advisory. This trigger catches that exact failure mode.
+- **on-axis-move-bones ≥3** — `N >= 3 SIGNAL findings sharing the same pattern label AND all findings are on bones whose substance_delta.axis_moves is non-empty`. A pattern concentrated on axis-move bones is the difference between a stylistic note (cluster across held + chatter) and a substance-delivery failure (cluster on the bones that carry the chapter's declared deltas). Tighter threshold than same-pattern≥5 because the axis-move concentration is itself the signal.
+
+Record `signal_clusters[]` in the cold_read block: each entry `{pattern: <label>, count: <N>, bone_ids: [<ids>], trigger: same-pattern>=5 | adjacent-in-peak-zone>=3 | on-axis-move-bones>=3}`.
+
+The post-ship process audit on b01c01 (2026-05-25) confirmed the same-pattern≥5 threshold let the c01 cluster through (4 findings, threshold 5). The tightened triggers above use the `zone_density_observation` data the chapter already records, plus the per-bone `axis_moves` already in memory — no new dispatches.
+
+- **PASS** — the chapter is terminal, no cluster present AND `prose_rationale_audit.verdict != SOFT-BLOCK`. Print the cold reader's one-line summary, the staging-signal count, and `next:`. If `staging_signals > 0` but no cluster, recommend `/and-write <chapter> revise` + re-cascade as an optional depth pass (non-blocking). **Depth-pass resolution stamp:** if `chapters[<slug>].depth_pass_pending == true` (set by `/and-write` Phase 7 in revise --from-signals after a prior PASS-WITH-DEPTH-PASS-REQUIRED), stamp `chapters[<slug>].depth_pass_resolved_at = <iso-timestamp>` and clear the pending flag. This confirms the depth pass delivered; downstream consumers (`/and-substance book` Phase 0, `/and-review verdict <book>`) treat the chapter as resolved.
+- **PASS-WITH-DEPTH-PASS-REQUIRED (MANDATORY; 2026-05-25 promotion)** — Phase 9 cold-read returned PASS but the cluster check fired OR `prose_rationale_audit.verdict == SOFT-BLOCK` (≥3 PROSE-RATIONALE-MUTE findings). The chapter ships at the terminal gate, **but the depth pass is now mandatory before the chapter is considered project-stable** — pre-2026-05-25 framing allowed indefinite deferral, which produced the b01c01 ship-with-known-gap pattern. The depth pass MUST run before any of: `/and-postop <chapter> milestone`, `/and-review verdict <book>` against the parent book, or `/and-substance book <next-book>` (the latter HARD-aborts if any chapter in the prior book has `cold_read.verdict == PASS-WITH-DEPTH-PASS-REQUIRED` with no `chapters[<slug>].depth_pass_resolved_at` stamp). Print the cold reader's one-line summary, the cluster / prose-mute summary, and route:
   ```
-  /and-stitch Phase 9 PASS-WITH-DEPTH-PASS-REQUIRED — <chapter> ships but a depth pass is required.
-  Cluster: <N> SIGNAL findings on <pattern> across bones <ids>.
+  /and-stitch Phase 9 PASS-WITH-DEPTH-PASS-REQUIRED (MANDATORY) — <chapter> ships but depth pass required before book-close.
+  Cluster: <N> SIGNAL findings on <pattern> across bones <ids> (trigger: <trigger>).
+  Prose-rationale-mute: <K> findings on bones <ids>.
   next: /and-write <chapter> revise --from-signals   (then re-cascade /and-facets + /and-stitch)
   ```
-  In a `--cascade` run, this does NOT halt the cascade (the chapter is terminal at the gate) but the depth pass appears in the cascade's exit checkpoint as `pending_depth_passes: [<chapter>, ...]` so downstream chapters in the same cascade can choose to wait or proceed at the user's direction.
+  In a `--cascade` run, this does NOT halt the cascade (the chapter is terminal at the gate) but the depth pass appears in the cascade's exit checkpoint as `pending_depth_passes: [<chapter>, ...]`. The book-level orchestrator-critic verdict gate will refuse to PASS the book until every `pending_depth_passes[]` entry is resolved.
 - **FAIL** — the chapter is NOT terminal. It is a structural failure, not a polish problem — re-decompose from the bones up. Print the cold reader's answers, the diff finding (which intent element the reader could not recover), and route:
   ```
   /and-stitch Phase 9 COLD-READ FAIL — <chapter> is not terminal.
