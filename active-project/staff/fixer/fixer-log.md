@@ -421,3 +421,39 @@ criteria met: yes — "instinct-preceding-the-ledger-entry" does not parse as su
 findings-applied: 5 (fault-001 resolved; fault-002 resolved; fault-003 resolved; fault-004 downgraded per rubric exception; fault-005 resolved)
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-25T09:00:00Z — and-facets-cycle1-fixes-feeling
+dispatch: Phase 5b cycle-1 remediation — feeling facet, 1 dissent from dark-fantasy-reader on feel:3 @24 (Q1 fail / NI redundancy); apply minimum revise or delete + URI-FACETS-CYCLE-N-ADD pre-validation
+target: active-project/theater/facets/feeling-taylor-hebert-kl-122ac.md (primary), active-project/theater/facets/feeling.md (consolidated)
+audit-report: active-project/staff/audience/dark-fantasy-reader/feeling-r1-verdict.md
+findings-queued: 1 (feel:3 REVISE) + ADD pre-validation check
+
+## SESSION-START — 2026-05-25T06:00:00Z — facets-cycle1-remediation-location-state
+dispatch: Phase 5b cycle-1 remediation for location-state facet — address dark-fantasy-reader's two entry-level callouts (SEAM-LOC-CARDS-ABSENT @1–@6; SEAM-TRANSITION-RUN-BARE @1–@6) with minimum change
+target: active-project/theater/facets/location-state-b01-c01.md
+audit-report: active-project/staff/audience/dark-fantasy-reader/location-state-r1-verdict.md
+findings-queued: 2 (two callouts from dark-fantasy-reader; cape-fic-reader and worm-canon-pedant ACCEPTED)
+
+## SESSION-START — 2026-05-25T06:30:00Z — facets-cycle1-dialogue-taylor
+dispatch: /and-facets Phase 5b cycle-1 remediation — dialogue facet, character taylor-hebert-kl-122ac; 1 HARD finding from worm-canon-pedant (entry 2 facet-license feel:1 @10 is wrong per locked cite-index)
+target: active-project/theater/dialogue/taylor-hebert-kl-122ac.md
+audit-report: active-project/staff/audience/worm-canon-pedant/dialogue-taylor-hebert-kl-122ac-r1-verdict.md
+findings-queued: 1
+
+## SESSION-START — 2026-05-25T07:00:00Z — facets-cycle1-state-updates-remediation
+dispatch: Phase 5b cycle-1 remediation for state-updates facet — all 3 reviewers dissented; cross-reviewer dedupe + minimum-change fixes to per-character slice files and consolidated state-updates.md
+target: active-project/theater/facets/state-updates-taylor-hebert-kl-122ac.md + state-updates-wren-stitch-maker-flea-bottom-ward.md + state-updates.md
+audit-report: active-project/staff/audience/{cape-fic-reader,dark-fantasy-reader,worm-canon-pedant}/state-updates-r1-verdict.md
+findings-queued: tbd (deduping across 3 verdicts)
+
+## SESSION-START — 2026-05-25T08:00:00Z — facets-cycle1-remediation-sensory
+dispatch: Phase 5b cycle-1 remediation for sensory facet — 2 dissenting reviewers (sensory-disambiguation-pedant REVISE; sensory-modality-coverage REVISE); dedupe by [sensory:id], apply minimum change per rubric, pre-validate any ADDs per anti-pattern #14; loc-state cross-facet anchor edits must precede any sensory ADD
+target: active-project/theater/facets/sensory-b01-c01.md
+audit-report: active-project/staff/audience/sensory-disambiguation-pedant/sensory-r1-verdict.md + active-project/staff/audience/sensory-modality-coverage/sensory-r1-verdict.md
+findings-queued: tbd (reading verdicts now)
+
+## SESSION-START — 2026-05-25T09:00:00Z — facets-cycle1-fixes-memory
+dispatch: Phase 5b cycle-1 remediation for memory facet — all 3 reviewers dissented; dedupe callouts by [memory:id] and resolve with minimum change; ADD pre-validation per URI-FACETS-CYCLE-N-ADD
+target: active-project/theater/facets/memory-b01-c01.md
+audit-report: active-project/staff/auditor/facets-final-audit-r2.md (flags carried by reference); verdicts: cape-fic-reader + dark-fantasy-reader + worm-canon-pedant memory-r1-verdict.md
+findings-queued: 2 entries (mem:1, mem:2) deduped from 3 verdict files

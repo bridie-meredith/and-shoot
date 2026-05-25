@@ -82,7 +82,7 @@ R1 BLIND. Authoring inputs: behavior card stack + speaker persona/ltm/stm/state 
   - No exclamation point on the imperative — taylor-hebert §Cadence "Periods over exclamation points. ... When she shouts, the prose says 'she shouted'; the line itself does not punctuate the shout." PASS.
 
 **card-signatures:** taylor-hebert §Cadence (short-when-pressure, periods-over-exclamation); taylor-hebert-kl-122ac §Voice ("voice that does not ask whether they will comply"); taylor-hebert §Direct-samples (calibration anchor "Status." — two-word imperative shape)
-**facet-licenses:** sensory:2 @16 (sound: crowd-ambient-murmur -> taylor-raised-voice — the imperative's perceptual surface; co-cited at the anchor); feel:1 @10 (Taylor's breath empties out — the breath-out-before-the-swarm-goes tell from the base persona-card Look section; the speech rides the same breath the deployment rode six bones earlier, and this imperative is the load-bearing utterance that breath was priming — speaker's own first-class somatic slice per rubric § contamination disciplines)
+**facet-licenses:** sensory:2 @16 (sound: crowd-ambient-murmur -> taylor-raised-voice — the imperative's perceptual surface; co-cited at the anchor)
 
 ---
 
@@ -135,4 +135,4 @@ R1 BLIND. Authoring inputs: behavior card stack + speaker persona/ltm/stm/state 
 ## Entries shipped to dialogue file: 3
 ## Anchor: @16 (single)
 ## Per-anchor count: 3 (cap = 3; at cap)
-## Citation completeness: card-signatures resolved per entry; facet-licenses RESOLVED at R2 (2026-05-25) against locked cite-index hash 0241e0529031804fa83d25c0fb7a5e0db2491571d2d83d9d9436c734627eca40 — entry 1 cites sensory:2 @16 + state:3 @12; entry 2 cites sensory:2 @16 + feel:1 @10; entry 3 cites sensory:2 @16 + state:5 @17. All citations resolve to entries on disk; rubric § V2 facet-citation extension satisfied per entry.
+## Citation completeness: card-signatures resolved per entry; facet-licenses RESOLVED at R2 (2026-05-25) against locked cite-index hash 0241e0529031804fa83d25c0fb7a5e0db2491571d2d83d9d9436c734627eca40 — entry 1 cites sensory:2 @16 + state:3 @12; entry 2 cites sensory:2 @16 (feel:1 @10 citation deleted at cycle-1 remediation — feel:1 fires at @21, not @10; feel:2 fires at @10 but describes foot-plant, not breath-tell; citation could not be salvaged by remapping); entry 3 cites sensory:2 @16 + state:5 @17. All citations resolve to entries on disk; rubric § V2 facet-citation extension satisfied per entry.
