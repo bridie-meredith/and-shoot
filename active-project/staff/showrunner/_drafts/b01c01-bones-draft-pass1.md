@@ -212,7 +212,7 @@ scenes:
           cost_ledger_anchor: null
 
       - slug: b01c01s02n08
-        svo: "the gap propagates outward"
+        svo: "the gap propagates"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -239,7 +239,7 @@ scenes:
           cost_ledger_anchor: null
 
       - slug: b01c01s02n11
-        svo: "taylor gives the instruction"
+        svo: "taylor raises the voice"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -335,7 +335,7 @@ scenes:
           cost_ledger_anchor: null
 
       - slug: b01c01s03n02
-        svo: "the man with the fish-cart watches taylor"
+        svo: "the fish-cart man faces taylor"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -344,7 +344,7 @@ scenes:
           cost_ledger_anchor: null
 
       - slug: b01c01s03n03
-        svo: "the two women from the upper alley stay"
+        svo: "the two women face the lane"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -353,7 +353,7 @@ scenes:
           cost_ledger_anchor: null
 
       - slug: b01c01s03n04
-        svo: "oswyn-mudway-flea-bottom-elder stands at the lane-mouth"
+        svo: "oswyn-mudway-flea-bottom-elder takes the lane-mouth"
         substance_delta:
           axis_moves:
             - axis: social_tether-prot-rise
@@ -363,7 +363,7 @@ scenes:
           cost_ledger_anchor: cl01b
 
       - slug: b01c01s03n05
-        svo: "the child departs"
+        svo: "the child clears the lane"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -392,7 +392,7 @@ scenes:
           cost_ledger_anchor: null
 
       - slug: b01c01s03n08
-        svo: "the tallow smoke settles at the lane-level"
+        svo: "the tallow smoke layers the lane-floor"
         substance_delta:
           axis_moves: []
           axes_held:
