@@ -24,7 +24,7 @@ aggregate_range: 1-27
 13 the nearest dozen bodies yield
 14 the gap propagates
 15 taylor-hebert-kl-122ac faces the child
-16 taylor-hebert-kl-122ac raises the voice [taylor-hebert-kl-122ac:1, taylor-hebert-kl-122ac:2, taylor-hebert-kl-122ac:3]
+16 taylor-hebert-kl-122ac raises the voice [taylor-hebert-kl-122ac:1] [taylor-hebert-kl-122ac:2] [taylor-hebert-kl-122ac:3]
 17 taylor-hebert-kl-122ac lifts the hands
 
 18 the crowd thins
