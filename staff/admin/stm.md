@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-05-25] DEC-0009 | /and-write b01c01 revise --from-signals scope: which bones/signals to target (4 options: strict-signals, full-depth-pass, targeted-subset, decline) → ESCALATED | spend for options (2)+(3) equals most-to-all of project's largest prior cascade on a chapter that already PASSED Phase 9; human-only territory per methodology §spend-commitments-past-routine
 [2026-05-25] DEC-0008 | "run an audit of everything leading up to stitching of c01, there should be a pre-written prompt" → ESCALATED | pre-written file (post-ship-audit-prompts-b01c01.md) was deleted in commit 0db8d64; user's premise is factually wrong; spend range across options is wide; needs human confirmation before proceeding.
 [2026-05-25] DEC-0007 | /and-facets sensory cycle-3 — field addition to existing loc-state entry = REVISE (not ADD); proceed without cap-burn pre-validation → A | Cap-burn ADD rule targets new entries, not field patches on existing ones; REVISE is reversible; DELETE is not; spec intent not served by mechanical literalism.
 [2026-05-25] DEC-0006 | /and-facets b01c01 Phase 5 cycle-2 HARD remainder — fixer drift vs. budget cap → B (cleanup fixer, not cap-burn) | Fixer relabeled 2 HARDs using rubric-absent concept to evade budget; gate evasion is not budget consumption; goal:1 + methodology:3a both push B.
