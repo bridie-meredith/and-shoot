@@ -256,3 +256,48 @@ dispatch: Phase 5 continuity audit fixes — 1 FAULT-STATE (add b01c01s03n10) + 
 target: active-project/staff/showrunner/_drafts/b01c01-bones-draft-pass1.md
 audit-report: active-project/staff/auditor/write-b01c01-pass5.md
 findings-queued: 3 (1 FAULT-STATE + 2 documentation flags; flag-002 deferred on dispatch)
+
+## /and-write b01c01 Phase 5 — 2026-05-25
+
+- bone_added: b01c01s03n10
+  svo: "wren-stitch-maker-flea-bottom-ward faces taylor"
+  position: appended after s03n09
+  axes_held: [relational_anchor_status]
+  fault_addressed: FAULT-STATE (handoff_out 'Wren has seen Taylor's face' had no bone delivering the perceptual event)
+  rationale: "chapter-goal-clause-2 plant ('plant Wren's presence before it becomes legible as a cost') delivered at chapter-close; un-priced anchor's perceptual presence to reader, structural dormancy in Taylor's calculus"
+
+- event_map_updates_s03:
+  - added: "load-bearing image: Wren orients toward Taylor across the dispersing crowd (chapter-close cost-bearer plant)" covered_by [b01c01s03n10]
+  - amended: "stitch-house smell still present ..." covered_by add b01c01s03n10
+
+- decomposer_notes_corrections:
+  - s01: 7 → 6 (s01n05 dropped at Pass 2 round 1)
+  - s03: 9 → 10 (s03n10 added at Phase 5)
+  - chapter total: 27 (unchanged but redistribution noted)
+
+- flag-002 deferred (cast-selection.md staleness): outside /and-write scope; surface to /and-cast or margit catalog rebuild
+
+Closing summary: 1 bone added; 2 event_map entries updated; 1 decomposer_notes block corrected; 1 flag deferred.
+
+## FAULT-STATE (b01c01s03n10 add) — RESOLVED — 2026-05-25T03:05:00Z
+fault: handoff_out character_state "Wren has seen Taylor's face" had no bone delivering the perceptual event; bones established Wren's presence only through environmental rationale notes and sensory-plant bones where Wren was not a subject
+scope: line
+change: bone b01c01s03n10 appended as final bone of s03; svo "wren-stitch-maker-flea-bottom-ward faces taylor"; axes_held relational_anchor_status; s03 event_map updated with new cost-bearer-plant entry and amended stitch-house-smell entry to add n10 to covered_by; s03 header updated to Bone count: 10 with n10 note; decomposer_notes updated to reflect 6+11+10=27 with per-scene rationale
+criteria met: yes — bone makes Wren a subject performing a posture-act toward Taylor; slug identifies her to the reader; Taylor reads orientation-without-recognition (structural dormancy preserved); handoff_out claim grounded
+
+## flag-001 (decomposer_notes total correction) — RESOLVED — 2026-05-25T03:05:00Z
+fault: decomposer_notes chapter-level total claimed 7+11+9=27 bones but s01n05 was dropped (s01=6) and s03n10 was added (s03=10); totals were internally inconsistent
+scope: line
+change: decomposer_notes updated to read 6 (s01) + 11 (s02) + 10 (s03) = 27; per-scene corrections annotated with phase-of-change; held-axis coverage for s03 updated to include n10 as third relational_anchor_status covering bone; density math re-affirmed
+criteria met: yes
+
+## flag-002 (cast-selection.md staleness) — ESCALATED — 2026-05-25T03:05:00Z
+fault: cast-selection.md carries ward-elder slot as '[original] ward-elder, name TBD' (pre-Phase 4); bones file and memory.md use committed slug oswyn-mudway-flea-bottom-elder
+scope: escalate
+change: none — deferred as outside /and-write scope; cast-selection.md is /and-cast territory (or margit catalog rebuild); no edit made
+criteria met: n/a — deferred to /and-cast next invocation or margit catalog rebuild
+
+## SESSION-END — 2026-05-25T03:05:00Z — write-b01c01-pass5
+findings-applied: 2 (FAULT-STATE resolved; flag-001 resolved)
+findings-skipped: 1 (flag-002 deferred — outside /and-write scope; cast-selection.md is /and-cast / margit territory)
+exit: CLEAN
