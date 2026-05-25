@@ -490,6 +490,59 @@ target: active-project/theater/facets/vibes-b01-c01.md
 audit-report: active-project/staff/audience/cape-fic-reader/vibes-r1-verdict.md + dark-fantasy-reader/vibes-r1-verdict.md + worm-canon-pedant/vibes-r1-verdict.md
 findings-queued: 6 (vibes:1, vibes:2, vibes:5, vibes:8, vibes:9, vibes:10) + volume-ADD 2 entries pre-validation
 
+## vibes:1 — RESOLVED — 2026-05-25T11:05:00Z
+fault: tokens diagnostic not felt-residue; dark-fantasy-reader gate 6: no operator-actionable compression of 3 weeks suppression-work labor
+scope: line
+change: added token "argument-made-so-often-it-precedes-the-needing" to bundle; AP8 pass; biases dialogue-writer register toward self-justification preceding conscious-decision
+criteria met: yes
+
+## vibes:2 — RESOLVED — 2026-05-25T11:06:00Z
+fault: "range-ceiling-felt-as-sharpening-not-as-pain" names phenomenology only; dark-fantasy-reader gate 6 fail (no operator-behavior encoding)
+scope: line
+change: replaced "range-ceiling-felt-as-sharpening-not-as-pain" with "range-edge-as-focus-not-pain"; AP8 pass; biases NI toward attention-at-ceiling and studio away from pain-register
+criteria met: yes
+
+## vibes:5 — RESOLVED — 2026-05-25T11:07:00Z
+fault: "ward-elder-building-the-category-in-real-time" is time-indexed process-description, not a durable mark; dark-fantasy-reader: time-pressure evaporates
+scope: line
+change: replaced "ward-elder-building-the-category-in-real-time" with "the-witness-who-keeps-the-incomplete-account"; AP8 pass; permanent mark biasing Oswyn NPC dialogue-writer toward incomplete-ledger-keeper register
+criteria met: yes
+
+## vibes:8 — RESOLVED — 2026-05-25T11:08:00Z
+fault: tokens 1+3 semantic overlap with vibes:4 / vibes:6 (crowd-consent and ward-record vocabulary restatement); location should carry location-specific content
+scope: line
+change: replaced token 1 "crowd-moved-here-without-consent" with "place-pressed-into-service-without-asking"; replaced token 3 "foreign-woman-in-the-ward-record" with "ward-space-holding-the-event-in-its-texture"; middle token retained; both replacements AP8 pass
+criteria met: yes
+
+## vibes:9 — RESOLVED — 2026-05-25T11:09:00Z
+fault: "reader-knowing-before-taylor-does" is meta-narrative; worm-canon-pedant: no downstream operator can act on reader-epistemics; category error in word-algebra
+scope: line
+change: deleted "reader-knowing-before-taylor-does"; remaining two tokens unchanged
+criteria met: yes
+
+## vibes:10 — RESOLVED — 2026-05-25T11:10:00Z
+fault: ++ on tragic-causal cites only in-episode protos; V1.1 Patch 1 requires world-build source confirming pre-seeded status; worm-canon-pedant
+scope: line
+change: added "world-build:taylor-kl122ac-vibes-preseed" to licensed-by; verified tragic-causal pre-seeded in actors/taylor-hebert-kl-122ac/vibes.md; ++ op confirmed correct
+criteria met: yes
+
+## vibes:11 ADD — ADD-LANDED — 2026-05-25T11:11:00Z
+fault: volume floor shortfall (10 < 12); cape-fic-reader; capability dimension first-expenditure event unrepresented
+scope: line
+change: added vibes:11 actor:taylor-hebert-kl-122ac + capability-first-expenditure [first-deployment-as-opening-of-the-account, range-as-resource-not-refilling, cost-unpriced-by-the-ledger-at-this-point]; pre-validation PASS; count 11
+criteria met: yes
+
+## vibes:12 ADD — ADD-LANDED — 2026-05-25T11:12:00Z
+fault: volume floor shortfall (11 < 12); cape-fic-reader; loc:loc-flea-bottom witch-label-formation absent as permanent location charge
+scope: line
+change: added vibes:12 loc:loc-flea-bottom + the-witch-label-assembled-here [ward-as-the-naming-space, place-of-first-foreign-knowing, the-location-carrying-stage-1-permanently]; pre-validation PASS; count 12; volume floor met
+criteria met: yes
+
+## SESSION-END — 2026-05-25T11:12:00Z — and-facets-cycle1-fixes-vibes
+findings-applied: 8 (vibes:1 token-add, vibes:2 token-replace, vibes:5 token-replace, vibes:8 two-token-replace, vibes:9 token-cut, vibes:10 license-add, vibes:11 ADD-LANDED, vibes:12 ADD-LANDED)
+findings-skipped: 0
+exit: CLEAN
+
 ## SESSION-START — 2026-05-25T12:00:00Z — and-facets-cycle1-fixes-location-state
 dispatch: Phase 5b cycle-1 remediation — location-state facet; 1 dissent from dark-fantasy-reader; two callouts: SEAM-LOC-CARDS-ABSENT @1–@6 + SEAM-TRANSITION-RUN-BARE @1–@6; apply minimum ADD after URI-FACETS-CYCLE-N-ADD pre-validation
 target: active-project/theater/facets/location-state-b01-c01.md
@@ -519,5 +572,22 @@ criteria met: yes
 
 ## SESSION-END — 2026-05-25T10:15:00Z — and-facets-cycle1-fixes-feeling
 findings-applied: 1 (feel:3 deleted) + ADD pre-validation clean
+findings-skipped: 0
+exit: CLEAN
+
+## sensory:1 — RESOLVED (no-change) — 2026-05-25T08:20:00Z
+fault: sensory-old-state-reader advisory only (negative-inference old-state for lane-ambient); no HARD; disambiguation-pedant confirmed CLEAN; modality-coverage no per-entry callout
+scope: n/a (no change required)
+change: none — entry defended in place under existing carve-out; advisory noted but non-blocking under current rubric
+criteria met: yes
+
+## sensory:2 (anchor move @16→@9; modality sound→tactile) — RESOLVED — 2026-05-25T08:25:00Z
+fault: (1) disambiguation-pedant HARD: sensory:2 @16 "raises the voice" is action-verb self-charge — English idiom "raise one's voice" means louder; sound inflection IS the phrase; Q1 fails; (2) modality-coverage: tactile silent-gap at bones 8-14 (crowd-compression run with zero tactile fires); together these require replacing sensory:2 with a tactile fire on a genuinely bare-verb bone
+scope: line (sensory facet file + proto-lines + cite-index)
+change: (1) sensory:2 DELETED from @16 (sound: crowd-ambient-murmur -> taylor-raised-voice); (2) new sensory:2 ADDED at @9 (tactile: lane-ambient -> crowd-compression # tag: up); (3) sensory facet carve-out header updated: new per-entry annotation for sensory:2 @9 with full anti-pattern #14 pre-validation; (4) proto-lines: [sensory:2] removed from @16, added to @9; (5) cite-index: sensory:2 line updated @16→@9 co-list removed; sensory:2 added to lonely entries at @9; @9 removed from bare protolines list; totals: 16/27 decorated; density distribution updated (bare 12→11, 1-cite 9→10, 3-cite 1→2)
+criteria met: yes — action-verb self-charge HARD cleared; tactile silent-gap addressed; modality floor met (smell + tactile = 2); anti-pattern #14 pre-validation passed; no loc-state edit required (existing carve-out covers new tactile entry's old-state from scene-internal bones 1-8)
+
+## SESSION-END — 2026-05-25T08:25:00Z — facets-cycle1-remediation-sensory
+findings-applied: 2 (sensory:1 defended no-change; sensory:2 replaced — sound@16→tactile@9)
 findings-skipped: 0
 exit: CLEAN
