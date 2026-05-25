@@ -10,6 +10,8 @@ Schema authority: this file. Renamed 2026-05-17 from `proto-line.schema.md` unde
 
 **Per-chapter (current):** `active-project/theater/bones/<book>-<chapter>.md` (e.g. `theater/bones/b01-c01.md`). Authored by `/and-write` Phase 7 from `chapters[<chapter>].scenes[].bones[]` in showrunner memory. Source of truth is memory; the bones file is a flattened serialization for downstream `/and-facets` and `/and-stitch` consumption.
 
+**Atomic emit set (URI-WRITE-DIALOGUE-COBONDED, 2026-05-25).** The bones file + the scene-map facet + per-character dialogue files at `theater/dialogue/<character-slug>.md` are co-emitted by `/and-write` Phase 7 as an atomic set. Dialogue is no longer authored downstream by `/and-facets`. The bones file ships with dialogue-citation tokens already attached on dialogue-anchor bones (see § Citations).
+
 Legacy paths (`theater/proto-lines/<slug>.md`, `theater/proto-lines/<season-slug>.aggregate.md`, top-level `theater/proto-lines.md`) are no longer authored. Pre-substance projects on disk remain readable but the new chain does not write to those paths.
 
 ---
@@ -129,7 +131,16 @@ If a candidate sentence cannot be reduced to clean SVO without loss, the underly
   - `vibes` — vibes-update facet entry.
 - Citations are unordered. The stitcher reads the bone's citations as a bag of available material to consult when rendering the beat.
 
-A bone with no citations is valid; it means the beat is bone-only and the stitcher renders it as the SVO sentence verbatim.
+A bone with no citations is valid; it means the beat is bone-only and the stitcher renders it as the SVO sentence verbatim — **with one exception:** dialogue-anchor bones (see below) MUST carry `<character-slug>:<id>` citations at bones-write time. A dialogue-anchor bone with no dialogue citation is HARD `FAULT-DIALOGUE-MISSING-AT-ANCHOR` at `/and-write` Phase 6.
+
+### Dialogue-anchor bones (URI-WRITE-DIALOGUE-COBONDED, 2026-05-25)
+
+A **dialogue-anchor bone** is a bone that carries spoken content. Two forms:
+
+1. **Canonical speech form** — `<speaker-slug> speaks to <listener-slug>`. Required substance_delta: ≥1 communication-class axis (community / knowledge / reputation / trust).
+2. **Licensed action form** — a bone whose SVO is a concrete physical action AND whose `substance_delta.axis_moves[]` declares a communication-class axis movement AND whose scene chunk text licenses a speech-act at that bone (parking-lot disposition pl-2026-05-25-004 routing (a) is the canonical example: `taylor raises the voice` anchoring three utterances in c01 b01).
+
+Dialogue-anchor bones carry `[<character-slug>:<id>, ...]` citation tokens at bones-write time (emitted by `/and-write` Phase 7 Step 3a, NOT accrued at facet-author time). These citations resolve into the per-character dialogue files at `theater/dialogue/<character-slug>.md` per `schemas/dialogue.schema.md`.
 
 ---
 

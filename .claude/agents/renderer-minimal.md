@@ -42,9 +42,11 @@ If any input is missing, write a single error line to `output_path` (`# ERROR: m
 
 ## Render procedure
 
-### 1. Read bones first
+### 1. Read bones + dialogue first (one atomic spine)
 
-Read the entire bones file. Note: scene count, bone count per scene, the event ledger, the substance-delta annotations (these will not appear in prose but they're the spine).
+Read the entire bones file. Note: scene count, bone count per scene, the event ledger, the substance-delta annotations (these will not appear in prose but they're the spine), and the dialogue-citation tokens on dialogue-anchor bones.
+
+Then read **every** per-character dialogue file at `theater/dialogue/<character-slug>.md` referenced by a citation token on the bones. Under URI-WRITE-DIALOGUE-COBONDED (2026-05-25) **dialogue is part of the bones spine, not a separable facet** — every ablation variant, including the `bones-only` variant, MUST render dialogue verbatim at its anchor bone. Holding back dialogue would mutilate the chapter, not ablate a facet.
 
 ### 2. Read facets in dependency order (whichever are present)
 
@@ -60,7 +62,7 @@ If the file is in `facet_paths`, read it. Skip silently if absent. Dependency or
 8. `metaphor-<book>-<chapter>.md` — figurative language per beat
 9. `exposition-<book>-<chapter>.md` — gloss content for first-mentions
 10. `interest-narrator-<book>-<chapter>.md` — narrative interest/voice at each beat
-11. Per-character dialogue files in `theater/dialogue/<character>.md` — verbatim utterances (chapter scope is implicit per active-project)
+11. ~~Per-character dialogue files~~ — dialogue is read in step 1 alongside bones (URI-WRITE-DIALOGUE-COBONDED). Not a separable facet; not a candidate for ablation. Listed here for historical reference only.
 
 **Note on per-character facet bundles.** Some facets ship as a per-character bundle rather than a single flat file (e.g. `feeling-<character>.md` × N characters, `state-updates-<character>.md` × N). Treat the bundle as one facet — if the caller passes the bundle in `facet_paths`, read all files in the bundle; if the caller omits the bundle, read none of them. The bundle is atomic for ablation purposes.
 

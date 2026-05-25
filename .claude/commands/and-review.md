@@ -138,6 +138,9 @@ What it reviews:
 - Per-scene Δ delivered?
 - Cost-paid?
 - `SUBSTANCE-FELT` / `-FLAT` per scene.
+- **Dialogue-coverage gate (URI-WRITE-DIALOGUE-COBONDED, 2026-05-25; HARD).** Every dialogue-anchor bone has ≥1 `[<character-slug>:<id>]` citation token on its line in the bones file. Every speaker named in any dialogue-anchor bone has a non-empty `theater/dialogue/<speaker-slug>.md` per `schemas/dialogue.schema.md`. Bare anchor or missing speaker file → HARD per occurrence; verdict cannot be PASS. Routes back to `/and-write revise`. This subsumes the former `/and-facets` Phase 5 dialogue-coverage gate.
+- **Dialogue card-compliance (HARD).** Every utterance respects the speaker's behavior card §hard fences + §forbidden vocabulary + Earth-Bet proper-noun fence. Detected here as the chunk→bones fidelity reviewer reads dialogue alongside bones.
+- **Dialogue objective-anchoring (SIGNAL).** Each entry's `<objective>` is non-empty AND matches a speech-act the anchor bone's `substance_delta` licenses.
 
 Output includes per-bone SIGNAL list from `chapters[].scenes[].bones[].gate_verdict.signals[]` with explicit suggestion: `/and-write <chapter> revise --from-signals` to address. Re-fire clears SIGNALs that no longer apply.
 

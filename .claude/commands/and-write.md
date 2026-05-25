@@ -109,6 +109,50 @@ After Phase 1: bones present in memory, scene-decomposed, with declared per-bone
 
 ---
 
+## Phase 1.5 — Dialogue authoring (URI-WRITE-DIALOGUE-COBONDED, 2026-05-25)
+
+**Dialogue ships with bones.** Per the principal's 2026-05-25 ruling, dialogue is inseparable from the bones it anchors to — the dialogue facet is no longer a downstream `/and-facets` concern, it is part of what `/and-write` emits.
+
+### 1.5a — Identify dialogue-anchor bones
+
+A **dialogue-anchor bone** is one of:
+- A canonical speech-form bone (`<speaker-slug> speaks to <listener-slug>`).
+- A licensed action-form bone whose `substance_delta.axis_moves[]` (or `axes_held[]`) declares a communication-class axis movement (community / knowledge / reputation / trust) AND whose scene chunk text licenses a speech-act at that bone. The c01 b01 `taylor raises the voice` anchor (parking-lot disposition pl-2026-05-25-004 routing (a)) is the canonical example; the form discipline preserved flat_id stability while letting the bone carry dialogue.
+
+For each scene in scope, walk `chapters[].scenes[].bones[]` and mark each dialogue-anchor bone. Build the `speakers` inventory (set of distinct speaker slugs across anchors).
+
+### 1.5b — Dispatch dialogue-writer (per-behavior-card fanout)
+
+For each distinct behavior card present in the speakers set (resolved by reading `cards/dialects/<character-slug>.card.md` per `cast:` slug and grouping by card), fan out one `general-purpose` dispatch in a parallel block. Each fork authors all speakers sharing that card.
+
+Each fork carries:
+- Behavior card stack (margit-composed: leaf → `inherits:` parent → universal overlay → `references:` adjacent cards).
+- Speaker persona + ltm + stm + state for every speaker the fork covers.
+- The list of dialogue-anchor bones for the fork's speakers, with per-bone substance_delta + the bone's owning scene's `substance_delta` + `scene_conflict`.
+- `staff/dialogue-writer/rubric-dialogue.md` (the v1 round-trip writer-pattern rubric).
+- `schemas/dialogue.schema.md`.
+
+**Discipline:** eight v1 round-trip writer patterns (per-card forks, card-stack load order, blind to other R1 facets, intent-as-state, multi-draft + chosen-mark, affirmative card-signature citation, anti-patterns explicit, calibration anchor) — all load-bearing per the rubric. The fork is blind to other facets (none exist yet at this phase — `/and-facets` hasn't run). The fork authors verbatim utterances + objectives per anchor bone.
+
+**Output:**
+- Per-character dialogue files at `active-project/theater/dialogue/<character-slug>.md` per `schemas/dialogue.schema.md`.
+- Per-character drafts sidecar at `active-project/staff/dialogue-writer/<character-slug>.drafts.md` (multi-draft + chosen-mark + card-signature citations).
+- In-memory annotation: `chapters[].scenes[].bones[].dialogue_citations[]` populated with `<character-slug>:<id>` tokens for each dialogue-anchor bone whose entries the fork authored. (Used by Phase 7 to emit citation tokens in the bones file.)
+
+**Forbid loading:** facet rubrics (no facets exist yet), source prose, behavior cards not in this fork's domain.
+
+### 1.5c — Dialogue-only scenes
+
+If a scene has zero dialogue-anchor bones (an entirely silent scene), no dispatch fires for that scene. This is valid — many scenes are bodies-only. Phase 6 verifies coverage; bare-anchor-without-utterance is a HARD finding.
+
+### 1.5d — Cap on add-cycles
+
+If a dialogue-writer fork's output fails Phase 6 dialogue checks (see below), one re-dispatch per fork is permitted within the same `/and-write` invocation. Second failure surfaces to the user.
+
+After Phase 1.5: per-character dialogue files present on disk; bone dialogue_citations populated in memory; behavior-card fences enforced inline by the writer fork. Phase 6 verifies.
+
+---
+
 ## Phase 2 — Constraint audit (auditor fork)
 
 Dispatch **auditor** (fork) with:
@@ -294,8 +338,20 @@ Orchestrator validation: before persisting bone-gate verdicts, verify `scenes_re
 
 | finding | severity |
 |---|---|
-| flat-bone, cost-not-paid, missing-opposing-force, per-axis-Δ-mismatch beyond ±2, SUBSTANCE-FLAT, SUBSTANCE-SUSPECT, EVENT-UNCOVERED, EVENT-MAP-INCOMPLETE, STAKES-AXIS-NOT-DOMINANT, AXIS-UNDERDELIVERED, SENSORY-GROUNDING-ABSENT | HARD (blocks emission) |
+| flat-bone, cost-not-paid, missing-opposing-force, per-axis-Δ-mismatch beyond ±2, SUBSTANCE-FLAT, SUBSTANCE-SUSPECT, EVENT-UNCOVERED, EVENT-MAP-INCOMPLETE, STAKES-AXIS-NOT-DOMINANT, AXIS-UNDERDELIVERED, SENSORY-GROUNDING-ABSENT, **FAULT-DIALOGUE-MISSING-AT-ANCHOR, FAULT-DIALOGUE-CARD-VIOLATION, FAULT-DIALOGUE-OBJECTIVE-MISSING, FAULT-DIALOGUE-EARTH-BET-FENCE** | HARD (blocks emission) |
 | bones-count-below-density-target, per-axis-Δ-mismatch ±1 to ±2, chatter-bone just-over-cap, register-as-mannerism (verb-object pair ≥3 occurrences) | SIGNAL (records but passes) |
+
+### Dialogue checks (URI-WRITE-DIALOGUE-COBONDED, 2026-05-25)
+
+Phase 6 now verifies the Phase 1.5 dialogue output as part of the bone-gate (since dialogue ships with bones):
+
+- **FAULT-DIALOGUE-MISSING-AT-ANCHOR (HARD)** — a dialogue-anchor bone has zero entries in any per-character dialogue file. Disposition: re-dispatch Phase 1.5 fork for the missing speaker; cap-burn DELETE the anchor's dialogue-anchor flag (recasting the bone as silent-action) requires explicit user authorization.
+- **FAULT-DIALOGUE-CARD-VIOLATION (HARD)** — an utterance violates the speaker's behavior card §hard fences or §forbidden vocabulary, OR the file's `behavior-card:` header does not match the resolved card slug. Disposition: re-dispatch Phase 1.5 fork in revise mode.
+- **FAULT-DIALOGUE-OBJECTIVE-MISSING (HARD)** — an entry's `<objective>` field is empty or does not match a speech-act the anchor bone's substance_delta licenses (e.g. utterance carries community-axis movement but objective names no community-class purpose).
+- **FAULT-DIALOGUE-EARTH-BET-FENCE (HARD)** — substring scan of every utterance and objective against the Earth-Bet hard-fence list (Khepri, Brockton Bay, Skitter, etc. per the auditor class library §Earth-Bet hard-fence scan).
+- **FAULT-DIALOGUE-COVERAGE (HARD)** — every speaker in the chapter's dialogue-anchor inventory has a per-character file on disk with ≥1 entry. Missing speaker file → HARD per speaker.
+
+These checks are MECHANICAL; the auditor enumerates them at audit time. Content-quality checks (does the line *land*, does it pay the substance) remain with `/and-facets` Phase 5b audience-gate downstream.
 
 **HARD findings block Phase 7 emission.** Re-fire Phase 1 (scene-decomposition) on the offending scenes; cycle 1 of the same `/and-write` invocation; max 2 internal HARD-resolution cycles. After 2 cycles, surface to user.
 
@@ -359,6 +415,8 @@ Field name `episode:` is preserved for downstream-compatibility with `/and-facet
 
 **Step 3 — body.** Plain SVO lines, one bone per line, blank-numbered-ID lines for time-skips, no scene markers, no YAML metadata, no facet pre-tags, no per-bone substance annotations (substance_delta lives only in memory).
 
+**Step 3a — dialogue citations (URI-WRITE-DIALOGUE-COBONDED, 2026-05-25).** For each dialogue-anchor bone, append the bone's `dialogue_citations[]` from memory as a bracketed list at line end: `<flat_id> SUBJECT VERB OBJECT [<character-slug>:<id>, <character-slug>:<id>, ...]`. The citation tokens are emitted at bones-write time because dialogue ships with bones — they no longer accrue at downstream facet-author time. Non-dialogue-anchor bones carry no citations at emit (other facet citations still accrue at `/and-facets` author time, per `schemas/bones.schema.md`).
+
 ### (b) Scene-map facet
 
 `active-project/theater/facets/scene-map-<book>-<chapter>.md` — conforms to `schemas/scene-map.schema.md`. Emitted directly from `scenes[]`:
@@ -368,9 +426,13 @@ Field name `episode:` is preserved for downstream-compatibility with `/and-facet
 
 This **replaces** `/and-facets` Phase 4d derivation; `/and-facets` Phase 4d downgrades to coverage-validation only.
 
+### (c) Per-character dialogue files (URI-WRITE-DIALOGUE-COBONDED, 2026-05-25)
+
+`active-project/theater/dialogue/<character-slug>.md` per speaker in the dialogue-anchor inventory. Authored at Phase 1.5; serialized here at Phase 7 alongside bones + scene-map. Conforms to `schemas/dialogue.schema.md`. **The bones file + scene-map facet + per-character dialogue files are the atomic Phase 7 emit set** — partial emit is a HARD fault.
+
 ### Downstream-gate pre-verify (HARD, blocks write)
 
-1. **URI-DIALOGUE-COVERAGE-GATE.** Every `speaks to` bone has a speaker AND a listener resolvable from the cast roster. Speech bones' `substance_delta` lists at least one communication-class axis (community / knowledge / reputation / trust).
+1. **URI-DIALOGUE-COVERAGE-GATE.** Every dialogue-anchor bone (speech-form `speaks to` OR licensed action-form with communication-class axis movement) has a speaker resolvable from the cast roster AND ≥1 utterance in `theater/dialogue/<speaker-slug>.md` AND ≥1 citation token `[<speaker-slug>:<id>]` on the bone in the bones file. For speech-form bones, listener is also cast-resolvable. Bare dialogue-anchor bone (no utterance / no citation) → HARD per bone. Missing speaker file (anchor names a speaker with no file on disk) → HARD per speaker. **This is the canonical gate location** — `/and-facets` Phase 5's dialogue-coverage gate is removed under URI-WRITE-DIALOGUE-COBONDED (dialogue is upstream now).
 2. **URI-SCENE-WINDOW.** Every bone lands inside exactly one scene's flat_id range; no dangling anchors; no scene-spanning bones.
 
 Both pre-verifications run before write. HARD-fail aborts emission with the offending bone(s) named.

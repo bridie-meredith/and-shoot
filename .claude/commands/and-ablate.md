@@ -32,7 +32,7 @@ For a stitched chapter, render the same bones 12 different ways (bones only; bon
      - `metaphor` = `active-project/theater/facets/metaphor-<book>-<chapter>.md`
      - `exposition` = `active-project/theater/facets/exposition-<book>-<chapter>.md`
      - `interest-narrator` = `active-project/theater/facets/interest-narrator-<book>-<chapter>.md`
-   - **Dialogue bundle**: all `active-project/theater/dialogue/*.md` (one file per speaker; chapter scope is implicit per active-project). Dialogue is always bundled with `full`.
+   - **Dialogue bundle**: all `active-project/theater/dialogue/*.md` (one file per speaker; chapter scope is implicit per active-project). Under URI-WRITE-DIALOGUE-COBONDED, dialogue ships with bones — dialogue files are passed to **every** variant (including `bones-only`), not just `full`. There is no dialogue-leave-out variant.
    - Missing flat-named facets are non-fatal but warn: a chapter genuinely without a facet (e.g. a chapter with no dialogue speakers, no memory beats) is valid; the absent facet's leave-one-out variant becomes equivalent to `full`.
 5. Build `staff/ablation/<book>-<chapter>-<timestamp>/` working directory.
 
@@ -44,8 +44,8 @@ The standard ablation set is **12 variants**:
 
 | # | label | facet set |
 |---|---|---|
-| 01 | `bones-only` | none |
-| 02 | `full` | all ten facets + dialogue |
+| 01 | `bones-only` | none (bones include dialogue per URI-WRITE-DIALOGUE-COBONDED — dialogue ships with bones) |
+| 02 | `full` | all ten facets (dialogue is already in the bones-only floor) |
 | 03 | `leave-out-scene-map` | all except scene-map |
 | 04 | `leave-out-state-updates` | all except state-updates |
 | 05 | `leave-out-location-state` | all except location-state |
@@ -57,7 +57,7 @@ The standard ablation set is **12 variants**:
 | 11 | `leave-out-exposition` | all except exposition |
 | 12 | `leave-out-interest-narrator` | all except interest-narrator |
 
-**Dialogue is bundled with the `full` set and is never the held-out facet.** Dialogue is verbatim content — leaving it out produces a chapter with mute characters, which is a useful negative-control variant but not a comparable ablation (you're testing facet contribution, not character-presence). If you want a dialogue ablation specifically, run `/and-ablate <chapter> --include-dialogue-ablation` as a 13th variant (not standard).
+**Dialogue is not a separate ablation candidate under URI-WRITE-DIALOGUE-COBONDED (2026-05-25).** Dialogue ships with bones; the `bones-only` variant already includes dialogue. Leaving dialogue out would require holding back bones content — not a meaningful facet ablation but a structural mutilation. If you genuinely want to test the value of dialogue, that's a different study (and a different command) — `/and-ablate` is for facet ablation only.
 
 Write the manifest to `<work-dir>/manifest.md` with rows `{variant_num, label, facet_paths[]}`.
 

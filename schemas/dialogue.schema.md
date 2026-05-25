@@ -1,6 +1,6 @@
 # Dialogue Schema
 
-Per-character dialogue files. One file per speaking character per episode. Authored by the dialogue-writer fork in shoot-v2.
+Per-character dialogue files. One file per speaking character per chapter. Authored by the dialogue-writer fork dispatched from `/and-write` Phase 1.5 (URI-WRITE-DIALOGUE-COBONDED, 2026-05-25) and co-emitted with the bones file at `/and-write` Phase 7. Pre-2026-05-25 the author dispatch lived at `/and-facets` Phase 1; that authoring step is retired. The R2 dialogue judge at `/and-facets` Phase 2 remains as a locked-graph review pass (KEEP / DELETE / REWRITE against the facet graph the upstream author was blind to) — review only, no authoring.
 
 Path: `active-project/theater/dialogue/<character-slug>.md`
 
@@ -41,7 +41,7 @@ behavior-card: <dialect-card-slug>
 
 ## Authoring
 
-- **Writer:** fork-spawned dialogue-writer (orchestrator pattern; see `decisions.md` in the shoot-v2 design workspace). One fork per character per episode. Fork loads character card + ltm + stm + state + behavior card (with composed inherits/references stack) + coach prompt (every speaking beat that character has across the episode); writes the entire file in one hermetic run; discarded.
+- **Writer:** fork-spawned dialogue-writer dispatched from `/and-write` Phase 1.5 (URI-WRITE-DIALOGUE-COBONDED). One fork per behavior card; each fork authors all speakers sharing that card. Fork loads behavior card stack (margit-composed: leaf → inherits → universal overlay → references), speaker persona + ltm + stm + state for every speaker the fork covers, the dialogue-anchor bone list with substance_delta + scene_conflict, `staff/dialogue-writer/rubric-dialogue.md`, and this schema. Blind to facet content (none exist yet at Phase 1.5). Writes the file(s) in one hermetic run; discarded.
 - **Review:** audience critics + constraint pass, after the fork returns. Reviews operate on the file as a unit, not per-entry.
 - **Edits:** during review, deletions are preferred over rewrites. If a rewrite is needed, the entry is deleted and a new entry with a new ID replaces it. IDs are stable per the same rules as proto-lines.
 
