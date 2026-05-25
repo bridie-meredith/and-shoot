@@ -22,7 +22,6 @@ rubric: design/shoot-v2/rubric-feeling.md (V1 LOCKED 2026-05-07)
 ---
 
 2 @10 taylor-hebert-kl-122ac: her breath empties out | expressed: no
-3 @24 taylor-hebert-kl-122ac: her head fixes toward the alley-mouth, away from the stitch-house lane | expressed: partial
 
 # source: wren-stitch-maker-flea-bottom-ward
 # slice: feeling-wren-stitch-maker-flea-bottom-ward

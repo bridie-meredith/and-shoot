@@ -422,11 +422,11 @@ findings-applied: 5 (fault-001 resolved; fault-002 resolved; fault-003 resolved;
 findings-skipped: 0
 exit: CLEAN
 
-## SESSION-START — 2026-05-25T09:00:00Z — and-facets-cycle1-fixes-feeling
-dispatch: Phase 5b cycle-1 remediation — feeling facet, 1 dissent from dark-fantasy-reader on feel:3 @24 (Q1 fail / NI redundancy); apply minimum revise or delete + URI-FACETS-CYCLE-N-ADD pre-validation
+## SESSION-START — 2026-05-25T10:00:00Z — and-facets-cycle1-fixes-feeling
+dispatch: Phase 5b cycle-1 remediation — feeling facet; 1 dissent from dark-fantasy-reader (feel:3 @24 Q1 fail / NI:8 body-register redundancy); apply minimum revise or delete + URI-FACETS-CYCLE-N-ADD pre-validation; do not touch other facets
 target: active-project/theater/facets/feeling-taylor-hebert-kl-122ac.md (primary), active-project/theater/facets/feeling.md (consolidated)
 audit-report: active-project/staff/audience/dark-fantasy-reader/feeling-r1-verdict.md
-findings-queued: 1 (feel:3 REVISE) + ADD pre-validation check
+findings-queued: 1 (feel:3 REVISE/DELETE) + ADD pre-validation check
 
 ## SESSION-START — 2026-05-25T06:00:00Z — facets-cycle1-remediation-location-state
 dispatch: Phase 5b cycle-1 remediation for location-state facet — address dark-fantasy-reader's two entry-level callouts (SEAM-LOC-CARDS-ABSENT @1–@6; SEAM-TRANSITION-RUN-BARE @1–@6) with minimum change
@@ -439,6 +439,23 @@ dispatch: /and-facets Phase 5b cycle-1 remediation — dialogue facet, character
 target: active-project/theater/dialogue/taylor-hebert-kl-122ac.md
 audit-report: active-project/staff/audience/worm-canon-pedant/dialogue-taylor-hebert-kl-122ac-r1-verdict.md
 findings-queued: 1
+
+## SESSION-START — 2026-05-25T10:10:00Z — facets-cycle1-dialogue-taylor (RESUME — prior run incomplete)
+dispatch: resume incomplete cycle-1 remediation; prior SESSION-START written but no per-fault or SESSION-END logged; verify fix state and close
+target: active-project/staff/dialogue-writer/taylor-hebert-kl-122ac.drafts.md (sidecar — carries facet-license citations)
+audit-report: active-project/staff/audience/worm-canon-pedant/dialogue-taylor-hebert-kl-122ac-r1-verdict.md
+findings-queued: 1 (entry 2 feel:1 @10 citation DELETE/REVISE)
+
+## dialogue-entry-2-feel1-citation — RESOLVED — 2026-05-25T10:15:00Z
+fault: entry 2 facet-licenses cited feel:1 @10; locked cite-index has feel:1 @21 (not @10); @10 carries feel:2 only; citation walk fails to resolve — HARD per URI-FACETS-CYCLE-1
+scope: line
+change: DELETE path confirmed executed. Verified sidecar Entry 2 facet-licenses field: contains only `sensory:2 @16`; feel:1 @10 is absent. The prior session removed the bad citation from the per-entry block and documented the deletion in the sidecar bottom-summary citation-completeness note ("feel:1 @10 citation deleted at cycle-1 remediation — feel:1 fires at @21, not @10; feel:2 fires at @10 but describes foot-plant, not breath-tell; citation could not be salvaged by remapping"). Dialogue file (taylor-hebert-kl-122ac.md) carries only utterance text — no citation fields there; no change needed. Q1 for entry 2 ACCEPTED by worm-canon-pedant; spoken text unchanged.
+criteria met: yes — entry 2 facet-licenses no longer names an anchor where the cited facet does not fire; sensory:2 @16 is the sole surviving license and resolves correctly in the locked cite-index (back=Y, co=[taylor-hebert-kl-122ac:1, taylor-hebert-kl-122ac:2, taylor-hebert-kl-122ac:3])
+
+## SESSION-END — 2026-05-25T10:15:00Z — facets-cycle1-dialogue-taylor
+findings-applied: 1 (entry 2 feel:1 @10 citation DELETE — confirmed complete; prior session applied the change, this session verified and closed the log)
+findings-skipped: 0
+exit: CLEAN
 
 ## SESSION-START — 2026-05-25T07:00:00Z — facets-cycle1-state-updates-remediation
 dispatch: Phase 5b cycle-1 remediation for state-updates facet — all 3 reviewers dissented; cross-reviewer dedupe + minimum-change fixes to per-character slice files and consolidated state-updates.md
@@ -457,3 +474,21 @@ dispatch: Phase 5b cycle-1 remediation for memory facet — all 3 reviewers diss
 target: active-project/theater/facets/memory-b01-c01.md
 audit-report: active-project/staff/auditor/facets-final-audit-r2.md (flags carried by reference); verdicts: cape-fic-reader + dark-fantasy-reader + worm-canon-pedant memory-r1-verdict.md
 findings-queued: 2 entries (mem:1, mem:2) deduped from 3 verdict files
+
+## SESSION-START — 2026-05-25T10:00:00Z — and-facets-cycle1-fixes-state-updates
+dispatch: /and-facets Phase 5b cycle-1 remediation — state-updates facet, all 3 reviewers dissented; cross-reviewer dedupe + minimum-change fixes
+target: active-project/theater/facets/state-updates-taylor-hebert-kl-122ac.md + state-updates-wren-stitch-maker-flea-bottom-ward.md + state-updates.md
+audit-report: active-project/staff/audience/cape-fic-reader/state-updates-r1-verdict.md + dark-fantasy-reader/state-updates-r1-verdict.md + worm-canon-pedant/state-updates-r1-verdict.md
+findings-queued: tbd — deduplication pass required
+
+## SESSION-START — 2026-05-25T11:00:00Z — and-facets-cycle1-fixes-vibes
+dispatch: Phase 5b cycle-1 remediation for vibes facet — all 3 reviewers dissented; cross-reviewer dedupe by [vibes:id]; minimum-change fixes per dispatch callouts; ADD pre-validation per URI-FACETS-CYCLE-N-ADD
+target: active-project/theater/facets/vibes-b01-c01.md
+audit-report: active-project/staff/audience/cape-fic-reader/vibes-r1-verdict.md + dark-fantasy-reader/vibes-r1-verdict.md + worm-canon-pedant/vibes-r1-verdict.md
+findings-queued: 6 (vibes:1, vibes:2, vibes:5, vibes:8, vibes:9, vibes:10) + volume-ADD 2 entries pre-validation
+
+## SESSION-START — 2026-05-25T12:00:00Z — and-facets-cycle1-fixes-location-state
+dispatch: Phase 5b cycle-1 remediation — location-state facet; 1 dissent from dark-fantasy-reader; two callouts: SEAM-LOC-CARDS-ABSENT @1–@6 + SEAM-TRANSITION-RUN-BARE @1–@6; apply minimum ADD after URI-FACETS-CYCLE-N-ADD pre-validation
+target: active-project/theater/facets/location-state-b01-c01.md
+audit-report: active-project/staff/audience/dark-fantasy-reader/location-state-r1-verdict.md
+findings-queued: 2 callouts (treated as one ADD operation — one entry at @1 addresses both)

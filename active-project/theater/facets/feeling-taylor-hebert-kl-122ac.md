@@ -8,4 +8,3 @@ rubric: design/shoot-v2/rubric-feeling.md (V1 LOCKED 2026-05-07)
 ---
 
 1 @10 taylor-hebert-kl-122ac: her breath empties out | expressed: no
-2 @24 taylor-hebert-kl-122ac: her head fixes toward the alley-mouth, away from the stitch-house lane | expressed: partial

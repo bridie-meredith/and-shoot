@@ -29,7 +29,7 @@ _(no entries)_
   narrator:5 @21 back=Y co=[exposition:8, feel:1, state:1, state:6, vibes:5, vibes:6, vibes:7]
   narrator:6 @27 back=Y co=[exposition:9, feel:4, state:9, vibes:9, vibes:10]
   narrator:7 @3 back=Y co=[mem:1]
-  narrator:8 @24 back=Y co=[feel:3, state:7]
+  narrator:8 @24 back=Y co=[state:7]
 
 ### sensory (2 entries)
   sensory:1 @2 back=Y
@@ -53,7 +53,6 @@ _(no entries)_
 ### feel (4 entries)
   feel:1 @21 back=Y co=[exposition:8, narrator:5, state:1, state:6, vibes:5, vibes:6, vibes:7]
   feel:2 @10 back=Y
-  feel:3 @24 back=Y co=[narrator:8, state:7]
   feel:4 @27 back=Y co=[exposition:9, narrator:6, state:9, vibes:9, vibes:10]
 
 ### meta (0 entries)
