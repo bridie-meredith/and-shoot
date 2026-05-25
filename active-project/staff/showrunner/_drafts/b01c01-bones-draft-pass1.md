@@ -58,7 +58,7 @@ scenes:
           cost_ledger_anchor: null
 
       - slug: b01c01s01n04
-        svo: "the insects propagate"
+        svo: "the insects swell"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -159,8 +159,8 @@ scenes:
         substance_delta:
           axis_moves: []
           axes_held:
-            - axis: capability
-              rationale: "grounding bone: the child's breath is read through the cobbles before Taylor reaches her — the insect-sense transmitting vibration through the ground as a physical fact; capability at work before the deployment decision, establishing the sense-mechanism concretely"
+            - axis: moral_framework
+              rationale: "the prohibition is intact at this bone — the insect-sense reads body-vibration through the cobbles as passive baseline perception, not active deployment; moral_framework held as not-yet-cracked; the sense-mechanism is doing its baseline work, which the prohibition has always permitted; the scene's tension is what happens when this baseline is exceeded, which has not happened yet at this bone"
           cost_ledger_anchor: null
 
       - slug: b01c01s02n03
@@ -178,9 +178,7 @@ scenes:
           axis_moves: []
           axes_held:
             - axis: moral_framework
-              rationale: "the last beat of prohibition-maintenance before the crack — Taylor's body planted, the range pressing, the prohibition still running; this is the prohibition's final held moment in the scene"
-            - axis: capability
-              rationale: "suppression still enacted at this bone — the threshold is present; the next bone crosses it; this bone makes the crossing legible as a threshold-crossing"
+              rationale: "the last beat of prohibition-maintenance before the crack — Taylor's body planted, the range pressing, the prohibition still running; this is the prohibition's final held moment in the scene; the threshold-crossing at the next bone reads as a crossing because this bone holds the line right before it"
           cost_ledger_anchor: null
 
       - slug: b01c01s02n05
@@ -216,8 +214,8 @@ scenes:
         substance_delta:
           axis_moves: []
           axes_held:
-            - axis: capability
-              rationale: "the crowd-read enacted: Taylor reads the shape of the crowd and presses at the perimeter until the gap propagates — the systematic spatial modeling that is the deployment's mechanism"
+            - axis: moral_framework
+              rationale: "the crack continues — the deployment's wave-effect persists as the gap propagates outward, bodies continuing to yield to insect-pressure; the prohibition's violation extends beat-by-beat without being filed as violation; moral_framework held as load-bearing dormancy through the deployment's cascade"
           cost_ledger_anchor: null
 
       - slug: b01c01s02n09

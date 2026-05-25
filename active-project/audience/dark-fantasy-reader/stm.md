@@ -94,3 +94,36 @@ strongest_world_texture_beat: "s03n08+n09 — tallow smoke settling at lane-leve
 
 weakest_beat: "s02n09 — SVO enacts arrival, not anchor-dormancy; the Wren-in-the-crowd claim is
   invisible at bone level"
+
+---
+
+## 2026-05-25 — /and-write b01c01 Phase 6 substance bone-gate
+
+verdict_per_scene:
+  b01c01s01: SUBSTANCE-FELT
+  b01c01s02: SUBSTANCE-FELT
+  b01c01s03: SUBSTANCE-FELT
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: []
+soft_findings:
+  - s02n09 Wren-dormancy claim invisible at bone level (carry-forward to stitch, not a bone-gate block)
+  - 'lifts the' mannerism count 2 active instances (Pass 3 domain; carry to stitch)
+
+world_texture_summary:
+  s01: "drain angle as body-sized anonymity-geometry; tallow smoke as dormant Wren plant; suppression
+    cost enacted in the dual-bone stillness-against-pull structure; no hot-buttons fire; the setting
+    exists independent of Taylor's presence in it"
+  s02: "fish-cart as functional crowd-physics cause; ground-transmission of fever as insect-sense
+    grounded before it becomes a problem; prohibition's final held moment (n04) makes the crossing
+    (n06) legible as threshold, not reflex; world yields by physics, not narrative courtesy"
+  s03: "Flea Bottom dispersal physics honest (holders remain); ward-elder positioning at lane-mouth
+    as the watching-station, not confrontation-point; chin-lift as pre-print categorization-by-body;
+    tallow smoke's continuity after the moral event is the world's indifference enacted in a single
+    sensory note; Wren's orientation delivered as naturalistic consequence without authorial staging"
+
+carry_forward_to_facets:
+  - s02n09 stitch-time watch: prose needs physical tell for Wren or acceptance that s03n10 carries
+    the plant; not a block at bone-gate but a stitch-domain concern
+  - 'lifts the' mannerism: decomposer Pass 3 domain; monitor at stitch draft
+  - no new bone-gate concerns introduced; Phase 4 carry-forwards either resolved (s03n10 confirms
+    Wren plant delivery) or correctly deferred to stitch domain

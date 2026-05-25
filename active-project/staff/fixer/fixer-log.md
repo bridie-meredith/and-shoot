@@ -301,3 +301,82 @@ criteria met: n/a — deferred to /and-cast next invocation or margit catalog re
 findings-applied: 2 (FAULT-STATE resolved; flag-001 resolved)
 findings-skipped: 1 (flag-002 deferred — outside /and-write scope; cast-selection.md is /and-cast / margit territory)
 exit: CLEAN
+
+## SESSION-START — 2026-05-25T04:00:00Z — write-b01c01-phase6-bone-gate
+dispatch: Phase 6 substance bone-gate repairs — 3 HARD (HELD-AXIS-UNCONTRACTED on s02n02, s02n04, s02n08) + 1 SIGNAL remediate (s01n04 SVO recast) + 2 SIGNAL accept-with-rationale (faces verb, s01n07 axes-per-bone)
+target: active-project/staff/showrunner/_drafts/b01c01-bones-draft-pass1.md
+audit-report: active-project/staff/auditor/write-b01c01-bone-gate.md
+findings-queued: 6 (3 HARD + 3 SIGNAL)
+
+## fault-001 (s02n02 HELD-AXIS-UNCONTRACTED) — RESOLVED — 2026-05-25T04:05:00Z
+fault: b01c01s02n02 held capability, which is in s02 axes_in_motion not axes_held; HELD-AXIS-UNCONTRACTED
+scope: line
+change: axes_held[0] changed from axis: capability to axis: moral_framework; rationale rewritten as prohibition-intact / baseline-perception-not-deployment (capability-as-baseline-perception → moral_framework-as-prohibition-intact)
+criteria met: yes — s02n02 no longer carries capability in axes_held; moral_framework is a contracted held axis for s02
+
+## fault-002 (s02n04 HELD-AXIS-UNCONTRACTED) — RESOLVED — 2026-05-25T04:06:00Z
+fault: b01c01s02n04 held both moral_framework (clean) and capability (uncontracted for s02); HELD-AXIS-UNCONTRACTED on capability entry
+scope: line
+change: capability axes_held entry dropped; moral_framework rationale extended to absorb threshold-crossing-legibility note ("the threshold-crossing at the next bone reads as a crossing because this bone holds the line right before it"); axes_held reduced from 2 to 1 entry
+criteria met: yes — s02n04 axes_held contains only moral_framework, a contracted held axis for s02
+
+## fault-003 (s02n08 HELD-AXIS-UNCONTRACTED) — RESOLVED — 2026-05-25T04:07:00Z
+fault: b01c01s02n08 held capability, which is in s02 axes_in_motion not axes_held; HELD-AXIS-UNCONTRACTED
+scope: line
+change: axes_held[0] changed from axis: capability to axis: moral_framework; rationale rewritten as crack-continuing / deployment-cascade-extending-prohibition-violation (capability-as-deployment-mechanism → moral_framework-as-crack-extending)
+criteria met: yes — s02n08 no longer carries capability in axes_held; moral_framework is a contracted held axis for s02
+
+## signal-001 (s01n04 propagate mannerism) — RESOLVED — 2026-05-25T04:08:00Z
+fault: bare intransitive 'propagate' appeared 3× chapter-wide (s01n04, s02n06, s02n08); URI-WRITE-REGISTER-MANNERISM ≥3 threshold hit; s01n04 and s02n06 were also identical SVOs
+scope: line
+change: s01n04 svo recast from "the insects propagate" to "the insects swell"; rationales unchanged; propagate count drops to 2× (s02n06, s02n08) — below threshold; identical-SVO pair eliminated
+criteria met: yes
+
+## signal-002 (faces-verb mannerism) — ACCEPTED-WITH-RATIONALE — 2026-05-25T04:09:00Z
+fault: verb 'faces/face' appears 5× chapter-wide across 4 distinct VERB+OBJECT pairs
+scope: n/a (no patch)
+change: none — ACCEPT-WITH-RATIONALE recorded; no single VERB+OBJECT pair hits ≥3 threshold (max 'faces taylor' at 2); body-orientation register is load-bearing for ward-categorization beats (witnesses face the foreign woman; the foreign woman faces her work; Wren faces Taylor); replacing 'faces' with synonyms would reintroduce banned prepositional forms ('turns to', 'pivots toward') or damage the posture-vocabulary register
+criteria met: yes — disposition recorded; no mechanical threshold crossed; register rationale documented
+
+## signal-003 (s01n07 axes-per-bone overage) — ACCEPTED-WITH-RATIONALE — 2026-05-25T04:10:00Z
+fault: b01c01s01n07 carries 3 axes_held entries (moral_legibility_to_self, moral_framework, political_register-prot); chunk_targets.bone.axes_per_bone: 1-2
+scope: n/a (no patch)
+change: none — ACCEPT-WITH-RATIONALE recorded; third axis (political_register-prot) is a repair-move consequence of s01n05 drop at Pass 2 round 1; removing it would require either a new s01 political_register-prot held bone (over-engineering) or losing scene-level held-coverage on political_register-prot (HELD-AXIS-NOT-WITNESSED fault); /and-facets flagged to distribute the three axes across separate facet entries
+criteria met: yes — disposition recorded; over-commitment is a documented repair-move artifact, not a substantive authoring choice
+
+## /and-write b01c01 Phase 6 — 2026-05-25
+
+- HARD-fix s02n02:
+  axes_held_before: [capability]
+  axes_held_after: [moral_framework]
+  rationale_change: "capability-as-baseline-perception → moral_framework-as-prohibition-intact"
+
+- HARD-fix s02n04:
+  axes_held_before: [moral_framework, capability]
+  axes_held_after: [moral_framework]
+  rationale_change: "merged threshold-crossing-legibility into moral_framework rationale; dropped redundant capability entry"
+
+- HARD-fix s02n08:
+  axes_held_before: [capability]
+  axes_held_after: [moral_framework]
+  rationale_change: "capability-as-deployment-mechanism → moral_framework-as-crack-extending"
+
+- SIGNAL-remediate s01n04:
+  svo_before: "the insects propagate"
+  svo_after: "the insects swell"
+  reason: "URI-WRITE-REGISTER-MANNERISM — propagate ∅ at 3× chapter-wide; recast lowest-stakes instance (s01n04); s02n06 moving bone and s02n08 deployment-cascade bone preserved"
+
+- SIGNAL-accept faces-verb mannerism:
+  disposition: accept-with-rationale
+  rationale: "no VERB+OBJECT pair hits ≥3 threshold (max faces taylor 2); body-orientation register is load-bearing for ward-categorization beats; synonyms would reintroduce banned forms or damage register"
+
+- SIGNAL-accept s01n07 3-axes-held overage:
+  disposition: accept-with-rationale
+  rationale: "third axis political_register-prot relocated from dropped s01n05 at Pass 2 round 1; removing would force authoring a new s01 political_register-prot held bone or losing scene-level held-coverage; repair-move consequence, not substantive over-commitment"
+
+Closing summary: 3 HARD repairs applied; 1 SIGNAL remediated; 2 SIGNALs accept-with-rationale.
+
+## SESSION-END — 2026-05-25T04:10:00Z — write-b01c01-phase6-bone-gate
+findings-applied: 4 (3 HARD patched; 1 SIGNAL remediated)
+findings-skipped: 2 (2 SIGNALs accepted-with-rationale — no patch required by disposition)
+exit: CLEAN

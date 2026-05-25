@@ -128,3 +128,35 @@ canonically_on_target:
     physical act, not dialogue content; "does not ask whether they will comply" is canon Taylor
   - s03n07 + s03n08: not-looking enacted through body-direction and sensory continuity;
     negative construction avoided; dormancy reads as structural, not incidental
+
+---
+
+## 2026-05-25 — /and-write b01c01 Phase 6 substance bone-gate
+
+verdict_per_scene:
+  b01c01s01: SUBSTANCE-FELT
+  b01c01s02: SUBSTANCE-FELT
+  b01c01s03: SUBSTANCE-FELT
+chapter_aggregate: SUBSTANCE-FELT
+hard_findings: []
+soft_findings:
+  - s02n07 + s02n08 directionality watch: carried from Phase 4 trim unchanged; prose-level
+    risk only; bones correctly scoped; carry to stitch review; not a bone-gate block
+canonicity_findings:
+  - override-architecture fence at s02n06 + s02n07: CLEAN — fauna-control at ankle-height,
+    bodies yield to sensation, no nervous-system coordination; the Khepri mantle is sealed
+  - Taylor interior register: cold-utilitarian throughout all three scenes; drained-quiet
+    and cost-aware in s01; cold-operational in s02; body-reading-as-data in s03
+  - moral_framework held-discipline: the breach is real and reader-visible at s02; Taylor
+    has not filed it; the ledger does not open in s03; held-discipline survives the chapter
+  - Wren-plant dormancy: both plant instances correctly execute structural dormancy;
+    present-but-unregistered throughout; no lore-leak
+key_moments_that_tracked:
+  - s02n06 + s02n07: the override-architecture fence is at bone level, not just contract
+  - s01n03 + s02n04 echo: Khepri-residue suppression-discipline as maintained threshold
+    that fails — the crossing is legible as a crossing
+  - s03n09 ending on Oswyn's body-signal, not Taylor's label-recognition: chapter closes
+    exactly where the goal specified — before legibility, at categorization-in-progress
+carry_forward:
+  - s02n07 + s02n08 directionality soft watch to stitch review (unchanged from Phase 4)
+  - b01c07 prose-burden soft finding carries forward unchanged to b01c07 /and-write
