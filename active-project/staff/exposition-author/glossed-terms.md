@@ -9,6 +9,9 @@ Seeded 2026-05-25 from `active-project/theater/facets/exposition-b01-c01.md`
 write-back block (b01c01 is the project's opening chapter; this is the project's
 first register entry).
 
+R2 judge confirmation 2026-05-25: all 9 R1 entries survived R2 (0 DELETEs); no
+register removals required. Register entries below remain authoritative.
+
 ## Glossed in b01c01
 
 - flea-bottom | glossed-in: b01c01 | gloss-id: 4 | first-mention-anchor: @1 | qualifier: combined Hook + Flea Bottom precinct gloss
