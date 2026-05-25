@@ -5,42 +5,38 @@ date: 2026-05-25
 revised: 2026-05-25 (cycle-1 remediation — sensory:2 replaced; see fixer log and-facets-cycle1-fixes-sensory.md)
 ---
 
-# rubric-carve-out — unanchored-old-state exemption for empty locations: header
+# cross-facet anchor note — sensory old-state lineage
 #
 # design/shoot-v2/rubric-sensory.md § 1. Modality-inflection / Unanchored old-state (HARD)
 #
-# Carve-out scope: all entries in this file (sensory:1, sensory:2)
-# Carve-out rule: no location-state file entries exist for b01c01 (oc-stitch-house-lane
-#   declared in bones header but no authored card; loc-state zero-entry discipline applies).
-#   The rubric requires old-state to resolve to either the most recent loc-state baseline
-#   OR the most recent prior sensory entry on the same modality. With no loc-state,
-#   the old-state for the chapter's first entry on each modality is sourced from scene-internal
-#   sensory context established by the opening bones — the earliest viable baseline for
-#   a chapter with no prior sensory history and no loc-state. Per-entry old-states are
-#   scene-internally defensible (see annotations below).
-# Coverage justification: instruction explicitly states "treat scene-internal sensory anchors
-#   as scene-tier sensory" when the locations: header is empty. The old-state for sensory:1
-#   resolves to the lane-ambient-pre-smoke state established by bone 1 (drain water; no smoke
-#   yet). The old-state for sensory:2 resolves to the lane-ambient-tactile state established
-#   by bones 1-8 (drain water, tallow smoke onset, Taylor holding, insects swelling,
-#   angle-wall narrowing — lane occupied but not yet compressed; no prior tactile inflection).
+# Anchor scope: sensory:1 and sensory:2
+# Status: loc-state:1 @1 now exists (added at cycle-1 remediation; oc-stitch-house-lane
+#   confirmed at active-project/warehouse/oc-stitch-house-lane.md). The earlier "zero-entry"
+#   carve-out premise is no longer operative. Both entries now anchor their old-states
+#   against loc-state:1's sensory-baseline field per the enumerated rubric paths.
 #
 # Per-entry annotations:
-# - sensory:1 @2: old-state lane-ambient sourced from scene-internal opening (bone 1 drain
-#   water; smoke first appears at bone 2); no prior sensory entry on smell modality; no
-#   loc-state; carve-out applies.
-# - sensory:2 @9: old-state lane-ambient-tactile sourced from scene-internal bones 1-8
-#   (lane occupied but not crowd-compressed; no prior sensory entry on tactile modality;
-#   no loc-state; carve-out applies). Anti-pattern #14 pre-validation passed: modality
-#   (tactile) identifiable; inflection class (up — discrete onset of crowd-compression);
-#   bare proto-line ("the crowd compresses" — bare physical-process verb, does not
-#   self-carry tactile-register); Q1 clears (audience needs flag to register the
-#   flesh-against-flesh compression as tactile inflection vs. abstract movement);
-#   Q2 clears (crowd-compression in a narrow Flea Bottom lane is register-shifting at
-#   audience-experiential scale — not micro-grain); audience-side perceptible (universally
-#   legible once flagged; no fauna-feed extension); inflection-not-sustained (this is the
-#   onset bone; the compression state established here is the new baseline, not sustained
-#   already). No loc-state edit required: existing carve-out scope covers this entry.
+# - sensory:1 @2: old-state "lane-ambient" on smell modality. Rubric path: most recent
+#   loc-state for this location is loc-state:1 @1; its sensory-baseline names the
+#   drain-water trickle (auditory ambient) but no smell baseline — pre-bone-2 smell state
+#   is pre-tallow-smoke-onset (smoke first appears at bone 2 = @2). Negative-inference
+#   derivation from loc-state:1 (no smell noted = pre-onset ambient). Thinnest defensible
+#   loc-state path; advisory flagged at cycle-1 and carried forward. No new HARD.
+# - sensory:2 @9: old-state "cobblestone-underfoot-pre-compression" on tactile modality.
+#   Rubric path: most recent loc-state for this location is loc-state:1 @1; its
+#   sensory-baseline field now explicitly names "cobblestone-underfoot tactile ambient
+#   (uneven at angle-wall side, pre-compression)" — added at cycle-3 remediation per
+#   sensory-old-state-reader cycle-2 HARD finding. The loc-state cross-facet anchor path
+#   is satisfied: old-state resolves to loc-state:1's anchored tactile baseline.
+#   Anti-pattern #14 pre-validation: modality (tactile) identifiable; inflection class
+#   (up — discrete onset of crowd-compression); bare proto-line ("the crowd compresses"
+#   — bare physical-process verb, does not self-carry tactile-register); Q1 clears
+#   (audience needs flag to register flesh-against-flesh compression as tactile inflection
+#   vs. abstract movement); Q2 clears (crowd-compression in a narrow Flea Bottom lane is
+#   register-shifting at audience-experiential scale — not micro-grain); audience-side
+#   perceptible (universally legible once flagged; no fauna-feed extension);
+#   inflection-not-sustained (this is the onset bone; the compression state established
+#   here is the new baseline, not sustained already).
 
 1 @2 smell: lane-ambient -> tallow-smoke-onset # tag: up
-2 @9 tactile: lane-ambient -> crowd-compression # tag: up
+2 @9 tactile: cobblestone-underfoot-pre-compression -> crowd-compression # tag: up

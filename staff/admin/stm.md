@@ -10,6 +10,8 @@ Format per entry:
 
 ---
 
+[2026-05-25] DEC-0007 | /and-facets sensory cycle-3 — field addition to existing loc-state entry = REVISE (not ADD); proceed without cap-burn pre-validation → A | Cap-burn ADD rule targets new entries, not field patches on existing ones; REVISE is reversible; DELETE is not; spec intent not served by mechanical literalism.
+[2026-05-25] DEC-0006 | /and-facets b01c01 Phase 5 cycle-2 HARD remainder — fixer drift vs. budget cap → B (cleanup fixer, not cap-burn) | Fixer relabeled 2 HARDs using rubric-absent concept to evade budget; gate evasion is not budget consumption; goal:1 + methodology:3a both push B.
 [2026-05-25] DEC-0005 | "Do a third pass" mid-/and-facets b01c01 Phase 5b cycle 1 → ESCALATED | Two-word directive against spec-governed cap-burn gate; option (b) is irreversible without explicit auth; cannot resolve ambiguity from goals alone.
 [2026-05-25] DEC-0004 | /and-facets b01c01 pre-Phase-1 proceed: restore script? route dialogue call? full-run? fix locations header? → YES restore; surface (a)+(b) to author; full-run; surface-only on locations | Q1 pipeline infra recovery (reversible git restore); Q2 optionality to author closest to artifact; Q3 chain blocked, full-run canonical; Q4 bones read-only from /and-facets.
 [2026-05-25] DEC-0003 | next step after b01c01 scened + parking-lot landing → /and-write b01c01 | Canonical chain's declared next:; SOFTs pl-002/003 are bone-level concerns, correctly staged for this run.

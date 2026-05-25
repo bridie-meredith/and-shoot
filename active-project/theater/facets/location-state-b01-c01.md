@@ -25,4 +25,4 @@ revised: 2026-05-25 (cycle-1 remediation — one entry added at @1 per dark-fant
 # future revision pass if the chapter's state-change audit finds it necessary. Not added here —
 # dark-fantasy-reader's callouts were scoped to @1–@6 only.
 
-1 @1 oc-stitch-house-lane | morning | none | stitch-house-lamp-burning | drain-water trickle audible at the angle-gap pinch-point
+1 @1 oc-stitch-house-lane | morning | none | stitch-house-lamp-burning | drain-water trickle audible at the angle-gap pinch-point; cobblestone-underfoot tactile ambient (uneven at angle-wall side, pre-compression)

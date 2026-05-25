@@ -713,3 +713,9 @@ criteria met: yes
 findings-applied: 1 (fault-C2C-001 resolved — two facet-license lines corrected + citation-completeness summary rewritten)
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-25T16:00:00Z — and-facets-cycle3-fixes-sensory
+dispatch: Phase 5b cycle-3 remediation — sensory facet only; single HARD from sensory-old-state-reader; add tactile baseline to loc-state:1 @1, update sensory:2 old-state citation, update sensory facet carve-out header, verify cite-index back-links
+target: active-project/theater/facets/location-state-b01-c01.md (primary edit 1), active-project/theater/facets/sensory-b01-c01.md (primary edits 2+3), active-project/theater/facets/_cite-index.md (verification)
+audit-report: active-project/staff/audience/sensory-old-state-reader/sensory-r2-verdict.md
+findings-queued: 1 (unanchored-old-state HARD on sensory:2 @9)

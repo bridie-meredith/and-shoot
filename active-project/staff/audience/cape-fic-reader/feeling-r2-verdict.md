@@ -7,19 +7,20 @@ date: 2026-05-25
 verdict: accept
 ---
 
-# Cycle-2 re-evaluation note
+# Cycle-2 re-evaluation context
 
-My cycle-1 verdict accepted all four entries including feel:3 @24. The fixer deleted
-feel:3 on Q1 grounds (NI:8 @24 already named the body-direction event; the feeling-flag
-was the same beat in a different register — redundant). That deletion was correct. My
-cycle-1 reading gave benefit of the doubt on the "compound locator" reading of
-feel:3's directional pair; that benefit should not have been given. On a clean hostile
-re-read the Q1 failure is clear: proto-line @24 carries the orientation, NI:8 @24
-carries the cost-of-orientation, and feel:3 was reaching for a third pass at the same
-event. The deletion stands.
+Cycle-1 accepted four entries including feel:3 @24. The fixer deleted feel:3 (dark-fantasy-reader
+Q1 fail: NI:8 @24 already carries the body-direction event; feel:3 re-stated the same beat in
+the somatic register — redundant). Cycle-2 context instruction: re-evaluate from hostile-default.
+No carry-forward from cycle-1 accept verdicts. Three entries survive: feel:1 @21 (Oswyn),
+feel:2 @10 (Taylor), feel:4 @27 (Wren).
 
-Cycle-2 scope: three remaining entries. Hostile re-read from scratch. No carry-forward
-from cycle-1 accept.
+Cycle-1 partial failure acknowledged upfront: my cycle-1 read of feel:3 @24 gave benefit of
+the doubt on the "compound-locator" reading (two orientation-vectors on one verb). The rubric's
+one-clause discipline blocks that reading — the negative-vector "away from the stitch-house lane"
+was doing second-clause work even without a second finite verb. The fixer's deletion was correct;
+this reviewer's cycle-1 accept on feel:3 was in error on that entry. The three surviving entries
+were not the source of that error and have not changed since cycle-1.
 
 ---
 
@@ -29,94 +30,89 @@ from cycle-1 accept.
 
 ACCEPT.
 
-Cite-index walk: feel:2 @10 back=Y, no co-citations. Proto-line @10: "taylor-hebert-kl-122ac
-holds the feet." No NI fires at @10 (narrator entries are at @3, @4, @8, @11, @12, @21,
-@24, @26, @27 — nothing at @10). POV non-redundancy is clean by absence.
+Cite-index walk: feel:2 @10 back=Y, lonely entry (no co-citations). Proto-line @10:
+"taylor-hebert-kl-122ac holds the feet." No NI fires at @10 — narrator entries sit at @3,
+@4, @8, @11, @12, @21, @24, @26, @27. POV non-redundancy is clean by absence, not by
+judgment call.
 
-Q1 attack: does "holds the feet" already convey the interior cost? No. The proto-line
-carries the act of restraint, not the body-bearing of the cost. A reader watching
-"holds the feet" sees static position; they do not see what it costs the body to hold
-that position while the insects are live and the crowd is compressing. The breath
-emptying out is the only signal that the stillness is load-bearing rather than passive.
-Q1 passes.
+Q1 attack: does "holds the feet" already convey the body-bearing of the cost? No. The
+proto-line carries the act of restraint; it does not carry what the body is doing to hold
+that restraint while the insects are live and the crowd compresses at @9. A static position
+read does not tell me whether stillness is load-bearing or passive. "Her breath empties out"
+is the only signal in the facet graph that answers that. Q1 passes.
 
-Q2 attack: is this worth a clause? The cost-of-restraint is the operational engine of
-the whole episode. Taylor's power-use is what she does not do. One somatic tell at the
-load-bearing beat is exactly worth a clause.
+Q2 attack: is it structural enough to earn a clause? Taylor's power-use is what she does
+not do. The cost-of-restraint is the episode's operational engine. One somatic tell at the
+threshold-hold earns a clause. Q2 passes.
 
 Form check: "her breath empties out" — subject (her breath), verb (empties), directional
-particle (out). One clause. No named feeling. No hedge. No comparison. No metaphor that
-names a feeling through figure. Clean.
+particle (out). One clause. No named feeling. No hedge. No comparison. No idiom
+feeling-naming. Clean.
 
-Hot-button: no information-asymmetry violation (no character knows something they
-weren't told); no established-limit bypass; no trust deposit. Clear.
+Hot-button sweep: no character-knows-something-they-weren't-told; no established-limit
+bypass; no unearned trust. Clear.
+
+---
 
 ## feel:1 @21 — oswyn-mudway-flea-bottom-elder: the hands settle at the apron-front | expressed: yes
 
 ACCEPT.
 
 Cite-index walk: feel:1 @21 back=Y, co-cited with exposition:8, narrator:5, state:1,
-vibes:5, vibes:6, vibes:7, vibes:12 — pile-up of 8. Every co-citation is either
-Taylor's POV facet (narrator:5 is Taylor's NI), external-world (sensory, vibes,
-exposition), or canonical-state. None of them can carry Oswyn's interior: NI is
-POV-only and cannot speak to a non-POV character's deliberateness; state-updates
-excludes mood/register by design; vibes is environmental tone. This entry is the only
-vehicle for distinguishing Oswyn's deliberate composure from reflex.
+vibes:5, vibes:6, vibes:7, vibes:12 — 8-entry pile-up. Every co-citation fires outward:
+narrator:5 is Taylor's NI (POV-only, cannot reach Oswyn's interior); state:1 is canonical
+state (excludes mood/register); vibes and exposition are environmental tone and world-build.
+None of the eight can show whether Oswyn took the lane-mouth by deliberate choice or reflex.
 
-Q1 attack: pile-up density could suggest the beat is already fully loaded. But density
-of external signals is not density of interior signal. The 8 co-citations all fire
-outward (what happens in the scene, what Taylor notices, what the tone is). None of
-them answer whether Oswyn is choosing this. The hands-settling-to-apron-front is
-the composure-tell that answers that question. Q1 passes.
+Q1 attack: pile-up density is high but it is density of external signal, not interior signal.
+The gap feel:1 fills is not covered by anything else in the graph. Q1 passes.
 
-Q2 attack: is it structural? Yes. Whether Oswyn took the lane-mouth on instinct or by
-deliberate choice is faction-relevant information. A reader who tracks secondary
-characters for what they know and when they know it needs this tell here. The
-composure-tell says she is choosing, not reacting — that is a board-read, not a
-decoration.
+Q2 attack: whether Oswyn is choosing this is faction-relevant information. "The hands settle
+at the apron-front" with expressed:yes means any attentive in-scene observer could read her
+composure — she is showing deliberate cover to whoever is watching. That is operational: it
+tells me this is a character who knows how to manage her presentation under pressure. Worth
+a clause at the pivot beat.
 
 Form check: "the hands settle at the apron-front" — subject (the hands), verb (settle),
-locator (at the apron-front). One clause. No named feeling. No hedge. No metaphor.
-Clean.
+locator (at the apron-front). One clause. No named feeling. No hedge. No comparison. Clean.
 
-Hot-button: "new character earning trust without paying for it" — Oswyn has already
-taken the lane-mouth (the action is in the proto-line). The feeling-flag adds
-legibility to her deliberateness, not credibility. Trust is not being deposited; the
-tell is information about her attentional quality, not a narrative endorsement. Does
-not fire.
+Hot-button: "new character earning trust without paying for it" — Oswyn has already acted
+(she took the lane-mouth; that is in the proto-line). The feeling-flag adds legibility to
+the quality of that action, not a credibility grant from the narrative. The tell is
+information about her attentional management, not an endorsement. Hot-button does not fire.
+
+---
 
 ## feel:4 @27 — wren-stitch-maker-flea-bottom-ward: her eyes lead her head toward taylor | expressed: no
 
-ACCEPT — with named tension.
+ACCEPT — hot-button pressure named and discharged.
 
 Cite-index walk: feel:4 @27 back=Y, co-cited with exposition:9, narrator:6, state:9,
-vibes:9, vibes:10 — pile-up of 6. Narrator:6 is Taylor's NI at @27; state:9, exposition:9,
-vibes:9, vibes:10 are all external. None carry Wren's interior.
+vibes:9, vibes:10 — 6-entry pile-up. Narrator:6 is Taylor's NI at @27. State:9 is canonical
+state (excludes interior register). Exposition:9 and vibes:9, vibes:10 are environmental and
+world-tone. None carry Wren's quality of attention.
 
 Q1 attack: proto-line @27 reads "wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac."
-The facing is the action. "Eyes lead her head" claims Wren tracked Taylor before
-committing to the turn. The proto-line cannot carry that distinction — a facing can
-be reflex, command-response, or pre-cognitive tracking; the proto-line does not say
-which. The feeling-flag adds the quality of attention (tracking before moving) that
-the proto-line and co-cited facets cannot produce. Q1 passes.
+Facing is the act. Eyes-before-head claims Wren tracked Taylor before committing to the turn.
+That distinction — tracking-then-committing vs. reflex-facing vs. socially-responding — is not
+carried by the proto-line or any co-citation. expressed:no means this is interior-only; no
+in-scene character reads the tell. The reader reads it. Q1 passes.
 
-Q2 attack: first contact-beat of a new faction-adjacent character. The quality of
-attention matters here — is Wren reacting or watching? Eyes-before-head says watching.
-This is operational for a cape-fic reader who tracks who-notices-what-when at
-introduction beats. Worth a clause.
+Q2 attack: first-contact beat of a new character. The quality of attention at introduction
+is operational for a cape-fic reader who tracks who-notices-what-when. Eyes-before-head says
+Wren was reading the situation before committing her body. That shapes how I model her going
+forward. Worth a clause.
 
 Form check: "her eyes lead her head toward taylor" — subject (her eyes), verb (lead),
-object (her head), directional phrase (toward taylor). One clause. No named feeling.
-No hedge. No comparison. Clean.
+object (her head), directional phrase (toward taylor). One clause. No named feeling. No
+hedge. No comparison. Clean.
 
-Hot-button tension named: "new character earning trust without paying for it" is the
-applicable pressure here. The tell marks Wren as observant-before-acting. This is not
-a trust deposit — it is an attentional-quality signal — but it does introduce Wren as
-perceptually sharp at her entry beat. The cape-fic reader distinguishes: trust means
-the narrative endorses her reliability; observational quality means she notices things.
-Noticing things is not trust. The expressed-flag is "no" — interior-only, in-scene
-characters do not read this. No in-scene credibility grant is happening. Hot-button
-does not fire.
+Hot-button: "new character earning trust without paying for it" is the applicable pressure.
+Addressed directly. expressed:no — the tell is interior-only; no in-scene character receives
+a credibility signal from it. The tell marks an observational quality, not a reliability
+endorsement. Noticing before moving is not the same as earning trust. Wren has paid nothing
+and been credited with nothing — the flag only opens a question about what kind of watcher
+she is. Hot-button does not fire.
 
 ---
 
@@ -126,31 +122,39 @@ does not fire.
 
 ---
 
+# File-shape note (adversarial observation — not a verdict-changer for this gate)
+
+Three fires on 27 bones = 11.1%. The rubric's per-episode sparsity target is 2-5%, which
+scales linearly to approximately 0.5–1.4 fires for a 27-bone episode. The cycle-1 fixer's
+"flag-006 auto-resolved (1/27 = 3.7%)" appears to have calculated Taylor's per-character
+count only, not the total episode count. Three fires across three characters at 11.1% is
+above band.
+
+This is an auditor-domain finding, not an audience verdict issue. All three fires are
+individually load-bearing on structurally significant beats (power-threshold hold at @10,
+witch-label pivot at @21, new-character first-contact at @27). None is inert filler. The
+cape-fic reader does not reject individually earned entries because the aggregate percentage
+is over-band on a short episode. Flagged here for convergence-trace completeness; the
+auditor should confirm whether the sparsity flag was correctly resolved per total episode
+count or per-character count.
+
+---
+
 # Convergence trace
 
-The auditor's cycle-2 confirm report (facets-cycle2-audit-confirm.md) contains no
-HARD findings against the feeling facet. The one live HARD (fault-C2C-001) is against
-the dialogue sidecar's sensory:2 @16 citations — feeling facet is not in scope for
-that fault. Flag-C2C-001 (pile-up @21 count discrepancy) is advisory and internally
-consistent in the current cite-index; feel:1 @21 membership at the 8-cite pile-up is
-confirmed by the co-list propagation at all seven co-members.
+The auditor's cycle-2 confirm report (facets-cycle2-audit-confirm.md) has no HARD findings
+against the feeling facet. The live HARD (fault-C2C-001) targets the dialogue sidecar's
+sensory:2 @16 citations — feeling facet is not in scope. Flag-C2C-001 (pile-up @21 count
+discrepancy) is advisory and internally consistent in the current cite-index; feel:1's
+membership at the 8-cite pile-up is confirmed by co-list propagation across all seven
+co-members.
 
-The auditor's flag noting "feeling facet file not accessible" during the cycle-2 audit
-is addressed by this adversarial reading: the three per-character slice files are on
-disk and consistent with the cite-index entries. No discrepancy found between
-per-character slice files and the consolidated feeling.md.
+The note that the feeling facet file was "not accessible" during the cycle-2 audit is
+addressed here: all three per-character slice files (feeling-taylor-hebert-kl-122ac.md,
+feeling-oswyn-mudway-flea-bottom-elder.md, feeling-wren-stitch-maker-flea-bottom-ward.md)
+are on disk and consistent with the consolidated feeling.md and the cite-index entries.
 
-The fixer's deletion of feel:3 (and-facets-cycle1-fixes-feeling.md) correctly removed
-the Q1-failing entry. The surviving three entries were not touched by the cycle-1 fixer
-and have not changed since cycle-1. This cycle-2 re-read finds them defensible under
-hostile pressure.
-
-Cycle-1 partial failure acknowledged: my cycle-1 ACCEPT gave benefit of the doubt on
-feel:3's "compound locator" reading. The rubric's one-clause discipline (rubric-feeling.md
-§One-clause form discipline) blocks the compound-directional reading I used; the second
-orientation-vector was doing the work that a second clause does even without a second
-finite verb. The fixer's deletion was the correct call and this reader's cycle-1 accept
-on feel:3 was in error on that entry.
-
-No auditor findings map to feel:1, feel:2, or feel:4. No convergence conflicts on
-surviving entries.
+The deletion of feel:3 removed the only entry this reviewer had accepted in error. The three
+surviving entries were not touched by the cycle-1 fixer and were not the source of the cycle-1
+acceptance error. Fresh hostile reads above confirm all three are defensible. No convergence
+conflicts on surviving entries.
