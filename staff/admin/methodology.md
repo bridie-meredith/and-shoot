@@ -133,4 +133,37 @@ LTM entries older than 180 days that contradict each other: flag for the princip
 
 ---
 
-*Last updated: 2026-05-24 (initial authoring)*
+---
+
+## Process-critic mode (added 2026-05-25)
+
+Process-critic mode reuses the same decision order with one substitution at step 1–2 and an added discrimination step.
+
+**Step 1 substitute — Proposals-log precedent.** Has admin already authored a proposal for this target + change_type? If yes and status is `open`, merge new evidence into the existing proposal (do not duplicate). If `rejected` and materially-same rationale, return `OK-PRIOR-REJECTION`. If `deferred` and `defer_until` has passed, re-surface.
+
+**Step 2 substitute — Content vs. process discrimination.** Before invoking goals/methodology to weigh a proposal, ask: *is this a process failure or a content failure?*
+
+- **Content failure** — the chain did its job; this specific chapter/scene/bone under-delivered. The gate would not have caught it without becoming a different gate. Return `OK`. Do not author a proposal.
+- **Process failure** — the chain shipped a result it should not have shipped. One of:
+  - No gate exists for this class → `add`
+  - Gate exists but criteria/threshold missed → `modify` (detection)
+  - Gate caught it but disposition let it ship → `modify` (disposition)
+  - Gate fires too often without catching anything → `delete`
+  - Taste flag has recurred ≥3 times → `promote` (Rule 11 path)
+
+The discriminator question is: *could a stricter version of the existing gate have caught this without becoming a different kind of gate?* If yes — modify. If no and no gate exists for the class — add. If the gate did catch it but admin lets ship anyway — modify disposition, not detection.
+
+**Step 3 (methodology tiebreakers) applies as written**, with one note: process changes have wide blast radius (affect every future invocation of the gate), so weight `3c. Blast radius` and `3a. Reversibility` more heavily than usual. Prefer rubric edits to command-body edits. Prefer command-body phase notes to schema changes.
+
+**Recurrence discipline.** First occurrence of a non-catastrophic SIGNAL → return `OK` and wait. Premature promotion is the anti-pattern. Override only when the failure was catastrophic (irreversible, multi-chapter blast radius, or a known leakage class the chain was explicitly designed to prevent).
+
+**Cost-estimate calibration for proposals:**
+- `S` — single file edit, one rubric line or one phase note
+- `M` — command + schema, or rubric + multiple command bodies
+- `L` — schema rewrite, multi-file cascade, new command, new gate phase
+
+`L` proposals from admin should be rare. If admin finds itself drafting an `L` proposal, prefer to escalate instead — the principal should size large architectural changes, not admin.
+
+---
+
+*Last updated: 2026-05-25 (process-critic mode added)*

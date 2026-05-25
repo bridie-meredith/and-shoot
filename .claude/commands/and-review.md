@@ -52,6 +52,17 @@ All reports persist to active-project/staff/reviews/<subcommand>-<target>-<times
 3. **Phase 2 — Dispatch reviewers in parallel.** Audience persona forks per persona; dramatist; auditor; orchestrator-critic for `verdict`; per-facet rubric runners for `facets`.
 4. **Phase 3 — Aggregate findings.** Structured report. Classify HARD / SIGNAL / TASTE per `schemas/audit-report.schema.md`.
 5. **Phase 4 — Persist.** `active-project/staff/reviews/<subcommand>-<target>-<timestamp>.md`. Surface summary + path. Optionally offer to materialize findings into a fix queue for the appropriate authoring command (e.g. HARD findings on `chunk b01c03` → fix queue for `/and-substance chapter b01c03 revise`).
+6. **Phase 4.5 — Admin process-critic dispatch (URI-ADMIN-PROCESS-CRITIC, 2026-05-25; non-blocking).** If the persisted report contains any HARD finding OR if the subcommand emitted a REVISE / FAIL / NOT-SUCCESSFUL verdict (e.g. `verdict` subcommand orchestrator-critic NOT-SUCCESSFUL; `bones` subcommand FAIL on fidelity; `staging` subcommand BLOCK-level findings), dispatch admin in process-critic mode. Non-blocking — the run exits per Phase 4 whether or not admin returns.
+   - `subagent_type: admin`
+   - prompt carries:
+     - `mode: process-critic`
+     - `trigger.reason: failure`
+     - `trigger.source_report: <Phase 4 persist path>`
+     - `trigger.source_verdict: <verdict string + HARD/SIGNAL counts>`
+     - `gate_path: .claude/commands/and-review.md#<subcommand>` (named subcommand the verdict came from)
+     - Optional: `secondary_gate_paths: [<the upstream command-body or rubric the subcommand was reviewing, e.g. .claude/commands/and-write.md#phase-6 when reviewing bones>]`
+   - Admin's return logged in the report tail under `## admin-process-critic`. New proposals land in `staff/admin/process-proposals.md`. See CLAUDE.md Rules §13 and `schemas/admin-proposal.schema.md`.
+   - On clean PASS / ACCEPT / SUCCESSFUL across all reviewers: skip the dispatch.
 
 ---
 

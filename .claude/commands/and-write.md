@@ -307,6 +307,25 @@ Save full bone-gate report to `staff/auditor/write-<chapter>-bone-gate.md`.
 
 ---
 
+## Phase 6.5 — Admin process-critic dispatch (URI-ADMIN-PROCESS-CRITIC, 2026-05-25; non-blocking)
+
+If the Phase 6 bone-gate verdict carries any HARD finding OR any SIGNAL that reached emit with disposition `accepted` rather than `remediated`, dispatch admin in process-critic mode. Non-blocking — Phase 7 proceeds whether or not admin returns.
+
+Dispatch:
+- `subagent_type: admin`
+- prompt carries:
+  - `mode: process-critic`
+  - `trigger.reason: failure`
+  - `trigger.source_report: active-project/staff/auditor/write-<chapter>-bone-gate.md`
+  - `trigger.source_verdict: <HARD-count / SIGNAL-accepted-count summary>`
+  - `gate_path: .claude/commands/and-write.md#phase-6`
+
+Admin's return (`OK | OK-MERGED | OK-PRIOR-REJECTION | OK-RE-SURFACED | PROCESS-CHANGE-PROPOSED PROP-<NNNN> | ESCALATE`) is logged in the bone-gate report tail under `## admin-process-critic` but does not gate emit. New proposals land in `staff/admin/process-proposals.md` for principal triage. See CLAUDE.md Rules §13 and `schemas/admin-proposal.schema.md`.
+
+If verdict is fully clean (no HARDs, all SIGNALs remediated), skip the dispatch.
+
+---
+
 ## Phase 7 — Emit + downstream-gate pre-verify + scene-map co-emit
 
 Two artifacts written, both derived from `chapters[].scenes[].bones[]` in showrunner memory.

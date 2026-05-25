@@ -591,6 +591,30 @@ A `validated` verdict requires at least one shared finding across the two paths.
 
 ---
 
+## Phase 5c — Admin process-critic dispatch (URI-ADMIN-PROCESS-CRITIC, 2026-05-25; non-blocking)
+
+Fire on either of:
+- Any REVISE verdict in the final-cycle Phase 5b audience-gate report (3-of-3 ACCEPT not achieved on any facet)
+- Any cap-burn DELETE applied to satisfy a Phase 5b gate (URI-FACETS-CAP-BURN-SEMANTICS used — a sign that the chain shipped by deleting evidence rather than fixing the facet)
+
+Non-blocking — Phase 6 persist proceeds.
+
+Dispatch:
+- `subagent_type: admin`
+- prompt carries:
+  - `mode: process-critic`
+  - `trigger.reason: failure`
+  - `trigger.source_report: active-project/staff/auditor/facets-audience-gate-r<N>.md` (final cycle)
+  - `trigger.source_verdict: <REVISE-facet-list / cap-burn summary>`
+  - `gate_path: .claude/commands/and-facets.md#phase-5b`
+  - Optional: `secondary_gate_paths: [<facet-rubric-path>, ...]` for rubric-level proposals
+
+Admin's return logged in the Phase 5b report tail under `## admin-process-critic`. New proposals land in `staff/admin/process-proposals.md`. See CLAUDE.md Rules §13.
+
+If final-cycle Phase 5b is clean ACCEPT 3-of-3 across all facets AND no cap-burns were used, skip the dispatch.
+
+---
+
 ## Phase 6 — Persist + orchestrator-critic verdict
 
 ### 6a. Persist

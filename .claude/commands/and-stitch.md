@@ -699,6 +699,26 @@ The post-ship process audit on b01c01 (2026-05-25) confirmed the same-pattern≥
 
 ---
 
+## Phase 9.5 — Admin process-critic dispatch (URI-ADMIN-PROCESS-CRITIC, 2026-05-25; non-blocking)
+
+Fire on any Phase 9 verdict other than clean PASS — that is, on **FAIL**, on **PASS-WITH-DEPTH-PASS-REQUIRED**, or on PASS with `signal_clusters[]` non-empty even when the verdict was clean (recurring cluster shape across chapters is itself a process signal). Non-blocking — the run exits per Phase 9's routing whether or not admin returns.
+
+Dispatch:
+- `subagent_type: admin`
+- prompt carries:
+  - `mode: process-critic`
+  - `trigger.reason: failure` (FAIL / PASS-WITH-DEPTH-PASS-REQUIRED) or `trigger.reason: postop` if invoked after a downstream `/and-postop` convergence reports back to stitcher
+  - `trigger.source_report: active-project/staff/reviews/coldread-<book><chapter>-<timestamp>.md`
+  - `trigger.source_verdict: <PASS | PASS-WITH-DEPTH-PASS-REQUIRED | FAIL>`
+  - `gate_path: .claude/commands/and-stitch.md#phase-9`
+  - Optional: `secondary_gate_paths: [.claude/commands/and-write.md#phase-6]` when Phase 9 routes to `/and-write revise` — a FAIL at the terminal gate is evidence the upstream gate let something through
+
+Admin's return logged in the cold-read report tail under `## admin-process-critic`. If a cluster pattern is recurring (admin will find prior occurrences in `staff/reviews/`), expect a `PROCESS-CHANGE-PROPOSED` with `change_type: modify` against the cluster-trigger thresholds — that's the URI-STITCH-SIGNAL-CLUSTER threshold being tuned via accumulated evidence. See CLAUDE.md Rules §13.
+
+On clean PASS with no clusters: skip the dispatch.
+
+---
+
 ## Re-stitch on feedback
 
 If `staff/stitcher/feedback-<slug>.md` was read at Phase 0 with new line-level directives or PROMOTED pattern-level entries, the run proceeds as a re-stitch:

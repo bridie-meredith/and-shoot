@@ -102,6 +102,24 @@ Update `chapters[<slug>].postop = {ran_at, mode, personas_used: [...], reports: 
 
 ---
 
+## Phase 3.5 — Admin process-critic dispatch (URI-ADMIN-PROCESS-CRITIC, 2026-05-25; ALWAYS fires)
+
+Postop's job is to find what got past the chain. Admin's job is to translate that into a process-change proposal. Therefore process-critic mode auto-fires on **every** postop run, regardless of convergence verdict — even on `pattern: clean`. (A clean convergence run still feeds admin the report; admin returns `OK` and the dispatch is cheap.)
+
+Dispatch:
+- `subagent_type: admin`
+- prompt carries:
+  - `mode: process-critic`
+  - `trigger.reason: postop`
+  - `trigger.source_report: <path to the postop convergence summary; the routine/milestone fork-report paths are linked from the convergence entry>`
+  - `trigger.source_verdict: postop-convergence:<pattern>` (e.g. `postop-convergence:body-staging-gap`, `postop-convergence:divergent`, `postop-convergence:clean`)
+  - `gate_path: .claude/commands/and-postop.md#phase-3`
+  - `secondary_gate_paths: [<upstream gate paths the convergence pattern implicates — typically /and-write Phase 6 and/or /and-stitch Phase 9 if the cluster names a bone-level or stitch-level gap>]`
+
+Non-blocking — Phase 4 summary proceeds. Admin's return logged under `chapters[<slug>].postop.admin_process_critic = {verdict, proposal_id, dec_id, summary}` in showrunner memory. See CLAUDE.md Rules §13 and `schemas/admin-proposal.schema.md`.
+
+---
+
 ## Phase 4 — Summary
 
 Print a concise summary: mode, fork verdicts in a table, convergence pattern, recommended next step (revise --from-signals | continue | none).
