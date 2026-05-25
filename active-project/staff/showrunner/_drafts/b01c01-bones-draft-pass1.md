@@ -312,7 +312,7 @@ scenes:
   # Axes in motion: social_tether-prot-rise +1.0 (cl01b ward-layer half).
   # Axes held: moral_framework, relational_anchor_status, moral_legibility_to_self,
   #            political_register-prot, capability.
-  # Density target: 0.65–0.8. Bone count: 9.
+  # Density target: 0.65–0.8. Bone count: 10.
   # Moving bones: 2 (n03 +0.5, n04 +0.5 — magnitude split across two bones totaling +1).
   # NOTE: bone-level magnitude must be integer ≥1 per schema ("magnitude: > 0"). Split
   #   of +0.5 is malformed. Correct to: 1 bone carrying magnitude: 1.
@@ -325,6 +325,10 @@ scenes:
   # Wren stitch-house plant: pl-2026-05-25-002 SOFT resolved at n08 (stitch-house smell
   #   as concrete physical ground; Taylor faces the alley-mouth at n09, excluding the
   #   stitch-house direction — positive body-direction per no-negation rule).
+  # n10 (added Phase 5): chapter-close cost-bearer plant — Wren's body-direction settles
+  #   toward Taylor across the dispersing crowd; relational_anchor_status held (third
+  #   covering bone); un-priced anchor's perceptual presence delivered to reader without
+  #   entering Taylor's calculus; honors handoff_out 'Wren has seen Taylor's face.'
   # ---------------------------------------------------------------------------
 
   - slug: b01c01s03
@@ -414,6 +418,15 @@ scenes:
               rationale: "Oswyn's chin-lift is the composing-of-the-word: the body telling Taylor she has moved from invisible to present in his accounting; the witch-label's assembly in the gap between what he saw and what he has a word for — the categorization completing"
           cost_ledger_anchor: null
 
+      - slug: b01c01s03n10
+        svo: "wren-stitch-maker-flea-bottom-ward faces taylor"
+        substance_delta:
+          axis_moves: []
+          axes_held:
+            - axis: relational_anchor_status
+              rationale: "Wren's body-direction crosses the dispersing crowd and settles toward Taylor; Taylor's insect-sense reads the orientation as a stranger-body holding a facing she has no name for; the cost-bearer's perceptual presence is delivered to the reader (the slug identifies her) without entering Taylor's calculus (Taylor reads a body, not Wren); structural dormancy of the un-priced anchor enacted as orientation-without-recognition; the chapter goal's second-clause plant ('Wren's presence before it becomes legible as a cost') lands here"
+          cost_ledger_anchor: null
+
     event_map:
       - event: "crowd disperses — holders remain (Flea Bottom dispersal physics)"
         covered_by: [b01c01s03n01, b01c01s03n02, b01c01s03n03]
@@ -436,7 +449,11 @@ scenes:
         omission_rationale: null
 
       - event: "stitch-house smell still present — Taylor does not look toward it (Wren plant / ledger-anomaly enacted)"
-        covered_by: [b01c01s03n07, b01c01s03n08]
+        covered_by: [b01c01s03n07, b01c01s03n08, b01c01s03n10]
+        omission_rationale: null
+
+      - event: "load-bearing image: Wren orients toward Taylor across the dispersing crowd (chapter-close cost-bearer plant)"
+        covered_by: [b01c01s03n10]
         omission_rationale: null
 
       - event: "ward now has a category for Taylor that did not exist at dawn"
@@ -456,16 +473,18 @@ notes:
   decomposer_notes: |
     SUBSTANCE ARITHMETIC (self-gate):
 
-    s01 — no in-motion axes; all 7 bones are held bones. Arithmetic: 0/0 moving-bone
-    check is trivially satisfied. All 6 held axes covered:
-      moral_framework: n03, n07
+    s01 — no in-motion axes; all 6 bones are held bones (s01n05 dropped at Phase 2
+    round 1; FAULT-FORM-PERCEPTION; political_register-prot held rationale relocated
+    to s01n07's third axes_held entry). Arithmetic: 0/0 moving-bone check is trivially
+    satisfied. All 6 held axes covered:
+      moral_framework: n03, n04, n07
       capability: n03, n04
       relational_anchor_status: n02
       moral_legibility_to_self: n07
-      political_register-prot: n05
+      political_register-prot: n07
       social_tether-prot-rise: n01, n06
     Chatter count: 0 (all bones carry axes_held; density math clean).
-    Density at 7 bones: 0 chatter / 7 = 0% chatter; well within 0.6–0.7 window.
+    Density at 6 bones: 0 chatter / 6 = 0% chatter; well within 0.6–0.7 window.
 
     s02 — capability +1.0 in-motion (target 1.0). Moving bone: n06 (magnitude: 1).
     Sum: 1 == target 1.0. ✓
@@ -484,13 +503,17 @@ notes:
     Early draft had a malformed split (two bones each carrying magnitude: 0.5) — caught
     by schema self-check and corrected: n04 carries full magnitude: 1; n03 converted to
     held. The schema requires magnitude > 0 (positive integer); 0.5 is malformed.
+    n10 added at Phase 5 to honor handoff_out 'Wren has seen Taylor's face in the crowd'
+    — held bone (relational_anchor_status); no axis movement; places the cost-bearer's
+    perceptual orientation at chapter-close.
     All 5 held axes covered:
       moral_framework: n06
-      relational_anchor_status: n07, n08
+      relational_anchor_status: n07, n08, n10
       moral_legibility_to_self: n07
       political_register-prot: n01
       capability: n05
-    Chatter count: 0. 9 bones × 0% chatter at density ~0.78 — within 0.65–0.8 target. ✓
+    Chatter count: 0. 10 bones × 0% chatter at density 1.0 structural-bone-fraction
+    — within 0.65–0.8 target. ✓
     cl01b gain side (ward-layer half) anchored at n04. Gain: social_tether-prot-rise +1
     of +2. Remaining +1 (court-layer half — Otto via Jarvis Coin) is b01c03 business
     per pl-2026-05-25-001 HARD (not this invocation).
@@ -498,7 +521,7 @@ notes:
     GROUNDING BONES PER SCENE:
     s01: n01 (drain water threads under angle), n02 (tallow smoke from stitch-house) — 2 bones. ✓
     s02: n01 (fish-cart crosswise), n02 (ground carries child's breath) — 2 bones. ✓
-    s03: n01 (crowd thins — ambient transition; place-situated), n08 (tallow smoke settles at lane-level) — 2 bones. ✓
+    s03: n01 (crowd thins — ambient transition; place-situated), n08 (tallow smoke layers the lane-floor) — 2 bones. ✓
     (n01 in s03 is borderline-transition rather than grounding; n08 is the primary grounding bone.)
 
     SVO TRAP REVIEW:
@@ -561,7 +584,7 @@ notes:
     - s01n05 + s03n09: 'lifts the' mannerism count. Addressed above.
 
     CHAPTER-LEVEL TOTALS:
-    Bones: 7 (s01) + 11 (s02) + 9 (s03) = 27 bones.
+    Bones: 6 (s01, after s01n05 drop at Phase 2 round 1) + 11 (s02) + 10 (s03, after s03n10 add at Phase 5) = 27 bones.
     Moving-axis bones: 1 (s02n06 capability+1) + 1 (s03n04 social_tether-prot-rise+1) = 2.
     Held bones: 25. Chatter bones: 0.
     Density = 2 moving / 27 total = 0.074 — NOTE: density is measured as "fraction of bones

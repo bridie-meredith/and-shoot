@@ -250,3 +250,9 @@ criteria met: yes
 findings-applied: 3
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-25T03:00:00Z — write-b01c01-pass5
+dispatch: Phase 5 continuity audit fixes — 1 FAULT-STATE (add b01c01s03n10) + flag-001 (decomposer_notes total correction) + flag-002 (deferred, outside /and-write scope)
+target: active-project/staff/showrunner/_drafts/b01c01-bones-draft-pass1.md
+audit-report: active-project/staff/auditor/write-b01c01-pass5.md
+findings-queued: 3 (1 FAULT-STATE + 2 documentation flags; flag-002 deferred on dispatch)
