@@ -229,14 +229,10 @@ scenes:
               rationale: "Wren is in this crowd — the cost-bearer is in the frame as Taylor faces the child; anchor present-but-unregistered; Taylor does not turn toward the cost-bearer; anchor enacted as structural dormancy"
           cost_ledger_anchor: null
 
-      - slug: b01c01s02n10
-        svo: "taylor lifts the hands"
-        substance_delta:
-          axis_moves: []
-          axes_held:
-            - axis: social_tether-prot-rise
-              rationale: "hands-up posture is the witness-facing gesture that makes Taylor visible as the opener-of-the-crowd; tether does not move here — witnesses are present but ward-embedding has not yet registered; this is the action the crowd sees"
-          cost_ledger_anchor: null
+      # Phase 3 dramatist reorder 2026-05-25: n11 (voice — enabling act) precedes
+      # n10 (hands — closing visual the witnesses file). Chunk names crowd-image
+      # as "hands up and mouth shut": voice's work precedes the hands' signal
+      # that the work is done. Bone slugs unchanged; order swapped only.
 
       - slug: b01c01s02n11
         svo: "taylor raises the voice"
@@ -245,6 +241,15 @@ scenes:
           axes_held:
             - axis: moral_legibility_to_self
               rationale: "the voice-of-instruction is the deployment's final act; the accounting has not run on this event yet; Taylor reads the deployment as a one-time lapse; the scene ends before the ledger opens"
+          cost_ledger_anchor: null
+
+      - slug: b01c01s02n10
+        svo: "taylor lifts the hands"
+        substance_delta:
+          axis_moves: []
+          axes_held:
+            - axis: social_tether-prot-rise
+              rationale: "hands-up posture is the witness-facing gesture that makes Taylor visible as the opener-of-the-crowd; tether does not move here — witnesses are present but ward-embedding has not yet registered; this is the action the crowd sees"
           cost_ledger_anchor: null
 
     event_map:
