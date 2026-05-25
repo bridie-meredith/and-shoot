@@ -215,3 +215,38 @@ criteria met: yes
 findings-applied: 15 (14 SVO patches + 1 bone drop with rationale relocation)
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-25T02:00:00Z — write-b01c01-pass2-round2
+dispatch: minimum-change patches for 3 faults from write-b01c01-pass2 round 2 re-audit (fault-001 s02n05 'inward', fault-002 s03n06 'in the lane', fault-003 s01 event_map stale reference)
+target: active-project/staff/showrunner/_drafts/b01c01-bones-draft-pass1.md
+audit-report: active-project/staff/auditor/write-b01c01-pass2.md
+findings-queued: 3
+
+## fault-001 — RESOLVED — 2026-05-25T02:01:00Z
+fault: b01c01s02n05 svo contained banned adverb 'inward' (FAULT-FORM-MODIFIER)
+scope: line
+change: svo recast from "the lane-mouth presses the crowd inward" to "the lane-mouth presses the crowd"; adverb stripped, direct object retained; axes_held (political_register-prot) and rationale unchanged; no deviation from recast_hint
+criteria met: yes
+
+## fault-002 — RESOLVED — 2026-05-25T02:02:00Z
+fault: b01c01s03n06 svo contained banned prepositional phrase of place 'in the lane' (FAULT-FORM-MODIFIER)
+scope: line
+change: svo recast from "the gap closes in the lane" to "the gap closes"; bare intransitive chosen over transitive recast (lower-risk minimum change; parallels 'the crowd thins', 'the insects propagate', 'the gap propagates' already passing); axes_held (moral_framework) and rationale unchanged; no deviation from recast_hint (bare intransitive was primary recommended candidate)
+criteria met: yes
+
+## fault-003 — RESOLVED — 2026-05-25T02:03:00Z
+fault: s01 event_map entry 'ward read only at surfaces' had covered_by: [b01c01s01n05] — dead reference to dropped bone (FAULT-EVENT-MAP-STALE-REFERENCE)
+scope: line
+change: covered_by updated from [b01c01s01n05] to [b01c01s01n02, b01c01s01n07]; s01n02 carries the smell surface-read (tallow smoke / stitch-house lane); s01n07 carries the relocated political_register-prot rationale naming the ward-read held at structural baseline; omission_rationale remains null (event has live coverage); no deviation from dispatch recommendation
+criteria met: yes
+
+## /and-write b01c01 Phase 2 round 2 — 2026-05-25
+
+- fault-001 (b01c01s02n05): "the lane-mouth presses the crowd inward" → "the lane-mouth presses the crowd" — adverb stripped
+- fault-002 (b01c01s03n06): "the gap closes in the lane" → "the gap closes" — bare intransitive, prep phrase of place stripped
+- fault-003 (s01 event_map): covered_by [b01c01s01n05] → [b01c01s01n02, b01c01s01n07] — dead reference replaced with two existing bones covering the ward-surface-read event
+
+## SESSION-END — 2026-05-25T02:03:00Z — write-b01c01-pass2-round2
+findings-applied: 3
+findings-skipped: 0
+exit: CLEAN

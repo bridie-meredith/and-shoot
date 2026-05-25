@@ -103,7 +103,7 @@ scenes:
         omission_rationale: null
 
       - event: "ward read only at surfaces — bodies moving, foot traffic, smell"
-        covered_by: [b01c01s01n05]
+        covered_by: [b01c01s01n02, b01c01s01n07]
         omission_rationale: null
 
       - event: "stitch-house smell two lanes over (Wren plant; relational_anchor dormancy)"
@@ -184,7 +184,7 @@ scenes:
           cost_ledger_anchor: null
 
       - slug: b01c01s02n05
-        svo: "the lane-mouth presses the crowd inward"
+        svo: "the lane-mouth presses the crowd"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -372,7 +372,7 @@ scenes:
           cost_ledger_anchor: null
 
       - slug: b01c01s03n06
-        svo: "the gap closes in the lane"
+        svo: "the gap closes"
         substance_delta:
           axis_moves: []
           axes_held:
