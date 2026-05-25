@@ -60,7 +60,9 @@ If the file is in `facet_paths`, read it. Skip silently if absent. Dependency or
 8. `metaphor-<book>-<chapter>.md` — figurative language per beat
 9. `exposition-<book>-<chapter>.md` — gloss content for first-mentions
 10. `interest-narrator-<book>-<chapter>.md` — narrative interest/voice at each beat
-11. Per-character dialogue files in `dialogue/<chapter>/<character>.md` — verbatim utterances
+11. Per-character dialogue files in `theater/dialogue/<character>.md` — verbatim utterances (chapter scope is implicit per active-project)
+
+**Note on per-character facet bundles.** Some facets ship as a per-character bundle rather than a single flat file (e.g. `feeling-<character>.md` × N characters, `state-updates-<character>.md` × N). Treat the bundle as one facet — if the caller passes the bundle in `facet_paths`, read all files in the bundle; if the caller omits the bundle, read none of them. The bundle is atomic for ablation purposes.
 
 ### 3. Render
 

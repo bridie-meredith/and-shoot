@@ -21,7 +21,19 @@ For a stitched chapter, render the same bones 12 different ways (bones only; bon
 3. **Parking-lot scan (Rule 14).** Read `active-project/staff/showrunner/parking-lot.md`. Items matching `/and-ablate` + this scope: HARD → abort unless this run resolves; SOFT → carry to the Phase 4 report.
 4. Locate inputs:
    - `bones_path` = `active-project/theater/bones/<book>-<chapter>.md` (required)
-   - `facet_paths_all` = all `active-project/theater/facets/*-<book>-<chapter>.md` + all `active-project/theater/dialogue/<chapter>/*.md`
+   - **Facet bundles** (per-facet, may be a single file or a per-character set):
+     - `scene-map` = `active-project/theater/facets/scene-map-<book>-<chapter>.md`
+     - `state-updates` = `active-project/theater/facets/state-updates-*.md` (per-character bundle, treated as one facet; falls back to `state-updates.md` if no per-character files exist)
+     - `location-state` = `active-project/theater/facets/location-state-<book>-<chapter>.md`
+     - `sensory` = `active-project/theater/facets/sensory-<book>-<chapter>.md`
+     - `feeling` = `active-project/theater/facets/feeling-*.md` (per-character bundle, treated as one facet; falls back to `feeling.md`)
+     - `memory` = `active-project/theater/facets/memory-<book>-<chapter>.md`
+     - `vibes` = `active-project/theater/facets/vibes-<book>-<chapter>.md`
+     - `metaphor` = `active-project/theater/facets/metaphor-<book>-<chapter>.md`
+     - `exposition` = `active-project/theater/facets/exposition-<book>-<chapter>.md`
+     - `interest-narrator` = `active-project/theater/facets/interest-narrator-<book>-<chapter>.md`
+   - **Dialogue bundle**: all `active-project/theater/dialogue/*.md` (one file per speaker; chapter scope is implicit per active-project). Dialogue is always bundled with `full`.
+   - Missing flat-named facets are non-fatal but warn: a chapter genuinely without a facet (e.g. a chapter with no dialogue speakers, no memory beats) is valid; the absent facet's leave-one-out variant becomes equivalent to `full`.
 5. Build `staff/ablation/<book>-<chapter>-<timestamp>/` working directory.
 
 ---
