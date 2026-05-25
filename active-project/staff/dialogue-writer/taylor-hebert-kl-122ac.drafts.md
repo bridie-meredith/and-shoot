@@ -51,7 +51,7 @@ R1 BLIND. Authoring inputs: behavior card stack + speaker persona/ltm/stm/state 
   - No closing-clause-twist (would be a slip-tell against an adult — saved for entry 3, where it would also not appear; reserved instead for higher-pressure scenes).
 
 **card-signatures:** taylor-hebert §Cadence (short-when-pressure); taylor-hebert §Syntax (fragments, subject-implied openings); taylor-hebert-westeros §Vocabulary (period-plausible "the croup")
-**facet-licenses:** [DEFERRED-TO-R2] — at R2 will cite feeling-taylor-hebert-kl-122ac:@16 (somatic tell at the speech anchor: breath-out-before-the-swarm-goes timing; per persona-card Look "The tell: when her insect-sense picks up something relevant, her attention shifts fractionally before her body does"), and sensory-b01-c01:@16 (the body-vibration ground-read of the child's fever, which is the perceptual basis Taylor is reporting).
+**facet-licenses:** sensory:2 @16 (sound: crowd-ambient-murmur -> taylor-raised-voice — the perceptual surface that IS this utterance's anchor; co-cited with this entry at @16 in the locked cite-index); state:3 @12 (deployment-state: passive-subsistence-range -> active-crowd-yield-deployment — the deployment-already-happened that this diagnosis consolidates into instruction; the fever-not-croup information is what the deployment was for)
 
 ---
 
@@ -82,7 +82,7 @@ R1 BLIND. Authoring inputs: behavior card stack + speaker persona/ltm/stm/state 
   - No exclamation point on the imperative — taylor-hebert §Cadence "Periods over exclamation points. ... When she shouts, the prose says 'she shouted'; the line itself does not punctuate the shout." PASS.
 
 **card-signatures:** taylor-hebert §Cadence (short-when-pressure, periods-over-exclamation); taylor-hebert-kl-122ac §Voice ("voice that does not ask whether they will comply"); taylor-hebert §Direct-samples (calibration anchor "Status." — two-word imperative shape)
-**facet-licenses:** [DEFERRED-TO-R2] — at R2 will cite state-updates-env:@16 (the crowd-yield state-shift the imperative enacts) and feeling-taylor-hebert-kl-122ac:@16 (somatic tell — the breath-out-before-the-swarm-goes timing this line trades on; she has just deployed and the voice rides the same breath).
+**facet-licenses:** sensory:2 @16 (sound: crowd-ambient-murmur -> taylor-raised-voice — the imperative's perceptual surface; co-cited at the anchor); feel:1 @10 (Taylor's breath empties out — the breath-out-before-the-swarm-goes tell from the base persona-card Look section; the speech rides the same breath the deployment rode six bones earlier, and this imperative is the load-bearing utterance that breath was priming — speaker's own first-class somatic slice per rubric § contamination disciplines)
 
 ---
 
@@ -114,7 +114,7 @@ R1 BLIND. Authoring inputs: behavior card stack + speaker persona/ltm/stm/state 
   - taylor-hebert-westeros §Voice-tells "Refusal of childish affect" — the question is not wide-eyed-pleading; it is operational. (Even though this is the adult KL variant and not the eleven-year-old, the refusal-of-affect register propagates from base card.)
 
 **card-signatures:** taylor-hebert §Syntax (no rhetorical questions, parallel structure); taylor-hebert-kl-122ac §Voice ("voice that does not ask whether they will comply"); taylor-hebert-westeros §Vocabulary (period-plausible "Fetch")
-**facet-licenses:** [DEFERRED-TO-R2] — at R2 will cite interest-narrator-b01-c01:@16 (POV attention-frame: Taylor's eyes scanning crowd for the named-adult-she-can-route-to) and state-updates-taylor-hebert-kl-122ac:@16 (post-deployment state shift: Taylor has crossed the prohibition and is already routing to disengage, which IS the line's board-move).
+**facet-licenses:** sensory:2 @16 (sound: crowd-ambient-murmur -> taylor-raised-voice — the question+imperative's perceptual surface; co-cited at the anchor); state:5 @17 (posture: in-the-gap -> hands-up-mouth-shut-witness-facing — the post-speech persistent posture; the board-move of routing-to-known-adult IS what enables Taylor to immediately drop into mouth-shut at @17, the bone after; speaker's own first-class state slice per rubric § contamination disciplines, and the proximate downstream state-fire from the speech-act)
 
 ---
 
@@ -135,4 +135,4 @@ R1 BLIND. Authoring inputs: behavior card stack + speaker persona/ltm/stm/state 
 ## Entries shipped to dialogue file: 3
 ## Anchor: @16 (single)
 ## Per-anchor count: 3 (cap = 3; at cap)
-## Citation completeness: card-signatures resolved per entry; facet-licenses deferred-to-R2 with explicit resolution-target named per entry (audit-class CONSTRAINT § citation-completeness will SIGNAL on these placeholders at R1 — expected and acceptable per rubric R1 vs R2 differences; R2 resolves to the locked graph).
+## Citation completeness: card-signatures resolved per entry; facet-licenses RESOLVED at R2 (2026-05-25) against locked cite-index hash 0241e0529031804fa83d25c0fb7a5e0db2491571d2d83d9d9436c734627eca40 — entry 1 cites sensory:2 @16 + state:3 @12; entry 2 cites sensory:2 @16 + feel:1 @10; entry 3 cites sensory:2 @16 + state:5 @17. All citations resolve to entries on disk; rubric § V2 facet-citation extension satisfied per entry.

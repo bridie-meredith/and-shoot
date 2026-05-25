@@ -2,6 +2,8 @@ character: taylor-hebert-kl-122ac
 episode: b01-c01
 behavior-card: taylor-hebert-westeros
 date: 2026-05-25
+r2-judged: 2026-05-25
+r2-cite-index-hash: 0241e0529031804fa83d25c0fb7a5e0db2491571d2d83d9d9436c734627eca40
 routing_note: |
   Routing (a) per pl-2026-05-25-004. Bone 16 SVO "taylor-hebert-kl-122ac raises
   the voice" is physical-action shape, but the s02 chunk text is explicit that
