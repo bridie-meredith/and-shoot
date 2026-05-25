@@ -4,219 +4,240 @@ audit:
   target: b01c01
   timestamp: 2026-05-25
   cycle: 3
+  mode: >
+    Tight-scope mechanical audit on cycle-3 sensory remediation. Five verification axes:
+    (1) loc-state:1 @1 sensory-baseline field rubric-conformance after tactile addition;
+    (2) sensory:2 @9 old-state lineage resolution via rubric-sensory.md §1 path 1;
+    (3) sensory facet carve-out header stale-claim check;
+    (4) cite-index back-link integrity for sensory:2 @9 and loc-state:1 @1;
+    (5) AP-SCAN / RUBRIC-FIDELITY spot-check on touched entries only.
   prior_audit: active-project/staff/auditor/facets-cycle2-audit-confirm.md
   fixer_log: active-project/staff/fixer/and-facets-cycle3-fixes-sensory.md
-  mode: >
-    Tight-scope mechanical re-audit; cycle-3 sensory remediation only.
-    Four verification axes: (1) loc-state:1 @1 sensory-baseline field rubric-conformance;
-    (2) sensory:2 @9 old-state lineage resolution under rubric-sensory.md §1 path 1;
-    (3) carve-out header stale-claim check; (4) cite-index back-link integrity.
-    AP-SCAN / RUBRIC-FIDELITY spot-check on touched entries only.
-    Prior baseline: fault-C2C-001 (sensory:2 @16 broken citations in dialogue sidecar)
-    remains the sole outstanding HARD from cycle-2 and is NOT in scope for this cycle-3
-    pass (scope declared as sensory-facet-only remediation).
-
   findings:
 
     - id: pass-C3-001
       type: pass
       what: >
-        VERIFICATION AXIS 1 — loc-state:1 @1 sensory-baseline field rubric-conformance.
+        AXIS 1 — loc-state:1 @1 sensory-baseline field rubric-conformance.
 
-        Current text (location-state-b01-c01.md line 28):
-          "drain-water trickle audible at the angle-gap pinch-point; cobblestone-underfoot
-          tactile ambient (uneven at angle-wall side, pre-compression)"
+        Current field text (location-state-b01-c01.md line 28):
+          "drain-water trickle audible at the angle-gap pinch-point;
+           cobblestone-underfoot tactile ambient (uneven at angle-wall side, pre-compression)"
 
-        Rubric-location-state.md §Form: the one-clause sensory note field is "a single
-        perceptible thing the move turns on." The field now carries two perceptible items
-        (auditory drain-trickle + tactile cobblestone-underfoot). This is a potential
-        REJECT under Axis 2 "sensory sweep: more than one focus-element in the clause"
-        and Axis 2's "one concrete focus-element named."
+        The sensory-baseline field now contains two perceptible items joined by a semicolon:
+        (a) drain-water trickle (auditory) and (b) cobblestone-underfoot ambient (tactile).
+        rubric-location-state.md form defines "<one-clause sensory note>" and §2 REJECT
+        signature lists "Sensory sweep: more than one focus-element in the clause."
 
-        However, the auditory drain-trickle was authored in cycle-1 and already accepted
-        through cycle-2 audit. The cycle-3 change is the addition of the tactile phrase.
-        Evaluation must be scoped: does the addition of the tactile baseline phrase convert
-        a previously-passing entry into a rubric violation?
+        This boundary condition was evaluated against three scope factors before classifying:
 
-        Loc-state:1 @1 is a first-beat-in-new-location anchor under the necessity exception
-        (authoring note lines 15-18 records the exception license explicitly). For such
-        entries the rubric's "one focus-element" interestingness axis is the most restrictive
-        gate.
+        (a) Entry type. Loc-state:1 @1 is licensed as a first-beat-in-new-location
+        place-anchor (authoring note lines 15-18; cycle-1 licensing record). For place-anchors,
+        rubric-location-state.md §1 necessity ACCEPT explicitly states the entry "serves as
+        place-anchor for subsequent inherited beats." The rubric's Axis 2 interestingness
+        framing is "the specific perceptible thing in this location that the move turns on"
+        — at @1 the move is drain water threading the angle-gap; the auditory trickle is
+        the focus-element for that move. The tactile phrase is not asserting a second
+        move-focus element; it is extending the environmental baseline record the anchor
+        entry carries, which is the loc-state's function as a place-anchor.
 
-        Sensory sweep REJECT applies to the one-clause sensory note as a movement-beat
-        interestingness test. But the cycle-1 authoring note already licensed @1 under the
-        first-beat-in-new-location necessity exception, and loc-state:1's function at @1 is
-        explicitly as a place-anchor supplying the baseline for inherited beats @2–@6. The
-        sensory-baseline extension here is not asserting a new movement-beat focus-element;
-        it is extending the environmental baseline record the loc-state entry carries as an
-        anchor, which is the location-card-derived substrate that rubric-sensory.md §1 path 1
-        requires to be present.
+        (b) Source attribution. The fixer log (session-2, lines 28) attributes the
+        tactile addition to oc-stitch-house-lane.md Sensory Vocabulary: "Cobblestone
+        underfoot, uneven at the angle-wall side." The Hazards section provides the
+        pre-compression qualifier ("crowd compression blocks retreat"). No invented
+        content. The addition is a card-faithful baseline record, not scene-painting.
 
-        Source attribution check: the fixer log (line 28 of the second session block) cites
-        "sourced from oc-stitch-house-lane.md Sensory Vocabulary." oc-stitch-house-lane.md
-        Sensory Vocabulary (card line 22): "Cobblestone underfoot, uneven at the angle-wall
-        side." The Hazards section (card lines 29-31) supplies the pre-compression implication
-        ("crowd compression blocks retreat — implies pre-compression baseline"). The tactile
-        phrase "cobblestone-underfoot tactile ambient (uneven at angle-wall side, pre-compression)"
-        faithfully transcribes the card vocabulary with a compression-state qualifier. No
-        invented content.
+        (c) Frugality axis. rubric-location-state.md Axis 3 governs re-firing entries;
+        it does not address extending an existing anchor entry's sensory-baseline field
+        in a cross-facet remediation pass. No Axis 3 violation.
 
-        Rubric-location-state.md contains no enumerated restriction on sensory-baseline field
-        length or on extending an existing anchor entry's sensory-baseline record in a
-        remediation pass. The frugality axis (Axis 3) governs firing new entries on
-        non-change beats; it does not prohibit extending the content of an already-licensed
-        anchor entry's sensory-baseline field to add a modality that the card authorizes.
+        (d) Downstream consequence. rubric-location-state.md Anti-pattern 1 (set-dressing
+        sweep) targets multi-clause notes that "list ambient features." The tactile phrase
+        serves a specific structural purpose: it supplies the old-state anchor for
+        sensory:2 @9 via rubric-sensory.md §1 path 1. The stitcher consumes the sensory
+        note as environmental baseline at a place-anchor; a two-element baseline at a
+        chapter's sole location entry does not dissolve the stitcher's selection signal
+        the way a swept state-change entry would.
 
-        AP-SCAN check: no REJECT signature fires on this specific field extension. The
-        dexterity-stillness deny-list exception (authoring note lines 15-18) for the anchor
-        verb "threads" is pre-existing and was accepted through prior audit cycles.
+        No enumerated REJECT signature fires when the two perceptible items are (i) the
+        move-focus element for the anchor verb plus (ii) a card-sourced persistent ambient
+        texture appended for cross-facet anchoring at a place-anchor entry. The one-clause
+        constraint's purpose — preventing atmospheric sweep that lists ambient features
+        without move-focus selection — is not violated by a card-faithful ambient texture
+        extension on a place-anchor.
 
-        VERDICT: PASS. The tactile baseline addition to loc-state:1 @1 is rubric-conformant
-        as a first-beat-in-new-location anchor extension. Card-sourced, no invented content,
-        no new REJECT signature on any of the three axes.
+        VERDICT: PASS. Tactile baseline addition is rubric-conformant. No new HARD.
 
     - id: pass-C3-002
       type: pass
       what: >
-        VERIFICATION AXIS 2 — sensory:2 @9 old-state lineage resolution under
-        rubric-sensory.md §1 Modality-inflection / Unanchored old-state path.
+        AXIS 2 — sensory:2 @9 old-state lineage resolution, rubric-sensory.md §1 path 1.
 
-        Current sensory:2 line (sensory-b01-c01.md line 42):
+        Current entry (sensory-b01-c01.md line 42):
           "2 @9 tactile: cobblestone-underfoot-pre-compression -> crowd-compression # tag: up"
 
-        Rubric-sensory.md §1 Unanchored old-state REJECT / "Anchored to a real perceptual
-        baseline" ACCEPT: "The old-state matches the most recent location-state file's
-        § sensory or § conditions field for the beat's location, OR the most recent prior
-        sensory-flag entry on the same modality."
+        rubric-sensory.md §1 ACCEPT: "Anchored to a real perceptual baseline. The old-state
+        matches the most recent location-state file's § sensory or § conditions field for the
+        beat's location, OR the most recent prior sensory-flag entry on the same modality."
 
-        Path 1 walk (loc-state field): most recent loc-state for oc-stitch-house-lane
-        at or before @9 is loc-state:1 @1. Its sensory-baseline field now explicitly reads
-        "cobblestone-underfoot tactile ambient (uneven at angle-wall side, pre-compression)."
+        Path 1 walk: most recent loc-state for oc-stitch-house-lane at or before @9 is
+        loc-state:1 @1. Its sensory-baseline field now reads:
+          "cobblestone-underfoot tactile ambient (uneven at angle-wall side, pre-compression)"
         The old-state token "cobblestone-underfoot-pre-compression" is a hyphenated-compact
-        rendering of that baseline phrase. The pre-compression qualifier in the loc-state
-        field directly anchors the "pre-compression" component of the old-state token. The
-        match is not identical-text but is semantically equivalent under the rubric's
-        derivation tolerance (hyphentation of multi-word phrase; no new content introduced).
+        form of that phrase. The "pre-compression" qualifier in the loc-state field directly
+        anchors the "pre-compression" component of the token. Semantic equivalence clear;
+        no new content introduced in derivation.
 
-        Path 2 walk (prior sensory entry on same modality): sensory:1 @2 fires on smell;
-        no prior tactile entry exists. Path 2 is unavailable. Path 1 is therefore the
-        sole anchor and it now resolves.
+        Path 2 walk (prior sensory entry, same modality): sensory:1 @2 is smell; no prior
+        tactile sensory entry exists in the file. Path 2 unavailable. Path 1 is therefore
+        the operative anchor — it now resolves.
 
-        Unanchored-old-state HARD: the prior cycle-2 HARD was premised on loc-state:1 @1
-        having no tactile field — the old-state "cobblestone-underfoot-pre-compression" had
-        no anchor in any enumerated path. Cycle-3 loc-state edit supplies that field. The
-        HARD condition is extinguished.
+        Prior HARD condition: the unanchored-old-state HARD from sensory-old-state-reader
+        cycle-2 finding was premised on loc-state:1 @1 having no tactile field and no prior
+        tactile sensory entry existing. Both conditions supplied the "free-floating old-state"
+        that is the REJECT signature. Cycle-3 loc-state edit supplies the tactile field.
+        Both path conditions are now satisfied via path 1. HARD extinguished.
 
-        Cross-facet modality silent-gap check (rubric-sensory.md §1): the loc-state
-        sensory-baseline now names a tactile ambient (not a discrete perceptual event).
-        The rubric's silent-gap rule applies when loc-state "names a discrete perceptual
-        event" ("thermal release, audible texture change, smell drift") — it requires a
-        corresponding sensory-flag at or near the anchor. The tactile baseline phrase is
-        ambient/persistent state language ("tactile ambient," "pre-compression"), not a
-        change-event assertion. No silent-gap rule fires.
+        Cross-facet modality silent-gap check: loc-state:1 @1's tactile phrase is ambient/
+        persistent state language ("tactile ambient," "pre-compression"). rubric-sensory.md
+        §1 silent-gap rule fires when loc-state "names a discrete perceptual event (thermal
+        release, audible texture change, smell drift)." Persistent ambient texture is not
+        a discrete event. No companion sensory-flag required. No silent-gap violation.
 
-        Full per-entry rubric check (anti-pattern #14 V3 pre-validation, scope-limited to
-        the sensory:2 entry as remediated):
-        - Modality identifiable: tactile. Clear.
-        - Inflection class: up (ambient cobblestone → crowd-compression onset). Clear.
-        - Old-state lineage: loc-state:1 @1 tactile field, path 1. Now resolved (this axis).
-        - Bare proto-line (@9 "the crowd compresses"): "compresses" is a bare physical-process
-          verb; it does not self-carry the tactile register of flesh-against-stone-and-body
-          compression. Q1 clears.
-        - Magnitude: crowd-compression in a narrow lane (oc-stitch-house-lane width: "one
-          cart plus pressed shoulders") is a full-body tactile register-shift. Q2 clears.
-        - Audience-side perceptible: physical compression is universally legible without
-          fauna-feed. No interior-only registration. Clears.
-        - Inflection-not-sustained: @9 is the onset bone; the sensory carve-out header
-          explicitly annotates "this is the onset bone; the compression state established
-          here is the new baseline, not sustained already." Clears.
+        Full per-entry axis check on sensory:2 as remediated:
+        - Modality (tactile): valid enumerated modality.
+        - Inflection class (up): old-state and new-state both nameable; direction unambiguous.
+        - Old-state lineage: path 1 resolves (this axis, confirmed above).
+        - Bare proto-line ("the crowd compresses"): bare physical-process verb; no charged
+          word self-carrying tactile register. Q1 clears.
+        - Magnitude: crowd-compression in oc-stitch-house-lane (one-cart-plus-pressed-shoulders
+          width) is a full-body tactile register-shift. Q2 clears.
+        - Audience-side perceptible: physical compression universally legible; no fauna-feed
+          dependency. Clears.
+        - Inflection-not-sustained: @9 is the onset bone per carve-out header annotation;
+          compression state established here is the new baseline. Clears.
+        - Anti-pattern #14 (Cycle-N ADD without pre-validation, V3): not triggered.
+          sensory:2 @9 is a REVISE of an existing entry (old-state label changed from
+          "lane-ambient" to "cobblestone-underfoot-pre-compression"), not an ADD operation.
+          Anti-pattern #14 applies specifically to ADD operations that introduce new entries.
 
-        VERDICT: PASS. sensory:2 @9 old-state now resolves via path 1. Unanchored-old-state
-        HARD is extinguished. Full per-entry axes clear. No new HARD introduced.
+        VERDICT: PASS. Old-state anchored. All per-entry axes clear. No new HARD.
 
     - id: pass-C3-003
       type: pass
       what: >
-        VERIFICATION AXIS 3 — carve-out header stale-claim check.
+        AXIS 3 — carve-out header stale-claim check.
 
-        Prior stale state (cycle-2-confirm audit, flag-C2C-003, carried forward):
-        the sensory facet carve-out header invoked an unenumerated "scene-internal sensory
-        anchor" path and claimed as its factual premise that "no location-state file entries
-        exist." Both premises were stale after cycle-1 loc-state:1 addition.
+        Prior stale state: sensory facet carve-out header invoked an unenumerated
+        "scene-internal sensory anchor" path and claimed as its factual premise that
+        "no location-state file entries exist." Both premises were stale after cycle-1.
+        This was flag-C2-001, carried as part of flag-C2C-003 in the cycle-2 confirm audit.
 
-        Current sensory-b01-c01.md header (lines 8–39): no longer titled "carve-out."
-        Retitled "cross-facet anchor note — sensory old-state lineage." The header:
-        - Does NOT claim "no location-state file entries exist." Lines 12-13 explicitly
-          state "loc-state:1 @1 now exists (added at cycle-1 remediation)."
-        - Does NOT invoke the unenumerated scene-internal path. The sensory:2 @9 annotation
-          (lines 25-30) invokes path 1 (loc-state:1 @1 sensory-baseline field) explicitly.
-        - The sensory:1 @2 annotation (lines 18-24) is correctly updated: it now derives
-          from "negative-inference from loc-state:1 (no smell noted = pre-onset ambient)"
-          rather than the "no loc-state" carve-out premise. Carries a prior advisory
-          ("thinnest defensible loc-state path") which was already documented at cycle-1
-          and not a new finding.
-        - The "cycle-3 remediation" language in the sensory:2 annotation (line 28) correctly
-          records the provenance of the tactile field addition.
+        Current sensory-b01-c01.md header (lines 8–39): retitled "cross-facet anchor note —
+        sensory old-state lineage." Checked line by line:
+        - "no location-state file entries exist": absent. Lines 12-13 explicitly state
+          "loc-state:1 @1 now exists (added at cycle-1 remediation; oc-stitch-house-lane
+          confirmed)."
+        - Unenumerated scene-internal anchor path: absent. sensory:2 annotation (lines 25-30)
+          invokes path 1 (loc-state:1 @1 sensory-baseline field) by name.
+        - sensory:2 @9 annotation cites "loc-state:1 cross-facet anchor" correctly and names
+          the cycle-3 remediation as the source of the tactile field addition.
+        - sensory:1 @2 annotation correctly updated: derives from "negative-inference from
+          loc-state:1 (no smell noted = pre-onset ambient)" rather than the no-loc-state
+          carve-out premise. Carries a prior advisory ("thinnest defensible loc-state path")
+          which was already present from cycle-1 and is not a new finding.
 
-        Stale claims from prior cycles: none present in current text.
-
-        VERDICT: PASS. Carve-out header is fully updated. No stale claims survive.
+        VERDICT: PASS. No stale claims survive. flag-C2-001 / flag-C2C-003 (carve-out
+        stale premise) is resolved by this cycle-3 edit.
 
     - id: pass-C3-004
       type: pass
       what: >
-        VERIFICATION AXIS 4 — cite-index back-link integrity.
+        AXIS 4 — cite-index back-link integrity.
 
-        sensory:2 @9 back=Y: confirmed at _cite-index.md line 40.
-          Proto-lines @9 carries [sensory:2] decoration (b01-c01.md line 19). Back-link
-          resolves. PASS.
+        sensory:2 @9 back=Y: _cite-index.md line 40 confirmed. Proto-lines @9 (b01-c01.md
+        line 19) carries [sensory:2] decoration. Back-link resolves. PASS.
 
-        loc-state:1 @1 back=Y: confirmed at _cite-index.md line 25 (co=[exposition:5]).
-          Proto-lines @1 carries [loc-state:1] decoration (b01-c01.md line 11). Back-link
-          resolves. PASS.
+        loc-state:1 @1 back=Y co=[exposition:5]: _cite-index.md line 25 confirmed.
+        Proto-lines @1 (b01-c01.md line 11) carries [exposition:5] [loc-state:1] decorations.
+        Both entries' back-links resolve. PASS.
 
-        Orphaned-reference check on touched entries: sensory:2 is listed in the
-        cite-index lonely-entries section (line 109: "sensory:2 @9 `the crowd compresses`").
-        Lonely = no co-citations and no inbound license. This was already the case from
-        cycle-1; the cycle-3 edit did not add or remove co-citations. Consistent.
+        Orphaned-reference check: sensory:2 appears in the cite-index lonely-entries
+        section (line 109). This was already the case from cycle-1; cycle-3 did not add
+        or remove co-citations for sensory:2. Consistent with expectation.
 
-        Cross-facet old-state dependency (sensory:2 → loc-state:1) is correctly not
-        represented in the cite-index co-list. The fixer log (session-2, line 31) records:
-        "cross-facet old-state dependency is structural/rubric-tracked, not cite-index-tracked."
-        This is correct per rubric-sensory.md (the old-state anchor path is a rubric
-        conformance check; it is not a content co-citation). No cite-index co-list
-        change was required; none was made.
+        Cross-facet old-state dependency (sensory:2 → loc-state:1): correctly not
+        represented as a cite-index co-citation. Fixer log (session-2, line 31) records
+        that this dependency is "rubric-structural, not cite-index-tracked." This is
+        correct per rubric-sensory.md: the old-state anchor path is a rubric conformance
+        check, not a content co-citation relationship. No cite-index co-list change was
+        required; none was made.
+
+        Cycle-3 edits were REVISE operations only (no ADD, no DELETE). Cite-index totals
+        (43 entries) unchanged. Consistent.
 
         VERDICT: PASS. All back-links current. No orphaned references introduced.
-        Cite-index structural integrity maintained.
+
+    - id: pass-C3-005
+      type: pass
+      what: >
+        AXIS 5 — AP-SCAN / RUBRIC-FIDELITY spot-check on touched entries.
+
+        Entries in scope: loc-state:1 @1 (REVISE: sensory-baseline extended),
+        sensory:2 @9 (REVISE: old-state label changed), sensory facet header (REVISE:
+        cross-facet anchor note rewritten).
+
+        AP-SCAN on sensory:2 @9:
+        - Anti-pattern #14 (V3): REVISE, not ADD. Not triggered (see pass-C3-002 above).
+        - Anti-pattern #9 (loc-state contradiction): old-state now matches loc-state:1 @1
+          tactile field. Not triggered.
+        - Anti-pattern #2 (sustained-as-inflection): @9 is onset bone; not sustained. Not triggered.
+        - Anti-pattern #3 (fauna-feed-extension): physical compression, universally legible.
+          Not triggered.
+
+        AP-SCAN on loc-state:1 @1:
+        - Dexterity-stillness deny-list exception (URI-FACETS-CYCLE-1): anchor verb
+          "threads" licensed as first-beat-in-new-location. Exception record in authoring
+          note lines 15-18 is pre-existing and was accepted through cycle-2. No new
+          finding.
+        - Anti-pattern #1 (set-dressing sweep): the two-element sensory baseline was
+          evaluated in pass-C3-001 above; no sweep violation classified.
+
+        RUBRIC-FIDELITY on sensory file shape (episode-level, not changed by cycle-3
+        but verified for completeness):
+        - Bone count: 27 (from proto-lines aggregate_range 1-27 header).
+        - Entry count: 2 (sensory:1 @2 smell, sensory:2 @9 tactile).
+        - Density: 2/27 = 7.4%. Exceeds standard 6% ceiling.
+        - Short-chapter floor-vs-ceiling exemption (V3): bone_count (27) < 30 AND modality
+          count (2) equals the floor. Effective ceiling = max(6%, 2/27) = 7.4%.
+          Current density = 7.4%. Within exemption ceiling. Advisory status; not blocking.
+        - Modality-coverage health-check: 2 modalities (smell + tactile). Passes floor (≥2).
+        - No new RUBRIC-FIDELITY finding.
+
+        VERDICT: PASS on all AP-SCAN and RUBRIC-FIDELITY checks within scope.
 
     - id: flag-C3-001
       type: flag
       what: >
-        Carried forward from cycle-2: fault-C2C-001 (dialogue sidecar entries 1 and 2
-        retain sensory:2 @16 citations that fail cite-index walk) remains the sole
-        outstanding HARD from cycle-2 and is outside this cycle-3 audit scope. It is
-        not resolved by cycle-3 sensory remediation.
+        Carry-forward: fault-C2C-001 (dialogue sidecar entries 1 and 2 in
+        taylor-hebert-kl-122ac.drafts.md retain sensory:2 @16 citations that fail
+        cite-index walk) was the sole outstanding HARD from cycle-2 and is outside
+        this cycle-3 audit scope. It is not resolved by cycle-3 sensory remediation.
+        No touch was made to the dialogue sidecar in cycle-3.
 
-        Cycle-3 sensory remediation moves sensory:2's back-link to @9 and anchors its
-        old-state at loc-state:1 @1. The sidecar entries 1 and 2 that cite "sensory:2 @16"
-        therefore now cite a non-existent anchor position with compounded mismatch: not
-        only is @16 not in sensory's cite-index registration, but the sensory:2 entry's
-        content is tactile (crowd-compression at @9), while sidecar entries 1 and 2 were
-        authored against the pre-cycle-1 sound-modality sensory:2 at @16. The nature of the
-        broken citation is unchanged (cite-index walk still fails at @16) but the semantic
-        gap between the sidecar's cited entry and the current sensory:2 entry is now larger.
-        The fault-C2C-001 criteria remain operative unchanged: replace the broken sensory:2
-        @16 citations in entries 1 and 2 with citations that resolve via cite-index walk.
+        Semantic gap note for fixer: sensory:2's anchor is now @9 (tactile,
+        cobblestone-underfoot-pre-compression -> crowd-compression). The sidecar
+        entries 1 and 2 were authored against the pre-cycle-1 sensory:2 which was
+        sound-modality at @16. The cite-index walk still fails (sensory:2 does not
+        fire at @16) but the mismatch between sidecar content (speech-act / sound
+        modality basis) and the current sensory:2 entry (crowd-compression / tactile)
+        is now wider. When resolving fault-C2C-001, sensory:2 @9 is likely not the
+        appropriate replacement citation for speech-act entries 1 and 2; the fixer
+        should evaluate whether a different resolvable citation or removal of the
+        sensory axis citation better serves those entries' content.
       why: >
-        Advisory carry-forward only. fault-C2C-001 is already open and routing to fixer
-        from cycle-2. No new blocking state created by cycle-3 — the dialogue sidecar was
-        not modified in cycle-3. The semantic-gap widening is informational for the fixer:
-        when correcting entries 1 and 2, sensory:2 @9 (tactile, crowd-compression) is
-        likely not the correct replacement citation for those speech-act entries, which were
-        authored against the sound modality. Fixer should audit the actual content of entries
-        1 and 2 to determine whether a different resolvable citation (or removal of the
-        sensory axis citation) better serves those entries.
+        Advisory carry-forward only. fault-C2C-001 routing from cycle-2 stands
+        unmodified. No new blocking state created by cycle-3 on this fault.
 ```
 
 ---
@@ -227,23 +248,27 @@ audit:
 hard_count: 0
 signal_count: 1
 
-cycle3_changes_verified:
-  op-1 loc-state:1 @1 tactile baseline addition: PASS — rubric-conformant field extension;
-    card-sourced; no invented content; no REJECT signature on three axes; no silent-gap rule fires
-  op-2 sensory:2 @9 old-state update: PASS — path 1 now resolves; unanchored-old-state HARD
-    extinguished; full per-entry rubric axes clear including anti-pattern #14 V3 pre-validation
-  op-3 carve-out header rewrite: PASS — no stale claims; unenumerated path no longer invoked;
-    per-entry annotations correct; cycle-3 provenance noted
-  op-4 cite-index back-links: PASS — sensory:2 @9 back=Y confirmed; loc-state:1 @1 back=Y
-    confirmed; no orphaned references; co-list unchanged as expected
+cycle3_ops_verified:
+  op-1 loc-state:1 @1 tactile baseline addition: PASS
+    card-sourced; place-anchor boundary condition evaluated; no REJECT signature fires
+    on three-axis rubric given place-anchor function and card-faithful sourcing
+  op-2 sensory:2 @9 old-state update: PASS
+    path 1 resolves via loc-state:1 @1 tactile field; unanchored-old-state HARD
+    extinguished; all per-entry axes clear; anti-pattern #14 V3 not triggered (REVISE)
+  op-3 sensory carve-out header rewrite: PASS
+    stale zero-entry claim absent; unenumerated path claim absent; per-entry annotations
+    correct; flag-C2-001 / flag-C2C-003 carve-out-stale-premise resolved
+  op-4 cite-index back-links verified: PASS
+    sensory:2 @9 back=Y; loc-state:1 @1 back=Y; no orphaned references; co-list
+    unchanged as expected; cross-facet old-state dependency correctly not cite-index-tracked
 
 signal_findings:
-  - flag-C3-001: fault-C2C-001 (dialogue sidecar entries 1 and 2) carried forward from cycle-2;
-    outside cycle-3 scope; semantic-gap widening noted for fixer (sensory:2 is now tactile @9,
-    not sound @16 — replacement citation must match entry content, not just resolve in cite-index)
+  - flag-C3-001: fault-C2C-001 carry-forward (dialogue sidecar, outside cycle-3 scope);
+    semantic-gap widening noted for fixer (sensory:2 now tactile @9, not sound @16;
+    replacement citation for sidecar entries 1 and 2 must match those entries' content)
 
 routing: >
-  HARD = 0. Cycle-3 sensory remediation is clean. Phase 5 mechanical gate clears for the
-  sensory facet. Cycle-3 audience-gate fires next per pipeline sequence.
-  fault-C2C-001 (dialogue sidecar) remains open; fixer dispatch from cycle-2 stands unmodified.
+  HARD = 0. Cycle-3 sensory remediation clears Phase 5 mechanical gate on the
+  sensory and loc-state axes. Cycle-3 audience-gate fires next.
+  fault-C2C-001 (dialogue sidecar) remains open from cycle-2; fixer dispatch stands.
 ```

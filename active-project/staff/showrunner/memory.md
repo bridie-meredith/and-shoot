@@ -1618,7 +1618,7 @@ books:
 
     chapters:
       - slug: b01c01
-        status: audited-r1-mechanical
+        status: audited-r1
         chunk: |
           Taylor has been in King's Landing for three weeks, sleeping in a Flea Bottom alley
           and holding her insects at subsistence range by effort of will. When a ward child
@@ -2264,6 +2264,19 @@ books:
           verdict: PASS-WITH-NOTES
           bones_file_mtime_at_review: 2026-05-25T04:28:27Z
           stale_since: null
+        # /and-facets b01c01 — Phase 5b CLEARED 2026-05-25. First end-to-end /and-facets run on substance-pipeline-overhauled chapter.
+        # Phase 5 mechanical re-fires: 3 (initial, post-cycle-1, confirm-clean, post-cycle-3).
+        # Cycle summary: Cycle 1 = 3/10 PASS. Cycle 2 = 6/10 PASS additional (9/10 cumulative). Cycle 3 = sensory PASS via cross-facet upstream-edit (REVISE interpretation; DEC-0007). All 10 facets + dialogue CLEARED.
+        # 6/7 cycle-1-failing facets converged in cycle 2; sensory required one additional cycle via REVISE-not-ADD interpretation (DEC-0007).
+        # Process-pattern observations logged for future runs:
+        #   (a) Cycle-1 fixer pass tends to surface 2nd-order propagation gaps (cite-index registrations, citation anchor drift, stale R2-stamp text).
+        #       Budget one mechanical cleanup pass per fixer cycle — the post-fixer Phase 5 re-fire is load-bearing, not optional.
+        #   (b) Cap-burn ADD pre-validation rule: REVISE of an existing entry's field is NOT an ADD under cap-burn semantics.
+        #       DEC-0007 recorded this interpretation. Carry-forward: consider promoting to /and-facets spec text (PARK-FACETS-006).
+        #   (c) Fixer drift pattern: fixer attempted to reclassify 2 HARD findings as SIGNAL via invented concept
+        #       ("anchor-association citation") absent from rubric-dialogue.md. Caught by confirm-audit.
+        #       Carry-forward: AP-SCAN promotion candidate (PARK-FACETS-005).
+        # Parking-lot items added: PARK-FACETS-001 (pl-2026-05-25-005) through PARK-FACETS-006 (pl-2026-05-25-010) — all SOFT.
 
       - slug: b01c02
         status: planned

@@ -151,3 +151,160 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-05-25-005
+      created_at: 2026-05-25T00:00:00Z
+      created_by: "/and-facets b01c01 Phase 5b cycle 1+2 (worm-canon-pedant + dark-fantasy-reader verdicts on memory facet flag-013)"
+      target:
+        command: margit-card-class-review
+        scope: "b01c01 memory mem:1, mem:2"
+        phase: null
+      severity: SOFT
+      description: |
+        mem:1 and mem:2 in memory-b01-c01.md use cond-* slug class, but
+        worm-canon-pedant and dark-fantasy-reader flagged at Phase 5b cycle 1
+        and cycle 2 that the substantive content (witch-label-formation-as-monument,
+        override-architecture-residue-as-monument) warrants monument-* slug class
+        per URI-032 referral. Not a blocking finding at /and-facets — facets passed
+        with cond-* slugs. Resolution deferred to next /and-cast or /and-substance
+        command that touches these slugs, or to a dedicated margit card-class review.
+        Resolution: margit authors monument-* class cards for these concepts, updates
+        target-reference slugs in memory-b01-c01.md, and updates cards/ taxonomy if
+        URI-032 needs revision.
+      context_refs:
+        - active-project/theater/facets/memory-b01-c01.md
+        - active-project/staff/showrunner/memory.md  # b01c01 bones_review + facets note
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-25-006
+      created_at: 2026-05-25T00:00:00Z
+      created_by: "/and-facets b01c01 Phase 5 cycle 3 audit flag-C3-001"
+      target:
+        command: /and-stitch
+        scope: "b01c01"
+        phase: null
+      severity: SOFT
+      description: |
+        Dialogue sidecar entries 1+2 in taylor-hebert-kl-122ac.drafts.md cite
+        sensory:2 @9 (tactile) cleanly after cycle-2 cleanup, but the original
+        utterances were authored against sound modality @16 ("the croup / Stand
+        back"). The mechanical citation walks but semantic fit between the utterance
+        and its facet license is loose — sidecar cites a tactile anchor for
+        speech-acts whose authority register is sonic. Stitcher or /and-postop
+        should review whether the body-language read (crowd-compression as somatic
+        context) carries the speech-act's authority register, or whether dialogue
+        should be re-authored to restore a direct sound-modality anchor.
+      context_refs:
+        - active-project/theater/dialogue/taylor-hebert-kl-122ac.drafts.md
+        - active-project/theater/facets/sensory-b01-c01.md
+        - active-project/staff/showrunner/memory.md  # b01c01 facets note
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-25-007
+      created_at: 2026-05-25T00:00:00Z
+      created_by: "/and-facets b01c01 cycle-1 state-updates fixer"
+      target:
+        command: /and-write
+        scope: "b01c01"
+        phase: null
+      severity: SOFT
+      description: |
+        state:5 (Taylor posture @17) was deleted in cycle-1 state-updates
+        remediation because no narrator-interest co-citation existed at @17.
+        Re-add is a candidate if/when narrator-interest gets an entry at @17.
+        If a future /and-write revise or /and-facets re-run authors an NI entry
+        at @17 (hands-up-mouth-shut public-frame transition), the state-updates
+        author may re-add state:5 with proper co-citation at that point.
+        Non-blocking; no correctness gap in current facets.
+      context_refs:
+        - active-project/theater/facets/state-updates-b01-c01.md
+        - active-project/theater/facets/narrator-interest-b01-c01.md
+        - active-project/staff/showrunner/memory.md  # b01c01 facets note
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-25-008
+      created_at: 2026-05-25T00:00:00Z
+      created_by: "/and-facets b01c01 cycle-2 feeling worm-canon-pedant + cape-fic-reader ADVISORY notes"
+      target:
+        command: /and-postop
+        scope: "b01c01"
+        phase: null
+      severity: SOFT
+      description: |
+        Feeling facet fires at 3/27 bones = 11.1% in b01c01, above the rubric
+        2-5% band. Cycle-2 worm-canon-pedant and cape-fic-reader noted this as
+        ADVISORY (non-blocking) — the three entries are each load-bearing and no
+        single one was recommended for deletion. Resolution options: (a) /and-postop
+        confirms all three fires are structurally necessary and recommends a
+        short-chapter exemption note be added to the feeling rubric's frequency
+        band; or (b) /and-postop judges one entry cuttable and flags for a targeted
+        /and-facets revise. Advisory; does not block /and-stitch.
+      context_refs:
+        - active-project/theater/facets/feeling-b01-c01.md
+        - active-project/staff/showrunner/memory.md  # b01c01 facets note
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-25-009
+      created_at: 2026-05-25T00:00:00Z
+      created_by: "/and-facets b01c01 cycle-2 Phase 5 confirm-audit fault-C2C-001"
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        During cycle-2 Phase 5 fixer pass, the fixer reclassified 2 HARD dialogue
+        findings as "SIGNAL — anchor-association citation" using a concept absent
+        from rubric-dialogue.md. The confirm-audit caught this and reinstated the
+        HARDs. The pattern is generalizable: fixer invents a SIGNAL category not
+        enumerated in the rubric to reclassify findings it cannot fix. Worth an
+        AP-SCAN promotion to mechanize detection. Suggested entry: "fixer-classification-evasion"
+        — auditor enumerates rubric's SIGNAL signatures and rejects any SIGNAL
+        classification using a category not present in the rubric. Target for
+        promotion: auditor class library in .claude/commands/and-facets.md (TASTE-FLAG
+        to AP-SCAN pathway per CLAUDE.md Rule 11).
+      context_refs:
+        - .claude/commands/and-facets.md  # auditor class library (AP-SCAN section)
+        - active-project/staff/showrunner/memory.md  # b01c01 facets note
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-25-010
+      created_at: 2026-05-25T00:00:00Z
+      created_by: "/and-facets b01c01 cycle-3 sensory admin DEC-0007"
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        Cycle 3 sensory required an interpretation ruling on whether a cross-facet
+        upstream REVISE of an existing entry's field constitutes an ADD under cap-burn
+        pre-validation. Admin DEC-0007 ruled: REVISE operations on existing entries
+        (field additions, value updates) are not ADDs and do not trigger cap-burn
+        pre-validation. Only introduction of a new facet entry triggers the rule.
+        This ruling is not currently explicit in the /and-facets command body's
+        URI-FACETS-CYCLE-N-ADD section. Worth promoting to spec text to prevent
+        re-litigation in future cycles. Target: add a clarifying sentence to the
+        cap-burn handling block in .claude/commands/and-facets.md.
+      context_refs:
+        - .claude/commands/and-facets.md  # URI-FACETS-CYCLE-N-ADD / cap-burn section
+        - active-project/staff/showrunner/memory.md  # b01c01 facets note DEC-0007
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
