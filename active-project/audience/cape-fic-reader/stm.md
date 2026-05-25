@@ -28,3 +28,21 @@ STM:
   - c13: dramatic_shape reads hinge; confirmed
   - c20: relational_anchor_status target_delta_magnitude 1.5 confirmed; roll-up note confirms correction
 - threshold_discipline_check: re-applied to edited cells; no new limit-bypass-without-cost patterns introduced; no fatigue triggers fired
+
+## 2026-05-25 — /and-substance chapter b01c01 Phase 5 review
+
+verdict_per_scene:
+  b01c01s01: SUBSTANCE-FELT
+  b01c01s02: SUBSTANCE-FELT
+  b01c01s03: SUBSTANCE-FELT
+chapter_goal_coverage:
+  first_act_of_control: LAND
+  witch_label_plant: LAND
+  wren_presence_plant: LAND
+overall: ACCEPT
+notes:
+  - s01 prohibition-as-labor earns the board state; reader knows the range, Taylor knows the line, the ward knows nothing — asymmetry established before anything moves
+  - s02 capability +1.0 via crowd-pressure mechanism is tactical and specific; the un-filed-decision framing ("does not make a decision, or if she does she does not file it as one") is exactly the right information-asymmetry shape for this reader — Taylor is competent, the cost is real, the limit is paid
+  - s03 witch-label via "knew before anyone told her" is the board-reshape this reader wants; Oswyn's categorization preceding Taylor's self-categorization is the asymmetry that pulls forward
+  - Wren stitch-house plant (smell, two lanes over, not-looked-at) is functional but thin at plan stage; the informational setup is correct but the hook is light; not a hard finding — prose execution will carry it; carried as soft watch to /and-write
+  - no fatigue triggers: no filler, no unmotivated knowledge, no established limit bypassed; held axes read as load-bearing dormancy, not absent content

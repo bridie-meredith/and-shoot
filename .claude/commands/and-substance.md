@@ -45,7 +45,8 @@ Re-runnable per `design/substance/rerun-protocol.md`. Cascade-aware per `design/
    - Output populated + mode arg → mode preselected.
    - Output populated + mode arg omitted → prompt `revise` / `add` / `redo`.
 4. Cascade warning per staleness-cascade rules. Default surfacing is `mark-stale`.
-5. Run.
+5. **Parking-lot scan (Rule 14).** Read `active-project/staff/showrunner/parking-lot.md`. Items matching this invocation (`target.command: /and-substance` + `target.scope` matches the current invocation level + slug exact or `*` wildcard + `status: open`): HARD → abort unless this run's resolving phase completes the item; SOFT → carry to Phase 7 summary. Resolving phase stamps `resolved_at` + `resolved_by` + `resolution_note`; never delete.
+6. Run.
 
 ### Phase 1 — Read parent
 

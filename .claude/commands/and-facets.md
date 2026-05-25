@@ -122,6 +122,7 @@ R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/
    - `speech_bones`: the full list of bone flat_ids where the SVO is `<X> speaks to <Y>`.
    - `speakers`: the distinct set of subject slugs across those bones.
    If `speech_bones` is non-empty, dialogue is **mandatory** — Phase 1 dialogue author must produce one `theater/dialogue/<book>-<chapter>.md` entry per speaker with ≥1 entry, AND every speech bone must be cited by ≥1 entry post-R2 merge.
+10. **Parking-lot scan (Rule 14).** Read `active-project/staff/showrunner/parking-lot.md`. Items matching this invocation (`target.command: /and-facets` + `target.scope` = `<book>-<chapter>` or `*` wildcard + `status: open`): HARD → abort unless this run resolves; SOFT → carry to the Phase 5 audit report + final summary. Resolving phase stamps `resolved_at` + `resolved_by` + `resolution_note`; never delete.
 
 Print:
 ```

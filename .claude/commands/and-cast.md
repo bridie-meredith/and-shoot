@@ -30,7 +30,8 @@ Re-runnable. See `design/substance/rerun-protocol.md`.
    - **Populated, `$1` = `redo`:** confirm with user; margit decommissions full current roster; Phases 1-4 re-run from scratch.
    - **Populated, `$1` omitted:** prompt `revise` / `redo`.
 3. Cascade warning per `design/substance/staleness-cascade.md`. Any cast change stale-marks `project.series_audit` (the audit checkpoint must be re-approved before downstream can re-run).
-4. Run.
+4. **Parking-lot scan (Rule 14).** Read `active-project/staff/showrunner/parking-lot.md`. Items matching this invocation (`target.command: /and-cast` + `target.scope` slug-or-wildcard + `status: open`): HARD → abort unless this run resolves; SOFT → carry to Phase 7 summary. Resolving phase stamps `resolved_at` + `resolved_by` + `resolution_note`; never delete.
+5. Run.
 
 ---
 
