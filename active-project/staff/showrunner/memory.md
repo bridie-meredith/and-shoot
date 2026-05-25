@@ -1618,7 +1618,7 @@ books:
 
     chapters:
       - slug: b01c01
-        status: bones-written
+        status: audited-r1
         chunk: |
           Taylor has been in King's Landing for three weeks, sleeping in a Flea Bottom alley
           and holding her insects at subsistence range by effort of will. When a ward child
@@ -2264,6 +2264,54 @@ books:
           verdict: PASS-WITH-NOTES
           bones_file_mtime_at_review: 2026-05-25T04:28:27Z
           stale_since: null
+        # /and-facets b01c01 — Phase 5b CLEARED 2026-05-25. First end-to-end /and-facets run on substance-pipeline-overhauled chapter.
+        # Phase 5 mechanical re-fires: 3 (initial, post-cycle-1, confirm-clean, post-cycle-3).
+        # Cycle summary: Cycle 1 = 3/10 PASS. Cycle 2 = 6/10 PASS additional (9/10 cumulative). Cycle 3 = sensory PASS via cross-facet upstream-edit (REVISE interpretation; DEC-0007). All 10 facets + dialogue CLEARED.
+        # 6/7 cycle-1-failing facets converged in cycle 2; sensory required one additional cycle via REVISE-not-ADD interpretation (DEC-0007).
+        # Process-pattern observations logged for future runs:
+        #   (a) Cycle-1 fixer pass tends to surface 2nd-order propagation gaps (cite-index registrations, citation anchor drift, stale R2-stamp text).
+        #       Budget one mechanical cleanup pass per fixer cycle — the post-fixer Phase 5 re-fire is load-bearing, not optional.
+        #   (b) Cap-burn ADD pre-validation rule: REVISE of an existing entry's field is NOT an ADD under cap-burn semantics.
+        #       DEC-0007 recorded this interpretation. Carry-forward: consider promoting to /and-facets spec text (PARK-FACETS-006).
+        #   (c) Fixer drift pattern: fixer attempted to reclassify 2 HARD findings as SIGNAL via invented concept
+        #       ("anchor-association citation") absent from rubric-dialogue.md. Caught by confirm-audit.
+        #       Carry-forward: AP-SCAN promotion candidate (PARK-FACETS-005).
+        # Parking-lot items added: PARK-FACETS-001 (pl-2026-05-25-005) through PARK-FACETS-006 (pl-2026-05-25-010) — all SOFT.
+        # /and-stitch b01c01 — 2026-05-25 Phase 8 finalize complete.
+        # Terminal deliverable: active-project/draft/b01-c01.md (clean) + active-project/draft/b01-c01.annotated.md (line-IDs + trace).
+        # Render-log: active-project/staff/stitcher/render-log-b01-c01.md (Phase 0-8 trace).
+        # STATS: body 485w / 33 sentences / 27 paragraphs; preamble 217w / 3 italic paragraphs (3 episode-open exposition entries).
+        # Bones reconciliation: 27 authored = 27 rendered + 0 merged + 0 dropped + 0 illegible ✓.
+        # Facets reconciliation: 43 cite-index = 25 rendered + 0 dropped + 1 unrendered-remainder (feel:2 @10 expressed:no held-to-subtext) + 17 render-false-excluded (5 state-updates + 12 vibes) ✓.
+        # Dialogue: 3 utterances at @16 rendered verbatim under one "I said" attribution; speaker-paragraph rule verified at @16.
+        # Phase 7 sweep: 30 keeps + 3 cut-clauses + 2 cuts (drift-risks @7 / @18 / @19 / @25 resolved); 0 reshows, 0 rewords.
+        # Scene-callout markers: zero in clean draft (HARD-STRIP scan clean).
+        # Parking lot: pl-2026-05-25-006 dialogue sidecar semantic-fit (SOFT, target.phase=null) surfaces at Phase 9 cold-read exit; non-blocking.
+        # Next: Phase 9 cold-read terminal gate.
+        stitch:
+          stitched_at: 2026-05-25
+          clean_draft_path: draft/b01-c01.md
+          annotated_draft_path: draft/b01-c01.annotated.md
+          render_log_path: staff/stitcher/render-log-b01-c01.md
+          status: stitched
+          stitched: true
+          phase_9_verdict: PASS
+          depth_pass_recommended: true
+          cold_read:
+            read_at: 2026-05-25
+            verdict: PASS
+            recovered_summary: "A nameless transmigrator hiding in Flea Bottom breaks her own rule to save a choking child with her swarm of flies, and two locals notice her for the first time."
+            report_path: active-project/staff/reviews/coldread-b01-c01-2026-05-25.md
+            staging_signals: 15
+            staging_report_path: active-project/staff/reviews/staging-b01-c01-2026-05-25.md
+            signal_clusters: []  # peak-under-staged=4 (below >=5 threshold); no cluster fires
+            zone_density_observation: "scene-B peak triplet @11/@12/@13 concentrates 3 staging findings on adjacent bones (sub-pattern; staging review note for downstream attention)"
+            stale_since: null
+            cold_read_caveats:
+              - "how-bugs-part-crowd mechanic unclear in prose (rendered as \"I'd told them to go\" — implied mind-control, never staged as physical)"
+              - "treatment-beat missing between @17 hands-up and @22 child-clears-lane (cold reader noticed)"
+              - "chapter-close @27 lands quietly; cold reader expected sharper for ch1"
+              - "hyphen-compound density made middle re-readable 3x to confirm action (Q9 sweep applied 0 RE-WORDS; cold-reader flags suggest the threshold needs tuning)"
 
       - slug: b01c02
         status: planned

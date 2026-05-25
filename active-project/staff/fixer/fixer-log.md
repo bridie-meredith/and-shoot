@@ -380,3 +380,359 @@ Closing summary: 3 HARD repairs applied; 1 SIGNAL remediated; 2 SIGNALs accept-w
 findings-applied: 4 (3 HARD patched; 1 SIGNAL remediated)
 findings-skipped: 2 (2 SIGNALs accepted-with-rationale — no patch required by disposition)
 exit: CLEAN
+
+## SESSION-START — 2026-05-25T05:00:00Z — facets-b01c01-phase5-remediation
+dispatch: remediate 5 HARD findings from facets-final-audit.md — 3 proto-lines citation-ID remappings (fault-001/002/003), 1 dialogue per-speaker cap decision (fault-004), 1 vibes token parsability fix (fault-005)
+target: active-project/theater/proto-lines/b01-c01.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 5
+
+## fault-001 — RESOLVED — 2026-05-25T05:15:00Z
+fault: proto-lines @12 cited [state:1][state:2] (Oswyn's pre-consolidation IDs); Taylor's deployment-state (state:3) and capability_axis (state:4) had back=N; Oswyn state entries decorated the wrong bone
+scope: line
+change: proto-lines @12 citation changed from [state:1][state:2] to [state:3][state:4]; cite-index updated: state:3 back=N→back=Y @12; state:4 back=N→back=Y @12; co-citations corrected throughout; narrator:4 and vibes:3/4/8 co-lists updated to replace state:1,state:2 with state:3,state:4
+criteria met: yes — state:3 back=Y anchored @12; state:4 back=Y anchored @12
+
+## fault-002 — RESOLVED — 2026-05-25T05:15:00Z
+fault: proto-lines @10 cited [feel:1][feel:2]; feel:1 is Oswyn's @21 entry; spurious citation placed Oswyn's somatic tell at the wrong bone
+scope: line
+change: proto-lines @10 citation changed from [feel:1][feel:2] to [feel:2]; cite-index updated: feel:2 back=Y exclusively @10 (no spurious @10 back-link for feel:1); feel:2 now lonely (correct — sole decoration at @10)
+criteria met: yes — feel:1 back=Y exclusively @21; feel:2 back=Y exclusively @10
+
+## fault-003 — RESOLVED — 2026-05-25T05:15:00Z
+fault: proto-lines @24 cited [feel:2][feel:3][narrator:8][state:5]; feel:2 belongs to @10 (Taylor breath-empties-out from scene-B); state:5 is Taylor's posture @17, not body-orientation @24; also: @17 cited [state:3] (Taylor deployment @12) instead of [state:5] (Taylor posture @17); @21 cited [state:4] (Taylor capability @12) instead of [state:6] (Taylor social_tether @21); @26 cited [state:6] (Taylor social_tether @21) instead of [state:8] (Taylor ward-recognition @26); @27 missing [state:9] (Wren relational_anchor @27)
+scope: line
+change: five proto-lines corrected — @17: state:3→state:5; @21: state:4→state:6; @24: feel:2 removed, state:5→state:7; @26: state:6→state:8; @27: state:9 added — cite-index regenerated; all state:5/@17, state:6/@21, state:7/@24, state:8/@26, state:9/@27 now back=Y; feel:3 @24 co-list corrected; feel:4 @27 co-list updated with state:9
+criteria met: yes — state:5 back=Y @17; state:6 back=Y @21; state:7 back=Y @24; state:8 back=Y @26; state:9 back=Y @27; feel:2 back=Y exclusively @10; feel:3 back=Y exclusively @24
+
+## fault-004 — RESOLVED (DOWNGRADED) — 2026-05-25T05:20:00Z
+fault: 3 utterances from taylor-hebert-kl-122ac all anchored @16; per-speaker per-anchor sub-cap "no two utterances of the same speaker at the same anchor unless deliberate single-turn split documented in drafts sidecar" appeared to be breached
+scope: n/a (no file change)
+change: none — rubric (staff/dialogue-writer/rubric-dialogue.md § "Per-anchor caps") grants exception for "deliberate single-turn split... justified in the drafts sidecar." Sidecar (active-project/staff/dialogue-writer/taylor-hebert-kl-122ac.drafts.md) documents: (a) three distinct board-moves required by s02 chunk (fever/air/known-adult); (b) per-entry Q1+Q2 rationale for each utterance; (c) explicit per-anchor count "3 (cap = 3; at cap)." The three utterances are a deliberate three-part information-delivery sequence matching the chunk's explicit three-part delivery specification — not an arbitrary multi-split of one message. Exception path satisfied. Fault downgraded to flag with rubric citation.
+criteria met: yes — rubric-grounded decision documented; no reduction required; per-speaker exception path confirmed satisfied
+
+## fault-005 — RESOLVED — 2026-05-25T05:22:00Z
+fault: vibes:3 @12 token "instinct-preceded-the-ledger-entry" parses as complete sentence (subject + finite verb + object); vibes schema forbids sentence-parseable tokens
+scope: line
+change: vibes-b01-c01.md vibes:3 token changed from "instinct-preceded-the-ledger-entry" to "instinct-preceding-the-ledger-entry" (gerund form; no finite verb; "preceding" is a present participle modifying "instinct" — not a predication); semantic content preserved (instinct acting before the ledger-entry exists)
+criteria met: yes — "instinct-preceding-the-ledger-entry" does not parse as subject+finite-verb+object; gerund form is a noun-phrase for word-algebra operator use
+
+## SESSION-END — 2026-05-25T05:22:00Z — facets-b01c01-phase5-remediation
+findings-applied: 5 (fault-001 resolved; fault-002 resolved; fault-003 resolved; fault-004 downgraded per rubric exception; fault-005 resolved)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-25T10:00:00Z — and-facets-cycle1-fixes-feeling
+dispatch: Phase 5b cycle-1 remediation — feeling facet; 1 dissent from dark-fantasy-reader (feel:3 @24 Q1 fail / NI:8 body-register redundancy); apply minimum revise or delete + URI-FACETS-CYCLE-N-ADD pre-validation; do not touch other facets
+target: active-project/theater/facets/feeling-taylor-hebert-kl-122ac.md (primary), active-project/theater/facets/feeling.md (consolidated)
+audit-report: active-project/staff/audience/dark-fantasy-reader/feeling-r1-verdict.md
+findings-queued: 1 (feel:3 REVISE/DELETE) + ADD pre-validation check
+
+## SESSION-START — 2026-05-25T06:00:00Z — facets-cycle1-remediation-location-state
+dispatch: Phase 5b cycle-1 remediation for location-state facet — address dark-fantasy-reader's two entry-level callouts (SEAM-LOC-CARDS-ABSENT @1–@6; SEAM-TRANSITION-RUN-BARE @1–@6) with minimum change
+target: active-project/theater/facets/location-state-b01-c01.md
+audit-report: active-project/staff/audience/dark-fantasy-reader/location-state-r1-verdict.md
+findings-queued: 2 (two callouts from dark-fantasy-reader; cape-fic-reader and worm-canon-pedant ACCEPTED)
+
+## SESSION-START — 2026-05-25T06:30:00Z — facets-cycle1-dialogue-taylor
+dispatch: /and-facets Phase 5b cycle-1 remediation — dialogue facet, character taylor-hebert-kl-122ac; 1 HARD finding from worm-canon-pedant (entry 2 facet-license feel:1 @10 is wrong per locked cite-index)
+target: active-project/theater/dialogue/taylor-hebert-kl-122ac.md
+audit-report: active-project/staff/audience/worm-canon-pedant/dialogue-taylor-hebert-kl-122ac-r1-verdict.md
+findings-queued: 1
+
+## SESSION-START — 2026-05-25T10:10:00Z — facets-cycle1-dialogue-taylor (RESUME — prior run incomplete)
+dispatch: resume incomplete cycle-1 remediation; prior SESSION-START written but no per-fault or SESSION-END logged; verify fix state and close
+target: active-project/staff/dialogue-writer/taylor-hebert-kl-122ac.drafts.md (sidecar — carries facet-license citations)
+audit-report: active-project/staff/audience/worm-canon-pedant/dialogue-taylor-hebert-kl-122ac-r1-verdict.md
+findings-queued: 1 (entry 2 feel:1 @10 citation DELETE/REVISE)
+
+## dialogue-entry-2-feel1-citation — RESOLVED — 2026-05-25T10:15:00Z
+fault: entry 2 facet-licenses cited feel:1 @10; locked cite-index has feel:1 @21 (not @10); @10 carries feel:2 only; citation walk fails to resolve — HARD per URI-FACETS-CYCLE-1
+scope: line
+change: DELETE path confirmed executed. Verified sidecar Entry 2 facet-licenses field: contains only `sensory:2 @16`; feel:1 @10 is absent. The prior session removed the bad citation from the per-entry block and documented the deletion in the sidecar bottom-summary citation-completeness note ("feel:1 @10 citation deleted at cycle-1 remediation — feel:1 fires at @21, not @10; feel:2 fires at @10 but describes foot-plant, not breath-tell; citation could not be salvaged by remapping"). Dialogue file (taylor-hebert-kl-122ac.md) carries only utterance text — no citation fields there; no change needed. Q1 for entry 2 ACCEPTED by worm-canon-pedant; spoken text unchanged.
+criteria met: yes — entry 2 facet-licenses no longer names an anchor where the cited facet does not fire; sensory:2 @16 is the sole surviving license and resolves correctly in the locked cite-index (back=Y, co=[taylor-hebert-kl-122ac:1, taylor-hebert-kl-122ac:2, taylor-hebert-kl-122ac:3])
+
+## SESSION-END — 2026-05-25T10:15:00Z — facets-cycle1-dialogue-taylor
+findings-applied: 1 (entry 2 feel:1 @10 citation DELETE — confirmed complete; prior session applied the change, this session verified and closed the log)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-25T07:00:00Z — facets-cycle1-state-updates-remediation
+dispatch: Phase 5b cycle-1 remediation for state-updates facet — all 3 reviewers dissented; cross-reviewer dedupe + minimum-change fixes to per-character slice files and consolidated state-updates.md
+target: active-project/theater/facets/state-updates-taylor-hebert-kl-122ac.md + state-updates-wren-stitch-maker-flea-bottom-ward.md + state-updates.md
+audit-report: active-project/staff/audience/{cape-fic-reader,dark-fantasy-reader,worm-canon-pedant}/state-updates-r1-verdict.md
+findings-queued: tbd (deduping across 3 verdicts)
+
+## SESSION-START — 2026-05-25T08:00:00Z — facets-cycle1-remediation-sensory
+dispatch: Phase 5b cycle-1 remediation for sensory facet — 2 dissenting reviewers (sensory-disambiguation-pedant REVISE; sensory-modality-coverage REVISE); dedupe by [sensory:id], apply minimum change per rubric, pre-validate any ADDs per anti-pattern #14; loc-state cross-facet anchor edits must precede any sensory ADD
+target: active-project/theater/facets/sensory-b01-c01.md
+audit-report: active-project/staff/audience/sensory-disambiguation-pedant/sensory-r1-verdict.md + active-project/staff/audience/sensory-modality-coverage/sensory-r1-verdict.md
+findings-queued: tbd (reading verdicts now)
+
+## facets-cycle1-sensory — WORKING — 2026-05-25T08:10:00Z
+note: deduping across 2 dissenting reviewers; resolving sensory:2 disambiguation-HARD + tactile-silent-gap; pre-validating tactile ADD under anti-pattern #14; loc-state cross-facet impact assessed (no new edit required — existing carve-out covers new tactile entry)
+
+## SESSION-START — 2026-05-25T09:00:00Z — facets-cycle1-fixes-memory
+dispatch: Phase 5b cycle-1 remediation for memory facet — all 3 reviewers dissented; dedupe callouts by [memory:id] and resolve with minimum change; ADD pre-validation per URI-FACETS-CYCLE-N-ADD
+target: active-project/theater/facets/memory-b01-c01.md
+audit-report: active-project/staff/auditor/facets-final-audit-r2.md (flags carried by reference); verdicts: cape-fic-reader + dark-fantasy-reader + worm-canon-pedant memory-r1-verdict.md
+findings-queued: 2 entries (mem:1, mem:2) deduped from 3 verdict files
+
+## SESSION-START — 2026-05-25T10:00:00Z — and-facets-cycle1-fixes-state-updates
+dispatch: /and-facets Phase 5b cycle-1 remediation — state-updates facet, all 3 reviewers dissented; cross-reviewer dedupe + minimum-change fixes
+target: active-project/theater/facets/state-updates-taylor-hebert-kl-122ac.md + state-updates-wren-stitch-maker-flea-bottom-ward.md + state-updates.md
+audit-report: active-project/staff/audience/cape-fic-reader/state-updates-r1-verdict.md + dark-fantasy-reader/state-updates-r1-verdict.md + worm-canon-pedant/state-updates-r1-verdict.md
+findings-queued: tbd — deduplication pass required
+
+## SESSION-START — 2026-05-25T11:00:00Z — and-facets-cycle1-fixes-vibes
+dispatch: Phase 5b cycle-1 remediation for vibes facet — all 3 reviewers dissented; cross-reviewer dedupe by [vibes:id]; minimum-change fixes per dispatch callouts; ADD pre-validation per URI-FACETS-CYCLE-N-ADD
+target: active-project/theater/facets/vibes-b01-c01.md
+audit-report: active-project/staff/audience/cape-fic-reader/vibes-r1-verdict.md + dark-fantasy-reader/vibes-r1-verdict.md + worm-canon-pedant/vibes-r1-verdict.md
+findings-queued: 6 (vibes:1, vibes:2, vibes:5, vibes:8, vibes:9, vibes:10) + volume-ADD 2 entries pre-validation
+
+## vibes:1 — RESOLVED — 2026-05-25T11:05:00Z
+fault: tokens diagnostic not felt-residue; dark-fantasy-reader gate 6: no operator-actionable compression of 3 weeks suppression-work labor
+scope: line
+change: added token "argument-made-so-often-it-precedes-the-needing" to bundle; AP8 pass; biases dialogue-writer register toward self-justification preceding conscious-decision
+criteria met: yes
+
+## vibes:2 — RESOLVED — 2026-05-25T11:06:00Z
+fault: "range-ceiling-felt-as-sharpening-not-as-pain" names phenomenology only; dark-fantasy-reader gate 6 fail (no operator-behavior encoding)
+scope: line
+change: replaced "range-ceiling-felt-as-sharpening-not-as-pain" with "range-edge-as-focus-not-pain"; AP8 pass; biases NI toward attention-at-ceiling and studio away from pain-register
+criteria met: yes
+
+## vibes:5 — RESOLVED — 2026-05-25T11:07:00Z
+fault: "ward-elder-building-the-category-in-real-time" is time-indexed process-description, not a durable mark; dark-fantasy-reader: time-pressure evaporates
+scope: line
+change: replaced "ward-elder-building-the-category-in-real-time" with "the-witness-who-keeps-the-incomplete-account"; AP8 pass; permanent mark biasing Oswyn NPC dialogue-writer toward incomplete-ledger-keeper register
+criteria met: yes
+
+## vibes:8 — RESOLVED — 2026-05-25T11:08:00Z
+fault: tokens 1+3 semantic overlap with vibes:4 / vibes:6 (crowd-consent and ward-record vocabulary restatement); location should carry location-specific content
+scope: line
+change: replaced token 1 "crowd-moved-here-without-consent" with "place-pressed-into-service-without-asking"; replaced token 3 "foreign-woman-in-the-ward-record" with "ward-space-holding-the-event-in-its-texture"; middle token retained; both replacements AP8 pass
+criteria met: yes
+
+## vibes:9 — RESOLVED — 2026-05-25T11:09:00Z
+fault: "reader-knowing-before-taylor-does" is meta-narrative; worm-canon-pedant: no downstream operator can act on reader-epistemics; category error in word-algebra
+scope: line
+change: deleted "reader-knowing-before-taylor-does"; remaining two tokens unchanged
+criteria met: yes
+
+## vibes:10 — RESOLVED — 2026-05-25T11:10:00Z
+fault: ++ on tragic-causal cites only in-episode protos; V1.1 Patch 1 requires world-build source confirming pre-seeded status; worm-canon-pedant
+scope: line
+change: added "world-build:taylor-kl122ac-vibes-preseed" to licensed-by; verified tragic-causal pre-seeded in actors/taylor-hebert-kl-122ac/vibes.md; ++ op confirmed correct
+criteria met: yes
+
+## vibes:11 ADD — ADD-LANDED — 2026-05-25T11:11:00Z
+fault: volume floor shortfall (10 < 12); cape-fic-reader; capability dimension first-expenditure event unrepresented
+scope: line
+change: added vibes:11 actor:taylor-hebert-kl-122ac + capability-first-expenditure [first-deployment-as-opening-of-the-account, range-as-resource-not-refilling, cost-unpriced-by-the-ledger-at-this-point]; pre-validation PASS; count 11
+criteria met: yes
+
+## vibes:12 ADD — ADD-LANDED — 2026-05-25T11:12:00Z
+fault: volume floor shortfall (11 < 12); cape-fic-reader; loc:loc-flea-bottom witch-label-formation absent as permanent location charge
+scope: line
+change: added vibes:12 loc:loc-flea-bottom + the-witch-label-assembled-here [ward-as-the-naming-space, place-of-first-foreign-knowing, the-location-carrying-stage-1-permanently]; pre-validation PASS; count 12; volume floor met
+criteria met: yes
+
+## SESSION-END — 2026-05-25T11:12:00Z — and-facets-cycle1-fixes-vibes
+findings-applied: 8 (vibes:1 token-add, vibes:2 token-replace, vibes:5 token-replace, vibes:8 two-token-replace, vibes:9 token-cut, vibes:10 license-add, vibes:11 ADD-LANDED, vibes:12 ADD-LANDED)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-25T12:00:00Z — and-facets-cycle1-fixes-location-state
+dispatch: Phase 5b cycle-1 remediation — location-state facet; 1 dissent from dark-fantasy-reader; two callouts: SEAM-LOC-CARDS-ABSENT @1–@6 + SEAM-TRANSITION-RUN-BARE @1–@6; apply minimum ADD after URI-FACETS-CYCLE-N-ADD pre-validation
+target: active-project/theater/facets/location-state-b01-c01.md
+audit-report: active-project/staff/audience/dark-fantasy-reader/location-state-r1-verdict.md
+findings-queued: 2 callouts (treated as one ADD operation — one entry at @1 addresses both)
+
+## SESSION-START — 2026-05-25T13:00:00Z — and-facets-cycle1-fixes-memory
+dispatch: Phase 5b cycle-1 remediation — memory facet; all 3 reviewers dissented; cross-reviewer dedupe by [memory:id]; minimum-change resolve; ADD pre-validation per URI-FACETS-CYCLE-N-ADD
+target: active-project/theater/facets/memory-b01-c01.md
+audit-report: active-project/staff/audience/{cape-fic-reader,dark-fantasy-reader,worm-canon-pedant}/memory-r1-verdict.md
+findings-queued: 2 entries deduped (mem:1 SIGNAL-only; mem:2 REVISE — spineless fire at @26)
+
+## mem:2 — WORKING — 2026-05-25T13:05:00Z
+note: mem:2 spine gap requires upstream narrator-interest ADD at @26 first; then cite-index + proto-lines update; then per-task log write
+
+## feel:3-delete — RESOLVED — 2026-05-25T10:15:00Z
+fault: feel:3 @24 taylor Q1 fails — NI:8 @24 "set the body to the alley-mouth" already names body-direction event in somatic register; feel:3 "her head fixes toward the alley-mouth, away from the stitch-house lane" covers same direction with no distinct finer-grain tell; dark-fantasy-reader REVISE verdict (flag-011 overlap)
+scope: line
+change: DELETE feel:3; updated: feeling-taylor-hebert-kl-122ac.md (entry 2 deleted), feeling.md consolidated (entry deleted), proto-lines/b01-c01.md (@24 [feel:3] removed), _cite-index.md (feel:3 entry removed; narrator:8 + state:7 co-lists cleaned; feel section 4→3 entries; totals 44→43; density table 3-citation row decremented)
+criteria met: yes — Q1 redundancy eliminated; Taylor drops to 1 fire (feel:2 @10 = 3.7%, within 2-5% band); over-band flag auto-resolved; no other facets touched
+
+## ADD-pre-validation — RESOLVED — 2026-05-25T10:15:00Z
+fault: URI-FACETS-CYCLE-N-ADD pre-validation required before any ADD
+scope: n/a
+change: none — no ADD justified; 3 fires on 27 bones after deletion; default-to-silence applies
+criteria met: yes
+
+## SESSION-END — 2026-05-25T10:15:00Z — and-facets-cycle1-fixes-feeling
+findings-applied: 1 (feel:3 deleted) + ADD pre-validation clean
+findings-skipped: 0
+exit: CLEAN
+
+## sensory:1 — RESOLVED (no-change) — 2026-05-25T08:20:00Z
+fault: sensory-old-state-reader advisory only (negative-inference old-state for lane-ambient); no HARD; disambiguation-pedant confirmed CLEAN; modality-coverage no per-entry callout
+scope: n/a (no change required)
+change: none — entry defended in place under existing carve-out; advisory noted but non-blocking under current rubric
+criteria met: yes
+
+## sensory:2 (anchor move @16→@9; modality sound→tactile) — RESOLVED — 2026-05-25T08:25:00Z
+fault: (1) disambiguation-pedant HARD: sensory:2 @16 "raises the voice" is action-verb self-charge — English idiom "raise one's voice" means louder; sound inflection IS the phrase; Q1 fails; (2) modality-coverage: tactile silent-gap at bones 8-14 (crowd-compression run with zero tactile fires); together these require replacing sensory:2 with a tactile fire on a genuinely bare-verb bone
+scope: line (sensory facet file + proto-lines + cite-index)
+change: (1) sensory:2 DELETED from @16 (sound: crowd-ambient-murmur -> taylor-raised-voice); (2) new sensory:2 ADDED at @9 (tactile: lane-ambient -> crowd-compression # tag: up); (3) sensory facet carve-out header updated: new per-entry annotation for sensory:2 @9 with full anti-pattern #14 pre-validation; (4) proto-lines: [sensory:2] removed from @16, added to @9; (5) cite-index: sensory:2 line updated @16→@9 co-list removed; sensory:2 added to lonely entries at @9; @9 removed from bare protolines list; totals: 16/27 decorated; density distribution updated (bare 12→11, 1-cite 9→10, 3-cite 1→2)
+criteria met: yes — action-verb self-charge HARD cleared; tactile silent-gap addressed; modality floor met (smell + tactile = 2); anti-pattern #14 pre-validation passed; no loc-state edit required (existing carve-out covers new tactile entry's old-state from scene-internal bones 1-8)
+
+## SESSION-END — 2026-05-25T08:25:00Z — facets-cycle1-remediation-sensory
+findings-applied: 2 (sensory:1 defended no-change; sensory:2 replaced — sound@16→tactile@9)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-25T10:00:00Z — and-facets-cycle1-fixes-state-updates
+dispatch: /and-facets Phase 5b cycle-1 remediation — state-updates facet, all 3 reviewers dissented; cross-reviewer dedupe + minimum-change fixes
+target: active-project/theater/facets/state-updates-taylor-hebert-kl-122ac.md + state-updates-wren-stitch-maker-flea-bottom-ward.md + state-updates.md
+audit-report: active-project/staff/audience/cape-fic-reader/state-updates-r1-verdict.md + dark-fantasy-reader/state-updates-r1-verdict.md + worm-canon-pedant/state-updates-r1-verdict.md
+findings-queued: 5 (deduped from 3 verdicts: 4 DELETE + 1 REVISE)
+
+## fault-SU-001 (state:4 DELETE) — RESOLVED — 2026-05-25T10:15:00Z
+fault: capability_axis @12 — chapter-aggregate substance delta posted as mid-bone canonical field-flip; anti-pattern #7 (ledger-as-state / pre-empting); REJECT worm-canon-pedant; CONTESTED dark-fantasy-reader
+scope: line
+change: entry deleted from state-updates-taylor-hebert-kl-122ac.md and state-updates.md; [state:4] removed from proto-lines @12; cite-index state:4 removed; co-citation lists stripped of state:4
+criteria met: yes — ledger-as-state entry removed; handoff_out capability-rank-3 record unchanged
+
+## fault-SU-002 (state:5 DELETE) — RESOLVED — 2026-05-25T10:15:00Z
+fault: posture @17 — POV actor-state entry with no narrator-interest co-citation at @17; lonely entry; rubric cross-facet contract violated; REJECT dark-fantasy-reader
+scope: line
+change: entry deleted from state-updates-taylor-hebert-kl-122ac.md and state-updates.md; [state:5] removed from proto-lines @17 (bone now bare); cite-index state:5 removed; @17 added to bare-protolines; deletion note: re-add pending NI author providing @17 entry
+criteria met: yes — cross-facet-contract-violating entry removed
+
+## fault-SU-003 (state:6 DELETE) — RESOLVED — 2026-05-25T10:15:00Z
+fault: social_tether_prot_axis @21 — field not on actor:taylor state.md (anti-pattern #6: invented field); also ledger-as-state; also registration framing; REJECT worm-canon-pedant; CONTESTED dark-fantasy-reader; FLAG cape-fic-reader
+scope: line
+change: entry deleted from both files; [state:6] removed from proto-lines @21; cite-index state:6 removed; co-citation lists stripped of state:6; @21 pile-up drops 8→7
+criteria met: yes — invented-field + ledger-as-state entry removed
+
+## fault-SU-004 (state:8 DELETE) — RESOLVED — 2026-05-25T10:15:00Z
+fault: ward-recognition @26 — cross-POV authority violation (Oswyn's categorization on Taylor's slice; already canonical in Oswyn slice state:2); NI co-citation absent; REJECT worm-canon-pedant and dark-fantasy-reader; FLAG cape-fic-reader
+scope: line
+change: entry deleted from both files; [state:8] removed from proto-lines @26; cite-index state:8 removed; co-citation lists stripped of state:8; Oswyn state:2 unchanged
+criteria met: yes — cross-POV authority violation + double-filing removed
+
+## fault-SU-005 (state:9 REVISE) — RESOLVED — 2026-05-25T10:20:00Z
+fault: wren relational_anchor_to_taylor — missing field-extension comment; value "observation-traced-d01-deterrence" contains authoring metadata + inaccurate affect charge; soft-flag worm-canon-pedant; value notes from dark-fantasy-reader and cape-fic-reader
+scope: line
+change: field-extension comment added; value changed to "observation-traced-chapter-1"; applied to state-updates-wren-stitch-maker-flea-bottom-ward.md and state-updates.md; cite-index state:9 back-link unchanged
+criteria met: yes — field-extension documented; clean value, no metadata, no inaccurate affect
+
+## SESSION-END — 2026-05-25T10:20:00Z — and-facets-cycle1-fixes-state-updates
+findings-applied: 5 (4 DELETE + 1 REVISE)
+findings-skipped: 0
+exit: CLEAN
+cross-facet-impact: narrator-interest author must add @17 NI entry before state:5 (taylor.posture) can be re-authored; @17 is now a bare protoline; all other changes are self-contained state-updates cleanup
+
+## mem:1 — NO-ACTION-DEFENDED — 2026-05-25T13:20:00Z
+fault: target-reference slug cond-override-architecture-residue-122ac uses cond-* class, not monument-* convention (flag-013); all 3 reviewers SIGNAL only — not HARD, not a revise verdict on the entry itself
+scope: n/a (no file change)
+change: none — SIGNAL flag carried forward as-is; margit referral required for slug-class correction; entry accepted on all other axes by all reviewers; fixer does not rename card slugs without margit authority
+criteria met: yes — SIGNAL disposition documented; margit referral flagged to showrunner
+
+## mem:2 — RESOLVED — 2026-05-25T13:25:00Z
+fault: spineless fire at @26; mem:2 co-cited only [state:2, state:8]; no narrator-interest at @26; no feel-flag at @26; V3 feel-as-spine carve-out fails condition (3); R2 judge's "graph spine" language conflated state-update co-citation with licensing-spine
+scope: line (upstream-first: interest-narrator-b01-c01.md ADD, then proto-lines, then cite-index)
+change: (1) narrator:9 @26 added to interest-narrator-b01-c01.md: "the chin-lift filed her in a category she recognized the shape of without needing the country's name for it." (2) [narrator:9] added to proto-lines/b01-c01.md @26 citation list (3) cite-index updated: narrator:9 @26 back=Y co=[mem:2, state:2]; mem:2 co-list updated to include narrator:9; memory-b01-c01.md unchanged
+criteria met: yes — mem:2 spine is narrator:9 @26; NI register-consistent (clinical, no feeling-word, inventory-tell); file-level checks pass post-repair (doubled-register, sparsity, pressure-signal inversion, per-scene cap)
+
+## SESSION-END — 2026-05-25T13:30:00Z — and-facets-cycle1-fixes-memory
+findings-applied: 1 (mem:2 spine repaired via narrator:9 ADD upstream + proto-lines + cite-index)
+findings-skipped: 1 (mem:1 NO-ACTION-DEFENDED: SIGNAL only; margit referral, not fixer scope)
+exit: CLEAN
+
+## SEAM-LOC-CARDS-ABSENT + SEAM-TRANSITION-RUN-BARE — RESOLVED — 2026-05-25T12:20:00Z
+fault: dark-fantasy-reader: @1–@6 transition run is facet-bare; studio's zero-entry was based on erroneous claim that locations: header was empty; oc-stitch-house-lane card exists at active-project/warehouse/oc-stitch-house-lane.md
+scope: line (ADD to location-state-b01-c01.md + proto-lines citation + cite-index update)
+change: ADD-LANDED — loc-state:1 @1 oc-stitch-house-lane | morning | none | stitch-house-lamp-burning | drain-water trickle audible at the angle-gap pinch-point. Licensing: first-beat-in-new-location exception to dexterity-stillness deny-list for "threads" (URI-FACETS-CYCLE-1). Proto-lines @1 updated with [loc-state:1]. Cite-index updated: loc-state section 0→1 entry; exposition:5 co-list updated; totals 40→41; density 1-cite 10→9, 2-cite 1→2. Facet file authoring note rewritten. SEAM-TRANSITION-RUN-BARE resolved via inherited environment from loc-state:1 covering @2–@6.
+criteria met: yes — oc-stitch-house-lane card has an authored loc-state entry; stitcher has angle-gap / stitch-house-lamp baseline for the flat-low opening run; dark-fantasy-reader's stated minimum achieved; no scope expansion to @21 or beyond
+
+## SESSION-END — 2026-05-25T12:20:00Z — and-facets-cycle1-fixes-location-state
+findings-applied: 1 (one ADD addressing both callouts)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-25T14:00:00Z — and-facets-cycle2-phase5-fixes
+dispatch: Phase 5 cycle-2 remediation — 4 HARD findings from facets-cycle2-audit.md; cycle-1 propagation gaps; minimum change per finding; order: C2-003 first (cite-index ADD), then C2-001 (vibes:11 licensed-by), then C2-002 (sidecar entry 3 facet-licenses), then C2-004 (memory R2 stamp)
+target: active-project/theater/facets/_cite-index.md (primary), active-project/theater/facets/vibes-b01-c01.md, active-project/staff/dialogue-writer/taylor-hebert-kl-122ac.drafts.md, active-project/theater/facets/memory-b01-c01.md
+audit-report: active-project/staff/auditor/facets-cycle2-audit.md
+findings-queued: 4
+
+## fault-C2-003 — RESOLVED — 2026-05-25T14:10:00Z
+fault: _cite-index.md missing vibes:11 and vibes:12 registrations; vibes section count 10 (should be 12); pile-ups at @12 (5) and @21 (6) stale; co-lists for all @12/@21 members did not include the new vibes entries
+scope: line
+change: vibes section 10→12; vibes:11 @12 back=Y and vibes:12 @21 back=Y entries added with full co-lists; co-lists updated for narrator:4, state:3, vibes:3, vibes:4, vibes:8 (add vibes:11) and exposition:8, feel:1, narrator:5, state:1, vibes:5, vibes:6, vibes:7 (add vibes:12); pile-up @12 updated 5→6 with vibes:11; pile-up @21 updated 6→8 with vibes:12; cycle-1 ADD annotation appended to vibes section; totals header confirmed correct at 43
+criteria met: yes
+
+## fault-C2-001 — RESOLVED — 2026-05-25T14:12:00Z
+fault: vibes:11 licensed-by cited deleted state:4; dangling citation fails rubric-vibes.md gate 4
+scope: line
+change: state:4 removed from vibes:11 licensed-by; remaining sources proto:12, proto:13, state:3 verified sufficient under gate 4 (all three resolve to live entries; deployment-event licensing holds without the ledger-as-state entry)
+criteria met: yes
+
+## fault-C2-002 — RESOLVED — 2026-05-25T14:15:00Z
+fault: sidecar entry 3 facet-licenses cited sensory:2 @16 (moved to @9) and state:5 @17 (deleted); both fail cite-index walk
+scope: line
+change: sensory:2 @16 corrected to sensory:2 @9 with explanatory note; state:5 @17 deleted with note; citation-completeness summary updated; entry 3 retains sensory:2 @9 as sole valid license; SIGNAL gap (state axis empty) documented; no HARD remains
+criteria met: yes
+
+## fault-C2-004 — RESOLVED — 2026-05-25T14:17:00Z
+fault: memory-b01-c01.md R2 stamp cited deleted state:6 as spine confirmation for mem:2; contradicts current cite-index co-list co=[narrator:9, state:2]
+scope: line
+change: R2 stamp updated — state:6 replaced with narrator:9 @26 as NI spine carrier; deletion note for state:6 added; stamp now consistent with cite-index
+criteria met: yes
+
+## SESSION-END — 2026-05-25T14:17:00Z — and-facets-cycle2-phase5-fixes
+findings-applied: 4
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-25T15:00:00Z — and-facets-cycle2-phase5-cleanup
+dispatch: correct entries 1 and 2 in sidecar — sensory:2 @16 → sensory:2 @9; update citation-completeness summary; remove invalid anchor-association SIGNAL classification
+target: active-project/staff/dialogue-writer/taylor-hebert-kl-122ac.drafts.md
+audit-report: active-project/staff/auditor/facets-cycle2-audit-confirm.md
+findings-queued: 1 (fault-C2C-001 — two entries, two HARD instances)
+
+## fault-C2C-001 — RESOLVED — 2026-05-25T15:05:00Z
+fault: entries 1 and 2 cited sensory:2 @16; sensory:2 fires at @9 (back=Y), not @16; proto-lines @16 carries no [sensory:2] decoration; cite-index walk fails; HARD per rubric-dialogue.md §citation-completeness; prior cycle-2 fixer misclassified as SIGNAL under non-rubric-grounded "anchor-association citation" concept
+scope: line
+change: (1) entry 1 facet-licenses: sensory:2 @16 corrected to sensory:2 @9 (tactile: crowd-compression; back=Y @9; same basis as entry 3); state:3 @12 unchanged; (2) entry 2 facet-licenses: sensory:2 @16 corrected to sensory:2 @9 (same basis); (3) citation-completeness summary rewritten: "anchor-association citation" SIGNAL classification removed; all three entries documented as citing sensory:2 @9 (back=Y); entry 2 state axis noted as empty (SIGNAL, not HARD); entry 3 state axis empty status unchanged
+criteria met: yes
+
+## SESSION-END — 2026-05-25T15:05:00Z — and-facets-cycle2-phase5-cleanup
+findings-applied: 1 (fault-C2C-001 resolved — two facet-license lines corrected + citation-completeness summary rewritten)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-25T16:00:00Z — and-facets-cycle3-fixes-sensory
+dispatch: Phase 5b cycle-3 remediation — sensory facet only; single HARD from sensory-old-state-reader; add tactile baseline to loc-state:1 @1, update sensory:2 old-state citation, update sensory facet carve-out header, verify cite-index back-links
+target: active-project/theater/facets/location-state-b01-c01.md (primary edit 1), active-project/theater/facets/sensory-b01-c01.md (primary edits 2+3), active-project/theater/facets/_cite-index.md (verification)
+audit-report: active-project/staff/audience/sensory-old-state-reader/sensory-r2-verdict.md
+findings-queued: 1 (unanchored-old-state HARD on sensory:2 @9)
+
+## SESSION-START — 2026-05-25T17:00:00Z — and-facets-cycle3-fixes-sensory
+dispatch: Phase 5b cycle-3 remediation re-dispatch — verify prior session edits landed; single HARD from sensory-old-state-reader (unanchored-old-state on sensory:2 @9); protocol: loc-state:1 tactile REVISE, sensory:2 old-state REVISE, sensory carve-out header REVISE, cite-index verify
+target: active-project/theater/facets/location-state-b01-c01.md, active-project/theater/facets/sensory-b01-c01.md, active-project/theater/facets/_cite-index.md
+audit-report: active-project/staff/audience/sensory-old-state-reader/sensory-r2-verdict.md
+findings-queued: 1
+
+## sensory-cycle3-hard — RESOLVED (VERIFIED) — 2026-05-25T17:05:00Z
+fault: sensory:2 @9 old-state "lane-ambient" unanchored on tactile modality — loc-state:1 had no tactile field; unenumerated carve-out path invoked; carve-out factual premise stale
+scope: line
+change: all four protocol operations verified complete (prior session 16:00-16:10Z applied edits); op-1 loc-state:1 @1 tactile field present; op-2 sensory:2 old-state is "cobblestone-underfoot-pre-compression" (resolves to loc-state:1); op-3 carve-out header corrected (no stale zero-entry claim; loc-state:1 cross-facet anchor cited); op-4 cite-index back-links current (sensory:2 @9 back=Y, lone; no co-citation to loc-state:1 needed)
+criteria met: yes — sensory:2 old-state resolves against loc-state:1's anchored tactile baseline via enumerated rubric path
+
+## SESSION-END — 2026-05-25T17:05:00Z — and-facets-cycle3-fixes-sensory
+findings-applied: 1 (verified; edits confirmed in place from prior session)
+findings-skipped: 0
+exit: CLEAN

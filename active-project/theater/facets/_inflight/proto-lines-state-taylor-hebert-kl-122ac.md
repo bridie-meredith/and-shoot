@@ -4,7 +4,7 @@ episode: b01c01
 narrator: taylor-hebert-kl-122ac
 goal: Show the audience Taylor's first act of control in King's Landing — the instinct that survives every prohibition — and plant the witch-label and Wren's presence before either becomes legible as costs.
 cast: taylor-hebert-kl-122ac, oswyn-mudway-flea-bottom-elder, wren-stitch-maker-flea-bottom-ward
-locations: oc-stitch-house-lane
+locations:
 prior_episode: none
 aggregate_range: 1-27
 
@@ -20,20 +20,20 @@ aggregate_range: 1-27
 9 the crowd compresses
 10 taylor-hebert-kl-122ac holds the feet
 11 the lane-mouth presses the crowd
-12 the insects propagate
+12 the insects propagate [state:1] [state:2]
 13 the nearest dozen bodies yield
 14 the gap propagates
 15 taylor-hebert-kl-122ac faces the child
 16 taylor-hebert-kl-122ac raises the voice
-17 taylor-hebert-kl-122ac lifts the hands
+17 taylor-hebert-kl-122ac lifts the hands [state:3]
 
 18 the crowd thins
 19 the fish-cart man faces taylor-hebert-kl-122ac
 20 the two women face the lane
-21 oswyn-mudway-flea-bottom-elder takes the lane-mouth
+21 oswyn-mudway-flea-bottom-elder takes the lane-mouth [state:4]
 22 the child clears the lane
 23 the gap closes
-24 taylor-hebert-kl-122ac faces the alley-mouth
+24 taylor-hebert-kl-122ac faces the alley-mouth [state:5]
 25 the tallow smoke layers the lane-floor
-26 oswyn-mudway-flea-bottom-elder lifts the chin
+26 oswyn-mudway-flea-bottom-elder lifts the chin [state:6]
 27 wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac

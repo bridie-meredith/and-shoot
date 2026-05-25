@@ -4,7 +4,7 @@ episode: b01c01
 narrator: taylor-hebert-kl-122ac
 goal: Show the audience Taylor's first act of control in King's Landing — the instinct that survives every prohibition — and plant the witch-label and Wren's presence before either becomes legible as costs.
 cast: taylor-hebert-kl-122ac, oswyn-mudway-flea-bottom-elder, wren-stitch-maker-flea-bottom-ward
-locations: oc-stitch-house-lane
+locations:
 prior_episode: none
 aggregate_range: 1-27
 

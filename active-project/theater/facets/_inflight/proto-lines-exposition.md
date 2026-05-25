@@ -1,21 +1,20 @@
-# bones — b01c01
+# proto-lines — b01c01 (exposition decoration pass)
 
-episode: b01c01
+episode: b01-c01
 narrator: taylor-hebert-kl-122ac
-goal: Show the audience Taylor's first act of control in King's Landing — the instinct that survives every prohibition — and plant the witch-label and Wren's presence before either becomes legible as costs.
-cast: taylor-hebert-kl-122ac, oswyn-mudway-flea-bottom-elder, wren-stitch-maker-flea-bottom-ward
-locations: oc-stitch-house-lane
-prior_episode: none
-aggregate_range: 1-27
+source: active-project/theater/proto-lines/b01-c01.md
+decorated-with: exposition (R1)
 
-1 the drain water threads the angle-gap
+---
+
+1 the drain water threads the angle-gap [exposition:5]
 2 the tallow smoke crosses the stitch-house lane
 3 taylor-hebert-kl-122ac holds the feet
 4 the insects swell
 5 the angle-wall narrows the lane
 6 taylor-hebert-kl-122ac exhales
 
-7 the fish-cart blocks the lane
+7 the fish-cart blocks the lane [exposition:6]
 8 the ground transmits the child's breath
 9 the crowd compresses
 10 taylor-hebert-kl-122ac holds the feet
@@ -27,13 +26,16 @@ aggregate_range: 1-27
 16 taylor-hebert-kl-122ac raises the voice
 17 taylor-hebert-kl-122ac lifts the hands
 
-18 the crowd thins
+18 the crowd thins [exposition:7]
 19 the fish-cart man faces taylor-hebert-kl-122ac
 20 the two women face the lane
-21 oswyn-mudway-flea-bottom-elder takes the lane-mouth
+21 oswyn-mudway-flea-bottom-elder takes the lane-mouth [exposition:8]
 22 the child clears the lane
 23 the gap closes
 24 taylor-hebert-kl-122ac faces the alley-mouth
 25 the tallow smoke layers the lane-floor
 26 oswyn-mudway-flea-bottom-elder lifts the chin
-27 wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac
+27 wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac [exposition:9]
+
+# Synthetic @0 anchor — exposition entries 1-4 (episode-open scopes) render before the body
+# @0: [exposition:1] (episode-open-preamble) + [exposition:2, exposition:3, exposition:4] (episode-open-context)

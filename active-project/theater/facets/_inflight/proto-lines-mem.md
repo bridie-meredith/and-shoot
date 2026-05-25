@@ -4,13 +4,13 @@ episode: b01c01
 narrator: taylor-hebert-kl-122ac
 goal: Show the audience Taylor's first act of control in King's Landing — the instinct that survives every prohibition — and plant the witch-label and Wren's presence before either becomes legible as costs.
 cast: taylor-hebert-kl-122ac, oswyn-mudway-flea-bottom-elder, wren-stitch-maker-flea-bottom-ward
-locations: oc-stitch-house-lane
+locations:
 prior_episode: none
 aggregate_range: 1-27
 
 1 the drain water threads the angle-gap
 2 the tallow smoke crosses the stitch-house lane
-3 taylor-hebert-kl-122ac holds the feet
+3 taylor-hebert-kl-122ac holds the feet [mem:1]
 4 the insects swell
 5 the angle-wall narrows the lane
 6 taylor-hebert-kl-122ac exhales
@@ -35,5 +35,5 @@ aggregate_range: 1-27
 23 the gap closes
 24 taylor-hebert-kl-122ac faces the alley-mouth
 25 the tallow smoke layers the lane-floor
-26 oswyn-mudway-flea-bottom-elder lifts the chin
+26 oswyn-mudway-flea-bottom-elder lifts the chin [mem:2]
 27 wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac

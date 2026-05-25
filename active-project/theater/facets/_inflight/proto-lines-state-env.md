@@ -1,10 +1,14 @@
 # bones — b01c01
+# inflight copy for state-updates-env R1 slice
+# [state:<id>] citations appended to decorated lines
+# No entries fired this chapter — no [state:N] decorations appear below.
+# See state-updates-env.md for rationale.
 
 episode: b01c01
 narrator: taylor-hebert-kl-122ac
 goal: Show the audience Taylor's first act of control in King's Landing — the instinct that survives every prohibition — and plant the witch-label and Wren's presence before either becomes legible as costs.
 cast: taylor-hebert-kl-122ac, oswyn-mudway-flea-bottom-elder, wren-stitch-maker-flea-bottom-ward
-locations: oc-stitch-house-lane
+locations:
 prior_episode: none
 aggregate_range: 1-27
 
