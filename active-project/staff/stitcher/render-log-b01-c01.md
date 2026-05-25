@@ -509,4 +509,72 @@ residuals:
 
 Phase 7 draft written: active-project/draft/b01-c01.phase-7.draft.md (body only; preamble prepended at Phase 8 finalize).
 
+## Phase 8 — finalize
+
+clean draft: active-project/draft/b01-c01.md
+annotated draft: active-project/draft/b01-c01.annotated.md
+preamble source: exposition-facet (R2 all-keep; 3 episode-open entries)
+scene-callout suppression: VERIFIED CLEAN (no surviving markers — scanned for `## Scene N`, `[SCENE BREAK]`, `--- SCENE ---`; zero hits)
+
+### STATS
+
+word count: 485 (body only; preamble 217 additional)
+sentence count: 33 (body; post-Phase-7-sweep — 35 swept minus 2 cuts; matches keeps=30 + cut-clauses=3 which retained their host sentences)
+paragraph count: 27 (body)
+preamble paragraph count: 3
+preamble word count: 217
+
+bones:
+  authored: 27
+  rendered: 27
+  merged: 0
+  dropped: 0
+  rendered-illegible: 0
+
+facets (per cite-index total 43):
+  rendered: 25
+  dropped: 0
+  unrendered-remainder: 1
+  render-false-excluded: 17 (5 state-updates + 12 vibes; schema render-action ≠ apply)
+
+facets-by-type:
+  loc-state:     rendered=1/1
+  sensory:       rendered=2/2
+  memory:        rendered=2/2
+  narrator:      rendered=9/9
+  feel:          rendered=2/3
+  metaphor:      rendered=0/0
+  exposition:    rendered=9/9   (3 preamble + 6 per-anchor folds)
+  state-updates: rendered=0/5   (render=false; continuity only)
+  vibes:         rendered=0/12  (render=false; bias only)
+
+dialogue (separate from cite-index facet count):
+  character-files-loaded: 1
+  utterances-rendered: 3
+  bare-speech-bones: 0
+  unmoored-utterances: 0
+  speaker-mismatches: 0 (routing-note-licensed)
+
+reshow count: 0 (Phase 7)
+reword count: 0 (Phase 7; POV-pronoun-resolves at Phase 4 are not REWORDs)
+
+exposition: entries-rendered=9, refused-at-R2=0, cross-episode-register-skipped=0
+dialogue-source: dialogue-facet
+
+### RECONCILE (URI-STITCH-ACCOUNTING-HONESTY)
+
+bones reconciliation:
+  authored: 27 = rendered + merged + dropped + rendered-illegible = 27 + 0 + 0 + 0 = 27 ✓
+
+facets reconciliation (against cite-index entry count):
+  cite-index total: 43 = rendered + dropped + unrendered-remainder + render-false-excluded = 25 + 0 + 1 + 17 = 43 ✓
+
+unrendered-remainder breakdown (FLAG-UNRENDERED-REMAINDER):
+  - feel:2 @10 Taylor breath empties out (expressed:no interior; held subtextually via "kept the feet" hold-verb at L19, not surface-rendered). Acceptable per facet authoring (expressed:no entries are held-to-subtext by definition; the bone-action carries the suppression-cost rather than direct interior surface).
+  
+  expected note: render=false facets (state-updates 5, vibes 12) are not in the unrendered-remainder count because they're declared continuity/bias-only per schema and render-action ≠ apply. Their absence from prose is correct-by-design.
+
+state: stitched: true (showrunner memory update applied at active-project/staff/showrunner/memory.md b01c01 chapter block)
+
+
 

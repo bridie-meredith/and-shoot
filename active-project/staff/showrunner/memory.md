@@ -2277,6 +2277,24 @@ books:
         #       ("anchor-association citation") absent from rubric-dialogue.md. Caught by confirm-audit.
         #       Carry-forward: AP-SCAN promotion candidate (PARK-FACETS-005).
         # Parking-lot items added: PARK-FACETS-001 (pl-2026-05-25-005) through PARK-FACETS-006 (pl-2026-05-25-010) — all SOFT.
+        # /and-stitch b01c01 — 2026-05-25 Phase 8 finalize complete.
+        # Terminal deliverable: active-project/draft/b01-c01.md (clean) + active-project/draft/b01-c01.annotated.md (line-IDs + trace).
+        # Render-log: active-project/staff/stitcher/render-log-b01-c01.md (Phase 0-8 trace).
+        # STATS: body 485w / 33 sentences / 27 paragraphs; preamble 217w / 3 italic paragraphs (3 episode-open exposition entries).
+        # Bones reconciliation: 27 authored = 27 rendered + 0 merged + 0 dropped + 0 illegible ✓.
+        # Facets reconciliation: 43 cite-index = 25 rendered + 0 dropped + 1 unrendered-remainder (feel:2 @10 expressed:no held-to-subtext) + 17 render-false-excluded (5 state-updates + 12 vibes) ✓.
+        # Dialogue: 3 utterances at @16 rendered verbatim under one "I said" attribution; speaker-paragraph rule verified at @16.
+        # Phase 7 sweep: 30 keeps + 3 cut-clauses + 2 cuts (drift-risks @7 / @18 / @19 / @25 resolved); 0 reshows, 0 rewords.
+        # Scene-callout markers: zero in clean draft (HARD-STRIP scan clean).
+        # Parking lot: pl-2026-05-25-006 dialogue sidecar semantic-fit (SOFT, target.phase=null) surfaces at Phase 9 cold-read exit; non-blocking.
+        # Next: Phase 9 cold-read terminal gate.
+        stitch:
+          stitched_at: 2026-05-25
+          clean_draft_path: draft/b01-c01.md
+          annotated_draft_path: draft/b01-c01.annotated.md
+          render_log_path: staff/stitcher/render-log-b01-c01.md
+          status: stitched
+          phase_9_status: pending
 
       - slug: b01c02
         status: planned
