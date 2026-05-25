@@ -2,21 +2,22 @@
 generated: 2026-05-25
 source: active-project/theater/proto-lines/b01-c01.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 41 facet entries (44 original minus 4 state-updates deletions plus 1 loc-state addition in cycle-1); 16/27 protolines decorated (59.3%)
+totals: 43 facet entries (44 original minus 4 state-updates deletions plus 1 loc-state addition plus 2 vibes additions in cycle-1); 16/27 protolines decorated (59.3%)
 cycle-1-note: state:4/5/6/8 deleted 2026-05-25 per /and-facets cycle-1 remediation; sensory:2 anchor moved @16→@9 2026-05-25 per sensory cycle-1 remediation; loc-state:1 added @1 2026-05-25 per dark-fantasy-reader callout
 
 ## Density distribution (protolines by citation count)
-# NOTE: distribution pending regeneration — reflects state-updates cycle-1 deletions + sensory cycle-1 remapping;
-# @9 moved from bare to 1-cite (sensory:2); @16 dropped sensory:2 (now 3 cites: 3 dialogue entries only)
+# regenerated 2026-05-25 cycle-1 complete (vibes:11 + vibes:12 ADDs; all cycle-1 changes reflected)
+# @9 moved from bare to 1-cite (sensory:2 cycle-1); @16 dropped sensory:2 (3 dialogue entries only);
+# vibes:11 @12 added (5→6 pile-up); vibes:12 @21 added (7→8 pile-up)
 
 | cites/line | count |
 |------------|-------|
 | 0 (bare)   | 11 |
-| 1          | 9 |
+| 1          | 8 |
 | 2          | 2 |
-| 3          | 2 |
-| 5          | 2 |
-| 6          | 1 |
+| 3          | 4 |
+| 6          | 2 |
+| 8          | 1 |
 
 ## Per-facet entries
 
