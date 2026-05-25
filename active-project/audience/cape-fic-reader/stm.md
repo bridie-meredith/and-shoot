@@ -60,3 +60,21 @@ notes:
   - Strongest beat: s03n09 (chin-lift as composing-of-the-word); no declaration, no named emotion, body-language read by a body-reader
   - Carry-forward: 'lifts the' mannerism (3x chapter-wide) flagged by decomposer; recommend s03n09 recast to 'raises the chin' at Pass 2/3; s02n10 stays ('lifts the hands' is the load-bearing witnessed image)
   - No fatigue triggers fired; no established limits bypassed without cost; held axes are load-bearing dormancy throughout
+
+## 2026-05-25 — /and-write b01c01 Phase 6 bone-gate
+
+verdict_per_scene:
+  b01c01s01: SUBSTANCE-FELT
+  b01c01s02: SUBSTANCE-FELT
+  b01c01s03: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+chapter_verdict: SUBSTANCE-FELT
+notes:
+  - s01: prohibition-discipline reads as Khepri-residue suppression work (not generic mage-restraint); n03+n04 sequence gives the hold its correct texture — manual override against the swarm's own pressure; three weeks of cost credibly in the scene's weight
+  - s02: capability gain lands as ankle-height instinct (correct Khepri-rhyme scale); un-filed-decision framing is the key information-asymmetry bone; cost is structurally present through Wren's unregistered exposure (n09 plants exposure-radius condition without naming it) and the witch-label formation seeded in s03; gain is not unpriced; no SUBSTANCE-SUSPECT-cheap-gain-capability
+  - s03: social_tether-prot-rise lands as Westerosi ward-social-institution (ward-elder + corroborating witnesses + body-language categorization); tether earned by rescue-as-cost, not as bonus social gain; s03n10 (Wren-orients) lands as quietly loaded hook completing three-station dormancy arc (s01n02 → s02n09 → s03n10), not as procedural decoration
+  - held axes across all scenes: all six (s01) / five (s02/s03) feel enacted as load-bearing dormancy; political_register-prot at structural baseline (no court content, correctly suppressed); moral_framework crack visible to reader at s02n07, not yet to Taylor
+  - soft watch retained: s01n01/s01n06 anonymity-by-geometry distinction must be felt in prose; s02n05 and s03n01 political_register-prot held bones need physical specificity at prose execution
+  - no fatigue triggers fired; no established limits bypassed without cost; no unmotivated knowledge

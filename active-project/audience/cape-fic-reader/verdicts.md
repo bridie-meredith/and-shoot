@@ -187,3 +187,222 @@ notes: |
   hands') should stay as is — the hands-up posture is load-bearing as a witnessed image and
   'lifts' is the discrete act that carries it.
 ```
+
+---
+
+### /and-write b01c01 Phase 6 bone-gate — 2026-05-25
+
+```yaml
+---
+reviewer: cape-fic-reader
+chapter: b01c01
+phase: write-bone-gate
+date: 2026-05-25
+scenes_reviewed: [b01c01s01, b01c01s02, b01c01s03]
+---
+```
+
+## scene b01c01s01
+verdict: SUBSTANCE-FELT
+reasoning: |
+  The scene's contract is no axis movement — six held axes, all six enacted, no chatter.
+  The question is whether the prohibition-discipline reads as Khepri-residue suppression
+  work and not as generic mage-restraint. It does.
+
+  The critical bones are n03 and n04 in sequence: n03 ("taylor holds the feet") names
+  suppression by discipline, not incapacity — range-awareness is established as a chosen
+  threshold, feet planted while the pull works against them. n04 ("the insects propagate")
+  delivers the opposing force as a physical sensation sharpening from background to pull at
+  the range edge. These two bones together give the prohibition its Khepri-specific texture:
+  it is not that Taylor cannot direct the swarm, it is that she is actively holding the line
+  against the swarm's own pressure. That is the residue shape — the old software is still
+  running; the prohibition is the manual override she pays for every morning.
+
+  n07 ("taylor exhales") carries the self-accounting layer correctly: the prohibition
+  survives the morning as an argument she makes to herself, not as a rule she recites. The
+  "choosing-each-morning" framing in the rationale makes the hold feel like ongoing labor
+  with accumulated cost (three weeks of it), not a backstory note delivered in one beat.
+
+  n01 and n06 together enact anonymity through physical geometry rather than through
+  description — the drain water, the angle-gap, the wall — without stating "Taylor is
+  anonymous here." The social_tether-prot-rise held axis is grounded in the arrangement
+  itself, not in a description of the arrangement. This is the correct shape for a cape-fic
+  reader: the information is in the structure, not the label.
+
+  n02 (tallow smoke from the stitch-house) plants the relational_anchor as an environmental
+  datum — Taylor registers it at surfaces only, no name. The held-dormancy reads as
+  structurally present without being narratively announced. The cost-bearer's location is
+  a physical fact before it becomes a person. This resolves the Phase 4 soft watch
+  (pl-2026-05-25-002) correctly.
+
+  No held axis feels unenacted. moral_framework: the prohibition's daily cost is paid across
+  n03, n04, n07. capability: the suppression-as-discipline is enacted as physical stillness
+  against physical pressure, not stated. relational_anchor_status: present as smell.
+  moral_legibility_to_self: the morning argument runs without opening a new ledger.
+  political_register-prot: no court content in the drain angle — the ward is smallfolk-only,
+  and this reads correctly as the ground floor before resentment has anything to form on.
+  social_tether-prot-rise: the anonymity is structural, not stated.
+
+  One soft note carried from Phase 4: s01n01 and s01n06 both work through anonymity-by-
+  geometry, and at bones level they hold distinct physical aspects (location-placement vs.
+  wall-space). The stitcher will need to make that distinction felt in prose or the two
+  beats will read as one beat repeated. Not a bone-gate issue — the bones themselves are
+  not redundant. Prose execution flagged.
+
+  SUBSTANCE-FELT. Prohibition-as-labor lands as ongoing expenditure, not backstory
+  exposition. Three weeks of cost is credibly in the scene's weight.
+
+## scene b01c01s02
+verdict: SUBSTANCE-FELT
+reasoning: |
+  The scene's contract: capability +1.0 (cl01a), five axes held. The gain question is
+  whether the deployment reads as Khepri-rhyme-made-small. The cost question is whether
+  cl01a's opportunity-missed cost (witch-label formation begins; cost-bearer enters exposure
+  radius) is felt or whether the scene reads as a clean win.
+
+  Gain side: SUBSTANCE-FELT. The capability move lands at the correct scale and mechanism.
+  n02 (child's breath through the cobbles) is the decisive bone for the Khepri-rhyme
+  question — this is insect-sense reading vibration through ground, not nervous-system
+  coordination and not magic. The deployment at n06 ("the insects propagate") is
+  ankle-height instinct, not a coordinated hijack. n08 ("the gap propagates") adds the
+  systematic spatial modeling that makes Taylor read as competent-within-constraints rather
+  than simply powerful. The capability gain feels like the residue operating at its lowest
+  possible threshold — exactly right.
+
+  The un-filed-decision framing is the key information-asymmetry bone and it is correctly
+  placed. n03 and n04 give the prohibition its last held moment before the crack; n06 is
+  the crack; n07 ("the nearest dozen bodies yield") delivers the reader-visible breach
+  without Taylor filing it as a breach. This is the pattern this reader is here for:
+  Taylor is competent, the cost is real, she has not noticed she paid it. The sequence
+  works because n04 ("taylor holds the feet" — last held moment of suppression) makes n06
+  a threshold-crossing rather than an unexplained reflex. The gate was established in s01;
+  this scene crosses it; the crossing is legible as a crossing precisely because of that
+  prior establishment.
+
+  Cost side: SUBSTANCE-FELT, but requires one qualification. The cl01a cost is
+  opportunity-missed: witch-label formation begins, cost-bearer enters exposure radius.
+  The bones do not enumerate this as a named cost — they can't, because the point is that
+  Taylor has not yet noticed. What they do instead is plant the cost's two components
+  structurally: n09 places Wren in the crowd, unregistered (cost-bearer in frame, absent
+  from Taylor's calculus — the exposure-radius condition is enacted without being named);
+  and the witch-label formation begins in s03 (the opportunity-missed cost is not paid
+  in this scene, it is set in motion here and paid in the aftermath). The cost deferral
+  across scenes is the correct mechanism — cl01a's cost is of the opportunity-missed class,
+  which means the price is extraction of future optionality, not immediate punishment. For
+  this reader, the cost reads as paid because Wren is in the frame and the hands-up image
+  at n10 is the raw material the witch-label will be built from. The opportunity is visibly
+  being missed, not withheld.
+
+  The "gains unpriced" trap is not triggered. The deployment does not feel free. What makes
+  it feel paid: the prohibition-maintenance labor established in s01 (three weeks of
+  suppression work) is the cost paid in advance to establish the line that this scene
+  crosses. The crossing is only visible as a crossing because the line was paid for. The
+  scene spends the prior scene's investment rather than printing new capital.
+
+  One thin bone noted from Phase 4 (s02n05, lane-mouth presses crowd / political_register-
+  prot held): the rationale is check-box rather than felt. This is a bone-gate concern only
+  if the axis feels unenacted; in this case political_register-prot is correctly at baseline
+  (no court content in a smallfolk crowd) and the bones' structural position (the lane
+  geometry is the crowd-compression mechanism) gives the SVO enough physical presence to
+  function. The held axis does not feel absent — it feels correctly suppressed. Prose
+  execution watch retained but not a HARD finding.
+
+  SUBSTANCE-FELT. Capability gain is Khepri-residue at correct scale; cost is structurally
+  present through Wren's unregistered exposure and the witch-label formation seeded in
+  s03; the deployment reads as instinct surviving prohibition, not as deliberate
+  spell-casting. No SUBSTANCE-SUSPECT-cheap-gain-capability.
+
+## scene b01c01s03
+verdict: SUBSTANCE-FELT
+reasoning: |
+  The scene's contract: social_tether-prot-rise +1.0 (cl01b ward-layer half), five axes
+  held. Two questions: (a) does the tether-rise feel earned by the rescue's cost, not like
+  a free social gain? (b) does s03n10 land as quietly loaded cost-bearer plant or as
+  procedurally-added decoration?
+
+  Tether-rise: SUBSTANCE-FELT. The axis move is anchored to Oswyn's categorization, which
+  the scene builds in three stages. First, the witness-accumulation: n02 (fish-cart man
+  watching Taylor not the child — the first informational shift from actor to object-of-
+  attention), n03 (two women holding position — the critical-mass condition for a ward-elder
+  categorization to carry social weight). Second, the authority figure: n04 ("oswyn-mudway-
+  flea-bottom-elder takes the lane-mouth") is the moving bone, the +1.0, and it lands as a
+  discrete institutional act — Oswyn is not afraid, he is composing a word. Third, the
+  label's assembly mechanism: n09 ("oswyn-mudway-flea-bottom-elder lifts the chin") delivers
+  the witch-label in a body-language fact, not a declaration. The gap between what he saw
+  and what Flea Bottom has a word for is enacted in the chin-lift, not stated in exposition.
+
+  This is Westerosi-honest ward-social-process, not generic fantasy-fear. The categorization
+  requires corroborating witnesses (present), a ward-elder with authority (present and named
+  with his role slug), and a gap between perception and language (enacted via the chin-lift
+  as word-in-formation). The witch-label assembles as an institution, which is what makes
+  the social_tether-prot-rise real: Taylor is not being feared, she is being categorized by
+  someone with the social authority to make the categorization stick.
+
+  The tether feels earned by the rescue because the rescue is the only event the ward has
+  to categorize. The cl01b gain is anchored to cl01a via the journey-required cost structure:
+  the rescue (which was costly — threshold crossed, prohibition cracked, witch-label
+  formation as the opportunity-missed cost) is the tether-embedding event. Social standing
+  in Flea Bottom accumulates through witnessed action in the ward; the rescue is the action;
+  the categorization is the social physics consequence. The gain does not feel free because
+  it cannot be separated from the crack that produced it — the witch-label and the tether-
+  embedding are the same event seen from two registers.
+
+  s03n10 (Wren-orients): SUBSTANCE-FELT as cost-bearer plant, not decoration. The bone
+  delivers the chapter goal's second clause ("plant Wren's presence before it becomes
+  legible as a cost") at exactly the right information-asymmetry calibration. The slug
+  identifies her to the reader as wren-stitch-maker-flea-bottom-ward; Taylor reads a
+  stranger-body orienting toward her without a name to attach to it. The orientation is
+  enacted as a physical fact — Wren's body-direction settling across the dispersing crowd —
+  not as a named relationship or a narrative announcement. The asymmetry is: the reader
+  knows who this is; Taylor does not; and this gap is the chapter's closing hook, not its
+  closing statement.
+
+  The bone does not feel procedurally added. It honors the handoff_out condition ("Wren has
+  seen Taylor's face in the crowd") and completes the relational_anchor dormancy arc
+  established across the chapter: smell at s01n02 (two lanes over) → in the same crowd at
+  s02n09 (unregistered) → orienting toward Taylor at s03n10 (named to reader, unknown to
+  Taylor). The arc gives the anchor three points of contact across the chapter without once
+  entering Taylor's calculus. At bones level this is structural dormancy executed correctly.
+
+  n06 ("the gap closes") carries moral_framework's held-dormancy well — the lane returns
+  to neutral, the environment is indifferent to the moral event, the crack has no physical
+  monument. This is the correct chapter-close register for moral_framework-held: the
+  prohibition's breach has no public form in the world.
+
+  n07 ("taylor faces the alley-mouth") and n08 ("the tallow smoke layers the lane-floor")
+  together close the Wren plant with the correct no-negation execution: facing-away enacted
+  as a direction-toward (alley-mouth), smoke persisting as a physical fact, the not-looking
+  enacted as a positive body-direction rather than as a stated avoidance. This is the
+  structurally correct close to the relational_anchor dormancy arc.
+
+  SUBSTANCE-FELT. Social_tether-prot-rise lands as a felt categorization event carried by
+  institutional process (ward-elder + corroborating witnesses + body-language read).
+  Tether feels earned by the rescue-as-cost. s03n10 lands as quietly loaded hook, not
+  decoration. No axis in s03 feels unenacted.
+
+## chapter-level summary
+
+verdict: SUBSTANCE-FELT (all three scenes)
+
+capability: axis move at s02 lands as Khepri-residue at correct scale; cost is
+structurally present through Wren's unregistered exposure (s02n09) and the witch-label
+seeded in s03; gain is not unpriced. No SUBSTANCE-SUSPECT-cheap-gain-capability.
+
+social_tether-prot-rise: axis move at s03 lands as Westerosi ward-social-institution;
+Oswyn's categorization is carried by corroborating witnesses and a body-language fact,
+not by fear-declaration; the tether-embedding is the rescue's social-physics consequence,
+not a bonus. No SUBSTANCE-FLAT-social_tether-prot-rise.
+
+held axes across all three scenes: moral_framework, relational_anchor_status,
+moral_legibility_to_self, political_register-prot enacted credibly as load-bearing
+dormancy throughout. Prohibition feels like ongoing expenditure. Wren plant lands
+across three stations (s01n02 → s02n09 → s03n08/n10). political_register-prot held
+at structural baseline without feeling absent — the court layer simply has no content
+to read in a smallfolk alley, which is correct.
+
+chapter goal: all three clauses land. First act of control: SUBSTANCE-FELT as
+instinct surviving prohibition, not deliberate spell-casting. Witch-label plant:
+SUBSTANCE-FELT as institutional categorization, not fear-spectacle. Wren presence
+plant: SUBSTANCE-FELT as quietly loaded three-station arc completed by s03n10.
+
+no HARD findings. No SUBSTANCE-FLAT. No SUBSTANCE-SUSPECT. Chapter: SUBSTANCE-FELT.

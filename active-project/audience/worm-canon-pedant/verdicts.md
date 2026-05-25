@@ -192,3 +192,210 @@ notes: |
   Soft watch, not a bone-level issue — the bones themselves are correctly scoped. Carry to
   stitch review.
 ```
+
+---
+
+### /and-write b01c01 Phase 6 substance bone-gate — 2026-05-25
+
+```yaml
+---
+reviewer: worm-canon-pedant
+chapter: b01c01
+phase: write-bone-gate
+date: 2026-05-25
+scenes_reviewed: [b01c01s01, b01c01s02, b01c01s03]
+---
+```
+
+## scene b01c01s01
+verdict: SUBSTANCE-FELT
+reasoning: |
+  The scene's held-discipline architecture is canonically correct throughout. Taylor at
+  start_rank 2 on capability — "suppressed by choice; insects kept at subsistence range,
+  no systematic reading" — is precisely what s01 enacts: not incapacity, not absence of
+  the network, but the daily expenditure of holding it at a chosen threshold. The bones
+  make this physical: n03 ('taylor holds the feet') + n04 ('the insects propagate') are
+  a correctly rendered suppression-against-pull structure, not passive dormancy. This is
+  Taylor's actual relationship to her power throughout Worm — active management, not
+  simple non-use. The opposing force (insects pulling at the range-edge) is present and
+  named at n04, which is required for the held discipline to read as costing something.
+
+  The interior-tone check: drained-quiet and cold-utilitarian land. The "argument she
+  makes to herself each morning" framing (chunk text; enacted by n07 'taylor exhales')
+  is a small daily fact — not backstory infodump, not melodramatic guilt-spiral. The
+  exhalation as the body's verdict on the argument is exactly right for Taylor's
+  register: the body settles the question before the mind finishes running it. There is
+  no self-pity in this framing, no meta-awareness of irony, no residue of the post-Worm
+  trauma-loop that a lesser draft would reach for. The "prohibition is the only thing
+  from home that still works" is post-Gold-Morning Taylor precisely — the framing is
+  ledger-honest, acknowledges the cost, does not overdramatize.
+
+  The anti-instrumentalization framework reads as Taylor's, not as generic-fantasy
+  mage-restraint. The daily choosing-each-morning is canonically how Taylor maintains
+  her ethical commitments — she does not hold them passively, she re-endorses them
+  against the alternative arithmetic each time. s01n07 enacts this correctly.
+
+  Wren-plant (relational_anchor_status held, structural dormancy): n02 'the tallow smoke
+  crosses the stitch-house lane' registers the anchor as a physical-sensory fact before
+  it is a named person. This is the correct dormancy — present-but-unregistered is
+  Taylor's actual relationship to costs she has not yet entered in the ledger. No lore-
+  leak vector: Taylor knowing the stitch-house by smell is a function of the insect-
+  network reading ambient environmental data, not a future-knowledge violation.
+
+  No SUBSTANCE-FLAT findings. No SUBSTANCE-SUSPECT findings. s01 reads as a chapter
+  in which the prohibition is genuinely expensive — three weeks of it, every morning.
+  The cost is real at the bone level, not bookkeeping.
+
+## scene b01c01s02
+verdict: SUBSTANCE-FELT
+reasoning: |
+  Capability +1.0 (cl01a) is the scene's sole moving axis. The gain is earned.
+
+  Override-architecture boundary check (the highest-stakes canon-mechanical test in the
+  chapter): the deployment at s02n06 ('the insects propagate') is correctly intransitive
+  — the insects act, not Taylor commands them. s02n07 ('the nearest dozen bodies yield')
+  enacts fauna-control at ankle-height: bodies responding to physical sensation, not
+  bodies directed via nervous-system coordination. This is the fence. The bones respect
+  it. The Khepri mantle — the sealed architecture of full body-override — is not accessed;
+  the deployment is at the crowd-floor, working with crowd-pressure physics, not against
+  human volition at the neurological level. The distinction is present at bone-level, not
+  just asserted in the contract. This is the most critical override-architecture moment
+  in the chapter and it passes.
+
+  Cold-utilitarian register at s02n11 ('taylor raises the voice'): "uses a voice that
+  does not ask whether they will comply" is canonical Taylor. The chunk's phrasing is
+  exactly right — it is not a command performing authority, not a plea performing
+  desperation, it is an instruction from someone who has already determined compliance
+  is the correct outcome and states the information in that register. The cold-utilitarian
+  Taylor is present here and nowhere does the scene drift into rescuer-affect or
+  protective-warmth register.
+
+  The moral-cost structure: s02n04 ('taylor holds the feet') is the threshold-moment
+  bone — the prohibition's final held instant before the crack. The echo of s01n03 is
+  canonically correct. The deployment then occurs at n06 without a decision-beat that
+  Taylor files — "does not make a decision, or if she does she does not file it as one"
+  (chunk text) is exactly Taylor's live-crisis interiority pattern. She does not process
+  the breach in the field; she processes it later, or she doesn't. Here she doesn't.
+  The moral_framework-held rationale ("the crack is visible here to the reader, not to
+  Taylor") is the correct axes-interiority discipline: the breach happened, she has not
+  registered it as a breach, and the scene ends before the ledger opens. This is how
+  Taylor actually functions under acute stakes — file later, survive now. Canon-true.
+
+  The s02n07 + s02n08 directionality watch (carried from Phase 4 trim): 'yield inward'
+  in the chunk is potentially confusing about which direction bodies move. At the bone
+  level, s02n08 ('the gap propagates') correctly captures the outward directionality —
+  "reads the shape of the crowd and presses at the perimeter until the gap propagates
+  outward." The bones themselves are correctly scoped. The risk is a prose-level
+  collapse, not a bone-level issue. Soft watch carried to stitch review unchanged.
+
+  The SUBSTANCE-SUSPECT-cheap-gain test: does the capability gain feel like Taylor paid
+  for it? Yes. The cost is the witch-label formation (confirmed by s03), which is the
+  cl01a cost side — opportunity-missed, not a direct penalty, but a real consequence of
+  the deployment becoming visible. The "crossing the line she came here to maintain and
+  has not yet noticed she is on the other side" (chunk text, enacted by n07's held
+  moral_framework rationale) is the correct cost-architecture for this chapter's
+  moral_framework-held discipline. The gain does not feel free because the bones that
+  surround n06 (n03, n04 — prohibition-maintenance; n07 — the crack visible to reader)
+  make the cost legible without Taylor processing it. SUBSTANCE-FELT, not SUSPECT.
+
+## scene b01c01s03
+verdict: SUBSTANCE-FELT
+reasoning: |
+  Social_tether-prot-rise +1.0 (cl01b ward-layer half) at s03n04 ('oswyn-mudway-flea-
+  bottom-elder takes the lane-mouth'). The gain is earned.
+
+  Taylor's cold-utilitarian register throughout s03: she reads Oswyn's look as
+  body-data, not as social information requiring a self-recrimination response. The
+  chunk's framing is correct — "she reads bodies, and the body tells her she has moved
+  from invisible to present in his accounting" — this is a sensory-processing event, not
+  a moment of self-judgment. Taylor is not spiraling. She is not opening the ledger on
+  what she just did. She is reading the aftermath as an operational fact: she is now
+  visible to this man's accounting. That is Taylor's actual register for social
+  consequence — she files it as information, not as verdict on herself. s03n07 and s03n09
+  both enact this correctly.
+
+  The witch-label as a fact she reads from Oswyn's body (not a moment of self-judgment):
+  s03n09 ('oswyn-mudway-flea-bottom-elder lifts the chin') is the witch-label bone. The
+  chin-lift is a body signal Taylor reads — she does not interpret the category being
+  assembled because she does not have to; she reads the body's message (she has moved
+  from invisible to present in his accounting). The chapter ends on Oswyn's body-signal,
+  not on Taylor recognizing the word "witch" or understanding the social process. This is
+  structurally correct for a chapter whose goal is to plant the label before it becomes
+  legible as a cost.
+
+  The moral_legibility_to_self held-discipline ('the accounting is deferred'): s03n07
+  ('taylor faces the alley-mouth') enacts the deferral as body-direction, not as internal
+  suppression. Taylor does not open the ledger on the deployment; she faces away from the
+  stitch-house. The dual rationale (relational_anchor_status dormancy + moral_legibility
+  deferral in the same gesture) is canonically accurate — Taylor's non-acknowledgment is
+  behavioral, not effortful suppression of an active recognition. The scene contract's
+  held rationale ("Taylor reads the intervention as a one-time pragmatic act; the
+  prohibition's crack is visible only in retrospect") survives. The ledger does not open
+  on this event in this scene. Canon-true.
+
+  s03n10 ('wren-stitch-maker-flea-bottom-ward faces taylor'): Wren's body-direction
+  settling toward Taylor across the dispersing crowd is read by Taylor as a stranger-body
+  holding an orientation she has no name for. The slug identifies Wren to the reader; the
+  bone content stays inside Taylor's insect-sense reading of anonymous crowd-bodies. This
+  is structural dormancy correctly rendered — the cost-bearer's perceptual presence is
+  delivered to the reader without entering Taylor's calculus. No lore-leak: Taylor reads
+  Wren as a body-orientation, not as the person who will become her relational anchor.
+  The "Wren has seen Taylor's face" handoff_out requirement is honored through Wren's
+  active orientation toward Taylor (facing across the crowd), not through Taylor
+  recognizing Wren. Correct.
+
+  The SUBSTANCE-SUSPECT-cheap-gain test on social_tether-prot-rise +1: does the tether
+  gain feel like Taylor paid for it? The cost of the gain is the witch-label itself —
+  Oswyn's awareness of Taylor as a category (not as an embedded community member) is the
+  cl01b gain and simultaneously the beginning of the social consequence that will constrain
+  Taylor's anonymity. The anonymity that held through s01 is now cracked in the same
+  action that begins to embed her in the ward. The bones enact this correctly: s03n04
+  (the moving bone) is Oswyn at the lane-mouth watching, not Taylor receiving welcome.
+  The tether-gain is antagonist-facing: she enters his accounting as something he does
+  not have a word for yet. That is how tether-gain at this stage is supposed to read.
+  SUBSTANCE-FELT, not SUSPECT.
+
+## chapter aggregate
+verdict: SUBSTANCE-FELT
+hard_findings: []
+soft_findings:
+  - s02n07 + s02n08 directionality watch (carried from Phase 4 trim): prose-level risk
+    only; bones correctly scoped; carry to stitch review; not a bone-gate block
+canonicity_findings:
+  - override-architecture fence at s02n06 + s02n07: CLEAN — fauna-control at ankle-height,
+    bodies yield to sensation, no nervous-system coordination; the sealed Khepri mantle
+    is not accessed; the fence is present at bone level
+  - Earth-Bet noun fence: no parahuman jargon at bone level; functional descriptive
+    language throughout; no flag
+  - Taylor interior register: cold-utilitarian throughout all three scenes; no rescuer-
+    affect, no melodramatic guilt-spiral, no post-Worm-trauma-loop; drained-quiet and
+    cost-aware in s01; cold-operational in s02; body-reading-as-data in s03; canon-true
+  - moral_framework held-discipline: the breach is real and visible to the reader at
+    s02; Taylor has not filed it; the ledger does not open in s03; the held-discipline
+    survives the chapter intact; this is exactly how the chapter contract specified it
+  - Wren-plant dormancy: both plant instances (s01n02 + s03n07/n08/n10) read as
+    structural dormancy, not incidental detail; the double-load is correctly executed;
+    the anchor is present-but-unregistered throughout; no lore-leak
+notes: |
+  The chapter's bone-gate passes on all fronts. Three specific canonicity moments in
+  order of confidence:
+
+  1. The override-architecture boundary at s02n06 + s02n07: this is the chapter's highest-
+     stakes canon-mechanical test, and the bones handle it precisely. Insects propagate
+     (intransitive); bodies yield to ankle-height sensation (not nervous-system override).
+     The fence between fauna-control and the sealed Khepri mantle is enforced at bone
+     level, not just in the contract rationale.
+
+  2. The 'taylor holds the feet' echo across s01n03 and s02n04: the repetition is not
+     mannerism, it is Khepri-residue suppression-discipline enacted as a maintained
+     threshold that eventually fails. The crossing is legible as a crossing because the
+     same posture appears twice and the second time it doesn't hold. This is the
+     canonical mechanics of how Taylor's suppression architecture actually functions.
+
+  3. s03n09 ('oswyn-mudway-flea-bottom-elder lifts the chin') ending the chapter on
+     Oswyn's body-signal rather than on Taylor's recognition of the label's meaning:
+     the chapter goal specifies planting the witch-label before it becomes legible as a
+     cost. The chapter closes exactly there — before legibility, at the moment of
+     categorization-in-progress. Taylor reads a body; the reader reads a label forming.
+     Canon-true ending for a chapter in the held-discipline phase.
+```

@@ -178,3 +178,181 @@ notes: |
   becomes 'raises the chin' at Pass 3, the world-texture of that bone is preserved; the mannerism
   is the constraint concern, not the image.
 ```
+
+---
+
+### /and-write b01c01 Phase 6 substance bone-gate — 2026-05-25
+
+```yaml
+---
+reviewer: dark-fantasy-reader
+chapter: b01c01
+phase: write-bone-gate
+date: 2026-05-25
+scenes_reviewed: [b01c01s01, b01c01s02, b01c01s03]
+bones_in_scope: 27 (s01=6, s02=11, s03=10; s03n10 added Phase 5 counted)
+prior_phase: Phase 4 trim (same session; all 26 bones KEEP; s03n10 added after trim)
+---
+```
+
+## scene b01c01s01
+verdict: SUBSTANCE-FELT
+reasoning: |
+  The held-discipline question is whether I feel the daily cost of suppression. I do. The
+  mechanism is enacted in the geometry of the scene: drain water threading the angle-gap (n01),
+  the angle-wall narrowing the lane (n06) — anonymity as spatial structure, not as stated fact.
+  The insect-pull at the range-threshold is the physical pressure (n04: insects propagate against
+  the maintained discipline), and n03 (taylor holds the feet) is suppression-as-body — the same
+  stillness-against-pull that will become a threshold-crossed in s02. The morning exhalation (n07)
+  carries the self-accounting as physical residue: the body's verdict on another day of choosing
+  the prohibition, not a narrated argument. Cold-utilitarian interiority in the correct form.
+
+  The tallow smoke from the stitch-house two lanes over (n02) is the Wren plant in dormancy. It
+  lands as a physical fact Taylor registers at surfaces — not announced, not named, not explained.
+  The world was there before Taylor. The stitch-house smell is a real sensory landmark for a
+  working-class craft district, not set dressing. Its presence in the scene is functional: when
+  it returns in s03 it will read as continuity, not callback.
+
+  No hot-button fires. The suppression cost is the scene's tension — not labeled, not explained,
+  just felt as effort. Planetos-specific sleeping poverty enacted in the geometry of the angle.
+  The prohibition maintained for three weeks reads as labor. S02's breach matters because s01
+  paid the cost of holding.
+
+  World-texture verdict: inhabited. The drain angle is a body-sized Flea Bottom space; the
+  insect-pull is the specific sensation of this capability in this ward density. Nothing feels
+  generic-medieval.
+
+## scene b01c01s02
+verdict: SUBSTANCE-FELT
+reasoning: |
+  Capability +1.0 (cl01a) lands as a threshold crossed, not a tool deployed. The fish-cart
+  blocking the lane (n01) is crowd-physics with a named cause — the world was already halted
+  when Taylor arrived; she did not arrive into a conveniently staged crisis. Ground-transmission
+  of the child's breath through the cobbles (n02) establishes the insect-sense as physical fact
+  before the ethical question arises. The mechanism is grounded before it is a problem.
+
+  The prohibition's final held moment (n04: taylor holds the feet) runs the same stillness
+  from s01 against crowd-compression (n03) as the immediate opposing force. The threshold
+  does not fall because the plot needs it to — it falls because the crowd's compression is
+  killing the child and the insect-pull is already registered. The deployment (n06: the insects
+  propagate) is enacted, not described. Thirty seconds of mechanism — gap propagates (n08),
+  crowd yields (n07), Taylor arrives (n09) — no pause for moral calculation.
+
+  The crack in n07 ("bodies yield to insect-pressure without consenting to yield") is the
+  prohibition's crossing in the correct form: the reader sees it; Taylor doesn't file it.
+  The hands-up gesture (n10) and voice-of-instruction (n11 — "a voice that does not ask
+  whether they will comply") are the foreign-woman-in-Flea-Bottom image the crowd files.
+  That is how a strange woman in Hook precinct would be witnessed: the body they remember,
+  the hands that were up, the voice that did not ask.
+
+  Cost legibility: the cl01a notes are explicit — "deployment is instinctual not calculated,
+  which is both the rescue's mechanism and its ledger-entry problem." The cost is the
+  prohibition cracked without being filed, which means it will load in s03's aftermath.
+  The witch-label formation is the cost landing. Not cheap-gain — unacknowledged gain,
+  which is the harder form.
+
+  No enemies pause at convenient moments. The crowd does not part because Taylor needs it
+  to — the crowd parts because insects at ankle-height are an involuntary yield mechanism.
+  The world's physics do the work; Taylor reads the shape and presses at the perimeter.
+
+  World-texture verdict: inhabited. Fish-cart as functional crowd-physics mechanism; fever
+  read through the ground without contact; the crowd-compression as the inert physical fact
+  that will kill the child regardless of Taylor's preferences. The environment is the world
+  operating through its own mechanics.
+
+## scene b01c01s03
+verdict: SUBSTANCE-FELT
+reasoning: |
+  Social_tether-prot-rise +1.0 (cl01b ward-layer half) lands through Oswyn's positioned body,
+  not through Taylor making friends. The crowd disperses the way Flea Bottom crowds do (n01):
+  not quickly, not all the way. Holders remain (n02, n03) — fish-cart man watching Taylor
+  rather than the child; two women who have not gone back yet. The critical-mass condition
+  for the witch-label assembles through corroborating observers, not through a single
+  authority's declaration.
+
+  Oswyn's positioning (n04: oswyn-mudway-flea-bottom-elder takes the lane-mouth) is the
+  moving bone done correctly — the ward-elder arriving at the watching position, not at
+  Taylor's position; the lane-mouth is the accounting station, not the confrontation spot.
+  Ward-embedding begins as a positional fact in the geometry of the aftermath.
+
+  The witch-label assembly: the chunk text has "the way a man watches something he does not
+  have a word for yet and is composing one." The chin-lift (n09) is the body composing the
+  word — not pointing, not shouting, not convening — a chin-lift by an elder who has already
+  taken the lane-mouth. This is institutional process. Pre-print Westerosi superstition-by-
+  categorization moves by elders, by precedent, in the gap between what was seen and what
+  the ward has a name for. The hot-button check (Westerosi characters reacting with the wrong
+  flavor of shock) does not fire. The flavor is correct: categorization-as-authority-body,
+  not fear-as-spectacle.
+
+  The gap closing (n06) is the world's indifference to the moral event enacted as physics.
+  The lane returns to neutral. The environment does not register that a threshold was
+  crossed — it returns to its prior state. That is the correct dark-fantasy world texture:
+  the moral event leaves no mark on the cobbles.
+
+  Tallow smoke at lane-level (n08): "the same it was this morning." The continuity of the
+  physical fact after the moral event. The stitch-house smell does not change because Taylor
+  broke her prohibition. This is the chapter's strongest world-texture bone and it delivers
+  both the Wren anchor's dormancy and the ward's indifference in a single sensory note.
+
+  Wren's orientation (n10): "wren-stitch-maker-flea-bottom-ward faces taylor." Taylor reads
+  a stranger-body holding a facing she has no name for. The reader knows the slug; Taylor
+  reads a body. Orientation-without-recognition is the correct form for a cost-bearer plant
+  that is not yet legible as a cost. A stitch-maker who witnessed a crowd cleared by a
+  foreign woman would orient — that is a naturalistic response. The causal physics deliver
+  the plant without authorial arrangement. This does not feel staged.
+
+  My Phase 4 carry-forward (s02n09 Wren-in-the-crowd claim invisible at bone level) is
+  addressed by s03n10's delivery: the Wren anchor in s02 was always carried by the s03
+  payoff; n10 confirms it. No regression. The stitch-time watch item remains (prose around
+  n09 needs either a physical tell or acceptance that s03 carries the plant), but the
+  bone-gate verdict is not affected.
+
+  World-texture verdict: inhabited. Flea Bottom dispersal physics honest; ward-elder
+  categorization in the correct institutional register; the world was there before Taylor
+  and continues on its own schedule after she crossed a threshold that left no mark on
+  the street.
+
+## chapter-level aggregate
+verdict: SUBSTANCE-FELT
+chapter_goal_check:
+  first_act_of_control: LAND — s02 enacts the deployment as instinct, not calculation;
+    the prohibition's crack is visible to the reader before Taylor files it; the threshold
+    was paid in s01 and crossed in s02 without announcement
+  witch_label_plant: LAND — s03 assembles the label in the correct Westerosi register;
+    no torch-and-pitchfork; categorization by elder-authority in the gap between
+    what was seen and what the ward has a word for
+  wren_presence_plant: LAND — s01n02 (smell, dormant) + s03n08 (same smell, continuity)
+    + s03n10 (orientation-without-recognition); none of the three plants make Wren legible
+    as a cost; all are structural dormancy correctly enacted
+
+hot_button_check:
+  hope_that_costs_nothing: PASS — the rescue is immediately loaded with aftermath cost
+    (Oswyn watching, witch-label assembling, prohibition cracked); no catharsis arrives
+  enemies_pausing_conveniently: PASS — the crowd yields because insect-pressure is
+    involuntary; the world's physics, not narrative courtesy
+  magic_as_reliable_tool: PASS — the deployment is instinctual, not calculated; the
+    mechanism requires physical contact with crowd-floor insects; the sense transmits
+    through the ground as a texture of effort, not a button pressed
+  world_as_set_dressing: PASS — fish-cart, drain angle, tallow smoke, ward-elder
+    positioning all exist independent of Taylor; the ward does not arrange itself
+    for her convenience
+  wrong_flavor_of_shock: PASS — Westerosi categorization-as-body is the correct
+    pre-print smallfolk register; no adaptation-curiosity, no modernity-adjacent response
+  catharsis_before_weight: PASS — the chapter ends on accumulated unease; no resolution;
+    both plants (witch-label, Wren) dormant and unpriced; weight has loaded, catharsis
+    has not arrived
+
+carry_forward_to_stitch:
+  - s02n09 Wren-in-the-crowd claim: the SVO carries arrival-event coverage; the
+    relational_anchor_status rationale overperforms the bone; at stitch-time the prose
+    around n09 needs either a physical tell for Wren's presence or acceptance that s03n10
+    carries the plant; not a bone-gate block
+  - 'lifts the' mannerism (s02n10 hands, s03n09 chin): 2 active instances after s01n05
+    drop; Pass 3 shape concern; decomposer has flagged; watch list for stitch draft
+  - s03n09 SVO: if Pass 3 recasts to 'raises the chin', the world-texture of the
+    Oswyn beat is preserved; the mannerism is the constraint, not the image
+
+hard_findings: []
+soft_findings:
+  - s02n09 Wren-dormancy claim invisible at bone level (carry-forward, not bone-gate block)
+  - 'lifts the' mannerism count (Pass 3 domain; carry to stitch)
