@@ -46,3 +46,17 @@ notes:
   - s03 witch-label via "knew before anyone told her" is the board-reshape this reader wants; Oswyn's categorization preceding Taylor's self-categorization is the asymmetry that pulls forward
   - Wren stitch-house plant (smell, two lanes over, not-looked-at) is functional but thin at plan stage; the informational setup is correct but the hook is light; not a hard finding — prose execution will carry it; carried as soft watch to /and-write
   - no fatigue triggers: no filler, no unmotivated knowledge, no established limit bypassed; held axes read as load-bearing dormancy, not absent content
+
+## 2026-05-25 — /and-write b01c01 Phase 4 trim
+
+verdict: ACCEPT (26 KEEP, 0 DROP)
+file_verdict: ACCEPT
+notes:
+  - Khepri-rhyme-made-small confirmed: s02n02 (breath through cobbles) + s02n06 (ankle-height propagation) + s02n08 (crowd-read mechanism) = texture-not-spectacle; deployment reads as residue, not wonder
+  - Westerosi-social-process confirmed: s03 witch-label assembles via ward-elder authority + corroborating witnesses + body-language gap (chin-lift), not fear-declaration
+  - Wren plant resolved: s01n02 (smoke opening) + s02n09 (in the crowd, unregistered) + s03n07-n08 (facing away, smoke closing) — dormancy arc complete across chapter
+  - Two thin-but-non-droppable bones: s02n05 and s03n01 (both political_register-prot procedural-held with no alternative coverage); flagged for prose execution to give them physical specificity
+  - s01n01/s01n06 potential compositional parallelism (both anonymity-by-geometry): survives trim; stitcher should make distinction felt in prose
+  - Strongest beat: s03n09 (chin-lift as composing-of-the-word); no declaration, no named emotion, body-language read by a body-reader
+  - Carry-forward: 'lifts the' mannerism (3x chapter-wide) flagged by decomposer; recommend s03n09 recast to 'raises the chin' at Pass 2/3; s02n10 stays ('lifts the hands' is the load-bearing witnessed image)
+  - No fatigue triggers fired; no established limits bypassed without cost; held axes are load-bearing dormancy throughout
