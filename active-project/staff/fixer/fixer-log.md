@@ -667,3 +667,32 @@ dispatch: Phase 5 cycle-2 remediation — 4 HARD findings from facets-cycle2-aud
 target: active-project/theater/facets/_cite-index.md (primary), active-project/theater/facets/vibes-b01-c01.md, active-project/staff/dialogue-writer/taylor-hebert-kl-122ac.drafts.md, active-project/theater/facets/memory-b01-c01.md
 audit-report: active-project/staff/auditor/facets-cycle2-audit.md
 findings-queued: 4
+
+## fault-C2-003 — RESOLVED — 2026-05-25T14:10:00Z
+fault: _cite-index.md missing vibes:11 and vibes:12 registrations; vibes section count 10 (should be 12); pile-ups at @12 (5) and @21 (6) stale; co-lists for all @12/@21 members did not include the new vibes entries
+scope: line
+change: vibes section 10→12; vibes:11 @12 back=Y and vibes:12 @21 back=Y entries added with full co-lists; co-lists updated for narrator:4, state:3, vibes:3, vibes:4, vibes:8 (add vibes:11) and exposition:8, feel:1, narrator:5, state:1, vibes:5, vibes:6, vibes:7 (add vibes:12); pile-up @12 updated 5→6 with vibes:11; pile-up @21 updated 6→8 with vibes:12; cycle-1 ADD annotation appended to vibes section; totals header confirmed correct at 43
+criteria met: yes
+
+## fault-C2-001 — RESOLVED — 2026-05-25T14:12:00Z
+fault: vibes:11 licensed-by cited deleted state:4; dangling citation fails rubric-vibes.md gate 4
+scope: line
+change: state:4 removed from vibes:11 licensed-by; remaining sources proto:12, proto:13, state:3 verified sufficient under gate 4 (all three resolve to live entries; deployment-event licensing holds without the ledger-as-state entry)
+criteria met: yes
+
+## fault-C2-002 — RESOLVED — 2026-05-25T14:15:00Z
+fault: sidecar entry 3 facet-licenses cited sensory:2 @16 (moved to @9) and state:5 @17 (deleted); both fail cite-index walk
+scope: line
+change: sensory:2 @16 corrected to sensory:2 @9 with explanatory note; state:5 @17 deleted with note; citation-completeness summary updated; entry 3 retains sensory:2 @9 as sole valid license; SIGNAL gap (state axis empty) documented; no HARD remains
+criteria met: yes
+
+## fault-C2-004 — RESOLVED — 2026-05-25T14:17:00Z
+fault: memory-b01-c01.md R2 stamp cited deleted state:6 as spine confirmation for mem:2; contradicts current cite-index co-list co=[narrator:9, state:2]
+scope: line
+change: R2 stamp updated — state:6 replaced with narrator:9 @26 as NI spine carrier; deletion note for state:6 added; stamp now consistent with cite-index
+criteria met: yes
+
+## SESSION-END — 2026-05-25T14:17:00Z — and-facets-cycle2-phase5-fixes
+findings-applied: 4
+findings-skipped: 0
+exit: CLEAN

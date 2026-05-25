@@ -13,8 +13,11 @@ r2-verdicts: { keep: 2, delete: 0, add: 0, cap-refusals: 0 }
 #   doubled-register file-shape gate load-bearing; spine-gap flagged as NI under-fire (NI@3 silent)
 #   to be repaired in NI parallel-judge if license permits; gloss-clarity at-rest test passes.
 # mem:2 @26 — Westerosi-monument clamp (witch-label-formation as ward's older-stories category);
-#   monument-grade callback; co-cited with state:2 + state:6 confirming graph spine of the
-#   categorization event; gloss-clarity at-rest test passes.
+#   monument-grade callback; co-cited with narrator:9 @26 (NI spine, added cycle-1 memory fix:
+#   "the chin-lift filed her in a category she recognized the shape of without needing the country's
+#   name for it") + state:2 @26 confirming graph spine of the categorization event; state:6 deleted
+#   in cycle-1 state-updates remediation (invented field + ledger-as-state) — narrator:9 is the
+#   current spine carrier; gloss-clarity at-rest test passes.
 # Doubled-register file-shape gate: 1 Earth-Bet displacement + 1 Westerosi clamp — satisfied; preserved.
 # Add scan: peak-bones (@12, @21) default-forbidden; resolving-zone @24/@27 fail multi-justification
 #   (no spine for @24; archival-close risk at @27 per G5 episode-close special case); no add earned.

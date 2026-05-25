@@ -47,6 +47,6 @@ date: 2026-05-25
 
 10 [@27] actor:taylor-hebert-kl-122ac ++ tragic-causal: [cost-bearer-in-the-frame-before-the-calculus-opens] | licensed-by: proto:27, proto:2, proto:15, world-build:taylor-kl122ac-vibes-preseed
 
-11 [@12] actor:taylor-hebert-kl-122ac + capability-first-expenditure: [first-deployment-as-opening-of-the-account, range-as-resource-not-refilling, cost-unpriced-by-the-ledger-at-this-point] | licensed-by: proto:12, proto:13, state:3, state:4
+11 [@12] actor:taylor-hebert-kl-122ac + capability-first-expenditure: [first-deployment-as-opening-of-the-account, range-as-resource-not-refilling, cost-unpriced-by-the-ledger-at-this-point] | licensed-by: proto:12, proto:13, state:3
 
 12 [@21] loc:loc-flea-bottom + the-witch-label-assembled-here: [ward-as-the-naming-space, place-of-first-foreign-knowing, the-location-carrying-stage-1-permanently] | licensed-by: proto:21, proto:26, world-build:cond-kl-witch-label-formation-122ac

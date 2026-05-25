@@ -28,8 +28,8 @@ cycle-1-note: state:4/5/6/8 deleted 2026-05-25 per /and-facets cycle-1 remediati
   narrator:1 @4 back=Y
   narrator:2 @8 back=Y
   narrator:3 @11 back=Y
-  narrator:4 @12 back=Y co=[state:3, vibes:3, vibes:4, vibes:8]
-  narrator:5 @21 back=Y co=[exposition:8, feel:1, state:1, vibes:5, vibes:6, vibes:7]
+  narrator:4 @12 back=Y co=[state:3, vibes:3, vibes:4, vibes:8, vibes:11]
+  narrator:5 @21 back=Y co=[exposition:8, feel:1, state:1, vibes:5, vibes:6, vibes:7, vibes:12]
   narrator:6 @27 back=Y co=[exposition:9, feel:4, state:9, vibes:9, vibes:10]
   narrator:7 @3 back=Y co=[mem:1]
   narrator:8 @24 back=Y co=[state:7]
@@ -42,9 +42,9 @@ cycle-1-note: state:4/5/6/8 deleted 2026-05-25 per /and-facets cycle-1 remediati
   # action-verb self-charge HARD cleared (disambiguation-pedant); tactile silent-gap addressed (modality-coverage)
 
 ### state (5 entries; 4 deleted in cycle-1 remediation 2026-05-25)
-  state:1 @21 back=Y co=[exposition:8, feel:1, narrator:5, vibes:5, vibes:6, vibes:7]
+  state:1 @21 back=Y co=[exposition:8, feel:1, narrator:5, vibes:5, vibes:6, vibes:7, vibes:12]
   state:2 @26 back=Y co=[mem:2, narrator:9]
-  state:3 @12 back=Y co=[narrator:4, vibes:3, vibes:4, vibes:8]
+  state:3 @12 back=Y co=[narrator:4, vibes:3, vibes:4, vibes:8, vibes:11]
   state:7 @24 back=Y co=[narrator:8]
   state:9 @27 back=Y co=[exposition:9, feel:4, narrator:6, vibes:9, vibes:10]
   # DELETED state:4 @12 — capability_axis ledger-as-state anti-pattern #7 (cycle-1)
@@ -57,24 +57,27 @@ cycle-1-note: state:4/5/6/8 deleted 2026-05-25 per /and-facets cycle-1 remediati
   mem:2 @26 back=Y co=[narrator:9, state:2]
 
 ### feel (3 entries)
-  feel:1 @21 back=Y co=[exposition:8, narrator:5, state:1, vibes:5, vibes:6, vibes:7]
+  feel:1 @21 back=Y co=[exposition:8, narrator:5, state:1, vibes:5, vibes:6, vibes:7, vibes:12]
   feel:2 @10 back=Y
   feel:4 @27 back=Y co=[exposition:9, narrator:6, state:9, vibes:9, vibes:10]
 
 ### meta (0 entries)
 _(no entries)_
 
-### vibes (10 entries)
+### vibes (12 entries)
   vibes:1 @- back=-
   vibes:2 @- back=-
-  vibes:3 @12 back=Y co=[narrator:4, state:3, vibes:4, vibes:8] lic-out=[proto:12, proto:13]
-  vibes:4 @12 back=Y co=[narrator:4, state:3, vibes:3, vibes:8] lic-out=[proto:12, proto:13, proto:14]
-  vibes:5 @21 back=Y co=[exposition:8, feel:1, narrator:5, state:1, vibes:6, vibes:7] lic-out=[proto:21, proto:26]
-  vibes:6 @21 back=Y co=[exposition:8, feel:1, narrator:5, state:1, vibes:5, vibes:7] lic-out=[proto:21, proto:26]
-  vibes:7 @21 back=Y co=[exposition:8, feel:1, narrator:5, state:1, vibes:5, vibes:6] lic-out=[proto:21, proto:26]
-  vibes:8 @12 back=Y co=[narrator:4, state:3, vibes:3, vibes:4] lic-out=[proto:12, proto:13, proto:14, proto:21]
+  vibes:3 @12 back=Y co=[narrator:4, state:3, vibes:4, vibes:8, vibes:11] lic-out=[proto:12, proto:13]
+  vibes:4 @12 back=Y co=[narrator:4, state:3, vibes:3, vibes:8, vibes:11] lic-out=[proto:12, proto:13, proto:14]
+  vibes:5 @21 back=Y co=[exposition:8, feel:1, narrator:5, state:1, vibes:6, vibes:7, vibes:12] lic-out=[proto:21, proto:26]
+  vibes:6 @21 back=Y co=[exposition:8, feel:1, narrator:5, state:1, vibes:5, vibes:7, vibes:12] lic-out=[proto:21, proto:26]
+  vibes:7 @21 back=Y co=[exposition:8, feel:1, narrator:5, state:1, vibes:5, vibes:6, vibes:12] lic-out=[proto:21, proto:26]
+  vibes:8 @12 back=Y co=[narrator:4, state:3, vibes:3, vibes:4, vibes:11] lic-out=[proto:12, proto:13, proto:14, proto:21]
   vibes:9 @27 back=Y co=[exposition:9, feel:4, narrator:6, state:9, vibes:10] lic-out=[proto:27, proto:2, proto:25]
   vibes:10 @27 back=Y co=[exposition:9, feel:4, narrator:6, state:9, vibes:9] lic-out=[proto:27, proto:2, proto:15]
+  vibes:11 @12 back=Y co=[narrator:4, state:3, vibes:3, vibes:4, vibes:8] lic-out=[proto:12, proto:13, state:3]
+  vibes:12 @21 back=Y co=[exposition:8, feel:1, narrator:5, state:1, vibes:5, vibes:6, vibes:7] lic-out=[proto:21, proto:26]
+  # cycle-1 ADD 2026-05-25: vibes:11 @12 capability-first-expenditure (taylor); vibes:12 @21 the-witch-label-assembled-here (loc:loc-flea-bottom)
 
 ### exposition (9 entries)
   exposition:1 @0 back=N
@@ -84,14 +87,14 @@ _(no entries)_
   exposition:5 @1 back=Y co=[loc-state:1] lic-in=[exposition:8, exposition:9]
   exposition:6 @7 back=Y
   exposition:7 @18 back=Y
-  exposition:8 @21 back=Y co=[feel:1, narrator:5, state:1, vibes:5, vibes:6, vibes:7] lic-out=[exposition:5]
+  exposition:8 @21 back=Y co=[feel:1, narrator:5, state:1, vibes:5, vibes:6, vibes:7, vibes:12] lic-out=[exposition:5]
   exposition:9 @27 back=Y co=[feel:4, narrator:6, state:9, vibes:9, vibes:10] lic-out=[exposition:5]
 
 ## Pile-ups (>4 facets co-located on one protoline)
 
-- **@21** (6): exposition:8, feel:1, narrator:5, state:1, vibes:5, vibes:6, vibes:7
+- **@21** (8): exposition:8, feel:1, narrator:5, state:1, vibes:5, vibes:6, vibes:7, vibes:12
     `oswyn-mudway-flea-bottom-elder takes the lane-mouth`
-- **@12** (5): narrator:4, state:3, vibes:3, vibes:4, vibes:8
+- **@12** (6): narrator:4, state:3, vibes:3, vibes:4, vibes:8, vibes:11
     `the insects propagate`
 - **@27** (6): exposition:9, feel:4, narrator:6, state:9, vibes:9, vibes:10
     `wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac`
