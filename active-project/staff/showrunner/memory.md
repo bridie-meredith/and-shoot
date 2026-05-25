@@ -2312,6 +2312,45 @@ books:
               - "treatment-beat missing between @17 hands-up and @22 child-clears-lane (cold reader noticed)"
               - "chapter-close @27 lands quietly; cold reader expected sharper for ch1"
               - "hyphen-compound density made middle re-readable 3x to confirm action (Q9 sweep applied 0 RE-WORDS; cold-reader flags suggest the threshold needs tuning)"
+        postop:
+          ran_at: 2026-05-25
+          mode: routine
+          personas_used: [cape-fic-reader]
+          reports:
+            - active-project/staff/reviews/substance-delivery-b01-c01-2026-05-25T-postop.md
+            - active-project/staff/reviews/pleasure-read-b01-c01-2026-05-25T-postop.md
+            - active-project/staff/reviews/audience-cape-fic-reader-b01-c01-2026-05-25T-postop.md
+          fork_verdicts:
+            substance_delivery: PARTIAL  # axes land at named bones with named mechanisms; @7 held-axis SHORTFALL on "I exhaled" + capability rupture felt-mechanism staging-thin
+            naive_pleasure: MIXED-LEANING-NO  # opening hooks landed; graf 9 em-dash glossary + lines 11-19 stacked one-liners drove drift; voice read as "machinery, mostly"
+            audience_cape_fic_reader: FINISHED-WOULD-READ-C2  # threshold discipline checks all cleared (limits-bypassed-no-cost, knowledge-unmotivated, new-character-trust); em-dash glossary onboarding = fidget not walkout
+          convergence:
+            divergent: true  # Fork A PARTIAL + Fork B mixed/leaning-no + Fork C would-read-c2 — chapter does substance honestly but prose-surface costs immersion
+            patterns:
+              - label: "staging-thin at peak cluster @11/@12/@13 + @21"
+                fork_count: 2  # Fork A (substance-delivery, explicit cluster confirm) + Fork B (lines 11-19 stacked-stage-direction drift)
+                forks: [substance_delivery, naive_pleasure]
+                recommended_action: "/and-write b01c01 revise --from-signals (folds into existing depth-pass queue; pl-2026-05-25-002 + 003 + 004 already staged)"
+              - label: "opening graf em-dash glossary onboarding (graf 9: stitch-house / Hook / ward gloss-stack)"
+                fork_count: 2  # Fork B (primary drift) + Fork C (fidget-not-walkout)
+                forks: [naive_pleasure, audience_cape_fic_reader]
+                recommended_action: "fold into /and-write revise --from-signals as additional signal; targeted prose-economy pass on opening onboarding paragraph"
+              - label: "@7 held-axis bare-assertion ('I exhaled' carries 3 held axes with no opposing-pressure-resistance on the page)"
+                fork_count: 1  # Fork A only — substance-layer finding, not surfaced at prose-reception layer
+                forks: [substance_delivery]
+                recommended_action: "fold into /and-write revise --from-signals as additional signal"
+          parking_lot_resolutions:
+            pl-2026-05-25-008:  # feeling 11.1% > rubric 2-5%
+              resolution: OPTION-A  # all 3 entries (feel:1 @21 / feel:2 @10 / feel:4 @27) structurally necessary; 11.1% is structural concentration in 27-bone short chapter, not over-fire
+              recommended_followup: "short-chapter exemption note added to feeling rubric's frequency band (draft text in Fork A report)"
+              resolved_at: 2026-05-25
+              resolved_by: "/and-postop b01c01 Fork A"
+          new_parking_lot_candidate:
+            description: "feel:2 @10 render-anomaly — entry authored but no clear prose anchor in annotated draft; orthogonal to rubric-band call"
+            severity: SOFT
+            target_command: /and-facets
+            scope: b01c01
+          contract_discrepancy_note: "Fork A prompt asserted dramatic_shape: hinge; authored contract at memory.md is rising. Audited against rising — delivered."
 
       - slug: b01c02
         status: planned
