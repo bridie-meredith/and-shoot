@@ -105,3 +105,49 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-05-25-004
+      created_at: 2026-05-25T04:30:00Z
+      created_by: "/and-review bones b01c01 (fidelity-fork fault-001)"
+      target:
+        command: /and-facets
+        scope: "b01c01"
+        phase: null
+      severity: SOFT
+      description: |
+        b01c01s02n11 (flat_id 16) SVO is "taylor-hebert-kl-122ac raises the
+        voice" — a physical-action shape, not a "speaks to listener"
+        speech-act shape. The chunk text for s02 is explicit that Taylor
+        speaks to the crowd-adjacent persons ("uses a voice that does not
+        ask whether they will comply"; the voice-of-instruction event in
+        event_map). At /and-facets, the dialogue-facet author for
+        taylor-hebert-kl-122ac will need a citable speech anchor in s02.
+        Three resolution options, ordered by cost:
+          (a) Cite n11 as-is and accept the physical-action SVO as the
+              dialogue-bone anchor — the chunk text is explicit that the
+              voice carries instruction. Lowest cost; preserves flat_id
+              stability for all 27 bones.
+          (b) Treat n11 as the body-act and emit the dialogue facet as
+              derived-from-chunk rather than bone-anchored. Cost: a
+              one-time dialogue-facet authoring exception; preserves
+              flat_id stability.
+          (c) /and-write b01c01 revise to recast n11 as a speech-act SVO.
+              Cost: highest — breaks flat_id stability for downstream
+              consumers (currently none authored, so cost is recoverable;
+              would still require re-firing the bone-gate). Lowest-friction
+              path if /and-facets author judges (a) and (b) both leave the
+              dialogue facet untenable.
+        Recommend deferring the resolution call to /and-facets Phase 0 /
+        dialogue-facet author. Not blocking: /and-review bones b01c01
+        verdict was PASS-WITH-NOTES; /and-facets b01c01 is cleared to
+        dispatch.
+      context_refs:
+        - active-project/staff/showrunner/memory.md:2020   # s02n11 bone entry
+        - active-project/staff/showrunner/memory.md:1903   # s02 event_map voice-of-instruction
+        - active-project/staff/showrunner/memory.md:1855   # s02 chunk "uses a voice that does not ask whether they will comply"
+        - active-project/staff/reviews/bones-b01c01-fidelity-2026-05-25T04-30-00Z.md
+        - active-project/staff/reviews/bones-b01c01-2026-05-25T04-30-00Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

@@ -2251,6 +2251,19 @@ books:
         #   Draft archived: active-project/staff/showrunner/_drafts/b01c01-bones-draft-pass1.md
         #   Reviewer reports: pass2 (3 rounds); pass3-dramatist; pass5 (2 rounds); bone-gate (2 rounds);
         #     audience verdicts at active-project/audience/{cape-fic-reader,dark-fantasy-reader,worm-canon-pedant}/verdicts.md
+        # /and-review bones b01c01 — 2026-05-25T04:30:00Z; 3 forks (bone-gate re-fire + chunk→bones fidelity + dramatist craft); aggregate PASS-WITH-NOTES.
+        #   Fork verdicts: bonegate-refire PASS-WITH-NOTES (0 HARD, 2 SIGNAL); fidelity PASS-WITH-NOTES (0 HARD, 0 SIGNAL, 4 flags);
+        #     craft ACCEPT-WITH-NOTES (0 STRUCT-revise, 2 notes). No fork found load-bearing event dropped between chunk and bones.
+        #   Cross-fork echo: political_register-prot rationale thinness (s02n05, s03n01) noted by both bonegate-refire and craft forks;
+        #     accurate-baseline-negative, structurally correct for a non-court chapter, non-blocking.
+        #   New parking-lot item: pl-2026-05-25-004 (SIGNAL) — s02n11 "raises the voice" physical-action SVO may force unplanned
+        #     speech-bone addition at /and-facets dialogue-facet author; resolvable at /and-facets Phase 0, not a /and-write revise.
+        bones_review:
+          reviewed_at: 2026-05-25T04:30:00Z
+          report_path: staff/reviews/bones-b01c01-2026-05-25T04-30-00Z.md
+          verdict: PASS-WITH-NOTES
+          bones_file_mtime_at_review: 2026-05-25T04:28:27Z
+          stale_since: null
 
       - slug: b01c02
         status: planned
