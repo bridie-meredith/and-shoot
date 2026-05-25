@@ -1618,7 +1618,7 @@ books:
 
     chapters:
       - slug: b01c01
-        status: faceted-r2
+        status: audited-r1-mechanical
         chunk: |
           Taylor has been in King's Landing for three weeks, sleeping in a Flea Bottom alley
           and holding her insects at subsistence range by effort of will. When a ward child
