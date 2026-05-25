@@ -650,3 +650,14 @@ criteria met: yes — mem:2 spine is narrator:9 @26; NI register-consistent (cli
 findings-applied: 1 (mem:2 spine repaired via narrator:9 ADD upstream + proto-lines + cite-index)
 findings-skipped: 1 (mem:1 NO-ACTION-DEFENDED: SIGNAL only; margit referral, not fixer scope)
 exit: CLEAN
+
+## SEAM-LOC-CARDS-ABSENT + SEAM-TRANSITION-RUN-BARE — RESOLVED — 2026-05-25T12:20:00Z
+fault: dark-fantasy-reader: @1–@6 transition run is facet-bare; studio's zero-entry was based on erroneous claim that locations: header was empty; oc-stitch-house-lane card exists at active-project/warehouse/oc-stitch-house-lane.md
+scope: line (ADD to location-state-b01-c01.md + proto-lines citation + cite-index update)
+change: ADD-LANDED — loc-state:1 @1 oc-stitch-house-lane | morning | none | stitch-house-lamp-burning | drain-water trickle audible at the angle-gap pinch-point. Licensing: first-beat-in-new-location exception to dexterity-stillness deny-list for "threads" (URI-FACETS-CYCLE-1). Proto-lines @1 updated with [loc-state:1]. Cite-index updated: loc-state section 0→1 entry; exposition:5 co-list updated; totals 40→41; density 1-cite 10→9, 2-cite 1→2. Facet file authoring note rewritten. SEAM-TRANSITION-RUN-BARE resolved via inherited environment from loc-state:1 covering @2–@6.
+criteria met: yes — oc-stitch-house-lane card has an authored loc-state entry; stitcher has angle-gap / stitch-house-lamp baseline for the flat-low opening run; dark-fantasy-reader's stated minimum achieved; no scope expansion to @21 or beyond
+
+## SESSION-END — 2026-05-25T12:20:00Z — and-facets-cycle1-fixes-location-state
+findings-applied: 1 (one ADD addressing both callouts)
+findings-skipped: 0
+exit: CLEAN
