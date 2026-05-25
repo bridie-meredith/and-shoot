@@ -50,3 +50,23 @@ b01c15 reassessed: SUBSTANCE-FELT (was SUBSTANCE-SUSPECT-cheap-gain-relational_a
 Fix confirmed: perceptual mechanism added; cl-d08 anchor added; hard finding resolved.
 Other chapters: no regressions detected; all attempt-1 SUBSTANCE-FELT verdicts hold.
 aggregate: ACCEPT
+
+---
+
+## 2026-05-25 — /and-substance chapter b01c01 Phase 5 review
+
+verdict_per_scene:
+  b01c01s01: SUBSTANCE-FELT
+  b01c01s02: SUBSTANCE-FELT
+  b01c01s03: SUBSTANCE-FELT
+chapter_goal_coverage:
+  first_act_of_control: LAND
+  witch_label_plant: LAND
+  wren_presence_plant: LAND
+overall: ACCEPT
+notes:
+  - s01 prohibition-as-labor is exactly the right dark-fantasy entry: magic that costs something before it is ever deployed; the "constant small expenditure that makes stillness expensive" lands as Planetos-consistent dread — not labeled, not explained, just felt as effort
+  - s02 the crowd-compression mechanism earns its cost; this reader requires that the world move against the protagonist in a way that matters, and the crowd is hostile structure — not an enemy who pauses, but an inert physical fact that will kill the child regardless of Taylor's preferences; the instinct-override lands as genuine crack, not convenience
+  - s03 witch-label assembly reads as Westerosi-specific: superstition formed in the gap between what was seen and what the ward has a word for; Oswyn composing a category is the correct cultural reaction — not curiosity, not adaptation, category-formation; this reader's hot button (Westerosi characters reacting to Worm-world elements with the wrong flavor of shock) does not fire; the flavor is correct
+  - Wren plant via stitch-house smell and not-looked-at in s03 is functional; the reader notes that the plant is light at plan stage — not enough weight to feel like a threat yet; acceptable as dormancy because the chapter goal explicitly defers cost legibility; not a hard finding
+  - held axes across all three scenes read as load-bearing discipline, not absent content; the prohibition maintained in s01 makes s02's breach matter; catharsis has not arrived before weight; the chapter ends on accumulated unease, not resolution
