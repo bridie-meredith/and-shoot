@@ -55,6 +55,7 @@ A bone is **a subject doing something, optionally to object(s)**. Subject action
 4. **Behavior-card directory:** read `cards/dialects/INDEX.md` (the current path; `behaviors/` rename deferred). One-line edit if the rename lands later.
 5. Cascade warning per `design/substance/staleness-cascade.md`. Any bone change drops `status` back to `bones-written` at Phase 7 emit and stale-marks facets + drafts.
 6. **Per-scene gate_verdict clear (F3, revise mode).** Phase 0 clears `gate_verdict` only on bones inside scenes scoped by the revise target. Scenes not in scope keep their prior `bonefide: true` / `flat: false`. Phase 6 re-runs against the union of revised + unchanged scenes' bones, but only revised-scene bones can produce new gate_verdict writes.
+7. **Parking-lot scan (Rule 14).** Read `active-project/staff/showrunner/parking-lot.md`. Items matching this invocation (`target.command: /and-write` + `target.scope` = chapter slug or `*` wildcard + `status: open`): HARD → abort unless this run resolves; SOFT → carry to Phase 7 summary (Wren-style prose-texture watches typically resolve at Phase 1 scene-decomposition or Phase 4 prose trim). Resolving phase stamps `resolved_at` + `resolved_by` + `resolution_note`; never delete.
 
 Print:
 ```

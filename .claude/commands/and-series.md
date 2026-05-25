@@ -26,7 +26,8 @@ Re-runnable. See `design/substance/rerun-protocol.md` for the shared Phase 0 sha
    - `revise` mode: stale-marks only the affected books if individual structural fields change.
    - `redo` mode: stale-marks all books + `project.series_audit`.
    - Default surfacing choice is `mark-stale`. User may pick `keep-fresh` or `abort`.
-4. Run.
+4. **Parking-lot scan (Rule 14).** Read `active-project/staff/showrunner/parking-lot.md`. Items matching this invocation (`target.command: /and-series` + `target.scope` slug-or-wildcard + `status: open`): HARD → abort unless this run resolves; SOFT → carry to Phase 7 summary. Resolving phase stamps `resolved_at` + `resolved_by` + `resolution_note`; never delete.
+5. Run.
 
 ---
 

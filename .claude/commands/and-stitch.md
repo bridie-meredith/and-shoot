@@ -111,6 +111,7 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
    - Pattern-level entries (PATTERN blocks) → flag for human review; do not auto-apply unless explicitly PROMOTED
    - Free-form notes → list in render-log Phase 0 entry for human review
 8. **Initialize render-log.** Create `active-project/staff/stitcher/render-log-<slug>.md` with header (profile path, persona slug, narrator, voice config, phase-7-mode, generated-date).
+9. **Parking-lot scan (Rule 14).** Read `active-project/staff/showrunner/parking-lot.md`. Items matching this invocation (`target.command: /and-stitch` + `target.scope` = `<book>-<chapter>` or `*` wildcard + `status: open`): HARD → abort unless this run resolves; SOFT → carry to the Phase 9 cold-read summary + render-log Phase 0 entry. Resolving phase stamps `resolved_at` + `resolved_by` + `resolution_note`; never delete.
 
 State machine: showrunner memory `stitched: false` → in-progress → `stitched: true` at Phase 8 completion.
 

@@ -40,6 +40,7 @@ What's NOT included and why:
 3. Persona slug: `--persona <slug>` override; else select one persona from `active-project/audience/` (round-robin against `chapters[<slug>].postop.personas_used[]` so the routine rotates through the three available personas across chapters).
 4. **Cluster cross-check.** Read `chapters[<slug>].cold_read.signal_clusters[]` from showrunner memory. If a cluster is present and `chapters[<slug>].cold_read.verdict == PASS-WITH-DEPTH-PASS-REQUIRED`, surface a NOTE before dispatching: the depth-pass is already known. /and-postop runs as planned but its findings should fold into the same revise --from-signals queue rather than open a separate one.
 5. If `chapters[<slug>].cold_read.verdict != PASS` and `!= PASS-WITH-DEPTH-PASS-REQUIRED`, abort: the chapter is not terminal; /and-postop only runs on shipped chapters.
+6. **Parking-lot scan (Rule 14).** Read `active-project/staff/showrunner/parking-lot.md`. Items matching this invocation (`target.command: /and-postop` + `target.scope` = `<book>-<chapter>` or `*` wildcard + `status: open`): HARD → abort unless this run resolves; SOFT → fold into the post-op forks' surface area + final report. Resolving phase stamps `resolved_at` + `resolved_by` + `resolution_note`; never delete.
 
 ---
 

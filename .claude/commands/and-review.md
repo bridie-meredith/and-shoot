@@ -47,7 +47,7 @@ All reports persist to active-project/staff/reviews/<subcommand>-<target>-<times
 
 ## Common phases (every subcommand)
 
-1. **Phase 0 — Parse subcommand.** Validate target exists in showrunner memory / on disk per the subcommand's preconditions. Abort on bad input.
+1. **Phase 0 — Parse subcommand.** Validate target exists in showrunner memory / on disk per the subcommand's preconditions. Abort on bad input. **Parking-lot scan (Rule 14).** Read `active-project/staff/showrunner/parking-lot.md`. Items matching this invocation (`target.command: /and-review` + `target.scope` = `<subcommand> <slug>` or `*` wildcard + `status: open`): HARD → abort unless this run resolves; SOFT → carry to the Phase 4 persisted report. Resolving phase stamps `resolved_at` + `resolved_by` + `resolution_note`; never delete.
 2. **Phase 1 — Compose review brief.** Per-subcommand: which reviewers, which rubric, what scope. Per `design/substance/rerun-protocol.md`, the review brief is composed from showrunner memory only — no full-file reads of upstream artifacts the reviewer doesn't need.
 3. **Phase 2 — Dispatch reviewers in parallel.** Audience persona forks per persona; dramatist; auditor; orchestrator-critic for `verdict`; per-facet rubric runners for `facets`.
 4. **Phase 3 — Aggregate findings.** Structured report. Classify HARD / SIGNAL / TASTE per `schemas/audit-report.schema.md`.
