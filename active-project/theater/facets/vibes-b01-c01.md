@@ -31,7 +31,7 @@ date: 2026-05-25
 
 2 actor:taylor-hebert-kl-122ac ++ insect-sense-as-residue-not-spectacle: [range-ceiling-felt-as-sharpening-not-as-pain] | licensed-by: world-build:cond-override-architecture-residue-122ac, canon:b01c01-scene-A-suppression-work
 
-3 [@12] actor:taylor-hebert-kl-122ac + the-first-crack: [prohibition-crossed-before-it-was-filed, instinct-preceded-the-ledger-entry, deployment-preceding-permission] | licensed-by: proto:12, proto:13
+3 [@12] actor:taylor-hebert-kl-122ac + the-first-crack: [prohibition-crossed-before-it-was-filed, instinct-preceding-the-ledger-entry, deployment-preceding-permission] | licensed-by: proto:12, proto:13
 
 4 [@12] episode + threshold-crossed-unconsented: [crowd-yielded-without-being-asked, prohibition-cracked-before-it-was-acknowledged, the-chapter-that-opens-the-account] | licensed-by: proto:12, proto:13, proto:14
 

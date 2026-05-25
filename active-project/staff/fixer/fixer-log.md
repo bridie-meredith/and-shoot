@@ -380,3 +380,44 @@ Closing summary: 3 HARD repairs applied; 1 SIGNAL remediated; 2 SIGNALs accept-w
 findings-applied: 4 (3 HARD patched; 1 SIGNAL remediated)
 findings-skipped: 2 (2 SIGNALs accepted-with-rationale — no patch required by disposition)
 exit: CLEAN
+
+## SESSION-START — 2026-05-25T05:00:00Z — facets-b01c01-phase5-remediation
+dispatch: remediate 5 HARD findings from facets-final-audit.md — 3 proto-lines citation-ID remappings (fault-001/002/003), 1 dialogue per-speaker cap decision (fault-004), 1 vibes token parsability fix (fault-005)
+target: active-project/theater/proto-lines/b01-c01.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 5
+
+## fault-001 — RESOLVED — 2026-05-25T05:15:00Z
+fault: proto-lines @12 cited [state:1][state:2] (Oswyn's pre-consolidation IDs); Taylor's deployment-state (state:3) and capability_axis (state:4) had back=N; Oswyn state entries decorated the wrong bone
+scope: line
+change: proto-lines @12 citation changed from [state:1][state:2] to [state:3][state:4]; cite-index updated: state:3 back=N→back=Y @12; state:4 back=N→back=Y @12; co-citations corrected throughout; narrator:4 and vibes:3/4/8 co-lists updated to replace state:1,state:2 with state:3,state:4
+criteria met: yes — state:3 back=Y anchored @12; state:4 back=Y anchored @12
+
+## fault-002 — RESOLVED — 2026-05-25T05:15:00Z
+fault: proto-lines @10 cited [feel:1][feel:2]; feel:1 is Oswyn's @21 entry; spurious citation placed Oswyn's somatic tell at the wrong bone
+scope: line
+change: proto-lines @10 citation changed from [feel:1][feel:2] to [feel:2]; cite-index updated: feel:2 back=Y exclusively @10 (no spurious @10 back-link for feel:1); feel:2 now lonely (correct — sole decoration at @10)
+criteria met: yes — feel:1 back=Y exclusively @21; feel:2 back=Y exclusively @10
+
+## fault-003 — RESOLVED — 2026-05-25T05:15:00Z
+fault: proto-lines @24 cited [feel:2][feel:3][narrator:8][state:5]; feel:2 belongs to @10 (Taylor breath-empties-out from scene-B); state:5 is Taylor's posture @17, not body-orientation @24; also: @17 cited [state:3] (Taylor deployment @12) instead of [state:5] (Taylor posture @17); @21 cited [state:4] (Taylor capability @12) instead of [state:6] (Taylor social_tether @21); @26 cited [state:6] (Taylor social_tether @21) instead of [state:8] (Taylor ward-recognition @26); @27 missing [state:9] (Wren relational_anchor @27)
+scope: line
+change: five proto-lines corrected — @17: state:3→state:5; @21: state:4→state:6; @24: feel:2 removed, state:5→state:7; @26: state:6→state:8; @27: state:9 added — cite-index regenerated; all state:5/@17, state:6/@21, state:7/@24, state:8/@26, state:9/@27 now back=Y; feel:3 @24 co-list corrected; feel:4 @27 co-list updated with state:9
+criteria met: yes — state:5 back=Y @17; state:6 back=Y @21; state:7 back=Y @24; state:8 back=Y @26; state:9 back=Y @27; feel:2 back=Y exclusively @10; feel:3 back=Y exclusively @24
+
+## fault-004 — RESOLVED (DOWNGRADED) — 2026-05-25T05:20:00Z
+fault: 3 utterances from taylor-hebert-kl-122ac all anchored @16; per-speaker per-anchor sub-cap "no two utterances of the same speaker at the same anchor unless deliberate single-turn split documented in drafts sidecar" appeared to be breached
+scope: n/a (no file change)
+change: none — rubric (staff/dialogue-writer/rubric-dialogue.md § "Per-anchor caps") grants exception for "deliberate single-turn split... justified in the drafts sidecar." Sidecar (active-project/staff/dialogue-writer/taylor-hebert-kl-122ac.drafts.md) documents: (a) three distinct board-moves required by s02 chunk (fever/air/known-adult); (b) per-entry Q1+Q2 rationale for each utterance; (c) explicit per-anchor count "3 (cap = 3; at cap)." The three utterances are a deliberate three-part information-delivery sequence matching the chunk's explicit three-part delivery specification — not an arbitrary multi-split of one message. Exception path satisfied. Fault downgraded to flag with rubric citation.
+criteria met: yes — rubric-grounded decision documented; no reduction required; per-speaker exception path confirmed satisfied
+
+## fault-005 — RESOLVED — 2026-05-25T05:22:00Z
+fault: vibes:3 @12 token "instinct-preceded-the-ledger-entry" parses as complete sentence (subject + finite verb + object); vibes schema forbids sentence-parseable tokens
+scope: line
+change: vibes-b01-c01.md vibes:3 token changed from "instinct-preceded-the-ledger-entry" to "instinct-preceding-the-ledger-entry" (gerund form; no finite verb; "preceding" is a present participle modifying "instinct" — not a predication); semantic content preserved (instinct acting before the ledger-entry exists)
+criteria met: yes — "instinct-preceding-the-ledger-entry" does not parse as subject+finite-verb+object; gerund form is a noun-phrase for word-algebra operator use
+
+## SESSION-END — 2026-05-25T05:22:00Z — facets-b01c01-phase5-remediation
+findings-applied: 5 (fault-001 resolved; fault-002 resolved; fault-003 resolved; fault-004 downgraded per rubric exception; fault-005 resolved)
+findings-skipped: 0
+exit: CLEAN
