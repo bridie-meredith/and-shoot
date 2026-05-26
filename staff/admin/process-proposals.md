@@ -898,6 +898,93 @@ supersedes: null
 
 ---
 
+## PROP-0006
+
+```yaml
+id: PROP-0006
+created_at: 2026-05-26T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/facets-final-audit.md + active-project/staff/audience/worm-canon-pedant/vibes-r1-verdict.md
+  source_verdict: "Phase 5b cycle 1 REVISE (vibes) — auditor Phase 5 CONSTRAINT Earth-Bet hard-fence scan returned CLEAN but worm-canon-pedant independently found Earth-Bet fence hits inside vibes keyword token arrays (gold-morning-refusal in vibes:2; khepri-rhyme in vibes:13); resolved by fixer keyword-replacement in cycle 1 before /and-stitch"
+target:
+  type: command
+  path: .claude/commands/and-facets.md
+  section: "Phase 5 — AUDIT: single auditor dispatch / Audit classes / CONSTRAINT / Earth-Bet hard-fence proper-noun scan"
+change_type: modify
+rationale: |
+  The auditor's Phase 5 CONSTRAINT Earth-Bet hard-fence proper-noun scan is described as a
+  "case-insensitive substring scan against the Earth-Bet proper-noun list across every text field
+  of every facet entry." The scan explicitly states: "Names to scan ... Any hit is HARD; emit
+  [<facet>:<id>] @<proto> — earth-bet-hard-fence — <name> at <field>: <surrounding-text>."
+
+  In b01c02, the auditor's scan passed the vibes facet as CLEAN. It listed the entry-level
+  keyword handles in its scan trace ("Keyword arrays: cost-signature-range-bound,
+  atonement-as-repetition, ...") but did not walk the individual token strings inside each
+  entry's bracket-enclosed token array. Two fence violations were present inside token arrays:
+
+    vibes:2 ("atonement-as-repetition") — token "line-drawn-at-twelve-in-same-hand-as-gold-morning-refusal"
+      contains substring "gold morning" (fence list entry: "Gold Morning")
+    vibes:13 ("surveillance-architecture-legible") — token "accounting-structure-readable-as-khepri-rhyme-by-audience-not-taylor"
+      contains substring "khepri" (fence list entry: "Khepri")
+
+  The worm-canon-pedant independently identified both at Phase 5b and escalated them as
+  independent REVISE bases. Fixer resolved both via keyword replacement in cycle 1.
+
+  The structural gap: the auditor's scan treats the vibes facet entry as having two levels
+  of text fields — the entry-level keyword handle and the bracket-enclosed token array — but
+  only scanned the first level. The scan spec says "every text field" and the command body
+  CONSTRAINT section notes "Slug components matter: a margit-referral slug embedding
+  `khepri-` or `gold-morning-` is a hard-fence violation even when no full English phrase is
+  rendered." Token array strings are text fields by any reading, and the scan's stated
+  scope must include them. This is a scope-description gap that caused two HARD-class
+  findings to be caught only at Phase 5b (audience) rather than Phase 5 (auditor CONSTRAINT),
+  which is the authoritative gate for this class. The failures were non-catastrophic (fixer
+  resolved in cycle 1), but the CONSTRAINT class is the mechanical backstop for fence
+  violations; relying on audience adversarial review to catch HARD CONSTRAINT items is
+  a gate-gap, not just a taste call.
+evidence_refs:
+  - "active-project/staff/audience/worm-canon-pedant/vibes-r1-verdict.md — vibes:2 'gold-morning-refusal' finding (lines 25-43); vibes:13 'khepri-rhyme' finding (lines 61-67)"
+  - "active-project/staff/auditor/facets-final-audit.md — CONSTRAINT section, Earth-Bet hard-fence scan: CLEAN declaration + auditor keyword-array scan trace (lines 111-118) — shows auditor listed keyword handles, not sub-tokens"
+  - ".claude/commands/and-facets.md — Phase 5 CONSTRAINT § Earth-Bet hard-fence proper-noun scan clause: 'case-insensitive substring scan ... across every text field of every facet entry'; also: 'Slug components matter: a margit-referral slug embedding khepri- or gold-morning- is a hard-fence violation'"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-facets.md, the CONSTRAINT section's Earth-Bet hard-fence proper-noun
+  scan clause, add explicit enumeration of vibes token array scope.
+
+  Current text (from "Earth-Bet hard-fence proper-noun scan" through the vibes entry in the
+  example scan-target list):
+    "vibes entity-target-primary fields"
+
+  Proposed addition — after "vibes entity-target-primary fields", add:
+    "vibes token arrays (for every vibes entry, scan EACH individual token string inside the
+    bracket-enclosed [ ] bundle separately; the scan must walk token-by-token, not stop at
+    the entry-level keyword handle; a token containing a fence-list substring is a hit
+    regardless of how the token is hyphenated or whether the surrounding context qualifies
+    the name — the fence is a substring scan, not a semantic check)"
+
+  Additionally, the scan trace the auditor writes to the audit report should be required to
+  confirm per-token coverage explicitly. Add a one-line audit note requirement:
+    "For the vibes facet, the auditor must confirm: 'Vibes token arrays scanned token-by-token:
+    <n> entries × ~<avg-token-count> tokens each.' A scan trace that lists only keyword handles
+    does not satisfy the per-token requirement."
+
+  This is a single-paragraph clarification of existing scope. It adds no new fence targets and
+  does not change the HARD disposition of any hit. Cost: S (one clause addition to one section
+  of one command body, plus a one-line scan-confirmation note in the same section).
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
 ## PROP-0001
 created_at: 2026-05-26T00:05:43Z
 created_by: admin process-critic

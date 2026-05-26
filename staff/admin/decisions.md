@@ -367,6 +367,74 @@ methodology-update-proposed: no
 
 ---
 
+## DEC-0018 | 2026-05-26 | SLOW (process-critic)
+
+question: /and-facets b01c02 Phase 5c dispatch — 3 pattern questions after Phase 5b cycle 1 REVISE (vibes) + pragmatic-accept: (1) Earth-Bet substring scan missed vibes keyword token arrays; (2) Wren-POV-volition auditor TASTE-FLAG vs. audience 3-of-3 REVISE escalation — graduate to rubric REJECT?; (3) cycle 2 not re-fired (second consecutive c02 pragmatic-accept)
+context: Phase 5b cycle 1 returned 9/10 ACCEPT, 1 REVISE (vibes). Fixer resolved with 2 keyword swaps (vibes:2 gold-morning-refusal, vibes:13 khepri-rhyme — Earth-Bet fence hits in token arrays) + 2 DELETEs (vibes:6+vibes:7 — Wren-POV-volition character-scope violations). Cycle 2 not re-fired (pragmatic-accept under depth-pass budget). Earth-Bet scan gap: auditor declared CLEAN; worm-canon-pedant found fence hits. Wren-POV: auditor TASTE-FLAG; audience 3-of-3 REVISE; fixer DELETE resolved. Gate_path: .claude/commands/and-facets.md#phase-5b; secondary_gate_paths: [design/shoot-v2/rubric-vibes.md, design/shoot-v2/rubric-vibes-v1.1-patch.md].
+options: n/a (process-critic mode — discriminate content vs process per each issue)
+
+decision:
+  issue-1 (Earth-Bet token-array scan): PROCESS-CHANGE-PROPOSED PROP-0006
+  issue-2 (Wren-POV-volition vibes — promote to RUBRIC-FIDELITY?): OK (wait for recurrence)
+  issue-3 (cycle 2 not re-fired): OK (within-spec operator decision)
+
+basis:
+  issue-1: gate-scope-gap discriminator (auditor CONSTRAINT scan stated scope vs. implementation diverge; not a taste call; HARD class should be caught at Phase 5 not Phase 5b) + methodology:3a (modify is reversible; S cost) + process-gap-at-gate (CONSTRAINT class catching at Phase 5b is a gate-gap)
+  issue-2: schema:admin-proposal.schema.md §first-occurrence-non-catastrophic + Rule 11 recurrence threshold (≥3 for promote; recurrence_count=1; fixer resolved via DELETE; gate worked as designed — TASTE-FLAG → audience → REVISE → fixer)
+  issue-3: and-facets.md cycle-cap spec (cap=3; using 1 cycle with fixer-resolved callouts is within spec; "pragmatic-accept" is a valid operator path when fixer deletions addressed all REVISE items with no new HARDs; not a structural process gap)
+
+rationale:
+  Issue 1: The auditor's CONSTRAINT Earth-Bet scan is the designated mechanical backstop for fence
+  violations (HARD class). Its stated scope is "every text field." The b01c02 vibes facet has two
+  text-field levels per entry: the keyword handle and the bracket-enclosed token array. The auditor
+  scanned handles only, listed them in the scan trace, and declared CLEAN. The worm-canon-pedant's
+  Phase 5b read found fence hits at the sub-token level in two entries. This is a scan-coverage
+  mismatch between stated scope and implementation — not a first-occurrence taste call. The fix is
+  a one-paragraph scope clarification in the CONSTRAINT clause (S cost); it adds no new fence
+  targets and changes no dispositions. Proposing at recurrence_count=1 because this is a gate-scope
+  specification gap (the gate claims to do something it did not do), not a threshold calibration or
+  taste judgment. The auditor's scan trace format should also require per-token confirmation for the
+  vibes facet to make future coverage auditable.
+
+  Issue 2: The vibes rubric (rubric-vibes.md) has no REJECT signature for character-scope entries
+  attributing interiority to non-POV actors. The auditor correctly classified vibes:6+vibes:7 as
+  TASTE-FLAG because no rubric rule warranted HARD. The audience escalated 3-of-3 to REVISE; fixer
+  DELETE resolved the callouts. The gate chain worked as designed per Rule 11 promotion path
+  (TASTE-FLAG → Phase 5b → REVISE → fixer). Rule 11 says the promotion path is to add the rule
+  to the rubric's REJECT section, which then auto-promotes it to a mechanical RUBRIC-FIDELITY check.
+  At recurrence_count=1, the one-occurrence anti-pattern applies: non-catastrophic, gate worked
+  correctly, one chapter. Wait for c03 or a subsequent chapter to confirm the pattern before adding
+  a rubric REJECT rule. A premature REJECT rule against character-scope vibes could block legitimate
+  irony-layer vibes at episode scope targeting Wren (episode-scope vibes:12/13 were ACCEPT and
+  correctly deployed). The distinction between character-scope and episode-scope in the rubric needs
+  to be precise, and the b01c02 case is still the only instance.
+
+  Issue 3: The and-facets command body specifies a cycle cap of 3; using cycle 1 and proceeding
+  after fixer resolution is within spec. "Pragmatic-accept" here means fixer DELETEs addressed
+  all REVISE items (2 keyword swaps + 2 DELETEs), no new HARDs were introduced, and the operator
+  chose not to re-fire Phase 5b cycle 2 because the deletion path resolved the callouts definitively.
+  This is a valid path — cycle 2 is not mandatory when the fixer's resolution mode is DELETE
+  (the deleted entries cannot produce REVISE callouts from the audience again). No structural
+  gate was bypassed; the auditor's Phase 5 scan ran on the post-fixer graph. Not a process gap.
+
+trade-off:
+  Issue 1: Proposing at recurrence_count=1. Justified because this is a gate-scope specification
+  gap with a precise, S-cost fix; the gate's stated scope explicitly says "every text field"
+  and the implementation does not match. The risk of not proposing: another chapter's vibes token
+  arrays contain fence hits that the auditor passes as CLEAN and the audience must catch. That
+  would mean HARD-class CONSTRAINT violations are structurally caught only at Phase 5b (the
+  subjective gate) rather than Phase 5 (the mechanical gate) — a durable inversion of the
+  gate hierarchy for this check class.
+  Issue 2 and 3: Not proposing. The cost of a premature REJECT rule (issue 2) or a cycle
+  mandate (issue 3) exceeds the cost of waiting for recurrence.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0015 | 2026-05-26 | SLOW (process-critic amendment)
 
 question: Amend DEC-0013 / PROP-0003: cold-read experiment shows matched exemplar passage (v16) beats persona-description prime (v14), and mismatched exemplar (v17) leaks surface conventions. Asset format must change from persona-card description section to standalone exemplar passage file.
