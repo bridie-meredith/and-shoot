@@ -911,3 +911,26 @@ dispatch: Phase 5 fixer pass for /and-facets b01-c03 — 3 HARD findings; fault-
 target: active-project/theater/facets/exposition-b01-c03.md + active-project/theater/facets/interest-narrator-b01-c03.md + active-project/theater/facets/_inflight/proto-lines-exposition.md + active-project/theater/facets/_inflight/proto-lines-narrator.md
 audit-report: active-project/staff/auditor/facets-final-audit.md
 findings-queued: 3
+
+## fault-001 — RESOLVED (PRE-APPLIED VERIFIED) — 2026-05-26T11:10:00Z
+fault: exposition:5 @13 scene-open-orient fires when loc-state:2 @13 already covers scene-B orientation — fire-rule clause-b violated
+scope: line
+change: verified pre-applied: deletion marker in exposition-b01-c03.md; fire-audit block updated; proto-lines-exposition.md @13 carries only [exposition:4]; no further edit required
+criteria met: yes
+
+## fault-002 — RESOLVED — 2026-05-26T11:15:00Z
+fault: 4/8 NI entries predicate-nominative — 50% saturation above 40% threshold (escalated SIGNAL → HARD)
+scope: line
+change: NI:1 @4 rewritten to "the cost-tell — stillness against market grain" (paratactic em-dash; no copula); NI:5 @19 rewritten to "the coverage she already held ran through the wards he had named — the price-tag sat in that overlap unspoken" (two independent clauses); NI:3 @8 + NI:7 @29 retained as peak-bone candidates; post-rewrite predicate-nominative rate 2/11 = 18%, below 40%
+criteria met: yes
+
+## fault-003 — RESOLVED — 2026-05-26T11:20:00Z
+fault: state-updates cross-facet contract gap — NI absent at @10, @22, @31
+scope: line
+change: NI:9 @10 (court layer added: tether closed — 22 words); NI:10 @22 (wards already in feed; being asked to sell — 20 words); NI:11 @31 (courier confirm reads as close — 19 words); all Taylor cold-utilitarian register, no Earth-Bet, no pred-nom; proto-lines-narrator.md updated with [interest-narrator:9/10/11] at respective anchors; density 8/36→11/36 (31%); density ceiling exceedance noted as Phase 5b SIGNAL (cross-facet-contract HARD supersedes ceiling)
+criteria met: yes
+
+## SESSION-END — 2026-05-26T11:20:00Z — and-facets-phase5-fixes-b01c03
+findings-applied: 3
+findings-skipped: 0
+exit: CLEAN

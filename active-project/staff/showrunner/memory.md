@@ -2726,6 +2726,25 @@ books:
         # Phase 7 emit: theater/bones/b01-c03.md + theater/facets/scene-map-b01-c03.md + theater/dialogue/{jarvis-coin-kl-courier,taylor-hebert-kl-122ac}.md.
         # Dialogue-anchor coverage: 10/10 bones cited; 0 bare speech bones; 0 missing speakers.
         # pl-2026-05-25-001 RESOLVED at contract update (s01n08 = flat 8 carries social_tether-prot-rise +0.5 cl01b second tranche; s01n10 = flat 10 carries +0.5 cl01b; total +1.0 court-layer half).
+        #
+        # /and-facets b01-c03 emit 2026-05-26 — cascade-budget compression.
+        # R1 fanout: 11 authors landed; 78 facet entries (loc-state=5, NI=11 post-fixer, sensory=2, state-env=10, state-taylor=15, state-jarvis=13, memory=3, feeling=2, metaphor=0 zero-fires sustained, vibes=12, exposition=8→7 post-fixer DELETE exposition:5).
+        # R2 fanout: SKIPPED under cascade-budget.
+        # Phase 5 mechanical audit: 3 HARDs (exposition fire-rule clash exposition:5 @13 vs loc-state:2 @13; NI predicate-nominative saturation 50% > 40% threshold; NI co-citation gap at @10/@22/@31 per state-taylor cross-facet contract) — ALL RESOLVED at fixer (exposition:5 DELETED; NI:1+NI:5 syntactically recast to break saturation; NI:9/10/11 added at @10/@22/@31). 4 SIGNALs advisory.
+        # Phase 5b audience-gate: SKIPPED under cascade-budget (pragmatic-accept; same disposition as 2026-05-25 c02). Carries advisory to /and-postop b01c02 in c03 context.
+        # Phase 6 persist: complete.
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: false   # R2 skipped under cascade-budget
+        facets_status: audited-r1-mechanical
+        facets_stale_since: null
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audit_findings: 7   # 3 HARDs resolved + 4 SIGNALs advisory
+        audience_gate_path: null
+        audience_gate_complete: false   # skipped under cascade-budget
+        audience_gate_cycles: 0
+        bidirectional_loop: not-validated   # R2 + audience-gate skipped under cascade-budget
         # /and-substance chapter b01c03 Phase 6 persist 2026-05-26
         # Phase 5 review: pragmatic-accept under cascade-budget — math EXACT on all 4 axes vs chapter contract, scene_conflict populated with concrete forces, dramatic-shape hinge honored, cost-ledger anchors valid. Skipped 3-fork audience review for budget; carries advisory soft-watch to /and-postop.
         # pl-2026-05-25-001 RESOLVED at Phase 0 contract correction + persisted at Phase 6 (cl01b +1.0 social_tether-prot-rise anchored at b01c03s01).

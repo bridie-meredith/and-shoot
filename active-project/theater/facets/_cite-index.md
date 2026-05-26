@@ -2,7 +2,7 @@
 generated: 2026-05-26
 source: active-project/theater/proto-lines/b01-c03.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 78 facet entries; 27/36 protolines decorated (75.0%)
+totals: 80 facet entries; 27/36 protolines decorated (75.0%)
 
 ## Density distribution (protolines by citation count)
 
@@ -14,19 +14,19 @@ totals: 78 facet entries; 27/36 protolines decorated (75.0%)
 | 3          | 6 |
 | 4          | 2 |
 | 5          | 2 |
-| 6          | 2 |
-| 7          | 2 |
+| 6          | 3 |
+| 7          | 1 |
 
 ## Per-facet entries
 
 ### loc-state (5 entries)
   loc-state:1 @1 back=Y co=[sensory:1, state:1, state:2, state:3]
-  loc-state:2 @13 back=Y co=[exposition:4, exposition:5, sensory:2, state:5, state:6, vibes:2]
+  loc-state:2 @13 back=Y co=[exposition:4, sensory:2, state:5, state:6, vibes:2]
   loc-state:3 @15 back=Y co=[state:5, state:6, state:7]
   loc-state:4 @26 back=Y
   loc-state:5 @32 back=Y co=[state:12, state:13]
 
-### narrator (8 entries)
+### narrator (11 entries)
   narrator:1 @4 back=N co=[state:1]
   narrator:2 @7 back=N co=[state:2]
   narrator:3 @8 back=N co=[jarvis-coin-kl-courier:2, mem:1, state:3, state:4, state:5, vibes:1]
@@ -35,18 +35,21 @@ totals: 78 facet entries; 27/36 protolines decorated (75.0%)
   narrator:6 @23 back=N co=[feel:1, mem:2, state:8, state:10, vibes:7, vibes:8]
   narrator:7 @29 back=N co=[feel:2, state:9, state:11, taylor-hebert-kl-122ac:3, vibes:11]
   narrator:8 @34 back=N co=[mem:3]
+  narrator:9 @10 back=N co=[jarvis-coin-kl-courier:3, state:4, state:6]
+  narrator:10 @22 back=N co=[state:9]
+  narrator:11 @31 back=N co=[jarvis-coin-kl-courier:7, state:11, state:12, vibes:12]
 
 ### sensory (2 entries)
   sensory:1 @1 back=Y co=[loc-state:1, state:1, state:2, state:3]
-  sensory:2 @13 back=Y co=[exposition:4, exposition:5, loc-state:2, state:5, state:6, vibes:2]
+  sensory:2 @13 back=Y co=[exposition:4, loc-state:2, state:5, state:6, vibes:2]
 
 ### state (38 entries)
   state:1 @1 back=Y co=[loc-state:1, sensory:1, state:2, state:3]
   state:2 @1 back=Y co=[loc-state:1, sensory:1, state:1, state:3]
   state:3 @1 back=Y co=[loc-state:1, sensory:1, state:1, state:2]
   state:4 @6 back=Y co=[jarvis-coin-kl-courier:1, state:2]
-  state:5 @13 back=Y co=[exposition:4, exposition:5, loc-state:2, sensory:2, state:6, vibes:2]
-  state:6 @13 back=Y co=[exposition:4, exposition:5, loc-state:2, sensory:2, state:5, vibes:2]
+  state:5 @13 back=Y co=[exposition:4, loc-state:2, sensory:2, state:6, vibes:2]
+  state:6 @13 back=Y co=[exposition:4, loc-state:2, sensory:2, state:5, vibes:2]
   state:7 @15 back=Y co=[loc-state:3, state:5, state:6]
   state:8 @23 back=Y co=[feel:1, mem:2, state:10, vibes:7, vibes:8]
   state:9 @29 back=Y co=[feel:2, state:11, taylor-hebert-kl-122ac:3, vibes:11]
@@ -94,7 +97,7 @@ _(no entries)_
 
 ### vibes (12 entries)
   vibes:1 @8 back=Y co=[jarvis-coin-kl-courier:2, mem:1, state:3, state:4, state:5] lic-out=[proto:4, proto:8]
-  vibes:2 @13 back=Y co=[exposition:4, exposition:5, loc-state:2, sensory:2, state:5, state:6] lic-out=[proto:13, proto:15, proto:26]
+  vibes:2 @13 back=Y co=[exposition:4, loc-state:2, sensory:2, state:5, state:6] lic-out=[proto:13, proto:15, proto:26]
   vibes:3 @16 back=Y co=[exposition:6, jarvis-coin-kl-courier:4, state:7, vibes:4, vibes:5, vibes:6] lic-out=[proto:16, proto:31]
   vibes:4 @16 back=Y co=[exposition:6, jarvis-coin-kl-courier:4, state:7, vibes:3, vibes:5, vibes:6] lic-out=[proto:16, proto:19, proto:22]
   vibes:5 @16 back=Y co=[exposition:6, jarvis-coin-kl-courier:4, state:7, vibes:3, vibes:4, vibes:6] lic-out=[proto:16]
@@ -106,24 +109,23 @@ _(no entries)_
   vibes:11 @29 back=Y co=[feel:2, state:9, state:11, taylor-hebert-kl-122ac:3] lic-out=[proto:29, proto:35]
   vibes:12 @31 back=Y co=[jarvis-coin-kl-courier:7, state:11, state:12] lic-out=[proto:30, proto:32]
 
-### exposition (8 entries)
+### exposition (7 entries)
   exposition:1 @0 back=N
   exposition:2 @0 back=N
   exposition:3 @3 back=Y co=[state:1]
-  exposition:4 @13 back=Y co=[exposition:5, loc-state:2, sensory:2, state:5, state:6, vibes:2]
-  exposition:5 @13 back=Y co=[exposition:4, loc-state:2, sensory:2, state:5, state:6, vibes:2]
+  exposition:4 @13 back=Y co=[loc-state:2, sensory:2, state:5, state:6, vibes:2]
   exposition:6 @16 back=Y co=[jarvis-coin-kl-courier:4, state:7, vibes:3, vibes:4, vibes:5, vibes:6]
   exposition:7 @18 back=Y co=[jarvis-coin-kl-courier:5, state:8]
   exposition:8 @20 back=Y co=[jarvis-coin-kl-courier:6, state:9]
 
 ## Pile-ups (>4 facets co-located on one protoline)
 
-- **@13** (7): exposition:4, exposition:5, loc-state:2, sensory:2, state:5, state:6, vibes:2
-    `the cooper's yard off Eel Alley holds two workers at the near shed and a boy stacking hoops at the far end — no foot traffic past the third bell, no clear sightline from the lane-mouth`
 - **@16** (7): exposition:6, jarvis-coin-kl-courier:4, state:7, vibes:3, vibes:4, vibes:5, vibes:6
     `jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac`
 - **@8** (6): jarvis-coin-kl-courier:2, mem:1, state:3, state:4, state:5, vibes:1
     `jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac`
+- **@13** (6): exposition:4, loc-state:2, sensory:2, state:5, state:6, vibes:2
+    `the cooper's yard off Eel Alley holds two workers at the near shed and a boy stacking hoops at the far end — no foot traffic past the third bell, no clear sightline from the lane-mouth`
 - **@23** (6): feel:1, mem:2, state:8, state:10, vibes:7, vibes:8
     `the prohibition engages in taylor-hebert-kl-122ac's accounting as a term on one side of a ledger where the other side has a named cost attached to refusal`
 - **@1** (5): loc-state:1, sensory:1, state:1, state:2, state:3

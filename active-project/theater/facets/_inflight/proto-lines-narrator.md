@@ -17,7 +17,7 @@ aggregate_range: 1-36
 7 taylor-hebert-kl-122ac goes still, weight on her back foot, both hands visible at her sides [interest-narrator:2]
 8 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:2] [interest-narrator:3]
 9 taylor-hebert-kl-122ac's insect-feed registers the distance between her and jarvis-coin-kl-courier as the distance of a street-side negotiation — unremarkable to anyone passing
-10 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:3]
+10 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:3] [interest-narrator:9]
 11 taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [taylor-hebert-kl-122ac:1]
 12 taylor-hebert-kl-122ac moves past jarvis-coin-kl-courier's stall position without looking back, insect-feed tracking his departure route
 
@@ -30,7 +30,7 @@ aggregate_range: 1-36
 19 taylor-hebert-kl-122ac runs the inventory of wards-below-Rhaenys's-Hill coverage against the feed she already holds [interest-narrator:5]
 20 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:6]
 21 taylor-hebert-kl-122ac counts the ward-workers by the near shed and the boy's hoop-stack rate at the far end through the feed
-22 taylor-hebert-kl-122ac maps the ward Jarvis named against the coverage she already holds for Rhaenys's Hill ward-traffic
+22 taylor-hebert-kl-122ac maps the ward Jarvis named against the coverage she already holds for Rhaenys's Hill ward-traffic [interest-narrator:10]
 23 the prohibition engages in taylor-hebert-kl-122ac's accounting as a term on one side of a ledger where the other side has a named cost attached to refusal [interest-narrator:6]
 24 taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [taylor-hebert-kl-122ac:2]
 25 the trade-shape sits between taylor-hebert-kl-122ac and jarvis-coin-kl-courier in the tallow-damp air of the cooper's yard: a named ward, a named patron, a named product, no answer yet
@@ -40,7 +40,7 @@ aggregate_range: 1-36
 28 taylor-hebert-kl-122ac holds her position with her back to the shed wall and the yard-mouth in clear line
 29 taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [taylor-hebert-kl-122ac:3] [interest-narrator:7]
 30 jarvis-coin-kl-courier considers taylor-hebert-kl-122ac for a beat — the beat in which a courier registers that the answer was not refusal
-31 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:7]
+31 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:7] [interest-narrator:11]
 32 jarvis-coin-kl-courier leaves the yard by the lane-mouth with the same unhurried pace he arrived with
 33 taylor-hebert-kl-122ac does not move from the shed wall position until the feed confirms jarvis-coin-kl-courier's exit from the lane
 34 taylor-hebert-kl-122ac runs the coverage of Rhaenys's Hill ward-traffic against the boy at the hoop-stack and the two workers at the near shed [interest-narrator:8]
