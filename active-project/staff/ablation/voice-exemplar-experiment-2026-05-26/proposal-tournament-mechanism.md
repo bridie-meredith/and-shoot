@@ -1,8 +1,17 @@
 ---
 purpose: Proposal sketch — exemplar-tournament mechanism for Tier-1 consumers
 authored-by: claude (in-session, 2026-05-26; user-requested during voice-exemplar experiment)
-status: draft (awaiting admin process-critic formalization into staff/admin/process-proposals.md per schemas/admin-proposal.schema.md)
-basis: 2026-05-26 voice-exemplar experiment + 2026-05-26 impersonator-experiment + 2026-05-26 audience-experiment + 2026-05-26 critic-experiment
+status: PARTIALLY CODIFIED 2026-05-26 — Phase 1 (renderer-voice) landed in .claude/commands/and-stitch.md under URI-STITCH-MULTI-ARM / URI-STITCH-TOURNAMENT / URI-STITCH-COUNTERWEIGHT / URI-STITCH-CHERRY-PICK / URI-EXEMPLAR-POV-FENCE. Phase 2 (impersonator-tournament at per-character per-book scope) + Phase 3 (audience-tournament) deferred. Admin process-critic formalization into staff/admin/process-proposals.md still pending for the remaining phases.
+basis: 2026-05-26 voice-exemplar experiment + 2026-05-26 taste-aligned voice-exemplar tournament (load-bearing counterweight finding) + 2026-05-26 impersonator-experiment + 2026-05-26 audience-experiment + 2026-05-26 critic-experiment
+codification-refs:
+  - .claude/commands/and-stitch.md § Args (--max-arms / --include-pov-mismatch / --cherry-pick)
+  - .claude/commands/and-stitch.md § Phase 0 step 4a (URI-STITCH-MULTI-ARM + URI-EXEMPLAR-POV-FENCE + URI-STITCH-COUNTERWEIGHT)
+  - .claude/commands/and-stitch.md § Phase 0.5 pre-flight summary (multi-arm fields)
+  - .claude/commands/and-stitch.md § Phase 1 — multi-arm dispatch (URI-STITCH-MULTI-ARM)
+  - .claude/commands/and-stitch.md § Phase 1.5 — Per-scene tournament selection (URI-STITCH-TOURNAMENT + URI-STITCH-CHERRY-PICK)
+  - staff/admin/exemplar-tournament-judge-prompts/renderer-voice.md (judge-prompt template)
+  - active-project/theater/voice-exemplar-b01-c02.md (V1 market-observational; tournament winner)
+  - active-project/theater/voice-exemplar-b01-c02.alt-1.md (V4 fisherwoman-parallel-tracks; second arm)
 ---
 
 # Exemplar-tournament mechanism — sketch

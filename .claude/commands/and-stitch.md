@@ -88,6 +88,9 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
 - `--allow-bare-speech` — optional. Explicit opt-in to the legacy silent-speech fallback (Phase 0.7 § Legacy fallback). Without this flag, an episode with `speaks to` bones and an empty/missing dialogue facet HARD-ABORTS at Phase 0.5; the user must run `/and-facets <slug>` first. Pass this flag only when knowingly stitching a pre-2026-05-12 episode whose dialogue facet cannot be retroactively authored. Marked in the render-log header.
 - `--keep-drafts` — optional. Retain the Phase 1–7 `<slug>.phase-*.draft.md` intermediate files in `active-project/draft/` after a successful run. Default behavior at Phase 8 is to prune them (the render-log retains the trace; the drafts are reproducible). Debugging use only.
 - `--phase-1-mode <scene-window|per-anchor>` — optional. Override the active profile's `phase-1.mode` field. Default resolves from profile; schema default is `scene-window` (URI-SCENE-WINDOW, 2026-05-13). `scene-window` dispatches one fork per dramatist-marked scene with overlap-read context (back-look on prior rendered scene; forward-look on next scene's bones+facets) — see § "Phase 1 — scene-window mode" below. `per-anchor` is the legacy fallback: one fork per bone with `continuity-context` lookback. Use per-anchor when the scene-map facet is absent, when the episode has low percussion accumulation (modes converge), or for fork-isolation debugging.
+- `--max-arms <N>` — optional. Override the multi-arm dispatch cap (default 4). Caps the voice-exemplar candidate-set size at Phase 0 step 4a. Set `--max-arms 1` to force single-arm dispatch regardless of resolved candidates (debugging / control-baseline). See Phase 0 § 4a (URI-STITCH-MULTI-ARM, 2026-05-26).
+- `--include-pov-mismatch` — optional. Disable the POV-pre-filter at Phase 0 step 4a. Candidates whose exemplar prose is in a different person (1st / 3rd) than the bones-header `narrator:` field will be promoted to the dispatch set anyway. Debugging only — closes the Criston-Cole third-person-slip failure mode by default; this flag re-opens it. See Phase 0 § 4a (URI-EXEMPLAR-POV-FENCE, 2026-05-26).
+- `--cherry-pick <off|paragraph>` — optional. Default `off`. When `paragraph`, Phase 1.5 runs an additional per-scene cherry-pick judge after the winner is selected: it identifies up to 2 paragraphs in the runner-up that out-perform their counterparts in the winner on the taste-aligned rubric and substitutes them, producing an aggregate scene draft. Tonal-inconsistency risk; off-by-default. See Phase 1.5 § Per-scene cherry-pick aggregation (URI-STITCH-CHERRY-PICK, 2026-05-26).
 
 ---
 
@@ -104,14 +107,30 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
    Shallow-merge top-down. Validate per the schema's fault list.
 4. **Persona resolution.** Load `active-project/staff/stitcher/personas/<active>.md` (or library fallback `staff/stitcher/personas/<active>.md`). Default `neutral` if profile carries no `persona:` field. Validate persona's lens-bias and Phase-7-bias tables against the schema.
    - **Project-mismatch check.** If resolved persona is `neutral` AND `active-project/stitch-profile.md` declares a non-neutral persona OR `active-project/staff/stitcher/personas/` contains a project-scoped persona card: emit `FAULT-PROFILE-PERSONA-MISMATCH-PROJECT` and escalate to user. Do not proceed until user either (a) corrects the profile or (b) passes `--persona neutral` explicitly as an override. Silent `neutral` against a tuned project is the canonical failure mode for this pipeline.
-4a. **Voice-exemplar resolution (PROP-0003-A / DEC-0015).** Resolve the series-level voice exemplar path:
-    - **Per-chapter override** (highest priority): `active-project/theater/voice-exemplar-<book>-<chapter>.md`. If present, use this.
-    - **Series-level default**: `active-project/voice-exemplar.md`. If present, use this.
-    - **Else**: no voice exemplar — Phase 1 forks run un-primed (baseline behavior). Record `voice-exemplar: ABSENT` in render-log header.
-    If a voice exemplar is resolved, validate the file is non-empty and contains a prose passage. Record `voice-exemplar: <resolved-path>` in render-log header. Read the passage into the Phase 1 fork dispatch payload; do NOT abstract or describe it back to yourself — it is held as a concrete artifact for pattern-matching.
-    **Surface-convention fence (injected at Phase 1 fork dispatch):**
+4a. **Voice-exemplar resolution (PROP-0003-A / DEC-0015; URI-STITCH-MULTI-ARM, 2026-05-26).** Resolve the voice-exemplar candidate set. The resolution is now a SET, not a single path — single-candidate (the historical behavior) is the N=1 case of the multi-arm path.
+
+    **Candidate-set resolution order:**
+    - **Per-chapter overrides** (highest priority):
+      - Primary: `active-project/theater/voice-exemplar-<book>-<chapter>.md` (if present).
+      - Alternates: `active-project/theater/voice-exemplar-<book>-<chapter>.alt-*.md` siblings — every file matching the glob is a candidate. Numeric or descriptive suffixes both accepted (`.alt-1.md`, `.alt-relational.md`).
+      - If primary + alts exist: multi-arm candidate set = `[primary, alt-1, alt-2, ...]` in glob order.
+      - If only primary exists: single-arm; candidate set = `[primary]`.
+    - **Series-level default**: `active-project/voice-exemplar.md`. If no per-chapter override exists and series-level is present: candidate set = `[series-default]`.
+    - **Else**: no voice exemplar — Phase 1 forks run un-primed (baseline behavior). Candidate set = `[]`. Record `voice-exemplar: ABSENT` in render-log header.
+
+    **POV pre-filter (URI-EXEMPLAR-POV-FENCE, 2026-05-26 — closes the Criston-Cole third-person-slip failure mode):** before promoting any candidate to the dispatch set, verify the candidate's exemplar prose is in the same person (1st / 3rd) as the bones-file `narrator:` field implies. If a candidate is third-person and the bones-header is first-person (or vice versa): exclude the candidate from the dispatch set, record `EXCLUDED-POV-MISMATCH <path>` in the render-log Phase 0 entry, and do NOT silently transform. Manual override available via `--include-pov-mismatch` flag (debugging only; never default).
+
+    **Cap (cost discipline):** the dispatch set is capped at 4 candidates per chapter. If more candidates resolve, the first 4 in glob order win; remainder logged as `EXCLUDED-OVER-CAP <path>`. Cap is a soft default; override via `--max-arms=<N>`.
+
+    For each candidate in the dispatch set: validate the file is non-empty and contains a prose passage. Read the passage into the Phase 1 fork dispatch payload for each arm; do NOT abstract or describe it back to yourself — it is held as a concrete artifact for pattern-matching.
+
+    Record `voice-exemplar-candidates: [<paths>]` in render-log header. When `|candidates| == 1` the behavior is the historical single-arm path; when `|candidates| >= 2` Phase 1 fans out per-arm and Phase 1.5 runs the per-scene tournament (see Phase 1 § multi-arm dispatch and Phase 1.5 § per-scene tournament).
+
+    **Surface-convention fence (injected at Phase 1 fork dispatch — applies to EVERY arm):**
     > The voice exemplar demonstrates prose register, sentence shape, and cadence. Do NOT import the exemplar's specific content (characters, place-names, events, surface conventions like italics formatting, scene-break symbols, or address forms) into the rendered prose. Only the cadence, sentence-shape, register, and noticing-patterns transfer.
     This fence closed the v17 leak in the renderer experiment and is non-negotiable wherever the exemplar is consumed.
+
+    **Counterweight discipline (URI-STITCH-COUNTERWEIGHT, 2026-05-26):** when the candidate set has 2+ arms, candidate authoring guidance is that arms should COUNTERWEIGHT the bones' default cadence-shape, not match it. A prime whose sentence-shape matches the bones' default cadence amplifies the bones' load (compound-noun saturation, parallel-clause metronome, etc.) and ranks below baseline. The taste-aligned ablation on b01-c02 scene-A (`active-project/staff/ablation/voice-exemplar-experiment-taste-aligned-2026-05-26/cold-read-report.md`) demonstrated: V2 porter-active (matched bones' clipped cadence) ranked LAST, below V0 baseline; V1 market-observational (counterweighted with variance + embodied digression) ranked FIRST. Candidate authoring SHOULD pick cadence-shapes that invert the bones' default. Phase 1.5 tournament will surface mis-counterweighted arms as low ranks regardless.
 5. **POV resolution.** Read `narrator:` from the bones file header (`active-project/theater/bones/<book>-<chapter>.md` § `narrator:` field — the seven-field extended header per `schemas/bones.schema.md`). If profile's `voice.pov` is unset, use the header value. Fault if both are absent.
 6. **Scene boundary detection.** Default (scene-window mode): scene boundaries are sourced at Phase 1 from `active-project/theater/facets/scene-map-<book>-<chapter>.md` (per the scene-window mode's Scene-boundary resolution below); no Phase 0 work needed beyond verifying the scene-map facet exists per step 2a. Per-anchor mode (opt-in fallback): paragraph breaks fall on scene boundaries derived during Phase 1 fork-by-fork, or on explicit time-skip blanks in the bones file.
 7. **Feedback intake (if present).** Read `active-project/staff/stitcher/feedback-<slug>.md`:
@@ -149,8 +168,13 @@ Before dispatching Phase 1, emit a one-screen summary to the user:
   phase-1-mode:     <scene-window | per-anchor>     # from profile.phase-1.mode; default scene-window
                     if scene-window: <S> scene-forks (boundaries from scene-map facet; tensometer fallback removed under URI-SUBSTANCE-OVERHAUL 2026-05-17)
                     if per-anchor:   <N> per-anchor forks (fallback mode; ad-hoc or legacy episodes)
-  voice-exemplar:   <present (path) | ABSENT>      # PROP-0003-A: series-level voice prime for Phase 1 forks
-                    if present: <word-count> words; content-match: <high|medium|low> per exemplar frontmatter
+  voice-exemplar:   <N candidates | single (path) | ABSENT>   # PROP-0003-A; URI-STITCH-MULTI-ARM 2026-05-26
+                    if N >= 2: list each candidate path + word-count + content-match + cadence-axis;
+                               phase-1 fanout becomes N × scene-count = <T> Phase-1 dispatches;
+                               Phase 1.5 per-scene tournament dispatches: <scene-count>
+                    if single:  <word-count> words; content-match per exemplar frontmatter
+                    POV-pre-filter: <P excluded | clean> — excluded candidates listed at render-log
+                    cap: 4 candidates by default (--max-arms to override)
   output-dir:       active-project/draft/           # stitcher output (not polished — editor pass lands in active-project/polish/)
   dialogue:         <present | ABSENT (no-speech-episode | legacy-fallback)>
                     if present: <K> character files, <N> total utterances
@@ -490,6 +514,110 @@ Scene-window mode is not strictly-better than per-anchor in all cases. The s01e0
 - **Material risk** on bone-folding-into-summary (caught by the per-bone walk) and NI verb-fold stretches (caught as soft Q-check by the auditor).
 
 Use scene-window when prior runs of the same episode read metronomic at multi-bone seams. Use per-anchor when bones are already magnitude-balanced (per per-bone `axis_moves[].magnitude` distribution from showrunner memory) with low percussion accumulation (the modes converge fully on such episodes and per-anchor is cheaper per-fork to reason about).
+
+---
+
+## Phase 1 — multi-arm dispatch (URI-STITCH-MULTI-ARM, 2026-05-26)
+
+**When this fires.** When Phase 0 step 4a resolved a candidate set of size N ≥ 2 (a primary `voice-exemplar-<book>-<chapter>.md` plus one or more `voice-exemplar-<book>-<chapter>.alt-*.md` siblings), Phase 1 fans out N × scene-count scene-window dispatches instead of scene-count. Per-anchor mode also supports multi-arm: dispatches become N × anchor-count. N = 1 collapses to the historical single-arm behavior; nothing changes for projects that have not authored alt-* candidates.
+
+**Why it exists.** The 2026-05-26 taste-aligned voice-exemplar ablation (`active-project/staff/ablation/voice-exemplar-experiment-taste-aligned-2026-05-26/cold-read-report.md`) demonstrated that exemplar register-fit at authoring time does NOT predict reading-experience outcome on the rendered chapter. The same chapter's bones produce dramatically different prose under different exemplar primes, and per-chapter-per-scene the winner can differ. Single-arm dispatch locks in one prime per chapter without evidence; multi-arm dispatch + per-scene tournament (Phase 1.5) picks the winner per-scene from actual rendered outputs.
+
+**Dispatch granularity.** For each arm A in the candidate set, dispatch the same scene-window forks the single-arm path would dispatch — but with arm A's exemplar in the fork's payload. Arms within a scene run in parallel (independent; no inter-arm context); scenes within an arm serialize (back-look requires prior scene's prose, same as single-arm). Practical pattern: dispatch arm-1's scene-A and arm-2's scene-A in parallel; once both return, dispatch arm-1's scene-B (with arm-1's scene-A as back-look) and arm-2's scene-B (with arm-2's scene-A as back-look) in parallel; etc.
+
+**Per-arm output paths.** Each arm's per-scene draft writes to `active-project/draft/<slug>.scene-<L>.arm-<N>.draft.md` where `<L>` is the scene label (A, B, C, ...) and `<N>` is the arm index in the candidate set (1, 2, ...). The single-arm path (N=1) preserves the historical `<slug>.scene-<L>.draft.md` naming.
+
+**Per-arm render-log entries.** Every Phase 1 fork emits its existing render-log entry shape (`fork-<NNN> scene-<L> bones=@<start>–@<end>`) plus an arm tag: `arm: <N> (candidate: <path>)`. The render-log preserves all N × scene-count entries — the per-scene tournament selects but does not delete.
+
+**Cost.** N × scene-count Phase 1 dispatches replaces scene-count. For c02 (3 scenes, double-stitch N=2): 6 scene-window dispatches at Phase 1, plus 3 tournament-judge dispatches at Phase 1.5 — total 9 vs the single-arm 3. ~3× Phase 1 cost; Phases 2-9 unaffected (operate on the assembled post-tournament draft). Net pipeline overhead ~20% for double-stitch, ~30% for triple-stitch. Within the user-confirmed "exemplars and renderer are light, it is affordable" envelope.
+
+**Failure modes.**
+
+| Fault | Trigger | Recovery |
+|---|---|---|
+| `FAULT-MULTI-ARM-COVERAGE-MISMATCH` | One arm's scene-fork returned a draft missing bones that another arm rendered. Indicates a fork-level bug, not a tournament-eligible signal. | Re-dispatch the failing arm's scene before Phase 1.5. |
+| `FAULT-EXEMPLAR-CONTENT-LEAK <arm>` | Per-arm output contains text the candidate exemplar's frontmatter declares forbidden content (e.g. exemplar-character names, exemplar-place-names). Surface-convention fence violation. | The arm is disqualified from Phase 1.5 tournament; flag for exemplar re-authoring. Surfaces in render-log. |
+| `FAULT-MULTI-ARM-DEGENERATE` | All N arms returned near-identical prose (e.g. all exemplars had similar cadence-shape; the candidate set had no meaningful spread). Tournament will pick arbitrarily. | Non-blocking; tournament proceeds. Surface to render-log as `MULTI-ARM-DEGENERATE` for future candidate-set curation. |
+
+---
+
+## Phase 1.5 — Per-scene tournament selection (URI-STITCH-TOURNAMENT, 2026-05-26)
+
+**When this fires.** Fires when Phase 1 ran in multi-arm mode (candidate set N ≥ 2). Skipped on single-arm runs (N=1). One tournament dispatch per scene.
+
+**Inputs per scene-tournament dispatch:**
+- All N candidate variants for this scene (`<slug>.scene-<L>.arm-<N>.draft.md` for N in candidate set)
+- The scene's bones (verbatim — judge needs to verify bone-faithfulness)
+- The scene-map row for this scene (rhythm-shape, peak-bones, peak-shadow-bones, fusion-eligible-runs, protected-patterns — these inform whether each variant honored the rhythm chart)
+- The taste-aligned tournament rubric at `staff/admin/exemplar-tournament-judge-prompts/renderer-voice.md` (PET PEEVES + REWARDS — see § Rubric below)
+- The candidate exemplars themselves (to recognize content-fence leaks)
+
+**Judge behavior:**
+- Read all N variants for the scene blind (position-labels P1-PN assigned BEFORE the judge reads filenames; mapping revealed only after ranking is finalized).
+- Rank 1 through N against the taste-aligned rubric (PET PEEVES as active negatives + REWARDS as active positives).
+- Surface the per-criterion best/worst for the auditor's trace.
+- Declare a per-scene winner (rank 1).
+
+**Per-scene winner promotion:**
+- The winning variant's prose is copied to `active-project/draft/<slug>.scene-<L>.draft.md` (the canonical post-Phase-1 scene draft).
+- Render-log Phase 1.5 entry records: `scene-<L> winner: arm-<N> (candidate: <path>); ranking: arm-<N>, arm-<M>, ...; per-criterion verdict path: staff/reviews/tournament-<slug>-scene-<L>-<timestamp>.md`.
+- Losing arms' per-scene drafts are retained on disk under `<slug>.scene-<L>.arm-<N>.draft.md` until Phase 8 prunes intermediates (same prune-policy as other phase-N drafts).
+
+**Per-scene cherry-pick aggregation (URI-STITCH-CHERRY-PICK; default OFF):**
+
+When `--cherry-pick=paragraph` is passed at command-invocation, Phase 1.5 dispatches a second judge per scene AFTER the winner is selected. The cherry-pick judge:
+- Reads the per-scene winner AND the runner-up.
+- Identifies up to K paragraphs (default K=2 per scene) in the runner-up that out-perform their counterparts in the winner on the taste-aligned rubric.
+- Replaces those paragraphs in the canonical scene-draft.
+
+Risks (the cherry-pick path is OFF by default because the user explicitly flagged it as "possibly an aggregate of cherry pickings as a final product" — not "always"):
+- **Tonal inconsistency.** Different exemplars produce different voices; mixing within a scene risks reader perceiving the seam.
+- **Bone-faithfulness drift.** The cherry-picked paragraphs may render different bones; the cherry-pick judge has a hard fence requiring the picked paragraph to render the SAME bone-range as the paragraph it replaces.
+
+When cherry-pick fires:
+- Aggregated scene draft writes to `active-project/draft/<slug>.scene-<L>.draft.md` (overwriting the pure-winner version; original winner retained as `<slug>.scene-<L>.winner.draft.md`).
+- Render-log Phase 1.5 entry adds `cherry-picked: <N> paragraphs from arm-<M>; tonal-seam-risk: <none | low | flag>`.
+
+Pass `--cherry-pick=off` (the default) or omit the flag for pure-winner selection. Pass `--cherry-pick=paragraph` to enable.
+
+**Rubric.** The taste-aligned tournament rubric is loaded from `staff/admin/exemplar-tournament-judge-prompts/renderer-voice.md` (when present) OR inlined per the validated rubric below. The rubric is calibrated to the user's explicit pet peeves and rewards. It is NOT the cold-reader prompt of Phase 9 — that gate measures different criteria (event-recovery + continue-rate). Phase 1.5's judge measures cadence-and-prose-quality only.
+
+PET PEEVES (active negatives — variants exhibiting these get marked down):
+1. Theme-as-statement (announcement of moral significance the events should earn)
+2. Heavy-handed metaphor that announces itself
+3. Symbolic relationships (a person or object exists to mean rather than to be)
+4. Setting-dressing-as-meaning (atmosphere asks to be read as significance)
+5. Compound-noun saturation (hyphenated nominalizations recycling 3-4 roots; aggregate density, not raw count)
+6. Metronome tic-regularity ("I did X. I did Y. I did not Z." / "X was X. Y was Y." / "which was A, which was B")
+7. Repetition-as-cadence when verbs run out ("closed the X entry, closed the Y entry, closed the Z entry" fake closure)
+8. Gestured-at recognition (a moral or perceptual shift named rather than dramatized)
+
+REWARDS (active positives — variants exhibiting these get marked up):
+1. Person in the voice (a particular mind behind the sentences; not a system humming)
+2. Embodied (the body in the sentences; hands knowing the work; weight on a foot; body deciding ahead of mind)
+3. Sensory-grounded (concrete physical anchors; not vague atmosphere)
+4. Variance in sentence length (no metronome rhythm; long sentences earn length, short punctuate)
+5. Quiet lines carrying scenes (a small declarative doing paragraph-of-statement work)
+6. Setup→payoff recognizable but not announced (setup pays off in action, not narration about the setup)
+7. Restraint AND confidence at once (chooses what to say with discipline + without hedging)
+8. Bone-faithfulness (prose stays inside scene's actual events; no invented body / dialogue / cognitive / spatial detail)
+
+**The counterweight question (URI-STITCH-COUNTERWEIGHT, 2026-05-26 — load-bearing finding from the taste-aligned ablation):** before scoring the rubric per-variant, the judge MUST name the bones' default cadence-shape in one phrase (e.g. "compound-noun-heavy parallel-clause infrastructure", "short clipped action chain", "long observational sweep") and then judge each variant on whether it INVERTS that shape (counterweight; rewards) or AMPLIFIES it (resonance; penalties). The per-criterion rubric stands, but the counterweight verdict is the top-line discriminator. The b01-c02 taste-aligned ablation showed: a prime that matches the chapter's energy is often the WRONG prime — V2 porter-active's clipped action-rhythm matched c02's bones and ranked LAST, below baseline. V1 market-observational's variance-with-embodiment counterweighted the bones and ranked FIRST. The judge prompt explicitly carries this discrimination as a first-pass classifier.
+
+**Output:**
+- Per-scene tournament verdict written to `active-project/staff/reviews/tournament-<slug>-scene-<L>-<timestamp>.md` (ranking table, per-criterion breakdown, counterweight verdict, position-to-arm un-blinding).
+- Winning variant copied to `active-project/draft/<slug>.scene-<L>.draft.md`.
+- Render-log Phase 1.5 entry per scene.
+
+**Failure modes.**
+
+| Fault | Trigger | Recovery |
+|---|---|---|
+| `FAULT-TOURNAMENT-NO-WINNER` | Judge returned a tie at rank 1 (technically impossible per the "no ties" rubric directive but possible on judge non-compliance). | Re-dispatch the judge with explicit "break the tie on counterweight; if still tied, break on Embodied (REWARD #2)". |
+| `FAULT-TOURNAMENT-ALL-EXCLUDED` | Every arm hit `FAULT-EXEMPLAR-CONTENT-LEAK` at Phase 1. No eligible variants. | Tournament cannot proceed; fall back to the un-primed re-render of the scene (single-arm with no exemplar) and surface the candidate-set failure to the user. |
+| `FAULT-CHERRY-PICK-BONE-MISMATCH` | Cherry-pick judge proposed a paragraph that renders different bones than the paragraph it would replace. | Reject the cherry-pick; keep the pure-winner paragraph; log the bone-range mismatch. |
+
+**Resumability.** A multi-arm Phase 1 + Phase 1.5 can resume per the standard `/and-stitch` re-run protocol: completed scene-tournaments remain valid; in-flight tournaments re-dispatch from the per-arm scene drafts (which were written before Phase 1.5 ran). The render-log records the resumption point.
 
 ---
 
