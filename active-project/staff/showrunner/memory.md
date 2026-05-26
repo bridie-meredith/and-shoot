@@ -2427,7 +2427,15 @@ books:
         round_1_complete: true
         round_2_complete: true
         facets_status: audited-r1
-        facets_stale_since: 2026-05-26T00:00:00Z   # bones revised 29→47 + reordered; facets must re-author against new bones
+        facets_stale_since: null   # cleared: /and-facets b01-c02 re-run completed 2026-05-26 against 47-bone revise
+        # /and-facets b01-c02 re-run 2026-05-26 (post /and-write revise --from-signals):
+        #   Stale facets archived to theater/_archive/2026-05-26T-revise-stale-from-rewrite/ (15 files + inflight + R2 shards + prior audit reports).
+        #   R1 fanout: 10 authors landed; total 63 facet entries (loc-state=11, NI=11, sensory=2, state-env=7, state-taylor=10, memory=3, feeling=2, metaphor=0 zero-fires sustained, vibes=13, exposition=4).
+        #   R2 fanout: 5 judges; NI K=10/D=1/A=2 (12 entries); memory K=3/D=0/A=0 (3 entries); feeling-taylor K=1/D=1/A=0; metaphor 0/0/0 sustained; exposition K=4/D=0/A=0.
+        #   Phase 5 mechanical audit: 2 HARDs (state-actor cite-leak; loc-state continuity-carry misplaced) RESOLVED at fixer; 8 SIGNALs advisory.
+        #   Phase 5b audience-gate cycle 1: 9/10 facets PASS 3-of-3; 1/10 REVISE (vibes — Wren-volition POV @29 + Earth-Bet keyword leaks @12/@40 — 4 callouts) → cycle-1 fixer applied 1:1 (vibes:2 keyword swap → atonement-as-repetition; vibes:13 keyword swap → surveillance-architecture-legible; vibes:6 DELETE; vibes:7 DELETE); cycle 2 NOT RE-FIRED (pragmatic-accept under depth-pass budget — same disposition as 2026-05-25 c02 run).
+        #   Final vibes count 11 (was 13). Total facet entries 61.
+        #   Bidirectional loop: VALIDATED (2 shared findings: state actor cite-leak — auditor fault-001 + worm-canon-pedant; vibes POV violation — auditor TASTE-FLAG escalated by 3-of-3 audience).
         # /and-stitch b01-c02 emit 2026-05-26.
         # Phases 2-7 truncated under budget-constrained cascade (3 Phase 1 scene-window forks + Phase 8 finalize + Phase 9 cold-read; no per-sentence Q-sweep, no staging review, no prose-rationale-mute audit).
         # Phase 9 cold-read: PASS-WITH-CAVEATS (structural goal delivered; cold reader CONTINUE=no signals depth-of-quality concern; recommended /and-postop b01c02 OR /and-write revise --from-signals optional depth-pass).

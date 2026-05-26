@@ -3,7 +3,7 @@ episode: b01-c02
 author: showrunner
 bones_count: 47
 entries_count: 11
-r1_status: provisional
+r1_status: cycle1-fixed
 ---
 
 # rubric-carve-out — loc:oc-stitch-house-lane empty vibe-set

@@ -876,3 +876,32 @@ dispatch: Phase 5b cycle-1 fixer pass for vibes-b01-c02; 4 consolidated callouts
 target: active-project/theater/facets/vibes-b01-c02.md
 audit-report: active-project/staff/audience/worm-canon-pedant/vibes-r1-verdict.md + cape-fic-reader/vibes-r1-verdict.md + dark-fantasy-reader/vibes-r1-verdict.md
 findings-queued: 4
+
+## callout-1 (vibes:2 Earth-Bet fence) — RESOLVED — 2026-05-26T10:05:00Z
+fault: vibes:2 @12 keyword array token "line-drawn-at-twelve-in-same-hand-as-gold-morning-refusal" contained substring "gold morning" — Earth-Bet noun hard-fence hit (worm-canon-pedant independent finding; auditor scan missed sub-keyword level)
+scope: line
+change: token replaced with "line-drawn-at-twelve-in-same-hand-as-the-prior-refusal" — functional descriptor naming the gesture not the event; fence-clean; found pre-applied in vibes-b01-c02.md; no further edit required
+criteria met: yes — "gold morning" substring absent from all keyword array tokens; fence-scan-clean
+
+## callout-2 (vibes:13 Earth-Bet fence) — RESOLVED — 2026-05-26T10:05:00Z
+fault: vibes:13 @40 keyword array token "accounting-structure-readable-as-khepri-rhyme-by-audience-not-taylor" contained substring "khepri" — Earth-Bet noun hard-fence hit (worm-canon-pedant independent finding)
+scope: line
+change: token replaced with "accounting-structure-readable-as-override-pattern-by-audience-not-taylor" — functional descriptor naming the pattern without the canon name; fence-clean; also keyword label updated to "surveillance-architecture-legible"; found pre-applied in vibes-b01-c02.md; no further edit required
+criteria met: yes — "khepri" substring absent from all keyword array tokens and keyword label; fence-scan-clean
+
+## callout-3 (vibes:6 POV-scope DELETE) — RESOLVED — 2026-05-26T10:08:00Z
+fault: vibes:6 @29 actor:wren-stitch-maker-flea-bottom-ward ++ mutual-silence — token "not-approaching-as-active-decision-with-data" attributed volitional interior state to non-POV character at bone where Taylor's feed attenuates; chapter's strict solo-POV discipline forbids this; convergence cape-fic-reader + dark-fantasy-reader + worm-canon-pedant (escalated from TASTE-FLAG to hard-fault)
+scope: line
+change: DELETED. vibes-b01-c02.md carries DELETED marker (pre-applied). Proto-lines @27 [vibes:6] token stripped. Cite-index: vibes:6 entry removed; co-lists cleaned (narrator:6, state:12, mem:2, vibes:3, vibes:4 all had vibes:6 removed). Pile-up @27 updated 6→5. Vibes section count 13→11.
+criteria met: yes — POV-scope violation removed; no Taylor-inaccessible interiority claims on Wren at @27/@29; coverage-edge irony carried by vibes:5 and episode-scope vibes:12/13
+
+## callout-4 (vibes:7 POV-scope DELETE) — RESOLVED — 2026-05-26T10:09:00Z
+fault: vibes:7 @29 actor:wren-stitch-maker-flea-bottom-ward ++ rising entrapment — "++ rising entrapment" attributed Wren's subjective experience of entrapment at @29; dual-++ pile-up on non-POV character with vibes:6 (now deleted) compounded the violation; convergence cape-fic-reader + worm-canon-pedant (dark-fantasy-reader partial: defended vibes:7 tokens as map-read but identified dual-++ Wren pile-up as the fault vector)
+scope: line
+change: DELETED. vibes-b01-c02.md carries DELETED marker (pre-applied). Proto-lines @29 [vibes:7] token stripped. Cite-index: vibes:7 entry removed; co-lists cleaned (loc-state:8, vibes:5 had vibes:7 removed). Density distribution updated: @29 moves 3→2 cites (2-row 6→7; 3-row 2→1); @27 moves 6→5 cites (6-row 1→0; 5-row 1→2). Total facet entries 63→61.
+criteria met: yes — POV-scope violation removed; reader-irony layer preserved through episode-scope vibes:12/13; vibes:5 (coverage-edge-as-information) carries the feed-boundary register at @29
+
+## SESSION-END — 2026-05-26T10:09:00Z — facets-b01c02-vibes-cycle1
+findings-applied: 4 (callout-1 and callout-2 keyword swaps pre-applied; callout-3 and callout-4 DELETED markers pre-applied; this session completed proto-lines + cite-index cleanup for callouts 3+4)
+findings-skipped: 0
+exit: CLEAN
