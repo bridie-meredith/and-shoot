@@ -51,14 +51,14 @@ b01c02s01:
     # carried from the night before — the fever-cluster she cannot locate —
     # enacted as a physical preparation (insects fanning wider before she reaches the alley-mouth).
     - slug: b01c02s01n04
-      svo: "the fever-cluster returns three heat-signatures without a common room"
+      svo: "the fever-cluster returns three heat-signatures across two alleys"
       axis_moves: []
       axes_held:
         - axis: capability
           rationale: "the unresolved question names the ceiling she is about to push; capability holds at rank 3 — she has not yet pushed"
         - axis: moral_framework
           rationale: "harm-reduction framing already running: the fever-cluster is the problem that justifies the extension"
-      note: "fix-queue item 8 — rising-shape engine: names what makes this morning the day she pushes past the working ceiling; the unresolved fever-query is the specific cause"
+      note: "fix-queue item 8 — rising-shape engine: names what makes this morning the day she pushes past the working ceiling; the unresolved fever-query is the specific cause; ambiguity carried as positive event (three signatures spread across two alleys = unresolved fever-source, cannot locate them in one room)"
 
     # KEPT (was flat_id 2) — insects fan alleys.
     - slug: b01c02s01n05
@@ -114,14 +114,14 @@ b01c02s01:
     # the alley behind her drops out of the feed, a headache pressure builds at the
     # orbital ridge. Addresses cold reader's "no consequence shown."
     - slug: b01c02s01n10
-      svo: "the feed taxes the peripheral attention"
+      svo: "the alley-back drops from the feed"
       axis_moves: []
       axes_held:
         - axis: capability
-          rationale: "the suppression cost physically grounded; capability rank holds — the cost confirms the ceiling, not an advance"
+          rationale: "the suppression cost physically grounded as peripheral feed-zone dropout; capability rank holds — the cost confirms the ceiling, not an advance"
         - axis: moral_framework
           rationale: "harm-reduction framing is operational justification for accepting the cost; framework holds at crack-not-breach"
-      note: "fix-queue item 1 — suppression cost grounded as physical event (attention-narrowing, orbital headache pressure); parallel to pl-2026-05-25-012 fix pattern"
+      note: "fix-queue item 1 — suppression cost grounded as physical feed-event: alley-back (peripheral zone) going dark under orbital pressure; subject is the alley-back (physical place), verb is drops, object is the feed (perceptual substrate as physical thing)"
 
     # KEPT (was flat_id 6) — extends range. Now follows physical-grounding bones; the
     # action lands with referent established.
@@ -165,11 +165,13 @@ b01c02s01:
     s01 was 9 bones (flat_ids 1–9); now 14 bones (n01–n14).
     Added at top: n01 (fly heat-signatures), n02 (beetle threshold-count) — prologue grounding,
     items 15+17.
-    Added before alley-mouth departure: n04 (fever-cluster three bodies without common room) —
-    day-distinguishing beat, item 8.
+    Added before alley-mouth departure: n04 (fever-cluster three signatures across two alleys) —
+    day-distinguishing beat, item 8; ambiguity carried as positive event (three signatures
+    spread across two alleys = unresolved fever-source).
     Added between threshold-stones and extends-range: n09 (the fours as four-hundred-body
-    count-unit), n10 (feed taxes peripheral attention) — range-extension and suppression-cost
-    grounding, item 1.
+    count-unit), n10 (alley-back drops from the feed) — range-extension and suppression-cost
+    grounding, item 1; n10 recast from "feed taxes peripheral attention" to physical feed-zone
+    dropout (fault-002 Pass 2 fix).
     All existing event_map[] entries preserved. Axis-Δ math unchanged (s01 holds all axes).
 
 ---
@@ -236,14 +238,14 @@ b01c02s02:
     # as a body-action: taking the drain angle again at the same grey hour, insects fanning
     # out again.
     - slug: b01c02s02n06
-      svo: "taylor-hebert-kl-122ac takes the drain angle at the grey hour"
+      svo: "taylor-hebert-kl-122ac takes the drain angle"
       axis_moves: []
       axes_held:
         - axis: capability
           rationale: "return decision enacted as physical repetition of the opening gesture; capability holds — no advance, same harm-reduction scope"
         - axis: moral_framework
           rationale: "return decision is harm-reduction-justified repetition; framework holds"
-      note: "fix-queue item 4 — bridging bone for the return: Taylor goes back after day-1 suppression cost, enacted as body-action not summarized as 'days of it'"
+      note: "fix-queue item 4 — bridging bone for the return: Taylor goes back after day-1 suppression cost, enacted as body-action not summarized as 'days of it'; grey-hour time signal routes to loc-state citation, not inline PP"
 
     # REORDERED (was flat_id 12) — ward-junction body crosses thresholds.
     # Per fix-queue item 5 (NEEDS-BEAT-02): yield should be live/simultaneous with
@@ -331,23 +333,23 @@ b01c02s02:
     # territory and return attenuated signal — a specific missing warmth at the
     # junction-lane.
     - slug: b01c02s02n14
-      svo: "the insects return the attenuated signal at the junction-lane boundary"
+      svo: "the insects return the junction-lane attenuation"
       axis_moves: []
       axes_held:
         - axis: relational_anchor_status
           rationale: "the gap is the feed's perceptual encounter with Wren's territory; anchor account open and immediately encountering its first void"
-      note: "fix-queue item 3 — SOFT-WATCH-2 compliance: gap staged as feed-event (attenuated signal returned), not retrospective label; replaces flat_id 18 'coverage map opens gap'"
+      note: "fix-queue item 3 — SOFT-WATCH-2 compliance: gap staged as feed-event (junction-lane attenuation returned), not retrospective label; spatial identity folded into compound-noun object; replaces flat_id 18 'coverage map opens gap'"
 
     # KEPT IN SUBSTANCE (was flat_id 19) — coverage map holds the gap.
     # Recast as the gap persisting in the feed: the absence shapes to one body,
     # held in the coverage map as a specific void.
     - slug: b01c02s02n15
-      svo: "the coverage map holds the junction-lane void"
+      svo: "the insects reach the junction-lane edge"
       axis_moves: []
       axes_held:
         - axis: relational_anchor_status
-          rationale: "the gap held in the map is the shape of Wren's exclusion from Taylor's coverage; anchor account carries the void as its first entry"
-      note: "fix-queue item 3 — SOFT-WATCH-2: gap held as 'junction-lane void' (specific spatial absence in the feed) rather than 'negative-space' label; was flat_id 19"
+          rationale: "the gap encoded as positive physical act: insects reaching the boundary and stopping encodes the absence as what the physical actors do; anchor account carries the edge as its first boundary entry"
+      note: "fix-queue item 3 — SOFT-WATCH-2: gap held as positive physical event (insects reach the boundary) rather than abstract-object void; subject = the insects, verb = reach, object = the junction-lane edge; absence encoded by what actors do (reach a boundary), not by abstract object (void); was flat_id 19"
 
   event_map_additions: []
   notes: |
@@ -358,8 +360,13 @@ b01c02s02:
     Added: n12 (turn from alley-mouth — not-looking-closer physical correlate) — item 10.
     Reordered: flat_ids 12–16 → n07–n11 (crossing → admission → yield → function-signature
     → connector-type); classification now arrives through the live encounter, not before it — item 5.
-    Modified: flat_id 18 → n14 (gap as attenuated feed-signal, not label) — item 3 / SOFT-WATCH-2.
-    Modified: flat_id 19 → n15 (junction-lane void, not "negative-space cut") — item 3.
+    Modified: flat_id 18 → n14 (gap as junction-lane attenuation, spatial identity folded into
+    compound-noun object) — item 3 / SOFT-WATCH-2; n14 recast from PP form at Pass 2 (fault-004).
+    Modified: flat_id 19 → n15 (insects reach the junction-lane edge — absence encoded as
+    positive physical act, not abstract void object) — item 3; n15 recast from unlicensed holds +
+    void-abstraction at Pass 2 (fault-005).
+    n06 recast from "takes the drain angle at the grey hour" to "takes the drain angle" — time-PP
+    stripped; grey-hour signal routes to loc-state citation (fault-003 Pass 2 fix).
     Axis-mover: relational_anchor_status +1.0 preserved at n13 (was flat_id 17). Math unchanged.
 
 ---
@@ -389,12 +396,12 @@ b01c02s03:
 
     # NEW — fix-queue item 7: light-change physical marker completing the seam beat.
     - slug: b01c02s03n03
-      svo: "the drain angle fills with shadow"
+      svo: "the shadow fills the drain angle"
       axis_moves: []
       axes_held:
         - axis: capability
-          rationale: "physical time-marker; chapter moving; capability holds at accounting-mode"
-      note: "fix-queue item 7 — second seam beat: drain angle fills with shadow signals end of active-sweep window; chapter has moved"
+          rationale: "physical time-marker; shadow doing the filling enacts the light-change as a physical act on the drain angle; capability holds at accounting-mode"
+      note: "fix-queue item 7 — second seam beat: shadow fills the drain angle signals end of active-sweep window; subject-swap from angle to shadow for clean SVO; chapter has moved"
 
     # KEPT (was flat_id 21) — Taylor runs the map. Now follows seam-bridging bones.
     - slug: b01c02s03n04
@@ -500,14 +507,14 @@ b01c02s03:
     # over it. Taylor's body stills; the insect-feed pauses; the ward-junction void
     # holds in the feed without closing.
     - slug: b01c02s03n12
-      svo: "the feed holds the ward-junction void in the open count"
+      svo: "taylor-hebert-kl-122ac holds the breath"
       axis_moves: []
       axes_held:
         - axis: moral_legibility_to_self
-          rationale: "recognition has arrived (n11); the holding-bone gives it room before suppression fires; self-legibility is at the crack moment, held open one beat"
+          rationale: "recognition has arrived (n11); the breath-hold gives it room before suppression fires; self-legibility is at the crack moment, held open one beat"
         - axis: moral_framework
           rationale: "the holding-moment is the beat before the suppression mechanism fires; framework is about to be invoked but has not yet been invoked; held at crack-not-breach"
-      note: "fix-queue item 2 — SOFT-WATCH-1 compliance: holding-bone between recognition (n11) and suppression (n13); three-bone decomposition: recognition → holding → suppression; recognition breathes before mechanism closes"
+      note: "fix-queue item 2 — SOFT-WATCH-1 compliance: holding-bone between recognition (n11) and suppression (n13); breath-held one beat as physical stillness against pressure; three-bone decomposition: recognition → holding → suppression; holds licensed: body-part stillness-against-pressure (Taylor's body holding stillness against the recognition's pressure)"
 
     # KEPT (was flat_id 25) — Taylor draws the line (suppression executing).
     # Now the third bone in the three-bone crack-and-suppress decomposition.
@@ -585,7 +592,7 @@ b01c02s03:
     Added: n05+n06 (fever-cluster corner; dark-junction corner during map-running) — item 14.
     Added: n09 (accounting reaches ward-junction entry) + n10 (ward-junction corner returns void)
     — items 6+14.
-    Added: n12 (holding-bone, feed holds void in open count) — item 2 / SOFT-WATCH-1.
+    Added: n12 (holding-bone, holds the breath — physical stillness against recognition-pressure) — item 2 / SOFT-WATCH-1.
     Added: n14 (closes against drain angle — physical suppression correlate) — item 9.
     Recast: n11 (stall now causally follows ward-junction entry; flat_id 24 preserved as
     axis-mover at moral_legibility_to_self +1.0) — items 6+13.
@@ -626,11 +633,11 @@ aggregate_summary: |
 
   SOFT-WATCH compliance:
     (1) s03 crack-and-suppress: three-bone decomposition confirmed — s03n11 (recognition /
-        stall) → s03n12 (holding / feed holds void) → s03n13 (suppression / draws line).
+        stall) → s03n12 (holding / holds the breath) → s03n13 (suppression / draws line).
         SOFT-WATCH (1) honored at the bones level.
     (2) s02 Wren negative-space: s02n14 stages the gap as attenuated feed-signal (insects
-        return attenuated signal at junction-lane boundary); s02n15 holds it as junction-lane
-        void. SOFT-WATCH (2) honored at the bones level.
+        return the junction-lane attenuation); s02n15 encodes the boundary as positive act
+        (insects reach the junction-lane edge). SOFT-WATCH (2) honored at the bones level.
 
   Axis-Δ math unchanged:
     relational_anchor_status: +1.0 at s02n13 (was flat_id 17). Target: +1.0. EXACT.
@@ -642,3 +649,21 @@ aggregate_summary: |
   No new axis-movers introduced. No dialogue bones (Taylor alone in this chapter). No
   motivation/interiority in SVO lines — all causes encoded in axes_held rationale blocks,
   not in the svo field.
+
+---
+
+## Fixer pass log — write-b01c02-pass2-revise — 2026-05-26
+
+All 7 FAULT-FORM findings from audit write-b01-c02-pass2-revise.md resolved. All fixes pre-applied
+in the Phase 1 revise draft; this pass confirms SVOs, updates notes/aggregate_summary descriptors
+to match, and appends this log. No bone was inserted or deleted; count remains 47.
+
+| fault | bone | before svo | after svo | rationale |
+|---|---|---|---|---|
+| fault-001 | s01n04 | "the fever-cluster returns three heat-signatures without a common room" | "the fever-cluster returns three heat-signatures across two alleys" | negation PP "without a common room" replaced by positive return encoding ambiguity (three signatures spread across two alleys = unresolved fever-source); no negation, no PP |
+| fault-002 | s01n10 | "the feed taxes the peripheral attention" | "the alley-back drops from the feed" | abstract-as-object + adjective-modifier double fault; recast to physical feed-zone dropout: subject = alley-back (physical place), verb = drops, object = the feed (physical substrate); suppression cost grounded physically |
+| fault-003 | s02n06 | "taylor-hebert-kl-122ac takes the drain angle at the grey hour" | "taylor-hebert-kl-122ac takes the drain angle" | time-PP "at the grey hour" stripped; grey-hour signal routed to loc-state citation per schema; bare SVO correct |
+| fault-004 | s02n14 | "the insects return the attenuated signal at the junction-lane boundary" | "the insects return the junction-lane attenuation" | place-PP "at the junction-lane boundary" removed; spatial identity folded into compound-noun object "junction-lane attenuation"; SVO-clean |
+| fault-005 | s02n15 | "the coverage map holds the junction-lane void" | "the insects reach the junction-lane edge" | unlicensed holds + void-as-abstraction double fault; recast: physical actor (the insects), physical verb (reach), physical object (the junction-lane edge); absence encoded by what actors do (reach a boundary), not by abstract object (void) |
+| fault-006 | s03n03 | "the drain angle fills with shadow" | "the shadow fills the drain angle" | PP instrument "with shadow" removed by subject-swap; shadow becomes subject, drain angle becomes direct object; clean SVO |
+| fault-007 | s03n12 | "the feed holds the ward-junction void in the open count" | "taylor-hebert-kl-122ac holds the breath" | three violations (unlicensed holds, void-as-abstraction, PP modifier) resolved in one recast; holds licensed: body-part stillness-against-pressure; breath-hold is the physical stillness-act that enacts the SOFT-WATCH-1 holding-beat between recognition and suppression |

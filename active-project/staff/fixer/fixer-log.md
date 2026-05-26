@@ -817,3 +817,56 @@ criteria met: yes — vibes:7 token now names the mode as operational posture wi
 findings-applied: 3
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-26T09:00:00Z — write-b01c02-pass2-form-fixes
+dispatch: minimum-change SVO recasts for 7 FAULT-FORM faults from write-b01-c02-pass2-revise.md; patch svo: and note: fields in b01c02-revise-draft-2026-05-26.md
+target: active-project/staff/showrunner/_drafts/b01c02-revise-draft-2026-05-26.md
+audit-report: active-project/staff/auditor/write-b01-c02-pass2-revise.md
+findings-queued: 7
+
+## fault-001 (s01n04) — RESOLVED — 2026-05-26T09:05:00Z
+fault: "without a common room" is a negation PP (FAULT-FORM-NEGATION + FAULT-FORM-MODIFIER)
+scope: line
+change: svo confirmed as "the fever-cluster returns three heat-signatures across two alleys"; s01 notes and aggregate_summary SOFT-WATCH (2) updated to reflect positive-event encoding; pre-applied in draft
+criteria met: yes — negation PP removed; ambiguity encoded as positive spatial distribution
+
+## fault-002 (s01n10) — RESOLVED — 2026-05-26T09:05:00Z
+fault: "peripheral" adjective modifier + "attention" abstract-as-object (FAULT-FORM-MODIFIER + FAULT-FORM-INTERIORITY)
+scope: line
+change: svo confirmed as "the alley-back drops from the feed"; note field confirms physical grounding (subject = alley-back, verb = drops, object = the feed); pre-applied in draft
+criteria met: yes — adjective modifier and abstract object both eliminated; suppression cost physically grounded
+
+## fault-003 (s02n06) — RESOLVED — 2026-05-26T09:05:00Z
+fault: "at the grey hour" is a time-PP (FAULT-FORM-MODIFIER)
+scope: line
+change: svo confirmed as "taylor-hebert-kl-122ac takes the drain angle"; note field confirms grey-hour routes to loc-state citation; pre-applied in draft
+criteria met: yes — time-PP stripped; bare SVO correct
+
+## fault-004 (s02n14) — RESOLVED — 2026-05-26T09:06:00Z
+fault: "at the junction-lane boundary" is a place-PP (FAULT-FORM-MODIFIER)
+scope: line
+change: svo confirmed as "the insects return the junction-lane attenuation"; spatial identity folded into compound-noun object; aggregate_summary SOFT-WATCH (2) updated; pre-applied in draft
+criteria met: yes — place-PP removed; spatial identity in compound-noun object
+
+## fault-005 (s02n15) — RESOLVED — 2026-05-26T09:06:00Z
+fault: "holds" unlicensed + "junction-lane void" abstraction-as-object (FAULT-FORM-NON-ACTION-VERB + FAULT-FORM-INTERIORITY)
+scope: line
+change: svo confirmed as "the insects reach the junction-lane edge"; subject = insects, verb = reach, object = junction-lane edge (physical); aggregate_summary SOFT-WATCH (2) updated; pre-applied in draft
+criteria met: yes — unlicensed holds and void-abstraction both replaced by physical actor + physical verb + physical object
+
+## fault-006 (s03n03) — RESOLVED — 2026-05-26T09:06:00Z
+fault: "with shadow" is a PP instrument (FAULT-FORM-MODIFIER)
+scope: line
+change: svo confirmed as "the shadow fills the drain angle"; subject-swap applied; axes_held rationale for capability confirms shadow-as-subject framing; pre-applied in draft
+criteria met: yes — PP instrument removed by subject-swap; clean SVO
+
+## fault-007 (s03n12) — RESOLVED — 2026-05-26T09:07:00Z
+fault: "holds" unlicensed + "ward-junction void" abstraction-as-object + "in the open count" PP modifier — three violations (FAULT-FORM-NON-ACTION-VERB + FAULT-FORM-INTERIORITY + FAULT-FORM-MODIFIER)
+scope: line
+change: svo confirmed as "taylor-hebert-kl-122ac holds the breath"; holds licensed as body-part stillness-against-pressure; note field updated to SOFT-WATCH-1 compliance framing; s03 notes block updated (n12 description changed from "feed holds void in open count" to "holds the breath"); aggregate_summary SOFT-WATCH (1) updated from "s03n12 (holding / feed holds void)" to "s03n12 (holding / holds the breath)"; pre-applied in draft
+criteria met: yes — all three violations resolved; SOFT-WATCH-1 holding-bone structurally sound
+
+## SESSION-END — 2026-05-26T09:07:00Z — write-b01c02-pass2-form-fixes
+findings-applied: 7
+findings-skipped: 0
+exit: CLEAN
