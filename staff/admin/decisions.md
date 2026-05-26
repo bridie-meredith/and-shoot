@@ -504,3 +504,49 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0022 | 2026-05-26 | SLOW
+
+question: User ran `/and-stitch b01-c02`. Should the command run a fresh full re-stitch, stop and confirm intent, or run an un-truncated re-stitch (since the prior stitch was budget-truncated)?
+
+context: b01-c02 is already terminal: depth-pass resolved 2026-05-26, Phase 9 returned PASS-WITH-CAVEATS, depth_pass_pending = false, draft files current. One stale-looking field (stitched_stale_since: 2026-05-26T00:00:00Z) appears to be a bookkeeping leftover not cleared at the post-depth-pass re-stitch write — all other freshness indicators disagree. Bones and facets unchanged since the depth-pass stitch. A no-input-delta full re-stitch produces output only via seed variance. However: memory.md line 2440 explicitly notes that the prior stitch ran Phases 2-7 as "truncated under budget-constrained cascade" — a full un-truncated re-stitch would be a meaningful delta (sweeps that were actually skipped would run). Two parking-lot items fire SOFT; neither blocks.
+
+decision: Option 3 — run as a full (non-truncated) re-stitch, surfacing the budget-truncation note as the reason. Do NOT stop to confirm; the user invoked the command and the truncation note is the key fact that makes this a meaningful non-redundant re-run.
+
+basis: methodology:3b (cost) + goals:Goal-2 (cost discipline) — the truncation note changes the calculus; this is not a seed-variance re-run, it is completing skipped phases
+rationale: The user's explicit command invocation plus the explicit memory.md truncation note at line 2440 are sufficient signal to proceed. Phases 2-7 (compression, voice transform, local flow + speaker-paragraph breaks, buildup preservation, editorial reflection) were skipped under the cascade budget; running them now is a meaningful completion pass, not redundant work. Option 2 (stop and confirm) would be correct only if the re-run were purely redundant — it is not. The stale stitched_stale_since field is consistent with the truncation interpretation (incomplete phases = stitch not fully clean). The command body should surface the truncation note in its Phase 0 print block so the record is clear.
+trade-off: If the truncation note is wrong and Phases 2-7 did actually run fully, this becomes a seed-variance-only re-stitch — spend is wasted but there are no irreversible side effects (prior draft is overwritten but not unrecoverable). The truncation note + stale field together make the "phases were skipped" interpretation the correct prior.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0023 | 2026-05-26 | SLOW (reverses DEC-0022)
+
+question: New render-log evidence shows render-log-b01-c02.md (the current one) is the voice-exemplar-wired re-stitch that ran AFTER the budget-truncated pass memory.md line 2440 refers to. All phases completed. The basis for DEC-0022 (truncation note → meaningful completion pass) is factually wrong. Should the command proceed (Option 1: honor user's invocation as explicit re-run-for-variance), pull back and surface to user (Option 2), or clear the stale stitched_stale_since field only and not re-stitch (Option 3)?
+
+context: render-log-b01-c02.md records Phase 1 (3 scene-window forks, 47/47 bones rendered), Phases 2-6 (walked explicitly), Phase 7 (76-sentence sweep, 21 moves applied), Phase 8 (finalize + RECONCILE, 47 bones / 63 facets / 0 unrendered). Three render-log files exist for c02 (prior, revise, current) — the current one IS the fully-completed voice-exemplar-wired re-stitch, not the budget-truncated one. Memory.md line 2440 is stale (true of an older pass; not the current draft on disk). stitched_stale_since was never cleared after that re-stitch finalized. User input was "/and-stitch b01-c02:" with a trailing colon (typo-pattern). Cost of Option 1 with corrected picture: ~10 forks for seed-variance delta only on unchanged inputs.
+
+options:
+  Option 1: Proceed per DEC-0022 — treat invocation as explicit re-run-for-variance request
+  Option 2 (default): Pull back — flag to user that c02 is already fully stitched, ask if they meant something else (e.g. b01-c03)
+  Option 3: Clear stale stitched_stale_since only, surface state summary, do not re-stitch
+
+decision: Option 2 — pull back and surface to user. Do NOT run the re-stitch. Report the corrected state of c02 and ask if the intent was a different chapter (likely b01-c03).
+
+basis: reverses DEC-0022 on new factual evidence + goal:2 (cost discipline — ~10 forks for pure seed variance is not worth running without user intent confirmation) + methodology:3a (reversibility — re-stitching overwrites the current terminal draft; pulling back has zero irreversible cost)
+
+rationale: DEC-0022's single load-bearing basis was the truncation note at memory.md line 2440. The render-log evidence conclusively shows that note describes an earlier pass, not the current draft. With that basis removed, the corrected picture is: all phases ran, RECONCILE balanced, Chapter 2 is fresh-terminal. Running again is pure seed variance (~10 forks, draft overwrite, no new content). The trailing-colon typo pattern on the user's invocation reinforces that this may not be a deliberate re-run request. Option 2 costs zero model spend and surfaces the correct chapter state so the user can redirect to the actual next step (likely b01-c03, which has scene-*.draft.md files but no annotated draft and is plausibly the real target).
+
+trade-off: If the user did intend a variance re-run, Option 2 asks an extra confirmation question. That interruption cost is trivially lower than ~10 wasted forks plus overwriting a fresh-terminal draft the user may have wanted to preserve.
+
+reverses: DEC-0022
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
