@@ -1,5 +1,9 @@
 # and-shoot
 
+**Session-start protocol: read `RUNBOOK.md` first.** When the user says "write" / "continue" / "next" / anything implying forward motion through the pipeline, follow the runbook's 60-second orientation and trigger map. Do NOT ask the user what to do if the state files name a clear next phase. The runbook is operational; this file (and `schemas/`) is authoritative.
+
+---
+
 Autonomous fiction pipeline. The system authors creative fiction across a series → book → chapter → scene hierarchy with declared substance contracts at every level. Reviews fire inline at each authoring command; the only blocking human checkpoint is the series-level audit inside `/and-cast`.
 
 **Human role:** approve at the series-level audit checkpoint (Phase 5 of `/and-cast`). Book-, chapter-, and scene-level loops run agent-to-agent with no required human checkpoints unless an audit escalates past series scope.
