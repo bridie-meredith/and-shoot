@@ -2382,20 +2382,21 @@ books:
       - slug: b01c02
         status: bones-written
         bones_file: theater/bones/b01-c02.md
-        bones_count: 29
+        bones_count: 47           # revise --from-signals 2026-05-26 (was 29)
         substance_bone_gate_verdict: PASS
+        depth_pass_pending: true  # URI-STITCH-SIGNAL-CLUSTER MANDATORY 2026-05-25; cold_read PASS-WITH-CAVEATS triggered depth-pass via /and-write revise --from-signals; /and-stitch Phase 9 PASS will stamp depth_pass_resolved_at
         bones_review:
           reviewed_at: 2026-05-25T00:00:00Z
           report_path: active-project/staff/reviews/bones-b01c02-fidelity-2026-05-25.md
           verdict: PASS-WITH-NOTES
           bones_file_mtime_at_review: 1779765090
-          stale_since: null
+          stale_since: 2026-05-26T00:00:00Z   # bones revised 2026-05-26; /and-review bones b01c02 must re-fire before /and-facets re-runs
         substance_delta_measured:
           axes_moved:
-            relational_anchor_status: +1.0    # s02n07 (flat_id 17), target +1.0 EXACT
-            moral_legibility_to_self: +1.0    # s03n05 (flat_id 24), target +0.5; delivered +1.0 within ±1 tolerance (s03n05 magnitude raised from 0.5 to chunk_targets.bone floor 1.0 at fixer pass)
+            relational_anchor_status: +1.0    # s02n13 (flat_id 27), target +1.0 EXACT
+            moral_legibility_to_self: +1.0    # s03n11 (flat_id 40), target +0.5; delivered +1.0 within ±1 tolerance
           density_measured: 0.6-0.7           # planning target met across all 3 scenes
-          felt_verdict: SUBSTANCE-FELT-3-of-3 # audience trio all 9 cells (3 scenes × 3 personas)
+          felt_verdict: SUBSTANCE-FELT-3-of-3 # audience trio all 9 cells (3 scenes × 3 personas) — both original + revise rounds
         # /and-write b01c02 emit 2026-05-25.
         # Phase 2 constraint audit: 2 HARD (s03n05 magnitude-floor; s03n05 interiority+conjunction) + class-wide SOFT PP-modifier pattern — ALL RESOLVED at fixer pass.
         # Phase 3 dramatist: ACCEPT (7/7 PASS, 1 SOFT n07/n08 reorder in s02 APPLIED).
@@ -2423,10 +2424,25 @@ books:
         round_1_complete: true
         round_2_complete: true
         facets_status: audited-r1
+        facets_stale_since: 2026-05-26T00:00:00Z   # bones revised 29→47 + reordered; facets must re-author against new bones
         # /and-stitch b01-c02 emit 2026-05-26.
         # Phases 2-7 truncated under budget-constrained cascade (3 Phase 1 scene-window forks + Phase 8 finalize + Phase 9 cold-read; no per-sentence Q-sweep, no staging review, no prose-rationale-mute audit).
         # Phase 9 cold-read: PASS-WITH-CAVEATS (structural goal delivered; cold reader CONTINUE=no signals depth-of-quality concern; recommended /and-postop b01c02 OR /and-write revise --from-signals optional depth-pass).
+        #
+        # /and-write b01c02 revise --from-signals emit 2026-05-26 (depth-pass per cold-read recommendation).
+        # Phase 1 re-decompose: 29 → 47 bones; all 18 staging fix-queue items addressed; SOFT-WATCH-1 (recognition→holding→suppression triplet at flat_id 40/41/42) + SOFT-WATCH-2 (gap-as-feed-event at flat_id 28/29) honored at bones level.
+        # Phase 2 constraint audit: 7 FAULT-FORM (negation PP, time/place PPs, abstraction-as-object, unlicensed holds) — ALL RESOLVED at fixer pass.
+        # Phase 3 dramatist: ACCEPT (all 3 scenes ORDER-OK, no missing transitions, rising-shape PASS).
+        # Phase 4 audience trim: ACCEPT-with-flags (2 REVISE + 1 ACCEPT; 3 single-vote advisory DELETEs declined — s01n01/s03n02/s03n06 — none reached 2/3 threshold; all carry forward as prose-execution notes to /and-stitch).
+        # Phase 5 continuity: CONTINUITY-OK (0 faults; 1 pre-existing advisory: taylor state.md capability_axis stale — same as prior pass5, backfill before b01c03).
+        # Phase 6 bone-gate auditor: PASS (0 HARD, 2 SIGNAL — HELD-AXIS-NOT-WITNESSED on social_tether-prot-rise+political_register-prot accepted as dormancy-chapter pattern; REGISTER-AS-MANNERISM "takes the drain angle" ×3 at @3/@20/@30 accepted as architectural anchor — advisory to /and-stitch Phase 5 surface differentiation).
+        # Phase 6 audience bone-gate: SUBSTANCE-FELT 9/9 cells (cape-fic-reader, dark-fantasy-reader, worm-canon-pedant — all 3 scenes felt by all 3 personas).
+        # Phase 6.5 admin process-critic: dispatched (2 accepted SIGNALs trigger).
+        # Phase 7 emit: theater/bones/b01-c02.md (47 bones), theater/facets/scene-map-b01-c02.md (updated). Downstream artifacts stale-marked: bones_review, facets, draft.
+        # Revise draft archived: active-project/staff/showrunner/_drafts/b01c02-revise-draft-2026-05-26.md
+        # Reviewer reports: auditor write-b01-c02-pass2-revise.md + write-b01-c02-pass5-revise.md + write-b01-c02-bone-gate-revise.md; dramatist-b01c02-write-revise-2026-05-26.md; staging-b01-c02-2026-05-26.md.
         stitched: true
+        stitched_stale_since: 2026-05-26T00:00:00Z   # bones revised post-stitch; /and-facets + /and-stitch must re-run before draft is current
         draft_file: active-project/draft/b01-c02.md
         render_log: active-project/staff/stitcher/render-log-b01-c02.md
         cold_read:

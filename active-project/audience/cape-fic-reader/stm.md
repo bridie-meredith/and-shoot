@@ -133,3 +133,25 @@ REVISE-drop-s03n06-dark-junction-corner-unstaged-in-prior-scenes-marks-time-in-t
 
 ### One-sentence read
 The 47-bone decomposition is disciplined and the mechanism grounding is paid correctly — s01n01/n02 are the rule-cost-up-front this reader requires, the holding-bone at s03n12 earns its place as the gap before suppression costs are paid, and the pattern-accumulation staging at s02n04/n05 gives "the pattern came" its referent — but s03n06 is the one bone that coasts: a corner with no prior plant, no stall function, and no asymmetry load, staging itself in the accounting march right before the chapter's climax.
+
+## /and-write b01c02 revise Phase 6 bone-gate — 2026-05-26
+
+---
+reviewer: cape-fic-reader
+chapter: b01c02
+phase: write-bone-gate-revise
+date: 2026-05-26
+scenes_reviewed: [b01c02s01, b01c02s02, b01c02s03]
+---
+
+## scene b01c02s01
+verdict: SUBSTANCE-FELT (PASS)
+The five new bones (n01+n02 fly/beetle mechanism pair, n04 fever-cluster day-distinguishing beat, n09 four-hundred-body count-unit, n10 alley-back drops from feed) are all mechanism-specificity in the register this reader demands before accepting a capability deployment — rule cost named before it is tested, physical referent for the abstraction, suppression overhead grounded as a feed-zone dropout. None of them cross into procedural over-explanation: they answer "what does this cost" and "what does this mean physically," which is the two-question gate for capefic mechanism grounding. The opposing force (prohibition-as-real-line at n12) holds at crack-not-breach with the held moral_framework rationale confirmed across all fourteen bones. The expansion earns its length. No fatigue triggers; no established limits bypassed without cost.
+
+## scene b01c02s02
+verdict: SUBSTANCE-FELT (PASS)
+The axis-mover at n13 (insects file the ward-junction contact, relational_anchor_status +1.0) arrives through the correct tactical sequence: n04+n05 stage the pattern accumulating on consecutive days so "the pattern came" has a referent; n07 (crossing live) → n08 (alley admits) → n09 (yield) → n10 (function-sig) → n11 (connector-type) → n12 (turns from alley-mouth) → n13 (files) runs the encounter-classify-discipline beat order this reader wants before the axis-move lands. The filing is the permitted form of contact substituted for the refused form; n09 (yield) enacts the cost physically. The null cost_ledger_anchor is not a cheap-gain. Wren's negative space at n14+n15 is a perceptual event in the feed — attenuated signal returned, then insects reaching the boundary — not a retrospective label; SOFT-WATCH-2 honored in the form this reader requires (the gap is what the physical actors encounter, not what Taylor reasons about). Does the anchor feel like ANCHOR-opening, not indexing? Yes: the discipline of not-approaching, enacted across multiple days and physically grounded in n12, is the structural weight that makes the filing read as relational-accounting-starts, not observation-logged.
+
+## scene b01c02s03
+verdict: SUBSTANCE-FELT (PASS)
+The three-bone decomposition (n11 stall / n12 holds breath / n13 draws line) does not stretch the moment — it earns it. n09 (accounting reaches ward-junction entry) + n10 (ward-junction corner returns junction-lane void) give the stall its causal anchor so the axis-mover at n11 arrives through the specific thing it arrives through, not as a standalone interior event. n12 (holds the breath) is the gap that makes suppression read as discipline rather than reflex; without it, recognition-instantly-crushed collapses the stakes. n14 (closes against drain angle) gives the suppression a physical correlate — the mechanism fires in the world, not only in the accounting. The map-running corners (n05 fever-cluster, n06 dark-junction, n10 ward-junction void) give the forty-three its perceptual weight before n07 returns the aggregate. My Phase 4 DELETE proposal on s03n06 (dark-junction corner, no prior plant) stands as a prose-execution note — the bone has no asymmetry load of its own — but it does not block SUBSTANCE-FELT: the accounting march is the plot in s03, not a detour from it, and the dark-junction is in the coverage map per the chunk; it is a registered corner staging the map's completeness, which is the load that makes the ward-junction stall land with weight. The moral_legibility_to_self +1.0 magnitude (above the 0.5 target, within ±1 tolerance confirmed at original bone-gate) is earned from the full sequence: the suppression is labor (n13+n14+n15+n16+n17), not instantaneous. Opposing force (recognition of surveillance architecture arriving one beat before suppression fires) is present and physically grounded. SUBSTANCE-FELT.
