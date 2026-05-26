@@ -174,3 +174,16 @@ notes:
   - s03: crack-and-suppress lands as two structurally separate events; the suppression is enacted through physical habit (prohibition-line gesture) not mood; n07-n09 ledger-closing sequence makes suppression read as work; chapter closes on exhale (body's verdict), not insight; accumulated unease without catharsis
   - no walkout triggers fired; world-texture confirmed throughout; setting exists independent of Taylor's attention
   - soft carries: none new; b01c01 stitch-domain watches carry forward unchanged
+
+---
+
+## /and-write b01c02 revise Phase 4 trim — 2026-05-26
+
+### File-level verdict
+REVISE-prologue-mechanism-double-bone-thins-the-feed-as-dread
+
+### Per-bone deletion proposals
+- s01n01: DELETE (two mechanism-naming bones before the chapter opens — flies-return-heat then beetles-return-thresholds — convert the feed from dread-as-labor to procedure-as-manual; n01 is the weaker of the pair: flies returning heat is generic warmth; beetles running thresholds is specific and Worm-grounded; n01 can be dropped without orphaning anything — n02 carries the substrate, n03 opens the chapter, n04 drives the scene; deleting n01 leaves the prologue-mechanism in one focused beat instead of two ambient ones; the feed should arrive as a thing already in use, not a thing being explained)
+
+### One-sentence read
+The moral architecture holds — the suppression costs, the world's physics run independent of Taylor's attention, the crack is sealed under the entry and not forgiven — but the chapter front-loads its mechanism in a pair of bones where one will do, and this reader's patience runs shorter for manuals than for dread.

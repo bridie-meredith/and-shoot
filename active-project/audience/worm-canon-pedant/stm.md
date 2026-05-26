@@ -210,3 +210,22 @@ notes:
   - s03: crack-and-suppress: suppression is willful (behavioral gesture) not dissociative; consistent with b01c12 pattern; off-ledger status for the recognition is canonical (ledger opens on decisions, not recognitions); three-entry closing procedure is mechanically honest and makes the cost-bearer's filing indistinguishable from ordinary ward data at the accounting level — which is the architecture's problem in the long run
   - no flags fired; no lore-leaks; no fence violations; soft carry from b01c01 Phase 6 (s02n07+n08 directionality watch to stitch) carries forward unchanged
   - b01c07 prose-burden soft finding carries forward to b01c07 /and-write
+
+---
+
+## /and-write b01c02 revise Phase 4 trim — 2026-05-26
+
+### File-level verdict
+ACCEPT
+
+### Per-bone deletion proposals
+- s03n02: DELETE (procedural placeholder — "the insects return from the lane-mouth sweep" names a generic sweep return with no specific content; the seam between s02 and s03 is adequately marked by s03n03 alone, which enacts the time-change as a physical actor doing real perceptual work; s03n02 carries no axis-held rationale that s03n03 or s03n04 does not already cover; weakest SVO in the file)
+
+### Earth-Bet noun-fence check
+PASS — all 47 SVOs use functional descriptive language ("the insects," "the feed," "the ward-junction," "threshold-stones," "compound eyes"); no parahuman jargon anywhere in the bone set; no Khepri, no parahuman, no shard, no Manton, no trigger-event; inner-monologue-rare cap not tested at bone level (no Gold Morning reference in this chapter's bones); fence clean
+
+### Khepri-architecture surfacing read
+The chapter's Khepri-residue surface is carried by three sequences: the filing-without-contact (s02n12 + s02n13), the gap-held-as-feed-event (s02n14 + s02n15), and the three-bone recognition-and-suppress (s03n11 + s03n12 + s03n13). All three land as canon-Taylor psychology. The filing-without-contact is enacted as a body-turn rather than as a named ethical stance — Taylor physically turns from the alley-mouth, which is correct: her prohibition is behavioral discipline, not intellectual position. The gap as attenuated signal (insects return the junction-lane attenuation; insects reach the junction-lane edge) encodes Wren's absence as what the physical actors do, not as a labeled void — this is mechanically precise and reads as Taylor's genuine perceptual mode. The three-bone suppression sequence honors the canonical beat structure: recognition does not instantaneously close in Taylor; she holds it (breath-hold, s03n12) before the accounting fires. The second draws-the-line (s03n13) echoing s01n12 is the Khepri-rhyme completing: the same prohibition gesture that pre-priced the act is the one that seals the recognition — architecture and accounting are the same gesture, which is the chapter's whole argument. No residue handwaved; no architecture under-cooked.
+
+### One-sentence read
+The 47-bone revision earns ACCEPT: mechanism grounding is calibrated to be useful for the canon-naive reader without patronizing the canon-familiar one, the Khepri-architecture surfaces through enacted behavior rather than labeled psychology, and the one deletion candidate (s03n02) is a thin placeholder rather than a carrying bone.

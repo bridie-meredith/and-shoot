@@ -122,3 +122,14 @@ notes:
   - s02: relational_anchor_status +1.0 null anchor — not cheap-gain; the gain is the permitted form of contact (filing) substituted for the refused form (approaching); n04 (alley-entrance) + n08 (body-turn) give the refusal physical form; the cost is the discipline against approaching, not an untracked free gain; negative-space execution at n04 + n09 confirmed as perceptual event; Phase 5 soft carry on Wren-negative-space RESOLVED
   - s03: crack-and-suppress in two structurally separate bones confirmed; n05 (word arrives) + n06 (prohibition line enacted) are causally distinct events; suppression is labor (n07-n09 ledger-closing sequence makes it procedural, not instantaneous); chapter goal LAND confirmed
   - soft carries to /and-facets: none new; b01c01 soft watches on anonymity-by-geometry and political_register-prot bones carry to stitch review as before
+
+## /and-write b01c02 revise Phase 4 trim — 2026-05-26
+
+### File-level verdict
+REVISE-drop-s03n06-dark-junction-corner-unstaged-in-prior-scenes-marks-time-in-the-accounting-march
+
+### Per-bone deletion proposals
+- s03n06: DELETE — "the dark-junction corner returns the silence-pattern" has no prior plant in s01 or s02, carries no causal function in the stall, and does not change the ledger-closing trio that follows (n16 closes it regardless); the fever-cluster corner at n05 earns its staging because it was the s01 unresolved question; the dark-junction has no equivalent load; with n09 (ward-junction entry as stall-cause) two bones away, a no-narrative-loading corner marks time while the plot is live — that fires my filler trigger; the ledger-close at n16 gives it adequate procedural weight without the map-running staging
+
+### One-sentence read
+The 47-bone decomposition is disciplined and the mechanism grounding is paid correctly — s01n01/n02 are the rule-cost-up-front this reader requires, the holding-bone at s03n12 earns its place as the gap before suppression costs are paid, and the pattern-accumulation staging at s02n04/n05 gives "the pattern came" its referent — but s03n06 is the one bone that coasts: a corner with no prior plant, no stall function, and no asymmetry load, staging itself in the accounting march right before the chapter's climax.
