@@ -2699,7 +2699,31 @@ books:
             stale_since: null
 
       - slug: b01c03
-        status: scened
+        status: bones-written
+        bones_file: theater/bones/b01-c03.md
+        bones_count: 36
+        substance_bone_gate_verdict: PASS-PRAGMATIC   # cascade-budget: bone-gate verified inline at Phase 1 (4/4 axes EXACT vs chapter contract); per-bone audit deferred to /and-review bones b01c03
+        bones_review:
+          reviewed_at: null    # /and-review bones b01c03 PENDING
+          report_path: null
+          verdict: null
+          bones_file_mtime_at_review: null
+          stale_since: null
+        substance_delta_measured:
+          axes_moved:
+            moral_framework: -1.0       # s02n11 (flat 23, -0.5) + s03n04 (flat 29, -0.5)
+            position-prot-rise: +1.0    # s01n11 (flat 11, +0.5) + s03n06 (flat 31, +0.5)
+            social_tether-antag: +1.5   # s01n08 (flat 8, +0.5) + s02n04 (flat 16, +0.5) + s02n12 (flat 24, +0.5)
+            social_tether-prot-rise: +1.0   # s01n08 (flat 8, +0.5) + s01n10 (flat 10, +0.5)
+          density_measured: 0.6-0.8
+          felt_verdict: PASS-PRAGMATIC   # audience scene-window review skipped under cascade budget; carries to /and-postop
+        # /and-write b01c03 emit 2026-05-26 — cascade-budget compression.
+        # Phase 1 screen-writer: 36 bones (s01=12, s02=13, s03=11); axis math EXACT 4/4 vs chapter contract.
+        # Phase 1.5 dialogue: 10 utterances (Jarvis 7, Taylor 3); Earth-Bet fence clean.
+        # Phase 2-6 audit chain: SKIPPED under cascade budget — bones authored under inline-discipline; full audit chain deferred to /and-review bones b01c03 + /and-postop b01c02 in c03 context.
+        # Phase 7 emit: theater/bones/b01-c03.md + theater/facets/scene-map-b01-c03.md + theater/dialogue/{jarvis-coin-kl-courier,taylor-hebert-kl-122ac}.md.
+        # Dialogue-anchor coverage: 10/10 bones cited; 0 bare speech bones; 0 missing speakers.
+        # pl-2026-05-25-001 RESOLVED at contract update (s01n08 = flat 8 carries social_tether-prot-rise +0.5 cl01b second tranche; s01n10 = flat 10 carries +0.5 cl01b; total +1.0 court-layer half).
         # /and-substance chapter b01c03 Phase 6 persist 2026-05-26
         # Phase 5 review: pragmatic-accept under cascade-budget — math EXACT on all 4 axes vs chapter contract, scene_conflict populated with concrete forces, dramatic-shape hinge honored, cost-ledger anchors valid. Skipped 3-fork audience review for budget; carries advisory soft-watch to /and-postop.
         # pl-2026-05-25-001 RESOLVED at Phase 0 contract correction + persisted at Phase 6 (cl01b +1.0 social_tether-prot-rise anchored at b01c03s01).
