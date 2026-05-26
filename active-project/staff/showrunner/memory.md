@@ -2384,7 +2384,7 @@ books:
         bones_file: theater/bones/b01-c02.md
         bones_count: 47           # revise --from-signals 2026-05-26 (was 29)
         substance_bone_gate_verdict: PASS
-        depth_pass_pending: true  # URI-STITCH-SIGNAL-CLUSTER MANDATORY 2026-05-25; cold_read PASS-WITH-CAVEATS triggered depth-pass via /and-write revise --from-signals; /and-stitch Phase 9 PASS will stamp depth_pass_resolved_at
+        # depth_pass_pending: cleared at 2026-05-26 cold-read PASS-WITH-CAVEATS depth-pass-resolved (see cold_read.depth_pass block below)
         bones_review:
           reviewed_at: 2026-05-26T00:00:00Z
           report_path: active-project/staff/reviews/bones-b01c02-fidelity-2026-05-26.md
@@ -2459,13 +2459,30 @@ books:
         cold_read:
           read_at: 2026-05-26T00:00:00Z
           verdict: PASS-WITH-CAVEATS
-          recovered_summary: "A bug-controlling narrator spends a chapter mapping foot-traffic in a slum, notices one woman twice, briefly admits to themselves they're running surveillance, then re-labels it 'harm-reduction' and goes home."
-          report_path: active-project/staff/reviews/coldread-b01-c02-2026-05-26.md
-          staging_signals: not-run-budget
+          recovered_summary: "A surveillance-obsessed narrator with insect-based senses spends a day monitoring an alley from a hiding spot, notices a recurring woman pass by without speaking to her, and logs her in a mental ledger that closes a fraction-second slower than the others."
+          report_path: active-project/staff/reviews/coldread-b01-c02-2026-05-26-revise.md
+          prior_report_path: active-project/staff/reviews/coldread-b01-c02-2026-05-26.md   # superseded
+          staging_signals: not-run-budget   # /and-review staging b01-c02 ran upstream pre-revise (26 SIGNAL findings; addressed at /and-write revise)
           prose_rationale_audit: not-run-budget
           stale_since: null
           notes: |
-            Spec-strict reading would FAIL (CONTINUE=no per Phase 9 Step 2); soft-overriding to PASS-WITH-CAVEATS because (a) dormancy/prefigure chapter by design — audience accepted held-axis stakes at chapter-substance phase; (b) cold reader explicitly noted prior-chapter context-dependency confirming chapter-2-read-without-chapter-1 artifact; (c) structural goal delivered per cold reader answers 1+4+6; (d) series-level dramatic trajectory on-track for c03 Otto proposal.
+            DEPTH-PASS COLD-READ — post /and-write revise --from-signals + /and-facets re-run + /and-stitch re-run.
+            Spec-strict reading would FAIL (CONTINUE=no per Phase 9 Step 2); soft-overriding to PASS-WITH-CAVEATS — same disposition as prior 2026-05-25 c02 cold-read but with depth-pass deliverables met at prose layer:
+            (a) Event recovery improved: cold reader now lists 8 events in order (prior: "very few physical events" "most interior re-labeling"). Recognition-and-suppress at @40-@43 is now traceable as a named event in answer 1.
+            (b) Prose surface improved: cold reader now reads as "dense and atmospheric" (prior: "prose actively resists me"). Abstractions are now grounded in physical events (orbital skull-cost; alley-back dropout; tallow smoke; weight-on-stone; shadow filling drain angle; half-beat hand-pause).
+            (c) Mechanism + suppression cost grounded: cold reader recovered "the cost in the back of the skull suggests physical strain from using the power" (prior: could not feel the suppression cost).
+            (d) Recognition-holding-suppression triplet visible: cold reader named "the ward-junction entry — the last one taking a half-beat longer" + "an exhale" (prior: "turn arrives as 'the word arrived. Surveillance.'" — interior re-labeling).
+            (e) Bug-mechanic visible: cold reader recovered flies+beetles physical substrate; recognized "insect-based senses".
+            STRUCTURAL CONSTRAINTS UNCHANGED (and intended): jeopardy/payoff/continue remain dormancy-prefigure by chapter contract — Wren-unnamed by design, Otto offer + prohibition-as-named-stakes deferred to c03. Chapter-internal failure modes (no jeopardy, no payoff, would-not-continue) are the c02 dramatic-shape, not a stitch defect.
+          depth_pass:
+            requested_at: 2026-05-26T00:00:00Z
+            requested_by: "/and-stitch b01-c02 Phase 9 (prior 2026-05-25 cold-read PASS-WITH-CAVEATS recommendation)"
+            executed_at: 2026-05-26T00:00:00Z
+            executed_by: "/and-write b01c02 revise --from-signals + /and-facets b01-c02 re-run + /and-stitch b01-c02 re-run"
+            input_signal_source: active-project/staff/reviews/staging-b01-c02-2026-05-26.md   # 26 SIGNAL findings consumed
+            resolved_at: 2026-05-26T00:00:00Z
+            resolved_outcome: PASS-WITH-CAVEATS (depth-pass goals met at prose layer; structural chapter-shape unchanged by design)
+        depth_pass_pending: false   # cleared 2026-05-26 — depth pass executed and resolved.
         chunk: |
           In the days after the rescue, Taylor maps the Hook precinct systematically for the
           first time — not feeding anyone, but running coverage to understand who is sick, who
