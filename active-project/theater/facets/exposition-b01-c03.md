@@ -21,7 +21,7 @@ prior-episode: b01-c02 (register-seeded: flea-bottom / the-hook / stitch-house-w
 
 # Scene-open-orient scopes (conditional fire — see fire-audit)
 
-5 @13 scene-open-orient-B: "After the morning crowd," | scope: scene-open-orient | renders-as: scene-bridge | sources: scene b01c03s01.chunk (morning-market close at @12), scene b01c03s02.chunk (cooper's yard at third bell, no foot traffic past the third bell), scene-map.scene-B time-band: cooper-yard-third-bell | licensed-by: all-personas-need-the-market-to-yard-transit-marked (the scene-A → scene-B boundary is a time-and-place disjuncture from the morning-market foot-traffic at @12 to the post-third-bell quiet of the cooper's yard at @13; the bone-body at @13 carries "third bell" as a clock-marker but does not carry Taylor's transit FROM the market, which is what the scene-A close at @12 establishes; the bridge supplies the disjuncture in the smallest unit possible — five words; without it, scene-B opens as a hard cut from market-stall to empty-yard with no register that Taylor walked there) | fence-audit: scope = scene-open-orient → EXEMPT per § Dialogue-adjacent fold-in fence § Exclusion (scene-bridge renders before the first bone of the scene; not bone-adjacent rendering)
+# DELETED exposition:5 - @13 - scene-open-orient (Phase 5 fault-001 fire-rule clause-b: loc-state:2 covers the scene-B orientation)
 
 # First-mention scopes — Otto / Rhaenys's Hill / Sera (dialogue-cluster; all fold via post-bone-clause to satisfy fence)
 
@@ -34,7 +34,7 @@ prior-episode: b01-c02 (register-seeded: flea-bottom / the-hook / stitch-house-w
 # Fire-audit per scene-boundary (b01c03 scene-map: scene-A @1-@12 | scene-B @13-@25 | scene-C @26-@36)
 
 #   @1   chapter-open boundary | prior-episode-bridge + episode-open-context cover orientation — REFUSES scene-open-orient (preamble carries the chapter-open shift; the morning-market context establishes the routine before the body begins).
-#   @13  scene-A → scene-B time-skip ✓ (proto-line blank between @12 and @13; scene-A closes with Taylor moving past Jarvis's stall position at @12, scene-B opens with the cooper's yard at the third bell — explicit clock-shift and place-shift). | loc-state at @13: NOT FIRED (c03 location-state file not yet authored at this writing pass; if a future loc-state pass fires at @13 with explicit late-morning/third-bell + yard-environment content, this scene-orient becomes a candidate for clause-b retirement at R2 graph-aware review). | NI in first 2 anchors of scene-B (@13, @14): NOT FIRED (interest-narrator-b01-c03 file's first scene-B entry is NI:4 @17; @13 and @14 both NI-silent). | FIRES (the market-to-yard transit needs the temporal marker; "After the morning crowd," supplies the disjuncture in 5 words without claiming a clock-precision the bone-body at @13 already specifies as "third bell").
+#   @13  scene-A → scene-B time-skip. | loc-state at @13: FIRED — loc-state:2 anchored @13, establishing cooper's yard environment (confirmed post-authoring). | Per fire-rule clause (b): loc-state covers the scene-B orientation → REFUSES. | scene-open-orient entry deleted at Phase 5 fault-001 (fixer 2026-05-26).
 #   @26  scene-B → scene-C boundary | continuous time within scene-frame; the proto-line blank between @25 and @26 marks a semantic phase (proposal-landed → Taylor's response phase) NOT a temporal jump (Jarvis is still in the yard; @26 explicitly: "the cooper's yard holds the same workers at the near shed, the same boy at the hoop-stack, the same tallow-damp"). | Clause (a) discontinuous-time-skip: FAILS (no time-skip; bone-body explicitly carries the same-as-before continuity). | REFUSES per fire-rule clause (a). The lens facets (location-state continuity, the bone's own "same" repetition) carry; an exposition scene-bridge here would manufacture a discontinuity the scene-map does not declare.
 # Total: 1 fire (@13), 2 refusals (@1 N/A chapter-open; @26 clause-a no-time-skip).
 
@@ -68,17 +68,17 @@ prior-episode: b01-c02 (register-seeded: flea-bottom / the-hook / stitch-house-w
 #   - DROP candidate-a: a first-mention-term entry for "Small Council" at @16 or @18 — the dialogue at @16 names it with semantic context ("channels the Small Council does not audit") and again at @18 ("weeks the Small Council sits"). Worm-canon-pedant knows it; cape-fic and dark-fantasy resolve from context (king's advisory body whose meetings have political weight). The per-anchor cap also constrains: @16 already carries first-mention-term Otto, and "no two entries of same scope on same anchor" forbids a second first-mention-term there; @18 already carries first-mention-place Rhaenys's-Hill (different scope-kind, which would be a per-anchor-cap question — but the schema's permitted-pair list is episode-open + scene-orient, scene-orient + first-mention, episode-open + first-mention — first-mention + first-mention is NOT a permitted pair). On both anchor-placement options the schema fails. The dialogue-carries gap-claim then closes the cull: drop entirely.
 #   - DROP candidate-b: a first-mention-term entry for "Hand of the King" — the gloss for Otto at @16 (exposition:6) folds "Hand of the King" into its body as the role Otto held until 120 AC ("had been Hand of the King — the chief office under the throne, the manager of the realm's business when the king's attention was elsewhere"). Embedding the role-gloss in Otto's character entry is more compact than a separate term-entry and avoids the per-anchor-cap conflict at @16.
 #   - DROP candidate-c: a first-mention-place entry for "cooper's yard" / a first-mention-object entry for "cooper" — the bone-body at @13 grounds the cooper context ("two workers at the near shed and a boy stacking hoops at the far end"); hoops + workers in a yard reads as cooperage even for cape-fic and worm-canon. The medieval-craft-term carry from context is sufficient; a dedicated gloss would be wallpaper.
-# Final entry count: 8 (preserved 1 prior-episode-bridge + 1 episode-open-context + 3 first-mention-character/place at @3/@13/@20 + 2 first-mention-term/place at @16/@18 + 1 scene-open-orient at @13).
+# Final entry count: 7 (preserved 1 prior-episode-bridge + 1 episode-open-context + 3 first-mention-character/place at @3/@13/@20 + 2 first-mention-term/place at @16/@18 + 0 scene-open-orient; scene-open-orient deleted at Phase 5 fault-001 — fire-rule clause-b: loc-state:2 covers @13 orientation).
 # Cull-pass converged in single attempt; no entries borderline-retained.
 
 # Sparsity computation
 
-# 8 entries / 36 proto-lines ≈ 22% — above the 1-5% rubric band.
-# The bones-only chapter shape under URI-SUBSTANCE-OVERHAUL still binds at the per-episode caps rather than the sparsity ratio (b01c01 R2 + b01c02 R2 precedent). The 8 entries break down as:
+# 7 entries / 36 proto-lines ≈ 19% — above the 1-5% rubric band.
+# The bones-only chapter shape under URI-SUBSTANCE-OVERHAUL still binds at the per-episode caps rather than the sparsity ratio (b01c01 R2 + b01c02 R2 precedent). The 7 entries break down as:
 #   - 1 prior-episode-bridge (=cap 1)
 #   - 1 episode-open-context (under cap 3)
 #   - 5 first-mention (under cap 12; Jarvis + Eel Alley + Otto + Rhaenys's Hill + Sera)
-#   - 1 scene-open-orient (1/2 scene-boundaries fire; cap-1-per-scene preserved; @26 refused per fire-rule clause-a)
+#   - 0 scene-open-orient (deleted at Phase 5 fault-001; fire-rule clause-b: loc-state:2 covers @13 orientation)
 # All under per-episode caps. The sparsity overshoot is driven by the chapter's structural load: it introduces THREE new on-stage or named-via-dialogue figures (Jarvis on-stage; Otto + Sera via dialogue), TWO new places (Eel Alley + Rhaenys's Hill), and ONE new chapter-frame (the proposal). On a 36-anchor bones-only chapter, this cluster cannot fit the 1-5% band without leaving gap-bearing first-mentions ungrounded.
 
 # Voice audit

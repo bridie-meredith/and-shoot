@@ -8,7 +8,8 @@ locations: oc-stitch-house-lane
 prior_episode: b01c02
 aggregate_range: 1-36
 
-# exposition annotations (anchor-attached): @0 [exposition:1, :2] (preamble) | @3 [exposition:3] | @13 [exposition:4] [exposition:5] | @16 [exposition:6] | @18 [exposition:7] | @20 [exposition:8]
+# exposition annotations (anchor-attached): @0 [exposition:1, :2] (preamble) | @3 [exposition:3] | @13 [exposition:4] | @16 [exposition:6] | @18 [exposition:7] | @20 [exposition:8]
+# exposition:5 DELETED at Phase 5 fault-001 — fire-rule clause-b: loc-state:2 fires at @13
 
 1 the morning market fills the Hook with shoulder-to-shoulder foot-traffic and the smell of tallow-wax and fish-salt
 2 taylor-hebert-kl-122ac moves through the market stalls without stopping, reading foot-traffic density through the insect-feed
@@ -23,7 +24,7 @@ aggregate_range: 1-36
 11 taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [taylor-hebert-kl-122ac:1]
 12 taylor-hebert-kl-122ac moves past jarvis-coin-kl-courier's stall position without looking back, insect-feed tracking his departure route
 
-13 the cooper's yard off Eel Alley holds two workers at the near shed and a boy stacking hoops at the far end — no foot traffic past the third bell, no clear sightline from the lane-mouth [exposition:4] [exposition:5]
+13 the cooper's yard off Eel Alley holds two workers at the near shed and a boy stacking hoops at the far end — no foot traffic past the third bell, no clear sightline from the lane-mouth [exposition:4]
 14 taylor-hebert-kl-122ac reaches the yard before jarvis-coin-kl-courier, back to the shed wall, clear line to the yard-mouth, feed running on the two workers and the boy
 15 jarvis-coin-kl-courier enters the yard at the third bell with no document, no letter, no seal, and takes a position three steps from the yard-mouth
 16 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:4] [exposition:6]
