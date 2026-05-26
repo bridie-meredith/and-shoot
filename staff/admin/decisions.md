@@ -471,6 +471,24 @@ methodology-update-proposed: no
 
 ---
 
+## DEC-0021 | 2026-05-26 | SLOW (process-critic)
+
+question: Process-critic dispatch — Phase 9 cold-read FAIL on b01-c02 re-stitch (voice-exemplar-wired run). Two candidate process changes: (a) modify Phase 9 cold-read protocol to account for non-opening chapter context; (b) add exemplar-tournament criteria check (continue-rate) before re-stitch. Should admin propose a process change?
+context: Second stitch of b01-c02. Bones unchanged. Only delta: per-chapter voice-exemplar override (Septon-Halvard cadence productionized from ablation winner). Prior stitch (un-primed) shipped PASS-WITH-CAVEATS. This stitch FAIL'd on CONTINUE=no. Cold reader correctly recovered all central events and identified moral jeopardy; the FAIL is reading-experience opacity. Two mutually exclusive interpretations: (1) voice-prime regression — interior/ritual register of Septon-Halvard compounded the chapter's world-grounding deficit for a cold reader; (2) protocol limit — no-c01-context cold-read unfairly penalizes a non-opening chapter whose confusions would be resolved by c01 in normal reading. Cold-read report explicitly flags both interpretations and recommends against auto-routing to /and-write revise. recurrence_count = 1 (first cold-read FAIL on a chapter where bones were sound).
+options: (a) PROCESS-CHANGE-PROPOSED on Phase 9 cold-read protocol — add non-opening chapter context assumption; (b) PROCESS-CHANGE-PROPOSED on voice-exemplar selection — add continue-rate as a criterion alongside register-fit; (c) OK — first occurrence, non-catastrophic, wait for recurrence
+
+decision: OK — no process change proposed.
+basis: methodology:process-critic-recurrence-discipline (first occurrence of a non-catastrophic SIGNAL → return OK, wait) + content-vs-process discrimination
+rationale: Both candidate process questions (protocol scope for non-opening chapters; exemplar selection criteria) are legitimate candidate process changes. But neither reaches the threshold for a first-occurrence proposal. The failure is non-catastrophic: bones are sound, prior stitch passed, chapter can be re-stitched trivially with a different voice prime, no irreversible state, no multi-chapter blast radius. Recurrence discipline is clear — wait for recurrence. Proposal on a single instance would prematurely promote what may be an operator choice (wrong exemplar selected for this chapter) into a spec change. Additionally: interpretation 1 (voice-prime regression) is likely the primary driver given the PASS-WITH-CAVEATS under no prime. If so, the fix is to revert the per-chapter override — a content/stitch-config decision, not a process failure. Interpretation 2 (protocol limit) is real but the protocol change it implies (context-aware cold-read for non-opening chapters) would make Phase 9 a different gate, not a stricter one; that is a principal-level architectural decision best deferred until the pattern recurs. If a second chapter FAILs cold-read under similar circumstances (bones sound, prior-chapter context explains reader confusion), admin will propose the non-opening chapter qualification at that point.
+trade-off: Not proposing means the non-opening-chapter protocol gap is not formally tracked. Mitigated by: this decision log entry serves as the first-occurrence marker; if recurrence happens the evidence trail is here; PROP candidates are ready to be drafted (both are well-understood process changes that can be authored quickly on second occurrence).
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0015 | 2026-05-26 | SLOW (process-critic amendment)
 
 question: Amend DEC-0013 / PROP-0003: cold-read experiment shows matched exemplar passage (v16) beats persona-description prime (v14), and mismatched exemplar (v17) leaks surface conventions. Asset format must change from persona-card description section to standalone exemplar passage file.
