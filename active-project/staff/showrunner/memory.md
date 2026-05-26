@@ -2745,6 +2745,25 @@ books:
         audience_gate_complete: false   # skipped under cascade-budget
         audience_gate_cycles: 0
         bidirectional_loop: not-validated   # R2 + audience-gate skipped under cascade-budget
+        # /and-stitch b01-c03 emit 2026-05-26 — cascade-budget compression.
+        # 3 Phase 1 scene-window forks; Phase 8 finalize; Phase 9 cold-read terminal gate.
+        # Phase 9 cold-read: PASS (CONTINUE=yes; jeopardy textually grounded — Sera Hightower as named refusal-cost; causality clean; deferral earned).
+        # Reader-gaps noted: POV name/nationality + bug-feed nature rely on prior-chapter setup; Westeros/modern register clash (Small Council + the feed) suggests crossover premise but not confirmed in-chapter — consistent with c02 dormancy + c01 establishment.
+        stitched: true
+        draft_file: active-project/draft/b01-c03.md
+        render_log: active-project/staff/stitcher/render-log-b01-c03.md
+        cold_read:
+          read_at: 2026-05-26T00:00:00Z
+          verdict: PASS
+          recovered_summary: "POV defers one day on courier Jarvis Coin's proposal that Otto Hightower will protect Sera Hightower's birth-question from being raised in the Small Council in exchange for ward-traffic intelligence."
+          report_path: active-project/staff/reviews/coldread-b01-c03-2026-05-26.md
+          staging_signals: not-run-budget
+          prose_rationale_audit: not-run-budget
+          stale_since: null
+          signal_clusters: []
+          notes: |
+            Chapter ships PASS (not PASS-WITH-CAVEATS like c02): CONTINUE=yes; jeopardy textually grounded (surveillance demonstrated as threat; Sera named as refusal-cost); causality clean; payoff is earned deferral (held-breath, not turn — but the hinge IS the deferral by design).
+            The hinge dramatic-shape delivers what c02's dormancy-shape couldn't: a reader-engagement-yes verdict. The two-chapter pair now reads as the c02 surveillance-recognized-and-suppressed + c03 prohibition-engaged-as-variable sequence per series spine.
         # /and-substance chapter b01c03 Phase 6 persist 2026-05-26
         # Phase 5 review: pragmatic-accept under cascade-budget — math EXACT on all 4 axes vs chapter contract, scene_conflict populated with concrete forces, dramatic-shape hinge honored, cost-ledger anchors valid. Skipped 3-fork audience review for budget; carries advisory soft-watch to /and-postop.
         # pl-2026-05-25-001 RESOLVED at Phase 0 contract correction + persisted at Phase 6 (cl01b +1.0 social_tether-prot-rise anchored at b01c03s01).
