@@ -1,63 +1,55 @@
+---
 reviewer: worm-canon-pedant
 facet: exposition
-episode: b01c01
-cycle: 1
-date: 2026-05-25
-verdict: accept
-
+episode: b01c02
+phase: 5b-adversarial
+date: 2026-05-26
+verdict: ACCEPT
+auditor-overlap: fault-008 (TASTE-FLAG — exposition:4 @15 pronoun-absent bridge; carried to 5b as worm-canon-pedant attack candidate)
 ---
 
-## Per-entry readings
+# exposition — adversarial read (b01c02, 47-bone)
 
-[exposition:1] @0 — preamble
-ACCEPT. "Won my last world by becoming a hive of bugs." Function-description of Gold Morning and the Khepri-state, no proper noun used. That is correct per the Earth-Bet noun-fence substitution register. The series does not need to invoke Khepri by name to establish the post-Gold-Morning frame for readers who know what happened; and for readers who don't, the function-form tells them everything load-bearing. "The first thing I decided was that nothing I had done at the end would be done here" — this is the correct characterization of post-Gold-Morning Taylor. The defining feature of the Khepri-state was total override of human will at mass scale. The fact that Taylor's first explicit rule is the anti-override prohibition is canonically coherent: this is exactly what she would be haunted by. The year-anchor ("the year before the year before the year the dragons would dance") is not how Taylor would know the date, but it's a preamble framing device — I'll accept the narrator-side temporal orientation as functional rather than in-character.
+Four entries: two @0 preambles, one em-dash-fold first-mention, one scene-open-orient. The auditor explicitly routed fault-008 to this review.
 
-[exposition:2] @0 — "Three weeks in this ward..."
-ACCEPT. The suppression-cost register is the critical thing here. "I have a count. I hold the count at its edge by the cost of holding it, every hour I am awake." Taylor post-Gold-Morning carrying range-residue that requires active suppression is canon-consistent: the override architecture does not simply turn off. The suppression is presented as continuous labor, not a passive state. Worm-canon-correct. The anonymity arrangement ("nobody here knows my name and I know nobody's name") is also consistent with Taylor's operational mode in the post-S9 arcs: she understood how contact-networks generate exposure risk.
+## Earth-Bet noun fence scan (full text)
 
-[exposition:3] @0 — "I came here to be useful without taking control."
-ACCEPT. The rule. Canon-Taylor's arc culminated in the recognition that she had taken control in ways she could not fully account for. The explicit self-authored prohibition "to be useful without taking control" is the character's post-arc response: a self-binding rule, not a value, not a feeling. "The rule is older than anything in this city." That is the right register: the rule predates Westeros, it traveled with her from Earth-Bet, it is the thing that survived Khepri. The prohibition as "what I have left" is the correct emotional framing for Taylor's post-Khepri state — not hope, not peace, but a self-authored constraint.
+Prior-episode-bridge (exposition:1 @0): "The crowd had broken open around the stitch-maker's ward, and the hands had gone up before mine did. After that I went back to the drain angle and did not feed anyone for three weeks. I held the count at its edge by the cost of holding it. What I did instead was start to listen — at first because subsistence-reading is what survives in the Hook, and then because the listening had a shape I had begun to extend on purpose. The rule was the same rule. Reading was not directing. I had not crossed the line."
 
-[exposition:4] @1 — "the Hook — the lane-warren of Flea Bottom..."
-ACCEPT. I don't know Flea Bottom's sub-precinct structure in any useful granularity for Worm crossover purposes, and the gloss is correctly targeted. No canon issue here.
+Fence scan: "stitch-maker's ward" (clean — ward is Westerosi), "drain angle" (clean), "the count" (clean — functional descriptor), "subsistence-reading" (clean), "the Hook" (clean), "the rule" (clean), "Reading was not directing" (clean), "the line" (clean). No Earth-Bet proper nouns. CLEAN.
 
-[exposition:5] @1 — "what Flea Bottom called a ward..."
-ACCEPT. The dual-sense usage (precinct-ward vs. child-fostering-ward) is flagged in the facet file and tracked through the cite-index cross-reference. The cross-reference is mechanically present (exposition:5 lic-in=[exposition:8, exposition:9]). When the two senses appear in context I should not be confused because the child-fostering sense is defined here before either use in body prose. Clean.
+Episode-open-context (exposition:2 @0): "What I had built I did not yet have a name for. The flies and beetles told me where heat clustered and where foot-traffic knotted. I held a count of bodies in my head — who was sick, who was hungry, which alley junction emptied before dark and which one never did. I called it a coverage map when I was being plain with myself; I called it an accounting when I was not. The ledger was where it closed at end of day. The rule was that I read and did not direct. That was the line. The instrument was harm-reduction. That was how it stayed permitted."
 
-[exposition:6] @7 — fish-cart
-ACCEPT. No canon considerations. Correct orientation for the scene-2 opening image.
+Fence scan: "flies and beetles" (clean), "coverage map" (clean), "accounting" (clean), "ledger" (clean), "harm-reduction" (clean). The "reads not directs" prohibition restated in plain language. No parahuman jargon, no Earth-Bet proper nouns. CLEAN.
 
-[exposition:7] @18 — scene-bridge
-ACCEPT. The temporal bridge is load-bearing. "After the gap closed" — this is the right phrase for Taylor's cognition post-suppression-event: she tracks gaps (the moment of propagation) as accounting events. The phrasing is in her register. "The crowd came apart the way Flea Bottom crowds did" — Taylor has been here three weeks. She knows the crowd's dispersal pattern. Observation-as-habit, not inference. Canon-consistent with Taylor's sensory-mapping mode.
+Ward-junction gloss (exposition:3 @14): "the ward-junction — a corner in the Hook where three or four alleys gave onto one another under a single precinct-ward's reach" — clean; "the Hook" and "precinct-ward" are established Westerosi vocabulary.
 
-[exposition:8] @21 — "the Mudway man..."
-ACCEPT. Oswyn's function as the witch-label's first witness is established. The label-formation at @21 is the chapter's stakes-plant: a Flea Bottom elder who names patterns without explaining why he noticed has just categorized Taylor. This is not paranoia or superstition — it's thirty years of street-level epistemics. For worm-canon purposes: Taylor being legible as categorically unusual to a local observer three weeks in is canon-consistent with residue range and suppression-labor being visible to anyone paying attention at street level.
+Scene-open-orient (exposition:4 @15): "Days of it, and the pattern came." — five words; no proper nouns; clean.
 
-[exposition:9] @27 — "the stitch-maker's ward..."
-ACCEPT. Wren's introduction as cost-bearer is correctly handled: the gloss names her identity (stitch-maker's ward, Hook, eleven, watching-mode) without signaling her narrative function. I don't need to be told she will matter; the chapter's mechanics handle that. What I need is her identity established so that Taylor's final-image registration ("the ward's face had found hers") reads as a specific-person recognition, not an unnamed-child encounter. The "watched people the same way" detail is the right observation-mode pairing: Taylor reads bodies, Wren watches people before she acts. Structural resonance without authorial hand-waving.
+Earth-Bet fence: CLEAN across all four entries.
 
----
+## Voice-fidelity test — fault-008 (exposition:4 @15)
 
-## Proposed ADDs
+The auditor explicitly routed this entry as a worm-canon-pedant audience-attack candidate: "Days of it, and the pattern came." — no first-person pronoun, pov-frame third-person construction.
 
-One candidate I examined and rejected: the "count" at @4 ("the insects swell"). The preamble names "a count" and its mechanism at length; by @4 the term is already reader-resident for worm-canon-pedant. Taylor's count is analogous to her range-management in the Worm source (she maintained awareness of her insect-cloud extent as a constant background process). The preamble covers this adequately. No ADD needed.
+My ruling: this is in register. "Days of it" is not omniscient narration; it is Taylor's compressed temporal accounting — the same notation as "three weeks" in the prior-episode-bridge ("After that I went back to the drain angle and did not feed anyone for three weeks"). She compresses elapsed time as a counted unit (three weeks; days of it) without narrating what those days contained. "And the pattern came" is the event logged: a pattern arrived in the data. No verb subject because the sentence is accounting-book compressed. The pattern came — passive-adjacent register, no agent attributed. That is Taylor's interiority register at its most stripped: the thing that happened, labeled, no elaboration.
 
-One candidate I considered seriously: the nature of Taylor's range-residue and whether "two hundred metres" is a known figure from canon or an original fabrication. Worm canon does not give a precise post-Gold-Morning residue range for Taylor's range if she survived, because she does not survive in canon. The "two hundred metres" figure is therefore an AU calibration, not a canon value, and the exposition does not gloss it as such. I am flagging this because worm-canon-pedant reads with the wiki tab open: the absence of any acknowledgment that this is an AU calibration rather than a canon figure is a potential seam. However, the noun-fence condition card (cond-earth-bet-noun-fence §substitution-register) presumably addresses this, and the AU-tolerant framing in the series constraints covers it. I will not block on this — the project has declared its AU tolerance. Flagging only.
+This is not third-person omniscient intrusion. It is Taylor's first-person register at maximum compression. The auditor's defense (precedent: b01c01 exposition:7 same register accepted under R2) holds. My independent ruling: the compressed temporal-accounting register is canon-consistent with Taylor's established voice (Worm source: she summarizes elapsed time with the same counting-without-narrating compression in her Brockton Bay surveillance-mode chapters).
 
----
+No flag on voice-fidelity.
 
-## Flag-007 attack surface
+## Prior-episode-bridge canon check
 
-Sparsity-band is a denominator artifact. Nine entries across 27 bones is appropriate for a cold-start chapter. The per-episode caps are the binding constraint. No reader-experience concern.
+The preamble contains two canonically load-bearing claims: "I did not feed anyone for three weeks" and "Reading was not directing."
 
-## Flag-014 attack surface
+"Did not feed anyone for three weeks" — the three-week restraint after the b01c01 crowd-control event. This is the self-imposed period of no-deployment after the first use. Canon-Taylor's post-deployment behavior includes periods of deliberate non-use as an attempt to reset the ledger. The three-week period reads as the correct scale for an individual chapter (not three days, not three months). The "did not feed anyone" phrasing is exactly right: the frame is whether she is using her power on Flea Bottom residents, not whether she is alive (the insects continue existing; she is not deploying them for others). The "feed" vocabulary maps to Taylor's established power-use frame ("the feed" as what the insects return to her, "feeding" used metaphorically as what she does to others via the insects).
 
-"Two hundred metres." This is the most load-bearing canon-consistency question in the facet for worm-canon-pedant. Taylor's range in Worm canon is measured in feet and yards (US measurements, consistent with Brockton Bay, Massachusetts setting), not metres. Taylor Hebert does not think in SI units in the source text. She measures her range in feet. "Two hundred metres" is actually an inconsistency in the character's register: it's the author's measurement, not the character's.
+"Reading was not directing" — the prohibition. This is the series-spine atonement rule, here stated as Taylor's own formulation. The distinction between reading (surveillance) and directing (control/override) is load-bearing: it is the line she is holding throughout b01c02, and it is the line the chapter tracks cracking in scene-C. The preamble states it at the chapter's open so the reader knows it before the bones deploy it.
 
-If this is being read as a post-Gold-Morning adaptation (she was in a foreign body in a Westerosi city, and her measurement-sense recalibrated), that is an AU choice that is plausible but needs acknowledgment somewhere in the chapter's registration. The preamble uses metres as a matter-of-fact claim by Taylor, in her first-person voice, without any register-shift signal.
+Both claims are canon-consistent with post-Gold-Morning Taylor's self-binding architecture.
 
-I am not blocking on this. The AU-tolerance declaration covers departure from canon register. But I am naming the specific line: canon-Taylor thinks in feet. "Roughly two hundred feet" would be a Taylor-register number (around 60m, consistent with her early-Worm range, though she exceeds this significantly by arc 12+). "Two hundred metres" is approximately 660 feet, which is a significantly larger number than her early-arc range and closer to her later-arc or Khepri-state range in order-of-magnitude. The figure itself may be narratively correct for post-Gold-Morning residue; the unit is the register-seam.
+## Coverage-map vocabulary (exposition:2)
 
-Flagging for potential ADD: if a future draft includes an inner-register acknowledgment that her measurements have converted to local or AU units, this would resolve the seam. Not requiring it. Not blocking.
+The auditor confirmed all four preamble entries are consistent with the coverage-map-instrument-family established in prior rounds. My independent check: the preamble names "coverage map," "accounting," "ledger" as Taylor's own terms, in her voice ("I called it a coverage map when I was being plain with myself; I called it an accounting when I was not"). The dual-naming — plain vs. euphemistic — is canon-Taylor: she maintains parallel framings for what she is doing. The "coverage map" is the direct acknowledgment; the "accounting" is the managed distance. That is a real and specific Taylor-voice register, not generic hedging.
 
-VERDICT: ACCEPT (flag-014 is a measurable register-seam, named precisely, not blocking)
+verdict: ACCEPT

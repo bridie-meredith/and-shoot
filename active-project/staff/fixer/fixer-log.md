@@ -817,3 +817,120 @@ criteria met: yes — vibes:7 token now names the mode as operational posture wi
 findings-applied: 3
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-26T09:00:00Z — write-b01c02-pass2-form-fixes
+dispatch: minimum-change SVO recasts for 7 FAULT-FORM faults from write-b01-c02-pass2-revise.md; patch svo: and note: fields in b01c02-revise-draft-2026-05-26.md
+target: active-project/staff/showrunner/_drafts/b01c02-revise-draft-2026-05-26.md
+audit-report: active-project/staff/auditor/write-b01-c02-pass2-revise.md
+findings-queued: 7
+
+## fault-001 (s01n04) — RESOLVED — 2026-05-26T09:05:00Z
+fault: "without a common room" is a negation PP (FAULT-FORM-NEGATION + FAULT-FORM-MODIFIER)
+scope: line
+change: svo confirmed as "the fever-cluster returns three heat-signatures across two alleys"; s01 notes and aggregate_summary SOFT-WATCH (2) updated to reflect positive-event encoding; pre-applied in draft
+criteria met: yes — negation PP removed; ambiguity encoded as positive spatial distribution
+
+## fault-002 (s01n10) — RESOLVED — 2026-05-26T09:05:00Z
+fault: "peripheral" adjective modifier + "attention" abstract-as-object (FAULT-FORM-MODIFIER + FAULT-FORM-INTERIORITY)
+scope: line
+change: svo confirmed as "the alley-back drops from the feed"; note field confirms physical grounding (subject = alley-back, verb = drops, object = the feed); pre-applied in draft
+criteria met: yes — adjective modifier and abstract object both eliminated; suppression cost physically grounded
+
+## fault-003 (s02n06) — RESOLVED — 2026-05-26T09:05:00Z
+fault: "at the grey hour" is a time-PP (FAULT-FORM-MODIFIER)
+scope: line
+change: svo confirmed as "taylor-hebert-kl-122ac takes the drain angle"; note field confirms grey-hour routes to loc-state citation; pre-applied in draft
+criteria met: yes — time-PP stripped; bare SVO correct
+
+## fault-004 (s02n14) — RESOLVED — 2026-05-26T09:06:00Z
+fault: "at the junction-lane boundary" is a place-PP (FAULT-FORM-MODIFIER)
+scope: line
+change: svo confirmed as "the insects return the junction-lane attenuation"; spatial identity folded into compound-noun object; aggregate_summary SOFT-WATCH (2) updated; pre-applied in draft
+criteria met: yes — place-PP removed; spatial identity in compound-noun object
+
+## fault-005 (s02n15) — RESOLVED — 2026-05-26T09:06:00Z
+fault: "holds" unlicensed + "junction-lane void" abstraction-as-object (FAULT-FORM-NON-ACTION-VERB + FAULT-FORM-INTERIORITY)
+scope: line
+change: svo confirmed as "the insects reach the junction-lane edge"; subject = insects, verb = reach, object = junction-lane edge (physical); aggregate_summary SOFT-WATCH (2) updated; pre-applied in draft
+criteria met: yes — unlicensed holds and void-abstraction both replaced by physical actor + physical verb + physical object
+
+## fault-006 (s03n03) — RESOLVED — 2026-05-26T09:06:00Z
+fault: "with shadow" is a PP instrument (FAULT-FORM-MODIFIER)
+scope: line
+change: svo confirmed as "the shadow fills the drain angle"; subject-swap applied; axes_held rationale for capability confirms shadow-as-subject framing; pre-applied in draft
+criteria met: yes — PP instrument removed by subject-swap; clean SVO
+
+## fault-007 (s03n12) — RESOLVED — 2026-05-26T09:07:00Z
+fault: "holds" unlicensed + "ward-junction void" abstraction-as-object + "in the open count" PP modifier — three violations (FAULT-FORM-NON-ACTION-VERB + FAULT-FORM-INTERIORITY + FAULT-FORM-MODIFIER)
+scope: line
+change: svo confirmed as "taylor-hebert-kl-122ac holds the breath"; holds licensed as body-part stillness-against-pressure; note field updated to SOFT-WATCH-1 compliance framing; s03 notes block updated (n12 description changed from "feed holds void in open count" to "holds the breath"); aggregate_summary SOFT-WATCH (1) updated from "s03n12 (holding / feed holds void)" to "s03n12 (holding / holds the breath)"; pre-applied in draft
+criteria met: yes — all three violations resolved; SOFT-WATCH-1 holding-bone structurally sound
+
+## SESSION-END — 2026-05-26T09:07:00Z — write-b01c02-pass2-form-fixes
+findings-applied: 7
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-26T10:00:00Z — facets-b01c02-vibes-cycle1
+dispatch: Phase 5b cycle-1 fixer pass for vibes-b01-c02; 4 consolidated callouts (vibes:2 keyword Earth-Bet fence; vibes:13 keyword Earth-Bet fence; vibes:6 POV-scope DELETE; vibes:7 POV-scope DELETE)
+target: active-project/theater/facets/vibes-b01-c02.md
+audit-report: active-project/staff/audience/worm-canon-pedant/vibes-r1-verdict.md + cape-fic-reader/vibes-r1-verdict.md + dark-fantasy-reader/vibes-r1-verdict.md
+findings-queued: 4
+
+## callout-1 (vibes:2 Earth-Bet fence) — RESOLVED — 2026-05-26T10:05:00Z
+fault: vibes:2 @12 keyword array token "line-drawn-at-twelve-in-same-hand-as-gold-morning-refusal" contained substring "gold morning" — Earth-Bet noun hard-fence hit (worm-canon-pedant independent finding; auditor scan missed sub-keyword level)
+scope: line
+change: token replaced with "line-drawn-at-twelve-in-same-hand-as-the-prior-refusal" — functional descriptor naming the gesture not the event; fence-clean; found pre-applied in vibes-b01-c02.md; no further edit required
+criteria met: yes — "gold morning" substring absent from all keyword array tokens; fence-scan-clean
+
+## callout-2 (vibes:13 Earth-Bet fence) — RESOLVED — 2026-05-26T10:05:00Z
+fault: vibes:13 @40 keyword array token "accounting-structure-readable-as-khepri-rhyme-by-audience-not-taylor" contained substring "khepri" — Earth-Bet noun hard-fence hit (worm-canon-pedant independent finding)
+scope: line
+change: token replaced with "accounting-structure-readable-as-override-pattern-by-audience-not-taylor" — functional descriptor naming the pattern without the canon name; fence-clean; also keyword label updated to "surveillance-architecture-legible"; found pre-applied in vibes-b01-c02.md; no further edit required
+criteria met: yes — "khepri" substring absent from all keyword array tokens and keyword label; fence-scan-clean
+
+## callout-3 (vibes:6 POV-scope DELETE) — RESOLVED — 2026-05-26T10:08:00Z
+fault: vibes:6 @29 actor:wren-stitch-maker-flea-bottom-ward ++ mutual-silence — token "not-approaching-as-active-decision-with-data" attributed volitional interior state to non-POV character at bone where Taylor's feed attenuates; chapter's strict solo-POV discipline forbids this; convergence cape-fic-reader + dark-fantasy-reader + worm-canon-pedant (escalated from TASTE-FLAG to hard-fault)
+scope: line
+change: DELETED. vibes-b01-c02.md carries DELETED marker (pre-applied). Proto-lines @27 [vibes:6] token stripped. Cite-index: vibes:6 entry removed; co-lists cleaned (narrator:6, state:12, mem:2, vibes:3, vibes:4 all had vibes:6 removed). Pile-up @27 updated 6→5. Vibes section count 13→11.
+criteria met: yes — POV-scope violation removed; no Taylor-inaccessible interiority claims on Wren at @27/@29; coverage-edge irony carried by vibes:5 and episode-scope vibes:12/13
+
+## callout-4 (vibes:7 POV-scope DELETE) — RESOLVED — 2026-05-26T10:09:00Z
+fault: vibes:7 @29 actor:wren-stitch-maker-flea-bottom-ward ++ rising entrapment — "++ rising entrapment" attributed Wren's subjective experience of entrapment at @29; dual-++ pile-up on non-POV character with vibes:6 (now deleted) compounded the violation; convergence cape-fic-reader + worm-canon-pedant (dark-fantasy-reader partial: defended vibes:7 tokens as map-read but identified dual-++ Wren pile-up as the fault vector)
+scope: line
+change: DELETED. vibes-b01-c02.md carries DELETED marker (pre-applied). Proto-lines @29 [vibes:7] token stripped. Cite-index: vibes:7 entry removed; co-lists cleaned (loc-state:8, vibes:5 had vibes:7 removed). Density distribution updated: @29 moves 3→2 cites (2-row 6→7; 3-row 2→1); @27 moves 6→5 cites (6-row 1→0; 5-row 1→2). Total facet entries 63→61.
+criteria met: yes — POV-scope violation removed; reader-irony layer preserved through episode-scope vibes:12/13; vibes:5 (coverage-edge-as-information) carries the feed-boundary register at @29
+
+## SESSION-END — 2026-05-26T10:09:00Z — facets-b01c02-vibes-cycle1
+findings-applied: 4 (callout-1 and callout-2 keyword swaps pre-applied; callout-3 and callout-4 DELETED markers pre-applied; this session completed proto-lines + cite-index cleanup for callouts 3+4)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-26T11:00:00Z — and-facets-phase5-fixes-b01c03
+dispatch: Phase 5 fixer pass for /and-facets b01-c03 — 3 HARD findings; fault-001 DELETE exposition:5 @13 (fire-rule clause-b); fault-002 rewrite >=2 NI predicate-nominative entries (50% saturation); fault-003 ADD NI entries at @10, @22, @31 (cross-facet contract gap)
+target: active-project/theater/facets/exposition-b01-c03.md + active-project/theater/facets/interest-narrator-b01-c03.md + active-project/theater/facets/_inflight/proto-lines-exposition.md + active-project/theater/facets/_inflight/proto-lines-narrator.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 3
+
+## fault-001 — RESOLVED (PRE-APPLIED VERIFIED) — 2026-05-26T11:10:00Z
+fault: exposition:5 @13 scene-open-orient fires when loc-state:2 @13 already covers scene-B orientation — fire-rule clause-b violated
+scope: line
+change: verified pre-applied: deletion marker in exposition-b01-c03.md; fire-audit block updated; proto-lines-exposition.md @13 carries only [exposition:4]; no further edit required
+criteria met: yes
+
+## fault-002 — RESOLVED — 2026-05-26T11:15:00Z
+fault: 4/8 NI entries predicate-nominative — 50% saturation above 40% threshold (escalated SIGNAL → HARD)
+scope: line
+change: NI:1 @4 rewritten to "the cost-tell — stillness against market grain" (paratactic em-dash; no copula); NI:5 @19 rewritten to "the coverage she already held ran through the wards he had named — the price-tag sat in that overlap unspoken" (two independent clauses); NI:3 @8 + NI:7 @29 retained as peak-bone candidates; post-rewrite predicate-nominative rate 2/11 = 18%, below 40%
+criteria met: yes
+
+## fault-003 — RESOLVED — 2026-05-26T11:20:00Z
+fault: state-updates cross-facet contract gap — NI absent at @10, @22, @31
+scope: line
+change: NI:9 @10 (court layer added: tether closed — 22 words); NI:10 @22 (wards already in feed; being asked to sell — 20 words); NI:11 @31 (courier confirm reads as close — 19 words); all Taylor cold-utilitarian register, no Earth-Bet, no pred-nom; proto-lines-narrator.md updated with [interest-narrator:9/10/11] at respective anchors; density 8/36→11/36 (31%); density ceiling exceedance noted as Phase 5b SIGNAL (cross-facet-contract HARD supersedes ceiling)
+criteria met: yes
+
+## SESSION-END — 2026-05-26T11:20:00Z — and-facets-phase5-fixes-b01c03
+findings-applied: 3
+findings-skipped: 0
+exit: CLEAN

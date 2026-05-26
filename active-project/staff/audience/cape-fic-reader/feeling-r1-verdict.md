@@ -1,91 +1,20 @@
 ---
 reviewer: cape-fic-reader
 facet: feeling
-episode: b01c01
 cycle: 1
-date: 2026-05-25
+episode: b01-c02
+date: 2026-05-26
 verdict: accept
 ---
 
-# Verdict reasoning
+One entry: feel:1 @23, the weight-settle at the alley-mouth yield. The facet was authored at 2 entries and reduced to 1 in R2 (the deleted entry per R2 was not recovered in the available file, but the header confirms K=1 D=1 A=0). The auditor flagged the density at 2.1% as sitting exactly at the 2% floor — accepted-with-defense, silence-default documented.
 
-Four fires, four characters whose interior cost-structure needed unlocking, and
-every one of them lands on a beat where the proto-line carries the action but not
-the body-cost of the action. The cape-fic line of inquiry — what is the protagonist
-paying to hold, and are the faction players reading the board correctly — is served
-rather than padded here. Sparsity holds (4 fires on 27 beats). No fire gives
-anything away that wasn't already earned.
+From the capefic reader's perspective: one feeling fire on a 47-bone chapter is correct for a chapter that is primarily a mechanical coverage-map operation. The question is whether the one fire lands at the right bone. @23 is "taylor-hebert-kl-122ac yields the alley-mouth" — the live-encounter beat where Taylor physically steps back so she does not intercept Wren. The feeling facet firing here carries the somatic weight of the yield: this is a chosen cost, not an involuntary reflex. That is the capefic reader's exact interest at this moment — what did the yield cost, and was it chosen? The feeling-flag answers both. It fires on the correct beat, in the correct scene (scene-B live-encounter protected run @21-@25), at a peak-shadow position rather than the peak itself.
 
-# Per-entry readings (group by character file)
+The auditor noted that feel:1 fires at both @10 and @23 in the proto-lines (both carry `[feel:1]`). The scene-B fire at @23 is the co-citation with narrator:4; the @10 fire co-locates with narrator:12 and vibes:1. The `feel:1` token appearing on two proto-lines suggests a single feeling-entry spanning two bones OR a citation indexing ambiguity. On the current read: the feeling file has one entry numbered `1`, the cite-index shows `feel:1 @23 back=Y co=[narrator:4]`, and the proto-line @10 also carries `[feel:1]`. This is a mild anomaly — one ID, two proto-line citations. The auditor did not escalate this; the R2 judge's `scene_distribution: scene-A: 0, scene-B: 1, scene-C: 0` is consistent with a single entry at @23. The @10 citation is likely a legacy token from a prior version of the proto-lines. Not a revise trigger from this reader's perspective — the single substantive entry at @23 earns its place.
 
-## taylor-hebert-kl-122ac
+# Callouts
+None.
 
-[feeling:2] @10 — ACCEPT. Proto-line 10 reads "taylor-hebert-kl-122ac holds the
-feet" — the behavioural signal is there but carries zero body-cost. The breath
-emptying out is `expressed: no`, interior-only, and that's the right call: no
-in-scene character reads her power-threshold from a breath. For a cape-fic reader
-this is the exact tell that distinguishes "protagonist standing still" from
-"protagonist holding the gate against deployment." The cost-of-restraint is the
-story's operational engine right now, and this single clause makes it legible
-without naming a feeling or handing the reader a label. One clause, one verb, clean
-form.
-
-[feeling:3] @24 — ACCEPT. "Her head fixes toward the alley-mouth, away from the
-stitch-house lane" is `expressed: partial` — an attentive observer could clock it.
-The proto-line at 24 is "taylor-hebert-kl-122ac faces the alley-mouth," which names
-the orientation. What the feeling-flag adds is the negative-vector: she is not
-looking at where the insects were, at what she did. That is the post-use
-cost-bearing tell — she knows the stitch-house lane is behind her and she is not
-watching it. A cape-fic reader tracks what the protagonist does with her attention
-after a deployment, and this tell answers that cleanly. Form: one subject (her head),
-one verb (fixes), compound locator (toward alley-mouth / away from stitch-house lane)
-— both directional phrases modify the same single verb. I read this as one clause
-with two orientation-vectors rather than two conjoined clauses; no second
-independent subject or second finite verb. Borderline but passes.
-
-## oswyn-mudway-flea-bottom-elder
-
-[feeling:1] @21 — ACCEPT. The pile-up at @21 is dense (8 co-citations), but every
-other fire at that beat is external: state-changes, vibes, exposition, narrator. None
-of those can carry Oswyn's interior because NI is POV-only and state-updates explicitly
-excludes mood/register. The hands settling at the apron-front — `expressed: yes`,
-visible in-scene — is the only vehicle for showing that Oswyn is choosing deliberate
-cover rather than reacting. For a cape-fic reader, a faction-adjacent character visibly
-composing herself while taking the lane-mouth is operational: it tells us she knew
-what she was doing, that this was not reflex. That's not redundant with anything at @21.
-Single clause, body action named directly in body register. No labeled feeling, no hedge,
-no comparison.
-
-## wren-stitch-maker-flea-bottom-ward
-
-[feeling:4] @27 — ACCEPT. Proto-line 27 reads "wren-stitch-maker-flea-bottom-ward
-faces taylor-hebert-kl-122ac" — the facing is the action. The feeling-flag adds that
-her eyes preceded her head, `expressed: no`, interior-only. The distinction is not
-trivial: it says Wren clocked Taylor before committing to the turn, which is a quality
-of attention that the proto-line cannot carry. For a cape-fic reader, the first
-contact-beat of a new character matters — is she reacting or tracking? Eyes-before-head
-says tracking. This does not grant Wren trust; it marks her as a character who notices
-things before she moves on them. That is information about faction awareness, not a
-trust deposit. Hot-button check: "new character earning trust without paying for it"
-does not fire here because the tell is observational-quality, not earned-credibility.
-Single clause, body action in body register, no named feeling.
-
-# Entry-level callouts (revise/fail only)
-
-(none — all four entries accepted)
-
-# Convergence trace
-
-The auditor's Phase 5 r2 report (facets-final-audit-r2.md) found no HARD findings
-remaining in the feeling facet. The prior fault-002 (spurious feel:1 at @10) and
-fault-003 (feel:2 / feel:3 ID mismatches) are both REMEDIATED; the proto-lines now
-carry [feel:2] exclusively at @10 and [feel:3] exclusively at @24, matching the
-per-character slice file IDs. No auditor finding maps to any of the four feeling
-entries as reviewed.
-
-The one live auditor item (fault-004, dialogue at @16) does not touch the feeling
-facet and is not in scope here.
-
-No convergence conflicts. The mechanical audit's clean status and this persona's
-adversarial reading align: the facet is spare, each fire is anchored to a beat the
-other facets cannot cover, and the body-register discipline holds.
+# Convergence
+The auditor's feeling density SIGNAL (2.1% at floor) is advisory. This persona confirms the single fire earns its position; no demand for additional fires.

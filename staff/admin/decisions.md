@@ -367,6 +367,92 @@ methodology-update-proposed: no
 
 ---
 
+## DEC-0018 | 2026-05-26 | SLOW (process-critic)
+
+question: /and-facets b01c02 Phase 5c dispatch — 3 pattern questions after Phase 5b cycle 1 REVISE (vibes) + pragmatic-accept: (1) Earth-Bet substring scan missed vibes keyword token arrays; (2) Wren-POV-volition auditor TASTE-FLAG vs. audience 3-of-3 REVISE escalation — graduate to rubric REJECT?; (3) cycle 2 not re-fired (second consecutive c02 pragmatic-accept)
+context: Phase 5b cycle 1 returned 9/10 ACCEPT, 1 REVISE (vibes). Fixer resolved with 2 keyword swaps (vibes:2 gold-morning-refusal, vibes:13 khepri-rhyme — Earth-Bet fence hits in token arrays) + 2 DELETEs (vibes:6+vibes:7 — Wren-POV-volition character-scope violations). Cycle 2 not re-fired (pragmatic-accept under depth-pass budget). Earth-Bet scan gap: auditor declared CLEAN; worm-canon-pedant found fence hits. Wren-POV: auditor TASTE-FLAG; audience 3-of-3 REVISE; fixer DELETE resolved. Gate_path: .claude/commands/and-facets.md#phase-5b; secondary_gate_paths: [design/shoot-v2/rubric-vibes.md, design/shoot-v2/rubric-vibes-v1.1-patch.md].
+options: n/a (process-critic mode — discriminate content vs process per each issue)
+
+decision:
+  issue-1 (Earth-Bet token-array scan): PROCESS-CHANGE-PROPOSED PROP-0006
+  issue-2 (Wren-POV-volition vibes — promote to RUBRIC-FIDELITY?): OK (wait for recurrence)
+  issue-3 (cycle 2 not re-fired): OK (within-spec operator decision)
+
+basis:
+  issue-1: gate-scope-gap discriminator (auditor CONSTRAINT scan stated scope vs. implementation diverge; not a taste call; HARD class should be caught at Phase 5 not Phase 5b) + methodology:3a (modify is reversible; S cost) + process-gap-at-gate (CONSTRAINT class catching at Phase 5b is a gate-gap)
+  issue-2: schema:admin-proposal.schema.md §first-occurrence-non-catastrophic + Rule 11 recurrence threshold (≥3 for promote; recurrence_count=1; fixer resolved via DELETE; gate worked as designed — TASTE-FLAG → audience → REVISE → fixer)
+  issue-3: and-facets.md cycle-cap spec (cap=3; using 1 cycle with fixer-resolved callouts is within spec; "pragmatic-accept" is a valid operator path when fixer deletions addressed all REVISE items with no new HARDs; not a structural process gap)
+
+rationale:
+  Issue 1: The auditor's CONSTRAINT Earth-Bet scan is the designated mechanical backstop for fence
+  violations (HARD class). Its stated scope is "every text field." The b01c02 vibes facet has two
+  text-field levels per entry: the keyword handle and the bracket-enclosed token array. The auditor
+  scanned handles only, listed them in the scan trace, and declared CLEAN. The worm-canon-pedant's
+  Phase 5b read found fence hits at the sub-token level in two entries. This is a scan-coverage
+  mismatch between stated scope and implementation — not a first-occurrence taste call. The fix is
+  a one-paragraph scope clarification in the CONSTRAINT clause (S cost); it adds no new fence
+  targets and changes no dispositions. Proposing at recurrence_count=1 because this is a gate-scope
+  specification gap (the gate claims to do something it did not do), not a threshold calibration or
+  taste judgment. The auditor's scan trace format should also require per-token confirmation for the
+  vibes facet to make future coverage auditable.
+
+  Issue 2: The vibes rubric (rubric-vibes.md) has no REJECT signature for character-scope entries
+  attributing interiority to non-POV actors. The auditor correctly classified vibes:6+vibes:7 as
+  TASTE-FLAG because no rubric rule warranted HARD. The audience escalated 3-of-3 to REVISE; fixer
+  DELETE resolved the callouts. The gate chain worked as designed per Rule 11 promotion path
+  (TASTE-FLAG → Phase 5b → REVISE → fixer). Rule 11 says the promotion path is to add the rule
+  to the rubric's REJECT section, which then auto-promotes it to a mechanical RUBRIC-FIDELITY check.
+  At recurrence_count=1, the one-occurrence anti-pattern applies: non-catastrophic, gate worked
+  correctly, one chapter. Wait for c03 or a subsequent chapter to confirm the pattern before adding
+  a rubric REJECT rule. A premature REJECT rule against character-scope vibes could block legitimate
+  irony-layer vibes at episode scope targeting Wren (episode-scope vibes:12/13 were ACCEPT and
+  correctly deployed). The distinction between character-scope and episode-scope in the rubric needs
+  to be precise, and the b01c02 case is still the only instance.
+
+  Issue 3: The and-facets command body specifies a cycle cap of 3; using cycle 1 and proceeding
+  after fixer resolution is within spec. "Pragmatic-accept" here means fixer DELETEs addressed
+  all REVISE items (2 keyword swaps + 2 DELETEs), no new HARDs were introduced, and the operator
+  chose not to re-fire Phase 5b cycle 2 because the deletion path resolved the callouts definitively.
+  This is a valid path — cycle 2 is not mandatory when the fixer's resolution mode is DELETE
+  (the deleted entries cannot produce REVISE callouts from the audience again). No structural
+  gate was bypassed; the auditor's Phase 5 scan ran on the post-fixer graph. Not a process gap.
+
+trade-off:
+  Issue 1: Proposing at recurrence_count=1. Justified because this is a gate-scope specification
+  gap with a precise, S-cost fix; the gate's stated scope explicitly says "every text field"
+  and the implementation does not match. The risk of not proposing: another chapter's vibes token
+  arrays contain fence hits that the auditor passes as CLEAN and the audience must catch. That
+  would mean HARD-class CONSTRAINT violations are structurally caught only at Phase 5b (the
+  subjective gate) rather than Phase 5 (the mechanical gate) — a durable inversion of the
+  gate hierarchy for this check class.
+  Issue 2 and 3: Not proposing. The cost of a premature REJECT rule (issue 2) or a cycle
+  mandate (issue 3) exceeds the cost of waiting for recurrence.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0019 | 2026-05-26 | SLOW (process-critic)
+
+question: b01c02 postop-convergence:divergent — Fork A substance DELIVERED, Forks B+C converge on compound-noun saturation tic. Does the process need a proposal? Options: (a) Phase 7 Q9 tightening, (b) /and-stitch Phase 1 scene-window variance discipline, (c) /and-write Phase 6 AP-SCAN for compound-noun density in bone SVOs, (d) wait for c03+c04 recurrence.
+context: Second occurrence of compound-noun density pattern. Occurrence 1: pl-2026-05-25-013 from b01c01 cold-read ("prose dense with hyphen-compound nouns"). Occurrence 2: b01c02 postop Forks B+C ("compound-hyphenated nouns at five per paragraph numb the ear"; "threshold-stones approaching term-of-art saturation"). Fork A (substance-delivery): DELIVERED clean across all 12 dimensions; c02->c03 setup CLEAN. The depth-pass produced the density problem — bones authored to ground substance also introduced compound-noun saturation the stitcher faithfully rendered. No downstream gate can thin bone-content compound nouns: Q9 explicitly emits FAULT-BONE-AUDIT-MISS on bone-content compounds and renders as-is to preserve bone-faithfulness. The existing `register-as-mannerism` SIGNAL in Phase 6 covers verb-object pair recurrence (≥3 occurrences) — compound-noun cluster density is an analog that falls in the same table.
+options: (a) Phase 7 Q9 — structurally ineffective (bone-faithfulness fence); (b) /and-stitch Phase 1 variance — wrong layer (rendering choice, not authoring gap); (c) /and-write Phase 1 + Phase 6 — correct root; (d) wait — overcautious given recurrence count 2 across independent chapters
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0007
+basis: recurrence-count-2 (Rule 11 recurrence threshold cleared — pl-2026-05-25-013 c01 + b01c02 postop c02 are independent chapters) + gate-absence discriminator (/and-write Phase 1 has no compound-noun economy guidance; Phase 6 has no compound-noun density AP-SCAN; modify correct change_type because the existing `register-as-mannerism` SIGNAL is the structural analog) + methodology:3a (reversibility — SIGNAL disposition; HARD only on second project-level occurrence) + methodology:3c (blast radius — two sentences in one command body; S cost)
+rationale: The compound-noun saturation failure has a precise causal chain: screen-writer authors compound-noun SVOs at Phase 1 → stitcher renders them verbatim under bone-faithfulness fence → Q9 cannot touch them. No downstream gate is structurally capable of fixing this without violating bone-faithfulness. The correct gates are Phase 1 (authoring guidance) and Phase 6 (AP-SCAN). Options (a) and (b) are ruled out on structural grounds, not just preference. Option (d) would be correct at recurrence_count=1; at recurrence_count=2 across independent chapters the first-occurrence hold is released per Rule 11. The proposed SIGNAL threshold (≥4 distinct compound nouns in a 5-bone window) is calibrated to Fork B's specific language ("five per paragraph") and matches the existing pattern for `register-as-mannerism`. Cost S; SIGNAL disposition is conservative and reversible.
+trade-off: Proposing at recurrence_count=2 rather than waiting for c03/c04 confirmation. Accepted: Rule 11 explicitly names recurrence_count≥2 across independent invocations as the proposal threshold; the evidence is reader-convergent, not a single taste flag; the proposed change is S-cost and SIGNAL-disposition with adjustment path if thresholds prove wrong.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0015 | 2026-05-26 | SLOW (process-critic amendment)
 
 question: Amend DEC-0013 / PROP-0003: cold-read experiment shows matched exemplar passage (v16) beats persona-description prime (v14), and mismatched exemplar (v17) leaks surface conventions. Asset format must change from persona-card description section to standalone exemplar passage file.

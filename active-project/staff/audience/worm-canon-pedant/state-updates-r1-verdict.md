@@ -1,99 +1,85 @@
 ---
 reviewer: worm-canon-pedant
 facet: state-updates
-episode: b01-c02
-cycle: r1
-date: 2026-05-25
-verdict: accept
+episode: b01c02
+phase: 5b-adversarial
+date: 2026-05-26
+verdict: REVISE
+auditor-overlap: fault-001 (HARD — actor-state entries state:8–17 all back=N on proto-lines; systematic citation miss)
 ---
 
-# Worm Canon Pedant — State-Updates Adversarial Verdict (b01-c02)
+# state-updates — adversarial read (b01c02, 47-bone)
 
-## Stance
+Seventeen entries: seven env (state:1–7), ten actor-slice (state:8–17). My primary lens is power-mechanics canon consistency and chain integrity. My secondary lens is whether the actor-state axis movements are earned through described cause.
 
-Keeping the tally. State-updates is where the power mechanics land in canonical memory — it is the record of what actually changed versus what the chapter claimed changed. My primary lens is whether the entries are consistent with established canon for this character's capabilities and with the field-extension architecture established in prior chapters. My secondary lens is chain integrity: do the `<old>` values trace cleanly?
+## Structural concern — fault-001
 
-The b01c01 state-updates file introduced `deployment-state` as a field-extension on actor:taylor. That extension carries forward here. The chapter introduces three new field-extensions under `internal-accounting`. I will track whether those extensions are consistent with canon-Taylor's established cognitive register.
+The auditor flagged fault-001 as HARD: all ten actor-slice entries (state:8–17) are back=N in the cite-index, meaning no `[state:N]` citation tokens appear on their anchor proto-lines. The stitcher cannot resolve actor-state entries it cannot find on the proto-lines.
 
-## Per-entry readings
+This is the gating issue for this facet. I am not ruling on whether the entries are canon-consistent before ruling on whether the entries will survive to the stitcher. If they are invisible to the stitcher, their canon consistency is moot.
 
-**[state:1] @20 — `studio.time_of_day: dawn -> end-of-day`**
+The auditor's routing: fault-001 → fixer → add `[state:8]` and `[state:9]` to proto-line @11, `[state:10]` to @12, `[state:11]` to @15, `[state:12]` to @27, `[state:13]` to @40, `[state:14]` to @41, `[state:15]` to @42, `[state:16]` to @43, `[state:17]` to @47.
 
-The env entry. Time-of-day is a studio field with established schema authority. The chapter opens at dawn (b01c01 handoff_out baseline) and closes at end-of-day; the field flips at @20 (scene-C open, Taylor returns to the drain angle). Persistence: confirmed through @29. The strip test passes. The carve-out preamble covers all silent env bones with documented rationale.
+My verdict records this as the REVISE basis. The entries themselves may be canon-consistent; I review them below. But the facet cannot pass Phase 5b until fault-001 is resolved.
 
-SEAM-001: b01c01 authored zero env state-updates, so the `<old>` value "dawn" derives from handoff_out baseline rather than from a prior state-update chain entry. From a canon-chain perspective this is the concern I want on record: the chain from the series-baseline through b01c01 to this entry exists only via handoff_out documentation, not via a prior `studio.time_of_day` state-update. That is a chain-integrity gap that the preamble acknowledges correctly. It is a SIGNAL, not an entry fault. The chain is traceable; it is just not documented in the state-updates layer for b01c01.
+## Actor-slice canon readings (post-fix evaluation)
 
-`CORRECT`
+**state:8 @11 (coverage-mode: subsistence -> systematic-deliberate)**
 
-**[state:2] @6 — `actor:taylor.deployment-state: ambient-subsistence-reading -> systematic-precinct-coverage-deliberate`**
+The coverage-mode flip at the scene-A peak. Taylor extending from passive-ambient reading to deliberate systematic coverage is the canonical distinction. In Worm source, Taylor's power has active and passive modes: passive is ambient awareness, active is deliberate focus. The flip to "systematic-deliberate" at the point of Hook-wide range-extension is the correct registration of a mode change. The Δ is real and described by the bones: the range extension is the event, the mode flip is the consequence.
 
-The deployment-state field was introduced at b01c01 as a field-extension. The b01c01 entry established `passive-subsistence-range` (or equivalent) as the starting value; the b01c01 handoff_out confirmed the chapter-close deployment-state as the carry-forward value into b01c02. The b01c02 entry opens with `ambient-subsistence-reading` as `<old>` — this should match the b01c01 handoff_out canonical value. If the handoff_out reads `passive-subsistence-after-crowd-yield` or similar, the `<old>` nomenclature here (`ambient-subsistence-reading`) needs to match exactly, not rephrase. The entry's own comment says "chapter-open value was passive-subsistence-after-crowd-yield" — the comment acknowledges the prior value; the `<old>` field uses a slightly different phrasing. This is a Frugality flag (drift-old): the `<old>` value should be whatever the prior canonical entry set, verbatim, not a paraphrase.
+canon-consistent.
 
-From a canon-mechanics standpoint, the distinction being tracked — ambient-passive versus systematic-deliberate — is a valid and canon-consistent distinction for Taylor's insect-sense. In Worm source, Taylor can choose to focus her power actively or let it run passively. The "deliberate coverage" mode is the mode she uses when running tactical reconnaissance. The b01c02 chapter is the first time in this AU she runs deliberate reconnaissance in Flea Bottom. The field-extension tracks the right thing.
+**state:9 @11 (range-ceiling: working -> into-the-fours-under-suppression-cost)**
 
-The back=N on the proto-line @6 is a citation-hygiene gap, not an entry error.
+The four-hundred-body ceiling stated as a range-ceiling value, qualified by suppression cost. "Into-the-fours" is a calibrated number (consistent with the NI's "four-hundred ceiling" at narrator:2). "Under-suppression-cost" is the qualifier that distinguishes this from a capability statement: 400 is not her capability ceiling, it is her harm-reduction ceiling at the cost she is paying. The range-ceiling field correctly tracks the operational ceiling, not the capability limit.
 
-Mild flag on `<old>` value phrasing — should be verified against b01c01 handoff_out exact language. Not escalating to reject; the comment inside the entry acknowledges the prior value, which suggests the author knows what the chain should say.
+The distinction matters for canon-mechanics: Taylor's capability range at rank 3 is higher than 400 bodies. The suppression-cost qualifier is the architecture — she is choosing this ceiling and paying to hold it there. The state field carries the choice, not the capability.
 
-`CORRECT (with note: verify <old> exact phrasing against b01c01 handoff_out canonical value; comment and entry field diverge slightly)`
+canon-consistent.
 
-**[state:3] @17 — `actor:taylor.internal-accounting.wren-status: unknown -> filed-as-ward-junction-contact-unnamed`**
+**state:10 @12 (prohibition-line: not-drawn-this-session -> drawn-at-ceiling-confirmed)**
 
-New field-extension: `internal-accounting.wren-status`. I am checking whether this is canon-consistent.
+The prohibition checked. @12 is the drawing-the-line bone — the completing gesture of the scene-A arc. The field tracks whether the prohibition has been confirmed in this session: it transitions from "not yet drawn" to "drawn at ceiling confirmed." This is the accounting-discipline field for Taylor's self-imposed rule. The phrasing "drawn at ceiling confirmed" is slightly verbose but the field-transition is clean.
 
-In Worm source, Taylor maintains an internal organizational system for her insects and for the people she monitors. She categorizes people by function — "the guy with the crossbow," "the girl with the knife" — before she has names. The `internal-accounting.wren-status` field tracks Taylor's internal categorization of Wren in exactly this mode: a function-label for an unnamed person in her coverage architecture. This is canon-Taylor cognitive behavior.
+canon-consistent.
 
-The field-extension comment documents the extension. The `<old>` is `unknown` (first-touch; no prior entry). The `<new>` is `filed-as-ward-junction-contact-unnamed` — the naming convention is internally consistent with the clinical register established in the chapter. Persistence: handoff_out confirms the categorization persists.
+**state:11 @15 (wren-recognition: unaware -> registered-as-junction-body)**
 
-This is a new field at a scene-B peak bone (@17 is in the peak-bones array, per the auditor's CURVE-SHAPE confirmation). State-update on a peak-bones-class bone is strongly expected by the rubric. The fire is correct and correctly timed.
+The wren-recognition field — Taylor's knowledge-state about Wren. The auditor flagged this as a potential RUBRIC-FIDELITY concern (fault-010): the `<new>` value "registered-as-junction-body" contains the substring "registered," which triggers the registration-vocabulary anti-pattern scan. The file's carve-out preamble defends this as operational-ledger vocabulary.
 
-NI co-citation at narrator:4 @17 present. Back=N.
+My canon read: "registered-as-junction-body" is the correct vocabulary for what Taylor is doing here. She is not noticing Wren (prohibited vocabulary); she is entering Wren into the coverage map as a categorized node. The distinction is real and canon-relevant: Taylor's perception of people in her feed is not registering-as-noticing, it is categorizing-as-data. The word "registered" in this field value is in the functional-ledger register, not the perceptual-awareness register. The carve-out is correct.
 
-`CORRECT`
+That said, the auditor's advisory recommendation (rename to "entered-as-junction-body" or "ledger-typed-as-junction-body") would remove the substring risk without losing any semantic content. I agree with the advisory. Not a block; the carve-out defends the current form.
 
-**[state:4] @24 — `actor:taylor.internal-accounting.coverage-map-recognition-event: not-yet-occurred -> occurred`**
+canon-consistent.
 
-New field-extension: `internal-accounting.coverage-map-recognition-event`. This is the chapter's moral-axis event: Taylor recognizes that the coverage architecture she has built is surveillance over forty-three non-consenting people — the Khepri-pattern in miniature.
+**state:12 @27 (wren-recognition: registered-as-junction-body -> filed-as-ward-junction-contact)**
 
-The field form `not-yet-occurred -> occurred` is a clean irreversible boolean. The naming (`coverage-map-recognition-event`) distinguishes the event of recognition from the status-of-recognition (state:5 at @25). That two-entry decomposition is the correct architecture for this moment: the event fires at @24 (the crack arrives), the suppression fires at @25 (the response to the crack).
+The recognition-status upgrade at the scene-B peak. Wren moves from a categorized feed-node to a filed contact. The Khepri-architecture surfacing: filing a person under a function-label without consent, without approach, without their knowledge. The `<old>` chain traces cleanly from state:11 @15. The `<new>` value "filed-as-ward-junction-contact" is consistent with the ledger vocabulary established at the chapter's prior-episode-bridge ("I held the count at its edge").
 
-From a canon-Taylor standpoint: the recognition pattern — "I built the thing I said I wouldn't build; I see it; I continue" — is the core arc of her Worm source characterization. The field-extension correctly captures an irreversible first-occurrence. `not-yet-occurred -> occurred` cannot be reversed; there is no entry type that writes it back to `not-yet-occurred`. This is the correct permanence.
+canon-consistent.
 
-NI co-citation at narrator:6 @24 present. Back=N. Field-extension documented.
+**states:13–17 (@40–@47 arc — moral_legibility_to_self field)**
 
-`CORRECT`
+The moral_legibility_to_self field tracks the crack-and-suppress arc in scene-C:
+- state:13 @40: crack-approaching -> crack-arrived
+- state:14 @41: crack-arrived -> crack-held (breath-hold)
+- state:15 @42: crack-held -> crack-suppressed
+- state:16 @43: crack-suppressed -> suppression-physical-correlate-executed (closes against the drain angle)
+- state:17 @47: suppression-physical-correlate-executed -> ledger-closed
 
-**[state:5] @25 — `actor:taylor.internal-accounting.coverage-map-recognition-status: unsuppressed -> suppressed-under-harm-reduction`**
+The three-bone crack-and-suppress decomposition is the chapter's canonical psychology test. The field architecture correctly separates: recognition arriving (state:13), held one beat (state:14), suppressed under prohibition (state:15), suppression executed as physical act (state:16), ledger closed with weight not discharged (state:17).
 
-New field-extension: `internal-accounting.coverage-map-recognition-status`. The chapter's SOFT-WATCH(1) required the recognition-event and its suppression to be structurally separate bones. They are. @24 fires the event; @25 fires the discipline applied to the event.
+This is the canon-Taylor suppression-beat structure. The recognition does not instantaneously close. She holds it one beat before the accounting fires. The will-to-suppress is a behavioral gesture, not a dissociative event. All five entries carry this correctly.
 
-The `<old>` is `unsuppressed` — a first-touch value implied by the recognition event having fired at @24. The entry comment notes the persistence ("absolute through chapter close") and the handoff_out confirmation ("first moral_legibility crack: coverage-map recognition suppressed under harm-reduction framing").
+canon-consistent.
 
-Worm canon check: the `harm-reduction framing` vocabulary is the AU-specific adaptation of Taylor's Worm-source suppression patterns. In Worm source, Taylor uses utilitarian cost-benefit accounting to suppress recognition of her own moral violations ("I am the lesser evil," "this is for the greater good"). The harm-reduction framing is the KL-122ac AU's version of that same cognitive mechanism, adapted to the Westerosi context. The AU acknowledges the divergence (KL geography, not Brockton Bay) without violating the character's established suppression architecture. This tracks.
+## Verdict basis
 
-NI co-citation at narrator:7 @25 present. Back=N. Field-extension documented.
+The actor-slice entries are canon-consistent. The fault-001 back=N systematic miss means none of them will survive stitcher routing until the proto-lines citation tokens are added. This is a mechanical fix (add ten citation tokens to seven proto-lines), not a content rewrite.
 
-`CORRECT`
+[state:8–state:17 cite-index back=N] — fixer must add citation tokens per fault-001 routing before this facet can be ruled ACCEPT. Content is sound; citations are the gap.
 
-## File-level read
-
-Five entries. No stat-increments posted as mid-chapter canonical state flips (the b01c01 concern with `capability_axis: 2 -> 3` and `social_tether_prot_axis: 1 -> 2` is not replicated here). The b01c02 actor entries are all field-extensions on `internal-accounting.*` — a sub-namespace that cleanly separates Taylor's ledger-operations from operational-mode fields (`deployment-state`) and physical-state fields (position, orientation). The sub-namespace architecture is consistent with canon-Taylor's established cognitive register.
-
-Chain integrity: the `<old>` phrasing on state:2 deserves verification against b01c01 handoff_out exact language (noted above as a soft concern). All other `<old>` values are first-touch or cleanly derived.
-
-SEAM-001 (env chain) is an acknowledged process gap in the preamble. The author knows it is there and has documented it. The chain is traceable via handoff_out; the gap is a citation-layer issue, not a content error.
-
-Back=N on state:2, 3, 4, 5 is a proto-lines citation-hygiene pattern. It means four of the five actor-state entries have no inline citation token on their anchor proto-lines. This is worth correcting in the Phase 2 cite-index maintenance pass, but it is not an error in the state-updates entries themselves.
-
-No power-mechanic legibility failures. No stat-increment-as-canonical-state-flip misuse. No cross-POV authority violations. No registration-as-state contamination. The file is clean.
-
-The chapter's two HARD findings (fault-002 vibes forward-citation, fault-003 loc-state continuity-misplacement) do not touch state-updates. No convergence with state-updates entries.
-
-## Convergence trace
-
-| Concern | Auditor finding | Overlap |
-|---|---|---|
-| state:2 `<old>` phrasing vs. b01c01 handoff_out exact value | Not flagged by auditor (auditor found zero CONTRADICTION findings) | No convergence; soft concern only from chain-integrity read |
-| SEAM-001 env chain gap | flag-004 (carve-out defended, SIGNAL) | Convergent — auditor and this reader reach same conclusion (process gap, not entry error) |
-| back=N on state:2-5 | Cite-index pattern; not escalated by auditor to state-updates fault | Consistent non-escalation |
-| No stat-increment misuse (per b01c01 concern) | Zero RUBRIC-FIDELITY findings on state-updates | Convergent |
+verdict: REVISE
+revise-basis: fault-001 (HARD) — actor-state back=N systematic miss requires proto-lines citation token additions; content canon-consistent post-fix

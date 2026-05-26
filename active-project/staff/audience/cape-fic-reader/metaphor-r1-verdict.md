@@ -1,39 +1,24 @@
-facet: metaphor
-episode: b01-c01
+---
 reviewer: cape-fic-reader
+facet: metaphor
 cycle: 1
+episode: b01-c02
+date: 2026-05-26
 verdict: accept
 ---
 
-# Adversarial reading — cape-fic-reader
+Zero entries. The capefic reader's attack question: is there a beat in this 47-bone chapter where the absence of a metaphor is a miss — where a comparison figure would deliver something the other facets cannot?
 
-## Attack surface: @12 ("the insects propagate")
+Working the two strongest candidates.
 
-This is the capability axis move — the first act of control, the prohibition crossed.
-Exactly the beat I lean forward for. The question is whether zero-fires is a miss here.
+@27 (scene-B peak-bone, relational_anchor_status +1.0, filing-without-contact): mem:2 is already deployed here with "a gesture in a hand that knows the motion" — that IS the comparison figure the metaphor layer would otherwise introduce. The memory-flag has pre-empted the slot. A metaphor at @27 would double the figure, and doubling a figure at a peak-bone is exactly the kind of marking-time move this reader flags. The file's refusal rationale is correct: AP3 (NI-redundancy with narrator:6), AP7 (peak-bone), and the mem:2 figure-pre-emption are three separate gates, all valid.
 
-It is not.
+@40 (scene-C peak-bone, moral_legibility_to_self crack-arriving): no memory or feeling anchor at @40 — AP1 fires directly. The scene-map's protected pattern (recognition-holding-suppression @40-@42) is action-progression, not a metaphor-eligible zone. AP7 (peak-bone) stands. No dark-humor exception: "the count is no longer clean" is recognition-horror, not sardonic deflation. Correct refusal.
 
-Six facets are already stacked at @12. The threshold-crossing — "prohibition-crossed-before-it-was-filed" — is already delivered by the vibes/state/NI layers at full load. What would a dark-humor metaphor add? It would double the reveal I've already received. That's not a reveal; that's an echo. The cape-fic reader's problem with echoes is that they mark time — and any line that marks time at a peak is a line I skim.
+The zero-fire outcome is not an absence of charge — it is the right call on a chapter whose figurative weight is already carried by the memory facet's monument-cues and the vibes layer's keyword bundles. Introducing a metaphor into a chapter this densely stacked on those channels would redundancy-pile, not deepen.
 
-The dark-humor exception in AP7 requires feel:2 co-located at the protoline. feel:2 is at @10, two bones prior. The licensed-by field cannot reach back; the anchor is dislocated. If you try to fire here without the anchor, you've bypassed an established cost — which is exactly the hot button I flag hardest.
+# Callouts
+None.
 
-**Callout [metaphor:@12]** @12 — zero-fire hold correct. The six-facet pile-up already delivers the reveal. A metaphor here would mark time by doubling what's stacked; the dark-humor exception cannot reach a dislocated feel:2 anchor.
-
-## Attack surface: @21 ("oswyn-mudway-flea-bottom-elder takes the lane-mouth")
-
-Seven facets at @21. mem:2 at @26 deploys the witch-label comparison figure. This is an ordered reveal — the witch-label assembles here at @21, and the naming (the comparison figure) lands five bones later at @26.
-
-A metaphor at @21 that fires in callback register would be the most direct violation of earned-sequence I track: deploying comparison content before the payoff beat. mem:2 IS the payoff. AP4 applies directly and correctly.
-
-**Callout [metaphor:@21]** @21 — zero-fire hold correct. mem:2 @26 is the earned payoff beat; a metaphor at @21 in callback register would preview the comparison figure and strip mem:2 of its reveal function. Sequencing is information architecture; the refusal protects it.
-
-## File-shape assessment
-
-Zero-fire outcome on a low-charge opening chapter with all available anchors either dislocated, redundant, or covered by downstream memory-flags. The refusal is structurally correct from this reader's perspective. No SKIP-MISSED finding.
-
-## Verdict
-
-**ACCEPT**
-
-Zero-fires is correct for b01c01. Both peak-bone refusals protect earned-sequence and avoid doubling already-delivered reveals. No demand from this lens for a metaphor fire at either attack surface.
+# Convergence
+No auditor findings on metaphor (the METADATA-INCONSISTENCY finding fault-002 concerns the R2-decisions.md shard having b01c01 coordinates — a provenance note, not a content issue). Zero-fires are correctly defended.

@@ -1,78 +1,79 @@
 ---
 reviewer: worm-canon-pedant
 facet: interest-narrator
-cycle: 1
-episode: b01-c02
-date: 2026-05-25
-verdict: accept
+episode: b01c02
+phase: 5b-adversarial
+date: 2026-05-26
+verdict: ACCEPT
+auditor-overlap: fault-005 (AP10 pair narrator:3/narrator:10 — carry to 5b); fault-008 (exposition:4 pronoun-absent bridge — different facet; NI adjacency via @15 cross-fire)
 ---
 
-# Verdict reasoning
+# interest-narrator — adversarial read (b01c02, 47-bone)
 
-Nine entries. Declared attack surfaces: flag-002 (density 31%), flag-007 (X-was-Y chassis 33%), flag-009 (feel/NI adjacent registers @17). I add my own scan: Earth-Bet proper-noun sweep, channel-canon consistency against the behavior pack, voice-register fidelity to the base card, doubled-register discipline (interior stays base-register; no mask-register bleed; no Earth-Bet monument named in full).
+Twelve entries (narrator:7 deleted in R2; IDs 1–6, 8–13 active). Declared attacks: fault-005 (AP10 chassis at narrator:3 @12 and narrator:10 @42 — the prohibition-drawn-twice pair) and fault-008 (exposition:4 pronoun-absent bridge @15, voice-fidelity concern). Plus my independent scan: power-mechanics canon consistency, voice register, Earth-Bet noun fence across all active entries.
 
-narrator:1 @6 — "the 200 was the working ceiling and she had just spent into the 400; the suppression overhead would price out by midday."
-Cost-tracking, prohibition-maintenance. "The 200 was the working ceiling" — the suppression has a calibrated threshold she tracks quantitatively. This is consistent with Taylor's power-management behavior (Worm arc 4+: she calibrates range and density against her conscious attention ceiling; the range extension has a cost she tracks in real time). "Suppression overhead" is mechanism-descriptive vocabulary, not Earth-Bet jargon. No proper noun. Voice: cost-language, inventory-tell, concrete metric ("200," "400"). Base-register. Channel: cost-tracking. Tracks.
+## Four-hundred-body suppression cost (narrator:2 @11)
 
-narrator:2 @7 — "the prohibition was named before the range was extended, in that order, so the order would be the thing the morning had said."
-Self-rationalization tracking. The prohibition is a self-imposed rule — consistent with Taylor's behavior of creating operational constraints for herself and then watching how she violates them (Worm arc 8, 11, 14: she sets rules about what she won't do and subsequently observes herself crossing them, usually with a logical step she has already prepared). "So the order would be the thing the morning had said" is the constructed narrative she will use to remain inside her own stated constraints. No Earth-Bet noun. Voice: base-register interior accounting, not mask-register. Channel: pre-calc / self-monitoring. Tracks.
+This is the first canon-mechanics test I run in this facet. narrator:2 @11: "the suppression-cost rises with the range; the four-hundred ceiling has just been paid for in the back of her skull."
 
-narrator:3 @15 — "the function-signature came back connector-type, which was a category the map had not needed to carry until this body crossed the threshold-stones."
-The map taxonomizes contacts. "Function-signature" is mechanism-descriptive vocabulary; "connector-type" is a category assignment within the map. Canon behavior: Taylor categorizes contacts by role and function (Worm arc 6, 14: she assigns behavioral roles to civilians, threats, assets). The "map had not needed to carry until this body" framing is the honest statement that the map grew to accommodate a new input — not that she planned the category in advance. No Earth-Bet noun. Channel: passive fauna-feed → function-assignment. Voice: inventory-tell, base-register. Tracks.
+The entry co-fires with state:8 (coverage-mode flip) and state:9 (range-ceiling: into-the-fours-under-suppression-cost). Together they carry the scene-A peak mechanism: range extension to 400-body count is the working ceiling, and the extension is paid in somatic cost (felt in the skull — the physical correlate of the attention-ceiling in the insect-feed).
 
-narrator:4 @17 — "the ward-junction contact filed itself in the fold she kept for the entries that did not enter the ledger, and the filing took less hesitation than it had the first time she did it."
+Canon check: Taylor's range management in Worm is explicitly attention-bound. She cannot maintain full awareness of more insects than her focus allows; extending range has a cognitive/physical cost. The "four-hundred ceiling paid in the back of her skull" is the correct form for this: it names the somatic register (not a metaphor, a location — back of her skull), it names the ceiling as a calibrated number (not vague), and it names it as already paid (past tense — the cost landed before she registered it consciously). That is canon-Taylor power-mechanics behavior: she tracks costs as they land, not in advance.
 
-Canon check first: does the doubled-register hold? "Filed itself" — passive for an act she's doing; consistent with Taylor's way of treating her own information-management as something the system does rather than something she chooses. "The fold she kept for the entries that did not enter the ledger" — the concealment-accounting structure. This maps to Taylor's behavior throughout Worm (she maintains parallel internal models: what she knows, what she allows others to know, what she will not acknowledge externally). No Earth-Bet noun. No mask-register bleed. Voice: base-register. Channel: cost-tracking / self-monitoring. Register: PASS.
+The count being "suppression cost" rather than a direct capability limit is also canon-correct. The 400-body ceiling in this chapter is not an absolute power limit — it is the ceiling at which harm-reduction framing permits the range, and the suppression is the cognitive labor of holding the power at that scope and no further. That is distinct from capability range, which is higher. The distinction matters: this is atonement-architecture, not power-capping. The NI facet carries it correctly.
 
-Specific concern: "the filing took less hesitation than it had the first time she did it." Canon-consistency question: has there been an established first-time event in this project canon, and if so, is the b01c02 chapter treating that event correctly? The first-time reference requires a prior canonical moment in the project timeline. If b01c01 established a first-filing event (a first contact filed in the concealment ledger), the comparative is canon-consistent. If b01c01 did not establish this, the reference introduces a lore-gap — knowledge that has no in-world path I've been shown.
+Tracks.
 
-I cannot verify this from the facet file alone. The worm-canon-pedant's concern is not with Worm proper canon here (the project's premise is Taylor-in-Westeros; this is project canon) but with the project's own internal coherence: character knowing something they haven't been shown to have done yet, or referencing a prior act without the reader having a path to it. If b01c01's narrator facet established "narrator:6 @27 — she filed the registration in the same fold where she kept the things that did not enter the ledger" (which I confirmed from the b01c01 verdict read), then the first-time filing is established: Wren's predecessor contact (the ward, b01c01) was the first filing event. The "first time she did it" refers back to b01c01 narrator:6.
+## Alley-back dropout as suppression receipt (narrator:12 @10)
 
-Running that resolution: b01c01 narrator:6 @27 established the filing pattern. b01c02 narrator:4 @17 fires on the second filing event (Wren as ward-junction contact). "Less hesitation than it had the first time" is the correct comparative against b01c01:27. The project-internal precedent exists.
+R2 addition. "the alley-back went silent before the head turned; the dropout was the receipt for the range she had not yet committed to take." This is the precursor beat to narrator:2 — the alley-back dropping from the feed (@10) is the somatic signal that the range-extension is already happening, before Taylor consciously commits to it. The "receipt for the range she had not yet committed to take" is the canonical power-mechanics observation: the insect-net moves toward where her attention goes, before deliberate deployment. Taylor's insects preemptively extend in the direction of her interest. That is source-accurate. The cost arrives as a receipt before the transaction is consciously registered — correct for her pre-deliberate power-behavior pattern.
 
-However: I have no callback token in narrator:4 pointing me to that prior event. No `[mem:1]` or `[narrator:6 b01c01]` reference in the entry. The b01c01 firing is implicit, not flagged. Under the cape-fic-reader's "character knowing something they haven't been told" hot button, this is a mild lore-presentation concern. Under my standard: if the information exists in project canon (it does — b01c01 narrator:6) and the narrator is the same continuous POV character, the comparative is not a canon violation; it is a presentation-coherence question that sits at the reader-experience layer rather than the accuracy layer.
+Tracks.
 
-ACCEPT with note. The comparative is internally consistent with b01c01 canon. The presentation-coherence concern (no callback token) is a reader-experience issue, not a canon violation. I note it for convergence.
+## Prohibition-drawn-twice pair (narrator:3 @12, narrator:10 @42)
 
-narrator:5 @18 — "the gap in the coverage map was the wrong shape — negative-space cut to the contour of one body, and she had cut it."
-Map-as-accounting. The gap is shaped like a specific person — the negative-space record of a deliberate exclusion. "And she had cut it" — self-implication past-perfect. Canon behavior: Taylor's maps are deliberate constructions; gaps in them are not accidents but choices (Worm arc 6, 9: she deliberately excepts certain targets from her range when she cannot afford to care about them). The self-attribution of the cut is correct canon register. No Earth-Bet noun. Channel: cost-tracking / self-monitoring. Voice: inventory-tell, base-register. PASS.
+The auditor's fault-005 flags this as the AP10 chassis-recurrence pair and carries it to Phase 5b as an audience-attack candidate. My job is to rule on it.
 
-narrator:6 @24 — "the count stalled at the edge it had been built to stall at; what was on the other side of the stall was the recognition she had set the architecture to hold off."
-Pre-built suppression against self-recognition. This is the strongest canon read in the file. Taylor builds operational architectures in advance to manage what she cannot afford to acknowledge in the moment (Worm arc 12, 14, 16: she pre-builds behavioral rules that take over when active processing would produce paralysis). "The architecture to hold off" is consistent with how she manages information she cannot yet integrate. Third X-was-Y chassis; on the chapter's peak-bone; earns the template. No Earth-Bet noun. No mask-register. Channel: pre-calc / suppression-architecture. Voice: base-register, cost-language. PASS.
+narrator:3 @12: "the prohibition is the same prohibition she set herself; the line holds at the ceiling and not past it."
 
-narrator:7 @25 — "she drew the line a second time, knowing the second drawing did not retract the first crossing — only catalogued it under a name she could keep using."
-The naming-evasion mapped exactly. "Catalogued it under a name she could keep using" — this is Taylor's information-management technique applied to her own moral accounting. She does not resolve the crossing; she files it under a label that lets her continue. Canon-consistent with post-arc-14 Taylor's relationship to her own rule violations (she names them in ways that permit continuation rather than confrontation). No Earth-Bet noun. No monument-name. Voice: base-register. Channel: self-monitoring / cost-tracking. PASS.
+narrator:10 @42: "the line is the same line she drew at the alley-mouth; she draws it now in the same hand."
 
-narrator:8 @16 — "she stepped out of the lane-mouth a half-beat before the body reached it; the yielding was the cover and the cataloguing was what the cover was for."
-Doubled-action decoded. Social move as data-collection. Canon behavior: Taylor uses social cover actions to position herself for information acquisition (Worm arc 4-8: she manages her presentation in high-observation environments; the visible action is often not the operative one). "The yielding was the cover and the cataloguing was what the cover was for" is precise — the social geometry of the Westerosi lane-mouth creates a plausible deniability context for data collection. No Earth-Bet noun. Channel: pre-calc / cost-tracking (cataloguing-as-mission). Voice: base-register. PASS.
+The AP10 definitional-collapse chassis ("X is the same X") appearing twice in a 12-entry NI file is 16.7% — below the 40% saturation threshold. The auditor's defense: the pair is load-bearing (the second drawing IS the chapter's central reading, atonement-as-repetition). R2 deleted narrator:7 (the third instance at @29) precisely because three fires would have crossed into saturation.
 
-narrator:9 @29 — "the breath came out longer than the morning's had; the suppression overhead had priced through and the ledger had closed without recording the cost it closed under."
-Chapter close. "The suppression overhead had priced through" — the cost reached and cleared the threshold. "The ledger had closed without recording the cost it closed under" — the suppression mechanism itself suppressed the record of suppression cost. This recursive structure is canon-consistent: Taylor's concealment architecture applies to the concealment machinery itself (Worm arc 14-16: she does not maintain external records of her real accounting). Temporal comparison ("longer than the morning's had") frames the chapter as a complete unit. No Earth-Bet noun. Channel: cost-tracking / suppression-closure. Voice: base-register. PASS.
+My attack on this pair: does the second instance earn its chassis, or is it the author using a comfortable template twice?
 
----
+narrator:3 is the scene-A peak's shadow entry (@12 is a peak-shadow-bone for scene-A, co-cited with mem:1). The prohibition checked at the ceiling is the completing gesture of the range-extension. This is the first time in b01c02 the prohibition-line is drawn. Earned.
 
-File-level canon check:
+narrator:10 is the scene-C peak's shadow entry (@42 is a peak-shadow-bone for scene-C, co-cited with mem:3). The prohibition drawn in "the same hand" is the chapter's central claim made explicit: the architecture is self-sealing, the same gesture closes the same entry, and the hand doing it has not changed from the morning. This is the chapter's argument stated clearly at its close. The "same hand" framing distinguishes it from a simple repetition — it is not "the same prohibition again" (which would be repetition-as-cycle), it is "drawn in the same hand" (which is architecture-as-identity). The person who drew the line to enable the surveillance is drawing the line to suppress the recognition — it is the same person doing both, and the chapter knows it.
 
-Earth-Bet proper-noun scan: Brockton Bay — absent. Skitter — absent. Khepri — absent. PRT — absent. Endbringer — absent. Gold Morning — absent. Cauldron — absent. Shard — absent. Manton effect — absent. Shaker ratings — absent. Dance specific names — absent. PASS.
+I would have flagged a weaker second fire. This one earns it. The monument co-citations (mem:1 at scene-A, mem:3 at scene-C) make both entries structurally anchored rather than floating chassis applications. The pair is the prohibition-twice beat that is the chapter's specific claim about atonement-as-repetition in Taylor's psychology.
 
-Voice-register scan: all nine entries in base-register interior voice. No mask-register bleed. No formal Westerosi address structure in interiority. No anachronistic idiom. No "I feel" / emotional declaration. No hyperbole. X-was-Y chassis at 33% — named ACCEPT signature for cost-language register; three entries, all load-bearing. PASS.
+No revise. Auditor carried it correctly; I agree.
 
-Channel diversity: cost-tracking (narrator:1, narrator:5, narrator:7, narrator:9), pre-calc / self-monitoring (narrator:2, narrator:3, narrator:6, narrator:8), suppression-architecture (narrator:6), concealment-accounting (narrator:4, narrator:7), passive-fauna-to-function-assignment (narrator:3). Minimum three distinct channels required; five delivered. PASS.
+## Exposition:4 voice-fidelity concern (narrator:13 @15 adjacency)
 
-Doubled-register discipline: no Earth-Bet monument named. The "fold she kept for the entries that did not enter the ledger" is behavioral-register vocabulary (the concealment ledger), not an Earth-Bet proper noun or Dance specific. The recognition "she had set the architecture to hold off" names the suppression function without naming what it suppresses. The clamp holds throughout. PASS.
+fault-008 targets exposition:4 @15 ("Days of it, and the pattern came.") — pronoun-absent POV-frame bridge. The auditor flagged it as a worm-canon-pedant audience-attack candidate.
 
-Lore-gap scan: one concern — narrator:4's "first time she did it" requires a prior canonical instance. Resolution: b01c01 narrator:6 @27 establishes the first filing event (the ward, unnamed, b01c01). The comparative is internally consistent with project canon. The absence of an explicit callback token is a presentation concern, not a canon violation. Noted.
+The NI facet has narrator:13 at the same anchor: "the insects returned a body as a junction-signature; the map had not yet carried a slot for that body-type." This is Taylor's interior voice describing what the feed produced — third-person functional register, no "I," no pronoun. The same register as exposition:4.
 
-# Entry-level callouts (revise / fail only)
+My ruling on the exposition voice concern: "Days of it, and the pattern came." reads in canon-Taylor's compressed temporal-summary register. Post-Gold-Morning Taylor compresses elapsed time as accounting notation, not narrative. "Days of it" = duration logged. "The pattern came" = pattern-recognition event registered. No pronoun because the register is accounting-book, not diary. This is not authorial voice intruding; it is Taylor's own cold-utilitarian compression in its most stripped form. Canon-consistent.
 
-None. All nine entries pass canon-consistency, voice-register fidelity, and doubled-register discipline checks.
+The note the auditor raised — that a strict-first-person chapter reader might read this as omniscient narration — is a presentation concern, not a voice-fidelity failure. The NI entry at the same anchor (narrator:13) confirms the register: the interiority at @15 is Taylor receiving the feed's output, not an external narrator describing her. The two entries together hold the register correctly even if the exposition entry alone reads ambiguous.
 
-# Convergence trace
+No revise on voice-fidelity grounds.
 
-flag-002 (NI 31% above 25% ceiling) — structural artifact of mandatory co-citation requirement on 29-bone chapter; confirmed per auditor flag-002's own analysis. No canon-consistency consequence. Per-entry canon accuracy holds across all nine.
+## Khepri-architecture at scene-B peak (narrator:6 @27)
 
-flag-007 (X-was-Y chassis 33%) — three instances; all three are at-canon ACCEPT signature for cost-tracking register. Below 40% threshold; no escalation. The template is a named base-register tell (cost-language, inventory-tell); its recurrence is voice-consistent, not a canon violation.
+"the ward-junction contact has been filed without contact; the ledger has a new entry and no signature against it."
 
-flag-009 (TASTE-FLAG feel:1 + narrator:4 adjacent registers @17) — confirmed as reader-experience concern. Under my standard: the two entries cover distinct register channels (somatic stillness vs. cognitive hesitation-comparison). No canon violation; the canon behavior (Taylor noting both bodily response and cognitive-accounting response at the same moment) is correct. The presentation-adjacency concern is at the reader-experience layer, which is this reviewer's secondary scope. Noted for the other reviewers' verdicts; not a basis for my revise.
+This is the Khepri-architecture surfacing in the NI channel. The categorize-without-consent gesture rendered as a ledger entry with no signature — this is the correct Khepri-residue framing. In the Worm source, Khepri's architecture was the ultimate form of filing-without-consent (overriding millions of nervous systems). Here it is the miniature: filing a person under a function-label without their knowledge or consent. The "no signature against it" is the precise absence that makes this an un-priced entry — the ledger accepts it, Taylor accepts it, Wren has not signed anything.
 
-Comparative clause in narrator:4 — project-internal canon resolution confirmed (b01c01 narrator:6 @27). Presentation concern (no callback token) noted but below my threshold for revise. Other reviewers may rule differently based on reader-experience stakes; that is within their scope.
+The mem:2 co-citation at the same anchor (@27) carries the Earth-Bet displacement — "the gesture of filing a body under a function-label moves in a hand that knows the motion." The NI and memory channels are doing complementary work here: NI carries the cognitive act, memory carries the architecture-residue recognition. Clean distribution.
+
+Earth-Bet noun fence: CLEAN across all twelve active entries.
+
+## Verdict
+
+No flags fired. The four-hundred-body suppression cost is canon-precise. The alley-back dropout mechanism is correct. The prohibition-twice pair earns its chassis through monument co-citation and structural function. The exposition voice concern is a presentation question, not a canon violation. The Khepri-architecture surface at @27 is the chapter's central canonicity test and it lands in the right register.
+
+verdict: ACCEPT

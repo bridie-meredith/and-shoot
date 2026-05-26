@@ -210,3 +210,46 @@ notes:
   - s03: crack-and-suppress: suppression is willful (behavioral gesture) not dissociative; consistent with b01c12 pattern; off-ledger status for the recognition is canonical (ledger opens on decisions, not recognitions); three-entry closing procedure is mechanically honest and makes the cost-bearer's filing indistinguishable from ordinary ward data at the accounting level — which is the architecture's problem in the long run
   - no flags fired; no lore-leaks; no fence violations; soft carry from b01c01 Phase 6 (s02n07+n08 directionality watch to stitch) carries forward unchanged
   - b01c07 prose-burden soft finding carries forward to b01c07 /and-write
+
+---
+
+## /and-write b01c02 revise Phase 4 trim — 2026-05-26
+
+### File-level verdict
+ACCEPT
+
+### Per-bone deletion proposals
+- s03n02: DELETE (procedural placeholder — "the insects return from the lane-mouth sweep" names a generic sweep return with no specific content; the seam between s02 and s03 is adequately marked by s03n03 alone, which enacts the time-change as a physical actor doing real perceptual work; s03n02 carries no axis-held rationale that s03n03 or s03n04 does not already cover; weakest SVO in the file)
+
+### Earth-Bet noun-fence check
+PASS — all 47 SVOs use functional descriptive language ("the insects," "the feed," "the ward-junction," "threshold-stones," "compound eyes"); no parahuman jargon anywhere in the bone set; no Khepri, no parahuman, no shard, no Manton, no trigger-event; inner-monologue-rare cap not tested at bone level (no Gold Morning reference in this chapter's bones); fence clean
+
+### Khepri-architecture surfacing read
+The chapter's Khepri-residue surface is carried by three sequences: the filing-without-contact (s02n12 + s02n13), the gap-held-as-feed-event (s02n14 + s02n15), and the three-bone recognition-and-suppress (s03n11 + s03n12 + s03n13). All three land as canon-Taylor psychology. The filing-without-contact is enacted as a body-turn rather than as a named ethical stance — Taylor physically turns from the alley-mouth, which is correct: her prohibition is behavioral discipline, not intellectual position. The gap as attenuated signal (insects return the junction-lane attenuation; insects reach the junction-lane edge) encodes Wren's absence as what the physical actors do, not as a labeled void — this is mechanically precise and reads as Taylor's genuine perceptual mode. The three-bone suppression sequence honors the canonical beat structure: recognition does not instantaneously close in Taylor; she holds it (breath-hold, s03n12) before the accounting fires. The second draws-the-line (s03n13) echoing s01n12 is the Khepri-rhyme completing: the same prohibition gesture that pre-priced the act is the one that seals the recognition — architecture and accounting are the same gesture, which is the chapter's whole argument. No residue handwaved; no architecture under-cooked.
+
+### One-sentence read
+The 47-bone revision earns ACCEPT: mechanism grounding is calibrated to be useful for the canon-naive reader without patronizing the canon-familiar one, the Khepri-architecture surfaces through enacted behavior rather than labeled psychology, and the one deletion candidate (s03n02) is a thin placeholder rather than a carrying bone.
+
+---
+
+## /and-write b01c02 revise Phase 6 bone-gate — 2026-05-26
+
+---
+reviewer: worm-canon-pedant
+chapter: b01c02
+phase: write-bone-gate-revise
+date: 2026-05-26
+scenes_reviewed: [b01c02s01, b01c02s02, b01c02s03]
+---
+
+## scene b01c02s01
+verdict: SUBSTANCE-FELT
+s01n09 ("the insects hold four hundred bodies in the feed") and s01n10 ("the alley-back drops from the feed") are the two bones I came to adjudicate specifically, and both track. Four hundred simultaneous bodies in feed-attention is the correct count-register for rank 3 harm-reduction scope in a single ward: above beginner Skitter range, well below Gold Morning density, calibrated to this chapter's "deliberate but contained" arc. The peripheral dropout (alley-back going dark under the attention-weight) is exactly how feed-extension works in canon — attention is finite, a directional push costs coverage in the opposite zone. The cost is named as a physical event in the feed, not asserted as a metaphor. The opposing force is present: the prohibition-line ("reads ≠ directs," n12) holds and is believed, but the suppression cost is already being paid in n10. The framework holds at crack-not-breach because the line is real; the cost is real because nothing is free. No flags. Earth-Bet noun fence clean at bone level (no parahuman jargon in SVOs or axes_held rationales). SUBSTANCE-FELT.
+
+## scene b01c02s02
+verdict: SUBSTANCE-FELT
+The Khepri-architecture surfacing at s02n12 and s02n13 is the primary canonicity test for this scene. s02n12 ("taylor-hebert-kl-122ac turns from the alley-mouth") enacts the not-looking-closer as a body-turn, which is correct: Taylor's prohibition is behavioral discipline, not intellectual position. She does not deliberate; she turns. That is canon Taylor. s02n13 ("the insects file the ward-junction contact") at relational_anchor_status +1.0, null cost_ledger_anchor: the null anchor classification holds as correct architecture — the third time this pattern appears across the project, and the third time it reads as structural, not evasion. The off-ledger opening is the drama; the weight-of-not-pricing is what the axis is tracking. The gap encoded at s02n14 and s02n15 — insects return the junction-lane attenuation; insects reach the junction-lane edge — is physically correct feed-behavior: Taylor reads absences as real topographic features, and the absence is encoded by what the physical actors do (reach a boundary, stop) rather than by an abstract void-label. The reorder of s02n07–n11 (crossing → admission → yield → function-signature → connector-type) fixes the prior retrospective-classification issue; classification now arrives through the live encounter, which is how the feed actually processes in canon. Axis-Δ math exact (+1.0). Opposing force present (Wren's network-centrality producing coverage gaps everywhere Taylor cannot follow). SUBSTANCE-FELT.
+
+## scene b01c02s03
+verdict: SUBSTANCE-FELT
+The three-bone crack-and-suppress decomposition (s03n11 recognition/stall → s03n12 holds the breath → s03n13 draws the line) is the Khepri-psychology test for this scene, and it passes the specific test: the recognition does not instantaneously close in Taylor. One holding-beat (breath-hold, s03n12) exists before the suppression fires. That is canon-true — Taylor holds things one beat before the accounting closes over them; the beat is not drama, it is mechanism. The stall is causally attached to the ward-junction entry via s03n09 and s03n10 (accounting reaches the ward-junction entry → ward-junction corner returns the junction-lane void) rather than arising as a standalone interior event: Taylor's recognition arrives through arithmetic, not through feeling, which is the correct register. The second draws-the-line (s03n13) echoing s01n12 is the Khepri-rhyme completing cleanly — same gesture, same prohibition, architecture and accounting identical. The suppression is willful (behavioral gesture), not dissociative; consistent with the b01c12 Khepri-word-suppression pattern in the substance records. Moral_legibility_to_self +1.0 at n11 is within tolerance (target 0.5, floor 1.0 accepted at original gate). Cost paid: the recognition arriving unpreventable is the cost — Taylor cannot route around her own arithmetic. No parahuman jargon in SVOs or rationales. SUBSTANCE-FELT.

@@ -898,6 +898,224 @@ supersedes: null
 
 ---
 
+## PROP-0006
+
+```yaml
+id: PROP-0006
+created_at: 2026-05-26T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/facets-final-audit.md + active-project/staff/audience/worm-canon-pedant/vibes-r1-verdict.md
+  source_verdict: "Phase 5b cycle 1 REVISE (vibes) — auditor Phase 5 CONSTRAINT Earth-Bet hard-fence scan returned CLEAN but worm-canon-pedant independently found Earth-Bet fence hits inside vibes keyword token arrays (gold-morning-refusal in vibes:2; khepri-rhyme in vibes:13); resolved by fixer keyword-replacement in cycle 1 before /and-stitch"
+target:
+  type: command
+  path: .claude/commands/and-facets.md
+  section: "Phase 5 — AUDIT: single auditor dispatch / Audit classes / CONSTRAINT / Earth-Bet hard-fence proper-noun scan"
+change_type: modify
+rationale: |
+  The auditor's Phase 5 CONSTRAINT Earth-Bet hard-fence proper-noun scan is described as a
+  "case-insensitive substring scan against the Earth-Bet proper-noun list across every text field
+  of every facet entry." The scan explicitly states: "Names to scan ... Any hit is HARD; emit
+  [<facet>:<id>] @<proto> — earth-bet-hard-fence — <name> at <field>: <surrounding-text>."
+
+  In b01c02, the auditor's scan passed the vibes facet as CLEAN. It listed the entry-level
+  keyword handles in its scan trace ("Keyword arrays: cost-signature-range-bound,
+  atonement-as-repetition, ...") but did not walk the individual token strings inside each
+  entry's bracket-enclosed token array. Two fence violations were present inside token arrays:
+
+    vibes:2 ("atonement-as-repetition") — token "line-drawn-at-twelve-in-same-hand-as-gold-morning-refusal"
+      contains substring "gold morning" (fence list entry: "Gold Morning")
+    vibes:13 ("surveillance-architecture-legible") — token "accounting-structure-readable-as-khepri-rhyme-by-audience-not-taylor"
+      contains substring "khepri" (fence list entry: "Khepri")
+
+  The worm-canon-pedant independently identified both at Phase 5b and escalated them as
+  independent REVISE bases. Fixer resolved both via keyword replacement in cycle 1.
+
+  The structural gap: the auditor's scan treats the vibes facet entry as having two levels
+  of text fields — the entry-level keyword handle and the bracket-enclosed token array — but
+  only scanned the first level. The scan spec says "every text field" and the command body
+  CONSTRAINT section notes "Slug components matter: a margit-referral slug embedding
+  `khepri-` or `gold-morning-` is a hard-fence violation even when no full English phrase is
+  rendered." Token array strings are text fields by any reading, and the scan's stated
+  scope must include them. This is a scope-description gap that caused two HARD-class
+  findings to be caught only at Phase 5b (audience) rather than Phase 5 (auditor CONSTRAINT),
+  which is the authoritative gate for this class. The failures were non-catastrophic (fixer
+  resolved in cycle 1), but the CONSTRAINT class is the mechanical backstop for fence
+  violations; relying on audience adversarial review to catch HARD CONSTRAINT items is
+  a gate-gap, not just a taste call.
+evidence_refs:
+  - "active-project/staff/audience/worm-canon-pedant/vibes-r1-verdict.md — vibes:2 'gold-morning-refusal' finding (lines 25-43); vibes:13 'khepri-rhyme' finding (lines 61-67)"
+  - "active-project/staff/auditor/facets-final-audit.md — CONSTRAINT section, Earth-Bet hard-fence scan: CLEAN declaration + auditor keyword-array scan trace (lines 111-118) — shows auditor listed keyword handles, not sub-tokens"
+  - ".claude/commands/and-facets.md — Phase 5 CONSTRAINT § Earth-Bet hard-fence proper-noun scan clause: 'case-insensitive substring scan ... across every text field of every facet entry'; also: 'Slug components matter: a margit-referral slug embedding khepri- or gold-morning- is a hard-fence violation'"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-facets.md, the CONSTRAINT section's Earth-Bet hard-fence proper-noun
+  scan clause, add explicit enumeration of vibes token array scope.
+
+  Current text (from "Earth-Bet hard-fence proper-noun scan" through the vibes entry in the
+  example scan-target list):
+    "vibes entity-target-primary fields"
+
+  Proposed addition — after "vibes entity-target-primary fields", add:
+    "vibes token arrays (for every vibes entry, scan EACH individual token string inside the
+    bracket-enclosed [ ] bundle separately; the scan must walk token-by-token, not stop at
+    the entry-level keyword handle; a token containing a fence-list substring is a hit
+    regardless of how the token is hyphenated or whether the surrounding context qualifies
+    the name — the fence is a substring scan, not a semantic check)"
+
+  Additionally, the scan trace the auditor writes to the audit report should be required to
+  confirm per-token coverage explicitly. Add a one-line audit note requirement:
+    "For the vibes facet, the auditor must confirm: 'Vibes token arrays scanned token-by-token:
+    <n> entries × ~<avg-token-count> tokens each.' A scan trace that lists only keyword handles
+    does not satisfy the per-token requirement."
+
+  This is a single-paragraph clarification of existing scope. It adds no new fence targets and
+  does not change the HARD disposition of any hit. Cost: S (one clause addition to one section
+  of one command body, plus a one-line scan-confirmation note in the same section).
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0007
+
+```yaml
+id: PROP-0007
+created_at: 2026-05-26T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: postop
+  source_report: active-project/staff/reviews/pleasure-read-b01-c02-2026-05-26-postop.md + active-project/staff/reviews/audience-worm-canon-pedant-b01-c02-2026-05-26-postop.md
+  source_verdict: postop-convergence:divergent (Fork A substance DELIVERED clean; Forks B+C converge on compound-noun saturation prose-surface tic)
+target:
+  type: command
+  path: .claude/commands/and-write.md
+  section: "Phase 1 — Scene-decomposition step 5 (SVO discipline) + Phase 6 HARD/SIGNAL classification table"
+change_type: modify
+rationale: |
+  Two independent postop reports (Fork B naive cold-read + Fork C worm-canon-pedant) converge
+  on compound-noun saturation as a prose-surface tic in b01c02. Fork B: "compound-hyphenated
+  nouns ('ward-junction,' 'fever-cluster,' 'threshold-count,' 'junction-signature') at five per
+  paragraph numb the ear." Fork C: "'threshold-stones' appearing four times in the first half
+  threatens to become a term-of-art rather than a description." This is confirmed recurrence:
+
+    Occurrence 1 — pl-2026-05-25-013 (b01c01 /and-stitch Phase 9 cold-read): "prose dense with
+    hyphen-compound nouns (angle-wall, lane-mouth, chin-lift)... I had to reread the middle
+    three times to confirm an event was happening." Filed as SOFT parking-lot item at first
+    occurrence.
+
+    Occurrence 2 — b01c02 postop Forks B + C (this dispatch): independent convergence from two
+    readers across a chapter revised specifically to add substance-grounding. The depth-pass
+    succeeded at substance delivery (Fork A: all 12 dimensions DELIVERED) but introduced
+    compound-noun saturation as a new prose-surface tic. The bones authored at /and-write
+    revise --from-signals contain many compound-noun tokens by design; the stitcher renders them
+    faithfully under the bone-faithfulness fence and Q9 cannot touch them. From and-stitch.md
+    Phase 7/Phase 1 scene-window Q9 anti-jargon rule: "Q9 hits in bones themselves are upstream
+    faults: emit FAULT-BONE-AUDIT-MISS and render the bone as-is — Phase 7 cannot REWORD a
+    bone-content compound without violating bone-faithfulness."
+
+  The root cause is upstream: the screen-writer at Phase 1 has no guidance about compound-noun
+  economy in SVO authoring, and Phase 6 has no AP-SCAN check for compound-noun density per
+  bone-cluster. Every compound noun the bone-author introduces in a bone's SVO subject/object
+  appears verbatim in the rendered draft; there is no downstream gate capable of thinning them
+  without violating bone-faithfulness.
+
+  This is a process gap at /and-write Phase 1 (authoring guidance absent) + Phase 6 (AP-SCAN
+  absent). Options (a) Phase 7 Q9 tightening and (b) /and-stitch Phase 1 variance discipline
+  are both structurally unable to fix bone-authored compound nouns and are not proposed.
+
+  Note on content-architecture tension: compound nouns are not categorically bad for this
+  project's surveillance-architecture vocabulary — `ward-junction`, `fever-cluster`,
+  `junction-lane` are load-bearing terms that enact the feed-geography the substance contract
+  requires. The problem is aggregate density: the same 3-4 roots (`junction`, `fever`,
+  `threshold`) recycled across 47 bones saturate the paragraph-level register. The proposed
+  check targets recycling density, not raw compound-noun count.
+evidence_refs:
+  - "active-project/staff/reviews/pleasure-read-b01-c02-2026-05-26-postop.md — §4 Voice: 'Compound-hyphenated nouns at five per paragraph numb the ear'; §2 attention drift: 60 lines of compound-noun tic-recycling"
+  - "active-project/staff/reviews/audience-worm-canon-pedant-b01-c02-2026-05-26-postop.md — §4 Disliked: 'threshold-stones appearing four times in the first half threatens to become a term-of-art'"
+  - "active-project/staff/showrunner/parking-lot.md — pl-2026-05-25-013 (b01c01 /and-stitch Phase 9 cold-read: 'prose dense with hyphen-compound nouns'; filed SOFT at first occurrence, status: open)"
+  - ".claude/commands/and-stitch.md — Phase 7 / scene-window §Q9 anti-jargon: 'Q9 hits in bones themselves are upstream faults: emit FAULT-BONE-AUDIT-MISS; render as-is — Phase 7 cannot REWORD without violating bone-faithfulness'"
+  - ".claude/commands/and-write.md — Phase 6 HARD/SIGNAL table: 'register-as-mannerism (verb-object pair ≥3 occurrences)' — existing analog this change extends"
+recurrence_count: 2
+proposed_diff: |
+  CHANGE 1 — .claude/commands/and-write.md, Phase 1 step 5 (SVO discipline):
+
+  After the existing bullet "Author with full SVO discipline. Speech bones use `speaks to` form."
+  add:
+
+    **Compound-noun economy.** Hyphenated compound nouns in SVO subjects and objects
+    (e.g. `ward-junction`, `fever-cluster`, `junction-lane`) appear verbatim in rendered
+    prose under the bone-faithfulness fence — the stitcher cannot thin them. Ration compound
+    nouns to the 2-3 per scene that are most load-bearing for the architecture or substance
+    contract. For remaining spatial/object references, prefer simple English nouns or
+    definite-article forms where unambiguous in context (`the junction`, `the corner`,
+    `the lane`). A paragraph-cluster of 4+ distinct hyphenated compound nouns signals
+    over-nomination; the screen-writer should prefer the load-bearing 1-2 and simplify
+    the rest.
+
+  CHANGE 2 — .claude/commands/and-write.md, Phase 6 HARD/SIGNAL classification table:
+
+  Add one new SIGNAL entry (after `register-as-mannerism`) in the SIGNAL row:
+
+    | compound-noun-density-per-cluster: count of distinct hyphenated compound
+    nouns appearing across any 5-consecutive-bone window in the scene exceeds 3
+    (i.e. ≥4 distinct compound nouns in a rolling 5-bone window) | SIGNAL |
+
+  Disposition: SIGNAL (records, passes). The auditor reports: "compound-noun density SIGNAL:
+  bones @<A>–@<B> contain <N> distinct hyphenated compound nouns in a 5-bone window
+  (<list them>). Consider simplifying 1-2 to natural English." The bone-author may accept
+  (SIGNAL graduates to HARD on second chapter-level occurrence across the project) or
+  remediate in revise mode.
+
+  SCOPE NOTE:
+
+  This check applies only to compound nouns in bone SVO subjects and objects — the `subject`
+  and `object` fields of the bones file. It does not apply to cost_ledger_anchor slugs, axis
+  names, or actor slugs. The intent is compound-noun density as perceived by a reader of
+  rendered prose, not metadata density.
+
+  "Distinct" means unique hyphenated-noun tokens, not unique roots. `ward-junction` and
+  `junction-lane` are two distinct tokens even though they share the `junction` root; but
+  `ward-junction` appearing five times across 5 bones counts as 1 distinct token. Recycling
+  of the same token is a separate concern addressed by the existing `register-as-mannerism`
+  SIGNAL for verb-object pair recurrence — the two checks are complementary, not redundant.
+
+  THRESHOLD CALIBRATION NOTE:
+
+  The 5-bone window / ≥4 distinct tokens threshold is calibrated against b01c02's evidence:
+  Fork B named "five per paragraph" as the point of ear-numbing. A 5-bone window approximates
+  a rendered paragraph in scene-window mode. ≥4 (not ≥5) gives one bone of headroom for a
+  chapter with unusually high architectural vocabulary load. If the threshold produces false
+  positives on c03+ chapters that are not prose-surface concerns, adjust to ≥5 before
+  graduating the SIGNAL to HARD.
+
+  PARKING-LOT CROSS-REFERENCE:
+
+  pl-2026-05-25-013 points its resolution_suggestion at "future spec edit on stitcher persona /
+  Phase 7 Q9 rubric" — that target is the wrong layer. If this proposal is accepted,
+  pl-2026-05-25-013's resolution_suggestion should be re-stamped to point at /and-write Phase 1
+  + Phase 6 instead, and the item stamped resolved_by this proposal's implementation. The
+  parking-lot item remains open pending implementation.
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
 ## PROP-0001
 created_at: 2026-05-26T00:05:43Z
 created_by: admin process-critic

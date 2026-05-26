@@ -5,13 +5,20 @@ note: consolidated by build_cite_index from per-source slices. Single top-of-fil
 ---
 
 # source: taylor-hebert-kl-122ac
-# slice: feeling-taylor-hebert-kl-122ac
-# episode: b01-c02
+---
 facet: feeling
-episode: b01-c02
+episode: b01-c03
+author: impersonator:taylor-hebert-kl-122ac
 character: taylor-hebert-kl-122ac
-author: impersonator:taylor-hebert-kl-122ac (facet-authoring override; feeling R1 slice; R2 judge pass 2026-05-25)
-rubric: design/shoot-v2/rubric-feeling.md (V1 LOCKED 2026-05-07)
+bones_count: 36
+entry_count: 2
+density: 0.056
+scene_distribution:
+  scene-A: 0
+  scene-B: 1
+  scene-C: 1
+r2_pass: pending
 ---
 
-1 @17 taylor-hebert-kl-122ac: her shoulders hold where they were | expressed: no
+1 @23 taylor-hebert-kl-122ac: her hand closes once at the cloth of her dress and opens | expressed: no
+2 @29 taylor-hebert-kl-122ac: keeps her eyes on the yard-mouth and her weight even on both feet as she speaks | expressed: partial

@@ -1,42 +1,26 @@
-facet: metaphor
-episode: b01-c01
+---
 reviewer: dark-fantasy-reader
-cycle: 1
-verdict: accept
+facet: metaphor
+episode: b01-c02
+phase: 5b-adversarial
+date: 2026-05-26
+verdict: ACCEPT
 ---
 
-# Adversarial reading — dark-fantasy-reader
+## Entry-level callouts
 
-## Attack surface: @12 ("the insects propagate")
+No entries to attack. Zero fires, DEFEND-ZERO sustained through R2. The adversarial reading is not about what is present — it is about whether the absence is correct.
 
-I want to feel the threshold-crossing as something that costs, not as something that gets named.
+[metaphor:@27 — refused] @metaphor-refuse-@27 — Scene-B peak: the insects file the ward-junction contact. Six facets co-located. The refusal log's case: AP7 (peak-bone), AP3 (NI-redundancy at narrator:6), multi-justification fails (mem:2 present but feel absent at @27). My independent read: would a metaphor at @27 make the chapter heavier or lighter? The act of filing a person by function-label needs no figurative shape. The clinical vocabulary — "files the ward-junction contact" — is already doing what a metaphor would do, but without a writer's hand visible in it. Adding a figure here would be the narrator signaling that this moment is important. The moment should not be signaled. It should be executed and recorded. The zero-fire at @27 is the discipline of not-aestheticizing the act that the chapter requires. The refusal holds.
 
-That is the question I bring to @12. Does the zero-fire hold, or does this beat need a figurative shape to land the prohibition-crossed register?
+[metaphor:@40 — refused] @metaphor-refuse-@40 — Scene-C peak: Taylor stalls the count. Recognition arrives. The NI entry (narrator:8) reads: "the count had been clean to the ward-junction; the count is no longer clean." That is already the correct figure — the disruption named as an arithmetic failure. A metaphor at @40 would aestheticize the failure. Aestheticizing this particular failure — the moment the protagonist's accounting breaks and she has to choose whether to look at what it is accounting — is the wrong move. The world does not pause to comment on itself. The recognition should arrive as what it is: a break in the count. The refusal holds.
 
-It holds. Not because the beat is underpowered — it's the Scene-B peak, six facets stacked — but because a dark-humor metaphor here would be premature naming. The entire point of b01c01 is planting costs before they are legible. The vibes pile-up carries "threshold-crossed-unconsented" at saturation. A sardonic figurative move at @12 would tell the reader what to feel before the weight has accumulated. That is catharsis-before-weight, which is the failure I will not excuse.
+The zero-fire is not a failure of ambition — it is a correct reading of what this chapter's register requires. The chapter operates in clinical vocabulary because the clinical vocabulary is the dread mechanism. The insect-feed's physical attenuation, the weight settling onto the rear foot, the breath held at the threshold — these are already figurative in the strict sense (physical facts standing for moral costs) without being metaphors. Adding metaphor would declare the standing-for relationship rather than allowing the reader to inhabit it. That is catharsis-before-weight in a subtler form: the premature naming of meaning.
 
-The rubric requires the dark-humor exception to carry a co-located feeling anchor. feel:2 is at @10. Two bones prior. The anchor is dislocated — the licensed-by field cannot cover it — and the exception is technically unavailable. But even if it were technically available, I would reject a metaphor at @12 on register grounds: this beat should land cold. The world should press back without a writer's hand visible in the pressure.
+## Convergence-trace
 
-**Callout [metaphor:@12]** @12 — zero-fire hold correct. A dark-humor metaphor here would name what should remain unnamed in an opening chapter. The pile-up carries the register without figurative labeling; adding a sardonic figure collapses the suppressed-affect discipline the POV requires at this stage.
+fault-002 (auditor metadata SIGNAL) — R2-decisions metaphor shard carries b01c01 episode label. Functional data correct (zero fires). No reader-experience concern.
 
-## Attack surface: @21 ("oswyn-mudway-flea-bottom-elder takes the lane-mouth")
+## Verdict: ACCEPT
 
-Eight facets at @21. The witch-label assembles here. This is Westerosi superstition specific to this culture — the kind of unnamed category that my taste prizes most, the thing without instructions.
-
-The question is whether a metaphor fires here or at @26 where mem:2 deploys the comparison figure.
-
-The answer is @26. That is where the figure lands. If a metaphor fires at @21, it names the category before the category names the person. mem:2 carries: "the chin lifts the way it lifts in the country's older stories when a word has been waiting for a person and the person has finally arrived to fit it." That is the earned bleakness — the word finding the person. AP4 correctly holds that a metaphor at @21 would double this figure before it can land.
-
-My specific taste demand is for the smell of the world before someone puts a name to it. The @21 refusal IS that discipline: the label assembles without being labeled yet. Let it sit unnamed. mem:2 is where the naming happens.
-
-**Callout [metaphor:@21]** @21 — zero-fire hold correct. The witch-label-assembles register is carried by seven facets and correctly held unnamed. mem:2 @26 performs the naming; a metaphor at @21 would collapse the sequence and strip the earned figurative moment from the beat that can actually hold it.
-
-## File-shape assessment
-
-Zero-fire for a low-charge opening chapter where the project's substance requires dormancy on four axes. The tone discipline — suppressed affect, costs planted before legibility — makes zero-fires the structurally correct choice at this stage. No SKIP-MISSED finding.
-
-## Verdict
-
-**ACCEPT**
-
-Zero-fires is correct for b01c01 under dark-fantasy-reader's lens. Both refusals protect the unnamed-until-earned principle that is the project's tonal contract. A metaphor at either peak would be a writer declaring what the world should be allowed to declare on its own.
+Zero fires is the correct outcome for a chapter whose moral weight is carried by clinical language and physical consequence. The DEFEND-ZERO is not absence — it is the discipline of not decorating what should arrive cold. The world does not need to be told what it has done.

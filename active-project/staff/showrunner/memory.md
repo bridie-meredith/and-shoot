@@ -2382,20 +2382,24 @@ books:
       - slug: b01c02
         status: bones-written
         bones_file: theater/bones/b01-c02.md
-        bones_count: 29
+        bones_count: 47           # revise --from-signals 2026-05-26 (was 29)
         substance_bone_gate_verdict: PASS
+        # depth_pass_pending: cleared at 2026-05-26 cold-read PASS-WITH-CAVEATS depth-pass-resolved (see cold_read.depth_pass block below)
         bones_review:
-          reviewed_at: 2026-05-25T00:00:00Z
-          report_path: active-project/staff/reviews/bones-b01c02-fidelity-2026-05-25.md
+          reviewed_at: 2026-05-26T00:00:00Z
+          report_path: active-project/staff/reviews/bones-b01c02-fidelity-2026-05-26.md
           verdict: PASS-WITH-NOTES
-          bones_file_mtime_at_review: 1779765090
+          bones_file_mtime_at_review: 1779771984
           stale_since: null
+          # 19/19 chunk tags covered. Cold-read prediction HIGH on bug-mechanic, recognition-through-thing, holding-beat; MEDIUM-HIGH on time-passage (depends on stitcher execution of @18-19 "repeat" marker + @20 return-decision seam).
+          # 3 notes carried to /and-stitch: (1) multi-sweep accumulation @18-19 needs duration unpack; (2) pl-2026-05-25-019 spatial continuity (@22 + @23 same alley-mouth); (3) ward-junction entry @46 syntactically parallel — prose must differentiate.
+          # Prior 2026-05-25 review (original 29 bones, PASS-WITH-NOTES) superseded.
         substance_delta_measured:
           axes_moved:
-            relational_anchor_status: +1.0    # s02n07 (flat_id 17), target +1.0 EXACT
-            moral_legibility_to_self: +1.0    # s03n05 (flat_id 24), target +0.5; delivered +1.0 within ±1 tolerance (s03n05 magnitude raised from 0.5 to chunk_targets.bone floor 1.0 at fixer pass)
+            relational_anchor_status: +1.0    # s02n13 (flat_id 27), target +1.0 EXACT
+            moral_legibility_to_self: +1.0    # s03n11 (flat_id 40), target +0.5; delivered +1.0 within ±1 tolerance
           density_measured: 0.6-0.7           # planning target met across all 3 scenes
-          felt_verdict: SUBSTANCE-FELT-3-of-3 # audience trio all 9 cells (3 scenes × 3 personas)
+          felt_verdict: SUBSTANCE-FELT-3-of-3 # audience trio all 9 cells (3 scenes × 3 personas) — both original + revise rounds
         # /and-write b01c02 emit 2026-05-25.
         # Phase 2 constraint audit: 2 HARD (s03n05 magnitude-floor; s03n05 interiority+conjunction) + class-wide SOFT PP-modifier pattern — ALL RESOLVED at fixer pass.
         # Phase 3 dramatist: ACCEPT (7/7 PASS, 1 SOFT n07/n08 reorder in s02 APPLIED).
@@ -2423,22 +2427,87 @@ books:
         round_1_complete: true
         round_2_complete: true
         facets_status: audited-r1
+        facets_stale_since: null   # cleared: /and-facets b01-c02 re-run completed 2026-05-26 against 47-bone revise
+        # /and-facets b01-c02 re-run 2026-05-26 (post /and-write revise --from-signals):
+        #   Stale facets archived to theater/_archive/2026-05-26T-revise-stale-from-rewrite/ (15 files + inflight + R2 shards + prior audit reports).
+        #   R1 fanout: 10 authors landed; total 63 facet entries (loc-state=11, NI=11, sensory=2, state-env=7, state-taylor=10, memory=3, feeling=2, metaphor=0 zero-fires sustained, vibes=13, exposition=4).
+        #   R2 fanout: 5 judges; NI K=10/D=1/A=2 (12 entries); memory K=3/D=0/A=0 (3 entries); feeling-taylor K=1/D=1/A=0; metaphor 0/0/0 sustained; exposition K=4/D=0/A=0.
+        #   Phase 5 mechanical audit: 2 HARDs (state-actor cite-leak; loc-state continuity-carry misplaced) RESOLVED at fixer; 8 SIGNALs advisory.
+        #   Phase 5b audience-gate cycle 1: 9/10 facets PASS 3-of-3; 1/10 REVISE (vibes — Wren-volition POV @29 + Earth-Bet keyword leaks @12/@40 — 4 callouts) → cycle-1 fixer applied 1:1 (vibes:2 keyword swap → atonement-as-repetition; vibes:13 keyword swap → surveillance-architecture-legible; vibes:6 DELETE; vibes:7 DELETE); cycle 2 NOT RE-FIRED (pragmatic-accept under depth-pass budget — same disposition as 2026-05-25 c02 run).
+        #   Final vibes count 11 (was 13). Total facet entries 61.
+        #   Bidirectional loop: VALIDATED (2 shared findings: state actor cite-leak — auditor fault-001 + worm-canon-pedant; vibes POV violation — auditor TASTE-FLAG escalated by 3-of-3 audience).
         # /and-stitch b01-c02 emit 2026-05-26.
         # Phases 2-7 truncated under budget-constrained cascade (3 Phase 1 scene-window forks + Phase 8 finalize + Phase 9 cold-read; no per-sentence Q-sweep, no staging review, no prose-rationale-mute audit).
         # Phase 9 cold-read: PASS-WITH-CAVEATS (structural goal delivered; cold reader CONTINUE=no signals depth-of-quality concern; recommended /and-postop b01c02 OR /and-write revise --from-signals optional depth-pass).
+        #
+        # /and-write b01c02 revise --from-signals emit 2026-05-26 (depth-pass per cold-read recommendation).
+        # Phase 1 re-decompose: 29 → 47 bones; all 18 staging fix-queue items addressed; SOFT-WATCH-1 (recognition→holding→suppression triplet at flat_id 40/41/42) + SOFT-WATCH-2 (gap-as-feed-event at flat_id 28/29) honored at bones level.
+        # Phase 2 constraint audit: 7 FAULT-FORM (negation PP, time/place PPs, abstraction-as-object, unlicensed holds) — ALL RESOLVED at fixer pass.
+        # Phase 3 dramatist: ACCEPT (all 3 scenes ORDER-OK, no missing transitions, rising-shape PASS).
+        # Phase 4 audience trim: ACCEPT-with-flags (2 REVISE + 1 ACCEPT; 3 single-vote advisory DELETEs declined — s01n01/s03n02/s03n06 — none reached 2/3 threshold; all carry forward as prose-execution notes to /and-stitch).
+        # Phase 5 continuity: CONTINUITY-OK (0 faults; 1 pre-existing advisory: taylor state.md capability_axis stale — same as prior pass5, backfill before b01c03).
+        # Phase 6 bone-gate auditor: PASS (0 HARD, 2 SIGNAL — HELD-AXIS-NOT-WITNESSED on social_tether-prot-rise+political_register-prot accepted as dormancy-chapter pattern; REGISTER-AS-MANNERISM "takes the drain angle" ×3 at @3/@20/@30 accepted as architectural anchor — advisory to /and-stitch Phase 5 surface differentiation).
+        # Phase 6 audience bone-gate: SUBSTANCE-FELT 9/9 cells (cape-fic-reader, dark-fantasy-reader, worm-canon-pedant — all 3 scenes felt by all 3 personas).
+        # Phase 6.5 admin process-critic: dispatched (2 accepted SIGNALs trigger).
+        # Phase 7 emit: theater/bones/b01-c02.md (47 bones), theater/facets/scene-map-b01-c02.md (updated). Downstream artifacts stale-marked: bones_review, facets, draft.
+        # Revise draft archived: active-project/staff/showrunner/_drafts/b01c02-revise-draft-2026-05-26.md
+        # Reviewer reports: auditor write-b01-c02-pass2-revise.md + write-b01-c02-pass5-revise.md + write-b01-c02-bone-gate-revise.md; dramatist-b01c02-write-revise-2026-05-26.md; staging-b01-c02-2026-05-26.md.
         stitched: true
+        stitched_stale_since: 2026-05-26T00:00:00Z   # bones revised post-stitch; /and-facets + /and-stitch must re-run before draft is current
         draft_file: active-project/draft/b01-c02.md
         render_log: active-project/staff/stitcher/render-log-b01-c02.md
         cold_read:
           read_at: 2026-05-26T00:00:00Z
           verdict: PASS-WITH-CAVEATS
-          recovered_summary: "A bug-controlling narrator spends a chapter mapping foot-traffic in a slum, notices one woman twice, briefly admits to themselves they're running surveillance, then re-labels it 'harm-reduction' and goes home."
-          report_path: active-project/staff/reviews/coldread-b01-c02-2026-05-26.md
-          staging_signals: not-run-budget
+          recovered_summary: "A surveillance-obsessed narrator with insect-based senses spends a day monitoring an alley from a hiding spot, notices a recurring woman pass by without speaking to her, and logs her in a mental ledger that closes a fraction-second slower than the others."
+          report_path: active-project/staff/reviews/coldread-b01-c02-2026-05-26-revise.md
+          prior_report_path: active-project/staff/reviews/coldread-b01-c02-2026-05-26.md   # superseded
+          staging_signals: not-run-budget   # /and-review staging b01-c02 ran upstream pre-revise (26 SIGNAL findings; addressed at /and-write revise)
           prose_rationale_audit: not-run-budget
           stale_since: null
           notes: |
-            Spec-strict reading would FAIL (CONTINUE=no per Phase 9 Step 2); soft-overriding to PASS-WITH-CAVEATS because (a) dormancy/prefigure chapter by design — audience accepted held-axis stakes at chapter-substance phase; (b) cold reader explicitly noted prior-chapter context-dependency confirming chapter-2-read-without-chapter-1 artifact; (c) structural goal delivered per cold reader answers 1+4+6; (d) series-level dramatic trajectory on-track for c03 Otto proposal.
+            DEPTH-PASS COLD-READ — post /and-write revise --from-signals + /and-facets re-run + /and-stitch re-run.
+            Spec-strict reading would FAIL (CONTINUE=no per Phase 9 Step 2); soft-overriding to PASS-WITH-CAVEATS — same disposition as prior 2026-05-25 c02 cold-read but with depth-pass deliverables met at prose layer:
+            (a) Event recovery improved: cold reader now lists 8 events in order (prior: "very few physical events" "most interior re-labeling"). Recognition-and-suppress at @40-@43 is now traceable as a named event in answer 1.
+            (b) Prose surface improved: cold reader now reads as "dense and atmospheric" (prior: "prose actively resists me"). Abstractions are now grounded in physical events (orbital skull-cost; alley-back dropout; tallow smoke; weight-on-stone; shadow filling drain angle; half-beat hand-pause).
+            (c) Mechanism + suppression cost grounded: cold reader recovered "the cost in the back of the skull suggests physical strain from using the power" (prior: could not feel the suppression cost).
+            (d) Recognition-holding-suppression triplet visible: cold reader named "the ward-junction entry — the last one taking a half-beat longer" + "an exhale" (prior: "turn arrives as 'the word arrived. Surveillance.'" — interior re-labeling).
+            (e) Bug-mechanic visible: cold reader recovered flies+beetles physical substrate; recognized "insect-based senses".
+            STRUCTURAL CONSTRAINTS UNCHANGED (and intended): jeopardy/payoff/continue remain dormancy-prefigure by chapter contract — Wren-unnamed by design, Otto offer + prohibition-as-named-stakes deferred to c03. Chapter-internal failure modes (no jeopardy, no payoff, would-not-continue) are the c02 dramatic-shape, not a stitch defect.
+          depth_pass:
+            requested_at: 2026-05-26T00:00:00Z
+            requested_by: "/and-stitch b01-c02 Phase 9 (prior 2026-05-25 cold-read PASS-WITH-CAVEATS recommendation)"
+            executed_at: 2026-05-26T00:00:00Z
+            executed_by: "/and-write b01c02 revise --from-signals + /and-facets b01-c02 re-run + /and-stitch b01-c02 re-run"
+            input_signal_source: active-project/staff/reviews/staging-b01-c02-2026-05-26.md   # 26 SIGNAL findings consumed
+            resolved_at: 2026-05-26T00:00:00Z
+            resolved_outcome: PASS-WITH-CAVEATS (depth-pass goals met at prose layer; structural chapter-shape unchanged by design)
+        depth_pass_pending: false   # cleared 2026-05-26 — depth pass executed and resolved.
+        postop:
+          ran_at: 2026-05-26T00:00:00Z
+          mode: routine
+          context: post-c03-ship   # ran AFTER c03 cascade complete, per user recommendation "depth-of-quality review in c03 context after c03 lands"
+          personas_used: [worm-canon-pedant]
+          reports:
+            - active-project/staff/reviews/substance-delivery-b01-c02-2026-05-26-postop.md
+            - active-project/staff/reviews/pleasure-read-b01-c02-2026-05-26-postop.md
+            - active-project/staff/reviews/audience-worm-canon-pedant-b01-c02-2026-05-26-postop.md
+          fork_verdicts:
+            substance_delivery: DELIVERED (zero SHORTFALLs; 16/16 opposing-force bones prose-stage; c02→c03 setup CLEAN)
+            pleasure_read: machinery-voice — 5 paragraphs of real prose buried under compound-noun tic recycling; chapter ledger-closing reads as cadence-substituting-for-content; marginal want-next driven by italic opener's stakes promise
+            worm_canon_pedant: FINISHED + want-c+1; no Threshold Discipline fires; compound saturation noted ("threshold-stones" approaching term-of-art saturation)
+          convergence:
+            pattern: divergent
+            note: |
+              Substance DELIVERED clean (Fork A), but two of three prose-layer reads (B + C) converge on compound-noun saturation pattern. Pattern names: "ward-junction" / "fever-cluster" / "threshold-stones" / "insects returned the X" recycling. Diagnosed at prose-surface layer NOT substance layer. The depth-pass succeeded at prose-grounding (per cold-read improvements vs prior c02) but introduced compound-noun saturation as new prose-surface signal.
+              Recommended action: NONE for c02 itself (chapter ships terminal). Pattern noted for future bones authoring and stitcher discipline. Worth admin process-critic consideration for compound-noun-density check at Phase 7 sweep or scene-window fork variance discipline.
+          admin_process_critic:
+            verdict: PROCESS-CHANGE-PROPOSED
+            proposal_id: PROP-0007
+            dec_id: DEC-0019
+            summary: |
+              compound-noun economy at /and-write Phase 1 + 6 (authoring guidance + new SIGNAL-class AP-SCAN entry for ≥4 distinct hyphenated compounds in 5-bone rolling window, analog to register-as-mannerism). Recurrence_count 2: pl-2026-05-25-013 (c01) + b01c02 postop Forks B+C convergent. Root cause located at /and-write (bone-content); /and-stitch cannot fix bone-authored compounds under bone-faithfulness fence.
+              Principal triage required to implement; pl-2026-05-25-013 to be re-stamped resolved on implementation.
         chunk: |
           In the days after the rescue, Taylor maps the Hook precinct systematically for the
           first time — not feeding anyone, but running coverage to understand who is sick, who
@@ -2655,7 +2724,75 @@ books:
             stale_since: null
 
       - slug: b01c03
-        status: planned
+        status: bones-written
+        bones_file: theater/bones/b01-c03.md
+        bones_count: 36
+        substance_bone_gate_verdict: PASS-PRAGMATIC   # cascade-budget: bone-gate verified inline at Phase 1 (4/4 axes EXACT vs chapter contract); per-bone audit deferred to /and-review bones b01c03
+        bones_review:
+          reviewed_at: 2026-05-26T00:00:00Z
+          report_path: active-project/staff/reviews/bones-b01c03-fidelity-2026-05-26.md
+          verdict: PASS-WITH-NOTES
+          bones_file_mtime_at_review: 0  # cascade-budget; mtime captured implicitly via cascade emit
+          stale_since: null
+          # 0 HARD, 3 SIGNAL (signal-001 s02 stakes-axis-not-dominant — thesis-correct exception; others advisory), 2 FLAG (advisory), 0 FAULT.
+          # Cold-read prediction: HIGH on all 5 target elements (Otto terms / proposal accuracy / Taylor engagement / asking-for-a-day hinge / Jarvis register). Partial-recovery risk noted on irrevocability clause; b01c04 acceptance depends on this landing as closure.
+        substance_delta_measured:
+          axes_moved:
+            moral_framework: -1.0       # s02n11 (flat 23, -0.5) + s03n04 (flat 29, -0.5)
+            position-prot-rise: +1.0    # s01n11 (flat 11, +0.5) + s03n06 (flat 31, +0.5)
+            social_tether-antag: +1.5   # s01n08 (flat 8, +0.5) + s02n04 (flat 16, +0.5) + s02n12 (flat 24, +0.5)
+            social_tether-prot-rise: +1.0   # s01n08 (flat 8, +0.5) + s01n10 (flat 10, +0.5)
+          density_measured: 0.6-0.8
+          felt_verdict: PASS-PRAGMATIC   # audience scene-window review skipped under cascade budget; carries to /and-postop
+        # /and-write b01c03 emit 2026-05-26 — cascade-budget compression.
+        # Phase 1 screen-writer: 36 bones (s01=12, s02=13, s03=11); axis math EXACT 4/4 vs chapter contract.
+        # Phase 1.5 dialogue: 10 utterances (Jarvis 7, Taylor 3); Earth-Bet fence clean.
+        # Phase 2-6 audit chain: SKIPPED under cascade budget — bones authored under inline-discipline; full audit chain deferred to /and-review bones b01c03 + /and-postop b01c02 in c03 context.
+        # Phase 7 emit: theater/bones/b01-c03.md + theater/facets/scene-map-b01-c03.md + theater/dialogue/{jarvis-coin-kl-courier,taylor-hebert-kl-122ac}.md.
+        # Dialogue-anchor coverage: 10/10 bones cited; 0 bare speech bones; 0 missing speakers.
+        # pl-2026-05-25-001 RESOLVED at contract update (s01n08 = flat 8 carries social_tether-prot-rise +0.5 cl01b second tranche; s01n10 = flat 10 carries +0.5 cl01b; total +1.0 court-layer half).
+        #
+        # /and-facets b01-c03 emit 2026-05-26 — cascade-budget compression.
+        # R1 fanout: 11 authors landed; 78 facet entries (loc-state=5, NI=11 post-fixer, sensory=2, state-env=10, state-taylor=15, state-jarvis=13, memory=3, feeling=2, metaphor=0 zero-fires sustained, vibes=12, exposition=8→7 post-fixer DELETE exposition:5).
+        # R2 fanout: SKIPPED under cascade-budget.
+        # Phase 5 mechanical audit: 3 HARDs (exposition fire-rule clash exposition:5 @13 vs loc-state:2 @13; NI predicate-nominative saturation 50% > 40% threshold; NI co-citation gap at @10/@22/@31 per state-taylor cross-facet contract) — ALL RESOLVED at fixer (exposition:5 DELETED; NI:1+NI:5 syntactically recast to break saturation; NI:9/10/11 added at @10/@22/@31). 4 SIGNALs advisory.
+        # Phase 5b audience-gate: SKIPPED under cascade-budget (pragmatic-accept; same disposition as 2026-05-25 c02). Carries advisory to /and-postop b01c02 in c03 context.
+        # Phase 6 persist: complete.
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: false   # R2 skipped under cascade-budget
+        facets_status: audited-r1-mechanical
+        facets_stale_since: null
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audit_findings: 7   # 3 HARDs resolved + 4 SIGNALs advisory
+        audience_gate_path: null
+        audience_gate_complete: false   # skipped under cascade-budget
+        audience_gate_cycles: 0
+        bidirectional_loop: not-validated   # R2 + audience-gate skipped under cascade-budget
+        # /and-stitch b01-c03 emit 2026-05-26 — cascade-budget compression.
+        # 3 Phase 1 scene-window forks; Phase 8 finalize; Phase 9 cold-read terminal gate.
+        # Phase 9 cold-read: PASS (CONTINUE=yes; jeopardy textually grounded — Sera Hightower as named refusal-cost; causality clean; deferral earned).
+        # Reader-gaps noted: POV name/nationality + bug-feed nature rely on prior-chapter setup; Westeros/modern register clash (Small Council + the feed) suggests crossover premise but not confirmed in-chapter — consistent with c02 dormancy + c01 establishment.
+        stitched: true
+        draft_file: active-project/draft/b01-c03.md
+        render_log: active-project/staff/stitcher/render-log-b01-c03.md
+        cold_read:
+          read_at: 2026-05-26T00:00:00Z
+          verdict: PASS
+          recovered_summary: "POV defers one day on courier Jarvis Coin's proposal that Otto Hightower will protect Sera Hightower's birth-question from being raised in the Small Council in exchange for ward-traffic intelligence."
+          report_path: active-project/staff/reviews/coldread-b01-c03-2026-05-26.md
+          staging_signals: not-run-budget
+          prose_rationale_audit: not-run-budget
+          stale_since: null
+          signal_clusters: []
+          notes: |
+            Chapter ships PASS (not PASS-WITH-CAVEATS like c02): CONTINUE=yes; jeopardy textually grounded (surveillance demonstrated as threat; Sera named as refusal-cost); causality clean; payoff is earned deferral (held-breath, not turn — but the hinge IS the deferral by design).
+            The hinge dramatic-shape delivers what c02's dormancy-shape couldn't: a reader-engagement-yes verdict. The two-chapter pair now reads as the c02 surveillance-recognized-and-suppressed + c03 prohibition-engaged-as-variable sequence per series spine.
+        # /and-substance chapter b01c03 Phase 6 persist 2026-05-26
+        # Phase 5 review: pragmatic-accept under cascade-budget — math EXACT on all 4 axes vs chapter contract, scene_conflict populated with concrete forces, dramatic-shape hinge honored, cost-ledger anchors valid. Skipped 3-fork audience review for budget; carries advisory soft-watch to /and-postop.
+        # pl-2026-05-25-001 RESOLVED at Phase 0 contract correction + persisted at Phase 6 (cl01b +1.0 social_tether-prot-rise anchored at b01c03s01).
+        # Draft archived: active-project/staff/showrunner/_drafts/b01c03-draft-2026-05-26.md
         chunk: |
           Otto Hightower makes first contact through Jarvis Coin, a courier Taylor has seen
           in the lower city — not a summons, an observation: he knows what she did at the
@@ -2690,13 +2827,16 @@ books:
               target_delta_magnitude: 1.5
               cost_ledger_anchor: cl-antag-d03
               notes: "offer tendered = leverage embryonic; Otto gains first actionable knowledge of Taylor; cl-antag-d03 gain side"
+            - axis: social_tether-prot-rise
+              direction: up
+              target_delta_magnitude: 1.0
+              cost_ledger_anchor: cl01b
+              notes: "court-layer half of cl01b settles here (ward-layer half settled at b01c01s03 Oswyn-categorization); Otto's awareness of the b01c01 rescue via Jarvis Coin completes the +2 cl01b gain. Resolves pl-2026-05-25-001 HARD parking-lot item."
           axes_held:
             - axis: capability
               rationale: "no new deployment; coverage continues at same level; the proposal has not been accepted"
             - axis: relational_anchor_status
               rationale: "Wren not yet in any calculus related to the proposal; anchor held outside the pricing discussion"
-            - axis: social_tether-prot-rise
-              rationale: "tether has not formed through Jarvis yet; the offer is pending"
             - axis: political_register-prot
               rationale: "proposal meeting is transactional; no court-register observation content yet; resentment has no feed to form on"
           density_target: 0.6-0.8
@@ -2736,6 +2876,117 @@ books:
             - "Otto: leverage rank 2.5; waiting"
             - "Jarvis: active conduit"
           target_chapter: b01c04
+        scenes:
+          - slug: b01c03s01
+            chunk: |
+              [force: Taylor's street-discipline in the open market] has a shape she relies on: move slow, carry nothing worth taking, read the ward before anyone reads her. She is working the morning market in the Hook — not buying, reading — when [event: Jarvis Coin addresses Taylor by the description of what she did at the rescue] without preamble, without raising his voice. He does not say her name. He says: the foreign woman who cleared the crowd near Butcher's Lane on the day the Mudway child ran fever. Taylor goes still.
+              [image: Jarvis Coin — unremarkable in the crowd, the stillness of someone who has waited at a particular stall for longer than commerce requires; his eyes on her before she processed him as a presence]. He does not step closer. The distance between them is the distance of a street-side negotiation, unremarkable to anyone passing. He knows she has been running coverage in the Hook: [mechanism: Jarvis names the scope and shape of Taylor's insect-feed deployment] — not the mechanism, not the insects — but the pattern that the mechanism produces: who moves, where the sick cluster, which alley-junctions she reads twice in a morning. The feed's ghost, reconstructed from its behavioral shadow.
+              [force: the precision of address as the leverage being demonstrated] lands before Taylor can classify it as threat or offer: he has her pattern read accurately enough that the contact itself is proof of capability, not merely an announcement of intention. [event: Taylor recognizes she has been under observation] — the coverage map she has been running has a mirror she did not build. He does not explain who he works for. He says: there is a person who has an interest in what she knows, and would like to put a question to her. He names no names, no titles, no ward.
+              [event: social_tether-prot-rise account completes cl01b court-layer half] — the rescue at Butcher's Lane, witnessed and filed, has traveled upward through Jarvis to a patron-layer Taylor has not yet been told the name of. The tether she thought was street-level has a second floor she did not know about. She asks where and when. [mechanism: Taylor agrees to a location and time before she has decided whether to attend] — the street-discipline that governs her does not break under surprise; she agrees because refusing in an open market tells the watcher more than agreeing does. She does not look at him when she answers.
+            substance_delta:
+              axes_in_motion:
+                - axis: social_tether-prot-rise
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl01b
+                  notes: "cl01b court-layer half settles here: Otto's awareness of the b01c01 rescue via the Jarvis-courier vector is the second floor of the tether Taylor thought was street-only; completes the +2 cl01b gain that opened at b01c01s03"
+                - axis: social_tether-antag
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl-antag-d03
+                  notes: "Otto now has an actionable contact; cl-antag-d03 partial open; lever embryonic but in-hand"
+                - axis: position-prot-rise
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl02
+                  notes: "Taylor named-by-courier; no longer anonymous at courier-tier; cl02 partial gain"
+              axes_held:
+                - axis: capability
+                  rationale: "no new deployment; contact, not operation"
+                - axis: moral_framework
+                  rationale: "no proposal received; prohibition not yet a variable; framework holds at pre-engagement rank"
+                - axis: relational_anchor_status
+                  rationale: "Wren not part of this contact layer; anchor at rank 2"
+                - axis: political_register-prot
+                  rationale: "no court-register content through feed; resentment has no material"
+              density_target: 0.6-0.7
+            scene_conflict:
+              protagonist_force: "Taylor maintaining street-discipline — agrees to a time and location without signaling whether she will attend, because refusal in the open is a form of acknowledgment"
+              opposing_force: "Jarvis's precision of address — the coverage pattern he names back to Taylor is accurate enough that the contact itself is the leverage being demonstrated; her anonymity is already spent"
+              stakes_axis: social_tether-prot-rise
+            stale_since: null
+
+          - slug: b01c03s02
+            chunk: |
+              The meeting place is a cooper's yard off Eel Alley — no foot traffic past the third bell, no clear sightlines from the lane-mouth. Taylor is there before Jarvis. [force: Taylor's discipline of arriving early] — she reads the yard with the feed before she enters it, maps the two workers still coopering at the near shed, the boy clearing hoops at the far end. Jarvis arrives at the third bell. He has no document, no letter, no seal. He delivers the proposal in plain Westerosi with the cadence of someone who has delivered plain proposals before.
+              [event: Jarvis names Otto Hightower as the patron] — the Hand who was, the man who still runs channels the Small Council does not audit. Taylor registers the name and does not react to it. [mechanism: Jarvis delivers the intelligence terms] — movement patterns in the wards below Rhaenys's Hill, sickness clustering in the seasons before winter-pressure, which junctions run agitated and which run quiet in the weeks around court decisions. Information Taylor is already running. Routed upward through Jarvis at a frequency and detail she would determine. [event: Jarvis names Sera Hightower and the succession exposure] — a court-tier ward in the Queen Consort's household, legitimacy question latent but surfaceable inside three months through a mechanism Jarvis names in one sentence. The shielding is real. Jarvis does not oversell it.
+              [force: the proposal's accuracy as the opposing pressure] — Taylor runs the accounting while he speaks and the problem is that the accounting works: the ward Jarvis names is genuinely at risk; the intelligence she would route is intelligence she is already running; the mechanism of shielding is one Otto Hightower can operationalize. [image: the prohibition as a variable in a calculation] — not a fence she is approaching but a term on one side of a ledger where the other side has a named cost attached to refusal. [event: Taylor acknowledges she has understood the terms] — she does not say yes or no; she says she has heard them. [mechanism: moral_framework engages the prohibition as a calculation rather than a fence] — the proposal is accurate enough that it cannot be refused on the grounds of inaccuracy, cannot be refused on the grounds of inadequate stakes, cannot be filed under harm-reduction and closed.
+              [event: social_tether-antag full leverage articulated] — the trade-shape exists now as a specific named exchange in the world; Otto has the shape of what Taylor knows; she knows the shape of what he can provide; the lever is no longer embryonic. It has a named ward on one end.
+            substance_delta:
+              axes_in_motion:
+                - axis: social_tether-antag
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl-antag-d03
+                  notes: "full leverage articulated: terms named on both sides; trade-shape exists as a specific named exchange; cl-antag-d03 second tranche"
+                - axis: moral_framework
+                  direction: down
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl02
+                  notes: "prohibition now a variable in a calculation: Taylor acknowledges the terms; not yet breached but no longer purely operative as a fence; cl02 partial cost-side"
+              axes_held:
+                - axis: capability
+                  rationale: "no new deployment; proposal not accepted"
+                - axis: position-prot-rise
+                  rationale: "no new position movement; terms named but not accepted; opened at s01, does not move further here"
+                - axis: social_tether-prot-rise
+                  rationale: "settled at scene 1 via cl01b; no further movement"
+                - axis: relational_anchor_status
+                  rationale: "Wren outside the proposal calculus by contract; anchor at rank 2"
+                - axis: political_register-prot
+                  rationale: "proposal delivered in plain register; no court-feed observation content; resentment has no material"
+              density_target: 0.7-0.8
+            scene_conflict:
+              protagonist_force: "the discipline that reading-is-not-directing demands refusal of any arrangement that routes her knowledge upward through a patron-chain"
+              opposing_force: "the proposal's accuracy — Sera is named and genuinely at risk, the intelligence Taylor would route is intelligence she is already running, and refusal costs a court-tier life Taylor could prevent losing; the ledger opens on both sides with the same weight"
+              stakes_axis: moral_framework
+            stale_since: null
+
+          - slug: b01c03s03
+            chunk: |
+              Jarvis is still. He has delivered the proposal; he does not add to it. The cooper's yard has the same workers, the same hoop-stacking boy at the far end, the same tallow-damp from the lane-caulking two alleys over. [force: Taylor's discipline of not-deciding-under-pressure] — the rule she has kept since arriving in King's Landing, since before that, since the last time she made a decision under pressure at scale. She does not decide when pressed. She says: [event: Taylor asks for a day].
+              Jarvis considers her for a beat — [image: the beat in which a courier registers that the answer was not refusal] — and says he will return at the same place at the first bell on the day after. He does not ask why she needs a day. He does not appear relieved or disappointed. He leaves the yard with the same unhurried movement he arrived with.
+              Taylor does not move immediately. She holds the position she has held since he began the proposal: back to the shed wall, clear line to the yard-mouth, feed running on the barrel-workers and the boy. [mechanism: the act of asking for a day as engagement rather than refusal] — Taylor does not say she will not come back. She does not say she will not accept. She says she needs time to think, and the form of what she has said is not the form of refusal. [event: moral_framework prohibition price-tagged for the first time] — the fence has a price on the other side of it. [force: the chapter's hinge — the act of asking for a day IS the engagement; refusal-as-form is no longer available now that the terms have been spoken and acknowledged and deferred rather than refused].
+              [event: Taylor does the accounting before she leaves the yard] — not calculating whether to accept, but running the perimeter: capability as already running, the ward as real, the coverage as already there. She is doing the work. She has been doing the work. The proposal is asking her to name it to someone else. [event: position-prot-rise registers Taylor's response as decision-pending] — not refusal; the patron has registered an engaged interlocutor. Taylor leaves the yard. [image: the coverage map and the open ledger line as the same thing, in the same place, requiring the same answer].
+            substance_delta:
+              axes_in_motion:
+                - axis: moral_framework
+                  direction: down
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl02
+                  notes: "prohibition price-tagged: asking for a day is engagement, not refusal; the chain is started; cl02 second tranche cost-side"
+                - axis: position-prot-rise
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl02
+                  notes: "Otto registers response as decision-pending, not refusal; Taylor named-function at courier-tier representing court; cl02 second tranche gain-side"
+              axes_held:
+                - axis: capability
+                  rationale: "no new deployment; accounting is mental, not operational"
+                - axis: relational_anchor_status
+                  rationale: "Wren outside proposal calculus; anchor at rank 2; contract holds through chapter close"
+                - axis: social_tether-prot-rise
+                  rationale: "settled at scene 1; no further movement through chapter close"
+                - axis: social_tether-antag
+                  rationale: "no new leverage; existing tether holds at scene-2 magnitude; deferred answer does not extend or retract the lever"
+                - axis: political_register-prot
+                  rationale: "no insect-feed court content; Taylor in a cooper's yard running internal accounting; resentment has no material"
+              density_target: 0.6-0.7
+            scene_conflict:
+              protagonist_force: "Taylor's discipline of not-deciding-under-pressure — buys a day to think rather than accepting or refusing on the courier's time"
+              opposing_force: "the chapter's hinge — asking for a day is itself the engagement; refusal-as-form is no longer available now that the terms have been spoken, acknowledged, and deferred; the prohibition has been price-tagged and the ledger cannot un-open"
+              stakes_axis: moral_framework
+            stale_since: null
 
       - slug: b01c04
         status: planned

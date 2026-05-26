@@ -3,7 +3,6 @@ STM:
 
 ## /and-series Attempt 1 verdict
 - structural: ACCEPT — d10 is a clean "enemy-who-doesn't-stop" beat (no exit, Otto's apparatus closes around Taylor before she can price a withdrawal); the contempt arc lands in contempt-without-refusal, not catharsis; [cost-bearer] dies in "the exact streets Taylor had charted" — world pushes back via consequence, not authorial arrangement; earned collapse, not surprise
-- premise legibility: ACCEPT — the chunk's irony field does the legibility work directly: "she despises the system she is consolidating, and continues, because the only thing more expensive than the trades is letting [cost-bearer] burn" — that is the full motivation engine stated, no dossier required
 
 ---
 
@@ -53,83 +52,6 @@ aggregate: ACCEPT
 
 ---
 
-## 2026-05-25 — /and-substance chapter b01c01 Phase 5 review
-
-verdict_per_scene:
-  b01c01s01: SUBSTANCE-FELT
-  b01c01s02: SUBSTANCE-FELT
-  b01c01s03: SUBSTANCE-FELT
-chapter_goal_coverage:
-  first_act_of_control: LAND
-  witch_label_plant: LAND
-  wren_presence_plant: LAND
-overall: ACCEPT
-notes:
-  - s01 prohibition-as-labor is exactly the right dark-fantasy entry: magic that costs something before it is ever deployed; the "constant small expenditure that makes stillness expensive" lands as Planetos-consistent dread — not labeled, not explained, just felt as effort
-  - s02 the crowd-compression mechanism earns its cost; this reader requires that the world move against the protagonist in a way that matters, and the crowd is hostile structure — not an enemy who pauses, but an inert physical fact that will kill the child regardless of Taylor's preferences; the instinct-override lands as genuine crack, not convenience
-  - s03 witch-label assembly reads as Westerosi-specific: superstition formed in the gap between what was seen and what the ward has a word for; Oswyn composing a category is the correct cultural reaction — not curiosity, not adaptation, category-formation; this reader's hot button (Westerosi characters reacting to Worm-world elements with the wrong flavor of shock) does not fire; the flavor is correct
-  - Wren plant via stitch-house smell and not-looked-at in s03 is functional; the reader notes that the plant is light at plan stage — not enough weight to feel like a threat yet; acceptable as dormancy because the chapter goal explicitly defers cost legibility; not a hard finding
-  - held axes across all three scenes read as load-bearing discipline, not absent content; the prohibition maintained in s01 makes s02's breach matter; catharsis has not arrived before weight; the chapter ends on accumulated unease, not resolution
-
----
-
-## 2026-05-25 — /and-write b01c01 Phase 4 trim
-
-verdict: ACCEPT — 26 KEEP / 0 DROP across 26 bones (s01=6, s02=11, s03=9)
-
-carry_forward:
-  - s02n09 (taylor faces the child): the relational_anchor_status rationale claims Wren is in the crowd
-    but the SVO enacts Taylor's attention-direction only; at stitch-time the prose around n09 needs
-    either a physical tell for Wren's presence (passed over by the insect-sense, unnamed) or an
-    acceptance that the Wren anchor in s02 is carried entirely by the s03n07+n08 payoff; not a trim
-    drop but a watch item for the stitcher
-  - 'lifts the <body-part>' mannerism at 3 instances chapter-wide (s02n10 hands, s03n09 chin; s01n05
-    dropped but the pattern is still ≥2 active): on this reader's watch list for the stitch draft;
-    decomposer already flagged for Pass 3; if s03n09 becomes 'raises the chin' the world-texture
-    of the Oswyn beat is preserved — the image is not the problem, the repetition is
-
-strongest_world_texture_beat: "s03n08+n09 — tallow smoke settling at lane-level (same it was this morning)
-  and Oswyn's chin-lift; the ward's indifference to the moral event enacted in physics, and the
-  witch-label assembling in the correct Westerosi register (categorization-as-body, not fear-as-spectacle)"
-
-weakest_beat: "s02n09 — SVO enacts arrival, not anchor-dormancy; the Wren-in-the-crowd claim is
-  invisible at bone level"
-
----
-
-## 2026-05-25 — /and-write b01c01 Phase 6 substance bone-gate
-
-verdict_per_scene:
-  b01c01s01: SUBSTANCE-FELT
-  b01c01s02: SUBSTANCE-FELT
-  b01c01s03: SUBSTANCE-FELT
-chapter_verdict: SUBSTANCE-FELT
-hard_findings: []
-soft_findings:
-  - s02n09 Wren-dormancy claim invisible at bone level (carry-forward to stitch, not a bone-gate block)
-  - 'lifts the' mannerism count 2 active instances (Pass 3 domain; carry to stitch)
-
-world_texture_summary:
-  s01: "drain angle as body-sized anonymity-geometry; tallow smoke as dormant Wren plant; suppression
-    cost enacted in the dual-bone stillness-against-pull structure; no hot-buttons fire; the setting
-    exists independent of Taylor's presence in it"
-  s02: "fish-cart as functional crowd-physics cause; ground-transmission of fever as insect-sense
-    grounded before it becomes a problem; prohibition's final held moment (n04) makes the crossing
-    (n06) legible as threshold, not reflex; world yields by physics, not narrative courtesy"
-  s03: "Flea Bottom dispersal physics honest (holders remain); ward-elder positioning at lane-mouth
-    as the watching-station, not confrontation-point; chin-lift as pre-print categorization-by-body;
-    tallow smoke's continuity after the moral event is the world's indifference enacted in a single
-    sensory note; Wren's orientation delivered as naturalistic consequence without authorial staging"
-
-carry_forward_to_facets:
-  - s02n09 stitch-time watch: prose needs physical tell for Wren or acceptance that s03n10 carries
-    the plant; not a block at bone-gate but a stitch-domain concern
-  - 'lifts the' mannerism: decomposer Pass 3 domain; monitor at stitch draft
-  - no new bone-gate concerns introduced; Phase 4 carry-forwards either resolved (s03n10 confirms
-    Wren plant delivery) or correctly deferred to stitch domain
-
----
-
 ## 2026-05-25 — /and-substance chapter b01c02 Phase 5 review
 
 verdict_per_scene:
@@ -174,3 +96,40 @@ notes:
   - s03: crack-and-suppress lands as two structurally separate events; the suppression is enacted through physical habit (prohibition-line gesture) not mood; n07-n09 ledger-closing sequence makes suppression read as work; chapter closes on exhale (body's verdict), not insight; accumulated unease without catharsis
   - no walkout triggers fired; world-texture confirmed throughout; setting exists independent of Taylor's attention
   - soft carries: none new; b01c01 stitch-domain watches carry forward unchanged
+
+---
+
+## /and-write b01c02 revise Phase 4 trim — 2026-05-26
+
+### File-level verdict
+REVISE-prologue-mechanism-double-bone-thins-the-feed-as-dread
+
+### Per-bone deletion proposals
+- s01n01: DELETE (two mechanism-naming bones before the chapter opens — flies-return-heat then beetles-return-thresholds — convert the feed from dread-as-labor to procedure-as-manual; n01 is the weaker of the pair: flies returning heat is generic warmth; beetles running thresholds is specific and Worm-grounded; n01 can be dropped without orphaning anything — n02 carries the substrate, n03 opens the chapter, n04 drives the scene; deleting n01 leaves the prologue-mechanism in one focused beat instead of two ambient ones; the feed should arrive as a thing already in use, not a thing being explained)
+
+### One-sentence read
+The moral architecture holds — the suppression costs, the world's physics run independent of Taylor's attention, the crack is sealed under the entry and not forgiven — but the chapter front-loads its mechanism in a pair of bones where one will do, and this reader's patience runs shorter for manuals than for dread.
+
+---
+
+## /and-write b01c02 revise Phase 6 bone-gate — 2026-05-26
+
+---
+reviewer: dark-fantasy-reader
+chapter: b01c02
+phase: write-bone-gate-revise
+date: 2026-05-26
+scenes_reviewed: [b01c02s01, b01c02s02, b01c02s03]
+---
+
+## scene b01c02s01
+verdict: SUBSTANCE-FELT
+The grounding additions (n09 the fours as four-hundred-body count-unit; n10 alley-back drops from the feed) make the suppression cost visible as a physical ceiling rather than a named limitation — that is the correct shape. The two-bone prologue (n01 flies/heat, n02 beetles/thresholds) was flagged at Phase 4 trim, and the concern was legitimate: two mechanism bones before the chapter opens risks reading as manual-not-dread. What saves it is causal direction. The world generates the question first (n04: fever-cluster returns three signatures across two alleys — unresolved, cannot locate them) before Taylor decides to extend. The mechanism bones arrive as substrate before deployment, not as instruction before the reader can feel the feed as labor. n12 (draws the line — prohibition-check) closes the scene on discipline not resolution, and n14 (foot-traffic knots the ward-junction) closes on world-physics, not on Taylor's satisfaction. The scene is operating on the correct side of the procedure/dread line, though just. The n01 deletion advisory from Phase 4 still stands as a craft preference — one focused mechanism beat is tighter than two — but it is not a substance failure at this density. Held axes read as load-bearing, not absent: harm-reduction framing is enacted as decision-under-pressure, not as comfortable rationalization.
+
+## scene b01c02s02
+verdict: SUBSTANCE-FELT
+The Wren-as-negative-space resolution is correct. n14 (insects return the junction-lane attenuation) stages the gap as a physical feed-event — attenuated signal, not a label — and n15 (insects reach the junction-lane edge) encodes the absence as what the physical actors do: reach a boundary and stop. This is not incomplete coverage in the inert sense; it is coverage encountering a structural fact about the territory. The world's social physics produce the constraint (Taylor cannot cross Wren's alleys unseen), and the feed maps that constraint as absence. That is consequence propagating from structure, which is what this reader needs. The reordering of n07–n11 (crossing → admission → yield → function-signature → connector-type) makes the classification arrive through the live encounter rather than as anticipatory labeling, which is right — the classification is an act in the moment, not a filing that precedes the event. n12 (turns from the alley-mouth — not-looking-closer enacted as body-turn) makes the discipline physical. The +1.0 relational_anchor_status gain at n13 is not hope-that-costs-nothing: the anchor account opens and immediately encounters the void (n14/n15), so the gain and the structural constraint arrive in the same scene. No walkout triggers; no catharsis; the world does not accommodate the protagonist.
+
+## scene b01c02s03
+verdict: SUBSTANCE-FELT
+The two prohibition-checks (s01n12: draws the line prospectively, before the counting; s03n13: draws the line retroactively, after the crack) read as the same prohibition arriving at different architectural pressures — discipline versus defense. They are not rhetorical repetition because the bone sequence around each is different: s01n12 follows harm-reduction framing at a moment of choice; s03n13 follows recognition (n11: stalls the count, causally grounded in the ward-junction entry at n09/n10) and holding (n12: holds the breath — the beat the recognition exists before suppression closes over it). The three-bone decomposition recognition→holding→suppression is structurally clean and carries weight because n09/n10 have made the ward-junction entry specific before the stall arrives. The held breath lands as cost paid: the recognition has room to exist for one beat before the mechanism fires. n14 (closes against the drain angle — physical suppression correlate) and n17 (ward-junction contact closes with a half-beat longer) make the filing cost something before the exhale. The chapter-close exhale (n18) is the body reporting that the work is done, not that the weight has lifted. Sealed-tension confirmed — no catharsis, no release. The crack is filed under the harm-reduction entry and the ledger is shut.

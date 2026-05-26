@@ -32,10 +32,16 @@ parking_lot:
         - active-project/staff/showrunner/memory.md:1821  # b01c01s03 notes field
         - active-project/staff/reviews/b01c01-scenes-audit-2026-05-25.md
         - active-project/staff/showrunner/_drafts/b01c01-draft-2026-05-25.md  # authoring notes G4 block
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-05-26T00:00:00Z
+      resolved_by: "/and-substance chapter b01c03 Phase 3 contract update (pre-screen-writer dispatch)"
+      resolution_note: |
+        chapters[b01c03].substance_delta.axes_in_motion updated to add
+        social_tether-prot-rise +1.0 anchored at cl01b. social_tether-prot-rise removed
+        from axes_held; the chapter now moves all four axes per the corrected contract.
+        Scene-level decomposition (Phase 3 screen-writer fanout) honors the +1.0 by
+        anchoring it at one of the 3 scenes — typically scene 2 (Jarvis-courier contact
+        is where Otto's awareness completes via the courier vector).
 
     - id: pl-2026-05-25-002
       created_at: 2026-05-25T00:00:00Z
