@@ -1,55 +1,36 @@
+---
 reviewer: dark-fantasy-reader
 facet: exposition
-episode: b01c01
-cycle: 1
-date: 2026-05-25
-verdict: accept
-
+episode: b01-c02
+phase: 5b-adversarial
+date: 2026-05-26
+verdict: ACCEPT
 ---
 
-## Per-entry readings
+## Entry-level callouts
 
-[exposition:1] @0 — preamble
-ACCEPT. "Won my last world by becoming a hive of bugs" is the right register for this kind of character: matter-of-fact about something catastrophic, not performing it. The resurrection-in-foreign-body is grounded cleanly as Westerosi (pre-Dance dating, King's Landing named) without reaching for drama. What earns it for me is the restraint of "I had not meant to wake. I woke anyway." The world does not care about her intentions. That is the dark-fantasy premise: consequence precedes consent. The preamble is honest about this before the body begins.
+[exposition:1 @0 — prior-episode-bridge] @exposition:1 — "The crowd had broken open around the stitch-maker's ward, and the hands had gone up before mine did. After that I went back to the drain angle and did not feed anyone for three weeks. I held the count at its edge by the cost of holding it. What I did instead was start to listen — at first because subsistence-reading is what survives in the Hook, and then because the listening had a shape I had begun to extend on purpose. The rule was the same rule. Reading was not directing. I had not crossed the line."
 
-[exposition:2] @0 — "Three weeks in this ward..."
-ACCEPT. This is what I need to grade the chapter correctly. Without the three-weeks marker, the Hook subsistence register reads as scene-dressing — a poor person in a slum. With it, I understand the subsistence as a sustained discipline, held by cost, not just circumstance. "The flies came with me... I refuse to use" — the horror here is that she has them and is choosing not to. That choice, named before the body, means I read every swell and propagation in the chapter as a discipline straining rather than a power deploying. The preamble earns this by being specific about the mechanism.
+This entry has to carry the three-week gap without making it feel like backstory. It does. "The hands had gone up before mine did" is the correct register — the body-memory first, the cognitive account second. "I held the count at its edge by the cost of holding it" — the tautology is the point. The only thing keeping the count held is the act of holding it. No external guarantee, no rule external to Taylor. When it breaks, it will break because she stopped holding. The bridge is honest about the architecture of Taylor's restraint.
 
-[exposition:3] @0 — "I came here to be useful without taking control."
-ACCEPT. The rule named explicitly is the correct choice. Dark fantasy fails when the protagonist's constraints are felt but not legible — the reader watches rules bend without knowing they're rules. Here the rule is stated before the first test. When the insects propagate at @12, I know what that means. This is the right form: prohibition as self-authored limit, older than this city, held by cost alone. No moral authority guarantees it. That's the flavor I want.
+"The listening had a shape I had begun to extend on purpose" is the entry into the chapter's moral core: the extension-on-purpose is the admission she is working toward and away from simultaneously. The preamble does not dramatize this. It names it clinically and lets the chapter do the rest. The dark-fantasy reader's test for prior-episode bridges: does the bridge make the chapter seem like it has already paid its costs, or does it arrive at the chapter with the weight still running? This bridge lands with the weight still running. Accept.
 
-[exposition:4] @1 — "the Hook — the lane-warren of Flea Bottom..."
-ACCEPT. I know Flea Bottom from the source text, but not the Hook sub-precinct's specific texture — and "transient smallfolk go to be unremarkable" earns its place beyond identification. That phrase tells me the social-physics of the place: this is not a community, it's a tolerance zone. Anonymous people, not neighbors. The specificity is Westerosi (not generic-medieval): smallfolk in ASOIAF don't have communes, they have survival arrangements. The em-dash-fold weight is correct.
+[exposition:2 @0 — episode-open-context] @exposition:2 — "What I had built I did not yet have a name for... The rule was that I read and did not direct. That was the line. The instrument was harm-reduction. That was how it stayed permitted."
 
-[exposition:5] @1 — "what Flea Bottom called a ward..."
-ACCEPT. "Not warm and not cruel" is exact. The dark-fantasy register requires that suffering be specified without being romanticized. A ward arrangement that is not warm and not cruel is worse than both alternatives — it is transactional care, which is the only kind available in Flea Bottom. This also sets Wren's situation as structurally typical, not exceptional, before she appears. When she shows up at @27, she is not a special-case waif; she is an instance of a documented pattern. That's what I need.
+"That was how it stayed permitted" — this is the chapter's thesis statement in preamble. The harm-reduction framing is not external permission; it is the frame Taylor uses to make the act permitted to herself. The exposition entry correctly establishes that the ledger-closing routine, the accounting, the coverage-map — these are Taylor's self-issued license. That is the dark-fantasy premise: there is no authority external to Taylor that would care about the line; she is both the legislature and the enforcement apparatus. The chapter's moral weight rests entirely on Taylor's self-governance. The preamble names this without editorializing on it. Accept.
 
-[exposition:6] @7 — fish-cart
-ACCEPT. The load-bearing image of scene-2 needs its context. A handcart of morning fish-trade is the right kind of specificity: it places the Hook inside a functional economic system (fish comes from the river through the Mud Gate, runs through these alleys, this is when and how). The blockage is an event in that system, not scene-dressing. Em-dash-fold correct.
+[exposition:3 @14 — ward-junction first-mention] @exposition:3 — Em-dash-fold: "the ward-junction — a corner in the Hook where three or four alleys gave onto one another under a single precinct-ward's reach." The first-mention lands at the chapter's scene-A close beat, where the foot-traffic knots the ward-junction. The two-sense ward-note (precinct-ward sense vs. child-fostering-ward sense) is a genuine complexity. The em-dash-fold resolves it by specifying the spatial sense explicitly. From a dark-fantasy reader's standpoint: the ward-junction as a physical corner in the Hook is the correct Westerosi texture — not a mystical place, not a specially marked location, but a street corner defined by the convergence of precinct claims. That is the kind of specific social-geography this reader looks for: the world has administrative structures that predate the protagonist and operate by their own logic. The junction exists because the precincts converge there; it is load-bearing in the chapter because that convergence determines what the feed can and cannot read. Accept.
 
-[exposition:7] @18 — "After the gap closed, the crowd came apart the way Flea Bottom crowds did."
-ACCEPT. The scene-bridge earns its place. Two things happen here: temporal reorientation (the gap closed = an interval passed) and social-physics confirmation (Flea Bottom crowds disperse by learned pattern, not by individual choice). The second part is what I want — the world has behaviors that predate the protagonist. "The way Flea Bottom crowds did" implies a long history of street-incidents producing a learned dispersal. The world was there before her.
+[exposition:4 @15 — scene-open-orient] @exposition:4 — "Days of it, and the pattern came." The fault-008 TASTE-FLAG fires on this entry: pov-frame without explicit first-person pronoun; auditor raised it as an attack candidate for voice-fidelity. The dark-fantasy reader's specific concern: does this read as Taylor's perception of elapsed time or as authorial voice narrating on Taylor's behalf?
 
-[exposition:8] @21 — "the Mudway man..."
-ACCEPT. "Named what he saw without explaining why he had noticed" is a portrait of Flea Bottom's epistemics: thirty years of street-watching teaches you pattern-recognition without theory. This is the dark-fantasy register for observation — not the curious investigator, not the wise elder who knows secrets, but someone who has seen enough iterations of a thing to name it before he can say why he knows. His witch-label call is established as credible and non-hysterical: it will not be an overreaction, it will be a categorization from someone with data. That's more dangerous.
+"Days of it" — the "it" refers backward to the coverage-sweep established in scene-A. The sentence is incomplete by normal English standards (elliptical subject: [I had done] days of it). The register is Taylor's compression — she names the duration as a fact about her experience rather than as narration of external time. The "and the pattern came" is Taylor's observation: the pattern's arrival is something Taylor registers. This is perception-of-elapsed-time in Taylor's characteristic clinical register, not third-person narration.
 
-[exposition:9] @27 — "the stitch-maker's ward..."
-ACCEPT. "Watched cloth before she cut it, and watched people the same way." This is the right entry for the cost-bearer. The watching-mode tells me she is attentive without being exceptional — this is her practiced skill, observation before action, drawn from the trade she lives by. The cost-bearer image works in dark fantasy when the cost-bearer is specific and human, not symbolic. Wren is a recognizable person before she is an instrument of the narrative's consequences. The eleven-year-old detail is correct — not generic-child but specifically a ward-age girl in a stitch-house, at an age where her position is structurally determined.
+The test I apply: would this sentence sound wrong if it appeared in a chapter where the narrator is explicitly first-person throughout? No. "Days of it, and the pattern came" reads as internal-summary — the kind of sentence Taylor might write in her own ledger before deploying the detail. It is compressed first-person perception, not authorial omniscience. The sentence does not have the syntax of omniscient narration (no "She had spent days at it"). Accept. The worm-canon-pedant concern is valid and should be tested in that reviewer's adversarial read; from this reader's perspective the register is earned.
 
----
+## Convergence-trace
 
-## Proposed ADDs
+fault-008 (auditor TASTE-FLAG) — exposition:4 pov-frame without pronoun. Attack assessed above; dark-fantasy-reader accepts the register as Taylor's compression mode. The worm-canon-pedant attack may differ.
 
-None. One candidate I considered: a scene-open-orient or first-mention-term for the silence following @17's hands-up moment. The hands-up gesture itself is an interesting social-physics event — Taylor using a pacifying gesture in a Westerosi crowd that would read such a gesture as surrender or defeat-acknowledgment, not as "I am not a threat." However, this is a substance-layer observation, not an exposition gap. The chapter's bones carry what happens; exposition's job is orientation, not annotation. No ADD proposed.
+## Verdict: ACCEPT
 
----
-
-## Flag-007 attack surface
-
-The sparsity overage is not a reader problem. Three preamble paragraphs plus five first-mentions plus one scene-bridge reads as appropriate density for a cold-start chapter that is crossing two genre-worlds. The preamble paragraphs function as a single front-loaded unit. The body glosses are sparse (one per scene transition or character introduction). No gloss-fatigue detected.
-
-## Flag-014 attack surface
-
-"Two hundred metres of them, dense as the air." The metre-vs-paces question from the vocabulary card is live for me as a dark-fantasy reader, but from the opposite angle from cape-fic. The Westerosi world's resistance to Taylor's Earth-Bet presence is part of what earns the project's premise. Taylor thinking in metres is a small but structurally correct tell: her cognition has not converted to Westerosi register. That is the right kind of detail for dark fantasy — the foreign element does not assimilate immediately. The vocabulary card's substitution-register was built for dialogue and outward narration; Taylor's inner monologue operating in her native units is not a seam, it is characterization. I am not blocking on this. If anything, I would flag the inverse risk: converting "metres" to "paces" in the preamble would be a false assimilation that flattens the foreignness the project is staking its premise on.
-
-VERDICT: ACCEPT (flag-014 is a strength in the pov-frame, not a seam)
+Four entries, correctly positioned. The prior-episode-bridge lands with the chapter's weight still running, not discharged by the bridge. The episode-open-context establishes that the ledger is self-issued permission, not external authorization — which is the correct dark-fantasy architecture for the chapter's moral stakes. The ward-junction gloss is specific Westerosi social-geography, not generic medieval set-dressing. The scene-bridge at @15 is Taylor's compression register. No entries exist as decorative context-laying. The chapter does not coast on the bridge to arrive at a premise that is already paid for. The weight is waiting inside the chapter when the body begins.

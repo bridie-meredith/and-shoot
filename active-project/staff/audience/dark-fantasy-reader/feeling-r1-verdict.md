@@ -1,51 +1,26 @@
 ---
 reviewer: dark-fantasy-reader
 facet: feeling
-episode: b01-c01
-cycle: 1
-date: 2026-05-25
-verdict: revise
+episode: b01-c02
+phase: 5b-adversarial
+date: 2026-05-26
+verdict: ACCEPT
 ---
 
-# dark-fantasy-reader — feeling adversarial verdict
+## Entry-level callouts
 
-## Per-entry callouts
+[feel:1 @23] @feel:1 — One entry: "her weight settles back onto the rear foot | expressed: partial." The feel:1 entry was previously at @10 (per the R2 delete and add in the prior 29-bone version), now re-anchored. Wait — the current facet file shows `1 @23 taylor-hebert-kl-122ac: her weight settles back onto the rear foot | expressed: partial`. This is the scene-B beat where Taylor yields the alley-mouth as Wren approaches.
 
-**[feeling:1] @21 oswyn** `the hands settle at the apron-front`
-verdict: accept
-The world-texture test for this reader: does the somatic tell feel like it comes from someone who exists in this place, or does it feel like authorial placement of a significant gesture? The hands-to-apron-front is the right kind of habitual self-management — not theatrical, not significant, not a performance of calm. It is what a man who does not find events on his street surprising does when events on his street happen. The card gives him lead-stained hands and thirty years at a casting table; his hands go to the apron-front the way they go to any workday surface. He does not know he is inside a moment anyone will remember. The tell is scored as expressed: yes — visible to the scene, which makes it legible as the ward-social-institution response (Oswyn's composure at the lane-mouth is the first beat of the witch-label assembly). The somatic show lands in the correct Westerosi register: categorization by behavior, not fear-declaration, not curiosity. This reader accepts the entry.
-convergence: overlaps auditor surface [Q2-meaningful (witch-label assembly starts here; Oswyn's tell is the structural pivot that makes the ward-elder authority visible before he has a name for Taylor)].
+The question for this reader: does the weight-on-rear-foot land as cost, or as authorial-placed choreography? At @23 Taylor yields the alley-mouth — she steps back and back-weights before Wren passes. The yield is the surveillance discipline: she cannot stand at the alley-mouth waiting to observe Wren at closer range; she has to move. The weight-settling is the body's registration of the decision to yield. It is expressed: partial because the social legibility is a retreat, not a tell. Wren sees a woman stepping aside on a lane.
 
----
+The somatic tell earns because it fires on the act of surveillance-restraint — not on the recognition, not on the suppression, but on the moment when the discipline produces a physical movement that the body executes before the narration names it. This is consequence that propagates through the physical register. The feel entry does not duplicate the NI entry at @23 (narrator:4: "the alley-mouth had just been priced as exposure; the yield was already calculated before the body arrived") — the NI carries the cognitive register (pre-calculation), the feel entry carries the somatic register (weight-transfer as execution). Two distinct channels. Accept.
 
-**[feeling:2] @10 taylor** `her breath empties out`
-verdict: accept
-The question this reader applies: does the cost read as real, or does it arrive on a beat that hasn't accumulated enough weight to justify the body paying for it? @10 is mid-crowd-compression — the child is down, the crowd is pressing, Taylor is holding the suppression-line at the feet. The NI file has no entry at @10. The proto-line is static-position. The breath-empty is the body's unregistered accounting: the suppression is costing something and the body knows it before the ledger opens. This is the dark-fantasy shape this reader requires — suffering that changes something, even at the micro level. The breath doesn't recover the cost but it names that the cost is running. Vocabulary: "empties out" is a direct physical description — no named feeling, no hedge, no "like emptying." The body just does it. That is the correct register: the somatic tell is the fact, not a metaphor for a fact. The expressed: no tag is appropriate (crowd is not reading Taylor's breath; reader is). Accept.
-convergence: overlaps auditor surface [Q1 passes (NI absent at @10, proto-line carries no interior), Q2-meaningful (suppression-discipline cost register)].
+The prior b01c02 cycle-1 feeling verdict was against b01c01's feeling file (wrong episode). The R2 action (deleted 1 entry, kept 1) brought the file from 2 to 1 entry. The single retained entry is the correct one. The file is at the density floor (2.1%) per the auditor's frequency-band signal — one more deletion in c03 would go sub-floor. Noted as carry-forward. Not a problem in this chapter.
 
----
+## Convergence-trace
 
-**[feeling:3] @24 taylor** `her head fixes toward the alley-mouth, away from the stitch-house lane`
-verdict: REVISE
-The flag-011 overlap is the problem and it is a real one. Narrator:8@24: "she set the body to the alley-mouth so the stitch-house lane would not need to be registered again." This entry already contains the body-direction event AND the interior rationale for it. The NI tells the reader: body moves away, and here is why (avoidance-as-accounting). Feel:3 tells the reader: body moves away. The feel entry adds nothing the NI has not already shown, because the NI is already in the somatic register ("set the body") — this is not a pure cognitive/registrative NI entry; it describes the physical act and its reason simultaneously. For this reader: the weight-accumulation logic depends on each beat having its own bill. Feel:3 and NI:8 charge for the same thing at the same moment. That is not weight accumulation; it is double-billing. The revised entry must show something the NI's "set the body" does not cover — not the direction (NI covers that) but the texture: jaw, weight-transfer, breath after the crowd, the eyes finding the alley-mouth before the head moves. "Her head fixes" is visible only; NI:8 already deployed "body" as the referent. If the body is the subject in both, they are redundant. The entry should be cut or replaced with a body-tell the NI does not name.
-convergence: overlaps auditor flag-011 [near-overlap narrator:8@24; Q1-interior-passes failure; body-register redundancy with NI].
+auditor frequency-band SIGNAL — feeling at 2.1%, just at floor. R2 documented the trade-off. No reader-experience concern at one entry.
 
----
+## Verdict: ACCEPT
 
-**[feeling:4] @27 wren** `her eyes lead her head toward taylor`
-verdict: accept
-The POV-perceptual-access question: this reader does not accept "expressed: no" as a POV-omniscience violation when the POV character has ambient insect-sense running at full passive range. The cards establish that Taylor reads fine-motor states through the feed — she reads bodies at crowd level, she reads Aemond's position by its absence in the feed, she reads children's breath through the ground. Reading Wren's eye-lead is within the established capability range. The expressed:no tag means in-scene human observers miss this — they are not all running insect-sense. The reader, accessing Taylor's insect-feed-awareness, sees it. This is not omniscience; it is the capability deployed at ambient level on the character the network is built around. The entry passes POV access on that ground. Separately: the tell is Wren's card-defined signature ("her eyes move to things before her head does"). The entry does not import an external vocabulary; it renders the card. The chapter's Wren-plant arc (stitch-house smell at @2 / crowd-presence at @27) closes here. This is the structural beat the chapter needs. The content is earned. Accept.
-convergence: overlaps auditor surface [somatic-tell-card-match (Wren §Look: "her eyes move to things before her head does"), Q2-meaningful (cost-bearer-plant structurally closes chapter arc), Q1 passes (no other facet renders Wren's interior at @27)].
-
----
-
-## flag-006 response
-The over-band condition at 7.4% for Taylor is a denominator artifact. Two fires in 27 bones is within tolerance for a pilot-length chapter where Taylor is the only POV character and the dominant actor across all 27 bones. The rubric's 2-5% target scales linearly from a 77-bone standard episode; at 27 bones the absolute numbers are small and a single-fire difference crosses the band boundary. However: if feel:3 is revised (as directed above), Taylor drops to 1 fire, which resolves the flag without additional action. The over-band is thus a consequence of the Q1 failure at feel:3, not an independent problem.
-
----
-
-## Aggregate verdict: REVISE
-
-feel:3 fails Q1. The near-overlap with narrator:8@24 is not a seam that can be argued away — "set the body to the alley-mouth" in the NI and "her head fixes toward the alley-mouth" in feel:3 are the same body-direction event rendered in two registers in the same beat. The rubric's Q1-interior gate closes on that redundancy. Three of four entries are clean; one requires revision or deletion.
-
-Revision directive: feel:3 must either name a somatic tell the NI does not name (a finer-grain bodily fact than the direction change itself — breath, jaw, weight, eye-target) or be cut. The NI:8 entry is the stronger carrier for this beat; feeling does not need to double it.
+One entry, correct anchor, correct register, no NI redundancy. The somatic yield at @23 fires on the cost of surveillance-discipline rather than on the recognition or the suppression — the feel entry covers the part of the chapter's moral weight that neither NI nor memory can reach: the body executing the discipline before the narration has finished accounting for it. That is the correct charge for a feeling entry in a chapter about a protagonist whose restraint costs her the thing she is trying to measure. The density floor advisory is a c03 watch item, not a c02 problem.

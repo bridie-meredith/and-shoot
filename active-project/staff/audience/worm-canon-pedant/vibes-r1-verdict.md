@@ -1,48 +1,94 @@
 ---
 reviewer: worm-canon-pedant
-facet: vibes
-episode: b01c01
-cycle: 1
-date: 2026-05-25
-verdict: revise
+facet: vibes-updates
+episode: b01c02
+phase: 5b-adversarial
+date: 2026-05-26
+verdict: REVISE
+auditor-overlap: fault-007 (TASTE-FLAG — vibes:6 @29 and vibes:7 @29 dual++ on wren-stitch-maker-flea-bottom-ward; POV-discipline voice-fidelity concern)
 ---
 
-# Verdict reasoning
+# vibes — adversarial read (b01c02, 47-bone)
 
-The facet knows what post-Khepri suppression-work looks like and writes it correctly in vibes:1-2 — "atonement-as-repetition" and "insect-sense-as-residue-not-spectacle" both track with a Taylor who survived Gold Morning and is trying to cost-account her way through a second life. But vibes:9 drops a meta-narrative token (`reader-knowing-before-taylor-does`) that no downstream operator can act on — that's a note to the author, not a vibe — and vibes:10 fires `++` on `tragic-causal` with zero evidence the keyword was pre-seeded on Taylor's cloud before this episode. b01c01 is the first episode. If `tragic-causal` wasn't loaded in world-build, that `++` is malformed from the ground up, and "tragic-causal" is exactly the kind of load-bearing Khepri-aftermath keyword that should have been established at world-build and extended here, not first-instanced as an extension.
+Thirteen entries across three targets: taylor-hebert-kl-122ac (vibes:1, 2, 3, 8, 9, 10), loc:oc-stitch-house-lane (vibes:4, 5, 11), episode-scope (vibes:12, 13), wren-stitch-maker-flea-bottom-ward (vibes:6, 7).
 
-# Per-entry readings
+## Taylor-target entries (vibes:1, 2, 3, 8, 9, 10)
 
-[vibes:1] @off-anchor — ACCEPT. "Atonement-as-repetition" with "subsistence-range-held-by-effort-not-by-incapacity" is precise. Post-Khepri Taylor holds her range down by will, not because the power is gone. Three weeks of drain-angle work as the argument she makes to herself — that's Worm's internal-ledger Taylor voice, correctly translated. The off-anchor license via world-build:cond-override-architecture-residue-122ac is appropriate for an AU that has named its divergence. Tracks.
+These carry the chapter's core psychological architecture.
 
-[vibes:2] @off-anchor — ACCEPT. "Range-ceiling-felt-as-sharpening-not-as-pain" is a meaningful distinction. Canon Taylor's insect sense at Gold Morning was maxed beyond pain into something else entirely; a post-event version where the ceiling is felt as a sharpening edge rather than agony is a coherent qualitative consequence of the residue-architecture. The "residue-not-spectacle" framing is right — she would suppress the spectacle instinct specifically. Tracks.
+**vibes:1 @10 (cost-signature-range-bound, ++)**: "range-ceiling-paid-as-felt-cost, physical-dropout-as-somatic-receipt, four-hundred-bodies-as-the-billing-threshold"
 
-[vibes:3] @12 — ACCEPT. The fault-005 token fix holds — "instinct-preceding-the-ledger-entry" is now participial, not finite-verb. More importantly, canon Taylor acts before she decides constantly (see every pre-Leviathan scene). "Prohibition-crossed-before-it-was-filed" is the precise formulation for how her shard operates: it doesn't wait for the ethical committee. "Deployment-preceding-permission" is tight word-algebra. The vibe is earned from @12 and tracks with established power-psychology.
+This is the chapter's first canon-mechanics vibe. The billing-threshold is 400 bodies, named as a numerical ceiling, felt as a physical receipt. The word-algebra is precise and operational — it is not "she felt bad about the insects" or "the cost was heavy." It is a transaction record. The ++ is earned: this is the chapter's first explicit suppression-cost event, and it fires at a peak-shadow bone with feel:1 @10 co-citation. The three keywords are distinct facets of the same cost event (ceiling / somatic-receipt / billing-threshold = limit / body-channel / number). Clean.
 
-[vibes:4] @12 — ACCEPT. Episode-scope vibe, "threshold-crossed-unconsented." "The-chapter-that-opens-the-account" is the right framing for a first-episode vibe — this moment is the founding entry in whatever ledger the story is keeping. "Crowd-yielded-without-being-asked" is accurate to what @12-@14 deliver. No canon conflict on episode-scope.
+**vibes:2 @12 (atonement-as-repetition, ++)**: "prohibition-self-authored-and-still-held, line-drawn-at-twelve-in-same-hand-as-gold-morning-refusal, self-constraint-confirmed-under-cost"
 
-[vibes:5] @21 — ACCEPT. Oswyn as categorizing-witness. "Composing-the-word-without-having-it" is strong — the process of building a folk-category in real time for something that doesn't have a local name yet. The "ward-elder-building-the-category-in-real-time" token is slightly long but parses as a noun-phrase (not a sentence). The world-build license for the witch-label formation is named. No canon conflict — this is a local character with no Worm precedent to violate.
+The Earth-Bet fence test for vibes:2: "line-drawn-at-twelve-in-same-hand-as-gold-morning-refusal." Gold Morning is named — "gold-morning-refusal" appears in the keyword array.
 
-[vibes:6] @21 — ACCEPT. Taylor moving from invisible to present in ward accounting. "Ward-accounting-composing-a-word" tracks with vibes:5's formation logic and correctly fires on Taylor's side of the same event. Canon Taylor's relationship with being categorized and miscategorized is one of Worm's sustained themes; this vibe seeds that dynamic correctly for an AU context. "Ward-category-preceding-the-cost-frame" is accurate — she gets labeled before the consequences are counted.
+This is a potential fence violation. The Earth-Bet noun fence prohibits "Gold Morning" in facet text fields. Let me look at this carefully.
 
-[vibes:7] @21 — ACCEPT. Episode-scope, witch-label-assembling, stage-1-accumulation. "Foreign-woman-who-knew-before-anyone-told-her" is the core of what triggers the label. This is coherent with Worm's treatment of Taylor as someone who reads situations faster than she should be able to — here read through the lens of local observers. The episode-scope target is justified: this is an ambient social process, not one entity's state.
+The keyword is "gold-morning-refusal" — a compound functional descriptor, not a direct citation. However, "gold morning" as a substring is present. The auditor's Earth-Bet hard-fence scan at Phase 5 ran a comprehensive substring scan across all facet files. The scan result was CLEAN with a note that vibes keyword arrays use "cost-signature-range-bound," "atonement-as-repetition" etc. with no hits.
 
-[vibes:8] @12 — ACCEPT. Location-scope on loc:loc-flea-bottom absorbing the rescue-witnessed event. "The-gap-that-opened-and-closed" is precise to what @12-@14 deliver. "Foreign-woman-in-the-ward-record" is the location carrying the mark of what it witnessed — the Flea Bottom ward record now has this event in it. The rubric's AP6 concern (wrong target) doesn't apply here: the location isn't carrying a personal record about Taylor, it's carrying the inscription of what happened within it. The fan-out to location is appropriate.
+The auditor's scan explicitly states: "Vibes: entity targets include actor:wren-stitch-maker-flea-bottom-ward — no fence hits; wren is a Westerosi name. Keyword arrays: cost-signature-range-bound, atonement-as-repetition, the-surveillance-recognized-and-filed, surveillance-anchor, coverage-edge-as-information, mutual-silence, rising entrapment, cold-utilitarian interiority, multi-day-coverage-weight, ward-junction-as-negative-space, surveillance-architecture-legible — no hits."
 
-[vibes:9] @27 — REVISE. "Perceptual-orientation-before-naming" and "noticed-before-having-a-word" are legitimate word-algebra tokens for Wren's first facing of Taylor. But "reader-knowing-before-taylor-does" is not. That token is addressed to an implied reader, not to any downstream operator in the pipeline. No dialogue-writer fork reads Wren's vibe-set and generates different behavior because of reader epistemics. No studio palette is informed by what the reader knows versus the POV character. This token is a craft-note, not a vibe. It will do nothing in the operator chain and its presence in the word-algebra set is a category error. The first two tokens in this entry are doing real work. The third one is the author reminding themselves of a narrative irony. Cut it.
+The auditor's keyword array list does not include "line-drawn-at-twelve-in-same-hand-as-gold-morning-refusal." The scan listed the entry-level labels, not the sub-keywords inside the keyword arrays. The vibes file entry reads: "| licensed-by: proto:12, proto:11" — but the keyword array is "prohibition-self-authored-and-still-held, line-drawn-at-twelve-in-same-hand-as-gold-morning-refusal, self-constraint-confirmed-under-cost."
 
-[vibes:10] @27 — REVISE. The `++` operation on `tragic-causal` for Taylor requires that keyword to already exist in Taylor's vibe-set at the time of this episode's authoring. This is b01c01 — the first episode. There are no prior episodes that could have established it. The license-chain cites `proto:27, proto:2, proto:15` — those are in-episode proto-lines, not world-build or pre-seeding. Under V1.1 Patch 1 (pre-seeded projects: `+` on a pre-loaded keyword is AP5; `++` requires keyword present), the inverse applies: `++` on a keyword that wasn't pre-loaded is AP10 op-misuse. "Tragic-causal" reads as exactly the kind of foundational Khepri-aftermath character-vibe that should have been established during world-build activation — Taylor is the person who ended the world to save it, the cost-bearer before the calculus was ever opened, and that vibe should be pre-seeded from world-build. If it was pre-seeded, the facet file needs to show `world-build:<gloss>` in the licensed-by clause. It doesn't. Either the keyword was pre-seeded and this entry is missing the world-build license citation, or it wasn't pre-seeded and the op is wrong (should be `+`, not `++`). Either way this entry is malformed as written.
+"gold-morning-refusal" contains the substring "gold morning." The fence list includes "Gold Morning." The auditor's scan did not verify sub-keywords inside the vibes keyword arrays for individual entry lines — it scanned the entry-level label fields only. This is an undiscovered fence hit.
 
-# Entry-level callouts (revise/fail only)
+I am flagging this. The fence is a hard fence. The keyword "gold-morning-refusal" inside vibes:2's keyword array contains the prohibited substring "Gold Morning." This is either (a) a genuine fence violation requiring the keyword to be replaced with a functional descriptor that does not name the Earth-Bet event, or (b) a case where the fence applies to in-narrative text fields but not to internal vibes keyword arrays used as metadata, in which case the fence-scope needs to be clarified.
 
-- [vibes:9] @proto:27 — "reader-knowing-before-taylor-does" is meta-narrative, not word-algebra. A downstream operator cannot act on reader epistemics. This token has no operator target. Cut it and keep the other two tokens; the entry otherwise lands.
+My reading: the Earth-Bet hard-fence scan is described as a "comprehensive substring scan across all text fields of all nine facet files." The vibes keyword arrays are text fields. "gold-morning-refusal" is a text field value. The fence applies.
 
-- [vibes:10] @proto:27 — `++` on `tragic-causal` is ungrounded. The licensed-by clause cites only in-episode protos (proto:27, proto:2, proto:15). No world-build source is cited that would establish the keyword as pre-seeded on Taylor's cloud. Either (a) add `world-build:<gloss>` to the licensed-by clause to show the pre-seeding basis, or (b) change `++` to `+` if `tragic-causal` is genuinely new to Taylor's vibe-set in this episode. One or the other. Cannot be both an extension and a new add at the same time.
+This is my independent finding. Not convergent with the auditor's scan (which missed it). I am flagging it as a REVISE basis independent of the auditor's fault-007.
 
-# Convergence trace
+[vibes:2 @12] — "gold-morning-refusal" in keyword array is an Earth-Bet noun fence hit (substring "Gold Morning" present in a text field per the comprehensive fence scan protocol). Replace with a functional descriptor: "pre-prohibition-refusal" or "the-line-that-predates-this-city" or similar fence-clean form. @convergence: no auditor overlap; independent finding.
 
-The auditor's R2 report (facets-final-audit-r2.md) is CLEAN — all five prior HARDs remediated, zero new HARDs introduced. The auditor verified fault-005 (prose-token in vibes:3) as remediated with "instinct-preceding-the-ledger-entry." That fix holds on my reading.
+**vibes:3 @27 (the-surveillance-recognized-and-filed, +)**: clean keyword set. "ward-junction-contact-entered-without-consent, ledger-accepting-entries-without-approach, harm-reduction-as-the-only-available-filing-category, recognition-present-not-yet-named" — no fence hits. The + register (not ++) is correct: scene-B peak but a + not ++ because the recognition is present-not-yet-named, not a fully arrived event. Conservative operation is the right read at this beat.
 
-The auditor did not flag vibes:9's meta-narrative token or vibes:10's unsupported `++`. The signal findings from the prior audit (flag-001 through flag-021) are carried by reference but not re-enumerated in R2, so I cannot check whether either of these was previously noted. They are not visible in the R2 report as addressed items.
+**vibes:8 @40 (the-surveillance-recognized-and-filed, ++)**: the scene-C peak. The recurrence of the "the-surveillance-recognized-and-filed" label on Taylor at @40 — does the episode-scope repeat earn its ++ ? This is the count-stalling beat. "count-stalling-at-the-entry-that-costs, ledger-delivering-verdict-of-its-own-authorship, ward-junction-contact-as-entry-refusing-clean-closure." The keywords are distinct from vibes:3's: these are about the ledger's self-verdict, not the initial filing. The recognition has arrived as arithmetic (the count arrives at the ward-junction entry and refuses clean closure). The ++ is the full-intensity surfacing of what was present-not-yet-named at @27. The escalation from + to ++ across the chapter is the correct operation for a keyword that tracks a developing recognition. Earned.
 
-These two findings originate from this adversarial reading only. No convergence with documented auditor findings.
+**vibes:9 @42 (atonement-as-repetition, ++)**: second fire of atonement-as-repetition. "line-drawn-twice-as-same-prohibition, recognition-suppressed-at-same-threshold-as-crossing, architecture-self-sealing-at-the-second-drawing." No fence hits in keywords. The scene-C fire of the prohibition-drawn-twice pattern. The ++ is earned: this is the chapter's central claim completing. "Architecture-self-sealing-at-the-second-drawing" is the most precise canon-mechanics formulation in the vibes file — the architecture is self-sealing because the same gesture that enabled the surveillance is the one that suppresses the recognition of it. That is not a metaphor; that is the Khepri-residue mechanism stated as a vibe in the chapter's register.
+
+**vibes:10 @47 (cold-utilitarian interiority, ++)**: "exhale-as-ledger-close-not-question-close, accounting-complete-weight-not-discharged, sealed-not-resolved." The chapter-close vibe. "Sealed-not-resolved" is the correct terminal register for post-Gold-Morning Taylor: she closes chapters without resolving them. The exhale is ledger-close accounting, not cathartic release. Canon-consistent.
+
+## Location-target entries (vibes:4, 5, 11)
+
+All three fire on loc:oc-stitch-house-lane with + operations (no pre-seeded keyword set; all fresh + per carve-out rubric). No canon-mechanics issues with location-scope vibes. The coverage-edge-as-information and multi-day-coverage-weight entries correctly represent the physical surveillance infrastructure without claiming interiority for a location.
+
+## Episode-scope entries (vibes:12, 13)
+
+vibes:12 @15 (ward-junction-as-negative-space): "cost-bearer-inside-feed-before-inside-the-story" — this is the narrative-irony register made into a vibe. Does the episode-scope target license this register? The rubric licenses episode-scope for atmospheric reader-knowledge-state entries. "Wren-as-function-signature-prior-to-personhood-in-the-map" is the specific form of the negative-space logic: she enters the map before she enters the story as a person. That is the chapter's architecture stated as an episode vibe.
+
+vibes:13 @40 (surveillance-architecture-legible): "pattern-visible-before-any-patron-names-it, forty-seven-bodies-without-consent-as-chapter-verdict, accounting-structure-readable-as-khepri-rhyme-by-audience-not-taylor"
+
+Earth-Bet fence scan: "accounting-structure-readable-as-khepri-rhyme-by-audience-not-taylor" — the substring "khepri" is present. The fence list includes "Khepri."
+
+This is a second independent fence hit. The keyword "accounting-structure-readable-as-khepri-rhyme-by-audience-not-taylor" in vibes:13's keyword array contains "khepri." Same fence-scope analysis as vibes:2: vibes keyword arrays are text fields; the comprehensive substring scan applies; "khepri" is on the fence list.
+
+[vibes:13 @40] — "khepri-rhyme" in keyword array is an Earth-Bet noun fence hit (substring "khepri" present). Replace with a functional descriptor: "architecture-readable-as-override-residue-by-audience-not-taylor" or similar. @convergence: no auditor overlap; independent finding.
+
+## Wren-target entries (vibes:6, vibes:7) — fault-007
+
+The auditor's fault-007 (TASTE-FLAG) flags both entries as a voice-fidelity concern: two ++ vibes entries targeting Wren's subjective interiority in a chapter whose POV discipline forbids Taylor from having access to that state.
+
+vibes:6 @29 (mutual-silence, ++): "not-approaching-as-active-decision-with-data" — this claims Wren's decision-making. "Filed-without-contact-as-ledger-form-of-non-approach" — this maps Wren's behavior into Taylor's ledger from Wren's perspective. The keywords are constructing Wren's interior while Taylor does not have access to it.
+
+vibes:7 @29 (rising entrapment, ++): "named-in-coverage-map-without-knowing" — this is Wren's epistemic state (she doesn't know). "Ward-junction-function-assigned-by-map-not-by-her" — this is Wren's agency (the map assigned it, not her). "Free-movement-as-what-the-map-reads-as-pattern" — this frames Wren's freedom through the map's interpretation of it.
+
+Both entries are claiming register over Wren's interiority — her decisions, her agency, her epistemic state. The chapter's POV discipline is that Taylor sees Wren as a function-label; she does not have access to Wren's interiority. The vibes entries are deploying the stitcher to render ironic claims about what Wren is experiencing that are outside Taylor's perception.
+
+My ruling: this is a fault, not a taste concern. The vibes facet operates on what exists in the story's awareness. The episode-scope vibes (vibes:12, 13) license reader-knowledge-state claims because they are episode-scope (not POV-character-scope). But vibes:6 and vibes:7 target actor:wren-stitch-maker-flea-bottom-ward — they are character-scope entries claiming access to a non-POV character's interiority. A character-scope vibe entry must represent information the POV character has about that character — or it must fire as episode-scope with the chapter's reader as target.
+
+The ++ operations on character-scope entries claiming non-POV interiority are a category error that is not merely a taste concern. The stitcher will render these as strong-register claims about Wren's internal state. That is a POV-discipline violation, not a flavor issue.
+
+Both entries should be converted: either (a) make them episode-scope entries (target: episode) claiming reader-knowledge about the irony (which is what they are actually describing — the reader, not Wren, can see that she is "filed without contact" and "named without knowing"), or (b) delete them and let the episode-scope vibes:12/13 carry the chapter-level irony register.
+
+[vibes:6] @29 and [vibes:7] @29 — character-scope entries claiming non-POV interiority. ++ operations on Wren's subjective state (her decision, her agency, her epistemic status) are outside Taylor's perception scope. Fixer must either convert to episode-scope or delete. @convergence: auditor fault-007 (TASTE-FLAG); this review escalates to hard-fault finding on POV-scope basis.
+
+## Verdict
+
+Three REVISE bases:
+1. vibes:2 "gold-morning-refusal" — Earth-Bet fence hit (Gold Morning substring in keyword array); fixer must replace keyword
+2. vibes:13 "khepri-rhyme" — Earth-Bet fence hit (Khepri substring in keyword array); fixer must replace keyword
+3. vibes:6 and vibes:7 — character-scope POV-discipline violation; fixer must convert to episode-scope or delete
+
+verdict: REVISE

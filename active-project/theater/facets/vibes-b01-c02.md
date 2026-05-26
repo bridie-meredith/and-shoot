@@ -2,6 +2,7 @@ facet: vibes-updates
 episode: b01-c02
 author: showrunner
 bones_count: 47
+entries_count: 11
 r1_status: provisional
 ---
 
@@ -20,7 +21,7 @@ r1_status: provisional
 
 1 @10 actor:taylor-hebert-kl-122ac ++ cost-signature-range-bound: [range-ceiling-paid-as-felt-cost, physical-dropout-as-somatic-receipt, four-hundred-bodies-as-the-billing-threshold] | licensed-by: proto:10, proto:11
 
-2 @12 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [prohibition-self-authored-and-still-held, line-drawn-at-twelve-in-same-hand-as-gold-morning-refusal, self-constraint-confirmed-under-cost] | licensed-by: proto:12, proto:11
+2 @12 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [prohibition-self-authored-and-still-held, line-drawn-at-twelve-in-same-hand-as-the-prior-refusal, self-constraint-confirmed-under-cost] | licensed-by: proto:12, proto:11
 
 3 @27 actor:taylor-hebert-kl-122ac + the-surveillance-recognized-and-filed: [ward-junction-contact-entered-without-consent, ledger-accepting-entries-without-approach, harm-reduction-as-the-only-available-filing-category, recognition-present-not-yet-named] | licensed-by: proto:27, proto:24, proto:25
 
@@ -28,9 +29,22 @@ r1_status: provisional
 
 5 @29 loc:oc-stitch-house-lane + coverage-edge-as-information: [feed-limit-as-second-register-of-the-same-map, attenuation-as-boundary-not-failure, negative-space-inside-the-accounting] | licensed-by: proto:28, proto:29
 
-6 @29 actor:wren-stitch-maker-flea-bottom-ward ++ mutual-silence: [not-approaching-as-active-decision-with-data, filed-without-contact-as-ledger-form-of-non-approach, ward-junction-entry-prior-to-any-word] | licensed-by: proto:27, proto:26, proto:25
+# DELETED vibes:6 — @29 actor:wren-stitch-maker-flea-bottom-ward ++ mutual-silence
+# Reason: POV-scope violation. Character-scope entry claimed Wren's volitional interior state
+# ("not-approaching-as-active-decision-with-data") at a bone where Taylor has no epistemic
+# access (feed attenuated). Chapter's strict solo-POV discipline forbids Taylor from reading
+# Wren's interiority. Convergence: cape-fic-reader + dark-fantasy-reader + worm-canon-pedant.
+# Deleted at Phase 5b cycle-1 fixer pass 2026-05-26. Cite-index citation [vibes:6] stripped
+# from proto-lines @27.
 
-7 @29 actor:wren-stitch-maker-flea-bottom-ward ++ rising entrapment: [named-in-coverage-map-without-knowing, ward-junction-function-assigned-by-map-not-by-her, free-movement-as-what-the-map-reads-as-pattern] | licensed-by: proto:25, proto:27, proto:28
+# DELETED vibes:7 — @29 actor:wren-stitch-maker-flea-bottom-ward ++ rising entrapment
+# Reason: POV-scope violation. "++ rising entrapment" on a character-scope entry at @29
+# attributed Wren's subjective experience of entrapment. Reader-irony content already carried
+# by vibes:5 (coverage-edge-as-information) and vibes:12/13 (episode-scope irony layer).
+# Convergence: cape-fic-reader + worm-canon-pedant (dark-fantasy-reader partial: defends vibes:7
+# tokens as map-read but identifies dual-++ Wren pile-up as the fault vector).
+# Deleted at Phase 5b cycle-1 fixer pass 2026-05-26. Cite-index citation [vibes:7] stripped
+# from proto-lines @29.
 
 8 @40 actor:taylor-hebert-kl-122ac ++ the-surveillance-recognized-and-filed: [count-stalling-at-the-entry-that-costs, ledger-delivering-verdict-of-its-own-authorship, ward-junction-contact-as-entry-refusing-clean-closure] | licensed-by: proto:40, proto:38, proto:39
 
@@ -42,4 +56,4 @@ r1_status: provisional
 
 12 @15 episode + ward-junction-as-negative-space: [cost-bearer-inside-feed-before-inside-the-story, wren-as-function-signature-prior-to-personhood-in-the-map, negative-space-weighted-when-the-accounting-runs] | licensed-by: proto:15, proto:24, proto:25
 
-13 @40 episode + surveillance-architecture-legible: [pattern-visible-before-any-patron-names-it, forty-seven-bodies-without-consent-as-chapter-verdict, accounting-structure-readable-as-khepri-rhyme-by-audience-not-taylor] | licensed-by: proto:37, proto:40, proto:33, world-build:chapter-goal-surveillance-architecture-legible
+13 @40 episode + surveillance-architecture-legible: [pattern-visible-before-any-patron-names-it, forty-seven-bodies-without-consent-as-chapter-verdict, accounting-structure-readable-as-override-pattern-by-audience-not-taylor] | licensed-by: proto:37, proto:40, proto:33, world-build:chapter-goal-surveillance-architecture-legible

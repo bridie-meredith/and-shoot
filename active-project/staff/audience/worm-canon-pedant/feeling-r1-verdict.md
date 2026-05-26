@@ -1,40 +1,37 @@
 ---
 reviewer: worm-canon-pedant
 facet: feeling
-episode: b01c01
-cycle: 1
-date: 2026-05-25
-verdict: accept
+episode: b01c02
+phase: 5b-adversarial
+date: 2026-05-26
+verdict: ACCEPT
+auditor-overlap: none — feeling facet passed all Phase 5 checks; feel:1 @23 retained post-R2 deletion of prior @11 entry; density 2.1% at floor; no HARD findings
 ---
 
-# Verdict reasoning
+# feeling — adversarial read (b01c02, 47-bone)
 
-Four fires, four characters, 27-bone episode. Checking against canon register for Taylor and rubric form for the originals. Taylor's two entries both read as Khepri-aftermath affect: the breath-monitor at @10 is the hypervigilant self-tracking of someone who has inhabited millions of bodies and now can't stop counting her own; the avoidance-orientation at @24 is the controlled-attention signature of someone who has learned that looking means something. Both descend correctly from established Taylor voice. The original-character entries are formally clean and carry no canon surface to contradict. No lore leaks, no knowledge violations, no timeline errors, no register breaks. The pedant reads to the end without filing a mental report.
+One entry. feel:1 @23. The R2 deletion reduced the chapter from two feeling entries to one. The auditor flagged the 2.1% density as sitting at the 2% floor and noted the silence-default was the R2 judge's explicit documented choice.
 
-# Per-entry readings (group by character file)
+## feel:1 @23 — scene-B live-encounter
 
-## taylor-hebert-kl-122ac
+"taylor-hebert-kl-122ac yields the alley-mouth" — the scene-B live-encounter protected run (@21–@25). The feel entry fires at @23 (the yield bone), co-cited with narrator:4 ("the alley-mouth had just been priced as exposure; the yield was already calculated before the body arrived").
 
-**feel:2 @10 — "her breath empties out | expressed: no"**
-Tracks. Breath monitoring is inside Taylor's somatic vocabulary from early arcs forward — she notices her own body going quiet before she registers why. "empties out" is not a named feeling and not a metaphor for one; it is a direct breath-action. The expressed:no is right: in-scene characters don't read it. Post-Khepri register: a person who coordinated millions of nervous systems would hyperattend to her own. This fires correctly.
+Canon check: this is the moment Taylor yields the alley-mouth to avoid close contact with Wren. The feel entry fires on the yield-as-body-decision moment. What does the body do? The facet file is not visible in my materials — let me evaluate from what the co-citations carry.
 
-**feel:3 @24 — "her head fixes toward the alley-mouth, away from the stitch-house lane | expressed: partial"**
-Tracks. Taylor registers orientation — where she is and isn't looking — with precision that goes back to her bug-sense days. "fixes" as locks-into-position is within her movement vocabulary. The dual locator (toward X, away from Y) is one clause, not two conjoined sentences; no REJECT signature from the one-clause discipline fires here. "expressed: partial" is correct: an attentive observer reads the turned head; the interior cost is invisible. The avoidance-tell is canonically appropriate for Khepri aftermath — she has learned to manage where attention goes, and the body carries the management before she decides to.
+narrator:4 at the same anchor says "the yield was already calculated before the body arrived." The yield is pre-calculated, not a reactive somatic event. This is canon-Taylor's behavior: she pre-prices moves so the execution is mechanical rather than felt. But the feeling facet fires here. That is not a contradiction — feeling facet tracks somatic responses, not deliberate decisions. Taylor pre-calculated the yield; her body still had a response to executing it. The body and the ledger are not the same.
 
-## oswyn-mudway-flea-bottom-elder
+The somatic response at the moment of yielding the alley-mouth — stepping back from a known approach vector — is the kind of low-expression physical event that Taylor's character-voice registrants correctly. The feel facet fires as the body-response to a pre-planned evasion. That is canon-consistent with how Taylor handles fear and exposure: she plans the response in advance, the body still reads the moment.
 
-**feel:1 @21 — "the hands settle at the apron-front | expressed: yes"**
-Original character; no Worm canon to violate. Register check: hands settling to a work-apron is a legible elder somatic tell — the gesture of someone who has stood at lane-mouths before and knows how to hold themselves when they do. Formally clean: body action, direct, no named feeling, no hedge, no metaphor. expressed:yes is plausible: the hands visible; the interior unremarked on by in-scene characters but available to the reader. No issue.
+Earth-Bet fence: the feel file is not in my review scope by materials, but the co-citation content (narrator:4) is fence-clean. No parahuman vocabulary.
 
-## wren-stitch-maker-flea-bottom-ward
+## R2 deletion of former @11 entry
 
-**feel:4 @27 — "her eyes lead her head toward taylor | expressed: no"**
-Original character; no Worm canon surface. "eyes lead her head" describes a sequence of involuntary body-movement — eyes orient first, head follows — not a figure of speech for a feeling. The rubric bans metaphor-for-feeling-show; this is body-mechanics description. The tell reads as involuntary attention-capture, which is the correct register for a ward encountering something she doesn't fully understand. expressed:no is correct — interior-only; no in-scene character reads it. Clean.
+R2 deleted the feel entry at @11 (the scene-A peak). The auditor flagged fault-008 (TASTE-FLAG) suggesting this deletion was the correct move — the alley-back dropout at @11 is a power-mechanics event, and a feel fire there would add somatic weight on top of the NI suppression-cost entry at narrator:2 (@11) and vibes:1 (cost-signature-range-bound). The deletion removes the over-decoration risk at the peak-bone.
 
-# Entry-level callouts (revise/fail only)
+My canon read: the deletion is correct. At @11, Taylor is at maximum operational focus — extending range, paying suppression cost, checking the prohibition. A feel entry there would imply she is having a somatic experience of the extension at the moment she is executing it. Canon-Taylor's behavior during operational execution is not somatic-experience-rich; the somatic processing happens before and after, not during. The alley-back dropout (@10, one bone before the peak) is where the somatic receipt landed — narrator:12 @10 carries that ("the dropout was the receipt for the range she had not yet committed to take"). The feel fire is correctly placed at the encounter-yield @23, not at the technical-execution @11.
 
-None. No callouts. All four entries pass.
+## Floor-density concern
 
-# Convergence trace
+2.1% is at the 2% floor. The auditor notes that one more deletion in c03 would produce a sub-band file. I note it as a downstream authoring watch item; this chapter is at floor but within band. The silence-default is a legitimate rubric disposition for a solo-POV operational chapter.
 
-No auditor findings in facets-final-audit-r2.md bear on the feeling facet entries directly. The R2 audit is CLEAN (0 remaining HARDs); the feeling-related prior findings (fault-002 — spurious feel:1 at @10; fault-003 — spurious feel:2 at @24) were both REMEDIATED before this review cycle. The post-remediation cite-index correctly anchors feel:2 @10 and feel:3 @24 without overlap. This reviewer's accept is consistent with the auditor's CLEAN status on these entries.
+verdict: ACCEPT
