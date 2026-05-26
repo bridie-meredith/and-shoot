@@ -2,6 +2,7 @@ facet: exposition
 episode: b01-c02
 date: 2026-05-26
 author: exposition-author (R1 blind authoring 2026-05-26 against revised 47-bone scene-decomposition; supersedes 2026-05-25 R1+R2 against the 29-bone version archived at theater/_archive/2026-05-26T-revise-stale-from-rewrite/)
+r2-judge: exposition-author R2 (graph-aware, 2026-05-26; cite_index_hash 35a3b500e4fec031541b36e99a8e28559f200744469a44f241ab998f69862ee5; verdict-counts {keep: 4, delete: 0, reword: 0, add: 0}; scene-orient FIREs survived R2: 1 (@15); scene-orient refusals via fire-rule: 2 (@1 chapter-open N/A; @30 clause-b loc-state:9 covers late-light-slant))
 audience-modeled-against: [cape-fic-reader, dark-fantasy-reader, worm-canon-pedant]
 voice: pov-frame first-person (per cond-taylor-pov-behavior; all @0 and scene-open-orient entries in first-person Taylor)
 prior-episode: b01-c01 (register-seeded: flea-bottom / the-hook / stitch-house-ward-context / fish-cart / oswyn-mudway / wren-stitch-maker / kings-landing / gold-morning / the-dance / ward-elder-precinct-sense / taylor-hebert all reader-resident; b01-c02 register additions from prior 29-bone authoring: coverage-map-instrument-family + prohibition-line-reading-vs-directing reader-resident)

@@ -1,33 +1,106 @@
 ---
 facet: feeling
+phase: r2-judge
+persona: taylor-hebert-kl-122ac
 episode: b01-c02
-character: taylor-hebert-kl-122ac
-pass: R2 (judge)
-judge: impersonator:taylor-hebert-kl-122ac (facet-judge mode)
-rubric: design/shoot-v2/rubric-feeling.md (V1 LOCKED 2026-05-07)
-cite_index_hash: cite-index@2026-05-25/45entries/14-of-29-decorated
-date: 2026-05-25
+bones_count: 47
+cite_index_hash: <sha-pending-build_cite_index-emit-for-47-bone-graph>
+inputs_loaded:
+  - active-project/theater/facets/feeling-taylor-hebert-kl-122ac.md (R1 slice; 2 entries)
+  - active-project/theater/proto-lines/b01-c02.md (47-bone graph with facet-citation surface)
+  - design/shoot-v2/rubric-feeling.md (V1 LOCKED 2026-05-07)
+forbidden_loaded:
+  - other R2 judges' outputs
+  - named-feeling vocabulary
+  - similes / comparisons / hedges / metaphors
+mode: facet-judge
+supersedes: prior-session-r2-shard-2026-05-25 (29-bone graph; bones re-emitted to 47-bone graph; that shard's @17/@24 anchors no longer correspond to the current bones; this shard re-runs against the live graph)
 ---
 
-# R2 feeling judge — taylor-hebert-kl-122ac slice (b01-c02)
+# R2 feeling judge — taylor-hebert-kl-122ac slice (b01-c02, 47-bone graph)
 
 ## Tally
+
 - K: 1
 - D: 1
 - A: 0
-- cap-refusals: 1
-- DISCIPLINE-FAILs: 0
+- net entries before → after: 2 → 1
+- density before → after: 0.043 → 0.021
 
----
+## Per-entry decisions
 
-feel:1 @17 — "her shoulders hold where they were" | expressed: no — Cold-read holds. The proto-line subject at @17 is "the insects" (the swarm files the ward-junction contact); narrator:4 carries cognitive registration; vibes:6-12 carry the at-rest interior cloud; state:2/3 write canonical state. The somatic bearing-of-the-recognition — the postural HOLD as the map clicks into self-recognition — is not written anywhere else in the graph at this anchor. Q1 passes cleanly. Q2 passes (chapter's structural recognition pivot — the surveillance map becoming visible as self-construction before any patron names it). Multi-justification 4/5: card-match (stillness-under-recognition is canon Taylor §Signature Moves); Q1; Q2; functional-register realization + painting-characterization. Form clean: subject (her shoulders) + verb (hold) + locator (where they were); one clause; no named-feeling vocabulary; no hedge; no simile; no compound second-clause exiting body-register; no rule-statement. POV non-redundancy with narrator:4 holds: NI registers the act of filing the contact (cognitive), feeling registers the body-not-moving-with-the-recognition (somatic). Distinct jobs.
-VERDICT: KEEP
+### feel:1 @10 — DELETE
 
-feel:2 @24 — "her hand stops on the count" | expressed: no — Cold-read trips on Q1. The proto-line at @24 is "taylor-hebert-kl-122ac stalls the count" — the predicate "stalls" IS the somatic event in body register, and the bone's subject is Taylor herself. The R1 entry restates "stalls the count" in synonym form ("hand stops on the count"). This is the C1/C2 calibration-anchor case: when the proto-line carries the body-action directly, the feeling-flag does not get to re-stamp it from a slightly closer camera. NI:6 carries the cognitive registration of the stall; vibes:13/15/16/17 carry the interior cloud; state:3 writes the canonical shift. The audience reads the stall from the bones + cross-facet without this entry. Anti-pattern #2 (audience-already-can-tell redundancy) fires. The rubric authority is "default to silence when uncertain"; this is not uncertain — the proto-line is doing the feeling-flag's work.
-VERDICT: DELETE
+R1 text: "her attention pulls toward the dropped quadrant before her head turns | expressed: no"
 
-CAP-REFUSAL: feel:add-candidate @18 taylor-hebert-kl-122ac (breath-hold against the gap) — Proto-line "the coverage map opens the gap" has abstract subject (the map), with memory-flag mem:2 and narrator:5 co-cites; the gap-as-absence is the moment the surveillance map becomes a moral problem (who she cannot see = who she cannot protect). Q1 PASS (somatic bearing of the gap-recognition is not in the proto-line or NI or memory; map is the subject, not Taylor); Q2 PASS (structural — the gap is the chapter's tragic-causal seed for what the patron will name); multi-justification 4/5 (card-match: breath-tells under recognition-of-limit are canon; Q1; Q2; functional-register realization + painting-characterization). Form would be clean ("her breath holds against the gap"). Blocked on per-scene per-character cap (hard, ≤1): feel:1 @17 occupies the loc-state window @11–@20 (loc-state boundaries at @4, @11, @20, @26 segment the chapter). The cap is the correct gate; @17 is the better fire for this window because the recognition-pivot is structurally larger than the gap-acknowledgment that follows from it. Refuse on cap, not on entry-quality.
+Anchor: bone 10 "the alley-back drops from the feed [feel:1] [state:3] [vibes:1]" — peripheral-loss beat; no NI co-cite at this anchor.
 
-ADD-SCAN (refused, not on cap): Scanned bare protolines @2/@3/@5/@8/@12/@13/@14/@16/@19/@21/@22/@23/@27/@28/@29 and memory-anchored beats @7. @25 "taylor-hebert-kl-122ac draws the line" and @29 "taylor-hebert-kl-122ac exhales" both fail Q1 by C1/C2 anchor logic (proto-line carries the body-act directly). @7 "taylor-hebert-kl-122ac draws the line" same Q1 failure (and memory:1 carries the at-rest reading). @22 "the map returns the bodies" has abstract subject and an available somatic-landing, but no NI or memory co-cite and the bones-as-bodies recognition is held by exposition rather than at-anchor cross-facet; multi-justification thin (only painting-characterization secured), speculative fire on bare line — default to silence.
+Form-discipline failure on two counts:
+1. **Abstraction-noun subject.** "her attention pulls" — "attention" is a cognitive/perceptual abstraction, not the body. The licensed clause subject must be a body part doing a body action. This entry occupies NI's slot (cognition/perception) under feeling's name.
+2. **Compound second clause exiting body-register.** "before her head turns" is temporal-latency observation about head-orientation timing — the canonical URI-FACETS-CYCLE-1 REJECT signature (sentence-final non-body clause naming the rule/timing/latency, not the body-doing-the-action). The connector `before` joins a cognitive observation to a body micro-action and converts the entry from somatic-tell to author-voice gloss about how-the-body-lags-the-cognition.
 
-PATTERN-SCAN: Single-fire post-R2 slice. No within-character vocabulary saturation possible (n=1). Cross-character scan N/A — single-cast chapter (Taylor solo). Fire rate 1/29 = 3.4% sits inside the 2-5% sparsity target band. The deleted feel:2 was the only saturation risk (would have given the chapter two body-register tells on adjacent Taylor-subject beats @17/@24, with feel:2 effectively naming-by-synonym what the bone already said); the delete tightens the slice and the kept entry stands as the chapter's single somatic SHOW of the recognition pivot.
+Even on Q1, the proto-line already carries the loss-event ("drops from the feed"); the somatic body-cost of peripheral loss is left unwritten and would need a fresh single-clause body-register entry (e.g., hand finding the dropped quadrant, weight catching) — not a cognitive frame.
+
+VERDICT: DELETE.
+
+### feel:2 @23 — KEEP
+
+R1 text: "her weight settles back onto the rear foot | expressed: partial"
+
+Anchor: bone 23 "taylor-hebert-kl-122ac yields the alley-mouth [feel:2] [narrator:4]" — co-fired with NI.
+
+Form clean: subject (her weight) + verb (settles back) + locator (onto the rear foot). One clause. No named-feeling vocab. No simile. No hedge. No metaphor. No compound second-clause exiting register. No rule-statement.
+
+Persona-card match: Taylor's surveillance-under-threat weight-shift / retreat-readiness signature — body-prepared-to-cede before the cognition issues the yield.
+
+Q1 passes: proto-line "yields the alley-mouth" carries the social/spatial act; the body's pre-decision rearward weight-shift is the cost-of-the-act NI does not carry at this anchor. NI:4 fires registration-of-yielding-as-decision (cognitive); feel:2 shows body-already-shifted (somatic). Distinct jobs. Non-redundant per cross-facet contract.
+
+Q2 passes: scene-B's pivot — the moment Taylor cedes alley-mouth ground to the ward-junction body she has just begun to track. Structural to the chapter's surveillance-vs-civic-presence arc and the c03 patron-arrival setup.
+
+Multi-justification 5/5:
+1. Somatic-card-match (Taylor weight-shift signature).
+2. Q1 passes (audience-cannot-otherwise-read body-precedes-decision).
+3. Q2 passes (scene-B pivot).
+4. Scene-eligible (per-scene cap unused in scene-B before this fire).
+5. Functional-register: painting-characterization + realization (the body knows before the head does the calculation).
+
+VERDICT: KEEP.
+
+## Adds (cap 5, used 0)
+
+Scanned anchors with memory or NI co-cite where somatic register would land:
+
+- @12 draws the line [mem:1][narrator:3] — proto-line carries the act; NI:3 carries the registration; mem:1 carries the callback. Body-cost interior to NI's territory at this beat. Refuse.
+- @27 files the ward-junction contact [mem:2][narrator:6] — subject is "the insects"; Taylor's body not the proto-line subject, but multi-justification thin (no Taylor-card body register clearly licensed at this beat; cognitive-recognition is NI:6's job + mem:2's job). Refuse.
+- @40 stalls the count [narrator:8] — Q1 redundancy risk: "stalls" is already the somatic-cognitive surface at NI's register; restating in tighter body-frame is C1/C2 calibration violation.
+- @41 holds the breath [narrator:9] — Q1 fails; proto-line IS the somatic act (C1/C2 pattern).
+- @43 closes against the drain angle — Q2 weak; small body act among many in scene-C accounting; not structural pivot.
+- @47 exhales — Q1 fails; proto-line IS the somatic act.
+
+No add beats the silence default. Per rubric: "Sparse by design. Most beats fire nothing." "Default to silence when uncertain."
+
+## NI non-redundancy verification (per anchor)
+
+- @23 feel:2 ↔ NI:4 — VERIFIED non-redundant. NI=cognition-of-yielding-decision; feel=body-weight-already-shifted-rearward as pre-decision somatic.
+- @10 feel:1 DELETED — anchor has no remaining feeling fire; no live POV-redundancy surface.
+
+All KEPT entries verified POV-non-redundant per anchor.
+
+## File-shape audit (post-pass)
+
+| Metric | Value | Verdict |
+|---|---|---|
+| Per-character per-scene cap (≤1, hard) | A=0, B=1, C=0 | PASS |
+| Per-scene total cap (≤3, soft) | max 1 | PASS |
+| Per-episode sparsity (2-5% target) | 0.021 (1/47) | UNDER-BAND — honored silence default per rubric |
+| Vocabulary distinctness (per-character, hard) | n=1, no saturation possible | PASS |
+| Tens distribution (soft) | single fire; advisory | N/A |
+| Functional-register ≥2 of 4 (hard) | feel:2 satisfies | PASS |
+
+The 0.021 density sits just below the 2-5% target band. This is rubric-aligned: over-firing to hit a numeric target is anti-pattern; "Sparse by design. Most beats fire nothing." The deleted feel:1 was form-failed, not silence-failed; honoring its removal without manufactured replacement is the correct discipline.
+
+## Caveats
+
+- `cite_index_hash` placeholder pending build_cite_index.py emit confirmation against the 47-bone graph. Anchor-level non-redundancy verification used the [facet:id] citation surface embedded in `theater/proto-lines/b01-c02.md` (canonical source-of-truth for which facets fire at which anchor).
+- Full R1 graph text for NI / memory / sensory / state / loc-state / vibes / exposition slices was not surfaced to this fork at dispatch; redundancy adjudication relied on bone-level citation co-presence + rubric contracts (NI=cognition; feeling=somatic). If full-text NI:4 ever reads as a weight-shift observation (which would be a NI form violation, not a feeling problem), escalate feel:2 to DELETE at Phase 5b.
+- Prior-session shard at this path referenced a 29-bone graph with anchors @17/@24 that no longer correspond to the live 47-bone graph. This pass supersedes that shard.

@@ -11,8 +11,8 @@ totals: 63 facet entries; 28/47 protolines decorated (59.6%)
 | 0 (bare)   | 19 |
 | 1          | 13 |
 | 2          | 6 |
-| 3          | 3 |
-| 4          | 4 |
+| 3          | 2 |
+| 4          | 5 |
 | 6          | 2 |
 
 ## Per-facet entries
@@ -25,23 +25,24 @@ totals: 63 facet entries; 28/47 protolines decorated (59.6%)
   loc-state:5 @16 back=Y co=[sensory:1, state:5]
   loc-state:6 @20 back=Y
   loc-state:7 @22 back=Y
-  loc-state:8 @29 back=Y co=[narrator:7, vibes:5, vibes:7]
+  loc-state:8 @29 back=Y co=[vibes:5, vibes:7]
   loc-state:9 @30 back=Y co=[sensory:2]
   loc-state:10 @32 back=Y co=[state:7]
   loc-state:11 @44 back=Y
 
-### narrator (11 entries)
+### narrator (12 entries)
   narrator:1 @4 back=Y
   narrator:2 @11 back=Y co=[loc-state:3, state:1, state:2, state:4, vibes:1]
   narrator:3 @12 back=Y co=[mem:1, state:3, vibes:2]
-  narrator:4 @23 back=Y co=[feel:2]
+  narrator:4 @23 back=Y co=[feel:1]
   narrator:5 @26 back=Y
   narrator:6 @27 back=Y co=[mem:2, state:5, vibes:3, vibes:4, vibes:6]
-  narrator:7 @29 back=Y co=[loc-state:8, vibes:5, vibes:7]
   narrator:8 @40 back=Y co=[state:6, vibes:8, vibes:13]
   narrator:9 @41 back=Y co=[state:7]
   narrator:10 @42 back=Y co=[mem:3, state:8, vibes:9]
   narrator:11 @46 back=Y
+  narrator:12 @10 back=Y co=[feel:1, state:3, vibes:1]
+  narrator:13 @15 back=Y co=[exposition:4, state:4, vibes:12]
 
 ### sensory (2 entries)
   sensory:1 @16 back=Y co=[loc-state:5, state:5]
@@ -50,7 +51,7 @@ totals: 63 facet entries; 28/47 protolines decorated (59.6%)
 ### state (17 entries)
   state:1 @1 back=Y
   state:2 @9 back=Y
-  state:3 @10 back=Y co=[feel:1, vibes:1]
+  state:3 @10 back=Y co=[feel:1, narrator:12, vibes:1]
   state:4 @11 back=Y co=[loc-state:3, narrator:2, state:1, state:2, vibes:1]
   state:5 @16 back=Y co=[loc-state:5, sensory:1]
   state:6 @18 back=Y
@@ -58,7 +59,7 @@ totals: 63 facet entries; 28/47 protolines decorated (59.6%)
   state:8 @11 back=N co=[loc-state:3, narrator:2, state:1, state:2, state:4, vibes:1]
   state:9 @11 back=N co=[loc-state:3, narrator:2, state:1, state:2, state:4, vibes:1]
   state:10 @12 back=N co=[mem:1, narrator:3, state:3, vibes:2]
-  state:11 @15 back=N co=[exposition:4, state:4, vibes:12]
+  state:11 @15 back=N co=[exposition:4, narrator:13, state:4, vibes:12]
   state:12 @27 back=N co=[mem:2, narrator:6, state:5, vibes:3, vibes:4, vibes:6]
   state:13 @40 back=N co=[narrator:8, state:6, vibes:8, vibes:13]
   state:14 @41 back=N co=[narrator:9, state:7]
@@ -71,33 +72,32 @@ totals: 63 facet entries; 28/47 protolines decorated (59.6%)
   mem:2 @27 back=Y co=[narrator:6, state:5, vibes:3, vibes:4, vibes:6]
   mem:3 @42 back=Y co=[narrator:10, state:8, vibes:9]
 
-### feel (2 entries)
-  feel:1 @10 back=Y co=[state:3, vibes:1]
-  feel:2 @23 back=Y co=[narrator:4]
+### feel (1 entries)
+  feel:1 @23 back=Y co=[narrator:4]
 
 ### meta (0 entries)
 _(no entries)_
 
 ### vibes (13 entries)
-  vibes:1 @10 back=Y co=[feel:1, state:3] lic-out=[proto:10, proto:11]
+  vibes:1 @10 back=Y co=[feel:1, narrator:12, state:3] lic-out=[proto:10, proto:11]
   vibes:2 @12 back=Y co=[mem:1, narrator:3, state:3] lic-out=[proto:12, proto:11]
   vibes:3 @27 back=Y co=[mem:2, narrator:6, state:5, vibes:4, vibes:6] lic-out=[proto:27, proto:24, proto:25]
   vibes:4 @27 back=Y co=[mem:2, narrator:6, state:5, vibes:3, vibes:6] lic-out=[proto:27, proto:17, proto:18]
-  vibes:5 @29 back=Y co=[loc-state:8, narrator:7, vibes:7] lic-out=[proto:28, proto:29]
-  vibes:6 @29 back=N co=[loc-state:8, narrator:7, vibes:5, vibes:7] lic-out=[proto:27, proto:26, proto:25]
-  vibes:7 @29 back=Y co=[loc-state:8, narrator:7, vibes:5] lic-out=[proto:25, proto:27, proto:28]
+  vibes:5 @29 back=Y co=[loc-state:8, vibes:7] lic-out=[proto:28, proto:29]
+  vibes:6 @29 back=N co=[loc-state:8, vibes:5, vibes:7] lic-out=[proto:27, proto:26, proto:25]
+  vibes:7 @29 back=Y co=[loc-state:8, vibes:5] lic-out=[proto:25, proto:27, proto:28]
   vibes:8 @40 back=Y co=[narrator:8, state:6, vibes:13] lic-out=[proto:40, proto:38, proto:39]
   vibes:9 @42 back=Y co=[mem:3, narrator:10, state:8] lic-out=[proto:42, proto:41, proto:43]
   vibes:10 @47 back=Y co=[state:10] lic-out=[proto:47, proto:44, proto:45, proto:46]
   vibes:11 @13 back=Y co=[loc-state:4] lic-out=[proto:13, proto:14]
-  vibes:12 @15 back=Y co=[exposition:4, state:4] lic-out=[proto:15, proto:24, proto:25]
+  vibes:12 @15 back=Y co=[exposition:4, narrator:13, state:4] lic-out=[proto:15, proto:24, proto:25]
   vibes:13 @40 back=Y co=[narrator:8, state:6, vibes:8] lic-out=[proto:37, proto:40, proto:33]
 
 ### exposition (4 entries)
   exposition:1 @0 back=N
   exposition:2 @0 back=N
   exposition:3 @14 back=Y lic-out=[graph-resident-via-exposition:8, b01c01:5]
-  exposition:4 @15 back=Y co=[state:4, vibes:12]
+  exposition:4 @15 back=Y co=[narrator:13, state:4, vibes:12]
 
 ## Pile-ups (>4 facets co-located on one protoline)
 

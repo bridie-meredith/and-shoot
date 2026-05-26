@@ -17,12 +17,12 @@ aggregate_range: 1-47
 7 taylor-hebert-kl-122ac takes the alley-mouth [loc-state:2]
 8 the insects cross the threshold-stones
 9 the insects hold four hundred bodies in the feed [state:2]
-10 the alley-back drops from the feed [feel:1] [narrator:12] [state:3] [vibes:1]
+10 the alley-back drops from the feed [feel:1] [state:3] [vibes:1]
 11 taylor-hebert-kl-122ac extends the range [loc-state:3] [narrator:2] [state:1] [state:2] [state:4] [vibes:1]
 12 taylor-hebert-kl-122ac draws the line [mem:1] [narrator:3] [state:3] [vibes:2]
 13 the insects fill the Hook [loc-state:4] [vibes:11]
 14 the foot-traffic knots the ward-junction [exposition:3]
-15 the insects return the ward-junction body [exposition:4] [narrator:13] [state:4] [vibes:12]
+15 the insects return the ward-junction body [exposition:4] [state:4] [vibes:12]
 16 the tallow smoke marks the stitch-house lane [loc-state:5] [sensory:1] [state:5]
 17 the coverage map anchors the stitch-house threshold
 18 the beetles return the stitch-house threshold-crossings [state:6]
@@ -30,13 +30,13 @@ aggregate_range: 1-47
 20 taylor-hebert-kl-122ac takes the drain angle [loc-state:6]
 21 the ward-junction body crosses the thresholds
 22 the alley admits the ward-junction body [loc-state:7]
-23 taylor-hebert-kl-122ac yields the alley-mouth [feel:1] [narrator:4]
+23 taylor-hebert-kl-122ac yields the alley-mouth [feel:2] [narrator:4]
 24 the insects return the function-signature
 25 the map assigns the junction-body connector-type
 26 taylor-hebert-kl-122ac turns from the alley-mouth [narrator:5]
 27 the insects file the ward-junction contact [mem:2] [narrator:6] [state:5] [vibes:3] [vibes:4] [vibes:6]
 28 the insects return the junction-lane attenuation
-29 the insects reach the junction-lane edge [loc-state:8] [vibes:5] [vibes:7]
+29 the insects reach the junction-lane edge [loc-state:8] [narrator:7] [vibes:5] [vibes:7]
 30 taylor-hebert-kl-122ac takes the drain angle [loc-state:9] [sensory:2]
 31 the insects return from the lane-mouth sweep
 32 the shadow fills the drain angle [loc-state:10] [state:7]

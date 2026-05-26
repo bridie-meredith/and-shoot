@@ -30,7 +30,7 @@ aggregate_range: 1-47
 20 taylor-hebert-kl-122ac takes the drain angle [loc-state:6]
 21 the ward-junction body crosses the thresholds
 22 the alley admits the ward-junction body [loc-state:7]
-23 taylor-hebert-kl-122ac yields the alley-mouth [feel:1] [narrator:4]
+23 taylor-hebert-kl-122ac yields the alley-mouth [feel:1]
 24 the insects return the function-signature
 25 the map assigns the junction-body connector-type
 26 taylor-hebert-kl-122ac turns from the alley-mouth [narrator:5]
