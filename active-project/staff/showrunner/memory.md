@@ -2734,13 +2734,16 @@ books:
               target_delta_magnitude: 1.5
               cost_ledger_anchor: cl-antag-d03
               notes: "offer tendered = leverage embryonic; Otto gains first actionable knowledge of Taylor; cl-antag-d03 gain side"
+            - axis: social_tether-prot-rise
+              direction: up
+              target_delta_magnitude: 1.0
+              cost_ledger_anchor: cl01b
+              notes: "court-layer half of cl01b settles here (ward-layer half settled at b01c01s03 Oswyn-categorization); Otto's awareness of the b01c01 rescue via Jarvis Coin completes the +2 cl01b gain. Resolves pl-2026-05-25-001 HARD parking-lot item."
           axes_held:
             - axis: capability
               rationale: "no new deployment; coverage continues at same level; the proposal has not been accepted"
             - axis: relational_anchor_status
               rationale: "Wren not yet in any calculus related to the proposal; anchor held outside the pricing discussion"
-            - axis: social_tether-prot-rise
-              rationale: "tether has not formed through Jarvis yet; the offer is pending"
             - axis: political_register-prot
               rationale: "proposal meeting is transactional; no court-register observation content yet; resentment has no feed to form on"
           density_target: 0.6-0.8
