@@ -1,50 +1,51 @@
 facet: state-updates-env
-episode: b01c02
+episode: b01c03
 author: studio
 scope: environment + location + prop only (actor-state authored separately)
 ---
 
-# rubric-carve-out — held-against-turn exemption for genuine peak-shadow env-dropout
-#
-# design/shoot-v2/rubric-state-updates.md § "Held-against-turn (approach-to-peak class)"
-#
-# Carve-out scope: entry 3 (@10, studio.suppression_cost_active)
-# Carve-out rule: held-against-turn prohibition ("canonical state-update co-citation is withheld")
-#   applies to approach bones where the tracked change has NOT YET occurred. @10 is not an
-#   approach to the suppression-cost — the suppression-cost fires AT @10 (the alley-back dropout
-#   is the event itself). The extend at peak @11 is Taylor's response to the cost already having
-#   landed. The prohibition targets pre-emption; firing on the beat where the field actually flips
-#   is correct even when that beat is a peak-shadow.
-# Coverage justification: strip-test passes — without this entry, suppression_cost_active would
-#   have no recorded flip, and the downstream feed-state coherence depends on knowing when cost
-#   became active. Reality axis clear; authority axis clear; frugality axis clear.
-#
-# Per-entry annotations:
-# - state-updates-env:3 @10: held-against-turn carve-out applies; the dropout IS the state-change,
-#   not an approach to it; @11 extend is a distinct subsequent action.
+1 @1 studio.time_of_day: dusk -> morning
+# field-extension: time_of_day first-touch b01c03; b01c02 closed at dusk per studio state.md;
+#   bone @1 opens the morning market — scene-A scene-map label "morning-market" confirms.
 
-1 @1 studio.time_of_day: night-b01c01-end -> dawn-grey-hour
-# field-extension: time_of_day (first-touch b01c02 chapter-open; b01c01 ended in evening/night;
-#   scene-A opens at dawn per scene-map "dawn-to-day" label)
+2 @1 studio.location: oc-stitch-house-lane-drain-angle -> morning-market-hook
+# field-extension: location sub-state; b01c02 chapter-close had Taylor at drain-angle;
+#   @1 opens in the Hook morning market — a different physical space within Flea Bottom.
 
-2 @9 studio.coverage_map_extent: subsistence-range -> four-hundred-bodies-active
+3 @1 studio.foot_traffic: lane-end-quiet -> market-shoulder-to-shoulder
+# field-extension: foot_traffic; bone @1 explicitly names shoulder-to-shoulder density;
+#   persistent through all of scene-A (@1-@12); first-touch for this episode.
 
-3 @10 studio.suppression_cost_active: false -> true
-# held-against-turn carve-out applies (see preamble); @10 is the dropout-event, not its approach
+4 @6 studio.proposal_state: pre-contact -> contact-made
+# field-extension: proposal_state; Jarvis speaks at @6 — contact is initiated and persists;
+#   @6 is in scene-A rising zone, two bones before peak @8; not a held-against-turn bone;
+#   strip-test passes: without this entry, state stays pre-contact through scene-A close.
 
-4 @11 studio.fauna_sense_status: ambient-subsistence-passive -> deliberate-precinct-coverage
-# field-extension: fauna_sense_status (insect-network deployment mode; first systematic precinct
-#   sweep declared; peak bone @11 per scene-map — co-citation strongly expected)
+5 @13 studio.location: morning-market-hook -> coopers-yard-eel-alley
+# scene-B scene transition; bone @13 names the cooper's yard off Eel Alley explicitly;
+#   persistent through scenes B and C until @32 departure.
 
-5 @16 studio.active_conditions: baseline-no-smoke-marker -> tallow-smoke-stitch-house-lane-active
-# field-extension: active_conditions first-touch for tallow-smoke condition at stitch-house-lane;
-#   persistent throughout scene-B and into scene-C (lane identity marker)
+6 @13 studio.foot_traffic: market-shoulder-to-shoulder -> coopers-yard-no-foot-traffic-past-third-bell
+# bone @13 names the foot-traffic condition explicitly; the yard is clear of through-traffic;
+#   persistent through scene-B and scene-C.
 
-6 @18 studio.day_cycle: day-1 -> multi-day-accumulation
-# field-extension: day_cycle (multi-sweep time passage; scene-B declared "days-of-coverage" per
-#   scene-map; @18 is first bone of fusion-eligible @18-@19 accumulation run; "return" verb at @18
-#   signals repeated-pass pattern beginning)
+7 @15 studio.time_of_day: morning -> third-bell-noon
+# bone @15 states Jarvis enters "at the third bell" — explicit time marker; persistent through
+#   scene-B and scene-C; scene-map labels scene-B "cooper-yard-third-bell".
 
-7 @32 studio.time_of_day: dawn-to-day -> late-afternoon-end-of-day
-# scene-C seam-bridge; "the shadow fills the drain angle" is the explicit light/time marker;
-#   scene-map labels scene-C "end-of-day"
+8 @23 studio.proposal_state: contact-made -> terms-known
+# @23 is scene-B peak-bone (strongly expects co-citation); the prohibition engages as a term
+#   on a ledger — the full terms have landed and are being calculated against;
+#   strip-test passes: terms-delivery cluster @16-@22 delivers content; @23 is the
+#   accounting-registration beat where the field flips.
+
+9 @29 studio.proposal_state: terms-known -> deferred
+# @29 is scene-C peak-bone; Taylor asks for a day — not refusal, not acceptance;
+#   the proposal is actively deferred with a stated return-condition;
+#   strip-test passes: without this entry, proposal_state stays terms-known through chapter close.
+
+10 @36 studio.proposal_state: deferred -> answer-pending
+# accounting-coda close (@34-@36 protected-pattern); Taylor leaves the yard;
+#   chapter-close state is answer-pending (ledger open, return implicit);
+#   distinction from deferred: @29 is active-deferral-in-progress; @36 is chapter-close
+#   canonical state for b01c04 handoff — both parties have departed, the answer is in time.

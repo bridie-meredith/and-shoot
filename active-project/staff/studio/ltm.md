@@ -3,6 +3,17 @@
 
 ---
 
+## 2026-05-26 — b01c03 location-state authored at /and-facets Phase 1 R1
+
+Chapter b01c03: oc-stitch-house-lane precinct, two micro-locations. 36 bones, 3 scenes.
+5 location-state entries authored.
+Scene A (@1-@12): morning market in the Hook. Entry at @1 (place-anchor; salt-fish stall as the still point in the crowd).
+Scene B (@13-@25): cooper's yard off Eel Alley. Entry at @13 (location switch; no sightline from lane-mouth) + @15 (Jarvis enters yard; yard-mouth bracketed on both sides).
+Scene C (@26-@36): same yard, new scene-moment. Entry at @26 (scene-C anchor; tallow-damp from lane-caulking as sensory carrier) + @32 (Jarvis departs; lane-mouth clears).
+No continuity-carry licenses fired (rising + rising-to-peak rhythm-shapes exclude scene-A and scene-B fusion runs; scene-C @33-@34 run is 2 bones, below the 3-bone minimum).
+
+---
+
 ## 2026-05-26 — b01c02 location-state authored at /and-facets Phase 1 R1
 
 Chapter b01c02: oc-stitch-house-lane precinct. 47 bones, 3 scenes.
