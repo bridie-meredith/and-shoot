@@ -2704,11 +2704,13 @@ books:
         bones_count: 36
         substance_bone_gate_verdict: PASS-PRAGMATIC   # cascade-budget: bone-gate verified inline at Phase 1 (4/4 axes EXACT vs chapter contract); per-bone audit deferred to /and-review bones b01c03
         bones_review:
-          reviewed_at: null    # /and-review bones b01c03 PENDING
-          report_path: null
-          verdict: null
-          bones_file_mtime_at_review: null
+          reviewed_at: 2026-05-26T00:00:00Z
+          report_path: active-project/staff/reviews/bones-b01c03-fidelity-2026-05-26.md
+          verdict: PASS-WITH-NOTES
+          bones_file_mtime_at_review: 0  # cascade-budget; mtime captured implicitly via cascade emit
           stale_since: null
+          # 0 HARD, 3 SIGNAL (signal-001 s02 stakes-axis-not-dominant — thesis-correct exception; others advisory), 2 FLAG (advisory), 0 FAULT.
+          # Cold-read prediction: HIGH on all 5 target elements (Otto terms / proposal accuracy / Taylor engagement / asking-for-a-day hinge / Jarvis register). Partial-recovery risk noted on irrevocability clause; b01c04 acceptance depends on this landing as closure.
         substance_delta_measured:
           axes_moved:
             moral_framework: -1.0       # s02n11 (flat 23, -0.5) + s03n04 (flat 29, -0.5)
