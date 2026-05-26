@@ -1,16 +1,21 @@
 ---
 facet: interest-narrator
 episode: b01-c02
-date: 2026-05-25
-author: taylor-hebert-kl-122ac
+author: impersonator:taylor-hebert-kl-122ac
+pov: taylor-hebert-kl-122ac
+bones_count: 47
+entry_count: 11
+density: 0.234
 ---
 
-1 @6 the 200 was the working ceiling and she had just spent into the 400; the suppression overhead would price out by midday.
-2 @7 the prohibition was named before the range was extended, in that order, so the order would be the thing the morning had said.
-3 @15 the function-signature came back connector-type, which was a category the map had not needed to carry until this body crossed the threshold-stones.
-4 @17 the ward-junction contact filed itself in the fold she kept for the entries that did not enter the ledger, and the filing took less hesitation than it should have.
-5 @18 the gap in the coverage map was the wrong shape — negative-space cut to the contour of one body, and she had cut it.
-6 @24 the count stalled at the edge it had been built to stall at; what was on the other side of the stall was the recognition she had set the architecture to hold off.
-7 @25 she drew the line a second time, knowing the second drawing did not retract the first crossing — only catalogued it under a name she could keep using.
-8 @16 she stepped out of the lane-mouth a half-beat before the body reached it; the yielding was the cover and the cataloguing was what the cover was for.
-9 @29 the breath came out longer than the morning's had; the suppression overhead had priced through and the ledger had closed without recording the cost it closed under.
+1 @4 the fever-cluster is the day's unresolved load; the three signatures will be priced before sundown or not at all
+2 @11 the suppression-cost rises with the range; the four-hundred ceiling has just been paid for in the back of her skull
+3 @12 the prohibition is the same prohibition she set herself; the line holds at the ceiling and not past it
+4 @23 the alley-mouth had just been priced as exposure; the yield was already calculated before the body arrived
+5 @26 the discipline holds; the alley-mouth is not the place she learns anything she does not already have
+6 @27 the ward-junction contact has been filed without contact; the ledger has a new entry and no signature against it
+7 @29 the attenuation is its own information; what stops at the lane-edge is the second register of the same map
+8 @40 the count had been clean to the ward-junction; the count is no longer clean
+9 @41 the breath holds at the threshold; the recognition is not permitted across it
+10 @42 the line is the same line she drew at the alley-mouth; she draws it now in the same hand
+11 @46 the ward-junction entry costs more to close than the others; the cost does not appear in the closing

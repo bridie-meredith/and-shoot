@@ -2386,11 +2386,14 @@ books:
         substance_bone_gate_verdict: PASS
         depth_pass_pending: true  # URI-STITCH-SIGNAL-CLUSTER MANDATORY 2026-05-25; cold_read PASS-WITH-CAVEATS triggered depth-pass via /and-write revise --from-signals; /and-stitch Phase 9 PASS will stamp depth_pass_resolved_at
         bones_review:
-          reviewed_at: 2026-05-25T00:00:00Z
-          report_path: active-project/staff/reviews/bones-b01c02-fidelity-2026-05-25.md
+          reviewed_at: 2026-05-26T00:00:00Z
+          report_path: active-project/staff/reviews/bones-b01c02-fidelity-2026-05-26.md
           verdict: PASS-WITH-NOTES
-          bones_file_mtime_at_review: 1779765090
-          stale_since: 2026-05-26T00:00:00Z   # bones revised 2026-05-26; /and-review bones b01c02 must re-fire before /and-facets re-runs
+          bones_file_mtime_at_review: 1779771984
+          stale_since: null
+          # 19/19 chunk tags covered. Cold-read prediction HIGH on bug-mechanic, recognition-through-thing, holding-beat; MEDIUM-HIGH on time-passage (depends on stitcher execution of @18-19 "repeat" marker + @20 return-decision seam).
+          # 3 notes carried to /and-stitch: (1) multi-sweep accumulation @18-19 needs duration unpack; (2) pl-2026-05-25-019 spatial continuity (@22 + @23 same alley-mouth); (3) ward-junction entry @46 syntactically parallel — prose must differentiate.
+          # Prior 2026-05-25 review (original 29 bones, PASS-WITH-NOTES) superseded.
         substance_delta_measured:
           axes_moved:
             relational_anchor_status: +1.0    # s02n13 (flat_id 27), target +1.0 EXACT

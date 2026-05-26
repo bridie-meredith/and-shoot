@@ -17,13 +17,13 @@ aggregate_range: 1-47
 7 taylor-hebert-kl-122ac takes the alley-mouth
 8 the insects cross the threshold-stones
 9 the insects hold four hundred bodies in the feed
-10 the alley-back drops from the feed
-11 taylor-hebert-kl-122ac extends the range [state:1] [state:2]
-12 taylor-hebert-kl-122ac draws the line [state:3]
+10 the alley-back drops from the feed [feel:1]
+11 taylor-hebert-kl-122ac extends the range
+12 taylor-hebert-kl-122ac draws the line
 13 the insects fill the Hook
 14 the foot-traffic knots the ward-junction
 
-15 the insects return the ward-junction body [state:4]
+15 the insects return the ward-junction body
 16 the tallow smoke marks the stitch-house lane
 17 the coverage map anchors the stitch-house threshold
 18 the beetles return the stitch-house threshold-crossings
@@ -31,11 +31,11 @@ aggregate_range: 1-47
 20 taylor-hebert-kl-122ac takes the drain angle
 21 the ward-junction body crosses the thresholds
 22 the alley admits the ward-junction body
-23 taylor-hebert-kl-122ac yields the alley-mouth
+23 taylor-hebert-kl-122ac yields the alley-mouth [feel:2]
 24 the insects return the function-signature
 25 the map assigns the junction-body connector-type
 26 taylor-hebert-kl-122ac turns from the alley-mouth
-27 the insects file the ward-junction contact [state:5]
+27 the insects file the ward-junction contact
 28 the insects return the junction-lane attenuation
 29 the insects reach the junction-lane edge
 
@@ -49,11 +49,11 @@ aggregate_range: 1-47
 37 the accounting closes the count
 38 the accounting reaches the ward-junction entry
 39 the ward-junction corner returns the junction-lane void
-40 taylor-hebert-kl-122ac stalls the count [state:6]
-41 taylor-hebert-kl-122ac holds the breath [state:7]
-42 taylor-hebert-kl-122ac draws the line [state:8]
-43 taylor-hebert-kl-122ac closes against the drain angle [state:9]
+40 taylor-hebert-kl-122ac stalls the count
+41 taylor-hebert-kl-122ac holds the breath
+42 taylor-hebert-kl-122ac draws the line
+43 taylor-hebert-kl-122ac closes against the drain angle
 44 the accounting closes the fever-cluster entry
 45 the ledger closes the dark-junction entry
 46 the ledger closes the ward-junction contact
-47 taylor-hebert-kl-122ac exhales [state:10]
+47 taylor-hebert-kl-122ac exhales

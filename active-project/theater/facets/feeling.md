@@ -5,13 +5,19 @@ note: consolidated by build_cite_index from per-source slices. Single top-of-fil
 ---
 
 # source: taylor-hebert-kl-122ac
-# slice: feeling-taylor-hebert-kl-122ac
-# episode: b01-c02
+---
 facet: feeling
 episode: b01-c02
+author: impersonator:taylor-hebert-kl-122ac
 character: taylor-hebert-kl-122ac
-author: impersonator:taylor-hebert-kl-122ac (facet-authoring override; feeling R1 slice; R2 judge pass 2026-05-25)
-rubric: design/shoot-v2/rubric-feeling.md (V1 LOCKED 2026-05-07)
+bones_count: 47
+entry_count: 2
+density: 0.043
+scene_distribution:
+  scene-A: 1
+  scene-B: 1
+  scene-C: 0
 ---
 
-1 @17 taylor-hebert-kl-122ac: her shoulders hold where they were | expressed: no
+1 @10 taylor-hebert-kl-122ac: her attention pulls toward the dropped quadrant before her head turns | expressed: no
+2 @23 taylor-hebert-kl-122ac: her weight settles back onto the rear foot | expressed: partial

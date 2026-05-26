@@ -1,107 +1,36 @@
+---
 facet: metaphor
 episode: b01-c02
 author: editor
-date: 2026-05-25
-r1-status: zero-fires
-r2-status: zero-fires
-r2-date: 2026-05-25
+bones_count: 47
+entry_count: 0
+sparsity: 0.0%
+per_scene_cap_used: scene-A 0, scene-B 0, scene-C 0
 ---
 
-# R2 DECISION RECORD
-#
-# Inputs: locked graph (feeling @17 + @24 confirmed; memory Scene-C silent by
-# authoring choice; vibes clusters 7 entries @17, 4 entries @24).
-# ADD-cap: ≤3.
-# Outcome: zero fires sustained. Refusal reasoning below.
-#
-# -----------------------------------------------------------------------
-# @17 — "the insects file the ward-junction contact" (Scene-B peak-bone)
-# -----------------------------------------------------------------------
-#
-#   feel:1 @17 confirmed: "her shoulders hold where they were | expressed: no"
-#   Somatic-tell, unexpressed. The AP7 dark-humor-deflation exception is formally
-#   open: feeling anchor exists, suppression register is present.
-#
-#   REFUSE — dual failure:
-#
-#   (1) Multi-justification cannot clear.
-#       Mandatory requirement: ≥2 layers from {memory, feeling, tens}.
-#       Available: feeling:1 (one layer).
-#       Memory anchor at @17: absent (mem:1 @7, mem:2 @18; neither at @17).
-#       Tensometer: dropped under substance overhaul; not available as a qualifying layer.
-#       Single-layer licensing fails the multi-justification gate.
-#
-#   (2) Q1 fails independently.
-#       The vibes cluster at @17 (vibes:6–12; 7 entries) already occupies the
-#       figurative-structural territory a dark-humor metaphor would render:
-#         vibes:6 "the-named-absence / wren-as-the-gap-the-map-has-a-shape-around /
-#                  the-account-open-with-no-entry"
-#         vibes:7 "cold-utilitarian-interiority / categorization-without-contact-as-the-discipline"
-#         vibes:9 "rising-entrapment / inside-coverage-without-crossing-any-threshold /
-#                  the-map-is-already-around-her"
-#         vibes:12 "coverage-architecture-established / wren-inside-the-map"
-#       A dark-humor metaphor on the unconsented-cataloging beat would restate
-#       content vibes:6/9/12 have already registered. AP2/AP3 vicinity: Q1 fails.
-#
-#   No rewrite attempt. Refuse-correct.
-#
-# -----------------------------------------------------------------------
-# @24 — "taylor-hebert-kl-122ac stalls the count" (Scene-C peak-bone)
-# -----------------------------------------------------------------------
-#
-#   feel:2 @24 confirmed: "her hand stops on the count | expressed: no"
-#   Somatic-tell, unexpressed. Same register as @17; AP7 dark-humor exception
-#   formally open.
-#
-#   Memory-callback blocked: memory facet Scene-C silence is deliberate.
-#   Memory authoring note explicitly: "Scene-C (peak @24 recognition; @25 suppression)
-#   deliberately left silent at the memory layer." No mem anchor at or near @24.
-#   Memory-callback register: closed.
-#
-#   REFUSE — dual failure:
-#
-#   (1) Multi-justification cannot clear.
-#       Available: feeling:2 (one layer).
-#       Memory anchor at @24: absent by authoring choice.
-#       Tensometer: unavailable.
-#       Single-layer licensing fails.
-#
-#   (2) Q1 fails independently.
-#       The vibes cluster at @24 (vibes:13, 15, 16, 17; 4 entries) already occupies
-#       the ironic-structural territory of suppression-executes:
-#         vibes:13 "the-first-crack / crack-suppressed-and-sealed-not-absent /
-#                   harm-reduction-as-the-ledger-entry-that-closes-before-reckoning-opens"
-#         vibes:15 "ledger-discipline-as-suppression"
-#         vibes:16 "recognition-suppressed / the-first-surveillance-architecture-named-and-filed /
-#                   crack-sealed-under-ledger-entry"
-#       A dark-humor metaphor on "stalls the count" renders what vibes:13/15/16
-#       have already registered at figurative-structural depth. Q1 fails.
-#
-#   No rewrite attempt. Refuse-correct.
-#
-# -----------------------------------------------------------------------
-# Chapter-level assessment (R2):
-#
-#   Zero fires is the correct R2 outcome. The feeling anchors at @17 and @24
-#   opened the AP7 exception formally; the exception did not survive Q1 or
-#   multi-justification in either case.
-#
-#   The underlying structural reason: in b01c02 the vibes facet is doing heavy
-#   lifting at both peak-bones (7 entries @17; 4 entries @24). That density
-#   pre-empts metaphor's figurative niche. The vibes layer and the metaphor
-#   layer cannot carry the same ironic-structural content; where vibes has landed
-#   first and fully, metaphor refuses.
-#
-#   Forward note (b01c03 and beyond, unchanged from R1):
-#   Metaphor becomes eligible when (a) the suppression-executes beat acquires a
-#   legible monument the memory facet can fire into (Taylor running the same
-#   morning-argument on a map that now reads bodies she has named) AND (b) a
-#   feeling anchor co-locates at the recognition moment AND (c) the vibes cluster
-#   at that beat has not pre-empted the figurative territory. All three conditions
-#   must hold concurrently. b01c02 establishes the pattern; it does not fire it.
-#
-# -----------------------------------------------------------------------
-# All non-peak bones: default-refused per AP7 discipline. No change from R1.
-#
-# File-shape audit: zero entries. Sparsity 0% (within 0-3% band). Per-scene cap:
-# not applicable (no fires). Schema content-shape: N/A. Zero fires, zero violations.
+# zero-fires sustained — default-refuse held throughout
+
+## Refusal log
+
+### @27 (scene-B peak-bone — relational_anchor_status +1.0)
+**Refuse.**
+- AP1 (unlicensed novel figuration): no memory:<id> or feeling:<id> anchor exists for b01-c02 at R1 authoring time; mandatory anchor requirement cannot be met.
+- AP7-analog (peak-bone): @27 is scene-B peak-bone per scene-map-b01-c02.md; equivalent of tens=3 under the URI-SUBSTANCE-OVERHAUL successor pressure-signal surface; default-refuse applies.
+- AP3 (NI-redundancy): NI @6 already carries the cognitive register at this beat ("the ward-junction contact has been filed without contact; the ledger has a new entry and no signature against it"); any metaphor here would restate NI content.
+- Q1 fails: proto-line + NI already convey the figure without addition.
+
+### @40 (scene-C peak-bone — moral_legibility_to_self +1.0)
+**Refuse.**
+- AP1 (unlicensed novel figuration): no memory:<id> or feeling:<id> anchor exists for b01-c02 at R1 authoring time; mandatory anchor requirement cannot be met.
+- AP7-analog (peak-bone): @40 is scene-C peak-bone per scene-map-b01-c02.md; default-refuse applies.
+- AP3 (NI-redundancy): NI @8 already carries the recognition register at this beat ("the count had been clean to the ward-junction; the count is no longer clean"); any metaphor here would restate NI content.
+- Q1 fails: proto-line + NI already convey the figure without addition.
+
+## All other bones (@1-@26, @28-@39, @41-@47)
+Default-refuse. Outside hinge-magnitude band (AP7-analog: non-peak-bone outside axis-mover set). No memory or feeling anchors exist. Per-scene cap would be exhausted by the two candidate sites regardless.
+
+## File-shape audit
+- Sparsity: 0/47 = 0.0% — within 0-3% range. PASS.
+- Per-scene cap: 0/1 per scene. PASS.
+- Zero-fires-per-episode: valid outcome per rubric ("Zero fires per scene is fully acceptable. Zero fires per episode is acceptable for low-charge episodes.").
+- Prior run confirmation: memory.md line 2415 records "metaphor K=0/D=0/A=0 (zero-fires sustained)" for the prior c02 pass.

@@ -5,80 +5,89 @@ note: consolidated by build_cite_index from per-source slices. Single top-of-fil
 ---
 
 # source: env
-facet: state-updates
-slice: env
+facet: state-updates-env
 episode: b01c02
 author: studio
+scope: environment + location + prop only (actor-state authored separately)
 ---
 
-# rubric-carve-out — sparse-fire defended: one env field-flip; near-zero prop activity; no physical prop cards in chapter
+# rubric-carve-out — held-against-turn exemption for genuine peak-shadow env-dropout
 #
-# design/shoot-v2/rubric-state-updates.md § "What state-updates is for" + § "Curve-shape rubric"
+# design/shoot-v2/rubric-state-updates.md § "Held-against-turn (approach-to-peak class)"
 #
-# Carve-out scope: 28 of 29 bones (all except @20)
-# Carve-out rule: 1 entry on 29 bones (3.4%) is below the rubric's 8-18% density band. This is a
-#   floor-defended sparse-fire, not a calibration failure. "Inflating fires to hit density without
-#   each fire passing all three axes is the prohibited move." The chapter is almost entirely
-#   interior-accounting and insect-feed mechanism — no physical environment fields flip except
-#   the time_of_day transition at scene-C open (@20).
-# Coverage justification:
-#   Location: oc-stitch-house-lane throughout all three scenes. studio.active_location does not
-#   flip — no location transition occurs.
-#   Time-of-day: the chapter opens at dawn (b01c01 handoff_out baseline). Scene-A (@1-@9) is
-#   dawn-to-day; Taylor leaves the drain angle and moves into the ward. No single bone in scene-A
-#   carries a clean time_of_day field-flip — departure from the drain angle (@1) is Taylor's
-#   actor-state position change, not a time-of-day event. Scene-B (@10-@19) is labeled
-#   "days-of-coverage" in the scene-map: a multi-day compressed montage. No single beat in the
-#   montage marks a persistent, discrete time_of_day state flip — the montage is the elapsed
-#   time, not an event within a clock-frame. Scene-C (@20-@29) is labeled "end-of-day": Taylor
-#   returns to the drain angle, which is her nighttime anchor position. @20 is the one bone
-#   where studio.time_of_day genuinely flips from its last canonical value (dawn / day-sweep)
-#   to end-of-day, and that state persists through the remaining 9 bones of the chapter close.
-#   Persistence test: the field stays at end-of-day through @29 (no further time-flip in the
-#   chapter). Strip test: without this entry, the canonical studio.time_of_day would remain in
-#   the dawn-to-day sweep state for the duration of b01c02. Fire passes all three axes.
-#   Props: no physical props with established prop cards or oc-* warehouse entries appear in
-#   this chapter. The coverage map is Taylor's internal accounting (not a physical prop). The
-#   threshold-stones, alleys, and drain angle are environmental geometry — not tracked prop
-#   fields. The tallow smoke is a continuous ambient (unchanged from b01c01 baseline, same lane,
-#   no flip). No prop fires authored; conservative ruling matches b01c01 precedent.
-#   Scene-B peak @17 ("the insects file the ward-junction contact"): no studio or prop field
-#   changes at this peak-bone. The filing is a data-layer / actor-interiority act. Absence
-#   defended: no field on studio or any prop flips here.
-#   Scene-C peak @24 ("taylor-hebert-kl-122ac stalls the count"): no studio or prop field
-#   changes. Recognition-and-suppression is wholly interior. Absence defended.
+# Carve-out scope: entry 3 (@10, studio.suppression_cost_active)
+# Carve-out rule: held-against-turn prohibition ("canonical state-update co-citation is withheld")
+#   applies to approach bones where the tracked change has NOT YET occurred. @10 is not an
+#   approach to the suppression-cost — the suppression-cost fires AT @10 (the alley-back dropout
+#   is the event itself). The extend at peak @11 is Taylor's response to the cost already having
+#   landed. The prohibition targets pre-emption; firing on the beat where the field actually flips
+#   is correct even when that beat is a peak-shadow.
+# Coverage justification: strip-test passes — without this entry, suppression_cost_active would
+#   have no recorded flip, and the downstream feed-state coherence depends on knowing when cost
+#   became active. Reality axis clear; authority axis clear; frugality axis clear.
 #
 # Per-entry annotations:
-#   state:1 @20: time_of_day flip defended under Reality (field genuinely flips to end-of-day;
-#     persistent through chapter close), Authority (studio.time_of_day is a tracked studio field),
-#     Frugality (<old> matches last canonical value; <new> persists; one entry for one flip).
-#     No carve-out clause needed — this entry passes all three axes in standard form.
-#
-# Flagged seams:
-#   SEAM-001: studio.time_of_day <old> chain — b01c01 authored zero state-updates-env entries
-#     (per b01c01 slice precedent, SEAM-002 from that file). The <old> value here ("dawn") is
-#     derived from the b01c01 handoff_out canonical baseline, which reads "dawn" as the chapter-open
-#     state. Showrunner should confirm that studio state file for b01c01 was initialized at the
-#     project-setup baseline (dawn, stitch-house-lane, tallow-smoke ambient), so the chain from
-#     b01c01 baseline → b01c02 @20 flip is unbroken.
-#   SEAM-002: scene-B multi-day span — the "days-of-coverage" montage compresses multiple days
-#     into a single scene. No time_of_day state-update is authored for the montage bones (@10-@19)
-#     because no single bone marks a discrete, persistent time_of_day flip within the montage.
-#     If a downstream chapter requires a precise time_of_day handoff state at b01c02 scene-B
-#     exit, showrunner should confirm the canonical value is "day-sweep-compressed" or similar.
-#     Current ruling: silent on montage bones; only the end-of-day state at @20 is canonical.
+# - state-updates-env:3 @10: held-against-turn carve-out applies; the dropout IS the state-change,
+#   not an approach to it; @11 extend is a distinct subsequent action.
 
-# --- ENTRIES ---
+1 @1 studio.time_of_day: night-b01c01-end -> dawn-grey-hour
+# field-extension: time_of_day (first-touch b01c02 chapter-open; b01c01 ended in evening/night;
+#   scene-A opens at dawn per scene-map "dawn-to-day" label)
 
-1 @20 studio.time_of_day: dawn -> end-of-day
+2 @9 studio.coverage_map_extent: subsistence-range -> four-hundred-bodies-active
+
+3 @10 studio.suppression_cost_active: false -> true
+# held-against-turn carve-out applies (see preamble); @10 is the dropout-event, not its approach
+
+4 @11 studio.fauna_sense_status: ambient-subsistence-passive -> deliberate-precinct-coverage
+# field-extension: fauna_sense_status (insect-network deployment mode; first systematic precinct
+#   sweep declared; peak bone @11 per scene-map — co-citation strongly expected)
+
+5 @16 studio.active_conditions: baseline-no-smoke-marker -> tallow-smoke-stitch-house-lane-active
+# field-extension: active_conditions first-touch for tallow-smoke condition at stitch-house-lane;
+#   persistent throughout scene-B and into scene-C (lane identity marker)
+
+6 @18 studio.day_cycle: day-1 -> multi-day-accumulation
+# field-extension: day_cycle (multi-sweep time passage; scene-B declared "days-of-coverage" per
+#   scene-map; @18 is first bone of fusion-eligible @18-@19 accumulation run; "return" verb at @18
+#   signals repeated-pass pattern beginning)
+
+7 @32 studio.time_of_day: dawn-to-day -> late-afternoon-end-of-day
+# scene-C seam-bridge; "the shadow fills the drain angle" is the explicit light/time marker;
+#   scene-map labels scene-C "end-of-day"
 
 # source: taylor-hebert-kl-122ac
-# slice: state-updates-taylor-hebert-kl-122ac
-# episode: b01-c02
-# author: taylor-hebert-kl-122ac (impersonator, facet-authoring mode)
-# phase: 1 R1
+facet: state-updates
+episode: b01-c02
+author: impersonator:taylor-hebert-kl-122ac
+target-scope: actor:taylor-hebert-kl-122ac
+---
 
-2 @6 actor:taylor-hebert-kl-122ac.deployment-state: ambient-subsistence-reading -> systematic-precinct-coverage-deliberate  # field-extension: deployment-state (tracked-state aspect; tracks active-mode of insect-network; carries forward from b01c01 state:1 chain — chapter-open value was passive-subsistence-after-crowd-yield; this scene flips to systematic deliberate-coverage); persistence absolute through chapter close — handoff_out confirms Hook coverage map active across ~40 bodies; cross-facet: NI co-citation required at @6, supplied by NI R1
-3 @17 actor:taylor-hebert-kl-122ac.internal-accounting.wren-status: unknown -> filed-as-ward-junction-contact-unnamed  # field-extension: internal-accounting.wren-status (tracked-state aspect; records Taylor's internal categorization of Wren as a coverage-map node, distinct from her perceptual register); persistence absolute — handoff_out confirms "Wren: inside coverage map; no direct contact; named internally as ward-junction contact"; @17 is the scene-B peak (peak-bones membership); cross-facet: POV actor-state, NI co-citation required at @17, supplied by NI R1
-4 @24 actor:taylor-hebert-kl-122ac.internal-accounting.coverage-map-recognition-event: not-yet-occurred -> occurred  # field-extension: internal-accounting.coverage-map-recognition-event (tracked-state aspect; records the irreversible occurrence of recognition that the coverage architecture is surveillance over forty-three non-consenting people); persistence absolute — recognition having occurred is not undone by subsequent suppression; @24 is scene-C peak (peak-bones membership) and the canonical bone for moral_legibility_to_self axis-crack arrival per chapter substance s03; cross-facet: POV actor-state, NI co-citation required at @24, supplied by NI R1
-5 @25 actor:taylor-hebert-kl-122ac.internal-accounting.coverage-map-recognition-status: unsuppressed -> suppressed-under-harm-reduction  # field-extension: internal-accounting.coverage-map-recognition-status (tracked-state aspect; records the active filing-discipline applied to the recognition event); persistence absolute through chapter close — handoff_out confirms "first moral_legibility crack: coverage-map recognition suppressed under harm-reduction framing"; @25 is the decomposed-second-bone for the recognition-and-suppression mechanism (per chapter substance SOFT-WATCH (1): must be structurally separate from @24 recognition bone); cross-facet: POV actor-state, NI co-citation required at @25, supplied by NI R1
+# rubric-carve-out — wren-recognition field uses operational vocabulary, not registration vocabulary
+#
+# state-updates rubric (design/shoot-v2/rubric-state-updates.md) § anti-pattern #1 (registration-as-state)
+#
+# Carve-out scope: actor:taylor-hebert-kl-122ac.wren-recognition entries (#4, #5)
+# Carve-out rule: the field tracks operational categorization of Wren in Taylor's coverage-map ledger (a tracked knowledge-state extension), not Taylor's perceptual noticing. Vocabulary is operational/structural (registered-as-junction-body, filed-as-ward-junction-contact) per prompt directive forbidding `noticed`/`registered`/`awareness`/`baseline-new-faces` registration-as-state vocabulary. The "registered" prefix in the value-string is operational-ledger-state, not perception.
+# Coverage justification: Wren entering the coverage map as a function-node is a persistent canonical knowledge-state change (anchor account opens per scene-B substance_delta relational_anchor_status +1.0); the categorization persists past the beat and is load-bearing for chapter close.
+#
+# Per-entry annotations:
+# - state:4 @15: operational-ledger-state ("registered-as-junction-body" = filed-as-body-with-junction-signature, not perceptual noticing). POV co-cite required (paired with narrator-interest at @15).
+# - state:5 @27: peak-bones-class beat (scene B peak); irreversible categorization-flip; POV co-cite required.
+
+8 @11 actor:taylor-hebert-kl-122ac.coverage-mode: subsistence -> systematic-deliberate
+9 @11 actor:taylor-hebert-kl-122ac.range-ceiling: working -> into-the-fours-under-suppression-cost
+10 @12 actor:taylor-hebert-kl-122ac.prohibition-line: held -> re-affirmed-reads-not-directs
+11 @15 actor:taylor-hebert-kl-122ac.wren-recognition: unaware -> registered-as-junction-body
+12 @27 actor:taylor-hebert-kl-122ac.wren-recognition: registered-as-junction-body -> filed-as-ward-junction-contact
+13 @40 actor:taylor-hebert-kl-122ac.moral_legibility_to_self: pre-crack -> crack-arriving
+14 @41 actor:taylor-hebert-kl-122ac.moral_legibility_to_self: crack-arriving -> crack-held
+15 @42 actor:taylor-hebert-kl-122ac.moral_legibility_to_self: crack-held -> crack-suppressed-under-harm-reduction
+16 @43 actor:taylor-hebert-kl-122ac.body-posture: settled -> closed-against-drain-angle
+17 @47 actor:taylor-hebert-kl-122ac.coverage-map-state: complete-with-stall -> ledger-closed
+# field-extension: coverage-mode, range-ceiling, prohibition-line, wren-recognition, moral_legibility_to_self, body-posture, coverage-map-state — all tracked knowledge/operational/posture-state extensions on actor:taylor-hebert-kl-122ac state schema; defended under §"Field-extension protocol" (tracked-state aspects, not perceptions or stylistic flourishes).
+# Cross-facet contract: POV actor-state requires narrator-interest co-citation at @11, @12, @15, @27, @40, @41, @42, @47. Entries 9 (body-posture @43) is body-charge posture-state — narrator-interest co-citation permitted but not required.
+# Persistence: every entry's <new> value persists past the anchor beat through chapter close OR until the next entry on the same field. coverage-mode locks for chapter+series scope; range-ceiling locks for chapter (suppression-cost active throughout); prohibition-line state persists from @12 through @40 where tested, then re-affirmed-suppressed at @42; wren-recognition advances through three filed states; moral_legibility_to_self transitions in three consecutive load-bearing beats across the scene-C peak window; body-posture closed-against-drain-angle persists from @43 through ledger close (@44-@47); coverage-map-state ledger-closed locks at chapter close.
+# Strip-test: every entry passes — without the fire, downstream canonical state would mis-track the chapter's structural deltas (relational_anchor_status +1.0 at @27, moral_legibility_to_self +1.0 across @40-@42, capability-mode shift at @11).
+# Peak-bones honored: scene-A @11 (FIRE ×2), scene-B @27 (FIRE), scene-C @40 (FIRE) — all three peaks carry state-update support.
+# Held-against-turn honored: @25 (peak-shadow approach to @27) NOT fired — categorization-flip lands at the peak @27. @39 (peak-shadow approach to @40) NOT fired — recognition lands at peak @40. @10 (peak-shadow approach to @11) NOT fired — range-ceiling flip lands at @11.

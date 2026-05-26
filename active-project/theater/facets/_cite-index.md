@@ -2,109 +2,129 @@
 generated: 2026-05-26
 source: active-project/theater/proto-lines/b01-c02.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 45 facet entries; 15/29 protolines decorated (51.7%)
-note: loc-state:5 deleted (audience-gate cycle-1 3-of-3); cite-index updated manually (post-R2, no inflight merge)
+totals: 63 facet entries; 28/47 protolines decorated (59.6%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
-| 0 (bare)   | 14 |
-| 1          | 5 |
-| 2          | 5 |
-| 3          | 2 |
-| 6          | 1 |
-| 7          | 1 |
-| 10          | 1 |
+| 0 (bare)   | 19 |
+| 1          | 13 |
+| 2          | 6 |
+| 3          | 3 |
+| 4          | 4 |
+| 6          | 2 |
 
 ## Per-facet entries
 
-### loc-state (4 entries)
-  loc-state:1 @1 back=Y co=[exposition:1, exposition:2]
-  loc-state:2 @4 back=Y co=[sensory:1]
-  loc-state:3 @11 back=Y co=[sensory:2]
-  loc-state:4 @20 back=Y co=[exposition:5, state:1]
-  # loc-state:5 DELETED — audience-gate cycle-1 3-of-3, 2026-05-26
+### loc-state (11 entries)
+  loc-state:1 @3 back=Y
+  loc-state:2 @7 back=Y
+  loc-state:3 @11 back=Y co=[narrator:2, state:1, state:2, state:4, vibes:1]
+  loc-state:4 @13 back=Y co=[vibes:11]
+  loc-state:5 @16 back=Y co=[sensory:1, state:5]
+  loc-state:6 @20 back=Y
+  loc-state:7 @22 back=Y
+  loc-state:8 @29 back=Y co=[narrator:7, vibes:5, vibes:7]
+  loc-state:9 @30 back=Y co=[sensory:2]
+  loc-state:10 @32 back=Y co=[state:7]
+  loc-state:11 @44 back=Y
 
-### narrator (9 entries)
-  narrator:1 @6 back=Y co=[state:1, vibes:1, vibes:2, vibes:3, vibes:4, vibes:5]
-  narrator:2 @7 back=Y co=[mem:1]
-  narrator:3 @15 back=Y
-  narrator:4 @17 back=Y co=[feel:1, state:2, vibes:6, vibes:7, vibes:8, vibes:9, vibes:10, vibes:11, vibes:12]
-  narrator:5 @18 back=Y co=[mem:2]
-  narrator:6 @24 back=Y co=[state:3, vibes:13, vibes:15, vibes:16, vibes:17]
-  narrator:7 @25 back=Y co=[state:4]
-  narrator:8 @16 back=Y
-  narrator:9 @29 back=Y
+### narrator (11 entries)
+  narrator:1 @4 back=Y
+  narrator:2 @11 back=Y co=[loc-state:3, state:1, state:2, state:4, vibes:1]
+  narrator:3 @12 back=Y co=[mem:1, state:3, vibes:2]
+  narrator:4 @23 back=Y co=[feel:2]
+  narrator:5 @26 back=Y
+  narrator:6 @27 back=Y co=[mem:2, state:5, vibes:3, vibes:4, vibes:6]
+  narrator:7 @29 back=Y co=[loc-state:8, vibes:5, vibes:7]
+  narrator:8 @40 back=Y co=[state:6, vibes:8, vibes:13]
+  narrator:9 @41 back=Y co=[state:7]
+  narrator:10 @42 back=Y co=[mem:3, state:8, vibes:9]
+  narrator:11 @46 back=Y
 
 ### sensory (2 entries)
-  sensory:1 @4 back=Y co=[loc-state:2]
-  sensory:2 @11 back=Y co=[loc-state:3]
+  sensory:1 @16 back=Y co=[loc-state:5, state:5]
+  sensory:2 @30 back=Y co=[loc-state:9]
 
-### state (5 entries)
-  state:1 @20 back=Y co=[exposition:5, loc-state:4]
-  state:2 @6 back=N co=[narrator:1, state:1, vibes:1, vibes:2, vibes:3, vibes:4, vibes:5]
-  state:3 @17 back=N co=[feel:1, narrator:4, state:2, vibes:6, vibes:7, vibes:8, vibes:9, vibes:10, vibes:11, vibes:12]
-  state:4 @24 back=N co=[narrator:6, state:3, vibes:13, vibes:15, vibes:16, vibes:17]
-  state:5 @25 back=N co=[narrator:7, state:4]
+### state (17 entries)
+  state:1 @1 back=Y
+  state:2 @9 back=Y
+  state:3 @10 back=Y co=[feel:1, vibes:1]
+  state:4 @11 back=Y co=[loc-state:3, narrator:2, state:1, state:2, vibes:1]
+  state:5 @16 back=Y co=[loc-state:5, sensory:1]
+  state:6 @18 back=Y
+  state:7 @32 back=Y co=[loc-state:10]
+  state:8 @11 back=N co=[loc-state:3, narrator:2, state:1, state:2, state:4, vibes:1]
+  state:9 @11 back=N co=[loc-state:3, narrator:2, state:1, state:2, state:4, vibes:1]
+  state:10 @12 back=N co=[mem:1, narrator:3, state:3, vibes:2]
+  state:11 @15 back=N co=[exposition:4, state:4, vibes:12]
+  state:12 @27 back=N co=[mem:2, narrator:6, state:5, vibes:3, vibes:4, vibes:6]
+  state:13 @40 back=N co=[narrator:8, state:6, vibes:8, vibes:13]
+  state:14 @41 back=N co=[narrator:9, state:7]
+  state:15 @42 back=N co=[mem:3, narrator:10, state:8, vibes:9]
+  state:16 @43 back=N co=[state:9]
+  state:17 @47 back=N co=[state:10, vibes:10]
 
-### mem (2 entries)
-  mem:1 @7 back=Y co=[narrator:2]
-  mem:2 @18 back=Y co=[narrator:5]
+### mem (3 entries)
+  mem:1 @12 back=Y co=[narrator:3, state:3, vibes:2]
+  mem:2 @27 back=Y co=[narrator:6, state:5, vibes:3, vibes:4, vibes:6]
+  mem:3 @42 back=Y co=[narrator:10, state:8, vibes:9]
 
-### feel (1 entries)
-  feel:1 @17 back=Y co=[narrator:4, state:2, vibes:6, vibes:7, vibes:8, vibes:9, vibes:10, vibes:11, vibes:12]
+### feel (2 entries)
+  feel:1 @10 back=Y co=[state:3, vibes:1]
+  feel:2 @23 back=Y co=[narrator:4]
 
 ### meta (0 entries)
 _(no entries)_
 
-### vibes (17 entries)
-  vibes:1 @6 back=Y co=[narrator:1, state:1, vibes:2, vibes:3, vibes:4, vibes:5] lic-out=[state-update:1, proto:6, proto:7]
-  vibes:2 @6 back=Y co=[narrator:1, state:1, vibes:1, vibes:3, vibes:4, vibes:5] lic-out=[state-update:1, proto:6, proto:7]
-  vibes:3 @6 back=Y co=[narrator:1, state:1, vibes:1, vibes:2, vibes:4, vibes:5] lic-out=[state-update:1, proto:3, proto:8]
-  vibes:4 @6 back=Y co=[narrator:1, state:1, vibes:1, vibes:2, vibes:3, vibes:5] lic-out=[state-update:1, proto:5, proto:11]
-  vibes:5 @6 back=Y co=[narrator:1, state:1, vibes:1, vibes:2, vibes:3, vibes:4] lic-out=[state-update:1, proto:6, proto:8, proto:9]
-  vibes:6 @17 back=Y co=[feel:1, narrator:4, state:2, vibes:7, vibes:8, vibes:9, vibes:10, vibes:11, vibes:12] lic-out=[state-update:2, proto:15, proto:17, proto:18, proto:19]
-  vibes:7 @17 back=Y co=[feel:1, narrator:4, state:2, vibes:6, vibes:8, vibes:9, vibes:10, vibes:11, vibes:12] lic-out=[state-update:2, proto:15, proto:16, proto:17]
-  vibes:8 @17 back=Y co=[feel:1, narrator:4, state:2, vibes:6, vibes:7, vibes:9, vibes:10, vibes:11, vibes:12] lic-out=[state-update:2, proto:10, proto:14, proto:17]
-  vibes:9 @17 back=Y co=[feel:1, narrator:4, state:2, vibes:6, vibes:7, vibes:8, vibes:10, vibes:11, vibes:12] lic-out=[state-update:2, proto:10, proto:17, proto:19]
-  vibes:10 @17 back=Y co=[feel:1, narrator:4, state:2, vibes:6, vibes:7, vibes:8, vibes:9, vibes:11, vibes:12] lic-out=[state-update:2, proto:17, proto:18]
-  vibes:11 @17 back=Y co=[feel:1, narrator:4, state:2, vibes:6, vibes:7, vibes:8, vibes:9, vibes:10, vibes:12] lic-out=[state-update:2, proto:11, proto:18, proto:19]
-  vibes:12 @17 back=Y co=[feel:1, narrator:4, state:2, vibes:6, vibes:7, vibes:8, vibes:9, vibes:10, vibes:11] lic-out=[state-update:2, proto:17, proto:19]
-  vibes:13 @24 back=Y co=[narrator:6, state:3, vibes:15, vibes:16, vibes:17] lic-out=[state-update:3, state-update:4, proto:24, proto:25]
-  vibes:14 @- back=-
-  vibes:15 @24 back=Y co=[narrator:6, state:3, vibes:13, vibes:16, vibes:17] lic-out=[state-update:3, state-update:4, proto:25, proto:26, proto:27]
-  vibes:16 @24 back=Y co=[narrator:6, state:3, vibes:13, vibes:15, vibes:17] lic-out=[state-update:3, state-update:4, proto:24, proto:25, proto:29]
-  vibes:17 @24 back=Y co=[narrator:6, state:3, vibes:13, vibes:15, vibes:16] lic-out=[state-update:3, state-update:4, proto:20, proto:29]
+### vibes (13 entries)
+  vibes:1 @10 back=Y co=[feel:1, state:3] lic-out=[proto:10, proto:11]
+  vibes:2 @12 back=Y co=[mem:1, narrator:3, state:3] lic-out=[proto:12, proto:11]
+  vibes:3 @27 back=Y co=[mem:2, narrator:6, state:5, vibes:4, vibes:6] lic-out=[proto:27, proto:24, proto:25]
+  vibes:4 @27 back=Y co=[mem:2, narrator:6, state:5, vibes:3, vibes:6] lic-out=[proto:27, proto:17, proto:18]
+  vibes:5 @29 back=Y co=[loc-state:8, narrator:7, vibes:7] lic-out=[proto:28, proto:29]
+  vibes:6 @29 back=N co=[loc-state:8, narrator:7, vibes:5, vibes:7] lic-out=[proto:27, proto:26, proto:25]
+  vibes:7 @29 back=Y co=[loc-state:8, narrator:7, vibes:5] lic-out=[proto:25, proto:27, proto:28]
+  vibes:8 @40 back=Y co=[narrator:8, state:6, vibes:13] lic-out=[proto:40, proto:38, proto:39]
+  vibes:9 @42 back=Y co=[mem:3, narrator:10, state:8] lic-out=[proto:42, proto:41, proto:43]
+  vibes:10 @47 back=Y co=[state:10] lic-out=[proto:47, proto:44, proto:45, proto:46]
+  vibes:11 @13 back=Y co=[loc-state:4] lic-out=[proto:13, proto:14]
+  vibes:12 @15 back=Y co=[exposition:4, state:4] lic-out=[proto:15, proto:24, proto:25]
+  vibes:13 @40 back=Y co=[narrator:8, state:6, vibes:8] lic-out=[proto:37, proto:40, proto:33]
 
-### exposition (5 entries)
+### exposition (4 entries)
   exposition:1 @0 back=N
   exposition:2 @0 back=N
-  exposition:3 @9 back=Y lic-out=[graph-resident-via-exposition:8, b01c01:5]
-  exposition:4 @10 back=Y
-  exposition:5 @20 back=Y co=[loc-state:4, state:1]
+  exposition:3 @14 back=Y lic-out=[graph-resident-via-exposition:8, b01c01:5]
+  exposition:4 @15 back=Y co=[state:4, vibes:12]
 
 ## Pile-ups (>4 facets co-located on one protoline)
 
-- **@17** (10): feel:1, narrator:4, state:2, vibes:6, vibes:7, vibes:8, vibes:9, vibes:10, vibes:11, vibes:12
-    `the insects file the ward-junction contact`
-- **@6** (7): narrator:1, state:1, vibes:1, vibes:2, vibes:3, vibes:4, vibes:5
+- **@11** (6): loc-state:3, narrator:2, state:1, state:2, state:4, vibes:1
     `taylor-hebert-kl-122ac extends the range`
-- **@24** (6): narrator:6, state:3, vibes:13, vibes:15, vibes:16, vibes:17
-    `taylor-hebert-kl-122ac stalls the count`
+- **@27** (6): mem:2, narrator:6, state:5, vibes:3, vibes:4, vibes:6
+    `the insects file the ward-junction contact`
 
 ## Lonely entries (no co-location, no inbound license)
 _Round-2 deletion candidates — but check the rubric before cutting._
 
-- narrator:3 @15  `the map assigns the junction-body connector-type`
-- narrator:8 @16  `taylor-hebert-kl-122ac yields the alley-mouth`
-- narrator:9 @29  `taylor-hebert-kl-122ac exhales`
+- loc-state:1 @3  `taylor-hebert-kl-122ac leaves the drain angle`
+- loc-state:2 @7  `taylor-hebert-kl-122ac takes the alley-mouth`
+- loc-state:6 @20  `taylor-hebert-kl-122ac takes the drain angle`
+- loc-state:7 @22  `the alley admits the ward-junction body`
+- loc-state:11 @44  `the accounting closes the fever-cluster entry`
+- narrator:1 @4  `the fever-cluster returns three heat-signatures across two alleys`
+- narrator:5 @26  `taylor-hebert-kl-122ac turns from the alley-mouth`
+- narrator:11 @46  `the ledger closes the ward-junction contact`
+- state:1 @1  `the flies return the heat-signatures`
+- state:2 @9  `the insects hold four hundred bodies in the feed`
+- state:6 @18  `the beetles return the stitch-house threshold-crossings`
 - exposition:1 @0  ``
 - exposition:2 @0  ``
-- exposition:3 @9  `the foot-traffic knots the ward-junction`
-- exposition:4 @10  `the insects return the ward-junction body`
+- exposition:3 @14  `the foot-traffic knots the ward-junction`
 
 ## Bare protolines (no citations accrued)
 _Round-2 add candidates if the rubric licenses a fire here._
 
-@2, @3, @5, @8, @12, @13, @14, @19, @21, @22, @23, @26, @27, @28
+@2, @5, @6, @8, @17, @19, @21, @24, @25, @28, @31, @33, @34, @35, @36, @37, @38, @39, @45
