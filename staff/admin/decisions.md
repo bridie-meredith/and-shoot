@@ -453,6 +453,24 @@ methodology-update-proposed: no
 
 ---
 
+## DEC-0020 | 2026-05-26 | SLOW
+
+question: Which path after wiring voice-exemplar to stitcher — (1) scoped renderer experiment only (~5 dispatches), (2) full /and-stitch re-run + variant experiment (~35+ dispatches), or (3) full /and-stitch re-run only?
+context: active-project/voice-exemplar.md just provisioned from Robinson library exemplar, closing the PROP-0003-A missing wiring step. c02 already shipped as terminal deliverable under polish-deferred. User asked: "wire the stitcher correctly and give another go on stitcher" + "put a score to the output similar to how we tested different renderings" + "experiment to try different exemplars from different personas." Reference scoring methodology: impersonator-experiment-2026-05-26 cold-read-report.md shape (~3 renders + 1 ranking dispatch). Full /and-stitch is ~30+ dispatches; scoped experiment is ~5 dispatches.
+options: (1) scoped renderer experiment only — no draft overwrite, answers both sub-questions cheaply; (2) full /and-stitch re-run + variant experiment — overwrites terminal draft, heavy spend, commits to a voice before experiment; (3) full /and-stitch re-run only, no variant experiment.
+
+decision: Option 1 — scoped renderer experiment only. ~5 dispatches, no draft overwrite.
+basis: goal:2 (cost discipline) + methodology:3a (reversibility — c02 draft already shipped terminal; re-stitching overwrites it before the best voice is identified) + methodology:3d (optionality — experiment first preserves the option to re-stitch with the winning voice after)
+rationale: The user's expanded ask ("experiment to try different exemplars") signals that voice selection is the current decision, not final production re-render. Option 2 commits 30+ dispatches to a voice choice not yet made — it would re-derive the terminal draft under Robinson prime before knowing whether Robinson beats alternatives. Option 1 answers both sub-questions (does PROP-0003-A wiring help? which exemplar register wins?) cheaply, using the same experiment shape as the prior impersonator study, and leaves option 2 available once the winner is identified. Option 3 would answer neither question cheaply (heavy spend for one voice without comparison). V0 baseline / V1 Robinson (now wired) / V2 setting-adjacent / V3 contrast voice on one representative c02 scene is the correct experiment frame.
+trade-off: draft/b01-c02.md does not get updated by this path — that's the explicit trade; it stays as the prior-revision draft until the variant winner is determined and a re-stitch is warranted. Git history preserves prior drafts regardless.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0015 | 2026-05-26 | SLOW (process-critic amendment)
 
 question: Amend DEC-0013 / PROP-0003: cold-read experiment shows matched exemplar passage (v16) beats persona-description prime (v14), and mismatched exemplar (v17) leaks surface conventions. Asset format must change from persona-card description section to standalone exemplar passage file.
