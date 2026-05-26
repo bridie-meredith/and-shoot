@@ -6,6 +6,19 @@ Schema authority: this file. Source: stripped from brighid-creative-writing/sche
 
 ---
 
+## Biography / exemplar split (persona class only)
+
+Per PROP-0005 / DEC-0016 (2026-05-26) — narrowed by PROP-0005-A / DEC-0017 — persona representation is two-layered:
+
+- **Biography (this schema, `cards/personas/<slug>.card.md`)** — identity, voice description, taste, hot buttons, hard fences, action costs, fiction-role overlay. The **describing** layer. Authoritative for what the persona *is* and what they *cannot* do.
+- **Exemplar (separate schema, `cards/persona-exemplars/<slug>.md`)** — a concrete demonstration of the persona's voice/output in known-good form. The **demonstrating** layer. Authoritative for *how* the persona renders in motion.
+
+Tier-1 consumers (impersonator, audience, renderer voice) are dispatched with both. Tier-2 (orchestrator-critic, dramatist, auditor, editor) and Tier-3 (showrunner, margit, fixer) receive only the biography. See `schemas/persona-exemplar.schema.md` for the exemplar schema; `staff/margit/exemplar-authoring-process.md` for the authoring and QC process; PROP-0005 / PROP-0005-A in `staff/admin/process-proposals.md` for the architectural rationale.
+
+The biography layer remains the source of truth for identity and fences. The exemplar augments by showing voice in action. A persona MAY exist with biography only; a persona MUST NOT exist with exemplar only.
+
+---
+
 ## Frontmatter (all cards)
 
 ```yaml

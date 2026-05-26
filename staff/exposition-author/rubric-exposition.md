@@ -106,6 +106,22 @@ Sparsity computation: `(total exposition entries) / (proto-line count) × 100`. 
 
 Use the cheapest render-as that the gloss content can fit. If a term needs >30 words, escalate to `parenthetical-aside`; if it needs context that can't fit a parenthetical, the term may actually belong in an `episode-open-context` paragraph or be skipped entirely (the lens facets are over-burdened).
 
+### Dialogue-adjacent fold-in fence (REQUIRED — PROP-0001 / DEC-0010, 2026-05-26)
+
+**Rule.** For any `first-mention-*` entry whose anchor is within ±2 bones of a speech bone (a bone carrying a dialogue-anchor citation or a speech-act SVO), the cheapest two render-as options — `inline-appositive` and `em-dash-fold` — are **PROHIBITED**. The author MUST step up to one of:
+
+- `post-bone-clause` (full clause AFTER the bone — clean paragraph break before the speech bone)
+- `parenthetical-aside` (acceptable if the aside completes before the speech bone)
+- defer the gloss past the dialogue cluster to the next non-adjacent anchor and re-evaluate at that anchor
+
+**Why.** Em-dash inline fold-ins at dialogue-adjacent anchors pack glosses mid-sentence into the same paragraph as speech acts, denying the rescue / exchange beat the structural whitespace it needs to land. Evidence: `/and-ablate` b01-c01 cold-read ranked `leave-out-exposition` above `full` (rank 1 vs 2) on pacing-through-whitespace, with the diagnosis pointing specifically at em-dash fold-ins crowding the rescue dialogue. The information was wanted; the delivery mechanism was the cost. Report: `staff/reviews/ablation-b01-c01-2026-05-26T000543Z.md`. Proposal: PROP-0001 / DEC-0010.
+
+**How to apply.** At R1 author-time: for each `first-mention-*` candidate, walk ±2 bones from the anchor. If any bone in that window is a speech bone (check bones file for dialogue citations of shape `[<character-slug>:<id>]`, or speech-act SVOs like "X says/asks/calls"), the cheapest-render-as heuristic does NOT pick `inline-appositive` or `em-dash-fold` for that entry. Escalate to `post-bone-clause` or defer. Log the dialogue-adjacency decision in the entry's authoring notes.
+
+**R2 sweep.** R2 graph-aware pass MUST re-walk every existing `first-mention-*` entry against the same ±2-bone speech-adjacency window (now using the cite-index for precise dialogue-anchor resolution). Existing `inline-appositive` / `em-dash-fold` entries adjacent to a speech bone REWORD to `post-bone-clause` or DELETE-and-defer.
+
+**Exclusion.** Entries at @0 (preamble / context paragraphs) and `scene-open-orient` entries are exempt — they are not bone-adjacent renderings.
+
 ## Scene-open-orient conditional fire-rule (REQUIRED)
 
 A `scene-open-orient` entry fires for a scene boundary if AND ONLY IF:
@@ -160,6 +176,7 @@ R2 also resolves any `provisional-anchor` notes from R1 (e.g. R1 says "@first-me
 - **AP-SCAN — re-gloss-check.** Cross-reference each `<key>` against the cross-episode register. Hit (re-glossing) → HARD.
 - **AP-SCAN — voice-fault.** When profile sets `pov-frame`, scan for 3rd-person pronouns in `episode-open-*` and `scene-open-orient` entries. Hit → SIGNAL (Phase 2 dogfood emitted 3rd-person; this fault must surface at audit).
 - **AP-SCAN — scene-orient-fire-rule.** For each `scene-open-orient` entry, verify (a) time-skip-blank + (b) loc-state silent at anchor + (c) NI silent on time/place in first 2 anchors. Any violation → HARD (entry fires when lens should carry).
+- **AP-SCAN — dialogue-adjacent-fold-in (PROP-0001 / DEC-0010).** For each `first-mention-*` entry, walk ±2 bones from the anchor against the bones file + dialogue cite-index. If any bone in that window is a speech bone (carries a `[<character-slug>:<id>]` citation or a speech-act SVO: says / asks / calls / replies / answers / shouts / whispers / murmurs / mutters / declares / instructs) AND the entry's `renders-as` is `inline-appositive` or `em-dash-fold` → HARD (cheap fold prohibited at dialogue-adjacent anchor). Exclusion: entries at @0 and `scene-open-orient` are exempt.
 
 ## Audience-gate (Phase 5b) hooks
 

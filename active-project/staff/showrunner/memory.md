@@ -2351,6 +2351,33 @@ books:
             target_command: /and-facets
             scope: b01c01
           contract_discrepancy_note: "Fork A prompt asserted dramatic_shape: hinge; authored contract at memory.md is rising. Audited against rising — delivered."
+        ablations:
+          - ran_at: 2026-05-26T00:05:43Z
+            work_dir: active-project/staff/ablation/b01-c01-2026-05-26T000543Z/
+            report_path: active-project/staff/reviews/ablation-b01-c01-2026-05-26T000543Z.md
+            ranking:  # 1=best → 12=worst
+              - { rank: 1,  variant: leave-out-exposition }
+              - { rank: 2,  variant: full }
+              - { rank: 3,  variant: leave-out-sensory }
+              - { rank: 4,  variant: leave-out-interest-narrator }
+              - { rank: 5,  variant: leave-out-metaphor }
+              - { rank: 6,  variant: leave-out-scene-map }
+              - { rank: 7,  variant: leave-out-vibes }
+              - { rank: 8,  variant: leave-out-feeling }
+              - { rank: 9,  variant: leave-out-state-updates }
+              - { rank: 10, variant: leave-out-location-state }
+              - { rank: 11, variant: leave-out-memory }
+              - { rank: 12, variant: bones-only }
+            bottom_candidates: [exposition]   # ranked above full → modify candidate (not delete; first occurrence)
+            top_facets: [memory, location-state, state-updates]  # top-3 deltas (+9/+8/+7) — load-bearing confirmed
+            no_evidence_facets: [metaphor]    # zero metaphor entries fired this chapter; +3 rank delta is rendering noise
+            admin_process_critic:
+              verdict: PROCESS-CHANGE-PROPOSED
+              proposal_id: PROP-0001
+              decision_id: DEC-0010
+              target: staff/exposition-author/rubric-exposition.md
+              change_type: modify  # add dialogue-adjacent fold-in fence; em-dash-fold prohibited within ±2 bones of speech bone
+            cold_reader_closing: "pacing through whitespace mattered more than which facet was held out; em-dash inline fold-ins at dialogue-adjacent anchors are the cost mechanism"
 
       - slug: b01c02
         status: planned

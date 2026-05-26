@@ -73,8 +73,9 @@ staff/            — production staff: agent homes + audience persona library
   audience/       — audience persona library (22 personas; INDEX.md; 3 selected per project; `taste-judge/` is a single-card library entry reserved for `/and-project` menu picks and never copied into active-project)
   orchestrator-critic/ — run-judge card
 
-cards/            — story-facing card library (on-stage characters, locations, props, conditions, behaviors)
-  personas/       — on-stage character cards
+cards/            — story-facing card library (on-stage characters, locations, props, conditions, behaviors) + paired persona-exemplars
+  personas/       — on-stage character cards (biography layer)
+  persona-exemplars/ — persona-exemplar library (live channel for Tier-1 consumers; PROP-0005)
   locations/      — location cards
   props/          — prop cards
   conditions/     — condition cards
@@ -84,6 +85,8 @@ active-project/   — sole active project
   actors/         — active cast (provisioned by /and-cast Phase 4)
   warehouse/      — active locations, props, conditions
   audience/       — 3 active audience persona working dirs
+  persona-exemplars/ — optional project-bound exemplar overrides (beats library on dispatch resolution)
+  voice-exemplar.md  — optional series-level renderer voice exemplar (PROP-0003-A; separate format)
   staff/          — showrunner / studio / auditor / fixer / margit / screen-writer / editor working memory
     reviews/      — /and-review reports (canonical reports directory)
   theater/
@@ -115,6 +118,7 @@ All file formats are defined in `schemas/`.
 | Per-character dialogue file | `schemas/dialogue.schema.md` |
 | Bones file | `schemas/bones.schema.md` |
 | Facet file | `schemas/facet.schema.md` |
+| Persona-exemplar | `schemas/persona-exemplar.schema.md` |
 | Scene-map (upstream-emitted by /and-write Phase 7) | `schemas/scene-map.schema.md` |
 | Stitcher profile | `schemas/stitch-profile.schema.md` |
 | Stitcher feedback | `schemas/stitch-feedback.schema.md` |
@@ -163,6 +167,18 @@ Legacy schemas preserved for reference: `episode-plan.schema.md`, `show-file.for
 14. **Parking lot — cross-chunk watch items.** `active-project/staff/showrunner/parking-lot.md` (schema: `schemas/parking-lot.schema.md`) is the canonical surface for findings whose resolution belongs in a later command invocation. Phase 0 of every re-runnable command MUST scan the parking lot for items where `target.command` equals the current command and `target.scope` matches the current invocation (exact slug or `*` wildcard) and `status: open`. **Phase 0 surfaces matching items in its print block; it does not abort on existence.** The HARD-abort fires at the named resolving phase (or final-summary if `target.phase` is null) if matching HARD items remain open at that point. Resolution stamps `resolved_at` + `resolved_by` + `resolution_note`; entries are never deleted. **SOFT items** are surfaced in the Phase 7 exit summary; they do not block. Any command body, auditor, fixer, or screen-writer may append parking-lot items; resolution is the resolving command's responsibility, not the author's. Pre-existing inline `# Downstream watch-items` comment blocks in `memory.md` are legacy narrative; new findings go to the parking lot.
 
 15. **Dialogue ships with bones (URI-WRITE-DIALOGUE-COBONDED, 2026-05-25).** The dialogue facet is inseparable from the bones it anchors to — per-character dialogue files at `theater/dialogue/<character-slug>.md` are co-emitted by `/and-write` Phase 7 alongside the bones file, NOT authored downstream by `/and-facets`. `/and-write` Phase 1.5 fans out per-behavior-card dialogue-writer dispatches; Phase 6 verifies (FAULT-DIALOGUE-MISSING-AT-ANCHOR / FAULT-DIALOGUE-CARD-VIOLATION / FAULT-DIALOGUE-OBJECTIVE-MISSING / FAULT-DIALOGUE-EARTH-BET-FENCE / FAULT-DIALOGUE-COVERAGE — all HARD); Phase 7 emits the bones file with `[<character-slug>:<id>]` citation tokens already attached on dialogue-anchor bones. `/and-review bones` enforces dialogue-coverage as a HARD gate (subsumes the former `/and-facets` Phase 5 dialogue-coverage gate). `/and-facets` Phase 1 dialogue R1 author is REMOVED; the R2 dialogue judge survives as a locked-graph review pass (KEEP / DELETE / REWRITE against the facet graph the upstream author was blind to) — review only, no authoring. Cap-burn DELETE of dialogue at `/and-facets` is retired; cap-burn now happens at `/and-write` if at all. Dialogue is therefore NOT a separable facet for `/and-ablate` — the bones-only variant includes dialogue.
+
+16. **Persona representation is biography + exemplar (URI-PERSONA-EXEMPLAR, 2026-05-26).** Per PROP-0005 / DEC-0016 (narrowed by PROP-0005-A / DEC-0017), personas have two layers:
+    - **Biography card** at `cards/personas/<slug>.card.md` (or `staff/audience/<slug>/card.md` for audience personas) — identity, voice description, taste, fences. Authoritative for what the persona *is* and *cannot do*.
+    - **Persona-exemplar** at `cards/persona-exemplars/<slug>.md` (library) or `active-project/persona-exemplars/<slug>.md` (project-bound override) — concrete 150-350 word demonstration of voice in known-good form. The live channel for Tier-1 consumers.
+    
+    **Tier-1 consumers** (auto-resolve exemplar at every dispatch): impersonator, audience (3-persona reviewer trio + taste-judge override), renderer voice (`/and-stitch` Phase 0 step 4a — uses parallel `active-project/voice-exemplar.md` format, not this schema).
+    
+    **Tier-2 deferred** (template/structure-driven; exemplar-priming actively regressed output in the 2026-05-26 critic experiment): orchestrator-critic, dramatist, auditor, editor. Do NOT author exemplars for these without a fresh experimental basis.
+    
+    **Tier-3 out of scope** (no persona/voice channel): showrunner, margit, fixer.
+    
+    Exemplar resolution at dispatch (project-bound → library → absent) is automatic per agent definition; dispatcher command bodies do NOT need to be modified. The surface-convention fence (no exemplar content import; only cadence/structure transfers) is non-negotiable wherever exemplars are loaded. See `schemas/persona-exemplar.schema.md` (schema) and `staff/margit/exemplar-authoring-process.md` (authoring + QC). Margit gates: `/and-project` Phase 1c blocks on missing audience exemplars; `/and-cast` Phase 5 blocks on missing actor exemplars.
 
 ---
 

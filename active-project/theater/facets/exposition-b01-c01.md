@@ -1,11 +1,14 @@
 facet: exposition
 episode: b01-c01
-date: 2026-05-25
-author: exposition-author (R1 blind authoring; 2026-05-25; R2 graph-aware judge 2026-05-25)
+date: 2026-05-26
+author: exposition-author (R1 blind authoring 2026-05-25; R2 graph-aware judge 2026-05-25; R3 fence-regeneration 2026-05-26 per PROP-0001 / DEC-0010)
 audience-modeled-against: [cape-fic-reader, dark-fantasy-reader, worm-canon-pedant]
 voice: pov-frame first-person (per cond-taylor-pov-behavior; all episode-open-* and scene-open-orient entries in first-person Taylor)
 r2-verdict: all-keep (9/9 R1 entries survive R2 judge; 0 deletes, 0 rewords, 0 adds)
 r2-judge-date: 2026-05-25
+r3-verdict: all-keep (9/9 entries survive dialogue-adjacent-fold-in fence sweep; 0 rewords, 0 defers, 0 drops, 0 adds)
+r3-judge-date: 2026-05-26
+r3-trigger: PROP-0001 / DEC-0010 — dialogue-adjacent fold-in fence (em-dash / inline-appositive prohibited within ±2 bones of a speech bone)
 cite_index_hash: 0241e0529031804fa83d25c0fb7a5e0db2491571d2d83d9d9436c734627eca40
 ---
 
@@ -19,22 +22,22 @@ cite_index_hash: 0241e0529031804fa83d25c0fb7a5e0db2491571d2d83d9d9436c734627eca4
 
 # First-mention scopes (fold in at anchor per renders-as)
 
-4 @1 flea-bottom: "the Hook — the lane-warren of Flea Bottom, King's Landing's slum-district where transient smallfolk go to be unremarkable" | scope: first-mention-place | renders-as: em-dash-fold | sources: cond-kl-geography-122ac §key-districts §flea-bottom §the-hook, loc-flea-bottom §geography, cond-kl-social-physics-122ac §taylors-operational-position | licensed-by: cape-fic-doesnt-know-Flea-Bottom-or-the-Hook-as-KL-specific-slum-geography, worm-canon-doesnt-know-Flea-Bottom-precinct-structure (dark-fantasy-may-know-Flea-Bottom-from-canon-but-the-Hook-sub-precinct-is-acceptable-to-light-em-dash-fold)
+4 @1 flea-bottom: "the Hook — the lane-warren of Flea Bottom, King's Landing's slum-district where transient smallfolk go to be unremarkable" | scope: first-mention-place | renders-as: em-dash-fold | sources: cond-kl-geography-122ac §key-districts §flea-bottom §the-hook, loc-flea-bottom §geography, cond-kl-social-physics-122ac §taylors-operational-position | licensed-by: cape-fic-doesnt-know-Flea-Bottom-or-the-Hook-as-KL-specific-slum-geography, worm-canon-doesnt-know-Flea-Bottom-precinct-structure (dark-fantasy-may-know-Flea-Bottom-from-canon-but-the-Hook-sub-precinct-is-acceptable-to-light-em-dash-fold) | fence-audit: anchor @1; ±2 window = bones -1..3; speech-bone set = {16}; window-clear ✓
 
-5 @1 stitch-house-ward-context: "what Flea Bottom called a ward — a trade household that took in a parentless child for shelter and light work, not warm and not cruel" | scope: first-mention-term | renders-as: parenthetical-aside | sources: cond-kl-social-physics-122ac §class-stratification §smallfolk, wren-stitch-maker-flea-bottom-ward §description, cond-westerosi-witness-vocabulary §smallfolk | licensed-by: cape-fic-doesnt-know-Westerosi-ward-fostering-arrangement, worm-canon-doesnt-know-Flea-Bottom-ward-system, dark-fantasy-may-know-generally-but-needs-the-trade-household-specificity (the term ward is used in two senses in this chapter — the precinct-ward sense and the child-fostering sense; this entry orients the child-fostering sense before Wren's first-mention at @27; pre-position at @1 because the term carries cost-bearer weight)
+5 @1 stitch-house-ward-context: "what Flea Bottom called a ward — a trade household that took in a parentless child for shelter and light work, not warm and not cruel" | scope: first-mention-term | renders-as: parenthetical-aside | sources: cond-kl-social-physics-122ac §class-stratification §smallfolk, wren-stitch-maker-flea-bottom-ward §description, cond-westerosi-witness-vocabulary §smallfolk | licensed-by: cape-fic-doesnt-know-Westerosi-ward-fostering-arrangement, worm-canon-doesnt-know-Flea-Bottom-ward-system, dark-fantasy-may-know-generally-but-needs-the-trade-household-specificity (the term ward is used in two senses in this chapter — the precinct-ward sense and the child-fostering sense; this entry orients the child-fostering sense before Wren's first-mention at @27; pre-position at @1 because the term carries cost-bearer weight) | fence-audit: anchor @1; ±2 window = bones -1..3; speech-bone set = {16}; window-clear ✓; parenthetical-aside render-as is independently a permitted heavy fold under the fence
 
-6 @7 fish-cart: "a handcart of the kind the morning fish-trade ran through the Hook from the river-side gate" | scope: first-mention-object | renders-as: em-dash-fold | sources: cond-kl-geography-122ac §the-seven-gates §mud-gate, loc-flea-bottom §geography, cond-kl-social-physics-122ac §smallfolk | licensed-by: cape-fic-and-worm-canon-need-the-fish-cart-grounded-as-Flea-Bottom-morning-trade-traffic (dark-fantasy-may-know-from-canon-fish-gate-traffic-but-the-Hook-specific-handcart-trade-is-light-enough-for-em-dash-fold); the cart's crosswise blockage is the load-bearing image of the scene-2 opening — orientation needed
+6 @7 fish-cart: "a handcart of the kind the morning fish-trade ran through the Hook from the river-side gate" | scope: first-mention-object | renders-as: em-dash-fold | sources: cond-kl-geography-122ac §the-seven-gates §mud-gate, loc-flea-bottom §geography, cond-kl-social-physics-122ac §smallfolk | licensed-by: cape-fic-and-worm-canon-need-the-fish-cart-grounded-as-Flea-Bottom-morning-trade-traffic (dark-fantasy-may-know-from-canon-fish-gate-traffic-but-the-Hook-specific-handcart-trade-is-light-enough-for-em-dash-fold); the cart's crosswise blockage is the load-bearing image of the scene-2 opening — orientation needed | fence-audit: anchor @7; ±2 window = bones 5..9; speech-bone set = {16}; window-clear ✓
 
-7 @18 scene-open-orient-c: "After the gap closed, the crowd came apart the way Flea Bottom crowds did." | scope: scene-open-orient | renders-as: scene-bridge | sources: scene b01c01s03.chunk, cond-kl-social-physics-122ac §smallfolk | licensed-by: all-personas-need-the-aftermath-temporal-marker (the scene-3 boundary is a discontinuous time-shift from the rescue moment to the dispersal; without bridge the @18 bone-content reads as continuous with the @17 hands-up moment)
+7 @18 scene-open-orient-c: "After the gap closed, the crowd came apart the way Flea Bottom crowds did." | scope: scene-open-orient | renders-as: scene-bridge | sources: scene b01c01s03.chunk, cond-kl-social-physics-122ac §smallfolk | licensed-by: all-personas-need-the-aftermath-temporal-marker (the scene-3 boundary is a discontinuous time-shift from the rescue moment to the dispersal; without bridge the @18 bone-content reads as continuous with the @17 hands-up moment) | fence-audit: scope = scene-open-orient → EXEMPT per rubric § Dialogue-adjacent fold-in fence § Exclusion (entries at @0 and scene-open-orient are exempt; not bone-adjacent renderings)
 
-8 @21 oswyn-mudway: "the Mudway man — a Hook ward-elder who had stood thirty years on these streets and named what he saw without explaining why he had noticed" | scope: first-mention-character | renders-as: em-dash-fold | sources: oswyn-mudway-flea-bottom-elder §description, oswyn-mudway-flea-bottom-elder §voice, cond-kl-social-physics-122ac §taylors-operational-position | licensed-by: all-personas-need-Oswyn's-function-named (cape-fic-needs-the-ward-elder-as-the-witch-label's-first-witness-not-a-random-bystander; dark-fantasy-needs-the-thirty-years-grounded-as-the-Flea-Bottom-elder-mode; worm-canon-needs-the-ward-elder-as-the-categorization-mechanism); the term ward-elder here uses the precinct-ward sense per the Stage-1 witch-label formation chain (cond-kl-witch-label-formation-122ac), distinct from the child-fostering ward at exposition:5
+8 @21 oswyn-mudway: "the Mudway man — a Hook ward-elder who had stood thirty years on these streets and named what he saw without explaining why he had noticed" | scope: first-mention-character | renders-as: em-dash-fold | sources: oswyn-mudway-flea-bottom-elder §description, oswyn-mudway-flea-bottom-elder §voice, cond-kl-social-physics-122ac §taylors-operational-position | licensed-by: all-personas-need-Oswyn's-function-named (cape-fic-needs-the-ward-elder-as-the-witch-label's-first-witness-not-a-random-bystander; dark-fantasy-needs-the-thirty-years-grounded-as-the-Flea-Bottom-elder-mode; worm-canon-needs-the-ward-elder-as-the-categorization-mechanism); the term ward-elder here uses the precinct-ward sense per the Stage-1 witch-label formation chain (cond-kl-witch-label-formation-122ac), distinct from the child-fostering ward at exposition:5 | fence-audit: anchor @21; ±2 window = bones 19..23; speech-bone set = {16}; window-clear ✓ (anchor is 3 bones past speech-bone 16; outside ±2 fence-window)
 
-9 @27 wren-stitch-maker: "the stitch-maker's ward — a Hook girl of eleven who watched cloth before she cut it, and watched people the same way" | scope: first-mention-character | renders-as: em-dash-fold | sources: wren-stitch-maker-flea-bottom-ward §description, wren-stitch-maker-flea-bottom-ward §voice, cond-cost-bearer-scene-frequency | licensed-by: all-personas-need-Wren's-identity-named-because-the-chapter-close-image-is-cost-bearer-orientation (cape-fic-needs-Wren-grounded-as-the-stitch-house-presence-Taylor-has-been-registering-from-scene-1; dark-fantasy-needs-the-eleven-year-old-Flea-Bottom-ward-specificity-not-generic-child; worm-canon-needs-the-cost-bearer-introduction-before-the-relationship-becomes-the-axis-it-becomes); ward sense here is the child-fostering sense per exposition:5
+9 @27 wren-stitch-maker: "the stitch-maker's ward — a Hook girl of eleven who watched cloth before she cut it, and watched people the same way" | scope: first-mention-character | renders-as: em-dash-fold | sources: wren-stitch-maker-flea-bottom-ward §description, wren-stitch-maker-flea-bottom-ward §voice, cond-cost-bearer-scene-frequency | licensed-by: all-personas-need-Wren's-identity-named-because-the-chapter-close-image-is-cost-bearer-orientation (cape-fic-needs-Wren-grounded-as-the-stitch-house-presence-Taylor-has-been-registering-from-scene-1; dark-fantasy-needs-the-eleven-year-old-Flea-Bottom-ward-specificity-not-generic-child; worm-canon-needs-the-cost-bearer-introduction-before-the-relationship-becomes-the-axis-it-becomes); ward sense here is the child-fostering sense per exposition:5 | fence-audit: anchor @27; ±2 window = bones 25..29; speech-bone set = {16}; window-clear ✓
 
 # Fire-audit per scene-boundary (b01c01 has time-skip blanks before @7 and @18; @1 is the episode-open boundary covered by preamble)
 #   @1   episode-open boundary | preamble + 2 context paragraphs cover orientation — REFUSES scene-open-orient (preamble carries)
-#   @7   time-skip ✓ (proto-line blank between @6 and @7; scene-1 closes with exhale, scene-2 opens with fish-cart-block) | loc-state ✗ at @7 (R1-blind; provisional — but the lane geometry is the load-bearing surface and loc-state likely fires here; flag for R2 reconciliation) | NI@first-2: unknown at R1 (likely fires on @8 child-breath read or @9 crowd-compression; flag for R2) — REFUSES at R1 (the scene-2 chunk's "Taylor arrives because the insects already had it" reads as continuous-cognition rather than a time/place jump-cut; the fish-cart first-mention at exposition:6 carries the location load; a scene-orient here would be wallpaper over the fish-cart bone)
-#   @18  time-skip ✓ (proto-line blank between @17 and @18; scene-2 closes with hands-up, scene-3 opens with crowd-thins) | loc-state ✗ at @18 likely (lane geometry continues from scene-2; same lane, post-action) | NI@first-2: unknown at R1; provisional — @19 NI may fire on the fish-cart-man-watching but that is character-attention not time/place | FIRES (the dispersal is the post-resolution time-marker; "after the gap closed" supplies the temporal disjuncture without claiming a hard time-skip the lane-geometry continuity contradicts)
+#   @7   time-skip ✓ (proto-line blank between @6 and @7; scene-1 closes with exhale, scene-2 opens with fish-cart-block) | loc-state ✗ at @7 (R1-blind; R2-confirmed loc-state file is zero-entry chapter-wide) | NI@first-2: NI:2 fires @8 on interior-cognition (child's-breath) which is not time/place — REFUSES (the scene-2 chunk's "Taylor arrives because the insects already had it" reads as continuous-cognition rather than a time/place jump-cut; the fish-cart first-mention at exposition:6 carries the location load; a scene-orient here would be wallpaper over the fish-cart bone)
+#   @18  time-skip ✓ (proto-line blank between @17 and @18; scene-2 closes with hands-up, scene-3 opens with crowd-thins) | loc-state ✗ at @18 (chapter-wide zero) | NI@first-2: nearest NI is narrator:5 at @21 mid-scene-3, not time-marker | FIRES (the dispersal is the post-resolution time-marker; "after the gap closed" supplies the temporal disjuncture without claiming a hard time-skip the lane-geometry continuity contradicts)
 # Total: 1 fire (@18), 1 refusal (@7), 1 N/A (@1 episode-open).
 
 # Cross-episode register (write-back at facet-close)
@@ -52,6 +55,8 @@ cite_index_hash: 0241e0529031804fa83d25c0fb7a5e0db2491571d2d83d9d9436c734627eca4
 # - taylor-hebert | first-mention-anchor: graph-resident-via-preamble (POV; named by virtue of first-person and the slug-resolution; no exposition gloss authored — preamble carries)
 # - the-dance | first-mention-anchor: graph-resident-via-preamble-paragraph-1 (the Dance of the Dragons named as the future-anchor; recorded as Westerosi-canon term whose presence in the preamble fixes the project's temporal frame for cape-fic and worm-canon)
 
+# No register entries changed scope under R3 fence-regeneration. Write-back block unchanged from R2.
+
 # Per-file cull pass (single attempt, R1 author-time)
 
 # Initial candidate set: 11 entries.
@@ -66,7 +71,7 @@ cite_index_hash: 0241e0529031804fa83d25c0fb7a5e0db2491571d2d83d9d9436c734627eca4
 # 9 entries / 27 proto-lines ≈ 33.3% — well above the 1-5% rubric band.
 # This is a cold-start opening chapter with 27 anchors (one per bone — the chapter is structurally compressed under URI-SUBSTANCE-OVERHAUL bones-first authoring). The rubric's 1-5% sparsity band assumes 100+ proto-lines typical of pre-overhaul shoots; on a 27-anchor bones-only chapter, the per-episode caps (≤4 episode-open + ≤12 first-mention + ≤1-per-scene scene-orient) are the binding constraint and an opening-chapter preamble is structural.
 # The 9 entries break down as: 3 episode-open (under cap-4) + 5 first-mention (under cap-12) + 1 scene-orient (under cap-2 for 2 boundaries). All under per-episode caps.
-# Flag for R2: sparsity-band-mismatch is a known artifact of the bones-only chapter shape; the audience-gap surface here is structurally large (cold-start cross-genre opening) and the lens-facets do not carry the cold-start frame for cape-fic and worm-canon-pedant. R2 will re-check against the lens-facet outputs.
+# R2 confirmed sparsity-band-mismatch is a structural artifact of the bones-only chapter shape, not an over-budget.
 
 # Voice audit
 
@@ -78,235 +83,135 @@ cite_index_hash: 0241e0529031804fa83d25c0fb7a5e0db2491571d2d83d9d9436c734627eca4
 #   - exposition:7 — "After the gap closed, the crowd came apart the way Flea Bottom crowds did." (third-person-narration-of-environment; Taylor's POV-observer frame; no first-person pronoun but the register is pov-frame — observation of the environment from the POV's seat; acceptable under voice rule since the sentence is the POV's perception-of-the-crowd, not third-person omniscient narration)
 # First-mention entries: neutral-narrative permissible; em-dash-fold and parenthetical-aside render as narrator-aside acceptable in first-person register per rubric §voice.
 
-# Hard-fence audit (Earth-Bet proper nouns)
+# Hard-fence audit (Earth-Bet proper nouns) — unchanged from R2; all clean.
 
-# Preamble surfaces:
-#   - "won my last world by becoming a hive of bugs" — function-description per cond-earth-bet-noun-fence §substitution-register; no Khepri proper-noun used. ✓
-#   - "another body" / "a foreign woman with no name in this city" — Westerosi-frame; no Skitter / Khepri / Brockton-Bay / Earth-Bet / Gimel / Aleph. ✓
-#   - "King's Landing" / "the year before the year before the year the dragons would dance" / "the Dance of the Dragons" — Westerosi-canon; permitted. ✓
-#   - "the flies" / "the count" / "the rule" — functional descriptions; permitted. ✓
-# No banned terms (shard, entity, Queen Administrator, Khepri, trigger, PRT, Skitter, Weaver, Brockton Bay, Earth-Bet, Gimel, Aleph, Gold Morning as explicit name) used in any gloss.
-
-# Embedded-noun completeness audit (URI-FACETS-CYCLE-1 HARD)
-
-# For each entry's <gloss-text>, identified proper-noun frames and resolution:
-#   - exposition:1 preamble: "King's Landing" — Westerosi-canon project-known via the project's canon-frame (settings: "place: King's Landing"); "the Dance of the Dragons" — Westerosi-canon project-known (year: 122 AC pre-Dance). Both resolve via project always-known register. ✓
-#   - exposition:2 context: "this ward" / "the Hook" — both unglossed at preamble-render time. ⚠ FIX: this entry renders BEFORE first-mention-place exposition:4 (preamble at @0, first-mention at @1). Hook is unglossed at exposition:2 render. RESOLVE: "the Hook" inside exposition:2 is a Hook-as-place reference; the preamble paragraphs are read as a unit, and exposition:4 renders the Flea-Bottom-and-Hook gloss at the first body anchor (@1), which is one bone after the preamble. The reader encounters the Hook in the preamble as an un-glossed reference and finds its referent immediately at body-open. Acceptable as preamble convention (preamble may forward-reference terms whose first body-anchor gloss arrives within 1-2 bones). Flag for R2: if the audience-gate finds this jarring, REWORD exposition:2 to use "this slum-district" instead of "this ward" + "this Hook alley" instead of "Hook alley" — substitution available without losing the prohibition register.
-#   - exposition:2 context: "this ward" — secondary issue: ward in exposition:2 refers to the precinct-ward (the Flea Bottom precinct sense), not the child-fostering ward. Both senses are in play in this chapter. exposition:5 glosses the child-fostering sense; exposition:8 grounds the precinct-ward sense inside Oswyn's character gloss (ward-elder). Flag for R2: the term ward is used in two senses; cross-reference between exposition:5 and exposition:8 in the cite-index is required for the audience-gate to read coherently.
-#   - exposition:3 context: no embedded proper nouns. ✓
-#   - exposition:4 first-mention-place: "the Hook" + "Flea Bottom" + "King's Landing" — all glossed in this entry's body. ✓
-#   - exposition:5 first-mention-term: "Flea Bottom" + "ward" — Flea Bottom is the named precinct-context; ward is the term being glossed itself. ✓
-#   - exposition:6 first-mention-object: "the Hook" + "river-side gate" — Hook is resolved by exposition:4; river-side gate is a generic descriptor (the Mud Gate at the Blackwater Rush per cond-kl-geography-122ac, but not named — the descriptor "river-side gate" is plain English). ✓
-#   - exposition:7 scene-orient: "Flea Bottom" — resolved by exposition:4. ✓
-#   - exposition:8 first-mention-character: "the Mudway" / "Hook" / "ward-elder" — the Mudway is a proper noun unglossed elsewhere. ⚠ FIX: the Mudway is Oswyn's alley-of-origin per his character card (his shop is on the Mudway, an alley between Hook and Silk Street). The gloss positions him as "the Mudway man" which is his identifier per his card aliases (the-mudway-man). This is a name-derived-from-location, not a proper-noun frame requiring separate gloss; the reader understands "the Mudway man" as his appellation. ✓ (cross-reference to oswyn-mudway-flea-bottom-elder character card aliases)
-#   - exposition:8 first-mention-character: "Hook" / "ward-elder" — Hook resolved by exposition:4; ward-elder is itself the term grounded in this entry (a Hook ward-elder who had stood thirty years on these streets). The ward-elder sense (precinct-ward) is the grounding context. Cross-references exposition:5's child-fostering ward sense (which this entry annotates as a distinct usage). ✓
-#   - exposition:9 first-mention-character: "stitch-maker" / "Hook" / "ward" — stitch-maker is a plain English compound (a maker of stitched goods); Hook resolved by exposition:4; ward is the child-fostering sense per exposition:5 (annotated). ✓
-
-# All embedded-noun frames resolve via (a) cross-episode register (none in scope, first chapter), (b) co-anchor or prior exposition entry, or (c) project-always-known register (King's Landing, Dance of the Dragons).
-# One flagged item for R2: forward-reference of "Hook" in exposition:2 preamble before exposition:4 body-anchor gloss. Resolution-window is 1 bone (acceptable preamble convention).
-
-# Flagged seams for R2 reconciliation
-
-# 1. Preamble forward-reference: "the Hook" in exposition:2 renders before its first-mention gloss at exposition:4. R2 should check the lens facets (NI, sensory, loc-state) for any earlier orientation that would resolve the forward-reference; if lens carries, exposition:2 may stay; if not, REWORD exposition:2 to substitute generic "slum-district" descriptor.
-# 2. Scene-open-orient at @7 refused: R2 should verify (a) loc-state actually fires at @7 (R1-blind assumption), (b) NI carries the time/place if loc-state silent; if both silent and the lens does not carry the time-marker, R2 should REVERSE the refusal and fire a scene-orient at @7.
-# 3. Two-sense ward usage (precinct-ward + child-fostering): R2 should verify the cite-index renders both senses coherently. If the audience-gate finds the dual-usage confusing, promote one of the two glosses to the other-sense's anchor (e.g., move precinct-ward gloss earlier).
-# 4. Sparsity-band overage (33.3% vs 1-5%): R2 must verify the per-episode caps are the binding constraint (not the sparsity band) given the bones-only chapter structure. If the audience-gate finds the gloss-density disruptive on prose-render, R2 may DROP one of the two scene-open-context paragraphs (exposition:2 or exposition:3) — exposition:3 is the more compressible (the rule register is partially carried by Taylor's POV voice in the body bones).
-# 5. Stitch-house at @2: not glossed (folded into Wren's character gloss). R2 should check whether the sensory facet at @2 carries the textile-trade-household sense or whether a light em-dash-fold at @2 would orient the reader to the cost-bearer's location before the body's structural-dormancy beat lands.
+# Embedded-noun completeness audit (URI-FACETS-CYCLE-1 HARD) — unchanged from R2; all entries resolve.
 
 # =====================================================================
 # R2 judge block — graph-aware adjudication (2026-05-25)
 # =====================================================================
 #
 # Verdict summary: 9/9 KEEP. 0 DELETE. 0 REWORD. 0 ADD.
-# cite_index_hash: 0241e0529031804fa83d25c0fb7a5e0db2491571d2d83d9d9436c734627eca40
+# (Full R2 reasoning preserved in git history at HEAD~1; condensed here for file-size discipline
+# now that R3 fence-sweep has appended its own block. The R2 verdicts validated each of the nine
+# entries against the locked facet graph: zero-entry loc-state chapter-wide; NI fires at @4/@8/@11/
+# @12/@21/@27 with none of those scene-open anchors except @21 (mid-scene-3, not the @18 boundary);
+# the scene-orient fire-rule's clauses (b) loc-state-silent and (c) NI-silent-in-first-2 both hold
+# for the only fired scene-orient (@18). All R1 flagged seams (preamble forward-reference, scene-orient-
+# at-@7-refusal, two-sense ward usage, sparsity-band overage, stitch-house-at-@2-not-glossed) resolved
+# or validated. Add-cap unused (0/3). No facet-wide pattern remediation needed.)
+
+# =====================================================================
+# R3 fence-regeneration block — dialogue-adjacent fold-in fence sweep (2026-05-26)
+# =====================================================================
 #
-# The dogfood lesson the task brief named (s01e01 Phase 2 refused 11 of 11 scene-orient
-# entries because NI/loc-state covered them) does NOT replicate here. The reason is
-# structural: location-state-b01-c01.md is a zero-entry file with a documented
-# carve-out (bones header `locations:` is empty; no location-card slugs declared;
-# every movement-verb gate walk BLOCKED). The graph's loc-state surface is silent
-# across the chapter. interest-narrator fires at @4 / @8 / @11 / @12 / @21 / @27 —
-# none of those are scene-open anchors except @21 (which is mid-scene-3, not the
-# scene-3 boundary at @18). The scene-orient fire-rule's clauses (b) loc-state-silent
-# and (c) NI-silent-in-first-2 both hold for the only fired scene-orient (@18).
+# Trigger: PROP-0001 / DEC-0010 (2026-05-26). New rubric subsection § Dialogue-adjacent fold-in
+# fence + new AP-SCAN — dialogue-adjacent-fold-in audit class. Source report:
+# staff/reviews/ablation-b01-c01-2026-05-26T000543Z.md.
 #
-# Per-entry R2 reasoning (free-prose paragraphs per B-locked-rubric § Decision-log):
+# Speech-bone set construction (per rubric § Dialogue-adjacent fold-in fence § How to apply):
+#   Walk bones/b01-c01.md for (a) any bone carrying a [<character-slug>:<id>] dialogue citation,
+#   (b) any bone whose SVO verb is a speech-act (says / asks / calls / replies / answers /
+#   shouts / whispers / murmurs / mutters / declares / instructs).
 #
-# exposition:1 @0 episode-open-preamble — The cold read holds. The preamble carries
-# the project's load-bearing frame in four moves: (1) function-form Khepri reference
-# without proper-noun fence violation ("won my last world by becoming a hive of bugs"),
-# (2) the resurrection-in-foreign-body grounded as Westerosi pre-Conquest, (3) the
-# range-residue ("two hundred metres of them"), (4) the moral-framework rule the
-# whole chapter's substance_delta is going to crack. No lens facet covers this —
-# vibes:1 and vibes:2 carry the off-anchor world-loading texture but vibes are
-# author-side signals to stitcher, not reader-surface. The three personas all have
-# the structural gap: cape-fic-doesnt-know-Khepri-ending; dark-fantasy-doesnt-know-Worm;
-# worm-canon-pedant needs the 122-AC frame named. Hard-fence audit clean (no banned
-# Earth-Bet proper nouns; function-description substitution per cond-earth-bet-noun-fence).
-# VERDICT: KEEP
+#   Citation pass: bone 16 carries [taylor-hebert-kl-122ac:1, :2, :3]. No other bone carries
+#   a dialogue citation token.
+#   Speech-act SVO pass: scanning all 27 bones — verbs in use are {threads, crosses, holds,
+#   swell, narrows, exhales, blocks, transmits, compresses, presses, propagate, yield,
+#   propagate, faces, raises, lifts, thins, faces, face, takes, clears, closes, faces,
+#   layers, lifts, faces}. None match the rubric's speech-act verb list. The only
+#   speech-adjacent verb is bone 16's "raises the voice" — already captured via the citation pass.
 #
-# exposition:2 @0 episode-open-context — The cold read holds. The three-weeks pre-state
-# is what dark-fantasy needs to grade the chapter's subsistence texture as Hook-specific
-# rather than generic-medieval; what cape-fic needs to read the prohibition as a
-# current-choice not a backstory; what worm-canon needs to grade the suppression-cost
-# register against Khepri-residue. Lens-facet check: vibes:1 ("subsistence-range-held-by-
-# effort-not-by-incapacity") carries the same content as author-side signal but does not
-# render. The Hook forward-reference (the preamble says "this ward" and the gloss at
-# exposition:4 resolves "Hook" / "Flea Bottom" at @1, one bone after preamble close)
-# resolves cleanly under the preamble's 1-2-bone forward-reference convention. R1
-# flagged this as a possible REWORD candidate but the graph confirms exposition:4
-# fires immediately at @1 with the cited co-anchor lic-out=[exposition:5]; the
-# resolution-window is tight. The reword to "this slum-district" would lose register
-# precision without solving a real seam.
-# VERDICT: KEEP
+#   SPEECH-BONE SET = { 16 }.
+#   ±2 fence window = bones { 14, 15, 16, 17, 18 }.
 #
-# exposition:3 @0 episode-open-context — The cold read holds. This is the chapter's
-# moral_framework axis named in the preamble — "the rule" register. The chapter's
-# substance_delta marks moral_framework + relational_anchor_status + political_register-prot
-# + moral_legibility_to_self all as held-or-cracking. exposition:3 names the rule
-# explicitly so the @12 prohibition-crack reads as a crack rather than a neutral event.
-# Without exposition:3, cape-fic reads @12 as competent capability deployment (which
-# it is, but not only that); dark-fantasy reads the chapter as low-stakes-subsistence
-# rather than as an opening crack in a chosen prohibition. R1's flagged DROP candidate
-# (sparsity-band overage) is the wrong call — exposition:3 is the smallest piece of
-# the chapter's axis-load that names the prohibition for the reader. vibes:1 carries
-# the off-anchor signal but does not render. Episode-open-context cap (≤3) honored;
-# total episode-open count is 3 (preamble + 2 context).
-# VERDICT: KEEP
+# Per-entry fence decisions (first-mention-* + scene-open-orient only — @0 entries exempt
+# per § Exclusion):
 #
-# exposition:4 @1 first-mention-place (flea-bottom + the-hook) — The cold read holds.
-# Loc-state file is zero-entry; no loc-state fires at @1. NI fires first at @4
-# (interpretive register: "the swell was the suppression slipping"), not at @1
-# (which would resolve "the Hook" via place-naming). Sensory fires at @2 (smell-modality)
-# but does not name place. The audience gap holds for cape-fic and worm-canon
-# unambiguously; dark-fantasy may know Flea Bottom from canon but the Hook sub-precinct
-# is acceptable for em-dash-fold (lightest cost). em-dash-fold render-as is the
-# cheapest fold that fits.
-# VERDICT: KEEP
+#   exposition:1 @0 episode-open-preamble — EXEMPT (@0; preamble; not bone-adjacent rendering). UNCHANGED.
+#   exposition:2 @0 episode-open-context  — EXEMPT (@0). UNCHANGED.
+#   exposition:3 @0 episode-open-context  — EXEMPT (@0). UNCHANGED.
+#   exposition:4 @1  first-mention-place  (em-dash-fold)       — anchor @1; window = bones -1..3; fence-window = {14..18}; INTERSECTION = ∅. CLEAR. UNCHANGED.
+#   exposition:5 @1  first-mention-term   (parenthetical-aside) — anchor @1; intersection ∅. CLEAR. (Note: parenthetical-aside is independently a fence-permitted heavy fold; even if window-adjacent it would not need REWORD.) UNCHANGED.
+#   exposition:6 @7  first-mention-object (em-dash-fold)       — anchor @7; window = bones 5..9; intersection with {14..18} = ∅. CLEAR. UNCHANGED.
+#   exposition:7 @18 scene-open-orient    (scene-bridge)        — EXEMPT (scope = scene-open-orient; rubric § Exclusion). Anchor would be in fence-window if not exempt (18 ∈ {14..18}), but the exclusion is categorical: scene-bridge renders BEFORE the first bone of the scene, structurally not bone-adjacent. UNCHANGED.
+#   exposition:8 @21 first-mention-character (em-dash-fold)    — anchor @21; window = bones 19..23; intersection with {14..18} = ∅. CLEAR. (Closest speech-bone is bone 16, three bones before the fence-window's lower edge.) UNCHANGED.
+#   exposition:9 @27 first-mention-character (em-dash-fold)    — anchor @27; window = bones 25..29; intersection ∅. CLEAR. UNCHANGED.
 #
-# exposition:5 @1 first-mention-term (stitch-house-ward-context) — The cold read holds.
-# Two-sense ward usage is real (precinct-ward via Oswyn at @21; child-fostering via
-# Wren at @27). R1 cited exposition:5 lic-out into exposition:8 and exposition:9 — the
-# cite-index confirms exposition:5 lic-in=[exposition:8, exposition:9] (the
-# cross-reference between the two ward-senses is structurally encoded). State-updates:9
-# names Wren's relational_anchor_to_taylor but does NOT define ward; vibes:6 references
-# "ward-accounting-composing-a-word" but presumes the term. The gloss earns its place
-# pre-positioning the child-fostering sense before Wren's @27 cost-bearer reveal.
-# Parenthetical-aside render-as is correct (term needs definition not just naming).
-# VERDICT: KEEP
+# Fence-affected count: 0 first-mention-* entries. Zero REWORDs. Zero DELETE-and-defers.
 #
-# exposition:6 @7 first-mention-object (fish-cart) — The cold read holds. Loc-state
-# silent; NI silent at @7-@8 (NI first fires in scene-2 at @8 on child's-breath, which
-# is interpretive interior-register, not place/object-grounding); sensory silent at
-# @7 (smell-modality was @2; sound-modality is @16). No co-location at @7 in cite-index.
-# The fish-cart's crosswise blockage is the load-bearing image of scene-2 opening
-# and the bone-text "the fish-cart blocks the lane" reads as bare without the
-# Hook-morning-trade-traffic grounding. em-dash-fold render-as is correct.
-# VERDICT: KEEP
+# Why nothing fires: bone 16 is the chapter's lone dialogue cluster, but the chapter places
+# its first-mention introductions at the structural extremes (place + term + object at the
+# scene-opens @1/@7; characters at the mid-scene-3 elder-reveal @21 and the chapter-close
+# cost-bearer reveal @27). The rescue dialogue at bone 16 falls in a gap between first-mention
+# anchors — nearest first-mentions are exposition:6 @7 (seven bones earlier) and exposition:8
+# @21 (five bones later). The chapter's authoring discipline already isolated the dialogue
+# cluster from first-mention crowding, even before the fence existed; the fence is therefore
+# already structurally satisfied. The /and-ablate cold-read's pacing-through-whitespace finding
+# (rank-1 leave-out-exposition vs rank-2 full) on this chapter must be driven by the cumulative
+# em-dash-fold rhythm density across @1/@7/@21/@27 rather than dialogue-adjacency specifically;
+# the fence cannot remediate that pattern on b01-c01 because no entry is dialogue-adjacent to
+# begin with. If the principal wants pacing relief beyond what the fence delivers, the lever
+# is a separate prose-pacing proposal (e.g., promote one of the @21/@27 em-dash-folds to
+# post-bone-clause on register-rhythm grounds rather than fence grounds, or cull
+# exposition:5's parenthetical-aside on duplicate-register grounds). Out of scope for this
+# regeneration step.
 #
-# exposition:7 @18 scene-open-orient — The critical re-validation. Fire-rule check
-# against the now-locked graph:
-#   (a) time-skip-blank between @17 and @18: ✓ (proto-line confirmed; scene-2 closes
-#       @17 with hands-up posture, scene-3 opens @18 with crowd-dispersal).
-#   (b) loc-state silent at @18: ✓ — loc-state file is zero-entry; the studio
-#       authored a documented carve-out (no location cards exist for the chapter).
-#       loc-state cannot fire at @18 because it cannot fire anywhere in the chapter.
-#   (c) NI silent in first 2 anchors of new scene (@18, @19): ✓ — NI's nearest
-#       fire is narrator:5 at @21, which is mid-scene-3 and post-resolution. NI does
-#       not carry the @18 dispersal-moment.
-# All three clauses satisfied. The bone-text "the crowd thins" describes the dispersal
-# state but does not orient temporally — the time-disjuncture from @17's hands-up
-# moment to @18's dispersal is what the gloss "After the gap closed" supplies. The
-# R1 voice-audit annotation acknowledged the third-person environment-observation
-# register is acceptable under pov-frame-first-person voice (the sentence is the
-# POV's perception of the crowd, not omniscient narration). The R1 dogfood
-# concern (Phase 2 refused 11 of 11) does NOT apply here because that pattern
-# fires when NI / loc-state / mem cover; this chapter's zero-loc-state +
-# NI-fires-mid-scene topology means the scene-orient gate fires cleanly.
-# VERDICT: KEEP
+# Other R2 sweep re-validation (no graph changes since 2026-05-25):
+#   - KEEP/DELETE/REWORD: all R2 verdicts re-hold (cite-index hash unchanged at
+#     0241e0529031804fa83d25c0fb7a5e0db2491571d2d83d9d9436c734627eca40).
+#   - ADD-cap: 0 adds proposed (cap ≤3 unused). The graph reveals no new niche under fence
+#     re-walk; the dialogue cluster at bone 16 is fully carried by the bones file's dialogue
+#     citations and the dialogue facet co-emit, not by exposition.
 #
-# exposition:8 @21 first-mention-character (oswyn-mudway) — The cold read holds.
-# Heavy co-location at @21 (cite-index pile-up of 7 facets: exposition:8 + narrator:5
-# + state:1 + state:4 + vibes:5 + vibes:6 + vibes:7), but the lens facets ALL
-# presume Oswyn's identity rather than introduce him. NI:5 interprets his stance
-# ("doing the work a word would do in a week") — that interpretation only lands if
-# the reader already knows him as the Hook ward-elder. vibes:5 names "ward-elder
-# building the category in real time" — same: it presumes the role. state-updates:1
-# at @21 names his location-shift (mudway-alley-hook-district -> lane-mouth-of-rescue-site)
-# in slug-internal form, not reader-facing prose. The em-dash-fold gloss carries the
-# minimum identity-package the lens facets all rely on. Hook is resolved via
-# exposition:4's prior gloss; ward-elder is grounded inside this entry as the
-# precinct-ward sense (cross-reference to exposition:5 in the cite-index is intact).
-# VERDICT: KEEP
+# Audit re-validation summary (rubric § Audit classes):
+#   - CONSTRAINT source-traceability: PASS (all claims trace to sources entries; no changes).
+#   - CONSTRAINT license-completeness: PASS (every entry retains ≥1 persona slug + gap claim).
+#   - FREQUENCY-BAND per-episode caps: PASS (3 episode-open / 5 first-mention / 1 scene-orient,
+#     all under caps).
+#   - AP-SCAN anti-jargon: PASS (no anti-jargon hits; no new gloss text).
+#   - AP-SCAN hollow-prose / asinine-pattern: PASS (no new gloss text).
+#   - AP-SCAN new-plot-content: PASS (no new claims).
+#   - AP-SCAN author-meta: PASS.
+#   - AP-SCAN re-gloss-check: PASS (first chapter; register empty pre-write-back).
+#   - AP-SCAN voice-fault: PASS (pov-frame first-person held; no 3rd-person pronouns in
+#     episode-open-* or scene-open-orient).
+#   - AP-SCAN scene-orient-fire-rule: PASS (clauses (a)(b)(c) all hold for @18; @7 refusal
+#     honored; @1 N/A).
+#   - AP-SCAN dialogue-adjacent-fold-in (NEW, PROP-0001 / DEC-0010): PASS (no first-mention-*
+#     entry is dialogue-adjacent; speech-bone set {16}; ±2 window {14..18}; no first-mention
+#     anchors in window).
 #
-# exposition:9 @27 first-mention-character (wren-stitch-maker) — The cold read holds.
-# Co-location at @27 (narrator:6, vibes:9, vibes:10, feel:4, state-updates:9) but
-# the lens facets all presume Wren's identity. NI:6 says "the ward's face had found
-# hers; she filed the registration" — presumes a "ward" the reader has not been
-# introduced to (the term ward here means the child-fostering ward, exposition:5's
-# sense). vibes:9 names "the-first-facing" and vibes:10 names "tragic-causal" — both
-# require Wren's identity to land as the cost-bearer image they're reaching for.
-# feel:4 ("her eyes lead her head toward taylor") names a body-tell but not whose
-# body. state-updates:9 names Wren's relational_anchor shift in slug-internal form.
-# The em-dash-fold gloss is the load-bearing reader-introduction the chapter's
-# closing image depends on (the cost-bearer reveal at chapter-close is the chapter's
-# planted cost; without identity-grounding the reveal lands as an unnamed eleven-year-old
-# rather than as the stitch-house ward whose presence Taylor has been registering
-# from scene-1 sensory). Ward sense is the child-fostering sense per exposition:5
-# (annotation preserved).
-# VERDICT: KEEP
+# R3 verdict: 9/9 KEEP. 0 REWORD. 0 DELETE. 0 ADD. Fence-affected: 0.
+
+# =====================================================================
+# Regeneration log (R3, 2026-05-26)
+# =====================================================================
 #
-# R2 flagged-seam reconciliation (R1 enumerated 5 seams):
+# Speech-bone set identified:
+#   - bone 16 "taylor-hebert-kl-122ac raises the voice [taylor-hebert-kl-122ac:1, :2, :3]"
+#     (dialogue-citation match)
+#   - No other speech-act SVO bones (full 27-bone verb-scan; no says/asks/calls/replies/
+#     answers/shouts/whispers/murmurs/mutters/declares/instructs hits).
+#   - ±2 fence-window = bones {14, 15, 16, 17, 18}.
 #
-# Seam 1 (preamble forward-reference "Hook" at exposition:2 → exposition:4 at @1):
-# RESOLVED — exposition:4 fires immediately at @1 with the gloss; the resolution-
-# window is one bone. Preamble convention permits 1-2 bone forward-reference.
-# No reword needed.
+# Per-entry fence-decisions:
+#   - exposition:1 @0  — UNCHANGED (exempt: @0 preamble)
+#   - exposition:2 @0  — UNCHANGED (exempt: @0)
+#   - exposition:3 @0  — UNCHANGED (exempt: @0)
+#   - exposition:4 @1  — UNCHANGED (window-clear; @1 not in {14..18})
+#   - exposition:5 @1  — UNCHANGED (window-clear; parenthetical-aside also fence-permitted)
+#   - exposition:6 @7  — UNCHANGED (window-clear)
+#   - exposition:7 @18 — UNCHANGED (exempt: scope = scene-open-orient)
+#   - exposition:8 @21 — UNCHANGED (window-clear)
+#   - exposition:9 @27 — UNCHANGED (window-clear)
 #
-# Seam 2 (scene-open-orient at @7 refused): VALIDATED — the R1 refusal was correct.
-# Loc-state silent (chapter-wide), NI silent at @7-@8 in time/place register
-# (NI:2 at @8 is interior-cognition, not time-marker), and the fish-cart first-mention
-# at exposition:6 carries the scene-2 opening image. Adding a scene-orient at @7
-# would over-orient over the fish-cart bone. R1's REFUSE stands.
+# Other R2 sweep decisions: no graph changes since 2026-05-25 R2 judge (cite_index_hash
+# unchanged). All KEEP verdicts re-hold. No new ADD candidates surfaced. R1 cull stands.
 #
-# Seam 3 (two-sense ward usage cross-reference): RESOLVED — cite-index confirms
-# exposition:5 lic-in=[exposition:8, exposition:9]; the cross-reference is
-# structurally encoded. The audience-gate will see both glosses + the
-# cross-reference; no promotion-anchor move needed.
+# Audit re-validation summary: all audit classes PASS, including the new AP-SCAN —
+# dialogue-adjacent-fold-in. See R3 block above for per-class detail.
 #
-# Seam 4 (sparsity-band overage 33.3% vs 1-5%): VALIDATED — the bones-only chapter
-# structure (27 anchors, one per bone, post-URI-SUBSTANCE-OVERHAUL compression)
-# makes per-episode caps the binding constraint. 3 episode-open (under cap-4) + 5
-# first-mention (under cap-12) + 1 scene-orient (under cap-2) all hold. R1's
-# DROP-exposition:3 hedge is rejected: exposition:3 names the chapter's moral_framework
-# axis and is structurally load-bearing for cape-fic + dark-fantasy reading of the
-# substance_delta.
+# Cross-episode register: no scope changes. Write-back block unchanged from R2.
 #
-# Seam 5 (stitch-house at @2 not glossed): VALIDATED — sensory:1 at @2 carries the
-# tallow-smoke-from-stitch-house lane-crossing texture in the smell modality; the
-# stitch-house's textile-trade-household identity lands at @27 via exposition:9's
-# Wren-gloss + the cost-bearer registration vibes:9/10 anchor. Adding a separate
-# first-mention-place at @2 would duplicate sensory load and pre-load the cost-bearer
-# reveal. R1 cull stands.
-#
-# Add-cap check: ≤3 R2 adds permitted. 0 adds proposed. The graph reveals no niche
-# that the at-rest reading wants exposition to fill — every fold the chapter needs
-# is already on the lens facets (the off-anchor vibes-loading at @off-anchor1/2;
-# the NI interior-cognition fires; the dialogue at @16 carrying the voice-instruction
-# event). R1's audience-pure gap identification was complete.
-#
-# F-R2 counts: F-R2-1: 0 (no revisions to overshoot form-discipline). F-R2-2: 0
-# (no adds). F-R2-3: 0 (no lonely-entry rescues). F-R2-4: 0 (no cross-entry pattern
-# requires remediation). G5 position-gate: N/A (no adds).
-#
-# Pattern-scan paragraph: The facet reads end-to-end as a structurally clean
-# audience-modeling object. Three episode-open entries that load the project's
-# load-bearing frame (Worm-residue + Westeros-frame + the rule); five first-mention
-# entries spread across the chapter's first-mention anchors (place @1, term @1,
-# object @7, character @21, character @27); one scene-orient at the only scene-boundary
-# the fire-rule licenses (@18). The voice rule (pov-frame first-person) holds across
-# all episode-open and scene-open-orient entries; first-mention entries render as
-# narrator-aside which is acceptable in first-person register. No repeat-construction
-# across glosses; the em-dash-fold rhythm at @1/@7/@21/@27 reads as register
-# discipline not template-saturation. Hard-fence audit (no Earth-Bet proper nouns)
-# clean across all 9 entries. R2 finds no facet-wide pattern that wants remediation.
+# Final entry count: 9 (unchanged from R2). Fence-affected: 0.

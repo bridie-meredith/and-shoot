@@ -104,6 +104,14 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
    Shallow-merge top-down. Validate per the schema's fault list.
 4. **Persona resolution.** Load `active-project/staff/stitcher/personas/<active>.md` (or library fallback `staff/stitcher/personas/<active>.md`). Default `neutral` if profile carries no `persona:` field. Validate persona's lens-bias and Phase-7-bias tables against the schema.
    - **Project-mismatch check.** If resolved persona is `neutral` AND `active-project/stitch-profile.md` declares a non-neutral persona OR `active-project/staff/stitcher/personas/` contains a project-scoped persona card: emit `FAULT-PROFILE-PERSONA-MISMATCH-PROJECT` and escalate to user. Do not proceed until user either (a) corrects the profile or (b) passes `--persona neutral` explicitly as an override. Silent `neutral` against a tuned project is the canonical failure mode for this pipeline.
+4a. **Voice-exemplar resolution (PROP-0003-A / DEC-0015).** Resolve the series-level voice exemplar path:
+    - **Per-chapter override** (highest priority): `active-project/theater/voice-exemplar-<book>-<chapter>.md`. If present, use this.
+    - **Series-level default**: `active-project/voice-exemplar.md`. If present, use this.
+    - **Else**: no voice exemplar — Phase 1 forks run un-primed (baseline behavior). Record `voice-exemplar: ABSENT` in render-log header.
+    If a voice exemplar is resolved, validate the file is non-empty and contains a prose passage. Record `voice-exemplar: <resolved-path>` in render-log header. Read the passage into the Phase 1 fork dispatch payload; do NOT abstract or describe it back to yourself — it is held as a concrete artifact for pattern-matching.
+    **Surface-convention fence (injected at Phase 1 fork dispatch):**
+    > The voice exemplar demonstrates prose register, sentence shape, and cadence. Do NOT import the exemplar's specific content (characters, place-names, events, surface conventions like italics formatting, scene-break symbols, or address forms) into the rendered prose. Only the cadence, sentence-shape, register, and noticing-patterns transfer.
+    This fence closed the v17 leak in the renderer experiment and is non-negotiable wherever the exemplar is consumed.
 5. **POV resolution.** Read `narrator:` from the bones file header (`active-project/theater/bones/<book>-<chapter>.md` § `narrator:` field — the seven-field extended header per `schemas/bones.schema.md`). If profile's `voice.pov` is unset, use the header value. Fault if both are absent.
 6. **Scene boundary detection.** Default (scene-window mode): scene boundaries are sourced at Phase 1 from `active-project/theater/facets/scene-map-<book>-<chapter>.md` (per the scene-window mode's Scene-boundary resolution below); no Phase 0 work needed beyond verifying the scene-map facet exists per step 2a. Per-anchor mode (opt-in fallback): paragraph breaks fall on scene boundaries derived during Phase 1 fork-by-fork, or on explicit time-skip blanks in the bones file.
 7. **Feedback intake (if present).** Read `active-project/staff/stitcher/feedback-<slug>.md`:
@@ -141,6 +149,8 @@ Before dispatching Phase 1, emit a one-screen summary to the user:
   phase-1-mode:     <scene-window | per-anchor>     # from profile.phase-1.mode; default scene-window
                     if scene-window: <S> scene-forks (boundaries from scene-map facet; tensometer fallback removed under URI-SUBSTANCE-OVERHAUL 2026-05-17)
                     if per-anchor:   <N> per-anchor forks (fallback mode; ad-hoc or legacy episodes)
+  voice-exemplar:   <present (path) | ABSENT>      # PROP-0003-A: series-level voice prime for Phase 1 forks
+                    if present: <word-count> words; content-match: <high|medium|low> per exemplar frontmatter
   output-dir:       active-project/draft/           # stitcher output (not polished — editor pass lands in active-project/polish/)
   dialogue:         <present | ABSENT (no-speech-episode | legacy-fallback)>
                     if present: <K> character files, <N> total utterances

@@ -19,13 +19,33 @@ The impersonator is deliberately narrow. One persona per call. No bleed from oth
 ## Load
 
 At episode start, load:
-- `card.md` — identity, voice, taste, pet peeves, hard fences, action costs, fiction-role overlay
+- `card.md` — identity, voice, taste, pet peeves, hard fences, action costs, fiction-role overlay. **Biography layer** — authoritative for who the persona is and what they cannot do.
 - `active-project/actors/<slug>/ltm.md` — what this character has experienced in this project
 - `active-project/actors/<slug>/stm.md` — what this character is holding in mind right now
 - `active-project/actors/<slug>/state.md` — where they are, what they carry, current stats
 - `active-project/actors/<slug>/vibes.md` — the active vibe-cloud (received from showrunner)
 
 Hold all of this in focus throughout the episode. The character evolves across bullets — what happened in bullet 3 informs how the character acts in bullet 15.
+
+### Voice exemplar (auto-resolved, PROP-0005)
+
+After loading the card, **automatically resolve** the persona-exemplar — no dispatcher signal needed. Resolution order (you do this yourself at every dispatch):
+
+1. `active-project/persona-exemplars/<slug>.md` (project-bound override)
+2. `cards/persona-exemplars/<slug>.md` (library)
+3. Else: no exemplar — proceed with baseline behavior (card + ltm + stm only).
+
+If the resolved exemplar has `dispatch-status: excluded` in its frontmatter, **do not load it**. Treat as absent.
+
+The exemplar is a concrete demonstration of this persona's voice in known-good form. It is the **live channel** for voice/output-shape; the card is the biography that describes what the exemplar shows. Auto-resolution means dispatcher commands do not need to be modified — every impersonator dispatch automatically picks up the exemplar when one exists.
+
+**Surface-convention fence (non-negotiable).** When you load an exemplar, hold this constraint:
+
+> The exemplar demonstrates voice and output-shape. Do NOT import the exemplar's specific content (characters, place-names, events, surface conventions like italics formatting, scene-break symbols, or address forms) into your actual output. Only the cadence, sentence-shape, register, and noticing-patterns transfer.
+
+Pattern-match the exemplar's grammar, sentence rhythm, and characteristic tics throughout the episode. Do NOT abstract or describe the exemplar's voice back to yourself; that re-introduces the description-priming failure mode the exemplar exists to avoid. Just hold the exemplar in mind and let its cadence shape what you generate.
+
+The exemplar augments the card; it does not replace it. Card forbidden-registers remain absolute. If exemplar and card ever conflict (they shouldn't if the exemplar was authored correctly), card wins on fences; exemplar wins on cadence.
 
 ---
 

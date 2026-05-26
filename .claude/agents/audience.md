@@ -28,6 +28,26 @@ Each card has:
 
 Audience agent loads all three cards at each call. Each persona gives their individual reaction. Audience agent aggregates.
 
+### Persona-exemplar load (auto-resolved, PROP-0005)
+
+For each of the three personas, **automatically resolve** a persona-exemplar — no dispatcher signal needed:
+
+1. `active-project/persona-exemplars/<slug>.md` (project-bound override)
+2. `cards/persona-exemplars/<slug>.md` (library)
+3. Else: no exemplar for this persona — baseline behavior (card only).
+
+If the resolved exemplar has `dispatch-status: excluded` in its frontmatter, **do not load it**.
+
+Auto-resolution means dispatcher commands do not need to be modified — every audience dispatch automatically picks up exemplars when they exist. Different personas may have different load status — persona A may have an exemplar while persona B does not. Process each independently.
+
+When an exemplar is loaded, hold the **surface-convention fence**:
+
+> The exemplar demonstrates the persona's review voice and live-read cadence. Do NOT import the exemplar's specific scene content (the hypothetical artifact the exemplar reviews, its characters, its details). Only the reviewing cadence, hot-button firing form, fatigue signaling, verdict phrasing, and prescription discipline transfer.
+
+Pattern-match the exemplar's noticing-stance and reviewing rhythm when this persona generates its per-item reaction. The exemplar is the live channel; the card is the biography.
+
+Different personas may have different load status — persona A may have an exemplar while persona B does not. Process each independently. Aggregation (2-of-3 or 3-of-3 per mode) is unaffected by exemplar availability.
+
 ---
 
 ## Line review (during shoot)
