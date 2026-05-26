@@ -504,3 +504,111 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0022 | 2026-05-26 | SLOW
+
+question: User ran `/and-stitch b01-c02`. Should the command run a fresh full re-stitch, stop and confirm intent, or run an un-truncated re-stitch (since the prior stitch was budget-truncated)?
+
+context: b01-c02 is already terminal: depth-pass resolved 2026-05-26, Phase 9 returned PASS-WITH-CAVEATS, depth_pass_pending = false, draft files current. One stale-looking field (stitched_stale_since: 2026-05-26T00:00:00Z) appears to be a bookkeeping leftover not cleared at the post-depth-pass re-stitch write — all other freshness indicators disagree. Bones and facets unchanged since the depth-pass stitch. A no-input-delta full re-stitch produces output only via seed variance. However: memory.md line 2440 explicitly notes that the prior stitch ran Phases 2-7 as "truncated under budget-constrained cascade" — a full un-truncated re-stitch would be a meaningful delta (sweeps that were actually skipped would run). Two parking-lot items fire SOFT; neither blocks.
+
+decision: Option 3 — run as a full (non-truncated) re-stitch, surfacing the budget-truncation note as the reason. Do NOT stop to confirm; the user invoked the command and the truncation note is the key fact that makes this a meaningful non-redundant re-run.
+
+basis: methodology:3b (cost) + goals:Goal-2 (cost discipline) — the truncation note changes the calculus; this is not a seed-variance re-run, it is completing skipped phases
+rationale: The user's explicit command invocation plus the explicit memory.md truncation note at line 2440 are sufficient signal to proceed. Phases 2-7 (compression, voice transform, local flow + speaker-paragraph breaks, buildup preservation, editorial reflection) were skipped under the cascade budget; running them now is a meaningful completion pass, not redundant work. Option 2 (stop and confirm) would be correct only if the re-run were purely redundant — it is not. The stale stitched_stale_since field is consistent with the truncation interpretation (incomplete phases = stitch not fully clean). The command body should surface the truncation note in its Phase 0 print block so the record is clear.
+trade-off: If the truncation note is wrong and Phases 2-7 did actually run fully, this becomes a seed-variance-only re-stitch — spend is wasted but there are no irreversible side effects (prior draft is overwritten but not unrecoverable). The truncation note + stale field together make the "phases were skipped" interpretation the correct prior.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0023 | 2026-05-26 | SLOW (reverses DEC-0022)
+
+question: New render-log evidence shows render-log-b01-c02.md (the current one) is the voice-exemplar-wired re-stitch that ran AFTER the budget-truncated pass memory.md line 2440 refers to. All phases completed. The basis for DEC-0022 (truncation note → meaningful completion pass) is factually wrong. Should the command proceed (Option 1: honor user's invocation as explicit re-run-for-variance), pull back and surface to user (Option 2), or clear the stale stitched_stale_since field only and not re-stitch (Option 3)?
+
+context: render-log-b01-c02.md records Phase 1 (3 scene-window forks, 47/47 bones rendered), Phases 2-6 (walked explicitly), Phase 7 (76-sentence sweep, 21 moves applied), Phase 8 (finalize + RECONCILE, 47 bones / 63 facets / 0 unrendered). Three render-log files exist for c02 (prior, revise, current) — the current one IS the fully-completed voice-exemplar-wired re-stitch, not the budget-truncated one. Memory.md line 2440 is stale (true of an older pass; not the current draft on disk). stitched_stale_since was never cleared after that re-stitch finalized. User input was "/and-stitch b01-c02:" with a trailing colon (typo-pattern). Cost of Option 1 with corrected picture: ~10 forks for seed-variance delta only on unchanged inputs.
+
+options:
+  Option 1: Proceed per DEC-0022 — treat invocation as explicit re-run-for-variance request
+  Option 2 (default): Pull back — flag to user that c02 is already fully stitched, ask if they meant something else (e.g. b01-c03)
+  Option 3: Clear stale stitched_stale_since only, surface state summary, do not re-stitch
+
+decision: Option 2 — pull back and surface to user. Do NOT run the re-stitch. Report the corrected state of c02 and ask if the intent was a different chapter (likely b01-c03).
+
+basis: reverses DEC-0022 on new factual evidence + goal:2 (cost discipline — ~10 forks for pure seed variance is not worth running without user intent confirmation) + methodology:3a (reversibility — re-stitching overwrites the current terminal draft; pulling back has zero irreversible cost)
+
+rationale: DEC-0022's single load-bearing basis was the truncation note at memory.md line 2440. The render-log evidence conclusively shows that note describes an earlier pass, not the current draft. With that basis removed, the corrected picture is: all phases ran, RECONCILE balanced, Chapter 2 is fresh-terminal. Running again is pure seed variance (~10 forks, draft overwrite, no new content). The trailing-colon typo pattern on the user's invocation reinforces that this may not be a deliberate re-run request. Option 2 costs zero model spend and surfaces the correct chapter state so the user can redirect to the actual next step (likely b01-c03, which has scene-*.draft.md files but no annotated draft and is plausibly the real target).
+
+trade-off: If the user did intend a variance re-run, Option 2 asks an extra confirmation question. That interruption cost is trivially lower than ~10 wasted forks plus overwriting a fresh-terminal draft the user may have wanted to preserve.
+
+reverses: DEC-0022
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0024 | 2026-05-26 | SLOW (process-critic)
+
+question: Third Phase 9 cold-read FAIL on b01-c02 (multi-arm tournament + full Phase 7 sweep). All three stitches returned CONTINUE=no. Does the recurring CONTINUE=no constitute a process signal beyond PROP-0007 — specifically: (a) a modify to Phase 9 cold-read protocol for non-opening chapters / dormancy-prefigure dramatic shapes, or (b) a structural issue with the and-substance chapter contract for b01c02?
+context: Three stitch passes, three CONTINUE=no verdicts: (1) 2026-05-25 original budget-truncated PASS-WITH-CAVEATS soft-override; (2) 2026-05-26 single-arm voice-exemplar-wired PASS-WITH-CAVEATS soft-override; (3) 2026-05-26 multi-arm tournament spec-strict FAIL (not soft-overridden). DEC-0021 returned OK on pass 2 (first occurrence, non-catastrophic, likely voice-prime regression driver). New evidence since DEC-0021: (a) multi-arm + Phase 1.5 taste rubric both passed per-scene criteria — the gate's own prose-quality instrument found improvement; (b) cold-reader on pass 3 is harsher ("ritualized abstraction did not give me a scene I could see"); (c) c03 Phase 9 cold-read returned PASS (CONTINUE=yes, jeopardy grounded) on a different dramatic shape (hinge). The b01c02 dormancy-prefigure dramatic_shape deliberately withholds named jeopardy, named antagonist offer, and prohibition-as-stakes to c03 per substance contract. Memory.md line 2492 explicitly annotates: "Chapter-internal failure modes (no jeopardy, no payoff, would-not-continue) are the c02 dramatic-shape, not a stitch defect." Phase 9 Step 2 exempts `frame-coda` chapters from the jeopardy FAIL condition; no exemption exists for `rising` with dormancy-prefigure contracts. PROP-0007 (compound-noun economy) is open and covers a distinct surface concern. No prior rejected or deferred proposal targets Phase 9 protocol or and-substance chapter contract for this failure class.
+options: n/a (process-critic mode: OK / OK-PRIOR-REJECTION / PROCESS-CHANGE-PROPOSED / ESCALATE)
+
+decision: OK — no new proposal warranted.
+basis: methodology:process-critic-recurrence-discipline (same-chapter replication ≠ cross-chapter recurrence; recurrence_count=1 for the pattern "Phase 9 CONTINUE=no on dormancy-prefigure chapter despite sound bones") + content-vs-process discrimination (the gate miss is design-intended collision, not a gate calibration gap that would benefit from a new exemption at this data count) + c03-counter-evidence (the pattern did not recur on the next chapter, which has different dramatic_shape and passed cleanly)
+rationale: |
+  Four reasons this finding does not warrant a proposal now.
+
+  1. RECURRENCE IS WITHIN-CHAPTER. All three CONTINUE=no fires are on b01-c02. DEC-0012 and DEC-0021
+     both apply the schema's discriminator: same-chapter replication is not cross-chapter recurrence.
+     A second chapter with a documented dormancy-prefigure contract that also FAILs cold-read would be
+     the cross-chapter recurrence that warrants a modify proposal against Phase 9 Step 2. b01-c02 is
+     still the only instance of the pattern.
+
+  2. C03 COUNTER-EVIDENCE. C03 Phase 9 cold-read returned PASS (CONTINUE=yes, jeopardy grounded)
+     on the same pipeline, same chain, different dramatic_shape (hinge vs. dormancy-prefigure). This
+     directly refutes the hypothesis that the gate is miscalibrated chain-wide. The failure is
+     chapter-specific. Memory.md note at line 2492 correctly diagnosed this at the first cold-read:
+     "Chapter-internal failure modes are the c02 dramatic-shape, not a stitch defect." Three cold-reads
+     and one counter-case later, that diagnosis holds.
+
+  3. PROPOSED CHANGE IS UNDER-CONSTRAINED AT N=1. The candidate process change — adding a
+     dormancy-prefigure exemption or a non-opening-chapter context assumption to Phase 9 Step 2 —
+     cannot be written precisely from a single data point without risking false-negative holes.
+     The exemption must discriminate "designed deferred stakes" from "actually under-delivering on
+     jeopardy," and that discriminator requires seeing what a false-positive exemption would look like.
+     A second dormancy-prefigure chapter is the minimum evidence for precise specification. Without it,
+     any exemption rule is speculative and could degrade gate integrity for future chapters.
+
+  4. THE GATE WORKED AS A SIGNAL, NOT AS A WRONG BLOCK. The spec-strict FAIL is technically correct
+     under Step 2 (CONTINUE=no + jeopardy=no on a non-frame-coda chapter). The operators correctly
+     diagnosed the design-intent collision every time and soft-overrode or accepted the FAIL as
+     appropriate. The gate did not block a chapter that should have shipped and did not pass a chapter
+     that should have been held. The absence of a dormancy-prefigure exemption produced correct
+     operator behavior (diagnose the shape; soft-override; advance). This is not a process failure;
+     it is the Phase 9 gate correctly surfacing a tension that the operator must resolve, which they did.
+
+  PROP-0007 (compound-noun economy at /and-write Phase 1 + Phase 6) remains the only open
+  process change from c02's failure evidence. It targets the prose-surface tic that postop Forks B+C
+  independently identified — a distinct finding from the cold-read jeopardy/continue failure class.
+
+  DEC-0021 is the first-occurrence marker. This decision extends the hold to the second presentation.
+  If a future chapter with a documented dormancy-prefigure or deferred-stakes dramatic_shape FAILs
+  Phase 9 cold-read despite sound bones, that cross-chapter recurrence is the trigger for a modify
+  proposal against Phase 9 Step 2 targeting the dormancy-shape exemption.
+trade-off: Not tracking the candidate proposal in process-proposals.md as a deferred entry. Mitigated
+  by: the decision log entry (DEC-0021 + this entry DEC-0024) serves as the first+second occurrence
+  marker; the change_type:modify against Phase 9 Step 2 can be drafted quickly on second cross-chapter
+  occurrence; the candidate spec language (dormancy-prefigure exemption + context-aware CONTINUE
+  qualification for non-opening chapters) is well-understood from these two dispatches and does not
+  need to be formally deferred to avoid losing the thread.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

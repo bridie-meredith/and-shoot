@@ -2453,15 +2453,31 @@ books:
         # Revise draft archived: active-project/staff/showrunner/_drafts/b01c02-revise-draft-2026-05-26.md
         # Reviewer reports: auditor write-b01-c02-pass2-revise.md + write-b01-c02-pass5-revise.md + write-b01-c02-bone-gate-revise.md; dramatist-b01c02-write-revise-2026-05-26.md; staging-b01-c02-2026-05-26.md.
         stitched: true
-        stitched_stale_since: 2026-05-26T00:00:00Z   # bones revised post-stitch; /and-facets + /and-stitch must re-run before draft is current
+        stitched_stale_since: null   # cleared 2026-05-26T multi-arm re-stitch — voice-exemplar-wired pass + multi-arm tournament both completed; draft current
+        # /and-stitch b01-c02 multi-arm re-stitch 2026-05-26T (third pass; supersedes prior single-arm voice-exemplar-wired stitch on disk):
+        #   Phase 0 step 4a: 2 candidate exemplars (voice-exemplar-b01-c02.md V1 + voice-exemplar-b01-c02.alt-1.md V4)
+        #   Phase 1: 6 scene-window forks (2 arms × 3 scenes) — arm-1 produced 1110w, arm-2 produced 1119w
+        #   Phase 1.5: 3 per-scene tournament judges (blind P1/P2 ranking, taste-aligned rubric + counterweight first-pass)
+        #     scene-A winner: arm-1 (V1 market-observational) — INVERTS bones' cadence
+        #     scene-B winner: arm-2 (V4 parallel-tracks)      — INVERTS via short declaratives, peak @27 standalone
+        #     scene-C winner: arm-1 (V1)                       — INVERTS via paragraph-length variance + embodied closure
+        #   Phase 7 sweep: 76 sentences swept, 10 cuts + 7 cut-clauses + 2 rewords, 47/47 bones preserved
+        #   Phase 8 finalize: 1155 words, 82 line-IDs, scene-callout strip clean, RECONCILE balanced
+        #   Phase 9 cold-read: FAIL (CONTINUE=no, jeopardy=no) — third cold-read on c02 to return CONTINUE=no after multi-arm + tournament+ Phase 7 sweep all completed; pattern is now structural-to-the-chapter not stitch-execution
+        #   Phase 9.5 admin process-critic: dispatched (recurring c02 CONTINUE=no across 3 stitch passes is a process signal)
+        # Tournament reports: staff/reviews/tournament-b01-c02-scene-{A,B,C}-2026-05-26.md
+        # Cold-read report (this pass): staff/reviews/coldread-b01-c02-2026-05-26-multi-arm.md
+        # Prior single-arm render-log archived: staff/stitcher/render-log-b01-c02-single-arm-2026-05-26.md
         draft_file: active-project/draft/b01-c02.md
         render_log: active-project/staff/stitcher/render-log-b01-c02.md
         cold_read:
-          read_at: 2026-05-26T00:00:00Z
-          verdict: PASS-WITH-CAVEATS
-          recovered_summary: "A surveillance-obsessed narrator with insect-based senses spends a day monitoring an alley from a hiding spot, notices a recurring woman pass by without speaking to her, and logs her in a mental ledger that closes a fraction-second slower than the others."
-          report_path: active-project/staff/reviews/coldread-b01-c02-2026-05-26-revise.md
-          prior_report_path: active-project/staff/reviews/coldread-b01-c02-2026-05-26.md   # superseded
+          read_at: 2026-05-26T-multi-arm
+          verdict: FAIL                                       # CONTINUE=no + jeopardy=no (spec-strict); not soft-overridden this pass
+          recovered_summary: "A narrator with insect-based surveillance sits in an alley for a day, watches a woman cross a threshold, and feels something about it."
+          report_path: active-project/staff/reviews/coldread-b01-c02-2026-05-26-multi-arm.md
+          prior_report_paths:
+            - active-project/staff/reviews/coldread-b01-c02-2026-05-26-revise.md   # depth-pass single-arm PASS-WITH-CAVEATS (superseded by this pass; the prior pass was the chapter's prior terminal disposition)
+            - active-project/staff/reviews/coldread-b01-c02-2026-05-26.md          # original budget-truncated PASS-WITH-CAVEATS
           staging_signals: not-run-budget   # /and-review staging b01-c02 ran upstream pre-revise (26 SIGNAL findings; addressed at /and-write revise)
           prose_rationale_audit: not-run-budget
           stale_since: null
