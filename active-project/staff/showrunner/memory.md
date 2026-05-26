@@ -2699,7 +2699,11 @@ books:
             stale_since: null
 
       - slug: b01c03
-        status: planned
+        status: scened
+        # /and-substance chapter b01c03 Phase 6 persist 2026-05-26
+        # Phase 5 review: pragmatic-accept under cascade-budget — math EXACT on all 4 axes vs chapter contract, scene_conflict populated with concrete forces, dramatic-shape hinge honored, cost-ledger anchors valid. Skipped 3-fork audience review for budget; carries advisory soft-watch to /and-postop.
+        # pl-2026-05-25-001 RESOLVED at Phase 0 contract correction + persisted at Phase 6 (cl01b +1.0 social_tether-prot-rise anchored at b01c03s01).
+        # Draft archived: active-project/staff/showrunner/_drafts/b01c03-draft-2026-05-26.md
         chunk: |
           Otto Hightower makes first contact through Jarvis Coin, a courier Taylor has seen
           in the lower city — not a summons, an observation: he knows what she did at the
@@ -2783,6 +2787,117 @@ books:
             - "Otto: leverage rank 2.5; waiting"
             - "Jarvis: active conduit"
           target_chapter: b01c04
+        scenes:
+          - slug: b01c03s01
+            chunk: |
+              [force: Taylor's street-discipline in the open market] has a shape she relies on: move slow, carry nothing worth taking, read the ward before anyone reads her. She is working the morning market in the Hook — not buying, reading — when [event: Jarvis Coin addresses Taylor by the description of what she did at the rescue] without preamble, without raising his voice. He does not say her name. He says: the foreign woman who cleared the crowd near Butcher's Lane on the day the Mudway child ran fever. Taylor goes still.
+              [image: Jarvis Coin — unremarkable in the crowd, the stillness of someone who has waited at a particular stall for longer than commerce requires; his eyes on her before she processed him as a presence]. He does not step closer. The distance between them is the distance of a street-side negotiation, unremarkable to anyone passing. He knows she has been running coverage in the Hook: [mechanism: Jarvis names the scope and shape of Taylor's insect-feed deployment] — not the mechanism, not the insects — but the pattern that the mechanism produces: who moves, where the sick cluster, which alley-junctions she reads twice in a morning. The feed's ghost, reconstructed from its behavioral shadow.
+              [force: the precision of address as the leverage being demonstrated] lands before Taylor can classify it as threat or offer: he has her pattern read accurately enough that the contact itself is proof of capability, not merely an announcement of intention. [event: Taylor recognizes she has been under observation] — the coverage map she has been running has a mirror she did not build. He does not explain who he works for. He says: there is a person who has an interest in what she knows, and would like to put a question to her. He names no names, no titles, no ward.
+              [event: social_tether-prot-rise account completes cl01b court-layer half] — the rescue at Butcher's Lane, witnessed and filed, has traveled upward through Jarvis to a patron-layer Taylor has not yet been told the name of. The tether she thought was street-level has a second floor she did not know about. She asks where and when. [mechanism: Taylor agrees to a location and time before she has decided whether to attend] — the street-discipline that governs her does not break under surprise; she agrees because refusing in an open market tells the watcher more than agreeing does. She does not look at him when she answers.
+            substance_delta:
+              axes_in_motion:
+                - axis: social_tether-prot-rise
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl01b
+                  notes: "cl01b court-layer half settles here: Otto's awareness of the b01c01 rescue via the Jarvis-courier vector is the second floor of the tether Taylor thought was street-only; completes the +2 cl01b gain that opened at b01c01s03"
+                - axis: social_tether-antag
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl-antag-d03
+                  notes: "Otto now has an actionable contact; cl-antag-d03 partial open; lever embryonic but in-hand"
+                - axis: position-prot-rise
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl02
+                  notes: "Taylor named-by-courier; no longer anonymous at courier-tier; cl02 partial gain"
+              axes_held:
+                - axis: capability
+                  rationale: "no new deployment; contact, not operation"
+                - axis: moral_framework
+                  rationale: "no proposal received; prohibition not yet a variable; framework holds at pre-engagement rank"
+                - axis: relational_anchor_status
+                  rationale: "Wren not part of this contact layer; anchor at rank 2"
+                - axis: political_register-prot
+                  rationale: "no court-register content through feed; resentment has no material"
+              density_target: 0.6-0.7
+            scene_conflict:
+              protagonist_force: "Taylor maintaining street-discipline — agrees to a time and location without signaling whether she will attend, because refusal in the open is a form of acknowledgment"
+              opposing_force: "Jarvis's precision of address — the coverage pattern he names back to Taylor is accurate enough that the contact itself is the leverage being demonstrated; her anonymity is already spent"
+              stakes_axis: social_tether-prot-rise
+            stale_since: null
+
+          - slug: b01c03s02
+            chunk: |
+              The meeting place is a cooper's yard off Eel Alley — no foot traffic past the third bell, no clear sightlines from the lane-mouth. Taylor is there before Jarvis. [force: Taylor's discipline of arriving early] — she reads the yard with the feed before she enters it, maps the two workers still coopering at the near shed, the boy clearing hoops at the far end. Jarvis arrives at the third bell. He has no document, no letter, no seal. He delivers the proposal in plain Westerosi with the cadence of someone who has delivered plain proposals before.
+              [event: Jarvis names Otto Hightower as the patron] — the Hand who was, the man who still runs channels the Small Council does not audit. Taylor registers the name and does not react to it. [mechanism: Jarvis delivers the intelligence terms] — movement patterns in the wards below Rhaenys's Hill, sickness clustering in the seasons before winter-pressure, which junctions run agitated and which run quiet in the weeks around court decisions. Information Taylor is already running. Routed upward through Jarvis at a frequency and detail she would determine. [event: Jarvis names Sera Hightower and the succession exposure] — a court-tier ward in the Queen Consort's household, legitimacy question latent but surfaceable inside three months through a mechanism Jarvis names in one sentence. The shielding is real. Jarvis does not oversell it.
+              [force: the proposal's accuracy as the opposing pressure] — Taylor runs the accounting while he speaks and the problem is that the accounting works: the ward Jarvis names is genuinely at risk; the intelligence she would route is intelligence she is already running; the mechanism of shielding is one Otto Hightower can operationalize. [image: the prohibition as a variable in a calculation] — not a fence she is approaching but a term on one side of a ledger where the other side has a named cost attached to refusal. [event: Taylor acknowledges she has understood the terms] — she does not say yes or no; she says she has heard them. [mechanism: moral_framework engages the prohibition as a calculation rather than a fence] — the proposal is accurate enough that it cannot be refused on the grounds of inaccuracy, cannot be refused on the grounds of inadequate stakes, cannot be filed under harm-reduction and closed.
+              [event: social_tether-antag full leverage articulated] — the trade-shape exists now as a specific named exchange in the world; Otto has the shape of what Taylor knows; she knows the shape of what he can provide; the lever is no longer embryonic. It has a named ward on one end.
+            substance_delta:
+              axes_in_motion:
+                - axis: social_tether-antag
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl-antag-d03
+                  notes: "full leverage articulated: terms named on both sides; trade-shape exists as a specific named exchange; cl-antag-d03 second tranche"
+                - axis: moral_framework
+                  direction: down
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl02
+                  notes: "prohibition now a variable in a calculation: Taylor acknowledges the terms; not yet breached but no longer purely operative as a fence; cl02 partial cost-side"
+              axes_held:
+                - axis: capability
+                  rationale: "no new deployment; proposal not accepted"
+                - axis: position-prot-rise
+                  rationale: "no new position movement; terms named but not accepted; opened at s01, does not move further here"
+                - axis: social_tether-prot-rise
+                  rationale: "settled at scene 1 via cl01b; no further movement"
+                - axis: relational_anchor_status
+                  rationale: "Wren outside the proposal calculus by contract; anchor at rank 2"
+                - axis: political_register-prot
+                  rationale: "proposal delivered in plain register; no court-feed observation content; resentment has no material"
+              density_target: 0.7-0.8
+            scene_conflict:
+              protagonist_force: "the discipline that reading-is-not-directing demands refusal of any arrangement that routes her knowledge upward through a patron-chain"
+              opposing_force: "the proposal's accuracy — Sera is named and genuinely at risk, the intelligence Taylor would route is intelligence she is already running, and refusal costs a court-tier life Taylor could prevent losing; the ledger opens on both sides with the same weight"
+              stakes_axis: moral_framework
+            stale_since: null
+
+          - slug: b01c03s03
+            chunk: |
+              Jarvis is still. He has delivered the proposal; he does not add to it. The cooper's yard has the same workers, the same hoop-stacking boy at the far end, the same tallow-damp from the lane-caulking two alleys over. [force: Taylor's discipline of not-deciding-under-pressure] — the rule she has kept since arriving in King's Landing, since before that, since the last time she made a decision under pressure at scale. She does not decide when pressed. She says: [event: Taylor asks for a day].
+              Jarvis considers her for a beat — [image: the beat in which a courier registers that the answer was not refusal] — and says he will return at the same place at the first bell on the day after. He does not ask why she needs a day. He does not appear relieved or disappointed. He leaves the yard with the same unhurried movement he arrived with.
+              Taylor does not move immediately. She holds the position she has held since he began the proposal: back to the shed wall, clear line to the yard-mouth, feed running on the barrel-workers and the boy. [mechanism: the act of asking for a day as engagement rather than refusal] — Taylor does not say she will not come back. She does not say she will not accept. She says she needs time to think, and the form of what she has said is not the form of refusal. [event: moral_framework prohibition price-tagged for the first time] — the fence has a price on the other side of it. [force: the chapter's hinge — the act of asking for a day IS the engagement; refusal-as-form is no longer available now that the terms have been spoken and acknowledged and deferred rather than refused].
+              [event: Taylor does the accounting before she leaves the yard] — not calculating whether to accept, but running the perimeter: capability as already running, the ward as real, the coverage as already there. She is doing the work. She has been doing the work. The proposal is asking her to name it to someone else. [event: position-prot-rise registers Taylor's response as decision-pending] — not refusal; the patron has registered an engaged interlocutor. Taylor leaves the yard. [image: the coverage map and the open ledger line as the same thing, in the same place, requiring the same answer].
+            substance_delta:
+              axes_in_motion:
+                - axis: moral_framework
+                  direction: down
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl02
+                  notes: "prohibition price-tagged: asking for a day is engagement, not refusal; the chain is started; cl02 second tranche cost-side"
+                - axis: position-prot-rise
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl02
+                  notes: "Otto registers response as decision-pending, not refusal; Taylor named-function at courier-tier representing court; cl02 second tranche gain-side"
+              axes_held:
+                - axis: capability
+                  rationale: "no new deployment; accounting is mental, not operational"
+                - axis: relational_anchor_status
+                  rationale: "Wren outside proposal calculus; anchor at rank 2; contract holds through chapter close"
+                - axis: social_tether-prot-rise
+                  rationale: "settled at scene 1; no further movement through chapter close"
+                - axis: social_tether-antag
+                  rationale: "no new leverage; existing tether holds at scene-2 magnitude; deferred answer does not extend or retract the lever"
+                - axis: political_register-prot
+                  rationale: "no insect-feed court content; Taylor in a cooper's yard running internal accounting; resentment has no material"
+              density_target: 0.6-0.7
+            scene_conflict:
+              protagonist_force: "Taylor's discipline of not-deciding-under-pressure — buys a day to think rather than accepting or refusing on the courier's time"
+              opposing_force: "the chapter's hinge — asking for a day is itself the engagement; refusal-as-form is no longer available now that the terms have been spoken, acknowledged, and deferred; the prohibition has been price-tagged and the ledger cannot un-open"
+              stakes_axis: moral_framework
+            stale_since: null
 
       - slug: b01c04
         status: planned
