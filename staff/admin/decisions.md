@@ -550,3 +550,65 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0024 | 2026-05-26 | SLOW (process-critic)
+
+question: Third Phase 9 cold-read FAIL on b01-c02 (multi-arm tournament + full Phase 7 sweep). All three stitches returned CONTINUE=no. Does the recurring CONTINUE=no constitute a process signal beyond PROP-0007 — specifically: (a) a modify to Phase 9 cold-read protocol for non-opening chapters / dormancy-prefigure dramatic shapes, or (b) a structural issue with the and-substance chapter contract for b01c02?
+context: Three stitch passes, three CONTINUE=no verdicts: (1) 2026-05-25 original budget-truncated PASS-WITH-CAVEATS soft-override; (2) 2026-05-26 single-arm voice-exemplar-wired PASS-WITH-CAVEATS soft-override; (3) 2026-05-26 multi-arm tournament spec-strict FAIL (not soft-overridden). DEC-0021 returned OK on pass 2 (first occurrence, non-catastrophic, likely voice-prime regression driver). New evidence since DEC-0021: (a) multi-arm + Phase 1.5 taste rubric both passed per-scene criteria — the gate's own prose-quality instrument found improvement; (b) cold-reader on pass 3 is harsher ("ritualized abstraction did not give me a scene I could see"); (c) c03 Phase 9 cold-read returned PASS (CONTINUE=yes, jeopardy grounded) on a different dramatic shape (hinge). The b01c02 dormancy-prefigure dramatic_shape deliberately withholds named jeopardy, named antagonist offer, and prohibition-as-stakes to c03 per substance contract. Memory.md line 2492 explicitly annotates: "Chapter-internal failure modes (no jeopardy, no payoff, would-not-continue) are the c02 dramatic-shape, not a stitch defect." Phase 9 Step 2 exempts `frame-coda` chapters from the jeopardy FAIL condition; no exemption exists for `rising` with dormancy-prefigure contracts. PROP-0007 (compound-noun economy) is open and covers a distinct surface concern. No prior rejected or deferred proposal targets Phase 9 protocol or and-substance chapter contract for this failure class.
+options: n/a (process-critic mode: OK / OK-PRIOR-REJECTION / PROCESS-CHANGE-PROPOSED / ESCALATE)
+
+decision: OK — no new proposal warranted.
+basis: methodology:process-critic-recurrence-discipline (same-chapter replication ≠ cross-chapter recurrence; recurrence_count=1 for the pattern "Phase 9 CONTINUE=no on dormancy-prefigure chapter despite sound bones") + content-vs-process discrimination (the gate miss is design-intended collision, not a gate calibration gap that would benefit from a new exemption at this data count) + c03-counter-evidence (the pattern did not recur on the next chapter, which has different dramatic_shape and passed cleanly)
+rationale: |
+  Four reasons this finding does not warrant a proposal now.
+
+  1. RECURRENCE IS WITHIN-CHAPTER. All three CONTINUE=no fires are on b01-c02. DEC-0012 and DEC-0021
+     both apply the schema's discriminator: same-chapter replication is not cross-chapter recurrence.
+     A second chapter with a documented dormancy-prefigure contract that also FAILs cold-read would be
+     the cross-chapter recurrence that warrants a modify proposal against Phase 9 Step 2. b01-c02 is
+     still the only instance of the pattern.
+
+  2. C03 COUNTER-EVIDENCE. C03 Phase 9 cold-read returned PASS (CONTINUE=yes, jeopardy grounded)
+     on the same pipeline, same chain, different dramatic_shape (hinge vs. dormancy-prefigure). This
+     directly refutes the hypothesis that the gate is miscalibrated chain-wide. The failure is
+     chapter-specific. Memory.md note at line 2492 correctly diagnosed this at the first cold-read:
+     "Chapter-internal failure modes are the c02 dramatic-shape, not a stitch defect." Three cold-reads
+     and one counter-case later, that diagnosis holds.
+
+  3. PROPOSED CHANGE IS UNDER-CONSTRAINED AT N=1. The candidate process change — adding a
+     dormancy-prefigure exemption or a non-opening-chapter context assumption to Phase 9 Step 2 —
+     cannot be written precisely from a single data point without risking false-negative holes.
+     The exemption must discriminate "designed deferred stakes" from "actually under-delivering on
+     jeopardy," and that discriminator requires seeing what a false-positive exemption would look like.
+     A second dormancy-prefigure chapter is the minimum evidence for precise specification. Without it,
+     any exemption rule is speculative and could degrade gate integrity for future chapters.
+
+  4. THE GATE WORKED AS A SIGNAL, NOT AS A WRONG BLOCK. The spec-strict FAIL is technically correct
+     under Step 2 (CONTINUE=no + jeopardy=no on a non-frame-coda chapter). The operators correctly
+     diagnosed the design-intent collision every time and soft-overrode or accepted the FAIL as
+     appropriate. The gate did not block a chapter that should have shipped and did not pass a chapter
+     that should have been held. The absence of a dormancy-prefigure exemption produced correct
+     operator behavior (diagnose the shape; soft-override; advance). This is not a process failure;
+     it is the Phase 9 gate correctly surfacing a tension that the operator must resolve, which they did.
+
+  PROP-0007 (compound-noun economy at /and-write Phase 1 + Phase 6) remains the only open
+  process change from c02's failure evidence. It targets the prose-surface tic that postop Forks B+C
+  independently identified — a distinct finding from the cold-read jeopardy/continue failure class.
+
+  DEC-0021 is the first-occurrence marker. This decision extends the hold to the second presentation.
+  If a future chapter with a documented dormancy-prefigure or deferred-stakes dramatic_shape FAILs
+  Phase 9 cold-read despite sound bones, that cross-chapter recurrence is the trigger for a modify
+  proposal against Phase 9 Step 2 targeting the dormancy-shape exemption.
+trade-off: Not tracking the candidate proposal in process-proposals.md as a deferred entry. Mitigated
+  by: the decision log entry (DEC-0021 + this entry DEC-0024) serves as the first+second occurrence
+  marker; the change_type:modify against Phase 9 Step 2 can be drafted quickly on second cross-chapter
+  occurrence; the candidate spec language (dormancy-prefigure exemption + context-aware CONTINUE
+  qualification for non-opening chapters) is well-understood from these two dispatches and does not
+  need to be formally deferred to avoid losing the thread.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
