@@ -2483,6 +2483,25 @@ books:
             resolved_at: 2026-05-26T00:00:00Z
             resolved_outcome: PASS-WITH-CAVEATS (depth-pass goals met at prose layer; structural chapter-shape unchanged by design)
         depth_pass_pending: false   # cleared 2026-05-26 — depth pass executed and resolved.
+        postop:
+          ran_at: 2026-05-26T00:00:00Z
+          mode: routine
+          context: post-c03-ship   # ran AFTER c03 cascade complete, per user recommendation "depth-of-quality review in c03 context after c03 lands"
+          personas_used: [worm-canon-pedant]
+          reports:
+            - active-project/staff/reviews/substance-delivery-b01-c02-2026-05-26-postop.md
+            - active-project/staff/reviews/pleasure-read-b01-c02-2026-05-26-postop.md
+            - active-project/staff/reviews/audience-worm-canon-pedant-b01-c02-2026-05-26-postop.md
+          fork_verdicts:
+            substance_delivery: DELIVERED (zero SHORTFALLs; 16/16 opposing-force bones prose-stage; c02→c03 setup CLEAN)
+            pleasure_read: machinery-voice — 5 paragraphs of real prose buried under compound-noun tic recycling; chapter ledger-closing reads as cadence-substituting-for-content; marginal want-next driven by italic opener's stakes promise
+            worm_canon_pedant: FINISHED + want-c+1; no Threshold Discipline fires; compound saturation noted ("threshold-stones" approaching term-of-art saturation)
+          convergence:
+            pattern: divergent
+            note: |
+              Substance DELIVERED clean (Fork A), but two of three prose-layer reads (B + C) converge on compound-noun saturation pattern. Pattern names: "ward-junction" / "fever-cluster" / "threshold-stones" / "insects returned the X" recycling. Diagnosed at prose-surface layer NOT substance layer. The depth-pass succeeded at prose-grounding (per cold-read improvements vs prior c02) but introduced compound-noun saturation as new prose-surface signal.
+              Recommended action: NONE for c02 itself (chapter ships terminal). Pattern noted for future bones authoring and stitcher discipline. Worth admin process-critic consideration for compound-noun-density check at Phase 7 sweep or scene-window fork variance discipline.
+          admin_process_critic: PENDING_DISPATCH
         chunk: |
           In the days after the rescue, Taylor maps the Hook precinct systematically for the
           first time — not feeding anyone, but running coverage to understand who is sick, who
