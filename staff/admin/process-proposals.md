@@ -985,6 +985,137 @@ supersedes: null
 
 ---
 
+## PROP-0007
+
+```yaml
+id: PROP-0007
+created_at: 2026-05-26T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: postop
+  source_report: active-project/staff/reviews/pleasure-read-b01-c02-2026-05-26-postop.md + active-project/staff/reviews/audience-worm-canon-pedant-b01-c02-2026-05-26-postop.md
+  source_verdict: postop-convergence:divergent (Fork A substance DELIVERED clean; Forks B+C converge on compound-noun saturation prose-surface tic)
+target:
+  type: command
+  path: .claude/commands/and-write.md
+  section: "Phase 1 — Scene-decomposition step 5 (SVO discipline) + Phase 6 HARD/SIGNAL classification table"
+change_type: modify
+rationale: |
+  Two independent postop reports (Fork B naive cold-read + Fork C worm-canon-pedant) converge
+  on compound-noun saturation as a prose-surface tic in b01c02. Fork B: "compound-hyphenated
+  nouns ('ward-junction,' 'fever-cluster,' 'threshold-count,' 'junction-signature') at five per
+  paragraph numb the ear." Fork C: "'threshold-stones' appearing four times in the first half
+  threatens to become a term-of-art rather than a description." This is confirmed recurrence:
+
+    Occurrence 1 — pl-2026-05-25-013 (b01c01 /and-stitch Phase 9 cold-read): "prose dense with
+    hyphen-compound nouns (angle-wall, lane-mouth, chin-lift)... I had to reread the middle
+    three times to confirm an event was happening." Filed as SOFT parking-lot item at first
+    occurrence.
+
+    Occurrence 2 — b01c02 postop Forks B + C (this dispatch): independent convergence from two
+    readers across a chapter revised specifically to add substance-grounding. The depth-pass
+    succeeded at substance delivery (Fork A: all 12 dimensions DELIVERED) but introduced
+    compound-noun saturation as a new prose-surface tic. The bones authored at /and-write
+    revise --from-signals contain many compound-noun tokens by design; the stitcher renders them
+    faithfully under the bone-faithfulness fence and Q9 cannot touch them. From and-stitch.md
+    Phase 7/Phase 1 scene-window Q9 anti-jargon rule: "Q9 hits in bones themselves are upstream
+    faults: emit FAULT-BONE-AUDIT-MISS and render the bone as-is — Phase 7 cannot REWORD a
+    bone-content compound without violating bone-faithfulness."
+
+  The root cause is upstream: the screen-writer at Phase 1 has no guidance about compound-noun
+  economy in SVO authoring, and Phase 6 has no AP-SCAN check for compound-noun density per
+  bone-cluster. Every compound noun the bone-author introduces in a bone's SVO subject/object
+  appears verbatim in the rendered draft; there is no downstream gate capable of thinning them
+  without violating bone-faithfulness.
+
+  This is a process gap at /and-write Phase 1 (authoring guidance absent) + Phase 6 (AP-SCAN
+  absent). Options (a) Phase 7 Q9 tightening and (b) /and-stitch Phase 1 variance discipline
+  are both structurally unable to fix bone-authored compound nouns and are not proposed.
+
+  Note on content-architecture tension: compound nouns are not categorically bad for this
+  project's surveillance-architecture vocabulary — `ward-junction`, `fever-cluster`,
+  `junction-lane` are load-bearing terms that enact the feed-geography the substance contract
+  requires. The problem is aggregate density: the same 3-4 roots (`junction`, `fever`,
+  `threshold`) recycled across 47 bones saturate the paragraph-level register. The proposed
+  check targets recycling density, not raw compound-noun count.
+evidence_refs:
+  - "active-project/staff/reviews/pleasure-read-b01-c02-2026-05-26-postop.md — §4 Voice: 'Compound-hyphenated nouns at five per paragraph numb the ear'; §2 attention drift: 60 lines of compound-noun tic-recycling"
+  - "active-project/staff/reviews/audience-worm-canon-pedant-b01-c02-2026-05-26-postop.md — §4 Disliked: 'threshold-stones appearing four times in the first half threatens to become a term-of-art'"
+  - "active-project/staff/showrunner/parking-lot.md — pl-2026-05-25-013 (b01c01 /and-stitch Phase 9 cold-read: 'prose dense with hyphen-compound nouns'; filed SOFT at first occurrence, status: open)"
+  - ".claude/commands/and-stitch.md — Phase 7 / scene-window §Q9 anti-jargon: 'Q9 hits in bones themselves are upstream faults: emit FAULT-BONE-AUDIT-MISS; render as-is — Phase 7 cannot REWORD without violating bone-faithfulness'"
+  - ".claude/commands/and-write.md — Phase 6 HARD/SIGNAL table: 'register-as-mannerism (verb-object pair ≥3 occurrences)' — existing analog this change extends"
+recurrence_count: 2
+proposed_diff: |
+  CHANGE 1 — .claude/commands/and-write.md, Phase 1 step 5 (SVO discipline):
+
+  After the existing bullet "Author with full SVO discipline. Speech bones use `speaks to` form."
+  add:
+
+    **Compound-noun economy.** Hyphenated compound nouns in SVO subjects and objects
+    (e.g. `ward-junction`, `fever-cluster`, `junction-lane`) appear verbatim in rendered
+    prose under the bone-faithfulness fence — the stitcher cannot thin them. Ration compound
+    nouns to the 2-3 per scene that are most load-bearing for the architecture or substance
+    contract. For remaining spatial/object references, prefer simple English nouns or
+    definite-article forms where unambiguous in context (`the junction`, `the corner`,
+    `the lane`). A paragraph-cluster of 4+ distinct hyphenated compound nouns signals
+    over-nomination; the screen-writer should prefer the load-bearing 1-2 and simplify
+    the rest.
+
+  CHANGE 2 — .claude/commands/and-write.md, Phase 6 HARD/SIGNAL classification table:
+
+  Add one new SIGNAL entry (after `register-as-mannerism`) in the SIGNAL row:
+
+    | compound-noun-density-per-cluster: count of distinct hyphenated compound
+    nouns appearing across any 5-consecutive-bone window in the scene exceeds 3
+    (i.e. ≥4 distinct compound nouns in a rolling 5-bone window) | SIGNAL |
+
+  Disposition: SIGNAL (records, passes). The auditor reports: "compound-noun density SIGNAL:
+  bones @<A>–@<B> contain <N> distinct hyphenated compound nouns in a 5-bone window
+  (<list them>). Consider simplifying 1-2 to natural English." The bone-author may accept
+  (SIGNAL graduates to HARD on second chapter-level occurrence across the project) or
+  remediate in revise mode.
+
+  SCOPE NOTE:
+
+  This check applies only to compound nouns in bone SVO subjects and objects — the `subject`
+  and `object` fields of the bones file. It does not apply to cost_ledger_anchor slugs, axis
+  names, or actor slugs. The intent is compound-noun density as perceived by a reader of
+  rendered prose, not metadata density.
+
+  "Distinct" means unique hyphenated-noun tokens, not unique roots. `ward-junction` and
+  `junction-lane` are two distinct tokens even though they share the `junction` root; but
+  `ward-junction` appearing five times across 5 bones counts as 1 distinct token. Recycling
+  of the same token is a separate concern addressed by the existing `register-as-mannerism`
+  SIGNAL for verb-object pair recurrence — the two checks are complementary, not redundant.
+
+  THRESHOLD CALIBRATION NOTE:
+
+  The 5-bone window / ≥4 distinct tokens threshold is calibrated against b01c02's evidence:
+  Fork B named "five per paragraph" as the point of ear-numbing. A 5-bone window approximates
+  a rendered paragraph in scene-window mode. ≥4 (not ≥5) gives one bone of headroom for a
+  chapter with unusually high architectural vocabulary load. If the threshold produces false
+  positives on c03+ chapters that are not prose-surface concerns, adjust to ≥5 before
+  graduating the SIGNAL to HARD.
+
+  PARKING-LOT CROSS-REFERENCE:
+
+  pl-2026-05-25-013 points its resolution_suggestion at "future spec edit on stitcher persona /
+  Phase 7 Q9 rubric" — that target is the wrong layer. If this proposal is accepted,
+  pl-2026-05-25-013's resolution_suggestion should be re-stamped to point at /and-write Phase 1
+  + Phase 6 instead, and the item stamped resolved_by this proposal's implementation. The
+  parking-lot item remains open pending implementation.
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
 ## PROP-0001
 created_at: 2026-05-26T00:05:43Z
 created_by: admin process-critic

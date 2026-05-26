@@ -435,6 +435,24 @@ methodology-update-proposed: no
 
 ---
 
+## DEC-0019 | 2026-05-26 | SLOW (process-critic)
+
+question: b01c02 postop-convergence:divergent — Fork A substance DELIVERED, Forks B+C converge on compound-noun saturation tic. Does the process need a proposal? Options: (a) Phase 7 Q9 tightening, (b) /and-stitch Phase 1 scene-window variance discipline, (c) /and-write Phase 6 AP-SCAN for compound-noun density in bone SVOs, (d) wait for c03+c04 recurrence.
+context: Second occurrence of compound-noun density pattern. Occurrence 1: pl-2026-05-25-013 from b01c01 cold-read ("prose dense with hyphen-compound nouns"). Occurrence 2: b01c02 postop Forks B+C ("compound-hyphenated nouns at five per paragraph numb the ear"; "threshold-stones approaching term-of-art saturation"). Fork A (substance-delivery): DELIVERED clean across all 12 dimensions; c02->c03 setup CLEAN. The depth-pass produced the density problem — bones authored to ground substance also introduced compound-noun saturation the stitcher faithfully rendered. No downstream gate can thin bone-content compound nouns: Q9 explicitly emits FAULT-BONE-AUDIT-MISS on bone-content compounds and renders as-is to preserve bone-faithfulness. The existing `register-as-mannerism` SIGNAL in Phase 6 covers verb-object pair recurrence (≥3 occurrences) — compound-noun cluster density is an analog that falls in the same table.
+options: (a) Phase 7 Q9 — structurally ineffective (bone-faithfulness fence); (b) /and-stitch Phase 1 variance — wrong layer (rendering choice, not authoring gap); (c) /and-write Phase 1 + Phase 6 — correct root; (d) wait — overcautious given recurrence count 2 across independent chapters
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0007
+basis: recurrence-count-2 (Rule 11 recurrence threshold cleared — pl-2026-05-25-013 c01 + b01c02 postop c02 are independent chapters) + gate-absence discriminator (/and-write Phase 1 has no compound-noun economy guidance; Phase 6 has no compound-noun density AP-SCAN; modify correct change_type because the existing `register-as-mannerism` SIGNAL is the structural analog) + methodology:3a (reversibility — SIGNAL disposition; HARD only on second project-level occurrence) + methodology:3c (blast radius — two sentences in one command body; S cost)
+rationale: The compound-noun saturation failure has a precise causal chain: screen-writer authors compound-noun SVOs at Phase 1 → stitcher renders them verbatim under bone-faithfulness fence → Q9 cannot touch them. No downstream gate is structurally capable of fixing this without violating bone-faithfulness. The correct gates are Phase 1 (authoring guidance) and Phase 6 (AP-SCAN). Options (a) and (b) are ruled out on structural grounds, not just preference. Option (d) would be correct at recurrence_count=1; at recurrence_count=2 across independent chapters the first-occurrence hold is released per Rule 11. The proposed SIGNAL threshold (≥4 distinct compound nouns in a 5-bone window) is calibrated to Fork B's specific language ("five per paragraph") and matches the existing pattern for `register-as-mannerism`. Cost S; SIGNAL disposition is conservative and reversible.
+trade-off: Proposing at recurrence_count=2 rather than waiting for c03/c04 confirmation. Accepted: Rule 11 explicitly names recurrence_count≥2 across independent invocations as the proposal threshold; the evidence is reader-convergent, not a single taste flag; the proposed change is S-cost and SIGNAL-disposition with adjustment path if thresholds prove wrong.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0015 | 2026-05-26 | SLOW (process-critic amendment)
 
 question: Amend DEC-0013 / PROP-0003: cold-read experiment shows matched exemplar passage (v16) beats persona-description prime (v14), and mismatched exemplar (v17) leaks surface conventions. Asset format must change from persona-card description section to standalone exemplar passage file.

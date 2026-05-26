@@ -2501,7 +2501,13 @@ books:
             note: |
               Substance DELIVERED clean (Fork A), but two of three prose-layer reads (B + C) converge on compound-noun saturation pattern. Pattern names: "ward-junction" / "fever-cluster" / "threshold-stones" / "insects returned the X" recycling. Diagnosed at prose-surface layer NOT substance layer. The depth-pass succeeded at prose-grounding (per cold-read improvements vs prior c02) but introduced compound-noun saturation as new prose-surface signal.
               Recommended action: NONE for c02 itself (chapter ships terminal). Pattern noted for future bones authoring and stitcher discipline. Worth admin process-critic consideration for compound-noun-density check at Phase 7 sweep or scene-window fork variance discipline.
-          admin_process_critic: PENDING_DISPATCH
+          admin_process_critic:
+            verdict: PROCESS-CHANGE-PROPOSED
+            proposal_id: PROP-0007
+            dec_id: DEC-0019
+            summary: |
+              compound-noun economy at /and-write Phase 1 + 6 (authoring guidance + new SIGNAL-class AP-SCAN entry for ≥4 distinct hyphenated compounds in 5-bone rolling window, analog to register-as-mannerism). Recurrence_count 2: pl-2026-05-25-013 (c01) + b01c02 postop Forks B+C convergent. Root cause located at /and-write (bone-content); /and-stitch cannot fix bone-authored compounds under bone-faithfulness fence.
+              Principal triage required to implement; pl-2026-05-25-013 to be re-stamped resolved on implementation.
         chunk: |
           In the days after the rescue, Taylor maps the Hook precinct systematically for the
           first time — not feeding anyone, but running coverage to understand who is sick, who
