@@ -1,46 +1,39 @@
-# bones — b01c01 (R2 in-flight: feeling-taylor-hebert-kl-122ac)
-# cascade-source: active-project/theater/proto-lines/b01-c01.md
-# cite-index-hash: 0241e0529031804fa83d25c0fb7a5e0db2491571d2d83d9d9436c734627eca40
-# r2-judge: feeling (Taylor slice, fresh fork)
-# date: 2026-05-25
-#
-# Cascade summary:
-#   - feel:2 @10 (Taylor's slice entry 1): KEEP — no citation change
-#   - feel:3 @24 (Taylor's slice entry 2): REVISE — somatic-tell rewritten; citation at @24 retained (revise does not strip)
-#   - No ADDs; no DELETEs; no citations stripped or added.
+# bones — b01c02
 
-episode: b01c01
+episode: b01c02
 narrator: taylor-hebert-kl-122ac
-goal: Show the audience Taylor's first act of control in King's Landing — the instinct that survives every prohibition — and plant the witch-label and Wren's presence before either becomes legible as costs.
-cast: taylor-hebert-kl-122ac, oswyn-mudway-flea-bottom-elder, wren-stitch-maker-flea-bottom-ward
-locations:
-prior_episode: none
-aggregate_range: 1-27
+goal: Show the audience Taylor's first self-constructed surveillance map and the moment she recognizes what it is — then files it and continues — so the pattern is visible before any patron arrives to name it.
+cast: taylor-hebert-kl-122ac
+locations: oc-stitch-house-lane
+prior_episode: b01c01
+aggregate_range: 1-29
 
-1 the drain water threads the angle-gap [exposition:5]
-2 the tallow smoke crosses the stitch-house lane [sensory:1]
-3 taylor-hebert-kl-122ac holds the feet [mem:1]
-4 the insects swell [narrator:1]
-5 the angle-wall narrows the lane
-6 taylor-hebert-kl-122ac exhales
-7 the fish-cart blocks the lane [exposition:6]
-8 the ground transmits the child's breath [narrator:2]
-9 the crowd compresses
-10 taylor-hebert-kl-122ac holds the feet [feel:2]
-11 the lane-mouth presses the crowd [narrator:3]
-12 the insects propagate [narrator:4] [state:1] [state:2] [vibes:3] [vibes:4] [vibes:8]
-13 the nearest dozen bodies yield
-14 the gap propagates
-15 taylor-hebert-kl-122ac faces the child
-16 taylor-hebert-kl-122ac raises the voice [sensory:2] [taylor-hebert-kl-122ac:1] [taylor-hebert-kl-122ac:2] [taylor-hebert-kl-122ac:3]
-17 taylor-hebert-kl-122ac lifts the hands [state:3]
-18 the crowd thins [exposition:7]
-19 the fish-cart man faces taylor-hebert-kl-122ac
-20 the two women face the lane
-21 oswyn-mudway-flea-bottom-elder takes the lane-mouth [exposition:8] [narrator:5] [state:1] [state:4] [vibes:5] [vibes:6] [vibes:7]
-22 the child clears the lane
-23 the gap closes
-24 taylor-hebert-kl-122ac faces the alley-mouth [feel:3] [state:5]
-25 the tallow smoke layers the lane-floor
-26 oswyn-mudway-flea-bottom-elder lifts the chin [mem:2] [state:2] [state:6]
-27 wren-stitch-maker-flea-bottom-ward faces taylor-hebert-kl-122ac [exposition:9] [narrator:6] [vibes:9] [vibes:10]
+1 taylor-hebert-kl-122ac leaves the drain angle
+2 the insects fan the alleys
+3 the ward delivers the heat-signatures
+4 taylor-hebert-kl-122ac takes the alley-mouth
+5 the insects cross the threshold-stones
+6 taylor-hebert-kl-122ac extends the range
+7 taylor-hebert-kl-122ac draws the line
+8 the insects fill the Hook
+9 the foot-traffic knots the ward-junction
+10 the insects return the ward-junction body
+11 the tallow smoke marks the stitch-house lane
+12 the ward-junction body crosses the thresholds
+13 the alley admits the ward-junction body
+14 the insects return the function-signature
+15 the map assigns the junction-body connector-type
+16 taylor-hebert-kl-122ac yields the alley-mouth
+17 the insects file the ward-junction contact [feel:1]
+18 the coverage map opens the gap
+19 the coverage map holds the gap
+20 taylor-hebert-kl-122ac takes the drain angle
+21 taylor-hebert-kl-122ac runs the map
+22 the map returns the bodies
+23 the accounting closes the count
+24 taylor-hebert-kl-122ac stalls the count
+25 taylor-hebert-kl-122ac draws the line
+26 the accounting closes the fever-cluster entry
+27 the ledger closes the dark-junction entry
+28 the ledger closes the ward-junction contact
+29 taylor-hebert-kl-122ac exhales

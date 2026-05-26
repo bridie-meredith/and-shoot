@@ -489,6 +489,66 @@ parking_lot:
       resolved_by: null
       resolution_note: null
 
+    - id: pl-2026-05-25-019
+      created_at: 2026-05-25T00:00:00Z
+      created_by: "/and-review bones b01c02 (fidelity-fork flag-001)"
+      label: prohibition-spatial-continuity-b01c02-s02
+      target:
+        command: /and-stitch
+        scope: b01c02
+        phase: Phase 0
+      severity: SOFT
+      description: |
+        b01c02s02 distributes the Taylor-cannot-cross-alley prohibition across two
+        bones: n13 (`the alley admits the ward-junction body` = flat_id 13) and n16
+        (`taylor-hebert-kl-122ac yields the alley-mouth` = flat_id 16). The chunk's
+        original line carried both events; the SVO-form fix split them. The bones
+        honor the chunk and the event_map covers both — but the discipline reading
+        depends on stitcher prose treating n13 and n16 as continuous spatial frame
+        (the alley Wren entered is the same alley-mouth Taylor then yields). If
+        rendered as disconnected images, the discipline softens to environmental.
+        /and-stitch Phase 0 lens-anchoring should preserve the spatial continuity.
+      context_refs:
+        - active-project/theater/bones/b01-c02.md
+        - active-project/staff/reviews/bones-b01c02-fidelity-2026-05-25.md
+      resolution_suggestion: "/and-stitch Phase 0 lens-anchor n13 + n16 as the same alley"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-25-018
+      created_at: 2026-05-25T00:00:00Z
+      created_by: "/and-write b01c02 Phase 6 auditor (schema-ambiguity flags 2 + 3)"
+      label: post-move-axes-held-listing-schema-ambiguity
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        At b01c02 Phase 6 bone-gate, auditor flagged that schemas/showrunner-memory.schema.md
+        does not specify whether post-move holding of an in-motion axis (e.g. s02n09/n10
+        holding relational_anchor_status after s02n07 moved it; s03 multiple bones holding
+        moral_legibility_to_self around s03n05's move) requires the axis to be listed in
+        the scene-level axes_held[] declaration. The b01c02 scene contracts declare
+        in-motion axes ONLY in axes_in_motion[] and exclude them from axes_held[] —
+        and several bones in those scenes carry post-move holds on those axes. The Phase 6
+        HELD-AXIS-UNCONTRACTED gate could fire false-positive if interpreted strictly;
+        the auditor noted but did not fault, calling it schema-ambiguity to surface.
+        Resolution path: /and-review pipeline cross-walk decides whether (a) post-move
+        held-on-in-motion-axis is implicitly licensed (no schema edit; auditor docs the
+        carve-out) or (b) scene-level axes_held[] must list every axis any bone holds
+        (would require backfill on b01c01 and b01c02 contracts).
+      context_refs:
+        - active-project/staff/auditor/write-b01-c02-bone-gate.md
+        - schemas/showrunner-memory.schema.md
+        - active-project/staff/showrunner/memory.md  # b01c02 scenes[].substance_delta
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
     - id: pl-2026-05-25-017
       created_at: 2026-05-25T00:00:00Z
       created_by: "/and-postop b01c01 Fork A (resolution of pl-2026-05-25-008)"

@@ -1,20 +1,30 @@
 ---
 reviewer: sensory-disambiguation-pedant
 facet: sensory
-cycle: 1
-episode: b01-c01
+episode: b01-c02
+cycle: r1
 date: 2026-05-25
-verdict: revise
+verdict: accept
 ---
 
 # Verdict reasoning
 
-sensory:1 @2 clears the disambiguation gate: "the tallow smoke crosses the stitch-house lane" — "crosses" is a bare movement verb; the smell modality is not self-carried by the SVO. The flag earns its fire. sensory:2 @16 does not. "taylor-hebert-kl-122ac raises the voice" is an action-verb self-charge: "raise one's voice" is the idiomatic English construction for speaking more loudly; the sound inflection IS the phrase. The flag adds nothing the proto-line doesn't already deliver. This is the action-verb self-charge failure mode — the same class as "lights the lamp" or "opens the shutter."
+Two entries. Both survive the disambiguation gate.
+
+sensory:1 @4: proto-line "taylor-hebert-kl-122ac takes the alley-mouth." Operative verb "takes" is a bare positional verb — it names a threshold crossing, not a sound event. No charged word in the proto-line that self-carries the acoustic shift from enclosed lane to alley-mouth junction. The flag does work the surface language does not: it delivers the sound register of the crossing. Action-verb self-charge check: "takes" is not in the sensory-act class ("lights," "opens," "ignites," "extinguishes"). Clear.
+
+sensory:2 @11: proto-line "the tallow smoke marks the stitch-house lane." The harder case. "Tallow smoke" names a substance. The question is whether naming the substance constitutes charging the perception. Compare: "the stench of tallow" — "stench" is charged (self-carries olfactory intensity). "Tallow smoke marks" is different: "marks" is a bare attribution verb describing spatial delineation, not olfactory onset. The substance name "tallow smoke" identifies what is present; it does not deliver the onset-quality register — the shift from smoke-free lane air to active tallow-smoke arrival. The flag adds the onset delta the surface language does not carry. Accept on disambiguation grounds.
 
 # Entry-level callouts
 
-[sensory:2] @16 — "raises the voice" is the sound event; the idiom self-carries louder-register. `sound: crowd-ambient-murmur -> taylor-raised-voice` is redundant intensity-restatement. Cut sensory:2 or find a bare-verb bone that licenses the fire.
+None. Both entries pass.
 
-# Convergence trace
+[sensory:1] @4 — "takes" is bare. Sound threshold-crossing at the lane-mouth earns the flag. Old-state lineage is the old-state-reader's call.
 
-flag-005 (over-band 7.4%) is downstream of this entry; removing sensory:2 brings the file to 1 entry / 27 bones = 3.7%, which is within the standard band and eliminates the over-band condition entirely. flag-017 (scene-A facet-bare; sensory:1 @2 as the live mitigation per SEAM-TRANSITION-RUN-BARE): sensory:1 survives this review and continues to serve as the scene-A decoration anchor. The V3 short-chapter floor-vs-ceiling exemption is irrelevant if sensory:2 is cut — 1 entry would breach the modality floor (1 modality < 2 required). The disambiguation attack on sensory:2 creates a floor collision: cutting a charged fire to fix the gate drops coverage below the rubric floor. The fixer must resolve by either (a) defending sensory:2 against the action-verb-self-charge reading, or (b) identifying a genuinely bare-verb sound inflection elsewhere in the bones that earns the second modality fire.
+[sensory:2] @11 — "marks" is bare. "Tallow smoke" names the substance without charging the onset register. The flag delivers the olfactory delta. Defensible.
+
+# Convergence-trace notes
+
+- auditor flag-001 (6.9% density, above-band): density arithmetic is modality-coverage territory. No overlap with disambiguation gate.
+- auditor carve-out preamble (old-state negative-inference derivation): old-state lineage is the old-state-reader's axis. From the disambiguation-pedant's lens, neither entry fires on a charged word or an action-verb self-charge. The disambiguation gate is independent of old-state correctness.
+- No auditor finding targets the bare-vs-charged axis for either entry.

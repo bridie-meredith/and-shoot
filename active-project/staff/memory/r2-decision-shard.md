@@ -1,74 +1,120 @@
 ---
-cite_index_hash: 0241e0529031804fa83d25c0fb7a5e0db2491571d2d83d9d9436c734627eca40
+cite_index_hash: cite-index-2026-05-25-b01c02-45entries
 facet: memory
-episode: b01-c01
+episode: b01-c02
 layer: R2
 character: taylor-hebert-kl-122ac
 date: 2026-05-25
-f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
+mode: R2-judge
+input_r1: active-project/theater/facets/memory-b01-c02.md
+verdict_summary: { kept: 2, deleted: 0, added: 0 }
+cap_refusals: { add_cap_5: not_exercised (0/5 used; 2 peak-bone candidates + 4 NI-silent transition/tail beats screened) }
+discipline_fails: []
+supersedes: b01-c01 shard (archived inline below if needed; current content is b01-c02)
 ---
 
-# R2 memory judge — b01c01 (fresh fork; locked-rubric B + arbiter-protocol C)
+# R2 memory judge — b01-c02 (fresh fork; POV impersonator, judge mode)
 
-Context absorbed: persona card + base + KL behavior overlays; scene-map (3 scenes, peaks @12 / @21; flat-low scene-A; resolving tails of scene-B/scene-C); cite-index (mem entries 1+1, all 9 facet families); proto-lines b01c01; warehouse condition cards for target-ref resolution; showrunner b01c01 chapter — `dramatic_shape: rising` (V3 feel-as-spine carve-out structurally blocked for this chapter); R1 memory-b01-c01.md.
+Context absorbed: persona stack (taylor-hebert-kl-122ac); R1 memory-b01-c02.md (the file under judgment); cite-index (45 facet entries, 14/29 protolines decorated); proto-lines b01-c02 (29 bones); scene-map (3 scenes, peaks @17 / @24; scene-A flat-low, scene-B peak-and-release with peak @17 + shadows @16/@18, scene-C peak-and-release with peak @24 + shadows @23/@25); rubric-memory-flags.md V3 (locked 2026-05-21); warehouse for target-ref resolution.
 
-§Form re-test fired on each verdict before commit. Hard-fence scan (Earth-Bet proper-noun substring; case-insensitive): no hit in either description; target-ref slugs are mechanism-form (condition cards, not Earth-Bet-named monument cards) — clears slug-surface fence. Doubled-register file-shape gate (RUBRIC-FIDELITY: ≥1 Earth-Bet displacement AND ≥1 Westerosi-monument clamp): R1 satisfies 1+1, preserved through R2.
+Chapter `dramatic_shape: rising` per R1 header — V3 feel-as-spine carve-out structurally blocked for this chapter (first carve-out condition fails). Standard NI co-citation requirement applies.
 
----
-
-mem:1 @3 — KEEP
-
-Cold read: "the feet hold the only discipline she brought from before that still does what it was built for" lands on bone 3 ("taylor-hebert-kl-122ac holds the feet"), scene-A flat-low rhythm zone. At-rest, the entry produces the right shape: the prohibition-discipline-from-before is named without naming the monument it traces to; the line carries the foreign-woman's load without leaking the Khepri-period source. Read the description aloud — "the only discipline she brought from before that still does what it was built for" — and the displacement reads cleanly as Earth-Bet shadow on prohibition-as-survival-tool. Adjacent context blocked (G3 test): does the entry hold at bone 3 without leaning on bone 4 (the insects swell)? Yes — bone 3 is the body planted; the memory entry is what the planting carries. Stands at anchor.
-
-Spine status: NI@3 silent in the cite-index. V3 feel-as-spine carve-out structurally blocked (chapter `dramatic_shape: rising`, not `hinge`); the carve-out's first condition fails. Standard rubric requires NI co-citation; AP7 (spineless fire) is in play. I hold the entry anyway: the multi-justification gate clears on substance grounds — monument-trigger (Earth-Bet displacement on prohibition discipline traceable to Khepri-period overhead) + audience-meaningfulness (cape-fic-reader feels the foreign load; dark-fantasy-reader feels the not-from-here register; both register the entry as load-bearing) + functional-register convergence (painting-characterization on Taylor's monument-history + moment-of-realization on prohibition-as-only-thing-that-still-works) + quiet-beat anchor (scene-A is flat-low; this is the prohibition's enacted-stillness beat, the rubric's primary eligible zone). The NI silence at @3 reads as R1-NI under-fire, not as evidence the memory should not fire — the narrator-interest layer in this chapter ran sparse against a held-discipline scene that other facets carried. Stripping mem:1 to honor AP7 strict-application would collapse the file to single-register (mem:2 alone is Westerosi-only) and break the load-bearing doubled-register file-shape gate. Under R2 taste-judgment: monument-grade callbacks anchored on flat-low quiet-beats with clean displacement-cue construction outrank the spine gap as a verdict-determining axis when the gap is plausibly an upstream-NI-fire defect.
-
-Target-ref `cond-override-architecture-residue-122ac` resolves to warehouse (`active-project/warehouse/cond-override-architecture-residue-122ac.md`); it is a project-law card, not a `monument-*` card. Under the monument-card resolution test, that is a SIGNAL not a HARD — the gloss is structurally clear (the Khepri-period prohibition discipline maps directly to the condition card's §What Survives content), and a mechanism-form `monument-` slug could be authored later via margit referral without altering the entry's substance. Note: noting this without escalating to DELETE because the resolution is achievable.
-
-VERDICT: KEEP
+§Form re-test fired on each KEEP before commit. Hard-fence scan (Earth-Bet proper-noun substring; case-insensitive across `locker / bakuda / leviathan / khepri / annette / skitter / weaver / brockton / endbringer / s9 / coil / dinah / prt / cauldron / wards` and Dance-specifics `aegon / rhaenyra / aemond / vhagar / dance / hour / doom`): no hit in either description; target-ref slugs are mechanism-form (warehouse condition card + descriptive monument card). Doubled-register file-shape gate: 1 Earth-Bet displacement + 1 Westerosi clamp = preserved.
 
 ---
 
-mem:2 @26 — KEEP
+## mem:1 @7 — KEEP
 
-Cold read: "the chin lifts the way it lifts in the country's older stories when a word has been waiting for a person and the person has finally arrived to fit it" lands on bone 26 ("oswyn-mudway-flea-bottom-elder lifts the chin"), scene-C resolving tail (peak-bones lists @21 only; @26 is post-peak release). The displacement-cue is Westerosi-monument clamp on the witch-label-formation process — "country's older stories" + "word has been waiting for a person and the person has finally arrived to fit it" produces the *shape* of the ward's categorical mechanism without naming the monument (the witch-category, the witness-vocabulary, the ward-elder's authorial role). The "country's older stories" register is the foreknowledge-clamp — Taylor knows what is being assembled before Oswyn finishes assembling it. At-rest, the entry does what the rubric is reaching for: the foreknowledge interior knows; the spoken line never names.
+**Entry:** `the gesture is the same shape an older country's charters once used to make a province out of land that had not been one before the stroke -> monument-conquest-charter-language`
 
-Adjacent context blocked (G3 test): bone 26 anchors the chin-lift; the memory entry names what the chin-lift IS — the categorization completing. The entry would not need bone 27 (Wren faces Taylor) to make sense; it sits at the witch-label-assembly beat without reaching forward.
+**Cold read.** Lands on bone 7 ("taylor-hebert-kl-122ac draws the line"). The cue is the charter-as-province-making gesture — Taylor's act of drawing the prohibition line registers in the interior as the same shape as a conquering polity's annexation-by-document. At-rest the construction reads as Westerosi-monument clamp on conquest-charter-language without naming the monument; the displacement-cue "an older country's charters" + "make a province out of land that had not been one before the stroke" produces the specific shape the rubric calls licit.
 
-Spine status: NI@26 silent. Co-cited with state:2 @26 and state:6 @21 per cite-index — these are state entries (witch-label state-shift). State co-citation is graph-evidence the categorization event registers across multiple facets, which is part of the both-meaningful test (audience-meaningful: a Worm-canon-pedant and dark-fantasy-reader both feel the witch-category landing through the ward-elder's body even without source-fluency). V3 feel-as-spine carve-out blocked (rising not hinge). AP7 spineless-fire applies in strict reading. As with mem:1, I hold the entry on substance grounds: monument-grade Westerosi-monument clamp + clean displacement-cue + quiet-beat resolving-zone anchor + cross-facet state-entry co-citation evidence + multi-justification convergence (moment-of-realization for Taylor + painting-characterization for Oswyn + social-commentary on ward-categorical mechanism). The single instance of Westerosi-clamp in the file carries the doubled-register file-shape gate against mem:1's Earth-Bet displacement.
+**Spine.** NI:2 @7 co-cites per cite-index. Spine present. AP7 does not fire.
 
-Target-ref `cond-kl-witch-label-formation-122ac` resolves to warehouse (`active-project/warehouse/cond-kl-witch-label-formation-122ac.md`); same SIGNAL-not-HARD as mem:1 (project-condition card, not `monument-*` slug; gloss-clarity test passes).
+**Quiet-beat anchor.** Scene-A flat-low rhythm zone, no peak-bones. Default-licit per rubric §Quiet-beat anchor.
 
-VERDICT: KEEP
+**Monument-family.** Westerosi-monument clamp on conquest-charter-language. Target-ref `monument-conquest-charter-language` is mechanism-descriptive (not an Earth-Bet proper-noun slug; not a Dance-period name). URI-032 fence clears.
 
----
+**Functional-register convergence.** Moment-of-realization (Taylor sees her own gesture as charter-shape) + painting-characterization (the prior-life history-fluency surfacing as load-bearing interior register) + social-commentary (the prohibition-line as administrative-violence pattern, scaled down). 3 functional jobs ≥2 ✓.
 
-Add scan — per layer, then per anchor:
+**Multi-justification.** Monument-trigger + spine-present + audience-meaningful (cape-fic-reader feels the foreign-history load; dark-fantasy-reader feels the charter-clamp; both register) + 3 functional + scene-eligible (no prior fire in scene-A). Convergence clears.
 
-Walked the cite-index for adds. Multi-justification gate held strict per G2 ("the at-rest reading wants this entry"). Candidates considered and refused:
+**Anti-pattern scan.** AP1/AP2 (proper-noun leak): none. AP3 (stage-named): no "she remembers"; the cue is produced not labeled. AP4 (generic gloss): the cue is specific to charter-making. AP5 (forced-fit): the prohibition-line drawing genuinely rhymes with the charter-province-making gesture. AP6 (peak-bone without resonance): scene-A has no peak-bones. AP10 (mask-bleed): base-register interiority, no apologetic tone. AP11 (persistent-monument): no prior fire on conquest-charter-language. AP13 (cross-POV): POV-restricted. AP14 (target-ref erosion): mechanism-descriptive slug.
 
-CAP-REFUSAL: mem:candidate @12 — peak-bone of scene-B (s02n06 "the insects propagate"; scene-map `peak-bones: @12`). The prohibition-crack at @12 is the Khepri-displacement candidate — first deployment since arrival, capability axis_moves rank-1 → rank-3. Default-forbidden under the rubric's peak-bone clause; the defense would require explicit displacement-clamp construction and resonance-not-action argument. The foreground charge is at peak (body fully committed to deployment); the locker-pattern or Khepri-period displacement does not land *resonantly* here — it lands *concurrently with the action*. NI@12 already carries the registration; a memory fire at @12 would over-license at the climax bone. G5 fires: this is peak-position, scene-motion is escalating, the at-rest reading does not want a memory entry at the moment the prohibition cracks (the cracking is the event, not the resonance after it). Refused.
-
-CAP-REFUSAL: mem:candidate @21 — peak-bone of scene-C (Oswyn takes the lane-mouth). Strong NI/state/vibes co-citation cluster at @21. Witch-label assembly. The Westerosi clamp is plausible here but mem:2 @26 already carries the witch-label-formation monument family in the scene's resolving tail. Persistent-monument-firing (AP11) and per-scene cap (one mem per scene) both refuse a second scene-C fire. Refused.
-
-CAP-REFUSAL: mem:candidate @24 — resolving-zone bone "taylor-hebert-kl-122ac faces the alley-mouth"; the not-looking-toward-the-stitch-house gesture (cost-bearer dormancy enacted). The Earth-Bet displacement candidate is refusal-to-look on the relational-anchor — Khepri-rhyming surveillance-without-acknowledgment in miniature. Co-cited with feel:2 @24 (no NI). Without NI@24 and without V3 carve-out (dramatic_shape: rising blocks it), spineless-fire AP7 fires harder here than on mem:1 because the multi-justification convergence is weaker — the cost-bearer-dormancy register is real but the audience-meaningful test runs lighter (the not-looking is internal to Taylor's interior, marginally available to a non-source-fluent reader without the chapter's later beats to anchor it). At-rest reading does not want the entry strongly enough to defend against the spine gap. Refused.
-
-CAP-REFUSAL: mem:candidate @27 — chapter-close bone (Wren faces Taylor; cost-bearer-orientation plant). Strong co-citation cluster (NI@27 + exposition:9 + vibes:9 + vibes:10 + feel:4). The Earth-Bet displacement candidate (cost-bearer-in-the-frame-before-the-calculus-opens; the un-priced item arriving as orientation) is plausibly active. G5 special case (episode-close anchor; final 5-10% of the proto-line stream): the rule asks whether a paired-archive risk is in play. At @27 the exposition + NI + feel cluster already closes the chapter on cost-bearer orientation as a held-live consequence. Adding a memory entry at @27 risks the @131-pattern failure mode (paired closes in archival/accounting register at episode-end); the existing facet cluster holds the prior peak's consequence live without a memory entry, and a memory add at @27 would tip toward filing the cost-bearer plant rather than holding it live. The at-rest reading does not want a memory entry to close the chapter on; the chapter's cost-bearer plant is structurally complete without memory's licensing layer. Refused.
-
-No adds earned. Add count: 0. Cap refusals: 4.
+**Verdict: KEEP.**
 
 ---
 
-PATTERN-SCAN: Two entries are too small a sample to scan for pattern saturation in the usual sense; with that caveat, the pair I have read holds two distinct construction templates ("the only discipline she brought from before that still does what it was built for" / "the way it lifts in the country's older stories when a word has been waiting for a person") — both are licit displacement-cue constructions, and they do not echo each other in syntax or vocabulary. The Earth-Bet-displacement / Westerosi-monument-clamp split is the load-bearing doubled-register and it carries cleanly. No author-vocabulary leak (AP12) observed. If a third entry were ever added to this file, the watch would be on whether the cue construction stays distinct from "still does what it was built for" / "country's older stories" — a third entry echoing either template would be the kickback signal. With 2 entries, no pattern flag.
+## mem:2 @18 — KEEP
 
-Arbiter trail: no interventions fired. The verdicts above name the specific construction in each entry, the specific scene-map zone classification, the specific spine-gap and how it was held against the file-shape gate, the specific multi-justification axes that cleared, and the specific G5 position arguments for the refusals. T1 (rubric-label-heavy) does not fire — verdicts cite rubric structure but every citation is anchored to a specific phrase or graph fact in the entry under review. T4 (niche-driven add) does not fire — no adds were taken; the refusals trace from at-rest reading not from niche-filling.
+**Entry:** `the absence has the shape of one person and the shape is the architecture she came here to refuse to build surfacing through the method she has not yet looked at -> cond-override-architecture-residue-122ac`
+
+**Cold read.** Lands on bone 18 ("the coverage map opens the gap"). The cue is the negative-space-shape on the coverage map — one person missing from the feed, and the shape-of-that-absence is the override-architecture Taylor came to this country to refuse to build. The "method she has not yet looked at" construction is the displacement-cue: the prior-life control-stack residue surfacing through the current-life surveillance-method she has not yet acknowledged she is running. At-rest the construction reads as Earth-Bet displacement on override-architecture-residue (Khepri-period mechanism in mechanism form, no proper noun).
+
+**Spine.** NI:5 @18 co-cites per cite-index. Spine present. AP7 does not fire.
+
+**Quiet-beat anchor.** Scene-B peak @17 with peak-shadow bones @16, @18. @18 is the post-peak shadow — the resolving-tail bone after the dialogue-junction registration peak. Per rubric §Cross-axis tests: peak-shadow ≠ peak-bones; the resonance lands in the post-peak shadow, exactly where rubric §Cross-facet contract specifies memory should fire in the aftermath of peak-bones-class beats. Default-licit.
+
+**Monument-family.** Earth-Bet displacement on override-architecture-residue. Target-ref `cond-override-architecture-residue-122ac` resolves to warehouse (project-bound condition card). Per the same SIGNAL-not-HARD reasoning applied to prior shard's mem entries: the gloss is structurally clear (override-architecture-residue maps directly to the condition card's mechanism content), and a mechanism-form `monument-*` slug could be authored later via margit referral without altering the entry's substance. SIGNAL noted; not escalated.
+
+**Functional-register convergence.** Moment-of-realization (the absence-shaped-like-one-person registers as the architecture she refused to build) + painting-characterization (override-architecture as the load Taylor carries and refuses) + social-commentary (the method-she-has-not-yet-looked-at = control-stack residue under the harm-reduction framing). 3 functional jobs ≥2 ✓.
+
+**Multi-justification.** Monument-trigger + spine-present + audience-meaningful (the absence-as-architecture lands for a cape-fic-reader as the Khepri-shadow without source-fluency required — the "architecture she came here to refuse to build" carries on its own face) + 3 functional + scene-eligible (no prior fire in scene-B). Convergence clears.
+
+**Anti-pattern scan.** AP1/AP2: none. AP3: no labeling; the cue is produced. AP4: specific architecture-shape, not generic. AP5: the negative-space-shape on the coverage map genuinely rhymes with the override-architecture pattern (it is not stretched). AP6: peak-shadow ≠ peak-bones; the rule does not bind. AP10: base-register. AP11: no prior fire on override-architecture-residue family. AP13: POV-restricted. AP14: mechanism-descriptive slug.
+
+**Verdict: KEEP.**
 
 ---
 
-DISCIPLINE summary:
+## ADD scan (cap ≤5; 0 used)
+
+Walked the cite-index for adds. Multi-justification gate held strict. Candidates considered and refused:
+
+### CAP-REFUSAL: mem:candidate @17 — peak-bone of scene-B
+"the insects file the ward-junction contact." Heavy co-citation cluster (feel:1, NI:4, state:2, vibes:6-12). Candidate would be Earth-Bet displacement on override-architecture-residue (the contact-as-control-channel registration). Default-forbidden under rubric §Quiet-beat anchor / peak-bones clause. Defense would require explicit displacement-clamp + resonance-not-action argument; the at-rest reading does not support it — the peak IS the registration of contact, not the load behind it; the interior is in the act of registering, not in resonance after. Anti-pattern #11 persistent-monument-firing also fires: would echo mem:2 @18's override-architecture-residue family at the bone immediately before mem:2's anchor; same family, consecutive scene-window, no change-registration. R1 author's notes (lines 16-25) already pre-defended this silence on the same grounds. Refused.
+
+### CAP-REFUSAL: mem:candidate @24 — peak-bone of scene-C
+"taylor-hebert-kl-122ac stalls the count." Heavy co-citation cluster (feel:2, NI:6, state:3, vibes:13/15/16/17). Candidate would be Westerosi-monument clamp on doom-pattern (mass-casualty-foreshadow on the fever-cluster recognition) or Earth-Bet displacement on trigger-event-adjacent (sudden-disaster recognition). Default-forbidden (peak-bone). V3 feel-as-spine carve-out N/A: chapter `dramatic_shape: rising` (not `hinge`); first condition fails before reaching the others. Resonance-not-action argument fails: the peak IS the recognition-discharge — the monument would light *as* the peak, not *after*, meaning NI already carries the registration and a memory fire would double-render the same beat. R1 cull-pass already evaluated `mem-candidate-3 @26 on doom-pattern` and cut for fever-tally-thinness; that cull reasoning extends — no Westerosi doom-clamp cue earns @24 either, and the Earth-Bet trigger-displacement would breach AP5 forced-fit. Refused.
+
+### CAP-REFUSAL: mem:candidate @25 — scene-C peak-shadow tail
+"taylor-hebert-kl-122ac draws the line." NI:7 co-cites (spine present). Candidate would be the parallel-to-mem:1 fire (the second draws-the-line gesture, now post-recognition; conquest-charter-language family). R1 author's notes (lines 27-31) explicitly flagged this as anti-pattern #12 author-vocabulary leak risk: the bones file repeats "draws the line" at @7 and @25 by SVO echo (scene-contract repetition), and a mem:3 here with parallel "older country's charters" construction would echo mem:1 by description-shape. Silence at @25 prevents the kickback. AP12 refusal stands. Also AP11 persistent-monument-firing on conquest-charter-language with same-family same-scene-cluster. Refused.
+
+### CAP-REFUSAL: mem:candidate @29 — chapter-close exhale
+"taylor-hebert-kl-122ac exhales." Bare proto-line (no co-citations in cite-index). NI silent. Spineless-fire AP7 applies; V3 carve-out blocked. No monument cue earns the bone — the exhale is a release marker, not a monument-light. Refused.
+
+### Rhythm-transition beats — screened, refused without entering cap accounting
+- @9 / @10 (scene-A→B transition): NI silent at @9; exposition:3 / exposition:4 only. Spineless. Refused.
+- @19 / @20 (scene-B→C transition): NI silent at @19; @20 carries state:1 + loc-state:4 + exposition:5 (no narrator:N). Spineless. Refused.
+- @26 / @27 / @28 (scene-C accounting tail): NI silent across the range; only loc-state:5 @26. Spineless. R1's cull of mem-candidate-3 @26 on doom-pattern stands; no Westerosi doom-clamp cue earns the bone. Refused.
+
+Add count: **0**. Cap refusals: **4 examined formally (peak-bones + scene-C tail) + spineless-screen on transitions**.
+
+---
+
+## PATTERN-SCAN
+
+Two entries — too small a sample for saturation scanning in the standard sense. With that caveat: the pair holds two distinct displacement-cue construction templates ("an older country's charters once used to make a province out of land that had not been one before the stroke" / "the architecture she came here to refuse to build surfacing through the method she has not yet looked at"). Different syntactic shape, different vocabulary, different register-axis (charter-as-document / architecture-as-structure). The Earth-Bet displacement / Westerosi-monument clamp split is the load-bearing doubled-register and it carries cleanly. AP12 author-vocabulary-leak does not fire on R2 inputs; R1 author's @25 silence pre-empted the only kickback risk. No pattern flag.
+
+---
+
+## Arbiter trail
+
+No interventions fired. Verdicts cite specific construction phrases, specific scene-map zone classifications, specific cite-index co-citations, specific multi-justification axes, and specific anti-pattern checks for each retained entry. Refusals trace from at-rest reading and from R1 author's pre-defended silence reasoning, not from niche-filling or cap-bound triage.
+
+---
+
+## DISCIPLINE summary
+
 - Self-scoped deletion: not exercised (0 deletes).
-- Add-cap (≤5): not approached (0 adds, 4 refusals).
+- Add-cap (≤5): not approached (0 adds, 4 formal cap-refusals + spineless-screen on transitions).
 - §Form re-test: fired on both KEEP verdicts before commit.
-- Hard fence (Earth-Bet proper-noun, case-insensitive substring): clean in both descriptions and both target-ref slugs.
+- Hard fence (Earth-Bet proper-noun + Dance-specific, case-insensitive substring): clean in both descriptions and both target-ref slugs.
 - No reordering of existing IDs.
-- Citation cascade on _inflight-r2 copy: none required (0 deletes preserve all citations).
+- Citation cascade on _inflight-r2 copy: 0 deletes → no cascade required; tokens preserved as `[mem:1 KEEP]` and `[mem:2 KEEP]`.
 - Doubled-register file-shape gate: preserved (1 Earth-Bet displacement + 1 Westerosi clamp).
+- Monument-family-diversity: 2 distinct families (under ≥3 heuristic for >50-bone files; b01-c02 is 29 bones — heuristic does not bind).
+- Inverted pressure-signal: 2 fires, both in flat-low / peak-shadow-resolving zones; 0 peak-bones fires. Ratio: ∞ ✓.
+- Quiet-beat distribution: scene-A 1, scene-B 1, scene-C 0. Scene-C silence rubric-defended in R1 author's notes (rising forecloses V3) and re-defended above.
+
+**R2 verdict: PASS as-authored. R1 file is judge-clean.**

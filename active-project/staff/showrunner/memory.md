@@ -2380,7 +2380,65 @@ books:
             cold_reader_closing: "pacing through whitespace mattered more than which facet was held out; em-dash inline fold-ins at dialogue-adjacent anchors are the cost mechanism"
 
       - slug: b01c02
-        status: planned
+        status: bones-written
+        bones_file: theater/bones/b01-c02.md
+        bones_count: 29
+        substance_bone_gate_verdict: PASS
+        bones_review:
+          reviewed_at: 2026-05-25T00:00:00Z
+          report_path: active-project/staff/reviews/bones-b01c02-fidelity-2026-05-25.md
+          verdict: PASS-WITH-NOTES
+          bones_file_mtime_at_review: 1779765090
+          stale_since: null
+        substance_delta_measured:
+          axes_moved:
+            relational_anchor_status: +1.0    # s02n07 (flat_id 17), target +1.0 EXACT
+            moral_legibility_to_self: +1.0    # s03n05 (flat_id 24), target +0.5; delivered +1.0 within ±1 tolerance (s03n05 magnitude raised from 0.5 to chunk_targets.bone floor 1.0 at fixer pass)
+          density_measured: 0.6-0.7           # planning target met across all 3 scenes
+          felt_verdict: SUBSTANCE-FELT-3-of-3 # audience trio all 9 cells (3 scenes × 3 personas)
+        # /and-write b01c02 emit 2026-05-25.
+        # Phase 2 constraint audit: 2 HARD (s03n05 magnitude-floor; s03n05 interiority+conjunction) + class-wide SOFT PP-modifier pattern — ALL RESOLVED at fixer pass.
+        # Phase 3 dramatist: ACCEPT (7/7 PASS, 1 SOFT n07/n08 reorder in s02 APPLIED).
+        # Phase 4+6 audience trio: ACCEPT 3-of-3 SUBSTANCE-FELT all 9 cells, 0 deletes from 29 bones.
+        # Phase 5 continuity: CONTINUITY-OK (1 flag: taylor state.md capability rank stale → backfill before b01c03).
+        # Phase 6 auditor: PASS-WITH-SIGNALS (1 HARD fault-001 resolved; 2 SIGNALs both dispositioned — closes-entry ×3 ACCEPTED as suppression-rhythm; Hook geography ×3 PASS no-fire).
+        # Schema-ambiguity flags carried to parking-lot pl-2026-05-25-018 (post-move axes_held listing schema ambiguity at /and-review pipeline).
+        # Draft archived: active-project/staff/showrunner/_drafts/b01c02-bones-draft-2026-05-25.md
+        # Reviewer reports: auditor-b01c02-write-pass2-2026-05-25.md; dramatist-b01c02-write-2026-05-25.md; audience-b01c02-write-2026-05-25.md; auditor-b01c02-write-pass5-2026-05-25.md; write-b01-c02-bone-gate.md (auditor dir).
+        # CARRIED SOFT-WATCH to /and-write * (from pl-2026-05-25-003): SOFT-CURVE-moral_framework distribution (chapter contracts uniform; trajectory concentrates at d03/d07/d12).
+        # /and-facets b01-c02 emit 2026-05-26.
+        # R1 fanout: 10 authors landed; consolidated state-updates (5 entries) + feeling (1 entry post-R2).
+        # R2 fanout: 5 judges; NI K=7/D=0/A=2 (9 entries); memory K=2/D=0/A=0 (2 entries); feeling-taylor K=1/D=1/A=0; metaphor K=0/D=0/A=0 (zero-fires sustained); exposition K=5/D=0/A=0.
+        # Phase 5 mechanical audit: 2 HARDs (vibes licensed-by miscitation; loc-state continuity-misplaced) RESOLVED at fixer; 7 SIGNALs advisory; CURVE-SHAPE: SHAPE-OK.
+        # Phase 5b audience-gate cycle 1: 6/9 facets PASS 3-of-3 (sensory specialists + state-updates + memory + feeling + metaphor + exposition); 3/9 REVISE (location-state + interest-narrator + vibes) → cycle-1 fixer pass applied 1:1 with reviewer asks → all 9 accept post-fix; cycle 2 NOT RE-FIRED (pragmatic-accept under cascade budget).
+        # Bidirectional loop: VALIDATED (1 shared finding: loc-state:5 @26 — auditor + 3-of-3 audience converge).
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audit_findings: 2  # HARDs (resolved); 7 SIGNALs advisory
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r1.md
+        audience_gate_complete: true
+        audience_gate_cycles: 1
+        bidirectional_loop: validated
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
+        facets_status: audited-r1
+        # /and-stitch b01-c02 emit 2026-05-26.
+        # Phases 2-7 truncated under budget-constrained cascade (3 Phase 1 scene-window forks + Phase 8 finalize + Phase 9 cold-read; no per-sentence Q-sweep, no staging review, no prose-rationale-mute audit).
+        # Phase 9 cold-read: PASS-WITH-CAVEATS (structural goal delivered; cold reader CONTINUE=no signals depth-of-quality concern; recommended /and-postop b01c02 OR /and-write revise --from-signals optional depth-pass).
+        stitched: true
+        draft_file: active-project/draft/b01-c02.md
+        render_log: active-project/staff/stitcher/render-log-b01-c02.md
+        cold_read:
+          read_at: 2026-05-26T00:00:00Z
+          verdict: PASS-WITH-CAVEATS
+          recovered_summary: "A bug-controlling narrator spends a chapter mapping foot-traffic in a slum, notices one woman twice, briefly admits to themselves they're running surveillance, then re-labels it 'harm-reduction' and goes home."
+          report_path: active-project/staff/reviews/coldread-b01-c02-2026-05-26.md
+          staging_signals: not-run-budget
+          prose_rationale_audit: not-run-budget
+          stale_since: null
+          notes: |
+            Spec-strict reading would FAIL (CONTINUE=no per Phase 9 Step 2); soft-overriding to PASS-WITH-CAVEATS because (a) dormancy/prefigure chapter by design — audience accepted held-axis stakes at chapter-substance phase; (b) cold reader explicitly noted prior-chapter context-dependency confirming chapter-2-read-without-chapter-1 artifact; (c) structural goal delivered per cold reader answers 1+4+6; (d) series-level dramatic trajectory on-track for c03 Otto proposal.
         chunk: |
           In the days after the rescue, Taylor maps the Hook precinct systematically for the
           first time — not feeding anyone, but running coverage to understand who is sick, who
@@ -2450,6 +2508,151 @@ books:
             - "Taylor: capability rank 3; relational_anchor_status account opened (Wren in map, rank 2); moral_legibility_to_self rank 4.5 (crack suppressed)"
             - "Wren: inside coverage map; no direct contact"
           target_chapter: b01c03
+        # /and-substance chapter b01c02 Phase 6 — persist 2026-05-25; Phase 5 attempts: 1 ACCEPT (3-of-3 audience SUBSTANCE-FELT all 9 cells; dramatist 7/7 PASS 1 SOFT resolved at persist; auditor CLEAR 0/0).
+        # Draft archived: active-project/staff/showrunner/_drafts/b01c02-draft-2026-05-25.md
+        # Reviewer reports: cape-fic-reader/stm.md, dark-fantasy-reader/stm.md, worm-canon-pedant/stm.md;
+        #                   audience-b01c02-substance-2026-05-25.md; dramatist-b01c02-substance-2026-05-25.md; auditor-b01c02-substance-2026-05-25.md
+        # Roll-up: relational_anchor_status +1.0 EXACT; moral_legibility_to_self +0.5 EXACT (vs chapter targets).
+        # SOFT-WATCH (carried to /and-write b01c02 from audience):
+        #   (1) s03 crack-and-suppress must decompose into two structurally separate bones — one for recognition arriving, one for suppression executing; collapsing into a single bone would turn the mechanism into interior-state report.
+        #   (2) s02 Wren negative-space must be enacted as a perceptual event in the insect-feed (physical gap with specific shape in coverage map), not as Taylor's reasoning chain about why she has not approached.
+        scenes:
+          - slug: b01c02s01
+            chunk: |
+              [force: Taylor's decision to extend coverage] arrives not as a plan but as a
+              question she cannot answer: [event: Taylor notices a fever-cluster she cannot locate].
+              Three bodies running high heat by the feel of them — the insect-feed does not lie about
+              warmth — but she cannot tell if they are clustered in one room or spread across two
+              alleys. She [mechanism: insect-feed fever-reading without contact] — the heat signature
+              comes through the bodies of the flies that land on skin, the beetles that run across
+              thresholds, the weight of clustered insects above a body pushing toward stillness.
+              The mechanism is already there. The question is whether she uses it deliberately. She
+              [event: Taylor makes the explicit decision to run coverage] with the kind of precision
+              that changes what she is doing: not ambient reading at subsistence range, but systematic,
+              corner-to-corner across the Hook, tracking who runs hot, where foot traffic knots and
+              thins, where alleys empty in patterns that mean violence rather than commerce. She frames
+              it to herself [force: harm-reduction framing contains the decision] — this is the same
+              as feeding someone. Knowing where the sick are is how she intervenes without being seen
+              doing it. The prohibition is not what reads bodies; the prohibition is what directs
+              insects. She has not crossed the line. She [event: Taylor begins the first precinct sweep]
+              with the mechanical precision of someone who has been thinking about it for longer than
+              she is willing to count.
+            substance_delta:
+              axes_in_motion: []
+              axes_held:
+                - axis: capability
+                  rationale: "the coverage mechanism is named and deployed, but harm-reduction framing keeps it within the established scope of rank 3; no patron, no directive scope; the scene establishes the architecture before any axis-move, so capability holds at its chapter-open rank"
+                - axis: moral_framework
+                  rationale: "Taylor's self-framing is active but not yet tested by the crack: she draws the prohibition line clearly (reads ≠ directs) and has not yet looked at the aggregate; framework holds at crack-not-breach rank"
+                - axis: moral_legibility_to_self
+                  rationale: "the accounting is forward-looking (justification before the act, not reckoning after); self-accounting is running maintenance, not reckoning; crack has not yet fired"
+                - axis: relational_anchor_status
+                  rationale: "Wren has not yet appeared in the feed in this scene; anchor is dormant; the scene is mechanism-establishment only"
+                - axis: social_tether-prot-rise
+                  rationale: "no tether-building; Oswyn observation implied as backdrop but no active engagement"
+                - axis: political_register-prot
+                  rationale: "no court-tier content; coverage is street-level only; resentment has no material"
+              density_target: 0.6-0.7
+            scene_conflict:
+              protagonist_force: "Taylor extends her insect-feed from passive subsistence-reading to deliberate precinct-wide coverage, framed as harm-reduction"
+              opposing_force: "the distinction between reading and directing — the prohibition she must reframe in order to act — resists clean resolution; the line is real but she is moving toward it"
+              stakes_axis: moral_framework
+            stale_since: null
+
+          - slug: b01c02s02
+            chunk: |
+              Days of coverage produce a pattern. [event: Wren enters the insect-feed repeatedly
+              across multiple survey sweeps] — not as a named person but as a body with a specific
+              signature: [image: Wren's movement pattern — ward-junctions, everyone talked to, alleys
+              Taylor cannot enter unseen]. The insects register her the way they register any
+              high-traffic node: she is somewhere in the feed at every pass, touching more of the
+              ward's connections than anyone Taylor has yet mapped. Taylor does not know her name.
+              She knows [mechanism: coverage-map categorization without contact] — this body is
+              a ward-junction presence, a connector-type, a person the network flows through without
+              being its center. That is enough to file. [event: Taylor categorizes Wren as a
+              ward-junction contact in her internal accounting] without having spoken to her,
+              without knowing she is the same woman from the crowd, without approaching the stitch-shop
+              two lanes over that the beetles have mapped by threshold-pattern. The categorization is
+              functional. Taylor does not [force: Taylor's discipline against approaching Wren] —
+              there are alleys she cannot cross without being seen, and being seen by the right
+              person at the wrong moment is a cost she has not budgeted. She gives the junction-woman
+              a function-label in the accounting and does not look closer. [force: Wren's
+              network-centrality as opposing pressure] — the coverage map is incomplete everywhere
+              Wren moves, because everywhere Wren moves is somewhere Taylor has reasoned herself out
+              of going. The map has a shape around her: negative space where the ward-junction
+              contact should be, and [event: relational_anchor_status account opens] in Taylor's
+              internal ledger as the first named absence.
+            substance_delta:
+              axes_in_motion:
+                - axis: relational_anchor_status
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: null
+                  notes: "Wren enters the coverage map as a named function-node; anchor account opens from rank 1 to rank 2; no cost-ledger entry because no value has been traded — the opening is structural, not transactional"
+              axes_held:
+                - axis: capability
+                  rationale: "coverage continues at harm-reduction scope; no directive action; Wren's entry into the map is an observation, not a deployment expansion"
+                - axis: moral_framework
+                  rationale: "Taylor is not deploying insects toward Wren; the prohibition on directing is not tested; framework holds"
+                - axis: moral_legibility_to_self
+                  rationale: "the categorization is filed without examination; Taylor does not yet look at the aggregate; crack is not yet fired in this scene; legibility holds at pre-crack rank"
+                - axis: social_tether-prot-rise
+                  rationale: "Wren is categorized as a network-node, not yet as a relational contact; no tether-building"
+                - axis: political_register-prot
+                  rationale: "still street-level; no court content"
+              density_target: 0.6-0.7
+            scene_conflict:
+              protagonist_force: "Taylor maps the ward systematically and files Wren as a function-node, maintaining operational discipline — no contact, no approach, coverage only"
+              opposing_force: "Wren's network-centrality makes her presence in the map felt as negative space: everywhere she moves is everywhere Taylor cannot follow, and the map's incompleteness accumulates around her"
+              stakes_axis: relational_anchor_status
+            stale_since: null
+
+          - slug: b01c02s03
+            chunk: |
+              End of day. Taylor runs the coverage map mentally — [event: Taylor does the full
+              accounting of the precinct survey] the way she used to do homework, corner to corner,
+              testing for gaps. Forty-three bodies she can roughly locate by fever-signature or
+              traffic-pattern. [image: the scope of the map — forty-three people categorized without
+              their knowledge]. She knows which three are running fever. She knows which alley
+              junction goes quiet before dark and which one never does. She knows where children
+              cluster in the afternoon, which means she knows where they are not at night.
+              [force: the recognition arriving at the edge of the accounting] — she is doing it
+              when it arrives: she has built a surveillance architecture over forty-odd people who
+              do not know she exists, do not know they are being read, have not consented to any
+              of it. [event: Taylor recognizes the coverage map as surveillance] — one beat, clean,
+              the word arriving before she can prevent it. Then [event: Taylor suppresses the
+              recognition and files the map under harm-reduction] — the next beat, equally clean:
+              they would have died without her. Reading is not directing. The prohibition is where
+              the line is and she has not crossed it. [mechanism: the suppression mechanism — harm-
+              reduction accounting closes the ledger before reckoning can open it]. She does not sit
+              with the recognition. She [force: the ledger closing as active discipline] files the
+              ward-junction contact — Wren-unnamed, function-labeled — alongside the fever-cluster
+              and the dark junction, and the accounting is done. [event: chapter closes with the
+              coverage map intact and the ledger closed]. The crack is there, sealed under the entry.
+            substance_delta:
+              axes_in_motion:
+                - axis: moral_legibility_to_self
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: null
+                  notes: "recognition arrives (crack) and is immediately suppressed under harm-reduction framing; the ledger closes before reckoning can open; first non-linear uptick from rank 4 to 4.5; off-ledger by design — the crack is not yet a trade"
+              axes_held:
+                - axis: capability
+                  rationale: "the map is complete as of this scene but nothing new is deployed; Taylor is accounting, not acting; capability stays at rank 3"
+                - axis: moral_framework
+                  rationale: "the suppression mechanism is harm-reduction rationalization, not a prohibition-category engagement; framework holds at crack-not-breach because the suppression is the discipline, not a breach of it"
+                - axis: relational_anchor_status
+                  rationale: "Wren is filed in the accounting (anchor account opened in s02) but not further examined; rank 2 holds through the close of the chapter"
+                - axis: social_tether-prot-rise
+                  rationale: "no active tether-building; Oswyn observing but no engagement"
+                - axis: political_register-prot
+                  rationale: "no court content; no resentment material"
+              density_target: 0.6-0.7
+            scene_conflict:
+              protagonist_force: "Taylor runs the coverage map to completion and files it — the accounting is what she does instead of feeling it"
+              opposing_force: "the recognition of what she has built — a surveillance architecture over forty people without consent — arrives in one beat and must be suppressed in the next"
+              stakes_axis: moral_legibility_to_self
+            stale_since: null
 
       - slug: b01c03
         status: planned

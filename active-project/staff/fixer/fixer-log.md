@@ -15,6 +15,12 @@ findings-applied: 1
 findings-skipped: 0
 exit: CLEAN
 
+## SESSION-START — 2026-05-25T10:00:00Z — facets-b01c02-hard-findings
+dispatch: fix 2 HARD findings from /and-facets b01-c02 Phase 5 audit (fault-002: vibes licensed-by miscitation; fault-003: loc-state:5 continuity-carry misplaced on peak-and-release scene)
+target: active-project/theater/facets/vibes-b01-c02.md, active-project/theater/facets/location-state-b01-c02.md
+audit-report: active-project/staff/auditor/facets-final-audit.md
+findings-queued: 2
+
 ## SESSION-START — 2026-05-25T01:00:00Z — write-b01c01-pass2-svo-recasts
 dispatch: minimum-change SVO recasts for 15 FAULT-FORM faults from write-b01c01-pass2 audit; patch svo: fields only in b01c01-bones-draft-pass1.md
 target: active-project/staff/showrunner/_drafts/b01c01-bones-draft-pass1.md
@@ -734,5 +740,80 @@ criteria met: yes — sensory:2 old-state resolves against loc-state:1's anchore
 
 ## SESSION-END — 2026-05-25T17:05:00Z — and-facets-cycle3-fixes-sensory
 findings-applied: 1 (verified; edits confirmed in place from prior session)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-25T18:00:00Z — b01c02-write-pass1-fixes
+dispatch: targeted correction on /and-write b01c02 Phase 1 draft — 2 HARDs (s03n05 magnitude below floor + FAULT-FORM-INTERIORITY/CONJUNCTION) + class-wide SOFT PP-modifier strip across ~20 bones
+target: active-project/staff/showrunner/b01c02-bones-draft.md
+audit-report: active-project/staff/reviews/auditor-b01c02-write-pass2-2026-05-25.md
+findings-queued: 3 (fault-001 magnitude, fault-002 line form, soft-PP-strip class)
+
+## fault-001 — RESOLVED — 2026-05-25T18:10:00Z
+fault: s03n05 magnitude 0.5 below floor 1.0 (chunk_targets.bone.delta_per_axis: 1-3)
+scope: line
+change: raised magnitude on s03n05 axis_move (moral_legibility_to_self) from 0.5 to 1.0; updated notes field to reflect somatic-halt rationale and within-band tolerance (delivered +1.0 vs chapter target +0.5, within ±1); updated s03 roll-up comment block accordingly
+criteria met: yes — magnitude now 1.0 (at floor); scene aggregate +1.0 vs chapter target +0.5, within ±1 tolerance
+
+## fault-002 — RESOLVED — 2026-05-25T18:10:00Z
+fault: s03n05 line "the word arrives before taylor-hebert-kl-122ac prevents it" — FAULT-FORM-INTERIORITY ("the word" is interior event) + FAULT-FORM-CONJUNCTION ("before X" is compound beat)
+scope: line
+change: rewrote s03n05 line to "taylor-hebert-kl-122ac stalls the count" — single SVO, physical subject (Taylor), transitive verb (stalls), concrete object (the count); somatic correlate of recognition arriving; continues accounting vocabulary from n03/n04; no interiority, no conjunction
+criteria met: yes — clean SVO; physical subject + transitive verb + concrete object; no PP, no conjunction, no interior event
+
+## soft-PP-strip — RESOLVED — 2026-05-25T18:10:00Z
+fault: class-wide FAULT-FORM-PP-MODIFIER pattern across 20+ bones — prepositional phrases of place/direction/source appended rather than folded into transitive verb + direct object
+scope: line (23 bones across s01/s02/s03)
+change: recasted all flagged bones — full list: s01n01 (leaves), s01n03 (drops count), s01n04 (takes alley-mouth), s01n05 (crosses threshold-stones), s01n06 (extends the range), s01n07 (draws the line), s01n08 (fills the Hook), s01n09 (knots the ward-junction), s02n01 (drops "a second time"), s02n03 (crosses the thresholds), s02n04 (alley admits the ward-junction body), s02n05 (returns the function-signature), s02n06 (assigns connector-type), s02n07/n08 (reordered + recast; n07=yields alley-mouth, n08=files contact), s02n09 (opens the gap), s02n10 (holds the gap), s03n01 (takes the drain angle), s03n02 (runs the map), s03n03 (returns the bodies), s03n04 (closes the count), s03n06 (draws the line), s03n07 (drops harm-reduction adjective), s03n10 (exhales bare-intransitive); dramatist SOFT-1 reorder applied to s02 (n07↔n08 swapped; n07 now discipline bone, n08 now axis-mover); s02 roll-up updated to reflect new slug assignments
+criteria met: yes — all flagged bones recasted to transitive SVO or bare-intransitive; no PP modifiers of place/direction/source remain on recasted bones; substance_delta structures, event_map references, and bone slugs preserved throughout
+
+## SESSION-END — 2026-05-25T18:10:00Z — b01c02-write-pass1-fixes
+findings-applied: 3 (fault-001 HARD magnitude, fault-002 HARD line form, soft-PP-strip class)
+findings-skipped: 0
+exit: CLEAN
+
+## fault-002 — RESOLVED — 2026-05-25T10:01:00Z — facets-b01c02-hard-findings
+fault: vibes:1-5 @6 cited `licensed-by: state-update:1` (env time_of_day flip @20 — 14 bones after the vibes anchor); forward-citation violates vibes licensed-by constraint
+scope: line
+change: vibes-b01-c02.md entries 1, 2, 3, 4, 5 — `state-update:1` replaced with `state-update:2` in all five licensed-by fields; state-update:2 is the deployment-state flip at @6 (actor:taylor-hebert-kl-122ac.deployment-state -> systematic-precinct-coverage-deliberate), which is the correct co-anchor
+criteria met: yes — all five vibes entries now cite only sources at anchors ≤ @6
+
+## fault-003 — RESOLVED — 2026-05-25T10:02:00Z — facets-b01c02-hard-findings
+fault: loc-state:5 @26 carried `continuity-from loc-state:4:` notation on a peak-and-release scene (scene-C); continuity-carry license requires flat-low/resolving/release-only rhythm-shape; peak-and-release is not on the permitted list
+scope: line
+change: location-state-b01-c02.md entry 5 — removed `continuity-from loc-state:4:` prefix; rewrote as standalone loc-state entry retaining all sensory content (drain-water trickle audible at angle-gap; lane quiet above stitch-house lamp burndown); proto-line @26 citation [loc-state:5] preserved; no cite-index rebuild required (citation ID unchanged)
+criteria met: yes — loc-state:5 no longer carries continuity-carry notation; entry stands as independent loc-state anchor at @26 with same sensory content; condition (b) violation resolved
+
+## SESSION-END — 2026-05-25T10:03:00Z — facets-b01c02-hard-findings
+findings-applied: 2
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-26T00:00:00Z — facets-b01c02-audience-cycle1
+dispatch: apply Phase 5b cycle-1 audience callouts on 3 facets (location-state DELETE loc-state:5; interest-narrator revise narrator:4; vibes reframe vibes:7 + check vibes:15)
+target: active-project/theater/facets/location-state-b01-c02.md, active-project/theater/facets/interest-narrator-b01-c02.md, active-project/theater/facets/vibes-b01-c02.md
+audit-report: /and-facets b01-c02 Phase 5b cycle-1 audience convergence report
+findings-queued: 3
+
+## fix-1-loc-state — RESOLVED — 2026-05-26T00:01:00Z
+fault: loc-state:5 @26 — necessity/verb-class fail; no movement event at @26 (Taylor at drain angle since @20); "closes" is cognitive-filing not positioning; 3-of-3 audience + auditor fault-003 convergence
+scope: line
+change: location-state-b01-c02.md entry 5 replaced with canonical deletion comment (# DELETED loc-state:5 @26 ...); [loc-state:5] token stripped from proto-lines/b01-c02.md @26; _cite-index.md updated manually: loc-state count 5→4, totals 46→45 entries, 16/29→15/29 decorated, density row 0-bare 13→14 / 1-cite 6→5, @26 moved from lonely-entries to bare-protolines, deletion comment added to loc-state section
+criteria met: yes — entry deleted, proto-line stripped, cite-index clean
+
+## fix-2-narrator — RESOLVED — 2026-05-26T00:01:00Z
+fault: narrator:4 @17 comparative clause "less hesitation than it had the first time she did it" implies prior first-filing event (b01c01:27) with no callback anchor available to reader
+scope: line
+change: interest-narrator-b01-c02.md narrator:4 @17 — comparative clause rewritten: "the filing took less hesitation than it had the first time she did it" → "the filing took less hesitation than it should have"; no cross-chapter callback machinery added; entry body otherwise unchanged
+criteria met: yes — dangling prior-event reference removed; sentence reads self-contained against b01c02 context
+
+## fix-3-vibes — RESOLVED — 2026-05-26T00:02:00Z
+fault: vibes:7 @17 token `categorization-without-contact-as-the-discipline-not-the-failure` pre-closes ironic gap by naming Taylor's suppression as discipline before chapter earns that characterization; 1-of-3 dissent (dark-fantasy-reader); vibes:15 @24 assessed for analogous framing
+scope: line
+change: vibes-b01-c02.md vibes:7 @17 — token rewritten: `categorization-without-contact-as-the-discipline-not-the-failure` → `categorization-without-contact-as-operational-posture`; vibes:15 @24 token `harm-reduction-framing-as-active-filing-mechanism` assessed — "active-filing-mechanism" names mechanism, not endorsement; token already neutral; left unchanged
+criteria met: yes — vibes:7 token now names the mode as operational posture without endorsing it as competence/discipline; vibes:15 confirmed neutral, no change required
+
+## SESSION-END — 2026-05-26T00:02:00Z — facets-b01c02-audience-cycle1
+findings-applied: 3
 findings-skipped: 0
 exit: CLEAN

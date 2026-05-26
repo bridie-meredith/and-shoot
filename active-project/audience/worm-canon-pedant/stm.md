@@ -37,7 +37,7 @@ aggregate: ACCEPT
 hard_findings: []
 soft_findings:
   - b01c15: relational_anchor_status +1.5 with null cost_ledger_anchor — inferentially earned by structure but the un-priced-ledger discipline means the null anchor accumulates as a pattern; recommend adding a cost_ledger_anchor or noting in the b01c15 rationale that the weight is earned by the Fuller Architecture mechanism rather than free; not a block but should be addressed before persist
-  - b01c07: social_tether-prot-rise +1.0 for Halvard encounter will need prose support at write-time — the mechanism (Halvard as precinct node; genuine engagement deepens embedding) is defensible but it is the weakest tether-gain in the book and will need to feel like tether rather than just conversation; the axes_held rationale was correct at draft stage and the axes_in_motion correction flagged in the roll-up is right, but the prose burden for earning this is higher than for other tether beats
+  - b01c07: social_tether-prot-rise +1.0 for Halvard encounter will need prose support at write-time — the mechanism (Halvard as precinct node; genuine engagement deepens community embedding) is defensible but it is the weakest tether-gain in the book and will need to feel like tether rather than just conversation; the axes_held rationale was correct at draft stage and the axes_in_motion correction flagged in the roll-up is right, but the prose burden for earning this is higher than for other tether beats
   - the roll-up footnote about b01c07 social_tether-prot-rise correction (moving from axes_held to axes_in_motion) is self-identified and correct; the YAML should be updated before persist; the delta sum math depends on it
 canonicity_findings:
   - b01c18 "covering bodies in numbers she has not tracked since Gold Morning": the Gold Morning comparison is used as a functional density reference, not as identity claim; this is exactly the once-per-chapter analytical-comparison ceiling and it is well-used here; no flag
@@ -160,3 +160,53 @@ key_moments_that_tracked:
 carry_forward:
   - s02n07 + s02n08 directionality soft watch to stitch review (unchanged from Phase 4)
   - b01c07 prose-burden soft finding carries forward unchanged to b01c07 /and-write
+
+---
+
+## 2026-05-25 — /and-substance chapter b01c02 Phase 5 review
+
+verdict_per_scene:
+  b01c02s01: SUBSTANCE-FELT
+  b01c02s02: SUBSTANCE-FELT
+  b01c02s03: SUBSTANCE-FELT
+chapter_goal_coverage:
+  surveillance_map_visible_before_patron: LAND
+  recognition_file_continue_as_pattern: LAND
+  wren_inside_accounting_without_contact: LAND
+overall: ACCEPT
+notes:
+  - s01 power mechanics: deliberate precinct-wide sweep via insect-contact heat-signature is within established capability range; the mechanism (flies land on skin, beetles run thresholds, weight of clustered insects above a body) is consistent with how Taylor's feed has always worked — biological sensory relay, physical contact required, no broadcast; no flag; holding at harm-reduction scope is also mechanically consistent (not a range limit, a scope choice)
+  - s01 accounting discipline: Taylor draws the prohibition line ("reads ≠ directs") before any act, not as post-hoc rationalization — this is canonical Taylor; she pre-prices the exception so she can file it cleanly; no flag
+  - s02 insect-feed registering Wren as high-traffic node via repeated sweeps: canonical — Taylor builds models from observed behavioral data; the ward-junction categorization from movement pattern is exactly how she characterized Brockton Bay geography before she had individual names; no lore-leak; Wren entering the map without entering the ledger is the un-priced-move pattern confirmed at book Phase 5 as correct
+  - s02 null cost_ledger_anchor: classified consistent with b01c15 soft-finding precedent (mechanism visible = not free; off-ledger because structural, not transactional); the fact that b01c02 and b01c15 both carry null anchors on relational_anchor_status is a developing pattern — the accumulation of null anchors is itself the substance of the axis (the anchor weight is rising because it is never priced); this is the correct architecture, not a repeated evasion; no flag at this stage
+  - s03 crack-and-suppress: "recognition arrives (crack) and is immediately suppressed under harm-reduction framing" matches the registered b01c09 and b01c12 pattern confirmed at book Phase 5; the +0.5 is the non-linear uptick (rank 4 to 4.5); off-ledger because the crack is not a trade; canonical Taylor accounting: the ledger does not open on recognitions, only on decisions; no flag
+  - s03 canonicity watch: the suppression is willful, not impossible — the text says "she does not sit with the recognition," which is behavioral discipline, not inability; consistent with Khepri-residue (she suppresses the word Khepri in b01c12 the same way — willful, not dissociative); no flag
+  - soft carries to /and-write: crack-and-suppress must be two structurally separate bones in s03 (one for the arriving recognition, one for the suppression executing); Wren negative-space in s02 must be enacted as a perceptual property of the insect-feed map (a physical gap with a specific shape), not as Taylor's inference chain about why she has not approached; these are bone-level architecture concerns, not canon violations
+
+## 2026-05-25 — /and-write b01c02 Phase 4 trim
+
+verdict: ACCEPT (29 KEEP, 0 DROP)
+file_verdict: ACCEPT
+notes:
+  - s01 (9 bones): range discipline confirmed at bone level; n05 (threshold-stone mechanism) names the physical relay pathway that the feed uses for heat-signature reading — biological contact required, no broadcast; the mechanism specificity is write-time discipline now present at bone level, not just asserted in the contract
+  - s02 (10 bones): the ward-junction contact categorization (n06: connector-type, n07: filed under stitch-house lane) is mechanically grounded in Taylor's established pattern of building behavioral models from movement data before assigning names; the feed's model-building is autonomous to the sweep's data, not a Taylor decision; Wren negative-space (n04 + n09) is a perceptual property of the coverage map produced by physical deployment gaps — correct mechanical logic confirmed at bone level; soft carry from Phase 5 RESOLVED
+  - s03 (10 bones): crack-and-suppress two-bone requirement confirmed (n05 recognition / n06 suppression); suppression is willful behavioral act (prohibition-line gesture), not dissociative inability; consistent with b01c12 Khepri-word suppression pattern; off-ledger status for the crack (recognition is not a decision) is canonical; three-entry closing sequence (n07-n08-n09) makes the suppression procedural and mechanically honest; soft carry RESOLVED
+  - canonicity: override-architecture fence clean across all three scenes; no directive deployment; no nervous-system coordination; range within rank 3; no parahuman jargon
+  - no flags fired; no lore-leaks; no fence violations at bone level
+
+## 2026-05-25 — /and-write b01c02 Phase 6 bone-gate
+
+verdict_per_scene:
+  b01c02s01: SUBSTANCE-FELT
+  b01c02s02: SUBSTANCE-FELT
+  b01c02s03: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+chapter_verdict: SUBSTANCE-FELT
+notes:
+  - s01: zero axis movement confirmed; capability rank 3 confirmed at bone level; mechanism specificity (threshold-stone relay, biological contact required) is present in the bones, not just asserted in the contract; deliberate extension is a calibrated act, not a passive spread; "reads ≠ directs" prohibition is pre-priced before execution — canon Taylor accounting pattern
+  - s02: relational_anchor_status +1.0 null anchor classified as correct architecture (not evasion) per b01c02 Phase 5 review precedent; the feed's model-building is autonomous to the sweep's data (categorization is what the sweep produces, not what Taylor decides); Wren-negative-space execution is perceptual event in the feed, not inference — physical deployment gaps produce physical map gaps; canon-mechanically clean
+  - s03: crack-and-suppress: suppression is willful (behavioral gesture) not dissociative; consistent with b01c12 pattern; off-ledger status for the recognition is canonical (ledger opens on decisions, not recognitions); three-entry closing procedure is mechanically honest and makes the cost-bearer's filing indistinguishable from ordinary ward data at the accounting level — which is the architecture's problem in the long run
+  - no flags fired; no lore-leaks; no fence violations; soft carry from b01c01 Phase 6 (s02n07+n08 directionality watch to stitch) carries forward unchanged
+  - b01c07 prose-burden soft finding carries forward to b01c07 /and-write

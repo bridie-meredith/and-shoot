@@ -1,78 +1,83 @@
 ---
 facet: exposition
-episode: b01-c01
+episode: b01-c02
 layer: R2
 date: 2026-05-25
-cite_index_hash: 0241e0529031804fa83d25c0fb7a5e0db2491571d2d83d9d9436c734627eca40
-f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
-verdict-counts: {keep: 9, delete: 0, reword: 0, add: 0}
+cite_index_hash: 0a24cee164dd87eec18731b08a1e8e3fbee3642a414430b4ad9e569cd28610ab
+verdict-counts: {keep: 5, delete: 0, reword: 0, add: 0}
+scene-orient-refusals-via-fire-rule: 1  # @1 chapter-open
 ---
 
-# R2 exposition judge — b01-c01 decision shard
+# R2 exposition judge — b01-c02 decision shard
 
 ## Frame
 
-The R1 exposition author produced 9 entries (3 episode-open + 5 first-mention + 1 scene-open-orient). R2 ran the graph-aware judge with all 9 R1 facet files + cite-index in hand. The task brief named the s01e01 Phase 2 dogfood lesson (11 of 11 scene-orient entries refused because NI/loc-state covered them) as the pattern to test against. That pattern does NOT replicate here — and the reason is itself structurally telling.
+The R1 exposition author produced 5 entries (2 episode-open + 1 first-mention + 2 scene-open-orient) on a 29-bone bones-only chapter. R2 ran the graph-aware judge with all 10 locked R1 facet files + cite-index in hand. The task brief named the s01e01 Phase 2 dogfood lesson (11/11 scene-orient refusals because NI/loc-state covered) and the URI-SCENE-WINDOW protocol of re-validating R1-blind scene-open-orient against the locked graph (DELETE if loc-state at the boundary or NI in first-2 anchors now carries the time/place disjuncture).
 
-The chapter's `location-state-b01-c01.md` is a zero-entry file with a documented carve-out: the bones header `locations:` is empty, no location-card slugs were declared, and every movement-verb gate walk BLOCKED. The studio explicitly cannot author loc-state without slugs. The graph's loc-state surface is therefore silent across all 27 anchors — which means the scene-orient fire-rule clause (b) `loc-state silent at scene-open anchor` holds trivially everywhere it would otherwise need to be checked.
-
-The interest-narrator file fires six times, but none of the fires land at the scene-orient boundary in question (@18). NI's nearest fires to @18 are @11 (mid-scene-2) and @21 (mid-scene-3). The clause (c) `NI silent in first 2 anchors of new scene` holds at @18.
-
-The chapter is a thin-graph chapter on the spatial/orienting axis (no loc-state) and a dense-graph chapter on the interior/somatic axis (vibes pile-ups at @12 and @21; state-updates at every Taylor-axis-move; feeling per character; memory at the chapter's two callback anchors). The exposition entries that R1 authored sit cleanly on top of the thin-graph axis where lens facets cannot reach. Every R2 KEEP is honest.
+The b01-c02 graph is more loc-state-dense than b01-c01 (5 entries vs zero-fire) but less NI-dense at the scene boundaries. The critical re-validation lands on the two FIRED scene-orient entries (@10, @20). Both survive — loc-state's time-band field is studio metadata, not prose-surface; the prose-surface markers loc-state writes are place/sensory not temporal. NI silence in first-2-anchors of scene-B and scene-C is confirmed by the locked NI file. The temporal disjunctures (days-of-coverage at @10; end-of-day at @20) are not covered by any other facet at the prose-surface level. The s01e01 dogfood pattern does not replicate — but for a different reason than b01-c01 (which had zero-loc-state). Here, loc-state fires across scenes but consistently marks place; the scene-orient gate has no temporal competitor in the graph.
 
 ## Per-entry decisions
 
-**exposition:1 @0 episode-open-preamble** — The cold read produces the chapter's load-bearing frame in four moves that no lens facet renders: the Khepri-residue (function-form, no proper-noun fence violation), the resurrection-in-foreign-body, the range-residue, and the rule. The three personas all have the structural gap: cape-fic doesn't know the Khepri-ending, dark-fantasy doesn't know Worm, worm-canon-pedant needs the 122-AC frame named. Hard-fence audit clean. vibes:1 and vibes:2 carry the world-loading texture as off-anchor author-side signals to stitcher, not as reader-surface.
+**exposition:1 @0 prior-episode-bridge** — Cold-read holds. The 3-week skip + listening-extension framing + restated prohibition is the chapter's load-bearing handoff from b01-c01 and is not carried by any lens facet (mem:1 @7 is the older-charter monument-flag inside the chapter, not the bridge). All three personas need the bridge: cape-fic to read the chapter as organizing-shift not cold-restart; dark-fantasy to hold Hook subsistence-texture; worm-canon to see the prohibition restated as the chapter's axis-floor. Hard-fence clean (function-form only — "subsistence-reading", "the count", "the rule", "the line"; no Earth-Bet proper nouns). Voice: first-person Taylor throughout.
 VERDICT: KEEP
 
-**exposition:2 @0 episode-open-context** — The cold read holds the three-weeks pre-state ground. Dark-fantasy needs the Hook subsistence-texture as Hook-specific (not generic-medieval); cape-fic needs the prohibition as current-choice (not backstory); worm-canon needs the suppression-cost register against Khepri-residue. The "Hook" forward-reference (the preamble names the term before exposition:4's @1 gloss) resolves cleanly under the preamble's 1-2-bone forward-reference convention — exposition:4 fires immediately at @1, one bone after the preamble closes. The R1-flagged reword to "this slum-district" would lose register precision without solving a real seam.
+**exposition:2 @0 episode-open-context** — Cold-read holds. Names the coverage-map / count / accounting / ledger family + the prohibition's specific reading-vs-directing articulation. NI uses this vocabulary as already-resident ("the working ceiling" @6, "the suppression overhead" @6, "the prohibition" @7, "the coverage map" @18, "the count" @24); cite-index confirms no NI entry introduces the family — it is presupposed. Without exposition:2 the NI fires read as already-named-vocabulary the reader has not been given. Voice: first-person Taylor.
 VERDICT: KEEP
 
-**exposition:3 @0 episode-open-context** — The cold read holds. This entry names the chapter's moral_framework axis explicitly so the @12 prohibition-crack reads as the crack the substance_delta marks it as, rather than as neutral capability deployment. Without exposition:3, cape-fic reads @12 as competent-tactical (which it is, but not only); dark-fantasy reads the chapter as low-stakes subsistence rather than as the opening crack in a chosen prohibition. R1's flagged DROP candidate is the wrong call — exposition:3 is the smallest piece of the chapter's axis-load that names the prohibition to the reader. vibes:1 carries the off-anchor signal but does not render. Episode-open-context cap (≤3) honored at 2 (preamble + 2 context = 3 episode-open total, under cap-4).
+**exposition:3 @9 first-mention-place (ward-junction)** — Cold-read holds. The cite-index shows bone @9 with only [exposition:3] attached; no lens facet fires at @9. The term "ward-junction" then appears on NI:3 @15 ("the junction-body connector-type"), NI:4 @17 ("the ward-junction contact"), and bones @9-@29 in compound forms — all of which presume the gloss has landed. Two-sense ward note in the entry (precinct-ward physical-corner vs institutional-precinct sense from b01c01:8 vs child-fostering sense from b01c01:5) is structurally honest. Fence audit: speech-bone set = ∅ chapter-wide; fence inoperative; em-dash-fold permitted at cheapest render-cost.
 VERDICT: KEEP
 
-**exposition:4 @1 first-mention-place (flea-bottom + the-hook)** — The cold read holds. The graph confirms loc-state silent at @1 (chapter-wide zero-fire); NI's first fire is @4 in interpretive register (the swell-as-suppression-slipping); sensory:1 fires at @2 (smell modality) without naming place. The Hook + Flea Bottom + King's Landing combined gloss is the chapter's place-grounding load. Cape-fic and worm-canon have structural gap; dark-fantasy may know Flea Bottom but the Hook sub-precinct is light enough for em-dash-fold. The em-dash-fold render-as is the cheapest fold that fits the gloss content.
+**exposition:4 @10 scene-open-orient-B (days-of-pattern)** — The critical re-validation. All three fire-rule clauses re-checked against the locked graph:
+  - (a) Time-skip-blank between scene-A close (@9 single-sweep ward-junction-knot) and scene-B open (@10 days-of-coverage Wren-pattern): CONFIRMED via scene-map (scene-A time-band dawn-to-day → scene-B time-band days-of-coverage).
+  - (b) loc-state at scene-open anchor: loc-state:3 fires at @11 (one bone past the boundary, not at it) with time-band "days-of-coverage" in the metadata header but with prose-surface "tallow smoke pooling at lane-floor level in the east wall's reach: the insect-feed's location marker for the stitch-house threshold" — this is sensory / place, NOT a temporal-disjuncture marker. The time-band field is studio metadata that informs renderer placement but does not surface to the reader as the "days have passed" temporal-bridge. loc-state:3 covers place at @11, not the time-shift at @10.
+  - (c) NI silent in first-2 anchors of scene-B (@10, @11): CONFIRMED. NI's fires are @6, @7, @15, @17, @18, @24, @25. No fire at @10 or @11. Even the chapter's nearest NI to the boundary (NI:3 @15) is cognition-of-pattern-coverage, not cognition-of-elapsed-time.
+The s01e01 dogfood DELETE-condition (lens covers the disjuncture) does not obtain. The bone-text "the insects return the ward-junction body" reads as continuous with @9's ward-junction-knot moment without the temporal bridge — the days-of-pattern accumulation collapses into one sweep. "Days of it, and the pattern came." supplies the disjuncture without claiming a hard date the scene-band cannot defend. Voice: pov-frame perception of elapsed time; acceptable under rubric §voice for scene-bridge.
 VERDICT: KEEP
 
-**exposition:5 @1 first-mention-term (stitch-house-ward-context)** — The cold read holds. Two-sense ward usage is real: the precinct-ward sense fires at @21 inside Oswyn's gloss (exposition:8); the child-fostering sense fires at @27 inside Wren's gloss (exposition:9). The cite-index confirms exposition:5 lic-in=[exposition:8, exposition:9] — the cross-reference is structurally encoded. Lens facets reference "ward-accounting" (vibes:6) and "ward's face" (NI:6) but presume the term; state-updates:9 names Wren's relational_anchor shift without defining ward. The gloss earns its place pre-positioning the child-fostering sense before Wren's @27 cost-bearer reveal. Parenthetical-aside render-as is correct (term needs definition not just naming, but the gloss is short enough to not need a full preamble paragraph).
-VERDICT: KEEP
-
-**exposition:6 @7 first-mention-object (fish-cart)** — The cold read holds. No co-location at @7 in the cite-index. Loc-state silent (chapter-wide); NI's nearest is @8 in interior-cognition register (the ground-transmitting-the-child's-breath); sensory's nearest is @2 (smell). The bone-text "the fish-cart blocks the lane" reads bare without the Hook-morning-trade-traffic grounding — the cart's crosswise blockage is the load-bearing image of scene-2's opening and needs the river-side-gate context to land as a Flea Bottom morning-trade reality rather than a generic obstacle. em-dash-fold render-as is correct.
-VERDICT: KEEP
-
-**exposition:7 @18 scene-open-orient** — The critical re-validation. All three fire-rule clauses satisfied against the locked graph: (a) time-skip-blank between @17 and @18 confirmed; (b) loc-state silent at @18 — loc-state is chapter-wide zero-fire; (c) NI silent in first 2 anchors of new scene (@18, @19) — NI's nearest fire is @21, which is mid-scene-3 and post-resolution. The bone-text "the crowd thins" describes the dispersal state but does not orient the time-disjuncture from @17's hands-up moment to @18's dispersal. The gloss "After the gap closed" supplies the temporal disjuncture. The voice annotation (R1 acknowledged) holds: the third-person environment-observation register is the POV's perception of the crowd, acceptable under pov-frame-first-person voice. The s01e01 dogfood concern (11 of 11 refusals because NI/loc-state covered) does NOT apply because this chapter's zero-loc-state plus NI-fires-mid-scene topology means the scene-orient gate has nothing competing for the @18 surface.
-VERDICT: KEEP
-
-**exposition:8 @21 first-mention-character (oswyn-mudway)** — The cold read holds. Heavy co-location at @21 (cite-index pile-up of 7 facets) but the lens facets all PRESUME Oswyn's identity rather than introduce him. NI:5 ("the elder's stance over the lane-mouth was doing the work a word would do in a week") only lands if the reader already knows him as the Hook ward-elder. vibes:5 ("the-categorizing-witness") presumes the role. state-updates:1 names his location-shift in slug-internal form (`mudway-alley-hook-district -> lane-mouth-of-rescue-site`), not reader-facing prose. The em-dash-fold gloss carries the minimum identity-package the lens facets all rely on. Hook resolved via exposition:4's prior gloss; ward-elder is grounded inside this entry as the precinct-ward sense (cross-reference to exposition:5 intact).
-VERDICT: KEEP
-
-**exposition:9 @27 first-mention-character (wren-stitch-maker)** — The cold read holds. Co-location at @27 with narrator:6 + vibes:9 + vibes:10 + feel:4 + state-updates:9, but every lens-facet entry presumes Wren's identity. NI:6 says "the ward's face had found hers; she filed the registration" — presumes a "ward" the reader has not been introduced to. vibes:9 ("the-first-facing") and vibes:10 ("tragic-causal") both require Wren's identity to land as the cost-bearer image they're reaching for. feel:4 names a body-tell ("her eyes lead her head toward taylor") without naming whose body. state-updates:9 names her relational_anchor shift in slug-internal form. The em-dash-fold gloss is the load-bearing reader-introduction that the chapter's closing image depends on — without identity-grounding the chapter-close reads as an unnamed eleven-year-old rather than as the stitch-house ward whose presence Taylor has been registering since scene-1 sensory.
+**exposition:5 @20 scene-open-orient-C (end-of-day)** — The second critical re-validation. Fire-rule clauses:
+  - (a) Time-skip-blank between scene-B close (@19 coverage-map-holds-the-gap mid-coverage) and scene-C open (@20 end-of-day accounting): CONFIRMED via scene-map (scene-B time-band days-of-coverage → scene-C time-band end-of-day).
+  - (b) loc-state at @20: loc-state:4 fires AT @20 with time-band "end-of-day" in metadata but with prose-surface "angle-wall cobblestone underfoot at the pinch-point: the narrowing marks the lane's south terminus; the feed has no cover here" — this is place / sensory texture, NOT a temporal-disjuncture marker. The drain-angle-reoccupied state-marker carries return-to-start spatially; it does not surface "end of day" as time-bridge. Studio's time-band metadata is renderer-informing, not reader-surface.
+  - (c) NI silent in first-2 anchors of scene-C (@20, @21): CONFIRMED. NI:6 @24 is the recognition-cognition mid-scene-C, not at the boundary. NI's nearest to @20 is NI:5 @18 (mid-scene-B). No NI fire at @20 or @21.
+The s01e01 dogfood condition does not obtain. The bone-text "taylor-hebert-kl-122ac takes the drain angle" contrasts @1's "leaves the drain angle" but the spatial return alone does not mark end-of-day; without the temporal bridge @20 reads as continuous with @19's mid-coverage moment rather than the day's-close framing the scene's recognition arc requires. "End of day. I ran the map." supplies the disjuncture as the chapter's recognition-and-suppression hinge. Voice: first-person Taylor explicit ("I ran the map").
 VERDICT: KEEP
 
 ## Add-cap consideration
 
-Add-cap ≤3 permitted. 0 adds proposed. The graph reveals no niche that the at-rest reading wants exposition to fill: every fold the chapter needs is already on the lens facets (the off-anchor vibes-loading at vibes:1/2; the NI interior-cognition fires; the dialogue at @16 carrying the voice-instruction event; the memory callbacks at @3 and @26). R1's audience-pure gap identification was complete. T4 (niche-driven add) does not fire because no add is proposed.
+Add-cap ≤3 permitted. 0 adds proposed. The locked graph reveals no niche that the at-rest reading wants exposition to fill:
+- The Wren-as-ward-junction-body function-labeling discipline is structurally protected by the chapter's not-knowing contract (bones use definite description; mem:2 @18 carries the architecture-residue resonance; vibes/feel/NI all fire on the function-labeled register). Adding a first-mention-character for Wren would defeat the chapter's deliberate not-knowing.
+- The coverage-map family is preamble-glossed at exposition:2; in-body first-mention entries for "the coverage map" @18, "the accounting" @23, "the ledger" @27 would re-gloss the preamble's work (R1 culled these correctly).
+- The drain-angle is b01c01-preamble-resident; a re-gloss is forbidden by the cross-episode register's re-gloss rule.
+T4 (niche-driven add) does not fire.
 
 ## R1 flagged seams — R2 reconciliation
 
-Seam 1 (preamble forward-reference "Hook" at exposition:2 → exposition:4 at @1): RESOLVED. exposition:4 fires immediately at @1; one-bone resolution-window within preamble convention.
+Seam 1 (sparsity 17.2% above 1-5% band): VALIDATED. b01-c01 R2 shard established the precedent that bones-only chapters under URI-SUBSTANCE-OVERHAUL have per-episode caps as the binding constraint, with sparsity ratio a structural artifact. All caps satisfied: 1 prior-episode-bridge (=cap 1); 1 episode-open-context (under cap 3); 1 first-mention (under cap 12); 2 scene-orient (= 2 boundaries × max 1; under cap scene-count=3). 17.2% is below b01-c01's 33% precisely because the cross-episode register is now seeded — fewer first-mention entries fire because more terms are reader-resident.
 
-Seam 2 (scene-orient at @7 refused): VALIDATED. Loc-state silent, NI silent in time/place register at @7-@8 (NI:2 at @8 is interior-cognition not time-marker), fish-cart first-mention at exposition:6 carries the scene-2 opening image. R1 REFUSE stands.
+Seam 2 (scene-orient FIREs at @10 and @20): VALIDATED per per-entry analysis above. Both survive R2 graph-aware re-validation.
 
-Seam 3 (two-sense ward cross-reference): RESOLVED. cite-index confirms exposition:5 lic-in=[exposition:8, exposition:9]; cross-reference structurally encoded.
+Seam 3 (R1 cull-pass DROPs — drain-angle re-gloss, coverage-map first-mention, ward-junction-body character first-mention): VALIDATED. All three drops are correct per cross-episode register rule (drain-angle), preamble-precedence rule (coverage-map family members), and not-knowing contract rule (Wren-as-function-label).
 
-Seam 4 (sparsity-band overage 33.3% vs 1-5%): VALIDATED. Bones-only chapter structure (27 anchors post-URI-SUBSTANCE-OVERHAUL) makes per-episode caps the binding constraint. All three caps under threshold (3 episode-open ≤4; 5 first-mention ≤12; 1 scene-orient ≤2). R1's hedged DROP of exposition:3 is rejected — exposition:3 names the chapter's moral_framework axis and is load-bearing for cape-fic + dark-fantasy reading of the substance_delta.
+Seam 4 (two-sense ward at exposition:3): VALIDATED. Register write-back distinguishes the precinct-ward physical-corner sense (b01c02:3) from the precinct-ward institutional sense (b01c01:8 oswyn-mudway-gloss) from the child-fostering sense (b01c01:5 stitch-house-ward-context). Three coexistent senses; cross-references intact.
 
-Seam 5 (stitch-house at @2 not glossed): VALIDATED. sensory:1 at @2 carries the tallow-smoke-from-stitch-house-lane texture in smell modality; stitch-house's textile-trade-household identity lands at @27 via exposition:9 + cost-bearer vibes:9/10. Adding a separate first-mention-place at @2 would duplicate sensory load and pre-load the cost-bearer reveal.
+Seam 5 (loc-state time-band metadata vs prose-surface temporal-marker): NEW SEAM IDENTIFIED IN R2. Studio's loc-state schema carries `time-band` in the metadata header but the prose-surface field describes physical state-marker (smoke pooling, cobblestone underfoot, lamp burndown). This is correct studio behavior — loc-state authors place-state, not time-bridges — but it means scene-orient fire-rule clause (b) "loc-state silent at scene-open anchor" needs a narrower reading: silent on the temporal-disjuncture surface, not on the anchor itself. R2 reads the clause this way and KEEPs both scene-orients. **Process-flag for principal:** if downstream stitcher renders loc-state metadata time-band as prose, the scene-orient surface could become redundant with loc-state; current loc-state authoring keeps them separable.
 
 ## Pattern-scan
 
-PATTERN-SCAN: The facet reads end-to-end as a structurally clean audience-modeling object. Three episode-open entries load the project's frame (Worm-residue function-form / Westeros-frame named-pre-Conquest / the rule as organizing axis); five first-mention entries spread across the chapter's first-mention anchors (place @1, term @1, object @7, character @21, character @27); one scene-orient at the only scene-boundary the fire-rule licenses (@18). The voice rule (pov-frame first-person) holds across all episode-open and scene-open-orient entries; first-mention entries render as narrator-aside which is acceptable in first-person register. The em-dash-fold rhythm at @1/@7/@21/@27 is register discipline, not template-saturation — each fold lands on a different scope (place / object / character / character). Hard-fence audit clean across all 9 entries (no Earth-Bet proper nouns; function-description substitution per cond-earth-bet-noun-fence § substitution-register). R2 finds no facet-wide pattern that wants remediation.
+PATTERN-SCAN: The facet reads end-to-end as a register-disciplined audience-modeling object. Two episode-open entries load the chapter's organizing frame (3-week skip + extension decision + coverage-map vocabulary + prohibition's specific articulation); one first-mention at the only first-mention anchor the locked graph leaves unglossed (@9 ward-junction precinct-corner sense); two scene-orient at both scene-boundaries the fire-rule licenses (@10, @20). The first scene-boundary (@1 chapter-open) is correctly refused — preamble carries. Voice rule (pov-frame first-person) holds across all entries. Hard-fence clean (no Earth-Bet proper nouns; all function-description register). Em-dash-fold rhythm at @9 is single-instance, not template-saturation. Embedded-noun completeness audit (URI-FACETS-CYCLE-1 HARD) clean per R1's entry-by-entry walk. R2 finds no facet-wide pattern that wants remediation.
 
 ## Arbiter intervention log
 
-No arbiter interventions fired during this judge pass. T1 (rubric-label-heavy / entry-specific-light) did not trigger — each per-entry verdict paragraph names specific content from the entry and from the lens-facet graph that justifies the verdict. T4 (niche-driven add) did not trigger — no adds proposed.
+No arbiter interventions fired during this judge pass. T1 (rubric-label-heavy / entry-specific-light) did not trigger — each per-entry verdict paragraph names specific content from the entry, the locked graph, and the fire-rule clauses. T4 (niche-driven add) did not trigger — no adds proposed.
 
 ## Glossed-terms register impact
 
-No DELETEs. No glossed-terms register removals required. The register's existing entries from the R1 write-back block remain authoritative.
+No DELETEs. No glossed-terms register removals required. R1's write-back block (ward-junction; coverage-map-instrument-family; prohibition-line-reading-vs-directing) remains authoritative and should be promoted to the register at facet-close per R1's instruction.
+
+## Summary
+
+KEEP: 5 (entries 1-5).
+DELETE: 0.
+REWORD: 0.
+ADD: 0.
+Scene-orient refusals via fire-rule: 1 (@1 chapter-open).
+Scene-orient FIREs survived R2: 2 (@10, @20).

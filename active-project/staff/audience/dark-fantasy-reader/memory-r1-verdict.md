@@ -1,63 +1,78 @@
 ---
 facet: memory
-episode: b01-c01
+episode: b01-c02
 reviewer: dark-fantasy-reader
 cycle: 1
 date: 2026-05-25
-verdict: revise
+verdict: accept
 ---
 
-# Dark Fantasy Reader — Memory Facet Adversarial Verdict (cycle 1)
+# Dark Fantasy Reader — Memory Facet Adversarial Verdict (cycle 1, b01-c02)
 
 ## Per-entry callouts
 
-### [mem:1 @3] @3 — Earth-Bet displacement on prohibition-maintenance
+### [mem:1 @7] @7 — Westerosi-monument on conquest-charter-language
 verdict-entry: accept
 
-This one lands. "The feet hold the only discipline she brought from before that still does what it was built for." That is the smell of a world before anyone puts a name to it. The displacement is working correctly: something from before, something that still functions, something that was built for a purpose — all of that is weight without explanation. The reader does not need to know what "before" was to feel that it has cost her something to maintain this. That is dark-fantasy-correct: the burden is present in the body before the history is named.
+The monument fires correctly here. "An older country's charters... a province out of land that had not been one before the stroke." This is Planetos-specific weight: not generic medieval map-drawing but the specific violence of the Westerosi legal act — the stroke that transforms territory into subject. The reader who knows what these charters made of people does not need it explained. The cue lands as Planetos-particular superstition of a different kind — not superstition exactly, but the world's built-in architecture for consuming territory and people, and Taylor drawing her surveillance line with the same stroke.
 
-The cue-construction honors base-register interiority — the body holds, the prohibition enacts, there is no feeling-word, no named sentiment. Clinical-of-the-horrible register honored.
+This is the smell of a world that was there before the protagonist arrived. The charters existed before Taylor. The mechanism existed before Taylor. She is performing an act the world already has a name for, and the name arrives without her knowing it. That is the dark-fantasy tell: the world's categories outrun the protagonist's self-awareness. The cue fires on the act, not the self-awareness. Correct.
 
-Quiet-beat anchor: scene-A flat-low, @3, no peak-bones. The register is right: this is the approach-zone, suppression at subsistence, weight accumulating before the scene requires anything of her. A fire here is correct posture.
+The fact that it fires at @7 — the gesture itself, not any reflection on the gesture — is the right posture. If the monument fired on Taylor thinking about her surveillance map, it would be self-aware; it would cost nothing. It fires on the doing. The doing is what costs.
 
-Target-reference flag-013 noted: `cond-*` slug form. I defer to the rubric's convention requirement and to margit. The monument-substance is identifiable from the condition card. SIGNAL.
+Hard fence: clean. No proper nouns. No Dance-specific year-stamps. The Westerosi cue is specific to cultural mechanism, not to named event or named person. Pass.
+
+Convergence-trace: no auditor finding. No convergence with Phase 5 audit.
 
 ---
 
-### [mem:2 @26] @26 — Westerosi-monument clamp on witch-label-formation
-verdict-entry: revise
+### [mem:2 @18] @18 — Earth-Bet displacement on cond-override-architecture-residue-122ac
+verdict-entry: accept
 
-The description is the best thing in this file. "The chin lifts the way it lifts in the country's older stories when a word has been waiting for a person and the person has finally arrived to fit it." That construction is doing what dark fantasy does at its best — the world is older than the event, the category is already waiting, the person just walked into the slot that was cut for them centuries before. This is Planetos-specific superstition registering correctly: not generic medieval, but the particular way this culture has always recognized witches. It earns the weight it is asking for.
+"The absence has the shape of one person and the shape is the architecture she came here to refuse to build surfacing through the method she has not yet looked at."
 
-And then it does not have a spine.
+This is the entry I was waiting for. The coverage map has a gap — a person-shaped gap — and the monument fires on the shape of the absence. That is dark-fantasy consequence at its best: the architecture Taylor refused to build has already built itself, in the negative space of the method she chose. She has not looked at it yet. The reader can see it. The weight is already accumulating before Taylor acknowledges the ledger entry.
 
-I have been burned too many times by atmosphere that does not pay. The licensing layer exists to prevent exactly this failure: a cue that floats beautifully but is not anchored to the POV's registered interior. The cite-index shows mem:2 @26 co-cites [state:2, state:8] only. No narrator-interest fires at @26. No feel-flag fires at @26.
+The word "surfacing" is doing real work here. Not "present" — surfacing. The override-architecture-residue is the right monument-anchor because residue is precisely what this is: the pattern she suppressed after Gold Morning surviving not as active capability but as the shape her methods take without her intending it. The absence has the architecture she left behind. That is suffering that changes the person who survives it — slow, structural, not yet visible to her. The dark fantasy reader's patience is being rewarded.
 
-The V3 carve-out would allow a feel-flag to substitute for narrator-interest in a held-discipline scene under a hinge dramatic_shape with stakes_axis in axes_held[]. But condition (3) requires a feel-flag on the same @proto-line-id. There is none. The carve-out is not available.
+"Has not yet looked at" is load-bearing. The chapter's dramatic_shape is rising, and this is the correct point for the set — not the payoff, not the recognition, but the moment the reader sees the shape before the narrator does. This is how you accumulate weight without discharging it early.
 
-The R2 stamp's "graph spine of the categorization event" language is the R2 judge reaching for a defense that the rubric does not offer. State-update co-citation at @26 (state:2 — the witch-label categorization event being confirmed; state:8 — same bone) is correct state-bookkeeping. It is not the licensing-layer spine. The spine is the interior's registered catch — the thing that tells the stitcher "this beat was felt before the monument was licensed." Without NI or feel at @26, the interior's catch is unregistered.
+Hard fence: clean. No Earth-Bet proper nouns. The slug `cond-override-architecture-residue-122ac` is the fence-clean successor form per the authoring notes' hard-fence sweep. Pass.
 
-The consequence is real: the stitcher would render figurative content against @26 (the description warrants it) but the gating precondition is missing. In a tight dark-fantasy read, content that appears without the architecture that licenses it feels unearned — it is atmosphere paid on credit. The dark-fantasy reader's entire posture is about that credit check.
+Convergence-trace: no auditor finding. Sparsity check 6.9% — within band.
 
-Repair path: narrator-interest author fires at @26 (the chin-lift as the moment the interior registers the witch-label forming; the interior has the insect-feed to confirm what it is watching); OR feel author fires at @26 (Oswyn's gesture as a somatic registration — Taylor feeling the category close around her); AND all V3 conditions are explicitly documented if feel-spine is invoked. Either path repairs the spine. The description ships unchanged.
+---
 
-Target-reference flag-013 noted: `cond-kl-witch-label-formation-122ac` vs. `monument-*` convention. This card governs the social process of witch-label formation — it is more process-card than monument-card. A true monument-slug would name the monument itself (e.g., `monument-witch-label-formation-kl` or `monument-older-stories-word-waiting`). The rubric distinction between condition cards and monument cards matters here: condition cards govern rules/constraints; monument cards are the stitcher's routing targets for figurative content. If the stitcher tries to route a callback against `cond-kl-witch-label-formation-122ac`, it is routing against a process-rule, not a monument-anchor. That is not equivalent. SIGNAL escalated: the slug convention question here has substantive implications beyond naming, not just margit housekeeping.
+## Scene-C silence (@24 peak — deliberate or miss?)
 
-Convergence with auditor: flag-012 (spine gap) and flag-013 (slug convention). My read on flag-012: not borderline — spineless under clear rubric conditions. My read on flag-013: higher stakes for mem:2 than for mem:1 because the condition-card / monument-card distinction matters for stitcher routing.
+The question is whether the silence at @24 (`taylor-hebert-kl-122ac stalls the count`) reads as deliberate or as a miss.
+
+Dark-fantasy reader's answer: deliberate, and the authoring notes make a credible case. The stall at @24 IS the recognition — it is the moment Taylor's count stops, which is the discharge of the substance tension the chapter has been building. Adding a memory flag at @24 would be adding a narrator-commentary on top of an act that is already commentary. The act is the registration.
+
+More specifically: if a monument fires at @24 in the override-architecture-residue family, it closes the gap that mem:2 opened at @18. The reader's holding of that tension — the unlooked-at absence that has the shape of one person — is the payoff, and it is deferred past @24, into the exhale at @29 and beyond the chapter entirely. A memory flag at @24 hands the reader the interpretation. The silence forces the reader to hold it.
+
+The anti-pattern spacing rule (same family two beats apart) independently blocks a mem:3 at @24 given mem:2 at @18. The authoring notes cite this as the secondary rationale. The primary rationale is correct: the act IS the discharge, and a monument fires when the act echoes an older pattern — but at @24 the act is so new, so immediate, that it has not yet sedimented into pattern. Pattern requires at least the inhale and exhale. @24 is mid-inhale.
+
+Scene-C silence: deliberate. Not a miss.
 
 ---
 
 ## File-level assessment
 
-The doubled-register gate is met on count if both entries survive. If mem:2 is deleted rather than repaired, single-register fail results. The repair path is spine-fix, not deletion.
+Sparsity: 2/29 = 6.9%. In band. Pass.
 
-The file's two-entry shape is correct for a 27-bone episode — this is sparse, inverted, and the two monument-families are distinct. The shape passes if both entries are corrected. The issue is entirely in mem:2's missing spine and the slug-convention questions in both target-references.
+Doubled-register: 1 Westerosi (conquest-charter-language, @7) + 1 Earth-Bet displacement (cond-override-architecture-residue, @18). Register gate met. Pass.
+
+Monument-family-diversity: 2, distinct families. Pass.
+
+Pressure-signal inversion: both entries fire in quiet-beat positions. Neither is a peak-bone. The chapter's load-bearing peak at @24 is deliberately silent at the memory layer; the reader carries the weight forward uninterpreted. Correct for a rising chapter that is building toward a recognition that has not yet been earned.
+
+What the file does that earns the read: it fires twice on behavior (the draw-the-line, the map-gap), not on reflection. Both entries are anchored in what Taylor does, not in what she understands. For a dark-fantasy reader who has been burned by atmosphere that does not pay — this is atmosphere that is paying the bill before it's presented.
 
 ---
 
 ## Verdict
 
-`revise`
+`accept`
 
-mem:1 accepts with SIGNAL (slug convention; margit referral candidate for `monument-*` form).
-mem:2 revises: spineless fire — no NI at @26, V3 carve-out fails condition (3). Repair requires NI or feel author to fire at @26 before this entry ships. Additionally, slug convention for target-reference has substantive implications for stitcher routing: `cond-kl-witch-label-formation-122ac` is a process-rule card, not a monument-anchor card; margit referral to author `monument-*` form is not merely housekeeping.
+Both entries accept. No revise or fail findings. Scene-C silence reads as deliberate and structurally correct. The two-entry file is sparse, inverted, and fires on behavior rather than reflection — which is how weight accumulates without premature discharge in a dark-fantasy rising chapter.

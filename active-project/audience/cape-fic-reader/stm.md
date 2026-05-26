@@ -78,3 +78,47 @@ notes:
   - held axes across all scenes: all six (s01) / five (s02/s03) feel enacted as load-bearing dormancy; political_register-prot at structural baseline (no court content, correctly suppressed); moral_framework crack visible to reader at s02n07, not yet to Taylor
   - soft watch retained: s01n01/s01n06 anonymity-by-geometry distinction must be felt in prose; s02n05 and s03n01 political_register-prot held bones need physical specificity at prose execution
   - no fatigue triggers fired; no established limits bypassed without cost; no unmotivated knowledge
+
+## 2026-05-25 — /and-substance chapter b01c02 Phase 5 review
+
+verdict_per_scene:
+  b01c02s01: SUBSTANCE-FELT
+  b01c02s02: SUBSTANCE-FELT
+  b01c02s03: SUBSTANCE-FELT
+chapter_goal_coverage:
+  surveillance_map_visible_before_patron: LAND
+  recognition_file_continue_as_pattern: LAND
+  wren_inside_accounting_without_contact: LAND
+overall: ACCEPT
+notes:
+  - s01 all-held-axes opening does not register as filler: the "reads ≠ directs" rule is the tactical rule-definition this reader wants; mechanism established before it acts; the asymmetry is live (ward knows nothing, Taylor knows the line, reader knows both)
+  - s02 relational_anchor_status +1.0 via named absence is a board-move via information-asymmetry: the map has a gap shaped like Wren; reader can see it before Taylor names it; the null cost_ledger_anchor is not a cheap-gain — the anchor opens as structural accounting, not transactional exchange; hot button (new character trust without cost) does not fire because this is not trust, it is categorization
+  - s03 crack-and-suppress in two beats is the correct information-asymmetry shape: reader can see the surveillance architecture Taylor builds; the suppression mechanism is reader-visible (harm-reduction accounting closes the ledger) while Taylor continues; the +0.5 is not cheap because the suppression is labor
+  - no fatigue triggers: no unmotivated knowledge, no established limit bypassed, no filler; held axes in s01 are load-bearing setup
+  - soft carries to /and-write: (1) crack and suppression must be two structurally separate bones at /and-write, not one interior-state report; (2) Wren negative-space in s02 must be enacted as perceptual event in the insect-feed (physical gap in the map), not as Taylor's reasoning chain
+
+## 2026-05-25 — /and-write b01c02 Phase 4 trim
+
+verdict: ACCEPT (29 KEEP, 0 DROP)
+file_verdict: ACCEPT
+notes:
+  - s01 (9 bones): no axis movement, all held; n05 was the margin call (threshold-stone mechanism vs. ambient n02) — keep confirmed because the mechanism precision is necessary for s02's "without contact" premise; no filler
+  - s02 (10 bones): relational_anchor_status +1.0 delivered by n07 alone; n06 (connector-type label) earns its place as the filing content that makes n07's axis-move read as filing-something rather than filing-nothing; Wren negative-space in n04 + n09 reads as perceptual event in the feed (soft carry from Phase 5 RESOLVED at bone level)
+  - s03 (10 bones): crack-and-suppress in two structurally separate bones confirmed (n05 recognition / n06 suppression); soft carry from Phase 5 RESOLVED; three-entry ledger-closing rhythm (n07 fever-cluster, n08 dark-junction, n09 ward-junction contact) makes the suppression read as procedure, not as special act toward the cost-bearer
+  - no fatigue triggers: no filler, no unmotivated knowledge, no established limit bypassed; all 29 bones held or moving
+
+## 2026-05-25 — /and-write b01c02 Phase 6 bone-gate
+
+verdict_per_scene:
+  b01c02s01: SUBSTANCE-FELT
+  b01c02s02: SUBSTANCE-FELT
+  b01c02s03: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+chapter_verdict: SUBSTANCE-FELT
+notes:
+  - s01: nine held-axis bones read as load-bearing dormancy; "reads ≠ directs" rule definition is the tactical rule this reader needs before it is tested; the sweep is systematic but framed and not directive; asymmetry live (ward knows nothing, Taylor knows the line, reader knows both)
+  - s02: relational_anchor_status +1.0 null anchor — not cheap-gain; the gain is the permitted form of contact (filing) substituted for the refused form (approaching); n04 (alley-entrance) + n08 (body-turn) give the refusal physical form; the cost is the discipline against approaching, not an untracked free gain; negative-space execution at n04 + n09 confirmed as perceptual event; Phase 5 soft carry on Wren-negative-space RESOLVED
+  - s03: crack-and-suppress in two structurally separate bones confirmed; n05 (word arrives) + n06 (prohibition line enacted) are causally distinct events; suppression is labor (n07-n09 ledger-closing sequence makes it procedural, not instantaneous); chapter goal LAND confirmed
+  - soft carries to /and-facets: none new; b01c01 soft watches on anonymity-by-geometry and political_register-prot bones carry to stitch review as before

@@ -28,7 +28,7 @@ per-chapter verdicts (b01c01-b01c20):
   b01c12: SUBSTANCE-FELT — the coverage gap as Wren's structural necessity; the Khepri word surfacing and being pushed back is the right dread mechanism; irrevocable threshold crossed without announcement
   b01c13: SUBSTANCE-FELT — contempt-naming earned by c05-c12 accumulation; Halvard foreclosure by behavior (Taylor stops engaging the response) is the dark-fantasy shape — not despair as mood, foreclosure as arithmetic
   b01c14: SUBSTANCE-FELT — second courier confirmed and detained with full awareness reads clean; cloth merchant's flight as Rhaenyra-pressure visible; relational_anchor_status +1.0 justified via cl04 pattern naming (earned by the on-page act of closing the ledger on a named person)
-  b01c15: SUBSTANCE-FELT — Vhagar-proximity backwash degrades the compound-eye feed and makes the east-of-water-gate gap register as a negative shape; the gap is not invisible anymore, it is perceptible as absence against the disrupted feed; this is a perceptual event with a physical cause (dragon footprint) that the world delivers without authorial arrangement; cl-d08 anchor is real (the b01c12 gap-choice that made Wren's free movement structurally necessary); Taylor notes it and does not open the ledger — the non-entry is load-bearing suppression, not absence of content; +1.5 earned
+  b01c15: SUBSTANCE-FELT — Vhagar-proximity backwash degrades the compound-eye feed and makes the east-of-water-gate gap register as a negative shape against the disrupted feed; this is a perceptual event with a physical cause (dragon footprint) that the world delivers without authorial arrangement; cl-d08 anchor is real (the b01c12 gap-choice that made Wren's free movement structurally necessary); Taylor notes it and does not open the ledger — the non-entry is load-bearing suppression, not absence of content; +1.5 earned
   b01c16: SUBSTANCE-FELT — Halvard walked away from (not suppressed — foreclosed by behavior); moral_legibility +0.5 is small and the on-page act (walking away) is real; the distinction between suppression and foreclosure is load-bearing and this chapter holds it
   b01c17: SUBSTANCE-FELT — the use-vector intercept is the book's strongest single chapter contract; Taylor protecting Wren by deploying the override architecture she came here to retire; "she cannot unname this in her own accounting" is the earned irony made explicit; collapse axes activate on a real event
   b01c18: SUBSTANCE-FELT with soft watch — irrevocable full-coverage deployment at Khepri-repetition scale earns the moral_framework -1.0; political_register-prot +2.0 in one chapter is the largest single register move in the arc; justified by density target (0.8-0.9, 5 scenes) but the contempt near-saturation must be on the page as accumulation, not as declaration
@@ -127,3 +127,50 @@ carry_forward_to_facets:
   - 'lifts the' mannerism: decomposer Pass 3 domain; monitor at stitch draft
   - no new bone-gate concerns introduced; Phase 4 carry-forwards either resolved (s03n10 confirms
     Wren plant delivery) or correctly deferred to stitch domain
+
+---
+
+## 2026-05-25 — /and-substance chapter b01c02 Phase 5 review
+
+verdict_per_scene:
+  b01c02s01: SUBSTANCE-FELT
+  b01c02s02: SUBSTANCE-FELT
+  b01c02s03: SUBSTANCE-FELT
+chapter_goal_coverage:
+  surveillance_map_visible_before_patron: LAND
+  recognition_file_continue_as_pattern: LAND
+  wren_inside_accounting_without_contact: LAND
+overall: ACCEPT
+notes:
+  - s01 harm-reduction framing already contains something surveillance-shaped; the scene ends on "mechanical precision of someone who has been thinking about it for longer than she is willing to count" — that is accumulated dread doing its work before anything is named; world remains indifferent; no false hope; no catharsis arriving early; SUBSTANCE-FELT confirmed against the "catharsis-before-weight" walkout trigger
+  - s02 "everywhere Wren moves is somewhere Taylor has reasoned herself out of going" is the dark-fantasy shape of a relationship forming against the protagonist's will; the anchor account opening as a named absence is structural pressure, not authorial gift; world does not accommodate; Wren's centrality is a friction-producing fact, not a plot convenience
+  - s03 the two-beat structure (recognition arrives / suppression closes) is the "filing-and-continuing" shape confirmed at book Phase 5 as the correct dark-fantasy register; it executes at scene level exactly as planned; chapter closes on accumulated unease, the crack sealed under the entry — no catharsis; "the ledger closing as active discipline" is the dread mechanism, not relief
+  - no walkout triggers: no catharsis before weight; no enemies pausing; no magic-as-reliable-tool (the coverage mechanism is labor-intensive and Taylor is acutely aware of it); world is not set dressing
+  - soft carries to /and-write: s03 crack-and-suppress must be two structurally separate bones; s02 Wren negative-space must be enacted as perceptual gap in the insect-feed, not inference chain
+
+## 2026-05-25 — /and-write b01c02 Phase 4 trim
+
+verdict: ACCEPT (29 KEEP, 0 DROP)
+file_verdict: ACCEPT
+notes:
+  - s01 (9 bones): world generates the pressure (fever-cluster in n03) before Taylor decides to respond — causal direction is essential for this reader; n05 (threshold-stone mechanism) earns its place by making the feed read as labor and friction rather than reliable tool; no walkout triggers
+  - s02 (10 bones): Wren-as-negative-space at n04 (alley entered) + n09 (gap at every alley she entered) reads as perceptual event; the world's social physics create a structural constraint (Taylor cannot cross alleys unseen) that the feed maps as absences; soft carry from Phase 5 RESOLVED at bone level
+  - s03 (10 bones): three-entry ledger-closing rhythm (fever-cluster, dark-junction, ward-junction contact) is the suppression mechanism operating as procedure; the rhythm is the dread — systematic, indiscriminate, the cost-bearer filed as background noise; crack-and-suppress in two structurally separate bones confirmed; soft carry RESOLVED
+  - no walkout triggers fired: no catharsis before weight; suppression is active discipline (n06-n09), not passive forgetting; the setting operates by its own physics throughout
+
+## 2026-05-25 — /and-write b01c02 Phase 6 bone-gate
+
+verdict_per_scene:
+  b01c02s01: SUBSTANCE-FELT
+  b01c02s02: SUBSTANCE-FELT
+  b01c02s03: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+chapter_verdict: SUBSTANCE-FELT
+notes:
+  - s01: world generates pressure before protagonist responds; harm-reduction framing is a self-applied discipline that reads as labor; setting (drain angle, alley-mouth, ward-junction) exists by its own physics; no catharsis, no false hope; 9 bones for a held-axis scene is efficient
+  - s02: null anchor on relational_anchor_status +1.0 — not hope-that-costs-nothing; the gain is the permitted form of contact substituted for the refused form; Wren's centrality is world-structure producing friction (n04: alley she enters that Taylor cannot follow); consequence propagates from structure; no walkout trigger
+  - s03: crack-and-suppress lands as two structurally separate events; the suppression is enacted through physical habit (prohibition-line gesture) not mood; n07-n09 ledger-closing sequence makes suppression read as work; chapter closes on exhale (body's verdict), not insight; accumulated unease without catharsis
+  - no walkout triggers fired; world-texture confirmed throughout; setting exists independent of Taylor's attention
+  - soft carries: none new; b01c01 stitch-domain watches carry forward unchanged

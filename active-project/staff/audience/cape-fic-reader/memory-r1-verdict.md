@@ -1,65 +1,70 @@
 ---
 facet: memory
-episode: b01-c01
+episode: b01-c02
 reviewer: cape-fic-reader
 cycle: 1
 date: 2026-05-25
-verdict: revise
+verdict: accept
 ---
 
-# Cape-Fic Reader — Memory Facet Adversarial Verdict (cycle 1)
+# Cape-Fic Reader — Memory Facet Adversarial Verdict (cycle 1, b01-c02)
 
 ## Per-entry callouts
 
-### [mem:1 @3] @3 — Earth-Bet displacement on prohibition-maintenance
+### [mem:1 @7] @7 — Westerosi-monument on conquest-charter-language
 verdict-entry: accept
 
-The feet holding discipline from before — that construction tracks. "From before" is doing the displacement work without naming the what-before. "Still does what it was built for" is the cape-fic tell: a capability surviving its original context, repurposed in an alien environment. The reader who is tracking Taylor's power-suppression-as-discipline reads this immediately as prohibition-enactment — the insect architecture is present and contained, and the memory-fire marks the cost of that containment. The monument earns the fire.
+The monument fires at the act, not the reflection. @7 is `taylor-hebert-kl-122ac draws the line` — the surveillance perimeter completed, the ward established. The charter-language cue fires on the *gesture* itself: the stroke that makes a province. That is cape-fic-correct. I want the reader clocking the pattern before Taylor does. A memory-flag on the act rather than on a moment of self-awareness is exactly that — the cue is in the behavior, not in the interior commentary. The gap between what Taylor is doing and what she understands herself to be doing is where the chapter's information asymmetry lives, and this entry is the hinge that lets the reader see it.
 
-Spine: narrator:7 is present at @3 per cite-index. Quiet-beat: scene-A flat-low, no peak-bones. Passes.
+Description construction passes the hard fence: "older country's charters... province out of land that had not been one before the stroke." No Earth-Bet noun. No Dance-specific reference. The cue reads as mechanism-descriptive. Monument-family assignment (conquest-charter-language) is distinct from mem:2's family. Doubled-register first half: Westerosi. Clean.
 
-Target-reference slug: `cond-override-architecture-residue-122ac` — the `cond-*` form is recognizable as the mechanism (the card exists, the supersession from the Khepri-named slug is documented), but this is not the `monument-*` slug convention the rubric requires. The rubric is explicit: "mechanism-descriptive form is mandatory" and the exemplar list uses `monument-` prefix. This is the flag-013 finding. The card exists and the gloss resolves — the stitcher can route against it. But if margit ingests this as a card slug the `cond-*` form creates routing ambiguity between condition cards and monument cards. I flag this as a SIGNAL, not a hard block on the entry, because the underlying monument is identifiable. Margit referral is the correct resolution: either author a `monument-override-architecture-prohibition` card with the `cond-` card as source reference, or confirm that the `cond-*` form is the canonical slug and update the rubric.
+Spine: I need to confirm NI co-citation at @7. The facet header reports quiet-beat-distribution with scene-A flat-low at 1 — @7 is late scene-A (the line-drawing extends into the first crossing-over). The R2 notes do not flag a spineless-fire finding at @7. No auditor finding on this entry. Accept on the merits.
 
-Convergence with auditor: flag-013 (slug convention violation; margit referral candidate). My read agrees — entry ships as SIGNAL, not HARD.
+Convergence-trace: no auditor finding cited for mem:1. No convergence with Phase 5 audit.
 
 ---
 
-### [mem:2 @26] @26 — Westerosi-monument clamp on witch-label-formation
-verdict-entry: revise
+### [mem:2 @18] @18 — Earth-Bet displacement on cond-override-architecture-residue-122ac
+verdict-entry: accept
 
-The description passes the fence — no proper nouns, the cue-shape is correct (word-waiting-for-person is solid Westerosi-monument-clamp construction, licit and atmospheric). The witch-label-as-arriving-word is a well-formed cue. I'm not arguing with the displacement discipline.
+The coverage map opens the gap at @18; the monument fires on the gap's shape. "The absence has the shape of one person and the shape is the architecture she came here to refuse to build surfacing through the method she has not yet looked at." That is the cape-fic read I want: Taylor has not looked at the method, but the reader has. The gap is the unpriced person — the cost-bearer slot, which the coverage map is silently building around. The monument's fire on override-architecture-residue is the early warning that the prohibition is already embedded in the method, not in a future decision.
 
-I'm arguing with the spine.
+"Has not yet looked at" is setup, not payoff. That is correct at scene-B — the chapter's dramatic_shape is rising, the substance is in transit. The fire marks what the reader can see before Taylor registers it. Information asymmetry confirmed.
 
-Cape-fic-reader tracks who-knows-what-when. The licensing layer is what tells me *this beat has been registered* — the interior caught the cue, and now the stitcher has permission to render it. For the licensing to function, there has to be a spine: either narrator-interest or (under V3 carve-out) feel-as-spine. The cite-index is unambiguous: mem:2 @26 co-cites [state:2, state:8] only. Narrator-interest does not fire at @26. No feel-flag fires at @26.
+Earth-Bet displacement: the description contains no proper nouns, no cape-names, no institution names. The `cond-override-architecture-residue-122ac` target-reference is the fence-clean successor slug (renamed from Khepri-named form per hard-fence sweep noted in authoring notes). Clean.
 
-The V3 carve-out requires three conditions. Condition (3): a feel-flag fires on the same @proto-line-id. No feel-flag at @26 in the cite-index. The carve-out does not apply.
+Doubled-register second half: Earth-Bet displacement. The file achieves the required doubled-register. Clean.
 
-Result: spineless fire under the V3 rubric. The monument is real, the cue is clean, but the interior has no registered trigger at @26 in the file-graph. The stitcher cannot cite this fire because the spine the stitcher expects to find upstream is absent. The licensing layer has a hole: the entry fires but the registration chain is broken.
+Convergence-trace: no auditor finding cited for mem:2. Sparsity 2/29 = 6.9% is within band. Pressure-inversion: @18 is scene-B peak-shadow/resolving-tail zone — correct quiet-beat position. Accept.
 
-This is not an atmospheric quibble. A cape-fic reader tracking information structure notices when a licensing gate fires without the gate-precondition being met. The entry should be held until narrator-interest or feel repairs the @26 spine, or until the R2 judge has justified a V3 carve-out pathway that I am not seeing in the current cite-index.
+---
 
-Note: The R2 stamp in the facet file says "co-cited with state:2 + state:6 confirming graph spine of the categorization event" — but state:6 is at @21 and state:2 is at @26. State co-citation is not spine. The spine requirement is narrator-interest OR feel-flag, not state-update co-citation. The R2 judge's "graph spine" claim conflates state-update co-citation with licensing-spine. This is the error.
+## Scene-C silence (@24 peak — deliberate or miss?)
 
-Target-reference: same flag-013 as mem:1 — `cond-kl-witch-label-formation-122ac` vs. expected `monument-*` form. SIGNAL, not HARD.
+The watch-item question: does the absence of a memory flag at @24 (`taylor-hebert-kl-122ac stalls the count`) read as deliberate or as a miss?
 
-Convergence with auditor: flag-012 (NI spine gap @26 — AP7 spineless-fire borderline). My read: not borderline. The V3 carve-out fails on condition (3); the entry is spineless under the rubric.
+Cape-fic reader: deliberate, and correctly so. @24 is the recognition beat — the stall IS the interior processing the gap. If a memory flag fires here, it is telling me what I can already see: Taylor recognized something. The chapter's entire information-asymmetry architecture depends on the reader being ahead of the narrator at this beat. A monument at @24 closes that gap and hands the payoff early. The silence keeps the reader holding the recognition alone, which is the correct posture for a rising chapter. The payoff is not here — it is deferred past the close of the chapter. A memory flag at @24 would be the chapter explaining itself.
+
+Additionally: anti-pattern #11 (persistent-monument-firing, same family two beats apart) would fire against mem:2 @18 if a mem:3 appeared in the cond-override-architecture-residue family at @24. The silence is not only aesthetically correct — it is structurally required by the rubric's spacing rule.
+
+Scene-C silence: no miss. Deliberate.
 
 ---
 
 ## File-level assessment
 
-Doubled-register: 1 Earth-Bet + 1 Westerosi — gate met on count. However if mem:2 revises to a delete (spineless fire with no repair path), the file drops to single-register. That would be a file-level fail. The repair path is: fix the spine at @26 (NI or feel author provides @26 co-citation), not delete the entry.
+Sparsity: 2/29 = 6.9%. Within the 5-12% band. Pass.
 
-Sparsity: 2/27 bones = 7.4%. Within the 5-12% band. Passes.
+Doubled-register: 1 Westerosi monument-conquest-charter-language + 1 Earth-Bet cond-override-architecture-residue-122ac. Gate met. Pass.
 
-Pressure-signal inversion: both fires in flat-low (scene-A) or resolving-tail (scene-C post-peak). Neither is a peak-bone. Passes.
+Monument-family-diversity: 2. Pass.
+
+Pressure-signal inversion: both entries in quiet-beat positions (@7 scene-A flat-low, @18 scene-B peak-shadow/resolving-tail). Neither is a peak-bone. Correct posture under rising dramatic_shape.
 
 ---
 
 ## Verdict
 
-`revise`
+`accept`
 
-mem:1 accepts with SIGNAL (slug convention; margit referral candidate).
-mem:2 revises: spineless fire — narrator-interest absent @26, V3 carve-out fails condition (3) (no feel-flag at @26). Entry must be held until spine is repaired by NI or feel author, OR the V3 carve-out pathway is explicitly established with all four conditions documented.
+Both entries accept. No revise or fail findings. Scene-C silence at @24 reads as deliberate and structurally correct — the rising chapter's information asymmetry is preserved by the absence, not undermined by it.

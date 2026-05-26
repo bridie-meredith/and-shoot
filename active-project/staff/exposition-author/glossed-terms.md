@@ -28,3 +28,9 @@ register removals required. Register entries below remain authoritative.
 - gold-morning | first-mention-anchor: graph-resident-via-preamble-paragraph-1 (b01c01; function-description form per cond-earth-bet-noun-fence §substitution-register; formal name reserved for inner-monologue per fence)
 - the-dance | first-mention-anchor: graph-resident-via-preamble-paragraph-1 (b01c01; Westerosi-canon term naming the project's future-anchor)
 - taylor-hebert | first-mention-anchor: graph-resident-via-preamble (b01c01; POV identification via first-person + slug-resolution)
+
+## Glossed in b01c02
+
+- ward-junction | glossed-in: b01c02 | gloss-id: 3 | first-mention-anchor: @9 | qualifier: precinct-ward physical-corner sense (Hook-internal alley-geometry node where 3-4 alleys meet under one precinct-ward); distinct from the precinct-ward institutional sense (b01c01:8 oswyn-mudway) and the child-fostering ward sense (b01c01:5 stitch-house-ward-context)
+- coverage-map-instrument-family | first-mention-anchor: graph-resident-via-exposition:2 (b01c02; preamble-context introduction of the count / coverage-map / accounting / ledger family as Taylor's surveillance-instrument vocabulary; future-chapter authors do not re-gloss any family member — reader-resident as Taylor's clinical-categorization mode)
+- prohibition-line-reading-vs-directing | first-mention-anchor: graph-resident-via-exposition:1 + exposition:2 (b01c02; the rule was first stated in b01c01 preamble paragraph 3 in general form; b01c02 restates it in its specific reading-vs-directing articulation; reader-resident in current form)
