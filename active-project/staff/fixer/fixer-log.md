@@ -1106,3 +1106,27 @@ dispatch: /and-facets b01-c04 Phase 5b cycle-3 state-updates — 6 mechanical fi
 target: active-project/theater/facets/state-updates-env.md + state-updates-jarvis-coin-kl-courier.md + state-updates-taylor-hebert-kl-122ac.md
 audit-report: /and-facets b01-c04 Phase 5b cycle-3 convergence report (DEC-0035)
 findings-queued: 6
+
+## fix-1 (state:6 anchor-lag @26→@25) — RESOLVED — 2026-05-27T02:05:00Z
+fault: studio.active_location fires at @26 (actor-entry bone) instead of @25 (scene-open env-frame where loc-state:4 fires); anchor lag
+scope: line
+change: env-slice entry 6: `@26` changed to `@25`; field/values unchanged (`oc-pig-tallow-lane → oc-ropers-court`)
+criteria met: yes — active_location now co-anchors with loc-state:4 at @25 (scene-open); no longer lagging to actor-entry @26
+
+## fix-2 (state:7 @27 non-canonical value → slug-list) — RESOLVED — 2026-05-27T02:06:00Z
+fault: `four-ward-complete` is a descriptor-value, not a zone-set slug-list; format inconsistent with state:3 and state:4 coverage_active_range entries
+scope: line
+change: env-slice entry 7: new value changed from `four-ward-complete` to `oc-hook-precinct + oc-pig-tallow-lane + oc-stitch-house-lane + oc-ropers-court`; field-extension comment preserved
+criteria met: yes — value is now a slug-list in the established zone-set format (matches state:3 and state:4 extension chain)
+
+## fix-3 (state:9 @29 compound roster → incremental) — RESOLVED — 2026-05-27T02:07:00Z
+fault: actors_in_yard entry showed `[] → [taylor, jarvis]` treating both as simultaneous new arrivals; Taylor was already in the yard before @29 (Jarvis entry bone); old-state should reflect pre-existing Taylor presence
+scope: line
+change: env-slice entry 9: old-state changed from `[]` to `[taylor-hebert-kl-122ac]`; new-state unchanged; result: `[taylor-hebert-kl-122ac] → [taylor-hebert-kl-122ac, jarvis-coin-kl-courier]`
+criteria met: yes — roster transition is now incremental (Jarvis joins an already-present Taylor); no duplicate entry dropped; entry 8 (active_location) unchanged
+
+## fix-4 (state:14 @39 narrative-label → slug) — RESOLVED — 2026-05-27T02:08:00Z
+fault: `chapter-close-stitch-house-lane-exit` is a stage-direction label, not a canonical location slug
+scope: line
+change: env-slice entry 14: new value changed from `chapter-close-stitch-house-lane-exit` to `oc-stitch-house-lane`; proto-line @39 is "taylor-hebert-kl-122ac exits the stitch-house lane" — post-state location is the stitch-house lane itself (the exit moves from cooper-yard into stitch-house-lane territory before chapter close); null rejected as the chapter has a canonical post-state surface
+criteria met: yes — value is now a canonical oc- slug consistent with rubric §Authority ACCEPT signature

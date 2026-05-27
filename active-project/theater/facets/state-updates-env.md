@@ -41,12 +41,12 @@ author: studio
 3 @15 studio.coverage_active_range: oc-hook-precinct → oc-hook-precinct + oc-pig-tallow-lane # field-extension: coverage_active_range (new field; see carve-out preamble)
 4 @22 studio.coverage_active_range: oc-hook-precinct + oc-pig-tallow-lane → oc-hook-precinct + oc-pig-tallow-lane + oc-stitch-house-lane # field-extension
 5 @25 studio.time_of_day: first-bell-morning-day-1 → early-morning-grey-day-2
-6 @26 studio.active_location: oc-pig-tallow-lane → oc-ropers-court
-7 @27 studio.coverage_active_range: oc-hook-precinct + oc-pig-tallow-lane + oc-stitch-house-lane → four-ward-complete # field-extension
+6 @25 studio.active_location: oc-pig-tallow-lane → oc-ropers-court
+7 @27 studio.coverage_active_range: oc-hook-precinct + oc-pig-tallow-lane + oc-stitch-house-lane → oc-hook-precinct + oc-pig-tallow-lane + oc-stitch-house-lane + oc-ropers-court # field-extension
 8 @29 studio.active_location: oc-ropers-court → oc-cooper-yard-eel-alley
-9 @29 studio.actors_in_yard: [] → [taylor-hebert-kl-122ac, jarvis-coin-kl-courier]
+9 @29 studio.actors_in_yard: [taylor-hebert-kl-122ac] → [taylor-hebert-kl-122ac, jarvis-coin-kl-courier]
 10 @31 prop:oc-report-sheet.holder: taylor-hebert-kl-122ac → in-transit-yard-air # field-extension: prop:oc-report-sheet.holder
 11 @32 prop:oc-report-sheet.holder: in-transit-yard-air → jarvis-coin-kl-coat # field-extension
 12 @36 studio.actors_in_yard: [taylor-hebert-kl-122ac, jarvis-coin-kl-courier] → [taylor-hebert-kl-122ac]
 13 @37 studio.actors_in_yard: [taylor-hebert-kl-122ac] → []
-14 @39 studio.active_location: oc-cooper-yard-eel-alley → chapter-close-stitch-house-lane-exit
+14 @39 studio.active_location: oc-cooper-yard-eel-alley → oc-stitch-house-lane
