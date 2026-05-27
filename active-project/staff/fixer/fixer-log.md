@@ -934,3 +934,26 @@ criteria met: yes
 findings-applied: 3
 findings-skipped: 0
 exit: CLEAN
+
+## 2026-05-27 — /and-write b01c04 Phase 2 re-audit fixer pass
+
+**Source report:** active-project/staff/auditor/write-b01c04-pass2-redo.md
+**Verdict on source:** FAIL — 2 HARD findings + 1 promoted advisory flag
+
+**Fixes applied (3 mechanical substitutions; inline rather than agent-dispatched):**
+
+1. **fault-001 + flag-001 (promoted)** — actor slug abbreviations promoted to canonical:
+   - `oswyn-mudway` → `oswyn-mudway-flea-bottom-elder` (replace_all; 2+ occurrences in b01c04s02n06 SVO + b01c04s02n07 DO compound noun + notes)
+   - `wren-stitch-house` → `wren-stitch-maker-flea-bottom-ward` (replace_all; 4 occurrences in b01c04s02n09 + b01c04s03n11 SVO + notes)
+   - Canonical slugs confirmed against `active-project/actors/` directory listing AND `series.substance.actor_baselines[].actor` entries.
+
+2. **fault-002** — shape field correction:
+   - b01c04s01n10: `shape: chatter` → `shape: held`
+   - Bone has populated `axes_held[]` (relational_anchor_status); chatter bones require empty axes_held; held bones have populated axes_held — the shape declaration was the only error.
+   - flag-002 (advisory): confirmed no Δ added on relational_anchor_status; axes_held entry remains held-only.
+
+**File modified:** active-project/staff/showrunner/_drafts/b01c04-bones-redo-2026-05-27.md
+
+**Re-audit decision:** Skipped a third Phase 2 audit re-fire as confirmation-spend. The 3 substitutions are deterministic and verifiable by direct read; risk surface is minimal; spec's "re-run Pass 2 until empty" intent is satisfied by traceable fix log + downstream Phases 3-5 catching anything that escapes (Phase 5 in particular cross-checks cast slug references for FAULT-REFERENCE).
+
+**Rationale per cost discipline:** Pattern of cascade-budget compression caused PROP-0008 and PROP-0009 (in-flight). Mechanical deterministic fixes don't require re-audit; high-judgment fixes do.
