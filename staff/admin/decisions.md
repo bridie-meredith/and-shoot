@@ -656,3 +656,25 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0027 | 2026-05-27 | SLOW
+
+question: c04 is next. Cascade (--cascade), serial-stop-at-substance, or cascade-with-no-budget-compression?
+context: c04 is the acceptance chapter — heaviest axis-move count in the book (5 axes, total delta +7.5), load-bearing for the series spine. c02 ran cascade-budget, required revise --from-signals + 3 stitch cold-reads to land. c03 ran cascade-budget; deferred /and-review bones found 5 SIGNAL findings the inline synthesis missed. User said "continue" without specifying serial vs. cascade.
+
+options:
+  (1) /and-substance chapter b01c04 --cascade — standard forward-motion; trust the chain
+  (2) /and-substance chapter b01c04 only — stop at scene chunks; inspect contract before bones; then decide whether to cascade from /and-write forward
+  (3) --cascade with no-budget-compression instruction — verbal flag to orchestrator; no command-body enforcement mechanism
+
+decision: Option 2 — fire /and-substance chapter b01c04 only; hold at scene chunks.
+basis: goal:1 (pipeline correctness — c04 is the series-spine acceptance chapter; a substance-contract miss here damages load-bearing structure) + goal:2 (cost discipline — cascade on the two prior chapters required significant remediation spend; serial is cheaper in expected-total-spend when the risk of cascade-miss is elevated) + methodology:3a (reversibility — stopping at substance preserves full cascade option; full cascade cannot be undone once bones are authored against a weak contract) + methodology:3d (optionality — serial keeps /and-write cascade entry point open; cascade locks in the contract immediately)
+rationale: Option 3 is rejected because "no budget compression" is a verbal instruction with no enforcement mechanism in the command body — the cascade runs agent-to-agent and there is no parameter that hard-gates budget-skip. It is noise over option 2. Options 1 and 3 both replay the pattern that produced under-audited results on c02 and c03. c04's axis density (heaviest of the book) and narrative centrality (acceptance chapter, series-spine) make it the worst possible place to absorb another cascade-miss. Option 2 costs one extra user-attention step (review scene chunks) in exchange for a hard inspection window before bones are committed. The cost of that step is trivially low; the cost of re-running bones on a spine chapter is high.
+trade-off: Option 2 requires one more user-facing step (inspect scene chunks + decide whether to cascade from /and-write). Option 1 would be faster in the no-miss case. The expected-miss probability on c04 is higher than on c02/c03 given axis density, so the expected-total-spend favors option 2.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
