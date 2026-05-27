@@ -102,7 +102,7 @@ Register-pitfall warning carried forward: c03 entry 6 second sentence used three
 - Per-anchor cap ≤3 utterances. (A) is one utterance. PASS.
 
 **card-signatures:** westeros-smallfolk §Cadence (three sentences three facts; pause-at-period-terminal); westeros-smallfolk §Syntax (subject-implied openings; subject + copula dropped on all three fragments); jarvis-coin-kl-courier §Register (transactional flat-affect; no negotiation-flex; installation-not-invitation); calibration-anchor match to c03 @31 (article-dropped period-terminal three-fragment return-arrangement shape)
-**facet-licenses:** [state:16 @9] [vibes:3 @9 — Jarvis arrangement-as-functional-architecture; resolved 2026-05-27 post-R2; sensory and memory N/A on this bone]
+**facet-licenses:** [state:16 @9] (vibes:3 originally co-cited but DELETED at cycle-3 per DEC-0035; state:16 sufficient per V2 ≥1-license)
 
 **Word count:** ~6 words. Within 10-25 cap (slightly under but matching c03 @31's 6-word anchor exactly; calibration-faithful).
 

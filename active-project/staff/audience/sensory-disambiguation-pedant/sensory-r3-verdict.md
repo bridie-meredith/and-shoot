@@ -1,94 +1,135 @@
 ---
 reviewer: sensory-disambiguation-pedant
 facet: sensory
-cycle: 3
-episode: b01-c01
-date: 2026-05-25
-verdict: accept
+episode: b01-c04
+cycle: r3
+date: 2026-05-27
+verdict: revise
+exemplar: absent (baseline card only)
 ---
 
-# Cycle-2 accept stance — re-evaluation scope
+# Cycle-3 Context
 
-My cycle-2 ACCEPT stood on the disambiguation gate for both entries. The only material change between cycle-2 and cycle-3 is the old-state label on sensory:2: "lane-ambient" → "cobblestone-underfoot-pre-compression." My attack vector is the disambiguation gate (charged-word audit, action-verb self-charge, modality match, bare-word Q1). Old-state labeling is the sensory-old-state-reader's lane, not mine. I re-evaluate whether the cycle-3 change opens any new target on my axes.
+Prior cycle state:
+- sensory:1 @1 — cycle-1 REVISE (charged-subject disambiguation fail). Cycle-3 fix: DELETED.
+- sensory:2 @13 — cycle-1 SOFT ATTACK (advisory). Old-state `tallow-damp-lane-caulking` previously chained from sensory:1's new-state. Cycle-3 fix: sensory:1 deleted; sensory:2's old-state must re-source.
+- sensory:3 @25 — cycle-1 CONDITIONAL PASS. Conditioned on loc-state:3 establishing carter-work-ambient baseline.
 
----
-
-# Cycle-3 per-entry adversarial read
-
-## sensory:1 @2 — smell: lane-ambient -> tallow-smoke-onset # tag: up
-
-Proto-line: `the tallow smoke crosses the stitch-house lane`
-
-No change from cycle-2. The cycle-3 remediation did not touch this entry.
-
-Disambiguation gate: "crosses" is a bare movement verb. "Tallow smoke" names the substance without charging the olfactory register. The proto-line does not self-carry smell-onset; a reader receives locomotion, not perceptual onset. The flag does work the language does not. Q1 clears.
-
-Magnitude: tallow smoke onset in a narrow lane is experientially register-shifting at audience scale. Not micro-grain. Q2 clears.
-
-Charged-word audit: "tallow," "smoke," "crosses," "stitch-house," "lane" — none self-carry smell-onset intensity. Zero charged-word fire.
-
-Action-verb self-charge: "crosses" is a movement verb, not a perception-naming verb. It does not carry olfactory-onset the way "lights" carries light-onset. Not triggered.
-
-Modality: smell is the natural perceptual axis for "tallow smoke onset." No modality mismatch.
-
-Verdict: CLEAN. Unchanged from cycle-2.
+The specific question this cycle: does sensory:2's old-state `tallow-damp-lane-caulking` resolve from loc-state:1's `tallow-damp-present` now that the sensory:1 chain anchor is gone? Does the chain still hold?
 
 ---
 
-## sensory:2 @9 — tactile: cobblestone-underfoot-pre-compression -> crowd-compression # tag: up
+# Chain Resolution Trace — sensory:2 @13
 
-Proto-line: `the crowd compresses`
+**Entry (post-fix):** `2 @13 smell: tallow-damp-lane-caulking -> middens-discard-compound`
 
-Cycle-3 change: old-state label updated from "lane-ambient" to "cobblestone-underfoot-pre-compression." The entry's modality (tactile), anchor (@9), new-state (crowd-compression), and tag (up) are unchanged.
+**Old-state under review:** `tallow-damp-lane-caulking`
 
-Does the old-state relabeling open a disambiguation target? No. My attack vector reads bare-word versus charged-word on the proto-line, not old-state label semantics. The proto-line "the crowd compresses" is identical to what I evaluated at cycle-2.
+## Rubric anchor rule (Axis 1, Modality-inflection, ACCEPT signatures)
 
-Disambiguation gate (Q1): "compresses" is a bare physical-process verb. The proto-line delivers spatial contraction; it does not surface flesh-against-flesh pressure, body heat, or loss of movement clearance. A reader receives abstract collective motion, not tactile register. The flag adds the perceptual disambiguation the language does not carry. Q1 clears.
+> "Source the old-state from the locked location-state for the most recent loc-state-cited beat, OR from the most recent prior sensory-flag entry on the same modality."
 
-Magnitude (Q2): Crowd-compression in oc-stitch-house-lane — one-cart-plus-pressed-shoulders width, as the auditor's full axis-check confirms — is a full-body tactile register-shift. Not micro-grain. Q2 clears.
-
-Charged-word audit: "crowd," "compresses" — neither self-carries tactile register the way "thunder" carries booming-loud or "shadow" carries light-down. "Compresses" describes spatial reduction; the flesh-pressure signal is not in the surface word. Zero charged-word fire.
-
-Action-verb self-charge: the card's note applies to action verbs whose semantic content IS the sensory event ("lights the lamp," "opens the shutter," "ignites"). "Compresses" describes aggregate positional change, not a perception-naming act. The flesh-pressure register is downstream of the verb's surface meaning, not constitutive of it. Not triggered.
-
-Modality: tactile is the natural perceptual axis for crowd-compression. Flesh-against-flesh, loss of footing freedom, body pressure. No modality mismatch.
-
-Old-state relabeling review (disambiguation-pedant angle only): "cobblestone-underfoot-pre-compression" is a more specific old-state label than "lane-ambient." From my gate's perspective this is strictly better — a specific named baseline is less likely to be mistaken for invented content. The relabeling does not introduce any charged-word or self-charge problem. No new disambiguation target.
-
-Inflection-not-sustained: @9 is the onset bone. The compression state is established here, not repeated across an already-established level. Fire is correctly at the change-point. Clears.
-
-Verdict: CLEAN. The old-state relabeling closes the prior HARD (other reviewer's axis) without opening any new target on mine.
+Two paths. Both checked with sensory:1 deleted.
 
 ---
 
-# File-level curve-shape check
+## Path A — Prior sensory entry on smell modality
 
-Two entries on 27 bones: 7.4%. Short-chapter floor-vs-ceiling exemption (V3): bone_count (27) < 30 AND modality count equals the floor (2). Effective ceiling = max(6%, 2/27) = 7.4%. At threshold; advisory, not blocking. The disambiguation gradient is intact at this density.
+sensory:1 was the only prior smell entry in this file. It is deleted. No prior sensory-smell entry exists.
 
-Modality-coverage: smell (@2) + tactile (@9). Two distinct modalities. Floor satisfied. Not monoculture.
-
-Bare-not-charged audit: both fires attach to bare-verb proto-lines ("crosses," "compresses"). Zero charged-word fires in the file.
-
-Inflection-not-sustained: sensory:1 is the smoke-onset bone (first tallow smoke appearance); sensory:2 is the crowd-compression onset bone (@9 is the change-point). Neither is a sustained-level repeat. Clean.
-
-No cycle-3 changes altered the file-level curve shape. Verdict unchanged from cycle-2.
+**Path A: CLOSED.**
 
 ---
 
-# Convergence trace
+## Path B — Most recent loc-state entry for the beat's location
 
-Auditor pass-C3-002 confirmed sensory:2's full per-entry axis check, including the bare-proto-line / Q1 / Q2 / audience-side / inflection-not-sustained axes. All pass. Consistent with my disambiguation-gate read.
+sensory:2 is anchored @13. At @13, the location is oc-pig-tallow-lane (loc-state:3 @13).
 
-Auditor pass-C3-001 confirmed loc-state:1's two-element sensory baseline is rubric-conformant as a place-anchor. I have no attack against loc-state from my lane (disambiguation-pedant scope is per-entry sensory attacks, not loc-state form checks).
+loc-state:3 reads:
+> `3 @13 oc-pig-tallow-lane | morning | none | middens-junction-active, carter-work-ongoing | three alleys converge at the junction-mouth where the discard-air sits heaviest`
 
-flag-C3-001 (dialogue sidecar fault-C2C-001): outside my scope. The sensory file itself is clean; the broken sidecar citations are a dialogue-facet fault.
+Conditions: `middens-junction-active`, `carter-work-ongoing`. The descriptive note foregrounds `discard-air`. No tallow-damp condition appears in any field of loc-state:3.
 
-No overlap between cycle-3 changes and my attack axis. The cycle-3 remediation addressed the sensory-old-state-reader's HARD; my cycle-2 concerns were already resolved at cycle-1. Nothing new for me to attack.
+The old-state `tallow-damp-lane-caulking` does not correspond to any condition or descriptive element in loc-state:3.
+
+**Path B: FAILS.** loc-state:3 does not establish tallow-damp as the sensory baseline at oc-pig-tallow-lane at @13.
 
 ---
 
-# Verdict
+## The dispatch assumption — loc-state:1 cross-location carry
 
-accept
+The cycle-3 fix premise holds that sensory:2's old-state "must re-source from loc-state:1's `tallow-damp-present`."
 
-Both entries clear the full disambiguation gate at cycle-3. The old-state relabeling on sensory:2 closes the sensory-old-state-reader's HARD and creates no new target on my axes. Zero charged-word fires; zero action-verb self-charge violations; zero modality mismatches. File-level curve shape clean under the V3 short-chapter exemption. No new findings from this reviewer.
+loc-state:1 is at `oc-cooper-yard-eel-alley`. loc-state:3 is at `oc-pig-tallow-lane`. These are distinct location records — different location slugs, separate condition sets, different timestamps in the episode. The rubric's anchor rule specifies the most recent loc-state for the beat's location — not any prior loc-state from any location visited earlier in the episode. Sourcing across a location boundary is not a path the rubric permits.
+
+The rubric's REJECT signature under Axis 1 names this failure mode explicitly:
+
+> "Unanchored old-state (HARD). Entry's old-state does not resolve to (a) the most recent loc-state file's § sensory or § conditions baseline for the beat's location, OR (b) the most recent prior sensory-flag entry on the same modality. A free-floating old-state ('hook-alley-ambient' with no loc-state or prior-sensory anchor) is a fictive baseline."
+
+`tallow-damp-lane-caulking` names a specific environmental detail — tallow caulking on the lane's timber joints — which appears in loc-state:1's descriptive note for the cooper's yard ("the tallow-damp off the lane-caulking reaches the shed-wall"). That detail was authored for oc-cooper-yard-eel-alley. It does not appear in loc-state:3's conditions or note for oc-pig-tallow-lane.
+
+The environmental logic — Pig Tallow Lane is named for tallow processing, the surrounding environment probably carries some tallow-damp residue — is plausible worldbuilding but is not in the loc-state file. What is not in the loc-state file is not an anchor. Per memory rules: if a change is not in a state file, it did not happen. If a condition is not in a loc-state entry, it is not an established baseline.
+
+**Cross-location carry: REJECTED.** loc-state:1's `tallow-damp-present` belongs to oc-cooper-yard-eel-alley. It does not anchor sensory:2's old-state at @13 (oc-pig-tallow-lane / loc-state:3).
+
+---
+
+## HARD Finding — sensory:2 @13
+
+**[sensory:2] @13 — smell: tallow-damp-lane-caulking -> middens-discard-compound**
+
+UNANCHORED-OLD-STATE HARD. Path A closed (sensory:1 deleted; no prior smell entry). Path B fails (loc-state:3 at oc-pig-tallow-lane carries no tallow-damp condition). Cross-location carry from loc-state:1 (oc-cooper-yard-eel-alley) rejected — rubric anchor rule is per-location. Old-state `tallow-damp-lane-caulking` is a free-floating baseline. Per URI-FACETS-CYCLE-1, this is a HARD finding.
+
+**Convergence-trace:** Cycle-1 verdict anticipated this directly: "If sensory:1 is deleted, this old-state chain anchor breaks and must be re-sourced from loc-state:3." The cycle-3 fix removed sensory:1 but did not revise sensory:2's old-state. The re-source from loc-state:1 proposed in the dispatch premises is architecturally incorrect — loc-state:1 is the wrong location. The finding the cycle-1 verdict flagged as downstream consequence has now materialized as a live HARD.
+
+---
+
+# Remaining Entry — sensory:3 @25
+
+**Entry:** `3 @25 sound: carter-work-ambient -> roper's-court-near-silence`
+
+Cycle-1 conditional pass. Conditioned on loc-state:3 naming "carter-work-ambient" (or equivalent) in its sensory baseline.
+
+**Verification:** loc-state:3 reads conditions `middens-junction-active, carter-work-ongoing`. The condition `carter-work-ongoing` directly anchors `carter-work-ambient` as the smell old-state label: ongoing cart work in a lane produces an ambient sound level; the label names the sensory register that condition produces. This is the same referent, naming-layer shifted from state-condition to sensory-state. Functionally anchored.
+
+No prior sensory-sound entry exists (sensory:1 was smell; sensory:2 is smell). Path B under the anchor rule: loc-state:3 at @13 (most recent loc-state before @25, and the most recent entry for oc-pig-tallow-lane, which the route passes through before reaching Roper's Court) — the `carter-work-ongoing` condition names the sound environment. loc-state:4 at @25 covers oc-ropers-court, conditions `court-empty, far-tributaries-dark`; descriptive note: "early-morning grey leaves the court sight-clear to all tributary mouths." The loc-state for the new location (@25 = oc-ropers-court) establishes `court-empty` — absence of bodies, which directly supports the new-state `roper's-court-near-silence`. The inflection is: entering an empty court after the ambient sound of the middens lane. The old-state sources from the prior sound environment (loc-state:3 carter-work-ongoing); the new-state sources from the new location's emptiness (loc-state:4 court-empty). Chain resolves.
+
+Cycle-1 conditional requirement: **MET.** sensory:3 @25 **PASSES.**
+
+---
+
+# File-Level Status
+
+**Modality coverage (post-deletion):** sensory:2 (smell) + sensory:3 (sound) = 2 modalities. Floor met at 2.
+
+**Density:** 2/39 = 5.1%. Within 3-6% band. Short-chapter exemption not needed.
+
+**The HARD finding is entry-level only.** File-level geometry is not the problem. sensory:2's old-state breaks on the disambiguation-from-unanchored-baseline axis, which is distinct from modality-floor or density checks.
+
+---
+
+# Resolution Path
+
+Two options exist; both require studio intervention.
+
+**Option A — Revise sensory:2's old-state to anchor in loc-state:3.**
+loc-state:3 does not name a pre-middens smell old-state at oc-pig-tallow-lane — it only names the middens junction conditions. For sensory:2 to fire a genuine inflection at @13, a distinct prior smell state must be established. Studio would need to backfill loc-state:3 with an explicit pre-junction smell baseline for oc-pig-tallow-lane (e.g. a lane-ambient-tallow condition naming what the lane smelled like before the middens junction opens into it), then revise sensory:2's old-state to match. The narrative rationale exists (Pig Tallow Lane carries a tallow processing ambient), but the state file must carry it before the sensory entry can reference it. Anti-pattern 14 applies: the loc-state edit must land first; the sensory old-state revision must reference the now-anchored baseline.
+
+**Option B — Delete sensory:2.**
+With no available old-state anchor for the smell modality at @13, deletion is the clean path. File would carry sensory:3 only — one modality (sound). This drops below the ≥2 modality floor. A replacement smell entry would need to be authored at a beat where loc-state establishes an explicit, distinct smell baseline. Anti-pattern 14 applies to any replacement ADD: full per-entry rubric pre-validation required before committing, old-state lineage from loc-state verified first.
+
+**Note to fixer:** either option requires studio action before sensory:2's status resolves. Fixer cannot change sensory:2's old-state without a supporting loc-state edit (Option A) or without authoring a replacement smell entry elsewhere with a clear loc-state anchor (Option B).
+
+---
+
+# VERDICT
+
+**revise**
+
+sensory:1 @1: DELETED — confirmed clean. Deletion was the correct action.
+
+sensory:2 @13: UNANCHORED-OLD-STATE HARD. Deletion of sensory:1 severed the only available chain anchor. The proposed re-source from loc-state:1 (oc-cooper-yard-eel-alley) is invalid under the rubric's per-location anchor rule. loc-state:3 (oc-pig-tallow-lane, the beat's location) carries no tallow-damp condition. Old-state `tallow-damp-lane-caulking` is unanchored. Requires studio intervention: backfill loc-state:3 with an explicit pre-junction smell baseline and revise old-state to match (Option A), or delete sensory:2 and author a qualified replacement smell fire with a clean loc-state anchor (Option B).
+
+sensory:3 @25: PASS. Disambiguation gate clear. Old-state `carter-work-ambient` resolves from loc-state:3's `carter-work-ongoing` condition. New-state `roper's-court-near-silence` resolves from loc-state:4's `court-empty` condition. Cycle-1 conditional requirement met.
+
+The cycle does not close. sensory:2's HARD blocks the facet.

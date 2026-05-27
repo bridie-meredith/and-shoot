@@ -1136,3 +1136,15 @@ fault: jarvis-coin-kl-courier slice used `stats.active_deliveries` and `stats.ex
 scope: line
 change: jarvis slice preamble: added standard field-extension block with two annotations — `stats.active_deliveries` (integer delivery-load counter; irreversible increment) and `stats.exposure_risk` (categorical risk tier; latent→operational flip); format mirrors taylor slice field-extension preamble; no entry data changed
 criteria met: yes — both extended fields now have rubric §"Field-extension protocol" annotations; preamble no longer empty; handoff_out propagation obligation stated
+
+## fix-6 (state:27 @22 compound encoding → split) — RESOLVED — 2026-05-27T02:13:00Z
+fault: `knowledge.wren-in-coverage-map: absent → present-but-outside-report` encoded two separable canonical facts (registration AND decision) as a compound value in one entry
+scope: line
+change: (1) taylor slice entry 5: value changed from `present-but-outside-report` to `present` (registration only; anchors at @22 = feed-return bone); (2) new entry 8 added: `@31 actor:taylor-hebert-kl-122ac.knowledge.wren-report-inclusion: na → excluded` (decision fact; anchors at @31 = report-delivery bone where exclusion is enacted); (3) field-extension preamble: `wren-report-inclusion` declaration added alongside `wren-in-coverage-map`; (4) cull-log: cycle-3-add note added; count 7→8; (5) SEAM-WREN-ANCHOR-DISCIPLINE: updated to describe two separate entries at @22 and @31 with their respective semantic loads
+criteria met: yes — two facts are now in separate entries at their correct enactment anchors; wren-in-coverage-map is registration-only; wren-report-inclusion is decision-only; both field-extensions declared; new NI co-citation expectation at @31 is absorbed by pre-existing SEAM-NI-CO-CITATION flag (NI must fire at @31 — already listed)
+
+## SESSION-END — 2026-05-27T02:14:00Z — facets-b01c04-cycle3-state-updates
+findings-applied: 6
+findings-skipped: 0
+exit: CLEAN
+note: cite-index regen required — see below
