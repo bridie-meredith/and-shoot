@@ -634,3 +634,25 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0026 | 2026-05-27 | FAST
+
+question: DEC-0025 follow-up: both c03 deferred audits are now resolved (/and-review bones b01c03 PASS-WITH-NOTES + /and-postop b01c02 already completed 2026-05-26). Three options for next step: (1) declare c03 closed and stop, (2) re-fire postop on c02 with fresh persona (dark-fantasy-reader), (3) run postop on c03 itself.
+context: /and-review bones b01c03 returned PASS-WITH-NOTES (0 HARD, 5 SIGNAL, 1 FLAG) today. /and-postop b01c02 in c03 context ran 2026-05-26 with worm-canon-pedant, divergent convergence, compound-noun saturation finding already logged as PROP-0007 / DEC-0019. c03 cold-read Phase 9 PASS (CONTINUE=yes), no depth-pass pending. The bone-review signals are advisory (fixable at bone scope if downstream revise dispatched, but none HARD, nothing blocking).
+
+options:
+  (1) Declare c03 closed — both scoped deferred audits resolved; report and stop.
+  (2) Re-fire postop b01c02 with fresh persona — adds one reader-eye; finding already logged; diminishing returns.
+  (3) Run postop on c03 — not in DEC-0025 scope; c03 has no depth-pass pending; 3 forks on a clean-PASS chapter.
+
+decision: Option 1 — declare c03 closed, report and stop.
+basis: goal:2 (cost discipline — options 2+3 are spend against already-logged findings or a chapter with no pending depth-pass) + methodology:3a (reversibility — stopping preserves /and-postop b01c03 as a user-invocable option; running it now without user direction is scope expansion) + methodology:3d (optionality — user retains the option to invoke /and-postop b01c03 explicitly if they want depth-of-quality signal before advancing) + goal:4 anti-pattern (no scope expansion past stated task)
+rationale: DEC-0025 scoped exactly two deferred audits. Both are on disk and closed. Option 2 adds a third reader-eye on c02's compound-noun saturation, which is already the primary finding of PROP-0007 and two fork reports — the information return is near-zero. Option 3 would be running postop on a chapter that (a) was not scoped by DEC-0025, (b) has no depth-pass pending, and (c) returned Phase 9 PASS clean. Running it without user direction is the anti-goal "while I was in there, I also..." pattern. The correct stopping point is here.
+trade-off: If the user wanted depth-of-quality QA on c03 specifically, they will need to invoke /and-postop b01c03 explicitly. That is a one-line user action. The cost of an unrequested postop run (3 forks + write overhead) is higher than the cost of the user choosing to invoke it if they want it.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

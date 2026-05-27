@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-05-27] DEC-0026 | DEC-0025 follow-up: both c03 deferred audits closed → Option 1: declare c03 closed, stop | Bones PASS-WITH-NOTES (0 HARD); postop b01c02 already ran 2026-05-26; options 2+3 are out-of-scope spend against already-logged findings.
 [2026-05-27] DEC-0025 | "do chapter 3" on branch chapter-3 → Option 1: close out deferred audits on c03 (/and-review bones b01c03 + /and-postop) | Branch name + memory.md deferred list point to unfinished c03 work; audits-first is cheapest and preserves re-cascade option if gate FAILs.
 [2026-05-26] DEC-0024 | process-critic: third Phase 9 cold-read FAIL b01c02 (multi-arm tournament) — recurring CONTINUE=no across 3 stitch passes → OK (no process change) | Same-chapter replication not cross-chapter recurrence; C03 counter-evidence (PASS on different dramatic_shape); candidate Phase 9 exemption under-constrained at N=1; gate worked as signal not wrong block; DEC-0021 + DEC-0024 are the two-occurrence markers; hold until second chapter with dormancy-prefigure contract also FAILs cold-read.
 [2026-05-26] DEC-0023 | REVERSES DEC-0022 — /and-stitch b01-c02 re-invoked: render-log confirms all phases completed on voice-exemplar-wired re-stitch → pull back (Option 2), do not re-stitch | memory.md line 2440 was stale; c02 is fresh-terminal; re-run would be pure seed variance; trailing-colon typo suggests wrong chapter target (likely b01-c03).
