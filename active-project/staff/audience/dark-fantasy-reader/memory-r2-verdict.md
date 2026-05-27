@@ -1,92 +1,79 @@
 ---
-facet: memory
-episode: b01-c01
 reviewer: dark-fantasy-reader
+facet: memory
+chapter: b01-c04
+phase: 5b-adversarial
 cycle: 2
-date: 2026-05-25
-verdict: accept
+date: 2026-05-27
+verdict: revise
 ---
 
-# Dark Fantasy Reader — Memory Facet Adversarial Verdict (cycle 2)
+## What this cycle was asked to check
 
-## Cycle-2 context
+Structural fix applied per DEC-0034: carve-out preamble moved from frontmatter to body-level block. R1 emitted three callouts:
 
-Cycle-1 verdict was `revise` on a single entry: mem:2 @26, spineless fire (no NI at @26, V3 carve-out failed condition 3). The fixer added narrator:9 @26 to interest-narrator-b01-c01.md and propagated the citation through proto-lines and cite-index. Cycle 2 re-evaluates mem:2 with the spine in place. mem:1 was accepted in cycle 1 and is re-confirmed below for completeness.
+- **(b) structural — carve-out format.** Body-level preamble block required per schema so Phase 0 scan can read the defense. R1 said: the defense exists, the format is wrong.
+- **(a) content — mem:4 sentence-scaffold repeats mem:2.** The AP11 carve-out claims cue-mode shift (point-event → continuous-operation thesis) but the description does not enact the shift; it synonymizes the same scaffold.
+- **(c) content — monument-family diversity fails.** Both entries are earth-bet displacement / un-priced-anchor. Two fires on one monument family at 5.1% density give the stitcher one monument.
 
----
-
-## Per-entry re-evaluation
-
-### [mem:1 @3] @3 — Earth-Bet displacement on prohibition-maintenance
-verdict-entry: accept (unchanged from cycle 1)
-
-No new findings. Entry confirmed standing: body-holds, displacement-cue correct, narrator:7 co-citation resolves, quiet-beat anchor passes (scene-A flat-low zone, no peak-bones). flag-013 (slug convention: `cond-override-architecture-residue-122ac`) remains SIGNAL — carried to margit, not a blocking issue here.
+The structural fix does not touch (a) or (c). This cycle re-reviews all three.
 
 ---
 
-### [mem:2 @26] @26 — Westerosi-monument clamp on witch-label-formation
-verdict-entry: accept (cycle 1 was revise; repair assessed)
+## Callout (b): structural fix — RESOLVED
 
-The spine gap that drove the cycle-1 revise verdict is closed. narrator:9 @26 now reads:
+The post-fix file carries a full body-level preamble block before the entry list. The block names the rule being carved out, the file state post-R2, the rationale for each deleted Westerosi candidate (AP7 + AP5 + audience-meaningfulness cited separately, with insider-only ground demoted to secondary support per R1's demand), the season-tracker watch for b01c05+, and explicit resolution assertions against fault-007, cape-fic REVISE, dark-fantasy REVISE, and worm-canon REVISE.
 
-> "the chin-lift filed her in a category she recognized the shape of without needing the country's name for it."
+The Phase 0 scan has a target. The defense is in the body where it belongs.
 
-I read this against the memory-flag description:
-
-> "the chin lifts the way it lifts in the country's older stories when a word has been waiting for a person and the person has finally arrived to fit it"
-
-These two entries do not contradict. The NI entry registers the interior's catch — pattern-recognition, classification, the shape before the name. The memory-flag entry registers what that catch is anchored to — the monument, the older-stories slot, the country's pre-existing category waiting for a person. The NI fires the spine; the memory-flag fires the monument-content layer. This is the correct architecture.
-
-Spine verification:
-- narrator:9 @26 back=Y confirmed in cite-index.
-- mem:2 @26 co=[narrator:9, state:2] confirmed in cite-index.
-- The spine is present. The V3 carve-out was not invoked; standard NI co-citation path is satisfied.
-
-Remaining disciplines checked:
-
-**Monument-trigger:** Westerosi-monument clamp on witch-label-formation. The body-tell (@26: oswyn lifts the chin) is the moment the categorization completes as a legible social gesture. The interior catches the slot closing. Monument is plausibly and specifically active here — not generic, Planetos-specific superstition registering through a body-tell. PASS.
-
-**Displacement-discipline:** description uses no proper noun, no monument named. "The country's older stories" and "a word has been waiting for a person" produce the shape without naming the monument. No mask-bleed, no stage-named cue, no generic monument-gloss. The construction is earning the weight it is asking for. PASS.
-
-**Quiet-beat anchor:** @26 is in scene-C's post-peak resolving tail (peak-bone is @21; @26 is downstream of it). Default-licit zone for memory-flag fire. PASS.
-
-**Audience-meaningfulness:** the witch-label closing around Taylor is legible to a reader without source-material fluency — the gesture, the weight of recognition, the sense that a category already existed before she arrived. A dark-fantasy reader will feel this beat as load-bearing without needing Planetos-specific knowledge. Both-meaningful gate passes.
-
-**Functional-register:** (a) moment of realization — Taylor catches the category as it forms; (b) social commentary — the institution of witch-recognition assembling through a body-tell, the structure predating her; (c) painting characterization — Taylor's pattern-recognition as a survival architecture. Three hits; multi-justification gate passes.
-
-**Per-scene cap:** one fire in scene-C. PASS.
-
-**flag-013 (slug convention):** `cond-kl-witch-label-formation-122ac` remains a SIGNAL. The concern raised in cycle 1 — that a condition card is a process-rule, not a monument-anchor, and that stitcher routing against a condition card rather than a monument card is substantively different — is still valid. However, this was rated SIGNAL by all three cycle-1 reviewers, and the fixer correctly deferred it to margit rather than resolving it unilaterally. The entry's substance is sound; the slug form is the open item. SIGNAL carries forward. This does not block the accept verdict.
-
-The cycle-1 demand was: repair the spine. The spine has been repaired. The entry ships.
+**(b) resolves.** Closed.
 
 ---
 
-## File-level re-assessment
+## Callout (a): mem:4 scaffold recurrence — LIVE
 
-- **Doubled-register gate:** mem:1 (Earth-Bet displacement) + mem:2 (Westerosi clamp). PASS.
-- **Sparsity:** 2/27 = 7.4%. In-band (5–12%). PASS.
-- **Pressure-signal inversion:** both fires in quiet-beat zones (scene-A flat-low @3; scene-C post-peak resolving tail @26). Zero peak-bone fires. PASS.
-- **Per-scene cap:** scene-A one fire; scene-C one fire; scene-B zero. PASS.
-- **Spine coverage:** mem:1 → narrator:7 @3; mem:2 → narrator:9 @26. PASS.
-- **Monument-family diversity:** override-architecture-residue (Earth-Bet prohibition pattern) + witch-label-formation (Westerosi recognition-clamp). Two distinct families across two registers. For a 27-bone episode this is sparse but defensible — the rubric requires ≥3 monument families "across an episode of >50 beats"; b01c01 is 27 bones. No curve-shape failure at this episode length.
+The post-fix file's mem:4 description:
 
-The file-level shape is clean. Two entries, two registers, both spined, both quiet-beat-anchored, sparsity correct. The licensing-layer gradient is intact.
+> *the feed lights the anchor the report did not name*
 
----
+R1 named the attack; the description is unchanged. The scaffold is: subject (feed) + detection verb (lights) + the-thing-the-architecture-refused-to-record (the anchor the report did not name). Transposed against mem:2 — *the feed returns the body she will not write down* — the structure is identical. Returns → lights. Body → anchor. Will not write down → did not name. Synonym substitution at every slot; sentence shape untouched.
 
-## Open items (non-blocking)
+The AP11 carve-out in the preamble block asserts cue-mode shift from point-event recognition (mem:2) to continuous-operation thesis-enactment (mem:4). I read for where that thesis is enacted in the description. *The feed lights the anchor the report did not name* fires and is over. Subject detects; object named as absent from the record; sentence concludes. A continuous-operation description would register the feed as running architecture — the process that does not stop, the ongoing gap, the shape that keeps not recording. *The feed lights the anchor the report did not name* is not that. It is the same discrete detection event as mem:2, wearing different words.
 
-- **flag-013 (both entries):** margit referral for `monument-*` slug forms. `cond-override-architecture-residue-122ac` → candidate `monument-override-architecture-prohibition`; `cond-kl-witch-label-formation-122ac` → candidate `monument-witch-label-formation-kl` or `monument-older-stories-word-waiting`. Stitcher routing consequence is real for mem:2: the stitcher routes figurative content against the target-reference field; routing against a condition card rather than a monument card is an architectural mismatch even if the content is present. Margit should prioritize the monument-card authoring for mem:2 before the stitcher phase. SIGNAL, not a block.
+The defense exists in the right place now (preamble block). The description field has not moved. The stitcher reads the description field. The carve-out and the description are still in two different documents.
 
-- **facets-cycle2-audit-confirm fault-C2C-001:** dialogue sidecar entries 1 and 2 carry broken sensory:2 @16 citations. This is a dialogue-facet fault, not a memory-facet fault. It does not affect memory-b01-c01.md. Noted for completeness; out of scope for this verdict.
+**(a) remains live.** Required action unchanged from R1: rewrite mem:4's description to enact continuous-operation in displacement-cue form. The running process, not the second instance of the first firing. The architecture that keeps not recording, not a second moment of the feed returning.
 
 ---
 
-## Verdict
+## Callout (c): monument-family diversity — LIVE, conditional
 
-`accept`
+Both entries remain earth-bet displacement / un-priced-anchor family. The post-fix makes no changes to the entry list. The file still gives the stitcher one monument at 5.1% density.
 
-mem:1 accepts (unchanged). mem:2 accepts: spine repaired, all three rubric axes pass, quiet-beat anchor correct, both-meaningful gate passes. The entry ships with SIGNAL flag-013 carried to margit.
+One structural concession from R1 carries into this cycle: if (a) resolves with a genuine rewrite — mem:4's description enacting a different cue mode within the same monument family — the diversity concern shifts. Two fires on the same monument in operationally distinct registers (first-recognition vs. continuous-operation architecture) is a weaker diversity problem than two fires in the same register. It is not a monument-family diversity pass by the rubric's terms (rubric §Curve-shape asks for distinct monument families, not distinct cue modes within one family), but the stitcher has two different shapes to work from rather than one shape twice.
 
-The description of mem:2 was the right call in cycle 1 and it is the right call now. "A word has been waiting for a person and the person has finally arrived to fit it." That is how dark fantasy earns its weight: the world's categories are already old; the protagonist just walked into one. The spine was the missing piece. It is present. This lands.
+The chapter's operational-shape carve-out — accepted-and-routing, Earth-Bet displacement is the load-bearing register, Westerosi candidates failed AP5 + AP7 — remains defensible and I do not re-contest it here. The carve-out earns single-register at the file level. It does not earn same-cue-mode at the entry level.
+
+The current state: the description fields are synonym-scaffolds. The stitcher reads one monument, twice, identically. Under the carve-out, the diversity floor is already stretched; giving the stitcher no variation within that stretch is the remaining failure.
+
+**(c) remains live until (a) is addressed.** If (a) resolves with genuine cue-mode differentiation visible in the description field, (c) shifts to tolerable-under-carve-out. If (a) again synonym-substitutes, (c) blocks independently: single-monument saturation with no operational variation is not rescued by a preamble block however well-formed.
+
+---
+
+## File-level accounting
+
+| Callout | Status |
+|---------|--------|
+| (b) structural — carve-out format | RESOLVED |
+| (a) content — mem:4 scaffold recurrence | LIVE |
+| (c) content — monument-family diversity | LIVE, conditional on (a) |
+
+One of three resolved. Two of three live. The file does not pass.
+
+---
+
+## VERDICT: revise
+
+**[memory:mem:4 @38]** @proto-38 — Post-fix description is unchanged from cycle 1. *The feed lights the anchor the report did not name* delivers the same sentence scaffold as mem:2 through synonym substitution; it does not enact the continuous-operation thesis the AP11 carve-out asserts. The carve-out defense now lives in the correct location (body-level preamble); the description field has not moved to meet it. Rewrite required: the description must register the feed as running architecture — the ongoing gap, the process that does not stop finding what the record will not hold — not as a second discrete detection event. Convergence-trace: AP12 (author-vocabulary leak, scaffold-level recurrence); AP11 carve-out claim unmet in the description field.
+
+**[memory:file-level / monument-family diversity]** — Conditional. Resolves to tolerable-under-carve-out if mem:4's rewrite produces a description the stitcher can read as a genuinely distinct cue mode within the un-priced-anchor family. Does not resolve if the rewrite synonym-substitutes again. The chapter-shape carve-out holds at the register level; it does not hold at the same-cue-mode-twice level. Convergence-trace: rubric §Curve-shape monument-family diversity floor.
