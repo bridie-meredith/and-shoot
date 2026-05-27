@@ -24,7 +24,7 @@ author: showrunner
 
 2 @9 actor:taylor-hebert-kl-122ac ++ rising entrapment: [acceptance-irreversible-before-the-words-are-complete, modification-of-terms-not-modification-of-the-yes, first-door-closed-by-her-own-delivery] | licensed-by: proto:7, proto:9, proto:11
 
-3 @9 actor:jarvis-coin-kl-courier ++ rising entrapment: [structural-routing-vector-confirmed-not-latent, appointment-schedule-now-installed-in-his-operational-week, arrangement-as-functional-architecture-not-proposal] | licensed-by: proto:9, proto:11
+# DELETED vibes:3 @9 — cycle-3 dark-fantasy callout (DEC-0035 2026-05-27): Jarvis carries rising-entrapment (victim-frame) here AND social-tether-antag-vector (threat-vector frame) at vibes:16; irreconcilable role-signals for future operators; Jarvis is tool/vector not entrapped party — Taylor is; vibes:16 stands as the authoritative threat-vector frame
 
 4 @11 loc:oc-cooper-yard-eel-alley + recurring-exchange-node: [fixed-coordinate-in-two-operational-weeks, first-bell-three-day-interval-as-recurring-calendar-fixture, tallow-damp-as-pre-arrival-confirmation-marker, single-exit-geometry-as-structural-complicity] | licensed-by: proto:7, proto:9, proto:11, world-build:oc-cooper-yard-eel-alley-project-notes
 

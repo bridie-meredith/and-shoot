@@ -41,11 +41,11 @@ rationale:
 
   This chapter prioritizes cross-facet co-citation integrity over per-facet density ceiling. Per-season NI density target (15-25%) is preserved across c01-c03; c04 single-chapter overshoot is structurally driven by the high actor:taylor state-density of the acceptance-and-routing operation.
 
-acknowledged-content-revise candidates (Phase 5b cycle-2; not addressed by this structural preamble fix):
-  - narrator:3 @9 AP10 chassis (3/3 reviewer convergence)
-  - narrator:7 @31 AP10 + tense-register (3/3 reviewer convergence; primary cycle-2 target)
-  - narrator:12 @23 AP2 persistent-narration (cape-fic + dark-fantasy converge)
-  - narrator:9 @38 middle clause AP2 paraphrase (cape-fic flag)
+acknowledged-content-revise candidates (Phase 5b cycle-3 resolution):
+  - narrator:3 @9 REWRITTEN cycle-3 (AP10 chassis removed; perceptual-event cadence-register)
+  - narrator:7 @31 REWRITTEN cycle-3 (AP10 + tense-register fixed; pre-calc past-perfect + perceptual event)
+  - narrator:12 @23 DELETED cycle-3 (AP2 persistent-narration; 2/3 convergence cape-fic + dark-fantasy)
+  - narrator:9 @38 middle clause AP2 paraphrase (cape-fic 1/3 TASTE-FLAG; skipped per cycle-3 scope — 1/3 only)
 
 resolves:
   - audit fault-004 (FREQUENCY-BAND NI above band without carve-out preamble)

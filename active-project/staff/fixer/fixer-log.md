@@ -1054,3 +1054,55 @@ dispatch: /and-facets b01-c04 Phase 5b cycle-3 vibes facet — DEC-0035 converge
 target: active-project/theater/facets/vibes-b01-c04.md
 audit-report: /and-facets b01-c04 Phase 5b cycle-3 convergence report (DEC-0035)
 findings-queued: 6 (4 token rewrites + 1 DELETE + 1 token-list edit)
+
+## sensory:1-delete — RESOLVED — 2026-05-27T00:05:00Z
+fault: sensory:1 @1 — 2/3 convergence: disambiguation fail (tallow-damp-lane-caulking charged subject pre-loads smell; Q1 fails) + unanchored old-state (eel-alley-dawn-air not established in any loc-state or prior sensory entry)
+scope: line
+change: DELETE. (1) sensory-b01-c04.md sensory:1 replaced with DELETED comment; (2) proto-lines @1 [sensory:1] stripped; (3) _cite-index.md: sensory section 3→2 entries (DELETED comment added); loc-state:1 co-list sensory:1 removed; state:1 co-list sensory:1 removed; totals cascade applied
+criteria met: yes — both HARD axes cleared; sensory:2 @13 (smell) + sensory:3 @25 (sound) = 2 modalities, floor met; 2/39 = 5.1% density, within 3-6% band
+
+## ADD-prevalidation-sensory:4 — RESOLVED (NO-ADD) — 2026-05-27T00:06:00Z
+fault: dispatch required ADD pre-validation for proposed sensory:4 @4 thermal (shed-wall predawn contact)
+scope: n/a (no file change)
+change: none — ADD rejected on density ceiling. 39 proto-lines > 30; short-chapter exemption does not apply. DELETE+ADD = 3/39 = 7.7% > 6% ceiling. Modality count 3 after ADD also fails exemption condition b (floor = 2; 3 > 2). A3 pre-validation passed (loc-state:1 @1 confirms predawn baseline for oc-cooper-yard-eel-alley); rejection is density-only, not old-state. DELETE-only is rubric-correct.
+criteria met: yes — pre-validation complete; ADD correctly refused; modality floor held at 2 (smell + sound)
+
+## SESSION-END — 2026-05-27T00:06:00Z — facets-b01c04-cycle3-sensory
+findings-applied: 1 (sensory:1 DELETE + cite-index cascade)
+findings-skipped: 0 (ADD pre-validation returned NO-ADD — density ceiling; not a skip, a correct refusal)
+exit: CLEAN
+
+## NI-cycle3-narrator7 — RESOLVED — 2026-05-27T00:10:00Z
+fault: narrator:7 @31 AP10 inverted-predicate chassis + present-perfect post-hoc accounting tense (3/3 convergence: cape-fic + dark-fantasy + worm-canon)
+scope: line
+change: interest-narrator-b01-c04.md narrator:7 rewritten from "the half-step of yard-air between her hand and his is the exposure she has just paid in full" to "the half-step of yard-air closed around the sheet's last contact with her hand; the cost had crossed before the hand had registered it crossing"; SVO in interest-narrator-b01-c04.md only; no proto-lines or cite-index impact (back=Y, co-list unchanged)
+criteria met: yes — AP10 inverted-predicate chassis removed; tense corrected to pre-calc past-perfect; physical image (yard-air, sheet, hand) preserved; perceptual event registered in the moment contact breaks, not as post-hoc accounting
+
+## NI-cycle3-narrator3 — RESOLVED — 2026-05-27T00:11:00Z
+fault: narrator:3 @9 AP10 inverted-predicate chassis (2/3 convergence: dark-fantasy + worm-canon)
+scope: line
+change: interest-narrator-b01-c04.md narrator:3 rewritten from "the lever is no longer a question of whether; it has just become a question of how much" to "Jarvis's cadence carried the receipt without the conditional that would have left the yes open; the receipt-form had already settled before her body finished holding for it"; no proto-lines or cite-index impact (back=Y, co-list unchanged)
+criteria met: yes — AP10 chassis removed; perceptual event encoded (conditional-removal in cadence; body-register signal); pre-calc past-perfect tense; cost-tracking channel explicit
+
+## NI-cycle3-narrator12 — RESOLVED — 2026-05-27T00:12:00Z
+fault: narrator:12 @23 AP2 persistent-narration; restates @22 Wren-exclusion thesis without change; lonely in cite-index (2/3 convergence: cape-fic + dark-fantasy)
+scope: line
+change: (1) narrator:12 marked with canonical deletion comment in interest-narrator-b01-c04.md; (2) [narrator:12] stripped from proto-lines/b01-c04.md @23 (now bare); (3) _inflight/proto-lines-narrator.md @23 was already bare — confirmed, no edit required; (4) cite-index narrator section: narrator:12 replaced with deletion comment, count 11→10; lonely-entries: narrator:12 struck with deletion note; bare-protolines: @23 added; density distribution: bare count 14→15; totals: 69 facet entries; 23/39 protolines decorated (59.0%); (5) preamble: fires 11→10; density 28.2%→25.6%; non-state-mandatory 5→4; total 6+4=10; acknowledged-content-revise candidates block updated to reflect cycle-3 resolutions
+criteria met: yes — AP2 entry deleted; proto-lines citation stripped; cite-index clean; preamble arithmetic correct
+
+## NI-cycle3-script — DEPENDENCY-FLAGGED — 2026-05-27T00:13:00Z
+fault: dispatch requires re-run of python3 active-project/staff/cite-index/build_cite_index.py b01-c04
+scope: escalate
+change: script NOT run. build_cite_index.py is a Phase-1→Phase-2 merge tool that rebuilds the cite-index from _inflight/ copies. Running it against cycle-3 state risks overwriting manual cycle-3 cite-index edits if _inflight/ copies predate cycle-3. Manual edits are in place and authoritative. Flagging to showrunner: if _inflight/ copies reflect cycle-3 state, script is safe to re-run and will validate the manual cite-index. If stale, script will regress.
+criteria met: n/a — flagged, not resolved; manual cite-index correct per direct inspection
+
+## SESSION-END — 2026-05-27T00:14:00Z — facets-b01c04-phase5b-cycle3-NI
+findings-applied: 3 (narrator:7 REWRITTEN; narrator:3 REWRITTEN; narrator:12 DELETED + cascade)
+findings-skipped: 0
+exit: DEPENDENCY-FLAGGED (build_cite_index.py re-run not executed — _inflight/ staleness risk)
+
+## SESSION-START — 2026-05-27T02:00:00Z — facets-b01c04-cycle3-state-updates
+dispatch: /and-facets b01-c04 Phase 5b cycle-3 state-updates — 6 mechanical fixes (DEC-0035 worm-canon + cape-fic callouts) on env slice, jarvis slice, taylor slice
+target: active-project/theater/facets/state-updates-env.md + state-updates-jarvis-coin-kl-courier.md + state-updates-taylor-hebert-kl-122ac.md
+audit-report: /and-facets b01-c04 Phase 5b cycle-3 convergence report (DEC-0035)
+findings-queued: 6

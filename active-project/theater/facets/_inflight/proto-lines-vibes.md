@@ -1,6 +1,6 @@
 # proto-lines-vibes — b01-c04
 # byte-identical SVOs from theater/proto-lines/b01-c04.md with [vibes:<id>] citations on fired bones
-# 16 fires / 39 bones (41%)
+# 14 fires / 39 bones (36%) — vibes:3 + vibes:9 deleted at cycle-3 (DEC-0035 2026-05-27)
 
 1 the tallow-damp marks the cooper's-yard shed-wall
 2 the cooper's-yard workers hold the smallfolk-hours murmur
@@ -10,7 +10,7 @@
 6 the insect-feed returns jarvis-coin-kl-courier
 7 taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [taylor-hebert-kl-122ac:4] [vibes:1]
 8 taylor-hebert-kl-122ac holds the feet
-9 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:8] [jarvis-coin-kl-courier:9] [vibes:2] [vibes:3]
+9 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:8] [jarvis-coin-kl-courier:9] [vibes:2]
 10 the insect-feed holds the hook-range
 11 jarvis-coin-kl-courier exits the lane-mouth [vibes:4]
 12 taylor-hebert-kl-122ac exits the cooper's yard
@@ -23,7 +23,7 @@
 19 taylor-hebert-kl-122ac maps the oswyn-mudway-flea-bottom-elder interval
 20 Pig Tallow Lane returns ward-tier bodies only
 21 the stitch-house frames mark the second ward
-22 the insect-feed returns wren-stitch-maker-flea-bottom-ward [vibes:9] [vibes:10] [vibes:11] [vibes:12]
+22 the insect-feed returns wren-stitch-maker-flea-bottom-ward [vibes:10] [vibes:11] [vibes:12]
 23 taylor-hebert-kl-122ac holds the feet
 24 taylor-hebert-kl-122ac maps the second-ward junction
 25 the early-morning grey empties Roper's Court

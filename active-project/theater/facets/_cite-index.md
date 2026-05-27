@@ -2,7 +2,7 @@
 generated: 2026-05-27
 source: active-project/theater/proto-lines/b01-c04.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 69 facet entries; 23/39 protolines decorated (59.0%)   # post-cycle-3: narrator:12 deleted; @23 now bare
+totals: 67 facet entries; 23/39 protolines decorated (59.0%)   # post-cycle-3: narrator:12 + sensory:1 + vibes:3 + vibes:9 deleted (DEC-0035)
 
 ## Density distribution (protolines by citation count)
 
@@ -14,8 +14,8 @@ totals: 69 facet entries; 23/39 protolines decorated (59.0%)   # post-cycle-3: n
 | 3          | 6 |
 | 4          | 3 |
 | 5          | 1 |
+| 6          | 1 |
 | 7          | 1 |
-| 8          | 1 |
 
 ## Per-facet entries
 
@@ -29,9 +29,9 @@ totals: 69 facet entries; 23/39 protolines decorated (59.0%)   # post-cycle-3: n
 
 ### narrator (10 entries)
   narrator:1 @6 back=Y
-  narrator:3 @9 back=Y co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, state:1, state:2, vibes:2, vibes:3]
+  narrator:3 @9 back=Y co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, state:1, state:2, vibes:2]
   narrator:4 @18 back=Y co=[state:4, vibes:6]
-  narrator:6 @22 back=Y co=[mem:2, state:4, state:5, vibes:9, vibes:10, vibes:11, vibes:12]
+  narrator:6 @22 back=Y co=[mem:2, state:4, state:5, vibes:10, vibes:11, vibes:12]
   narrator:7 @31 back=Y co=[state:7, state:10]
   narrator:8 @36 back=Y co=[state:7, state:8, state:12]
   narrator:9 @38 back=Y co=[mem:4]
@@ -49,7 +49,7 @@ totals: 69 facet entries; 23/39 protolines decorated (59.0%)   # post-cycle-3: n
   state:1 @1 back=Y co=[loc-state:1]
   state:2 @13 back=Y co=[loc-state:3, sensory:2]
   state:3 @15 back=Y co=[narrator:11, vibes:5]
-  state:4 @22 back=Y co=[mem:2, narrator:6, state:5, vibes:9, vibes:10, vibes:11, vibes:12]
+  state:4 @22 back=Y co=[mem:2, narrator:6, state:5, vibes:10, vibes:11, vibes:12]
   state:5 @25 back=Y co=[loc-state:4, sensory:3]
   state:6 @26 back=Y
   state:7 @27 back=Y co=[narrator:13, state:6, vibes:13]
@@ -61,23 +61,23 @@ totals: 69 facet entries; 23/39 protolines decorated (59.0%)   # post-cycle-3: n
   state:13 @37 back=Y
   state:14 @39 back=Y co=[feel:2, loc-state:6]
   state:15 @5 back=N co=[state:1]
-  state:16 @9 back=N co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2, vibes:2, vibes:3]
+  state:16 @9 back=N co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2, vibes:2]
   state:17 @11 back=N co=[state:3, vibes:4]
   state:18 @29 back=N co=[loc-state:5, state:4, state:5, state:8, state:9]
   state:19 @29 back=N co=[loc-state:5, state:4, state:5, state:8, state:9]
   state:20 @32 back=N co=[state:6, state:11]
   state:21 @36 back=N co=[narrator:8, state:7, state:8, state:12]
   state:22 @36 back=N co=[narrator:8, state:7, state:8, state:12]
-  state:23 @9 back=N co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2, vibes:2, vibes:3]
-  state:24 @9 back=N co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2, vibes:2, vibes:3]
+  state:23 @9 back=N co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2, vibes:2]
+  state:24 @9 back=N co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2, vibes:2]
   state:25 @15 back=N co=[narrator:11, state:3, vibes:5]
   state:26 @18 back=N co=[narrator:4, state:4, vibes:6]
-  state:27 @22 back=N co=[mem:2, narrator:6, state:4, state:5, vibes:9, vibes:10, vibes:11, vibes:12]
+  state:27 @22 back=N co=[mem:2, narrator:6, state:4, state:5, vibes:10, vibes:11, vibes:12]
   state:28 @27 back=N co=[narrator:13, state:6, state:7, vibes:13]
   state:29 @31 back=N co=[narrator:7, state:7, state:10]
 
 ### mem (2 entries)
-  mem:2 @22 back=Y co=[narrator:6, state:4, state:5, vibes:9, vibes:10, vibes:11, vibes:12]
+  mem:2 @22 back=Y co=[narrator:6, state:4, state:5, vibes:10, vibes:11, vibes:12]
   mem:4 @38 back=Y co=[narrator:9]
 
 ### feel (2 entries)
@@ -87,18 +87,18 @@ totals: 69 facet entries; 23/39 protolines decorated (59.0%)   # post-cycle-3: n
 ### meta (0 entries)
 _(no entries)_
 
-### vibes (15 entries)
+### vibes (13 entries)
   vibes:1 @7 back=Y co=[feel:1, narrator:10, taylor-hebert-kl-122ac:4] lic-out=[proto:7, proto:9]
-  vibes:2 @9 back=Y co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2, vibes:3] lic-out=[proto:7, proto:9, proto:11]
-  vibes:3 @9 back=Y co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2, vibes:2] lic-out=[proto:9, proto:11]
+  vibes:2 @9 back=Y co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2] lic-out=[proto:7, proto:9, proto:11]
+  # DELETED vibes:3 @9 — cycle-3 dark-fantasy callout (DEC-0035 2026-05-27): Jarvis rising-entrapment irreconcilable with vibes:16 social-tether-antag-vector; Jarvis is vector not entrapped party
   vibes:4 @11 back=Y co=[state:3] lic-out=[proto:7, proto:9, proto:11]
   vibes:5 @15 back=Y co=[narrator:11, state:3] lic-out=[proto:15, proto:16, proto:18]
   vibes:6 @18 back=Y co=[narrator:4, state:4] lic-out=[proto:18, proto:19]
   vibes:8 @17 back=Y lic-out=[proto:14, proto:17, proto:18]
-  vibes:9 @22 back=Y co=[mem:2, narrator:6, state:4, state:5, vibes:10, vibes:11, vibes:12] lic-out=[proto:22, proto:38]
-  vibes:10 @22 back=Y co=[mem:2, narrator:6, state:4, state:5, vibes:9, vibes:11, vibes:12] lic-out=[proto:22, proto:24, proto:38]
-  vibes:11 @22 back=Y co=[mem:2, narrator:6, state:4, state:5, vibes:9, vibes:10, vibes:12] lic-out=[proto:22, proto:38, proto:39]
-  vibes:12 @22 back=Y co=[mem:2, narrator:6, state:4, state:5, vibes:9, vibes:10, vibes:11] lic-out=[proto:22, proto:24, proto:38]
+  # DELETED vibes:9 @22 — cycle-3 cape-fic callout (DEC-0035 2026-05-27): Wren rising-entrapment pre-loads importance signal; redundant against vibes:2 + vibes:5; should be enacted not asserted
+  vibes:10 @22 back=Y co=[mem:2, narrator:6, state:4, state:5, vibes:11, vibes:12] lic-out=[proto:22, proto:24, proto:38]
+  vibes:11 @22 back=Y co=[mem:2, narrator:6, state:4, state:5, vibes:10, vibes:12] lic-out=[proto:22, proto:38, proto:39]
+  vibes:12 @22 back=Y co=[mem:2, narrator:6, state:4, state:5, vibes:10, vibes:11] lic-out=[proto:22, proto:24, proto:38]
   vibes:13 @27 back=Y co=[narrator:13, state:6, state:7] lic-out=[proto:25, proto:26, proto:27, proto:28]
   vibes:14 @28 back=Y lic-out=[proto:28, proto:37]
   vibes:15 @35 back=Y co=[vibes:16] lic-out=[proto:31, proto:32, proto:33, proto:34, proto:35]
@@ -111,9 +111,9 @@ _(no entries)_
 
 ## Pile-ups (>4 facets co-located on one protoline)
 
-- **@22** (8): mem:2, narrator:6, state:4, state:5, vibes:9, vibes:10, vibes:11, vibes:12
+- **@22** (7): mem:2, narrator:6, state:4, state:5, vibes:10, vibes:11, vibes:12
     `the insect-feed returns wren-stitch-maker-flea-bottom-ward`
-- **@9** (7): jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2, vibes:2, vibes:3
+- **@9** (6): jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2, vibes:2
     `jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac`
 - **@29** (5): loc-state:5, state:4, state:5, state:8, state:9
     `jarvis-coin-kl-courier enters the cooper's yard`
