@@ -392,7 +392,7 @@ s02n01 — KEEP. "The waste-middens junction draws the discard-air." Sensory gro
 
 s02n02 — KEEP. "Taylor enters Pig Tallow Lane." Day-1, ward-1 entry. Covers the force tag: Taylor's systematic ward-reading applied to new ground. Same walk-and-read discipline as Hook triage — the extension is addition, not transformation. No PP. KEEP.
 
-s02n03 — KEEP. Moving bone: capability +1.0. "Taylor extends the insect-range." This is the critical bone for the range watch. The consolidated +1.0 covers both adjacent wards (day-1 coverage: Pig Tallow Lane + stitch-house ward). The notes correctly specify "day-1 coverage: Pig Tallow Lane + stitch-house street ward, both within single extension range." The verb "extends" is the established capability-expansion verb from b01-c02 bone 11. No PP. Magnitude 1.0 consolidated (prior +0.5+0.5 splits eliminated per magnitude floor). Range check: both wards within single extension on a single walk — this is consistent with established Worm mechanics (Taylor's range at this capability rank can cover two adjacent wards in a single walking pass if she is physically present in the territory; no single broadcast from a fixed point). The coverage is built through physical movement along the ward lanes, not through a radius deployment from a stationary position. KEEP.
+s02n03 — KEEP. Moving bone: capability +1.0. "Taylor extends the insect-range." This is the critical bone for the range watch. The consolidated +1.0 covers both adjacent wards (day-1 coverage: Pig Tallow Lane + stitch-house street ward). The notes correctly specify "day-1 coverage: Pig Tallow Lane + stitch-house street ward, both within single extension range." The verb "extends" is the established capability-expansion verb from b01-c02 bone 11. No PP. Magnitude 1.0 consolidated (prior +0.5+0.5 splits eliminated per magnitude floor). Range check: both wards within single extension on a single walk — this is consistent with established Worm mechanics (Taylor's range at this capability rank can cover two adjacent wards in a single walking pass if she is physically present in the territory; no single broadcast from a fixed point). The coverage is built through physical movement along the ward lanes, not through a radius deployment from a stationary position. KEEP.
 
 s02n04 — KEEP. Held: moral_legibility_to_self. "Taylor maps the junction-agitation." The read-without-naming enacts the legibility hold. "She does not stop to name what she is doing" — this is the canonical Taylor move when the accounting is continuous with prior practice: she extends the same methodology and does not mark the extension as a different kind of act. The legibility suppression is enacted as the continuing-without-naming, which is physically real. No PP. KEEP.
 
@@ -542,3 +542,64 @@ Total: 33 KEEP, 0 DELETE-PROPOSE
 2. SOFT — b01c07 prose-burden soft finding carries forward unchanged to b01c07 /and-write.
 
 VERDICT: ACCEPT
+
+---
+
+## b01c04 Phase 6 bone-gate review — 2026-05-27
+
+---
+reviewer: worm-canon-pedant
+chapter: b01c04
+phase: write-bone-gate-redo
+date: 2026-05-27
+scenes_reviewed: [b01c04s01, b01c04s02, b01c04s03]
+---
+
+## scene b01c04s01
+verdict: SUBSTANCE-FELT
+
+The s01 axis pair — social_tether-antag +1.0 at n06 and position-prot-rise +1.0 at n08 — is earned through the exchange's specific mechanics, not asserted. Taylor's line (@6: "Yes. The terms hold with two changes. You will have patterns — what moves through the streets, what does not, where the seams sit — not raw report of who said what to whom. The interval is mine to set. The volume is mine to set.") is cold-utilitarian delivery: modification stated as operative terms, no warmth, no re-litigation of the decision made in the night. This is how Taylor handles delivery after deciding — the deciding was the hard part; the delivery is procedure. The line correctly enacts her prohibition-as-variable discipline: the pattern-not-raw modification is the last parameter she can control, stated as fact rather than request. No melodrama. No hedging. Canon-correct register throughout.
+
+Jarvis's receipt (@8: "Those terms are acceptable to the man I serve. The volume yours. The interval yours. The substance pattern-reports from the wards you walk.") is courier-neutrality exactly — flat acknowledgment, no warmth, no re-negotiation. The routing-confirmation shape is correct: he receives the yes as a routing confirmation, not a concession he extracted. The lever solidifies before she finishes speaking, which is the opposing force at work. The position-prot-rise +1.0 on n08 is earned by the courier's flat conversion of Taylor's terms into a settled operational arrangement — she is now a named function in his routing structure, anonymous no longer possible.
+
+The insect-feed at n05 returns Jarvis before Taylor's eyes find him — feed-priority-over-eye, the political_register-prot hold in its correct Worm-canonical form. No perception verb. "Returns" is the established feed-output verb. The moral_framework hold at n07 (Taylor holds the feet) is the correct enactment: body-stillness against the weight of the irreversible act, dark-fantasy watch honored — no rationalization narrated in real time; only the somatic record of the held position. Earth-Bet fence clean. No Khepri reference. Opposing force visible (Jarvis exits with the yes at n09; the lever is in motion before Taylor moves). SUBSTANCE-FELT.
+
+## scene b01c04s02
+verdict: SUBSTANCE-FELT
+
+The capability +1.0 at s02n03 ("taylor-hebert-kl-122ac extends the insect-range") delivers its axis-movement through sequential acquisition that is physically correct per Worm mechanics. The range watch from the chunk review — four-ward coverage must be built as two-day sequential acquisition, no single broadcast — is resolved at bone level. s02 is day-1 (wards 1+2, Pig Tallow Lane + stitch-house ward, one walking pass); s03 is day-2 (ward-3, Roper's Court). The repetition of the canonical verb "extends" across both scenes signals same-method-different-ward, not simultaneous broadcast. Coverage built through physical walking-pass, insect-contact, established presence points — no range inflation. No flag.
+
+The social_tether-prot-rise +1.0 at s02n06 ("the insect-feed returns oswyn-mudway-flea-bottom-elder") is the chapter's Khepri-echo bone and it lands correctly. Oswyn becomes a coordinate in the map without contact, consent, or choice. The subject is the insect-feed (the physical instrument), not Taylor — correct autonomous-yield behavior, not a Taylor decision. The opposing force is present and correctly structured: s02n06 + s02n07 together enact the architecture's fundamental mechanism — the same walk-and-read that constituted Hook triage now routes Oswyn's movement-interval toward Otto — visible to the reader, un-named by Taylor. No override-architecture fence violation: the feed reads; it does not direct. Oswyn is substrate, not instrument.
+
+The four-bone Wren-anchor sequence in s02 (n09: feed returns Wren, non-logged; n10: Taylor holds the feet, route-choice enacted without narration) carries the "without examining why she holds it" watch-content at bone level. The two bones are mechanically distinct: n09 is the feed's return event; n10 is the physical consequence of the route-choice. The non-examination is enacted in the body's stopping, not narrated as a decision. Taylor's prohibition is behavioral discipline, not principled position — this is canon-correct for this stage of the arc. SUBSTANCE-FELT.
+
+## scene b01c04s03
+verdict: SUBSTANCE-FELT
+
+Three axes move in s03: capability +1.0 (n03), social_tether-prot-rise +1.0 (n07), position-world +1.0 (n09). All three are earned through specific physical events, none asserted.
+
+Capability +1.0 at s03n03 completes the two-day sequential acquisition: day-2, ward-3, Roper's Court. Same canonical verb as s02n03 — the repetition enacts same-method-new-ward rather than transformation. The chapter-contract adjustment (capability +1.5 → +2.0 to honor the magnitude floor) is fully resolved: two bones, two days, sequential, no splits.
+
+Social_tether-prot-rise +1.0 at s03n07 ("taylor-hebert-kl-122ac delivers the report-sheet") is the chapter's material threshold. Taylor has been reading and routing; this is the first physical object transfer that makes the routing irreversible. The licensed-action form (concrete physical action + communication-class axis_move + chunk text authorizing the exchange) is correctly applied. No dialogue-file entry required — the exchange is physical, not verbal. The moral catastrophe of the Oswyn node is now materially present: the report-sheet contains Oswyn's movement-interval; it is crossing the yard-air toward Jarvis's coat; his unknowing-node status is no longer potential but functional.
+
+Position-world +1.0 at s03n09 ("jarvis-coin-kl-courier exits the cooper's yard") is correctly pegged to the physical departure, not to any future arrival at Otto. The axis increment is the intelligence crossing the yard threshold — the moment it exits Taylor's operational context and enters Otto's channel through Jarvis as structural vector. The opposing force is in the departure: s03n09 + s03n10 together enact the indivisibility thesis (intelligence exits; Taylor runs the ward-feed; the two operations are not partitioned). Theme-silence watch at n10 confirmed: the thesis is enacted in the juxtaposition, not stated in any SVO.
+
+The Wren-anchor sequence in s03 (n11: feed returns Wren, non-logged; n12: Taylor exits the stitch-house lane without examining) completes the four-bone Wren-discipline arc across s02 and s03. The non-examination at n12 is enacted as continued movement at operational pace — the exit-without-pausing is the "Taylor does not examine whether it will hold" content, physically enacted. Canon-correct: Taylor does not stop to deliberate; the walk-back continues; the question does not arrest the step.
+
+Earth-Bet fence clean across all 12 bones. No parahuman jargon. No Khepri reference. No Gold Morning. Multi-shard fence clean: no directive deployment, no nervous-system coordination, no Manton-effect suspension. Taylor register throughout: cold-utilitarian, operational, no editorial against the operational facts. SUBSTANCE-FELT.
+
+---
+
+### Chapter-level canonicity summary
+
+- Khepri-rhyme without Earth-Bet noun leak: CLEAN. Five structural sequences across 33 bones carry the Khepri-architecture surface. No Earth-Bet proper noun appears in any SVO. No parahuman jargon. The word "Khepri" is absent; the architecture it names is present in what the bones do.
+- Insect-feed mechanic consistent with Worm physics: CLEAN. Coverage built through physical walking-pass and established insect-contact points. Range: two-day sequential acquisition across three adjacent wards; no single broadcast deployment; no range exceeding the established capability rank. Feed returns entities via biological sensory relay. No nervous-system coordination. No Manton-effect suspension.
+- Taylor in-character: CLEAN. Cold-utilitarian throughout all three scenes. Delivery at s01 is procedure, not re-litigation. Prohibition-as-variable (pattern-not-raw modification) is the last held parameter stated as operative terms. Held-feet at s01n07 is somatic-residue, not drama. Mapping at s02n04 and s02n07 is rote-extension-of-prior-practice, not named as intelligence-harvest. Walk-back at s03n10 is continuous operation, not meditation. No melodrama anywhere in the 33 bones.
+- Oswyn as unknowing node reads as moral catastrophe structurally: CONFIRMED. The architecture is visible in the bone structure (feed returns Oswyn; Taylor maps his interval; the report-sheet crosses the yard-air containing that interval; Jarvis's coat carries it toward Otto). Taylor does not name this. The reader sees it. That asymmetry is the chapter's mechanism. The Khepri-echo lands without announcement.
+
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+soft_findings:
+  - SOFT (carried forward): dialogue-file stale citation — Jarvis entry 9 annotated @n10 (prior draft numbering); redo has n10 as Taylor's exit bone; stale cross-reference only; content covered at bone level; carry to /and-review bones for cleanup; not a bone-gate block
+  - SOFT (carried forward): b01c07 prose-burden soft finding — Halvard tether-gain will need prose support at write-time; carries forward unchanged
