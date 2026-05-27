@@ -3,6 +3,18 @@
 
 ---
 
+## 2026-05-27 — b01c04 sensory authored at /and-facets Phase 1 R1
+
+Chapter b01c04: four locations across three scenes. 39 bones.
+3 sensory entries, 2 modalities (smell + sound).
+Sensory:1 @1 smell — eel-alley-dawn-air → tallow-damp-lane-caulking (scene-A entry inflection; location-identifier arrives before yard is visible).
+Sensory:2 @13 smell — tallow-damp-lane-caulking → middens-discard-compound (scene-B entry inflection; ward-signature shift; chains from sensory:1 old-state).
+Sensory:3 @25 sound — carter-work-ambient → roper's-court-near-silence (scene-C entry inflection; Pig Tallow Lane daytime-carter baseline drops to pre-dawn court near-silence; cross-modal coverage).
+Density: 3/39 = 7.7%; marginally over 6% ceiling; all three survive strip-audit. Flagged seam for auditor.
+Old-state sourcing: @1 from loc-card eel-alley-dawn-air (no prior entry); @13 from sensory:1 new-state; @25 from Pig Tallow Lane loc-card carter-work-ambient (no prior sound entry).
+
+---
+
 ## 2026-05-26 — b01c03 location-state authored at /and-facets Phase 1 R1
 
 Chapter b01c03: oc-stitch-house-lane precinct, two micro-locations. 36 bones, 3 scenes.
