@@ -133,3 +133,69 @@ The Wren-as-negative-space resolution is correct. n14 (insects return the juncti
 ## scene b01c02s03
 verdict: SUBSTANCE-FELT
 The two prohibition-checks (s01n12: draws the line prospectively, before the counting; s03n13: draws the line retroactively, after the crack) read as the same prohibition arriving at different architectural pressures — discipline versus defense. They are not rhetorical repetition because the bone sequence around each is different: s01n12 follows harm-reduction framing at a moment of choice; s03n13 follows recognition (n11: stalls the count, causally grounded in the ward-junction entry at n09/n10) and holding (n12: holds the breath — the beat the recognition exists before suppression closes over it). The three-bone decomposition recognition→holding→suppression is structurally clean and carries weight because n09/n10 have made the ward-junction entry specific before the stall arrives. The held breath lands as cost paid: the recognition has room to exist for one beat before the mechanism fires. n14 (closes against the drain angle — physical suppression correlate) and n17 (ward-junction contact closes with a half-beat longer) make the filing cost something before the exhale. The chapter-close exhale (n18) is the body reporting that the work is done, not that the weight has lifted. Sealed-tension confirmed — no catharsis, no release. The crack is filed under the harm-reduction entry and the ledger is shut.
+
+---
+
+## b01c04 chunk review — 2026-05-27
+
+### b01c04s01 — acceptance delivered
+
+**axis: social_tether-antag +1.0**
+SUBSTANCE-FELT. The lever solidifying before Taylor finishes speaking — Jarvis receiving the yes as routing confirmation, not as extracted concession — is the correct dark-fantasy shape for an antagonist who does not pause at convenient moments. Otto is not there, and he does not need to be. The mechanism does the work: the acceptance is irreversible the instant it exits Taylor's mouth, and the chunk names the exact quality of that weight — "the particular quality of weight that follows any irreversible operational act." Not regret, not relief. That precision is load-bearing. The modification-of-terms (volume and interval) reads correctly as the discipline's last available parameter, not as meaningful control. The lever has solidified. The distinction between whether and how-much is the trap, and the chunk makes it structural rather than announced.
+
+**axis: position-prot-rise +0.5 (tranche)**
+SUBSTANCE-FELT. Anonymous no longer possible reads as cost, not achievement. The chunk anchors it through Jarvis's courier-neutrality — "a man recording a victory" is explicitly NOT what happens, which means the reader sees Otto's gain without Taylor's framing papering over it. The position increment arrives without ceremony. That is right. No catharsis. The fixed-coordinate image (the yard as a recurring calendar item installed without ceremony) earns the procedural tone. The feed check on the perimeter before she leaves is the world operating through its own physics; it is not reassurance.
+
+**goal axis — protection-and-trap reading:**
+The thesis is structural here, not declared. The modification-of-terms is Taylor's last attempt to hold a parameter; Jarvis treating it as routing confirmation confirms the trap is already running without Taylor needing to name it. The rationalization (Sera is real, the intelligence is already running, the distinction is real and she holds it) operates correctly — this reader has been burned by rationalizations that the text endorses. This one the text watches but does not endorse. The gap between "the distinction is real" and "the lever has solidified before she finishes speaking" is the architecture.
+
+---
+
+### b01c04s02 — coverage expansion
+
+**axis: capability +1.0 (first tranche)**
+SUBSTANCE-FELT. The chunk delivers the capability gain without treating the feed as a reliable tool — "It is the same information the Hook gave her. Different ward, same ledger." That line is carrying weight. It is not an achievement. It is a procedural extension of something already running. The "same ledger" reads as dread-mechanism because the reader understands what the ledger now routes upward to. "She does not stop to name what she is doing" is the suppression working. The expansion is not transformation. This reader does not need it announced; the chunk correctly declines to announce it.
+
+**axis: social_tether-prot-rise +1.0 (first tranche)**
+SUBSTANCE-FELT — but this is the scene I'm watching most closely. Oswyn Mudway as an unknowing node is the correct shape: "He does not know he is now a coordinate in a map that routes upward through a courier to a man in a tower." The tether gain is paid for by his unknowing. This reader's specific hot button is violence-without-aftermath, bodies-that-don't-matter — and Oswyn is a named body. The chunk names him, notes his fever-burned face is gone, names the child-older-than-children-should-be aging that wards do. His unknowing-node status reads as cost, not as convenient substrate. That is the future-cost collateral beginning to form. Wren visible but outside the report: the anchor discipline is named and held, but the chunk does not examine why Taylor holds it. That is the correct choice for this chapter's class. The non-examination carries more weight than an examination would. The reader sees the gap the calculus does not.
+
+**goal axis — protection-and-trap:**
+The expansion scene is where the thesis lands as architecture rather than declaration, and it does. The walk-and-read that constituted Hook triage now constitutes intelligence for Otto's consolidation — no operational difference in the act Taylor performs. That is the trap made structural. The Oswyn beat makes the trap's human cost visible before Taylor names it as such (she does not name it as such). The Wren beat makes the anchor's fragility visible to the reader in the same movement. This is the chapter's load-bearing scene for the thesis, and it holds.
+
+---
+
+### b01c04s03 — first delivery
+
+**axis: capability +0.5 (completion tranche)**
+SUBSTANCE-FELT. The four-ward coverage map as a completed shape reads as "larger. No register beyond that." — the accounting holding it in the most minimal possible frame is the correct suppression. The world has expanded but Taylor's ledger does not perform it. That is labor, not achievement. No catharsis. The largest operational footprint she has run, filed as a single adjective.
+
+**axis: social_tether-prot-rise +1.0 (second tranche)**
+SUBSTANCE-FELT. Jarvis as structural vector is now functional architecture, and the confirmation's weight is calibrated exactly: it arrives as "precisely the weight the acceptance was made to carry." Not more. Not less. The column closes and another opens. That is the dark-fantasy accounting register — the ledger runs, the trade is priced, nothing overflows. What earns this tranche is the final image: "reading the ward and feeding the ward and reading what she feeds in a single unbroken operation." The protection and the trap are not metaphorically the same operation; they are literally the same physical act in that sentence. That is the thesis landing as architecture.
+
+**axis: position-prot-rise +0.5 (completion tranche)**
+SUBSTANCE-FELT. Sera's exposure managed — confirmation received. The lever pays its stated first dividend. The chunk is clean here: the confirmation arrives as administrative flatness (single line, plain hand, not handed over but held visible at conversation distance, returned to his coat). That restraint is cost-honest. It is not relief. It is the ledger closing one column. "The accounting closes one column and opens another" is exactly the dark-fantasy register — the win is priced immediately by what follows it.
+
+**axis: position-world +1.0**
+SUBSTANCE-FELT. The first upward routing of the intelligence layer — "the information exits Taylor's operational context and enters Otto Hightower's Green consolidation channel through Jarvis as structural vector" — is the world gaining what the protagonist pays. The chunk names this without editorializing. The world is not set dressing here; it was there before Taylor arrived, it is running alongside her, and the Green consolidation gains exactly as she routes upward. The axis is structural and the chunk makes it structural.
+
+**goal axis — protection-and-trap final landing:**
+"The report did not include Wren. This is the anchor holding. Taylor does not examine whether it will hold." — this is the chapter's last sentence doing the work it must do. The anchor holds, the question of whether it will hold is planted without answer, and the reader is left with the gap. No catharsis. No resolution. The protection and the trap are the same operation is not declared here — it was demonstrated in s02, it was run in s03, and it closes on the un-examined question. That is the correct dark-fantasy shape. The weight has accumulated across three scenes without arriving.
+
+---
+
+### Tragic-causal weight — Khepri-rhyming architecture
+
+The rebuilding-as-atonement shape is felt as architecture in this chapter, not asserted. The "same ledger" construction in s02 is the key load-bearing phrase: Hook triage and Pig Tallow triage are the same act, which means the atonement and the repetition are the same act, which is exactly Khepri's architecture made operational. Taylor does not name this. The reader sees it. That is the correct distribution of knowledge. The architecture does not announce itself.
+
+### Future-cost collateral (cl03b) — cost-honesty check
+
+Genuinely felt as collateral, not papered over. The cl03b tranche is paid by: Oswyn's named personhood (the fever-burned look gone, the penny-a-barrel carter's work, his unknowing), Wren's presence in coverage without presence in the report, and the chapter-closing non-examination. The collateral is not a future warning label. It is already structurally embedded in the chapter's architecture. The reader is watching the trap close without Taylor watching it.
+
+### Threshold discipline fires
+
+No walkout triggers. No catharsis before weight — the chapter closes on an open question, not a resolution. No enemies pausing conveniently — Jarvis is a courier doing courier work; the leverage runs without requiring Otto's attention. No magic-as-reliable-tool — the feed is procedural labor, ward-walking, rain-damp stone range limits. No violence without aftermath — Oswyn is not a body; he is named, aged, unknowing, and that unknowing is cost made human before it is made abstract. No world-as-set-dressing — the ward has its own physics (waste-middens junction, the air carrying what other wards discard) before Taylor reads it.
+
+The one soft watch I'm carrying forward: the rationalization in s01 ("the distinction is real. She holds it.") must not accumulate into authorial endorsement at the execution layer. At chunk level it is watched but not endorsed; at /and-write it must remain in that register. The suppression is doing its work; the text must not do the suppression's work for it.
+
+**VERDICT: ACCEPT**
+The protection and the trap are the same operation, and the chapter makes that architectural rather than declared. The cost-honesty holds across all five axes. No hard findings. Soft carry: s01 rationalization must be watched at the execution layer — the text watches the distinction, it does not endorse it.
