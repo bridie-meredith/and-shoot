@@ -353,3 +353,50 @@ Chapter goal: "Show the audience the acceptance and the network expansion togeth
 One soft carry to /and-facets: the moral_framework held-rationale across n07 s01, n07 s02, and the closing bones of s03 must not accumulate into authorial endorsement in the prose rendering. The bones do their job correctly at the SVO level. The facet layer and stitcher must hold the same line: body-behavior, not narrated correctness.
 
 VERDICT: ACCEPT
+
+---
+
+## b01c04 Phase 6 bone-gate review — 2026-05-27
+
+---
+reviewer: dark-fantasy-reader
+chapter: b01c04
+phase: write-bone-gate-redo
+date: 2026-05-27
+scenes_reviewed: [b01c04s01, b01c04s02, b01c04s03]
+---
+
+## scene b01c04s01
+verdict: SUBSTANCE-FELT
+The social_tether-antag +1.0 (n06) and position-prot-rise +1.0 (n08) carry their weight at the bone level in the correct dark-fantasy register. What this reader was watching — whether the acceptance feels like an irreversible cost or a managed transaction — is answered by the structural sequence: n06 (Taylor speaks the yes) → n07 (holds the feet: body enacts the suppression's form without narrating its reasoning) → n08 (Jarvis speaks the routing-confirmation: "Those terms are acceptable to the man I serve") → n09 (Jarvis exits: the lever walks out at courier pace). The cost is embedded in the order of events. The acceptance is irrevocable before Taylor's feet move. Jarvis does not pause to deliberate, celebrate, or extract — he converts the yes to a routing arrangement and leaves. The position-prot-rise arrives as naming-without-ceremony: Taylor is now a function in Jarvis's operational vocabulary, which the reader understands means she is a function in Otto's, and the bone does not perform what that means. The rationalization-watch from Phase 4 remains clean: n07's SVO is "taylor-hebert-kl-122ac holds the feet" — the bone is the body, not the reasoning. The held-rationale in the notes names the rationalization's content; the bone does not. The future-cost collateral (cl-antag-d03) is not bookkeeping at the bone level; it is the lever solidifying and walking out the lane-mouth before Taylor moves. The opposing force (Jarvis) does not pause at a convenient moment. No catharsis — the scene closes on Taylor's clean exit from the yard with the anchor holding outside pricing.
+
+## scene b01c04s02
+verdict: SUBSTANCE-FELT
+The capability +1.0 (n03) lands as rote procedure, not achievement, because the verb is the same verb as b01-c02 bone 11 — "extends the insect-range" — and the consolidation of both adjacent wards into one deployment action maintains the procedural register: two bones would perform the expansion, one bone enacts it without ceremony. The moral_legibility_to_self held-bone (n04: maps the junction-agitation) is the read-without-naming operating as the chapter promised — she maps the junction the same way she mapped the Hook's, and the bone does not pause to name what that continuity means. The Oswyn bone (n06: the insect-feed returns oswyn-mudway-flea-bottom-elder, social_tether-prot-rise +1.0) is the scene's heaviest moment for this reader's specific hot_button: bodies that matter. The "elder" encoding in Oswyn's slug is structural cost-honesty — his ward-aging is carried by the feed-return form itself, which means his personhood lands through the same mechanism that makes him a coverage node. The trap made operational: Oswyn is returned by the feed the same way a junction-agitation signature is returned. The moral_framework held-bone (n07: maps the oswyn-mudway-flea-bottom-elder interval) enacts the routing-without-naming correctly — Taylor produces a map from the feed, the harm-reduction logic runs, and the routing-to-Otto is the un-named form of what she does with it. The reader sees it. Taylor does not name it. That gap is the architecture. The Wren bones (n09 feed returns Wren, n10 holds the feet, n11 maps the second-ward junction) are two distinct bone-level anchor-discipline contents as required — the route-choice (body) and the ledger-distinction (cartographic). The cl03b future-cost collateral is felt as collateral: Oswyn's unknowing-node status is structurally embedded through the feed-return form, not appended as a narrative warning. No catharsis, no catharsis-before-weight, no enemy pausing.
+
+## scene b01c04s03
+verdict: SUBSTANCE-FELT
+The chapter's three-axis delivery scene (capability +1.0 at n03, social_tether-prot-rise +1.0 at n07, position-world +1.0 at n09) earns all three. Capability completes the four-ward map at the same verb as s02 — same procedure, new ward, no performance of what the completion means. Social_tether-prot-rise +1.0 (n07: Taylor delivers the report-sheet) is the physical handoff that makes the architecture functional. The position-world +1.0 is correctly assigned to the yard-exit (n09: Jarvis exits the cooper's yard) rather than to the handoff — because the exit is the threshold event, not the display or the transfer: before the exit, the sheet is in the yard between them; after it, the sheet is in Otto's channel. The Sera confirmation (n06: Jarvis displays the note) arrives as administrative flatness — display without handoff, the protection confirmed and confirmed as belonging to Otto's channel, not Taylor's to hold. That is hope that costs something: the confirmation is real, and the dependency is its price. No hope-that-costs-nothing. The chapter-closing bones (n10 runs the ward-feed, n11 insect-feed returns Wren, n12 exits the stitch-house lane) deliver the thesis without announcing it: the walk-back running and the four-ward operation are one continuous form, Wren is in the feed and outside the report for the third time, and Taylor exits without examining the question. The question of whether the anchor will hold goes unanswered. The chapter ends on the body in motion, not on the mind having arrived anywhere. No catharsis. The weight has accumulated without arriving. That is the correct dark-fantasy close.
+
+---
+
+### Chapter-level gate findings
+
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+hard_findings: none
+
+### Soft carries to /and-facets (accumulated)
+
+- s01 rationalization watch: the moral_framework held-bones (s01n07, s02n07, s03n10/n11/n12) must not accumulate into authorial endorsement through held-rationale prose at the facet or stitch layer. The bones are clean. The watch is the facet-layer and stitcher's responsibility.
+- The "same ledger" Khepri-rhyming architecture (Hook triage = Pig Tallow triage = the same operation) must land as procedure in the prose rendering, not as significant repetition performed for the reader. The bones enact it correctly; the facet-layer must not italicize it.
+
+### Threshold discipline fires — chapter-level
+
+- Hope that costs nothing: no instance across all three scenes.
+- Enemies pausing at convenient moments: no instance. Jarvis processes and exits across all three visit-points without deliberation or ceremony.
+- Magic as reliable tool: no instance. Feed is operated as labor throughout ("extends," "maps," "runs"). No trust-vocabulary.
+- Violence without aftermath: no instance. Oswyn is named, aged, unknowing. His cost is structural before it is abstract.
+- World as set dressing: no instance. Seven sensory grounding bones across three scenes, all with non-human environmental subjects acting before Taylor enters.
+- Catharsis before weight: no instance. Chapter closes on the open question (n12: exits the stitch-house lane without examining the anchor). No resolution, no recognition, no arrival.
+- Westerosi characters reacting with wrong flavor of shock: no instance. The ward-physics (discard-air, stitch-house frames, early-morning grey emptying the court) are environment-specific, not generic medieval. Taylor reads them without the curiosity or adaptation flavor — she reads them the same way she reads any ward's topology.
