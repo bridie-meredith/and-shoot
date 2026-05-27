@@ -3012,7 +3012,61 @@ books:
             stale_since: null
 
       - slug: b01c04
-        status: scened
+        status: bones-written
+        bones_file: theater/bones/b01-c04.md
+        bones_count: 39
+        substance_bone_gate_verdict: PASS
+        bones_review:
+          reviewed_at: null   # not yet — /and-review bones b01c04 is the mandatory next step
+          report_path: null
+          verdict: null
+          bones_file_mtime_at_review: null
+          stale_since: null
+        substance_delta_measured:
+          axes_moved:
+            capability: +2.0      # s02n03 (flat 15, +1.0) + s03n03 (flat 27, +1.0); EXACT vs target +2.0 (revised at Phase 1 redo from +1.5)
+            position-prot-rise: +1.0   # s01n08 (flat 9, +1.0); EXACT vs target +1.0 (consolidated from prior +0.5+0.5 split to single 1.0 bone)
+            social_tether-prot-rise: +2.0   # s02n06 (flat 18, +1.0) + s03n07 (flat 31, +1.0); EXACT vs target +2.0
+            social_tether-antag: +1.0   # s01n06 (flat 7, +1.0); EXACT vs target +1.0
+            position-world: +1.0   # s03n09 (flat 36, +1.0); EXACT vs target +1.0
+          density_measured: 0.65-0.8
+          felt_verdict: SUBSTANCE-FELT-3-of-3   # all 3 audience personas, all 9 cells (3 scenes × 3 personas) — Phase 6 bone-gate
+        # /and-write b01c04 emit 2026-05-27 — TWO-CYCLE invocation (DEC-0030 Phase 1 redo + Phase 6 additive held-bones).
+        # Phase 1 cycle 1 (original): 38 bones → Phase 2 audit returned 45 HARDs (33 FAULT-FORM-MODIFIER PPs + 11 magnitude-0.5-below-floor + 1 speech-bone-no-axis).
+        #   Root cause: screen-writer referenced c03 bones as cadence model; c03 was PP-heavy + 0.5-split because c03 Phase 2 was cascade-budget-skipped (never SVO-form audited).
+        # Phase 1 cycle 2 (DEC-0030 redo): 33 bones with strict SVO + magnitude floor 1.0 + c02-canonical reference; chapter contract capability +1.5 → +2.0 to support single-1.0 bones per scene.
+        #   Phase 2 re-audit: 2 HARDs (actor-slug abbreviations + s01n10 shape-mismatch) — all inline-fixed (oswyn-mudway → oswyn-mudway-flea-bottom-elder; wren-stitch-house → wren-stitch-maker-flea-bottom-ward; s01n10 chatter → held).
+        # Phase 3 dramatist: ACCEPT (rise-peak-fall shape; 0 missing transitions; speech-form clean; goal landing PASS).
+        # Phase 4 audience trim 3-of-3: ACCEPT (33 KEEP / 0 DELETE-PROPOSE). Cycle-1 termination.
+        # Phase 4.5 dialogue re-anchor: Taylor entry 2 (@9 work-naming) DROPPED (un-anchored by redo); Jarvis entries 8 + 9 re-anchored to consolidated bone s01n08 (multi-citation [jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9]).
+        # Phase 5 continuity: FAIL 4 HARDs + 1 FLAG.
+        #   - fault-003 (FAULT-STATE): chunk-text "third-bell appointment" → "first-bell" (inline fix).
+        #   - fault-004 (FLAG): Oswyn state file location/trade broadened to reflect cross-ward day-labor pattern; chunk image revised (was "fever-burned look long gone" — incoherent for ~55yo elder; now "the elder doing penny-a-barrel labor").
+        #   - fault-005/006/007 (FAULT-REFERENCE × 3): margit authored oc-cooper-yard-eel-alley + oc-pig-tallow-lane + oc-ropers-court (library + warehouse + INDEX).
+        #   - Residual: margit's pig-tallow-lane warehouse card imported pre-fix Oswyn text; inline fixed.
+        # Phase 6 substance bone-gate cycle 1: FAIL 5 HARDs (HELD-AXIS-NOT-WITNESSED) + audience 3-of-3 SUBSTANCE-FELT 9-of-9.
+        # Phase 6 additive (5 held bones added; no existing bones modified):
+        #   s01: +n01a (political_register-prot held; "cooper's-yard workers hold the smallfolk-hours murmur") + n08a (capability held; "the insect-feed holds the hook-range")
+        #   s02: +n07a (political_register-prot held; "Pig Tallow Lane returns ward-tier bodies only")
+        #   s03: +n08a (moral_framework held; "the report-sheet holds at ward-pattern observation") + n08b (political_register-prot held; "the report-sheet holds at Flea Bottom-tier source-content") + n08c (position-prot-rise held; "the courier-arrangement holds the conduit-rank")
+        # Phase 6 re-audit: PASS — 0 HARD; 3 SIGNAL all ACCEPTED (new-flag-001: "only" qualifier on s02n07a borderline; new-flag-002: s01n01a holds-license-extension to collective-group subject + redundant against n05; new-signal-001: s03 CHATTER-OVER-CAP persists 60% non-chatter vs 70% floor — accepted as structural consequence of held-bone concentration in s03).
+        # Phase 6.5 admin process-critic: dispatched (3 SIGNALs all accepted triggers).
+        # Phase 7 emit: theater/bones/b01-c04.md (39 bones; 12+12+15 across s01/s02/s03) + theater/facets/scene-map-b01-c04.md + dialogue files re-anchored @7 (Taylor) + @9 (Jarvis ×2 utterances on consolidated bone).
+        # Dialogue-anchor coverage: 1 anchor in s01n06 (Taylor:1) + 1 anchor in s01n08 (Jarvis:8 + Jarvis:9 multi-citation). Earth-Bet fence clean.
+        # pl-2026-05-27-001 (c03-bones-svo-form-contamination): still open; process-critic to surface whether PROP needed.
+        facets_path: null   # /and-facets b01-c04 not yet run; pending /and-review bones b01c04 first per URI-WRITE-BONES-REVIEW-GATE
+        round_1_complete: false
+        round_2_complete: false
+        facets_status: not-started
+        facets_stale_since: null
+        audit_path: null
+        audit_complete: false
+        audience_gate_path: null
+        audience_gate_complete: false
+        audience_gate_cycles: 0
+        bidirectional_loop: not-started
+        stitched: false
+        draft_file: null
         # /and-substance chapter b01c04 Phase 6 persist 2026-05-27.
         # Phase 5 review: 4 ACCEPT (dramatist, cape-fic-reader, dark-fantasy-reader, worm-canon-pedant)
         #   + 1 FAIL (auditor: 2 HARD, 4 SIGNAL). Admin DEC-0028 adjudication:
