@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-05-27] DEC-0028 | c04 Phase 5: 4/5 ACCEPT; auditor lone FAIL (fault-001 POV layer ambiguity + fault-002 cl-antag-d03 math). Recommended override fault-001, fix fault-002 notes, surface SIGNALs 1-4, persist + stop → APPROVED as stated | fault-001 is card-text ambiguity vs. 3-chapter convention; fault-002 is real notes error with low-cost fix; process-critic on fault-001 for card clarification.
 [2026-05-27] DEC-0027 | c04 cascade vs. serial-stop-at-substance vs. cascade-no-budget-compression → Option 2: /and-substance chapter b01c04 only, hold at scene chunks | c04 is axis-densest + series-spine acceptance chapter; c02+c03 both under-audited under cascade-budget; option 3 has no enforcement mechanism; reversibility + optionality favor serial.
 [2026-05-27] DEC-0026 | DEC-0025 follow-up: both c03 deferred audits closed → Option 1: declare c03 closed, stop | Bones PASS-WITH-NOTES (0 HARD); postop b01c02 already ran 2026-05-26; options 2+3 are out-of-scope spend against already-logged findings.
 [2026-05-27] DEC-0025 | "do chapter 3" on branch chapter-3 → Option 1: close out deferred audits on c03 (/and-review bones b01c03 + /and-postop) | Branch name + memory.md deferred list point to unfinished c03 work; audits-first is cheapest and preserves re-cascade option if gate FAILs.
