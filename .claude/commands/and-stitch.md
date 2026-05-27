@@ -90,7 +90,7 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
 - `--phase-1-mode <scene-window|per-anchor>` — optional. Override the active profile's `phase-1.mode` field. Default resolves from profile; schema default is `scene-window` (URI-SCENE-WINDOW, 2026-05-13). `scene-window` dispatches one fork per dramatist-marked scene with overlap-read context (back-look on prior rendered scene; forward-look on next scene's bones+facets) — see § "Phase 1 — scene-window mode" below. `per-anchor` is the legacy fallback: one fork per bone with `continuity-context` lookback. Use per-anchor when the scene-map facet is absent, when the episode has low percussion accumulation (modes converge), or for fork-isolation debugging.
 - `--max-arms <N>` — optional. Override the multi-arm dispatch cap (default 4). Caps the voice-exemplar candidate-set size at Phase 0 step 4a. Set `--max-arms 1` to force single-arm dispatch regardless of resolved candidates (debugging / control-baseline). See Phase 0 § 4a (URI-STITCH-MULTI-ARM, 2026-05-26).
 - `--include-pov-mismatch` — optional. Disable the POV-pre-filter at Phase 0 step 4a. Candidates whose exemplar prose is in a different person (1st / 3rd) than the bones-header `narrator:` field will be promoted to the dispatch set anyway. Debugging only — closes the Criston-Cole third-person-slip failure mode by default; this flag re-opens it. See Phase 0 § 4a (URI-EXEMPLAR-POV-FENCE, 2026-05-26).
-- `--cherry-pick <off|paragraph>` — optional. Default `off`. When `paragraph`, Phase 1.5 runs an additional per-scene cherry-pick judge after the winner is selected: it identifies up to 2 paragraphs in the runner-up that out-perform their counterparts in the winner on the taste-aligned rubric and substitutes them, producing an aggregate scene draft. Tonal-inconsistency risk; off-by-default. See Phase 1.5 § Per-scene cherry-pick aggregation (URI-STITCH-CHERRY-PICK, 2026-05-26).
+- `--cherry-pick <off|paragraph>` — optional. **Default `paragraph` (URI-STITCH-CHERRY-PICK-DEFAULT-ON, 2026-05-27).** When `paragraph`, Phase 1.5 composes a paragraph-level cherry-pick aggregate across the N arms after per-scene ranking — Step 2 composes, Step 3 scores the assembled cherry-pick, and the result becomes the canonical scene draft consumed by Phases 2-8. When `off`, Phase 1.5 stops at per-scene pure-winner selection (legacy behavior; debugging / control-baseline only). N=1 collapses cherry-pick to a no-op (pure-winner = single arm). See Phase 1.5 § Per-scene cherry-pick composition + scoring. The 2026-05-27 b01-c02 cherry-pick experiment confirmed the cherry-pick path captures paragraph-level lift the pure-winner cannot (the "no signature against it" / "feed thinned" / unnamed-woman-grounding lifts on scene-B) without harming scenes whose arm-1 already swept the per-criterion rubric — making `paragraph` the strictly-better default.
 
 ---
 
@@ -563,22 +563,50 @@ Use scene-window when prior runs of the same episode read metronomic at multi-bo
 - Render-log Phase 1.5 entry records: `scene-<L> winner: arm-<N> (candidate: <path>); ranking: arm-<N>, arm-<M>, ...; per-criterion verdict path: staff/reviews/tournament-<slug>-scene-<L>-<timestamp>.md`.
 - Losing arms' per-scene drafts are retained on disk under `<slug>.scene-<L>.arm-<N>.draft.md` until Phase 8 prunes intermediates (same prune-policy as other phase-N drafts).
 
-**Per-scene cherry-pick aggregation (URI-STITCH-CHERRY-PICK; default OFF):**
+**Per-scene cherry-pick composition + scoring (URI-STITCH-CHERRY-PICK-DEFAULT-ON, 2026-05-27; URI-STITCH-CHERRY-PICK, 2026-05-26):**
 
-When `--cherry-pick=paragraph` is passed at command-invocation, Phase 1.5 dispatches a second judge per scene AFTER the winner is selected. The cherry-pick judge:
-- Reads the per-scene winner AND the runner-up.
-- Identifies up to K paragraphs (default K=2 per scene) in the runner-up that out-perform their counterparts in the winner on the taste-aligned rubric.
-- Replaces those paragraphs in the canonical scene-draft.
+The cherry-pick path is **default-on** for multi-arm runs (N ≥ 2). It runs as two additional sub-steps after the per-scene blind ranking (Step 1) completes. Cherry-pick collapses to a no-op when N=1 (pure-winner = single arm).
 
-Risks (the cherry-pick path is OFF by default because the user explicitly flagged it as "possibly an aggregate of cherry pickings as a final product" — not "always"):
-- **Tonal inconsistency.** Different exemplars produce different voices; mixing within a scene risks reader perceiving the seam.
-- **Bone-faithfulness drift.** The cherry-picked paragraphs may render different bones; the cherry-pick judge has a hard fence requiring the picked paragraph to render the SAME bone-range as the paragraph it replaces.
+**Step 2 — Per-scene cherry-pick composition (one judge fork per scene).**
 
-When cherry-pick fires:
-- Aggregated scene draft writes to `active-project/draft/<slug>.scene-<L>.draft.md` (overwriting the pure-winner version; original winner retained as `<slug>.scene-<L>.winner.draft.md`).
-- Render-log Phase 1.5 entry adds `cherry-picked: <N> paragraphs from arm-<M>; tonal-seam-risk: <none | low | flag>`.
+Dispatch one `general-purpose` agent per scene with the judge prompt at `staff/admin/exemplar-tournament-judge-prompts/cherry-pick-composer.md`. Inputs:
+- All N candidate scene drafts (`<slug>.scene-<L>.arm-<N>.draft.md`)
+- The Step 1 per-scene tournament verdict (per-criterion table, counterweight verdict, rank order)
+- The scene's bones (verbatim; bone-faithfulness fence)
+- The scene-map row (rhythm-shape, peak-bones, fusion-eligible-runs, protected-patterns)
 
-Pass `--cherry-pick=off` (the default) or omit the flag for pure-winner selection. Pass `--cherry-pick=paragraph` to enable.
+The composer's task: paragraph-by-paragraph, identify the arm whose paragraph best satisfies the taste-aligned rubric for that paragraph's bone-range. Compose the scene draft from the per-paragraph winners. Hard fences:
+- **Bone-faithfulness fence.** Each picked paragraph MUST render the SAME bone-range as the paragraph it replaces in the per-scene tournament winner's structure. If a paragraph in arm-A renders bones @17-@19 and the corresponding paragraph in arm-B renders bones @17-@20, those are NOT substitutable — keep the winner's version. Violations emit `FAULT-CHERRY-PICK-BONE-MISMATCH`.
+- **Tonal-seam awareness.** When picking from a non-winner arm, the composer flags `tonal-seam-risk: <none | low | flag>` on the substitution. `flag` substitutions surface in render-log and Phase 9 cold-read attention.
+- **No invention.** The composer composes from the N rendered candidate paragraphs only; no rewriting, no blending.
+
+The composer writes the aggregate to `active-project/draft/<slug>.scene-<L>.draft.md` (canonical scene draft consumed by Phases 2-8). The per-scene pure-winner is retained as `<slug>.scene-<L>.winner.draft.md` for the tournament-tuning ledger (Phase 9.6).
+
+Render-log Phase 1.5 entry adds per scene:
+```
+cherry-picked: <K> paragraphs from non-winner arms (arm-<X>:<P>, arm-<Y>:<Q>, ...);
+tonal-seam-risk: <none | low | flag>; pure-winner retained at <path>;
+ceiling-collapse: <true|false>   # true when 0 substitutions were made (winner was already paragraph-level optimal)
+```
+
+**Step 3 — Per-scene cherry-pick scoring (one scorer fork per scene).**
+
+Dispatch one `general-purpose` agent per scene with the judge prompt at `staff/admin/exemplar-tournament-judge-prompts/cherry-pick-scorer.md`. Input: the assembled cherry-pick scene draft (post-Step-2). Output: a structured scorecard per `schemas/tournament-scorecard.schema.md`:
+- Per-PET-PEEVE: count of fires + severity (soft/strong/walkout/blocker) + anchor sentences
+- Per-REWARD: count of hits + anchor sentences
+- Scene-level numeric score (rewards-sum − peeves-weighted-sum)
+- Notes on tonal-seam landings (does the cross-arm composition read as one voice or two?)
+
+The scorecard is the tuning signal — accumulating these per scene per chapter allows admin process-critic to identify rubric mis-calibrations (peeves that fire on every arm = rubric too strict; rewards that no arm hits = rubric measuring the wrong thing; cherry-pick lift consistently coming from one rubric dimension = the rubric is finding real per-arm strengths).
+
+Per-scene scorecards write to `active-project/staff/reviews/scorecard-<slug>-scene-<L>-<timestamp>.md`. Chapter-level aggregate accumulates at `active-project/staff/showrunner/tournament-scorecards.md` (append-only).
+
+**Risks (DEFAULT-ON acknowledged):**
+- **Tonal inconsistency.** Different exemplars produce different voices; mixing within a scene risks reader perceiving the seam. Mitigated by `tonal-seam-risk` flagging at composition + scorer's voice-consistency check.
+- **Bone-faithfulness drift.** Mitigated by the same-bone-range fence above.
+- **Ceiling collapse with no harm.** When the pure-winner already swept the per-criterion rubric (as on b01-c02 scene-A: 15/16 to arm-1), the cherry-pick composer makes 0 substitutions and emits `ceiling-collapse: true`. This is the no-harm path — render-log records the ceiling-collapse for tuning evidence (recurring ceiling-collapse on a scene class signals the rubric isn't differentiating arms enough).
+
+Pass `--cherry-pick=off` to disable (debugging / control-baseline). Pass `--cherry-pick=paragraph` (the default) explicitly when documenting reproducibility.
 
 **Rubric.** The taste-aligned tournament rubric is loaded from `staff/admin/exemplar-tournament-judge-prompts/renderer-voice.md` (when present) OR inlined per the validated rubric below. The rubric is calibrated to the user's explicit pet peeves and rewards. It is NOT the cold-reader prompt of Phase 9 — that gate measures different criteria (event-recovery + continue-rate). Phase 1.5's judge measures cadence-and-prose-quality only.
 
@@ -804,6 +832,8 @@ This audit complements Phase 6's `OPPOSING-FORCE-MISSING` (rationale-layer HARD)
 ### Step 4 — Verdict + memory
 
 Write `chapters[<slug>].cold_read = {read_at, verdict, recovered_summary: <answer 6>, report_path, staging_signals: <N>, staging_report_path, signal_clusters: <[...]>, prose_rationale_audit: <{...}>, stale_since: null}`.
+
+**Tournament scorecard back-reference (URI-STITCH-SCORECARD-BACKREF, 2026-05-27).** Phase 1.5 Step 3 already appended partial rows to `active-project/staff/showrunner/tournament-scorecards.md` (one per scene, with the Phase 9 fields blank). Now update those rows in-place with this chapter's Phase 9 verdict + CONTINUE outcome. The accumulating ledger is the cross-chapter tuning signal (see `design/tournament-tuning.md`). Format per `schemas/tournament-scorecard.schema.md` § Chapter-aggregate ledger format. This is a mechanical write — no fork dispatch needed.
 
 **Cluster check (URI-STITCH-SIGNAL-CLUSTER — soft-gate; 2026-05-24; threshold tightened 2026-05-25).** Before printing the verdict, scan the staging report's findings and bin them by pattern label AND by zone (peak vs non-peak via `chapters[<slug>].cold_read.zone_density_observation` or per-bone peak-flag from staging review) AND by bone-class (axis-move vs held-vs chatter from `bones[].substance_delta`). A *cluster* fires when ANY of:
 
