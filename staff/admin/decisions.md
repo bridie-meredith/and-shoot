@@ -1133,3 +1133,96 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0034 | 2026-05-27 | SLOW
+
+question: /and-facets b01c04 Phase 5b cycle-1 heavy fail (9/11 facets). Route: option 1 (full cycle 2 — 27+ fixer + audience dispatches), option 2 (cap-burn DELETE early — 1 fixer dispatch), option 3 (targeted hybrid — structural/mechanical fixes only, then re-fire Phase 5b on affected facets), or option 4 (stop, accept facet-incomplete, escalate)?
+context: |
+  Phase 5b cycle-1 returned 9-of-11 FAIL (only location-state + dialogue-taylor PASS). ~20+ distinct
+  fix items: ~8 are structural/mechanical (preamble format errors, DEFERRED placeholder stubs, citation
+  strips, arithmetic fix) and ~12+ are content-level (NI chassis, sensory disambiguation, vibes token
+  rewrites, state-update anchors, memory scaffold repeats, feeling card-verification, exposition add,
+  metaphor refusal log, dialogue-jarvis stale bone-refs). /and-facets total spend already ~60 dispatches.
+  Full cycle 2 (~27 audience + fixer dispatches) would bring total to ~90-130; cycle 3 could reach
+  150. DEC-0033 authorized "full process" (~50-80 dispatches) but calibrated before the heavy fail
+  profile was known. c04 is series-spine acceptance chapter — highest-stakes in book 1.
+  Option 2 (cap-burn DELETE) is per-spec for cap-burn path but is irreversible and loses real quality
+  signal (NI chassis genuine, sensory genuine). Option 3 differs from the DEC-0033 "hybrid" (which
+  spot-checked Phase 5b on 2-3 facets); option 3 here fixes what is unambiguously correct regardless
+  of chosen path, then gets better information before committing to the full-cycle-2 spend.
+options: |
+  (1) Full cycle 2 — dispatch fixer on all ~20+ items; re-fire Phase 5 audit + Phase 5b on all 9 failing facets; 27+ dispatches minimum; cycle 3 possible.
+  (2) Cap-burn DELETE — skip cycles 2+3; fixer in DELETE-only mode; irreversible; facet degradation.
+  (3) Targeted hybrid — fix structural/mechanical items only (~3-5 fixer dispatches); re-fire Phase 5b on affected facets; assess remaining failures; decide cap-burn vs. targeted content cycle on residual set.
+  (4) Stop — declare facet-incomplete; route to /and-stitch with documented audience-gate concerns.
+
+decision: Option 3 — targeted hybrid (structural/mechanical fixes first, then re-fire, then decide on residual).
+basis: |
+  methodology:3d (optionality — structural fixes are correct regardless of which path is eventually taken;
+  fixing them before committing to a 27-dispatch cycle 2 preserves the option to run a smaller targeted
+  cycle 2 on the residual content failures, which may be fewer than the current 9-facet set) +
+  methodology:3a (reversibility — option 2 is irreversible and loses genuine quality signal on the
+  series-spine chapter; option 4 accepts a known-worse outcome; option 3 keeps the full-cycle-2 path
+  open while reducing the problem set) + goal:2 (cost discipline — option 3 is expected-lower-cost
+  than option 1 by getting better information before committing; structural fixes are 3-5 dispatches
+  vs. 27+ for a full pre-committed cycle 2) + DEC-0033 intent (full process remains the direction;
+  option 3 sequences toward that goal more efficiently than front-loading all content rewrites).
+rationale: |
+  DEC-0033 authorized full process for /and-facets b01c04. The situation has changed in one important
+  way: Phase 5b returned a failure profile that distinguishes between (a) structural/mechanical fixes
+  that are unambiguously correct and (b) content-level rewrites that require fixer dispatches against
+  facet authors. These are not the same kind of work. The structural fixes (preamble format, DEFERRED
+  placeholder stubs, arithmetic corrections, citation strips) should be applied regardless of what
+  happens to the content failures — they are not optional even under cap-burn. The content fixes are
+  where the 27-dispatch cycle-2 spend lives.
+
+  Option 3 is not the "hybrid" DEC-0033 rejected (that hybrid spot-checked only 2-3 facets before
+  proceeding). Option 3 does the structural work, then re-fires Phase 5b on the 9 failing facets,
+  then makes a better-informed decision on the residual content set. If structural fixes clear several
+  facets from the failing set (e.g., memory passes after arithmetic fix + preamble fix; some dialogue
+  passes after DEFERRED placeholder removal), the cycle-2 content scope shrinks from 9 facets to
+  maybe 4-5. A targeted cycle 2 on 4-5 facets is ~12-15 dispatches, not 27+.
+
+  Option 2 (cap-burn) is ruled out because: (a) it is irreversible and loses genuine quality signal
+  (NI chassis failure is real; sensory disambiguation is real; cap-burn DELETE permanently removes
+  entries rather than improving them); (b) c04 is the series-spine acceptance chapter — accepting
+  sub-density facets at this stage introduces a quality floor that shapes c05-c07's authoring context;
+  (c) DEC-0033's rationale explicitly rejected the compression paths because the c02/c03 contamination
+  evidence showed that per-chapter savings lead to project-level costs.
+
+  Option 4 (stop) is ruled out because it accepts a known-worse outcome on the highest-stakes chapter
+  to save dispatches — methodology:3a reversed.
+
+  Option 1 (full cycle 2) is not wrong, but it front-loads the full 27-dispatch commitment before
+  knowing whether structural fixes alone would clear a subset of the 9-facet failing set. Getting
+  better information first costs 3-5 fixer dispatches and one Phase 5b re-fire on affected facets,
+  potentially saving 10-15 dispatches from the cycle-2 estimate.
+
+  Structural/mechanical fix targets (all unambiguous, all correct regardless of content outcome):
+    - Memory: single-register carve-out must be in body-level preamble per schema (auditor fault-007)
+    - NI: carve-out preamble arithmetic error (claims 7 mandatory + 4 non-mandatory; actual count after
+      fault-006 is 11-entry post-fault set; fix the count claim)
+    - Dialogue sidecars: DEFERRED-TO-R2 placeholder removal (R2 was the resolving step; stubs should
+      not survive to Phase 5b)
+    - Dialogue-jarvis: stale bone-references (worm-canon hard constraint; correct the refs)
+    Note: NI chassis failure (narrator:7 @31 AP10 + tense-register) is a CONTENT failure and belongs
+    in the post-structural-fix cycle; do not conflate with the arithmetic preamble fix.
+
+trade-off: |
+  Option 3 adds one more decision point (the post-structural-fix re-fire assessment) vs. option 1's
+  single cycle-2 commitment. The cost of the extra decision point is ~1 admin dispatch overhead.
+  The benefit is: if structural fixes clear even 2 facets from the failing set, the cycle-2 audience
+  dispatches drop by ~6 (3 reviewers × 2 facets). The expected-cost math favors option 3 unless the
+  structural fixes clear zero facets — which is possible but not the likely outcome given that memory's
+  main callout is the preamble format issue, not a content failure, and the dialogue sidecars' DEFERRED
+  stubs were cited by 4 reviewers as SIGNAL (removing them likely changes some REVISE verdicts).
+
+  DEC-0033 intent is not violated: full process remains the destination. Option 3 is a better
+  sequencing of steps toward full-process quality, not a compression shortcut.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
