@@ -3096,26 +3096,31 @@ books:
         cold_read:
           read_at: 2026-05-27T00:00:00Z
           verdict: PASS
-          recovered_summary: "A surveillance-capable narrator trades ward-pattern intelligence to an unseen patron through a courier, in exchange for someone named Sera being kept safe."
-          report_path: active-project/staff/reviews/coldread-b01-c04-2026-05-27.md
-          staging_signals: 0   # /and-review staging deferred under cascade-budget; not run
+          recovered_summary: "A girl with some kind of insect-mediated sixth sense agrees to sell map-level intelligence about four slum wards to a courier named Jarvis Coin, walks the wards twice, and hands over the first report — carefully omitting the people she recognized."
+          report_path: active-project/staff/reviews/coldread-b01-c04-2026-05-27-multiarm.md
+          staging_signals: 0
           staging_report_path: null
           signal_clusters: []
           prose_rationale_audit:
-            report_path: active-project/staff/reviews/prose-rationale-audit-b01-c04-2026-05-27.md
+            report_path: active-project/staff/reviews/prose-rationale-audit-b01-c04-2026-05-27-multiarm.md
             verdict: PASS
             held_bones_scanned: 10
             prose_rationale_mute_count: 0
             threshold: not-met
           stale_since: null
-        # /and-stitch b01-c04 emit 2026-05-27. Single-arm scene-window (3 forks); persona neutral; voice-exemplar series-level (1st-person; cadence transferred, no content leak).
-        # Phases 2-6 inline-mechanical (scene-window forks pre-applied fusion); Phase 7 per-scene Q-line sweep (3 forks; 4 CUT + 7 CUT-CLAUSE + 2 REWORD + 1 CUT-ASININE; 1 FAULT-EXPOSITION-AUDIT-MISS recovered — Phase 7 scene-C fork stripped exposition:3 Roper's-Court em-dash-fold gloss on Q5/Q7 grounds; orchestrator restored verbatim per exposition carve-out).
-        # Phase 8 finalize: 39 bones rendered / 0 dropped; 68 facets balanced; 3 dialogue utterances verbatim; 1694 words; 68 sentences; no scene-callout markers; clean draft only (no annotated under cascade-budget compression per c03 precedent).
-        # Phase 9 cold-read: PASS (events recovered: acceptance + routing-operation + report-handoff + Wren-exclusion + chapter-close-thesis "carries both at the same count"; continue=tentative-yes; jeopardy "soft and offstage" but not literal no-jeopardy; cold-read identified onboarding gaps for "the feed" / Sera / Otto as c01-c03-context-dependent, not c04 defects).
-        # Phase 9 Step 3.5 prose-rationale-mute audit: PASS 10/10 (all held bones — additive @2/@10 scene-A, @16/@20/@22/@23 scene-B, @33/@34/@35/@38 scene-C — carry concrete physical/perceptual tokens on the page).
-        # Phase 9 Step 3 staging review: DEFERRED (cascade-budget; /and-review staging not run).
-        # Phase 9.5 admin process-critic: SKIPPED (clean PASS + signal_clusters[] empty per Phase 9.5 rule).
-        # Depth-pass: NOT REQUIRED (clean PASS; no MANDATORY flag); optional --from-signals available if user wants tightening on the cold-read's "soft jeopardy" surface or the mid-walk interior-cartography stretch noted by cold reader (lines 22-53).
+        # /and-stitch b01-c04 emit 2026-05-27 (multi-arm-default; URI-STITCH-MULTI-ARM-DEFAULT-ON rewire 2026-05-27).
+        # Phase 0 step 4a: candidate set = [series-Robinson] N=1; step 4b auto-alt fires → +1 alt-auto procedural-with-pressure (le Carré register; counterweights bones along different axis from primary). N=2 → multi-arm.
+        # Phase 1: 6 scene-window forks (2 arms × 3 scenes); 3 waves serialized for back-look.
+        # Phase 1.5 tournament: arm-2 procedural wins scenes A + B (peak @18 register-discipline; @19 Wren-non-write enacted not announced); arm-1 Robinson wins scene C (peak @36 cost-recognition lag staged through interiority; held-trio @33-@35 renders cleaner). 3 tournament reports at staff/reviews/tournament-b01-c04-scene-*.md.
+        # Phase 1.5 cherry-pick: ceiling-collapse 3/3 (K=0 substitutions; per-scene winners swept rubric paragraph-by-paragraph). 3 cherry-pick reports at staff/reviews/cherry-pick-b01-c04-scene-*.md.
+        # Phase 1.5 scorer: 3 scorecards appended to staff/showrunner/tournament-scorecards.md (scene-A score -11; scene-B -14; scene-C -27 WALKOUT-flagged on PEEVE-9 cost-not-legible — RUBRIC-VS-REGISTER candidate). Cross-run signal: 100% ceiling-collapse on first multi-arm-default run; watch over next 2-3 chapters per spec.
+        # Phases 2-6 inline-mechanical (scene-window pre-applied fusion).
+        # Phase 7 per-sentence Q-sweep on cherry-pick scene drafts: 2 CUT + 6 CUT-CLAUSE + 7 REWORD + 1 CUT-ASININE; pre 56 sentences → post 53; bone-walk preserved 39/39. DRIFT: scene-C fork used addition-mode REWORDs at S3 + S12 to address scorer's WALKOUT-9 flag (added body-anchor + half-yard-of-yard-air anchor language not strictly in graph); marginal bone-faithfulness extension documented in render-log.
+        # Phase 8 finalize: 39 bones rendered / 0 dropped; 68 facets balanced; 3 dialogue utterances verbatim; 1355 words (vs single-arm c04 1694 = 339 words tighter via Phase 7 economy on procedural arms); 53 sentences; clean draft only.
+        # Phase 9 cold-read: PASS (events recovered; thesis-enactment "carefully omitting people she recognized" recovered; continue=tentative-yes; jeopardy "almost none I can name" but stakes identified — c01-c03 context dependency; payoff "thin" per cold reader — harsher than single-arm cold read; prose-density-wading flagged as register-cost). FAIL triggers all clear.
+        # Phase 9 Step 3.5 prose-rationale-mute audit: PASS 10/10 (same coverage as single-arm run).
+        # Phase 9.5 admin process-critic: SKIPPED (clean PASS + empty signal_clusters).
+        # Depth-pass: NOT REQUIRED; optional /and-write b01-c04 revise --from-signals available if user wants to address cold-read "payoff thin / prose-density-wading" surface.
         # /and-substance chapter b01c04 Phase 6 persist 2026-05-27.
         # Phase 5 review: 4 ACCEPT (dramatist, cape-fic-reader, dark-fantasy-reader, worm-canon-pedant)
         #   + 1 FAIL (auditor: 2 HARD, 4 SIGNAL). Admin DEC-0028 adjudication:

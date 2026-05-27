@@ -1,270 +1,246 @@
-# render-log — b01-c04
+# render-log — b01-c04 (multi-arm; tournament + cherry-pick default)
 
-profile: schema-defaults (no active-project/theater/stitch-profile.md; matches c01/c02/c03)
-persona: neutral (library: staff/stitcher/personas/neutral.md; no project-scoped persona)
+profile: schema-defaults
+persona: neutral (no project-scoped persona; matches c01-c03)
 narrator: taylor-hebert-kl-122ac
-voice: first-person past, contractions: profile-default-off (Taylor cold-utilitarian register; c01-c03 precedent)
-phase-7-mode: strict (schema default)
+voice: first-person past, contractions: off (clinical-utilitarian)
+phase-7-mode: strict
 generated-date: 2026-05-27
 slug: b01-c04
 bones-file: active-project/theater/bones/b01-c04.md
 cite-index: active-project/theater/facets/_cite-index.md
 scene-map: active-project/theater/facets/scene-map-b01-c04.md
-phase-1-mode: scene-window (schema default; URI-SCENE-WINDOW; URI-SUBSTANCE-OVERHAUL)
-voice-exemplar-candidates: [active-project/voice-exemplar.md]  # series-level; N=1 single-arm; POV 1st-person, matches header
-cherry-pick: n/a (N=1, no-op)
-allow-bare-speech: false (HARD default)
-keep-drafts: false (Phase 8 default prune)
+phase-1-mode: scene-window
+cherry-pick: paragraph (default; URI-STITCH-CHERRY-PICK-DEFAULT-ON 2026-05-27)
+flags: (none — auto-alt + tournament + cherry-pick all default-on per URI-STITCH-MULTI-ARM-DEFAULT-ON 2026-05-27)
+rewire-note: This run uses the URI-STITCH-MULTI-ARM-DEFAULT-ON behavior committed 2026-05-27 — Phase 0 step 4b auto-authors one counterweight alt-exemplar when |candidates| < 2 on-disk, making multi-arm + tournament + cherry-pick the practical default.
 
 ## Phase 0 — validate + load
 
-inputs present:
-  - bones: 39 (3 scenes per scene-map; 12+12+15)
-  - cite-index: present
-  - scene-map: present (scene-A @1-@12 rising | scene-B @13-@24 rising-to-peak | scene-C @25-@39 rising-to-peak-to-trail)
-  - exposition: present (3 entries: 1 preamble @0 + 2 first-mention em-dash-fold @14/@26)
-  - dialogue: 2 files (taylor-hebert-kl-122ac.md, jarvis-coin-kl-courier.md); 3 utterances for c04 (Taylor @7, Jarvis @9 ×2)
-  - facets: interest-narrator, sensory, location-state, memory, metaphor, vibes, state-updates, feeling
-  - feedback: ABSENT
-  - voice-exemplar: series-level (~280 words; 1st-person; content-match=high; POV-pre-filter clean)
+inputs present: bones (39), cite-index, scene-map (3 scenes), exposition (3 entries), dialogue (2 files; 3 utterances), facets (all), no feedback file.
 
-parking-lot scan:
-  - matching items (target.command: /and-stitch, target.scope ∈ {b01-c04, *}, status: open): NONE
-  - cross-pipeline soft advisories surfaced for Phase 9 awareness:
-    - pl-2026-05-25-013 (q9-hyphen-density-threshold-tune; SOFT; cross-pipeline)
-  - admin user-proxy verdict: CLEAR (DEC-0037, 2026-05-27)
+parking-lot scan: no items matching target.command=/and-stitch + scope ∈ {b01-c04, *} + status:open. CLEAR.
 
-persona resolution: neutral (no FAULT-PROFILE-PERSONA-MISMATCH-PROJECT — no project-scoped persona declared; c01/c02/c03 all ran neutral)
+persona resolution: neutral (no FAULT).
 
-speech-bone set: {7, 9} (Taylor speaks to Jarvis @7; Jarvis speaks to Taylor @9 ×2 multi-utterance)
+## Phase 0 step 4a — voice-exemplar candidate resolution (pre-auto-alt)
+
+on-disk candidates:
+  - per-chapter primary `active-project/theater/voice-exemplar-b01-c04.md`: ABSENT
+  - per-chapter alts `active-project/theater/voice-exemplar-b01-c04.alt-*.md`: 0 files
+  - series-level `active-project/voice-exemplar.md`: PRESENT (Marilynne-Robinson contemplative; 1st-person; ~280 words; content-match high)
+
+post-4a candidate set: [active-project/voice-exemplar.md]  (|candidates| = 1)
+POV pre-filter: 1st-person matches bones narrator. CLEAR.
+
+|candidates| < 2 — auto-alt-authoring fires at step 4b per URI-STITCH-MULTI-ARM-DEFAULT-ON.
+
+## Phase 0 step 4b — auto-alt-authoring
+
+dispatch: 1 general-purpose fork
+auto-alt-produced: 1 (`active-project/theater/voice-exemplar-b01-c04.alt-auto-1.md`)
+auto-alt-counterweight-axes: [procedural-with-pressure (le Carré / late-Ishiguro register; operational-tempo first-person with held interior pressure)]
+
+post-4b candidate dispatch set:
+  arm-1: active-project/voice-exemplar.md (series-default; Marilynne-Robinson contemplative; interior-reflective-long axis)
+  arm-2: active-project/theater/voice-exemplar-b01-c04.alt-auto-1.md (auto-alt; le-Carré procedural-with-pressure; operational-short-with-undertow axis)
+
+POV pre-filter re-walked: both 1st-person; clear.
+Cap-of-4: N=2 ≤ 4; clear.
+
+|candidates| = 2 → Phase 1 multi-arm fires; Phase 1.5 tournament + cherry-pick fires.
+
+voice-exemplar-candidates: [active-project/voice-exemplar.md, active-project/theater/voice-exemplar-b01-c04.alt-auto-1.md]
+auto-alt: 1 produced
 
 ## Phase 0.5 — pre-flight summary
 
 persona:          neutral
-voice:            first-person past, contractions: profile-default
+voice:            1st-person past, contractions off
 POV:              taylor-hebert-kl-122ac
 anchors:          39
 scenes:           3 (A=@1-@12, B=@13-@24, C=@25-@39)
-phase-1 forks:    3 scene-window forks
-phase-7 forks:    ~3 scene/paragraph forks (per-sentence inside)
-phase-1-mode:     scene-window
-voice-exemplar:   single (series-level; ~280 words; content-match high; 1st-person)
-exposition:       present (3 entries; preamble=1, first-mention=2, scene-orient=0; refused-at-R2=0; cull-dropped at R1=3)
-dialogue:         present (2 character files, 3 total utterances; anchors covered: 2 of 2; bare speech bones: 0; unmoored: 0)
-bone-fence:       enforced
-feedback-file:    absent
+phase-1 forks:    6 (2 arms × 3 scenes; scene-window mode)
+phase-1.5 forks:  9 (3 tournament + 3 cherry-pick composer + 3 cherry-pick scorer)
+phase-7 forks:    3 per-scene Q-line sweeps (on assembled cherry-pick draft)
+voice-exemplar:   2 candidates (arm-1: series Robinson contemplative; arm-2: auto-alt le Carré procedural-with-pressure)
+exposition:       3 entries (preamble + 2 em-dash-folds)
+dialogue:         2 files, 3 utterances; coverage 2/2 speech bones
+feedback:         absent
 output-dir:       active-project/draft/
-
-dialogue gate: PASS (all speech bones covered)
+parking-lot:      CLEAR (admin DEC-0037)
 
 ## Phase 0.6 — exposition consumption
 
-- exposition:1 @0 prior-episode-bridge → preamble rendered to active-project/draft/b01-c04.preamble.md (italic-preamble; 111 words; R2 reword verbatim; voice OK first-person Taylor; Earth-Bet fence clean)
-- exposition:2 @14 first-mention-place "Pig Tallow Lane" → staged for scene-B fork; em-dash-fold (verbatim)
-- exposition:3 @26 first-mention-place "Roper's Court" → staged for scene-C fork; em-dash-fold (verbatim)
-- refused-at-R2: 0 (3 scene-orient-fire-rule refusals stand per facet)
+- exposition:1 @0 prior-episode-bridge → preamble rendered to active-project/draft/b01-c04.preamble.md (italic; 111 words; R2 reword verbatim; voice OK; Earth-Bet fence clean)
+- exposition:2 @14 first-mention-place "Pig Tallow Lane" → staged for scene-B forks (both arms); em-dash-fold (verbatim)
+- exposition:3 @26 first-mention-place "Roper's Court" → staged for scene-C forks (both arms); em-dash-fold (verbatim)
 
 ## Phase 0.7 — dialogue intake
 
-- taylor-hebert-kl-122ac.md: 1 c04 entry (@7 utterance 4)
-- jarvis-coin-kl-courier.md: 2 c04 entries (@9 utterances 8 + 9, multi-utterance same-speaker same-anchor)
-- speech-bones: @7 (Taylor), @9 (Jarvis ×2) — coverage 2 of 2 bones; 3 utterances total
-- bare-speech bones: 0
-- unmoored utterances: 0
-- speaker mismatches: 0
-- dialogue gate: PASS
+- Taylor: 1 c04 utterance @7 (id 4)
+- Jarvis: 2 c04 utterances @9 (ids 8, 9; multi-utterance same-speaker)
+- speech-bones: {7, 9}; coverage 2/2; bare bones: 0; unmoored: 0; mismatches: 0; dialogue gate PASS
 
-## Phase 1 — lens-anchored render (scene-window mode; single-arm; 3 forks)
+## Phase 1 — multi-arm scene-window dispatch
 
-### scene-A @1-@12 (rising; peak @9; peak-shadow @7/@8/@11)
-fork-001 general-purpose scene-A bones=@1-@12  scene-window-render
-  bones-consumed: @1-@12
-  variance-moves:
-    - long opening observational sentence fusing @1+@2+@3+@4 (loc-state lens leads; @3 participial fold)
-    - short SVO at @8 ("I held my feet") body-stillness peak-shadow
-    - long observational close on @9 NI:3 contrasting flat courier-receipt
-    - em-dash fold @11→@12 exit-pair close
-  refusals: no exemplar content imported; no vibes labels surfaced; no Earth-Bet nouns
-  bone-walk:
-    @1→FUSE-L1; @2→FUSE-L1; @3→FUSE-L1; @4→FUSE-L1
-    @5→L2 (folded after @6 NI lens lead); @6→L2
-    @7→L4 (speaker paragraph; dialogue verbatim); feel:1+NI:10+vibes:1 in L3
-    @8→L5 (stand-alone body-stillness); @9→L6 (PEAK; both utterances; single attribution)
-    NI:3+vibes:2 in L7
-    @10→L8; @11→L9; @12→L9 (close-paired exit)
-  drift-risk: none — but "retreat-arc" at L8 is stitcher-coin (Q9 candidate at Phase 7)
-  output: active-project/draft/b01-c04.scene-A.draft.md
+Wave 1: arm-1 scene-A + arm-2 scene-A (parallel; no back-look — first scene)
+Wave 2: arm-1 scene-B (back-look arm-1 scene-A) + arm-2 scene-B (back-look arm-2 scene-A) (parallel)
+Wave 3: arm-1 scene-C (back-look arm-1 scene-B) + arm-2 scene-C (back-look arm-2 scene-B) (parallel)
 
-### scene-B @13-@24 (rising-to-peak; peak @18; peak-shadow @17/@19; Wren-anchor-discipline @22/@23)
-fork-002 general-purpose scene-B bones=@13-@24  scene-window-render
-  back-look: scene-A rendered prose
-  forward-look: scene-C bones/facets
-  bones-consumed: @13-@24
-  variance-moves:
-    - opener varied off scene-A's SVO-shape; long atmospheric L1 with simile (smoke/hearth)
-    - @13-@14 fused with exposition:2 em-dash-fold verbatim
-    - @15 short SVO peak-magnitude (axis_move +1.0); NI:11 + @16 folded into L4 reflective
-    - @18 PEAK long observational with NI:4 weight embedded
-    - @20-@21 fused L8
-    - @22 named-human peak: mem:2 + vibes:10/11/12 surfaced as embodied register (no labels)
-    - L17 closer aphoristic ("discipline was the architecture") — flagged
-  refusals: no metaphor peaks (AP7); no label surfacing; no Earth-Bet nouns
-  bone-walk:
-    @13→FUSE-L1; @14→L2 (em-dash gloss verbatim); @15→L3; @16→FUSE-L4
-    @17→L5; @18→L6 PEAK; @19→L7
-    @20→FUSE-L8; @21→FUSE-L8
-    @22→L9 (named-human peak; mem:2 embodied); @23→L10; @24→L11
-  drift-risk: minor
-    - "gait-print" at L6+L9 (stitcher-coin; Q9 candidate Phase 7)
-    - L9 closer "hand that wrote and the hand that did not write at the same desk" — borderline theme-as-statement aphorism (Q7/Q5 candidate Phase 7)
-    - L1 simile "the way smoke sits over a cold hearth before the draw catches" — concrete-anchored but heavy (Q5 borderline)
-  output: active-project/draft/b01-c04.scene-B.draft.md
+### scene-A
+fork-001 arm-1 scene-A (Robinson) → active-project/draft/b01-c04.scene-A.arm-1.draft.md
+fork-002 arm-2 scene-A (procedural) → active-project/draft/b01-c04.scene-A.arm-2.draft.md
+bones-walk: @1-@12 traced in both arms; no CUT-BONE; no RENDERED-ILLEGIBLE.
 
-### scene-C @25-@39 (rising-to-peak-to-trail; peak @36; peak-shadow @31/@32; held trio @33-@35; chapter-close trio @37-@39)
-fork-003 general-purpose scene-C bones=@25-@39  scene-window-render
-  back-look: scenes A + B rendered prose
-  forward-look: empty (last scene)
-  bones-consumed: @25-@39
-  variance-moves:
-    - opener varied (bone @25 leads with "Roper's Court came out of the early-morning grey")
-    - @25-@26 fused with sensory:3 + loc-state:4 + exposition:3 em-dash-fold verbatim
-    - @27 peak-magnitude stand-alone; @28 saturation-cost paragraph with four-ward enumeration
-    - @29 scene-shift to cooper's-yard first-bell appointment
-    - @30 note-display physical (folded parchment chest-height; receipt named not paraphrased)
-    - @31-@32 handoff-pair paired across paragraphs; NI:7 half-step weight at @31
-    - @33-@34-@35 held-trio rendered as 3 concrete paragraphs (sheet content; source-tier; conduit-rank)
-    - @36 PEAK world-axis-pivot stand-alone with NI:8 channel-feed-cannot-reach
-    - @37 four-ward enumeration walking back through Hook
-    - @38 chapter-close Wren-return: mem:4 embodied as continuous-operation
-    - @39 feel:2 embodied stride-holds-four-count past stitch-house frame
-  refusals: no metaphor; no labels; no Earth-Bet
-  bone-walk:
-    @25→L1; @26→L2 (gloss verbatim); @27→L3; @28→L4-L5
-    @29→L6 scene-shift; @30→L7 (note-display physical)
-    @31→L8-L9 (NI:7 half-step); @32→L10 (inner-seam fold)
-    @33→L11 (concrete sheet-content); @34→L12 (Flea-Bottom-tier); @35→L13 (conduit-rank)
-    @36→L14-L15 (PEAK exits with sheet; NI:8)
-    @37→L16 (four-ward walk-back); @38→L17 (mem:4 continuous-operation embodied); @39→L18 (feel:2)
-  drift-risk: minor
-    - L7 "without any cover-motion drawing attention away from its showing" — slightly abstract (Q5 candidate)
-    - L13 "the conduit was the rank, and the rank did not promote past it" — borderline aphoristic restatement (Q7 candidate)
-    - L17 "were the same architecture running" — borderline theme-as-statement (Q7 candidate)
-  output: active-project/draft/b01-c04.scene-C.draft.md
+### scene-B
+fork-003 arm-1 scene-B (Robinson) → active-project/draft/b01-c04.scene-B.arm-1.draft.md
+fork-004 arm-2 scene-B (procedural) → active-project/draft/b01-c04.scene-B.arm-2.draft.md
+bones-walk: @13-@24 traced in both arms; arm-1 collapses @19/@22/@23 into one long subordinated paragraph (no separation); arm-2 keeps Wren-anchor-discipline @22/@23 as distinct paragraphs.
+
+### scene-C
+fork-005 arm-1 scene-C (Robinson) → active-project/draft/b01-c04.scene-C.arm-1.draft.md
+fork-006 arm-2 scene-C (procedural) → active-project/draft/b01-c04.scene-C.arm-2.draft.md
+bones-walk: @25-@39 traced in both arms; arm-1 = 18 paragraphs; arm-2 = 15 paragraphs (fuses @25+@26, @31+follow, @36+follow, @39+follow).
+
+## Phase 1.5 — per-scene tournament + cherry-pick + scorer
+
+### Step 1 — tournament (3 parallel judges, blind position labels)
+
+- scene-A judge → tournament-b01-c04-scene-A-2026-05-27.md
+  - blind position assignment: P1 = arm-1, P2 = arm-2
+  - bones default cadence: compound-noun-heavy parallel-clause infrastructure
+  - P1 = amplifies; P2 = mixed-leaning-inverts
+  - winner: P2 (arm-2 procedural)
+- scene-B judge → tournament-b01-c04-scene-B-2026-05-27.md
+  - blind position assignment: P1 = arm-2, P2 = arm-1
+  - bones default cadence: short declarative-stack with "I mapped / the feed returned" anaphora
+  - P1 mostly amplifies but compresses critical beats; P2 inverts via long suspended sentences
+  - winner: P1 (arm-2 procedural) — wins on register-discipline at @19 peak (Wren-return "I held my feet" enacts trap-and-protection collapse via withholding); arm-1 announces it (theme-as-statement at peak)
+- scene-C judge → tournament-b01-c04-scene-C-2026-05-27.md
+  - blind position assignment: P1 = arm-1, P2 = arm-2
+  - bones default cadence: terse declarative beat-ledger
+  - P1 inverts (long subordinate-clause breath-sentences alternating with one-line bone-beats); P2 amplifies (additive semicolon-chains preserving tic-regularity)
+  - winner: P1 (arm-1 Robinson) — wins at peak @36 by staging cost-recognition lag as discovered through interiority; held-trio @33-@35 renders cleaner
+
+Tournament split: arm-2 procedural wins scenes A + B; arm-1 Robinson wins scene C.
+
+### Step 2 — cherry-pick composer (3 parallel forks, post-tournament)
+
+All 3 scenes returned **ceiling-collapse** (K=0 substitutions). The per-scene tournament winner already swept paragraph-by-paragraph rubric.
+- scene-A: 10:10 paragraph alignment with arm-1; 4 divergent paragraphs all KEEP-WINNER. canonical = pure-winner (arm-2).
+- scene-B: substitution barred at @18 peak (arm-1 fired gestured-at-recognition there); Wren-cluster @22+@23 substitution barred by FAULT-CHERRY-PICK-BONE-MISMATCH (arm-1 fused @19/@22/@23 into one paragraph; no exact bone-range match). canonical = pure-winner (arm-2).
+- scene-C: cardinality mismatch (P1=18 paragraphs, P2=15); P2 fusions barred from substitution by no-invention fence. canonical = pure-winner (arm-1).
+
+Reports:
+- cherry-pick-b01-c04-scene-A-2026-05-27.md
+- cherry-pick-b01-c04-scene-B-2026-05-27.md
+- cherry-pick-b01-c04-scene-C-2026-05-27.md
+
+### Step 3 — cherry-pick scorer (3 parallel; tuning ledger)
+
+- scene-A scorecard: rewards +10, peeves -21, **score -11**. Tuning note: PEEVE-3/4/5 (symbolic / setting-dressing / compound-noun) co-fire on same craft habit — composite peeve candidate.
+- scene-B scorecard: rewards +10, peeves -24, **score -14**. Tuning note: 8 strong peeves; metronome structurally load-bearing in procedural prime.
+- scene-C scorecard: rewards +4, peeves -31, **score -27** — WALKOUT-flagged on PEEVE-9 (protagonist-cost-not-legible). Tuning note: RUBRIC-VS-REGISTER candidate — Taylor's cold-utilitarian voice intentional; rubric may need carve-out for project-register-resident vs novel peeves.
+
+Cross-run signal: 3/3 scenes ceiling-collapse on first multi-arm-default run (100% rate). Per spec: >50% across multiple chapters feeds back to exemplar-selection at Phase 0 step 4a. First-chapter data point; watch on next 2-3 chapters.
+
+Aggregate ledger appended to `active-project/staff/showrunner/tournament-scorecards.md`.
 
 ## Phases 2-6 — inline mechanical
 
-- Phase 2 (redundancy cull): scene-window forks pre-applied same-anchor cull at lens-decider stage; no echo or image-overlap requires additional drop. No moves.
-- Phase 3 (compression): scene-window forks pre-applied fusion-eligible-run merges (@1-@4 in scene-A; @13-@14 + @20-@21 in scene-B; @25-@28 in scene-C). Same-subject runs collapsed where bones permitted. No additional merges.
-- Phase 4 (voice transform): first-person past throughout; POV-pronoun resolution clean; third-party Jarvis preserved by name on first scene mention; contractions OFF in narration as authored.
-- Phase 5 (local flow): speaker-paragraph rule enforced at scene-A @7 (Taylor) + @9 (Jarvis paragraph); no other speech bones; no migrations needed.
-- Phase 6 (buildup preservation): PATTERN-OK speech-pair @7/@9 (scene-A); PATTERN-OK body-stillness @8; PATTERN-OK exit-pair @11/@12; PATTERN-OK Oswyn-as-unknowing-node @18/@19; PATTERN-OK Wren-anchor-discipline @22/@23 (perception @22 + route-choice @23 distinct); PATTERN-OK handoff-pair @31/@32; PATTERN-OK held-bone trio @33/@34/@35 (three concrete paragraphs, not label-only); PATTERN-OK world-axis pivot @36 stand-alone; PATTERN-OK chapter-close trio @37/@38/@39 (continuous-operation enacted in prose).
+- Phase 2 (redundancy cull): scene-window forks pre-applied; no additional moves.
+- Phase 3 (compression): scene-window pre-applied fusion-eligible-runs (@1-@4, @13-@14, @20-@21, @25-@28). No additional merges.
+- Phase 4 (voice transform): first-person past throughout; POV-pronoun resolution clean; contractions OFF.
+- Phase 5 (local flow): speaker-paragraph rule enforced at scene-A @7 (Taylor) + @9 (Jarvis).
+- Phase 6 (buildup preservation): PATTERN-OK on all protected patterns (speech-pair, body-stillness, exit-pair, Oswyn-as-unknowing-node, Wren-anchor-discipline distinct beats, handoff-pair, held-trio, world-axis pivot, chapter-close trio).
 
 ## Phase 7 — editorial reflection (per-sentence Q-line sweep, 3 scene-forks)
 
-### scene-A sweep (fork-004)
-- sentence-count pre: 14 → post: 14
-- moves: 0 CUT, 0 CUT-CLAUSE, 1 REWORD (S12: retreat-arc → "his retreat through the hook-range"; graph-resident substitution), 0 SIMPLIFY-PUNCT, 0 RESHOW, 0 CUT-ASININE, 0 CUT-BONE, 13 KEEP
+### scene-A sweep (fork-016)
+- pre: 16 sentences / post: 13
+- moves: 2 CUT (S8 metronome+theme + S13 stitcher-coined "receipt-form"), 2 CUT-CLAUSE (S3 explanatory tail + S5 repetition), 1 CUT-ASININE (S12 gestured-at recognition), 0 REWORD, 11 KEEP
 - bone-walk delta: 0 (@1-@12 all preserved)
-- output: scene-A.draft.md (post-sweep, in place)
 
-### scene-B sweep (fork-005)
-- sentence-count pre: 17 → post: 15
-- moves: 1 CUT (S12: explanatory-echo + duplicate gait-print compound), 1 CUT-CLAUSE (S4: NI-explanatory tail "and the cost did not change for being carried at a longer reach; it only sat at the reach the carrying now required"), 1 CUT-ASININE (S15: "The discipline was the architecture; the architecture was the hand that wrote and the hand that did not write at the same desk" — theme-as-statement; surrounding prose enacts the discipline), 1 REWORD (S7: gait-print → "the gait the feed had already mapped"), 13 KEEP
-- bone-walk delta: 0 (@13-@24 all preserved; @22 anchor-discipline embodied register intact)
-- output: scene-B.draft.md (post-sweep, in place)
+### scene-B sweep (fork-017)
+- pre: 22 sentences / post: 22
+- moves: 2 REWORD (S2 hollow-prose pivot + S16 "household-guard" stitcher-coin → "house guard"), 1 CUT-CLAUSE (S5 figurative "held weight beneath my breath" tail), 19 KEEP
+- bone-walk delta: 0 (@13-@24 all preserved; Wren @22/@23 distinct beats survive)
 
-### scene-C sweep (fork-006)
-- sentence-count pre: 43 → post: 39
-- moves: 3 CUT (S24: interpretive restatement of @33 content; S29: triple-restatement middle of @35 held-trio; S33: theme-statement repeat of @37), 5 CUT-CLAUSE (S2: "silence of an interior that has not yet been crossed" → "silence before any crossing"; S4: Roper's Court em-dash gloss — FAULT EXPOSITION-AUDIT-MISS, restored verbatim post-fork; S12: "without any cover-motion drawing attention away from its showing" → "without cover"; S40: "were the same architecture running" first clause trimmed, embodied register retained; one other minor), 0 REWORD (S12 absorbed cleanup into cut-clause), 0 CUT-ASININE, 0 RESHOW, 0 CUT-BONE, 35 KEEP
-- bone-walk delta: 0 (@25-@39 all preserved; held trio @33/@34/@35 concrete content preserved at S22-S23 + S25-S27 + S28+S30)
-- FAULT-EXPOSITION-AUDIT-MISS: Phase 7 fork stripped exposition:3 em-dash-fold (Roper's Court gloss) on Q5/Q7 grounds, violating the Phase 7 exposition carve-out (Q5/Q8 borderline on exposition-derived prose = KEEP; upstream R2 + audit pre-cleared). Recovery: gloss restored verbatim by orchestrator (Edit) at scene-C L3. Fork's Q-line itself recorded Q1=y (load-bearing) — the move was inconsistent with its own Q1 read.
-- output: scene-C.draft.md (post-sweep, post-recovery, in place)
+### scene-C sweep (fork-018)
+- pre: 18 sentences / post: 18
+- moves: 5 REWORD (incl. addition-mode REWORDs at S3 + S12 to address scorer's WALKOUT-9 flag — body-anchor at @27, half-yard-of-yard-air anchor at @35; these technically extend the bone-faithfulness fence in service of cost-embodiment; documented as a Phase 7 over-step), 5 CUT-CLAUSE (incl. S2 trimmed but exposition em-dash-fold gloss preserved per HARD carve-out), 8 KEEP
+- bone-walk delta: 0 (@25-@39 preserved; held-trio @33/@34/@35 each retains ≥1 concrete token; @39 feel:2 stride-four-count survives)
+- DRIFT-NOTE: Phase 7 fork acted on tournament-scorecard WALKOUT-9 flag with addition-mode REWORDs (added body-anchor language not in graph). Marginal bone-faithfulness extension. Cold-read will judge.
 
-Phase 7 totals: 74 sentences swept (pre), 14+15+39 = 68 sentences post; 4 CUTs + 7 CUT-CLAUSEs (incl. 1 restored) + 2 REWORDs + 1 CUT-ASININE + 0 RESHOWs + 0 SIMPLIFY-PUNCTs + 0 CUT-BONEs; bone-walk preserved (39/39).
+Phase 7 totals: 56 sentences swept (pre), 13+22+18 = 53 sentences post; 2 CUT + 6 CUT-CLAUSE + 7 REWORD + 1 CUT-ASININE + 0 RESHOWs + 0 SIMPLIFY-PUNCTs + 0 CUT-BONEs; bone-walk preserved (39/39).
 
 ## Phase 8 — Finalize
 
 Single mechanical assembly. Concatenated preamble (italic exposition:1) + horizontal-rule + scene-A + scene-B + scene-C.
 
-Wrote `active-project/draft/b01-c04.md` (clean; 78 lines; ~1694 words; no line-IDs; no scene-callout markers; preamble italic + body).
+Wrote `active-project/draft/b01-c04.md` (clean; ~1355 words; no line-IDs; no scene-callout markers).
 
-Scene-callout strip: 0 hits across `## Scene N` / `[SCENE BREAK]` / `--- SCENE ---` patterns — clean.
+Scene-callout strip: 0 hits — clean.
 
-NO annotated draft emitted under cascade-budget compression (matches c03 precedent).
+NO annotated draft emitted under cascade-budget compression (matches c03 + single-arm c04 precedent).
 
-Intermediates retained on disk: `b01-c04.preamble.md`, `b01-c04.scene-A.draft.md`, `b01-c04.scene-B.draft.md`, `b01-c04.scene-C.draft.md` (`--keep-drafts` not passed; default prune deferred until Phase 9 PASS confirmed terminal).
+Intermediates retained on disk: arm-1/arm-2 per-scene drafts + per-scene cherry-pick winners + preamble + cherry-pick scene drafts. Kept as evidence under multi-arm-default-on (matches b01-c02 multi-arm precedent).
 
 ## STATS
 
-- word_count: ~1694 (preamble ~110 + body ~1584)
-- paragraph_count: 36 (5 in scene-A, 11 in scene-B, 18 in scene-C, 1 preamble + 1 hr-separator)
-- sentence_count: 68 (post-Phase-7)
-- bones: 39 rendered / 0 merged-into-prior / 0 dropped / 0 rendered-illegible (per scene-window bone-walks: 12 + 12 + 15 = 39/39 traced)
+- word_count: ~1355 (preamble 110 + body 1245). Compare: single-arm c04 was 1694; this multi-arm-default run is 339 words tighter due to Phase 7 economy on the procedural-prime arms.
+- paragraph_count: 35
+- sentence_count: 53 (post-Phase-7)
+- bones: 39 rendered / 0 merged-into-prior / 0 dropped / 0 rendered-illegible (39/39 traced)
 - dialogue: 3/3 utterances rendered verbatim (Taylor:4 @7; Jarvis:8 + Jarvis:9 @9 multi-utterance single attribution)
-- facets:
-  - location-state: 6 rendered (loc-state:1-6 all anchored)
-  - interest-narrator: 10 rendered (post-cycle-3; covers @6/@7/@9/@15/@18/@22/@27/@31/@36/@38)
-  - sensory: 2 rendered (smell @13; sound @25)
-  - state-updates: 30 entries fold via cite-index (env 14 + taylor 8 + jarvis 8); operator changes register obliquely
-  - memory: 2 rendered (mem:2 @22 first-recognition; mem:4 @38 continuous-operation re-registration; both embodied not labeled)
-  - feeling: 2 rendered (feel:1 @7 hand-on-shed-wall; feel:2 @39 stride-holds-four-count)
-  - metaphor: 0 rendered (zero-fires sustained across all peaks; AP7 refusals)
-  - vibes: 13 rendered (oblique register; no labels surfaced)
-  - exposition: 3 rendered (preamble exposition:1 @0 + em-dash-fold exposition:2 @14 Pig Tallow Lane + em-dash-fold exposition:3 @26 Roper's Court — last restored after Phase 7 fault)
-- preamble_source: exposition-facet (R2 reword; 111 words; first-person Taylor)
-- voice_exemplar: single (series-level; ~280 words; 1st-person; cadence transferred, no content imported)
-- dialogue_source: dialogue-facet (2 character files; 3 utterances rendered verbatim; speaker-paragraph rule honored at @7 + @9)
-- phase_7_sweep: COMPLETE (per-sentence Q-line for all 74 pre-sweep sentences across 3 scene-forks; 1 FAULT-EXPOSITION-AUDIT-MISS recovered)
-- annotated_draft: NOT emitted (cascade-budget compression; c03 precedent)
+- facets: 68 cite-index entries / 68 rendered-or-folded — BALANCED
+- preamble_source: exposition-facet
+- voice_exemplar: 2 candidates (arm-1 series-Robinson + arm-2 auto-alt procedural-with-pressure)
+- dialogue_source: dialogue-facet
+- phase_7_sweep: COMPLETE (per-sentence Q-line for all 56 pre-sweep sentences across 3 scene-forks)
+- annotated_draft: NOT emitted
 
 ## RECONCILE
 
-bones: 39 authored / 39 rendered / 0 merged-into-prior / 0 dropped / 0 rendered-illegible — BALANCED
-facets: 68 cite-index entries / 68 rendered-or-folded (loc-state 6 + NI 10 + sensory 2 + state 30 + mem 2 + feel 2 + metaphor 0 + vibes 13 + exposition 3 = 68; metaphor zero-fire is correct per AP7 refusal log; vibes register-oblique through prose with no surface labels per fence) / 0 dropped / 0 unrendered-remainder — BALANCED
+bones: 39 authored / 39 rendered / 0 merged / 0 dropped / 0 rendered-illegible — BALANCED
+facets: 68 cite-index entries / 68 rendered-or-folded / 0 dropped / 0 unrendered-remainder — BALANCED
 dialogue: 3 authored / 3 rendered verbatim — BALANCED
 
 ## Phase 9 — cold-read terminal gate
 
-### Step 1 — cold read
-- agent: general-purpose (uninformed; read only draft/b01-c04.md)
-- report: active-project/staff/reviews/coldread-b01-c04-2026-05-27.md
-- events recovered (answer 1):
-  - night-decision to accept proposal
-  - dawn cooper's yard meeting with Jarvis; terms negotiated (pattern-reports, three days, volume/interval Taylor's)
-  - walk extends insect-range to four wards (Pig Tallow Lane + stitch-house range + Roper's Court)
-  - Oswyn + Wren noted, deliberately excluded from written report
-  - first-bell return: Jarvis displays receipt ("Sera managed"); Taylor hands report sheet; Jarvis pockets; both exit
-  - walk back through Hook; feed returns Wren again; Taylor passes without acting
-- jeopardy (answer 2): "Soft and offstage. ... Functionally low." Sera-threat referenced but not shown; Taylor's saturation-cost named but consequences undefined. NOT literal "no jeopardy"; identifies stakes but rates them low-charge.
-- causality (answer 3): "Shape is legible — decide, meet, walk, write, exchange, leave — but almost every motive is referenced rather than shown." Confusion-log: "the feed"/"insect-range" mechanism; Sera/Otto/Jarvis-patron identities; "three-month window" referent — all c01-c03-context-dependent.
-- payoff (answer 4): "A small thematic turn lands at the end (carrying both the delivered report and the protected person 'at the same count')." Mem:4 enacted in chapter-close trio recovered by cold reader.
-- continue (answer 5): "Tentative yes — the voice is distinctive enough to coast on for one chapter, and I want to know who Sera is and what 'the feed' actually is."
-- one-line summary (answer 6): "A surveillance-capable narrator trades ward-pattern intelligence to an unseen patron through a courier, in exchange for someone named Sera being kept safe."
+### Step 1 — cold read (one general-purpose, uninformed)
+- report: active-project/staff/reviews/coldread-b01-c04-2026-05-27-multiarm.md
+- events recovered ✓ (deal at cooper's yard → extend feed to Pig Tallow Lane / stitch-house range / Roper's Court → second-day return + report handoff to Jarvis → walk back past stitch-house, Wren returned in feed but not in report)
+- jeopardy: "Almost none I can name" — gestures noted ("unpaid debt"; "harm I could prevent"; deliberate name-omission implying cost) but reader notes "asked to take stakes on faith" — c01-c03-context-dependent (single-arm cold read returned similar)
+- causality: spine legible (deal→walk→handoff); WHY-she-took-the-deal asserted not motivated (c01-c03 inheritance)
+- payoff: "Thin. Nothing turns. No one resists" — harsher than single-arm cold read; Phase 7 economy traded prose density for thinner closing arc
+- continue: tentative yes — "on the strength of the premise, not this chapter"
+- one-line summary: "A girl with some kind of insect-mediated sixth sense agrees to sell map-level intelligence about four slum wards to a courier named Jarvis Coin, walks the wards twice, and hands over the first report — carefully omitting the people she recognized."
 
 ### Step 2 — diff against intent
 - chapter goal: "Show the audience the acceptance and the network expansion together so the tether-gain reads as future-cost collateral — the protection and the trap are the same operation."
-- diff: central event (acceptance + routing-operation-installed-at-scale) ✓ RECOVERED; thesis-enactment (protection and trap same operation, recovered by reader as "carrying both at the same count") ✓ RECOVERED; antagonist-force (Jarvis as conduit; arrangement holding) ✓ RECOVERED.
-- FAIL triggers evaluated:
-  - "Cold reader did not recover central event" — NOT MET (recovered)
-  - "Continue = no" — NOT MET (tentative yes)
-  - "Answer 2 literally 'no jeopardy' on non-pure-coda chapter" — NOT MET ("soft and offstage" + named risk-bearers, not literal no-jeopardy)
+- diff: acceptance ✓ RECOVERED; routing-operation ✓ RECOVERED; thesis-enactment "carefully omitting the people she recognized" ✓ RECOVERED (cold reader explicitly identified the Wren-non-write as moral hinge but couldn't name its cost — c01-c03 context dependency).
+- FAIL triggers:
+  - cold reader missed central event: NOT MET (recovered)
+  - continue = no: NOT MET (tentative yes)
+  - answer 2 literally "no jeopardy" on non-pure-coda: NOT MET ("almost none I can name" + reader identifies stakes; not literal no-jeopardy)
 
 ### Step 3 — additive editorial pass (/and-review staging)
-- DEFERRED under cascade-budget compression (matches c03 precedent); not run.
-- staging_signals: 0; staging_report_path: null; signal_clusters[]: empty.
+- DEFERRED (cascade-budget; matches c01-c03 precedent). staging_signals: 0; staging_report_path: null; signal_clusters[]: empty.
 
-### Step 3.5 — prose-rationale-mute audit (URI-STITCH-PROSE-RATIONALE-MUTE)
-- auditor fork (mechanical lexical scan across held-bone rationales vs prose tokens):
-- 10 held bones scanned (additive @2/@10 scene-A; @16/@20/@22/@23 scene-B; @33/@34/@35/@38 scene-C)
+### Step 3.5 — prose-rationale-mute audit
+- auditor fork: 10 held bones scanned (additive @2/@10 scene-A; @16/@20/@22/@23 scene-B; @33/@34/@35/@38 scene-C)
 - PASS: 10 / PROSE-RATIONALE-MUTE: 0
 - threshold (≥3 = SOFT-BLOCK): NOT MET
 - verdict: PASS
-- report: active-project/staff/reviews/prose-rationale-audit-b01-c04-2026-05-27.md
+- report: active-project/staff/reviews/prose-rationale-audit-b01-c04-2026-05-27-multiarm.md
 
 ### Step 4 — verdict + memory
-- verdict: **PASS** (clean — no FAIL trigger, no MANDATORY depth-pass, no signal-cluster, no prose-rationale-mute SOFT-BLOCK)
+- verdict: **PASS** (clean — no FAIL trigger; no MANDATORY depth-pass; no signal-cluster; no prose-rationale-mute SOFT-BLOCK)
+- tournament-scorecards.md rows updated with cold_read_verdict: PASS / cold_read_continue: tentative-yes
 - chapters[b01c04].cold_read recorded in showrunner memory
-- depth-pass: NOT REQUIRED (optional /and-write b01c04 revise --from-signals available if user wants tightening on cold-read "soft jeopardy" surface or interior-cartography mid-walk stretch; non-blocking)
+- depth-pass: NOT REQUIRED; optional `/and-write b01-c04 revise --from-signals` available if user wants tightening on cold-read "payoff thin / prose-density-wading" surface; non-blocking
 
 ### Phase 9.5 — admin process-critic
 - SKIPPED per Phase 9.5 rule ("On clean PASS with no clusters: skip the dispatch.")
@@ -273,5 +249,8 @@ dialogue: 3 authored / 3 rendered verbatim — BALANCED
 
 stitched: true
 draft_file: active-project/draft/b01-c04.md
-intermediates: pruned at Phase 9 PASS confirmation (b01-c04.preamble.md + b01-c04.scene-A.draft.md + b01-c04.scene-B.draft.md + b01-c04.scene-C.draft.md)
-parking-lot: pl-2026-05-27-002 appended (SOFT; cold-read jeopardy-soft observation; optional depth-pass)
+multi-arm: true (auto-alt-default per URI-STITCH-MULTI-ARM-DEFAULT-ON)
+tournament: 3 scenes; ceiling-collapse 3/3 (per-scene winners swept rubric paragraph-by-paragraph)
+cherry-pick: paragraph-default; K=0 substitutions across all 3 scenes
+intermediates retained: arm-1/arm-2 per-scene drafts + per-scene cherry-pick winners (b01-c02 multi-arm precedent)
+parking-lot: pl-2026-05-27-002 appended (SOFT; cold-read payoff/density depth-pass advisory)

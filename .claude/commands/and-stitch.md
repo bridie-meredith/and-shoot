@@ -88,7 +88,8 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
 - `--allow-bare-speech` — optional. Explicit opt-in to the legacy silent-speech fallback (Phase 0.7 § Legacy fallback). Without this flag, an episode with `speaks to` bones and an empty/missing dialogue facet HARD-ABORTS at Phase 0.5; the user must run `/and-facets <slug>` first. Pass this flag only when knowingly stitching a pre-2026-05-12 episode whose dialogue facet cannot be retroactively authored. Marked in the render-log header.
 - `--keep-drafts` — optional. Retain the Phase 1–7 `<slug>.phase-*.draft.md` intermediate files in `active-project/draft/` after a successful run. Default behavior at Phase 8 is to prune them (the render-log retains the trace; the drafts are reproducible). Debugging use only.
 - `--phase-1-mode <scene-window|per-anchor>` — optional. Override the active profile's `phase-1.mode` field. Default resolves from profile; schema default is `scene-window` (URI-SCENE-WINDOW, 2026-05-13). `scene-window` dispatches one fork per dramatist-marked scene with overlap-read context (back-look on prior rendered scene; forward-look on next scene's bones+facets) — see § "Phase 1 — scene-window mode" below. `per-anchor` is the legacy fallback: one fork per bone with `continuity-context` lookback. Use per-anchor when the scene-map facet is absent, when the episode has low percussion accumulation (modes converge), or for fork-isolation debugging.
-- `--max-arms <N>` — optional. Override the multi-arm dispatch cap (default 4). Caps the voice-exemplar candidate-set size at Phase 0 step 4a. Set `--max-arms 1` to force single-arm dispatch regardless of resolved candidates (debugging / control-baseline). See Phase 0 § 4a (URI-STITCH-MULTI-ARM, 2026-05-26).
+- `--max-arms <N>` — optional. Override the multi-arm dispatch cap (default 4). Caps the voice-exemplar candidate-set size at Phase 0 step 4a. Set `--max-arms 1` to force single-arm dispatch regardless of resolved candidates (debugging / control-baseline; also suppresses auto-alt-authoring). See Phase 0 § 4a (URI-STITCH-MULTI-ARM, 2026-05-26).
+- `--no-auto-alt` — optional. Suppress the Phase 0 step 4b auto-alt-authoring dispatch. Without this flag, when the resolved candidate set has |candidates| < 2 (no per-chapter alt-* files on disk), the orchestrator auto-dispatches a counterweight-author fork to produce one alt-exemplar in-session at `active-project/theater/voice-exemplar-<book>-<chapter>.alt-auto-1.md`, promoting the run to multi-arm. With this flag, the resolution stops at whatever was on disk and the run proceeds single-arm (legacy behavior; debugging / control-baseline). See Phase 0 § 4b (URI-STITCH-MULTI-ARM-DEFAULT-ON, 2026-05-27).
 - `--include-pov-mismatch` — optional. Disable the POV-pre-filter at Phase 0 step 4a. Candidates whose exemplar prose is in a different person (1st / 3rd) than the bones-header `narrator:` field will be promoted to the dispatch set anyway. Debugging only — closes the Criston-Cole third-person-slip failure mode by default; this flag re-opens it. See Phase 0 § 4a (URI-EXEMPLAR-POV-FENCE, 2026-05-26).
 - `--cherry-pick <off|paragraph>` — optional. **Default `paragraph` (URI-STITCH-CHERRY-PICK-DEFAULT-ON, 2026-05-27).** When `paragraph`, Phase 1.5 composes a paragraph-level cherry-pick aggregate across the N arms after per-scene ranking — Step 2 composes, Step 3 scores the assembled cherry-pick, and the result becomes the canonical scene draft consumed by Phases 2-8. When `off`, Phase 1.5 stops at per-scene pure-winner selection (legacy behavior; debugging / control-baseline only). N=1 collapses cherry-pick to a no-op (pure-winner = single arm). See Phase 1.5 § Per-scene cherry-pick composition + scoring. The 2026-05-27 b01-c02 cherry-pick experiment confirmed the cherry-pick path captures paragraph-level lift the pure-winner cannot (the "no signature against it" / "feed thinned" / unnamed-woman-grounding lifts on scene-B) without harming scenes whose arm-1 already swept the per-criterion rubric — making `paragraph` the strictly-better default.
 
@@ -131,6 +132,45 @@ Phase 1 and 7 are per-line phases (per-anchor / per-sentence forks). Middle phas
     This fence closed the v17 leak in the renderer experiment and is non-negotiable wherever the exemplar is consumed.
 
     **Counterweight discipline (URI-STITCH-COUNTERWEIGHT, 2026-05-26):** when the candidate set has 2+ arms, candidate authoring guidance is that arms should COUNTERWEIGHT the bones' default cadence-shape, not match it. A prime whose sentence-shape matches the bones' default cadence amplifies the bones' load (compound-noun saturation, parallel-clause metronome, etc.) and ranks below baseline. The taste-aligned ablation on b01-c02 scene-A (`active-project/staff/ablation/voice-exemplar-experiment-taste-aligned-2026-05-26/cold-read-report.md`) demonstrated: V2 porter-active (matched bones' clipped cadence) ranked LAST, below V0 baseline; V1 market-observational (counterweighted with variance + embodied digression) ranked FIRST. Candidate authoring SHOULD pick cadence-shapes that invert the bones' default. Phase 1.5 tournament will surface mis-counterweighted arms as low ranks regardless.
+
+4b. **Auto-alt-authoring — multi-arm default (URI-STITCH-MULTI-ARM-DEFAULT-ON, 2026-05-27).** When the post-step-4a candidate dispatch set has size `N < 2` AND `--no-auto-alt` was NOT passed AND `--max-arms 1` was NOT passed, the orchestrator auto-dispatches a counterweight-author fork to produce one additional alt-exemplar in-session. This makes multi-arm + Phase 1.5 tournament + cherry-pick the practical default for every run, without requiring users to author per-chapter alts upstream.
+
+    **When this fires:**
+    - `|candidates| == 0` (no per-chapter override, no series-level): auto-author 2 alts (gives N=2 minimal multi-arm); each alt counterweights the bones along a different axis.
+    - `|candidates| == 1` (single primary OR series-level only): auto-author 1 alt; the alt counterweights the bones, and where possible counterweights ALONG A DIFFERENT AXIS than the existing primary (so the tournament has genuine spread, not two near-duplicates).
+
+    **When this does NOT fire:**
+    - `|candidates| >= 2` already (per-chapter alts on disk): no auto-author; the user-authored set is canonical.
+    - `--no-auto-alt` passed: stop at the on-disk set; record `auto-alt: SUPPRESSED-BY-FLAG` in render-log; proceed at whatever |candidates| resolves to.
+    - `--max-arms 1` passed: force single-arm; record `auto-alt: SUPPRESSED-BY-MAX-ARMS-1` in render-log.
+
+    **Dispatch:** one `general-purpose` agent fork (or two parallel forks when |candidates|==0) with the following prompt payload:
+
+    - **Bones header** (verbatim from `theater/bones/<book>-<chapter>.md`): narrator slug, POV, scene declarations, bone list (for cadence detection — the author must INSPECT the bones' default cadence-shape and explicitly NAME it before authoring).
+    - **Existing primary exemplar** (if present): the prose passage held as a concrete artifact. The auto-alt MUST NOT duplicate this passage's cadence; it should counterweight the BONES along an axis the primary does not occupy.
+    - **Schema requirements** (per `schemas/persona-exemplar.schema.md` voice-exemplar variant, plus `active-project/voice-exemplar.md` precedent format): YAML frontmatter (`purpose`, `voice-target`, `content-match`, `authored-by`, `length`) + a 150-350 word prose passage. Content-match: Westeros-adjacent / first-person past / unrelated to active-project bone-content (no overlap with characters, places, events, props from the chapter). Authored-by: `claude (auto-alt; URI-STITCH-MULTI-ARM-DEFAULT-ON in-session)`.
+    - **POV constraint**: must match bones' `narrator:` person (1st or 3rd) to clear the POV pre-filter at step 4a's re-walk; the author is told the required person explicitly.
+    - **Counterweight discipline** (per URI-STITCH-COUNTERWEIGHT): the author must (a) name the bones' default cadence-shape in one phrase, (b) name the counterweight axis the alt occupies, (c) demonstrate the counterweight in the prose. The frontmatter records both as separate fields (`bones-cadence-detected`, `counterweight-axis`) for the tournament-judge's trace.
+    - **Surface-convention fence**: the author writes prose that DEMONSTRATES register/cadence; the prose is held by Phase 1 forks as a concrete artifact, never re-imported as content into the chapter. The author is told this so they do not embed chapter-specific content even by accident.
+
+    **Output:** the auto-author writes to `active-project/theater/voice-exemplar-<book>-<chapter>.alt-auto-<N>.md` (numeric N starts at 1). The orchestrator re-walks step 4a's candidate-set resolution to include the new file; POV pre-filter re-applies; cap-of-4 re-applies. The promoted set is the dispatch set for Phase 1.
+
+    **Cost:** 1 fork per auto-alt (~150-350 word output; brief reasoning). 2 forks when |candidates|==0. Net pipeline overhead ~5% vs the on-disk multi-arm cost (Phase 1 + 1.5 dominate). Within the affordable envelope per user-confirmed renderer-cost framing.
+
+    **Idempotence + regeneration:** auto-alts written to `.alt-auto-*.md` are NOT pruned at Phase 8 — they survive on disk and become the canonical alt on the next run (no re-author). User can edit, rename to `.alt-1.md` (promotes to user-curated, signaling "keep this one"), or delete (next run regenerates). Pass `--no-auto-alt` to suppress for a single run without deleting; pass `--regen-auto-alt` (optional flag — orchestrator deletes `.alt-auto-*` for the chapter before step 4b) to force fresh authoring.
+
+    **Render-log entry** (Phase 0 header):
+    ```
+    voice-exemplar-candidates: [<primary-path>, <alt-paths...>, <auto-alt-paths...>]
+    auto-alt: <N produced | SUPPRESSED-BY-FLAG | SUPPRESSED-BY-MAX-ARMS-1 | NOT-NEEDED-CANDIDATES-GTE-2>
+    auto-alt-counterweight-axes: [<axis-1>, <axis-2>, ...]   # one per auto-alt
+    ```
+
+    **Failure modes specific to auto-alt:**
+    - `FAULT-AUTO-ALT-CONTENT-LEAK`: auto-author embedded chapter-specific content. Surface to user; delete the auto-alt; either re-dispatch or proceed without (drops back to single-arm if N falls below 2).
+    - `FAULT-AUTO-ALT-POV-MISMATCH`: auto-author returned wrong-person prose despite explicit instruction. Surface; delete; re-dispatch once; on second failure fall back to single-arm.
+    - `FAULT-AUTO-ALT-CADENCE-MATCH`: auto-author returned prose matching the bones' default cadence (no counterweight). Soft-flag for tournament-judge attention; tournament will rank low; not blocking.
+
 5. **POV resolution.** Read `narrator:` from the bones file header (`active-project/theater/bones/<book>-<chapter>.md` § `narrator:` field — the seven-field extended header per `schemas/bones.schema.md`). If profile's `voice.pov` is unset, use the header value. Fault if both are absent.
 6. **Scene boundary detection.** Default (scene-window mode): scene boundaries are sourced at Phase 1 from `active-project/theater/facets/scene-map-<book>-<chapter>.md` (per the scene-window mode's Scene-boundary resolution below); no Phase 0 work needed beyond verifying the scene-map facet exists per step 2a. Per-anchor mode (opt-in fallback): paragraph breaks fall on scene boundaries derived during Phase 1 fork-by-fork, or on explicit time-skip blanks in the bones file.
 7. **Feedback intake (if present).** Read `active-project/staff/stitcher/feedback-<slug>.md`:
@@ -519,7 +559,7 @@ Use scene-window when prior runs of the same episode read metronomic at multi-bo
 
 ## Phase 1 — multi-arm dispatch (URI-STITCH-MULTI-ARM, 2026-05-26)
 
-**When this fires.** When Phase 0 step 4a resolved a candidate set of size N ≥ 2 (a primary `voice-exemplar-<book>-<chapter>.md` plus one or more `voice-exemplar-<book>-<chapter>.alt-*.md` siblings), Phase 1 fans out N × scene-count scene-window dispatches instead of scene-count. Per-anchor mode also supports multi-arm: dispatches become N × anchor-count. N = 1 collapses to the historical single-arm behavior; nothing changes for projects that have not authored alt-* candidates.
+**When this fires.** When Phase 0 candidate-set resolution (step 4a + step 4b auto-alt-authoring) produced a dispatch set of size N ≥ 2, Phase 1 fans out N × scene-count scene-window dispatches instead of scene-count. Per-anchor mode also supports multi-arm: dispatches become N × anchor-count. **Under URI-STITCH-MULTI-ARM-DEFAULT-ON (2026-05-27) this is the practical default for every run** — step 4b auto-authors a counterweight alt when no per-chapter alts are on disk, so |candidates| < 2 only persists when the user explicitly passes `--no-auto-alt` or `--max-arms 1`. N = 1 collapses to the historical single-arm behavior (debugging / control-baseline only).
 
 **Why it exists.** The 2026-05-26 taste-aligned voice-exemplar ablation (`active-project/staff/ablation/voice-exemplar-experiment-taste-aligned-2026-05-26/cold-read-report.md`) demonstrated that exemplar register-fit at authoring time does NOT predict reading-experience outcome on the rendered chapter. The same chapter's bones produce dramatically different prose under different exemplar primes, and per-chapter-per-scene the winner can differ. Single-arm dispatch locks in one prime per chapter without evidence; multi-arm dispatch + per-scene tournament (Phase 1.5) picks the winner per-scene from actual rendered outputs.
 
@@ -543,7 +583,7 @@ Use scene-window when prior runs of the same episode read metronomic at multi-bo
 
 ## Phase 1.5 — Per-scene tournament selection (URI-STITCH-TOURNAMENT, 2026-05-26)
 
-**When this fires.** Fires when Phase 1 ran in multi-arm mode (candidate set N ≥ 2). Skipped on single-arm runs (N=1). One tournament dispatch per scene.
+**When this fires.** Fires when Phase 1 ran in multi-arm mode (candidate set N ≥ 2). Under URI-STITCH-MULTI-ARM-DEFAULT-ON (2026-05-27) Phase 0 step 4b auto-authors a counterweight alt when the on-disk set has |candidates| < 2, so this phase fires on every run that does not explicitly suppress via `--no-auto-alt` or `--max-arms 1`. Skipped only on the suppressed-single-arm path (debugging / control-baseline). One tournament dispatch per scene.
 
 **Inputs per scene-tournament dispatch:**
 - All N candidate variants for this scene (`<slug>.scene-<L>.arm-<N>.draft.md` for N in candidate set)
