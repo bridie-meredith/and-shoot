@@ -1,41 +1,129 @@
 ---
 reviewer: worm-canon-pedant
-facet: dialogue
 character: taylor-hebert-kl-122ac
-episode: b01c01
-cycle: 1
-date: 2026-05-25
-verdict: revise
+chapter: b01c04
+facet: dialogue
+protocol: V2+V3
+date: 2026-05-27
+verdict: accept
+signal-findings: 1
+hard-findings: 0
 ---
 
-# Verdict reasoning
-
-Two of three entries pass clean: the spoken text is canonically Worm-Taylor under pressure — fragments, periods, no softeners, subject-implied, no Earth-Bet leakage — and the Westerosi dress (the croup, Fetch) is period-plausible without displacement. Entry 2 fails because the drafts sidecar cites `feel:1 @10` as a facet license, and `feel:1` does not fire at @10 in the locked cite-index — it fires at @21; @10 carries `feel:2`. The citation is not a marginal read; it is factually wrong per the locked graph. Per rubric URI-FACETS-CYCLE-1, a citation naming an anchor where the cited facet does not fire is HARD per entry. Entry 2 therefore fails Q2 (citation violation). The other two entries are clean enough to pass on their own merits, but this character fails the cycle.
-
----
-
-# Stage 1 — V2 per-entry verdicts
-
-[taylor-hebert-kl-122ac:1] @16 — ACCEPT — Q1: "Fever. Not the croup." affirmatively demonstrates taylor-hebert §Cadence (short-when-pressure: both fragments stripped to load-bearing noun), §Syntax (subject-implied openings: noun-phrase leads, self elided), and taylor-hebert-westeros §Vocabulary (period-plausible smallfolk illness term "the croup"). This is not merely on-card; it demonstrates the card — nothing in this utterance is possible in any other character's mouth without sounding wrong. Q2: Earth-Bet proper-noun scan clear; no contractions; no forbidden cadence; no anachronism. PASS.
-
-[taylor-hebert-kl-122ac:2] @16 — FAIL — Q1 passes: "She needs air. Stand back." demonstrates §Cadence (short-when-pressure), the KL-122ac §Voice instruction-register ("voice that does not ask whether they will comply"), and the calibration-anchor shape ("Status." — two-word imperative, period-terminal, no softener). The card signatures are affirmatively present. Q2 fails: the sidecar cites `feel:1 @10` as a facet license. The locked cite-index places `feel:1 @21` (co-anchored with oswyn's lane-mouth entry), not at @10. The anchor @10 carries `feel:2` only. `feel:1` does not fire at @10 — the citation walk fails. Per rubric URI-FACETS-CYCLE-1: "A citation that names an anchor where the cited facet does not fire (cite-index walk fails to resolve) is HARD per entry." Q2 FAIL.
-
-[taylor-hebert-kl-122ac:3] @16 — ACCEPT — Q1: "Who knows her? Fetch them." affirmatively demonstrates taylor-hebert §Syntax (real question, not rhetorical: she wants the answer; parallel question+imperative structure, three-word each), KL-122ac §Voice (imperative "Fetch them" carries instruction-register without softener or permission-seeking), and taylor-hebert-westeros §Vocabulary (period-plausible imperative "Fetch"). Q2: Earth-Bet scan clear; no contractions; no anachronism; "Fetch" not "go get"; no closing-clause-twist; adult-register holds without child-mask leakage. The facet-license citation `state:5 @17` resolves correctly per the locked cite-index (state:5 back=Y @17). Forward-anchor citation is structurally unusual but the rubric requires only that the cited entry exists on disk at the named anchor — it does. Q2 PASS.
+# worm-canon-pedant — dialogue verdict: taylor-hebert-kl-122ac (b01c04)
 
 ---
 
-# Stage 2 — V3 seam-finding
+## Scope
 
-[taylor-hebert-kl-122ac:1] @16 — The sidecar claims `state:3 @12` as a facet license, describing it as "the deployment-already-happened that this diagnosis consolidates into instruction." State:3 fires at @12 ("the insects propagate"), four bones before @16. The rubric's contamination discipline says R2 reads the locked graph to confirm "somatic-tell / monument adjacency claimed by the chosen draft is structurally present" — but the structural link between the deployment at @12 and the diagnosis at @16 is interpretive, not co-located. The cite-index does not show any inbound license from @12 to @16; the two bones are causally related in the sidecar's prose but not formally licensed as co-fires. The citation resolves as an entry on disk (state:3 @12 back=Y), so this is not the same HARD as entry 2 — but the claim that a deployment-state four bones prior licenses this utterance's facet-fire is a looser read than the rubric's "at the entry's chosen: block" language implies. Worm-canon-pedant note: canonically, Taylor's insect-deployment and her subsequent voice-use ARE a single tactic-sequence, so the causal chain is at least defensible in source terms. The seam is process integrity, not canon fidelity.
-
-[taylor-hebert-kl-122ac:2] @16 — The citation failure already names the HARD. The deeper canon-specific seam: the sidecar describes feel:1 as "Taylor's breath empties out — the breath-out-before-the-swarm-goes tell from the base persona-card Look section." In Worm, Taylor's insect-deployment is an involuntary-bleed shard response with physical tells that she progressively learns to conceal. A scene where she has already deployed insects and is now giving verbal instruction should carry some marker of post-deployment somatic state — the sidecar is reaching for exactly that by citing feel:1. But feel:1 in the locked graph fires at @21 (oswyn takes the lane-mouth) and describes a state at a different moment. The sidecar's claim that "the speech rides the same breath the deployment rode six bones earlier" is a plausible canon-reading of how Taylor's body works, but it is licensed by a facet entry that does not fire at the anchor being licensed. The seam is not that the somatic claim is canonically wrong — it is that the pipeline lost track of which feel-entry maps to which bone, and the cited feel-entry belongs to a different beat in the scene.
-
-[taylor-hebert-kl-122ac:3] @16 — "Fetch them" is period-plausible Westerosi and canonically on-register for instruction-mode Taylor. The strongest hostile read from this lens: canon-Taylor at this developmental stage (pre-arc-11, pre-training, before she learns to give commands to humans as deliberately as she gives commands to insects) uses instruction-register under pressure but with more visible uncertainty at the edges — "Fetch them" is clean and assured in a way that might outrun where she actually is in her arc. The AU divergence (Taylor transported to Westeros) would need to be the justification for any accelerated assurance. The file does not embed an AU-divergence note; the routing-note in the dialogue header covers KL-122ac as the adult variant but does not name which arc-moment in Taylor's timeline this corresponds to or what personal-timeline experience has built the instruction-register this assured. That is not a Q2 violation — the card authorizes this register — but it is an open canon-question the auditor has not flagged and the drafts sidecar has not addressed: does this Taylor know what she is doing, in source terms, or is the AU doing invisible work?
+Shipped dialogue file: `active-project/theater/dialogue/taylor-hebert-kl-122ac.md`, c04 section.
+One shipped entry: ID 4 @7.
+Entry ID 5 (@9, work-naming + first-interval) was dropped pre-ship per DEC-0030 (bone consolidated away; utterance authored against a bone the chunk-contract did not mandate). Out of scope — not on disk as a shipped entry.
+Sidecar reviewed: `active-project/staff/dialogue-writer/taylor-hebert-kl-122ac.drafts.md`, R1 entries for anchors @7 (entry 1 in sidecar) and @9 (entry 2 in sidecar — drop-documented, not reviewed for verdict).
+Proto-lines anchor verified: b01-c04.md @7 carries `[taylor-hebert-kl-122ac:4]`. Resolves correctly. @9 carries no Taylor citation (consistent with drop).
 
 ---
 
-# Convergence trace
+## Stage 1 — V2 Strict Affirmative-Demonstration
 
-The auditor's facets-final-audit-r2.md did not flag the feel:1 @10 citation failure. The prior R2 audit focused on five HARD findings in state-update and vibes facets (fault-001 through fault-005); dialogue citation-resolution was not enumerated in the re-audit scope (the re-audit was confirmatory for prior faults only, not a fresh walk of the dialogue sidecar's facet-license axis). The CONSTRAINT § citation-completeness rule (rubric, final paragraph of the V2 facet-citation extension section) and the URI-FACETS-CYCLE-1 promotion note both name the walk-fails-to-resolve condition as HARD per entry — but the auditor's flag-001 through flag-021 are not enumerated here (carried by reference only in the R2 audit), and it is unclear whether any of those 21 signal findings cover this specific citation mismatch. The audience-gate is surfacing it independently. No auditor finding number can be assigned; this is a convergence gap — the mechanical scan missed the feel:1 @10 walk failure.
+### [dialogue:4] @7
 
-The auditor's fault-004 (per-speaker per-anchor sub-cap vs. total ≤3 cap) is adjacent to the three-utterance structure this review accepts. The rubric-grounded downgrade to flag is noted; this reviewer does not contest it. The three entries serve three distinct board-moves (diagnosis / physical-intervention / routing), which is the meaningful test — not cap arithmetic.
+Line: "Yes. The terms hold with two changes. You will have patterns — what moves through the streets, what does not, where the seams sit — not raw report of who said what to whom. The interval is mine to set. The volume is mine to set."
+
+**Q1 — Affirmative card-signature demonstration:**
+
+That tracks.
+
+The "Yes." opener is the receipt-confirmation shape from base card §Direct-samples. Clean. The em-dash insertion specifying the deliverable ("what moves through the streets, what does not, where the seams sit") is the sensory/tactical specification structure — base card §Cadence, correctly applied. The parallel closer ("The interval is mine to set. The volume is mine to set.") is the possession-of-parameter register, identical syntactic shape, no connective — base card §Syntax parallel-structure for stacked observations, and directly descended from the base-card §Direct-samples voice-tell ("We'll need time to think about it. ... 'Need' not 'want.'" — possession mode, not preference-mode).
+
+What I track specifically: the line is descended from canon Taylor, not imitating her. She names what she will deliver and who owns the parameters. She does not explain why she named those parameters. She does not gesture at what the arrangement costs her or what she is trading. She does not make the reader notice she is being strategic. That restraint is the card, and it is affirmatively present in this line. Nothing in this utterance could sit in Jarvis's mouth without sounding wrong.
+
+Q1: PASS.
+
+**Q2 — Card not violated:**
+
+Earth-Bet proper-noun scan: clean. PRT, Skitter, Brockton Bay, Gold Morning, Khepri, the full canonical hard-fence list — absent. PASS.
+
+Insect-mechanism Earth-Bet jargon: "patterns — what moves through the streets, what does not, where the seams sit." Indirect referent. The fence holds. A competent Westerosi street operative could make this deliverable claim without possessing Taylor's actual capability. The ambiguity is maintained throughout the line; the power stays below the surface. PASS.
+
+Anachronism scan: absent. No okay, yeah, fine, sure, alright. PASS.
+
+Contractions: none. "You will have," "is mine," "does not." Uncontracted throughout. Adult-facing Westerosi formal register per behavior card §Vocabulary Refuses. PASS.
+
+Rhetorical questions: absent. Motivation clauses: absent ("because," "so that," "in order to" — all absent). Apology language: absent. Worm-canon-snark (dry-humor closer, Lisa-cadence aside, Skitter-vintage punchline): absent, correctly so — the moment is the formal acceptance of an arrangement that will end badly; any dry humor would be register-wrong. PASS across all scan dimensions.
+
+Mask-register check: the sidecar deploys the adult KL-122ac instruction-register, not the eleven-year-old child-deferent mask. The line holds that register without softener-leak. No "ser," no "if it please you," no sentence-final child-deferent phrase. No violation of canon-Taylor's cold-utilitarian negotiation voice. PASS on canon-voice grounds.
+
+*Note on card-authority (not a Q2 violation — flag for auditor):* The behavior-card header in the dialogue file reads `taylor-hebert-westeros`. That card's §Register markers define the external/spoken-to-adults register as "child-deferent Westerosi-formal" and states that a long planning sentence delivered aloud to an adult is "a tell — the mask has slipped." The sidecar treats the adult KL-122ac instruction-register as the sanctioned operating mode, not as a slip — referencing "persona card §Voice" for authority. The sidecar's behavior-card-stack is `taylor-hebert-westeros → taylor-hebert (inherits)`, with no separate kl-122ac behavior card listed. The adult register authority is present in the sidecar prose but not in a card section explicitly. This is not a canon-voice violation — the adult instruction-register is squarely descended from Taylor — but the card-authority chain requires sidecar prose to justify a register the cited card does not explicitly sanction as a distinct variant. I flag it; primary resolution lane is auditor.
+
+Q2: PASS.
+
+**Stage 1 verdict: ACCEPT**
+
+---
+
+## Stage 2 — V3 Adversarial Seam-Finding
+
+I reread before emitting clean accepts. Here are the strongest hostile counter-arguments from my lens.
+
+### Seam 1 — Unresolved facet-license citations [SIGNAL]
+
+The sidecar's entry for @7 marks `facet-licenses: [DEFERRED-TO-R2]`. The sidecar was authored R1-blind per Phase 1.5 timing. No R2 resolution is visible in the dispatched sidecar — the sidecar is the R1 drafts file and the deferred citations have not been resolved to concrete `<facet>:<id>` entries.
+
+Per rubric §V2 facet-citation extension, URI-FACETS-CYCLE-1 (2026-05-19): "A sidecar that documents the facet-license axis in R1-blind placeholder form (e.g., 'facet-licenses: [DEFERRED-TO-R2]') and is not resolved at R2 with a concrete `<facet>:<id>` citation is a SIGNAL finding per entry." Citation-completeness is enumerated per entry, not per file. The sidecar's identification of candidate axes (feel @7 for bodily-stillness; state-updates @7 for social_tether-antag +0.5; sensory @7 for the cooper's-yard ambient) does not satisfy the per-entry resolution requirement — it names where R2 should look without confirming the citations resolve on disk.
+
+This is the same class of finding the rubric records from cycle-1 audience convergence: "cape-fic-reader and worm-canon-pedant independently attacked dialogue-coll sidecar's R1-blind placeholder citation."
+
+**[dialogue:4] @7 — SIGNAL: `facet-licenses: [DEFERRED-TO-R2]` — no R2 resolution in sidecar. Candidate axes named (feel @7, state-updates @7, sensory @7) but not confirmed against locked graph. Per rubric §citation-completeness / URI-FACETS-CYCLE-1.**
+
+### Seam 2 — Card-authority chain for adult instruction-register [soft — auditor-lane]
+
+The dialogue file header cites `behavior-card: taylor-hebert-westeros`. The taylor-hebert-westeros card's §Register markers define external/spoken-to-adults as child-deferent Westerosi-formal. The deployed register is adult instruction. The sidecar labels this "adult KL-122ac variant" and reads against "persona card §Voice" — but the cited behavior-card-stack does not contain a kl-122ac behavior card. The card itself knows that adult planning-register surfaces as mask-slip; the sidecar treats adult instruction-register as the sanctioned operating mode.
+
+From my lens: the line is canonically correct Taylor voice. The question is whether the piece knows what rules it is operating by. If the adult register is sanctioned, that sanction should appear in a behavior card section, not only in sidecar prose. If the adult register is a mask-slip being deployed at scale, the surrounding prose should carry that cost visibly. The sidecar claims sanction; the card does not explicitly provide it. Future entries under the same authority chain have a gap in the guard.
+
+This is auditor-lane primary. I note it because card-authority is how I verify the piece knows the rules it is operating by — and clean-seeming authority chains that rest on sidecar prose rather than card text are where future drift enters.
+
+**[dialogue:4] @7 — soft flag: behavior-card header cites taylor-hebert-westeros; card's external register is child-deferent; deployed register is adult instruction. Sidecar prose provides rationale; no explicit card section or kl-122ac card in the stack sanctions adult register as a distinct operating mode. Auditor-lane.**
+
+### Seam 3 — "Ignorance played correctly" check [clean — no seam]
+
+Taylor names "patterns" as her deliverable. The specificity of "what moves through the streets, what does not, where the seams sit" names the shape of pattern-reading but not the mechanism. I tested whether this specificity implies superhuman analytical resolution — whether a Westerosi street operative without parahuman capability could plausibly make the same claim. They could. The claim is specific but not anomalous. The fence holds; the ambiguity is earned.
+
+No seam.
+
+### Seam 4 — Canon-Taylor in constraint-negotiation vs. deployed register [clean — no seam]
+
+Canon Taylor at the negotiation-mode moments that are most comparable (the Coil arrangement, the Travelers détente, the Undersiders-vs-Tagg standoff) operates from cold, transactional, assertion-of-terms, no decoration. She names what she will deliver; she names who owns the parameters; she does not explain why. The deployed line is squarely in that mode. The Westerosi constraint adds uncontracted forms and period-plausible vocabulary without distorting the base register. The descended voice is visible underneath. This tracks.
+
+No seam.
+
+---
+
+## Running tally
+
+| Finding | Class | Anchor | Rubric authority |
+|---------|-------|--------|-----------------|
+| Facet-license citations unresolved from DEFERRED-TO-R2 | SIGNAL | @7 | rubric §citation-completeness / URI-FACETS-CYCLE-1 |
+| Adult instruction-register not explicitly sanctioned by cited behavior card | soft / auditor-lane | @7 | rubric §hard fences §behavior-card-compliance |
+
+Strong seams: 0
+SIGNAL findings: 1
+Hard findings: 0
+Clean reads: voice-register (descended from canon Taylor), lore-fence (indirect referent held), Earth-Bet scan (clean), anachronism scan (clean), contraction check (clean), motivation-clause check (clean), lore-leak check (clean), canon-personality check (clean), Q1 affirmative demonstration (present)
+
+---
+
+## VERDICT
+
+**ACCEPT**
+
+One SIGNAL finding (facet-license citations unresolved from R2 placeholder status). One soft flag (card-authority chain, auditor-lane). No hard findings. No canon-personality violation. No lore leak. No Earth-Bet contamination. No power-mechanics overreach.
+
+The line is canonically descended Taylor — cold, transactional, assertion-of-terms, no decoration, no motivation-talk. The indirect-referent fence for the bug-feed capability is maintained. The possessed-parameter register ("is mine to set") and the receipt-confirmation opener ("Yes.") are affirmative card-signature demonstrations.
+
+The SIGNAL routes to R2 dialogue-judge: resolve concrete `<facet>:<id>` citations for entry 4 @7 against the locked graph. Candidates from the sidecar: feel @7 (bodily-stillness hold), state-updates @7 (social_tether-antag +0.5 axis-move capture), sensory @7 (cooper's-yard ambient at first bell). Each candidate must resolve to an entry on disk at the named anchor; walk-failure is HARD per entry.
+
+The soft card-authority flag routes to auditor: confirm that adult KL-122ac instruction-register is explicitly sanctioned by a behavior card in the stack, or that the taylor-hebert-westeros card's "mask-slip" category is the intended frame for this deployment and the surrounding prose carries that cost.
+
+Wiki tab stays open. Keep reading.
