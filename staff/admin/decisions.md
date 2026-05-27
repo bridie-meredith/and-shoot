@@ -842,3 +842,86 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0030 | 2026-05-27 | SLOW
+
+question: /and-write b01c04 Phase 2 returned 45 HARD findings (33 FAULT-FORM-MODIFIER + 12 FAULT-BONE-DELTA-MALFORMED) on 38 bones. Route (1) Phase 1 redo with corrective brief + c02-reference, (2) fixer mass-pass on all 45 findings, or (3) escalate to human? And: file a process-change proposal noting c03 as a contamination source for future bones SVO-form exemplars?
+context: |
+  45 HARD faults on 38 bones — essentially every bone is non-compliant. Root causes:
+  (a) 33 FAULT-FORM-MODIFIER: prepositional phrases of place/direction/time/instrument/
+      accompaniment in SVO text, banned per schemas/bones.schema.md line 107. Schema is explicit.
+  (b) 12 FAULT-BONE-DELTA-MALFORMED: 11 bones use magnitude 0.5 below the 1.0 bone.delta_per_axis
+      floor + 1 dialogue-anchor bone s01n10 with empty axis_moves.
+  Both are systematic single-root-cause failures — screen-writer applied a "minimal locative license"
+  that does not exist in the schema and used 0.5-magnitude splits instead of 1.0+ magnitudes.
+  Contamination source: c03 bones were provided as a cadence reference; c03 ran under cascade-budget
+  and was never audited at Phase 2 for SVO-form, so c03's PP-heavy, 0.5-magnitude bones taught the
+  wrong pattern. c02 revised bones (47 bones, post-fixer, Phase 2 clean) are the only fully-audited
+  SVO-form reference in the project.
+  Fixer-independence problem: consolidating 0.5+0.5 pairs into 1.0 bones means deleting bones →
+  renumbering → FAULT-FORM edits on deleted bones become moot. Fixes are not independent operations.
+  Projected post-redo bone count: ~28-32 (vs 38 now) as pair-splits collapse to singles.
+options: |
+  (1) Phase 1 redo — re-dispatch screen-writer with corrective brief: no PPs of
+      place/direction/time/instrument/accompaniment anywhere in SVO text; magnitude floor 1.0 per
+      axis_move; consolidate pair-split deltas into single bones; reference c02 bones (NOT c03)
+      as the canonical SVO-form model.
+  (2) Fixer mass-pass — route all 45 findings to fixer sequentially; likely produces malformed
+      output due to inter-dependent bone-deletion/renumbering conflicts; may require second pass.
+  (3) Escalate to human — bring back to the principal for a real decision.
+
+decision: Option 1 — Phase 1 redo with corrective brief + c02-reference. Do not route to fixer.
+basis: |
+  goal:1 (pipeline correctness — 45 HARD findings on 38 bones is a systematic authoring failure;
+  the schema is unambiguous; fixer minimum-change is incoherent when fixes are inter-dependent and
+  the root cause is a single authoring error) + goal:2 (cost discipline — expected total cost of
+  option 2 exceeds option 1 due to cascading conflicts) + goal:4 (lean architecture — fixer mass-pass
+  on non-independent faults is a half-finished implementation anti-pattern) + methodology:3a
+  (reversibility — Phase 1 redo is a clean reauthoring; fixer mass-pass on inter-dependent faults
+  risks a worse malformed output that also requires redo) + methodology:3b (cost — redo now < fixer
+  mass-pass + likely second pass or redo anyway) + methodology:3c (blast radius — fixer applied to
+  45 inter-dependent faults has unpredictable blast; redo is a clean slate with defined scope)
+rationale: |
+  The spec's "fixer with minimum-change" routing assumes the faults are independent correctable
+  items — individual bones that can each be minimally fixed without affecting others. That assumption
+  breaks down when the root cause is a systematic authoring departure and the fixes are structurally
+  coupled (bone deletion changes numbering; FAULT-FORM edits on deleted bones become moot). On 45
+  faults across 38 bones, essentially every bone requires changes, and some changes (pair-split
+  consolidation) cascade through the bone-ID space.
+
+  The corrective brief for Phase 1 redo is specific and prescriptive: no PPs of any banned class
+  in SVO text (list the banned PP types explicitly from schema line 107); magnitude floor 1.0
+  per axis_move (consolidate 0.5+0.5 pairs into single 1.0 bones rather than splitting); empty
+  axis_moves is a HARD on dialogue-anchor bones (address s01n10 pattern explicitly); reference
+  c02 revised bones as the canonical SVO-form and delta-magnitude model, NOT c03.
+
+  Option 3 (escalate) is not warranted. Goals + methodology decide this clearly. The principal
+  is not needed for a routing decision between two technical execution paths when one is
+  structurally incoherent (fixer on inter-dependent faults) and the other is the clean canonical
+  reauthoring path.
+
+  c03 contamination follow-on: Yes, a process-change marker is appropriate. The screen-writer
+  correctly referenced project bones as a cadence model but the wrong bones were loaded (c03,
+  unaudited for SVO-form) rather than the correct ones (c02 revised, fully audited). This is a
+  /and-write Phase 1 dispatch gap: the corrective brief should explicitly name c02 as the
+  reference and explicitly warn that cascade-budget bones from c03 are not canonical for
+  SVO-form or delta-magnitude discipline. A process-critic dispatch is appropriate after Phase 1
+  redo + Phase 2 re-audit confirm whether the corrective brief prevents recurrence — if Phase 2
+  clears, that confirms the fix; if it FAILs again, a structural PROP is warranted. For now,
+  the corrective brief IS the fix; the contamination gap will be captured as a parking-lot item
+  targeting /and-write (for the chain to note that c03 should not be referenced as an SVO-form
+  model) rather than a formal process proposal at this stage (single occurrence, fix already
+  applied in the brief, outcome TBD).
+trade-off: |
+  Option 2 is cheaper per-dispatch-overhead in the no-conflict case, but the no-conflict case
+  does not apply here — bone deletion + renumbering cascades make a clean 45-edit sequential pass
+  structurally impossible. The expected-total-spend for option 2 (fixer mass-pass + conflict
+  resolution + likely redo) exceeds option 1 (single Phase 1 redo with corrective brief).
+  Option 3 wastes a human round-trip on a question that goals + methodology resolve clearly.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

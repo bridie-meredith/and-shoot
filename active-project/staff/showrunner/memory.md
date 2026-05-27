@@ -3094,9 +3094,9 @@ books:
           axes_in_motion:
             - axis: capability
               direction: up
-              target_delta_magnitude: 1.5
+              target_delta_magnitude: 2.0
               cost_ledger_anchor: cl03a
-              notes: "network expands across three wards; Khepri-rhyming architecture beginning to form; cl03a gain side"
+              notes: "network expands across three wards; Khepri-rhyming architecture beginning to form; cl03a gain side. Adjusted from +1.5 to +2.0 at /and-write Phase 1 redo 2026-05-27 to honor bone-level magnitude floor of 1.0; chapter coverage extends across 2 scenes, each delivering 1 full rank (s02 +1.0 both adjacent wards, s03 +1.0 third-ward completion)."
             - axis: position-prot-rise
               direction: up
               target_delta_magnitude: 1.0
@@ -3181,9 +3181,9 @@ books:
                   notes: "acceptance delivered and acknowledged; Otto's lever solidified from embryonic to operational; cl-antag-d03 third tranche (+1.0 of +4 total; c03 already delivered +1.5, c04 adds +1.0, +1.5 still outstanding for d05–d10 chapters before cl-antag-d10); Taylor can no longer un-be-the-intelligence-source"
                 - axis: position-prot-rise
                   direction: up
-                  target_delta_magnitude: 0.5
+                  target_delta_magnitude: 1.0
                   cost_ledger_anchor: cl02
-                  notes: "Taylor now named-function at courier-tier as an active conduit; anonymous no longer possible; cl02 partial gain tranche"
+                  notes: "Taylor now named-function at courier-tier as an active conduit; anonymous no longer possible; cl02 full gain delivered here. Consolidated from +0.5 s01 + +0.5 s03 split into single +1.0 bone at s01 at /and-write Phase 1 redo 2026-05-27 to honor bone-level magnitude floor of 1.0."
               axes_held:
                 - axis: moral_framework
                   rationale: "licensed exception active and held; rationalization runs (Sera is real, the intelligence is already running, the destination is the modification); framework still named and believed — not interrogated as compromised; no Δ on this axis at this scene (chapter contract holds moral_framework; the licensed exception is the discipline at work, not its breach)"
@@ -3250,19 +3250,14 @@ books:
               axes_in_motion:
                 - axis: capability
                   direction: up
-                  target_delta_magnitude: 0.5
+                  target_delta_magnitude: 1.0
                   cost_ledger_anchor: cl03a
-                  notes: "four-ward coverage complete; cl03a fully settled; the footprint is the largest Taylor has run in KL; completion tranche"
+                  notes: "four-ward coverage complete; cl03a fully settled; the footprint is the largest Taylor has run in KL; completion tranche. Raised from +0.5 to +1.0 at /and-write Phase 1 redo 2026-05-27 to honor bone-level magnitude floor of 1.0."
                 - axis: social_tether-prot-rise
                   direction: up
                   target_delta_magnitude: 1.0
                   cost_ledger_anchor: cl03b
                   notes: "Jarvis as structural vector is now functional architecture; first upward-routing completed; tether load-bearing in formation; cl03b completes — Wren explicitly outside the report is the future-cost collateral marker; the audience sees the gap the calculus does not"
-                - axis: position-prot-rise
-                  direction: up
-                  target_delta_magnitude: 0.5
-                  cost_ledger_anchor: cl02
-                  notes: "Sera's exposure managed — confirmation received; Taylor now part of a functioning arrangement; position above anonymous confirmed; cl02 gain completed"
                 - axis: position-world
                   direction: up
                   target_delta_magnitude: 1.0
@@ -3277,6 +3272,8 @@ books:
                   rationale: "the report Taylor hands to Jarvis is junction-agitation and ward-pattern from Flea Bottom-tier sources; no court-tier surface in the feed yet; resentment has no court-material to form on at this feed-tier"
                 - axis: moral_legibility_to_self
                   rationale: "recognition deferred; the 'protection and trap are the same operation' thesis is made structurally visible to the audience in Taylor's continuous feed-and-report loop but Taylor does not name it; legibility suppressed at chapter close per chapter_class: standard"
+                - axis: position-prot-rise
+                  rationale: "full +1.0 consolidated to s01 bone at /and-write Phase 1 redo 2026-05-27; cl02 gain completed at acceptance; Sera confirmation (s03) confirms the arrangement is functional but does not re-advance the position axis — the naming-event was at s01"
               density_target: 0.7-0.8
             scene_conflict:
               protagonist_force: "the confirmation arriving as the lever's first dividend — Sera is managed; the acceptance has paid; Taylor's accounting closes the column that justified the decision"
