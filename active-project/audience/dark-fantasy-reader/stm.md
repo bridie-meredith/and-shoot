@@ -199,3 +199,157 @@ The one soft watch I'm carrying forward: the rationalization in s01 ("the distin
 
 **VERDICT: ACCEPT**
 The protection and the trap are the same operation, and the chapter makes that architectural rather than declared. The cost-honesty holds across all five axes. No hard findings. Soft carry: s01 rationalization must be watched at the execution layer — the text watches the distinction, it does not endorse it.
+
+---
+
+## b01c04 Phase 4 trim review — 2026-05-27
+
+### Prior STM context
+Chunk review (above) accepted this chapter with one soft watch: the s01 rationalization must not become authorial endorsement at the execution layer. The bones must honor that — the distinction Taylor holds must be observable through body-behavior, not narrated as correct. The bones file carries the chunk's Phase 3 ACCEPT. This review checks whether the 33-bone decomposition holds the same architecture the chunk promised, or whether it loses it in the translation to SVO.
+
+### Per-bone disposition — s01 (10 bones)
+
+**s01n01** — "the tallow-damp marks the cooper's-yard shed-wall" | shape: chatter | cost_ledger_anchor: cl-antag-d03
+KEEP. World-before-protagonist causal order — the tallow-damp marks the wall before Taylor enters. The shed-wall is a specific King's Landing material particular; it is not generic medieval atmosphere. "Marks" is a physical action from a non-human subject. This reader needs the world to exist independent of the protagonist's attention; n01 delivers that in the chapter's first SVO. Cost_ledger_anchor present. No schema violation.
+
+**s01n02** — "taylor-hebert-kl-122ac enters the cooper's yard" | shape: chatter | cost_ledger_anchor: cl-antag-d03
+KEEP. Event coverage: Taylor returns to the meeting place. Transitive, clean. No wasted motion here — the arrival is a necessary structural marker before the exchange begins, and it is not accompanied by any inner-register that would thin the cold-utilitarian vibe. Cost_ledger_anchor present.
+
+**s01n03** — "taylor-hebert-kl-122ac takes the shed-wall" | shape: chatter | cost_ledger_anchor: cl-antag-d03
+KEEP. Operative position-taking, mirroring b01-c02's bone 7. This is not atmosphere; this is the body enacting prior planning before the other party arrives. The position is load-bearing in the sense that it shows courier-discipline: Taylor has a posture for these exchanges, she does not improvise them. The shed-wall's prior establishment at n01 makes this a landing, not a new piece of information. Cost_ledger_anchor present.
+
+**s01n04** — "jarvis-coin-kl-courier enters the lane-mouth" | shape: chatter | cost_ledger_anchor: cl-antag-d03
+KEEP. Opposing force arrives. "Enters the lane-mouth" is the right unit of description — Jarvis as structural entity, not a named antagonist requiring ceremony. The dialogue file confirms his gait-as-no-appointment-to-be-late-for register; the notes correctly flag that as facet-material. This bone's job is to place the opposing vector in the scene. It does that without editorializing. Cost_ledger_anchor present.
+
+**s01n05** — "the insect-feed returns jarvis-coin-kl-courier" | shape: held | axes_held: political_register-prot
+KEEP. Feed-first posture before eye-contact: this is the cold-utilitarian register as operational procedure. The feed is doing its work before the body acknowledges Jarvis. The held-axis rationale (courier-tier discipline enacted) is load-bearing: this is Taylor's political_register-prot at work, not atmosphere. The "returns" verb is the canonical feed-output form. No magic-as-reliable-tool: the feed returns Jarvis before anything else happens — it is not infallible, but it is the first input, and the discipline that makes it first is what this bone encodes.
+
+**s01n06** — "taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier" | shape: moving | social_tether-antag +1.0
+KEEP. The social_tether-antag +1.0 bone. This is where the lever solidifies. The dialogue file's entry 1 delivers it: flat transactional cadence, the modification asserted as terms-not-request, the acceptance making the modification-of-terms the discipline's last available parameter. This is the chapter's first and only speech bone in s01 that carries a Δ, and it carries it correctly. The yes exits Taylor's mouth; the lever is now Jarvis's to carry. No catharsis: the dialogue does not perform relief, it performs the act of handing over.
+
+**s01n07** — "taylor-hebert-kl-122ac holds the feet" | shape: held | axes_held: moral_framework
+KEEP. This is the rationalization-watch bone. The held-rationale: "Sera is real, the intelligence is already running, the destination is the modification." The notes explicitly state: "bones do NOT author the suppression's internal content — only its enacted form (stillness)." The bone holds the feet; it does not endorse the reasoning. The body-part DO is licensed. The dark-fantasy-reader's prior soft watch (from chunk review) is honored here: the rationalization is enacted via stillness, not narrated as correct. KEEP — but I'm watching this at facet-layer. The bone is clean. What is written here does not tell the reader the distinction is real; it tells the reader Taylor's feet do not move.
+
+**s01n08** — "jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac" | shape: moving | position-prot-rise +1.0
+KEEP. The position-prot-rise +1.0 bone, and the dialogue fault-fix (prior draft's empty-axis speech bone resolved here). The dialogue file entry 8 carries Jarvis's routing-confirmation register: "Those terms are acceptable to the man I serve." No warmth, no negotiation framing, no naming of the patron. The terms arrive as settled routing — not extracted, not granted, not celebrated. Taylor is named as a function without ceremony. The lever-solidification shape is confirmed here: Jarvis treats the acceptance as a parameter-set, not a concession won. That is the trap the reader sees and Taylor does not examine.
+
+**s01n09** — "jarvis-coin-kl-courier exits the lane-mouth" | shape: chatter | cost_ledger_anchor: cl-antag-d03
+KEEP. The lever walks out. This bone is the opposing force enacted as departure — "the lever walks out at courier pace with the yes in its operational memory" (per notes). No bone needed to tell the reader what just happened; the exit is the event, and the reader knows what Jarvis is now carrying. Transitive, clean. The irreversibility is in the body leaving, not in a statement about what the leaving means. Cost_ledger_anchor present.
+
+**s01n10** — "taylor-hebert-kl-122ac exits the cooper's yard" | shape: held | axes_held: relational_anchor_status
+KEEP. Wren absent from s01's calculus, as she must be. The held-axis rationale: anchor holds outside pricing at rank 2, the exit enacts the clean boundary of this scene's scope. The anchor-discipline is enacted in departure without mention — Wren is not in the yard, not in Taylor's accounting at this exchange, not even invoked as absent. The anchor holds by not being activated. The scene closes on the clean boundary its design requires.
+
+**s01 sub-verdict:** 10 KEEP, 0 DELETE-PROPOSE. The rationalization-watch soft carry from the chunk review is honored at bone level — n07 (holds the feet) enacts the suppression without narrating its content. No chatter bone orphaned. The cold-utilitarian register is maintained throughout: the world marks the wall, the feed returns Jarvis, the feet hold, the lever exits. The opposing force (Jarvis treating terms as routing confirmation) arrives in the correct bone (n08) without requiring Otto's attention. Dark-fantasy requirement: enemy does not pause at convenient moments — confirmed.
+
+---
+
+### Per-bone disposition — s02 (11 bones)
+
+**s02n01** — "the waste-middens junction draws the discard-air" | shape: chatter | cost_ledger_anchor: cl03a
+KEEP. World-first causal order repeated at s02 open. The waste-middens junction is the Pig Tallow Lane ward's sensory signature — it is not generic urban environment, it is a ward that processes what other wards discard. This is the Westerosi-specific fear-register this reader needs: a place that exists by its own physics, carrying its own particular weight, before Taylor reads it. "Draws the discard-air" is a transitive physical action by a non-human environment subject. The world was here first. Cost_ledger_anchor present.
+
+**s02n02** — "taylor-hebert-kl-122ac enters Pig Tallow Lane" | shape: chatter | cost_ledger_anchor: cl03a
+KEEP. Covers the force tag: "Taylor's systematic ward-reading applied to new ground." Minimal chatter with structural function: Taylor's arrival initiates the s02 arc. The temporal PPs stripped per the redo corrective brief. Cost_ledger_anchor present.
+
+**s02n03** — "taylor-hebert-kl-122ac extends the insect-range" | shape: moving | capability +1.0
+KEEP. The capability +1.0 bone — day-1 coverage of both adjacent wards (Pig Tallow Lane and stitch-house street ward) in one deployment. The verb is the canonical form from b01-c02 bone 11. The DO "the insect-range" is a concrete noun encoding the coverage range. This bone is carrying the chapter's first capability Δ. The design decision to consolidate both wards into one deployment bone is correct for this reader: the insect-range extending is not an achievement, it is a procedure, and treating it as one undivided action maintains that register. Two bones would perform the expansion; one bone enacts it without ceremony.
+
+**s02n04** — "taylor-hebert-kl-122ac maps the junction-agitation" | shape: held | axes_held: moral_legibility_to_self
+KEEP. The capability expansion as rote procedure — the ledger does not perform the extension as arrival. Taylor maps the agitation the way she mapped the Hook's; the read-without-naming enacts the legibility hold. This is the "she does not stop to name what she is doing" suppression operating at bone level. The bone does not tell the reader this is suppression; it shows Taylor doing the mapping. The held-axis rationale is load-bearing: the moral_legibility_to_self hold means recognition is deferred, and the mapping-without-examining is the enacted form of that deferral.
+
+**s02n05** — "the penny-a-barrel carter parks the middens cart" | shape: chatter | cost_ledger_anchor: cl03b
+KEEP. The crowd particular that prepares the Oswyn appearance. Subject is not Taylor, not Oswyn — it is a named unnamed environmental actor (the penny-a-barrel carter as a ward-specific economic role). The middens cart is a physical object with a specific material register. This bone is world-before-Oswyn: the court exists and is occupied before the feed returns Oswyn. The prior-pattern with b01-c02 (environment establishes before feed returns the named person) is confirmed here. The Oswyn bone's weight depends on this preparation — his fever-burned look gone and his ward-aged face are readable against the background of a ward where penny-a-barrel carter work is what the economy offers. Cost_ledger_anchor present.
+
+**s02n06** — "the insect-feed returns oswyn-mudway-flea-bottom-elder" | shape: moving | social_tether-prot-rise +1.0
+KEEP. The social_tether-prot-rise +1.0 bone. This is the chapter's most weight-bearing bone for the dark-fantasy-reader's specific concern: bodies that matter. The "elder" tag on Oswyn's slug encodes the ward-aged particular (the fever-burned look long gone, the child-older-than-children-should-be quality). The insect-feed as subject is the canonical form — the feed returns Oswyn the way it returns any other ward signature, which is the trap made operational: Oswyn is in the same ledger as the junction-agitation. The tether-prot-rise +1.0 is correctly consolidated here (prior +0.5+0.5 split invalid). The bone does not narrate what this costs; the "elder" tag in Oswyn's slug does the work of naming the ward-aging without editorializing. Cost-honesty is structural, not asserted.
+
+**s02n07** — "taylor-hebert-kl-122ac maps the oswyn-mudway-flea-bottom-elder interval" | shape: held | axes_held: moral_framework
+KEEP. The routing-without-naming bone. Taylor maps Oswyn's movement-interval without naming the act as intelligence-routing to Otto. The moral_framework hold is enacted through the absence of logging-as-patron-routing: the harm-reduction logic is running, but Oswyn's entry into the feed is not named as a violation. The un-examined framing IS the discipline. This is the correct dark-fantasy register: the protagonist's rationalization is not endorsed, it is operating. The reader sees Oswyn being mapped; Taylor sees harm-reduction continuation. The gap is the architecture. No DELETE here: this bone is where the trap's cost lands at the human level for Oswyn — not as announcement, but as the act of mapping done without naming what the map is for.
+
+**s02n08** — "the stitch-house frames mark the second ward" | shape: chatter | cost_ledger_anchor: cl03b
+KEEP. Third sensory grounding bone for s02. The stitch-house frames are a ward-specific sonic/physical signature — not generic medieval environment, but an identifiable economic activity that marks the ward's character. This bone is the second ward's identity established before Wren appears in the feed. The pattern: world establishes, then feed returns. The stitch-house frames as the ward-identifier means the Wren appearance at n09 lands against a grounded backdrop. Cost_ledger_anchor present.
+
+**s02n09** — "the insect-feed returns wren-stitch-maker-flea-bottom-ward" | shape: held | axes_held: relational_anchor_status
+KEEP. The anchor-discipline's first bone-level content for s02 — worm-canon watch requirement. Feed returns Wren in the same form it returns Oswyn: "the insect-feed returns <entity>." The parallel is the trap: Wren and Oswyn are in the same feed, returned by the same mechanism. The anchor holds because Taylor does not log Wren, which is the subject of n10 and n11. This bone is the necessary prior: the feed returns Wren (it is in range; she is there) before Taylor's body responds to that return. The anchor-discipline operates on the feed-return: the question is what Taylor does with it.
+
+**s02n10** — "taylor-hebert-kl-122ac holds the feet" | shape: held | axes_held: relational_anchor_status
+KEEP. Second anchor-discipline bone for s02: the body does not enter Wren's street. "Holds the feet" is licensed (body-part DO, stillness-against-pressure). This is the first of two bone-level anchor-discipline contents required by the worm-canon watch — the route-choice enacted physically. The reader watches Taylor's feet stop at the near-lane; the body does not go past. The anchor is not named; it is enacted in the feet. No DELETE: this is load-bearing for the goal. The protection-and-trap architecture requires that Wren's exclusion from the report is a physical act (held feet, route choice) not a decision narrated as principled.
+
+**s02n11** — "taylor-hebert-kl-122ac maps the second-ward junction" | shape: held | axes_held: moral_legibility_to_self
+KEEP. Second moral_legibility_to_self bone (first was n04). The ledger-distinction enacted: Taylor maps the junction topology without logging Wren's location for the report. This is the second of two anchor-discipline contents at bone level — the map-without-log. Together n10 (held feet = route-choice) and n11 (maps junction = ledger-distinction) cover the worm-canon watch requirement: "without examining why she holds it" survives as two distinct bone-level forms, one physical (n10), one cognitive-cartographic (n11). The suppression is doing its work across both; neither bone tells the reader what it means.
+
+**s02 sub-verdict:** 11 KEEP, 0 DELETE-PROPOSE. The Oswyn bone (n06) earns its keep by naming his personhood through the feed-return mechanism rather than through editorializing. The two worm-canon anchor-discipline requirements are met in distinct bones (n10 body, n11 ledger). The world-before-protagonist order is maintained at every grounding bone (n01, n05, n08 all precede the relevant feed-returns). No walkout triggers: the capability expansion is rote procedure, not achievement; Oswyn's unknowing-node status is cost, not substrate.
+
+---
+
+### Per-bone disposition — s03 (12 bones)
+
+**s03n01** — "the early-morning grey empties Roper's Court" | shape: chatter | cost_ledger_anchor: cl03a
+KEEP. World-first again. The early-morning grey is an environmental agent acting on the court — the court is emptied by the light quality, not by Taylor's arrival. This establishes Roper's Court as a place with its own time-physics before Taylor enters it. The DO is Roper's Court (location-as-object of a transitive verb). The temporal condition is encoded in the subject (early-morning grey) not in a PP. Cost_ledger_anchor present.
+
+**s03n02** — "taylor-hebert-kl-122ac enters Roper's Court" | shape: chatter | cost_ledger_anchor: cl03a
+KEEP. Day-2 ward-3 initiating walk. Covers the event: "Taylor completes the four-ward coverage map" (partial, with n03). The parallel structure with s02n02 (enters Pig Tallow Lane) is intentional: same procedure, new ward. The repetition of form is not filler — it enacts the procedural register. Cost_ledger_anchor present.
+
+**s03n03** — "taylor-hebert-kl-122ac extends the insect-range" | shape: moving | capability +1.0
+KEEP. The capability +1.0 bone for s03. Same canonical verb as s02n03. The repetition is the method: same procedure, third ward. The note correctly identifies this as intentional — "the repetition of the verb mirrors the repetition of the method." Four-ward coverage complete. The largest operational footprint Taylor has run in King's Landing, filed as a single extended-range action with no performance of what it means. This is the correct accounting register.
+
+**s03n04** — "taylor-hebert-kl-122ac runs the four-ward feed" | shape: chatter | cost_ledger_anchor: cl03b
+KEEP. Second sensory grounding bone for s03. This bone captures the completed-shape image: the four-ward coverage map as one operational unit. The DO "the four-ward feed" encodes the scope in the compound noun, avoiding the PP. This bone is transitional — it orients the scene from ward-completion to the meeting with Jarvis. Its grounding function (the feed as texture, the four-ward scope as a physical reality Taylor inhabits) pays the tether bones that follow. Cost_ledger_anchor present. The "runs" verb encodes active operation, not passive holding — Taylor is working the feed, not relying on it.
+
+**s03n05** — "jarvis-coin-kl-courier enters the cooper's yard" | shape: chatter | cost_ledger_anchor: cl02
+KEEP. Opposing-force arrival for the delivery scene. The cooper's yard returns as fixed coordinate — this is the second visit to the same site, which gives it calendar-weight without stating it. The meeting-place-as-recurring-appointment is enacted by the bone's position (s01 = first visit; s03 = second visit, same yard, as contracted). Jarvis enters without ceremony. The note earns the scene's structure. Cost_ledger_anchor present.
+
+**s03n06** — "jarvis-coin-kl-courier displays the note" | shape: chatter | cost_ledger_anchor: cl02
+KEEP. This bone carries more weight than its chatter shape suggests. The physical gesture — display without handoff — is the confirmation arriving in its correct form: administrative flatness. Jarvis shows the note and does not hand it over. The protection is confirmed; the note is not Taylor's to keep. That asymmetry is structurally important: Sera's protection is real (the note exists, it is visible), but it belongs to Otto's channel (the note stays in Jarvis's coat). This is the lever's first dividend, and it is paid in a form that confirms the dependency: the confirmation is real, and it is not Taylor's to hold. "Displays" is a one-action verb that contains the withholding in its definition (a display that does not become a handoff). Cost_ledger_anchor present.
+
+**s03n07** — "taylor-hebert-kl-122ac delivers the report-sheet" | shape: moving | social_tether-prot-rise +1.0
+KEEP. The social_tether-prot-rise +1.0 bone for s03. The report-sheet physical handoff is confirmed: "a single sheet folded twice in plain hand, passed across the half-step of yard-air between them; Jarvis takes it without opening it and slides it inside his coat" (per the chunk notes at memory.md 3065-3067, the cape-fic-reader's signal about needing a physical handoff image was addressed at chunk level). The bone delivers the physical act. The DO "the report-sheet" encodes the object. The verb "delivers" is the transfer. Social_tether-prot-rise via licensed-action-form (physical communication-class axis via handoff). Wren is not in the report — that is established in n11-n12. The tether-gain is the formation of Jarvis as structural vector: the architecture is now functional.
+
+**s03n08** — "jarvis-coin-kl-courier pockets the report-sheet" | shape: chatter | cost_ledger_anchor: cl03b
+KEEP. The receipt confirmed. "Pockets" contains the destination (coat pocket) without a PP. Jarvis receives the report with no reaction that names its value — "same courier's neutrality he brought to the acceptance" (per notes). This is the opposing-force receipt: the sheet is now in motion toward Otto. The intelligence exits Taylor's context in this bone. The physical smallness of the object against the architecture it represents is the image that earns this bone — one sheet, a fold, a pocket. That contrast is the dark-fantasy register: what looks small IS the architecture. Cost_ledger_anchor present.
+
+**s03n09** — "jarvis-coin-kl-courier exits the cooper's yard" | shape: moving | position-world +1.0
+KEEP. The position-world +1.0 bone — the Green faction gains its first KL street-layer intelligence. The departure is the event: the intelligence exits Taylor's operational context and enters Otto's channel. The yard-exit is the threshold: before the exit, the sheet is in the yard; after it, the sheet is in the Green consolidation channel. Position-world Δ is correctly placed at the departure rather than at the display or the handoff — because it is the exit that moves the information past the threshold. The bone does not editorialize about what this means for Taylor; it records what the exit achieves for the world's power structure. That is the correct register: the world gains as she routes upward.
+
+**s03n10** — "taylor-hebert-kl-122ac runs the ward-feed" | shape: held | axes_held: moral_legibility_to_self
+KEEP. The chapter-closing mechanism bone. Reading-and-routing collapse into one continuous operational form. The repetition of "runs the ward-feed" from s03n04 is intentional — the walk-back operation is the same operation as the four-ward running, which is the same operation as the Hook triage, which is the same operation as what Taylor came here to not do. The architecture runs whole or it does not run. The moral_legibility_to_self held-axis confirms recognition deferred at chapter close. This bone is the chapter's structural irony enacted without announcement: the protagonist walks away from the delivery, running the feed, and the feed and the report are indivisible. Theme-silence maintained: the SVO does not state the thesis; it enacts it.
+
+**s03n11** — "the insect-feed returns wren-stitch-maker-flea-bottom-ward" | shape: held | axes_held: relational_anchor_status
+KEEP. The anchor-discipline at chapter close: the feed touches Wren and passes. This is the third time Wren appears in the coverage context (s02n09 was the first; this is the second in s03). The structural pattern is now complete: Wren is in the feed at multiple points, and the anchor holds at each point not through decision but through the feed returning her and Taylor not logging. The chapter closes with Wren in the feed and outside the report. The reader sees the gap the calculus has not closed.
+
+**s03n12** — "taylor-hebert-kl-122ac exits the stitch-house lane" | shape: held | axes_held: moral_legibility_to_self
+KEEP. The chapter's terminal bone. Taylor exits without examining whether the anchor will hold. The continued-walking-at-pace IS the non-examination. This is the dark-fantasy close: no catharsis, no resolution, no announcement, no recognition. The protagonist exits the lane at operational pace and the question of whether the anchor holds goes with her unanswered. The "exits" verb is clean and final. The chapter ends on the body in motion, not on the mind having arrived anywhere. That is the correct shape. Sealed tension confirmed.
+
+**s03 sub-verdict:** 12 KEEP, 0 DELETE-PROPOSE. The three-scene structure completes the chapter goal: acceptance (s01), expansion (s02), delivery (s03). The position-world +1.0 is correctly assigned to the yard-exit (n09) not to the handoff — because the exit is the threshold event. The chapter's terminal bone (n12) maintains the open question without catharsis. No walkout triggers in s03.
+
+---
+
+### Schema check — chatter bones without cost_ledger_anchor
+
+All chatter bones reviewed: every chatter bone in s01, s02, s03 carries a cost_ledger_anchor field (cl-antag-d03, cl03a, cl03b, or cl02). No schema violations. Zero DELETE-PROPOSE on schema grounds.
+
+### Threshold discipline fires — bone-level audit
+
+- Hope that costs nothing: no instance. s03n06 (Sera managed confirmation) arrives as administrative flatness; the protection is real and costs the dependency.
+- Enemies pausing at convenient moments: no instance. Jarvis processes Taylor's acceptance as routing confirmation (n08 s01) and takes the report without opening it (n08 s03) — the opposing force does not pause or deliberate.
+- Magic as reliable tool: no instance. The feed extends range (n03 s02, n03 s03) without ceremony and is operated as labor (n04 s02, n04 s03, n10 s03). "Runs" not "trusts."
+- Violence without aftermath: no instance. Oswyn (n06 s02) is a named person with a specific aging trajectory, not a body.
+- World as set dressing: no instance. Three sensory grounding bones per scene, all with non-human subjects acting on environment before Taylor enters.
+- Catharsis before weight: no instance. The chapter closes on n12 s03 (exits the stitch-house lane) — not on recognition, not on relief, not on arrival. The question of whether the anchor holds goes unanswered.
+
+Soft watch from chunk review: s01 rationalization at execution layer. At bone level this is handled correctly — n07 (holds the feet) enacts the suppression as body-behavior, not as narrated reasoning. The held-rationale in the notes names the rationalization's content ("Sera is real, the intelligence is already running") but the bone's SVO does not: "taylor-hebert-kl-122ac holds the feet." The facet layer and stitcher must maintain this separation. The bone is clean. The watch carries forward to /and-facets as a soft advisory: the moral_framework held-bones (s01n07, s02n07, s03n10/s03n11/s03n12) must not accumulate into implicit endorsement through their held-rationale prose.
+
+### Overall verdict — bone-level goal coverage
+
+Chapter goal: "Show the audience the acceptance and the network expansion together so the tether-gain reads as future-cost collateral — the protection and the trap are the same operation."
+
+- Acceptance: s01 delivers the lever-solidification in the correct register. The acceptance-as-irreversible event is the social_tether-antag +1.0 bone (n06), confirmed by Jarvis's routing-confirmation response (n08).
+- Network expansion: s02 delivers the capability gain (n03) and the Oswyn-as-unknowing-node cost (n06). The Khepri-rhyming architecture ("extends the insect-range" repeated at s03n03) is felt as procedure, not announced as significance.
+- Tether-gain as future-cost collateral: Oswyn's named personhood at n06 s02 makes the cost human before it is made abstract. Wren in the feed at n09 s02 and n11 s03, outside the report, is the collateral's structural form at chapter close.
+- Protection and trap as same operation: s03n10 ("taylor-hebert-kl-122ac runs the ward-feed") is the thesis enacted without announcement. The walk-back and the four-ward running are one continuous form. The insect-feed returns Wren (n11) and Taylor exits without examining the anchor (n12). The goal lands as architecture in the chapter's final three bones.
+
+33 KEEP, 0 DELETE-PROPOSE.
+
+One soft carry to /and-facets: the moral_framework held-rationale across n07 s01, n07 s02, and the closing bones of s03 must not accumulate into authorial endorsement in the prose rendering. The bones do their job correctly at the SVO level. The facet layer and stitcher must hold the same line: body-behavior, not narrated correctness.
+
+VERDICT: ACCEPT
