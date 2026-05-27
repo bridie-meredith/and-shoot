@@ -56,7 +56,7 @@ Register-pitfall warning carried forward: c03 entry 6 second sentence used three
 - Per-anchor cap ≤3 utterances. (A) is one utterance (4 sentences inside one entry). PASS.
 
 **card-signatures:** westeros-smallfolk §Cadence (short sentences stacked not chained; three-fact + one-fact serial); westeros-smallfolk §Syntax (coordination over subordination; subject-implied openings on sentences 2-3); westeros-smallfolk §Vocabulary (no bare proper-noun for noble — "the man I serve" circumlocution); jarvis-coin-kl-courier §Register (transactional flat-affect; no moral investment); calibration-anchor match to c03 @4 (serial declaratives) and c03 @18 (operator-control recursive-confirmation shape)
-**facet-licenses:** [state:1 @9] [vibes:2 @9] [narrator:3 @9 — POV is taylor-hebert-kl-122ac; resolved 2026-05-27 post-R2]
+**facet-licenses:** [state:16 @9] [vibes:2 @9] [narrator:3 @9 — POV is taylor-hebert-kl-122ac; resolved 2026-05-27 post-R2]
 
 **Word count:** ~32 words. Within 25-50 cap.
 
@@ -102,7 +102,7 @@ Register-pitfall warning carried forward: c03 entry 6 second sentence used three
 - Per-anchor cap ≤3 utterances. (A) is one utterance. PASS.
 
 **card-signatures:** westeros-smallfolk §Cadence (three sentences three facts; pause-at-period-terminal); westeros-smallfolk §Syntax (subject-implied openings; subject + copula dropped on all three fragments); jarvis-coin-kl-courier §Register (transactional flat-affect; no negotiation-flex; installation-not-invitation); calibration-anchor match to c03 @31 (article-dropped period-terminal three-fragment return-arrangement shape)
-**facet-licenses:** [state:1 @9] [vibes:3 @9 — Jarvis arrangement-as-functional-architecture; resolved 2026-05-27 post-R2; sensory and memory N/A on this bone]
+**facet-licenses:** [state:16 @9] [vibes:3 @9 — Jarvis arrangement-as-functional-architecture; resolved 2026-05-27 post-R2; sensory and memory N/A on this bone]
 
 **Word count:** ~6 words. Within 10-25 cap (slightly under but matching c03 @31's 6-word anchor exactly; calibration-faithful).
 
@@ -132,4 +132,4 @@ Both entries match calibration anchor cadences without drift. No upward drift to
 ## Entries shipped to dialogue file: 2
 ## Anchors: @9, @9 (one entry per anchor)
 ## Per-anchor count: 1 each (cap = 3; well under)
-## Citation completeness: card-signatures resolved per entry; facet-licenses RESOLVED post-R2 + Phase 5b cycle-1 2026-05-27: entry 8 = [state:1 @9] + [vibes:2 @9]; entry 9 = [state:1 @9] + [vibes:3 @9]. (R1 blind dispatch from /and-write Phase 1.5; c04 facets do not yet exist; R2 dialogue judge at /and-facets Phase 2 resolves against locked cite-index).
+## Citation completeness: card-signatures resolved per entry; facet-licenses RESOLVED post-R2 + Phase 5b cycle-1 2026-05-27: entry 8 = [state:16 @9] + [vibes:2 @9]; entry 9 = [state:16 @9] + [vibes:3 @9]. (R1 blind dispatch from /and-write Phase 1.5; c04 facets do not yet exist; R2 dialogue judge at /and-facets Phase 2 resolves against locked cite-index).

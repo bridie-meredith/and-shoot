@@ -1,111 +1,117 @@
 ---
-facet: memory
-episode: b01-c01
 reviewer: worm-canon-pedant
+facet: memory
+episode: b01-c04
+phase: 5b-adversarial
 cycle: 2
-date: 2026-05-25
+date: 2026-05-27
 verdict: accept
+prior-verdict: revise (cycle-1)
+cycle-1-revise-ground: preamble-block absent (fault-007 convergence)
+cycle-2-finding: preamble-block present and complete — sole REVISE ground resolved
 ---
 
-# Worm Canon Pedant — Memory Facet Adversarial Verdict (cycle 2)
+# memory — adversarial re-read (b01c04, cycle 2, post structural fix per DEC-0034)
 
-## Cycle-2 context
+Cycle-1 REVISE ground was one item: the carve-out rationale was substantively correct but lived in frontmatter, not in a body-level preamble block per `schemas/facet.schema.md §Rubric carve-out preamble`. Format-only. Neither entry required revision.
 
-Cycle-1 fixer added narrator:9 @26 to the interest-narrator file and updated the proto-lines and cite-index accordingly. The memory-b01-c01.md entry text was not changed — the repair was upstream. The R2 stamp in the memory file now correctly names narrator:9 as the spine carrier and notes state:6 deletion. Auditor cycle-2 confirm (facets-cycle2-audit-confirm.md) found three prior faults resolved (C2-001, C2-003, C2-004) and one new HARD (fault-C2C-001), but fault-C2C-001 concerns the dialogue sidecar exclusively — broken sensory:2 @16 citations in entries 1 and 2 of taylor-hebert-kl-122ac.drafts.md. It does not touch the memory facet files.
-
-My cycle-1 primary callout was: mem:2 revises, spineless fire. That callout has been addressed. I am re-running the full adversarial read.
-
----
-
-## Per-entry callouts
-
-### [mem:1 @3] @3 — Earth-Bet displacement on prohibition-maintenance
-verdict-entry: accept (SIGNAL on target-reference carried forward, no change)
-
-No changes to this entry since cycle 1. My cycle-1 read stands without modification.
-
-The displacement is canonically sound. The feet holding discipline from "before" maps to the practiced physical suppression-behavior Taylor carried forward: continuous override-architecture management expressed as somatic discipline. Scene-A is flat-low (rhythm-shape confirmed in scene-map), no peak-bones in scene-A — default-licit quiet-beat anchor. The description is hard-fence clean: no Earth-Bet proper nouns, no institution-names, no world-designations. "From before" is the licit displacement-register.
-
-Spine: narrator:7 @3 back=Y co=[mem:1] confirmed in cite-index. NI co-citation requirement met. The NI entry reads "the holding cost a quarter of her at the count's edge, and she paid it on principle every morning" — registers the cost, confirms the interior caught the trigger. Memory-flag and NI are consistent; they do not contradict on which channel fired.
-
-Monument-trigger: Earth-Bet displacement on override-architecture-residue. The prohibition-maintenance is canon-consistent with what survives post-Gold-Morning. The monument plausibly lights at a subsistence-suppression beat. PASS.
-
-Target-reference: `cond-override-architecture-residue-122ac`. Flag-013 from cycle 1 carries forward unmodified. The card exists but uses `cond-*` class form rather than the required `monument-*` convention (URI-032). The fixer correctly deferred this to margit (card rename or new `monument-*` anchor authoring). This remains SIGNAL — not a hard block. All three cycle-1 reviewers agreed; the fixer confirmed NO-ACTION-DEFENDED. No new information in cycle 2 changes that assessment. Margit referral to author `monument-override-architecture-prohibition` or confirm canonical slug form still required.
-
-Convergence trace: flag-C2C-003 carries flag-C2-005 forward (flag-013 margit referral on mem:1 + mem:2 monument-slug form). Consistent with this entry's SIGNAL state.
+The fix applied: carve-out moved to body-level preamble block (lines 16-41 of the post-fix file). No entry content changed.
 
 ---
 
-### [mem:2 @26] @26 — Westerosi-monument clamp on witch-label-formation
-verdict-entry: accept (SIGNAL on target-reference carried forward; primary cycle-1 finding resolved)
+## Preamble-block verification
 
-**Primary finding — resolved.**
+My cycle-1 prescription named five required components. Checking each against the post-fix file.
 
-My cycle-1 callout was spineless fire: no NI at @26, no feel-flag at @26, V3 carve-out conditions failed at condition (3). The repair added narrator:9 @26 upstream. I verify the repair against four surfaces:
+**(a) The doubled-register rubric section being carved out of.** Present. Lines 18-19 name the file-level doubled-register requirement explicitly and cite `rubric-memory-flags.md §file-level doubled-register requirement (≥1 Earth-Bet displacement + ≥1 Westerosi-monument clamp)`.
 
-1. interest-narrator-b01-c01.md line 17: narrator:9 @26 present, text reads "the chin-lift filed her in a category she recognized the shape of without needing the country's name for it." — confirmed on disk.
-2. cite-index: narrator:9 @26 back=Y co=[mem:2, state:2] — confirmed on disk. The co-list is consistent: mem:2 lists narrator:9; narrator:9 lists mem:2.
-3. proto-lines @26: `oswyn-mudway-flea-bottom-elder lifts the chin [mem:2] [narrator:9] [state:2]` — the [narrator:9] decoration is present (state:8 was removed by the state-updates cycle-1 session as expected).
-4. memory-b01-c01.md R2 stamp: "NI spine, added cycle-1 memory fix: 'the chin-lift filed her in a category she recognized the shape of without needing the country's name for it'" — the stamp records the repair correctly; state:6 is no longer named as spine confirmation; narrator:9 is the named spine carrier.
+**(b) File-level scope.** Present. Line 20 states the state-post-r2: 2 entries, both Earth-Bet displacement family, zero Westerosi-monument clamp.
 
-The spine is present and internally consistent across all four surfaces. My primary objection is resolved.
+**(c) The both-meaningful-gate failure for all Westerosi-monument candidates.** Present. Lines 23-28 enumerate three independent failure grounds across candidates: (a) spineless-fire AP7 at mem:1 @4 (no narrator/feel anchor co-located), (b) forced-fit AP5 at mem:3 @33 (intelligence-pattern bone is not charter-language cue), (c) audience-meaningfulness at mem:3 @33 (ASOIAF source-fluency required; two of three personas lack it). The grounds are named in order. Line 28 explicitly states structural failures (a)+(b) as primary, audience-meaningfulness (c) as secondary support. This demotes the insider-knowledge rationale correctly — the carve-out survives regardless of audience composition because AP5+AP7 are content-structural failures that hold independent of who is reading.
 
-**NI consistency check.**
+**(d) The active audience trio by slug, naming worm-canon-pedant + cape-fic-reader as the personas whose absent ASOIAF source-fluency drove the gate.** Present. Line 26 names `worm-canon-pedant` and `cape-fic-reader` by slug. My name is in the file. That rationale is correct; I confirmed it in cycle-1: conquest-charter-language as monument-weight at @33 requires ASOIAF foreknowledge I do not bring. The fire would be invisible to me. The gate fails.
 
-The NI entry and the memory-flag description must not contradict on which channel fired. NI @26: "the chin-lift filed her in a category she recognized the shape of without needing the country's name for it" — registers the social-categorization pattern, consistent with Taylor's surveillance-apparatus POV, clinical register, no feeling-word. Memory-flag description @26: "the chin lifts the way it lifts in the country's older stories when a word has been waiting for a person and the person has finally arrived to fit it" — registers the same category-formation beat through a different channel: the antiquity of the slot, the cultural inevitability of the label. These are complementary, not contradictory. NI catches the present-moment categorization; memory-flag catches the Westerosi-monument weight behind it (the word that preceded the person, the older-stories register). This is the correct relationship between the two facets at this beat. PASS.
+**(e) Per-entry annotations for mem:2 and mem:4, clarifying that neither is a Westerosi-monument clamp candidate and the carve-out applies to file-level shape gate only.** Present. The `state-post-r2` field (line 20) names both entries by ID. The `resolves` block (lines 35-39) scopes the carve-out to the file-level shape gate specifically, not to the entries themselves. The entries appear at lines 43-45 with full content unchanged.
 
-**Quiet-beat anchor re-verified.**
-
-Scene-C: @18-@27, rhythm-shape: peak-and-release, peak-bone: @21. Bone @26 is post-peak: @21 is the peak (oswyn takes the lane-mouth), @26 is the resolving tail (oswyn lifts the chin). Default-licit for memory-flag fire. The rubric permits memory-flags to fire in the aftermath of peak-bones-class beats, in the resolving or release-only tail — this is exactly that construction. PASS.
-
-**Monument-trigger and displacement-discipline.**
-
-These passed in cycle 1 and the entry text has not changed. The witch-label-formation Westerosi-monument clamp holds: the chin-lift is the categorization-completing body-tell, the cue-shape produces the monument's weight (the word waiting for the person is the recognition-clamp on Plantos-specific social-categorization patterns), no proper nouns in the description, no monument named. PASS.
-
-**Multi-justification.**
-
-Still holds from the fixer's pre-validation: moment of realization (Taylor catches the category closing around her), social commentary (institutional witch-categorization apparatus assembling through a body-tell), painting characterization (Taylor's pattern-recognition read of the social structure). Three of four hits. PASS.
-
-**Target-reference: `cond-kl-witch-label-formation-122ac` — SIGNAL carried forward.**
-
-Same flag-013 issue as mem:1: `cond-*` form rather than `monument-*`. My cycle-1 callout escalated this beyond mere convention to a substantive routing concern: the condition card describes the social process of witch-label formation (the escalation sequence, the observer-accumulation dynamics), which is not the same thing as the Westerosi-monument-anchor the stitcher needs for figurative-content routing. The monument here is the antiquity-of-category register — the word older than the observer, the slot that preceded the person. That belongs in a `monument-witch-label-as-ancient-slot` or `monument-older-stories-word-waiting-for-person` card, not in a condition-process card.
-
-This remains SIGNAL. All three cycle-1 reviewers agreed it was not a hard block on the entry's firing decision. The description is correct; the monument trigger is correct; the spine is now correct. The slug is the wrong pointer for the stitcher's figurative-content license but it resolves to a live card — the entry ships flagged, pending margit referral to author the monument-class anchor. No change in assessment.
-
-Convergence trace: flag-C2C-003 carries flag-C2-005 forward. Consistent.
+All five components present. Block is machine-parsable field format. The `/and-stitch` Phase 0 disambiguation problem named in my cycle-1 verdict — the parser cannot distinguish this defended single-register file from an undefended violation — is resolved.
 
 ---
 
-## File-level assessment
+## Entry re-verification (adversarial, cycle 2)
 
-Hard-fence scan — description fields:
-- mem:1: "from before" — clean. No Earth-Bet proper nouns. No Dance specifics.
-- mem:2: "the country's older stories" — clean. No proper nouns. No monument named.
+No entry content changed. Confirming cycle-1 clean reads hold.
 
-Hard-fence scan — target-reference slugs:
-- mem:1: `cond-override-architecture-residue-122ac` — Earth-Bet-noun-clean (renamed from Earth-Bet-noun form). `cond-*` class mismatch SIGNAL.
-- mem:2: `cond-kl-witch-label-formation-122ac` — no Earth-Bet proper noun in slug. `cond-*` class mismatch SIGNAL.
+**mem:2 @22 — "the feed returns the body she will not write down"**
 
-Doubled-register gate: mem:1 is Earth-Bet displacement; mem:2 is Westerosi-monument clamp. Both registers present. PASS.
+Hard-fence: clean. No Earth-Bet proper noun in description. Mechanism-descriptive slug form in target-reference. PASS.
 
-Sparsity: 2/27 = 7.4%. In-band (5–12%). PASS.
+NI spine: narrator:6 @22 back=Y confirmed in cite-index. The spine is present and co-listed with mem:2. PASS.
 
-Pressure-signal inversion: mem:1 @3 in scene-A flat-low; mem:2 @26 in scene-C resolving tail post-peak. Zero peak-bone fires (scene-A has no peak-bones; scene-C peak-bone is @21; neither entry fires on @21). PASS.
+Quiet-beat anchor: @22 is scene-B (@13-@24). Scene-B rhythm-shape is rising-to-peak; scene-B peak is later (discharge at scene-C). The scene-map designates @22 as Wren-anchor-discipline protected-pattern bone, not peak-bones-class. Default-licit. PASS.
 
-Per-scene cap: scene-A = 1 fire (mem:1 @3); scene-B = 0 fires; scene-C = 1 fire (mem:2 @26). PASS.
+Monument-trigger: un-priced-anchor-by-omission. The insect-feed catches Wren; the report structure will not name her. The gap between what the architecture sees and what the deliverable acknowledges is the cue. That is canon-Taylor architecture — the feed doesn't forget; the operational calculus does. Monument plausibly active at this beat. PASS.
 
-Spine coverage: mem:1 → narrator:7 @3; mem:2 → narrator:9 @26. Both confirmed in current cite-index and NI file. PASS.
+Displacement-discipline: "the body she will not write down" — operational-cost-accounting register, not person-register. Shape-without-name construction. No monument named in description. PASS.
 
-Monument-family diversity: two distinct families (override-architecture-residue pattern; witch-label-as-ancient-slot clamp). For a 27-bone episode with only 2 fires, two families is the maximum achievable and within the rubric's expectations for short-corpus episodes. PASS.
+Canon-assessment: the un-priced-anchor family is the correct monument class for c04's developmental position. Taylor is forming the omission architecture here, not executing the override. The cue is Worm-register-correct. No timeline flag; no voice flag; no lore-leak. That tracks.
+
+SIGNAL: margit-referral for `monument-un-priced-anchor-by-omission` queued; structurally clear; non-blocking under URI-FACETS-CYCLE-1. Carries forward unchanged.
+
+**mem:4 @38 — "the feed lights the anchor the report did not name"**
+
+Hard-fence: clean. No Earth-Bet proper noun. Mechanism-descriptive slug form. PASS.
+
+NI spine: narrator:9 @38 back=Y confirmed in cite-index. Co-listed with mem:4. PASS.
+
+Quiet-beat anchor: @38 is scene-C (@25-@39). Scene-C rhythm-shape is rising-to-peak-to-trail. Peak at @36 (Jarvis exits; world-axis pivot). @38 is two bones after peak — trailing, resolving territory. Default-licit. PASS.
+
+AP11 carve-out: mem:2 fires on first-recognition (feed catches Wren; report still open). mem:4 fires on continuous-operation (report has closed; feed still running; anchor still lit). These are distinct cue modes. The anti-pattern requires same cue mode repeating — that condition does not hold here. Carve-out validly invoked. PASS.
+
+Monument-trigger: architecture-continuous-omission. The developmental logic: first-recognition → report closes → feed still lit. The architecture does not stop seeing Wren because the report stopped naming her. That is the structural form of the precursor to Khepri-architecture — the feed that runs past what the human-operational layer acknowledges. Plausibly active at chapter-close. PASS.
+
+Khepri-shadow / Gold-Morning-residue: neither entry fires these families directly. Correct. `monument-khepri-period` and `monument-gold-morning` would be Earth-Bet-proper-noun-contaminated slug labels; the mechanism-descriptive equivalents would be `monument-mass-casualty-foreshadow` or `monument-override-architecture-prohibition`. Neither is the right family for c04's developmental position — Taylor is forming the omission architecture, not executing the override. The un-priced-anchor family is the accurate developmental precursor. Timeline pinned correctly.
+
+Canon-assessment: the feed outrunning the acknowledged scope is Worm-register-correct for this arc position. No timeline flag; no voice flag; no lore-leak. Tracks.
+
+SIGNAL: margit-referral for `monument-un-priced-anchor-by-omission-continuous` queued; structurally clear; non-blocking under URI-FACETS-CYCLE-1. Carries forward unchanged.
 
 ---
 
-## Verdict
+## File-level checks
 
-`accept`
+Hard-fence scan — description fields: both clean. No Earth-Bet proper nouns; no monument named in description fields.
 
-Both entries pass all three axes under the V3 rubric. The cycle-1 primary finding on mem:2 (spineless fire) is resolved: narrator:9 @26 is present on disk across all four verification surfaces, is internally consistent with the memory-flag description, and correctly represents the spine the rubric requires. No new hard callouts introduced by the cycle-2 fixer pass or the cycle-2 audit confirm report that affect this facet.
+Hard-fence scan — target-reference slugs: both mechanism-descriptive form. No Earth-Bet proper nouns in slug components. PASS.
 
-Two SIGNAL items persist (flag-013 on both slugs — `cond-*` form rather than `monument-*`; margit referral required to author or confirm monument-class anchors). These are pre-existing, acknowledged by all three cycle-1 reviewers, and explicitly carried forward in the auditor's flag-C2C-003. They do not change this verdict.
+Doubled-register gate: both entries are Earth-Bet displacement family. Zero Westerosi-monument clamp. Single-register file. The preamble-block carve-out is now in correct format and location; the carve-out is validly invoked per the structural failure grounds at both Westerosi-monument candidates. File-level gate: DEFENDED SINGLE-REGISTER. The preamble block resolves the format gap that was the sole HARD finding.
 
-The file is canonically consistent. The prohibition-maintenance displacement at @3 is Worm-register-correct. The witch-label-formation clamp at @26 is now spine-anchored and Westerosi-register-correct. The doubled register holds.
+Sparsity: 2/39 = 5.1%. In-band (5-12%). PASS.
+
+Per-scene cap: scene-A = 0 fires; scene-B = 1 fire (mem:2 @22); scene-C = 1 fire (mem:4 @38). PASS.
+
+Pressure-signal inversion: mem:2 @22 in scene-B non-peak bone; mem:4 @38 in scene-C trailing zone post-peak (@36). Zero peak-bone fires. PASS.
+
+Monument-family diversity: two fires, one monument family (un-priced-anchor-by-omission and its continuous-operation variant — same family). For a 39-bone chapter, one family is thin against the >50-bone threshold for the three-family expectation. The preamble-block's `season-tracker-watch` notes this honestly and cites that other Earth-Bet monument families (Endbringer-arrival, locker-adjacent, dying-tutor, PRT-administrative-violence) are not plausibly active given c04's specific beat-structure (acceptance-and-routing chapter). I reviewed the proto-lines: the chapter does not exhibit the cue patterns those families require. One-family result is honest monument-trigger application, not selection bias. Advisory note, not a finding.
+
+---
+
+## Soft carry-forward
+
+Pile-up rendering risk at @22 (7 co-fires: mem:2, narrator:6, state:4, state:5, vibes:9, vibes:10, vibes:11, vibes:12). Not a memory-facet fault. Stitcher-profile concern: the enactment of restraint at the rendering layer risks being buried under seven competing signals. Convergence with auditor flag-009. Advisory; carry to stitcher-profile operator-bias mode configuration. Unchanged from cycle-1.
+
+---
+
+## Running tally
+
+Strong flags: 0
+Soft flags: 1 (pile-up @22 — carry-forward from cycle-1; not new)
+Clean reads: 2 (both entries pass monument-trigger, displacement-discipline, licensing-discipline; NI spines confirmed; hard-fence clean; developmental placement canon-accurate; AP11 carve-out validly invoked for mem:4)
+Carve-out status: body-level preamble present, all five required components verified, machine-parsable format, primary-load correctly placed on AP5+AP7 structural failures
+
+---
+
+## VERDICT
+
+accept
+
+Sole cycle-1 REVISE ground resolved. The preamble block is present in the file body, contains all five required components per my cycle-1 prescription, is in machine-parsable field format, and correctly loads the carve-out's structural weight on content-structural failures (AP5+AP7) with audience-meaningfulness as secondary support. Neither entry required revision; neither entry changed. File passes.
