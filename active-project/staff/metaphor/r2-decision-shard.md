@@ -3,7 +3,7 @@ facet: metaphor
 episode: b01-c01
 layer: R2.1
 date: 2026-05-25
-cite_index_hash: 0241e0529031804fa83d25c0fb7a5e0db2491571d2d83d9d9436c734627eca40
+cite_index_hash: 4bba08648f5a84f67a89d658da6792edfadb2ee3d6ae96c50ac555e569764c15
 f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
 outcome: ZERO-FIRES-CONFIRMED
 adds: 0
@@ -82,7 +82,7 @@ facet: metaphor
 episode: b01-c04
 layer: R2.4
 date: 2026-05-27
-cite_index_hash: MANUAL-HASH-UNAVAILABLE (no shell execution; cite-index confirmed read 2026-05-27 — 71 entries, 27/39 protolines decorated, 69.2% density)
+cite_index_hash: 4bba08648f5a84f67a89d658da6792edfadb2ee3d6ae96c50ac555e569764c15
 f-r2-counts: {adds-evaluated: 3, adds-accepted: 0}
 outcome: ZERO-FIRES-CONFIRMED
 adds: 0

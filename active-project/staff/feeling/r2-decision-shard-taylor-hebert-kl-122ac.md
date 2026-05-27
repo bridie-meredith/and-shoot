@@ -6,7 +6,7 @@ episode: b01-c04
 author: impersonator-taylor-hebert-kl-122ac
 generated: 2026-05-27
 cite_index_path: active-project/theater/facets/_cite-index.md
-cite_index_hash: sha256-DEFERRED-TO-DISPATCH-WRAPPER (subagent has no bash; cite-index content read in full at judge-time; 71-entry totals match; feel:1 @7 + feel:2 @39 entries confirmed against cite-index "### feel (2 entries)" section)
+cite_index_hash: 4bba08648f5a84f67a89d658da6792edfadb2ee3d6ae96c50ac555e569764c15
 supersedes: prior-session-r2-shard-2026-05-25 (b01-c02 / 47-bone graph; superseded by this b01-c04 / 39-bone judge)
 ---
 

@@ -5,7 +5,7 @@ episode: b01-c04
 phase: r2 (judge mode)
 author: dialogue-writer
 generated: 2026-05-27
-cite_index_hash: sha256:4bba08648f5a84f67a89d658da6792edfadb2ee3d6ae96c50ac555e569764c15
+cite_index_hash: 4bba08648f5a84f67a89d658da6792edfadb2ee3d6ae96c50ac555e569764c15
 cite_index_path: active-project/theater/facets/_cite-index.md
 
 dialogue_file_under_judgment: active-project/theater/dialogue/taylor-hebert-kl-122ac.md

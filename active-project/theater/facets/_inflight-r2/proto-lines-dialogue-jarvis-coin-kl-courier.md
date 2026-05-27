@@ -1,40 +1,40 @@
-# R2 proto-lines (dialogue) — jarvis-coin-kl-courier — b01-c04
-# phase: R2 dialogue judge
-# generated: 2026-05-27
-# cite_index_hash: 4bba08648f5a84f67a89d658da6792edfadb2ee3d6ae96c50ac555e569764c15
-# source: active-project/theater/proto-lines/b01-c04.md (canonical merged)
-# scope: speaking-beat anchors for jarvis-coin-kl-courier only (entries 8 + 9 at @9)
-# verdict-summary: KEEP/KEEP (no mutations); citations already present in canonical proto-lines
 
-# Annotated speaking-beat anchor (citations already present in canonical proto-lines;
-# this file mirrors the canonical entry for the R2 judge audit-trail):
-
+1 the tallow-damp marks the cooper's-yard shed-wall [loc-state:1] [sensory:1] [state:1]
+2 the cooper's-yard workers hold the smallfolk-hours murmur
+3 taylor-hebert-kl-122ac enters the cooper's yard
+4 taylor-hebert-kl-122ac takes the shed-wall [loc-state:2] [mem:1]
+5 jarvis-coin-kl-courier enters the lane-mouth [state:1]
+6 the insect-feed returns jarvis-coin-kl-courier [narrator:1]
+7 taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [feel:1] [taylor-hebert-kl-122ac:1] [vibes:1]
+8 taylor-hebert-kl-122ac holds the feet [narrator:2]
 9 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:8] [jarvis-coin-kl-courier:9] [narrator:3] [state:1] [state:2] [vibes:2] [vibes:3]
-   # R2-verdict: KEEP (entry 8) + KEEP (entry 9)
-   # facet-license resolution (post-R2, locked graph):
-   #   entry 8 @9 → state-updates-jarvis:2 @9 (active_deliveries: 0 -> 1; speech-act flips operational state)
-   #              + vibes:3 @9 (jarvis / structural-routing-vector-confirmed-not-latent;
-   #                            arrangement-as-functional-architecture-not-proposal)
-   #              + narrator:3 @9 (room-temp NI — "lever is no longer a question of whether;
-   #                                it has just become a question of how much")
-   #   entry 9 @9 → state-updates-jarvis:2 @9 (active_deliveries: 0 -> 1; recurring appointment installs the delivery)
-   #              + vibes:3 @9 (appointment-schedule-now-installed-in-his-operational-week)
-   #              + narrator:3 @9 (supports — the lever's how-much-mode is anchored by the recurring-appointment)
-   #
-   # multi-utterance-on-single-bone DEDUP: entry 8 (receipt + operator-control naming) vs
-   #   entry 9 (recurring-appointment installation) — distinct content per consolidated-bone
-   #   notes "[mechanism: Jarvis receives the acceptance as a routing confirmation] [event:
-   #   Jarvis confirms first routing protocol — next contact, same place, same bell, three
-   #   days hence]"; bones-file consolidation (DEC-0030) carries both events on one bone.
-   #
-   # Latinate inline-fix verification: entry 8 "takes" (formerly "acceptable") — verified;
-   # other operational-Latinate tokens (volume / interval / substance) register-consistent
-   # with c03 @18 calibration anchor ("Frequency you set. Detail you set.") which establishes
-   # the operational-vocabulary band the courier-tier register licenses for naming routing
-   # axes; no upward drift toward noble register.
-
-# No adds proposed at this character for c04. Add-cap: 3; refusals: 3 candidate anchors
-# reviewed (@6 insect-feed-returns — Taylor's interior of his gait, no speech beat; @10
-# insect-feed holds hook-range — environment/perception, no speech beat; @11 Jarvis exits
-# the lane-mouth — per §Voice "closes each exchange as soon as the required information
-# has been transmitted", no speech licensed at exit). All refused.
+10 the insect-feed holds the hook-range
+11 jarvis-coin-kl-courier exits the lane-mouth [state:3] [vibes:4]
+12 taylor-hebert-kl-122ac exits the cooper's yard
+13 the waste-middens junction draws the discard-air [loc-state:3] [sensory:2] [state:2]
+14 taylor-hebert-kl-122ac enters Pig Tallow Lane
+15 taylor-hebert-kl-122ac extends the insect-range [state:3] [vibes:5]
+16 taylor-hebert-kl-122ac maps the junction-agitation
+17 the penny-a-barrel carter parks the middens cart [vibes:8]
+18 the insect-feed returns oswyn-mudway-flea-bottom-elder [narrator:4] [state:4] [vibes:6] [vibes:7]
+19 taylor-hebert-kl-122ac maps the oswyn-mudway-flea-bottom-elder interval [narrator:5]
+20 Pig Tallow Lane returns ward-tier bodies only
+21 the stitch-house frames mark the second ward
+22 the insect-feed returns wren-stitch-maker-flea-bottom-ward [mem:2] [narrator:6] [state:4] [state:5] [vibes:9] [vibes:10] [vibes:11] [vibes:12]
+23 taylor-hebert-kl-122ac holds the feet
+24 taylor-hebert-kl-122ac maps the second-ward junction
+25 the early-morning grey empties Roper's Court [loc-state:4] [sensory:3] [state:5]
+26 taylor-hebert-kl-122ac enters Roper's Court [state:6]
+27 taylor-hebert-kl-122ac extends the insect-range [state:6] [state:7] [vibes:13]
+28 taylor-hebert-kl-122ac runs the four-ward feed [vibes:14]
+29 jarvis-coin-kl-courier enters the cooper's yard [loc-state:5] [state:4] [state:5] [state:8] [state:9]
+30 jarvis-coin-kl-courier displays the note
+31 taylor-hebert-kl-122ac delivers the report-sheet [narrator:7] [state:7] [state:10]
+32 jarvis-coin-kl-courier pockets the report-sheet [state:6] [state:11]
+33 the report-sheet holds at ward-pattern observation [mem:3]
+34 the report-sheet holds at Flea Bottom-tier source-content
+35 the courier-arrangement holds the conduit-rank [vibes:15] [vibes:16]
+36 jarvis-coin-kl-courier exits the cooper's yard [narrator:8] [state:7] [state:8] [state:12]
+37 taylor-hebert-kl-122ac runs the ward-feed [state:13]
+38 the insect-feed returns wren-stitch-maker-flea-bottom-ward [narrator:9]
+39 taylor-hebert-kl-122ac exits the stitch-house lane [feel:2] [loc-state:6] [state:14]

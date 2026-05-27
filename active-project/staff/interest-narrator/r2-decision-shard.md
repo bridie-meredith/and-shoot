@@ -3,7 +3,7 @@ facet: interest-narrator
 episode: b01-c04
 layer: R2.1
 character: taylor-hebert-kl-122ac
-cite_index_hash: uncomputed-no-shell-access-in-impersonator-harness  # dispatcher to compute: shasum -a 256 active-project/theater/facets/_cite-index.md | cut -d' ' -f1
+cite_index_hash: 4bba08648f5a84f67a89d658da6792edfadb2ee3d6ae96c50ac555e569764c15
 record-fingerprint: totals=71-entries/27-of-39-decorated/cite-index@2026-05-27
 date: 2026-05-27
 f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 1}
