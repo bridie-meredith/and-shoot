@@ -972,3 +972,20 @@ exit: CLEAN
 **Re-audit decision:** Skipped a third Phase 5 audit re-fire. The fix is mechanical (single-paragraph rewrite in one file; verifiable by direct read; no semantic ambiguity). Aligns with the same skip-and-log discipline applied at Phase 2 third re-fire. Phase 6 substance bone-gate and Phase 7 emit pre-verify will catch anything that escapes.
 
 **Notable downstream watch-item:** The b01c01 fever-child (the "Mudway child" Taylor cleared the crowd for at Butcher's Lane) lacks an actor slug. Currently appears as unnamed reference. If chapters c05+ require the fever-child to recur as a named figure (e.g. recognition scene; rescue-recall), spawn a new actor (suggested: `oswyn-grandchild-fever-survivor-122ac` or similar) at /and-cast revise --add.
+
+## 2026-05-27 — /and-review bones b01c04 inline fix
+
+**Source report:** active-project/staff/reviews/bones-b01c04-2026-05-27.md (post-hoc mandatory gate)
+**At-review verdict:** FAIL — 1 HARD (auditor labeled PASS-WITH-NOTES; relabeled per dialogue-coverage spec)
+
+**Fix applied (1 word-swap in dialogue file):**
+
+- **fault-001 FAULT-DIALOGUE-CARD-VIOLATION** — Jarvis @9 entry 8 used "acceptable" (multi-syllable Latinate) — explicitly out-of-register per `cards/dialects/westeros-smallfolk.card.md` (forbidden list: *Considerable, sufficient, evaluate, arrangement, regardless* — and Latinate generally).
+- **Fix:** "Those terms are acceptable to the man I serve" → "The man I serve takes those terms".
+- **File:** active-project/theater/dialogue/jarvis-coin-kl-courier.md
+
+**Post-fix verdict:** PASS-WITH-NOTES — 0 HARD, 2 SIGNAL (stakes-tie TASTE-FLAGs), 3 FLAG (advisory).
+
+**Re-fire decision:** Skipped re-fire of bones-review. Mechanical word swap; the bones file + scene-map + all other dialogue content unchanged. Verifiable by direct read.
+
+**Recurrence note (process-critic candidate):** The dialogue-writer for Jarvis flagged "acceptable" as a card-pressure choice and retained it for fidelity to the chunk seed line ("those terms are acceptable to the person he represents"). The chunk-text seed propagated the Latinate term into dialogue authoring. /and-substance chapter chunk authors should be aware that chunk text seeded with out-of-register vocabulary will contaminate dialogue authoring at /and-write Phase 1.5 unless the dialogue-writer over-rules the seed. This is a different surface than the Phase 6 dialogue-card mechanical gate; the gate operates at dialogue-vocabulary-leaf level and missed "acceptable" because the dialogue-writer self-deemed seed-fidelity as a license. Pattern candidate for admin process-critic.

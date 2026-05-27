@@ -3017,11 +3017,16 @@ books:
         bones_count: 39
         substance_bone_gate_verdict: PASS
         bones_review:
-          reviewed_at: null   # not yet — /and-review bones b01c04 is the mandatory next step
-          report_path: null
-          verdict: null
-          bones_file_mtime_at_review: null
+          reviewed_at: 2026-05-27T00:00:00Z
+          report_path: active-project/staff/reviews/bones-b01c04-2026-05-27.md
+          verdict: PASS-WITH-NOTES   # post-inline-fix; at-review the auditor returned 1 HARD; fault-001 resolved via Jarvis @9 entry 8 word-swap (acceptable → takes); see fixer-log
+          bones_file_mtime_at_review: 1779903472   # 2026-05-27 post-fix mtime
           stale_since: null
+          # Auditor returned 1 HARD (FAULT-DIALOGUE-CARD-VIOLATION — "acceptable" is forbidden Latinate per westeros-smallfolk card) + 2 SIGNAL (stakes-axis tie all 3 scenes — TASTE-FLAG per magnitude-floor consequence; s03 CHATTER-OVER-CAP carry-forward) + 3 FLAG (advisory).
+          # Inline fix: Jarvis @9 entry 8 "Those terms are acceptable to the man I serve" → "The man I serve takes those terms" (Anglo-Saxon "takes"; no copula; subject-first; smallfolk register).
+          # Part B chunk fidelity: PASS-WITH-NOTES (all chunk tags covered; 1 advisory thin in s02).
+          # Part C cold-read prediction: 6 goal elements all HIGH or MEDIUM; MEDIUMs are facet-layer-dependent (Oswyn ethical register, Wren-anchor closing thesis-trio synthesis); no LOW.
+          # Recurrence note (process-critic candidate): chunk-text seed line ("those terms are acceptable to the person he represents") propagated the Latinate term into dialogue authoring at /and-write Phase 1.5; the dialogue-writer flagged it as card-pressure and retained for seed-fidelity. Pattern candidate.
         substance_delta_measured:
           axes_moved:
             capability: +2.0      # s02n03 (flat 15, +1.0) + s03n03 (flat 27, +1.0); EXACT vs target +2.0 (revised at Phase 1 redo from +1.5)
