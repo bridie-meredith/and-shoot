@@ -13,10 +13,10 @@ Register-pitfall warning carried forward: c03 entry 6 second sentence used three
 
 ---
 
-## Anchor — bone b01c04s01n07 / @n07
+## Anchor — bone b01c04s01n08 / @9
 
 **Bone SVO:** "jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac"
-**Substance-delta @n07:** axis_moves social_tether-antag +0.5 (cl-antag-d03); axes_held none. Second tether-antag tranche.
+**Substance-delta @9:** axis_moves social_tether-antag +0.5 (cl-antag-d03); axes_held none. Second tether-antag tranche.
 **Chunk basis:** "those terms are acceptable to the person he represents." The lever solidifies on Jarvis's line, not Taylor's. Flat courier-receipt; no negotiation framing, no warmth, no formality flourish, no Westerosi noble register.
 **Speaker state at the anchor:** Taylor has just delivered the formal yes with named modification (pattern-report only; volume + interval hers). Jarvis is receiving, not negotiating. Distance: public, courier-tier. Rung: courier — not functionary, not knight-administrator. Board-move: convert the spoken yes into a routing arrangement that is now settled, not pending. The acceptance is heard, named acceptable to the patron, and parked.
 
@@ -56,16 +56,16 @@ Register-pitfall warning carried forward: c03 entry 6 second sentence used three
 - Per-anchor cap ≤3 utterances. (A) is one utterance (4 sentences inside one entry). PASS.
 
 **card-signatures:** westeros-smallfolk §Cadence (short sentences stacked not chained; three-fact + one-fact serial); westeros-smallfolk §Syntax (coordination over subordination; subject-implied openings on sentences 2-3); westeros-smallfolk §Vocabulary (no bare proper-noun for noble — "the man I serve" circumlocution); jarvis-coin-kl-courier §Register (transactional flat-affect; no moral investment); calibration-anchor match to c03 @4 (serial declaratives) and c03 @18 (operator-control recursive-confirmation shape)
-**facet-licenses:** [DEFERRED-TO-R2 — R1 blind; no c04 facets exist at this writer's dispatch. R2 dialogue judge to cite locked-graph anchors for state @n07 (deployment/social-tether tranche), feeling-taylor or feeling-jarvis @n07, NI @n07 if Taylor-POV.]
+**facet-licenses:** [state:1 @9] [vibes:2 @9] [narrator:3 @9 — POV is taylor-hebert-kl-122ac; resolved 2026-05-27 post-R2]
 
 **Word count:** ~32 words. Within 25-50 cap.
 
 ---
 
-## Anchor — bone b01c04s01n10 / @n10
+## Anchor — bone b01c04s01n08 / @9
 
 **Bone SVO:** "jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac"
-**Substance-delta @n10:** axis_moves none (chatter); cost_ledger_anchor cl02 (pays position-prot-rise gain posted at n09).
+**Substance-delta @9:** axis_moves none (chatter); cost_ledger_anchor cl02 (pays position-prot-rise gain posted at n09).
 **Chunk basis:** "[event: Jarvis confirms first routing protocol — next contact at the same place, same bell, three days hence]. [image: the yard as a fixed coordinate, the third-bell-return as a recurring calendar item installed in Taylor's week without ceremony]."
 **Speaker state at the anchor:** Taylor has just named the operational terms (n09). Jarvis confirms next-contact logistics. No question about why; no affect; installs a recurring appointment. Same courier-tier register. Calibration anchor: c03 @31 ("Same place. First bell. Day after.") — three terse fragments naming place + time + interval.
 
@@ -102,7 +102,7 @@ Register-pitfall warning carried forward: c03 entry 6 second sentence used three
 - Per-anchor cap ≤3 utterances. (A) is one utterance. PASS.
 
 **card-signatures:** westeros-smallfolk §Cadence (three sentences three facts; pause-at-period-terminal); westeros-smallfolk §Syntax (subject-implied openings; subject + copula dropped on all three fragments); jarvis-coin-kl-courier §Register (transactional flat-affect; no negotiation-flex; installation-not-invitation); calibration-anchor match to c03 @31 (article-dropped period-terminal three-fragment return-arrangement shape)
-**facet-licenses:** [DEFERRED-TO-R2 — R1 blind; no c04 facets exist at this writer's dispatch. R2 dialogue judge to cite locked-graph anchors for state @n10 (routing-protocol install), sensory @n10 (yard-as-fixed-coordinate), memory @n10 if a calendar-anchor monument fires.]
+**facet-licenses:** [state:1 @9] [vibes:3 @9 — Jarvis arrangement-as-functional-architecture; resolved 2026-05-27 post-R2; sensory and memory N/A on this bone]
 
 **Word count:** ~6 words. Within 10-25 cap (slightly under but matching c03 @31's 6-word anchor exactly; calibration-faithful).
 
@@ -130,6 +130,6 @@ Both entries match calibration anchor cadences without drift. No upward drift to
 ---
 
 ## Entries shipped to dialogue file: 2
-## Anchors: @n07, @n10 (one entry per anchor)
+## Anchors: @9, @9 (one entry per anchor)
 ## Per-anchor count: 1 each (cap = 3; well under)
-## Citation completeness: card-signatures resolved per entry; facet-licenses DEFERRED-TO-R2 (R1 blind dispatch from /and-write Phase 1.5; c04 facets do not yet exist; R2 dialogue judge at /and-facets Phase 2 resolves against locked cite-index).
+## Citation completeness: card-signatures resolved per entry; facet-licenses RESOLVED post-R2 + Phase 5b cycle-1 2026-05-27: entry 8 = [state:1 @9] + [vibes:2 @9]; entry 9 = [state:1 @9] + [vibes:3 @9]. (R1 blind dispatch from /and-write Phase 1.5; c04 facets do not yet exist; R2 dialogue judge at /and-facets Phase 2 resolves against locked cite-index).

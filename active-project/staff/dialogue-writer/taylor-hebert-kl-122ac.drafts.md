@@ -12,10 +12,10 @@ Per-batch register-shift from c03: c04 anchors require Taylor to name operationa
 
 ---
 
-## Anchor — bone @6 (b01c04s01n06) — Taylor delivers the yes with modified terms
+## Anchor — bone @7 (b01c04s01n06) — Taylor delivers the yes with modified terms
 
 **Bone SVO:** "taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier"
-**Substance-delta @6:** axis_move social_tether-antag +0.5 (cl-antag-d03, first tether-antag tranche). Force-note: Taylor's formal delivery of the yes. The modification to terms (volume/interval/pattern-report) is the discipline's last available parameter to hold.
+**Substance-delta @7:** axis_move social_tether-antag +0.5 (cl-antag-d03, first tether-antag tranche). Force-note: Taylor's formal delivery of the yes. The modification to terms (volume/interval/pattern-report) is the discipline's last available parameter to hold.
 **Speaker state at the anchor:** cooper's yard at first bell; back to the shed wall; the decision was made in the night and is not being re-examined. Mask register: this is the adult KL-122ac instruction-register — "voice that does not ask whether they will comply" (persona card §Voice). Distance: private (two parties, no audience). Rung: instruction-register / terms-assertion (not deference, not negotiation, not request). Board-move: deliver the yes with named modification so the modification is locked into the agreed shape before Jarvis can route it past her.
 
 **Per-anchor entries:** 1 (within ≤3 cap).
@@ -77,7 +77,7 @@ Per-batch register-shift from c03: c04 anchors require Taylor to name operationa
 - taylor-hebert-kl-122ac §Voice ("voice that does not ask whether they will comply"; no thematic narration; cold-utilitarian)
 - taylor-hebert-kl-122ac §Signature-Moves (the second answer at cold-utilitarian register)
 
-**facet-licenses:** [DEFERRED-TO-R2] — Phase 1.5 is upstream of /and-facets; no R1 facets exist for this chapter yet. R2 dialogue-judge (per dialogue rubric §R1 vs R2 differences) will resolve facet-license citations against the locked graph: candidate axes to verify are (a) feeling/somatic-tell at @6 for whatever bodily-stillness Taylor holds while speaking these terms (back-of-shed-wall posture from dispatcher state-note), (b) state-updates at @6 capturing the social_tether-antag +0.5 axis-move, (c) sensory at @6 for the cooper's-yard ambient (bell-decay, first-bell light).
+**facet-licenses (resolved 2026-05-27 post-R2 + Phase 5b cycle-1 audience-revise):** [feel:1 @7] (Taylor's hand-closes-on-shed-wall somatic-tell at the same anchor — body bears what the mouth commits to) + [vibes:1 @7] (atonement-as-repetition vibe arrival; licensed-exception-believed-as-modification token). NI:10 @7 fires on the same bone but is NOT cited as license: NI is the POV-narrator's interest layer, downstream-readable from the dialogue itself; the speaker's own dialogue cites somatic + vibe co-fires, not the narrator's interest in the speaker. sensory does NOT fire at @7 (sensory:1 anchors @1).
 
 ---
 
@@ -141,7 +141,7 @@ Per-batch register-shift from c03: c04 anchors require Taylor to name operationa
 - taylor-hebert-kl-122ac §Voice ("voice that does not ask whether they will comply"; no thematic narration)
 - taylor-hebert-kl-122ac §Action-Menu (predictive pattern-reading named as "the reading" — persona-correct framing of her own capability)
 
-**facet-licenses:** [DEFERRED-TO-R2] — Phase 1.5 is upstream of /and-facets. R2 dialogue-judge will resolve against locked graph: candidate axes to verify are (a) state-updates at @9 capturing the position-prot-rise +0.5 axis-move (the position-claim landing as a state event); (b) feeling/somatic at @9 for whatever bodily marker accompanies the position-statement (likely continuation of body-stillness from n08); (c) NI at @9 (POV is taylor-hebert-kl-122ac per c03 episode-frontmatter — narrator-interest fires for the POV speaker — likely registering Jarvis's response-surface as she speaks).
+**facet-licenses:** N/A — ENTRY DROPPED at Phase 4 dialogue re-anchor 2026-05-27 (the @9 work-naming + first-interval utterance was authored against the original 38-bone Phase 1 draft; the redo collapsed dialogue-anchor bones from 4 to 2 — n06/n08 — and the chunk-contract never mandated a Taylor work-naming bone separate from her acceptance utterance at n06/@7). The three-days interval is now delivered by Jarvis at @9 instead. This draft entry is preserved in sidecar for historical traceability but is not in the canonical dialogue file. No facet-license resolution applicable (no bone to anchor to).
 
 ---
 
@@ -190,4 +190,4 @@ The intra-project cadence-arc across c03+c04 is therefore: stillness (c03) → t
 
 ## Entries shipped to dialogue file: 2
 ## Anchors: @6, @9 (one entry per anchor; ≤3 cap respected)
-## Citation completeness: card-signatures resolved per entry; facet-licenses [DEFERRED-TO-R2] per Phase 1.5 timing (upstream of /and-facets). R2 dialogue-judge to resolve against locked graph.
+## Citation completeness: card-signatures resolved per entry; facet-licenses RESOLVED post-R2 2026-05-27: [feel:1 @7] + [vibes:1 @7] for entry 4; entry @9 N/A (dropped at Phase 4 re-anchor) (upstream of /and-facets). R2 dialogue-judge to resolve against locked graph.
