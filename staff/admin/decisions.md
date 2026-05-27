@@ -777,3 +777,68 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0029 | 2026-05-27 | SLOW (process-critic)
+
+question: Post-DEC-0028 tail obligation — process-critic dispatch on fault-001 HARD at /and-substance b01c04 Phase 5. Should admin propose a process change to `cards/conditions/cond-taylor-pov-behavior.card.md` to disambiguate which production layer "first-person throughout" applies to?
+context: |
+  Auditor fired fault-001 HARD (POV violation: scene chunks written in third-limited). Finding is a
+  confirmed false positive per DEC-0028 — c01/c02/c03 all use third-limited chunks; rendered drafts
+  are first-person throughout; three prior Phase 5 auditors did not fire on this. The chain's operating
+  convention is clear: "first-person" governs rendered prose (the /and-stitch output); planning chunks
+  and bones use third-person-named-subject SVO by pipeline design. The card's auditor-use clause
+  ("Flag any chapter not marked interlude that is not in Taylor's first-person") does not qualify which
+  layer, making a literal reading of the text produce a false-positive HARD on every correctly-authored
+  substance chapter pass. trigger.source_report: active-project/staff/reviews/auditor-b01c04-substance-2026-05-27.md.
+  gate_path: cards/conditions/cond-taylor-pov-behavior.card.md. Follows: DEC-0028.
+options: |
+  (a) PROCESS-CHANGE-PROPOSED — modify the card's auditor-use clause and POV Scope section to
+      qualify the layer the rule applies to; cost S; guaranteed future-recurrence-prevention.
+  (b) OK — first occurrence; but this is a HARD false positive that will structurally recur on
+      every future chapter's Phase 5 pass, not a probabilistic recurrence pattern.
+  (c) ESCALATE — ask principal to decide whether the planning layer should also be first-person.
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0008
+basis: |
+  gate-false-positive-specification-gap (the card's auditor-use clause does not name which
+  production layer the first-person requirement governs; the false-positive HARD on correctly-
+  authored chunks is a criterion-text gap, not a calibration or taste issue) + recurrence-
+  is-guaranteed (every future /and-substance chapter Phase 5 will fire the same HARD on
+  identically-authored chunks absent card clarification — not probabilistic, structural) +
+  methodology:3a (S-cost card edit is reversible; standing false-positive block on future
+  chapters is not) + methodology:3b (one S-cost edit prevents per-chapter override overhead
+  indefinitely) + DEC-0028 explicit authorization ("Flagging for process-critic card-text
+  clarification closes the audit gap for future chapters")
+rationale: |
+  The anti-pattern rule ("do not propose on first occurrence of a non-catastrophic SIGNAL")
+  targets taste-flag promotion to mechanical checks. It does not cover false-positive HARDs
+  from specification gaps. The distinction matters: a taste-flag may or may not recur; this
+  false-positive HARD will recur with certainty on every future /and-substance chapter Phase 5
+  invocation, because the card text is unchanged and the chain's convention (third-limited chunks
+  → first-person rendered prose) is unchanged. Three prior Phase 5 passes did not fire on this —
+  but c04 being the first time the auditor applied the literal clause to chunks means c05/c06/c07
+  will face the same fire without card clarification. The recurrence_count is 1 by the count of
+  times the HARD was fired, but is effectively N (number of remaining chapters) by the structural
+  analysis.
+
+  The proposed change is minimal and precise: add a "Layer scope" paragraph to §POV Scope naming
+  which layer the rule governs, and qualify the auditor-use clause to target the rendered draft
+  specifically. Neither change relaxes the POV rule — first-person throughout the rendered draft
+  remains the hard contract. The change adds specificity that was absent.
+
+  Option (c) ESCALATE is not warranted. DEC-0028 has already resolved the substantive question
+  (chain convention is correct; card needs to reflect it). The proposed diff follows directly from
+  DEC-0028's reasoning and is within admin's authority to propose.
+trade-off: |
+  Proposing at recurrence_count=1. The only cost is the PROP-0008 log entry itself plus the
+  principal's triage time. Against: per-chapter false-positive HARD + override + process-critic
+  dispatch overhead on every remaining chapter of the project if the card is not fixed. The
+  asymmetry strongly favors proposing.
+
+follows: DEC-0028
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

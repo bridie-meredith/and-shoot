@@ -1116,6 +1116,99 @@ supersedes: null
 
 ---
 
+## PROP-0008
+
+```yaml
+id: PROP-0008
+created_at: 2026-05-27T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/auditor-b01c04-substance-2026-05-27.md
+  source_verdict: "FAIL — fault-001 HARD (POV violation, literal-reading of cond-taylor-pov-behavior auditor-use clause)"
+target:
+  type: agent-card
+  path: cards/conditions/cond-taylor-pov-behavior.card.md
+  section: "POV Scope — First Person Only + Interaction Notes / For auditor use"
+change_type: modify
+rationale: |
+  The auditor at /and-substance chapter b01c04 Phase 5 fired fault-001 HARD on POV
+  violation: all three c04 scene chunks are third-limited (named-subject SVO: "Taylor
+  walks," "She does not review") in direct violation of the card's text: "Every chapter
+  defaults to first-person Taylor" and "Flag any chapter not marked interlude that is
+  not in Taylor's first-person."
+
+  Investigation confirmed the finding is a false positive. c01/c02/c03 scene chunks in
+  showrunner memory.md are ALL third-limited; rendered prose at draft/b01-c01.md through
+  b01-c03.md is first-person throughout. The first-person transformation is the
+  responsibility of /and-write (which uses third-person-named-subject SVO for mechanical
+  clarity at the bone layer) and /and-stitch (which renders to first-person prose). The
+  chain's consistent operating convention for three prior chapters, confirmed by three
+  prior Phase 5 auditor passes that did not flag this, is that "first-person" governs
+  rendered prose, not planning-layer chunks or bones.
+
+  The card's "For auditor use" clause does not qualify which production layer the
+  first-person requirement applies to. A literal reading of "Flag any chapter not marked
+  interlude that is not in Taylor's first-person" catches scene chunks and bones files
+  as well as rendered prose — which is not the chain's intent and not the interpretation
+  that would produce correct results. The card also does not mention that planning chunks
+  and bones use third-person-named-subject SVO by pipeline convention.
+
+  This is not a first-occurrence taste flag requiring recurrence before proposal. It is
+  a card-text specification gap that produces a false-positive HARD on every correctly-
+  authored scene-chunk pass in the project. Future chapters c05+ will trip this same
+  HARD on identically-authored chunks unless the card is clarified. The recurrence is
+  not probabilistic — it is certain on every future invocation of /and-substance chapter
+  Phase 5. The fix is S-cost (two qualifying sentences added to one card). The cost of
+  not fixing is a standing false-positive HARD block on all future substance-chapter
+  passes, requiring an explicit override and admin process-critic dispatch each time.
+evidence_refs:
+  - "active-project/staff/reviews/auditor-b01c04-substance-2026-05-27.md — fault-001: auditor cites cond-taylor-pov-behavior 'Every chapter defaults to first-person Taylor' against third-limited chunk prose (lines 22-50)"
+  - "cards/conditions/cond-taylor-pov-behavior.card.md — §POV Scope — First Person Only: 'Every chapter defaults to first-person Taylor'; §Interaction Notes: 'Flag any chapter not marked interlude that is not in Taylor's first-person' — neither clause names which production layer"
+  - "active-project/staff/showrunner/memory.md — c01/c02/c03 scene chunks all third-limited in memory (confirmed by DEC-0028 context); rendered draft/b01-c01.md through b01-c03.md all first-person throughout"
+  - "staff/admin/decisions.md — DEC-0028: 'OVERRIDE fault-001 (convention established; prior audits accepted; card text ambiguous) ... the card's language does not exclude the planning layer. This is a card-text failure, not a chain failure. Flagging for process-critic card-text clarification closes the audit gap for future chapters.'"
+recurrence_count: 1
+proposed_diff: |
+  In cards/conditions/cond-taylor-pov-behavior.card.md, §POV Scope — First Person Only,
+  after the paragraph "Every chapter defaults to first-person Taylor.":
+
+  Add a new paragraph:
+
+    **Layer scope.** "First-person throughout" applies to **rendered prose** — the
+    chapter draft delivered by `/and-stitch`. Planning chunks (scene chunks authored by
+    `/and-substance chapter`) are conventionally written in third-limited named-subject
+    form ("Taylor walks," "She does not review") for screen-writer clarity; this is
+    pipeline convention, not a POV violation. Bones (authored by `/and-write`) use
+    third-person-named-subject SVO form by mechanical design. The first-person
+    transformation is the responsibility of `/and-write` Phase 1 (which works in named-
+    subject SVO) and `/and-stitch` render phases (which produce the final first-person
+    prose). Chunk-layer and bones-layer third-limited form is NOT a POV violation.
+
+  In cards/conditions/cond-taylor-pov-behavior.card.md, §Interaction Notes,
+  in the "For auditor use" paragraph, qualify the first-person flag:
+
+  Replace:
+    "Flag any chapter not marked interlude that is not in Taylor's first-person."
+  With:
+    "Flag any chapter not marked interlude whose **rendered draft** (the `/and-stitch`
+    output at `draft/<book>-<chapter>.md`) is not in Taylor's first-person. Do NOT flag
+    scene chunks or bones files for being in third-person named-subject form — this is
+    pipeline convention at the planning and bone-authoring layers; the first-person
+    transformation happens at `/and-stitch`. The auditor's POV check applies to the
+    rendered draft layer only."
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
 ## PROP-0001
 created_at: 2026-05-26T00:05:43Z
 created_by: admin process-critic
