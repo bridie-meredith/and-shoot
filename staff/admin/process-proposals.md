@@ -1216,6 +1216,277 @@ supersedes: null
 
 ---
 
+## PROP-0009
+
+```yaml
+id: PROP-0009
+created_at: 2026-05-27T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/write-b01c04-bone-gate-redo.md
+  source_verdict: "PASS — 0 HARD, 3 SIGNAL (all ACCEPTED): prior cycle produced 45 HARDs from c03 cascade-budget contamination; Phase 1 redo with corrective brief (c02-reference) cleared to 0 FAULT-FORM"
+target:
+  type: command
+  path: .claude/commands/and-write.md
+  section: "Phase 1 — Scene-decomposition (screen-writer dispatch brief)"
+change_type: modify
+rationale: |
+  At b01c04 Phase 2, the auditor returned 45 HARD findings (33 FAULT-FORM-MODIFIER + 12
+  FAULT-BONE-DELTA-MALFORMED) on 38 bones. Root cause: the screen-writer used c03 bones as a
+  cadence model. c03 ran under cascade-budget with Phase 2 form-auditing skipped, leaving c03
+  in a state where PP-heavy SVOs and 0.5-magnitude pair-splits were never corrected. c03 taught
+  the wrong pattern. DEC-0030 identified c02 (post-revise, fully Phase-2-audited) as the only
+  correct canonical reference in the project.
+
+  The corrective brief for Phase 1 redo explicitly named c02 as the reference and warned
+  against c03. The redo produced 0 FAULT-FORM (confirmed by the re-audit that became the
+  triggering bone-gate report). The fix worked — but it required a user-proxy dispatch (DEC-0030)
+  and a full Phase 1 redo cycle because the Phase 1 dispatch brief had no standing guidance on
+  which prior chapter's bones to use as a cadence reference.
+
+  The structural gap: Phase 1's screen-writer dispatch currently receives prior-chapter bones
+  as context for cadence modeling, with no instruction constraining which chapters are safe to
+  reference. Cascade-budget chapters (those that skipped Phase 2 auditing) are unreliable SVO-form
+  exemplars and will recur — any future cascade run will produce a chapter whose Phase 2 audit
+  was skipped. Without a standing instruction to prefer the last fully-audited chapter over
+  any cascade-budget chapter, the screen-writer will pick whatever is most recent or provided
+  and risk repeating the contamination.
+
+  DEC-0030 explicitly deferred a formal proposal "until outcome TBD" (Phase 1 redo outcome).
+  The outcome is now confirmed: the corrective brief prevented recurrence. The deferred
+  proposal is now ready to author. This is a process modification, not a content failure —
+  a stricter version of the existing Phase 1 brief (with explicit cadence-reference guidance)
+  would have prevented the 45-HARD cycle.
+evidence_refs:
+  - "active-project/staff/auditor/write-b01c04-bone-gate-redo.md — PASS verdict after redo; 0 FAULT-FORM on 39 bones; confirms corrective brief (c02-reference, no-c03) fixed the contamination"
+  - "staff/admin/decisions.md — DEC-0030: root cause identified as c03 cascade-budget contamination; Phase 1 redo with c02-reference authorized; proposal deferred pending outcome"
+  - ".claude/commands/and-write.md — Phase 1 screen-writer dispatch (no cadence-reference guidance currently; forbid-loading block names other chapters' bones files as forbidden from Phase 1 loading, but does not distinguish audited from unaudited references when prior chapters are legitimately provided as context)"
+  - "active-project/staff/showrunner/parking-lot.md — pl-2026-05-27-001 (c03 contamination watch-item; filed at c04 start)"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-write.md, Phase 1 screen-writer dispatch brief section, add a
+  cadence-reference guidance note after the existing forbid-loading block (or as a new
+  sub-bullet in step 5 "Author with full SVO discipline"):
+
+    **Cadence-reference rule.** When providing prior-chapter bones as a cadence / SVO-form
+    model for the screen-writer, the dispatcher MUST prefer the most recently fully-audited
+    chapter — specifically, the last chapter whose Phase 2 constraint audit returned clean
+    (0 FAULT-FORM, 0 FAULT-BONE-DELTA-MALFORMED). Chapters that ran under cascade-budget and
+    had Phase 2 auditing skipped are NOT valid cadence references for SVO-form or
+    delta-magnitude discipline, regardless of their recency. If no prior chapter is fully
+    audited (first-chapter case), fall back to `schemas/bones.schema.md` examples only.
+
+    **Cascade-budget chapter identification.** A chapter whose `chapters[].cascade_budget:
+    true` flag is set (or whose memory notes indicate Phase 2 was skipped) is a
+    cascade-budget chapter. Do not load its bones file as a cadence reference.
+
+    **Practical note for the corrective-brief pattern.** When a Phase 1 redo is triggered by
+    systematic FAULT-FORM (≥10 form faults), the redo brief must name the canonical reference
+    chapter explicitly rather than leaving the screen-writer to infer from recency. The
+    DEC-0030 corrective brief (explicitly: "reference c02 revised bones, NOT c03") is the
+    model for this pattern.
+
+  Additionally, in showrunner memory schema (schemas/showrunner-memory.schema.md) or in the
+  Phase 7 emit block, add a `phase2_clean` boolean field to each chapter's record — set true
+  when Phase 2 returns 0 FAULT-FORM and 0 FAULT-BONE-DELTA-MALFORMED; set false or absent for
+  cascade-budget chapters. This makes the "is this chapter a safe cadence reference?" question
+  answerable mechanically from memory rather than requiring the dispatcher to grep notes text.
+  (The memory field is the lower-cost implementation path; a command-body comment naming
+  the reference chapter is acceptable as a lower-overhead alternative if the memory-schema
+  change is deferred.)
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0010
+
+```yaml
+id: PROP-0010
+created_at: 2026-05-27T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/write-b01c04-bone-gate-redo.md
+  source_verdict: "PASS — underlying cycle: chapter-contract capability +1.5 target with 1.0 magnitude floor forced 0.5+0.5 pair-splits, triggering 11 FAULT-BONE-DELTA-MALFORMED; resolved by bumping chapter target to +2.0 in DEC-0030"
+target:
+  type: command
+  path: .claude/commands/and-substance.md
+  section: "Chapter-level Phase 4/5 — per-scene substance contract validation"
+change_type: add
+rationale: |
+  At b01c04, the chapter contract declared capability target +1.5 split across two scenes
+  (s01 and s03). The bone magnitude floor is 1.0 per `chunk_targets.bone.delta_per_axis`.
+  A +1.5 chapter target split into 2 scenes mathematically requires either a 1.0+0.5 split
+  (with the 0.5 violating the floor) or a 1.0+1.0 split (rounding up to 2.0, deviating from
+  contract). The screen-writer chose 0.5+0.5 per scene — which is both below floor and wrong
+  as a sum. Resolution in DEC-0030: bump the chapter contract to +2.0 (1.0 per scene), which
+  is structurally valid and consistent with the bone floor.
+
+  The root cause is a design-time mismatch: `/and-substance chapter` authors per-axis targets
+  at fractional granularity without checking those targets against the bone magnitude floor.
+  When `target_delta_magnitude / scene_count < delta_per_axis_floor`, the screen-writer is
+  placed in a structurally impossible position: any split satisfying the floor violates the
+  contract, and any split satisfying the contract violates the floor. The substance chapter
+  authoring phase has no gate that catches this before the screen-writer is dispatched at
+  `/and-write`.
+
+  This is a gate absence at the authoring layer: no existing phase in `/and-substance chapter`
+  validates per-scene granularity against the bone floor. A pre-flight check at Phase 4 or
+  Phase 5 of `/and-substance chapter` would catch this before `/and-write` is invoked, allowing
+  the chapter contract author to adjust targets rather than forcing DEC-0030-style mid-redo
+  corrections.
+
+  Recurrence is foreseeable: any chapter with an odd total target split across an even scene
+  count, or any fractional target derived from book-level deltas, can produce the same
+  tension. This is not a tail-case — book-level fractional targets (e.g. capability +2.5 split
+  across 3 chapters) naturally produce per-chapter fractions.
+evidence_refs:
+  - "staff/admin/decisions.md — DEC-0030: 11 FAULT-BONE-DELTA-MALFORMED traced to 0.5-magnitude pair-splits below the 1.0 floor; resolution was bumping chapter contract from +1.5 to +2.0; root cause named as 'chapter-contract author at /and-substance must pre-flight against the magnitude floor'"
+  - "active-project/staff/auditor/write-b01c04-bone-gate-redo.md — PASS verdict after redo; additive cycle confirms the 2.0 target with 1.0-per-scene split is structurally valid"
+  - ".claude/commands/and-write.md — Phase 2: FAULT-BONE-DELTA-MALFORMED classification: magnitude outside chunk_targets.bone.delta_per_axis is a HARD fault"
+  - "schemas/showrunner-memory.schema.md — chunk_targets.bone.delta_per_axis field (the floor the chapter contract must pre-flight against)"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-substance.md, in the chapter-level authoring phase (Phase 4 or
+  Phase 5 — whichever phase persists the per-scene substance contract to memory), add a
+  pre-flight check:
+
+    **Magnitude-floor pre-flight (new check, fires before persisting scene contracts).** For
+    every axis in `axes_in_motion[]` across all scenes, verify:
+
+      (scene's target_delta_magnitude) >= chunk_targets.bone.delta_per_axis.floor
+
+    If any scene's per-axis target falls below the bone floor, the chapter contract cannot
+    be satisfied without a floor violation at /and-write. Surface the conflict immediately:
+
+      SUBSTANCE-CONTRACT-FLOOR-CONFLICT: axis <axis> in scene <slug>
+        target_delta_magnitude: <X>
+        bone.delta_per_axis floor: <floor>
+        required adjustment: raise target to ≥<floor>, OR consolidate scenes so the
+          full target is delivered in fewer scenes each with ≥<floor> per-axis target.
+
+    This is a WARNING (not a HARD abort): the chapter author may legitimately choose to
+    consolidate scenes or round up. But the conflict must be surfaced at contract-authoring
+    time, not at /and-write Phase 2 after bones have been authored against the broken contract.
+
+    The check also applies to the aggregate: if `sum(axes_in_motion[].target_delta_magnitude
+    across all scenes for <axis>)` is not achievable by any integer ≥floor combination
+    summing to ≤total, flag it.
+
+  Cost estimate: S (one new validation block in one command phase; no schema change required;
+  chunk_targets.bone.delta_per_axis is already readable from memory).
+
+  NOTE: this check should also be applied at /and-substance book when per-chapter targets
+  are first allocated (if the book-level screen-writer allocates fractional chapter targets
+  from a book total), but the chapter-level check is the minimum-blast-radius addition since
+  chapter-level is where per-scene allocation happens. Book-level pre-flight can be added
+  separately if recurrence at the book phase is observed.
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0011
+
+```yaml
+id: PROP-0011
+created_at: 2026-05-27T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/write-b01c04-bone-gate-redo.md
+  source_verdict: "PASS — prior cycle: 5 HARD HELD-AXIS-NOT-WITNESSED (s01 capability, s02 political_register-prot, s03 moral_framework, s03 political_register-prot, s03 position-prot-rise); resolved by additive cycle adding 5 dedicated held bones"
+target:
+  type: command
+  path: .claude/commands/and-write.md
+  section: "Phase 1 — Scene-decomposition, step 2 (held-bone shape description)"
+change_type: modify
+rationale: |
+  At b01c04 Phase 6, the auditor returned 5 HARD HELD-AXIS-NOT-WITNESSED findings — one per
+  held axis declared in the scene contracts (capability, political_register-prot ×2,
+  moral_framework, position-prot-rise). The screen-writer authored moving and chatter bones
+  cleanly but did not author dedicated held bones for any of the chapter-contract-declared
+  held axes. The fix was an additive cycle (5 bones added; existing bones unchanged;
+  chapter substance unchanged).
+
+  The Phase 1 spec already states the requirement: "Held axes contribute zero by definition
+  and must each have at least one bone in the scene with that axis in its bone-level
+  axes_held[]." This rule is embedded in the description of the held-bone shape, as part
+  of the explanation of the three bone shapes. It is not presented as a numbered authoring
+  step or a checklist item the screen-writer must verify before declaring Phase 1 complete.
+
+  The screen-writer correctly read and applied the moving-bone and chatter-bone rules (no
+  FAULT-FORM-MODIFIER on those shapes). The held-bone requirement was missed — not because
+  the rule doesn't exist, but because it's buried in a shape-description paragraph rather
+  than presented as an explicit authoring obligation with a completion criterion. Adding a
+  numbered checklist step ("Before Phase 1 is complete, verify that for every axis in
+  scenes[].substance_delta.axes_held[], at least one bone in that scene carries that axis in
+  its bone-level axes_held[]") makes the requirement a completion gate, not a background fact.
+
+  Recurrence_count = 1 (first time HELD-AXIS-NOT-WITNESSED fired systematically across
+  multiple held axes in a chapter). Non-catastrophic (additive cycle resolved without
+  modifying existing bones). Proposing modify at first occurrence because: (a) the
+  requirement exists but is structurally under-specified in the task list; (b) the fix is
+  a single sentence addition to Phase 1; (c) the failure mode is deterministic — any chapter
+  with held axes whose screen-writer focuses on moving/chatter bones first will hit this
+  unless the requirement is an explicit completion-gate.
+evidence_refs:
+  - "active-project/staff/auditor/write-b01c04-bone-gate-redo.md — PASS after additive cycle; 5 held bones added to satisfy HELD-AXIS-NOT-WITNESSED on 5 axes across 3 scenes; no existing bones modified"
+  - ".claude/commands/and-write.md — Phase 1 step 2 held-bone shape description: 'Held axes contribute zero by definition and must each have at least one bone in the scene with that axis in its bone-level axes_held[]' — requirement exists but is embedded in shape description, not in numbered authoring steps"
+  - ".claude/commands/and-write.md — Phase 6 HELD-AXIS-NOT-WITNESSED: 'for each entry in scenes[].substance_delta.axes_held[], at least one bone in the scene must have that axis in its bone-level axes_held[]' — the gate exists and fires correctly; the gap is at the authoring brief, not the gate"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-write.md, Phase 1, after step 4 (scene_conflict / opposing-force
+  rule), add a new numbered step 4a (or append to step 4 as a sub-bullet):
+
+    **4a. Held-axis coverage verification (completion gate, before declaring Phase 1 done
+    for a scene).** For every axis listed in `scenes[<slug>].substance_delta.axes_held[]`,
+    verify that at least one bone in the scene's bone set carries that axis in its
+    bone-level `axes_held[]`. This is NOT optional — every declared held axis must have
+    a witnessing bone, or the Phase 6 bone-gate will return HARD `HELD-AXIS-NOT-WITNESSED`.
+    Complete this check before moving to Phase 2; additive cycles at Phase 6 (after the
+    full five-pass SVO pipeline) are costly. The check is mechanical:
+
+      For each axis A in scenes[slug].substance_delta.axes_held[]:
+        assert count(bones[slug] where axes_held[].axis == A) >= 1
+      If any axis A has count == 0: author a held bone for A before exiting Phase 1.
+
+    Holding discipline for the held bone: the SVO must enact stillness-against-pressure
+    for axis A (see step 2 held-bone description). The rationale must name the discipline.
+    The bone is a normal held bone — it may serve double duty (also a grounding bone or
+    a chatter bone) if its SVO is concretely physical and the axes_held entry is present.
+
+  The existing held-bone description in step 2 is unchanged — this step 4a is the
+  completion checkpoint that operationalizes the requirement stated there. The information
+  is not new; its placement as a named completion gate is the change.
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
 ## PROP-0001
 created_at: 2026-05-26T00:05:43Z
 created_by: admin process-critic

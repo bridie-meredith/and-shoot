@@ -925,3 +925,67 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0031 | 2026-05-27 | SLOW (process-critic)
+
+question: Post-/and-write b01c04 Phase 6.5 process-critic dispatch. Four patterns surfaced in the bone-gate PASS report (after 2 internal HARD-resolution cycles). Which warrant process-change proposals?
+context: |
+  /and-write b01c04 ran two internal HARD-resolution cycles before reaching PASS:
+  Cycle 1 — Phase 1 redo (45 HARDs: 33 FAULT-FORM-MODIFIER + 12 FAULT-BONE-DELTA-MALFORMED);
+    root cause: c03 cascade-budget contamination; fix: Phase 1 redo with c02-reference per DEC-0030.
+  Cycle 2 — Additive cycle (5 HARD HELD-AXIS-NOT-WITNESSED); fix: 5 dedicated held bones added.
+  Final PASS verdict: 0 HARD, 3 SIGNAL (all ACCEPTED).
+  Patterns named by the dispatch: (1) c03 contamination class, (2) magnitude-floor vs. chapter-contract
+  design tension, (3) margit copy-paste from unfixed source, (4) held-axis witnessing brief gap.
+  Gate: .claude/commands/and-write.md#phase-6.
+options: n/a (process-critic mode)
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0009 + PROP-0010 + PROP-0011; OK on pattern 3 (margit copy-paste).
+
+basis: |
+  Pattern 1 (c03 contamination → PROP-0009): DEC-0030 deferred the formal proposal "pending
+  outcome TBD." Phase 1 redo succeeded (0 FAULT-FORM confirmed by bone-gate redo report).
+  Outcome confirmed; proposal ready. Change_type: modify to Phase 1 dispatch brief, adding
+  cadence-reference guidance (prefer last fully-audited chapter; cascade-budget chapters are
+  not valid references). S-cost. Recurrence = 1 but DEC-0030 explicitly set this dispatch
+  as the post-outcome trigger.
+
+  Pattern 2 (magnitude-floor vs. contract design → PROP-0010): Gate absence at /and-substance
+  chapter — no existing phase validates per-scene target_delta_magnitude against the bone floor
+  before /and-write is invoked. A pre-flight WARNING at chapter-substance persisting time catches
+  the design-time mismatch before bones are authored. Change_type: add. S-cost. Recurrence = 1
+  but failure is deterministic on any chapter with fractional axis targets split across scenes.
+
+  Pattern 3 (margit copy-paste from unfixed source → OK): First occurrence, SOFT finding. Margit
+  imported pre-fix Oswyn characterization because the card was authored before memory was corrected.
+  Content/timing failure, not a gate absence. Candidate fix (margit always re-reads source memory)
+  needs recurrence before sizing. Standard first-occurrence hold applies.
+
+  Pattern 4 (held-axis witnessing brief gap → PROP-0011): Phase 1 spec states the requirement but
+  embeds it in a shape-description paragraph, not as a numbered completion-gate step. Screen-writer
+  missed it not because the rule doesn't exist but because it's not actionable in the task list.
+  Adding step 4a (completion gate: verify bone coverage for every axes_held[] entry before exiting
+  Phase 1) operationalizes an existing rule. Change_type: modify. S-cost. Recurrence = 1 but
+  failure mode is deterministic on any screen-writer completing moving/chatter bones first.
+
+rationale: |
+  Three of the four patterns pass the process-failure discrimination test:
+  - No gate exists at Phase 1 dispatch for cadence-reference vetting (PROP-0009) — change_type: modify.
+  - No gate exists at /and-substance chapter for magnitude-floor pre-flight (PROP-0010) — change_type: add.
+  - Existing Phase 1 brief states the held-axis rule but not as a completion-gate step (PROP-0011)
+    — change_type: modify to brief, not to Phase 6 gate (which fires correctly).
+  - Pattern 3: no structural gate gap; timing/ordering issue; first-occurrence hold → OK.
+  All three proposals are S-cost, single-file. Methodology 3b+3c both support proposing.
+
+trade-off: |
+  Proposing three proposals at recurrence_count=1. Anti-pattern ("do not propose at first occurrence")
+  targets taste-flag promotion and ambiguous failure modes. All three gaps are deterministic-structural:
+  cadence-reference guidance, magnitude-floor pre-flight, held-axis checklist — each can be written
+  precisely from a single data point. Cost of deferring: gaps remain open for every future chapter.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
