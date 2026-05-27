@@ -1487,6 +1487,457 @@ supersedes: null
 
 ---
 
+## PROP-0012
+
+```yaml
+id: PROP-0012
+created_at: 2026-05-27T12:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/facets-audience-gate-r3.md
+  source_verdict: PASS-WITH-TASTE-FLAG-RESIDUE (Phase 5c dispatch; Pattern A — multi-token bracket spec/tool drift)
+target:
+  type: command
+  path: .claude/commands/and-facets.md
+  section: "Phase 2 — FANIN: merge + cite-index / cite-index build step"
+change_type: modify
+rationale: |
+  At /and-facets b01c04 Phase 2, build_cite_index.py failed to parse multi-token dialogue citation
+  brackets emitted by /and-write Phase 7. /and-write emits `[X:1, X:2]` (comma-separated multi-token
+  form) when a bone carries multiple dialogue citations; the cite-index builder's trailing-cite regex
+  only handles single-token `[X:1] [X:2]` (space-separated sequential brackets). The mismatch caused
+  inflight proto-lines to carry malformed or unresolved citation tokens until an inline fix
+  (/tmp/fix_brackets.py) was applied to normalize the format before the build ran.
+
+  This is a spec/implementation gap: /and-write's Phase 7 emit specification and build_cite_index.py's
+  parser operate on different bracket conventions. The fix was applied inline for this chapter, but
+  the gap will recur on any chapter where /and-write emits multi-dialogue-anchor bones (which is the
+  expected case for action-dense scenes with overlapping dialogue). There is no standing normalization
+  step between Phase 7 emit and Phase 2 cite-index build.
+
+  Two candidate fixes: (a) constrain /and-write Phase 7 to always emit single-token sequential brackets
+  (`[X:1] [X:2]`) rather than comma-separated multi-token form; (b) update build_cite_index.py to
+  accept both forms. Either eliminates the gap; (a) is a spec change to /and-write; (b) is a parser
+  change to the tool. The command body's Phase 2 cite-index step should also document the expected
+  bracket format explicitly so the two sides of this interface share a declared contract.
+
+  This is the same drift class as PROP-0008 (spec-vs-tool ambiguity, where the auditor's operational
+  instruction and the tool's behavior diverged). Pattern repeating confirms the value of an explicit
+  shared-format contract.
+evidence_refs:
+  - "active-project/staff/auditor/facets-audience-gate-r3.md — Pattern A trigger: multi-token bracket
+    emit [X:1, X:2] vs. single-token parser expectation; inline fix via /tmp/fix_brackets.py at Phase 2"
+  - ".claude/commands/and-facets.md — Phase 2 §cite-index build: `python3 active-project/staff/cite-index/build_cite_index.py <episode-slug>` — no bracket-format contract documented"
+  - ".claude/commands/and-write.md — Phase 7 emit: dialogue-anchor bones carry [<character-slug>:<id>] citation tokens — multi-anchor emit format unspecified"
+  - "staff/admin/process-proposals.md — PROP-0008 (spec vs tool ambiguity class: auditor CONSTRAINT scan scope not matching tool behavior — same class of drift)"
+recurrence_count: 1
+proposed_diff: |
+  OPTION A (preferred for minimal downstream blast radius) — constrain /and-write Phase 7 emit format:
+
+  In .claude/commands/and-write.md, Phase 7 emit section, add a bracket-format note:
+
+    **Citation token format.** When a bone carries multiple dialogue citations, emit sequential
+    single-token brackets: `[X:1] [X:2]` (space-separated, one bracket per token). Do NOT emit
+    comma-separated multi-token form `[X:1, X:2]`. The cite-index builder's trailing-cite regex
+    is single-token-only; multi-token form is not parsed. Every dialogue-anchor token must appear
+    in its own `[ ]` bracket with no comma inside.
+
+  OPTION B (alternative) — update build_cite_index.py to accept both forms:
+
+  In active-project/staff/cite-index/build_cite_index.py, update the trailing-cite regex to match
+  both `[X:1]` and `[X:1, X:2]` forms. If comma-separated, split on `,\s*` and register each token
+  separately. This makes the parser tolerant of both emit formats and eliminates the dependency on
+  /and-write maintaining the single-token-only convention.
+
+  SHARED ADDITION (both options) — add a bracket-format contract note to .claude/commands/and-facets.md
+  Phase 2 cite-index step:
+
+    **Bracket format contract.** The cite-index builder expects citation tokens in the form `[X:N]`
+    (one token per bracket). Before running build_cite_index.py, verify the proto-lines file does not
+    contain comma-separated multi-token brackets `[X:1, X:2]`. If found, normalize to sequential form
+    before the build. (This should not occur if /and-write Phase 7 follows Option A above; this check
+    is a defensive backstop.)
+
+  Admin recommendation: Option A (spec-side constraint) is preferred because it makes /and-write's
+  emit format self-documenting and removes the parser's need to handle multiple forms. Option B is
+  acceptable if the principal prefers parser tolerance over emit-format strictness.
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0013
+
+```yaml
+id: PROP-0013
+created_at: 2026-05-27T12:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/facets-audience-gate-r3.md
+  source_verdict: PASS-WITH-TASTE-FLAG-RESIDUE (Phase 5c dispatch; Pattern B — R2 judge output-format discipline)
+target:
+  type: command
+  path: .claude/commands/and-facets.md
+  section: "Phase 3 — R2 fanout dispatch brief / R2 judge output-format requirement"
+change_type: modify
+rationale: |
+  At /and-facets b01c04 Phase 3, 5 of 7 R2 judges wrote decision-log prose into their inflight
+  proto-lines files instead of the canonical citation-only format (citation tokens + KEEP/DELETE/ADD
+  dispositions). The Phase 4 FANIN merge + cite-index rebuild reads inflight files expecting a clean
+  citation-format structure; prose decision logs embedded in those files caused parse failures or
+  ambiguous merge results. The main session had to reconstruct 5 inflight copies (memory, metaphor,
+  exposition, dialogue-taylor, dialogue-jarvis) manually before the Phase 4 merge could proceed.
+
+  The R2 dispatch brief tells judges to mutate their `_inflight-r2/` copy using citation-cascade logic
+  (strip `[<own>:<id>]` tokens from proto-lines on DELETE). It does not state explicitly that the
+  inflight proto-lines file must remain citation-format throughout — no prose commentary, no
+  decision-log entries, no rationale text. Five of seven judges conflated "record my decision" with
+  "write rationale into the file." The decision-log section belongs in the R2 decision shard
+  (`staff/<facet>/r2-decision-shard.md`), not in the inflight proto-lines copy.
+
+  This is a dispatch brief gap: the inflight file format constraint is implicit (it follows from the
+  cite-index build's parse requirements) rather than explicit (a stated prohibition). Adding a one-line
+  prohibition to the R2 dispatch brief prevents the 5-of-7 failure rate from recurring.
+evidence_refs:
+  - "active-project/staff/auditor/facets-audience-gate-r3.md — Pattern B: 5/7 R2 judges wrote prose
+    into inflight files; 5 inflight copies reconstructed inline before Phase 4 merge"
+  - ".claude/commands/and-facets.md — Phase 3 R2 dispatch brief: 'Citation cascade on the author's
+    proto-lines copy. When the judge deletes <own>:<id>, it strips [<own>:<id>] from every proto-line
+    in its _inflight-r2/ copy' — no prohibition on prose commentary in the file"
+  - ".claude/commands/and-facets.md — Phase 4 §FANIN: merge + cite-index rebuild: parses inflight
+    proto-lines by citation token; prose content causes ambiguous merge"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-facets.md, Phase 3 R2 fanout section, in the dispatch brief for R2 judges,
+  add after the "Citation cascade" instruction:
+
+    **Inflight file format discipline.** The `_inflight-r2/` proto-lines copy is a structured
+    citation-token file, not a decision log. The R2 judge MUST NOT write prose commentary, rationale
+    text, or decision summaries into the inflight proto-lines file. Prose decision notes belong
+    EXCLUSIVELY in the R2 decision shard at `staff/<facet>/r2-decision-shard.md`. The inflight
+    proto-lines file must remain parseable by build_cite_index.py after all edits — which means
+    only citation tokens, proto-line text, and the deletions / additions prescribed by the judge's
+    KEEP/DELETE/ADD verdicts. A judge that writes prose into the inflight file will cause Phase 4
+    merge failures that require manual reconstruction. Format discipline is the judge's responsibility,
+    not the FANIN operator's.
+
+  Additionally, consider adding a Phase 4 pre-merge validation step:
+
+    Before running Phase 4 merge + cite-index rebuild, scan each inflight proto-lines file for
+    prose-pattern indicators (multi-sentence blocks with no citation tokens on lines that should
+    be proto-line entries). If found, abort and surface: "R2 inflight file for <facet> contains
+    prose commentary at lines <N>–<M>. Strip prose before merge." This is a validation backstop
+    that catches the format failure at the merge boundary rather than forcing manual reconstruction.
+    Estimated cost: S (one validation scan added to Phase 4 pre-merge).
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0014
+
+```yaml
+id: PROP-0014
+created_at: 2026-05-27T12:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/facets-audience-gate-r3.md
+  source_verdict: PASS-WITH-TASTE-FLAG-RESIDUE (Phase 5c dispatch; Pattern C — sidecar stale-ref + DEFERRED-TO-R2 placeholder)
+target:
+  type: command
+  path: .claude/commands/and-facets.md
+  section: "Phase 3 — R2 fanout / R2 dialogue-judge dispatch brief"
+change_type: modify
+rationale: |
+  At /and-facets b01c04 Phase 3, two related sidecar failures caused 4 audience reviewers to flag
+  SIGNAL/HARD at Phase 5b across multiple cycles:
+
+  (1) Stale bone-references in dialogue sidecars: after /and-write redo consolidated bones and
+  renumbered @n07/n10 to @9, the dialogue drafts sidecars at `active-project/staff/dialogue-writer/
+  <character-slug>.drafts.md` still carried old bone-reference numbers. The R2 dialogue-judge's
+  dispatch brief specifies mutating the dialogue facet file (KEEP/DELETE/REWRITE per facet graph)
+  but does not include sidecar update as a task. The R2 judge worked correctly on the dialogue file
+  and left the sidecar unchanged — which is the correct interpretation of the current brief, but
+  produces stale-ref artifacts that downstream audience reviewers treat as HARD constraint violations.
+
+  (2) DEFERRED-TO-R2 placeholders in sidecars: dialogue drafts sidecars contained DEFERRED-TO-R2
+  placeholder stubs (notes deferring authoring decisions to the R2 judge pass). These stubs were
+  created at the dialogue-writing stage (Phase 1.5) and were intended to be resolved when R2 ran.
+  The R2 dialogue-judge did not resolve them because the brief does not name sidecar placeholder
+  resolution as a task. The stubs survived into Phase 5b as phantom content, confusing reviewers
+  about whether entries were authored or pending.
+
+  Both failures share the same root: the R2 dialogue-judge brief omits sidecar update from its
+  task list. The judge correctly performs its primary task (KEEP/DELETE/REWRITE against the dialogue
+  facet file using the facet graph as context) but the sidecar — which is a supporting artifact the
+  judge has access to — is left in its pre-R2 state. A one-line task addition to the R2 dialogue-judge
+  brief closes both gaps.
+evidence_refs:
+  - "active-project/staff/auditor/facets-audience-gate-r3.md — Pattern C: dialogue sidecars carrying
+    n07/n10 stale refs after /and-write redo to @9; DEFERRED-TO-R2 placeholders surviving past R2;
+    4 audience reviewers flagged as SIGNAL/HARD across cycles"
+  - ".claude/commands/and-facets.md — Phase 3 R2 dialogue-judge dispatch brief: 'Full nine-facet
+    graph + per-character dialogue files + cite-index in every dispatch payload... dialogue judges
+    additionally receive the drafts sidecars for their characters' — sidecar UPDATE not listed as a task"
+  - "staff/dialogue-writer/rubric-dialogue.md — sidecar format requirements (drafts sidecar carries
+    card-signature + facet-license citations on chosen drafts)"
+  - ".claude/commands/and-write.md — Phase 1.5 dialogue-writer dispatch: dialogue sidecars authored
+    here; DEFERRED-TO-R2 placeholder pattern originated here as an authorized deferral mechanism"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-facets.md, Phase 3 R2 fanout section, in the R2 dialogue-judge dispatch
+  brief, add after the existing task list (KEEP / DELETE / REWRITE instructions):
+
+    **Sidecar update (mandatory, same pass as dialogue file edits).** After completing all
+    KEEP/DELETE/REWRITE verdicts on the dialogue facet file, the R2 dialogue-judge MUST also
+    update the matching drafts sidecar at `active-project/staff/dialogue-writer/<character-slug>.drafts.md`:
+
+      (a) **Stale bone-reference correction.** If the upstream /and-write run produced a redo or
+          additive cycle that renumbered bones (detectable by checking the bones file's current bone
+          IDs against any `@n<old>` references in the sidecar), update all sidecar bone-reference
+          numbers to match the current bones file. The bones file is authoritative; any `@nNN` in
+          the sidecar that does not match a current bone ID is stale and must be corrected.
+
+      (b) **DEFERRED-TO-R2 placeholder resolution.** Scan the sidecar for any entries or fields
+          containing `DEFERRED-TO-R2` or equivalent placeholder text. Resolve each placeholder:
+          either fill in the deferred content using the facet graph context now available to R2,
+          OR mark the entry as `NOT-APPLICABLE` with a one-line rationale. No DEFERRED-TO-R2
+          placeholder may survive the R2 pass. Unresolved placeholders at Phase 5b are phantom
+          content that confuses audience reviewers and produces false HARD findings.
+
+    If the sidecar does not exist (first-run case where Phase 1.5 didn't produce one), skip this
+    step with a note: "No sidecar found for <character-slug> — skipping sidecar update."
+
+  SECONDARY CHANGE — staff/dialogue-writer/rubric-dialogue.md:
+
+  Add a note in the sidecar format section:
+
+    **DEFERRED-TO-R2 placeholder contract.** Placeholders marked DEFERRED-TO-R2 are authorized
+    at Phase 1.5 (the dialogue-writing stage) only when the facet graph context needed to resolve
+    the decision is not yet available. R2 is the mandatory resolution point. Any placeholder that
+    survived R2 without resolution is a sidecar integrity fault. The R2 dialogue-judge is responsible
+    for resolution; if the placeholder represents a decision that R2 cannot resolve (e.g., a dependency
+    on a facet that was deleted in R2), the judge replaces it with NOT-APPLICABLE + rationale.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0015
+
+```yaml
+id: PROP-0015
+created_at: 2026-05-27T12:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/facets-audience-gate-r3.md
+  source_verdict: PASS-WITH-TASTE-FLAG-RESIDUE (Phase 5c dispatch; Pattern D — cite-index regen wiping audit-fixes)
+target:
+  type: command
+  path: .claude/commands/and-facets.md
+  section: "Phase 5 — AUDIT: single auditor dispatch / post-Phase-5 fixer protocol / cite-index rebuild after fixer"
+change_type: add
+rationale: |
+  At /and-facets b01c04 Phase 5, the auditor found forward-cite faults (fault-002: [state:2]@9 and
+  fault-003: [state:5]@22 in proto-lines, referencing state entries that appear later in the sequence).
+  The fixer correctly stripped these citation tokens from the proto-lines file. However, a subsequent
+  cite-index rebuild (triggered by the state-updates fixer as part of its mechanical-fix pass in
+  cycle 3) re-added both [state:2]@9 and [state:5]@22. The cite-index builder reads upstream
+  co-cite sources (loc-state, state-updates facet files) and propagates co-citations back into the
+  proto-lines, overwriting any manual strips that preceded the rebuild.
+
+  This is a deletion-marker permanence gap: when the auditor instructs the fixer to strip a citation
+  token from proto-lines (as a HARD fault fix), that strip has no permanent record that prevents the
+  cite-index builder from re-adding the token on next rebuild. The strip is ephemeral; the builder's
+  co-propagation logic is authoritative. The two conflict silently, requiring re-detection and re-stripping
+  at cycle-3 close.
+
+  The consequence: any citation token stripped at Phase 5 as an audit fault (forward-cite, constraint
+  violation, etc.) is vulnerable to re-addition by any subsequent cite-index rebuild in the same
+  /and-facets run. The fixer's Phase 5 strip cannot survive a rebuild unless the deletion is recorded
+  somewhere the builder checks.
+
+  A deletion-marker mechanism — a lightweight manifest of citation tokens that the auditor has
+  permanently invalidated — would allow build_cite_index.py to honor deletions and skip re-propagation
+  of blacklisted tokens. This is a new mechanism (change_type: add); no existing gate handles it.
+evidence_refs:
+  - "active-project/staff/auditor/facets-audience-gate-r3.md — Pattern D: state-updates fixer cite-index
+    regen re-added [state:2]@9 and [state:5]@22 after auditor fault-002/003 strip; required re-stripping
+    inline at cycle-3 close"
+  - ".claude/commands/and-facets.md — Phase 2 / Phase 4 cite-index rebuild: build_cite_index.py reads
+    upstream facet sources and propagates co-cites to proto-lines — no deletion-marker input mechanism"
+  - ".claude/commands/and-facets.md — Phase 5 §cap-burn handling: 'The cite-index builder reads this
+    marker, auto-strips stale [<prefix>:<id>] tokens from proto-lines' — cap-burn already uses a
+    deletion-marker mechanism (DELETED ENTRIES section); audit-fault strips do not use the same mechanism"
+recurrence_count: 1
+proposed_diff: |
+  PRIMARY CHANGE — .claude/commands/and-facets.md, Phase 5 fixer protocol:
+
+  After the auditor's Phase 5 strip of HARD citation tokens, the fixer (or the orchestrating phase)
+  must record each stripped token in a deletions manifest. Add a step to the Phase 5 fixer protocol:
+
+    **Deletion-manifest update.** When stripping a citation token from proto-lines as a Phase 5
+    HARD fault fix, the fixer MUST also append the stripped token to the deletions manifest at
+    `active-project/theater/facets/_cite-deletions-<book>-<chapter>.md`. Format per entry:
+
+      - token: [<facet-prefix>:<id>]
+        fault_id: fault-<NNN>
+        stripped_at_phase: 5
+        reason: <one-line rationale>
+
+    This file is the authoritative list of citation tokens that have been permanently invalidated
+    by audit fault findings. The cite-index builder reads this manifest before propagating any
+    co-citation and MUST skip propagation of any token listed here.
+
+  SECONDARY CHANGE — build_cite_index.py:
+
+  Add a deletion-manifest check step at the start of the propagation pass:
+
+    1. Check for `_cite-deletions-<book>-<chapter>.md` in the theater/facets/ directory.
+    2. If present, load all `token:` entries as a no-propagate blacklist.
+    3. During co-cite propagation: if a candidate citation token matches any entry in the blacklist,
+       skip propagation silently (do not add the token to proto-lines). Log the skip to the
+       cite-index build summary: "Skipped blacklisted token [<prefix>:<id>] at @<proto> (fault <NNN>)."
+
+  SCOPE NOTE — relationship to existing cap-burn deletion mechanism:
+
+  The Phase 5b cap-burn DELETE path already uses a similar mechanism: `DELETED ENTRIES` section
+  in `_cite-index.md` marks cap-burned entries so the builder strips them. The proposed audit-fault
+  deletion manifest is the Phase 5 analog: audit HARDs that require citation strip also need a
+  permanent record the builder respects. The two mechanisms are complementary; consider unifying them
+  into a single `_cite-deletions-*` format that both Phase 5 auditor and Phase 5b cap-burn write to.
+  This unification is optional (cost M if unified vs. cost S if separate files) — the principal may
+  implement as two separate mechanisms for simplicity.
+
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0016
+
+```yaml
+id: PROP-0016
+created_at: 2026-05-27T12:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/facets-audience-gate-r3.md
+  source_verdict: PASS-WITH-TASTE-FLAG-RESIDUE (Phase 5c dispatch; Pattern E — cross-location-carry interpretation gap in rubric-sensory.md)
+target:
+  type: rubric
+  path: design/shoot-v2/rubric-sensory.md
+  section: "Per-location anchoring rule / old-state sourcing from prior locations"
+change_type: modify
+rationale: |
+  At /and-facets b01c04 Phase 5b, sensory-disambiguation-pedant and sensory-old-state-reader
+  gave opposite verdicts on sensory:2 @13 (TASTE-FLAG-001). After sensory:1 @1 was deleted in
+  cycle 3, sensory:2 became the first sensory entry for its scene, with its old_state field
+  sourcing from loc-state:1 (a different location from sensory:2's anchor location). The two
+  specialist reviewers interpreted the rubric's per-location anchoring rule differently:
+
+    sensory-old-state-reader: cross-location carry from loc-state:1 to loc-state:3 is standard
+    pattern — when the character moves between locations, the old_state for a new sensory entry
+    legitimately references the previous location's state. ACCEPTed.
+
+    sensory-disambiguation-pedant: strict per-location rule — old_state must source from the
+    same location as the sensory entry's anchor location. Using a prior location's loc-state as
+    old_state is a per-location anchoring violation. REVISEd.
+
+  The rubric's per-location text is genuinely ambiguous: it does not state whether "per-location"
+  means (a) the old_state must source from the same loc-state entry as the sensory entry's anchor,
+  or (b) old_state may source from any prior loc-state in temporal sequence (including a previous
+  location, as long as it is the most recent prior state before the anchor). The two interpretations
+  produce opposite verdicts on a chapter-opening sensory entry after location transition.
+
+  This ambiguity will recur on any chapter where a character moves between locations and the first
+  sensory entry in the new location needs to reference what the sensory environment was in the
+  previous location. This is a structurally common scenario (character transitions are a standard
+  chapter-opening pattern in this project). Clarifying the rubric eliminates the disambiguation
+  burden from both specialist reviewers and prevents future TASTE-FLAG accumulation on a mechanical
+  question that has a correct answer.
+evidence_refs:
+  - "active-project/staff/auditor/facets-audience-gate-r3.md — TASTE-FLAG-001: sensory-disambiguation-pedant
+    REVISEd sensory:2 @13 (cross-location old-state from loc-state:1); sensory-old-state-reader ACCEPTed
+    citing cross-location carry as standard pattern; rubric interpretation gap named explicitly"
+  - "design/shoot-v2/rubric-sensory.md — per-location anchoring rule: states that sensory entries must
+    be anchored per-location but does not specify old_state sourcing across location transitions"
+  - ".claude/commands/and-facets.md — Phase 5b sensory specialist dispatch: sensory-disambiguation-pedant
+    + sensory-old-state-reader both receive the rubric; divergent interpretation of same text"
+recurrence_count: 1
+proposed_diff: |
+  In design/shoot-v2/rubric-sensory.md, §per-location anchoring rule (or the section governing
+  old_state field requirements), add a location-transition clause:
+
+    **old_state sourcing across location transitions.** When a sensory entry's anchor is the first
+    sensory anchor in a new location (i.e., the character or POV has moved since the previous sensory
+    entry), the old_state field MAY source from the most recent prior loc-state entry in temporal
+    sequence — including a prior location's loc-state — if no loc-state entry exists yet for the
+    current location. This is the "cross-location carry" pattern; it is permitted, not a per-location
+    violation. Rationale: the old_state field represents "what the sensory environment was before this
+    anchor" — which, at a location transition, is necessarily the previous location's state. Requiring
+    old_state to source only from the current location's loc-state entry would force either (a) a
+    vacuous old_state declaration ("no prior state at this location"), or (b) prohibition of sensory
+    entries at location-transition anchors — both of which are worse than cross-location carry.
+
+    **Per-location anchoring applies to: anchor location, modal categories, spatial specifics.** The
+    per-location rule governs which location's sensory palette governs modal category selection and
+    spatial anchoring text. It does NOT govern old_state sourcing, which follows temporal sequence
+    rather than location-match. Reviewers applying the per-location rule to old_state field sourcing
+    are misapplying it; the two concerns (location-specificity of the sensory reading vs. temporal
+    continuity of the state reference) are orthogonal.
+
+  This is a clarification, not a rule change. The sensory-old-state-reader's interpretation is
+  being codified as the correct reading. The sensory-disambiguation-pedant's interpretation
+  (strict same-location-only old_state sourcing) is being explicitly excluded. The clarification
+  should be short enough to embed as a parenthetical in the existing old_state field description.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
 ## PROP-0001
 created_at: 2026-05-26T00:05:43Z
 created_by: admin process-critic

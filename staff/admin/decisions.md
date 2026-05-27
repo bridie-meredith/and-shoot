@@ -1339,3 +1339,104 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0036 | 2026-05-27 | SLOW (process-critic)
+
+question: Post-/and-facets b01c04 Phase 5c process-critic dispatch. Five patterns from the three-cycle audience-gate run (49 dispatches; final verdict PASS-WITH-TASTE-FLAG-RESIDUE). Which warrant process-change proposals?
+
+context: |
+  Trigger: active-project/staff/auditor/facets-audience-gate-r3.md (cycle-3 final).
+  Verdict: PASS-WITH-TASTE-FLAG-RESIDUE — 4 facets 3/3 ACCEPT + 7 facets PASS with 1/3 TASTE-FLAG
+  carry-forward per DEC-0035 doctrine. Gate: .claude/commands/and-facets.md#phase-5b.
+  Total run: 3 full cycles + targeted re-fires (~49 audience dispatches). Patterns named by caller:
+    A — /and-write Phase 7 emits [X:1, X:2] multi-token; cite-index parser handles [X:1] [X:2] only; inline fix required.
+    B — 5 of 7 R2 judges wrote prose into inflight proto-lines files; 5 copies reconstructed manually.
+    C — Dialogue sidecars carried stale bone-refs (n07/n10 after redo to @9); DEFERRED-TO-R2 placeholders
+        survived R2 because R2 dialogue-judge brief omits sidecar update; 4 audience reviewers flagged SIGNAL/HARD.
+    D — State-updates fixer cite-index regen re-added [state:2]@9 + [state:5]@22 after auditor fault-002/003
+        strip; deletion not persistent across rebuild.
+    E — sensory-disambiguation-pedant and sensory-old-state-reader gave opposite verdicts on sensory:2 @13
+        cross-location old-state sourcing; rubric-sensory.md per-location rule genuinely ambiguous.
+    F — Vibes AP8 sentence-parsability: audience-gate caught sub-saturation AP-SCAN violations; gate working as intended.
+    G — Bidirectional convergence validated: multiple shared auditor + audience findings.
+options: n/a (process-critic mode)
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0012 + PROP-0013 + PROP-0014 + PROP-0015 + PROP-0016. OK on Patterns F and G.
+
+basis: |
+  Pattern A (cite-index bracket format drift → PROP-0012): Spec/tool interface gap — same class as
+  PROP-0008. /and-write's emit format and build_cite_index.py's parser have no declared shared contract
+  for multi-token bracket form. Inline fix at this run does not prevent recurrence. S-cost modify to
+  .claude/commands/and-facets.md Phase 2 + /and-write Phase 7 (or parser). Justifies first-occurrence
+  proposal because: structural interface gap (not a content failure), recurrence is deterministic on
+  multi-dialogue-anchor bones (expected in action-dense scenes), inline-fix is not a permanent resolution.
+
+  Pattern B (R2 judge inflight format discipline → PROP-0013): 5/7 failure rate on the same dispatch
+  (R2 judge brief) is a strong signal that the brief's format requirement is implicit where it needs
+  to be explicit. Prose in inflight proto-lines files causes Phase 4 merge failures. The fix is a
+  one-paragraph prohibition added to the R2 dispatch brief. S-cost. First-occurrence proposal justified
+  by the 5/7 failure rate — this is not one judge making an error, it is the majority exhibiting a
+  behavior the brief does not exclude.
+
+  Pattern C (sidecar stale-ref + DEFERRED-TO-R2 → PROP-0014): Two task omissions in the R2
+  dialogue-judge brief (sidecar bone-ref update + DEFERRED-TO-R2 resolution). The R2 judge receives
+  the sidecar but is not instructed to update it. The failure is structural (not taste): stale refs
+  are HARD constraint violations when caught by audience; DEFERRED-TO-R2 survivors are phantom content
+  that confuses every downstream reviewer. Both are preventable by two sentences added to the R2 brief.
+  S-cost. First-occurrence proposal justified because the brief gap is explicit and deterministic —
+  it will recur on any chapter with a /and-write redo + R2 dialogue-judge run.
+
+  Pattern D (cite-index regen wiping audit-fixes → PROP-0015): Deletion-marker permanence gap. No
+  existing mechanism prevents build_cite_index.py from re-propagating co-cites for tokens the auditor
+  has permanently invalidated. The cap-burn path already uses a parallel deletion-marker mechanism
+  (DELETED ENTRIES in _cite-index.md); audit-fault strips need the same. This is a genuine gate
+  absence (change_type: add). M-cost (new file format + parser check). First-occurrence proposal
+  justified because the failure is structurally guaranteed: any cite-index rebuild after an audit strip
+  will re-add the stripped tokens absent a permanent deletion record.
+
+  Pattern E (cross-location-carry rubric ambiguity → PROP-0016): Genuine rubric text ambiguity
+  (two specialist reviewers with opposite readings of the same sentence). The correct interpretation
+  is available from the sensory-old-state-reader's reasoning (cross-location carry is the standard
+  pattern at location transitions). Codifying it as a clarification in rubric-sensory.md prevents
+  future TASTE-FLAG accumulation on a question that has a correct answer. S-cost modify. First-occurrence
+  proposal justified because the ambiguity is structural (not probabilistic) and the correct reading
+  is already available from this run's evidence.
+
+  Pattern F — OK (positive evidence): Audience-gate catching sub-saturation AP-SCAN violations
+  (vibes AP8 tokens) is the design working correctly. The auditor's saturation threshold did not
+  fire; the audience reviewer caught all 4 below threshold. Gate-redundancy confirmed. No process change.
+
+  Pattern G — OK (positive evidence): Bidirectional convergence validated. Multiple shared findings
+  between auditor + audience confirms the dual-path design is functioning. No process change.
+
+rationale: |
+  All five proposals (A-E) pass the process-failure discrimination test:
+  - A: spec/tool interface gap (cite-index parser and /and-write emit share no declared contract); change_type: modify.
+  - B: dispatch brief implicit where explicit needed (5/7 failure rate); change_type: modify.
+  - C: two task omissions in R2 brief (sidecar update); change_type: modify.
+  - D: gate absence (no deletion-marker permanence for audit-fault strips); change_type: add.
+  - E: rubric text ambiguity (two correct-behavior specialists diverge); change_type: modify.
+  All are S or M cost. Methodology 3b+3c both support proposing at first occurrence on structural gaps.
+
+  First-occurrence exception applies to Patterns A, B, C, E per the same reasoning as PROP-0008/0009/0010/0011:
+  the gaps are structural and deterministic, not probabilistic. Pattern D (PROP-0015) is change_type: add
+  (gate absence) rather than first-occurrence-SIGNAL, so the anti-pattern rule does not apply.
+
+  Patterns F + G are positive evidence, not gaps. Logging as evidence that the bidirectional audit
+  design is earning its cost — this is the first chapter where explicit convergence trace was validated.
+
+trade-off: |
+  Five proposals authored at first occurrence, totaling PROP-0012 through PROP-0016. Anti-pattern
+  rule applies to taste-flags promoting to mechanical checks — it does not apply to structural interface
+  gaps, dispatch brief omissions, or rubric ambiguities. All five were inline-fixed during the run
+  (they did not block the chapter) but each will recur on future chapters without a permanent fix.
+  The cost of holding (per-chapter inline fix overhead) exceeds the cost of proposing now across
+  the remaining chapters of the project.
+
+follows: DEC-0035
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
