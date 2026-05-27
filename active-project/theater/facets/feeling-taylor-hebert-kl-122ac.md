@@ -1,17 +1,10 @@
 ---
 facet: feeling
-episode: b01-c03
-author: impersonator:taylor-hebert-kl-122ac
+episode: b01-c04
 character: taylor-hebert-kl-122ac
-bones_count: 36
-entry_count: 2
-density: 0.056
-scene_distribution:
-  scene-A: 0
-  scene-B: 1
-  scene-C: 1
-r2_pass: pending
+author: impersonator-taylor-hebert-kl-122ac
+phase: r2-judge
 ---
 
-1 @23 taylor-hebert-kl-122ac: her hand closes once at the cloth of her dress and opens | expressed: no
-2 @29 taylor-hebert-kl-122ac: keeps her eyes on the yard-mouth and her weight even on both feet as she speaks | expressed: partial
+1 @7 taylor-hebert-kl-122ac: her hand closes on the shed-wall at her back | expressed: no
+2 @39 taylor-hebert-kl-122ac: her stride holds the four-count past the stitch-house frame | expressed: no

@@ -1,38 +1,85 @@
 ---
 reviewer: dark-fantasy-reader
 facet: memory
-episode: b01-c02
+chapter: b01-c04
 phase: 5b-adversarial
-date: 2026-05-26
-verdict: ACCEPT
+date: 2026-05-27
+verdict: revise
+---
+
+## Reading stance
+
+Two entries. 39 bones. 5.1%. Right at the floor of the licensed range. The preamble block explains this is single-register earth-bet displacement only, and that the doubled-register carve-out is invoked because Westerosi monument candidates failed the both-meaningful gate for readers without ASOIAF source-fluency.
+
+The carve-out rationale is in the frontmatter header, not in a body preamble block. That is a format problem the auditor already named (fault-007). I am not re-adjudicating the mechanical fault. But the dark-fantasy reader notices: the defense is in the margin, invisible at the page. If this goes to the stitcher and Phase 0 sees an undefended single-register file, the Phase 0 scan fires before any prose is produced. The carve-out needs to be in the body where the scan can see it.
+
+Now the entries.
+
 ---
 
 ## Entry-level callouts
 
-[mem:1 @12 and mem:3 @42 — the Khepri-rhyme pair] @mem:1 @mem:3 — The AP12 author-vocabulary watch (fault-006) flags that both entries share "line" + future-projection construction. This is the adversarial-attack surface. Do the two entries read as the same note played twice, or as the same monument landing at different structural positions with different weight?
+**[mem:2 @22]** — *the feed returns the body she will not write down*
 
-mem:1 @12: "the line drawn here is the line that will be asked of her again → cond-road-to-hell-chain-shape"
+The proto-line: `the insect-feed returns wren-stitch-maker-flea-bottom-ward`.
 
-The chain-shape monument fires as the prohibition is re-affirmed. The future-projection is "will be asked of her again" — the line will recur as a demand. The monument activates the road-to-hell architecture: this restraint is the first link of a chain whose later links will cost more. The reader sees the chain forming; Taylor draws the line and sees only the line. The gap between what the reader sees and what Taylor sees is the dark-fantasy charge.
+The monument: earth-bet displacement, un-priced-anchor / casualty-not-in-ledger. The insect-feed finds Wren; the report omits her; the gap between what the feed registers and what the architecture records is the monument-shape.
 
-mem:3 @42: "the shape of this line is what a watching street will find a word for → cond-kl-witch-label-formation-122ac"
+The description lands. *The body she will not write down* — that is displacement-cue form without naming the monument. The feed sees what the ledger refuses to hold. The gap between seeing and recording is the load. That is real consequence. The interior pays a bill it does not acknowledge paying, which is the worst kind of bill.
 
-The witch-label monument fires after the recognition has been suppressed. The future-projection is "will find a word for" — the street is watching and will name what it sees. The monument activates the witch-label architecture: the way Taylor moves at this moment, the shape of her discipline, is the visible behavior from which the street will construct its category. This is the road-to-hell chain's specific Westerosi instantiation — the cost is not abstract accumulation but the particular social mechanism of Flea Bottom naming what it witnesses.
+The @ anchor carries 8 co-located facets (7 after fault-003 resolution). The auditor flagged this as stitcher-overload risk (flag-009): seven simultaneous inputs at the held-back moment risks producing prose that explicates the holding-back rather than enacting it. From where I sit as a reader: a character who holds something costs something by holding it. The holding does not need seven lenses. Four vibes entries at this anchor are biasing the stitcher toward Wren at the same bone where the memory entry licenses figurative reach toward the omission pattern. If the stitcher renders all seven inputs, @22 becomes a paragraph about Taylor not writing Wren down, which is the opposite of Taylor not writing Wren down.
 
-The two entries share the "line" vocabulary and the future-naming construction. They do not share the monument family (chain-shape vs witch-label-formation) or the structural position (choice-affirmed vs crack-suppressed). The chain-shape fires at the moment the architecture begins; the witch-label fires at the moment the architecture becomes visible to external observers. The first names the cost to Taylor; the second names the cost to Taylor's presence in this world. They are two legs of the same double-load: internal accumulation + external naming. If one of them were absent, the chapter would lose either the forward-consequence of the discipline (mem:1) or the Westerosi mechanism by which the discipline will be named from outside (mem:3).
+The auditor's triage is correct: configure the four vibes entries as operator-bias only, preserve mem:2 and narrator:6 as the renderable interior layer. I agree with that priority. My attack on mem:2 itself is zero — the entry is earned on its own terms.
 
-The "line" vocabulary recurrence is an author-watch item. It is not a reader-experience failure. The two entries fire on different monument families at different structural positions for different costs. I read both without the second feeling like a repeat of the first. The vocabulary is the same because the gesture is the same; the monument families are different because the costs are different.
+**Convergence:** flag-009 (TASTE-FLAG — @22 pile-up stitcher-overload risk). The mechanical scan named the pile-up; my attack is on what that pile-up produces at the prose register. Same seam, approached from the reader side rather than the constraint side.
 
-[mem:2 @27] @mem:2 — Peak-bone fire, displacement-clamp defense. "The gesture of filing a body under a function-label moves in a hand that knows the motion → cond-override-architecture-residue-122ac." The peak-bone is the scene-B climax: relational_anchor_status +1.0, Wren filed as ward-junction-contact. The monument fires on the gesture itself — the physical act of categorizing a person by function — and names it as the displacement-residue of the override architecture. The hand-that-knows-the-motion construction is precise: the override architecture survives not as active capability but as trained motion. Taylor does not remember deploying it; she performs it. The residue is the form of the act, not a conscious invocation.
+---
 
-The peak-bone fire is the exception case the rubric licenses with a documented defense. The defense holds against my reading: the monument fires as the discharge, not as a resonance-arriving-after. The filing at @27 is the moment the chapter has been building toward since the insect-feed first returned a junction-body at @15. The monster of the chapter is that this categorization-without-consent is not new to Taylor's hands. That is not atmosphere. That is consequence that propagates backward and forward simultaneously: backward to what Taylor built at Gold Morning, forward to what the chapter's wren-recognition field now records as permanent state.
+**[mem:4 @38]** — *the feed lights the anchor the report did not name*
 
-## Convergence-trace
+The proto-line: `the insect-feed returns wren-stitch-maker-flea-bottom-ward`.
 
-fault-005 (auditor AP10 — NI chassis-recurrence) — overlaps with mem:1/@12 and mem:3/@42 co-citations. The monument spine that supports the NI defense against AP10 is correctly present here: both NI entries that use the chassis are co-cited with the corresponding memory entries at the same anchors. The mutual support between NI and memory at @12 and @42 is the reason the AP10 defense holds.
+The monument claimed: same un-priced-anchor family, re-fired at the chapter close. The file's AP11 carve-out asserts this is not persistent-monument-firing (anti-pattern #11) because the cue mode shifts from point-event recognition (mem:2) to continuous-operation thesis-enactment (mem:4). The distinction lives in the gloss and the frontmatter metadata.
 
-fault-006 (auditor AP12 soft watch) — author-vocabulary "line" + future-naming. Attack sustained above; distinct families and structural positions distinguish the entries. Not a reader-experience problem at this chapter. Carry-forward to c03 per parking-lot item is correct.
+Here is what I am looking at in the description field:
 
-## Verdict: ACCEPT
+mem:2: *the feed returns the body she will not write down*
+mem:4: *the feed lights the anchor the report did not name*
 
-Three entries, three monument families, one per scene. The doubled-register (one Earth-Bet displacement, two Westerosi-monument) covers both legs of the chapter's cross-world cost. The peak-bone fire at @27 earns its exception through the displacement-clamp construction — the hand that knows the motion is the correct form of consequence-that-propagates-backward. The Khepri-rhyme pair (mem:1/@12 + mem:3/@42) reads as two distinct costs at two distinct structural positions; the author-vocabulary watch is noted but does not register as a reader-experience problem in this chapter. The memory facet is sparse (6.4%), fires on behavior rather than reflection, and accumulates weight without discharging it early. This is how earned bleakness works.
+These are the same sentence. Subject: the feed. Verb: performs a detection act (returns / lights). Object: the thing-the-architecture-refused-to-record (the body she will not write down / the anchor the report did not name). The scaffold is identical. The only variation is synonym-substitution: returns → lights, body → anchor, will not write down → did not name.
+
+The carve-out asserts the second entry is a continuous-operation thesis. I cannot read that thesis in the description field. *The feed lights the anchor the report did not name* is a discrete detection event — the feed fires, finds the anchor, names the gap. That is the same point-event construction as mem:2. If the description were enacting continuous-operation, it would need to register the feed as an ongoing process, not as a firing event: the architecture that keeps not recording, not the single moment of return. *The feed does not stop finding what the report will not hold* would gesture toward continuous-operation. *The feed lights the anchor the report did not name* fires and is over.
+
+The anti-pattern the rubric names for this: #12, author-vocabulary leak — memory-flag descriptions echoing each other across an episode is a kickback signal. The echoing here is not vocabulary-level (the words differ); it is scaffold-level. The same sentence shape, twice. The stitcher sees two description fields with identical construction at two different bones. The stitcher cannot produce intensification from those inputs because the inputs are not intensifying — they are repeating in different words.
+
+The distinction the file claims (point-event vs. continuous-operation thesis) is real and structurally defensible. It is in the wrong field. It is in the gloss and the metadata. It needs to be in the description field, where the stitcher reads it.
+
+**Attack:** the AP11 carve-out is documented but the description does not deliver the claimed cue-mode shift. The entry requires either (a) a rewritten description that enacts continuous-operation in displacement-cue form, or (b) relocation to an anchor where the continuous-operation reading is more legible without synonym-substitution of the mem:2 scaffold.
+
+**Convergence with auditor:** pass-003 cleared the NI-spine co-citation for mem:4 — narrator:9 @38 confirmed. That pass is not contested. The attack is on the description field's scaffold recurrence, which is the seam the mechanical spine-check does not enumerate.
+
+---
+
+## File-level reading
+
+**Sparsity:** 5.1% on 39 bones. Two entries. The chapter is operational — transactional acceptance, four-ward feed, world-axis pivot. Silence is the right default. I do not object to the count.
+
+**Single-register:** Both entries are earth-bet displacement, un-priced-anchor family. The file argues the both-meaningful gate forced this because ASOIAF-fluency is required to feel the Westerosi monument candidates as load-bearing, and the active audience trio does not supply that fluency at full strength. The per-season accounting preserves doubled-register at the series level. That argument is defensible for this chapter.
+
+The format of that defense is not. The body-block preamble is required by the schema so the Phase 0 scan can verify a defended overshoot. The defense exists; the format is wrong. This is the convergence with fault-007.
+
+**Monument-family diversity:** Two fires on the same monument family — earth-bet displacement, un-priced-anchor. The rubric requires monument-family diversity across the file. Two fires on one monument, at this density, gives the stitcher one monument to work with. The impoverishment is real even if the count is technically correct. If mem:4's description were genuinely in a different cue mode (continuous-operation thesis vs. point-event recognition), the diversity concern would shift — two fires on the same monument family but in different operational registers is a weaker diversity problem than two fires on the same monument in the same register. As the entry currently reads, the stitcher gets two descriptions with the same scaffold: the diversity is in the metadata, not in the text.
+
+**Inverted pressure-signal alignment:** Both anchors are in quiet zones — @22 pre-peak in scene-B, @38 in the scene-C trail after Jarvis's exit. Neither is in peak-bones arrays. The pressure-signal inversion holds. This is the one file-level gate that is clean without qualification.
+
+---
+
+## VERDICT: revise
+
+**Callouts:**
+
+[memory:mem:4 @38] @proto-38 — The AP11 carve-out claims cue-mode shift from point-event to continuous-operation thesis, but the description field delivers the same sentence scaffold as mem:2. *The feed lights the anchor the report did not name* reads as a discrete detection event, not a continuous-operation register. Rewrite the description to enact the continuous-operation thesis in displacement-cue form — the architecture as running process, not as a second instance of the first firing — or relocate to an anchor where the process-register is legible. Convergence-trace: no direct auditor finding; this is the seam the spine-check and the forward-citation mechanical scan do not enumerate.
+
+[memory:file-level / carve-out format] — Single-register carve-out rationale is frontmatter-only. Body-block preamble per facet.schema.md §Rubric carve-out preamble is required before stitcher Phase 0 scan. The defense exists; it is in the wrong field. Convergence-trace: auditor fault-007 (RUBRIC-FIDELITY — memory single-register without preamble-block carve-out).
+
+[memory:file-level / monument-family diversity] — Both entries are earth-bet displacement / un-priced-anchor family. Two fires on one monument family, at 5.1% density, give the stitcher one monument. The diversity floor is not met. This resolves if mem:4's rewrite enacts a genuinely distinct cue mode that the stitcher can read as operational-register variation within the same monument family; it does not resolve by synonym-substitution in the description field alone.

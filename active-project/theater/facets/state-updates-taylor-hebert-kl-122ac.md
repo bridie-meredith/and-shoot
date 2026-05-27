@@ -1,36 +1,95 @@
 facet: state-updates
-episode: b01-c03
-author: dialogue-writer-fork/taylor-hebert-kl-122ac
-target-scope: actor:taylor-hebert-kl-122ac
+episode: b01-c04
+author: dialogue-writer-fork:taylor-hebert-kl-122ac
+slice: actor:taylor-hebert-kl-122ac only
 ---
 
-1 @4 actor:taylor-hebert-kl-122ac.observation-status: anonymous -> observed-by-courier
-2 @7 actor:taylor-hebert-kl-122ac.body-posture: market-mobile -> still-on-recognition
-3 @8 actor:taylor-hebert-kl-122ac.observation-status: observed-by-courier -> observed-by-patron
-4 @8 actor:taylor-hebert-kl-122ac.position-with-patron: anonymous -> courier-named-function
-5 @8 actor:taylor-hebert-kl-122ac.tether-prot-rise-ledger: street-only -> court-layer-added-partial
-6 @10 actor:taylor-hebert-kl-122ac.tether-prot-rise-ledger: court-layer-added-partial -> court-layer-added-full
-7 @14 actor:taylor-hebert-kl-122ac.body-posture: still-on-recognition -> still-on-shed-wall
-8 @19 actor:taylor-hebert-kl-122ac.feed-mode: ambient-passive -> actively-counting-inventory
-9 @22 actor:taylor-hebert-kl-122ac.feed-mode: actively-counting-inventory -> mapping-against-coverage
-10 @23 actor:taylor-hebert-kl-122ac.moral_framework-position: prohibition-as-fence -> prohibition-as-variable
-11 @29 actor:taylor-hebert-kl-122ac.moral_framework-position: prohibition-as-variable -> prohibition-price-tagged
-12 @31 actor:taylor-hebert-kl-122ac.position-with-patron: courier-named-function -> engaged-interlocutor
-13 @33 actor:taylor-hebert-kl-122ac.feed-mode: mapping-against-coverage -> confirming-Jarvis-exit
-14 @36 actor:taylor-hebert-kl-122ac.body-posture: still-on-shed-wall -> leaving-yard
-15 @36 actor:taylor-hebert-kl-122ac.feed-mode: confirming-Jarvis-exit -> still-running
+# Slice contract:
+#   - This file authors actor:taylor-hebert-kl-122ac.* entries ONLY (POV-character actor-state).
+#   - studio.* and prop:* entries authored by studio in a separate slice.
+#   - Non-POV actor:* entries (jarvis-coin-kl-courier, oswyn-mudway-flea-bottom-elder,
+#     wren-stitch-maker-flea-bottom-ward) authored by their own forks in separate slices.
+#   - To be merged at Phase 2 consolidation into facets/state-updates-b01-c04.md.
+#
+# Field-extensions (per §"Field-extension protocol" of rubric-state-updates.md):
+#   - actor:taylor-hebert-kl-122ac.knowledge.arrangement-state         (new) — tracks moral_framework state-character within rank 1
+#   - actor:taylor-hebert-kl-122ac.knowledge.oswyn-as-unknowing-coverage-node  (new) — tracks routing-architecture named-human entries
+#   - actor:taylor-hebert-kl-122ac.knowledge.wren-in-coverage-map      (new) — tracks anchor-discipline canonical state: wren's presence in feed coverage (registration fact)
+#   - actor:taylor-hebert-kl-122ac.knowledge.wren-report-inclusion      (new) — tracks anchor-discipline canonical state: whether wren is included in the patron report (decision fact; separable from registration; load-bearing for d14)
+#   - actor:taylor-hebert-kl-122ac.knowledge.intelligence-routing-state (new) — tracks first-upward-routing operational state
+#   - actor:taylor-hebert-kl-122ac.stats.capability_axis: existing integer field on state.md; mutates here at axis_move bones flat 15 and flat 27.
+#   All field-extensions are tracked-state aspects propagated by chapter handoff_out (memory.md chapters[b01c04].handoff_out.character_state /
+#   open_threads); NOT perception/mood/register.
+#
+# Cross-facet co-citation expectations (POV-restriction rule §"Cross-facet contract"):
+#   Every actor:taylor-hebert-kl-122ac.* entry below REQUIRES a narrator-interest co-citation on the same @<anchor>.
+#   Flagged at end-of-file under "Flagged seams" for cross-facet review.
 
-# field-extension: observation-status — tracked exposure-class field; tracks who has operational observation on Taylor (anonymous / observed-by-courier / observed-by-patron). Persistent across the chapter; load-bearing for the position_in_kl_smallfolk_anonymous → patron-visible trajectory.
-# field-extension: position-with-patron — tracked structural-position field; tracks Taylor's defined position relative to Otto Hightower's apparatus via the courier interface (anonymous / courier-named-function / engaged-interlocutor). Tracks the social_tether-antag axis +1.5 movement and position-prot-rise axis +1.0 movement.
-# field-extension: tether-prot-rise-ledger — tracked relationship-ledger field; tracks the cl01b court-layer accumulation across the chapter (street-only / court-layer-added-partial / court-layer-added-full). Two-stage @8/@10 because the offer arrives in two utterances; tracks social_tether-prot-rise +1.0.
-# field-extension: moral_framework-position — tracked field-state for the moral_framework axis at this chapter's contract resolution (prohibition-as-fence / prohibition-as-variable / prohibition-price-tagged). Two transitions land at the scene-B peak (@23) and the scene-C peak (@29); together carry the moral_framework -1.0 axis movement.
-# field-extension: feed-mode — tracked operational-register field for the insect-feed (ambient-passive / actively-counting-inventory / mapping-against-coverage / confirming-Jarvis-exit / still-running). Defensible as tracked-state per the chapter's substance contract — this is what feed-mode IS for Taylor at this episode; operational, not perceptual.
-# field-extension: body-posture — tracked posture field with multi-beat persistence (market-mobile / still-on-recognition / still-on-shed-wall / leaving-yard). Each state load-bearing for the subsequent move; no transient posture-as-state contamination.
+1 @9 actor:taylor-hebert-kl-122ac.stats.position_in_kl: smallfolk-anonymous -> named-conduit-at-courier-tier
+2 @9 actor:taylor-hebert-kl-122ac.knowledge.arrangement-state: licensed-exception-considered -> licensed-exception-active
+3 @15 actor:taylor-hebert-kl-122ac.stats.capability_axis: 2 -> 3
+4 @18 actor:taylor-hebert-kl-122ac.knowledge.oswyn-as-unknowing-coverage-node: absent -> present
+5 @22 actor:taylor-hebert-kl-122ac.knowledge.wren-in-coverage-map: absent -> present
+6 @27 actor:taylor-hebert-kl-122ac.stats.capability_axis: 3 -> 4
+7 @31 actor:taylor-hebert-kl-122ac.knowledge.intelligence-routing-state: dormant -> routing-to-jarvis-active
+8 @31 actor:taylor-hebert-kl-122ac.knowledge.wren-report-inclusion: na -> excluded # field-extension: wren-report-inclusion (new; see preamble)
 
-# Cross-facet contract: each actor:taylor.* entry requires narrator-interest co-citation at the same anchor. R2 verifies against narrator-interest-taylor-hebert-kl-122ac.md.
-# Anchors expecting NI co-fire: @4, @7, @8, @10, @14, @19, @22, @23, @29, @31, @33, @36.
+# Cull-log (delete-only per facet schema; one pass):
+#   Pre-cull set: 13 candidate entries. Post-cull: 7 entries. 6 deletions.
+#   [cycle-3 add: entry 8 wren-report-inclusion @31 added via compound-split of entry 5 — not a new
+#    candidate but a decomposition of present-but-outside-report into two separable canonical facts.
+#    Post-cycle-3 entry count: 8.]
+#   DEL @3  actor:taylor.location: hook-district -> oc-cooper-yard-eel-alley
+#           — location-tracking density-on-flat risk; chapter has 5 entrance bones; not load-bearing irreversible registration.
+#             Studio location-state facet carries the environment-frame; actor.location reverts to studio's tracking.
+#   DEL @14 actor:taylor.location: oc-cooper-yard-eel-alley -> oc-pig-tallow-lane         (same reason)
+#   DEL @26 actor:taylor.location: oc-pig-tallow-lane -> oc-ropers-court                  (same reason)
+#   DEL @15 actor:taylor.stats.coverage_wards: hook -> hook+pig-tallow-lane               — invented field; capability_axis numeric carries
+#           the canonical state; coverage-set extension breaks bone-level magnitude anchoring (the second-ward jump at @22 is
+#           a peak-shadow registration, not a magnitude-bearing bone). Conservative refusal per Field-extension protocol.
+#   DEL @27 actor:taylor.stats.coverage_wards: ... -> hook+...+ropers-court               (same reason)
+#   DEL @31 actor:taylor.knowledge.arrangement-state: licensed-exception-active -> licensed-exception-running-as-routine
+#           — within-rank polish duplicates the @31 intelligence-routing-state flip; routing-state IS the form
+#             running-as-routine takes. Parasitic against the strip-test (the operational flip carries the canonical change).
+#
+# Skip-correct (no fire; rubric defense):
+#   SKIP @7  speech-acceptance bone carries social_tether-antag +1.0 — Otto's lever, Otto-fork's authority (cross-POV).
+#            Taylor's interior crossing at @7 is captured by the @9 entries (peak-bone, position_in_kl + arrangement-state).
+#   SKIP @8  body-stillness bone "holds the feet" — peak-shadow registration; moral_framework axis HELD at scene-level;
+#            posture-as-state would need multi-beat persistence load-bearing on the next move that the @9 position-flip
+#            does not already carry.
+#   SKIP @23 "holds the feet" at second-ward junction — held-against-turn class (rising zone immediately adjacent to peak-bone @22 / @24
+#            cluster); rubric explicitly forbids canonical state-update co-citation. Wren-anchor-discipline registers
+#            via @22 perception-flip, not the @23 not-walking posture.
+#   SKIP @28 "runs the four-ward feed" — operational enactment of the @27 capability-axis flip; strip-test fails (field
+#            still at <new> at next beat regardless of this entry).
+#   SKIP @36 jarvis-coin-kl-courier exits with the report — substance_delta carries position-world +1.0, which is world-axis
+#            (Green-faction consolidation), not Taylor's actor-state. The world-axis flip is studio's authority via
+#            studio.position_world or environment-frame tracking.
+#   SKIP @37 "runs the ward-feed" — same enactment-after-flip class as @28.
+#   SKIP @38 insect-feed returns wren — second-fire on the @22 knowledge-flip; field already at <new>.
+#   SKIP @39 chapter-close exit — trail-bone; not a canonical irreversible flip on Taylor.
 
-# Peak-bones honored: scene-A @8 (FIRE x3 — observation-status, position-with-patron, tether-prot-rise-ledger); scene-B @23 (FIRE — moral_framework); scene-C @29 (FIRE — moral_framework). All three peaks carry state-update support.
-# Held-against-turn honored: @11 (peak-shadow for @8) — verbal agreement is narrator-interest territory, position-with-patron flip to engaged-interlocutor lands at the actual bidirectional confirmation @31, NOT at the verbal-agreement approach @11. @24 (peak-shadow for @23) — Taylor's I-have-heard-you acknowledgment; moral_framework canonical flip already at @23, no double-fire. @28 (peak-shadow for @29) — same physical posture as @14; no body-state flip.
-# Strip-test: every entry passes — without the fire, downstream canonical state would mis-track the chapter's structural deltas across all four axes_in_motion (moral_framework -1.0, position-prot-rise +1.0, social_tether-antag +1.5, social_tether-prot-rise +1.0).
-# Persistence: every entry's <new> persists past the anchor beat through chapter close OR until the next entry on the same field. observation-status locks at observed-by-patron from @8 forward; position-with-patron locks at engaged-interlocutor from @31 forward; tether-prot-rise-ledger locks at court-layer-added-full from @10 forward; moral_framework-position locks at prohibition-price-tagged from @29 forward; body-posture trajectory closes at leaving-yard @36; feed-mode closes at still-running @36 (carries into chapter-close transition).
+# Flagged seams (cross-facet review at consolidation):
+#   SEAM-NI-CO-CITATION  All 7 entries above require narrator-interest co-citation on the same @<anchor>.
+#                        Specifically: NI MUST fire at @9, @15, @18, @22, @27, @31.
+#                        Absence of any of these in narrator-interest is REJECT per §Cross-facet contract (POV actor-state).
+#   SEAM-PEAK-BONE-9     @9 is a peak-bone (per scene-map-b01-c04.md scene-A); two state-updates co-cite (position + arrangement-state).
+#                        Strong-expect satisfied; cross-facet test should confirm.
+#   SEAM-PEAK-BONE-18    @18 is a peak-bone (scene-B); oswyn-as-unknowing-coverage-node co-cites. Strong-expect satisfied.
+#   SEAM-PEAK-BONE-36    @36 is a peak-bone (scene-C) but Taylor slice DOES NOT fire (world-axis, not actor-state).
+#                        Studio slice expected to fire here on prop:report-sheet.holder or studio.position_world.
+#                        If neither studio nor any actor fork fires @36, cross-facet review flag — peak-bone with no
+#                        state-update support.
+#   SEAM-FIELD-EXTENSIONS All four knowledge-* fields are extensions. Margit referral may be appropriate if these recur across
+#                        b01c05+. For now, declared inline per §"Field-extension protocol".
+#   SEAM-CAPABILITY-RANK Chapter contract sums capability +2.0 across c04 (target_delta_magnitude); bone-level fires at @15 (+1.0)
+#                        and @27 (+1.0) = +2.0 EXACT. The +0.5 nudge to chapter handoff_out rank 4.5 is downstream-rendered,
+#                        not bone-anchored — consistent with substance_delta_measured.
+#   SEAM-WREN-ANCHOR-DISCIPLINE  @22 entry (knowledge.wren-in-coverage-map: absent→present) is the chapter's load-bearing
+#                        future-cost-collateral plant per chapter goal — registration fact only.
+#                        @31 entry (knowledge.wren-report-inclusion: na→excluded) carries the separable decision fact — report
+#                        exclusion anchors at the delivery bone where the decision is enacted, not at the feed-return bone.
+#                        Cross-facet expectation: narrator-interest @22 + memory @22 (Wren callback to
+#                        b01c01s03 + b01c03 anchor-status) + feeling @23 (somatic tell of not-walking). State-update slice
+#                        carries both canonical write-backs; downstream facets carry the interior load.

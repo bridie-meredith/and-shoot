@@ -1,59 +1,121 @@
 ---
 reviewer: sensory-old-state-reader
 facet: sensory
-episode: b01-c02
+episode: b01-c04
 cycle: r1
-date: 2026-05-25
-verdict: accept
+date: 2026-05-27
+verdict: revise
 ---
 
-# Verdict reasoning
+# Per-Entry Adversarial Review — sensory-b01-c04.md
 
-Both entries carry the loc-state negative-inference carve-out declared in the facet file header. The carve-out is specific: no loc-state facet file was authored for b01c02; old-states are derived from the location card (oc-stitch-house-lane) Sensory Vocabulary section. This reviewer's attack axis is old-state lineage correctness. The carve-out must be interrogated, not merely accepted.
+## Old-state lineage protocol
 
-**sensory:1 @4 — sound: lane-quiet -> alley-mouth-murmur**
-
-Walk the lineage:
-1. Most recent prior loc-state at @4: loc-state:2 @4. Entry reads: "oc-stitch-house-lane | dawn-to-day | none | lane-mouth-occupied | threshold at the lane-mouth: controls sight-line in both directions; compressed single-file width governs who can pass while Taylor holds position." The loc-state:2 entry does not carry a sensory note naming the sound register; it names the tactical geometry (threshold, sight-line, compressed width).
-2. Most recent loc-state before @4: loc-state:1 @1. Entry reads: "oc-stitch-house-lane | dawn-to-day | none | drain-angle-vacated | lane-mouth forty paces north: visible from angle-gap, governing line-of-sight both into the lane and out to the Hook alley." No sensory note at loc-state:1 either.
-3. Old-state derivation: "lane-quiet." The location card's Sensory Vocabulary states: "The drain-water trickle at the angle-gap — audible when the lane is quiet." The phrase "audible when the lane is quiet" positively names lane-quiet as a real perceptual condition — it is not a negative inference but a direct statement of baseline. The location card establishes lane-quiet as the condition under which the drain-water becomes audible, identifying lane-quiet as the lane's ambient sound baseline. The old-state "lane-quiet" traces directly to the location card's Sensory Vocabulary.
-4. New-state: "alley-mouth-murmur." The location card names "Compressed foot-traffic sound" as a named Sensory Vocabulary feature. The alley-mouth murmur is the acoustic character of the junction at the lane's north end, where the lane opens onto the broader Hook District alley. The new-state is consistent with the location card's named sound palette for the lane-mouth zone.
-5. Delta direction: old (lane-quiet) → new (alley-mouth-murmur) is an up transition — the acoustic level rises as Taylor reaches the junction. Consistent with the positional move from enclosed lane interior to lane-mouth.
-
-**Lineage verdict for sensory:1: TRACES.** The old-state "lane-quiet" derives from a positive statement in the location card Sensory Vocabulary. The new-state "alley-mouth-murmur" is consistent with the card's "Compressed foot-traffic sound" naming. The carve-out is not needed in the strong form for sensory:1; the location card directly supplies the baseline.
+For each of the 3 entries:
+1. Identify the most recent loc-state entry at or before this protoline.
+2. Read the sensory entry's old-state field.
+3. Check consistency: does old-state trace to loc-state, OR to the most recent prior sensory entry on the same modality?
+4. Check delta direction: does loc-state's palette actually produce this new-state?
 
 ---
 
-**sensory:2 @11 — smell: pre-tallow-lane-ambient -> tallow-smoke-onset**
+## Entry-level callouts
 
-Walk the lineage:
-1. Most recent prior loc-state at @11: loc-state:3 @11. Entry reads: "oc-stitch-house-lane | days-of-coverage | none | stitch-house-lamp-burning | tallow smoke pooling at lane-floor level in the east wall's reach: the insect-feed's location marker for the stitch-house threshold." The loc-state:3 entry names the tallow smoke's presence and character — pooling at lane-floor level, east wall's reach. It establishes the new state, not the old state.
-2. No prior sensory entry on the smell modality in this file; no prior loc-state entry names an ambient smell baseline for the lane before the tallow smoke arrives.
-3. Old-state derivation: "pre-tallow-lane-ambient." This is a negative inference — the carve-out declares it explicitly: "Marks the stitch-house lane implies the smoke is arriving/spreading as an event. Pre-event state is the smoke-free lane ambient." The derivation logic is: the location card describes tallow smoke as an onset-and-pool event ("pooling at lane-floor level in still air"), not a continuous ambient. Therefore before the onset, the lane is smoke-free. The old-state names the pre-onset condition.
-4. Is the negative-inference defensible? The location card Sensory Vocabulary names tallow smoke as pooling "in still air" — framing it as a condition-dependent event, not always-on ambient. Loc-state:1 and loc-state:2 (the chapter's earlier loc-state entries) do not mention tallow smoke as present, which is consistent with the smoke not yet having arrived. The negative inference has chain support: the silence of the prior loc-state entries on tallow smell + the location card's onset-and-pool framing → the pre-@11 state is smoke-free.
-5. New-state: "tallow-smoke-onset." Traces directly to loc-state:3 @11's content: "tallow smoke pooling at lane-floor level." The new-state name accurately describes what loc-state:3 establishes. Strong match.
-6. Delta direction: old (pre-tallow-lane-ambient / smoke-free) → new (tallow-smoke-onset / smoke arriving and pooling). Up. Consistent with loc-state:3's description.
+### [sensory:1] @1 — `smell: eel-alley-dawn-air -> tallow-damp-lane-caulking`
 
-**The old-state name "pre-tallow-lane-ambient" is the weakest link.** It is defined by absence: the lane before the smoke. The attack available here: "pre-tallow-lane-ambient" is not a named perceptual state in the location card; it is derived by subtracting the onset event. The location card does not positively state "the lane smells of nothing before the lamp burns." The old-state exists only because the new-state happens.
+**ATTACK — STRONG.**
 
-However: this is the canonical negative-inference derivation case. The alternative — leaving the old-state unspecified or as a free-floating generic — would be strictly worse. The carve-out was designed for exactly this structural condition: no loc-state file, onset event named in the location card, pre-event state inferred from the card's onset framing. The precedent from the b01c01 cycle-1 negative-inference derivation (referenced in the carve-out preamble) was accepted on the same logic. The carve-out is internally consistent; the derivation logic is documented; the negative inference is the only defensible baseline given the chapter's loc-state structure.
+Most recent loc-state at or before @1: loc-state:1 @1. Entry reads: `oc-cooper-yard-eel-alley | predawn | none | tallow-damp-present, yard-workers-at-near-shed, third-bell-quiet | the tallow-damp off the lane-caulking reaches the shed-wall before the yard is visible.`
 
-**Lineage verdict for sensory:2: TRACES — under carve-out.** The old-state is a negative inference from the location card's onset framing. Thin but documented. The new-state traces directly to loc-state:3. The delta direction is unambiguous. No baseline-invention; the derivation logic is explicit and named.
+Old-state claimed: `eel-alley-dawn-air`. Walk the lineage:
+
+Step 1: No loc-state entry precedes @1 in this chapter. @1 is the chapter-open anchor. There is no prior entry to inherit from.
+
+Step 2: No prior sensory entry on smell-modality exists. sensory:1 is the first smell fire in the episode.
+
+Step 3: The old-state `eel-alley-dawn-air` cannot be derived from any loc-state entry. It names a pre-tallow ambient that no file establishes. This is a baseline invented by the sensory entry itself.
+
+Step 4: Compound problem. loc-state:1 @1 declares `tallow-damp-present` as the condition already in place at @1. The entry's own language — "the tallow-damp off the lane-caulking reaches the shed-wall before the yard is visible" — places the tallow-damp as the chapter-open environment, not as a new arrival. If tallow-damp is already present at @1, the sensory entry's new-state (`tallow-damp-lane-caulking`) is recording the baseline, not a delta arriving at @1. The entry claims an inflection is occurring (old: eel-alley-dawn-air → new: tallow-damp-lane-caulking) but loc-state:1 puts tallow-damp in place from the chapter's first beat. There is no prior ambient to delta from.
+
+This is the loc-state-gap protoline failure mode: sensory:1 fires at @1 with no prior loc-state entry establishing the `eel-alley-dawn-air` baseline. The baseline cannot be derived.
+
+Convergence-trace: No auditor finding in `facets-final-audit.md` covers this old-state lineage fault. flag-003 identifies the 7.7% density geometry issue (above-band) for the file as a whole, but does not surface the per-entry baseline-invention problem at sensory:1. This callout is independent of and additional to the auditor's findings.
+
+**Verdict: REVISE.** The old-state `eel-alley-dawn-air` is unanchored — no loc-state entry at or before @1 establishes this baseline. Minimum resolution: (a) backfill a loc-state entry prior to @1 naming the pre-tallow ambient, OR (b) reframe sensory:1 as a scene-open establishment with old-state derived from the chapter's prior-chapter close (if that is accessible), OR (c) recognize that if tallow-damp is already the opening condition per loc-state:1, there is no delta to fire here — the entry should be deleted and the tallow-damp assigned to loc-state as a sustained baseline, not a sensory inflection.
 
 ---
 
-# Entry-level callouts
+### [sensory:2] @13 — `smell: tallow-damp-lane-caulking -> middens-discard-compound`
 
-No blocking callouts. Advisory notes only:
+**ACCEPT — conditional note.**
 
-[sensory:2] @11 — "pre-tallow-lane-ambient" as old-state is the thinnest defensible derivation in this file. If any future revise pass adds a second smell fire, it must inherit from either "tallow-smoke-onset" (if the smoke persists) or document a new loc-state entry first. The negative-inference carve-out is a single-use mechanism; it does not create a floating smell baseline for downstream fires.
+Old-state claimed: `tallow-damp-lane-caulking`. Lineage walk:
 
-# Convergence-trace notes
+Step 1: sensory:1 @1 fired on smell-modality; its new-state is `tallow-damp-lane-caulking`. The rubric permits old-state inheritance from the most recent prior sensory entry on the same modality. This is a valid chain: sensory:2 inherits from sensory:1's new-state.
 
-- auditor carve-out preamble (loc-state negative-inference derivation from location card): this reviewer's gate is directly addressed by the carve-out. The preamble documentation is specific and named per-entry. The lineage walk above confirms the carve-out logic holds for both entries.
-- auditor flag-001 (6.9% density): density is not this reviewer's axis.
-- auditor RUBRIC-FIDELITY: "sensory modality distribution: 2 modalities (sound @4, smell @11). ≥2 floor met." Both modalities' old-states trace. No cross-facet contradiction with loc-state found.
-- b01-c01 cycle-1 verdict (this reviewer): that chapter's carve-out covered "lane-ambient" as smell old-state for sensory:1 @2 by negative inference, with a notation that it was "the thinnest possible carve-out application." b01-c02's sensory:2 old-state derivation is structurally similar but marginally stronger: the location card explicitly frames tallow smoke as an onset-and-pool event (not always-on), which makes the pre-event state more clearly inferrable. The derivation is one notch stronger than the b01-c01 precedent.
-- No auditor finding targets old-state correctness for either entry. The carve-out preamble preempts the unanchored-old-state HARD.
+Step 2: Most recent loc-state at or before @13: loc-state:3 @13 — `oc-pig-tallow-lane | morning | middens-junction-active, carter-work-ongoing | the discard-air sits heaviest at the junction-mouth.` New-state `middens-discard-compound` maps directly to loc-state:3's `discard-air sits heaviest.` Delta direction is correct: the scene moves from cooper's-yard tallow zone to pig-tallow-lane middens junction; the smell intensifies. Loc-state:3 grounds the new-state cleanly.
 
-**File verdict: ACCEPT.**
+Step 3: Direct loc-state fallback is also available. loc-state:1 @1 names `tallow-damp-present`, which independently licenses `tallow-damp-lane-caulking` as an old-state description. Even if the prior-sensory chain is discounted (because sensory:1 itself has a baseline-invention fault), the direct loc-state derivation holds: tallow-damp is the established ambient of the eel-alley / cooper's-yard zone per loc-state:1.
+
+Conditional note: the cleaner path is the sensory:1 new-state inheritance. If sensory:1 is deleted as part of resolution, the old-state must trace directly to loc-state:1 `tallow-damp-present` — which it can, without structural change to sensory:2.
+
+Convergence-trace: No auditor finding targets sensory:2 old-state lineage. flag-003 is file-level only. sensory:2 survives both resolution paths for sensory:1.
+
+**Verdict: ACCEPT** (old-state lineage holds via either the prior-sensory chain or the direct loc-state derivation; new-state grounded in loc-state:3).
+
+---
+
+### [sensory:3] @25 — `sound: carter-work-ambient -> roper's-court-near-silence`
+
+**ACCEPT — inference gap noted, within rubric tolerance.**
+
+Old-state claimed: `carter-work-ambient`. Lineage walk:
+
+Step 1: No prior sound-modality sensory entry exists in this file (sensory:1 and :2 are both smell). Old-state must derive from loc-state.
+
+Step 2: Most recent loc-state at or before @25 that names a sound-relevant condition: loc-state:3 @13 — `oc-pig-tallow-lane | morning | carter-work-ongoing.` `carter-work-ongoing` is a condition entry that licenses `carter-work-ambient` as the sound baseline carried from the prior location zone. The naming is a single-hop translation from condition-flag to sound-descriptor.
+
+Step 3: loc-state:4 @25 — `oc-ropers-court | predawn | court-empty, far-tributaries-dark | the early-morning grey leaves the court sight-clear to all tributary mouths.` loc-state:4 names no explicit sound note. The new-state `roper's-court-near-silence` derives from `court-empty` and the predawn empty-court framing. Delta direction: the carter-work ambient of the prior zone drops away as Taylor enters the silent court. This is a cross-location transition-inflection: old-state is the sound of the zone left behind; new-state is the sound (near-silence) of the new zone.
+
+Inference gap: loc-state:3 @13 is the pig-tallow-lane entry; `carter-work-ongoing` is that location's condition. The old-state `carter-work-ambient` derives from a different location's loc-state than the anchor protoline's own location (loc-state:4 is oc-ropers-court). The rubric requires the old-state to match "the most recent location-state file's § sensory or § conditions field for the beat's location, OR the most recent prior sensory-flag entry on the same modality." For sound-modality, with no prior sensory entry, the applicable loc-state is the most recent one prior to @25. loc-state:3 @13 is that entry; it is at a different location (pig-tallow-lane) from loc-state:4 (ropers-court). The rubric's phrasing is ambiguous about cross-location carry: "most recent location-state file's § conditions field for the beat's location" could be read as requiring the current location's loc-state (loc-state:4, which has no sound note) or as permitting the most recent loc-state overall (loc-state:3, which provides the sound basis).
+
+The cross-location carry is the standard transition-inflection pattern: the old-state names the ambient that was present immediately before arriving at the new location. This is how sensory fires work at location transitions. loc-state:4's `court-empty` grounds the new-state directly. The inference from loc-state:3's condition `carter-work-ongoing` → old-state `carter-work-ambient` is single-hop and named. The delta is structurally defensible.
+
+Convergence-trace: pass-007 (scene-map per-scene caps: sensory ≤3/scene PASS) is adjacent but does not address old-state lineage. No auditor finding targets sensory:3 old-state lineage.
+
+**Verdict: ACCEPT** (old-state traces to loc-state:3's `carter-work-ongoing` via cross-location carry at scene transition; new-state grounded in loc-state:4 `court-empty`; inference gap minimal and within rubric tolerance).
+
+---
+
+## File-level old-state baseline summary
+
+| entry | modality | old-state | loc-state anchor | lineage status |
+|-------|----------|-----------|-----------------|----------------|
+| sensory:1 @1 | smell | eel-alley-dawn-air | none — chapter-open, no prior entry | UNANCHORED |
+| sensory:2 @13 | smell | tallow-damp-lane-caulking | sensory:1 new-state / loc-state:1 direct | VALID (dual path) |
+| sensory:3 @25 | sound | carter-work-ambient | loc-state:3 @13 (carter-work-ongoing) | VALID (cross-location carry) |
+
+One of three entries fails the old-state lineage gate. The cross-facet contract between loc-state and sensory is broken at the chapter-open entry.
+
+---
+
+## Convergence-trace (file-level)
+
+- **sensory:1 unanchored old-state**: no auditor finding in `facets-final-audit.md` surfaces this. flag-003 identifies the density geometry issue (3/39 = 7.7% above 6%) but is file-level only and does not address per-entry baseline lineage. The unanchored old-state at sensory:1 is a new finding not overlapping any auditor flag. It independently warrants the revise verdict.
+- **sensory:2 conditional validity**: no convergent auditor finding. Passes on both available derivation paths.
+- **sensory:3 inference gap**: no convergent auditor finding. The cross-location carry is the expected pattern at scene transitions; the gap is within tolerance.
+
+---
+
+## VERDICT
+
+**verdict: revise**
+
+sensory:1 @1 fails old-state lineage review. The old-state `eel-alley-dawn-air` has no loc-state anchor: no prior loc-state entry at or before @1 names this ambient, and @1 is the chapter-open with no preceding entry to inherit from. Compound: loc-state:1 @1 places tallow-damp already present at the chapter-open, making the delta-from-prior-ambient structurally unsupported — there is no prior state to delta from.
+
+sensory:2 and sensory:3 pass.
+
+Minimum resolution paths for sensory:1:
+(A) Delete sensory:1 — if tallow-damp is the chapter-open baseline (per loc-state:1), there is no inflection to flag; the entry is recording the opening condition, not a change.
+(B) Revise the entry — if an inflection genuinely occurred (approaching the yard and crossing a threshold where the tallow-damp hit), backfill a loc-state entry or prior-chapter close-state that names the pre-tallow ambient, then anchor sensory:1's old-state to it.
+(C) Reframe as prior-chapter carry — if the preceding chapter's close-state names an ambient smell (not tallow-damp), that entry provides the old-state basis; this requires cross-chapter loc-state consultation.

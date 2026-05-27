@@ -3,6 +3,51 @@
 
 ---
 
+## 2026-05-27 — b01c04 state-updates-env authored at /and-facets Phase 1 R1
+
+Chapter b01c04: four-ward coverage expansion across 2 days. 39 bones, 3 scenes.
+14 env entries authored (above rubric 8-18% band; density justified by multi-ward / multi-day structure; rubric-carve-out preamble in state-updates-env.md).
+Field-extension: studio.coverage_active_range (new field; 3 fires: @15 +pig-tallow, @22 +stitch-house, @27 four-ward-complete).
+Prop-extension: prop:oc-report-sheet (new prop; no warehouse card; oc- slug; holder chain: taylor @31 → in-transit → jarvis-coat @32; exits scene @36).
+Coverage_active_range baseline at chapter close: four-ward-complete (hook + pig-tallow + stitch-house + ropers-court). Persists to c05+ as operational footprint canonical baseline.
+Scene-A: time_of_day reset @1 (third-bell-noon → first-bell-morning); actors_in_yard chain not tracked (within-chapter ephemeral; handoff session tracked at scene-C instead).
+Scene-B: location @13, coverage @15 + @22; middens-cart entry culled (strip-test: no downstream canonical relevance).
+Scene-C: day-2 time-skip @25; location chain @26/@29; coverage completion @27; actors_in_yard [taylor, jarvis] @29; report-sheet chain @31-@32; peak-bone actors_in_yard @36; yard-empty @37; chapter-close location @39.
+
+---
+
+## 2026-05-27 — b01c04 location-state authored at /and-facets Phase 1 R1
+
+Chapter b01c04: 39 bones, 3 scenes, 4 distinct locations.
+6 location-state entries (pre-cull: 8; cull-deleted: 2).
+Location arc: oc-cooper-yard-eel-alley (scene A predawn) → oc-pig-tallow-lane (scene B morning) → oc-ropers-court (scene C predawn day-2) → oc-cooper-yard-eel-alley (scene C first-bell handoff) → oc-stitch-house-lane (scene C chapter-close walk-back).
+Entry log:
+  loc-state:1 @1 — chapter-open place-anchor; tallow-damp off lane-caulking reaches shed-wall before yard visible.
+  loc-state:2 @4 — positioning verb (takes shed-wall); cover geometry: back to timber, lane-mouth across open yard.
+  loc-state:3 @13 — new location place-anchor; pig-tallow-lane middens junction, three alleys converging, discard-air heaviest at mouth.
+  loc-state:4 @25 — new location place-anchor; roper's-court early-morning grey, court sight-clear to all tributary mouths.
+  loc-state:5 @29 — mid-scene location switch (roper's-court → cooper's-yard); handoff geometry (Jarvis at lane-mouth, half-yard open air to shed-wall).
+  loc-state:6 @39 — chapter-close place-anchor for stitch-house-lane walk-back; north-end lane-mouth as final threshold before Hook.
+Cull log:
+  @17 deleted — carter parks cart; no subsequent actor movement turns on the cart position; parasitic against @13 junction anchor.
+  @36 deleted — Jarvis exits cooper's yard; exit legible in inherited @29 env; no new state information for stitcher.
+No continuity-carry: scene A (rising), scene B (rising-to-peak), scene C (rising-to-peak-to-trail) — none are qualifying shapes (flat-low/resolving/release-only). Fusion run @33-@34 in scene C is 2 bones, below 3-bone floor.
+Seam: scene C mid-scene location switch at @29 has no explicit Taylor-enters-yard bone; loc-state:5 fires on Jarvis-enters (@29) to carry the transition; stitcher infers Taylor already positioned at shed-wall.
+
+---
+
+## 2026-05-27 — b01c04 sensory authored at /and-facets Phase 1 R1
+
+Chapter b01c04: four locations across three scenes. 39 bones.
+3 sensory entries, 2 modalities (smell + sound).
+Sensory:1 @1 smell — eel-alley-dawn-air → tallow-damp-lane-caulking (scene-A entry inflection; location-identifier arrives before yard is visible).
+Sensory:2 @13 smell — tallow-damp-lane-caulking → middens-discard-compound (scene-B entry inflection; ward-signature shift; chains from sensory:1 old-state).
+Sensory:3 @25 sound — carter-work-ambient → roper's-court-near-silence (scene-C entry inflection; Pig Tallow Lane daytime-carter baseline drops to pre-dawn court near-silence; cross-modal coverage).
+Density: 3/39 = 7.7%; marginally over 6% ceiling; all three survive strip-audit. Flagged seam for auditor.
+Old-state sourcing: @1 from loc-card eel-alley-dawn-air (no prior entry); @13 from sensory:1 new-state; @25 from Pig Tallow Lane loc-card carter-work-ambient (no prior sound entry).
+
+---
+
 ## 2026-05-26 — b01c03 location-state authored at /and-facets Phase 1 R1
 
 Chapter b01c03: oc-stitch-house-lane precinct, two micro-locations. 36 bones, 3 scenes.

@@ -581,3 +581,52 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-05-27-001
+      created_at: 2026-05-27T00:00:00Z
+      created_by: "/and-write b01c04 Phase 2 audit + admin DEC-0030"
+      label: c03-bones-svo-form-contamination
+      target:
+        command: /and-write
+        scope: "*"
+        phase: Phase 1
+      severity: SOFT
+      description: |
+        c03 bones file (theater/bones/b01-c03.md) shipped with PP-heavy SVO text
+        (banned modifiers of place/direction/time/instrument/accompaniment) and
+        pair-split 0.5-magnitude axis_moves (below the schema's bone delta floor
+        of 1.0) because /and-write b01c03 Phase 2 was SKIPPED under cascade-budget
+        compression. c03 was never independently SVO-form audited.
+
+        c04's screen-writer absorbed c03's permissive style as canonical and
+        produced 33 FAULT-FORM-MODIFIER + 11 magnitude-floor violations.
+        Resolved via DEC-0030 Phase 1 redo with corrective brief naming c02
+        (revised, Phase 2 clean) as canonical reference.
+
+        Future /and-write Phase 1 dispatches should: (a) name c02 revised bones
+        as the canonical SVO-form/delta-magnitude reference; (b) warn explicitly
+        against c03 as a form model; OR (c) the c03 bones file should be
+        retroactively form-fixed to bring it into compliance (which would
+        require re-running /and-facets b01-c03 + /and-stitch b01-c03 because
+        bone-content changes invalidate downstream artifacts — high cost).
+
+        Process-critic dispatch deferred until Phase 2 re-audit on c04 confirms
+        whether the corrective brief was sufficient — if c04 Phase 2 redo clears,
+        the brief is the structural fix and a PROP for "Phase 1 dispatch must
+        name canonical reference bones" becomes the natural promotion. If c04
+        Phase 2 redo fails on the same grounds, the root cause is elsewhere
+        and warrants reassessment.
+      context_refs:
+        - active-project/staff/auditor/write-b01c04-pass2.md (45 HARD findings)
+        - staff/admin/decisions.md DEC-0030
+        - active-project/staff/showrunner/memory.md chapters[b01c03] cascade-budget
+          notes (line ~2766: "Phase 2-6 audit chain: SKIPPED under cascade budget")
+        - active-project/theater/bones/b01-c02.md (canonical form reference)
+        - active-project/theater/bones/b01-c03.md (contamination source)
+        - schemas/bones.schema.md line 107 (PP ban)
+        - active-project/staff/showrunner/memory.md line 1465 (chunk_targets.bone.delta_per_axis: 1-3)
+      resolution_suggestion: "Phase 1 corrective brief + Phase 2 re-audit confirms; promote to PROP if recurrence"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

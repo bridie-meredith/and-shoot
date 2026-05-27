@@ -553,6 +553,28 @@ methodology-update-proposed: no
 
 ---
 
+## DEC-0025 | 2026-05-27 | FAST
+
+question: User typed "do chapter 3" on branch `claude/chapter-3-eRDko`. C03 shipped 2026-05-26 under cascade-budget compression with several audit/review phases skipped. Deferred items: `/and-review bones b01c03`, `/and-facets b01-c03` Phase 5b audience-gate, `/and-postop b01c02 in c03 context`, and `/and-substance chapter b01c03` Phase 5 3-fork review. Four interpretations offered: (1) close out deferred audits, (2) re-cascade c03 from scratch, (3) advance to c04, (4) show draft.
+context: bone-gate verdict PASS-PRAGMATIC; Phase 9 cold-read PASSED; branch name is chapter-3 (argues against advancing to c04); recent work pattern is quality-iteration on already-shipped chapters (c02 tournament + cherry-pick); deferred items are explicitly named in memory.md.
+options:
+  (1) Close out deferred audits — fire /and-review bones b01c03 + /and-postop; light cost; no rewrite unless gate fails
+  (2) Re-cascade c03 from scratch — heavier; potentially rewrites shipped draft
+  (3) Advance to c04 — interpret as "next chapter" directive
+  (4) Show draft only
+
+decision: Option 1 — close out the deferred audits on c03.
+basis: goal:1 (pipeline correctness — skipped gates are open debt; closing them is the minimal path to a fully-compliant c03) + methodology:3b (cost — option 1 is cheapest; option 2 is a full cascade spend; option 3 contradicts the branch name) + methodology:3a (reversibility — audits-first preserves the option to re-cascade if they surface a FAIL; re-cascading first discards the shipped draft unnecessarily)
+rationale: The branch name `chapter-3` and the explicit memory.md deferred-item list both point to unfinished business on c03, not a forward move. Closing the skipped gates (bones review + postop) is the correct minimal action: if they PASS, c03 is clean and the next step is clear; if they FAIL, the re-cascade (option 2) is warranted by evidence rather than speculation. Running the skipped gates is also a goal:1 obligation — the chain has declared mandatory reviews that were budget-skipped, not waived.
+trade-off: If the user intended a full re-cascade or c04 advance, this answer adds one lightweight audit pass before the next step. That cost is trivially lower than a full cascade run on potentially-sound bones.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0024 | 2026-05-26 | SLOW (process-critic)
 
 question: Third Phase 9 cold-read FAIL on b01-c02 (multi-arm tournament + full Phase 7 sweep). All three stitches returned CONTINUE=no. Does the recurring CONTINUE=no constitute a process signal beyond PROP-0007 — specifically: (a) a modify to Phase 9 cold-read protocol for non-opening chapters / dormancy-prefigure dramatic shapes, or (b) a structural issue with the and-substance chapter contract for b01c02?
@@ -608,6 +630,812 @@ trade-off: Not tracking the candidate proposal in process-proposals.md as a defe
   qualification for non-opening chapters) is well-understood from these two dispatches and does not
   need to be formally deferred to avoid losing the thread.
 
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0026 | 2026-05-27 | FAST
+
+question: DEC-0025 follow-up: both c03 deferred audits are now resolved (/and-review bones b01c03 PASS-WITH-NOTES + /and-postop b01c02 already completed 2026-05-26). Three options for next step: (1) declare c03 closed and stop, (2) re-fire postop on c02 with fresh persona (dark-fantasy-reader), (3) run postop on c03 itself.
+context: /and-review bones b01c03 returned PASS-WITH-NOTES (0 HARD, 5 SIGNAL, 1 FLAG) today. /and-postop b01c02 in c03 context ran 2026-05-26 with worm-canon-pedant, divergent convergence, compound-noun saturation finding already logged as PROP-0007 / DEC-0019. c03 cold-read Phase 9 PASS (CONTINUE=yes), no depth-pass pending. The bone-review signals are advisory (fixable at bone scope if downstream revise dispatched, but none HARD, nothing blocking).
+
+options:
+  (1) Declare c03 closed — both scoped deferred audits resolved; report and stop.
+  (2) Re-fire postop b01c02 with fresh persona — adds one reader-eye; finding already logged; diminishing returns.
+  (3) Run postop on c03 — not in DEC-0025 scope; c03 has no depth-pass pending; 3 forks on a clean-PASS chapter.
+
+decision: Option 1 — declare c03 closed, report and stop.
+basis: goal:2 (cost discipline — options 2+3 are spend against already-logged findings or a chapter with no pending depth-pass) + methodology:3a (reversibility — stopping preserves /and-postop b01c03 as a user-invocable option; running it now without user direction is scope expansion) + methodology:3d (optionality — user retains the option to invoke /and-postop b01c03 explicitly if they want depth-of-quality signal before advancing) + goal:4 anti-pattern (no scope expansion past stated task)
+rationale: DEC-0025 scoped exactly two deferred audits. Both are on disk and closed. Option 2 adds a third reader-eye on c02's compound-noun saturation, which is already the primary finding of PROP-0007 and two fork reports — the information return is near-zero. Option 3 would be running postop on a chapter that (a) was not scoped by DEC-0025, (b) has no depth-pass pending, and (c) returned Phase 9 PASS clean. Running it without user direction is the anti-goal "while I was in there, I also..." pattern. The correct stopping point is here.
+trade-off: If the user wanted depth-of-quality QA on c03 specifically, they will need to invoke /and-postop b01c03 explicitly. That is a one-line user action. The cost of an unrequested postop run (3 forks + write overhead) is higher than the cost of the user choosing to invoke it if they want it.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0027 | 2026-05-27 | SLOW
+
+question: c04 is next. Cascade (--cascade), serial-stop-at-substance, or cascade-with-no-budget-compression?
+context: c04 is the acceptance chapter — heaviest axis-move count in the book (5 axes, total delta +7.5), load-bearing for the series spine. c02 ran cascade-budget, required revise --from-signals + 3 stitch cold-reads to land. c03 ran cascade-budget; deferred /and-review bones found 5 SIGNAL findings the inline synthesis missed. User said "continue" without specifying serial vs. cascade.
+
+options:
+  (1) /and-substance chapter b01c04 --cascade — standard forward-motion; trust the chain
+  (2) /and-substance chapter b01c04 only — stop at scene chunks; inspect contract before bones; then decide whether to cascade from /and-write forward
+  (3) --cascade with no-budget-compression instruction — verbal flag to orchestrator; no command-body enforcement mechanism
+
+decision: Option 2 — fire /and-substance chapter b01c04 only; hold at scene chunks.
+basis: goal:1 (pipeline correctness — c04 is the series-spine acceptance chapter; a substance-contract miss here damages load-bearing structure) + goal:2 (cost discipline — cascade on the two prior chapters required significant remediation spend; serial is cheaper in expected-total-spend when the risk of cascade-miss is elevated) + methodology:3a (reversibility — stopping at substance preserves full cascade option; full cascade cannot be undone once bones are authored against a weak contract) + methodology:3d (optionality — serial keeps /and-write cascade entry point open; cascade locks in the contract immediately)
+rationale: Option 3 is rejected because "no budget compression" is a verbal instruction with no enforcement mechanism in the command body — the cascade runs agent-to-agent and there is no parameter that hard-gates budget-skip. It is noise over option 2. Options 1 and 3 both replay the pattern that produced under-audited results on c02 and c03. c04's axis density (heaviest of the book) and narrative centrality (acceptance chapter, series-spine) make it the worst possible place to absorb another cascade-miss. Option 2 costs one extra user-attention step (review scene chunks) in exchange for a hard inspection window before bones are committed. The cost of that step is trivially low; the cost of re-running bones on a spine chapter is high.
+trade-off: Option 2 requires one more user-facing step (inspect scene chunks + decide whether to cascade from /and-write). Option 1 would be faster in the no-miss case. The expected-miss probability on c04 is higher than on c02/c03 given axis density, so the expected-total-spend favors option 2.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0028 | 2026-05-27 | SLOW (user-proxy)
+
+question: Phase 5 review of c04 scene chunks: 4/5 reviewers ACCEPT; auditor lone FAIL with 2 HARD + 4 SIGNAL. Approve recommended action (override fault-001, fix fault-002 notes, surface SIGNALs 1-4 to /and-write, persist + advance + stop) or push back?
+
+context: |
+  fault-001 (POV violation): Auditor flagged all three c04 scene chunks as third-limited in violation
+  of cond-taylor-pov-behavior's "first-person throughout" requirement. Card text says "Flag any chapter
+  not marked interlude that is not in Taylor's first-person." Critical counter-evidence: c01/c02/c03
+  scene chunks in memory.md are all third-limited by established convention; rendered prose at
+  draft/b01-c01.md through b01-c03.md is first-person throughout. First-person transformation
+  happens at /and-write (named-subject SVO) → /and-stitch (first-person render). Three prior audits
+  did not flag this. The card's "for auditor use" clause is ambiguous — it does not specify whether
+  "is not in Taylor's first-person" refers to the planning-layer chunk or the rendered prose.
+
+  fault-002 (cl-antag-d03 math): Auditor flagged cl-antag-d03 "completed" claim in s01 notes as
+  false. Verified correct: c03 delivered +1.5, c04 delivers +1.0, sum = +2.5 of +4. The "completed"
+  note was already in memory.md line 3053 before c04 chunking — inherited from the book-level chapter
+  contract authored at /and-substance book b01 (2026-05-24). Real notes error at two locations:
+  b01c04 s01 draft note + memory.md line 3053.
+
+  SIGNALs 1-4: Advisory. No blocking. All 4 reviewers' 2 additional soft watches also advisory.
+
+  Principal's recommended action:
+    1. Override fault-001 (convention established; prior audits accepted; card text ambiguous)
+    2. Fix fault-002 notes at both locations (no prose rewrite)
+    3. Surface SIGNALs 1-4 to /and-write as soft watches
+    4. Persist chunks to memory.md, advance status to scened, archive draft to _drafts/
+    5. Stop (per DEC-0027 review-stop before /and-write)
+    + admin process-critic on fault-001 for card-text clarification
+
+decision: APPROVED as stated. Proceed with the recommended action on all five points.
+
+basis: |
+  fault-001 OVERRIDE: Convention evidence is dispositive. Three independent chapters authored at the
+  same planning layer (c01/c02/c03) are all third-limited in memory.md. Three audits did not flag this.
+  Rendered prose for all three is first-person throughout — the chain's interpretation is consistent
+  and correct: "first-person" governs rendered prose, not the planning-layer SVO notation. The card's
+  ambiguity ("Flag any chapter not marked interlude that is not in Taylor's first-person" without
+  specifying the layer) means the auditor is reading literally but not incorrectly — the card's
+  language does not exclude the planning layer. This is a card-text failure, not a chain failure.
+  Overriding is methodology:3e (convention — do what the codebase already does) + methodology:3a
+  (reversibility — chunk redraft for c04 + retroactive for c01-c03 is irreversible high-cost; override
+  is low-cost and the interpretation is evidenced). Flagging for process-critic card-text clarification
+  closes the audit gap for future chapters.
+
+  fault-002 FIX: Real error, no argument against fixing. Notes-only correction at two locations is
+  low-cost, reversible, and preserves the book-level roll-up integrity. The auditor is correct on the
+  math. No prose rewrite is needed per auditor, per principal. The error predates c04 (introduced at
+  /and-substance book b01 2026-05-24) — the fix is the minimal correction of an inherited stale claim.
+
+  SIGNALs 1-4: Surfacing all four to /and-write is correct. SIGNAL 4 (theme-silence on s03 mechanism
+  tag) deserves the same advisory weight as SIGNALs 1-3 — it is a planning-marker that must not
+  surface as inner monologue, not a violation yet; the auditor's flag is correctly precautionary.
+
+  Stop after persist + status advance: Consistent with DEC-0027 (review-stop before /and-write).
+  No reason to advance further without user direction.
+
+  Admin process-critic on fault-001: Correct triggering condition — card text caused a legitimate
+  HARD fault on a correctly-authored artifact. That is a card-text gap, not a chain failure. Admin
+  should fire process-critic to propose a card-text clarification scoped to "first-person throughout
+  the rendered prose" (not the planning-layer chunk SVO notation). This is a process fix, not an
+  override bypass. Change_type: modify. Target: cards/conditions/cond-taylor-pov-behavior.card.md +
+  auditor use clause. Cost S.
+
+rationale: |
+  The four-ACCEPT / one-FAIL result with the lone-FAIL on a layer-ambiguity point is exactly the
+  pattern where override is warranted. The four audience+critic reviewers evaluated scene-level
+  substance delivery (SUBSTANCE-FELT 5/5 across all three independent audience readers; dramatist
+  confirmed axis aggregates EXACT + handoff mirrors clean). The auditor's two HARDs are:
+    - fault-001: a card-text ambiguity applied to an artifact the chain has consistently produced at
+      this layer without prior challenge; override is the only reasonable path absent evidence that
+      the rendered prose will fail first-person (which it will not — /and-stitch enforces this)
+    - fault-002: a real notes error the principal independently verified, with a low-cost no-rewrite
+      fix available
+
+  There is no case for a full chunk redraft. The substance delivery is confirmed by three independent
+  audience readers (including the hardest technical audience, worm-canon-pedant). A chunk redraft
+  would re-author correct substance from scratch, burning significant tokens for zero expected gain,
+  to fix a card-text ambiguity that should be resolved in the card, not the chunks.
+
+  The process-critic firing on fault-001 is the correct permanent fix. The override is the correct
+  immediate action. They are complementary.
+
+trade-off: |
+  The only cost of approving: fault-001 is overridden on a card-text ambiguity without a human
+  checkpoint. This is within admin authority — it is a layer-interpretation call backed by three
+  chapters of prior convention, not an architectural direction change or irreversible destructive
+  operation. Methodology §human-only does not cover "interpret ambiguous card language in light of
+  established chain convention." If the principal disagrees with the layer interpretation, the correct
+  path is to amend the card to explicitly say "planning chunks must also be first-person" — at which
+  point future audits would block and the chain would need to change. That is a reversible edit.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0029 | 2026-05-27 | SLOW (process-critic)
+
+question: Post-DEC-0028 tail obligation — process-critic dispatch on fault-001 HARD at /and-substance b01c04 Phase 5. Should admin propose a process change to `cards/conditions/cond-taylor-pov-behavior.card.md` to disambiguate which production layer "first-person throughout" applies to?
+context: |
+  Auditor fired fault-001 HARD (POV violation: scene chunks written in third-limited). Finding is a
+  confirmed false positive per DEC-0028 — c01/c02/c03 all use third-limited chunks; rendered drafts
+  are first-person throughout; three prior Phase 5 auditors did not fire on this. The chain's operating
+  convention is clear: "first-person" governs rendered prose (the /and-stitch output); planning chunks
+  and bones use third-person-named-subject SVO by pipeline design. The card's auditor-use clause
+  ("Flag any chapter not marked interlude that is not in Taylor's first-person") does not qualify which
+  layer, making a literal reading of the text produce a false-positive HARD on every correctly-authored
+  substance chapter pass. trigger.source_report: active-project/staff/reviews/auditor-b01c04-substance-2026-05-27.md.
+  gate_path: cards/conditions/cond-taylor-pov-behavior.card.md. Follows: DEC-0028.
+options: |
+  (a) PROCESS-CHANGE-PROPOSED — modify the card's auditor-use clause and POV Scope section to
+      qualify the layer the rule applies to; cost S; guaranteed future-recurrence-prevention.
+  (b) OK — first occurrence; but this is a HARD false positive that will structurally recur on
+      every future chapter's Phase 5 pass, not a probabilistic recurrence pattern.
+  (c) ESCALATE — ask principal to decide whether the planning layer should also be first-person.
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0008
+basis: |
+  gate-false-positive-specification-gap (the card's auditor-use clause does not name which
+  production layer the first-person requirement governs; the false-positive HARD on correctly-
+  authored chunks is a criterion-text gap, not a calibration or taste issue) + recurrence-
+  is-guaranteed (every future /and-substance chapter Phase 5 will fire the same HARD on
+  identically-authored chunks absent card clarification — not probabilistic, structural) +
+  methodology:3a (S-cost card edit is reversible; standing false-positive block on future
+  chapters is not) + methodology:3b (one S-cost edit prevents per-chapter override overhead
+  indefinitely) + DEC-0028 explicit authorization ("Flagging for process-critic card-text
+  clarification closes the audit gap for future chapters")
+rationale: |
+  The anti-pattern rule ("do not propose on first occurrence of a non-catastrophic SIGNAL")
+  targets taste-flag promotion to mechanical checks. It does not cover false-positive HARDs
+  from specification gaps. The distinction matters: a taste-flag may or may not recur; this
+  false-positive HARD will recur with certainty on every future /and-substance chapter Phase 5
+  invocation, because the card text is unchanged and the chain's convention (third-limited chunks
+  → first-person rendered prose) is unchanged. Three prior Phase 5 passes did not fire on this —
+  but c04 being the first time the auditor applied the literal clause to chunks means c05/c06/c07
+  will face the same fire without card clarification. The recurrence_count is 1 by the count of
+  times the HARD was fired, but is effectively N (number of remaining chapters) by the structural
+  analysis.
+
+  The proposed change is minimal and precise: add a "Layer scope" paragraph to §POV Scope naming
+  which layer the rule governs, and qualify the auditor-use clause to target the rendered draft
+  specifically. Neither change relaxes the POV rule — first-person throughout the rendered draft
+  remains the hard contract. The change adds specificity that was absent.
+
+  Option (c) ESCALATE is not warranted. DEC-0028 has already resolved the substantive question
+  (chain convention is correct; card needs to reflect it). The proposed diff follows directly from
+  DEC-0028's reasoning and is within admin's authority to propose.
+trade-off: |
+  Proposing at recurrence_count=1. The only cost is the PROP-0008 log entry itself plus the
+  principal's triage time. Against: per-chapter false-positive HARD + override + process-critic
+  dispatch overhead on every remaining chapter of the project if the card is not fixed. The
+  asymmetry strongly favors proposing.
+
+follows: DEC-0028
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0030 | 2026-05-27 | SLOW
+
+question: /and-write b01c04 Phase 2 returned 45 HARD findings (33 FAULT-FORM-MODIFIER + 12 FAULT-BONE-DELTA-MALFORMED) on 38 bones. Route (1) Phase 1 redo with corrective brief + c02-reference, (2) fixer mass-pass on all 45 findings, or (3) escalate to human? And: file a process-change proposal noting c03 as a contamination source for future bones SVO-form exemplars?
+context: |
+  45 HARD faults on 38 bones — essentially every bone is non-compliant. Root causes:
+  (a) 33 FAULT-FORM-MODIFIER: prepositional phrases of place/direction/time/instrument/
+      accompaniment in SVO text, banned per schemas/bones.schema.md line 107. Schema is explicit.
+  (b) 12 FAULT-BONE-DELTA-MALFORMED: 11 bones use magnitude 0.5 below the 1.0 bone.delta_per_axis
+      floor + 1 dialogue-anchor bone s01n10 with empty axis_moves.
+  Both are systematic single-root-cause failures — screen-writer applied a "minimal locative license"
+  that does not exist in the schema and used 0.5-magnitude splits instead of 1.0+ magnitudes.
+  Contamination source: c03 bones were provided as a cadence reference; c03 ran under cascade-budget
+  and was never audited at Phase 2 for SVO-form, so c03's PP-heavy, 0.5-magnitude bones taught the
+  wrong pattern. c02 revised bones (47 bones, post-fixer, Phase 2 clean) are the only fully-audited
+  SVO-form reference in the project.
+  Fixer-independence problem: consolidating 0.5+0.5 pairs into 1.0 bones means deleting bones →
+  renumbering → FAULT-FORM edits on deleted bones become moot. Fixes are not independent operations.
+  Projected post-redo bone count: ~28-32 (vs 38 now) as pair-splits collapse to singles.
+options: |
+  (1) Phase 1 redo — re-dispatch screen-writer with corrective brief: no PPs of
+      place/direction/time/instrument/accompaniment anywhere in SVO text; magnitude floor 1.0 per
+      axis_move; consolidate pair-split deltas into single bones; reference c02 bones (NOT c03)
+      as the canonical SVO-form model.
+  (2) Fixer mass-pass — route all 45 findings to fixer sequentially; likely produces malformed
+      output due to inter-dependent bone-deletion/renumbering conflicts; may require second pass.
+  (3) Escalate to human — bring back to the principal for a real decision.
+
+decision: Option 1 — Phase 1 redo with corrective brief + c02-reference. Do not route to fixer.
+basis: |
+  goal:1 (pipeline correctness — 45 HARD findings on 38 bones is a systematic authoring failure;
+  the schema is unambiguous; fixer minimum-change is incoherent when fixes are inter-dependent and
+  the root cause is a single authoring error) + goal:2 (cost discipline — expected total cost of
+  option 2 exceeds option 1 due to cascading conflicts) + goal:4 (lean architecture — fixer mass-pass
+  on non-independent faults is a half-finished implementation anti-pattern) + methodology:3a
+  (reversibility — Phase 1 redo is a clean reauthoring; fixer mass-pass on inter-dependent faults
+  risks a worse malformed output that also requires redo) + methodology:3b (cost — redo now < fixer
+  mass-pass + likely second pass or redo anyway) + methodology:3c (blast radius — fixer applied to
+  45 inter-dependent faults has unpredictable blast; redo is a clean slate with defined scope)
+rationale: |
+  The spec's "fixer with minimum-change" routing assumes the faults are independent correctable
+  items — individual bones that can each be minimally fixed without affecting others. That assumption
+  breaks down when the root cause is a systematic authoring departure and the fixes are structurally
+  coupled (bone deletion changes numbering; FAULT-FORM edits on deleted bones become moot). On 45
+  faults across 38 bones, essentially every bone requires changes, and some changes (pair-split
+  consolidation) cascade through the bone-ID space.
+
+  The corrective brief for Phase 1 redo is specific and prescriptive: no PPs of any banned class
+  in SVO text (list the banned PP types explicitly from schema line 107); magnitude floor 1.0
+  per axis_move (consolidate 0.5+0.5 pairs into single 1.0 bones rather than splitting); empty
+  axis_moves is a HARD on dialogue-anchor bones (address s01n10 pattern explicitly); reference
+  c02 revised bones as the canonical SVO-form and delta-magnitude model, NOT c03.
+
+  Option 3 (escalate) is not warranted. Goals + methodology decide this clearly. The principal
+  is not needed for a routing decision between two technical execution paths when one is
+  structurally incoherent (fixer on inter-dependent faults) and the other is the clean canonical
+  reauthoring path.
+
+  c03 contamination follow-on: Yes, a process-change marker is appropriate. The screen-writer
+  correctly referenced project bones as a cadence model but the wrong bones were loaded (c03,
+  unaudited for SVO-form) rather than the correct ones (c02 revised, fully audited). This is a
+  /and-write Phase 1 dispatch gap: the corrective brief should explicitly name c02 as the
+  reference and explicitly warn that cascade-budget bones from c03 are not canonical for
+  SVO-form or delta-magnitude discipline. A process-critic dispatch is appropriate after Phase 1
+  redo + Phase 2 re-audit confirm whether the corrective brief prevents recurrence — if Phase 2
+  clears, that confirms the fix; if it FAILs again, a structural PROP is warranted. For now,
+  the corrective brief IS the fix; the contamination gap will be captured as a parking-lot item
+  targeting /and-write (for the chain to note that c03 should not be referenced as an SVO-form
+  model) rather than a formal process proposal at this stage (single occurrence, fix already
+  applied in the brief, outcome TBD).
+trade-off: |
+  Option 2 is cheaper per-dispatch-overhead in the no-conflict case, but the no-conflict case
+  does not apply here — bone deletion + renumbering cascades make a clean 45-edit sequential pass
+  structurally impossible. The expected-total-spend for option 2 (fixer mass-pass + conflict
+  resolution + likely redo) exceeds option 1 (single Phase 1 redo with corrective brief).
+  Option 3 wastes a human round-trip on a question that goals + methodology resolve clearly.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0031 | 2026-05-27 | SLOW (process-critic)
+
+question: Post-/and-write b01c04 Phase 6.5 process-critic dispatch. Four patterns surfaced in the bone-gate PASS report (after 2 internal HARD-resolution cycles). Which warrant process-change proposals?
+context: |
+  /and-write b01c04 ran two internal HARD-resolution cycles before reaching PASS:
+  Cycle 1 — Phase 1 redo (45 HARDs: 33 FAULT-FORM-MODIFIER + 12 FAULT-BONE-DELTA-MALFORMED);
+    root cause: c03 cascade-budget contamination; fix: Phase 1 redo with c02-reference per DEC-0030.
+  Cycle 2 — Additive cycle (5 HARD HELD-AXIS-NOT-WITNESSED); fix: 5 dedicated held bones added.
+  Final PASS verdict: 0 HARD, 3 SIGNAL (all ACCEPTED).
+  Patterns named by the dispatch: (1) c03 contamination class, (2) magnitude-floor vs. chapter-contract
+  design tension, (3) margit copy-paste from unfixed source, (4) held-axis witnessing brief gap.
+  Gate: .claude/commands/and-write.md#phase-6.
+options: n/a (process-critic mode)
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0009 + PROP-0010 + PROP-0011; OK on pattern 3 (margit copy-paste).
+
+basis: |
+  Pattern 1 (c03 contamination → PROP-0009): DEC-0030 deferred the formal proposal "pending
+  outcome TBD." Phase 1 redo succeeded (0 FAULT-FORM confirmed by bone-gate redo report).
+  Outcome confirmed; proposal ready. Change_type: modify to Phase 1 dispatch brief, adding
+  cadence-reference guidance (prefer last fully-audited chapter; cascade-budget chapters are
+  not valid references). S-cost. Recurrence = 1 but DEC-0030 explicitly set this dispatch
+  as the post-outcome trigger.
+
+  Pattern 2 (magnitude-floor vs. contract design → PROP-0010): Gate absence at /and-substance
+  chapter — no existing phase validates per-scene target_delta_magnitude against the bone floor
+  before /and-write is invoked. A pre-flight WARNING at chapter-substance persisting time catches
+  the design-time mismatch before bones are authored. Change_type: add. S-cost. Recurrence = 1
+  but failure is deterministic on any chapter with fractional axis targets split across scenes.
+
+  Pattern 3 (margit copy-paste from unfixed source → OK): First occurrence, SOFT finding. Margit
+  imported pre-fix Oswyn characterization because the card was authored before memory was corrected.
+  Content/timing failure, not a gate absence. Candidate fix (margit always re-reads source memory)
+  needs recurrence before sizing. Standard first-occurrence hold applies.
+
+  Pattern 4 (held-axis witnessing brief gap → PROP-0011): Phase 1 spec states the requirement but
+  embeds it in a shape-description paragraph, not as a numbered completion-gate step. Screen-writer
+  missed it not because the rule doesn't exist but because it's not actionable in the task list.
+  Adding step 4a (completion gate: verify bone coverage for every axes_held[] entry before exiting
+  Phase 1) operationalizes an existing rule. Change_type: modify. S-cost. Recurrence = 1 but
+  failure mode is deterministic on any screen-writer completing moving/chatter bones first.
+
+rationale: |
+  Three of the four patterns pass the process-failure discrimination test:
+  - No gate exists at Phase 1 dispatch for cadence-reference vetting (PROP-0009) — change_type: modify.
+  - No gate exists at /and-substance chapter for magnitude-floor pre-flight (PROP-0010) — change_type: add.
+  - Existing Phase 1 brief states the held-axis rule but not as a completion-gate step (PROP-0011)
+    — change_type: modify to brief, not to Phase 6 gate (which fires correctly).
+  - Pattern 3: no structural gate gap; timing/ordering issue; first-occurrence hold → OK.
+  All three proposals are S-cost, single-file. Methodology 3b+3c both support proposing.
+
+trade-off: |
+  Proposing three proposals at recurrence_count=1. Anti-pattern ("do not propose at first occurrence")
+  targets taste-flag promotion and ambiguous failure modes. All three gaps are deterministic-structural:
+  cadence-reference guidance, magnitude-floor pre-flight, held-axis checklist — each can be written
+  precisely from a single data point. Cost of deferring: gaps remain open for every future chapter.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0032 | 2026-05-27 | SLOW (process-critic)
+
+question: Post-/and-review bones b01c04 Phase 4.5 process-critic dispatch. Three patterns surfaced from the FAIL → inline-fix → PASS-WITH-NOTES flow. Which warrant process-change proposals?
+context: |
+  /and-review bones b01c04 (mandatory URI-WRITE-BONES-REVIEW-GATE) found 1 HARD (fault-001:
+  FAULT-DIALOGUE-CARD-VIOLATION — Jarvis @9 entry 8 contained "acceptable," a multi-syllable
+  Latinate term explicitly out-of-register per cards/dialects/westeros-smallfolk.card.md). The
+  inline /and-write Phase 6 dialogue-card-compliance gate missed it because the dialogue-writer
+  (Phase 1.5) invoked seed-fidelity self-license against the word (chunk seed text at /and-substance
+  chapter Phase 2 used "acceptable" in framing what Jarvis would say), and the Phase 6 gate accepted
+  that self-declared license.
+
+  Contamination chain: (1) screen-writer at /and-substance chapter authored "those terms are
+  acceptable to the person he represents" in chunk seed framing → (2) dialogue-writer at Phase 1.5
+  saw the word, recognized card pressure, but retained for seed-fidelity → (3) Phase 6 gate
+  accepted the self-license → (4) /and-review bones caught it; inline fix applied (Anglo-Saxon
+  "takes" replacing "acceptable").
+
+  Auditor also mislabeled "PASS-WITH-NOTES — 1 HARD" (self-contradictory per spec; corrected in
+  addendum to FAIL at review-time). The mandatory-gate value (Pattern C) confirmed as positive
+  evidence — the independent post-hoc review caught what the inline gate missed.
+
+  three_patterns:
+    A: chunk-seed vocabulary contaminating dialogue (seed-fidelity self-license against card fence)
+    B: auditor verdict-label mismatch (PASS-WITH-NOTES + 1 HARD, contradictory per spec)
+    C: mandatory-gate value confirmed (positive evidence — gate earned its cost)
+
+options: n/a (process-critic mode)
+
+decision: OK on all three patterns — no PROCESS-CHANGE-PROPOSED at this time.
+
+basis: |
+  Pattern A — OK, first-occurrence hold:
+    Recurrence_count = 1, non-catastrophic (inline fix applied, pipeline unblocked). The failure
+    mode is two-step and probabilistic: requires (a) screen-writer using card-adjacent vocabulary
+    in chunk seed text AND (b) dialogue-writer invoking seed-fidelity self-license. This is not
+    the deterministic-structural failure class that justifies first-occurrence proposals (like
+    PROP-0009/0011/0010, where the gap fires on every correctly-authored invocation). It requires
+    a coincidence of two authoring decisions. The anti-pattern rule ("do not propose on first
+    occurrence of non-catastrophic SIGNAL") applies here. Hold; mark this DEC-0032 as the
+    first-occurrence marker for Pattern A.
+
+    Lower-cost fix candidate on recurrence: modify /and-write Phase 1.5 dialogue-writer rubric
+    to add explicit anti-pattern "seed-fidelity is NOT a license against behavior-card fences;
+    recast the seed to honor the card." This is the minimum-blast-radius intervention — it targets
+    the dialogue-writer's decision point without requiring /and-substance chapter behavior change.
+    The /and-substance Phase 4 behavior-card lookahead (SOFT advisory) is a heavier change and
+    should be deferred unless seed contamination recurs.
+
+    Note: this pattern is the dialogue-layer cousin of DEC-0031 pattern 3 (margit copy-paste from
+    unfixed source — also held at first occurrence). Both share the same structural principle:
+    downstream authors inherit upstream artifacts that may carry card-adjacent vocabulary without
+    flag. The principle is worth naming; neither instance alone has reached the recurrence threshold.
+
+  Pattern B — OK, first-occurrence hold:
+    Auditor verdict-label error (PASS-WITH-NOTES + 1 HARD) is minor, non-catastrophic (caught and
+    corrected by the addendum). The spec already defines verdict-label rules; this is a labeling
+    error by the auditor, not a structural gate gap. First occurrence. No proposal warranted.
+    Could be addressed by adding a verdict-label validation note to the bones subcommand body or
+    to audit-report.schema.md, but the cost of writing the check exceeds the cost of the one-time
+    correction at this recurrence level. Hold.
+
+  Pattern C — OK, positive evidence:
+    The mandatory post-hoc gate (URI-WRITE-BONES-REVIEW-GATE) caught a HARD the inline Phase 6
+    gate missed. This is the design pattern working as intended — independent reviewer context
+    catches different failure classes than the inline gate. Log as positive evidence that the
+    gate-redundancy is earning its cost. No process change needed.
+
+rationale: |
+  All three patterns clear on recurrence grounds. None of the three meets the first-occurrence
+  override criteria (catastrophic, irreversible, multi-chapter blast radius, or structurally-
+  guaranteed recurrence). The inline fix resolved the pipeline impact; the gate did its job. The
+  most notable finding (Pattern A) names a genuine structural seam — chunk seed text is upstream
+  of behavior-card checking — but the failure requires coincident authoring decisions and is
+  addressable with a single rubric line if it recurs.
+
+trade-off: |
+  Holding on Pattern A means the seed-fidelity self-license gap remains open for future chapters.
+  The cost of the gap is: one potential future inline fix (~5 minutes) per occurrence, versus the
+  cost of a PROP (principal triage time, implementation overhead). At recurrence_count=1 and
+  given the probabilistic failure mode, holding is the lower expected-total-cost path.
+  Holding on Pattern B is correct: auditor labeling errors at this rate do not warrant a schema
+  or rubric change.
+
+first_occurrence_markers:
+  - Pattern A (chunk-seed vocabulary contamination via seed-fidelity self-license):
+      first_occurrence: b01c04 Jarvis @9 entry 8 "acceptable"
+      candidate_fix_on_recur: /and-write Phase 1.5 rubric anti-pattern "seed-fidelity is not a
+        license against behavior-card fences; recast the seed to honor the card"
+      recur_threshold: 2 occurrences triggers PROP; catastrophic single occurrence triggers immediately
+  - Pattern B (auditor verdict-label mismatch PASS-WITH-NOTES + HARD):
+      first_occurrence: b01c04 /and-review bones auditor addendum correction
+      candidate_fix_on_recur: audit-report.schema.md or bones subcommand body verdict-label validation note
+      recur_threshold: 2 occurrences triggers PROP
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0033 | 2026-05-27 | FAST
+
+question: /and-facets b01c04 budget posture: option 1 (full process — 12 R1 + full R2 + full Phase 5b audience-gate, ~50-80 dispatches), option 2 (cascade-budget compression — skip R2 and/or Phase 5b, ~15-25 dispatches), or option 3 (hybrid — full R1+R2, spot-check Phase 5b on 2-3 high-risk facets, ~25-40 dispatches)?
+context: |
+  Historical pattern: c02 cascade-budget compression → revise-from-signals + 3 stitch cold-reads.
+  c03 Phase 5b skip (zero audience-gate cycles) → 45 HARD FAULT-FORM-MODIFIER + FAULT-BONE-DELTA-
+  MALFORMED at c04 /and-write Phase 1 redo (DEC-0030), costing ~15 agent dispatches to unwind.
+  c04 /and-write just completed full-process (3 cycles: original + redo + additive); /and-review
+  bones c04 PASSED. User has been paying for full process throughout c04 chain. Caller's stated
+  default: option 1.
+options: |
+  (1) Full process — ~50-80 dispatches, clean historical outcome (c01)
+  (2) Cascade-budget compression — ~15-25 dispatches, two-chapter track record of downstream contamination
+  (3) Hybrid — ~25-40 dispatches, faster than (1), avoids the worst-case audience-gate cycles
+
+decision: Option 1 — full process.
+basis: goal:2 (cost discipline, correctly applied — total project cost of option 2 is higher than option 1 given the two-chapter evidence base) + methodology:3a (reversibility — skipping Phase 5b is not reversible; contamination propagates into c05's /and-write context window) + methodology:3b (cost — expected-total-spend for option 2 exceeds option 1 at the observed failure rate; the c03 skip cost more to clean up than the c02 full run saved) + methodology:3e (convention — full process is the canonical chain; cascade-budget is a deviation with a documented failure mode)
+rationale: |
+  Two consecutive cascade-budget compressions (c02, c03) both produced downstream contamination that
+  cost more to remediate than the compression saved. At c03, Phase 5b skip contributed to PP-heavy
+  bones that caused 45 HARD findings at c04 Phase 1, requiring a full redo cycle. The "cheaper" option
+  has proven to be the more expensive path in expected-total-spend. Option 1 at 50-80 dispatches is
+  the right answer because it is the answer that costs less across the project lifetime, not just this
+  command invocation. Option 3 (hybrid) is an untested middle path — it saves ~15-30 dispatches
+  relative to option 1 but the partial Phase 5b validation has no track record; if the spot-checked
+  facets are clean but an unchecked facet is not, the contamination is the same as option 2. Given
+  that the user has already paid the c03 remediation cost and has explicitly been running full-process
+  throughout the c04 chain, burning that lesson for a one-command budget save is the wrong trade.
+trade-off: |
+  Option 1 is expensive per-invocation (~50-80 dispatches). The caller flagged this explicitly.
+  The correct framing: the invocation cost is real, but the expected-total-cost including downstream
+  remediation is lower for option 1 than for option 2, given the two-chapter evidence base. Option 3's
+  hybrid savings (~15-30 dispatches) are not worth the contamination risk at this project stage (b01c04
+  is the acceptance chapter — axis-densest, series-spine-critical).
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0034 | 2026-05-27 | SLOW
+
+question: /and-facets b01c04 Phase 5b cycle-1 heavy fail (9/11 facets). Route: option 1 (full cycle 2 — 27+ fixer + audience dispatches), option 2 (cap-burn DELETE early — 1 fixer dispatch), option 3 (targeted hybrid — structural/mechanical fixes only, then re-fire Phase 5b on affected facets), or option 4 (stop, accept facet-incomplete, escalate)?
+context: |
+  Phase 5b cycle-1 returned 9-of-11 FAIL (only location-state + dialogue-taylor PASS). ~20+ distinct
+  fix items: ~8 are structural/mechanical (preamble format errors, DEFERRED placeholder stubs, citation
+  strips, arithmetic fix) and ~12+ are content-level (NI chassis, sensory disambiguation, vibes token
+  rewrites, state-update anchors, memory scaffold repeats, feeling card-verification, exposition add,
+  metaphor refusal log, dialogue-jarvis stale bone-refs). /and-facets total spend already ~60 dispatches.
+  Full cycle 2 (~27 audience + fixer dispatches) would bring total to ~90-130; cycle 3 could reach
+  150. DEC-0033 authorized "full process" (~50-80 dispatches) but calibrated before the heavy fail
+  profile was known. c04 is series-spine acceptance chapter — highest-stakes in book 1.
+  Option 2 (cap-burn DELETE) is per-spec for cap-burn path but is irreversible and loses real quality
+  signal (NI chassis genuine, sensory genuine). Option 3 differs from the DEC-0033 "hybrid" (which
+  spot-checked Phase 5b on 2-3 facets); option 3 here fixes what is unambiguously correct regardless
+  of chosen path, then gets better information before committing to the full-cycle-2 spend.
+options: |
+  (1) Full cycle 2 — dispatch fixer on all ~20+ items; re-fire Phase 5 audit + Phase 5b on all 9 failing facets; 27+ dispatches minimum; cycle 3 possible.
+  (2) Cap-burn DELETE — skip cycles 2+3; fixer in DELETE-only mode; irreversible; facet degradation.
+  (3) Targeted hybrid — fix structural/mechanical items only (~3-5 fixer dispatches); re-fire Phase 5b on affected facets; assess remaining failures; decide cap-burn vs. targeted content cycle on residual set.
+  (4) Stop — declare facet-incomplete; route to /and-stitch with documented audience-gate concerns.
+
+decision: Option 3 — targeted hybrid (structural/mechanical fixes first, then re-fire, then decide on residual).
+basis: |
+  methodology:3d (optionality — structural fixes are correct regardless of which path is eventually taken;
+  fixing them before committing to a 27-dispatch cycle 2 preserves the option to run a smaller targeted
+  cycle 2 on the residual content failures, which may be fewer than the current 9-facet set) +
+  methodology:3a (reversibility — option 2 is irreversible and loses genuine quality signal on the
+  series-spine chapter; option 4 accepts a known-worse outcome; option 3 keeps the full-cycle-2 path
+  open while reducing the problem set) + goal:2 (cost discipline — option 3 is expected-lower-cost
+  than option 1 by getting better information before committing; structural fixes are 3-5 dispatches
+  vs. 27+ for a full pre-committed cycle 2) + DEC-0033 intent (full process remains the direction;
+  option 3 sequences toward that goal more efficiently than front-loading all content rewrites).
+rationale: |
+  DEC-0033 authorized full process for /and-facets b01c04. The situation has changed in one important
+  way: Phase 5b returned a failure profile that distinguishes between (a) structural/mechanical fixes
+  that are unambiguously correct and (b) content-level rewrites that require fixer dispatches against
+  facet authors. These are not the same kind of work. The structural fixes (preamble format, DEFERRED
+  placeholder stubs, arithmetic corrections, citation strips) should be applied regardless of what
+  happens to the content failures — they are not optional even under cap-burn. The content fixes are
+  where the 27-dispatch cycle-2 spend lives.
+
+  Option 3 is not the "hybrid" DEC-0033 rejected (that hybrid spot-checked only 2-3 facets before
+  proceeding). Option 3 does the structural work, then re-fires Phase 5b on the 9 failing facets,
+  then makes a better-informed decision on the residual content set. If structural fixes clear several
+  facets from the failing set (e.g., memory passes after arithmetic fix + preamble fix; some dialogue
+  passes after DEFERRED placeholder removal), the cycle-2 content scope shrinks from 9 facets to
+  maybe 4-5. A targeted cycle 2 on 4-5 facets is ~12-15 dispatches, not 27+.
+
+  Option 2 (cap-burn) is ruled out because: (a) it is irreversible and loses genuine quality signal
+  (NI chassis failure is real; sensory disambiguation is real; cap-burn DELETE permanently removes
+  entries rather than improving them); (b) c04 is the series-spine acceptance chapter — accepting
+  sub-density facets at this stage introduces a quality floor that shapes c05-c07's authoring context;
+  (c) DEC-0033's rationale explicitly rejected the compression paths because the c02/c03 contamination
+  evidence showed that per-chapter savings lead to project-level costs.
+
+  Option 4 (stop) is ruled out because it accepts a known-worse outcome on the highest-stakes chapter
+  to save dispatches — methodology:3a reversed.
+
+  Option 1 (full cycle 2) is not wrong, but it front-loads the full 27-dispatch commitment before
+  knowing whether structural fixes alone would clear a subset of the 9-facet failing set. Getting
+  better information first costs 3-5 fixer dispatches and one Phase 5b re-fire on affected facets,
+  potentially saving 10-15 dispatches from the cycle-2 estimate.
+
+  Structural/mechanical fix targets (all unambiguous, all correct regardless of content outcome):
+    - Memory: single-register carve-out must be in body-level preamble per schema (auditor fault-007)
+    - NI: carve-out preamble arithmetic error (claims 7 mandatory + 4 non-mandatory; actual count after
+      fault-006 is 11-entry post-fault set; fix the count claim)
+    - Dialogue sidecars: DEFERRED-TO-R2 placeholder removal (R2 was the resolving step; stubs should
+      not survive to Phase 5b)
+    - Dialogue-jarvis: stale bone-references (worm-canon hard constraint; correct the refs)
+    Note: NI chassis failure (narrator:7 @31 AP10 + tense-register) is a CONTENT failure and belongs
+    in the post-structural-fix cycle; do not conflate with the arithmetic preamble fix.
+
+trade-off: |
+  Option 3 adds one more decision point (the post-structural-fix re-fire assessment) vs. option 1's
+  single cycle-2 commitment. The cost of the extra decision point is ~1 admin dispatch overhead.
+  The benefit is: if structural fixes clear even 2 facets from the failing set, the cycle-2 audience
+  dispatches drop by ~6 (3 reviewers × 2 facets). The expected-cost math favors option 3 unless the
+  structural fixes clear zero facets — which is possible but not the likely outcome given that memory's
+  main callout is the preamble format issue, not a content failure, and the dialogue sidecars' DEFERRED
+  stubs were cited by 4 reviewers as SIGNAL (removing them likely changes some REVISE verdicts).
+
+  DEC-0033 intent is not violated: full process remains the destination. Option 3 is a better
+  sequencing of steps toward full-process quality, not a compression shortcut.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0035 | 2026-05-27 | SLOW
+
+question: /and-facets b01c04 Phase 5b cycle-2 result: 0 facets flipped to PASS. Structural fixes accepted. 9/11 still FAIL on content grounds. Route: option 1 (full content cycle 3 — all callouts, ~25-30 dispatches), option 2 (cap-burn DELETE now — ~3-5 dispatches, irreversible), or option 3 (targeted cycle 3 — 3/3-convergence items only, ~10-15 dispatches, then cap-burn residue)?
+context: |
+  DEC-0034 chose targeted hybrid (structural first, re-fire, then decide). Structural fixes:
+  accepted across all reviewers. 0 additional facets passed. All 9 remaining FAILs are content-level.
+  Current state: PASSes: location-state, dialogue-taylor (2/11). FAIL: 9/11.
+  Remaining content callouts (deduplicated across reviewers):
+    NI: narrator:7 @31 AP10 + tense-register (3/3 convergence — strongest cross-reviewer signal);
+        narrator:3 @9 AP10 (2/3); narrator:12 @23 AP2 (2/3); narrator:9 @38 middle-clause AP2 (1/3)
+    memory: mem:4 @38 scaffold-recurrence vs. mem:2 (conditional on rewrite mode — 1-2/3 convergence)
+    sensory: sensory:1 @1 charged-subject + unanchored baseline; modality gaps; @17/@25 disambiguation
+    state-updates: anchor-lag, non-canonical value, duplicate entries, narrative-label-as-value,
+      undeclared field-extensions, compound-encoding
+    vibes: AP8 parsability fails on 4 tokens; vibes:8/@17 + vibes:14/@28 proto-line citation absent;
+      vibes:9/@22; Jarvis directional-ambiguity
+    feeling: feel:1 @7 generic (dark-fantasy, 1/3); feel:2 @39 non-card vocabulary (worm-canon, 1/3)
+    metaphor: refusal log incomplete @22/@38/@39 (dark-fantasy, 1/3)
+    exposition: prior-bridge closing clause (cape-fic, 1/3); ADD at @31 (cape-fic, 1/3)
+  Total cumulative c04 dispatches across /and-write + /and-review + /and-facets: ~80.
+  Option 1 adds ~25-30 → ~105-110 total. Option 3 adds ~10-15 → ~90-95 total.
+  Caller default: option 3.
+
+options: |
+  (1) Full content cycle 3 — dispatch fixer on all content callouts across 9 failing facets;
+      re-fire those 9 × ~2 reviewers each; ~25-30 dispatches. Realistic outcome: most pass,
+      some residue → cap-burn. Total: ~105-110 cumulative c04 dispatches.
+  (2) Cap-burn DELETE — skip cycle 3; DELETE all callout-driving entries; ~3-5 dispatches;
+      irreversible. Loses 3/3-convergence items (verified quality signal, not taste).
+  (3) Targeted cycle 3 — fixer dispatches only for items with 3/3 (and 2/3) cross-reviewer
+      convergence; treat 1/3 dissents as TASTE-FLAG carry-forward per pipeline doctrine;
+      re-fire only touched facets; then cap-burn residue. ~10-15 dispatches.
+
+decision: Option 3 — targeted cycle 3 on 3/3 and 2/3-convergence items only; 1/3 dissents → TASTE-FLAG carry-forward; cap-burn residue.
+
+basis: |
+  goal:1 (pipeline correctness — the pipeline's own TASTE-FLAG doctrine says 1/3 dissents are taste,
+  not verified quality; option 3 is correct pipeline application, not a shortcut; option 2 DELETEs
+  3/3-convergence items which is wrong regardless of spend level) + goal:2 (cost discipline — option 3
+  saves ~10-15 dispatches vs. option 1 by honoring the pipeline's own convergence rules) +
+  methodology:3a (reversibility — option 2 is irreversible DELETE of verified findings; option 3
+  preserves cap-burn of residue as the natural next step) + methodology:3b (cost — option 3 is lower
+  expected-total-spend; residue cap-burn after cycle 3 is bounded by what survives, not pre-committed) +
+  DEC-0033 intent (full process — option 3 IS full process correctly applied; full process does not
+  mean re-firing on every 1/3 dissent; convergence rules exist precisely to distinguish verified
+  findings from taste calls)
+
+rationale: |
+  DEC-0034 chose targeted hybrid (structural first) because structural fixes might clear facets.
+  That hypothesis did not confirm (0 flips). But the structural work was not wasted — it was
+  correct on any path and has been applied. The situation is now different: all remaining failures
+  are content-level only, and they split cleanly into two classes:
+
+  CLASS A — 3/3 cross-reviewer convergence: narrator:7 @31 (AP10 + tense-register), and vibes AP8
+  violations (4 tokens: vibes:1 "is" copula + 3 passive-finite). Three independent reviewer personas
+  with distinct reading frameworks converged on the same finding. The pipeline's convergence criterion
+  exists to discriminate exactly this: verified content quality vs. persona-specific preference.
+
+  CLASS A-adjacent — 2/3 convergence: narrator:3 @9 (AP10), narrator:12 @23 (AP2), mem:4 @38 scaffold
+  (conditional), sensory:1 @1, sensory modality/disambiguation callouts. Two of three personas agree —
+  stronger than taste, not as strong as 3/3. These are included in cycle-3 scope: the cost of fixing
+  them is bounded (they overlap with facets already in scope), and leaving 2/3-verified items for
+  cap-burn on the series-spine chapter is a quality concession that option 1 would not make.
+
+  CLASS B — 1/3 dissents (single reviewer): feel:1 @7 (dark-fantasy), feel:2 @39 (worm-canon),
+  metaphor refusal log (dark-fantasy), exposition prior-bridge clause (cape-fic), exposition ADD @31
+  (cape-fic), narrator:9 @38 middle-clause (cape-fic). These are TASTE-FLAGs by definition.
+  The pipeline is explicit: TASTE-FLAG findings carry forward as process-signals, not as cycle-3
+  fixer targets. Applying fixer to 1/3 dissents is over-retrying taste calls — the opposite of the
+  discipline the spec requires.
+
+  State-updates schema errors are mechanical and uncontested regardless of convergence count —
+  they are included in cycle-3 scope on correctness grounds, not reviewer-convergence grounds.
+
+  Option 2 is rejected because it DELETEs 3/3-convergence items. This is not a cost question;
+  it is a quality question. Entries with 3/3 cross-reviewer convergence on the series-spine acceptance
+  chapter are verified quality improvements. Deleting them to save ~10-15 dispatches over option 3
+  is not cost discipline — it is buying permanent quality reduction with temporary dispatch savings.
+
+  Option 1 fires fixer on 1/3-dissent items that the pipeline's own rules classify as taste.
+  The incremental cost (~10-15 dispatches) does not produce better facets — it produces facets that
+  satisfy a single persona's preference against the other two. Option 3 is full process correctly applied.
+
+  Cycle-3 fixer scope:
+    NI: narrator:7 @31 (AP10 chassis + tense-register) [3/3]; narrator:3 @9 (AP10) [2/3];
+        narrator:12 @23 (AP2 persistent-narration) [2/3]
+    sensory: sensory:1 @1 (charged-subject + baseline); thermal modality; @17+@25 disambiguation [2/3]
+    memory: mem:4 @38 (scaffold-recurrence rewrite to distinct continuous-operation cue mode) [2/3]
+    vibes: AP8 violations on 4 tokens (vibes:1 "is" + 3 passive-finite) [3/3]; vibes:8+vibes:14
+        citation adds [uncontested]; vibes:9; vibes:16+vibes:3 Jarvis directional [uncontested]
+    state-updates: all schema errors (anchor-lag, slug-list, dedup state:8/9, narrative-label,
+        field-extensions, compound-encoding) [mechanical]
+    TASTE-FLAG carry-forward (NOT cycle-3 fixer scope): feel:1 @7; feel:2 @39; metaphor refusal log;
+        exposition prior-bridge clause; exposition ADD @31; narrator:9 @38 middle-clause
+
+  After cycle-3 re-fire on touched facets: cap-burn any remaining failures per URI-FACETS-CAP-BURN-
+  SEMANTICS. NOT-SUCCESSFUL verdict does not block /and-stitch.
+
+trade-off: |
+  Feel and exposition 1/3-dissents are not retried in cycle 3. If those reviewers hold FAIL on
+  cycle-3 re-fire (nothing changed in their callout scope), those facets go to cap-burn DELETE
+  of the dissenting entries. This is correct — a fixer cannot satisfy a taste dissent without
+  satisfying a single persona against the other two. Cap-burn report documents TASTE-FLAG carry-forward
+  items; orchestrator-critic NOT-SUCCESSFUL verdict names them; this is per-spec behavior.
+  The ~10-15 dispatch savings over option 1 come entirely from not over-retrying taste.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0036 | 2026-05-27 | SLOW (process-critic)
+
+question: Post-/and-facets b01c04 Phase 5c process-critic dispatch. Five patterns from the three-cycle audience-gate run (49 dispatches; final verdict PASS-WITH-TASTE-FLAG-RESIDUE). Which warrant process-change proposals?
+
+context: |
+  Trigger: active-project/staff/auditor/facets-audience-gate-r3.md (cycle-3 final).
+  Verdict: PASS-WITH-TASTE-FLAG-RESIDUE — 4 facets 3/3 ACCEPT + 7 facets PASS with 1/3 TASTE-FLAG
+  carry-forward per DEC-0035 doctrine. Gate: .claude/commands/and-facets.md#phase-5b.
+  Total run: 3 full cycles + targeted re-fires (~49 audience dispatches). Patterns named by caller:
+    A — /and-write Phase 7 emits [X:1, X:2] multi-token; cite-index parser handles [X:1] [X:2] only; inline fix required.
+    B — 5 of 7 R2 judges wrote prose into inflight proto-lines files; 5 copies reconstructed manually.
+    C — Dialogue sidecars carried stale bone-refs (n07/n10 after redo to @9); DEFERRED-TO-R2 placeholders
+        survived R2 because R2 dialogue-judge brief omits sidecar update; 4 audience reviewers flagged SIGNAL/HARD.
+    D — State-updates fixer cite-index regen re-added [state:2]@9 + [state:5]@22 after auditor fault-002/003
+        strip; deletion not persistent across rebuild.
+    E — sensory-disambiguation-pedant and sensory-old-state-reader gave opposite verdicts on sensory:2 @13
+        cross-location old-state sourcing; rubric-sensory.md per-location rule genuinely ambiguous.
+    F — Vibes AP8 sentence-parsability: audience-gate caught sub-saturation AP-SCAN violations; gate working as intended.
+    G — Bidirectional convergence validated: multiple shared auditor + audience findings.
+options: n/a (process-critic mode)
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0012 + PROP-0013 + PROP-0014 + PROP-0015 + PROP-0016. OK on Patterns F and G.
+
+basis: |
+  Pattern A (cite-index bracket format drift → PROP-0012): Spec/tool interface gap — same class as
+  PROP-0008. /and-write's emit format and build_cite_index.py's parser have no declared shared contract
+  for multi-token bracket form. Inline fix at this run does not prevent recurrence. S-cost modify to
+  .claude/commands/and-facets.md Phase 2 + /and-write Phase 7 (or parser). Justifies first-occurrence
+  proposal because: structural interface gap (not a content failure), recurrence is deterministic on
+  multi-dialogue-anchor bones (expected in action-dense scenes), inline-fix is not a permanent resolution.
+
+  Pattern B (R2 judge inflight format discipline → PROP-0013): 5/7 failure rate on the same dispatch
+  (R2 judge brief) is a strong signal that the brief's format requirement is implicit where it needs
+  to be explicit. Prose in inflight proto-lines files causes Phase 4 merge failures. The fix is a
+  one-paragraph prohibition added to the R2 dispatch brief. S-cost. First-occurrence proposal justified
+  by the 5/7 failure rate — this is not one judge making an error, it is the majority exhibiting a
+  behavior the brief does not exclude.
+
+  Pattern C (sidecar stale-ref + DEFERRED-TO-R2 → PROP-0014): Two task omissions in the R2
+  dialogue-judge brief (sidecar bone-ref update + DEFERRED-TO-R2 resolution). The R2 judge receives
+  the sidecar but is not instructed to update it. The failure is structural (not taste): stale refs
+  are HARD constraint violations when caught by audience; DEFERRED-TO-R2 survivors are phantom content
+  that confuses every downstream reviewer. Both are preventable by two sentences added to the R2 brief.
+  S-cost. First-occurrence proposal justified because the brief gap is explicit and deterministic —
+  it will recur on any chapter with a /and-write redo + R2 dialogue-judge run.
+
+  Pattern D (cite-index regen wiping audit-fixes → PROP-0015): Deletion-marker permanence gap. No
+  existing mechanism prevents build_cite_index.py from re-propagating co-cites for tokens the auditor
+  has permanently invalidated. The cap-burn path already uses a parallel deletion-marker mechanism
+  (DELETED ENTRIES in _cite-index.md); audit-fault strips need the same. This is a genuine gate
+  absence (change_type: add). M-cost (new file format + parser check). First-occurrence proposal
+  justified because the failure is structurally guaranteed: any cite-index rebuild after an audit strip
+  will re-add the stripped tokens absent a permanent deletion record.
+
+  Pattern E (cross-location-carry rubric ambiguity → PROP-0016): Genuine rubric text ambiguity
+  (two specialist reviewers with opposite readings of the same sentence). The correct interpretation
+  is available from the sensory-old-state-reader's reasoning (cross-location carry is the standard
+  pattern at location transitions). Codifying it as a clarification in rubric-sensory.md prevents
+  future TASTE-FLAG accumulation on a question that has a correct answer. S-cost modify. First-occurrence
+  proposal justified because the ambiguity is structural (not probabilistic) and the correct reading
+  is already available from this run's evidence.
+
+  Pattern F — OK (positive evidence): Audience-gate catching sub-saturation AP-SCAN violations
+  (vibes AP8 tokens) is the design working correctly. The auditor's saturation threshold did not
+  fire; the audience reviewer caught all 4 below threshold. Gate-redundancy confirmed. No process change.
+
+  Pattern G — OK (positive evidence): Bidirectional convergence validated. Multiple shared findings
+  between auditor + audience confirms the dual-path design is functioning. No process change.
+
+rationale: |
+  All five proposals (A-E) pass the process-failure discrimination test:
+  - A: spec/tool interface gap (cite-index parser and /and-write emit share no declared contract); change_type: modify.
+  - B: dispatch brief implicit where explicit needed (5/7 failure rate); change_type: modify.
+  - C: two task omissions in R2 brief (sidecar update); change_type: modify.
+  - D: gate absence (no deletion-marker permanence for audit-fault strips); change_type: add.
+  - E: rubric text ambiguity (two correct-behavior specialists diverge); change_type: modify.
+  All are S or M cost. Methodology 3b+3c both support proposing at first occurrence on structural gaps.
+
+  First-occurrence exception applies to Patterns A, B, C, E per the same reasoning as PROP-0008/0009/0010/0011:
+  the gaps are structural and deterministic, not probabilistic. Pattern D (PROP-0015) is change_type: add
+  (gate absence) rather than first-occurrence-SIGNAL, so the anti-pattern rule does not apply.
+
+  Patterns F + G are positive evidence, not gaps. Logging as evidence that the bidirectional audit
+  design is earning its cost — this is the first chapter where explicit convergence trace was validated.
+
+trade-off: |
+  Five proposals authored at first occurrence, totaling PROP-0012 through PROP-0016. Anti-pattern
+  rule applies to taste-flags promoting to mechanical checks — it does not apply to structural interface
+  gaps, dispatch brief omissions, or rubric ambiguities. All five were inline-fixed during the run
+  (they did not block the chapter) but each will recur on future chapters without a permanent fix.
+  The cost of holding (per-chapter inline fix overhead) exceeds the cost of proposing now across
+  the remaining chapters of the project.
+
+follows: DEC-0035
 stm-written: yes
 ltm-written: no
 goals-update-proposed: no

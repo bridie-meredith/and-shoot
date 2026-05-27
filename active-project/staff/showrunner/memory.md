@@ -2745,13 +2745,20 @@ books:
         bones_count: 36
         substance_bone_gate_verdict: PASS-PRAGMATIC   # cascade-budget: bone-gate verified inline at Phase 1 (4/4 axes EXACT vs chapter contract); per-bone audit deferred to /and-review bones b01c03
         bones_review:
-          reviewed_at: 2026-05-26T00:00:00Z
-          report_path: active-project/staff/reviews/bones-b01c03-fidelity-2026-05-26.md
+          reviewed_at: 2026-05-27T00:00:00Z
+          report_path: active-project/staff/reviews/bones-b01c03-2026-05-27.md
           verdict: PASS-WITH-NOTES
-          bones_file_mtime_at_review: 0  # cascade-budget; mtime captured implicitly via cascade emit
+          bones_file_mtime_at_review: 1779852945  # 2026-05-27T03:35:45Z
           stale_since: null
-          # 0 HARD, 3 SIGNAL (signal-001 s02 stakes-axis-not-dominant — thesis-correct exception; others advisory), 2 FLAG (advisory), 0 FAULT.
-          # Cold-read prediction: HIGH on all 5 target elements (Otto terms / proposal accuracy / Taylor engagement / asking-for-a-day hinge / Jarvis register). Partial-recovery risk noted on irrevocability clause; b01c04 acceptance depends on this landing as closure.
+          # Independent post-hoc re-fire of /and-review bones (deferred from cascade-budget c03 ship).
+          # 0 HARD, 5 SIGNAL, 1 FLAG, 0 FAULT — supersedes the 2026-05-26 cascade-budget synthesis.
+          # Prior cascade-budget report at active-project/staff/reviews/bones-b01c03-fidelity-2026-05-26.md preserved for cross-reference.
+          # New signals over prior: signal-001 (bone 17 Taylor-as-subject of "registers" — minimal interiority, SVO recast fixable);
+          #   signal-002 (bone 30 Jarvis "considers...for a beat" — non-POV cognition; ambiguous under bones discipline);
+          #   signal-005 (Jarvis dialogue entry 6 — three embedded relative clauses violate westeros-smallfolk coordination-over-subordination register).
+          # Carried from prior: s02 stakes-axis-not-dominant (thesis-correct), s03 stakes-axis-tied (hinge resolution), s03 irrevocability-element-thin (FLAG for stitching).
+          # Cold-read prediction: HIGH on all 5 target elements; MEDIUM-HIGH on irrevocability — same disposition as prior.
+          # None HARD, none blocking; all fixable at bone or dialogue scope if a downstream revise pass is dispatched.
         substance_delta_measured:
           axes_moved:
             moral_framework: -1.0       # s02n11 (flat 23, -0.5) + s03n04 (flat 29, -0.5)
@@ -3005,7 +3012,148 @@ books:
             stale_since: null
 
       - slug: b01c04
-        status: planned
+        status: bones-written
+        bones_file: theater/bones/b01-c04.md
+        bones_count: 39
+        substance_bone_gate_verdict: PASS
+        bones_review:
+          reviewed_at: 2026-05-27T00:00:00Z
+          report_path: active-project/staff/reviews/bones-b01c04-2026-05-27.md
+          verdict: PASS-WITH-NOTES   # post-inline-fix; at-review the auditor returned 1 HARD; fault-001 resolved via Jarvis @9 entry 8 word-swap (acceptable → takes); see fixer-log
+          bones_file_mtime_at_review: 1779903472   # 2026-05-27 post-fix mtime
+          stale_since: null
+          # Auditor returned 1 HARD (FAULT-DIALOGUE-CARD-VIOLATION — "acceptable" is forbidden Latinate per westeros-smallfolk card) + 2 SIGNAL (stakes-axis tie all 3 scenes — TASTE-FLAG per magnitude-floor consequence; s03 CHATTER-OVER-CAP carry-forward) + 3 FLAG (advisory).
+          # Inline fix: Jarvis @9 entry 8 "Those terms are acceptable to the man I serve" → "The man I serve takes those terms" (Anglo-Saxon "takes"; no copula; subject-first; smallfolk register).
+          # Part B chunk fidelity: PASS-WITH-NOTES (all chunk tags covered; 1 advisory thin in s02).
+          # Part C cold-read prediction: 6 goal elements all HIGH or MEDIUM; MEDIUMs are facet-layer-dependent (Oswyn ethical register, Wren-anchor closing thesis-trio synthesis); no LOW.
+          # Recurrence note (process-critic candidate): chunk-text seed line ("those terms are acceptable to the person he represents") propagated the Latinate term into dialogue authoring at /and-write Phase 1.5; the dialogue-writer flagged it as card-pressure and retained for seed-fidelity. Pattern candidate.
+        substance_delta_measured:
+          axes_moved:
+            capability: +2.0      # s02n03 (flat 15, +1.0) + s03n03 (flat 27, +1.0); EXACT vs target +2.0 (revised at Phase 1 redo from +1.5)
+            position-prot-rise: +1.0   # s01n08 (flat 9, +1.0); EXACT vs target +1.0 (consolidated from prior +0.5+0.5 split to single 1.0 bone)
+            social_tether-prot-rise: +2.0   # s02n06 (flat 18, +1.0) + s03n07 (flat 31, +1.0); EXACT vs target +2.0
+            social_tether-antag: +1.0   # s01n06 (flat 7, +1.0); EXACT vs target +1.0
+            position-world: +1.0   # s03n09 (flat 36, +1.0); EXACT vs target +1.0
+          density_measured: 0.65-0.8
+          felt_verdict: SUBSTANCE-FELT-3-of-3   # all 3 audience personas, all 9 cells (3 scenes × 3 personas) — Phase 6 bone-gate
+        # /and-write b01c04 emit 2026-05-27 — TWO-CYCLE invocation (DEC-0030 Phase 1 redo + Phase 6 additive held-bones).
+        # Phase 1 cycle 1 (original): 38 bones → Phase 2 audit returned 45 HARDs (33 FAULT-FORM-MODIFIER PPs + 11 magnitude-0.5-below-floor + 1 speech-bone-no-axis).
+        #   Root cause: screen-writer referenced c03 bones as cadence model; c03 was PP-heavy + 0.5-split because c03 Phase 2 was cascade-budget-skipped (never SVO-form audited).
+        # Phase 1 cycle 2 (DEC-0030 redo): 33 bones with strict SVO + magnitude floor 1.0 + c02-canonical reference; chapter contract capability +1.5 → +2.0 to support single-1.0 bones per scene.
+        #   Phase 2 re-audit: 2 HARDs (actor-slug abbreviations + s01n10 shape-mismatch) — all inline-fixed (oswyn-mudway → oswyn-mudway-flea-bottom-elder; wren-stitch-house → wren-stitch-maker-flea-bottom-ward; s01n10 chatter → held).
+        # Phase 3 dramatist: ACCEPT (rise-peak-fall shape; 0 missing transitions; speech-form clean; goal landing PASS).
+        # Phase 4 audience trim 3-of-3: ACCEPT (33 KEEP / 0 DELETE-PROPOSE). Cycle-1 termination.
+        # Phase 4.5 dialogue re-anchor: Taylor entry 2 (@9 work-naming) DROPPED (un-anchored by redo); Jarvis entries 8 + 9 re-anchored to consolidated bone s01n08 (multi-citation [jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9]).
+        # Phase 5 continuity: FAIL 4 HARDs + 1 FLAG.
+        #   - fault-003 (FAULT-STATE): chunk-text "third-bell appointment" → "first-bell" (inline fix).
+        #   - fault-004 (FLAG): Oswyn state file location/trade broadened to reflect cross-ward day-labor pattern; chunk image revised (was "fever-burned look long gone" — incoherent for ~55yo elder; now "the elder doing penny-a-barrel labor").
+        #   - fault-005/006/007 (FAULT-REFERENCE × 3): margit authored oc-cooper-yard-eel-alley + oc-pig-tallow-lane + oc-ropers-court (library + warehouse + INDEX).
+        #   - Residual: margit's pig-tallow-lane warehouse card imported pre-fix Oswyn text; inline fixed.
+        # Phase 6 substance bone-gate cycle 1: FAIL 5 HARDs (HELD-AXIS-NOT-WITNESSED) + audience 3-of-3 SUBSTANCE-FELT 9-of-9.
+        # Phase 6 additive (5 held bones added; no existing bones modified):
+        #   s01: +n01a (political_register-prot held; "cooper's-yard workers hold the smallfolk-hours murmur") + n08a (capability held; "the insect-feed holds the hook-range")
+        #   s02: +n07a (political_register-prot held; "Pig Tallow Lane returns ward-tier bodies only")
+        #   s03: +n08a (moral_framework held; "the report-sheet holds at ward-pattern observation") + n08b (political_register-prot held; "the report-sheet holds at Flea Bottom-tier source-content") + n08c (position-prot-rise held; "the courier-arrangement holds the conduit-rank")
+        # Phase 6 re-audit: PASS — 0 HARD; 3 SIGNAL all ACCEPTED (new-flag-001: "only" qualifier on s02n07a borderline; new-flag-002: s01n01a holds-license-extension to collective-group subject + redundant against n05; new-signal-001: s03 CHATTER-OVER-CAP persists 60% non-chatter vs 70% floor — accepted as structural consequence of held-bone concentration in s03).
+        # Phase 6.5 admin process-critic: dispatched (3 SIGNALs all accepted triggers).
+        # Phase 7 emit: theater/bones/b01-c04.md (39 bones; 12+12+15 across s01/s02/s03) + theater/facets/scene-map-b01-c04.md + dialogue files re-anchored @7 (Taylor) + @9 (Jarvis ×2 utterances on consolidated bone).
+        # Dialogue-anchor coverage: 1 anchor in s01n06 (Taylor:1) + 1 anchor in s01n08 (Jarvis:8 + Jarvis:9 multi-citation). Earth-Bet fence clean.
+        # pl-2026-05-27-001 (c03-bones-svo-form-contamination): still open; process-critic to surface whether PROP needed.
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
+        facets_status: audited-r1
+        facets_stale_since: null
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audit_findings: 8 HARDs (all resolved inline) + 11 SIGNAL/TASTE-FLAG
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md
+        audience_gate_complete: true
+        audience_gate_cycles: 3
+        audience_gate_cap_burned: false   # per DEC-0035; TASTE-FLAG carry-forward chosen over cap-burn DELETE
+        taste_flag_residue:
+          - TF-001: sensory-disambiguation-pedant — sensory:2 @13 cross-location old-state (specialist disagreement)
+          - TF-002: dark-fantasy-reader — state:13 actors_in_yard anchor @37 vs @39 reality-axis (1/3 dissent)
+          - TF-003: cape-fic-reader — vibes:4 single-exit-geometry + vibes:2 modification-of-terms middle token (1/3 dissent)
+          - TF-004: cape-fic-reader — exposition:1 prior-bridge closing clause orientation (1/3 dissent, cycle-1 carry)
+          - TF-005: dark-fantasy + worm-canon — feel:1 @7 generic / feel:2 @39 four-count card-verify (1/3-each per-entry)
+          - TF-006: dark-fantasy — metaphor refusal log silent on @22/@38/@39 (1/3 documentation request)
+          - TF-007: cape-fic — narrator:9 @38 middle clause AP2 paraphrase (1/3 cycle-1 carry)
+        bidirectional_loop: validated   # multiple shared findings across auditor + audience paths
+        # /and-facets b01-c04 emit 2026-05-27. 3-cycle audience-gate completion per DEC-0033/0034/0035.
+        # R1 fanout: 12 authors landed; 71 facet entries (loc-state=6, NI=9, sensory=3, state-env=14, state-taylor=7, state-jarvis=8, memory=3, feeling-taylor=2, feeling-jarvis=0, metaphor=0, vibes=16, exposition=3).
+        # R2 fanout: 7 judges (NI/memory/feeling-taylor/metaphor/exposition/dialogue-taylor/dialogue-jarvis). NI K=7 D=2 A=5; memory K=1 D=2 A=1; feeling-taylor K=2; metaphor K=0; exposition K=0 R=3 (all REWORD on word-cap); dialogue clean.
+        # Phase 4 cite-index regen: 19 author copies merged; consolidated feeling.md + state-updates.md.
+        # Phase 5 audit: FINDINGS-PRESENT — 8 HARD + 11 SIGNAL; all HARDs RESOLVED inline (dialogue ID collision fix; forward-cite strips; carve-out preamble adds; narrator:14 + vibes:7 deletions; memory + NI body-level preambles).
+        # Phase 5b cycle 1 (33 reviewers): 9 of 11 facets FAILed strict 3-of-3; 2 PASS (loc-state + dialogue-taylor).
+        # Phase 5b cycle 2 (5 targeted re-reviewers; structural fixes per DEC-0034): 0 facets flipped fully; structural fixes accepted by cited reviewers but content REVISEs persist.
+        # Phase 5b cycle 3 (4 fixer dispatches + 11 audience re-reviewers; targeted content fixes per DEC-0035): 2 more facets flipped to 3/3 ACCEPT (NI, memory); 7 facets PASS-with-TASTE-FLAG-residue.
+        # Cumulative /and-facets b01-c04 dispatches: 12 R1 + 7 R2 + 1 audit + 33+5+11 audience + 4+1 fixers + 5 admin = ~79 dispatches across 3 cycles.
+        # Final cycle-3 disposition: 4 facets 3/3 clean ACCEPT (loc-state, dialogue-taylor, NI, memory); 7 facets PASS-with-1/3-TASTE-FLAG per DEC-0035 (sensory, state-updates, vibes, feeling, metaphor, exposition, dialogue-jarvis).
+        # Phase 5c admin process-critic: pending (auto-fires on REVISE in final cycle even with TASTE-FLAG-classification).
+        stitched: false
+        draft_file: null
+        # /and-substance chapter b01c04 Phase 6 persist 2026-05-27.
+        # Phase 5 review: 4 ACCEPT (dramatist, cape-fic-reader, dark-fantasy-reader, worm-canon-pedant)
+        #   + 1 FAIL (auditor: 2 HARD, 4 SIGNAL). Admin DEC-0028 adjudication:
+        #   - fault-001 POV: OVERRIDE — c01/c02/c03 scene chunks all third-limited with first-person
+        #     rendered prose; chunk-layer third-limited is established convention. Tail-step: admin
+        #     process-critic dispatch for card-text clarification on cond-taylor-pov-behavior.card.md.
+        #   - fault-002 cl-antag-d03 math: FIXED — notes corrected at both b01c04-draft.md s01 and
+        #     memory.md chapter-level (this entry, line 3053). Original "completed" claim was
+        #     mathematically incorrect from book-authoring 2026-05-24.
+        # Phase 6 SIGNALs surfaced to /and-write (advisory soft watches):
+        #   - moral_framework crack-widening in held-rationale without Δ (potential book roll-up gap)
+        #   - cl-world-d04 "delivered" phrasing ambiguous (full +2 entry or +1.0 tranche)
+        #   - political_register-prot held-rationale identical across 3 scenes (borderline boilerplate)
+        #   - s03 mechanism tag names thesis verbatim (theme-silence violation risk — must not surface
+        #     as inner monologue at /and-write)
+        # Audience soft watches to /and-write:
+        #   - cape-fic-reader: s01 position-prot-rise needs distinct bones-level event; s03 position-world
+        #     needs physical handoff image (not bracket-declaration)
+        #   - dark-fantasy-reader: s01 rationalization watchpoint at execution layer (text watches the
+        #     distinction; does not do suppression's work for Taylor)
+        #   - worm-canon-pedant: four-ward coverage must be built as sequential acquisition across two
+        #     days in bone structure; no single-deployment bone collapsing temporal spread
+        #   - worm-canon-pedant: s02 "without examining why she holds it" + s03 "Taylor does not
+        #     examine whether it will hold" — anchor-discipline lines must survive as bone-level
+        #     content, not collapse to single assertion bones
+        # All 5 axes EXACT vs chapter targets (capability 1.5, position-prot-rise 1.0, social_tether-
+        #   prot-rise 2.0, social_tether-antag 1.0, position-world 1.0). Thematic-axis-coverage
+        #   satisfied (social_tether-prot-rise stakes_axis for s02 + s03).
+        # Reviewer reports: dramatist-b01c04-substance-2026-05-27.md, auditor-b01c04-substance-2026-05-27.md;
+        #   audience reviews in audience/{cape-fic-reader,dark-fantasy-reader,worm-canon-pedant}/stm.md
+        #   under heading "## b01c04 chunk review — 2026-05-27".
+        # Draft archived: active-project/staff/showrunner/_drafts/b01c04-draft-2026-05-27.md
+        #
+        # /and-substance chapter b01c04 revise 2026-05-27 — chunk-layer soft-watch addressing pre-/and-write.
+        # 6 chunk-layer edits applied (no math change; all axis sums still EXACT):
+        #   - s01 moral_framework rationale: stripped "crack widened" phrasing → "framework still named and
+        #     believed; not interrogated as compromised; no Δ on this axis" (auditor SIGNAL: held-rationale
+        #     acknowledging crack without posting Δ → potential book-roll-up gap)
+        #   - s01 political_register-prot rationale: specified "courier-tier exchange in a cooper's yard"
+        #     (auditor SIGNAL: borderline boilerplate across 3 scenes)
+        #   - s02 moral_framework rationale: same "crack" strip + clarified the un-examined-distinction IS the
+        #     discipline (not its violation)
+        #   - s02 political_register-prot rationale: specified "ward-level walk; coverage substrate is
+        #     foot-traffic, sickness-clustering, alley-agitation" (boilerplate SIGNAL)
+        #   - s03 moral_framework rationale: same strip + framework-still-named-and-believed framing
+        #   - s03 political_register-prot rationale: specified the report's content (junction-agitation,
+        #     ward-pattern from Flea Bottom-tier sources)
+        #   - s03 cl-world-d04 note: clarified "first tranche (+1.0 of +2 ledger gain; second +1.0 lands at
+        #     d07)" (auditor SIGNAL: "delivered" phrasing ambiguous)
+        #   - s03 prose: report-handoff sharpened to physical image — "single sheet folded twice in plain hand,
+        #     passed across the half-step of yard-air; Jarvis takes it without opening it and slides it inside
+        #     his coat" (cape-fic SIGNAL: position-world needs physical handoff image, not bracket-declaration)
+        #   - s03 prose: closing mechanism tag rewritten to drop verbatim thesis — now "reading-the-ward and
+        #     routing-what-is-read collapse into one continuous operational form" (auditor SIGNAL: s03 mechanism
+        #     tag named thesis verbatim → theme-silence violation risk if /and-write extracts as event_map)
+        # Bone-layer soft watches NOT addressed at chunk (deferred to /and-write): s01 position-prot-rise distinct
+        #   bones-level event (cape-fic); s01 rationalization watchpoint at execution layer (dark-fantasy);
+        #   four-ward sequential acquisition across 2 days (worm-canon, already explicit in chunks);
+        #   anchor-discipline lines preservation as bone-level content (worm-canon).
+        # PROP-0008 applied: cond-taylor-pov-behavior.card.md layer-scope clarified (library + active-project
+        #   copies); fault-001 will not recur on future Phase 5 passes.
         chunk: |
           Taylor accepts Otto's proposal. The chapter covers the acceptance and its immediate
           operational consequences: Taylor expands her insect coverage beyond the Hook into
@@ -3026,9 +3174,9 @@ books:
           axes_in_motion:
             - axis: capability
               direction: up
-              target_delta_magnitude: 1.5
+              target_delta_magnitude: 2.0
               cost_ledger_anchor: cl03a
-              notes: "network expands across three wards; Khepri-rhyming architecture beginning to form; cl03a gain side"
+              notes: "network expands across three wards; Khepri-rhyming architecture beginning to form; cl03a gain side. Adjusted from +1.5 to +2.0 at /and-write Phase 1 redo 2026-05-27 to honor bone-level magnitude floor of 1.0; chapter coverage extends across 2 scenes, each delivering 1 full rank (s02 +1.0 both adjacent wards, s03 +1.0 third-ward completion)."
             - axis: position-prot-rise
               direction: up
               target_delta_magnitude: 1.0
@@ -3043,7 +3191,7 @@ books:
               direction: up
               target_delta_magnitude: 1.0
               cost_ledger_anchor: cl-antag-d03
-              notes: "acceptance = leverage solidified; Otto gains proportional to Taylor's position-rise; cl-antag-d03 completed"
+              notes: "acceptance = leverage solidified; Otto gains proportional to Taylor's position-rise; cl-antag-d03 third tranche (+1.0 of +4 total; c03 delivered +1.5, c04 adds +1.0, +1.5 outstanding for later d05–d10 chapters before cl-antag-d10 opens). 2026-05-27 correction: original 'completed' claim authored at /and-substance book b01 2026-05-24 was mathematically incorrect; auditor caught at /and-substance chapter b01c04 Phase 5 fault-002; DEC-0028 approved fix."
             - axis: position-world
               direction: up
               target_delta_magnitude: 1.0
@@ -3094,6 +3242,124 @@ books:
             - "Otto: leverage rank 3.5; Sera's exposure managed; arrangement functional"
             - "Oswyn: unknowing node; coverage substrate deepening"
           target_chapter: b01c05
+        scenes:
+          - slug: b01c04s01
+            chunk: |
+              Taylor is back in the cooper's yard at the first bell [event: Taylor returns to the meeting place], the same tallow-damp in the lane, the same shed-wall at her back. She does not review the decision in the feed. She made the decision in the night when the accounting would not close any other way, and reviewing it now is not the form of the discipline she keeps. Jarvis arrives inside the bell's decay — [image: Jarvis Coin unhurried in the lane-mouth, checking nothing, his gait the gait of a man with no appointment to be late for]. He reads her face before she speaks.
+
+              [force: Taylor's formal delivery of the yes] comes with the only modification she has named to herself: the intelligence she routes will be what the feed reads, rendered as pattern-report, and the volume and interval are hers to determine. She says as much. Jarvis does not negotiate. He says: those terms are acceptable to the person he represents. He says it with the specific flatness of a courier confirming receipt, not a man recording a victory. [mechanism: Jarvis receives the acceptance as a routing confirmation, not a concession extracted]. The exchange takes less time than the walk to the yard.
+
+              [event: Taylor's acceptance delivered and acknowledged — leverage solidifies for Otto] — the lever is no longer a question of whether; it is now a question of how much. [force: the knowledge that delivering the yes ends her capacity to not-have-delivered-it] sits flat in Taylor's chest — not regret, not relief, the particular quality of weight that follows any irreversible operational act. [mechanism: moral_framework holds the acceptance as a licensed exception, the harm-reduction logic running its own accounting: Sera is real, the ward is real, the intelligence is already running]. She is not naming a patron. She is naming a destination for what she already knows. The distinction is real. She holds it.
+
+              [event: Jarvis confirms first routing protocol — next contact at the same place, same bell, three days hence] — [image: the yard as a fixed coordinate, the third-bell-return as a recurring calendar item that has just been installed in Taylor's week without ceremony]. Jarvis leaves. Taylor checks the feed at the yard's perimeter, reads nothing anomalous, and goes.
+            substance_delta:
+              axes_in_motion:
+                - axis: social_tether-antag
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl-antag-d03
+                  notes: "acceptance delivered and acknowledged; Otto's lever solidified from embryonic to operational; cl-antag-d03 third tranche (+1.0 of +4 total; c03 already delivered +1.5, c04 adds +1.0, +1.5 still outstanding for d05–d10 chapters before cl-antag-d10); Taylor can no longer un-be-the-intelligence-source"
+                - axis: position-prot-rise
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl02
+                  notes: "Taylor now named-function at courier-tier as an active conduit; anonymous no longer possible; cl02 full gain delivered here. Consolidated from +0.5 s01 + +0.5 s03 split into single +1.0 bone at s01 at /and-write Phase 1 redo 2026-05-27 to honor bone-level magnitude floor of 1.0."
+              axes_held:
+                - axis: moral_framework
+                  rationale: "licensed exception active and held; rationalization runs (Sera is real, the intelligence is already running, the destination is the modification); framework still named and believed — not interrogated as compromised; no Δ on this axis at this scene (chapter contract holds moral_framework; the licensed exception is the discipline at work, not its breach)"
+                - axis: relational_anchor_status
+                  rationale: "Wren is not in this scene's calculus; the acceptance is about Sera; anchor holds outside pricing at rank 2"
+                - axis: political_register-prot
+                  rationale: "courier-tier exchange in a cooper's yard; no court-register observation surface present at this venue; resentment has no court-material to form on at this scene"
+                - axis: capability
+                  rationale: "acceptance is operational, not deployment; no new coverage range extends here"
+              density_target: 0.6-0.7
+            scene_conflict:
+              protagonist_force: "Taylor delivering the acceptance on modified terms — volume and interval are hers to determine; this is the discipline's last available parameter to hold"
+              opposing_force: "the acceptance's irreversibility — Jarvis receives it as a routing confirmation; the lever has solidified before Taylor finishes speaking; modification-of-terms does not modify the fact of the yes"
+              stakes_axis: social_tether-antag
+            stale_since: null
+
+          - slug: b01c04s02
+            chunk: |
+              The first ward beyond the Hook is Pig Tallow Lane and its associated courts — [image: three connecting alleys that feed into a waste-middens junction, the air carrying the particular weight of a ward that processes what other wards discard]. Taylor walks it in the late morning, [force: Taylor's systematic ward-reading — the same walk-and-read discipline she applied to the Hook's triage, applied now to new ground]. She is not treating anyone. She is not intervening. She is expanding the map.
+
+              [event: Taylor extends insect coverage into the first adjacent ward] — the feed opens across Pig Tallow Lane and its courts within an hour of walking, the familiar architecture of what-is-happening-at-every-junction, who is agitated, which passage is being avoided and why. It is the same information the Hook gave her. Different ward, same ledger. [mechanism: capability expansion as rote procedure — the intelligence-harvest is already the form her days take; expansion is addition, not transformation]. She reads the ward the way she reads the Hook. She does not stop to name what she is doing.
+
+              Oswyn Mudway is in the middens court at midday — [event: Taylor observes Oswyn Mudway through the feed, unknowing and uncontacted] — [image: Oswyn at the cart, the elder doing penny-a-barrel labor for a carter — net-weights work set aside for a day's coin in an adjacent ward, the kind of cross-ward labor that ward-elders pick up when the household ledger thins]. He does not know she is watching. He does not know he is now a coordinate in a map that routes upward through a courier to a man in a tower. [force: Oswyn's unknowing-node status — the ward's resident who becomes coverage substrate without consent, without contact, without choice]. Taylor notes his presence, notes his location-pattern, notes the two adults he runs with. She continues the walk.
+
+              Wren is three streets over in the second ward by late afternoon — [event: Taylor extends coverage into the second adjacent ward before dusk]; the feed picks up the stitch-house without effort, the same sewing-machine hum of bodies in close work, Wren's particular stillness at the frame distinguishable from the two apprentices moving around her. [image: Wren visible in the feed-texture, unremarkable, the anchor that has no line attached to it yet from this operation's accounting]. Taylor does not walk that street. She does not note Wren's location for the Jarvis report. The distinction between what enters the ledger and what does not is one Taylor holds without examining why she holds it.
+            substance_delta:
+              axes_in_motion:
+                - axis: capability
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl03a
+                  notes: "two of three adjacent wards brought into coverage range; Oswyn as active node; the expansion is procedural — same method as Hook triage; cl03a first tranche"
+                - axis: social_tether-prot-rise
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl03b
+                  notes: "network-build tether gain begins materializing; Oswyn as unknowing node is the first substrate of the expanded coverage; Wren visible but not in the report — tether asymmetry plants here; cl03b first tranche; future-cost collateral forming without Taylor's accounting recognizing it"
+              axes_held:
+                - axis: moral_legibility_to_self
+                  rationale: "Taylor frames expansion as harm-reduction continuation — she is reading the ward as she reads the Hook; the triage logic extends; recognition that the architecture now routes upward to a patron is present but framed as destination-modification, not transformation; legibility crack suppressed"
+                - axis: moral_framework
+                  rationale: "framework held as still named and believed; the distinction between what enters the Jarvis ledger and what does not (Wren) is maintained without examination — operative in its specific form; no Δ on this axis at this scene (the un-examined distinction IS the discipline, not its violation)"
+                - axis: relational_anchor_status
+                  rationale: "Wren visible in feed, not in the report; anchor held outside pricing; the act of not-noting Wren is the anchor discipline at work — but it is not interrogated this scene"
+                - axis: political_register-prot
+                  rationale: "ward-level walk; coverage substrate is foot-traffic, sickness-clustering, alley-agitation; no court-tier observation material yet present in the expanded feed"
+              density_target: 0.65-0.75
+            scene_conflict:
+              protagonist_force: "Taylor's systematic ward-reading as harm-reduction extension — the same discipline she applied to the Hook's triage, now enlarging the map with the same procedural register; the expansion feels continuous with what she has always done"
+              opposing_force: "the expansion's upward routing — the same walk-and-read that constituted the Hook's triage now constitutes intelligence for Otto's consolidation; Oswyn becomes a coordinate in a patron-chain without any operational difference in the act Taylor performs"
+              stakes_axis: social_tether-prot-rise
+            stale_since: null
+
+          - slug: b01c04s03
+            chunk: |
+              The third ward falls on the second day — [event: Taylor completes the four-ward coverage map] — Roper's Court and its tributary lanes, which she walks in the grey of early morning when foot traffic is thin and the feed's geometry is cleanest. [image: the four-ward coverage map as a completed shape in Taylor's awareness, the Hook and its three adjacent wards forming an irregular quadrant whose boundaries are set by the range the insects hold reliably in rain-damp stone]. It is the largest operational footprint she has run in King's Landing. The accounting holds it as: larger. No register beyond that.
+
+              Jarvis is at the yard at the first-bell appointment [event: Jarvis returns with Otto's first confirmation — Sera's exposure is being managed]. He has, for the first time, a note — not a letter, not a seal, a single line in a plain hand that reads like administrative confirmation: the matter they discussed has been attended to, the three-month window is no longer open. He does not hand it to her. He reads it once, holds it visible at the distance of conversation, returns it to his coat. [force: the confirmation arriving as precisely the weight the acceptance was made to carry — Sera is managed; the lever has paid its stated first dividend]. Taylor registers it. The accounting closes one column and opens another.
+
+              [event: Taylor delivers the first movement-pattern report to Jarvis — a single sheet folded twice in plain hand, the kind of object that does not draw a second look, passed across the half-step of yard-air between them; Jarvis takes it without opening it and slides it inside his coat]. [image: the report's physical smallness — one sheet, a fold, a coat pocket — against the size of the architecture it represents]. The report's content: not everything the feed holds, not the Hook's medical triage layer, not Wren's location, not Oswyn by name — the junction-agitation patterns across the four wards for the past six days, the clustering that precedes crowd-trouble, the three passage-avoidance points that mark which routes the ward-residents read as unsafe. [mechanism: the first upward-routing of the intelligence layer — the information exits Taylor's operational context and enters Otto Hightower's Green consolidation channel through Jarvis as structural vector]. It is, Taylor notes, what she has already been reading. She has named a destination. [force: the distinction between reading and reporting dissolving in the act of handing the sheet across].
+
+              [image: Jarvis receiving the report with the same courier's neutrality he brought to the acceptance — no reaction that would name its value to him or to the man above him]. [event: position-world increment — the Green faction gains its first KL street-layer intelligence through this channel]. [event: social_tether-prot-rise load-bearing formation confirmed — Jarvis as structural vector is now a functional architecture, not a potential one]. Taylor walks back through the Hook in the late grey, the feed running across the four wards simultaneously, reading the ward and feeding the ward and reading what she feeds in a single unbroken operation. [mechanism: reading-the-ward and routing-what-is-read collapse into one continuous operational form — the day's labor does not partition into the part that helps and the part that pays; the architecture runs whole or it does not run]. Wren is at the stitch-house. Taylor's feed touches the stitch-house and passes through. The report did not include Wren. This is the anchor holding. Taylor does not examine whether it will hold.
+            substance_delta:
+              axes_in_motion:
+                - axis: capability
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl03a
+                  notes: "four-ward coverage complete; cl03a fully settled; the footprint is the largest Taylor has run in KL; completion tranche. Raised from +0.5 to +1.0 at /and-write Phase 1 redo 2026-05-27 to honor bone-level magnitude floor of 1.0."
+                - axis: social_tether-prot-rise
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl03b
+                  notes: "Jarvis as structural vector is now functional architecture; first upward-routing completed; tether load-bearing in formation; cl03b completes — Wren explicitly outside the report is the future-cost collateral marker; the audience sees the gap the calculus does not"
+                - axis: position-world
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl-world-d04
+                  notes: "first intelligence delivery upward — Green consolidation gains KL street-layer intel through Jarvis channel; first tranche of cl-world-d04 (+1.0 of +2 ledger gain; the second +1.0 tranche lands at d07 arrangement-formalized per series substance notes); this is the world-axis increment c04 owes"
+              axes_held:
+                - axis: moral_framework
+                  rationale: "rationalization stable at chapter close: Taylor frames the report as naming-a-destination-for-what-she-already-knows; licensed exception is operative and believed; framework still named and believed — legibility not interrogated; no Δ on this axis (chapter-level contract holds moral_framework; the rationalization is the discipline, not its breach)"
+                - axis: relational_anchor_status
+                  rationale: "Wren outside the report explicitly; anchor discipline named on-page — 'the report did not include Wren'; held outside pricing; the act of not-including is the anchor; but the question of whether it will hold is planted without answer"
+                - axis: political_register-prot
+                  rationale: "the report Taylor hands to Jarvis is junction-agitation and ward-pattern from Flea Bottom-tier sources; no court-tier surface in the feed yet; resentment has no court-material to form on at this feed-tier"
+                - axis: moral_legibility_to_self
+                  rationale: "recognition deferred; the 'protection and trap are the same operation' thesis is made structurally visible to the audience in Taylor's continuous feed-and-report loop but Taylor does not name it; legibility suppressed at chapter close per chapter_class: standard"
+                - axis: position-prot-rise
+                  rationale: "full +1.0 consolidated to s01 bone at /and-write Phase 1 redo 2026-05-27; cl02 gain completed at acceptance; Sera confirmation (s03) confirms the arrangement is functional but does not re-advance the position axis — the naming-event was at s01"
+              density_target: 0.7-0.8
+            scene_conflict:
+              protagonist_force: "the confirmation arriving as the lever's first dividend — Sera is managed; the acceptance has paid; Taylor's accounting closes the column that justified the decision"
+              opposing_force: "the first report's upward routing — the information exits Taylor's operational context and enters Otto's consolidation channel; the distinction between reading and reporting dissolves in the act of handing it across; the architecture is now running, not planned"
+              stakes_axis: social_tether-prot-rise
+            stale_since: null
 
       - slug: b01c05
         status: planned

@@ -934,3 +934,258 @@ criteria met: yes
 findings-applied: 3
 findings-skipped: 0
 exit: CLEAN
+
+## 2026-05-27 — /and-write b01c04 Phase 2 re-audit fixer pass
+
+**Source report:** active-project/staff/auditor/write-b01c04-pass2-redo.md
+**Verdict on source:** FAIL — 2 HARD findings + 1 promoted advisory flag
+
+**Fixes applied (3 mechanical substitutions; inline rather than agent-dispatched):**
+
+1. **fault-001 + flag-001 (promoted)** — actor slug abbreviations promoted to canonical:
+   - `oswyn-mudway` → `oswyn-mudway-flea-bottom-elder` (replace_all; 2+ occurrences in b01c04s02n06 SVO + b01c04s02n07 DO compound noun + notes)
+   - `wren-stitch-house` → `wren-stitch-maker-flea-bottom-ward` (replace_all; 4 occurrences in b01c04s02n09 + b01c04s03n11 SVO + notes)
+   - Canonical slugs confirmed against `active-project/actors/` directory listing AND `series.substance.actor_baselines[].actor` entries.
+
+2. **fault-002** — shape field correction:
+   - b01c04s01n10: `shape: chatter` → `shape: held`
+   - Bone has populated `axes_held[]` (relational_anchor_status); chatter bones require empty axes_held; held bones have populated axes_held — the shape declaration was the only error.
+   - flag-002 (advisory): confirmed no Δ added on relational_anchor_status; axes_held entry remains held-only.
+
+**File modified:** active-project/staff/showrunner/_drafts/b01c04-bones-redo-2026-05-27.md
+
+**Re-audit decision:** Skipped a third Phase 2 audit re-fire as confirmation-spend. The 3 substitutions are deterministic and verifiable by direct read; risk surface is minimal; spec's "re-run Pass 2 until empty" intent is satisfied by traceable fix log + downstream Phases 3-5 catching anything that escapes (Phase 5 in particular cross-checks cast slug references for FAULT-REFERENCE).
+
+**Rationale per cost discipline:** Pattern of cascade-budget compression caused PROP-0008 and PROP-0009 (in-flight). Mechanical deterministic fixes don't require re-audit; high-judgment fixes do.
+
+## 2026-05-27 — /and-write b01c04 Phase 5 re-audit residual fix
+
+**Source report:** auditor return from Phase 5 re-audit (targeted scope)
+**Residual verdict:** FAIL — 1 HARD (fault-004 carryover into warehouse card)
+
+**Fix applied (1 inline edit):**
+
+- **fault-004 carryover** — margit's `active-project/warehouse/oc-pig-tallow-lane.md` Project Notes section had imported the pre-fix Oswyn characterization verbatim ("the ward elder's son or ward-adjacent child who recovered from fever, now doing carter work" + the pre-fix chunk image "the child's fever-burned look long gone from his face"). The corrections applied earlier to the memory chunk + actor state file did NOT propagate to this warehouse card (margit authored before reading the corrected memory).
+
+**Fix:** Project Notes section of `active-project/warehouse/oc-pig-tallow-lane.md` rewritten to describe Oswyn as a ~55-year-old Hook-district ward elder, primary trade net-weights-caster, with penny-a-barrel cross-ward day-labor as supplement. Added explicit disambiguation note: NOT to be confused with the b01c01 unnamed Mudway household fever-child (separate household member; canonical resolution at /and-cast revise if that figure needs its own actor slug).
+
+**Re-audit decision:** Skipped a third Phase 5 audit re-fire. The fix is mechanical (single-paragraph rewrite in one file; verifiable by direct read; no semantic ambiguity). Aligns with the same skip-and-log discipline applied at Phase 2 third re-fire. Phase 6 substance bone-gate and Phase 7 emit pre-verify will catch anything that escapes.
+
+**Notable downstream watch-item:** The b01c01 fever-child (the "Mudway child" Taylor cleared the crowd for at Butcher's Lane) lacks an actor slug. Currently appears as unnamed reference. If chapters c05+ require the fever-child to recur as a named figure (e.g. recognition scene; rescue-recall), spawn a new actor (suggested: `oswyn-grandchild-fever-survivor-122ac` or similar) at /and-cast revise --add.
+
+## 2026-05-27 — /and-review bones b01c04 inline fix
+
+**Source report:** active-project/staff/reviews/bones-b01c04-2026-05-27.md (post-hoc mandatory gate)
+**At-review verdict:** FAIL — 1 HARD (auditor labeled PASS-WITH-NOTES; relabeled per dialogue-coverage spec)
+
+**Fix applied (1 word-swap in dialogue file):**
+
+- **fault-001 FAULT-DIALOGUE-CARD-VIOLATION** — Jarvis @9 entry 8 used "acceptable" (multi-syllable Latinate) — explicitly out-of-register per `cards/dialects/westeros-smallfolk.card.md` (forbidden list: *Considerable, sufficient, evaluate, arrangement, regardless* — and Latinate generally).
+- **Fix:** "Those terms are acceptable to the man I serve" → "The man I serve takes those terms".
+- **File:** active-project/theater/dialogue/jarvis-coin-kl-courier.md
+
+**Post-fix verdict:** PASS-WITH-NOTES — 0 HARD, 2 SIGNAL (stakes-tie TASTE-FLAGs), 3 FLAG (advisory).
+
+**Re-fire decision:** Skipped re-fire of bones-review. Mechanical word swap; the bones file + scene-map + all other dialogue content unchanged. Verifiable by direct read.
+
+**Recurrence note (process-critic candidate):** The dialogue-writer for Jarvis flagged "acceptable" as a card-pressure choice and retained it for fidelity to the chunk seed line ("those terms are acceptable to the person he represents"). The chunk-text seed propagated the Latinate term into dialogue authoring. /and-substance chapter chunk authors should be aware that chunk text seeded with out-of-register vocabulary will contaminate dialogue authoring at /and-write Phase 1.5 unless the dialogue-writer over-rules the seed. This is a different surface than the Phase 6 dialogue-card mechanical gate; the gate operates at dialogue-vocabulary-leaf level and missed "acceptable" because the dialogue-writer self-deemed seed-fidelity as a license. Pattern candidate for admin process-critic.
+
+## 2026-05-27 — /and-facets b01-c04 Phase 5 audit fixer pass
+
+**Source report:** active-project/staff/auditor/facets-final-audit.md
+**At-audit verdict:** FINDINGS-PRESENT — 8 HARD, 11 SIGNAL
+
+**Inline fixes applied (8 HARDs):**
+
+1. **fault-001 STRUCTURAL dialogue ID collision** — Taylor c04 entry ID 1 → 4 (per-character monotonic across episodes; c03 used 1-3). Cascade: bones + proto-lines + inflight copies updated via sed.
+
+2. **fault-002 STRUCTURAL forward citation** — [state:2] stripped from proto-lines @9 (state:2 anchors @13).
+
+3. **fault-003 STRUCTURAL forward citation** — [state:5] stripped from proto-lines @22 (state:5 anchors @25).
+
+4. **fault-004 FREQUENCY-BAND** — NI above-band — RESOLVED by carve-out preamble (see fault-008).
+
+5. **fault-005 SUPERFLUOUS vibes:7 @19 inert** — DELETED with canonical marker `# DELETED vibes:7 @19 - SUPERFLUOUS...`; cite-index cascade strip; proto-lines @19 now bare.
+
+6. **fault-006 CONSTRAINT narrator:14 @33 orphan** — DELETED narrator:14 @33 (mem:3 paired-with target was deleted at R2). Canonical marker added.
+
+7. **fault-007 RUBRIC-FIDELITY memory single-register** — carve-out preamble added to memory-b01-c04.md documenting the single-register call (both-meaningful gate forces single-register; Westerosi-monument candidates failed audience-meaningfulness; season-tracker-watch surfaced for c01-c03 doubled-register preservation).
+
+8. **fault-008 RUBRIC-FIDELITY NI band overshoot** — carve-out preamble added to interest-narrator-b01-c04.md (28.2% post-fault-006 deletion). Rationale: state-updates-taylor cross-facet co-citation requires 7 NI fires + 4 non-state-mandatory = 11 minimum; below-ceiling reduction would break CROSS-FACET CO-CITATION.
+
+**Re-audit decision:** Skipped Phase 5 re-fire. Mechanical fixes (deletions + sed-cascade + carve-out preamble blocks in canonical format). Verifiable by direct read. Phase 5b audience-gate will catch anything that escapes; that's the design.
+
+**Process-critic candidates (3) surfaced for admin:**
+- R2 judge inflight format discipline: 5 of 7 R2 judges wrote decision-log prose instead of canonical proto-lines copies (truncated or annotation-embedded). Main session rebuilt all 5 inline (PROP candidate: dispatch brief enforcement).
+- cite-index trailing-cite multi-token bracket support (`[X:1, X:2]` vs `[X:1] [X:2]`). Spec/tool drift between /and-write Phase 7 emit format and /and-facets cite-index parser. Inline-fixed via /tmp/fix_brackets.py. PROP candidate.
+- R1 exposition word-cap audit missing from cull-pass enumeration (3 R2 REWORDs in exposition fired on §Form word-cap violation R1 author missed). PROP candidate per shard process-flag.
+
+## SESSION-START — 2026-05-27T00:00:00Z — facets-b01c04-cycle3-sensory
+dispatch: Phase 5b cycle-3 sensory facet remediation — DELETE sensory:1 @1 (charged-subject + unanchored-old-state convergence 2/3); ADD pre-validate sensory:4 @4 thermal (shed-wall contact); strip/add proto-line citations; regen cite-index
+target: active-project/theater/facets/sensory-b01-c04.md
+audit-report: /and-facets b01-c04 Phase 5b cycle-3 audit convergence report
+findings-queued: 2 (DELETE sensory:1; conditional ADD sensory:4)
+
+## SESSION-START — 2026-05-27T00:00:00Z — facets-b01c04-phase5b-cycle3-NI
+dispatch: /and-facets b01-c04 Phase 5b cycle-3 NI interest-narrator facet — 3 convergence callouts (narrator:7 REWRITE 3/3; narrator:3 REWRITE 2/3; narrator:12 DELETE 2/3)
+target: active-project/theater/facets/interest-narrator-b01-c04.md
+audit-report: Phase 5b cycle-3 audience verdicts (cape-fic + dark-fantasy + worm-canon) for NI facet
+findings-queued: 3
+
+## SESSION-START — 2026-05-27T01:00:00Z — facets-b01c04-phase5b-cycle3-memory
+dispatch: /and-facets b01-c04 Phase 5b cycle-3 memory facet — mem:4 @38 description REWRITE (scaffold-recurrence fault, 2/3 dark-fantasy convergence cycle-1+2); continuous-operation register required; preamble r2-adds note update
+target: active-project/theater/facets/memory-b01-c04.md
+audit-report: /and-facets b01-c04 Phase 5b cycle-3 dispatch (DEC-0035)
+findings-queued: 1
+
+## mem:4-scaffold-recurrence — RESOLVED — 2026-05-27T01:05:00Z
+fault: mem:4 @38 description "the feed lights the anchor the report did not name" repeats mem:2's scaffold (feed/detection-verb/anchor-the-record-refused) at synonym-substitution level; reader cannot distinguish intensification from repetition; AP11 continuous-operation carve-out not enacted in description, only claimed in target-reference gloss
+scope: line
+change: mem:4 description rewritten from "the feed lights the anchor the report did not name" to "the reading-and-the-not-reporting are running the same operation now; the architecture cycles through the body the report has filed elsewhere"; target-reference parenthetical, anchor @38, citation count, and AP11 carve-out gloss unchanged; preamble r2-adds line updated with cycle-3 rewrite annotation
+criteria met: yes — (a) scaffold differs from mem:2 (no feed/detection-verb/anchor structure; subject is the paired-operation, verb is running/cycles, object is the routing-destination); (b) continuous-operation register enacted in description body ("running the same operation now", "cycles through"); (c) target-reference resolves to un-priced-anchor monument family unchanged
+
+## SESSION-END — 2026-05-27T01:05:00Z — facets-b01c04-phase5b-cycle3-memory
+findings-applied: 1
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-27T10:00:00Z — facets-b01c04-phase5b-cycle3-vibes
+dispatch: /and-facets b01-c04 Phase 5b cycle-3 vibes facet — DEC-0035 convergence callouts: 4 AP8 token rewrites + vibes:9 DELETE + vibes:3 Jarvis token removal + cite-index regen
+target: active-project/theater/facets/vibes-b01-c04.md
+audit-report: /and-facets b01-c04 Phase 5b cycle-3 convergence report (DEC-0035)
+findings-queued: 6 (4 token rewrites + 1 DELETE + 1 token-list edit)
+
+## sensory:1-delete — RESOLVED — 2026-05-27T00:05:00Z
+fault: sensory:1 @1 — 2/3 convergence: disambiguation fail (tallow-damp-lane-caulking charged subject pre-loads smell; Q1 fails) + unanchored old-state (eel-alley-dawn-air not established in any loc-state or prior sensory entry)
+scope: line
+change: DELETE. (1) sensory-b01-c04.md sensory:1 replaced with DELETED comment; (2) proto-lines @1 [sensory:1] stripped; (3) _cite-index.md: sensory section 3→2 entries (DELETED comment added); loc-state:1 co-list sensory:1 removed; state:1 co-list sensory:1 removed; totals cascade applied
+criteria met: yes — both HARD axes cleared; sensory:2 @13 (smell) + sensory:3 @25 (sound) = 2 modalities, floor met; 2/39 = 5.1% density, within 3-6% band
+
+## ADD-prevalidation-sensory:4 — RESOLVED (NO-ADD) — 2026-05-27T00:06:00Z
+fault: dispatch required ADD pre-validation for proposed sensory:4 @4 thermal (shed-wall predawn contact)
+scope: n/a (no file change)
+change: none — ADD rejected on density ceiling. 39 proto-lines > 30; short-chapter exemption does not apply. DELETE+ADD = 3/39 = 7.7% > 6% ceiling. Modality count 3 after ADD also fails exemption condition b (floor = 2; 3 > 2). A3 pre-validation passed (loc-state:1 @1 confirms predawn baseline for oc-cooper-yard-eel-alley); rejection is density-only, not old-state. DELETE-only is rubric-correct.
+criteria met: yes — pre-validation complete; ADD correctly refused; modality floor held at 2 (smell + sound)
+
+## SESSION-END — 2026-05-27T00:06:00Z — facets-b01c04-cycle3-sensory
+findings-applied: 1 (sensory:1 DELETE + cite-index cascade)
+findings-skipped: 0 (ADD pre-validation returned NO-ADD — density ceiling; not a skip, a correct refusal)
+exit: CLEAN
+
+## NI-cycle3-narrator7 — RESOLVED — 2026-05-27T00:10:00Z
+fault: narrator:7 @31 AP10 inverted-predicate chassis + present-perfect post-hoc accounting tense (3/3 convergence: cape-fic + dark-fantasy + worm-canon)
+scope: line
+change: interest-narrator-b01-c04.md narrator:7 rewritten from "the half-step of yard-air between her hand and his is the exposure she has just paid in full" to "the half-step of yard-air closed around the sheet's last contact with her hand; the cost had crossed before the hand had registered it crossing"; SVO in interest-narrator-b01-c04.md only; no proto-lines or cite-index impact (back=Y, co-list unchanged)
+criteria met: yes — AP10 inverted-predicate chassis removed; tense corrected to pre-calc past-perfect; physical image (yard-air, sheet, hand) preserved; perceptual event registered in the moment contact breaks, not as post-hoc accounting
+
+## NI-cycle3-narrator3 — RESOLVED — 2026-05-27T00:11:00Z
+fault: narrator:3 @9 AP10 inverted-predicate chassis (2/3 convergence: dark-fantasy + worm-canon)
+scope: line
+change: interest-narrator-b01-c04.md narrator:3 rewritten from "the lever is no longer a question of whether; it has just become a question of how much" to "Jarvis's cadence carried the receipt without the conditional that would have left the yes open; the receipt-form had already settled before her body finished holding for it"; no proto-lines or cite-index impact (back=Y, co-list unchanged)
+criteria met: yes — AP10 chassis removed; perceptual event encoded (conditional-removal in cadence; body-register signal); pre-calc past-perfect tense; cost-tracking channel explicit
+
+## NI-cycle3-narrator12 — RESOLVED — 2026-05-27T00:12:00Z
+fault: narrator:12 @23 AP2 persistent-narration; restates @22 Wren-exclusion thesis without change; lonely in cite-index (2/3 convergence: cape-fic + dark-fantasy)
+scope: line
+change: (1) narrator:12 marked with canonical deletion comment in interest-narrator-b01-c04.md; (2) [narrator:12] stripped from proto-lines/b01-c04.md @23 (now bare); (3) _inflight/proto-lines-narrator.md @23 was already bare — confirmed, no edit required; (4) cite-index narrator section: narrator:12 replaced with deletion comment, count 11→10; lonely-entries: narrator:12 struck with deletion note; bare-protolines: @23 added; density distribution: bare count 14→15; totals: 69 facet entries; 23/39 protolines decorated (59.0%); (5) preamble: fires 11→10; density 28.2%→25.6%; non-state-mandatory 5→4; total 6+4=10; acknowledged-content-revise candidates block updated to reflect cycle-3 resolutions
+criteria met: yes — AP2 entry deleted; proto-lines citation stripped; cite-index clean; preamble arithmetic correct
+
+## NI-cycle3-script — DEPENDENCY-FLAGGED — 2026-05-27T00:13:00Z
+fault: dispatch requires re-run of python3 active-project/staff/cite-index/build_cite_index.py b01-c04
+scope: escalate
+change: script NOT run. build_cite_index.py is a Phase-1→Phase-2 merge tool that rebuilds the cite-index from _inflight/ copies. Running it against cycle-3 state risks overwriting manual cycle-3 cite-index edits if _inflight/ copies predate cycle-3. Manual edits are in place and authoritative. Flagging to showrunner: if _inflight/ copies reflect cycle-3 state, script is safe to re-run and will validate the manual cite-index. If stale, script will regress.
+criteria met: n/a — flagged, not resolved; manual cite-index correct per direct inspection
+
+## SESSION-END — 2026-05-27T00:14:00Z — facets-b01c04-phase5b-cycle3-NI
+findings-applied: 3 (narrator:7 REWRITTEN; narrator:3 REWRITTEN; narrator:12 DELETED + cascade)
+findings-skipped: 0
+exit: DEPENDENCY-FLAGGED (build_cite_index.py re-run not executed — _inflight/ staleness risk)
+
+## SESSION-START — 2026-05-27T02:00:00Z — facets-b01c04-cycle3-state-updates
+dispatch: /and-facets b01-c04 Phase 5b cycle-3 state-updates — 6 mechanical fixes (DEC-0035 worm-canon + cape-fic callouts) on env slice, jarvis slice, taylor slice
+target: active-project/theater/facets/state-updates-env.md + state-updates-jarvis-coin-kl-courier.md + state-updates-taylor-hebert-kl-122ac.md
+audit-report: /and-facets b01-c04 Phase 5b cycle-3 convergence report (DEC-0035)
+findings-queued: 6
+
+## fix-1 (state:6 anchor-lag @26→@25) — RESOLVED — 2026-05-27T02:05:00Z
+fault: studio.active_location fires at @26 (actor-entry bone) instead of @25 (scene-open env-frame where loc-state:4 fires); anchor lag
+scope: line
+change: env-slice entry 6: `@26` changed to `@25`; field/values unchanged (`oc-pig-tallow-lane → oc-ropers-court`)
+criteria met: yes — active_location now co-anchors with loc-state:4 at @25 (scene-open); no longer lagging to actor-entry @26
+
+## fix-2 (state:7 @27 non-canonical value → slug-list) — RESOLVED — 2026-05-27T02:06:00Z
+fault: `four-ward-complete` is a descriptor-value, not a zone-set slug-list; format inconsistent with state:3 and state:4 coverage_active_range entries
+scope: line
+change: env-slice entry 7: new value changed from `four-ward-complete` to `oc-hook-precinct + oc-pig-tallow-lane + oc-stitch-house-lane + oc-ropers-court`; field-extension comment preserved
+criteria met: yes — value is now a slug-list in the established zone-set format (matches state:3 and state:4 extension chain)
+
+## fix-3 (state:9 @29 compound roster → incremental) — RESOLVED — 2026-05-27T02:07:00Z
+fault: actors_in_yard entry showed `[] → [taylor, jarvis]` treating both as simultaneous new arrivals; Taylor was already in the yard before @29 (Jarvis entry bone); old-state should reflect pre-existing Taylor presence
+scope: line
+change: env-slice entry 9: old-state changed from `[]` to `[taylor-hebert-kl-122ac]`; new-state unchanged; result: `[taylor-hebert-kl-122ac] → [taylor-hebert-kl-122ac, jarvis-coin-kl-courier]`
+criteria met: yes — roster transition is now incremental (Jarvis joins an already-present Taylor); no duplicate entry dropped; entry 8 (active_location) unchanged
+
+## fix-4 (state:14 @39 narrative-label → slug) — RESOLVED — 2026-05-27T02:08:00Z
+fault: `chapter-close-stitch-house-lane-exit` is a stage-direction label, not a canonical location slug
+scope: line
+change: env-slice entry 14: new value changed from `chapter-close-stitch-house-lane-exit` to `oc-stitch-house-lane`; proto-line @39 is "taylor-hebert-kl-122ac exits the stitch-house lane" — post-state location is the stitch-house lane itself (the exit moves from cooper-yard into stitch-house-lane territory before chapter close); null rejected as the chapter has a canonical post-state surface
+criteria met: yes — value is now a canonical oc- slug consistent with rubric §Authority ACCEPT signature
+
+## fix-5 (state:16/22 Jarvis undeclared field-extensions) — RESOLVED — 2026-05-27T02:10:00Z
+fault: jarvis-coin-kl-courier slice used `stats.active_deliveries` and `stats.exposure_risk` without field-extension declarations in preamble; preamble was empty (only carve-out line)
+scope: line
+change: jarvis slice preamble: added standard field-extension block with two annotations — `stats.active_deliveries` (integer delivery-load counter; irreversible increment) and `stats.exposure_risk` (categorical risk tier; latent→operational flip); format mirrors taylor slice field-extension preamble; no entry data changed
+criteria met: yes — both extended fields now have rubric §"Field-extension protocol" annotations; preamble no longer empty; handoff_out propagation obligation stated
+
+## fix-6 (state:27 @22 compound encoding → split) — RESOLVED — 2026-05-27T02:13:00Z
+fault: `knowledge.wren-in-coverage-map: absent → present-but-outside-report` encoded two separable canonical facts (registration AND decision) as a compound value in one entry
+scope: line
+change: (1) taylor slice entry 5: value changed from `present-but-outside-report` to `present` (registration only; anchors at @22 = feed-return bone); (2) new entry 8 added: `@31 actor:taylor-hebert-kl-122ac.knowledge.wren-report-inclusion: na → excluded` (decision fact; anchors at @31 = report-delivery bone where exclusion is enacted); (3) field-extension preamble: `wren-report-inclusion` declaration added alongside `wren-in-coverage-map`; (4) cull-log: cycle-3-add note added; count 7→8; (5) SEAM-WREN-ANCHOR-DISCIPLINE: updated to describe two separate entries at @22 and @31 with their respective semantic loads
+criteria met: yes — two facts are now in separate entries at their correct enactment anchors; wren-in-coverage-map is registration-only; wren-report-inclusion is decision-only; both field-extensions declared; new NI co-citation expectation at @31 is absorbed by pre-existing SEAM-NI-CO-CITATION flag (NI must fire at @31 — already listed)
+
+## SESSION-END — 2026-05-27T02:14:00Z — facets-b01c04-cycle3-state-updates
+findings-applied: 6
+findings-skipped: 0
+exit: CLEAN
+note: cite-index rebuilt manually (no _inflight files present; slice consolidation and cite-index regen applied in-place). All 3 slice files edited + state-updates.md consolidated + proto-lines b01-c04.md updated (@25 +state:6, @26 bare, @31 +state:30) + _cite-index.md rebuilt (68 entries; 23/39 decorated 59.0%).
+
+## vibes-cycle3-token-vibes1 — RESOLVED — 2026-05-27T10:05:00Z
+fault: vibes:1 @7 token `acceptance-is-the-licensed-exception-believed-as-modification` has finite copula "is" — AP8 sentence-parsable (worm-canon 3/3 uncontested)
+scope: line
+change: token replaced with `licensed-exception-as-modification-not-rule-violation`; hyphenated noun-phrase; no finite verb
+criteria met: yes
+
+## vibes-cycle3-token-vibes4 — RESOLVED — 2026-05-27T10:06:00Z
+fault: vibes:4 @11 token `first-bell-three-day-interval-installed` passive-finite "installed" — AP8 sentence-parsable (worm-canon 3/3 uncontested)
+scope: line
+change: token replaced with `first-bell-three-day-interval-as-recurring-calendar-fixture`; noun-phrase; no finite verb
+criteria met: yes
+
+## vibes-cycle3-token-vibes14 — RESOLVED — 2026-05-27T10:07:00Z
+fault: vibes:14 @28 token `footprint-growth-held-in-accounting-as-quantitative-only` passive-finite "held" — AP8 sentence-parsable (worm-canon 3/3 uncontested)
+scope: line
+change: token replaced with `quantitative-only-accounting-of-footprint-growth`; front-loaded adjective compound nominal; no finite verb
+criteria met: yes
+
+## vibes-cycle3-token-vibes15 — RESOLVED — 2026-05-27T10:08:00Z
+fault: vibes:15 @35 token `street-layer-to-court-consolidation-conduit-now-functional` copula-ellipsed predicate adjective — AP8 sentence-parsable (worm-canon 3/3 uncontested)
+scope: line
+change: token replaced with `functional-street-layer-to-court-consolidation-conduit`; adjective fronted; no predicate structure
+criteria met: yes
+
+## vibes-cycle3-delete-vibes9 — RESOLVED — 2026-05-27T10:09:00Z
+fault: vibes:9 @22 Wren rising-entrapment pre-loads importance signal; should be enacted not asserted; redundant against vibes:2+vibes:5 (cape-fic callout DEC-0035)
+scope: line
+change: canonical DELETED comment in vibes-b01-c04.md; [vibes:9] stripped from proto-lines @22 + _inflight/proto-lines-vibes.md @22; cite-index vibes:9 replaced with DELETED comment; co-lists of narrator:6, state:4, state:27, mem:2, vibes:10, vibes:11, vibes:12 cleaned; pile-up @22 8→7
+criteria met: yes
+
+## vibes-cycle3-delete-vibes3 — RESOLVED — 2026-05-27T10:10:00Z
+fault: vibes:3 @9 Jarvis rising-entrapment irreconcilable with vibes:16 social-tether-antag-vector; Jarvis is vector not entrapped party (dark-fantasy callout DEC-0035)
+scope: line
+change: canonical DELETED comment in vibes-b01-c04.md; [vibes:3] stripped from proto-lines @9 + _inflight/proto-lines-vibes.md @9; cite-index vibes:3 replaced with DELETED comment; co-lists of narrator:3, state:16, state:23, state:24, vibes:2 cleaned; pile-up @9 7→6; vibes section 15→13; totals 69→67; density table 8-row removed + 6-row added; inflight fires 16→14
+criteria met: yes
+
+## SESSION-END — 2026-05-27T10:15:00Z — facets-b01c04-phase5b-cycle3-vibes
+findings-applied: 6 (4 AP8 token rewrites; vibes:9 DELETED; vibes:3 DELETED)
+findings-skipped: 0
+exit: CLEAN

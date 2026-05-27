@@ -3,7 +3,7 @@ facet: metaphor
 episode: b01-c01
 layer: R2.1
 date: 2026-05-25
-cite_index_hash: 0241e0529031804fa83d25c0fb7a5e0db2491571d2d83d9d9436c734627eca40
+cite_index_hash: 4bba08648f5a84f67a89d658da6792edfadb2ee3d6ae96c50ac555e569764c15
 f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
 outcome: ZERO-FIRES-CONFIRMED
 adds: 0
@@ -76,3 +76,88 @@ callback-duplication, AP3 pile-up redundancy) — these are not arbiter-scope ve
 per protocol § "No interventions on hard-fence violations." The taste-question reduces
 to: does the at-rest reading want a figure here that the existing layers don't carry?
 Answer at both peak-bones: no.
+
+---
+facet: metaphor
+episode: b01-c04
+layer: R2.4
+date: 2026-05-27
+cite_index_hash: 4bba08648f5a84f67a89d658da6792edfadb2ee3d6ae96c50ac555e569764c15
+f-r2-counts: {adds-evaluated: 3, adds-accepted: 0}
+outcome: ZERO-FIRES-CONFIRMED
+adds: 0
+deletes: 0
+revisions: 0
+---
+
+R2 metaphor judge — graph-aware reconsideration, b01-c04.
+
+R1 refused all three peak-bones on AP7 grounds, noting that upstream feeling/memory
+facets were not yet locked. R2 now has the locked graph. The structural finding is
+immediate and unambiguous: no memory or feeling flag co-locates with any peak-bone
+in this chapter.
+
+Memory anchors in b01-c04: mem:1 @4 / mem:2 @22 / mem:3 @33
+Feeling anchors in b01-c04: feel:1 @7 / feel:2 @39
+Peak-bones: @9 (scene-A) / @18 (scene-B) / @36 (scene-C)
+
+Anchor-to-peak overlap: none. Every peak-bone is anchor-dark.
+
+@18 (scene-B peak — primary R2 evaluation target, dark-humor register):
+The task asked whether the locked graph — specifically mem:2 firing at @22
+(un-priced-anchor / Wren-not-in-ledger) and narrator:4 + vibes:6 firing at @18
+itself — opens structural license for a dark-humor metaphor at @18 (Oswyn as
+unknowing node, grim-irony register).
+
+It does not. The mandatory anchor is one of {memory, feeling}. Neither fires at
+@18 in the locked graph. mem:2 fires at @22 — four bones later. The rubric's
+multi-justification gate requires ≥2 layers from {memory, feeling, tens} with
+the anchor counting as layer one; if the anchor is absent, the gate cannot open
+regardless of what vibes and narrator are doing.
+
+The dark-humor exception to AP7 (peak-zone default-refuse) is: "dark-humor
+metaphor at peak that deflates the rupture — permitted but rare and demanding."
+The exception presupposes a feeling anchor to ground the deflation — the somatic-
+tell is the body-evidence; the metaphor is the cognitive-register that inverts it.
+With no feeling flag at @18, the deflation has no somatic grounding; the metaphor
+would be unlicensed novel figuration (AP1) operating at a peak (AP7). Both faults
+are hard.
+
+Additionally: vibes:6 at @18 ("oswyn-mudway-flea-bottom-elder ++ the-unknowing-
+contact") and narrator:4 at @18 already carry the unknowing-node irony content. A
+metaphor adding a figure for the same content would trigger AP2-analog — figurative
+content already in co-facets. The graph shows three independent grounds for refusal
+stacking at @18: anchor-absent, AP7-without-exception, AP2-analog.
+VERDICT: REFUSE (R1 refusal confirmed against locked graph)
+
+@31-@32 (scene-C peak-shadow — report-handoff / protection-trap-fulcrum):
+Peak-shadow bones. Scene-C peak is @36. AP7's default-refuse applies to non-peak-
+bone pressure zones at equal strength; the dark-humor exception applies at peak
+only. No memory or feeling anchor fires at @31 or @32 (mem:3 fires @33, feel:2
+fires @39 — neither co-locates). Functional-register fail: the report-handoff is
+structural enactment, not dark-humor deflation or memory callback.
+VERDICT: REFUSE
+
+@9 (scene-A peak) and @36 (scene-C peak):
+Both confirmed on same grounds as R1. @9: anchor-dark, AP7. @36: anchor-dark
+(feel:2 @39 / mem:3 @33 do not co-locate), AP7, rupture-enactment form is not
+dark-humor-deflation.
+VERDICT: REFUSE (both)
+
+Chapter register assessment: b01-c04 is transactional acceptance — low-charge.
+The absence of metaphor is register-correct. The chapter's figurative weight is
+distributed across 16 vibes entries (including the unknowing-node and anchor-
+discipline registers), 9 narrator entries, and 3 memory callbacks. Figurative
+overlay at peaks would compete with rather than amplify these layers. The
+cite-index's 69.2% decoration density indicates a chapter whose emotional content
+is fully carried by the non-metaphor facet stack.
+
+Zero-fire is the complete and correct outcome for this chapter.
+
+CAP-REFUSAL: @18 dark-humor candidate — real register-available figure (Oswyn-as-
+node grim-irony); fails on anchor-absent, AP7, AP2-analog. Three independent hard
+grounds.
+CAP-REFUSAL: @31-@32 protection-trap candidate — real structural observation; fails
+on non-peak-bone status, anchor-absent, functional-register mismatch.
+CAP-REFUSAL: @36 world-axis pivot — real rupture moment; fails on anchor-absent,
+AP7.

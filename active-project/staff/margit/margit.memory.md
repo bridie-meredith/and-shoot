@@ -135,3 +135,27 @@ All 11 actor vibes.md populated with:
 - Subset of `series.vibe_cloud.keys` (b01 vibe_cloud keys applicable to character)
 - Personal/private associations per card Vibe Seeds
 - Notable fences or carry-forward annotations for load-bearing characters (Wren d14, Aemond axis-movement, Alicent/Sera compound-eyes-only, Rhaenyra active-agenda-pressure-staging)
+
+---
+
+### 2026-05-27 — /and-write b01c04 Phase 5 FAULT-REFERENCE remediation: 3 location cards authored
+
+**Trigger:** /and-write b01c04 Phase 5 audit returned FAULT-REFERENCE × 3. Three location slugs referenced in b01c04 bones had no warehouse cards. Cards authored and provisioned.
+
+**Project:** taylor-westeros-good-intentions
+
+| slug | library path | warehouse path | priority note |
+|---|---|---|---|
+| `oc-cooper-yard-eel-alley` | `cards/locations/oc-cooper-yard-eel-alley.card.md` | `active-project/warehouse/oc-cooper-yard-eel-alley.md` | Highest — load-bearing across b01c03 AND b01c04; retroactively canonical from b01c03 |
+| `oc-pig-tallow-lane` | `cards/locations/oc-pig-tallow-lane.card.md` | `active-project/warehouse/oc-pig-tallow-lane.md` | First adjacent ward; b01c04 s02 |
+| `oc-ropers-court` | `cards/locations/oc-ropers-court.card.md` | `active-project/warehouse/oc-ropers-court.md` | Third adjacent ward; b01c04 s03; four-ward coverage completion |
+
+**All 3 cards:** quality full, scope library (library copy) / scope project (warehouse copy, `overrides:` set), world planetos, project taylor-westeros-good-intentions (warehouse copies), references: cond-kl-geography-122ac + cond-kl-social-physics-122ac + loc-flea-bottom.
+
+**Index updates:** `cards/locations/INDEX.md` updated — all 3 slugs added to `by_world/planetos` and `by_quality/full`.
+
+**Authoring note — oc-cooper-yard-eel-alley:** Treated as canonical from b01c03 onward. Card content sourced from b01c03 bones lines 24-36 and b01c04 s01/s03 chunk material. Tallow-damp from lane-caulking confirmed as recurring sensory anchor across both chapters. Recurring meeting schedule (same place, first bell, three-day interval) noted in project warehouse copy.
+
+**Authoring note — oc-pig-tallow-lane:** Oswyn Mudway's unknowing-node status documented in project warehouse copy. Stitch-house lane ward connection noted. Penny-a-barrel carter economy is the substrate for coverage-node operation.
+
+**Authoring note — oc-ropers-court:** Four-ward coverage completion noted. Early-morning grey timing for clean feed geometry documented. Single-file far tributary per b01c04 s03 bones confirmed.

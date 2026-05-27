@@ -1,36 +1,103 @@
 ---
 reviewer: dark-fantasy-reader
 facet: exposition
-episode: b01-c02
+target: b01-c04
 phase: 5b-adversarial
-date: 2026-05-26
-verdict: ACCEPT
+timestamp: 2026-05-27
+verdict: accept
+---
+
+# dark-fantasy-reader — exposition adversarial read, b01-c04
+
+*Loading the three-entry file against the 39-bone proto-line set. The chapter is Taylor accepting Otto's proposal and running the first ward-expansion. Three scenes. Prior-episode bridge at @0. Two first-mention-place glosses at @14 (Pig Tallow Lane) and @26 (Roper's Court). Zero scene-open-orient fires.*
+
 ---
 
 ## Entry-level callouts
 
-[exposition:1 @0 — prior-episode-bridge] @exposition:1 — "The crowd had broken open around the stitch-maker's ward, and the hands had gone up before mine did. After that I went back to the drain angle and did not feed anyone for three weeks. I held the count at its edge by the cost of holding it. What I did instead was start to listen — at first because subsistence-reading is what survives in the Hook, and then because the listening had a shape I had begun to extend on purpose. The rule was the same rule. Reading was not directing. I had not crossed the line."
+**[exposition:1] @0 — prior-episode-bridge**
 
-This entry has to carry the three-week gap without making it feel like backstory. It does. "The hands had gone up before mine did" is the correct register — the body-memory first, the cognitive account second. "I held the count at its edge by the cost of holding it" — the tautology is the point. The only thing keeping the count held is the act of holding it. No external guarantee, no rule external to Taylor. When it breaks, it will break because she stopped holding. The bridge is honest about the architecture of Taylor's restraint.
+"I had one day. The proposal sat on the night-side of the count the way an unpaid debt sits at the edge of a ledger. I did not decide twice. I decided in the hour the dark thinned and the flies came back inside the count, and what I decided was that the harm I could prevent was the only column the accounting would close. The terms I had named for myself I would name to the courier at first bell, in the yard, in the same place he had named the question. The rule I had not stated in those words now had a price tag and a destination both."
 
-"The listening had a shape I had begun to extend on purpose" is the entry into the chapter's moral core: the extension-on-purpose is the admission she is working toward and away from simultaneously. The preamble does not dramatize this. It names it clinically and lets the chapter do the rest. The dark-fantasy reader's test for prior-episode bridges: does the bridge make the chapter seem like it has already paid its costs, or does it arrive at the chapter with the weight still running? This bridge lands with the weight still running. Accept.
+The bridge earns its keep. The ledger-voice is the right register for this persona's commitment moment — not anguish, not capitulation: a closed accounting. "The harm I could prevent was the only column the accounting would close." That's Taylor's logic stated on its own terms. The bridge does not tell me she decided; it tells me the accounting settled, and that is what deciding looks like for this character.
 
-[exposition:2 @0 — episode-open-context] @exposition:2 — "What I had built I did not yet have a name for... The rule was that I read and did not direct. That was the line. The instrument was harm-reduction. That was how it stayed permitted."
+"The flies came back inside the count" — this is the instrument still running, still feeding, during the hours of deliberation. The coverage does not pause while she thinks. That costs something. Good.
 
-"That was how it stayed permitted" — this is the chapter's thesis statement in preamble. The harm-reduction framing is not external permission; it is the frame Taylor uses to make the act permitted to herself. The exposition entry correctly establishes that the ledger-closing routine, the accounting, the coverage-map — these are Taylor's self-issued license. That is the dark-fantasy premise: there is no authority external to Taylor that would care about the line; she is both the legislature and the enforcement apparatus. The chapter's moral weight rests entirely on Taylor's self-governance. The preamble names this without editorializing on it. Accept.
+"The rule I had not stated in those words now had a price tag and a destination both." The rule acquiring a price tag is the dark-fantasy architecture of what's happening: the prohibition-line is not breaking, it is repricing. The bridge keeps that distinction precise. I am reading Taylor's framework running, not collapsing.
 
-[exposition:3 @14 — ward-junction first-mention] @exposition:3 — Em-dash-fold: "the ward-junction — a corner in the Hook where three or four alleys gave onto one another under a single precinct-ward's reach." The first-mention lands at the chapter's scene-A close beat, where the foot-traffic knots the ward-junction. The two-sense ward-note (precinct-ward sense vs. child-fostering-ward sense) is a genuine complexity. The em-dash-fold resolves it by specifying the spatial sense explicitly. From a dark-fantasy reader's standpoint: the ward-junction as a physical corner in the Hook is the correct Westerosi texture — not a mystical place, not a specially marked location, but a street corner defined by the convergence of precinct claims. That is the kind of specific social-geography this reader looks for: the world has administrative structures that predate the protagonist and operate by their own logic. The junction exists because the precincts converge there; it is load-bearing in the chapter because that convergence determines what the feed can and cannot read. Accept.
+The one thing I'm watching: "a price tag and a destination both" closes on abstraction. For dark fantasy, the destination should carry weight. The bridge trusts me to supply that weight from what I read in c03 — the courier, the yard, the arrangement. That trust is earned; c03 landed those terms.
 
-[exposition:4 @15 — scene-open-orient] @exposition:4 — "Days of it, and the pattern came." The fault-008 TASTE-FLAG fires on this entry: pov-frame without explicit first-person pronoun; auditor raised it as an attack candidate for voice-fidelity. The dark-fantasy reader's specific concern: does this read as Taylor's perception of elapsed time or as authorial voice narrating on Taylor's behalf?
+Bridge passes. @proto convergence: prior-episode-bridge at @0 (exempt from bone-adjacent fence; correct). No auditor finding attacks this entry — R2 REWORD (word-cap; 136→111 words) already resolved at R2 authoring. Surface I am reading is the R2 reword. Clean.
 
-"Days of it" — the "it" refers backward to the coverage-sweep established in scene-A. The sentence is incomplete by normal English standards (elliptical subject: [I had done] days of it). The register is Taylor's compression — she names the duration as a fact about her experience rather than as narration of external time. The "and the pattern came" is Taylor's observation: the pattern's arrival is something Taylor registers. This is perception-of-elapsed-time in Taylor's characteristic clinical register, not third-person narration.
+---
 
-The test I apply: would this sentence sound wrong if it appeared in a chapter where the narrator is explicitly first-person throughout? No. "Days of it, and the pattern came" reads as internal-summary — the kind of sentence Taylor might write in her own ledger before deploying the detail. It is compressed first-person perception, not authorial omniscience. The sentence does not have the syntax of omniscient narration (no "She had spent days at it"). Accept. The worm-canon-pedant concern is valid and should be tested in that reviewer's adversarial read; from this reader's perspective the register is earned.
+**[exposition:2] @14 — first-mention-place: Pig Tallow Lane**
 
-## Convergence-trace
+"Pig Tallow Lane — the first Flea Bottom ward beyond the Hook, named for the rendering trade no other would carry, three alleys feeding a waste-middens junction at its mouth."
 
-fault-008 (auditor TASTE-FLAG) — exposition:4 pov-frame without pronoun. Attack assessed above; dark-fantasy-reader accepts the register as Taylor's compression mode. The worm-canon-pedant attack may differ.
+Twenty-nine words. Does it land? Yes, and exactly the right way. "Named for the rendering trade no other would carry" — that is Flea Bottom's vertical logic: each ward holds the work no ward above it will touch. This is not generic medieval slum flavor. The trade defines the ward, and the ward defines its position in the network. The waste-middens junction at the lane-mouth is where the discard of other wards collects. This is a place that exists to process what the city rejects. That is specific Westerosi social-geography. The world was here before Taylor arrived.
 
-## Verdict: ACCEPT
+The gloss does not explain what the ward means to the chapter's action. It places the ward in the city's logic and steps out. That's the correct level of trust. The rendering-trade-no-other-would-carry detail does work no generic descriptor does: it gives the ward a social position defined by the rest of the city's refusal. That specificity is what distinguishes a place from set dressing.
 
-Four entries, correctly positioned. The prior-episode-bridge lands with the chapter's weight still running, not discharged by the bridge. The episode-open-context establishes that the ledger is self-issued permission, not external authorization — which is the correct dark-fantasy architecture for the chapter's moral stakes. The ward-junction gloss is specific Westerosi social-geography, not generic medieval set-dressing. The scene-bridge at @15 is Taylor's compression register. No entries exist as decorative context-laying. The chapter does not coast on the bridge to arrive at a premise that is already paid for. The weight is waiting inside the chapter when the body begins.
+The em-dash fold is fence-clear (anchor @14 is outside the {5..11} speech-bone window, confirmed by the facet's own fence-audit). No dialogue-adjacency violation.
+
+What this reader needed: confirmation that Pig Tallow Lane is a named ward with a logic, not a flavor-alley. Confirmed. No ADD surfaced.
+
+Convergence-trace: the auditor's flag-004 flags the exposition file as above the 1-5% sparsity band — that is a file-level flag, not an entry-level attack. The entry itself carries no auditor fault. The R2 REWORD at this entry (48→29 words, carter-tier detail delegated to bone-17 + chunk) is the correct economy — the reader does not need the penny-a-barrel labor rate in the place-gloss; they will find it when Oswyn appears at the cart.
+
+---
+
+**[exposition:3] @26 — first-mention-place: Roper's Court**
+
+"Roper's Court — a Flea Bottom craft-trade ward turning on rope-making, a central court with tributary lanes radiating off long and linear enough to serve as rope-walks."
+
+Twenty-six words. The geometry is the information. The rope-walk's linear requirement shapes the lanes; the lanes are the ward's physical form; the ward's physical form is why the feed-saturation pattern reads clean at early-morning in an empty court. The gloss gives me the geometry and trusts me to run the inference. That is the correct level of trust.
+
+"Long and linear enough to serve as rope-walks" — the "enough" implies the geometry was chosen or adapted, not given. The lanes exist in this form because rope-making requires that form. The trade shaped the city before Taylor walked into it. This is the world-was-here-before-the-protagonists test, and the gloss passes it.
+
+The em-dash fold is fence-clear (anchor @26 is far outside any dialogue-adjacent window — scene-C has zero speech bones; confirmed by the facet's fence-audit). No dialogue-adjacency violation.
+
+No ADD surfaced. The third ward in Taylor's four-ward coverage expansion is introduced with the geometry that makes it legible as a coverage site, nothing more.
+
+---
+
+## Scene-open-orient refusals: audit
+
+All three scene-boundary refusals confirmed from this reader's position. loc-state fires at @1 (cooper's yard, predawn), @13 (Pig Tallow Lane, morning, middens-junction-active), and @25 (Roper's Court, predawn, court-empty). The lens carries the time and place transitions at each scene boundary.
+
+If exposition had fired at each scene boundary, I would be reading orientation sentences where I should be reading the world arriving cold through the feed. The three refusals are the correct call. The chapter opens into each location through the sensory and location-state facets, not through exposition bridge-text. That is the right order.
+
+---
+
+## Sparsity: 7.7% vs the 1-5% band
+
+The auditor flags this as flag-004. From this reader's position: both glosses were warranted and neither was padding. The chapter introduces two new named Flea Bottom wards as the substance contract's capability-axis payload. Without the place-glosses, the reader walks into Pig Tallow Lane and Roper's Court knowing only that Taylor is extending coverage — not what kind of place she is extending into or what logic that place carries. The wards become locations Taylor visits rather than places with prior identity. The glosses prevent that flattening.
+
+The preamble-block format issue (auditor flag-004: missing machine-parsable carve-out block) is a stitch-parser concern, not a reading concern. It does not affect this verdict.
+
+---
+
+## Convergence-trace notes (auditor overlap)
+
+- **flag-004 (FREQUENCY-BAND / exposition above-band):** auditor correctly flags the missing carve-out preamble block format. From this persona's reading the overshoot is earned; the format fix is a fixer-scope correction. Does not change this accept.
+- **clean pass — dialogue-adjacent fence:** auditor's clean_passes_summary confirms "Exposition fence-audit: PASS." Confirmed from this reader's angle — neither @14 nor @26 is in the {5..11} speech-bone window. No fold-in fence violation to attack.
+- **clean pass — Earth-Bet hard-fence (pass-005):** the insect-feed / the count / the flies / the courier reading as Westerosi-register vocabulary is confirmed. No parahuman jargon surfaces in any of the three gloss texts. The bridge's "the count" and "the flies" are clinical register, not Earth-Bet proper nouns. Fence clean.
+- **fault-001 / fault-002 / fault-003 / fault-006 / fault-007 / fault-008:** these are NI-facet, dialogue-ID, and citation-graph faults. They affect what prose arrives at @9, @22, and @33 in the stitch; they do not affect what the exposition file contains. Not in scope for this exposition verdict.
+
+---
+
+## ADD candidates from this persona
+
+None. The two place-glosses cover the only structural audience-gaps this reader brings to the chapter. The prior-episode bridge orients the decision-logic. No named individual appears in scene-B or scene-C prose without an anchor — Oswyn is register-resident from b01c01-03; Wren is register-resident from b01c01-02; Jarvis is register-resident from b01c03. The report-sheet is cull-dropped correctly (formed and described on-bone at @31-@35). No gap this reader carries is left open by the exposition file.
+
+---
+
+## VERDICT
+
+**accept**
+
+The three-entry file does its job and no more. The prior-episode bridge converts Taylor's c03 decision-window into the c04 acceptance-state without summary-coasting — the weight is still running when the chapter opens. The two place-glosses give the new wards their logic: the rendering trade no other ward will carry, the rope-walk geometry that shapes the lanes. Not atmosphere. Logic. The scene-open-orient fires correctly at zero: the lens facets carry each scene transition cold.
+
+This reader's test for first-mention place entries: does the gloss tell me the world was there before the protagonist? Pig Tallow Lane is named for what no other ward would do. Roper's Court's lanes are long and linear because rope-making requires it. Both entries pass. The exposition file places the wards specifically and steps back. That is the correct discipline for a chapter whose substance contract runs on Taylor's capability-expansion, not on the author explaining the expansion to the reader.
+
+No fixer action required from this persona's verdict. The auditor's flag-004 preamble-block formatting is a legitimate format correction and should be resolved before /and-stitch Phase 0, but it does not block this accept.

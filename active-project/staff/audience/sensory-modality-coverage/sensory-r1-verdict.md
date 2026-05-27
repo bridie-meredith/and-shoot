@@ -1,39 +1,128 @@
 ---
 reviewer: sensory-modality-coverage
 facet: sensory
-episode: b01-c02
+episode: b01-c04
 cycle: r1
-date: 2026-05-25
-verdict: accept
+date: 2026-05-27
+verdict: revise
 ---
 
-# Verdict reasoning
+# Sensory Modality Coverage — Phase 5b Adversarial Review
+## b01c04 sensory-b01-c04.md
 
-Two entries. 29 bones. Modality tally: 1 sound (@4), 1 smell (@11). Two modalities — floor met. Density: 2/29 = 6.9%, above the standard 6% ceiling by 0.9pp. The V3 short-chapter floor-vs-ceiling exemption applies: bone_count < 30, modality count equals the floor (2), effective ceiling raised to max(6%, 2/29) = 6.9%. The density is exactly at the exemption-adjusted ceiling. No violation.
+---
 
-Modality balance: 50% sound / 50% smell. Single-modality dominance is defined as >50%. Neither modality exceeds 50%. No monoculture finding.
+## Modality tally (file-level)
 
-Silent-gap check: this is the file-level question that matters. The chapter is a surveillance-mapping exercise at a narrow service lane (oc-stitch-house-lane). The location card's sensory palette: tallow smoke (smell), drain-water trickle (sound), compressed foot-traffic sound (sound), cobblestone underfoot (tactile). The chapter bones are predominantly interior-cognitive (the insects fan, extend range, draw lines, file contacts, run the map). No crowd-compression run; no weather event; no lamp-catch or lamp-extinguish. The environmental action that generates sensory inflection is thin by design — this is a surveillance-watch chapter, not a crowd-navigation chapter.
+| id | proto | modality | delta |
+|----|-------|----------|-------|
+| sensory:1 | @1 | smell | eel-alley-dawn-air -> tallow-damp-lane-caulking |
+| sensory:2 | @13 | smell | tallow-damp-lane-caulking -> middens-discard-compound |
+| sensory:3 | @25 | sound | carter-work-ambient -> roper's-court-near-silence |
 
-Tactile silent-gap assessment: the cobblestone is named in the location card. Bones @1 (leaves the drain angle) and @20 (takes the drain angle) are the repositioning beats. Is there a tactile inflection at @1 or @20 — cobblestone-to-cobblestone? The bones do not name a surface-change event; @1 and @20 are positional, not surface-inflection beats. The tactile would only earn a fire if the cobblestone underfoot represents a discrete inflection at that beat relative to a prior state. No such inflection is present — Taylor is in the lane for the whole chapter; the cobblestone is sustained baseline, not a change-point. No missed tactile fire.
+**Modality distribution: smell ×2 / sound ×1. Zero thermal. Zero tactile. Zero light.**
 
-Thermal silent-gap assessment: no weather or temperature event in the bones. The chapter is surveillance-watch under day-into-end-of-day conditions. No thermal inflection candidate in the proto-lines. No missed thermal fire.
+Total: 3 entries / 39 bones = 7.7%. Above the 3-6% band.
 
-Light silent-gap assessment: no lamp-light event, no shutter-open, no shadow-entry in the bones. The chapter occurs in daylight fading to end-of-day; no discrete light inflection beat is named in the bones. No missed light fire.
+---
 
-Distribution vs. episode shape: sensory:1 at @4 (scene-A, flat-low zone — range establishment) and sensory:2 at @11 (scene-B, peak-and-release zone — tallow smoke onset as the insects locate the stitch-house lane). The flat-low scene gets the acoustic threshold; the peak scene gets the environmental marker. Sparse and distributed across scene zones. Appropriate for a surveillance-quiet chapter.
+## Density — ADVISORY, not blocking
 
-Per-scene cap check: scene-A: 1 fire. Scene-B: 1 fire. Scene-C: 0 fires. All ≤3. Pass.
+The auditor's flag-003 identifies the arithmetic: 3 scenes × 1 scene-open fire = 3/39 = 7.7% regardless of authoring choices. The V3 short-chapter floor-vs-ceiling exemption does NOT apply here — `bone_count = 39`, above the sub-30 threshold. The standard 6% ceiling is in effect and the file exceeds it. However, the scene-count floor argument is structurally real: a 3-scene chapter cannot achieve both modality-floor coverage and scene-open anchoring without exceeding the ceiling arithmetically. This reviewer treats the density overshoot as architectural-advisory, not as a primary attack.
 
-**The file is thin — 2 entries is the floor minimum — but it is thin because the chapter is thin on environmental inflection.** The bones are interior-cognitive; the environmental drama is in the acoustic threshold at @4 and the tallow-smoke onset at @11. There are no genuine missed fires in the location palette that the chapter's bones license.
+The modality distribution is the primary attack.
 
-# Entry-level callouts
+> Convergence trace: overlaps auditor flag-003 (FREQUENCY-BAND — sensory geometry-floor conflict).
 
-None. File-level review only. Both entries stay.
+---
 
-# Convergence-trace notes
+## Attack 1: smell-dominant file across a three-location dawn chapter
 
-- auditor flag-001 (6.9% above 6% standard ceiling): the V3 short-chapter exemption covers this. Under the exemption the density is exactly at the raised ceiling. No action required.
-- auditor RUBRIC-FIDELITY: modality-distribution passes (50/50, no dominance). Auditor report line "modality dominance ceiling: 50%/50% — no single modality ≥67%" matches this reviewer's tally.
-- b01-c01 cycle-1 verdict (this reviewer): the b01-c01 attack centered on a tactile silent gap in a crowd-compression scene. b01-c02 has no crowd-compression run; the tactile silent gap attack does not apply here. The chapter's bones are surveillance-cognitive throughout.
-- The most plausible attack surface for this reviewer would be scene-C silence (0 fires across 10 bones, @20-@29). However: scene-C is the ledger-close and recognition-suppression sequence — the environmental inflections that would license a fire (a sound change, an additional smell onset) are not present in the bones. The drain-water trickle is named in loc-state:5 @26, but it is a sustained ambient at end-of-day (loc-state carries it), not a discrete onset inflection. A sensory fire on drain-water-audible-at-burndown would duplicate the loc-state content and violate the inflection-not-sustained test. The scene-C silence is correct.
+2 of 3 fires are smell. The chapter moves through eel-alley (scene-A), Pig Tallow Lane (scene-B), Roper's Court (scene-C). That lane-sequence is a smell-progression by location design — the middens drift follows Taylor through the geography. Both smell fires are defensible individually.
+
+But a chapter of 39 bones crossing three exterior pre-dawn locations in King's Landing has zero thermal fires. Pre-dawn stone-yard, early-morning lane, open court at grey-light. The thermal palette of these locations — cold stone, pre-dawn chill, the warmth differential of bodies in a yard — is absent from the sensory file entirely. This reads single-channel across the opening two scenes.
+
+> [sensory:file-gap-thermal] — zero thermal fires across 39 bones in a pre-dawn exterior chapter. The location palette (stone, pre-dawn hour, open lanes) licenses at least one thermal fire. The episode reads cold-free.
+> Convergence trace: no direct auditor finding; this gap is uncaught by the mechanical scan.
+
+---
+
+## Attack 2: pre-dawn stone yard — thermal candidate missed at scene-A
+
+Scene-A (@1-@12): smell:1 at @1. Nothing else for 12 bones.
+
+Proto-line @4: "taylor-hebert-kl-122ac takes the shed-wall." This is Taylor placing her back against the shed-wall while waiting for Jarvis. A pre-dawn stone wall in King's Landing in the early morning is a thermal contact event — cold stone against a body is a discrete tactile/thermal inflection at audience-experiential scale. The verb "takes" is bare (does not self-carry the thermal register). Magnitude clears Q2 — cold stone on a pre-dawn morning is unambiguously register-shifting; it is not sub-threshold micro-grain. This was a fire the author bypassed.
+
+The loc-state:2 anchors at @4 (back=Y in cite-index). The loc-state file for scene-A carries the cooper's yard as the active location. A thermal fire at @4 would need an old-state from the most recent loc-state for the beat's location. The episode's chapter-open thermal baseline (predawn air) is nameable from loc-state:1 @1. Old-state chain: predawn-air-thermal (from loc-state:1 @1 baseline) -> shed-wall-cold-contact (the inflection at @4). The old-state lineage is anchored.
+
+> [sensory:missed-fire-A] @4 — taylor-hebert-kl-122ac takes the shed-wall; thermal candidate. Bare verb; pre-dawn stone-wall contact; audience-experiential magnitude clear. Old-state anchors to loc-state:1 @1 predawn baseline. Missed fire.
+> Convergence trace: cite-index marks loc-state:2 @4 as a lonely entry (no co-citations, no inbound license). A thermal sensory fire at @4 would co-cite loc-state:2 and ratify the scene-A environmental state.
+
+---
+
+## Attack 3: scene-B working-lane — sound candidate missed at @17
+
+Scene-B (@13-@24): smell:2 at @13. Zero other fires across 12 bones.
+
+Proto-line @17: "the penny-a-barrel carter parks the middens cart." This is an active-motion bone in a pre-dawn working lane. Cart-wheel on lane-stone stopping, the physical noise of a cart being set in position — this is a sound event. The verb "parks" is bare (does not self-carry the audible register of a cart stopping on cobblestone). Magnitude: a cart stopping in a pre-dawn near-silence is audible at audience-experiential scale. The prior sound baseline for scene-B is the "carter-work-ambient" named in sensory:3's old-state — which means carter-work-ambient was the active sound register *before* @25, suggesting the cart was already in ambient motion earlier. If carter-work-ambient is the scene-B ambient, then @17 is a moment within that sustained ambient rather than an inflection. However: sensory:3 is anchored at @25 (scene-C open), not scene-B. The old-state "carter-work-ambient" in sensory:3 may be describing what Roper's Court transitions from — implying carter-work was the ambient at the scene-C arrival point, not throughout scene-B. Ambiguity is present; the author should confirm whether the carter-work sound was sustained throughout scene-B (loc-state job) or whether @17 was a discrete event within a quieter scene-B baseline.
+
+If the carter-work sound was NOT the sustained scene-B ambient (i.e., the carter arrives and starts work at or near @17), then @17 is an inflection beat — silence-to-cart-noise — and a sound fire was earned and skipped. If the carter-work was the sustained ambient from scene-B open, @17 is sustained-as-inflection and the refusal is correct (inflection-not-sustained test).
+
+This ambiguity is a revise finding, not a fail. The author needs to confirm the scene-B sound baseline in loc-state.
+
+> [sensory:ambiguous-B] @17 — carter parks the middens cart; sound candidate. Whether this is an inflection or sustained-ambient depends on scene-B's loc-state sound baseline. If the carter's sounds were not the established scene-B ambient, this was a missed fire. Requires loc-state:3 @13 clarification of scene-B sound baseline.
+> Convergence trace: no direct auditor finding.
+
+---
+
+## Attack 4: loc-state:4 names a light-level condition — sensory fires only sound at @25
+
+Scene-C (@25-@39): sound:3 at @25 (carter-work-ambient -> roper's-court-near-silence). This is the scene-C open and the only sensory fire in a 15-bone scene.
+
+Proto-line @25: "the early-morning grey empties Roper's Court." The language names a light condition — "early-morning grey" — as part of the scene-C open. The loc-state:4 fires at @25 (back=Y, co-cited with sensory:3 and state:5 in the cite-index). If loc-state:4's sensory section names the grey as a discrete light-level change from the eel-alley predawn darkness, that is a loc-state sensory note naming a perceptual event — which the rubric's Cross-facet modality silent-gap clause requires to be accompanied by a sensory-flag at the same anchor.
+
+The sensory file fires only sound at @25. The early-morning-grey light condition goes unratified by the sensory facet.
+
+The rubric states: a loc-state sensory note naming a discrete perceptual event (thermal release, audible texture change, smell drift) must be accompanied by a sensory-flag at the same anchor, OR the loc-state author must downgrade the sensory note to non-event ambient language. If "early-morning grey" is a sustained baseline (carried from before the chapter's open), no fire is required. But "empties Roper's Court" frames the grey as a qualifier of the court's specific atmospheric condition at scene-C open — it reads as a present-tense characterization, not a prior-established baseline. This is a cross-facet contract candidate.
+
+> [sensory:cross-facet-gap] @25 — loc-state:4 names early-morning grey at scene-C open; sensory fires sound only. Light modality unratified. If loc-state:4's sensory note characterizes the grey as a discrete light-level change from the scene-A/B predawn, the cross-facet contract requires a sensory light fire at @25 OR a loc-state:4 downgrade to ambient language.
+> Convergence trace: auditor pass-007 checks scene-map per-scene caps (sensory ≤3, PASS) — but the cap-pass does not evaluate the loc-state cross-facet contract. The auditor's pass is on the ceiling; this attack is on the floor. No auditor finding overlaps this callout.
+
+---
+
+## Summary of callouts
+
+| id | proto | modality | attack | severity |
+|----|-------|----------|--------|----------|
+| [sensory:file-gap-thermal] | — | thermal | zero thermal fires across 39 pre-dawn exterior bones | revise |
+| [sensory:missed-fire-A] | @4 | thermal | shed-wall cold-contact; bare verb; magnitude clear; old-state anchored | revise |
+| [sensory:ambiguous-B] | @17 | sound | carter parks; sound candidate pending scene-B baseline confirmation | revise |
+| [sensory:cross-facet-gap] | @25 | light | loc-state:4 names grey at scene-C open; light unratified by sensory | revise |
+
+No fails. All callouts are revise. The three entries that exist are individually defensible — each fires on a bare verb at a scene-open anchor with a nameable old-state and a perceptible inflection. The attack is not against what was fired; it is against what the file leaves silent across 39 bones and three exterior pre-dawn locations.
+
+---
+
+## Modality-coverage floor verdict
+
+Floor = 2 modalities. Met (smell + sound). This prevents a fail. But the floor being met does not mean the file is healthy — two distinct modalities across 39 bones with zero thermal, zero light, zero tactile, in a pre-dawn exterior chapter with stone walls and open courts, is coverage-at-floor only. The chapter's environmental palette licenses more. The stitcher will render this chapter sensory-flat on all modalities except smell-progression and one sound-drop.
+
+---
+
+## Prescription
+
+**Minimum-change fix: add ≥1 thermal fire and resolve the @25 light question.**
+
+1. Thermal fire at @4 (shed-wall-cold-contact): add `thermal: predawn-air-ambient -> shed-wall-cold-contact` anchored at @4. Verify old-state chains from loc-state:1 @1.
+2. @25 light question: confirm whether loc-state:4 names early-morning-grey as a discrete inflection from predawn darkness. If yes, add `light: predawn-dark -> early-morning-grey` at @25 alongside the existing sound:3. If the per-scene cap (≤3) would be breached: scene-C currently has 1 fire; adding 1 more = 2 total, well within cap. The add is permitted.
+3. @17 ambiguity: confirm scene-B sound baseline in loc-state:3. If carter-work was not the established scene-B ambient from @13, add a sound fire at @17. If it was sustained from @13, refusal stands and no add is required.
+
+**Anti-pattern #14 (Cycle-N ADD without pre-validation) is in force for any adds.** Each proposed ADD must clear the full per-entry rubric — modality-inflection, disambiguation-discipline, magnitude-sufficiency, audience-side-perceptibility, AND old-state lineage — before writing to the file. If the thermal ADD requires a loc-state edit to anchor the old-state, the loc-state edit lands first.
+
+Do NOT add fires on any other bones to hit density. The architectural-density issue (7.7% vs. 6% ceiling) is advisory; inflating to 4-5 entries without earning each on all four rubric axes is anti-pattern #12 (density-on-charged-beats).
+
+---
+
+VERDICT: **revise**
+
+Grounds: smell-dominant file (×2 of 3 entries) with zero thermal and zero light across 39 bones of pre-dawn exterior chapter; missed thermal fire at @4 (shed-wall cold-contact; bare verb; anchored old-state); @25 loc-state:4 light condition unratified by sensory facet (cross-facet contract candidate); scene-B sound candidate at @17 pending baseline confirmation. Modality floor met (2 modalities) but cross-modal texture insufficient for the episode's environmental scope.

@@ -1,48 +1,43 @@
-# bones — b01c03 (narrator-interest citation overlay)
+# proto-lines-narrator — b01-c04
+# byte-identical SVOs from theater/proto-lines/b01-c04.md with [narrator:<id>] citations on fired bones
+# 9 fires / 39 bones (23%)
 
-episode: b01c03
-narrator: taylor-hebert-kl-122ac
-source-facet: interest-narrator-b01-c03.md
-purpose: per-bone citation overlay for narrator-interest fires; consumed by cite-index builder at /and-facets Phase 2
-cast: taylor-hebert-kl-122ac, jarvis-coin-kl-courier
-locations: oc-stitch-house-lane
-aggregate_range: 1-36
-
-1 the morning market fills the Hook with shoulder-to-shoulder foot-traffic and the smell of tallow-wax and fish-salt
-2 taylor-hebert-kl-122ac moves through the market stalls without stopping, reading foot-traffic density through the insect-feed
-3 jarvis-coin-kl-courier stands at a salt-fish stall, hands at his sides, eyes on taylor-hebert-kl-122ac before she has registered him as a presence
-4 taylor-hebert-kl-122ac's insect-feed registers jarvis-coin-kl-courier's stillness as out-of-pattern three seconds before her eyes do [interest-narrator:1]
-5 taylor-hebert-kl-122ac slows her pace by one step, hands loose, eyes on the next stall rather than on jarvis-coin-kl-courier
-6 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:1]
-7 taylor-hebert-kl-122ac goes still, weight on her back foot, both hands visible at her sides [interest-narrator:2]
-8 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:2] [interest-narrator:3]
-9 taylor-hebert-kl-122ac's insect-feed registers the distance between her and jarvis-coin-kl-courier as the distance of a street-side negotiation — unremarkable to anyone passing
-10 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:3] [interest-narrator:9]
-11 taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [taylor-hebert-kl-122ac:1]
-12 taylor-hebert-kl-122ac moves past jarvis-coin-kl-courier's stall position without looking back, insect-feed tracking his departure route
-
-13 the cooper's yard off Eel Alley holds two workers at the near shed and a boy stacking hoops at the far end — no foot traffic past the third bell, no clear sightline from the lane-mouth
-14 taylor-hebert-kl-122ac reaches the yard before jarvis-coin-kl-courier, back to the shed wall, clear line to the yard-mouth, feed running on the two workers and the boy
-15 jarvis-coin-kl-courier enters the yard at the third bell with no document, no letter, no seal, and takes a position three steps from the yard-mouth
-16 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:4]
-17 taylor-hebert-kl-122ac registers the name and does not shift her weight or her eyes from the yard-mouth [interest-narrator:4]
-18 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:5]
-19 taylor-hebert-kl-122ac runs the inventory of wards-below-Rhaenys's-Hill coverage against the feed she already holds [interest-narrator:5]
-20 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:6]
-21 taylor-hebert-kl-122ac counts the ward-workers by the near shed and the boy's hoop-stack rate at the far end through the feed
-22 taylor-hebert-kl-122ac maps the ward Jarvis named against the coverage she already holds for Rhaenys's Hill ward-traffic [interest-narrator:10]
-23 the prohibition engages in taylor-hebert-kl-122ac's accounting as a term on one side of a ledger where the other side has a named cost attached to refusal [interest-narrator:6]
-24 taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [taylor-hebert-kl-122ac:2]
-25 the trade-shape sits between taylor-hebert-kl-122ac and jarvis-coin-kl-courier in the tallow-damp air of the cooper's yard: a named ward, a named patron, a named product, no answer yet
-
-26 the cooper's yard holds the same workers at the near shed, the same boy at the hoop-stack, the same tallow-damp from the lane-caulking two alleys over
-27 jarvis-coin-kl-courier stands without adding to the proposal, hands at his sides, weight distributed for someone who has delivered and is waiting
-28 taylor-hebert-kl-122ac holds her position with her back to the shed wall and the yard-mouth in clear line
-29 taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [taylor-hebert-kl-122ac:3] [interest-narrator:7]
-30 jarvis-coin-kl-courier considers taylor-hebert-kl-122ac for a beat — the beat in which a courier registers that the answer was not refusal
-31 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:7] [interest-narrator:11]
-32 jarvis-coin-kl-courier leaves the yard by the lane-mouth with the same unhurried pace he arrived with
-33 taylor-hebert-kl-122ac does not move from the shed wall position until the feed confirms jarvis-coin-kl-courier's exit from the lane
-34 taylor-hebert-kl-122ac runs the coverage of Rhaenys's Hill ward-traffic against the boy at the hoop-stack and the two workers at the near shed [interest-narrator:8]
-35 the open ledger line and the coverage map sit in the same place in taylor-hebert-kl-122ac's accounting, requiring the same answer
-36 taylor-hebert-kl-122ac leaves the cooper's yard by the lane-mouth, the feed still running on the street beyond it
+1 the tallow-damp marks the cooper's-yard shed-wall
+2 the cooper's-yard workers hold the smallfolk-hours murmur
+3 taylor-hebert-kl-122ac enters the cooper's yard
+4 taylor-hebert-kl-122ac takes the shed-wall
+5 jarvis-coin-kl-courier enters the lane-mouth
+6 the insect-feed returns jarvis-coin-kl-courier [narrator:1]
+7 taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [taylor-hebert-kl-122ac:4]
+8 taylor-hebert-kl-122ac holds the feet [narrator:2]
+9 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:8] [jarvis-coin-kl-courier:9] [narrator:3]
+10 the insect-feed holds the hook-range
+11 jarvis-coin-kl-courier exits the lane-mouth
+12 taylor-hebert-kl-122ac exits the cooper's yard
+13 the waste-middens junction draws the discard-air
+14 taylor-hebert-kl-122ac enters Pig Tallow Lane
+15 taylor-hebert-kl-122ac extends the insect-range
+16 taylor-hebert-kl-122ac maps the junction-agitation
+17 the penny-a-barrel carter parks the middens cart
+18 the insect-feed returns oswyn-mudway-flea-bottom-elder [narrator:4]
+19 taylor-hebert-kl-122ac maps the oswyn-mudway-flea-bottom-elder interval [narrator:5]
+20 Pig Tallow Lane returns ward-tier bodies only
+21 the stitch-house frames mark the second ward
+22 the insect-feed returns wren-stitch-maker-flea-bottom-ward [narrator:6]
+23 taylor-hebert-kl-122ac holds the feet
+24 taylor-hebert-kl-122ac maps the second-ward junction
+25 the early-morning grey empties Roper's Court
+26 taylor-hebert-kl-122ac enters Roper's Court
+27 taylor-hebert-kl-122ac extends the insect-range
+28 taylor-hebert-kl-122ac runs the four-ward feed
+29 jarvis-coin-kl-courier enters the cooper's yard
+30 jarvis-coin-kl-courier displays the note
+31 taylor-hebert-kl-122ac delivers the report-sheet [narrator:7]
+32 jarvis-coin-kl-courier pockets the report-sheet
+33 the report-sheet holds at ward-pattern observation
+34 the report-sheet holds at Flea Bottom-tier source-content
+35 the courier-arrangement holds the conduit-rank
+36 jarvis-coin-kl-courier exits the cooper's yard [narrator:8]
+37 taylor-hebert-kl-122ac runs the ward-feed
+38 the insect-feed returns wren-stitch-maker-flea-bottom-ward [narrator:9]
+39 taylor-hebert-kl-122ac exits the stitch-house lane

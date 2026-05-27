@@ -1,148 +1,160 @@
 ---
 reviewer: cape-fic-reader
 facet: state-updates
-episode: b01-c01
-cycle: r1
+target: b01c04
+mode: facet-adversarial (Phase 5b)
+timestamp: 2026-05-27
 verdict: revise
-date: 2026-05-25
 ---
 
-# Cape-Fic Reader — State-Updates Adversarial Verdict
+# Cape-Fic-Reader — State-Updates Adversarial Review (b01c04)
 
-## Stance
+## Reading stance
 
-Reads mechanically. State-updates is the write-back layer — wrong entries corrupt the board, and I track who knows what and what the state actually is at every beat. Lore leaks and invented knowledge are walkouts; invented fields that write fake values into canonical state are the same class of fault. Nine entries, nine targets.
+I'm here for the canonical write-back layer — the actual board-state changes. What I need from state-updates is simple: it has to tell me what changed, when, and whether the facet knows its own rules. I read this like a fight choreographer watching a scene where powers get used: if the established costs get honored, I lean forward. If a flip fires on a bone where nothing actually flipped, I flag it. If the old-value is wrong, the whole chain downstream is corrupt and I don't care how nice the prose will be.
 
-## Per-entry reading
+I have the auditor's Phase 5 report alongside me. The mechanical scan caught faults 001-008 and eleven flags. The seams the scan can't reach — whether the field-extension cluster holds on hostile reading, whether the compound value on Wren's knowledge entry is clean, whether the carve-out at 36% env-density is load-bearing or a rationalization — those are mine.
 
-**[state-updates:1] @21 oswyn.location: mudway-alley-hook-district -> lane-mouth-of-rescue-site**
+---
 
-Bone 21: "oswyn takes the lane-mouth." Location genuinely changes. Persists through chapter close (handoff_out confirms Oswyn stationed at lane-mouth watching Taylor). Field is a real tracked-state field. Authority: oswyn fork. NI not required (non-POV). Back=Y in cite-index. Strip test: if the entry doesn't fire, Oswyn's canonical location stays wrong in downstream chapters. Passes all three axes.
+## Entry-level callouts
 
-`CORRECT`
+**[state-updates:1] @1 — chapter-open time-of-day reset**
 
-**[state-updates:2] @26 oswyn.relationship_to_taylor: regular-contact-no-awareness-of-function -> categorized-known-unknown-witch-adjacent**
+`studio.time_of_day: third-bell-noon → first-bell-morning`
 
-Bone 26: "oswyn lifts the chin." The comment defends this as a field-extension (relationship_to_taylor value-space extended to carry categorization-shift). Persistence: handoff_out specifies "Hook precinct knows the foreign woman who moved the crowd" — the categorization does persist. The field-extension is tracking a social-cognition state (awareness shift), which the rubric permits (knowledge, mask-state, exposure-state ARE tracked). Not mood, not register. The value format "categorized-known-unknown-witch-adjacent" is compound but names one state. Authority: oswyn fork, oswyn actor, non-POV.
+Chapter-close-to-chapter-open delta. The canonical clock has to land somewhere. Legitimate write-back. The @9 back-citation of this entry (state:1 pulled as context into the acceptance peak) is non-standard but produces no contradiction — auditor flag-011 correctly calls it advisory. Accept.
 
-The question: is "relationship_to_taylor" a legitimate extension or an invented-social-cognition field? The rubric's accepted extension examples include `knowledge.rider-departed` — a knowledge sub-field. This is structurally equivalent: Oswyn's knowledge/category of Taylor. The author documented the extension in the entry comment. I'll pass it under ceiling-defense: the categorization IS a persistent state change that the showrunner needs to track for downstream Oswyn scenes.
+**[state-updates:3,4,7] @15, @22, @27 — coverage_active_range field-extension triple**
 
-`CORRECT`
+`studio.coverage_active_range: [progressive geographic expansion across three bones]`
 
-**[state-updates:3] @12 taylor.deployment-state: passive-subsistence-range -> active-crowd-yield-deployment**
+Three fires on a field that did not exist before this chapter. Field-extension protocol applies; carve-out preamble is present; per-entry annotations are in the file. My hostile read: is `coverage_active_range` a genuine environment-observable fact, or is it Taylor's capability tracking wearing a studio costume?
 
-Bone 12: "the insects propagate." The canonical axis-move anchor for capability+1. Field-extension: deployment-state as a tracked-state aspect of Taylor's insect-network posture. The rubric explicitly lists "deployment-state" as an example of a tracked-state aspect in the entry's own comment. The persistence note says "absolute through chapter close — deployment is acknowledged-active in handoff_out." Handoff_out confirms "capability rank 3 (one deployment)." Authority: taylor fork. NI co-citation at @12: narrator:4 is present (cite-index confirms co-citation). Cross-facet test passes.
+Author's defense: `actor:taylor.capability` tracks deployment scale; `studio.coverage_active_range` tracks which ward-zones are under live feed as an env-observable fact. The distinction is real but strained — if Taylor goes down mid-chapter, `coverage_active_range` collapses with her. The field tracks Taylor's operational status expressed as environmental footprint. Studio authority is thin at the boundary.
 
-But here's my concern: is deployment-state distinct from the capability_axis stat entry (state:4)? The rubric says one entry per real change. If deployment-state and capability_axis are two separate tracked fields that each genuinely change at @12, two entries are licit. The rubric's s01e01:48 example explicitly fires two entries on two targets at the same beat. I need to determine whether deployment-state and capability_axis track different things — they do: deployment-state is the operational posture (active vs. suppressed), capability_axis is the rank-tier. These are independent tracked fields.
+But the alternative is worse: pushing this into `actor:taylor.capability` loses the geographic specificity the ward-expansion arc requires. Structural necessity justifies the extension. The mechanical scan passed the carve-out preamble. Accept with notation — the authority boundary is strained but the extension is defensible.
 
-`CORRECT`
+**[state-updates:23,24] @9 — dual peak-bone fire (position_in_kl + arrangement-state)**
 
-**[state-updates:4] @12 taylor.capability_axis: 2 -> 3**
+`actor:taylor.stats.position_in_kl: smallfolk-anonymous → named-conduit-at-courier-tier`
+`actor:taylor.knowledge.arrangement-state: licensed-exception-considered → licensed-exception-active`
 
-Bone 12: the canonical axis-move, substance_delta capability+1 at b01c01s02n06. NI co-citation: narrator:4 at @12, present. This is the entry I'm most suspicious of. The rubric says the field must exist on the target's state schema. `capability_axis` as a named field on `actor:taylor-hebert-kl-122ac`'s state.md — is that established?
+@9 is the acceptance peak. Scene-map marks it peak-bones-class for scene-A; strong-expect satisfied. Both changes persistent past @9. Strip test passes both independently — without these fires, Taylor carries wrong state through the remainder of the chapter. The `position_in_kl` jump is large (smallfolk-anonymous to named-conduit-at-courier-tier in one bone), but peak-bones are allowed to carry consequence-class changes. Accept.
 
-The substance axes live in showrunner memory, not in actor state.md. The rubric's accepted fields are: position, inventory, knowledge.*, mask-state, exposure-state, posture, administrative-status — not axis ranks. The rubric's worked example at s01e01:48 fires `administrative-status` as a field-extension, but that is a genuine external-world bureaucratic status change. `capability_axis: 2 -> 3` is writing a substance tracking number directly into the actor's canonical state as if it were a real-world field.
+Converges with: auditor pass-004 — NI co-citation via narrator:3 @9 satisfied. Contract held.
 
-I know this: there is a real change happening at @12 (deployment begins, capability-as-demonstrated rises). But `capability_axis` as a value-2-to-3 tracker is substance-layer infrastructure, not a canonical-state field on the actor. The right state-layer entry for the capability move at @12 is state:3 (deployment-state: passive -> active), which already fires. `capability_axis: 2 -> 3` is either a duplicate of what state:3 captures, or it is writing the substance contract's axis rank directly into actor state — which is an invented-field violation under anti-pattern #6 unless the actor's state.md contains a `capability_axis` field.
+**[state-updates:25] @15 — capability_axis +1 first fire**
 
-This is a genuine authority/field question. The entry passes reality (something real changed) but fails authority (the field may not exist on the actor's state.md schema, and if it does, it is the substance rank — which is showrunner memory's domain, not actor state-updates' domain).
+`actor:taylor.stats.capability_axis: 2 → 3`
 
-**`FLAG: state:4 — possible invented-field (capability_axis rank as actor.state field); state:3 deployment-state already captures the same @12 change in a more defensible form. If capability_axis is a confirmed field on taylor-hebert-kl-122ac/state.md, this is correct; if not, this is anti-pattern #6.`**
+@15 bone: "extends the insect-range." Transition-verb. Field persists to @27. Strip test passes — without this entry, @27's +1 fires from 2 to 4 (wrong). NI co-citation via narrator:11 @15. Accept.
 
-`CONTESTED — authority/field verification needed`
+**[state-updates:26] @18 — oswyn-as-unknowing-coverage-node knowledge flip**
 
-**[state-updates:5] @17 taylor.posture: in-the-gap -> hands-up-mouth-shut-witness-facing**
+`actor:taylor.knowledge.oswyn-as-unknowing-coverage-node: absent → present`
 
-Bone 17: "taylor lifts the hands." The hands-up posture persists from @17 through at least @22 (handoff language: "the foreign woman who made the opening with her hands up and her mouth shut"). Persistence is established. Field-extension: posture is explicitly listed as a tracked-state field in the rubric. The posture persists across multiple beats and is load-bearing (it's what the witnesses categorize and what the chunk text makes explicit).
+@18 bone: "the insect-feed returns oswyn." Insect-feed finds him. Irreversible knowledge — once seen in the feed, persists. Field-extension justified. Strip test passes. NI co-citation via narrator:4 @18. The cull-log correctly deleted the corresponding `actor:taylor.location` @14 entry to avoid density-on-flat contamination — the oswyn-knowledge flip is different register than a location echo. Accept.
 
-BUT: the auditor's flag-021 is an unresolved finding — no NI or feeling co-citation at @17. The rubric says: "If the entry is `actor:<POV-character>.*`, narrator-interest co-citation on the same beat is REQUIRED. Absence = REJECT or flag back to narrator-interest author." The cite-index shows state:5 @17 back=Y co=[] — no co-citations at all. The NI file fires at @12 and @21; it is silent at @17.
+**[state-updates:27] @22 — wren-in-coverage-map knowledge flip — REVISE TRIGGER**
 
-This is not a "flag for consideration." The rubric is explicit: required, not recommended. The co-citation is absent. The rubric's cross-axis test says "If you cannot point to a narrator-interest entry at the same beat, REJECT or flag back to narrator-interest author."
+`actor:taylor.knowledge.wren-in-coverage-map: absent → present-but-outside-report`
 
-**`CALLOUT: [state-updates:5] @17 — POV actor-state posture-shift; NI co-citation REQUIRED per rubric §cross-facet test but absent. Auditor flag-021 identified this gap and it was not remediated. The posture is real and persistent, the field-extension is defensible, but the cross-facet contract is broken. This entry cannot ship without an NI co-citation at @17 being added to interest-narrator.`**
+@22 bone: "the insect-feed returns wren-stitch-maker." Taylor finds Wren in the coverage grid. Here is the seam the mechanical scan missed.
 
-`REJECT on cross-facet grounds`
+The field value is compound: `present-but-outside-report`. The "outside-report" component is not a knowledge registration — it is an active exclusion decision. Wren is in the feed AND Taylor has decided not to include her in the intelligence product she is about to hand Jarvis. Those are two separable facts with separable canonical consequences.
 
-**[state-updates:6] @21 taylor.social_tether_prot_axis: 1 -> 2**
+Strip test on the compound value: if this entry fires as written, the showrunner's canonical write-back records a single field that merges registration with decision. Downstream chapters that need to distinguish "Taylor knew Wren was in the feed" from "Taylor chose to exclude Wren" cannot do so. This matters concretely: if Wren's faction status changes, if Wren is later endangered by something Taylor's feed spotted, if an antagonist discovers that Taylor knew and didn't report — the showrunner needs the two facts separated.
 
-Same question as state:4 but for social_tether_prot_axis. NI co-citation: narrator:5 is present at @21. The cross-facet co-citation requirement is satisfied (unlike state:5). The substance match: social_tether-prot-rise +1.0 at b01c01s03n04.
+The rubric's frugality axis says one entry per real change. The compound value packs two changes into one field. The field-extension protocol covers the field's existence, not the compound encoding of a decision inside a knowledge-state value. The carve-out preamble does not address this.
 
-But same invented-field concern: social_tether_prot_axis as a rank-value field on the actor's state.md. If it doesn't exist on the actor's state schema, this is anti-pattern #6.
+This is not in the auditor's findings. The auditor flagged SEAM-WREN-ANCHOR-DISCIPLINE as a cross-facet concern; it did not examine the compound value shape.
 
-I'm less worried here because state:6 has co-citation and has the peak-bone (peak anchor @21) strongly expecting state-update per the rubric. But the field-on-schema question remains.
+Minimum fix: split into two entries.
+- At @22: `actor:taylor.knowledge.wren-in-coverage-map: absent → present` (the knowledge registration — she's in the feed)
+- At @31 or @33: `actor:taylor.knowledge.wren-report-inclusion: na → excluded` (the exclusion decision — realized at the delivery bone, not the observation bone)
 
-`CONTESTED — same authority/field concern as state:4; NI co-citation present which resolves one gap but not the schema-field gap`
+The second entry is a field-extension (new knowledge sub-field), but it passes the field-extension protocol: tracked-state-aspect, not mood or register, load-bearing for handoff_out (the chapter goal explicitly calls this "load-bearing future-cost-collateral plant"). Flagging for fixer.
 
-**[state-updates:7] @24 taylor.body-orientation: facing-the-child -> facing-the-alley-mouth-away-from-stitch-house**
+**[state-updates:28] @27 — capability_axis +1 second fire**
 
-Bone 24: "taylor faces the alley-mouth." Field-extension: body-orientation as "the cardinal direction of attention." NI co-citation at @24: narrator:8 present. Feeling co-citation: feel:3 present. Persistence: "through chapter close" — handoff_out confirms "Taylor does not look toward the stitch-house."
+`actor:taylor.stats.capability_axis: 3 → 4`
 
-The rubric's concern: is "body-orientation" different from "posture" (state:5), and is the cardinal-direction-of-attention a tracked state aspect? The entry's comment distinguishes it from posture ("this is the cardinal direction of attention"). The not-looking-toward-stitch-house is load-bearing for relational_anchor_status dormancy. It persists and it matters.
+Mirrors @15. Four-ward-complete extension. +2 cumulative = chapter contract target. Strip test passes. NI co-citation via narrator:13 @27. Accept.
 
-NI co-citation present. Field-extension documented. Persistence established. The strip test: without this entry, the showrunner doesn't have a canonical record that Taylor's orientation at chapter-close excludes the stitch-house — which matters for downstream chapters where Wren is in range.
+**[state-updates:29] @31 — intelligence-routing-state flip**
 
-`CORRECT`
+`actor:taylor.knowledge.intelligence-routing-state: dormant → routing-to-jarvis-active`
 
-**[state-updates:8] @26 taylor.ward-recognition: invisible-foreign-woman -> categorized-by-oswyn-as-something-other**
+@31 bone: "taylor delivers the report-sheet." Routing-state flips from dormant to active — operational realization of the @9 arrangement. Distinct from `arrangement-state` (@9 = the permission flip; @31 = the operational flip). The cull-log correctly defends deleting the @31 arrangement-state re-fire as parasitic. NI co-citation via narrator:7 @31. Accept.
 
-Bone 26: "oswyn lifts the chin." The comment says "the ward's category for Taylor." This field is on taylor's actor record. The auditor's flag-012 names the NI spine gap: no NI fires at @26.
+**[state-updates:10,11] @31, @32 — prop:oc-report-sheet.holder chain**
 
-The rubric's cross-facet test: POV actor-state shift on the POV character requires NI co-citation. Is ward-recognition a POV actor-state field? It's filed on actor:taylor. The rubric says "every `actor:<POV>.*` entry" — there are no carve-outs for externally-facing status fields. If it's on actor:taylor, NI co-citation is required.
+`prop:oc-report-sheet.holder: taylor → in-transit-yard-air → jarvis-coat`
 
-No NI fires at @26. Auditor confirmed this as flag-012 (not remediated). Same structure as state:5 — the rubric says REQUIRED.
+Two-bone decomposition, one entry per field flip. Correct per rubric's multi-beat compound transition rule. oc- slug present in carve-out preamble; explicit scene presence. Studio authority. Accept.
 
-**`CALLOUT: [state-updates:8] @26 — POV actor:taylor field (ward-recognition) filed on POV actor without NI co-citation. Auditor flag-012 identified this; not remediated. Cross-facet contract broken. Same ruling as state:5.`**
+**[state-updates:22] @36 — exposure_risk flip (Jarvis)**
 
-Additionally: I question whether "ward-recognition" is tracking a real field or is a perception-side-effect-as-state. The rubric's anti-pattern: "the count of allies in the yard drops to one" — Taylor's perception of Oswyn's categorization is the same class of thing. The canonical state-change here is on Oswyn's awareness (state:2 already captures that). What state:8 captures is Taylor's awareness that the categorization happened — which is a knowledge change (`actor:taylor.knowledge.ward-category-for-self: unknown -> categorized-witch-adjacent`), not a "ward-recognition" field.
+`actor:jarvis-coin-kl-courier.stats.exposure_risk: latent → operational`
 
-`REJECT: no NI co-citation + perception-side-effect-as-state concern`
+Jarvis exits carrying the report. Exposure state flips. Persists past chapter. Jarvis fork writes Jarvis state — correct authority. No NI co-citation required (non-POV actor). Accept.
 
-**[state-updates:9] @27 wren.relational_anchor_to_taylor: nascent -> observation-traced-d01-deterrence**
+**Forward-citation faults confirmed (auditor fault-002, fault-003):**
 
-Bone 27: "wren faces taylor." Field-extension: relational_anchor_to_taylor. Non-POV actor. No NI co-citation required. Does this field exist on wren's state schema? The value "nascent" suggests it was established at project-setup baseline (or initialized as nascent at chapter open). The entry changes it to "observation-traced-d01-deterrence."
+`[state:2]` on proto-line @9 is a forward-citation — state:2 anchors at @13 (pig-tallow-lane location; scene-B open), four bones after @9 (scene-A acceptance peak). The stitcher rendering @9 receives pig-tallow-lane as active location context while the scene is at the cooper's yard. Spatial contradiction in rendered prose. Hard fault — strip `[state:2]` from proto-line @9.
 
-Persistence: this is chapter-close, so it persists into b01c02. The handoff_out says "Wren has seen Taylor's face in the crowd; no exchange, no names" — consistent with the entry but the field name "relational_anchor_to_taylor" is a field-extension. The value "observation-traced-d01-deterrence" is odd — what does "d01-deterrence" mean? Is this a chapter-label (d01 = chapter 1 event)? The rubric expects field values to be canonical-correct and parseable by the showrunner. "d01-deterrence" reads as an internal authoring note, not a clean state value.
+`[state:5]` on proto-line @22 is a forward-citation — state:5 anchors at @25 (day-2 temporal transition), three bones after @22 (scene-B, day-1 morning). The Wren-anchor-discipline bone receives next-day temporal context at a bone that is on day-1. Hard fault — strip `[state:5]` from proto-line @22.
 
-I'll pass this on reality grounds — the state change is real (Wren has seen Taylor; her relational status has moved from nascent to observed). But the value format is sloppy. The "d01-deterrence" suffix is not a clean state descriptor; it is an authoring annotation embedded in a state value.
+Both faults require cite-index regeneration after removal. No dispute with auditor on these.
 
-`CORRECT (with note: value format "observation-traced-d01-deterrence" contains an authoring annotation; prefer "observation-traced" as the clean state value)`
+---
 
-## Aggregated per-entry verdicts
+## Seams the mechanical scan missed
 
-| Entry | Verdict |
-|-------|---------|
-| state:1 @21 oswyn.location | CORRECT |
-| state:2 @26 oswyn.relationship_to_taylor | CORRECT |
-| state:3 @12 taylor.deployment-state | CORRECT |
-| state:4 @12 taylor.capability_axis | CONTESTED (field-on-schema) |
-| state:5 @17 taylor.posture | REJECT (missing NI co-citation) |
-| state:6 @21 taylor.social_tether_prot_axis | CONTESTED (field-on-schema) |
-| state:7 @24 taylor.body-orientation | CORRECT |
-| state:8 @26 taylor.ward-recognition | REJECT (missing NI co-citation + perception-as-state) |
-| state:9 @27 wren.relational_anchor_to_taylor | CORRECT (note: value format) |
+**SEAM-A: wren-in-coverage-map compound value encodes a decision, not just a state registration.**
 
-## Callouts
+Called out at entry 27 above. This is the primary seam. The `present-but-outside-report` value packs a knowledge registration and an active exclusion decision into a single canonical field value. The canonical consequences downstream are separable; the current encoding does not preserve that separation. Revise trigger.
 
-**[state-updates:5] @17** — POV actor posture-shift, NI co-citation absent. Auditor flag-021, not remediated. Rubric says REQUIRED. Routes to narrator-interest author for co-citation add at @17, or entry must be removed pending that add.
+**SEAM-B: intelligence-routing-state @31 vs arrangement-state @9 — two names for the same flip?**
 
-**[state-updates:4] @12 + [state-updates:6] @21** — axis rank values written into actor state. If `capability_axis` and `social_tether_prot_axis` are confirmed fields on `active-project/actors/taylor-hebert-kl-122ac/state.md`, both entries are CORRECT. If they are not (i.e., they exist only in showrunner memory substance_delta), both are anti-pattern #6 invented-field violations. Verification required before these entries can ship.
+Hostile read: both track the licensing arrangement for intelligence routing. Author's defense: arrangement-state tracks the moral_framework license (permission layer); routing-state tracks first-upward-routing operational status (actual use of that license). @9 = permission flip; @31 = operational flip. The chapter structure supports the distinction — you can hold a license without activating it. Accept. Not a revise trigger.
 
-**[state-updates:8] @26** — POV actor field, NI co-citation absent. Auditor flag-012, not remediated. Additionally, the field may be a perception-side-effect-as-state (Taylor's awareness of how the ward sees her) rather than a canonical state-change.
+**SEAM-C: @36 peak-bone — Taylor's silence is correct.**
 
-## Convergence-trace
+The Taylor slice SKIP-log defends SKIP @36 because the world-axis pivot (intelligence enters Otto's channel) is studio's or world-axis authority, not Taylor's actor-state. Taylor is stationary from a canonical-state perspective. State:12 (actors_in_yard update) and Jarvis's exposure_risk entry cover @36 with legitimate state-update fires. Taylor's silence at the world-axis bone is rubric-correct. Not a revise trigger.
 
-- state:5 callout overlaps auditor flag-021 exactly.
-- state:8 callout overlaps auditor flag-012 exactly.
-- state:4 / state:6 field-on-schema question is a new audience attack not fully surfaced by the auditor (auditor pile-up review flag-020/019 treated these as CORRECT by ID). This is the seam the mechanical scan could not close: the auditor verified IDs and co-citations but did not verify whether `capability_axis` and `social_tether_prot_axis` are actual fields on the actor's state.md file.
+**SEAM-D: cull-log deletions — all six survive hostile review.**
 
-## File-level curve assessment
+DEL @3, @14, @26 (actor:taylor.location — density-on-flat; studio carries location): correct.
+DEL @15, @27 (actor:taylor.stats.coverage_wards — invented field; capability_axis numeric carries): correct. The coverage-set extension would break bone-level magnitude anchoring.
+DEL @31 (arrangement-state re-fire — parasitic against routing-state flip): correct.
+No incorrect culls found.
 
-The curve is consistent with rising dramatic_shape. Entries concentrate at @12 (scene-B peak), @17 (scene-B close), @21 (scene-C peak), @24/@26 (trailing edge), @27 (chapter-close). Scene-A is correctly silent. The env carve-out is well-defended. Target diversity: two actor targets (taylor, oswyn) + one wren entry. The absence of studio.* and prop.* is defended by the env carve-out. No density-on-flat violation. Curve shape: PASS conditional on the entry-level findings being resolved.
+---
 
-## Verdict
+## Verdict breakdown
 
-**REVISE**
+**Revise trigger — SEAM-A: entry 27 compound-value encoding**
 
-Two REJECT entries (state:5, state:8) — both on cross-facet NI co-citation grounds. Two CONTESTED entries (state:4, state:6) — on field-on-schema grounds requiring verification. Any one of these failing is sufficient for revise under the facet-adversarial mode.
+`actor:taylor.knowledge.wren-in-coverage-map: absent → present-but-outside-report` at @22 merges a state registration with an active decision in one canonical field value. The showrunner cannot distinguish "Taylor knew Wren was in the feed" from "Taylor chose not to report Wren" without the separation. Split into: `wren-in-coverage-map: absent → present` at @22, and a new `wren-report-inclusion: na → excluded` (or equivalent) at @31. Fixer action required.
 
-The facet cannot ship with state:5 and state:8 in their current form. The state:4/state:6 question must be resolved by verifying the actor's state.md.
+**Forward-citation faults (auditor fault-002, fault-003) — confirmed hard faults**
+
+`[state:2]` stripped from proto-line @9. `[state:5]` stripped from proto-line @22. Cite-index regenerated after both removals. These are cite-graph faults in the proto-lines file, not state-updates body faults.
+
+**Everything else holds**
+
+The capability-axis double-fire is earned. The prop handoff chain is correctly decomposed. The env-slice density carve-out is structurally justified on a per-author-class reading. The four knowledge-* field-extensions on Taylor are collectively defensible by structural necessity. The actors_in_yard tracking is accurate. The Jarvis exposure_risk flip is legitimate. The cull-log is clean.
+
+Note for downstream: the field-extension cluster on Taylor (four new knowledge-* sub-fields in one chapter) is bulky. If this pattern recurs in b01c05+, a margit referral to formalize the knowledge sub-schema is appropriate. Not a current revise trigger — downstream watch item.
+
+---
+
+VERDICT: revise
+
+Revise targets:
+1. Entry 27 — split `wren-in-coverage-map: absent → present-but-outside-report` into registration entry at @22 (`wren-in-coverage-map: absent → present`) and decision entry at @31 (`wren-report-inclusion: na → excluded` or equivalent field-extension).
+2. Proto-line @9 — strip `[state:2]` forward-citation.
+3. Proto-line @22 — strip `[state:5]` forward-citation.
+4. Cite-index — regenerate after items 2 and 3.
