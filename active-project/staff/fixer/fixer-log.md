@@ -1130,3 +1130,9 @@ fault: `chapter-close-stitch-house-lane-exit` is a stage-direction label, not a 
 scope: line
 change: env-slice entry 14: new value changed from `chapter-close-stitch-house-lane-exit` to `oc-stitch-house-lane`; proto-line @39 is "taylor-hebert-kl-122ac exits the stitch-house lane" — post-state location is the stitch-house lane itself (the exit moves from cooper-yard into stitch-house-lane territory before chapter close); null rejected as the chapter has a canonical post-state surface
 criteria met: yes — value is now a canonical oc- slug consistent with rubric §Authority ACCEPT signature
+
+## fix-5 (state:16/22 Jarvis undeclared field-extensions) — RESOLVED — 2026-05-27T02:10:00Z
+fault: jarvis-coin-kl-courier slice used `stats.active_deliveries` and `stats.exposure_risk` without field-extension declarations in preamble; preamble was empty (only carve-out line)
+scope: line
+change: jarvis slice preamble: added standard field-extension block with two annotations — `stats.active_deliveries` (integer delivery-load counter; irreversible increment) and `stats.exposure_risk` (categorical risk tier; latent→operational flip); format mirrors taylor slice field-extension preamble; no entry data changed
+criteria met: yes — both extended fields now have rubric §"Field-extension protocol" annotations; preamble no longer empty; handoff_out propagation obligation stated

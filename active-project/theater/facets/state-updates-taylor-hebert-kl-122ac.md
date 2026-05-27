@@ -14,7 +14,8 @@ slice: actor:taylor-hebert-kl-122ac only
 # Field-extensions (per §"Field-extension protocol" of rubric-state-updates.md):
 #   - actor:taylor-hebert-kl-122ac.knowledge.arrangement-state         (new) — tracks moral_framework state-character within rank 1
 #   - actor:taylor-hebert-kl-122ac.knowledge.oswyn-as-unknowing-coverage-node  (new) — tracks routing-architecture named-human entries
-#   - actor:taylor-hebert-kl-122ac.knowledge.wren-in-coverage-map      (new) — tracks anchor-discipline canonical state (load-bearing for d14)
+#   - actor:taylor-hebert-kl-122ac.knowledge.wren-in-coverage-map      (new) — tracks anchor-discipline canonical state: wren's presence in feed coverage (registration fact)
+#   - actor:taylor-hebert-kl-122ac.knowledge.wren-report-inclusion      (new) — tracks anchor-discipline canonical state: whether wren is included in the patron report (decision fact; separable from registration; load-bearing for d14)
 #   - actor:taylor-hebert-kl-122ac.knowledge.intelligence-routing-state (new) — tracks first-upward-routing operational state
 #   - actor:taylor-hebert-kl-122ac.stats.capability_axis: existing integer field on state.md; mutates here at axis_move bones flat 15 and flat 27.
 #   All field-extensions are tracked-state aspects propagated by chapter handoff_out (memory.md chapters[b01c04].handoff_out.character_state /
