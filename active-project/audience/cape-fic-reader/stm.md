@@ -253,3 +253,25 @@ Fatigue check: no eye-glaze triggers — held bones enact physical acts, not rea
 33 bones, 0 DELETE proposals. All chatter bones carry cost_ledger_anchor entries — no schema violations. All held bones are enacted through physical acts, not interior reasoning chains. Both prior chunk-review soft watches addressed at bone level: (1) position-prot-rise in s01 delivered as a distinct Jarvis speech-bone event at n08 (routing-confirmation separates position-rise from the tether-antag move at n06); (2) position-world in s03 delivered as Jarvis's physical exit with the sheet (n09), not a bracket-declaration. Worm-canon anchor-discipline watches honored at two distinct bone-level contents per scene (s02: n09+n10; s03: n11+n12). Sequential four-ward acquisition across two days structurally confirmed (s02 = day 1 both adjacent wards; s03 = day 2 third ward). The chapter goal "protection and the trap are the same operation" is enacted through the bone architecture without being stated — the feed covers Wren, the report excludes Wren, Taylor exits without examining whether the exclusion holds, and the architecture continues.
 
 VERDICT: ACCEPT
+
+## b01c04 Phase 6 bone-gate review — 2026-05-27
+
+---
+reviewer: cape-fic-reader
+chapter: b01c04
+phase: write-bone-gate
+date: 2026-05-27
+scenes_reviewed: [b01c04s01, b01c04s02, b01c04s03]
+---
+
+## scene b01c04s01
+verdict: SUBSTANCE-FELT
+The acceptance lands as an irreversible board-move, not a declaration: Taylor's terms (n06, "The interval is mine to set. The volume is mine to set.") assert the last available operational parameters, and Jarvis's receipt (n08) converts those terms into settled logistics without negotiating — he receipts, he doesn't concede. That asymmetry is the lever solidifying in real time. The two declared axes arrive through structurally separate bones: social_tether-antag at the speech-act (n06), position-prot-rise at the routing-confirmation (n08) — the prior soft watch on position-rise riding the tether's coattails is resolved at the bone level. Jarvis's departure (n09) enacts irreversibility as a body leaving with the yes in its operational memory, not as Taylor's interior accounting. The moral_framework hold at n07 (stillness against the pressure of the irreversible) gives the cost its physical form without narrating the rationalization. No established limits bypassed without cost; no unmotivated knowledge; no cheap gain.
+
+## scene b01c04s02
+verdict: SUBSTANCE-FELT
+Oswyn's unknowing-node arrival at n06 is the board-reshape this reader wants — setup was paid at c01 (the fever-burned child), now he's a named coordinate in an upward-routing chain he cannot see and has not consented to. The capability extension at n03 covers both adjacent wards in one deployment, which is the correct shape for "expansion is addition, not transformation": same verb as the Hook triage, same cost-structure, no new mechanism, the informational payload is what's new. The opposing force is structural: the same walk-and-read that constituted harm-reduction triage (n07: Taylor maps Oswyn's interval without naming the act as intelligence-routing) now routes upward through a patron chain — the reader can see the distinction Taylor doesn't name. The Wren three-bone sequence (n09 feed-return / n10 feet-hold / n11 map-without-log) delivers three distinct physical acts against the anchor, each one a different facet of the discipline. Dense but not inert — each bone is a distinct physical act honoring a specific worm-canon watch, and the moral_legibility_to_self hold at n04 and n11 gives the reader visibility into the architecture Taylor is building without examining. No fatigue triggers; no established limits bypassed.
+
+## scene b01c04s03
+verdict: SUBSTANCE-FELT
+Three axes in twelve bones and all three earn their moves through physical events. The prior chunk-review soft watch on position-world (bracket-declaration vs. physical image) is resolved: Jarvis's exit (n09) IS the intelligence exiting Taylor's operational context — the sheet leaves in a body, which is the world-position increment enacted as a fact, not asserted. The Sera confirmation (n06: Jarvis displays the note without handing it over) closes the stated-first-dividend column before the architecture runs unexamined at the close — the deal has a real return, and that makes the tether-prot-rise at n07 (Taylor delivers the report-sheet) land as the trap door opening rather than as an unconfirmed speculation. The chapter close (n10-n12: runs the ward-feed / feed returns Wren / exits the stitch-house lane without examining whether the anchor holds) enacts the protection-and-trap thesis as a physical operation, not a declared argument — the architecture covers Wren, the report excludes Wren, the discipline holding that exclusion continues without examination, and the chapter ends on the exit, not on a judgment. No established limits bypassed without cost; no unmotivated knowledge; no cheap gains; no fatigue triggers.
