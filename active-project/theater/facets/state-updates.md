@@ -107,7 +107,8 @@ slice: actor:taylor-hebert-kl-122ac only
 # Field-extensions (per §"Field-extension protocol" of rubric-state-updates.md):
 #   - actor:taylor-hebert-kl-122ac.knowledge.arrangement-state         (new) — tracks moral_framework state-character within rank 1
 #   - actor:taylor-hebert-kl-122ac.knowledge.oswyn-as-unknowing-coverage-node  (new) — tracks routing-architecture named-human entries
-#   - actor:taylor-hebert-kl-122ac.knowledge.wren-in-coverage-map      (new) — tracks anchor-discipline canonical state (load-bearing for d14)
+#   - actor:taylor-hebert-kl-122ac.knowledge.wren-in-coverage-map      (new) — tracks anchor-discipline canonical state: wren's presence in feed coverage (registration fact)
+#   - actor:taylor-hebert-kl-122ac.knowledge.wren-report-inclusion      (new) — tracks anchor-discipline canonical state: whether wren is included in the patron report (decision fact; separable from registration; load-bearing for d14)
 #   - actor:taylor-hebert-kl-122ac.knowledge.intelligence-routing-state (new) — tracks first-upward-routing operational state
 #   - actor:taylor-hebert-kl-122ac.stats.capability_axis: existing integer field on state.md; mutates here at axis_move bones flat 15 and flat 27.
 #   All field-extensions are tracked-state aspects propagated by chapter handoff_out (memory.md chapters[b01c04].handoff_out.character_state /
@@ -121,12 +122,16 @@ slice: actor:taylor-hebert-kl-122ac only
 24 @9 actor:taylor-hebert-kl-122ac.knowledge.arrangement-state: licensed-exception-considered -> licensed-exception-active
 25 @15 actor:taylor-hebert-kl-122ac.stats.capability_axis: 2 -> 3
 26 @18 actor:taylor-hebert-kl-122ac.knowledge.oswyn-as-unknowing-coverage-node: absent -> present
-27 @22 actor:taylor-hebert-kl-122ac.knowledge.wren-in-coverage-map: absent -> present-but-outside-report
+27 @22 actor:taylor-hebert-kl-122ac.knowledge.wren-in-coverage-map: absent -> present
 28 @27 actor:taylor-hebert-kl-122ac.stats.capability_axis: 3 -> 4
 29 @31 actor:taylor-hebert-kl-122ac.knowledge.intelligence-routing-state: dormant -> routing-to-jarvis-active
+30 @31 actor:taylor-hebert-kl-122ac.knowledge.wren-report-inclusion: na -> excluded # field-extension: wren-report-inclusion (new; see preamble)
 
 # Cull-log (delete-only per facet schema; one pass):
 #   Pre-cull set: 13 candidate entries. Post-cull: 7 entries. 6 deletions.
+#   [cycle-3 add: entry 30 wren-report-inclusion @31 added via compound-split of entry 27 — not a new
+#    candidate but a decomposition of present-but-outside-report into two separable canonical facts.
+#    Post-cycle-3 entry count: 8 (taylor slice); 30 total (all slices).]
 #   DEL @3  actor:taylor.location: hook-district -> oc-cooper-yard-eel-alley
 #           — location-tracking density-on-flat risk; chapter has 5 entrance bones; not load-bearing irreversible registration.
 #             Studio location-state facet carries the environment-frame; actor.location reverts to studio's tracking.
@@ -174,7 +179,10 @@ slice: actor:taylor-hebert-kl-122ac only
 #   SEAM-CAPABILITY-RANK Chapter contract sums capability +2.0 across c04 (target_delta_magnitude); bone-level fires at @15 (+1.0)
 #                        and @27 (+1.0) = +2.0 EXACT. The +0.5 nudge to chapter handoff_out rank 4.5 is downstream-rendered,
 #                        not bone-anchored — consistent with substance_delta_measured.
-#   SEAM-WREN-ANCHOR-DISCIPLINE  @22 entry (knowledge.wren-in-coverage-map) is the chapter's load-bearing future-cost-collateral
-#                        plant per chapter goal. Cross-facet expectation: narrator-interest @22 + memory @22 (Wren callback to
+#   SEAM-WREN-ANCHOR-DISCIPLINE  @22 entry (knowledge.wren-in-coverage-map: absent→present) is the chapter's load-bearing
+#                        future-cost-collateral plant per chapter goal — registration fact only.
+#                        @31 entry (knowledge.wren-report-inclusion: na→excluded) carries the separable decision fact — report
+#                        exclusion anchors at the delivery bone where the decision is enacted, not at the feed-return bone.
+#                        Cross-facet expectation: narrator-interest @22 + memory @22 (Wren callback to
 #                        b01c01s03 + b01c03 anchor-status) + feeling @23 (somatic tell of not-walking). State-update slice
-#                        carries the canonical write-back; downstream facets carry the interior load.
+#                        carries both canonical write-backs; downstream facets carry the interior load.

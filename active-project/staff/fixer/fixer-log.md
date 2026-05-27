@@ -1147,7 +1147,7 @@ criteria met: yes — two facts are now in separate entries at their correct ena
 findings-applied: 6
 findings-skipped: 0
 exit: CLEAN
-note: cite-index regen required — see below
+note: cite-index rebuilt manually (no _inflight files present; slice consolidation and cite-index regen applied in-place). All 3 slice files edited + state-updates.md consolidated + proto-lines b01-c04.md updated (@25 +state:6, @26 bare, @31 +state:30) + _cite-index.md rebuilt (68 entries; 23/39 decorated 59.0%).
 
 ## vibes-cycle3-token-vibes1 — RESOLVED — 2026-05-27T10:05:00Z
 fault: vibes:1 @7 token `acceptance-is-the-licensed-exception-believed-as-modification` has finite copula "is" — AP8 sentence-parsable (worm-canon 3/3 uncontested)
