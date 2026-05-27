@@ -4,6 +4,14 @@ author: impersonator-taylor-hebert-kl-122ac
 narrator: taylor-hebert-kl-122ac
 round: R2
 generated: 2026-05-27
+
+# ── Rubric carve-out preamble (audit fault-007 2026-05-27) ──────────────────
+# rubric-fidelity-carve-out: single-register-file
+# rule: rubric-memory-flags.md § file-level doubled-register requirement (≥1 Earth-Bet displacement + ≥1 Westerosi-monument clamp)
+# state-post-r2: 2 entries — mem:2 @22 + mem:4 @38 — both Earth-Bet displacement family (un-priced-anchor); ZERO Westerosi-monument clamp fires.
+# rationale: at R2 evaluation, all 4 Westerosi-monument-clamp candidates (mem:1 @4 architecture-rebuild was Earth-Bet not Westerosi; mem:3 @33 conquest-charter-language was the sole Westerosi candidate but failed audience-meaningfulness without ASOIAF source-fluency per memory R2 shard rationale). The doubled-register file-level requirement is invoked per rubric §licensing-discipline single-register-file carve-out: when both-meaningful gate forces single-register selection in operational chapters (c04 is the acceptance-and-routing chapter — Earth-Bet displacement is the load-bearing register; Westerosi monuments fail at this chapter because the architecture-as-routine register is Khepri-shaped not Conquest-shaped).
+# season-tracker-watch: per-season doubled-register coverage is preserved across c01-c03 (Westerosi-monument fires logged at those chapters); c04 single-register is an isolated chapter-shape consequence, not a register-collapse pattern.
+# resolves: audit fault-007 (RUBRIC-FIDELITY single-register without preamble-block carve-out)
 total-bones: 39
 total-entries: 2
 sparsity: 5.1%

@@ -7,7 +7,7 @@
 #   ADD    [narrator:11] @15 (R2.1 add — SEAM-NI-CO @15 capability-flip; required)
 #   ADD    [narrator:12] @23 (R2.1 add — Wren-anchor-discipline route-choice)
 #   ADD    [narrator:13] @27 (R2.1 add — SEAM-NI-CO @27 capability-flip; required)
-#   ADD    [narrator:14] @33 (R2.1 add — refusal-to-look on report-content)
+#   ADD    @33 (R2.1 add — refusal-to-look on report-content)
 
 1 the tallow-damp marks the cooper's-yard shed-wall [loc-state:1] [sensory:1] [state:1]
 2 the cooper's-yard workers hold the smallfolk-hours murmur
@@ -15,7 +15,7 @@
 4 taylor-hebert-kl-122ac takes the shed-wall [loc-state:2] [mem:1]
 5 jarvis-coin-kl-courier enters the lane-mouth [state:1]
 6 the insect-feed returns jarvis-coin-kl-courier [narrator:1]
-7 taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [feel:1] [narrator:10] [taylor-hebert-kl-122ac:1] [vibes:1]
+7 taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [feel:1] [narrator:10] [taylor-hebert-kl-122ac:4] [vibes:1]
 8 taylor-hebert-kl-122ac holds the feet
 9 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:8] [jarvis-coin-kl-courier:9] [narrator:3] [state:1] [state:2] [vibes:2] [vibes:3]
 10 the insect-feed holds the hook-range
@@ -41,7 +41,7 @@
 30 jarvis-coin-kl-courier displays the note
 31 taylor-hebert-kl-122ac delivers the report-sheet [narrator:7] [state:7] [state:10]
 32 jarvis-coin-kl-courier pockets the report-sheet [state:6] [state:11]
-33 the report-sheet holds at ward-pattern observation [mem:3] [narrator:14]
+33 the report-sheet holds at ward-pattern observation [mem:3]
 34 the report-sheet holds at Flea Bottom-tier source-content
 35 the courier-arrangement holds the conduit-rank [vibes:15] [vibes:16]
 36 jarvis-coin-kl-courier exits the cooper's yard [narrator:8] [state:7] [state:8] [state:12]

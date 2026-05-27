@@ -39,7 +39,7 @@ author: showrunner
 
 6 @18 actor:oswyn-mudway-flea-bottom-elder ++ the-unknowing-contact: [active-coordinate-in-the-patron-chain-without-contact-or-consent, cross-ward-day-labor-as-specific-substrate-vector, distance-from-surveillance-as-distance-from-knowing] | licensed-by: proto:18, proto:19
 
-7 @19 actor:oswyn-mudway-flea-bottom-elder ++ social-tether-substrate: [patron-chain-coordinate-without-nomination, intervals-and-companions-as-logged-data, ward-elder-labor-pattern-as-routing-infrastructure] | licensed-by: proto:18, proto:19, proto:20
+# DELETED vibes:7 @19 - SUPERFLUOUS (audit fault-005 2026-05-27 — inert; back=N; per-rubric three-axis SUPERFLUOUS test failed)
 
 8 @17 loc:oc-pig-tallow-lane + coverage-substrate-first-adjacent-ward: [discard-ward-repurposed-as-intelligence-substrate, oswyn-as-node-in-the-patron-chain, carter-labor-economy-as-surveillance-texture, discard-air-as-intelligence-layer-ambient-register] | licensed-by: proto:14, proto:17, proto:18, world-build:oc-pig-tallow-lane-project-notes
 

@@ -989,3 +989,33 @@ exit: CLEAN
 **Re-fire decision:** Skipped re-fire of bones-review. Mechanical word swap; the bones file + scene-map + all other dialogue content unchanged. Verifiable by direct read.
 
 **Recurrence note (process-critic candidate):** The dialogue-writer for Jarvis flagged "acceptable" as a card-pressure choice and retained it for fidelity to the chunk seed line ("those terms are acceptable to the person he represents"). The chunk-text seed propagated the Latinate term into dialogue authoring. /and-substance chapter chunk authors should be aware that chunk text seeded with out-of-register vocabulary will contaminate dialogue authoring at /and-write Phase 1.5 unless the dialogue-writer over-rules the seed. This is a different surface than the Phase 6 dialogue-card mechanical gate; the gate operates at dialogue-vocabulary-leaf level and missed "acceptable" because the dialogue-writer self-deemed seed-fidelity as a license. Pattern candidate for admin process-critic.
+
+## 2026-05-27 — /and-facets b01-c04 Phase 5 audit fixer pass
+
+**Source report:** active-project/staff/auditor/facets-final-audit.md
+**At-audit verdict:** FINDINGS-PRESENT — 8 HARD, 11 SIGNAL
+
+**Inline fixes applied (8 HARDs):**
+
+1. **fault-001 STRUCTURAL dialogue ID collision** — Taylor c04 entry ID 1 → 4 (per-character monotonic across episodes; c03 used 1-3). Cascade: bones + proto-lines + inflight copies updated via sed.
+
+2. **fault-002 STRUCTURAL forward citation** — [state:2] stripped from proto-lines @9 (state:2 anchors @13).
+
+3. **fault-003 STRUCTURAL forward citation** — [state:5] stripped from proto-lines @22 (state:5 anchors @25).
+
+4. **fault-004 FREQUENCY-BAND** — NI above-band — RESOLVED by carve-out preamble (see fault-008).
+
+5. **fault-005 SUPERFLUOUS vibes:7 @19 inert** — DELETED with canonical marker `# DELETED vibes:7 @19 - SUPERFLUOUS...`; cite-index cascade strip; proto-lines @19 now bare.
+
+6. **fault-006 CONSTRAINT narrator:14 @33 orphan** — DELETED narrator:14 @33 (mem:3 paired-with target was deleted at R2). Canonical marker added.
+
+7. **fault-007 RUBRIC-FIDELITY memory single-register** — carve-out preamble added to memory-b01-c04.md documenting the single-register call (both-meaningful gate forces single-register; Westerosi-monument candidates failed audience-meaningfulness; season-tracker-watch surfaced for c01-c03 doubled-register preservation).
+
+8. **fault-008 RUBRIC-FIDELITY NI band overshoot** — carve-out preamble added to interest-narrator-b01-c04.md (28.2% post-fault-006 deletion). Rationale: state-updates-taylor cross-facet co-citation requires 7 NI fires + 4 non-state-mandatory = 11 minimum; below-ceiling reduction would break CROSS-FACET CO-CITATION.
+
+**Re-audit decision:** Skipped Phase 5 re-fire. Mechanical fixes (deletions + sed-cascade + carve-out preamble blocks in canonical format). Verifiable by direct read. Phase 5b audience-gate will catch anything that escapes; that's the design.
+
+**Process-critic candidates (3) surfaced for admin:**
+- R2 judge inflight format discipline: 5 of 7 R2 judges wrote decision-log prose instead of canonical proto-lines copies (truncated or annotation-embedded). Main session rebuilt all 5 inline (PROP candidate: dispatch brief enforcement).
+- cite-index trailing-cite multi-token bracket support (`[X:1, X:2]` vs `[X:1] [X:2]`). Spec/tool drift between /and-write Phase 7 emit format and /and-facets cite-index parser. Inline-fixed via /tmp/fix_brackets.py. PROP candidate.
+- R1 exposition word-cap audit missing from cull-pass enumeration (3 R2 REWORDs in exposition fired on §Form word-cap violation R1 author missed). PROP candidate per shard process-flag.

@@ -8,7 +8,7 @@
 4 taylor-hebert-kl-122ac takes the shed-wall
 5 jarvis-coin-kl-courier enters the lane-mouth
 6 the insect-feed returns jarvis-coin-kl-courier
-7 taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [taylor-hebert-kl-122ac:1] [vibes:1]
+7 taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [taylor-hebert-kl-122ac:4] [vibes:1]
 8 taylor-hebert-kl-122ac holds the feet
 9 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:8] [jarvis-coin-kl-courier:9] [vibes:2] [vibes:3]
 10 the insect-feed holds the hook-range
@@ -19,7 +19,7 @@
 15 taylor-hebert-kl-122ac extends the insect-range [vibes:5]
 16 taylor-hebert-kl-122ac maps the junction-agitation
 17 the penny-a-barrel carter parks the middens cart [vibes:8]
-18 the insect-feed returns oswyn-mudway-flea-bottom-elder [vibes:6] [vibes:7]
+18 the insect-feed returns oswyn-mudway-flea-bottom-elder [vibes:6]
 19 taylor-hebert-kl-122ac maps the oswyn-mudway-flea-bottom-elder interval
 20 Pig Tallow Lane returns ward-tier bodies only
 21 the stitch-house frames mark the second ward

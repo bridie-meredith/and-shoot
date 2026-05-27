@@ -14,7 +14,9 @@ episode: b01c04
 behavior-card: taylor-hebert-westeros
 ---
 
-1 @7 | deliver the yes; name the operational modification cleanly (pattern not raw; interval and volume hers) as an assertion of terms, not a request; flat transactional cadence; the modification is the discipline's last available parameter to hold | "Yes. The terms hold with two changes. You will have patterns — what moves through the streets, what does not, where the seams sit — not raw report of who said what to whom. The interval is mine to set. The volume is mine to set."
+4 @7 | deliver the yes; name the operational modification cleanly (pattern not raw; interval and volume hers) as an assertion of terms, not a request; flat transactional cadence; the modification is the discipline's last available parameter to hold | "Yes. The terms hold with two changes. You will have patterns — what moves through the streets, what does not, where the seams sit — not raw report of who said what to whom. The interval is mine to set. The volume is mine to set."
+
+# 2026-05-27 audit fault-001 fix: renumbered c04 entry from ID 1 → ID 4 (Taylor's per-character ID space is monotonic across episodes; c03 used 1-3; c04 continues at 4).
 
 # Prior entry 2 @9 (work-naming + first-interval) DROPPED at /and-write Phase 1 redo (DEC-0030):
 # the redo consolidated dialogue-anchor bones from 4 (n06/n07/n09/n10) → 2 (n06/n08) per
