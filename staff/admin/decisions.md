@@ -1440,3 +1440,51 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0037 | 2026-05-27 | FAST (user-proxy)
+
+question: Are there open triage/parking-lot items that must be resolved before /and-stitch b01-c04? If no, confirm clearance and name Phase 0 advisories.
+
+context: |
+  b01c04 state: bones PASS, /and-review bones PASS-WITH-NOTES, /and-facets PASS-WITH-TASTE-FLAG-RESIDUE
+  (TF-001 through TF-007 carry-forward per DEC-0035), scene-map emitted upstream. stitched: false.
+  Parking-lot scan per caller: no items with target.command=/and-stitch AND target.scope=b01c04 or *.
+  HARD items targeting /and-stitch are scoped to b01c01 and b01c02 — not this chapter.
+  Cross-pipeline SOFT items (pl-2026-05-25-009, pl-2026-05-25-010, pl-2026-05-25-013) are
+  orthogonal to the stitcher or advisory-only. DEC-0036 queued PROP-0012 through PROP-0016 for
+  principal triage — not blocking on /and-stitch. TASTE-FLAG carry-forward is documented
+  pipeline behavior, not a stitch blocker. User instruction "then /and-stitch b01-c04" implies
+  clearance is the expected outcome.
+
+options:
+  (a) CLEAR — proceed; no HARD blocks; surface advisories to Phase 0
+  (b) BLOCK on a specific item — name item + resolution path
+  (c) ESCALATE — genuine ambiguity needing human
+
+decision: CLEAR — no parking-lot HARDs target /and-stitch b01-c04; proceed.
+
+basis: methodology:3a (reversibility — no irreversible item open; proceeding is safe) + methodology:3b (cost — blocking without a HARD item is waste) + goal:1 (pipeline correctness — the canonical chain gate order is satisfied: bones PASS → /and-review bones PASS → /and-facets complete → /and-stitch)
+
+rationale: |
+  No parking-lot HARD items target /and-stitch b01-c04 or wildcard scope. All HARD parking-lot
+  items targeting /and-stitch are scoped to prior chapters (b01c01, b01c02) — unrelated to this
+  invocation. The cross-pipeline SOFTs are orthogonal to stitcher operation. TASTE-FLAG residue
+  (TF-001 through TF-007) is the documented output of the DEC-0035 targeted-cycle-3 path — the
+  stitcher should treat them as advisory color, not blocking findings. Phase 0 should consume:
+  the facets directory for b01-c04, the scene-map facet, the bones file, and TF-001..TF-007 as
+  TASTE-FLAG advisories. Also surface pl-2026-05-25-013 (Q9 hyphen-density threshold tune) as
+  a standing SOFT advisory at Phase 9 evaluation time.
+
+phase_0_prime_list:
+  - active-project/theater/facets/*-b01-c04.md (full facet set including scene-map)
+  - active-project/theater/bones/b01-c04.md
+  - active-project/theater/dialogue/ (per-character files for b01c04 cast)
+  - TF-001 through TF-007 carry-forward: TASTE-FLAG advisory; no fixer action; note in Phase 0 scan
+  - pl-2026-05-25-013 (Q9 hyphen-density): SOFT advisory; surface at Phase 9 evaluation, does not block
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

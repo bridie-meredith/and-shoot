@@ -3091,8 +3091,31 @@ books:
         # Cumulative /and-facets b01-c04 dispatches: 12 R1 + 7 R2 + 1 audit + 33+5+11 audience + 4+1 fixers + 5 admin = ~79 dispatches across 3 cycles.
         # Final cycle-3 disposition: 4 facets 3/3 clean ACCEPT (loc-state, dialogue-taylor, NI, memory); 7 facets PASS-with-1/3-TASTE-FLAG per DEC-0035 (sensory, state-updates, vibes, feeling, metaphor, exposition, dialogue-jarvis).
         # Phase 5c admin process-critic: pending (auto-fires on REVISE in final cycle even with TASTE-FLAG-classification).
-        stitched: false
-        draft_file: null
+        stitched: true
+        draft_file: active-project/draft/b01-c04.md
+        cold_read:
+          read_at: 2026-05-27T00:00:00Z
+          verdict: PASS
+          recovered_summary: "A surveillance-capable narrator trades ward-pattern intelligence to an unseen patron through a courier, in exchange for someone named Sera being kept safe."
+          report_path: active-project/staff/reviews/coldread-b01-c04-2026-05-27.md
+          staging_signals: 0   # /and-review staging deferred under cascade-budget; not run
+          staging_report_path: null
+          signal_clusters: []
+          prose_rationale_audit:
+            report_path: active-project/staff/reviews/prose-rationale-audit-b01-c04-2026-05-27.md
+            verdict: PASS
+            held_bones_scanned: 10
+            prose_rationale_mute_count: 0
+            threshold: not-met
+          stale_since: null
+        # /and-stitch b01-c04 emit 2026-05-27. Single-arm scene-window (3 forks); persona neutral; voice-exemplar series-level (1st-person; cadence transferred, no content leak).
+        # Phases 2-6 inline-mechanical (scene-window forks pre-applied fusion); Phase 7 per-scene Q-line sweep (3 forks; 4 CUT + 7 CUT-CLAUSE + 2 REWORD + 1 CUT-ASININE; 1 FAULT-EXPOSITION-AUDIT-MISS recovered — Phase 7 scene-C fork stripped exposition:3 Roper's-Court em-dash-fold gloss on Q5/Q7 grounds; orchestrator restored verbatim per exposition carve-out).
+        # Phase 8 finalize: 39 bones rendered / 0 dropped; 68 facets balanced; 3 dialogue utterances verbatim; 1694 words; 68 sentences; no scene-callout markers; clean draft only (no annotated under cascade-budget compression per c03 precedent).
+        # Phase 9 cold-read: PASS (events recovered: acceptance + routing-operation + report-handoff + Wren-exclusion + chapter-close-thesis "carries both at the same count"; continue=tentative-yes; jeopardy "soft and offstage" but not literal no-jeopardy; cold-read identified onboarding gaps for "the feed" / Sera / Otto as c01-c03-context-dependent, not c04 defects).
+        # Phase 9 Step 3.5 prose-rationale-mute audit: PASS 10/10 (all held bones — additive @2/@10 scene-A, @16/@20/@22/@23 scene-B, @33/@34/@35/@38 scene-C — carry concrete physical/perceptual tokens on the page).
+        # Phase 9 Step 3 staging review: DEFERRED (cascade-budget; /and-review staging not run).
+        # Phase 9.5 admin process-critic: SKIPPED (clean PASS + signal_clusters[] empty per Phase 9.5 rule).
+        # Depth-pass: NOT REQUIRED (clean PASS; no MANDATORY flag); optional --from-signals available if user wants tightening on the cold-read's "soft jeopardy" surface or the mid-walk interior-cartography stretch noted by cold reader (lines 22-53).
         # /and-substance chapter b01c04 Phase 6 persist 2026-05-27.
         # Phase 5 review: 4 ACCEPT (dramatist, cape-fic-reader, dark-fantasy-reader, worm-canon-pedant)
         #   + 1 FAIL (auditor: 2 HARD, 4 SIGNAL). Admin DEC-0028 adjudication:

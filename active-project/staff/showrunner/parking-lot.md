@@ -582,6 +582,34 @@ parking_lot:
       resolved_by: null
       resolution_note: null
 
+    - id: pl-2026-05-27-002
+      created_at: 2026-05-27T00:00:00Z
+      created_by: "/and-stitch b01-c04 Phase 9 cold-read terminal gate"
+      label: cold-read-soft-jeopardy-and-interior-cartography-b01c04
+      target:
+        command: /and-write
+        scope: b01-c04
+        phase: null
+      severity: SOFT
+      description: |
+        /and-stitch b01-c04 Phase 9 PASS (clean — no MANDATORY flag; no signal-clusters; prose-rationale-mute 10/10 PASS). Cold reader recovered all central events + thesis-enactment ("the body that walked through the Hook carried both of them at the same count") + tentative-yes continue. Two soft observations the depth-pass could address if user elects:
+
+        (a) Jeopardy reads "Soft and offstage. ... Functionally low." Sera-threat referenced ("Otto's confirmation that Sera was managed and that the three-month window had closed") but not staged in c04 prose; Taylor's saturation-cost named but consequences undefined. This is structurally appropriate for the routing-installation chapter (the threat is c01-c03 inheritance + offstage by design), but a depth-pass could surface body-weight on the saturation-cost (NI:13 "saturation-cost gone past the load she has carried before" registers but does not somatically land) so jeopardy isn't entirely offstage.
+
+        (b) Cold reader noted "the middle walk (~lines 22–53) is almost pure interior cartography — only physical action is walking and looking." Scene-B's mid-section (Oswyn-peak + ward-tier-only + Wren-anchor-discipline) and scene-C's report-handoff aftermath could carry more body-staging at the held-bones. Phase 9 Step 3.5 audit verified concrete tokens are PRESENT on every held bone (10/10 PASS) — this is not a prose-rationale-mute issue. It's a held-bone-body-weight density observation, separable from mute/not-mute.
+
+        Not blocking; chapter is terminal. Optional depth-pass loop: /and-write b01-c04 revise --from-signals + re-cascade /and-facets + /and-stitch.
+      context_refs:
+        - active-project/staff/reviews/coldread-b01-c04-2026-05-27.md
+        - active-project/staff/reviews/prose-rationale-audit-b01-c04-2026-05-27.md
+        - active-project/draft/b01-c04.md
+        - active-project/staff/stitcher/render-log-b01-c04.md
+      resolution_suggestion: "optional /and-write b01-c04 revise --from-signals + re-cascade (typical depth-pass loop)"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
     - id: pl-2026-05-27-001
       created_at: 2026-05-27T00:00:00Z
       created_by: "/and-write b01c04 Phase 2 audit + admin DEC-0030"
