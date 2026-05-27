@@ -18,5 +18,12 @@ episode: b01c04
 behavior-card: westeros-smallfolk
 ---
 
-8 @n07 | confirm receipt; affirm terms acceptable to patron without re-naming the patron; flat courier-receipt register — no negotiation framing, no warmth, no implication of additional asks; convert Taylor's yes into a settled routing arrangement | "Those terms are acceptable to the man I serve. The volume yours. The interval yours. The substance pattern-reports from the wards you walk."
-9 @n10 | confirm next-contact arrangement — name place, name time, name interval; no question about why; no affect added; install a recurring appointment | "Same place. First bell. Three days."
+# Re-anchored at /and-write Phase 1 redo (DEC-0030): both Jarvis utterances now anchor
+# to the consolidated bone s01n08 (was n07 + n10 in the 38-bone draft; redo collapsed
+# the two Jarvis-speech bones into one carrying receipt + return-arrangement per the
+# bone's notes "[mechanism: Jarvis receives the acceptance as a routing confirmation]
+# [event: Jarvis confirms first routing protocol — next contact, same place, same
+# bell, three days hence]"). Phase 7 will emit citation tokens [jarvis-coin-kl-
+# courier:8, jarvis-coin-kl-courier:9] on the single bones-file line for that bone.
+8 @8 | confirm receipt; affirm terms acceptable to patron without re-naming the patron; flat courier-receipt register — no negotiation framing, no warmth, no implication of additional asks; convert Taylor's yes into a settled routing arrangement | "Those terms are acceptable to the man I serve. The volume yours. The interval yours. The substance pattern-reports from the wards you walk."
+9 @8 | confirm next-contact arrangement — name place, name time, name interval; no question about why; no affect added; install a recurring appointment | "Same place. First bell. Three days."
