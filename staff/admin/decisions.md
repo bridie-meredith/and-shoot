@@ -1226,3 +1226,116 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0035 | 2026-05-27 | SLOW
+
+question: /and-facets b01c04 Phase 5b cycle-2 result: 0 facets flipped to PASS. Structural fixes accepted. 9/11 still FAIL on content grounds. Route: option 1 (full content cycle 3 — all callouts, ~25-30 dispatches), option 2 (cap-burn DELETE now — ~3-5 dispatches, irreversible), or option 3 (targeted cycle 3 — 3/3-convergence items only, ~10-15 dispatches, then cap-burn residue)?
+context: |
+  DEC-0034 chose targeted hybrid (structural first, re-fire, then decide). Structural fixes:
+  accepted across all reviewers. 0 additional facets passed. All 9 remaining FAILs are content-level.
+  Current state: PASSes: location-state, dialogue-taylor (2/11). FAIL: 9/11.
+  Remaining content callouts (deduplicated across reviewers):
+    NI: narrator:7 @31 AP10 + tense-register (3/3 convergence — strongest cross-reviewer signal);
+        narrator:3 @9 AP10 (2/3); narrator:12 @23 AP2 (2/3); narrator:9 @38 middle-clause AP2 (1/3)
+    memory: mem:4 @38 scaffold-recurrence vs. mem:2 (conditional on rewrite mode — 1-2/3 convergence)
+    sensory: sensory:1 @1 charged-subject + unanchored baseline; modality gaps; @17/@25 disambiguation
+    state-updates: anchor-lag, non-canonical value, duplicate entries, narrative-label-as-value,
+      undeclared field-extensions, compound-encoding
+    vibes: AP8 parsability fails on 4 tokens; vibes:8/@17 + vibes:14/@28 proto-line citation absent;
+      vibes:9/@22; Jarvis directional-ambiguity
+    feeling: feel:1 @7 generic (dark-fantasy, 1/3); feel:2 @39 non-card vocabulary (worm-canon, 1/3)
+    metaphor: refusal log incomplete @22/@38/@39 (dark-fantasy, 1/3)
+    exposition: prior-bridge closing clause (cape-fic, 1/3); ADD at @31 (cape-fic, 1/3)
+  Total cumulative c04 dispatches across /and-write + /and-review + /and-facets: ~80.
+  Option 1 adds ~25-30 → ~105-110 total. Option 3 adds ~10-15 → ~90-95 total.
+  Caller default: option 3.
+
+options: |
+  (1) Full content cycle 3 — dispatch fixer on all content callouts across 9 failing facets;
+      re-fire those 9 × ~2 reviewers each; ~25-30 dispatches. Realistic outcome: most pass,
+      some residue → cap-burn. Total: ~105-110 cumulative c04 dispatches.
+  (2) Cap-burn DELETE — skip cycle 3; DELETE all callout-driving entries; ~3-5 dispatches;
+      irreversible. Loses 3/3-convergence items (verified quality signal, not taste).
+  (3) Targeted cycle 3 — fixer dispatches only for items with 3/3 (and 2/3) cross-reviewer
+      convergence; treat 1/3 dissents as TASTE-FLAG carry-forward per pipeline doctrine;
+      re-fire only touched facets; then cap-burn residue. ~10-15 dispatches.
+
+decision: Option 3 — targeted cycle 3 on 3/3 and 2/3-convergence items only; 1/3 dissents → TASTE-FLAG carry-forward; cap-burn residue.
+
+basis: |
+  goal:1 (pipeline correctness — the pipeline's own TASTE-FLAG doctrine says 1/3 dissents are taste,
+  not verified quality; option 3 is correct pipeline application, not a shortcut; option 2 DELETEs
+  3/3-convergence items which is wrong regardless of spend level) + goal:2 (cost discipline — option 3
+  saves ~10-15 dispatches vs. option 1 by honoring the pipeline's own convergence rules) +
+  methodology:3a (reversibility — option 2 is irreversible DELETE of verified findings; option 3
+  preserves cap-burn of residue as the natural next step) + methodology:3b (cost — option 3 is lower
+  expected-total-spend; residue cap-burn after cycle 3 is bounded by what survives, not pre-committed) +
+  DEC-0033 intent (full process — option 3 IS full process correctly applied; full process does not
+  mean re-firing on every 1/3 dissent; convergence rules exist precisely to distinguish verified
+  findings from taste calls)
+
+rationale: |
+  DEC-0034 chose targeted hybrid (structural first) because structural fixes might clear facets.
+  That hypothesis did not confirm (0 flips). But the structural work was not wasted — it was
+  correct on any path and has been applied. The situation is now different: all remaining failures
+  are content-level only, and they split cleanly into two classes:
+
+  CLASS A — 3/3 cross-reviewer convergence: narrator:7 @31 (AP10 + tense-register), and vibes AP8
+  violations (4 tokens: vibes:1 "is" copula + 3 passive-finite). Three independent reviewer personas
+  with distinct reading frameworks converged on the same finding. The pipeline's convergence criterion
+  exists to discriminate exactly this: verified content quality vs. persona-specific preference.
+
+  CLASS A-adjacent — 2/3 convergence: narrator:3 @9 (AP10), narrator:12 @23 (AP2), mem:4 @38 scaffold
+  (conditional), sensory:1 @1, sensory modality/disambiguation callouts. Two of three personas agree —
+  stronger than taste, not as strong as 3/3. These are included in cycle-3 scope: the cost of fixing
+  them is bounded (they overlap with facets already in scope), and leaving 2/3-verified items for
+  cap-burn on the series-spine chapter is a quality concession that option 1 would not make.
+
+  CLASS B — 1/3 dissents (single reviewer): feel:1 @7 (dark-fantasy), feel:2 @39 (worm-canon),
+  metaphor refusal log (dark-fantasy), exposition prior-bridge clause (cape-fic), exposition ADD @31
+  (cape-fic), narrator:9 @38 middle-clause (cape-fic). These are TASTE-FLAGs by definition.
+  The pipeline is explicit: TASTE-FLAG findings carry forward as process-signals, not as cycle-3
+  fixer targets. Applying fixer to 1/3 dissents is over-retrying taste calls — the opposite of the
+  discipline the spec requires.
+
+  State-updates schema errors are mechanical and uncontested regardless of convergence count —
+  they are included in cycle-3 scope on correctness grounds, not reviewer-convergence grounds.
+
+  Option 2 is rejected because it DELETEs 3/3-convergence items. This is not a cost question;
+  it is a quality question. Entries with 3/3 cross-reviewer convergence on the series-spine acceptance
+  chapter are verified quality improvements. Deleting them to save ~10-15 dispatches over option 3
+  is not cost discipline — it is buying permanent quality reduction with temporary dispatch savings.
+
+  Option 1 fires fixer on 1/3-dissent items that the pipeline's own rules classify as taste.
+  The incremental cost (~10-15 dispatches) does not produce better facets — it produces facets that
+  satisfy a single persona's preference against the other two. Option 3 is full process correctly applied.
+
+  Cycle-3 fixer scope:
+    NI: narrator:7 @31 (AP10 chassis + tense-register) [3/3]; narrator:3 @9 (AP10) [2/3];
+        narrator:12 @23 (AP2 persistent-narration) [2/3]
+    sensory: sensory:1 @1 (charged-subject + baseline); thermal modality; @17+@25 disambiguation [2/3]
+    memory: mem:4 @38 (scaffold-recurrence rewrite to distinct continuous-operation cue mode) [2/3]
+    vibes: AP8 violations on 4 tokens (vibes:1 "is" + 3 passive-finite) [3/3]; vibes:8+vibes:14
+        citation adds [uncontested]; vibes:9; vibes:16+vibes:3 Jarvis directional [uncontested]
+    state-updates: all schema errors (anchor-lag, slug-list, dedup state:8/9, narrative-label,
+        field-extensions, compound-encoding) [mechanical]
+    TASTE-FLAG carry-forward (NOT cycle-3 fixer scope): feel:1 @7; feel:2 @39; metaphor refusal log;
+        exposition prior-bridge clause; exposition ADD @31; narrator:9 @38 middle-clause
+
+  After cycle-3 re-fire on touched facets: cap-burn any remaining failures per URI-FACETS-CAP-BURN-
+  SEMANTICS. NOT-SUCCESSFUL verdict does not block /and-stitch.
+
+trade-off: |
+  Feel and exposition 1/3-dissents are not retried in cycle 3. If those reviewers hold FAIL on
+  cycle-3 re-fire (nothing changed in their callout scope), those facets go to cap-burn DELETE
+  of the dissenting entries. This is correct — a fixer cannot satisfy a taste dissent without
+  satisfying a single persona against the other two. Cap-burn report documents TASTE-FLAG carry-forward
+  items; orchestrator-critic NOT-SUCCESSFUL verdict names them; this is per-spec behavior.
+  The ~10-15 dispatch savings over option 1 come entirely from not over-retrying taste.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

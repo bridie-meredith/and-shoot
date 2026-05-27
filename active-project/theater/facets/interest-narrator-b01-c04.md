@@ -4,7 +4,7 @@ episode: b01c04
 author: taylor-hebert-kl-122ac
 pov: taylor-hebert-kl-122ac
 total-bones: 39
-fires: 11   # post-fault-006 narrator:14 @33 deletion
+fires: 10   # post-fault-006 narrator:14 @33 deletion; post-cycle-3 narrator:12 @23 deletion
 density: 28.2%
 round: R2.1
 ---
@@ -14,6 +14,7 @@ round: R2.1
 rubric-fidelity-carve-out: band-overshoot-with-cross-facet-co-citation-mandate
 rule: rubric-narrator-interest.md § frequency band (15-25% NI fires per chapter)
 state-post-fault-006: 11 entries on 39 bones = 28.2% (3.2 percentage points above 25% ceiling)
+state-post-cycle-3: 10 entries on 39 bones = 25.6% (0.6 percentage points above 25% ceiling)
 
 entry-count breakdown (post-R2, post-fault-006):
   - state-co-citation-mandatory (per rubric-state-updates §cross-facet contract; one NI per actor:taylor.* entry):
@@ -30,10 +31,10 @@ entry-count breakdown (post-R2, post-fault-006):
       narrator:8 @36 (peak-bones @36 thesis-enactment cluster; world-axis pivot)
       narrator:9 @38 (chapter-close Wren-anchor-discipline thesis)
       narrator:10 @7 (acceptance speech beat; feel:1 + vibes:1 + dialogue:4 co-fire)
-      narrator:12 @23 (Wren route-choice; CONTENT REVISE candidate cycle-2)
-    = 5 non-state-mandatory fires
+    # narrator:12 @23 DELETED cycle-3 (AP2 persistent-narration; 2/3 convergence)
+    = 4 non-state-mandatory fires
 
-  total: 6 + 5 = 11 entries. Arithmetic now closes.
+  total: 6 + 4 = 10 entries. Arithmetic closes post-cycle-3.
 
 rationale:
   The 25% ceiling (≤9.75 entries) cannot be honored without breaching CROSS-FACET CO-CITATION on at least 1 actor:taylor.* state-update entry. The 6 state-mandatory fires are non-negotiable per rubric-state-updates. The 5 non-mandatory fires are scene-map-grounded (peak-bones witnessing + chapter-close trio + acceptance pile-up at @7).
@@ -54,14 +55,14 @@ resolves:
 # ── End preamble ─────────────────────────────────────────────────────────────
 
 1 @6 the feed had him a span before the lane-mouth did; the courier's gait was the gait already mapped
-3 @9 the lever is no longer a question of whether; it has just become a question of how much
+3 @9 Jarvis's cadence carried the receipt without the conditional that would have left the yes open; the receipt-form had already settled before her body finished holding for it
 4 @18 the elder enters the feed as a body the routing already accounts for; she does not let the next thought finish
 6 @22 the ward registers in the feed at second-ward range; the anchor stays outside the ledger by the same hand that wrote the ledger
-7 @31 the half-step of yard-air between her hand and his is the exposure she has just paid in full
+7 @31 the half-step of yard-air closed around the sheet's last contact with her hand; the cost had crossed before the hand had registered it crossing
 8 @36 the sheet has just entered a channel the feed cannot reach into; the operation has cycled for the first time at scale
 9 @38 the ward returns in the feed at stitch-house range; the four-ward read continues; the one observation that does not enter any report continues with it
 10 @7 the yes goes across the yard-air in the cadence of a settled count; the modification carries the only parameter the prohibition still holds
 11 @15 the range opens one ward outward; the suppression-cost has just shifted to a load she had already priced
-12 @23 the feet hold at the lane-mouth the feed has just placed Wren in; the route-choice is the price the report will not name
+# DELETED narrator:12 @23 - AP2 persistent-narration (cycle-3 2/3 convergence: cape-fic + dark-fantasy; restates @22 Wren-exclusion thesis one bone later without registering change; lonely in cite-index)
 13 @27 the fourth ward opens to the feed; the saturation-cost has gone past the load she has carried before
 # DELETED narrator:14 @33 - CONSTRAINT orphan (audit fault-006 2026-05-27 — paired-with-mem:3 expectation; mem:3 deleted by memory R2; per-rubric NI-spine without co-citing memory at quiet-beat fails CROSS-FACET CO-CITATION; carve-out preamble below)

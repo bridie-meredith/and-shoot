@@ -1019,3 +1019,15 @@ exit: CLEAN
 - R2 judge inflight format discipline: 5 of 7 R2 judges wrote decision-log prose instead of canonical proto-lines copies (truncated or annotation-embedded). Main session rebuilt all 5 inline (PROP candidate: dispatch brief enforcement).
 - cite-index trailing-cite multi-token bracket support (`[X:1, X:2]` vs `[X:1] [X:2]`). Spec/tool drift between /and-write Phase 7 emit format and /and-facets cite-index parser. Inline-fixed via /tmp/fix_brackets.py. PROP candidate.
 - R1 exposition word-cap audit missing from cull-pass enumeration (3 R2 REWORDs in exposition fired on §Form word-cap violation R1 author missed). PROP candidate per shard process-flag.
+
+## SESSION-START — 2026-05-27T00:00:00Z — facets-b01c04-cycle3-sensory
+dispatch: Phase 5b cycle-3 sensory facet remediation — DELETE sensory:1 @1 (charged-subject + unanchored-old-state convergence 2/3); ADD pre-validate sensory:4 @4 thermal (shed-wall contact); strip/add proto-line citations; regen cite-index
+target: active-project/theater/facets/sensory-b01-c04.md
+audit-report: /and-facets b01-c04 Phase 5b cycle-3 audit convergence report
+findings-queued: 2 (DELETE sensory:1; conditional ADD sensory:4)
+
+## SESSION-START — 2026-05-27T00:00:00Z — facets-b01c04-phase5b-cycle3-NI
+dispatch: /and-facets b01-c04 Phase 5b cycle-3 NI interest-narrator facet — 3 convergence callouts (narrator:7 REWRITE 3/3; narrator:3 REWRITE 2/3; narrator:12 DELETE 2/3)
+target: active-project/theater/facets/interest-narrator-b01-c04.md
+audit-report: Phase 5b cycle-3 audience verdicts (cape-fic + dark-fantasy + worm-canon) for NI facet
+findings-queued: 3
