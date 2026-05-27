@@ -3059,17 +3059,38 @@ books:
         # Phase 7 emit: theater/bones/b01-c04.md (39 bones; 12+12+15 across s01/s02/s03) + theater/facets/scene-map-b01-c04.md + dialogue files re-anchored @7 (Taylor) + @9 (Jarvis ×2 utterances on consolidated bone).
         # Dialogue-anchor coverage: 1 anchor in s01n06 (Taylor:1) + 1 anchor in s01n08 (Jarvis:8 + Jarvis:9 multi-citation). Earth-Bet fence clean.
         # pl-2026-05-27-001 (c03-bones-svo-form-contamination): still open; process-critic to surface whether PROP needed.
-        facets_path: null   # /and-facets b01-c04 not yet run; pending /and-review bones b01c04 first per URI-WRITE-BONES-REVIEW-GATE
-        round_1_complete: false
-        round_2_complete: false
-        facets_status: not-started
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
+        facets_status: audited-r1
         facets_stale_since: null
-        audit_path: null
-        audit_complete: false
-        audience_gate_path: null
-        audience_gate_complete: false
-        audience_gate_cycles: 0
-        bidirectional_loop: not-started
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audit_findings: 8 HARDs (all resolved inline) + 11 SIGNAL/TASTE-FLAG
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md
+        audience_gate_complete: true
+        audience_gate_cycles: 3
+        audience_gate_cap_burned: false   # per DEC-0035; TASTE-FLAG carry-forward chosen over cap-burn DELETE
+        taste_flag_residue:
+          - TF-001: sensory-disambiguation-pedant — sensory:2 @13 cross-location old-state (specialist disagreement)
+          - TF-002: dark-fantasy-reader — state:13 actors_in_yard anchor @37 vs @39 reality-axis (1/3 dissent)
+          - TF-003: cape-fic-reader — vibes:4 single-exit-geometry + vibes:2 modification-of-terms middle token (1/3 dissent)
+          - TF-004: cape-fic-reader — exposition:1 prior-bridge closing clause orientation (1/3 dissent, cycle-1 carry)
+          - TF-005: dark-fantasy + worm-canon — feel:1 @7 generic / feel:2 @39 four-count card-verify (1/3-each per-entry)
+          - TF-006: dark-fantasy — metaphor refusal log silent on @22/@38/@39 (1/3 documentation request)
+          - TF-007: cape-fic — narrator:9 @38 middle clause AP2 paraphrase (1/3 cycle-1 carry)
+        bidirectional_loop: validated   # multiple shared findings across auditor + audience paths
+        # /and-facets b01-c04 emit 2026-05-27. 3-cycle audience-gate completion per DEC-0033/0034/0035.
+        # R1 fanout: 12 authors landed; 71 facet entries (loc-state=6, NI=9, sensory=3, state-env=14, state-taylor=7, state-jarvis=8, memory=3, feeling-taylor=2, feeling-jarvis=0, metaphor=0, vibes=16, exposition=3).
+        # R2 fanout: 7 judges (NI/memory/feeling-taylor/metaphor/exposition/dialogue-taylor/dialogue-jarvis). NI K=7 D=2 A=5; memory K=1 D=2 A=1; feeling-taylor K=2; metaphor K=0; exposition K=0 R=3 (all REWORD on word-cap); dialogue clean.
+        # Phase 4 cite-index regen: 19 author copies merged; consolidated feeling.md + state-updates.md.
+        # Phase 5 audit: FINDINGS-PRESENT — 8 HARD + 11 SIGNAL; all HARDs RESOLVED inline (dialogue ID collision fix; forward-cite strips; carve-out preamble adds; narrator:14 + vibes:7 deletions; memory + NI body-level preambles).
+        # Phase 5b cycle 1 (33 reviewers): 9 of 11 facets FAILed strict 3-of-3; 2 PASS (loc-state + dialogue-taylor).
+        # Phase 5b cycle 2 (5 targeted re-reviewers; structural fixes per DEC-0034): 0 facets flipped fully; structural fixes accepted by cited reviewers but content REVISEs persist.
+        # Phase 5b cycle 3 (4 fixer dispatches + 11 audience re-reviewers; targeted content fixes per DEC-0035): 2 more facets flipped to 3/3 ACCEPT (NI, memory); 7 facets PASS-with-TASTE-FLAG-residue.
+        # Cumulative /and-facets b01-c04 dispatches: 12 R1 + 7 R2 + 1 audit + 33+5+11 audience + 4+1 fixers + 5 admin = ~79 dispatches across 3 cycles.
+        # Final cycle-3 disposition: 4 facets 3/3 clean ACCEPT (loc-state, dialogue-taylor, NI, memory); 7 facets PASS-with-1/3-TASTE-FLAG per DEC-0035 (sensory, state-updates, vibes, feeling, metaphor, exposition, dialogue-jarvis).
+        # Phase 5c admin process-critic: pending (auto-fires on REVISE in final cycle even with TASTE-FLAG-classification).
         stitched: false
         draft_file: null
         # /and-substance chapter b01c04 Phase 6 persist 2026-05-27.
