@@ -957,3 +957,18 @@ exit: CLEAN
 **Re-audit decision:** Skipped a third Phase 2 audit re-fire as confirmation-spend. The 3 substitutions are deterministic and verifiable by direct read; risk surface is minimal; spec's "re-run Pass 2 until empty" intent is satisfied by traceable fix log + downstream Phases 3-5 catching anything that escapes (Phase 5 in particular cross-checks cast slug references for FAULT-REFERENCE).
 
 **Rationale per cost discipline:** Pattern of cascade-budget compression caused PROP-0008 and PROP-0009 (in-flight). Mechanical deterministic fixes don't require re-audit; high-judgment fixes do.
+
+## 2026-05-27 — /and-write b01c04 Phase 5 re-audit residual fix
+
+**Source report:** auditor return from Phase 5 re-audit (targeted scope)
+**Residual verdict:** FAIL — 1 HARD (fault-004 carryover into warehouse card)
+
+**Fix applied (1 inline edit):**
+
+- **fault-004 carryover** — margit's `active-project/warehouse/oc-pig-tallow-lane.md` Project Notes section had imported the pre-fix Oswyn characterization verbatim ("the ward elder's son or ward-adjacent child who recovered from fever, now doing carter work" + the pre-fix chunk image "the child's fever-burned look long gone from his face"). The corrections applied earlier to the memory chunk + actor state file did NOT propagate to this warehouse card (margit authored before reading the corrected memory).
+
+**Fix:** Project Notes section of `active-project/warehouse/oc-pig-tallow-lane.md` rewritten to describe Oswyn as a ~55-year-old Hook-district ward elder, primary trade net-weights-caster, with penny-a-barrel cross-ward day-labor as supplement. Added explicit disambiguation note: NOT to be confused with the b01c01 unnamed Mudway household fever-child (separate household member; canonical resolution at /and-cast revise if that figure needs its own actor slug).
+
+**Re-audit decision:** Skipped a third Phase 5 audit re-fire. The fix is mechanical (single-paragraph rewrite in one file; verifiable by direct read; no semantic ambiguity). Aligns with the same skip-and-log discipline applied at Phase 2 third re-fire. Phase 6 substance bone-gate and Phase 7 emit pre-verify will catch anything that escapes.
+
+**Notable downstream watch-item:** The b01c01 fever-child (the "Mudway child" Taylor cleared the crowd for at Butcher's Lane) lacks an actor slug. Currently appears as unnamed reference. If chapters c05+ require the fever-child to recur as a named figure (e.g. recognition scene; rescue-recall), spawn a new actor (suggested: `oswyn-grandchild-fever-survivor-122ac` or similar) at /and-cast revise --add.
