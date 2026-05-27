@@ -3045,6 +3045,35 @@ books:
         #   audience reviews in audience/{cape-fic-reader,dark-fantasy-reader,worm-canon-pedant}/stm.md
         #   under heading "## b01c04 chunk review — 2026-05-27".
         # Draft archived: active-project/staff/showrunner/_drafts/b01c04-draft-2026-05-27.md
+        #
+        # /and-substance chapter b01c04 revise 2026-05-27 — chunk-layer soft-watch addressing pre-/and-write.
+        # 6 chunk-layer edits applied (no math change; all axis sums still EXACT):
+        #   - s01 moral_framework rationale: stripped "crack widened" phrasing → "framework still named and
+        #     believed; not interrogated as compromised; no Δ on this axis" (auditor SIGNAL: held-rationale
+        #     acknowledging crack without posting Δ → potential book-roll-up gap)
+        #   - s01 political_register-prot rationale: specified "courier-tier exchange in a cooper's yard"
+        #     (auditor SIGNAL: borderline boilerplate across 3 scenes)
+        #   - s02 moral_framework rationale: same "crack" strip + clarified the un-examined-distinction IS the
+        #     discipline (not its violation)
+        #   - s02 political_register-prot rationale: specified "ward-level walk; coverage substrate is
+        #     foot-traffic, sickness-clustering, alley-agitation" (boilerplate SIGNAL)
+        #   - s03 moral_framework rationale: same strip + framework-still-named-and-believed framing
+        #   - s03 political_register-prot rationale: specified the report's content (junction-agitation,
+        #     ward-pattern from Flea Bottom-tier sources)
+        #   - s03 cl-world-d04 note: clarified "first tranche (+1.0 of +2 ledger gain; second +1.0 lands at
+        #     d07)" (auditor SIGNAL: "delivered" phrasing ambiguous)
+        #   - s03 prose: report-handoff sharpened to physical image — "single sheet folded twice in plain hand,
+        #     passed across the half-step of yard-air; Jarvis takes it without opening it and slides it inside
+        #     his coat" (cape-fic SIGNAL: position-world needs physical handoff image, not bracket-declaration)
+        #   - s03 prose: closing mechanism tag rewritten to drop verbatim thesis — now "reading-the-ward and
+        #     routing-what-is-read collapse into one continuous operational form" (auditor SIGNAL: s03 mechanism
+        #     tag named thesis verbatim → theme-silence violation risk if /and-write extracts as event_map)
+        # Bone-layer soft watches NOT addressed at chunk (deferred to /and-write): s01 position-prot-rise distinct
+        #   bones-level event (cape-fic); s01 rationalization watchpoint at execution layer (dark-fantasy);
+        #   four-ward sequential acquisition across 2 days (worm-canon, already explicit in chunks);
+        #   anchor-discipline lines preservation as bone-level content (worm-canon).
+        # PROP-0008 applied: cond-taylor-pov-behavior.card.md layer-scope clarified (library + active-project
+        #   copies); fault-001 will not recur on future Phase 5 passes.
         chunk: |
           Taylor accepts Otto's proposal. The chapter covers the acceptance and its immediate
           operational consequences: Taylor expands her insect coverage beyond the Hook into
@@ -3157,11 +3186,11 @@ books:
                   notes: "Taylor now named-function at courier-tier as an active conduit; anonymous no longer possible; cl02 partial gain tranche"
               axes_held:
                 - axis: moral_framework
-                  rationale: "the licensed exception is active and held; rationalization runs (Sera is real, the intelligence is already running, the destination is the modification); the crack has widened but the framework is still named and believed — not yet interrogated"
+                  rationale: "licensed exception active and held; rationalization runs (Sera is real, the intelligence is already running, the destination is the modification); framework still named and believed — not interrogated as compromised; no Δ on this axis at this scene (chapter contract holds moral_framework; the licensed exception is the discipline at work, not its breach)"
                 - axis: relational_anchor_status
                   rationale: "Wren is not in this scene's calculus; the acceptance is about Sera; anchor holds outside pricing at rank 2"
                 - axis: political_register-prot
-                  rationale: "no court-register content at courier-tier; terms delivered in plain register; resentment has no material"
+                  rationale: "courier-tier exchange in a cooper's yard; no court-register observation surface present at this venue; resentment has no court-material to form on at this scene"
                 - axis: capability
                   rationale: "acceptance is operational, not deployment; no new coverage range extends here"
               density_target: 0.6-0.7
@@ -3196,11 +3225,11 @@ books:
                 - axis: moral_legibility_to_self
                   rationale: "Taylor frames expansion as harm-reduction continuation — she is reading the ward as she reads the Hook; the triage logic extends; recognition that the architecture now routes upward to a patron is present but framed as destination-modification, not transformation; legibility crack suppressed"
                 - axis: moral_framework
-                  rationale: "held at cracked-but-rationalized; the distinction between what enters the Jarvis ledger and what does not (Wren) is maintained without examination — the framework is still operative in this specific form"
+                  rationale: "framework held as still named and believed; the distinction between what enters the Jarvis ledger and what does not (Wren) is maintained without examination — operative in its specific form; no Δ on this axis at this scene (the un-examined distinction IS the discipline, not its violation)"
                 - axis: relational_anchor_status
                   rationale: "Wren visible in feed, not in the report; anchor held outside pricing; the act of not-noting Wren is the anchor discipline at work — but it is not interrogated this scene"
                 - axis: political_register-prot
-                  rationale: "ward-level coverage only; no court-tier observation material; resentment has no substrate"
+                  rationale: "ward-level walk; coverage substrate is foot-traffic, sickness-clustering, alley-agitation; no court-tier observation material yet present in the expanded feed"
               density_target: 0.65-0.75
             scene_conflict:
               protagonist_force: "Taylor's systematic ward-reading as harm-reduction extension — the same discipline she applied to the Hook's triage, now enlarging the map with the same procedural register; the expansion feels continuous with what she has always done"
@@ -3214,9 +3243,9 @@ books:
 
               Jarvis is at the yard at the third-bell appointment [event: Jarvis returns with Otto's first confirmation — Sera's exposure is being managed]. He has, for the first time, a note — not a letter, not a seal, a single line in a plain hand that reads like administrative confirmation: the matter they discussed has been attended to, the three-month window is no longer open. He does not hand it to her. He reads it once, holds it visible at the distance of conversation, returns it to his coat. [force: the confirmation arriving as precisely the weight the acceptance was made to carry — Sera is managed; the lever has paid its stated first dividend]. Taylor registers it. The accounting closes one column and opens another.
 
-              [event: Taylor delivers the first movement-pattern report to Jarvis] — not everything the feed holds, not the Hook's medical triage layer, not Wren's location, not Oswyn by name: the junction-agitation patterns across the four wards for the past six days, the clustering that precedes crowd-trouble, the three passage-avoidance points that mark which routes the ward-residents read as unsafe. [mechanism: the first upward-routing of the intelligence layer — the information exits Taylor's operational context and enters Otto Hightower's Green consolidation channel through Jarvis as structural vector]. It is, Taylor notes, what she has already been reading. She has named a destination. [force: the distinction between reading and reporting dissolving in the act of handing the report across].
+              [event: Taylor delivers the first movement-pattern report to Jarvis — a single sheet folded twice in plain hand, the kind of object that does not draw a second look, passed across the half-step of yard-air between them; Jarvis takes it without opening it and slides it inside his coat]. [image: the report's physical smallness — one sheet, a fold, a coat pocket — against the size of the architecture it represents]. The report's content: not everything the feed holds, not the Hook's medical triage layer, not Wren's location, not Oswyn by name — the junction-agitation patterns across the four wards for the past six days, the clustering that precedes crowd-trouble, the three passage-avoidance points that mark which routes the ward-residents read as unsafe. [mechanism: the first upward-routing of the intelligence layer — the information exits Taylor's operational context and enters Otto Hightower's Green consolidation channel through Jarvis as structural vector]. It is, Taylor notes, what she has already been reading. She has named a destination. [force: the distinction between reading and reporting dissolving in the act of handing the sheet across].
 
-              [image: Jarvis receiving the report with the same courier's neutrality he brought to the acceptance — no reaction that would name its value to him or to the man above him]. [event: position-world increment — the Green faction gains its first KL street-layer intelligence through this channel]. [event: social_tether-prot-rise load-bearing formation confirmed — Jarvis as structural vector is now a functional architecture, not a potential one]. Taylor walks back through the Hook in the late grey, the feed running across the four wards simultaneously, reading the ward and feeding the ward and reading what she feeds in a single unbroken operation. [mechanism: the protection and the trap as the same operation, now materially running — not as a future contingency but as the present shape of her day]. Wren is at the stitch-house. Taylor's feed touches the stitch-house and passes through. The report did not include Wren. This is the anchor holding. Taylor does not examine whether it will hold.
+              [image: Jarvis receiving the report with the same courier's neutrality he brought to the acceptance — no reaction that would name its value to him or to the man above him]. [event: position-world increment — the Green faction gains its first KL street-layer intelligence through this channel]. [event: social_tether-prot-rise load-bearing formation confirmed — Jarvis as structural vector is now a functional architecture, not a potential one]. Taylor walks back through the Hook in the late grey, the feed running across the four wards simultaneously, reading the ward and feeding the ward and reading what she feeds in a single unbroken operation. [mechanism: reading-the-ward and routing-what-is-read collapse into one continuous operational form — the day's labor does not partition into the part that helps and the part that pays; the architecture runs whole or it does not run]. Wren is at the stitch-house. Taylor's feed touches the stitch-house and passes through. The report did not include Wren. This is the anchor holding. Taylor does not examine whether it will hold.
             substance_delta:
               axes_in_motion:
                 - axis: capability
@@ -3238,14 +3267,14 @@ books:
                   direction: up
                   target_delta_magnitude: 1.0
                   cost_ledger_anchor: cl-world-d04
-                  notes: "first intelligence delivery upward — Green consolidation gains KL street-layer intel through Jarvis channel; cl-world-d04 delivered; this is the world-axis increment"
+                  notes: "first intelligence delivery upward — Green consolidation gains KL street-layer intel through Jarvis channel; first tranche of cl-world-d04 (+1.0 of +2 ledger gain; the second +1.0 tranche lands at d07 arrangement-formalized per series substance notes); this is the world-axis increment c04 owes"
               axes_held:
                 - axis: moral_framework
-                  rationale: "rationalization stable at chapter close: Taylor frames the report as naming-a-destination-for-what-she-already-knows; the licensed exception is operative and believed; the crack is present but the framework is still held — legibility not interrogated"
+                  rationale: "rationalization stable at chapter close: Taylor frames the report as naming-a-destination-for-what-she-already-knows; licensed exception is operative and believed; framework still named and believed — legibility not interrogated; no Δ on this axis (chapter-level contract holds moral_framework; the rationalization is the discipline, not its breach)"
                 - axis: relational_anchor_status
                   rationale: "Wren outside the report explicitly; anchor discipline named on-page — 'the report did not include Wren'; held outside pricing; the act of not-including is the anchor; but the question of whether it will hold is planted without answer"
                 - axis: political_register-prot
-                  rationale: "Taylor's feed is Flea Bottom-tier; the report is ward-pattern and crowd-agitation; no court-register observation material; resentment has no substrate at this feed-tier"
+                  rationale: "the report Taylor hands to Jarvis is junction-agitation and ward-pattern from Flea Bottom-tier sources; no court-tier surface in the feed yet; resentment has no court-material to form on at this feed-tier"
                 - axis: moral_legibility_to_self
                   rationale: "recognition deferred; the 'protection and trap are the same operation' thesis is made structurally visible to the audience in Taylor's continuous feed-and-report loop but Taylor does not name it; legibility suppressed at chapter close per chapter_class: standard"
               density_target: 0.7-0.8

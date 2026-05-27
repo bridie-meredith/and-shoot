@@ -1198,10 +1198,17 @@ proposed_diff: |
     rendered draft layer only."
 
 cost_estimate: S
-status: open
-triaged_at: null
-triaged_by: null
-disposition_note: null
+status: applied
+triaged_at: 2026-05-27T00:00:00Z
+triaged_by: user (principal)
+disposition_note: |
+  Accepted in full. Both edits applied to
+  cards/conditions/cond-taylor-pov-behavior.card.md AND its
+  active-project override at active-project/warehouse/
+  cond-taylor-pov-behavior.md. Future /and-substance chapter
+  Phase 5 auditor passes should no longer fire fault-001 on
+  third-limited scene chunks; the rule now explicitly applies
+  to the rendered-draft layer only.
 pr_ref: null
 defer_until: null
 supersedes: null
