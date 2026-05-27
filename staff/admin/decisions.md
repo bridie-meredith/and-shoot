@@ -553,6 +553,28 @@ methodology-update-proposed: no
 
 ---
 
+## DEC-0025 | 2026-05-27 | FAST
+
+question: User typed "do chapter 3" on branch `claude/chapter-3-eRDko`. C03 shipped 2026-05-26 under cascade-budget compression with several audit/review phases skipped. Deferred items: `/and-review bones b01c03`, `/and-facets b01-c03` Phase 5b audience-gate, `/and-postop b01c02 in c03 context`, and `/and-substance chapter b01c03` Phase 5 3-fork review. Four interpretations offered: (1) close out deferred audits, (2) re-cascade c03 from scratch, (3) advance to c04, (4) show draft.
+context: bone-gate verdict PASS-PRAGMATIC; Phase 9 cold-read PASSED; branch name is chapter-3 (argues against advancing to c04); recent work pattern is quality-iteration on already-shipped chapters (c02 tournament + cherry-pick); deferred items are explicitly named in memory.md.
+options:
+  (1) Close out deferred audits — fire /and-review bones b01c03 + /and-postop; light cost; no rewrite unless gate fails
+  (2) Re-cascade c03 from scratch — heavier; potentially rewrites shipped draft
+  (3) Advance to c04 — interpret as "next chapter" directive
+  (4) Show draft only
+
+decision: Option 1 — close out the deferred audits on c03.
+basis: goal:1 (pipeline correctness — skipped gates are open debt; closing them is the minimal path to a fully-compliant c03) + methodology:3b (cost — option 1 is cheapest; option 2 is a full cascade spend; option 3 contradicts the branch name) + methodology:3a (reversibility — audits-first preserves the option to re-cascade if they surface a FAIL; re-cascading first discards the shipped draft unnecessarily)
+rationale: The branch name `chapter-3` and the explicit memory.md deferred-item list both point to unfinished business on c03, not a forward move. Closing the skipped gates (bones review + postop) is the correct minimal action: if they PASS, c03 is clean and the next step is clear; if they FAIL, the re-cascade (option 2) is warranted by evidence rather than speculation. Running the skipped gates is also a goal:1 obligation — the chain has declared mandatory reviews that were budget-skipped, not waived.
+trade-off: If the user intended a full re-cascade or c04 advance, this answer adds one lightweight audit pass before the next step. That cost is trivially lower than a full cascade run on potentially-sound bones.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0024 | 2026-05-26 | SLOW (process-critic)
 
 question: Third Phase 9 cold-read FAIL on b01-c02 (multi-arm tournament + full Phase 7 sweep). All three stitches returned CONTINUE=no. Does the recurring CONTINUE=no constitute a process signal beyond PROP-0007 — specifically: (a) a modify to Phase 9 cold-read protocol for non-opening chapters / dormancy-prefigure dramatic shapes, or (b) a structural issue with the and-substance chapter contract for b01c02?
