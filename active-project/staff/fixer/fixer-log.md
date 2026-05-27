@@ -1148,3 +1148,44 @@ findings-applied: 6
 findings-skipped: 0
 exit: CLEAN
 note: cite-index regen required — see below
+
+## vibes-cycle3-token-vibes1 — RESOLVED — 2026-05-27T10:05:00Z
+fault: vibes:1 @7 token `acceptance-is-the-licensed-exception-believed-as-modification` has finite copula "is" — AP8 sentence-parsable (worm-canon 3/3 uncontested)
+scope: line
+change: token replaced with `licensed-exception-as-modification-not-rule-violation`; hyphenated noun-phrase; no finite verb
+criteria met: yes
+
+## vibes-cycle3-token-vibes4 — RESOLVED — 2026-05-27T10:06:00Z
+fault: vibes:4 @11 token `first-bell-three-day-interval-installed` passive-finite "installed" — AP8 sentence-parsable (worm-canon 3/3 uncontested)
+scope: line
+change: token replaced with `first-bell-three-day-interval-as-recurring-calendar-fixture`; noun-phrase; no finite verb
+criteria met: yes
+
+## vibes-cycle3-token-vibes14 — RESOLVED — 2026-05-27T10:07:00Z
+fault: vibes:14 @28 token `footprint-growth-held-in-accounting-as-quantitative-only` passive-finite "held" — AP8 sentence-parsable (worm-canon 3/3 uncontested)
+scope: line
+change: token replaced with `quantitative-only-accounting-of-footprint-growth`; front-loaded adjective compound nominal; no finite verb
+criteria met: yes
+
+## vibes-cycle3-token-vibes15 — RESOLVED — 2026-05-27T10:08:00Z
+fault: vibes:15 @35 token `street-layer-to-court-consolidation-conduit-now-functional` copula-ellipsed predicate adjective — AP8 sentence-parsable (worm-canon 3/3 uncontested)
+scope: line
+change: token replaced with `functional-street-layer-to-court-consolidation-conduit`; adjective fronted; no predicate structure
+criteria met: yes
+
+## vibes-cycle3-delete-vibes9 — RESOLVED — 2026-05-27T10:09:00Z
+fault: vibes:9 @22 Wren rising-entrapment pre-loads importance signal; should be enacted not asserted; redundant against vibes:2+vibes:5 (cape-fic callout DEC-0035)
+scope: line
+change: canonical DELETED comment in vibes-b01-c04.md; [vibes:9] stripped from proto-lines @22 + _inflight/proto-lines-vibes.md @22; cite-index vibes:9 replaced with DELETED comment; co-lists of narrator:6, state:4, state:27, mem:2, vibes:10, vibes:11, vibes:12 cleaned; pile-up @22 8→7
+criteria met: yes
+
+## vibes-cycle3-delete-vibes3 — RESOLVED — 2026-05-27T10:10:00Z
+fault: vibes:3 @9 Jarvis rising-entrapment irreconcilable with vibes:16 social-tether-antag-vector; Jarvis is vector not entrapped party (dark-fantasy callout DEC-0035)
+scope: line
+change: canonical DELETED comment in vibes-b01-c04.md; [vibes:3] stripped from proto-lines @9 + _inflight/proto-lines-vibes.md @9; cite-index vibes:3 replaced with DELETED comment; co-lists of narrator:3, state:16, state:23, state:24, vibes:2 cleaned; pile-up @9 7→6; vibes section 15→13; totals 69→67; density table 8-row removed + 6-row added; inflight fires 16→14
+criteria met: yes
+
+## SESSION-END — 2026-05-27T10:15:00Z — facets-b01c04-phase5b-cycle3-vibes
+findings-applied: 6 (4 AP8 token rewrites; vibes:9 DELETED; vibes:3 DELETED)
+findings-skipped: 0
+exit: CLEAN

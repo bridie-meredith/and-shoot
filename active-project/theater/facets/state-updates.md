@@ -48,15 +48,15 @@ author: studio
 3 @15 studio.coverage_active_range: oc-hook-precinct → oc-hook-precinct + oc-pig-tallow-lane # field-extension: coverage_active_range (new field; see carve-out preamble)
 4 @22 studio.coverage_active_range: oc-hook-precinct + oc-pig-tallow-lane → oc-hook-precinct + oc-pig-tallow-lane + oc-stitch-house-lane # field-extension
 5 @25 studio.time_of_day: first-bell-morning-day-1 → early-morning-grey-day-2
-6 @26 studio.active_location: oc-pig-tallow-lane → oc-ropers-court
-7 @27 studio.coverage_active_range: oc-hook-precinct + oc-pig-tallow-lane + oc-stitch-house-lane → four-ward-complete # field-extension
+6 @25 studio.active_location: oc-pig-tallow-lane → oc-ropers-court
+7 @27 studio.coverage_active_range: oc-hook-precinct + oc-pig-tallow-lane + oc-stitch-house-lane → oc-hook-precinct + oc-pig-tallow-lane + oc-stitch-house-lane + oc-ropers-court # field-extension
 8 @29 studio.active_location: oc-ropers-court → oc-cooper-yard-eel-alley
-9 @29 studio.actors_in_yard: [] → [taylor-hebert-kl-122ac, jarvis-coin-kl-courier]
+9 @29 studio.actors_in_yard: [taylor-hebert-kl-122ac] → [taylor-hebert-kl-122ac, jarvis-coin-kl-courier]
 10 @31 prop:oc-report-sheet.holder: taylor-hebert-kl-122ac → in-transit-yard-air # field-extension: prop:oc-report-sheet.holder
 11 @32 prop:oc-report-sheet.holder: in-transit-yard-air → jarvis-coin-kl-coat # field-extension
 12 @36 studio.actors_in_yard: [taylor-hebert-kl-122ac, jarvis-coin-kl-courier] → [taylor-hebert-kl-122ac]
 13 @37 studio.actors_in_yard: [taylor-hebert-kl-122ac] → []
-14 @39 studio.active_location: oc-cooper-yard-eel-alley → chapter-close-stitch-house-lane-exit
+14 @39 studio.active_location: oc-cooper-yard-eel-alley → oc-stitch-house-lane
 
 # source: jarvis-coin-kl-courier
 facet: state-updates
@@ -66,6 +66,20 @@ slice: actor:jarvis-coin-kl-courier.*
 ---
 
 # rubric-carve-out — none; baseline V2 rubric § actor-state applies.
+#
+# Field-extensions (per §"Field-extension protocol" of rubric-state-updates.md):
+#   - actor:jarvis-coin-kl-courier.stats.active_deliveries (new) — integer counter tracking live
+#       delivery assignments in-progress; operational load indicator; not a standard actor-state
+#       field on jarvis-coin-kl-courier's state.md baseline; field-extension justified as a
+#       tracked-state-aspect (irreversible increment at each accept-delivery event; persistence
+#       required for downstream chapter continuity); NOT perception/mood/register.
+#   - actor:jarvis-coin-kl-courier.stats.exposure_risk (new) — categorical risk tier tracking
+#       operational exposure level for the courier once he physically carries Taylor's intelligence;
+#       field-extension justified as a tracked-state-aspect (latent → operational flip is an
+#       irreversible canonical state change that chapter handoff_out must propagate); NOT perception/
+#       mood/register.
+#   Both field-extensions are propagated by chapter handoff_out (memory.md chapters[b01c04].
+#   handoff_out.character_state / open_threads) per the standard field-extension protocol.
 
 15 @5 actor:jarvis-coin-kl-courier.location: lower-city-in-transit -> cooper-yard-eel-alley-lane-mouth
 16 @9 actor:jarvis-coin-kl-courier.stats.active_deliveries: 0 -> 1
