@@ -41,14 +41,17 @@ The Phase 1.5 tournament dispatcher reads this file when authoring the per-scene
 >
 > ### PET PEEVES (active negatives — sentences exhibiting these get marked down; name specific sentences)
 >
-> 1. **Theme-as-statement.** The prose announces the chapter's moral significance rather than letting events earn it.
-> 2. **Heavy-handed metaphor that announces itself.** Figurative language that requires the reader to register a metaphor-as-craft moment.
-> 3. **Symbolic relationships.** A person or object exists in the prose to *mean* something rather than to *be* something.
-> 4. **Setting-dressing-as-meaning.** Atmosphere that asks to be read as significance.
-> 5. **Compound-noun saturation.** Hyphenated nominalizations recycling 3-4 roots across many sentences. Note: a few graph-resident compounds are unavoidable; the issue is *aggregate density*, not zero count.
-> 6. **Metronome tic-regularity.** "I did X. I did Y. I did not Z." or "X was X. Y was Y." or "which was A, which was B" cadence repetitions that lose the person inside the rhythm.
-> 7. **Repetition-as-cadence when verbs run out.** "Closed the X entry, closed the Y entry, closed the Z entry" used to fake meaningful closing.
-> 8. **Gestured-at recognition.** A moral or perceptual shift the prose names rather than dramatizes.
+> Severity notation: `[blocker]` = scene-disqualifying when present at all; `[walkout]` = single fire enough to drop variant's rank; `[strong]` = each fire moves rank down one slot in close calls; `[soft]` = noted, weighted only on repeat.
+>
+> 1. **Theme-as-statement.** `[strong]` The prose announces the chapter's moral significance rather than letting events earn it.
+> 2. **Heavy-handed metaphor that announces itself.** `[strong]` Figurative language that requires the reader to register a metaphor-as-craft moment.
+> 3. **Symbolic relationships.** `[strong]` A person or object exists in the prose to *mean* something rather than to *be* something. Includes the special case: **a central human figure rendered only as a function-token** (e.g. "the junction-signature," "the connector-type") with no concrete-body grounding anywhere in the scene. The b01-c02 2026-05-27 cherry-pick cold-read named this exact failure: *"For a chapter that turns on a moral act against a person, that person has to exist as a person at some point, and she doesn't."*
+> 4. **Setting-dressing-as-meaning.** `[soft → strong on repeat]` Atmosphere that asks to be read as significance. Recurrence across chapters escalates severity (b01c01 + b01c02 both fired this; second occurrence is strong).
+> 5. **Compound-noun saturation.** `[strong]` Hyphenated nominalizations recycling 3-4 roots across many sentences. Note: a few graph-resident compounds are unavoidable; the issue is *aggregate density*, not zero count. Covered upstream by PROP-0007 (`/and-write` Phase 6 AP-SCAN) for bone-content compounds; still scored at tournament for stitcher-introduced cases.
+> 6. **Metronome tic-regularity.** `[strong]` "I did X. I did Y. I did not Z." or "X was X. Y was Y." or "which was A, which was B" cadence repetitions that lose the person inside the rhythm.
+> 7. **Repetition-as-cadence when verbs run out.** `[strong]` "Closed the X entry, closed the Y entry, closed the Z entry" used to fake meaningful closing.
+> 8. **Gestured-at recognition.** `[strong]` A moral or perceptual shift the prose names rather than dramatizes.
+> 9. **Protagonist-arc cost not legible.** `[walkout]` The scene gestures at cost ("the cost," "the bill," "what I paid") but a first-time reader cannot name what was costed against what. Distinct from #1 theme-as-statement: theme-as-statement *over-names* the meaning; cost-not-legible *under-grounds* the consequence. Both can fire on the same scene. Drawn from taste-judge card: "an arc that arrives at the bad place without making the cost legible has not done the work."
 >
 > ### REWARDS (active positives — sentences exhibiting these get marked up; name specific sentences)
 >
@@ -60,6 +63,7 @@ The Phase 1.5 tournament dispatcher reads this file when authoring the per-scene
 > 6. **Setup→payoff recognizable but not announced.** Setup pays off in action, not narration about the setup.
 > 7. **Restraint AND confidence at once.** The prose chooses what to say with discipline and chooses without hedging.
 > 8. **Bone-faithfulness.** The prose stays inside the scene's actual events; no invented body / dialogue / cognitive / spatial detail.
+> 9. **Reader-orientation (URI-RUBRIC-RW9, 2026-05-27).** The scene introduces or grounds the chapter's central body / event / stake in a way a first-time reader could name. Specifically: at minimum one concrete-noun anchor (a name, a face, a posture, a place-specific) for any person who is the moral subject of the scene; at minimum one named consequence-anchor (what changes if the action goes one way vs. the other) when stakes are in play. **Calibration:** this reward is the counter-positive to PEEVE #3 (symbolic relationships) and PEEVE #9 (cost-not-legible). A scene scoring high on RW9 will pass the Phase 9 cold-read's EVENTS + JEOPARDY questions; a scene scoring low on RW9 produces the "I struggled to name events" / "stakes posture without located stakes" cold-read failure pattern observed across the three b01-c02 stitches.
 >
 > ## Step 3 — Ranking
 >

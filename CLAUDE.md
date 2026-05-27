@@ -129,7 +129,9 @@ All file formats are defined in `schemas/`.
 | Stitcher render-log | `schemas/stitch-render-log.schema.md` |
 | Parking-lot (cross-chunk watch items) | `schemas/parking-lot.schema.md` |
 | Admin process-change proposal | `schemas/admin-proposal.schema.md` |
+| Tournament scorecard (per-scene cherry-pick scoring) | `schemas/tournament-scorecard.schema.md` |
 | Substance framework | `design/substance/{README,questionnaire,delta-targets,rerun-protocol,staleness-cascade,run-book,plan}.md` |
+| Tournament tuning framework | `design/tournament-tuning.md` |
 
 Legacy schemas preserved for reference: `episode-plan.schema.md`, `show-file.format.md` (pre-substance; no longer authored).
 
