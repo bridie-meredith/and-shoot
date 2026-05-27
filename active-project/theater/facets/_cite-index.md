@@ -2,16 +2,16 @@
 generated: 2026-05-27
 source: active-project/theater/proto-lines/b01-c04.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 71 facet entries; 25/39 protolines decorated (64.1%)
+totals: 69 facet entries; 23/39 protolines decorated (59.0%)   # post-cycle-3: narrator:12 deleted; @23 now bare
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
-| 0 (bare)   | 14 |
+| 0 (bare)   | 15 |
 | 1          | 8 |
-| 2          | 4 |
-| 3          | 7 |
+| 2          | 5 |
+| 3          | 6 |
 | 4          | 3 |
 | 5          | 1 |
 | 7          | 1 |
@@ -20,14 +20,14 @@ totals: 71 facet entries; 25/39 protolines decorated (64.1%)
 ## Per-facet entries
 
 ### loc-state (6 entries)
-  loc-state:1 @1 back=Y co=[sensory:1, state:1]
+  loc-state:1 @1 back=Y co=[state:1]
   loc-state:2 @4 back=Y
   loc-state:3 @13 back=Y co=[sensory:2, state:2]
   loc-state:4 @25 back=Y co=[sensory:3, state:5]
   loc-state:5 @29 back=Y co=[state:4, state:5, state:8, state:9]
   loc-state:6 @39 back=Y co=[feel:2, state:14]
 
-### narrator (11 entries)
+### narrator (10 entries)
   narrator:1 @6 back=Y
   narrator:3 @9 back=Y co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, state:1, state:2, vibes:2, vibes:3]
   narrator:4 @18 back=Y co=[state:4, vibes:6]
@@ -37,16 +37,16 @@ totals: 71 facet entries; 25/39 protolines decorated (64.1%)
   narrator:9 @38 back=Y co=[mem:4]
   narrator:10 @7 back=Y co=[feel:1, taylor-hebert-kl-122ac:4, vibes:1]
   narrator:11 @15 back=Y co=[state:3, vibes:5]
-  narrator:12 @23 back=Y
+  # DELETED narrator:12 @23 — cycle-3 AP2 persistent-narration (cape-fic + dark-fantasy 2/3 convergence)
   narrator:13 @27 back=Y co=[state:6, state:7, vibes:13]
 
-### sensory (3 entries)
-  sensory:1 @1 back=Y co=[loc-state:1, state:1]
+### sensory (2 entries)
+  # DELETED sensory:1 @1 — cycle-3 2/3 convergence: charged-subject disambiguation fail + unanchored old-state. Removed from proto-lines @1 and co-lists.
   sensory:2 @13 back=Y co=[loc-state:3, state:2]
   sensory:3 @25 back=Y co=[loc-state:4, state:5]
 
 ### state (29 entries)
-  state:1 @1 back=Y co=[loc-state:1, sensory:1]
+  state:1 @1 back=Y co=[loc-state:1]
   state:2 @13 back=Y co=[loc-state:3, sensory:2]
   state:3 @15 back=Y co=[narrator:11, vibes:5]
   state:4 @22 back=Y co=[mem:2, narrator:6, state:5, vibes:9, vibes:10, vibes:11, vibes:12]
@@ -123,7 +123,7 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 
 - loc-state:2 @4  `taylor-hebert-kl-122ac takes the shed-wall`
 - narrator:1 @6  `the insect-feed returns jarvis-coin-kl-courier`
-- narrator:12 @23  `taylor-hebert-kl-122ac holds the feet`
+  # narrator:12 @23 DELETED cycle-3 (AP2 persistent-narration; 2/3 convergence cape-fic + dark-fantasy)
 - state:6 @26  `taylor-hebert-kl-122ac enters Roper's Court`
 - state:13 @37  `taylor-hebert-kl-122ac runs the ward-feed`
 - vibes:8 @17  `the penny-a-barrel carter parks the middens cart`
@@ -134,4 +134,4 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 ## Bare protolines (no citations accrued)
 _Round-2 add candidates if the rubric licenses a fire here._
 
-@2, @3, @8, @10, @12, @14, @16, @19, @20, @21, @24, @30, @33, @34
+@2, @3, @8, @10, @12, @14, @16, @19, @20, @21, @23, @24, @30, @33, @34

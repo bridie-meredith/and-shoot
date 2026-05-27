@@ -9,7 +9,7 @@ total-entries: 2
 sparsity: 5.1%
 doubled-register: earth-bet-displacement-x2 / westerosi-monument-clamp-x0 (single-register; see body preamble)
 r2-deletes: mem:1 @4, mem:3 @33
-r2-adds: mem:4 @38
+r2-adds: mem:4 @38 [cycle-3 description rewrite 2026-05-27: scaffold changed from feed/detection-verb/anchor-the-record-refused to continuous-operation register per DEC-0035; anchor @38 and target-reference unchanged]
 chapter-dramatic-shape: rising
 ---
 
@@ -42,4 +42,4 @@ resolves:
 
 2 @22 the feed returns the body she will not write down -> (earth-bet: un-priced-anchor / casualty-not-in-ledger pattern — the operational reach registers the cost-bearer the deliverable refuses; the omission is the architecture's specific shape) [SIGNAL margit-referral: monument-un-priced-anchor-by-omission queueable; gloss structurally clear; non-blocking under URI-FACETS-CYCLE-1]
 
-4 @38 the feed lights the anchor the report did not name -> (earth-bet: un-priced-anchor / architecture-continuous-omission pattern — the chapter-close re-registration of the cost-bearer whose exclusion is the architecture's running shape; intensification from mem:2's first-recognition point-event to continuous-operation thesis-enactment) [SIGNAL margit-referral: monument-un-priced-anchor-by-omission-continuous queueable; gloss structurally clear; AP11 carve-out invoked — distinct cue mode from mem:2 per rubric "next fire on the same monument must register a change"; non-blocking under URI-FACETS-CYCLE-1]
+4 @38 the reading-and-the-not-reporting are running the same operation now; the architecture cycles through the body the report has filed elsewhere -> (earth-bet: un-priced-anchor / architecture-continuous-omission pattern — the chapter-close re-registration of the cost-bearer whose exclusion is the architecture's running shape; intensification from mem:2's first-recognition point-event to continuous-operation thesis-enactment) [SIGNAL margit-referral: monument-un-priced-anchor-by-omission-continuous queueable; gloss structurally clear; AP11 carve-out invoked — distinct cue mode from mem:2 per rubric "next fire on the same monument must register a change"; non-blocking under URI-FACETS-CYCLE-1] [cycle-3 description REWRITE 2026-05-27: scaffold changed from feed/detection-verb/anchor-the-record-refused to continuous-operation paired-process register; no citation or anchor change]

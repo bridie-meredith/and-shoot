@@ -1031,3 +1031,26 @@ dispatch: /and-facets b01-c04 Phase 5b cycle-3 NI interest-narrator facet — 3 
 target: active-project/theater/facets/interest-narrator-b01-c04.md
 audit-report: Phase 5b cycle-3 audience verdicts (cape-fic + dark-fantasy + worm-canon) for NI facet
 findings-queued: 3
+
+## SESSION-START — 2026-05-27T01:00:00Z — facets-b01c04-phase5b-cycle3-memory
+dispatch: /and-facets b01-c04 Phase 5b cycle-3 memory facet — mem:4 @38 description REWRITE (scaffold-recurrence fault, 2/3 dark-fantasy convergence cycle-1+2); continuous-operation register required; preamble r2-adds note update
+target: active-project/theater/facets/memory-b01-c04.md
+audit-report: /and-facets b01-c04 Phase 5b cycle-3 dispatch (DEC-0035)
+findings-queued: 1
+
+## mem:4-scaffold-recurrence — RESOLVED — 2026-05-27T01:05:00Z
+fault: mem:4 @38 description "the feed lights the anchor the report did not name" repeats mem:2's scaffold (feed/detection-verb/anchor-the-record-refused) at synonym-substitution level; reader cannot distinguish intensification from repetition; AP11 continuous-operation carve-out not enacted in description, only claimed in target-reference gloss
+scope: line
+change: mem:4 description rewritten from "the feed lights the anchor the report did not name" to "the reading-and-the-not-reporting are running the same operation now; the architecture cycles through the body the report has filed elsewhere"; target-reference parenthetical, anchor @38, citation count, and AP11 carve-out gloss unchanged; preamble r2-adds line updated with cycle-3 rewrite annotation
+criteria met: yes — (a) scaffold differs from mem:2 (no feed/detection-verb/anchor structure; subject is the paired-operation, verb is running/cycles, object is the routing-destination); (b) continuous-operation register enacted in description body ("running the same operation now", "cycles through"); (c) target-reference resolves to un-priced-anchor monument family unchanged
+
+## SESSION-END — 2026-05-27T01:05:00Z — facets-b01c04-phase5b-cycle3-memory
+findings-applied: 1
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-27T10:00:00Z — facets-b01c04-phase5b-cycle3-vibes
+dispatch: /and-facets b01-c04 Phase 5b cycle-3 vibes facet — DEC-0035 convergence callouts: 4 AP8 token rewrites + vibes:9 DELETE + vibes:3 Jarvis token removal + cite-index regen
+target: active-project/theater/facets/vibes-b01-c04.md
+audit-report: /and-facets b01-c04 Phase 5b cycle-3 convergence report (DEC-0035)
+findings-queued: 6 (4 token rewrites + 1 DELETE + 1 token-list edit)

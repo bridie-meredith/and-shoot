@@ -5,7 +5,7 @@ author: taylor-hebert-kl-122ac
 pov: taylor-hebert-kl-122ac
 total-bones: 39
 fires: 10   # post-fault-006 narrator:14 @33 deletion; post-cycle-3 narrator:12 @23 deletion
-density: 28.2%
+density: 25.6%   # post-cycle-3 (10 fires / 39 bones)
 round: R2.1
 ---
 
@@ -37,7 +37,7 @@ entry-count breakdown (post-R2, post-fault-006):
   total: 6 + 4 = 10 entries. Arithmetic closes post-cycle-3.
 
 rationale:
-  The 25% ceiling (≤9.75 entries) cannot be honored without breaching CROSS-FACET CO-CITATION on at least 1 actor:taylor.* state-update entry. The 6 state-mandatory fires are non-negotiable per rubric-state-updates. The 5 non-mandatory fires are scene-map-grounded (peak-bones witnessing + chapter-close trio + acceptance pile-up at @7).
+  The 25% ceiling (≤9.75 entries) cannot be honored without breaching CROSS-FACET CO-CITATION on at least 1 actor:taylor.* state-update entry. The 6 state-mandatory fires are non-negotiable per rubric-state-updates. The 4 non-mandatory fires are scene-map-grounded (peak-bones witnessing + chapter-close trio + acceptance pile-up at @7). Post-cycle-3 density 25.6% — near-ceiling; carve-out preamble continues to hold for the 0.6pp overshoot attributable to mandatory cross-facet co-citation.
 
   This chapter prioritizes cross-facet co-citation integrity over per-facet density ceiling. Per-season NI density target (15-25%) is preserved across c01-c03; c04 single-chapter overshoot is structurally driven by the high actor:taylor state-density of the acceptance-and-routing operation.
 

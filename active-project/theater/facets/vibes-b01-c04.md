@@ -20,13 +20,13 @@ author: showrunner
 
 # ── E1: acceptance delivered and acknowledged ─────────────────────────────────
 
-1 @7 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [acceptance-is-the-licensed-exception-believed-as-modification, destination-named-for-what-she-already-reads, ledger-entry-as-routing-not-refusal] | licensed-by: proto:7, proto:9
+1 @7 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [licensed-exception-as-modification-not-rule-violation, destination-named-for-what-she-already-reads, ledger-entry-as-routing-not-refusal] | licensed-by: proto:7, proto:9
 
 2 @9 actor:taylor-hebert-kl-122ac ++ rising entrapment: [acceptance-irreversible-before-the-words-are-complete, modification-of-terms-not-modification-of-the-yes, first-door-closed-by-her-own-delivery] | licensed-by: proto:7, proto:9, proto:11
 
 3 @9 actor:jarvis-coin-kl-courier ++ rising entrapment: [structural-routing-vector-confirmed-not-latent, appointment-schedule-now-installed-in-his-operational-week, arrangement-as-functional-architecture-not-proposal] | licensed-by: proto:9, proto:11
 
-4 @11 loc:oc-cooper-yard-eel-alley + recurring-exchange-node: [fixed-coordinate-in-two-operational-weeks, first-bell-three-day-interval-installed, tallow-damp-as-pre-arrival-confirmation-marker, single-exit-geometry-as-structural-complicity] | licensed-by: proto:7, proto:9, proto:11, world-build:oc-cooper-yard-eel-alley-project-notes
+4 @11 loc:oc-cooper-yard-eel-alley + recurring-exchange-node: [fixed-coordinate-in-two-operational-weeks, first-bell-three-day-interval-as-recurring-calendar-fixture, tallow-damp-as-pre-arrival-confirmation-marker, single-exit-geometry-as-structural-complicity] | licensed-by: proto:7, proto:9, proto:11, world-build:oc-cooper-yard-eel-alley-project-notes
 
 # ── E2: ward expansion — Oswyn as active unknowing node ──────────────────────
 
@@ -45,7 +45,7 @@ author: showrunner
 
 # ── E3: Wren held outside the report ──────────────────────────────────────────
 
-9 @22 actor:wren-stitch-maker-flea-bottom-ward ++ rising entrapment: [confirmed-in-the-feed-and-confirmed-outside-the-report, anchor-discipline-not-equivalent-to-anchor-safety, feed-touching-the-stitch-house-without-logging] | licensed-by: proto:22, proto:38
+# DELETED vibes:9 @22 — cycle-3 cape-fic callout (DEC-0035 2026-05-27): Wren as co-target with rising-entrapment pre-loads importance signal that should be enacted not asserted; redundant against vibes:2 + vibes:5 already firing rising-entrapment on Taylor
 
 10 @22 actor:wren-stitch-maker-flea-bottom-ward ++ mutual-silence: [ledger-exclusion-as-form-of-action, not-noting-as-choice-with-information, un-examined-distinction-as-the-operative-distinction] | licensed-by: proto:22, proto:24, proto:38
 
@@ -63,10 +63,10 @@ author: showrunner
 
 13 @27 loc:oc-ropers-court + fourth-ward-operational-map: [linear-geometry-for-cleanest-feed-saturation, early-morning-grey-as-coverage-discipline-time, the-largest-footprint-run-in-king-s-landing, rope-walk-tributaries-as-feed-geometry-advantage] | licensed-by: proto:25, proto:26, proto:27, proto:28, world-build:oc-ropers-court-project-notes
 
-14 @28 actor:taylor-hebert-kl-122ac ++ cost-signature-range-bound: [four-ward-simultaneous-feed-at-chapter-close, expanded-saturation-running-as-background-infrastructure, footprint-growth-held-in-accounting-as-quantitative-only] | licensed-by: proto:28, proto:37
+14 @28 actor:taylor-hebert-kl-122ac ++ cost-signature-range-bound: [four-ward-simultaneous-feed-at-chapter-close, expanded-saturation-running-as-background-infrastructure, quantitative-only-accounting-of-footprint-growth] | licensed-by: proto:28, proto:37
 
 # ── E5: first report handed up — intelligence layer operational ───────────────
 
-15 @35 episode + flea-bottom-intelligence-layer-operational: [otto-s-channel-receiving-ward-pattern-via-jarvis, street-layer-to-court-consolidation-conduit-now-functional, first-upward-routing-as-the-architecture-running-whole] | licensed-by: proto:31, proto:32, proto:33, proto:34, proto:35
+15 @35 episode + flea-bottom-intelligence-layer-operational: [otto-s-channel-receiving-ward-pattern-via-jarvis, functional-street-layer-to-court-consolidation-conduit, first-upward-routing-as-the-architecture-running-whole] | licensed-by: proto:31, proto:32, proto:33, proto:34, proto:35
 
 16 @35 actor:jarvis-coin-kl-courier ++ social-tether-antag-vector: [confirmed-structural-vector-not-latent-exposure, three-day-appointment-as-delivery-node, route-map-active-since-acceptance-delivery] | licensed-by: proto:29, proto:32, proto:35, proto:36
