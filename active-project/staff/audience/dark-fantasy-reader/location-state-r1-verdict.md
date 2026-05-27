@@ -1,24 +1,49 @@
 ---
 reviewer: dark-fantasy-reader
 facet: location-state
-episode: b01-c02
+episode: b01-c04
 phase: 5b-adversarial
-date: 2026-05-26
-verdict: ACCEPT
+date: 2026-05-27
+exemplar-loaded: cards/persona-exemplars/dark-fantasy-reader.md
+verdict: accept
 ---
 
-## Entry-level callouts
+## Reasoning
 
-[location-state:11 @44] @loc-state:11 — The auditor's fault-009 is a rubric-licensing mechanical catch. My reading attack is narrower: does the shadow holding through the ledger-close sequence earn its persistence, or is it the lane doing Taylor a favor by being atmospheric? The facet's note reads "the drain angle stays dark as the ledger closes entry by entry" — that is the chapter's terrain carrying the closure without being asked to. The world went dark by the physics of evening; Taylor closes the ledger inside that darkness. The setting is not arranged around her; it is running its own time. The continuity-carry rhythm-shape failure is real but fixer-domain. The reader concern is resolved: the entry earns its place.
+Six entries. Chapter runs 39 bones across three scenes, three location-and-moment transitions. The facet is thin by design — only six fires, each at a new location or a genuine state-change. I went looking for the world arranging itself around the protagonist's needs. Didn't find it.
 
-[location-state:1 / :2 / :6 — drain-angle cycling] @loc-state:1 @loc-state:2 @loc-state:6 — Drain angle left, alley-mouth taken, drain angle retaken, drain angle retaken again at scene-C. The question is whether this reads as a character moving through a place or a checklist executing. It reads as territory: the drain angle is described in entry 1 as the farthest south point — from here every approach along the forty paces of lane is visible before it arrives. That is the geography establishing itself as a strategic fact. Every return to the angle is Taylor returning to what the place is, not to a marked waypoint. The world has its own geometry; Taylor is using it rather than inscribing it.
+The adversarial read came down to one question I apply to every location-state facet: is this environment a place that was there before the characters, or is it a stage they're standing on?
 
-[location-state:8 @29] @loc-state:8 — The coverage map has a hard outer edge here where the feed attenuates and the ward-traffic is no longer readable. The world announces a boundary that exists independent of Taylor's needs. Not a power-limit flagged for the reader's benefit — a fact about the territory. This is exactly the hostile-terrain detail that keeps the setting from being set-dressing.
+Tallow-damp arrives before sight (@1). The sensory note is "the tallow-damp off the lane-caulking reaches the shed-wall before the yard is visible." The smell precedes the look. That is the world running on its own physics — the lane-caulking doesn't care whether Taylor is watching; the damp moves by diffusion. The world is ahead of the character. Good.
+
+The middens junction's discard-air sits heaviest at the convergence by waste-logic (@3). Three alleys of organic accumulation produce a draw; the air follows thermodynamics, not narrative convenience. The carter is still working. The world is running.
+
+Roper's Court is empty because early-morning grey empties it (@4) — not because the scene requires an empty space for Taylor to work in. The grey makes it sight-clear. That's a tactical fact produced by light physics, not a gift to the protagonist.
+
+The only entry I pressed on was loc-state:5 @29. Jarvis enters the lane-mouth; the sensory note measures his exposure — "a half-yard of open air between him and the shed-wall." That's read from Taylor's threat-assessment position, which means the world's geometry is being processed through the protagonist's operational lens. I asked whether that makes the entry protagonist-serving rather than environment-serving. Answer: no. The half-yard is a real distance that exists independent of Taylor's interest in it. The shed-wall is structural. The distance between an entering actor and available cover is a fact about the location, not a dramatic gift. I'll accept this — grudgingly, because the reading-position is Taylor's, but the fact is the location's.
+
+The exit beat at loc-state:6 @39 earns its place. The lane-mouth north is the last threshold before the Hook alley. That is the world announcing its own boundary: past here, the geography opens differently. The character passes through a real edge.
+
+No sensory sweeps. No mood-painting on stillness. No persistence-as-state. No inherited re-naming. The strip test passes on all six entries — each carries new information the movement requires.
+
+---
+
+## Entry-level callouts (revise / fail only)
+
+None.
+
+Every entry passed the necessity test (movement or first-beat-in-new-location), the interestingness test (one named focus-element, not ambient list), and the frugality test (no re-citation of inherited state). No rubric violations found. No entries exist solely as atmosphere paper.
+
+---
 
 ## Convergence-trace
 
-loc-state:11 — fault-009 (auditor HARD, rhythm-shape licensing). My reading finds the entry substantively earned; the mechanical fault is for fixer, not a reader-experience problem.
+The auditor's Phase 5 findings (fault-001 through fault-008) cover dialogue ID collision, forward citations in state-updates, NI density overshoot, orphaned narrator:14, vibes:7 inert entry, and memory / NI carve-out format failures. None of these findings touch the location-state facet. The auditor recorded no loc-state findings, no flag, no fault.
 
-## Verdict: ACCEPT
+My adversarial read found no seam the mechanical scan missed on this facet. The loc-state layer does not carry weight the other facet faults create — the tallow-damp and the grey and the junction-air are doing their own work; they are not implicated in the state-update forward-citations or the NI density problem.
 
-The location-state facet carries the lane as a real physical entity with its own geometry, light, and edges. The world does not arrange itself around Taylor's surveillance needs — it provides a position (drain angle), imposes a boundary (junction-lane edge), and goes dark by evening physics. No entries exist solely as atmosphere-paper. The prior cycle-1 revise complaint (an @26 drain-water continuity-carry entry) was resolved in the 47-bone revise. The revised facet is clean on the necessity axis. The rhythm-shape licensing fault (fault-009) is a mechanical matter for fixer; it does not register as a reader-experience problem.
+No convergence-trace items.
+
+---
+
+VERDICT: accept
