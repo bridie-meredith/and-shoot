@@ -2,7 +2,7 @@
 
 episode: b01c04
 last_updated: 2026-05-27
-action: location-state R1 authoring — /and-facets b01-c04 Phase 1 (merged; sensory R1 prior)
+action: state-updates-env R1 authoring — /and-facets b01-c04 Phase 1 (merged; location-state + sensory R1 prior)
 
 ## Current set
 location: oc-stitch-house-lane (Taylor exits @39; chapter close; walk-back through Hook)
@@ -33,5 +33,19 @@ ambient_conditions:
   loc-state:6 @39 — oc-stitch-house-lane | morning | north-end lane-mouth; last threshold before Hook opens out
   Cull: 2 deleted (@17 carter-parks — no subsequent actor-movement turns on it; @36 Jarvis-exits — exit legible in inherited env)
 
+## Coverage state (state-updates-env; new field: studio.coverage_active_range)
+  coverage_active_range: four-ward-complete
+    - oc-hook-precinct (pre-existing; c01–c03 baseline)
+    - oc-pig-tallow-lane (added state:3 @15; day-1 first-ward extension)
+    - oc-stitch-house-lane (added state:4 @22; day-1 second-ward extension)
+    - oc-ropers-court (added state:7 @27; day-2 completion; four-ward-complete at this entry)
+
+## Prop state (state-updates-env; chapter-close)
+  - prop:oc-report-sheet: holder = jarvis-coin-kl-coat (pocketed state:11 @32; exited scene with Jarvis @36)
+
+## Arrangement state (state-updates-env)
+  proposal_state: operational (acceptance delivered @9; first report delivered @31–@32; routing confirmed)
+  routing_schedule: first-bell, three-day interval, oc-cooper-yard-eel-alley
+
 ## Last recorded change
-  @39 — Taylor exits stitch-house lane; chapter close (location-state + sensory both locked)
+  @39 — Taylor exits stitch-house lane; chapter close (location-state + sensory + state-updates-env all locked)

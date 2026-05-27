@@ -3,6 +3,19 @@
 
 ---
 
+## 2026-05-27 — b01c04 state-updates-env authored at /and-facets Phase 1 R1
+
+Chapter b01c04: four-ward coverage expansion across 2 days. 39 bones, 3 scenes.
+14 env entries authored (above rubric 8-18% band; density justified by multi-ward / multi-day structure; rubric-carve-out preamble in state-updates-env.md).
+Field-extension: studio.coverage_active_range (new field; 3 fires: @15 +pig-tallow, @22 +stitch-house, @27 four-ward-complete).
+Prop-extension: prop:oc-report-sheet (new prop; no warehouse card; oc- slug; holder chain: taylor @31 → in-transit → jarvis-coat @32; exits scene @36).
+Coverage_active_range baseline at chapter close: four-ward-complete (hook + pig-tallow + stitch-house + ropers-court). Persists to c05+ as operational footprint canonical baseline.
+Scene-A: time_of_day reset @1 (third-bell-noon → first-bell-morning); actors_in_yard chain not tracked (within-chapter ephemeral; handoff session tracked at scene-C instead).
+Scene-B: location @13, coverage @15 + @22; middens-cart entry culled (strip-test: no downstream canonical relevance).
+Scene-C: day-2 time-skip @25; location chain @26/@29; coverage completion @27; actors_in_yard [taylor, jarvis] @29; report-sheet chain @31-@32; peak-bone actors_in_yard @36; yard-empty @37; chapter-close location @39.
+
+---
+
 ## 2026-05-27 — b01c04 location-state authored at /and-facets Phase 1 R1
 
 Chapter b01c04: 39 bones, 3 scenes, 4 distinct locations.

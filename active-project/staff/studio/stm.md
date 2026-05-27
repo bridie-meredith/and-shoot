@@ -1,5 +1,14 @@
 # studio STM
 
+## 2026-05-27 — /and-facets b01-c04 Phase 1 R1 state-updates-env authoring
+
+Authored state-updates-env.md (14 entries, 39 bones; env + prop slice only; actor state separate).
+New field: studio.coverage_active_range (field-extension; tracks four-ward insect-feed footprint as env-observable; 3 fires at @15/@22/@27).
+New prop: prop:oc-report-sheet (field-extension; holder chain @31→@32; pocketed by Jarvis; exits scene @36).
+Chapter-close state: four-ward coverage active; oc-report-sheet in Jarvis's coat; yard empty; Taylor exiting stitch-house lane.
+Density 14/39 = 36%; above rubric band but justified by multi-ward / multi-day structure; rubric-carve-out preamble filed.
+Culled at authoring: 1 entry (middens-cart @17 — strip-test fail; no downstream canonical relevance).
+
 ## 2026-05-27 — /and-facets b01-c04 Phase 1 R1 location-state authoring
 
 Authored location-state-b01-c04.md (6 entries after cull, 39 bones).
