@@ -1,0 +1,139 @@
+# Cite-Index — b01-c04
+generated: 2026-05-27
+source: active-project/theater/proto-lines/b01-c04.md + active-project/theater/facets/
+scope: 9 facet files + 1 proto-lines file
+totals: 71 facet entries; 27/39 protolines decorated (69.2%)
+
+## Density distribution (protolines by citation count)
+
+| cites/line | count |
+|------------|-------|
+| 0 (bare)   | 12 |
+| 1          | 10 |
+| 2          | 5 |
+| 3          | 7 |
+| 4          | 2 |
+| 5          | 1 |
+| 7          | 1 |
+| 8          | 1 |
+
+## Per-facet entries
+
+### loc-state (6 entries)
+  loc-state:1 @1 back=Y co=[sensory:1, state:1]
+  loc-state:2 @4 back=Y co=[mem:1]
+  loc-state:3 @13 back=Y co=[sensory:2, state:2]
+  loc-state:4 @25 back=Y co=[sensory:3, state:5]
+  loc-state:5 @29 back=Y co=[state:4, state:5, state:8, state:9]
+  loc-state:6 @39 back=Y co=[feel:2, state:14]
+
+### narrator (9 entries)
+  narrator:1 @6 back=Y
+  narrator:2 @8 back=Y
+  narrator:3 @9 back=Y co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, state:1, state:2, vibes:2, vibes:3]
+  narrator:4 @18 back=Y co=[state:4, vibes:6, vibes:7]
+  narrator:5 @19 back=Y
+  narrator:6 @22 back=Y co=[mem:2, state:4, state:5, vibes:9, vibes:10, vibes:11, vibes:12]
+  narrator:7 @31 back=Y co=[state:7, state:10]
+  narrator:8 @36 back=Y co=[state:7, state:8, state:12]
+  narrator:9 @38 back=Y
+
+### sensory (3 entries)
+  sensory:1 @1 back=Y co=[loc-state:1, state:1]
+  sensory:2 @13 back=Y co=[loc-state:3, state:2]
+  sensory:3 @25 back=Y co=[loc-state:4, state:5]
+
+### state (29 entries)
+  state:1 @1 back=Y co=[loc-state:1, sensory:1]
+  state:2 @13 back=Y co=[loc-state:3, sensory:2]
+  state:3 @15 back=Y co=[vibes:5]
+  state:4 @22 back=Y co=[mem:2, narrator:6, state:5, vibes:9, vibes:10, vibes:11, vibes:12]
+  state:5 @25 back=Y co=[loc-state:4, sensory:3]
+  state:6 @26 back=Y
+  state:7 @27 back=Y co=[state:6, vibes:13]
+  state:8 @29 back=Y co=[loc-state:5, state:4, state:5, state:9]
+  state:9 @29 back=Y co=[loc-state:5, state:4, state:5, state:8]
+  state:10 @31 back=Y co=[narrator:7, state:7]
+  state:11 @32 back=Y co=[state:6]
+  state:12 @36 back=Y co=[narrator:8, state:7, state:8]
+  state:13 @37 back=Y
+  state:14 @39 back=Y co=[feel:2, loc-state:6]
+  state:15 @5 back=N co=[state:1]
+  state:16 @9 back=N co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2, vibes:2, vibes:3]
+  state:17 @11 back=N co=[state:3, vibes:4]
+  state:18 @29 back=N co=[loc-state:5, state:4, state:5, state:8, state:9]
+  state:19 @29 back=N co=[loc-state:5, state:4, state:5, state:8, state:9]
+  state:20 @32 back=N co=[state:6, state:11]
+  state:21 @36 back=N co=[narrator:8, state:7, state:8, state:12]
+  state:22 @36 back=N co=[narrator:8, state:7, state:8, state:12]
+  state:23 @9 back=N co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2, vibes:2, vibes:3]
+  state:24 @9 back=N co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2, vibes:2, vibes:3]
+  state:25 @15 back=N co=[state:3, vibes:5]
+  state:26 @18 back=N co=[narrator:4, state:4, vibes:6, vibes:7]
+  state:27 @22 back=N co=[mem:2, narrator:6, state:4, state:5, vibes:9, vibes:10, vibes:11, vibes:12]
+  state:28 @27 back=N co=[state:6, state:7, vibes:13]
+  state:29 @31 back=N co=[narrator:7, state:7, state:10]
+
+### mem (3 entries)
+  mem:1 @4 back=Y co=[loc-state:2]
+  mem:2 @22 back=Y co=[narrator:6, state:4, state:5, vibes:9, vibes:10, vibes:11, vibes:12]
+  mem:3 @33 back=Y
+
+### feel (2 entries)
+  feel:1 @7 back=Y co=[taylor-hebert-kl-122ac:1, vibes:1]
+  feel:2 @39 back=Y co=[loc-state:6, state:14]
+
+### meta (0 entries)
+_(no entries)_
+
+### vibes (16 entries)
+  vibes:1 @7 back=Y co=[feel:1, taylor-hebert-kl-122ac:1] lic-out=[proto:7, proto:9]
+  vibes:2 @9 back=Y co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2, vibes:3] lic-out=[proto:7, proto:9, proto:11]
+  vibes:3 @9 back=Y co=[jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2, vibes:2] lic-out=[proto:9, proto:11]
+  vibes:4 @11 back=Y co=[state:3] lic-out=[proto:7, proto:9, proto:11]
+  vibes:5 @15 back=Y co=[state:3] lic-out=[proto:15, proto:16, proto:18]
+  vibes:6 @18 back=Y co=[narrator:4, state:4, vibes:7] lic-out=[proto:18, proto:19]
+  vibes:7 @19 back=N co=[narrator:5] lic-out=[proto:18, proto:19, proto:20]
+  vibes:8 @17 back=Y lic-out=[proto:14, proto:17, proto:18]
+  vibes:9 @22 back=Y co=[mem:2, narrator:6, state:4, state:5, vibes:10, vibes:11, vibes:12] lic-out=[proto:22, proto:38]
+  vibes:10 @22 back=Y co=[mem:2, narrator:6, state:4, state:5, vibes:9, vibes:11, vibes:12] lic-out=[proto:22, proto:24, proto:38]
+  vibes:11 @22 back=Y co=[mem:2, narrator:6, state:4, state:5, vibes:9, vibes:10, vibes:12] lic-out=[proto:22, proto:38, proto:39]
+  vibes:12 @22 back=Y co=[mem:2, narrator:6, state:4, state:5, vibes:9, vibes:10, vibes:11] lic-out=[proto:22, proto:24, proto:38]
+  vibes:13 @27 back=Y co=[state:6, state:7] lic-out=[proto:25, proto:26, proto:27, proto:28]
+  vibes:14 @28 back=Y lic-out=[proto:28, proto:37]
+  vibes:15 @35 back=Y co=[vibes:16] lic-out=[proto:31, proto:32, proto:33, proto:34, proto:35]
+  vibes:16 @35 back=Y co=[vibes:15] lic-out=[proto:29, proto:32, proto:35, proto:36]
+
+### exposition (3 entries)
+  exposition:1 @0 back=N
+  exposition:2 @14 back=N
+  exposition:3 @26 back=N co=[state:6]
+
+## Pile-ups (>4 facets co-located on one protoline)
+
+- **@22** (8): mem:2, narrator:6, state:4, state:5, vibes:9, vibes:10, vibes:11, vibes:12
+    `the insect-feed returns wren-stitch-maker-flea-bottom-ward`
+- **@9** (7): jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9, narrator:3, state:1, state:2, vibes:2, vibes:3
+    `jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac`
+- **@29** (5): loc-state:5, state:4, state:5, state:8, state:9
+    `jarvis-coin-kl-courier enters the cooper's yard`
+
+## Lonely entries (no co-location, no inbound license)
+_Round-2 deletion candidates — but check the rubric before cutting._
+
+- narrator:1 @6  `the insect-feed returns jarvis-coin-kl-courier`
+- narrator:2 @8  `taylor-hebert-kl-122ac holds the feet`
+- narrator:5 @19  `taylor-hebert-kl-122ac maps the oswyn-mudway-flea-bottom-elder interval`
+- narrator:9 @38  `the insect-feed returns wren-stitch-maker-flea-bottom-ward`
+- state:6 @26  `taylor-hebert-kl-122ac enters Roper's Court`
+- state:13 @37  `taylor-hebert-kl-122ac runs the ward-feed`
+- mem:3 @33  `the report-sheet holds at ward-pattern observation`
+- vibes:8 @17  `the penny-a-barrel carter parks the middens cart`
+- vibes:14 @28  `taylor-hebert-kl-122ac runs the four-ward feed`
+- exposition:1 @0  ``
+- exposition:2 @14  `taylor-hebert-kl-122ac enters Pig Tallow Lane`
+
+## Bare protolines (no citations accrued)
+_Round-2 add candidates if the rubric licenses a fire here._
+
+@2, @3, @10, @12, @14, @16, @20, @21, @23, @24, @30, @34

@@ -6,7 +6,7 @@
 6 the insect-feed returns jarvis-coin-kl-courier
 7 taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [taylor-hebert-kl-122ac:1]
 8 taylor-hebert-kl-122ac holds the feet
-9 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:8, jarvis-coin-kl-courier:9]
+9 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:8] [jarvis-coin-kl-courier:9]
 10 the insect-feed holds the hook-range
 11 jarvis-coin-kl-courier exits the lane-mouth
 12 taylor-hebert-kl-122ac exits the cooper's yard
@@ -26,7 +26,7 @@
 26 taylor-hebert-kl-122ac enters Roper's Court [state:6]
 27 taylor-hebert-kl-122ac extends the insect-range [state:7]
 28 taylor-hebert-kl-122ac runs the four-ward feed
-29 jarvis-coin-kl-courier enters the cooper's yard [state:8, state:9]
+29 jarvis-coin-kl-courier enters the cooper's yard [state:8] [state:9]
 30 jarvis-coin-kl-courier displays the note
 31 taylor-hebert-kl-122ac delivers the report-sheet [state:10]
 32 jarvis-coin-kl-courier pockets the report-sheet [state:11]
