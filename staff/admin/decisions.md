@@ -678,3 +678,102 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0028 | 2026-05-27 | SLOW (user-proxy)
+
+question: Phase 5 review of c04 scene chunks: 4/5 reviewers ACCEPT; auditor lone FAIL with 2 HARD + 4 SIGNAL. Approve recommended action (override fault-001, fix fault-002 notes, surface SIGNALs 1-4 to /and-write, persist + advance + stop) or push back?
+
+context: |
+  fault-001 (POV violation): Auditor flagged all three c04 scene chunks as third-limited in violation
+  of cond-taylor-pov-behavior's "first-person throughout" requirement. Card text says "Flag any chapter
+  not marked interlude that is not in Taylor's first-person." Critical counter-evidence: c01/c02/c03
+  scene chunks in memory.md are all third-limited by established convention; rendered prose at
+  draft/b01-c01.md through b01-c03.md is first-person throughout. First-person transformation
+  happens at /and-write (named-subject SVO) → /and-stitch (first-person render). Three prior audits
+  did not flag this. The card's "for auditor use" clause is ambiguous — it does not specify whether
+  "is not in Taylor's first-person" refers to the planning-layer chunk or the rendered prose.
+
+  fault-002 (cl-antag-d03 math): Auditor flagged cl-antag-d03 "completed" claim in s01 notes as
+  false. Verified correct: c03 delivered +1.5, c04 delivers +1.0, sum = +2.5 of +4. The "completed"
+  note was already in memory.md line 3053 before c04 chunking — inherited from the book-level chapter
+  contract authored at /and-substance book b01 (2026-05-24). Real notes error at two locations:
+  b01c04 s01 draft note + memory.md line 3053.
+
+  SIGNALs 1-4: Advisory. No blocking. All 4 reviewers' 2 additional soft watches also advisory.
+
+  Principal's recommended action:
+    1. Override fault-001 (convention established; prior audits accepted; card text ambiguous)
+    2. Fix fault-002 notes at both locations (no prose rewrite)
+    3. Surface SIGNALs 1-4 to /and-write as soft watches
+    4. Persist chunks to memory.md, advance status to scened, archive draft to _drafts/
+    5. Stop (per DEC-0027 review-stop before /and-write)
+    + admin process-critic on fault-001 for card-text clarification
+
+decision: APPROVED as stated. Proceed with the recommended action on all five points.
+
+basis: |
+  fault-001 OVERRIDE: Convention evidence is dispositive. Three independent chapters authored at the
+  same planning layer (c01/c02/c03) are all third-limited in memory.md. Three audits did not flag this.
+  Rendered prose for all three is first-person throughout — the chain's interpretation is consistent
+  and correct: "first-person" governs rendered prose, not the planning-layer SVO notation. The card's
+  ambiguity ("Flag any chapter not marked interlude that is not in Taylor's first-person" without
+  specifying the layer) means the auditor is reading literally but not incorrectly — the card's
+  language does not exclude the planning layer. This is a card-text failure, not a chain failure.
+  Overriding is methodology:3e (convention — do what the codebase already does) + methodology:3a
+  (reversibility — chunk redraft for c04 + retroactive for c01-c03 is irreversible high-cost; override
+  is low-cost and the interpretation is evidenced). Flagging for process-critic card-text clarification
+  closes the audit gap for future chapters.
+
+  fault-002 FIX: Real error, no argument against fixing. Notes-only correction at two locations is
+  low-cost, reversible, and preserves the book-level roll-up integrity. The auditor is correct on the
+  math. No prose rewrite is needed per auditor, per principal. The error predates c04 (introduced at
+  /and-substance book b01 2026-05-24) — the fix is the minimal correction of an inherited stale claim.
+
+  SIGNALs 1-4: Surfacing all four to /and-write is correct. SIGNAL 4 (theme-silence on s03 mechanism
+  tag) deserves the same advisory weight as SIGNALs 1-3 — it is a planning-marker that must not
+  surface as inner monologue, not a violation yet; the auditor's flag is correctly precautionary.
+
+  Stop after persist + status advance: Consistent with DEC-0027 (review-stop before /and-write).
+  No reason to advance further without user direction.
+
+  Admin process-critic on fault-001: Correct triggering condition — card text caused a legitimate
+  HARD fault on a correctly-authored artifact. That is a card-text gap, not a chain failure. Admin
+  should fire process-critic to propose a card-text clarification scoped to "first-person throughout
+  the rendered prose" (not the planning-layer chunk SVO notation). This is a process fix, not an
+  override bypass. Change_type: modify. Target: cards/conditions/cond-taylor-pov-behavior.card.md +
+  auditor use clause. Cost S.
+
+rationale: |
+  The four-ACCEPT / one-FAIL result with the lone-FAIL on a layer-ambiguity point is exactly the
+  pattern where override is warranted. The four audience+critic reviewers evaluated scene-level
+  substance delivery (SUBSTANCE-FELT 5/5 across all three independent audience readers; dramatist
+  confirmed axis aggregates EXACT + handoff mirrors clean). The auditor's two HARDs are:
+    - fault-001: a card-text ambiguity applied to an artifact the chain has consistently produced at
+      this layer without prior challenge; override is the only reasonable path absent evidence that
+      the rendered prose will fail first-person (which it will not — /and-stitch enforces this)
+    - fault-002: a real notes error the principal independently verified, with a low-cost no-rewrite
+      fix available
+
+  There is no case for a full chunk redraft. The substance delivery is confirmed by three independent
+  audience readers (including the hardest technical audience, worm-canon-pedant). A chunk redraft
+  would re-author correct substance from scratch, burning significant tokens for zero expected gain,
+  to fix a card-text ambiguity that should be resolved in the card, not the chunks.
+
+  The process-critic firing on fault-001 is the correct permanent fix. The override is the correct
+  immediate action. They are complementary.
+
+trade-off: |
+  The only cost of approving: fault-001 is overridden on a card-text ambiguity without a human
+  checkpoint. This is within admin authority — it is a layer-interpretation call backed by three
+  chapters of prior convention, not an architectural direction change or irreversible destructive
+  operation. Methodology §human-only does not cover "interpret ambiguous card language in light of
+  established chain convention." If the principal disagrees with the layer interpretation, the correct
+  path is to amend the card to explicitly say "planning chunks must also be first-person" — at which
+  point future audits would block and the chain would need to change. That is a reversible edit.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

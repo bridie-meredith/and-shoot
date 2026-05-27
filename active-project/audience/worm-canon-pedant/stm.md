@@ -253,3 +253,89 @@ The Khepri-architecture surfacing at s02n12 and s02n13 is the primary canonicity
 ## scene b01c02s03
 verdict: SUBSTANCE-FELT
 The three-bone crack-and-suppress decomposition (s03n11 recognition/stall → s03n12 holds the breath → s03n13 draws the line) is the Khepri-psychology test for this scene, and it passes the specific test: the recognition does not instantaneously close in Taylor. One holding-beat (breath-hold, s03n12) exists before the suppression fires. That is canon-true — Taylor holds things one beat before the accounting closes over them; the beat is not drama, it is mechanism. The stall is causally attached to the ward-junction entry via s03n09 and s03n10 (accounting reaches the ward-junction entry → ward-junction corner returns the junction-lane void) rather than arising as a standalone interior event: Taylor's recognition arrives through arithmetic, not through feeling, which is the correct register. The second draws-the-line (s03n13) echoing s01n12 is the Khepri-rhyme completing cleanly — same gesture, same prohibition, architecture and accounting identical. The suppression is willful (behavioral gesture), not dissociative; consistent with the b01c12 Khepri-word-suppression pattern in the substance records. Moral_legibility_to_self +1.0 at n11 is within tolerance (target 0.5, floor 1.0 accepted at original gate). Cost paid: the recognition arriving unpreventable is the cost — Taylor cannot route around her own arithmetic. No parahuman jargon in SVOs or rationales. SUBSTANCE-FELT.
+
+---
+
+## b01c04 chunk review — 2026-05-27
+
+### Scene b01c04s01
+
+**social_tether-antag +1.0:** SUBSTANCE-FELT.
+The acceptance delivered as a routing confirmation rather than a concession extracted — that's the correct read on Jarvis. He is a courier, not a negotiator. The exchange taking less time than the walk to the yard is canonically accurate to how Taylor handles the moment after a decision: the deciding is the hard part; the delivery is procedure. "She made the decision in the night when the accounting would not close any other way" — tracks. Taylor does not re-litigate at delivery. The modification-of-terms (volume and interval hers to determine) is the last available parameter she can hold, and the chunk correctly notes that the modification does not modify the fact of the yes. That is the right shape of the opposing force: the lever solidifies before she finishes speaking.
+
+**position-prot-rise +0.5:** SUBSTANCE-FELT.
+Partial gain tranche. "Anonymous no longer possible" is earned here, not asserted: Jarvis receives the acceptance as a routing confirmation. Taylor has named herself a function. No flag.
+
+**moral_framework held (cracked, licensed exception active):** SUBSTANCE-FELT as held.
+The rationalization running its own accounting — Sera is real, the ward is real, the intelligence is already running — is exactly how Taylor processes a licensed exception. She does not question the rationalization here. The chunk does not make her question it. That's correct: she's still inside the exception's logic. "The distinction is real. She holds it." Canon Taylor holds distinctions that are eroding without noticing the erosion. No flag.
+
+**Earth-Bet fence:** CLEAN. "Feed," "insects," "perimeter" — no jargon. No Khepri reference. No Gold Morning. The fence is respected.
+
+**Khepri-rhyme check:** The irreversibility weight ("the particular quality of weight that follows any irreversible operational act") is the correct register for post-Gold-Morning Taylor. She has done irreversible operational acts before. She knows what they feel like. The text is not dramatizing this — it is describing the somatic residue of the act. That's accurate and appropriately restrained.
+
+---
+
+### Scene b01c04s02
+
+**capability +1.0:** SUBSTANCE-FELT.
+"The feed opens across Pig Tallow Lane and its courts within an hour of walking" — the mechanism is correct. Coverage is built through physical presence and established insect-contact points, not through a single broadcast. The hour-of-walking specification is important: it names coverage-as-procedure, not coverage-as-range. "She reads the ward the way she reads the Hook. She does not stop to name what she is doing." That second sentence is the Khepri-residue telling line. Canon Taylor does not always name what she is doing when the accounting is continuous with prior practice. No flag.
+
+The opposing force — the expansion's upward routing making the same walk-and-read that constituted Hook triage now constitutes intelligence for Otto — is correct and visible. The reader sees it; Taylor does not name it. That asymmetry is the chapter's whole mechanism.
+
+**social_tether-prot-rise +1.0 (cl03b first tranche):** SUBSTANCE-FELT.
+Oswyn as unknowing node is a clean Khepri echo. "He does not know he is now a coordinate in a map that routes upward through a courier to a man in a tower." The architecture is the same architecture she used at Gold Morning — people as substrate, no contact, no consent, no choice — at reduced scale and with a harm-reduction framing that Taylor believes. The chunk makes the structural homology visible without naming it. That is the right execution for this stage.
+
+Wren visible but not in the report, not examined: the anchor discipline is present. "The distinction between what enters the ledger and what does not is one Taylor holds without examining why she holds it." That last clause — without examining why — is the best line in the scene. Taylor keeps the Wren distinction but cannot interrogate it, which is exactly right: the prohibition is behavioral, not principled, at this stage. The sentence is doing the work the series spine requires.
+
+**Insect-feed mechanic precision:** No inflation. Coverage through physical walking, insect-contact, established presence points. Pig Tallow Lane read in an hour of walking is consistent with prior chapters' methodology (ward-junction categorization built from movement data). The feed's texture distinguishing Wren's "particular stillness at the frame" from the two apprentices is canonical — Taylor has always read individual behavioral signatures through the feed; this is not new capability, it is the existing capability applied to a new body she has been tracking since c01. No flag.
+
+**Range flag watch:** Four wards. This is the critical accumulation point. The coverage is described as built over two days of walking, not as a single radius deployment. The ward-coverage-built-over-time framing is explicit in s03 ("the range the insects hold reliably in rain-damp stone"). No flag at chunk level. Carry to /and-write: the bones must not collapse the two-day build to a single deployment beat. If any bone reads as "Taylor deploys across four wards simultaneously" the range flag fires. The sequential acquisition architecture must be present in the bone structure.
+
+---
+
+### Scene b01c04s03
+
+**capability +0.5 (cl03a completion):** SUBSTANCE-FELT.
+"It is the largest operational footprint she has run in King's Landing. The accounting holds it as: larger. No register beyond that." That accounting notation is correct. Taylor files operational facts without affect. "Larger" is the ledger entry; she does not editorialize. The absence of editorializing is the editorial. No flag.
+
+**social_tether-prot-rise +1.0 (cl03b completion):** SUBSTANCE-FELT.
+"Jarvis as structural vector is now a functional architecture, not a potential one." The completion of cl03b here is earned: the first report actually routes upward. The distinction between potential and functional is the chapter's delivery beat. The chunk marks it correctly.
+
+Wren outside the report, explicitly: "The report did not include Wren. This is the anchor holding. Taylor does not examine whether it will hold." Three sentences. The third is the most important. She does not examine whether it will hold — which is correct, because if she examined it she would have to price it, and she cannot price it while the rationalization is running. The question-without-answer plant is right for this stage.
+
+**position-prot-rise +0.5 (cl02 completion):** SUBSTANCE-FELT.
+Sera's exposure managed, confirmation received. The confirmation note delivered as administrative language — "the matter they discussed has been attended to, the three-month window is no longer open" — is the correct register for Otto operating through Jarvis. No direct communication, no seal, no name. The distance is maintained throughout. No flag.
+
+**position-world +1.0 (cl-world-d04):** SUBSTANCE-FELT.
+"The information exits Taylor's operational context and enters Otto Hightower's Green consolidation channel through Jarvis as structural vector." The first intelligence delivery is correctly framed as the moment the distinction between reading and reporting dissolves. The chunk makes this visible: "She has named a destination." That is the correct inflection for this axis increment — the intelligence was always running, the destination is what changed, and the naming-of-destination is the act. No flag.
+
+**moral_framework held:** SUBSTANCE-FELT as held.
+"Taylor frames the report as naming-a-destination-for-what-she-already-knows." The rationalization is operative and believed at chapter close. The crack is present (the distinction is dissolving) but the framework is not interrogated. That is the correct chapter_class: standard behavior.
+
+**moral_legibility_to_self held (suppressed):** SUBSTANCE-FELT as held.
+"The protection and the trap as the same operation, now materially running — not as a future contingency but as the present shape of her day." The audience sees this; Taylor does not name it. The chapter goal stated this explicitly ("Show the audience the acceptance and the network expansion together so the tether-gain reads as future-cost collateral") and the chunk delivers it. "Taylor walks back through the Hook in the late grey, the feed running across the four wards simultaneously, reading the ward and feeding the ward and reading what she feeds in a single unbroken operation." That sentence is the chapter's argument in motion. It lands. No flag.
+
+**Earth-Bet fence:** CLEAN across all three scenes. "Insects," "feed," "compound eyes" throughout. No parahuman jargon. No Khepri. No Gold Morning. No trigger-event or shard reference. Fence respected.
+
+**Axis aggregate check (against chapter contract):**
+  - capability: s01(0) + s02(1.0) + s03(0.5) = 1.5 vs target +1.5 → EXACT
+  - position-prot-rise: s01(0.5) + s02(0) + s03(0.5) = 1.0 vs target +1.0 → EXACT
+  - social_tether-prot-rise: s01(0) + s02(1.0) + s03(1.0) = 2.0 vs target +2.0 → EXACT
+  - social_tether-antag: s01(1.0) + s02(0) + s03(0) = 1.0 vs target +1.0 → EXACT
+  - position-world: s01(0) + s02(0) + s03(1.0) = 1.0 vs target +1.0 → EXACT
+  All five axes EXACT. No over-delivery, no shortfall. The math tracks.
+
+**Chapter goal coverage:**
+  Goal: "Show the audience the acceptance and the network expansion together so the tether-gain reads as future-cost collateral — the protection and the trap are the same operation."
+  - Acceptance delivered: s01 — LAND
+  - Network expansion as procedure not transformation: s02 — LAND
+  - Tether-gain as future-cost collateral visible to audience but not to Taylor: s02 (Oswyn unknowing node) + s03 (Wren outside report, anchor question planted without answer) — LAND
+  - Protection and trap as the same operation: s03 final paragraph — LAND; the closing sentence enacts it as motion, not as thesis
+
+**Soft watch carried forward to /and-write:**
+  - Range discipline: four-ward coverage must be built as sequential acquisition across two days in the bone structure; no single-deployment bone that collapses the temporal spread; if any bone reads as simultaneous four-ward broadcast, flag SUBSTANCE-SUSPECT-cheap-gain-capability
+  - The "without examining why she holds it" (s02, Wren distinction) and "Taylor does not examine whether it will hold" (s03) are the two most load-bearing lines in the chapter for the relational_anchor_status arc; they must survive as bone-level content, not as summary; if they collapse to a single assertion bone, the anchor discipline mechanism is lost
+
+Running tally: 0 flags. 1 soft range watch carried to /and-write. All five axes SUBSTANCE-FELT. Chapter goal LAND across all components.
+
+VERDICT: ACCEPT — chapters 1-4 canonical streak holds; Khepri-residue architecture building correctly; fence clean; Taylor register maintained; the trap/protection-same-operation thesis lands in motion at chapter close, not as statement.
