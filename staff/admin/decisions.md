@@ -989,3 +989,147 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0032 | 2026-05-27 | SLOW (process-critic)
+
+question: Post-/and-review bones b01c04 Phase 4.5 process-critic dispatch. Three patterns surfaced from the FAIL → inline-fix → PASS-WITH-NOTES flow. Which warrant process-change proposals?
+context: |
+  /and-review bones b01c04 (mandatory URI-WRITE-BONES-REVIEW-GATE) found 1 HARD (fault-001:
+  FAULT-DIALOGUE-CARD-VIOLATION — Jarvis @9 entry 8 contained "acceptable," a multi-syllable
+  Latinate term explicitly out-of-register per cards/dialects/westeros-smallfolk.card.md). The
+  inline /and-write Phase 6 dialogue-card-compliance gate missed it because the dialogue-writer
+  (Phase 1.5) invoked seed-fidelity self-license against the word (chunk seed text at /and-substance
+  chapter Phase 2 used "acceptable" in framing what Jarvis would say), and the Phase 6 gate accepted
+  that self-declared license.
+
+  Contamination chain: (1) screen-writer at /and-substance chapter authored "those terms are
+  acceptable to the person he represents" in chunk seed framing → (2) dialogue-writer at Phase 1.5
+  saw the word, recognized card pressure, but retained for seed-fidelity → (3) Phase 6 gate
+  accepted the self-license → (4) /and-review bones caught it; inline fix applied (Anglo-Saxon
+  "takes" replacing "acceptable").
+
+  Auditor also mislabeled "PASS-WITH-NOTES — 1 HARD" (self-contradictory per spec; corrected in
+  addendum to FAIL at review-time). The mandatory-gate value (Pattern C) confirmed as positive
+  evidence — the independent post-hoc review caught what the inline gate missed.
+
+  three_patterns:
+    A: chunk-seed vocabulary contaminating dialogue (seed-fidelity self-license against card fence)
+    B: auditor verdict-label mismatch (PASS-WITH-NOTES + 1 HARD, contradictory per spec)
+    C: mandatory-gate value confirmed (positive evidence — gate earned its cost)
+
+options: n/a (process-critic mode)
+
+decision: OK on all three patterns — no PROCESS-CHANGE-PROPOSED at this time.
+
+basis: |
+  Pattern A — OK, first-occurrence hold:
+    Recurrence_count = 1, non-catastrophic (inline fix applied, pipeline unblocked). The failure
+    mode is two-step and probabilistic: requires (a) screen-writer using card-adjacent vocabulary
+    in chunk seed text AND (b) dialogue-writer invoking seed-fidelity self-license. This is not
+    the deterministic-structural failure class that justifies first-occurrence proposals (like
+    PROP-0009/0011/0010, where the gap fires on every correctly-authored invocation). It requires
+    a coincidence of two authoring decisions. The anti-pattern rule ("do not propose on first
+    occurrence of non-catastrophic SIGNAL") applies here. Hold; mark this DEC-0032 as the
+    first-occurrence marker for Pattern A.
+
+    Lower-cost fix candidate on recurrence: modify /and-write Phase 1.5 dialogue-writer rubric
+    to add explicit anti-pattern "seed-fidelity is NOT a license against behavior-card fences;
+    recast the seed to honor the card." This is the minimum-blast-radius intervention — it targets
+    the dialogue-writer's decision point without requiring /and-substance chapter behavior change.
+    The /and-substance Phase 4 behavior-card lookahead (SOFT advisory) is a heavier change and
+    should be deferred unless seed contamination recurs.
+
+    Note: this pattern is the dialogue-layer cousin of DEC-0031 pattern 3 (margit copy-paste from
+    unfixed source — also held at first occurrence). Both share the same structural principle:
+    downstream authors inherit upstream artifacts that may carry card-adjacent vocabulary without
+    flag. The principle is worth naming; neither instance alone has reached the recurrence threshold.
+
+  Pattern B — OK, first-occurrence hold:
+    Auditor verdict-label error (PASS-WITH-NOTES + 1 HARD) is minor, non-catastrophic (caught and
+    corrected by the addendum). The spec already defines verdict-label rules; this is a labeling
+    error by the auditor, not a structural gate gap. First occurrence. No proposal warranted.
+    Could be addressed by adding a verdict-label validation note to the bones subcommand body or
+    to audit-report.schema.md, but the cost of writing the check exceeds the cost of the one-time
+    correction at this recurrence level. Hold.
+
+  Pattern C — OK, positive evidence:
+    The mandatory post-hoc gate (URI-WRITE-BONES-REVIEW-GATE) caught a HARD the inline Phase 6
+    gate missed. This is the design pattern working as intended — independent reviewer context
+    catches different failure classes than the inline gate. Log as positive evidence that the
+    gate-redundancy is earning its cost. No process change needed.
+
+rationale: |
+  All three patterns clear on recurrence grounds. None of the three meets the first-occurrence
+  override criteria (catastrophic, irreversible, multi-chapter blast radius, or structurally-
+  guaranteed recurrence). The inline fix resolved the pipeline impact; the gate did its job. The
+  most notable finding (Pattern A) names a genuine structural seam — chunk seed text is upstream
+  of behavior-card checking — but the failure requires coincident authoring decisions and is
+  addressable with a single rubric line if it recurs.
+
+trade-off: |
+  Holding on Pattern A means the seed-fidelity self-license gap remains open for future chapters.
+  The cost of the gap is: one potential future inline fix (~5 minutes) per occurrence, versus the
+  cost of a PROP (principal triage time, implementation overhead). At recurrence_count=1 and
+  given the probabilistic failure mode, holding is the lower expected-total-cost path.
+  Holding on Pattern B is correct: auditor labeling errors at this rate do not warrant a schema
+  or rubric change.
+
+first_occurrence_markers:
+  - Pattern A (chunk-seed vocabulary contamination via seed-fidelity self-license):
+      first_occurrence: b01c04 Jarvis @9 entry 8 "acceptable"
+      candidate_fix_on_recur: /and-write Phase 1.5 rubric anti-pattern "seed-fidelity is not a
+        license against behavior-card fences; recast the seed to honor the card"
+      recur_threshold: 2 occurrences triggers PROP; catastrophic single occurrence triggers immediately
+  - Pattern B (auditor verdict-label mismatch PASS-WITH-NOTES + HARD):
+      first_occurrence: b01c04 /and-review bones auditor addendum correction
+      candidate_fix_on_recur: audit-report.schema.md or bones subcommand body verdict-label validation note
+      recur_threshold: 2 occurrences triggers PROP
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0033 | 2026-05-27 | FAST
+
+question: /and-facets b01c04 budget posture: option 1 (full process — 12 R1 + full R2 + full Phase 5b audience-gate, ~50-80 dispatches), option 2 (cascade-budget compression — skip R2 and/or Phase 5b, ~15-25 dispatches), or option 3 (hybrid — full R1+R2, spot-check Phase 5b on 2-3 high-risk facets, ~25-40 dispatches)?
+context: |
+  Historical pattern: c02 cascade-budget compression → revise-from-signals + 3 stitch cold-reads.
+  c03 Phase 5b skip (zero audience-gate cycles) → 45 HARD FAULT-FORM-MODIFIER + FAULT-BONE-DELTA-
+  MALFORMED at c04 /and-write Phase 1 redo (DEC-0030), costing ~15 agent dispatches to unwind.
+  c04 /and-write just completed full-process (3 cycles: original + redo + additive); /and-review
+  bones c04 PASSED. User has been paying for full process throughout c04 chain. Caller's stated
+  default: option 1.
+options: |
+  (1) Full process — ~50-80 dispatches, clean historical outcome (c01)
+  (2) Cascade-budget compression — ~15-25 dispatches, two-chapter track record of downstream contamination
+  (3) Hybrid — ~25-40 dispatches, faster than (1), avoids the worst-case audience-gate cycles
+
+decision: Option 1 — full process.
+basis: goal:2 (cost discipline, correctly applied — total project cost of option 2 is higher than option 1 given the two-chapter evidence base) + methodology:3a (reversibility — skipping Phase 5b is not reversible; contamination propagates into c05's /and-write context window) + methodology:3b (cost — expected-total-spend for option 2 exceeds option 1 at the observed failure rate; the c03 skip cost more to clean up than the c02 full run saved) + methodology:3e (convention — full process is the canonical chain; cascade-budget is a deviation with a documented failure mode)
+rationale: |
+  Two consecutive cascade-budget compressions (c02, c03) both produced downstream contamination that
+  cost more to remediate than the compression saved. At c03, Phase 5b skip contributed to PP-heavy
+  bones that caused 45 HARD findings at c04 Phase 1, requiring a full redo cycle. The "cheaper" option
+  has proven to be the more expensive path in expected-total-spend. Option 1 at 50-80 dispatches is
+  the right answer because it is the answer that costs less across the project lifetime, not just this
+  command invocation. Option 3 (hybrid) is an untested middle path — it saves ~15-30 dispatches
+  relative to option 1 but the partial Phase 5b validation has no track record; if the spot-checked
+  facets are clean but an unchecked facet is not, the contamination is the same as option 2. Given
+  that the user has already paid the c03 remediation cost and has explicitly been running full-process
+  throughout the c04 chain, burning that lesson for a one-command budget save is the wrong trade.
+trade-off: |
+  Option 1 is expensive per-invocation (~50-80 dispatches). The caller flagged this explicitly.
+  The correct framing: the invocation cost is real, but the expected-total-cost including downstream
+  remediation is lower for option 1 than for option 2, given the two-chapter evidence base. Option 3's
+  hybrid savings (~15-30 dispatches) are not worth the contamination risk at this project stage (b01c04
+  is the acceptance chapter — axis-densest, series-spine-critical).
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
