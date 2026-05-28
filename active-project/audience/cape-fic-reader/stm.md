@@ -379,3 +379,33 @@ The declared 0-movement / moral_framework held under load reads as earned discip
 ## scene b01c05s03
 verdict: SUBSTANCE-FELT
 The +1.5 political_register-prot move at n06 (taylor-hebert-kl-122ac stops the rushwick-pass) arrives through the correct mechanism and the cost is structurally paid. The setup sequence is sound: n02-n03 establish Hook as the flat-document baseline, n04-n05 initiate the Rushwick flat-read attempt and show the provisioner-train carrying something the categorization frame was holding at distance — the color arrives as a perceptual event before Taylor names it. The axis-mover at n06 is a physical cessation (the body stops the read-attempt), not an interior conclusion. The cl-d05 cost — neutral-instrumentally-observant foreclosed forever — is confirmed operative by the four-bone foreclosure sequence (n10-n13): Taylor runs the flat-read twice and it fails twice, the provisional architecture of "files the unavailability as texture" visible to the reader as not-returning-the-read regardless of the filing. The cheap-gain check: is the +1.5 gain priced? The foreclosure cost is present in the architecture — Taylor cannot run the Rushwick flat again; the n10-n13 sequence enacts that loss as a repeated physical failure, not a declared consequence. That is the cost paid. The cf-d10 thread close at n07 and n09 (courier-face in body-map not in ledger, body-record confirmed open) gives the +1.5 its informational weight: what accumulated is specific, it includes a face, and the face is now in a record that lives outside any ledger Taylor routes upward. No cheap gain; no unmotivated knowledge; no established limits bypassed; no fatigue triggers.
+
+## b01c05 revise --from-signals — Phase 4 trim
+
+date: 2026-05-28
+scope: 5 new bones only (existing @1-@31 pre-passed)
+cold_read_source: active-project/staff/reviews/coldread-b01-c05-2026-05-28.md
+
+### Per-bone disposition
+
+A1 (b01c05s02n01a — "the insect-feed returns the courier-entry", chatter+cl-d05, after @8):
+KEEP — closes confusion (v); feed-apparatus return of a prior-recognized body makes the three-sighting threshold legible to the reader before @18's body-map filing; without A1 the three-sighting count at @18 is Taylor's assertion, not a board-state the reader can track; chatter+cl-d05 is structurally identical to @13 ("side-alley returns the sound"), which survived prior trim on the same grounds; not filler — the recurrence data is the information-asymmetry setup for the cf-d10 plant.
+
+B1 (b01c05s02n03a — "the courier raises the spine", axes_held: moral_framework, after @13, before @14):
+KEEP — closes confusion (ii); "finds the feet" at @14 was unambiguous for an in-context reader but the cold-read couldn't determine whether the courier recovered to standing or to kneeling; spine-raise → feet-found is a sequential physical recovery that removes the ambiguity; serves chapter goal (courier must exit as a recovered walking figure for the body-map plant and @19 exit to read as intentional); not filler — disambiguates the incident's physical sequence at a gap the cold-read identified.
+
+B2 (b01c05s02n06a — "the enforcement-report enters the jarvis-channel", axes_held: moral_framework, after @16):
+KEEP — closes confusion (iii) partial; the Jarvis-channel is the apparatus that separates "what enters the ledger" from what does not — making it bone-legible in this chapter rather than relying on c04 bones the cold-reader may not have available; apparatus named as a physical routing event, not as Taylor's reasoning; serves chapter goal (the ledger IS the Jarvis channel; the body-map/ledger separation at @27 reads with specificity only when the channel is named in this chapter's sequence); not filler — routing architecture IS the mechanism.
+
+B3 (b01c05s02n06b — "taylor-hebert-kl-122ac adds the jarvis-form to the sera-arrangement-file", axes_held: moral_framework, after B2, before @17):
+KEEP — closes confusion (iii); Sera-arrangement first bone-realized in this chapter; the cause-chain (courier beaten → report filed → Jarvis-channel → Sera-arrangement) was absent in the bones without B3; "adds X to Y" pattern models on @18 cleanly; serves chapter goal — the Sera-arrangement is the protection mechanism, its bone-realization is the chapter's primary filing event; no unmotivated knowledge (Taylor built the Sera-arrangement file herself); not filler — the protection mechanism IS the plot.
+
+C1 (b01c05s03n06a — "the rushwick-feed resists the flat-read", chatter+cl-d05, after @24, before @25):
+KEEP — closes confusion (iv); without C1, @25 ("taylor stops the rushwick-pass") can read as a volitional pause rather than a feed-apparatus event; C1 names the mechanical precursor (feed resists) that makes @25 a response to apparatus behavior rather than a narrator-judgment; directly serves chapter goal ("color arrives before Taylor names it" requires the arrival to be legible as feed-apparatus event, not narrator-choice); chatter+cl-d05 is the same structure as A1; not filler — C1 is the mechanical connector between @24 and @25 at the chapter's central axis-move.
+
+### Threshold Discipline fires
+None. No filler (all 5 bones are apparatus or cause-chain events). No unmotivated knowledge (A1/C1 are feed-apparatus returns; B1 is observable physical recovery; B2-B3 are Taylor operating her own filing architecture). No established limits bypassed. No new character earning trust.
+
+### File-level verdict
+ACCEPT — 5 KEEP, 0 DELETE
+All 5 new bones close declared cold-read failures with minimum apparatus. No bone marks time. A1 and C1 are feed-apparatus substrate bones paying cl-d05. B1 closes a physical incident gap. B2-B3 are cause-chain routing bones that make the filing architecture bone-legible in this chapter rather than dependent on c04 recall. The chapter goal is better served by the addition: the courier-face plant is now trackable from @8 forward, and the axis-move at @25 now reads as feed-apparatus response rather than narrator-choice.
