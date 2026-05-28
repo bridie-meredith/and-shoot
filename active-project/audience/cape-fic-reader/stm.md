@@ -357,3 +357,25 @@ None. No established limits bypassed. No unmotivated knowledge. No filler while 
 
 ### File-level verdict
 ACCEPT — 34 KEEP, 0 DELETE
+
+## b01c05 bone-gate — 2026-05-28
+
+---
+reviewer: cape-fic-reader
+chapter: b01c05
+phase: write-bone-gate
+date: 2026-05-28
+scenes_reviewed: [b01c05s01, b01c05s02, b01c05s03]
+---
+
+## scene b01c05s01
+verdict: SUBSTANCE-FELT
+The declared 0-movement / political_register-prot held reads as load-bearing dormancy, not flat pause. The bone set gives the discipline something to push against: n04 (provisioner-train crosses the junction) and n07 (message-runner crosses the junction) put court-tier bodies in the feed at distinct moments, and n05-n06/n08-n09 give each body its response sequence — categorization enacted physically before the filing. The "different substrate, same method" discipline is visible to the reader through what Taylor does (maps the interval, names the gait-class, releases at coverage-range edge) without the reader being told she notices anything. The dormancy is felt as held pressure, not as the absence of content: the opposing force — novel substrate weight — is present in the specificity the categorization is being asked to perform, and n09's "files it without qualifying the difference" closes the scene on the discipline's intact surface while the reader can see the gap Taylor isn't naming. No established limits bypassed; no cheap-gain; no fatigue triggers (the ward-walk is the mechanism, not setup preceding the mechanism).
+
+## scene b01c05s02
+verdict: SUBSTANCE-FELT
+The declared 0-movement / moral_framework held under load reads as earned discipline, not neutral observation. The bone sequence delivers the enforcement incident through geometry first (n03 figures enter side-alley, n04 figures close the alley-mouth = exit-blocking) before Taylor categorizes it — reader has the board-state before the categorization layer runs. The dark-fantasy gap-instrument bones (n06 effortful sound the feed cannot categorize / n07 courier finds feet) are the structural proof that moral_framework is genuinely held rather than untested: the gap between world-event and feed-instrument is present and the discipline routes around it. The worm-canon SOFT-WATCH requirement is honored — gait-signature recognition (n02), enforcement-read (n04), and filing (n08) are structurally distinct bones, not collapsed to a single logging assertion. The "it is what the feed reads. It is what the feed reads." echo in the chunk text is the rationalization-running-without-interrogation tell this reader needs to confirm moral_framework is discipline under load, not discipline at rest. No hot-button fires: Taylor does not know which faction directed the enforcement; she reports only what the feed physically returns. The stakes are correctly named at n05 (controlled containment, moral_framework held at non-intervention) — the discipline is tested and holds, not untested.
+
+## scene b01c05s03
+verdict: SUBSTANCE-FELT
+The +1.5 political_register-prot move at n06 (taylor-hebert-kl-122ac stops the rushwick-pass) arrives through the correct mechanism and the cost is structurally paid. The setup sequence is sound: n02-n03 establish Hook as the flat-document baseline, n04-n05 initiate the Rushwick flat-read attempt and show the provisioner-train carrying something the categorization frame was holding at distance — the color arrives as a perceptual event before Taylor names it. The axis-mover at n06 is a physical cessation (the body stops the read-attempt), not an interior conclusion. The cl-d05 cost — neutral-instrumentally-observant foreclosed forever — is confirmed operative by the four-bone foreclosure sequence (n10-n13): Taylor runs the flat-read twice and it fails twice, the provisional architecture of "files the unavailability as texture" visible to the reader as not-returning-the-read regardless of the filing. The cheap-gain check: is the +1.5 gain priced? The foreclosure cost is present in the architecture — Taylor cannot run the Rushwick flat again; the n10-n13 sequence enacts that loss as a repeated physical failure, not a declared consequence. That is the cost paid. The cf-d10 thread close at n07 and n09 (courier-face in body-map not in ledger, body-record confirmed open) gives the +1.5 its informational weight: what accumulated is specific, it includes a face, and the face is now in a record that lives outside any ledger Taylor routes upward. No cheap gain; no unmotivated knowledge; no established limits bypassed; no fatigue triggers.
