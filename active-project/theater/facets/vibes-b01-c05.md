@@ -37,13 +37,13 @@ flat_id-basis: 1-35 (post-revise --from-signals; full re-numbering per Phase 7 e
 
 # ── scene-B: enforcement incident observed (@8-@22) ──────────────────────────────
 
-5 @9 actor:taylor-hebert-kl-122ac ++ insect-sense-as-residue-not-spectacle: [apparatus-filing-before-operator-names-recurrence, feed-tracks-without-wonder, third-sighting-as-data-not-recognition] | licensed-by: proto:9, state-update:1, world-build:cond-override-architecture-residue-122ac
+5 @9 actor:taylor-hebert-kl-122ac ++ insect-sense-as-residue-not-spectacle: [apparatus-filing-before-operator-names-recurrence, feed-tracking-without-wonder, third-sighting-as-data-not-recognition] | licensed-by: proto:9, state-update:1, world-build:cond-override-architecture-residue-122ac
 
 6 @14 loc:oc-rushwick ++ enforcement-legible: [sound-gap-in-side-alley-confirmed-at-chapter-scale, feed-logging-silence-not-event, effortful-sound-below-junction-threshold, enforcement-invisible-to-auditory-layer] | licensed-by: proto:14, world-build:oc-rushwick-Hazards-sound-gap, state-update:2
 
 7 @14 actor:taylor-hebert-kl-122ac + gap-instrument-registered: [feed-field-absent-for-this-class, gap-logged-as-gap-not-as-content, dark-fantasy-world-above-apparatus-ceiling, not-naming-as-the-read-still-available] | licensed-by: proto:14, state-update:2, world-build:oc-rushwick-Hazards-sound-gap
 
-8 @14 episode + gap-instrument-at-ward-scale: [feed-return-absence-not-evidence, side-alley-enforcement-below-register, world-physics-above-apparatus-ceiling, dark-fantasy-gap-introduced] | licensed-by: proto:14, state-update:2, world-build:oc-rushwick-Sound-vocabulary
+8 @14 episode + gap-instrument-at-ward-scale: [feed-output-absence-not-evidence, side-alley-enforcement-below-register, world-physics-above-apparatus-ceiling, dark-fantasy-gap-introduced] | licensed-by: proto:14, state-update:2, world-build:oc-rushwick-Sound-vocabulary
 
 9 @17 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [enforcement-incident-entering-jarvis-form-unchanged, routing-name-honored-without-interrogation, form-destination-the-architecture-she-agreed-to-feed, licensed-exception-running-without-switch] | licensed-by: proto:17-19, state-update:3, world-build:cond-road-to-hell-chain-shape
 
@@ -55,7 +55,7 @@ flat_id-basis: 1-35 (post-revise --from-signals; full re-numbering per Phase 7 e
 
 # ── scene-C: evening replay / recognition / foreclosure (@23-@35) ────────────────
 
-13 @28 loc:oc-rushwick ++ novel-coverage-substrate: [feed-retains-color-after-flat-read-procedure, apparatus-level-recognition-correlate, substrate-unresolved-under-neutral-pass, color-as-property-of-ward-not-operator] | licensed-by: proto:28, state-update:2, world-build:oc-rushwick-Hazards-coverage-novelty-registration
+13 @28 loc:oc-rushwick ++ novel-coverage-substrate: [feed-retaining-color-after-flat-read-procedure, apparatus-level-recognition-correlate, substrate-unresolved-under-neutral-pass, color-as-property-of-ward-not-operator] | licensed-by: proto:28, state-update:2, world-build:oc-rushwick-Hazards-coverage-novelty-registration
 
 14 @28 actor:taylor-hebert-kl-122ac ++ residue not spectacle: [rushwick-content-color-held-apparatus-non-stripping, procedure-hers-output-not-neutral, feed-distinguishing-what-discipline-cannot-name] | licensed-by: proto:28, state-update:2, feeling:2
 
