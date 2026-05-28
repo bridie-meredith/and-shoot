@@ -1,8 +1,8 @@
 # studio state
 
-episode: b01c04
-last_updated: 2026-05-27
-action: state-updates-env R1 authoring — /and-facets b01-c04 Phase 1 (merged; location-state + sensory R1 prior)
+episode: b01c05
+last_updated: 2026-05-28
+action: location-state R1 authoring — /and-facets b01-c05 Phase 1
 
 ## Current set
 location: oc-stitch-house-lane (Taylor exits @39; chapter close; walk-back through Hook)
