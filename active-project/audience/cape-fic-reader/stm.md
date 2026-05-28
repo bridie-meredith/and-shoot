@@ -310,3 +310,50 @@ No fires.
 SUBSTANCE-FELT — the +1.5 political_register-prot move lands through mechanism (evening-replay strips real-time categorization frame → accumulated substrate becomes visible), the s01/s02 dormancy is load-bearing (discipline holding against named pressure, not empty pause), the cf-d10 courier-face plant lands with intentional structure (three-sighting threshold crossed at enforcement, body-map filing separated from ledger filing), and the s02 enforcement incident functions correctly as a feed-event Taylor processes through her categorization layer rather than as a plot-event that triggers action.
 
 VERDICT: ACCEPT
+
+## b01c05 trim pass — 2026-05-28
+
+### Per-bone disposition
+
+s01n01: KEEP — grounding bone; axes_held: political_register-prot (Rushwick spatial anchor, discipline not yet engaged); no axis_moves but enacts the ward's physical arrival; chapter goal requires this substrate before court-tier bodies enter
+s01n02: KEEP — axes_held: capability + political_register-prot; coverage extension event begins; load-bearing for the "maintenance, not new expansion" framing
+s01n03: KEEP — axes_held: capability + political_register-prot; feed fills the junction; covers [event: first day of court-tier content in feed]; required for chapter goal (court-tier content arrival)
+s01n04: KEEP — axes_held: political_register-prot; provisioner-train crosses the junction; opposing force enters; chapter goal requires this body as the color-carrier that will surface in s03 replay
+s01n05: KEEP — axes_held: political_register-prot; provisioner-train takes the east-lane; "different substrate, same method" filing enacted; discipline visible through same-method behavior
+s01n06: KEEP — axes_held: political_register-prot + moral_framework; Taylor maps the train's interval; the categorization-as-intelligence-substrate-inside-licensed-exception is enacted here; voice-load-bearing
+s01n07: KEEP — axes_held: political_register-prot; message-runner crosses the junction; second court-tier body; opposing force visible through the specificity the feed demands; distinct from n08 (acquire vs. release-without-follow)
+s01n08: KEEP — axes_held: political_register-prot + capability; message-runner exits at lane-mouth; "feed does not chase" is the restraint discipline made physical; enacts the discipline's hold at coverage-range edge; distinct chapter-goal service from n07
+s01n09: KEEP — axes_held: political_register-prot + relational_anchor_status (null-flag); Taylor names the gait-class; "different substrate, same method" filing beat that the s01 chunk explicitly names as the discipline's form; thin but voice-load-bearing — the "files it without qualifying the difference" shape is the political_register-prot hold at first-exposure
+
+s02n01: KEEP — axes_held: political_register-prot + moral_framework; courier enters lane-mouth; grounding bone for s02; third-sighting entry before the incident
+s02n02: KEEP — axes_held: political_register-prot; worm-canon SOFT-WATCH bone 1 of 3 (gait-signature recognition); structurally distinct from n04 (incident read) and n08 (filing) per SOFT-WATCH requirement
+s02n03: KEEP — axes_held: political_register-prot + moral_framework; three figures enter side-alley; incident begins; geometry of approach before categorization
+s02n04: KEEP — axes_held: political_register-prot + moral_framework; three figures close the alley-mouth; enforcement-read bone; exit-blocking = enforcement geometry enacted; worm-canon SOFT-WATCH bone 2 of 3
+s02n05: KEEP — axes_held: moral_framework + political_register-prot; courier pinned against stone; stakes-axis bone; controlled containment confirmed; moral_framework held at non-intervention
+s02n06: KEEP — dark-fantasy gap-instrument bone; axes_held: moral_framework + political_register-prot; sound the feed cannot categorize; protected by watchpoint — do not delete
+s02n07: KEEP — dark-fantasy gap-instrument bone B; axes_held: moral_framework + political_register-prot; feed re-categorizes; gap collapses to data-frame; protected by watchpoint — do not delete
+s02n08: KEEP — axes_held: moral_framework + political_register-prot; worm-canon SOFT-WATCH bone 3 of 3 (filing); approach-geometry mapped to Jarvis-report format; structurally distinct per SOFT-WATCH requirement
+s02n09: KEEP — axes_held: moral_framework + political_register-prot; enforcement report-entry delivered to Jarvis; protagonist_force enacted as routing action
+s02n10: KEEP — axes_held: political_register-prot + moral_framework; three figures exit; departure-walk bone; purposive-unhurried gait of work-complete; the feed reads this as the incident's close
+s02n11: KEEP — axes_held: political_register-prot + relational_anchor_status (null-flag); cf-d10 thread initiated; chapter goal directly served — courier body-filing is the courier-face plant
+s02n12: KEEP — axes_held: political_register-prot; courier takes the junction-corner; feed releases; incident closed in operational record; the release enacts the "no follow" discipline parallel to s01n08; chapter goal served (courier plant complete)
+
+s03n01: KEEP — axes_held: political_register-prot + capability; grounding bone for s03; Taylor settles into the review-surface; without this n02 has no physical anchor
+s03n02: KEEP — axes_held: political_register-prot + moral_framework; Hook-feed run in review; baseline for the Rushwick contrast; the flat-document contrast is structural to the chapter goal
+s03n03: KEEP — axes_held: political_register-prot; Hook-feed resolves; try-flat-read sequence baseline bone; establishes what resolution looks like before Rushwick fails to provide it
+s03n04: KEEP — axes_held: political_register-prot; Taylor runs Rushwick-feed; try-flat-read sequence bone 1; initiates the flat-document read attempt
+s03n05: KEEP — axes_held: political_register-prot; provisioner-train re-crosses the junction in replay; color arrives without label; opposing force becomes visible without discipline's frame; chapter goal's "color arrives before Taylor names it"
+s03n06: KEEP — UNCONDITIONAL; axis_moves: political_register-prot +1.5; cl-d05 anchor; the +1.5 moving bone; structurally essential per trim criteria
+s03n07: KEEP — axes_held: political_register-prot + relational_anchor_status (null-flag); courier-face surfaces in replay; post-enforcement walk image; cf-d10 thread served; chapter goal (courier-face plant confirmed open)
+s03n08: KEEP — axes_held: moral_framework + moral_legibility_to_self; Taylor closes the evening review; filing-as-texture protagonist_force enacted as discrete physical end-act; voice-load-bearing for cold-utilitarian register
+s03n09: KEEP — axes_held: political_register-prot + relational_anchor_status (null-flag); cf-d10 thread confirmed open; body-map vs. ledger separation enacted; chapter goal directly served
+s03n10: KEEP — axes_held: political_register-prot + moral_legibility_to_self; foreclosure enactment bone 1; first attempt at flat-read after recognition; the attempt is the active discipline
+s03n11: KEEP — axes_held: political_register-prot; foreclosure enactment bone 2; Rushwick does not resolve under flat pass; protected by watchpoint — n10-n13 as a group required for repeated-failure pattern
+s03n12: KEEP — axes_held: political_register-prot + moral_legibility_to_self; foreclosure enactment bone 3; second attempt; repetition is load-bearing for foreclosure-as-enacted-capability-failure; protected by watchpoint
+s03n13: KEEP — axes_held: political_register-prot + moral_legibility_to_self; foreclosure enactment bone 4 (final); same result confirmed; cl-d05 firmly anchored; protected by watchpoint
+
+### Threshold Discipline fires
+None. No established limits bypassed. No unmotivated knowledge. No filler while the plot is live — s01/s02 are the substrate the s03 reveal processes, not setup preceding it. Fatigue check: held bones throughout s01 and s02 enact physical acts (gaits, exits, alley-geometry, report-filing), not reasoning chains; no eye-glaze triggers.
+
+### File-level verdict
+ACCEPT — 34 KEEP, 0 DELETE
