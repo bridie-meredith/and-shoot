@@ -2,7 +2,7 @@
 generated: 2026-05-28
 source: active-project/theater/proto-lines/b01-c05.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 60 facet entries; 23/35 protolines decorated (65.7%)
+totals: 62 facet entries; 23/35 protolines decorated (65.7%)
 
 ## Density distribution (protolines by citation count)
 
@@ -11,8 +11,8 @@ totals: 60 facet entries; 23/35 protolines decorated (65.7%)
 | 0 (bare)   | 12 |
 | 1          | 11 |
 | 2          | 2 |
-| 3          | 4 |
-| 4          | 4 |
+| 3          | 3 |
+| 4          | 5 |
 | 5          | 1 |
 | 7          | 1 |
 
@@ -29,15 +29,17 @@ totals: 60 facet entries; 23/35 protolines decorated (65.7%)
   loc-state:8 @22 back=Y
   loc-state:9 @23 back=Y co=[state:5, state:6]
 
-### narrator (8 entries)
+### narrator (10 entries)
   narrator:1 @2 back=Y co=[exposition:3, state:1, vibes:3]
   narrator:2 @5 back=Y co=[loc-state:2, vibes:4]
   narrator:3 @10 back=Y co=[loc-state:4]
   narrator:4 @14 back=Y co=[vibes:6, vibes:7, vibes:8]
-  narrator:5 @19 back=Y co=[feel:1, mem:1, vibes:10]
+  narrator:5 @19 back=Y co=[mem:1, vibes:10]
   narrator:6 @21 back=Y co=[state:1, state:4, vibes:11, vibes:12]
   narrator:7 @28 back=Y co=[state:2, vibes:13, vibes:14]
-  narrator:8 @29 back=Y co=[feel:2, state:3, state:4, vibes:15, vibes:16, vibes:17]
+  narrator:8 @29 back=Y co=[feel:1, state:3, state:4, vibes:15, vibes:16, vibes:17]
+  narrator:9 @31 back=Y co=[mem:2, state:5, state:7]
+  narrator:10 @35 back=Y co=[vibes:18, vibes:19, vibes:20]
 
 ### sensory (2 entries)
   sensory:1 @4 back=Y
@@ -46,26 +48,26 @@ totals: 60 facet entries; 23/35 protolines decorated (65.7%)
 ### state (12 entries)
   state:1 @21 back=Y co=[narrator:6, state:4, vibes:11, vibes:12]
   state:2 @28 back=Y co=[narrator:7, vibes:13, vibes:14]
-  state:3 @29 back=Y co=[feel:2, narrator:8, state:4, vibes:15, vibes:16, vibes:17]
-  state:4 @29 back=Y co=[feel:2, narrator:8, state:3, vibes:15, vibes:16, vibes:17]
-  state:5 @31 back=Y co=[mem:2, state:7]
+  state:3 @29 back=Y co=[feel:1, narrator:8, state:4, vibes:15, vibes:16, vibes:17]
+  state:4 @29 back=Y co=[feel:1, narrator:8, state:3, vibes:15, vibes:16, vibes:17]
+  state:5 @31 back=Y co=[mem:2, narrator:9, state:7]
   state:6 @2 back=N co=[exposition:3, narrator:1, state:1, vibes:3]
   state:7 @3 back=N co=[state:2]
   state:8 @17 back=N co=[state:3, vibes:9]
   state:9 @21 back=N co=[narrator:6, state:1, state:4, vibes:11, vibes:12]
   state:10 @23 back=N co=[loc-state:9, state:5, state:6]
   state:11 @23 back=N co=[loc-state:9, state:5, state:6]
-  state:12 @31 back=N co=[mem:2, state:5, state:7]
+  state:12 @31 back=N co=[mem:2, narrator:9, state:5, state:7]
 
 ### mem (2 entries)
-  mem:1 @19 back=Y co=[feel:1, narrator:5, vibes:10]
-  mem:2 @31 back=Y co=[state:5, state:7]
+  mem:1 @19 back=Y co=[narrator:5, vibes:10]
+  mem:2 @31 back=Y co=[narrator:9, state:5, state:7]
 
-### feel (2 entries)
-  feel:1 @19 back=Y co=[mem:1, narrator:5, vibes:10]
-  feel:2 @29 back=Y co=[narrator:8, state:3, state:4, vibes:15, vibes:16, vibes:17]
+### feel (1 entries)
+  feel:1 @29 back=Y co=[narrator:8, state:3, state:4, vibes:15, vibes:16, vibes:17]
 
-### meta (1 entries)
+### meta (2 entries)
+  meta:0 @- back=-
   meta:0 @- back=-
 
 ### vibes (20 entries)
@@ -78,17 +80,17 @@ totals: 60 facet entries; 23/35 protolines decorated (65.7%)
   vibes:7 @14 back=Y co=[narrator:4, vibes:6, vibes:8] lic-out=[proto:14, state-update:2]
   vibes:8 @14 back=Y co=[narrator:4, vibes:6, vibes:7] lic-out=[proto:14, state-update:2]
   vibes:9 @17 back=Y co=[state:3] lic-out=[proto:17, state-update:3]
-  vibes:10 @19 back=Y co=[feel:1, mem:1, narrator:5] lic-out=[proto:19, feeling:1, state-update:3]
+  vibes:10 @19 back=Y co=[mem:1, narrator:5] lic-out=[proto:19, feeling:1, state-update:3]
   vibes:11 @21 back=Y co=[narrator:6, state:1, state:4, vibes:12] lic-out=[proto:21, state-update:1]
   vibes:12 @21 back=Y co=[narrator:6, state:1, state:4, vibes:11] lic-out=[proto:21, state-update:1, state-update:5]
   vibes:13 @28 back=Y co=[narrator:7, state:2, vibes:14] lic-out=[proto:28, state-update:2]
   vibes:14 @28 back=Y co=[narrator:7, state:2, vibes:13] lic-out=[proto:28, state-update:2, feeling:2]
-  vibes:15 @29 back=Y co=[feel:2, narrator:8, state:3, state:4, vibes:16, vibes:17] lic-out=[proto:29, state-update:3, state-update:4, feeling:2]
-  vibes:16 @29 back=Y co=[feel:2, narrator:8, state:3, state:4, vibes:15, vibes:17] lic-out=[proto:29, state-update:3, state-update:4, feeling:2]
-  vibes:17 @29 back=Y co=[feel:2, narrator:8, state:3, state:4, vibes:15, vibes:16] lic-out=[proto:29, state-update:3, state-update:4]
-  vibes:18 @35 back=Y co=[vibes:19, vibes:20] lic-out=[proto:32, state-update:4]
-  vibes:19 @35 back=Y co=[vibes:18, vibes:20] lic-out=[proto:33, state-update:4, state-update:3]
-  vibes:20 @35 back=Y co=[vibes:18, vibes:19] lic-out=[proto:33, state-update:4]
+  vibes:15 @29 back=Y co=[feel:1, narrator:8, state:3, state:4, vibes:16, vibes:17] lic-out=[proto:29, state-update:3, state-update:4, feeling:2]
+  vibes:16 @29 back=Y co=[feel:1, narrator:8, state:3, state:4, vibes:15, vibes:17] lic-out=[proto:29, state-update:3, state-update:4, feeling:2]
+  vibes:17 @29 back=Y co=[feel:1, narrator:8, state:3, state:4, vibes:15, vibes:16] lic-out=[proto:29, state-update:3, state-update:4]
+  vibes:18 @35 back=Y co=[narrator:10, vibes:19, vibes:20] lic-out=[proto:32, state-update:4]
+  vibes:19 @35 back=Y co=[narrator:10, vibes:18, vibes:20] lic-out=[proto:33, state-update:4, state-update:3]
+  vibes:20 @35 back=Y co=[narrator:10, vibes:18, vibes:19] lic-out=[proto:33, state-update:4]
 
 ### exposition (4 entries)
   exposition:1 @0 back=N lic-out=[b01c03:3, b01c01:5]
@@ -98,7 +100,7 @@ totals: 60 facet entries; 23/35 protolines decorated (65.7%)
 
 ## Pile-ups (>4 facets co-located on one protoline)
 
-- **@29** (7): feel:2, narrator:8, state:3, state:4, vibes:15, vibes:16, vibes:17
+- **@29** (7): feel:1, narrator:8, state:3, state:4, vibes:15, vibes:16, vibes:17
     `taylor-hebert-kl-122ac stops the rushwick-pass`
 - **@21** (5): narrator:6, state:1, state:4, vibes:11, vibes:12
     `taylor-hebert-kl-122ac adds the courier to the body-map`
