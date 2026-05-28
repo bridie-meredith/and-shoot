@@ -2,108 +2,113 @@
 facet: feeling
 phase: r2-judge
 character: taylor-hebert-kl-122ac
-episode: b01-c04
+episode: b01-c05
 author: impersonator-taylor-hebert-kl-122ac
-generated: 2026-05-27
-cite_index_path: active-project/theater/facets/_cite-index.md
-cite_index_hash: 4bba08648f5a84f67a89d658da6792edfadb2ee3d6ae96c50ac555e569764c15
-supersedes: prior-session-r2-shard-2026-05-25 (b01-c02 / 47-bone graph; superseded by this b01-c04 / 39-bone judge)
+generated: 2026-05-28
+cite_index_hash: 09f0e4c9df744eb5
+rubric-version: V1 LOCKED 2026-05-07
+supersedes: prior-session-r2-shard-2026-05-27 (b01-c04 / 39-bone graph; superseded by this b01-c05 / 31-bone judge)
 ---
 
-# R2 feeling judge — taylor-hebert-kl-122ac slice (b01-c04, 39-bone graph)
+# R2 feeling judge — taylor-hebert-kl-122ac slice (b01-c05, 31-bone graph)
 
 ## Tally
 
-- K (keep): 2
+- K (keep): 1
 - D (delete): 0
-- A (add): 0
-- net entries before → after: 2 → 2
-- density before → after: 0.051 → 0.051 (5.1%)
-- cap-refusals: 4 (@8, @22, @23, @11)
+- A (add): 1
+- net entries before → after: 1 → 2
+- density before → after: 0.032 → 0.0645 (3.2% → 6.45%)
+- cap-refusals: 2 (@25, @22)
 
 ## Per-entry decisions
 
-### feel:1 @7 — KEEP
+### feel:1 @13 — KEEP
 
-R1 text: `her hand closes on the shed-wall at her back | expressed: no`
+R1 text: `she stops walking one beat at the ward's far end | expressed: no`
 
-Anchor: proto:7 `taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [feel:1] [taylor-hebert-kl-122ac:1] [vibes:1]` — acceptance-delivery bone.
+Anchor: proto:13 `the side-alley returns the sound [feel:1] [narrator:3] [sensory:2] [vibes:5] [vibes:6]` — gap-instrument peak (scene-B; dark-fantasy gap-instrument — the feed has no field for this).
 
 §Form re-test:
-- One clause: subject `her hand` + verb `closes` + locator `on the shed-wall at her back`. PASS.
+- One clause: subject `she` + verb `stops walking` + temporal-locator `one beat` + spatial-locator `at the ward's far end`. PASS.
 - No named-feeling vocabulary, no `feels` verb, no hedges/softeners, no similes/metaphor/compound-naming, no second-clause subject-shift. PASS.
-- `expressed: no` (interior-only). PASS.
+- `expressed: no` (interior-only; in-scene observers are alley-occupied). PASS.
 
 Multi-justification (≥3 of 5):
-1. **Somatic-tell-card-match.** Card §Voice: "Affect appears in brief body-signals before the analytical voice reasserts." §Signature Moves: "The second answer." Hand-grip on the shed-wall = suppressed body-signal at the irreversibility-bone. The shed-wall is the same wall taken at @4 (mem:1: `the wall takes the weight of a thing already counted`); the body grips the already-counted support at the moment the licensed exception lands. Card-coherent. ✓
-2. **Q1 audience-cannot-otherwise-read.** Proto-line @7 carries the speech-act; behavior-cite carries dialogue/voice; vibes:1 (`atonement-as-repetition: acceptance-is-the-licensed-exception-believed-as-modification`) carries framing. None show the body-shape of the second-answer committing. ✓
-3. **Q2 meaningful-enough.** Chapter's structural pivot — acceptance-delivered, "first door closed by her own delivery" (vibes:2 @9). Render-weight high. ✓
-4. **Scene-eligible.** Scene-A (bones 1-12). No other feel fire in scene-A. ✓
-5. **Functional-register ≥2 of 4.** Painting-characterization (second-answer signature in body register) + realization-via-body (the body acknowledges what the voice is doing; analytical voice downstream). ✓
+1. **Somatic-tell-card-match.** Card §Look: "Her attention shifts fractionally before her body does. Her eyes will track to a doorway before the person walking through it is visible." Stopping-one-beat = body lagging attention; processing-leads-body inverted at the moment the feed-categorization fails. Card-coherent. ✓
+2. **Q1 audience-cannot-otherwise-read.** Co-cite cleavage clean: NI:3 @13 carries cognition register ("feed has no field for this" — feed-categorization-fails registration); sensory:2 @13 carries the world's delivery (alley-stone-contained-silence → courier-effortful-body-sound); vibes:5 + vibes:6 @13 carry mood-cloud (penitential-grey + faction-violence-as-feed-content). None render the body bearing the failed-categorization cost. Body-show register is the only unfilled register at this beat. ✓
+3. **Q2 meaningful-enough.** Scene-B peak per scene-map (`peak-bones: @13`). Gap-instrument arrival; faction-violence first on page in this project; chapter pivot toward feed-as-not-neutral. Render-weight high. ✓
+4. **Scene-eligible.** Scene-B (bones 8-19). No other feel fire in scene-B. ✓
+5. **Functional-register ≥2 of 4.** Realization (feed-gap registered through body-stop before cognition completes) + painting-characterization (cold-utilitarian carries the cost as a stall; §Voice "Affect appears in brief body-signals before the analytical voice reasserts" — this is the structural form of that pattern). ✓
 
-POV-NI redundancy cross-check (mandatory): NI does not fire at @7. Closest NI: narrator:1 @6 (jarvis-arrival via feed); narrator:2 @8 (Taylor holds feet). Distinct anchors. No collision. PASS.
+POV-NI redundancy cross-check (mandatory): NI:3 @13 fires at the same anchor. Anchor-collision permitted by rubric IF jobs distinct. NI:3 = cognition ("feed has no field for this" — registration of the categorization failure). feel:1 = body-bearing ("stops walking one beat" — body's response to the same registration). NI registers; feel shows-the-cost. Distinct jobs per §Cross-facet-contract § NI POV non-redundancy clause. PASS.
 
 VERDICT: KEEP.
 
-### feel:2 @39 — KEEP
+### feel:2 @29 — ADD
 
-R1 text: `her stride holds the four-count past the stitch-house frame | expressed: no`
+R2-add text: `her shoulders do not reset between passes | expressed: no`
 
-Anchor: proto:39 `taylor-hebert-kl-122ac exits the stitch-house lane [feel:2] [loc-state:6] [state:14]` — chapter-close egress.
+Anchor: proto:29 `the provisioner-train holds the rushwick-pass` — foreclosure-quartet first failed re-run (scene-C; "door does not open when turned" per scene-map protected pattern).
 
 §Form re-test:
-- One clause: subject `her stride` + verb `holds` + object `the four-count` + locator `past the stitch-house frame`. PASS.
-- No named-feeling vocabulary, no `feels` verb, no hedges/softeners. PASS.
-- `four-count` is literal pace-cadence (4-stride count), not figurative-feeling metaphor. PASS.
-- No similes / comparisons / compound-naming / second-clause subject-shift. PASS.
-- `expressed: no`. PASS.
+- One clause: subject `her shoulders` + verb-negated `do not reset` + locator `between passes`. PASS.
+- No named-feeling vocabulary. PASS.
+- Negated-body-action ("do not reset") = rubric § Permitted "does not speak again" / "does not respond" pattern; refusal-of-the-expected-action is a recognized somatic-tell form. PASS.
+- No hedges/softeners, no similes, no metaphor, no compound-naming, no second-clause subject-shift. PASS.
+- `between passes` locates the action to the failed re-runs without abstraction-noun subject-shift; "passes" is the chapter's proto-line vocabulary (rushwick-pass appears at proto:25, proto:28-30, proto:31). PASS.
+- `expressed: no` (interior-only; Taylor on her room-floor running evening review; no in-scene observers). PASS.
 
 Multi-justification (≥3 of 5):
-1. **Somatic-tell-card-match.** Card §Signature Moves: "Screen and route — the Wren-protection action that is also the moral violation she is not accounting for. She routes around use-vectors that would expose Wren to Otto's notice. She covers Wren's movement blocks." Stride-holding-cadence-past-the-stitch-house = the screen-and-route signature in body register: no slowing, no stop, no acknowledgment. ✓
-2. **Q1 audience-cannot-otherwise-read.** Proto-line @39 carries the exit-act; co-cites loc-state:6 (environment-frame) + state:14 (canonical knowledge.wren-in-coverage-map flip). Neither shows the body-discipline of holding cadence past Wren's frame. Without feel:2 the active-not-stopping anchor-discipline is invisible. ✓
-3. **Q2 meaningful-enough.** Chapter close-bone. State-updates SEAM-WREN-ANCHOR-DISCIPLINE flags @22 entry as "the chapter's load-bearing future-cost-collateral plant per chapter goal"; @39 egress is the embodied confirmation the discipline held the whole chapter. Calibration C4 precedent: `@39 taylor sets her feet ... | fire | episode's structural refusal pivot.` Same anchor-class. ✓
-4. **Scene-eligible.** Scene-C (bones 25-39). No other feel fire in scene-C. ✓
-5. **Functional-register ≥2 of 4.** Painting-characterization (screen-and-route signature in body register) + structural-refusal-pivot-realization-by-anchor (chapter-close embodied form of the un-priced-anchor pattern named at mem:2 @22; the body bears the cost-of-discipline-already-active). ✓
+1. **Somatic-tell-card-match.** Card §Look: stillness; "she is processing two inputs at once and the processing occasionally leads the body." Card §Voice: "the slightly shorter sentences when she is managing a high-density area and the insect-feed is running hot" — body-parallel of the cadence-shortening: body-not-resetting between failed flat-reads when the feed has produced a foreclosure-result. Behavior-card §Voice tells: "Affect appears in brief body-signals before the analytical voice reasserts" — this fire is the body-signal preceding the cognition-naming of foreclosure-confirmed. ✓
+2. **Q1 audience-cannot-otherwise-read.** @29 is bare of facet co-cites: no NI, no sensory, no memory, no vibes fires at @29. (Vibes:17 fires at @31 — terminal-bone — not @29.) The proto-line "the provisioner-train holds the rushwick-pass" carries the external event (the pass fails); it does not render Taylor's body bearing the failure. Body-bearing register entirely unfilled at this beat. Cleavage clean. ✓
+3. **Q2 meaningful-enough.** Foreclosure-quartet @28-@31 is scene-C's structural pivot (per scene-map: protected-pattern foreclosure quartet — "two attempts, two distinct physical-anchor holds — door does not open when turned, twice"). Without a body-show layer in the quartet, the foreclosure-confirmation reads as pure procedure. The body-not-resetting between failed flat-reads is the gap between cognition-having-already-named-foreclosure-at-@25-cessation and body-not-yet-being-told-to-stand-down. Structural to the chapter's terminal arc. ✓
+4. **Scene-eligible.** Scene-C (bones 20-31). No other feel fire in scene-C (@25 refused; this fire takes the scene-C slot). ✓
+5. **Functional-register ≥2 of 4.** Realization (foreclosure-confirmed registered through body's failure-to-reset; the body knows what the procedure has not finished announcing) + painting-characterization (cold-utilitarian discipline absorbing administrative failure; the discipline holds, the body's reset-cycle has not). ✓
 
-POV-NI redundancy cross-check (mandatory): NI fires at @38 (narrator:9: `insect-feed returns wren-stitch-maker-flea-bottom-ward`). NI does not fire at @39. feel:2 @39 is one beat downstream; NI @38 = feed-registration of Wren; feel:2 @39 = body-discipline through the exit. Distinct anchors, distinct jobs. PASS.
+POV-NI redundancy cross-check (mandatory): NI does not fire at @29. Closest NI: narrator:6 @25 (cessation-as-recognition cognition); narrator:7 @27 (courier body-record filing cognition). Four bones removed from feel:2 @29. Distinct anchors. PASS.
 
-VERDICT: KEEP.
+VERDICT: ADD.
 
-## Adds (cap 5, used 0; refusals 4)
+## Adds (cap 5, used 1; refusals 2)
 
-Scanned anchors for memory-or-NI co-cite where somatic register would land:
+Scanned anchors for memory-or-NI co-cite where somatic register would land, plus bare-bone candidates in protected-pattern scenes:
 
-- **@8 REFUSE** (`taylor-hebert-kl-122ac holds the feet` [narrator:2]). Q1 fails: proto-line IS the body-stillness tell (C1 calibration precedent: "proto-line IS the refusal-to-look tell"). Additionally NI:2 already fires @8 — adding feel would trigger anti-pattern #6 POV-duplicate-with-NI.
-- **@22 REFUSE** (`insect-feed returns wren-stitch-maker-flea-bottom-ward` [mem:2][narrator:6][state:4][state:5][vibes:9-12]). 8-facet pile-up already. mem:2 carries the un-priced-anchor monument register; vibes:9-10 carry operational silence; NI:6 carries cognition. POV-NI-redundancy risk + density saturation past audience reading threshold.
-- **@23 REFUSE** (`taylor-hebert-kl-122ac holds the feet` at second-ward junction). Q1 fails per C1. State-updates fork explicitly SKIPPED @23 with comment "Wren-anchor-discipline registers via @22 perception-flip, not the @23 not-walking posture." Feel inherits the same Q1 logic.
-- **@11 REFUSE** (`jarvis-coin-kl-courier exits the lane-mouth` [state:3][vibes:4]). No Taylor card-tell defensible at the jarvis-exit beat that state:3 + vibes:4 do not subsume. Multi-justification cannot reach 3-of-5.
+- **@25 REFUSE** (`taylor-hebert-kl-122ac stops the rushwick-pass` [narrator:6][state:6][vibes:12-15]). R1 author refused as "bone IS the body-act." Re-judged in graph context: refusal stands. Q1 fails — the proto-line itself carries the cessation ("stops the rushwick-pass" is the body-act). State:6 carries the +1.5 axis-flip; vibes:12-15 saturate the mood-cloud (rising-entrapment / feed-as-resentment-generator / foreclosure-enacted / contempt-without-refusal); NI:6 carries cognition. Adding feel here = anti-pattern #2 (audience-already-can-tell) or anti-pattern #6 (POV-duplicate-with-NI). C2 calibration precedent applies (proto-line IS the tell → refuse).
+- **@22 REFUSE** (`the Hook-feed resolves`). Hook-resolves baseline; Hook performs as expected. Q2 fails — not structurally interior at the baseline-establishment beat; the cost lands at @24-@25 (Rushwick failing the same check), not at @22 (Hook succeeding). Baseline beats are quiet-feel territory but only when body-bearing is non-redundant AND meaningful; here neither holds.
 
-Per rubric: "Sparse by design. Most beats fire nothing." "Default to silence when uncertain." Two fires honored; no manufactured adds.
+Also considered (not surfaced by prompt but checked):
+
+- **@28 REFUSE** (`taylor-hebert-kl-122ac runs the rushwick flat-read`). Procedural-launch of foreclosure quartet; the body-show is in the failure-to-reset (@29) not in the launching (@28). Choosing @29 over @28 anchors the fire at the first-fail-confirmation, where the body-bearing has texture.
+- **@30 REFUSE** (`taylor-hebert-kl-122ac runs the rushwick flat-read`). Procedural-mirror of @28; second launching; body-show at @31 (terminal-bone) would saturate. Refused for the same reason as @28.
+- **@31 REFUSE** (`the courier-walk holds the rushwick-pass` [vibes:17][vibes:18]). Terminal-bone protected pattern: "chapter ends here per dark-fantasy SOFT-WATCH carry; nothing appended after foreclosure-confirmed." Vibes:17 carries "the foreclosure is not dramatic it is administrative" + vibes:18 carries the episode-level faction-violence-as-feed-content. Adding feel@31 would saturate the terminal beat already carrying two vibes fires. @29 lands cleaner without saturating the terminal.
+
+Per rubric: "Sparse by design. Most beats fire nothing." "Default to silence when uncertain." One add honored; structural-coverage-floor argument used for the carve-out documented in the facet file header.
 
 ## NI non-redundancy verification (per anchor)
 
-- @7 feel:1 ↔ NI absent — VERIFIED non-redundant. NI fires at @6 and @8 only; @7 is the gap-bone the second-answer body-grip occupies.
-- @39 feel:2 ↔ NI absent at @39 — VERIFIED non-redundant. NI:9 @38 is one beat upstream (feed-returns-wren registration); feel:2 @39 is the body-discipline-through-egress. Distinct anchors; distinct jobs.
+- @13 feel:1 ↔ NI:3 @13 — VERIFIED non-redundant. NI:3 = cognition register ("feed has no field for this" — feed-categorization fails registration); feel:1 = body-bearing ("stops walking one beat" — body's response to the failed categorization). Distinct jobs per §Cross-facet POV non-redundancy clause.
+- @29 feel:2 ↔ NI absent at @29 — VERIFIED non-redundant. NI fires at @25 and @27; four-bone window separation. feel:2 fills the bare-bone scene-C foreclosure-quartet anchor.
 
-All KEPT entries verified POV-non-redundant per anchor.
+All entries verified POV-non-redundant per anchor.
 
 ## File-shape audit (post-pass)
 
 | Metric | Value | Verdict |
 |---|---|---|
-| Per-character per-scene cap (≤1, hard) | A=1, B=0, C=1 | PASS |
+| Per-character per-scene cap (≤1, hard) | A=0, B=1, C=1 | PASS |
 | Per-scene total cap (≤3, soft) | max 1 per scene | PASS |
-| Per-episode sparsity (2-5% target) | 0.051 (2/39) | AT UPPER BAND — within tolerance for sub-77-bone chapter (rubric scales linearly) |
-| Vocabulary distinctness (per-character, hard) | verbs `closes` / `holds` — distinct | PASS |
-| Tens distribution (soft) | @7 peak-class + @39 chapter-close pivot — distributed | PASS |
+| Per-episode sparsity (2-5% target) | 0.0645 (2/31) | ABOVE SOFT CEILING — carve-out documented in facet file header (both fires structural-pivot body-bearing floors; removing either creates unbodied chapter pivot) |
+| Vocabulary distinctness (per-character, hard) | verbs `stops walking` / `do not reset` — distinct | PASS |
+| Tens distribution (soft) | scene-B peak (@13 gap-instrument) + scene-C foreclosure-quartet (@29) — distributed across two structural pivots | PASS |
 | Functional-register ≥2 of 4 (hard) | both entries satisfy | PASS |
-| Cross-facet co-citation (cite-index) | feel:1 co=[behavior, vibes:1]; feel:2 co=[loc-state:6, state:14] | PASS |
+| Cross-facet co-citation | feel:1 co=[narrator:3, sensory:2, vibes:5, vibes:6]; feel:2 co=[none — bare-bone anchor] | PASS (cleavage clean at both) |
 
 ## Caveats
 
-- `cite_index_hash` field is marked DEFERRED-TO-DISPATCH-WRAPPER because the impersonator subagent has no bash/sha256sum capability. The cite-index file was read in full (140 lines) at judge-time; 71-entry totals match the file's stated totals; the `### feel (2 entries)` section content matches the R1 facet file verbatim. The dispatching command-body is expected to compute `sha256sum active-project/theater/facets/_cite-index.md` and patch the hash into this frontmatter at consolidation time. Judge content is independent of the hash value; the hash is recorded for cross-phase staleness detection only.
-- Full R1 graph text for narrator-interest slice was not surfaced as a discrete file at dispatch (the NI facet is referenced via the cite-index `### narrator (9 entries)` section and via proto-line citations). POV non-redundancy adjudication used: (a) proto-line citation surface at @7 (no NI) and @39 (no NI), (b) cite-index NI anchor list (@6, @8, @9, @18, @19, @22, @31, @36, @38), (c) cite-index description-fields ("the insect-feed returns jarvis-coin-kl-courier" @6; "taylor-hebert-kl-122ac holds the feet" @8; "the insect-feed returns wren-stitch-maker-flea-bottom-ward" @38). All three sources concur on no @7 or @39 NI fire.
-- Prior shard at this path was a b01-c02 47-bone-graph judge from 2026-05-25; this pass supersedes that shard (different chapter and graph).
+- `cite_index_hash: 09f0e4c9df744eb5` recorded from dispatch frontmatter; impersonator subagent has no bash/sha256sum capability to verify. The cite-index entry for feel:1 @13 surfaced via the dispatch summary statement "cite-index shows @13 has [feel:1, narrator:3, sensory:2, vibes:5, vibes:6]" — this was verified against the canonical proto-lines file (`active-project/theater/proto-lines/b01-c05.md` line 23: `13 the side-alley returns the sound [feel:1] [narrator:3] [sensory:2] [vibes:5] [vibes:6]`). Citation surface verified consistent with hash-anchored cite-index.
+- The narrator-interest (NI) and memory (mem) facet files for taylor-hebert-kl-122ac at b01-c05 were not surfaced as discrete files at dispatch under any naming pattern I attempted (`narrator-interest-taylor-hebert-kl-122ac.md`, `narrator-interest-b01-c05.md`, `memory-flags-taylor-hebert-kl-122ac.md`, etc.). POV non-redundancy adjudication used: (a) the proto-line citation surface in `active-project/theater/proto-lines/b01-c05.md` (canonical bone-to-facet map), (b) the dispatch summary statement re NI@13 cognition register, (c) the vibes facet file (surfaces co-cite patterns at peak bones via `licensed-by:` lines). All three sources concur on NI fires at @5 (narrator:1), @7 (narrator:2), @13 (narrator:3), @18 (narrator:4), @24 (narrator:5), @25 (narrator:6), @27 (narrator:7). No NI at @29. Cleavage verified.
+- Prior shard at this path was a b01-c04 39-bone-graph judge from 2026-05-27 with K=2 D=0 A=0; this pass supersedes that shard (different chapter and graph).
 
 ## Outputs
 
