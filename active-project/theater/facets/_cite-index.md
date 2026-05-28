@@ -2,18 +2,18 @@
 generated: 2026-05-28
 source: active-project/theater/proto-lines/b01-c05.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 62 facet entries; 23/35 protolines decorated (65.7%)
+totals: 62 facet entries; 22/35 protolines decorated (62.9%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
-| 0 (bare)   | 12 |
-| 1          | 11 |
+| 0 (bare)   | 13 |
+| 1          | 10 |
 | 2          | 2 |
 | 3          | 3 |
-| 4          | 5 |
-| 5          | 1 |
+| 4          | 4 |
+| 5          | 2 |
 | 7          | 1 |
 
 ## Per-facet entries
@@ -33,7 +33,7 @@ totals: 62 facet entries; 23/35 protolines decorated (65.7%)
   narrator:1 @2 back=Y co=[exposition:3, state:1, vibes:3]
   narrator:2 @5 back=Y co=[loc-state:2, vibes:4]
   narrator:3 @10 back=Y co=[loc-state:4]
-  narrator:4 @14 back=Y co=[vibes:6, vibes:7, vibes:8]
+  narrator:4 @14 back=Y co=[sensory:2, vibes:6, vibes:7, vibes:8]
   narrator:5 @19 back=Y co=[mem:1, vibes:10]
   narrator:6 @21 back=Y co=[state:1, state:4, vibes:11, vibes:12]
   narrator:7 @28 back=Y co=[state:2, vibes:13, vibes:14]
@@ -43,7 +43,7 @@ totals: 62 facet entries; 23/35 protolines decorated (65.7%)
 
 ### sensory (2 entries)
   sensory:1 @4 back=Y
-  sensory:2 @14 back=N co=[narrator:4, vibes:6, vibes:7, vibes:8]
+  sensory:2 @14 back=Y co=[narrator:4, vibes:6, vibes:7, vibes:8]
 
 ### state (12 entries)
   state:1 @21 back=Y co=[narrator:6, state:4, vibes:11, vibes:12]
@@ -76,9 +76,9 @@ totals: 62 facet entries; 23/35 protolines decorated (65.7%)
   vibes:3 @2 back=Y co=[exposition:3, narrator:1, state:1] lic-out=[proto:2, state-update:1]
   vibes:4 @5 back=Y co=[loc-state:2, narrator:2] lic-out=[proto:5]
   vibes:5 @9 back=Y lic-out=[proto:9, state-update:1]
-  vibes:6 @14 back=Y co=[narrator:4, vibes:7, vibes:8] lic-out=[proto:14, state-update:2]
-  vibes:7 @14 back=Y co=[narrator:4, vibes:6, vibes:8] lic-out=[proto:14, state-update:2]
-  vibes:8 @14 back=Y co=[narrator:4, vibes:6, vibes:7] lic-out=[proto:14, state-update:2]
+  vibes:6 @14 back=Y co=[narrator:4, sensory:2, vibes:7, vibes:8] lic-out=[proto:14, state-update:2]
+  vibes:7 @14 back=Y co=[narrator:4, sensory:2, vibes:6, vibes:8] lic-out=[proto:14, state-update:2]
+  vibes:8 @14 back=Y co=[narrator:4, sensory:2, vibes:6, vibes:7] lic-out=[proto:14, state-update:2]
   vibes:9 @17 back=Y co=[state:3] lic-out=[proto:17, state-update:3]
   vibes:10 @19 back=Y co=[mem:1, narrator:5] lic-out=[proto:19, state-update:3]
   vibes:11 @21 back=Y co=[narrator:6, state:1, state:4, vibes:12] lic-out=[proto:21, state-update:1]
@@ -102,6 +102,8 @@ totals: 62 facet entries; 23/35 protolines decorated (65.7%)
 
 - **@29** (7): feel:1, narrator:8, state:3, state:4, vibes:15, vibes:16, vibes:17
     `taylor-hebert-kl-122ac stops the rushwick-pass`
+- **@14** (5): narrator:4, sensory:2, vibes:6, vibes:7, vibes:8
+    `the side-alley returns the sound`
 - **@21** (5): narrator:6, state:1, state:4, vibes:11, vibes:12
     `taylor-hebert-kl-122ac adds the courier to the body-map`
 
@@ -123,4 +125,4 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 ## Bare protolines (no citations accrued)
 _Round-2 add candidates if the rubric licenses a fire here._
 
-@6, @15, @16, @18, @24, @25, @26, @27, @30, @32, @33, @34
+@6, @13, @15, @16, @18, @24, @25, @26, @27, @30, @32, @33, @34

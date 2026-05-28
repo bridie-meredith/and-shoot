@@ -18,8 +18,8 @@
 10 taylor-hebert-kl-122ac holds the wall-line
 11 the three figures enter the side-alley
 12 the three figures close the alley-mouth
-13 the three figures pin the courier [sensory:2]
-14 the side-alley returns the sound
+13 the three figures pin the courier
+14 the side-alley returns the sound [sensory:2]
 15 the courier raises the spine
 16 the courier finds the feet
 17 taylor-hebert-kl-122ac files the enforcement-record

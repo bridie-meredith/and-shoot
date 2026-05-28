@@ -606,3 +606,137 @@ As established above: vibes:14 is a vibe at @28 (`apparatus holds the held color
 No new findings introduced by the remediation. The 6 prior SIGNALs and 3 non-blocking FLAGs (signal-001 through signal-006, flag-001 through flag-003) are unchanged in classification and carry forward as advisory; they were not in scope for this re-audit and no remediation touched them.
 
 The chapter's facet graph is now mechanically clean. The two prior HARDs are resolved. No HARD findings remain.
+
+---
+
+## cycle-2 re-audit 2026-05-28 (after sensory:2 re-anchor + loc-state:5 acoustic-baseline)
+
+re-audit-timestamp: 2026-05-28
+re-audit-scope: targeted — cycle-2 fixer edits: (1) sensory:2 anchor @13→@14; (2) loc-state:5 @11 acoustic-baseline note addition
+re-audit-files-read: sensory-b01-c05.md, location-state-b01-c05.md, proto-lines/b01-c05.md, _cite-index.md, interest-narrator-b01-c05.md, memory-b01-c05.md, vibes-b01-c05.md, rubric-sensory.md, rubric-location-state.md, fixer log and-facets-b01-c05-cycle2-fixes.md
+
+---
+
+### check-1: sensory:2 @14 anchor validity
+
+**Bone @14 SVO:** `the side-alley returns the sound`
+
+Modality declared in sensory:2: `sound`. The SVO names the alley's acoustic return — a perceptual event in which the alley-as-chamber returns sound outward. The modality is `sound` and the SVO canonically names it.
+
+**Disambiguation gate (Q1):** "returns the sound" — the verb "returns" is bare in this context (it names the directional acoustic event but does not self-carry amplitude, character, or perceptibility at the junction). The alley returning sound is a physics event; whether that return is audible at Taylor's wall-line position requires the flag. Q1 clears: bare-verb, audience-without-flag would not know the junction-perceptibility claim.
+
+**Magnitude gate (Q2):** The effortful-body-sound transition from contained-silence to the alley projecting sound outward toward Taylor's wall-line is a discrete perceptual event (contained → emitted). Not sub-threshold; the emission from the alley is the chapter's gap-instrument moment at scene-B peak. Q2 clears.
+
+**Audience-side perceptibility:** The alley's sound-return toward the junction is an environmental event, not a fauna-feed perception. Taylor is at the wall-line, not inside the alley; the flag records what the alley projects outward, which is universally perceptible (the sound either reaches the junction or it does not). No fauna-feed-extension. Perceptibility gate: PASS.
+
+**Old-state lineage:** sensory:2 carries `# old-state: loc-state:5 @11`. Loc-state:5 @11 now reads: `oc-rushwick | morning | clear | side-alley mouth visible from junction; interior not | one-person-wide stone passage off the east exit; rough original-construction walls, uneven floor; acoustic-baseline: alley-interior-contained-silence — stone walls return sound inward; ambient below human-register threshold until alley-emission event carries it outward`. The acoustic-baseline field in loc-state:5 names `alley-interior-contained-silence` as the prior perceptual state, which is exactly the `<old-state>` in sensory:2 (`alley-stone-contained-silence`). The two names are functionally equivalent (alley-stone-contained-silence = alley-interior-contained-silence; both name the same contained-acoustic baseline). The old-state is anchored: loc-state:5 @11 is the most recent loc-state for the alley location before @14, and it now carries the sensory vocabulary field the rubric requires. Old-state lineage: RESOLVED.
+
+**Anchor correctness — @14 vs @13:** The cycle-1 audit (via the sensory-disambiguation-pedant and sensory-old-state-reader reviewers, per the fixer log) found that @13 (`the three figures pin the courier`) is the causal bone — the action that produces the sound — while @14 (`the side-alley returns the sound`) is the perceptual-event bone — the SVO that canonically names the alley-emission event. The rubric requires the anchor to be the beat where the perceptual modality undergoes the discrete inflection the audience registers. @14's SVO IS the inflection event; @13's SVO is the cause. The re-anchor to @14 correctly places the flag at the perceptual-event bone, not the causal bone.
+
+**Cross-facet non-redundancy with NI:4 @14:** The cite-index shows narrator:4 @14 and sensory:2 @14 both anchored at the same bone. NI:4 reads: "the alley returns a sound the feed has no field for; the gap is registered as gap, not as the body inside it; the not-naming of what produced the sound is the read that the discipline can still deliver." Sensory:2 reads: `sound: alley-stone-contained-silence -> courier-effortful-body-sound`. The two entries operate on distinct lenses: NI:4 is the cognitive interior register (what Taylor's feed makes of the gap — the not-naming, the discipline-reading of the gap-as-gap). Sensory:2 is the environmental acoustic delta (the contained-silence breaking to outward emission — the physical fact that the alley returns sound). NI covers the cognitive response; sensory covers the acoustic state-change. These are non-redundant lenses on the same anchor. No DEDUP fault.
+
+**Sensory:2 anchor validation: PASS.**
+
+---
+
+### check-2: loc-state:5 @11 acoustic-baseline extension validity
+
+**Rubric basis:** The loc-state rubric's `<one-clause sensory note>` field is "the most load-bearing field" and names "a single perceptible thing the move turns on." The rubric's form is `<id> @<proto-line-id> <location-slug> | <time> | <weather> | <conditions> | <one-clause sensory note>`. The acoustic-baseline addition extends the existing sensory note field of loc-state:5 @11 — it does not add a new loc-state entry; it annotates the existing entry's sensory note with acoustic vocabulary.
+
+**Whether the extension is a valid sensory-note extension vs. a new entry:** The fixer log records this as an extension of the existing loc-state:5 entry's sensory-vocabulary field, specifically to provide old-state lineage for sensory:2. The rubric's form permits the sensory note to carry compound information where both elements describe the same location's perceptible character at that anchor. The extension adds: `acoustic-baseline: alley-interior-contained-silence — stone walls return sound inward; ambient below human-register threshold until alley-emission event carries it outward`. This is a sensory-vocabulary gloss added to the conditions/sensory-note portion of an existing entry, not a new location-state entry with a new anchor. The rubric does not prohibit annotating the sensory note with acoustic-vocabulary terminology that resolves the old-state lineage requirement of a downstream sensory flag.
+
+**Three-axis check on the extended loc-state:5 @11:**
+- Necessity: @11 is the bone `the three figures enter the side-alley` — a movement-and-positioning beat. The loc-state fires on first entry into the alley (new location sub-area established). The acoustic-baseline note adds the alley's acoustic character, which is directly relevant to what movement into the alley means for sound propagation. Necessity: the alley's acoustic physics is what distinguishes this location sub-area from the junction. PASS.
+- Interestingness: the `stone walls return sound inward; ambient below human-register threshold` is a specific perceptible fact (not mood-painting) — it names the acoustics of the contained space. The note selects one focus-element (the acoustic containment property) and names it concisely. PASS.
+- Frugality: the extension does not add a new anchor; it extends the existing @11 entry's sensory vocabulary. No new entry is introduced. No frugality concern with adding vocabulary to an existing entry's sensory note field.
+
+**Whether the extension introduces an unreviewed new loc-state entry:** It does not. Loc-state:5 remains one entry at @11; the acoustic-baseline annotation is an extension of the existing entry's sensory note field. The cite-index shows `loc-state:5 @11 back=Y` — one entry, one anchor. No new entry ID was added; the entry count remains 9. No unreviewed new entry introduced.
+
+**Old-state lineage chain:** The chain is: loc-state:5 @11 (acoustic-baseline: alley-interior-contained-silence) → sensory:2 @14 (old-state: alley-stone-contained-silence → courier-effortful-body-sound). The fixer-established fix path is loc-state edit lands first (extending @11's sensory vocabulary), then sensory:2 references the now-anchored baseline. The chain is structurally sound: loc-state @11 < sensory @14 in sequence; the old-state in sensory:2 resolves to the loc-state baseline established three beats prior.
+
+**Loc-state:5 acoustic-baseline extension: PASS.**
+
+---
+
+### check-3: sensory facet integrity post-edit
+
+**Modality count:** sensory:1 @4 (tactile) + sensory:2 @14 (sound) = 2 distinct modalities. Floor ≥2: PASS.
+
+**Per-scene caps:**
+- scene-A (@1–@7): sensory:1 @4 — 1 entry. Cap 0/3 used; 1/3 after. ≤3 PASS.
+- scene-B (@8–@22): sensory:2 @14 — 1 entry. Cap 0/3 used; 1/3 after. ≤3 PASS.
+- scene-C (@23–@35): 0 entries. 0/3. PASS.
+
+**Sparsity:** 2/35 = 5.7%. Within 3–6% band. Note: 5.7% is marginally above the 6% ceiling by rounding; 2/35 = 0.0571... = 5.71%, which rounds to 5.7%. The prior pass-007 in the cycle-1 audit accepted this as within-band (5.7% rounds below 6%). No change in this classification. The short-chapter floor-vs-ceiling exemption (V3, rubric-sensory.md) also applies as a backstop if needed (bone_count 35 is above the <30 threshold for the exemption, but the 5.7% figure is already within-band or at most marginally above). PASS.
+
+**Bare-not-charged audit:** sensory:1's proto-line is `the provisioner-train crosses the junction` — "crosses" is bare ✓. sensory:2's proto-line is `the side-alley returns the sound` — "returns" is bare in acoustic-projection context ✓. No charged-word redundancy.
+
+**Inflection-not-sustained:** sensory:1 fires on the tactile load-event of a provisioner cart crossing stone — a transient spike, not a sustained level. sensory:2 fires on the alley-emission event — a transient spike (the alley returns sound once; the contained-silence is the baseline before and after). No sustained-level firing.
+
+**Sensory facet integrity: PASS.**
+
+---
+
+### check-4: cite-index rebuild clean
+
+The fixer log states the orchestrator ran `build_cite_index.py` after the cycle-2 edits, with output: "merged 15 author copies; consolidated feeling.md; consolidated state-updates.md; wrote _cite-index.md". The cite-index on disk shows `sensory:2 @14 back=N co=[narrator:4, vibes:6, vibes:7, vibes:8]`. The `back=N` for sensory:2 indicates the proto-lines file does NOT carry a `[sensory:2]` token at @14. This is a finding — see fault-c2-001 below.
+
+No body-integrity errors were reported in the cite-index generation output. The cite-index's per-facet entry counts are consistent with the facet files as read.
+
+---
+
+### check-5: stale `sensory:2 @13` citation sweep
+
+Scope: all facet files that could carry a `[sensory:2 @13]` or `sensory:2` cross-reference pointing to the old @13 anchor.
+
+**Proto-lines file (`b01-c05.md`):** Line 23 reads `13 the three figures pin the courier [sensory:2]`. Line 24 reads `14 the side-alley returns the sound [narrator:4] [vibes:6] [vibes:7] [vibes:8]`. The `[sensory:2]` token is still at @13, not at @14. The fixer log stated "(3) proto-lines b01-c05.md: [sensory:2] moved from line 13 to line 14" — but the file on disk contradicts this claim. The token was not moved. This is fault-c2-001.
+
+**Cite-index (`_cite-index.md`):** The cite-index shows `sensory:2 @14 back=N`. The `back=N` is the cite-index's own report that the proto-lines file does NOT carry a citation token for sensory:2 at @14. This is consistent with the proto-lines file still carrying `[sensory:2]` at @13 — the citation is present in the proto-lines file at @13, but the cite-index was rebuilt against the sensory facet file which says @14, producing the back=N result (the anchor in the facet is @14; the proto-line token is at @13; they do not match so back=N). The cite-index's back=N is a symptom of the unresolved proto-lines token, not an independent clean result.
+
+**Vibes file (`vibes-b01-c05.md`):** vibes:6, vibes:7, vibes:8 all anchor at @14 and carry no `sensory:2` reference in their `licensed-by` fields. No stale @13 citation.
+
+**Interest-narrator (`interest-narrator-b01-c05.md`):** NI:4 anchors at @14. No `sensory:` cross-reference in NI entries. No stale citation.
+
+**Memory, exposition, feeling:** None of these facet types carry `sensory:` cross-references. No stale citations.
+
+**State-updates:** No `sensory:` cross-references. No stale citations.
+
+**Result:** The only stale citation is the `[sensory:2]` token remaining at @13 in `proto-lines/b01-c05.md`. All other facets are clean.
+
+---
+
+### fault-c2-001
+
+- id: fault-c2-001
+- type: fault
+- what: The proto-lines file `active-project/theater/proto-lines/b01-c05.md` still carries `[sensory:2]` at line 13 (`13 the three figures pin the courier [sensory:2]`). The sensory facet file has been updated to anchor sensory:2 at @14, but the corresponding citation token in the proto-lines file was not moved. The fixer log explicitly states the move was applied ("proto-lines b01-c05.md: [sensory:2] moved from line 13 to line 14") but the file on disk does not reflect this. Line 14 reads `14 the side-alley returns the sound [narrator:4] [vibes:6] [vibes:7] [vibes:8]` — no `[sensory:2]` token is present at this line. The cite-index's `sensory:2 @14 back=N` is the direct consequence: the facet anchor is @14, the proto-lines token is at @13, so back-pointer verification fails.
+- why: The citation token in the proto-lines file is the canonical back-pointer that the stitcher and cite-index builder use to locate facet decorations against bones. With `[sensory:2]` at @13, the stitcher will associate the sound modality flag with the causal bone (`the three figures pin the courier`) rather than the perceptual-event bone (`the side-alley returns the sound`). This is the exact misattribution the cycle-2 re-anchor was designed to correct. The re-anchor is half-complete: the facet file is correct; the proto-lines file is not. The cite-index's `back=N` on sensory:2 is a persistent integrity signal that the graph is inconsistent.
+- criteria: `active-project/theater/proto-lines/b01-c05.md` line 13 must be changed from `13 the three figures pin the courier [sensory:2]` to `13 the three figures pin the courier`. Line 14 must be changed from `14 the side-alley returns the sound [narrator:4] [vibes:6] [vibes:7] [vibes:8]` to `14 the side-alley returns the sound [narrator:4] [sensory:2] [vibes:6] [vibes:7] [vibes:8]`. The cite-index must then be rebuilt so that `sensory:2 @14 back=Y`.
+
+---
+
+### check-6: no new mechanical findings from loc-state edit
+
+The loc-state:5 @11 edit is a sensory-vocabulary extension to an existing entry's sensory note field. It does not: add a new loc-state entry with a new ID (no new ID was introduced — entry count remains 9); change any anchor (the entry remains at @11); alter any field that the stitcher reads for location-slug, time, weather, or conditions; or affect any other facet's citations. The cite-index shows `loc-state:5 @11 back=Y` — unchanged from before. The acoustic-baseline annotation is a human-readable extension of the sensory note field that the sensory-old-state-reader rubric requires for old-state lineage; it has no mechanical effect on any other facet. No new mechanical findings from the loc-state edit.
+
+---
+
+### Cycle-2 Re-audit Summary
+
+| Check | Result | Notes |
+|-------|--------|-------|
+| sensory:2 @14 anchor validity | PASS | Perceptual-event bone, bare SVO, old-state lineage resolved via loc-state:5 acoustic-baseline, audience-perceptible, non-redundant with NI:4 |
+| loc-state:5 @11 acoustic-baseline validity | PASS | Valid sensory-note extension of existing entry; three-axis rubric clear; no new entry introduced |
+| sensory facet integrity post-edit | PASS | Modality floor met (tactile+sound); per-scene caps clean; sparsity within band |
+| cite-index rebuild | FINDINGS-PRESENT | back=N on sensory:2 is consequence of proto-lines token not moved (fault-c2-001) |
+| stale sensory:2 @13 citation sweep | FINDINGS-PRESENT | [sensory:2] token remains at @13 in proto-lines file (fault-c2-001) |
+| no new findings from loc-state edit | PASS | Extension-only; no new entry; no mechanical effect on graph |
+
+**New HARD introduced: 1**
+- fault-c2-001: `[sensory:2]` citation token not moved in proto-lines file; facet anchor @14 and proto-lines token @13 are inconsistent; stitcher misattribution risk; cite-index back=N symptom.
+
+**Cycle-2 re-audit verdict: FINDINGS-PRESENT**
+
+The sensory:2 re-anchor and the loc-state:5 acoustic-baseline extension are both content-correct — the facet-side changes are valid per rubric. However, the fixer did not complete the proto-lines file edit: the `[sensory:2]` citation token was not moved from @13 to @14 in `active-project/theater/proto-lines/b01-c05.md`. This is a HARD fault (fault-c2-001) because the facet anchor and the proto-lines back-pointer are now inconsistent, and the cite-index reports `back=N` as a consequence. The fix is a targeted two-line edit in the proto-lines file followed by a cite-index rebuild.
+
+No other facet files carry stale `sensory:2 @13` references. The loc-state edit introduced no new findings. The chapter's other facets (NI, vibes, memory, feeling, state-updates, exposition, scene-map, metaphor) are unaffected by the cycle-2 edits and carry forward at their prior audit status.
