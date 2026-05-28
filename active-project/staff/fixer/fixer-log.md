@@ -1300,3 +1300,9 @@ criteria met: yes — s03n01 now witnesses the social_tether-prot-rise held-axis
 findings-applied: 8 (fault-001: 6 bones — 4 recast + 2 removed, pre-verified; fault-002: 3 modifier strips, pre-verified; fault-003: 1 bone removed, pre-verified; fault-004: capability axes_held added to s02n01; fault-005: social_tether-prot-rise axes_held added to s03n01; event_map updated for all removed bones)
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-28T09:00:00Z — and-facets-b01c05-cycle2-remediation
+dispatch: /and-facets b01-c05 Phase 5b cycle-2 consolidated remediation — 4 facets touched (vibes:12-14 lic-out remap; narrator:2+:5 DELETE; memory carve-out preamble ADD; sensory:3 ADD); feeling left unchanged (advisory accept); cite-index regen required
+target: active-project/theater/facets/vibes.md, interest-narrator.md, memory.md, sensory.md, _cite-index.md
+audit-report: active-project/staff/audience/cape-fic-reader/audience-gate-cycle1-verdicts.md + dark-fantasy-reader/audience-gate-cycle1-verdicts.md + worm-canon-pedant/audience-gate-cycle1-verdicts.md; active-project/staff/auditor/facets-final-audit.md
+findings-queued: 4 (vibes EDIT; narrator DELETE×2; memory ADD-preamble; sensory ADD)
