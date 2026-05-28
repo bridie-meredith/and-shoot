@@ -549,7 +549,7 @@ scenes:
         notes: "try-flat-read sequence re-run bone 1: Taylor tries the flat-read again after the recognition"
 
       - slug: b01c05s03n11
-        svo: "the rushwick-pass holds at the provisioner-train"
+        svo: "the provisioner-train holds the rushwick-pass"
         bone_shape: held
         substance_delta:
           axis_moves: []
@@ -558,7 +558,7 @@ scenes:
               rationale: "foreclosure enactment bone 2: the Rushwick does not resolve under the flat pass — the read does not return as information; the color returns instead; the neutral read is not available to this content"
           cost_ledger_anchor: null
         dialogue_anchor: false
-        notes: "recast from perception-surrogate (fault-002); held-form discipline: the pass HOLDS — does not complete — at the provisioner-train as physical anchor; the held-form performs the foreclosure (read arrested at the physical thing that triggered the recognition); foreclosure enacted first time; 'holds' licensed here as stillness-against-pressure (the read cannot proceed past the provisioner-train — the pass is held, not resolved)"
+        notes: "recast from 'holds at' PP form (fault-003); SVO inverted: provisioner-train (physical subject) holds rushwick-pass (physical procedure as bare direct object); holds license condition 2 met — physical object resisting pressure; PP-free; foreclosure enacted first time; held-form discipline preserved"
 
       - slug: b01c05s03n12
         svo: "taylor-hebert-kl-122ac runs the rushwick flat-read"
@@ -575,7 +575,7 @@ scenes:
         notes: "try-flat-read sequence re-run bone 3: Taylor runs the pass again — second attempt; the repeat is load-bearing for the foreclosure-as-enacted-capability-failure"
 
       - slug: b01c05s03n13
-        svo: "the rushwick-pass holds at the courier-walk"
+        svo: "the courier-walk holds the rushwick-pass"
         bone_shape: held
         substance_delta:
           axis_moves: []
@@ -586,4 +586,4 @@ scenes:
               rationale: "filing the unavailability as texture does not return the read; moral_legibility_to_self holds — the recognition is categorized, not examined — but the foreclosure is on-page regardless"
           cost_ledger_anchor: null
         dialogue_anchor: false
-        notes: "recast from perception-surrogate (fault-002); held-form discipline: second pass holds at courier-walk (parallel structure to n11 but distinct anchor — n11 holds at provisioner-train, n13 holds at the courier who surfaced at n07; the second-pass hold at the courier reinforces the +1.5 recognition's specificity); foreclosure confirmed; cl-d05 firmly anchored; 'holds' licensed as stillness-against-pressure"
+        notes: "recast from 'holds at' PP form (fault-003); SVO inverted: courier-walk (physical subject — the courier's post-enforcement walk from s03n07) holds rushwick-pass (physical procedure as bare direct object); holds license condition 2 met — physical object resisting pressure; PP-free; parallel structure to n11 but distinct anchor; second-pass hold reinforces +1.5 recognition specificity; foreclosure confirmed; cl-d05 firmly anchored"

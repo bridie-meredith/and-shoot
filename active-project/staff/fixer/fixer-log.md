@@ -1230,3 +1230,26 @@ criteria met: yes — abstract compound-noun object replaced by concrete physica
 findings-applied: 3 (fault-001 pre-verified in-place; fault-002 4 bones recast; signal-002 1 bone inline recast)
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-28T01:00:00Z — write-b01c05-pass2-fault003-cycle3
+dispatch: minimum-change SVO recasts for fault-003 (2 bones: s03n11 and s03n13) from write-b01c05-pass2.md Attempt 2 section; FAULT-FORM-MODIFIER + FAULT-FORM-NON-ACTION-VERB on "holds at <noun>" form; invert SVO per auditor candidate licit recast
+target: active-project/staff/showrunner/b01c05-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c05-pass2.md
+findings-queued: 1 (fault-003 covering 2 bones)
+
+## fault-003 (s03n11) — RESOLVED — 2026-05-28T01:05:00Z
+fault: "the rushwick-pass holds at the provisioner-train" — "at the provisioner-train" is a banned PP of focus/location (FAULT-FORM-MODIFIER); "holds" outside narrow license (subject not a body, object not bare direct object satisfying condition 2) — FAULT-FORM-NON-ACTION-VERB
+scope: line
+change: svo inverted from "the rushwick-pass holds at the provisioner-train" to "the provisioner-train holds the rushwick-pass"; provisioner-train is now the physical subject; rushwick-pass is the bare direct object (a physical procedure being resisted); holds license condition 2 met; PP eliminated; bone_shape held preserved; axes_held (political_register-prot, foreclosure-enactment rationale) unchanged; notes field updated to reflect inverted SVO
+criteria met: yes — SVO is PP-free; holds license condition 2 satisfied; bone_shape and axes_held substance preserved
+
+## fault-003 (s03n13) — RESOLVED — 2026-05-28T01:06:00Z
+fault: "the rushwick-pass holds at the courier-walk" — identical fault class to s03n11: banned PP "at the courier-walk" (FAULT-FORM-MODIFIER); "holds" outside narrow license (FAULT-FORM-NON-ACTION-VERB)
+scope: line
+change: svo inverted from "the rushwick-pass holds at the courier-walk" to "the courier-walk holds the rushwick-pass"; courier-walk (the courier's post-enforcement walk from s03n07) is now the physical subject; rushwick-pass is the bare direct object; holds license condition 2 met; PP eliminated; bone_shape held preserved; both axes_held entries (political_register-prot foreclosure-confirmed rationale + moral_legibility_to_self rationale) unchanged; notes field updated to reflect inverted SVO
+criteria met: yes — SVO is PP-free; holds license condition 2 satisfied; bone_shape and axes_held substance preserved
+
+## SESSION-END — 2026-05-28T01:06:00Z — write-b01c05-pass2-fault003-cycle3
+findings-applied: 2 (s03n11 SVO inverted; s03n13 SVO inverted)
+findings-skipped: 0
+exit: CLEAN

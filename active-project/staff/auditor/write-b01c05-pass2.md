@@ -492,3 +492,148 @@ audit:
   flag_count: 3
   fixer_dispatch_required: true
   fixer_scope: "fault-001 (5 bones: s01n05, s01n08, s02n01, s02n04, s02n07) + fault-002 (4 bones: s03n05, s03n06, s03n11, s03n13) — 9 bones total; s03n06 substance_delta must be preserved exactly through recast"
+
+## Attempt 2 (2026-05-28)
+
+### Re-walk scope
+Ten recasts applied by fixer (2026-05-28T00:00:00Z–00:16:00Z): fault-001 × 5 bones, fault-002 × 4 bones, signal-002 inline × 1 bone. Fixer-log at active-project/staff/fixer/fixer-log.md lines 1211–1232 confirms all 10 applied, exit CLEAN.
+
+### fault-001 re-walk — 5 recasts
+
+- s01n05: "the provisioner-train takes the east-lane"
+  Subject: the provisioner-train (unnamed collective noun-entity). Verb: "takes" (transitive, not on any deny list, not a copula, not stative, not a perception verb). Object: "the east-lane" (concrete physical noun). No PP, no adverb, no conjunction. SVO CLEAN. PASS.
+
+- s01n08: "the message-runner takes the lane-mouth"
+  Same verb analysis. Object: "the lane-mouth" (concrete noun). SVO CLEAN. PASS.
+
+- s02n01: "the courier enters the lane-mouth"
+  "enters" is the schema's own canonical transitive motion verb example. Object: "the lane-mouth." SVO CLEAN. PASS.
+
+- s02n04: "the three figures close the alley-mouth"
+  Subject: "the three figures" — collective unnamed-entity group noun, not a conjunction of named actors (schema bans "taylor and rowan walk" conjunction form; "the three figures" is a collective noun-phrase, comparable to "the crowd"). Verb: "close" (transitive physical blocking act). Object: "the alley-mouth" (concrete noun). SVO CLEAN. PASS.
+
+- s02n07: "the courier finds the feet"
+  Verb: "finds" — not on the schema's perception-verb deny list (read, took, tracked, noted, counted, measured, watches, sees, hears, notices). Used here in the Saxon-idiom sense of physical recovery. Object: "the feet" — body part of the subject courier. No abstraction. SVO CLEAN. PASS.
+
+  fault-001 verdict: ALL 5 RECASTS PASS. fault-001 RESOLVED.
+
+### fault-002 re-walk — 4 recasts
+
+- s03n05: "the provisioner-train re-crosses the junction"
+  Subject: the provisioner-train. Verb: "re-crosses" — "re-" prefix modifies verb root, not SVO structure; "crosses" is a clean transitive motion verb; the prefix marks replay context per fixer notes. Object: "the junction" (concrete noun). No PP, no adverb. SVO CLEAN. PASS.
+
+- s03n06: "taylor-hebert-kl-122ac stops the rushwick-pass"
+  Verb: "stops" — transitive, discrete physical act; not on any deny list; not a copula, not stative, not a perception verb. Object: "the rushwick-pass" — a named procedure, used here as a concrete noun referencing a specific physical activity Taylor is performing; analogous to "the flat-read" used without fault at s03n10 and s03n12. A named activity-noun is not an abstract quality (silence, tension, weight) in the sense the schema's FAULT-FORM-INTERIORITY targets. SVO CLEAN. PASS.
+  Substance_delta verified in draft: axis_moves: political_register-prot, direction: up, magnitude: 1.5, cost_ledger_anchor: cl-d05. cost_ledger_anchor: cl-d05. Preserved exactly. PASS.
+
+- s03n11: "the rushwick-pass holds at the provisioner-train"
+  FAULT-FORM-MODIFIER + FAULT-FORM-NON-ACTION-VERB.
+
+  The schema's narrow "holds" license: "(1) the object is a body part of the subject and the action is stillness-against-pressure, or (2) the object is a physical object resisting pressure." Neither condition is met here. "The rushwick-pass" is not a body; it cannot have a body part as its object. "The provisioner-train" is reached via "at" — a prepositional phrase, not a direct object satisfying condition 2.
+
+  "At the provisioner-train" is a prepositional phrase of focus/location. The schema states: "Prepositional phrases of place / destination / source / direction / instrument / accompaniment are explicitly banned (FAULT-FORM-MODIFIER)." This PP is of the focus/location class and is banned.
+
+  The fixer's notes assert a "stillness-against-pressure" rationale and describe "holds at <object>" as if the PP were licensed by the holds narrow exception. It is not. The schema's holds license requires the object to be a body part of the subject (condition 1) or a physical object as a direct object resisting pressure (condition 2). The PP "at the provisioner-train" satisfies neither: the provisioner-train is accessed through the preposition "at," not as a bare direct object, and the rushwick-pass has no body parts.
+
+  This bone carries FAULT-FORM-MODIFIER (banned PP) and FAULT-FORM-NON-ACTION-VERB (holds outside narrow license). HARD.
+
+- s03n13: "the rushwick-pass holds at the courier-walk"
+  Identical structure to s03n11, different anchor noun. Same fault analysis applies in full. FAULT-FORM-MODIFIER + FAULT-FORM-NON-ACTION-VERB. HARD.
+
+  fault-002 verdict: s03n05 PASS, s03n06 PASS. s03n11 and s03n13 HARD — two bones remain non-compliant. fault-002 PARTIALLY RESOLVED. 2 bones require second fixer dispatch.
+
+### signal-002 inline recast (s03n08)
+
+- s03n08: "taylor-hebert-kl-122ac closes the evening review"
+  Subject: taylor-hebert-kl-122ac. Verb: "closes" (transitive, physical act of ending a session; not on any deny list). Object: "the evening review" — a named activity noun (the session itself), analogous to "the rushwick-pass" above. Used here as a concrete physical referent (the session Taylor terminates). SVO CLEAN. Axes_held (moral_framework + moral_legibility_to_self) and rationale fields confirmed unchanged in draft. PASS.
+
+### Substance delta re-verification
+
+- s03n06 axis_moves block: political_register-prot, up, 1.5, cl-d05. cost_ledger_anchor: cl-d05. Both fields present and correct in draft. PASS.
+- All other bones in s01, s02, s03 (outside the 10 recast set) show axis_moves: [] and bone_shape consistent with held or moving as authored. No collateral substance_delta changes detected. PASS.
+
+### Aggregate delta re-verification (post-recast)
+
+- s01: 0 axis movement. s03n05 recast to physical motion bone, axis_moves []. Unchanged. PASS.
+- s02: 0 axis movement. s02n01, s02n04, s02n07 recasts all carry axis_moves []. Unchanged. PASS.
+- s03: +1.5 political_register-prot on s03n06. Preserved through recast. Unchanged. PASS.
+
+### Register-as-mannerism check (post-recast)
+
+- "returns": surviving use is s02n06 "the side-alley returns the effortful sound" (1 occurrence). BELOW threshold. CLEAR.
+- "takes the [location]": s01n05 "takes the east-lane," s01n08 "takes the lane-mouth," s02n12 "takes the junction-corner" (pre-existing). 3 occurrences, all distinct VERB+OBJECT pairs. No identical pair hits ≥3. Below HARD threshold. Advisory only: the "takes the [location]" pattern with varied objects is present at 3 instances and should be noted for Phase 6 review, but does not constitute a FAULT or new SIGNAL — the existing signal-001 tracking already covers register tics and this is below threshold.
+- "holds at": s03n11 and s03n13 — 2 occurrences. Below ≥3 identical-pair threshold (same verb but objects differ: provisioner-train vs. courier-walk). However both are structurally faulted per the holds analysis above; this is moot until recast.
+- "maps" (taylor): 6 occurrences post-recast (s03n08 recast away from "maps"; s01n06, s01n09, s02n02, s02n08, s02n11, s03n09 remain). signal-002 from Attempt 1 still applies. Distinct VERB+OBJECT pairs throughout; no identical pair hits ≥3.
+
+### Collateral change check
+
+Confirmed: no changes to non-recast bones in the draft. The 24 bones outside the 10-bone recast scope are identical to Attempt 1 state.
+
+### Fixer-log completeness
+
+Fixer-log SESSION-START 2026-05-28T00:00:00Z, SESSION-END 2026-05-28T00:16:00Z present and complete. Three findings logged (fault-001 pre-verified, fault-002 4-bone recast, signal-002 inline recast). All 10 bones accounted for. Exit: CLEAN per log.
+
+### Attempt 2 summary
+
+  attempt_2_verdict: FINDINGS-PRESENT
+  findings_cleared:
+    - fault-001: RESOLVED (all 5 recasts SVO-clean)
+    - fault-002 partial: s03n05 RESOLVED, s03n06 RESOLVED
+    - signal-002 inline (s03n08): RESOLVED
+  findings_remaining:
+    - id: fault-003
+      type: fault
+      class: FAULT-FORM-MODIFIER + FAULT-FORM-NON-ACTION-VERB
+      severity: HARD
+      carries_over_from: fault-002 (s03n11, s03n13)
+      what: |
+        b01c05s03n11 SVO: "the rushwick-pass holds at the provisioner-train"
+        b01c05s03n13 SVO: "the rushwick-pass holds at the courier-walk"
+
+        Both bones use "holds at <noun>" where "at <noun>" is a prepositional phrase of
+        focus/location. The schema explicitly bans prepositional phrases of place/focus
+        (FAULT-FORM-MODIFIER). The schema's narrow holds license requires either (1) the
+        object is a body part of the subject and action is stillness-against-pressure, or
+        (2) the object is a physical object resisting pressure as a bare direct object.
+        Neither condition is met: "the rushwick-pass" is not a body (no body part possible),
+        and "the provisioner-train" / "the courier-walk" are reached via preposition "at"
+        not as bare direct objects. "Holds" outside the narrow license is FAULT-FORM-NON-
+        ACTION-VERB per the schema's non-action verb deny-list and narrow-license rules.
+
+      why: |
+        Both bones are in the load-bearing foreclosure-enactment sequence (s03n10–n13) that
+        the Attempt 1 audit ruled ACCEPTABLE for the chapter's dramatic obligation. If these
+        bones survive in faulted form into /and-facets, the held-shape discipline will be
+        mis-cited: facet authors will see "holds at X" as a physical containment/stasis event
+        and cite it accordingly, producing narrator-interest and sensory citations anchored
+        to structurally illegal bones. The downstream render will misrepresent the foreclosure
+        enactment as physical restraint rather than read-failure. The dramatic load these
+        bones carry (foreclosure confirmed, cl-d05 active) requires the SVO form to be clean
+        before /and-facets consumption.
+
+      criteria: |
+        Each bone must be recast so the SVO is a clean transitive-verb form without a
+        prepositional phrase modifier. The held-shape and foreclosure-enactment semantic
+        must be preserved. The fixer notes confirm the intended meaning: the flat-read
+        attempt does not complete — it arrests at the physical anchor (provisioner-train /
+        courier-walk). A licit recast encodes that arrest as a transitive physical act.
+        Options for fixer consideration (not prescriptive):
+          - "the rushwick-pass arrests at the provisioner-train" — same problem (PP).
+          - "the provisioner-train stops the rushwick-pass" — reverses subject/object;
+            physical entity acts on the pass; no PP; holds license not needed.
+          - "the provisioner-train holds the rushwick-pass" — subject: provisioner-train
+            (a physical object); verb: holds; object: rushwick-pass (a physical procedure
+            the provisioner-train is preventing from completing). Condition 2 of the narrow
+            holds license: "a physical object resisting pressure." The provisioner-train as
+            physical object resists the pass from completing — this satisfies condition 2.
+            This form is a candidate PASS.
+          - "the rushwick-pass breaks at the provisioner-train" — same PP problem.
+          The safest clean form inverts the SVO so the physical anchor is the subject
+          acting on the pass as object, which eliminates the PP entirely.
+        The bone_shape: held and axes_held entries (political_register-prot with foreclosure-
+        enactment rationale) must be preserved unchanged through the recast.
+
+  new_hard_count: 1 (fault-003, covering 2 bones: s03n11, s03n13)
+  clear_to_phase_3: NO — fault-003 blocks
+  fixer_dispatch_required: true
+  fixer_scope: "fault-003 (2 bones: s03n11, s03n13) — holds-at PP form; bone_shape held and axes_held must be preserved; no substance_delta changes required (both bones carry axis_moves [])"
