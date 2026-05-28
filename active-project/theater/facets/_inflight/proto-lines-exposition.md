@@ -3,7 +3,6 @@
 # SVO bodies byte-identical to bones file. Exposition citation tokens appended on decorated lines.
 # Plus synthetic @0 preamble line for episode-open-* scope entries.
 
-0 [PREAMBLE — italic + paragraph; renders before body] [exposition:1] [exposition:2]
 1 the hill's stone skirt meets the lane-mouth
 2 taylor-hebert-kl-122ac enters the rushwick [exposition:3]
 3 the insect-feed fills the rushwick junction

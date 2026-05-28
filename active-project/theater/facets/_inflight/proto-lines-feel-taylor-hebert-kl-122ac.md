@@ -74,7 +74,7 @@
 26 taylor-hebert-kl-122ac runs the rushwick-feed
 27 the provisioner-train re-crosses the junction
 28 the rushwick-feed holds the color
-29 taylor-hebert-kl-122ac stops the rushwick-pass [feel:2]   # head-tilt-toward-the-held-color; signature §Look card-quoted
+29 taylor-hebert-kl-122ac stops the rushwick-pass [feel:2]
 30 taylor-hebert-kl-122ac closes the evening review
 31 taylor-hebert-kl-122ac files the courier body-record
 32 taylor-hebert-kl-122ac runs the rushwick flat-read
