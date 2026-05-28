@@ -1,3 +1,5 @@
+# SOURCE SLICE — NOT CANONICAL. IDs in this file are slice-local. The canonical authority for cross-facet citation is state-updates.md (consolidated; monotonic IDs 1-12). The cite-index resolves [state:N] tokens against the consolidated.
+
 facet: state-updates
 episode: b01c05
 author: studio

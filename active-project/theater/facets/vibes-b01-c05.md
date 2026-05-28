@@ -47,7 +47,7 @@ flat_id-basis: 1-35 (post-revise --from-signals; full re-numbering per Phase 7 e
 
 9 @17 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [enforcement-incident-entering-jarvis-form-unchanged, routing-name-honored-without-interrogation, form-destination-the-architecture-she-agreed-to-feed, licensed-exception-running-without-switch] | licensed-by: proto:17-19, state-update:3, world-build:cond-road-to-hell-chain-shape
 
-10 @19 actor:taylor-hebert-kl-122ac ++ tragic-causal: [faction-violence-absorbed-as-movement-pattern, auditable-backward-to-acceptance-of-the-arrangement, chain-already-set-when-the-form-matches-the-incident] | licensed-by: proto:19, feeling:1, state-update:3
+10 @19 actor:taylor-hebert-kl-122ac ++ tragic-causal: [faction-violence-absorbed-as-movement-pattern, auditable-backward-to-acceptance-of-the-arrangement, chain-already-set-when-the-form-matches-the-incident] | licensed-by: proto:19, state-update:3, world-build:cond-road-to-hell-chain-shape
 
 11 @21 actor:taylor-hebert-kl-122ac ++ rising entrapment: [courier-in-body-map-outside-ledger, network-tracking-unnamed-operator-content, body-map-expanding-by-event-logic-not-decision] | licensed-by: proto:21, state-update:1, world-build:cond-cost-bearer-scene-frequency
 
@@ -57,11 +57,11 @@ flat_id-basis: 1-35 (post-revise --from-signals; full re-numbering per Phase 7 e
 
 13 @28 loc:oc-rushwick ++ novel-coverage-substrate: [feed-retaining-color-after-flat-read-procedure, apparatus-level-recognition-correlate, substrate-unresolved-under-neutral-pass, color-as-property-of-ward-not-operator] | licensed-by: proto:28, state-update:2, world-build:oc-rushwick-Hazards-coverage-novelty-registration
 
-14 @28 actor:taylor-hebert-kl-122ac ++ residue not spectacle: [rushwick-content-color-held-apparatus-non-stripping, procedure-hers-output-not-neutral, feed-distinguishing-what-discipline-cannot-name] | licensed-by: proto:28, state-update:2, feeling:2
+14 @28 actor:taylor-hebert-kl-122ac ++ residue not spectacle: [rushwick-content-color-held-apparatus-non-stripping, procedure-hers-output-not-neutral, feed-distinguishing-what-discipline-cannot-name] | licensed-by: proto:28, state-update:2, feeling:1
 
-15 @29 actor:taylor-hebert-kl-122ac + political-register-color-present: [resentment-color-in-court-tier-feed-interpretation, foreclosed-from-neutral-read-on-rushwick-content, color-present-before-named, cl-d05-account-opened] | licensed-by: proto:29, state-update:3, state-update:4, feeling:2
+15 @29 actor:taylor-hebert-kl-122ac + political-register-color-present: [resentment-color-in-court-tier-feed-interpretation, foreclosed-from-neutral-read-on-rushwick-content, color-present-before-named, cl-d05-account-opened] | licensed-by: proto:29, state-update:3, state-update:4, feeling:1
 
-16 @29 actor:taylor-hebert-kl-122ac ++ contempt-without-refusal: [resentment-color-filed-as-operational-texture, naming-deferred-not-refused, discipline-applied-to-own-response, ledger-entry-without-naming-entry] | licensed-by: proto:29, state-update:3, state-update:4, feeling:2
+16 @29 actor:taylor-hebert-kl-122ac ++ contempt-without-refusal: [resentment-color-filed-as-operational-texture, naming-deferred-not-refused, discipline-applied-to-own-response, ledger-entry-without-naming-entry] | licensed-by: proto:29, state-update:3, state-update:4, feeling:1
 
 17 @29 episode + political-register-threshold-crossed: [court-tier-content-carrying-permanent-color, neutral-instrumental-read-foreclosed-for-rushwick-substrate, resentment-precedes-contempt, cl-d05-first-tranche-landed] | licensed-by: proto:29, state-update:3, state-update:4, world-build:cond-kl-court-state-122ac
 

@@ -5,6 +5,8 @@ note: consolidated by build_cite_index from per-source slices. Single top-of-fil
 ---
 
 # source: b01-c05-taylor-hebert-kl-122ac
+# SOURCE SLICE — NOT CANONICAL. IDs in this file are slice-local. The canonical authority for cross-facet citation is state-updates.md (consolidated; monotonic IDs 1-12). The cite-index resolves [state:N] tokens against the consolidated.
+
 facet: state-updates
 episode: b01-c05
 author: taylor-hebert-kl-122ac (impersonator, facet-authoring override mode)
@@ -41,6 +43,8 @@ scope: actor:taylor-hebert-kl-122ac.* only (studio + props authored by studio fo
 5 @31 actor:taylor-hebert-kl-122ac.knowledge.courier-body-record: absent -> filed-as-cf-d10-thread-anchor
 
 # source: env-b01-c05
+# SOURCE SLICE — NOT CANONICAL. IDs in this file are slice-local. The canonical authority for cross-facet citation is state-updates.md (consolidated; monotonic IDs 1-12). The cite-index resolves [state:N] tokens against the consolidated.
+
 facet: state-updates
 episode: b01c05
 author: studio
