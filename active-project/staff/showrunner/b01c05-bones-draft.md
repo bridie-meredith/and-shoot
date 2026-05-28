@@ -15,20 +15,20 @@ scenes:
         omission_rationale: null
       - event: "court-tier bodies carry institutional-gait signatures"
         source: chunk-tag
-        bones: [b01c05s01n05, b01c05s01n06]
-        omission_rationale: null
+        bones: [b01c05s01n05]
+        omission_rationale: "s01n06 removed at bone-gate fault-001 (perception-class verb, abstract object; redundant — provisioner-train physical events carried by n04+n05; categorization content migrates to narrator-interest facet citing n05)"
       - event: "Taylor's neutral-instrumental reading discipline (protagonist_force)"
         source: chunk-tag
-        bones: [b01c05s01n06, b01c05s01n07, b01c05s01n08]
-        omission_rationale: null
+        bones: [b01c05s01n07, b01c05s01n08]
+        omission_rationale: "s01n06 removed at bone-gate fault-001; discipline coverage remains on n07 (message-runner crosses) and n08 (message-runner takes lane-mouth — restraint/no-follow is the held discipline enacted)"
       - event: "the court-tier content's novel weight (opposing_force)"
         source: chunk-tag
-        bones: [b01c05s01n05, b01c05s01n09]
-        omission_rationale: null
+        bones: [b01c05s01n05]
+        omission_rationale: "s01n09 removed at bone-gate fault-001 (perception-class verb, abstract object; redundant — message-runner physical events carried by n07+n08; categorization content migrates to narrator-interest facet citing n07)"
       - event: "first day of court-tier content in the insect-feed"
         source: chunk-tag
-        bones: [b01c05s01n03, b01c05s01n09]
-        omission_rationale: null
+        bones: [b01c05s01n03]
+        omission_rationale: "s01n09 removed at bone-gate fault-001; feed-acquisition of the ward's first court-tier content remains on n03 (insect-feed fills the rushwick junction)"
       - event: "message-runner tracked to lane-mouth and released"
         source: author-noticed
         bones: [b01c05s01n07, b01c05s01n08]
@@ -187,6 +187,8 @@ scenes:
               rationale: "third sighting — feed files the recurring body; categorization intact; no color at recognition layer; neutral read holds at acquisition"
             - axis: moral_framework
               rationale: "routine routing; licensed exception runs unchanged"
+            - axis: capability
+              rationale: "feed coverage at Rushwick is maintenance from c04 four-ward expansion; no new range gain; coverage operates at established level"
           cost_ledger_anchor: null
         dialogue_anchor: false
         notes: "recast from perception-surrogate (fault-001); physical observable: courier enters the lane-mouth — feed-acquisition semantics implicit in the courier's entry; grounding bone for s02; third-sighting-of-the-day before the incident"
@@ -365,8 +367,8 @@ scenes:
         omission_rationale: null
       - event: "courier's post-enforcement walk"
         source: chunk-tag
-        bones: [b01c05s03n07]
-        omission_rationale: null
+        bones: []
+        omission_rationale: "s03n07 removed at bone-gate fault-003 (FAULT-FORM-INTERIORITY + FAULT-FORM-MODIFIER: courier-face surfaces in rushwick replay is a memory-image arising — interiority by definition; 'in the rushwick replay' is a banned PP); cf-d10 thread confirmation now lives at s03n09 (files the courier body-record); courier-walk content migrates to memory/narrator-interest facet at /and-facets citing s02n12 (courier takes junction-corner) and s03n09 (body-record filing)"
       - event: "filing the observation under operational texture (protagonist_force)"
         source: chunk-tag
         bones: [b01c05s03n08]
@@ -398,6 +400,8 @@ scenes:
               rationale: "grounding bone for s03; Taylor settles into the physical space for the evening review; room as the review-surface established; discipline not yet engaged in replay"
             - axis: capability
               rationale: "evening review is operational accounting; no new coverage extension; capability holds"
+            - axis: social_tether-prot-rise
+              rationale: "tether load-bearing in formation per c04 (Jarvis structural vector, Oswyn unknowing node); no new structural addition this scene; the evening review operates within the established tether-architecture without expanding it"
           cost_ledger_anchor: null
         dialogue_anchor: false
         notes: "grounding bone — Taylor's physical location during the evening review; room-floor as the review-surface"

@@ -1259,3 +1259,44 @@ criteria met: yes — SVO is PP-free; holds license condition 2 satisfied; bone_
 findings-applied: 2 (s03n11 SVO inverted; s03n13 SVO inverted)
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-28T08:00:00Z — write-b01c05-bone-gate-final
+dispatch: Phase 6 bone-gate HARD resolutions on /and-write b01c05 — 8 HARD findings (fault-001 through fault-005); prior sessions already applied fault-001 recasts/removals, fault-002 modifier strips, fault-003 removal; remaining work: fault-004 (add capability axes_held to s02n01), fault-005 (add social_tether-prot-rise axes_held to s03n01), and event_map updates for removed bones s01n06, s01n09, s03n07
+target: active-project/staff/showrunner/b01c05-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c05-bone-gate.md
+findings-queued: 8 total; pre-verified 6 applied in prior sessions; 2 HARD axes_held additions + event_map corrections remaining
+
+## fault-001 — RESOLVED (pre-verified) — 2026-05-28T08:01:00Z
+fault: six "taylor maps X" perception-class bones with abstract objects (s01n06, s01n09, s02n02, s02n08, s02n11, s03n09); also s03n07 covered under fault-003
+scope: line
+change: pre-verified in bones draft — s01n06 removed (gap between n05 and n07); s01n09 removed (s01 ends at n08); s02n02 recast to "holds the wall-line"; s02n08 recast to "files the enforcement-record"; s02n11 recast to "adds the courier to the body-map"; s03n09 recast to "files the courier body-record"; all recasts applied in prior sessions (write-b01c05-pass2-hard-recasts); event_map updated this session for removed bones
+criteria met: yes — zero "maps" instances remain in bones draft; 4 recast bones present physical Taylor-body acts; 2 removed bones (n06, n09) have omission_rationale in event_map
+
+## fault-002 — RESOLVED (pre-verified) — 2026-05-28T08:02:00Z
+fault: three modifier violations — s02n03 "off the east exit" PP, s02n05 "against the stone" PP, s02n06 "effortful" adjective
+scope: line
+change: pre-verified in bones draft — s02n03 reads "the three figures enter the side-alley" (PP stripped); s02n05 reads "the three figures pin the courier" (PP stripped); s02n06 reads "the side-alley returns the sound" (adjective stripped); all three applied in prior session
+criteria met: yes — all three bones are bare SVO with no prepositional padding or adjectives
+
+## fault-003 — RESOLVED (pre-verified) — 2026-05-28T08:03:00Z
+fault: s03n07 "the courier-face surfaces in the rushwick replay" — dual fault: FAULT-FORM-INTERIORITY (memory-image arising) + FAULT-FORM-MODIFIER ("in the rushwick replay" PP)
+scope: line
+change: pre-verified in bones draft — s03n07 is absent (gap between s03n06 and s03n08); event_map entry "courier's post-enforcement walk" updated this session: bones[] set to empty, omission_rationale added citing fault-003 removal and downstream migration path
+criteria met: yes — interiority bone removed; cf-d10 thread confirmation remains at s03n09; event_map entry carries omission_rationale per dispatch
+
+## fault-004 — RESOLVED — 2026-05-28T08:04:00Z
+fault: s02 scene substance_delta.axes_held declares capability but no s02 bone witnesses it (HELD-AXIS-NOT-WITNESSED)
+scope: line
+change: added capability axes_held entry to s02n01 ("the courier enters the lane-mouth") with rationale: "feed coverage at Rushwick is maintenance from c04 four-ward expansion; no new range gain; coverage operates at established level"
+criteria met: yes — s02n01 now witnesses the capability held-axis with stillness-against-pressure rationale (maintenance-of-established-level, no new extension); s02 held-axis has a bone cite-anchor for downstream /and-facets capability texture
+
+## fault-005 — RESOLVED — 2026-05-28T08:05:00Z
+fault: s03 scene substance_delta.axes_held declares social_tether-prot-rise but no s03 bone witnesses it (HELD-AXIS-NOT-WITNESSED)
+scope: line
+change: added social_tether-prot-rise axes_held entry to s03n01 ("taylor-hebert-kl-122ac takes the room-floor") with rationale: "tether load-bearing in formation per c04 (Jarvis structural vector, Oswyn unknowing node); no new structural addition this scene; the evening review operates within the established tether-architecture without expanding it"
+criteria met: yes — s03n01 now witnesses the social_tether-prot-rise held-axis; tether-texture in the peak scene has a bone cite-anchor for downstream /and-facets authoring
+
+## SESSION-END — 2026-05-28T08:05:00Z — write-b01c05-bone-gate-final
+findings-applied: 8 (fault-001: 6 bones — 4 recast + 2 removed, pre-verified; fault-002: 3 modifier strips, pre-verified; fault-003: 1 bone removed, pre-verified; fault-004: capability axes_held added to s02n01; fault-005: social_tether-prot-rise axes_held added to s03n01; event_map updated for all removed bones)
+findings-skipped: 0
+exit: CLEAN
