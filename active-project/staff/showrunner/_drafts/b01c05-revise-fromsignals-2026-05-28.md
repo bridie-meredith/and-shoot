@@ -10,11 +10,12 @@ cold_read_failure_source: active-project/staff/reviews/coldread-b01-c05-2026-05-
 ### SITE A — courier-recurrence anchor (insertion: after @8)
 
 - **slug:** b01c05s02n01a
-- **SVO:** `the insect-feed returns the courier-entry`
+- **SVO:** `the insect-feed returns the courier`
+    - **Phase 4 amendment (worm-canon-pedant):** "the courier-entry" → "the courier". The insect-feed surfaces bodies present in coverage, not archived event-records. "Returns the courier" reads as the courier's body re-entering feed coverage (the third-morning recurrence), parallel to @13 "the side-alley returns the sound" (alley emits sound).
 - **substance_delta:**
     - axis_moves: []
     - cost_ledger_anchor: cl-d05
-- **rationale:** Closes confusion (v) — third-morning recurrence as a feed-apparatus event (prior entry surfacing). Models on @13 "the side-alley returns the sound." Chatter substrate: courier-identification feeds the s03 foreclosure.
+- **rationale:** Closes confusion (v) — third-morning recurrence as a feed-apparatus event. Chatter substrate: courier-identification feeds the s03 foreclosure.
 - **event_map_coverage:** strengthens "cf-d10-courier-face thread initiated"
 
 ### SITE B — Jarvis-frame + cause-chain + Sera
@@ -46,11 +47,12 @@ cold_read_failure_source: active-project/staff/reviews/coldread-b01-c05-2026-05-
 ### SITE C — recognition-staging at @25 (insertion: after @24, before @25)
 
 - **slug:** b01c05s03n06a
-- **SVO:** `the rushwick-feed resists the flat-read`
-- **substance_delta (ORCHESTRATOR NOTE — screen-writer wrote "partial"; magnitude floor 1.0 per DEC-0040 + schema forbids non-positive. Re-classifying as chatter+cost-ledger to mirror A1, preserving existing @25's full +1.5 attribution):**
+- **SVO:** `the rushwick-feed holds the color`
+    - **Phase 4 amendment (worm-canon-pedant):** "resists the flat-read" → "holds the color". The feed does not perform agentive opposition; it holds an output the flat-read cannot strip. "Holds" is licensed and consistent with @29 ("the provisioner-train holds the rushwick-pass") and @31 ("the courier-walk holds the rushwick-pass"). "The color" names the resentment-color object directly (matches chunk vocabulary "the color has arrived in the feed").
+- **substance_delta (orchestrator note — screen-writer wrote "partial"; magnitude floor 1.0 per DEC-0040 + schema forbids non-positive. Re-classified as chatter+cost-ledger mirroring A1; existing @25 retains full +1.5 attribution):**
     - axis_moves: []
     - cost_ledger_anchor: cl-d05
-- **rationale:** Closes confusion (iv) — feed-resistance gives external mechanical correlate to recognition. @25's "taylor stops the rushwick-pass" now reads as response to the feed's prior refusal. C1 is chatter substrate paying cl-d05 (the feed's resistance is part of the apparatus-level mechanism that opens political_register-prot at @25). Aggregate +1.5 unchanged.
+- **rationale:** Closes confusion (iv) — feed holding the color is the apparatus-level mechanism that makes @25 ("taylor stops the rushwick-pass") read as response, not arbitrary gesture. C1 is chatter substrate paying cl-d05 (the held color IS the substrate that opens political_register-prot at @25). Aggregate +1.5 unchanged.
 - **event_map_coverage:** strengthens "political_register-prot opens its account; neutral-instrumentally-observant foreclosed; cl-d05 anchor lands"
 
 ---

@@ -368,8 +368,6 @@ s01n05 — KEEP. "The insect-feed returns Jarvis." Held: political_register-prot
 
 s01n06 — KEEP. Moving bone: social_tether-antag +1.0. "Taylor speaks to Jarvis." Dialogue anchor. This is the yes — the operative speech act. The consolidated +1.0 (prior split +0.5 + +0.5 correctly eliminated per magnitude floor) is the right form. Dialogue file entry 1 @6 confirms: "Yes. The terms hold with two changes." Flat transactional cadence, modification stated as assertion of terms. The dialogue matches canon Taylor's register — she does not negotiate after deciding; she states conditions. KEEP.
 
-Dialogue check s01n06: Taylor's line 1 @6 is cold-utilitarian, pre-priced, no warmth or hesitation. "The interval is mine to set. The volume is mine to set." — This is the last parameter she can hold stated as operative fact, not request. Canon-correct.
-
 s01n07 — KEEP. Held: moral_framework. "Taylor holds the feet." Licensed body-part DO. The stillness-against-pressure enacts the licensed-exception hold without narrating the rationalization's content. Dark-fantasy watch honored explicitly in the notes: bones do not do suppression's work for Taylor. The body holds position and that is the observable record. This is the correct execution: canonical Taylor does not narrate her rationalizations in real time; she holds the body and the accounting happens elsewhere. KEEP.
 
 s01n08 — KEEP. Moving bone: position-prot-rise +1.0. "Jarvis speaks to Taylor." Dialogue anchor. Jarvis's routing-confirmation is the event that converts Taylor into a named function in the patron-chain. The consolidated +1.0 (fixing prior FAULT-BONE-DELTA-MALFORMED speech-bone-no-axis) is correct. Dialogue file entry 8 @n07 confirms: "Those terms are acceptable to the man I serve. The volume yours. The interval yours." Flat courier-receipt register, no negotiation, no warmth. The dialogue file also has entry 9 @n10 for the recurring-appointment confirmation — this maps to the image in the notes ("the yard as a fixed coordinate, the third-bell-return installed"). Note: entry 9 @n10 is anchored to s01n10 in the dialogue file, but n10 in the redo is Taylor's exit bone (held: relational_anchor_status), not a Jarvis speech bone. The n10 annotation in the dialogue file reads "confirm next-contact arrangement — same place, first bell, three days" — which matches the event_map entry covered by s01n08's notes ("Jarvis confirms first routing protocol — next contact, same place, same bell, three days hence"). The @n10 citation appears to be a carry-forward from a prior draft's bone numbering; in the redo, the routing-protocol confirmation is covered by s01n08. This is not a bone-level problem — the dialogue content is correctly sourced; the @n10 citation in the dialogue file is a stale cross-reference from the prior draft's numbering that will need cleanup at /and-review bones. No bone concern here; flag for /and-review bones cleanup. KEEP.
@@ -670,7 +668,7 @@ s01n05: KEEP - train takes east-lane; distinct from n04 (crossing vs. departure 
 s01n06: KEEP - Taylor maps provisioner-train interval; neutral-instrumental discipline at first exposure enacted as the same mapping she performs on Hook bodies; discipline-visible-via-same-method
 s01n07: KEEP - message-runner crosses junction; second court-tier body; institutional errand-gait; feeds the gait-class categorization in n09; not redundant with n09 (arrival vs. filing)
 s01n08: KEEP - message-runner takes lane-mouth; feed releases the runner at coverage edge; capability held, no extension; discipline's restraint at coverage boundary; distinct from n07
-s01n09: KEEP - Taylor maps message-runner gait-class; novel-weight present in naming-work demanded; files without qualification; distinct from n07 (arrival) and n08 (exit); closes scene as categorization act
+s01n09: KEEP - Taylor maps message-runner gait-class; novel-weight present in naming-work demanded; files without qualification; closes scene as categorization act
 
 s02n01: KEEP - courier enters lane-mouth; third sighting grounding bone; feed-acquisition semantics; distinct from n02 (entry vs. gait-recognition mapping)
 s02n02: KEEP - Taylor maps courier gait-signature; worm-canon SOFT-WATCH bone 1 of 3 RESOLVED — structurally distinct recognition-by-gait event; heel-first, ward-uneven-paving repetition; not collapsed into n08
@@ -735,4 +733,46 @@ SUBSTANCE-FLAT: none
 SUBSTANCE-SUSPECT: none
 soft_findings:
   - SOFT (carried forward): dialogue-file stale citation — Jarvis entry 9 @n10; carry to /and-review bones; not a bone-gate block
+  - SOFT (carried forward): b01c07 prose-burden — Halvard tether-gain; carries to b01c07 /and-write
+
+## b01c05 revise --from-signals — Phase 4 trim
+
+date: 2026-05-28
+scope: 5 new bones only (A1, B1, B2, B3, C1); existing bones 1-31 pre-passed and out of scope
+
+### Per-bone verdicts
+
+**A1 — `the insect-feed returns the courier-entry` (after @8)**
+KEEP — contingent on SVO correction before Phase 7 emit.
+The bone closes confusion (v) and is not chatter: chatter+cl-d05 classification is correct, the third-sighting recurrence feeds s03 foreclosure, and the feed-first substrate is voice-load-bearing. The object noun is the problem: "the courier-entry" is not a feed-returnable object. The feed returns bodies present in the coverage area via biological sensory relay; it does not surface archived event-records. "Returns the courier-entry" attributes a mnemonic-retrieval function to the feed that is not part of established Worm mechanics. Correct form: "the insect-feed returns the courier" — feed recognizes the body from the established gait-signature; the prior-sighting structure becomes legible through the same feed-first posture the chapter has been building. The corrected form is also structurally distinct from @n02 (gait-recognition mapping by Taylor), @n04 (approach-geometry categorization), and @n08 (filing) — the feed's live-return is a fourth phase, not a collapse. SVO correction flag carried to Phase 7 emit.
+
+**B1 — `the courier raises the spine` (between @13-@14)**
+KEEP.
+Closes confusion (ii) cleanly. "Raises the spine" → "finds the feet" is unambiguous sequential recovery. SVO form is correct: body-part DO, "raises" is concrete and transitive, licensed by the bones schema. axes_held rationale correct: courier's physical recovery does not threaten the licensed-exception frame; moral_framework holds because the observable incident continues without interrogation. Structurally distinct from @14 (spine-raise precedes foot-find; distinct temporal position and distinct physical action). SOFT-WATCH honored: B1 is a courier-body-state bone, not a Taylor-mapping bone; not collapsed into any of the three-phase cognitive operations (@n02, @n04, @n08).
+
+**B2 — `the enforcement-report enters the jarvis-channel` (after @16)**
+KEEP.
+Closes confusion (iii) partial. SVO analysis: "the enforcement-report enters the jarvis-channel" — report as subject, "enters" as motion verb, "jarvis-channel" as DO. Structural license confirmed via parallel with @17 ("the three figures exit the alley-mouth") and @19 ("the courier takes the junction-corner") — location/channel nouns as DO with motion verbs containing their own directional semantics is an established pattern in this chapter's bones. axes_held rationale correct: routing through the named channel is inside the licensed exception; apparatus named without interrogation. Structurally distinct from @16 (Taylor delivers, Taylor is actor) vs. B2 (report enters, report is actor) — the phase distinction is real: delivery and channel-entry are separate events. SOFT-WATCH honored: B2 is not collapsed into @n08 (mapping to format), @n09 (delivery act), or any existing bone.
+
+**B3 — `taylor-hebert-kl-122ac adds the jarvis-form to the sera-arrangement-file` (after B2, before @17)**
+KEEP.
+Closes confusion (iii) fully. SVO follows @18 ("adds the courier to the body-map") precedent exactly — "adds X to Y" with destination-PP tail licensed by established bone in same chapter. Sera named for the first time in the bones as a file-destination, not as a person: correct understated form for canonical Taylor accounting (names destinations precisely, without editorial). axes_held rationale correct: filing into the Sera-arrangement file is the licensed exception in operation. Structurally distinct from B2 (channel-entry) and @17 (three figures exit) — B3 is the attachment of the report to the specific arrangement it serves, a distinct act from the routing. SOFT-WATCH honored: filing destination is a new layer not collapsed into any prior bone.
+
+**C1 — `the rushwick-feed resists the flat-read` (between @24-@25)**
+KEEP — contingent on SVO refinement before Phase 7 emit.
+Closes confusion (iv) and is not chatter: chatter+cl-d05 classification is correct, the apparatus-level correlate makes @25's stopping legible as a response rather than an unmotivated event. The verb "resists" is the problem: it attributes agentive opposition to a biological sensory system, which is slightly off-register for Worm mechanics. Taylor's feed does not actively resist — it fails to return the expected neutral output when the categorization discipline's organizational frame has collapsed. The existing bones in the try-flat-read sequence use "holds" for physical actors (@29: "provisioner-train holds the rushwick-pass"; @31: "courier-walk holds the rushwick-pass"). The analogous feed-event should use a verb that names the failure-to-resolve, not active resistance. Candidate forms: "the rushwick-feed holds the color" (feed retains the non-neutral content against the attempted flat-read) or "the rushwick-flat-read returns color" (the read yields a different output class). The "holds" form has the strongest precedent in this chapter's vocabulary. SVO refinement flag carried to Phase 7 emit.
+
+### SOFT-WATCH compliance (gait-signature + approach-geometry + filing structurally distinct in s02 + s03)
+
+HONORED across all 5 new bones. None of the 5 collapse the three-phase cognitive-operations architecture (recognition-by-gait / approach-geometry-categorization / filing-to-format). A1 adds a feed-live-return phase distinct from all three. B1 is a courier-body-state bone outside the cognitive-operations architecture. B2 and B3 operate on report-routing and arrangement-filing infrastructure distinct from the three-phase sequence. C1 operates on feed-apparatus resistance in s03, not on any s02 cognitive operation.
+
+### File-level verdict
+
+ACCEPT — 5 KEEP, 0 DELETE-PROPOSE.
+Two SVO correction flags carried to Phase 7 emit (not deletion candidates): A1 object noun ("the courier-entry" → "the courier"); C1 verb ("resists" → "holds the color" or equivalent feed-failure form). All 5 new bones serve goal, close documented cold-read confusions, honor the SOFT-WATCH discipline, and are not chatter by the substance-overhaul criterion. The SVO corrections are constraint-edge findings, not trim findings.
+
+carry_forward:
+  - A1 SVO correction: "the insect-feed returns the courier-entry" → "the insect-feed returns the courier"; feed returns bodies, not archived event-records; carry to Phase 7 emit
+  - C1 SVO refinement: "resists" is agentive for a biological sensory system; candidate: "the rushwick-feed holds the color"; carry to Phase 7 emit
+  - SOFT (carried forward): dialogue-file stale citation — Jarvis entry 9 @n10; carry to /and-review bones
   - SOFT (carried forward): b01c07 prose-burden — Halvard tether-gain; carries to b01c07 /and-write
