@@ -1,5 +1,16 @@
 # studio STM
 
+## 2026-05-28 — /and-facets b01-c05 Phase 1 R1 sensory authoring
+
+Authored sensory.md for b01c05 (2 entries, 31 bones). Density 6.45% — ADVISORY (modality-floor priority).
+Two fires across two modalities:
+  sensory:1 @4 tactile (lane-stone-surface-baseline → provisioner-cart-load-on-stone, spike) — scene-A, provisioner-train crossing junction with loaded carts.
+  sensory:2 @13 sound (alley-stone-contained-silence → courier-effortful-body-sound, spike) — scene-B, mandatory bones-review note-003 carry; effortful-qualifier stripped at Phase 6 fault-002; dark-fantasy gap-instrument.
+Modalities: tactile + sound (2; floor met).
+note-003 effortful-qualifier: CONFIRMED CARRIED at sensory:2 @13.
+note-001 courier-walk visual/spatial: NOT CARRIED — rubric-ineligible (interior replay / fauna-feed-extension). SEAM-001 flagged; recommend narrator-interest.
+Scene-C: 0 fires (all bones interior/cognitive; indoor baseline with no sensory inflections above threshold).
+
 ## 2026-05-28 — /and-facets b01-c05 Phase 1 R1 location-state authoring
 
 Authored location-state.md for b01c05 (9 entries after authoring-phase cull, 31 bones).

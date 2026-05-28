@@ -2,7 +2,7 @@
 
 episode: b01c05
 last_updated: 2026-05-28
-action: location-state R1 authoring — /and-facets b01-c05 Phase 1
+action: sensory R1 authoring — /and-facets b01-c05 Phase 1 (location-state R1 prior)
 
 ## Current set
 location: the-rushwick (no oc-card; pl-2026-05-28-001 open for margit)
@@ -42,5 +42,14 @@ ambient_conditions:
     - oc-ropers-court (c04 day-2)
     - the-rushwick (c05; second morning after Roper's Court report; abuts Red Keep servant passages)
 
+## Sensory facet locked (b01c05) — 2 entries
+  sensory:1 @4  — tactile: lane-stone-surface-baseline -> provisioner-cart-load-on-stone (spike)
+  sensory:2 @13 — sound: alley-stone-contained-silence -> courier-effortful-body-sound (spike)
+  Density: 2/31 = 6.45% (ADVISORY; modality-floor priority; note-003 mandatory carry)
+  Modalities: tactile + sound (2; meets ≥2 floor)
+  note-003 effortful-qualifier carry: CONFIRMED at sensory:2 @13
+  note-001 courier-walk visual/spatial: NOT CARRIED by sensory (rubric-ineligible; seam routed to narrator-interest)
+
 ## Last recorded change
   @31 — courier-walk holds the rushwick-pass; chapter close; Taylor on room-floor; evening review complete
+  Sensory R1 authored 2026-05-28 — theater/facets/sensory.md (2 entries)
