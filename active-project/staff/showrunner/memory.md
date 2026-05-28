@@ -3460,9 +3460,35 @@ books:
         #   - foreclosure-quartet asymmetry: feel:2 @29 alone between bare @28+@30; @31 has narrator:10 + vibes:17+18; stitch must respect bare flanks
         #   - NI density 25.8% at ceiling — differentiated rhythm in scene-A (3 NI in 7 bones)
         #   - cf-d10 plant @8 + @18 + @27 callback-ready for d10 callback
-        stitched: false
-        stitched_at: null
-        draft_file: null
+        stitched: true
+        stitched_at: 2026-05-28T00:00:00Z
+        draft_file: active-project/draft/b01-c05.md
+        cold_read:
+          read_at: 2026-05-28T00:00:00Z
+          verdict: FAIL
+          recovered_summary: "narrator (working for an unnamed faction) watched three men beat a recurring courier in a city ward while routing intelligence reports; afterward replayed the day at home"
+          report_path: active-project/staff/reviews/coldread-b01-c05-2026-05-28.md
+          staging_signals: 0   # /and-review staging deferred under cascade-budget
+          staging_report_path: null
+          signal_clusters: []
+          continue: no
+          stale_since: null
+          # Phase 9 cold-read FAIL: chapter's central event (recognition-as-feed-stopping-being-neutral) not recovered.
+          # Cold reader recovered the courier beating + Taylor's home replay but did not feel the cost (the recognition).
+          # Specific confusions: cause-chain (sheet → beating) not explicit; Sera unnamed; "the Hook" unexplained; narrator faction unclear.
+          # Per Phase 9 routing: structural failure → re-decompose from bones, not polish.
+          # Recommended action: /and-write b01-c05 revise (then re-cascade /and-facets + /and-stitch).
+          # Specific signals for revise --from-signals:
+          #   - feed-stopping-neutral event needs more dramatized recognition staging at @25 (cessation IS recognition; prose may need to stage the door-closing more explicitly)
+          #   - cause-chain: enforcement incident → Taylor's filing-as-Jarvis-report needs explicit causal link visible in prose
+          #   - cf-d10 plant: courier-identity stakes need stronger anchor
+        # /and-stitch b01-c05 emit 2026-05-28. Single-arm scene-window.
+        # Phase 1 scene-window: 3 forks (scene-A 287w; scene-B 290w; scene-C 202w; total body 779w + preamble 113w = 892w pre-Phase-7; 840w post-Phase-7).
+        # Phases 2-6 inline-mechanical (no faults).
+        # Phase 7 per-sentence Q-line sweep: 40 sentences walked; 33 KEEP / 4 REWORD / 2 CUT-CLAUSE / 1 CUT / 0 RESHOW.
+        # Phase 8 finalize: clean draft at active-project/draft/b01-c05.md; render-log at active-project/staff/stitcher/render-log-b01-c05.md.
+        # Phase 9 cold-read: FAIL. Routes to /and-write revise (structural failure, not polish).
+        # Phase 9.5 admin process-critic: dispatched (FAIL verdict triggers).
         chunk: |
           The insect-feed begins returning court-tier content for the first time. Taylor has
           extended coverage to a ward that abuts the lower Red Keep servant passages, and the
