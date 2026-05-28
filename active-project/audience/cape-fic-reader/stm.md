@@ -275,3 +275,38 @@ Oswyn's unknowing-node arrival at n06 is the board-reshape this reader wants —
 ## scene b01c04s03
 verdict: SUBSTANCE-FELT
 Three axes in twelve bones and all three earn their moves through physical events. The prior chunk-review soft watch on position-world (bracket-declaration vs. physical image) is resolved: Jarvis's exit (n09) IS the intelligence exiting Taylor's operational context — the sheet leaves in a body, which is the world-position increment enacted as a fact, not asserted. The Sera confirmation (n06: Jarvis displays the note without handing it over) closes the stated-first-dividend column before the architecture runs unexamined at the close — the deal has a real return, and that makes the tether-prot-rise at n07 (Taylor delivers the report-sheet) land as the trap door opening rather than as an unconfirmed speculation. The chapter close (n10-n12: runs the ward-feed / feed returns Wren / exits the stitch-house lane without examining whether the anchor holds) enacts the protection-and-trap thesis as a physical operation, not a declared argument — the architecture covers Wren, the report excludes Wren, the discipline holding that exclusion continues without examination, and the chapter ends on the exit, not on a judgment. No established limits bypassed without cost; no unmotivated knowledge; no cheap gains; no fatigue triggers.
+
+## b01c05 chunk review — 2026-05-28
+
+## Per-scene verdict
+
+- b01c05s01 (axes_held only — political_register-prot dormant):
+  SUBSTANCE-FELT — the held discipline is load-bearing, not flat-empty. The provisioner-train institutional-gait signature and the message-runner gait-class give the dormancy its specific texture: this reader knows the held axis is being tested by a different substrate because the chunk names what the substrate IS ("forward-lean of people carrying loads under a tight delivery window," "double-step of someone on a specific errand"). The opposition is present — "the court-tier content's novel weight" sits against the method-unchanged frame — and the discipline holds with physical specificity. The "files it as: different substrate" formulation is the correct information-asymmetry shape: Taylor categorizes without naming what the categorization costs, reader sees the gap. No filler; the ward-walk is the mechanism.
+
+- b01c05s02 (axes_held — political_register-prot and moral_framework under load):
+  SUBSTANCE-FELT — the enforcement incident is the right class of inciting beat: it names itself as faction-violence through the geometry of approach (blocking exits before contact, controlled containment, coordinated departure-walk), not through Taylor's inference. The reader receives the board-state before Taylor's report does. The feed-event distinction (enforcement vs. robbery is mechanically specified through approach-coordination and post-contact behavior) is the tactical-mechanism grounding this reader requires — the rule is stated before it is applied. The "this is what the feed reads. It is what the feed reads." repetition is the rationalization-running-without-interrogation tell: the moral_framework hold is not neutral, it is discipline under load. The cf-d10 thread plant closes correctly — three sightings, enforcement attached to the filing, body in Taylor's record without being named. Courier face is in the body-map, not the ledger. That's the right separation. No unmotivated knowledge (Taylor does not know which faction; the report includes only what the feed physically returns).
+
+- b01c05s03 (political_register-prot +1.5 in motion — cl-d05 anchor):
+  SUBSTANCE-FELT — "the color has arrived" is felt, not declared. The mechanism that delivers it is structurally sound: the evening replay strips the real-time categorization frame, which is what lets the accumulated substrate sit without the discipline's organizational container. The provisioner-train institutional-gait "carries something that the factual-categorization register was holding at distance" — this is arrival-of-color through the mechanism's own failure mode, not through Taylor deciding to feel something. The "the neutrality was the discipline's performance, not the discipline's fact" formulation is the +1.5 earned: reader learns that the prior two scenes' held-axis notation was not absence of color but suppression of it, which retroactively loads the s01/s02 dormancy. The courier's post-enforcement walk image (performing normalcy in response to being reminded it is being watched) is the opposing force's physical correlate — it is the court-tier content being readable as faction-violence-substrate even in review, not just in real-time acquisition. The axis-mover lands through a specific mechanism at a specific moment, not as a stated conclusion.
+
+## cf-d10 thread plant check
+
+Three sightings structured in the chunk: s02 identifies the courier as third sighting, names prior two (implicit in "three separate times"), attaches enforcement incident to the filing, closes with courier's face in Taylor's body-map but not the ledger. The plant is intentional — the "in Taylor's body-map now, not in any ledger she writes" line is the correct information-asymmetry shape for a future-recognition setup (Taylor will recognize the face; the face is not tracked officially; the asymmetry opens). Does it land with intentionality? Yes — the three-sighting structure is earned because the first two sightings are procedurally accumulated (recurring-body-probable-resident classification), the third triggers enforcement, and the enforcement triggers the body-map filing. The plant does not feel like a retroactive insertion; it feels like a classification threshold being crossed.
+
+## Dormancy check (s01/s02)
+
+s01 and s02 hold political_register-prot without it going flat because the opposition is live in both scenes — "the court-tier content's novel weight" in s01 and "the content has named itself as faction-violence" in s02 name what the discipline is resisting. The held axis is load-bearing dormancy: reader can see what the discipline is suppressing. The chunk does not ask the reader to accept two static scenes followed by a reveal; it gives the reader the pressure the discipline is holding against before the discipline fails in review.
+
+## Threshold Discipline fires
+
+No fires.
+- "Character knowing something they haven't been told": no fire — Taylor does not know which faction directed the enforcement; she reports what the feed physically reads.
+- "Established limits bypassed without cost": no fire — no capability expansion; coverage is maintenance.
+- "New character earning trust without cost": no fire — courier is a body-map entry, not a relational anchor; the filing discipline is correctly scoped.
+- "Slice-of-life filler when the plot is live": no fire — s01 and s02 are the feed-acquisition that makes s03's review mechanically possible; they are not setup scenes for a reveal, they are the substrate the reveal processes.
+
+## Overall
+
+SUBSTANCE-FELT — the +1.5 political_register-prot move lands through mechanism (evening-replay strips real-time categorization frame → accumulated substrate becomes visible), the s01/s02 dormancy is load-bearing (discipline holding against named pressure, not empty pause), the cf-d10 courier-face plant lands with intentional structure (three-sighting threshold crossed at enforcement, body-map filing separated from ledger filing), and the s02 enforcement incident functions correctly as a feed-event Taylor processes through her categorization layer rather than as a plot-event that triggers action.
+
+VERDICT: ACCEPT
