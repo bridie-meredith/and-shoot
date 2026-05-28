@@ -3389,6 +3389,18 @@ books:
         bones_file: theater/bones/b01-c05.md
         bones_count: 31
         substance_bone_gate_verdict: PASS
+        bones_review:
+          reviewed_at: 2026-05-28T00:00:00Z
+          report_path: active-project/staff/reviews/bones-b01c05-2026-05-28.md
+          verdict: PASS-WITH-NOTES
+          bones_file_mtime_at_review: 1779952025
+          stale_since: null
+          # Verdict: no HARDs; 2 FLAGs carried from Phase 6 (s03n10+n12 SVO duplicate; s03n03 "resolves" intransitive); 3 notes for /and-facets:
+          #   note-001: courier's post-enforcement walk image — narrator-interest/sensory facet must cite @23-@25 (s03n07 removed at Phase 6 fault-003; image is load-bearing for resentment-accumulation read)
+          #   note-002: cf-d10 face-content — memory or narrator-interest facet must associate face with body-record @27 (otherwise d10 callback loses face-recognition anchor)
+          #   note-003: 3 cite-responsibilities forward to /and-facets — narrator-interest @5 (provisioner gait-class, replacing removed s01n06) + @7 (message-runner gait-class, replacing removed s01n09); sensory @13 carrying "effortful" qualifier stripped from bone SVO
+          # Cold-read prediction: HIGH/MEDIUM/HIGH (no LOW); MEDIUM on "color arrives before Taylor names it" is facet-layer-dependent by architectural design
+          # Probe verdicts: gap-instrument @13/@14 PASS (gap not hollowed by stripping "effortful"); recognition-cessation @25 PROPERLY ANCHORED; foreclosure quartet @28-@31 reads as FORECLOSURE; cf-d10 plant SUFFICIENT at figure level (face is facet responsibility)
         substance_delta_measured:
           axes_moved:
             political_register-prot: +1.5    # s03n06 (flat 25, +1.5); EXACT vs target +1.5; cl-d05 first tranche
