@@ -9,12 +9,12 @@ verdict: accept
 
 # Verdict reasoning
 
-The enforcement-geometry entries at @11 and @12 are doing real tactical work — "alley-mouth width is the containment fact; two bodies at the mouth control all egress" is exactly the kind of constraint this reader tracks to verify that what follows (the pinning, the feed gap, the non-intervention discipline) is operating under real physical rules, not abstract set-dressing. The auditor flagged these as lonely, but lonely-and-necessary is the right call: these entries give the enforcement scene its verifiable geometry, the kind of setup that makes the moral_framework hold feel like a held constraint against a real spatial fact rather than a performance. The wall-line entry at @4 and the room-floor entry at @23 are clean state-anchors that orient the two location shifts without padding. Nine entries on 35 bones is thin in the right way.
+Nine entries carrying enforcement-geometry and operational-threshold work — the containment-fact at @12 ("alley-mouth width is the containment fact; two bodies at the mouth control all egress") is exactly the physical constraint that makes the non-intervention discipline read as a held rule against a real spatial situation rather than a performance. The wall-line entry at @4 orients Taylor's observation position so the subsequent courier-tracking reads as a sightline problem, not as narrator-omniscience. The room-floor reset at @23 is a clean two-variable shift (location + time-of-day) that licenses the evening-replay transition. The coverage-release threshold at @7 (coverage releases transiting bodies into the lower city) is load-bearing: without it "feed does not chase" at @8 reads as a choice, not as a physical limit. The auditor-flagged lonely entries are lonely-and-necessary, not lonely-and-decorative.
 
 # Entry-level callouts (revise / fail only)
 
-N/A
+None.
 
 # Convergence trace
 
-N/A
+No callouts. Auditor flag-002 (loc-state:3 @7, borderline necessity) and flag-003 (loc-state:5/@11 + :6/@12, enforcement-geometry) both assessed as defended — consistent with this accept. Auditor pass-041 (rubric-fidelity, CLEAN).
