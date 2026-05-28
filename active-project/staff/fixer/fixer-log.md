@@ -1306,3 +1306,44 @@ dispatch: /and-facets b01-c05 Phase 5b cycle-2 consolidated remediation — 4 fa
 target: active-project/theater/facets/vibes.md, interest-narrator.md, memory.md, sensory.md, _cite-index.md
 audit-report: active-project/staff/audience/cape-fic-reader/audience-gate-cycle1-verdicts.md + dark-fantasy-reader/audience-gate-cycle1-verdicts.md + worm-canon-pedant/audience-gate-cycle1-verdicts.md; active-project/staff/auditor/facets-final-audit.md
 findings-queued: 4 (vibes EDIT; narrator DELETE×2; memory ADD-preamble; sensory ADD)
+
+## SESSION-START — 2026-05-28T10:00:00Z — and-facets-b01c05-cycle2-consolidated
+dispatch: /and-facets b01-c05 Phase 5b cycle-2 consolidated remediation pass — vibes:12-14 lic-out remap to state:13; narrator:2+:5 DELETE; memory carve-out preamble ADD; sensory:3 ADD @14; feeling.md left unchanged (per-scene cap blocks fix; advisory accepted); cite-index cascade update
+target: active-project/theater/facets/vibes.md (primary), active-project/theater/facets/interest-narrator.md, active-project/theater/facets/memory.md, active-project/theater/facets/sensory.md, active-project/theater/facets/_cite-index.md
+audit-report: active-project/staff/audience/cape-fic-reader/audience-gate-cycle1-verdicts.md + dark-fantasy-reader/audience-gate-cycle1-verdicts.md + worm-canon-pedant/audience-gate-cycle1-verdicts.md + active-project/staff/auditor/facets-final-audit.md
+findings-queued: 4 (vibes EDIT; narrator DELETE×2; memory ADD-preamble; sensory ADD)
+
+## feeling-advisory-accept — NO-CHANGE — 2026-05-28T10:22:00Z
+fault: dark-fantasy REVISE — feel:2 @29 isolated in foreclosure quartet; @28+@30 bare flanking
+scope: n/a
+change: none — per-scene cap ≤1 (HARD) blocks ADD in scene-C; asymmetry accepted as structurally defensible (trying-not-to-register dimension); feeling.md unchanged
+criteria met: yes — HARD cap documented; no criteria to meet (advisory accepted)
+
+## SESSION-END — 2026-05-28T10:25:00Z — and-facets-b01c05-cycle2-consolidated
+findings-applied: 4 (vibes lic-out remap; narrator:2+:5 DELETE with cascade; memory carve-out preamble ADD; sensory:3 ADD with cascade)
+findings-skipped: 0 (feeling advisory accepted — not a skip, correct disposition per per-scene cap HARD)
+exit: CLEAN
+
+## sensory-add — RESOLVED — 2026-05-28T10:20:00Z
+fault: dark-fantasy REVISE — sensory:2 @13 carries enforcement passage alone without body-correlate at recovery point; gap-instrument reads as atmosphere not cost-intelligence
+scope: line
+change: sensory.md: sensory:3 @14 added (tactile: alley-stone-against-spine -> body-upright-recovery); carve-out preamble extended; pre-validation A3 passed; proto-lines @14 gets [sensory:3]; cite-index: sensory 2→3 entries; @14 bare→1-cite; totals 59→60; 25→26 decorated
+criteria met: yes
+
+## memory-carve-out-preamble — RESOLVED — 2026-05-28T10:15:00Z
+fault: cape-fic REVISE mem:4+mem:3 read as redundant double-fire; auditor fault-028 carve-out doc absent from facet file
+scope: line
+change: memory.md: rubric-carve-out preamble added — documents condition-gate-single-register (cond-override silences Earth-Bet until c12) and @18-@27 escalation (cost-borne entry vs file-closing residue; open-entry vs closed-record); entry lines unchanged; no cite-index impact
+criteria met: yes
+
+## narrator-deletes — RESOLVED — 2026-05-28T10:10:00Z
+fault: narrator:2 @7 redundant symmetric-body discipline beat; narrator:5 @24 lonely bone-annotation (cape-fic + worm-canon REVISE on NI)
+scope: line
+change: interest-narrator.md: entries 2 and 5 deleted with canonical comments; proto-lines @7 and @24 stripped; cite-index: narrator section 10→8; co-lists loc-state:4/vibes:3/vibes:4 cleaned; density table updated; totals 61→59; @24 added to bare protolines
+criteria met: yes — density 32.3%→25.8%; no orphaning
+
+## vibes-lic-out-remap — RESOLVED — 2026-05-28T10:05:00Z
+fault: vibes:12, :13, :14 at @25 carried `feeling:2` in cite-index lic-out fields; feel:2 anchors @29 not @25; cross-anchor license broken at chapter peak (cape-fic + dark-fantasy REVISE)
+scope: line
+change: vibes.md: annotation comments added to vibes:12-14 confirming `state:13` as co-anchor (file already had state:13, not feeling:2 — cite-index was stale); _cite-index.md: vibes:12/13/14 lic-out updated — `feeling:2` replaced with `state:13`
+criteria met: yes

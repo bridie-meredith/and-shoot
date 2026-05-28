@@ -52,10 +52,13 @@ generated: 2026-05-28
 11 @2 loc:the-rushwick + penitential-grey-absorbed: [the-ward-runs-on-schedule-the-schedule-is-not-neutral, Grey-King's-Landing-available-only-to-the-inattentive-and-the-feed-is-never-inattentive, location-carries-institutional-weight-before-any-event] | licensed-by: proto:2, proto:3, state-update:2, world-build:penitential-grey-KL-vibe-cloud
 
 12 @25 actor:taylor-hebert-kl-122ac ++ rising entrapment: [first-door-closed-on-page, foreclosure-enacted-as-body-act-not-declaration, neutral-instrumentally-observant-not-available-to-this-content, the-cage-is-the-feed-not-the-arrangement] | licensed-by: state-update:6, state:13, peak-bone:25
+# cycle-2 fix: feeling:2 removed from licensed-by (feel:2 anchors @29, not @25; cross-anchor license broken); state:13 is the co-anchor axis-move at @25 — clean co-anchor license
 
 13 @25 actor:taylor-hebert-kl-122ac + feed-as-resentment-generator: [insect-feed-generates-political-affect-without-being-directed-to, the-infrastructure-is-not-neutral-it-accretes, resentment-color-arrives-before-Taylor-names-it, operational-texture-is-the-only-label-she-applies] | licensed-by: state-update:6, proto:25, peak-bone:25, state:13
+# cycle-2 fix: feeling:2 removed from licensed-by; state:13 co-anchor retained
 
 14 @25 episode + foreclosure-enacted: [chapter-defining-door-close, neutral-instrumentally-observant-foreclosed-from-this-point, cl-d05-anchor-lands-here, rising-entrapment-first-on-page-instantiation] | licensed-by: state-update:6, peak-bone:25, state:13
+# cycle-2 fix: feeling:2 removed from licensed-by; state:13 co-anchor retained
 
 15 @25 actor:taylor-hebert-kl-122ac ++ contempt-without-refusal: [resentment-color-present-before-contempt-named, the-color-is-filed-not-refused-and-not-acted-on, contempt-in-formation-not-yet-articulate] | licensed-by: state-update:6, proto:25, canon:contempt-arrives-articulate-d13
 

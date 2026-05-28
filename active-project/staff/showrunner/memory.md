@@ -3430,6 +3430,39 @@ books:
         # Draft archived: active-project/staff/showrunner/_drafts/b01c05-bones-draft-2026-05-28.md
         # Auditor reports: write-b01c05-pass2.md (Phase 2; 3 attempts), write-b01c05-pass5.md (Phase 5; 2 attempts), write-b01c05-bone-gate.md (Phase 6; 2 attempts).
         # Audience reviewer STM (Phase 4 trim + Phase 6 bone-gate) under "## b01c05 ..." headings.
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
+        facets_status: audited-r1
+        facets_stale_since: null
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audit_findings: 0 HARD / 4 SIGNAL / 10 FLAG (cycle 1) → 0 HARD / 2 SIGNAL / 10 FLAG (cycle 2; fault-028 + fault-033 resolved)
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md
+        audience_gate_complete: true
+        audience_gate_cycles: 2
+        audience_gate_cap_burned: false
+        bidirectional_loop: validated   # 3 shared findings across auditor + audience paths (vibes:12-15 license, NI density, memory carve-out)
+        # /and-facets b01-c05 emit 2026-05-28 — 2-cycle audience-gate to clean ACCEPT.
+        # R1 fanout: 10 authors landed; 60 facet entries (loc-state=9, NI=8 post-c2, sensory=3 post-c2, state-env=7, state-taylor=8, memory=2 post-c2, feeling=2 post-c2, metaphor=0, vibes=18, exposition=3).
+        # R2 fanout: 5 judges (NI K=7 D=0 A=3; memory K=1 D=2 A=1; feeling K=1 A=1; metaphor K=0 D=0 A=0; exposition K=2 R=1 A=0). Dialogue R2 SKIPPED (no speech bones).
+        # Phase 5 audit cycle 1: FINDINGS-PRESENT (0 HARD; 4 SIGNAL: NI density 32.3%; metaphor inventory; memory carve-out doc; vibes:12-15 license; 10 FLAG advisory).
+        # Phase 5b cycle 1 (3 personas × all 9 facets batched): 4/9 ACCEPT, 5 FAIL (NI, sensory, memory, feeling, vibes).
+        # Cycle 2 fixer: vibes lic-out feeling:2 → state:13 co-anchor; DELETE narrator:2@7 + narrator:5@24 (density 25.8%); memory carve-out preamble; sensory:3@14 ADD (URI-FACETS-CYCLE-N-ADD pre-validation PASS).
+        # Phase 5 cycle 2 re-audit: CLEAN (0 new HARDs; fault-028 + fault-033 RESOLVED).
+        # Phase 5b cycle 2 re-fire (failing facets only): 9/9 ACCEPT strict 3-of-3.
+        # Phase 5c admin process-critic: SKIPPED (final cycle clean ACCEPT; no cap-burns).
+        # Final facet entry count: 60 (loc-state=9, NI=8, sensory=3, state=15, memory=2, feeling=2, metaphor=0, vibes=18, exposition=3).
+        # 26/31 proto-lines decorated (83.9%). Peak @25 = 6 facets; @18 = 5; @27 = 5; @13 = 5.
+        # Bare bones: @14 (post-c2 fix), @19, @23, @28, @30 — wait @14 now decorated by sensory:3; final bare = @19, @22 (no — @22 has narrator:9), let me recount: @19, @23, @28, @30. 4 bare.
+        # Soft watches forward to /and-stitch:
+        #   - vibes:12-15 @25 register: 6-facet pile-up at peak — stitcher to confirm density warranted (auditor verified warranted)
+        #   - foreclosure-quartet asymmetry: feel:2 @29 alone between bare @28+@30; @31 has narrator:10 + vibes:17+18; stitch must respect bare flanks
+        #   - NI density 25.8% at ceiling — differentiated rhythm in scene-A (3 NI in 7 bones)
+        #   - cf-d10 plant @8 + @18 + @27 callback-ready for d10 callback
+        stitched: false
+        stitched_at: null
+        draft_file: null
         chunk: |
           The insect-feed begins returning court-tier content for the first time. Taylor has
           extended coverage to a ward that abuts the lower Red Keep servant passages, and the
