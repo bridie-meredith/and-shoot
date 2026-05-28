@@ -28,21 +28,26 @@ cold_read_failure_source: active-project/staff/reviews/coldread-b01-c05-2026-05-
 - **rationale:** Closes confusion (ii) — "finds the feet" at @14 ambiguous. Spine-raises → feet-found = unambiguous full recovery.
 - **event_map_coverage:** strengthens "enforcement incident, courier retained on feet"
 
-#### B2 — Jarvis-channel routing (insertion: after @16)
+#### B2 — Jarvis-report drafting (insertion: after @16)
 - **slug:** b01c05s02n06a
-- **SVO:** `the enforcement-report enters the jarvis-channel`
+- **SVO:** `taylor-hebert-kl-122ac drafts the jarvis-report`
+    - **Phase 5 amendment (auditor fault-001 + fault-003):**
+        - Original: `the enforcement-report enters the jarvis-channel`. "The jarvis-channel" was not an established named entity (Jarvis is an actor, not a channel-object) — FAULT-REFERENCE.
+        - Original verb "enters" implied real-time transmission inside the live incident, violating c04 precedent + s02 chunk text where Taylor *drafts* the report during the scene and transmits later — FAULT-STATE.
+        - Fix: subject = taylor-hebert-kl-122ac; verb = `drafts` (concrete composition verb, intra-scene timing valid); object = `the jarvis-report` (established compound from s02 chunk: "Taylor begins the Jarvis report").
 - **substance_delta:**
-    - axes_held: [{axis: moral_framework, rationale: "routing through the named channel is inside the licensed exception; the apparatus is named without being interrogated"}]
-- **rationale:** Closes confusion (iii) partial — Jarvis-format and courier-channel diegetically physical.
-- **event_map_coverage:** strengthens existing "Taylor routes the enforcement incident to Jarvis"
+    - axes_held: [{axis: moral_framework, rationale: "drafting the Jarvis-report is inside the licensed exception; the routing-name is honored without being interrogated"}]
+- **rationale:** Closes confusion (iii) partial — Jarvis-format report is now bone-realized at the action layer (drafting is the action; the routing-name "jarvis-report" carries the recipient implicitly per established series vocabulary). Cause-chain at bone level: courier beaten → files enforcement-record (@15) → delivers report-entry (@16) → drafts jarvis-report (B2). Sera-link migrates to facet layer (memory facet + exposition facet) per the chapter's substance discipline that Taylor does not name the Sera-connection on-page.
+- **event_map_coverage:** strengthens existing "Taylor routes the enforcement incident to Jarvis as a factual movement-pattern report"
 
-#### B3 — Sera-arrangement filing (insertion: after B2, before @17)
-- **slug:** b01c05s02n06b
-- **SVO:** `taylor-hebert-kl-122ac adds the jarvis-form to the sera-arrangement-file`
-- **substance_delta:**
-    - axes_held: [{axis: moral_framework, rationale: "filing the Jarvis form into the Sera arrangement is the licensed exception in operation; sustains Sera's exposure management without interrogation"}]
-- **rationale:** Closes confusion (iii) — Sera identity bone-realized for first time. Models on @18 "adds X to Y" pattern. Cause-chain anchored: courier beaten → report filed → into Jarvis-channel → added to Sera-arrangement.
-- **event_map_coverage:** strengthens "Flea Bottom intelligence layer: routing to Otto through Jarvis" + handoff_in "Sera's exposure: managed"
+#### B3 — DROPPED at Phase 5 (auditor fault-002 + fault-003)
+- **Original SVO:** `taylor-hebert-kl-122ac adds the jarvis-form to the sera-arrangement-file`
+- **Drop rationale:** Both objects ("the jarvis-form" and "the sera-arrangement-file") were unestablished named entities — FAULT-REFERENCE. The Sera-arrangement is a relational contract per series-level establishment, not a physical document Taylor handles. Per chapter substance discipline (s01 + s03 force-blocks: "she has not named what it means that these bodies are connected to the architecture that keeps Sera's exposure managed"), the Sera-link is structurally absent from Taylor's on-page articulation; bone-realizing it would violate the chapter's substance contract that the connection happens *without* Taylor naming it.
+- **Sera-connection migration:** The cold-read confusion (iii) on Sera identity now routes to facet layer:
+    - memory facet (Taylor's prior context on Sera-protection arrangement, anchored at chapter open or s02 filing beats)
+    - exposition facet (reader-facing world-state surface: who Sera is, what the architecture protects)
+    - narrator-interest facet (the implicit Sera-connection as a quality of the routing, without Taylor's articulation)
+- **Result:** 4 new bones total (was 5). Site B reduces from 3 bones to 2 (B1 + B2).
 
 ### SITE C — recognition-staging at @25 (insertion: after @24, before @25)
 
@@ -57,13 +62,14 @@ cold_read_failure_source: active-project/staff/reviews/coldread-b01-c05-2026-05-
 
 ---
 
-## Summary
+## Summary (post Phase 5)
 
-- 5 new bones total.
-- 0 new event_map entries — all 5 strengthen existing entries.
+- 4 new bones total (B3 dropped at Phase 5 continuity audit).
+- 0 new event_map entries — all 4 strengthen existing entries.
 - No existing flat_ids touched. Existing bones 1-31 preserved.
-- New flat_ids will be assigned at Phase 7 emit (gap-fill in 32+ range or interleaved per emit policy).
-- All 5 new bones cite cl-d05 either directly (A1, C1 as chatter substrate) or implicitly via moral_framework holds (B1, B2, B3 — the licensed-exception running).
+- New flat_ids will be assigned at Phase 7 emit.
+- All 4 new bones cite cl-d05 either directly (A1, C1 as chatter substrate) or implicitly via moral_framework holds (B1, B2).
+- Sera-connection migrates to facet layer (memory + exposition + narrator-interest facets) — flagged as carry-forward to /and-facets re-run.
 
 ## Phase 1 → Phase 2 handoff
 
