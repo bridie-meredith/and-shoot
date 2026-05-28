@@ -765,7 +765,32 @@ parking_lot:
         page. See parking-lot pl-2026-05-28-002 for required deliveries per facet."
         Phase 5b audience-gate must include dark-fantasy-reader verdict on the
         Sera-link irony landing.
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-05-28T00:00:00Z
+      resolved_by: "/and-facets b01-c05 Phase 5b cycle 1 audience-gate (all 3 personas concurring SERA-ARCHITECTURE LANDS)"
+      resolution_note: |
+        Three audience personas independently verified the Sera-architecture irony
+        lands without Taylor naming it on-page:
+        - cape-fic-reader: "exposition:2 @0 gives the reader the mechanism before
+          the body starts: Jarvis-routed intelligence pays for the quiet on Sera's
+          parentage question. Memory:1 @19 fires at the filing bone connecting
+          enforcement Jarvis-routing to protective architecture in real time. NI:5
+          @19 confirms routing-destination as interior cognition without Taylor
+          naming. When @29 lands, the reader is equipped to read it as the instrument
+          recognizing the content it routes through the same architecture that
+          protects Sera — not abstract resentment."
+        - dark-fantasy-reader: "SERA-ARCHITECTURE: LANDS. Three-facet delivery
+          complete: exposition:2 @0 (WHO+WHAT+WHY trio: Sera as Hightower-cadet ward
+          of Alicent's household; parentage-question liability; Jarvis-routed
+          intelligence pays for the quiet) + memory:1 @19 (interior register of
+          routing's destination 'the architecture that holds someone else's exposure
+          at a length of someone else's arm') + NI carriers @5/@19/@29 (posture
+          without naming). The +1.5 at @29 lands as instrument-complicity (feed
+          stops being neutral on substrate it routes harm through), not as
+          resentment-of-enforcement. The Sera-link irony is structurally anchored."
+        - worm-canon-pedant: Earth-Bet fence CLEAN; canonicity discipline holds
+          (mem:2 Earth-Bet displacement via override-architecture-residue uses
+          shape-language only, no Khepri / Gold Morning leak).
+        Final-cycle aggregate: vibes 3/3 ACCEPT, memory 3/3 ACCEPT, exposition 3/3
+        ACCEPT (the three Sera-architecture carrier facets).
+        Evidence: active-project/staff/auditor/facets-audience-gate-r2.md

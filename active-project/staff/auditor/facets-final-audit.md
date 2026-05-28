@@ -641,7 +641,7 @@ Modality declared in sensory:2: `sound`. The SVO names the alley's acoustic retu
 
 ### check-2: loc-state:5 @11 acoustic-baseline extension validity
 
-**Rubric basis:** The loc-state rubric's `<one-clause sensory note>` field is "the most load-bearing field" and names "a single perceptible thing the move turns on." The rubric's form is `<id> @<proto-line-id> <location-slug> | <time> | <weather> | <conditions> | <one-clause sensory note>`. The acoustic-baseline addition extends the existing sensory note field of loc-state:5 @11 — it does not add a new loc-state entry; it annotates the existing entry's sensory note with acoustic vocabulary.
+**Rubric basis:** The loc-state rubric's `<one-clause sensory note>` field is "the most load-bearing field" and names "a single perceptible thing the move turns on." The rubric's form is `<id> @<proto-line-id> <location-slug> | <time> | <weather> | <conditions> | <one-clause sensory note>`. The acoustic-baseline addition extends the existing sensory note field of loc-state:5 @11 — it does not add a new loc-state entry; it annotates the existing entry's sensory note field with acoustic vocabulary.
 
 **Whether the extension is a valid sensory-note extension vs. a new entry:** The fixer log records this as an extension of the existing loc-state:5 entry's sensory-vocabulary field, specifically to provide old-state lineage for sensory:2. The rubric's form permits the sensory note to carry compound information where both elements describe the same location's perceptible character at that anchor. The extension adds: `acoustic-baseline: alley-interior-contained-silence — stone walls return sound inward; ambient below human-register threshold until alley-emission event carries it outward`. This is a sensory-vocabulary gloss added to the conditions/sensory-note portion of an existing entry, not a new location-state entry with a new anchor. The rubric does not prohibit annotating the sensory note with acoustic-vocabulary terminology that resolves the old-state lineage requirement of a downstream sensory flag.
 
@@ -691,7 +691,7 @@ Scope: all facet files that could carry a `[sensory:2 @13]` or `sensory:2` cross
 
 **Proto-lines file (`b01-c05.md`):** Line 23 reads `13 the three figures pin the courier [sensory:2]`. Line 24 reads `14 the side-alley returns the sound [narrator:4] [vibes:6] [vibes:7] [vibes:8]`. The `[sensory:2]` token is still at @13, not at @14. The fixer log stated "(3) proto-lines b01-c05.md: [sensory:2] moved from line 13 to line 14" — but the file on disk contradicts this claim. The token was not moved. This is fault-c2-001.
 
-**Cite-index (`_cite-index.md`):** The cite-index shows `sensory:2 @14 back=N`. The `back=N` is the cite-index's own report that the proto-lines file does NOT carry a citation token for sensory:2 at @14. This is consistent with the proto-lines file still carrying `[sensory:2]` at @13 — the citation is present in the proto-lines file at @13, but the cite-index was rebuilt against the sensory facet file which says @14, producing the back=N result (the anchor in the facet is @14; the proto-line token is at @13; they do not match so back=N). The cite-index's back=N is a symptom of the unresolved proto-lines token, not an independent clean result.
+**Cite-index (`_cite-index.md`):** The cite-index shows `sensory:2 @14 back=N`. The `back=N` is the cite-index's own report that the proto-lines file does NOT carry a citation token for sensory:2 at @14. This is consistent with the proto-lines file still carrying `[sensory:2]` at @13 — the citation is present in the proto-lines file at @13, but the cite-index was rebuilt against the sensory facet file which says @14, producing the back=N result (the anchor in the facet is @14; the proto-line token is at @13; so back=N). The cite-index's back=N is a symptom of the unresolved proto-lines token, not an independent clean result.
 
 **Vibes file (`vibes-b01-c05.md`):** vibes:6, vibes:7, vibes:8 all anchor at @14 and carry no `sensory:2` reference in their `licensed-by` fields. No stale @13 citation.
 
@@ -709,7 +709,7 @@ Scope: all facet files that could carry a `[sensory:2 @13]` or `sensory:2` cross
 
 - id: fault-c2-001
 - type: fault
-- what: The proto-lines file `active-project/theater/proto-lines/b01-c05.md` still carries `[sensory:2]` at line 13 (`13 the three figures pin the courier [sensory:2]`). The sensory facet file has been updated to anchor sensory:2 at @14, but the corresponding citation token in the proto-lines file was not moved. The fixer log explicitly states the move was applied ("proto-lines b01-c05.md: [sensory:2] moved from line 13 to line 14") but the file on disk does not reflect this. Line 14 reads `14 the side-alley returns the sound [narrator:4] [vibes:6] [vibes:7] [vibes:8]` — no `[sensory:2]` token is present at this line. The cite-index's `sensory:2 @14 back=N` is the direct consequence: the facet anchor is @14, the proto-lines token is at @13, so back-pointer verification fails.
+- what: The proto-lines file `active-project/theater/proto-lines/b01-c05.md` still carries `[sensory:2]` at line 13 (`13 the three figures pin the courier [sensory:2]`). The sensory facet file has been updated to anchor sensory:2 at @14, but the corresponding citation token in the proto-lines file was not moved. The fixer log explicitly states the move was applied ("proto-lines b01-c05.md: [sensory:2] moved from line 13 to line 14") but the file on disk contradicts this claim. Line 14 reads `14 the side-alley returns the sound [narrator:4] [vibes:6] [vibes:7] [vibes:8]` — no `[sensory:2]` token is present at this line. The cite-index's `sensory:2 @14 back=N` is the direct consequence: the facet anchor is @14, the proto-lines token is at @13, so back-pointer verification fails.
 - why: The citation token in the proto-lines file is the canonical back-pointer that the stitcher and cite-index builder use to locate facet decorations against bones. With `[sensory:2]` at @13, the stitcher will associate the sound modality flag with the causal bone (`the three figures pin the courier`) rather than the perceptual-event bone (`the side-alley returns the sound`). This is the exact misattribution the cycle-2 re-anchor was designed to correct. The re-anchor is half-complete: the facet file is correct; the proto-lines file is not. The cite-index's `back=N` on sensory:2 is a persistent integrity signal that the graph is inconsistent.
 - criteria: `active-project/theater/proto-lines/b01-c05.md` line 13 must be changed from `13 the three figures pin the courier [sensory:2]` to `13 the three figures pin the courier`. Line 14 must be changed from `14 the side-alley returns the sound [narrator:4] [vibes:6] [vibes:7] [vibes:8]` to `14 the side-alley returns the sound [narrator:4] [sensory:2] [vibes:6] [vibes:7] [vibes:8]`. The cite-index must then be rebuilt so that `sensory:2 @14 back=Y`.
 
@@ -717,7 +717,7 @@ Scope: all facet files that could carry a `[sensory:2 @13]` or `sensory:2` cross
 
 ### check-6: no new mechanical findings from loc-state edit
 
-The loc-state:5 @11 edit is a sensory-vocabulary extension to an existing entry's sensory note field. It does not: add a new loc-state entry with a new ID (no new ID was introduced — entry count remains 9); change any anchor (the entry remains at @11); alter any field that the stitcher reads for location-slug, time, weather, or conditions; or affect any other facet's citations. The cite-index shows `loc-state:5 @11 back=Y` — unchanged from before. The acoustic-baseline annotation is a human-readable extension of the sensory note field that the sensory-old-state-reader rubric requires for old-state lineage; it has no mechanical effect on any other facet. No new mechanical findings from the loc-state edit.
+The loc-state:5 @11 edit is a sensory-vocabulary extension to an existing entry's sensory note field. It does not: add a new loc-state entry with a new ID (no new entry was introduced — entry count remains 9); change any anchor (the entry remains at @11); alter any field that the stitcher reads for location-slug, time, weather, or conditions; or affect any other facet's citations. The cite-index shows `loc-state:5 @11 back=Y` — unchanged from before. The acoustic-baseline annotation is a human-readable extension of the sensory note field that the sensory-old-state-reader rubric requires for old-state lineage; it has no mechanical effect on any other facet. No new mechanical findings from the loc-state edit.
 
 ---
 
@@ -740,3 +740,107 @@ The loc-state:5 @11 edit is a sensory-vocabulary extension to an existing entry'
 The sensory:2 re-anchor and the loc-state:5 acoustic-baseline extension are both content-correct — the facet-side changes are valid per rubric. However, the fixer did not complete the proto-lines file edit: the `[sensory:2]` citation token was not moved from @13 to @14 in `active-project/theater/proto-lines/b01-c05.md`. This is a HARD fault (fault-c2-001) because the facet anchor and the proto-lines back-pointer are now inconsistent, and the cite-index reports `back=N` as a consequence. The fix is a targeted two-line edit in the proto-lines file followed by a cite-index rebuild.
 
 No other facet files carry stale `sensory:2 @13` references. The loc-state edit introduced no new findings. The chapter's other facets (NI, vibes, memory, feeling, state-updates, exposition, scene-map, metaphor) are unaffected by the cycle-2 edits and carry forward at their prior audit status.
+
+---
+
+## cycle-3 re-audit 2026-05-28 (after fault-c2-001 proto-lines sync)
+
+re-audit-timestamp: 2026-05-28
+re-audit-scope: targeted — fault-c2-001 resolution verification: (1) [sensory:2] token moved from @13 to @14 in proto-lines; (2) cite-index rebuilt; (3) all other citation tokens unchanged; (4) sensory facet anchor at @14 confirmed
+re-audit-files-read: active-project/theater/proto-lines/b01-c05.md, active-project/theater/facets/_cite-index.md, active-project/theater/facets/sensory-b01-c05.md
+
+---
+
+### check-c3-1: fault-c2-001 resolution — proto-lines token position
+
+**Current state of proto-lines/b01-c05.md:**
+- Line 13: `13 the three figures pin the courier` — no `[sensory:2]` token present. Token has been removed from @13.
+- Line 14: `14 the side-alley returns the sound [narrator:4] [sensory:2] [vibes:6] [vibes:7] [vibes:8]` — `[sensory:2]` token is present at @14.
+
+The token move from @13 to @14 is confirmed in the file on disk. The cycle-2 fault criteria specified exactly these two changes; both are present.
+
+**fault-c2-001 status: RESOLVED.**
+
+---
+
+### check-c3-2: cite-index back-pointer for sensory:2
+
+**Cite-index sensory section (current):**
+- `sensory:1 @4 back=Y`
+- `sensory:2 @14 back=Y co=[narrator:4, vibes:6, vibes:7, vibes:8]`
+
+The cite-index reports `sensory:2 @14 back=Y`. This confirms the cite-index was rebuilt after the proto-lines edit and the back-pointer verification now passes: the sensory facet anchor (@14) and the proto-lines citation token (now at @14) are in agreement. The co-citations at @14 (`narrator:4`, `vibes:6`, `vibes:7`, `vibes:8`) match the tokens present on line 14 of the proto-lines file.
+
+The cycle-2 fault-c2-001 criteria required `sensory:2 @14 back=Y` in the rebuilt cite-index. That condition is now met.
+
+**Back-pointer verification: PASS.**
+
+---
+
+### check-c3-3: sensory facet anchor confirmation
+
+**Sensory facet file (sensory-b01-c05.md) entry 2:**
+`2 @14 sound: alley-stone-contained-silence -> courier-effortful-body-sound # tag: spike # old-state: loc-state:5 @11 # note: perceptual-event bone...`
+
+The sensory facet anchor for entry 2 is @14. Unchanged from cycle-2. The facet-side anchor is consistent with the proto-lines token position and the cite-index back-pointer. No new discrepancy introduced.
+
+**Sensory facet anchor: CONFIRMED @14.**
+
+---
+
+### check-c3-4: other citation tokens unchanged — full proto-lines token sweep
+
+Scope: all decorated lines in proto-lines/b01-c05.md. Verified that no citation token other than the `[sensory:2]` move was affected by the cycle-3 proto-lines restore and re-merge. Cross-referencing each decorated line against the cite-index back=Y entries:
+
+- @1 `[loc-state:1]` — cite-index `loc-state:1 @1 back=Y` ✓
+- @2 `[exposition:3] [narrator:1] [state:1] [vibes:3]` — cite-index: `narrator:1 @2 back=Y`, `exposition:3 @2 back=Y`, `vibes:3 @2 back=Y`. The `[state:1]` token at @2 is a pre-existing condition from the fault-001 env-slice ID collision (the cite-index maps state:1 to @21 Taylor slice; the env entry at @2 is state:6 back=N). This is a known pre-existing condition, not introduced by cycle-3. ✓ (pre-existing; unchanged)
+- @4 `[sensory:1]` — `sensory:1 @4 back=Y` ✓
+- @5 `[loc-state:2] [narrator:2] [vibes:4]` — all back=Y ✓
+- @7 `[loc-state:3]` — `loc-state:3 @7 back=Y` ✓
+- @8 `[exposition:4]` — `exposition:4 @8 back=Y` ✓
+- @9 `[vibes:5]` — `vibes:5 @9 back=Y` ✓
+- @10 `[loc-state:4] [narrator:3]` — both back=Y ✓
+- @11 `[loc-state:5]` — `loc-state:5 @11 back=Y` ✓
+- @12 `[loc-state:6]` — `loc-state:6 @12 back=Y` ✓
+- @13 no tokens — confirmed bare. The `[sensory:2]` token that was here in cycle-2 is gone. ✓
+- @14 `[narrator:4] [sensory:2] [vibes:6] [vibes:7] [vibes:8]` — all back=Y per cite-index ✓
+- @17 `[state:3] [vibes:9]` — `vibes:9 @17 back=Y`; `state:8 @17 back=N` (env slice; pre-existing fault-001 artifact). `[state:3]` token maps to cite-index state:3 @29 Taylor slice in the monotonic namespace — pre-existing known condition. ✓ (pre-existing; unchanged)
+- @19 `[mem:1] [narrator:5] [vibes:10]` — all back=Y ✓
+- @20 `[loc-state:7]` — `loc-state:7 @20 back=Y` ✓
+- @21 `[narrator:6] [state:1] [state:4] [vibes:11] [vibes:12]` — narrator:6 back=Y, vibes:11/12 back=Y; state:9/@21 back=N (env slice, pre-existing); Taylor-slice state:1/@21 back=Y. `[state:4]` token: state:4/@29 back=Y in Taylor slice. Pre-existing fault-001 artifacts for env entries. ✓ (pre-existing; unchanged)
+- @22 `[loc-state:8]` — `loc-state:8 @22 back=Y` ✓
+- @23 `[loc-state:9] [state:5] [state:6]` — loc-state:9 back=Y; state:5/@31 back=Y; state:6/@2 back=N; state:10/@23 and state:11/@23 back=N (env slice, pre-existing). ✓ (pre-existing; unchanged)
+- @28 `[narrator:7] [state:2] [vibes:13] [vibes:14]` — narrator:7 back=Y, state:2/@28 back=Y, vibes:13/14 back=Y ✓
+- @29 `[feel:1] [narrator:8] [state:3] [state:4] [vibes:15] [vibes:16] [vibes:17]` — all back=Y ✓
+- @31 `[mem:2] [narrator:9] [state:5] [state:7]` — mem:2 back=Y, narrator:9 back=Y, state:5/@31 back=Y; state:12/@31 back=N (env slice, pre-existing). ✓ (pre-existing; unchanged)
+- @35 `[narrator:10] [vibes:18] [vibes:19] [vibes:20]` — all back=Y ✓
+
+All back=N entries are the pre-existing env-slice state entries from the fault-001 resolution (addressed in cycle-1 re-audit; consolidated IDs are monotonic and NOT-CANONICAL headers are present on standalone files). No back=N entry is new relative to the cycle-2 state. No citation token was inadvertently added, removed, or displaced by the cycle-3 proto-lines restore and re-merge.
+
+**Other citation tokens: UNCHANGED. No inadvertent token loss or displacement.**
+
+---
+
+### check-c3-5: no new mechanical findings from proto-lines restore + re-merge
+
+The cycle-3 remediation consisted of: (a) restoring the canonical proto-lines from the bones file, (b) re-running `build_cite_index.py` merging 15 author inflight copies including the sensory inflight. The re-merge was reported clean (no body-integrity errors). The cite-index entry counts are consistent with the facet files. The `sensory:2 @14 back=Y` result is the only change from cycle-2 to cycle-3 in the cite-index. The density distribution (22/35 protolines decorated, 62 total facet entries) is unchanged — the `[sensory:2]` token moved from one decorated line (@13) to another (@14); the count of decorated lines and total entries did not change. No new facet entries were introduced by the re-merge. No entries were deleted. No anchors were shifted for any facet other than sensory:2.
+
+**No new mechanical findings from proto-lines restore + re-merge.**
+
+---
+
+### Cycle-3 Re-audit Summary
+
+| Check | Result | Notes |
+|-------|--------|-------|
+| fault-c2-001 resolution — proto-lines token | RESOLVED | @13 bare; @14 carries [sensory:2]; criteria met exactly |
+| cite-index back-pointer sensory:2 @14 | back=Y | Rebuild confirmed; facet anchor, proto-lines token, and cite-index all agree at @14 |
+| sensory facet anchor | CONFIRMED @14 | Unchanged from cycle-2; no new discrepancy |
+| Other citation tokens | UNCHANGED | Full proto-lines sweep; no inadvertent loss or displacement; pre-existing back=N entries are all fault-001 artifacts from cycle-1, unchanged |
+| New findings from restore + re-merge | NONE | No new entries; no shifted anchors; density distribution unchanged |
+
+**New HARDs introduced: 0**
+
+**Cycle-3 re-audit verdict: CLEAN**
+
+fault-c2-001 is resolved. The proto-lines file now carries `[sensory:2]` at @14 (not @13), the cite-index reports `sensory:2 @14 back=Y`, and the sensory facet anchor at @14 is consistent with both. The proto-lines restore + cite-index re-merge introduced no new findings. All pre-existing back=N entries are the fault-001 env-slice artifacts addressed and closed in cycle-1. The chapter's facet graph is mechanically clean. No HARD findings remain open.

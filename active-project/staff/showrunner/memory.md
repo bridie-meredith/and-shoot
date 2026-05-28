@@ -3486,8 +3486,44 @@ books:
         facets_path: active-project/theater/facets/
         round_1_complete: true
         round_2_complete: true
-        facets_status: audited-r1
-        facets_stale_since: 2026-05-28T00:00:00Z  # bones file re-emitted at revise Phase 7; all facet entries are stale-anchored against pre-revise flat_ids 1-31; /and-facets re-run required
+        facets_status: audited-r1   # cleared via /and-facets b01-c05 re-run 2026-05-28 (post-revise --from-signals)
+        facets_stale_since: null  # cleared at /and-facets re-run Phase 6 persist 2026-05-28
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audit_findings: "0 HARD / 6 SIGNAL final (cycle 3 CLEAN) — cycle 1: 2 HARD + 6 SIGNAL → fault-001 + fault-002 remediated; cycle 2: 1 new HARD (fault-c2-001 proto-lines sync gap) → remediated; cycle 3 CLEAN"
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md
+        audience_gate_complete: true
+        audience_gate_cycles: 2
+        audience_gate_cap_burned: false
+        bidirectional_loop: validated   # multiple shared findings across audience + auditor (vibes fault-002 / sensory:2 cross-card mismatch)
+        # /and-facets b01-c05 RE-EMIT 2026-05-28 (post /and-write revise --from-signals).
+        # ============================================================
+        # Phase 0: anchor-refresh HARD-ABORT gate fired (bones re-emitted with new flat_ids 1-35; all prior facets stale). 14 facet files + cite-index + prior audit reports archived to theater/_archive/2026-05-28T195041Z-c05-revise-stale-facets/. margit authored oc-rushwick.card.md (resolving pl-2026-05-28-001 SOFT).
+        # Phase 1 R1 fanout: 10 authors landed; 59 facet entries (loc-state=9, NI=8, sensory=2, state-env=7, state-taylor=5, mem=2, feel=2, metaphor=0, vibes=20, exposition=4). Sera-architecture pl-2026-05-28-002 HARD delivery claimed at 3 layers (mem:1 @19, NI carriers @5/@19/@29, exposition:2 @0).
+        # Phase 2 cite-index: clean merge; 2 body-integrity fixes (feeling-taylor @29 trailing comment stripped; exposition @0 synthetic anchor removed from inflight).
+        # Phase 3 R2 fanout: 5 judges. K/D/A: NI 8/0/2 (narrator:9 @31 + narrator:10 @35 adds); memory 2/0/0; feeling-taylor 1/1/0 (feel:1 @19 deleted on card-tell mismatch; feel:2 @29 renumbered to feel:1); metaphor 0/0/0 (refuse upheld); exposition 4/0/0/0. 10 cap-refusals total. Convergent fix: NI's narrator:9 @31 ADD closed memory's flagged @31 NI-spine gap.
+        # Phase 4 fanin: .r2-decisions.md consolidated (f-r2-counts {0,0,0,0}; 0 discipline-fails; 0 arbiter interventions). Cite-index rebuilt clean. Scene-map validated (7+15+13=35 covers 1-35 exactly).
+        # Phase 5 audit cycle 1: 2 HARD (fault-001 state-updates ID series; fault-002 vibes stale feeling citations) + 6 SIGNAL (all defended).
+        # Phase 5 fixer pass cycle 1: vibes:10 feeling:1 → world-build:cond-road-to-hell-chain-shape; vibes:14/15/16 feeling:2 → feeling:1; state-updates slice headers added.
+        # Phase 5 re-audit cycle 1: CLEAN (both HARDs RESOLVED).
+        # Phase 5b cycle 1: cape-fic 8/8 ACCEPT; worm-canon 8/8 ACCEPT (Earth-Bet fence CLEAN); dark-fantasy 7/8 ACCEPT (vibes REVISE on STALE-READ of fault-002 already-resolved); sensory specialists 1 ACCEPT + 2 REVISE (sensory:2 @13 fauna-feed-extension + unanchored-old-state).
+        # Phase 5b cycle 2 fixer pass: sensory:2 re-anchored @13 → @14 (R1 SEAM-005 path); loc-state:5 @11 acoustic-baseline note added; sensory:2 inline ID citation fixed.
+        # Phase 5b cycle 2 re-fires: sensory-disambiguation-pedant ACCEPT; sensory-old-state-reader ACCEPT; dark-fantasy vibes ACCEPT (stale-read corrected; remediation verified directly).
+        # Phase 5 audit cycle 2: 1 new HARD fault-c2-001 (proto-lines [sensory:2] token still at @13; facet anchor @14; back=N).
+        # Phase 5 fixer cycle 2: restored canonical proto-lines from bones; re-ran cite-index merge; [sensory:2] now at @14.
+        # Phase 5 re-audit cycle 3: CLEAN (fault-c2-001 RESOLVED; no new findings).
+        # Phase 5b cycle 2 FINAL aggregate: all 9 facets 3/3 ACCEPT.
+        # Phase 5c admin process-critic: SKIPPED (final cycle clean ACCEPT 3-of-3 across all facets; no cap-burns).
+        # Sera-architecture pl-2026-05-28-002 HARD: RESOLVED (3 reviewers concurring deliveries at exposition:2 + mem:1 + NI carriers).
+        # Final facet entry count: 58 (loc-state=9, NI=10, sensory=2, state=12 consolidated, mem=2, feel=1, metaphor=0, vibes=20, exposition=4). 22/35 proto-lines decorated.
+        # Peak pile-ups: @29 (7 facets — narrator:8 feel:1 state:3 state:4 vibes:15 vibes:16 vibes:17); @31 (4 facets — mem:2 narrator:9 state:5 state:7); @21 (5 — narrator:6 state:1 state:4 vibes:11 vibes:12); @14 (5 — narrator:4 sensory:2 vibes:6 vibes:7 vibes:8). All warranted per Phase 5 PILE-UP REVIEW.
+        # Soft watches forward to /and-stitch:
+        #   - vibes:9 @17 "atonement-as-repetition" keyword label may bias stitcher toward naming chapter's structural irony at filing-triad bone (force-block discipline says Taylor doesn't name it); Phase 8 watch.
+        #   - C1 @28 "holds the color" MUST precede @29 "stops the rushwick-pass" in render sequence (apparatus-holds → protagonist-responds causal direction; reorder breaks world-physics-first read).
+        #   - dup-001: s03 @32+@34 identical SVO "taylor-hebert-kl-122ac runs the rushwick flat-read"; stitcher must distinguish two foreclosure attempts.
+        #   - flag-002 @25 "the Hook-feed resolves" intransitive borderline; stitcher prose-handling.
+        #   - NI density 28.6% at zero-dialogue-chapter structural-overshoot precedent; /and-stitch may evaluate band recalibration.
+        #   - "discipline" word-saturation NI 4/10 (40% borderline SATURATION); reword candidate at narrator:3 @10 if /and-stitch finds register reads tic-y.
         audit_path: active-project/staff/auditor/facets-final-audit.md
         audit_complete: true
         audit_findings: 0 HARD / 4 SIGNAL / 10 FLAG (cycle 1) → 0 HARD / 2 SIGNAL / 10 FLAG (cycle 2; fault-028 + fault-033 resolved)
