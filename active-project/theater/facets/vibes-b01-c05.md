@@ -41,9 +41,9 @@ flat_id-basis: 1-35 (post-revise --from-signals; full re-numbering per Phase 7 e
 
 6 @14 loc:oc-rushwick ++ enforcement-legible: [sound-gap-in-side-alley-confirmed-at-chapter-scale, feed-logs-silence-not-event, effortful-sound-does-not-reach-junction, enforcement-invisible-to-auditory-layer] | licensed-by: proto:14, world-build:oc-rushwick-Hazards-sound-gap, state-update:2
 
-7 @14 actor:taylor-hebert-kl-122ac + gap-instrument-registered: [feed-has-no-field-for-this-class, gap-logged-as-gap-not-as-content, dark-fantasy-world-exceeds-category, not-naming-is-the-read-available] | licensed-by: proto:14, state-update:2, world-build:oc-rushwick-Hazards-sound-gap
+7 @14 actor:taylor-hebert-kl-122ac + gap-instrument-registered: [feed-field-absent-for-this-class, gap-logged-as-gap-not-as-content, dark-fantasy-world-above-apparatus-ceiling, not-naming-as-the-read-still-available] | licensed-by: proto:14, state-update:2, world-build:oc-rushwick-Hazards-sound-gap
 
-8 @14 episode + gap-instrument-at-ward-scale: [feed-returns-absence-as-silence-not-evidence, side-alley-enforcement-below-register, world-physics-exceeds-apparatus-category, dark-fantasy-gap-introduced] | licensed-by: proto:14, state-update:2, world-build:oc-rushwick-Sound-vocabulary
+8 @14 episode + gap-instrument-at-ward-scale: [feed-return-absence-not-evidence, side-alley-enforcement-below-register, world-physics-above-apparatus-ceiling, dark-fantasy-gap-introduced] | licensed-by: proto:14, state-update:2, world-build:oc-rushwick-Sound-vocabulary
 
 9 @17 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [enforcement-incident-enters-jarvis-form-unchanged, routing-name-honored-without-interrogation, form-destination-is-architecture-she-agreed-to-feed, licensed-exception-runs-without-being-switched-on] | licensed-by: proto:17-19, state-update:3, world-build:cond-road-to-hell-chain-shape
 
