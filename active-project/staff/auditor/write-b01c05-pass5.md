@@ -3,166 +3,297 @@ audit:
   scope: chapter
   target: b01c05
   timestamp: 2026-05-28
-  pass: write-b01c05-pass5
+  pass: write-b01c05-pass5 (second fork — fresh context; supersedes prior file)
   findings:
 
-    - id: fault-001
+    # ── REACHABILITY ──────────────────────────────────────────────────────────
+
+    - id: r-001
+      type: pass
+      what: >
+        Chapter goal element 1 — "moment the insect-feed stops being neutral."
+        s03n06 (taylor-hebert-kl-122ac stops the rushwick-pass) carries the
+        sole axis_move in the bone set: +1.5 political_register-prot at cl-d05.
+        The bone notes explicitly state "the cessation IS the recognition event."
+        Cessation event is delivered.
+      why: null
+      criteria: null
+
+    - id: r-002
+      type: pass
+      what: >
+        Chapter goal element 2 — "color arrives before Taylor names it."
+        Sequence: s03n05 (the provisioner-train re-crosses the junction in the
+        replay — color arrives without a label per axes_held rationale "the color
+        arrives in the replay without a label") → s03n06 (stops the pass —
+        recognition/cessation bone) → s03n08 (closes the evening review — filing-
+        as-texture bone; notes confirm "the closing IS the filing-as-texture
+        protagonist_force"). Taylor categorizes without naming the color as
+        resentment. Sequence honored.
+      why: null
+      criteria: null
+
+    - id: r-003
+      type: pass
+      what: >
+        Chapter goal element 3 — "plant the courier figure whose face will matter
+        at d10." s02n02: gait-signature recognition (third sighting, heel-first).
+        s02n11: cf-d10-courier-face thread initiated (notes: "recurring body,
+        three observations, enforcement incident attached"). s03n07: courier-face
+        surfaces in the rushwick replay. s03n09: cf-d10-courier-face thread
+        confirmed open. Goal element delivered.
+      why: null
+      criteria: null
+
+    - id: r-004
+      type: pass
+      what: >
+        Handoff_out character_state: "Taylor: political_register-prot rank 2.5
+        (resentment color present)." Bone set delivers: starting rank per
+        handoff_in = 1 (axis not yet active before b01c05; b01c04 handoff_out
+        does not list political_register-prot as having moved). s03n06 delivers
+        +1.5 at cl-d05. 1 + 1.5 = 2.5. Consistent.
+      why: null
+      criteria: null
+
+    - id: r-005
+      type: pass
+      what: >
+        Handoff_out world_state: "extended coverage now touching Red Keep
+        servant-passage ward." Bones s01n01-n03 establish Taylor entering the
+        Rushwick (chapter chunk defines the Rushwick as "a ward that abuts the
+        lower Red Keep servant passages") and coverage filling the junction.
+        Delivered.
+      why: null
+      criteria: null
+
+    - id: r-006
+      type: pass
+      what: >
+        Handoff_out world_state: "faction-violence sub-pressure: first on-page
+        enforcement incident observed by Taylor." s02n03-n10 deliver the
+        enforcement incident (three figures, side-alley, courier pinned, effortful
+        sound, courier recovers, figures depart purposive walk). Delivered.
+      why: null
+      criteria: null
+
+    - id: r-007
+      type: pass
+      what: >
+        Handoff_out open_thread: "cf-d10-courier-face thread: courier body
+        observed three times; not yet named; filed as operational texture."
+        s02n11 initiates; s03n09 confirms open. s03n09 notes: "courier body-record
+        mapped as recurring with enforcement-incident attached." Not named anywhere
+        in the bone set. Filed as operational texture in s03n08 (closes the
+        evening review) and s03n09. Delivered.
+      why: null
+      criteria: null
+
+    # ── HANDOFF-IN CHECKS ─────────────────────────────────────────────────────
+
+    - id: hi-001
+      type: pass
+      what: >
+        Handoff_in: "Taylor: capability rank 4.5; … moral_framework cracked
+        (licensed exception active)." s01n02 axes_held capability rationale:
+        "coverage extension to Rushwick is continuation of four-ward map
+        established in c04; not a new expansion event; the range is confirmed
+        active." s01n06 axes_held moral_framework rationale: "categorizing
+        court-logistics bodies as intelligence substrate is already inside the
+        licensed exception; d04 rationalization runs unchanged." Neither bone
+        reads the starting state as fresh or uncracked. Handoff-in honored.
+      why: null
+      criteria: null
+
+    - id: hi-002
+      type: pass
+      what: >
+        Handoff_in: "Wren: in expanded coverage map; anchor rank 2." Wren is
+        absent from the chapter. s01n09 axes_held relational_anchor_status:
+        "no relational content in this ward; Wren not present; anchor not
+        activated." s02n11 and s03n09 both hold relational_anchor_status with
+        rationale "courier not a relational anchor." Anchor held at rank 2;
+        not activated or altered. Handoff-in honored.
+      why: null
+      criteria: null
+
+    - id: hi-003
+      type: pass
+      what: >
+        Handoff_in: "Flea Bottom intelligence layer: routing to Otto through
+        Jarvis." Jarvis routing active in s02n09 (taylor delivers the enforcement
+        report-entry to Jarvis as offstage destination). No bone claims Jarvis
+        is physically present on set. The SVO "taylor-hebert-kl-122ac delivers
+        the enforcement report-entry" does not name Jarvis as subject. Handoff-in
+        honored.
+      why: null
+      criteria: null
+
+    # ── STATE / REFERENCE CHECKS ──────────────────────────────────────────────
+
+    - id: sr-001
       type: fault
       what: >
-        active-project/actors/taylor-hebert-kl-122ac/state.md — field
-        political_register_prot_axis is recorded as 1. Bone b01c05s03n06
-        delivers axis_moves: [{axis: political_register-prot, direction: up,
-        magnitude: 1.5, cost_ledger_anchor: cl-d05}]. The chapter's
-        handoff_out (memory.md line 3454) states Taylor's political_register-prot
-        rank as 2.5 after this chapter. The actor state file has not been
-        updated to reflect the +1.5 move delivered in this chapter.
+        active-project/actors/taylor-hebert-kl-122ac/state.md records:
+        political_register_prot_axis: 1. Bone b01c05s03n06 delivers axis_moves:
+        [{axis: political_register-prot, direction: up, magnitude: 1.5,
+        cost_ledger_anchor: cl-d05}]. The chapter handoff_out (memory.md line
+        3454) records Taylor's political_register-prot rank as 2.5 after this
+        chapter. The actor state file has not been updated to reflect the +1.5
+        move delivered in this chapter.
+        Additionally, the state file shows moral_framework_axis: 2 and
+        capability_axis: 2 against b01c04 handoff_out character_state of
+        "moral_framework rank 1 (cracked)" and "capability rank 4.5." These
+        axis values appear to be the series-open initialization values, never
+        updated across any delivered chapter.
       why: >
-        The state file is the single-source-of-truth for axis values between
-        chapters (memory rules: "nothing changes without being recorded"). If
-        b01c06 authoring reads the state file and finds political_register_prot_axis: 1,
-        it will author against the wrong baseline. The handoff_out already
-        records 2.5 correctly but the actor state file — which is what downstream
-        commands read — is inconsistent with it.
+        The memory rules are absolute: "nothing changes without being recorded."
+        If b01c06 authoring reads the state file and finds political_register_prot_axis: 1,
+        capability_axis: 2, and moral_framework_axis: 2, it will author against
+        the wrong baseline for all three axes. The handoff_out records the correct
+        post-c05 values but the actor state file — the per-session-open source
+        of truth — is stale since series open.
       criteria: >
-        actor state file must record political_register_prot_axis: 2.5 before
-        Phase 6 proceeds; the update must match the chapter's delivered +1.5
-        axis-move as anchored at cl-d05.
+        Actor state file must record axis values consistent with the b01c05
+        handoff_out before Phase 6 proceeds. Minimum: political_register_prot_axis
+        updated to 2.5 (post-c05 delivered value). Full reconciliation against
+        all delivered chapter handoff_out values across b01c01-b01c05 is the
+        correct resolution given the systemic staleness.
 
-    - id: flag-001
-      type: flag
+    - id: sr-002
+      type: pass
       what: >
-        Bone b01c05s01n02 SVO: "taylor-hebert-kl-122ac enters the rushwick."
-        The axes_held rationale correctly reads "continuation of four-ward map
-        established in c04; not a new expansion event." However, the SVO
-        surface form ("enters") carries first-entry semantics that a facet
-        author or renderer reading the SVO alone — without the rationale —
-        could interpret as an initial-expansion event rather than continuation.
-        Handoff_in explicitly states the chapter opens on a four-ward map (c04
-        final state); s01n02 must not be read as the expansion event itself.
-      why: >
-        If the facet author renders this bone as a capability-expansion beat,
-        the opening of s01 misrepresents Taylor's state entering the chapter.
-        The substance_delta for s01 holds capability (no new expansion); prose
-        that frames the Rushwick entry as novel capability growth would conflict
-        with that hold. The rationale is correct; the SVO is ambiguous.
+        Rushwick internal geography — "east-lane" (s01n05) and "east exit"
+        (s02n03 notes, "side-alley off the east exit"). The bones do not
+        establish whether these are the same feature under different noun-forms
+        or two adjacent elements. However: s01n05 places the provisioner-train
+        exiting the junction into the east-lane (a direction/lane), while s02n03
+        places the three figures entering a side-alley off the east exit (an
+        alley off an exit-mouth). These can be read as two distinct features
+        (lane vs. side-alley) on the east side of the junction without spatial
+        contradiction. No internal inconsistency within the bones themselves; both
+        uses are stable to their own context. No bones fault.
+      why: null
       criteria: null
 
-    - id: flag-002
-      type: flag
+    - id: sr-003
+      type: pass
       what: >
-        Rushwick geography uses two noun-forms for the east side of the junction:
-        "east-lane" (b01c05s01n05 — "the provisioner-train takes the east-lane")
-        and "east exit" (b01c05s02n03 — "the three figures enter the side-alley
-        off the east exit"). It is not established in the bones whether these
-        are the same feature under different noun-forms or two adjacent but
-        distinct geographic elements (a lane versus an exit-mouth).
-      why: >
-        If the facet and stitch authors treat these as the same location,
-        spatial consistency within the Rushwick geography is maintained. If
-        they treat them as different, the s01 provisioner-train routing and
-        the s02 enforcement incident occur in adjacent sub-spaces — a distinction
-        the bones do not resolve. This is minor geography ambiguity with no
-        load-bearing narrative consequence in this chapter; it matters if the
-        Rushwick returns in b01c06+ and a fixed geography is needed.
+        All noun-form references consistent within the bone set: the courier
+        (s02n01 through s03n13), the three figures (s02n03-s02n10), the
+        provisioner-train (s01n04-s01n05, s03n05, s03n11), the message-runner
+        (s01n07-s01n08), the room-floor (s03n01 only). No actor appears in a
+        location they have not been moved to. No prop is referenced from inventory
+        Taylor does not carry (Taylor's inventory in state file is empty; no
+        inventory prop is called upon in any bone). No reference fault.
+      why: null
       criteria: null
 
-    - id: flag-003
+    - id: sr-004
+      type: pass
+      what: >
+        oc-rushwick.card.md — no card exists (pre-existing Phase 2 signal-003).
+        Within the bones, no claim requires card-level authority (no specific
+        distances asserted, no fixed named proprietors, no features that would
+        require canonical card validation). The bones establish the Rushwick
+        as a ward through internally consistent geography noun-forms. No new
+        bones-level fault generated by the card's absence.
+      why: null
+      criteria: null
+
+    # ── POV CHECKS ────────────────────────────────────────────────────────────
+
+    - id: pov-001
+      type: pass
+      what: >
+        All 34 bones examined for perception-verb leaks and first-person pronouns.
+        SVO subjects across all bones are physical observables or the physical
+        actor slug. Phase 2 recasts (s01n05, s01n08, s02n01, s02n04, s02n07,
+        s03n05, s03n06, s03n08, s03n11, s03n13) all carry notes confirming the
+        recast. No perception-verb subject on any Taylor SVO. No first-person
+        leak. POV constraint honored across all 34 bones.
+      why: null
+      criteria: null
+
+    # ── TIME / SEQUENCE CHECKS ────────────────────────────────────────────────
+
+    - id: ts-001
+      type: pass
+      what: >
+        s01: "second morning after the Roper's Court report" — b01c04 handoff_out
+        world_state confirms "Green faction receives first street-layer intel"
+        (the Roper's Court report delivery). s01 opening on the second morning
+        is consistent with c04 closing on the report-handoff.
+        s02: "five days into the Rushwick coverage" (s02n02 rationale). Day-count
+        from s01 (day 1) to s02 (day 5) allows three separate sightings of the
+        courier across the coverage window. Internally consistent.
+        s03: "that evening" (same day as s02). s03n01 grounds Taylor at the
+        room-floor for the evening review, consistent with returning from field
+        work. Sequence intact. No time fault.
+      why: null
+      criteria: null
+
+    # ── DUPLICATE SVO ADVISORY ────────────────────────────────────────────────
+
+    - id: dup-001
       type: flag
       what: >
         Bones b01c05s03n10 and b01c05s03n12 carry identical SVOs:
-        "taylor-hebert-kl-122ac runs the rushwick flat-read." The bones
-        are distinguished by context (n10 = first attempt, n12 = second attempt)
-        and by their notes ("re-run bone 1" vs "re-run bone 3"), but the SVO
-        surface is identical.
+        "taylor-hebert-kl-122ac runs the rushwick flat-read." The duplication
+        is intentional by design (notes on s03n12: "try-flat-read sequence re-run
+        bone 3: Taylor runs the pass again — second attempt; the repeat is
+        load-bearing for the foreclosure-as-enacted-capability-failure"). The
+        event_map entry "Taylor runs the pass again — same result (foreclosure
+        enacted)" sources both bones.
       why: >
-        Identical SVOs in different bones are legal under the schema when the
-        substance_delta distinguishes them (which it does here via rationale
-        context). However, a facet author dispatched with only the SVO list
-        may not distinguish these bones without reading the notes, risking
-        duplicate prose rendering of the same surface action. The repeated-SVO
-        is load-bearing for the foreclosure pattern (two identical attempts =
-        confirmation), so collapsing them would be a fault; this is an
-        authoring-surface disambiguation advisory only.
+        Identical SVOs in distinct bones are not a bones fault when the substance
+        rationale distinguishes them — and it does here (n10 = first attempt,
+        n12 = second attempt; n11 and n13 provide the counterpart held-bones
+        showing failure). However, a renderer reading only the SVO list without
+        the notes may produce duplicate surface prose. The prose obligation at
+        /and-stitch is to render n10 and n12 as distinguishable attempts, not
+        as a flat repetition of the same sentence. This is a renderer advisory,
+        not a bones block.
       criteria: null
 
-    - id: pass-001
+    # ── WORM-CANON SOFT-WATCH COMPLIANCE ─────────────────────────────────────
+
+    - id: sw-001
       type: pass
       what: >
-        REACHABILITY — all three chapter goal elements delivered by surviving
-        bones: (1) cessation event at s03n06 with confirmed +1.5 axis-move on
-        political_register-prot at cl-d05; (2) color arrives before naming —
-        s03n05 replay surfaces color without label, s03n08 files it as texture
-        (not named as resentment), goal sequence honored; (3) courier figure
-        planted — s02n11 cf-d10 thread initiated, s03n07/n09 confirmed open.
+        Parking-lot SOFT-WATCH (carried from chunk review): "worm-canon-pedant —
+        courier gait-signature + approach-geometry read + filing must be
+        structurally distinct bones in s02 + s03, not collapsed to single logging
+        assertion."
+        s02n02 (gait-signature recognition, notes "SOFT-WATCH bone 1 of 3"),
+        s02n04 (approach-geometry read, notes "SOFT-WATCH bone 2 of 3"),
+        s02n08 (filing / approach-geometry to Jarvis format, notes "SOFT-WATCH
+        bone 3 of 3") are structurally distinct bones with distinct SVOs and
+        distinct substance rationales. Soft-watch obligation satisfied.
       why: null
       criteria: null
 
-    - id: pass-002
-      type: pass
-      what: >
-        HANDOFF-IN CONSISTENCY — opening bones (s01n01-s01n09) are consistent
-        with all handoff_in fields (memory.md lines 3431-3443): coverage
-        extension reads as continuation of four-ward map (axes_held rationale
-        explicit); moral_framework held at licensed-exception level throughout
-        s01 (no intact-state read); capability held (no new expansion event);
-        Jarvis routing channel active (s02n09); Sera exposure treated as managed
-        background; Wren absent from chapter with anchor held at rank 2.
-      why: null
-      criteria: null
+    # ── PLAN QUALITY ──────────────────────────────────────────────────────────
 
-    - id: pass-003
+    - id: pq-001
       type: pass
       what: >
-        HANDOFF-OUT CONSISTENCY — bone set leaves chapter in the state declared
-        in handoff_out (memory.md lines 3444-3457): political_register-prot
-        rises from 1 to 2.5 (s03n06 +1.5); cf-d10-courier-face thread open
-        (s02n11 initiated, s03n09 confirmed); Rushwick coverage in servant-passage
-        ward established (s01n02/n03); faction-violence sub-pressure first
-        observed on-page (s02n03-s02n10 enforcement incident). All four
-        handoff_out world_state and character_state entries are supported by
-        the bone set.
-      why: null
-      criteria: null
-
-    - id: pass-004
-      type: pass
-      what: >
-        POV CONSTRAINT — all 34 bones use third-person limited SVO form. No
-        first-person leaks. No perception-verb subjects on Taylor SVOs (all
-        Phase 2 fault-001 recasts correctly reflect physical-observable subjects).
-        Narrator subject pattern consistent across all three scenes.
-      why: null
-      criteria: null
-
-    - id: pass-005
-      type: pass
-      what: >
-        TIME/SEQUENCE CONSISTENCY — s01 (second morning after Roper's Court
-        report) is consistent with c04 handoff_out (report delivered at c04's
-        final beat); s02 (five days into Rushwick coverage) is consistent with
-        s01 establishing day 1 of Rushwick coverage; s03 (that evening, same
-        day as s02) is consistent with s03n01 grounding bone placing Taylor
-        at the room-floor for evening review. No time-sequence fault.
-      why: null
-      criteria: null
-
-    - id: pass-006
-      type: pass
-      what: >
-        REFERENCE CONSISTENCY — courier (unnamed, noun-form), three figures
-        (unnamed, noun-form), provisioner-train (four-men-two-carts per chunk),
-        message-runner, and Jarvis (offstage destination, never claimed
-        physically present) are all used consistently. No actor slug appears
-        in the chapter without being on-set or acknowledged as offstage. No
-        prop reference to inventory items Taylor does not carry.
+        Phase 5 attempt log (memory.md lines 3459-3464): attempt 1 produced
+        REVISE (dark-fantasy-reader REVISE, auditor 1 HARD + 1 SIGNAL + 3 FLAGS);
+        attempt 2 produced ACCEPT across all reviewers (dramatist ACCEPT att 1;
+        cape-fic ACCEPT att 1; worm-canon ACCEPT att 1; dark-fantasy REVISE →
+        ACCEPT att 2; auditor 0-HARD att 2). Review cycle properly converged on
+        acceptance without attempt exhaustion. No plan quality escalation.
       why: null
       criteria: null
 
   verdict: FINDINGS-PRESENT
-  verdict_note: >
-    1 fault (state file not updated for +1.5 political_register-prot move);
-    3 non-blocking flags (SVO first-entry ambiguity, geography noun-form
-    ambiguity, duplicate SVO advisory). HARD finding: fault-001 (state record
-    must be updated before Phase 6 proceeds). Phase 6 substance bone-gate
-    may proceed after fault-001 is resolved.
+  verdict_classification: >
+    1 HARD fault (sr-001 — actor state file stale since series open; must be
+    updated before Phase 6 substance bone-gate proceeds).
+    1 non-blocking FLAG (dup-001 — duplicate SVO on s03n10/n12; renderer advisory
+    for /and-stitch).
+    All reachability checks, handoff-in checks, POV checks, time/sequence checks,
+    and reference checks pass.
+    Clear to Phase 6 once sr-001 is resolved.
 ```
