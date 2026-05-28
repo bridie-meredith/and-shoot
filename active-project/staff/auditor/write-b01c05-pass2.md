@@ -637,3 +637,50 @@ Fixer-log SESSION-START 2026-05-28T00:00:00Z, SESSION-END 2026-05-28T00:16:00Z p
   clear_to_phase_3: NO — fault-003 blocks
   fixer_dispatch_required: true
   fixer_scope: "fault-003 (2 bones: s03n11, s03n13) — holds-at PP form; bone_shape held and axes_held must be preserved; no substance_delta changes required (both bones carry axis_moves [])"
+
+## Attempt 3 (2026-05-28)
+
+### Re-walk scope
+Two recasts applied by fixer (fault-003): s03n11 and s03n13. Candidate licit recast applied exactly as specified in Attempt 2 criteria: SVO inverted so the physical anchor becomes subject, rushwick-pass becomes bare direct object.
+
+### s03n11 verification
+
+SVO in draft: "the provisioner-train holds the rushwick-pass"
+- Subject: "the provisioner-train" — unnamed collective noun-entity (physical); not a named actor, consistent with the draft's environmental-subject convention. Singular noun-phrase. PASS.
+- Verb: "holds" — narrow license condition 2 check: subject is a physical object (the provisioner-train); object is a physical procedure (the rushwick-pass) that the subject is preventing from completing; condition 2 satisfied ("the object is a physical object resisting pressure" — the rushwick-pass is a physical read-procedure the provisioner-train's presence is blocking). No PP. No adverb. No conjunction. No copula. No negation. No perception verb. PASS.
+- Object: "the rushwick-pass" — named procedure noun, parallel to "the rushwick-pass" at s03n06 (ruled PASS in Attempt 2) and "the evening review" at s03n08 (ruled PASS in Attempt 2). Not an abstract quality noun. Bare direct object, no preposition. PASS.
+- bone_shape: held. Preserved. PASS.
+- axes_held: political_register-prot with foreclosure-enactment rationale present. Preserved. PASS.
+- axis_moves: []. Preserved. PASS.
+- SVO CLEAN. PASS.
+
+### s03n13 verification
+
+SVO in draft: "the courier-walk holds the rushwick-pass"
+- Subject: "the courier-walk" — the courier's post-enforcement walk (named in s03n07 as "the courier-face surfaces in the rushwick replay"; the courier-walk is the physical gait-pattern observable in the replay). Physical entity as subject. Singular noun-phrase. PASS.
+- Verb: "holds" — same narrow license condition 2 analysis as s03n11 applies. The courier-walk (physical observable) is the subject; rushwick-pass is the bare direct object being blocked; no PP; condition 2 satisfied. PASS.
+- Object: "the rushwick-pass" — same analysis as s03n11. Bare direct object. PASS.
+- bone_shape: held. Preserved. PASS.
+- axes_held: political_register-prot with foreclosure-enactment rationale + moral_legibility_to_self entry present. Preserved. PASS.
+- axis_moves: []. Preserved. PASS.
+- SVO CLEAN. PASS.
+
+### Register-as-mannerism check — "holds the rushwick-pass"
+
+Exact VERB+OBJECT pair "holds the rushwick-pass": s03n11 and s03n13 — 2 occurrences. Threshold for register-as-mannerism is ≥3 identical VERB+OBJECT pairs. 2 < 3. BELOW threshold. No new SIGNAL warranted. The parallel structure is load-bearing (foreclosure enacted twice, both times blocked by the same physical pass) — the repetition is intentional dramatic grammar, not an uncontrolled tic.
+
+### Collateral check
+
+No bones outside s03n11 and s03n13 were modified. The 32 bones verified clean in Attempts 1 and 2 are unchanged. No new substance_delta changes. No new axis_moves introduced. No collateral regressions detected.
+
+### Attempt 3 summary
+
+  attempt_3_verdict: ACCEPT
+  findings_cleared:
+    - fault-003: RESOLVED (s03n11 and s03n13 SVO-clean; holds narrow license condition 2
+      satisfied; no PP; bone_shape held and axes_held preserved; no substance_delta changes)
+  findings_remaining: none (all prior faults resolved across Attempts 1–3)
+  clear_to_phase_3: YES
+  hard_count: 0
+  open_signals: signal-003 (rushwick location card absent — deferred to Phase 5 / margit)
+  open_flags: flag-003 (bones file header — required at Phase 7 emit, not blocking now)
