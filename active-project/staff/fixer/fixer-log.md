@@ -1231,6 +1231,12 @@ findings-applied: 3 (fault-001 pre-verified in-place; fault-002 4 bones recast; 
 findings-skipped: 0
 exit: CLEAN
 
+## SESSION-START — 2026-05-28T02:00:00Z — write-b01c05-bone-gate-hard
+dispatch: resolve 8 HARD findings from write-b01c05-bone-gate.md — fault-001 (6 "maps" perception-class bones: 2 remove, 4 recast), fault-002 (3 modifier strips), fault-003 (s03n07 interiority+PP remove), fault-004 (s02 capability HELD-AXIS-NOT-WITNESSED: add axes_held entry to s02n01), fault-005 (s03 social_tether-prot-rise HELD-AXIS-NOT-WITNESSED: add axes_held entry to s03n01); also update event_map[] for removed bones
+target: active-project/staff/showrunner/b01c05-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c05-bone-gate.md
+findings-queued: 8 (5 fault IDs; fault-001 covers 6 bones in 3 dispositions: 2 remove + 4 recast; fault-002 covers 3 bones: modifier strips; fault-003: 1 bone remove; fault-004: axes_held ADD to existing bone; fault-005: axes_held ADD to existing bone)
+
 ## SESSION-START — 2026-05-28T01:00:00Z — write-b01c05-pass2-fault003-cycle3
 dispatch: minimum-change SVO recasts for fault-003 (2 bones: s03n11 and s03n13) from write-b01c05-pass2.md Attempt 2 section; FAULT-FORM-MODIFIER + FAULT-FORM-NON-ACTION-VERB on "holds at <noun>" form; invert SVO per auditor candidate licit recast
 target: active-project/staff/showrunner/b01c05-bones-draft.md

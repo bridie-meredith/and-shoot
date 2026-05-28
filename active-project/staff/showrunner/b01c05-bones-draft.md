@@ -98,19 +98,6 @@ scenes:
         dialogue_anchor: false
         notes: "recast from perception-surrogate (fault-001); physical observable: provisioner-train clears the junction into the east-lane; distinct from n04 (crossing) — n05 is the arrival/exit motion; gait-class categorization content moves to narrator-interest facet"
 
-      - slug: b01c05s01n06
-        svo: "taylor-hebert-kl-122ac maps the provisioner-train interval"
-        bone_shape: held
-        substance_delta:
-          axis_moves: []
-          axes_held:
-            - axis: political_register-prot
-              rationale: "neutral-instrumental reading discipline at first exposure; Taylor names the gait-class and files it without qualifying the difference; discipline intact"
-            - axis: moral_framework
-              rationale: "categorizing court-logistics bodies as intelligence substrate is already inside the licensed exception; d04 rationalization runs unchanged"
-          cost_ledger_anchor: null
-        dialogue_anchor: false
-        notes: "Taylor maps the train's interval — the same mapping she performs for ward-resident bodies; discipline visible via same-method behavior"
 
       - slug: b01c05s01n07
         svo: "the message-runner crosses the junction"
@@ -138,19 +125,6 @@ scenes:
         dialogue_anchor: false
         notes: "recast from perception-surrogate (fault-001); physical observable: message-runner exits through the lane-mouth — coverage-release semantics implicit in the runner's exit motion; discipline's restraint (no follow) is carried by axes_held rationale"
 
-      - slug: b01c05s01n09
-        svo: "taylor-hebert-kl-122ac maps the message-runner gait-class"
-        bone_shape: held
-        substance_delta:
-          axis_moves: []
-          axes_held:
-            - axis: political_register-prot
-              rationale: "Taylor names the gait-class and files it; the court-tier content's novel weight is present in the naming work demanded — but the discipline absorbs it as 'different substrate, same method'; first-exposure hold intact; no color accumulated"
-            - axis: relational_anchor_status
-              rationale: "no relational content in this ward; Wren not present; anchor not activated"
-          cost_ledger_anchor: null
-        dialogue_anchor: false
-        notes: "Taylor names the institutional errand-gait — the categorization work the opposing force demands; discipline files it without qualification"
 
   - slug: b01c05s02
     event_map:
@@ -218,19 +192,19 @@ scenes:
         notes: "recast from perception-surrogate (fault-001); physical observable: courier enters the lane-mouth — feed-acquisition semantics implicit in the courier's entry; grounding bone for s02; third-sighting-of-the-day before the incident"
 
       - slug: b01c05s02n02
-        svo: "taylor-hebert-kl-122ac maps the courier gait-signature"
+        svo: "taylor-hebert-kl-122ac holds the wall-line"
         bone_shape: held
         substance_delta:
           axis_moves: []
           axes_held:
             - axis: political_register-prot
-              rationale: "courier recognition bone 1 of 3 (third sighting + heel-first gait); Taylor maps the gait as recurring body, same morning-hour transit; factual routing discipline holds"
+              rationale: "courier recognition bone 1 of 3 (third sighting + heel-first gait); Taylor holds the wall-line while the courier crosses; held physical posture during recognition; recurring body, heel-first gait, morning-hour transit; factual routing discipline holds"
           cost_ledger_anchor: null
         dialogue_anchor: false
-        notes: "worm-canon SOFT-WATCH bone 1 of 3: distinct gait-signature recognition; heel-first gait, ward-uneven-paving repetition"
+        notes: "recast from FAULT-FORM-PERCEPTION (bone-gate fault-001); physical Taylor-body act: holds the wall-line during courier passage; worm-canon SOFT-WATCH bone 1 of 3 — must not be removed; gait-signature categorization content migrates to narrator-interest facet citing this bone"
 
       - slug: b01c05s02n03
-        svo: "the three figures enter the side-alley off the east exit"
+        svo: "the three figures enter the side-alley"
         bone_shape: moving
         substance_delta:
           axis_moves: []
@@ -258,7 +232,7 @@ scenes:
         notes: "recast from perception-surrogate (fault-001); physical observable: three figures seal the alley-mouth (exit-blocking = enforcement geometry); distinct from s02n10 'exit the alley-mouth' (departure) — this bone is the blocking, n10 is the withdrawal; worm-canon SOFT-WATCH bone 2 of 3 (structurally distinct)"
 
       - slug: b01c05s02n05
-        svo: "the three figures pin the courier against the stone"
+        svo: "the three figures pin the courier"
         bone_shape: moving
         substance_delta:
           axis_moves: []
@@ -272,7 +246,7 @@ scenes:
         notes: "single body held against stone — controlled containment enacted; feed's categorization confirmed as enforcement not robbery"
 
       - slug: b01c05s02n06
-        svo: "the side-alley returns the effortful sound"
+        svo: "the side-alley returns the sound"
         bone_shape: moving
         substance_delta:
           axis_moves: []
@@ -300,18 +274,18 @@ scenes:
         notes: "recast from cognition-as-event (fault-001); physical observable: courier recovers upright posture after pin; Saxon-compound 'finds the feet' (licit per westeros-grrm-mannerisms); gap between world and feed performed by juxtaposition of n06 (effortful sound) + n07 (courier on feet); feed-recategorization content moves to narrator-interest facet"
 
       - slug: b01c05s02n08
-        svo: "taylor-hebert-kl-122ac maps the enforcement approach-geometry"
+        svo: "taylor-hebert-kl-122ac files the enforcement-record"
         bone_shape: held
         substance_delta:
           axis_moves: []
           axes_held:
             - axis: moral_framework
-              rationale: "worm-canon SOFT-WATCH bone 3 of 3 (filing): Taylor maps the approach-geometry into the Jarvis-report format; movement-pattern, body-count, approach geometry, duration — the discipline names the content as data; 'this is what the feed reads' echo running"
+              rationale: "worm-canon SOFT-WATCH bone 3 of 3 (filing): Taylor files the enforcement-record in Jarvis-report format; movement-pattern, body-count, approach geometry, duration — the discipline names the content as data; 'this is what the feed reads' echo running"
             - axis: political_register-prot
               rationale: "enforcement incident enters Jarvis report as factual data; categorization-layer intact"
           cost_ledger_anchor: null
         dialogue_anchor: false
-        notes: "worm-canon SOFT-WATCH bone 3 of 3: filing — approach-geometry mapped to Jarvis report format; structurally distinct from recognition (n02) and read (n04)"
+        notes: "recast from FAULT-FORM-PERCEPTION (bone-gate fault-001); physical archival verb: Taylor files the enforcement-record; worm-canon SOFT-WATCH bone 3 of 3 — must not be removed; structurally distinct from recognition (n02) and read (n04); axes_held rationale preserved"
 
       - slug: b01c05s02n09
         svo: "taylor-hebert-kl-122ac delivers the enforcement report-entry"
@@ -342,18 +316,18 @@ scenes:
         notes: "departure walk bone — purposive, unhurried; the feed reads the departure as work-complete-gait"
 
       - slug: b01c05s02n11
-        svo: "taylor-hebert-kl-122ac maps the courier body-filing"
+        svo: "taylor-hebert-kl-122ac adds the courier to the body-map"
         bone_shape: held
         substance_delta:
           axis_moves: []
           axes_held:
             - axis: political_register-prot
-              rationale: "cf-d10 thread initiation: courier body flagged as recurring, three observations logged, enforcement incident attached to the filing; Taylor maps the body-record without noting the face for anything beyond the movement-pattern field; categorization-layer intact"
+              rationale: "cf-d10 thread initiation: courier body flagged as recurring, three observations logged, enforcement incident attached to the filing; Taylor adds the courier to the body-map without noting the face for anything beyond the movement-pattern field; categorization-layer intact"
             - axis: relational_anchor_status
               rationale: "courier not a relational anchor; body-map filing is operational texture, not anchor-formation"
           cost_ledger_anchor: null
         dialogue_anchor: false
-        notes: "cf-d10-courier-face thread initiated — recurring body, three observations, enforcement incident attached; body-filing as operational texture"
+        notes: "recast from FAULT-FORM-PERCEPTION (bone-gate fault-001); physical addition verb: Taylor adds the courier to the body-map; cf-d10-courier-face thread initiated — recurring body, three observations, enforcement incident attached; body-map is a noun-form physical object; axes_held rationale preserved"
 
       - slug: b01c05s02n12
         svo: "the courier takes the junction-corner"
@@ -492,19 +466,6 @@ scenes:
         dialogue_anchor: false
         notes: "recast from perception-surrogate (fault-002); physical observable: Taylor's body stops the read-attempt — the cessation IS the recognition event; +1.5 axis-move and cl-d05 anchor preserved exactly per substance_delta preservation rule; stopping the pass is the physical anchor for 'resentment color identified / neutral-instrumentally-observant foreclosed'; the resentment content moves to narrator-interest facet citing this bone"
 
-      - slug: b01c05s03n07
-        svo: "the courier-face surfaces in the rushwick replay"
-        bone_shape: moving
-        substance_delta:
-          axis_moves: []
-          axes_held:
-            - axis: political_register-prot
-              rationale: "post-recognition: courier's post-enforcement walk arrives in the replay — a body that has just been reminded it is being watched, performing normalcy; the courier-face is in Taylor's body-map, not in any ledger she writes"
-            - axis: relational_anchor_status
-              rationale: "courier not a relational anchor; body-map is operational texture"
-          cost_ledger_anchor: null
-        dialogue_anchor: false
-        notes: "courier's post-enforcement walk image surfaces in the replay; the face enters Taylor's body-map as operational texture"
 
       - slug: b01c05s03n08
         svo: "taylor-hebert-kl-122ac closes the evening review"
@@ -521,7 +482,7 @@ scenes:
         notes: "recast from abstract-as-object signal (signal-002); physical observable: Taylor ends the review session — the closing IS the filing-as-texture protagonist_force; 'closes the evening review' matches the chunk's phrasing and anchors the categorization-discipline beat as a discrete physical end-act rather than an abstract mapping; moral_framework + moral_legibility_to_self held rationale unchanged"
 
       - slug: b01c05s03n09
-        svo: "taylor-hebert-kl-122ac maps the courier body-record"
+        svo: "taylor-hebert-kl-122ac files the courier body-record"
         bone_shape: held
         substance_delta:
           axis_moves: []
@@ -532,7 +493,7 @@ scenes:
               rationale: "body-record is operational texture not anchor-formation"
           cost_ledger_anchor: null
         dialogue_anchor: false
-        notes: "cf-d10-courier-face thread confirmed open; courier body-record mapped as recurring with enforcement-incident attached"
+        notes: "recast from FAULT-FORM-PERCEPTION (bone-gate fault-001); physical archival verb: Taylor files the courier body-record; cf-d10-courier-face thread confirmed open; courier body-record filed as recurring with enforcement-incident attached; axes_held rationale preserved"
 
       - slug: b01c05s03n10
         svo: "taylor-hebert-kl-122ac runs the rushwick flat-read"
