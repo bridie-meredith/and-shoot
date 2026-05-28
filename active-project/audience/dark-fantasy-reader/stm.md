@@ -400,3 +400,45 @@ hard_findings: none
 - World as set dressing: no instance. Seven sensory grounding bones across three scenes, all with non-human environmental subjects acting before Taylor enters.
 - Catharsis before weight: no instance. Chapter closes on the open question (n12: exits the stitch-house lane without examining the anchor). No resolution, no recognition, no arrival.
 - Westerosi characters reacting with wrong flavor of shock: no instance. The ward-physics (discard-air, stitch-house frames, early-morning grey emptying the court) are environment-specific, not generic medieval. Taylor reads them without the curiosity or adaptation flavor — she reads them the same way she reads any ward's topology.
+
+---
+
+## b01c05 chunk review — 2026-05-28
+
+verdict_per_scene:
+  b01c05s01: SUBSTANCE-FELT
+  b01c05s02: REVISE — enforcement incident collapses into Taylor's data-frame; no second register
+  b01c05s03: REVISE — foreclosure texture absent; recognition lands without the door-closing weight cl-d05 requires
+
+chapter_verdict: REVISE-with-rationale
+
+### s01 — court-tier content arrives
+
+SUBSTANCE-FELT. The opposing-force construction is correct: the court-tier content's novel weight is enacted through the specificity the categorization-layer is being asked to perform (provisioner train named, message-runner's gait-class named) rather than through Taylor announcing the difficulty. "She does not name what it means that these bodies are connected to the architecture that keeps Sera's exposure managed" — this is the correct non-examination. The discipline holding is not endorsed by the prose; the prose watches it hold. The chunk does not tell the reader the neutrality is working; it shows the categorization operating. No catharsis. No walkout trigger. The Rushwick as a ward-specific location (lane-cluster pressed between the hill's stone skirt and the city's upward lean, alleys too narrow to sell from) exists by its own physics before Taylor reads it. s01 holds.
+
+### s02 — enforcement incident
+
+REVISE. The enforcement scene is entirely contained within Taylor's feed-categories from first description to last. "Controlled containment, a single body held against stone, two others keeping the alley-mouth" — this is feed-register prose. "It is brief. The courier is left on his feet." — this is the data-layer's verdict and the prose's verdict simultaneously. The courier "recovers his balance and continues through the ward on his original heading" — again, Taylor's read and the narrative's read are the same thing. The chunk never steps outside Taylor's categorization to give the reader a register she cannot access. The hot-button is violence allowed to read as data because Taylor reads it as data. The "specific gait of people who have finished a piece of work" is the closest thing to a second register — but it is framed as a feed-read, not as something the world delivers independent of Taylor's data-frame. What is needed: one image that exceeds what the feed returns, something the courier's body carries that Taylor's movement-pattern field cannot contain. Not his face — the chunk correctly withholds the face — but some physical particular that lands as human weight before it is categorized. The enforcement incident should cost the reader something Taylor does not pay. Right now it costs nothing because the prose enacts the categorization so completely that the reader inhabits the data-layer.
+
+The "this is what the feed reads. It is what the feed reads." repetition in the chunk is the rationalization running — but the substance_delta note acknowledges this is not interrogated ("the 'this is what the feed reads' echo in the chunk is the rationalization running, not being interrogated"). That is correct at the level of naming, but the chunk still does not provide the layer the reader needs to watch the rationalization from outside. The reader is inside the categorization with Taylor. That is the failure.
+
+### s03 — evening replay and recognition
+
+REVISE. The axis content is correct — resentment color identified, filed under operational texture, political_register-prot opens. But the cl-d05 cost is "neutral-instrumentally-observant is foreclosed from d05 forward" and that foreclosure is not present on the page as a threshold event. What lands instead: color noticed, filed, the recognition acknowledged in the accounting even though the ledger is not written. That is awareness, not foreclosure. The difference matters: foreclosure is a door that cannot be reopened; what the chunk delivers is a recognition that is immediately disciplined into texture. The discipline succeeds too completely — the filing-under-operational-texture works, and the reader does not feel the loss of the neutral-instrumental stance as permanent.
+
+The deeper problem is s03's relationship to the s01 watchpoint. In s01, the prose correctly watches the discipline hold without endorsing it. In s03, "The neutrality was the discipline's performance, not the discipline's fact" is delivered as narrative conclusion — and Taylor can read this conclusion. She has access to the gap between her performance and the fact. That means the recognition has arrived, but the prose does not distinguish between recognition and the foreclosure of the stance that was doing the suppression. Taylor notices the color, files it, and the chapter closes with "the color she has not named but has now seen" — diffuse ambient awareness, not the permanent unavailability of the neutral mode. The +1.5 gain needs its door-closing image: what does it feel like, at the bone level, when the Rushwick content cannot be read neutrally anymore? Not "color I now see" but "the option I no longer have." That is what cl-d05 buys, and this chunk does not sell it.
+
+### Aggregate
+
+Two of three scenes need revision. The s01 architecture is sound and the chapter goal is correctly structured — the mechanism for the recognition is right, the cf-d10 courier thread is planted correctly. The two revisions are targeted:
+- s02: one image that exceeds Taylor's data-frame, giving the reader a register the protagonist cannot author
+- s03: foreclosure as threshold event, not diffuse awareness; the neutral-instrumental stance as a lost option, not a noticed-and-filed color
+
+No walkout triggers fired. No catharsis-before-weight. No enemies pausing. The world-texture is intact. These are precision revisions to specific execution gaps, not structural failures.
+
+chapter_verdict: REVISE-with-rationale
+hard_findings: none
+soft_carries_forward:
+  - s02: enforcement image must exceed Taylor's categorization by one physical particular the feed-register cannot absorb
+  - s03: foreclosure bone must land as permanent unavailability, not as recognition-and-filing; cl-d05 door-closing texture is required for the +1.5 to carry its stated weight
+  - s03: "The neutrality was the discipline's performance, not the discipline's fact" — if this line survives into prose, it must be the world delivering it, not Taylor reading it about herself; the protagonist should be denied this clarity at the execution layer
