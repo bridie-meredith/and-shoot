@@ -517,3 +517,92 @@ signal_count: 6
 
 The two HARD faults are mechanical: one is an ID-namespace management fault in the state-updates consolidated file; the other is a license-source reference update missed during R2's feeling-facet DELETE+renumber pass. Both are fixable at facet scope without touching the proto-lines or bones file. No findings require episode-plan revision or season-scope escalation.
 ---
+
+## re-audit 2026-05-28 (after fault-001 + fault-002 remediation)
+
+re-audit-timestamp: 2026-05-28
+re-audit-scope: targeted — fault-001 + fault-002 resolution verification + stale-citation sweep
+re-audit-files-read: state-updates.md (consolidated), state-updates-env-b01-c05.md, state-updates-b01-c05-taylor-hebert-kl-122ac.md, vibes-b01-c05.md, feeling-b01-c05-taylor-hebert-kl-122ac.md, feeling.md (consolidated), _cite-index.md, interest-narrator-b01-c05.md, memory-b01-c05.md, exposition-b01-c05.md
+
+---
+
+### fault-001 re-check
+
+**Remediation applied:** `# SOURCE SLICE — NOT CANONICAL. IDs in this file are slice-local. The canonical authority for cross-facet citation is state-updates.md (consolidated; monotonic IDs 1-12). The cite-index resolves [state:N] tokens against the consolidated.` added as the first line under each slice header in the consolidated `state-updates.md`, and as the first line of both standalone slice files.
+
+**Verification — consolidated file ID sequence:**
+
+Taylor slice (lines under `# source: b01-c05-taylor-hebert-kl-122ac`): entries numbered `1 @21`, `2 @28`, `3 @29`, `4 @29`, `5 @31`.
+
+Env slice (lines under `# source: env-b01-c05`): entries numbered `6 @2`, `7 @3`, `8 @17`, `9 @21`, `10 @23`, `11 @23`, `12 @31`.
+
+The IDs are now globally monotonic 1–12 across both source slices. The prior fault was that both slices used a 1-through-N local series; that is no longer the case. The cite-index's `state:1`–`state:12` namespace resolves without collision: `state:1` maps to `@21` (Taylor, body-map), `state:6` maps to `@2` (env, studio.location), with no ID ambiguity.
+
+**Verification — standalone slice files:**
+
+`state-updates-env-b01-c05.md`: first line is `# SOURCE SLICE — NOT CANONICAL...`. The entries in this file use slice-local IDs (1–7). The NOT-CANONICAL header makes the non-authority status explicit.
+
+`state-updates-b01-c05-taylor-hebert-kl-122ac.md`: first line is `# SOURCE SLICE — NOT CANONICAL...`. Entries use slice-local IDs (1–5). Same status.
+
+The prior complaint that "dual authoritative copies exist" is resolved: the consolidated `state-updates.md` is the sole canonical file (its IDs now match the cite-index namespace); both standalone files carry explicit NOT-CANONICAL headers with a pointer to the consolidated file as the cite-index authority.
+
+**fault-001 status: RESOLVED.**
+
+---
+
+### fault-002 re-check
+
+**Remediation applied:**
+- `vibes:10 @19`: `feeling:1` removed from `licensed-by`; replaced with `world-build:cond-road-to-hell-chain-shape`. Current `licensed-by`: `proto:19, state-update:3, world-build:cond-road-to-hell-chain-shape`.
+- `vibes:14 @28`: `feeling:2` → `feeling:1`. Current `licensed-by`: `proto:28, state-update:2, feeling:1`.
+- `vibes:15 @29`: `feeling:2` → `feeling:1`. Current `licensed-by`: `proto:29, state-update:3, state-update:4, feeling:1`.
+- `vibes:16 @29`: `feeling:2` → `feeling:1`. Current `licensed-by`: `proto:29, state-update:3, state-update:4, feeling:1`.
+
+**Verification — resolution of current references:**
+
+The feeling facet (both `feeling-b01-c05-taylor-hebert-kl-122ac.md` and consolidated `feeling.md`) contains exactly one entry: `1 @29 taylor-hebert-kl-122ac: her head tilts toward the held color | expressed: no`.
+
+- `vibes:10 @19` now cites `world-build:cond-road-to-hell-chain-shape` in place of the deleted `feeling:1 @19`. No `feeling:` reference remains. The replaced source resolves to the `series.laws` / `series.behaviors` `cond-road-to-hell-chain-shape` condition card, which was already confirmed present in pass-025 of the prior audit. AP-multi-source: 3 sources (`proto:19`, `state-update:3`, `world-build:cond-road-to-hell-chain-shape`) — satisfies the multi-source threshold. No dangling reference.
+
+- `vibes:14 @28` now cites `feeling:1`. `feeling:1` resolves to the live entry at @29. This is forward-sourcing: vibes:14 anchors at @28; its `licensed-by` cites a feeling entry anchored at @29. The mechanism-chain is: apparatus holds color @28 (the vibes entry's subject) → body registers the held color via head-tilt @29 (the cited feeling entry). The R1 vibes author note referenced in the prior audit's pass-022 area acknowledges the `state-update:2 @28 → @14 forward-source precedent`; the vibes rubric's mechanism-licensing clause permits forward-sourcing where the later event is a direct causal consequence of the earlier event being vibed. The `apparatus-holds-color @28` → `body-tilt-toward-held-color @29` chain is causal and directional. This forward-sourcing is defensible under the mechanism-licensing clause and consistent with the R1 author's own stated defense. No fault.
+
+- `vibes:15 @29` cites `feeling:1`. `feeling:1` anchors at @29. Same anchor — no forward-sourcing. Resolves directly to the live entry. No dangling reference.
+
+- `vibes:16 @29` cites `feeling:1`. Same as vibes:15. Resolves directly. No dangling reference.
+
+**Cite-index cross-check:** The rebuilt cite-index shows `vibes:14 @28 lic-out=[proto:28, state-update:2, feeling:1]`, `vibes:15 @29 lic-out=[proto:29, state-update:3, state-update:4, feeling:1]`, `vibes:16 @29 lic-out=[proto:29, state-update:3, state-update:4, feeling:1]`, and `vibes:10 @19 lic-out=[proto:19, state-update:3]` (world-build source not represented in the cite-index lic-out field — consistent with how world-build sources were handled in the prior audit's pass-025, where they resolved by reference to external warehouse cards and were not inlined into lic-out tokens; no fault). The `feeling:2` token does not appear anywhere in the cite-index. The `feel:1` token in `lic-out` fields resolves to `feel:1 @29` in the cite-index's feel section. Graph is consistent.
+
+**fault-002 status: RESOLVED.**
+
+---
+
+### Stale-citation sweep (additional re-verify)
+
+Scope: all facets for (a) any `feeling:2` citation anywhere; (b) any citation to the deleted `feel:1 @19`; (c) any other orphan citation to a deleted entry.
+
+**`feeling:2` sweep:** Searched all 20 vibes entries in `vibes-b01-c05.md`. No `feeling:2` token found. Searched NI, memory, and exposition files — none of these facet types carry `licensed-by:` fields with `feeling:` citations. Searched consolidated `feeling.md` and standalone feeling file — no self-referential `feeling:2` or `feeling:1 @19`. Searched `_cite-index.md` — no `feeling:2` appears in any `lic-out` field or entry listing. **No `feeling:2` citation found anywhere in the graph.**
+
+**Deleted `feel:1 @19` sweep:** The prior `feel:1 @19` entry (breath-as-prosody-conformance) was the R2 DELETE. Searching for any residual citation to it: the cite-index's feel section shows only `feel:1 @29 back=Y`. No entry in any facet file carries a `feel:` citation pointing to anchor `@19`. The co-citation lists in the cite-index at `@19` show `narrator:5 @19 co=[mem:1, vibes:10]` — `vibes:10` is present but its `lic-out` now reads `[proto:19, state-update:3]` with no feeling reference. **No orphan citation to the deleted feel:1 @19 found.**
+
+**Other deleted-entry orphan sweep:** The only other R2 DELETE recorded in the prior audit was `feel:1 @19`. No other deletions were recorded in the R2 decisions. The prior audit's pass-005 confirmed all anchor IDs in all facets fall within [1, 35]; that check is unchanged. No new deletions have occurred in the remediation pass (the remediation was limited to `licensed-by` field edits in vibes and NOT-CANONICAL header additions to state-updates files). **No other orphan citations found.**
+
+**Forward-sourcing defensibility check for vibes:14 @28 → feeling:1 @29:**
+
+As established above: vibes:14 is a vibe at @28 (`apparatus holds the held color; the procedure is hers; feed distinguishing what discipline cannot name`). It cites `feeling:1 @29` (head-tilt toward the held color). The causal chain from apparatus-output @28 to body-response @29 is a direct one-bone sequence — the apparatus holds the color on the flat-read pass (@28), and the body registers that held color with a tilt (@29). The prior audit's pass-022 discussion noted the `state-update:2 @28 → @14 forward-source precedent` as the established mechanism-licensing basis for same-direction forward citation. The chain here is even tighter: @28 and @29 are adjacent bones, and the causal arrow is apparatus-output → body-register, which is the same mechanism pattern as the cited precedent. Forward-sourcing is **defensible** under the vibes rubric's mechanism-licensing clause.
+
+---
+
+### Re-audit Summary
+
+| Finding | Prior status | Current status |
+|---------|-------------|----------------|
+| fault-001 (state-updates ID collision + standalone duplicate) | HARD | RESOLVED — consolidated IDs now globally monotonic 1–12; both standalone files carry explicit NOT-CANONICAL headers |
+| fault-002 (dangling feeling:2 / feeling:1@19 in vibes:10/:14/:15/:16) | HARD | RESOLVED — all four entries now cite `feeling:1` (resolves to live @29 entry) or replaced sources; no dangling references remain |
+| vibes:14 forward-sourcing (apparatus @28 → head-tilt @29) | not previously assessed in isolation | DEFENSIBLE — causal chain is direct and mechanism-licensed |
+| Stale-citation sweep (feeling:2 anywhere; orphan @19 citations) | not run | CLEAN — no `feeling:2` token exists anywhere in the graph; no orphan citation to deleted feel:1 @19 found |
+
+**Re-audit verdict: CLEAN**
+
+No new findings introduced by the remediation. The 6 prior SIGNALs and 3 non-blocking FLAGs (signal-001 through signal-006, flag-001 through flag-003) are unchanged in classification and carry forward as advisory; they were not in scope for this re-audit and no remediation touched them.
+
+The chapter's facet graph is now mechanically clean. The two prior HARDs are resolved. No HARD findings remain.
