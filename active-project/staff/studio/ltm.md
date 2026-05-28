@@ -3,6 +3,25 @@
 
 ---
 
+## 2026-05-28 — b01c05 sensory authored at /and-facets Phase 1 R1
+
+Chapter b01c05: 31 bones, 3 scenes. Single location: the-rushwick (no oc-card).
+2 sensory entries authored. Density 6.45% ADVISORY — modality-floor priority over sparsity ceiling.
+Modalities: tactile + sound (2; ≥2 floor met).
+
+Entry log:
+  sensory:1 @4 — tactile spike; scene-A provisioner-train junction crossing; old=lane-stone-surface-baseline (sourced from loc-state:1 @1 stone-architecture); new=provisioner-cart-load-on-stone. Second modality (tactile) required to avoid monoculture.
+  sensory:2 @13 — sound spike; scene-B gap-instrument bone; old=alley-stone-contained-silence (sourced from loc-state:3 @10 "contained enough to hold sound"); new=courier-effortful-body-sound. MANDATORY per bones-review note-003: carries the "effortful, low, not-a-cry" qualifier stripped from bone SVO at Phase 6 fault-002. This qualifier is load-bearing for the dark-fantasy gap-instrument — the feed has no field for it; sensory is the instrument.
+
+Scene distribution: scene-A=1, scene-B=1, scene-C=0. All under per-scene cap of 3.
+Scene-C: all interior/cognitive replay bones; indoor room-floor with no sensory baseline; no fires qualified.
+
+Seam: note-001 (courier post-enforcement walk visual/spatial @23-@25) not delivered by sensory. The @23-@25 bones are interior feed-replay (fauna-feed-extension + interior-only registration — both rubric-reject). Nearest real-world event @19 fails Q2 (single person gait on stone, sub-threshold). SEAM-001 flagged in proto-lines-sensory.md; recommend narrator-interest carries this load.
+
+Sensory baseline carry to b01c06: tactile baseline at chapter close = lane-stone-surface-baseline (restored after @4 spike). Sound baseline at chapter close = alley-stone-contained-silence (the @13 spike is over; courier found feet @14; scene-B closed). Indoor room-floor at chapter close has no sensory baseline on record.
+
+---
+
 ## 2026-05-27 — b01c04 state-updates-env authored at /and-facets Phase 1 R1
 
 Chapter b01c04: four-ward coverage expansion across 2 days. 39 bones, 3 scenes.

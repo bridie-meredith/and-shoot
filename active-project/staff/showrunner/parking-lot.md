@@ -658,3 +658,43 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-05-28-001
+      created_at: 2026-05-28T00:00:00Z
+      created_by: "/and-write b01c05 Phase 2 (signal-003) + Phase 7 emit"
+      label: oc-rushwick-card-absent
+      target:
+        command: /and-facets
+        scope: "b01c05"
+        phase: Phase 0
+      severity: SOFT
+      description: |
+        b01c05 introduces the Rushwick — a ward abutting the lower Red Keep
+        servant passages — as the chapter's primary location, but no
+        oc-rushwick.card.md exists in active-project/warehouse/. The Rushwick
+        is referenced as "the-rushwick" in the bones file header (locations
+        field) and scene-map facet (per-scene location field). Geography
+        internally consistent (junction, lane-mouth, side-alley, east exit,
+        alley-mouth, hill's stone skirt). Phase 5 continuity audit accepted
+        the location consistency as non-faulting.
+
+        /and-facets Phase 0 should either (a) trigger a margit dispatch to
+        author oc-rushwick.card.md before facet authoring begins, or
+        (b) carry the noun-form reference forward through facet authoring
+        and surface the card as a Phase 5 audit deferral.
+
+        Card content required: ward layout (lane-cluster between Aegon's
+        Hill stone skirt and the city's upward lean), abuttment to Red Keep
+        servant passages, characteristic alleys (too narrow to sell from,
+        wide enough to pass at a run), period geography reference for KL
+        122 AC.
+      context_refs:
+        - active-project/theater/bones/b01-c05.md  # locations: the-rushwick
+        - active-project/theater/facets/scene-map-b01-c05.md
+        - active-project/staff/auditor/write-b01c05-pass2.md  # signal-003
+        - active-project/staff/auditor/write-b01c05-pass5.md  # geography consistency check
+      resolution_suggestion: "margit dispatch at /and-facets Phase 0 to author oc-rushwick.card.md from chunk-text geography references"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

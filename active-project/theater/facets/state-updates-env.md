@@ -1,52 +1,36 @@
-facet: state-updates
-scope: env (studio.* and prop:* only; actor:* authored separately)
-episode: b01c04
+facet: state-updates (env)
+episode: b01c05
 author: studio
+scope: studio.* and prop:oc-* entries only — actor:* entries authored by per-character dialogue-writer fork
 ---
 
-# rubric-carve-out — above-band density justified by multi-ward / multi-day chapter structure
+# rubric-carve-out — oc-slug prop field-extensions
 #
-# design/shoot-v2/rubric-state-updates.md § Curve-shape rubric
+# design/shoot-v2/rubric-state-updates.md § Field-extension protocol
 #
-# Carve-out scope: all 14 env entries in this file
-# Carve-out rule: rubric band 8-18% (3-7 fires on 39 bones) calibrated for a single-location
-#   single-day episode (s01e01 archetype). b01c04 covers 4 locations across 2 calendar days
-#   with a prop handoff chain. The elevated fire rate (14 entries, ~36%) reflects structural
-#   chapter geography, not registration-as-state or density-on-flat contamination. Each entry
-#   passes the strip test, the persistence test, and the authority test independently.
-#   Reality-axis re-pass performed at authoring: all 14 entries survive. Density is structural.
-# Coverage justification: all location transitions require active_location fire to maintain
-#   canonical state for downstream chapters; all 3 coverage_active_range extensions are the
-#   chapter's architectural substance per b01c04 chapter goal; report-sheet prop chain is
-#   the chapter's peak-cluster material; time_of_day fires track a day-skip and a chapter-
-#   open reset that cannot be inferred from other fields.
+# Carve-out scope: prop:oc-enforcement-report-entry.* and prop:oc-courier-body-map.*
+# Carve-out rule: Neither prop has an authored card in cards/props/ or active-project/warehouse/ yet
+#   (Rushwick oc-cards are margit parking-lot SOFT per /and-write Phase 7 emit note). Studio authors
+#   these as project-original props under the oc-* slug convention with field-extension notation on each
+#   entry. Fields used: .state (tracked record-state; matches the pattern of prop:oc-report-sheet.state
+#   established in b01c04). Frugality: both props are created (absent -> X) and mutated within this
+#   chapter; the schema permits first-touch baseline authoring in this facet.
+# Coverage justification: the enforcement-report-entry and courier body-map are bureaucratic
+#   irreversible mutations called out in the dispatch brief and grounded in bones @16 and @18/@27
+#   respectively. Refusing would leave load-bearing records absent from canonical memory.
 #
-# Per-entry annotations (field-extension entries):
-# - state:3 @15: field-extension: coverage_active_range (new field; tracks geographic scope
-#     of Taylor's insect-feed as an env-observable fact under studio.fauna_sense_status;
-#     not a Taylor actor-state field — actor:taylor.capability tracks the deployment scale;
-#     studio.coverage_active_range tracks which ward-zones are under live feed coverage as
-#     an environmental fact the location state must record; field-extension justified under
-#     §"Field-extension protocol" as a tracked-state-aspect, not a perception or flourish)
-# - state:4 @22: same field-extension clause as state:3
-# - state:7 @27: same field-extension clause as state:3; this is the completion entry
-# - state:10 @31: field-extension: prop:oc-report-sheet.holder (new prop; no warehouse card;
-#     oc- slug used per rubric §Authority ACCEPT signature for project-original props with
-#     explicit scene presence; prop is physically named and passed in bones @31-@32;
-#     holder is a standard prop-state field per rubric)
-# - state:11 @32: same oc-report-sheet field-extension clause as state:10
+# Per-entry annotations:
+# - state:1 @2: anchor corrected from @1 to @2; @1 is world-before-protagonist establishing beat
+#   (hill's stone skirt meets lane-mouth); location flip fires at @2 when Taylor enters (anti-pattern #7 avoided)
+# - state:3 @16: field-extension: prop:oc-enforcement-report-entry.state (new prop; first-touch baseline)
+# - state:4 @18: field-extension: prop:oc-courier-body-map.state (new prop; first-touch baseline)
+# - state:5 @20: field name corrected from active_location to location (matches studio state.md schema)
+# - state:7 @27: extends state:4 on same prop field; prop established at @18
 
-1 @1 studio.time_of_day: third-bell-noon → first-bell-morning
-2 @13 studio.active_location: oc-cooper-yard-eel-alley → oc-pig-tallow-lane
-3 @15 studio.coverage_active_range: oc-hook-precinct → oc-hook-precinct + oc-pig-tallow-lane # field-extension: coverage_active_range (new field; see carve-out preamble)
-4 @22 studio.coverage_active_range: oc-hook-precinct + oc-pig-tallow-lane → oc-hook-precinct + oc-pig-tallow-lane + oc-stitch-house-lane # field-extension
-5 @25 studio.time_of_day: first-bell-morning-day-1 → early-morning-grey-day-2
-6 @25 studio.active_location: oc-pig-tallow-lane → oc-ropers-court
-7 @27 studio.coverage_active_range: oc-hook-precinct + oc-pig-tallow-lane + oc-stitch-house-lane → oc-hook-precinct + oc-pig-tallow-lane + oc-stitch-house-lane + oc-ropers-court # field-extension
-8 @29 studio.active_location: oc-ropers-court → oc-cooper-yard-eel-alley
-9 @29 studio.actors_in_yard: [taylor-hebert-kl-122ac] → [taylor-hebert-kl-122ac, jarvis-coin-kl-courier]
-10 @31 prop:oc-report-sheet.holder: taylor-hebert-kl-122ac → in-transit-yard-air # field-extension: prop:oc-report-sheet.holder
-11 @32 prop:oc-report-sheet.holder: in-transit-yard-air → jarvis-coin-kl-coat # field-extension
-12 @36 studio.actors_in_yard: [taylor-hebert-kl-122ac, jarvis-coin-kl-courier] → [taylor-hebert-kl-122ac]
-13 @37 studio.actors_in_yard: [taylor-hebert-kl-122ac] → []
-14 @39 studio.active_location: oc-cooper-yard-eel-alley → oc-stitch-house-lane
+1 @2 studio.location: oc-stitch-house-lane -> the-rushwick
+2 @3 studio.coverage_active_range: four-ward-complete -> rushwick-included
+3 @16 prop:oc-enforcement-report-entry.state: absent -> filed-with-jarvis # field-extension: prop:oc-enforcement-report-entry.state (new prop; first-touch baseline; oc-card pending margit)
+4 @18 prop:oc-courier-body-map.state: absent -> initiated # field-extension: prop:oc-courier-body-map.state (new prop; first-touch baseline; cf-d10 thread anchor; oc-card pending margit)
+5 @20 studio.location: the-rushwick -> taylor's-lodging
+6 @20 studio.time_of_day: morning -> evening
+7 @27 prop:oc-courier-body-map.state: initiated -> filed

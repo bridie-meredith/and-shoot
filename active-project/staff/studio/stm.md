@@ -1,5 +1,37 @@
 # studio STM
 
+## 2026-05-28 — /and-facets b01-c05 Phase 1 R1 state-updates-env authoring
+
+Revised existing state-updates-env.md for b01c05 (7 entries, 31 bones; env + prop slice only).
+Key corrections applied: entry 1 anchor moved from @1 to @2 (anti-pattern #7 guard; @1 is world-before-protagonist); field name corrected from active_location to location (matches studio state.md schema line 8).
+Fires: @2 studio.location (oc-stitch-house-lane → the-rushwick); @3 studio.coverage_active_range (four-ward-complete → rushwick-included); @16 prop:oc-enforcement-report-entry.state (absent → filed-with-jarvis; field-extension); @18 prop:oc-courier-body-map.state (absent → initiated; field-extension; cf-d10 anchor); @20 studio.location (the-rushwick → taylor's-lodging); @20 studio.time_of_day (morning → evening); @27 prop:oc-courier-body-map.state (initiated → filed).
+Density: 7/31 = 22.6%; above band but defended — 2 record-creation events + 2 prop-state promotions; each entry survives strip-test and persistence-test.
+Skip-notable: @1 (pre-empt guard), @7 (peak-bone env-silent; coverage-release is registration), @10 (side-alley sub-zone held; anti-pattern #10 avoided), @13 (peak-bone env-silent; sensory carries effortful), @15 (pre-empt guard; delivery at @16 is canonical irreversible beat), @25 (peak-bone env-silent; actor-fork's authority).
+Flagged seams: SEAM-001 (taylor's-lodging noun-form lacks oc-card; margit referral); SEAM-002 (oc-enforcement-report-entry.card.md needed); SEAM-003 (oc-courier-body-map.card.md needed before b01c06); SEAM-004 (chapter-close time_of_day = evening; b01c06 Phase 0 must account for time-of-day reset).
+Chapter-close env state: location = taylor's-lodging; time_of_day = evening; coverage_active_range = rushwick-included; prop:oc-courier-body-map.state = filed; prop:oc-enforcement-report-entry.state = filed-with-jarvis.
+
+## 2026-05-28 — /and-facets b01-c05 Phase 1 R1 sensory authoring
+
+Authored sensory.md for b01c05 (2 entries, 31 bones). Density 6.45% — ADVISORY (modality-floor priority).
+Two fires across two modalities:
+  sensory:1 @4 tactile (lane-stone-surface-baseline → provisioner-cart-load-on-stone, spike) — scene-A, provisioner-train crossing junction with loaded carts.
+  sensory:2 @13 sound (alley-stone-contained-silence → courier-effortful-body-sound, spike) — scene-B, mandatory bones-review note-003 carry; effortful-qualifier stripped at Phase 6 fault-002; dark-fantasy gap-instrument.
+Modalities: tactile + sound (2; floor met).
+note-003 effortful-qualifier: CONFIRMED CARRIED at sensory:2 @13.
+note-001 courier-walk visual/spatial: NOT CARRIED — rubric-ineligible (interior replay / fauna-feed-extension). SEAM-001 flagged; recommend narrator-interest.
+Scene-C: 0 fires (all bones interior/cognitive; indoor baseline with no sensory inflections above threshold).
+
+## 2026-05-28 — /and-facets b01-c05 Phase 1 R1 location-state authoring
+
+Authored location-state.md for b01c05 (9 entries after authoring-phase cull, 31 bones).
+Single location: the-rushwick (no oc-card; pl-2026-05-28-001 flagged for margit).
+Three scenes: scene-A outdoor morning (junction + lane-mouth + east-exit), scene-B outdoor morning (side-alley sub-location), scene-C indoor evening (lodging room-floor).
+Fires: @1 world-before-protagonist anchor (lane-mouth/stone-skirt); @4 junction provisioner-train; @6 junction message-runner; @7 lane-mouth coverage-edge; @8 lane-mouth courier-entry; @10 side-alley entry; @11 alley-mouth blocked; @17 alley-mouth reopened; @20 indoor room-floor scene-C anchor.
+Cull (authoring phase): 4 candidates removed (@2 enters-rushwick; @5 takes-east-lane; @14 finds-feet; @19 takes-junction-corner).
+No continuity-carry entries: all scenes excluded by rising / rising-to-peak rhythm-shape.
+Seam flagged: @3 (insect-feed fills junction — feed-perception beat, inherits @1), @9 (holds wall-line — stillness, inherits @8), @12 (pin courier — contact-in-place, inherits @11), @13 (alley returns sound — environmental-agency/sensory beat, inherits @11; sensory facet carries "effortful" qualifier), @15–@16 (filing/delivery dexterity — inherit @11/@8 per scene position).
+Scene-C inherited: @21–@31 all inherit from @20 (room-floor); all are cognitive/replay beats with no loc-state change.
+
 ## 2026-05-27 — /and-facets b01-c04 Phase 1 R1 state-updates-env authoring
 
 Authored state-updates-env.md (14 entries, 39 bones; env + prop slice only; actor state separate).

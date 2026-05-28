@@ -1,9 +1,9 @@
 ---
 facet: metaphor
-episode: b01-c01
+episode: b01-c05
 layer: R2.1
-date: 2026-05-25
-cite_index_hash: 4bba08648f5a84f67a89d658da6792edfadb2ee3d6ae96c50ac555e569764c15
+date: 2026-05-28
+cite_index_hash: 09f0e4c9df744eb5
 f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
 outcome: ZERO-FIRES-CONFIRMED
 adds: 0
@@ -11,153 +11,29 @@ deletes: 0
 revisions: 0
 ---
 
-R2 metaphor judge — graph-aware reconsideration, b01-c01.
+R2 metaphor judge — graph-aware reconsideration, b01-c05.
 
-R1 refused both peak-bones on AP1+AP7 grounds (no anchor available; first chapter).
-R2 now has the locked graph. The anchors exist — mem:1 @3, mem:2 @26, feel:1 @21,
-feel:2 @10 — and the task asked whether any of them could license a fire at @12 or
-@21. The answer is no, and the reason is not the same at each bone, so I want to be
-specific about what the graph reveals versus what it fails to overcome.
+R1 refused every candidate on AP1+AP7 grounds (no anchors, first-exposure chapter architecture, all peaks in AP7 territory). R2 now has the locked graph. The structural question the task poses is whether the newly locked NI/state/vibes cluster at @25, the locked feel:1 at @13, and the locked mem:3 at @27 clear enough of the R1 fault stack to open a fire. They do not — but the reasons differ per candidate, and one of them (the AP1 fault at @13) is genuinely retracted.
 
-@12 ("the insects propagate") — Scene-B peak-bone, capability +1, the deployment
-moment. The graph shows feel:2 at @10 (Taylor breath, the last held beat before the
-crossing). I read @12 against feel:2 and asked whether a dark-humor metaphor could
-fire here using that adjacent anchor. The cold read does not produce one. The problem
-is not that feel:2 is two bones away, though that's a clean formal ground (anchor
-dislocation). The more honest problem is that the vibes pile-up at @12 already
-carries the sardonic content — "prohibition-crossed-before-it-was-filed,
-instinct-preceded-the-ledger-entry" is vibes:3/4/8. That's the recognition the
-dark-humor register would reach for. The metaphor would be deploying the same
-figurative content the vibes layer already holds. When I read the proto-line cold
-without the cite-index pointing at it, the line does not ask for a figure. It is
-pure environmental action at the rupture moment, and the pile-up is already doing
-the registration work. The graph revealed feel:2 as a niche; the at-rest reading
-does not confirm the wanting. Refuse: AP7 (peak-zone, anchor dislocated), AP3
-(figurative content already in vibes pile-up), G2 (niche-driven not at-rest-driven),
-G5 (peak position decelerates).
-VERDICT: REFUSE (zero-fire maintained)
+@25 ("taylor stops the rushwick-pass") — The task names this correctly: NI@25 + state@25 + vibes×4@25 are all locked, and together they constitute a dense pile-up (6 co-citations, the chapter's densest decorated bone). None of them are the mandatory anchor. The rubric is unambiguous: the anchor must be memory OR feeling; NI and state and vibes are supporting layers only. feel:2 appears in vibes:12-14 lic-out fields as a forward reference, but the locked feeling.md has exactly one entry — feel:1 at @13. feel:2 was not authored. @25 is anchor-dark. AP1 is not cleared by any amount of NI/state/vibes. The dark-humor-deflation exception to AP7 is also independently blocked: @25 IS the rupture (the axis-move bone; the recognition-cessation is the body-act), so a deflating figure here deflates the only thing the scene was built toward. NI:6 already carries the cognitive register ("the ledger has priced the continuing and declined; the refusal arrived ahead of her reaching for it") — the sardonic-deflation content that a dark-humor figure would reach for is already inhabited by the NI. The cold read of @25 does not want a metaphor; it wants the rupture rendered direct, which the peak-bone + NI pile-up already delivers.
+VERDICT: REFUSE (R1 refusal confirmed; AP1+AP7+AP2 sustained)
 
-@21 ("oswyn-mudway-flea-bottom-elder takes the lane-mouth") — Scene-C peak-bone,
-social_tether-prot-rise +1, the witch-label assembly moment. The graph shows feel:1
-at @21 (Oswyn hands-settle, non-POV) and mem:2 at @26 (the word-finds-its-person
-figure). I read @21 against both and asked whether the AP12 editor-frame exception
-could open a dark-humor or callback metaphor here. The AP12 edge-case is technically
-available — feel:1 is non-POV but it does license editor-frame third-person
-observation. What kills the candidate is not AP12 but AP4: mem:2 at @26 already
-deploys the comparison figure that any callback metaphor at @21 would reach for.
-"The word has been waiting for a person and the person has finally arrived to fit
-it" — that is the figure. A metaphor at @21 in callback register restates it five
-bones early. For dark-humor register independent of mem:2: the reader-irony content
-is carried by the seven-facet pile-up at @21 already (vibes:5/6/7, NI at @21,
-exposition:8, state:1/4). That pile-up is the densest decorated beat in the chapter.
-Reading @21 cold, the line has no gap a metaphor would fill. Refuse: AP4 (mem:2
-carries the comparison figure), AP2/AP3 (pile-up already saturates the register),
-G2 (at-rest reading is already at full decoration, no gap present), G5 (peak
-position at the chapter's heaviest beat).
-VERDICT: REFUSE (zero-fire maintained)
+@13 ("the side-alley returns the sound") — feel:1 IS locked here. The R1 fault for AP1 ("no memory or feeling anchor") is retracted; feel:1 at @13 is a valid feeling anchor in the locked graph. AP1 is cleared. But the retraction opens onto AP7 still standing. The dark-humor-deflation exception requires an explicit comparator — a simile, a predicative metaphor, an allegory — that deflates the rupture. Reading the bone cold ("the side-alley returns the sound"), the line is pure environmental action at the gap-instrument peak. No figure survives Reading A: every candidate I formed was a tautological loop or a figurative-compression verb-stretch, both of which fall into Reading B (idioms, environmental-agency grants without explicit comparison). There is no `is`, no `like`, no `as if`, no structural correspondence operator surviving in this content. The exception cannot open without a Reading A candidate. Additionally, with the locked NI in hand, NI:3 now reads "the feed has no field for the sound; she has heard that kind of gap in other rooms she has not catalogued" — this is the gap-register figurative content that any dark-humor metaphor at @13 would reach for. The NI already inhabits that register. AP3 fires for the first time; it was unavailable at R1 because NI was not yet locked. So the fault stack at @13 after R2 is: AP1 retracted, AP7 sustained (exception blocked on Reading-A-scope failure), AP3 added (NI:3 occupies the gap-register figuratively). The chapter-level accounting changes — @13 now has a valid anchor — but the outcome does not.
+VERDICT: REFUSE (AP1 CLEARED; AP7 sustained, exception fails on Reading-A-scope; AP3 added from locked NI:3)
 
-PATTERN-SCAN: With zero entries in the file, there is no within-facet pattern to scan.
-The chapter-level pattern is structurally sound: b01c01's substance contract holds
-four axes as dormancy, which suppresses the memory-callback register by design, and
-the vibes/NI layers absorb the sardonic-recognition register at both peak-bones.
-Zero fires is not a sparsity artifact; it is the correct outcome for an opening
-chapter whose figurative work is fully distributed across the non-metaphor layers.
+@22 ("the Hook-feed resolves") — The locked graph adds nothing here. cite-index confirms @22 is a bare protoline with zero citations. No memory, no feeling, no NI. "Resolves" is Reading B figurative-compression verb; out of Reading A scope. The only relevant change from R1 is that R2 can confirm the bareness rather than projecting it provisionally. AP1 sustained. Extended-default-refuse sustained.
+VERDICT: REFUSE (R1 refusal confirmed; no new licensing)
 
-CAP-REFUSAL: metaphor:1-candidate @12 — the dark-humor figure for "instinct-preceding-
-permission" is a real register-available figure, but it lives in vibes:3/4/8 already;
-I didn't believe in a metaphor entry that says what the vibes pile-up already says.
-CAP-REFUSAL: metaphor:2-candidate @21 — the callback figure for "word-finds-person"
-is a real figure, but it lives in mem:2 @26 as the memory callback itself; I didn't
-believe in a metaphor entry that anticipates and duplicates its own license.
+@27 ("taylor files the courier body-record") — This is the most interesting case and the one where R1's fault stack genuinely changes. mem:3 IS locked at @27: "a face goes into the file under a name she has not asked for and the file closes around it → cond-override-architecture-residue-122ac." AP1 is cleared. AP7 does not apply — @27 is not a peak-bone (the scene-C peak is @25). For the first time in this chapter, both of the primary blockers (AP1 and AP7) are absent at the same bone. The question is whether the at-rest reading wants a figure here. I read @27 against mem:3 without looking at the niche first. mem:3 already carries the figure. "The file closes around it" — that is the comparison, embedded in the memory callback's target-reference field. The metaphor entry would reach for the same closing-around shape: the file as enclosing entity, the face absorbed without consent. AP4 fires: the metaphor doubles a figure the memory callback already holds. Q1 test fails — the metaphor adds nothing that mem:3 + NI:7 don't already convey. Then there is G5: @27 is a post-peak archival/filing beat; the B-locked-rubric names the special case exactly — "when R2 considers adds at the final 5-10% of the proto-line stream, at least one entry must hold the prior peak's consequence live rather than confirming its filing." A metaphor at @27 in closing-around register compounds the archival closure; it does not hold @25's consequence live. The wanting for this add is graph-revealed (I see mem:3 cleared AP1; I see @27 is post-peak and therefore AP7-free) — but that wanting is niche-driven, not at-rest-driven. When I read the proto-line cold, the line does not ask for a figure beyond what mem:3 already provides.
+VERDICT: REFUSE (AP1 CLEARED; AP7 not applicable; AP4 fires — mem:3 carries the closing-around figure; G5 position pressure — post-peak archival; AP3 — NI:7 covers the doing-before register)
 
-Arbiter summary: no interventions fired. Both verdicts are refusals on stacked
-mechanical grounds that are themselves hard-fence violations (AP7 peak-zone, AP4
-callback-duplication, AP3 pile-up redundancy) — these are not arbiter-scope verdicts
-per protocol § "No interventions on hard-fence violations." The taste-question reduces
-to: does the at-rest reading want a figure here that the existing layers don't carry?
-Answer at both peak-bones: no.
+@29 and @31 (foreclosure quartet, scene-C shadow-peaks) — vibes:17-18 are locked at @31 but carry no memory or feeling in their co-citations. AP1 sustained at both bones. The locked vibes add no anchor-layer licensing. AP2 (repetition-as-foreclosure is already the prose architecture) sustained. AP5 boundary risk (any door-figure maps to Earth-Bet structural register without a memory anchor to license doubled-register) sustained. The foreclosure quartet is the chapter's terminal motion; a metaphor here would be antiform regardless of licensing.
+VERDICT: REFUSE (R1 refusal confirmed; locked vibes add no new licensing)
 
----
-facet: metaphor
-episode: b01-c04
-layer: R2.4
-date: 2026-05-27
-cite_index_hash: 4bba08648f5a84f67a89d658da6792edfadb2ee3d6ae96c50ac555e569764c15
-f-r2-counts: {adds-evaluated: 3, adds-accepted: 0}
-outcome: ZERO-FIRES-CONFIRMED
-adds: 0
-deletes: 0
-revisions: 0
----
+PATTERN-SCAN: With zero entries in the file, there is no within-facet pattern to scan. The chapter-level observation is structural: b01-c05 distributes its three memory anchors and single feeling anchor in a way that almost no metaphor-eligible position opens. feel:1 at @13 clears AP1 there but runs into AP7 + Reading-A-scope failure; mem:3 at @27 clears AP1 there but runs into AP4 + G5 + AP3. The architecture-residue thread (mem:3 / cond-override-architecture-residue-122ac) is real and figuratively potent; it simply routes its figuration through the memory callback itself rather than through a separate metaphor entry. That is not a sparsity failure — it is the memory facet doing its job fully enough that the metaphor facet has nothing to add. Zero fires is the correct outcome.
 
-R2 metaphor judge — graph-aware reconsideration, b01-c04.
+CAP-REFUSAL: metaphor:1-candidate @25 — the recognition-cessation is a real rupture moment; the pile-up is the chapter's densest decorated beat; but AP1 (anchor-dark) and AP7 (rupture itself, not deflation of it) together are hard stops. The at-rest reading does not want a figure here; it wants the rupture direct.
 
-R1 refused all three peak-bones on AP7 grounds, noting that upstream feeling/memory
-facets were not yet locked. R2 now has the locked graph. The structural finding is
-immediate and unambiguous: no memory or feeling flag co-locates with any peak-bone
-in this chapter.
+CAP-REFUSAL: metaphor:2-candidate @13 — feel:1 clears AP1 and this is a real gap-instrument peak; but Reading A produces no surviving explicit comparator, and NI:3 already holds the gap-register content. The wanting for a figure here is rubric-driven, not at-rest-driven.
 
-Memory anchors in b01-c04: mem:1 @4 / mem:2 @22 / mem:3 @33
-Feeling anchors in b01-c04: feel:1 @7 / feel:2 @39
-Peak-bones: @9 (scene-A) / @18 (scene-B) / @36 (scene-C)
-
-Anchor-to-peak overlap: none. Every peak-bone is anchor-dark.
-
-@18 (scene-B peak — primary R2 evaluation target, dark-humor register):
-The task asked whether the locked graph — specifically mem:2 firing at @22
-(un-priced-anchor / Wren-not-in-ledger) and narrator:4 + vibes:6 firing at @18
-itself — opens structural license for a dark-humor metaphor at @18 (Oswyn as
-unknowing node, grim-irony register).
-
-It does not. The mandatory anchor is one of {memory, feeling}. Neither fires at
-@18 in the locked graph. mem:2 fires at @22 — four bones later. The rubric's
-multi-justification gate requires ≥2 layers from {memory, feeling, tens} with
-the anchor counting as layer one; if the anchor is absent, the gate cannot open
-regardless of what vibes and narrator are doing.
-
-The dark-humor exception to AP7 (peak-zone default-refuse) is: "dark-humor
-metaphor at peak that deflates the rupture — permitted but rare and demanding."
-The exception presupposes a feeling anchor to ground the deflation — the somatic-
-tell is the body-evidence; the metaphor is the cognitive-register that inverts it.
-With no feeling flag at @18, the deflation has no somatic grounding; the metaphor
-would be unlicensed novel figuration (AP1) operating at a peak (AP7). Both faults
-are hard.
-
-Additionally: vibes:6 at @18 ("oswyn-mudway-flea-bottom-elder ++ the-unknowing-
-contact") and narrator:4 at @18 already carry the unknowing-node irony content. A
-metaphor adding a figure for the same content would trigger AP2-analog — figurative
-content already in co-facets. The graph shows three independent grounds for refusal
-stacking at @18: anchor-absent, AP7-without-exception, AP2-analog.
-VERDICT: REFUSE (R1 refusal confirmed against locked graph)
-
-@31-@32 (scene-C peak-shadow — report-handoff / protection-trap-fulcrum):
-Peak-shadow bones. Scene-C peak is @36. AP7's default-refuse applies to non-peak-
-bone pressure zones at equal strength; the dark-humor exception applies at peak
-only. No memory or feeling anchor fires at @31 or @32 (mem:3 fires @33, feel:2
-fires @39 — neither co-locates). Functional-register fail: the report-handoff is
-structural enactment, not dark-humor deflation or memory callback.
-VERDICT: REFUSE
-
-@9 (scene-A peak) and @36 (scene-C peak):
-Both confirmed on same grounds as R1. @9: anchor-dark, AP7. @36: anchor-dark
-(feel:2 @39 / mem:3 @33 do not co-locate), AP7, rupture-enactment form is not
-dark-humor-deflation.
-VERDICT: REFUSE (both)
-
-Chapter register assessment: b01-c04 is transactional acceptance — low-charge.
-The absence of metaphor is register-correct. The chapter's figurative weight is
-distributed across 16 vibes entries (including the unknowing-node and anchor-
-discipline registers), 9 narrator entries, and 3 memory callbacks. Figurative
-overlay at peaks would compete with rather than amplify these layers. The
-cite-index's 69.2% decoration density indicates a chapter whose emotional content
-is fully carried by the non-metaphor facet stack.
-
-Zero-fire is the complete and correct outcome for this chapter.
-
-CAP-REFUSAL: @18 dark-humor candidate — real register-available figure (Oswyn-as-
-node grim-irony); fails on anchor-absent, AP7, AP2-analog. Three independent hard
-grounds.
-CAP-REFUSAL: @31-@32 protection-trap candidate — real structural observation; fails
-on non-peak-bone status, anchor-absent, functional-register mismatch.
-CAP-REFUSAL: @36 world-axis pivot — real rupture moment; fails on anchor-absent,
-AP7.
+CAP-REFUSAL: metaphor:3-candidate @27 — mem:3 clears AP1 and @27 is the sole peak-free bone with a cleared anchor; but AP4 fires because mem:3 already carries the closing-around figure, and G5 argues against adding archive-compounding closure at a post-peak filing beat. The at-rest reading has no gap a metaphor fills.

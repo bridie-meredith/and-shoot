@@ -1,43 +1,41 @@
-# proto-lines-vibes — b01-c04
-# byte-identical SVOs from theater/proto-lines/b01-c04.md with [vibes:<id>] citations on fired bones
-# 14 fires / 39 bones (36%) — vibes:3 + vibes:9 deleted at cycle-3 (DEC-0035 2026-05-27)
+# bones — b01c05
 
-1 the tallow-damp marks the cooper's-yard shed-wall
-2 the cooper's-yard workers hold the smallfolk-hours murmur
-3 taylor-hebert-kl-122ac enters the cooper's yard
-4 taylor-hebert-kl-122ac takes the shed-wall
-5 jarvis-coin-kl-courier enters the lane-mouth
-6 the insect-feed returns jarvis-coin-kl-courier
-7 taylor-hebert-kl-122ac speaks to jarvis-coin-kl-courier [taylor-hebert-kl-122ac:4] [vibes:1]
-8 taylor-hebert-kl-122ac holds the feet
-9 jarvis-coin-kl-courier speaks to taylor-hebert-kl-122ac [jarvis-coin-kl-courier:8] [jarvis-coin-kl-courier:9] [vibes:2]
-10 the insect-feed holds the hook-range
-11 jarvis-coin-kl-courier exits the lane-mouth [vibes:4]
-12 taylor-hebert-kl-122ac exits the cooper's yard
-13 the waste-middens junction draws the discard-air
-14 taylor-hebert-kl-122ac enters Pig Tallow Lane
-15 taylor-hebert-kl-122ac extends the insect-range [vibes:5]
-16 taylor-hebert-kl-122ac maps the junction-agitation
-17 the penny-a-barrel carter parks the middens cart [vibes:8]
-18 the insect-feed returns oswyn-mudway-flea-bottom-elder [vibes:6]
-19 taylor-hebert-kl-122ac maps the oswyn-mudway-flea-bottom-elder interval
-20 Pig Tallow Lane returns ward-tier bodies only
-21 the stitch-house frames mark the second ward
-22 the insect-feed returns wren-stitch-maker-flea-bottom-ward [vibes:10] [vibes:11] [vibes:12]
-23 taylor-hebert-kl-122ac holds the feet
-24 taylor-hebert-kl-122ac maps the second-ward junction
-25 the early-morning grey empties Roper's Court
-26 taylor-hebert-kl-122ac enters Roper's Court
-27 taylor-hebert-kl-122ac extends the insect-range [vibes:13]
-28 taylor-hebert-kl-122ac runs the four-ward feed [vibes:14]
-29 jarvis-coin-kl-courier enters the cooper's yard
-30 jarvis-coin-kl-courier displays the note
-31 taylor-hebert-kl-122ac delivers the report-sheet
-32 jarvis-coin-kl-courier pockets the report-sheet
-33 the report-sheet holds at ward-pattern observation
-34 the report-sheet holds at Flea Bottom-tier source-content
-35 the courier-arrangement holds the conduit-rank [vibes:15] [vibes:16]
-36 jarvis-coin-kl-courier exits the cooper's yard
-37 taylor-hebert-kl-122ac runs the ward-feed
-38 the insect-feed returns wren-stitch-maker-flea-bottom-ward
-39 taylor-hebert-kl-122ac exits the stitch-house lane
+episode: b01c05
+narrator: taylor-hebert-kl-122ac
+goal: Show the audience the moment the insect-feed stops being neutral — the color arrives before Taylor names it — and plant the courier figure whose face will matter at d10.
+cast: taylor-hebert-kl-122ac
+locations: the-rushwick
+prior_episode: b01c04
+aggregate_range: 1-31
+
+1 the hill's stone skirt meets the lane-mouth
+2 taylor-hebert-kl-122ac enters the rushwick [vibes:11]
+3 the insect-feed fills the rushwick junction
+4 the provisioner-train crosses the junction
+5 the provisioner-train takes the east-lane [vibes:1] [vibes:2]
+6 the message-runner crosses the junction
+7 the message-runner takes the lane-mouth [vibes:3] [vibes:4]
+8 the courier enters the lane-mouth [vibes:9]
+9 taylor-hebert-kl-122ac holds the wall-line
+10 the three figures enter the side-alley
+11 the three figures close the alley-mouth
+12 the three figures pin the courier [vibes:10]
+13 the side-alley returns the sound [vibes:5] [vibes:6]
+14 the courier finds the feet
+15 taylor-hebert-kl-122ac files the enforcement-record [vibes:7]
+16 taylor-hebert-kl-122ac delivers the enforcement report-entry
+17 the three figures exit the alley-mouth
+18 taylor-hebert-kl-122ac adds the courier to the body-map [vibes:8]
+19 the courier takes the junction-corner
+20 taylor-hebert-kl-122ac takes the room-floor
+21 taylor-hebert-kl-122ac runs the Hook-feed
+22 the Hook-feed resolves
+23 taylor-hebert-kl-122ac runs the rushwick-feed
+24 the provisioner-train re-crosses the junction
+25 taylor-hebert-kl-122ac stops the rushwick-pass [vibes:12] [vibes:13] [vibes:14] [vibes:15]
+26 taylor-hebert-kl-122ac closes the evening review
+27 taylor-hebert-kl-122ac files the courier body-record [vibes:16]
+28 taylor-hebert-kl-122ac runs the rushwick flat-read
+29 the provisioner-train holds the rushwick-pass
+30 taylor-hebert-kl-122ac runs the rushwick flat-read
+31 the courier-walk holds the rushwick-pass [vibes:17] [vibes:18]

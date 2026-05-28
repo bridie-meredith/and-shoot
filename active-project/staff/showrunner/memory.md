@@ -3385,7 +3385,110 @@ books:
             stale_since: null
 
       - slug: b01c05
-        status: planned
+        status: bones-written
+        bones_file: theater/bones/b01-c05.md
+        bones_count: 31
+        substance_bone_gate_verdict: PASS
+        bones_review:
+          reviewed_at: 2026-05-28T00:00:00Z
+          report_path: active-project/staff/reviews/bones-b01c05-2026-05-28.md
+          verdict: PASS-WITH-NOTES
+          bones_file_mtime_at_review: 1779952025
+          stale_since: null
+          # Verdict: no HARDs; 2 FLAGs carried from Phase 6 (s03n10+n12 SVO duplicate; s03n03 "resolves" intransitive); 3 notes for /and-facets:
+          #   note-001: courier's post-enforcement walk image — narrator-interest/sensory facet must cite @23-@25 (s03n07 removed at Phase 6 fault-003; image is load-bearing for resentment-accumulation read)
+          #   note-002: cf-d10 face-content — memory or narrator-interest facet must associate face with body-record @27 (otherwise d10 callback loses face-recognition anchor)
+          #   note-003: 3 cite-responsibilities forward to /and-facets — narrator-interest @5 (provisioner gait-class, replacing removed s01n06) + @7 (message-runner gait-class, replacing removed s01n09); sensory @13 carrying "effortful" qualifier stripped from bone SVO
+          # Cold-read prediction: HIGH/MEDIUM/HIGH (no LOW); MEDIUM on "color arrives before Taylor names it" is facet-layer-dependent by architectural design
+          # Probe verdicts: gap-instrument @13/@14 PASS (gap not hollowed by stripping "effortful"); recognition-cessation @25 PROPERLY ANCHORED; foreclosure quartet @28-@31 reads as FORECLOSURE; cf-d10 plant SUFFICIENT at figure level (face is facet responsibility)
+        substance_delta_measured:
+          axes_moved:
+            political_register-prot: +1.5    # s03n06 (flat 25, +1.5); EXACT vs target +1.5; cl-d05 first tranche
+          density_measured: 0.5-0.6           # 31 bones / 3 scenes; lean interior-perceptual chapter
+          felt_verdict: SUBSTANCE-FELT-3-of-3 # all 3 audience personas, all 9 cells (3 scenes × 3 personas) — Phase 6 bone-gate cycle 1
+        # /and-write b01c05 emit 2026-05-28 — clean run (no Phase 1 redo; no DEC adjudications).
+        # Phase 1 scene-decomposition: 34 bones (s01: 9, s02: 12, s03: 13); event_map[] mechanical chunk-tag extraction + author-noticed entries; sensory-grounding ≥1 per scene; worm-canon SOFT-WATCH courier 3-distinct-bones honored (s02n02 gait, s02n04 approach, s02n08 filing); dark-fantasy gap-instrument pair authored (s02n06 + s02n07).
+        # Phase 1.5 dialogue: SKIPPED (no speech-form or communication-axis bones — chapter is interior/observational).
+        # Phase 2 SVO constraint audit: cycle 0 FINDINGS-PRESENT (2 HARD: 5 feed-perception bones + 4 abstract-affect-object bones; 4 SIGNAL; 3 FLAG) → cycle 1 fixer recasts 10 bones → cycle 2 audit FINDINGS-PRESENT (1 HARD: fault-003 PP-modifier on s03n11/n13 "holds at X") → cycle 2 fixer inverts SVOs → cycle 3 audit ACCEPT.
+        # Phase 3 dramatist: ACCEPT — order preserved in all 3 scenes; recognition (s03n06) correctly between failed first pass and re-run sequence; gap-instrument pair at @13-@14. 2 non-blocking advisories (s02n02→n03 timing, s03n08→n09 seam).
+        # Phase 4 trim: 3-of-3 ACCEPT in one round, 34/0 across cape-fic-reader, dark-fantasy-reader, worm-canon-pedant. No DELETEs proposed.
+        # Phase 5 continuity audit: FINDINGS-PRESENT (1 HARD sr-001: Taylor state file frozen at series-open values; 1 FLAG dup-001 s03n10+n12 identical SVO advisory) → state file reconciled (full c01-c05 handoff_out values) → re-audit CONTINUITY-OK.
+        # Phase 6 substance bone-gate cycle 0: 8 HARD + 1 SIGNAL + 2 FLAG (auditor); 9-of-9 SUBSTANCE-FELT (audience).
+        #   HARDs: fault-001 (6× "Taylor maps X" perception-class), fault-002 (3 modifier strips), fault-003 (s03n07 interiority+PP), fault-004 (s02 capability witness missing), fault-005 (s03 social_tether witness missing).
+        #   Cycle 1 fixer: 3 bone removals (s01n06/n09, s03n07; cognitive content migrates to /and-facets narrator-interest layer), 4 recasts (s02n02 holds wall-line, s02n08 files enforcement-record, s02n11 adds courier to body-map, s03n09 files courier body-record), 3 modifier strips (s02n03/n05/n06), 2 axes_held additions (s02n01 capability, s03n01 social_tether-prot-rise).
+        #   Cycle 2 re-audit: ACCEPT — all 8 HARDs resolved; signal-001 (maps mannerism) dissolved by entailment; 2 FLAGs carry forward non-blocking.
+        # Phase 6.5 admin process-critic: SKIPPED — final verdict fully clean (0 HARDs, 0 accepted-not-remediated SIGNALs).
+        # Phase 7 emit: theater/bones/b01-c05.md (31 bones; 7+12+12 across s01/s02/s03) + theater/facets/scene-map-b01-c05.md.
+        # Bones file slug gaps: s01 missing n06 + n09; s03 missing n07 (per Phase 6 fault-001/003 removals — slugs non-monotonic, flat_ids contiguous 1-31).
+        # Soft watches forward (carried to next phases):
+        #   /and-facets: narrator-interest must cite removed-bone replacement bones (s01n05 for provisioner gait-class content, s01n07 for message-runner gait-class, s02n12 + s03n09 for courier-walk content); sensory facet must cite s02n13 (alley-sound) carrying the "effortful" qualifier stripped from bone SVO; dialogue facet — no dialogue this chapter.
+        #   margit: author oc-rushwick.card.md (location not yet in warehouse; surfaced as parking-lot SOFT for /and-facets dispatch).
+        #   /and-review bones: independent fidelity review (MANDATORY gate before /and-facets per URI-WRITE-BONES-REVIEW-GATE).
+        # FLAGs carrying to /and-stitch advisory:
+        #   - dup-001: s03n10 + s03n12 identical SVO "taylor-hebert-kl-122ac runs the rushwick flat-read" (load-bearing for foreclosure pattern; stitcher prose must distinguish the two attempts).
+        #   - flag-002: s03n03 "the Hook-feed resolves" intransitive "resolves" borderline; advisory.
+        # Draft archived: active-project/staff/showrunner/_drafts/b01c05-bones-draft-2026-05-28.md
+        # Auditor reports: write-b01c05-pass2.md (Phase 2; 3 attempts), write-b01c05-pass5.md (Phase 5; 2 attempts), write-b01c05-bone-gate.md (Phase 6; 2 attempts).
+        # Audience reviewer STM (Phase 4 trim + Phase 6 bone-gate) under "## b01c05 ..." headings.
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
+        facets_status: audited-r1
+        facets_stale_since: null
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audit_findings: 0 HARD / 4 SIGNAL / 10 FLAG (cycle 1) → 0 HARD / 2 SIGNAL / 10 FLAG (cycle 2; fault-028 + fault-033 resolved)
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md
+        audience_gate_complete: true
+        audience_gate_cycles: 2
+        audience_gate_cap_burned: false
+        bidirectional_loop: validated   # 3 shared findings across auditor + audience paths (vibes:12-15 license, NI density, memory carve-out)
+        # /and-facets b01-c05 emit 2026-05-28 — 2-cycle audience-gate to clean ACCEPT.
+        # R1 fanout: 10 authors landed; 60 facet entries (loc-state=9, NI=8 post-c2, sensory=3 post-c2, state-env=7, state-taylor=8, memory=2 post-c2, feeling=2 post-c2, metaphor=0, vibes=18, exposition=3).
+        # R2 fanout: 5 judges (NI K=7 D=0 A=3; memory K=1 D=2 A=1; feeling K=1 A=1; metaphor K=0 D=0 A=0; exposition K=2 R=1 A=0). Dialogue R2 SKIPPED (no speech bones).
+        # Phase 5 audit cycle 1: FINDINGS-PRESENT (0 HARD; 4 SIGNAL: NI density 32.3%; metaphor inventory; memory carve-out doc; vibes:12-15 license; 10 FLAG advisory).
+        # Phase 5b cycle 1 (3 personas × all 9 facets batched): 4/9 ACCEPT, 5 FAIL (NI, sensory, memory, feeling, vibes).
+        # Cycle 2 fixer: vibes lic-out feeling:2 → state:13 co-anchor; DELETE narrator:2@7 + narrator:5@24 (density 25.8%); memory carve-out preamble; sensory:3@14 ADD (URI-FACETS-CYCLE-N-ADD pre-validation PASS).
+        # Phase 5 cycle 2 re-audit: CLEAN (0 new HARDs; fault-028 + fault-033 RESOLVED).
+        # Phase 5b cycle 2 re-fire (failing facets only): 9/9 ACCEPT strict 3-of-3.
+        # Phase 5c admin process-critic: SKIPPED (final cycle clean ACCEPT; no cap-burns).
+        # Final facet entry count: 60 (loc-state=9, NI=8, sensory=3, state=15, memory=2, feeling=2, metaphor=0, vibes=18, exposition=3).
+        # 26/31 proto-lines decorated (83.9%). Peak @25 = 6 facets; @18 = 5; @27 = 5; @13 = 5.
+        # Bare bones: @14 (post-c2 fix), @19, @23, @28, @30 — wait @14 now decorated by sensory:3; final bare = @19, @22 (no — @22 has narrator:9), let me recount: @19, @23, @28, @30. 4 bare.
+        # Soft watches forward to /and-stitch:
+        #   - vibes:12-15 @25 register: 6-facet pile-up at peak — stitcher to confirm density warranted (auditor verified warranted)
+        #   - foreclosure-quartet asymmetry: feel:2 @29 alone between bare @28+@30; @31 has narrator:10 + vibes:17+18; stitch must respect bare flanks
+        #   - NI density 25.8% at ceiling — differentiated rhythm in scene-A (3 NI in 7 bones)
+        #   - cf-d10 plant @8 + @18 + @27 callback-ready for d10 callback
+        stitched: true
+        stitched_at: 2026-05-28T00:00:00Z
+        draft_file: active-project/draft/b01-c05.md
+        cold_read:
+          read_at: 2026-05-28T00:00:00Z
+          verdict: FAIL
+          recovered_summary: "narrator (working for an unnamed faction) watched three men beat a recurring courier in a city ward while routing intelligence reports; afterward replayed the day at home"
+          report_path: active-project/staff/reviews/coldread-b01-c05-2026-05-28.md
+          staging_signals: 0   # /and-review staging deferred under cascade-budget
+          staging_report_path: null
+          signal_clusters: []
+          continue: no
+          stale_since: null
+          # Phase 9 cold-read FAIL: chapter's central event (recognition-as-feed-stopping-being-neutral) not recovered.
+          # Cold reader recovered the courier beating + Taylor's home replay but did not feel the cost (the recognition).
+          # Specific confusions: cause-chain (sheet → beating) not explicit; Sera unnamed; "the Hook" unexplained; narrator faction unclear.
+          # Per Phase 9 routing: structural failure → re-decompose from bones, not polish.
+          # Recommended action: /and-write b01-c05 revise (then re-cascade /and-facets + /and-stitch).
+          # Specific signals for revise --from-signals:
+          #   - feed-stopping-neutral event needs more dramatized recognition staging at @25 (cessation IS recognition; prose may need to stage the door-closing more explicitly)
+          #   - cause-chain: enforcement incident → Taylor's filing-as-Jarvis-report needs explicit causal link visible in prose
+          #   - cf-d10 plant: courier-identity stakes need stronger anchor
+        # /and-stitch b01-c05 emit 2026-05-28. Single-arm scene-window.
+        # Phase 1 scene-window: 3 forks (scene-A 287w; scene-B 290w; scene-C 202w; total body 779w + preamble 113w = 892w pre-Phase-7; 840w post-Phase-7).
+        # Phases 2-6 inline-mechanical (no faults).
+        # Phase 7 per-sentence Q-line sweep: 40 sentences walked; 33 KEEP / 4 REWORD / 2 CUT-CLAUSE / 1 CUT / 0 RESHOW.
+        # Phase 8 finalize: clean draft at active-project/draft/b01-c05.md; render-log at active-project/staff/stitcher/render-log-b01-c05.md.
+        # Phase 9 cold-read: FAIL. Routes to /and-write revise (structural failure, not polish).
+        # Phase 9.5 admin process-critic: dispatched (FAIL verdict triggers).
         chunk: |
           The insect-feed begins returning court-tier content for the first time. Taylor has
           extended coverage to a ward that abuts the lower Red Keep servant passages, and the
@@ -3455,6 +3558,106 @@ books:
             - "Otto: leverage rank 3.5; unaware Taylor noticed the enforcement incident"
             - "courier-figure (unnamed): in Taylor's insect-feed memory; body-map begun"
           target_chapter: b01c06
+        # /and-substance chapter b01c05 Phase 6 persist 2026-05-28.
+        # Phase 5 attempts: 1 REVISE (dark-fantasy-reader REVISE on s02 data-frame collapse + s03 missing foreclosure;
+        #   auditor 1 HARD on s03 pivot untagged + 1 SIGNAL + 3 FLAGS) → 2 ACCEPT (dark-fantasy ACCEPT both watchpoints;
+        #   auditor 0 HARD / 0 SIGNAL / 2 non-blocking FLAGS).
+        # Phase 5 reviewers: dramatist ACCEPT (att 1); cape-fic-reader ACCEPT (att 1); worm-canon-pedant ACCEPT-with-notes (att 1);
+        #   dark-fantasy-reader REVISE → ACCEPT (att 2); auditor FINDINGS-PRESENT → 0-HARD (att 2).
+        # Draft archived: active-project/staff/showrunner/_drafts/b01c05-draft-2026-05-28.md
+        # Reviewer reports: audience STM under "## b01c05 chunk review ..." headings;
+        #   auditor active-project/staff/auditor/substance-b01c05-chunk-audit.md (attempt 1 + attempt 2 sections).
+        # Δ allocation: 0 / 0 / +1.5 on political_register-prot — rising shape, peak at s03 evening replay; cl-d05 first tranche (+1.5 of +3 multi-chapter ledger gain; remaining +1.5 anchors at b01c06-b01c08).
+        # SOFT-WATCH (carried to /and-write b01c05): worm-canon-pedant — courier gait-signature + approach-geometry read + filing must be structurally distinct bones in s02 + s03, not collapsed to single logging assertion.
+        # ADVISORY (auditor non-blocking FLAGs persisting): fault-003 (s01/s02 axes_held rationales multi-clause vs one-line schema form); fault-004 (s01 message-runner illustrative untagged events inside force-block).
+        scenes:
+          - slug: b01c05s01
+            chunk: |
+              The ward that abuts the lower servant passages of the Red Keep is called [image: the Rushwick, a lane-cluster pressed between the hill's stone skirt and the city's upward lean, its alleys too narrow to sell from but wide enough to pass through at a run] — and Taylor walks it on the second morning after the Roper's Court report, the feed extending into the new ground without ceremony. [event: Taylor extends insect coverage into the Rushwick ward, which abuts the Red Keep servant passages]. Coverage comes up across the junction within the hour. It is the same architecture she knows: who is moving, who is not moving, which passage is being avoided, which threshold is watched.
+
+              But the bodies are different. [image: a provisioner's train crossing the main junction — four men, two carts, the particular forward-lean of people carrying loads under a tight delivery window, the unhurried-hurry of institutional rhythm]. The feed reads them as: on schedule. That is not a category that applies to Hook bodies. The distinction arrives in Taylor's categorization without language. [mechanism: court-tier bodies carry institutional-gait signatures — provisioning cadence, message-running intervals, the physical compression of people accountable to someone above them — and the feed reads these as a different class of pattern than ward-resident foot traffic]. She files it as: different substrate. She does not qualify the difference further.
+
+              [force: Taylor's neutral-instrumental reading discipline — the same factual-observation register applied to the Hook, to Pig Tallow Lane, to Roper's Court, applied now to new ground] holds the court-tier content at the same distance as everything else. A message-runner passes the junction at the double-step of someone on a specific errand. The feed tracks him to the lane-mouth and releases him from coverage range. Taylor reads: message-running body, institutional function, no anomaly. She does not note who the message was from, or where it was going, or what the double-step means in a court whose internal logistics she has read about but not observed from the ground.
+
+              [force: the court-tier content's novel weight — the substrate has changed even though the method has not] does not announce itself. It is present only in the specificity with which Taylor's categorization is being asked to work. She names the provisioner train. She names the message-runner's gait-class. She does not name what it means that these bodies are connected to the architecture that keeps Sera's exposure managed. The discipline holds. [event: first day of court-tier content in the insect-feed — Taylor reads neutrally; categorization-layer engaged without affect]. The ward runs its schedule. Taylor reads the ward.
+            substance_delta:
+              axes_in_motion: []
+              axes_held:
+                - axis: political_register-prot
+                  rationale: "court-tier content arrives; Taylor reads it with the same factual-categorization register she applies to Hook content; the discipline is intact; no color has accumulated yet — this is the first exposure, and the first exposure reads as: different substrate, same method"
+                - axis: capability
+                  rationale: "coverage extension to Rushwick is maintenance-of-expansion from c04's four-ward map, not a new expansion event; the coverage range is confirmed active, not newly grown"
+                - axis: moral_framework
+                  rationale: "categorizing court-logistics bodies as intelligence substrate is already inside the licensed exception; the d04 rationalization runs unchanged; no new exception opened"
+                - axis: relational_anchor_status
+                  rationale: "Wren not in this ward; anchor not activated"
+              density_target: 0.5-0.6
+            scene_conflict:
+              protagonist_force: "Taylor's neutral-instrumental reading discipline — the factual-observation register she has held since arrival, applied unchanged to court-tier content"
+              opposing_force: "the court-tier content's novel weight — bodies moving on institutional schedule, accountable to a hierarchy whose upper tiers she is already embedded in; the substrate has changed even though the method has not"
+              stakes_axis: political_register-prot
+            stale_since: null
+
+          - slug: b01c05s02
+            chunk: |
+              The courier is a man of middle years, compact build, [image: a courier Taylor has now seen three separate times in the Rushwick — the same gait on three different mornings, slightly heel-first, the walk of someone who has learned the ward's uneven paving by repetition]. She has not named him. The feed has filed him as: recurring body, probable Rushwick-resident or regular-transit, no anomaly. [event: third sighting — five days into the Rushwick coverage; the feed confirms: recurring body, same heel-first gait, same morning-hour transit window].
+
+              [event: the courier is roughed up in a side-alley off the Rushwick junction by three figures whose body-language reads as enforcement, not robbery]. Taylor is at the ward's far end when the feed flags the contact — three bodies closing on one body in the short-alley off the junction's east exit, the geometry of the approach not consistent with opportunistic theft. [mechanism: enforcement reads differently from robbery in the feed — the coordination of approach, the blocking of exits before contact, the absence of the post-contact scatter that marks common theft; instead, a controlled containment, a single body held against stone, two others keeping the alley-mouth]. From across the ward the feed returns: contact complete, courier upright. What it does not return is the sound from the alley before the courier finds his feet — a low, effortful sound, not a cry, the kind a body makes when it is trying not to make any sound at all. The feed has no field for that. It logs: brief contact, courier retained on feet. She watches the exchange without crossing toward it. The courier is left on his feet. The three figures leave at a walk, not a run.
+
+              [force: the observation's specificity — this is enforcement, coordinated, directed at a specific person for a specific reason; the content has named itself as faction-violence in a way Hook content never did] sits in the feed's record. Taylor begins the Jarvis report in the same register she uses for passage-avoidance patterns and junction-agitation clustering. Movement-pattern. Body-count. Approach geometry. Duration. Resolution: courier retained on feet; three figures exited east. [event: Taylor routes the enforcement incident to Jarvis as a factual movement-pattern report — no name for the courier, no inference about which faction directed the enforcement, no speculation about cause]. The report is accurate. It is what the feed reads. It is what the feed reads.
+
+              [force: Taylor's factual routing discipline — the observation enters the report as movement-pattern, and the discipline of treating court-adjacent content as categorizable data holds at the action layer]. The courier recovers his balance and continues through the ward on his original heading. The feed tracks him to the corner and releases him. Taylor does not follow. She does not note the courier's face for anything beyond the movement-pattern field. [image: the three figures' departure walk — unhurried, purposive, the specific gait of people who have finished a piece of work and have somewhere else to be]. [event: cf-d10-courier-face thread initiated — courier body flagged as recurring, three observations now logged; enforcement incident attached to the filing].
+            substance_delta:
+              axes_in_motion: []
+              axes_held:
+                - axis: political_register-prot
+                  rationale: "enforcement routed as movement-pattern; categorization-layer intact; no color opened at action-layer"
+                - axis: moral_framework
+                  rationale: "routing enforcement as pattern-data is inside the licensed exception; 'this is what the feed reads' echo is rationalization running, not interrogated"
+                - axis: capability
+                  rationale: "no new coverage expansion; Rushwick coverage operational"
+                - axis: relational_anchor_status
+                  rationale: "courier not a relational anchor; Wren not present"
+              density_target: 0.55-0.65
+            scene_conflict:
+              protagonist_force: "Taylor's factual routing discipline — the observation enters the Jarvis report as movement-pattern; the discipline of treating court-adjacent content as categorizable data holds at the action layer"
+              opposing_force: "the enforcement incident's specificity — coordinated, directed at a named body for a named reason; the content has named itself as faction-violence in a way Hook content never did; the discipline's categorization is absorbing a class of content it was not built to process without registering the stretch"
+              stakes_axis: moral_framework
+            stale_since: null
+
+          - slug: b01c05s03
+            chunk: |
+              That evening Taylor runs the day's feed through memory — [event: evening replay of the Rushwick feed; Taylor reads the court-tier content in review rather than in real-time acquisition] — the standard end-of-coverage accounting, the same procedure she has run every night since the Hook. The Hook content reads in review as it reads in acquisition: bodies, clusters, passage-avoidance, agitation-patterning. She runs it without residue. [image: the Hook's feed-texture in evening review — flat, like a document she has already processed; the wards she knows running on schedule, the anomalies noted and incorporated; the information completing itself as information].
+
+              [mechanism: The Rushwick reads differently in review than it read in acquisition — evening replay strips the acquisition-layer's real-time categorization discipline; there is no action to take, no report to route, no function being performed; the content sits without the discipline's organizational frame, and what remains is not flat; the provisioner train's institutional-gait signature carries something that the factual-categorization register was holding at distance during the day]. [event: Taylor notices that the court-tier content is not neutral to her — resentment color identified in review, after the fact, in the absence of the discipline's real-time frame]. She does not name what she notices. She names what she does: she files it under operational texture.
+
+              [force: the accumulation that has happened regardless of categorization — the color has arrived in the feed; neutral-instrumentally-observant has been the method of acquisition but the substrate has been adding something to the ledger without her accounting registering it] sits in the replay without a label Taylor applies to it. [image: the courier's post-enforcement walk — him continuing on his original heading, the specific quality of a body that has just been reminded it is being watched and is performing normalcy in response]. Taylor has been reading court bodies. Court bodies are connected to the architecture that keeps Sera protected. Court bodies move under a hierarchy that produced the enforcement geometry she watched this afternoon. She has been reading this and she has not been neutral about it.
+
+              [force: filing the observation under operational texture — Taylor's discipline of categorizing her own response extends the same factual-register to the recognition itself; the color arrives and gets named as texture rather than named as resentment]. [event: political_register-prot opens its account — resentment color present; neutral-instrumentally-observant foreclosed; cl-d05 anchor lands]. The courier's face is in Taylor's body-map now, not in any ledger she writes. [event: cf-d10-courier-face thread confirmed open — courier logged as recurring body with enforcement-incident attached; Taylor will recognize him again]. She closes the evening review. She tries to run the Rushwick back through the flat-document read — the same read that closes out the Hook, the same read that resolves the ward's content into information. It does not resolve. The Rushwick content does not complete itself as information. She runs it again. The same. The Hook runs flat under the same pass. The Rushwick does not. The neutral read is not available to her for this content anymore, and she files the unavailability as texture, but the filing does not return the read.
+            substance_delta:
+              axes_in_motion:
+                - axis: political_register-prot
+                  direction: up
+                  target_delta_magnitude: 1.5
+                  cost_ledger_anchor: cl-d05
+                  notes: "evening replay reveals accumulated color; the discipline's real-time categorization frame was holding neutral-instrumentally-observant in acquisition but the substrate was not neutral; Taylor notices in review; the recognition IS the opening of the account; neutral-instrumentally-observant is foreclosed from this point; cl-d05 anchor lands here; Rushwick content now carries permanent resentment-color in Taylor's feed-interpretation; first tranche (+1.5 of +3 cl-d05 ledger gain; remaining +1.5 anchors at b01c06-b01c08 during the readable-resentment escalation toward d09 articulated-contempt)"
+              axes_held:
+                - axis: moral_framework
+                  rationale: "resentment color noticed and filed as operational texture; the rationalization is not interrogated here — Taylor applies the same categorization discipline to her own response that she applies to the feed; the licensed exception is not threatened by noticing affect; legibility crack does not deepen this scene"
+                - axis: capability
+                  rationale: "no new coverage extension; evening review is operational accounting, not expansion"
+                - axis: relational_anchor_status
+                  rationale: "the courier is not a relational anchor; the body-map filing is operational texture, not anchor-formation; Wren not present"
+                - axis: social_tether-prot-rise
+                  rationale: "tether load-bearing in formation per c04; no new structural addition this scene"
+                - axis: moral_legibility_to_self
+                  rationale: "resentment noticed and filed; the filing-as-texture IS Taylor not opening the recognition; legibility holds — the recognition is categorized, not examined; moral_legibility_to_self does not move until Taylor can no longer successfully file the color as something other than what it is"
+              density_target: 0.6-0.7
+            scene_conflict:
+              protagonist_force: "filing the observation under operational texture — Taylor's discipline of categorizing her own response extends the same factual-register to the recognition itself; the color is named as texture rather than named as resentment"
+              opposing_force: "the accumulation that has happened regardless of categorization — the color arrived in the feed without Taylor's real-time accounting registering it; political_register is opening whether Taylor names it as such or files it as texture"
+              stakes_axis: political_register-prot
+            stale_since: null
 
       - slug: b01c06
         status: planned

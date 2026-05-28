@@ -634,8 +634,26 @@ scope: line
 change: field-extension comment added; value changed to "observation-traced-chapter-1"; applied to state-updates-wren-stitch-maker-flea-bottom-ward.md and state-updates.md; cite-index state:9 back-link unchanged
 criteria met: yes — field-extension documented; clean value, no metadata, no inaccurate affect
 
+## SESSION-START — 2026-05-28T00:00:00Z — write-b01c05-pass2-hard-recasts
+dispatch: apply Phase 2 HARD fault recasts on b01c05 bones draft — fault-001 (5 bones: s01n05, s01n08, s02n01, s02n04, s02n07) + fault-002 (4 bones: s03n05, s03n06, s03n11, s03n13) + signal-002 inline recast (s03n08); 9 HARD bones + 1 SIGNAL bone = 10 SVO-field edits total
+target: active-project/staff/showrunner/b01c05-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c05-pass2.md
+findings-queued: 2 HARD (9 bones) + 1 SIGNAL inline
+
 ## SESSION-END — 2026-05-25T10:20:00Z — and-facets-cycle1-fixes-state-updates
 findings-applied: 5 (4 DELETE + 1 REVISE)
+
+## SESSION-START — 2026-05-28T00:00:00Z — write-b01c05-pass2-hard-recasts
+dispatch: Phase 2 HARD fault recasts on /and-write b01c05 bones draft — fault-001 (5 bones: insect-feed perception-verb surrogates) + fault-002 (4 bones: rushwick-feed abstract-color-return) + signal-002 inline recast (s03n08); 10 bones total; s03n06 substance_delta must be preserved exactly
+target: active-project/staff/showrunner/b01c05-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c05-pass2.md
+findings-queued: 2 HARD (9 bones) + 1 SIGNAL (1 bone) = 10 bone edits
+
+## fault-001 — RESOLVED — 2026-05-28T00:05:00Z
+fault: 5 bones using insect-feed as perception-verb surrogate (feed returns/releases/logs a categorization product) — FAULT-FORM-PERCEPTION
+scope: line
+change: 5 SVO recasts — s01n05: "the insect-feed returns the provisioner-train gait-class" → "the provisioner-train takes the east-lane"; s01n08: "the insect-feed releases the message-runner at the lane-mouth" → "the message-runner takes the lane-mouth"; s02n01: "the insect-feed returns the courier at the lane-mouth" → "the courier enters the lane-mouth"; s02n04: "the insect-feed returns the approach-geometry" → "the three figures close the alley-mouth"; s02n07: "the insect-feed logs the courier upright" → "the courier finds the feet"; substance_delta unchanged on all 5; notes updated to reflect recast
+criteria met: yes — all 5 bones now record physical observables with physical subjects; feed-as-perception-surrogate eliminated; categorization content deferred to narrator-interest facet
 findings-skipped: 0
 exit: CLEAN
 cross-facet-impact: narrator-interest author must add @17 NI entry before state:5 (taylor.posture) can be re-authored; @17 is now a bare protoline; all other changes are self-contained state-updates cleanup
@@ -1189,3 +1207,143 @@ criteria met: yes
 findings-applied: 6 (4 AP8 token rewrites; vibes:9 DELETED; vibes:3 DELETED)
 findings-skipped: 0
 exit: CLEAN
+
+## fault-001 — RESOLVED — 2026-05-28T00:10:00Z
+fault: 5 bones in b01c05 using insect-feed as perception-verb surrogate (returns/releases/logs a categorization-class object) — FAULT-FORM-PERCEPTION
+scope: line
+change: all 5 bones already recast in draft prior to this session (notes fields confirm "recast from perception-surrogate (fault-001)"); verified in-place: s01n05 "the provisioner-train takes the east-lane"; s01n08 "the message-runner takes the lane-mouth"; s02n01 "the courier enters the lane-mouth"; s02n04 "the three figures close the alley-mouth"; s02n07 "the courier finds the feet"; substance_delta unchanged on all 5
+criteria met: yes — all 5 bones record physical observables; feed-as-perception-surrogate eliminated; categorization content deferred to narrator-interest facet
+
+## fault-002 — RESOLVED — 2026-05-28T00:15:00Z
+fault: 4 bones in b01c05 s03 using rushwick-feed as returns-abstract-color perception surrogate — FAULT-FORM-PERCEPTION + FAULT-FORM-INTERIORITY; s03n06 carries +1.5 political_register-prot axis-move and cl-d05 cost anchor which must survive recast exactly
+scope: line
+change: (1) s03n05: "the rushwick-feed returns the provisioner-train color" → "the provisioner-train re-crosses the junction" — physical replay-crossing; re- prefix marks replay context; distinct from s01n04 real-time crossing; color content to narrator-interest facet; (2) s03n06: "the rushwick-feed returns the resentment color" → "taylor-hebert-kl-122ac stops the rushwick-pass" — physical body cessation IS the recognition event; substance_delta preserved exactly (axis_moves: political_register-prot up 1.5 cl-d05; cost_ledger_anchor: cl-d05); (3) s03n11: "the rushwick-feed returns the color" → "the rushwick-pass holds at the provisioner-train" — held-form; pass held-not-resolved at physical anchor; 'holds' licensed as stillness-against-pressure; bone_shape held preserved; (4) s03n13: "the rushwick-feed returns the color" → "the rushwick-pass holds at the courier-walk" — parallel held-form with varied anchor (courier not provisioner-train) reinforcing +1.5 recognition specificity; below ≥3 mannerism threshold for identical verb+object pair; bone_shape held preserved
+criteria met: yes — all 4 bones have physical subjects performing physical observable acts; abstract-color objects eliminated; s03n06 substance_delta block unchanged exactly; held-form discipline on n11/n13 preserved
+
+## signal-002-inline (s03n08) — RESOLVED — 2026-05-28T00:16:00Z
+fault: "taylor-hebert-kl-122ac maps the resentment-color entry" — "resentment-color entry" possibly abstract-as-object; SIGNAL surfaced adjacent to fault-002 interiority cluster
+scope: line
+change: "taylor-hebert-kl-122ac maps the resentment-color entry" → "taylor-hebert-kl-122ac closes the evening review" — physical end-act of the review session IS the filing-as-texture protagonist_force; matches chunk phrasing; axes_held (moral_framework + moral_legibility_to_self) and rationale fields unchanged
+criteria met: yes — abstract compound-noun object replaced by concrete physical event noun; filing-as-texture semantic preserved through the end-act encoding
+
+## SESSION-END — 2026-05-28T00:16:00Z — write-b01c05-pass2-hard-recasts
+findings-applied: 3 (fault-001 pre-verified in-place; fault-002 4 bones recast; signal-002 1 bone inline recast)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-28T02:00:00Z — write-b01c05-bone-gate-hard
+dispatch: resolve 8 HARD findings from write-b01c05-bone-gate.md — fault-001 (6 "maps" perception-class bones: 2 remove, 4 recast), fault-002 (3 modifier strips), fault-003 (s03n07 interiority+PP remove), fault-004 (s02 capability HELD-AXIS-NOT-WITNESSED: add axes_held entry to s02n01), fault-005 (s03 social_tether-prot-rise HELD-AXIS-NOT-WITNESSED: add axes_held entry to s03n01); also update event_map[] for removed bones
+target: active-project/staff/showrunner/b01c05-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c05-bone-gate.md
+findings-queued: 8 (5 fault IDs; fault-001 covers 6 bones in 3 dispositions: 2 remove + 4 recast; fault-002 covers 3 bones: modifier strips; fault-003: 1 bone remove; fault-004: axes_held ADD to existing bone; fault-005: axes_held ADD to existing bone)
+
+## SESSION-START — 2026-05-28T01:00:00Z — write-b01c05-pass2-fault003-cycle3
+dispatch: minimum-change SVO recasts for fault-003 (2 bones: s03n11 and s03n13) from write-b01c05-pass2.md Attempt 2 section; FAULT-FORM-MODIFIER + FAULT-FORM-NON-ACTION-VERB on "holds at <noun>" form; invert SVO per auditor candidate licit recast
+target: active-project/staff/showrunner/b01c05-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c05-pass2.md
+findings-queued: 1 (fault-003 covering 2 bones)
+
+## fault-003 (s03n11) — RESOLVED — 2026-05-28T01:05:00Z
+fault: "the rushwick-pass holds at the provisioner-train" — "at the provisioner-train" is a banned PP of focus/location (FAULT-FORM-MODIFIER); "holds" outside narrow license (subject not a body, object not bare direct object satisfying condition 2) — FAULT-FORM-NON-ACTION-VERB
+scope: line
+change: svo inverted from "the rushwick-pass holds at the provisioner-train" to "the provisioner-train holds the rushwick-pass"; provisioner-train is now the physical subject; rushwick-pass is the bare direct object (a physical procedure being resisted); holds license condition 2 met; PP eliminated; bone_shape held preserved; axes_held (political_register-prot, foreclosure-enactment rationale) unchanged; notes field updated to reflect inverted SVO
+criteria met: yes — SVO is PP-free; holds license condition 2 satisfied; bone_shape and axes_held substance preserved
+
+## fault-003 (s03n13) — RESOLVED — 2026-05-28T01:06:00Z
+fault: "the rushwick-pass holds at the courier-walk" — identical fault class to s03n11: banned PP "at the courier-walk" (FAULT-FORM-MODIFIER); "holds" outside narrow license (FAULT-FORM-NON-ACTION-VERB)
+scope: line
+change: svo inverted from "the rushwick-pass holds at the courier-walk" to "the courier-walk holds the rushwick-pass"; courier-walk (the courier's post-enforcement walk from s03n07) is now the physical subject; rushwick-pass is the bare direct object; holds license condition 2 met; PP eliminated; bone_shape held preserved; both axes_held entries (political_register-prot foreclosure-confirmed rationale + moral_legibility_to_self rationale) unchanged; notes field updated to reflect inverted SVO
+criteria met: yes — SVO is PP-free; holds license condition 2 satisfied; bone_shape and axes_held substance preserved
+
+## SESSION-END — 2026-05-28T01:06:00Z — write-b01c05-pass2-fault003-cycle3
+findings-applied: 2 (s03n11 SVO inverted; s03n13 SVO inverted)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-28T08:00:00Z — write-b01c05-bone-gate-final
+dispatch: Phase 6 bone-gate HARD resolutions on /and-write b01c05 — 8 HARD findings (fault-001 through fault-005); prior sessions already applied fault-001 recasts/removals, fault-002 modifier strips, fault-003 removal; remaining work: fault-004 (add capability axes_held to s02n01), fault-005 (add social_tether-prot-rise axes_held to s03n01), and event_map updates for removed bones s01n06, s01n09, s03n07
+target: active-project/staff/showrunner/b01c05-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c05-bone-gate.md
+findings-queued: 8 total; pre-verified 6 applied in prior sessions; 2 HARD axes_held additions + event_map corrections remaining
+
+## fault-001 — RESOLVED (pre-verified) — 2026-05-28T08:01:00Z
+fault: six "taylor maps X" perception-class bones with abstract objects (s01n06, s01n09, s02n02, s02n08, s02n11, s03n09); also s03n07 covered under fault-003
+scope: line
+change: pre-verified in bones draft — s01n06 removed (gap between n05 and n07); s01n09 removed (s01 ends at n08); s02n02 recast to "holds the wall-line"; s02n08 recast to "files the enforcement-record"; s02n11 recast to "adds the courier to the body-map"; s03n09 recast to "files the courier body-record"; all recasts applied in prior sessions (write-b01c05-pass2-hard-recasts); event_map updated this session for removed bones
+criteria met: yes — zero "maps" instances remain in bones draft; 4 recast bones present physical Taylor-body acts; 2 removed bones (n06, n09) have omission_rationale in event_map
+
+## fault-002 — RESOLVED (pre-verified) — 2026-05-28T08:02:00Z
+fault: three modifier violations — s02n03 "off the east exit" PP, s02n05 "against the stone" PP, s02n06 "effortful" adjective
+scope: line
+change: pre-verified in bones draft — s02n03 reads "the three figures enter the side-alley" (PP stripped); s02n05 reads "the three figures pin the courier" (PP stripped); s02n06 reads "the side-alley returns the sound" (adjective stripped); all three applied in prior session
+criteria met: yes — all three bones are bare SVO with no prepositional padding or adjectives
+
+## fault-003 — RESOLVED (pre-verified) — 2026-05-28T08:03:00Z
+fault: s03n07 "the courier-face surfaces in the rushwick replay" — dual fault: FAULT-FORM-INTERIORITY (memory-image arising) + FAULT-FORM-MODIFIER ("in the rushwick replay" PP)
+scope: line
+change: pre-verified in bones draft — s03n07 is absent (gap between s03n06 and s03n08); event_map entry "courier's post-enforcement walk" updated this session: bones[] set to empty, omission_rationale added citing fault-003 removal and downstream migration path
+criteria met: yes — interiority bone removed; cf-d10 thread confirmation remains at s03n09; event_map entry carries omission_rationale per dispatch
+
+## fault-004 — RESOLVED — 2026-05-28T08:04:00Z
+fault: s02 scene substance_delta.axes_held declares capability but no s02 bone witnesses it (HELD-AXIS-NOT-WITNESSED)
+scope: line
+change: added capability axes_held entry to s02n01 ("the courier enters the lane-mouth") with rationale: "feed coverage at Rushwick is maintenance from c04 four-ward expansion; no new range gain; coverage operates at established level"
+criteria met: yes — s02n01 now witnesses the capability held-axis with stillness-against-pressure rationale (maintenance-of-established-level, no new extension); s02 held-axis has a bone cite-anchor for downstream /and-facets capability texture
+
+## fault-005 — RESOLVED — 2026-05-28T08:05:00Z
+fault: s03 scene substance_delta.axes_held declares social_tether-prot-rise but no s03 bone witnesses it (HELD-AXIS-NOT-WITNESSED)
+scope: line
+change: added social_tether-prot-rise axes_held entry to s03n01 ("taylor-hebert-kl-122ac takes the room-floor") with rationale: "tether load-bearing in formation per c04 (Jarvis structural vector, Oswyn unknowing node); no new structural addition this scene; the evening review operates within the established tether-architecture without expanding it"
+criteria met: yes — s03n01 now witnesses the social_tether-prot-rise held-axis; tether-texture in the peak scene has a bone cite-anchor for downstream /and-facets authoring
+
+## SESSION-END — 2026-05-28T08:05:00Z — write-b01c05-bone-gate-final
+findings-applied: 8 (fault-001: 6 bones — 4 recast + 2 removed, pre-verified; fault-002: 3 modifier strips, pre-verified; fault-003: 1 bone removed, pre-verified; fault-004: capability axes_held added to s02n01; fault-005: social_tether-prot-rise axes_held added to s03n01; event_map updated for all removed bones)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-28T09:00:00Z — and-facets-b01c05-cycle2-remediation
+dispatch: /and-facets b01-c05 Phase 5b cycle-2 consolidated remediation — 4 facets touched (vibes:12-14 lic-out remap; narrator:2+:5 DELETE; memory carve-out preamble ADD; sensory:3 ADD); feeling left unchanged (advisory accept); cite-index regen required
+target: active-project/theater/facets/vibes.md, interest-narrator.md, memory.md, sensory.md, _cite-index.md
+audit-report: active-project/staff/audience/cape-fic-reader/audience-gate-cycle1-verdicts.md + dark-fantasy-reader/audience-gate-cycle1-verdicts.md + worm-canon-pedant/audience-gate-cycle1-verdicts.md; active-project/staff/auditor/facets-final-audit.md
+findings-queued: 4 (vibes EDIT; narrator DELETE×2; memory ADD-preamble; sensory ADD)
+
+## SESSION-START — 2026-05-28T10:00:00Z — and-facets-b01c05-cycle2-consolidated
+dispatch: /and-facets b01-c05 Phase 5b cycle-2 consolidated remediation pass — vibes:12-14 lic-out remap to state:13; narrator:2+:5 DELETE; memory carve-out preamble ADD; sensory:3 ADD @14; feeling.md left unchanged (per-scene cap blocks fix; advisory accepted); cite-index cascade update
+target: active-project/theater/facets/vibes.md (primary), active-project/theater/facets/interest-narrator.md, active-project/theater/facets/memory.md, active-project/theater/facets/sensory.md, active-project/theater/facets/_cite-index.md
+audit-report: active-project/staff/audience/cape-fic-reader/audience-gate-cycle1-verdicts.md + dark-fantasy-reader/audience-gate-cycle1-verdicts.md + worm-canon-pedant/audience-gate-cycle1-verdicts.md + active-project/staff/auditor/facets-final-audit.md
+findings-queued: 4 (vibes EDIT; narrator DELETE×2; memory ADD-preamble; sensory ADD)
+
+## feeling-advisory-accept — NO-CHANGE — 2026-05-28T10:22:00Z
+fault: dark-fantasy REVISE — feel:2 @29 isolated in foreclosure quartet; @28+@30 bare flanking
+scope: n/a
+change: none — per-scene cap ≤1 (HARD) blocks ADD in scene-C; asymmetry accepted as structurally defensible (trying-not-to-register dimension); feeling.md unchanged
+criteria met: yes — HARD cap documented; no criteria to meet (advisory accepted)
+
+## SESSION-END — 2026-05-28T10:25:00Z — and-facets-b01c05-cycle2-consolidated
+findings-applied: 4 (vibes lic-out remap; narrator:2+:5 DELETE with cascade; memory carve-out preamble ADD; sensory:3 ADD with cascade)
+findings-skipped: 0 (feeling advisory accepted — not a skip, correct disposition per per-scene cap HARD)
+exit: CLEAN
+
+## sensory-add — RESOLVED — 2026-05-28T10:20:00Z
+fault: dark-fantasy REVISE — sensory:2 @13 carries enforcement passage alone without body-correlate at recovery point; gap-instrument reads as atmosphere not cost-intelligence
+scope: line
+change: sensory.md: sensory:3 @14 added (tactile: alley-stone-against-spine -> body-upright-recovery); carve-out preamble extended; pre-validation A3 passed; proto-lines @14 gets [sensory:3]; cite-index: sensory 2→3 entries; @14 bare→1-cite; totals 59→60; 25→26 decorated
+criteria met: yes
+
+## memory-carve-out-preamble — RESOLVED — 2026-05-28T10:15:00Z
+fault: cape-fic REVISE mem:4+mem:3 read as redundant double-fire; auditor fault-028 carve-out doc absent from facet file
+scope: line
+change: memory.md: rubric-carve-out preamble added — documents condition-gate-single-register (cond-override silences Earth-Bet until c12) and @18-@27 escalation (cost-borne entry vs file-closing residue; open-entry vs closed-record); entry lines unchanged; no cite-index impact
+criteria met: yes
+
+## narrator-deletes — RESOLVED — 2026-05-28T10:10:00Z
+fault: narrator:2 @7 redundant symmetric-body discipline beat; narrator:5 @24 lonely bone-annotation (cape-fic + worm-canon REVISE on NI)
+scope: line
+change: interest-narrator.md: entries 2 and 5 deleted with canonical comments; proto-lines @7 and @24 stripped; cite-index: narrator section 10→8; co-lists loc-state:4/vibes:3/vibes:4 cleaned; density table updated; totals 61→59; @24 added to bare protolines
+criteria met: yes — density 32.3%→25.8%; no orphaning
+
+## vibes-lic-out-remap — RESOLVED — 2026-05-28T10:05:00Z
+fault: vibes:12, :13, :14 at @25 carried `feeling:2` in cite-index lic-out fields; feel:2 anchors @29 not @25; cross-anchor license broken at chapter peak (cape-fic + dark-fantasy REVISE)
+scope: line
+change: vibes.md: annotation comments added to vibes:12-14 confirming `state:13` as co-anchor (file already had state:13, not feeling:2 — cite-index was stale); _cite-index.md: vibes:12/13/14 lic-out updated — `feeling:2` replaced with `state:13`
+criteria met: yes

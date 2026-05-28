@@ -392,7 +392,7 @@ s02n01 — KEEP. "The waste-middens junction draws the discard-air." Sensory gro
 
 s02n02 — KEEP. "Taylor enters Pig Tallow Lane." Day-1, ward-1 entry. Covers the force tag: Taylor's systematic ward-reading applied to new ground. Same walk-and-read discipline as Hook triage — the extension is addition, not transformation. No PP. KEEP.
 
-s02n03 — KEEP. Moving bone: capability +1.0. "Taylor extends the insect-range." This is the critical bone for the range watch. The consolidated +1.0 covers both adjacent wards (day-1 coverage: Pig Tallow Lane + stitch-house street ward). The notes correctly specify "day-1 coverage: Pig Tallow Lane + stitch-house street ward, both within single extension range." The verb "extends" is the established capability-expansion verb from b01-c02 bone 11. No PP. Magnitude 1.0 consolidated (prior +0.5+0.5 splits eliminated per magnitude floor). Range check: both wards within single extension on a single walk — this is consistent with established Worm mechanics (Taylor's range at this capability rank can cover two adjacent wards in a single walking pass if she is physically present in the territory; no single broadcast from a fixed point). The coverage is built through physical movement along the ward lanes, not through a radius deployment from a stationary position. KEEP.
+s02n03 — KEEP. Moving bone: capability +1.0. "Taylor extends the insect-range." This is the critical bone for the range watch. The consolidated +1.0 covers both adjacent wards (day-1 coverage: Pig Tallow Lane + stitch-house street ward, both within single extension range). The notes correctly specify "day-1 coverage: Pig Tallow Lane + stitch-house street ward, both within single extension range." The verb "extends" is the established capability-expansion verb from b01-c02 bone 11. No PP. Magnitude 1.0 consolidated (prior +0.5+0.5 splits eliminated per magnitude floor). Range check: both wards within single extension on a single walk — this is consistent with established Worm mechanics (Taylor's range at this capability rank can cover two adjacent wards in a single walking pass if she is physically present in the territory; no single broadcast from a fixed point). The coverage is built through physical movement along the ward lanes, not through a radius deployment from a stationary position. KEEP.
 
 s02n04 — KEEP. Held: moral_legibility_to_self. "Taylor maps the junction-agitation." The read-without-naming enacts the legibility hold. "She does not stop to name what she is doing" — this is the canonical Taylor move when the accounting is continuous with prior practice: she extends the same methodology and does not mark the extension as a different kind of act. The legibility suppression is enacted as the continuing-without-naming, which is physically real. No PP. KEEP.
 
@@ -603,3 +603,136 @@ SUBSTANCE-SUSPECT: none
 soft_findings:
   - SOFT (carried forward): dialogue-file stale citation — Jarvis entry 9 annotated @n10 (prior draft numbering); redo has n10 as Taylor's exit bone; stale cross-reference only; content covered at bone level; carry to /and-review bones for cleanup; not a bone-gate block
   - SOFT (carried forward): b01c07 prose-burden soft finding — Halvard tether-gain will need prose support at write-time; carries forward unchanged
+
+---
+
+## b01c05 chunk review — 2026-05-28
+
+verdict_per_scene:
+  b01c05s01: SUBSTANCE-FELT
+  b01c05s02: SUBSTANCE-FELT
+  b01c05s03: SUBSTANCE-FELT
+chapter_goal_coverage:
+  feed_stops_being_neutral: LAND
+  color_arrives_before_naming: LAND
+  courier_face_planted: LAND
+overall: ACCEPT
+
+canonicity_adjudication:
+
+  evening_replay_mechanism (s03):
+    question: does the replay require Taylor to have missed the color in real-time, which would contradict her known multitask-parallel-stream processing?
+    verdict: CLEAN — the mechanism is not "Taylor failed to notice." The chunk is explicit: the categorization-discipline was ACTIVE during acquisition, holding the content at distance; the replay strips the real-time discipline's organizational frame (no action to take, no function being performed) and what remains is not flat. This is a mechanically distinct operation from real-time acquisition. Taylor's multitasking during the feed is categorization-while-routing — the color was arriving and the discipline was processing it as pattern-data simultaneously. The replay is not error-correction; it is what happens when the discipline's active-framing collapses because there is no operational context left to sustain it. In canon, Taylor does run feed reviews — she processes behavioral patterns across time to build models she cannot build in real-time because real-time is too crowded with action decisions. The evening replay is that procedure applied to affective texture rather than movement-pattern. This is not fudging the architecture; it is using the architecture correctly. "The neutrality was the discipline's performance, not the discipline's fact" is the exact right framing — the discipline was real, and it was also an active suppressive act. ACCEPT on mechanism.
+
+  Khepri_silence (all three scenes):
+    question: is the silence on Khepri correct — recognition deferred or suppressed — or should Taylor be flagging the rhyme?
+    verdict: CORRECT SILENCE — c05 is the opening of the political_register-prot account, not the Khepri-recognition threshold. The stm records show Khepri is suppressed first at c12, which is the threshold chapter for that word. c05's beat is the color arriving before Taylor names it; the feed's architecture accumulating resentment rather than data. Khepri is the comparison structure that illuminates the architecture, but Taylor reaches for that word when the architecture is far enough built that avoidance requires active work. At c05, the resentment is arriving; the architecture is still early-stage; Taylor is still successfully categorizing her own response as texture rather than naming it as something. The silence is earned: she does not have the word because she has not yet encountered the full shape. A Taylor who flags the Khepri rhyme at c05 is a Taylor with too much meta-awareness too early — that is a voice-register error, not a canon-correct moment. CORRECT SILENCE CONFIRMED.
+
+  courier_three_sightings (s02):
+    question: does three-sightings + enforcement-attached read as correctly calibrated Worm-narrator-pattern-recognition for a body that needs to be memorable enough to call back at d10?
+    verdict: CORRECTLY CALIBRATED — three sightings is the right threshold. Taylor in canon builds behavioral models from movement data before she assigns names or significance. The three-observation filing (recurring body, probable Rushwick-resident, no anomaly) is exactly her categorization pattern for a body she has no reason to investigate yet. The enforcement incident is what converts the filing from operational texture to a thread — the body now has an attached event, which gives the face a shape in her memory. The chunk's handling of the enforcement read through the feed (approach geometry, exit-at-walk-not-run) is mechanically precise and canon-correct for how Taylor distinguishes threat-classes. "The content has named itself as faction-violence in a way Hook content never did" is the correct characterization of why this body gets logged differently. The one concern at write-time: the chunk specifies "cf-d10-courier-face thread initiated — courier body flagged as recurring, three observations now logged; enforcement incident attached to the filing" — this needs to be enacted in the bones as a distinct logging-event bone, not just as a chapter-close assertion. If the bones collapse the three-observation + enforcement-incident into a single "Taylor notes the courier" bone, the architectural distinctness of the threading is lost. The face needs a physical enactment in the bones — the body remembered by its gait-signature, the enforcement read by the geometry, the filing as two distinct acts. Soft watch for /and-write.
+
+notes:
+  - s01: the "different substrate, same method" framing for court-tier content is the correct c05 opening move. Taylor does not have sudden opinions; she has accumulations. The categorization-layer engaged without affect is the right held posture before resentment arrives. Earth-Bet fence: functional descriptive language throughout ("feed," "compound eyes," "categorization-register"). No Khepri reference. No Gold Morning. No jargon. CLEAN.
+  - s02: the enforcement-read mechanics (approach geometry, exit gait) are within established insect-feed capability — Taylor has always read behavioral patterns through the feed; distinguishing enforcement from robbery by coordination-geometry is the same capacity she used to map Coil's distribution network. The moral_framework held correctly: routing enforcement as pattern-data is inside the licensed exception; the rationalization is running, not interrogated. "This is what the feed reads. It is what the feed reads." — the echo is the rationalization performing itself, which is canonically correct.
+  - s03: the political_register-prot +1.5 opening at s03 earns its delta against cl-d05. The cost is the permanent foreclosure of neutral-instrumentally-observant for all future court-tier content — that is a real and irreversible cost, not a bookkeeping entry. The axis-opening as an evening event rather than a real-time event passes the mechanism test. The cl-d05 ledger entry ("resentment becomes the permanent register of court observation; neutral-instrumentally-observant is foreclosed from d05 forward") is anchored correctly to this chapter.
+  - moral_legibility_to_self held correctly: the filing-as-texture IS Taylor not opening the recognition; she categorizes her response with the same factual-register she applies to the feed. This is the correct held posture — the recognition is filed, not examined. The distinction between noticing and opening is canonically real and the chunk honors it.
+
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+soft_findings:
+  - s02 courier-face threading: the three-observation + enforcement-incident filing needs to be enacted as a distinct logging-event bone at /and-write, not as a single "Taylor notes the courier" assertion; the body must be remembered by its gait-signature (heel-first), the enforcement read by approach geometry, and the filing executed as two distinct acts (recurring-body update + enforcement-incident-attached); if these collapse to one bone, the d10 callability is at risk
+  - SOFT (carried forward): dialogue-file stale citation — Jarvis entry 9 @n10 stale cross-reference; carry to /and-review bones
+  - SOFT (carried forward): b01c07 prose-burden finding — Halvard tether-gain prose burden; carries forward to b01c07 /and-write
+
+## b01c05 trim pass — 2026-05-28
+
+### Standing watches resolved at bone level
+
+Soft watch carried from chunk review: courier gait-signature (s02n02) + approach-geometry read (s02n04) + filing (s02n08) must be structurally distinct bones, not collapsed to a single logging assertion.
+
+RESOLVED. All three are present as distinct bones with distinct cognitive operations: n02 is the recurring-body recognition by gait (the identification event), n04 is the enforcement geometry read (blocking-of-exits, coordination, controlled-containment — the categorization event), n08 is the filing into Jarvis report format (the output event). Three genuinely different operations at three different points in the s02 sequence. The cf-d10 thread callability is architecturally intact. WATCH RESOLVED.
+
+Evening replay mechanism (s03 n10-n13): verify genuine cognitive work distinct from real-time acquisition.
+
+CONFIRMED. The four-bone try-flat-read sequence (n10: first attempt; n11: provisioner-train holds the pass, first failure; n12: second attempt; n13: courier-walk holds the pass, second failure) enacts the foreclosure as something Taylor actively tests and cannot override. Two distinct content-anchors (provisioner-train at n11; courier-walk at n13) hold the pass on separate attempts — the foreclosure is structural, not episodic. The replay is doing work the real-time acquisition cannot: stripping the discipline's organizational frame and exposing what was accumulating underneath it. The parallel structure (n10+n11 = attempt+fail; n12+n13 = attempt+fail) confirms the permanence of the axis-opening without Taylor naming it as permanent. Canon-mechanically correct.
+
+---
+
+### bone-by-bone
+
+s01n01: KEEP - Rushwick spatial anchor; "meets" is the transitive contact verb; grounding bone for the ward's physical character before any court-tier body enters the feed; no redundancy
+s01n02: KEEP - Taylor enters Rushwick; coverage extension event begins; no range concern; distinct from n03 (entry vs. coverage fill)
+s01n03: KEEP - feed fills the junction; coverage completion; first court-tier content enters the feed; distinct from n02
+s01n04: KEEP - provisioner-train first crossing; court-tier body arrives in the feed at real-time acquisition; seeds the replay contrast at s03n05; load-bearing for the chapter goal
+s01n05: KEEP - train takes east-lane; distinct from n04 (crossing vs. departure into east-lane); recast from perception-surrogate per fault-001 notes; correct form
+s01n06: KEEP - Taylor maps provisioner-train interval; neutral-instrumental discipline at first exposure enacted as the same mapping she performs on Hook bodies; discipline-visible-via-same-method
+s01n07: KEEP - message-runner crosses junction; second court-tier body; institutional errand-gait; feeds the gait-class categorization in n09; not redundant with n09 (arrival vs. filing)
+s01n08: KEEP - message-runner takes lane-mouth; feed releases the runner at coverage edge; capability held, no extension; discipline's restraint at coverage boundary; distinct from n07
+s01n09: KEEP - Taylor maps message-runner gait-class; novel-weight present in naming-work demanded; files without qualification; distinct from n07 (arrival) and n08 (exit); closes scene as categorization act
+
+s02n01: KEEP - courier enters lane-mouth; third sighting grounding bone; feed-acquisition semantics; distinct from n02 (entry vs. gait-recognition mapping)
+s02n02: KEEP - Taylor maps courier gait-signature; worm-canon SOFT-WATCH bone 1 of 3 RESOLVED — structurally distinct recognition-by-gait event; heel-first, ward-uneven-paving repetition; not collapsed into n08
+s02n03: KEEP - three figures enter side-alley; enforcement geometry enters feed; grounding bone for incident; distinct from n04 (entry vs. alley-mouth closing)
+s02n04: KEEP - three figures close alley-mouth; worm-canon SOFT-WATCH bone 2 of 3 RESOLVED — structurally distinct enforcement-geometry read; blocking, coordination, controlled containment; approach-geometry as categorization class distinct from robbery
+s02n05: KEEP - courier pinned against stone; stakes bone; controlled containment enacted; moral_framework held as discipline absorbs faction-violence content; not redundant with n04 (read vs. physical enactment)
+s02n06: KEEP - side-alley returns effortful sound; dark-fantasy gap-instrument bone; the feed's blind-spot; content the categorization frame has no field for; load-bearing for the gap-between-world-and-feed that the chapter requires
+s02n07: KEEP - courier finds the feet; feed re-categorizes; gap collapses to feed's data-frame; "brief contact, courier retained on feet"; physically anchors the courier-face-surfaces-in-replay beat at s03n07; not redundant with n06 (gap vs. recategorization)
+s02n08: KEEP - Taylor maps enforcement approach-geometry; worm-canon SOFT-WATCH bone 3 of 3 RESOLVED — structurally distinct filing event; approach-geometry into Jarvis-report format; movement-pattern, body-count, approach geometry, duration; distinct from n02 (gait-recognition) and n04 (categorization-of-approach)
+s02n09: KEEP - Taylor delivers enforcement report-entry; factual routing discipline enacted as report delivery; distinct from n08 (mapping vs. delivery)
+s02n10: KEEP - three figures exit alley-mouth; purposive, unhurried departure walk; work-complete-gait; opposing force withdraws; load-bearing contrast to robbery (no post-contact scatter, no run); distinct from n04 (blocking vs. departure)
+s02n11: KEEP - Taylor maps courier body-filing; cf-d10 thread initiated; recurring body, three observations, enforcement incident attached; distinct from n02 (recurring-body gait-recognition) and n08 (enforcement-geometry filing) — this is the thread-initiation bone that combines the prior observations into a single body-record
+s02n12: KEEP - courier takes junction-corner; feed releases; incident closed in operational record; post-incident continuation on original heading; physically anchors "performing normalcy" image that surfaces in s03n07 replay
+
+s03n01: KEEP - Taylor takes room-floor; grounding bone for evening review; distinct from n02 (settling vs. running Hook feed)
+s03n02: KEEP - Taylor runs Hook-feed; evening review established as operational procedure; sets up the contrast with Rushwick; not redundant with n03 (running vs. resolution)
+s03n03: KEEP - Hook-feed resolves; try-flat-read sequence baseline bone; establishes what resolution looks like; load-bearing contrast for the Rushwick's failure to resolve — without this bone, n11 and n13 have no successful-case baseline to fail against
+s03n04: KEEP - Taylor runs Rushwick-feed; flat-document read initiated on Rushwick; evening replay strips real-time categorization discipline; distinct from n02 (Hook run vs. Rushwick run)
+s03n05: KEEP - provisioner-train re-crosses junction; replay-crossing distinct from s01n04 real-time crossing via "re-" prefix; the color arrives without discipline's frame; try-flat-read sequence bone 2; load-bearing for the chapter goal ("color arrives before Taylor names it")
+s03n06: KEEP - Taylor stops Rushwick-pass; THE axis-move bone, +1.5 political_register-prot, cl-d05; stopping IS the recognition event; cessation as physical anchor; irreplaceable
+s03n07: KEEP - courier-face surfaces in Rushwick replay; post-enforcement walk arrives as perceptual image; courier in body-map; distinct from n09 (face arriving vs. body-record mapped); anchors the "performing normalcy" image from s02n12
+s03n08: KEEP - Taylor closes evening review; moral_framework hold enacted as physical end-act; filing-as-texture protagonist_force; distinct from n06 (stopping vs. closing); the review ends here before the try-flat-read sequence re-run
+s03n09: KEEP - Taylor maps courier body-record; cf-d10 thread confirmed open; recurring body with enforcement-incident attached; distinct from n07 (face arriving in replay vs. operational body-record mapped)
+s03n10: KEEP - Taylor runs Rushwick flat-read; foreclosure enactment bone 1; first try-flat-read re-run attempt; distinct from n04 (initial run vs. re-run attempt after recognition)
+s03n11: KEEP - provisioner-train holds Rushwick-pass; foreclosure enactment bone 2; first attempt fails; read does not return as information; SVO inverted per fault-003 correction; load-bearing for foreclosure as enacted capability-failure not as labeled conclusion
+s03n12: KEEP - Taylor runs Rushwick flat-read; foreclosure enactment bone 3; second attempt; repetition is the enactment of foreclosure being confirmed not just encountered; parallel structure to n10
+s03n13: KEEP - courier-walk holds Rushwick-pass; foreclosure enactment bone 4; second failure; distinct anchor from n11 (provisioner-train vs. courier-walk); same result; parallel structure to n11; foreclosure confirmed; cl-d05 firmly anchored; chapter close
+
+### file-level verdict
+ACCEPT - all three worm-canon SOFT-WATCH bones structurally distinct and load-bearing; evening replay enacts genuine cognitive work in four-bone foreclosure sequence; Earth-Bet fence clean across all 34 SVOs; Khepri silence correct for c05 stage; no bones propose deletion
+
+carry_forward:
+  - SOFT (carried forward): dialogue-file stale citation — Jarvis entry 9 @n10; carry to /and-review bones; not a bone-level concern
+  - SOFT (carried forward): b01c07 prose-burden — Halvard tether-gain; carries to b01c07 /and-write
+
+## b01c05 bone-gate — 2026-05-28
+
+---
+reviewer: worm-canon-pedant
+chapter: b01c05
+phase: write-bone-gate
+date: 2026-05-28
+scenes_reviewed: [b01c05s01, b01c05s02, b01c05s03]
+---
+
+## scene b01c05s01
+verdict: SUBSTANCE-FELT
+Nine bones, zero axis moves, political_register-prot and capability held throughout. The multi-stream-parallel-narrator watch for s01 was whether the accumulation across 9 bones reads as genuine feed-processing across multiple body-types or as sequential events Taylor merely notices. It reads as genuine processing: the provisioner-train is handled in n04-n06 (arrival, east-lane exit, interval mapped), the message-runner is handled in n07-n09 (crossing, lane-mouth exit, gait-class filed), and the two bodies are treated by the same method with the same neutral-instrumental discipline — "different substrate, same method" is enacted in the bone structure, not asserted. The multi-body coverage is present at bone level across distinct event sequences, not collapsed to a single observation bone. The parallel treatment (each body entering the feed, exiting coverage, getting filed) is the correct form for Taylor's feed processing at this stage: rote categorization, no color. The court-tier content's novel weight — the opposing force — is present only in the specificity demanded by the categorization work (n06, n09), not as a labeled recognition. The discipline holds because Taylor does not register the strain; the reader sees the strain in the volume of filing work. No axis moves, which is correct per the substance contract (s01 is setup for the s03 payoff; the held posture is load-bearing for the contrast). Earth-Bet fence: all SVOs use functional descriptive language; no parahuman jargon. Khepri silence correct — coverage extension into Rushwick is maintenance, not new architecture. SUBSTANCE-FELT.
+
+## scene b01c05s02
+verdict: SUBSTANCE-FELT
+The courier-3-distinct-bones soft watch lands cleanly. n02 (gait-signature recognition), n04 (approach-geometry read — three figures closing, alley-mouth sealed, enforcement vs. robbery categorization), and n08 (filing into Jarvis report format — movement-pattern, body-count, approach geometry, duration) are three structurally distinct cognitive operations at three distinct points in the s02 sequence. They are not redundant: n02 is the identification event (recurring body, same heel-first gait, this is a body I have seen); n04 is the categorization event (this approach geometry means enforcement, not robbery — a new class of content the feed has not processed before); n08 is the output event (this goes to Jarvis as movement-pattern, factual routing). The distinction between the three is the distinction between recognizing, reading, and reporting — three phases of Taylor's intelligence-processing that are canonically distinct in Worm. The cf-d10 plant is callable at d10 because the courier has a specific gait-signature, an attached enforcement-incident, and a body-record with three observations — the face will be recognizable when it recurs because the filing has given it a shape. The dark-fantasy gap instrument at n06 (effortful sound the feed has no field for) is the chapter's most precise canonicity test: Taylor's feed does not capture subjective suffering; it captures physical data; the sound a body makes trying not to make sound is below the feed's resolution. The gap is correctly named as a gap in the feed's data-frame, not as a Taylor failure to perceive. n07 (courier finds the feet, feed re-categorizes) correctly closes the gap into the feed's available categories. The moral_framework hold throughout is the rationalization running: routing enforcement as pattern-data is inside the licensed exception; "this is what the feed reads" runs twice in the chunk text as the rationalization's self-echo, which is canonical. No SUBSTANCE-FLAT. No SUBSTANCE-SUSPECT. SUBSTANCE-FELT.
+
+## scene b01c05s03
+verdict: SUBSTANCE-FELT
+The evening replay mechanism passes the multi-stream-parallel-narrator test. The concern was whether the replay — Taylor noticing color she did not notice in real-time — contradicts her known parallel-processing capacity. It does not. The bones enact the specific mechanism that makes this canon-compatible: the replay strips the real-time categorization discipline's active frame (s03n04: Taylor runs the Rushwick-feed; s03n05: provisioner-train re-crosses the junction — the re-prefix marks replay context; s03n06: Taylor stops the Rushwick-pass, the +1.5 axis-move bone). What Taylor's parallel processing does in real-time is categorize-while-routing, holding the content inside the discipline's organizational frame. The evening replay has no routing function, no action to take, no report to produce — the discipline's active frame cannot sustain itself without a function to perform. The color that was arriving during acquisition was being processed as pattern-data by the discipline; in replay, without the frame, it is not. This is not Taylor failing to notice during acquisition; it is the discipline's holding-function collapsing when its operational context is removed. The multi-stream parallel processing is operating correctly in both acquisition (categorization-while-routing) and replay (categorization-without-routing produces a different output). Mechanically sound and canon-consistent.
+
+The foreclosure enacted at n10-n13 is the bone-gate's central canonicity test for this scene: does it honor the capability-failure beat as distinct cognitive work, or does it abstract over the specifics? It honors it. The four-bone sequence (n10: first attempt; n11: provisioner-train holds the pass — physical subject resisting a physical procedure, first fail; n12: second attempt; n13: courier-walk holds the pass — distinct content-anchor, second fail) enacts the foreclosure as a tested-and-confirmed capability-failure, not as a labeled conclusion. Taylor does not name the foreclosure as foreclosure; she runs the pass twice and gets the same result. The parallel structure (attempt+fail, attempt+fail) is the mechanism of the canon-Taylor capability-failure beat: she tests, the test fails, the failing is the event. The two distinct content-anchors (provisioner-train at n11, courier-walk at n13) make the foreclosure structural rather than episodic — the neutral read is not available for this class of content, demonstrated across two separate content instances in two separate attempts. The cl-d05 anchor at n06 and confirmed at n13 is correctly placed: the axis opens at the stopping-of-the-pass (n06) and is confirmed-permanent at the second failure (n13). Khepri silence at d05 is correct throughout: no Khepri reference in any bone; the courier body-filing at n09 is operational texture, not a named rhyme; the foreclosure is enacted as what it is (capability-failure) not as what it means (Khepri-architecture in formation). SUBSTANCE-FELT.
+
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+soft_findings:
+  - SOFT (carried forward): dialogue-file stale citation — Jarvis entry 9 @n10; carry to /and-review bones; not a bone-gate block
+  - SOFT (carried forward): b01c07 prose-burden — Halvard tether-gain; carries to b01c07 /and-write
