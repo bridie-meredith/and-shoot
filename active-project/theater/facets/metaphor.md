@@ -2,6 +2,8 @@ facet: metaphor
 episode: b01c05
 author: editor
 r1-date: 2026-05-28
+r2-date: 2026-05-28
+r2-cite-index-hash: 09f0e4c9df744eb5
 ---
 
 # rubric-carve-out — none
@@ -10,151 +12,196 @@ r1-date: 2026-05-28
 # Zero-fires is valid per refuse-by-default doctrine (rubric-metaphor.md § sparsity:
 # "zero-fires-per-episode acceptable").
 
-# REFUSAL LOG — b01c05 R1
+# REFUSAL LOG — b01c05 R1 (sustained through R2 with updated fault stacks)
 #
 # Rubric authority: design/shoot-v2/rubric-metaphor.md (V1, LOCKED 2026-05-07)
+# R2 locked-rubric authority: design/shoot-v2/r2-judge-tuning/B-locked-rubric.md
 # Scene-map authority: active-project/theater/facets/scene-map-b01-c05.md
+# Cite-index hash: 09f0e4c9df744eb5
 # Peak-bone substitute for tens under URI-SUBSTANCE-OVERHAUL:
 #   scene-map `peak-bones` field maps to tens=3 equivalent for AP7 application.
-# Upstream anchor files (interest-narrator.md, memory.md, feeling.md) not yet locked at R1;
-# provisional anchor reasoning applied per task authorization.
+# Upstream anchor files locked at R2:
+#   memory.md (mem:1 @1, mem:2 @15, mem:3 @27)
+#   feeling.md (feel:1 @13 — sole entry; no feel:2 exists in locked file)
+#   interest-narrator.md (NI:1-7)
+#
+# NOTE on feel:2 forward-reference: vibes:12-14 carry `feeling:2` in their lic-out
+# fields. This entry does not exist in the locked feeling.md (which has feel:1 @13
+# only). The lic-out reference is unresolved. @25 remains anchor-dark for feeling.
 #
 # Hinge-magnitude band: only @25 qualifies (+1.5 political_register-prot, cl-d05).
-# All other bones are held at 0 axis-magnitude — AP7 extended default-refuse applies
-# per task framing ("default-refuse for bones outside hinge-magnitude band").
+# All other bones held at 0 axis-magnitude — AP7 extended default-refuse applies.
 #
 #
 # ── @25 (scene-C peak-bone; +1.5 political_register-prot; "taylor stops rushwick-pass") ──
-#   This is the sole hinge-magnitude bone and the scene-C peak-bone.
-#   AP7: peak-bone maps to tens=3 equivalent; default-refuse.
+#   R2 re-evaluation against locked graph: narrator:6, state:6, state:13,
+#   vibes:12-15 are all locked at @25. No memory or feeling anchor co-locates.
 #
-#   Dark-humor-deflation exception examined (the only AP7 escape route):
-#   The recognition-cessation at @25 enacts the +1.5 axis-move as a body-act — stopping the
-#   replay IS the recognition. A dark-humor figure would need to deflate this rupture with
-#   sardonic irony via an explicit comparator (Reading A: simile / predicative metaphor /
-#   allegory). The available figures:
-#     (a) "the document won't close" — already rendered directly in @28-@31 prose
-#         ("It does not resolve"; "She runs it again. The same."). AP2: figurative move
-#         already in proto-line.
-#     (b) "the pass is a door that won't open" — foreclosure-door figure. AP2 again:
-#         the scene-map glosses the foreclosure quartet as "door does not open when turned,
-#         twice"; the structural figure is already the prose architecture, not an additive
-#         metaphor. Any explicit comparator entry doubles without adding meaning.
-#   Additionally: no memory or feeling anchor available at @25 in R1 pass. AP1 compounds
-#   the refusal if the AP7 exception were otherwise cleared.
-#   REFUSE — AP7 (peak-zone, primary); AP2 (double-carry, secondary); AP1 (no anchor, tertiary).
+#   AP1 (unlicensed novel figuration): the mandatory anchor {memory, feeling} is absent.
+#   mem:1 is @1, mem:2 is @15, mem:3 is @27. feel:1 is @13 — the sole feeling entry.
+#   NI:6, state:6/13, and vibes:12-15 do not satisfy the mandatory anchor requirement.
+#   The rubric's anchor requirement is memory OR feeling; NI and state and vibes are
+#   supporting layers only, not substitutes for the anchor. AP1 sustained.
+#
+#   AP7 (peak-zone): @25 is the scene-C peak-bone. Default-refuse.
+#   Dark-humor-deflation exception examined: the recognition-cessation at @25 IS the
+#   rupture (the axis-move is carried by the body-act of stopping). A dark-humor figure
+#   must deflate the rupture — but @25 is not a deflation point; it is the rupture
+#   itself. Deflation would require the figure to invert or make-sardonic the
+#   recognition that just landed. NI:6 already carries that register ("the ledger has
+#   priced the continuing and declined; the refusal arrived ahead of her reaching for
+#   it"). A dark-humor metaphor at @25 would double NI:6's figurative content (AP3-
+#   analog). The exception does not open.
+#
+#   AP2 (figurative-already-in-proto-line): scene-C chunk prose renders "flat, like a
+#   document she has already processed" and "the information completing itself as
+#   information" in the surrounding register. Any explicit comparator at @25 compounds
+#   figures already in the proto-line register.
+#
+#   REFUSE — AP1 (no anchor, primary); AP7 (peak-zone, no exception-opening, secondary);
+#   AP2 (double-carry, tertiary). R1 refusal confirmed.
 #
 #
 # ── @13 (scene-B peak-bone; "the side-alley returns the sound"; gap-instrument) ──
-#   Scene-B peak-bone: peak-zone. AP7 default-refuse.
+#   R2 re-evaluation against locked graph: feel:1 @13 IS locked. AP1 is cleared —
+#   a feeling anchor now exists at this bone.
 #
-#   Dark-humor-deflation exception examined:
-#   The gap-instrument beat is the chapter's second peak — the feed's categorical failure to
-#   hold the sound. Candidate dark-humor figure: "the feed logs what the alley returns; the
-#   alley returns what the feed cannot log." No explicit comparator in this figure — it is a
-#   tautological restatement, not a simile or predicative metaphor. Falls outside Reading A
-#   scope (no `is`, `like`, `as if`, `becomes`, no structural correspondence operator).
+#   AP7 (peak-zone): @13 is the scene-B peak-bone. Default-refuse applies.
+#   Dark-humor-deflation exception examined: feel:1 reads "she stops walking one beat
+#   at the ward's far end | expressed: no." The somatic-tell is present. The exception
+#   requires a dark-humor figure that deflates the rupture via an explicit comparator
+#   (Reading A: simile / predicative metaphor / allegory).
 #
-#   Reading A test independently: "the feed has no field for that" is figurative compression
-#   without comparator — Reading B (environmental-agency idiom already in proto-line register).
-#   Out of scope for the metaphor facet.
+#   Reading A test: what figure survives the explicit-comparator requirement?
+#   Candidate: "the feed logs what the alley returns; the alley returns what the feed
+#   cannot log." — tautological loop; no comparator operator. Reading B idiom; out of
+#   Reading A scope. No surviving candidate with `is`/`like`/`as if`/`becomes` or
+#   structural correspondence operator.
 #
-#   AP1 compounds: no memory or feeling anchor available at @13. The beat is a world-event
-#   (the alley returns the sound); Taylor is observer-only; no feeling flag is eligible for
-#   Taylor here; no prior-monument memory callback is triggered by an alley sound.
-#   REFUSE — AP7 (peak-zone, primary); out-of-Reading-A-scope (secondary); AP1 (tertiary).
+#   AP3 (figurative-already-in-NI): NI:3 reads "the feed has no field for the sound;
+#   she has heard that kind of gap in other rooms she has not catalogued." The gap-
+#   register — the feed's categorical failure — is already the NI's figurative content.
+#   Any dark-humor metaphor in the gap-instrument register doubles NI:3. This is a new
+#   fault from the locked graph; it was not available at R1.
+#
+#   Anchor (AP1): cleared by feel:1 at @13.
+#   Form (Reading A): no candidate survives. All available figures are Reading B idiom.
+#   AP7: sustained; exception does not open (no Reading A candidate; would double NI:3).
+#   AP3: new secondary fault from locked NI.
+#
+#   REFUSE — AP7 (peak-zone, exception requires Reading A candidate, none available;
+#   primary); out-of-Reading-A-scope (no surviving explicit comparator, secondary);
+#   AP3 (NI:3 already carries gap-register figuratively, tertiary; new from locked graph).
+#   AP1 is CLEARED by feel:1 at @13 — this fault is RETRACTED.
 #
 #
-# ── @22 (scene-C peak-shadow-bone; "the Hook-feed resolves"; Hook baseline) ──
-#   Not an AP7 peak-bone (shadow-peak classification only). AP7 does not apply.
-#   No axis-magnitude: 0. In hinge-magnitude band? No. Extended default-refuse applies.
+# ── @22 (scene-C bare bone; "the Hook-feed resolves") ──
+#   R2 re-evaluation: cite-index confirms @22 is a bare protoline (0 citations).
+#   No memory, no feeling, no NI fires here. The locked graph adds nothing at @22.
 #
-#   Candidate examined anyway for completeness (task framing names @22 explicitly):
-#   "Resolves" as document-completion is compressed verb-metaphor without explicit comparator —
-#   no identity claim (`is`/`becomes`), no simile operator (`like`/`as`/`as if`), no structural
-#   correspondence operator. Reading B (figurative-compression verb already in proto-line);
-#   out of Reading A scope.
+#   AP1 (no anchor): fully sustained. Not cleared by R2.
+#   Out-of-Reading-A-scope: "resolves" is figurative-compression verb without explicit
+#   comparator — Reading B; out of scope.
+#   AP2: scene-C chunk prose renders explicit comparisons in the surrounding register
+#   at this beat already.
+#   Extended default-refuse (0 axis-magnitude, outside hinge-magnitude band): applies.
 #
-#   AP2 also applies: the scene-C chunk prose explicitly carries "flat, like a document she has
-#   already processed" and "the information completing itself as information" at this beat.
-#   Both phrases are explicit comparisons already rendered. A metaphor entry at @22 would be
-#   doubling comparisons the chunk already contains.
+#   REFUSE — outside hinge-magnitude band (primary); AP1 (no anchor, secondary);
+#   out-of-Reading-A-scope (tertiary); AP2 (chunk prose already figurative, quaternary).
+#   R1 refusal confirmed. Graph adds no new licensing.
 #
-#   AP1 compounds: no memory or feeling anchor available at @22.
-#   REFUSE — outside hinge-magnitude band (primary); out-of-Reading-A-scope (secondary);
-#   AP2 (chunk prose already figurative, tertiary); AP1 (no anchor, quaternary).
+#
+# ── @27 (cf-d10 thread; mem:3 now locked; "taylor files the courier body-record") ──
+#   R2 re-evaluation against locked graph: mem:3 IS locked at @27. AP1 is cleared.
+#   AP7 does not apply — @27 is not a peak-bone (peak is @25). This is the first bone
+#   in the chapter where AP1 clears AND AP7 does not apply.
+#
+#   Functional-register assessment: mem:3 reads "a face goes into the file under a name
+#   she has not asked for and the file closes around it." The target is
+#   cond-override-architecture-residue-122ac. This is callback register — legitimate.
+#
+#   AP4 (figurative-already-in-memory): mem:3 itself deploys the figure. "The file closes
+#   around it" is a structural identity claim — the file as enclosing entity absorbing the
+#   face without consent. That IS the comparison a metaphor at @27 would render. A
+#   metaphor entry here would restate the figure mem:3 already carries in its target-
+#   reference field. Q1 test: does the metaphor add what proto-line + cited facets don't
+#   already convey? No — mem:3 already holds the closing-around figure; a metaphor entry
+#   reaches for the same shape. AP4 fires.
+#
+#   G5 (position-gate): @27 is a post-peak archival/filing beat. Scene-C has delivered
+#   its axis-move at @25; @27 is the consequent filing action. The B2a failure mode
+#   (per B-locked-rubric.md § G5 special case) is "paired closes in archival register at
+#   episode-end." Narrator:7 already closes in the "keeping of faces in this kind of file
+#   is a thing she has done before" register — archival confirmation. A metaphor at @27
+#   compounds the archival closure rather than holding the peak-consequence live. G5
+#   position pressure argues against the add even where content licensing clears.
+#
+#   AP3 (NI:7): NI:7 reads "the face files into the body-record alongside the others;
+#   the keeping of faces in this kind of file is a thing she has done before, and the
+#   doing-before files alongside." "The doing-before files alongside" is figurative
+#   compression in the NI register. A callback metaphor at @27 would compound this
+#   content.
+#
+#   AP1: CLEARED by mem:3 at @27.
+#   AP7: not applicable — @27 is not peak-bone.
+#   AP4: fires — mem:3 carries the closing-around figure the metaphor would reach for.
+#   G5: files in post-peak archival position; paired-archive failure mode risk.
+#   AP3: NI:7 carries figurative compression in the same register.
+#
+#   REFUSE — AP4 (Q1 negative; mem:3 already holds the figure, primary); G5 (post-peak
+#   archival position; add would compound closure rather than hold consequence live,
+#   secondary); AP3 (NI:7 carries the doing-before register figuratively, tertiary).
+#   AP1 is CLEARED. R1 refusal sustained on different fault stack.
 #
 #
 # ── @29 and @31 (scene-C shadow-peaks; foreclosure quartet) ──
-#   Not AP7 peak-bones. Per-scene cap allows ≤1 across scene-C (cap not consumed by @25
-#   refusal above). 0 axis-magnitude; outside hinge-magnitude band; extended default-refuse.
+#   R2 re-evaluation: vibes:17-18 are locked at @31. No memory or feeling anchor at
+#   @29 or @31. The locked graph adds vibes co-presence at @31 but no anchor-layer
+#   licensing.
 #
-#   Allegory candidate examined (@31 specifically — the courier-walk as foreclosure irony):
-#   The courier's post-enforcement walk forecloses the neutral read. Dark irony: the person
-#   who was roughed up is the embodiment that won't let Taylor read neutrally. Structurally
-#   potent. However:
+#   AP1 (no anchor): fully sustained for both bones. vibes:17-18 do not satisfy the
+#   mandatory {memory, feeling} requirement.
 #
-#   AP2: the chunk prose already enacts the foreclosure through direct negation-repetition
-#   ("The neutral read is not available to her for this content anymore"; "She runs it again.
-#   The same."). The repetition-as-foreclosure IS the structural figure. An explicit allegory
-#   on top adds ornamentation without meaning — Q1 fails.
+#   AP2: the foreclosure-repetition structure ("She runs it again. The same.") is
+#   already the prose architecture at this beat. The repetition-as-foreclosure IS the
+#   structural figure.
 #
-#   AP5 boundary risk: a door-figure or foreclosure-figure at @31 maps to Earth-Bet structural
-#   register (isolation / exclusion / the locker mechanism of being locked out of a prior
-#   mental state). Per rubric, AP5 is a label-fence not a figure-fence — doubled-register
-#   mechanism is the intended use — BUT it requires a locked memory-flag anchor to license the
-#   doubled-register. At R1, memory.md is not yet authored; the provisional anchor does not
-#   resolve the AP5 risk to auditor satisfaction.
+#   AP5 boundary risk: a door-figure or foreclosure-figure maps to Earth-Bet structural
+#   register (isolation / exclusion / the locker mechanism). AP5 requires a locked
+#   memory-flag anchor to license the doubled-register; no memory flag exists at @29
+#   or @31.
 #
-#   Anchor (AP1): intra-chapter same-day memory (courier observed this afternoon) does not
-#   qualify as prior-monument callback. No feeling flag available for Taylor at @31 in this
-#   interior-perceptual, dialogue-free chapter.
-#   REFUSE — outside hinge-magnitude band (primary); AP2 / Q1 negative (secondary);
-#   AP5 boundary risk (tertiary); AP1 no qualifying anchor (quaternary).
+#   REFUSE — AP1 (no anchor, primary); AP2 / Q1 negative (secondary); AP5 boundary
+#   risk (tertiary). R1 refusal confirmed.
 #
 #
-# ── @1–@7 (scene-A; 0 axis-magnitude; held-scene) ──
-#   0 axis-magnitude; outside hinge-magnitude band; extended default-refuse.
-#   No memory or feeling anchors expected in held-scene first-exposure content.
-#   Any comparison would be AP1 + AP9 (painting-characterization, no callback).
-#   REFUSE — outside hinge-magnitude band.
+# ── @1–@7, @8–@12, @14–@19, @23–@24, @26, @28–@30 ──
+#   R2 adds no new licensing at any of these bones. Memory anchors at @1, @15, @27
+#   only. Feeling anchor at @13 only. All non-candidate bones remain outside hinge-
+#   magnitude band with no {memory, feeling} co-presence. Extended default-refuse
+#   applied and confirmed.
 #
 #
-# ── @8–@12, @14–@19 (scene-B non-peak; 0 axis-magnitude; held-scene) ──
-#   0 axis-magnitude; outside hinge-magnitude band; extended default-refuse.
-#   Factual routing bones. Functional-register pathway to dark-humor or memory-callback
-#   not available without distorting the enforcement-incident's register.
-#   REFUSE — outside hinge-magnitude band; functional-register fail.
-#
-#
-# ── @23, @24, @26–@28 (scene-C non-peak; 0 axis-magnitude) ──
-#   0 axis-magnitude; outside hinge-magnitude band; extended default-refuse.
-#   @23/@24 are the replay setup bones; @26-@28 are post-recognition filing. No licensing
-#   layers present. Any figure here would be AP1 or AP9.
-#   REFUSE — outside hinge-magnitude band.
-#
-#
-# CHAPTER-LEVEL STRUCTURAL OBSERVATION (forward to R2 / auditor):
-#   All three scenes in b01c05 have their lone peak-bone in AP7 territory:
-#     scene-A @7 (message-runner coverage-release restraint)
-#     scene-B @13 (gap-instrument alley-sound)
-#     scene-C @25 (recognition-cessation; the sole axis-move bone)
-#   This chapter's dramatic architecture is peak-forward by design: every scene climaxes at
-#   the discipline-hold or recognition moment — precisely where AP7 blocks. The quiet zones
-#   (@1-@6, @8-@12, @15-@19, @26-@28) carry no axis-move weight and no memory/feeling
-#   anchors. The chapter is interior-perceptual and dialogue-free; feeling flags are unlikely
-#   to be authored for Taylor in observational-only beats. Result: licensing is structurally
-#   absent chapter-wide. Zero-fires is the architecturally correct outcome, not a failure of
-#   authorship.
-#   This structural observation is informational only — it does not modify R2 behavior.
+# CHAPTER-LEVEL STRUCTURAL OBSERVATION (R2 confirmed):
+#   The locked graph reveals a chapter where the three licensed anchors (mem:1 @1,
+#   mem:2 @15, mem:3 @27 + feel:1 @13) distribute as follows against peak-bones:
+#     scene-A peak @7 — anchor-dark
+#     scene-B peak @13 — feel:1 co-locates (AP1 cleared); AP7 + Reading-A-scope fail
+#     scene-C peak @25 — anchor-dark (feel:2 lic-out reference is unresolved)
+#   The only post-peak bone with a memory anchor is @27 (mem:3); this is the sole bone
+#   where AP1+AP7 together don't block — but AP4+G5+AP3 refuse it on different grounds.
+#   The chapter's structural profile is: recognition-forward peaks that carry their own
+#   figurative weight through NI/vibes/state pile-ups, leaving the memory callbacks in
+#   non-metaphor-eligible positions. Zero-fires is the architecturally correct outcome.
 #
 #
 # FILE-SHAPE AUDIT:
 #   Sparsity: 0 fires / 31 bones = 0% (within 0-3% bound; zero acceptable)
 #   Per-scene cap: 0/0/0 against ≤1/≤1/≤1 — compliant
-#   Add-cap: 0 against ≤3 — compliant
+#   Add-cap: 0 of ≤3 used — compliant
 #   Schema entries: none (zero-fire file; comment block only)
 #   Anchor verification: N/A
 #   Multi-justification: N/A
 #   Functional-register: N/A
 #   Voice-register: N/A
+#   R2 gate outcome: ZERO-FIRES-CONFIRMED
