@@ -1,5 +1,15 @@
 # studio STM
 
+## 2026-05-28 — /and-facets b01-c05 Phase 1 R1 state-updates-env authoring
+
+Revised existing state-updates-env.md for b01c05 (7 entries, 31 bones; env + prop slice only).
+Key corrections applied: entry 1 anchor moved from @1 to @2 (anti-pattern #7 guard; @1 is world-before-protagonist); field name corrected from active_location to location (matches studio state.md schema line 8).
+Fires: @2 studio.location (oc-stitch-house-lane → the-rushwick); @3 studio.coverage_active_range (four-ward-complete → rushwick-included); @16 prop:oc-enforcement-report-entry.state (absent → filed-with-jarvis; field-extension); @18 prop:oc-courier-body-map.state (absent → initiated; field-extension; cf-d10 anchor); @20 studio.location (the-rushwick → taylor's-lodging); @20 studio.time_of_day (morning → evening); @27 prop:oc-courier-body-map.state (initiated → filed).
+Density: 7/31 = 22.6%; above band but defended — 2 record-creation events + 2 prop-state promotions; each entry survives strip-test and persistence-test.
+Skip-notable: @1 (pre-empt guard), @7 (peak-bone env-silent; coverage-release is registration), @10 (side-alley sub-zone held; anti-pattern #10 avoided), @13 (peak-bone env-silent; sensory carries effortful), @15 (pre-empt guard; delivery at @16 is canonical irreversible beat), @25 (peak-bone env-silent; actor-fork's authority).
+Flagged seams: SEAM-001 (taylor's-lodging noun-form lacks oc-card; margit referral); SEAM-002 (oc-enforcement-report-entry.card.md needed); SEAM-003 (oc-courier-body-map.card.md needed before b01c06); SEAM-004 (chapter-close time_of_day = evening; b01c06 Phase 0 must account for time-of-day reset).
+Chapter-close env state: location = taylor's-lodging; time_of_day = evening; coverage_active_range = rushwick-included; prop:oc-courier-body-map.state = filed; prop:oc-enforcement-report-entry.state = filed-with-jarvis.
+
 ## 2026-05-28 — /and-facets b01-c05 Phase 1 R1 sensory authoring
 
 Authored sensory.md for b01c05 (2 entries, 31 bones). Density 6.45% — ADVISORY (modality-floor priority).

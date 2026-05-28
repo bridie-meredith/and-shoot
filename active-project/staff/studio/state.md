@@ -2,7 +2,7 @@
 
 episode: b01c05
 last_updated: 2026-05-28
-action: sensory R1 authoring — /and-facets b01-c05 Phase 1 (location-state R1 prior)
+action: state-updates-env R1 authoring — /and-facets b01-c05 Phase 1 (location-state + sensory R1 prior)
 
 ## Current set
 location: the-rushwick (no oc-card; pl-2026-05-28-001 open for margit)
@@ -50,6 +50,27 @@ ambient_conditions:
   note-003 effortful-qualifier carry: CONFIRMED at sensory:2 @13
   note-001 courier-walk visual/spatial: NOT CARRIED by sensory (rubric-ineligible; seam routed to narrator-interest)
 
+## Prop state (state-updates-env; chapter-close)
+  - prop:oc-report-sheet: holder = jarvis-coin-kl-coat (b01c04 carry; no change this chapter)
+  - prop:oc-enforcement-report-entry: state = filed-with-jarvis (new prop; first-touch @16; field-extension; oc-card pending margit)
+  - prop:oc-courier-body-map: state = filed (initiated @18; promoted to filed @27; cf-d10 thread confirmed; oc-card pending margit)
+
+## Pending margit referrals
+  - oc-rushwick-lodging.card.md (SEAM-001; location card for taylor's-lodging slug; priority: before stitch)
+  - oc-enforcement-report-entry.card.md (SEAM-002; prop card; first-touch @16)
+  - oc-courier-body-map.card.md (SEAM-003; prop card; persists to b01c06+; cf-d10 thread carrier; priority: before b01c06 facets)
+
+## State-updates-env locked (b01c05) — 7 entries
+  state:1 @2  — studio.location: oc-stitch-house-lane -> the-rushwick
+  state:2 @3  — studio.coverage_active_range: four-ward-complete -> rushwick-included
+  state:3 @16 — prop:oc-enforcement-report-entry.state: absent -> filed-with-jarvis (field-extension)
+  state:4 @18 — prop:oc-courier-body-map.state: absent -> initiated (field-extension; cf-d10 anchor)
+  state:5 @20 — studio.location: the-rushwick -> taylor's-lodging
+  state:6 @20 — studio.time_of_day: morning -> evening
+  state:7 @27 — prop:oc-courier-body-map.state: initiated -> filed (cf-d10 confirmed)
+  Density: 7/31 = 22.6% (above band; defended — record-creation events; all entries strip-test clean)
+
 ## Last recorded change
   @31 — courier-walk holds the rushwick-pass; chapter close; Taylor on room-floor; evening review complete
   Sensory R1 authored 2026-05-28 — theater/facets/sensory.md (2 entries)
+  State-updates-env R1 authored 2026-05-28 — theater/facets/state-updates-env.md (7 entries)

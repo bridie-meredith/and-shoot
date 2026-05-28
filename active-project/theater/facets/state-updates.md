@@ -1,3 +1,10 @@
+---
+facet: state-updates
+sources: [env, taylor-hebert-kl-122ac]
+note: consolidated by build_cite_index from per-source slices. Single top-of-file frontmatter per r3-signal-001.
+---
+
+# source: env
 facet: state-updates (env)
 episode: b01c05
 author: studio
@@ -34,3 +41,19 @@ scope: studio.* and prop:oc-* entries only — actor:* entries authored by per-c
 5 @20 studio.location: the-rushwick -> taylor's-lodging
 6 @20 studio.time_of_day: morning -> evening
 7 @27 prop:oc-courier-body-map.state: initiated -> filed
+
+# source: taylor-hebert-kl-122ac
+facet: state-updates
+episode: b01c05
+author: taylor-hebert-kl-122ac (impersonator, facet-authoring mode)
+scope: actor:taylor-hebert-kl-122ac entries only
+---
+
+8 @2 actor:taylor-hebert-kl-122ac.location: flea-bottom-hook-district -> the-rushwick
+9 @3 actor:taylor-hebert-kl-122ac.feed-coverage.rushwick: not-yet-acquired -> active   # field-extension: feed-coverage.<ward> (operational coverage map per persona card §Action Menu)
+10 @18 actor:taylor-hebert-kl-122ac.knowledge.body-map.courier: absent -> recurring-with-enforcement-attached   # field-extension: knowledge.body-map.<entity> (intelligence-routing tracked surveillance memory per persona card §Action Menu)
+11 @20 actor:taylor-hebert-kl-122ac.location: the-rushwick -> taylor-lodging-room-floor
+12 @21 actor:taylor-hebert-kl-122ac.evening-review.state: closed -> open   # field-extension: evening-review.state (nightly operational accounting procedure per persona card §Off-Screen Cadence)
+13 @25 actor:taylor-hebert-kl-122ac.political_register_prot_axis: 1 -> 2.5   # cl-d05 first tranche; +1.5 axis-move; peak-bones; neutral-instrumentally-observant foreclosed
+14 @26 actor:taylor-hebert-kl-122ac.evening-review.state: open -> closed
+15 @27 actor:taylor-hebert-kl-122ac.knowledge.body-map.courier: recurring-with-enforcement-attached -> canonical-file-cf-d10-thread-open   # body-record canonical filing; cf-d10 thread confirmed open

@@ -9,8 +9,8 @@ prior_episode: b01c04
 aggregate_range: 1-31
 
 1 the hill's stone skirt meets the lane-mouth
-2 taylor-hebert-kl-122ac enters the rushwick
-3 the insect-feed fills the rushwick junction
+2 taylor-hebert-kl-122ac enters the rushwick [state:1]
+3 the insect-feed fills the rushwick junction [state:2]
 4 the provisioner-train crosses the junction
 5 the provisioner-train takes the east-lane
 6 the message-runner crosses the junction
@@ -23,18 +23,18 @@ aggregate_range: 1-31
 13 the side-alley returns the sound
 14 the courier finds the feet
 15 taylor-hebert-kl-122ac files the enforcement-record
-16 taylor-hebert-kl-122ac delivers the enforcement report-entry
+16 taylor-hebert-kl-122ac delivers the enforcement report-entry [state:3]
 17 the three figures exit the alley-mouth
-18 taylor-hebert-kl-122ac adds the courier to the body-map
+18 taylor-hebert-kl-122ac adds the courier to the body-map [state:4]
 19 the courier takes the junction-corner
-20 taylor-hebert-kl-122ac takes the room-floor
+20 taylor-hebert-kl-122ac takes the room-floor [state:5] [state:6]
 21 taylor-hebert-kl-122ac runs the Hook-feed
 22 the Hook-feed resolves
 23 taylor-hebert-kl-122ac runs the rushwick-feed
 24 the provisioner-train re-crosses the junction
 25 taylor-hebert-kl-122ac stops the rushwick-pass
 26 taylor-hebert-kl-122ac closes the evening review
-27 taylor-hebert-kl-122ac files the courier body-record
+27 taylor-hebert-kl-122ac files the courier body-record [state:7]
 28 taylor-hebert-kl-122ac runs the rushwick flat-read
 29 the provisioner-train holds the rushwick-pass
 30 taylor-hebert-kl-122ac runs the rushwick flat-read
