@@ -63,8 +63,9 @@ scenes:
       seen three separate times in the Rushwick — the same gait on three different mornings,
       slightly heel-first, the walk of someone who has learned the ward's uneven paving by
       repetition]. She has not named him. The feed has filed him as: recurring body, probable
-      Rushwick-resident or regular-transit, no anomaly. The third sighting is five days into
-      the Rushwick coverage.
+      Rushwick-resident or regular-transit, no anomaly. [event: third sighting — five days
+      into the Rushwick coverage; the feed confirms: recurring body, same heel-first gait,
+      same morning-hour transit window].
 
       [event: the courier is roughed up in a side-alley off the Rushwick junction by three
       figures whose body-language reads as enforcement, not robbery]. Taylor is at the ward's
@@ -73,9 +74,13 @@ scenes:
       with opportunistic theft. [mechanism: enforcement reads differently from robbery in the
       feed — the coordination of approach, the blocking of exits before contact, the absence
       of the post-contact scatter that marks common theft; instead, a controlled containment,
-      a single body held against stone, two others keeping the alley-mouth]. She watches the
-      exchange without crossing toward it. It is brief. The courier is left on his feet. The
-      three figures leave at a walk, not a run.
+      a single body held against stone, two others keeping the alley-mouth]. From across the
+      ward the feed returns: contact complete, courier upright. What it does not return is the
+      sound from the alley before the courier finds his feet — a low, effortful sound, not a
+      cry, the kind a body makes when it is trying not to make any sound at all. The feed has
+      no field for that. It logs: brief contact, courier retained on feet. She watches the
+      exchange without crossing toward it. The courier is left on his feet. The three figures
+      leave at a walk, not a run.
 
       [force: the observation's specificity — this is enforcement, coordinated, directed at
       a specific person for a specific reason; the content has named itself as faction-violence
@@ -101,13 +106,13 @@ scenes:
       axes_in_motion: []
       axes_held:
         - axis: political_register-prot
-          rationale: "the enforcement incident is observed and routed as factual pattern-data; Taylor's categorization-layer holds the incident as movement-pattern without opening color; the discipline is intact at the action-layer; the note in the file is movement-pattern, not resentment"
+          rationale: "enforcement routed as movement-pattern; categorization-layer intact; no color opened at action-layer"
         - axis: moral_framework
-          rationale: "routing enforcement as factual pattern-data is inside the licensed exception — this is what she delivers, this is the function; no new exception, no new breach; the 'this is what the feed reads' echo in the chunk is the rationalization running, not being interrogated"
+          rationale: "routing enforcement as pattern-data is inside the licensed exception; 'this is what the feed reads' echo is rationalization running, not interrogated"
         - axis: capability
-          rationale: "no new coverage expansion; Rushwick coverage operational; no additional extension"
+          rationale: "no new coverage expansion; Rushwick coverage operational"
         - axis: relational_anchor_status
-          rationale: "courier is not a relational anchor; Wren not present; anchor not activated"
+          rationale: "courier not a relational anchor; Wren not present"
       density_target: 0.55-0.65
     scene_conflict:
       protagonist_force: Taylor's factual routing discipline — the observation enters the Jarvis report as movement-pattern; the discipline of treating court-adjacent content as categorizable data holds at the action layer
@@ -125,15 +130,16 @@ scenes:
       document she has already processed; the wards she knows running on schedule, the
       anomalies noted and incorporated; the information completing itself as information].
 
-      The Rushwick reads differently in review than it read in acquisition. [mechanism: evening
-      replay strips the acquisition-layer's real-time categorization discipline — there is no
-      action to take, no report to route, no function being performed; the content sits without
-      the discipline's organizational frame, and what remains is not flat; the provisioner
-      train's institutional-gait signature carries something that the factual-categorization
-      register was holding at distance during the day]. [event: Taylor notices that the
-      court-tier content is not neutral to her — resentment color identified in review,
-      after the fact, in the absence of the discipline's real-time frame]. She does not name
-      what she notices. She names what she does: she files it under operational texture.
+      [mechanism: The Rushwick reads differently in review than it read in acquisition —
+      evening replay strips the acquisition-layer's real-time categorization discipline;
+      there is no action to take, no report to route, no function being performed; the content
+      sits without the discipline's organizational frame, and what remains is not flat; the
+      provisioner train's institutional-gait signature carries something that the factual-
+      categorization register was holding at distance during the day]. [event: Taylor notices
+      that the court-tier content is not neutral to her — resentment color identified in
+      review, after the fact, in the absence of the discipline's real-time frame]. She does
+      not name what she notices. She names what she does: she files it under operational
+      texture.
 
       [force: the accumulation that has happened regardless of categorization — the color
       has arrived in the feed; neutral-instrumentally-observant has been the method of
@@ -144,8 +150,7 @@ scenes:
       performing normalcy in response]. Taylor has been reading court bodies. Court bodies
       are connected to the architecture that keeps Sera protected. Court bodies move under
       a hierarchy that produced the enforcement geometry she watched this afternoon. She has
-      been reading this and she has not been neutral about it. The neutrality was the
-      discipline's performance, not the discipline's fact.
+      been reading this and she has not been neutral about it.
 
       [force: filing the observation under operational texture — Taylor's discipline of
       categorizing her own response extends the same factual-register to the recognition
@@ -154,16 +159,20 @@ scenes:
       instrumentally-observant foreclosed; cl-d05 anchor lands]. The courier's face is in
       Taylor's body-map now, not in any ledger she writes. [event: cf-d10-courier-face thread
       confirmed open — courier logged as recurring body with enforcement-incident attached;
-      Taylor will recognize him again]. She closes the evening review. The Rushwick content
-      runs behind her eyes with the color she has not named but has now seen. The Hook runs
-      flat. The difference is in the ledger even though the ledger has not been written.
+      Taylor will recognize him again]. She closes the evening review. She tries to run the
+      Rushwick back through the flat-document read — the same read that closes out the Hook,
+      the same read that resolves the ward's content into information. It does not resolve.
+      The Rushwick content does not complete itself as information. She runs it again. The
+      same. The Hook runs flat under the same pass. The Rushwick does not. The neutral read
+      is not available to her for this content anymore, and she files the unavailability as
+      texture, but the filing does not return the read.
     substance_delta:
       axes_in_motion:
         - axis: political_register-prot
           direction: up
           target_delta_magnitude: 1.5
           cost_ledger_anchor: cl-d05
-          notes: "evening replay reveals accumulated color; the discipline's real-time categorization frame was holding neutral-instrumentally-observant in acquisition but the substrate was not neutral; Taylor notices in review; the recognition IS the opening of the account; neutral-instrumentally-observant is foreclosed from this point; cl-d05 anchor lands here; Rushwick content now carries permanent resentment-color in Taylor's feed-interpretation"
+          notes: "evening replay reveals accumulated color; the discipline's real-time categorization frame was holding neutral-instrumentally-observant in acquisition but the substrate was not neutral; Taylor notices in review; the recognition IS the opening of the account; neutral-instrumentally-observant is foreclosed from this point; cl-d05 anchor lands here; Rushwick content now carries permanent resentment-color in Taylor's feed-interpretation; first tranche (+1.5 of +3 cl-d05 ledger gain; remaining +1.5 anchors at b01c06-b01c08 during the readable-resentment escalation toward d09 articulated-contempt)"
       axes_held:
         - axis: moral_framework
           rationale: "resentment color noticed and filed as operational texture; the rationalization is not interrogated here — Taylor applies the same categorization discipline to her own response that she applies to the feed; the licensed exception is not threatened by noticing affect; legibility crack does not deepen this scene"
