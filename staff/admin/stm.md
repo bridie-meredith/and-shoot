@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-05-28] DEC-0039 | b01c05 cascade: continue /and-facets + /and-stitch now vs. stop at bones-reviewed → Option (b): stop, clean handoff | 30+ dispatches already spent; /and-facets + /and-stitch are mechanical; clean resume mechanism in place; defer saves context budget with zero quality cost.
 [2026-05-28] DEC-0038 | process-critic: codification anti-pattern (URI-STITCH-CHERRY-PICK-DEFAULT-ON) → PROCESS-CHANGE-PROPOSED PROP-0017 | Structural trigger-surface gap: process-critic fires on chain-command non-PASS verdicts but not on URI default-change spec edits citing experiment conclusions; new CLAUDE.md Rule 13 trigger class proposed.
 [2026-05-27] DEC-0037 | triage clearance for /and-stitch b01-c04 → CLEAR | no parking-lot HARDs target this chapter or wildcard-stitch scope; TASTE-FLAG TF-001..TF-007 are advisory carry-forward; pl-2026-05-25-013 is Phase 9 SOFT advisory only; canonical gate order satisfied.
 [2026-05-27] DEC-0036 | process-critic: /and-facets b01c04 Phase 5c — 5 patterns (A-E) → PROCESS-CHANGE-PROPOSED PROP-0012 + PROP-0013 + PROP-0014 + PROP-0015 + PROP-0016; OK on F+G (positive evidence) | A: cite-index bracket format drift (spec/tool interface gap); B: R2 inflight format discipline (5/7 failure rate; brief omission); C: sidecar stale-ref + DEFERRED-TO-R2 (R2 brief task omissions); D: cite-index regen wiping audit-fixes (deletion-marker gate absence); E: cross-location-carry rubric ambiguity (sensory-sensory specialist divergence); F+G: gate working as intended.

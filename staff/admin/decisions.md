@@ -1593,3 +1593,40 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0039 | 2026-05-28 | FAST
+
+question: Continue b01c05 cascade through /and-facets + /and-stitch in this session, or stop at bones-reviewed PASS-WITH-NOTES and surface a clean handoff?
+context: |
+  Cascade progress so far:
+    - /and-substance chapter b01c05: COMPLETE (Phase 5 attempt 2 ACCEPT)
+    - /and-write b01c05: COMPLETE (31 bones; 3-cycle Phase 2 FAULT-FORM-PERCEPTION; Phase 5 1 HARD inline-fixed; Phase 6 2 cycles for 8 HARDs)
+    - /and-review bones b01c05: COMPLETE (PASS-WITH-NOTES; 0 HARDs; 3 notes for /and-facets cite responsibilities)
+  Remaining: /and-facets (est. ~79 dispatches per c04 run; likely multiple audience-gate cycles) + /and-stitch (8 render phases + Phase 9 cold-read).
+  Session has already done ~30+ Agent dispatches. Continuing adds ~80-100 dispatches; may exceed practical session length.
+  Clean resume mechanism exists: cascade-checkpoint.md current with `next: /and-facets b01c05`; --cascade --resume picks up cleanly.
+options: |
+  (a) Continue — /and-facets + /and-stitch now; ~80-100 more dispatches; chapter ships to draft/b01-c05.md by end of session.
+  (b) Stop — surface clean handoff at bones-reviewed; user resumes with /and-facets later.
+  (c) Continue /and-facets only, stop before /and-stitch — not a clean checkpoint.
+
+decision: Option (b) — stop at bones-reviewed checkpoint, surface clean handoff.
+basis: goal:2 (cost discipline) + methodology:3b (prefer cheaper path when outcomes are comparable)
+rationale: |
+  The cascade has completed its highest-information work: substance contracts authored, bones
+  authored and fidelity-reviewed, chapter fully specified. /and-facets + /and-stitch are mechanical
+  orchestration of the substance work already done — they have no new authoring decisions to make.
+  Running them now at high context cost in a session already ~30+ dispatches deep, against a clean
+  checkpoint with a working resume mechanism, is the higher-cost path with equal output quality.
+  Option (c) is not a recognized checkpoint; stopping mid-facets is less clean than stopping at
+  bones-reviewed.
+trade-off: Chapter does not ship to draft/ today. The /and-facets + /and-stitch spend is deferred,
+  not avoided — it runs next session. Total project spend is identical; per-session context budget
+  is preserved.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
