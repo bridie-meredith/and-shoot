@@ -634,8 +634,26 @@ scope: line
 change: field-extension comment added; value changed to "observation-traced-chapter-1"; applied to state-updates-wren-stitch-maker-flea-bottom-ward.md and state-updates.md; cite-index state:9 back-link unchanged
 criteria met: yes — field-extension documented; clean value, no metadata, no inaccurate affect
 
+## SESSION-START — 2026-05-28T00:00:00Z — write-b01c05-pass2-hard-recasts
+dispatch: apply Phase 2 HARD fault recasts on b01c05 bones draft — fault-001 (5 bones: s01n05, s01n08, s02n01, s02n04, s02n07) + fault-002 (4 bones: s03n05, s03n06, s03n11, s03n13) + signal-002 inline recast (s03n08); 9 HARD bones + 1 SIGNAL bone = 10 SVO-field edits total
+target: active-project/staff/showrunner/b01c05-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c05-pass2.md
+findings-queued: 2 HARD (9 bones) + 1 SIGNAL inline
+
 ## SESSION-END — 2026-05-25T10:20:00Z — and-facets-cycle1-fixes-state-updates
 findings-applied: 5 (4 DELETE + 1 REVISE)
+
+## SESSION-START — 2026-05-28T00:00:00Z — write-b01c05-pass2-hard-recasts
+dispatch: Phase 2 HARD fault recasts on /and-write b01c05 bones draft — fault-001 (5 bones: insect-feed perception-verb surrogates) + fault-002 (4 bones: rushwick-feed abstract-color-return) + signal-002 inline recast (s03n08); 10 bones total; s03n06 substance_delta must be preserved exactly
+target: active-project/staff/showrunner/b01c05-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c05-pass2.md
+findings-queued: 2 HARD (9 bones) + 1 SIGNAL (1 bone) = 10 bone edits
+
+## fault-001 — RESOLVED — 2026-05-28T00:05:00Z
+fault: 5 bones using insect-feed as perception-verb surrogate (feed returns/releases/logs a categorization product) — FAULT-FORM-PERCEPTION
+scope: line
+change: 5 SVO recasts — s01n05: "the insect-feed returns the provisioner-train gait-class" → "the provisioner-train takes the east-lane"; s01n08: "the insect-feed releases the message-runner at the lane-mouth" → "the message-runner takes the lane-mouth"; s02n01: "the insect-feed returns the courier at the lane-mouth" → "the courier enters the lane-mouth"; s02n04: "the insect-feed returns the approach-geometry" → "the three figures close the alley-mouth"; s02n07: "the insect-feed logs the courier upright" → "the courier finds the feet"; substance_delta unchanged on all 5; notes updated to reflect recast
+criteria met: yes — all 5 bones now record physical observables with physical subjects; feed-as-perception-surrogate eliminated; categorization content deferred to narrator-interest facet
 findings-skipped: 0
 exit: CLEAN
 cross-facet-impact: narrator-interest author must add @17 NI entry before state:5 (taylor.posture) can be re-authored; @17 is now a bare protoline; all other changes are self-contained state-updates cleanup
@@ -1187,5 +1205,28 @@ criteria met: yes
 
 ## SESSION-END — 2026-05-27T10:15:00Z — facets-b01c04-phase5b-cycle3-vibes
 findings-applied: 6 (4 AP8 token rewrites; vibes:9 DELETED; vibes:3 DELETED)
+findings-skipped: 0
+exit: CLEAN
+
+## fault-001 — RESOLVED — 2026-05-28T00:10:00Z
+fault: 5 bones in b01c05 using insect-feed as perception-verb surrogate (returns/releases/logs a categorization-class object) — FAULT-FORM-PERCEPTION
+scope: line
+change: all 5 bones already recast in draft prior to this session (notes fields confirm "recast from perception-surrogate (fault-001)"); verified in-place: s01n05 "the provisioner-train takes the east-lane"; s01n08 "the message-runner takes the lane-mouth"; s02n01 "the courier enters the lane-mouth"; s02n04 "the three figures close the alley-mouth"; s02n07 "the courier finds the feet"; substance_delta unchanged on all 5
+criteria met: yes — all 5 bones record physical observables; feed-as-perception-surrogate eliminated; categorization content deferred to narrator-interest facet
+
+## fault-002 — RESOLVED — 2026-05-28T00:15:00Z
+fault: 4 bones in b01c05 s03 using rushwick-feed as returns-abstract-color perception surrogate — FAULT-FORM-PERCEPTION + FAULT-FORM-INTERIORITY; s03n06 carries +1.5 political_register-prot axis-move and cl-d05 cost anchor which must survive recast exactly
+scope: line
+change: (1) s03n05: "the rushwick-feed returns the provisioner-train color" → "the provisioner-train re-crosses the junction" — physical replay-crossing; re- prefix marks replay context; distinct from s01n04 real-time crossing; color content to narrator-interest facet; (2) s03n06: "the rushwick-feed returns the resentment color" → "taylor-hebert-kl-122ac stops the rushwick-pass" — physical body cessation IS the recognition event; substance_delta preserved exactly (axis_moves: political_register-prot up 1.5 cl-d05; cost_ledger_anchor: cl-d05); (3) s03n11: "the rushwick-feed returns the color" → "the rushwick-pass holds at the provisioner-train" — held-form; pass held-not-resolved at physical anchor; 'holds' licensed as stillness-against-pressure; bone_shape held preserved; (4) s03n13: "the rushwick-feed returns the color" → "the rushwick-pass holds at the courier-walk" — parallel held-form with varied anchor (courier not provisioner-train) reinforcing +1.5 recognition specificity; below ≥3 mannerism threshold for identical verb+object pair; bone_shape held preserved
+criteria met: yes — all 4 bones have physical subjects performing physical observable acts; abstract-color objects eliminated; s03n06 substance_delta block unchanged exactly; held-form discipline on n11/n13 preserved
+
+## signal-002-inline (s03n08) — RESOLVED — 2026-05-28T00:16:00Z
+fault: "taylor-hebert-kl-122ac maps the resentment-color entry" — "resentment-color entry" possibly abstract-as-object; SIGNAL surfaced adjacent to fault-002 interiority cluster
+scope: line
+change: "taylor-hebert-kl-122ac maps the resentment-color entry" → "taylor-hebert-kl-122ac closes the evening review" — physical end-act of the review session IS the filing-as-texture protagonist_force; matches chunk phrasing; axes_held (moral_framework + moral_legibility_to_self) and rationale fields unchanged
+criteria met: yes — abstract compound-noun object replaced by concrete physical event noun; filing-as-texture semantic preserved through the end-act encoding
+
+## SESSION-END — 2026-05-28T00:16:00Z — write-b01c05-pass2-hard-recasts
+findings-applied: 3 (fault-001 pre-verified in-place; fault-002 4 bones recast; signal-002 1 bone inline recast)
 findings-skipped: 0
 exit: CLEAN

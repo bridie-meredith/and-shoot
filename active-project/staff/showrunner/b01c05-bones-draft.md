@@ -87,7 +87,7 @@ scenes:
         notes: "four-men-two-carts provisioner train; institutional-gait signature visible to the feed"
 
       - slug: b01c05s01n05
-        svo: "the insect-feed returns the provisioner-train gait-class"
+        svo: "the provisioner-train takes the east-lane"
         bone_shape: held
         substance_delta:
           axis_moves: []
@@ -96,7 +96,7 @@ scenes:
               rationale: "feed categorizes court-tier bodies as 'different substrate, same method'; novel weight present in the categorization specificity demanded; discipline holds; neutral-instrumental reading discipline is the held-bone's rationale force at this first-exposure stage"
           cost_ledger_anchor: null
         dialogue_anchor: false
-        notes: "feed returns the institutional-gait class; held bone — the novel weight of the opposing force is present in the categorization work demanded"
+        notes: "recast from perception-surrogate (fault-001); physical observable: provisioner-train clears the junction into the east-lane; distinct from n04 (crossing) — n05 is the arrival/exit motion; gait-class categorization content moves to narrator-interest facet"
 
       - slug: b01c05s01n06
         svo: "taylor-hebert-kl-122ac maps the provisioner-train interval"
@@ -125,7 +125,7 @@ scenes:
         notes: "message-runner at the double-step; opposing force is visible through the specificity the feed demands in categorizing this body"
 
       - slug: b01c05s01n08
-        svo: "the insect-feed releases the message-runner at the lane-mouth"
+        svo: "the message-runner takes the lane-mouth"
         bone_shape: held
         substance_delta:
           axis_moves: []
@@ -136,7 +136,7 @@ scenes:
               rationale: "coverage maintenance; feed operates at established range; no extension"
           cost_ledger_anchor: null
         dialogue_anchor: false
-        notes: "message-runner exits coverage; feed releases; the discipline's restraint is the observable enactment"
+        notes: "recast from perception-surrogate (fault-001); physical observable: message-runner exits through the lane-mouth — coverage-release semantics implicit in the runner's exit motion; discipline's restraint (no follow) is carried by axes_held rationale"
 
       - slug: b01c05s01n09
         svo: "taylor-hebert-kl-122ac maps the message-runner gait-class"
@@ -204,7 +204,7 @@ scenes:
         omission_rationale: null
     bones:
       - slug: b01c05s02n01
-        svo: "the insect-feed returns the courier at the lane-mouth"
+        svo: "the courier enters the lane-mouth"
         bone_shape: moving
         substance_delta:
           axis_moves: []
@@ -215,7 +215,7 @@ scenes:
               rationale: "routine routing; licensed exception runs unchanged"
           cost_ledger_anchor: null
         dialogue_anchor: false
-        notes: "grounding bone for s02; courier enters the feed at the lane-mouth; first-sighting-of-the-day bone before the incident"
+        notes: "recast from perception-surrogate (fault-001); physical observable: courier enters the lane-mouth — feed-acquisition semantics implicit in the courier's entry; grounding bone for s02; third-sighting-of-the-day before the incident"
 
       - slug: b01c05s02n02
         svo: "taylor-hebert-kl-122ac maps the courier gait-signature"
@@ -244,7 +244,7 @@ scenes:
         notes: "grounding bone for incident — east-exit side-alley; three-on-one geometry enters the feed"
 
       - slug: b01c05s02n04
-        svo: "the insect-feed returns the approach-geometry"
+        svo: "the three figures close the alley-mouth"
         bone_shape: held
         substance_delta:
           axis_moves: []
@@ -255,7 +255,7 @@ scenes:
               rationale: "routing as pattern-data is inside the licensed exception; 'this is what the feed reads' rationalization engaged; framework holds at current crack-level"
           cost_ledger_anchor: null
         dialogue_anchor: false
-        notes: "worm-canon SOFT-WATCH bone 2 of 3 (structurally distinct): approach-geometry read — coordination, exit-blocking, controlled containment vs. post-contact scatter; opposing_force visible"
+        notes: "recast from perception-surrogate (fault-001); physical observable: three figures seal the alley-mouth (exit-blocking = enforcement geometry); distinct from s02n10 'exit the alley-mouth' (departure) — this bone is the blocking, n10 is the withdrawal; worm-canon SOFT-WATCH bone 2 of 3 (structurally distinct)"
 
       - slug: b01c05s02n05
         svo: "the three figures pin the courier against the stone"
@@ -286,7 +286,7 @@ scenes:
         notes: "dark-fantasy SOFT-WATCH bone A: alley-sound the feed has no field for; the gap between world and feed instrument; effortful-sound = body trying not to make sound"
 
       - slug: b01c05s02n07
-        svo: "the insect-feed logs the courier upright"
+        svo: "the courier finds the feet"
         bone_shape: held
         substance_delta:
           axis_moves: []
@@ -297,7 +297,7 @@ scenes:
               rationale: "feed's recategorization absorbs the gap; action-layer intact; no color"
           cost_ledger_anchor: null
         dialogue_anchor: false
-        notes: "dark-fantasy SOFT-WATCH bone B: feed-recategorization after the sound; gap between world and feed performed by juxtaposition of n06 + n07"
+        notes: "recast from cognition-as-event (fault-001); physical observable: courier recovers upright posture after pin; Saxon-compound 'finds the feet' (licit per westeros-grrm-mannerisms); gap between world and feed performed by juxtaposition of n06 (effortful sound) + n07 (courier on feet); feed-recategorization content moves to narrator-interest facet"
 
       - slug: b01c05s02n08
         svo: "taylor-hebert-kl-122ac maps the enforcement approach-geometry"
@@ -467,7 +467,7 @@ scenes:
         notes: "try-flat-read sequence bone 1: Taylor runs the Rushwick through the flat-document pass"
 
       - slug: b01c05s03n05
-        svo: "the rushwick-feed returns the provisioner-train color"
+        svo: "the provisioner-train re-crosses the junction"
         bone_shape: moving
         substance_delta:
           axis_moves: []
@@ -476,10 +476,10 @@ scenes:
               rationale: "try-flat-read sequence bone 2: the Rushwick does not resolve under the flat pass — the provisioner-train's institutional-gait signature carries something the categorization register was holding at distance during the day; the color arrives in the replay without a label; this is the opposing force becoming visible without discipline's frame to absorb it"
           cost_ledger_anchor: null
         dialogue_anchor: false
-        notes: "try-flat-read sequence bone 2: the Rushwick does not resolve — color arrives; the feed does not return information, it returns the provisioner-train color"
+        notes: "recast from perception-surrogate (fault-002); physical observable: provisioner-train re-crosses the junction in the replay — the re- prefix marks this as replay-context without stating it; the 'color' content of this beat moves to narrator-interest facet; distinct from s01n04 (first crossing, real-time) — n05 is the replay-crossing"
 
       - slug: b01c05s03n06
-        svo: "the rushwick-feed returns the resentment color"
+        svo: "taylor-hebert-kl-122ac stops the rushwick-pass"
         bone_shape: moving
         substance_delta:
           axis_moves:
@@ -490,7 +490,7 @@ scenes:
           axes_held: []
           cost_ledger_anchor: cl-d05
         dialogue_anchor: false
-        notes: "THE +1.5 MOVING BONE — recognition event; political_register-prot opens its account; resentment color identified; neutral-instrumentally-observant foreclosed; cl-d05 anchor lands; the Rushwick feed returns the resentment color is the SVO that physically causes the axis opening"
+        notes: "recast from perception-surrogate (fault-002); physical observable: Taylor's body stops the read-attempt — the cessation IS the recognition event; +1.5 axis-move and cl-d05 anchor preserved exactly per substance_delta preservation rule; stopping the pass is the physical anchor for 'resentment color identified / neutral-instrumentally-observant foreclosed'; the resentment content moves to narrator-interest facet citing this bone"
 
       - slug: b01c05s03n07
         svo: "the courier-face surfaces in the rushwick replay"
@@ -507,7 +507,7 @@ scenes:
         notes: "courier's post-enforcement walk image surfaces in the replay; the face enters Taylor's body-map as operational texture"
 
       - slug: b01c05s03n08
-        svo: "taylor-hebert-kl-122ac maps the resentment-color entry"
+        svo: "taylor-hebert-kl-122ac closes the evening review"
         bone_shape: held
         substance_delta:
           axis_moves: []
@@ -518,7 +518,7 @@ scenes:
               rationale: "recognition is categorized, not examined; legibility holds — the filing-as-texture IS Taylor not opening the recognition; moral_legibility_to_self does not move"
           cost_ledger_anchor: null
         dialogue_anchor: false
-        notes: "protagonist_force enacted post-recognition: Taylor files the color as operational texture; moral_framework + moral_legibility_to_self held by the filing"
+        notes: "recast from abstract-as-object signal (signal-002); physical observable: Taylor ends the review session — the closing IS the filing-as-texture protagonist_force; 'closes the evening review' matches the chunk's phrasing and anchors the categorization-discipline beat as a discrete physical end-act rather than an abstract mapping; moral_framework + moral_legibility_to_self held rationale unchanged"
 
       - slug: b01c05s03n09
         svo: "taylor-hebert-kl-122ac maps the courier body-record"
@@ -549,7 +549,7 @@ scenes:
         notes: "try-flat-read sequence re-run bone 1: Taylor tries the flat-read again after the recognition"
 
       - slug: b01c05s03n11
-        svo: "the rushwick-feed returns the color"
+        svo: "the rushwick-pass holds at the provisioner-train"
         bone_shape: held
         substance_delta:
           axis_moves: []
@@ -558,7 +558,7 @@ scenes:
               rationale: "foreclosure enactment bone 2: the Rushwick does not resolve under the flat pass — the read does not return as information; the color returns instead; the neutral read is not available to this content"
           cost_ledger_anchor: null
         dialogue_anchor: false
-        notes: "try-flat-read sequence re-run bone 2: the read fails — color returns, not information; foreclosure enacted first time"
+        notes: "recast from perception-surrogate (fault-002); held-form discipline: the pass HOLDS — does not complete — at the provisioner-train as physical anchor; the held-form performs the foreclosure (read arrested at the physical thing that triggered the recognition); foreclosure enacted first time; 'holds' licensed here as stillness-against-pressure (the read cannot proceed past the provisioner-train — the pass is held, not resolved)"
 
       - slug: b01c05s03n12
         svo: "taylor-hebert-kl-122ac runs the rushwick flat-read"
@@ -575,7 +575,7 @@ scenes:
         notes: "try-flat-read sequence re-run bone 3: Taylor runs the pass again — second attempt; the repeat is load-bearing for the foreclosure-as-enacted-capability-failure"
 
       - slug: b01c05s03n13
-        svo: "the rushwick-feed returns the color"
+        svo: "the rushwick-pass holds at the courier-walk"
         bone_shape: held
         substance_delta:
           axis_moves: []
@@ -586,4 +586,4 @@ scenes:
               rationale: "filing the unavailability as texture does not return the read; moral_legibility_to_self holds — the recognition is categorized, not examined — but the foreclosure is on-page regardless"
           cost_ledger_anchor: null
         dialogue_anchor: false
-        notes: "foreclosure enacted: same result on second pass — the neutral read is not available; final bone in the try-flat-read sequence; cl-d05 firmly anchored"
+        notes: "recast from perception-surrogate (fault-002); held-form discipline: second pass holds at courier-walk (parallel structure to n11 but distinct anchor — n11 holds at provisioner-train, n13 holds at the courier who surfaced at n07; the second-pass hold at the courier reinforces the +1.5 recognition's specificity); foreclosure confirmed; cl-d05 firmly anchored; 'holds' licensed as stillness-against-pressure"
