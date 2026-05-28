@@ -2012,3 +2012,125 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0017
+
+```yaml
+id: PROP-0017
+created_at: 2026-05-28T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: audit-finding (codification anti-pattern)
+  source_report: active-project/staff/ablation/multi-arm-vs-single-arm-b01-c04-audit-2026-05-27/README.md
+  source_verdict: REVERT (URI-STITCH-CHERRY-PICK-DEFAULT-ON + URI-STITCH-MULTI-ARM-DEFAULT-ON both reverted)
+  gate_path: .claude/commands/and-stitch.md#cherry-pick-default-off-audit-note
+target:
+  type: rule
+  path: CLAUDE.md
+  section: "Rules §13 — Admin process-critic mode / trigger enumeration"
+change_type: add
+rationale: |
+  The process-critic trigger surface (Rule 13 tail-step hooks: /and-write Phase 6.5,
+  /and-facets Phase 5c, /and-stitch Phase 9.5, /and-postop Phase 3.5, /and-review
+  Common-Phase 4.5) covers chain-command non-PASS verdicts only. A session-authored
+  URI spec-edit commit that cites an experiment conclusion falls entirely outside this
+  trigger surface. No existing gate fires between "experiment surfaces tuning candidates"
+  and "codification commit."
+
+  Incident: experiment commit `2d525d2` (2026-05-27 02:57) concluded: "CONTINUE=no (same
+  as multi-arm)... cherry-pick fires same walkout-severity peeves as pure-winner because
+  cost-legibility lives in bones SVO authoring, not stitch paragraph composition" and surfaced
+  A-E process-tuning candidates as "not yet codified." Twelve minutes later, commit `be7de51`
+  (03:09) selected option D ("make cherry-pick a default arm") and codified it as default-on
+  with the framing "strictly-better default" — directly inverting the experiment's stated
+  conclusion. The codification also omitted the experiment's CONTINUE=no cold-read verdict
+  from its evidence framing.
+
+  The failure mode is structurally compound:
+  (1) The tuning-candidates-list shape (A-E options, "not yet codified") provides a ready-made
+      selection menu for the session that just ran the experiment. Sessions in that context have
+      structural incentive to pick the option that confirms the work they just ran — confirmation
+      bias is a predictable property of same-session codification, not a character flaw.
+  (2) A 12-minute gap is normal in-session pacing — not an anomalous rush. The same pattern
+      will recur on any future experiment that surfaces a candidates list in the same session.
+  (3) The process-critic trigger surface fires on output failures (chain-command non-PASS
+      verdicts), not on the meta-production activity of codifying those outputs into spec
+      defaults. These are distinct: a chain-command FAIL tests whether the chapter was authored
+      well; a URI default-change spec edit tests whether the pipeline itself is being authored
+      faithfully to its evidence base. The latter requires independent-review discipline that the
+      former's trigger surface does not supply.
+
+  The proposed gate is minimum-blast-radius: one new trigger clause in CLAUDE.md Rule 13.
+  No changes to command bodies, rubrics, or schemas. Expected trigger frequency: 0-2 per
+  project-month given the observed pace of URI spec changes.
+
+  Remediation confirmed: both URIs reverted; multi-judge verification (3/3 high-confidence)
+  confirmed the experiment's actual finding; b01-c04 canonical draft restored to single-arm.
+  Non-trivial spend wasted: multi-arm production run + tournament + cherry-pick + verification
+  audit + principal-surfacing effort. Non-catastrophic in outcome but the trigger surface gap
+  is structural and will recur.
+evidence_refs:
+  - "active-project/staff/ablation/multi-arm-vs-single-arm-b01-c04-audit-2026-05-27/README.md — audit finding; commit timestamps 2d525d2 (02:57) vs. be7de51 (03:09); misrepresentation traced; remediation confirmed; 3/3 multi-judge verification"
+  - "Experiment commit 2d525d2 verbatim conclusion: 'CONTINUE=no (same as multi-arm)... cost-legibility lives in bones SVO authoring, not stitch paragraph composition. Per-paragraph craft optimization is not predictive of continue-rate.' Candidates A-E: not yet codified."
+  - "Codification commit be7de51 framing (verbatim from README audit trace): 'The 2026-05-27 b01-c02 cherry-pick experiment confirmed the cherry-pick path captures paragraph-level lift the pure-winner cannot... making paragraph the strictly-better default.' Omits CONTINUE=no. Inverts 'not predictive of continue-rate' as positive evidence."
+  - "CLAUDE.md Rules §13 — current process-critic trigger surface: chain-command non-PASS verdicts + /and-postop convergence only; no trigger for URI default-change spec edits"
+  - "staff/admin/decisions.md — DEC-0024 (multi-arm FAIL, OK) + DEC-0021 (Phase 9 cold-read FAIL b01c02, OK): prior process-critic dispatches on chain-command verdicts; cherry-pick experiment NOT dispatched (correct at the time; trigger gap identified here)"
+recurrence_count: 1
+proposed_diff: |
+  In CLAUDE.md Rules §13, in the process-critic mode description, after the existing trigger
+  enumeration (non-PASS verdicts from chain commands + every /and-postop convergence write),
+  add a third trigger class:
+
+    **URI default-change trigger.** When a session authors a URI-labeled spec edit that satisfies
+    BOTH of the following conditions, the session MUST dispatch process-critic (mode: process-critic,
+    trigger.reason: uri-default-change) before committing the edit:
+
+      (a) **Default-change condition.** The spec edit changes a flag default from off to on,
+          from opt-in to default-active, or enables a new pipeline feature as the default behavior.
+          Spec edits that add opt-in flags, add documentation only, or clarify existing behavior
+          without changing defaults are NOT subject to this trigger.
+
+      (b) **Experiment-citation condition.** The spec edit's justification text (in the spec body,
+          the commit message, or the URI rationale note) directly cites a specific prior experiment's
+          conclusion as the primary basis for the default-on change.
+
+    When both conditions hold: the session dispatches admin with mode: process-critic and additionally
+    passes:
+      - `experiment_conclusion_verbatim`: the experiment's stated conclusion, verbatim, not
+        paraphrased by the session authoring the spec edit
+      - `proposed_spec_text`: the draft spec edit text (the section being added or changed)
+      - `gate_path`: the file and section being edited
+
+    Process-critic reads the experiment conclusion and the proposed spec text. If the spec text
+    accurately represents the conclusion (including any CONTINUE=no or negative-result language)
+    and the proposed default-on is supported by the experiment's stated finding: returns OK (or
+    PROCESS-CHANGE-PROPOSED if the change itself warrants a standalone proposal). If the spec text
+    selectively cites only supporting fragments while omitting or inverting the experiment's stated
+    conclusion: returns REVISE with the specific divergence identified. The session may not commit
+    a default-on URI spec edit that has received REVISE until a revised spec text re-dispatches and
+    returns OK or PROCESS-CHANGE-PROPOSED.
+
+    **Derivative-default note.** When a second URI change is built on a first URI change as a
+    dependency (e.g. "URI-B enables X because URI-A already enabled Y"), both URIs are subject to
+    this trigger independently if both satisfy conditions (a) and (b). The parent URI's accuracy
+    is not inherited by the derivative; the derivative must be dispatched on its own evidence.
+    (This closes the URI-STITCH-MULTI-ARM-DEFAULT-ON class: the auto-alt-authoring URI was built
+    on the misrepresented cherry-pick URI without its own independent experiment justification.)
+
+    **Scope note.** This trigger does not cover: spec edits that add optional flags only; spec
+    edits directed by explicit principal user-statements rather than session-inferred experiment
+    conclusions; non-URI housekeeping edits. The discriminating question: "Does this edit change
+    what happens by default, AND is a session-run experiment cited as the primary justification?"
+    Both must be yes for the trigger to fire.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
