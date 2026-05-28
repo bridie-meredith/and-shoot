@@ -776,3 +776,74 @@ carry_forward:
   - C1 SVO refinement: "resists" is agentive for a biological sensory system; candidate: "the rushwick-feed holds the color"; carry to Phase 7 emit
   - SOFT (carried forward): dialogue-file stale citation — Jarvis entry 9 @n10; carry to /and-review bones
   - SOFT (carried forward): b01c07 prose-burden — Halvard tether-gain; carries to b01c07 /and-write
+## b01c05 revise --from-signals — Phase 6 bone-gate
+
+---
+reviewer: worm-canon-pedant
+chapter: b01c05
+phase: write-bone-gate
+date: 2026-05-28
+scenes_reviewed: [b01c05s01, b01c05s02, b01c05s03]
+revise_pass: true
+---
+
+## scene b01c05s01
+verdict: SUBSTANCE-FELT
+
+Nine bones, zero axis moves, pre-passed 3-of-3 SUBSTANCE-FELT in the original gate. No new bones in s01. The integrated review finds no regression. The substance contract (axes_held: political_register-prot, capability, moral_framework, relational_anchor_status; opposing force: court-tier content's novel weight enacted through the volume of categorization work demanded across two distinct body-types) holds without disturbance from the s02 and s03 additions. The multi-body parallel-processing read stands: provisioner-train handled at n04-n06 (arrival, east-lane exit, interval mapped), message-runner handled at n07-n09 (crossing, lane-mouth exit, gait-class filed). Same method applied to each body, no color, no affect. The discipline holds because Taylor does not register the strain; the strain is visible only in the quantity of filing work. No new bones touch s01; no adjacency contamination from the s02 additions. SUBSTANCE-FELT confirmed for the integrated chapter.
+
+## scene b01c05s02
+verdict: SUBSTANCE-FELT
+
+Four new bones integrated into s02: A1 (after @8), B1 (after @13), B2 (after @16). B3 dropped at Phase 5.
+
+**A1 — `the insect-feed returns the courier` (after @8):** The Phase 4 carry-forward amendment ("the courier-entry" → "the courier") is confirmed in the dispatch brief. The corrected SVO is mechanically clean: the feed returns a body present in the coverage area via biological sensory relay — it does not surface archived event-records. "Returns the courier" is structurally parallel to the established feed-output pattern (@n05 in the b01c04 bone set: "the insect-feed returns Jarvis"; b01c02 bones 1, 2, 6, 15, 24: "returns" as the canonical feed-output verb). The recurrence-read lands: the courier's body enters at @8 (courier enters lane-mouth), A1 immediately surfaces the body in the feed — this is the live-return of a body with prior gait-signature contact, not a mnemonic retrieval. The mechanics are correct. A1 is structurally distinct from @n02 (Taylor maps gait-signature — Taylor is the actor), @n04 (three figures close alley-mouth — approach-geometry categorization), and @n08 (Taylor maps enforcement approach-geometry — filing to Jarvis format). A1 is the feed-apparatus phase; the Taylor-cognitive-processing phases come later. The chatter+cl-d05 classification is correct: A1 carries no axis-move; it is substrate for the s03 foreclosure (the feed's recurrence-recognition is what gives the courier body its shape in the evening replay). No SUBSTANCE-FLAT. No SUBSTANCE-SUSPECT.
+
+**B1 — `the courier raises the spine` (after @13, before @14):** The SVO form is correct — body-part DO, "raises" is concrete and transitive, licensed by the bones schema. The sequential recovery (spine raises → feet found at @14) is unambiguous. axes_held rationale is correct: the courier's physical recovery is part of the observable incident; no axis movement; the licensed-exception frame is not threatened because the courier's body is simply behaving physically — Taylor's categorization holds it as part of the enforcement incident, not as a separate moral event. SOFT-WATCH compliance confirmed: B1 is a courier-body-state bone, not a Taylor-cognitive-operations bone; it does not collapse into any of the three-phase cognitive-operations architecture (gait-recognition @n02 / approach-geometry @n04 / filing-to-format @n08). The disambiguation it provides (spine-raise as distinct from feet-found) closes the cold-read confusion on what "finds the feet" meant without amending any passing bone. No SUBSTANCE-FLAT. No SUBSTANCE-SUSPECT.
+
+**B2 — `taylor-hebert-kl-122ac drafts the jarvis-report` (after @16):** The Phase 5 auditor amendment is confirmed in the dispatch brief — original "the enforcement-report enters the jarvis-channel" carried two faults (FAULT-REFERENCE on "the jarvis-channel" as unestablished named entity; FAULT-STATE on "enters" implying real-time transmission). The amended SVO corrects both: subject is taylor-hebert-kl-122ac (concrete agent), verb is "drafts" (intra-scene composition, not transmission), object is "the jarvis-report" (established compound from the s02 chunk text "Taylor begins the Jarvis report"). The cause-chain at bone level now reads: courier beaten → files enforcement-record (@15) → delivers report-entry (@16) → drafts jarvis-report (B2). The drafting is intra-scene; the transmission is later. This is consistent with c04 precedent (Taylor composes before delivering). The B3 Sera-arrangement bone dropped at Phase 5: the cause-chain closes without it. Does the Jarvis-report bone close the chain? Yes — the routing-name "jarvis-report" carries the recipient implicitly per established series vocabulary; the report is bone-realized at the action layer (composition, not transmission); the Sera-connection migrates to facet layer per chapter substance discipline (Taylor does not name the Sera-connection on-page at c05). The axis_held: moral_framework is correct — drafting the Jarvis-report is inside the licensed exception; the routing-name is honored without interrogation.
+
+**B3 dropped:** The Sera-arrangement bone is absent. The cause-chain verifies closed without it. The Sera-connection operates through architectural implication, not through Taylor naming it on-page — this is chapter substance discipline, not an evasion. The bone's objects ("the jarvis-form," "the sera-arrangement-file") were both unestablished named entities, and bone-realizing the Sera-connection would have violated the substance contract that holds Taylor's on-page articulation away from naming what the architecture means. The drop is correct.
+
+**SOFT-WATCH compliance for s02 (gait-signature + approach-geometry + filing structurally distinct):** CONFIRMED across all new bones. A1 is a feed-live-return phase. B1 is a courier-body-state bone. B2 is a drafting-composition bone operating on report infrastructure. None collapse the three-phase cognitive-operations architecture. The prior watch resolution from the original bone-gate (n02 / n04 / n08 as three structurally distinct operations) is undisturbed.
+
+**Opposing force (enforcement-incident specificity):** The three figures' approach geometry, the effortful sound the feed has no field for (@n06), the courier's recovery, and the purposive exit geometry (@n10) together constitute the enforcement-incident's specificity. The new bones do not dilute this — A1 precedes the incident; B1 is inside it (recovery phase); B2 follows it (filing phase). The incident's structure is clarified, not flattened.
+
+No SUBSTANCE-FLAT. No SUBSTANCE-SUSPECT. SUBSTANCE-FELT.
+
+## scene b01c05s03
+verdict: SUBSTANCE-FELT
+
+One new bone integrated into s03: C1 (after @24, before @25).
+
+**C1 — `the rushwick-feed holds the color` (after @24, before @25):** The Phase 4 carry-forward amendment ("resists the flat-read" → "holds the color") is confirmed in the dispatch brief. The corrected verb "holds" is the chapter's established term for physical actors sustaining a posture against the flat-read — @29 ("the provisioner-train holds the rushwick-pass") and @31 ("the courier-walk holds the rushwick-pass") both use "holds" for content that refuses to read as neutral. The rushwick-feed using "holds" is exactly parallel: not agentive opposition by a biological sensory system, but a description of what the feed's output is — the color, held in the return, not resolved into neutral pattern-data. This is mechanically correct for Worm insect-feed physics. The feed does not "resist"; it returns what it has. What it returns, when the discipline's organizational frame has collapsed, is the color rather than the flat categorization. "Holds the color" names the failure-to-resolve as an output property, not as agency.
+
+The apparatus-failure-to-flatten reads correctly: C1 is inserted between @24 (provisioner-train re-crosses the junction in the evening replay) and @25 (Taylor stops the rushwick-pass — the +1.5 political_register-prot axis-move bone). Without C1, @25 is Taylor stopping for a reason the bones do not establish. With C1, @25 is a response to the feed's output: the feed holds the color → Taylor stops. The sequence is causal at bone level, not an unmotivated gesture.
+
+The chatter+cl-d05 classification with axis_moves: [] is correct. The +1.5 political_register-prot is attributed to @25 (the stopping event), not to C1. C1 is the apparatus-level substrate that earns the attribution at @25 — without C1, the +1.5 is asserted; with C1, the +1.5 is earned by a specific mechanical cause. This is the correct chatter-substrate function: no own axis-move, causally necessary for the adjacent axis-move bone to read as substantiated.
+
+**Opposing force (accumulation regardless of categorization):** The four-bone foreclosure sequence at n10-n13 (try-flat-read attempt 1 → provisioner-train holds → try-flat-read attempt 2 → courier-walk holds) is the s03 opposing force: the resentment-color cannot be categorized away even by Taylor's disciplined flat-read procedure. C1 makes the mechanism legible one beat earlier — the feed holds the color before Taylor stops. The stopping is the recognition event; C1 is the feed's report that produces it. The foreclosure confirmed at n13 (courier-walk holds the rushwick-pass, second failure) is structurally unchanged and still lands as a tested-and-confirmed capability-failure.
+
+**Khepri silence at d05:** Correct throughout. C1 contains no Khepri reference. The "color" is resentment-color per the chunk vocabulary; it does not name its source or implication. Taylor, in the bones, does not name what the color means. The Khepri word surfaces first at c12 — that discipline is unbroken.
+
+No SUBSTANCE-FLAT. No SUBSTANCE-SUSPECT. SUBSTANCE-FELT.
+
+---
+
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+
+soft_findings:
+  - SOFT (carried forward): dialogue-file stale citation — Jarvis entry 9 @n10 stale cross-reference; carry to /and-review bones; not a bone-gate block
+  - SOFT (carried forward): b01c07 prose-burden — Halvard tether-gain; carries to b01c07 /and-write
+
+canonicity_findings:
+  - A1 feed-output verb "returns": CLEAN — biological sensory relay, body present in coverage, no mnemonic-retrieval; consistent with established "returns" verb across b01c02 and b01c04 bone sets
+  - B1 courier-body recovery: CLEAN — observable physical event; no Taylor decision; feed records what the body does; no Worm-mechanic violation
+  - B2 "drafts": CLEAN — intra-scene composition consistent with c04 precedent; transmission deferred; no FAULT-STATE regression
+  - B3 dropped: CORRECT — chapter substance discipline holds; Sera-connection migrates to facet layer; on-page articulation stays within Taylor's actual naming capacity at d05
+  - C1 "holds the color": CLEAN — feed output property, not agentive resistance; parallel with established "holds" verb in the try-flat-read sequence; no Worm-mechanic violation
+  - Earth-Bet noun fence: CLEAN across all 4 new bones; no parahuman jargon; no Khepri; no Gold Morning; functional descriptive language throughout
+  - Multi-shard fence: CLEAN — A1 is feed-return (biological relay); B1 is courier-body-state (physical observation); B2 is Taylor composing (cognitive act); C1 is feed-output description (sensory relay output); no directive deployment, no nervous-system coordination, no Manton-effect suspension
+  - SOFT-WATCH (gait-signature / approach-geometry / filing structurally distinct in s02 + s03): CONFIRMED HONORED across all 4 new bones

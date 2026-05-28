@@ -3385,16 +3385,16 @@ books:
             stale_since: null
 
       - slug: b01c05
-        status: bones-written
+        status: bones-written  # G1 — revise --from-signals dropped status from stitched back to bones-written
         bones_file: theater/bones/b01-c05.md
-        bones_count: 31
-        substance_bone_gate_verdict: PASS
+        bones_count: 35  # was 31; revise --from-signals added 4 bones (A1, B1, B2, C1; B3 dropped at Phase 5 continuity)
+        substance_bone_gate_verdict: PASS  # re-stamped at revise Phase 6: 9/9 SUBSTANCE-FELT + auditor PASS
         bones_review:
           reviewed_at: 2026-05-28T00:00:00Z
           report_path: active-project/staff/reviews/bones-b01c05-2026-05-28.md
           verdict: PASS-WITH-NOTES
           bones_file_mtime_at_review: 1779952025
-          stale_since: null
+          stale_since: 2026-05-28T00:00:00Z  # bones file re-emitted at revise Phase 7; mandatory /and-review bones re-run before /and-facets per URI-WRITE-BONES-REVIEW-GATE
           # Verdict: no HARDs; 2 FLAGs carried from Phase 6 (s03n10+n12 SVO duplicate; s03n03 "resolves" intransitive); 3 notes for /and-facets:
           #   note-001: courier's post-enforcement walk image — narrator-interest/sensory facet must cite @23-@25 (s03n07 removed at Phase 6 fault-003; image is load-bearing for resentment-accumulation read)
           #   note-002: cf-d10 face-content — memory or narrator-interest facet must associate face with body-record @27 (otherwise d10 callback loses face-recognition anchor)
@@ -3403,9 +3403,9 @@ books:
           # Probe verdicts: gap-instrument @13/@14 PASS (gap not hollowed by stripping "effortful"); recognition-cessation @25 PROPERLY ANCHORED; foreclosure quartet @28-@31 reads as FORECLOSURE; cf-d10 plant SUFFICIENT at figure level (face is facet responsibility)
         substance_delta_measured:
           axes_moved:
-            political_register-prot: +1.5    # s03n06 (flat 25, +1.5); EXACT vs target +1.5; cl-d05 first tranche
-          density_measured: 0.5-0.6           # 31 bones / 3 scenes; lean interior-perceptual chapter
-          felt_verdict: SUBSTANCE-FELT-3-of-3 # all 3 audience personas, all 9 cells (3 scenes × 3 personas) — Phase 6 bone-gate cycle 1
+            political_register-prot: +1.5    # @29 in revise emit (was @25 pre-revise); EXACT vs target +1.5; cl-d05 first tranche; C1 chatter at @28 is substrate not movement
+          density_measured: 0.55-0.65         # 35 bones / 3 scenes post-revise; s02 expanded 12→15 (3 new bones); s03 expanded 12→13 (1 new bone)
+          felt_verdict: SUBSTANCE-FELT-3-of-3 # all 3 audience personas, all 9 cells (3 scenes × 3 personas) — both pre-revise Phase 6 and post-revise Phase 6
         # /and-write b01c05 emit 2026-05-28 — clean run (no Phase 1 redo; no DEC adjudications).
         # Phase 1 scene-decomposition: 34 bones (s01: 9, s02: 12, s03: 13); event_map[] mechanical chunk-tag extraction + author-noticed entries; sensory-grounding ≥1 per scene; worm-canon SOFT-WATCH courier 3-distinct-bones honored (s02n02 gait, s02n04 approach, s02n08 filing); dark-fantasy gap-instrument pair authored (s02n06 + s02n07).
         # Phase 1.5 dialogue: SKIPPED (no speech-form or communication-axis bones — chapter is interior/observational).
@@ -3430,11 +3430,57 @@ books:
         # Draft archived: active-project/staff/showrunner/_drafts/b01c05-bones-draft-2026-05-28.md
         # Auditor reports: write-b01c05-pass2.md (Phase 2; 3 attempts), write-b01c05-pass5.md (Phase 5; 2 attempts), write-b01c05-bone-gate.md (Phase 6; 2 attempts).
         # Audience reviewer STM (Phase 4 trim + Phase 6 bone-gate) under "## b01c05 ..." headings.
+        #
+        # ============================================================
+        # /and-write b01-c05 REVISE --from-signals emit 2026-05-28 (post-FAIL cold-read)
+        # ============================================================
+        # Trigger: /and-stitch b01-c05 Phase 9 cold-read FAIL (this same date).
+        # Admin DEC-0040: option (b) targeted bones-add at 3 sites (s01 anchor reinterpreted as s02-courier-intro per chunk discipline).
+        # Phase 1: screen-writer authored 5 candidate new bones (A1, B1, B2, B3, C1).
+        # Phase 2 SVO audit: ACCEPT WITH FLAG (B3 'adds X to Y' PP-tail; precedent @18 same form; no action).
+        # Phase 3 dramatist: ACCEPT all 5 insertions; 1 non-blocking advisory routed to /and-facets narrator-interest.
+        # Phase 4 trim: 3-of-3 ACCEPT (cape-fic + dark-fantasy + worm-canon-pedant). 2 worm-canon SVO refinements applied:
+        #   - A1: "returns the courier-entry" → "returns the courier" (feed surfaces bodies, not records)
+        #   - C1: "resists the flat-read" → "holds the color" (mirrors @29/@31 'holds' idiom; matches chunk vocabulary)
+        # Phase 5 continuity: FINDINGS-PRESENT (3 faults all on Site B):
+        #   - fault-001 FAULT-REFERENCE: "the jarvis-channel" not established
+        #   - fault-002 FAULT-REFERENCE: "the jarvis-form" + "the sera-arrangement-file" not established
+        #   - fault-003 FAULT-STATE: B2/B3 verb 'enters' implies real-time transmission; c04 model + s02 chunk = drafts during, transmits later
+        #   Resolution: B2 amended "the enforcement-report enters the jarvis-channel" → "taylor-hebert-kl-122ac drafts the jarvis-report"; B3 DROPPED entirely. Sera-link migrated to facet layer.
+        # Phase 5 re-audit: CONTINUITY-OK.
+        # Phase 6 bone-gate (integrated 35-bone scaffold):
+        #   - Auditor: PASS (0 HARD; 1 non-blocking advisory on chatter-count data limit).
+        #   - cape-fic-reader: 3-of-3 SUBSTANCE-FELT.
+        #   - dark-fantasy-reader: 3-of-3 SUBSTANCE-FELT. ESCALATED soft carry: Sera-architecture delivery now MANDATORY at /and-facets (B3 drop made the protect-target connection bone-invisible).
+        #   - worm-canon-pedant: 3-of-3 SUBSTANCE-FELT; canonicity all clean; SOFT-WATCH gait/approach/filing structurally distinct CONFIRMED HONORED.
+        # Phase 6.5 admin process-critic: SKIPPED (final verdict fully clean — 0 HARDs, 0 accepted-not-remediated SIGNALs).
+        # Phase 7 emit (revise): full re-numbering 1-35 in scene-order; flat_ids shift from pre-revise 1-31.
+        #   - s01: 1-7 (unchanged)
+        #   - s02: 8-22 (was 8-19); new bones at flat_ids 9 (A1 insect-feed returns courier), 15 (B1 courier raises spine), 19 (B2 drafts jarvis-report)
+        #   - s03: 23-35 (was 20-31); new bone at flat_id 28 (C1 rushwick-feed holds color), recognition stop now at @29 (was @25)
+        #   - DOWNSTREAM FLAT-ID MAPPING (old → new): @8→@8, @9→@10, @13→@14, @14→@16, @15→@17, @16→@18, @17→@20, @18→@21, @19→@22, @20→@23, @21→@24, @22→@25, @23→@26, @24→@27, @25→@29, @26→@30, @27→@31, @28→@32, @29→@33, @30→@34, @31→@35.
+        # Bones file: theater/bones/b01-c05.md (35 bones; 7+15+13 across s01/s02/s03).
+        # Scene-map facet re-emitted: theater/facets/scene-map-b01-c05.md.
+        # Per-bone substance_delta on the 4 new bones (held in showrunner memory only; comment-clean in bones file):
+        #   - A1 @9: axis_moves: [] + cost_ledger_anchor: cl-d05 (chatter substrate; courier-identification feeds s03 foreclosure)
+        #   - B1 @15: axes_held: [{axis: moral_framework, rationale: "courier body-recovery is observable incident continuation; licensed-exception unaffected"}]
+        #   - B2 @19: axes_held: [{axis: moral_framework, rationale: "drafting Jarvis-report is inside licensed exception; routing-name honored without interrogation"}]
+        #   - C1 @28: axis_moves: [] + cost_ledger_anchor: cl-d05 (chatter substrate; the held color IS the cl-d05 mechanism opening political_register-prot at @29)
+        # Soft watches forward (carried to next phases — REVISE-specific additions):
+        #   /and-review bones (MANDATORY): re-verify chunk→bones fidelity on 35-bone scaffold; bones_review stale_since set; gate /and-facets HARD-aborts until fresh review.
+        #   /and-facets (re-run): ESCALATED — Sera-architecture (Sera identity + protective-arrangement + Otto-routing destination) must land at memory + narrator-interest + exposition facets. B3 drop made the connection bone-invisible; without facet-layer delivery, political_register-prot +1.5 at @29 lands as resentment-of-enforcement, not the chapter's specific irony. Per dark-fantasy-reader Phase 6: "this is not optional at the facet layer."
+        #   /and-facets (re-run): old citation @N references in prior facet entries are stale — full re-anchoring required against new flat_ids 1-35.
+        #   /and-stitch (re-run after facets): C1 @28 "holds the color" MUST precede @29 "stops the rushwick-pass" in render — apparatus-holds → protagonist-responds causal direction is the difference between world-physics-response and interior-mood-shift (dark-fantasy + worm-canon both flagged).
+        #   /and-stitch (re-run): cold-read confusions (i)(ii)(iii)(iv)(v) all addressed in bones; cold-read re-test should land.
+        # Draft archived: active-project/staff/showrunner/_drafts/b01c05-revise-fromsignals-2026-05-28.md (full Phase 1-7 trace).
+        # Auditor reports: write-b01c05-pass2-revise.md (Phase 2; 1 cycle), write-b01c05-pass5-revise.md (Phase 5; 2 cycles per amendment), write-b01c05-bone-gate-revise.md (Phase 6; 1 cycle).
+        # Audience reviewer STM under "## b01c05 revise --from-signals — Phase 4 trim" and "## b01c05 revise --from-signals — Phase 6 bone-gate" headings.
+        # ============================================================
         facets_path: active-project/theater/facets/
         round_1_complete: true
         round_2_complete: true
         facets_status: audited-r1
-        facets_stale_since: null
+        facets_stale_since: 2026-05-28T00:00:00Z  # bones file re-emitted at revise Phase 7; all facet entries are stale-anchored against pre-revise flat_ids 1-31; /and-facets re-run required
         audit_path: active-project/staff/auditor/facets-final-audit.md
         audit_complete: true
         audit_findings: 0 HARD / 4 SIGNAL / 10 FLAG (cycle 1) → 0 HARD / 2 SIGNAL / 10 FLAG (cycle 2; fault-028 + fault-033 resolved)
@@ -3460,19 +3506,20 @@ books:
         #   - foreclosure-quartet asymmetry: feel:2 @29 alone between bare @28+@30; @31 has narrator:10 + vibes:17+18; stitch must respect bare flanks
         #   - NI density 25.8% at ceiling — differentiated rhythm in scene-A (3 NI in 7 bones)
         #   - cf-d10 plant @8 + @18 + @27 callback-ready for d10 callback
-        stitched: true
-        stitched_at: 2026-05-28T00:00:00Z
-        draft_file: active-project/draft/b01-c05.md
+        stitched: false  # revise --from-signals dropped stitched flag; draft + cold_read carry stale_since stamps
+        stitched_at: 2026-05-28T00:00:00Z  # historical: prior stitch timestamp (pre-revise)
+        draft_file: active-project/draft/b01-c05.md  # stale against new 35-bone scaffold; /and-stitch re-run required
+        draft_stale_since: 2026-05-28T00:00:00Z  # bones file re-emitted at revise Phase 7
         cold_read:
           read_at: 2026-05-28T00:00:00Z
-          verdict: FAIL
+          verdict: FAIL  # historical: this verdict triggered the revise --from-signals run; preserved as history
           recovered_summary: "narrator (working for an unnamed faction) watched three men beat a recurring courier in a city ward while routing intelligence reports; afterward replayed the day at home"
           report_path: active-project/staff/reviews/coldread-b01-c05-2026-05-28.md
           staging_signals: 0   # /and-review staging deferred under cascade-budget
           staging_report_path: null
           signal_clusters: []
           continue: no
-          stale_since: null
+          stale_since: 2026-05-28T00:00:00Z  # cold-read against pre-revise draft; revise has addressed the 5 confusions; /and-stitch re-run will produce fresh cold-read
           # Phase 9 cold-read FAIL: chapter's central event (recognition-as-feed-stopping-being-neutral) not recovered.
           # Cold reader recovered the courier beating + Taylor's home replay but did not feel the cost (the recognition).
           # Specific confusions: cause-chain (sheet → beating) not explicit; Sera unnamed; "the Hook" unexplained; narrator faction unclear.

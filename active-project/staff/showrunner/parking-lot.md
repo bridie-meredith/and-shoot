@@ -698,3 +698,67 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-05-28-002
+      created_at: 2026-05-28T00:00:00Z
+      created_by: "/and-write b01c05 revise --from-signals Phase 6 (dark-fantasy-reader escalated soft carry)"
+      label: sera-architecture-facet-mandatory-c05
+      target:
+        command: /and-facets
+        scope: "b01c05"
+        phase: null   # resolved at final facet-emit / Phase 5b audience-gate, not a specific phase abort
+      severity: HARD
+      description: |
+        Sera-architecture delivery is now MANDATORY at the /and-facets b01c05 re-run.
+        B3 (Sera-arrangement filing bone) was dropped at /and-write Phase 5 continuity
+        audit (FAULT-REFERENCE: "the jarvis-form" + "the sera-arrangement-file" both
+        unestablished named entities; bone-realizing the Sera-connection would also
+        violate the chapter's substance discipline — s01/s03 force-blocks explicitly
+        state Taylor does not name the connection on-page). The Sera-link therefore
+        migrated to the facet layer.
+
+        Per dark-fantasy-reader Phase 6 bone-gate verdict: "this is not optional at
+        the facet layer." Without facet-layer delivery, the political_register-prot
+        +1.5 axis-move at @29 (taylor stops the rushwick-pass) lands as
+        resentment-of-enforcement, not the chapter's specific irony (the feed stops
+        running flat on the content Taylor has been routing through the same
+        architecture that serves the Sera-protection).
+
+        Required facet-layer deliveries (per dark-fantasy-reader brief):
+        - memory facet: Taylor's prior context on Sera-protection arrangement;
+          must anchor at a chapter-open or s02-filing beat where the Jarvis-report
+          drafting bone (@19) implicitly serves the protective architecture.
+        - exposition facet: reader-facing world-state surface — who Sera is, what
+          the protective architecture protects against, why the Jarvis-routed
+          intelligence is the mechanism. The cold-reader at /and-stitch Phase 9
+          flagged "Sera named once, never explained" — exposition facet must close
+          this without inventing on-page protagonist articulation.
+        - narrator-interest facet: the implicit Sera-connection as a quality of
+          the routing — Taylor's interior posture acknowledges the architecture
+          without naming it (consistent with s01/s03 force-block disciplines).
+
+        Resolution gate: /and-facets b01c05 Phase 5b audience-gate (3-of-3 strict).
+        If dark-fantasy-reader's Phase 5b verdict on memory + narrator-interest +
+        exposition facets returns SUBSTANCE-FELT on the Sera-link irony, this item
+        resolves. If any persona returns FAIL on the Sera-architecture absence,
+        the gate cap-burns or returns to cycle-N fixer to add the missing facet
+        entries — and this item remains HARD until resolved.
+      context_refs:
+        - active-project/staff/auditor/write-b01c05-pass5-revise.md  # B3 drop continuity rationale
+        - active-project/audience/dark-fantasy-reader/stm.md  # Phase 6 bone-gate ESCALATED soft carry
+        - active-project/audience/cape-fic-reader/stm.md  # Phase 6 bone-gate concurring read on Sera-migration
+        - active-project/audience/worm-canon-pedant/stm.md  # Phase 6 bone-gate "B3 dropped: CORRECT" with facet-layer migration appropriate
+        - active-project/staff/reviews/coldread-b01-c05-2026-05-28.md  # original cold-read confusion (iii) on Sera identity
+        - active-project/staff/showrunner/_drafts/b01c05-revise-fromsignals-2026-05-28.md  # B3 drop section + migration plan
+      resolution_suggestion: |
+        /and-facets b01c05 Phase 1 R1 fanout should brief memory + narrator-interest +
+        exposition authors explicitly on the Sera-architecture migration. Add to each
+        author's brief: "B3 (Sera-arrangement filing bone) was dropped at /and-write
+        Phase 5; your facet must carry the Sera-link without Taylor articulating it on
+        page. See parking-lot pl-2026-05-28-002 for required deliveries per facet."
+        Phase 5b audience-gate must include dark-fantasy-reader verdict on the
+        Sera-link irony landing.
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
