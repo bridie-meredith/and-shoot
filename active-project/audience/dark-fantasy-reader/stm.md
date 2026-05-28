@@ -352,8 +352,6 @@ Chapter goal: "Show the audience the acceptance and the network expansion togeth
 
 One soft carry to /and-facets: the moral_framework held-rationale across n07 s01, n07 s02, and the closing bones of s03 must not accumulate into authorial endorsement in the prose rendering. The bones do their job correctly at the SVO level. The facet layer and stitcher must hold the same line: body-behavior, not narrated correctness.
 
-VERDICT: ACCEPT
-
 ---
 
 ## b01c04 Phase 6 bone-gate review — 2026-05-27
@@ -454,7 +452,7 @@ soft_carries_forward:
 
 ### per-bone
 
-s01n01: KEEP - "the hill's stone skirt meets the lane-mouth" — world-before-protagonist on the chapter's opening beat; the ward's physical architecture arrives as a transitive action by a non-human subject before Taylor enters; this reader cannot ask for more than this as an opening
+s01n01: KEEP - "the hill's stone skirt meets the lane-mouth" — world-before-protagonist on the chapter's opening beat; the ward's physical architecture arrives as a transitive act by a non-human subject before Taylor enters; this reader cannot ask for more than this as an opening
 s01n02: KEEP - Taylor enters the Rushwick; necessary structural placement before the feed fills the junction; clean transitive with no editorializing
 s01n03: KEEP - the feed fills the rushwick junction; coverage-acquisition event with two held axes (capability: maintenance-frame; political_register-prot: discipline traveling with Taylor unchanged); feeds the disciplined-entry sequence correctly
 s01n04: KEEP - provisioner-train crosses the junction; the court-tier opposing force arrives in the feed in its canonical form — a body crossing, not a category being announced; world-first causal order maintained
@@ -551,3 +549,82 @@ soft_carries_forward:
   - The B-cluster Sera-arrangement-file is now bone-realized; facet layer (narrator-interest, feeling) must honor that the irony flows from the routing architecture, not from Taylor naming the connection
   - C1 "resists" must precede @25 "stops" in the render sequence — if the stitcher reorders or merges, the apparatus-first causal direction is lost
   - No new watchpoints added; prior soft carries from the Phase 4 trim (s02n06 sequencing, s03n13 as terminal bone) remain active
+
+---
+
+## b01c05 revise --from-signals — Phase 6 bone-gate
+
+---
+reviewer: dark-fantasy-reader
+chapter: b01c05
+phase: write-bone-gate
+date: 2026-05-28
+scenes_reviewed: [b01c05s01, b01c05s02, b01c05s03]
+revise_pass: true
+---
+
+## scene b01c05s01
+verdict: SUBSTANCE-FELT
+s01 is unchanged from the prior bone-gate pass. All nine bones pre-passed SUBSTANCE-FELT. No new bones inserted in s01. The world-before-protagonist order (n01: hill's stone skirt meets the lane-mouth), the held-axis architecture across all nine bones (political_register-prot throughout, capability as maintenance-frame at n02+n03, moral_framework as licensed exception at n06), and the correct first-exposure close (categorization-labor at n09, no color accumulated) are all stable. The revise run did not touch s01. The four new bones are distributed across s02 and s03 only. Nothing in the new bones propagates backwards into s01's substance contract. Verdict carries from prior pass without reopening.
+
+## scene b01c05s02
+verdict: SUBSTANCE-FELT
+The three new bones (A1, B1, B2-amended) integrate into s02's existing architecture without breaking the substance contract, and the amendments made at Phase 5 hold up under full integrated review.
+
+**A1 — `the insect-feed returns the courier` (after @8, amended SVO)**
+The Phase 5 amendment ("the courier-entry" → "the courier") is correct and this reader accepts it. "Returns the courier" reads as the courier's body present in coverage — the feed surfaces the recurring body the same way it surfaces any ward-body. The parallel to @13 ("the side-alley returns the sound") is apt: the alley emits sound as a physical output; the feed returns the courier as a physical-presence output. Chatter bone carrying cl-d05. The recurrence is now apparatus-legible: the feed has prior registration of this body, and the return names it as such. A1's insertion between @8 (courier enters the lane-mouth) and @9 (Taylor holds the wall-line) places the feed-identification as the transition from courier-as-world-event to Taylor-awareness. Causal direction correct: the apparatus identifies first, Taylor's held-wall follows. World-first order maintained. Violence-without-aftermath: not yet a hot-button trigger here — the courier has not yet been touched; this is pure feed-identification. No walkout trigger. The cf-d10 thread now has apparatus depth: the recognition at @25 / @27 / @28 / @29 is now grounded in a feed-return that establishes prior registration, not in Taylor coincidentally noting a face.
+
+**B1 — `the courier raises the spine` (between @13 and @14, unchanged)**
+SUBSTANCE-FELT contribution sustained at integrated review. The sequence is now: @13 (side-alley returns the sound) → B1 (courier raises the spine) → @14 (courier finds the feet). The physical recovery is spine-then-feet — specific, anatomically ordered, the body doing what bodies do in that sequence. The violence-without-aftermath hot-button does not fire: the courier's body goes through a specific physical sequence before it is categorized at @15-@16. B1 adds the intermediate step the original chain elided. The moral_framework hold is clean: "licensed exception absorbs the observation without interrogating it" — Taylor observes the spine-raise and does not intervene; the licensed exception continues running. No catharsis at this bone; the world is doing physics.
+
+**B2-amended — `taylor-hebert-kl-122ac drafts the jarvis-report` (after @16, replacing the original B2)**
+This is the amendment I am watching most carefully, because the Phase 4 trim voted KEEP on the original B2 ("the enforcement-report enters the jarvis-channel") specifically for its cause-chain irony — and the Phase 5 auditor dropped both the original B2's channel-routing form AND B3 (the Sera-arrangement-file bone). The amended B2 ("drafts the jarvis-report") carries Jarvis as implicit recipient through the report's compound name ("jarvis-report" established in the s02 chunk as "Taylor begins the Jarvis report"). The routing-name carries the recipient; the Sera-architecture does not appear at the bone level.
+
+What the amended B2 delivers: the drafting action is intra-scene valid (Taylor composes, does not transmit in real-time), the subject is Taylor (not the report-as-autonomous-entity), the moral_framework hold is clean (drafting the Jarvis-report is inside the licensed exception; the routing-name honored without interrogation). The cause-chain at bone level is now: courier beaten (@12) → alley returns the sound (@13) → courier raises the spine (B1) → courier finds the feet (@14) → Taylor files enforcement-record (@15) → Taylor delivers report-entry (@16) → Taylor drafts the Jarvis-report (B2) → figures exit (@17). That is a complete cause-chain from incident to reporting action. What is absent from the bone level, following B3's drop, is the explicit connection from the reporting action to the Sera-protection architecture.
+
+My assessment: the Sera-architecture's absence from the bone level is the chapter's substance discipline, not a hole. The substance contract for s01 and s03 both include force-blocks stating "she has not named what it means that these bodies are connected to the architecture that keeps Sera's exposure managed." The bone-level silence on the Sera-connection is the discipline running correctly. B2-amended delivers the routing-name ("jarvis-report") without the connection spelled out; the reader who has b01c04 knows what the Jarvis-report serves; the reader who does not yet have that knowledge needs the facet layer to supply it. That is what the Sera-connection migration to memory/exposition/narrator-interest facets accomplishes. At the bone-gate level, the question is whether the moral_framework stake is still felt as opposition. It is: the licensed exception absorbs the act of drafting the report that routes upward, and the bone does not examine what the routing serves. The reader can see the gap that Taylor does not name. That is the architecture. The bones deliver it.
+
+One concern from the Phase 4 trim carries forward as a soft watch: in that pass, I said "Without B3, the reader cannot watch the rationalization from outside because they cannot see what the routing serves." B3 is gone. But the amended B2 is not the same as having neither B2 nor B3: the "jarvis-report" compound in B2's SVO carries the routing-name, and a reader following from b01c04 knows Jarvis = Otto's channel = the architecture protecting Sera. The information is in the reader's prior context, not absent from the chapter entirely. What B3 would have added was bone-level explicitness for that connection in this chapter's sequence. Its absence does not make the irony invisible; it defers the irony's structural anchoring to the facet layer. That is an acceptable distribution given the chapter's substance discipline. I am noting this as a revised soft watch rather than a hard finding: the /and-facets re-run on this chapter must deliver the Sera-architecture at the memory and narrator-interest facets, or the irony at @25 collapses into ambient resentment as I flagged in the Phase 4 trim's B3 assessment. The bone-gate passes; the facet dependency is now an open carry.
+
+**s02 integrated substance contract:**
+Moral_framework (stakes axis): held across all three new bones (A1 as chatter, B1 as moral_framework-held, B2 as moral_framework-held). The opposing force (enforcement-incident specificity) is now more fully rendered: A1 grounds the recurrence, B1 specifies the recovery sequence, B2 names the reporting action. The gap-instrument pair (n06 alley-sound, n07/B1 spine+feet) delivers the register-outside-Taylor's-data-frame that the attempt-2 chunk review required. No violence-without-aftermath. No catharsis. The incident closes on the reporting action (B2, then @17 figures exit) with the reader having material the feed does not log.
+
+## scene b01c05s03
+verdict: SUBSTANCE-FELT
+C1-amended — `the rushwick-feed holds the color` (after @24, before @25) — is the bone I am assessing most carefully in this pass, because the Phase 4 trim voted KEEP on the original C1 ("the rushwick-feed resists the flat-read") specifically for its world-pushes-back causal direction, and the amendment changes the verb and object.
+
+**The amendment's effect on causal direction:**
+Original C1: "the rushwick-feed resists the flat-read" — the feed performs agentive opposition against the procedure. Apparatus-first: the apparatus does something before Taylor responds.
+Amended C1: "the rushwick-feed holds the color" — the feed retains an output the flat-read cannot strip. Not opposition-as-behavior but retention-as-state: the color is present in the feed; the flat-read does not remove it.
+
+The amendment note argues "holds" is licensed by @29 ("the provisioner-train holds the rushwick-pass") and @31 ("the courier-walk holds the rushwick-pass"), where "holds" means the physical content of the Rushwick persists against the flat-read procedure. That parallel is correct and load-bearing: the foreclosure sequence (n10-n13) already uses "holds" in this exact sense — the physical body-content of the Rushwick holds the pass against Taylor's procedural attempts to flatten it. C1-amended places the same verb in the substrate bone at @24-@25, making it consistent with the language of the foreclosure sequence it prepares.
+
+The causal direction question: does "the rushwick-feed holds the color" still make @25 ("taylor stops the rushwick-pass") read as response-to-apparatus rather than as interior-mood-shift? My verdict: yes, with a narrowed margin. "Holds the color" is not passive — it names a persistent state in the apparatus that the flat-read has not resolved. The color is in the feed; Taylor runs the flat-read; the color is still there. The stopping at @25 is the response to the persistent state. The causal chain is: apparatus holds → protagonist encounters the held state → protagonist stops. That is apparatus-first. The verb is softer than "resists" but the causal direction is intact because "holds" in this context is not merely describing a state — it is describing a state that the flat-read should have resolved but did not. The apparatus operates by its own rule (color persists), and Taylor responds (stops the pass). The world pushes back by holding what should not hold against the procedure.
+
+The magic-as-reliable-tool hot-button still does not fire: the feed holds the color rather than returning a clean flat-read. The apparatus is not performing as expected. That is the opposite of reliable-tool.
+
+**C1-amended integrated into the s03 sequence:**
+@24 (provisioner-train re-crosses the junction) → C1 (the rushwick-feed holds the color) → @25 (Taylor stops the rushwick-pass: +1.5 political_register-prot, cl-d05). C1 is the apparatus-event between the court-tier content's replay appearance and Taylor's cessation. Without C1, the stopping reads as Taylor noticing something and deciding to stop — an interior event. With C1-amended, the stopping reads as Taylor responding to a feed-state that has not resolved — an external event the apparatus delivers before Taylor acts. The causal direction is preserved.
+
+**political_register-prot +1.5 at @25: does it land as SUBSTANCE-FELT?**
+The cl-d05 substance contract: "neutral-instrumentally-observant is foreclosed from d05 forward." The opposing force: "accumulation regardless of categorization." C1-amended makes the accumulation visible as apparatus physics: the color holds in the feed against the flattening procedure. @25 (stops) is the recognition's physical correlate. n10-n13 (the two-pass foreclosure sequence) confirm the stopping as the opening of permanent unavailability, not as a single missed read. The +1.5 is anchored at @25 (the stopping = the account-opening event) and confirmed by n10-n13 (the failed re-attempts). The door-closing image is delivered by the two-pass structure, not by C1 alone. C1-amended provides the substrate; the foreclosure sequence provides the confirmation. The +1.5 lands as SUBSTANCE-FELT because the recognition is not interior-arrived — it is apparatus-delivered, responded to physically, and confirmed as permanent by failed re-attempts. That is the correct architecture for this axis-move.
+
+**Threshold discipline:**
+No catharsis: the chapter closes on n13 (the courier-walk holds the rushwick-pass), the terminal bone, with the failed read unresolved. No resolution appended. The door is closed because it does not open, not because Taylor sees it is closed. No walkout triggers in s03.
+
+---
+
+### Integrated chapter verdict
+
+All three scenes: SUBSTANCE-FELT. The 4 new bones (A1-amended, B1, B2-amended, C1-amended) integrate into the 31-bone file without breaking any substance contract. Key watchpoints from prior passes:
+
+- s02 gap-instrument pair (n06 alley-sound, B1 spine-raise): intact. World delivers before data-layer categorizes.
+- s03 foreclosure sequence (n10-n13): intact. Two-pass enactment of permanent unavailability.
+- s03 terminal bone (n13): intact. Stitcher must not append after this.
+- B3 drop: Sera-architecture now fully facet-deferred. This is an escalated soft carry, not a hard finding.
+
+soft_carries_forward:
+  - **ESCALATED soft carry (from Phase 4 trim B3 assessment):** B3 is dropped; the Sera-architecture connection (enforcement-incident → Jarvis-channel → protection arrangement) is no longer bone-level visible. The irony at @25 now depends entirely on the memory facet + narrator-interest facet + exposition facet delivering the Sera-context. If the /and-facets re-run does not anchor Sera's identity and the protection architecture in at least the memory facet, the political_register-prot +1.5 risks landing as resentment-of-enforcement rather than as the specific irony of routing the enforcement incident through the same architecture that serves the protection. This is the chapter's load-bearing irony. Flag for /and-facets orchestrator: Sera-architecture delivery is now mandatory at the facet layer, not optional.
+  - C1 "holds the color" must precede @25 "stops the rushwick-pass" in the render sequence. Stitcher must not reorder or merge these — the apparatus-holds → protagonist-responds causal direction is the difference between interior-mood-shift and world-physics-response.
+  - s02n06 sequencing: "the side-alley returns the effortful sound" must precede the feed's re-categorization (narrator-interest facet). This carry is unchanged from prior passes.
+  - s03n13 as terminal bone: stitcher adds nothing after the courier-walk holds the rushwick-pass.
