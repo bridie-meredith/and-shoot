@@ -3390,11 +3390,18 @@ books:
         bones_count: 35  # was 31; revise --from-signals added 4 bones (A1, B1, B2, C1; B3 dropped at Phase 5 continuity)
         substance_bone_gate_verdict: PASS  # re-stamped at revise Phase 6: 9/9 SUBSTANCE-FELT + auditor PASS
         bones_review:
-          reviewed_at: 2026-05-28T00:00:00Z
-          report_path: active-project/staff/reviews/bones-b01c05-2026-05-28.md
+          reviewed_at: 2026-05-28T00:00:00Z   # re-stamped post-revise; original review at active-project/staff/reviews/bones-b01c05-2026-05-28.md superseded
+          report_path: active-project/staff/reviews/bones-b01c05-2026-05-28-revise.md
           verdict: PASS-WITH-NOTES
-          bones_file_mtime_at_review: 1779952025
-          stale_since: 2026-05-28T00:00:00Z  # bones file re-emitted at revise Phase 7; mandatory /and-review bones re-run before /and-facets per URI-WRITE-BONES-REVIEW-GATE
+          bones_file_mtime_at_review: 1779988909   # mtime of bones/b01-c05.md at revise re-review; bumped from 1779952025
+          stale_since: null   # cleared at /and-review bones b01c05 PASS-WITH-NOTES; /and-facets b01c05 unblocked
+          # Re-review (post revise --from-signals): 18 findings (15 PASS, 3 FLAG, 0 HARD).
+          # All 5 cold-read confusions RESOLVED at bone level; Sera-identity PARTIAL by architectural design (facet-dependent).
+          # FLAGs carried forward:
+          #   - finding-009: Sera-identity PARTIAL — routed to /and-facets via pl-2026-05-28-002
+          #   - finding-010: dup-001 @32+@34 SVO dup — advisory to /and-stitch (distinguishable prose for two foreclosure attempts)
+          #   - finding-011: flag-002 @25 "resolves" intransitive — advisory to /and-stitch
+          #   - finding-018: /and-facets cite-responsibilities must re-anchor against new flat_ids 1-35 (facets_stale_since already set)
           # Verdict: no HARDs; 2 FLAGs carried from Phase 6 (s03n10+n12 SVO duplicate; s03n03 "resolves" intransitive); 3 notes for /and-facets:
           #   note-001: courier's post-enforcement walk image — narrator-interest/sensory facet must cite @23-@25 (s03n07 removed at Phase 6 fault-003; image is load-bearing for resentment-accumulation read)
           #   note-002: cf-d10 face-content — memory or narrator-interest facet must associate face with body-record @27 (otherwise d10 callback loses face-recognition anchor)
