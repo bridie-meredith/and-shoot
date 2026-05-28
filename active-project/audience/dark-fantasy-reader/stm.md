@@ -380,29 +380,6 @@ The chapter's three-axis delivery scene (capability +1.0 at n03, social_tether-p
 
 ---
 
-### Chapter-level gate findings
-
-SUBSTANCE-FLAT: none
-SUBSTANCE-SUSPECT: none
-hard_findings: none
-
-### Soft carries to /and-facets (accumulated)
-
-- s01 rationalization watch: the moral_framework held-bones (s01n07, s02n07, s03n10/n11/n12) must not accumulate into authorial endorsement through held-rationale prose at the facet or stitch layer. The bones are clean. The watch is the facet-layer and stitcher's responsibility.
-- The "same ledger" Khepri-rhyming architecture (Hook triage = Pig Tallow triage = the same operation) must land as procedure in the prose rendering, not as significant repetition performed for the reader. The bones enact it correctly; the facet-layer must not italicize it.
-
-### Threshold discipline fires — chapter-level
-
-- Hope that costs nothing: no instance across all three scenes.
-- Enemies pausing at convenient moments: no instance. Jarvis processes and exits across all three visit-points without deliberation or ceremony.
-- Magic as reliable tool: no instance. Feed is operated as labor throughout ("extends," "maps," "runs"). No trust-vocabulary.
-- Violence without aftermath: no instance. Oswyn is named, aged, unknowing. His cost is structural before it is abstract.
-- World as set dressing: no instance. Seven sensory grounding bones across three scenes, all with non-human environmental subjects acting before Taylor enters.
-- Catharsis before weight: no instance. Chapter closes on the open question (n12: exits the stitch-house lane without examining the anchor). No resolution, no recognition, no arrival.
-- Westerosi characters reacting with wrong flavor of shock: no instance. The ward-physics (discard-air, stitch-house frames, early-morning grey emptying the court) are environment-specific, not generic medieval. Taylor reads them without the curiosity or adaptation flavor — she reads them the same way she reads any ward's topology.
-
----
-
 ## b01c05 chunk review — 2026-05-28
 
 verdict_per_scene:
@@ -470,3 +447,50 @@ hard_findings: none
 soft_carries_forward:
   - s02: the "It is what the feed reads" rationalization is now watchable from outside; at /and-write and facet layers, the sound-before-categorization sequence must be maintained — the image must precede the feed's re-categorization, not follow it, or the watchpoint reopens
   - s03: at prose rendering, "the filing does not return the read" is the chapter-closing beat; the stitcher must not add resolution after this — the chapter must end on the failed attempt, not on Taylor processing what the failure means
+
+---
+
+## b01c05 trim pass — 2026-05-28
+
+### per-bone
+
+s01n01: KEEP - "the hill's stone skirt meets the lane-mouth" — world-before-protagonist on the chapter's opening beat; the ward's physical architecture arrives as a transitive action by a non-human subject before Taylor enters; this reader cannot ask for more than this as an opening
+s01n02: KEEP - Taylor enters the Rushwick; necessary structural placement before the feed fills the junction; clean transitive with no editorializing
+s01n03: KEEP - the feed fills the junction; coverage-acquisition event with two held axes (capability: maintenance-frame; political_register-prot: discipline traveling with Taylor unchanged); feeds the disciplined-entry sequence correctly
+s01n04: KEEP - provisioner-train crosses the junction; the court-tier opposing force arrives in the feed in its canonical form — a body crossing, not a category being announced; world-first causal order maintained
+s01n05: KEEP - provisioner-train takes the east-lane; distinct motion from n04 (crossing vs. clearing); the two-bone split is not redundant — n04 is the arrival, n05 is the transit-exit, and the held-axis rationale on n05 (discipline absorbs as different-substrate) is the scene's opposing-force content at its cleanest
+s01n06: KEEP - Taylor maps the provisioner-train interval; read-without-affect enacted as SVO; the categorization work the court-tier substrate demands is visible through what Taylor does (maps) not through what she says about it
+s01n07: KEEP - the message-runner crosses the junction; second court-tier body; the opposing force doubles without the discipline cracking; held as political_register-prot
+s01n08: KEEP - the message-runner takes the lane-mouth; coverage-release semantics via exit motion; "takes the lane-mouth" enacts the feed's release without a PP; the discipline's restraint (no follow) is in the held-axis rationale, not stated in the SVO
+s01n09: KEEP - Taylor maps the message-runner gait-class; closes s01 on categorization-labor rather than on affect or conclusion; the court-tier content's novel weight is present only in the work the naming demands; no color accumulated; correct first-exposure close
+
+s02n01: KEEP - the courier enters the lane-mouth; third sighting; grounding bone for s02; subject is the courier (physical actor), not Taylor or the feed; scene opens on the recurring body entering before Taylor maps
+s02n02: KEEP - Taylor maps the courier gait-signature; worm-canon soft-watch bone 1 of 3; recognition without categorization collapse; the heel-first gait is the world's physical fact, not Taylor's interpretation of it
+s02n03: KEEP - the three figures enter the side-alley off the east exit; enforcement geometry enters the feed before Taylor categorizes it; subject is the figures (world), not Taylor; correct causal order
+s02n04: KEEP - the three figures close the alley-mouth; exit-blocking as enforcement-read bone; the feed's categorization names a class of content it has not processed before; the opposing force is present through what the physical bodies do, not through Taylor naming the class
+s02n05: KEEP - the three figures pin the courier against the stone; single body held against stone — the enforcement action on-page; moral_framework held because Taylor does not intervene; the discipline's absorption of faction-violence content is the hold; the violence is not data yet — it is a physical action by three bodies before the feed categorizes it
+s02n06: KEEP - "the side-alley returns the effortful sound" — this is the load-bearing gap-instrument bone; subject is the alley (the world), not the feed; the sound is delivered by the environment before the feed re-categorizes; the sequencing is correct and the soft carry from attempt 2 chunk review is satisfied at bone level; do not touch this bone
+s02n07: KEEP - "the courier finds the feet" — gap-instrument bone B; the courier's physical recovery is the world's event; the feed's re-categorization (brief contact, courier retained on feet) is facet-material, not the SVO; the juxtaposition of n06 (effortful sound) + n07 (courier finds feet) performs the gap between world and feed; the sound is not in what the feed logs; this bone is required for that gap to close correctly
+s02n08: KEEP - Taylor maps the enforcement approach-geometry; worm-canon soft-watch bone 3 of 3 (filing); structurally distinct from recognition (n02) and read (n04); the discipline names the content as data at this bone, which is the rationalization running in its operational form
+s02n09: KEEP - Taylor delivers the enforcement report-entry; factual routing discipline enacted; the report goes to Jarvis as movement-pattern and the rationalization "it is what the feed reads" is running at full frame here; the reader now has the alley-sound (n06) to watch this from outside
+s02n10: KEEP - the three figures exit the alley-mouth; the opposing force withdraws from the feed; purposive-unhurried departure gait is the world's physics reading as work-complete; the incident closes in the feed's record at this bone
+s02n11: KEEP - Taylor maps the courier body-filing; cf-d10 thread initiation; the courier body is flagged as recurring with enforcement-incident attached; body-map, not ledger — the face is in Taylor's operational texture, not in any deliverable; correct thread-planting bone
+s02n12: KEEP - the courier takes the junction-corner; "no follow" discipline enacted via feed-release; the incident closes in the feed's record and the coverage boundary is where it was; structurally distinct from n11 (filing) — n11 is the map, n12 is the feed releasing; both are needed; the chapter goal's courier-face thread is planted by n11; n12 closes the scene's action without redundancy
+
+s03n01: KEEP - Taylor takes the room-floor; grounding bone for the evening review; the physical location establishes the review-surface before the accounting begins; clean transitive
+s03n02: KEEP - Taylor runs the Hook-feed; baseline read; the flat-document pass runs on known content before the Rushwick contrast arrives; necessary prior for the foreclosure sequence's comparison structure
+s03n03: KEEP - the Hook-feed resolves; try-flat-read sequence bone: the pass works on this content; what resolution looks like before the Rushwick fails to provide it; this bone is load-bearing for the foreclosure — without it, the Rushwick's failure to resolve has no baseline to fail against
+s03n04: KEEP - Taylor runs the Rushwick-feed; first-pass attempt on new content; initiates the try-flat-read sequence; distinct from n10/n12 (second and third attempts) — n04 is the first read in the evening review, before the recognition; the contrast with n02 (Hook) is structural
+s03n05: KEEP - the provisioner-train re-crosses the junction; the "re-" prefix carries the replay-context without stating it; the court-tier body returns in the review without the discipline's real-time frame; the color arrives without a label; opposing force becoming visible without the organizational discipline to absorb it; the recognition content correctly deferred to facet
+s03n06: KEEP - Taylor stops the rushwick-pass (+1.5 political_register-prot, cl-d05); the cessation IS the recognition event — this is the load-bearing axis-move bone for the chapter; "stops the rushwick-pass" is a physical action (cessation) not an introspection; the +1.5 is anchored to the stopping; no protagonist-clarity overreach — the bone does not name what Taylor has seen, only that the pass stopped; the recognition content moves to narrator-interest facet; this bone holds the chapter's substance contract and must not be deleted
+s03n07: KEEP - the courier-face surfaces in the rushwick replay; post-recognition image; the courier's post-enforcement walk arrives in the replay as a body that has just been reminded it is being watched; cf-d10 thread confirmed operational in the evening review; the face is in Taylor's body-map as operational texture, not in any deliverable
+s03n08: KEEP - Taylor closes the evening review; the closing IS the filing-as-texture protagonist_force; the review ends on a physical act (closing) not on an affect; the moral_framework hold is enacted through the act of ending, not through a statement about what has been noticed; necessary structural boundary before the re-run sequence
+s03n09: KEEP - Taylor maps the courier body-record; cf-d10 thread confirmed open with enforcement-incident attached; the face is in the body-map; this bone cements the thread-planting from s02n11 in the evening-review context
+s03n10: KEEP - Taylor runs the rushwick flat-read (foreclosure enactment bone 1); the attempt to restore the neutral read via the same pass that closes the Hook; this is the first re-run after n04's first attempt and n06's stopping; structurally distinct — n04 is the first read, n06 is the stop, n10 is the re-attempt; the foreclosure sequence requires this bone to enact the try-again discipline
+s03n11: KEEP - the provisioner-train holds the rushwick-pass (foreclosure bone 2); inverted SVO — physical subject (provisioner-train from the replay) holds physical procedure as object; the neutral read does not return; color returns instead; first on-page enactment of the capability failure; this bone is one of the four foreclosure-sequence bones that carry the cl-d05 door-closing image; do not delete
+s03n12: KEEP - Taylor runs the rushwick flat-read again (foreclosure bone 3); the second attempt; the repetition of the same SVO from n10 is load-bearing — it enacts the discipline trying again rather than accepting the first failure; two tries are required for the foreclosure to read as confirmed rather than as a single miss
+s03n13: KEEP - the courier-walk holds the rushwick-pass (foreclosure bone 4, final); parallel structure to n11 but distinct anchor (courier-walk from s03n07 rather than provisioner-train); same result — the neutral read is not available for this content; foreclosure confirmed by the second hold; the chapter's closing beat per the soft carry from attempt 2; "the filing does not return the read" is the chapter's last image; no catharsis, no resolution, the door is closed because it does not open when turned
+
+### file-level verdict
+
+ACCEPT - 34 KEEP, 0 DELETE; the gap-instrument pair (s02n06+n07) and the foreclosure sequence (s03n10-n13) both deliver their contracted substance; the chapter closes on enacted capability failure with no catharsis appended; soft carry to /and-facets: sound-before-categorization sequence (s02n06 must precede feed's re-categorization) and chapter-closing beat (s03n13 must be the terminal bone — stitcher adds nothing after)
