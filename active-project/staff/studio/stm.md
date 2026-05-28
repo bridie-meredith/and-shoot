@@ -10,16 +10,19 @@ Skip-notable: @1 (pre-empt guard), @7 (peak-bone env-silent; coverage-release is
 Flagged seams: SEAM-001 (taylor's-lodging noun-form lacks oc-card; margit referral); SEAM-002 (oc-enforcement-report-entry.card.md needed); SEAM-003 (oc-courier-body-map.card.md needed before b01c06); SEAM-004 (chapter-close time_of_day = evening; b01c06 Phase 0 must account for time-of-day reset).
 Chapter-close env state: location = taylor's-lodging; time_of_day = evening; coverage_active_range = rushwick-included; prop:oc-courier-body-map.state = filed; prop:oc-enforcement-report-entry.state = filed-with-jarvis.
 
-## 2026-05-28 — /and-facets b01-c05 Phase 1 R1 sensory authoring
+## 2026-05-28 — /and-facets b01-c05 Phase 1 R1 sensory authoring (FILED)
 
-Authored sensory.md for b01c05 (2 entries, 31 bones). Density 6.45% — ADVISORY (modality-floor priority).
+Filed sensory-b01-c05.md (2 entries, 35 bones). Density 2/35 = 5.7% — within 3-6% band (state.md carried stale 31-bone count yielding 6.45% ADVISORY; corrected here — no ADVISORY applies; standard band).
 Two fires across two modalities:
-  sensory:1 @4 tactile (lane-stone-surface-baseline → provisioner-cart-load-on-stone, spike) — scene-A, provisioner-train crossing junction with loaded carts.
-  sensory:2 @13 sound (alley-stone-contained-silence → courier-effortful-body-sound, spike) — scene-B, mandatory bones-review note-003 carry; effortful-qualifier stripped at Phase 6 fault-002; dark-fantasy gap-instrument.
+  sensory:1 @4 tactile (lane-stone-surface-baseline → provisioner-cart-load-on-stone, spike) — scene-A, provisioner-train crossing junction with loaded carts. Old-state sourced from loc-state:1 @1 + oc-rushwick Texture vocabulary.
+  sensory:2 @13 sound (alley-stone-contained-silence → courier-effortful-body-sound, spike) — scene-B, mandatory bones-review note-003 carry; effortful-qualifier stripped at Phase 6 fault-002; dark-fantasy gap-instrument. Old-state sourced from loc-state:7 @11 (alley-interior contained) + oc-rushwick Sensory Vocabulary (side-alley sound-gap defined). Anchor @13 per locked state; SEAM-005: more precise anchor may be @14 (alley-returns-sound bone is the explicit perceptual event) — flagged for R2 reviewer attention.
 Modalities: tactile + sound (2; floor met).
 note-003 effortful-qualifier: CONFIRMED CARRIED at sensory:2 @13.
-note-001 courier-walk visual/spatial: NOT CARRIED — rubric-ineligible (interior replay / fauna-feed-extension). SEAM-001 flagged; recommend narrator-interest.
-Scene-C: 0 fires (all bones interior/cognitive; indoor baseline with no sensory inflections above threshold).
+note-001 courier-walk visual/spatial: NOT CARRIED — rubric-ineligible (interior replay / fauna-feed-extension); routed to narrator-interest.
+Tallow-smoke: NOT fired — sustained ambient per oc-rushwick ("consistent ambient note"); belongs in loc-state baseline, not sensory inflection; correct omission.
+Scene-C: 0 fires — all bones cognitive/replay; indoor env established at loc-state:9 @20; no discrete perceptual inflection above threshold.
+Per-scene cap: scene-A 1 fire (≤3 ✓), scene-B 1 fire (≤3 ✓), scene-C 0 fires (≤3 ✓).
+Inflight: theater/facets/_inflight/proto-lines-sensory.md filed (byte-identical SVOs + [sensory:N] tokens).
 
 ## 2026-05-28 — /and-facets b01-c05 Phase 1 R1 location-state authoring
 

@@ -694,10 +694,17 @@ parking_lot:
         - active-project/staff/auditor/write-b01c05-pass2.md  # signal-003
         - active-project/staff/auditor/write-b01c05-pass5.md  # geography consistency check
       resolution_suggestion: "margit dispatch at /and-facets Phase 0 to author oc-rushwick.card.md from chunk-text geography references"
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-05-28T00:00:00Z
+      resolved_by: "margit dispatch at /and-facets b01c05 Phase 0"
+      resolution_note: |
+        oc-rushwick.card.md authored from chunk-text geography references (bones
+        file locations header, scene-map-b01-c05.md per-scene location notes,
+        showrunner memory b01c05 chunk text for s01/s02/s03); library + warehouse
+        copies present. Library: cards/locations/oc-rushwick.card.md (full quality).
+        Warehouse: active-project/warehouse/oc-rushwick.md (copy per warehouse
+        convention — .md suffix, no .card.md). cards/locations/INDEX.md updated
+        (oc-rushwick added to by_world/planetos and by_quality/full).
 
     - id: pl-2026-05-28-002
       created_at: 2026-05-28T00:00:00Z
