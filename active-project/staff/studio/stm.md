@@ -1,5 +1,16 @@
 # studio STM
 
+## 2026-05-28 — /and-facets b01-c05 Phase 1 R1 location-state authoring
+
+Authored location-state.md for b01c05 (9 entries after authoring-phase cull, 31 bones).
+Single location: the-rushwick (no oc-card; pl-2026-05-28-001 flagged for margit).
+Three scenes: scene-A outdoor morning (junction + lane-mouth + east-exit), scene-B outdoor morning (side-alley sub-location), scene-C indoor evening (lodging room-floor).
+Fires: @1 world-before-protagonist anchor (lane-mouth/stone-skirt); @4 junction provisioner-train; @6 junction message-runner; @7 lane-mouth coverage-edge; @8 lane-mouth courier-entry; @10 side-alley entry; @11 alley-mouth blocked; @17 alley-mouth reopened; @20 indoor room-floor scene-C anchor.
+Cull (authoring phase): 4 candidates removed (@2 enters-rushwick; @5 takes-east-lane; @14 finds-feet; @19 takes-junction-corner).
+No continuity-carry entries: all scenes excluded by rising / rising-to-peak rhythm-shape.
+Seam flagged: @3 (insect-feed fills junction — feed-perception beat, inherits @1), @9 (holds wall-line — stillness, inherits @8), @12 (pin courier — contact-in-place, inherits @11), @13 (alley returns sound — environmental-agency/sensory beat, inherits @11; sensory facet carries "effortful" qualifier), @15–@16 (filing/delivery dexterity — inherit @11/@8 per scene position).
+Scene-C inherited: @21–@31 all inherit from @20 (room-floor); all are cognitive/replay beats with no loc-state change.
+
 ## 2026-05-27 — /and-facets b01-c04 Phase 1 R1 state-updates-env authoring
 
 Authored state-updates-env.md (14 entries, 39 bones; env + prop slice only; actor state separate).

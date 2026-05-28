@@ -5,47 +5,42 @@ last_updated: 2026-05-28
 action: location-state R1 authoring — /and-facets b01-c05 Phase 1
 
 ## Current set
-location: oc-stitch-house-lane (Taylor exits @39; chapter close; walk-back through Hook)
-time_of_day: early-morning (first-bell at oc-cooper-yard-eel-alley; pre-dawn grey at oc-ropers-court)
+location: the-rushwick (no oc-card; pl-2026-05-28-001 open for margit)
+time_of_day: evening (scene-C close; Taylor on room-floor)
 weather: none recorded
 ambient_conditions:
-  - oc-cooper-yard-eel-alley: tallow-damp from lane-caulking (persistent; first-bell working-hours)
-  - oc-pig-tallow-lane: middens-discard-compound + carter-work-ambient (working-hours)
-  - oc-ropers-court: near-silence, pre-dawn grey (early-morning; rope-walk not yet started)
-  - oc-stitch-house-lane: tallow-lamp smoke at floor level (working hours); drain-water trickle
+  - the-rushwick (outdoor junction + lane-mouth + east-exit side-alley): morning ambient, no special conditions recorded
+  - the-rushwick (indoor lodging room): evening; door shut; feed-review only
 
 ## Chapter-close spatial anchors
-  - report-sheet: in jarvis-coin-kl-courier's possession (pocketed @32)
-  - jarvis departed cooper's yard @36
-  - taylor exiting stitch-house-lane @39 running four-ward feed
+  - Taylor: room-floor of Rushwick-adjacent lodging (@20 onward; scene-C close @31)
+  - courier: last known position — junction-corner (@19); not tracked past that
+  - three enforcement figures: last known position — east exit corridor (@17); departed
 
-## Sensory baselines locked (b01c04)
-  smell — chapter-open: eel-alley-dawn-air → tallow-damp-lane-caulking (sensory:1 @1)
-  smell — scene-B entry: tallow-damp-lane-caulking → middens-discard-compound (sensory:2 @13)
-  sound — scene-C entry: carter-work-ambient → roper's-court-near-silence (sensory:3 @25)
+## Location-state sequence locked (b01c05) — 9 entries
+  loc-state:1 @1  — the-rushwick | morning | lane-mouth open, stone skirt at grade (world-before-protagonist anchor)
+  loc-state:2 @4  — the-rushwick | morning | junction open, provisioner-train mid-cross
+  loc-state:3 @6  — the-rushwick | morning | junction clearing, message-runner in-transit
+  loc-state:4 @7  — the-rushwick | morning | lane-mouth at coverage-edge (far transit boundary)
+  loc-state:5 @8  — the-rushwick | morning | lane-mouth threshold (courier entry, inward direction)
+  loc-state:6 @10 — the-rushwick | morning | side-alley mouth open, east exit adjacent
+  loc-state:7 @11 — the-rushwick | morning | alley-mouth blocked, alley-interior contained
+  loc-state:8 @17 — the-rushwick | morning | alley-mouth open, east exit restored
+  loc-state:9 @20 — the-rushwick | evening | indoor, room-floor, door shut
+  Cull (authoring phase): 4 candidates removed
+    @2 — enters rushwick (culled: @1 world-anchor already licenses ward-interior inheritance; threshold covered)
+    @5 — provisioner-train takes east-lane (culled: bone self-carries direction; junction-inherited env sufficient)
+    @14 — courier finds feet (culled: strip test passes in inherited alley-interior; body-state not loc-state)
+    @19 — courier takes junction-corner (culled: junction established thoroughly in scenes A; alley-mouth-open @17 sufficient)
+  No continuity-carry entries: all three scenes excluded by rising/rising-to-peak rhythm-shape (transition-run license does not fire)
 
-## Location-state sequence locked (b01c04) — 6 entries
-  loc-state:1 @1  — oc-cooper-yard-eel-alley | predawn | tallow-damp reaches shed-wall before yard visible
-  loc-state:2 @4  — oc-cooper-yard-eel-alley | predawn | shed-wall cover: back to timber, lane-mouth across open yard
-  loc-state:3 @13 — oc-pig-tallow-lane | morning | three alleys converge at junction-mouth; discard-air heaviest
-  loc-state:4 @25 — oc-ropers-court | predawn | early-morning grey; court sight-clear to all tributary mouths
-  loc-state:5 @29 — oc-cooper-yard-eel-alley | first-bell | Jarvis at lane-mouth; half-yard open air to shed-wall
-  loc-state:6 @39 — oc-stitch-house-lane | morning | north-end lane-mouth; last threshold before Hook opens out
-  Cull: 2 deleted (@17 carter-parks — no subsequent actor-movement turns on it; @36 Jarvis-exits — exit legible in inherited env)
-
-## Coverage state (state-updates-env; new field: studio.coverage_active_range)
-  coverage_active_range: four-ward-complete
-    - oc-hook-precinct (pre-existing; c01–c03 baseline)
-    - oc-pig-tallow-lane (added state:3 @15; day-1 first-ward extension)
-    - oc-stitch-house-lane (added state:4 @22; day-1 second-ward extension)
-    - oc-ropers-court (added state:7 @27; day-2 completion; four-ward-complete at this entry)
-
-## Prop state (state-updates-env; chapter-close)
-  - prop:oc-report-sheet: holder = jarvis-coin-kl-coat (pocketed state:11 @32; exited scene with Jarvis @36)
-
-## Arrangement state (state-updates-env)
-  proposal_state: operational (acceptance delivered @9; first report delivered @31–@32; routing confirmed)
-  routing_schedule: first-bell, three-day interval, oc-cooper-yard-eel-alley
+## Coverage state (carried forward from b01c04)
+  coverage_active_range: four-ward + rushwick-extension
+    - oc-hook-precinct (c01–c03 baseline)
+    - oc-pig-tallow-lane (c04 day-1)
+    - oc-stitch-house-lane (c04 day-1)
+    - oc-ropers-court (c04 day-2)
+    - the-rushwick (c05; second morning after Roper's Court report; abuts Red Keep servant passages)
 
 ## Last recorded change
-  @39 — Taylor exits stitch-house lane; chapter close (location-state + sensory + state-updates-env all locked)
+  @31 — courier-walk holds the rushwick-pass; chapter close; Taylor on room-floor; evening review complete
