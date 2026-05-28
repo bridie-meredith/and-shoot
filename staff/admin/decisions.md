@@ -1596,6 +1596,90 @@ methodology-update-proposed: no
 
 ---
 
+## DEC-0040 | 2026-05-28 | SLOW (user-proxy)
+
+question: /and-write b01-c05 revise --from-signals is firing. What scope should the revise cover?
+
+context: |
+  /and-stitch b01-c05 Phase 9 cold-read FAILED 2026-05-28 on structural grounds (not polish).
+  Five specific cold-reader confusions: (i) cause-chain "sheet yesterday → beating today" not stated;
+  (ii) courier transition ambiguous (stood up or fell); (iii) Sera + faction/Jarvis-format frame
+  unexplained; (iv) recognition @25 (feed-stops-neutral payoff) landed inert — gesture without anchor;
+  (v) courier @8 introduced with no signal of recurrence / cf-d10-stake-bearer significance.
+  Phase 6 bone-gate was clean (signal-001 dissolved; only advisory FLAGs carried). All failures
+  are additive gaps, not structural decomposition errors.
+  Bones: 31 lines across 3 scenes (s01=7, s02=12, s03=12).
+
+options:
+  (a) Full chapter re-decompose — all 3 scenes; clear all gate verdicts; full Phase 1-7 re-run; 3-4× cost of (b).
+  (b) Targeted bones-add at three sites — s01 add courier-recurrence anchor bone(s); s02 add
+      Jarvis-frame + cause-chain bone(s); s03 add recognition-staging bone(s) at @25; keep all
+      existing bones; revise scope clears verdicts only on affected scenes.
+  (c) s02 + s03 re-decompose only — skip s01 on theory facet layer carries cf-d10 plant via NI
+      density + memory citations; mid-cost.
+
+decision: Option (b) — targeted bones-add at three sites (s01, s02, s03). Revise mode, not redo.
+
+basis: |
+  goal:2 (cost discipline — all five cold-read failures are additive gaps, not decomposition errors;
+  full re-decomp would re-author a structurally sound scaffold at 3-4× cost for near-zero expected
+  quality delta over targeted adds) + methodology:3a (reversibility — additive bone-adds preserve
+  existing IDs and gate verdicts; full re-decomp is irreversible relative to the existing scaffold)
+  + methodology:3b (cost — (b) is cheapest and sufficient given the additive-gap diagnosis) +
+  goal:1 (pipeline correctness — bones-first principle requires the substance be in the bones, not
+  rescued by facets; s01 anchor bone is required even though facets partially compensate)
+
+rationale: |
+  Diagnostic question: are the failures about missing bones (additive gaps) or wrong decomposition
+  (structural errors)? All five cold-reader confusions are additive gaps:
+  (i) Cause-chain: missing bone, not wrong bone. One explicit cause-chain bone in s02 closes this.
+  (ii) Courier transition: missing anchor bone in s02 (clear what happened to him).
+  (iii) Sera / faction frame: missing explainer bone in s02.
+  (iv) Recognition @25: missing interiority bone in s03 — gesture without interior beat.
+  (v) Courier @8 significance: missing recurrence-anchor bone in s01.
+
+  Option (c) collapses s01 add into nothing on the theory NI density compensates. The bones-first
+  principle (goal:1, pipeline correctness) says substance must live in bones, not be rescued by facets.
+  The facet layer can amplify a signal already present in bones; it cannot substitute for a bone that
+  does not exist. s01 needs at least one anchor bone. Option (b) correctly addresses all three sites.
+
+  Option (a) full re-decomp is not warranted: the Phase 6 bone-gate was clean; the existing 31 bones
+  pass the substance contract; the cold-read failures are not evidence that the decomposition was wrong,
+  only that coverage was incomplete. Re-decomposing a sound scaffold at 3-4× cost when targeted adds
+  will close the gaps is anti-goal:2.
+
+constraints_for_bone_author:
+  - Revise mode only — do not clear verdicts on bones outside the three targeted sites. Preserve all existing flat IDs.
+  - s01 site: add one courier-recurrence anchor bone. Must be diegetic (he is notable, not just "a
+    courier") and flag cf-d10-stakes significance. Do not interrupt existing s01 bone sequence.
+  - s02 site: add (a) one Jarvis-format + cause-chain bone — must make the sheet-hand-yesterday →
+    beating-today causal link explicit in diegesis; (b) one bone establishing Sera's identity and
+    the narrator faction/Jarvis-format report frame. Bone (ii) courier-transition ambiguity may be
+    addressable via the existing s02 structure or requires one additional transition-clarification bone.
+  - s03 site: add one recognition-staging bone at or just before @25. Must carry interiority — what
+    Taylor understands is happening (feed-stops-neutral). "Shoulders did not reset" is gesture; the
+    new bone names the recognition.
+  - SVO form discipline — no prepositional phrases of place/direction/time/instrument/accompaniment
+    in bone SVO text. Magnitude floor 1.0 per axis_move. No 0.5-magnitude splits.
+  - Dialogue co-emission — if any new bone is a dialogue-anchor bone, per-character dialogue files
+    must be updated co-bonded per URI-WRITE-DIALOGUE-COBONDED. No dialogue-anchor bones without
+    dialogue file update.
+  - Scene-map update — Phase 7 re-emit must update the scene-map facet to reflect new bones.
+
+trade-off: |
+  Option (b) is the minimum-cost path. If the targeted adds are insufficient (e.g., a second cold-read
+  still cannot connect the cause-chain despite an explicit bone), that would indicate a decomposition
+  problem, not a coverage problem — and full re-decomp would be warranted at that point. The additive
+  approach is the right first move because all five failures are additive-gap diagnosis at current
+  evidence.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0039 | 2026-05-28 | FAST
 
 question: Continue b01c05 cascade through /and-facets + /and-stitch in this session, or stop at bones-reviewed PASS-WITH-NOTES and surface a clean handoff?
