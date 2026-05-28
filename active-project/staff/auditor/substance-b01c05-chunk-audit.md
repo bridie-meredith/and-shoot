@@ -130,3 +130,49 @@ audit:
 **Verdict: FINDINGS-PRESENT. HARD: 1 | SIGNAL: 1 | FLAG: 3.**
 
 The chunk set is substantively coherent: the three-scene structure delivers the chapter goal (color arrives before Taylor names it; cf-d10 courier thread planted), the roll-up math is internally consistent (scenes sum to chapter target), cl-d05's cost is made legible in s03's prose, mechanism tags are specific causal claims rather than theme-restatements, and Earth-Bet fence is clean. One HARD finding: the pivot sentence of s03 ("The Rushwick reads differently in review than it read in acquisition") is untagged under URI-CHUNK-TAG-PROTOCOL — this is the most load-bearing single sentence in the chapter and must carry a chunk tag before /and-write receives the file. One SIGNAL: book and series plans declare +3 at the d05 landmark but the chapter plan assigns only +1.5 to cl-d05, leaving 1.5 ranks unaccounted for; screen-writer must confirm distribution. Three FLAGS: s02's third-sighting announcement is partially covered but not directly tagged; rationales in s01 and s02 exceed the one-line schema form constraint; s01's message-runner body-movement sentences are untagged illustrative events inside a force block.
+
+---
+
+## Attempt 2 (2026-05-28)
+
+### fault-001 (HARD — pivot sentence untagged): RESOLVED
+
+The pivot sentence is now the opening clause of the [mechanism:] block at draft lines 133-138. The tag opens on the sentence itself: `[mechanism: The Rushwick reads differently in review than it read in acquisition — ...]`. The claim is not outside the tag; it is the tag's opening statement. Criteria satisfied: the pivot carries a [mechanism:] tag. HARD cleared.
+
+### fault-005 (SIGNAL — multi-chapter distribution unconfirmed): RESOLVED
+
+s03 axes_in_motion notes (draft line 175) now read: "first tranche (+1.5 of +3 cl-d05 ledger gain; remaining +1.5 anchors at b01c06-b01c08 during the readable-resentment escalation toward d09 articulated-contempt)". The split is declared, the downstream chapters named, and the math adds to +3. The chapter plan now documents the deliberate distribution. SIGNAL cleared.
+
+### fault-002 (FLAG — s02 third-sighting untagged): RESOLVED
+
+Draft lines 66-68 now read: `[event: third sighting — five days into the Rushwick coverage; the feed confirms: recurring body, same heel-first gait, same morning-hour transit window]`. The third-sighting announcement, its time anchor ("five days into the Rushwick coverage"), and the observation are all inside a direct [event:] tag. Previously the cf-d10 closing tag covered only the thread-initiation result; the new tag covers the event itself. FLAG cleared.
+
+### fault-003 (FLAG — multi-clause rationales): PARTIAL
+
+s02 moral_framework rationale (draft line 110): "routing enforcement as pattern-data is inside the licensed exception; 'this is what the feed reads' echo is rationalization running, not interrogated." Reduced from three clauses to two. Still two semicolon-separated clauses, which is not one line naming the discipline; form constraint is not fully met, but the reduction is meaningful and the discipline is named in the first clause. FLAG persists on s02, reduced severity. s01 political_register-prot rationale (draft lines 47-48) is unchanged: four semicolon-separated clauses. FLAG persists on s01. Overall: FLAG persists, not resolved.
+
+### fault-004 (FLAG — s01 message-runner untagged): ACCEPTED / UNCHANGED
+
+Screen-writer confirmed this as deliberate (dark-fantasy ACCEPT). No change to draft. FLAG remains on record for /and-write; bones author should treat the message-runner body-movement sentences as supporting texture inside the force-block's bone, not a discrete event bone. No new action required.
+
+### New content audit
+
+**s02 alley-sound passage (draft lines 78-82):** "What it does not return is the sound from the alley before the courier finds his feet — a low, effortful sound, not a cry, the kind a body makes when it is trying not to make any sound at all. The feed has no field for that. It logs: brief contact, courier retained on feet." This passage is untagged. Assessment: illustrative texture inside the [force:] block on observation specificity and [mechanism:] block on enforcement-vs-robbery geometry, both of which precede and frame it. No new thread opened; no axis move anchored here; no downstream cf- tag attached. Same category as fault-004 (message-runner): non-load-bearing prose inside a tagged structural block. No new fault. Noted for /and-write: bones author should absorb this as texture inside the enforcement-event bone, not a separate bone.
+
+**s03 try-flat-read-fails passage (draft lines 162-168):** "She closes the evening review. She tries to run the Rushwick back through the flat-document read... It does not resolve... The neutral read is not available to her for this content anymore, and she files the unavailability as texture, but the filing does not return the read." This follows the [event:] tag at lines 158-161 that announces "political_register-prot opens its account — resentment color present; neutral-instrumentally-observant foreclosed; cl-d05 anchor lands." The passage is the dramatized enactment of the already-tagged foreclosure. It carries no new load-bearing claim beyond what the preceding [event:] tag declares. No tag required; no violation. Clean.
+
+**Mechanism tag specificity (s03 revised [mechanism:]):** The tag reads: "evening replay strips the acquisition-layer's real-time categorization discipline; there is no action to take, no report to route, no function being performed; the content sits without the discipline's organizational frame, and what remains is not flat; the provisioner train's institutional-gait signature carries something that the factual-categorization register was holding at distance during the day." This is a specific causal claim — frame-removal exposes accumulated affect — not a verbatim thesis restatement. Passes the mechanism-specificity check.
+
+**Earth-Bet fence:** No contemporary or non-Westerosi referents in either new passage. Clean.
+
+### Roll-up math confirmation
+
+s01: 0 axes in motion. s02: 0 axes in motion. s03: political_register-prot +1.5. Sum: 1.5. Chapter target: 1.5. Math confirmed unchanged.
+
+---
+
+### Attempt 2 verdict: FINDINGS-PRESENT
+
+**HARD: 0 | SIGNAL: 0 | FLAG: 2**
+
+Both HARD and SIGNAL findings from attempt 1 are resolved. fault-002 (third-sighting tag) resolved. Two FLAGS remain open: fault-003 (multi-clause rationales on s01 political_register-prot and s02 moral_framework — form constraint not fully met; non-blocking) and fault-004 (s01 message-runner untagged — accepted, non-blocking). No new faults introduced by the new content. The chapter chunk set is clear to proceed to /and-write with the two non-blocking flags on record for the bones author.
