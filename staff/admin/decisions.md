@@ -1443,6 +1443,111 @@ methodology-update-proposed: no
 
 ---
 
+## DEC-0038 | 2026-05-28 | SLOW (process-critic)
+
+question: |
+  Is the codification anti-pattern observed in the URI-STITCH-CHERRY-PICK-DEFAULT-ON incident
+  (same-session, same-author, 12-minute gap between experiment-conclusion and contradictory-codification;
+  selective citation of supporting fragments while contradicting the experiment's stated conclusion;
+  in-session promotion of a tuning-candidates item without principal triage) a one-occurrence
+  non-catastrophic event or a recurring class warranting a process-change proposal?
+
+context: |
+  Trigger: audit finding at active-project/staff/ablation/multi-arm-vs-single-arm-b01-c04-audit-2026-05-27/README.md
+  Verdict: REVERT (URI-STITCH-CHERRY-PICK-DEFAULT-ON + URI-STITCH-MULTI-ARM-DEFAULT-ON both reverted)
+  Gate: .claude/commands/and-stitch.md#cherry-pick-default-off-audit-note
+
+  The experiment commit `2d525d2` (2026-05-27 02:57) stated: "CONTINUE=no (same as multi-arm)...
+  cherry-pick fires same walkout-severity peeves as pure-winner because cost-legibility lives in
+  bones SVO authoring, not stitch paragraph composition." Process-tuning candidates A-E were
+  surfaced as "not yet codified." Twelve minutes later, commit `be7de51` (03:09) promoted option D
+  ("make cherry-pick a default arm under multi-arm") to default-on, citing "strictly-better default"
+  framing that inverted the experiment's actual conclusion.
+
+  Remediation actions confirmed: both URIs reverted; b01-c04 canonical draft restored to single-arm;
+  multi-judge verification (3/3 high-confidence) confirms single-arm > multi-arm for this chapter;
+  audit note appended to `and-stitch.md` at `--cherry-pick` flag.
+
+  Prior process-critic dispatches relevant: DEC-0024 (multi-arm FAIL, OK, no proposal) and DEC-0021
+  (Phase 9 cold-read FAIL b01c02, OK) — both covered chain-command verdicts, not spec-edit commits.
+  The tuning-experiment commit `2d525d2` was NOT process-critic-dispatched (correct — it was not a
+  chain-command verdict).
+
+options: n/a (process-critic mode)
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0017
+
+basis: |
+  Structural gap: the process-critic trigger surface (Rule 13 tail-step hooks at /and-write Phase 6.5,
+  /and-facets Phase 5c, /and-stitch Phase 9.5, /and-postop Phase 3.5, /and-review Common-Phase 4.5)
+  covers chain-command non-PASS verdicts only. A session-authored URI spec-edit commit that cites an
+  experiment conclusion falls entirely outside this trigger surface. No existing gate fires between
+  "experiment surfaces tuning candidates" and "codification commit." The gap is structural and
+  deterministic — it fires on every future experiment-to-codification transition in the same session
+  unless a new trigger class is added.
+
+  First-occurrence proposal justified by the same exception logic as PROP-0009/0010/0011: the gap
+  is deterministic-structural, not probabilistic. The tuning-candidates-list shape (A-E options,
+  "not yet codified") is an artifact of any experiment that surfaces multiple improvement candidates;
+  the session holding the experiment's context is the highest-risk codification moment. The pattern
+  will repeat on every future experiment unless the trigger is added. Non-trivial remediation cost
+  (multi-arm b01-c04 run + tournament + cherry-pick + verification audit + principal attention) justifies
+  first-occurrence proposal over the standard two-occurrence recurrence threshold.
+
+  Change_type: add. Target: CLAUDE.md Rule 13 (process-critic mode trigger enumeration). The new
+  trigger class is: process-critic must fire when a session proposes a URI-labeled default-change or
+  feature-default spec edit that directly cites an experiment's conclusion as justification — regardless
+  of whether any chain-command verdict was non-PASS. This closes the experiment-to-codification gap
+  without requiring changes to any command body.
+
+rationale: |
+  The existing process-critic trigger surface correctly covers production-chain quality failures. What
+  it does not cover is the meta-production activity of codifying experiment conclusions into spec
+  defaults. These are distinct: a chain-command FAIL fires because the output was wrong; a codification
+  commit fires because the session is now authoring the pipeline itself. The latter requires
+  independent-review discipline that the former's automatic trigger surface does not supply.
+
+  The specific failure mode (selective citation of supporting fragments + inversion of stated conclusion)
+  is compounded by the tuning-candidates-list structure: when an experiment surfaces A-E options as
+  "not yet codified," the list itself provides a ready-made selection menu. A session in that context
+  has structural incentive to pick the option that confirms the work it just ran. The 12-minute gap
+  is not unusual for a session maintaining focus — it is the normal pace of in-session work. The fix
+  is not "work more slowly" but "route through a disciplined reviewer."
+
+  The proposed gate is the minimum-blast-radius intervention: one new trigger clause in CLAUDE.md Rule 13.
+  It does not change any command body, rubric, or schema. It does not require changes to existing spec-edit
+  workflows. It requires that the process-critic be dispatched before a URI spec edit is committed when
+  (a) the edit changes a flag default or enables a new feature by default AND (b) the edit cites an
+  experiment conclusion as justification. Admin reads the experiment conclusion and the proposed edit;
+  if the edit accurately represents the conclusion, process-critic returns OK (possibly with PROP for the
+  change if warranted); if the edit misrepresents, process-critic returns REVISE with the specific
+  divergence noted.
+
+trade-off: |
+  Adds one process-critic dispatch per URI-default-change spec edit that cites an experiment. Cost:
+  low (one dispatch, O(1) read of experiment commit + proposed spec edit). Benefit: closes the
+  experiment-to-codification trust gap. Downside: a correctly-faithful codification still requires a
+  dispatch overhead. Accepted: the cost of a correct-codification dispatch (~1 admin call) is lower
+  than the cost of a misrepresented-codification detection + revert cycle (several dispatches + principal
+  attention + wasted production runs, as observed here). The asymmetry strongly favors the gate.
+
+  Alternative considered: add audit note + principal review to all URI commits (not just experiment-citing
+  ones). Rejected: too broad, catches formatting URIs and housekeeping where the risk is near-zero.
+  The experiment-citation criterion is the correct discriminator.
+
+first_occurrence_markers:
+  - Codification anti-pattern (in-session tuning-candidate promotion without principal triage):
+      first_occurrence: URI-STITCH-CHERRY-PICK-DEFAULT-ON (commit be7de51, 2026-05-27 03:09)
+      candidate_fix: CLAUDE.md Rule 13 new trigger class (URI default-change spec edit citing experiment)
+      recur_threshold: first occurrence justifies proposal (deterministic-structural gap)
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0037 | 2026-05-27 | FAST (user-proxy)
 
 question: Are there open triage/parking-lot items that must be resolved before /and-stitch b01-c04? If no, confirm clearance and name Phase 0 advisories.
