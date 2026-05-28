@@ -12,7 +12,7 @@ flat_id-range: 1-35 (post-revise --from-signals; old 1-31 stale per finding-018)
 
 4 @10 oc-rushwick | morning | clear | wall-line; hill-proximity shade; tallow-smoke drifting east from stitch-house ward | broken sightline to junction through the building gap at the wall-line base
 
-5 @11 oc-rushwick | morning | clear | side-alley mouth visible from junction; interior not | one-person-wide stone passage off the east exit; rough original-construction walls, uneven floor
+5 @11 oc-rushwick | morning | clear | side-alley mouth visible from junction; interior not | one-person-wide stone passage off the east exit; rough original-construction walls, uneven floor; acoustic-baseline: alley-interior-contained-silence — stone walls return sound inward; ambient below human-register threshold until alley-emission event carries it outward
 
 6 @12 oc-rushwick | morning | clear | alley-mouth sealed by two bodies at its full width | alley-mouth width is the containment fact; two bodies at the mouth control all egress
 

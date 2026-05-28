@@ -43,7 +43,7 @@ totals: 62 facet entries; 23/35 protolines decorated (65.7%)
 
 ### sensory (2 entries)
   sensory:1 @4 back=Y
-  sensory:2 @13 back=Y
+  sensory:2 @14 back=N co=[narrator:4, vibes:6, vibes:7, vibes:8]
 
 ### state (12 entries)
   state:1 @21 back=Y co=[narrator:6, state:4, vibes:11, vibes:12]
@@ -115,7 +115,6 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 - loc-state:7 @20  `the three figures exit the alley-mouth`
 - loc-state:8 @22  `the courier takes the junction-corner`
 - sensory:1 @4  `the provisioner-train crosses the junction`
-- sensory:2 @13  `the three figures pin the courier`
 - vibes:5 @9  `the insect-feed returns the courier`
 - exposition:1 @0  ``
 - exposition:2 @0  ``

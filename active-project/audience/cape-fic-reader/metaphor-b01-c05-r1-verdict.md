@@ -9,12 +9,12 @@ verdict: accept
 
 # Verdict reasoning
 
-Zero entries, correctly so. The @14 candidate (the alley-sound gap) already has its beat fully carried by NI:4 ("the gap is registered as gap, not as the body inside it") — adding a simile there would be the capefic equivalent of explaining what just happened after the feed-apparatus already explained it in plain terms. The @29 candidate is the chapter's recognition peak with a +1.5 axis move; reaching for figurative language at a capability-rule-break is exactly the kind of "slow down and get precious" behavior that makes tactical readers skim. The refuse-by-default is the right call and the R2 judge's compound AP1+AP3 reasoning at both candidate sites is sound. A zero-fire metaphor file on a cold-utilitarian interior-observational chapter is not a problem; it's the correct shape.
+Zero entries, correct. The @14 candidate (the alley-sound gap) is already fully carried by NI:4 ("the gap is registered as gap, not as the body inside it") — a simile at that beat would be the tactical-reader equivalent of the author stopping the sequence to explain what the feed just showed you. The @29 candidate is a +1.5 axis-move peak-bone with the chapter's recognition climax; reaching for figurative language at a capability-rule-break is precisely the behavior that causes this reader to disengage. The R2 judge's AP7 + AP3 compound refuse at both candidate sites is sound: peak-zone default-refuse stacks with the NI-redundancy bar, and multi-justification fails at @29 because feel:1 is the only anchor layer (not enough for a metaphor license). Zero-fire on a cold-utilitarian interior-observational chapter is not a gap — it is the correct form.
 
 # Entry-level callouts (revise / fail only)
 
-N/A
+None.
 
 # Convergence trace
 
-- Auditor pass-031 (metaphor AP-SCAN) and pass-010 (frequency band 0% within 0-3%) confirm clean.
+No callouts. Auditor pass-031 (metaphor AP-SCAN: all AP gates scanned in R2 judge verdict, refuse-by-default sustained through all candidate bones), pass-010 (frequency band 0% within 0-3%), pass-024 (licensed-by constraint vacuously satisfied). All CLEAN.

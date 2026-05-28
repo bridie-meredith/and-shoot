@@ -1,65 +1,44 @@
 ---
 reviewer: sensory-old-state-reader
-chapter: b01-c05
 facet: sensory
-cycle: r1
-timestamp: 2026-05-28
-verdict: revise
-entries-reviewed: 2
-entries-flagged: 1
-entries-clean: 1
-auditor-findings-consulted: pass-039
+cycle: 2
+episode: b01-c05
+date: 2026-05-28
+verdict: accept
+cycle-1-verdict: revise
+cycle-1-callouts-addressed: [broken-loc-state-id, sound-level-unanchored]
 ---
 
-# Sensory Old-State Reader — b01-c05 R1 Verdict
+# Verdict reasoning
 
-## Entry-level review
+Two entries in the file. Old-state lineage walked for both.
 
-### [sensory:1] @4 `tactile: lane-stone-surface-baseline -> provisioner-cart-load-on-stone`
+**sensory:1 @4** — `tactile: lane-stone-surface-baseline -> provisioner-cart-load-on-stone`
 
-verdict: ACCEPT
+Anchor: @4 ("the provisioner-train crosses the junction"). Most recent prior loc-state: loc-state:1 @1 — stone skirt / cool-damp stone underfoot / paving. Old-state `lane-stone-surface-baseline` traces directly to that entry's tactile register. No invention, no contradiction, no frame mismatch. Lineage: intact. No change from cycle 1.
 
-Lineage walk:
-- Anchor: @4 (`the provisioner-train crosses the junction`)
-- Location: oc-rushwick (scene-A, junction)
-- Most recent prior loc-state entry: loc-state:1 @1 — `oc-rushwick | morning | clear | north face of junction in hill-shade; cool-damp stone underfoot | stone skirt holds shade at the lane-mouth; overnight damp still in the paving`
-- Old-state `lane-stone-surface-baseline` traces directly to loc-state:1 @1. The composite name captures the stone-underfoot and paving baseline established there. No modality mismatch: loc-state:1 names a tactile surface condition (`cool-damp stone underfoot`); the sensory old-state is the tactile register of that same undisturbed surface. Delta direction (ambient-stone-surface → cart-loaded-stone) is consistent with what the provisioner-train crossing would produce against that baseline.
-- No invention. No contradiction. No frame mismatch.
+**sensory:2 @14** — `sound: alley-stone-contained-silence -> courier-effortful-body-sound`
 
-The dispatch's stated attribution "old-state from loc-state:1 @1 (stone skirt at grade)" is confirmed. Lineage intact.
+Anchor re-fires against @14 ("the side-alley returns the sound") — the perceptual-event bone, not the prior causal bone @13. Most recent prior loc-state at or before @14: loc-state:5 @11, now carrying the acoustic-baseline note: "alley-interior-contained-silence — stone walls return sound inward; ambient below human-register threshold until alley-emission event carries it outward."
 
----
+Cycle-1 callout 1 (broken ID attribution): the inline citation was `loc-state:7 @11`; loc-state:7 fires at @20. The corrected file reads `loc-state:5 @11`; loc-state:5 is confirmed at @11. Attribution no longer broken. Resolved.
 
-### [sensory:2] @13 `sound: alley-stone-contained-silence -> courier-effortful-body-sound`
+Cycle-1 callout 2 (sound-level unanchored): no loc-state entry previously established an auditory level for the alley interior. The fixer added the acoustic-baseline clause to loc-state:5 @11, sourcing the contained-silence baseline from the enclosed-stone geometry the world card already supported. The old-state `alley-stone-contained-silence` now resolves verbatim against loc-state:5's `alley-interior-contained-silence` acoustic-baseline phrase. Unanchored-old-state REJECT signature no longer fires. Resolved.
 
-verdict: REVISE
+Anchor-to-bone: @14's SVO ("the side-alley returns the sound") is the alley-emission event the acoustic-baseline note names as the threshold for outward carry. The re-anchor from @13 to @14 is correct — @14 is the beat where the sound exits the alley and reaches Taylor at her wall-line position. Audience-perceptibility claim now derives directly from the bone SVO, not from Taylor's faculty extending into the alley interior. Fauna-feed-extension attack does not apply at @14.
 
-Lineage walk:
-- Anchor: @13 (`the three figures pin the courier`)
-- Location: oc-rushwick, side-alley interior
-- Most recent prior loc-state entries before @13: loc-state:6 @12 (`alley-mouth sealed by two bodies at its full width; alley-mouth width is the containment fact; two bodies at the mouth control all egress`) and loc-state:5 @11 (`side-alley mouth visible from junction; interior not | one-person-wide stone passage off the east exit; rough original-construction walls, uneven floor`)
-- Old-state: `alley-stone-contained-silence`
+Modality-coverage: two entries — sensory:1 tactile, sensory:2 sound. Floor ≥2: holds.
 
-**[sensory:2] @13 — Attack 1: dispatch ID attribution is broken.**
-Dispatch states "old-state from loc-state:7 @11 (alley-interior contained)." loc-state:7 fires at @20 (`alley-mouth open; three figures have cleared to the east`). That is the post-enforcement exit entry, placed well after @13. loc-state:5 fires at @11. The stated ID is wrong. If the old-state has any loc-state lineage, it traces to loc-state:5 @11, not loc-state:7. The attribution carries a broken ID.
+No remaining lineage failures across either entry.
 
-**[sensory:2] @13 — Attack 2: no sound-level field in any prior loc-state entry for this location.**
-Neither loc-state:5 @11 nor loc-state:6 @12 names an auditory baseline. loc-state:5 establishes spatial description only: `one-person-wide stone passage; rough original-construction walls, uneven floor`. loc-state:6 establishes containment geometry only: `alley-mouth width is the containment fact; two bodies at the mouth control all egress`. Neither entry carries a §sensory note, a §sound note, or any silence-level annotation. The old-state component `silence` — the acoustic level named as the pre-delta baseline — does not appear in any loc-state entry preceding @13. The sound baseline is inferred from enclosed-stone geometry, not sourced from loc-state's auditory content.
+# Entry-level callouts (revise / fail only)
 
-The oc-rushwick.card.md §Hazards does corroborate the inference: "A low, effortful sound from a body inside a side alley does not reach the junction at any register the human ear recovers." But §Hazards is a location-card field, not a loc-state facet entry. The rubric requires old-state lineage from the locked loc-state file or from a prior sensory entry on the same modality. No prior sound-modality sensory entry exists before @13 (sensory:1 is tactile). No loc-state entry establishes an auditory level for the alley interior. The baseline is geometrically implied but not facet-stated.
+None. Both entries pass old-state lineage under this reviewer's lens.
 
-This is the implicit-baseline case: not a contradiction of loc-state (no loc-state entry asserts a non-silence sound level for the alley) but also not an explicit derivation. The old-state is filling a gap loc-state does not cover. Under the rubric's REJECT signature: "Unanchored old-state (HARD). Entry's old-state does not resolve to (a) the most recent loc-state file's § sensory or § conditions baseline for the beat's location, OR (b) the most recent prior sensory-flag entry on the same modality." Neither condition is met for the `silence` component.
+# Convergence trace
 
-Convergence-trace with auditor: pass-039 accepted this entry on disambiguation and form grounds ("fire warranted; 'effortful' qualifier migrated from bone SVO to sensory facet per note-003 carry-forward"). pass-039 did not run the old-state-lineage check as a distinct verification step — it confirmed the bare-verb test and the oc-rushwick §Hazards derivation without verifying whether §Hazards is a rubric-compliant anchor for the old-state field. This callout is the seam pass-039 did not cover.
+cycle-1 callout `broken-loc-state-id`: was `loc-state:7 @11`; corrected to `loc-state:5 @11` — confirmed resolved by direct file read (loc-state:5 sits at @11 in the current location-state file; loc-state:7 is at @20).
 
-**Required fix:** Option A — extend loc-state:5 @11 or loc-state:6 @12 with an explicit auditory note for the alley interior (e.g., appending `| enclosed stone; no ambient sound source; interior acoustically isolated at human-audible register` to loc-state:5's detail field). The §Hazards card content supports this extension. Option B — amend the old-state in sensory:2 to a form whose sound-level component is directly derivable from existing loc-state content (e.g., `alley-stone-enclosed-ambient` where `enclosed` derives from loc-state geometry and the ambient-sound level is treated as implied by enclosure — though this is a weaker derivation and will need defense). Either way, loc-state must be corrected first; sensory:2's old-state resolves against it after.
+cycle-1 callout `sound-level-unanchored`: loc-state:5 @11 now carries the acoustic-baseline note matching the old-state language verbatim — the sensory rubric's unanchored-old-state REJECT condition (Axis 1, REJECT signature) no longer applies. The loc-state edit landed first; sensory:2 resolves against the now-anchored baseline. Fix path followed exactly as prescribed.
 
----
-
-## Aggregate verdict
-
-**REVISE**
-
-sensory:1 @4: old-state lineage intact to loc-state:1 @1. Clean.
-
-sensory:2 @13: two issues. (1) The dispatch's ID attribution for the old-state anchor names the wrong loc-state entry (states loc-state:7 @11; the actual entry at @11 is loc-state:5). (2) No loc-state entry explicitly names an auditory baseline for the alley interior — the `alley-stone-contained-silence` old-state invents a sound level that geometry implies but loc-state does not state. The rubric's unanchored-old-state REJECT signature applies. Loc-state requires a backfill (§sound or §conditions annotation at @11 or @12) before sensory:2's old-state chain is traceable. One entry unanchored on its modality-specific old-state component. Facet fails this cycle.
+No auditor-finding overlap to report at this cycle — the cycle-1 auditor pass (pass-039) confirmed disambiguation and form but did not surface the old-state-lineage gap; this reviewer's cycle-1 callouts were the seams pass-039 did not cover, and both are now closed.
