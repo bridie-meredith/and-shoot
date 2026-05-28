@@ -320,7 +320,7 @@ KEEP. The anchor-discipline at chapter close: the feed touches Wren and passes. 
 **s03n12** — "taylor-hebert-kl-122ac exits the stitch-house lane" | shape: held | axes_held: moral_legibility_to_self
 KEEP. The chapter's terminal bone. Taylor exits without examining whether the anchor will hold. The continued-walking-at-pace IS the non-examination. This is the dark-fantasy close: no catharsis, no resolution, no announcement, no recognition. The protagonist exits the lane at operational pace and the question of whether the anchor holds goes with her unanswered. The "exits" verb is clean and final. The chapter ends on the body in motion, not on the mind having arrived anywhere. That is the correct shape. Sealed tension confirmed.
 
-**s03 sub-verdict:** 12 KEEP, 0 DELETE-PROPOSE. The three-scene structure completes the chapter goal: acceptance (s01), expansion (s02), delivery (s03). The position-world +1.0 is correctly assigned to the yard-exit (n09) not to the handoff — because the exit is the threshold event. The chapter's terminal bone (n12) maintains the open question without catharsis. No walkout triggers in s03.
+**s03 sub-verdict:** 12 KEEP, 0 DELETE-PROPOSE. The three-scene structure completes the chapter goal: acceptance (s01), delivery (s02), delivery (s03). The position-world +1.0 is correctly assigned to the yard-exit (n09) not to the handoff — because the exit is the threshold event. The chapter's terminal bone (n12) maintains the open question without catharsis. No walkout triggers in s03.
 
 ---
 
@@ -420,7 +420,7 @@ SUBSTANCE-FELT. The opposing-force construction is correct: the court-tier conte
 
 REVISE. The enforcement scene is entirely contained within Taylor's feed-categories from first description to last. "Controlled containment, a single body held against stone, two others keeping the alley-mouth" — this is feed-register prose. "It is brief. The courier is left on his feet." — this is the data-layer's verdict and the prose's verdict simultaneously. The courier "recovers his balance and continues through the ward on his original heading" — again, Taylor's read and the narrative's read are the same thing. The chunk never steps outside Taylor's categorization to give the reader a register she cannot access. The hot-button is violence allowed to read as data because Taylor reads it as data. The "specific gait of people who have finished a piece of work" is the closest thing to a second register — but it is framed as a feed-read, not as something the world delivers independent of Taylor's data-frame. What is needed: one image that exceeds what the feed returns, something the courier's body carries that Taylor's movement-pattern field cannot contain. Not his face — the chunk correctly withholds the face — but some physical particular that lands as human weight before it is categorized. The enforcement incident should cost the reader something Taylor does not pay. Right now it costs nothing because the prose enacts the categorization so completely that the reader inhabits the data-layer.
 
-The "this is what the feed reads. It is what the feed reads." repetition in the chunk is the rationalization running — but the substance_delta note acknowledges this is not interrogated ("the 'this is what the feed reads' echo in the chunk is the rationalization running, not being interrogated"). That is correct at the level of naming, but the chunk still does not provide the layer the reader needs to watch the rationalization from outside. The reader is inside the categorization with Taylor. That is the failure.
+The "this is what the feed reads. It is what the feed reads." repetition in the chunk is the rationalization running — but the substance_delta note acknowledges this is not interrogated ("the 'this is what the feed reads' echo is the rationalization running, not being interrogated"). That is correct at the level of naming, but the chunk still does not provide the layer the reader needs to watch the rationalization from outside. The reader is inside the categorization with Taylor. That is the failure.
 
 ### s03 — evening replay and recognition
 
@@ -442,3 +442,31 @@ soft_carries_forward:
   - s02: enforcement image must exceed Taylor's categorization by one physical particular the feed-register cannot absorb
   - s03: foreclosure bone must land as permanent unavailability, not as recognition-and-filing; cl-d05 door-closing texture is required for the +1.5 to carry its stated weight
   - s03: "The neutrality was the discipline's performance, not the discipline's fact" — if this line survives into prose, it must be the world delivering it, not Taylor reading it about herself; the protagonist should be denied this clarity at the execution layer
+
+---
+
+## b01c05 chunk review attempt 2 — 2026-05-28
+
+verdict_per_scene:
+  b01c05s01: SUBSTANCE-FELT (unchanged)
+  b01c05s02: SUBSTANCE-FELT — alley-sound lands the second register
+  b01c05s03: SUBSTANCE-FELT — failed-to-resolve read delivers foreclosure; clarity-line removed
+
+chapter_verdict: ACCEPT
+
+### s02 — alley-sound watchpoint
+
+The addition resolves the attempt-1 failure. "A low, effortful sound, not a cry, the kind a body makes when it is trying not to make any sound at all" arrives BEFORE the feed re-categorizes the contact as brief — the sequence is: world delivers the sound, THEN "The feed has no field for that. It logs: brief contact, courier retained on feet." That ordering is the repair. The reader hears something the feed cannot name. The sound is not framed as a feed-read; the feed's inadequacy to contain it is the explicit pivot: "The feed has no field for that." The categorization closes after the reader has already been outside it. This is the second register the attempt-1 critique required — not Taylor's data-frame but the world delivering a physical particular the movement-pattern field cannot absorb. The "kind a body makes when it is trying not to make any sound at all" is the human weight before categorization. Violence-without-aftermath hot-button does not fire: the courier's body is present as a body that has made a sound, not as a data point that resolved cleanly. The "It is what the feed reads" repetition still runs as rationalization — and now the reader has material to watch it from outside, because they heard what the feed did not log. The watchpoint lands.
+
+### s03 — foreclosure watchpoint
+
+The failed-to-resolve read delivers the door-closing image as enacted failure, not as diffuse awareness. The structure is: Hook runs flat (resolves), Rushwick does not resolve, runs it again, same result — "The neutral read is not available to her for this content anymore." That sentence is not Taylor achieving clarity about the gap between performance and fact; it is Taylor encountering a capability that no longer functions. The neutral mode is not noticed as absent — it is attempted and fails to operate. Tried twice. The foreclosure is an on-page event, not a conclusion. The cl-d05 cost ("neutral-instrumentally-observant is foreclosed from d05 forward") is now structurally anchored: the read was tried, it did not return, the filing of the unavailability as texture does not restore the read. The door is closed because it does not open when Taylor turns the handle, not because Taylor sees that it is closed. The clarity-line removal ("The neutrality was the discipline's performance, not the discipline's fact") correctly denies Taylor the meta-recognition — she has access to the operational fact (the read does not resolve) without having access to the structural conclusion (the neutral stance was always performed, not factual). That is the correct distribution of knowledge for this chapter's class. The +1.5 political_register-prot gain now has its door-closing image. The watchpoint lands.
+
+### Threshold discipline fires — attempt 2
+
+No walkout triggers. No catharsis-before-weight: the chapter closes on "the filing does not return the read" — a persistent failure, not a resolution. No enemies pausing. The world-texture is intact. The s01 architecture holds from attempt 1.
+
+hard_findings: none
+soft_carries_forward:
+  - s02: the "It is what the feed reads" rationalization is now watchable from outside; at /and-write and facet layers, the sound-before-categorization sequence must be maintained — the image must precede the feed's re-categorization, not follow it, or the watchpoint reopens
+  - s03: at prose rendering, "the filing does not return the read" is the chapter-closing beat; the stitcher must not add resolution after this — the chapter must end on the failed attempt, not on Taylor processing what the failure means
