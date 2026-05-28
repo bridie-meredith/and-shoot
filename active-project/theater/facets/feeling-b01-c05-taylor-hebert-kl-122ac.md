@@ -8,5 +8,4 @@ rubric: design/shoot-v2/rubric-feeling.md (V1 LOCKED 2026-05-07)
 r2-judge: pov-impersonator-judge (2026-05-28)
 ---
 
-1 @19 taylor-hebert-kl-122ac: her breath holds the rhythm of the entry-clauses | expressed: no
-2 @29 taylor-hebert-kl-122ac: her head tilts toward the held color | expressed: no
+1 @29 taylor-hebert-kl-122ac: her head tilts toward the held color | expressed: no
