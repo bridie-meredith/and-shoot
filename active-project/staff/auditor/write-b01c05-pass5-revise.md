@@ -240,3 +240,151 @@ audit:
     non-blocking. Fixer scope: SITE B only; SITE A and SITE C require no
     correction.
 ```
+
+## re-audit 2026-05-28 (after B2 amendment + B3 drop)
+
+```yaml
+audit:
+  scope: chapter
+  target: b01c05
+  timestamp: 2026-05-28
+  context: >
+    Re-audit after orchestrator-level amendments to SITE B bones. B2 SVO
+    amended from "the enforcement-report enters the jarvis-channel" to
+    "taylor-hebert-kl-122ac drafts the jarvis-report". B3 dropped entirely.
+    Final bone set: 4 new bones (A1, B1, B2-amended, C1). Prior audit
+    findings checked: fault-001 (FAULT-REFERENCE: jarvis-channel),
+    fault-002 (FAULT-REFERENCE: jarvis-form + sera-arrangement-file),
+    fault-003 (FAULT-STATE: temporal transmission inside live incident).
+    Site A and Site C bones not re-litigated (cleared in prior audit).
+    Additional check: B2 amendment POV consistency (new subject
+    taylor-hebert-kl-122ac; verb drafts; no perception leak).
+  findings:
+
+    - id: reaudit-001
+      type: pass
+      what: >
+        fault-001 resolution check — B2 amended object "the jarvis-report"
+        against FAULT-REFERENCE axis. Prior fault: "the jarvis-channel" was
+        unestablished as a named routing-apparatus object.
+      why: >
+        Amended SVO: "taylor-hebert-kl-122ac drafts the jarvis-report." The
+        object "the jarvis-report" is grounded in the b01c05 s02 chunk text
+        ("Taylor begins the Jarvis report in the same register she uses for
+        passage-avoidance patterns") and in the chapter-level chunk ("Taylor
+        routes the enforcement incident to Jarvis as a factual movement-pattern
+        report"). The compound derives from the established actor
+        jarvis-coin-kl-courier plus the generic "report" — a form-word present
+        at existing flat_ids @15 ("files the enforcement-record") and @16
+        ("delivers the enforcement report-entry"). The object names a document
+        being composed, not an autonomous channel-apparatus. No prior-chapter
+        warehouse card or bones-level establishment is required for a document
+        named by its recipient per established series vocabulary. FAULT-REFERENCE
+        does not apply. fault-001 is resolved.
+      criteria: null
+
+    - id: reaudit-002
+      type: pass
+      what: >
+        fault-002 resolution check — B3 dropped entirely. Prior fault: "the
+        jarvis-form" and "the sera-arrangement-file" both unestablished as
+        named prop-objects.
+      why: >
+        B3 is absent from the amended bone set. The unestablished objects do
+        not appear in any bone in the integrated 35-bone scaffold. No prop
+        instantiation of either object has been introduced. The Sera-connection
+        is confirmed migrated to facet layer per the draft notes (memory facet,
+        exposition facet, narrator-interest facet). No FAULT-REFERENCE remains
+        on either object. fault-002 is resolved.
+      criteria: null
+
+    - id: reaudit-003
+      type: pass
+      what: >
+        fault-003 resolution check — B2 verb amended from "enters" to "drafts."
+        Prior fault: verb "enters" implied real-time transmission inside the
+        live incident (before @17), violating the b01c04 Jarvis-delivery model
+        (batch-report-and-hand-off, not in-ward real-time routing).
+      why: >
+        Amended verb "drafts" denotes composition, not routing or transmission.
+        The b01c05 s02 chunk text explicitly licenses intra-scene drafting:
+        "Taylor begins the Jarvis report in the same register she uses for
+        passage-avoidance patterns and junction-agitation clustering." This
+        sentence appears in the chunk's description of what Taylor does while
+        still in the Rushwick ward observing the incident's conclusion. Drafting
+        during observation is the documented behavior; transmission to Jarvis
+        occurs at subsequent scheduled yard meetings per b01c04 model. The
+        amended SVO does not imply physical hand-off. The temporal placement
+        (after @16, before @17) is consistent with Taylor composing a report
+        while the incident concludes — a parallel action, not a sequential
+        post-incident act. The b01c04 Jarvis-delivery model is not contradicted.
+        fault-003 is resolved.
+      criteria: null
+
+    - id: reaudit-004
+      type: pass
+      what: >
+        B2 amendment POV consistency check — new subject taylor-hebert-kl-122ac
+        with verb "drafts." Check: does the amended SVO introduce a perception
+        leak or interiority violation not present in the prior (non-POV-actor)
+        subject?
+      why: >
+        The amended subject is the POV character performing a physical action
+        (drafting a report). This is the cleanest SVO form for a first-person
+        POV chapter: protagonist doing something concrete. The verb "drafts"
+        is transitive, concrete, and carries no perception, interiority,
+        negation, copula, or conjunction qualifier. The object "the jarvis-
+        report" is external to Taylor's interiority. No perception surrogate
+        is required to justify the SVO — a POV character can draft a document.
+        The amended construction is more directly POV-clean than the prior SVO
+        (where the subject was the non-actor "the enforcement-report"). No
+        FAULT-POV introduced by the amendment.
+      criteria: null
+
+    - id: reaudit-005
+      type: pass
+      what: >
+        B3 drop — downstream gap check. Does removing B3 break any handoff_out
+        thread or event_map entry in the integrated bone set?
+      why: >
+        The b01c05 handoff_out threads are: "political_register-prot resentment
+        color present"; "cf-d10-courier-face thread: courier body observed three
+        times; filed as operational texture"; "Flea Bottom intelligence routing:
+        continuing"; "Wren: in coverage map; anchor rank 2"; "faction-violence
+        sub-pressure: first on-page enforcement incident observed." None of
+        these threads required B3's objects ("the jarvis-form" or "the
+        sera-arrangement-file") for bone-level realization. The routing thread
+        ("Flea Bottom intelligence routing: continuing") is carried by B2's
+        amended bone ("taylor-hebert-kl-122ac drafts the jarvis-report") at
+        the bones layer; physical transmission to Jarvis is a facet-layer and
+        prose-execution matter. The Sera-arrangement thread is "Sera's exposure:
+        managed" (handoff_in, unchanged, not requiring a bones-level filing
+        event in c05). No handoff_out thread drops below bones-level coverage
+        from B3's removal. No gap fault.
+      criteria: null
+
+    - id: reaudit-006
+      type: flag
+      what: >
+        flag-001 carried forward — A1 "the insect-feed returns the courier"
+        adjacency to @8.
+      why: >
+        Non-blocking advisory from prior audit. Unchanged bone, unchanged
+        placement. No new disambiguation mechanism introduced at bones layer.
+        Carries forward as advisory to /and-facets NI and memory facets per
+        prior audit. No action required at this gate.
+      criteria: null
+
+  verdict: CONTINUITY-OK
+  summary: >
+    All three prior faults resolved. fault-001 resolved: "the jarvis-report"
+    is grounded in s02 chunk text and established series vocabulary; no
+    routing-apparatus reference survives. fault-002 resolved: B3 dropped;
+    both unestablished prop-objects absent from the bone set. fault-003
+    resolved: verb "drafts" denotes composition, not transmission; intra-scene
+    drafting is explicitly licensed by the s02 chunk text; the b01c04
+    Jarvis-delivery model is not contradicted. B2 amendment is POV-clean
+    (reaudit-004 pass). B3 drop introduces no handoff_out gaps (reaudit-005
+    pass). flag-001 on A1 carries forward non-blocking. Final bone set: 4 new
+    bones (A1, B1, B2-amended, C1). No new faults introduced by the amendments.
+```
