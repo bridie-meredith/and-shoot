@@ -409,3 +409,53 @@ None. No filler (all 5 bones are apparatus or cause-chain events). No unmotivate
 ### File-level verdict
 ACCEPT — 5 KEEP, 0 DELETE
 All 5 new bones close declared cold-read failures with minimum apparatus. No bone marks time. A1 and C1 are feed-apparatus substrate bones paying cl-d05. B1 closes a physical incident gap. B2-B3 are cause-chain routing bones that make the filing architecture bone-legible in this chapter rather than dependent on c04 recall. The chapter goal is better served by the addition: the courier-face plant is now trackable from @8 forward, and the axis-move at @25 now reads as feed-apparatus response rather than narrator-choice.
+
+## b01c05 revise --from-signals — Phase 6 bone-gate
+
+---
+reviewer: cape-fic-reader
+chapter: b01c05
+phase: write-bone-gate
+date: 2026-05-28
+scenes_reviewed: [b01c05s01, b01c05s02, b01c05s03]
+revise_pass: true
+---
+
+## scene b01c05s01
+verdict: SUBSTANCE-FELT
+
+No new bones in s01. The nine existing bones are unchanged from the prior 3-of-3 SUBSTANCE-FELT pass, and the integrated chapter adds nothing to this scene's load. The discipline-holding check for integration: does the addition of A1 (in s02), B1, B2 (in s02), and C1 (in s03) retroactively destabilize s01's substance? It does not. A1 makes the courier's third-morning recurrence trackable from @8 onward, which actually sharpens what s01's dormancy was resisting — the reader now knows the courier has appeared before when s02's incident reads, which makes s01's filed-without-qualifying-the-difference behavior read as the correct response to a body whose significance hasn't yet arrived, not as inert observation. The "different substrate, same method" discipline in n05-n06/n08-n09 still reads as load-bearing pressure held against novel content. No axis was declared in motion here; none moved; the opposing force (court-tier content's novel weight) is present and the discipline holds with physical specificity. The held axes (political_register-prot, capability, moral_framework, relational_anchor_status) are all enacted as load-bearing dormancy, not as markers of nothing happening. s01 passes integrated review with the same verdict as the prior pass.
+
+## scene b01c05s02
+verdict: SUBSTANCE-FELT
+
+The three new bones integrate without breaking s02's held-axis discipline, and each one does discrete work.
+
+A1 (the insect-feed returns the courier) lands as feed-apparatus substrate at the correct position — between @8 (courier enters the lane-mouth) and @9 (Taylor holds the wall-line). The courier is now identified by the feed before Taylor's observational posture at @9 makes sense. Without A1, the reader could interpret @9 as Taylor holding position against an unrecognized body; with A1, she's holding against a body the feed has already placed as a third-recurrence. The three-sighting count at @18 becomes trackable board-state rather than Taylor's assertion. This is information-asymmetry-that-reshapes-the-board in the correct form: the reader knows the count the moment A1 fires, before the enforcement incident gives it significance. No axis moves here; no established limit touched; no unmotivated knowledge (feed-apparatus return of a present body).
+
+B1 (the courier raises the spine) sits between @13 (side-alley returns the sound) and @14 (the courier finds the feet). The gap-instrument bones at @13 are the chapter's dark-fantasy mechanism — the sound the feed cannot categorize. B1 immediately follows and gives the recovery a physical precursor: spine-raises → feet-found is a sequential physical act, not a jump cut. The moral_framework hold here is correctly stated: the courier's physical recovery is observable, inside the licensed-exception window, and does not threaten the non-intervention discipline Taylor is holding. The body recovers; Taylor files; the discipline is not tested by the recovery. B1 serves the chapter goal because the courier must exit @19 as a walking figure for the body-map plant to read as intentional observation rather than as Taylor recording a body in a prone state — that distinction matters for the cf-d10 plant's credibility.
+
+B2 (taylor-hebert-kl-122ac drafts the jarvis-report) sits between @16 (Taylor delivers the enforcement report-entry) and @17 (the three figures exit the alley-mouth). The SVO amendment from the Phase 5 auditor drop is correct: "drafts the jarvis-report" is a concrete composition verb (intra-scene timing valid), subjects Taylor as actor, and names the report by the established compound from the s02 chunk text. The cause-chain at bone level now reads: courier beaten → files enforcement-record (@15) → delivers report-entry (@16) → drafts jarvis-report (B2). This closes the prior gap where the enforcement incident's routing destination was inferential rather than bone-realized. The Jarvis-report drafting is inside the licensed exception; the moral_framework hold is correctly stated; no Sera-link on-page (Sera-connection migrates to facet layer per Phase 5 decision — the chapter's substance discipline requires Taylor not to name that connection on-page). No limits bypassed; no unmotivated knowledge; the routing-name "jarvis-report" carries the recipient implicitly per established series vocabulary.
+
+The worm-canon SOFT-WATCH triple (gait-signature recognition at @2/n02, enforcement-read at @4/n04, filing at @8/n08) is still structurally intact with all three new bones inserted at positions that do not collapse the distinction. A1 is pre-n02, serving recurrence identification before the SOFT-WATCH bones begin. B1 is between the gap-instrument bones and @14, not touching the SOFT-WATCH triple. B2 is after @16 (filing), extending the cause-chain past the SOFT-WATCH close. The three-bone SOFT-WATCH sequence is not disrupted.
+
+The moral_framework hold — discipline under load through the enforcement incident without crossing into intervention — remains the scene's substance spine and all three new bones support it without relaxing the load. No hot-button fires.
+
+## scene b01c05s03
+verdict: SUBSTANCE-FELT
+
+C1 (the rushwick-feed holds the color) integrates between @24 (the provisioner-train re-crosses the junction) and @25 (taylor-hebert-kl-122ac stops the rushwick-pass). The SVO amendment from Phase 4 is correct: "holds the color" is the feed-apparatus output that makes @25's cessation read as response rather than as narrator-choice. "Holds" is licensed and consistent with @29 and @31 (both use the same verb for the same feed-output behavior — the hold-pattern that the flat-read cannot strip). "The color" names the resentment-color object directly, matching the chunk vocabulary.
+
+The critical question for the +1.5 axis-move is: does C1's presence make the axis-move at @25 feel like a feed-apparatus event or like a free gain? It reads as apparatus: the color was already in the feed from @24 (provisioner-train re-crosses, carrying what the real-time categorization frame had held at distance); C1 names what the feed is returning as the flat-read runs — the flat-read finds the color, holds it, cannot strip it. @25 is the body stopping in response to the apparatus output, not a decision Taylor makes about how to feel about Rushwick. The gain is not free; the cost at cl-d05 (neutral-instrumentally-observant foreclosed forever) is paid by the four-bone foreclosure sequence at @28-@31: Taylor runs the flat-read twice, it fails twice, the cost is enacted as repeated physical failure rather than declared consequence.
+
+Does C1's integration destabilize the prior 3-of-3 SUBSTANCE-FELT verdict on s03's existing bones? No. C1 sits in the correct position (after the provisioner-train re-crosses and before the body stops) and serves as the mechanical connector the cold-read identified as missing. The existing bones at @25-@31 read more cleanly with C1 present because @25 now arrives as response to feed-output rather than as an unexplained cessation. The chapter goal — "show the audience the moment the insect-feed stops being neutral, the color arrives before Taylor names it" — is better served with C1 than without it: the color's arrival is now an apparatus event at @24-C1, and Taylor's recognition is the response at @25, which is the correct sequence (feed-event before consciousness-event).
+
+The recognition apparatus correlate check per dispatch brief: the apparatus correlate (the feed holds the color; the feed cannot strip it at @28-@31) is now present and bone-legible with C1 integrated before @25. The political_register-prot +1.5 gain reads as landing through the apparatus rather than through assertion.
+
+No established limits bypassed. No unmotivated knowledge. No cheap gain — the cost is present in the foreclosure sequence. No fatigue triggers: the four-bone foreclosure sequence at @28-@31 is the chapter's thesis-enactment, not a procedural tail; protected by watchpoint.
+
+### Threshold Discipline fires (integrated chapter)
+None. The four new bones (A1, B1, B2, C1) are all apparatus or cause-chain events. No established limits bypassed at any insertion point. No unmotivated knowledge (A1/C1 are feed-apparatus returns; B1 is observable physical recovery; B2 is Taylor operating her own filing architecture). No new character earning trust. No filler — each bone closes a declared cold-read failure with minimum apparatus and no marking-time behavior. B3's drop at Phase 5 (FAULT-REFERENCE + substance-discipline violation on Sera-link naming) is confirmed correct from this reader's perspective: on-page Sera-connection would violate the chapter's substance discipline that Taylor does not name what it means that these bodies are connected to the architecture that keeps Sera's exposure managed.
+
+### Chapter-level integrated verdict
+SUBSTANCE-FELT — all three scenes pass integrated review. The 4 new bones (A1, B1, B2, C1) add mechanism and cause-chain specificity without breaking the held-axis discipline in s01 or s02, and C1 makes the s03 axis-move read as feed-apparatus response rather than narrator-choice. The chapter goal ("color arrives before Taylor names it," "courier-face plant") is better served by the integrated chapter than by the prior 31-bone version. No SUBSTANCE-FLAT findings. No SUBSTANCE-SUSPECT-cheap-gain findings.
