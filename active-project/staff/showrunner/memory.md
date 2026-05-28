@@ -3385,7 +3385,39 @@ books:
             stale_since: null
 
       - slug: b01c05
-        status: scened
+        status: bones-written
+        bones_file: theater/bones/b01-c05.md
+        bones_count: 31
+        substance_bone_gate_verdict: PASS
+        substance_delta_measured:
+          axes_moved:
+            political_register-prot: +1.5    # s03n06 (flat 25, +1.5); EXACT vs target +1.5; cl-d05 first tranche
+          density_measured: 0.5-0.6           # 31 bones / 3 scenes; lean interior-perceptual chapter
+          felt_verdict: SUBSTANCE-FELT-3-of-3 # all 3 audience personas, all 9 cells (3 scenes × 3 personas) — Phase 6 bone-gate cycle 1
+        # /and-write b01c05 emit 2026-05-28 — clean run (no Phase 1 redo; no DEC adjudications).
+        # Phase 1 scene-decomposition: 34 bones (s01: 9, s02: 12, s03: 13); event_map[] mechanical chunk-tag extraction + author-noticed entries; sensory-grounding ≥1 per scene; worm-canon SOFT-WATCH courier 3-distinct-bones honored (s02n02 gait, s02n04 approach, s02n08 filing); dark-fantasy gap-instrument pair authored (s02n06 + s02n07).
+        # Phase 1.5 dialogue: SKIPPED (no speech-form or communication-axis bones — chapter is interior/observational).
+        # Phase 2 SVO constraint audit: cycle 0 FINDINGS-PRESENT (2 HARD: 5 feed-perception bones + 4 abstract-affect-object bones; 4 SIGNAL; 3 FLAG) → cycle 1 fixer recasts 10 bones → cycle 2 audit FINDINGS-PRESENT (1 HARD: fault-003 PP-modifier on s03n11/n13 "holds at X") → cycle 2 fixer inverts SVOs → cycle 3 audit ACCEPT.
+        # Phase 3 dramatist: ACCEPT — order preserved in all 3 scenes; recognition (s03n06) correctly between failed first pass and re-run sequence; gap-instrument pair at @13-@14. 2 non-blocking advisories (s02n02→n03 timing, s03n08→n09 seam).
+        # Phase 4 trim: 3-of-3 ACCEPT in one round, 34/0 across cape-fic-reader, dark-fantasy-reader, worm-canon-pedant. No DELETEs proposed.
+        # Phase 5 continuity audit: FINDINGS-PRESENT (1 HARD sr-001: Taylor state file frozen at series-open values; 1 FLAG dup-001 s03n10+n12 identical SVO advisory) → state file reconciled (full c01-c05 handoff_out values) → re-audit CONTINUITY-OK.
+        # Phase 6 substance bone-gate cycle 0: 8 HARD + 1 SIGNAL + 2 FLAG (auditor); 9-of-9 SUBSTANCE-FELT (audience).
+        #   HARDs: fault-001 (6× "Taylor maps X" perception-class), fault-002 (3 modifier strips), fault-003 (s03n07 interiority+PP), fault-004 (s02 capability witness missing), fault-005 (s03 social_tether witness missing).
+        #   Cycle 1 fixer: 3 bone removals (s01n06/n09, s03n07; cognitive content migrates to /and-facets narrator-interest layer), 4 recasts (s02n02 holds wall-line, s02n08 files enforcement-record, s02n11 adds courier to body-map, s03n09 files courier body-record), 3 modifier strips (s02n03/n05/n06), 2 axes_held additions (s02n01 capability, s03n01 social_tether-prot-rise).
+        #   Cycle 2 re-audit: ACCEPT — all 8 HARDs resolved; signal-001 (maps mannerism) dissolved by entailment; 2 FLAGs carry forward non-blocking.
+        # Phase 6.5 admin process-critic: SKIPPED — final verdict fully clean (0 HARDs, 0 accepted-not-remediated SIGNALs).
+        # Phase 7 emit: theater/bones/b01-c05.md (31 bones; 7+12+12 across s01/s02/s03) + theater/facets/scene-map-b01-c05.md.
+        # Bones file slug gaps: s01 missing n06 + n09; s03 missing n07 (per Phase 6 fault-001/003 removals — slugs non-monotonic, flat_ids contiguous 1-31).
+        # Soft watches forward (carried to next phases):
+        #   /and-facets: narrator-interest must cite removed-bone replacement bones (s01n05 for provisioner gait-class content, s01n07 for message-runner gait-class, s02n12 + s03n09 for courier-walk content); sensory facet must cite s02n13 (alley-sound) carrying the "effortful" qualifier stripped from bone SVO; dialogue facet — no dialogue this chapter.
+        #   margit: author oc-rushwick.card.md (location not yet in warehouse; surfaced as parking-lot SOFT for /and-facets dispatch).
+        #   /and-review bones: independent fidelity review (MANDATORY gate before /and-facets per URI-WRITE-BONES-REVIEW-GATE).
+        # FLAGs carrying to /and-stitch advisory:
+        #   - dup-001: s03n10 + s03n12 identical SVO "taylor-hebert-kl-122ac runs the rushwick flat-read" (load-bearing for foreclosure pattern; stitcher prose must distinguish the two attempts).
+        #   - flag-002: s03n03 "the Hook-feed resolves" intransitive "resolves" borderline; advisory.
+        # Draft archived: active-project/staff/showrunner/_drafts/b01c05-bones-draft-2026-05-28.md
+        # Auditor reports: write-b01c05-pass2.md (Phase 2; 3 attempts), write-b01c05-pass5.md (Phase 5; 2 attempts), write-b01c05-bone-gate.md (Phase 6; 2 attempts).
+        # Audience reviewer STM (Phase 4 trim + Phase 6 bone-gate) under "## b01c05 ..." headings.
         chunk: |
           The insect-feed begins returning court-tier content for the first time. Taylor has
           extended coverage to a ward that abuts the lower Red Keep servant passages, and the

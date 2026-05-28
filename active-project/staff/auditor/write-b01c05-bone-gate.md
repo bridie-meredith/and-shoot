@@ -281,3 +281,164 @@ audit:
       result: PASS
       note: "no underdelivery; s03 delivered exactly target; N/A for s01/s02 (no axes_in_motion)"
 ```
+
+## Attempt 2 (cycle 2 re-audit, 2026-05-28)
+
+```yaml
+audit:
+  scope: chapter
+  target: b01c05
+  timestamp: 2026-05-28
+  phase: /and-write Phase 6 substance bone-gate — cycle 2 re-audit
+  bone_count: 31
+  verdict: ACCEPT
+  hard_count: 0
+  signal_count: 0
+  flag_count: 2
+
+  hard_resolution_summary:
+
+    - id: fault-001
+      prior_bones: [s01n06, s01n09, s02n02, s02n08, s02n11, s03n09]
+      result: RESOLVED
+      detail: >
+        "maps" SVO count: 0/31. s01n06 and s01n09 confirmed absent (s01 bones: n01 n02 n03
+        n04 n05 n07 n08 — n06 and n09 not present; event_map omission_rationale confirms
+        removal citing bone-gate fault-001). s02n02 recast to "holds the wall-line" —
+        physical posture verb, concrete object, SVO-clean. s02n08 recast to "files the
+        enforcement-record" — physical archival verb, concrete noun-form object, SVO-clean.
+        s02n11 recast to "adds the courier to the body-map" — physical addition verb,
+        concrete noun-form object, SVO-clean. s03n09 recast to "files the courier
+        body-record" — physical archival verb, concrete noun-form object, SVO-clean.
+        signal-001 (REGISTER-AS-MANNERISM) dissolved by entailment: 0 "maps" remaining.
+
+    - id: fault-002
+      prior_bones: [s02n03, s02n05, s02n06]
+      result: RESOLVED
+      detail: >
+        s02n03 SVO: "the three figures enter the side-alley" — "off east exit" absent.
+        s02n05 SVO: "the three figures pin the courier" — "against the stone" absent.
+        s02n06 SVO: "the side-alley returns the sound" — "effortful" absent.
+        All three modifier strips confirmed.
+
+    - id: fault-003
+      prior_bones: [s03n07]
+      result: RESOLVED
+      detail: >
+        s03n07 absent from bones list (s03 bones: n01 n02 n03 n04 n05 n06 n08 n09 n10
+        n11 n12 n13 — n07 not present). event_map entry for "courier's post-enforcement
+        walk" has bones: [] with omission_rationale citing bone-gate fault-003 and
+        fault-001. CONFIRMED REMOVED.
+
+    - id: fault-004
+      prior_bones: [s02 — no capability witness]
+      result: RESOLVED
+      detail: >
+        s02n01 axes_held now includes capability: "coverage at Rushwick is maintenance
+        from c04 four-ward expansion; no new range gain; coverage operates at established
+        level." Stillness-against-pressure discipline enacted. Witness present.
+
+    - id: fault-005
+      prior_bones: [s03 — no social_tether-prot-rise witness]
+      result: RESOLVED
+      detail: >
+        s03n01 axes_held now includes social_tether-prot-rise: "tether load-bearing in
+        formation per c04; no new structural addition this scene; the evening review
+        operates within the established tether-architecture without expanding it."
+        Stillness-against-pressure discipline enacted. Witness present.
+
+  regression_checks:
+
+    - check: axis_delta_aggregate_exact
+      result: PASS
+      note: >
+        s01 Δ = 0; s02 Δ = 0; s03 political_register-prot +1.5 (s03n06 axis_moves
+        unchanged). No other axis_moves entries in the draft. Exact.
+
+    - check: sensory_grounding_all_scenes
+      result: PASS
+      note: >
+        s01n01 survives (stone skirt meets lane-mouth). s02n01 survives (courier enters
+        lane-mouth; note confirms grounding-bone role). s03n01 survives (Taylor takes
+        room-floor; added social_tether axes_held entry does not affect physical-action
+        qualification of grounding bone).
+
+    - check: stakes_axis_in_union_all_scenes
+      result: PASS
+      note: >
+        s01 political_register-prot in axes_held (n01 n02 n03 n04 n05 n07 n08).
+        s02 moral_framework in axes_held (n01 n03 n04 n05 n06 n07 n08 n09 n10).
+        s03 political_register-prot in axes_in_motion (s03n06). Unchanged.
+
+    - check: opposing_force_visible_post_s01_removals
+      result: PASS
+      note: >
+        s01n09 removed; s01n09 was the prior cycle's named opposing-force bone.
+        s01n04 rationale names "opposing force enters but discipline holds" directly.
+        s01n05 rationale names "novel weight present in the categorization specificity
+        demanded; discipline holds." Opposing force visible on surviving s01 bones.
+
+    - check: cost_ledger_paid_cl-d05
+      result: PASS
+      note: "s03n06 axis_moves {political_register-prot, up, 1.5, cl-d05} unchanged."
+
+    - check: held_axis_witnessed_all_scenes
+      result: PASS
+      note: >
+        moral_framework: s02n01 n03 n04 n05 n06 n07 n08 n09 n10; s03n02 n08. Witnessed.
+        relational_anchor_status: s02n11; s03n09. Witnessed.
+        moral_legibility_to_self: s03n08 n10 n12 n13. Witnessed.
+        capability: s01n02 n03 n08; s02n01; s03n01. Witnessed all scenes.
+        social_tether-prot-rise: s03n01 (fault-005 resolved). Witnessed.
+
+    - check: register_mannerism_dissolved
+      result: PASS
+      note: '"maps" count 0/31. signal-001 dissolved.'
+
+    - check: files_verb_count
+      result: PASS
+      note: >
+        "files" appears at s02n08 and s03n09 (count = 2). No identical VERB+OBJECT pair.
+        Below ≥3 threshold. No mannerism.
+
+    - check: holds_verb_count
+      result: PASS
+      note: >
+        "holds the wall-line" × 1 (s02n02); "holds the rushwick-pass" × 2 (s03n11,
+        s03n13). No single identical VERB+OBJECT pair ≥3. No mannerism.
+
+    - check: s02n01_three_axes_held_overcommitment
+      result: ACCEPT
+      note: >
+        s02n01 carries 3 axes_held (political_register-prot, moral_framework, capability).
+        Courier entering the lane-mouth plausibly carries all three per b01c01s01n07
+        precedent: political_register-prot held (recurring body, no color);
+        moral_framework held (incident not yet started, exception not engaged);
+        capability held (coverage maintenance, no expansion). Over-commitment accepted.
+
+    - check: s03n06_stops_verb_not_regressed
+      result: PASS
+      note: >
+        s03n06 SVO: "taylor-hebert-kl-122ac stops the rushwick-pass." Transitive;
+        physical cessation verb; no PP; no modifier. Not regressed.
+
+    - check: bone_count_in_range
+      result: PASS
+      note: "31 bones (s01: 7; s02: 12; s03: 12); chapter target 15-75."
+
+  flags_carried_forward:
+
+    - id: flag-001
+      status: ADVISORY — unchanged
+      note: >
+        s03n10 and s03n12 identical SVO "taylor-hebert-kl-122ac runs the rushwick
+        flat-read" still present; load-bearing per dramatic discipline; renderer-ambiguity
+        risk noted; not a schema violation; no fix required at bone-gate.
+
+    - id: flag-002
+      status: ADVISORY — unchanged
+      note: >
+        s03n03 "the Hook-feed resolves" intransitive completion verb; potential
+        FAULT-FORM-NON-ACTION-VERB at /and-review bones; bounded consequence;
+        no fix required at bone-gate.
+```
