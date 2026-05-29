@@ -102,6 +102,13 @@ R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/
 
 **The context-ledger** lives at `active-project/staff/showrunner/context-ledger-<book>-<chapter>.md` (lightweight; schema inline in Phase 2.5). It is the canonical record of sanctioned context-adds and is read by the R2 exposition judge (Phase 3), the auditor (Phase 5), and the audience-gate (Phase 5b) to suppress the anti-exposition penalty *only* for ledger-licensed entries.
 
+**Readability twin (PROP-0022 / URI-READABILITY-TWIN, 2026-05-29).** The context-weave track above fixes *completeness* (can a reader follow the plot/scene). Its mirror image fixes *readability* (is there a person to follow, or only an apparatus reporting — the c05 "abstracted into feed and count, dense to the point of obscurity" failure). It rides the SAME checkpoints with a SECOND axis and a mirror ledger:
+
+- The bones pre-check, Phase 2.5, and Phase 4.5 each answer the cold-reader's *other* question alongside followability: **aliveness** — does this breathe? Flagged stretches classify `OK` / `VOICE-FIXABLE` (embodied content rendered apparatus-first → a stitch render-choice fix) / `GROUNDING-REQUIRED` (bones genuinely lack body → grounding must be added).
+- `GROUNDING-REQUIRED` writes the **grounding-ledger** (`active-project/staff/showrunner/grounding-ledger-<book>-<chapter>.md`) — exact mirror of the context-ledger. A grounding-ledger entry is the authority that lets a sensory add **escape the frequency-band cap** (Phase 5 auditor + Phase 5b audience-gate exemption), just as a context-ledger entry escapes the anti-exposition penalty. This is the symmetric fix to the problem that *the grounding which makes dense prose breathe is exactly what the sensory cap trims away.*
+- Phase 4.5 and the `/and-stitch` Phase 9 terminal gate score the two axes **separately** and require BOTH — a chapter cannot ship "clean" by being maximally complete-and-economical while reading airless.
+- `VOICE-FIXABLE` findings (and the airless-voice problem generally) route to the `/and-stitch` Phase 4 **voice-embodiment discipline** (URI-STITCH-VOICE-EMBODIMENT) — the render-time rule that, within the bone-faithfulness fence, prefers the embodied faithful rendering of a bone over the apparatus-register one. The series voice-exemplar (`active-project/voice-exemplar.md`) is its calibration anchor.
+
 ## Args
 
 - `$1` — required. Chapter slug in `<book>-<chapter>` form (e.g. `b01-c01`), or the in-memory chapter slug `b01c01` (the command normalizes either form). If omitted, use `active.chapter` from `active-project/staff/showrunner/memory.md`.
@@ -278,7 +285,17 @@ entries:
 
 **Feed to Phase 3.** The CONTEXT-REQUIRED set + the WEAVE-FIXABLE steering hints are passed into the Phase 3 R2 dispatch payloads (see Phase 3 § Context-ledger coupling). A ledger entry is the authority that lets the R2 exposition judge ADD the orienting gloss **beyond its normal add-cap and exempt from the new-plot-content / over-explain penalties**.
 
-**Non-blocking.** Phase 2.5 never aborts the run — it produces the ledger and proceeds to Phase 3. (The bones-level "is this even followable at all" stop already happened upstream at `/and-review bones`.)
+**Second axis — readability / aliveness (PROP-0022 / URI-READABILITY-TWIN; 2026-05-29).** The same reviewer, in the same pass, also answers the cold-reader's *other* question — not "can I follow it" but "is there a person to follow, or only an apparatus reporting?" For each stretch that reads airless (events reaching the reader only through instrument/process register; no body, no sensory anchor, no one to inhabit), emit `AIRLESS @<bone>` and classify:
+
+| Class | Meaning | Routing |
+|---|---|---|
+| `OK` | a person is present / it breathes | none |
+| `VOICE-FIXABLE @<bone>` | the bone content IS embodied but is being rendered apparatus-first; a stitch render-choice fixes it | note to `/and-stitch` Phase 4 voice-embodiment discipline; NOT a ledger entry |
+| `GROUNDING-REQUIRED @<bone>` | the bones genuinely lack body/sensory material here; grounding must be ADDED, and the sensory frequency-band cap would normally block it | write a **licensed exception** to the grounding-ledger |
+
+**Output 3 — the grounding-ledger** at `active-project/staff/showrunner/grounding-ledger-<book>-<chapter>.md` — exact mirror of the context-ledger schema, with `id: grd-<NNN>`, `license: GROUNDING-REQUIRED`, `licensed_by: aliveness-reviewer`, `satisfied_by: <sensory entry id>`, and an extra `airless_symptom:` one-liner. A `GROUNDING-REQUIRED` entry is the authority that lets a sensory add **escape the frequency-band cap** at Phase 5 / 5b (mirror of the context exemption). `VOICE-FIXABLE` findings are listed in the Output-1 report and carry forward to `/and-stitch` (render-discipline, not facet content). Grounding adds themselves are authored at Phase 4.6 (sensory is not an R2 judge, so unlike the exposition path the grounding-ledger is consumed at the remediation round, not at Phase 3); R2 judges are told only NOT to DELETE a sensory entry that satisfies an open grounding-ledger line.
+
+**Non-blocking.** Phase 2.5 never aborts the run — it produces both ledgers and proceeds to Phase 3. (The bones-level "is this even followable / alive at all" stop already happened upstream at `/and-review bones`.)
 
 ---
 
@@ -391,22 +408,39 @@ The tensometer-fallback path (which previously parsed `tensometer-<slug>.md`'s s
 
 Mandate: re-read in order as a series reader at chapter N. For each ledger entry, confirm `satisfied` adds actually close the gap. Surface any remaining `FOLLOW-GAP`. Then return ONE verdict:
 
+Return TWO verdicts, scored separately (PROP-0022 separated-scoring — a chapter must pass BOTH; completeness cannot mask airlessness):
+
+**Axis 1 — completeness:**
+
 | Verdict | Trigger | Routing |
 |---|---|---|
-| `FOLLOWABLE` | no remaining FOLLOW-GAP touching the central event / its causality / its payoff; any residual gaps are minor | proceed to Phase 5 (mechanical audit) — the track is done |
-| `GLARING-HOLE` | a remaining FOLLOW-GAP on the central event, a load-bearing stake, or a scene-to-scene causal hand-off — the kind a series reader still cannot follow | fire Phase 4.6 (conditional R3); write the unclosed gaps to the ledger as `license: CONTEXT-REQUIRED, licensed_at: 4.5` |
+| `FOLLOWABLE` | no remaining FOLLOW-GAP touching the central event / its causality / its payoff; any residual gaps are minor | completeness axis clear |
+| `GLARING-HOLE` | a remaining FOLLOW-GAP on the central event, a load-bearing stake, or a scene-to-scene causal hand-off — the kind a series reader still cannot follow | fire Phase 4.6; write unclosed gaps to the context-ledger as `license: CONTEXT-REQUIRED, licensed_at: 4.5` |
 
-Persist report to `active-project/staff/reviews/context-follow-r2-<book>-<chapter>-<timestamp>.md`. Record `chapters[<slug>].context_followability.{verdict, report_path, reviewed_at, ledger_open_count}` in showrunner memory.
+**Axis 2 — readability / aliveness (PROP-0022):**
 
-**Non-blocking by itself** — `FOLLOWABLE` proceeds; `GLARING-HOLE` does NOT abort, it escalates to the conditional R3 (which has its own terminal handling).
+| Verdict | Trigger | Routing |
+|---|---|---|
+| `ALIVE` | a person is present across the chapter; no airless stretch on the spine | readability axis clear |
+| `AIRLESS-HOLE` | an `AIRLESS` finding on the central event / a peak / a load-bearing beat survives — the chapter reads as apparatus reporting itself at the points that should land | fire Phase 4.6; write `GROUNDING-REQUIRED` lines to the grounding-ledger AND list `VOICE-FIXABLE` findings for `/and-stitch` Phase 4 |
+
+**Combined gate:** proceed to Phase 5 only if `FOLLOWABLE` AND `ALIVE`. If EITHER axis holes, Phase 4.6 fires (handling whichever ledger(s) have open lines). 
+
+Persist report to `active-project/staff/reviews/context-follow-r2-<book>-<chapter>-<timestamp>.md`. Record `chapters[<slug>].context_followability.{completeness_verdict, readability_verdict, report_path, reviewed_at, context_ledger_open, grounding_ledger_open}` in showrunner memory.
+
+**Non-blocking by itself** — a clear pass proceeds; a hole on either axis escalates to the conditional R3 (which has its own terminal handling), it does NOT abort.
 
 ---
 
 ## Phase 4.6 — CONDITIONAL R3: context remediation (PROP-0020 / URI-FACETS-CONTEXT-WEAVE; 2026-05-29)
 
-**Fires ONLY on a Phase 4.5 `GLARING-HOLE`.** Skipped otherwise. This is the revived-on-demand R3 (the default-retired relaxation round, repurposed as a targeted context-remediation round). Checkpoint 4 of 4.
+**Fires on a Phase 4.5 `GLARING-HOLE` (completeness axis) OR `AIRLESS-HOLE` (readability axis).** Skipped otherwise. This is the revived-on-demand R3 (the default-retired relaxation round, repurposed as a targeted remediation round for both tracks). Checkpoint 4 of 4.
 
-**Step 1 — Targeted add round.** For each Phase 4.5 `CONTEXT-REQUIRED @<bone>` ledger entry still `open`, dispatch the exposition-author (judge/add mode) — and, where a WEAVE-FIXABLE route is better, the named lens-facet author — to author the orienting content at the anchor. Ledger-licensed; exempt from add-cap + anti-exposition penalties (same exemption as Phase 3). Re-run `build_cite_index.py`. Stamp ledger entries `satisfied`.
+**Step 1 — Targeted add round (handles whichever ledger has open lines).**
+- *Context (completeness):* for each `open` `CONTEXT-REQUIRED @<bone>` context-ledger entry, dispatch the exposition-author (judge/add mode) — or, where a WEAVE-FIXABLE route is better, the named lens-facet author — to author the orienting content at the anchor. Ledger-licensed; exempt from add-cap + anti-exposition penalties (same exemption as Phase 3).
+- *Grounding (readability):* for each `open` `GROUNDING-REQUIRED @<bone>` grounding-ledger entry, dispatch the **sensory-author** (add mode) to author the concrete body/sensory grounding at the anchor. Ledger-licensed; **exempt from the sensory frequency-band cap** (the whole point — the grounding that breathes is the grounding the cap would trim). `VOICE-FIXABLE` findings are NOT authored here — they are render-discipline and carry to `/and-stitch` Phase 4.
+
+Re-run `build_cite_index.py`. Stamp each satisfied ledger entry `satisfied` + `satisfied_by`.
 
 **Step 2 — Final followability review.** Re-dispatch the context-aware reviewer (one `general-purpose`) on the post-R3 graph. Return `FOLLOWABLE` or `RESIDUAL-HOLE`.
 
@@ -437,12 +471,15 @@ Dispatch **auditor** (fork) with the full graph:
 - Series plans (showrunner memory: `series.chunk`, `series.substance`, `series.laws`, `series.lore`, `series.behaviors`) — for series-law constraint checks.
 - Schemas: `facet.schema.md`, `dialogue.schema.md`, `audit-report.schema.md`.
 - **Context-ledger (PROP-0020):** `active-project/staff/showrunner/context-ledger-<book>-<chapter>.md` if present — the authority for which exposition entries are sanctioned context-exceptions.
+- **Grounding-ledger (PROP-0022):** `active-project/staff/showrunner/grounding-ledger-<book>-<chapter>.md` if present — the authority for which sensory entries are sanctioned grounding-exceptions (exempt from the FREQUENCY-BAND cap).
 
 **Forbid loading:** behavior cards, vibes-as-bias, audience personas (except for exposition CONSTRAINT § license-completeness check, which requires loading the persona slugs to verify `licensed-by:` references resolve — load names only, not content), source prose. The auditor reads the graph mechanically against constraints, not aesthetically.
 
 **Mode: flag-only.** Until the auditor itself is tuned for delete-authority, findings are routed back to facet authors as flags. Once tuned (separate work), HARD findings will be executed as deletes (with citation cascade).
 
 **Licensed-context-exception exemption (PROP-0020 / URI-FACETS-CONTEXT-WEAVE).** An exposition entry carrying `licensed-context-exception: ctx-<NNN>` in its frontmatter, where `ctx-<NNN>` resolves to a `license: CONTEXT-REQUIRED` entry in the context-ledger, is **exempt from the following findings**: AP-SCAN `new-plot-content` (the content is sanctioned orientation, not new plot), FREQUENCY-BAND exposition over-count contribution (licensed exceptions do not count toward the 1-5% / episode-open / first-mention caps), and SUPERFLUOUS/`rare`-add scrutiny. It is **NOT exempt** from STRUCTURAL integrity, CONSTRAINT source-traceability, CONSTRAINT license-completeness, re-gloss check, or anti-jargon/hollow-prose AP-SCAN — a sanctioned exception must still be well-formed, sourced, and cleanly written. A `licensed-context-exception` whose `ctx-<NNN>` does NOT resolve in the ledger → HARD `FAULT-CONTEXT-LICENSE-DANGLING` (someone claimed an exemption without a ledger entry).
+
+**Licensed-grounding-exception exemption (PROP-0022 / URI-READABILITY-TWIN).** The exact mirror for the readability axis. A sensory entry carrying `licensed-grounding-exception: grd-<NNN>` in its frontmatter, where `grd-<NNN>` resolves to a `license: GROUNDING-REQUIRED` entry in the grounding-ledger, is **exempt from the sensory FREQUENCY-BAND cap** (the 3-6% / ≤3-per-scene band — licensed grounding does not count toward it) and from SUPERFLUOUS/lonely-entry scrutiny (an aliveness reviewer sanctioned it). It is **NOT exempt** from STRUCTURAL integrity, the sensory old-state anchor rubric, CONTRADICTION, or DEDUP — sanctioned grounding must still be well-formed and non-duplicative. A `licensed-grounding-exception` whose `grd-<NNN>` does NOT resolve in the grounding-ledger → HARD `FAULT-GROUNDING-LICENSE-DANGLING`.
 
 ### Audit classes (twelve; with exposition-specific rules layered into FREQUENCY-BAND, CONSTRAINT, RUBRIC-FIDELITY, and AP-SCAN)
 
@@ -584,6 +621,8 @@ Aggregation: strict 3-of-3 ACCEPT per character (URI-AUDIENCE-AGGREGATION-RULE).
 Reviewers may also propose ADDS: "I'm cape-fic; I needed a gloss for `kingsguard` at @<N> and there isn't one." This audience-side ADD-surfacing is unique to exposition; for other facets, ADDs from reviewers are exceptional. The exposition author has final call on the ADD's gloss content but cannot refuse an audience-flagged ADD without escalating via TASTE-FLAG → AP-SCAN promotion. Single dissent blocks: 3-of-3 ACCEPT required to clear.
 
 **Licensed-context-exception handling at the gate (PROP-0020).** The reviewers read the context-ledger (`active-project/staff/showrunner/context-ledger-<book>-<chapter>.md`) alongside the exposition facet. For an exposition entry carrying `licensed-context-exception: ctx-<NNN>`, a reviewer **may NOT REVISE/FAIL it on the ground that it is exposition / over-explains / disrupts the prose** — an upstream followability reviewer determined the orientation is required, and that judgment is binding at the gate. The reviewer MAY still flag it for "the gloss as written still left me confused" or "this is a craft-defective rendering" — that routes to *improving* the gloss (REWORD), never to deleting the sanctioned context. The reviewer's audience-side ADD power is unchanged. This is the gate-side half of resolving the original c05 tension: the context the cold-reader needed can now be added without the very reviewers who'd have wanted it then penalizing it as an info-dump.
+
+**Licensed-grounding-exception handling at the gate (PROP-0022 — the readability mirror).** Sensory-facet reviewers read the grounding-ledger alongside the sensory facet. For a sensory entry carrying `licensed-grounding-exception: grd-<NNN>`, a reviewer **may NOT REVISE/FAIL it on density grounds** ("too much sensory here" / "over the band") — an upstream aliveness reviewer determined the grounding is required to keep the passage from reading airless, and that judgment is binding at the gate. The reviewer MAY still flag it for craft ("this image is inert / mixed-modality-confusing / contradicts prior state") — that routes to *improving* the grounding, never to deleting it for being over-cap. Same principle as the exposition exemption above: the breathing-room the cold-reader needed can be added without the density-watchdog reviewers cutting it back out.
 
 ### Read inputs per reviewer
 
