@@ -194,6 +194,79 @@ Dispatch the project's three audience personas + dramatist + auditor in parallel
 
 Accept/revise loop. 3-try cap. Audience personas write verdicts to STM after each loop iteration.
 
+### Phase 5.5 — Chunk cold-read gate (URI-CHUNK-COLDREAD; PROP-0019; chapter level only)
+
+Fires only at `chapter b<NN>c<MM>` invocation level. Skipped at series + book levels (no reader-facing chunk artifact). Skipped if `chapters[<slug>].chapter_class: frame-coda` (symmetric with Phase 6 substance bone-gate exemption downstream).
+
+**Why this exists.** The Phase 9 cold-read at `/and-stitch` is the cheapest discriminator of cold-reader-fit and the most expensive place to fire it — after bones + facets + stitch have all committed (~50 dispatches to remediate). A chunk-level cold-read here catches Class A (cause-chain gaps; missing connectives) and surfaces Class B (design-inherent CONTINUE risk) at the cheapest possible layer (~1 dispatch + 1 interactive question). The chunk-level read cannot substitute Phase 9 — chunks read differently than assembled prose — but it can drain most of what Phase 9 currently catches into a cheaper upstream layer. See `staff/admin/process-proposals.md § PROP-0019` for the b01-c05 three-FAIL trace evidence.
+
+**Step 1 — Cold read (one general-purpose agent, uninformed).**
+
+Dispatch one `general-purpose` agent with the 6-question cold-read prompt adapted for a chunk-level read (identical structure to `/and-stitch` Phase 9 Step 1 but reading the chunk artifact, not the assembled draft):
+
+> You are a first-time reader of a chapter outline. You have been handed one chapter's plan — a paragraph at the chapter level + a small handful of scene-paragraphs — and nothing else. Read it once.
+>
+> Read ONLY: `active-project/staff/showrunner/b<NN>c<MM>-draft.md` (or the equivalent in-memory chunk text printed below if the draft has been pruned). Do not open bones (none exist yet), facets (none exist yet), other chapter chunks, the substance contract, the series notes, or any other project file. Your value here is uninformedness.
+>
+> Then answer, from the chunk alone:
+> 1. **EVENTS** — What physically happens across this chapter, scene by scene? Plain list.
+> 2. **JEOPARDY** — Is anyone at risk? Who, of what, and how do you know it from the chunk?
+> 3. **CAUSALITY** — Does each scene connect to the next by cause? Where could you not tell why something happened?
+> 4. **PAYOFF** — Does the chapter end on something earned given what the chunk actually shows?
+> 5. **CONTINUE?** — Would you, having read this outline, want to read the chapter? Yes/no, one sentence why.
+> 6. **ONE-LINE SUMMARY** — Summarize what this chapter is, the way you would to a friend.
+>
+> Be blunt. Under 400 words.
+
+Persist agent output to `active-project/staff/reviews/chunk-coldread-<slug>-<timestamp>.md`.
+
+**Step 2 — Diff against intent + classify.**
+
+Compare cold-reader's criterion 6 summary against `chapters[<slug>].goal`. Semantic comparison (does the summary name the same event-and-payoff the goal names?):
+
+| Verdict | Trigger | Routing |
+|---------|---------|---------|
+| `PASS-CHUNK` | Summary maps to goal AND CONTINUE=yes | Proceed directly to Phase 6 |
+| `CHUNK-CLASS-A` | Summary does NOT map to goal | Cause-chain / connective gap at chunk layer — route to Step 3 with revise default |
+| `CHUNK-CLASS-B` | Summary maps to goal AND CONTINUE=no | Design-inherent risk surfaced early — route to Step 3 with proceed-with-eyes-open default |
+
+**Step 3 — Admin user-proxy disposition (non-PASS only).**
+
+Dispatch admin in user-proxy mode (per CLAUDE.md Rule 13). Inputs:
+- Chunk text + scene chunks
+- Cold-reader's 6 answers
+- Classification (Class A / Class B)
+- Three options:
+    - **(R) Revise chunk** → re-author at chunk layer. Class A default. Cheapest fix.
+    - **(P) Proceed with risk recorded** → advance to Phase 6 with the chunk_cold_read verdict + cold-read findings preserved in memory. Class B default.
+    - **(S) Substance-contract revision** → escalate to `/and-substance chapter <slug> redo` with refined contract. High cost; reserved for cases where (P) is not acceptable.
+
+Admin returns disposition; pipeline applies it. Only `ESCALATE` from admin forwards the question to principal via `AskUserQuestion`.
+
+**Step 4 — Persist + memory.**
+
+Write to `chapters[<slug>].chunk_cold_read`:
+```yaml
+chunk_cold_read:
+  reviewed_at: <iso>
+  verdict: PASS-CHUNK | CHUNK-CLASS-A | CHUNK-CLASS-B | SHIPPED-WITH-RISK-RECORDED
+  classification: A | B | n/a
+  recovered_summary: <criterion 6>
+  intended_goal: <chapters[<slug>].goal>
+  continue: yes | no
+  report_path: active-project/staff/reviews/chunk-coldread-<slug>-<timestamp>.md
+  disposition: R | P | S
+  dispositioned_at: <iso>
+  dispositioned_by: admin | principal
+  cold_read_risk_carry: |
+    <if (P): comma-list of cold-read findings that the principal authorized as known-risk
+     for the chapter, surfaced to /and-stitch Phase 9 routing as already-dispositioned>
+```
+
+**Downstream coupling.** `/and-stitch` Phase 9 Step 4 reads `chapters[<slug>].chunk_cold_read.verdict`:
+- If `chunk_cold_read.verdict == SHIPPED-WITH-RISK-RECORDED` AND a Phase 9 FAIL Class B fires with the SAME complaint categories that were carried in `cold_read_risk_carry` → the verdict ships terminal as `SHIPPED-WITH-CAVEATS` automatically without re-asking principal (the chunk-level disposition already authorized the cold-read risk). This is the cost-discipline mechanism that prevents repeated principal disposition on the same chapter.
+- A Phase 9 FAIL Class B with NEW complaint categories not in `cold_read_risk_carry` → re-dispatches admin user-proxy per the PROP-0018 Class B branch (normal flow).
+
 ### Phase 6 — Persist + slug auto-generation
 
 Write chunks + contracts to showrunner memory.

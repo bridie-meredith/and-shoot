@@ -1,59 +1,80 @@
 ---
 facet: state-updates
-sources: [env, taylor-hebert-kl-122ac]
+sources: [b01-c05-taylor-hebert-kl-122ac, env-b01-c05]
 note: consolidated by build_cite_index from per-source slices. Single top-of-file frontmatter per r3-signal-001.
 ---
 
-# source: env
-facet: state-updates (env)
-episode: b01c05
-author: studio
-scope: studio.* and prop:oc-* entries only — actor:* entries authored by per-character dialogue-writer fork
+# source: b01-c05-taylor-hebert-kl-122ac
+# SOURCE SLICE — NOT CANONICAL. IDs in this file are slice-local. The canonical authority for cross-facet citation is state-updates.md (consolidated; monotonic IDs 1-12). The cite-index resolves [state:N] tokens against the consolidated.
+
+facet: state-updates
+episode: b01-c05
+author: taylor-hebert-kl-122ac (impersonator, facet-authoring override mode)
+scope: actor:taylor-hebert-kl-122ac.* only (studio + props authored by studio fork)
 ---
 
-# rubric-carve-out — oc-slug prop field-extensions
+# rubric-carve-out — field-extensions for c05 recognition apparatus
 #
-# design/shoot-v2/rubric-state-updates.md § Field-extension protocol
+# rubric-state-updates.md (design/shoot-v2/rubric-state-updates.md) § Field-extension protocol
 #
-# Carve-out scope: prop:oc-enforcement-report-entry.* and prop:oc-courier-body-map.*
-# Carve-out rule: Neither prop has an authored card in cards/props/ or active-project/warehouse/ yet
-#   (Rushwick oc-cards are margit parking-lot SOFT per /and-write Phase 7 emit note). Studio authors
-#   these as project-original props under the oc-* slug convention with field-extension notation on each
-#   entry. Fields used: .state (tracked record-state; matches the pattern of prop:oc-report-sheet.state
-#   established in b01c04). Frugality: both props are created (absent -> X) and mutated within this
-#   chapter; the schema permits first-touch baseline authoring in this facet.
-# Coverage justification: the enforcement-report-entry and courier body-map are bureaucratic
-#   irreversible mutations called out in the dispatch brief and grounded in bones @16 and @18/@27
-#   respectively. Refusing would leave load-bearing records absent from canonical memory.
+# Carve-out scope: three new fields on actor:taylor-hebert-kl-122ac
+#   (a) stats.political_register_prot_axis — already canonical in state.md, scalar move
+#   (b) discipline_state.neutral-instrumental-read — new field-extension
+#   (c) knowledge.body-map.rushwick-courier — new field-extension under knowledge.body-map
+#   (d) knowledge.courier-body-record — new field-extension (record-state analog to s01e01 anchor)
+# Carve-out rule: each extension documented inline; each defensible as tracked-state aspect
+#   (knowledge, discipline-state, exposure-state ARE tracked per rubric ACCEPT signatures;
+#   mood/register/voice-tone are NOT — none of these are those).
+# Coverage justification: the c05 chapter-goal is the apparatus-level foreclosure of neutral-
+#   instrumental reading; without these fields the canonical write-back surface cannot record
+#   the irreversible move the chapter exists to deliver. Margit referral to add these to the
+#   card schema is the appropriate downstream cleanup; the c05 facet fires under extension.
 #
 # Per-entry annotations:
-# - state:1 @2: anchor corrected from @1 to @2; @1 is world-before-protagonist establishing beat
-#   (hill's stone skirt meets lane-mouth); location flip fires at @2 when Taylor enters (anti-pattern #7 avoided)
-# - state:3 @16: field-extension: prop:oc-enforcement-report-entry.state (new prop; first-touch baseline)
-# - state:4 @18: field-extension: prop:oc-courier-body-map.state (new prop; first-touch baseline)
-# - state:5 @20: field name corrected from active_location to location (matches studio state.md schema)
-# - state:7 @27: extends state:4 on same prop field; prop established at @18
+# - state:2 @28: field-extension discipline_state.neutral-instrumental-read (new field; tracked-state aspect — disability-of-read-mode, not perception)
+# - state:3 @29: scalar-axis move on existing stats.political_register_prot_axis (canonical field, no extension); paired with discipline-state foreclosure on same beat per cross-author dependency
+# - state:1 @21: field-extension knowledge.body-map.rushwick-courier (new sub-key under knowledge.body-map; tracked-state aspect — body-map composition)
+# - state:4 @31: field-extension knowledge.courier-body-record (new field; tracked-state aspect — record-state knowledge, analog to s01e01:64 actor:taylor.knowledge.record-state anchor)
 
-1 @2 studio.location: oc-stitch-house-lane -> the-rushwick
-2 @3 studio.coverage_active_range: four-ward-complete -> rushwick-included
-3 @16 prop:oc-enforcement-report-entry.state: absent -> filed-with-jarvis # field-extension: prop:oc-enforcement-report-entry.state (new prop; first-touch baseline; oc-card pending margit)
-4 @18 prop:oc-courier-body-map.state: absent -> initiated # field-extension: prop:oc-courier-body-map.state (new prop; first-touch baseline; cf-d10 thread anchor; oc-card pending margit)
-5 @20 studio.location: the-rushwick -> taylor's-lodging
-6 @20 studio.time_of_day: morning -> evening
-7 @27 prop:oc-courier-body-map.state: initiated -> filed
+1 @21 actor:taylor-hebert-kl-122ac.knowledge.body-map.rushwick-courier: absent -> present-unnamed-figure-junction-corner-22nd
+2 @28 actor:taylor-hebert-kl-122ac.discipline_state.neutral-instrumental-read: available-for-rushwick-content -> apparatus-failing-color-persists-across-retry
+3 @29 actor:taylor-hebert-kl-122ac.stats.political_register_prot_axis: 1.0 -> 2.5
+4 @29 actor:taylor-hebert-kl-122ac.discipline_state.neutral-instrumental-read: apparatus-failing-color-persists-across-retry -> foreclosed-for-rushwick-content
+5 @31 actor:taylor-hebert-kl-122ac.knowledge.courier-body-record: absent -> filed-as-cf-d10-thread-anchor
 
-# source: taylor-hebert-kl-122ac
+# source: env-b01-c05
+# SOURCE SLICE — NOT CANONICAL. IDs in this file are slice-local. The canonical authority for cross-facet citation is state-updates.md (consolidated; monotonic IDs 1-12). The cite-index resolves [state:N] tokens against the consolidated.
+
 facet: state-updates
 episode: b01c05
-author: taylor-hebert-kl-122ac (impersonator, facet-authoring mode)
-scope: actor:taylor-hebert-kl-122ac entries only
+author: studio
+scope: environment + prop (no actor-state; actor:taylor.* is dialogue-writer fork authority)
 ---
 
-8 @2 actor:taylor-hebert-kl-122ac.location: flea-bottom-hook-district -> the-rushwick
-9 @3 actor:taylor-hebert-kl-122ac.feed-coverage.rushwick: not-yet-acquired -> active   # field-extension: feed-coverage.<ward> (operational coverage map per persona card §Action Menu)
-10 @18 actor:taylor-hebert-kl-122ac.knowledge.body-map.courier: absent -> recurring-with-enforcement-attached   # field-extension: knowledge.body-map.<entity> (intelligence-routing tracked surveillance memory per persona card §Action Menu)
-11 @20 actor:taylor-hebert-kl-122ac.location: the-rushwick -> taylor-lodging-room-floor
-12 @21 actor:taylor-hebert-kl-122ac.evening-review.state: closed -> open   # field-extension: evening-review.state (nightly operational accounting procedure per persona card §Off-Screen Cadence)
-13 @25 actor:taylor-hebert-kl-122ac.political_register_prot_axis: 1 -> 2.5   # cl-d05 first tranche; +1.5 axis-move; peak-bones; neutral-instrumentally-observant foreclosed
-14 @26 actor:taylor-hebert-kl-122ac.evening-review.state: open -> closed
-15 @27 actor:taylor-hebert-kl-122ac.knowledge.body-map.courier: recurring-with-enforcement-attached -> canonical-file-cf-d10-thread-open   # body-record canonical filing; cf-d10 thread confirmed open
+# rubric-carve-out — field-extension for oc-prop targets pending margit cards
+#
+# design/shoot-v2/rubric-state-updates.md § Authority / Field-extension protocol
+#
+# Carve-out scope: entries targeting prop:oc-enforcement-report-entry and prop:oc-courier-body-map
+# Carve-out rule: both are project-original props (oc-* slug class) with no card yet authored;
+#   prop cards are pending margit referrals per studio state.md (SEAM-002 + SEAM-003).
+#   Authority § "Studio may extend with oc-* for genuine project-originals, but extension must be flagged."
+#   Each entry carries an inline # field-extension comment per rubric protocol.
+# Coverage justification: oc-enforcement-report-entry is first-touched at @17 (filing event, irreversible
+#   bureaucratic mutation; rubric calibration anchor: "irreversible bureaucratic / record / knowledge events
+#   strongly expect a state-update entry"). oc-courier-body-map is first-touched at @21 (body-record initiation,
+#   cf-d10 thread anchor; persists to b01c06+). Both props are tracked-state-aspects with genuine persistence.
+#   Refusing on no-card-yet grounds would miss irreversible record-events the rubric explicitly flags for co-citation.
+#
+# Per-entry annotations:
+#   state:3 @17: carve-out clause A — oc-enforcement-report-entry, field-extension, SEAM-002 pending
+#   state:4 @21: carve-out clause B — oc-courier-body-map first-touch, field-extension, SEAM-003 pending
+#   state:7 @31: carve-out clause B — oc-courier-body-map field-transition, SEAM-003 pending
+
+6 @2 studio.location: oc-stitch-house-lane -> the-rushwick
+7 @3 studio.coverage_active_range: four-ward-complete -> rushwick-included
+8 @17 prop:oc-enforcement-report-entry.state: absent -> filed-with-jarvis # field-extension: state (new prop; first-touch @17; oc-card pending margit SEAM-002; irreversible filing event)
+9 @21 prop:oc-courier-body-map.state: absent -> initiated # field-extension: state (new prop; first-touch @21; cf-d10 anchor; oc-card pending margit SEAM-003)
+10 @23 studio.location: the-rushwick -> taylor-lodging
+11 @23 studio.time_of_day: morning -> evening
+12 @31 prop:oc-courier-body-map.state: initiated -> filed # field-extension: state (cf-d10 thread confirmed; SEAM-003 pending)

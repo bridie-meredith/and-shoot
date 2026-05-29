@@ -1596,6 +1596,90 @@ methodology-update-proposed: no
 
 ---
 
+## DEC-0040 | 2026-05-28 | SLOW (user-proxy)
+
+question: /and-write b01-c05 revise --from-signals is firing. What scope should the revise cover?
+
+context: |
+  /and-stitch b01-c05 Phase 9 cold-read FAILED 2026-05-28 on structural grounds (not polish).
+  Five specific cold-reader confusions: (i) cause-chain "sheet yesterday → beating today" not stated;
+  (ii) courier transition ambiguous (stood up or fell); (iii) Sera + faction/Jarvis-format frame
+  unexplained; (iv) recognition @25 (feed-stops-neutral payoff) landed inert — gesture without anchor;
+  (v) courier @8 introduced with no signal of recurrence / cf-d10-stake-bearer significance.
+  Phase 6 bone-gate was clean (signal-001 dissolved; only advisory FLAGs carried). All failures
+  are additive gaps, not structural decomposition errors.
+  Bones: 31 lines across 3 scenes (s01=7, s02=12, s03=12).
+
+options:
+  (a) Full chapter re-decompose — all 3 scenes; clear all gate verdicts; full Phase 1-7 re-run; 3-4× cost of (b).
+  (b) Targeted bones-add at three sites — s01 add courier-recurrence anchor bone(s); s02 add
+      Jarvis-frame + cause-chain bone(s); s03 add recognition-staging bone(s) at @25; keep all
+      existing bones; revise scope clears verdicts only on affected scenes.
+  (c) s02 + s03 re-decompose only — skip s01 on theory facet layer carries cf-d10 plant via NI
+      density + memory citations; mid-cost.
+
+decision: Option (b) — targeted bones-add at three sites (s01, s02, s03). Revise mode, not redo.
+
+basis: |
+  goal:2 (cost discipline — all five cold-read failures are additive gaps, not decomposition errors;
+  full re-decomp would re-author a structurally sound scaffold at 3-4× cost for near-zero expected
+  quality delta over targeted adds) + methodology:3a (reversibility — additive bone-adds preserve
+  existing IDs and gate verdicts; full re-decomp is irreversible relative to the existing scaffold)
+  + methodology:3b (cost — (b) is cheapest and sufficient given the additive-gap diagnosis) +
+  goal:1 (pipeline correctness — bones-first principle requires the substance be in the bones, not
+  rescued by facets; s01 anchor bone is required even though facets partially compensate)
+
+rationale: |
+  Diagnostic question: are the failures about missing bones (additive gaps) or wrong decomposition
+  (structural errors)? All five cold-reader confusions are additive gaps:
+  (i) Cause-chain: missing bone, not wrong bone. One explicit cause-chain bone in s02 closes this.
+  (ii) Courier transition: missing anchor bone in s02 (clear what happened to him).
+  (iii) Sera / faction frame: missing explainer bone in s02.
+  (iv) Recognition @25: missing interiority bone in s03 — gesture without interior beat.
+  (v) Courier @8 significance: missing recurrence-anchor bone in s01.
+
+  Option (c) collapses s01 add into nothing on the theory NI density compensates. The bones-first
+  principle (goal:1, pipeline correctness) says substance must live in bones, not be rescued by facets.
+  The facet layer can amplify a signal already present in bones; it cannot substitute for a bone that
+  does not exist. s01 needs at least one anchor bone. Option (b) correctly addresses all three sites.
+
+  Option (a) full re-decomp is not warranted: the Phase 6 bone-gate was clean; the existing 31 bones
+  pass the substance contract; the cold-read failures are not evidence that the decomposition was wrong,
+  only that coverage was incomplete. Re-decomposing a sound scaffold at 3-4× cost when targeted adds
+  will close the gaps is anti-goal:2.
+
+constraints_for_bone_author:
+  - Revise mode only — do not clear verdicts on bones outside the three targeted sites. Preserve all existing flat IDs.
+  - s01 site: add one courier-recurrence anchor bone. Must be diegetic (he is notable, not just "a
+    courier") and flag cf-d10-stakes significance. Do not interrupt existing s01 bone sequence.
+  - s02 site: add (a) one Jarvis-format + cause-chain bone — must make the sheet-hand-yesterday →
+    beating-today causal link explicit in diegesis; (b) one bone establishing Sera's identity and
+    the narrator faction/Jarvis-format report frame. Bone (ii) courier-transition ambiguity may be
+    addressable via the existing s02 structure or requires one additional transition-clarification bone.
+  - s03 site: add one recognition-staging bone at or just before @25. Must carry interiority — what
+    Taylor understands is happening (feed-stops-neutral). "Shoulders did not reset" is gesture; the
+    new bone names the recognition.
+  - SVO form discipline — no prepositional phrases of place/direction/time/instrument/accompaniment
+    in bone SVO text. Magnitude floor 1.0 per axis_move. No 0.5-magnitude splits.
+  - Dialogue co-emission — if any new bone is a dialogue-anchor bone, per-character dialogue files
+    must be updated co-bonded per URI-WRITE-DIALOGUE-COBONDED. No dialogue-anchor bones without
+    dialogue file update.
+  - Scene-map update — Phase 7 re-emit must update the scene-map facet to reflect new bones.
+
+trade-off: |
+  Option (b) is the minimum-cost path. If the targeted adds are insufficient (e.g., a second cold-read
+  still cannot connect the cause-chain despite an explicit bone), that would indicate a decomposition
+  problem, not a coverage problem — and full re-decomp would be warranted at that point. The additive
+  approach is the right first move because all five failures are additive-gap diagnosis at current
+  evidence.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0039 | 2026-05-28 | FAST
 
 question: Continue b01c05 cascade through /and-facets + /and-stitch in this session, or stop at bones-reviewed PASS-WITH-NOTES and surface a clean handoff?
@@ -1626,6 +1710,303 @@ trade-off: Chapter does not ship to draft/ today. The /and-facets + /and-stitch 
   not avoided — it runs next session. Total project spend is identical; per-session context budget
   is preserved.
 
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0041 | 2026-05-29 | SLOW (process-critic → ESCALATE)
+
+question: |
+  Second consecutive cold-read FAIL on b01-c05 — does the process need to change, or is this an
+  ESCALATE to the principal? Specifically: is the URI-STITCH-COLD-READ-FEEDBACK-LOOP (FAIL →
+  /and-write revise) the right routing when the central event WAS recovered but CONTINUE=no fired
+  on register-fatigue + design-inherent genre-seam grounds?
+
+context: |
+  First FAIL (pre-revise, 2026-05-28 early): cold-reader could not recover the central event
+  (recognition-as-feed-stopping-being-neutral). 5 structural gaps; all additive; /and-write revise
+  --from-signals added 4 bones (A1/B1/B2/C1); re-ran /and-review bones (PASS-WITH-NOTES);
+  /and-facets (SHIPPABLE-WITH-CAVEATS); /and-stitch clean Phases 1-8.
+
+  Second FAIL (post-revise, 2026-05-28 late):
+    - Cold-reader DID recover the central event: "their instrument refuses to re-run the route cleanly"
+    - CONTINUE=no fired on five different complaints:
+      (1) "feed/count/architecture register is exhausting and I'm not sure what happened"
+      (2) "Westeros names vs bug-feed surveillance reads as different genres grafted together"
+      (3) "'Hook' appears with no introduction"
+      (4) "whether the alley violence is restraint or evasion was unresolved — inferred possible sexual assault"
+      (5) "emotionally muffled" — voice abstracts away the thing the ending depends on
+    - Staging review: 6 findings (1 EXPAND / 2 GROUND / 2 STAGE / 1 NEEDS-BEAT); no signal-cluster threshold met
+    - Prose-rationale-mute audit: CLEAN (0/8 MUTE)
+    - Chapter substance: 9/9 SUBSTANCE-FELT both pre- and post-revise Phase 6; auditor PASS
+
+  DEC-0024 deferred candidate: "if a future chapter with a documented dormancy-prefigure or
+  deferred-stakes dramatic_shape FAILs Phase 9 cold-read despite sound bones, that cross-chapter
+  recurrence is the trigger for a modify proposal." b01c05 is NOT dormancy-prefigure — it's an
+  active chapter with violence, factional intelligence, and axis movement — so the DEC-0024 deferred
+  candidate does not fire by its own stated terms. Different failure class.
+
+  gate_path: .claude/commands/and-stitch.md#phase-9
+  trigger.source_report: active-project/staff/reviews/coldread-b01-c05-2026-05-28-revise.md
+  trigger.source_verdict: FAIL (second consecutive; CONTINUE=no; central event recovered)
+
+options: |
+  (a) OK — content failure, gate fired correctly; FAIL → /and-write revise is right routing
+      regardless of which sub-reason CONTINUE=no fired; run a third revise cycle.
+  (b) PROCESS-CHANGE-PROPOSED — add a Phase 9 routing note distinguishing recovered-event +
+      CONTINUE=no-on-register-class from structural-incompleteness FAIL; route former to principal
+      judgment / stitch-layer instead of mandatory bones-revise. Admin authors the proposal.
+  (c) ESCALATE — second consecutive FAIL where event was recovered exceeds admin authority;
+      surface to principal.
+
+decision: ESCALATE-TO-HUMAN
+
+basis: |
+  methodology:human-only:architectural-direction (Phase 9 routing modification is architectural)
+  + methodology:human-only:spend-commitments-past-routine (third revise cycle + re-cascade is
+  significant spend; gate's own routing mandates it but the dominant CONTINUE=no causes are
+  design-inherent, not addressable by bones-revise; the spend question needs principal authorization)
+  + methodology:3a (both paths — ship with override, or run third revise — are near-irreversible;
+  neither can be decided by admin from goals + LTM alone without principal judgment on the
+  chapter's design intent vs. reader-experience tradeoff)
+
+rationale: |
+  Content-vs-process discrimination:
+
+  Five CONTINUE=no complaints, analyzed by addressability:
+    (1) Register fatigue ("exhausting"): IS the substance contract (cold-utilitarian register
+        throughout, no tonal relief). Cannot be addressed by bones-revise without violating
+        the substance contract. Zero expected gain from a third revise cycle on this complaint.
+    (2) Genre-seam (Westeros vs. bug-feed): IS the project premise. Cannot be gated or fixed at
+        any layer.
+    (3) "Hook" unexplained: cross-episode architecture decision (Phase 1 cross-episode register
+        check is informational-only per spec; the chapter correctly does not re-gloss terms
+        established in c01-c04). Not a gate gap. A re-gloss would violate cross-episode register
+        conventions for the in-series reader.
+    (4) Alley violence ambiguity (possible sexual assault reading): prose-staging judgment. This IS
+        addressable — one bone recast (the alley-sound bone) or a stitch-layer fence on the specific
+        phrase. A targeted stitch-layer fix or a single-bone recast could close this. Prose-rationale-
+        mute audit was CLEAN so the bone carries staging; the gap is in phrasing, not substance.
+    (5) Payoff emotionally muffled: register-fatigue complaint. Same as (1) — the cold-utilitarian
+        register is the substance contract; the ending cannot "feel" more without the register
+        opening, which the substance contract prohibits.
+
+  Of five complaints: three (1, 2, 3) are design-inherent, one (5) is register-inherent, one (4)
+  is addressable at stitch-layer or minimal bone recast. A third /and-write revise cycle + re-cascade
+  correctly addresses (4) and cannot address (1), (2), (3), or (5). Expected cold-read outcome of
+  a third revise cycle: CONTINUE=no fires again on (1) and (5) even if (4) is resolved.
+
+  Option (a) is wrong: bones-revise is the wrong tool for complaints that are design-inherent.
+  The gate's routing is spec-compliant but would produce a third FAIL on the same register grounds.
+
+  Option (b) requires admin to write a Phase 9 routing amendment at one data point, on a class
+  that needs precise discriminator specification, without knowing whether the principal wants this
+  path. The candidate discriminator ("recovered-event FAIL" where answer 6 captures intent vs.
+  "structural FAIL" where it does not) is sound but is an architectural routing change. Admin
+  cannot propose this without principal direction on whether the new path is wanted.
+
+  Option (c) ESCALATE is correct. The questions the principal must answer:
+    (Q1) Does the chapter ship with a soft-override (PASS-WITH-CAVEATS analog to b01c02),
+         given that the central event IS recovered and CONTINUE=no is predominantly design-inherent?
+    (Q2) If not shipping: does a targeted stitch-layer fix on complaint (4) alone + Phase 9 re-run
+         (without a full bones-revise cycle) constitute an authorized intervention?
+    (Q3) If neither: does the process need to change before a third bones-revise cycle? (This is
+         where the candidate process change lives — see below.)
+
+  Candidate process change (for principal awareness, NOT proposing without authorization):
+    Phase 9 Step 2 routing currently has two paths: PASS and FAIL. A third path would be:
+    "recovered-event FAIL" — where answer 6 (one-line summary) captures the chapter's goal/central
+    event correctly, but CONTINUE=no fires. Detection: compare answer 6 against chapters[].goal
+    mechanically; if the summary maps to the intent, classify as recovered-event FAIL rather than
+    structural FAIL. Disposition: route to principal judgment call (ship with caveats / targeted
+    stitch-layer fix / bones-revise) rather than mandatory bones-revise. Cost: S to Phase 9 spec;
+    M in implication (changes the gate's authority structure). This would have correctly routed
+    this dispatch and the b01c02 soft-override dispatches as operator calls rather than mandatory
+    revise-routes. But writing it precisely at one data point is premature. Principal must decide
+    if this path is wanted.
+
+trade-off: |
+  ESCALATE costs user attention on a question the spec has a mandatory answer for (FAIL → revise).
+  But the mandatory answer costs ~30-50 dispatches + re-cascade against complaints that revise
+  cannot fix. The asymmetry strongly favors escalating over blindly running a third cycle.
+  If the principal confirms "run the revise anyway," admin defers and the spec is followed.
+  The risk of escalating unnecessarily is one user-attention cost. The risk of not escalating
+  is burning a full revise cycle with near-zero expected gain on the dominant CONTINUE=no causes.
+
+follows: DEC-0040 DEC-0039 DEC-0024 DEC-0021
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+## DEC-0042 | 2026-05-29 | SLOW (user-proxy)
+
+question: /and-write b01-c05 revise (plain, not --from-signals) — what scope? Third revise cycle; principal chose spec-default revise after DEC-0041 escalation.
+
+context: |
+  35 bones (7+15+13). Second cold-read FAIL post revise --from-signals. 5 CONTINUE=no complaints:
+  (1) register fatigue — design-inherent
+  (2) genre-seam Westeros/bug-feed — project-premise, not addressable
+  (3) "Hook" un-introduced — cross-episode architecture, not addressable by bones-revise
+  (4) alley violence ambiguous: cold-reader read "below the register I would have called human" as possible sexual assault
+  (5) payoff emotionally muffled — register-inherent
+  Candidate tractable item: complaint (4) — recast bone @14 or add bone around @13-@14 to make violence-type explicit.
+  Structural question: does the b01c05s02 chunk actually commit to a violence-type, or does it leave it ambiguous?
+
+options: |
+  (A) S02 only revise — re-decompose s02 @8-@22; add/recast bones @13-@14 to close assault-reading; ~10-15 dispatches.
+  (B) Bone-range revise @13-@16 only — narrowly recast 3-4 bones; ~6-10 dispatches.
+  (C) S02 + s01 — scope (A) + "Hook" re-gloss in s01; ~15-20 dispatches.
+  (D) Full chapter redo — clear all 35 bones; ~40-50 dispatches.
+  (E) Scope (B) on bones; but finding is that the chunk itself already commits to beating, not assault — so the tractable fix is stitch-layer re-phrasing, not a bones-revise at all.
+
+decision: |
+  Scope (B), constrained to @13-@14 bone recast only. BUT: the screen-writer brief must contain
+  the chunk's own violence-type framing. See constraint note below.
+
+basis: methodology:3b (cost) + methodology:3d (optionality) + chunk-authority reading
+
+rationale: |
+  The b01c05s02 chunk text was read directly. Key text:
+    "the geometry of the approach not consistent with opportunistic theft... a controlled
+    containment, a single body held against stone... enforcement reads differently from robbery...
+    the blocking of exits before contact, the absence of the post-contact scatter that marks common
+    theft... a low, effortful sound, not a cry, the kind a body makes when it is trying not to
+    make any sound at all"
+  The chunk calls this "enforcement," not robbery, not assault. "Not a cry" is the chunk's own
+  language. The mechanism block specifies coordinated physical containment (beating-geometry, not
+  assault-geometry). The cold-reader's sexual assault inference arose from the stitched prose phrase
+  "below the register I would have called human" — a stitch-layer phrasing choice that has no direct
+  source in the chunk. The chunk's violence-type is beating/enforcement, not ambiguous at the chunk
+  level.
+
+  Therefore complaint (4) is NOT a substance-contract overwrite if bones-revise makes the violence-
+  type explicit. The chunk authorizes "enforcement" as beating. The bone @14 "the side-alley returns
+  the sound" is underspecified relative to what the chunk licenses — the chunk licenses "effortful
+  sound, not a cry, the kind a body makes when it is trying not to make any sound at all," which is
+  unambiguously a beating sound description, not an assault sound description. A bones-revise that
+  makes this explicit is fidelity improvement, not substance-contract overwrite.
+
+  Scope analysis:
+    (A) S02 full re-decompose: overcorrects. s02 already has 15 clean bones including new bones from
+        the revise --from-signals run. Redoing all 15 risks disturbing the bones that passed Phase 9
+        complaint (i-iii, v) corrections. Only @14 is the live problem.
+    (B) @13-@14 recast: sufficient. @13 "the three figures pin the courier" (correct action verb) +
+        @14 "the side-alley returns the sound" (the underspecified bone). Recast or add one bone at
+        @14 to make the violence-type explicit as beating/enforcement — the chunk licenses this.
+        Preserves @15 spine-raise and @16 feet-found which already disambiguate direction (up).
+    (C) S02 + s01 "Hook" re-gloss: complaint (3) is cross-episode architecture; re-glossing violates
+        cross-episode register conventions and the bones-review would HARD-flag it as chunk-unfaithful.
+        Methodology 3a: this path is NOT reversible if it violates the cross-episode contract.
+    (D) Full redo: wasteful (35 bones otherwise clean).
+
+  Screen-writer brief constraint: the brief must include the chunk's exact language — "enforcement,
+  not robbery," "effortful sound, not a cry, the kind a body makes when it is trying not to make
+  any sound at all," and "enforcement reads differently from robbery." The recast must stay inside
+  what the chunk licenses. The fix is NOT to add graphic violence specificity the chunk lacks — it
+  is to prevent the stitcher from re-introducing a phrasing that opens the assault reading.
+
+  Note on stitch-layer alternative: the cold-reader's confusion arose from prose phrasing. A stitch-
+  layer fence (prohibit "below the register I would have called human" phrasing, require explicit
+  enforcement-vocabulary at @14) would also close the reading without a bones-revise. But since the
+  principal chose "third revise cycle (spec default)" over stitch-layer alternative (DEC-0041 Q2
+  rejected), the spec routing applies and bones-revise it is. The fix targets the correct bone.
+
+trade-off: |
+  Scope (B) does not re-decompose s02 as a whole, so it does not give screen-writer latitude to
+  reconsider @8-@22 sequencing. If there are other s02 issues the Phase 9 re-run surfaces, the
+  scope may need to expand at Phase 1. But per DEC-0041, only complaint (4) is tractable at bones
+  layer — no other complaint justifies expanding scope. Accept the narrow scope; expand at Phase 1
+  only if screen-writer flags a structural adjacency.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0043 | 2026-05-29 | SLOW (process-critic)
+
+question: |
+  Third consecutive cold-read FAIL on b01-c05 (FAIL #3 post @13 recast + scene-B re-render).
+  Sexual-assault read remediated. Criterion 6 maps to goal. CONTINUE=no fires again on
+  design-inherent grounds. Does the process need to change? Is Phase 9's FAIL → /and-write
+  revise routing well-calibrated for recovered-event FAILs where the dominant CONTINUE=no
+  causes are demonstrably design-inherent? Is a process-change proposal warranted at third FAIL?
+
+context: |
+  FAIL #1: CLASS A (could not recover central event) → /and-write revise --from-signals correct.
+  FAIL #2: central event recovered; CONTINUE=no on 5 complaints (1 tractable: assault-read;
+    4 design-inherent). DEC-0041 ESCALATED. Principal: run third revise cycle (DEC-0042 scope B).
+  FAIL #3 (this dispatch): assault-read REMEDIATED. Criterion 6 correctly maps to goal.
+    CONTINUE=no fires on: stakes-shaped-not-stakes / feed unexplained / causality loose /
+    payoff abstract (no decision) / dense prose + no named cast + stranger-violence.
+    All remaining complaints are design properties of the substance contract.
+  Staging: 4 findings (no cluster threshold met). Prose-rationale: CLEAN.
+  Three revise cycles have confirmed: revise loop cannot address design-inherent complaints.
+  DEC-0041 "candidate process change" surfaced but not proposed without principal authorization.
+  FAIL #3: tractable complaint fixed, design-inherent class isolated, recurrence established.
+
+  source_report: active-project/staff/reviews/coldread-b01-c05-2026-05-28-restitch3.md
+  gate_path: .claude/commands/and-stitch.md#phase-9
+
+options: n/a (process-critic mode)
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0018
+
+basis: |
+  Content-vs-process discrimination: Phase 9's DETECTION is correct — it accurately identified a
+  chapter challenging for a cold first-timer. The gap is in DISPOSITION: the binary FAIL →
+  bones-revise routing cannot discriminate between (A) chapters that failed to deliver their design
+  and (B) chapters that delivered their design but whose design properties are inherently challenging
+  for a first-time cold reader. The b01-c05 triple-FAIL cleanly discriminates Class B: criterion 6
+  maps to goal, three revise cycles addressed every tractable complaint, and the design-inherent
+  class is the sole remaining residual. A stricter detection gate would not have prevented this —
+  the detection is correct. The disposition rule is what needs to change. change_type: modify on
+  the disposition branch only.
+
+  DEC-0041 held the proposal pending principal authorization. DEC-0042 authorized the third revise
+  cycle. FAIL #3 completes the confirmation: the authorized cycle fixed the tractable complaint and
+  confirmed the design-inherent class survives. Admin authority to propose is established.
+
+  Cross-chapter recurrence: b01c02 (DEC-0021/DEC-0024, OK at first-occurrence) + b01c05 (three
+  consecutive FAILs, class now cleanly isolated). Two distinct chapters. Recurrence_count = 3
+  within-chapter; class_level recurrence = 2 cross-chapter.
+
+rationale: |
+  Could a stricter version of the existing gate have caught/prevented this? No — the cold-read
+  detection correctly reports what it finds. The gap is not detection sensitivity but routing: the
+  binary disposition routes Class A and Class B FAILs identically (mandatory bones-revise) despite
+  requiring fundamentally different remediation. Class A needs bones-revise (chapter didn't deliver
+  its design). Class B needs a principal disposition call (chapter delivered its design; the question
+  is whether to ship, revise the contract, or iterate knowing the design will change).
+
+  PROP-0018 adds a Class B routing branch: criterion 6 maps-to-goal check, design-inherent audit,
+  bounded disposition to principal via admin user-proxy. Detection unchanged. Class A routing
+  unchanged. Cost estimate M — the spec text is S-cost to write but M in implication (changes gate
+  authority structure on FAIL verdicts).
+
+  Alternatives considered and rejected: (a) chapter-class flag for interior-cognitive chapters —
+  criterion 5 is still the right question; the problem is the routing rule, not the detection
+  question; (b) calibrate criterion 5 differently for interior chapters — more ambiguous to specify
+  than the criterion 6 maps-to-goal discriminator and requires defining "interior chapter" mechanically.
+
+trade-off: |
+  PROP-0018 adds complexity to Phase 9 routing. Benefit: ends the open-ended revise loop for
+  chapters whose design is intentionally challenging. Downside: criterion 6 maps-to-goal
+  discriminator requires a semantic judgment. Guard: the default disposition (S = ship as
+  PASS-DESIGN-INHERENT) routes through admin user-proxy, not auto-ship, so misclassification
+  still requires admin confirmation from goals + LTM.
+
+  Cost of not proposing: every future interior-cognitive chapter with a recovered-event design-
+  inherent FAIL enters an open revise loop that cannot close. This has already cost three revise
+  cycles + re-cascades on b01c05 alone.
+
+follows: DEC-0041 DEC-0042
 stm-written: yes
 ltm-written: no
 goals-update-proposed: no

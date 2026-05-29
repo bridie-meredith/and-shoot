@@ -773,6 +773,73 @@ Single fork. Walk Phase 7 draft:
 
 ---
 
+## Phase 8.5 — Assembled-prose coherence review (URI-STITCH-COHERENCE; PROP-0019; advisory + routing-bearing)
+
+**Why this exists.** Every reviewer in the pipeline prior to this phase has seen one of: (a) chunks + bones + facets (audience trio at `/and-write` Phase 6 + `/and-facets` Phase 5b; auditor; dramatist; `/and-review bones`), or (b) per-scene fork-window prose (stitcher Phase 1 forks; Phase 7 per-sentence sweep). **None read the assembled preamble + body + facet-fold cohesion end-to-end.** The Phase 9 cold-reader is the first and only fork that reads the assembled draft, and at the most expensive recovery point. Phase 8.5 inserts a substance-aware read of the same artifact one phase earlier — closes the FAIL-mechanism gap that produced b01-c05 FAIL #2 (the "below the register I would have called human" stitch-layer rendering invention at @14 that no upstream fork saw in assembled form). See `staff/admin/process-proposals.md § PROP-0019`.
+
+Fires after Phase 8 has written `draft/<book>-<chapter>.md` and before Phase 9 Step 1. Skipped if `chapters[<slug>].chapter_class: frame-coda` (Phase 9 cold-read terminal gate is symmetric exempt).
+
+**Dispatch.** ONE general-purpose agent. Inputs (READ-ONLY):
+- `active-project/draft/<book>-<chapter>.md` (assembled prose, preamble + body)
+- `active-project/theater/bones/<book>-<chapter>.md`
+- All facet files at `active-project/theater/facets/*-<book>-<chapter>.md`
+- `chapters[<slug>].{goal, dramatic_shape, scenes[].chunk, scenes[].substance_delta, scenes[].scene_conflict}`
+- `chapters[<slug>].chunk_cold_read` if present (PROP-0019 upstream gate's verdict)
+- Exposition entries with their `renders-as` directives (read from `exposition-<slug>.md`)
+- `active-project/staff/stitcher/render-log-<book>-<chapter>.md` Phase 1 bone-walk (to trace bone→prose-span)
+
+**Mandate — three checks, in order.**
+
+### Check 1 — Weave
+
+For each scene-window of the assembled prose, do the facet-folds tie together as one fabric? Or are exposition + bone-rendering + sensory + NI + memory arriving as discrete add-ons? A weave-pass scene reads as one perceptual flow; a weave-gap scene reads as bones + facet-folds visibly attached at seams. Flag `WEAVE-GAP @<bone>` with `seam-description` + `routing-suggestion`.
+
+### Check 2 — Followability
+
+Assuming a reader has read prior chapters in the series, can they follow this chapter's narrative arc end-to-end? Where does a causal hand-off between facets fail (preamble names X; body never reconnects to X; reader holds the name without anchor)? Where does a scene-boundary fail (scene-A closes on register Y; scene-B opens incompatible with Y)? Flag `FOLLOWABILITY-BREAK @<bone>` with `hand-off-description` + `routing-suggestion`.
+
+### Check 3 — Cold-read-risk surface
+
+Reading the assembled prose with substance context, flag any span that would PLAUSIBLY misread to a first-time cold-reader despite being substance-correct under the chapter contract. The reviewer must cite:
+- The **misread vector** (what the cold-reader's interpretation would be)
+- The **substance-correct reading** (what the chunk + bones + facets authorize)
+- The **misread confidence** (low / medium / high — would-likely-fire-at-Phase-9)
+- The **routing recommendation** (per-layer; see Routing below)
+
+Flag `COLD-READ-RISK @<bone>`. The FAIL #2 sexual-assault mechanism at b01-c05 @14 is the canonical instance of this finding class: substance-correct as enforcement (chunk-authorized), prose-vector misread-prone (generic-object bone + sensory-facet rendering invented connotation).
+
+**Output.** Classified findings to `active-project/staff/reviews/coherence-<book>-<chapter>-<timestamp>.md`. Summary appended to render-log under `## Phase 8.5 — coherence review`.
+
+**Routing.**
+
+| Finding class | Severity | Routing |
+|---------------|----------|---------|
+| `WEAVE-GAP` | SOFT-BLOCK | per finding's `routing-suggestion`: stitch-layer (per-scene re-render); exposition-layer (re-author entry + re-fire Phase 0.6); bones-layer (`/and-write` revise on named bone) |
+| `FOLLOWABILITY-BREAK` | SOFT-BLOCK | same per-layer routing as WEAVE-GAP |
+| `COLD-READ-RISK` (high confidence) | SOFT-BLOCK | same per-layer routing |
+| `COLD-READ-RISK` (medium / low confidence) | ADVISORY | record on `chapters[<slug>].coherence_review.findings[]`; Phase 9 reads as additional context; does not block |
+
+**SOFT-BLOCK behavior.** Pipeline pauses; offending span re-routed to the named layer (stitch / exposition / bones). After remediation, Phase 8.5 re-runs ONCE on the changed spans only. The gate's purpose is to drain pre-Phase-9 catches; it is not a convergence loop.
+
+**Cap.** Phase 8.5 may trigger at most ONE round of stitch/exposition/bones revise before Phase 9 fires regardless. Unresolved findings carry forward to Phase 9 + render-log; the Phase 9.5 admin process-critic dispatch receives the coherence-review report as additional context.
+
+**Memory writes:**
+```yaml
+chapters[<slug>].coherence_review:
+  reviewed_at: <iso>
+  verdict: PASS | SOFT-BLOCK-RESOLVED | SOFT-BLOCK-UNRESOLVED-PROCEED-ANYWAY
+  weave_gaps: <N>
+  followability_breaks: <N>
+  cold_read_risk_high: <N>
+  cold_read_risk_advisory: <N>
+  findings: [...]
+  report_path: active-project/staff/reviews/coherence-<book>-<chapter>-<timestamp>.md
+```
+
+The verdict is consumed by Phase 9 Step 4: a Phase 8.5 `PASS` reduces the prior weight on Phase 9 staging-cluster + prose-rationale findings (they've been pre-checked at a more integrated layer); a Phase 8.5 `SOFT-BLOCK-UNRESOLVED-PROCEED-ANYWAY` increases the weight on Phase 9 admin process-critic (the unresolved findings name what to expect).
+
+---
+
 ## Phase 9 — Cold-read terminal gate (URI-STITCH-COLD-READ — blocking)
 
 **The highest-leverage gate in the chain.** Every other gate in the pipeline measures a *part* — per-bone axis ticks, per-facet mechanical compliance, per-facet taste, per-sentence cut-worthiness, run-health criteria. Readability, jeopardy, and "did the scene happen" are emergent properties of the *assembled* chapter, and no other stage holds the whole and asks the reader's questions. b01c02 walked the entire pipeline green — every gate passed, the orchestrator-critic returned 7/7 — while missing all three of its core events. Phase 9 is the one check that measures the whole instead of a part. One dispatch.

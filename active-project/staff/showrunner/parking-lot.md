@@ -694,7 +694,103 @@ parking_lot:
         - active-project/staff/auditor/write-b01c05-pass2.md  # signal-003
         - active-project/staff/auditor/write-b01c05-pass5.md  # geography consistency check
       resolution_suggestion: "margit dispatch at /and-facets Phase 0 to author oc-rushwick.card.md from chunk-text geography references"
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-05-28T00:00:00Z
+      resolved_by: "margit dispatch at /and-facets b01c05 Phase 0"
+      resolution_note: |
+        oc-rushwick.card.md authored from chunk-text geography references (bones
+        file locations header, scene-map-b01-c05.md per-scene location notes,
+        showrunner memory b01c05 chunk text for s01/s02/s03); library + warehouse
+        copies present. Library: cards/locations/oc-rushwick.card.md (full quality).
+        Warehouse: active-project/warehouse/oc-rushwick.md (copy per warehouse
+        convention — .md suffix, no .card.md). cards/locations/INDEX.md updated
+        (oc-rushwick added to by_world/planetos and by_quality/full).
+
+    - id: pl-2026-05-28-002
+      created_at: 2026-05-28T00:00:00Z
+      created_by: "/and-write b01c05 revise --from-signals Phase 6 (dark-fantasy-reader escalated soft carry)"
+      label: sera-architecture-facet-mandatory-c05
+      target:
+        command: /and-facets
+        scope: "b01c05"
+        phase: null   # resolved at final facet-emit / Phase 5b audience-gate, not a specific phase abort
+      severity: HARD
+      description: |
+        Sera-architecture delivery is now MANDATORY at the /and-facets b01c05 re-run.
+        B3 (Sera-arrangement filing bone) was dropped at /and-write Phase 5 continuity
+        audit (FAULT-REFERENCE: "the jarvis-form" + "the sera-arrangement-file" both
+        unestablished named entities; bone-realizing the Sera-connection would also
+        violate the chapter's substance discipline — s01/s03 force-blocks explicitly
+        state Taylor does not name the connection on-page). The Sera-link therefore
+        migrated to the facet layer.
+
+        Per dark-fantasy-reader Phase 6 bone-gate verdict: "this is not optional at
+        the facet layer." Without facet-layer delivery, the political_register-prot
+        +1.5 axis-move at @29 (taylor stops the rushwick-pass) lands as
+        resentment-of-enforcement, not the chapter's specific irony (the feed stops
+        running flat on the content Taylor has been routing through the same
+        architecture that serves the Sera-protection).
+
+        Required facet-layer deliveries (per dark-fantasy-reader brief):
+        - memory facet: Taylor's prior context on Sera-protection arrangement;
+          must anchor at a chapter-open or s02-filing beat where the Jarvis-report
+          drafting bone (@19) implicitly serves the protective architecture.
+        - exposition facet: reader-facing world-state surface — who Sera is, what
+          the protective architecture protects against, why the Jarvis-routed
+          intelligence is the mechanism. The cold-reader at /and-stitch Phase 9
+          flagged "Sera named once, never explained" — exposition facet must close
+          this without inventing on-page protagonist articulation.
+        - narrator-interest facet: the implicit Sera-connection as a quality of
+          the routing — Taylor's interior posture acknowledges the architecture
+          without naming it (consistent with s01/s03 force-block disciplines).
+
+        Resolution gate: /and-facets b01c05 Phase 5b audience-gate (3-of-3 strict).
+        If dark-fantasy-reader's Phase 5b verdict on memory + narrator-interest +
+        exposition facets returns SUBSTANCE-FELT on the Sera-link irony, this item
+        resolves. If any persona returns FAIL on the Sera-architecture absence,
+        the gate cap-burns or returns to cycle-N fixer to add the missing facet
+        entries — and this item remains HARD until resolved.
+      context_refs:
+        - active-project/staff/auditor/write-b01c05-pass5-revise.md  # B3 drop continuity rationale
+        - active-project/audience/dark-fantasy-reader/stm.md  # Phase 6 bone-gate ESCALATED soft carry
+        - active-project/audience/cape-fic-reader/stm.md  # Phase 6 bone-gate concurring read on Sera-migration
+        - active-project/audience/worm-canon-pedant/stm.md  # Phase 6 bone-gate "B3 dropped: CORRECT" with facet-layer migration appropriate
+        - active-project/staff/reviews/coldread-b01-c05-2026-05-28.md  # original cold-read confusion (iii) on Sera identity
+        - active-project/staff/showrunner/_drafts/b01c05-revise-fromsignals-2026-05-28.md  # B3 drop section + migration plan
+      resolution_suggestion: |
+        /and-facets b01c05 Phase 1 R1 fanout should brief memory + narrator-interest +
+        exposition authors explicitly on the Sera-architecture migration. Add to each
+        author's brief: "B3 (Sera-arrangement filing bone) was dropped at /and-write
+        Phase 5; your facet must carry the Sera-link without Taylor articulating it on
+        page. See parking-lot pl-2026-05-28-002 for required deliveries per facet."
+        Phase 5b audience-gate must include dark-fantasy-reader verdict on the
+        Sera-link irony landing.
+      status: resolved
+      resolved_at: 2026-05-28T00:00:00Z
+      resolved_by: "/and-facets b01-c05 Phase 5b cycle 1 audience-gate (all 3 personas concurring SERA-ARCHITECTURE LANDS)"
+      resolution_note: |
+        Three audience personas independently verified the Sera-architecture irony
+        lands without Taylor naming it on-page:
+        - cape-fic-reader: "exposition:2 @0 gives the reader the mechanism before
+          the body starts: Jarvis-routed intelligence pays for the quiet on Sera's
+          parentage question. Memory:1 @19 fires at the filing bone connecting
+          enforcement Jarvis-routing to protective architecture in real time. NI:5
+          @19 confirms routing-destination as interior cognition without Taylor
+          naming. When @29 lands, the reader is equipped to read it as the instrument
+          recognizing the content it routes through the same architecture that
+          protects Sera — not abstract resentment."
+        - dark-fantasy-reader: "SERA-ARCHITECTURE: LANDS. Three-facet delivery
+          complete: exposition:2 @0 (WHO+WHAT+WHY trio: Sera as Hightower-cadet ward
+          of Alicent's household; parentage-question liability; Jarvis-routed
+          intelligence pays for the quiet) + memory:1 @19 (interior register of
+          routing's destination 'the architecture that holds someone else's exposure
+          at a length of someone else's arm') + NI carriers @5/@19/@29 (posture
+          without naming). The +1.5 at @29 lands as instrument-complicity (feed
+          stops being neutral on substrate it routes harm through), not as
+          resentment-of-enforcement. The Sera-link irony is structurally anchored."
+        - worm-canon-pedant: Earth-Bet fence CLEAN; canonicity discipline holds
+          (mem:2 Earth-Bet displacement via override-architecture-residue uses
+          shape-language only, no Khepri / Gold Morning leak).
+        Final-cycle aggregate: vibes 3/3 ACCEPT, memory 3/3 ACCEPT, exposition 3/3
+        ACCEPT (the three Sera-architecture carrier facets).
+        Evidence: active-project/staff/auditor/facets-audience-gate-r2.md

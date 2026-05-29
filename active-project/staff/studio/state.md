@@ -42,13 +42,16 @@ ambient_conditions:
     - oc-ropers-court (c04 day-2)
     - the-rushwick (c05; second morning after Roper's Court report; abuts Red Keep servant passages)
 
-## Sensory facet locked (b01c05) — 2 entries
+## Sensory facet filed (b01c05) — 2 entries
   sensory:1 @4  — tactile: lane-stone-surface-baseline -> provisioner-cart-load-on-stone (spike)
   sensory:2 @13 — sound: alley-stone-contained-silence -> courier-effortful-body-sound (spike)
-  Density: 2/31 = 6.45% (ADVISORY; modality-floor priority; note-003 mandatory carry)
+  Density: 2/35 = 5.7% (within 3-6% band; prior state.md used stale 31-bone count — corrected)
   Modalities: tactile + sound (2; meets ≥2 floor)
   note-003 effortful-qualifier carry: CONFIRMED at sensory:2 @13
   note-001 courier-walk visual/spatial: NOT CARRIED by sensory (rubric-ineligible; seam routed to narrator-interest)
+  SEAM-005: sensory:2 anchor @13 (pin) vs @14 (alley-returns-sound) — @13 is cause; @14 is explicit perceptual event; flagged for R2 reviewer
+  Tallow-smoke: omitted — sustained ambient per oc-rushwick; correct omission (loc-state baseline, not inflection)
+  Files: theater/facets/sensory-b01-c05.md (facet) + theater/facets/_inflight/proto-lines-sensory.md (inflight)
 
 ## Prop state (state-updates-env; chapter-close)
   - prop:oc-report-sheet: holder = jarvis-coin-kl-coat (b01c04 carry; no change this chapter)

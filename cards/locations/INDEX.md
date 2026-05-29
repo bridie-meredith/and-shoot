@@ -38,6 +38,7 @@ planetos:
   - oc-riverlands-river-ford
   - oc-riverlands-ruined-tower
   - oc-ropers-court
+  - oc-rushwick
   - reach-smallfolk-village
   - stormlands-coastal-cliffs
   - westerosi-smallfolk-dwelling-interior
@@ -78,6 +79,7 @@ full:
   - oc-riverlands-river-ford
   - oc-riverlands-ruined-tower
   - oc-ropers-court
+  - oc-rushwick
   - reach-smallfolk-village
   - stormlands-coastal-cliffs
   - westerosi-smallfolk-dwelling-interior

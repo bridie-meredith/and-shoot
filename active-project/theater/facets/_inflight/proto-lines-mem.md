@@ -1,17 +1,11 @@
-# proto-lines copy — memory facet (R1)
-# Source: theater/bones/b01-c05.md
-# Authoring author: taylor-hebert-kl-122ac impersonator (R1 fresh fork, memory facet)
-# Citations appended: [mem:<id>] tokens at anchor bones only; bodies are immutable.
+# proto-lines-mem — memory facet inflight annotation
+# episode: b01-c05
+# author: dialogue-writer-fork (taylor-hebert-kl-122ac, interiority output mode)
+# source: active-project/theater/bones/b01-c05.md (35 flat bones)
+# emitted: 2026-05-28 R1
+# tokens-format: [mem:<id>] appended to anchored proto-lines
 
-episode: b01c05
-narrator: taylor-hebert-kl-122ac
-goal: Show the audience the moment the insect-feed stops being neutral — the color arrives before Taylor names it — and plant the courier figure whose face will matter at d10.
-cast: taylor-hebert-kl-122ac
-locations: the-rushwick
-prior_episode: b01c04
-aggregate_range: 1-31
-
-1 the hill's stone skirt meets the lane-mouth [mem:1]
+1 the hill's stone skirt meets the lane-mouth
 2 taylor-hebert-kl-122ac enters the rushwick
 3 the insect-feed fills the rushwick junction
 4 the provisioner-train crosses the junction
@@ -19,26 +13,37 @@ aggregate_range: 1-31
 6 the message-runner crosses the junction
 7 the message-runner takes the lane-mouth
 8 the courier enters the lane-mouth
-9 taylor-hebert-kl-122ac holds the wall-line
-10 the three figures enter the side-alley
-11 the three figures close the alley-mouth
-12 the three figures pin the courier
-13 the side-alley returns the sound
-14 the courier finds the feet
-15 taylor-hebert-kl-122ac files the enforcement-record [mem:2]
-16 taylor-hebert-kl-122ac delivers the enforcement report-entry
-17 the three figures exit the alley-mouth
-18 taylor-hebert-kl-122ac adds the courier to the body-map
-19 the courier takes the junction-corner
-20 taylor-hebert-kl-122ac takes the room-floor
-21 taylor-hebert-kl-122ac runs the Hook-feed
-22 the Hook-feed resolves
-23 taylor-hebert-kl-122ac runs the rushwick-feed
-24 the provisioner-train re-crosses the junction
-25 taylor-hebert-kl-122ac stops the rushwick-pass
-26 taylor-hebert-kl-122ac closes the evening review
-27 taylor-hebert-kl-122ac files the courier body-record [mem:3]
-28 taylor-hebert-kl-122ac runs the rushwick flat-read
-29 the provisioner-train holds the rushwick-pass
-30 taylor-hebert-kl-122ac runs the rushwick flat-read
-31 the courier-walk holds the rushwick-pass
+9 the insect-feed returns the courier
+10 taylor-hebert-kl-122ac holds the wall-line
+11 the three figures enter the side-alley
+12 the three figures close the alley-mouth
+13 the three figures pin the courier
+14 the side-alley returns the sound
+15 the courier raises the spine
+16 the courier finds the feet
+17 taylor-hebert-kl-122ac files the enforcement-record
+18 taylor-hebert-kl-122ac delivers the enforcement report-entry
+19 taylor-hebert-kl-122ac drafts the jarvis-report [mem:1]
+20 the three figures exit the alley-mouth
+21 taylor-hebert-kl-122ac adds the courier to the body-map
+22 the courier takes the junction-corner
+23 taylor-hebert-kl-122ac takes the room-floor
+24 taylor-hebert-kl-122ac runs the Hook-feed
+25 the Hook-feed resolves
+26 taylor-hebert-kl-122ac runs the rushwick-feed
+27 the provisioner-train re-crosses the junction
+28 the rushwick-feed holds the color
+29 taylor-hebert-kl-122ac stops the rushwick-pass
+30 taylor-hebert-kl-122ac closes the evening review
+31 taylor-hebert-kl-122ac files the courier body-record [mem:2]
+32 taylor-hebert-kl-122ac runs the rushwick flat-read
+33 the provisioner-train holds the rushwick-pass
+34 taylor-hebert-kl-122ac runs the rushwick flat-read
+35 the courier-walk holds the rushwick-pass
+
+# ---
+# Annotation summary:
+# - 2 mem tokens placed on 2 anchors (@19, @31)
+# - 33 proto-lines unannotated by memory facet (correct sparsity)
+# - per-scene distribution: scene-A (@1-@7) 0; scene-B (@8-@22) 1; scene-C (@23-@35) 1
+# - peak-bone @29 deliberately bare; resonance routes to @31 per carve-out preamble in memory-b01-c05.md
