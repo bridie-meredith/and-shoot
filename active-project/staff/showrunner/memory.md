@@ -3393,8 +3393,8 @@ books:
           reviewed_at: 2026-05-28T00:00:00Z   # re-stamped post-revise; original review at active-project/staff/reviews/bones-b01c05-2026-05-28.md superseded
           report_path: active-project/staff/reviews/bones-b01c05-2026-05-28-revise.md
           verdict: PASS-WITH-NOTES
-          bones_file_mtime_at_review: 1779988909   # mtime of bones/b01-c05.md at revise re-review; bumped from 1779952025
-          stale_since: null   # cleared at /and-review bones b01c05 PASS-WITH-NOTES; /and-facets b01c05 unblocked
+          bones_file_mtime_at_review: 1779988909   # PRE-recast mtime; bones file modified post-review for @13 verb swap (pin→strike)
+          stale_since: 2026-05-28T00:00:00Z   # bones file modified at /and-write revise (recast @13); lean /and-review bones re-fire required before /and-stitch re-run
           # Re-review (post revise --from-signals): 18 findings (15 PASS, 3 FLAG, 0 HARD).
           # All 5 cold-read confusions RESOLVED at bone level; Sera-identity PARTIAL by architectural design (facet-dependent).
           # FLAGs carried forward:
@@ -3579,10 +3579,11 @@ books:
         #   - foreclosure-quartet asymmetry: feel:2 @29 alone between bare @28+@30; @31 has narrator:10 + vibes:17+18; stitch must respect bare flanks
         #   - NI density 25.8% at ceiling — differentiated rhythm in scene-A (3 NI in 7 bones)
         #   - cf-d10 plant @8 + @18 + @27 callback-ready for d10 callback
-        stitched: true  # re-stitched 2026-05-28 post /and-write revise --from-signals; prior stitch (cold_read FAIL) archived to draft/_archive/2026-05-28-c05-pre-revise/
-        stitched_at: 2026-05-28T00:00:00Z  # re-stamped at Phase 8 finalize 2026-05-28
-        draft_file: active-project/draft/b01-c05.md  # 1605 words (preamble ~190 + body 1416)
-        draft_stale_since: null  # cleared at Phase 8 finalize 2026-05-28
+        stitched: false  # /and-stitch re-run required — bones modified at /and-write revise (recast @13 pin→strike); prior stitch (1605w; cold_read FAIL #2) carries the stitch-layer phrasing 'below the register I would have called human' that the dark-fantasy bone-gate verdict flagged for revision under the new strike-anchor
+        stitched_at: 2026-05-28T00:00:00Z  # historical: post-prior-revise stitch timestamp (cold-read FAIL #2)
+        draft_file: active-project/draft/b01-c05.md  # stale against post-recast bones; /and-stitch re-run required
+        draft_stale_since: 2026-05-28T00:00:00Z  # bones modified at /and-write revise (recast @13)
+        # FACETS NOT STALE: the @13 verb-only recast preserved all flat_ids and all facet citation anchors. @13 had ZERO facet citations in canonical proto-lines post-cycle-2 (sensory:2 was moved to @14; no other facet anchors at @13). The semantic content of all 58 facet entries is invariant to the pin/strike verb swap (entries reference @13 as the violence-event bone; the bone identity is preserved). facets_stale_since intentionally NOT set; /and-facets re-run is NOT required for this recast.
         cold_read:
           read_at: 2026-05-28T00:00:00Z
           verdict: FAIL  # SECOND consecutive cold-read FAIL on c05 (prior pre-revise: event-recovery failure; this post-revise: register-fatigue / continue=NO)

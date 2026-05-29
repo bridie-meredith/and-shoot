@@ -628,3 +628,75 @@ soft_carries_forward:
   - C1 "holds the color" must precede @25 "stops the rushwick-pass" in the render sequence. Stitcher must not reorder or merge these — the apparatus-holds → protagonist-responds causal direction is the difference between interior-mood-shift and world-physics-response.
   - s02n06 sequencing: "the side-alley returns the effortful sound" must precede the feed's re-categorization (narrator-interest facet). This carry is unchanged from prior passes.
   - s03n13 as terminal bone: stitcher adds nothing after the courier-walk holds the rushwick-pass.
+
+---
+
+## b01c05 revise (recast @13 strike) — Phase 6 bone-gate
+
+---
+reviewer: dark-fantasy-reader
+chapter: b01c05
+phase: write-bone-gate
+date: 2026-05-29
+scenes_reviewed: [b01c05s01, b01c05s02, b01c05s03]
+revise_pass: true
+revise_scope: "@13 verb recast pin→strike (s02 only)"
+---
+
+## scene b01c05s01
+verdict: SUBSTANCE-FELT (re-attested; s01 unchanged)
+s01 carries from the prior Phase 6 pass without reopening. The recast touches only @13 in s02. Nothing in s01's nine bones is affected. The world-before-protagonist open at @1, the held-axis architecture, and the first-exposure close at @9 are all stable.
+
+## scene b01c05s02
+verdict: SUBSTANCE-FELT
+
+**The @13 recast: does pin→strike preserve the gap-instrument peak at @14?**
+
+The gap-instrument sequence is @13 → @14 → B1 (courier raises the spine) → @15 (courier finds the feet). The load is almost entirely on @14: "the side-alley returns the sound." The alley is the subject; the world delivers. The feed is not the subject at @14 and never was. @13's verb determines how the sound at @14 is produced, but not whether the alley delivers it or what the feed does with it.
+
+"Pin" generates sustained contact: the body under restraint produces resistance-sounds across duration — friction, struggle, the held body pushing back. "Strike" generates an event-sound: force-application produces a discrete impact response — the body receiving force and trying not to make any sound, then making one anyway. The sound profile the chapter requires is "a low, effortful sound, not a cry, the kind a body makes when it is trying not to make any sound at all." That profile is precisely the suppressed-response-to-impact. A struck body tries to absorb and contain. A pinned body may produce struggle-sounds that have a different register — they are continuous, effort-distributed, not the single effortful suppression of an impact response.
+
+"Strike" is actually the tighter causal chain for the specific sound the bones require downstream. The sound at @14 is the sound of the courier's body receiving force and failing to contain it. That is the sound of a strike — not of a sustained pin. The recast improves the mechanical fit between @13 and @14 rather than degrading it.
+
+**Does the gap-instrument register change?**
+
+The gap-instrument works because the feed has no field for the qualitative register of the sound the alley returns. Whether the sound originated from a pin or a strike, the feed cannot categorize the human weight in it — "brief contact, courier retained on feet" is the feed's closure regardless of the mechanics. The gap is between the world's physical event (the sound the alley returns) and the feed's categorical response (retention, duration, stance). That gap is unchanged by the verb at @13 because the gap is in what the feed logs after, not in what produced the sound before.
+
+What would close the gap is if "strike" somehow made the sound legible to the feed in a way that "pin" did not. It does not. A strike is as categorically ungovernable at the qualitative level as a pin. The feed does not have fields for impact register, for the distinction between a sound a body makes under duress that it cannot suppress versus cannot absorb. The feed has "brief contact" — that is the machine's vocabulary for both verbs.
+
+**The moral_framework hold: does it change?**
+
+The licensed exception absorbs faction-violence content. "Strike" is faction-violence: three figures acting on a fourth in an enforcement context, the disciplined apparatus absorbing what it reads. The discipline does not distinguish between pin and strike at the threshold question: is this class of content within the licensed exception? It is. The hold runs through either verb without cracking. If anything, "strike" is harder to absorb without naming — the violence is more discrete, more legible as a thing that happened to a body — and the discipline absorbing it anyway is the point. The hold costs something real under "strike." Under "pin" there was a plausible read where the enforcement read as control, containment, the neutral-instrumental vocabulary of the feed. "Strike" denies that read. The discipline now absorbs something that the feed's vocabulary cannot fully neutralize: force applied to a body, with a sound the alley returns that the feed cannot log.
+
+**The disambiguation question:**
+
+The Phase 9 cold-read FAIL cited "below the register I would have called human" (stitch-layer phrasing) in combination with "pin" (bones-layer) as creating an ambiguity vector. The cold-reader's interpretation of possible sexual assault came from the stitch-layer's atmospheric phrasing, not from "pin" alone — but "pin" at the bones layer did not close that read by making the violence-type explicit. "Strike" closes it. A strike is force-application. That is the enforcement-type specificity the scene-map's @13 peak-shadow-bone annotation now carries: "force-application beat; enforcement-type specificity." The bones layer now unambiguously routes stitch and facet authors toward rendering a beating, not anything else. This is the correct repair.
+
+**Overcorrection risk?**
+
+Does "strike" make the violence-type too explicitly legible at the bones layer, losing the gap-instrument's power by over-specifying? No. The bones layer is supposed to name what happened. The gap-instrument's power is in what the feed cannot do with the sound, not in ambiguity about the mechanics of the force. "The side-alley returns the sound" is the gap. The gap exists regardless of whether @13 says "pin" or "strike." Making @13 explicit about force-type gives stitch and facet authors a clean mandate and removes a downstream interpretation risk that already caused a FAIL. There is no dark-fantasy value in ambiguity about whether a body received a beating or something else. Ambiguity about what the sound means — whether the feed can contain it, whether the reader can watch the discipline absorb it from outside — that is the productive ambiguity this chapter needs, and "strike" preserves it entirely.
+
+**Integrated verdict:**
+
+The recast improves the chapter. The causal chain from @13 to @14 is mechanically tighter: a struck body produces exactly the suppressed-impact-response sound the gap-instrument requires. The gap-instrument register is unchanged: the alley still delivers what the feed cannot categorize. The moral_framework hold runs cleanly through "strike" — the discipline absorbs harder-to-neutralize content, which makes the hold cost something real. The disambiguation closes the Phase 9 cold-read FAIL #2 ambiguity at the source without closing any of the productive gap-instrument ambiguity downstream. No hot-button fires. No walkout trigger. No fatigue trigger (the recast is a single verb on a single bone; the sequence does not extend or decelerate).
+
+All prior soft carries for s02 remain active and unchanged:
+  - s02n06/s02@14 sequencing: "the side-alley returns the effortful sound" must precede the feed's re-categorization (narrator-interest facet). Unaffected by the recast.
+  - B2-amended Sera-architecture: facet-deferred; /and-facets must deliver the Sera-context at memory and narrator-interest facets. Unaffected by the recast.
+
+## scene b01c05s03
+verdict: SUBSTANCE-FELT (re-attested; s03 unchanged)
+s03 carries from the prior Phase 6 pass without reopening. The recast touches only @13 in s02. The foreclosure sequence (n10-n13), the +1.5 political_register-prot at @25 (stops the rushwick-pass), the apparatus-holds → protagonist-responds causal direction in C1-amended, and the terminal bone at n13 are all stable. No propagation from the @13 recast into s03's substance contract.
+
+---
+
+### Aggregate
+
+All three scenes: SUBSTANCE-FELT.
+Recast verdict: CLEAN. pin→strike is an improvement, not a degradation. The gap-instrument at @14 is mechanically better-grounded under "strike" than under "pin." The disambiguation closes a real downstream interpretation risk. No overcorrection.
+
+### Seams
+
+One seam to flag for downstream: "strike" is now the bones-layer anchor for the violence-type at @13. The stitch-layer phrasing "below the register I would have called human" (the Phase 9 cold-read FAIL #2 trigger) should be revisited. The stitch-render must now produce atmospheric phrasing for the side-alley sequence that is consistent with "enforcement-beating as force-application" — it cannot drift back toward the ambiguous register that produced the prior FAIL. The bones give stitch authors a clean mandate; the stitch authors must use it. This is not a new soft carry so much as a reinforcement of the now-explicit bones-layer instruction: @13 is a strike, @14 is the alley returning the sound of that strike, and the stitch must render those in the correct causal order with the correct violence-type specificity.
+
+The escalated soft carry for the Sera-architecture (from the prior Phase 6 pass) continues: /and-facets must deliver Sera-context at memory and narrator-interest facets. The @13 recast does not affect this carry.
