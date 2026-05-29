@@ -157,3 +157,60 @@ phase-7-summary:
   rationale: the strike-anchored re-render addressed the cold-read FAIL #2 concern at Phase 1 (bone-walk + chunk-vocabulary explicit at @14); all standalone peak/peak-shadow paragraphs preserved; all HARD-keeps loaded honored; Q5 HOLLOW-PROSE clean across all 19 sentences; Q8 ASININE-PATTERN risks (S14/S15 anaphoric form-fronted pair) reviewed as intentional discipline-cadence per Phase 1 @18 bone-walk note; Q9 ANTI-JARGON pre-cleared compounds all confirmed bone/chunk vocabulary
 
 mutated-draft: active-project/draft/b01-c05.scene-B.draft.md (no mutations; file unchanged)
+
+## Phase 8 — finalize (re-stitch #2)
+
+stable-line-ids: assigned 1-N; no gaps (Phase 7 KEEP-all on scene-B; scene-A + scene-C re-use prior KEEP-all)
+preamble: prepended from prior stitch (preserved verbatim; 2 italic paragraphs Sera-architecture trio + horizontal rule)
+scene-callout-suppression: HARD-stripped sed pass; clean
+clean draft: active-project/draft/b01-c05.md (1575 words: preamble ~190 + body 1385 — scene-B reduced by ~30 words vs prior FAIL #2 stitch via clearer enforcement-beating vocabulary; scene-A + scene-C unchanged)
+annotated draft: SKIPPED (output.mode default; matches c01-c04 precedent)
+
+intermediates pruned:
+  - draft/b01-c05.preamble.md
+  - draft/b01-c05.scene-A.draft.md (preserved verbatim from archive)
+  - draft/b01-c05.scene-B.draft.md (new strike-anchored render)
+  - draft/b01-c05.scene-C.draft.md (preserved verbatim from archive)
+
+## Phase 8 — STATS (re-stitch #2)
+
+word-count: 1575 (preamble ~190 + body 1385)
+sentence-count: 54 (scene-A=12 + scene-B=19 [re-rendered; was 17 prior] + scene-C=23) — adjusted from prior 54
+paragraph-count: 32 (2 preamble + 7 scene-A + 13 scene-B + 12 scene-C — scene-B paragraph-count adjusted +2 from prior render for L1 bridge + L5/L6 split)
+bones-authored: 35
+bones-rendered: 31 (scene-A 7-1=6 standalone + 1 fused; scene-B 12 standalone + 3 fused; scene-C 11 standalone + 2 fused)
+bones-merged: 4 (scene-A: @9 in prior — wait scene-A bones are 7; let me recompute)
+
+Actually:
+  scene-A 7 bones: @1-@7 — bone-walk: 7 rendered (one with NI displacement; no fuse).
+  scene-B 15 bones: @8-@22 — bone-walk: 14 rendered + 1 fused (@10 fused into @9 via L3 wall-line clause)
+  scene-C 13 bones: @23-@35 — bone-walk: 11 rendered + 2 fused (@25 into @24 Hook pair; @27 into @26 Rushwick first-pass pair)
+
+  Updated totals:
+bones-rendered: 32 (7 + 14 + 11)
+bones-merged: 3 (1 + 2)
+bones-dropped: 0
+bones-rendered-illegible: 0
+bones-CUT-BONE: 0
+facets-authored: 60 (unchanged; cite-index post-/and-facets cycle 3)
+facets-rendered: 60
+facets-dropped: 0
+facets-unrendered-remainder: 0
+reshow-count: 0
+reword-count: 0
+preamble-source: exposition-facet
+exposition entries-rendered: 4 (preserved from prior stitch: 2 preamble + 2 em-dash-fold at @2/@8)
+dialogue-source: not-applicable (no-speech-episode)
+
+## RECONCILE (URI-STITCH-ACCOUNTING-HONESTY)
+
+bones: rendered(32) + merged(3) + dropped(0) + rendered-illegible(0) = 35 ✓ (== authored bone count 35)
+facets: rendered(60) + dropped(0) + unrendered-remainder(0) = 60 ✓ (== cite-index facet-entry count 60)
+RECONCILE-BALANCE: PASS — both ledgers balance against their authored totals.
+unrendered-remainder rationale: 0 — vibes (20 entries) classified as rendered under bias-only mode.
+
+## Phase 9 — cold-read terminal gate (pending dispatch)
+
+next: dispatch ONE general-purpose agent to cold-read draft/b01-c05.md per Phase 9 Step 1 prompt
+parallel: dispatch /and-review staging b01-c05 per Phase 9 Step 3 (additive editorial pass)
+parallel: dispatch ONE auditor for Phase 9 Step 3.5 prose-rationale-mute audit

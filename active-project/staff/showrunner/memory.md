@@ -3579,10 +3579,10 @@ books:
         #   - foreclosure-quartet asymmetry: feel:2 @29 alone between bare @28+@30; @31 has narrator:10 + vibes:17+18; stitch must respect bare flanks
         #   - NI density 25.8% at ceiling — differentiated rhythm in scene-A (3 NI in 7 bones)
         #   - cf-d10 plant @8 + @18 + @27 callback-ready for d10 callback
-        stitched: false  # /and-stitch re-run required — bones modified at /and-write revise (recast @13 pin→strike); prior stitch (1605w; cold_read FAIL #2) carries the stitch-layer phrasing 'below the register I would have called human' that the dark-fantasy bone-gate verdict flagged for revision under the new strike-anchor
-        stitched_at: 2026-05-28T00:00:00Z  # historical: post-prior-revise stitch timestamp (cold-read FAIL #2)
-        draft_file: active-project/draft/b01-c05.md  # stale against post-recast bones; /and-stitch re-run required
-        draft_stale_since: 2026-05-28T00:00:00Z  # bones modified at /and-write revise (recast @13)
+        stitched: true  # re-stitched 2026-05-28 post /and-write revise (@13 recast); prior FAIL #2 stitch archived to draft/_archive/2026-05-28-c05-fail-2/
+        stitched_at: 2026-05-28T00:00:00Z  # re-stamped at Phase 8 finalize 2026-05-28 (re-stitch #3)
+        draft_file: active-project/draft/b01-c05.md  # 1575 words (preamble ~190 + body 1385)
+        draft_stale_since: null  # cleared at Phase 8 finalize 2026-05-28 (re-stitch #3 post @13 strike recast)
         # FACETS NOT STALE: the @13 verb-only recast preserved all flat_ids and all facet citation anchors. @13 had ZERO facet citations in canonical proto-lines post-cycle-2 (sensory:2 was moved to @14; no other facet anchors at @13). The semantic content of all 58 facet entries is invariant to the pin/strike verb swap (entries reference @13 as the violence-event bone; the bone identity is preserved). facets_stale_since intentionally NOT set; /and-facets re-run is NOT required for this recast.
         cold_read:
           read_at: 2026-05-28T00:00:00Z
