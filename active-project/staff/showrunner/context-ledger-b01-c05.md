@@ -9,4 +9,5 @@ entries:
     license: CONTEXT-REQUIRED
     licensed_at: 2.5
     licensed_by: context-follow-reviewer
-    status: open
+    status: satisfied
+    satisfied_by: exposition:5
