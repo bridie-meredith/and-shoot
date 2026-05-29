@@ -3393,6 +3393,7 @@ books:
           reviewed_at: 2026-05-28T00:00:00Z   # re-stamped post-revise; original review at active-project/staff/reviews/bones-b01c05-2026-05-28.md superseded
           report_path: active-project/staff/reviews/bones-b01c05-2026-05-28-revise.md
           verdict: PASS-WITH-NOTES
+          follow_check: PASS-WITH-NOTES  # PROP-0020 exploration rerun 2026-05-29: bones followable as-is; opacity (Rushwick-resists-flat-read) context-addable, deferred to Phase 2.5; report active-project/staff/reviews/bones-followcheck-b01c05-rerun.md; NOT a FOLLOW-FAIL (did not block /and-facets)
           bones_file_mtime_at_review: 1780028088  # post-recast mtime; lean re-review verdict PASS (12 PASS / 1 FLAG / 0 HARD); facets remain fresh (no flat_id changes; no facet citations at @13)
           stale_since: null  # cleared at lean /and-review bones re-review 2026-05-28 (post-@13-recast PASS)
           # Re-review (post revise --from-signals): 18 findings (15 PASS, 3 FLAG, 0 HARD).
@@ -3408,6 +3409,16 @@ books:
           #   note-003: 3 cite-responsibilities forward to /and-facets — narrator-interest @5 (provisioner gait-class, replacing removed s01n06) + @7 (message-runner gait-class, replacing removed s01n09); sensory @13 carrying "effortful" qualifier stripped from bone SVO
           # Cold-read prediction: HIGH/MEDIUM/HIGH (no LOW); MEDIUM on "color arrives before Taylor names it" is facet-layer-dependent by architectural design
           # Probe verdicts: gap-instrument @13/@14 PASS (gap not hollowed by stripping "effortful"); recognition-cessation @25 PROPERLY ANCHORED; foreclosure quartet @28-@31 reads as FORECLOSURE; cf-d10 plant SUFFICIENT at figure level (face is facet responsibility)
+        # PROP-0020 context-weave track — EXPLORATION RERUN 2026-05-29 (c05 already shipped; non-staling; exercises the new checkpoints retroactively).
+        context_followability:
+          verdict: FOLLOWABLE
+          report_path: active-project/staff/reviews/context-follow-r2-b01c05-rerun.md
+          reviewed_at: 2026-05-29T00:00:00Z
+          ledger_path: active-project/staff/showrunner/context-ledger-b01-c05.md
+          ledger_open_count: 0   # ctx-001 satisfied by exposition:5 @19 (R2 ledger-licensed add)
+          phase_2_5: "1 CONTEXT-REQUIRED (ctx-001 @19 Jarvis->Otto channel identity) + 3 WEAVE-FIXABLE"
+          phase_4_5: "FOLLOWABLE; ctx-001 closed; no Phase 4.6 fired; 1 minor non-blocking residual (faction proper-noun seam)"
+          unresolved: []   # no WARN; conditional R3 not triggered
         substance_delta_measured:
           axes_moved:
             political_register-prot: +1.5    # @29 in revise emit (was @25 pre-revise); EXACT vs target +1.5; cl-d05 first tranche; C1 chatter at @28 is substrate not movement
