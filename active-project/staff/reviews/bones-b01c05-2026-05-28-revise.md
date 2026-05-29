@@ -233,3 +233,201 @@ orchestrator_persist:
     verdict: PASS-WITH-NOTES
     stale_since: null
 ```
+
+---
+
+## re-review 2026-05-28 (after @13 recast pin→strike)
+
+```yaml
+re_review:
+  scope: targeted — @13 verb recast only (s02)
+  trigger: /and-write b01c05 targeted recast (DEC-0042); bones file mtime post-review
+  timestamp: 2026-05-29
+  bones_file: active-project/theater/bones/b01-c05.md
+  bones_count: 35  # unchanged
+  recast_scope: "@13 'the three figures pin the courier' → 'the three figures strike the courier'"
+  scenes_reopened: [b01c05s02]  # s01 and s03 re-attested from prior cycle without reopening
+  inputs_read:
+    - active-project/theater/bones/b01-c05.md
+    - active-project/theater/facets/scene-map-b01-c05.md
+    - active-project/staff/showrunner/memory.md (chapters[b01c05].scenes[1] — s02 chunk, substance_delta, scene_conflict)
+    - active-project/staff/auditor/write-b01c05-bone-gate-recast.md
+    - active-project/audience/cape-fic-reader/stm.md (recast Phase 6 section)
+    - active-project/audience/dark-fantasy-reader/stm.md (recast Phase 6 section)
+    - active-project/audience/worm-canon-pedant/stm.md (recast Phase 6 section)
+```
+
+### Check 1 — Chunk authority on violence-type
+
+The s02 chunk (memory.md chapters[b01c05].scenes[1].chunk) specifies: "enforcement, not robbery"; "the body-language reads as enforcement, coordinated, directed at a specific person for a specific reason"; "a controlled containment, a single body held against stone, two others keeping the alley-mouth"; "the kind a body makes when it is trying not to make any sound at all."
+
+Prior @13 "pin" described a containment act. Containment was consistent with the "controlled containment" clause but left the force-type underspecified at the bones layer. The scene-map's prior @13 annotation read "three figures pin courier — force-application beat" — but "pin" does not itself denote force-application; it denotes restraint, which is ambiguous across assault typologies (restraint-for-robbery, restraint-for-assault, restraint-for-beating). The Phase 9 cold-read FAIL #2 materialized exactly this gap: stitch-layer phrasing under "pin" was interpreted as possible sexual assault.
+
+Post-recast @13 "strike" is the concrete force-application verb that the chunk's "enforcement, not robbery" characterization requires at the bones layer. A strike is definitionally directional blunt-force contact delivered to a body. The scene-map annotation is now updated to "three figures strike courier — force-application beat; enforcement-type specificity." The violence-type is no longer inferential — it is bone-specified as beating/enforcement. The "controlled containment" clause from the chunk is still realized by @11 (enter side-alley) + @12 (close alley-mouth), which establish the geometric containment before @13 executes the force-application within that geometry.
+
+**Verdict: PASS.** "Strike" honors chunk authority on violence-type. The enforcement-character of the violence is now bone-legible, not inferential.
+
+---
+
+### Check 2 — Causal chain @12-@13-@14-@15-@16
+
+Prior chain: approach geometry (@11-@12) → pin (@13) → alley returns the sound (@14) → courier raises spine (B1 @15) → courier finds feet (@16).
+
+Post-recast chain: approach geometry (@11-@12) → strike (@13) → alley returns the sound (@14) → courier raises spine (B1 @15) → courier finds feet (@16).
+
+The critical link is @13 → @14. The gap-instrument at @14 ("the side-alley returns the sound") is the feed receiving an acoustic consequence of what happened at @13. The chunk specifies the sound as "a low, effortful sound, not a cry, the kind a body makes when it is trying not to make any sound at all." This is a suppressed-impact-response sound — a body receiving force and attempting to contain the acoustic output. That sound profile is mechanically specific to force-application-and-suppression (a struck body absorbing impact, failing to suppress entirely). Under "pin," the sound was concurrent with or consequent to sustained restraint, which is a different and less precise acoustic precursor for this specific sound quality. Under "strike," the acoustic consequence is the body's response to discrete impact: the blow ends; the alley returns the sound of it.
+
+All three audience personas independently confirmed the causal tightening: cape-fic-reader (stm.md line 487: "strike → alley returns sound. Does the causal logic hold? Yes — and it tightens"); dark-fantasy-reader (stm.md line 659: "strike is actually the tighter causal chain for the specific sound the bones require downstream. The sound at @14 is the sound of the courier's body receiving force and failing to contain it. That is the sound of a strike — not of a sustained pin"); worm-canon-pedant (stm.md line 538: the recast "removes the generation pathway that produced the ambiguous stitched output" and the new sequence at line 577: "strike slots cleanly between approach-geometry and the recovery sequence").
+
+The auditor's Phase 6 recast check (write-b01c05-bone-gate-recast.md check-002) confirmed: "The sequence is more explicit under 'strike' than under the prior 'pin' because 'strike' is a discrete event that precedes the sound rather than a sustained state concurrent with it."
+
+**Verdict: PASS.** Causal antecedent for @14 is tighter under "strike" than under "pin." The @12-@13-@14-@15-@16 chain is mechanically cleaner post-recast.
+
+---
+
+### Check 3 — Cold-read failure #2 prevention
+
+The Phase 9 cold-read FAIL #2 source: cold-reader interpreted possible sexual assault from "the three figures pin the courier" + stitch-layer phrasing "below the register I would have called human." The bones-layer "pin" left the violence-type open across at least three interpretations; the stitch-layer resolved the ambiguity in the most alarming direction.
+
+Post-recast @13 "strike" is unambiguous as to violence-type. A strike is blunt-force contact. It is definitionally incompatible with sexual assault geometry. The bones-layer now specifies force-application-beating as the enforcement-type, which provides stitch and facet authors a clean mandate for rendering the side-alley sequence — the prose must not drift back toward the ambiguous register that produced the prior FAIL, because the bones now make the violence-type explicit.
+
+The scene-map updated annotation confirms this at the annotation layer: "force-application beat; enforcement-type specificity" is now the explicit peak-shadow descriptor for @13.
+
+The worm-canon-pedant review (stm.md line 542: "'pin' was ambiguous across three violence types (restraint for robbery, restraint for assault, restraint for interrogation). 'Strike' is unambiguous: blunt-force enforcement") and dark-fantasy-reader review (stm.md line 673: "the cold-reader's interpretation of possible sexual assault came from the stitch-layer's atmospheric phrasing, not from 'pin' alone — but 'pin' at the bones layer did not close that read by making the violence-type explicit. 'Strike' closes it") both confirm the disambiguation operates at the bone level.
+
+**Verdict: PASS.** The bones layer now blocks the misread pathway. Ambiguity about violence-type is resolved at source. The stitch-layer rendering can no longer drift toward the assault interpretation without contradicting explicit bone-layer content.
+
+---
+
+### Check 4 — No structural collateral
+
+Four sub-checks:
+
+**(a) Gap-instrument triple @14-@15-@16:**
+@13 is a peak-shadow bone that feeds into the triple; the triple itself begins at @14. The recast does not alter @14, @15, or @16. The scene-map's protected-pattern entry for the gap-instrument triple is unchanged. The recast's only effect on the triple is mechanical improvement of its causal antecedent (see Check 2 above). No seam opened.
+
+**(b) Courier 4-bone discipline @9/@10/@12/@17-@19:**
+@13 belongs to the three-figures actor-sequence, not the courier's own cognitive-operations discipline track. The four courier-discipline bones are: @9 (feed-apparatus live-return of the courier), @10 (Taylor holds the wall-line — gait-signature recognition hold), @12 (approach-geometry read), @17-@19 (filing triad). None of these bones are @13. The recast at @13 does not touch any of the four courier-discipline bones; their structural distinctness is unaffected. Worm-canon-pedant confirmed (stm.md line 540: "the courier 4-bone discipline is UNAFFECTED. The structural distinctness of @9 / @10 / @12 / @17-@19 as four separate cognitive operations is preserved").
+
+**(c) moral_framework hold:**
+@13 carries no axis moves. The bone's substance classification is HELD with axes_held: [{axis: moral_framework, rationale: "enforcement violence is the s02 opposing_force enacted as a specific physical act"}]. Changing "pin" to "strike" does not change this classification. Both verbs describe force-application acts by the three figures, observable through the insect-feed, inside the licensed exception. The scene_conflict stakes_axis for s02 is moral_framework; the hold runs through either verb. If anything, dark-fantasy-reader noted (stm.md line 669): "the discipline now absorbs something that the feed's vocabulary cannot fully neutralize: force applied to a body, with a sound the alley returns that the feed cannot log. The hold costs something real under 'strike.'"
+
+**(d) cf-d10 thread anchor @21:**
+@21 ("taylor-hebert-kl-122ac adds the courier to the body-map") is the cf-d10 thread anchor. It is in the post-enforcement filing sequence, orthogonal to @13. The recast does not alter @21, does not change its position in the flat_id sequence, does not disturb any facet citation that had been anchored to @21 (none — the body-map filing is cited in narrator-interest and memory facets at positions @21 and @31 respectively, per the facets audit records). No interference.
+
+**Verdict: PASS on all four sub-checks.** No structural collateral.
+
+---
+
+### Check 5 — Prior FLAG dispositions unchanged
+
+Three FLAGs from the prior review:
+
+**finding-009 (Sera-identity PARTIAL):** This FLAG arose from the architectural decision to defer Sera-identity to facets. The @13 recast is at a structurally separate position from any Sera-identity content. The recast does not add Sera-connection content to the bones layer, does not remove any Sera-routing content, and does not disturb the facet-layer dependency that finding-009 identified. Disposition: UNCHANGED. Still a FLAG; still routed to /and-facets via pl-2026-05-28-002.
+
+**finding-010 (dup-001 @32+@34 SVO dup):** @32 and @34 are in s03. The recast is at @13 in s02. Zero interaction. Disposition: UNCHANGED. Still a FLAG; still advisory to /and-stitch.
+
+**finding-011 (flag-002 @25 "resolves" intransitive):** @25 is in s03. The recast is at @13 in s02. Zero interaction. Disposition: UNCHANGED. Still a FLAG; still advisory to /and-stitch.
+
+**Verdict: PASS.** All three prior FLAG findings are unaffected by the recast. No new findings introduced.
+
+---
+
+### New findings from recast scope
+
+No new HARD findings. No new FLAG findings. One soft seam noted (already recorded in DEC-0042 and in the Phase 6 recast audit):
+
+```yaml
+re_review_findings:
+
+  - id: rr-finding-001
+    type: pass
+    what: "@13 SVO 'the three figures strike the courier' — chunk authority on violence-type HONORED"
+    why: "Enforcement-beating is bone-specified; prior inferential gap (pin = ambiguous restraint-type) is closed; cold-read failure pathway removed at source."
+
+  - id: rr-finding-002
+    type: pass
+    what: "Causal chain @13→@14 tighter under 'strike' — acoustic consequence mechanically entailed"
+    why: "Strike produces discrete impact-response sound; 'pin' produced a concurrent-or-consequent restraint-sound that was less precise as antecedent for the specific effortful-suppression sound the gap-instrument requires."
+
+  - id: rr-finding-003
+    type: pass
+    what: "Cold-read FAIL #2 ambiguity closed at bone layer"
+    why: "Bones file now specifies blunt-force enforcement, incompatible with sexual assault geometry; stitch mandate is unambiguous."
+
+  - id: rr-finding-004
+    type: pass
+    what: "Gap-instrument triple @14-@15-@16 — no structural collateral; causal antecedent improved only"
+
+  - id: rr-finding-005
+    type: pass
+    what: "Courier 4-bone discipline @9/@10/@12/@17-@19 — UNAFFECTED; @13 is three-figures actor-sequence, orthogonal"
+
+  - id: rr-finding-006
+    type: pass
+    what: "moral_framework hold — classification unchanged; 'strike' absorbs into licensed exception identical to 'pin'; hold arguably costs more under 'strike' (more concrete violence-content absorbed without interrogation)"
+
+  - id: rr-finding-007
+    type: pass
+    what: "cf-d10 thread anchor @21 — UNAFFECTED; orthogonal position and facet citations intact"
+
+  - id: rr-finding-008
+    type: pass
+    what: "Prior FLAG finding-009 (Sera PARTIAL) — disposition UNCHANGED; recast does not interact with Sera-architecture"
+
+  - id: rr-finding-009
+    type: pass
+    what: "Prior FLAG finding-010 (dup-001 @32+@34) — disposition UNCHANGED; s03, orthogonal to recast"
+
+  - id: rr-finding-010
+    type: pass
+    what: "Prior FLAG finding-011 (flag-002 @25 intransitive) — disposition UNCHANGED; s03, orthogonal to recast"
+
+  - id: rr-finding-011
+    type: pass
+    what: "Audience gate: 3-of-3 SUBSTANCE-FELT on integrated chapter including @13 recast (cape-fic-reader, dark-fantasy-reader, worm-canon-pedant all pass without new HARD or FLAG findings)"
+
+  - id: rr-finding-012
+    type: pass
+    what: "Phase 6 auditor recast check (write-b01c05-bone-gate-recast.md): 0 HARD / 0 SIGNAL / 0 FLAG on 7 mechanical checks"
+
+  - id: rr-finding-013
+    type: flag
+    what: "DEC-0042 soft seam — 'held against stone' texture previously entailed by @13 'pin' is now only available via @11-@12 geometry + chunk text + oc-rushwick card"
+    routing: "Already recorded in DEC-0042 and phase 6 recast audit; /and-facets sensory/NI facet should carry 'held against stone' physical texture at @13-@14 citation. Not a bones-layer deficiency — the containment geometry is still established at @11-@12."
+
+re_review_verdict: PASS
+
+re_review_notes: |
+  The @13 verb swap (pin → strike) is scope-contained and structurally clean. All five
+  targeted checks PASS. The violence-type ambiguity that produced Phase 9 cold-read FAIL #2
+  is closed at the bones layer. The causal chain to the gap-instrument at @14 is mechanically
+  tighter. No structural collateral on the gap-instrument triple, the courier 4-bone discipline,
+  the moral_framework hold, or the cf-d10 thread anchor. All three prior FLAG findings are
+  unaffected.
+
+  The prior PASS-WITH-NOTES verdict on the 35-bone scaffold stands in full. The three
+  FLAGs (finding-009, finding-010, finding-011) and the /and-facets pre-conditions
+  (pl-2026-05-28-002, pl-2026-05-28-001, flat_id re-anchoring) are all unchanged and
+  unaffected by the recast.
+
+  One soft seam carries forward to /and-facets (rr-finding-013): the "held against stone"
+  texture, previously entailed by "pin," is now only available via the approach-geometry
+  bones @11-@12 + chunk text + oc-rushwick card. This is a facets-layer sensory/NI
+  responsibility, not a bones deficiency.
+
+  The @13 recast does NOT stale the facets. No flat_id changes were made; all existing
+  facet citations remain valid. facets_stale_since remains null.
+
+  /and-stitch re-run is authorized on the post-recast bones. Stitch authors have explicit
+  bone-layer mandate for enforcement-beating violence-type; prior ambiguous stitch-layer
+  phrasing must not carry forward.
+
+orchestrator_persist:
+  chapters[b01c05].bones_review:
+    reviewed_at: 2026-05-29T00:00:00Z
+    report_path: active-project/staff/reviews/bones-b01c05-2026-05-28-revise.md
+    verdict: PASS-WITH-NOTES
+    bones_file_mtime_at_review: post-recast  # orchestrator to read current mtime from theater/bones/b01-c05.md
+    stale_since: null  # CLEARED — re-review complete; recast verified scope-contained; bones gate closed
+```

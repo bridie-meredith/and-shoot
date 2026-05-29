@@ -3393,8 +3393,8 @@ books:
           reviewed_at: 2026-05-28T00:00:00Z   # re-stamped post-revise; original review at active-project/staff/reviews/bones-b01c05-2026-05-28.md superseded
           report_path: active-project/staff/reviews/bones-b01c05-2026-05-28-revise.md
           verdict: PASS-WITH-NOTES
-          bones_file_mtime_at_review: 1779988909   # PRE-recast mtime; bones file modified post-review for @13 verb swap (pin→strike)
-          stale_since: 2026-05-28T00:00:00Z   # bones file modified at /and-write revise (recast @13); lean /and-review bones re-fire required before /and-stitch re-run
+          bones_file_mtime_at_review: 1780028088  # post-recast mtime; lean re-review verdict PASS (12 PASS / 1 FLAG / 0 HARD); facets remain fresh (no flat_id changes; no facet citations at @13)
+          stale_since: null  # cleared at lean /and-review bones re-review 2026-05-28 (post-@13-recast PASS)
           # Re-review (post revise --from-signals): 18 findings (15 PASS, 3 FLAG, 0 HARD).
           # All 5 cold-read confusions RESOLVED at bone level; Sera-identity PARTIAL by architectural design (facet-dependent).
           # FLAGs carried forward:
