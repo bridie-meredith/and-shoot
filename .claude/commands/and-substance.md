@@ -248,7 +248,7 @@ A `PASS-CHUNK` is downgraded to `PASS-CHUNK-VOICE-RISK` if EITHER signal fires:
 
 Dispatch admin in user-proxy mode (per CLAUDE.md Rule 13). Inputs:
 - Chunk text + scene chunks
-- Cold-reader's 6 answers
+- Cold-reader's 7 answers (incl. Q7 no-charity confusion list + strict-CONTINUE)
 - Classification (Class A / Class B)
 - Three options:
     - **(R) Revise chunk** → re-author at chunk layer. Class A default. Cheapest fix.
@@ -285,7 +285,11 @@ chunk_cold_read:
      for the chapter, surfaced to /and-stitch Phase 9 routing as already-dispositioned>
 ```
 
-**Downstream coupling.** `/and-stitch` Phase 9 Step 4 reads `chapters[<slug>].chunk_cold_read.verdict`:
+**Downstream coupling.**
+
+`PASS-CHUNK-VOICE-RISK` arms `/and-stitch` **Phase 8.5** Check 3 (PROP-0019-A): the `voice_risk.voice_risk_carry` block is read there to verify the central event is delivered at cold-reader legibility in the assembled prose (the FAIL #1 muffle mechanism). This is the primary purpose of the verdict — it does not affect Phase 9 disposition directly.
+
+`/and-stitch` **Phase 9** Step 4 reads `chapters[<slug>].chunk_cold_read.verdict`:
 - If `chunk_cold_read.verdict == SHIPPED-WITH-RISK-RECORDED` AND a Phase 9 FAIL Class B fires with the SAME complaint categories that were carried in `cold_read_risk_carry` → the verdict ships terminal as `SHIPPED-WITH-CAVEATS` automatically without re-asking principal (the chunk-level disposition already authorized the cold-read risk). This is the cost-discipline mechanism that prevents repeated principal disposition on the same chapter.
 - A Phase 9 FAIL Class B with NEW complaint categories not in `cold_read_risk_carry` → re-dispatches admin user-proxy per the PROP-0018 Class B branch (normal flow).
 
