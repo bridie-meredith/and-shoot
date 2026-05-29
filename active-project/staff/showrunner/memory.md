@@ -3555,14 +3555,33 @@ books:
         draft_stale_since: null  # cleared at Phase 8 finalize 2026-05-28
         cold_read:
           read_at: 2026-05-28T00:00:00Z
-          verdict: FAIL  # historical: this verdict triggered the revise --from-signals run; preserved as history
-          recovered_summary: "narrator (working for an unnamed faction) watched three men beat a recurring courier in a city ward while routing intelligence reports; afterward replayed the day at home"
-          report_path: active-project/staff/reviews/coldread-b01-c05-2026-05-28.md
-          staging_signals: 0   # /and-review staging deferred under cascade-budget
-          staging_report_path: null
-          signal_clusters: []
+          verdict: FAIL  # SECOND consecutive cold-read FAIL on c05 (prior pre-revise: event-recovery failure; this post-revise: register-fatigue / continue=NO)
+          recovered_summary: "A surveillance-bug-using narrator watches a courier get assaulted in an alley near the Red Keep, files the report up the chain they're complicit with, and that evening their instrument refuses to re-run the route cleanly."
+          report_path: active-project/staff/reviews/coldread-b01-c05-2026-05-28-revise.md
+          staging_signals: 6   # /and-review staging post-stitch: 1 EXPAND / 2 GROUND / 2 STAGE / 1 NEEDS-BEAT
+          staging_report_path: active-project/staff/reviews/staging-b01-c05-2026-05-28.md
+          signal_clusters: []  # per URI-STITCH-SIGNAL-CLUSTER: staging cluster of 3 (GROUND @14 / @28 / @33) but doesn't trigger any of {same-pattern≥5, adjacent-in-peak-zone≥3, on-axis-move-bones≥3} — 3 findings are at peak/peak-shadow but NOT consecutive flat-ids; all on held/chatter bones (no axis_moves). No cluster fires per spec thresholds.
+          prose_rationale_audit:
+            verdict: CLEAN
+            findings: 0
+            report_path: active-project/staff/reviews/prose-rationale-audit-b01-c05-2026-05-28.md
+            note: "All 8 candidate bones (with concrete-physical rationale element) stage ≥1 concrete-physical token in rendered prose span. Recognition peak @29 stages both body-act + cognitive recognition. This audit alone would PASS; FAIL is driven by cold-read CONTINUE=NO, not by prose-rationale-mute."
           continue: no
-          stale_since: 2026-05-28T00:00:00Z  # cold-read against pre-revise draft; revise has addressed the 5 confusions; /and-stitch re-run will produce fresh cold-read
+          stale_since: null
+          # Phase 9 cold-read FAIL: recovered events ✓ (surveillance + courier attack + evening replay refusal); recovered central event ✓ (feed stops being neutral); BUT cold-reader answered CONTINUE=NO ("feed/count/architecture register is exhausting and I'm not sure what happened").
+          # Cold-reader complaints not addressed by revise --from-signals + facet re-run + stitch re-run:
+          #   1. Register exhaustion — Taylor cold-utilitarian whole-chapter; register IS the substance
+          #   2. Genre-seam — Westeros names vs bug-feed surveillance read as different genres grafted together
+          #   3. Hook reference not introduced — cross-episode register skipped re-gloss per c04 precedent; cold-reader is first-time
+          #   4. Alley violence ambiguity — cold-reader inferred POSSIBLE SEXUAL ASSAULT from "below the register I would have called human" phrasing; the spine-raise + feet-found sequence disambiguated up-or-down but not what-kind-of-violence
+          #   5. Payoff "emotionally muffled" — "the voice abstracts away the very thing the ending depends on me having felt"
+          # SECOND consecutive FAIL on c05 represents an escalation signal. Per spec FAIL → /and-write revise; but this is the second iteration through revise → facets → stitch with substantively different bones structure each time and the chapter still does not pass the terminal gate.
+          # Phase 9.5 admin process-critic dispatched: likely ESCALATE candidate per the SECOND-FAIL pattern.
+          # Recommended next-step routing: principal review (via admin user-proxy escalation, OR direct principal call) before another full revise cycle. Candidate questions:
+          #   (a) Is the chapter's substance contract (interior/observational + cold-utilitarian register + ~1600 word target) inherently at risk of register-fatigue cold-read FAIL?
+          #   (b) Should the alley violence be re-staged less euphemistically to remove the assault-vs-beating ambiguity?
+          #   (c) Should "Hook" get a brief re-gloss to address cross-episode register inadvertent gap?
+          #   (d) Should the chapter accept a SHIPPABLE-WITH-CAVEATS verdict despite cold-read FAIL?
           # Phase 9 cold-read FAIL: chapter's central event (recognition-as-feed-stopping-being-neutral) not recovered.
           # Cold reader recovered the courier beating + Taylor's home replay but did not feel the cost (the recognition).
           # Specific confusions: cause-chain (sheet → beating) not explicit; Sera unnamed; "the Hook" unexplained; narrator faction unclear.
