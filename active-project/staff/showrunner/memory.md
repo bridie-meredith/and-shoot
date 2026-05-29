@@ -3584,6 +3584,33 @@ books:
         draft_file: active-project/draft/b01-c05.md  # 1575 words (preamble ~190 + body 1385)
         draft_stale_since: null  # cleared at Phase 8 finalize 2026-05-28 (re-stitch #3 post @13 strike recast)
         # FACETS NOT STALE: the @13 verb-only recast preserved all flat_ids and all facet citation anchors. @13 had ZERO facet citations in canonical proto-lines post-cycle-2 (sensory:2 was moved to @14; no other facet anchors at @13). The semantic content of all 58 facet entries is invariant to the pin/strike verb swap (entries reference @13 as the violence-event bone; the bone identity is preserved). facets_stale_since intentionally NOT set; /and-facets re-run is NOT required for this recast.
+        # PROP-0019-A VALIDATION RERUN (2026-05-29) — RETROACTIVE; chapter already shipped. This chunk_cold_read block
+        # was produced by re-running the REVISED /and-substance Phase 5.5 against c05's chunks to A/B the re-scope.
+        # It does NOT re-trigger downstream and does NOT set any staleness flag — c05 is terminal. Recorded so the
+        # voice_risk_carry is a real artifact consumed by the Phase 8.5 revised rerun. See staff/reviews/prop-0019a-rerun-comparison.md.
+        chunk_cold_read:
+          reviewed_at: 2026-05-29T00:00:00Z
+          verdict: PASS-CHUNK-VOICE-RISK   # original Phase 5.5 (Test 1) returned clean PASS-CHUNK; revised gate downgrades
+          classification: n/a
+          recovered_summary: "A surveillance-power protagonist pushes her bug-feed into a ward near court power, watches enforcers work over a courier she half-recognizes, and discovers that for the first time she can't process what she sees as neutral data."
+          intended_goal: "Show the audience the moment the insect-feed stops being neutral — the color arrives before Taylor names it — and plant the courier figure whose face will matter at d10."
+          continue: yes            # first-pass Q5
+          continue_strict: yes     # Q7 re-answer — reader still continues, but only by excusing the listed confusions as missing prior-chapter setup
+          report_path: active-project/staff/reviews/chunk-coldread-b01c05-revised-rerun.md
+          disposition: n/a
+          voice_risk:
+            triggered: true
+            signals: [A, B]
+            central_event: "three figures corner the recurring courier in a side-alley and beat him (coordinated enforcement, not robbery); Taylor watches from across the ward via the feed and does not intervene"
+            voice_risk_carry: |
+              Central event = the courier beating in s02. The chunk renders the blow itself ONLY through
+              feed/instrument abstraction — "the feed flags the contact", "contact complete, courier upright",
+              "it logs: brief contact, courier retained on feet", "the feed has no field for that" — never as a
+              concrete actor-verb-object strike on the page. Signal A: reader excused "why is the courier targeted"
+              (causality) and "resentment asserted not motivated" (payoff) as prior-chapter setup. Signal B:
+              abstraction-dense central event. Phase 8.5 Check 3 MUST verify the assembled prose delivers the
+              beating at cold-reader legibility (register-the-event-as-the-event), not muffled below the feed-vocab
+              — this is the FAIL #1 "a beating I almost missed" mechanism.
         cold_read:
           read_at: 2026-05-28T00:00:00Z
           verdict: SHIPPED-WITH-CAVEATS  # principal disposition 2026-05-28 per DEC-0044 (referencing PROP-0018 Class B): THREE consecutive cold-read FAILs with CONTINUE=NO each time but central event recovered all 3 times and substance contract delivered cleanly (auditor PASS / 9-of-9 SUBSTANCE-FELT / prose-rationale CLEAN). FAIL #3 fires on chapter-DESIGN concerns (stranger violence; feed mechanics; interior-cognitive payoff) that the chapter's explicit substance contract commits to. Disposition: ship c05 as terminal under PROP-0018 Class B (recovered-event design-inherent FAIL). Caveats logged below for downstream book-level verdict review.

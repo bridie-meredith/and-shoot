@@ -229,11 +229,13 @@ Compare cold-reader's criterion 6 summary against `chapters[<slug>].goal`. Seman
 
 | Verdict | Trigger | Routing |
 |---------|---------|---------|
-| `PASS-CHUNK` | Summary maps to goal AND CONTINUE(strict/Q7)=yes AND Q7 lists no load-bearing confusion | Run Step 2.5, then proceed to Phase 6 |
+| `PASS-CHUNK` family | Summary maps to goal AND CONTINUE(strict/Q7)=yes | Run Step 2.5, which resolves to clean `PASS-CHUNK` or `PASS-CHUNK-VOICE-RISK`, then proceed to Phase 6 |
 | `CHUNK-CLASS-A` | Summary does NOT map to goal | Cause-chain / connective gap at chunk layer — route to Step 3 with revise default |
 | `CHUNK-CLASS-B` | Summary maps to goal AND CONTINUE(strict/Q7)=no | Design-inherent risk surfaced early — route to Step 3 with proceed-with-eyes-open default |
 
-**Step 2.5 — Voice-density downgrade (PROP-0019-A; dense-voice false-PASS guard). Runs only on a `PASS-CHUNK`.**
+Note: load-bearing confusion is NOT a PASS-CHUNK disqualifier here — a reader who recovered the event and would continue STILL lands in the PASS-CHUNK family. Whether they did so *only by excusing* load-bearing confusion is exactly what Step 2.5 Signal A tests; it is not a Step 2 gate.
+
+**Step 2.5 — Voice-density downgrade (PROP-0019-A; dense-voice false-PASS guard). Runs on every `PASS-CHUNK`-family verdict (summary maps + strict-CONTINUE=yes).**
 
 A `PASS-CHUNK` is downgraded to `PASS-CHUNK-VOICE-RISK` if EITHER signal fires:
 
