@@ -33,6 +33,16 @@ theater/facets/scene-map-<book>-<chapter>.md  (scene-map; upstream from /and-wri
               - cite-index build
         │
         ▼
+   PHASE 2.5 — CONTEXT-FOLLOWABILITY REVIEW (post-R1)   ← PROP-0020
+            Series-context-aware reviewer reads the merged R1 graph
+            + scene chunks + handoff_in. Flags FOLLOW-GAPs and
+            classifies each CONTEXT-REQUIRED / WEAVE-FIXABLE / OK.
+            CONTEXT-REQUIRED gaps are written to the context-ledger
+            as LICENSED exposition exceptions (exempt downstream from
+            add-cap + new-plot-content + over-explain penalties).
+            Findings feed Phase 3.
+        │
+        ▼
    PHASE 3 — FANOUT (R2 parallel judging)
             4 midband judges in one Agent block, full graph in each
             payload. Each writes its own mutated facet file +
@@ -45,6 +55,20 @@ theater/facets/scene-map-<book>-<chapter>.md  (scene-map; upstream from /and-wri
             build_cite_index.py rerun against _inflight-r2/;
             decision-log shards concatenated to .r2-decisions.md;
             arbiter glue (T1/T4 interventions) runs over shards.
+        │
+        ▼
+   PHASE 4.5 — CONTEXT-FOLLOWABILITY REVIEW (post-R2)   ← PROP-0020
+            Re-run the reviewer on the R1+R2 graph (with R2's
+            licensed context-adds). Verdict FOLLOWABLE → Phase 5.
+            GLARING-HOLE → Phase 4.6 (conditional R3). This is
+            "where it should be ending" in the common case.
+        │
+        ▼
+   PHASE 4.6 — CONDITIONAL R3 (context remediation)     ← PROP-0020
+            Fires ONLY on a Phase 4.5 GLARING-HOLE. Targeted
+            exposition/facet add round against the named holes →
+            final followability review → fixer manually edits to
+            close, or WARNS (records unresolved hole; non-blocking).
         │
         ▼
    PHASE 5 — AUDIT (single auditor dispatch, mechanical)
@@ -68,6 +92,15 @@ theater/facets/scene-map-<book>-<chapter>.md  (scene-map; upstream from /and-wri
 ```
 
 R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/state/vibes) + base bones. R2 is **graph-aware**: every judge gets all R1 facet outputs (facet files + per-character dialogue files) + the cite-index. The audit is **cross-cutting**: one fork, full graph. The audience-gate is **adversarial-graph-aware**: per-facet adversarial reviewers attack the locked graph the way the auditor's mechanical scan cannot.
+
+**Context-weave track (PROP-0020 / URI-FACETS-CONTEXT-WEAVE, 2026-05-29).** The b01-c05 three-FAIL trace's root cause was diagnosed as a *context gap* surfaced too late — only at `/and-stitch` Phase 9, by a cold-reader who lacked the series context a real reader would carry. The fix moves followability/context review *upstream and progressive*, so the reviewer sees how the chapter comes together as facets accumulate rather than at the very end:
+
+1. **Before `/and-facets`** — `/and-review bones` includes a followability pre-check: the bones must be *at least somewhat followable as-is* before facet authoring spends on them (FAIL → `/and-write revise`).
+2. **After R1 (Phase 2.5)** — identify where additional context is *required*. Because adding context is embedding exposition (normally penalized), these are recorded as **licensed exceptions** in the context-ledger and noted to the R2 + audience reviewers' working memory so the rest of `/and-facets` does not penalize them. Findings feed R2.
+3. **After R2 (Phase 4.5)** — followability re-checked on the richer graph. Normally terminal; a *glaring hole* rolls into a conditional R3 (Phase 4.6).
+4. **End of R3 (Phase 4.6)** — final review; **fixer manually edits** content to resolve flagged problems, or warns. Then Phase 5 / 5b / 6 and `/and-stitch` proceed as before.
+
+**The context-ledger** lives at `active-project/staff/showrunner/context-ledger-<book>-<chapter>.md` (lightweight; schema inline in Phase 2.5). It is the canonical record of sanctioned context-adds and is read by the R2 exposition judge (Phase 3), the auditor (Phase 5), and the audience-gate (Phase 5b) to suppress the anti-exposition penalty *only* for ledger-licensed entries.
 
 ## Args
 
@@ -104,7 +137,12 @@ R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/
     reviewed before facet authoring proceeds.
     Resolution: run /and-review bones <slug>, then re-invoke /and-facets <slug>.
     ```
-    `/and-review bones` is the mandatory step between `/and-write` and `/and-facets`. A `bones_review.verdict: FAIL` does not by itself abort `/and-facets` (the user may knowingly proceed past notes), but absence or staleness does.
+    `/and-review bones` is the mandatory step between `/and-write` and `/and-facets`. A `bones_review.verdict: FAIL` does not by itself abort `/and-facets` (the user may knowingly proceed past notes), but absence or staleness does. **PROP-0020 addition:** `bones_review.follow_check: FOLLOW-FAIL` DOES HARD-ABORT — gross un-followability at the bone layer (central event unrecoverable, or a scene-to-scene causal hand-off absent) must be fixed at `/and-write <slug> revise` before any facet spend. This is checkpoint 1 of the context-weave track and is a hard gate, unlike the advisory fidelity verdict:
+    ```
+    /and-facets Phase 0 HARD-ABORT (followability): chapter <slug> bones_review.follow_check = FOLLOW-FAIL.
+    The bones are not followable as-is; facet skin cannot rescue a bone-level coherence gap.
+    Resolution: run /and-write <slug> revise to close the gap, re-run /and-review bones, then re-invoke /and-facets.
+    ```
 5. **Facet-namespace clearance (URI-FACETS-CROSS-CHAPTER-ARCHIVE, 2026-05-21).** The facet pipeline writes to chapter-unnamespaced shared paths — `theater/facets/<facet>.md`, `theater/facets/_cite-index.md`, `theater/facets/.r2-decisions.md`, `theater/proto-lines/<slug>.md`, `theater/dialogue/<character-slug>.md`, `staff/<facet>/r2-decision-shard*.md`, `staff/auditor/facets-*.md`, `staff/audience/<persona>/*verdict*.md`. Two distinct cases:
 
     - **Prior-chapter facet output present (cross-chapter collision).** Scan `theater/facets/*.md` (excluding `scene-map-<book>-<chapter>.md` for the current chapter). Read each facet file's `episode:` header. If ANY facet file, the `_cite-index.md` header, or `theater/proto-lines/*.md` belongs to a **different** chapter than the current run, AUTO-ARCHIVE the entire prior-chapter working set (do not abort, do not require manual intervention). Archive procedure:
@@ -199,6 +237,51 @@ Set status `protolined` → `faceted-r1` in showrunner memory.
 
 ---
 
+## Phase 2.5 — CONTEXT-FOLLOWABILITY REVIEW (post-R1) (PROP-0020 / URI-FACETS-CONTEXT-WEAVE; 2026-05-29)
+
+**Why this exists.** See the context-weave track note above. This is checkpoint 2 of 4 — the first read of the assembled-so-far graph, performed by a reviewer who *has* the series context (the inverse of the `/and-stitch` Phase 9 cold-reader). It answers: *with R1 facets in, where would a reader who has read prior chapters still lose the thread — and is that gap something a later lens facet will carry, or something that genuinely needs context embedded?*
+
+**Dispatch.** ONE `general-purpose` agent, context-aware (NOT a cold read).
+
+Inputs (read-only):
+- The canonical merged proto-lines/bones graph `theater/proto-lines/<slug>.md` (R1-annotated with `[<facet>:<id>]` citations) + the R1 facet files.
+- `chapters[<slug>].{goal, dramatic_shape, scenes[].chunk, scenes[].scene_conflict}`.
+- `chapters[<slug>].handoff_in` (the series-so-far capsule — open threads, world-state, character-state the reader carries into this chapter).
+- The cite-index.
+
+Mandate: read the graph in order as a reader who has read to chapter N-1. For each place the narrative is not followable, emit a `FOLLOW-GAP @<bone>` finding and classify it:
+
+| Class | Meaning | Routing |
+|---|---|---|
+| `OK` | followable as-is | none |
+| `WEAVE-FIXABLE @<bone>` | a lens facet (NI / memory / loc-state / feeling) can carry this in R2 | note to Phase 3 as a steering hint for the named facet judge; NOT a ledger entry |
+| `CONTEXT-REQUIRED @<bone>` | genuinely needs context embedded (a term/person/stake/causal link the reader cannot recover from prior chapters + current graph) | write a **licensed exception** to the context-ledger |
+
+**Output 1 — the report** at `active-project/staff/reviews/context-follow-r1-<book>-<chapter>-<timestamp>.md` (FOLLOW-GAP findings + per-finding class + rationale).
+
+**Output 2 — the context-ledger** at `active-project/staff/showrunner/context-ledger-<book>-<chapter>.md`. Create if absent; append for re-runs (never delete entries — stamp superseded ones). Schema (inline):
+
+```yaml
+# context-ledger — <book>-<chapter> — PROP-0020
+chapter: <slug>
+entries:
+  - id: ctx-<NNN>
+    anchor: "@<bone>"            # where the context is needed
+    gap: <one line — what the reader cannot follow without it>
+    needed_context: <one line — the term/person/stake/link to orient>
+    license: CONTEXT-REQUIRED     # this is what exempts the downstream exposition add
+    licensed_at: 2.5 | 4.5 | 4.6  # which checkpoint sanctioned it
+    licensed_by: context-follow-reviewer
+    status: open | satisfied | superseded
+    satisfied_by: <exposition entry id, once R2/R3 adds it>
+```
+
+**Feed to Phase 3.** The CONTEXT-REQUIRED set + the WEAVE-FIXABLE steering hints are passed into the Phase 3 R2 dispatch payloads (see Phase 3 § Context-ledger coupling). A ledger entry is the authority that lets the R2 exposition judge ADD the orienting gloss **beyond its normal add-cap and exempt from the new-plot-content / over-explain penalties**.
+
+**Non-blocking.** Phase 2.5 never aborts the run — it produces the ledger and proceeds to Phase 3. (The bones-level "is this even followable at all" stop already happened upstream at `/and-review bones`.)
+
+---
+
 ## Phase 3 — FANOUT: R2 parallel judging
 
 **R2 stale-shard pre-check (URI-FACETS-R2-STALE-SHARD, A6 — 2026-05-21).** Before dispatching the R2 fanout, verify that any pre-existing R2 decision shards under `staff/<facet>/r2-decision-shard.md` (and `staff/feeling/r2-decision-shard-<slug>.md`) reflect the current R1 cite-index — NOT a prior session's. The check:
@@ -238,7 +321,7 @@ Per the postmortem: "The R2 shards from one session were re-used in a different 
 
 **R2.4 metaphor (editor, judge mode)** — nine R1 facet files + cite-index + `rubric-metaphor.md`. Decide per existing metaphor: KEEP (anchor resolves post-cascade, magnitude-band discipline holds — bone fires in hinge-magnitude-class zone per rubric AP7, equivalent to scene-map `peak-bones` membership; register is callback or dark-humor) / DELETE (anchor unresolvable, AP3 anti-duplication, AP7 default-refuse for bones outside hinge-magnitude band — i.e. bones not in `peak-bones` AND with low `axis_moves[].magnitude`). Resolve any provisional `licensed-by:` hints from R1 — KEEP-with-anchor-rewrite if it resolves, DELETE-unanchorable otherwise. Adds: ≥2 supporting layers cleanly clear; refuse-by-default. Add-cap 3. Out: mutated `metaphor.md` + `_inflight-r2/proto-lines-meta.md` + decision-shard `staff/metaphor/r2-decision-shard.md`.
 
-**R2.5 exposition (exposition-author, judge mode)** — all R1 facet files (including the now-locked lens facets) + cite-index + audience persona cards + cross-episode register + `rubric-exposition.md`. Override exposition-author: facet-judge mode. The R2 judge is the critical pass that converts the audience-pure R1 output into graph-trusted final state. Decide per existing exposition entry: KEEP (gap still real after lens-facets reviewed; no other facet covers it; sources still resolve) / DELETE (lens facet covers — NI established the term in body, mem carries the callback, loc-state covered the scene-orient) / REWORD (gap is real but surface chose heavy render-as where lighter would do; or anti-jargon list growth in R1 cull mandates re-rendering). Adds: rare — when R1 lens-facet author chose NOT to cover a register exposition can pick up. Add-cap 3. Provisional-anchor resolution: R1 entries with descriptive anchor-hints get bound to actual proto-line IDs via cite-index walk. Scene-open-orient fire-rule re-validated against locked graph (the s01e01 dogfood lesson: Phase 2 exposition refused 11 of 11 scene-orient entries that Phase 1 had authored, because NI/loc-state covered them; R2 enforces this routing). Out: mutated `exposition-<slug>.md` + `_inflight-r2/proto-lines-exposition.md` + decision-shard `staff/exposition-author/r2-decision-shard.md`.
+**R2.5 exposition (exposition-author, judge mode)** — all R1 facet files (including the now-locked lens facets) + cite-index + audience persona cards + cross-episode register + `rubric-exposition.md`. Override exposition-author: facet-judge mode. The R2 judge is the critical pass that converts the audience-pure R1 output into graph-trusted final state. Decide per existing exposition entry: KEEP (gap still real after lens-facets reviewed; no other facet covers it; sources still resolve) / DELETE (lens facet covers — NI established the term in body, mem carries the callback, loc-state covered the scene-orient) / REWORD (gap is real but surface chose heavy render-as where lighter would do; or anti-jargon list growth in R1 cull mandates re-rendering). Adds: rare — when R1 lens-facet author chose NOT to cover a register exposition can pick up. Add-cap 3. **Context-ledger coupling (PROP-0020):** additionally read `active-project/staff/showrunner/context-ledger-<book>-<chapter>.md`. For every `status: open` entry with `license: CONTEXT-REQUIRED`, author the orienting exposition gloss at the entry's `anchor`. **Ledger-licensed adds do NOT count against the Add-cap 3** and are NOT subject to the "rare" discipline — they are sanctioned by an upstream followability reviewer. Stamp the ledger entry `status: satisfied` + `satisfied_by: exposition:<id>`. Mark each such entry in the exposition file with `licensed-context-exception: ctx-<NNN>` in its frontmatter so the auditor (Phase 5) and audience-gate (Phase 5b) recognize it as exempt. WEAVE-FIXABLE steering hints from Phase 2.5 are routed to the named lens-facet judge as add-suggestions (still subject to that facet's normal cap). Provisional-anchor resolution: R1 entries with descriptive anchor-hints get bound to actual proto-line IDs via cite-index walk. Scene-open-orient fire-rule re-validated against locked graph (the s01e01 dogfood lesson: Phase 2 exposition refused 11 of 11 scene-orient entries that Phase 1 had authored, because NI/loc-state covered them; R2 enforces this routing). Out: mutated `exposition-<slug>.md` + `_inflight-r2/proto-lines-exposition.md` + decision-shard `staff/exposition-author/r2-decision-shard.md`.
 
 **R2.6 dialogue (dialogue-writer, judge mode, per-character ×N speaking characters)** — for each speaking character in the cast, one fork in the same parallel block (judge mode). Reads: the dialogue file under judgment + its drafts sidecar; all nine other R1 facet files + cite-index; behavior card stack (re-loaded); speaker persona + ltm + stm + state; `staff/dialogue-writer/rubric-dialogue.md`. **Graph payload filtering (rubric § contamination disciplines):** facet entries passed as facts-not-prose (somatic-tell text / monument-name / interest-focus / vibe-target fields only, stripped of rationale); speaker's own slices (`feeling-<speaker>`, `state-updates-<speaker>`, NI iff speaker is POV) first-class; other characters' slices as one-line abstracts. Decide per existing dialogue entry: KEEP (card signature affirmatively demonstrated; facet-license citations resolve in locked graph; somatic-tell / monument adjacency claimed by chosen draft is structurally present; no hard-fence violation; behavior monument rules respected) / DELETE-<reason> (card signature missing — inoffensive ≠ on-card; forbidden vocabulary; facet-license citation does not resolve; hard-fence proper-noun hit; DEDUP with NI / feeling / memory rendering same content) / REWRITE (internal mini-V3 surfaces closable seam; delete + new ID with revised draft citing different §-section or different facet license). Add-cap: 3 per character (adds are exceptional — R1 covers speaking beats; R2 adds only when a beat is genuinely silent that card + graph license a line for). Out: mutated `theater/dialogue/<character-slug>.md` + `_inflight-r2/proto-lines-dialogue-<character>.md` + decision-shard `staff/dialogue-writer/r2-decision-shard-<character>.md`.
 
@@ -300,6 +383,43 @@ The tensometer-fallback path (which previously parsed `tensometer-<slug>.md`'s s
 
 ---
 
+## Phase 4.5 — CONTEXT-FOLLOWABILITY REVIEW (post-R2) (PROP-0020 / URI-FACETS-CONTEXT-WEAVE; 2026-05-29)
+
+**Why this exists.** Checkpoint 3 of 4. R2 has now run — the lens facets are locked and the R2 exposition judge has added the ledger-licensed orienting glosses. This re-reads the richer graph to confirm the context gaps Phase 2.5 found are actually closed, and to catch any that R2 missed or newly exposed. In the common case this is where the context-weave track ENDS.
+
+**Dispatch.** ONE `general-purpose` agent, context-aware (same stance as Phase 2.5). Inputs: the post-R2 canonical proto-lines/bones graph + R1+R2 facet files (incl. the exposition adds) + `chapters[<slug>].{goal, scenes[].chunk}` + `handoff_in` + the **context-ledger** (so it can verify each `open`/`satisfied` entry).
+
+Mandate: re-read in order as a series reader at chapter N. For each ledger entry, confirm `satisfied` adds actually close the gap. Surface any remaining `FOLLOW-GAP`. Then return ONE verdict:
+
+| Verdict | Trigger | Routing |
+|---|---|---|
+| `FOLLOWABLE` | no remaining FOLLOW-GAP touching the central event / its causality / its payoff; any residual gaps are minor | proceed to Phase 5 (mechanical audit) — the track is done |
+| `GLARING-HOLE` | a remaining FOLLOW-GAP on the central event, a load-bearing stake, or a scene-to-scene causal hand-off — the kind a series reader still cannot follow | fire Phase 4.6 (conditional R3); write the unclosed gaps to the ledger as `license: CONTEXT-REQUIRED, licensed_at: 4.5` |
+
+Persist report to `active-project/staff/reviews/context-follow-r2-<book>-<chapter>-<timestamp>.md`. Record `chapters[<slug>].context_followability.{verdict, report_path, reviewed_at, ledger_open_count}` in showrunner memory.
+
+**Non-blocking by itself** — `FOLLOWABLE` proceeds; `GLARING-HOLE` does NOT abort, it escalates to the conditional R3 (which has its own terminal handling).
+
+---
+
+## Phase 4.6 — CONDITIONAL R3: context remediation (PROP-0020 / URI-FACETS-CONTEXT-WEAVE; 2026-05-29)
+
+**Fires ONLY on a Phase 4.5 `GLARING-HOLE`.** Skipped otherwise. This is the revived-on-demand R3 (the default-retired relaxation round, repurposed as a targeted context-remediation round). Checkpoint 4 of 4.
+
+**Step 1 — Targeted add round.** For each Phase 4.5 `CONTEXT-REQUIRED @<bone>` ledger entry still `open`, dispatch the exposition-author (judge/add mode) — and, where a WEAVE-FIXABLE route is better, the named lens-facet author — to author the orienting content at the anchor. Ledger-licensed; exempt from add-cap + anti-exposition penalties (same exemption as Phase 3). Re-run `build_cite_index.py`. Stamp ledger entries `satisfied`.
+
+**Step 2 — Final followability review.** Re-dispatch the context-aware reviewer (one `general-purpose`) on the post-R3 graph. Return `FOLLOWABLE` or `RESIDUAL-HOLE`.
+
+**Step 3 — Fixer or warn (terminal).**
+- `FOLLOWABLE` → done; proceed to Phase 5.
+- `RESIDUAL-HOLE` → dispatch **fixer** with the named residual gaps + the context-ledger + the relevant facet/exposition rubrics. The fixer **manually edits the facet/exposition content** to close the gap (the one place in this track a human-style targeted edit lands, not just an author re-dispatch). After the fixer pass, re-run the reviewer ONCE more.
+  - If now `FOLLOWABLE` → proceed to Phase 5.
+  - If still holed → **WARN**: write the unresolved gaps to `chapters[<slug>].context_followability.unresolved[]` + surface in the Phase 6 master summary + Phase 5c admin process-critic dispatch. **Non-blocking** — the chapter proceeds to Phase 5 / 5b / 6 / `/and-stitch` carrying a logged context-debt caveat (analogous to the `/and-stitch` cold-read SHIPPED-WITH-CAVEATS path). The warn is the honest "we could not close this within the cap" signal; it does NOT silently ship clean.
+
+**Cap.** Phase 4.6 runs at most ONE add-round + ONE fixer pass (mirrors the Phase 5b 1-pass remediation budget). It is not a convergence loop. The `/and-stitch` Phase 9 cold-read remains the terminal backstop for anything that slips through.
+
+---
+
 ## Phase 5 — AUDIT: single auditor dispatch
 
 Dispatch **auditor** (fork) with the full graph:
@@ -316,10 +436,13 @@ Dispatch **auditor** (fork) with the full graph:
 - All behavior cards in scope (`cards/dialects/<character-slug>.card.md` and composition stack via margit) for every speaking character — for CONSTRAINT § behavior-card-compliance checks.
 - Series plans (showrunner memory: `series.chunk`, `series.substance`, `series.laws`, `series.lore`, `series.behaviors`) — for series-law constraint checks.
 - Schemas: `facet.schema.md`, `dialogue.schema.md`, `audit-report.schema.md`.
+- **Context-ledger (PROP-0020):** `active-project/staff/showrunner/context-ledger-<book>-<chapter>.md` if present — the authority for which exposition entries are sanctioned context-exceptions.
 
 **Forbid loading:** behavior cards, vibes-as-bias, audience personas (except for exposition CONSTRAINT § license-completeness check, which requires loading the persona slugs to verify `licensed-by:` references resolve — load names only, not content), source prose. The auditor reads the graph mechanically against constraints, not aesthetically.
 
 **Mode: flag-only.** Until the auditor itself is tuned for delete-authority, findings are routed back to facet authors as flags. Once tuned (separate work), HARD findings will be executed as deletes (with citation cascade).
+
+**Licensed-context-exception exemption (PROP-0020 / URI-FACETS-CONTEXT-WEAVE).** An exposition entry carrying `licensed-context-exception: ctx-<NNN>` in its frontmatter, where `ctx-<NNN>` resolves to a `license: CONTEXT-REQUIRED` entry in the context-ledger, is **exempt from the following findings**: AP-SCAN `new-plot-content` (the content is sanctioned orientation, not new plot), FREQUENCY-BAND exposition over-count contribution (licensed exceptions do not count toward the 1-5% / episode-open / first-mention caps), and SUPERFLUOUS/`rare`-add scrutiny. It is **NOT exempt** from STRUCTURAL integrity, CONSTRAINT source-traceability, CONSTRAINT license-completeness, re-gloss check, or anti-jargon/hollow-prose AP-SCAN — a sanctioned exception must still be well-formed, sourced, and cleanly written. A `licensed-context-exception` whose `ctx-<NNN>` does NOT resolve in the ledger → HARD `FAULT-CONTEXT-LICENSE-DANGLING` (someone claimed an exemption without a ledger entry).
 
 ### Audit classes (twelve; with exposition-specific rules layered into FREQUENCY-BAND, CONSTRAINT, RUBRIC-FIDELITY, and AP-SCAN)
 
@@ -460,6 +583,8 @@ Aggregation: strict 3-of-3 ACCEPT per character (URI-AUDIENCE-AGGREGATION-RULE).
 - Or did it leave me still confused or, conversely, over-explain in a way that disrupted the prose?
 Reviewers may also propose ADDS: "I'm cape-fic; I needed a gloss for `kingsguard` at @<N> and there isn't one." This audience-side ADD-surfacing is unique to exposition; for other facets, ADDs from reviewers are exceptional. The exposition author has final call on the ADD's gloss content but cannot refuse an audience-flagged ADD without escalating via TASTE-FLAG → AP-SCAN promotion. Single dissent blocks: 3-of-3 ACCEPT required to clear.
 
+**Licensed-context-exception handling at the gate (PROP-0020).** The reviewers read the context-ledger (`active-project/staff/showrunner/context-ledger-<book>-<chapter>.md`) alongside the exposition facet. For an exposition entry carrying `licensed-context-exception: ctx-<NNN>`, a reviewer **may NOT REVISE/FAIL it on the ground that it is exposition / over-explains / disrupts the prose** — an upstream followability reviewer determined the orientation is required, and that judgment is binding at the gate. The reviewer MAY still flag it for "the gloss as written still left me confused" or "this is a craft-defective rendering" — that routes to *improving* the gloss (REWORD), never to deleting the sanctioned context. The reviewer's audience-side ADD power is unchanged. This is the gate-side half of resolving the original c05 tension: the context the cold-reader needed can now be added without the very reviewers who'd have wanted it then penalizing it as an info-dump.
+
 ### Read inputs per reviewer
 
 - The facet file under review (`<facet>.md` or per-character slice for `feeling`/`state-updates`).
@@ -593,9 +718,10 @@ A `validated` verdict requires at least one shared finding across the two paths.
 
 ## Phase 5c — Admin process-critic dispatch (URI-ADMIN-PROCESS-CRITIC, 2026-05-25; non-blocking)
 
-Fire on either of:
+Fire on any of:
 - Any REVISE verdict in the final-cycle Phase 5b audience-gate report (3-of-3 ACCEPT not achieved on any facet)
 - Any cap-burn DELETE applied to satisfy a Phase 5b gate (URI-FACETS-CAP-BURN-SEMANTICS used — a sign that the chain shipped by deleting evidence rather than fixing the facet)
+- Any Phase 4.6 context-remediation **WARN** (`chapters[<slug>].context_followability.unresolved[]` non-empty — a context gap that survived the conditional R3 + fixer pass; the chapter ships carrying context-debt, a signal the upstream chunk/bones may be under-orienting by design)
 
 Non-blocking — Phase 6 persist proceeds.
 
