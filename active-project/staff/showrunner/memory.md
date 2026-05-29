@@ -3586,7 +3586,7 @@ books:
         # FACETS NOT STALE: the @13 verb-only recast preserved all flat_ids and all facet citation anchors. @13 had ZERO facet citations in canonical proto-lines post-cycle-2 (sensory:2 was moved to @14; no other facet anchors at @13). The semantic content of all 58 facet entries is invariant to the pin/strike verb swap (entries reference @13 as the violence-event bone; the bone identity is preserved). facets_stale_since intentionally NOT set; /and-facets re-run is NOT required for this recast.
         cold_read:
           read_at: 2026-05-28T00:00:00Z
-          verdict: FAIL  # THIRD consecutive cold-read FAIL on c05 (re-stitch #3 post /and-write revise @13 strike). Sexual-assault read REMEDIATED ✓ (the @13+@14 fix worked). NEW failure axes: stranger-violence + 'feed' mechanics unexplained + abstract payoff + 'stakes-shaped not stakes'. Central event still recovered.
+          verdict: SHIPPED-WITH-CAVEATS  # principal disposition 2026-05-28 per DEC-0044 (referencing PROP-0018 Class B): THREE consecutive cold-read FAILs with CONTINUE=NO each time but central event recovered all 3 times and substance contract delivered cleanly (auditor PASS / 9-of-9 SUBSTANCE-FELT / prose-rationale CLEAN). FAIL #3 fires on chapter-DESIGN concerns (stranger violence; feed mechanics; interior-cognitive payoff) that the chapter's explicit substance contract commits to. Disposition: ship c05 as terminal under PROP-0018 Class B (recovered-event design-inherent FAIL). Caveats logged below for downstream book-level verdict review.
           recovered_summary: "A surveillance-capable narrator watches a courier she's been tracking get beaten by three men, files a report, and that evening discovers her own system won't stop flagging the route she set up."
           report_path: active-project/staff/reviews/coldread-b01-c05-2026-05-28-restitch3.md
           report_path_history:
@@ -3600,7 +3600,21 @@ books:
             verdict: CLEAN
             findings: 0
             report_path: active-project/staff/reviews/prose-rationale-audit-b01-c05-2026-05-28-restitch3.md
-            note: "19 candidate bones scanned; 0 PROSE-RATIONALE-MUTE findings. @13 strike and @14 enforcement-beating remediation both PASS at prose layer. This audit alone would PASS; FAIL #3 is driven by cold-read CONTINUE=NO on register/content concerns not addressable at bone or stitch layer (stranger-violence; feed-mechanics never explained; abstract payoff; stakes-shaped not stakes)."
+            note: "19 candidate bones scanned; 0 PROSE-RATIONALE-MUTE findings. @13 strike and @14 enforcement-beating remediation both PASS at prose layer."
+          caveats:
+            - "Stranger-violence (beating happens to courier, not Taylor) — design-inherent per s02 substance contract (Taylor is observer; protagonist-force is filing-as-texture)"
+            - "Feed mechanics never glossed on-page — design-inherent per series conventions (insect-feed established at c01; c05 does not re-introduce per cross-episode register discipline)"
+            - "Interior-cognitive payoff (Taylor closes file with no decision) — IS the chapter's substance per chapter contract; the not-deciding is the irony, moral_legibility_to_self held, filing-as-texture protagonist_force"
+            - "Sera's risk told-not-shown in preamble — design-inherent; protective-arrangement-at-distance is the structural irony of the Westerosi-monument-clamp"
+            - "FAIL #2 sexual-assault read REMEDIATED at bones-layer (@13 strike) + stitch-layer (@14 enforcement-beating vocabulary) — no recurrence in FAIL #3 cold-read"
+          downstream_obligations:
+            - "Book-level /and-review verdict b01 MUST inspect this chapter under PROP-0018 Class B disposition rules (once PROP-0018 lands)"
+            - "If PROP-0018 not yet applied: book-verdict reviewer should consult DEC-0044 + DEC-0041 + DEC-0042 + DEC-0043 for c05 disposition rationale"
+            - "Recurring Phase 9 cluster (4 staging-GROUND findings at @14/@28/@31/@33 — 'abstract apparatus-vocabulary at structural peaks') routes to /and-postop b01-c05 milestone for depth-of-quality review (non-blocking; advisory)"
+          dispositioned_at: 2026-05-28T00:00:00Z
+          dispositioned_by: principal
+          disposition_dec_id: DEC-0044
+          disposition_proposal_ref: PROP-0018
           continue: no
           stale_since: null
           # Phase 9 cold-read FAIL: recovered events ✓ (surveillance + courier attack + evening replay refusal); recovered central event ✓ (feed stops being neutral); BUT cold-reader answered CONTINUE=NO ("feed/count/architecture register is exhausting and I'm not sure what happened").

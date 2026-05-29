@@ -1926,3 +1926,88 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0043 | 2026-05-29 | SLOW (process-critic)
+
+question: |
+  Third consecutive cold-read FAIL on b01-c05 (FAIL #3 post @13 recast + scene-B re-render).
+  Sexual-assault read remediated. Criterion 6 maps to goal. CONTINUE=no fires again on
+  design-inherent grounds. Does the process need to change? Is Phase 9's FAIL → /and-write
+  revise routing well-calibrated for recovered-event FAILs where the dominant CONTINUE=no
+  causes are demonstrably design-inherent? Is a process-change proposal warranted at third FAIL?
+
+context: |
+  FAIL #1: CLASS A (could not recover central event) → /and-write revise --from-signals correct.
+  FAIL #2: central event recovered; CONTINUE=no on 5 complaints (1 tractable: assault-read;
+    4 design-inherent). DEC-0041 ESCALATED. Principal: run third revise cycle (DEC-0042 scope B).
+  FAIL #3 (this dispatch): assault-read REMEDIATED. Criterion 6 correctly maps to goal.
+    CONTINUE=no fires on: stakes-shaped-not-stakes / feed unexplained / causality loose /
+    payoff abstract (no decision) / dense prose + no named cast + stranger-violence.
+    All remaining complaints are design properties of the substance contract.
+  Staging: 4 findings (no cluster threshold met). Prose-rationale: CLEAN.
+  Three revise cycles have confirmed: revise loop cannot address design-inherent complaints.
+  DEC-0041 "candidate process change" surfaced but not proposed without principal authorization.
+  FAIL #3: tractable complaint fixed, design-inherent class isolated, recurrence established.
+
+  source_report: active-project/staff/reviews/coldread-b01-c05-2026-05-28-restitch3.md
+  gate_path: .claude/commands/and-stitch.md#phase-9
+
+options: n/a (process-critic mode)
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0018
+
+basis: |
+  Content-vs-process discrimination: Phase 9's DETECTION is correct — it accurately identified a
+  chapter challenging for a cold first-timer. The gap is in DISPOSITION: the binary FAIL →
+  bones-revise routing cannot discriminate between (A) chapters that failed to deliver their design
+  and (B) chapters that delivered their design but whose design properties are inherently challenging
+  for a first-time cold reader. The b01-c05 triple-FAIL cleanly discriminates Class B: criterion 6
+  maps to goal, three revise cycles addressed every tractable complaint, and the design-inherent
+  class is the sole remaining residual. A stricter detection gate would not have prevented this —
+  the detection is correct. The disposition rule is what needs to change. change_type: modify on
+  the disposition branch only.
+
+  DEC-0041 held the proposal pending principal authorization. DEC-0042 authorized the third revise
+  cycle. FAIL #3 completes the confirmation: the authorized cycle fixed the tractable complaint and
+  confirmed the design-inherent class survives. Admin authority to propose is established.
+
+  Cross-chapter recurrence: b01c02 (DEC-0021/DEC-0024, OK at first-occurrence) + b01c05 (three
+  consecutive FAILs, class now cleanly isolated). Two distinct chapters. Recurrence_count = 3
+  within-chapter; class_level recurrence = 2 cross-chapter.
+
+rationale: |
+  Could a stricter version of the existing gate have caught/prevented this? No — the cold-read
+  detection correctly reports what it finds. The gap is not detection sensitivity but routing: the
+  binary disposition routes Class A and Class B FAILs identically (mandatory bones-revise) despite
+  requiring fundamentally different remediation. Class A needs bones-revise (chapter didn't deliver
+  its design). Class B needs a principal disposition call (chapter delivered its design; the question
+  is whether to ship, revise the contract, or iterate knowing the design will change).
+
+  PROP-0018 adds a Class B routing branch: criterion 6 maps-to-goal check, design-inherent audit,
+  bounded disposition to principal via admin user-proxy. Detection unchanged. Class A routing
+  unchanged. Cost estimate M — the spec text is S-cost to write but M in implication (changes gate
+  authority structure on FAIL verdicts).
+
+  Alternatives considered and rejected: (a) chapter-class flag for interior-cognitive chapters —
+  criterion 5 is still the right question; the problem is the routing rule, not the detection
+  question; (b) calibrate criterion 5 differently for interior chapters — more ambiguous to specify
+  than the criterion 6 maps-to-goal discriminator and requires defining "interior chapter" mechanically.
+
+trade-off: |
+  PROP-0018 adds complexity to Phase 9 routing. Benefit: ends the open-ended revise loop for
+  chapters whose design is intentionally challenging. Downside: criterion 6 maps-to-goal
+  discriminator requires a semantic judgment. Guard: the default disposition (S = ship as
+  PASS-DESIGN-INHERENT) routes through admin user-proxy, not auto-ship, so misclassification
+  still requires admin confirmation from goals + LTM.
+
+  Cost of not proposing: every future interior-cognitive chapter with a recovered-event design-
+  inherent FAIL enters an open revise loop that cannot close. This has already cost three revise
+  cycles + re-cascades on b01c05 alone.
+
+follows: DEC-0041 DEC-0042
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

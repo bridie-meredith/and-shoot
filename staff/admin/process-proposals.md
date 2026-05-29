@@ -2134,3 +2134,163 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0018
+
+```yaml
+id: PROP-0018
+created_at: 2026-05-29T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01-c05-2026-05-28-restitch3.md
+  source_verdict: FAIL (CONTINUE=NO; third consecutive cold-read FAIL on b01-c05)
+  gate_path: .claude/commands/and-stitch.md#phase-9
+target:
+  type: command
+  path: .claude/commands/and-stitch.md
+  section: "Phase 9 Step 2 — Diff against intent (harness) / routing rules"
+change_type: modify
+rationale: |
+  Phase 9's disposition rule is a binary: PASS → chapter terminal; FAIL → /and-write revise.
+  This binary cannot discriminate between two structurally distinct FAIL sub-classes:
+
+    CLASS A — Structural-incompleteness FAIL. The cold-reader cannot recover the chapter's
+    central event or goal (criterion 6 summary does not map to chapters[slug].goal). The
+    chapter has failed to deliver its own design. Bones-revise is the correct routing.
+
+    CLASS B — Recovered-event design-inherent FAIL. The cold-reader CAN recover the chapter's
+    central event and goal (criterion 6 summary maps to chapters[slug].goal). CONTINUE=no
+    fires because the chapter's design properties — register, POV strategy, protagonist role,
+    payoff shape — are inherently challenging for a first-time cold reader. Bones-revise cannot
+    fix these properties because they ARE the substance contract. Routing to bones-revise
+    produces a revise cycle that correctly addresses tractable complaints while leaving the
+    dominant CONTINUE=no causes intact, then re-fails on those same causes.
+
+  The b01-c05 triple-FAIL establishes this discrimination with precision:
+
+    FAIL #1 (pre-revise): CLASS A — criterion 6 did not map to goal (cold-reader could not
+    recover central event). /and-write revise --from-signals correct. Four bones added.
+
+    FAIL #2 (post-revise --from-signals): central event recovered. CONTINUE=no fired on five
+    complaints. DEC-0041 analyzed: one complaint tractable (sexual-assault read, complaint 4),
+    four design-inherent. Principal chose to run third revise cycle (DEC-0042) targeting the
+    tractable complaint.
+
+    FAIL #3 (this dispatch): sexual-assault read REMEDIATED (the fix worked). Criterion 6
+    summary correctly maps to the chapter goal: "surveillance-capable narrator watches a courier
+    she's been tracking get beaten... her system won't stop flagging the route she set up —
+    because she's the reason it happened." This is the goal. Yet CONTINUE=no fires again on:
+      (1) stakes "stakes-shaped not stakes" — protagonist watches; design property of the
+          chapter's substance contract (Taylor observes and files; not-deciding IS the irony)
+      (2) "feed" mechanics unexplained — intentional per series register; c01-c04 also do not
+          gloss it; a bones-revise glossing the feed would violate cross-episode contracts
+      (3) causality "loose" — partially inherent to an interior/observational chapter
+      (4) payoff "abstract, no decision" — the explicit substance (moral_legibility_to_self
+          held; "filing-as-texture" protagonist_force; the not-deciding IS the substance)
+      (5) dense prose / no named cast / central event happens to stranger / no clear want/fear
+          — accumulation of design properties, not structural gaps
+
+    Three revise cycles on b01-c05 have now confirmed the prediction DEC-0041 made at FAIL #2:
+    a bones-revise cannot address the dominant CONTINUE=no class because that class IS the
+    chapter's substance contract. The gate's detection is correct — it accurately identifies
+    a chapter that is challenging for a cold reader. The gap is in the disposition rule, not
+    the detection.
+
+  The minimum-blast-radius fix is: add a Class B routing branch to Phase 9 Step 2. The
+  discriminator between Class A and Class B is mechanical: compare the cold-reader's criterion
+  6 one-line summary against chapters[slug].goal. If the summary maps to the goal (Class B),
+  the harness flags "recovered-event FAIL" and routes to a disposition decision rather than
+  mandatory bones-revise. The disposition decision routes to the principal (or admin user-proxy),
+  not auto-mandated by the spec.
+
+  This is change_type: modify on the disposition rules of an existing gate, not a new gate.
+  The Phase 9 cold-read is not proposed for removal or loosening of its detection criteria.
+  FAIL remains a FAIL. The change is to what the disposition does after classifying the FAIL.
+
+  Prior precedent: DEC-0024 established a first-occurrence marker for "chapters FAIL Phase 9
+  cold-read despite sound bones" — that candidate deferred to cross-chapter recurrence. DEC-0041
+  explicitly named the recovered-event FAIL class and escalated without proposing. Now at third
+  consecutive FAIL on the same chapter — with the design-inherent class isolated as the sole
+  remaining residual after the tractable complaint was fixed — the class is precisely discriminated
+  and a proposal is warranted.
+
+  Recurrence_count: within-chapter this is occurrence 3; cross-chapter the class has appeared at
+  b01c02 (DEC-0021 / DEC-0024, OK at first-occurrence) and b01c05 (three consecutive FAILs).
+  Total class-level cross-chapter recurrence = 2 (two distinct chapters). The b01c05 data is
+  the stronger case: three revise cycles confirmed the revise-loop cannot close the design-inherent
+  class; the tractable complaint was isolated and fixed, leaving the class cleanly discriminated.
+evidence_refs:
+  - "active-project/staff/reviews/coldread-b01-c05-2026-05-28-restitch3.md — FAIL #3: criterion 6
+    summary maps to goal; CONTINUE=no on stakes-shaped-not-stakes / feed unexplained / causality
+    loose / payoff abstract / dense prose accumulation — all design properties of substance contract"
+  - "staff/admin/decisions.md — DEC-0041 (second-FAIL ESCALATE; identified Class A vs Class B
+    discrimination; candidate process change surfaced for principal awareness; not proposed without
+    authorization; principal responded with third revise cycle)"
+  - "staff/admin/decisions.md — DEC-0042 (third revise scope: @13-@14 recast to close sexual-assault
+    read; FAIL #3 confirms fix worked; design-inherent class is sole remaining residual)"
+  - "staff/admin/decisions.md — DEC-0024 (b01c02 third Phase 9 FAIL, OK; cross-chapter marker;
+    b01c05 is second cross-chapter occurrence of recovered-event design-inherent FAIL)"
+  - ".claude/commands/and-stitch.md Phase 9 Step 2 — current routing: PASS terminal; FAIL /and-write
+    revise; no recovered-event class check or Class B disposition branch"
+recurrence_count: 3
+proposed_diff: |
+  In .claude/commands/and-stitch.md, Phase 9 Step 2 (Diff against intent — harness), modify
+  the routing block at the end of Step 2:
+
+  CURRENT routing:
+    PASS → proceed to Step 3, then Step 4 (verdict: PASS).
+    FAIL → route to /and-write revise.
+
+  PROPOSED routing (replaces the FAIL arm only):
+
+    **FAIL class discriminator.** Before routing, compare the cold-reader's criterion 6
+    one-line summary against chapters[slug].goal (showrunner memory). Comparison is semantic:
+      - Summary does NOT map to goal → FAIL Class A (Structural-incompleteness).
+        Route to /and-write revise. Unchanged from current behavior.
+      - Summary DOES map to goal → FAIL Class B (Recovered-event).
+        Proceed to Class B disposition.
+
+    **Class B disposition:**
+
+      B1. Categorize each CONTINUE=no complaint:
+          (i) Tractable — addressable by targeted bones-revise or stitch-layer fix without
+              modifying the substance contract (register, POV, protagonist role, payoff shape).
+          (ii) Design-inherent — a direct property of the substance contract.
+
+      B2. If tractable complaints remain: route to targeted bones-revise scoped ONLY to (i)
+          items. The revise brief MUST name design-inherent complaints and exclude them from
+          scope. After revise + re-stitch, re-run Phase 9. If new FAIL is Class B with zero
+          tractable complaints, proceed to B3.
+
+      B3. If zero tractable complaints: dispatch to admin (user-proxy mode) with:
+          - criterion 6 summary (confirmed maps to goal)
+          - complaint list with design-inherent classification
+          - Three options for principal:
+              (S) Ship as PASS-DESIGN-INHERENT: substance contract properties that challenge
+                  a cold first-timer are not defects for the series reader. Record verdict.
+              (R) Revise substance contract: escalate to /and-substance chapter. High cost.
+              (I) Iterate: authorize bones-revise knowing it rewrites design properties.
+          - Admin default (goals + LTM): Option (S), given substance contract was approved
+            upstream and design-property CONTINUE=no is not evidence the contract is wrong.
+
+    **Memory additions (Step 4):**
+      cold_read.fail_class: A | B
+      cold_read.tractable_complaints: [...] (Class B only)
+      cold_read.design_inherent_complaints: [...] (Class B only)
+
+  SCOPE NOTE: Detection is unchanged. CONTINUE=no remains a FAIL. Class A routing (bones-revise)
+  is unchanged. Only the Class B disposition changes: bounded classification + principal call
+  replaces open-ended revise loop that cannot address design-inherent causes.
+
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
