@@ -1714,3 +1714,130 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0041 | 2026-05-29 | SLOW (process-critic → ESCALATE)
+
+question: |
+  Second consecutive cold-read FAIL on b01-c05 — does the process need to change, or is this an
+  ESCALATE to the principal? Specifically: is the URI-STITCH-COLD-READ-FEEDBACK-LOOP (FAIL →
+  /and-write revise) the right routing when the central event WAS recovered but CONTINUE=no fired
+  on register-fatigue + design-inherent genre-seam grounds?
+
+context: |
+  First FAIL (pre-revise, 2026-05-28 early): cold-reader could not recover the central event
+  (recognition-as-feed-stopping-being-neutral). 5 structural gaps; all additive; /and-write revise
+  --from-signals added 4 bones (A1/B1/B2/C1); re-ran /and-review bones (PASS-WITH-NOTES);
+  /and-facets (SHIPPABLE-WITH-CAVEATS); /and-stitch clean Phases 1-8.
+
+  Second FAIL (post-revise, 2026-05-28 late):
+    - Cold-reader DID recover the central event: "their instrument refuses to re-run the route cleanly"
+    - CONTINUE=no fired on five different complaints:
+      (1) "feed/count/architecture register is exhausting and I'm not sure what happened"
+      (2) "Westeros names vs bug-feed surveillance reads as different genres grafted together"
+      (3) "'Hook' appears with no introduction"
+      (4) "whether the alley violence is restraint or evasion was unresolved — inferred possible sexual assault"
+      (5) "emotionally muffled" — voice abstracts away the thing the ending depends on
+    - Staging review: 6 findings (1 EXPAND / 2 GROUND / 2 STAGE / 1 NEEDS-BEAT); no signal-cluster threshold met
+    - Prose-rationale-mute audit: CLEAN (0/8 MUTE)
+    - Chapter substance: 9/9 SUBSTANCE-FELT both pre- and post-revise Phase 6; auditor PASS
+
+  DEC-0024 deferred candidate: "if a future chapter with a documented dormancy-prefigure or
+  deferred-stakes dramatic_shape FAILs Phase 9 cold-read despite sound bones, that cross-chapter
+  recurrence is the trigger for a modify proposal." b01c05 is NOT dormancy-prefigure — it's an
+  active chapter with violence, factional intelligence, and axis movement — so the DEC-0024 deferred
+  candidate does not fire by its own stated terms. Different failure class.
+
+  gate_path: .claude/commands/and-stitch.md#phase-9
+  trigger.source_report: active-project/staff/reviews/coldread-b01-c05-2026-05-28-revise.md
+  trigger.source_verdict: FAIL (second consecutive; CONTINUE=no; central event recovered)
+
+options: |
+  (a) OK — content failure, gate fired correctly; FAIL → /and-write revise is right routing
+      regardless of which sub-reason CONTINUE=no fired; run a third revise cycle.
+  (b) PROCESS-CHANGE-PROPOSED — add a Phase 9 routing note distinguishing recovered-event +
+      CONTINUE=no-on-register-class from structural-incompleteness FAIL; route former to principal
+      judgment / stitch-layer instead of mandatory bones-revise. Admin authors the proposal.
+  (c) ESCALATE — second consecutive FAIL where event was recovered exceeds admin authority;
+      surface to principal.
+
+decision: ESCALATE-TO-HUMAN
+
+basis: |
+  methodology:human-only:architectural-direction (Phase 9 routing modification is architectural)
+  + methodology:human-only:spend-commitments-past-routine (third revise cycle + re-cascade is
+  significant spend; gate's own routing mandates it but the dominant CONTINUE=no causes are
+  design-inherent, not addressable by bones-revise; the spend question needs principal authorization)
+  + methodology:3a (both paths — ship with override, or run third revise — are near-irreversible;
+  neither can be decided by admin from goals + LTM alone without principal judgment on the
+  chapter's design intent vs. reader-experience tradeoff)
+
+rationale: |
+  Content-vs-process discrimination:
+
+  Five CONTINUE=no complaints, analyzed by addressability:
+    (1) Register fatigue ("exhausting"): IS the substance contract (cold-utilitarian register
+        throughout, no tonal relief). Cannot be addressed by bones-revise without violating
+        the substance contract. Zero expected gain from a third revise cycle on this complaint.
+    (2) Genre-seam (Westeros vs. bug-feed): IS the project premise. Cannot be gated or fixed at
+        any layer.
+    (3) "Hook" unexplained: cross-episode architecture decision (Phase 1 cross-episode register
+        check is informational-only per spec; the chapter correctly does not re-gloss terms
+        established in c01-c04). Not a gate gap. A re-gloss would violate cross-episode register
+        conventions for the in-series reader.
+    (4) Alley violence ambiguity (possible sexual assault reading): prose-staging judgment. This IS
+        addressable — one bone recast (the alley-sound bone) or a stitch-layer fence on the specific
+        phrase. A targeted stitch-layer fix or a single-bone recast could close this. Prose-rationale-
+        mute audit was CLEAN so the bone carries staging; the gap is in phrasing, not substance.
+    (5) Payoff emotionally muffled: register-fatigue complaint. Same as (1) — the cold-utilitarian
+        register is the substance contract; the ending cannot "feel" more without the register
+        opening, which the substance contract prohibits.
+
+  Of five complaints: three (1, 2, 3) are design-inherent, one (5) is register-inherent, one (4)
+  is addressable at stitch-layer or minimal bone recast. A third /and-write revise cycle + re-cascade
+  correctly addresses (4) and cannot address (1), (2), (3), or (5). Expected cold-read outcome of
+  a third revise cycle: CONTINUE=no fires again on (1) and (5) even if (4) is resolved.
+
+  Option (a) is wrong: bones-revise is the wrong tool for complaints that are design-inherent.
+  The gate's routing is spec-compliant but would produce a third FAIL on the same register grounds.
+
+  Option (b) requires admin to write a Phase 9 routing amendment at one data point, on a class
+  that needs precise discriminator specification, without knowing whether the principal wants this
+  path. The candidate discriminator ("recovered-event FAIL" where answer 6 captures intent vs.
+  "structural FAIL" where it does not) is sound but is an architectural routing change. Admin
+  cannot propose this without principal direction on whether the new path is wanted.
+
+  Option (c) ESCALATE is correct. The questions the principal must answer:
+    (Q1) Does the chapter ship with a soft-override (PASS-WITH-CAVEATS analog to b01c02),
+         given that the central event IS recovered and CONTINUE=no is predominantly design-inherent?
+    (Q2) If not shipping: does a targeted stitch-layer fix on complaint (4) alone + Phase 9 re-run
+         (without a full bones-revise cycle) constitute an authorized intervention?
+    (Q3) If neither: does the process need to change before a third bones-revise cycle? (This is
+         where the candidate process change lives — see below.)
+
+  Candidate process change (for principal awareness, NOT proposing without authorization):
+    Phase 9 Step 2 routing currently has two paths: PASS and FAIL. A third path would be:
+    "recovered-event FAIL" — where answer 6 (one-line summary) captures the chapter's goal/central
+    event correctly, but CONTINUE=no fires. Detection: compare answer 6 against chapters[].goal
+    mechanically; if the summary maps to the intent, classify as recovered-event FAIL rather than
+    structural FAIL. Disposition: route to principal judgment call (ship with caveats / targeted
+    stitch-layer fix / bones-revise) rather than mandatory bones-revise. Cost: S to Phase 9 spec;
+    M in implication (changes the gate's authority structure). This would have correctly routed
+    this dispatch and the b01c02 soft-override dispatches as operator calls rather than mandatory
+    revise-routes. But writing it precisely at one data point is premature. Principal must decide
+    if this path is wanted.
+
+trade-off: |
+  ESCALATE costs user attention on a question the spec has a mandatory answer for (FAIL → revise).
+  But the mandatory answer costs ~30-50 dispatches + re-cascade against complaints that revise
+  cannot fix. The asymmetry strongly favors escalating over blindly running a third cycle.
+  If the principal confirms "run the revise anyway," admin defers and the spec is followed.
+  The risk of escalating unnecessarily is one user-attention cost. The risk of not escalating
+  is burning a full revise cycle with near-zero expected gain on the dominant CONTINUE=no causes.
+
+follows: DEC-0040 DEC-0039 DEC-0024 DEC-0021
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

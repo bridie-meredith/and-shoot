@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-05-29] DEC-0041 | process-critic: second consecutive cold-read FAIL b01c05 (central event recovered; CONTINUE=no on register-fatigue + design-inherent causes) → ESCALATE | 3/5 CONTINUE=no complaints are design-inherent (cannot fix with bones-revise); Phase 9 routing gap between structural-FAIL and recovered-event-FAIL is architectural direction question; principal must decide Q1 (ship with override?), Q2 (stitch-only fix?), Q3 (process change before third revise?).
 [2026-05-28] DEC-0040 | /and-write b01c05 revise --from-signals scope → Option (b): targeted bones-add at s01 + s02 + s03; revise mode, not redo | all 5 cold-read failures are additive gaps; existing 31 bones structurally sound; option (c) rejected on bones-first principle (s01 anchor required, facets cannot substitute for missing bone).
 [2026-05-28] DEC-0039 | b01c05 cascade: continue /and-facets + /and-stitch now vs. stop at bones-reviewed → Option (b): stop, clean handoff | 30+ dispatches already spent; /and-facets + /and-stitch are mechanical; clean resume mechanism in place; defer saves context budget with zero quality cost.
 [2026-05-28] DEC-0038 | process-critic: codification anti-pattern (URI-STITCH-CHERRY-PICK-DEFAULT-ON) → PROCESS-CHANGE-PROPOSED PROP-0017 | Structural trigger-surface gap: process-critic fires on chain-command non-PASS verdicts but not on URI default-change spec edits citing experiment conclusions; new CLAUDE.md Rule 13 trigger class proposed.
