@@ -1841,3 +1841,88 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+## DEC-0042 | 2026-05-29 | SLOW (user-proxy)
+
+question: /and-write b01-c05 revise (plain, not --from-signals) — what scope? Third revise cycle; principal chose spec-default revise after DEC-0041 escalation.
+
+context: |
+  35 bones (7+15+13). Second cold-read FAIL post revise --from-signals. 5 CONTINUE=no complaints:
+  (1) register fatigue — design-inherent
+  (2) genre-seam Westeros/bug-feed — project-premise, not addressable
+  (3) "Hook" un-introduced — cross-episode architecture, not addressable by bones-revise
+  (4) alley violence ambiguous: cold-reader read "below the register I would have called human" as possible sexual assault
+  (5) payoff emotionally muffled — register-inherent
+  Candidate tractable item: complaint (4) — recast bone @14 or add bone around @13-@14 to make violence-type explicit.
+  Structural question: does the b01c05s02 chunk actually commit to a violence-type, or does it leave it ambiguous?
+
+options: |
+  (A) S02 only revise — re-decompose s02 @8-@22; add/recast bones @13-@14 to close assault-reading; ~10-15 dispatches.
+  (B) Bone-range revise @13-@16 only — narrowly recast 3-4 bones; ~6-10 dispatches.
+  (C) S02 + s01 — scope (A) + "Hook" re-gloss in s01; ~15-20 dispatches.
+  (D) Full chapter redo — clear all 35 bones; ~40-50 dispatches.
+  (E) Scope (B) on bones; but finding is that the chunk itself already commits to beating, not assault — so the tractable fix is stitch-layer re-phrasing, not a bones-revise at all.
+
+decision: |
+  Scope (B), constrained to @13-@14 bone recast only. BUT: the screen-writer brief must contain
+  the chunk's own violence-type framing. See constraint note below.
+
+basis: methodology:3b (cost) + methodology:3d (optionality) + chunk-authority reading
+
+rationale: |
+  The b01c05s02 chunk text was read directly. Key text:
+    "the geometry of the approach not consistent with opportunistic theft... a controlled
+    containment, a single body held against stone... enforcement reads differently from robbery...
+    the blocking of exits before contact, the absence of the post-contact scatter that marks common
+    theft... a low, effortful sound, not a cry, the kind a body makes when it is trying not to
+    make any sound at all"
+  The chunk calls this "enforcement," not robbery, not assault. "Not a cry" is the chunk's own
+  language. The mechanism block specifies coordinated physical containment (beating-geometry, not
+  assault-geometry). The cold-reader's sexual assault inference arose from the stitched prose phrase
+  "below the register I would have called human" — a stitch-layer phrasing choice that has no direct
+  source in the chunk. The chunk's violence-type is beating/enforcement, not ambiguous at the chunk
+  level.
+
+  Therefore complaint (4) is NOT a substance-contract overwrite if bones-revise makes the violence-
+  type explicit. The chunk authorizes "enforcement" as beating. The bone @14 "the side-alley returns
+  the sound" is underspecified relative to what the chunk licenses — the chunk licenses "effortful
+  sound, not a cry, the kind a body makes when it is trying not to make any sound at all," which is
+  unambiguously a beating sound description, not an assault sound description. A bones-revise that
+  makes this explicit is fidelity improvement, not substance-contract overwrite.
+
+  Scope analysis:
+    (A) S02 full re-decompose: overcorrects. s02 already has 15 clean bones including new bones from
+        the revise --from-signals run. Redoing all 15 risks disturbing the bones that passed Phase 9
+        complaint (i-iii, v) corrections. Only @14 is the live problem.
+    (B) @13-@14 recast: sufficient. @13 "the three figures pin the courier" (correct action verb) +
+        @14 "the side-alley returns the sound" (the underspecified bone). Recast or add one bone at
+        @14 to make the violence-type explicit as beating/enforcement — the chunk licenses this.
+        Preserves @15 spine-raise and @16 feet-found which already disambiguate direction (up).
+    (C) S02 + s01 "Hook" re-gloss: complaint (3) is cross-episode architecture; re-glossing violates
+        cross-episode register conventions and the bones-review would HARD-flag it as chunk-unfaithful.
+        Methodology 3a: this path is NOT reversible if it violates the cross-episode contract.
+    (D) Full redo: wasteful (35 bones otherwise clean).
+
+  Screen-writer brief constraint: the brief must include the chunk's exact language — "enforcement,
+  not robbery," "effortful sound, not a cry, the kind a body makes when it is trying not to make
+  any sound at all," and "enforcement reads differently from robbery." The recast must stay inside
+  what the chunk licenses. The fix is NOT to add graphic violence specificity the chunk lacks — it
+  is to prevent the stitcher from re-introducing a phrasing that opens the assault reading.
+
+  Note on stitch-layer alternative: the cold-reader's confusion arose from prose phrasing. A stitch-
+  layer fence (prohibit "below the register I would have called human" phrasing, require explicit
+  enforcement-vocabulary at @14) would also close the reading without a bones-revise. But since the
+  principal chose "third revise cycle (spec default)" over stitch-layer alternative (DEC-0041 Q2
+  rejected), the spec routing applies and bones-revise it is. The fix targets the correct bone.
+
+trade-off: |
+  Scope (B) does not re-decompose s02 as a whole, so it does not give screen-writer latitude to
+  reconsider @8-@22 sequencing. If there are other s02 issues the Phase 9 re-run surfaces, the
+  scope may need to expand at Phase 1. But per DEC-0041, only complaint (4) is tractable at bones
+  layer — no other complaint justifies expanding scope. Accept the narrow scope; expand at Phase 1
+  only if screen-writer flags a structural adjacency.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

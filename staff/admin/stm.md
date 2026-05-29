@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-05-29] DEC-0042 | /and-write b01c05 revise (plain) scope — third revise cycle → Scope (B): recast @13-@14 only; chunk explicitly licenses "enforcement/beating" vocabulary; assault-reading arose from stitch-layer phrasing not bones; screen-writer brief must carry chunk's own language | chunk text decisive; no substance-contract overwrite; (A) overcorrects; (C) violates cross-episode contract; (D) wasteful.
 [2026-05-29] DEC-0041 | process-critic: second consecutive cold-read FAIL b01c05 (central event recovered; CONTINUE=no on register-fatigue + design-inherent causes) → ESCALATE | 3/5 CONTINUE=no complaints are design-inherent (cannot fix with bones-revise); Phase 9 routing gap between structural-FAIL and recovered-event-FAIL is architectural direction question; principal must decide Q1 (ship with override?), Q2 (stitch-only fix?), Q3 (process change before third revise?).
 [2026-05-28] DEC-0040 | /and-write b01c05 revise --from-signals scope → Option (b): targeted bones-add at s01 + s02 + s03; revise mode, not redo | all 5 cold-read failures are additive gaps; existing 31 bones structurally sound; option (c) rejected on bones-first principle (s01 anchor required, facets cannot substitute for missing bone).
 [2026-05-28] DEC-0039 | b01c05 cascade: continue /and-facets + /and-stitch now vs. stop at bones-reviewed → Option (b): stop, clean handoff | 30+ dispatches already spent; /and-facets + /and-stitch are mechanical; clean resume mechanism in place; defer saves context budget with zero quality cost.
