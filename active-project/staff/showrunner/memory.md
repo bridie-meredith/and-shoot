@@ -3549,10 +3549,10 @@ books:
         #   - foreclosure-quartet asymmetry: feel:2 @29 alone between bare @28+@30; @31 has narrator:10 + vibes:17+18; stitch must respect bare flanks
         #   - NI density 25.8% at ceiling — differentiated rhythm in scene-A (3 NI in 7 bones)
         #   - cf-d10 plant @8 + @18 + @27 callback-ready for d10 callback
-        stitched: false  # revise --from-signals dropped stitched flag; draft + cold_read carry stale_since stamps
-        stitched_at: 2026-05-28T00:00:00Z  # historical: prior stitch timestamp (pre-revise)
-        draft_file: active-project/draft/b01-c05.md  # stale against new 35-bone scaffold; /and-stitch re-run required
-        draft_stale_since: 2026-05-28T00:00:00Z  # bones file re-emitted at revise Phase 7
+        stitched: true  # re-stitched 2026-05-28 post /and-write revise --from-signals; prior stitch (cold_read FAIL) archived to draft/_archive/2026-05-28-c05-pre-revise/
+        stitched_at: 2026-05-28T00:00:00Z  # re-stamped at Phase 8 finalize 2026-05-28
+        draft_file: active-project/draft/b01-c05.md  # 1605 words (preamble ~190 + body 1416)
+        draft_stale_since: null  # cleared at Phase 8 finalize 2026-05-28
         cold_read:
           read_at: 2026-05-28T00:00:00Z
           verdict: FAIL  # historical: this verdict triggered the revise --from-signals run; preserved as history

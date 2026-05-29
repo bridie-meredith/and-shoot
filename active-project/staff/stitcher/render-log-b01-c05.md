@@ -245,3 +245,287 @@ fork-003 scene-C bones=@23-@35  scene-window-render
      - SEAM-9 L8 memory:2 verbatim fold combined with state:5 body-record filing + cf-d10 face-callback — single paragraph carrying three facet loads; cohesive because all three are the body-record filing event; if Phase 9 flags as too-dense, no split point is good — the memory:2 verbatim is locked
      - SEAM-10 L7 close-evening-review beat between two NI-fold paragraphs (L6 + L8) — no NI fold at L7 by design; if Phase 5b NI-author requests NI surface here, L7 has the window-light-thinning detail available to extend with a register-fold, but the density advisory recommended letting the foreclosure-quartet breathe
      - SEAM-11 L1 "set the day on the floor in front of me the way a person lays out coin to count it" — coin-laying metaphor; not stitcher-coined as compound, but borderline reach; chose for evening-replay-shape register + voice-exemplar cadence-prime alignment; if Phase 9 flags as too-pretty, fallback is "set the day on the floor in front of me" without the metaphor extension
+
+## Phase 7 — editorial reflection
+
+mode: strict (cut-aggressiveness)
+persona: neutral (no Phase-7-bias overrides)
+voice: 1st-person past, contractions OFF
+sweep-scope: full draft sentence-by-sentence (mandatory; "0 moves" legitimate only with full sweep present)
+draft-input: active-project/draft/b01-c05.phase-6.draft.md (1416 words; 3 scenes; 30 paragraphs)
+draft-output: active-project/draft/b01-c05.phase-7.draft.md
+total-sentences: 54
+total-q-lines: 54
+moves-applied: cuts=0, cut-clauses=0, cut-asinines=0, cut-hollows=0, reshows=0, rewords=0, simplify-puncts=0, cut-bones=0
+keep-all: Y
+verdict: 0 moves — full sweep performed; every sentence load-bearing per bones-walk + scene-window self-audit; no facet register-token leaks; no contractions; no asinine patterns; no anti-jargon coinages; punctuation choices (em-dashes, semicolons) all functional rather than taste-flex per Q6
+
+q-line format: L<n>.<s> [scene]: Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9 → verdict
+  where Q1=load-bearing, Q2=image-concrete, Q3=cardinal-delivery, Q4=sensory-coverage, Q5=hollow-prose-MATCH, Q6=punct-fancy-MATCH, Q7=pronoun-ambiguity-MATCH, Q8=asinine-pattern-MATCH, Q9=anti-jargon-MATCH
+  load-bearing/concrete/cardinal/sensory: y=present, n=absent, n/a=not-at-applicable-beat
+  hollow/punct/pronoun/asinine/jargon: n=clean (no match), y=match (triggers move)
+  exposition-derived sentences (P2, P8 em-dash folds): Q1/Q5/Q8 pre-cleared per audience-modeling/R2/audit upstream → marked "pre" (treat borderline as KEEP)
+
+### Scene-A (paragraphs P1–P7; bones @1–@7)
+
+L1.1 [Scene-A]: Q1=y Q2=y Q3=n/a Q4=y(loc-state-sensory-pre-anchor) Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: cold-damp/light/shade triple establishes loc-state-pre-anchor; no fancy punct; "stopping at the north face of the junction in shade" is concrete spatial fix not gestural
+
+L2.1 [Scene-A]: Q1=pre Q2=y Q3=n/a Q4=n/a Q5=pre Q6=n Q7=n Q8=pre Q9=n → KEEP
+  note: exposition first-mention em-dash-fold for "the Rushwick"; Q1/Q5/Q8 pre-cleared (audience-modeled); em-dash-fold here is the schema-licensed first-mention render-as directive, not a taste flex (Q6=n); 78 words defensible per brief
+
+L3.1 [Scene-A]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: four-word topic sentence; opens the apparatus-bedding-in paragraph
+
+L3.2 [Scene-A]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n(semicolon-fragment-to-clause-functional) Q7=n Q8=n Q9=n → KEEP
+  note: "insect-bodies on lintels, in wall-seams, under cart-shadow" is concrete spatial enumeration; semicolon required (fragment+clause join would be comma splice with comma); "instrument bedding in on new ground" is graph-resident apparatus register, not a Q9 coinage (apparatus/instrument both in lens-vocabulary c01-c04)
+
+L4.1 [Scene-A]: Q1=y Q2=y Q3=n/a Q4=y(sensory:cart-wheels-grinding) Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: provisioner-train SVO arrival; cart-wheels grinding on uneven stone is sensory:auditory-rendered; concrete throughout
+
+L4.2 [Scene-A]: Q1=y Q2=n/a(abstract-but-cognitive-state) Q3=y(stakes-baseline-register) Q4=n/a Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: three-word axiom "The categorization held." is the chapter's opening +0 cognitive register baseline; load-bearing as the stakes-axiom against which the rushwick-flat-read will fail at scene-C
+
+L4.3 [Scene-A]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n(colon-introduces-enumeration) Q7=n Q8=n Q9=n → KEEP
+  note: colon introduces an enumeration of the read-as-since-coverage; "forward-lean...unhurried-hurry...no affect required" are concrete behavioral categories not abstractions; colon is functional, not flex
+
+L5.1 [Scene-A]: Q1=y Q2=y Q3=n/a Q4=y(loc-state-sensory) Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: train-departure SVO with spatial-fall-off-into-morning-light; concrete
+
+L5.2 [Scene-A]: Q1=y Q2=n/a(cognitive-categorization) Q3=n/a Q4=n/a Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: "what read in their gait was not Hook foot-traffic" is the cross-episode register-contrast (substrate-difference) load-bearing for the categorization-transfer chapter-arc
+
+L5.3 [Scene-A]: Q1=y Q2=n/a(cognitive) Q3=n/a Q4=n/a Q5=n Q6=n(semicolon-paired-clauses-rhythmic) Q7=n Q8=n Q9=n → KEEP
+  note: semicolon binds two paired clauses (substrate-different / layer-above-unnamed) — rhythmic-parallel function, not taste-flex; "the layer above it stayed unnamed" is the soft-watch register Taylor doesn't fully articulate
+
+L6.1 [Scene-A]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n(em-dash-surface-to-read) Q7=n Q8=n Q9=n → KEEP
+  note: message-runner gait-read; em-dash separates surface (gait) from the read (accountable-to-someone-above); functional definitional break
+
+L7.1 [Scene-A]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: apparatus-release SVO with spatial-line-where-lane-mouth-widens; "the count holding to its side of the boundary" is the apparatus-cognition load-bearing for the contrast with the rushwick-feed-not-settling at scene-C
+
+### Scene-B (paragraphs P8–P18; bones @8–@22)
+
+L8.1 [Scene-B]: Q1=pre Q2=y Q3=n/a Q4=n Q5=pre Q6=n Q7=n Q8=pre Q9=n → KEEP
+  note: exposition em-dash-fold for "the courier" first-mention (three-mornings-running gloss); Q1/Q5/Q8 pre-cleared; em-dash here is schema-licensed exposition fold not flex; "sorted him into the cut his prior sightings had opened" is borderline-metaphor but reads as feed-mechanism (recurring-body-anchor's pre-existing slot in the body-map) — defensible per scene-window self-audit SEAM-1 KEEP
+
+L9.1 [Scene-B]: Q1=y Q2=y Q3=n/a Q4=y(loc-state-tactile:cool-stone-shade-damp) Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: wall-line hold with concrete tactile rendering; "since the count came up" anchors the protected-tradecraft register
+
+L9.2 [Scene-B]: Q1=y Q2=y Q3=n/a Q4=y(sensory:olfactory-tallow-smoke) Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: tallow-smoke drift from stitch-house-ward — concrete olfactory landmark naming the ward via graph-resident vocabulary (stitch-house-ward not Q9 per brief)
+
+L9.3 [Scene-B]: Q1=y Q2=n/a(cognitive-triadic) Q3=n/a Q4=n/a Q5=n Q6=n(two-semicolons-triadic-rhythm-functional) Q7=n Q8=n Q9=n → KEEP
+  note: triadic cognition (third-sighting / feed-had-him-filed / hold-was-hold-used) binds three simultaneous register-loads as one observation; periods would impose sequential cognition; semicolon-chain is rhythmic-structural not flex
+
+L10.1 [Scene-B]: Q1=y Q2=y Q3=n/a Q4=y(loc-state-sensory:rough-stone-uneven-floor) Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: three-figures arrival with alley-geometry rendered; concrete
+
+L10.2 [Scene-B]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n(em-dash-image-to-categorization-refusal) Q7=n Q8=n Q9=n → KEEP
+  note: alley-mouth-sealed geometry + the categorization-refusal triadic ("not robbery, the approach was wrong, the coordination was wrong"); em-dash separates the image from the refusal-of-the-obvious-read — functional break, not flex
+
+L11.1 [Scene-B]: Q1=y Q2=y Q3=y(stakes-pivot-event) Q4=n/a Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: six-word standalone paragraph; the pinning act is the scene's pivot event; concrete
+
+L12.1 [Scene-B]: Q1=y Q2=y Q3=n/a Q4=y(sensory:auditory-spike) Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: five-word topic sentence; alley-acoustics introduces the auditory beat
+
+L12.2 [Scene-B]: Q1=y Q2=y Q3=y(apparatus-gap-cardinal) Q4=y(sensory) Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: long single-sentence carries the noise-physics + the feed-no-field beat; SEAM-3 split-point was identified but the conjunctive-and join is functional (noise-being-carried-out causally produces feed-has-no-field) — splitting would break the causal continuity; rhythm load-bearing per scene-window self-audit; the comma+and join is natural English, not "fancy punctuation" per Q6
+
+L13.1 [Scene-B]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: courier-raises-spine SVO; standalone paragraph; image-concrete
+
+L14.1 [Scene-B]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: courier-stands SVO; standalone paragraph; image-concrete
+
+L15.1 [Scene-B]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n(colon-introduces-form-fields) Q7=n Q8=n Q9=n → KEEP
+  note: filing the incident into enforcement-incident form; colon introduces the form-field enumeration (movement-pattern, body-count, etc.) — functional schema-listing not flex; "enforcement-incidents" is graph-resident substance-vocabulary not Q9 coinage
+
+L15.2 [Scene-B]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: delivery-to-outbound at filing-close-line; concrete categorization beat
+
+L15.3 [Scene-B]: Q1=y Q2=y Q3=y(report-destination-cardinal) Q4=n Q5=n Q6=n(em-dash-act-to-destination) Q7=n Q8=n Q9=n → KEEP
+  note: the report-going-to-Sera-architecture beat without on-page Sera-naming; "the architecture that held someone else's exposure at a length of someone else's arm" carries the routing-destination register at the cardinal stakes beat; em-dash separates act from destination — definitional functional break
+
+L16.1 [Scene-B]: Q1=y Q2=y Q3=n/a Q4=y(loc-state:opening-clears-east-lane-visible) Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: three-figures-exit with concrete alley-opening clearing; "unhurried purpose" is concrete gait-description
+
+L17.1 [Scene-B]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: courier-added-to-body-map state-tracking beat; "no name written into a ledger where his face would have one" is the body-record-as-anonymized-routing register load-bearing for scene-C @31 file-filing
+
+L18.1 [Scene-B]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: courier-takes-junction-corner SVO with "forty feet off from my held line" concrete spatial; "count let him go past it" is apparatus-release cadence
+
+### Scene-C (paragraphs P19–P30; bones @23–@35)
+
+L19.1 [Scene-C]: Q1=y Q2=y Q3=n/a Q4=y(loc-state-sensory:lamp/light/air/boards) Q5=n Q6=n(em-dash-room-to-contrast) Q7=n Q8=n Q9=n → KEEP
+  note: scene-shift entry; long sentence (~55 words) carries the room-floor + lamp-unlit + window-light + air-still + indoor-stillness-contrast load; em-dash separates the establishment from the contrast-with-lane — functional contrastive break
+
+L19.2 [Scene-C]: Q1=y Q2=y Q3=n/a Q4=y(feeling:body-posture) Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: SEAM-11 coin-laying metaphor; chose KEEP per Taylor-clinical-accounting register move (per-item-counting figure for evening-replay-shape); bones-walk explicitly cites this as the load-bearing register surface; not gestural — concrete physical analogy for the apparatus-routine
+
+L20.1 [Scene-C]: Q1=y Q2=y Q3=y(Hook-baseline-cardinal) Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: long single-sentence Hook-feed baseline-establishment; the parallels-with-Hook structural cadence is the setup for the rushwick break at P22; "closed itself out clean, every entry resolved against its return" gives transitive completion (flag-002 addressed at scene-window self-audit); load-bearing for the contrast
+
+L21.1 [Scene-C]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: four-word topic sentence; second-apparatus-action introducing the rushwick-feed pair
+
+L21.2 [Scene-C]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: rushwick-replay parallel-Hook content; the came-back-the-way-the-Hook-had-come-back cadence is the setup for the P22 break; concrete provisioner-train re-crossing
+
+L21.3 [Scene-C]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: five-word standalone clause within paragraph — "The provisioner-train cleared the junction" — beat-marker; concrete
+
+L21.4 [Scene-C]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: feed-keeps-on triadic enumeration (courier-window / side-alley-figures / report-entry); rushwick replay sweeps the scene-B content forward; load-bearing for the architecture-coming-back-with-the-train at P22
+
+L22.1 [Scene-C]: Q1=y Q2=y Q3=y(apparatus-break-cardinal) Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: five-word topic sentence; the DOES-NOT-SETTLE cardinal break-from-Hook; load-bearing
+
+L22.2 [Scene-C]: Q1=y Q2=y Q3=y(color-persistence-cardinal) Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: the color-persistence-across-time beat; "the feed routing the provisioner-train through the same architecture and bringing the architecture back with the train" is the architecture-correlate that sets up the @29 recognition; load-bearing for the chapter-pivot
+
+L22.3 [Scene-C]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n(semicolon-test-to-result-functional) Q7=n Q8=n Q9=n → KEEP
+  note: second-length-pass verification with semicolon binding test+result; the semicolon ties the deliberate test ("to see if it was the read and not the feed") to its outcome ("the color persisted") — consequence-binding rhythmic function, not flex
+
+L23.1 [Scene-C]: Q1=y(HARD-KEEP) Q2=y Q3=y(feeling-body-act-cardinal) Q4=y(feeling:1) Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: HARD-keep per brief — body-act of the recognition-cessation; feeling:1 head-tilt; the body acts before cognition has the word; central +1.5 axis-mover physical surface
+
+L23.2 [Scene-C]: Q1=y(HARD-KEEP) Q2=y Q3=y(axis-move-cardinal) Q4=n/a Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: HARD-keep per brief — "I stopped the rushwick-pass" is the +1.5 axis-move; chapter's central event SVO bone @29 first half
+
+L24.1 [Scene-C]: Q1=y Q2=n/a(cognitive-register) Q3=y(cognitive-naming-of-body-precedence) Q4=n/a Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: "The stopping was the body's, before I had a word for what the body was doing" — the body-acts-before-cognition register; load-bearing for the recognition-cessation peak's cognitive register
+
+L24.2 [Scene-C]: Q1=y Q2=y Q3=n/a Q4=y(feeling:hand-came-up-off-boards) Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: "the hand I had laid flat on the boards came up off the boards" — concrete body-image of the cessation; feeling-register
+
+L24.3 [Scene-C]: Q1=y(HARD-KEEP) Q2=y Q3=y(architecture-naming-cardinal) Q4=n/a Q5=n Q6=n(em-dash-route-to-architecture-functional) Q7=n Q8=n Q9=n → KEEP
+  note: HARD-keep per brief — the architecture-naming sentence; INSTRUMENT-COMPLICITY register surface ("instrument-complicity" token does NOT appear, verified); em-dash separates the recognition act from the architecture-without-Sera-naming triadic ("not the lane, not the courier, but the architecture"); pl-2026-05-28-002 delivery; cold-read failure (iv) prevention; sentence reach IS the recognition-shape per scene-window self-audit; Q5 borderline-on-length pre-cleared by HARD-keep
+
+L24.4 [Scene-C]: Q1=y Q2=n/a(cognitive-register) Q3=y(discipline-as-apparatus-refusal-close) Q4=n/a Q5=n Q6=n(semicolon-paired-clauses-anaphora-functional) Q7=n Q8=n Q9=n → KEEP
+  note: the discipline-as-apparatus-refusal close; semicolon binds two parallel "the discipline" anaphoric clauses — rhythmic parallel function, not flex; load-bearing for the foreclosure-anchor at the cognitive level
+
+L25.1 [Scene-C]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: four-word topic sentence; the close-evening-review beat begins; bone @30 SVO
+
+L25.2 [Scene-C]: Q1=y Q2=y Q3=n/a Q4=y(loc-state:window-light-thinned-to-sill-line) Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: window-light-fading carries the temporal-close without re-establishing evening; "the entries delivered, the count resolved" closes the day's coverage; concrete
+
+L26.1 [Scene-C]: Q1=y Q2=y Q3=n/a Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: five-word topic sentence; the file-courier-body-record beat begins; bone @31 SVO
+
+L26.2 [Scene-C]: Q1=y Q2=y Q3=y(memory-resonance-carve-out-cardinal) Q4=n Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: long single-sentence with the cf-d10 face-callback + memory:2 verbatim Earth-Bet displacement fold + body-record filing + held-face-then-closed-file (oc-courier-body-map.state initiated→filed); resonance-carve-out lands at body-record filing not at @29 peak per parallel-cognition rubric; load-bearing
+
+L27.1 [Scene-C]: Q1=y(HARD-KEEP-standalone) Q2=y Q3=y(foreclosure-attempt-1-cardinal) Q4=n/a Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: HARD-keep per brief — five-word standalone bare-form; foreclosure-quartet first attempt; dup-001 SVO repetition begins; do-not-fuse
+
+L28.1 [Scene-C]: Q1=y Q2=y Q3=y(foreclosure-hold-1-cardinal) Q4=n/a Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: provisioner-train-holds-the-rushwick-pass; physical-anchor hold (scene-map protected-pattern); parallel construction with P30 terminal hold
+
+L28.2 [Scene-C]: Q1=y Q2=y Q3=y(foreclosure-shape-cardinal) Q4=n Q5=n Q6=n(semicolon-replay-setup-to-foreclosure-functional) Q7=n Q8=n Q9=n → KEEP
+  note: long sentence; semicolon separates the replay-setup (train re-crossed/feed brought back/architecture came back) from the foreclosure-shape three-would-not chain; structural rhythmic function, not flex; the three would-not-negations are the foreclosure delivery; load-bearing
+
+L28.3 [Scene-C]: Q1=y Q2=n/a(metaphor-but-figural-not-decorative) Q3=y(foreclosure-seal-cardinal) Q4=n/a Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: door-does-not-open-at-the-turn metaphor seals the first attempt; the figural-without-decoration register is Taylor's read of the apparatus-refusal — not Q5 hollow (not over-qualified, not told-emotion); the door-turn figure IS the foreclosure shape
+
+L29.1 [Scene-C]: Q1=y(HARD-KEEP-standalone) Q2=y Q3=y(foreclosure-attempt-2-cardinal) Q4=n/a Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: HARD-keep per brief — dup-001 second-attempt aspect-marked form; same bone SVO as P27 but distinguished by aspect ("again, slower this time"); deliberate-patience differentiator; do-not-fuse
+
+L30.1 [Scene-C]: Q1=y(HARD-KEEP-TERMINAL) Q2=y Q3=y(terminal-foreclosure-confirmation-cardinal) Q4=n/a Q5=n Q6=n Q7=n Q8=n Q9=n → KEEP
+  note: HARD-keep per brief — TERMINAL bone @35; courier-walk-holds-the-rushwick-pass; parallel construction with P28 hold delivers the foreclosure-quartet two-distinct-holds compound; NOTHING APPENDED; chapter terminal-bone
+
+### Sweep totals
+
+sentences-counted: 54
+q-lines-emitted: 54 (1:1 with sentences; full sweep performed)
+keeps: 54
+cuts: 0
+cut-clauses: 0
+cut-asinines: 0
+cut-hollows: 0
+reshows: 0
+rewords: 0
+simplify-puncts: 0
+cut-bones: 0
+verdict: KEEP-ALL (0 moves)
+
+### Flagged seams forward to Phase 8 / 9
+
+- SEAM-3 (P12.2) — long gap-instrument sentence kept whole per scene-window self-audit; causal continuity load-bearing; if Phase 9 cold-read flags as overlong, the split point "...until the alley delivered it" | "and the feed had no field for what the alley delivered" is available but loses the causal-continuity binding
+- SEAM-6 (L24.3) — chapter's INSTRUMENT-COMPLICITY architecture-naming sentence kept whole per HARD-keep; if Phase 9 flags as ornate, split-point after "the architecture I had not asked the feed to mark" is available but the unbroken reach IS the recognition-shape per upstream forks
+- SEAM-7 (P23+P24 split across body-act and cognitive-register paragraphs) — defensible per body-acts-before-cognition register; if Phase 9 cold-read reads as over-cognized, P24 can compress but cannot delete
+- SEAM-8 (P27 + P29 dup-001 same-SVO bare-form vs aspect-marked-form) — load-bearing for foreclosure pattern; do-not-fuse per scene-map fusion-eligible-runs exclusion
+- SEAM-9 (P26.2 memory:2 + state:5 + cf-d10 triple-load) — single paragraph carrying three facet loads; cohesive (all three are body-record filing event); memory:2 verbatim is locked
+- SEAM-11 (P19.2 coin-laying metaphor) — kept per Taylor-clinical-accounting register move; bones-walk cites as load-bearing register surface
+
+### Rationale for 0-moves outcome
+
+The upstream scene-window forks at Phase 1 (forks 001-003) self-audited heavily — every flagged seam was either justified, fence-cleared, or marked as drift-risk-low with explicit split-point fallbacks. The bones-walk discipline + the scene-window-self-audit pass + the bones-cuttable license exclusion (no anchor cuts available) combine to leave Phase 7 with no actionable taste-cuts that don't violate either the HARD-keep set or the load-bearing bones-walk. The 0-moves outcome is EARNED by the full per-sentence sweep performed above (54 q-lines emitted, 1:1 with sentence count), not skipped. Phase 7 is in keep-the-good-work mode here; the move-pressure correctly belongs at the prior scene-window forks where it was applied.
+
+## Phase 8 — finalize
+
+stable-line-ids: assigned 1-N sequential; no gaps (Phase 7 cuts: 0)
+preamble: prepended from active-project/draft/b01-c05.preamble.md (2 italic paragraphs Sera-architecture trio; separated from body by horizontal rule)
+scene-callout-suppression: HARD-stripped sed pass on draft/b01-c05.md; no `## Scene N` / `[SCENE BREAK]` / `--- SCENE ---` markers in clean draft (URI-SUBSTANCE-OVERHAUL); scene boundaries conveyed by paragraph break only
+clean draft: active-project/draft/b01-c05.md (1605 words: ~190 preamble + 1416 body)
+annotated draft: SKIPPED (output.mode: not-dual; no project profile; matches c01-c04 precedent — annotated drafts not authored under default mode)
+
+intermediates pruned (default; not --keep-drafts):
+  - draft/b01-c05.phase-1.draft.md (assembled scene-A+B+C)
+  - draft/b01-c05.phase-6.draft.md (== phase-1, no inline-mechanical changes)
+  - draft/b01-c05.phase-7.draft.md (== phase-6, 0 Q-sweep moves)
+  - draft/b01-c05.preamble.md (content prepended to clean draft)
+  - draft/b01-c05.scene-A.draft.md, scene-B.draft.md, scene-C.draft.md (scene-window fork outputs)
+
+## Phase 8 — STATS
+
+word-count: 1605 (preamble ~190 + body 1416)
+sentence-count: 54 (Phase 7 sweep tally)
+paragraph-count: 32 (2 preamble + 7 scene-A + 11 scene-B + 12 scene-C)
+bones-authored: 35
+bones-rendered: 31 (one-bone-one-sentence-or-paragraph)
+bones-merged: 4 (@9 fused with @8 scene-B L1; @12 fused with @11 scene-B L3 per fusion-eligible-run; @25 fused with @24 scene-C L2 per Hook-baseline-pair fusion-eligible-run; @27 fused with @26 scene-C L3 per Rushwick-first-pass-pair fusion-eligible-run)
+bones-dropped: 0
+bones-rendered-illegible: 0
+bones-CUT-BONE: 0
+facets-authored (per cite-index post-cycle-3 CLEAN): 60 (loc-state=9, NI=10, sensory=2, state=12, mem=2, feel=1, metaphor=0, vibes=20, exposition=4)
+facets-rendered:
+  - loc-state: 9/9 (all anchors folded into bone sentences per co-anchor fold rule)
+  - narrator-interest: 10/10 (one anchor-slip @2→L4 logged; all entries reach prose)
+  - sensory: 2/2 (sensory:1 @4 tactile cart-wheel; sensory:2 @14 sound after cycle-2 re-anchor)
+  - state-updates: 12/12 (all 12 entries reach prose via co-cited bone or NI co-fold)
+  - memory: 2/2 (mem:1 @19 displacement-cue verbatim; mem:2 @31 Earth-Bet-displacement verbatim)
+  - feeling: 1/1 (feel:1 @29 head-tilt body-act lead)
+  - metaphor: 0/0 (refuse-by-default upheld)
+  - vibes: 20/20 (bias-only mode; register-shape applied; no token-bundle phrases imported as prose surface — Q9 fence held on stitcher-coined hyphens)
+  - exposition: 4/4 (2 preamble paragraphs + 2 em-dash-fold inline at @2 / @8)
+facets-dropped: 0
+facets-unrendered-remainder: 0
+reshow-count: 0
+reword-count: 0
+preamble-source: exposition-facet (not legacy-fallback)
+exposition entries-rendered: 4 (preamble=2 italic + 2 em-dash-fold first-mention)
+exposition refused-at-R2: 3 (scene-orient @1 / @8 / @23 all refused per fire-rule)
+exposition cross-episode-register-skipped: ~36 reader-resident terms not re-glossed (flea-bottom / hook / stitch-house-ward / kings-landing / red-keep / etc.)
+dialogue-source: not-applicable (no-speech-episode; not legacy-fallback)
+dialogue character-files-loaded: 0
+dialogue utterances-rendered: 0
+dialogue bare-speech-bones: 0
+dialogue unmoored-utterances: 0
+dialogue speaker-mismatches: 0
+
+## RECONCILE (URI-STITCH-ACCOUNTING-HONESTY)
+
+bones: rendered(31) + merged(4) + dropped(0) + rendered-illegible(0) = 35 ✓ (== authored bone count 35)
+facets: rendered(60) + dropped(0) + unrendered-remainder(0) = 60 ✓ (== cite-index facet-entry count 60)
+RECONCILE-BALANCE: PASS — both ledgers balance against their authored totals.
+unrendered-remainder rationale: 0 — vibes (20 entries) classified as rendered under bias-only mode per Phase 1 fork rendering convention; all other facet types directly surface in prose. No silent dropping.
+
+## Phase 9 — cold-read terminal gate (pending dispatch)
+
+next: dispatch ONE general-purpose agent to cold-read active-project/draft/b01-c05.md per Phase 9 Step 1 prompt
+parallel: dispatch /and-review staging b01-c05 reviewer routine (auditor + dramatist) per Phase 9 Step 3
+parallel: dispatch ONE auditor for Phase 9 Step 3.5 prose-rationale-mute audit
