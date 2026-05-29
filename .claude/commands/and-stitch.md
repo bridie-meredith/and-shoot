@@ -784,7 +784,7 @@ Fires after Phase 8 has written `draft/<book>-<chapter>.md` and before Phase 9 S
 - `active-project/theater/bones/<book>-<chapter>.md`
 - All facet files at `active-project/theater/facets/*-<book>-<chapter>.md`
 - `chapters[<slug>].{goal, dramatic_shape, scenes[].chunk, scenes[].substance_delta, scenes[].scene_conflict}`
-- `chapters[<slug>].chunk_cold_read` if present (PROP-0019 upstream gate's verdict)
+- `chapters[<slug>].chunk_cold_read` if present (PROP-0019 upstream gate's verdict) — INCLUDING the `voice_risk.voice_risk_carry` block when `verdict == PASS-CHUNK-VOICE-RISK` (arms Check 3 central-event-muffle; PROP-0019-A)
 - Exposition entries with their `renders-as` directives (read from `exposition-<slug>.md`)
 - `active-project/staff/stitcher/render-log-<book>-<chapter>.md` Phase 1 bone-walk (to trace bone→prose-span)
 
@@ -807,6 +807,8 @@ Reading the assembled prose with substance context, flag any span that would PLA
 - The **routing recommendation** (per-layer; see Routing below)
 
 Flag `COLD-READ-RISK @<bone>`. The FAIL #2 sexual-assault mechanism at b01-c05 @14 is the canonical instance of this finding class: substance-correct as enforcement (chunk-authorized), prose-vector misread-prone (generic-object bone + sensory-facet rendering invented connotation).
+
+**Check 3 addendum — central-event-muffle (PROP-0019-A; armed by upstream voice-risk).** If `chapters[<slug>].chunk_cold_read.verdict == PASS-CHUNK-VOICE-RISK`, read `voice_risk.voice_risk_carry` for the named central event + the abstraction-vocabulary that renders it. Then verify the **assembled** prose delivers that central event at cold-reader legibility — a first-time reader must register the event AS the event, not as one more line of process/instrument abstraction. If the event reaches the reader only through abstraction-vocabulary (the FAIL #1 muffling mechanism — "a beating I almost missed"), flag `COLD-READ-RISK central-event-muffled @<bone>` at HIGH confidence, routing to stitch-revise (de-abstract the event span — restore concrete actor-verb-object at the beat) or, if the bone itself lacks a concrete event verb, bones-revise. This is the downstream catch for the defect class the chunk-cold-read structurally cannot see; the upstream `PASS-CHUNK-VOICE-RISK` exists precisely to ensure this check fires.
 
 **Output.** Classified findings to `active-project/staff/reviews/coherence-<book>-<chapter>-<timestamp>.md`. Summary appended to render-log under `## Phase 8.5 — coherence review`.
 

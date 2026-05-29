@@ -200,6 +200,8 @@ Fires only at `chapter b<NN>c<MM>` invocation level. Skipped at series + book le
 
 **Why this exists.** The Phase 9 cold-read at `/and-stitch` is the cheapest discriminator of cold-reader-fit and the most expensive place to fire it — after bones + facets + stitch have all committed (~50 dispatches to remediate). A chunk-level cold-read here catches Class A (cause-chain gaps; missing connectives) and surfaces Class B (design-inherent CONTINUE risk) at the cheapest possible layer (~1 dispatch + 1 interactive question). The chunk-level read cannot substitute Phase 9 — chunks read differently than assembled prose — but it can drain most of what Phase 9 currently catches into a cheaper upstream layer. See `staff/admin/process-proposals.md § PROP-0019` for the b01-c05 three-FAIL trace evidence.
 
+**Validated scope (PROP-0019-A, 2026-05-29; supersedes the GAP-1 reach claim).** The b01-c05 validation showed this gate catches **chunk-design failures** — genuine cause-chain holes, missing connectives, CONTINUE=No-on-premise designs (Class A / Class B). It does **NOT** reliably catch *prose-execution* failures: a chunk whose central event is plainly stated but is later muffled by downstream facet/stitch abstraction. On that class the chunk-read banks a *forgiving* PASS, for two structural reasons — (a) readers extend **outline-charity** to opacity they would reject in finished prose, and (b) the muffling defect **does not exist yet** at chunk-read time. Step 2.5 (voice-density guard) + the `PASS-CHUNK-VOICE-RISK` verdict exist to keep that forgiving PASS from silently suppressing downstream scrutiny: they do not block here — they **arm** `/and-stitch` Phase 8.5 Check 3, the layer that can actually see the muffling.
+
 **Step 1 — Cold read (one general-purpose agent, uninformed).**
 
 Dispatch one `general-purpose` agent with the 6-question cold-read prompt adapted for a chunk-level read (identical structure to `/and-stitch` Phase 9 Step 1 but reading the chunk artifact, not the assembled draft):
@@ -215,20 +217,30 @@ Dispatch one `general-purpose` agent with the 6-question cold-read prompt adapte
 > 4. **PAYOFF** — Does the chapter end on something earned given what the chunk actually shows?
 > 5. **CONTINUE?** — Would you, having read this outline, want to read the chapter? Yes/no, one sentence why.
 > 6. **ONE-LINE SUMMARY** — Summarize what this chapter is, the way you would to a friend.
+> 7. **CONFUSIONS (no charity)** — List every point you could not follow — *including* ones you assume are deliberate, "will be explained later," or "mirror the narrator's own limited view." Do NOT extend an outline the benefit of the doubt. Then re-answer Q5 strictly: given the confusions you just listed, would you actually keep reading? (yes/no)
 >
-> Be blunt. Under 400 words.
+> Be blunt. Under 450 words.
 
 Persist agent output to `active-project/staff/reviews/chunk-coldread-<slug>-<timestamp>.md`.
 
 **Step 2 — Diff against intent + classify.**
 
-Compare cold-reader's criterion 6 summary against `chapters[<slug>].goal`. Semantic comparison (does the summary name the same event-and-payoff the goal names?):
+Compare cold-reader's criterion 6 summary against `chapters[<slug>].goal`. Semantic comparison (does the summary name the same event-and-payoff the goal names?). Use the **strict** CONTINUE from Q7 (the re-answer made after the no-charity confusion list), NOT the first-pass Q5 — the Q5/Q7 gap is itself the outline-charity tell.
 
 | Verdict | Trigger | Routing |
 |---------|---------|---------|
-| `PASS-CHUNK` | Summary maps to goal AND CONTINUE=yes | Proceed directly to Phase 6 |
+| `PASS-CHUNK` | Summary maps to goal AND CONTINUE(strict/Q7)=yes AND Q7 lists no load-bearing confusion | Run Step 2.5, then proceed to Phase 6 |
 | `CHUNK-CLASS-A` | Summary does NOT map to goal | Cause-chain / connective gap at chunk layer — route to Step 3 with revise default |
-| `CHUNK-CLASS-B` | Summary maps to goal AND CONTINUE=no | Design-inherent risk surfaced early — route to Step 3 with proceed-with-eyes-open default |
+| `CHUNK-CLASS-B` | Summary maps to goal AND CONTINUE(strict/Q7)=no | Design-inherent risk surfaced early — route to Step 3 with proceed-with-eyes-open default |
+
+**Step 2.5 — Voice-density downgrade (PROP-0019-A; dense-voice false-PASS guard). Runs only on a `PASS-CHUNK`.**
+
+A `PASS-CHUNK` is downgraded to `PASS-CHUNK-VOICE-RISK` if EITHER signal fires:
+
+- **Signal A — flagged-but-excused confusion.** Q7 lists one or more confusions the reader excused as "intentional" / "mirrors the POV" / "will be explained," AND those confusions touch the central event, its causality, or its payoff. (This is the outline-charity tell: the reader recovered the event and would continue, but only by forgiving opacity they themselves enumerated.)
+- **Signal B — abstraction-dense rendering.** The scene chunk carrying the chapter's central event renders that event primarily through domain-abstraction vocabulary — process/instrument nouns standing in for physical action (e.g. "the feed logs," "categorization," "operational texture," "substrate," "contact complete") — such that a downstream facet/stitch pass could muffle the event below cold-reader legibility. Assess the central-event scene chunk specifically; if the event reaches the reader only through abstraction-vocabulary rather than a concrete actor-verb-object, Signal B fires.
+
+`PASS-CHUNK-VOICE-RISK` **does not block** and **does not route to Step 3** — the chunk design is sound; the risk is downstream. It proceeds to Phase 6 exactly like `PASS-CHUNK`, but writes `voice_risk_carry` (Step 4), which arms `/and-stitch` Phase 8.5 Check 3 to verify the central event is not abstraction-muffled in the assembled prose (the FAIL #1 mechanism). This is the cost-discipline fix: the chunk layer cannot SEE the downstream defect, so rather than falsely blocking or falsely clean-passing, it FLAGS the chapter as abstraction-risk-bearing for the layer that can see it.
 
 **Step 3 — Admin user-proxy disposition (non-PASS only).**
 
@@ -249,15 +261,23 @@ Write to `chapters[<slug>].chunk_cold_read`:
 ```yaml
 chunk_cold_read:
   reviewed_at: <iso>
-  verdict: PASS-CHUNK | CHUNK-CLASS-A | CHUNK-CLASS-B | SHIPPED-WITH-RISK-RECORDED
+  verdict: PASS-CHUNK | PASS-CHUNK-VOICE-RISK | CHUNK-CLASS-A | CHUNK-CLASS-B | SHIPPED-WITH-RISK-RECORDED
   classification: A | B | n/a
   recovered_summary: <criterion 6>
   intended_goal: <chapters[<slug>].goal>
-  continue: yes | no
+  continue: yes | no              # first-pass Q5
+  continue_strict: yes | no       # Q7 re-answer (post no-charity confusion list); AUTHORITATIVE for classification
   report_path: active-project/staff/reviews/chunk-coldread-<slug>-<timestamp>.md
-  disposition: R | P | S
+  disposition: R | P | S | n/a    # n/a for PASS-CHUNK and PASS-CHUNK-VOICE-RISK (no Step 3)
   dispositioned_at: <iso>
   dispositioned_by: admin | principal
+  voice_risk:                     # PROP-0019-A; present whenever verdict == PASS-CHUNK-VOICE-RISK
+    triggered: <true|false>
+    signals: [<A and/or B>]
+    central_event: <the central event named in plain actor-verb-object terms>
+    voice_risk_carry: |
+      <if PASS-CHUNK-VOICE-RISK: the central event + the abstraction-vocabulary that renders it,
+       named for /and-stitch Phase 8.5 Check 3 central-event-muffle verification>
   cold_read_risk_carry: |
     <if (P): comma-list of cold-read findings that the principal authorized as known-risk
      for the chapter, surfaced to /and-stitch Phase 9 routing as already-dispositioned>
