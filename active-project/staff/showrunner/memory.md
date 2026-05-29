@@ -3586,17 +3586,21 @@ books:
         # FACETS NOT STALE: the @13 verb-only recast preserved all flat_ids and all facet citation anchors. @13 had ZERO facet citations in canonical proto-lines post-cycle-2 (sensory:2 was moved to @14; no other facet anchors at @13). The semantic content of all 58 facet entries is invariant to the pin/strike verb swap (entries reference @13 as the violence-event bone; the bone identity is preserved). facets_stale_since intentionally NOT set; /and-facets re-run is NOT required for this recast.
         cold_read:
           read_at: 2026-05-28T00:00:00Z
-          verdict: FAIL  # SECOND consecutive cold-read FAIL on c05 (prior pre-revise: event-recovery failure; this post-revise: register-fatigue / continue=NO)
-          recovered_summary: "A surveillance-bug-using narrator watches a courier get assaulted in an alley near the Red Keep, files the report up the chain they're complicit with, and that evening their instrument refuses to re-run the route cleanly."
-          report_path: active-project/staff/reviews/coldread-b01-c05-2026-05-28-revise.md
-          staging_signals: 6   # /and-review staging post-stitch: 1 EXPAND / 2 GROUND / 2 STAGE / 1 NEEDS-BEAT
-          staging_report_path: active-project/staff/reviews/staging-b01-c05-2026-05-28.md
+          verdict: FAIL  # THIRD consecutive cold-read FAIL on c05 (re-stitch #3 post /and-write revise @13 strike). Sexual-assault read REMEDIATED ✓ (the @13+@14 fix worked). NEW failure axes: stranger-violence + 'feed' mechanics unexplained + abstract payoff + 'stakes-shaped not stakes'. Central event still recovered.
+          recovered_summary: "A surveillance-capable narrator watches a courier she's been tracking get beaten by three men, files a report, and that evening discovers her own system won't stop flagging the route she set up."
+          report_path: active-project/staff/reviews/coldread-b01-c05-2026-05-28-restitch3.md
+          report_path_history:
+            - active-project/staff/reviews/coldread-b01-c05-2026-05-28.md  # FAIL #1 pre-revise
+            - active-project/staff/reviews/coldread-b01-c05-2026-05-28-revise.md  # FAIL #2 post revise --from-signals (sexual-assault read)
+            - active-project/staff/reviews/coldread-b01-c05-2026-05-28-restitch3.md  # FAIL #3 post @13 strike recast (this)
+          staging_signals: 4   # /and-review staging re-stitch #3: 3 GROUND + 1 STAGE; cluster pattern 'abstract apparatus-vocabulary at structural peaks' persists at @14/@28/@33/@31 — no spec-threshold cluster trigger fires (not same-pattern≥5, not adjacent-in-peak-zone≥3, not on-axis-move-bones≥3)
+          staging_report_path: active-project/staff/reviews/staging-b01-c05-2026-05-28-restitch3.md
           signal_clusters: []  # per URI-STITCH-SIGNAL-CLUSTER: staging cluster of 3 (GROUND @14 / @28 / @33) but doesn't trigger any of {same-pattern≥5, adjacent-in-peak-zone≥3, on-axis-move-bones≥3} — 3 findings are at peak/peak-shadow but NOT consecutive flat-ids; all on held/chatter bones (no axis_moves). No cluster fires per spec thresholds.
           prose_rationale_audit:
             verdict: CLEAN
             findings: 0
-            report_path: active-project/staff/reviews/prose-rationale-audit-b01-c05-2026-05-28.md
-            note: "All 8 candidate bones (with concrete-physical rationale element) stage ≥1 concrete-physical token in rendered prose span. Recognition peak @29 stages both body-act + cognitive recognition. This audit alone would PASS; FAIL is driven by cold-read CONTINUE=NO, not by prose-rationale-mute."
+            report_path: active-project/staff/reviews/prose-rationale-audit-b01-c05-2026-05-28-restitch3.md
+            note: "19 candidate bones scanned; 0 PROSE-RATIONALE-MUTE findings. @13 strike and @14 enforcement-beating remediation both PASS at prose layer. This audit alone would PASS; FAIL #3 is driven by cold-read CONTINUE=NO on register/content concerns not addressable at bone or stitch layer (stranger-violence; feed-mechanics never explained; abstract payoff; stakes-shaped not stakes)."
           continue: no
           stale_since: null
           # Phase 9 cold-read FAIL: recovered events ✓ (surveillance + courier attack + evening replay refusal); recovered central event ✓ (feed stops being neutral); BUT cold-reader answered CONTINUE=NO ("feed/count/architecture register is exhausting and I'm not sure what happened").
