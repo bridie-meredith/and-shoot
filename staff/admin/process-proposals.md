@@ -2516,3 +2516,77 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+### PROP-0019 — VALIDATION ADDENDUM (2026-05-29)
+
+```yaml
+addendum_to: PROP-0019
+kind: validation-findings
+validated_at: 2026-05-29T00:00:00Z
+validated_by: main session (claude/intelligent-gauss-qacpV)
+protocol: archive/c05-three-fail-trace/NEXT-SESSION-PROMPT.md
+method: ran both new gates against the c05 three-FAIL evidence archive (1 chunk-cold-read + 2 coherence reviews, 3 dispatches)
+reports:
+  synthesis: active-project/staff/reviews/prop-0019-validation-synthesis.md
+  test_1_chunk_coldread: active-project/staff/reviews/prop-0019-validation-test-1.md
+  test_2_coherence_fail2: active-project/staff/reviews/prop-0019-validation-test-2.md
+  test_3_coherence_shipped: active-project/staff/reviews/prop-0019-validation-test-3.md
+  raw_agent_outputs:
+    - active-project/staff/reviews/chunk-coldread-b01c05-validation.md
+    - active-project/staff/reviews/coherence-b01c05-fail2-validation.md
+    - active-project/staff/reviews/coherence-b01c05-shipped-validation.md
+
+verdict_phase_8_5: VALIDATED   # the /and-stitch Phase 8.5 leg
+verdict_phase_5_5: NOT-VALIDATED-AGAINST-THIS-TRACE   # the /and-substance Phase 5.5 leg
+
+findings:
+  - id: VF-1
+    leg: Phase 8.5 (assembled-prose coherence)
+    result: STRONG-POSITIVE
+    detail: |
+      On the FAIL #2 draft, Phase 8.5 flagged COLD-READ-RISK @14 at HIGH confidence, cited both the
+      misread vector (sexual assault) and the substance-correct reading (chunk-authorized enforcement;
+      not-naming = feed instrument-failure), and routed PRIMARY to bones-revise of @13 (pin -> strike) —
+      the exact fix DEC-0042 applied — plus secondary stitch-revise of @14. Catch one phase upstream of
+      Phase 9 at ~$2 vs the ~$30 revise cycle actually spent. On the SHIPPED draft it returned PASS:
+      confirmed @14 risk closed AND correctly classified all four FAIL #3 design-inherent concerns as
+      ADVISORY (not WEAVE-GAPs), firing zero spurious revises. Gate neither under- nor over-fires.
+  - id: VF-2
+    leg: Phase 5.5 (chunk cold-read)
+    result: NEGATIVE-AGAINST-THIS-TRACE
+    detail: |
+      The chunk-reader RECOVERED the central event, mapped it to chapters[b01c05].goal, called causality
+      "clean", and returned CONTINUE=yes -> PASS-CHUNK. A PASS fires no chunk-revise and no Step-3
+      disposition. Therefore Phase 5.5 would have (a) NOT pre-empted FAIL #1 and (b) NOT surfaced FAIL #3's
+      Class B risk for early principal disposition. This contradicts PROP-0019's GAP-1 rationale lines
+      2337-2348, which credit the chunk-cold-read with catching FAIL #1 and surfacing FAIL #3.
+    root_cause: |
+      Two compounding structural biases make the chunk-cold-read a false-negative for c05's failure class:
+      (1) OUTLINE-CHARITY — readers forgive opacity in an outline ("reads intentional") that they read as
+          evasion in finished prose. The chunk-reader and the Phase-9 readers saw the SAME unexplained
+          beating and unexplained Sera; the chunk-reader excused them, the prose-readers did not.
+      (2) DOWNSTREAM-DEFECT — c05's FAILs were prose-execution failures (facet + stitch abstraction muffling
+          a plainly-stated chunk event). That defect does not exist at chunk-read time, so the chunk read
+          cannot see it. The proposal's own caveat ("chunks read different than assembled prose") cuts
+          harder than assumed: for voice-driven dense-abstraction chapters, chunk-read and prose-read can
+          land on OPPOSITE sides of the CONTINUE line.
+    not_a_kill: |
+      Phase 5.5 may still earn its keep on a DIFFERENT failure class — chunks with a genuine cause-chain
+      hole or a CONTINUE=No-on-premise design. c05 is not that class (sound chunk, over-abstracted prose).
+      This validation shows c05 was the WRONG evidence base to prove the chunk leg, not that the chunk leg
+      is worthless.
+
+recommendation:
+  phase_8_5: KEEP — validated; closes the FAIL #2-class mechanism; net-cost-positive.
+  phase_5_5: KEEP-BUT-RE-SCOPE — author PROP-0019-A to (a) correct the GAP-1 claim (FAIL #1/#3 are NOT
+    chunk-catchable for this trace), (b) document the outline-charity + downstream-defect limitation, and
+    (c) re-scope Phase 5.5 explicitly to chunk-design-hole / CONTINUE-on-premise detection, OR pin a fresh
+    evidence base (a chapter that failed at the chunk-design level, not the prose-execution level) to validate it.
+  triage_note: |
+    PROP-0019 should NOT be triaged as a single accept/reject. Split: accept Phase 8.5 leg on this evidence;
+    hold Phase 5.5 leg pending PROP-0019-A re-scope or fresh evidence. Both gates are already WIRED into the
+    command bodies (commit 003f830); this addendum bears on whether to KEEP-AS-WIRED, re-scope the Phase 5.5
+    classification logic, or gate Phase 5.5 behind a chapter_class / voice-density predicate so it does not
+    bank a false PASS on dense-voice chapters.
+status: open-pending-principal-triage
+```
