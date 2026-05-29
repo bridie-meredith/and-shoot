@@ -279,16 +279,46 @@ books:
           axes_moved: [...]
           density_measured: <ratio>
           felt_verdict: SUBSTANCE-FELT | SUBSTANCE-FLAT-<axis> | SUBSTANCE-SUSPECT-cheap-gain-<axis>
+        chunk_cold_read:                   # written by /and-substance chapter Phase 5.5 (PROP-0019 / PROP-0019-A); chunk-level cold-read gate
+          reviewed_at: <iso-timestamp>
+          verdict: PASS-CHUNK | PASS-CHUNK-VOICE-RISK | CHUNK-CLASS-A | CHUNK-CLASS-B | SHIPPED-WITH-RISK-RECORDED
+          classification: A | B | n/a
+          recovered_summary: <cold-reader criterion-6 summary>
+          intended_goal: <chapters[].goal at review time>
+          continue: yes | no               # first-pass Q5
+          continue_strict: yes | no         # Q7 re-answer (post no-charity confusion list); AUTHORITATIVE for classification
+          report_path: staff/reviews/chunk-coldread-<chapter>-<timestamp>.md
+          disposition: R | P | S | n/a      # n/a for PASS-CHUNK and PASS-CHUNK-VOICE-RISK
+          dispositioned_at: <iso-timestamp>
+          dispositioned_by: admin | principal
+          voice_risk:                        # PROP-0019-A; present whenever verdict == PASS-CHUNK-VOICE-RISK
+            triggered: <true|false>
+            signals: [<A and/or B>]
+            central_event: <central event in plain actor-verb-object terms>
+            voice_risk_carry: <central event + abstraction-vocabulary; arms /and-stitch Phase 8.5 central-event-muffle>
+          cold_read_risk_carry: <if (P): comma-list of principal-authorized known-risk findings>
         bones_review:                      # written by /and-review bones <chapter>; /and-facets Phase 0 HARD-checks presence + freshness
           reviewed_at: <iso-timestamp>
           report_path: staff/reviews/bones-<chapter>-<timestamp>.md
           verdict: PASS | PASS-WITH-NOTES | FAIL
+          follow_check: PASS | PASS-WITH-NOTES | FOLLOW-FAIL   # PROP-0020 followability pre-check; FOLLOW-FAIL HARD-aborts /and-facets Phase 0 (distinct from advisory verdict:FAIL)
           bones_file_mtime_at_review: <iso-timestamp>   # bones-file mtime when the review ran; staleness check against current mtime
           stale_since: <iso-timestamp> | null
+        context_followability:             # written by /and-facets Phase 2.5/4.5 (PROP-0020 context-weave + PROP-0022 readability twin)
+          completeness_verdict: FOLLOWABLE | GLARING-HOLE
+          readability_verdict: ALIVE | AIRLESS-HOLE          # PROP-0022 second axis
+          report_path: staff/reviews/context-follow-r2-<chapter>-<timestamp>.md
+          reviewed_at: <iso-timestamp>
+          context_ledger_open: <N>          # open CONTEXT-REQUIRED lines in context-ledger-<chapter>.md
+          grounding_ledger_open: <N>        # open GROUNDING-REQUIRED lines in grounding-ledger-<chapter>.md (PROP-0022)
+          unresolved: [<gap-id>, ...]       # Phase 4.6 WARN carry (context-debt that survived conditional R3)
         cold_read:                         # written by /and-stitch Phase 9 cold-read terminal gate
           read_at: <iso-timestamp>
           verdict: PASS | PASS-WITH-DEPTH-PASS-REQUIRED | FAIL
           recovered_summary: <one-line cold reader's chapter summary>
+          readability_axis:                # PROP-0022 separated scoring; PASS requires READABLE (completeness alone is not enough)
+            verdict: READABLE | AIRLESS
+            basis: <one line — person-to-follow / breathes, or apparatus-reporting; from cold-read answers + Phase 4 VOICE-APPARATUS-DEFAULT/EMBODIMENT-BLOCKED counts>
           report_path: staff/reviews/coldread-<chapter>-<timestamp>.md
           staging_signals: <N>             # count of EXPAND/GROUND/STAGE/NEEDS-BEAT findings from the additive editorial pass
           staging_report_path: staff/reviews/staging-<chapter>-<timestamp>.md
