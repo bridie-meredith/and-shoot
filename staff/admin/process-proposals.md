@@ -2294,3 +2294,225 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+## PROP-0019
+
+```yaml
+id: PROP-0019
+created_at: 2026-05-29T00:00:00Z
+created_by: principal (via main session, RCA conversation)
+trigger:
+  reason: rca-followup
+  source_report: active-project/staff/reviews/coldread-b01-c05-2026-05-28-restitch3.md
+  source_verdict: SHIPPED-WITH-CAVEATS (b01-c05 three-FAIL trace; PROP-0018 already proposed)
+  gate_path: .claude/commands/and-stitch.md#phase-9
+target:
+  type: command
+  path: [.claude/commands/and-substance.md, .claude/commands/and-stitch.md]
+  section: "and-substance Phase 5.5 (new); and-stitch Phase 8.5 (new)"
+change_type: add
+rationale: |
+  Root-cause analysis of the b01-c05 three-FAIL trace identified two structural gaps that PROP-0018
+  (Class A/B disposition discriminator) does not address:
+
+    GAP-1: No upstream cold-read proxy. The Phase 9 cold-read is the cheapest discriminator of
+    cold-reader-fit and the MOST EXPENSIVE place to fire it — after bones + facets + stitch have
+    all committed. A chunk-level cold-read at /and-substance chapter would catch Class A
+    (cause-chain gaps; missing connectives) and surface Class B (design-inherent risk) at the
+    cheapest possible layer (~1 dispatch vs ~50 to remediate post-stitch). The chunk-level read
+    cannot substitute Phase 9 — chunks read different than assembled prose — but it can drain
+    most of what Phase 9 currently catches into a cheaper upstream layer.
+
+    GAP-2: No assembled-prose review prior to Phase 9. Every reviewer prior to Phase 9 sees one
+    of: (a) chunks + bones + facets (audience, dramatist, auditor, /and-review bones), or
+    (b) per-scene fork-window prose (stitcher forks, Phase 7 sweep). NONE read the assembled
+    preamble + body + facet-fold cohesion. The cold-reader at Phase 9 is the first and only
+    fork that reads the assembled draft end-to-end. The FAIL #2 sexual-assault mechanism
+    ("below the register I would have called human" at @14) was a stitch-layer rendering
+    invention licensed by a generic-object bone + sensory-facet at the same anchor; no upstream
+    fork saw the assembled prose with substance context to flag it. An informed reviewer reading
+    draft + bones + facets + chunks would have flagged the COLD-READ-RISK before Phase 9 fired.
+
+  The c05 three-FAIL trace specifically:
+    - FAIL #1 (chunk-level cold-read would have caught): cause-chain gaps in scene-B + scene-C
+      (Jarvis-routing destination, courier-recurrence-as-apparatus, recognition cause-chain).
+      All bone-realizable; a cold-read on the chunk would have surfaced confusion. Catches at
+      $1 not $50.
+    - FAIL #2 (assembled-prose coherence would have caught): "below the register I would have
+      called human" phrasing. The substance-aware informed reviewer reading the assembled draft
+      would flag "this @14 rendering could read as sexual assault to a cold reader despite
+      chunk authorizing enforcement." Stitch-revise fix (~2 dispatches) vs full revise cycle (~30).
+    - FAIL #3 (chunk-level cold-read would have surfaced): design-inherent risk on substance
+      contract approval. Principal disposition before bones commit instead of three revise cycles.
+      Bundles with PROP-0018's Class B branch — chunk-level Class B disposition is the same logic
+      applied upstream.
+
+  This proposal is complementary to PROP-0018, not substitutive:
+    - PROP-0018 adds Class A/B discrimination at Phase 9 (terminal-gate disposition rules).
+    - PROP-0019 adds upstream gates that drain most of what reaches Phase 9. PROP-0018 still
+      governs the residual Phase 9 FAILs that survive upstream catches.
+
+evidence_refs:
+  - "active-project/staff/reviews/coldread-b01-c05-2026-05-28.md — FAIL #1 (Class A)"
+  - "active-project/staff/reviews/coldread-b01-c05-2026-05-28-revise.md — FAIL #2 (mixed; sexual-assault mechanism)"
+  - "active-project/staff/reviews/coldread-b01-c05-2026-05-28-restitch3.md — FAIL #3 (Class B design-inherent)"
+  - "staff/admin/decisions.md — DEC-0041/0042/0043/0044 (three-revise-cycle disposition trail)"
+  - ".claude/commands/and-substance.md Phase 5 — current chunk-quality review (substance-aware reviewers only; no cold-read proxy)"
+  - ".claude/commands/and-stitch.md Phase 9 — current terminal gate (only assembled-prose read in chain)"
+  - "RCA conversation (this session) — gap identification: audience reviewers see chunks/bones/facets; cold-reader sees assembled prose; no fork bridges the artifacts"
+
+recurrence_count: 1  # first proposal of this gate-architecture class
+status: open
+proposed_diff: |
+  TWO additive changes:
+
+  ---
+
+  ### Change 1: .claude/commands/and-substance.md — insert Phase 5.5 (chapter level only)
+
+  After Phase 5 (Chunk-quality review), before Phase 6 (Persist), insert:
+
+  ### Phase 5.5 — Chunk cold-read gate (chapter level only)
+
+  Fires only at `chapter b<NN>c<MM>` invocation level. Skipped at series + book levels (which
+  do not produce reader-facing chunks). Skipped if `chapters[<slug>].chapter_class: frame-coda`
+  (Phase 6 substance bone-gate exemption is symmetric here).
+
+  **Step 1 — Cold read (one general-purpose agent, uninformed).**
+
+  Dispatch one general-purpose agent with the same 6-question cold-read prompt as
+  /and-stitch Phase 9 Step 1, modified to read the chunk:
+
+    > You are a first-time reader. You have been handed one chapter outline of a novel...
+    > Read ONLY this file: active-project/staff/showrunner/b<NN>c<MM>-draft.md.
+    > Answer the 6 questions...
+
+  The agent reads ONLY the chapter chunk + scene chunks. NOT bones (no bones yet); NOT facets
+  (no facets yet); NOT prior chapter chunks; NOT the substance contract.
+
+  Persist agent output to `staff/reviews/chunk-coldread-<slug>-<timestamp>.md`.
+
+  **Step 2 — Diff against intent + classify.**
+
+  Compare cold-reader's criterion 6 summary against the chunk-author-declared `chapters[<slug>].goal`.
+
+  - Summary maps to goal AND CONTINUE=yes → PASS-CHUNK. Proceed to Phase 6.
+  - Summary maps to goal AND CONTINUE=no → CHUNK-CLASS-B (design-inherent risk surfaced at
+    cheapest layer). Route to Step 3 admin user-proxy disposition.
+  - Summary does NOT map to goal → CHUNK-CLASS-A (chunk has cause-chain / connective gaps).
+    Route to Step 3 with revise-recommendation default.
+
+  **Step 3 — Admin user-proxy disposition (non-PASS only).**
+
+  Dispatch admin in user-proxy mode (per CLAUDE.md Rule 13) with:
+    - Chunk text + scene chunks
+    - Cold-reader's 6 answers
+    - Classification (Class A / Class B)
+    - Three options:
+        (R) Revise chunk → /and-substance chapter <slug> revise. Cheapest fix at this layer.
+        (P) Proceed with eyes open → record disposition; advance to Phase 6 with cold-read risk
+            documented on chapters[<slug>].chunk_cold_read.
+        (S) Substance-contract revision → /and-substance chapter <slug> redo with refined contract.
+
+  Admin returns disposition; pipeline applies it. Class A admin default: (R). Class B admin
+  default: (P) given substance contract was approved at /and-substance series.
+
+  **Step 4 — Persist + memory.**
+
+  Write to `chapters[<slug>].chunk_cold_read`:
+    verdict: PASS-CHUNK | CHUNK-CLASS-A | CHUNK-CLASS-B | SHIPPED-WITH-RISK-RECORDED
+    classification: A | B | n/a
+    recovered_summary: <criterion 6>
+    intended_goal: <chapters[<slug>].goal>
+    report_path: staff/reviews/chunk-coldread-<slug>-<timestamp>.md
+    disposition: <R | P | S>
+    dispositioned_at: <iso>
+    dispositioned_by: admin | principal
+
+  Phase 9 (downstream /and-stitch) reads chapters[<slug>].chunk_cold_read.verdict at its
+  Step 4 routing — a chunk-level CHUNK-CLASS-B that was dispositioned (P) carries forward to
+  Phase 9 as "design-inherent already approved"; a recurring Phase 9 FAIL Class B on such a
+  chapter ships terminal without re-asking principal (the chunk-level disposition already
+  authorized the cold-read risk).
+
+  ---
+
+  ### Change 2: .claude/commands/and-stitch.md — insert Phase 8.5
+
+  After Phase 8 (Finalize), before Phase 9 (Cold-read terminal gate), insert:
+
+  ## Phase 8.5 — Assembled-prose coherence review (URI-STITCH-COHERENCE; advisory + routing-bearing)
+
+  Fires after Phase 8 has written `draft/<book>-<chapter>.md` and BEFORE Phase 9 cold-read.
+  Single dispatch. Substance-aware reviewer with full graph context, reading the assembled
+  prose end-to-end. Catches what no upstream reviewer can: facet-fold cohesion and prose-layer
+  cold-read-risk at the cheapest pre-terminal-gate layer.
+
+  **Why this exists.** Every reviewer prior to this phase saw chunks + bones + facets (substance
+  reviewers) or per-scene fork-window prose (stitch forks). None read the assembled preamble +
+  body + facet-fold cohesion. The Phase 9 cold-reader is the FIRST AND ONLY fork to read the
+  assembled draft, and at the most expensive recovery point. Phase 8.5 inserts a substance-aware
+  reading of the same artifact one phase earlier.
+
+  **Dispatch:** one general-purpose agent. Inputs (READ-ONLY):
+    - `active-project/draft/<book>-<chapter>.md` (assembled)
+    - `active-project/theater/bones/<book>-<chapter>.md`
+    - `active-project/theater/facets/*-<book>-<chapter>.md` (all facets)
+    - `chapters[<slug>].{goal, dramatic_shape, scenes[].chunk, scenes[].substance_delta, scenes[].scene_conflict}`
+    - `chapters[<slug>].chunk_cold_read` (from PROP-0019 Change 1 if present)
+    - Exposition entries with their `renders-as` directives
+
+  **Mandate (three checks, in order):**
+
+    1. **Weave check.** For each scene-window of the assembled prose, do the facet-folds tie
+       together as one fabric? Or are exposition + bone-rendering + sensory + NI + memory
+       arriving as discrete add-ons? Flag `WEAVE-GAP @<bone>` for visible seams.
+
+    2. **Followability check.** Assuming a reader has read prior chapters in the series, can
+       they follow this chapter's narrative arc? Where does a causal hand-off between facets
+       fail (preamble names X; body never reconnects to X)? Flag `FOLLOWABILITY-BREAK @<bone>`.
+
+    3. **Cold-read-risk surface.** Reading the assembled prose with substance context, flag
+       any span that would PLAUSIBLY misread to a first-time cold-reader despite being
+       substance-correct. The reviewer cites the misread vector + the substance-correct reading
+       + the routing recommendation. Flag `COLD-READ-RISK @<bone>`.
+
+  **Output:** classified findings to `staff/reviews/coherence-<slug>-<timestamp>.md` + summary
+  to render-log under `## Phase 8.5 — coherence review`.
+
+  **Routing:**
+    - 0 findings → PASS. Proceed to Phase 9.
+    - WEAVE-GAP / FOLLOWABILITY-BREAK findings → SOFT-BLOCK. Route per finding:
+        * stitch-layer (per-scene re-render): re-dispatch the offending scene's Phase 1 fork
+          with the finding cited; re-run Phases 2-8 on the changed scene only.
+        * exposition-layer (gloss missing or stale): re-dispatch exposition-author at /and-facets
+          for the named entry; re-run Phase 0.6 preamble assembly.
+        * bones-layer (rationale-named element missing from prose): route to /and-write revise
+          on the named bone.
+    - COLD-READ-RISK findings → ADVISORY by default; SOFT-BLOCK if the finding cites a
+      high-misread-confidence vector (reviewer signals "would-likely-fire-at-Phase-9"). On
+      SOFT-BLOCK: route to the same per-layer routing above before Phase 9.
+
+  **Memory writes:**
+    chapters[<slug>].coherence_review:
+      reviewed_at: <iso>
+      verdict: PASS | SOFT-BLOCK-RESOLVED | SOFT-BLOCK-UNRESOLVED-PROCEED-ANYWAY
+      findings: [...]
+      report_path: staff/reviews/coherence-<slug>-<timestamp>.md
+
+  **Cap:** Phase 8.5 may trigger at most ONE round of stitch/exposition/bones revise before
+  Phase 9 fires regardless. The gate's purpose is to drain pre-Phase-9 catches; it is not a
+  loop. Unresolved findings carry forward to Phase 9 + render-log; admin process-critic fires
+  on Phase 9.5 with the coherence-review report as additional context.
+
+  ---
+
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
