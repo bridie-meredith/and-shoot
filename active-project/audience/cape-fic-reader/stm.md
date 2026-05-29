@@ -459,3 +459,52 @@ None. The four new bones (A1, B1, B2, C1) are all apparatus or cause-chain event
 
 ### Chapter-level integrated verdict
 SUBSTANCE-FELT — all three scenes pass integrated review. The 4 new bones (A1, B1, B2, C1) add mechanism and cause-chain specificity without breaking the held-axis discipline in s01 or s02, and C1 makes the s03 axis-move read as feed-apparatus response rather than narrator-choice. The chapter goal ("color arrives before Taylor names it," "courier-face plant") is better served by the integrated chapter than by the prior 31-bone version. No SUBSTANCE-FLAT findings. No SUBSTANCE-SUSPECT-cheap-gain findings.
+
+## b01c05 revise (recast @13 strike) — Phase 6 bone-gate
+
+---
+reviewer: cape-fic-reader
+chapter: b01c05
+phase: write-bone-gate
+date: 2026-05-29
+scenes_reviewed: [b01c05s01, b01c05s02, b01c05s03]
+revise_pass: true
+revise_scope: "@13 verb recast pin→strike (s02 only)"
+---
+
+## scene b01c05s01
+verdict: SUBSTANCE-FELT (re-attested from prior revise; s01 unchanged)
+
+s01 is untouched by the @13 recast. The nine bones (flat_ids 1-7 post-revise-from-signals renumber) are identical to those passed in the prior cycle. Re-attestation confirmed: no axis was in motion; held axes (political_register-prot, capability, moral_framework, relational_anchor_status) are all load-bearing dormancy enacted through physical acts; the discipline holds against named opposition (court-tier content's novel weight); no fatigue triggers; no established limits bypassed. Prior verdict carries.
+
+## scene b01c05s02
+verdict: SUBSTANCE-FELT
+
+The @13 recast from "pin" to "strike" does the one thing it needs to do and nothing more.
+
+**Violence-type disambiguation.** The chunk authority for s02 is explicit: "enforcement, not robbery"; "controlled containment"; the body-language "reads as enforcement, coordinated, directed at a specific person for a specific reason." Prior @13 — "the three figures pin the courier" — described a containment act, which the cold-read could interpret as sexual violence (the "below the register I would have called human" sound arrived immediately after, and "pin" left the violence-type open to the most alarming inference). "Strike" is a concrete force-application verb. It closes the inference gap in a single word: this is a beating, faction-enforcement. As a capefic reader I track enforcement-types for faction-politics legibility — "strike" gives me the board-state (faction enforcement = beating, not restraint-for-other-purposes) before the gap-instrument fires at @14. That ordering is correct: enforcement-type established at @13 → feed encounters something it cannot categorize at @14. The prior ordering worked structurally but left the reader in ambiguity about what the uncategorizable sound was a response to. Now it is unambiguous.
+
+**Cause-chain @13 → @14 after the recast.** Prior chain: pin → alley returns sound. Current chain: strike → alley returns sound. Does the causal logic hold? Yes — and it tightens. The gap-instrument at @14 ("the side-alley returns the sound") is the feed receiving the acoustic consequence of force-application. A strike produces sound more directly than a pin; the gap-instrument was always the sound-of-violence-that-the-feed-cannot-categorize, and "strike" is more precisely the antecedent for that acoustic event than "pin" was. The sound is not ambiguous in its cause anymore: the three figures struck the courier, the alley returned the sound, the feed has no field for that. The @13 → @14 cause-chain is now tighter, not looser.
+
+**Gap-instrument triple @14-@15-@16 integrity.** The triple is @14 (side-alley returns the sound), @15 (courier raises the spine), @16 (courier finds the feet). @13 is a peak-shadow-bone feeding into this triple; the triple itself is unchanged. B1 at @15 (the revise-from-signals addition) still disambiguates @16's feet-found as standing recovery rather than kneeling recovery. The spine-raise → feet-found sequence reads correctly regardless of whether @13 is "pin" or "strike" — B1 was added to close the up-or-down ambiguity, which remains closed. No seam opened.
+
+**moral_framework hold.** The scene_conflict's protagonist_force is "factual routing discipline." The recast @13 is a HELD bone (no axis moves; axes_held: moral_framework). Changing "pin" to "strike" does not change the axis classification: both are force-application acts enacted by opposing figures; both are observed through the feed; both are inside the licensed exception (Taylor routes enforcement as movement-pattern regardless of the specific physical form the enforcement takes). The moral_framework holds at crack-not-breach whether the act is containment or force-application. No SUBSTANCE-FLAT risk; the held-axis discipline is not disturbed by a verb swap in the peak-shadow-bone.
+
+**Enforcement-not-robbery character read.** The prior bones file relied on @11-@12 (enter side-alley + close alley-mouth = exit-blocking geometry) to establish enforcement-geometry before Taylor's categorization layer runs. The recast @13 adds a second signal: exit-blocking (geometry) + strike (force-application) together make the enforcement-read more legible than geometry alone. Reader sees enforcement confirmed at two levels — approach geometry AND force-type — before @17 files it as a movement-pattern. The "enforcement, not robbery" character read is more directly available to the reader now without Taylor having to supply inferential logic the reader has to follow.
+
+**Soft seam flagged by DEC-0042.** The showrunner record flags that "held against stone" physical texture, previously entailed by @13's "pin," is now only available via @11-@12 geometry + chunk text + oc-rushwick card. From this reader's perspective: the "held against stone" texture is not load-bearing for the substance verdict — it is a sensory-facet concern. The containment geometry is still established by @11 (enter side-alley) + @12 (close alley-mouth). What "pin" added was a specific body-contact image; "strike" replaces it with a force-application image. The trade is correct for violence-type disambiguation. The sensory/NI facet should carry "held against stone" at @13-@14 citation per the DEC-0042 soft seam note — that is a facets-layer responsibility, not a bones-layer blocking finding. No SUBSTANCE-FLAT or SUBSTANCE-SUSPECT condition exists at @13 post-recast.
+
+**Threshold Discipline fires.** None. No established limits bypassed. No unmotivated knowledge introduced — "strike" is an observable feed-event, not an inference Taylor supplies from outside the feed's physical return. No filler — @13 is a peak-shadow-bone at the s02 peak. No canon violations. The enforcement-type specificity actually satisfies the capefic hot-button (information asymmetry — reader now has the enforcement-type before Taylor's categorization layer names it). No fatigue triggers.
+
+## scene b01c05s03
+verdict: SUBSTANCE-FELT (re-attested from prior revise; s03 unchanged)
+
+s03 is untouched by the @13 recast. The bones at flat_ids 23-35 (post-revise-from-signals renumber) are identical to those passed in the prior cycle. The +1.5 political_register-prot axis-move at @29 arrives through the same apparatus sequence (C1 @28 → @29 cessation → @32-@35 foreclosure quartet). The @13 recast in s02 does not retroactively destabilize s03's substance: the evening-replay mechanism in s03 processes the provisioner-train's institutional-gait color, not the enforcement incident's physical details; the color accumulation is apparatus-level and was present in the prior pass. The cf-d10 thread confirmation at @27 and @31 is intact. No axis was disturbed; no cost unpriced; no fatigue triggers. Prior verdict carries.
+
+---
+
+**Aggregate chapter verdict: SUBSTANCE-FELT**
+
+The @13 verb swap (pin → strike) is a contained disambiguation that tightens the violence-type read without disturbing the substance architecture. s01 and s03 re-attest from prior cycle without qualification. s02 passes on the recast's specific merits: enforcement-type now legible before Taylor's categorization layer runs, cause-chain @13 → @14 tighter not looser, gap-instrument triple @14-@15-@16 intact, moral_framework held at correct classification (HELD, not moving), no cheap gain on any axis, no established limits bypassed. The DEC-0042 soft seam ("held against stone" texture now facets-dependent) is a facets-layer responsibility, not a bones blocking finding.
+
+No SUBSTANCE-FLAT findings. No SUBSTANCE-SUSPECT-cheap-gain findings. No seams.
