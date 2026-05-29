@@ -3439,6 +3439,36 @@ books:
         # Audience reviewer STM (Phase 4 trim + Phase 6 bone-gate) under "## b01c05 ..." headings.
         #
         # ============================================================
+        # /and-write b01-c05 Phase 1 targeted recast 2026-05-29 (DEC-0042)
+        # ============================================================
+        # Trigger: /and-stitch Phase 9 cold-read FAIL #2 — cold-reader inferred possible sexual assault
+        #   from "the three figures pin the courier" + "the side-alley returns the sound" at @13-@14.
+        # Scope: @13 ONLY recast in b01c05s02. All other bones unchanged. No flat_id renumbering.
+        # Change: @13 "the three figures pin the courier" → "the three figures strike the courier"
+        # Rationale: "strike" is the concrete force-application verb that unambiguously specifies
+        #   ENFORCEMENT-BEATING violence type per chunk authority ("enforcement, not robbery";
+        #   "controlled containment"; "coordinated"). The "pin" beat's containment function is
+        #   already established by @11-@12 (enter side-alley + close alley-mouth) + oc-rushwick
+        #   enforcement-geometry section; @13 can advance to force-application without structural loss.
+        # Option A (recast) chosen over Option B (add bone): Option B would renumber @14-@35 and
+        #   blow up all existing facet citations.
+        # Per-bone classification for recast @13:
+        #   svo: "the three figures strike the courier"
+        #   classification: HELD
+        #   axes_held: [{axis: moral_framework, rationale: "enforcement violence is the s02 opposing_force
+        #     enacted as a specific physical act — the strike is the faction-violence content the discipline
+        #     absorbs as enforcement-not-robbery; inside the licensed exception; moral_framework held at
+        #     current crack-level"}]
+        #   axes_in_motion: []
+        #   cost_ledger_anchor: null
+        # Scene-map @13 peak-shadow annotation updated: "three figures strike courier — force-application beat"
+        # Files changed: theater/bones/b01-c05.md (@13 verb), theater/facets/scene-map-b01-c05.md (@13 annotation)
+        # Soft seam flagged to /and-facets: "held against stone" texture (previously entailed by @13 "pin")
+        #   now only available via @11-@12 geometry + chunk text + oc-rushwick card; sensory/NI facet
+        #   should carry "held against stone" physical texture at @13-@14 citation.
+        # Facets NOT stale: no flat_id changes; existing citations remain valid.
+        # Bones review NOT stale: this is a scope-contained verb swap; no structural change to event coverage.
+        # ============================================================
         # /and-write b01-c05 REVISE --from-signals emit 2026-05-28 (post-FAIL cold-read)
         # ============================================================
         # Trigger: /and-stitch b01-c05 Phase 9 cold-read FAIL (this same date).
