@@ -2481,3 +2481,94 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0050 | 2026-05-30 | SLOW (user-proxy)
+
+question: |
+  b01-c06 live-validation run complete (PASS-WITH-DEPTH-PASS-REQUIRED, DEC-0048). User said "continue."
+  The named next step is the mandatory depth pass (chapters[b01c06].depth_pass_pending = true, de-abstract
+  accounting-middle bones @16-@21). Disposition: run the depth pass NOW (options A or C), or defer to
+  before book-close and proceed to b01c07 (option B)?
+
+context: |
+  Three structural complications identified by the caller:
+  (1) `--from-signals` would target the WRONG bones. The Phase 6 bone-gate SIGNALs were moral_legibility
+      floor + s03 stakes-tie — not the apparatus-airless accounting bones. The actual airlessness is a
+      cold-read READABILITY signal, not a Phase-6 gate-SIGNAL. The real depth pass is a scene-s03-scoped
+      revise to de-abstract @16-@21.
+  (2) PROP-0023 (the apparatus-dominant-chapter revise prescription) is OPEN, UNIMPLEMENTED, pending
+      principal triage. Acting on its logic now is acting on an un-triaged proposal.
+  (3) The depth pass is a full re-cascade (~40+ dispatches) after a session that already ran the
+      entire chain.
+  (4) DEC-0048 scoped the depth pass to "before project-stable," not "immediately."
+  (5) If the depth pass re-authors the accounting bones and the next cold-read still returns AIRLESS,
+      the outcome escalates to FAIL/re-decompose — i.e., the depth pass may not resolve it, and the
+      accounting is abstract-by-contract.
+
+options: |
+  A: Run depth pass NOW as scene-s03-scoped /and-write b01c06 revise (de-abstract @16-@21), then
+     re-cascade facets+stitch. Largest spend; acts on un-triaged PROP-0023 logic; --from-signals flag
+     would target wrong bones (cannot be used as-scribed); uncertain outcome; may escalate to FAIL.
+  B: Defer depth pass; proceed to b01c07. Depth pass flagged (depth_pass_pending stays true); runs
+     before book-close. PROP-0023 gets triage first; revise brief can be constructed correctly.
+  C: Run /and-write revise (bone de-abstraction of s03) now as core; checkpoint; defer facets+stitch
+     re-cascade. Splits the difference but leaves chain in inconsistent state (bones re-emitted stales
+     all existing facets; draft no longer terminal; no clean resume point — functionally degrades to B
+     but with wasted token spend and a stale artifact set).
+
+decision: Option B — defer the depth pass; proceed to b01c07.
+
+basis: |
+  goal:2 (cost discipline) + methodology:3b (cost — B is cheapest per-session; no tokens spent on
+  an uncertain-outcome re-cascade) + methodology:3a (reversibility — the depth pass is authorized and
+  scheduled; deferring it does not cancel it; B preserves the option to run it with the correct brief)
+  + methodology:3d (optionality — B preserves the ability to consult the correct signal list for the
+  brief after PROP-0023 triage; A and C lock in a brief constructed from incomplete guidance)
+
+rationale: |
+  Option A fails for two independent reasons:
+  (a) The `--from-signals` instruction in DEC-0048 is mechanically wrong for this chapter. Phase 6
+      SIGNALs (moral_legibility floor + stakes-tie) were the wrong signals for the accounting-bone
+      airlessness. The depth pass needs a COLD-READ-SIGNAL-driven brief (target the apparatus-dominant
+      bones named by the cold-read + the ABSTRACTION-DOMINANT SIGNAL list), not a --from-signals brief
+      that reads Phase 6 gate_verdict.signals[]. Running it now with any brief means constructing that
+      brief from scratch on an ad-hoc basis, without the guidance that PROP-0023 was authored to
+      provide.
+  (b) PROP-0023 is open-pending-principal-triage. It prescribes precisely how to handle apparatus-
+      dominant depth passes (replace apparatus SVOs with concrete actor-verb-object bones; signal set
+      = ABSTRACTION-DOMINANT from Phase 6 + GROUNDING-REQUIRED from grounding-ledger + Phase 4.6
+      re-reviewer scene-level notes). Acting on that prescription before triage is premature
+      implementation of an un-triaged proposal.
+
+  Option C is worse than B on every axis: it consumes tokens (the bones-revise portion), produces
+  an inconsistent artifact state (re-emitted bones stale all facets, making the existing facets
+  unreliable and the prior draft non-terminal), and has the same uncertain outcome. The only "benefit"
+  of C over B is that some work gets done — but that work, done without the correct brief, may itself
+  need to be redone after PROP-0023 triage. C is B minus the clean state, not B with an advantage.
+
+  Option B is the correct answer: the depth pass is authorized (DEC-0048), flagged (depth_pass_pending),
+  and scoped "before project-stable." That obligation is honored. It simply runs before book-close
+  rather than this instant, after PROP-0023 is triaged and the correct brief (cold-read-signal-driven,
+  targeting @16-@21 apparatus SVOs specifically) is specified. b01c07 is the clean forward motion the
+  "continue" directive indicates.
+
+  The spend-commitment precedent (DEC-0009, DEC-0041) further supports deferring: full-cascade re-runs
+  with uncertain outcomes have consistently been the category where proceeding without deliberate brief
+  construction costs more than the delay.
+
+trade-off: |
+  B means b01c06 ships PASS-WITH-DEPTH-PASS-REQUIRED as its current state; the depth pass runs later.
+  No quality loss: the terminal deliverable (draft/b01-c06.md) is already emitted and is the correct
+  current state. The depth pass improves the chapter before project-stable; deferring does not prevent
+  that. The cost of B over A is: the accounting-middle airlessness stays unresolved for one more
+  chapter cycle, and depth_pass_pending flag stays set. The cost of A over B is: ~40+ dispatches on
+  an uncertain outcome with an ad-hoc brief on an un-triaged proposal, with possible escalation to
+  FAIL/re-decompose that costs even more.
+
+follows: DEC-0048 DEC-0049
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
