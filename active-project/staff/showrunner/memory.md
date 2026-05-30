@@ -3881,7 +3881,7 @@ books:
       #   (P): proceed, record Q7 confusion list as cold_read_risk_carry → hand to /and-review bones
       #   follow_check (PROP-0020). report: active-project/staff/reviews/chunk-coldread-b01c06-2026-05-30.md
       - slug: b01c06
-        status: chunked
+        status: scened
         chunk: |
           Taylor runs the first deliberate rationalize-each-trade beat. A request comes
           through Jarvis that is not ambiguous: Otto wants to know which Flea Bottom ward
