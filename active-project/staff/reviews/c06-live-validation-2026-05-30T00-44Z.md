@@ -50,8 +50,25 @@ Two bones-execution watches parked for /and-write (pl-2026-05-30-002): (a) enact
 - **Notable pipeline interaction (log for #2):** the **dramatist ADDED** MT-01 (to bridge a continuity seam) and the **audience REMOVED** it (redundant + POV-inconsistent). Two critics disagreeing, resolved by the trim threshold — the system self-correcting. Net: seam stays covered, a POV wobble is caught. MT-02 (the close→act hinge) survives unflagged — the structurally important transition is the one that stuck.
 - Effect: chapter → 25 bones; s01 roll-up unchanged (held bone, no axis move); s01 grounding 6→5 (≥3, PASS holds). Advisory-only: s03n04 (Sera-image) flagged marginal by cape-fic but kept 2/3 as load-bearing.
 
+### ✅ /and-write Phase 5 continuity audit — CONTINUITY-OK
+19 checks, 0 faults, 1 flag (the known moral_legibility +0.5→+1.0 SIGNAL). Handoff-in honored; geography/time coherent; three record-substrates distinct; Earth-Bet fence clean; goal delivered.
+
+### ⭐ /and-write Phase 6 substance bone-gate — THE HEADLINE LIVE TEST — PASS (after 1 trivial HARD fix)
+**This is the first-ever live firing of the 2026-05-29 spine-legibility gates. Result: they work — no false positives, no misses.**
+
+**Auditor leg (mechanical spine-legibility):**
+- **EVENT-NOT-CONCRETE (HARD, the marquee 2026-05-29 gate): PASS on ALL 4 central bones** — s01n04 (`speaks to`, canonical speech), s01n08 (`blanks the contact-source field`, the omission), s03n06 (`seals the jarvis-channel form`, the send), s03n07 (`the courier takes the jarvis-channel form`). The gate distinguished concrete actor-verb-object from instrument/process/perception rendering correctly. **No false positive on `blanks`/`seals`** (the two verbs most at risk of being read as stative), and **no miss** — this is exactly the muffle-class defect c05 shipped without a gate to catch. Critically: the gate was *exercised* on an abstraction-prone intelligence-delivery chapter (the c05 profile) and the bones held concrete.
+- **ABSTRACTION-DOMINANCE (SIGNAL): PASS** — grounding ratios s01 56% / s02 83% / s03 100% (thresholds 25%). The intelligence/accounting scene (s03) came in 100% grounded — the decomposer actively countered the abstraction-prone subject by anchoring every accounting beat to a physical record-substrate (ledger / Jarvis form / coverage notes / red-keep record).
+- **SENSORY-GROUNDING (HARD): PASS** all 3 scenes. **Dialogue checks (5×HARD): PASS** (Wren's line: anchor-present, card-clean smallfolk, objective-matched, Earth-Bet-clean, covered). **Cost-ledger: PASS** (cl-d06 gain @s01n04, cost @s03n06). **Register-mannerism: no fire** (opens/closes use distinct objects → distinct verb-object pairs). **Opposing-force-visible: PASS** all scenes.
+- **1 HARD (fault-001) — legitimate, not a false positive:** s01 scene-contract listed `political_register-prot` in axes_held but no s01 bone witnessed it (5 of 6 held axes had witnesses). The chunk contract introduced the gap; the bone-gate caught it. Fixed minimally (assigned the axis to existing bone s01n02, no new bone, no roll-up change). Gate CLEAN after fix.
+- **2 SIGNALs, both accept-with-rationale:** signal-001 (moral_legibility s03 +1.0-realized vs +0.5-target) + signal-002 (s03 stakes-axis tie) — both downstream of one root cause: a sub-1.0 scene-aggregate target colliding with the DEC-0030 bone-floor of 1.0. Within tolerance; dispositioned, not blocking. (Flagged to Phase-6.5 admin process-critic as a possible recurring structural pattern.)
+
+**Audience leg (per-scene SUBSTANCE-FELT):** **3/3 on all 3 scenes, 0 HARD.** Personas explicitly did NOT manufacture flatness; s02's loaded pause survived the slice-of-life-filler alarm; the Wren omission-as-decision watch was satisfied by the `blanks` verb + ledger architecture (not interior narration).
+
+**Live-validation verdict on the spine gates:** they fired, discriminated correctly, caught a real (if minor) contract gap, and did NOT over-fire on the two highest-risk verbs or on the abstraction-prone chapter. This is the affirmative evidence the prior (retroactive-on-c05) session could not produce.
+
 ### ⏳ PENDING (not yet fired)
-- `/and-write` Phase 5 continuity audit — in flight (reading the 26-bone draft; s01n10 deletion applied after it returns, in one pass).
+- `/and-write` Phase 6.5 admin process-critic — in flight (judging whether the bone-floor-vs-fractional-target collision is a recurring structural pattern worth a PROP).
 - `/and-write` Phase 6 **EVENT-NOT-CONCRETE** (HARD) + **ABSTRACTION-DOMINANT** (SIGNAL) + **SENSORY-GROUNDING** (HARD) — bone-gate next. This is the spine-legibility gates' real live test. Watch the moral_legibility +0.5→+1.0-realized SIGNAL disposition (within ±1 tolerance).
 - `/and-review bones` **follow_check / FOLLOW-FAIL** (PROP-0020) — will consume the Phase 5.5 `cold_read_risk_carry` proper-noun checklist as its context-weave input.
 - `/and-facets` **Phase 2.5** context + aliveness axes → context-ledger + grounding-ledger; **Phase 4.5** separated FOLLOWABLE/ALIVE; **Phase 4.6** conditional R3.
@@ -64,7 +81,8 @@ Two bones-execution watches parked for /and-write (pl-2026-05-30-002): (a) enact
 **Pending the bones/facets/stitch run for the readability/completeness gates.** Preliminary:
 
 - The **designed cold-read→completeness handoff is operating live.** Pre-overhaul, the *only* reader-question pass was `/and-stitch` Phase 9 — context-blind, at the most expensive recovery point. On c05 that produced FAIL #3 (a context-blind CONTINUE=No read as a chapter defect, after ~50 dispatches). Here the **same class of context-blind NO surfaced at the chunk layer (~1 dispatch)**, was correctly classified as mid-series context-noise (not a design defect), and its confusion list was captured as a forward checklist for the context-AWARE layer — instead of detonating at Phase 9. *If* `/and-review bones` follow_check + `/and-facets` Phase 2.5 now weave the load-bearing subset of that context, the c05 FAIL #3 mechanism will have been pre-empted upstream. **To be confirmed when those gates run.**
-- Not yet demonstrated: whether EVENT-NOT-CONCRETE pre-empts a c05-style FAIL #1 (muffled central event), or whether the AIRLESS axis catches an airless render that completeness passes. Those are downstream.
+- **EVENT-NOT-CONCRETE now demonstrated live (Phase 6):** the spine gate fired on this abstraction-prone intelligence chapter (the c05 profile) and confirmed all 4 central bones concrete at the BONE layer — pre-empting the c05 FAIL #1 *mechanism* at its source (a muffled central event cannot now pass the bone-gate abstract; the muffle would have to be injected purely at stitch, where Phase 9's separated scoring is the backstop). This is the upstream-shift working: the spine is certified concrete before facets/stitch ever run. NOTE the scope caveat from the gate's own design — EVENT-NOT-CONCRETE catches an *abstractly-authored* bone; it cannot prevent a *concrete* bone being *rendered* abstractly at stitch (that remains the Phase-4 voice-embodiment + Phase-9 AIRLESS job, still pending).
+- Still pending: whether the AIRLESS axis catches an airless render that completeness passes (stitch); whether FOLLOW-FAIL weaves the right context subset (review bones).
 
 ## 3. Any false positives? (gate blocking something actually fine)
 
@@ -90,7 +108,14 @@ Two bones-execution watches parked for /and-write (pl-2026-05-30-002): (a) enact
 | 4c | speech-axis rule | write Ph2 | fault-002 → NOT-a-fault (DEC-0045) | **YES (schema)** | universal-taxonomy rule mis-fires on custom-axis project; schema-fix parked pl-...-003 |
 | 4d | dramatist (bone shape/transitions) | write Ph3 | ACCEPT + 2 transition bones | no | rise-peak-fall; MT-01/MT-02 added (held) |
 | 4e | audience trim ×3 | write Ph4 | ACCEPT 3/3; auto-delete s01n10 | no | dramatist-added MT-01 removed (POV-inconsistent + redundant); MT-02 survives |
-| 5 | EVENT-NOT-CONCRETE / ABSTRACTION-DOMINANT / SENSORY-GROUNDING | write Ph6 | — | — | PENDING |
+| 4f | continuity audit | write Ph5 | CONTINUITY-OK | no | 19 checks, 0 faults |
+| 5a | **EVENT-NOT-CONCRETE** | write Ph6 | **PASS ×4 central bones** | **no** | marquee 2026-05-29 gate; no false-pos on blanks/seals, no miss |
+| 5b | ABSTRACTION-DOMINANCE | write Ph6 | PASS (56/83/100%) | no | s03 intelligence scene 100% grounded |
+| 5c | SENSORY-GROUNDING | write Ph6 | PASS ×3 | no | |
+| 5d | dialogue checks ×5 | write Ph6 | PASS | no | Wren line clean |
+| 5e | HELD-AXIS-WITNESS | write Ph6 | 1 HARD (fault-001) → fixed | no | legit catch (chunk contract gap); minimal fix |
+| 5f | bone-floor SIGNALs ×2 | write Ph6 | accept-w-rationale | no | DEC-0030 fraction-vs-floor; → 6.5 admin |
+| 5g | audience SUBSTANCE-FELT ×3 | write Ph6 | FELT 3/3, 0 HARD | no | no manufactured flatness |
 | 6 | follow_check / FOLLOW-FAIL | review bones | — | — | PENDING (consumes #4 carry) |
 | 7 | context + aliveness axes | facets Ph2.5/4.5/4.6 | — | — | PENDING |
 | 8 | voice-embodiment / READABLE-AIRLESS / spine-promotion | stitch Ph4/9 | — | — | PENDING |
