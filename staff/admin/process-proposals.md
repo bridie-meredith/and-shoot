@@ -2593,3 +2593,203 @@ recommendation:
     bank a false PASS on dense-voice chapters.
 status: open-pending-principal-triage
 ```
+
+---
+
+## PROP-0023
+
+```yaml
+id: PROP-0023   # renumbered from PROP-0020 by orchestrator (2026-05-30): PROP-0020 is the existing completeness/context-weave proposal (20 refs repo-wide); admin process-critic mislabeled this new apparatus-airless proposal. Content unchanged; ID corrected to next-free (PROP-0021 gap, 0022 taken).
+created_at: 2026-05-30T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01c06-2026-05-30.md
+  source_verdict: PASS-WITH-DEPTH-PASS-REQUIRED
+target:
+  type: command
+  path: .claude/commands/and-facets.md
+  section: "Phase 4.6 — Conditional R3 + fixer / Step 2 grounding-ledger re-review ALIVE verdict criteria"
+change_type: modify
+rationale: |
+  b01-c06 is the first live chapter under the 2026-05-29 readability+completeness overhaul.
+  The readability track fired correctly at every upstream checkpoint:
+    - /and-review bones flagged BONES-AIRLESS-RISK on the accounting middle
+    - Phase 2.5 opened 3 grounding-ledger lines
+    - Phase 4.5 separated-scoring returned AIRLESS-HOLE
+    - Phase 4.6 authored 3 cap-exempt grounding sensory adds
+    - Phase 4.6 Step-2 re-review returned ALIVE
+    - /and-stitch Phase 4 applied voice-embodiment discipline (4 VOICE-FIXABLE anchors person-first)
+  The terminal cold-read (Phase 9) still returned AIRLESS.
+
+  Root cause (per DEC-0048 + DEC-0049): ~18/25 bones have record-substrate verbs —
+  apparatus-dominant by contract. The overhaul's interventions (3 grounding adds + 4 person-first
+  renders) were exactly the 2 spots the cold-reader named as "the only breathing spots" — they
+  worked, but they covered ~7 of ~18 apparatus-dominant bones. The grounding-ledger mechanism
+  (add sensory anchors around apparatus prose) is PALLIATIVE on bone-layer abstraction — it
+  cannot de-abstract the underlying apparatus SVOs; it only surrounds them with sensory adds.
+
+  Critical structural distinction this overhaul was not designed/tested against:
+    - c05's airlessness: render-layer (concrete bones, apparatus-rendered at stitch) →
+      cured by person-first voice discipline. The overhaul was designed against this class.
+    - c06's airlessness: bone-layer (apparatus-dominant SVO by contract) →
+      palliative grounding adds and person-first renders cannot close the gap without
+      content invention. This class was not in the overhaul's evidence base.
+
+  The Phase 4.6 Step-2 re-review returned ALIVE after the 3 grounding adds, clearing the
+  chapter for stitch. This was a false-ALIVE: an informed context-aware reviewer called ALIVE
+  where a context-blind cold-reader called AIRLESS. The mechanism: context-aware reviewers
+  compensate for apparatus prose by using their knowledge of the surveillance-operative POV
+  and the chapter's substance contract. Cold-readers cannot access that compensation. For
+  apparatus-dominant chapters, the "does it breathe after grounding adds?" question has
+  systematically different answers from informed vs. uninformed perspectives.
+
+  The false-ALIVE at Phase 4.6 deferred the depth pass one full stitch + cold-read cycle
+  later than necessary. If Phase 4.6 had output AIRLESS-UNRESOLVABLE-AT-FACETS-LAYER instead
+  of ALIVE, the chapter would have routed to /and-write revise --from-signals BEFORE stitch,
+  saving the stitch + Phase 9 round-trip (10-15 dispatches).
+
+  The fix is a modifier to the Phase 4.6 Step-2 ALIVE verdict criteria: on an
+  apparatus-dominant chapter (both BONES-AIRLESS-RISK in bones_review AND ABSTRACTION-DOMINANT
+  SIGNAL in Phase 6 gate record), ALIVE requires explicit evidence that at least one bone per
+  scene was de-abstracted (apparatus verb replaced by concrete actor-verb-object) — not just
+  evidence that grounding adds are present around apparatus prose. If grounding adds are the
+  only change and the bone-set remains apparatus-dominant, the verdict is
+  AIRLESS-UNRESOLVABLE-AT-FACETS-LAYER rather than ALIVE.
+
+  This is change_type: modify on existing Phase 4.6 verdict criteria, not a new gate.
+  The detection mechanism (BONES-AIRLESS-RISK + AIRLESS-HOLE) is unchanged and correct.
+  The modification is to what ALIVE means for the re-review step when both upstream
+  apparatus-dominance signals are in the chapter record.
+
+  Recurrence count: 1 (first live apparatus-dominant chapter under the overhaul).
+  Non-catastrophic (depth-pass loop fired correctly at Phase 9). Proposing at first
+  occurrence because:
+  (a) The mechanism is precisely discriminated from c05's render-layer class — two structurally
+      distinct failure modes of "airlessness" that the grounding-ledger handles differently.
+  (b) The false-ALIVE is a concrete gate gap (threshold miss on an existing gate step), not
+      a taste call — it has a mechanical detection predicate (BONES-AIRLESS-RISK +
+      ABSTRACTION-DOMINANT both in record) and a mechanical correction (require bone-level
+      de-abstraction evidence before ALIVE).
+  (c) The overhaul's own honest-limitations section (report 2026-05-29 §4) stated: "nothing
+      is live-proven; b01-c06 is the first live test" — this is exactly the class of gap live
+      testing was expected to surface, making a first-occurrence proposal appropriate.
+  (d) The fix is S-cost and modify-only; no new gate, no new command phase, no schema change.
+
+evidence_refs:
+  - "active-project/staff/reviews/coldread-b01c06-2026-05-30.md — AIRLESS verdict; two breathing
+    spots (stylus grounding add @17 + child's spoken line); accounting section (27-35) worst
+    offender: 'abstract bookkeeping metaphor stacked on abstract metaphor'; withheld name 'reads
+    as a tidy diagram of a feeling'"
+  - "staff/admin/decisions.md — DEC-0048: root cause 'apparatus-dominant bone-set (~18/25
+    record-substrate verbs) — a bone-layer authoring defect, not a stitch-layer voice problem';
+    Phase 4.6 ALIVE false-positive traced; PASS-WITH-DEPTH-PASS-REQUIRED disposition"
+  - "staff/admin/readability-completeness-overhaul-report-2026-05-29.md — §4 Honest limitations:
+    'Nothing is live-proven. Every verification ran retroactively on already-shipped c05...
+    b01-c06 is the first live test'; §3 PROP-0022 aliveness axis rerun on c05 found
+    'AIRLESS (8 VOICE-FIXABLE + 5 GROUNDING-REQUIRED)' — 13 findings on c05 vs 3 on c06
+    (c06 is a harder apparatus-dominance class; the reviewer found fewer because the whole
+    bone-set is apparatus-dominant, not isolated patches)"
+  - ".claude/commands/and-facets.md — Phase 4.6 Step-2 re-review (grounding-ledger); Phase 4.5
+    AIRLESS-HOLE trigger; Phase 2.5 aliveness axis"
+  - ".claude/commands/and-review.md — BONES-AIRLESS-RISK advisory note: 'If the bone set is
+    wholly apparatus/process with no embodied or sensory-grounded beats, note BONES-AIRLESS-RISK
+    in the record: it forewarns /and-facets Phase 2.5 to scrutinize the aliveness axis and likely
+    open grounding-ledger lines'"
+  - ".claude/commands/and-write.md — Phase 6 ABSTRACTION-DOMINANT SIGNAL: 'grounding bones < 25%
+    of non-chatter' — the upstream apparatus-dominance detector whose firing (in conjunction with
+    BONES-AIRLESS-RISK) is the proposed predicate for the stricter Phase 4.6 ALIVE bar"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-facets.md, Phase 4.6 conditional R3 section, in the Step-2 grounding-
+  ledger re-review instructions, add an apparatus-dominance qualifier to the ALIVE verdict:
+
+  CURRENT (implied):
+    Phase 4.6 Step-2 re-review: if grounding adds are present and the aliveness reviewer reports
+    the airless zones now breathe → verdict ALIVE → proceed to Phase 5.
+
+  PROPOSED — add a qualifier block before the ALIVE verdict:
+
+    **Apparatus-dominance qualifier (fires when both conditions hold):**
+
+    Condition A: `chapters[<slug>].bones_review.aliveness_note` contains `BONES-AIRLESS-RISK`
+    (the bones reviewer flagged the whole chapter as apparatus/process-dominant at /and-review bones).
+
+    Condition B: `chapters[<slug>].phase6_gate_signals` contains `ABSTRACTION-DOMINANT`
+    (Phase 6 bone-gate SIGNAL: grounding bones < 25% of non-chatter — confirms the apparatus-
+    dominance is bone-level, not a localized patch).
+
+    If BOTH conditions hold, the Phase 4.6 Step-2 ALIVE verdict requires:
+
+      **Evidence of bone-level de-abstraction (per scene).** For each scene in the chapter,
+      the re-reviewer must identify ≥1 bone where the apparatus verb in the original SVO was
+      replaced by a concrete actor-verb-object (e.g., "the count updates" → "Taylor marks one
+      adult male, records, closes the notebook"). If the only changes are grounding sensory adds
+      AROUND existing apparatus-dominant bones (the standard grounding-ledger add pattern),
+      without any bone-level de-abstraction, the re-reviewer MUST return:
+
+        AIRLESS-UNRESOLVABLE-AT-FACETS-LAYER: apparatus-dominant bone-set. Grounding adds
+        address isolated airless patches but cannot de-abstract the spine. Route to
+        /and-write revise --from-signals before stitch. The ABSTRACTION-DOMINANT SIGNAL list
+        from Phase 6 is the signal set.
+
+      The re-reviewer may still return ALIVE if they can point to ≥1 concrete actor-verb-object
+      bone per scene that was not present before Phase 4.6 (or confirm that a grounding-add
+      bone itself carries concrete person-first SVO that de-abstracts the dominant verb pattern).
+      VOICE-FIXABLE classifications (apparatus verb that can be person-first'd without content
+      invention) do NOT count toward this requirement — they are stitch-layer, not bone-layer.
+
+    The re-reviewer's verdict note must explicitly state whether the apparatus-dominance qualifier
+    applies and which condition triggered it (A-only, B-only, or both). If neither condition holds,
+    the qualifier does not fire and the standard ALIVE/AIRLESS verdict applies.
+
+  **Routing when AIRLESS-UNRESOLVABLE-AT-FACETS-LAYER fires:**
+    Route to /and-write revise --from-signals with the following signal set passed to the
+    brief:
+      - All GROUNDING-REQUIRED entries from the grounding-ledger (these are the bones the
+        facets layer targeted; the /and-write revise brief should de-abstract these bones
+        specifically rather than just surrounding them with grounding adds)
+      - ABSTRACTION-DOMINANT SIGNAL list from Phase 6 (the full apparatus-dominant bone set)
+      - The Phase 4.6 re-reviewer's note on which scenes lack bone-level de-abstraction
+
+    Memory write: chapters[<slug>].context_followability.readability_verdict =
+    AIRLESS-UNRESOLVABLE-AT-FACETS-LAYER (not AIRLESS-HOLE; distinct outcome that routes
+    upstream rather than to stitch).
+
+  **Why this qualifier does not over-fire:**
+  The two-condition predicate (BONES-AIRLESS-RISK + ABSTRACTION-DOMINANT) requires both:
+  - The bones reviewer must have flagged whole-chapter apparatus-dominance (not just noted
+    occasional instrument-register bones, which are common in surveillance chapters)
+  - Phase 6 must have fired ABSTRACTION-DOMINANT (grounding bones < 25%) — a structural
+    threshold, not a taste call
+
+  A chapter with isolated apparatus patches (normal surveillance register) will not have
+  ABSTRACTION-DOMINANT in its Phase 6 record and the qualifier will not fire. The qualifier
+  is scoped to chapters that are apparatus-dominant by the bone-set's own structural
+  composition, not chapters that merely use apparatus language in context.
+
+  **Note on the grounding-ledger mechanism:**
+  The grounding-ledger is still the correct intervention for chapters where apparatus-dominance
+  is localized (isolated patches). The qualifier does not retire the grounding-ledger or prevent
+  grounding adds — it only changes the ALIVE verdict threshold when the bone-set is structurally
+  apparatus-dominant. Chapters where apparatus-dominance is localized (< both condition thresholds)
+  continue through the existing grounding-ledger path unchanged.
+
+  MEMORY SCHEMA NOTE (optional, deferred):
+  The two-condition check requires reading two fields:
+  - `chapters[<slug>].bones_review.aliveness_note` — current; written by /and-review bones
+  - `chapters[<slug>].phase6_gate_signals` — may need a new memory field if ABSTRACTION-DOMINANT
+    is not currently persisted to showrunner memory (it fires at Phase 6 but may only live in the
+    bone-gate audit report). If not currently in memory, the Phase 4.6 step should read the
+    bone-gate report directly to check. Adding a `phase6_signals: [<signal-name>]` field to
+    `schemas/showrunner-memory.schema.md` would make this mechanical; cost S.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```

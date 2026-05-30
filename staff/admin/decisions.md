@@ -2369,3 +2369,115 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0049 | 2026-05-30 | SLOW (process-critic)
+
+question: |
+  b01-c06 Phase 9 cold-read: PASS-WITH-DEPTH-PASS-REQUIRED (completeness PASS, readability
+  AIRLESS). The readability track fired at every upstream checkpoint (BONES-AIRLESS-RISK flagged,
+  3 grounding-ledger lines opened, Phase 4.5 AIRLESS-HOLE, Phase 4.6 authored 3 grounding adds,
+  Phase 4.6 Step-2 returned ALIVE, Phase 4 applied voice-embodiment on 4 VOICE-FIXABLE anchors)
+  — yet the terminal cold-read still returned AIRLESS. Does the process need to change?
+  Specifically: is the grounding-ledger too narrow for apparatus-dominant chapters? Should the
+  apparatus-dominant-bone-set risk be caught/routed differently? Or is the design correct
+  (depth-pass loop working as intended)?
+
+context: |
+  First live chapter (b01-c06) under the 2026-05-29 readability+completeness overhaul.
+  Root cause per DEC-0048: ~18/25 bones have record-substrate verbs (apparatus-dominant
+  by contract). The overhaul's grounding-ledger licensed 3 sensory adds; voice-embodiment
+  handled 4 VOICE-FIXABLE anchors. The cold-reader named exactly those 2 interventions as
+  the only breathing spots — confirming they worked. But 3 grounding adds + 4 person-first
+  renders against 18 apparatus-dominant spine bones was insufficient in coverage.
+  Critical distinction: c05's airlessness was render-layer (concrete bones, apparatus-rendered
+  at stitch) — cured by person-first voice discipline. c06's airlessness is bone-layer
+  (apparatus-dominant SVO by contract) — cannot be cured by sensory adds or person-first
+  renders without content invention. The overhaul was designed and tested against c05's class
+  (render-layer abstraction); it has not been tested against bone-layer apparatus-dominance
+  until this chapter.
+  The Phase 4.6 Step-2 re-review returned ALIVE after 3 grounding adds. The terminal cold-read
+  returned AIRLESS. An informed context-aware reviewer called ALIVE where a context-blind
+  cold-reader called AIRLESS — because context-aware readers compensate for apparatus prose
+  that cold-readers cannot inhabit.
+
+  source_report: active-project/staff/reviews/coldread-b01c06-2026-05-30.md
+  source_verdict: PASS-WITH-DEPTH-PASS-REQUIRED
+  gate_path: .claude/commands/and-stitch.md#phase-9
+  secondary_gate_paths: [.claude/commands/and-facets.md#phase-2.5, .claude/commands/and-facets.md#phase-4.6]
+
+options: n/a (process-critic mode)
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0023   # renumbered from PROP-0020 by orchestrator: PROP-0020 is the existing context-weave proposal; this apparatus-airless proposal is PROP-0023 (next-free)
+
+basis: |
+  Content-vs-process: the gates detected correctly (BONES-AIRLESS-RISK, AIRLESS-HOLE, AIRLESS at
+  terminal), and the depth-pass loop routed correctly. The gap is in the Phase 4.6 re-review's
+  ALIVE verdict threshold: it cleared a bone-layer-apparatus chapter as ALIVE because the
+  grounding-ledger mechanism (sensory adds around apparatus prose) is palliative on bone-layer
+  abstraction, and the re-review has no separate track distinguishing "grounding-patched apparatus"
+  from "genuinely de-abstracted." A stricter version of the Phase 4.6 ALIVE verdict — one that
+  requires evidence of bone-level de-abstraction (not just surrounding grounding adds) on
+  apparatus-dominant chapters — would have routed to /and-write revise --from-signals before
+  stitch, saving the full stitch + Phase 9 round-trip.
+
+  Recurrence count: 1 (first live apparatus-dominant chapter). Non-catastrophic (depth-pass loop
+  fired correctly). Proposing at first occurrence because: (a) the mechanism is precisely
+  discriminated from c05's render-layer class (bone-layer apparatus vs render-layer apparatus are
+  structurally distinct failure modes); (b) the Phase 4.6 false-ALIVE is the concrete gate gap —
+  not a detection miss but an ALIVE-verdict-threshold miss; (c) the fix is a single qualifier
+  added to the Phase 4.6 ALIVE criteria (modify, not add); (d) the overhaul's own honest-
+  limitations note said "nothing is live-proven; b01-c06 is the first live test" — this is
+  precisely the class of gap that live testing was expected to surface.
+
+  Target is Phase 4.6 Step-2 ALIVE verdict criteria in .claude/commands/and-facets.md
+  (the grounding-ledger re-review step). change_type: modify.
+
+rationale: |
+  Three candidate process explanations analyzed:
+
+  Candidate 1 — Grounding-ledger capacity too narrow.
+  The grounding-ledger has no proportional-licensing rule based on apparatus-dominance count.
+  Phase 2.5 / 4.6 authored as many GROUNDING-REQUIRED findings as the reviewer found; 3 is
+  what the reviewer found. The question is whether the reviewer applied the right detection bar.
+  On a chapter with ~18/25 apparatus-dominant bones, 3 GROUNDING-REQUIRED findings suggests the
+  reviewer scanned for isolated airless patches rather than recognizing the whole-chapter
+  apparatus-dominant pattern. This is a detection-threshold gap in the Phase 4.6 re-review.
+
+  Candidate 2 — Apparatus-dominant-bone-set risk should be caught earlier (at /and-write Phase 6).
+  ABSTRACTION-DOMINANT SIGNAL already exists at Phase 6. If it fired, it was surfaced.
+  The issue is what happens downstream: the SIGNAL routes to grounding-ledger work at facets,
+  which is palliative. For a chapter where the substance contract produces apparatus-dominant
+  SVOs by design (a surveillance operative's internal accounting), the correct upstream signal
+  is not "add grounding" but "de-abstract the bones." This suggests the routing from
+  ABSTRACTION-DOMINANT SIGNAL should distinguish palliative-appropriate (isolated apparatus
+  patch) from route-to-bones-revise-appropriate (whole-chapter apparatus-dominant pattern).
+  But the Phase 6 SIGNAL disposition already allows the bone-author to remediate in revise mode.
+  The gap is not at Phase 6 detection; it is at Phase 4.6 verdict.
+
+  Candidate 3 — The current design is correct; the depth-pass is the right lever.
+  This has merit: Phase 9 refused a clean PASS and required a depth pass. The loop is working.
+  BUT: the Phase 4.6 Step-2 ALIVE verdict was a false positive (informed reviewer cleared
+  what a cold-reader experienced as airless). If the false-ALIVE had not fired, Phase 4.6
+  would have output AIRLESS-UNRESOLVABLE-AT-FACETS-LAYER and routed to /and-write revise
+  --from-signals BEFORE stitch — saving the full stitch + cold-read round-trip. The depth
+  pass is the right repair layer, but the Phase 4.6 false-ALIVE deferred it one full stitch
+  cycle later than necessary.
+
+  Net discrimination: the gap is Candidate 1 + part of Candidate 2 — the Phase 4.6 ALIVE
+  verdict threshold does not have an apparatus-dominant-chapter qualifier. The fix is a single
+  qualifier added to the Phase 4.6 Step-2 re-review criteria. change_type: modify.
+
+trade-off: |
+  The false-ALIVE at Phase 4.6 cost one full stitch + Phase 9 round-trip (~10-15 dispatches).
+  Adding the qualifier would route apparatus-dominant chapters to the depth pass before stitch.
+  Guard: the qualifier only fires when BOTH BONES-AIRLESS-RISK AND ABSTRACTION-DOMINANT are in
+  the chapter record — two independent upstream gates must agree before the stricter ALIVE bar
+  applies. This limits false-positive routing of non-apparatus-dominant chapters.
+
+follows: DEC-0048
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
