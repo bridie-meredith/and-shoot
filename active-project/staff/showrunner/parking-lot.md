@@ -903,3 +903,50 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-05-30-004
+      created_at: 2026-05-30T00:00:00Z
+      created_by: "/and-substance chapter b01c07 Phase 5 (audience trio) + Phase 5.5 (chunk-cold-read) + Phase 5 (auditor)"
+      target:
+        command: /and-write
+        scope: "b01c07"
+        phase: null
+      severity: SOFT
+      description: |
+        b01c07 bones-execution watches (chunk PASSED structure 3-of-3; these are write-time prose/SVO
+        disciplines, NOT chunk revisions — a breathing/argument hinge chapter at seminar-risk):
+        - WATCH-1 (cape-fic + worm-canon + chunk-cold-read): the named death ("the body that prompted
+          her here", s03) MUST decompose to a concrete SVO — a specific name, a specific street, a
+          specific failure-mechanism (what the maester-call would have changed; why it was not routed).
+          The whole chapter's CONTINUE leans on this beat; gestured-at = the counter reads as
+          rationalization, not a real counter. (EVENT-NOT-CONCRETE risk.)
+        - WATCH-2 (dark-fantasy + chunk-cold-read CAUSALITY gap): s02 must show the compound-corruption
+          thesis GETTING THROUGH — one moment it lands somewhere Taylor can feel it (a crack, not
+          resolution) — BEFORE she picks up the counter. Otherwise "genuine engagement" is unearned and
+          the cold-read's "why does she stay?" gap (asserted-not-caused) ships. Motivate why the argument
+          grips her.
+        - WATCH-3 (worm-canon): the [mechanism: foreclosure-planted-not-enacted] note (s03) must render in
+          TAYLOR's ledger-accounting interior voice ("this is what I am not doing, and I know it"), NOT as
+          a narratorial/author-structural framing note.
+        - WATCH-4 (dark-fantasy): moral_legibility HELD at rank 5 is a discipline against escalating, NOT a
+          license to make Taylor immune — the engagement costing her the KNOWLEDGE of the available road is
+          a small felt cost; render it felt without advancing the axis.
+        - WATCH-5 (cape-fic): give one texture beat of Taylor noticing the irony that her surveillance
+          architecture has peripherally tracked Halvard (since week one) while his whole mode is to be
+          ungovernable by it — the gap between knowing and being ready is where the social_tether deepening
+          lives.
+        - AUDITOR fault-009 (s01 stakes_axis disambiguation): s01 scene_conflict.stakes_axis is
+          social_tether-prot-rise, a HELD axis this scene (legal per Phase-3 union rule). /and-write Phase 1
+          must read it as a conflict-frame label, NOT a Δ-authoring mandate — do not generate bone-gate
+          pressure to move a held axis at s01.
+        Chunk-cold-read verdict PASS-CHUNK-VOICE-RISK arms /and-stitch Phase 8.5 central-event-muffle +
+        Phase 9 jeopardy scrutiny (low present jeopardy on a non-coda hinge is partly design-inherent but
+        the named-death anchor must carry).
+      context_refs:
+        - active-project/staff/reviews/chunk-coldread-b01c07-2026-05-30.md
+        - active-project/staff/auditor/substance-chapter-b01c07-audit.md
+        - active-project/staff/showrunner/memory.md  # chapters[b01c07].scenes[] + chunk_cold_read
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
