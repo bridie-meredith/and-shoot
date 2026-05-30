@@ -1,3 +1,51 @@
+## SESSION-START — 2026-05-30T09:00:00Z — write-b01c06-pass2-svo-recasts-resume
+dispatch: resume write-b01c06-pass2 fault repair; prior session (00:00Z) applied fault-001/003/004 to file + logged them, applied fault-005/006/007 to file but did NOT log them, left fault-008 (s03n04) and fault-009 (s03n06) unapplied; this session verifies 005/006/007 as applied, applies 008/009, closes the SESSION-END
+target: active-project/staff/showrunner/_drafts/b01c06-bones-draft-2026-05-30.md
+audit-report: active-project/staff/auditor/write-b01c06-pass2.md
+findings-queued: 5 (fault-005/006/007 verify-and-log; fault-008/009 apply+log)
+
+## SESSION-START — 2026-05-30T00:00:00Z — write-b01c06-pass2-svo-recasts
+dispatch: minimum-change fixes for 8 FAULT-FORM-MODIFIER faults in b01c06 bones draft (fault-001 s01n03, fault-003 s01n08, fault-004 s02n01, fault-005 s02n03, fault-006 s02n05, fault-007 s02n06, fault-008 s03n04, fault-009 s03n06); fault-002 s01n04 excluded per dispatch (separate ruling pending)
+target: active-project/staff/showrunner/_drafts/b01c06-bones-draft-2026-05-30.md
+audit-report: active-project/staff/auditor/write-b01c06-pass2.md
+findings-queued: 8
+
+## fault-001 — RESOLVED — 2026-05-30T00:02:00Z
+fault: s01n03 SVO contained adjectival modifier "backed-up" on object "crowd" (FAULT-FORM-MODIFIER)
+scope: line
+change: SVO recast from "wren-stitch-maker-flea-bottom-ward crosses the backed-up crowd" to "wren-stitch-maker-flea-bottom-ward crosses the crowd"; adjective dropped; notes do not quote old SVO; no notes change
+criteria met: yes
+
+## fault-003 — RESOLVED — 2026-05-30T00:05:00Z
+fault: s01n08 SVO "pauses over the contact-source field" — "over the contact-source field" is a banned PP-of-place (FAULT-FORM-MODIFIER); CENTRAL EVENT bone (s01 omission)
+scope: line
+change: SVO recast from "taylor-hebert-kl-122ac pauses over the contact-source field" to "taylor-hebert-kl-122ac blanks the contact-source field"; "blanks" is transitive, "the contact-source field" is direct object, no PP; preserves deliberate-omission quality per pl-2026-05-30-002(a) CONSTRAINT; notes EVENT-NOT-CONCRETE self-check block updated to quote new SVO and restate verb rationale; Central-event bones section and Chapter Roll-Up Summary section updated to match
+criteria met: yes — SVO clean; no PP; concrete transitive verb; direct object present; deliberate-omission quality preserved; EVENT-NOT-CONCRETE-clean
+
+## fault-004 — RESOLVED — 2026-05-30T00:07:00Z
+fault: s02n01 SVO "arrives at the late-morning window" — "at the late-morning window" is a banned PP-of-time/place (FAULT-FORM-MODIFIER)
+scope: line
+change: SVO recast from "the jarvis-channel message arrives at the late-morning window" to "the jarvis-channel message arrives"; PP-of-time dropped; bare intransitive arrival is observable; notes do not quote old SVO; no notes change
+criteria met: yes
+
+## fault-005 — RESOLVED (verified applied by prior session) — 2026-05-30T09:02:00Z
+fault: s02n03 SVO "opens the jarvis-channel message a second time" — "a second time" is a banned temporal adverbial modifier (FAULT-FORM-MODIFIER)
+scope: line
+change: SVO recast from "taylor-hebert-kl-122ac opens the jarvis-channel message a second time" to "taylor-hebert-kl-122ac reopens the jarvis-channel message"; temporal adverbial dropped; "reopens" encodes return-to-document without any modifier; verified present in file at s02n03
+criteria met: yes
+
+## fault-006 — RESOLVED (verified applied by prior session) — 2026-05-30T09:03:00Z
+fault: s02n05 SVO "writes four names in the jarvis-channel form" — "in the jarvis-channel form" is a banned PP (FAULT-FORM-MODIFIER); pl-2026-05-30-002(b) requires Jarvis-channel form preserved as concrete substrate object
+scope: line
+change: SVO recast from "taylor-hebert-kl-122ac writes four names in the jarvis-channel form" to "taylor-hebert-kl-122ac fills the jarvis-channel form"; form becomes direct object; "four names" content lives in event_map; verified present in file at s02n05
+criteria met: yes
+
+## fault-007 — RESOLVED (verified applied by prior session) — 2026-05-30T09:04:00Z
+fault: s02n06 SVO "sets the jarvis-channel form on the working surface" — "on the working surface" is a banned PP-of-destination (FAULT-FORM-MODIFIER)
+scope: line
+change: SVO recast from "taylor-hebert-kl-122ac sets the jarvis-channel form on the working surface" to "taylor-hebert-kl-122ac lowers the jarvis-channel form"; PP-destination dropped; form remains direct object; "lowers" preserves loaded-pause = set down unsent; verified present in file at s02n06
+criteria met: yes
+
 ## SESSION-START — 2026-05-25T00:00:00Z — fault-001-b01c01s03
 dispatch: partial-settlement notation fix for cl01b in b01c01s03 social_tether-prot-rise notes
 target: active-project/staff/showrunner/b01c01-draft.md
@@ -1370,3 +1418,9 @@ criteria met: yes — re-anchor to @14 licenses audience-perceptibility claim fr
 findings-applied: 2 (loc-state acoustic extension; sensory:2 re-anchor + ID citation fix + proto-lines move — treated as single compound fault per dispatch framing)
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-05-30T09:00:00Z — write-b01c06-pass2-svo-recasts-round2
+dispatch: minimum-change fixes for 8 FAULT-FORM-MODIFIER faults in b01c06 bones draft (fault-001 s01n03, fault-003 s01n08, fault-004 s02n01, fault-005 s02n03, fault-006 s02n05, fault-007 s02n06, fault-008 s03n04, fault-009 s03n06); fault-002 s01n04 excluded per dispatch (separate ruling); two CENTRAL-EVENT bones under special constraint (pl-2026-05-30-002(a) for s01n08 omission; pl-2026-05-30-002(b) for s03n06 send)
+target: active-project/staff/showrunner/_drafts/b01c06-bones-draft-2026-05-30.md
+audit-report: active-project/staff/auditor/write-b01c06-pass2.md
+findings-queued: 8 (fault-001 confirmed already applied in prior session; 7 remaining to apply)

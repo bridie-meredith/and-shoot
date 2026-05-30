@@ -2069,3 +2069,98 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0045 | 2026-05-30 | SLOW
+
+question: Does this project's custom axis `relational_anchor_status` satisfy `schemas/bones.schema.md`'s requirement that a canonical speech-form bone (`<speaker> speaks to <listener>`) must move "≥1 communication-class axis (community / knowledge / reputation / trust)"?
+
+context: |
+  /and-write b01c06 Phase 2 constraint audit raised fault-002 against bone b01c06s01n04
+  (`wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac`; relational_anchor_status
+  +1.0, class: emotional). The auditor's proposed fix — "add a knowledge or trust axis move at
+  magnitude 1.0" — is impossible: this project's signature replaced the universal taxonomy axes
+  (community/knowledge/reputation/trust) with a fully custom set. No axis in the project signature
+  is named community, knowledge, reputation, or trust. The axis at issue (`relational_anchor_status`)
+  is the project's explicit carrier for relational-bond weight loading (class: emotional). The
+  chapter contract designates this exchange as the relational_anchor_status carrier; it is the
+  first spoken Wren↔Taylor line in the book. This is the first live test of the readability
+  overhaul (PROP-0019/0020/0022). The load-bearing first-dialogue bone is at stake.
+
+  Candidate ruling supplied by caller: relational_anchor_status IS this project's communication/
+  relational-class axis for the speech-bone requirement; the schema's enumerated list should be
+  read as "a relational/communication-class axis per the active project signature," not as a
+  literal slug-match against the universal four.
+
+options: |
+  (A) CONFIRM candidate ruling: relational_anchor_status satisfies the speech-bone requirement;
+      fault-002 is not a real fault; n04 keeps relational_anchor_status +1.0 and is valid.
+  (B) REJECT candidate ruling: the schema's enumerated four (community/knowledge/reputation/trust)
+      are the only valid axes for this requirement; the bone must be recast or restructured.
+  (C) ESCALATE: this is an architectural direction question requiring the principal's judgment.
+
+decision: CONFIRM candidate ruling (option A). relational_anchor_status satisfies the canonical speech-form
+  substance requirement on this project. fault-002 is not a real fault. n04 keeps relational_anchor_status
+  +1.0 and is a valid speech-anchor bone.
+
+basis: |
+  goal:1 (pipeline correctness — apply the rule in service of its purpose, not as mechanical
+  slug-matching against a taxonomy that this project does not use) + methodology:3a (reversibility —
+  option B requires recast or structural redesign of a load-bearing bone; option A has no irreversible
+  cost) + methodology:3e (convention — DEC-0006/0007 both applied spec-intent over mechanical literalism;
+  same principle governs here) + schema purpose analysis (the communication-class requirement exists to
+  prevent speech bones from being zero-substance on the relational/social axis; it does not exist to
+  enforce the universal taxonomy's slug names as a vocabulary requirement).
+
+rationale: |
+  The schema's communication-class requirement at lines 140-141 and 165 names four axes:
+  community / knowledge / reputation / trust. These are the universal questionnaire taxonomy's
+  communication-class entries. The requirement's purpose is clear from the surrounding text:
+  speech bones must move "at least one communication-class axis" so that a `speaks to` bone is
+  not zero-substance on the social/relational dimension — preventing speech bones from being
+  authored as physical-action-only events that happen to involve speech.
+
+  This project replaced the universal taxonomy with a fully custom signature. `relational_anchor_status`
+  (class: emotional) carries the relational-bond weight-loading function that `community` and `trust`
+  carry in the universal taxonomy. `social_tether-prot-*` (class: plot) carries the social-connection
+  dynamics. No project axis is named community/knowledge/reputation/trust because those universal
+  functions were subsumed into the project's custom axis design.
+
+  Under option B, canonical speech-form bones would be permanently unauthorable on this project —
+  no project axis matches the schema's enumerated slugs, so every `speaks to` bone would fault
+  regardless of substance declared. This is an absurd result. The schema cannot have intended to
+  make speech bones malformed by design on any project that remaps the universal taxonomy.
+
+  The correct interpretation: the schema's enumerated list names the universal taxonomy's
+  communication-class entries as the reference class. A project that remaps the taxonomy satisfies
+  the requirement by moving an axis that is functionally equivalent — one that carries the
+  relational/communicative/social-bond function in the active project signature.
+  `relational_anchor_status` is that axis: a first spoken Wren↔Taylor exchange forming the relational
+  anchor is precisely what community/trust movement looks like in this project's axis vocabulary.
+
+  The DEC-0006 and DEC-0007 precedents (spec-intent governs, not mechanical literalism when
+  mechanicalism serves no spec goal and produces a worse pipeline-correctness outcome) apply directly.
+
+  Option C (ESCALATE): not warranted. This is a schema-interpretation question, not an architectural
+  direction question. The interpretation follows from the schema's stated purpose applied to a project
+  that has validly customized its axis taxonomy. Goals and methodology resolve this clearly.
+
+trade-off: |
+  Option B enforces literal slug-matching but makes canonical speech bones permanently malformed on
+  this project — a worse pipeline-correctness outcome, and it guts the chapter's first Wren↔Taylor
+  relational beat. No gain from option B that option A does not also provide (both honor the schema's
+  anti-zero-substance purpose; A does it correctly for a remapped taxonomy).
+
+  Confirming A also flags a genuine schema ambiguity: the enumerated list does not say "or the
+  project-signature equivalent," which is what caused the auditor's false fault. A parking-lot
+  schema-clarification item is the correct follow-on (caller stated intent to file it).
+
+  The parking-lot item should target bones.schema.md lines 140-141 and 165, change_type: modify
+  (S cost), clarifying that the enumerated axes are the universal taxonomy's communication-class
+  examples, not an exhaustive slug-require list. That prevents this from re-litigating at c07+.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
