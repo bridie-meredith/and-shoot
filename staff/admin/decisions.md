@@ -2164,3 +2164,70 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0046 | 2026-05-30 | FAST (process-critic)
+
+question: |
+  /and-write b01c06 Phase 6 bone-gate: 1 HARD HELD-AXIS-NOT-WITNESSED (political_register-prot
+  s01; resolved by assigning axis to existing bone s01n02 — no new bone) + 2 SIGNALs
+  accepted-with-rationale (signal-001: moral_legibility_to_self +1.0 realized vs +0.5 target;
+  signal-002: stakes-axis tie moral_framework=moral_legibility at 1.0). Does the process
+  need to change? Specifically: (1) does the fractional-target-floor-realization recurrence
+  warrant a named auto-accepted gate disposition, and (2) does the HELD-AXIS-NOT-WITNESSED
+  warrant any new proposal beyond PROP-0011?
+
+context: |
+  source_report: active-project/staff/auditor/write-b01c06-bone-gate.md (Phase 6 bone-gate)
+  gate_path: .claude/commands/and-write.md#phase-6
+  Prior proposals: PROP-0010 (fractional-target-floor; recurrence_count already 2; c06
+  evidence already in recurrence_refs). PROP-0011 (HELD-AXIS-NOT-WITNESSED completion gate;
+  recurrence_count 1 from c04; c06 not yet in recurrence_refs).
+  Chapter b01c06 outcome: 0 HARDs survived to Phase 7; 2 SIGNALs accepted-with-rationale;
+  audience leg SUBSTANCE-FELT 3/3. EVENT-NOT-CONCRETE, ABSTRACTION-DOMINANCE, SENSORY-GROUNDING
+  all PASS. Chapter proceeding to Phase 7.
+
+options: n/a (process-critic mode)
+
+decision: |
+  Candidate 1 (fractional-target-floor pattern): OK-MERGED-INTO PROP-0010.
+  Candidate 2 (HELD-AXIS-NOT-WITNESSED): OK-MERGED-INTO PROP-0011 (recurrence_refs updated).
+  No new proposal warranted on either candidate.
+
+basis: |
+  Candidate 1: PROP-0010 already has recurrence_count: 2 and the c06 evidence in its
+  recurrence_refs. The gate handled the b01c06 case correctly (LEGAL ruling, ±1 tolerance
+  absorbs it, no HARD). A named auto-accepted gate disposition would pre-empt PROP-0010's
+  upstream pre-flight fix — proposing gate-level machinery for a collision that PROP-0010
+  eliminates at the source is redundant until PROP-0010 is triaged. Premature.
+
+  Candidate 2: PROP-0011 proposes Phase 1 step 4a completion gate for held-axis witnessing.
+  b01c06's HELD-AXIS-NOT-WITNESSED (1 axis; resolved with no new bone) is the same failure
+  class at lower severity than c04 (5 axes; 5 new bones). Recurrence evidence for PROP-0011;
+  not a novel pattern. Merging c06 evidence into PROP-0011 recurrence_refs.
+
+  Content vs. process: the b01c06 gate outcome is a gate working correctly (caught the HARD;
+  resolved cheaply). The upstream authoring gap is already targeted by PROP-0011. No new
+  change_type required.
+
+rationale: |
+  The two SIGNALs (moral_legibility over-delivery + stakes-axis tie) are direct consequences
+  of the fractional-target-floor structural collision that PROP-0010 targets upstream. The
+  signals were accepted-with-rationale cleanly — the gate disposition rule did not fail.
+  Proposing a named auto-accept disposition at the gate level before PROP-0010 (which would
+  eliminate the collision at /and-substance chapter) is triaged would be building downstream
+  workarounds for an upstream root cause. Methodology: prefer modify-at-source over
+  modify-at-symptom; prefer the already-authored PROP-0010 over a second PROP targeting
+  derivative symptoms.
+
+trade-off: |
+  Not proposing a named gate disposition means each future fractional-target-floor occurrence
+  will re-litigate as a SIGNAL with rationale. Acceptable cost: the rationale is mechanical
+  (within ±1, LEGAL) and takes one auditor sentence. The upstream PROP-0010 fix is the correct
+  closure; gate-level naming before that fix lands would be premature accumulation.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
