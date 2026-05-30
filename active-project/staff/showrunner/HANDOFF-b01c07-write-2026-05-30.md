@@ -27,3 +27,34 @@ Output: theater/dialogue/septon-halvard-flea-bottom.md + theater/dialogue/taylor
 
 ## NOTE on the chunk PASS-CHUNK-VOICE-RISK
 c07 is a discursive argument chapter — the cold-read flagged "seminar-risk." The bone-gate (Phase 6) ABSTRACTION-DOMINANCE check + the eventual /and-stitch Phase 8.5/9 will scrutinize this. The decomposition front-loaded the concrete anchors (named death, grounding bones, the handcart/sept-corner physicality) to counter it. Watch whether the argument bones (s02) read as concrete-enough at the gate.
+
+---
+## UPDATE — gate phases run; BONE-GATE FAILED (6 HARD) → /and-write revise (cascade halted at gate)
+
+### Phase 3 dramatist: ACCEPT (hinge intact; WATCH-2 honored — thesis lands @s02n06 BEFORE Taylor turns @n07). Notes: (a) additive bridge bone @s03-open suggested — DECLINED (audience-trim overrides; same "Taylor remains/steps" bridge-class the audience cut 3-of-3; c06 MT-01 self-correction pattern); (b) s02n12 marginally dead — already in the audience delete set.
+
+### Phase 4 audience trim: 8 unanimous (3-of-3) DELETEs — all held/bridge/labeling bones (zero axis_moves; don't touch scene-Δ, grounding bones, or dialogue anchors):
+  s01n02 (insect-feed returns — redundant w/ n01), s01n05 (Taylor pauses — traffic), s01n09 (handcart clears — implied by n10),
+  s02n02 (Taylor remains — bridge), s02n08 (reads for soundness — labels process), s02n12 (exchange continues — pre-labels n13),
+  s03n03 (names specific body — redundant w/ n02 dialogue), s03n08 (Taylor remains — bridge).
+  → 38 → 30 bones. Phase 6 audience SUBSTANCE-FELT: all 3 scenes (s02/s03 3-of-3, s01 2-of-3, trim resolves Cape FLAT).
+  Watches: Halvard's 2 speeches + the Wenna-Cobb named-death are INVIOLABLE downstream; s02 seminar-risk migrates to the NI facet; s01 density-floor after trim (8 bones, verify).
+
+### Phase 6 bone-gate (auditor): ⭐ FAIL — 6 HARD. report: active-project/staff/auditor/write-b01c07-bonegate.md
+  EVENT-NOT-CONCRETE (+SUBSTANCE-FLAT on the 2 moving bones) on the argument-middle's interiority-form SVOs:
+  - s02n06 "the compound-corruption thesis lands" (HELD) — recast concrete (the dialogue @s02n05 carries the thesis; n06 = Taylor's concrete registering of it — an operational/physical correlate, e.g. the count/feed beat as it reaches her).
+  - s02n07 "taylor turns the thesis" (MOVING +0.3 political_register-prot) — recast concrete; the +0.3 (resentment's object articulating) must be witnessed by a concrete SVO, not "turns the thesis".
+  - s03n04 "the named death lands" (HELD) — recast concrete (Halvard's concrete reception of the name — a stilling, a physical beat).
+  - s03n09 "the argument completes" (MOVING +0.5 social_tether-prot-rise) — recast concrete; the +0.5 (the exchange inhabited / tether deepening) must be witnessed by a concrete shared-presence SVO, not "argument completes".
+  PASSED: s03n01/n02/n03 named-death (WATCH-1 concrete in dialogue ✓); ABSTRACTION-DOMINANCE per-scene (91/57/69% — PASS, with a SIGNAL on the s02 n06-n09 4-bone abstract block); SENSORY-GROUNDING ✓; dialogue 5×HARD ✓; continuity ✓; opposing-force ✓.
+
+### ⭐ LIVE-VALIDATION FINDING (b01c07, beyond c06): EVENT-NOT-CONCRETE caught argument-chapter ABSTRACTION at the BONE LAYER.
+  c06's EVENT-NOT-CONCRETE PASSED (physical central events: blanks/seals). c07 is a discursive ARGUMENT chapter — its central "events" were authored as abstract "X lands/turns/completes" SVOs, and the gate FAILED them at the bone layer, routing to revise BEFORE any facet/stitch spend. This is the spine-legibility gate doing on a NEW chapter-class (argument) exactly what the overhaul intends: catch the seminar-abstraction upstream, not at the terminal cold-read. The chunk-cold-read PASS-CHUNK-VOICE-RISK (seminar-risk) → bone-gate EVENT-NOT-CONCRETE FAIL is the designed two-layer catch firing in sequence.
+
+## RESUME: /and-write b01c07 revise (cascade halted at the Phase-6 HARD gate)
+1. Apply the 8 audience DELETEs (above) to the bones draft → 30 bones.
+2. Re-decompose the 4 EVENT-NOT-CONCRETE bones (s02n06, s02n07, s03n04, s03n09) into CONCRETE actor-verb-object SVOs, preserving their shapes + axis moves (s02n07 +0.3 pol-reg, s03n09 +0.5 soc-tether must witness their deltas concretely). The hard part: concrete witnesses for interior/relational axis-moves on an argument chapter — dispatch screen-writer (revise mode) with the bone-gate report + the EVENT-NOT-CONCRETE requirement + the inviolable dialogue. WATCH: confirm the recasts don't just relabel — they must be physically/operationally concrete.
+3. Re-run the Phase-6 bone-gate (targeted) → confirm 0 HARD.
+4. Phase 6.5 admin process-critic (FIRED this session on the FAIL — see process-proposals.md tail).
+5. Phase 7 emit (bones file b01-c07.md + scene-map + dialogue files; persist 30 bones to memory w/ flat_ids; status → bones-written).
+6. Then resume cascade: /and-review bones → /and-facets → /and-stitch.
