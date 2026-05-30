@@ -2654,3 +2654,132 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0052 | 2026-05-30 | SLOW (user-proxy)
+
+question: |
+  b01c07 /and-write has failed the substance bone-gate TWICE. Revise made it worse (7 HARD from 6).
+  The chapter is an argument chapter — two people talking at a sept corner; moving axes are
+  RELATIONAL/INTERIOR. Two attempts could not produce schema-clean concrete SVOs for the interior
+  argument beats. Diagnostic: the discriminator between PASS and FAIL is the VERB being
+  physical-observable, not the object being fully concrete (attempt-1's "taylor stays in the
+  argument" PASSED; "the argument completes" FAILED). Disposition: (A) tightly-constrained 3rd
+  recast with hard form constraints derived from auditor fault reasons + hard cap of one attempt
+  then escalate; (B) escalate to human now as a design-tension question; (C) checkpoint and defer
+  c07 given session length.
+
+context: |
+  Attempt 1 (38-bone decomposition): FAIL, 6 HARD — 4 argument-spine interiority bones
+  (FAULT-FORM-INTERIORITY / EVENT-NOT-CONCRETE). WATCH-1 dialogue, speech bones, grounding all
+  PASSED.
+  DEC-0051 / PROP-0024: gate working correctly; over-fire NOT real; concrete-witnessing alternatives
+  exist via operational/relational correlates. Phase 1 brief gap is the process change proposed.
+  Attempt 2 (revise: 8 audience-deletes + recast 4 HARD bones to concrete SVOs): FAILED WORSE —
+  7 HARD. Screen-writer's recasts produced NEW schema violations: holds-license gaze violation,
+  multi-subject + holds-on-abstraction, interiority + modifier, 4 NEW HARDs from advisory recasts
+  ("stand in the lane cold" multi-subject, "carries the open account", "holds the answer back",
+  "sets the answer aside"). Only 2 of ~7 recasts cleared.
+  Key diagnostic: "taylor stays in the argument" PASSED (physical-positional verb; stays);
+  "the argument completes" FAILED (cognitive-object). Discriminator is verb physicality, not
+  object concreteness. Path exists: fold the interior moving-beats onto physical-observable-verb
+  bones (faces/stays/steps/sets-down/enters/leaves/speech bones).
+  Session is long. PROP-0024 is open-untriaged.
+
+options: |
+  A: Tightly-constrained 3rd recast. Brief contains HARD form constraints from auditor fault
+     reasons: single subject only; physical-observable verb only (faces/stays/steps/turns-the-body/
+     enters/leaves/sets-down — NOT holds-on-abstraction, NOT cognitive verbs); no prepositional/
+     adverb modifier tails; speech bones are concrete (use them). Witness axis-moves via
+     physical-observable-verb bones (pol-reg +0.3 ← "taylor faces halvard"; soc-tether +0.5 ←
+     "taylor stays at the sept-corner"). HARD cap: ONE attempt; if it fails, escalate to human.
+     Cost: ~2 dispatches.
+  B: Escalate to human now. Two failures + recast-worse is evidence in-loop fix isn't converging.
+     The gate's concrete-SVO requirement vs. an argument-chapter relational/interior axis may be a
+     design question requiring principal judgment. Costs 1 interruption.
+  C: Checkpoint and defer c07. Leave at "scened + decomposition-failed-gate"; clean handoff;
+     resume later (possibly after PROP-0024 triage). Costs: c07 stays incomplete this session;
+     saves session budget.
+
+decision: Option A — tightly-constrained 3rd recast with one-attempt hard cap, then escalate.
+
+basis: |
+  methodology:3a (reversibility — A preserves optionality; if it fails, escalation happens at
+  the same cost B would have cost now, minus ~2 dispatches; B burns the escalation interrupt without
+  trying the bounded path) + methodology:3b (cost — A is cheaper than B when the bounded path has
+  a clear diagnostic) + goal:1 (pipeline correctness — DEC-0051 / PROP-0024 already confirmed
+  concrete-witnessing alternatives exist; the physical-observable-verb discriminator is specifically
+  from the passing attempt-1 example "taylor stays in the argument"; the path is not untested) +
+  methodology:3d (optionality — A is B with a first attempt; B is A minus the attempt)
+
+rationale: |
+  Three reasons option A is right over B and C at this moment.
+
+  1. THE DIAGNOSTIC IS CONCRETE AND VALIDATED. Attempt 1 itself produced a passing example of the
+     exact form needed: "taylor stays in the argument" — physical-positional verb (stays), concrete
+     actor (taylor), semi-abstract object (the argument) — PASSED. "The argument completes" (no
+     actor, cognitive-object, abstract-subject) — FAILED. The discriminator is not ambiguous: it
+     is verb physicality. The reason attempt 2 failed worse is that the screen-writer's recast
+     defaulted to holds-on-abstraction verbs (holds/carries/sets-on-abstraction) and modifier
+     chains — the exact same class of errors, just relabeled. The fix is not architectural; it is a
+     brief-discipline constraint the screen-writer did not have. Option A gives that constraint
+     explicitly: single subject; physical-observable verb only; verb list enumerated; modifier
+     prohibition explicit; use speech bones for the thesis/argument-complete events. This is a
+     qualitatively different brief than attempt 2's, which lacked these form constraints.
+
+  2. B IS PREMATURE WITHOUT TRYING THE BOUNDED PATH. Escalating to the human requires the claim
+     that the gate's concrete-SVO requirement is incompatible with argument-chapter interior axes.
+     DEC-0051 explicitly resolved this: "concrete witnessing of relational/interior axis-moves is
+     achievable without physical-prop invention." The auditor's own report enumerated per-bone
+     alternatives (enacted physical postures, speech bones with concrete objectives, leave-taking
+     beats, stillness-against-pressure forms). The evidence base says the path exists. Escalating
+     before a correctly-briefed attempt would surface a problem that does not yet exist in evidence.
+     The human's likely response to B would be "try it with the correct form constraints first."
+     Option A IS that attempt. B should follow A if A fails.
+
+  3. C IS STRICTLY WORSE THAN A. Deferring saves ~2 dispatches at the cost of leaving c07 in
+     decomposition-failed state requiring a cold-session resume — which adds orientation cost.
+     The physical-observable-verb diagnostic is live and clear in this session's context. Running
+     A now costs ~2 dispatches; running A next session costs ~2 dispatches + context reconstruction
+     overhead. C has no advantage over A unless the session is critically budget-constrained, which
+     the caller flagged as a concern but not a hard block.
+
+  BRIEF CONSTRAINTS FOR ATTEMPT 3 (mandatory, verbatim for the screen-writer):
+  - Single named actor per bone SVO. No multi-subject ("taylor and halvard" prohibited).
+  - Verb must be physical-observable: faces / stays / steps / turns (body, not argument) / enters /
+    leaves / sets-down (physical object) / reaches / leans / looks / speaks / waits. NOT: holds-on-
+    abstraction (holds the silence, holds the answer), carries-abstraction, sets-on-abstraction,
+    cognitive verbs (considers, weighs, accepts, completes, receives).
+  - No prepositional/adverb modifier tails in the SVO text. "taylor faces halvard" not "taylor
+    faces halvard across the sept-corner stone."
+  - Speech bones are concrete and authorable. Use them for the thesis-lands and argument-completes
+    events. "halvard speaks the thesis to taylor" is concrete. "taylor stays at the sept corner"
+    witnesses axis-move without cognitive-object form.
+  - Axis-move witnesses: pol-reg +0.3 and soc-tether +1.0 must be witnessed by physical-observable-
+    verb bones per the above. "taylor stays at the sept corner" form PASSED in attempt 1 — that
+    form is the template.
+  - On attempt fail (any HARD at Phase 6 after this brief): STOP. Do not revise again in this
+    session. Surface a clean checkpoint and escalate to human.
+
+  ONE-ATTEMPT CAP is mandatory. If attempt 3 fails, the question is genuinely architectural — the
+  concrete-SVO requirement vs. this specific chapter's interior substance contract requires a
+  principal judgment call that admin cannot make from goals + LTM. That escalation is not premature
+  after a correctly-briefed third attempt.
+
+trade-off: |
+  Option A vs B: B costs the same escalation interrupt at session-close without the bounded attempt.
+  If A succeeds (which the diagnostic evidence suggests it should), B was unnecessary. If A fails,
+  escalation happens at A's cost (2 dispatches) + B's cost — a small premium over B directly. The
+  expected value calculation favors A because the probability of success on a correctly-briefed
+  form-constrained brief (with the exact discriminating example from attempt 1 available) is non-
+  trivial. Methodology:3a and 3b both favor A.
+
+  Option A vs C: 2 dispatches now vs cold-resume later + same 2 dispatches. A is strictly better
+  unless session is hard-limited. The caller flagged session length as a concern, not a hard block;
+  2 dispatches is minimal additional spend.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
