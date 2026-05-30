@@ -3855,6 +3855,14 @@ books:
               stakes_axis: political_register-prot
             stale_since: null
 
+      # /and-substance chapter b01c06 — ATTEMPT 1 VOIDED (2026-05-30):
+      # The orchestrator confabulated a wrong chapter (a "missing-girl rescue" with fabricated
+      # cost-ledger anchors cl06a/cl06b and a +1.0/+1.0/+1.0 Δ) and briefed all Phase-2/4/5/5.5
+      # agents on it. The Phase 4 auditor (cl06a/cl06b nonexistent; Δ contradicts this contract)
+      # and the dramatist (4-scene rescue ≠ this 3-scene Otto-elder-list chapter) caught the
+      # substitution. The contract below was NEVER altered. Attempt-1 artifacts quarantined:
+      #   _drafts/b01c06-draft-2026-05-30.md.VOIDED, chunk-cold-read-b01-c06.md.VOIDED.
+      # Re-running /and-substance chapter b01c06 against the real contract below. Status held at planned.
       - slug: b01c06
         status: planned
         chunk: |
