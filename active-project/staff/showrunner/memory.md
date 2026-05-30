@@ -3881,7 +3881,35 @@ books:
       #   (P): proceed, record Q7 confusion list as cold_read_risk_carry → hand to /and-review bones
       #   follow_check (PROP-0020). report: active-project/staff/reviews/chunk-coldread-b01c06-2026-05-30.md
       - slug: b01c06
-        status: bones-written
+        status: audited-r1   # /and-facets COMPLETE (2026-05-30): Phase 5 audit CLEAN (HARD=0) + Phase 5b audience-gate ACCEPT 3-of-3 all facets (3 cycles, no cap-burn)
+        facets_complete:
+          audit_path: active-project/staff/auditor/facets-final-audit.md
+          audit_reaudit_path: active-project/staff/auditor/facets-final-audit-r2.md
+          audit_complete: true
+          audit_hard_findings: 0
+          audit_signal_findings: 10
+          audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md
+          audience_gate_complete: true
+          audience_gate_cycles: 3
+          audience_gate_cap_burned: false
+          bidirectional_loop: validated
+          facets_path: active-project/theater/facets/
+          round_1_complete: true
+          round_2_complete: true
+          context_followability_final: {completeness: FOLLOWABLE, readability: ALIVE}   # PROP-0020/0022
+          phase_5c_admin: skipped   # final cycle clean ACCEPT, no cap-burn, no WARN
+          margit_referrals_open: [SEAM-006 oc-ward-coverage-notes, SEAM-007 oc-jarvis-channel-form, SEAM-008 oc-accounting-ledger]   # prop cards; priority before b01c07 facets
+        stitched: true   # /and-stitch b01-c06 COMPLETE (2026-05-30); draft/b01-c06.md terminal deliverable
+        cold_read:
+          read_at: 2026-05-30
+          verdict: PASS-WITH-DEPTH-PASS-REQUIRED   # DEC-0048; ships terminal + mandatory depth pass before book-stable
+          completeness_axis: {verdict: PASS, basis: "central event (named-person delivery + omission contrast) recovered; jeopardy 3-layer; causality holds; CONTINUE weak-yes"}
+          readability_axis: {verdict: AIRLESS, basis: "reader still reads narrator as instrument reporting itself; accounting middle worst; withheld-name payoff reads as 'a tidy diagram of a feeling'. Breathing spots = the Wren line + the dragging-stylus grounding add (sensory:5 @17) — the overhaul interventions landed but did not de-abstract the apparatus-dominant bone-set"}
+          recovered_summary: "A surveillance operative is pushed to hand over four people by name, does it to keep a hidden girl alive, and quietly protects the one child whose name they refuse to write down."
+          report_path: active-project/staff/reviews/coldread-b01c06-2026-05-30.md
+          signal_clusters: []   # single-arm; spine-staging-gap not triggered (central event recovered + staged: 'I sealed it', 'fingers settled and did not open them at once')
+          depth_pass_pending: true   # /and-write b01c06 revise --from-signals (de-abstract the accounting-middle bones @16-@21); DEC-0048 escalation clause: if next cold-read still AIRLESS-on-central-event -> FAIL/re-decompose
+          stale_since: null
         chunk: |
           Taylor runs the first deliberate rationalize-each-trade beat. A request comes
           through Jarvis that is not ambiguous: Otto wants to know which Flea Bottom ward
@@ -3940,8 +3968,16 @@ books:
           verdict: PASS
           follow_check: PASS-WITH-NOTES
           aliveness: BONES-AIRLESS-RISK-advisory   # PROP-0022; s02-s03 accounting middle; forward to /and-facets Phase 2.5 + /and-stitch Phase 4
-          bones_file_mtime_at_review: 1780107964
+          bones_file_mtime_at_review: 1780111145  # DEC-0047 (2026-05-30): mtime reset by git checkout in fresh container after PR #76 merge; content identity verified via `git diff e9883f2 HEAD` (empty) + review-report internal description match. Stamp reconciled to current mtime — NOT a content re-emit / not an operator override of a content change.
           stale_since: null
+        context_followability:   # PROP-0020/0022 — /and-facets Phase 2.5 + 4.5
+          completeness_verdict: FOLLOWABLE   # Ph2.5 + Ph4.5 both; context-ledger empty (0 CONTEXT-REQUIRED)
+          readability_verdict: ALIVE  # Ph4.5 AIRLESS-HOLE -> Ph4.6 grounding remediation (sensory:3/4/5 @10/@16/@17) -> Ph4.6-Step2 re-review ALIVE (continuous somatic thread across hinge)
+          report_path: active-project/staff/reviews/context-follow-r3-b01-c06-2026-05-30.md
+          reviewed_at: 2026-05-30
+          context_ledger_open: 0
+          grounding_ledger_open: 0   # grd-001/002/003 all satisfied by sensory:3/4/5 at Phase 4.6 (cap-exempt licensed adds)
+          voice_fixable: ["@11", "@14", "@20", "@21"]   # -> /and-stitch Phase 4 voice-embodiment
         substance_delta_measured:
           axes_moved:
             - relational_anchor_status +1.0
@@ -4578,7 +4614,24 @@ books:
                 gate_verdict: {bonefide: true, flat: false}
 
       - slug: b01c07
-        status: planned
+        status: bones-written   # /and-write b01c07 COMPLETE (2026-05-30): Phase 6 bone-gate PASS on rev2 (after 3 attempts; DEC-0051/0052); Phase 7 emit done
+        bones_file: theater/bones/b01-c07.md
+        bones_count: 25
+        substance_bone_gate_verdict: PASS
+        # /and-write b01c07 (2026-05-30): 3-attempt bone-gate battle on an ARGUMENT chapter.
+        #   attempt 1 (38 bones): FAIL 6 HARD (4 argument-spine interiority bones). Phase 6.5 admin -> PROP-0024 (DEC-0051): gate working; Phase-1 brief lacks argument-spine concrete-SVO constraint.
+        #   attempt 2 (rev1: 8 audience-deletes + recast): FAIL WORSE 7 HARD (recasts used holds-on-abstraction / multi-subject / modifiers).
+        #   attempt 3 (rev2: 2 moving recasts to physical-verb forms 'faces'/'stays' + 5 interior DELETES -> NI facets + 1 modifier strip; DEC-0052 constrained, 1-attempt cap): PASS, HARD=0. 38->25 bones.
+        #   Resolution validates the discriminator: physical-observable VERB witnesses the axis (not abstraction-object); delete-over-invent for interiority (sept-corner conversation has no ledger/prop to ground argument-beats); interior readings -> narrator-interest facets. Abstraction-dominance 100/100/100% post-fix. Aggregation EXACT (pol-reg +0.5, soc-tether +1.0).
+        # Reports: write-b01c07-bonegate{,-r2,-r3}.md. Full per-bone substance_delta + event_map + NI-facet-handoff notes: _drafts/b01c07-bones-draft-2026-05-30-rev2.md (canonical per-bone source until scenes[].bones[] persist; bones file is flattened SVO source).
+        dialogue_files: [theater/dialogue/septon-halvard-flea-bottom.md, theater/dialogue/taylor-hebert-kl-122ac.md]
+        dialogue_citations:   # anchors realigned post-rev2 renumber
+          - "b01c07s02n04 (flat 12) -> [septon-halvard-flea-bottom:1]  (compound-corruption thesis via the errand-man)"
+          - "b01c07s03n02 (flat 19) -> [taylor-hebert-kl-122ac:1]      (Wenna Cobb counter; WATCH-1 concrete: name+street+failure-mechanism)"
+          - "b01c07s03n04 (flat 21) -> [septon-halvard-flea-bottom:2]  (cost-acknowledgment; no retraction)"
+        scene_map_file: theater/facets/scene-map-b01-c07.md
+        write_margit_referrals_open:
+          - "oc-sept-corner.card.md — NEW location (the sept corner / chandler's storehouse, Flea Bottom Hook); first-touched c07; loc card MUST be authored before /and-facets b01c07 Phase 0 (locations: resolution gate). Same class as c06 oc-* SEAMs."
         chunk: |
           A breathing chapter: Taylor consolidates the ledger without a new major breach.
           She has been running the arrangement for two months and the accounting has become
@@ -4648,6 +4701,174 @@ books:
             - "Taylor: moral_framework rank 0; political_register-prot rank 3 (register sharpened by Halvard articulation demand); relational_anchor rank 3; moral_legibility rank 5"
             - "Halvard: counter-argument genuinely engaged; not resolved; will return"
           target_chapter: b01c08
+        chunk_cold_read:
+          reviewed_at: 2026-05-30
+          verdict: PASS-CHUNK-VOICE-RISK   # PROP-0019 / PROP-0019-A; summary maps to goal + CONTINUE barely-yes -> PASS-CHUNK family; Step 2.5 Signal B fires (central content is a discursive argument; named-death is the lone concrete anchor, flagged thin)
+          recovered_summary: "A woman running a morally-compromised arrangement overhears a man unknowingly argue against exactly what she does, weighs it, names the dead that justify her, and walks off without either conceding."
+          continue: marginal-yes   # "barely yes — on the strength of the named dead body"
+          continue_strict: marginal-yes
+          report_path: active-project/staff/reviews/chunk-coldread-b01c07-2026-05-30.md
+          disposition: PASS-CHUNK-VOICE-RISK proceeds to Phase 6 automatically (non-blocking; no admin disposition — summary maps + continue yes; dramatist+auditor+audience all ACCEPTED structure)
+          voice_risk:
+            triggered: true
+            central_event: "the Halvard principled-slower argument + Taylor's counter (naming the specific body that prompted the arrangement)"
+            signals: ["central 'event' is a discursive argument at seminar-risk", "the one concrete anchor (the named death) read as thin — the lone thing holding CONTINUE", "low present jeopardy on a non-coda (hinge) chapter", "PAYOFF read as position-statement-not-turn (design-inherent for a d09-planting hinge)"]
+            note: "Arms /and-stitch Phase 8.5 central-event-muffle check + Phase 9 jeopardy scrutiny. The low-event/low-jeopardy is partly design-inherent (breathing/argument chapter) but the named-death anchor MUST land concrete or the chapter reads as a seminar."
+          cold_read_risk_carry: |
+            CAUSALITY gap (Class-A, actionable at /and-write): the reader could not tell WHY Taylor stays in
+            the conversation — s02 twice says "she could move; she does not" without a motivating cause. The
+            engagement is asserted, not caused. /and-write must motivate why the argument grips her (audience
+            WATCH-2: the thesis must get through / land somewhere she can feel it BEFORE she picks up the counter).
+            Design-inherent (carry as risk, not defect): low present jeopardy + no-turn payoff are legitimate
+            for a breathing hinge that plants the d09 foreclosure — but the chapter leans entirely on the
+            named-death beat, which must be concrete (audience WATCH-1).
+        scenes:
+          - slug: b01c07s01
+            seq: 1
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              Two months in, the accounting is [image: ledger-as-wallpaper] — routine, no longer a moral
+              event, just the form the arrangement takes on a given day. Taylor moves through the Hook
+              ward-coverage circuit: three wards, the courier-route pass, the Rushwick margin. The insect-feed
+              runs at its usual low-profile density and returns nothing unusual. The work [mechanism:
+              consolidation-as-normalization] is holding. At the sept corner — the chandler's storehouse that
+              doubles as Halvard's fixed point on holy days and most other days — Taylor pauses because a man
+              is blocking the passage with a handcart of bundled rags and Halvard [force: halvard-as-precinct-node]
+              is already there, already talking to the handcart man about someone on the Lane who is running a
+              fever that will not break. The blocking is accidental; [event: halt-and-contact] the contact is not.
+              Taylor waits out the handcart. Halvard sees her waiting. He does not try to categorize what she is
+              doing here; [image: halvard-not-categorizing] he extends the same plain acknowledgment he extends
+              to anyone present in a space he occupies. He names the sick child — Derry, seven years old, the
+              bone-setter's ward — [event: sick-child-named] as though Taylor's being here is ordinary and not
+              requiring explanation. She does not correct the assumption. The insect-feed [mechanism:
+              passive-radar-placing-halvard] has had Halvard in its peripheral register since the first week;
+              she knows his circuit; she has not thought about what that means. She does not think about it now.
+            scene_conflict:
+              protagonist_force: "Taylor's ledger-discipline — the two-month consolidation pattern; the accounting that has made the arrangement ordinary"
+              opposing_force: "Halvard's plain-contact register — the presence that does not require explanation or categorization; an ordinary social physics Taylor's surveillance architecture is not designed to absorb"
+              stakes_axis: social_tether-prot-rise   # NOTE (auditor flag fault-009): held axis this scene; conflict-frame label, NOT an authoring mandate — /and-write Phase 1 must not read as Δ-required (legal per Phase-3 union rule)
+            substance_delta:
+              axes_in_motion: []
+              axes_held:
+                - axis: political_register-prot
+                  rationale: "sick-child introduction is Flea Bottom-layer content; no court-tier material; articulation-demand requires Halvard to name the argument first, which is s02"
+                - axis: social_tether-prot-rise
+                  rationale: "contact established here but tether-deepening event is the genuine engagement in s02/s03; holds at rank 3 through scene-close"
+                - axis: moral_framework
+                  rationale: "consolidation-mode; no new breach; holds at rank 0"
+                - axis: moral_legibility_to_self
+                  rationale: "the passive-radar note on Halvard is a texture beat, not a legibility event; holds at rank 5"
+                - axis: relational_anchor_status
+                  rationale: "Wren in coverage; no new weight; holds at rank 3"
+                - axis: capability
+                  rationale: "maintenance coverage; no new deployment"
+              density_target: 0.4-0.55
+          - slug: b01c07s02
+            seq: 2
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              Halvard [force: halvard-as-principled-slower] has not left the conversation. He is describing what
+              the fever does to a seven-year-old — the specific physical progress of it, the bone-setter's
+              inability to source the right herbs, what a maester's visit would cost and why that cost cannot be
+              met — in a register that is neither complaint nor appeal but plain accounting of a situation. Taylor
+              is still there. [event: taylor-stays-in-conversation] She could move; she does not. The insect-feed
+              registers nothing actionable in the immediate radius and the circuit can hold for a few minutes.
+              Halvard shifts — not abruptly — from the sick child to a question about a man further up the Lane,
+              someone who has been running errands for a household that pays him in kind rather than coin, and in
+              unpacking why this seems wrong to him, Halvard arrives at the [mechanism:
+              principled-slower-thesis-as-incidental] thesis without announcing it as a thesis: that [event:
+              argument-named-without-application] participating in a corrupt arrangement — even in the service of
+              mitigation, even when the mitigation is real — compounds the corruption at the rate of the
+              corruption. Not as fast; not more. At the rate. The slower method costs more up front because it
+              refuses the efficiency of the arrangement. It costs less in the end because [image:
+              corruption-as-compound-interest] the interest does not accumulate. He does not know he is describing
+              Taylor's arrangement. He is describing the Lane man's. Taylor [force: taylor-genuine-engagement]
+              does not move away from this. She stays in it. [event: taylor-does-not-dismiss] The argument is not
+              wrong in its own terms. She can feel the exact place where her ledger would rebut it and she does
+              not produce the rebuttal yet — she turns the thesis over, reads it for structural soundness, notices
+              where it holds and where it does not hold. The exchange [mechanism: engagement-without-resolution]
+              is not performance; it is the kind of working-through that happens when you take something
+              seriously. Halvard notices she is taking it seriously. He does not press. [image:
+              halvard-allowing-the-silence] The silence works.
+            scene_conflict:
+              protagonist_force: "Taylor's genuine engagement — the argument is structurally sound in its own terms; she cannot dismiss it without cost; the ledger-discipline that requires honest accounting of an opposing position"
+              opposing_force: "Halvard's principled-slower thesis — named incidentally, without knowing it applies; the compound-corruption mechanism; the slower method as an available road Taylor did not take"
+              stakes_axis: political_register-prot
+            substance_delta:
+              axes_in_motion:
+                - axis: political_register-prot
+                  direction: up
+                  target_delta_magnitude: 0.3
+                  cost_ledger_anchor: null
+                  notes: "taking the compound-corruption thesis seriously requires locating its object in the actual arrangement; the resentment color from d05 acquires a partial structural frame; +0.3 of the chapter's +0.5"
+                - axis: social_tether-prot-rise
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: null
+                  notes: "genuine engagement in an unstructured working conversation — not a transaction, not a function — deepens the social embedding; +0.5 of the chapter's +1.0"
+              axes_held:
+                - axis: moral_framework
+                  rationale: "evaluative not actional; no new breach; holds at rank 0"
+                - axis: moral_legibility_to_self
+                  rationale: "taking the argument seriously is legibility working, but resolution deferred; holds at rank 5"
+                - axis: relational_anchor_status
+                  rationale: "no new weight; holds at rank 3"
+                - axis: capability
+                  rationale: "no new deployment"
+              density_target: 0.55-0.7
+          - slug: b01c07s03
+            seq: 3
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              Taylor [force: taylor-counter-deployed] names the body count. Not as a rhetorical move — she does
+              not perform this — but because the argument requires it: if the slower method is the correct
+              account, the correct account must include what the slower method costs in the interval before the
+              interest stops accumulating. She knows the number for the Hook ward alone: [event: body-count-named]
+              the fever season two years back, before anyone with her specific kind of coverage was present to
+              route the maester-call that saved the bone-setter's previous ward. She can name [mechanism:
+              specific-body-as-evidence] the body that prompted her to be here at all — not the category, the
+              person; [image: named-death-as-ledger-entry] a specific name in a specific street, someone who died
+              in the interval while the slower method held its principles intact. Halvard [force:
+              halvard-without-sufficient-answer] does not have an answer for this that closes the question. He has
+              an answer of a kind: [event: halvard-acknowledges-cost] he knows the slower method has a body count;
+              he has not resolved the cost; he has decided not to endorse the faster method because the interest
+              accumulates and he cannot see where it stops. He is telling her this honestly. He is not telling her
+              she is wrong. He is telling her the cost he has decided to pay. [image: two-accountings-in-parallel]
+              Taylor's counter does not win. Halvard's thesis does not win. [event: unresolved-close] The chapter
+              ends with both accountings sitting in the space between them, structurally intact and mutually
+              undefeated. Taylor leaves the corner first. [mechanism: foreclosure-planted-not-enacted] The argument
+              is available to her. She has not foreclosed it. The foreclosure that happens at d09 will be a choice,
+              readable as a choice, because this moment will have happened and she will have known what she was
+              stepping away from.
+            scene_conflict:
+              protagonist_force: "Taylor's counter-argument — the specific body count; the named death that prompted the arrangement; the honest accounting of what the slower method costs in real time"
+              opposing_force: "Halvard's sustained thesis — he names the cost of the slower method honestly and does not retract; the compound-corruption mechanism holds even without a sufficient answer to the body count; the argument remains structurally available"
+              stakes_axis: social_tether-prot-rise
+            substance_delta:
+              axes_in_motion:
+                - axis: political_register-prot
+                  direction: up
+                  target_delta_magnitude: 0.2
+                  cost_ledger_anchor: null
+                  notes: "naming the body count requires locating the source of resentment in specific structural failures of the slower method; the register sharpens to: resentment toward the arrangement that produced the named death AND toward the framework that would ask her to repeat the cost; +0.2 completing the chapter's +0.5"
+                - axis: social_tether-prot-rise
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: null
+                  notes: "completing the argument rather than closing it — both parties inhabit the exchange without transaction — is the social embedding event; the precinct tether deepens at the precinct-node level; +0.5 completing the chapter's +1.0"
+              axes_held:
+                - axis: moral_framework
+                  rationale: "the counter deploys Taylor's existing rationalization honestly; no new breach; holds at rank 0"
+                - axis: moral_legibility_to_self
+                  rationale: "resolution DEFERRED per chapter contract; genuine engagement = legibility working, not advancing; holds at rank 5"
+                - axis: relational_anchor_status
+                  rationale: "Wren not in this scene's content; holds at rank 3"
+                - axis: capability
+                  rationale: "no deployment; holds"
+              density_target: 0.5-0.65
 
       - slug: b01c08
         status: planned

@@ -2593,3 +2593,368 @@ recommendation:
     bank a false PASS on dense-voice chapters.
 status: open-pending-principal-triage
 ```
+
+---
+
+## PROP-0023
+
+```yaml
+id: PROP-0023   # renumbered from PROP-0020 by orchestrator (2026-05-30): PROP-0020 is the existing completeness/context-weave proposal (20 refs repo-wide); admin process-critic mislabeled this new apparatus-airless proposal. Content unchanged; ID corrected to next-free (PROP-0021 gap, 0022 taken).
+created_at: 2026-05-30T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01c06-2026-05-30.md
+  source_verdict: PASS-WITH-DEPTH-PASS-REQUIRED
+target:
+  type: command
+  path: .claude/commands/and-facets.md
+  section: "Phase 4.6 — Conditional R3 + fixer / Step 2 grounding-ledger re-review ALIVE verdict criteria"
+change_type: modify
+rationale: |
+  b01-c06 is the first live chapter under the 2026-05-29 readability+completeness overhaul.
+  The readability track fired correctly at every upstream checkpoint:
+    - /and-review bones flagged BONES-AIRLESS-RISK on the accounting middle
+    - Phase 2.5 opened 3 grounding-ledger lines
+    - Phase 4.5 separated-scoring returned AIRLESS-HOLE
+    - Phase 4.6 authored 3 cap-exempt grounding sensory adds
+    - Phase 4.6 Step-2 re-review returned ALIVE
+    - /and-stitch Phase 4 applied voice-embodiment discipline (4 VOICE-FIXABLE anchors person-first)
+  The terminal cold-read (Phase 9) still returned AIRLESS.
+
+  Root cause (per DEC-0048 + DEC-0049): ~18/25 bones have record-substrate verbs —
+  apparatus-dominant by contract. The overhaul's interventions (3 grounding adds + 4 person-first
+  renders) were exactly the 2 spots the cold-reader named as "the only breathing spots" — they
+  worked, but they covered ~7 of ~18 apparatus-dominant bones. The grounding-ledger mechanism
+  (add sensory anchors around apparatus prose) is PALLIATIVE on bone-layer abstraction — it
+  cannot de-abstract the underlying apparatus SVOs; it only surrounds them with sensory adds.
+
+  Critical structural distinction this overhaul was not designed/tested against:
+    - c05's airlessness: render-layer (concrete bones, apparatus-rendered at stitch) →
+      cured by person-first voice discipline. The overhaul was designed against this class.
+    - c06's airlessness: bone-layer (apparatus-dominant SVO by contract) →
+      palliative grounding adds and person-first renders cannot close the gap without
+      content invention. This class was not in the overhaul's evidence base.
+
+  The Phase 4.6 Step-2 re-review returned ALIVE after the 3 grounding adds, clearing the
+  chapter for stitch. This was a false-ALIVE: an informed context-aware reviewer called ALIVE
+  where a context-blind cold-reader called AIRLESS. The mechanism: context-aware reviewers
+  compensate for apparatus prose by using their knowledge of the surveillance-operative POV
+  and the chapter's substance contract. Cold-readers cannot access that compensation. For
+  apparatus-dominant chapters, the "does it breathe after grounding adds?" question has
+  systematically different answers from informed vs. uninformed perspectives.
+
+  The false-ALIVE at Phase 4.6 deferred the depth pass one full stitch + cold-read cycle
+  later than necessary. If Phase 4.6 had output AIRLESS-UNRESOLVABLE-AT-FACETS-LAYER instead
+  of ALIVE, the chapter would have routed to /and-write revise --from-signals BEFORE stitch,
+  saving the stitch + Phase 9 round-trip (10-15 dispatches).
+
+  The fix is a modifier to the Phase 4.6 Step-2 ALIVE verdict criteria: on an
+  apparatus-dominant chapter (both BONES-AIRLESS-RISK in bones_review AND ABSTRACTION-DOMINANT
+  SIGNAL in Phase 6 gate record), ALIVE requires explicit evidence that at least one bone per
+  scene was de-abstracted (apparatus verb replaced by concrete actor-verb-object) — not just
+  evidence that grounding adds are present around apparatus prose. If grounding adds are the
+  only change and the bone-set remains apparatus-dominant, the verdict is
+  AIRLESS-UNRESOLVABLE-AT-FACETS-LAYER rather than ALIVE.
+
+  This is change_type: modify on existing Phase 4.6 verdict criteria, not a new gate.
+  The detection mechanism (BONES-AIRLESS-RISK + AIRLESS-HOLE) is unchanged and correct.
+  The modification is to what ALIVE means for the re-review step when both upstream
+  apparatus-dominance signals are in the chapter record.
+
+  Recurrence count: 1 (first live apparatus-dominant chapter under the overhaul).
+  Non-catastrophic (depth-pass loop fired correctly at Phase 9). Proposing at first
+  occurrence because:
+  (a) The mechanism is precisely discriminated from c05's render-layer class — two structurally
+      distinct failure modes of "airlessness" that the grounding-ledger handles differently.
+  (b) The false-ALIVE is a concrete gate gap (threshold miss on an existing gate step), not
+      a taste call — it has a mechanical detection predicate (BONES-AIRLESS-RISK +
+      ABSTRACTION-DOMINANT both in record) and a mechanical correction (require bone-level
+      de-abstraction evidence before ALIVE).
+  (c) The overhaul's own honest-limitations section (report 2026-05-29 §4) stated: "nothing
+      is live-proven; b01-c06 is the first live test" — this is exactly the class of gap live
+      testing was expected to surface, making a first-occurrence proposal appropriate.
+  (d) The fix is S-cost and modify-only; no new gate, no new command phase, no schema change.
+
+evidence_refs:
+  - "active-project/staff/reviews/coldread-b01c06-2026-05-30.md — AIRLESS verdict; two breathing
+    spots (stylus grounding add @17 + child's spoken line); accounting section (27-35) worst
+    offender: 'abstract bookkeeping metaphor stacked on abstract metaphor'; withheld name 'reads
+    as a tidy diagram of a feeling'"
+  - "staff/admin/decisions.md — DEC-0048: root cause 'apparatus-dominant bone-set (~18/25
+    record-substrate verbs) — a bone-layer authoring defect, not a stitch-layer voice problem';
+    Phase 4.6 ALIVE false-positive traced; PASS-WITH-DEPTH-PASS-REQUIRED disposition"
+  - "staff/admin/readability-completeness-overhaul-report-2026-05-29.md — §4 Honest limitations:
+    'Nothing is live-proven. Every verification ran retroactively on already-shipped c05...
+    b01-c06 is the first live test'; §3 PROP-0022 aliveness axis rerun on c05 found
+    'AIRLESS (8 VOICE-FIXABLE + 5 GROUNDING-REQUIRED)' — 13 findings on c05 vs 3 on c06
+    (c06 is a harder apparatus-dominance class; the reviewer found fewer because the whole
+    bone-set is apparatus-dominant, not isolated patches)"
+  - ".claude/commands/and-facets.md — Phase 4.6 Step-2 re-review (grounding-ledger); Phase 4.5
+    AIRLESS-HOLE trigger; Phase 2.5 aliveness axis"
+  - ".claude/commands/and-review.md — BONES-AIRLESS-RISK advisory note: 'If the bone set is
+    wholly apparatus/process with no embodied or sensory-grounded beats, note BONES-AIRLESS-RISK
+    in the record: it forewarns /and-facets Phase 2.5 to scrutinize the aliveness axis and likely
+    open grounding-ledger lines'"
+  - ".claude/commands/and-write.md — Phase 6 ABSTRACTION-DOMINANT SIGNAL: 'grounding bones < 25%
+    of non-chatter' — the upstream apparatus-dominance detector whose firing (in conjunction with
+    BONES-AIRLESS-RISK) is the proposed predicate for the stricter Phase 4.6 ALIVE bar"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-facets.md, Phase 4.6 conditional R3 section, in the Step-2 grounding-
+  ledger re-review instructions, add an apparatus-dominance qualifier to the ALIVE verdict:
+
+  CURRENT (implied):
+    Phase 4.6 Step-2 re-review: if grounding adds are present and the aliveness reviewer reports
+    the airless zones now breathe → verdict ALIVE → proceed to Phase 5.
+
+  PROPOSED — add a qualifier block before the ALIVE verdict:
+
+    **Apparatus-dominance qualifier (fires when both conditions hold):**
+
+    Condition A: `chapters[<slug>].bones_review.aliveness_note` contains `BONES-AIRLESS-RISK`
+    (the bones reviewer flagged the whole chapter as apparatus/process-dominant at /and-review bones).
+
+    Condition B: `chapters[<slug>].phase6_gate_signals` contains `ABSTRACTION-DOMINANT`
+    (Phase 6 bone-gate SIGNAL: grounding bones < 25% of non-chatter — confirms the apparatus-
+    dominance is bone-level, not a localized patch).
+
+    If BOTH conditions hold, the Phase 4.6 Step-2 ALIVE verdict requires:
+
+      **Evidence of bone-level de-abstraction (per scene).** For each scene in the chapter,
+      the re-reviewer must identify ≥1 bone where the apparatus verb in the original SVO was
+      replaced by a concrete actor-verb-object (e.g., "the count updates" → "Taylor marks one
+      adult male, records, closes the notebook"). If the only changes are grounding sensory adds
+      AROUND existing apparatus-dominant bones (the standard grounding-ledger add pattern),
+      without any bone-level de-abstraction, the re-reviewer MUST return:
+
+        AIRLESS-UNRESOLVABLE-AT-FACETS-LAYER: apparatus-dominant bone-set. Grounding adds
+        address isolated airless patches but cannot de-abstract the spine. Route to
+        /and-write revise --from-signals before stitch. The ABSTRACTION-DOMINANT SIGNAL list
+        from Phase 6 is the signal set.
+
+      The re-reviewer may still return ALIVE if they can point to ≥1 concrete actor-verb-object
+      bone per scene that was not present before Phase 4.6 (or confirm that a grounding-add
+      bone itself carries concrete person-first SVO that de-abstracts the dominant verb pattern).
+      VOICE-FIXABLE classifications (apparatus verb that can be person-first'd without content
+      invention) do NOT count toward this requirement — they are stitch-layer, not bone-layer.
+
+    The re-reviewer's verdict note must explicitly state whether the apparatus-dominance qualifier
+    applies and which condition triggered it (A-only, B-only, or both). If neither condition holds,
+    the qualifier does not fire and the standard ALIVE/AIRLESS verdict applies.
+
+  **Routing when AIRLESS-UNRESOLVABLE-AT-FACETS-LAYER fires:**
+    Route to /and-write revise --from-signals with the following signal set passed to the
+    brief:
+      - All GROUNDING-REQUIRED entries from the grounding-ledger (these are the bones the
+        facets layer targeted; the /and-write revise brief should de-abstract these bones
+        specifically rather than just surrounding them with grounding adds)
+      - ABSTRACTION-DOMINANT SIGNAL list from Phase 6 (the full apparatus-dominant bone set)
+      - The Phase 4.6 re-reviewer's note on which scenes lack bone-level de-abstraction
+
+    Memory write: chapters[<slug>].context_followability.readability_verdict =
+    AIRLESS-UNRESOLVABLE-AT-FACETS-LAYER (not AIRLESS-HOLE; distinct outcome that routes
+    upstream rather than to stitch).
+
+  **Why this qualifier does not over-fire:**
+  The two-condition predicate (BONES-AIRLESS-RISK + ABSTRACTION-DOMINANT) requires both:
+  - The bones reviewer must have flagged whole-chapter apparatus-dominance (not just noted
+    occasional instrument-register bones, which are common in surveillance chapters)
+  - Phase 6 must have fired ABSTRACTION-DOMINANT (grounding bones < 25%) — a structural
+    threshold, not a taste call
+
+  A chapter with isolated apparatus patches (normal surveillance register) will not have
+  ABSTRACTION-DOMINANT in its Phase 6 record and the qualifier will not fire. The qualifier
+  is scoped to chapters that are apparatus-dominant by the bone-set's own structural
+  composition, not chapters that merely use apparatus language in context.
+
+  **Note on the grounding-ledger mechanism:**
+  The grounding-ledger is still the correct intervention for chapters where apparatus-dominance
+  is localized (isolated patches). The qualifier does not retire the grounding-ledger or prevent
+  grounding adds — it only changes the ALIVE verdict threshold when the bone-set is structurally
+  apparatus-dominant. Chapters where apparatus-dominance is localized (< both condition thresholds)
+  continue through the existing grounding-ledger path unchanged.
+
+  MEMORY SCHEMA NOTE (optional, deferred):
+  The two-condition check requires reading two fields:
+  - `chapters[<slug>].bones_review.aliveness_note` — current; written by /and-review bones
+  - `chapters[<slug>].phase6_gate_signals` — may need a new memory field if ABSTRACTION-DOMINANT
+    is not currently persisted to showrunner memory (it fires at Phase 6 but may only live in the
+    bone-gate audit report). If not currently in memory, the Phase 4.6 step should read the
+    bone-gate report directly to check. Adding a `phase6_signals: [<signal-name>]` field to
+    `schemas/showrunner-memory.schema.md` would make this mechanical; cost S.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0024
+
+```yaml
+id: PROP-0024
+created_at: 2026-05-30T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/write-b01c07-bonegate.md
+  source_verdict: "FAIL (6 HARD — EVENT-NOT-CONCRETE + SUBSTANCE-FLAT on 4 argument-middle bones: s02n06, s02n07, s03n04, s03n09)"
+  gate_path: .claude/commands/and-write.md#phase-6
+target:
+  type: command
+  path: .claude/commands/and-write.md
+  section: "Phase 1 — Scene-decomposition, step 2 (bone-shape + SVO discipline)"
+change_type: modify
+rationale: |
+  b01c07 is a HINGE chapter whose central content is a discursive argument (Septon Halvard's
+  principled-slower thesis, genuinely engaged + unresolved). /and-substance chapter Phase 5.5
+  chunk-cold-read returned PASS-CHUNK-VOICE-RISK with an explicit "seminar-risk" flag. The
+  /and-write Phase 1 decomposition brief carried that risk flag + WATCH-1 (named-death concrete)
+  + front-load-concreteness instruction. The screen-writer honored WATCH-1 (Wenna Cobb is
+  concrete in dialogue). But the four spine bones carrying the argument's progression — the
+  thesis landing (s02n06), Taylor turning the thesis (s02n07 + its +0.3 axis-move), the named
+  death landing (s03n04), and the argument completing (s03n09 + its +0.5 axis-move) — were
+  authored as abstract arrival/landing/turning/completing interiority-form SVOs. Phase 6
+  EVENT-NOT-CONCRETE correctly fired HARD on all four, plus SUBSTANCE-FLAT on the two that
+  carried axis-moves.
+
+  The gate is working as intended. The revise cycle routes correctly. The process question is:
+  should the Phase 1 brief have prevented this at authoring time, given it explicitly carried
+  the PASS-CHUNK-VOICE-RISK / seminar-risk flag?
+
+  The answer is yes, and the gap is precise: Phase 1 step 2 instructs the screen-writer on
+  SVO discipline and the event-coverage map but has no explicit guidance on how to author
+  spine bones for argument-class chapters where the central event IS a discursive argument
+  progression. The seminar-risk flag from Phase 5.5 enters the brief as risk context, but
+  the brief does not translate it into a bone-authoring constraint on the argument-spine bones.
+  The current discipline covers the schema-level interiority prohibition (no perception verbs,
+  no cognitive objects) but does not name the specific failure mode for argument chapters: the
+  "X lands / X turns / X completes" abstract-arrival form that is not a schema violation on its
+  face (the verb "turns" is physical; "the thesis" as object is what makes it interiority) but IS
+  the canonical failure mode for argument-middle spine bones.
+
+  This is a Phase 1 brief-discipline gap for argument-class / PASS-CHUNK-VOICE-RISK chapters,
+  not a gate miss. The gate detected correctly. The addition is a proactive authoring constraint
+  that the screen-writer receives at decomposition time — the same substance the Phase 6 criteria
+  require, surfaced one phase earlier, so the revise cycle is the exception rather than the rule
+  on argument chapters.
+
+  Distinct from PROP-0023: PROP-0023 targets apparatus-dominant whole-chapter airlessness
+  (Phase 4.6 false-ALIVE threshold). That pattern is ~18/25 apparatus-dominant bones by contract,
+  ABSTRACTION-DOMINANT SIGNAL chapter-wide. The c07 pattern is argument-middle interiority at
+  4 specific spine bones despite a concrete bone-set everywhere else (91/57/69% ratios; the
+  abstraction is concentrated at the 4-bone argument spine). Different failure class (bone-authoring
+  discipline gap vs. ALIVE-verdict threshold), different target (Phase 1 brief vs. Phase 4.6
+  verdict criteria), different command phase.
+
+  Recurrence count: 1. First argument-chapter spine-bone interiority failure. Non-catastrophic
+  (4-bone revise cycle, clear criteria, chapter otherwise clean). Proposing at first occurrence
+  rather than waiting because: (a) the mechanism is precisely discriminated from all prior
+  failure classes; (b) the gap is in the Phase 1 brief (a concrete spec omission, not a taste
+  call); (c) the fix can be written with precision now — the three forms to prohibit (abstract
+  subject + arrival/completion verb; cognitive object + any verb; abstract-progress framing on
+  spine bones) are enumerable; (d) the minimum-repair path (argument-spine bone-authoring
+  constraint in Phase 1 step 2) is S-cost; (e) PASS-CHUNK-VOICE-RISK is already the detection
+  predicate (the flag is in the brief; the constraint only needs to name what the flag implies
+  for bone-authoring).
+
+  Note on question 3 (over-fire risk): the bone-gate report's criteria fields show that concrete
+  witnessing of relational/interior axis-moves is achievable without physical-prop invention —
+  enacted physical postures, speech bones with concrete objectives, departure gestures, stillness-
+  against-pressure forms all satisfy EVENT-NOT-CONCRETE for relational argument events. The
+  gate is not misfiring on legitimate interior-chapter content; the constraint directs the
+  screen-writer toward the available concrete-witnessing vocabulary for this chapter class.
+evidence_refs:
+  - "active-project/staff/auditor/write-b01c07-bonegate.md — fault-001/002/003/004 (FAULT-FORM-INTERIORITY on s02n06/s02n07/s03n04/s03n09); fault-011/012 (SUBSTANCE-FLAT-political_register-prot + SUBSTANCE-FLAT-social_tether-prot-rise on same bones); fix_scope block: spine bones must record observable physical acts from which the cognitive/relational quality can be inferred at the facet layer; event_not_concrete_summary: 4 FAIL of 7 tested"
+  - "active-project/staff/auditor/write-b01c07-bonegate.md — abstraction_dominance: s01=91%, s02=57%, s03=69%; ABSTRACTION-DOMINANT SIGNAL on s02 n06-n09 block only (not chapter-wide); chapter is NOT apparatus-dominant overall — c07 and c06 are structurally distinct failure classes"
+  - "staff/admin/process-proposals.md — PROP-0023 (Phase 4.6 apparatus-dominant false-ALIVE; target phase and failure class both distinct from this proposal: PROP-0023 is whole-chapter apparatus-dominance by contract; PROP-0024 is argument-spine interiority at 4 specific spine bones on a chapter that is otherwise concrete)"
+  - ".claude/commands/and-write.md Phase 1 step 2 — SVO discipline; PASS-CHUNK-VOICE-RISK risk context is received but no explicit bone-authoring constraint for argument-spine positions on flagged chapters is stated"
+  - "active-project/staff/auditor/write-b01c07-bonegate.md — fault-002 criteria: 'the bone must be recast as a concrete physical act by taylor-hebert-kl-122ac that an observer would see or hear — a physical gesture, a posture change, a verbal act, a return gaze, any concrete enacted response to the argument'; fault-004 criteria: 'concrete physically-observable act by a named actor — a leave-taking gesture, moment of mutual stillness, Taylor's physical departure, Halvard's response'"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-write.md, Phase 1 step 2, after the three bone shapes (moving /
+  held / chatter) block and before the event-coverage map instruction, add a subsection:
+
+  **Argument-chapter spine-bone constraint.** Fires when ANY of these predicates hold:
+    (a) `chapters[<slug>].chunk_cold_read.verdict = PASS-CHUNK-VOICE-RISK`
+    (b) Phase 0 brief names seminar-risk / argument-dominant / discursive-argument in WATCH items
+    (c) `chapters[<slug>].dramatic_shape` resolves to persuasion / deliberation / argument class
+
+  On chapters where the predicate fires, spine bones — bones whose `event_map[]` entries cover
+  the argument's progression (thesis delivery, thesis reception, evaluative turn, argument
+  completion, resolution) AND bones carrying axis-moves on relationship-class axes
+  (social_tether, relational_anchor, political_register, reputation, trust, community) where
+  those moves depend on the argument's progress — are subject to an additional bone-authoring
+  constraint:
+
+    **Prohibited forms on argument-spine bones:**
+
+    1. **Abstract-arrival form.** SVO whose subject is the argument, thesis, claim, evidence,
+       or named event itself, driving a metaphorical-arrival verb (lands, settles, strikes, hits,
+       completes, closes, resolves). Examples: "the thesis lands," "the named death lands,"
+       "the argument completes." These map an interior-reception event to an abstract-subject
+       pseudo-action. The schema already bans interiority verbs; this names the canonical
+       argument-chapter evasion that the schema's abstraction-as-subject rule catches but that
+       the screen-writer may not recognise as an interiority form without explicit naming.
+       Both FAULT-FORM-INTERIORITY (Phase 2) and EVENT-NOT-CONCRETE (Phase 6) are HARD.
+
+    2. **Cognitive-object form.** SVO whose named actor is concrete but whose object is the
+       thesis, argument, claim, or any abstraction of it: "taylor turns the thesis," "taylor
+       reads the argument," "taylor weighs the claim." The schema rule is abstraction-as-object
+       = INTERIORITY. The canonical failure: a physical verb ("turns") with an abstract object
+       ("the thesis"). Test: replace the object with a concrete physical referent — if the bone
+       no longer makes sense, the object is an abstraction and the bone is non-concrete.
+
+    **Prescribed alternatives.** For argument-spine positions, author a concrete physical act by
+    a named actor that an observer could witness, from which the argument-progression can be
+    inferred at the narrator-interest facet layer:
+
+    - Thesis reception: not "the thesis lands" — author the observable physical response that
+      signals engagement (actor goes still, actor moves toward the speaker, actor does not reach
+      for the counter, any enacted physical posture an observer reads as reception). The cognitive
+      event is narrator-interest material; the bone records the observable correlate.
+
+    - Evaluative turn: not "taylor turns the thesis" — author the physical act that enacts the
+      turn (a concrete speech bone where the actor delivers a counter, a posture shift, naming a
+      specific object or person, any physically-enacted response). The inner evaluation is
+      narrator-interest; the bone records what an observer sees or hears.
+
+    - Relational axis-moves in argument chapters: the moving bone must physically enact the
+      relational shift. For social_tether, political_register, community, trust axis-moves,
+      record the physical act from which the relational shift can be inferred — enacted presence,
+      a leave-taking, a named acknowledgment, a sustained or broken gaze, a physical departure
+      — not the shift itself as an abstract event.
+
+    - Argument completion: not "the argument completes" — author the physical act that is the
+      completion (a leave-taking beat, a moment of mutual stillness, the actor's physical
+      departure, the other actor's response) from which completion-not-closure can be inferred
+      at the facet layer.
+
+    These alternatives do not restrict what content the chapter carries — the evaluative,
+    interior, and relational dimension belongs in narrator-interest facets citing the bone's
+    concrete SVO as their physical anchor. The constraint governs what the bone itself records.
+
+  **Phase 0 integration note.** When Phase 0 reads
+  `chapters[<slug>].chunk_cold_read.verdict = PASS-CHUNK-VOICE-RISK`, the Phase 0 brief
+  surfacing block MUST include: "Argument-spine constraint active: spine bones carrying
+  thesis-progression and relational axis-moves must be concrete actor-verb-object (not
+  abstract-arrival or cognitive-object form) — see Phase 1 step 2 argument-chapter constraint."
+  This connects the PASS-CHUNK-VOICE-RISK detection to the Phase 1 authoring discipline so
+  the screen-writer receives the constraint at dispatch time, not at Phase 6 gate-time.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```

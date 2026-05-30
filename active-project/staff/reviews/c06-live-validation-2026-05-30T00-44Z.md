@@ -4,7 +4,7 @@
 **Chapter:** b01c06 — Otto elder-list delivery + Wren first-spoken-exchange / name-omission
 **Purpose:** the first LIVE (not retroactive) test of the 2026-05-29 overhaul (PROP-0019/0019-A spine-legibility + chunk-cold-read; PROP-0020 completeness/context-weave; PROP-0022 readability/aliveness twin). The prior session validated everything *retroactively on already-shipped c05*; this run is the live proof it could not provide.
 
-**STATUS: IN PROGRESS.** Chain reached: `/and-substance chapter b01c06` COMPLETE (status scened); `/and-write b01c06` Phase 1 decomposition in flight. Sections below are filled as gates fire. Questions 1–4 (per the task) answered incrementally; final synthesis at chapter-stitch.
+**STATUS: COMPLETE.** Full chain run on b01-c06: `/and-substance chapter` → `/and-write` → `/and-review bones` → `/and-facets` (orchestrator-critic SUCCESS 7/7) → `/and-stitch` (Phase 9 cold-read PASS-WITH-DEPTH-PASS-REQUIRED, DEC-0048). `draft/b01-c06.md` is the terminal deliverable; a depth pass (`/and-write b01c06 revise --from-signals`) is flagged before book-stable. Questions 1–4 answered in the **FINAL SYNTHESIS** section at the bottom of this file.
 
 ---
 
@@ -133,8 +133,281 @@ theater/bones/b01-c06.md (25 bones, flat 1-25, SVO-clean, dialogue token on flat
 | 6a | fidelity (chunk→bones) | review bones | PASS, 0 HARD | no | spine intact; dialogue+SVO+scene-map clean |
 | 6b | **follow_check (PROP-0020)** | review bones | **PASS-WITH-NOTES** | **no** | context-aware reviewer: cold-read NO = 100% context-noise, not a bone defect — the milestone result |
 | 6c | aliveness (PROP-0022) | review bones | BONES-AIRLESS-RISK (advisory) | no | apparatus-dominant; forwarded to facets/stitch; non-blocking |
-| 7 | context + aliveness axes | facets Ph2.5/4.5/4.6 | — | — | PENDING |
-| 7 | context + aliveness axes | facets Ph2.5/4.5/4.6 | — | — | PENDING |
-| 8 | voice-embodiment / READABLE-AIRLESS / spine-promotion | stitch Ph4/9 | — | — | PENDING |
+| 7a | R1 fanout (10 authors) | facets Ph1 | CLEAN | no | apparatus-brief honored by all (see below) |
+| 7b | merge + cite-index | facets Ph2 | CLEAN (no abort) | no | 48 entries, 18/25 lines (72%); body-integrity+stale-cite PASS |
+| 7c | **context+aliveness (Ph2.5)** | facets Ph2.5 | FOLLOWABLE + AIRLESS(3 grd lines) | no | predictions confirmed; context-ledger empty, grounding-ledger opened on accounting middle |
+| 7d | R2 fanin (6 judges) | facets Ph3-4 | KEEP12 + ADD2, 0 del | no | memory↔NI spine repaired across 2 blind judges; metaphor stale-tens stripped |
+| 7e | scene-map URI-SCENE-WINDOW | facets Ph4d | PASS | no | 25/25, 3 scenes |
+| 8a | **separated FOLLOWABLE/ALIVE** | facets Ph4.5 | FOLLOWABLE + AIRLESS-HOLE | no | ⭐ separated-scoring refused to let completeness mask airlessness |
+| 8b | **grounding remediation** | facets Ph4.6 | ALIVE (3 cap-exempt adds) | no | ⭐ readability-twin loop closed live; airless stretch grounded before stitch |
+| 8c | mechanical audit | facets Ph5 | CLEAN (HARD=0, 10 SIGNAL) | no | grounding cap-exemption honored |
+| 8d | **audience-gate (adversarial)** | facets Ph5b | ACCEPT 3-of-3 all facets (3 cycles) | no | caught real voice-drift; bidirectional loop validated; NO cap-burn |
+| 8e | fixer remediation | facets Ph5b c1-c3 | 4 facets cleared (8 sub-repairs) | no | re-audit CLEAN after each; converged cycle 3 |
+| 8f | orchestrator-critic | facets Ph6 | **SUCCESS (7/7)** | no | /and-facets COMPLETE; ship → stitch |
+| 9a | voice-embodiment | stitch Ph4 | applied (4/4 VOICE-FIXABLE person-first) | no | reader named the grounding add + dialogue as the ONLY breathing spots — interventions landed |
+| 9b | **separated READABLE/AIRLESS cold-read** | stitch Ph9 | completeness PASS + readability AIRLESS → **PASS-WITH-DEPTH-PASS-REQUIRED** | no | refused a clean PASS on an airless chapter (the c05 failure mode, caught at terminal gate) |
+| 9c | verdict disposition | stitch Ph9 | DEC-0048 (ships + depth pass) | n/a | FAIL-branch not met (event delivered+recovered); root = apparatus-dominant bones |
 
-_Last updated: 2026-05-30T00:44Z. Continues as gates fire._
+---
+
+## /and-facets b01-c06 — live run log (the second live-validation surface)
+
+### Phase 0 — clean (one environment-artifact disposition)
+- **bones-review mtime false-trip** (Phase 0 step 4b): recorded `bones_file_mtime_at_review` (1780107964)
+  ≠ current mtime (1780111145) because git does not preserve mtimes across the PR #76 merge + fresh
+  re-clone onto this branch. `git diff e9883f2 HEAD` on the bones file = EMPTY (content byte-identical;
+  never re-emitted). Admin **DEC-0047** → reconcile the stamp (content identity verified), not re-run the
+  review. **NOT a gate event of the overhaul** — an environment artifact, logged so it isn't conflated.
+- c05 prior-chapter facet working set (133 files) auto-archived (Phase 0 step 5); c06 scene-map + Wren
+  dialogue/drafts + glossed-terms preserved. the-courier ruled a functional walk-on (no card; excluded
+  from interiority fanout) — already sanctioned upstream (bones-review PASS with this cast).
+
+### Phase 1 — R1 fanout (10 authors): the apparatus-dominant brief held at AUTHORING time
+Entry tally: loc-state 3 · narrator 5 · sensory 2 · state-env 12 · state-taylor 5 · state-wren 0 ·
+memory 2 · feel-taylor 2 · feel-wren 0 · metaphor 1(prov) · vibes 15 · exposition 1.
+
+**⭐ Readability-twin signal at authoring (NEW live evidence for Q2):** every lens author independently
+concentrated fires on the four axis-moving peaks (@4 first-spoken / @8 omission / @22 send / @24 contrast)
+and **declined to over-decorate the accounting spine** to manufacture aliveness — each explicitly flagging
+"airless-risk is a downstream review concern, not an R1 over-fire license" (narrator, memory, sensory,
+feeling all said versions of this). This is the readability twin working at the RIGHT layer: R1 keeps the
+spine concrete-and-honest; the aliveness call is reserved for Phase 2.5's grounding-ledger. Contrast c05,
+where there was no such division of labor and the airless render surfaced only at the terminal cold-read.
+
+**⭐ Completeness signal from the exposition author (NEW live evidence for Q2):** exposition emitted ONE
+entry (a prior-episode bridge preamble @0) and **ZERO new glosses** — independently concluding the chapter
+needs no new orientation because every proper noun is c01–c05 register-resident. This corroborates the
+PROP-0020 thesis from the authoring side: the cold-reader's strict-NO proper-noun load is register-noise,
+not an orientation gap. Two independent readers (the /and-review-bones follow_check AND the blind exposition
+gap-test) now converge on the same call.
+
+### Phase 2 — merge + cite-index: CLEAN
+build_cite_index.py b01-c06 merged 12 author copies, consolidated feeling.md (2 entries) + state-updates.md
+(17 entries, env 1-12 + taylor 13-17 with # source: markers), built cite-index (48 entries; 72% lines
+decorated). No body-integrity abort, no stale-citation abort.
+- *Tooling observation (gate-orthogonal, like the Phase-2 schema false-pos earlier):* the sliced
+  state/feel facets carry per-slice LOCAL [state:N] tokens on the proto-lines that cosmetically collide
+  across sources (state:1 at both @4 and @6) because consolidation renumbers the facet file but not the
+  proto-line tokens. Facet entries are self-anchored by @id, so functionally harmless; **c05 shipped
+  through stitch with the identical pattern.** Not a defect of the overhaul; Phase 5 STRUCTURAL is the
+  backstop if it is ever load-bearing.
+- *Carry to Phase 5 audit:* memory @12/@19 lack NI co-citation (NI fired @4/@8/@13/@22/@24); climax shape
+  → standard NI-spine required → likely CONSTRAINT finding, resolvable at R2 (NI ADD @12/@19 or memory
+  re-anchor) or fixer. Also: 3 new oc-* prop cards (ward-coverage-notes / jarvis-channel-form /
+  accounting-ledger) flagged for margit referral; vibes entry-5 d14-fence-adjacency for R2.
+
+### Phase 2.5 — context + aliveness review: IN PROGRESS (the surface this command exists to test)
+**RESULT — both predictions confirmed.** Axis-1 COMPLETENESS: **FOLLOWABLE / PASS, 0 CONTEXT-REQUIRED**
+(context-ledger empty). A THIRD independent reader converges on the PROP-0020 call (follow_check +
+exposition gap-test + this context-aware read). 2 WEAVE-FIXABLE hints (@17/@18 → NI). Axis-2 ALIVENESS:
+**AIRLESS in the accounting middle** — the BONES-AIRLESS-RISK forewarning called it; **grounding-ledger
+opened 3 lines** (grd-001 @10, grd-002 @16, grd-003 @17-18, the moral hinge), cap-exempt, + 4 VOICE-FIXABLE
+(@11/@14/@20/@21 → stitch). Same airless-accounting failure mode the c05 grounding-ledger licensed.
+
+### Phase 3-4 — R2 fanout/fanin: KEEP-dominant, ONE cross-facet repair landed cleanly
+6 judges. Net **KEEP 12 + ADD 2, 0 deletes.** The one structural move: memory @12/@19 were authored at R1
+without NI co-citation (climax shape forecloses the feel-as-spine carve-out → a HARD CONSTRAINT risk). The
+orchestrator coordinated the fix across two blind judges — NI ADDED narrator:6 @12 + narrator:7 @19; memory
+KEEP-confirmed and downgraded its own HARD dependency to SOFT once it saw the adds in the facet file. Post-R2
+merge resolved the spine (mem:1↔narrator:6, mem:2↔narrator:7 co-cited). NI declined the @17/@18 weave-add on
+band-cap discipline (7/25=28%, justified by the two HARD co-cites; the moral-balance is instead carried by
+narrator:7 + the Phase-4.6 grounding). Metaphor KEEP @24 (AP3 cleared — distinct false-completion aesthetic
+vs NI's structural contrast); orchestrator stripped a stale `tens:1` token the judge left in licensed-by
+(tensometer is dropped — would have been a Phase-5 dangling-anchor). Dialogue review-only KEEP (Wren line is
+sole carrier of route content; no DEDUP). Scene-map URI-SCENE-WINDOW PASS (25/25). 0 arbiter interventions.
+
+### ⭐ Phase 4.5 → 4.6 — THE READABILITY-TWIN LOOP, VALIDATED LIVE END-TO-END (headline Q2 result)
+**Phase 4.5 separated re-score: FOLLOWABLE (Axis-1 PASS) but AIRLESS-HOLE (Axis-2 → remediation).** The
+separated scoring did exactly what it was designed to do — **it refused to let a complete-and-economical
+chapter ship airless.** R2 had added cognition (narrator:6/7), not body, so the moral-hinge bones @16/@17/@18
+stayed bare; the 3 grounding-ledger lines stayed open. **Phase 4.6 fired the grounding-only remediation**
+(no context remediation — completeness already passed): the sensory author authored 3 **cap-exempt**
+grounding adds — sensory:3 @10 (smell, the working lane), sensory:4 @16 (tactile, a hand opens the ledger),
+sensory:5 @17 (tactile, the stylus drags as persons are priced into the column, covers @17-18) — in Taylor's
+clinical register, frugal. **Phase 4.6 Step 2 re-review: ALIVE.** The adds form a CONTINUOUS somatic thread
+across the hinge (board-weight → stylus-drag), closing the airless *stretch*, not just three points.
+
+**This is the affirmative proof the prior retroactive-on-c05 session could not produce.** The full chain
+fired in sequence on a LIVE chapter: BONES-AIRLESS-RISK (at `/and-review bones`) → Phase 2.5 opened the
+grounding-ledger → Phase 4.5 separated-scoring caught the surviving airless hole → Phase 4.6 authored the
+grounding the frequency-band cap would otherwise have trimmed → ALIVE. The chapter now passes BOTH axes
+**before stitch**. c05's FAIL #1 mechanism (a central act abstracted into "feed and count, dense to the
+point of obscurity," caught only at the terminal cold-read after ~50 dispatches) is pre-empted at the facet
+layer. The grounding-ledger cap-exemption is the load-bearing piece: the readability fix is *exactly* the
+sensory density the cap exists to trim, and the ledger is what licenses it through.
+
+### Phase 5 — mechanical audit: CLEAN (HARD=0, 10 SIGNAL advisory)
+**⭐ The grounding cap-exemption survived the auditor (PROP-0022 live confirmation).** sensory is now
+5/25=20%, well over the 3-6% band — but the auditor recognized the 3 resolved `grd-NNN` tags and did NOT
+cut the cap-exceeding grounding (no FAULT-GROUNDING-LICENSE-DANGLING). The licensed-grounding-exception is
+binding at the mechanical layer exactly as designed. memory↔NI spine confirmed resolved. SIGNALs (all
+advisory): NI band 28% (HARD-co-cite-justified), AP-010 inverted-predicate 29% (<40% → SIGNAL, narrator:4
+repair candidate), oc-* prop field-extensions (carve-out + margit SEAM-006/007/008), state token collision
+(tooling artifact, c05 precedent), + minor STRUCTURAL/META/DEDUP/CONSTRAINT/TASTE. 4 pile-ups warranted.
+
+### Phase 5b — audience-gate (adversarial, BLOCKING): 6 ACCEPT / 4 FAIL → remediation cycle 1
+**⭐ The grounding cap-exemption ALSO survived the adversarial gate (the load-bearing PROP-0022 result).**
+All 3 sensory specialists — including the density-watchdog modality-coverage + the disambiguation-pedant —
+EXPLICITLY confirmed they did NOT fail sensory:3/4/5 on density/cap grounds. The breathing-room the
+cold-reader needed was added AND survived every downstream cut-point (auditor + the very density reviewers
+who'd otherwise have trimmed it). This is the exact tension PROP-0022 was written to resolve, resolved live.
+
+**The gate did real adversarial work — 4 facets failed 3-of-3, catching a coherent class of VOICE-DRIFT**
+toward authorial/rhetorical/foreknowledge altitude Taylor's clinical data-register POV would not occupy:
+- interest-narrator (3R): narrator:4 @22 inverted-predicate re-fire ("the seal is the breach") +
+  narrator:6 @12 instrument-personification + narrator:3 @13 record-as-patient-waiter.
+- vibes (3R/1R): vibes:5 @8 + vibes:13 @24 — `canon:wren-d14-routing-gap-failure` used as license = the
+  FACET knowing Wren's arc terminus (downstream-canon foreknowledge leaked into a c06 file).
+- memory (1R): mem:2 @19 forward-consequence where the monument-callback needs backward-reach.
+- metaphor (1R): meta:1 @24 out-of-register aesthetic distance (taste conflict — 2/3 praised it; DELETE
+  per refuse-by-default + NI:5 carries the beat).
+
+**Bidirectional loop VALIDATED** (narrator:4/:3 shared with auditor AP-010 + TASTE-FLAG). But 3 of the 4
+catches were **audience-ONLY** — the d14 foreknowledge-leak, the memory forward-reach, the metaphor
+register-altitude were things the mechanical scan structurally could not articulate. This is the affirmative
+case for the adversarial gate as a distinct layer: it reads for register-fidelity and epistemic-altitude,
+not just schema/frequency/contradiction. Remediation cycle 1 (fixer → re-audit → re-fire 5b on the 4 failed
+facets) is the designed path.
+
+**Resolution — converged in 3 cycles, NO cap-burn.** Fixer cycle-1 (8 sub-repairs: 3 NI rewords dropping
+the inverted-predicate/personification/record-agentive; mem:2 backward-reach reword; 2 vibes d14-license
+strips; meta:1 DELETE) → re-audit CLEAN (AP-010 2→1). Cycle 2: vibes/memory/metaphor cleared 3-of-3;
+interest-narrator left ONE residual (dark-fantasy: delete the editorial tail "and the premise is wrong"
+from narrator:4 @22 — conclusion-handed-over). Fixer applied the reviewer's exact specified deletion →
+cycle 3: dark-fantasy ACCEPT → **all facets 3-of-3.** Every cycle produced measurable lift (no
+redundant-finding plateau). The metaphor taste-conflict (1 dissent vs 2 praise) resolved cleanly via
+refuse-by-default DELETE (beat survived through NI:5 + feel:2). **`/and-facets` orchestrator-critic: SUCCESS (7/7).**
+
+### Q1-Q4 standing at /and-facets close
+- **Q1 (gates fired + verdicts):** all overhaul gates fired live — Ph2.5 (FOLLOWABLE + AIRLESS), Ph4.5
+  separated re-score (FOLLOWABLE + AIRLESS-HOLE), Ph4.6 grounding (ALIVE), Ph5 audit (CLEAN), Ph5b
+  audience-gate (ACCEPT 3-of-3). See ledger.
+- **Q2 (caught something pre-overhaul would have shipped?):** YES — the headline. (a) Readability twin
+  caught the airless accounting middle at Ph4.5 + grounded it at Ph4.6 — a c05-FAIL-#1-class defect fixed
+  BEFORE stitch (pre-overhaul it shipped to the terminal cold-read). (b) Audience-gate caught a voice-drift
+  class (d14-foreknowledge-leak / forward-reach memory / register-altitude metaphor / inverted-predicate),
+  3 of 4 audience-ONLY — pre-overhaul these skin the bones and surface (if at all) only at Phase-9.
+- **Q3 (false positives?):** ZERO across every overhaul gate. The grounding cap-exemption did NOT misfire
+  (3 grounding adds survived auditor + all 3 sensory specialists; none cut on density). Every audience
+  REVISE was a genuine register catch met by a clean minimum-change repair; substance survived every fix;
+  the one taste-conflict resolved without a forced bad outcome. (Non-overhaul schema false-pos logged
+  separately: Ph2 speech-axis fault-002, state token-collision — neither is an overhaul gate.)
+- **Q4 (voice-embodiment vs c05 instrument-voice?):** PENDING — resolves at `/and-stitch` Phase 4. The
+  facet layer pre-loaded the answer: grounding-ledger adds + 4 VOICE-FIXABLE bones (@11/@14/@20/@21) are
+  queued for the Phase-4 voice-embodiment discipline, and the spine is certified ALIVE going in. Stitch is
+  the test of whether that carries into rendered prose.
+
+_Last updated: 2026-05-30 (/and-facets b01-c06 COMPLETE, orchestrator-critic SUCCESS 7/7; next: /and-stitch)._
+
+---
+
+# FINAL SYNTHESIS — the four questions, answered (run COMPLETE through /and-stitch)
+
+**Run state:** `/and-substance chapter` → `/and-write` → `/and-review bones` → `/and-facets` (SUCCESS 7/7) →
+`/and-stitch` (PASS-WITH-DEPTH-PASS-REQUIRED) all COMPLETE on b01-c06, the first LIVE chapter through the
+2026-05-29 readability+completeness overhaul. `draft/b01-c06.md` is the terminal deliverable; a mandatory
+depth pass (`/and-write b01c06 revise --from-signals`) is flagged before book-stable (DEC-0048).
+
+## Q1 — Which new gates fired, with what verdicts?
+**Every overhaul gate fired live.** In chain order:
+- **Phase 5.5 chunk-cold-read** (PROP-0019): CHUNK-CLASS-B → admin (P), DEC-0044. Step-2.5 voice-density:
+  Signal-B would NOT fire (central event recovered as concrete SVO — contrast c05's retroactive VOICE-RISK).
+- **/and-write Phase 6 EVENT-NOT-CONCRETE** (PROP-0019 spine gate): PASS ×4 central bones — first-ever live
+  firing; no false-pos on the two highest-risk verbs (`blanks`/`seals`); no miss. ABSTRACTION-DOMINANCE /
+  SENSORY-GROUNDING / dialogue all PASS.
+- **/and-review bones follow_check** (PROP-0020): PASS-WITH-NOTES (not FOLLOW-FAIL) + **BONES-AIRLESS-RISK**
+  (PROP-0022) advisory forwarded to /and-facets.
+- **/and-facets Phase 2.5** (PROP-0020/0022): completeness FOLLOWABLE / 0 CONTEXT-REQUIRED; aliveness AIRLESS
+  → grounding-ledger opened (3 lines on the accounting middle).
+- **/and-facets Phase 4.5 separated re-score:** FOLLOWABLE + AIRLESS-HOLE → Phase 4.6.
+- **/and-facets Phase 4.6 grounding remediation:** 3 cap-exempt grounding adds → re-review ALIVE.
+- **/and-facets Phase 5b audience-gate:** ACCEPT 3-of-3 all facets (3 cycles, no cap-burn).
+- **/and-stitch Phase 4 voice-embodiment:** applied, 4/4 VOICE-FIXABLE anchors person-first.
+- **/and-stitch Phase 9 separated cold-read:** completeness PASS + readability AIRLESS → PASS-WITH-DEPTH.
+Full per-gate ledger above.
+
+## Q2 — Did an upstream gate CATCH something the pre-overhaul pipeline would have shipped?
+**YES — three distinct catches, the central affirmative result the prior retroactive-on-c05 session could
+not produce:**
+1. **The readability twin caught the airless accounting middle and grounded it BEFORE stitch.** Pre-overhaul,
+   the only readability check was the terminal Phase-9 cold-read; an airless middle reached it un-grounded.
+   Here: BONES-AIRLESS-RISK → Phase 2.5 grounding-ledger → Phase 4.5 AIRLESS-HOLE → Phase 4.6 cap-exempt
+   grounding (3 sensory adds the frequency-band cap would have trimmed) → ALIVE. The cold-reader confirmed
+   the grounding landed (it named the dragging-stylus add as one of only two breathing spots).
+2. **The audience-gate caught a voice-drift class the mechanical scan could not articulate** (3 of 4 catches
+   audience-ONLY): a downstream-canon foreknowledge leak used as a facet license (vibes d14), a forward-reach
+   memory callback, an out-of-register aesthetic-distance metaphor, plus the inverted-predicate chassis.
+   Pre-overhaul these skin the bones and surface — if at all — only at the terminal read.
+3. **⭐ The Phase-9 separated scoring REFUSED a clean PASS on an airless chapter.** Pre-overhaul, a single
+   blended cold-read verdict on a chapter that "delivers its events" could ship PASS while reading airless —
+   exactly the c05-FAIL-#1 substance ("abstracted into feed and count, dense to obscurity"). The separated
+   axes split completeness (PASS) from readability (AIRLESS) and denied the clean PASS, routing to the
+   depth-pass loop. **This is the headline: the overhaul converts an undiagnosed airless-ship into a
+   diagnosed, right-sized, upstream-routed depth pass.**
+
+## Q3 — Any false positives? (a gate blocking something actually fine)
+**ZERO across every overhaul gate.** Specifically stress-tested and clean:
+- EVENT-NOT-CONCRETE did not over-fire on `blanks`/`seals` (the stative-risk verbs) or on the
+  abstraction-prone intelligence chapter.
+- The grounding cap-exemption did NOT misfire: the 3 cap-exceeding grounding adds survived BOTH the Phase-5
+  auditor AND all 3 Phase-5b sensory specialists (the density-watchdogs explicitly declined to cut them) —
+  the exact PROP-0022 tension, resolved live.
+- Every Phase-5b audience REVISE was a genuine register-fidelity catch, each met by a clean minimum-change
+  repair; the substance survived every fix; the one taste-conflict (metaphor, 1-dissent-vs-2-praise) resolved
+  without a forced bad outcome.
+- The Phase-9 AIRLESS verdict is NOT a false positive — the cold-reader's airless complaint is real and
+  specific, and the disposition (PASS-WITH-DEPTH, not FAIL) correctly avoided over-gating a chapter that
+  delivered + recovered its central event.
+- Pre-existing NON-overhaul false-positives logged separately (not overhaul gates): Phase-2 speech-axis
+  schema literalism (fault-002, DEC-0045), the state proto-line token-collision tooling artifact, the
+  metaphor stale-`tens:` token the R2 judge left in (orchestrator-caught + stripped).
+
+## Q4 — Did voice-embodiment change the stitched prose vs c05's instrument-voice?
+**YES, measurably — but it was necessary-not-sufficient, and the honest answer is the most useful finding of
+the run.** Controlled comparison (c06 used c05's EXACT config: neutral persona / 1st-past / contractions-off /
+scene-window / series Robinson exemplar — the ONLY variable is the Phase-4 voice-embodiment discipline +
+the Phase-4.6 grounding adds + the VOICE-FIXABLE flags):
+- **The discipline visibly changed the prose.** c05 defaulted to apparatus-register density ("the
+  categorization held," "no affect required to file them," "the discipline at the body, not at the
+  cognition"). c06 rendered all 4 VOICE-FIXABLE anchors person-first ("I opened the message. I read it";
+  "I closed the accounting"; "I sealed it") and rendered the grounding as lived body ("The board came down
+  heavy into my hands"; "the stylus dragged… each name coming out of me against a friction in the hand";
+  "The blank was not a thing I forgot to do; it was the thing I did").
+- **The cold-reader confirmed the interventions landed:** the two spots it named as breathing are EXACTLY
+  the Phase-4.6 grounding add (the dragging stylus) and the upstream-cobonded Wren dialogue line.
+- **BUT it was insufficient to fully de-abstract the chapter.** The reader still read the narrator as "an
+  instrument reporting itself" and the accounting middle as "the worst" airless. **Root cause (DEC-0048):
+  the airlessness lives in the BONES — an apparatus-dominant bone-set (~18/25 record-substrate verbs,
+  abstract by contract). The stitch-layer voice-embodiment can prefer the person-first faithful phrasing of
+  each bone, but it cannot manufacture a body the bones did not give (the bone-faithfulness fence), and 3
+  grounding anchors cannot carry a ~10-bone airless stretch.** The fix is correctly routed UPSTREAM to the
+  bones layer (`/and-write revise --from-signals`), matching the b01-c02 experiment's documented conclusion
+  ("cost-legibility lives in bones SVO authoring, not stitch paragraph composition"). Q4 verdict:
+  **voice-embodiment is a real lever that demonstrably improved the prose, but the dominant lever for an
+  apparatus-dominant chapter is bone-layer de-abstraction; the overhaul correctly localizes the residual to
+  the bones and routes a right-sized depth pass rather than a stitch-layer band-aid.**
+
+## Comparison to c05's three-FAIL trace
+c05 hit the terminal cold-read **three times and FAILED all three** — the canonical motivating disaster for
+the overhaul (FAIL #1: muffled/abstracted central event; FAIL #3: a context-blind CONTINUE=No read as a
+chapter defect after ~50 dispatches). c06's experience under the overhaul:
+- **FAIL #1 mechanism (muffled central event) — PRE-EMPTED upstream.** EVENT-NOT-CONCRETE certified the 4
+  central bones concrete at the bone-gate; the central event was recovered cleanly by the cold-reader. The
+  residual airlessness degraded IMPACT but did not muffle the EVENT — so it produced PASS-WITH-DEPTH, not a
+  FAIL. The overhaul converted a c05-class outright FAIL into a recoverable depth-pass flag.
+- **FAIL #3 mechanism (context-blind NO detonating expensively at Phase 9) — PRE-EMPTED upstream.** The same
+  context-blind proper-noun confusions surfaced at the chunk layer (Phase 5.5, ~1 dispatch), were carried as
+  a checklist, and were discharged as mid-series context-noise by the context-AWARE /and-review bones
+  follow_check — three independent readers (follow_check + exposition gap-test + Phase 2.5) converged that
+  the chapter is followable. The cold-reader's residual confusions ("why they obey," off-page elders) were
+  exactly the discharged context-noise and did NOT drive a completeness fail.
+- **Net:** c06 reached a terminal state of PASS-WITH-DEPTH-PASS-REQUIRED where c05 reached 3× FAIL. The two
+  c05 FAIL mechanisms were caught and discharged cheaply, upstream, before the expensive terminal layer. The
+  ONE thing the overhaul did NOT fully fix — the apparatus-dominant airlessness — it correctly DIAGNOSED
+  (separated readability axis), LOCALIZED to the bones, and routed to a right-sized upstream depth pass,
+  rather than looping expensively at the terminal gate as c05 did. **The overhaul did what it was designed to
+  do: move the readability+completeness reckoning upstream of the terminal cold-read, and where a residual
+  survives, diagnose and route it instead of failing blind.**
+
+_Run complete. Final update: 2026-05-30 — b01-c06 stitched (PASS-WITH-DEPTH-PASS-REQUIRED); depth pass
+`/and-write b01c06 revise --from-signals` pending before book-stable._

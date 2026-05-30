@@ -1436,6 +1436,59 @@ findings-applied: 2 (loc-state acoustic extension; sensory:2 re-anchor + ID cita
 findings-skipped: 0
 exit: CLEAN
 
+## SESSION-START — 2026-05-30T10:00:00Z — and-facets-cycle1-fixes-b01c06
+dispatch: remediate 4 failed facets from /and-facets b01-c06 Phase 5b audience-gate cycle 1 (interest-narrator 3 rewrites, memory mem:2 gloss reword, vibes 2 d14-license strips, metaphor meta:1 DELETE)
+target: active-project/theater/facets/interest-narrator.md, memory.md, vibes.md, metaphor.md
+audit-report: active-project/staff/auditor/facets-audience-gate-r1.md
+findings-queued: 7 (3 NI rewrites, 1 memory reword, 2 vibes license strips + token soften, 1 metaphor DELETE)
+
+## narrator:3 @13 — RESOLVED — 2026-05-30T10:15:00Z
+fault: "the step the record has been waiting four months for her to take" — agentive-record patience (cape-fic dissent; converges with auditor TASTE-FLAG)
+scope: line
+change: interest-narrator.md narrator:3 @13 — "which is the step the record has been waiting four months for her to take" → "which is a conversion she has priced and deferred for four months"; agentive-record framing replaced with Taylor cost-language + pre-calc register; four-months pre-calc preserved; node-to-name distinction preserved
+criteria met: yes — no agentive-record; four-months pre-calc present; substance preserved; SVO body not touched
+
+## narrator:4 @22 — RESOLVED — 2026-05-30T10:16:00Z
+fault: "the seal is the breach" — second inverted-predicate X-is-Y chassis in the file (3-of-3 REVISE; first use at narrator:2 @8 holds its single license; converges with auditor AP-010)
+scope: line
+change: interest-narrator.md narrator:4 @22 — "the seal is the breach; " opener removed; remaining clause ("the accounting ran clean ... the premise is wrong") already carries the full substance; no replacement clause needed
+criteria met: yes — no inverted-predicate chassis; substance (correct accounting on wrong premise delivered here) fully present in retained clause; SVO body not touched
+
+## narrator:6 @12 — RESOLVED — 2026-05-30T10:17:00Z
+fault: "the record was always the route" — agentive personification / backward-narrativization of the instrument (worm-canon dissent)
+scope: line
+change: interest-narrator.md narrator:6 @12 — "the record was always the route" → "the bodies moved when the record named them"; record is now instrument (named them), not agent (was the route); causation-language in Taylor clinical register; node-vs-name cognition preserved in preceding clause
+criteria met: yes — instrument personification removed; node-vs-name category-precision preserved; clinical causation register; SVO body not touched
+
+## mem:2 @19 — RESOLVED — 2026-05-30T10:18:00Z
+fault: "a body that does not know how it is held" — forward-consequence phrasing (pre-echo of Sera's fate); monument-callback must point BACKWARD at what was BUILT (dark-fantasy dissent)
+scope: line
+change: memory.md mem:2 @19 — "a body that does not know how it is held, kept where it is" → "a body kept where it is"; appended "the same weight the arrangement was built to carry" (backward-reach to c03-c05 construction); target-reference unchanged; hard fence intact (no Sera/Otto/Jarvis named)
+criteria met: yes — backward-reach to established arrangement present; forward-consequence language removed; Westerosi-monument-clamp register maintained; SVO body not touched
+
+## vibes:5 @8 — RESOLVED — 2026-05-30T10:19:00Z
+fault: canon:wren-d14-routing-gap-failure in licensed-by = downstream event as license source (foreknowledge not earned); "omitted-from-the-substrate-she-will-fall-through" forward-reaching token (3-of-3 REVISE)
+scope: line
+change: vibes.md vibes:5 @8 — (1) canon:wren-d14-routing-gap-failure removed from licensed-by; (2) "omitted-from-the-substrate-she-will-fall-through" → "omitted-from-the-substrate-as-present-gap"; entry earns on proto:8 + world-build:cond-road-to-hell-chain-shape; "name-withheld-from-record" and "protection-as-the-routing-gap" preserved
+criteria met: yes — d14 citation removed; forward token replaced with present-state language; chapter-attested license sufficient; entry not deleted
+
+## vibes:13 @24 — RESOLVED — 2026-05-30T10:20:00Z
+fault: canon:wren-d14-routing-gap-failure in licensed-by = downstream event as license source (worm-canon dissent)
+scope: line
+change: vibes.md vibes:13 @24 — canon:wren-d14-routing-gap-failure removed from licensed-by; keyword tokens all confirmed present-state-defensible; no token change needed; entry earns on proto:24 + state-update-moral_legibility_to_self-s03
+criteria met: yes — d14 citation removed; entry earns on chapter-attested license only; entry not deleted
+
+## meta:1 @24 — RESOLVED (DELETED) — 2026-05-30T10:21:00Z
+fault: worm-canon REVISE — "tidy, complete, correct" simile requires Taylor to stand outside her cognition to observe its elegance — out-of-register aesthetic distance; beat covered by NI:5 + feel:2 @24; reword keeping simile keeps out-of-register altitude; minimum-change = DELETE; strict 3-of-3 governs (cape-fic + dark-fantasy praise recorded)
+scope: line
+change: metaphor.md entry 1 — live entry replaced with canonical deletion marker: "# DELETED meta:1 @24 - audience-gate cycle-1 register-fidelity (worm-canon REVISE; out-of-register aesthetic distance; beat carried by NI:5+feel:2 @24) (2026-05-30)"; R1 refuse-log + file-shape sections unchanged; metaphor facet is now 0 live entries (acceptable under refuse-by-default)
+criteria met: yes — entry deleted per dispatch spec; 2/3 praise recorded in fix log; deletion marker canonical; cite-index rebuild deferred to caller per dispatch instruction
+
+## SESSION-END — 2026-05-30T10:22:00Z — and-facets-cycle1-fixes-b01c06
+findings-applied: 7 (narrator:3 reword; narrator:4 opener-drop; narrator:6 reword; mem:2 reword; vibes:5 license-strip + token-soften; vibes:13 license-strip; meta:1 DELETE)
+findings-skipped: 0
+exit: CLEAN
+
 ## SESSION-START — 2026-05-30T09:00:00Z — write-b01c06-pass2-svo-recasts-round2
 dispatch: minimum-change fixes for 8 FAULT-FORM-MODIFIER faults in b01c06 bones draft (fault-001 s01n03, fault-003 s01n08, fault-004 s02n01, fault-005 s02n03, fault-006 s02n05, fault-007 s02n06, fault-008 s03n04, fault-009 s03n06); fault-002 s01n04 excluded per dispatch (separate ruling); two CENTRAL-EVENT bones under special constraint (pl-2026-05-30-002(a) for s01n08 omission; pl-2026-05-30-002(b) for s03n06 send)
 target: active-project/staff/showrunner/_drafts/b01c06-bones-draft-2026-05-30.md
