@@ -140,8 +140,10 @@ theater/bones/b01-c06.md (25 bones, flat 1-25, SVO-clean, dialogue token on flat
 | 7e | scene-map URI-SCENE-WINDOW | facets Ph4d | PASS | no | 25/25, 3 scenes |
 | 8a | **separated FOLLOWABLE/ALIVE** | facets Ph4.5 | FOLLOWABLE + AIRLESS-HOLE | no | ⭐ separated-scoring refused to let completeness mask airlessness |
 | 8b | **grounding remediation** | facets Ph4.6 | ALIVE (3 cap-exempt adds) | no | ⭐ readability-twin loop closed live; airless stretch grounded before stitch |
-| 8c | mechanical audit | facets Ph5 | IN PROGRESS | — | HARD must be 0 before Ph5b |
-| 8d | audience-gate (adversarial) | facets Ph5b | — | — | PENDING (blocking) |
+| 8c | mechanical audit | facets Ph5 | CLEAN (HARD=0, 10 SIGNAL) | no | grounding cap-exemption honored |
+| 8d | **audience-gate (adversarial)** | facets Ph5b | ACCEPT 3-of-3 all facets (3 cycles) | no | caught real voice-drift; bidirectional loop validated; NO cap-burn |
+| 8e | fixer remediation | facets Ph5b c1-c3 | 4 facets cleared (8 sub-repairs) | no | re-audit CLEAN after each; converged cycle 3 |
+| 8f | orchestrator-critic | facets Ph6 | **SUCCESS (7/7)** | no | /and-facets COMPLETE; ship → stitch |
 | 9 | voice-embodiment / READABLE-AIRLESS / spine-promotion | stitch Ph4/9 | — | — | PENDING (Q4 resolves here) |
 
 ---
@@ -263,6 +265,34 @@ catches were **audience-ONLY** — the d14 foreknowledge-leak, the memory forwar
 register-altitude were things the mechanical scan structurally could not articulate. This is the affirmative
 case for the adversarial gate as a distinct layer: it reads for register-fidelity and epistemic-altitude,
 not just schema/frequency/contradiction. Remediation cycle 1 (fixer → re-audit → re-fire 5b on the 4 failed
-facets) is the designed path, in flight.
+facets) is the designed path.
 
-_Last updated: 2026-05-30 (/and-facets through Phase 5b cycle 1; fixer remediation in flight)._
+**Resolution — converged in 3 cycles, NO cap-burn.** Fixer cycle-1 (8 sub-repairs: 3 NI rewords dropping
+the inverted-predicate/personification/record-agentive; mem:2 backward-reach reword; 2 vibes d14-license
+strips; meta:1 DELETE) → re-audit CLEAN (AP-010 2→1). Cycle 2: vibes/memory/metaphor cleared 3-of-3;
+interest-narrator left ONE residual (dark-fantasy: delete the editorial tail "and the premise is wrong"
+from narrator:4 @22 — conclusion-handed-over). Fixer applied the reviewer's exact specified deletion →
+cycle 3: dark-fantasy ACCEPT → **all facets 3-of-3.** Every cycle produced measurable lift (no
+redundant-finding plateau). The metaphor taste-conflict (1 dissent vs 2 praise) resolved cleanly via
+refuse-by-default DELETE (beat survived through NI:5 + feel:2). **`/and-facets` orchestrator-critic: SUCCESS (7/7).**
+
+### Q1-Q4 standing at /and-facets close
+- **Q1 (gates fired + verdicts):** all overhaul gates fired live — Ph2.5 (FOLLOWABLE + AIRLESS), Ph4.5
+  separated re-score (FOLLOWABLE + AIRLESS-HOLE), Ph4.6 grounding (ALIVE), Ph5 audit (CLEAN), Ph5b
+  audience-gate (ACCEPT 3-of-3). See ledger.
+- **Q2 (caught something pre-overhaul would have shipped?):** YES — the headline. (a) Readability twin
+  caught the airless accounting middle at Ph4.5 + grounded it at Ph4.6 — a c05-FAIL-#1-class defect fixed
+  BEFORE stitch (pre-overhaul it shipped to the terminal cold-read). (b) Audience-gate caught a voice-drift
+  class (d14-foreknowledge-leak / forward-reach memory / register-altitude metaphor / inverted-predicate),
+  3 of 4 audience-ONLY — pre-overhaul these skin the bones and surface (if at all) only at Phase-9.
+- **Q3 (false positives?):** ZERO across every overhaul gate. The grounding cap-exemption did NOT misfire
+  (3 grounding adds survived auditor + all 3 sensory specialists; none cut on density). Every audience
+  REVISE was a genuine register catch met by a clean minimum-change repair; substance survived every fix;
+  the one taste-conflict resolved without a forced bad outcome. (Non-overhaul schema false-pos logged
+  separately: Ph2 speech-axis fault-002, state token-collision — neither is an overhaul gate.)
+- **Q4 (voice-embodiment vs c05 instrument-voice?):** PENDING — resolves at `/and-stitch` Phase 4. The
+  facet layer pre-loaded the answer: grounding-ledger adds + 4 VOICE-FIXABLE bones (@11/@14/@20/@21) are
+  queued for the Phase-4 voice-embodiment discipline, and the spine is certified ALIVE going in. Stitch is
+  the test of whether that carries into rendered prose.
+
+_Last updated: 2026-05-30 (/and-facets b01-c06 COMPLETE, orchestrator-critic SUCCESS 7/7; next: /and-stitch)._
