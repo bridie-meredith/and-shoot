@@ -46,4 +46,9 @@ The 3 grounding-ledger adds rendered as lived body: sensory:3 @10 (tallow-smoke 
 Output: active-project/draft/b01-c06.md (clean terminal deliverable; polish-deferred). 18 paragraphs incl. preamble. No surviving scene-callout markers.
 
 ## Phase 9 — cold-read terminal gate
-PENDING (separated READABLE/AIRLESS + completeness; the Q4-critical surface).
+VERDICT: PASS-WITH-DEPTH-PASS-REQUIRED (DEC-0048). Ships terminal; mandatory depth pass before book-stable.
+- Completeness axis: PASS — central event (named-person delivery + omission contrast) recovered; jeopardy 3-layer; causality holds; CONTINUE weak-yes. Residual confusions = mid-series context-noise (off-page elders/Sera).
+- Readability axis: AIRLESS — reader still reads narrator as instrument reporting itself; accounting middle worst; withheld-name payoff reads as 'a tidy diagram of a feeling'. Breathing spots named by reader = the Wren line + the dragging-stylus grounding add (sensory:5 @17).
+- Separated scoring WORKED: refused a clean PASS on an airless chapter (the c05 failure mode, caught at the terminal gate). FAIL-branch (AIRLESS-on-central-event) NOT met — event delivered + recovered; airlessness is impact-degradation rooted in the apparatus-dominant bones (~18/25 record-substrate verbs) -> depth-pass loop /and-write revise --from-signals is the right lever (DEC-0048).
+- Report: active-project/staff/reviews/coldread-b01c06-2026-05-30.md
+Phase 9.5 admin process-critic: fires (non-clean-PASS verdict).

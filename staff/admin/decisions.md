@@ -2289,3 +2289,83 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0048 | 2026-05-30 | SLOW (user-proxy)
+
+question: |
+  /and-stitch b01-c06 Phase 9 cold-read terminal gate: COMPLETENESS PASS + READABILITY AIRLESS.
+  Fork: (A) PASS-WITH-DEPTH-PASS-REQUIRED — ship terminal, flag mandatory /and-write revise
+  --from-signals depth pass before project-stable; (B) FAIL — full /and-write revise +
+  re-cascade /and-facets + /and-stitch. Which verdict?
+
+context: |
+  First live chapter under the separated COMPLETENESS/READABILITY scoring overhaul (PROP-0022).
+  COMPLETENESS: PASS — central event (named-person delivery + withheld name contrast) recovered,
+  3-layer jeopardy affirmed, causal chain holds, CONTINUE = weak yes. Step-2 FAIL conditions
+  do not fire. Residual confusions are mid-series context-noise, not c06 defects.
+  READABILITY: AIRLESS — narrator reads as instrument, accounting section (paras 27-35) worst
+  offender (abstract bookkeeping metaphor stacked), withheld name reads as "tidy diagram of a
+  feeling," only two breathing spots (child's spoken line, physical friction of stylus). Root
+  cause diagnosed as apparatus-dominant bone-set (~18/25 record-substrate verbs) — a bone-layer
+  authoring defect, not a stitch-layer voice problem. Prior conclusion (c02 experiment):
+  "cost-legibility lives in bones SVO authoring, not stitch paragraph composition."
+  Phase 9 composition rule: PASS = completeness-pass AND READABLE. AIRLESS + completeness-pass
+  → at minimum PASS-WITH-DEPTH-PASS-REQUIRED. AIRLESS on central event ITSELF → FAIL.
+  The central event IS the accounting section → could argue that airlessness lands on the
+  central event itself, pushing toward FAIL (Option B).
+  Default proposed: Option A with rationale that event was RECOVERED (reader DID identify it),
+  continue = yes, fix is /and-write bones-layer revision, depth-pass is the overhaul's designed
+  lever for exactly this.
+
+options: |
+  A: PASS-WITH-DEPTH-PASS-REQUIRED. Ship terminal. Flag mandatory depth pass
+     (/and-write b01c06 revise --from-signals) before project-stable. Smaller blast
+     radius; right-sized fix; completeness + recovery + continue-yes argue against
+     full re-decompose.
+  B: FAIL. Full /and-write revise re-decompose + re-cascade /and-facets + /and-stitch.
+     Treats airlessness-on-central-event as a structural decomposition defect requiring
+     the full re-entry loop. Heavier; 30+ dispatches.
+
+decision: Option A — PASS-WITH-DEPTH-PASS-REQUIRED.
+
+basis: goal:1 (pipeline correctness — Phase 9 composition rule's AIRLESS-on-central-event
+  FAIL trigger requires the central event to be unrecoverable or undelivered, not merely
+  abstract-in-rendering; that criterion is not met here) + goal:2 (cost discipline —
+  Option B is 30+ dispatches when the root is a bone-layer authoring fix, not a
+  decomposition defect) + methodology:3a (reversibility — A leaves the depth pass
+  scheduled; B overwrites a structurally sound chapter on a rendering defect) +
+  methodology:3b (cost — outcomes comparable; A routes to the correct repair layer) +
+  methodology:3d (optionality — A preserves the chapter's structural work; B discards it)
+
+rationale: |
+  The Phase 9 composition rule's FAIL branch for AIRLESS targets "AIRLESS on the central
+  event ITSELF" — the framing is delivery failure, not rendering abstraction. The cold-read
+  reader DID identify the central event (named-person delivery + withheld name), confirmed
+  jeopardy, confirmed causal chain, and returned CONTINUE=yes (weak). The event was delivered
+  and recovered. What failed is the IMPACT quality — the reader got the content but felt it
+  as a diagram rather than a gut-punch. That is a bones-SVO rendering defect (the bone-set is
+  apparatus-dominant), not a decomposition defect. The c02 experiment's conclusion applies
+  directly: this class of problem lives in bones authoring, not stitch composition. The
+  depth-pass loop (/and-write revise --from-signals targeting the abstract accounting
+  bones) is the overhaul's designed and documented lever for exactly this class. Option B
+  would re-decompose a chapter whose structural commitments (event architecture, jeopardy
+  layering, causal chain) the cold-read confirmed as sound — that is wrong-layer repair.
+  Additionally: the live-validation headline finding is the same either way — the separated
+  scoring correctly refused a clean PASS on an airless chapter (the c05 failure mode caught
+  at the terminal gate, working as designed). Option A captures that finding faithfully.
+
+trade-off: |
+  Option A accepts a softer treatment of "AIRLESS on the central event" than a strict
+  literal read of the composition rule would require. The trade-off is: the central event's
+  accounting section IS the airless worst zone, but the event was still recovered, so the
+  airlessness is an impact-degradation rather than a delivery failure. If the depth pass
+  does not resolve the airlessness (bones re-authored but still apparatus-dominant), the
+  next cold-read should FAIL the gate and route to Option B. That is the correct escalation
+  path: try the right-layer fix first; escalate to full re-decompose only if it fails.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

@@ -3899,6 +3899,17 @@ books:
           context_followability_final: {completeness: FOLLOWABLE, readability: ALIVE}   # PROP-0020/0022
           phase_5c_admin: skipped   # final cycle clean ACCEPT, no cap-burn, no WARN
           margit_referrals_open: [SEAM-006 oc-ward-coverage-notes, SEAM-007 oc-jarvis-channel-form, SEAM-008 oc-accounting-ledger]   # prop cards; priority before b01c07 facets
+        stitched: true   # /and-stitch b01-c06 COMPLETE (2026-05-30); draft/b01-c06.md terminal deliverable
+        cold_read:
+          read_at: 2026-05-30
+          verdict: PASS-WITH-DEPTH-PASS-REQUIRED   # DEC-0048; ships terminal + mandatory depth pass before book-stable
+          completeness_axis: {verdict: PASS, basis: "central event (named-person delivery + omission contrast) recovered; jeopardy 3-layer; causality holds; CONTINUE weak-yes"}
+          readability_axis: {verdict: AIRLESS, basis: "reader still reads narrator as instrument reporting itself; accounting middle worst; withheld-name payoff reads as 'a tidy diagram of a feeling'. Breathing spots = the Wren line + the dragging-stylus grounding add (sensory:5 @17) — the overhaul interventions landed but did not de-abstract the apparatus-dominant bone-set"}
+          recovered_summary: "A surveillance operative is pushed to hand over four people by name, does it to keep a hidden girl alive, and quietly protects the one child whose name they refuse to write down."
+          report_path: active-project/staff/reviews/coldread-b01c06-2026-05-30.md
+          signal_clusters: []   # single-arm; spine-staging-gap not triggered (central event recovered + staged: 'I sealed it', 'fingers settled and did not open them at once')
+          depth_pass_pending: true   # /and-write b01c06 revise --from-signals (de-abstract the accounting-middle bones @16-@21); DEC-0048 escalation clause: if next cold-read still AIRLESS-on-central-event -> FAIL/re-decompose
+          stale_since: null
         chunk: |
           Taylor runs the first deliberate rationalize-each-trade beat. A request comes
           through Jarvis that is not ambiguous: Otto wants to know which Flea Bottom ward
