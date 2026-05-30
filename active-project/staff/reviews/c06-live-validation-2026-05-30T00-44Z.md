@@ -232,10 +232,37 @@ point of obscurity," caught only at the terminal cold-read after ~50 dispatches)
 layer. The grounding-ledger cap-exemption is the load-bearing piece: the readability fix is *exactly* the
 sensory density the cap exists to trim, and the ledger is what licenses it through.
 
-### Phase 5 — mechanical audit: IN PROGRESS
-Auditor dispatched over the full post-remediation graph + both ledgers. Watching the licensed-grounding
-exemption (sensory now 5/25=20%, over the 3-6% band but exempt via the 3 resolved grd-NNN tags), the NI
-28% band-stretch (SIGNAL, HARD-co-cite-justified), the AP-010 recurrence (29%<40% → SIGNAL), and the oc-*
-prop field-extensions (documented carve-out → SIGNAL + margit referral). HARD must be 0 before Phase 5b.
+### Phase 5 — mechanical audit: CLEAN (HARD=0, 10 SIGNAL advisory)
+**⭐ The grounding cap-exemption survived the auditor (PROP-0022 live confirmation).** sensory is now
+5/25=20%, well over the 3-6% band — but the auditor recognized the 3 resolved `grd-NNN` tags and did NOT
+cut the cap-exceeding grounding (no FAULT-GROUNDING-LICENSE-DANGLING). The licensed-grounding-exception is
+binding at the mechanical layer exactly as designed. memory↔NI spine confirmed resolved. SIGNALs (all
+advisory): NI band 28% (HARD-co-cite-justified), AP-010 inverted-predicate 29% (<40% → SIGNAL, narrator:4
+repair candidate), oc-* prop field-extensions (carve-out + margit SEAM-006/007/008), state token collision
+(tooling artifact, c05 precedent), + minor STRUCTURAL/META/DEDUP/CONSTRAINT/TASTE. 4 pile-ups warranted.
 
-_Last updated: 2026-05-30 (/and-facets through Phase 4.6 ALIVE; Phase 5 audit in flight)._
+### Phase 5b — audience-gate (adversarial, BLOCKING): 6 ACCEPT / 4 FAIL → remediation cycle 1
+**⭐ The grounding cap-exemption ALSO survived the adversarial gate (the load-bearing PROP-0022 result).**
+All 3 sensory specialists — including the density-watchdog modality-coverage + the disambiguation-pedant —
+EXPLICITLY confirmed they did NOT fail sensory:3/4/5 on density/cap grounds. The breathing-room the
+cold-reader needed was added AND survived every downstream cut-point (auditor + the very density reviewers
+who'd otherwise have trimmed it). This is the exact tension PROP-0022 was written to resolve, resolved live.
+
+**The gate did real adversarial work — 4 facets failed 3-of-3, catching a coherent class of VOICE-DRIFT**
+toward authorial/rhetorical/foreknowledge altitude Taylor's clinical data-register POV would not occupy:
+- interest-narrator (3R): narrator:4 @22 inverted-predicate re-fire ("the seal is the breach") +
+  narrator:6 @12 instrument-personification + narrator:3 @13 record-as-patient-waiter.
+- vibes (3R/1R): vibes:5 @8 + vibes:13 @24 — `canon:wren-d14-routing-gap-failure` used as license = the
+  FACET knowing Wren's arc terminus (downstream-canon foreknowledge leaked into a c06 file).
+- memory (1R): mem:2 @19 forward-consequence where the monument-callback needs backward-reach.
+- metaphor (1R): meta:1 @24 out-of-register aesthetic distance (taste conflict — 2/3 praised it; DELETE
+  per refuse-by-default + NI:5 carries the beat).
+
+**Bidirectional loop VALIDATED** (narrator:4/:3 shared with auditor AP-010 + TASTE-FLAG). But 3 of the 4
+catches were **audience-ONLY** — the d14 foreknowledge-leak, the memory forward-reach, the metaphor
+register-altitude were things the mechanical scan structurally could not articulate. This is the affirmative
+case for the adversarial gate as a distinct layer: it reads for register-fidelity and epistemic-altitude,
+not just schema/frequency/contradiction. Remediation cycle 1 (fixer → re-audit → re-fire 5b on the 4 failed
+facets) is the designed path, in flight.
+
+_Last updated: 2026-05-30 (/and-facets through Phase 5b cycle 1; fixer remediation in flight)._
