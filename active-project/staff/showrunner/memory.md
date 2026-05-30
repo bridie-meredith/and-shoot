@@ -3881,7 +3881,24 @@ books:
       #   (P): proceed, record Q7 confusion list as cold_read_risk_carry → hand to /and-review bones
       #   follow_check (PROP-0020). report: active-project/staff/reviews/chunk-coldread-b01c06-2026-05-30.md
       - slug: b01c06
-        status: audited-r1-mechanical   # /and-facets Phase 5 audit CLEAN (HARD=0, 10 SIGNAL advisory; 2026-05-30); audience-gate (Ph5b) pending
+        status: audited-r1   # /and-facets COMPLETE (2026-05-30): Phase 5 audit CLEAN (HARD=0) + Phase 5b audience-gate ACCEPT 3-of-3 all facets (3 cycles, no cap-burn)
+        facets_complete:
+          audit_path: active-project/staff/auditor/facets-final-audit.md
+          audit_reaudit_path: active-project/staff/auditor/facets-final-audit-r2.md
+          audit_complete: true
+          audit_hard_findings: 0
+          audit_signal_findings: 10
+          audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md
+          audience_gate_complete: true
+          audience_gate_cycles: 3
+          audience_gate_cap_burned: false
+          bidirectional_loop: validated
+          facets_path: active-project/theater/facets/
+          round_1_complete: true
+          round_2_complete: true
+          context_followability_final: {completeness: FOLLOWABLE, readability: ALIVE}   # PROP-0020/0022
+          phase_5c_admin: skipped   # final cycle clean ACCEPT, no cap-burn, no WARN
+          margit_referrals_open: [SEAM-006 oc-ward-coverage-notes, SEAM-007 oc-jarvis-channel-form, SEAM-008 oc-accounting-ledger]   # prop cards; priority before b01c07 facets
         chunk: |
           Taylor runs the first deliberate rationalize-each-trade beat. A request comes
           through Jarvis that is not ambiguous: Otto wants to know which Flea Bottom ward

@@ -10,7 +10,7 @@ r2-judged: 2026-05-30 (R2 GRAPH-AWARE judge, taylor-hebert-kl-122ac POV; KEEP na
 
 3 @13 she does not deploy anything new; the elders are already in the long-pattern record as nodes — meeting-frequency, errand-direction, who they receive instruction from — and the ask is only that she convert nodes to names, which is a conversion she has priced and deferred for four months.
 
-4 @22 the accounting ran clean, both arms at full weight, and arrived here exactly as the framework produces when the terms are stated and the premise is wrong.
+4 @22 the accounting ran clean, both arms at full weight, and arrived here exactly as the framework produces when the terms are stated.
 
 5 @24 four names went down the channel and the contact-source field still reads ward-resident, Hook, routine — the contrast sits in two substrates at once and she opens the notes to read the blank she left where a name is not.
 
