@@ -2011,3 +2011,61 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0044 | 2026-05-30 | FAST (user-proxy)
+
+question: |
+  /and-substance chapter b01c06 Phase 5.5 chunk-cold-read returned CHUNK-CLASS-B (summary maps to
+  goal; strict Q7 re-answer = NO). Disposition: (R) Revise chunk, (P) Proceed with risk recorded,
+  or (S) Substance-contract revision?
+
+context: |
+  Chapter b01c06, first live test of the 2026-05-29 readability+completeness overhaul
+  (PROP-0019/0019-A/0020/0022). Cold-reader (uninformed, no c01-c05 access) recovered all three
+  scenes, causality, and payoff cleanly. Q7 strict-NO driven entirely by undefined proper nouns and
+  world-terms established in c01-c05 (Jarvis, Otto, Sera, Alicent, "the feed", "the arrangement",
+  Black/Green factions, Wren, the Hook, "first deliberate relative to what"). None of the confusions
+  touch the chapter's internal logic. Phase 4 dramatist returned ACCEPT (clean curve). Voice-density
+  guard: Signal B would NOT fire (central event is concrete actor-verb-object). Summary maps to goal
+  on both halves.
+
+decision: (P) — Proceed with risk recorded.
+
+basis: |
+  goal:1 (pipeline correctness — the overhaul's design intent is that mid-series context-noise is
+  NOT a chunk-design defect; handing the confusion list to the context-aware completeness track is
+  the designed path) + methodology:3a (reversibility — (R) re-authors a non-defective chunk;
+  that is irreversible work for zero expected quality gain) + methodology:3d (optionality — (P)
+  preserves the highest-information live-validation path: the designed cold-read→completeness-track
+  handoff exercises on a live chapter for the first time; (R) collapses that test into a trivial
+  non-match)
+
+rationale: |
+  The strict-NO is textbook mid-series context-blindness. The overhaul report (2026-05-29)
+  explicitly names this as the c05 FAIL root cause and names this exact class of confusion — proper
+  nouns established in prior chapters flagged by a context-free cold reader — as the load that
+  PROP-0020's followability pre-check (/and-review bones follow_check) + /and-facets Phase 2.5
+  context-ledger are equipped to adjudicate. The cold-read is doing exactly what it is supposed to
+  do: surfacing the confusion list. The routing decision is whether the confusion list represents a
+  chunk-design hole (Class A → R) or mid-series context noise (Class B → P). Every indicator says
+  Class B: summary maps, causality is tight, payoff lands, all confusions trace to series-established
+  vocabulary. No chunk redesign would cure undefined-proper-noun blindness for a context-free reader;
+  the cure is the weave layer.
+
+  The caller's analysis is correct and should be confirmed as stated. The Q7 confusion list should
+  be recorded as cold_read_risk_carry and handed to /and-review bones follow_check as the
+  context-weave checklist.
+
+trade-off: |
+  (P) accepts that the overhaul's completeness track will need to adjudicate these items. If the
+  context-aware layer also fails to weave them (i.e., /and-review bones FOLLOW-FAIL fires), that
+  would retroactively indicate the chunk-design needed to pre-empt more context — but that call is
+  more informed with context-aware evidence than with the context-free reader's response. Deferring
+  the judgment to the right layer is correct. The risk carry is the mechanism designed for this.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
