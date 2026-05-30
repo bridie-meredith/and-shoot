@@ -33,3 +33,14 @@ aggregate_range: 1-25
 23 the courier takes the jarvis-channel form [state:10]
 24 taylor-hebert-kl-122ac opens the ward-coverage notes [feel:2] [meta:1] [narrator:5] [state:5] [state:11] [vibes:12] [vibes:13] [vibes:14] [vibes:15]
 25 taylor-hebert-kl-122ac closes the ward-coverage notes [state:12]
+
+# ---
+# R2 memory-judge citation cascade (taylor-hebert-kl-122ac POV) — 2026-05-30:
+#   ADDs: NONE (0 adds; 2/25 = 8.0% already mid-band, refuse-by-default).
+#   DELETEs: NONE (mem:1 @12 KEEP, mem:2 @19 KEEP).
+#   No mem-token changes to the canonical proto-lines. [mem:1] @12 and [mem:2] @19 stand unchanged.
+# Spine note: the [mem:1]/[mem:2] tokens' NI spines (narrator:6 @12, narrator:7 @19) ARE present in
+# interest-narrator.md but are NOT yet co-located in the bones-line tokens above (which show narrator:1-5
+# only) or in the stale _cite-index.md. Phase 5 cite-index rebuild propagates narrator:6/@12 +
+# narrator:7/@19; until then mem:1/mem:2 appear as "Lonely entries" in the index, which is an index-
+# staleness artifact, NOT a missing-spine condition. The spine exists in the source facet file.

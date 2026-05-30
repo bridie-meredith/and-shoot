@@ -73,7 +73,7 @@ AP6: filing vocabulary ("tidy, complete, correct") is in Taylor's data-register 
 
 # Entries
 
-1 @24 simile: the blank field sits in the record like a name that was never missing — tidy, complete, correct | licensed-by: feel:2 +narrator:5 +tens:1
+1 @24 simile: the blank field sits in the record like a name that was never missing — tidy, complete, correct | licensed-by: feel:2 +narrator:5
 
 ---
 
@@ -87,7 +87,7 @@ AP6: filing vocabulary ("tidy, complete, correct") is in Taylor's data-register 
 
 4. Anchor verification: feel:2 confirmed in locked feeling file @24. Anchor verified.
 
-5. Multi-justification: feel:2 (anchor) + tens:1 (support) = 2 layers from {feeling, tens}. narrator:5 is NI co-cite (permitted additional support). Requirement met.
+5. Multi-justification: feel:2 (anchor) + narrator:5 (NI co-cite support) = 2 resolvable layers. (R1's provisional tens:1 support stripped by orchestrator under URI-SUBSTANCE-OVERHAUL — tensometer is dropped; tens:1 resolves to nothing. The two valid layers feel:2 + narrator:5 satisfy the ≥2 requirement.) Requirement met.
 
 6. Functional-register: dark-humor (sardonic recognition — the blank reads as correct completion). Pass.
 
