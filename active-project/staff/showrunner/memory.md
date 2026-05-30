@@ -3881,7 +3881,7 @@ books:
       #   (P): proceed, record Q7 confusion list as cold_read_risk_carry → hand to /and-review bones
       #   follow_check (PROP-0020). report: active-project/staff/reviews/chunk-coldread-b01c06-2026-05-30.md
       - slug: b01c06
-        status: scened
+        status: bones-written
         chunk: |
           Taylor runs the first deliberate rationalize-each-trade beat. A request comes
           through Jarvis that is not ambiguous: Otto wants to know which Flea Bottom ward
@@ -3930,6 +3930,22 @@ books:
         goal: |
           Show the audience the first named-person delivery and the accounting that precedes it, so the rationalize-each-trade pattern is legible — and show Wren's omission from the deliverable as the un-priced move it is.
         pov_narrator: taylor-hebert-kl-122ac
+        bones_file: theater/bones/b01-c06.md
+        bones_count: 25
+        substance_bone_gate_verdict: PASS
+        substance_delta_measured:
+          axes_moved:
+            - relational_anchor_status +1.0
+            - moral_framework -1.0
+            - moral_legibility_to_self +1.0
+          density_measured: "0 chatter / 25 bones; grounding 20/25"
+          felt_verdict: SUBSTANCE-FELT-3of3
+        # Bone-gate note: Phase 6 bone-gate PASS (auditor: 1 HARD fault-001 HELD-AXIS-NOT-WITNESSED
+        # political_register-prot s01 → resolved by assigning to s01n02; 2 SIGNALs accept-with-rationale:
+        # mls +0.5→+1.0 overdelivery + s03 stakes-axis tie, both DEC-0030 bone-floor artifacts;
+        # EVENT-NOT-CONCRETE/ABSTRACTION-DOMINANCE/SENSORY-GROUNDING/dialogue all PASS).
+        # Audience SUBSTANCE-FELT 3/3. Phase 6.5 admin OK-MERGED (DEC-0046; PROP-0010/0011 recurrence bumped).
+        # Per-scene moral_legibility SIGNAL disposition: accept-with-rationale.
         handoff_in:
           open_threads:
             - "political_register-prot: resentment color present in all court-tier feed"
@@ -4075,6 +4091,117 @@ books:
               protagonist_force: "Taylor's coverage-note discipline — she records contacts in the working substrate of her intelligence because contacts are data; the discipline is precise and consistent; the same discipline she applies to every ward-body in the feed"
               opposing_force: "the Wren contact as a case the discipline was not built to handle — the coverage notes and the Jarvis channel are different substrates, but the gap between them is not infinite; to name Wren in the notes is to make her legible in a substrate that could be read; to omit her is to author a gap in the record"
               stakes_axis: relational_anchor_status
+            bones:
+              - slug: b01c06s01n01
+                flat_id: 1
+                svo: "the handcart blocks the lane-mouth"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: capability
+                    rationale: "coverage-maintenance register — the ward-walk architecture in operation; the obstruction surfaces the feed running at standard morning density; the blocked lane enacts the walk-as-ongoing-discipline"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s01n02
+                flat_id: 2
+                svo: "the crowd presses the junction"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: capability
+                    rationale: "the backup as feed-data — bodies compressing at the junction are the feed returning its morning read; the coverage architecture performing its function; capability holds at current rank"
+                  - axis: political_register-prot
+                    rationale: "the junction crowd is Flea Bottom-layer foot traffic; no court-tier content present in the blocked-lane / ward-walk context; resentment color (carried from c05) has no material to form on at this scene; political_register-prot holds at current rank (Phase-6 fault-001 witness)"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s01n03
+                flat_id: 3
+                svo: "wren-stitch-maker-flea-bottom-ward crosses the crowd"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: social_tether-prot-rise
+                    rationale: "Wren crossing the crowd is a ward-body movement, not a tether-formation event; she is not entering the deliverable layer; tether holds"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s01n04
+                flat_id: 4
+                svo: "wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac"
+                shape: moving
+                axis_moves:
+                  - axis: relational_anchor_status
+                    direction: up
+                    magnitude: 1.0
+                axes_held: []
+                cost_ledger_anchor: cl-d06
+                dialogue_anchor: true
+                dialogue_citations:
+                  - "wren-stitch-maker-flea-bottom-ward:1"
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s01n05
+                flat_id: 5
+                svo: "taylor-hebert-kl-122ac enters the south court"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: relational_anchor_status
+                    rationale: "Taylor following Wren's direction is the physical enactment of the spoken exchange landing; the relational move is carried by n04; this bone grounds the follow-through as observable action"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s01n06
+                flat_id: 6
+                svo: "taylor-hebert-kl-122ac opens the coverage-notes entry"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: moral_framework
+                    rationale: "the coverage-notes are not the Jarvis channel; no delivery is authored; framework holds at current crack-level"
+                  - axis: moral_legibility_to_self
+                    rationale: "Taylor opening the entry runs the discipline correctly; the accounting runs cleanly here; legibility holds — crack does not deepen until s03"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s01n07
+                flat_id: 7
+                svo: "taylor-hebert-kl-122ac marks the contact-role field"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: moral_framework
+                    rationale: "writing 'ward-resident, Hook, routine' in the contact-role field is the protective discipline, not a delivery; framework holds"
+                  - axis: relational_anchor_status
+                    rationale: "post-move hold — the anchor moved at n04; this bone enacts the protective choice that weights it, but the axis does not move again in this scene"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s01n08
+                flat_id: 8
+                svo: "taylor-hebert-kl-122ac blanks the contact-source field"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: relational_anchor_status
+                    rationale: "the blanking enacts the weight of the protective choice — Wren's name is the thing the field-entry would carry; the omission is authored, not absent; the relational move consolidated at n04 is given its weight here"
+                  - axis: moral_framework
+                    rationale: "the omission is protective; no delivery is completed; framework holds at current crack-level"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s01n09
+                flat_id: 9
+                svo: "taylor-hebert-kl-122ac closes the coverage-notes entry"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: moral_legibility_to_self
+                    rationale: "the accounting runs cleanly; Taylor closes the entry with full understanding of what the blank field means; legibility holds — the recognition is filed, not suppressed; crack does not deepen until the honest accounting precedes a delivery in s03"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
 
           - slug: b01c06s02
             seq: 2
