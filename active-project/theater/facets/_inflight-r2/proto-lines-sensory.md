@@ -17,13 +17,13 @@ aggregate_range: 1-25
 7 taylor-hebert-kl-122ac marks the contact-role field
 8 taylor-hebert-kl-122ac blanks the contact-source field [feel:1] [narrator:2] [state:2] [vibes:4] [vibes:5] [vibes:6]
 9 taylor-hebert-kl-122ac closes the coverage-notes entry [state:3]
-10 the jarvis-channel message arrives [loc-state:3] [sensory:3] [state:4]
+10 the jarvis-channel message arrives [loc-state:3] [state:4] [sensory:3]
 11 taylor-hebert-kl-122ac opens the jarvis-channel message
 12 taylor-hebert-kl-122ac reopens the jarvis-channel message [mem:1] [narrator:6]
 13 taylor-hebert-kl-122ac pulls the coverage-memory record [narrator:3]
 14 taylor-hebert-kl-122ac fills the jarvis-channel form [state:5] [vibes:8]
 15 taylor-hebert-kl-122ac lowers the jarvis-channel form [state:6] [vibes:7]
-16 taylor-hebert-kl-122ac opens the accounting ledger [sensory:4] [state:7]
+16 taylor-hebert-kl-122ac opens the accounting ledger [state:7] [sensory:4]
 17 taylor-hebert-kl-122ac writes the first arm — names against Sera's protection [sensory:5]
 18 taylor-hebert-kl-122ac writes the second arm — omission risk against Sera's exposure
 19 taylor-hebert-kl-122ac marks the red-keep coverage record [mem:2] [narrator:7]

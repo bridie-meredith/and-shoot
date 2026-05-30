@@ -3944,11 +3944,11 @@ books:
           stale_since: null
         context_followability:   # PROP-0020/0022 — /and-facets Phase 2.5 + 4.5
           completeness_verdict: FOLLOWABLE   # Ph2.5 + Ph4.5 both; context-ledger empty (0 CONTEXT-REQUIRED)
-          readability_verdict: AIRLESS-HOLE  # Ph4.5 -> Phase 4.6 grounding remediation (accounting middle bare)
-          report_path: active-project/staff/reviews/context-follow-r2-b01-c06-2026-05-30.md
+          readability_verdict: ALIVE  # Ph4.5 AIRLESS-HOLE -> Ph4.6 grounding remediation (sensory:3/4/5 @10/@16/@17) -> Ph4.6-Step2 re-review ALIVE (continuous somatic thread across hinge)
+          report_path: active-project/staff/reviews/context-follow-r3-b01-c06-2026-05-30.md
           reviewed_at: 2026-05-30
           context_ledger_open: 0
-          grounding_ledger_open: 3   # grd-001 @10, grd-002 @16, grd-003 @17-18; authored at Phase 4.6
+          grounding_ledger_open: 0   # grd-001/002/003 all satisfied by sensory:3/4/5 at Phase 4.6 (cap-exempt licensed adds)
           voice_fixable: ["@11", "@14", "@20", "@21"]   # -> /and-stitch Phase 4 voice-embodiment
         substance_delta_measured:
           axes_moved:

@@ -18,8 +18,8 @@ entries:
     license: GROUNDING-REQUIRED
     licensed_at: 2.5
     licensed_by: aliveness-reviewer
-    status: open
-    satisfied_by: null
+    status: satisfied
+    satisfied_by: sensory:3
   - id: grd-002
     anchor: "@16"
     airless_symptom: "opens the accounting ledger" — lonely bone, zero facet co-citation; the accounting sequence opens with no person in the frame, the ledger narrating its own opening
@@ -27,8 +27,8 @@ entries:
     license: GROUNDING-REQUIRED
     licensed_at: 2.5
     licensed_by: aliveness-reviewer
-    status: open
-    satisfied_by: null
+    status: satisfied
+    satisfied_by: sensory:4
   - id: grd-003
     anchor: "@17"
     airless_symptom: "writes the first arm" / "writes the second arm" (@17–@18) — the chapter's moral hinge rendered as accounting-form headers; bare protolines, zero facet cites; the two arms of the trade (four ward elders vs. Sera's exposure) reach the reader only as ledger-substrate verbs, no felt friction of pricing persons against persons
@@ -36,5 +36,5 @@ entries:
     license: GROUNDING-REQUIRED
     licensed_at: 2.5
     licensed_by: aliveness-reviewer
-    status: open
-    satisfied_by: null
+    status: satisfied
+    satisfied_by: sensory:5 (covers @17–@18; single entry per authoring frugality)
