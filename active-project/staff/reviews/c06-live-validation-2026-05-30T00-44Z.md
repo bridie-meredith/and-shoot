@@ -135,9 +135,14 @@ theater/bones/b01-c06.md (25 bones, flat 1-25, SVO-clean, dialogue token on flat
 | 6c | aliveness (PROP-0022) | review bones | BONES-AIRLESS-RISK (advisory) | no | apparatus-dominant; forwarded to facets/stitch; non-blocking |
 | 7a | R1 fanout (10 authors) | facets Ph1 | CLEAN | no | apparatus-brief honored by all (see below) |
 | 7b | merge + cite-index | facets Ph2 | CLEAN (no abort) | no | 48 entries, 18/25 lines (72%); body-integrity+stale-cite PASS |
-| 7c | context + aliveness axes | facets Ph2.5 | IN PROGRESS | — | the live-validation surface; BONES-AIRLESS-RISK forewarning lands here |
-| 8 | FOLLOWABLE / ALIVE separated | facets Ph4.5/4.6 | — | — | PENDING |
-| 9 | voice-embodiment / READABLE-AIRLESS / spine-promotion | stitch Ph4/9 | — | — | PENDING |
+| 7c | **context+aliveness (Ph2.5)** | facets Ph2.5 | FOLLOWABLE + AIRLESS(3 grd lines) | no | predictions confirmed; context-ledger empty, grounding-ledger opened on accounting middle |
+| 7d | R2 fanin (6 judges) | facets Ph3-4 | KEEP12 + ADD2, 0 del | no | memory↔NI spine repaired across 2 blind judges; metaphor stale-tens stripped |
+| 7e | scene-map URI-SCENE-WINDOW | facets Ph4d | PASS | no | 25/25, 3 scenes |
+| 8a | **separated FOLLOWABLE/ALIVE** | facets Ph4.5 | FOLLOWABLE + AIRLESS-HOLE | no | ⭐ separated-scoring refused to let completeness mask airlessness |
+| 8b | **grounding remediation** | facets Ph4.6 | ALIVE (3 cap-exempt adds) | no | ⭐ readability-twin loop closed live; airless stretch grounded before stitch |
+| 8c | mechanical audit | facets Ph5 | IN PROGRESS | — | HARD must be 0 before Ph5b |
+| 8d | audience-gate (adversarial) | facets Ph5b | — | — | PENDING (blocking) |
+| 9 | voice-embodiment / READABLE-AIRLESS / spine-promotion | stitch Ph4/9 | — | — | PENDING (Q4 resolves here) |
 
 ---
 
@@ -188,9 +193,49 @@ decorated). No body-integrity abort, no stale-citation abort.
   accounting-ledger) flagged for margit referral; vibes entry-5 d14-fence-adjacency for R2.
 
 ### Phase 2.5 — context + aliveness review: IN PROGRESS (the surface this command exists to test)
-Dispatched the context-AWARE reviewer (reads handoff_in as the series-so-far capsule) on the merged R1
-graph. Watching: (a) does the completeness axis hold with zero/near-zero CONTEXT-REQUIRED (predicted, given
-the two converging completeness signals above); (b) does the aliveness axis open grounding-ledger lines on
-the s02-s03 accounting middle (predicted by the BONES-AIRLESS-RISK forewarning). Result pending.
+**RESULT — both predictions confirmed.** Axis-1 COMPLETENESS: **FOLLOWABLE / PASS, 0 CONTEXT-REQUIRED**
+(context-ledger empty). A THIRD independent reader converges on the PROP-0020 call (follow_check +
+exposition gap-test + this context-aware read). 2 WEAVE-FIXABLE hints (@17/@18 → NI). Axis-2 ALIVENESS:
+**AIRLESS in the accounting middle** — the BONES-AIRLESS-RISK forewarning called it; **grounding-ledger
+opened 3 lines** (grd-001 @10, grd-002 @16, grd-003 @17-18, the moral hinge), cap-exempt, + 4 VOICE-FIXABLE
+(@11/@14/@20/@21 → stitch). Same airless-accounting failure mode the c05 grounding-ledger licensed.
 
-_Last updated: 2026-05-30 (/and-facets through Phase 2; Phase 2.5 in flight)._
+### Phase 3-4 — R2 fanout/fanin: KEEP-dominant, ONE cross-facet repair landed cleanly
+6 judges. Net **KEEP 12 + ADD 2, 0 deletes.** The one structural move: memory @12/@19 were authored at R1
+without NI co-citation (climax shape forecloses the feel-as-spine carve-out → a HARD CONSTRAINT risk). The
+orchestrator coordinated the fix across two blind judges — NI ADDED narrator:6 @12 + narrator:7 @19; memory
+KEEP-confirmed and downgraded its own HARD dependency to SOFT once it saw the adds in the facet file. Post-R2
+merge resolved the spine (mem:1↔narrator:6, mem:2↔narrator:7 co-cited). NI declined the @17/@18 weave-add on
+band-cap discipline (7/25=28%, justified by the two HARD co-cites; the moral-balance is instead carried by
+narrator:7 + the Phase-4.6 grounding). Metaphor KEEP @24 (AP3 cleared — distinct false-completion aesthetic
+vs NI's structural contrast); orchestrator stripped a stale `tens:1` token the judge left in licensed-by
+(tensometer is dropped — would have been a Phase-5 dangling-anchor). Dialogue review-only KEEP (Wren line is
+sole carrier of route content; no DEDUP). Scene-map URI-SCENE-WINDOW PASS (25/25). 0 arbiter interventions.
+
+### ⭐ Phase 4.5 → 4.6 — THE READABILITY-TWIN LOOP, VALIDATED LIVE END-TO-END (headline Q2 result)
+**Phase 4.5 separated re-score: FOLLOWABLE (Axis-1 PASS) but AIRLESS-HOLE (Axis-2 → remediation).** The
+separated scoring did exactly what it was designed to do — **it refused to let a complete-and-economical
+chapter ship airless.** R2 had added cognition (narrator:6/7), not body, so the moral-hinge bones @16/@17/@18
+stayed bare; the 3 grounding-ledger lines stayed open. **Phase 4.6 fired the grounding-only remediation**
+(no context remediation — completeness already passed): the sensory author authored 3 **cap-exempt**
+grounding adds — sensory:3 @10 (smell, the working lane), sensory:4 @16 (tactile, a hand opens the ledger),
+sensory:5 @17 (tactile, the stylus drags as persons are priced into the column, covers @17-18) — in Taylor's
+clinical register, frugal. **Phase 4.6 Step 2 re-review: ALIVE.** The adds form a CONTINUOUS somatic thread
+across the hinge (board-weight → stylus-drag), closing the airless *stretch*, not just three points.
+
+**This is the affirmative proof the prior retroactive-on-c05 session could not produce.** The full chain
+fired in sequence on a LIVE chapter: BONES-AIRLESS-RISK (at `/and-review bones`) → Phase 2.5 opened the
+grounding-ledger → Phase 4.5 separated-scoring caught the surviving airless hole → Phase 4.6 authored the
+grounding the frequency-band cap would otherwise have trimmed → ALIVE. The chapter now passes BOTH axes
+**before stitch**. c05's FAIL #1 mechanism (a central act abstracted into "feed and count, dense to the
+point of obscurity," caught only at the terminal cold-read after ~50 dispatches) is pre-empted at the facet
+layer. The grounding-ledger cap-exemption is the load-bearing piece: the readability fix is *exactly* the
+sensory density the cap exists to trim, and the ledger is what licenses it through.
+
+### Phase 5 — mechanical audit: IN PROGRESS
+Auditor dispatched over the full post-remediation graph + both ledgers. Watching the licensed-grounding
+exemption (sensory now 5/25=20%, over the 3-6% band but exempt via the 3 resolved grd-NNN tags), the NI
+28% band-stretch (SIGNAL, HARD-co-cite-justified), the AP-010 recurrence (29%<40% → SIGNAL), and the oc-*
+prop field-extensions (documented carve-out → SIGNAL + margit referral). HARD must be 0 before Phase 5b.
+
+_Last updated: 2026-05-30 (/and-facets through Phase 4.6 ALIVE; Phase 5 audit in flight)._
