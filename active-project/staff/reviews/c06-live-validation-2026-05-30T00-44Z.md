@@ -44,8 +44,14 @@ Two bones-execution watches parked for /and-write (pl-2026-05-30-002): (a) enact
 - **Phase 2 constraint audit:** 9 HARD → **8 genuine FAULT-FORM-MODIFIER** (prepositional padding) fixed + re-confirmed schema-clean; **1 (fault-002, speech-axis) ruled NOT-a-fault** (admin DEC-0045). *Live finding (schema false-positive class):* the speech-bone "communication-class axis (community/knowledge/reputation/trust)" rule is hardcoded to the **universal** questionnaire taxonomy and mis-fires on any **custom-axis** project — `relational_anchor_status` IS this project's communication-class axis. Caught + ruled; schema-generalization parked (pl-2026-05-30-003). Orthogonal to the readability gates, but a real pre-existing-schema defect surfaced by the live run.
 - **Phase 3 dramatist:** ACCEPT on shape (rise-peak-fall; peak at s03 send; no reorders) + **2 missing-transition flags**, both added as HELD bones (no axis move, roll-ups unchanged): MT-01 (s01n10 `the morning light crosses the lane-mouth` — s01→s02 temporal bridge); MT-02 (s03n10 `squares the jarvis-channel form` — the close→act hinge that makes the "honest accounting = breach" causation legible right before the peak). Final: 26 bones. *Note: the working draft had inherited leaked-agent-reasoning between bone blocks from the Phase-1 output; rebuilt clean (all SVO/axis data preserved) before handing to further reviewers — an orchestration-hygiene fix, not a gate event.*
 
+### ✅ /and-write Phase 4 audience trim — ACCEPT 3/3, one auto-delete
+- **ACCEPT 3-of-3.** Substance lands for all three personas (rationalize-each-trade legible; Wren-omission contrast sharp; canonical Taylor).
+- **Auto-delete: s01n10 (MT-01, the morning-light bridge)** — all three personas flagged it (≥2 threshold). Worm-canon-pedant's reasoning is the load-bearing one: *"the morning light crosses the lane-mouth"* is third-person atmospheric narration inconsistent with Taylor's first-person data-register POV (she marks time by what the feed returns, not by light on walls); cape-fic + dark-fantasy add that the s01→s02 temporal seam is already covered by s02n01 (the message's arrival IS the transition).
+- **Notable pipeline interaction (log for #2):** the **dramatist ADDED** MT-01 (to bridge a continuity seam) and the **audience REMOVED** it (redundant + POV-inconsistent). Two critics disagreeing, resolved by the trim threshold — the system self-correcting. Net: seam stays covered, a POV wobble is caught. MT-02 (the close→act hinge) survives unflagged — the structurally important transition is the one that stuck.
+- Effect: chapter → 25 bones; s01 roll-up unchanged (held bone, no axis move); s01 grounding 6→5 (≥3, PASS holds). Advisory-only: s03n04 (Sera-image) flagged marginal by cape-fic but kept 2/3 as load-bearing.
+
 ### ⏳ PENDING (not yet fired)
-- `/and-write` Phase 4 audience trim + Phase 5 continuity audit — in flight.
+- `/and-write` Phase 5 continuity audit — in flight (reading the 26-bone draft; s01n10 deletion applied after it returns, in one pass).
 - `/and-write` Phase 6 **EVENT-NOT-CONCRETE** (HARD) + **ABSTRACTION-DOMINANT** (SIGNAL) + **SENSORY-GROUNDING** (HARD) — bone-gate next. This is the spine-legibility gates' real live test. Watch the moral_legibility +0.5→+1.0-realized SIGNAL disposition (within ±1 tolerance).
 - `/and-review bones` **follow_check / FOLLOW-FAIL** (PROP-0020) — will consume the Phase 5.5 `cold_read_risk_carry` proper-noun checklist as its context-weave input.
 - `/and-facets` **Phase 2.5** context + aliveness axes → context-ledger + grounding-ledger; **Phase 4.5** separated FOLLOWABLE/ALIVE; **Phase 4.6** conditional R3.
@@ -83,6 +89,7 @@ Two bones-execution watches parked for /and-write (pl-2026-05-30-002): (a) enact
 | 4b | constraint audit (SVO-form) | write Ph2 | 8 FORM faults (fixed) | no | genuine prepositional-padding catches |
 | 4c | speech-axis rule | write Ph2 | fault-002 → NOT-a-fault (DEC-0045) | **YES (schema)** | universal-taxonomy rule mis-fires on custom-axis project; schema-fix parked pl-...-003 |
 | 4d | dramatist (bone shape/transitions) | write Ph3 | ACCEPT + 2 transition bones | no | rise-peak-fall; MT-01/MT-02 added (held) |
+| 4e | audience trim ×3 | write Ph4 | ACCEPT 3/3; auto-delete s01n10 | no | dramatist-added MT-01 removed (POV-inconsistent + redundant); MT-02 survives |
 | 5 | EVENT-NOT-CONCRETE / ABSTRACTION-DOMINANT / SENSORY-GROUNDING | write Ph6 | — | — | PENDING |
 | 6 | follow_check / FOLLOW-FAIL | review bones | — | — | PENDING (consumes #4 carry) |
 | 7 | context + aliveness axes | facets Ph2.5/4.5/4.6 | — | — | PENDING |
