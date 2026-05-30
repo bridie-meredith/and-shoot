@@ -3940,7 +3940,7 @@ books:
           verdict: PASS
           follow_check: PASS-WITH-NOTES
           aliveness: BONES-AIRLESS-RISK-advisory   # PROP-0022; s02-s03 accounting middle; forward to /and-facets Phase 2.5 + /and-stitch Phase 4
-          bones_file_mtime_at_review: 1780107964
+          bones_file_mtime_at_review: 1780111145  # DEC-0047 (2026-05-30): mtime reset by git checkout in fresh container after PR #76 merge; content identity verified via `git diff e9883f2 HEAD` (empty) + review-report internal description match. Stamp reconciled to current mtime — NOT a content re-emit / not an operator override of a content change.
           stale_since: null
         substance_delta_measured:
           axes_moved:

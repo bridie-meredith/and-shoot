@@ -2231,3 +2231,61 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0047 | 2026-05-30 | FAST
+
+question: |
+  /and-facets b01-c06 Phase 0 step 4b HARD-ABORT: bones_review.bones_file_mtime_at_review
+  (1780107964) != current mtime of theater/bones/b01-c06.md (1780111145). Supposed to catch
+  a re-emitted bones file that would stale the review. How to dispose?
+  Options: (A) reconcile the stamp in memory (update to 1780111145, note reason, proceed);
+  (B) re-run /and-review bones b01c06 in full; (C) proceed without touching memory, log discrepancy.
+
+context: |
+  git diff e9883f2 HEAD -- theater/bones/b01-c06.md is EMPTY. Bones file is byte-identical
+  to its emit commit. Single commit touching this file is the emit commit. The bones_review
+  (commit 9af14cd, PASS, follow_check PASS-WITH-NOTES) described the exact same file (25 bones,
+  flat-1-25, dialogue-token on flat-4). Mtime shifted because PR #76 was merged and the repo
+  was re-checked-out in a fresh container — git does not preserve mtimes across clone/checkout.
+  Pure environment artifact: the check's intent ("bones not re-emitted since review") is
+  satisfied; only the filesystem timestamp proxy is stale.
+  gate_path: .claude/commands/and-facets.md#phase-0
+
+options: |
+  A: Reconcile the stamp — update bones_file_mtime_at_review to 1780111145 in showrunner
+     memory, note the reconciliation reason, proceed. Cost: ~0.
+  B: Re-run /and-review bones b01c06 in full. Cost: full multi-agent review re-run on a
+     verified no-op. Honors the rule literally.
+  C: Proceed without memory update; log discrepancy only.
+
+decision: Option A — reconcile the stamp; update bones_file_mtime_at_review to 1780111145,
+  note the environment-artifact cause inline, proceed to Phase 1.
+
+basis: goal:2 (cost discipline — option B is verified-no-op spend) + methodology:3a
+  (reversibility — A is trivially reversible; B burns real tokens) + methodology:3b (cost —
+  outcomes identical; A is cheaper by the full gate-re-run cost) + goal:3 (memory accuracy —
+  C leaves memory in a known-inaccurate state, which violates the nothing-changes-without-
+  recording principle)
+
+rationale: |
+  The mtime check is a proxy for content identity. The proxy failed due to environment behavior
+  (git checkout resets mtimes), not a file change. Content identity is confirmed by two
+  independent signals: (1) git diff shows zero byte-difference; (2) the review report's internal
+  description matches the current file exactly (same bone count, same structure, same token).
+  The intent of the HARD-ABORT is satisfied. Re-running to satisfy the literal proxy when the
+  trigger is a known-false-positive burns tokens and produces an identical result. Option C
+  leaves memory claiming a review timestamp that is known to be wrong — goal:3 violation.
+  Option A corrects the record, makes memory accurate, costs nothing.
+
+trade-off: |
+  Option A requires trusting the git-diff + report-description evidence chain instead of
+  re-running the gate. The evidence chain is strong (two independent sources agree). The only
+  way option B produces new information is if both sources are simultaneously wrong, which
+  would indicate a repo integrity problem no review re-run could fix anyway.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
