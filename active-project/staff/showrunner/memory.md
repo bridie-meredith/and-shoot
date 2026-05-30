@@ -4614,7 +4614,24 @@ books:
                 gate_verdict: {bonefide: true, flat: false}
 
       - slug: b01c07
-        status: scened   # /and-substance chapter b01c07 (2026-05-30): Phase 5 ACCEPT (dramatist + auditor CLEAN HARD=0 + audience 3-of-3 SUBSTANCE-FELT); Phase 5.5 chunk-cold-read PASS-CHUNK-VOICE-RISK
+        status: bones-written   # /and-write b01c07 COMPLETE (2026-05-30): Phase 6 bone-gate PASS on rev2 (after 3 attempts; DEC-0051/0052); Phase 7 emit done
+        bones_file: theater/bones/b01-c07.md
+        bones_count: 25
+        substance_bone_gate_verdict: PASS
+        # /and-write b01c07 (2026-05-30): 3-attempt bone-gate battle on an ARGUMENT chapter.
+        #   attempt 1 (38 bones): FAIL 6 HARD (4 argument-spine interiority bones). Phase 6.5 admin -> PROP-0024 (DEC-0051): gate working; Phase-1 brief lacks argument-spine concrete-SVO constraint.
+        #   attempt 2 (rev1: 8 audience-deletes + recast): FAIL WORSE 7 HARD (recasts used holds-on-abstraction / multi-subject / modifiers).
+        #   attempt 3 (rev2: 2 moving recasts to physical-verb forms 'faces'/'stays' + 5 interior DELETES -> NI facets + 1 modifier strip; DEC-0052 constrained, 1-attempt cap): PASS, HARD=0. 38->25 bones.
+        #   Resolution validates the discriminator: physical-observable VERB witnesses the axis (not abstraction-object); delete-over-invent for interiority (sept-corner conversation has no ledger/prop to ground argument-beats); interior readings -> narrator-interest facets. Abstraction-dominance 100/100/100% post-fix. Aggregation EXACT (pol-reg +0.5, soc-tether +1.0).
+        # Reports: write-b01c07-bonegate{,-r2,-r3}.md. Full per-bone substance_delta + event_map + NI-facet-handoff notes: _drafts/b01c07-bones-draft-2026-05-30-rev2.md (canonical per-bone source until scenes[].bones[] persist; bones file is flattened SVO source).
+        dialogue_files: [theater/dialogue/septon-halvard-flea-bottom.md, theater/dialogue/taylor-hebert-kl-122ac.md]
+        dialogue_citations:   # anchors realigned post-rev2 renumber
+          - "b01c07s02n04 (flat 12) -> [septon-halvard-flea-bottom:1]  (compound-corruption thesis via the errand-man)"
+          - "b01c07s03n02 (flat 19) -> [taylor-hebert-kl-122ac:1]      (Wenna Cobb counter; WATCH-1 concrete: name+street+failure-mechanism)"
+          - "b01c07s03n04 (flat 21) -> [septon-halvard-flea-bottom:2]  (cost-acknowledgment; no retraction)"
+        scene_map_file: theater/facets/scene-map-b01-c07.md
+        write_margit_referrals_open:
+          - "oc-sept-corner.card.md — NEW location (the sept corner / chandler's storehouse, Flea Bottom Hook); first-touched c07; loc card MUST be authored before /and-facets b01c07 Phase 0 (locations: resolution gate). Same class as c06 oc-* SEAMs."
         chunk: |
           A breathing chapter: Taylor consolidates the ledger without a new major breach.
           She has been running the arrangement for two months and the accounting has become

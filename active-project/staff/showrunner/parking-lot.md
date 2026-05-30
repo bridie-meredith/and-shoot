@@ -946,7 +946,11 @@ parking_lot:
         - active-project/staff/reviews/chunk-coldread-b01c07-2026-05-30.md
         - active-project/staff/auditor/substance-chapter-b01c07-audit.md
         - active-project/staff/showrunner/memory.md  # chapters[b01c07].scenes[] + chunk_cold_read
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-05-30T00:00:00Z
+      resolved_by: "/and-write b01c07 Phase 1-7 (rev2 bone-gate PASS)"
+      resolution_note: |
+        WATCH-1 honored (Wenna Cobb concrete named-death in dialogue @s03n02: name+street+failure-mechanism).
+        WATCH-2 honored (thesis-lands @s02n05 'goes still' BEFORE counter @s02n06 'faces' — causality gap closed).
+        WATCH-3/4/5 routed to narrator-interest facet anchors (foreclosure @s03n06 leaves; two-accountings @s03n03 absorbs; surveillance-irony @s01n06). fault-009 honored (no social_tether Δ at s01).
+        NOTE: the argument-spine interiority that took 3 bone-gate attempts to clear is the live evidence behind PROP-0024 (DEC-0051) + the DEC-0052 discriminator (physical-observable-verb witnesses; delete-over-invent for interiority).
