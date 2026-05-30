@@ -4630,6 +4630,18 @@ books:
           - "b01c07s03n02 (flat 19) -> [taylor-hebert-kl-122ac:1]      (Wenna Cobb counter; WATCH-1 concrete: name+street+failure-mechanism)"
           - "b01c07s03n04 (flat 21) -> [septon-halvard-flea-bottom:2]  (cost-acknowledgment; no retraction)"
         scene_map_file: theater/facets/scene-map-b01-c07.md
+        bones_review:   # /and-review bones b01c07 (2026-05-30) — MANDATORY gate between /and-write and /and-facets
+          reviewed_at: 2026-05-30
+          report_path: active-project/staff/reviews/bones-b01c07-2026-05-30.md
+          verdict: PASS-WITH-NOTES   # fidelity PASS (5 deletes did NOT hollow the spine; it lives in dialogue bones 12/19/21); 0 HARD / 3 SIGNAL / 2 TASTE
+          follow_check: PASS-WITH-NOTES   # PROP-0020: central event + scene hand-offs recoverable; "why she stays" hinge clears narrowly via bone-12 dialogue preceding the posture bones; gap is context-addable (NI facet), NOT bone-structural → no FOLLOW-FAIL → /and-facets cleared
+          aliveness: BONES-AIRLESS-RISK   # PROP-0022 (advisory): span bones 13-16 (goes still/faces/stays/holds silence) — interiority routed off-page + abstraction-adjacent posture verbs, no body to inhabit until bone 17. Forewarns /and-facets Phase 2.5 grounding-ledger + /and-stitch Phase 4 voice-embodiment.
+          bones_file_mtime_at_review: 1780178686
+          stale_since: null
+          forward_notes:   # context-addable → /and-facets Phase 2.5
+            - "NI facet at bones 13/14/15 is LOAD-BEARING: must stage crooked-house-maps-onto-her-arrangement recognition at bone 13 'goes still' or cold-read causality gap reopens at stitch. Highest-value facet beat in the chapter."
+            - "Open grounding-ledger lines for bones 13-16 span (argument-middle airless before bone 17)."
+            - "Voice-embodiment priority at /and-stitch Phase 4 on bones 13-16; bone 15 'stays in the argument' weakest concreteness (both reviewers) — render as physical not-leaving per bone 22."
         write_margit_referrals_open:
           - "oc-sept-corner.card.md — NEW location (the sept corner / chandler's storehouse, Flea Bottom Hook); first-touched c07; loc card MUST be authored before /and-facets b01c07 Phase 0 (locations: resolution gate). Same class as c06 oc-* SEAMs."
         chunk: |
