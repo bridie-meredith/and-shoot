@@ -3933,6 +3933,15 @@ books:
         bones_file: theater/bones/b01-c06.md
         bones_count: 25
         substance_bone_gate_verdict: PASS
+        # /and-review bones b01c06 (2026-05-30): PASS. Fidelity 0 HARD (spine intact all 3 scenes; dialogue coverage+card-compliance PASS; SVO clean 25/25; scene-map 25/25). follow_check PASS-WITH-NOTES (PROP-0020: every context-blind cold-read proper-noun confusion resolved by prior-chapter context = mid-series context-noise, not a bone defect). Aliveness BONES-AIRLESS-RISK advisory (apparatus-dominant accounting chapter; embodied spine present; forwarded downstream). 2 Phase-6 SIGNALs remain advisory. /and-facets cleared.
+        bones_review:
+          reviewed_at: 2026-05-30T02:37:00Z
+          report_path: active-project/staff/reviews/bones-b01c06-2026-05-30.md
+          verdict: PASS
+          follow_check: PASS-WITH-NOTES
+          aliveness: BONES-AIRLESS-RISK-advisory   # PROP-0022; s02-s03 accounting middle; forward to /and-facets Phase 2.5 + /and-stitch Phase 4
+          bones_file_mtime_at_review: 1780107964
+          stale_since: null
         substance_delta_measured:
           axes_moved:
             - relational_anchor_status +1.0

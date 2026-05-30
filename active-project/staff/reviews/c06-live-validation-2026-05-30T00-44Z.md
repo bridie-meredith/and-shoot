@@ -67,8 +67,21 @@ Two bones-execution watches parked for /and-write (pl-2026-05-30-002): (a) enact
 
 **Live-validation verdict on the spine gates:** they fired, discriminated correctly, caught a real (if minor) contract gap, and did NOT over-fire on the two highest-risk verbs or on the abstraction-prone chapter. This is the affirmative evidence the prior (retroactive-on-c05) session could not produce.
 
+### ✅ /and-write Phase 6.5 admin process-critic — OK-MERGED (DEC-0046)
+Both bone-gate patterns map to existing open proposals: signal-001/002 (fractional-target vs bone-floor) → PROP-0010 (recurrence bumped to 2); fault-001 (held-axis-witness from chunk contract) → PROP-0011 (recurrence 2). No new proposals — the gate handled c06 correctly, the patterns are tracked upstream.
+
+### ✅ /and-write Phase 7 emit — COMPLETE
+theater/bones/b01-c06.md (25 bones, flat 1-25, SVO-clean, dialogue token on flat 4) + theater/facets/scene-map-b01-c06.md (3 scenes, 25/25 coverage) + dialogue file (Phase 1.5). Persisted to memory: status `bones-written`, per-bone substance + gate_verdict, bones_count 25. **`/and-write b01c06` COMPLETE.**
+
+### ⭐ /and-review bones b01c06 (MANDATORY gate) — PASS — THE PROP-0020 VALIDATION MILESTONE
+**Aggregate PASS; /and-facets cleared; no /and-write revise.**
+- **Fidelity leg: PASS, 0 HARD** across 5 checks (chunk→bones fidelity no-hollowing all 3 scenes; dialogue coverage+card-compliance HARD-PASS; SVO clean 25/25; scene-map 25/25). The spine survived decomposition intact.
+- **⭐ follow_check (PROP-0020 context-weave checkpoint 1): PASS-WITH-NOTES — NOT FOLLOW-FAIL.** This is the milestone result. A CONTEXT-AWARE reviewer (read `handoff_in` as the series-so-far capsule) cross-checked the context-BLIND Phase 5.5 cold-reader's strict-NO confusions item by item and found **every single one** (the feed / Jarvis / Otto / Sera / the arrangement / factions / Wren / the Hook / "first deliberate") **resolved by prior-chapter knowledge = mid-series context-noise, NOT a bone defect.** ("Alicent" doesn't even appear in c06's bones — a cold-read artifact.) **This is the designed two-reader interaction validated live:** the context-blind probe at Phase 5.5 flagged the gap cheaply; the context-aware gate at /and-review bones correctly classified it as noise and did NOT block — exactly the PROP-0020 mechanism that the c05 retroactive session could only theorize. The c05-FAIL-#3 pattern (context-blind NO detonating at the expensive Phase-9 layer) is pre-empted: the same NO surfaced for ~1 dispatch at the chunk layer, was carried as a checklist, and was discharged as noise at the bone layer — never reaching stitch.
+- **Aliveness (PROP-0022): BONES-AIRLESS-RISK advisory** (does NOT block) — apparatus-dominant accounting chapter; embodied spine present (blocked lane, Wren crossing+speaking, south court, courier); the s02-s03 accounting middle is the airless-risk concentration → forwarded to /and-facets Phase 2.5 (likely grounding-ledger lines) + /and-stitch Phase 4 voice-embodiment priority. This is the readability twin steering itself ahead of where the airless render risk lives.
+
 ### ⏳ PENDING (not yet fired)
-- `/and-write` Phase 6.5 admin process-critic — in flight (judging whether the bone-floor-vs-fractional-target collision is a recurring structural pattern worth a PROP).
+- `/and-facets b01-c06` — Phase 2.5 context + aliveness axes (context-ledger + grounding-ledger; the BONES-AIRLESS-RISK forewarning lands here); Phase 4.5 separated FOLLOWABLE/ALIVE; Phase 4.6 conditional R3.
+- `/and-stitch b01-c06` — Phase 4 voice-embodiment (priority per the airless forewarning); Phase 8.5 muffle-check NOT armed (chunk verdict CHUNK-CLASS-B, not VOICE-RISK); Phase 9 separated READABLE/AIRLESS.
 - `/and-write` Phase 6 **EVENT-NOT-CONCRETE** (HARD) + **ABSTRACTION-DOMINANT** (SIGNAL) + **SENSORY-GROUNDING** (HARD) — bone-gate next. This is the spine-legibility gates' real live test. Watch the moral_legibility +0.5→+1.0-realized SIGNAL disposition (within ±1 tolerance).
 - `/and-review bones` **follow_check / FOLLOW-FAIL** (PROP-0020) — will consume the Phase 5.5 `cold_read_risk_carry` proper-noun checklist as its context-weave input.
 - `/and-facets` **Phase 2.5** context + aliveness axes → context-ledger + grounding-ledger; **Phase 4.5** separated FOLLOWABLE/ALIVE; **Phase 4.6** conditional R3.
@@ -80,7 +93,7 @@ Two bones-execution watches parked for /and-write (pl-2026-05-30-002): (a) enact
 
 **Pending the bones/facets/stitch run for the readability/completeness gates.** Preliminary:
 
-- The **designed cold-read→completeness handoff is operating live.** Pre-overhaul, the *only* reader-question pass was `/and-stitch` Phase 9 — context-blind, at the most expensive recovery point. On c05 that produced FAIL #3 (a context-blind CONTINUE=No read as a chapter defect, after ~50 dispatches). Here the **same class of context-blind NO surfaced at the chunk layer (~1 dispatch)**, was correctly classified as mid-series context-noise (not a design defect), and its confusion list was captured as a forward checklist for the context-AWARE layer — instead of detonating at Phase 9. *If* `/and-review bones` follow_check + `/and-facets` Phase 2.5 now weave the load-bearing subset of that context, the c05 FAIL #3 mechanism will have been pre-empted upstream. **To be confirmed when those gates run.**
+- The **designed cold-read→completeness handoff is operating live — NOW CONFIRMED at the /and-review bones layer.** Pre-overhaul, the *only* reader-question pass was `/and-stitch` Phase 9 — context-blind, at the most expensive recovery point. On c05 that produced FAIL #3 (a context-blind CONTINUE=No read as a chapter defect, after ~50 dispatches). Here the **same class of context-blind NO surfaced at the chunk layer (~1 dispatch)** at Phase 5.5, was carried forward as a checklist, and at `/and-review bones` the **context-AWARE follow_check discharged every item as mid-series context-noise (PASS-WITH-NOTES, not FOLLOW-FAIL)** — the c05 FAIL #3 mechanism is **pre-empted**: the context-blind NO never reached the expensive Phase-9 layer; it was raised cheaply and resolved cheaply. This is the affirmative confirmation the prior retroactive-on-c05 session could not produce. (Still downstream: whether the AIRLESS axis catches an airless *render* that completeness passes — that's the stitch layer, and the bones-review already pre-armed it via BONES-AIRLESS-RISK.)
 - **EVENT-NOT-CONCRETE now demonstrated live (Phase 6):** the spine gate fired on this abstraction-prone intelligence chapter (the c05 profile) and confirmed all 4 central bones concrete at the BONE layer — pre-empting the c05 FAIL #1 *mechanism* at its source (a muffled central event cannot now pass the bone-gate abstract; the muffle would have to be injected purely at stitch, where Phase 9's separated scoring is the backstop). This is the upstream-shift working: the spine is certified concrete before facets/stitch ever run. NOTE the scope caveat from the gate's own design — EVENT-NOT-CONCRETE catches an *abstractly-authored* bone; it cannot prevent a *concrete* bone being *rendered* abstractly at stitch (that remains the Phase-4 voice-embodiment + Phase-9 AIRLESS job, still pending).
 - Still pending: whether the AIRLESS axis catches an airless render that completeness passes (stitch); whether FOLLOW-FAIL weaves the right context subset (review bones).
 
@@ -116,7 +129,11 @@ Two bones-execution watches parked for /and-write (pl-2026-05-30-002): (a) enact
 | 5e | HELD-AXIS-WITNESS | write Ph6 | 1 HARD (fault-001) → fixed | no | legit catch (chunk contract gap); minimal fix |
 | 5f | bone-floor SIGNALs ×2 | write Ph6 | accept-w-rationale | no | DEC-0030 fraction-vs-floor; → 6.5 admin |
 | 5g | audience SUBSTANCE-FELT ×3 | write Ph6 | FELT 3/3, 0 HARD | no | no manufactured flatness |
-| 6 | follow_check / FOLLOW-FAIL | review bones | — | — | PENDING (consumes #4 carry) |
+| 5h | admin process-critic | write Ph6.5 | OK-MERGED (DEC-0046) | no | patterns → PROP-0010/0011 |
+| 6a | fidelity (chunk→bones) | review bones | PASS, 0 HARD | no | spine intact; dialogue+SVO+scene-map clean |
+| 6b | **follow_check (PROP-0020)** | review bones | **PASS-WITH-NOTES** | **no** | context-aware reviewer: cold-read NO = 100% context-noise, not a bone defect — the milestone result |
+| 6c | aliveness (PROP-0022) | review bones | BONES-AIRLESS-RISK (advisory) | no | apparatus-dominant; forwarded to facets/stitch; non-blocking |
+| 7 | context + aliveness axes | facets Ph2.5/4.5/4.6 | — | — | PENDING |
 | 7 | context + aliveness axes | facets Ph2.5/4.5/4.6 | — | — | PENDING |
 | 8 | voice-embodiment / READABLE-AIRLESS / spine-promotion | stitch Ph4/9 | — | — | PENDING |
 
