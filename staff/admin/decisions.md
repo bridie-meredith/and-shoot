@@ -2572,3 +2572,85 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0051 | 2026-05-30 | SLOW (process-critic)
+
+question: |
+  b01c07 Phase 6 bone-gate FAIL: 6 HARD (EVENT-NOT-CONCRETE + SUBSTANCE-FLAT on 4
+  argument-middle bones). /and-substance Phase 5.5 explicitly flagged PASS-CHUNK-VOICE-RISK
+  / seminar-risk; the Phase 1 brief carried the flag. Screen-writer honored WATCH-1 (concrete
+  named death) but authored the 4 argument-spine bones as abstract-arrival / cognitive-object
+  forms. Three process questions: (1) is this the gate working as intended? (2) is there a
+  Phase 1 brief-discipline gap for argument-class chapters? (3) is EVENT-NOT-CONCRETE at
+  risk of over-firing on interior/relational axis-move chapters?
+
+context: |
+  source_report: active-project/staff/auditor/write-b01c07-bonegate.md
+  source_verdict: FAIL (6 HARD)
+  gate_path: .claude/commands/and-write.md#phase-6
+  Chapter: HINGE, discursive-argument content, PASS-CHUNK-VOICE-RISK / seminar-risk.
+  What passed: WATCH-1 (Wenna Cobb concrete in dialogue), dialogue/continuity/grounding/
+  opposing-force, all three scene-ratios above 25% concrete floor, s02+0.5 tether-move at
+  n10 (concrete). What failed: 4 spine bones at the argument-middle (s02n06/n07, s03n04/n09),
+  all abstract-arrival or cognitive-object form, two carrying the chapter's axis-moves.
+  PROP-0023 (open, untriaged): targets Phase 4.6 apparatus-dominant whole-chapter false-ALIVE;
+  structurally distinct from c07 argument-spine interiority failure.
+
+options: n/a (process-critic mode)
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0024
+
+basis: |
+  Content-vs-process discrimination: the gate is working as intended (Q1 = yes, gate caught
+  the right failure). The over-fire risk (Q3) is not real — the bone-gate report's criteria
+  fields confirm concrete witnessing of relational/interior axis-moves is achievable without
+  physical-prop invention. The process gap is Q2: the Phase 1 brief carries the PASS-CHUNK-
+  VOICE-RISK flag as risk context but does not translate it into a bone-authoring constraint
+  for argument-spine positions. The screen-writer received the risk but not the constraint.
+  The constraint is enumerable (abstract-arrival form prohibited; cognitive-object form
+  prohibited; prescribed concrete alternatives for thesis-reception, evaluative-turn,
+  relational-axis-move, argument-completion positions). S-cost modify to Phase 1 step 2.
+  Proposing at first occurrence because: mechanism is precisely discriminated; gap is a spec
+  omission not a taste call; fix is writable now; PASS-CHUNK-VOICE-RISK is already the
+  detection predicate.
+  Not merged into PROP-0023: different failure class (argument-spine interiority vs.
+  apparatus-dominant whole-chapter), different target (Phase 1 brief vs. Phase 4.6 threshold),
+  different command phase.
+
+rationale: |
+  The three process questions answered:
+  Q1 (gate working as intended?): yes. EVENT-NOT-CONCRETE fired correctly on 4 bones; both
+  SUBSTANCE-FLAT findings are the same 2 bones; root cause is abstract-subject / cognitive-
+  object SVO form on the argument-progression spine. The gate caught the right failure class
+  precisely. Revise cycle routes correctly. This is a successful upstream catch requiring one
+  revise cycle on first argument-chapter encounter — not a gate miscalibration.
+  Q2 (Phase 1 brief gap?): yes. The seminar-risk / PASS-CHUNK-VOICE-RISK flag enters the
+  Phase 1 brief as risk context but the brief has no explicit constraint for how argument-spine
+  bones must be authored. The screen-writer understood the WATCH items (honored WATCH-1
+  faithfully) but defaulted to abstract-arrival form for the argument-progression events —
+  the most intuitive authoring choice for "the thesis lands on Taylor" that is precisely the
+  prohibited form. The Phase 1 step 2 SVO discipline block names the schema-level interiority
+  prohibitions but does not name the canonical argument-chapter evasion (abstract-arrival /
+  cognitive-object form). This is an authoring-time constraint the screen-writer can apply
+  proactively; the spec does not currently give it to them.
+  Q3 (over-fire risk?): no. Bone-gate report criteria fields enumerate concrete-witnessing
+  alternatives for every failing bone: enacted physical postures, speech bones with concrete
+  objectives, leave-taking beats, stillness-against-pressure forms. For relational/interior
+  axis-moves on argument chapters, concrete witnessing is achievable through operational and
+  relational correlates without inventing physical props the chapter does not have.
+
+trade-off: |
+  Proposing at first occurrence vs. waiting for recurrence: the argument-class constraint is
+  enumerable and precise now; waiting for recurrence means another argument-chapter revise
+  cycle on the same 4-bone failure mode that the Phase 1 brief could have prevented. The
+  guard against premature proposal (one-off taste call) does not apply here: the failure mode
+  is structural (schema-classified HARD findings), the mechanism is precisely named, and the
+  fix is a spec addition not a threshold calibration.
+
+follows: DEC-0050
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

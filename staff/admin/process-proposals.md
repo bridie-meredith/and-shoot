@@ -2793,3 +2793,168 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0024
+
+```yaml
+id: PROP-0024
+created_at: 2026-05-30T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/write-b01c07-bonegate.md
+  source_verdict: "FAIL (6 HARD — EVENT-NOT-CONCRETE + SUBSTANCE-FLAT on 4 argument-middle bones: s02n06, s02n07, s03n04, s03n09)"
+  gate_path: .claude/commands/and-write.md#phase-6
+target:
+  type: command
+  path: .claude/commands/and-write.md
+  section: "Phase 1 — Scene-decomposition, step 2 (bone-shape + SVO discipline)"
+change_type: modify
+rationale: |
+  b01c07 is a HINGE chapter whose central content is a discursive argument (Septon Halvard's
+  principled-slower thesis, genuinely engaged + unresolved). /and-substance chapter Phase 5.5
+  chunk-cold-read returned PASS-CHUNK-VOICE-RISK with an explicit "seminar-risk" flag. The
+  /and-write Phase 1 decomposition brief carried that risk flag + WATCH-1 (named-death concrete)
+  + front-load-concreteness instruction. The screen-writer honored WATCH-1 (Wenna Cobb is
+  concrete in dialogue). But the four spine bones carrying the argument's progression — the
+  thesis landing (s02n06), Taylor turning the thesis (s02n07 + its +0.3 axis-move), the named
+  death landing (s03n04), and the argument completing (s03n09 + its +0.5 axis-move) — were
+  authored as abstract arrival/landing/turning/completing interiority-form SVOs. Phase 6
+  EVENT-NOT-CONCRETE correctly fired HARD on all four, plus SUBSTANCE-FLAT on the two that
+  carried axis-moves.
+
+  The gate is working as intended. The revise cycle routes correctly. The process question is:
+  should the Phase 1 brief have prevented this at authoring time, given it explicitly carried
+  the PASS-CHUNK-VOICE-RISK / seminar-risk flag?
+
+  The answer is yes, and the gap is precise: Phase 1 step 2 instructs the screen-writer on
+  SVO discipline and the event-coverage map but has no explicit guidance on how to author
+  spine bones for argument-class chapters where the central event IS a discursive argument
+  progression. The seminar-risk flag from Phase 5.5 enters the brief as risk context, but
+  the brief does not translate it into a bone-authoring constraint on the argument-spine bones.
+  The current discipline covers the schema-level interiority prohibition (no perception verbs,
+  no cognitive objects) but does not name the specific failure mode for argument chapters: the
+  "X lands / X turns / X completes" abstract-arrival form that is not a schema violation on its
+  face (the verb "turns" is physical; "the thesis" as object is what makes it interiority) but IS
+  the canonical failure mode for argument-middle spine bones.
+
+  This is a Phase 1 brief-discipline gap for argument-class / PASS-CHUNK-VOICE-RISK chapters,
+  not a gate miss. The gate detected correctly. The addition is a proactive authoring constraint
+  that the screen-writer receives at decomposition time — the same substance the Phase 6 criteria
+  require, surfaced one phase earlier, so the revise cycle is the exception rather than the rule
+  on argument chapters.
+
+  Distinct from PROP-0023: PROP-0023 targets apparatus-dominant whole-chapter airlessness
+  (Phase 4.6 false-ALIVE threshold). That pattern is ~18/25 apparatus-dominant bones by contract,
+  ABSTRACTION-DOMINANT SIGNAL chapter-wide. The c07 pattern is argument-middle interiority at
+  4 specific spine bones despite a concrete bone-set everywhere else (91/57/69% ratios; the
+  abstraction is concentrated at the 4-bone argument spine). Different failure class (bone-authoring
+  discipline gap vs. ALIVE-verdict threshold), different target (Phase 1 brief vs. Phase 4.6
+  verdict criteria), different command phase.
+
+  Recurrence count: 1. First argument-chapter spine-bone interiority failure. Non-catastrophic
+  (4-bone revise cycle, clear criteria, chapter otherwise clean). Proposing at first occurrence
+  rather than waiting because: (a) the mechanism is precisely discriminated from all prior
+  failure classes; (b) the gap is in the Phase 1 brief (a concrete spec omission, not a taste
+  call); (c) the fix can be written with precision now — the three forms to prohibit (abstract
+  subject + arrival/completion verb; cognitive object + any verb; abstract-progress framing on
+  spine bones) are enumerable; (d) the minimum-repair path (argument-spine bone-authoring
+  constraint in Phase 1 step 2) is S-cost; (e) PASS-CHUNK-VOICE-RISK is already the detection
+  predicate (the flag is in the brief; the constraint only needs to name what the flag implies
+  for bone-authoring).
+
+  Note on question 3 (over-fire risk): the bone-gate report's criteria fields show that concrete
+  witnessing of relational/interior axis-moves is achievable without physical-prop invention —
+  enacted physical postures, speech bones with concrete objectives, departure gestures, stillness-
+  against-pressure forms all satisfy EVENT-NOT-CONCRETE for relational argument events. The
+  gate is not misfiring on legitimate interior-chapter content; the constraint directs the
+  screen-writer toward the available concrete-witnessing vocabulary for this chapter class.
+evidence_refs:
+  - "active-project/staff/auditor/write-b01c07-bonegate.md — fault-001/002/003/004 (FAULT-FORM-INTERIORITY on s02n06/s02n07/s03n04/s03n09); fault-011/012 (SUBSTANCE-FLAT-political_register-prot + SUBSTANCE-FLAT-social_tether-prot-rise on same bones); fix_scope block: spine bones must record observable physical acts from which the cognitive/relational quality can be inferred at the facet layer; event_not_concrete_summary: 4 FAIL of 7 tested"
+  - "active-project/staff/auditor/write-b01c07-bonegate.md — abstraction_dominance: s01=91%, s02=57%, s03=69%; ABSTRACTION-DOMINANT SIGNAL on s02 n06-n09 block only (not chapter-wide); chapter is NOT apparatus-dominant overall — c07 and c06 are structurally distinct failure classes"
+  - "staff/admin/process-proposals.md — PROP-0023 (Phase 4.6 apparatus-dominant false-ALIVE; target phase and failure class both distinct from this proposal: PROP-0023 is whole-chapter apparatus-dominance by contract; PROP-0024 is argument-spine interiority at 4 specific spine bones on a chapter that is otherwise concrete)"
+  - ".claude/commands/and-write.md Phase 1 step 2 — SVO discipline; PASS-CHUNK-VOICE-RISK risk context is received but no explicit bone-authoring constraint for argument-spine positions on flagged chapters is stated"
+  - "active-project/staff/auditor/write-b01c07-bonegate.md — fault-002 criteria: 'the bone must be recast as a concrete physical act by taylor-hebert-kl-122ac that an observer would see or hear — a physical gesture, a posture change, a verbal act, a return gaze, any concrete enacted response to the argument'; fault-004 criteria: 'concrete physically-observable act by a named actor — a leave-taking gesture, moment of mutual stillness, Taylor's physical departure, Halvard's response'"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-write.md, Phase 1 step 2, after the three bone shapes (moving /
+  held / chatter) block and before the event-coverage map instruction, add a subsection:
+
+  **Argument-chapter spine-bone constraint.** Fires when ANY of these predicates hold:
+    (a) `chapters[<slug>].chunk_cold_read.verdict = PASS-CHUNK-VOICE-RISK`
+    (b) Phase 0 brief names seminar-risk / argument-dominant / discursive-argument in WATCH items
+    (c) `chapters[<slug>].dramatic_shape` resolves to persuasion / deliberation / argument class
+
+  On chapters where the predicate fires, spine bones — bones whose `event_map[]` entries cover
+  the argument's progression (thesis delivery, thesis reception, evaluative turn, argument
+  completion, resolution) AND bones carrying axis-moves on relationship-class axes
+  (social_tether, relational_anchor, political_register, reputation, trust, community) where
+  those moves depend on the argument's progress — are subject to an additional bone-authoring
+  constraint:
+
+    **Prohibited forms on argument-spine bones:**
+
+    1. **Abstract-arrival form.** SVO whose subject is the argument, thesis, claim, evidence,
+       or named event itself, driving a metaphorical-arrival verb (lands, settles, strikes, hits,
+       completes, closes, resolves). Examples: "the thesis lands," "the named death lands,"
+       "the argument completes." These map an interior-reception event to an abstract-subject
+       pseudo-action. The schema already bans interiority verbs; this names the canonical
+       argument-chapter evasion that the schema's abstraction-as-subject rule catches but that
+       the screen-writer may not recognise as an interiority form without explicit naming.
+       Both FAULT-FORM-INTERIORITY (Phase 2) and EVENT-NOT-CONCRETE (Phase 6) are HARD.
+
+    2. **Cognitive-object form.** SVO whose named actor is concrete but whose object is the
+       thesis, argument, claim, or any abstraction of it: "taylor turns the thesis," "taylor
+       reads the argument," "taylor weighs the claim." The schema rule is abstraction-as-object
+       = INTERIORITY. The canonical failure: a physical verb ("turns") with an abstract object
+       ("the thesis"). Test: replace the object with a concrete physical referent — if the bone
+       no longer makes sense, the object is an abstraction and the bone is non-concrete.
+
+    **Prescribed alternatives.** For argument-spine positions, author a concrete physical act by
+    a named actor that an observer could witness, from which the argument-progression can be
+    inferred at the narrator-interest facet layer:
+
+    - Thesis reception: not "the thesis lands" — author the observable physical response that
+      signals engagement (actor goes still, actor moves toward the speaker, actor does not reach
+      for the counter, any enacted physical posture an observer reads as reception). The cognitive
+      event is narrator-interest material; the bone records the observable correlate.
+
+    - Evaluative turn: not "taylor turns the thesis" — author the physical act that enacts the
+      turn (a concrete speech bone where the actor delivers a counter, a posture shift, naming a
+      specific object or person, any physically-enacted response). The inner evaluation is
+      narrator-interest; the bone records what an observer sees or hears.
+
+    - Relational axis-moves in argument chapters: the moving bone must physically enact the
+      relational shift. For social_tether, political_register, community, trust axis-moves,
+      record the physical act from which the relational shift can be inferred — enacted presence,
+      a leave-taking, a named acknowledgment, a sustained or broken gaze, a physical departure
+      — not the shift itself as an abstract event.
+
+    - Argument completion: not "the argument completes" — author the physical act that is the
+      completion (a leave-taking beat, a moment of mutual stillness, the actor's physical
+      departure, the other actor's response) from which completion-not-closure can be inferred
+      at the facet layer.
+
+    These alternatives do not restrict what content the chapter carries — the evaluative,
+    interior, and relational dimension belongs in narrator-interest facets citing the bone's
+    concrete SVO as their physical anchor. The constraint governs what the bone itself records.
+
+  **Phase 0 integration note.** When Phase 0 reads
+  `chapters[<slug>].chunk_cold_read.verdict = PASS-CHUNK-VOICE-RISK`, the Phase 0 brief
+  surfacing block MUST include: "Argument-spine constraint active: spine bones carrying
+  thesis-progression and relational axis-moves must be concrete actor-verb-object (not
+  abstract-arrival or cognitive-object form) — see Phase 1 step 2 argument-chapter constraint."
+  This connects the PASS-CHUNK-VOICE-RISK detection to the Phase 1 authoring discipline so
+  the screen-writer receives the constraint at dispatch time, not at Phase 6 gate-time.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
