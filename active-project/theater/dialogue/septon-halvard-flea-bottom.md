@@ -1,0 +1,6 @@
+character: septon-halvard-flea-bottom
+episode: b01c07
+behavior-card: westeros-septon
+---
+1 @b01c07s02n05 | name what is wrong with the Lane man's arrangement, working it through honestly, not aimed at Taylor | "There's a man up the Lane runs errands for a house that pays him in bread, not coin. Good bread. His children eat. I've no quarrel with a man feeding his children. But the house pays him that way because it suits the house, and every loaf he takes, he takes on the house's terms, and the terms don't get smaller for the taking. They stay the size they were. A thing built crooked doesn't come straight because you lean on it gently. It grows crooked at the rate it was always going to grow. The slow way costs him more now — he'd go hungry a while, refusing. It costs him less after. The debt doesn't sit there gathering."
+2 @b01c07s03n06 | acknowledge the cost of his own position honestly without retracting it or claiming she is wrong | "I know the slow way has a cost. I'll not pretend I don't. You've named it, and I'll carry the name. I've buried by the slow way before. What I can't do is the other thing — take the quick way and watch the debt go on growing past where I can see the end of it. I don't know where it stops. That's the truth of it. I haven't an answer that makes your dead breathe. I've only the one I can live beside."
