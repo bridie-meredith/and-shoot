@@ -4,7 +4,7 @@
 **Chapter:** b01c06 — Otto elder-list delivery + Wren first-spoken-exchange / name-omission
 **Purpose:** the first LIVE (not retroactive) test of the 2026-05-29 overhaul (PROP-0019/0019-A spine-legibility + chunk-cold-read; PROP-0020 completeness/context-weave; PROP-0022 readability/aliveness twin). The prior session validated everything *retroactively on already-shipped c05*; this run is the live proof it could not provide.
 
-**STATUS: IN PROGRESS.** Chain reached: `/and-substance chapter b01c06` COMPLETE (status scened); `/and-write b01c06` Phase 1 decomposition in flight. Sections below are filled as gates fire. Questions 1–4 (per the task) answered incrementally; final synthesis at chapter-stitch.
+**STATUS: COMPLETE.** Full chain run on b01-c06: `/and-substance chapter` → `/and-write` → `/and-review bones` → `/and-facets` (orchestrator-critic SUCCESS 7/7) → `/and-stitch` (Phase 9 cold-read PASS-WITH-DEPTH-PASS-REQUIRED, DEC-0048). `draft/b01-c06.md` is the terminal deliverable; a depth pass (`/and-write b01c06 revise --from-signals`) is flagged before book-stable. Questions 1–4 answered in the **FINAL SYNTHESIS** section at the bottom of this file.
 
 ---
 
