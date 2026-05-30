@@ -858,3 +858,48 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-05-30-003
+      created_at: 2026-05-30T00:00:00Z
+      created_by: "/and-write b01c06 Phase 2 (auditor fault-002 + admin DEC ruling)"
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        SCHEMA AMBIGUITY (ruled, needs formalization). bones.schema.md §"Dialogue-anchor
+        bones" requires a canonical speech-form bone (`<speaker> speaks to <listener>`) to
+        move ">=1 communication-class axis (community / knowledge / reputation / trust)".
+        That enumerated set is the UNIVERSAL questionnaire taxonomy. This project remapped
+        to a fully custom signature (state_axes: moral_framework, capability, position-*,
+        relational_anchor_status, moral_legibility_to_self, political_register-*,
+        social_tether-* ; class only ever emotional|plot). No axis named
+        community/knowledge/reputation/trust exists, so a literal slug-match would make
+        EVERY speech bone in the project invalid — contradicted by c03/c04 speech bones
+        (jarvis<->taylor) that shipped through the same Phase-6 gate.
+
+        RULING (admin user-proxy, 2026-05-30; "custom signature authoritative over universal
+        scaffolding"): relational_anchor_status (and the social_tether-* family) ARE this
+        project's communication/relational-class axes. b01c06s01n04 (Wren's first spoken
+        line) declaring relational_anchor_status +1.0 is a VALID canonical speech bone;
+        Phase 2 fault-002 is NOT a real fault.
+
+        FORMALIZATION (two edits proposed):
+        (a) bones.schema.md: generalize the speech-bone requirement text to
+            ">=1 communication/relational-class axis per the active signature (universal
+            questionnaire: community/knowledge/reputation/trust; custom signature: the
+            axis/axes the signature designates relational/communicative)."
+        (b) series.substance signature block: add a one-line note naming
+            relational_anchor_status + social_tether-* as the communication-class axes, so
+            the next chapter's Phase-2 auditor does not re-flag this.
+        Resolve at a /and-review pipeline tri-walk (schema vs command-body vs rubric) or a
+        dedicated schema-edit pass. Until then this ruling is the binding precedent.
+      context_refs:
+        - schemas/bones.schema.md  # §Dialogue-anchor bones, lines ~140 + ~165
+        - active-project/staff/auditor/write-b01c06-pass2.md  # fault-002
+        - active-project/staff/showrunner/memory.md  # series.substance.state_axes
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
