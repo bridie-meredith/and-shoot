@@ -4271,6 +4271,85 @@ books:
               protagonist_force: "Taylor's operational precision — she can produce the list because her coverage architecture has been producing this answer for months; the feed knows these wards; she knows these wards; the compilation is clean, quick, and accurate"
               opposing_force: "the ask's specificity as a category-crossing — movement patterns are a class, names are persons; Otto has asked her to convert the coverage architecture's output from pattern-language to person-language; the conversion is what she has been not doing since d04; the compilation is the act of doing it, before the sending is the act of completing it"
               stakes_axis: moral_framework
+            bones:
+              - slug: b01c06s02n01
+                flat_id: 10
+                svo: "the jarvis-channel message arrives"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: position-prot-rise
+                    rationale: "the request arrives through Jarvis, not a new formalization event; Otto's ask is within the existing arrangement; position holds"
+                  - axis: political_register-prot
+                    rationale: "the ask arrives through the Jarvis channel; the channel is Flea Bottom-layer routing, not a court-tier content shift; resentment color does not advance on the request's arrival"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s02n02
+                flat_id: 11
+                svo: "taylor-hebert-kl-122ac opens the jarvis-channel message"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: moral_framework
+                    rationale: "the list is compiled but not sent; no delivery is complete in this scene; moral_framework holds at current crack-level"
+                  - axis: moral_legibility_to_self
+                    rationale: "the accounting has not run yet; legibility holds until the accounting begins in s03"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s02n03
+                flat_id: 12
+                svo: "taylor-hebert-kl-122ac reopens the jarvis-channel message"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: moral_framework
+                    rationale: "re-engaging the ask enacts the weight of its specificity — names vs. movement patterns; framework holds because the list is not sent; the weight is not yet the breach"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s02n04
+                flat_id: 13
+                svo: "taylor-hebert-kl-122ac pulls the coverage-memory record"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: capability
+                    rationale: "coverage-recall, not new feed deployment; capability holds at current rank; the compilation uses what has already been built"
+                  - axis: moral_legibility_to_self
+                    rationale: "pulling the coverage record is the compilation step before the accounting runs; legibility holds until s03"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s02n05
+                flat_id: 14
+                svo: "taylor-hebert-kl-122ac fills the jarvis-channel form"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: moral_framework
+                    rationale: "the list is compiled but not sent; the moral weight lands at the send, not the compile; the compilation is coverage-recall inside the existing licensed exception; framework holds"
+                  - axis: capability
+                    rationale: "the compilation uses the coverage architecture already in place; capability holds"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s02n06
+                flat_id: 15
+                svo: "taylor-hebert-kl-122ac lowers the jarvis-channel form"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: moral_framework
+                    rationale: "the send is pending; the accounting has not run yet; setting the form down without sending enacts the loaded pause that is this scene's function; framework holds"
+                  - axis: relational_anchor_status
+                    rationale: "the list does not include Wren; the omission from s01 stands without new action this scene; anchor holds at its post-s01 rank"
+                  - axis: social_tether-prot-rise
+                    rationale: "the arrangement ask is within the existing tether structure; no new addition; tether holds"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
 
           - slug: b01c06s03
             seq: 3
@@ -4365,6 +4444,129 @@ books:
               protagonist_force: "the accounting discipline — Taylor runs the explicit ledger before acting; the discipline is real; she does not send without closing the entry; the form holds"
               opposing_force: "the accounting's honesty as the breach mechanism — the ledger runs correctly and arrives at delivery; there is no error in the accounting; the rationalize-each-trade pattern is the form the accounting takes when the framework is operating correctly with bad premises; the opposing force is not external pressure but the accounting's own correct output"
               stakes_axis: moral_framework
+            bones:
+              - slug: b01c06s03n01
+                flat_id: 16
+                svo: "taylor-hebert-kl-122ac opens the accounting ledger"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: moral_framework
+                    rationale: "the accounting has not yet arrived at delivery; the ledger opens on the first arm; moral_framework holds at current crack-level pending completion"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s03n02
+                flat_id: 17
+                svo: "taylor-hebert-kl-122ac writes the first arm — names against Sera's protection"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: moral_framework
+                    rationale: "the first arm runs cleanly; framework holds — the delivery is not completed in this bone; the accounting arm is not the breach, it is the mechanism that makes the breach legible"
+                  - axis: relational_anchor_status
+                    rationale: "relational_anchor_status moved in s01; the accounting does not add further weight; the contrast between the four names and Wren's absent name is structurally present but does not move the axis"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s03n03
+                flat_id: 18
+                svo: "taylor-hebert-kl-122ac writes the second arm — omission risk against Sera's exposure"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: moral_framework
+                    rationale: "second arm runs without embellishment; the accounting is honest and not yet complete; framework holds pending the close"
+                  - axis: political_register-prot
+                    rationale: "the ward elders are Flea Bottom-layer; the ask came from Otto through Jarvis; no court-tier content activates the resentment register in the accounting itself; political_register-prot holds"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s03n04
+                flat_id: 19
+                svo: "taylor-hebert-kl-122ac marks the red-keep coverage record"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: capability
+                    rationale: "the Red Keep coverage is the existing capability architecture; marking the record is coverage-recall, not new deployment; capability holds"
+                  - axis: relational_anchor_status
+                    rationale: "Sera's presence in the coverage record is the protection architecture's object; the relational anchor holds at its post-s01 rank; this bone enacts the distance of the protect-target without adding weight"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s03n05
+                flat_id: 20
+                svo: "taylor-hebert-kl-122ac closes the accounting entry"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: moral_framework
+                    rationale: "the accounting runs as stated; both arms land with full weight; the balance arrives at delivery; moral_framework holds at this bone — the move fires on the send (n06), not on the close; the close IS the moment the breach becomes inevitable"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s03n10
+                flat_id: 21
+                svo: "taylor-hebert-kl-122ac squares the jarvis-channel form"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: moral_framework
+                    rationale: "deliberation complete; the accounting's verdict has converted to act; the framework holds at this bone — the move fires on the seal at n06, not here; this bone is the close→act hinge that makes the causation of the breach visible (write terms → run balance → close entry → ACT)"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s03n06
+                flat_id: 22
+                svo: "taylor-hebert-kl-122ac seals the jarvis-channel form"
+                shape: moving
+                axis_moves:
+                  - axis: moral_framework
+                    direction: down
+                    magnitude: 1.0
+                axes_held: []
+                cost_ledger_anchor: cl-d06
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s03n07
+                flat_id: 23
+                svo: "the courier takes the jarvis-channel form"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: moral_framework
+                    rationale: "post-move hold — moral_framework moved at n06; the courier taking the form is the physical completion of the send; the axis holds at its new rank"
+                  - axis: social_tether-prot-rise
+                    rationale: "the delivery is within the existing tether structure; no new tether formation event; tether holds"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s03n08
+                flat_id: 24
+                svo: "taylor-hebert-kl-122ac opens the ward-coverage notes"
+                shape: moving
+                axis_moves:
+                  - axis: moral_legibility_to_self
+                    direction: up
+                    magnitude: 1.0
+                axes_held: []
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s03n09
+                flat_id: 25
+                svo: "taylor-hebert-kl-122ac closes the ward-coverage notes"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: moral_legibility_to_self
+                    rationale: "post-move hold — moral_legibility moved at n08; closing the notes is the physical completion of the contrast-moment; the crack deepens not from suppression but from the precision with which both substrates sit complete in the record"
+                  - axis: position-prot-rise
+                    rationale: "the delivery is within the existing arrangement; no new formalization event; position holds"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+                gate_verdict: {bonefide: true, flat: false}
 
       - slug: b01c07
         status: planned
