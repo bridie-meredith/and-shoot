@@ -46,6 +46,23 @@ scope: line
 change: SVO recast from "taylor-hebert-kl-122ac sets the jarvis-channel form on the working surface" to "taylor-hebert-kl-122ac lowers the jarvis-channel form"; PP-destination dropped; form remains direct object; "lowers" preserves loaded-pause = set down unsent; verified present in file at s02n06
 criteria met: yes
 
+## fault-008 — RESOLVED (verified applied by prior session; notes consistent) — 2026-05-30T09:05:00Z
+fault: s03n04 SVO "marks the corridor entry in the red-keep coverage record" — "in the red-keep coverage record" is a banned PP (FAULT-FORM-MODIFIER)
+scope: line
+change: SVO recast from "taylor-hebert-kl-122ac marks the corridor entry in the red-keep coverage record" to "taylor-hebert-kl-122ac marks the red-keep coverage record"; PP dropped; coverage-record substrate becomes direct object; verified present in file at s03n04; event-coverage map at s03 also updated to "marks the red-keep coverage record" (no direct SVO-quote in notes; no notes change required)
+criteria met: yes — SVO clean; single concrete transitive verb; named substrate as direct object; no PP
+
+## fault-009 — RESOLVED (verified applied by prior session; notes self-check updated) — 2026-05-30T09:06:00Z
+fault: s03n06 SVO "marks the names in the jarvis-channel form" — "in the jarvis-channel form" is a banned PP (FAULT-FORM-MODIFIER); CENTRAL EVENT bone (s03 send); must stay concrete actor-verb-object and read as dispatch act
+scope: line
+change: SVO recast from "taylor-hebert-kl-122ac marks the names in the jarvis-channel form" to "taylor-hebert-kl-122ac seals the jarvis-channel form"; form becomes direct object; "seals" is concrete transitive verb encoding dispatch act (irreversible commitment); cost_ledger_anchor cl-d06 + moral_framework -1.0 axis_moves unchanged; notes EVENT-NOT-CONCRETE self-check block confirmed updated to quote new SVO ("taylor-hebert-kl-122ac seals the jarvis-channel form") with seals rationale; Central-event bones section (s03) confirmed updated to new SVO; Chapter Roll-Up Summary Central-event bones quoted section confirmed updated to new SVO; SENSORY-GROUNDING description and event-coverage map also updated
+criteria met: yes — SVO clean; no PP; concrete transitive verb; named physical object as direct object; dispatch-act quality preserved; EVENT-NOT-CONCRETE-clean; axis_moves/axes_held/cost_ledger_anchor unchanged
+
+## SESSION-END — 2026-05-30T09:07:00Z — write-b01c06-pass2-svo-recasts-resume
+findings-applied: 8 (fault-001 through fault-009, excluding fault-002 per dispatch exclusion)
+findings-skipped: 1 (fault-002 s01n04 speech-axis — excluded by dispatch: resolved separately, axis_moves left untouched)
+exit: CLEAN
+
 ## SESSION-START — 2026-05-25T00:00:00Z — fault-001-b01c01s03
 dispatch: partial-settlement notation fix for cl01b in b01c01s03 social_tether-prot-rise notes
 target: active-project/staff/showrunner/b01c01-draft.md
