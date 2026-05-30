@@ -1354,7 +1354,9 @@ evidence_refs:
   - "active-project/staff/auditor/write-b01c04-bone-gate-redo.md — PASS verdict after redo; additive cycle confirms the 2.0 target with 1.0-per-scene split is structurally valid"
   - ".claude/commands/and-write.md — Phase 2: FAULT-BONE-DELTA-MALFORMED classification: magnitude outside chunk_targets.bone.delta_per_axis is a HARD fault"
   - "schemas/showrunner-memory.schema.md — chunk_targets.bone.delta_per_axis field (the floor the chapter contract must pre-flight against)"
-recurrence_count: 1
+recurrence_count: 2
+recurrence_refs:
+  - "active-project/staff/auditor/write-b01c06-bone-gate.md — signal-001 + signal-002: moral_legibility_to_self scene-aggregate target +0.5 (fractional residual after scene distribution); bone-floor 1.0 forced over-delivery to +1.0; accepted-with-rationale; stakes-axis tie (moral_framework=moral_legibility at 1.0 each) is a direct consequence of the same fractional-target-floor collision. Second chapter exhibiting this exact structural pattern (b01c04 was first). No HARD fired; accepted path worked. Confirms recurrence is predictable on any chapter with fractional scene residuals."
 proposed_diff: |
   In .claude/commands/and-substance.md, in the chapter-level authoring phase (Phase 4 or
   Phase 5 — whichever phase persists the per-scene substance contract to memory), add a
@@ -1450,7 +1452,8 @@ evidence_refs:
   - "active-project/staff/auditor/write-b01c04-bone-gate-redo.md — PASS after additive cycle; 5 held bones added to satisfy HELD-AXIS-NOT-WITNESSED on 5 axes across 3 scenes; no existing bones modified"
   - ".claude/commands/and-write.md — Phase 1 step 2 held-bone shape description: 'Held axes contribute zero by definition and must each have at least one bone in the scene with that axis in its bone-level axes_held[]' — requirement exists but is embedded in shape description, not in numbered authoring steps"
   - ".claude/commands/and-write.md — Phase 6 HELD-AXIS-NOT-WITNESSED: 'for each entry in scenes[].substance_delta.axes_held[], at least one bone in the scene must have that axis in its bone-level axes_held[]' — the gate exists and fires correctly; the gap is at the authoring brief, not the gate"
-recurrence_count: 1
+  - "active-project/staff/auditor/write-b01c06-bone-gate.md — fault-001 HELD-AXIS-NOT-WITNESSED: political_register-prot s01; resolved by assigning axis to existing bone s01n02 (no new bone required); same failure class at lower severity than c04 (1 axis vs 5; trivial fix vs additive cycle). Confirms the pattern is recurrent across chapters with held axes in the contract."
+recurrence_count: 2
 proposed_diff: |
   In .claude/commands/and-write.md, Phase 1, after step 4 (scene_conflict / opposing-force
   rule), add a new numbered step 4a (or append to step 4 as a sub-bullet):

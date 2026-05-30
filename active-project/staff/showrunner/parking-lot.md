@@ -794,3 +794,112 @@ parking_lot:
         Final-cycle aggregate: vibes 3/3 ACCEPT, memory 3/3 ACCEPT, exposition 3/3
         ACCEPT (the three Sera-architecture carrier facets).
         Evidence: active-project/staff/auditor/facets-audience-gate-r2.md
+
+    - id: pl-2026-05-30-001
+      created_at: 2026-05-30T00:00:00Z
+      created_by: "/and-substance chapter b01c06 Phase 4 (auditor flag-001, v2)"
+      target:
+        command: /and-substance
+        scope: "chapter b01c08"
+        phase: Phase 3
+      severity: SOFT
+      description: |
+        cl-d06 in series.substance.cost_ledger declares gain "relational_anchor_status +2"
+        but b01c06 settles only +1.0 (first tranche, anchored at b01c06s01 — the Wren
+        spoken-exchange + name-omission). The cost side (moral_framework -1) is FULLY
+        settled at b01c06s03. The remaining +1.0 relational_anchor_status gain is named
+        but not yet anchored downstream. b01c06s01 notes name the candidate window
+        b01c08-b01c10 ("when Wren becomes structurally necessary to the coverage map
+        without appearing in the ledger, per d08 delta"). The resolving chapter
+        (b01c08/c09/c10) Phase 3 must add relational_anchor_status +1.0 with
+        cost_ledger_anchor: cl-d06 to its axes_in_motion, or the +2 cl-d06 gain carries
+        an undeclared partial-settle indefinitely. Matches the recurring
+        worm-canon-pedant partial-settlement pattern (cf. pl-2026-05-25-001).
+      context_refs:
+        - active-project/staff/auditor/substance-b01c06-scenes-v2.md  # flag-001
+        - active-project/staff/showrunner/memory.md  # b01c06s01 substance_delta notes
+        - active-project/staff/showrunner/series-trajectory.md  # d08 delta
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-30-002
+      created_at: 2026-05-30T00:00:00Z
+      created_by: "/and-substance chapter b01c06 Phase 5 (audience 3-of-3 ACCEPT, bones-execution watches)"
+      target:
+        command: /and-write
+        scope: "b01c06"
+        phase: null
+      severity: SOFT
+      description: |
+        Two bones-execution watches the audience trio attached to their b01c06 ACCEPT,
+        for /and-write Phase 1 scene-decomposition discipline:
+        (a) dark-fantasy-reader: the Wren name-omission in s01 must be ENACTED as a
+            physical pause + specific field-entry ("ward-resident, Hook, routine" written;
+            name-field left blank by visible choice), NOT as interior moral narration.
+            If the bones let the protective logic become Taylor running a moral narrative
+            ("she considers what naming Wren means..."), the omission loses its weight.
+            Keep it physical: hand pauses over the field; she writes the role, not the name.
+        (b) cape-fic-reader + worm-canon-pedant: the ward-coverage-notes vs Jarvis-channel
+            substrate gap must be staged as a concrete institutional mechanism (two distinct
+            substrates; the notes inferable-with-effort but not Jarvis-accessible), not as
+            "Taylor hoping" the gap holds. This is Taylor applying her pattern-reading
+            discipline to her own record-keeping — an operational-security act, not a wish.
+        Both are write-time prose/bone discipline, not contract changes. Also carry the
+        Phase 5 audience-gate (Phase 5b downstream) expectation that s03's "the accounting
+        is honest / the accounting is the breach" stays enacted, not stated as theme.
+      context_refs:
+        - active-project/audience/dark-fantasy-reader/stm.md
+        - active-project/audience/cape-fic-reader/stm.md
+        - active-project/audience/worm-canon-pedant/stm.md
+        - active-project/staff/showrunner/memory.md  # b01c06 attempt-2 persist comment
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-30-003
+      created_at: 2026-05-30T00:00:00Z
+      created_by: "/and-write b01c06 Phase 2 (auditor fault-002 + admin DEC ruling)"
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        SCHEMA AMBIGUITY (ruled, needs formalization). bones.schema.md §"Dialogue-anchor
+        bones" requires a canonical speech-form bone (`<speaker> speaks to <listener>`) to
+        move ">=1 communication-class axis (community / knowledge / reputation / trust)".
+        That enumerated set is the UNIVERSAL questionnaire taxonomy. This project remapped
+        to a fully custom signature (state_axes: moral_framework, capability, position-*,
+        relational_anchor_status, moral_legibility_to_self, political_register-*,
+        social_tether-* ; class only ever emotional|plot). No axis named
+        community/knowledge/reputation/trust exists, so a literal slug-match would make
+        EVERY speech bone in the project invalid — contradicted by c03/c04 speech bones
+        (jarvis<->taylor) that shipped through the same Phase-6 gate.
+
+        RULING (admin user-proxy, 2026-05-30; "custom signature authoritative over universal
+        scaffolding"): relational_anchor_status (and the social_tether-* family) ARE this
+        project's communication/relational-class axes. b01c06s01n04 (Wren's first spoken
+        line) declaring relational_anchor_status +1.0 is a VALID canonical speech bone;
+        Phase 2 fault-002 is NOT a real fault.
+
+        FORMALIZATION (two edits proposed):
+        (a) bones.schema.md: generalize the speech-bone requirement text to
+            ">=1 communication/relational-class axis per the active signature (universal
+            questionnaire: community/knowledge/reputation/trust; custom signature: the
+            axis/axes the signature designates relational/communicative)."
+        (b) series.substance signature block: add a one-line note naming
+            relational_anchor_status + social_tether-* as the communication-class axes, so
+            the next chapter's Phase-2 auditor does not re-flag this.
+        Resolve at a /and-review pipeline tri-walk (schema vs command-body vs rubric) or a
+        dedicated schema-edit pass. Until then this ruling is the binding precedent.
+      context_refs:
+        - schemas/bones.schema.md  # §Dialogue-anchor bones, lines ~140 + ~165
+        - active-project/staff/auditor/write-b01c06-pass2.md  # fault-002
+        - active-project/staff/showrunner/memory.md  # series.substance.state_axes
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

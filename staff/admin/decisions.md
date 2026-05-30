@@ -2011,3 +2011,223 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0044 | 2026-05-30 | FAST (user-proxy)
+
+question: |
+  /and-substance chapter b01c06 Phase 5.5 chunk-cold-read returned CHUNK-CLASS-B (summary maps to
+  goal; strict Q7 re-answer = NO). Disposition: (R) Revise chunk, (P) Proceed with risk recorded,
+  or (S) Substance-contract revision?
+
+context: |
+  Chapter b01c06, first live test of the 2026-05-29 readability+completeness overhaul
+  (PROP-0019/0019-A/0020/0022). Cold-reader (uninformed, no c01-c05 access) recovered all three
+  scenes, causality, and payoff cleanly. Q7 strict-NO driven entirely by undefined proper nouns and
+  world-terms established in c01-c05 (Jarvis, Otto, Sera, Alicent, "the feed", "the arrangement",
+  Black/Green factions, Wren, the Hook, "first deliberate relative to what"). None of the confusions
+  touch the chapter's internal logic. Phase 4 dramatist returned ACCEPT (clean curve). Voice-density
+  guard: Signal B would NOT fire (central event is concrete actor-verb-object). Summary maps to goal
+  on both halves.
+
+decision: (P) — Proceed with risk recorded.
+
+basis: |
+  goal:1 (pipeline correctness — the overhaul's design intent is that mid-series context-noise is
+  NOT a chunk-design defect; handing the confusion list to the context-aware completeness track is
+  the designed path) + methodology:3a (reversibility — (R) re-authors a non-defective chunk;
+  that is irreversible work for zero expected quality gain) + methodology:3d (optionality — (P)
+  preserves the highest-information live-validation path: the designed cold-read→completeness-track
+  handoff exercises on a live chapter for the first time; (R) collapses that test into a trivial
+  non-match)
+
+rationale: |
+  The strict-NO is textbook mid-series context-blindness. The overhaul report (2026-05-29)
+  explicitly names this as the c05 FAIL root cause and names this exact class of confusion — proper
+  nouns established in prior chapters flagged by a context-free cold reader — as the load that
+  PROP-0020's followability pre-check (/and-review bones follow_check) + /and-facets Phase 2.5
+  context-ledger are equipped to adjudicate. The cold-read is doing exactly what it is supposed to
+  do: surfacing the confusion list. The routing decision is whether the confusion list represents a
+  chunk-design hole (Class A → R) or mid-series context noise (Class B → P). Every indicator says
+  Class B: summary maps, causality is tight, payoff lands, all confusions trace to series-established
+  vocabulary. No chunk redesign would cure undefined-proper-noun blindness for a context-free reader;
+  the cure is the weave layer.
+
+  The caller's analysis is correct and should be confirmed as stated. The Q7 confusion list should
+  be recorded as cold_read_risk_carry and handed to /and-review bones follow_check as the
+  context-weave checklist.
+
+trade-off: |
+  (P) accepts that the overhaul's completeness track will need to adjudicate these items. If the
+  context-aware layer also fails to weave them (i.e., /and-review bones FOLLOW-FAIL fires), that
+  would retroactively indicate the chunk-design needed to pre-empt more context — but that call is
+  more informed with context-aware evidence than with the context-free reader's response. Deferring
+  the judgment to the right layer is correct. The risk carry is the mechanism designed for this.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0045 | 2026-05-30 | SLOW
+
+question: Does this project's custom axis `relational_anchor_status` satisfy `schemas/bones.schema.md`'s requirement that a canonical speech-form bone (`<speaker> speaks to <listener>`) must move "≥1 communication-class axis (community / knowledge / reputation / trust)"?
+
+context: |
+  /and-write b01c06 Phase 2 constraint audit raised fault-002 against bone b01c06s01n04
+  (`wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac`; relational_anchor_status
+  +1.0, class: emotional). The auditor's proposed fix — "add a knowledge or trust axis move at
+  magnitude 1.0" — is impossible: this project's signature replaced the universal taxonomy axes
+  (community/knowledge/reputation/trust) with a fully custom set. No axis in the project signature
+  is named community, knowledge, reputation, or trust. The axis at issue (`relational_anchor_status`)
+  is the project's explicit carrier for relational-bond weight loading (class: emotional). The
+  chapter contract designates this exchange as the relational_anchor_status carrier; it is the
+  first spoken Wren↔Taylor line in the book. This is the first live test of the readability
+  overhaul (PROP-0019/0020/0022). The load-bearing first-dialogue bone is at stake.
+
+  Candidate ruling supplied by caller: relational_anchor_status IS this project's communication/
+  relational-class axis for the speech-bone requirement; the schema's enumerated list should be
+  read as "a relational/communication-class axis per the active project signature," not as a
+  literal slug-match against the universal four.
+
+options: |
+  (A) CONFIRM candidate ruling: relational_anchor_status satisfies the speech-bone requirement;
+      fault-002 is not a real fault; n04 keeps relational_anchor_status +1.0 and is valid.
+  (B) REJECT candidate ruling: the schema's enumerated four (community/knowledge/reputation/trust)
+      are the only valid axes for this requirement; the bone must be recast or restructured.
+  (C) ESCALATE: this is an architectural direction question requiring the principal's judgment.
+
+decision: CONFIRM candidate ruling (option A). relational_anchor_status satisfies the canonical speech-form
+  substance requirement on this project. fault-002 is not a real fault. n04 keeps relational_anchor_status
+  +1.0 and is a valid speech-anchor bone.
+
+basis: |
+  goal:1 (pipeline correctness — apply the rule in service of its purpose, not as mechanical
+  slug-matching against a taxonomy that this project does not use) + methodology:3a (reversibility —
+  option B requires recast or structural redesign of a load-bearing bone; option A has no irreversible
+  cost) + methodology:3e (convention — DEC-0006/0007 both applied spec-intent over mechanical literalism;
+  same principle governs here) + schema purpose analysis (the communication-class requirement exists to
+  prevent speech bones from being zero-substance on the relational/social axis; it does not exist to
+  enforce the universal taxonomy's slug names as a vocabulary requirement).
+
+rationale: |
+  The schema's communication-class requirement at lines 140-141 and 165 names four axes:
+  community / knowledge / reputation / trust. These are the universal questionnaire taxonomy's
+  communication-class entries. The requirement's purpose is clear from the surrounding text:
+  speech bones must move "at least one communication-class axis" so that a `speaks to` bone is
+  not zero-substance on the social/relational dimension — preventing speech bones from being
+  authored as physical-action-only events that happen to involve speech.
+
+  This project replaced the universal taxonomy with a fully custom signature. `relational_anchor_status`
+  (class: emotional) carries the relational-bond weight-loading function that `community` and `trust`
+  carry in the universal taxonomy. `social_tether-prot-*` (class: plot) carries the social-connection
+  dynamics. No project axis is named community/knowledge/reputation/trust because those universal
+  functions were subsumed into the project's custom axis design.
+
+  Under option B, canonical speech-form bones would be permanently unauthorable on this project —
+  no project axis matches the schema's enumerated slugs, so every `speaks to` bone would fault
+  regardless of substance declared. This is an absurd result. The schema cannot have intended to
+  make speech bones malformed by design on any project that remaps the universal taxonomy.
+
+  The correct interpretation: the schema's enumerated list names the universal taxonomy's
+  communication-class entries as the reference class. A project that remaps the taxonomy satisfies
+  the requirement by moving an axis that is functionally equivalent — one that carries the
+  relational/communicative/social-bond function in the active project signature.
+  `relational_anchor_status` is that axis: a first spoken Wren↔Taylor exchange forming the relational
+  anchor is precisely what community/trust movement looks like in this project's axis vocabulary.
+
+  The DEC-0006 and DEC-0007 precedents (spec-intent governs, not mechanical literalism when
+  mechanicalism serves no spec goal and produces a worse pipeline-correctness outcome) apply directly.
+
+  Option C (ESCALATE): not warranted. This is a schema-interpretation question, not an architectural
+  direction question. The interpretation follows from the schema's stated purpose applied to a project
+  that has validly customized its axis taxonomy. Goals and methodology resolve this clearly.
+
+trade-off: |
+  Option B enforces literal slug-matching but makes canonical speech bones permanently malformed on
+  this project — a worse pipeline-correctness outcome, and it guts the chapter's first Wren↔Taylor
+  relational beat. No gain from option B that option A does not also provide (both honor the schema's
+  anti-zero-substance purpose; A does it correctly for a remapped taxonomy).
+
+  Confirming A also flags a genuine schema ambiguity: the enumerated list does not say "or the
+  project-signature equivalent," which is what caused the auditor's false fault. A parking-lot
+  schema-clarification item is the correct follow-on (caller stated intent to file it).
+
+  The parking-lot item should target bones.schema.md lines 140-141 and 165, change_type: modify
+  (S cost), clarifying that the enumerated axes are the universal taxonomy's communication-class
+  examples, not an exhaustive slug-require list. That prevents this from re-litigating at c07+.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0046 | 2026-05-30 | FAST (process-critic)
+
+question: |
+  /and-write b01c06 Phase 6 bone-gate: 1 HARD HELD-AXIS-NOT-WITNESSED (political_register-prot
+  s01; resolved by assigning axis to existing bone s01n02 — no new bone) + 2 SIGNALs
+  accepted-with-rationale (signal-001: moral_legibility_to_self +1.0 realized vs +0.5 target;
+  signal-002: stakes-axis tie moral_framework=moral_legibility at 1.0). Does the process
+  need to change? Specifically: (1) does the fractional-target-floor-realization recurrence
+  warrant a named auto-accepted gate disposition, and (2) does the HELD-AXIS-NOT-WITNESSED
+  warrant any new proposal beyond PROP-0011?
+
+context: |
+  source_report: active-project/staff/auditor/write-b01c06-bone-gate.md (Phase 6 bone-gate)
+  gate_path: .claude/commands/and-write.md#phase-6
+  Prior proposals: PROP-0010 (fractional-target-floor; recurrence_count already 2; c06
+  evidence already in recurrence_refs). PROP-0011 (HELD-AXIS-NOT-WITNESSED completion gate;
+  recurrence_count 1 from c04; c06 not yet in recurrence_refs).
+  Chapter b01c06 outcome: 0 HARDs survived to Phase 7; 2 SIGNALs accepted-with-rationale;
+  audience leg SUBSTANCE-FELT 3/3. EVENT-NOT-CONCRETE, ABSTRACTION-DOMINANCE, SENSORY-GROUNDING
+  all PASS. Chapter proceeding to Phase 7.
+
+options: n/a (process-critic mode)
+
+decision: |
+  Candidate 1 (fractional-target-floor pattern): OK-MERGED-INTO PROP-0010.
+  Candidate 2 (HELD-AXIS-NOT-WITNESSED): OK-MERGED-INTO PROP-0011 (recurrence_refs updated).
+  No new proposal warranted on either candidate.
+
+basis: |
+  Candidate 1: PROP-0010 already has recurrence_count: 2 and the c06 evidence in its
+  recurrence_refs. The gate handled the b01c06 case correctly (LEGAL ruling, ±1 tolerance
+  absorbs it, no HARD). A named auto-accepted gate disposition would pre-empt PROP-0010's
+  upstream pre-flight fix — proposing gate-level machinery for a collision that PROP-0010
+  eliminates at the source is redundant until PROP-0010 is triaged. Premature.
+
+  Candidate 2: PROP-0011 proposes Phase 1 step 4a completion gate for held-axis witnessing.
+  b01c06's HELD-AXIS-NOT-WITNESSED (1 axis; resolved with no new bone) is the same failure
+  class at lower severity than c04 (5 axes; 5 new bones). Recurrence evidence for PROP-0011;
+  not a novel pattern. Merging c06 evidence into PROP-0011 recurrence_refs.
+
+  Content vs. process: the b01c06 gate outcome is a gate working correctly (caught the HARD;
+  resolved cheaply). The upstream authoring gap is already targeted by PROP-0011. No new
+  change_type required.
+
+rationale: |
+  The two SIGNALs (moral_legibility over-delivery + stakes-axis tie) are direct consequences
+  of the fractional-target-floor structural collision that PROP-0010 targets upstream. The
+  signals were accepted-with-rationale cleanly — the gate disposition rule did not fail.
+  Proposing a named auto-accept disposition at the gate level before PROP-0010 (which would
+  eliminate the collision at /and-substance chapter) is triaged would be building downstream
+  workarounds for an upstream root cause. Methodology: prefer modify-at-source over
+  modify-at-symptom; prefer the already-authored PROP-0010 over a second PROP targeting
+  derivative symptoms.
+
+trade-off: |
+  Not proposing a named gate disposition means each future fractional-target-floor occurrence
+  will re-litigate as a SIGNAL with rationale. Acceptable cost: the rationale is mechanical
+  (within ±1, LEGAL) and takes one auditor sentence. The upstream PROP-0010 fix is the correct
+  closure; gate-level naming before that fix lands would be premature accumulation.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
