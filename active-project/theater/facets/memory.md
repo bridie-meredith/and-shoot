@@ -27,7 +27,7 @@ chapter-dramatic-shape: climax (V3 feel-as-spine carve-out DOES NOT APPLY — re
 # - mem:2 @19: Westerosi-monument-clamp; scene-C rising-zone backward-reach (NOT peak-bones, NOT peak-shadow-bones) — contested-but-defensible under the backward-reach argument; parallels c05 memory:1 @19 construction.
 
 1 @12 the read is already done and what the ask wants is the bodies pulled out of the pattern and set down as names, the way bodies were set into a record once and the record became the route they were moved along -> cond-override-architecture-residue-122ac
-2 @19 the record's far end holds a body that does not know how it is held, kept where it is by an arm that is not hers at the length of an arm that is not hers -> cond-override-architecture-residue-122ac
+2 @19 the record's far end holds a body kept where it is by an arm that is not hers at the length of an arm that is not hers, the same weight the arrangement was built to carry -> cond-override-architecture-residue-122ac
 
 # ---
 # Per-entry rubric audit (author's defensibility trail):

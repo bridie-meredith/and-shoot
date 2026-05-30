@@ -2,7 +2,7 @@
 generated: 2026-05-30
 source: active-project/theater/proto-lines/b01-c06.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 53 facet entries; 19/25 protolines decorated (76.0%)
+totals: 52 facet entries; 19/25 protolines decorated (76.0%)
 
 ## Density distribution (protolines by citation count)
 
@@ -14,7 +14,7 @@ totals: 53 facet entries; 19/25 protolines decorated (76.0%)
 | 3          | 1 |
 | 6          | 1 |
 | 7          | 2 |
-| 9          | 1 |
+| 8          | 1 |
 
 ## Per-facet entries
 
@@ -28,7 +28,7 @@ totals: 53 facet entries; 19/25 protolines decorated (76.0%)
   narrator:2 @8 back=Y co=[feel:1, state:2, vibes:4, vibes:5, vibes:6]
   narrator:3 @13 back=Y
   narrator:4 @22 back=Y co=[state:3, state:4, state:9, vibes:9, vibes:10, vibes:11]
-  narrator:5 @24 back=Y co=[feel:2, meta:1, state:5, state:11, vibes:12, vibes:13, vibes:14, vibes:15] lic-in=[meta:1]
+  narrator:5 @24 back=Y co=[feel:2, state:5, state:11, vibes:12, vibes:13, vibes:14, vibes:15]
   narrator:6 @12 back=Y co=[mem:1]
   narrator:7 @19 back=Y co=[mem:2]
 
@@ -50,13 +50,13 @@ totals: 53 facet entries; 19/25 protolines decorated (76.0%)
   state:8 @20 back=Y
   state:9 @22 back=Y co=[narrator:4, state:3, state:4, vibes:9, vibes:10, vibes:11]
   state:10 @23 back=Y
-  state:11 @24 back=Y co=[feel:2, meta:1, narrator:5, state:5, vibes:12, vibes:13, vibes:14, vibes:15]
+  state:11 @24 back=Y co=[feel:2, narrator:5, state:5, vibes:12, vibes:13, vibes:14, vibes:15]
   state:12 @25 back=Y
   state:13 @4 back=N co=[narrator:1, sensory:1, state:1, vibes:1, vibes:2, vibes:3, wren-stitch-maker-flea-bottom-ward:1]
   state:14 @8 back=N co=[feel:1, narrator:2, state:2, vibes:4, vibes:5, vibes:6]
   state:15 @22 back=N co=[narrator:4, state:3, state:4, state:9, vibes:9, vibes:10, vibes:11]
   state:16 @22 back=N co=[narrator:4, state:3, state:4, state:9, vibes:9, vibes:10, vibes:11]
-  state:17 @24 back=N co=[feel:2, meta:1, narrator:5, state:5, state:11, vibes:12, vibes:13, vibes:14, vibes:15]
+  state:17 @24 back=N co=[feel:2, narrator:5, state:5, state:11, vibes:12, vibes:13, vibes:14, vibes:15]
 
 ### mem (2 entries)
   mem:1 @12 back=Y co=[narrator:6]
@@ -64,10 +64,10 @@ totals: 53 facet entries; 19/25 protolines decorated (76.0%)
 
 ### feel (2 entries)
   feel:1 @8 back=Y co=[narrator:2, state:2, vibes:4, vibes:5, vibes:6]
-  feel:2 @24 back=Y co=[meta:1, narrator:5, state:5, state:11, vibes:12, vibes:13, vibes:14, vibes:15] lic-in=[meta:1]
+  feel:2 @24 back=Y co=[narrator:5, state:5, state:11, vibes:12, vibes:13, vibes:14, vibes:15]
 
-### meta (1 entries)
-  meta:1 @24 back=Y co=[feel:2, narrator:5, state:5, state:11, vibes:12, vibes:13, vibes:14, vibes:15] lic-out=[feel:2, narrator:5]
+### meta (0 entries)
+_(no entries)_
 
 ### vibes (15 entries)
   vibes:1 @4 back=Y co=[narrator:1, sensory:1, state:1, vibes:2, vibes:3, wren-stitch-maker-flea-bottom-ward:1] lic-out=[proto:4]
@@ -81,17 +81,17 @@ totals: 53 facet entries; 19/25 protolines decorated (76.0%)
   vibes:9 @22 back=Y co=[narrator:4, state:3, state:4, state:9, vibes:10, vibes:11] lic-out=[proto:22]
   vibes:10 @22 back=Y co=[narrator:4, state:3, state:4, state:9, vibes:9, vibes:11] lic-out=[proto:22]
   vibes:11 @22 back=Y co=[narrator:4, state:3, state:4, state:9, vibes:9, vibes:10] lic-out=[proto:22]
-  vibes:12 @24 back=Y co=[feel:2, meta:1, narrator:5, state:5, state:11, vibes:13, vibes:14, vibes:15] lic-out=[proto:24]
-  vibes:13 @24 back=Y co=[feel:2, meta:1, narrator:5, state:5, state:11, vibes:12, vibes:14, vibes:15] lic-out=[proto:24]
-  vibes:14 @24 back=Y co=[feel:2, meta:1, narrator:5, state:5, state:11, vibes:12, vibes:13, vibes:15] lic-out=[proto:24]
-  vibes:15 @24 back=Y co=[feel:2, meta:1, narrator:5, state:5, state:11, vibes:12, vibes:13, vibes:14] lic-out=[proto:24]
+  vibes:12 @24 back=Y co=[feel:2, narrator:5, state:5, state:11, vibes:13, vibes:14, vibes:15] lic-out=[proto:24]
+  vibes:13 @24 back=Y co=[feel:2, narrator:5, state:5, state:11, vibes:12, vibes:14, vibes:15] lic-out=[proto:24]
+  vibes:14 @24 back=Y co=[feel:2, narrator:5, state:5, state:11, vibes:12, vibes:13, vibes:15] lic-out=[proto:24]
+  vibes:15 @24 back=Y co=[feel:2, narrator:5, state:5, state:11, vibes:12, vibes:13, vibes:14] lic-out=[proto:24]
 
 ### exposition (1 entries)
   exposition:1 @0 back=N lic-out=[b01c03:3, b01c03:6, b01c03:8, exposition:2, b01c01:4]
 
 ## Pile-ups (>4 facets co-located on one protoline)
 
-- **@24** (9): feel:2, meta:1, narrator:5, state:5, state:11, vibes:12, vibes:13, vibes:14, vibes:15
+- **@24** (8): feel:2, narrator:5, state:5, state:11, vibes:12, vibes:13, vibes:14, vibes:15
     `taylor-hebert-kl-122ac opens the ward-coverage notes`
 - **@4** (7): narrator:1, sensory:1, state:1, vibes:1, vibes:2, vibes:3, wren-stitch-maker-flea-bottom-ward:1
     `wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac`

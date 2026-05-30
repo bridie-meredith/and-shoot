@@ -73,7 +73,7 @@ AP6: filing vocabulary ("tidy, complete, correct") is in Taylor's data-register 
 
 # Entries
 
-1 @24 simile: the blank field sits in the record like a name that was never missing — tidy, complete, correct | licensed-by: feel:2 +narrator:5
+# DELETED meta:1 @24 - audience-gate cycle-1 register-fidelity (worm-canon REVISE; out-of-register aesthetic distance; beat carried by NI:5+feel:2 @24) (2026-05-30)
 
 ---
 

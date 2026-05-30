@@ -14,7 +14,7 @@ r1-provisional: true
 
 4 @8 actor:taylor-hebert-kl-122ac + omission-as-architecture: [gap-authored-not-just-absent, protective-omission-as-positive-act, the-blank-is-the-entry, substrate-legibility-managed-by-absence] | licensed-by: proto:8, world-build:cond-road-to-hell-chain-shape
 
-5 @8 actor:wren-stitch-maker-flea-bottom-ward ++ rising entrapment: [name-withheld-from-record, protection-as-the-routing-gap, omitted-from-the-substrate-she-will-fall-through] | licensed-by: proto:8, world-build:cond-road-to-hell-chain-shape, canon:wren-d14-routing-gap-failure
+5 @8 actor:wren-stitch-maker-flea-bottom-ward ++ rising entrapment: [name-withheld-from-record, protection-as-the-routing-gap, omitted-from-the-substrate-as-present-gap] | licensed-by: proto:8, world-build:cond-road-to-hell-chain-shape
 
 6 @8 loc:oc-stitch-house-lane + omission-witnessed: [site-of-the-un-entered-name, protective-gap-authored-here, lane-as-witness-to-the-omission] | licensed-by: proto:8, world-build:cond-road-to-hell-chain-shape
 
@@ -34,7 +34,7 @@ r1-provisional: true
 
 12 @24 actor:taylor-hebert-kl-122ac + two-substrate-contrast: [four-names-sent-coverage-notes-open, wren-blank-visible-while-form-dispatched, legibility-crack-deepens-through-precision, two-substrates-complete-and-irreconcilable] | licensed-by: proto:24, state-update-moral_legibility_to_self-s03
 
-13 @24 actor:wren-stitch-maker-flea-bottom-ward ++ tragic-causal: [name-withheld-while-four-others-named, the-blank-is-the-chain-link, protective-omission-as-the-gap-that-costs] | licensed-by: proto:24, state-update-moral_legibility_to_self-s03, canon:wren-d14-routing-gap-failure
+13 @24 actor:wren-stitch-maker-flea-bottom-ward ++ tragic-causal: [name-withheld-while-four-others-named, the-blank-is-the-chain-link, protective-omission-as-the-gap-that-costs] | licensed-by: proto:24, state-update-moral_legibility_to_self-s03
 
 14 @24 episode + two-substrate-close: [chapter-closes-on-both-substrates-complete, four-names-dispatched-coverage-notes-with-blank, the-blank-visible-at-chapter-end] | licensed-by: proto:24-25, state-update-moral_legibility_to_self-s03
 
