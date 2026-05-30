@@ -38,8 +38,15 @@ Rise-peak-fall; peak at s03 send; the s01-omission / s03-delivery contrast lands
 ### ✅ Phase 5 audience (3 personas) — ACCEPT 3-of-3
 Two bones-execution watches parked for /and-write (pl-2026-05-30-002): (a) enact the Wren omission as physical pause + field-entry, not interior narration; (b) stage the coverage-notes-vs-Jarvis-channel substrate gap as a concrete institutional mechanism.
 
+### ✅ /and-write Phases 1–3 (bones authoring; pre-bone-gate)
+- **Phase 1 decomposition:** 24 bones / 3 scenes, 0 chatter, grounding 5/5/8 (thresholds 3/2/3). Spine self-checks pass at authoring.
+- **Phase 1.5 dialogue:** Wren's first spoken line authored, fence-clean, anchored s01n04 → `[wren-stitch-maker-flea-bottom-ward:1]`.
+- **Phase 2 constraint audit:** 9 HARD → **8 genuine FAULT-FORM-MODIFIER** (prepositional padding) fixed + re-confirmed schema-clean; **1 (fault-002, speech-axis) ruled NOT-a-fault** (admin DEC-0045). *Live finding (schema false-positive class):* the speech-bone "communication-class axis (community/knowledge/reputation/trust)" rule is hardcoded to the **universal** questionnaire taxonomy and mis-fires on any **custom-axis** project — `relational_anchor_status` IS this project's communication-class axis. Caught + ruled; schema-generalization parked (pl-2026-05-30-003). Orthogonal to the readability gates, but a real pre-existing-schema defect surfaced by the live run.
+- **Phase 3 dramatist:** ACCEPT on shape (rise-peak-fall; peak at s03 send; no reorders) + **2 missing-transition flags**, both added as HELD bones (no axis move, roll-ups unchanged): MT-01 (s01n10 `the morning light crosses the lane-mouth` — s01→s02 temporal bridge); MT-02 (s03n10 `squares the jarvis-channel form` — the close→act hinge that makes the "honest accounting = breach" causation legible right before the peak). Final: 26 bones. *Note: the working draft had inherited leaked-agent-reasoning between bone blocks from the Phase-1 output; rebuilt clean (all SVO/axis data preserved) before handing to further reviewers — an orchestration-hygiene fix, not a gate event.*
+
 ### ⏳ PENDING (not yet fired)
-- `/and-write` Phase 6 **EVENT-NOT-CONCRETE** (HARD) + **ABSTRACTION-DOMINANT** (SIGNAL) + **SENSORY-GROUNDING** — decomposition in flight; bone-gate next. This is the spine-legibility gates' real live test.
+- `/and-write` Phase 4 audience trim + Phase 5 continuity audit — in flight.
+- `/and-write` Phase 6 **EVENT-NOT-CONCRETE** (HARD) + **ABSTRACTION-DOMINANT** (SIGNAL) + **SENSORY-GROUNDING** (HARD) — bone-gate next. This is the spine-legibility gates' real live test. Watch the moral_legibility +0.5→+1.0-realized SIGNAL disposition (within ±1 tolerance).
 - `/and-review bones` **follow_check / FOLLOW-FAIL** (PROP-0020) — will consume the Phase 5.5 `cold_read_risk_carry` proper-noun checklist as its context-weave input.
 - `/and-facets` **Phase 2.5** context + aliveness axes → context-ledger + grounding-ledger; **Phase 4.5** separated FOLLOWABLE/ALIVE; **Phase 4.6** conditional R3.
 - `/and-stitch` **Phase 4** voice-embodiment; **Phase 8.5** (NOT armed — see above); **Phase 9** separated READABLE/AIRLESS scoring + spine-promotion.
@@ -57,6 +64,7 @@ Two bones-execution watches parked for /and-write (pl-2026-05-30-002): (a) enact
 
 - **Phase 5.5 CHUNK-CLASS-B is NOT a false positive** — and this is the important nuance. The gate is *designed* to return CLASS-B on a context-blind strict-NO and route to disposition rather than auto-revise; the (P) disposition correctly declined to re-author a sound chunk. Had CLASS-B *forced* a chunk redo, that would have been a costly false positive; it does not. The classification + admin-disposition split absorbs the context-noise correctly. **No false positive.**
 - EVENT-NOT-CONCRETE / FOLLOW-FAIL / AIRLESS false-positive watch: **pending** (these are the new HARD gates most at risk of over-firing; explicitly monitoring the s01 omission bone and the s03 send bone for a spurious EVENT-NOT-CONCRETE, and FOLLOW-FAIL for over-reading mid-series context as a blocking gap).
+- **One schema-layer false-positive DID fire** (Phase-2 fault-002, the speech-axis rule) — but it is NOT a readability/completeness-gate false positive; it is a pre-existing `bones.schema.md` literalism (universal-taxonomy slug-list vs. this project's custom axes). Logged separately (gate 4c) so it doesn't contaminate the overhaul-gate assessment.
 
 ## 4. Did voice-embodiment change the stitched prose vs c05 instrument-voice?
 
@@ -72,6 +80,9 @@ Two bones-execution watches parked for /and-write (pl-2026-05-30-002): (a) enact
 | 2 | dramatist | sub Ph4 | ACCEPT | no | also caught attempt-1 wrong-structure |
 | 3 | audience ×3 | sub Ph5 | ACCEPT 3/3 | no | 2 watches parked |
 | 4 | **chunk-cold-read** | **sub Ph5.5** | **CHUNK-CLASS-B → (P)** | **no** | context-noise correctly classified, not auto-revised |
+| 4b | constraint audit (SVO-form) | write Ph2 | 8 FORM faults (fixed) | no | genuine prepositional-padding catches |
+| 4c | speech-axis rule | write Ph2 | fault-002 → NOT-a-fault (DEC-0045) | **YES (schema)** | universal-taxonomy rule mis-fires on custom-axis project; schema-fix parked pl-...-003 |
+| 4d | dramatist (bone shape/transitions) | write Ph3 | ACCEPT + 2 transition bones | no | rise-peak-fall; MT-01/MT-02 added (held) |
 | 5 | EVENT-NOT-CONCRETE / ABSTRACTION-DOMINANT / SENSORY-GROUNDING | write Ph6 | — | — | PENDING |
 | 6 | follow_check / FOLLOW-FAIL | review bones | — | — | PENDING (consumes #4 carry) |
 | 7 | context + aliveness axes | facets Ph2.5/4.5/4.6 | — | — | PENDING |
