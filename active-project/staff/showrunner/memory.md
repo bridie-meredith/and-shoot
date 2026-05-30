@@ -3942,6 +3942,14 @@ books:
           aliveness: BONES-AIRLESS-RISK-advisory   # PROP-0022; s02-s03 accounting middle; forward to /and-facets Phase 2.5 + /and-stitch Phase 4
           bones_file_mtime_at_review: 1780111145  # DEC-0047 (2026-05-30): mtime reset by git checkout in fresh container after PR #76 merge; content identity verified via `git diff e9883f2 HEAD` (empty) + review-report internal description match. Stamp reconciled to current mtime — NOT a content re-emit / not an operator override of a content change.
           stale_since: null
+        context_followability:   # PROP-0020/0022 — /and-facets Phase 2.5 + 4.5
+          completeness_verdict: FOLLOWABLE   # Ph2.5 + Ph4.5 both; context-ledger empty (0 CONTEXT-REQUIRED)
+          readability_verdict: AIRLESS-HOLE  # Ph4.5 -> Phase 4.6 grounding remediation (accounting middle bare)
+          report_path: active-project/staff/reviews/context-follow-r2-b01-c06-2026-05-30.md
+          reviewed_at: 2026-05-30
+          context_ledger_open: 0
+          grounding_ledger_open: 3   # grd-001 @10, grd-002 @16, grd-003 @17-18; authored at Phase 4.6
+          voice_fixable: ["@11", "@14", "@20", "@21"]   # -> /and-stitch Phase 4 voice-embodiment
         substance_delta_measured:
           axes_moved:
             - relational_anchor_status +1.0
