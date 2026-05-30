@@ -93,6 +93,80 @@ emit-disposition: 1 entry — prior-episode-bridge @0 only. The chapter introduc
 # - the-four-name-list / the-named-elder-ask | first-mention-anchor: graph-resident-via-bones-10-through-22-b01c06 + chunk-scene-b01c06s02-s03 (Otto's ask for Black-faction ward-elder NAMES not movement-patterns + Taylor's compiled four-name list; the names-vs-patterns category-crossing is carried by the bone-sequence + the s02/s03 chunk content + the @0 bridge's "Movement patterns, not persons — that was the line I had been delivering on"; the faction-allegiance is plot-content per rubric §Never-gloss, NOT exposition-glossed; the faction-names are deliberately kept off-page per b01c05 substitution-register discipline; recorded so future authors do NOT gloss faction-names and know the named-person delivery is reader-resident as the c06 rationalize-each-trade central event).
 # - the-courier-c06 | first-mention-anchor: graph-resident-via-bone-23-b01c06 + b01c03:3-jarvis-coin-kl-courier-register (the courier at @23 who takes the sealed jarvis-channel form is the register-resident jarvis-coin-kl-courier — the Jarvis-routed deliverable conduit; the s03 chunk confirms "a Jarvis courier will move the information"; NOT a new figure; cull-dropped as standalone first-mention-character; recorded so future authors know the c06 @23 courier resolves to the c03-register-resident Jarvis courier function, distinct from the c05 the-courier-rushwick which has no Otto-arrangement connection).
 
+# ============================================================================
+# R2 GRAPH-AWARE JUDGE PASS (2026-05-30; exposition-author facet-judge mode)
+# ============================================================================
+# cite_index_hash: e2b2dfa3a71027ddc70cf2a7d227d31463547179
+# Graph read: location-state.md (3 entries: @1 morning / @5 morning / @10 late-morning),
+#   interest-narrator.md (7 entries: @4 @8 @13 @22 @24 @12 @19), memory.md, sensory.md,
+#   feeling*.md, state-updates*.md, metaphor.md, vibes.md, dialogue (wren), _cite-index.md,
+#   canonical proto-lines b01-c06.md. Context-ledger b01-c06: EMPTY (FOLLOWABLE / 0 CONTEXT-REQUIRED).
+#
+# VERDICT: KEEP exposition:1 @0 prior-episode-bridge (unchanged). 0 ADDs. 0 DELETEs. 0 REWORDs.
+#
+# --- exposition:1 @0 prior-episode-bridge — KEEP (verbatim) ---
+# The @0 bridge is a SYNTHETIC interval-bridge converting the c05 terminal state into the c06
+# opening frame. The lens graph, now visible, CANNOT carry it: NI fires at scene-anchors @4-@24
+# inside chapter-real-time (the feed has her filed / the field wants a name / the seal is the breach)
+# and memory (mem:1 @12 re-read, mem:2 @19 red-keep coverage) carries in-chapter callbacks — NEITHER
+# can hold a PRE-chapter time-skip recap of "yesterday the coverage held / the arrangement ran since
+# I agreed." A prior-episode-bridge is structurally exposition's to hold; no lens facet covers @0
+# (cite-index confirms @0 carries ONLY exposition:1, back=N). Sources still resolve (handoff_in/out,
+# b01c05 exposition:2, otto card, c06 chunk). Voice/hard-fence/embedded-noun audits all clean at R1
+# and re-confirmed against the graph. KEEP verbatim.
+#
+# --- SCENE-ORIENT ROUTE-CHECK (R1 flagged @10 PROVISIONAL R1-blind) — all 3 refusals CONFIRMED ---
+#   @1  chapter-open: REFUSE confirmed. @0 bridge ("This morning the count runs the Hook at its
+#       standard density") + world-before-protagonist bone @1 (loc-state:1 fires: handcart/morning)
+#       carry chapter-open orientation. scene-orient would be wallpaper.
+#   @10 scene-A→B (PROVISIONAL R1-blind, now route-checked against LOCKED graph): REFUSE CONFIRMED.
+#       Clause (b) RESOLVED: loc-state:3 FIRES at @10 (`oc-stitch-house-lane | late-morning | ...
+#       tallow-smoke pooled at floor-level`) — at-establishment carries the morning→late-morning
+#       time-band shift within the single location. loc-state firing → clause (b) makes scene-orient
+#       wallpaper. Clause (c) also holds: no NI entry in scene-B's first 2 anchors (@10/@11) carries
+#       time-of-day/place-shift; NI:6 @12 is names-vs-nodes content, NOT time. The time-band is
+#       carried by loc-state:3 + the bone-body's own "late-morning window" opening (chunk). R1's
+#       conservative refuse is graph-confirmed. REFUSE.
+#   @16 scene-B→C: REFUSE confirmed. Clause (a) fails — scene-map: scene-B late-morning → scene-C
+#       late-morning (SAME time-band, SAME location, continuous action @15 lowers form → @16 opens
+#       ledger). No time-skip blank. scene-orient REFUSES on continuity.
+#   Total: 0 scene-orient fires, 3 refusals. The single-location continuous-morning structure leaves
+#   no scene-orient gap. R2 confirms.
+#
+# --- FIRST-MENTION COVERAGE (graph re-walk) — no new gloss owed ---
+#   Named individuals in PROSE (bones): Wren @3/@4 (register-resident b01c01:9 — re-gloss prohibited;
+#   first-SPOKEN-exchange is a relational EVENT, not a context gap), the-courier @23 (resolves to
+#   jarvis-coin-kl-courier b01c03:3 — register-resident; bare definite-description hits the
+#   reader-resident Jarvis-courier function). Otto/Sera appear in the @0 bridge as register-resident
+#   references under licensed slugs (b01c03:6 / b01c03:8 + b01c05 sera-protection-architecture forward-
+#   reference license). 0 new first-mention owed. R1 cull dispositions (the-courier / faction-names /
+#   coverage-note-instrument-family / Wren / Sera-architecture) all re-confirmed against the locked graph.
+#
+# --- CONTEXT-LEDGER (Phase 2.5: EMPTY / FOLLOWABLE) — no orientation adds authored ---
+#   There is NO licensed exposition gap this chapter. No orientation glosses authored. Confirmed.
+#
+# --- AUDIENCE-SIDE ADDS judged owed: NONE ---
+#   cape-fic-reader: board-state IS refreshed by the @0 bridge (arrangement running / intelligence
+#     flowing / movement-patterns-not-persons named as current delivery) — the names-vs-patterns
+#     category-crossing the s02 ask forces reads as the board moving. No gap.
+#   dark-fantasy-reader: the cost-frame ("the harm I can prevent is still the only column the
+#     accounting closes") lands on the table BEFORE the s03 breach — the send reads as paid. No gap.
+#   worm-canon-pedant: the prohibition's current rationalization-state is named ("the line I had been
+#     delivering on was patterns, not persons") — the ask for names crosses a line Taylor was holding;
+#     ignorance/discipline is source-register-faithful. No gap.
+#   All three persona-reads are served by the existing @0 bridge. 0 audience-side ADDs.
+#
+# --- f-r2-counts: KEEP 1 / DELETE 0 / ADD 0 / REWORD 0 ---
+# --- CROSS-FACET SEAMS (informational; not my authority to act on) ---
+#   (1) grounding-ledger has 3 OPEN lines (@10 grd-001 / @16 grd-002 / @17 grd-003) authorizing
+#       SENSORY adds at Phase 4.6 — the airless accounting middle. No sensory entries sit at
+#       @10/@16/@17 yet (forward-protection). Not exposition's surface; flagged for awareness.
+#   (2) 2 WEAVE-FIXABLE hints to the NI judge at @17/@18 (the two accounting arms should read as a
+#       moral balance, four ward elders priced against Sera's exposure). NI judge's add-cap, not mine.
+#   (3) Wren speech-bone @4 dialogue-anchor [wren-stitch-maker-flea-bottom-ward:1] sits in fence-window
+#       {@2..@6}; no exposition entry lands there (only @0 fires) — fence satisfied vacuously. Confirmed.
+# ============================================================================
+#
 # R1 author-notes summary
 #
 # Final emit: 1 entry (1 prior-episode-bridge @0; 0 episode-open-context; 0 first-mention; 0 scene-open-orient).

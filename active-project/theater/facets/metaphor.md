@@ -2,6 +2,7 @@ facet: metaphor
 episode: b01c06
 author: editor
 r1-status: authored (blind)
+r2-status: judged (graph-aware)
 ---
 
 # R1 refuse-log
@@ -52,50 +53,42 @@ Verdict: REFUSE-CORRECT (AP7 + AP1, compound; dark-humor exception explicitly no
 
 ## @24 — `taylor opens the ward-coverage notes` (moral_legibility_to_self +1.0, scene-C second peak)
 
-**Candidate — provisionally FIRE.**
+**R2 verdict: KEEP — anchor resolved, AP3 cleared.**
 
-Bone: `taylor-hebert-kl-122ac opens the ward-coverage notes` — the contrast recognition: four names went in the sealed form; the ward-coverage notes still hold the blank where Wren's name is not.
+Anchor resolution: feel:2 fires at @24 (confirmed in locked graph: "her fingers settle on the notes and do not open them at once | expressed: no"). narrator:5 fires at @24 (confirmed). Both co-cited with meta:1 in cite-index. PROVISIONAL status lifted; stale tens:1-quiet token stripped.
 
-Tens assessment: @24 occurs post-dispatch. The courier has already taken the form (@23). In scene rhythm @24 is the settling/reflection moment — post-rupture quiet, plausibly tens=1 or low-2. This is a tens=1 candidate, which favors metaphor per rubric.
+AP3 adjudication: narrator:5 @24 carries the structural contrast — four names went down the channel, the contact-source field still reads ward-resident, and she opens the notes to read the blank she left where a name is not. NI describes *what happened* (the factual contrast across two substrates) and *the act* of reading the authored absence. The simile adds a distinct figurative layer NI does not carry: the *aesthetic* of the blank — that it does not look wrong, it looks right. "Tidy, complete, correct" renders the horror that the omission is formally indistinguishable from completion. NI names the blank as absence; the simile names it as false presence. These are not the same figure. AP3 does not fire.
 
-Functional register: dark-humor — the blank in the coverage notes is, by Taylor's own filing logic, correctly filed. The name that should be there is correctly absent because Taylor authored the absence. The dark-humor recognition: the record is complete because it's incomplete.
+AP7 exception: @24 is post-dispatch settling, not rupture. The moral breach landed at @22. The dark-humor deflation at @24 is lateral to the breach — sardonic recognition that the record reads as complete by its own logic — and does not compete with substance delivery at @22. Exception applies.
 
-Multi-justification: PROVISIONAL feeling anchor at @24 (moral_legibility_to_self +1.0 is the axis move; a feeling-flag entry registering the contrast-recognition somatic tell is expected) = 1 layer. Tens (post-dispatch quiet, plausibly =1) = 1 layer. 2 layers total from {feeling, tens}. Clears ≥2 requirement.
+Multi-justification (resolved): feel:2 (anchor, 1 layer from {feeling}) + tens=1 post-dispatch quiet (support, 1 layer from {tens}) = 2 layers from {feeling, tens}. narrator:5 adds NI co-cite as permitted support. Requirement ≥2 from {memory, feeling, tens} satisfied.
 
-Q1 check: proto-line `taylor-hebert-kl-122ac opens the ward-coverage notes` is flat instrumental SVO — carries no figure. Scene-map names the contrast at the scene-architecture level ("the chapter's closing irony, the four names went / Wren's name did not"), but that irony lives in the juxtaposition across @22-@25, not crystallized as a figure within @24. A dark-humor simile that renders the blank-as-completion within the @24 bone adds what the proto-line + scene-map do not already carry at the bone level. Q1 clears.
+Q1 clear: proto-line `taylor-hebert-kl-122ac opens the ward-coverage notes` is flat SVO carrying no figure. NI:5 carries the structural contrast but not the aesthetic of false completion. The simile adds what the proto-line and NI do not carry at the bone level.
 
-Q2 check: PROVISIONAL — if the feeling-flag fires at @24 (as expected from the axis move), audience-meaningful inheritance follows. Q2 conditional pass at R1.
+Q2 clear: feel:2 fires at @24; audience-meaningful inheritance follows.
 
-AP7 exception: @24 is a peak-bone for axis-move purposes, but the scene-C rhythm at this point is post-dispatch settling. Dark-humor that *deflates* the rupture is permitted; here the "deflation" is sardonic recognition (the record is complete by its own logic, even though it breached). The deflation is lateral to the moral breach, not competing with it. AP7 exception applies.
-
-AP3 risk flagged: narrator-interest (NI) at @24 may also register the contrast-recognition. At R1 blind the NI author's choices are unknown. If NI:N fires at @24 with content equivalent to the proposed figure, AP3 fires at R2 and this entry is refused. This is the seam to verify in R2.
-
-AP6 check: voice register — Taylor's data-register POV. Filing vocabulary ("tidy, complete, correct") is in-register. Not lyrical. Pass.
-
-Entry text: simile — "the blank field sits in the record like a name that was never missing — tidy, complete, correct."
-
-Licensed-by: PROVISIONAL feeling anchor at @24 (moral_legibility_to_self axis-move; feeling-flag expected) + tens (post-dispatch quiet zone, plausibly =1).
+AP6: filing vocabulary ("tidy, complete, correct") is in Taylor's data-register POV. Not lyrical. Pass.
 
 ---
 
 # Entries
 
-1 @24 simile: the blank field sits in the record like a name that was never missing — tidy, complete, correct | licensed-by: PROVISIONAL feel:@24 (moral_legibility_to_self axis-move; feeling-flag expected at R2 resolution) +tens:1-quiet (post-dispatch settling)
+1 @24 simile: the blank field sits in the record like a name that was never missing — tidy, complete, correct | licensed-by: feel:2 +narrator:5 +tens:1
 
 ---
 
 # File-shape audit
 
-1. Sparsity: 1 entry / 25 bones = 4%. Marginally above 0-3% band on a 25-bone chapter. However the rubric's 0-3% is calibrated for 77-beat episodes (s01e01-class); ≤2 fires per 77-beat episode = ≤1 fire per ~38 bones. On 25 bones, 1 fire = ~4% but is equivalent to the per-77-beat rate at 1 fire. Rubric intent: 1 fire on a 25-bone chapter is within the spirit of the ≤2-fires band. No violation.
+1. Sparsity: 1 entry / 25 bones. On a 25-bone chapter 1 fire is within the spirit of ≤2-fires-per-77-beat rubric. No violation.
 
 2. Per-scene cap: 1 fire in scene-C; scenes A and B = 0. Cap ≤1 per scene. Pass.
 
-3. Schema content-shape: `<id> @<pid> <kind>: <text> | licensed-by: <anchor> [+<support>...]`. Entry 1 uses proposed schema shape with PROVISIONAL anchor label. Pass for R1.
+3. Schema content-shape: `<id> @<pid> <kind>: <text> | licensed-by: <anchor> [+<support>...]`. Entry 1 uses resolved anchor. Pass.
 
-4. Anchor verification: PROVISIONAL at R1 (feeling anchor at @24 not yet authored; resolved to `feel:<id>` at R2). AP1 risk if feeling-flag does not fire at @24.
+4. Anchor verification: feel:2 confirmed in locked feeling file @24. Anchor verified.
 
-5. Multi-justification: PROVISIONAL feel:@24 + tens:1 = 2 layers conditional. Meets ≥2 requirement if feeling anchor confirmed.
+5. Multi-justification: feel:2 (anchor) + tens:1 (support) = 2 layers from {feeling, tens}. narrator:5 is NI co-cite (permitted additional support). Requirement met.
 
-6. Functional-register: dark-humor (sardonic recognition — the blank is correct completion). Pass.
+6. Functional-register: dark-humor (sardonic recognition — the blank reads as correct completion). Pass.
 
 7. Voice-register: filing vocabulary, in-register for Taylor's data-register POV. Pass.

@@ -2,6 +2,8 @@ facet: memory
 episode: b01-c06
 author: dialogue-writer-fork (taylor-hebert-kl-122ac, interiority output mode)
 generated: 2026-05-30 (R1 /and-facets b01-c06 Phase 1)
+r2-judged: 2026-05-30 (R2 GRAPH-AWARE judge, taylor-hebert-kl-122ac POV; KEEP mem:1, KEEP mem:2, 0 ADD, 0 DELETE)
+r2-spine-status: RESOLVED in locked R1 NI file — NI fires @4/@8/@13/@22/@24 (narrator:1-5) AND @12 (narrator:6) AND @19 (narrator:7). The NI judge's co-citation ADDS at @12 and @19 ARE PRESENT in interest-narrator.md (entries 6 @12, 7 @19) at R2-judge time. mem:1 spine = narrator:6 @12 (re-read / names-vs-node registration); mem:2 spine = narrator:7 @19 (protect-target image-beat). V3 feel-as-spine carve-out N/A (chapter dramatic_shape: climax; feeling also silent at @12/@19) — but moot, NI co-citation is satisfied. CITE-INDEX IS STALE (predates NI @12/@19 adds; lists narrator:1-5 only): Phase 5 MUST rebuild the cite-index to reflect narrator:6/@12 + narrator:7/@19 before the cross-facet contract check passes. Spine-dependency seam DOWNGRADED HARD→SOFT (spine present in facet file; only the index needs refresh).
 total-entries: 2
 fires-per-bone: 2/25 = 8.0% (within 5-12% band)
 doubled-register: YES (Earth-Bet displacement at @12; Westerosi-monument-clamp at @19)
@@ -104,11 +106,62 @@ chapter-dramatic-shape: climax (V3 feel-as-spine carve-out DOES NOT APPLY — re
 # Authoring produced 2 entries; both survive all three axes and all anti-patterns; no rewrites attempted; no entries deleted.
 #
 # ---
+# R2 GRAPH-AWARE JUDGE PASS (2026-05-30) — now sighted on the full locked R1 graph:
+#
+# mem:1 @12 — KEEP. All three axes re-confirmed against the cite-index and the locked NI/feel/sensory
+#   files: monument-trigger (override-architecture-residue body-record) lit; displacement-cue holds the
+#   SHAPE without any Earth-Bet proper noun; quiet-beat (scene-B flat-mid, peak-bones none) default-licit;
+#   audience-meaningful (bodies-become-a-route carries at zero source fluency); functional-register 3/4
+#   (realization + characterization + social-commentary); per-scene cap clear (sole scene-B fire); target-
+#   reference resolves at warehouse. SPINE: RESOLVED — the locked R1 NI file (interest-narrator.md) FIRES
+#   at @12 (narrator:6, "a name is a different unit than a node ... she reopens to confirm the conversion is
+#   what is asked, not less"). This is exactly the re-read / names-vs-node registration the R1 defense predicted
+#   NI would naturally carry (scene-map protected-pattern @11-@12). Standard narrator-interest co-citation
+#   SATISFIED; the missing-spine gate clears. V3 feel-as-spine carve-out N/A (climax, not hinge — and feeling
+#   is silent at @12) but moot, NI carries the spine. NOTE: the cite-index is stale (generated before the NI
+#   @12 add; lists narrator:1-5 only). The spine is present in the FACET FILE; Phase 5 must rebuild the index.
+#
+# mem:2 @19 — KEEP. Monument-trigger (protective-arrangement-at-distance, the c03-c05 architecture's
+#   destination) lit; displacement-cue holds the SHAPE (a body that does not know how it is held; an arm
+#   that is not hers) without Sera/Otto/Jarvis/Red-Keep; quiet-beat: @19 is scene-C rising-zone, NOT in
+#   peak-bones (@22/@24) — contested, carried by the backward-reach argument (the arrangement-architecture
+#   is prior story content @19 reaches back to, not the @22 send's forward action); the backward-and-outward
+#   reach is exactly the memory-flag direction, argument holds; audience-meaningful (the four-names-so-the-
+#   held-body-stays-held trade is on-page stated stakes); functional-register 2/4 (characterization + social-
+#   commentary); per-scene cap clear (sole scene-C fire). SPINE: RESOLVED — the locked R1 NI file
+#   (interest-narrator.md) FIRES at @19 (narrator:7, "the record's far destination is a body she has watched
+#   through the feed and never met ... the four names travel so that body stays exactly where an arm that is
+#   not hers has set it"). This is the protect-target image-beat / second-accounting-arm registration the R1
+#   defense predicted. The NI:7 construction directly mirrors mem:2's displacement-cue ("an arm that is not
+#   hers") — spine and monument-content are consistent, no contradiction. Standard NI co-citation SATISFIED;
+#   missing-spine gate clears. For a climax-shape chapter this is the NI-spine the KEEP criteria require. V3
+#   carve-out N/A (climax; feeling silent at @19) but moot. Cite-index stale (lists narrator:1-5 only) — index
+#   rebuild needed at Phase 5; spine present in the facet file.
+#
+# Doubled-register re-confirmed: mem:1 Earth-Bet displacement + mem:2 Westerosi-monument-clamp. PASS.
+# Both registers clear audience-meaningfulness (mem:2 routes through the on-page protective-arrangement,
+# NOT through insider-only Dance/Red-Keep foreknowledge — the meaningful register is the one selected).
+#
+# ADD scan (cap 5) — REFUSE ALL, 0 adds. 2/25 = 8.0% is already comfortable mid-band; refuse-by-default.
+#   No rhythm-shape transition or peak-bone genuinely WANTS a memory fire it lacks:
+#   - Peaks @4/@8/@22/@24 are peak-bones (default-forbidden); their substance is carried by the relational/
+#     moral axis-moves + NI + feeling, not the licensing layer (scene-A SIGNAL silence is deliberate; the
+#     Wren-omission stays surface-carried per the R1 defense, re-confirmed CORRECT).
+#   - The s01->s02 transition (@10) and the accounting middle (@16-@18) are grounding-ledger-OPEN (grd-001
+#     @10, grd-002 @16, grd-003 @17-@18) — sensory grounding territory authored at Phase 4.6, NOT memory;
+#     and the @17/@18 moral-balance is NI-weave territory (Phase 2.5 WEAVE-FIXABLE → NI judge). A memory fire
+#     in the middle would double the Earth-Bet residue adjacent to mem:1 (anti-pattern #11 persistent-
+#     monument-firing) and dissolve the licensing gradient. Default is silence; silence held.
+#
+# Per-file R2 deletes: NONE. Per-file R2 adds: NONE. f-r2-counts: KEEP 2 / DELETE 0 / ADD 0 / REWRITE 0.
+#
+# ---
 # Seams flagged forward (for cross-facet consistency + audit + Phase 5b):
 #
 # 1. HARD-DEPENDENCY — narrator-interest spine co-citation (climax chapter; V3 carve-out N/A)
-#    Both fires REQUIRE standard NI co-citation on the same @-id (chapter dramatic_shape: climax → feel-as-spine carve-out does NOT apply). R1 is blind to the NI file; mem:1 @12 and mem:2 @19 are anchored at beats where NI co-fire is near-certain (re-read registration @12; protect-target image-beat @19), but the spine is ASSERTED, not verified, at R1. If Phase 5 cite-index shows NI silent at @12 or @19, that fire fails the missing-spine gate and routes to NI-author missed-fire repair (the @12 re-read and the @19 Sera-render are both registration beats NI should naturally carry). Mechanic auditor receives this flag-back trail.
-#    Routing: Phase 5 mechanic-auditor cross-facet contract check (NI co-citation); Phase 5b NI-author missed-fire repair if either spine is absent.
+#    [R1 text retained] Both fires REQUIRE standard NI co-citation on the same @-id (chapter dramatic_shape: climax → feel-as-spine carve-out does NOT apply). R1 is blind to the NI file; mem:1 @12 and mem:2 @19 are anchored at beats where NI co-fire is near-certain (re-read registration @12; protect-target image-beat @19), but the spine is ASSERTED, not verified, at R1. If Phase 5 cite-index shows NI silent at @12 or @19, that fire fails the missing-spine gate and routes to NI-author missed-fire repair (the @12 re-read and the @19 Sera-render are both registration beats NI should naturally carry). Mechanic auditor receives this flag-back trail.
+#    [R2 UPDATE 2026-05-30 — now CONFIRMED, no longer asserted] The locked R1 NI file (interest-narrator.md) fires at @4, @8, @13, @22, @24 ONLY. NI is SILENT at both @12 and @19. So in the FROZEN graph both mem fires are spineless and would FAIL the missing-spine gate. KEEP is held SOLELY on the orchestrator-coordinated plan that the concurrent NI R2 judge is ADDING co-citations at @12 (re-read registration; NI's natural territory per scene-map protected-pattern @11-@12) and @19 (protect-target image-beat, second accounting arm). This memory judge is blind to NI's actual mutation. PHASE 5 MUST VERIFY: re-build/re-read the cite-index after the NI R2 mutation lands; if NI @12 is present, mem:1 spine resolves; if NI @19 is present, mem:2 spine resolves. If EITHER NI add did not land, the corresponding mem fire HARD-FAILS the missing-spine gate (climax → no feel-as-spine fallback; feeling is also silent at @12/@19) and routes to NI-author missed-fire repair OR mem-author DELETE of the orphaned fire. The two fires stand or fall on the NI co-citation; there is no other spine path on this chapter.
+#    Routing: Phase 5 mechanic-auditor cross-facet contract check (NI co-citation at @12 AND @19 post-NI-mutation); Phase 5b NI-author missed-fire repair if either spine is absent; mem-author DELETE if NI repair declines either anchor.
 #
 # 2. SOFT — monument-class card split for mem:1 + mem:2 target-references
 #    Current target-reference cond-override-architecture-residue-122ac covers both fires per the unified-residue defense (one architecture, two faces). Clean metaphor-facet downstream routing would benefit from split into monument-body-record-cognition (mem:1's register) + monument-protective-arrangement-at-distance (mem:2's register). Margit class-review candidate. Identical to the c05 SOFT seam — re-surfaced, not new.
