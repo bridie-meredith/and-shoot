@@ -159,3 +159,21 @@ All 11 actor vibes.md populated with:
 **Authoring note — oc-pig-tallow-lane:** Oswyn Mudway's unknowing-node status documented in project warehouse copy. Stitch-house lane ward connection noted. Penny-a-barrel carter economy is the substrate for coverage-node operation.
 
 **Authoring note — oc-ropers-court:** Four-ward coverage completion noted. Early-morning grey timing for clean feed geometry documented. Single-file far tributary per b01c04 s03 bones confirmed.
+
+---
+
+### 2026-05-30 — /and-facets b01c07 Phase 0 location gate: oc-sept-corner authored and provisioned
+
+**Trigger:** /and-facets b01c07 Phase 0 ABORTS without warehouse card for `oc-sept-corner` (the sole location in b01c07 bones).
+
+**Project:** taylor-westeros-good-intentions
+
+| slug | library path | warehouse path |
+|---|---|---|
+| `oc-sept-corner` | `cards/locations/oc-sept-corner.card.md` | `active-project/warehouse/oc-sept-corner.md` |
+
+**Card:** quality full, scope library (library copy), world planetos. References: cond-kl-geography-122ac, cond-kl-social-physics-122ac, loc-flea-bottom, oc-pig-tallow-lane. Pre-existing library card confirmed present (prior authoring); warehouse copy was absent — authored now. Note: `oc-the-hook` reference removed from frontmatter (no card exists for that slug; parent ward not yet carted).
+
+**Source material:** b01c07 bones (all 25 bones; sole location throughout), scene-map-b01-c07.md (all 3 scenes at oc-sept-corner), b01c07 chapter chunk draft. Key facts sourced: passage-choke geometry (bone 2 handcart blocks passage), cold-holding stone (bones 17, 24), Halvard's fixed-point status (chandler's storehouse), Pig-Tallow Lane as named adjacent street (WATCH-1 dialogue anchor — Wenna Cobb, Pig-Tallow Lane).
+
+**Index update:** `cards/locations/INDEX.md` — `oc-sept-corner` added to `by_world/planetos` and `by_quality/full`.

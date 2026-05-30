@@ -4633,15 +4633,21 @@ books:
         bones_review:   # /and-review bones b01c07 (2026-05-30) — MANDATORY gate between /and-write and /and-facets
           reviewed_at: 2026-05-30
           report_path: active-project/staff/reviews/bones-b01c07-2026-05-30.md
-          verdict: PASS-WITH-NOTES   # fidelity PASS (5 deletes did NOT hollow the spine; it lives in dialogue bones 12/19/21); 0 HARD / 3 SIGNAL / 2 TASTE
-          follow_check: PASS-WITH-NOTES   # PROP-0020: central event + scene hand-offs recoverable; "why she stays" hinge clears narrowly via bone-12 dialogue preceding the posture bones; gap is context-addable (NI facet), NOT bone-structural → no FOLLOW-FAIL → /and-facets cleared
-          aliveness: BONES-AIRLESS-RISK   # PROP-0022 (advisory): span bones 13-16 (goes still/faces/stays/holds silence) — interiority routed off-page + abstraction-adjacent posture verbs, no body to inhabit until bone 17. Forewarns /and-facets Phase 2.5 grounding-ledger + /and-stitch Phase 4 voice-embodiment.
+          verdict: FAIL   # 3 HARD SVO-form faults from the bone-gate re-fire (flat 15/22/16). NOTE: an earlier record/commit (6e6f0f6) wrongly said PASS-WITH-NOTES/0-HARD — that was written before the auditor fork returned; corrected here.
+          hard_findings:
+            - "fault-001 flat15 'stays in the argument' [MOVING soc-tether +0.5] — PP modifier + abstraction-object (bones.schema L57/L60)"
+            - "fault-002 flat22 'stays at the sept-corner' [MOVING soc-tether +0.5] — PP-of-place (bones.schema L57); clearest violation"
+            - "fault-003 flat16 'holds the silence' [HELD] — abstraction-as-object under holds-license (bones.schema L60)"
+          fidelity: PASS   # the 5 rev2 deletes did NOT hollow the spine; it lives in dialogue bones 12/19/21. Fidelity-pass does NOT clear the chapter; the 3 form HARDs block it.
+          follow_check: PASS-WITH-NOTES   # PROP-0020: central event + scene hand-offs recoverable; gap context-addable (NI facet), NOT bone-structural → not a FOLLOW-FAIL
+          aliveness: BONES-AIRLESS-RISK   # PROP-0022 (advisory): span bones 13-22; interiority routed off-page, one sensory anchor (bone 17) across ten bones. Forewarns /and-facets Phase 2.5 grounding-ledger + /and-stitch Phase 4 voice-embodiment.
           bones_file_mtime_at_review: 1780178686
           stale_since: null
-          forward_notes:   # context-addable → /and-facets Phase 2.5
-            - "NI facet at bones 13/14/15 is LOAD-BEARING: must stage crooked-house-maps-onto-her-arrangement recognition at bone 13 'goes still' or cold-read causality gap reopens at stitch. Highest-value facet beat in the chapter."
-            - "Open grounding-ledger lines for bones 13-16 span (argument-middle airless before bone 17)."
-            - "Voice-embodiment priority at /and-stitch Phase 4 on bones 13-16; bone 15 'stays in the argument' weakest concreteness (both reviewers) — render as physical not-leaving per bone 22."
+          gate_outcome: BLOCKS_FACETS   # /and-facets must NOT run until bones revised + re-reviewed. Route: /and-write b01c07 revise (recast flat 15/22/16) -> /and-review bones b01c07 -> /and-facets.
+          forward_notes:   # carry to /and-facets Phase 2.5 once bones clear
+            - "NI facet at bones 13/15 is LOAD-BEARING: must stage crooked-house-maps-onto-her-arrangement recognition or cold-read causality gap reopens at stitch."
+            - "Open grounding-ledger lines for the bones 13-22 airless span."
+            - "fault-005: 7 interior readings transferred to NI — treat all 7 as explicit deliverables (PASS-CHUNK-VOICE-RISK)."
         write_margit_referrals_open:
           - "oc-sept-corner.card.md — NEW location (the sept corner / chandler's storehouse, Flea Bottom Hook); first-touched c07; loc card MUST be authored before /and-facets b01c07 Phase 0 (locations: resolution gate). Same class as c06 oc-* SEAMs."
         chunk: |
