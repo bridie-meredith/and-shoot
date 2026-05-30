@@ -248,3 +248,127 @@ All 9 faults are FAULT-FORM (modifier) or FAULT-BONE-DELTA-MALFORMED (speech-axi
 Recommended fixer sequencing: resolve fault-002 (s01n04 speech-axis) first, as the fix may redistibute the relational_anchor_status Δ between bones and affect which bone carries the cl-d06 anchor. All FAULT-FORM-MODIFIER fixes are independent of each other.
 
 fault-009 (s03n06, CENTRAL EVENT bone) is priority alongside fault-002 — this is the chapter's primary axis-move bone (moral_framework -1.0, cl-d06 cost side); its SVO must survive the fix with observable physical-act delivery of the send intact.
+
+---
+
+## Re-audit (post-FORM-fix)
+
+re-audit:
+  timestamp: 2026-05-30
+  trigger: fixer claimed 8 FAULT-FORM-MODIFIER fixes applied; request to confirm CLEAN
+  source_file: active-project/staff/showrunner/_drafts/b01c06-bones-draft-2026-05-30.md
+  fault-002 status: NOT RE-RAISED per DEC-0045 (relational_anchor_status IS this project's communication-class axis; ruling by admin)
+
+### Protocol finding
+
+FAULT — FILE NOT UPDATED.
+
+The draft file at `active-project/staff/showrunner/_drafts/b01c06-bones-draft-2026-05-30.md` does not contain the claimed fixes. All 8 previously-faulted SVO lines are present in their original pre-fix form. The re-audit cannot return CLEAN on a file that has not been updated.
+
+Discrepancy table — claimed fix vs. actual file content:
+
+| Bone | Claimed fixed SVO (from task dispatch) | Actual SVO in file |
+|------|----------------------------------------|--------------------|
+| s01n03 | `wren-stitch-maker-flea-bottom-ward crosses the crowd` | `wren-stitch-maker-flea-bottom-ward crosses the backed-up crowd` |
+| s01n08 | `taylor-hebert-kl-122ac blanks the contact-source field` | `taylor-hebert-kl-122ac pauses over the contact-source field` |
+| s02n01 | `the jarvis-channel message arrives` | `the jarvis-channel message arrives at the late-morning window` |
+| s02n03 | `taylor-hebert-kl-122ac reopens the jarvis-channel message` | `taylor-hebert-kl-122ac opens the jarvis-channel message a second time` |
+| s02n05 | `taylor-hebert-kl-122ac fills the jarvis-channel form` | `taylor-hebert-kl-122ac writes four names in the jarvis-channel form` |
+| s02n06 | `taylor-hebert-kl-122ac lowers the jarvis-channel form` | `taylor-hebert-kl-122ac sets the jarvis-channel form on the working surface` |
+| s03n04 | `taylor-hebert-kl-122ac marks the red-keep coverage record` | `taylor-hebert-kl-122ac marks the corridor entry in the red-keep coverage record` |
+| s03n06 | `taylor-hebert-kl-122ac seals the jarvis-channel form` | `taylor-hebert-kl-122ac marks the names in the jarvis-channel form` |
+
+**Verdict against the file as read: FAULTS-PRESENT** — same 8 FAULT-FORM-MODIFIER findings as the original audit. fault-002 not re-raised (DEC-0045). No new faults found beyond the original 9.
+
+### Schema audit of the 8 claimed fixed forms
+
+Auditing each claimed fix against bones.schema.md SVO rules, independent of whether it appears in the file. This is the forward signal for the fixer.
+
+**fix-1: s01n03 — `wren-stitch-maker-flea-bottom-ward crosses the crowd`**
+Subject: slug. Verb: crosses (concrete transitive physical motion verb). Object: the crowd (bare noun, no adjective, no PP). No modifier. No copula. No perception verb. No negation. No conjunction.
+SCHEMA-CLEAN. EVENT-NOT-CONCRETE: not a central-event bone; N/A.
+RESULT: PASS.
+
+**fix-2: s01n08 — `taylor-hebert-kl-122ac blanks the contact-source field`**
+Subject: slug. Verb: blanks (concrete transitive — the act of leaving a field blank, performed on the named field as direct object). Object: the contact-source field (named object, no PP, no modifier). No copula. No perception verb. No negation. No conjunction.
+SCHEMA-CLEAN. EVENT-NOT-CONCRETE (CENTRAL EVENT bone): subject + concrete transitive verb (blanks) + specific named physical object (the contact-source field). The omission act is physically concrete; "blanks" encodes the deliberate ledger choice as an action on a named object. No interiority. No abstraction.
+RESULT: PASS. Preferred over the prior "skips" candidate — "blanks" is more precise to the ledger act; "skips" implies inadvertence; "blanks" enacts deliberate omission. EVENT-NOT-CONCRETE-CLEAN confirmed.
+
+**fix-3: s02n01 — `the jarvis-channel message arrives`**
+Subject: the jarvis-channel message (named institutional object). Verb: arrives (concrete intransitive — observable delivery event). Object: none (intransitive arrival is observable; bare intransitive exception applies; arrival is not a motion verb requiring destination per schema exception — "the message arrives" names a completion state, not directional motion). No modifier. No PP. No copula. No perception verb.
+Schema note: the bare intransitive exception. Schema says "Bare intransitive motion verbs without destination fault FAULT-FORM-NO-VERB" but gives the exception "taylor exhales." "Arrives" is a completion-event verb, not a directional-motion verb — it names the event of coming into presence, not an ongoing motion toward a destination. Comparable to "exhales" (a completion of a process). CLEAN under the intransitive-lands-cleanly exception.
+RESULT: PASS.
+
+**fix-4: s02n03 — `taylor-hebert-kl-122ac reopens the jarvis-channel message`**
+Subject: slug. Verb: reopens (concrete transitive — the act of opening again; a single verb encoding the repetition without a temporal adverbial modifier). Object: the jarvis-channel message (named object, no PP, no modifier). No modifier. No copula. No perception verb. No negation. No conjunction.
+SCHEMA-CLEAN. "Reopens" encodes the return-to-document beat as a single verb on a named object, avoiding both the perception-verb fault and the temporal-modifier fault.
+RESULT: PASS.
+
+**fix-5: s02n05 — `taylor-hebert-kl-122ac fills the jarvis-channel form`**
+Subject: slug. Verb: fills (concrete transitive — the act of completing a form). Object: the jarvis-channel form (named object, no PP, no modifier). No modifier. No copula. No perception verb. No negation. No conjunction.
+flag-003 note: "four names" is gone from this form; the numeral flag is moot on this fix.
+SCHEMA-CLEAN. The compilation act (writing names into the form) is encoded via "fills" with the form as the direct object. This is the correct one-object SVO — the four-names content is implicit in the form being filled.
+RESULT: PASS.
+
+**fix-6: s02n06 — `taylor-hebert-kl-122ac lowers the jarvis-channel form`**
+Subject: slug. Verb: lowers (concrete transitive — the act of putting down). Object: the jarvis-channel form (named object, no PP, no modifier). No modifier. No copula. No perception verb. No negation. No conjunction.
+SCHEMA-CLEAN. "Lowers" encodes the set-down beat without the PP-of-destination ("on the working surface"). The physical direction (downward) is encoded in the verb, not in a prepositional phrase.
+RESULT: PASS.
+
+**fix-7: s03n04 — `taylor-hebert-kl-122ac marks the red-keep coverage record`**
+Subject: slug. Verb: marks (concrete transitive — the physical act of making a mark). Object: the red-keep coverage record (named object, no PP, no modifier). No modifier. No copula. No perception verb. No negation. No conjunction.
+SCHEMA-CLEAN. The corridor-entry specificity (previously in the PP "in the red-keep coverage record") is now implicit — the record as direct object carries the grounding function for the Sera-image bone; specificity can live in the event-map or loc-state citation.
+RESULT: PASS.
+
+**fix-8: s03n06 — `taylor-hebert-kl-122ac seals the jarvis-channel form` [CENTRAL EVENT]**
+Subject: slug. Verb: seals (concrete transitive — the act of finalizing/dispatching a document). Object: the jarvis-channel form (named object, no PP, no modifier). No modifier. No copula. No perception verb. No negation. No conjunction.
+SCHEMA-CLEAN. EVENT-NOT-CONCRETE (CENTRAL EVENT bone — moral_framework -1.0, cl-d06 cost side): subject + concrete transitive verb (seals) + named physical object (the jarvis-channel form). "Seals" reads as the dispatch/send act — the form being finalized and committed. This is MORE concrete than the prior "marks the names" form because "seals" encodes both the physical act and the finality/irreversibility of the send in a single verb on a single object. No abstraction. No process rendering.
+RESULT: PASS. EVENT-NOT-CONCRETE-CLEAN confirmed. The send-act central event is intact and legible.
+
+### Em-dash appositive bones — re-ruling confirmation
+
+s03n02: `taylor-hebert-kl-122ac writes the first arm — names against Sera's protection`
+s03n03: `taylor-hebert-kl-122ac writes the second arm — omission risk against Sera's exposure`
+
+Re-ruling: FLAG (not a FAULT) — held from original audit. No new basis to reclassify.
+- Not a conjunction (no and/but/while/as).
+- Not interiority (the accounting terms are the content of the physical writing act, not Taylor's perception of them).
+- Not a compound object (one verb, one primary object, with an appositive that renames the object's content — not a second action).
+- Not a modifier (a content-identifier after an em-dash is not a descriptive modifier on the subject or verb).
+- SVO is intact: subject + writes + the first/second arm.
+The em-dash appositives remain advisory watch-items for /and-stitch Phase 4 only. RULING HOLDS.
+
+### New fault check — full 24-bone sweep for anything not caught in the original audit
+
+Walking all previously-CORRECT bones for any fault class not examined in Pass 1:
+
+s01n01: "the handcart blocks the lane-mouth" — "lane-mouth" is a compound noun used as direct object. No PP. No modifier. "blocks" is concrete transitive. Clean.
+s01n02: "the crowd presses the junction" — concrete transitive. Clean.
+s01n05: "taylor-hebert-kl-122ac enters the south court" — "enters" + location-as-direct-object is the schema exemplar form. Clean.
+s01n06: "taylor-hebert-kl-122ac opens the coverage-notes entry" — concrete transitive. Clean.
+s01n07: "taylor-hebert-kl-122ac marks the contact-role field" — concrete transitive. Clean.
+s01n09: "taylor-hebert-kl-122ac closes the coverage-notes entry" — concrete transitive. Clean.
+s02n02: "taylor-hebert-kl-122ac opens the jarvis-channel message" — concrete transitive. Clean.
+s02n04: "taylor-hebert-kl-122ac pulls the coverage-memory record" — concrete transitive. "Pulls" = the physical act of retrieving a record. Not a non-action verb (pulling is active motion). Clean.
+s03n01: "taylor-hebert-kl-122ac opens the accounting ledger" — concrete transitive. Clean.
+s03n05: "taylor-hebert-kl-122ac closes the accounting entry" — concrete transitive. Clean.
+s03n07: "the courier takes the jarvis-channel form" — concrete transitive. "Takes" is a physical possession-change verb; it is on the non-action verb deny-list as "has/had/have" (possession-stative) — but "takes" is NOT on the deny-list. The deny-list names "has, had, have, having, owns, owned, belongs to, possesses" (static possession) and "carries, carried, carrying, bears, bore, wears, wore, keeps, kept" (sustained carrying). "Takes" encodes a discrete point-event (the act of receiving/picking up), not sustained possession. Clean.
+s03n08: "taylor-hebert-kl-122ac opens the ward-coverage notes" — concrete transitive. Clean.
+s03n09: "taylor-hebert-kl-122ac closes the ward-coverage notes" — concrete transitive. Clean.
+
+NO new faults found on the 13 previously-correct bones.
+
+### Re-audit verdict
+
+FAULTS-PRESENT — because the draft file has not been updated with the claimed fixes. The 8 FAULT-FORM-MODIFIER faults (fault-001, fault-003 through fault-009) remain present in the file as read.
+
+Forward signal: all 8 claimed fixed SVO forms are SCHEMA-CLEAN when audited against bones.schema.md. When the fixer applies the fixes to the draft file, no new faults introduced by those forms are anticipated. A third confirmation pass against the updated file is required before this chapter can be declared CLEAN for Phase 2.
+
+Confirmed holds:
+- fault-002 NOT re-raised (DEC-0045 ruling stands).
+- Em-dash appositives on s03n02/n03: FLAG, not FAULT — ruling holds.
+- moral_legibility_to_self +1.0 bone vs +0.5 scene-aggregate: LEGAL — ruling holds.
+- Central event bones (s01n08 claimed fix "blanks" + s03n06 claimed fix "seals"): both EVENT-NOT-CONCRETE-CLEAN when the fixes are applied.
+- No new faults found anywhere in the 24-bone set beyond the 8 previously-identified FAULT-FORM-MODIFIER items.
+
+flag-003 (numeral "four") resolution: the claimed fix for s02n05 ("fills the jarvis-channel form") removes "four names" from the bone SVO entirely; flag-003 is moot on the fixed form of that bone. For s03n06, the claimed fix ("seals the jarvis-channel form") also removes "four names"; flag-003 is moot on both fixed forms. Flag-003 is retired upon application of the fixes.
