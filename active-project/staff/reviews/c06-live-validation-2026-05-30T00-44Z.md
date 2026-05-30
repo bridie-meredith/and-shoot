@@ -133,8 +133,64 @@ theater/bones/b01-c06.md (25 bones, flat 1-25, SVO-clean, dialogue token on flat
 | 6a | fidelity (chunk→bones) | review bones | PASS, 0 HARD | no | spine intact; dialogue+SVO+scene-map clean |
 | 6b | **follow_check (PROP-0020)** | review bones | **PASS-WITH-NOTES** | **no** | context-aware reviewer: cold-read NO = 100% context-noise, not a bone defect — the milestone result |
 | 6c | aliveness (PROP-0022) | review bones | BONES-AIRLESS-RISK (advisory) | no | apparatus-dominant; forwarded to facets/stitch; non-blocking |
-| 7 | context + aliveness axes | facets Ph2.5/4.5/4.6 | — | — | PENDING |
-| 7 | context + aliveness axes | facets Ph2.5/4.5/4.6 | — | — | PENDING |
-| 8 | voice-embodiment / READABLE-AIRLESS / spine-promotion | stitch Ph4/9 | — | — | PENDING |
+| 7a | R1 fanout (10 authors) | facets Ph1 | CLEAN | no | apparatus-brief honored by all (see below) |
+| 7b | merge + cite-index | facets Ph2 | CLEAN (no abort) | no | 48 entries, 18/25 lines (72%); body-integrity+stale-cite PASS |
+| 7c | context + aliveness axes | facets Ph2.5 | IN PROGRESS | — | the live-validation surface; BONES-AIRLESS-RISK forewarning lands here |
+| 8 | FOLLOWABLE / ALIVE separated | facets Ph4.5/4.6 | — | — | PENDING |
+| 9 | voice-embodiment / READABLE-AIRLESS / spine-promotion | stitch Ph4/9 | — | — | PENDING |
 
-_Last updated: 2026-05-30T00:44Z. Continues as gates fire._
+---
+
+## /and-facets b01-c06 — live run log (the second live-validation surface)
+
+### Phase 0 — clean (one environment-artifact disposition)
+- **bones-review mtime false-trip** (Phase 0 step 4b): recorded `bones_file_mtime_at_review` (1780107964)
+  ≠ current mtime (1780111145) because git does not preserve mtimes across the PR #76 merge + fresh
+  re-clone onto this branch. `git diff e9883f2 HEAD` on the bones file = EMPTY (content byte-identical;
+  never re-emitted). Admin **DEC-0047** → reconcile the stamp (content identity verified), not re-run the
+  review. **NOT a gate event of the overhaul** — an environment artifact, logged so it isn't conflated.
+- c05 prior-chapter facet working set (133 files) auto-archived (Phase 0 step 5); c06 scene-map + Wren
+  dialogue/drafts + glossed-terms preserved. the-courier ruled a functional walk-on (no card; excluded
+  from interiority fanout) — already sanctioned upstream (bones-review PASS with this cast).
+
+### Phase 1 — R1 fanout (10 authors): the apparatus-dominant brief held at AUTHORING time
+Entry tally: loc-state 3 · narrator 5 · sensory 2 · state-env 12 · state-taylor 5 · state-wren 0 ·
+memory 2 · feel-taylor 2 · feel-wren 0 · metaphor 1(prov) · vibes 15 · exposition 1.
+
+**⭐ Readability-twin signal at authoring (NEW live evidence for Q2):** every lens author independently
+concentrated fires on the four axis-moving peaks (@4 first-spoken / @8 omission / @22 send / @24 contrast)
+and **declined to over-decorate the accounting spine** to manufacture aliveness — each explicitly flagging
+"airless-risk is a downstream review concern, not an R1 over-fire license" (narrator, memory, sensory,
+feeling all said versions of this). This is the readability twin working at the RIGHT layer: R1 keeps the
+spine concrete-and-honest; the aliveness call is reserved for Phase 2.5's grounding-ledger. Contrast c05,
+where there was no such division of labor and the airless render surfaced only at the terminal cold-read.
+
+**⭐ Completeness signal from the exposition author (NEW live evidence for Q2):** exposition emitted ONE
+entry (a prior-episode bridge preamble @0) and **ZERO new glosses** — independently concluding the chapter
+needs no new orientation because every proper noun is c01–c05 register-resident. This corroborates the
+PROP-0020 thesis from the authoring side: the cold-reader's strict-NO proper-noun load is register-noise,
+not an orientation gap. Two independent readers (the /and-review-bones follow_check AND the blind exposition
+gap-test) now converge on the same call.
+
+### Phase 2 — merge + cite-index: CLEAN
+build_cite_index.py b01-c06 merged 12 author copies, consolidated feeling.md (2 entries) + state-updates.md
+(17 entries, env 1-12 + taylor 13-17 with # source: markers), built cite-index (48 entries; 72% lines
+decorated). No body-integrity abort, no stale-citation abort.
+- *Tooling observation (gate-orthogonal, like the Phase-2 schema false-pos earlier):* the sliced
+  state/feel facets carry per-slice LOCAL [state:N] tokens on the proto-lines that cosmetically collide
+  across sources (state:1 at both @4 and @6) because consolidation renumbers the facet file but not the
+  proto-line tokens. Facet entries are self-anchored by @id, so functionally harmless; **c05 shipped
+  through stitch with the identical pattern.** Not a defect of the overhaul; Phase 5 STRUCTURAL is the
+  backstop if it is ever load-bearing.
+- *Carry to Phase 5 audit:* memory @12/@19 lack NI co-citation (NI fired @4/@8/@13/@22/@24); climax shape
+  → standard NI-spine required → likely CONSTRAINT finding, resolvable at R2 (NI ADD @12/@19 or memory
+  re-anchor) or fixer. Also: 3 new oc-* prop cards (ward-coverage-notes / jarvis-channel-form /
+  accounting-ledger) flagged for margit referral; vibes entry-5 d14-fence-adjacency for R2.
+
+### Phase 2.5 — context + aliveness review: IN PROGRESS (the surface this command exists to test)
+Dispatched the context-AWARE reviewer (reads handoff_in as the series-so-far capsule) on the merged R1
+graph. Watching: (a) does the completeness axis hold with zero/near-zero CONTEXT-REQUIRED (predicted, given
+the two converging completeness signals above); (b) does the aliveness axis open grounding-ledger lines on
+the s02-s03 accounting middle (predicted by the BONES-AIRLESS-RISK forewarning). Result pending.
+
+_Last updated: 2026-05-30 (/and-facets through Phase 2; Phase 2.5 in flight)._
