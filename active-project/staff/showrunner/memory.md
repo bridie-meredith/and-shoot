@@ -3977,11 +3977,11 @@ books:
         context_followability:   # PROP-0020/0022 — /and-facets Phase 2.5 + 4.5
           completeness_verdict: FOLLOWABLE   # Ph2.5 + Ph4.5 both; context-ledger empty (0 CONTEXT-REQUIRED)
           readability_verdict: ALIVE  # Ph4.5 AIRLESS-HOLE -> Ph4.6 grounding remediation (sensory:3/4/5 @10/@16/@17) -> Ph4.6-Step2 re-review ALIVE (continuous somatic thread across hinge)
-          report_path: active-project/staff/reviews/context-follow-r3-b01-c06-2026-05-30.md
-          reviewed_at: 2026-05-30
+          report_path: active-project/staff/reviews/context-follow-r2-b01-c06-2026-05-31.md  # re-cascade post-revise; PROP-0023 honesty-check applied, genuine bone-layer ALIVE (not false-ALIVE)
+          reviewed_at: 2026-05-31
           context_ledger_open: 0
           grounding_ledger_open: 0   # grd-001/002/003 all satisfied by sensory:3/4/5 at Phase 4.6 (cap-exempt licensed adds)
-          voice_fixable: ["@11", "@14", "@20", "@21"]   # -> /and-stitch Phase 4 voice-embodiment
+          voice_fixable: ["@19"]   # re-cascade: only flat-19 (marks red-keep coverage record) VOICE-FIXABLE -> /and-stitch Phase 4 (render concrete, not architecture-summary)
         substance_delta_measured:
           axes_moved:
             - relational_anchor_status +1.0
