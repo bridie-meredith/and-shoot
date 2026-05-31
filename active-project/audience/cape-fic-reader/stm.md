@@ -594,3 +594,66 @@ My one note: c09 should not defer the anchor surfacing again. The window b01c08-
 ### Chapter aggregate verdict
 
 SUBSTANCE-FELT — all three scenes pass; no HARD findings; chapter goals land; reader-Taylor gap operative; cl-d06 deferral concurred with reservation (c09 should close the window).
+
+## b01c08 /and-write Phase 4 trim
+
+---
+reviewer: cape-fic-reader
+chapter: b01c08
+phase: write-phase-4-trim
+date: 2026-05-31
+mode: single-persona override
+---
+
+### Per-bone deletion proposals
+
+**s01n03 (watcher-boy faces water-point):** KEEP — do not trim. This bone is the one watcher whose position recurs at s03n08 (watcher-boy falls from the water-point). The chapter's closing image depends on that specific body being planted in s01. Without n03, the s03n08 displacement reads as a generic spatial note rather than a named echo. KEEP is mandatory for structural closure.
+
+**s01n04 (basket-woman faces lane-mouth):** TRIM-CANDIDATE. Holds moral_framework: "watcher-bodies registered as geometry without directed assignment — prohibition not yet crossed." This is the weakest of the three watcher bones. The moral_framework hold can be carried by the overall watcher-triplet without a dedicated bone for the basket-woman specifically — she has no forward echo, no named recurrence, no function in s03. The prohibition-not-yet-crossed discipline is already enacted by the circuit-closes-without-disclosure beat at n08; n04 is front-loading a rationale the chapter earns elsewhere. TRIM-CANDIDATE unless the prose-execution requires a second watcher body to make the "geometry, not directed assignment" read land — but at the bone level, the chapter goal (plant the dual-architecture image) is adequately carried by n03 (boy) + n05 (apprentice).
+
+**s01n05 (apprentice drops nailing-rate):** KEEP — voice-load-bearing. The apprentice's dropped nailing-rate is a behavioral tell (something the watcher-network does when Taylor's coverage passes through) distinct from the static positions of n03 and n04. It gives the dual-surveillance-architectures image its physical texture: one network holds position, another has behavioral tells. That is the difference between seeing two bodies and seeing two systems. The relational_anchor_status hold ("ward physics, not Taylor's instrument") needs a physical-act bone to not be abstract. KEEP.
+
+**s02n01 (jarvis-packet arrives):** KEEP — necessary routine-establishment. One of the two pre-Aemond setup bones ADVISORY-2 licenses.
+
+**s02n02 (Taylor breaks seal):** KEEP — second of the two licensed pre-Aemond setup bones.
+
+**s02n03 (logistics-section surfaces handler-rotation):** TRIM-CANDIDATE. This bone holds political_register-prot and does nothing that n04 doesn't also do — it surfaces a section that n04 immediately names the content of. The handler-rotation section is the staging for the chain-of-responsibility name; n03 is the staging for n04. As a logistics-intake bone with no forward echo and no distinct axis load, it is the one pre-Aemond bone that marks time rather than establishing routine. With n01 and n02 already establishing the Jarvis-delivery routine, n03 adds a document-intake layer beat that extends the pre-Aemond bone count from 2 to 3 — exactly ADVISORY-2's warning threshold. A reader who skims logistics intake will skim n03 and arrive at n04 without loss. TRIM-CANDIDATE.
+
+**s02n04 (handler-rotation names chain-of-responsibility):** KEEP — this is the structural content n03 was staging. The chain-of-responsibility name is the first Aemond-adjacent information to enter the scene; n04 is where the board changes. KEEP unconditionally.
+
+**s02n05 (feed-geometry meets coverage-gap):** KEEP — this bone covers the `escalation-engine-visible-at-feed-edge` event and earns the n08 closing image. The coverage-gap is what makes the feed-edge's new geometry legible; without n05 the n08 "feed-edge acquires new geometry" reads as a notation, not a consequence. KEEP.
+
+**s03n02 (insect-feed returns Wenna Cobb):** TRIM-CANDIDATE — this is the WATCH-4 optional-inclusion bone. Holds relational_anchor_status: "cost-bearer returned as ordinary feed-event — present, not an event; no weight loaded onto the anchor." The bone's own rationale is its indictment: "present, not an event." The s03 story is the courier-face beat (n03-n07) and the Khepri-echo closing image (n08-n09). Wenna Cobb sits between the ward-entry bone (n01) and the Oswyn placement (n03) as a feed-return that the rationale explicitly says carries no weight. It does not serve the chapter goal. It does not stage n03 (Oswyn's placement is independent of whether Wenna was returned first). The relational_anchor_status hold is covered by the chapter's richer anchor-discipline moments elsewhere. This is the one bone in s03 that the chapter does not need, and WATCH-4 already flagged it as optional. TRIM.
+
+**s03n07 (Taylor completes the circuit):** KEEP — this bone is ADVISORY-1's physical correlate. The circuit-completion is the "Taylor moving on without acknowledgment" beat. Without n07, the name-attachment at n06 has no physical close; the chapter's consent-absence texture depends on the circuit completing and Taylor continuing as if nothing happened. KEEP.
+
+**All other bones:** KEEP. s01n01, s01n02, s01n06, s01n07, s01n08 — all load-bearing. s02n06, s02n07, s02n08 — the Aemond sequence and its close, unconditional. s03n01, s03n03, s03n04, s03n05, s03n06, s03n08, s03n09 — all serve chapter goal directly.
+
+### Summary
+
+- **TRIM (1 bone):** s03n02 (Wenna Cobb feed-return — present, not an event; does not serve goal; no forward echo; WATCH-4 optional; crowds s03 before the closing image)
+- **TRIM-CANDIDATES requiring author judgment (2 bones):**
+  - s01n04 (basket-woman) — third watcher body with no forward echo and a hold the chapter earns elsewhere; trimming brings the watcher-triplet to 2 bones, which carries the dual-surveillance image without taxonomy-set-piece risk per WATCH-5
+  - s02n03 (logistics-section surfaces) — staging bone for n04 that exceeds ADVISORY-2's 2-bone pre-Aemond maximum; trimming keeps pre-Aemond count at 2 (n01 + n02) and lets n04 open the handler-rotation content directly
+
+### ADVISORY-2 resolution
+
+With s02n03 trimmed: pre-Aemond bones = n01 + n02 (2 bones, within ADVISORY-2 maximum). Aemond-entry arrives at what would be the third bone of the scene. That is the correct structure for the quiet-beat function.
+
+Without s02n03: n04's handler-rotation arrival has no logistics-section framing. Is that a legibility problem? The SVO "the handler-rotation names the chain-of-responsibility" is self-contained — it does not require a prior bone to establish that there is a handler-rotation section. Jarvis packets contain sections; sections name things. The delivery apparatus is established by n01-n02; n04's content is legible without n03's framing. No cold-read failure risk from dropping n03.
+
+### Threshold Discipline fires
+
+None. No established limits bypassed. No unmotivated knowledge. No new character earning trust without cost (Corwick is a body-map filing; Wenna Cobb's drop does not affect the cost-bearer's structural position — she was an ordinary feed-return). No filler retained — the three TRIM/TRIM-CANDIDATE proposals target exactly the bones whose own rationales describe them as "geometry without directed assignment," "staging," or "present, not an event."
+
+Fatigue check on final bone count: with s03n02 dropped and s01n04 + s02n03 trimmed (author judgment), bone count falls to 22 from 25. That is the correct density for a staging chapter — neither thin nor cluttered. Without the optional trims, 24 bones (Wenna only dropped) is also defensible.
+
+### Voice-load-bearing KEEP notes
+
+- s01n08 (circuit closes, moral_legibility_to_self held): KEEP — this is ADVISORY-1's physical correlate for the consent-absence texture. The circuit closing without accounting entry is the suppression-in-action beat the reader-Taylor gap requires. Do not trim.
+- s03n07 (Taylor completes the circuit): KEEP — second instance of the circuit-completion-as-silent-advance. The chapter's closing image at n08-n09 lands harder when the circuit-completion is a distinct bone rather than folded into the body-map attachment at n06.
+- s03n08-n09 (watcher-boy falls, feed fills geometry): KEEP unconditional — these are the chapter's designed closing image. The Khepri-echo lands here, and ADVISORY-3 requires n08 to be a feed-event, not a retrospective summary. Both bones must survive.
+
+### File-level verdict
+
+REVISE-drop-s03n02-Wenna-Cobb-present-not-an-event-no-chapter-goal-service-crowds-closing-image

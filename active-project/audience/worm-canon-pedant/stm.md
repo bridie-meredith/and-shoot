@@ -37,7 +37,7 @@ aggregate: ACCEPT
 hard_findings: []
 soft_findings:
   - b01c15: relational_anchor_status +1.5 with null cost_ledger_anchor — inferentially earned by structure but the un-priced-ledger discipline means the null anchor accumulates as a pattern; recommend adding a cost_ledger_anchor or noting in the b01c15 rationale that the weight is earned by the Fuller Architecture mechanism rather than free; not a block but should be addressed before persist
-  - b01c07: social_tether-prot-rise +1.0 for Halvard encounter will need prose support at write-time — the mechanism (Halvard as precinct node; genuine engagement deepens community embedding) is defensible but it is the weakest tether-gain in the book and will need to feel like tether rather than just conversation; the axes_held rationale was correct at draft stage and the axes_in_motion correction flagged in the roll-up is right, but the prose burden for earning this is higher than for other tether beats
+  - b01c07: social_tether-prot-rise +1.0 for Halvard encounter will need prose support at write-time — the mechanism (Halvard as precinct node; genuine engagement deepens community embedding even when intellectually contested) is defensible but it is the weakest tether-gain in the book and will need to feel like tether rather than just conversation; the axes_held rationale was correct at draft stage and the axes_in_motion correction flagged in the roll-up is right, but the prose burden for earning this is higher than for other tether beats
   - the roll-up footnote about b01c07 social_tether-prot-rise correction (moving from axes_held to axes_in_motion) is self-identified and correct; the YAML should be updated before persist; the delta sum math depends on it
 canonicity_findings:
   - b01c18 "covering bodies in numbers she has not tracked since Gold Morning": the Gold Morning comparison is used as a functional density reference, not as identity claim; this is exactly the once-per-chapter analytical-comparison ceiling and it is well-used here; no flag
@@ -613,3 +613,70 @@ canonicity_findings:
 carry_forward:
   - WATCH-1 through WATCH-5 carried to /and-write b01c08
   - b01c07 prose-burden soft finding carries forward to b01c07 /and-write (unchanged)
+
+## b01c08 /and-write Phase 4 trim
+
+reviewer: worm-canon-pedant
+date: 2026-05-31
+chapter: b01c08
+scenes_reviewed: [b01c08s01, b01c08s02, b01c08s03]
+dispatch_mode: override — single-persona load
+bones_reviewed: 25 (s01: 8, s02: 8, s03: 9)
+phase_3_reorder: acknowledged — s02n07↔n08 swapped; bread-price now n07, edge-image now n08 (closes scene)
+
+---
+
+### Per-bone deletion proposals
+
+NONE. All 25 bones KEEP.
+
+No bone in this file is chatter, procedural placeholder, or redundant. Each SVO carries either a distinct event-coverage role, a distinct axis-held rationale that is not already carried by an adjacent bone, or a structural position (opening / closing / seam-marking) that cannot be absorbed. The file is tight.
+
+The three closest candidates for scrutiny — and why they hold:
+
+**s01n03 + s01n04 + s01n05 (watcher-body trio):** WATCH-5 examined. The three SVOs are formally distinct: "faces the water-point" (n03) / "faces the lane-mouth" (n04) / "drops the nailing-rate" (n05). Two facings and one physical-state change. The third (n05) is not redundant because it names a different sensory event-class (behavioral-state drop, not body-orientation) and carries a distinct axes_held rationale (relational_anchor_status vs. moral_framework on n03/n04). The trio reads as brief physical-body returns, not taxonomy. Three bones for three bodies is lean, not accumulative. WATCH-5: does not fire. KEEP all three.
+
+**s03n08 + s03n09 (closing two-bone split):** WATCH-3 examined. n08 ("watcher-boy-position falls from the water-point") is a world-fact bone — the watcher-boy has left his station; the position is empty. n09 ("the insect-feed fills the water-point-geometry") is the coverage-completion bone — Taylor's feed occupies the vacated geometry. These are structurally distinct events: n08 is the world-fact; n09 is the coverage-consequence. Neither names Oswyn's unknowing in its SVO. The subsumption is geometric and silent at bone level. Both hold. KEEP.
+
+**s03n02 (Wenna Cobb):** WATCH-4 resolution. "The insect-feed returns wenna-cobb." Single-bone feed-return, no axis moves, axes_held rationale is "present, not an event; no weight loaded onto the anchor." The rationale is correct and the bone is minimal. Does it over-load c08? No. It is one bone, one SVO, no elaboration. The over-load concern does not fire at one-bone scale. WATCH-4: RESOLVED. KEEP.
+
+---
+
+### Earth-Bet fence verdict
+
+CLEAN.
+
+All 25 SVOs reviewed. Functional descriptive language throughout: "insect-feed," "feed," "circuit," "body-map," "feed-geometry," "feed-edge," "feed-pass," "watcher-sightlines," "gap-corridors," "coverage-gap," "handler-rotation," "chain-of-responsibility," "bread-price," "water-point-geometry." No parahuman jargon anywhere. No Khepri in any SVO. No override, consent, shard, Manton, trigger-event, or Gold Morning reference in any SVO or axes_held rationale as prose-content. The words "consent" and "unknowing" appear only in axes_held structural annotations — not prose-emit content. Inner-monologue-rare cap not tested (no Gold Morning reference this chapter). Fence: CLEAN.
+
+WATCH-1 (s01 consent-vocabulary), WATCH-2 (s02 escalation-engine label), WATCH-3 (s03 unknowing-vocabulary): all three survive at bone-SVO level. The carry-forward watches remain active for Phase 7 emit / stitch review — the risk is prose-generation drift, not bone-level contamination.
+
+---
+
+### WATCH-item resolutions
+
+**WATCH-4 (Wenna Cobb body-count continuity):** RESOLVED at s03n02. Feed returns Wenna as ordinary pass-through. Present, not an event. Body-count discipline from c07 confirmed without forcing a character scene. CLOSED.
+
+**WATCH-5 (s01 watcher-body density):** RESOLVED. Three watcher-body bones (n03/n04/n05) are lean and distinct. Not a taxonomy set-piece. Each closes inside two words of SVO. CLOSED.
+
+**WATCH-2 (aemond-name-logged bone, s02n06):** SVO is "taylor-hebert-kl-122ac logs the aemond-name." The verb is "logs" — ledger-register discipline enacted at SVO level. Axes_held rationale references "flat resentment discipline enacted against the pressure the name carries" — structural annotation, not prose. "Escalation engine" does not appear in any SVO or rationale. Taylor's register stays at logging. WATCH-2: CLEAR at bone level; carry to Phase 7 emit.
+
+**WATCH-3 (closing two-bone split):** n08 SVO is "the watcher-boy-position falls from the water-point" — world-fact, no Taylor interiority. n09 SVO is "the insect-feed fills the water-point-geometry" — geometric completion, no named recognition. "Oswyn does not know" is chunk-narrator voice, not bone-level content. Both bones enact physical departure and feed-coverage; neither names Oswyn's unknowing as Taylor's recognition. WATCH-3: CLEAR at bone level; carry to Phase 7 emit.
+
+**WATCH-1 (s01 consent-vocabulary) and the s02/s03 force-annotations:** No SVO or rationale reproduces "consent," "override," or equivalent recognition in Taylor's interiority. Force-annotation labels exist only in event_map entries (structural tracking, not prose-emit). WATCH-1: CLEAR at bone level; carry to Phase 7 emit.
+
+---
+
+### File-level verdict
+
+ACCEPT.
+
+25 bones, 0 deletion proposals. Earth-Bet fence CLEAN. All five prior WATCH-items addressed: WATCH-4 and WATCH-5 CLOSED at bone level; WATCH-1, WATCH-2, WATCH-3 CLEAR at bone level with active carries to Phase 7 emit and stitch review (prose-generation risk remains, bone-level risk absent).
+
+---
+
+### WATCH-items for downstream
+
+- **WATCH-1 (carry active):** s01 force-annotation prose discipline — "consent" / "override" must not enter Taylor's prose at Phase 7 emit or stitch. Taylor's voice stays at gap-noted / geometry-filed / circuit-continues.
+- **WATCH-2 (carry active):** s02 "escalation engine" is reader-framing only — must not appear in Taylor's bones-generated prose. Taylor's register at Aemond-name-logged is logging; downstream prose must keep it there.
+- **WATCH-3 (carry active):** s03 closing two-bone split — Taylor's physical departure and feed-coverage must enact the close; no bone-generated prose should give Taylor the recognition "Oswyn does not know this."
+- **b01c07 prose-burden (carry unchanged):** Halvard tether-gain; carries to b01c07 /and-write.
