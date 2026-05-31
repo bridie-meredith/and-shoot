@@ -2,9 +2,13 @@
 facet: metaphor
 episode: b01-c08
 author: editor
-mode: R1-BLIND
+mode: R2-JUDGE
+r2-verdict: ACCEPT-REFUSE
 fires: 0
-cull-count: 0
+keeps: 0
+deletes: 0
+adds: 0
+cite_index_hash: 2026-05-31-b01c08-v1
 ---
 
 # refuse-rationale
@@ -38,53 +42,111 @@ cull-count: 0
 #       resonance — WATCH-1 violation. Dark-humor register does not apply to a
 #       silent geometry-integration beat. Both licensed functional registers
 #       fail.
-#   (3) No upstream anchor confirmed: memory and feeling facets for b01c08 are
-#       not yet authored (R1 BLIND mode). Provisional `licensed-by:` in R1
-#       requires naming the intended anchor by description; no plausible memory-
-#       callback target (the Khepri-resonance is reader-side, not Taylor-side)
-#       and no feeling-flag candidate on a held-register integration bone.
-#   REFUSED: AP3 + functional-register-fail + no-license.
+#   (3) No upstream anchor confirmed: memory:1 lands at @8 (post-move), not
+#       @6; feel:2 lands at @8 (back=N). No memory or feeling fire at @6.
+#       AP1 applies absent an anchor. The provisional licensed-by would require
+#       fabricating an anchor the locked graph does not carry.
+#   REFUSED: AP3 + functional-register-fail + AP1-no-license.
 #
 # @8 (the circuit closes the feed-pass — peak-bone; held-discipline enacted):
-#   Peak-bone but capability moved at @6; @8 is post-move hold at scene-close.
-#   NI:2 @8 already carries the no-accounting-entry figure ("nothing files;
-#   the geometry has updated without a corresponding entry in any column she
-#   keeps"). Metaphor here doubles NI (AP3). The circuit-close-as-no-accounting
-#   is a protected-pattern: cape-fic ADVISORY-1 requires the consent-absence
-#   enact through physical correlate, not author-withheld interiority. A
-#   metaphor would constitute narrator intrusion past the physical-correlate
-#   constraint. REFUSED: AP3 + protected-pattern violation.
+#   mem:1@8 + feel:2@8 present — double-anchor available, the strongest
+#   licensing form the rubric names. But:
+#   (1) AP3 NI-redundancy: NI:2@8 is INVIOLABLE (context-follow review) and
+#       already carries the no-accounting-entry figure with specificity —
+#       "nothing files; the geometry has updated without a corresponding entry
+#       in any column she keeps." The *non-filing* as a figure is already
+#       rendered in the only register Taylor's prose can inhabit here. A
+#       metaphor entry at @8 cannot add what NI:2 does not already convey
+#       (Q1 fails).
+#   (2) Protected-pattern violation: cape-fic ADVISORY-1 requires the consent-
+#       absence enact through physical correlate, not author-withheld interiority.
+#       A metaphor at @8 — even a dark-humor one — constitutes a narrator step
+#       past the physical-correlate constraint into figurative editorial framing.
+#   The double-anchor is present but Q1 and protected-pattern both fail
+#   independently. The anchor does not rescue an entry whose content is already
+#   occupied by NI.
+#   REFUSED: AP3 + Q1-fail + protected-pattern violation.
 #
 # @24 (the insect-feed fills the water-point-geometry — chapter terminal image;
 #   quiet-peak; held-axis scene):
-#   AP7 default-refuse applies (quiet-peak in held scene). Additionally: the
-#   bone SVO is itself a near-metaphoric image (prompt advisory: "resist
-#   authoring an additional metaphor on top"). AP2 risk (figurative already in
-#   the proto-line's geometric language). The closing two-bone split
-#   (@23-@24) is a protected-pattern (WATCH-3 + dark-fantasy WATCH: must stay
-#   structurally separate; Taylor must NOT name Oswyn's unknowing in either
-#   bone). A metaphor entry at @24 risks pressuring the stitcher toward a
-#   figurative bridge that violates the split, or allows the Khepri-echo to
-#   cross into Taylor's voice. REFUSED: AP7 + AP2 + protected-pattern.
+#   mem:2@24 present — single anchor available. But:
+#   (1) AP7 default-refuse applies: quiet-peak in a held-axis scene; no hinge-
+#       magnitude movement at @24 (capability moved at @6; @24 is structural
+#       completion in s03 where all axes held).
+#   (2) AP2 risk: the proto-line SVO is itself near-metaphoric geometric language
+#       ("fills the water-point-geometry" is already a figurative construction in
+#       the feed's spatial register). A metaphor entry would double the figure.
+#   (3) AP3: NI:6@24 is INVIOLABLE (context-follow review) and already carries
+#       "the geometry completes itself; the coverage-matrix subsumes the watcher-
+#       positions … smooth, the same way the seams take in any new texture in
+#       the feed." The figurative content the metaphor would supply is already
+#       present and load-bearing in NI.
+#   (4) Protected-pattern (WATCH-3 + dark-fantasy WATCH): the closing two-bone
+#       split (@23-@24) must stay structurally separate. A metaphor entry at @24
+#       pressures the stitcher toward figurative bridging between @23 and @24,
+#       or risks the Khepri-echo crossing into Taylor's voiced register — the
+#       exact violation the protected-pattern forbids.
+#   Four independent refusal grounds. The mem:2 anchor is insufficient to rescue.
+#   REFUSED: AP7 + AP2 + AP3 + protected-pattern.
 #
 # @13 (taylor logs the aemond-name — peak-bone in flat-tense scene; held):
-#   AP7 default-refuse (quiet-peak; held scene; flat-tense discipline IS the
-#   scene's substance). Held-register integrity (WATCH-2) requires Aemond's
-#   name land at logistics register, not elevated register. A metaphor entry
-#   would break the discipline. No anchor. REFUSED: AP7 + register-integrity.
+#   feel:3@13 present (back=N). AP7 default-refuse: quiet-peak in held scene;
+#   the flat-tense logistics discipline IS the scene-B substance. Held-register
+#   integrity (WATCH-2) requires Aemond's name land at logistics register, not
+#   elevated register. A metaphor would crack the held-register discipline that
+#   is the scene's only axis-contribution — the discipline-as-substance would
+#   be self-undermined. feel:3 back=N also means the feeling fire itself has no
+#   upstream backing citation; it is not confirmed as an audience-meaningful
+#   anchor per the Q2 transitive gate.
+#   REFUSED: AP7 + register-integrity + Q2-anchor-not-confirmed.
 #
 # @20 (oswyn speaks to taylor — dialogue-anchor; held-axis scene):
-#   AP7 default-refuse (quiet-peak; held scene). AP12 also applies: non-POV
-#   speaker; editor has no non-POV interior privilege. Central-event bone per
-#   URI-WRITE-EVENT-CONCRETENESS; the speech-act is the courier-name delivery
-#   mechanism — figurative layer risks dissolving the concrete SVO. REFUSED:
-#   AP7 + AP12.
+#   feel:1@20 present (back=Y) — the sole back-confirmed feeling anchor in the
+#   chapter. But:
+#   (1) AP7 default-refuse: quiet-peak; held scene (s03; all axes held).
+#   (2) AP12: non-POV speaker at a dialogue-anchor. The editor has no non-POV
+#       interior privilege beyond what feel:1 (Oswyn's back-foot weight) and the
+#       dialogue card license. A metaphor here would require importing figurative
+#       reach the upstream facet does not authorize.
+#   (3) URI-WRITE-EVENT-CONCRETENESS: @20 is the scene-C central-event bone —
+#       the speech-act is the courier-name delivery mechanism. Figurative layer
+#       risks dissolving the concrete SVO (the exact c05 muffle pattern the
+#       scene-map protects against). The metaphor would work against the bone's
+#       function, not with it.
+#   feel:1@20 is the only back-confirmed anchor in b01c08, but AP7 + AP12 +
+#   the central-event muffle risk produce three independent refusal grounds.
+#   REFUSED: AP7 + AP12 + central-event-muffle-risk.
 #
-# All remaining bones (@1-@5, @7, @9-@12, @14, @15, @16-@19, @21-@22, @23):
-#   Routine circuit-entry, feed-delivery, packet-receipt, placement, body-
-#   anchor continuity. No hinge-magnitude. All held-axis. No plausible memory
-#   or feeling anchors in BLIND mode. AP7 default-refuse across. REFUSED: AP7.
+# Bare proto-lines (@2, @5, @7, @11, @12, @14, @17, @18, @19, @22):
+#   None carry memory or feeling fires in the locked graph. AP1 applies
+#   universally. At-rest cold-read of each line — @2 the feed returns the
+#   chandler-corner, @5 the apprentice drops the nailing-rate, @7 the feed
+#   delivers the gap-corridors, @14 taylor reads the bread-price report,
+#   @17 the feed returns wenna-cobb, @22 taylor completes the circuit — none
+#   call for a metaphor from their content. The graph reveals no niche that
+#   at-rest evidence confirms is wanted; filling because there is room is the
+#   dishonest motive (G2 gate). AP7 also applies across: no hinge-magnitude
+#   movement on any held-axis bone in a held-axis chapter (aside from @6
+#   already evaluated above).
+#   REFUSED: AP1 + AP7 (G2-dishonest-motive on any prospective add).
+#
+# R2 ACCEPT-REFUSE RATIONALE:
+#   The R1 zero-entry default is correct discipline confirmed by the full graph.
+#   The three potential anchor points (mem:1+feel:2 at @8; mem:2 at @24;
+#   feel:1 at @20) all carry independent refusal grounds beyond mere AP7:
+#   @8 is occupied by NI:2 (AP3/Q1); @24 is occupied by NI:6 + protected-
+#   pattern; @20 is non-POV + central-event. The chapter's design —
+#   held-axis staging with one quiet capability-move whose figurative register
+#   NI:1@6 already fully occupies — closes every metaphor-eligible window.
+#   Phase 2.5 graph closes the three headline beats (Oswyn-network legibility,
+#   Aemond-foreshadow, Khepri-echo) via NI / memory / vibes / loc-state;
+#   a metaphor at any of these beats would duplicate (AP3) or violate AP7
+#   default-refuse (no hinge-magnitude outside @6, which AP3 also closes).
 #
 # Per-scene cap: moot (zero entries; no cap to apply).
 # Final sparsity: 0/24 = 0%. Within 0-3% target.
 # Cross-facet hardest-cull: no entries to cull.
+# R2 PATTERN-SCAN: No entries; no pattern to scan. Single sentence: the chapter
+# does not pattern toward metaphor at any register — the held-axis discipline
+# holds throughout and the figurative content the chapter needs is already fully
+# carried by NI and memory.

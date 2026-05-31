@@ -2,11 +2,15 @@
 facet: interest-narrator
 episode: b01-c08
 author: taylor-hebert-kl-122ac
-mode: R1-BLIND
+mode: R2-JUDGE (cycle 1)
 target-density: 15-25%
 bones-in-scope: 24
 fires: 6
 density: 25%
+r2-keeps: 6
+r2-deletes: 0
+r2-adds: 0
+inviolables-status: all-keep
 ---
 
 1 @6 the sightlines resolve as a coverage already in place; her own overlay slots in above it, geometric not contested
