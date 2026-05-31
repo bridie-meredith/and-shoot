@@ -3128,3 +3128,98 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0056 | 2026-05-31 | SLOW (user-proxy)
+
+question: |
+  Principal invoked `/and-write b01c06 revise --from-signals` today (2026-05-31). This is the
+  depth pass deferred by DEC-0050. Two prior preconditions from DEC-0050 are (nominally) unmet:
+  (1) PROP-0023 is still open/untriaged; (2) `--from-signals` flag is mechanically wrong-targeting
+  (Phase-6 SIGNALs ≠ cold-read AIRLESS bones). Disposition: P1 (proceed now, interpret as depth-pass
+  intent) or P2 (hold pending PROP-0023 triage, escalate)?
+
+context: |
+  DEC-0048: b01c06 shipped PASS-WITH-DEPTH-PASS-REQUIRED. COMPLETENESS PASS, READABILITY AIRLESS.
+  Memory carries depth_pass_pending: true, note "de-abstract @16-@21; escalation clause: next cold-read
+  still AIRLESS-on-central-event → FAIL/re-decompose."
+  DEC-0050: Deferred depth pass to before book-close. Conditions: PROP-0023 triaged AND correct brief
+  specified (cold-read-signal-driven, targeting @16-@21 apparatus SVOs). Brief specified verbatim in
+  DEC-0050's rationale. PROP-0023 triage explicitly named as precondition.
+  Status today: b01c07 is written and shipped (DEC-0050's "proceed to b01c07" leg done). PROP-0023
+  status: open, triaged_at: null. Principal typed the command explicitly today.
+
+options: |
+  P1: Proceed. Treat explicit invocation as override of deferral. Interpret --from-signals as
+      depth-pass intent. Run authorized depth pass: scene-s03-scoped revise, de-abstract @16-@21,
+      brief driven by cold-read AIRLESS + ABSTRACTION-DOMINANT signal set. Re-cascade /and-facets
+      + /and-stitch. Honor DEC-0048 escalation clause. ~40 dispatches, uncertain outcome.
+  P2: Hold. PROP-0023 untriaged; DEC-0050 named it as precondition; escalate to principal to confirm
+      override or triage PROP-0023 first.
+
+decision: P1 — Proceed. Interpret explicit invocation as override of the DEC-0050 deferral.
+
+basis: |
+  explicit-principal-invocation (strongest signal, overrides prior deferral) + methodology:3d
+  (optionality — the remaining "precondition" is a form-stamp on a proposal whose substantive
+  content is fully specified in DEC-0050; deferring further consumes a dispatch without adding
+  information) + goal:1 (pipeline correctness — depth pass IS the correct authorized repair;
+  running it is not acting on an untriaged proposal, it is executing a scheduled content action)
+
+rationale: |
+  DEC-0050's two preconditions examined in light of today's state:
+
+  PRECONDITION (1): PROP-0023 triaged.
+  PROP-0023 prescribes a modification to /and-facets Phase 4.6's ALIVE verdict criteria for
+  apparatus-dominant chapters — a FUTURE-GATE change. Running the b01c06 depth pass is NOT
+  implementing PROP-0023. The depth pass is a content action on one chapter; PROP-0023 is a
+  process change that would canonize routing for future chapters. These are separable actions.
+  DEC-0050's concern was that "acting on PROP-0023's logic" before triage would be "premature
+  implementation of an un-triaged proposal." That concern was valid when the brief was unspecified.
+  But DEC-0050 itself wrote the brief: "cold-read-signal-driven, targeting @16-@21 apparatus SVOs
+  specifically — ABSTRACTION-DOMINANT + GROUNDING-REQUIRED + Phase 4.6 re-reviewer scene notes."
+  The brief is no longer ad-hoc; it is in the decision record. The remaining "precondition" is
+  purely a form-stamp — triaging PROP-0023 would not change the brief one word. Blocking on it
+  is blocking on a form-stamp.
+  Additionally: the principal's explicit invocation today constitutes implicit authorization of the
+  repair action PROP-0023 would have canonized. The triage question for PROP-0023 (whether to
+  modify the gate for future chapters) can and should proceed in parallel or as a tail step.
+
+  PRECONDITION (2): Correct brief.
+  This IS satisfied. DEC-0050's rationale section contains the complete brief:
+    - Scope: scene s03, bones @16-@21 (apparatus-dominant accounting middle)
+    - Target: de-abstract apparatus-verb SVOs to concrete actor-verb-object forms
+    - Signal set: cold-read AIRLESS findings + ABSTRACTION-DOMINANT SIGNAL from Phase 6 +
+      GROUNDING-REQUIRED entries from grounding-ledger + Phase 4.6 re-reviewer scene notes
+    - Escalation clause: if next cold-read still AIRLESS-on-central-event -> FAIL/re-decompose
+
+  FLAG INTERPRETATION (`--from-signals`):
+  `--from-signals` mechanically reads Phase-6 gate_verdict.signals[], which are the wrong signals
+  for this chapter (moral_legibility floor + s03 stakes-tie, not the apparatus-airless bones).
+  Interpret the flag as DEPTH-PASS INTENT, not literal Phase-6-signal targeting. The depth pass
+  runs as a scene-s03-scoped `/and-write b01c06 revise` with the DEC-0050 brief, NOT as a literal
+  --from-signals pass that would target the wrong bones.
+
+  DEC-0048 ESCALATION CLAUSE: remains active. If the re-stitched chapter cold-reads
+  AIRLESS-on-central-event, route to FAIL/re-decompose rather than another depth pass. The
+  accounting section may be abstract-by-contract; the escalation clause governs that outcome.
+
+trade-off: |
+  P1 vs P2: P2 costs one dispatch for admin to return ESCALATE + one dispatch for the principal
+  to triage PROP-0023 + one dispatch for admin to receive the ruling. Net: ~3 additional dispatches
+  of pure form overhead before the ~40-dispatch re-cascade begins anyway. If the principal had
+  wanted to wait, they would not have typed the command today. The explicit invocation is a
+  stronger signal than the prior deferral, which was made under a "brief unspecified" condition
+  that no longer holds. Expected value of P1 over P2: non-trivial given the overhead cost of P2
+  and the zero-information gain from the PROP-0023 triage on this chapter's brief.
+
+  PROP-0023 TRIAGE NOTE: This decision does NOT constitute a triage of PROP-0023's proposed
+  Phase 4.6 gate modification. The gate change is still open and still needs principal triage.
+  Running the depth pass on b01c06 is an independent content action.
+
+follows: DEC-0050 DEC-0048
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
