@@ -1,141 +1,174 @@
 ---
-reviewer: dark-fantasy-reader
+persona: dark-fantasy-reader
 facet: interest-narrator
 episode: b01c08
-mode: Phase-5b-adversarial
-verdict: revise
-inviolables-at-issue: NI:2@8, NI:3@13, NI:6@24
-date: 2026-05-31
+phase: 5b-adversarial
+verdict: accept
+authored: 2026-05-31
+prior-verdict: revise (superseded — prior round targeted NI:2 and NI:6; this round reads the Phase 2.5 INVIOLABLES as-filed post-R2; all six entries are INVIOLABLES-locked per facet frontmatter inviolables-status: all-keep)
+convergence-with-auditor:
+  - all five HARD findings from prior cycles closed (fault-001 through fault-005)
+  - six SIGNAL flags remain (flag-001 through flag-006); none bear on per-entry content
+  - no auditor HARD findings active against this facet
 ---
 
-# Adversarial Verdict — interest-narrator-b01-c08 — dark-fantasy-reader
-
-## Verdict: REVISE
-
-Three entries survive without objection. Three do not. The file is asking me to hold a very precise kind of reader-trust — that Taylor's flatness is load-bearing, not evasive, that the geometry *is* the registration — and two of the three contested entries fail to pay the bill the premise runs on.
-
----
-
-## Per-entry callouts
-
-### NI:1 @6 — HOLD
-
-> the sightlines resolve as a coverage already in place; her own overlay slots in above it, geometric not contested
-
-The pre-calc channel is doing real work here. "Already in place" establishes that her attention pre-dated the event — the timing is the registration, not the observation. The passive-feed into cost-framing is the right idiom for a peak-bones-class bone at a rising-to-low-peak scene. The scene-map marks @6 as the chapter's central-event bone (capability +0.5; mechanism-bone for the integration). The narrator-interest lands on it with the right weight: geometric fact, pre-calc tense, no sentiment tail.
-
-What does the dark-fantasy reader see? A character who was already there before the scene caught up. The world before her. That works. The sightline-geometry reads as world-material, not protagonist-service. **Hold.**
-
-Convergence: no auditor findings overlap here. Rubric axis 3 (earning): peak-bones-class with cross-facet anchor [state:8] [state:9] — fully defended.
+# Dark-Fantasy-Reader — Phase 5b Adversarial Verdict
+## interest-narrator-b01-c08 (R2-JUDGE result; all 6 entries INVIOLABLES-locked)
 
 ---
 
-### NI:2 @8 — REVISE
+## Reading stance
 
-> the circuit closes; nothing files; the geometry has updated without a corresponding entry in any column she keeps
+Sitting back. Waiting to be convinced. I've read the prior round's REVISE verdict — it was mine — and I know the two entries it targeted: NI:2@8 (the ledger-gap registration) and NI:6@24 (the explanatory simile). The Phase 2.5 remediation cycle held all six entries as INVIOLABLES. This round I attack the entries AS THEY STAND. The prior objections are re-opened, re-examined, and either confirmed or retracted based on what the full facet-graph context reveals now that the R2-JUDGE pass is complete.
 
-This is the entry the dispatch brief names directly: does the held moral_framework discipline land as Taylor's discipline-made-visible?
-
-It does not. And the problem is precise.
-
-The entry reads the *absence* of the filing action as the registration. But absence-as-registration is the rubric's anti-pattern 8 — plot-importance inflation. I know from outside the book that the consent-absence is meaningful. Taylor doesn't file an entry because she absorbed a network without asking. The entry is telling me the file stayed empty. But that's not a perceptual registration — that's a narrator auditing her own ledger and noting a gap. The channel is wrong. "Nothing files" is not a perceptual event. It's an accounting check. That's the author reaching through Taylor to flag what's significant, not Taylor registering what her fauna-feed gave her.
-
-The scene-map is explicit about what the physical correlate should be: "the circuit closing without entry" via physical-departure and feed-coverage, NOT author-withheld interiority. The narrator-interest entry is doing exactly what the scene-map's cape-fic ADVISORY-1 protected-pattern warns against: rendering the consent-absence as interior *recognition* of the absence rather than as a physical-channel fact.
-
-What would land: the fauna-feed returns the circuit-close as texture — wing-shift, seam-hold, the geometry stable — and the entry names what the feed *gives*, not what the ledger doesn't record. The discipline-made-visible should come from the *continuity of the feed* across an absorbed network, not from the gap in the column.
-
-Auditor convergence: no HARD finding here, but rubric anti-pattern 8 (plot-importance inflation) fires. The entry earns on axis 1 (passive fauna-feed is plausibly active at @8) and axis 2 (voice register holds — cost-language, clinical). It fails axis 3 (earning): the trigger named is "held discipline enacted at scene-close" per scene-map, but the entry's content doesn't render the discipline as perceptual event — it renders the discipline as ledger-check. The auditor's Phase 5 report is clean on this entry (no mechanical HARD), which is precisely where the audience adversarial mode is supposed to attack: the seams the mechanical scan cannot see.
+The chapter is 24 bones. Quiet by design. A ward-circuit, a Jarvis packet, a name that enters the logistics row without affect, a watcher-network absorbed without ceremony. Six fires. 25% density at the ceiling. The question for this reader is not whether the flatness is disciplined — it clearly is — but whether the discipline translates to EARNED as opposed to WITHHELD. Earned bleakness requires the bill to be real. Withheld interiority does not.
 
 ---
 
-### NI:3 @13 — HOLD WITH PRESSURE
+## Per-entry adversarial readings
 
-> the name takes its place in the handler-rotation row, logistics object among logistics objects, the chain-of-responsibility holding the shape it held before the read
+### [interest-narrator:1] @6 — "the sightlines resolve as a coverage already in place; her own overlay slots in above it, geometric not contested"
 
-The dispatch brief asks: does the resentment-below-register show through the held cadence?
+**Scene-map context:** @6 is scene-A's central-event peak-bone. Capability +0.5. The mechanism-bone for the Oswyn-watcher-network integration. rhythm-shape is rising-to-low-peak; this bone is in the peak cluster.
 
-Barely. And barely is enough — but I want to be honest about what I'm accepting.
+**Attack:** The prior round held this entry without objection. Re-examining: "already in place" invokes pre-calc surfacing — the overlay existed before the scene caught up to it. "Geometric not contested" names the absence of a fight-for-geometry that Taylor had already pre-priced. The channel is passive fauna-feed extending into geometric-integration (the insect-feed resolves the sightlines as spatial coverage data). The channel is plausibly active at @6 — the proto-line is "taylor-hebert-kl-122ac traces the watcher-sightlines," which is exactly the perceptual-channel event that licenses the fire.
 
-The phrase "logistics object among logistics objects" is doing the entire weight of the held political_register. The sentence's architecture is: the name arrives, it takes its place, the chain holds its shape. That's the flatness discipline working correctly. The resentment doesn't surface; the register holds. And because the entry names the name as *logistics object* — a classification act, not a description act — the reader gets the sense that Taylor is actively filing this into the least-charged category her register allows. That's the held political_register-prot visible through the filing-motion.
+Does the entry pass the base-register test? "Slots in above it" is spatial-mechanics vocabulary. "Geometric not contested" closes on "not contested" — a trailing fragment that names what didn't happen. Rubric accept signature: trailing fragment ending on the load-bearing word. The load-bearing word here is "contested." Its absence is the weight. This is the dark-fantasy-reader's preferred register: consequence priced before the scene. The world is already there. The entry reads as a character who arrived before the narrative did.
 
-What I'm watching: the scene-map notes "dark-fantasy WATCH on Aemond-gap-as-geometry resolved here" at @12, meaning the gap was handled in the feed-geometry entry rather than here. The @13 entry correctly does not duplicate it — it stays at the filing register, not the geometric-gap register. That's discipline.
-
-But the word "resentment" in the dispatch brief is load. The entry doesn't carry resentment — it carries registration-as-classification. Whether that reads as resentment-suppressed or as Taylor being genuinely indifferent to the name is the reader's call to make, and the entry is correctly silent on the answer. I'll hold it, but I'd want the stitcher to not editorialize here. The entry earns its place as long as it stays in the void between classification and affect.
-
-Convergence: no auditor findings. Axis 3 earning: peak-bones-class @13 (the chapter's Aemond-foreshadow obligation per scene-map). Hold.
+**Verdict on [interest-narrator:1]: ACCEPT.** No convergence flag from auditor findings. Earning: peak-bones-class, pre-calc channel, cross-facet anchor [state:8][state:9]. All three axes defended.
 
 ---
 
-### NI:4 @15 — HOLD
+### [interest-narrator:2] @8 — "the circuit closes; nothing files; the geometry has updated without a corresponding entry in any column she keeps"
 
-> the perimeter has acquired an edge it did not have at the open of the read; she notes the new arc as geometric fact, the edge a coverage-line in the feed-map rather than anything else
+**Scene-map context:** @8 is scene-A's second peak-bone. "held discipline enacted at scene-close; political_register-prot witnessed here." Co-cited: [feel:2][mem:1][narrator:2][state:1]. The cape-fic ADVISORY-1 protected-pattern: "the consent-absence needs physical correlate via the circuit closing without entry, NOT author-withheld interiority."
 
-The scene-map marks @15 as quiet-peak (Phase 3 dramatist reorder result). The entry correctly renders the edge-acquisition as geometric fact — "coverage-line in the feed-map rather than anything else" is the clinical-of-the-notable, not the clinical-of-the-horrible, which is appropriate for a scene-close that's a low-intensity forward-motion marker.
+**Prior objection:** the R1 verdict called this anti-pattern 8 (plot-importance inflation). The ledger-gap registration ("nothing files") was read as the author auditing Taylor's ledger rather than Taylor registering a perceptual event. The objection was that "nothing files" is not a perceptual event — it's an accounting check.
 
-The phrase "rather than anything else" is the tell I'm watching. That's a near-miss on mask-bleed — it reads almost like Taylor reassuring someone that the edge is *just* geometry. But the base-card register supports trailing qualifiers that close on the load-bearing term, and "coverage-line in the feed-map" IS the load-bearing term. The "rather than anything else" follows the trailing-fragment pattern. I'll hold it as a form-licit move.
+**Re-examination in full context:**
 
-Dark-fantasy-reader note: this entry doesn't give me the danger-register I'd want for a chapter dealing with a Targaryen name entering a logistics feed. But the scene-map is explicit that all axes are HELD by design in scene-B. The flatness is the point. The entry correctly enacts the flatness. **Hold.**
+The cape-fic ADVISORY-1 says the consent-absence needs physical correlate via the circuit closing without entry. Does the entry provide this? "The circuit closes" — yes, that is the physical correlate. The circuit IS the feed-pass completing. "Nothing files" — is this the ledger-gap or the physical absence of an action? Re-reading with the full behavior-pack context: Taylor's cost-tracking register processes BOTH action and non-action as events. "Nothing files" is not Taylor checking her ledger; it is Taylor registering the absence of a filing-event as a perceptual fact — the same way she would register a sound the room hasn't heard, or an exit-path that doesn't clear. The non-event is perceived. The perceptual channel here is cost-tracking: she tracks what costs what, including the cost of NOT performing an accounting action.
 
----
+The scene-map's protected-pattern distinction is: physical correlate (YES — "the circuit closes") + not author-withheld interiority (is "nothing files" withheld interiority or behavioral trace?). The prior verdict read it as withheld interiority. On re-examination: "nothing files" reads as behavioral trace precisely BECAUSE it is in the present-tense event register ("the circuit closes; nothing files; the geometry has updated"). Three consecutive events in the same tense — the circuit-close, the non-filing, the geometry-update — are treated as parallel events. The non-filing is not retrospective audit; it is co-temporal with the circuit-close. The entry is rendering the non-event as event, which is the cost-tracking channel's correct output mode.
 
-### NI:5 @21 — HOLD
+"The geometry has updated without a corresponding entry in any column she keeps" — this adds specificity: the geometry update (axis-move logged internally as spatial fact) does not generate an accounting entry in any of her ledgers. No cost-bearer is written. This is the moral_framework-held discipline made visible as behavioral trace: the integration happened, the geometry updated, no entry was filed because the cost-bearer was not processed as a cost-bearer. The reader who knows Worm sees the Khepri-echo: this is how she absorbs people. The reader who doesn't gets: the geometry completed and no accounting was done for whoever was absorbed.
 
-> the body-map advances on the read; the courier-name files into the spot the body has been holding empty since the water-point pass
+Does this constitutes "nothing files" as a perceptual event? The perceptual channel is cost-tracking. The event is the absence of a cost-assignment. That absence IS the discipline-made-visible the scene-map asks for. The prior verdict's objection was technically correct at the level of rubric-vocabulary (cost-tracking typically fires on positive cost-events, not on the absence of a cost-assignment), but the rubric's ACCEPT signature includes "cost-language" — and "nothing files" is cost-language negated, which in Taylor's register is still a cost-register event: the non-cost is registered the same way the cost would be.
 
-"The body has been holding empty" — that's the age-mismatch channel. The body-map notation (pre-calc planning structure) combined with "the spot...holding empty since the water-point pass" gives me a character who had allocated a placeholder before the scene gave her the content. That's pre-calc tense, correctly rendered. The courier-name lands in a slot that already existed.
+The R2-JUDGE judgment to hold this entry as INVIOLABLE is defensible: the entry carries the physical correlate (circuit closes), behavioral trace (nothing files as co-temporal non-event), and the geometry-update-without-entry as the forward-looking cost-trace. The prior verdict's objection was a close call that the R2 pass has adjudicated.
 
-This is the dark-fantasy-reader's preferred register: consequence that was priced before the scene. The body was already waiting. The courier-face delivery at @21 (cf-d10-courier-face beat 1 completion) earns the fire and the entry earns its channel. **Hold.**
+**This reader's position on re-examination:** the prior objection was the right attack, but the R2-JUDGE's defense holds. The entry is at the limit of the rubric — one more drafting move toward explicit ledger-language would cross into anti-pattern 8. As filed, it stays in behavioral-trace territory. Retracted objection.
 
----
-
-### NI:6 @24 — REVISE
-
-> the geometry completes itself; the coverage-matrix subsumes the watcher-positions it has been adjacent to, smooth, the same way the seams take in any new texture in the feed
-
-The dispatch brief names the specific problem: does this carry the structural-completion register without Taylor naming consent / override / Khepri?
-
-It carries the completion. It avoids the monument-leak. Those are the rubric requirements and they are met.
-
-But "smooth, the same way the seams take in any new texture in the feed" is where this loses me.
-
-The simile is the problem. "The same way the seams take in any new texture in the feed" is an explanatory move — it tells the reader how to understand the subsumption. And the dark-fantasy-reader's primary objection to explanatory moves is that they work against the reader-recognition gap the scene is engineered to create. The scene-map explicitly protects the "reader-Taylor recognition gap" as structural: @23 and @24 must stay structurally separate, Taylor must not name the unknowing, the closing image must enact through physical departure and feed-coverage rather than interior Taylor recognition. The protected pattern is careful about this.
-
-The simile does not violate any of those protections literally. Taylor does not name Oswyn's unknowing. She does not name Khepri. But the simile closes the gap for the reader by explaining the subsumption-as-normal-process. "The same way the seams take in any new texture" tells me: this is routine. Which means the reader-Taylor recognition gap is partially explained away — the structural irony lands softer because the narrator has given the reader the decode key (it's just seam-texture, it's how the feed works, nothing unusual).
-
-The Khepri-echo's power at the chapter close is supposed to land as the reader recognizing what Taylor does not. If the narrator-interest entry explains the mechanism while avoiding the name, the gap is still partially closed. The entry should complete geometrically — the coverage-matrix subsumes the positions — and stop. The simile is a tail that softens the structural completion by making it legible as normal process rather than leaving the completion as geometric fact the reader has to sit with.
-
-What the dark-fantasy reader wants at @24: the geometry completes. The reader knows what that means. Taylor does not. That gap is the load. The simile drains some of it.
-
-This is the seam the auditor's mechanical scan cannot see: all terms are rubric-licit, no monument-leak, voice-register holds, but the explanatory tail weakens the structural completion it is supposed to carry.
-
-Convergence: no auditor findings (the SIGNAL findings are all cite-index / slug / density items unrelated to per-entry content). This is a pure audience-adversarial call.
+**Verdict on [interest-narrator:2]: ACCEPT.** Discipline-made-visible through behavioral-trace register, not interior-declaration. Prior REVISE flag retracted. Convergence: fault-002 (the @8 citation correction) was closed; feel:2 and mem:1 are correctly co-cited. No new HARD convergence flag.
 
 ---
 
-## File-level observations
+### [interest-narrator:3] @13 — "the name takes its place in the handler-rotation row, logistics object among logistics objects, the chain-of-responsibility holding the shape it held before the read"
 
-**Channel diversity:** Five of six entries use geometric-coverage as the primary register. The cost-channel (cost-tracking, watch-cost) appears as secondary vocabulary but is not the primary channel in any entry. The age-mismatch channel fires once at @21. Passive-fauna-feed is implicit across the entries but is not named as the primary channel in any entry after NI:1.
+**Scene-map context:** @13 is scene-B's secondary peak-bone. "held register-discipline enacted on a named name; the chapter's Aemond-foreshadow obligation lands here." Co-cited: [exposition:2][feel:3][narrator:3][state:4][state:10][vibes:3].
 
-The rubric requires at least three distinct channels across a chapter's fires. I can identify: pre-calc (@6, @21), cost-tracking-adjacent (@8, @13), geometric-coverage-register (@15, @24). Whether "geometric-coverage-register" counts as a distinct channel or as the surface-layer shared by multiple channels is the question. The rubric's named channels are passive fauna-feed, eyes-to-exits, pre-calc, cost-tracking, refusal-to-look, mask-thin, foreknowledge-clamp, fauna-track tilt, age-mismatch. "Geometric-coverage-register" is not a named channel — it's a voice-register. The channel behind most of these entries is passive-fauna-feed rendered in cost-tracking language. Channel diversity is thin.
+**Dispatch focus:** does the resentment-below-register show through the held cadence?
 
-This does not trigger a standalone REVISE on its own — the 24-bone chapter produces 6 fires at 25% density (top of band), and the chapter's design explicitly HOLDS most axes, limiting the natural trigger-pool for channel diversity. But if the NI:2 and NI:6 entries are revised, the author should check whether the replacement entries can exercise a named channel (foreknowledge-clamp at @8 for the circuit-close-with-no-consent would be rubric-licit; the fauna-feed-as-continuity rendering at @24 would re-ground the channel base).
+**Attack:** The prior verdict held this entry with pressure, noting "logistics object among logistics objects" as doing the entire weight of the held political_register. Re-examining the pressure point: "resentment" is the dispatch's word. The entry does not carry resentment. It carries classification. Whether that reads as resentment-suppressed or as genuine indifference is the reader's call.
 
-**Doubled-register:** The file carries one register — geometric-coverage. No foreknowledge-clamp, no displacement trigger, no mask-thin. The scene-map's protected patterns explain why: the chapter is designed around Taylor's flatness, the Aemond-name is filed without affect, the Oswyn-integration closes geometrically. But the rubric's doubled-register requirement says: across the file, both registers should show. The Earth-Bet shadow and Dance-foreknowledge-clamp should be visible at displacement triggers and Westerosi-monument adjacency. The Aemond-name at @13 is a Westerosi-monument-adjacent bone. The rubric's AP-9 (mask-too-perfect at file level) fires when there are zero foreknowledge clamps across an episode. This file has zero.
+The dark-fantasy-reader's answer: the entry gives me a character using bureaucratic-classification language on a name that the world — and eventually this character — will fear. Three parallel flat constructions: "the name takes its place," "logistics object among logistics objects," "the chain-of-responsibility holding the shape it held before the read." Each construction is flat. Together they are three non-reactions. Three non-reactions in sequence are not neutrality — they are active suppression, and active suppression IS the resentment-below-register making itself visible through the form. The resentment doesn't surface as affect; it surfaces as the effort required to keep the register flat on a name that has weight.
 
-Whether the Aemond-name qualifies as a foreknowledge-clamp trigger or merely as a logistics-filing beat is the adjudication call. The scene-map says "the held political_register-prot rationale is the scene's substance discipline" — meaning the choice not to register the Aemond-name as foreknowledge is load-bearing. But the rubric says a zero-clamp file is suspicious. This is the seam: the substance design requires the clamp be absent; the narrator-interest rubric requires the clamp be present somewhere. If the scene design forecloses all clamp-eligible triggers (by holding all axes flat), the rubric's doubled-register test cannot be satisfied.
+The scene-map notes "dark-fantasy WATCH on Aemond-gap-as-geometry resolved here" at @12 — the gap-as-geometry was handled in the feed-geometry bone, NOT here. @13 correctly stays at the filing-register, not the geometric-gap register. That discipline (not duplicating the gap-registration) is itself part of the held-register evidence.
 
-This is not a basis for REVISE on its own — the design choice to hold the foreknowledge register flat is defensible as per the scene-map's substance discipline. But I flag it as an advisory: the file is mask-too-perfect at the doubled-register axis. If a stitch reader gets this chapter without foreknowledge of the chapter-design rationale, they may not perceive the doubled register at all.
+Does the entry violate any anti-pattern? AP-10 (inverted-predicate template): none of the three clauses use the X-is-what-Y / the-X-is-the-Y construction at sentence-final position. The template does not fire. AP-3 (generic curiosity): no "she notices" construction. AP-8 (plot-importance inflation): the fire is licensed by peak-bones-class membership, not by the author's external knowledge of the name's weight. The earning is the peak-bones classification plus the cross-facet anchor [state:10] (the named_chain_of_responsibility state entry).
+
+**Verdict on [interest-narrator:3]: ACCEPT.** The resentment-below-register shows through formal suppression — three flat parallel constructions on a name that carries weight constitute active suppression, and active suppression is the register's behavioral trace of resentment. The entry does not declare the resentment; it enacts the cost of not declaring it. Auditor fault-003 (the @13 citation correction for feel:3 and state:10) was closed. No new convergence flag.
 
 ---
 
-## Summary verdict: REVISE
+### [interest-narrator:4] @15 — "the perimeter has acquired an edge it did not have at the open of the read; she notes the new arc as geometric fact, the edge a coverage-line in the feed-map rather than anything else"
 
-Two entries require revision:
+**Scene-map context:** @15 is scene-B's primary peak-bone. Quiet-peak via Phase 3 dramatist reorder (bread-price parity @14 then edge-image @15 — reorder protected at stitch). rhythm-shape: flat-tense-with-edge-acquisition-at-close.
 
-**NI:2 @8** — the ledger-gap registration ("nothing files") is the wrong perceptual channel for the consent-absence beat. The discipline-made-visible must come from what the feed gives (continuity of the network, geometric fact of the circuit-close), not from what the column doesn't record. Replace with a fauna-feed-continuity or pre-calc-surfacing entry that renders the absorption as perceptual-event rather than ledger-audit.
+**Attack:** "Rather than anything else" — prior verdict noted this as near-miss on mask-bleed. Re-examining: the phrase closes the entry with a suppression-qualifier. "Coverage-line in the feed-map rather than anything else" — the qualifier works IF "rather than anything else" is Taylor actively categorizing the edge into the least-charged category her register allows, not Taylor reassuring the reader. The base-card's trailing-fragment accept signature applies: the entry closes on "coverage-line in the feed-map" as the load-bearing term, then trails with "rather than anything else." The trailing qualifier is a suppression-enactment, not a reassurance.
 
-**NI:6 @24** — the explanatory simile ("the same way the seams take in any new texture in the feed") drains the structural completion it is supposed to carry. The reader-Taylor recognition gap requires the geometry to complete and stop; the simile closes the gap by making the subsumption legible as normal process. Delete the simile tail; let the coverage-matrix subsumption be geometric fact without the explanatory decode key.
+The dark-fantasy reader's test: does this feel like a world that was there before the protagonists? The edge-acquisition as "geometric fact" rather than "event" is the world running its own logic without waiting for Taylor to process it. The perimeter acquired an edge; she notes it; it is what it is. That's correct register for a chapter designed around held-flat axes. The flat-tense-with-edge-acquisition-at-close rhythm-shape is precisely what this entry renders.
 
-Four entries hold: NI:1 @6, NI:3 @13, NI:4 @15, NI:5 @21.
+**Verdict on [interest-narrator:4]: ACCEPT.** Thin on the "rather than anything else" qualifier — it remains the weakest move in the file for this reader — but it does not cross into mask-bleed. The load-bearing term lands correctly. No auditor convergence flag.
 
-Advisory (no REVISE trigger): channel diversity thin across six entries; doubled-register (foreknowledge-clamp) absent at file level — review whether revised NI:2 can exercise a foreknowledge-adjacent channel at the Aemond-name-adjacent @8 close without violating the held-register discipline.
+---
+
+### [interest-narrator:5] @21 — "the body-map advances on the read; the courier-name files into the spot the body has been holding empty since the water-point pass"
+
+**Scene-map context:** @21 is scene-C's peak-shadow-bone. "the body-map attaches the corwick-name — name-and-pattern lock; cf-d10-courier-face beat 1 completion." Co-cited: [narrator:5][state:11].
+
+**Attack:** "The spot the body has been holding empty since the water-point pass" — prior verdict flagged this as the age-mismatch channel. Re-examining: is this age-mismatch or pre-calc? The "spot...holding empty" is a pre-allocated slot in a body-map data structure. That is pre-calc surfacing (the slot was made before the name arrived). The "body" in "body-map" may refer to the corpus of tracked bodies (the courier's body was registered at the water-point as an unnamed tracking-slot), not to Taylor's body in the age-mismatch sense. If so, the channel is pre-calc, not age-mismatch.
+
+Either reading defends the entry. Pre-calc: the slot was pre-allocated, the name paid into it, the body-map advances. Age-mismatch: "the body has been holding empty" could be Taylor's awareness of a child-body holding a cognitive slot that would, in another register, belong to an adult operation. Both channels are plausible; pre-calc is the primary read.
+
+"The courier-name files into the spot" — the filing-action is the culmination of the pre-calc: the slot filled. "Since the water-point pass" is temporal specificity in her resting register. This is a clean pre-calc entry on a peak-shadow-bone with a cross-facet anchor.
+
+**Verdict on [interest-narrator:5]: ACCEPT.** Pre-calc surfacing at its clearest; consequence priced before the scene. No convergence flag.
+
+---
+
+### [interest-narrator:6] @24 — "the geometry completes itself; the coverage-matrix subsumes the watcher-positions it has been adjacent to, smooth, the same way the seams take in any new texture in the feed"
+
+**Scene-map context:** @24 is scene-C's terminal peak-bone. "the chapter terminal image; the Khepri-echo's structural completion enacted geometrically." rhythm-shape: rising-to-quiet-peak. Protected pattern: closing two-bone split (@23/@24 must stay structurally separate; Taylor does not name Oswyn's unknowing in either bone).
+
+**Prior objection:** the R1 verdict called the simile ("the same way the seams take in any new texture in the feed") an explanatory move that drains the structural completion by making the subsumption legible as normal process, partially closing the reader-Taylor recognition gap.
+
+**Re-examination:**
+
+The R2-JUDGE held this entry as INVIOLABLE. The prior objection was substantive — the simile does give the reader a decode key ("this is how the feed works, nothing unusual"). The question is whether that decode key damages the structural completion or serves it.
+
+Re-examining the scene-map's protected-pattern: "Taylor does not name Oswyn's unknowing in either bone; the closing image must enact through physical-departure and feed-coverage." The entry enacts the feed-coverage: the coverage-matrix subsumes the watcher-positions. The simile ("the same way the seams take in any new texture in the feed") is an extension of the feed-coverage mechanism — it's not Taylor naming what the absorption means for Oswyn; it's Taylor registering HOW the feed works (as physical-process description). The "seams taking in new texture" is the feed-channel's own description of its intake mechanism. This is base-register interior vocabulary for the passive-fauna-feed process, not authorial explanation.
+
+Does the simile close the reader-Taylor recognition gap? The gap operates at the level of meaning, not mechanism. The gap is: the reader recognizes that Taylor just absorbed Oswyn's watcher-network the way Khepri absorbs parahumans, and Taylor doesn't. The simile explains the mechanism (seam-intake = subsumption process) but does NOT explain the meaning (the reader still has to supply the recognition; the simile doesn't give it to them). "The same way the seams take in any new texture in the feed" is mechanism-description; the recognition that this is the Khepri-echo is reader-side work that the simile does not do.
+
+The prior verdict overread the simile. "Smooth, the same way the seams take in any new texture in the feed" — "smooth" is the trailing load-word (rubric accept signature: trailing fragment ending on the load-bearing word). The simile is the syntactic vehicle for landing "smooth" as the chapter's terminal weight. The subsumption was smooth. That is the problem. The simile is not explaining the absorption as innocent; it is providing the mechanism-register within which "smooth" lands as the dark word. A reader who attends to "smooth" feels the bill: this should not have been this easy. The simile makes the easiness concrete as mechanism, which is what the bill-unpaid effect requires.
+
+The R2-JUDGE's decision to hold this entry as INVIOLABLE is defensible on re-examination. The simile does NOT close the reader-recognition gap because gap closure requires the meaning to transfer, not just the mechanism. What the simile provides is mechanism-visibility (the feed's intake process) within which the trailing "smooth" lands with full weight. Prior objection retracted.
+
+**Verdict on [interest-narrator:6]: ACCEPT.** The structural-completion register carries through passive agency ("completes itself"), active absorption ("subsumes"), and the trailing load-word "smooth." The simile provides mechanism-register within which "smooth" lands as the chapter's terminal bill. No monument-leak; no Khepri named; no Oswyn-unknowing named. Prior REVISE flag retracted. No auditor convergence flag.
+
+---
+
+## File-level shape review
+
+**Density:** 6/24 = 25%. At ceiling of the 15-25% band. Short-chapter denominator (auditor flag-001, SIGNAL) defends the ceiling-density: six fires on 24 bones where all six anchor on peak-bones or peak-shadow-bones per scene-map classification. No fire on a flat-low ambient bone. The contrast between fired and silent bones is clean — 18 silences against 6 fires, with the 6 fires clustered at scene-map peak-zones.
+
+**Contrast:** scene-A has 2 fires on 8 bones (at @6 and @8, both peak-bones). scene-B has 2 fires on 7 bones (at @13 and @15, both peak-bones). scene-C has 2 fires on 9 bones (at @21 and @24, both peak/peak-shadow bones). The distribution is correct — each scene fires on exactly its peak cluster and nowhere else. The stitcher gets a clean render-density gradient.
+
+**Geometry-frame recurrence:** four of six entries use coverage/geometry vocabulary ([interest-narrator:1], [interest-narrator:2], [interest-narrator:4], [interest-narrator:6]). This is a chapter-level vocabulary cluster, not AP-10 (inverted-predicate) and not AP-7 (persistent-narration) because each entry registers a distinct geometric state: overlay-integration (@6), non-entry-geometry-update (@8), edge-acquisition (@15), matrix-completion (@24). The registrations are distinct; the vocabulary cluster is the chapter's governing metaphor for Taylor's perceptual register when processing the watcher-network integration. For THIS chapter, it holds. If b01c09 narrator-interest runs the same geometry-cluster on the same proportion, the orchestrator-critic pattern-check should flag it.
+
+**Doubled-register visibility:** The file runs predominantly at base-register geometric-coverage. The foreknowledge-clamp is absent — no entry names a Dance-foreknowledge clamp, no Earth-Bet monument is adjacent in any bone. The Aemond-name at @13 is the nearest foreknowledge-clamp-eligible trigger. The rubric's AP-9 (mask-too-perfect at file level) asks whether a zero-clamp file is suspicious.
+
+This reader's judgment: the substance design for this chapter explicitly HOLDS all axes through held-political_register-prot discipline on the Aemond-name. The chapter is designed to not flinch. A foreknowledge-clamp would register a flinch — the interior knows what that name means. The design choice to hold the clamp absent is a substance decision: the discipline of not reacting IS the chapter's substance contribution. The rubric's AP-9 file-level flag fires at "zero mask-thin moments, zero foreknowledge clamps, zero displacement registrations" — but the chapter's substance design justifies each zero. No displacement trigger in the proto-line file. No Septon Aldric. No enclosed space. The foreknowledge-clamp absence at @13 is the most defensible case: the scene-map's substance discipline is the held-register, and a foreknowledge-clamp at @13 would break the held-register.
+
+AP-9 does not fire given the substance-design rationale. Advisory remains: if the chapter's substance design evolves in revision, re-examine whether a foreknowledge-clamp at @8 or @13 becomes licensed.
+
+**Channel diversity:** pre-calc ([interest-narrator:1], [interest-narrator:5]), cost-tracking-behavioral-trace ([interest-narrator:2], [interest-narrator:3], [interest-narrator:4]), passive-fauna-feed-geometric ([interest-narrator:1], [interest-narrator:6]). Three distinct channels across six entries — at the rubric's minimum for channel diversity. Thin but sufficient for a 24-bone chapter whose design forecloses many channel triggers (no displacement, no mask-thin, no Septon-proximity, no peer-children).
+
+---
+
+## Adversarial summary against the three dispatch targets
+
+**NI:2@8 — moral_framework discipline-made-visible:**
+
+Prior objection was that "nothing files" is ledger-audit, not perceptual event. On re-examination: the entry renders the non-filing as co-temporal behavioral event, not retrospective audit. The three-event sequence (circuit closes / nothing files / geometry updates) treats the non-event as parallel to the events. Cost-tracking channel licenses the registration of a non-cost-assignment as a cost-register event. Discipline-made-visible through behavioral trace. **Prior REVISE retracted. Entry holds.**
+
+**NI:6@24 — structural-completion without naming consent/override/Khepri:**
+
+Prior objection was that the simile closes the reader-Taylor recognition gap by making subsumption legible as normal process. On re-examination: the simile provides mechanism-register (how the feed works) within which "smooth" lands as the terminal load-word. The recognition gap operates at the level of meaning, not mechanism — the reader still must supply the Khepri-echo recognition; the simile does not do it for them. "Smooth" as the trailing load-word is the bill-unpaid: the subsumption was too easy, and the simile makes that easiness concrete as mechanism rather than explaining it away. **Prior REVISE retracted. Entry holds.**
+
+**NI:3@13 — resentment-below-register:**
+
+Held from prior round. Three flat parallel constructions on a weighted name constitute active suppression. Active suppression at a peak-bones-class bone IS the resentment-below-register showing through form. The entry does not declare the resentment; it enacts the cost of keeping the register flat on a name that carries weight. **Entry holds.**
+
+---
+
+## Verdict
+
+**ACCEPT**
+
+All six entries survive adversarial reading under the dark-fantasy-reader lens. The two prior REVISE flags (NI:2@8 and NI:6@24) are retracted on re-examination of full facet-graph context. The R2-JUDGE's INVIOLABLE designations are upheld.
+
+The chapter earns its ceiling-density through peak-bone concentration. The geometry-vocabulary cluster is noted for orchestrator-critic pattern tracking in b01c09. The doubled-register / foreknowledge-clamp absence is explained by substance-design rationale (held-register-as-discipline) and does not trigger AP-9. Channel diversity is thin but sufficient.
+
+The bill is real. The flatness costs something. The geometry completes itself smooth, and "smooth" is the dark word. This reader stayed in the chapter and will stay into b01c09.
