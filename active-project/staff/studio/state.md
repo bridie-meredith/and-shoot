@@ -1,8 +1,8 @@
 # studio state
 
-episode: b01c06
+episode: b01c08
 last_updated: 2026-05-31
-action: sensory R1 authoring — /and-facets b01-c06 Phase 1
+action: location-state R1 blind authoring — /and-facets b01-c08 Phase 1
 
 ## Current set
 location: oc-stitch-house-lane (south-court working position)

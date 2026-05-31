@@ -1,35 +1,36 @@
-# proto-lines (state-updates citations) — b01c06 — taylor-hebert-kl-122ac
-# verbatim bones body; [state:<id>] appended on decorated bones only. citations only — no prose authored.
+# bones — b01c08
 
-episode: b01c06
+episode: b01c08
 narrator: taylor-hebert-kl-122ac
-aggregate_range: 1-26
+goal: Plant the courier face, activate the Aemond-adjacent pressure at low intensity, and stage the Oswyn-integration echo so that later Khepri-repetition accusations have been building in the reader's view long before Taylor's.
+cast: taylor-hebert-kl-122ac, oswyn-mudway-flea-bottom-elder, wenna-cobb, corwick
+locations: the-hook-ward, the-lane-junction-rushwick-margin, the-chandler-corner, the-water-point, the-lane-mouth, the-rushwick, the-feed-station
+prior_episode: b01c07
+aggregate_range: 1-24
 
-1 the handcart blocks the lane-mouth
-2 the crowd presses the junction
-3 wren-stitch-maker-flea-bottom-ward crosses the crowd
-4 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac
-5 taylor-hebert-kl-122ac enters the south court [state:1]
-6 taylor-hebert-kl-122ac opens the coverage-notes entry
-7 taylor-hebert-kl-122ac marks the contact-role field
-8 taylor-hebert-kl-122ac blanks the contact-source field [state:2]
-9 taylor-hebert-kl-122ac closes the coverage-notes entry
+1 taylor-hebert-kl-122ac enters the lane-junction-rushwick-margin
+2 the insect-feed returns the chandler-corner
+3 the watcher-boy faces the water-point
+4 the basket-woman faces the lane-mouth
+5 the apprentice drops the nailing-rate
+6 taylor-hebert-kl-122ac traces the watcher-sightlines [state:1] [state:2]
+7 the insect-feed delivers the gap-corridors
+8 the circuit closes the feed-pass
 
-10 the jarvis-channel message arrives
-11 taylor-hebert-kl-122ac opens the jarvis-channel message
-12 taylor-hebert-kl-122ac reopens the jarvis-channel message
-13 taylor-hebert-kl-122ac pulls the coverage-memory record
-14 taylor-hebert-kl-122ac fills the jarvis-channel form
-15 taylor-hebert-kl-122ac lowers the jarvis-channel form
+9 the jarvis-packet arrives at the feed-station
+10 taylor-hebert-kl-122ac breaks the jarvis-seal
+11 the handler-rotation names the chain-of-responsibility
+12 the feed-geometry meets the coverage-gap
+13 taylor-hebert-kl-122ac logs the aemond-name [state:3]
+14 taylor-hebert-kl-122ac reads the bread-price report
+15 the feed-edge acquires the new geometry
 
-16 taylor-hebert-kl-122ac opens the ledger-board
-17 taylor-hebert-kl-122ac writes the ward-elder names
-18 taylor-hebert-kl-122ac writes the sera-coverage entry
-19 taylor-hebert-kl-122ac marks the red-keep coverage record
-20 taylor-hebert-kl-122ac stills the hand
-21 taylor-hebert-kl-122ac closes the ledger-board
-22 taylor-hebert-kl-122ac lifts the jarvis-channel form
-23 taylor-hebert-kl-122ac seals the jarvis-channel form [state:3]
-24 the courier takes the jarvis-channel form
-25 taylor-hebert-kl-122ac opens the ward-coverage notes [state:4]
-26 taylor-hebert-kl-122ac closes the ward-coverage notes
+16 taylor-hebert-kl-122ac enters the hook-ward
+17 the insect-feed returns wenna-cobb
+18 the insect-feed places oswyn-mudway-flea-bottom-elder
+19 the insect-feed places corwick
+20 oswyn-mudway-flea-bottom-elder speaks to taylor-hebert-kl-122ac [oswyn-mudway-flea-bottom-elder:1]
+21 the body-map attaches the corwick-name [state:4]
+22 taylor-hebert-kl-122ac completes the circuit
+23 the watcher-boy-position falls from the water-point
+24 the insect-feed fills the water-point-geometry
