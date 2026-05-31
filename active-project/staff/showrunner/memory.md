@@ -4492,38 +4492,38 @@ books:
             bones:
               - slug: b01c06s03n01
                 flat_id: 16
-                svo: "taylor-hebert-kl-122ac opens the accounting ledger"
+                svo: "taylor-hebert-kl-122ac opens the ledger-board"
                 shape: held
                 axis_moves: []
                 axes_held:
                   - axis: moral_framework
-                    rationale: "the accounting has not yet arrived at delivery; the ledger opens on the first arm; moral_framework holds at current crack-level pending completion"
+                    rationale: "the accounting has not yet arrived at delivery; the ledger-board opens on the cost-side names; moral_framework holds at current crack-level pending completion"
                 cost_ledger_anchor: null
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n02
                 flat_id: 17
-                svo: "taylor-hebert-kl-122ac writes the first arm — names against Sera's protection"
+                svo: "taylor-hebert-kl-122ac writes the ward-elder names"
                 shape: held
                 axis_moves: []
                 axes_held:
                   - axis: moral_framework
-                    rationale: "the first arm runs cleanly; framework holds — the delivery is not completed in this bone; the accounting arm is not the breach, it is the mechanism that makes the breach legible"
+                    rationale: "the ward-elder names are the cost-side write; framework holds — the delivery is not completed in this bone; writing the names is not the breach, it is the mechanism that makes the breach legible"
                   - axis: relational_anchor_status
-                    rationale: "relational_anchor_status moved in s01; the accounting does not add further weight; the contrast between the four names and Wren's absent name is structurally present but does not move the axis"
+                    rationale: "relational_anchor_status moved in s01; writing the ward-elder names does not add further weight to the anchor; the contrast between the four names and Wren's absent name is structurally present but does not move the axis"
                 cost_ledger_anchor: null
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n03
                 flat_id: 18
-                svo: "taylor-hebert-kl-122ac writes the second arm — omission risk against Sera's exposure"
+                svo: "taylor-hebert-kl-122ac writes the sera-coverage entry"
                 shape: held
                 axis_moves: []
                 axes_held:
                   - axis: moral_framework
-                    rationale: "second arm runs without embellishment; the accounting is honest and not yet complete; framework holds pending the close"
+                    rationale: "the sera-coverage entry is the exposure-side write; it runs without embellishment; the accounting is honest and not yet complete; framework holds pending the close"
                   - axis: political_register-prot
-                    rationale: "the ward elders are Flea Bottom-layer; the ask came from Otto through Jarvis; no court-tier content activates the resentment register in the accounting itself; political_register-prot holds"
+                    rationale: "Sera is the protect-target; the sera-coverage entry carries no court-tier content that activates the resentment register in the accounting itself; political_register-prot holds"
                 cost_ledger_anchor: null
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
@@ -4542,23 +4542,23 @@ books:
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n05
                 flat_id: 20
-                svo: "taylor-hebert-kl-122ac closes the accounting entry"
+                svo: "taylor-hebert-kl-122ac closes the ledger-board"
                 shape: held
                 axis_moves: []
                 axes_held:
                   - axis: moral_framework
-                    rationale: "the accounting runs as stated; both arms land with full weight; the balance arrives at delivery; moral_framework holds at this bone — the move fires on the send (n06), not on the close; the close IS the moment the breach becomes inevitable"
+                    rationale: "the accounting runs as stated; both writes have landed; moral_framework holds at this bone — the move fires at the seal (n06), not at the ledger-board close; the ledger-board closing IS the moment the breach becomes inevitable"
                 cost_ledger_anchor: null
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n10
                 flat_id: 21
-                svo: "taylor-hebert-kl-122ac squares the jarvis-channel form"
+                svo: "taylor-hebert-kl-122ac lifts the jarvis-channel form"
                 shape: held
                 axis_moves: []
                 axes_held:
                   - axis: moral_framework
-                    rationale: "deliberation complete; the accounting's verdict has converted to act; the framework holds at this bone — the move fires on the seal at n06, not here; this bone is the close→act hinge that makes the causation of the breach visible (write terms → run balance → close entry → ACT)"
+                    rationale: "deliberation complete; the accounting's verdict has converted to act; the framework holds at this bone — the move fires on the seal at n06, not here; lifting the form is the close→act hinge that makes the causation of the breach visible (write names → close ledger-board → lift form → seal)"
                 cost_ledger_anchor: null
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
