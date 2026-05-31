@@ -1,12 +1,11 @@
 # bones — b01c07
-# inflight-r2 | prefix: sensory | phase: 4.6 | refreshed: 2026-05-31 cycle-1-fixes
-# Authoritative for the sensory prefix at URI-030 union merge.
-# Carries ALL sensory tokens: sensory:1@12, sensory:2@17, sensory:3@16, sensory:4@22.
+# inflight-r2 | prefix: loc-state | phase: 4.6 | created: 2026-05-31 cycle-1-fixes
+# Authoritative for the loc-state prefix at URI-030 union merge.
+# Carries ALL loc-state tokens: loc-state:1@1, loc-state:2@7, loc-state:3@9, loc-state:4@15, loc-state:5@23.
 # All other bone bodies are byte-identical to canonical proto-lines.
-# Cycle-1 fix summary: sensory:1 old-state backfilled via loc-state:3@9 sound field (prior session);
-#   sensory:2 old-state corrected from passage-lane-packed-earth to sept-corner-stone-firm (prior session);
-#   sensory:4 modality recast from thermal/cumulative to proprioceptive/discrete (heel-settles-cobble-edge, this session).
-#   Token positions [sensory:1]@12, [sensory:2]@17, [sensory:3]@16, [sensory:4]@22 unchanged.
+# Cycle-1 fix summary: loc-state:3@9 sound field added (halvard-pastoral-account-register) to supply
+#   the sensory:1@12 old-state anchor (prior session). No other loc-state entries changed.
+#   Token positions [loc-state:1]@1, [loc-state:2]@7, [loc-state:3]@9, [loc-state:4]@15, [loc-state:5]@23 unchanged.
 
 episode: b01c07
 narrator: taylor-hebert-kl-122ac
