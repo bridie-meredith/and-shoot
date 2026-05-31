@@ -3480,3 +3480,60 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0060 | 2026-05-31 | FAST (user-proxy)
+
+question: |
+  /and-substance chapter b01c08 Phase 5.5 chunk-cold-read returned CHUNK-CLASS-B (summary-maps +
+  CONTINUE-strict=no). Disposition: (P) proceed-with-risk-recorded [Class B default], (R) revise
+  chunk, or (S) escalate to substance-contract revision.
+
+context: |
+  b01c08 is a staging chapter in the b01 rise-zone (c07 hinge → c08 plant → c09-c10 develop → d07
+  turn). Three obligations: cf-d10-courier-face beat 1 / Aemond-foreshadow / Oswyn-watcher-network
+  integration as Khepri-echo (moral_framework held by design — reader sees the override-pattern;
+  Taylor does not).
+  Phase 5 reviewers: all PASS/ACCEPT (cape-fic-reader SUBSTANCE-FELT 3/3 + 3 ADVISORY; dark-fantasy-
+  reader SUBSTANCE-FELT; worm-canon-pedant SUBSTANCE-FELT Earth-Bet-CLEAN; dramatist ACCEPT ("calibrated
+  correctly as quiet plant; three low-intensity staging beats that accumulate reader recognition without
+  advancing Taylor's own awareness"); auditor PASS 0 HARD 2 FLAG).
+  Phase 5.5 cold-read confusions:
+    - Most are contextual gaps resolved by c01-c07 for the real reader (insect-feed/Khepri,
+      Oswyn/Wren established c01-c02; Aemond c06; Jarvis-Dragonpit-intercepts c04-c06).
+    - "rank 3/5/0" and "axis labels" are YAML-block leakage (cold-reader saw contract YAML; real
+      reader will not).
+    - "Westeros + modern-spy register clash" is the project conceit — unfixable and intended.
+    - "no decision, cost, reversal, or confrontation" — dramatist ACCEPT explicitly names this as
+      correct staging function for the rise-zone position.
+  Exact parallel to DEC-0044 (b01c06 Phase 5.5 CHUNK-CLASS-B → P).
+
+options: |
+  P: Proceed-with-risk-recorded. Class B default. Record cold_read_risk_carry for /and-stitch Phase 9.
+  R: Revise chunk. Cost: 1 screen-writer + 5 reviewer re-dispatches. Risk: bumps c08 past staging function.
+  S: Substance-contract revision. Highest cost. Not warranted.
+
+decision: P — Proceed with risk recorded.
+
+basis: ltm:DEC-0044 (exact same decision shape, same trade-off axis; Class B staging-chapter quietness)
+
+rationale: |
+  DEC-0044 resolved the materially identical question for b01c06. Summary maps to goal confirmed;
+  strict-NO is mid-series context-noise + YAML leakage artifact (not real reader experience) + project
+  conceit (register clash is intentional). Dramatist ACCEPT explicitly defends the staging function.
+  (R) would re-author a non-defective chunk to compress something the chapter is structurally designed
+  to do; at c08 the argument against (R) is slightly stronger than at c06 because the register-clash
+  complaint is one more unfixable factor. (S) is not warranted — no contract defect identified by any
+  informed reviewer.
+
+trade-off: |
+  (P) carries a known cold-read risk to /and-stitch Phase 9. This is the designed behavior of Class B:
+  the cold-read→completeness-track handoff is the correct routing layer; Phase 9 scrutiny of the known
+  risk is the mechanism for managing it. (R) would cost ~6 dispatches to produce a chunk less faithful
+  to the chapter's rise-zone staging mandate. (S) would be nuclear on a PASS-clean contract.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

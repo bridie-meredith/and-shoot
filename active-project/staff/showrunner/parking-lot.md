@@ -995,6 +995,44 @@ parking_lot:
       resolved_by: null
       resolution_note: null
 
+    - id: pl-2026-05-31-003
+      created_at: 2026-05-31T17:00:00Z
+      created_by: "/and-write b01c08 Phase 2 (auditor fault-001 + admin DEC-0002 override)"
+      label: bone-floor-sub-1.0-exception-formalization
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        SCHEMA / PRECEDENT RECONCILIATION. chunk_targets.bone.delta_per_axis is "1-3"
+        (memory.md line 1465) but project practice has shipped sub-1.0 bone magnitudes
+        without explicit exception: c07 used 0.3/0.5/0.2/0.5 (4 sub-1.0 bone deltas,
+        all PASS Phase 6, shipped to draft/b01-c07.md). c08 reproduces the same shape:
+        chapter target_delta_magnitude 0.5 → s01n06 capability magnitude 0.5 → fault-001
+        flagged by Phase 2 auditor → admin DEC-0002 overrode via precedent (no schema
+        carve-out exists; the precedent is silent).
+
+        Formalize the carve-out at next /and-review pipeline pass. Two options:
+        (a) Add a sub-1.0-allowed-when conditional to chunk_targets.bone.delta_per_axis
+            (e.g. "1-3 when scene_target_delta_magnitude >= 1.0; magnitude = scene_target
+             when scene_target_delta_magnitude < 1.0"). Preserves the 1-3 floor for
+            normal scenes; carves an exception for sub-1.0 scene targets.
+        (b) Revise the floor to 0.5-3.0. Simpler; lets sub-1.0 sub-increments through
+            without precedent-citation. Risk: erodes the discipline against 0.5-Δ proxy-hold
+            bones being authored where 1.0+ moves are intended.
+        Recommended: (a) — preserves discipline + matches precedent shape.
+      context_refs:
+        - active-project/staff/showrunner/memory.md  # line 1465 chunk_targets.bone
+        - active-project/staff/auditor/write-b01-c08-pass2.md  # fault-001
+        - staff/admin/decisions.md  # DEC-0002 override rationale
+        - active-project/staff/showrunner/_drafts/b01c07-bones-draft-2026-05-30-rev2.md  # precedent lines 402, 430, 544, 632
+      resolution_suggestion: "/and-review pipeline at next pass; (a) preferred"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
     - id: pl-2026-05-31-002
       created_at: 2026-05-31T00:00:00Z
       created_by: "/and-write b01c06 revise --from-signals Phase 6 (audience s03 verdicts — render-layer soft carries)"
