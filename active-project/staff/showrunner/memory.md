@@ -3882,24 +3882,24 @@ books:
       #   follow_check (PROP-0020). report: active-project/staff/reviews/chunk-coldread-b01c06-2026-05-30.md
       - slug: b01c06
         status: audited-r1   # /and-facets b01c06 COMPLETE (re-cascade): Phase 5 HARD=0 + Phase 5b ACCEPT 3-of-3 all 10 facets (2 cycles). audit HARD=0 (fault-001 vibes:19 dangling-mem:1 fixed cycle-1); 4 SIGNAL advisory. Pre: faceted-r2 Phase 4 (R2 merge: mem:1 deleted, narrator:7 added; scene-map URI-SCENE-WINDOW PASS). Pre: faceted-r1 Phase 2 (R1 merge complete; cite-index built 57 entries 92.3% decorated). Pre-Phase-2 note: bones-written from /and-write b01c06 revise --from-signals (depth pass, DEC-0048/0056, 2026-05-31): s03 accounting de-abstracted (@16-@22 recast to concrete acts) + verdict-pause bone added (@20 stills the hand). Bones re-emitted (26 bones); facets + draft STALE-MARKED, re-cascade owed. Prior /and-facets audited-r1 state preserved in facets_complete below (now stale). Phase 6 revise bone-gate PASS (audience SUBSTANCE-FELT 3/3 s03 + airless-cleared 3/3; auditor PASS, abstraction-dominance 91%, 1 form-fault holds->stills resolved). bones_review re-run owed (mandatory /and-review bones gate).
-        facets_complete:
-          stale_since: 2026-05-31   # STALE — bones re-emitted at revise depth pass (s03 de-abstracted, 26 bones). All facet artifacts below superseded; /and-facets re-cascade owed. Block preserved as the pre-revise audited-r1 record.
+        facets_complete:   # RE-CASCADE (depth pass, 2026-05-31, 26-bone scaffold) — supersedes the stale pre-revise record (preserved below)
+          stale_since: null
           audit_path: active-project/staff/auditor/facets-final-audit.md
-          audit_reaudit_path: active-project/staff/auditor/facets-final-audit-r2.md
           audit_complete: true
-          audit_hard_findings: 0
-          audit_signal_findings: 10
-          audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md
+          audit_hard_findings: 0   # 1 HARD (vibes:19 dangling memory:1 from R2 mem:1 delete) fixed cycle-1
+          audit_signal_findings: 4   # oc-prop card-resolution, sensory density, state-updates density, memory single-register (all advisory)
+          audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md
           audience_gate_complete: true
-          audience_gate_cycles: 3
+          audience_gate_cycles: 2   # cycle-1: 8/10 ACCEPT; cycle-2: sensory + memory remediated -> ACCEPT 3-of-3 all 10
           audience_gate_cap_burned: false
-          bidirectional_loop: validated
+          bidirectional_loop: validated   # shared finding: monument-slug card-absence (auditor signal-001 + worm-canon memory render-risk)
           facets_path: active-project/theater/facets/
           round_1_complete: true
-          round_2_complete: true
-          context_followability_final: {completeness: FOLLOWABLE, readability: ALIVE}   # PROP-0020/0022
+          round_2_complete: true   # R2: mem:1 deleted (spineless), narrator:7 added (substrate carrier); else KEEP/zero
+          context_followability_final: {completeness: FOLLOWABLE, readability: ALIVE}   # PROP-0020/0022 — PROP-0023 honesty-check applied; genuine bone-layer ALIVE
           phase_5c_admin: skipped   # final cycle clean ACCEPT, no cap-burn, no WARN
-          margit_referrals_open: [SEAM-006 oc-ward-coverage-notes, SEAM-007 oc-jarvis-channel-form, SEAM-008 oc-accounting-ledger]   # prop cards; priority before b01c07 facets
+          margit_referrals_open: [SEAM-006 oc-ward-coverage-notes, SEAM-007 oc-jarvis-channel-form, SEAM-008 oc-accounting-ledger, monument-override-architecture-residue]   # prop+monument cards; mem:2 carries render-fence note pending card
+          # --- PRE-REVISE record (superseded 2026-05-31; was audited-r1 on the 25-bone scaffold): audience_gate_r3, 3 cycles, audit_signal 10 ---
         stitched: false   # was true (2026-05-30); STALE — bones re-emitted at revise depth pass; draft/b01-c06.md no longer terminal until /and-stitch re-cascade completes
         cold_read:
           read_at: 2026-05-30
