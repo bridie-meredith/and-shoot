@@ -680,3 +680,13 @@ notes:
 hard_findings: none
 SUBSTANCE-FLAT: none
 SUBSTANCE-SUSPECT: none
+
+## b01c09 /and-write Phase 4 trim — 2026-05-31
+
+verdict: ACCEPT (23 KEEP, 0 DELETE)
+file_verdict: ACCEPT
+notes:
+  - s01 three-bone pre-Wren sequence (n01 entry / n02 feed threads lane / n03 door opens): NOT redundant; distinct layers — location anchor / mechanism-generation / physical threshold; n02 is mechanism-before-payload; n03 is world-before-protagonist; all three earn their place
+  - s02 three-bone environmental baseline (n01 / n02 supply cart / n03 stone-post): NOT redundant; spatial anchor / mobile road-baseline / fixed gate-exit architectural anchor; the side-exit geometry makes the two-men setup readable as covert reporting position
+  - s03 three substrate bones (n04 / n05 / n06): three distinct substrate roles — deliverable object / Wren-omission (modeling layer) / courier-omission (observation log); removing n05 or n06 collapses the double-omission
+  - zero chatter bones confirmed; trim correctly a redundancy-check not chatter-cull; no hot-button fires

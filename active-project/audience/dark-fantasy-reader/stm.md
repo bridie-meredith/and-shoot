@@ -546,3 +546,14 @@ hard_findings: none
 SUBSTANCE-FLAT: none
 SUBSTANCE-SUSPECT: none
 soft_watch_for_and_write: SW-2 (dark-fantasy-reader) — s02 second-layer withholding must be available as structural implication at bone level; the bones that enact substrate-selection in s02 should carry operational-security texture; the internal feed-record should read as the correct substrate for this class of observation without the Jarvis channel entering Taylor's consideration; one bone that shows the observation filed into the internal record as matter-of-course (not deliberate omission from Jarvis, just routing-to-correct-substrate) will carry the fuller weight of the second layer without stating it
+
+## b01c09 /and-write Phase 4 trim — 2026-05-31
+
+verdict: ACCEPT (23 KEEP, 0 DELETE)
+file_verdict: ACCEPT
+notes:
+  - world-before-protagonist order satisfied at every environmental bone (s01n03 door / s02n02 supply cart / s02n03 stone-post); none is set dressing arranged for Taylor
+  - double-omission thesis requires both n05 (Wren route, modeling-layer) and n06 (courier entry, observation-log) — distinct costs (vulnerability vs political event) and distinct internal substrates; neither redundant
+  - held-axes in s01/s02 carry load-bearing dormancy under named pressure (deliverable ledger; Jarvis-channel expectation)
+  - s03n07 seal-drying = correct material close; no catharsis; the seal dries on a gap not named
+  - SW-2 carried to bone-gate: substrate-selection must read as operational-security discipline, not refusal

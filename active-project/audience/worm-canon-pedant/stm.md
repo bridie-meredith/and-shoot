@@ -715,3 +715,15 @@ canonicity_findings:
   - Taylor interior register: operational-data filing throughout; no recognition event; correct cold-utilitarian accounting-close
   - information-partitioning (substrate-split): canonical Taylor operational-security discipline; consistent with established arc behavior
 soft_watch_SW3_for_and_write: s02 "feed has taught her to read as delivery-complete" posture-class recognition must decompose to two distinct steps at bone level — (1) feed returns a physical signature (body angled toward the other man, weight-distribution of having-delivered and waiting-for-acknowledgment), then (2) Taylor categorizes that signature as delivery-complete; a single bone stating "feed returns delivery-complete posture" collapses the physical data and the categorization into a label; these are distinct cognitive operations and should be distinct bones; if the bone says "feed returns delivery-complete posture" it has skipped the physical return and gone straight to the category
+
+## b01c09 /and-write Phase 4 trim — 2026-05-31
+
+verdict: ACCEPT (23 KEEP, 0 DELETE)
+file_verdict: ACCEPT
+canonicity_findings:
+  - Earth-Bet fence CLEAN across all 23 bones; no Khepri/Gold Morning/parahuman jargon
+  - power mechanics canonical: coverage-by-physical-presence; feed returns bodies via biological sensory relay; pattern-accumulation over time; no range inflation; no single-deployment broadcast
+  - internal-map/deliverable partition canonical; n05 (modeling-layer) vs n06 (observation-log) distinct internal substrates, not redundant
+  - SW-3 CLOSED at bone level: recognition decomposed across 4 bones (n09 feed returns corwick / n04 faces / n05 squares shoulders / n06 files posture-class); physical-return THEN categorization honored
+  - SW-2 (n07 closes observation-entry + n08 completes circuit) = substrate-selection-as-operational-norm, not refusal; canonical
+  - zero flags; canon streak holds through c09
