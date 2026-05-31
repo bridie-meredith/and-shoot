@@ -3299,3 +3299,110 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0058 | 2026-05-31 | SLOW (user-proxy)
+
+question: |
+  b01c06 depth-pass re-cascade complete. Terminal Phase 9 cold-read: COMPLETENESS PASS +
+  READABILITY AIRLESS (improved but still airless). DEC-0048 escalation clause fires: "next cold-read
+  still AIRLESS → FAIL/re-decompose." New evidence: 0-mute prose-rationale-mute audit across 20 bones
+  (every concrete rationale-named element IS staged in prose). Disposition fork: (A) FAIL →
+  /and-write revise re-decompose, literal DEC-0048 clause; (B) /and-substance contract revision;
+  (C) accept terminal, stamp abstract-by-contract; (D) escalate to principal.
+
+context: |
+  Depth pass ran full chain: /and-write b01c06 revise (s03 accounting de-abstracted, verdict-pause
+  bone added) → /and-review bones PASS (BONES-AIRLESS-RISK CLEARED) → /and-facets (7/7 SUCCESS,
+  all 10 facets ACCEPT 3-of-3) → /and-stitch (person-first voice-embodiment render).
+  Terminal Phase 9 cold-read:
+    COMPLETENESS: PASS — central event recovered, jeopardy present, causality tight, CONTINUE=yes,
+      summary accurate. Step-2 FAIL conditions do not fire.
+    READABILITY: AIRLESS — "There IS a person now… the crowd breathes" (improved vs. original);
+      BUT "the moment the form arrives, the prose becomes a man describing his own bookkeeping in
+      abstract nouns… the ledger metaphor is relentless… I never feel the four names as men…
+      held at arm's length… the prose insists the choice was never a choice."
+  0-mute audit: ZERO mutes across 20 bones with concrete rationale. Every rationale-named physical
+    element (hand, stylus, board, blank field, seal) IS staged concretely in prose.
+  Cold-reader's three complaints map to contract features:
+    "I never feel the four names as men" → offstage victims by contract (Taylor's internal accounting)
+    "inert dramatically" → no-real-choice framing IS the thesis (the ledger runs clean)
+    "ledger metaphor relentless" → cold-utilitarian POV register (cond-taylor-pov-behavior)
+  Project spine design-intent: "cold-utilitarian; affect suppressed not absent; theme never spoken";
+    "the accuracy is the catastrophe"; "the road to hell is paved with good intentions."
+  DEC-0048 escalation clause was written without the 0-mute evidence. It assumed "next cold-read
+  AIRLESS" would mean de-abstraction failed. The 0-mute audit shows de-abstraction SUCCEEDED
+  completely; the remaining airlessness is contract-origin.
+
+options: |
+  A: FAIL → /and-write revise re-decompose (DEC-0048 literal clause). ~40 dispatches. Hits same
+     contract wall; bones already 0-mute; near-zero expected delta.
+  B: /and-substance contract revision. Contract-level change; touches thesis; changes what the
+     chapter is. Largest spend + principal design call required.
+  C: Accept terminal. Stamp depth_pass_resolved, airlessness-abstract-by-contract. Cheapest.
+  D: Escalate to principal on defect-vs-thesis-feature taste call.
+
+decision: Option C — accept terminal; stamp depth_pass_resolved, airlessness abstract-by-contract.
+
+basis: |
+  goal:1 (pipeline correctness — the escalation clause's FAIL condition targeted a failure mode
+    the 0-mute audit rules out; mechanical literalism is ruled out by DEC-0007 precedent) +
+  goal:2 (cost discipline — Option A is ~40 dispatches against near-zero expected delta;
+    methodology:3b applies strongly) +
+  project-spine-design-intent (decisive signal: "cold-utilitarian; affect suppressed not absent;
+    theme never spoken" + "the accuracy is the catastrophe" are the project spine entries for
+    Taylor's accounting chapters; they confirm the cold register IS the intended effect) +
+  methodology:3a (reversibility — accepting with a documented abstract-by-contract stamp is
+    reversible; the principal can override; A/B are irreversible spends)
+
+rationale: |
+  The DEC-0048 escalation clause — "if next cold-read still AIRLESS → FAIL/re-decompose" — was
+  written under the premise that a second AIRLESS result would mean the depth pass failed to
+  de-abstract the bones. The 0-mute audit conclusively falsifies that premise: all 20 bones with
+  concrete rationale have their named physical elements staged in prose. De-abstraction succeeded
+  completely. The AIRLESS result persists because the chapter's contract (offstage victims, no-choice
+  framing, ledger register) produces cold affect by design. This is the "abstract-by-contract" case
+  DEC-0048's own trade-off note anticipated: "The accounting section may be abstract-by-contract…
+  if bone-level de-abstraction is genuinely unavailable without content invention that violates the
+  substance contract, that is the re-decompose case." BUT — Option A (re-decompose) is only
+  correct when de-abstraction at the bone layer is still available. At 0 mutes, it is not. Running
+  Option A would require inventing content the substance contract does not license.
+
+  The defect-vs-feature question is answered by the project spine directly. The project's stated
+  design intent for Taylor's POV behavior: "cold-utilitarian; affect suppressed not absent; theme
+  never spoken." The project thesis: "the accuracy is the catastrophe"; "the road to hell is paved
+  with good intentions." The cold-reader's specific complaints — "inert dramatically," "the prose
+  insists the choice was never a choice," "held at arm's length" — are what those project spine
+  entries describe. The cold ledger register working on a reader as "inert" is the intended
+  phenomenology: the catastrophe of Taylor's choices is that they feel administrative. The chapter
+  is achieving its thesis effect.
+
+  DEC-0007 precedent: admin declines to apply a formal clause when the underlying mechanism is
+  not the one the clause was designed to govern. DEC-0048's escalation clause governs failed
+  de-abstraction. The 0-mute audit proves de-abstraction was not the failure. Applying the
+  clause anyway would be the same mechanical literalism DEC-0007 blocked.
+
+  Option B (contract revision) is not ruled out by admin — if the principal disagrees with the
+  abstract-by-contract reading and wants to dramatize a victim or add a genuine choice-beat, that
+  is a design direction the principal can take. But admin cannot authorize that spend unilaterally
+  (human-only: architectural direction / strategic priorities). Option C is the correct default
+  from goals + methodology + project spine. If the principal wants B, they direct it.
+
+  Option D (escalate) would be correct if admin could not decide between C and the alternatives.
+  The project spine design-intent is specific and decisive. The "is the cold register
+  intentional?" question has a clear answer in the project documents admin has read.
+
+trade-off: |
+  Option C stamps a chapter as abstract-by-contract on the basis of admin's reading of the project
+  spine. If the principal intended the accounting chapter to feel felt-rather-than-diagrammed (i.e.,
+  the cold register is a rendering defect, not the thesis), admin has made a wrong call. Mitigated by:
+  (a) the project spine evidence is explicit; (b) the 0-mute audit proves the bones cannot be
+  de-abstracted further without contract invention; (c) the principal can override C at zero cost.
+  The cost of Option A without override is ~40 dispatches with near-zero expected delta.
+
+follows: DEC-0048 DEC-0050 DEC-0056
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

@@ -3909,8 +3909,21 @@ books:
           recovered_summary: "A surveillance operative is pushed to hand over four people by name, does it to keep a hidden girl alive, and quietly protects the one child whose name they refuse to write down."
           report_path: active-project/staff/reviews/coldread-b01c06-2026-05-30.md
           signal_clusters: []   # single-arm; spine-staging-gap not triggered (central event recovered + staged: 'I sealed it', 'fingers settled and did not open them at once')
-          depth_pass_pending: true   # depth pass EXECUTED at /and-write revise 2026-05-31 (s03 de-abstracted + verdict-pause added); flag stays true until /and-stitch Phase 9 re-cascade PASS stamps depth_pass_resolved_at (URI-STITCH-SIGNAL-CLUSTER). DEC-0048 escalation clause: if the re-stitch cold-read is still AIRLESS-on-central-event -> FAIL/re-decompose
-          stale_since: 2026-05-31   # this cold_read verdict (PASS-WITH-DEPTH-PASS-REQUIRED) is the pre-revise record; preserved as history per Phase 7; superseded by the re-cascade /and-stitch cold-read
+          depth_pass_pending: false   # RESOLVED 2026-05-31 (DEC-0058)
+          depth_pass_resolved_at: 2026-05-31
+          stale_since: 2026-05-31   # this cold_read verdict (PASS-WITH-DEPTH-PASS-REQUIRED) is the PRE-revise record; superseded by the re-cascade cold_read below
+        cold_read_recascade:   # /and-stitch b01-c06 depth-pass re-cascade Phase 9 (2026-05-31); DEC-0058 disposition
+          read_at: 2026-05-31
+          verdict: PASS-TERMINAL-DEPTH-RESOLVED   # depth pass EXECUTED + RESOLVED per DEC-0058; ships terminal. (Separated scoring: completeness PASS; readability AIRLESS accepted as abstract-by-contract — NOT a remediable defect.)
+          completeness_axis: {verdict: PASS, basis: "central event (four-name send + omission-contrast) RECOVERED; jeopardy inferred; causality tight; CONTINUE marginal-yes. Step-2 FAIL conditions do not fire."}
+          readability_axis: {verdict: AIRLESS-ABSTRACT-BY-CONTRACT, basis: "improved over original ('there IS a person; the crowd breathes' vs 'no one home'), but the accounting/central-event zone still reads apparatus ('a man describing his own bookkeeping in abstract nouns / held at arm's length / never feel the cost'). DEC-0058: residual AIRLESS is abstract-by-contract — offstage victims + no-choice thesis + cold-utilitarian ledger-POV are project-spine design commitments (cond-taylor-pov-behavior; 'the accuracy is the catastrophe'), NOT remediable bone/prose defects. 0-mute prose-rationale audit (every concrete element staged) confirms de-abstraction exhausted; DEC-0048 escalation clause falsified by the 0-mute audit (DEC-0007 anti-literalism). The administrative-feel IS the intended phenomenology."}
+          recovered_summary: "A spy-informant, after a stranger's small kindness, coldly logs and ships four named men to his handler while pretending he had any choice in it."
+          report_path: active-project/staff/reviews/coldread-b01c06-2026-05-31.md
+          coherence_review: {verdict: PASS, report: active-project/staff/reviews/coherence-b01-c06-2026-05-31.md, note: "substance-aware PASS; informed-compensation pattern vs cold-read per PROP-0023/DEC-0049"}
+          prose_rationale_audit: {mute_count: 0, bones_checked: 20, verdict: SIGNAL-only, report: active-project/staff/reviews/prose-rationale-audit-b01-c06-2026-05-31.md}
+          signal_clusters: []   # no cluster; 0 prose-mutes; no spine-staging-gap (all central-event bones staged per Step 3.5)
+          disposition: DEC-0058 (Option C — accept terminal; airlessness abstract-by-contract; Option B contract-revision remains principal's zero-cost override)
+          stale_since: null
         chunk: |
           Taylor runs the first deliberate rationalize-each-trade beat. A request comes
           through Jarvis that is not ambiguous: Otto wants to know which Flea Bottom ward
