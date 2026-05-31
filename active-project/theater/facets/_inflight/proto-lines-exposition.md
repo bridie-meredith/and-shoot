@@ -21,7 +21,7 @@ aggregate_range: 1-24
 10 taylor-hebert-kl-122ac breaks the jarvis-seal
 11 the handler-rotation names the chain-of-responsibility
 12 the feed-geometry meets the coverage-gap
-13 taylor-hebert-kl-122ac logs the aemond-name
+13 taylor-hebert-kl-122ac logs the aemond-name [exposition:2]
 14 taylor-hebert-kl-122ac reads the bread-price report
 15 the feed-edge acquires the new geometry
 
@@ -29,7 +29,7 @@ aggregate_range: 1-24
 17 the insect-feed returns wenna-cobb
 18 the insect-feed places oswyn-mudway-flea-bottom-elder
 19 the insect-feed places corwick
-20 oswyn-mudway-flea-bottom-elder speaks to taylor-hebert-kl-122ac [oswyn-mudway-flea-bottom-elder:1] [feel:1]
+20 oswyn-mudway-flea-bottom-elder speaks to taylor-hebert-kl-122ac [oswyn-mudway-flea-bottom-elder:1]
 21 the body-map attaches the corwick-name
 22 taylor-hebert-kl-122ac completes the circuit
 23 the watcher-boy-position falls from the water-point
