@@ -3706,3 +3706,290 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+
+---
+
+## PROP-0030
+
+```yaml
+id: PROP-0030
+created_at: 2026-05-31T22:00:00Z
+created_by: principal-directed session cold-read of combined b01 c01-c07 sub-section
+trigger:
+  reason: on-demand (session audit; not a chain-verdict trigger)
+  source_report: active-project/draft/_combined-b01-c01-c07-audit.md
+  source_verdict: session:cross-chapter-apparatus-register-accumulation
+target:
+  type: command
+  path: .claude/commands/and-stitch.md
+  section: "Phase 4.5 — completeness + aliveness scoring; Phase 9 — cold-read terminal gate"
+change_type: modify
+rationale: |
+  PROP-0022 (aliveness twin) is wired across /and-stitch Phase 4 voice-embodiment +
+  Phase 4.5 separated-axis scoring + Phase 9 cold-read terminal gate. Live-test results:
+    - c05 (retroactive) — ALIVE verdict, the chapter shipped clean.
+    - c06 (first live) — false-ALIVE; PROP-0023 opened to catch apparatus-dominant
+      whole-chapter at bone-level before stitch.
+    - c07 (second live) — PASS-WITH-CAVEATS / AIRLESS-at-the-edge; depth-pass
+      recommended at parking-lot pl-2026-05-31-001.
+  Session 2026-05-31 cold-read of c01-c07 as a continuous sub-section identifies a
+  failure class neither PROP-0022 nor PROP-0023 surfaces: apparatus-register
+  ACCUMULATES across chapters even when each individual chapter scores ALIVE in
+  isolation. The cold reader notices c02-c05 read as a stretch of operating-instruction
+  prose only when held against c01 prologue prose + c07 ledger-stylus prose — the
+  contrast surfaces what chapter-isolated reading does not.
+
+  Current Phase 4.5 + Phase 9 scoring run per chapter. A chapter that holds up under
+  isolated cold-read can still degrade a multi-chapter run. The failure shape is
+  cumulative load on a register that any single chapter sustains without protest.
+
+  PROP-0023 catches apparatus-dominant whole-chapter at bone level (de-abstraction
+  required before ALIVE verdict can fire). PROP-0030 is the orthogonal axis: even
+  chapters that PASS PROP-0023 can accumulate cross-chapter aliveness debt. The two
+  proposals are complementary; PROP-0023 protects single-chapter readability,
+  PROP-0030 protects sub-section readability.
+
+  First-occurrence proposing rationale: (a) the mechanism is precisely discriminated
+  (per-chapter scoring blind to cross-chapter accumulation); (b) the evidence is a
+  cold-read of seven shipped chapters held against each other, not a single reviewer
+  taste-flag; (c) the cost shape is M (new optional /and-review pipeline + cohere
+  subcommand machinery — design overlap with the PROP-0031 sub-section coherence
+  process queued same session); (d) the failure is silent in the existing gates by
+  construction.
+evidence_refs:
+  - "active-project/draft/_combined-b01-c01-c07-audit.md — §Where the prose fails item 1 (apparatus-register dominates the middle); cross-references items 2 (sensory grounding named but not embedded) + 10 (dialogue sparse compounds apparatus problem)"
+  - "active-project/draft/b01-c01.md through b01-c07.md — seven shipped chapter drafts; c02-c05 are the load-bearing evidence stretch"
+  - "staff/admin/process-proposals.md — PROP-0022 (aliveness twin, wired); PROP-0023 (false-ALIVE bone-level, open-pending-principal-triage)"
+  - "active-project/staff/showrunner/parking-lot.md — pl-2026-05-31-009 (cross-chapter aliveness scoring question surfaced to /and-review pipeline)"
+recurrence_count: 1
+proposed_diff: |
+  PRIMARY CHANGE — new /and-review subcommand: `cohere`
+
+  Add a `cohere` subcommand to /and-review (per /and-review router pattern). Invocation:
+
+    /and-review cohere <book> [<from-chapter>-<to-chapter>]
+
+  When called without a range: defaults to all shipped chapters of the named book.
+  When called with a range: cold-reads the named chapter window as a sub-section.
+
+  Phases:
+    Phase 0: validate (chapters in range are shipped to draft/); parking-lot scan;
+             concatenate draft/<book>-c<XX>.md files into a working combined file at
+             active-project/staff/reviews/cohere-<book>-<range>-<ts>.combined.md.
+    Phase 1: dispatch a single naive cold-reader against the combined file (one
+             impersonator load of the naive-reader persona — same persona as the
+             routine /and-postop fork). Prompts target cross-chapter axes specifically:
+               - Q1 voice/register consistency across the stretch
+               - Q2 setup→payoff: which beats land, which drop
+               - Q3 calendar/time legibility
+               - Q4 character-presence accumulation (who arrives cold; who is felt as
+                 carried)
+               - Q5 sensory texture distribution (where the prose embeds vs lists)
+               - Q6 apparatus-register cumulative load (the load-bearing question)
+               - Q7 "does this feel like a sub-section of a book or seven shipped
+                 chapters with prologue glue"
+             Verdict shape per question: PASS / CAUTION / FAIL with one-paragraph
+             evidence excerpt + line reference.
+    Phase 2: dramatist axis — same combined file, structural-shape review across the
+             window (arc legibility; promise/payoff inventory; antagonist pressure
+             curve sustained or fragmented).
+    Phase 3: audience fork — one of the three project audience personas (rotating;
+             tracked in active-project/audience/<slug>/cohere-history.md to round-
+             robin); reviews the stretch with the persona's substance-felt axes
+             extended to multi-chapter (cross-chapter substance accumulation).
+    Phase 4: aggregate. Verdict shape:
+               - PASS-COHERE — all three forks PASS; no chapter revises required.
+               - CAUTION-COHERE — at least one CAUTION; advisory parking-lot entries
+                 written but no blocking action; sub-section ships.
+               - FAIL-COHERE — at least one FAIL on a load-bearing axis (Q2 setup→
+                 payoff drop on a structural beat; Q6 apparatus-register exceeds
+                 sustainable density). Routes to the new PROP-0031 cohere-iterate
+                 process (drafted same session): chapter-revise queue authored as
+                 parking-lot HARD items targeting /and-write revise on the named
+                 chapters; on revise + re-cascade completion, /and-review cohere
+                 re-runs.
+    Phase 5: persist. Writes
+               - active-project/staff/reviews/cohere-<book>-<range>-<ts>.md (verdict +
+                 evidence)
+               - chapters[<slug>].cohere_review for each chapter in the range
+                 (audit trail per chapter)
+               - parking-lot entries for any FAIL-COHERE chapter-revises required
+    Phase 5.5: admin process-critic (always-fires; same pattern as /and-postop 3.5).
+    Phase 6: summary.
+
+  Gates:
+    - FAIL-COHERE HARD-routes to chapter-revise queue; the cohere verdict is NOT a
+      ship-gate on the individual chapters (they already shipped). It IS a gate on
+      shipping the sub-section as a sub-section of the book.
+    - CAUTION-COHERE never blocks; it surfaces.
+
+  Pattern: cohere is to the sub-section what /and-postop is to a single chapter —
+  depth-of-quality check, not the primary ship gate. The primary ship gate stays at
+  /and-stitch Phase 9 cold-read terminal gate (PROP-0022). PROP-0030 adds a layer
+  above it for multi-chapter accumulation.
+
+  RENDERER-MINIMAL MIRROR: none. cohere is review-only, no rendering.
+
+  MEMORY SCHEMA NOTE (optional, deferred to principal):
+    Add `cohere_review` block to chapters[<slug>] schema in
+    schemas/showrunner-memory.schema.md (verdict, report_path, ts). Cost S.
+
+  INTERACTION WITH PROP-0022 / PROP-0023:
+    - PROP-0022 (chapter-isolated aliveness scoring) — unchanged; remains the primary
+      per-chapter readability gate at /and-stitch.
+    - PROP-0023 (bone-level apparatus-dominant catch) — unchanged; remains the
+      pre-stitch upstream cure.
+    - PROP-0030 — cross-chapter accumulation cure; runs after N chapters ship.
+    All three are complementary. None of them subsumes another.
+
+  INTERACTION WITH PROP-0031 (cohere-iterate process, drafted same session):
+    PROP-0031 is the iteration-to-positive loop. PROP-0030 is the cold-read primitive
+    that surfaces holes. The cohere subcommand of /and-review is the surfacing
+    machinery; the cohere-iterate process is the convergence loop. Accept PROP-0030
+    independently; PROP-0031 is opt-in on top of it.
+
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0031
+
+```yaml
+id: PROP-0031
+created_at: 2026-05-31T22:00:00Z
+created_by: principal-directed session (sub-section coherence process design)
+trigger:
+  reason: principal directive — "Draft process that will stitch chapters together, identify and plug holes in narrative, and then ensure readability is high. Cold reads must pass with positive content. If not, iterate in fixing the material until all reviews are positive."
+  source_report: active-project/staff/showrunner/subsection-coherence-process-plan-2026-05-31.md
+  source_verdict: principal-directive
+target:
+  type: command
+  path: .claude/commands/and-cohere.md  # new command
+  section: full command body
+change_type: add
+rationale: |
+  PROP-0030 adds /and-review cohere as a single-pass cold-read primitive. PROP-0031
+  wraps it in an iteration-to-convergence loop: /and-cohere <book> [range] runs the
+  cold-read, dispatches the chapter-revise queue, re-cascades the affected chapters
+  through /and-write revise → /and-facets → /and-stitch, and re-runs /and-review
+  cohere until either PASS-COHERE or the cap (default 3 iterations) is hit.
+
+  Justifies as a separate command (not a subcommand of /and-review) because:
+    - /and-review is read-only by design; cohere-iterate is read-then-mutate.
+    - The iteration loop spans multiple cascade re-runs and needs its own state file
+      (iteration counter, per-iteration verdict log, convergence trace).
+    - Convergence cap + escalation belongs in command-body orchestration, which
+      /and-review explicitly does not own.
+
+  First-occurrence proposing rationale: (a) the mechanism is precisely the principal
+  directive shape — stitch → identify holes → plug → iterate until positive; (b) the
+  cost is M-L (command body + state file + cap logic + interaction with /and-write
+  revise machinery, but most of the consuming machinery already exists); (c) the
+  failure-on-no-PROP path is "no convergence loop exists, sub-section ships with
+  whatever holes /and-review cohere surfaced once" — which is acceptable as a
+  graceful degradation but loses the iteration leverage the principal asked for.
+evidence_refs:
+  - "active-project/staff/showrunner/subsection-coherence-process-plan-2026-05-31.md — process design draft (this session)"
+  - "staff/admin/process-proposals.md — PROP-0030 (cohere primitive, paired)"
+  - "active-project/draft/_combined-b01-c01-c07-audit.md — surfaced holes the iteration loop would plug"
+recurrence_count: 1
+proposed_diff: |
+  PRIMARY CHANGE — new command body at .claude/commands/and-cohere.md.
+
+  Phases (sketch — full body to be authored at acceptance):
+
+    Phase 0: validate. Args: <book> [<from-chapter>-<to-chapter>]; default range =
+             all shipped chapters of the named book. Read showrunner memory,
+             parking-lot, iteration state. If a prior /and-cohere iteration is
+             open on the same range, resume from its checkpoint.
+
+    Phase 1: dispatch /and-review cohere <book> [range] (PROP-0030).
+
+    Phase 2: gate on verdict.
+               - PASS-COHERE — write convergence record; exit success.
+               - CAUTION-COHERE — write advisory record; exit success unless
+                 --strict (strict treats CAUTION as iterate).
+               - FAIL-COHERE — proceed to Phase 3.
+
+    Phase 3: triage. Read /and-review cohere's chapter-revise queue from the
+             parking-lot HARD items it just authored. For each item:
+               - Group by chapter (one item may cite multiple chapters; one chapter
+                 may receive multiple items).
+               - Order by dependency (e.g. plant Wren in c03 BEFORE revising c06's
+                 cost-bearer reception).
+               - Reject items the principal has previously dismissed (read
+                 staff/admin/decisions.md for prior cohere dispositions on this
+                 book).
+
+    Phase 4: execute. For each chapter in the queue:
+               (a) /and-write <chapter> revise --from-signals (or --cohere-driven
+                   if a cohere-revise mode is added — phase-internal flag).
+               (b) /and-review bones (mandatory gate; per existing chain).
+               (c) /and-facets <chapter> (re-cascade).
+               (d) /and-stitch <chapter> (re-cascade; terminal gate).
+             Failures at any sub-phase bubble up; the cohere iteration enters a
+             held state and surfaces the failing chapter for principal triage
+             (auto-escalation, no infinite loop).
+
+    Phase 5: re-run /and-review cohere. Compare verdict to prior iteration.
+               - If improved (FAIL → CAUTION, CAUTION → PASS, etc.) — continue
+                 the loop.
+               - If unchanged or regressed — admin process-critic fires
+                 (mandatory; reason: cohere-iteration-not-converging); proposal
+                 likely generated for the principal.
+
+    Phase 6: convergence cap. Default 3 iterations. On cap-hit without PASS:
+               - Write final verdict CAP-HIT (advisory).
+               - Surface the unresolved chapter-revise queue.
+               - admin process-critic fires.
+               - Exit to principal triage. Do NOT auto-revise indefinitely.
+
+    Phase 7: persist. Write
+               - active-project/staff/cohere/<book>-<range>-<ts>/iteration-log.md
+               - chapters[<slug>].cohere_iterations for each touched chapter
+               - parking-lot resolutions for items the iteration plugged
+
+    Phase 7.5: admin process-critic (always-fires).
+
+    Phase 8: summary.
+
+  Flags:
+    --strict — treat CAUTION-COHERE as iterate (default: PASS on CAUTION).
+    --max-iter N — convergence cap override (default 3; max 5).
+    --range <from-c>-<to-c> — restrict cohere range (default = all shipped chapters).
+    --dry-run — Phase 1 only; do not enter revise loop.
+
+  STATE FILE: active-project/staff/cohere/<book>-<range>-state.md tracking
+  iteration counter, last verdict, queued revises, convergence trace.
+
+  INTERACTION WITH /and-substance --cascade:
+    /and-cohere is downstream of /and-substance. A book-level cascade runs
+    /and-substance chapter → /and-write → /and-facets → /and-stitch per chapter;
+    /and-cohere runs after N chapters have shipped and explicitly does not
+    interleave with single-chapter cascades.
+
+  INTERACTION WITH /and-postop:
+    /and-postop is per-chapter depth-of-quality (already shipped chapter).
+    /and-cohere is per-sub-section depth-of-coherence (already shipped chapters
+    held as a stretch). Both are optional / on-demand; both are post-ship.
+    Run /and-postop per chapter for chapter-level depth; run /and-cohere per
+    sub-section for sub-section-level coherence. They do not block each other.
+
+cost_estimate: L
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
