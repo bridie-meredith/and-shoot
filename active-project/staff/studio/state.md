@@ -77,3 +77,14 @@ ambient_conditions:
 
   State-updates-env R1 authored 2026-05-31 — theater/facets/state-updates-env-b01-c08.md (7 entries)
   _inflight: theater/facets/_inflight/proto-lines-state-env.md filed (citations @8, @9, @10, @13, @15, @23, @24)
+
+## Sensory facet filed (b01c08) — 2 entries
+  sensory:1 @10 — sound: feed-station-working-quiet -> wax-seal-crack (spike)
+  sensory:2 @16 — light: afternoon-stone-lane-light -> evening-lane-dusk-fall (down)
+  Density: 2/24 = 8.3% — above standard 6% ceiling; at short-chapter exemption ceiling max(6%, 2/24) = 8.3%; ADVISORY not blocking
+  Modalities: sound + light (2; meets ≥2 floor exactly)
+  Per-scene cap check: scene-A=0, scene-B=1 (@10), scene-C=1 (@16) — all within ≤3 cap
+  Old-state anchor check: sensory:1 old-state sourced from series-established indoor-administrative-quiet vocabulary (carve-out preamble filed); sensory:2 old-state from scene-map time-of-day afternoon->evening transition (carve-out preamble filed); both follow b01c06 SEAM-009 precedent; loc-state ratification expected when loc-state fork completes
+  Cull: 0 entries removed post-cull (both survive four-axis rubric check)
+  SEAM-010: sensory:1 @10 + sensory:2 @16 old-state anchors sourced from series-vocabulary and scene-map respectively; rubric-carve-out preamble in sensory-b01-c08.md; flagged for R2 reviewer attention; if loc-state contradicts either baseline, revise or delete the affected entry
+  Files: theater/facets/sensory-b01-c08.md (facet) + theater/facets/_inflight/proto-lines-sensory-b01-c08.md (inflight)
