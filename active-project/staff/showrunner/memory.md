@@ -4949,6 +4949,14 @@ books:
         bones_file: theater/bones/b01-c08.md
         bones_count: 24
         substance_bone_gate_verdict: PASS
+        bones_review:
+          reviewed_at: 2026-05-31T18:50:00Z
+          report_path: active-project/staff/reviews/bones-b01-c08-2026-05-31.md
+          verdict: PASS
+          follow_check: PASS
+          bones_file_mtime_at_review: 2026-05-31T17:12:10Z
+          aliveness: clean
+          stale_since: null
         chunk: |
           Capability staging chapter with two staging obligations: cf-d10-courier-face beat 1
           (the courier now has a face Taylor has attached a name to — Oswyn mentions him in
