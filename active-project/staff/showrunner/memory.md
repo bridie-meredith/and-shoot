@@ -3900,7 +3900,7 @@ books:
           phase_5c_admin: skipped   # final cycle clean ACCEPT, no cap-burn, no WARN
           margit_referrals_open: [SEAM-006 oc-ward-coverage-notes, SEAM-007 oc-jarvis-channel-form, SEAM-008 oc-accounting-ledger, monument-override-architecture-residue]   # prop+monument cards; mem:2 carries render-fence note pending card
           # --- PRE-REVISE record (superseded 2026-05-31; was audited-r1 on the 25-bone scaffold): audience_gate_r3, 3 cycles, audit_signal 10 ---
-        stitched: false   # was true (2026-05-30); STALE — bones re-emitted at revise depth pass; draft/b01-c06.md no longer terminal until /and-stitch re-cascade completes
+        stitched: true   # /and-stitch b01-c06 RE-CASCADE COMPLETE (2026-05-31 depth pass); draft/b01-c06.md re-emitted de-abstracted/person-first; terminal deliverable. Phase 8.5 + Phase 9 cold-read pending verdict.
         cold_read:
           read_at: 2026-05-30
           verdict: PASS-WITH-DEPTH-PASS-REQUIRED   # DEC-0048; ships terminal + mandatory depth pass before book-stable

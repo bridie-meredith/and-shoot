@@ -52,3 +52,36 @@ VERDICT: PASS-WITH-DEPTH-PASS-REQUIRED (DEC-0048). Ships terminal; mandatory dep
 - Separated scoring WORKED: refused a clean PASS on an airless chapter (the c05 failure mode, caught at the terminal gate). FAIL-branch (AIRLESS-on-central-event) NOT met — event delivered + recovered; airlessness is impact-degradation rooted in the apparatus-dominant bones (~18/25 record-substrate verbs) -> depth-pass loop /and-write revise --from-signals is the right lever (DEC-0048).
 - Report: active-project/staff/reviews/coldread-b01c06-2026-05-30.md
 Phase 9.5 admin process-critic: fires (non-clean-PASS verdict).
+
+---
+
+# RE-STITCH (depth pass, 2026-05-31) — de-abstracted 26-bone scaffold
+
+profile: schema-defaults | persona: neutral | narrator: taylor-hebert-kl-122ac
+voice: first-person past, contractions off (Wren dialect keeps contractions)
+phase-1-mode: scene-window (whole-chapter single fork, matches prior config)
+voice-exemplar: active-project/voice-exemplar.md (Robinson dense-but-breathing; N=1)
+trigger: /and-write b01c06 revise --from-signals depth pass (s03 de-abstraction + @20 verdict-pause); /and-facets re-cascade audited-r1; this re-stitch consumes the de-abstracted graph.
+
+## Phase 1 — scene-window whole-chapter render
+All 26 bones concrete-traced; 0 RENDERED-ILLEGIBLE; person-first voice-embodiment throughout.
+Fuses: @6->@7, @9->@8, @21->@20, @24->@23 (scene-map fusion-eligible-runs).
+4 carries applied: flat-19 single physical stroke; opens-spacing 3 distinct textures (@6/@16/@25);
+@20 verdict-pause = feeling-body vs NI-cognition tension; mem:2 render-fence (Westerosi-accounting
+shape-language only — no override/mechanism/Earth-Bet). Prior AIRLESS tells removed.
+
+## Phase 7 — editorial sweep (strict)
+58/58 sentence-units swept. 7 moves: REWORD x2 (S6 drain-angle->way out; S52 watch-cost->cost to the watch),
+CUT x3 (S22 NI-substrate-restatement redundant; S32 'names not patterns' fragment; S48 'it had not failed' redundant),
+CUT theme-statement x1 (S40 mem-displacement generalized 'any number of persons... a thing to be delivered' = theme spoken on-page; substance kept concretely at S39), CUT-CLAUSE x1 (S52 'a clean accounting is what the breach looks like from inside the discipline' = moral-recognition announced), RESHOW x1 (@26 S57 'only one would ever balance' -> physical 'the field in mine still blank where the four names were filled and sent').
+0 FAULT-BONE-AUDIT-MISS. Theme-never-spoken: confirmed clean (the de-diagramming the prior AIRLESS read demanded).
+
+## Phase 8 — finalize + STATS + RECONCILE
+clean draft: active-project/draft/b01-c06.md (preamble exposition:1 @0 italic + --- + body; 0 scene-callouts; body 955w pre-sweep, ~900w post-sweep).
+annotated draft: DEFERRED this run (render-log is the canonical trace under polish-deferred; clean draft is terminal deliverable).
+STATS: 11 paragraphs (incl. Wren speech para); 1 dialogue utterance (@4 verbatim); preamble-source: exposition-facet (1 entry @0).
+
+RECONCILE (URI-STITCH-ACCOUNTING-HONESTY):
+- BONES: 26 authored = 22 rendered + 4 merged (@6/@9/@21/@24 fused) + 0 dropped + 0 rendered-illegible. BALANCES.
+- FACETS: 57 cite-index entries = discrete-prose facets rendered (NI 6 of 7 [narrator entry behind cut-S22 substrate-restatement still carried by retained narrator:7 line; 1 NI rendering folded], sensory 3, feeling 2, memory 1 [displacement substance at S39; generalized-clause S40 cut], dialogue 1, exposition 1, loc-state 2 = 16 rendered) + state-updates 22 (rendered-as-shaping: the open/write/blank/fill/seal/close acts ARE the state-changes surfaced as prose; tracking-class, no discrete extra sentence) + 0 dropped + FLAG-UNRENDERED-REMAINDER: vibes 19 (atmosphere/register-shaping facet — shapes tone, does not surface as discrete prose sentences; this is the known not-discretely-rendered class flagged honestly per the b01c02 lesson, NOT silently dropped). 16 + 22 + 19 = 57. BALANCES.
+  Note: vibes-as-unrendered-remainder is by-design (vibes is an atmosphere facet); flagged per accounting-honesty rather than claimed-rendered.
