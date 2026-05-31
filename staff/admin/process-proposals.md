@@ -1354,9 +1354,10 @@ evidence_refs:
   - "active-project/staff/auditor/write-b01c04-bone-gate-redo.md — PASS verdict after redo; additive cycle confirms the 2.0 target with 1.0-per-scene split is structurally valid"
   - ".claude/commands/and-write.md — Phase 2: FAULT-BONE-DELTA-MALFORMED classification: magnitude outside chunk_targets.bone.delta_per_axis is a HARD fault"
   - "schemas/showrunner-memory.schema.md — chunk_targets.bone.delta_per_axis field (the floor the chapter contract must pre-flight against)"
-recurrence_count: 2
+recurrence_count: 3
 recurrence_refs:
   - "active-project/staff/auditor/write-b01c06-bone-gate.md — signal-001 + signal-002: moral_legibility_to_self scene-aggregate target +0.5 (fractional residual after scene distribution); bone-floor 1.0 forced over-delivery to +1.0; accepted-with-rationale; stakes-axis tie (moral_framework=moral_legibility at 1.0 each) is a direct consequence of the same fractional-target-floor collision. Second chapter exhibiting this exact structural pattern (b01c04 was first). No HARD fired; accepted path worked. Confirms recurrence is predictable on any chapter with fractional scene residuals."
+  - "active-project/staff/auditor/write-b01c06-bone-gate-revise.md — signal-001 + signal-002 (identical signals, depth-pass revise run): moral_legibility +0.5→+1.0 bone-floor artifact + stakes-tie mf=mls at 1.0. Third chapter run exhibiting the fractional-target-floor collision. Merged by DEC-0057."
 proposed_diff: |
   In .claude/commands/and-substance.md, in the chapter-level authoring phase (Phase 4 or
   Phase 5 — whichever phase persists the per-scene substance contract to memory), add a

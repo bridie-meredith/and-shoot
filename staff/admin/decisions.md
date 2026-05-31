@@ -3223,3 +3223,79 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0057 | 2026-05-31 | SLOW (process-critic)
+
+question: |
+  /and-write b01c06 revise depth-pass Phase 6 bone-gate: HARD FAULT-FORM-NON-ACTION-VERB on
+  @20 "holds the stylus" (narrow-holds-license misread; resolved in-invocation to "stills the
+  hand"); 2 SIGNALs (signal-001 moral_legibility fractional-floor +0.5→+1.0; signal-002 s03
+  stakes-axis tie mf=mls at 1.0) accepted-with-rationale identical to original c06 run. Does the
+  process need to change?
+
+context: |
+  source_report: active-project/staff/auditor/write-b01c06-bone-gate-revise.md
+  gate_path: .claude/commands/and-write.md#phase-6
+  The 2 SIGNALs are identical to the original b01c06 bone-gate run, already OK-MERGED into
+  PROP-0010 at DEC-0046 (recurrence_count: 2). The HARD was resolved in-invocation — no new
+  proposal from the caller's framing of the gate working correctly.
+  However: this is the THIRD occurrence of a holds-license misread across the project.
+    Occ 1: b01c04 — "workers hold the smallfolk-hours murmur" (group-subject + abstract register;
+            flagged advisory, not blocked; noted in bones-b01c04-2026-05-27.md)
+    Occ 2: b01c07 — "septon-halvard-flea-bottom holds the silence" (abstraction-as-object HARD;
+            caught at /and-review bones; resolved by recast; bones-b01c07-fidelity-2026-05-30.md)
+    Occ 3: b01c06 revise — "holds the stylus" (non-body-part/non-pressure-resisting HARD; caught
+            at Phase 6; resolved in-invocation)
+  Three independent chapters, three distinct sub-type misreads of the same narrow holds license.
+  The schema deny-list has one named example ("taylor holds the ledger"). The Phase 1 brief has
+  no authoring-guidance on holds-license scope.
+
+options: n/a (process-critic mode)
+
+decision: |
+  2 SIGNALs: OK-MERGED-INTO PROP-0010 (recurrence_count now 3; third chapter exhibiting the
+    fractional-target-floor collision). No new proposal on signals — same disposition as DEC-0046.
+  HARD (holds-license): PROCESS-CHANGE-PROPOSED PROP-0028.
+  Gate working correctly on HARD: confirmed (no proposal against the gate itself).
+
+basis: |
+  Signals: ltm:DEC-0046 (prior merge into PROP-0010; same rationale; same structural artifact;
+    third recurrence merges again rather than spawning a second proposal for the same upstream fix).
+  HARD: recurrence-count-3 across independent chapters (Rule 11 recurrence threshold exceeded;
+    first-occurrence hold is clearly released at 3) + gate-working-correctly discrimination
+    (gate fires correctly; root is at authoring brief, not at the gate) + content-vs-process:
+    the gate cannot structurally prevent author over-extension of the holds license — only a
+    Phase 1 brief note can; change_type: modify at the authoring layer.
+
+rationale: |
+  Signals are structurally identical to those at DEC-0046: the fractional-target-floor collision
+  between the +0.5 mls target and the 1.0 bone floor is deterministic. PROP-0010's upstream
+  pre-flight fix is the correct closure; adding a third recurrence_ref to PROP-0010 is the
+  correct update. No new gate machinery warranted.
+
+  The holds-license misread pattern is now confirmed across three chapters with three distinct
+  sub-types:
+    (a) group subject + abstract-register object (c04 — pushed through advisory)
+    (b) abstraction-as-object ("the silence" — c07 HARD, caught at /and-review bones)
+    (c) non-body-part/non-pressure-resisting physical object ("the stylus" — c06r HARD, Phase 6)
+  All three misread the holds license in different directions. The schema's deny-list example
+  ("taylor holds the ledger") establishes the pattern for non-body-part physical objects but the
+  author generated a parallel form despite the example. The Phase 1 brief has no positive
+  instruction on holds-license scope — the author must derive the license from the schema,
+  and the derivation is failing at recurrence-3.
+  change_type: modify (Phase 1 brief addition; the Phase 6 gate already catches correctly); S-cost.
+
+trade-off: |
+  Proposing at recurrence_count=3: clearly past the first-occurrence hold. The three sub-types
+  could be addressed by a single brief note that names both conditions exhaustively and provides
+  negative examples parallel to the schema deny-list. Not proposing would allow a fourth occurrence
+  on a future chapter. Expected cost of the fourth occurrence: one HARD + in-invocation cycle or
+  /and-review-bones HARD + bones revise pass. The Phase 1 brief note costs S; the prevented HARDs
+  cost 5-15 dispatches each on average.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
