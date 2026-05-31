@@ -4626,7 +4626,7 @@ books:
             grounding_adds: [sensory:3@16, sensory:4@22]
             final_verdict: FOLLOWABLE   # Step 2 re-check: both airless holes CLOSED; @15/@22 posture-echo broken; 13-22 breathes end-to-end; no fixer pass
             report_path: active-project/staff/reviews/context-follow-r3-b01-c07-20260531T025714Z.md
-        status: faceted-r2   # /and-facets b01c07 Phase 4 merge+consolidate clean (R2: 1 DELETE mem:1@6, rest KEEP); scene-map 4d PASS; was faceted-r1 after Phase 2 (47 facet entries, 84% decorated); was bones-written after /and-write COMPLETE (2026-05-30): Phase 6 bone-gate PASS on rev2 (after 3 attempts; DEC-0051/0052); Phase 7 emit done
+        status: audited-r1-mechanical   # /and-facets b01c07 Phase 5 audit CLEAN (HARD=0, 14 SIGNAL/3 TASTE); fault-008 NI-unreadable was an agent glitch (file intact, AP-001 manually clear); Phase 5b cleared. was faceted-r2 after Phase 4 merge+consolidate clean (R2: 1 DELETE mem:1@6, rest KEEP); scene-map 4d PASS; was faceted-r1 after Phase 2 (47 facet entries, 84% decorated); was bones-written after /and-write COMPLETE (2026-05-30): Phase 6 bone-gate PASS on rev2 (after 3 attempts; DEC-0051/0052); Phase 7 emit done
         bones_file: theater/bones/b01-c07.md
         bones_count: 25
         substance_bone_gate_verdict: PASS
