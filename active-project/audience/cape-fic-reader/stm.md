@@ -508,3 +508,89 @@ s03 is untouched by the @13 recast. The bones at flat_ids 23-35 (post-revise-fro
 The @13 verb swap (pin → strike) is a contained disambiguation that tightens the violence-type read without disturbing the substance architecture. s01 and s03 re-attest from prior cycle without qualification. s02 passes on the recast's specific merits: enforcement-type now legible before Taylor's categorization layer runs, cause-chain @13 → @14 tighter not looser, gap-instrument triple @14-@15-@16 intact, moral_framework held at correct classification (HELD, not moving), no cheap gain on any axis, no established limits bypassed. The DEC-0042 soft seam ("held against stone" texture now facets-dependent) is a facets-layer responsibility, not a bones blocking finding.
 
 No SUBSTANCE-FLAT findings. No SUBSTANCE-SUSPECT-cheap-gain findings. No seams.
+
+## b01c08 chunk review — /and-substance Phase 5
+
+---
+reviewer: cape-fic-reader
+chapter: b01c08
+phase: substance-chapter-phase-5
+date: 2026-05-31
+mode: single-persona override
+scenes_reviewed: [b01c08s01, b01c08s02, b01c08s03]
+---
+
+### Per-scene verdict
+
+**b01c08s01: SUBSTANCE-FELT**
+
+The capability +0.5 sits in one scene and the question is whether one scene can carry it without cheap-gain. It can — but just. The mechanism is clean: Taylor maps Oswyn's watcher-network through the insect-feed without engaging him, the geometry closes a specific gap (three approach-corridors her insect-density doesn't prioritize), and the integration happens without consent. The [mechanism: watcher-positions-mapped-to-feed-matrix] and [image: two-surveillance-architectures-occupying-the-same-ground] tags are doing real work — this is two distinct systems occupying the same physical ground, one built for insiders, one built for invisibility, and Taylor absorbs the insider network into the invisible one without the insider knowing. That asymmetry is exactly what this reader comes for.
+
+The reader-Taylor gap on the Khepri-echo is visible at chunk level. Taylor's rationale is pure operational geometry: gap in feed, Oswyn's people see it, integration is immediate and clean. The reader can see what Taylor doesn't name — that this is the same override-pattern as Khepri absorbing subordinate systems without asking. The [force: taylor-coverage-integration-without-consent] tag is the echo's marker, and the moral_framework held-at-rank-0-by-Taylor's-accounting is the precise substance discipline that makes the gap legible. The reader sees the architecture expanding through absorption; Taylor files it as coverage geometry. That gap is the chapter's designed substance — and it's earned at chunk level.
+
+Cheap-gain check on the +0.5: is the capability gain priced? The cost is structural, not declared: Oswyn's network is described as built for social physics Taylor's own coverage is designed to be invisible to. The integration works because Taylor's architecture can see through people who already belong to the ward. That's not free — it's the capability gap being filled by a borrowed social substrate that Taylor doesn't own and cannot build. The gap she's closing is the gap her own method cannot close. That's the cost: the architecture is incomplete without consent-requiring infrastructure, and she takes the infrastructure without the consent. The cost is present in the design, not in Taylor's accounting. This reader accepts that as a priced gain. No SUBSTANCE-SUSPECT-cheap-gain-capability.
+
+The moral_framework and moral_legibility_to_self holds are load-bearing dormancy, not empty markers: the integration proceeding without ledger-entry IS the reader-Taylor gap in motion. Taylor's "files the geometry" and "does not tell Oswyn she has done this" are the suppression-in-action bones this chapter needs.
+
+**b01c08s02: SUBSTANCE-FELT (deliberate quiet-beat — ADVISORY applies)**
+
+This is the chapter's all-axes-held scene and the question is whether it stalls. It does not stall, but it is the scene I watch most carefully for filler. The Aemond-adjacent pressure entering the feed at low intensity is the scene's only forward-motion marker, and the draft earns it through the correct mechanism: the logistics note is not addressed to anyone, does not signal deviation, and sits inside the delivery the same way a chandler's schedule sits inside a supply ledger. The [image: escalation-engine-visible-at-feed-edge] and [image: feed-geometry-acquires-a-new-edge] tags give the scene its substance — the escalation engine has an edge now that it didn't have before, and the edge is lit at low intensity. That is a board-state change that does not require Taylor's affect register to shift. Reader sees the edge the moment the name-above-the-handler appears. Taylor files it and reads the bread prices.
+
+This is exactly the right discipline for an Aemond-foreshadow at low intensity: the name does not appear in Taylor's current coverage, she logs it and continues, the resentment register stays flat. The scene functions as a deliberate quiet-beat whose substance is the reader-held awareness that the escalation engine has now penetrated the feed's geometry, even if Taylor doesn't mark it differently from commodity pricing.
+
+My filler-check fires lightly here. The [mechanism: political-register-held-on-logistics-noise] is the axis-held rationale and it's structurally sound — but the scene is very thin on forward-motion beyond the Aemond-entry. The Jarvis delivery, the ward-report summaries, the two intercept fragments — these exist to establish the delivery as routine before the logistics note arrives. That framing is necessary. But if the bones-decomposer gives the pre-Aemond delivery intake too many bones, this scene will read as setup rather than as a quiet-beat. The chunk earns the quiet-beat classification at plan level; the risk lives at /and-write decomposition, not here.
+
+No axis moved here; none should. The held-axes-held pattern is correct for a chapter sitting in the consolidation tail of the rise-zone. No cheap-gain. No established limits bypassed. No unmotivated knowledge. Filler-check: passes at chunk level, flagged as WATCH for bone-decomposition density.
+
+**b01c08s03: SUBSTANCE-FELT**
+
+The courier-face beat 1 (cf-d10-courier-face beat 1 per chapter contract) lands cleanly. Corwick via Oswyn's pass-mention is the correct delivery mechanism: name drops without ceremony, using it the way Oswyn uses any name he's placed in a category. The [mechanism: courier-name-attached-via-oswyn-pass-mention] is the right form — the name arrives through Oswyn's social physics (above-his-station, twice-up-the-hill), not through Taylor's feed, which is the information-asymmetry shape this chapter's design conceit requires. Taylor receives the name through the ward's own category-system, not through the architecture she controls. The face-and-name-locking image is specific and carries real body-map weight.
+
+The foreclosure-by-not-following is honored: she holds the geometry and lets the encounter close, does not follow tonight. The someone-above-the-station is not named, she does not ask. That restraint is the chapter's forward-hook discipline — the next node in the chain is present as a shape she can recognize when she sees it again. That's good setup architecture.
+
+The Oswyn-network closure at the scene's end — the watcher-boy's position now inside Taylor's coverage matrix, Oswyn still talking when Taylor leaves — is the chapter's design image completing cleanly. The s01 integration is confirmed without being re-argued: the position is covered, the node is complete, Oswyn doesn't know. The [force: oswyn-unknowing-node-complete] tag closes the chapter's structural loop without redundancy.
+
+All axes correctly held. Capability held after the s01 increment — the body-map advance is a thread-completion, not a new capability gain, and it's correctly classified as held. The moral_framework held-at-rank-0-by-Taylor's-accounting carries through: the integration-completion proceeds without Taylor naming what she is doing. The reader-Taylor gap remains open at chapter-close.
+
+### Chapter goal coverage
+
+- cf-d10-courier-face beat 1: LAND — Corwick named via Oswyn pass-mention; body-map advances one node; above-his-station route-pattern attached; foreclosure-by-not-following preserved
+- Aemond-foreshadow: LAND — name-above-the-handler enters the logistics feed at low intensity; reader has the edge; Taylor files it flat; political_register-prot held correctly
+- Oswyn-watcher-network integration as Khepri-echo: LAND — integration happens at s01; reader-Taylor gap is live; Taylor sees geometry, reader sees pattern; s03 confirms the integration with the watcher-boy's position inside Taylor's matrix at chapter close
+
+### Reader-Taylor gap assessment
+
+The gap is legible at chunk level. The design discipline holds: Taylor does not articulate the override-pattern, the moral_framework does not open on the act, and the ledger does not register it. The reader can track the Khepri-echo through the [force: taylor-coverage-integration-without-consent] tag in s01 and the [force: oswyn-unknowing-node-complete] close in s03. The gap does not land thinly — the override-pattern is structurally present in both scenes and the no-articulation discipline is maintained across all three.
+
+The concern I would flag is at /and-write execution: the gap's legibility depends entirely on the bones-layer giving the integration's consent-absence real texture rather than procedural notation. If the s01 bones handle the "does not tell Oswyn" beat as a single held-axis bone with no physical correlate, the gap will read as withheld rather than enacted. The reader needs to see the integration happening through Taylor's operational logic — the geometry, the closure, the absence of acknowledgment — not just to be told she didn't mention it. That is a bone-decomposition discipline note, not a chunk-level blocking finding.
+
+### Threshold Discipline fires
+
+No fires.
+- "Character knowing something they haven't been told": no fire — Taylor's Oswyn-network geometry is derived entirely from the insect-feed's physical return; the information is in the geometry she can read, not knowledge supplied from outside the apparatus.
+- "Established limits bypassed without cost": no fire — capability +0.5 is priced through the structural incompleteness of Taylor's own method (her architecture cannot see the ward's insider-belonging physics; she absorbs Oswyn's instead of building it). The gain is not free.
+- "New character earning trust without cost": the Corwick name-attachment is a body-map filing, not trust; the above-his-station pattern is Oswyn's category, not Taylor's endorsement; no trust-without-cost pattern.
+- "Slice-of-life filler when the plot is live": the ward-circuit in s01 is the mechanism; the Jarvis delivery in s02 is the delivery substrate that makes the Aemond-entry non-marked; the Hook evening circuit in s03 is the occasion for the courier-face beat. None of these are filler at chunk level. WATCH on s02 bone-decomposition density (see ADVISORY below).
+- Fatigue check: s02 is the scene where fatigue-risk is highest. The all-axes-held design is correct, but a bones-layer that front-loads the routine delivery with too many logistics-intake bones will make this reader skim before the Aemond-entry. The delivery intake must be kept lean at bone level — enough to establish routine, not enough to make routine the event.
+
+### HARD findings
+
+None. No SUBSTANCE-FLAT conditions. No SUBSTANCE-SUSPECT-cheap-gain conditions. All three scenes pass substance review at chunk level.
+
+### ADVISORY items for /and-write Phase 1 scene-decomposition
+
+**ADVISORY-1 (s01 — consent-absence texture):** The reader-Taylor gap's legibility at prose level requires the integration's consent-absence to be physically enacted in the bones, not just held-axis-noted. The "does not tell Oswyn she has done this" beat needs a physical correlate at bone level — the circuit closing, the feed returning to its usual register, Taylor moving on — so the absence of acknowledgment reads as active suppression-of-acknowledgment rather than as a neutral procedural note. Without physical texture here, the gap will read as the author withholding rather than Taylor withholding.
+
+**ADVISORY-2 (s02 — delivery-intake density):** The bones-decomposer should give the pre-Aemond delivery intake maximum two to three bones establishing the routine before the Aemond-entry bone. More than that and s02's quiet-beat function collapses into filler. The Aemond-entry bone should arrive early in the scene's bone sequence, with the routine-established framing as setup, not as co-equal content. The bread-prices bone at scene-close is the correct structural close; it should not be preceded by excessive delivery-documentation.
+
+**ADVISORY-3 (s03 — Oswyn-network closure image):** The [image: oswyn-network-subsumed-in-silence] and [force: oswyn-unknowing-node-complete] close is the chapter's structural payoff. At bone level, this image needs a physical correlate: the watcher-boy's position inside the coverage matrix should be named as a feed-event (the feed returns the watcher-boy's position as within the already-covered geometry), not as Taylor's interior reflection on what she mapped this afternoon. Physical feed-event, not retrospective summary.
+
+### cl-d06 routing: CONCUR WITH DEFERRAL
+
+The deferral rationale is correct. Wren is in coverage this chapter but the coverage is Oswyn's integration event, not Wren's structural necessity. The "Wren becomes structurally necessary to the coverage map without appearing in the ledger" beat named in b01c06s01 notes is a stronger c09/c10 fit — that beat requires a moment where Wren-specifically becomes load-bearing in Taylor's architecture, not just inside its coverage radius. c08's substance is capability-staging and the Oswyn-integration echo; the anchor doesn't get a natural price-point here.
+
+My one note: c09 should not defer the anchor surfacing again. The window b01c08-b01c10 is the declared candidate range; if c09 opens and Wren is still only passively in coverage with no structural-necessity moment, the deferral logic will have expired its natural window. The anchor should price at c09 or early c10 — not later. The "Wren becomes load-bearing" beat has a chapter-count limit on how long it can stay deferred before it reads as stalled rather than building.
+
+### Chapter aggregate verdict
+
+SUBSTANCE-FELT — all three scenes pass; no HARD findings; chapter goals land; reader-Taylor gap operative; cl-d06 deferral concurred with reservation (c09 should close the window).
