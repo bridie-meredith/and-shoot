@@ -4614,7 +4614,7 @@ books:
                 gate_verdict: {bonefide: true, flat: false}
 
       - slug: b01c07
-        status: bones-written   # /and-write b01c07 COMPLETE (2026-05-30): Phase 6 bone-gate PASS on rev2 (after 3 attempts; DEC-0051/0052); Phase 7 emit done
+        status: faceted-r1   # /and-facets b01c07 Phase 2 cite-index merge clean (47 facet entries, 84% decorated); was bones-written after /and-write COMPLETE (2026-05-30): Phase 6 bone-gate PASS on rev2 (after 3 attempts; DEC-0051/0052); Phase 7 emit done
         bones_file: theater/bones/b01-c07.md
         bones_count: 25
         substance_bone_gate_verdict: PASS
