@@ -2,15 +2,15 @@
 generated: 2026-05-31
 source: active-project/theater/proto-lines/b01-c07.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 47 facet entries; 21/25 protolines decorated (84.0%)
+totals: 46 facet entries; 21/25 protolines decorated (84.0%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
 | 0 (bare)   | 4 |
-| 1          | 4 |
-| 2          | 5 |
+| 1          | 5 |
+| 2          | 4 |
 | 3          | 5 |
 | 4          | 3 |
 | 5          | 3 |
@@ -52,13 +52,12 @@ totals: 47 facet entries; 21/25 protolines decorated (84.0%)
   state:11 @23 back=N co=[loc-state:5, narrator:7, state:3, state:4, vibes:3, vibes:15]
   state:12 @25 back=N co=[state:4, vibes:15]
 
-### mem (2 entries)
-  mem:1 @6 back=Y co=[vibes:13]
+### mem (1 entries)
   mem:2 @19 back=Y co=[narrator:4, taylor-hebert-kl-122ac:1, vibes:4, vibes:5]
 
 ### feel (2 entries)
   feel:1 @20 back=Y co=[narrator:5, vibes:8]
-  feel:2 @18 back=N co=[feel:1, vibes:4, vibes:5]
+  feel:2 @18 back=Y co=[vibes:4, vibes:5]
 
 ### meta (0 entries)
 _(no entries)_
@@ -68,7 +67,7 @@ _(no entries)_
   vibes:2 @- back=- lic-out=[proto:12, proto:13]
   vibes:3 @14 back=Y co=[narrator:2] lic-out=[proto:14, proto:23]
   vibes:4 @- back=- lic-out=[proto:18, proto:19]
-  vibes:5 @18 back=Y co=[feel:1, vibes:4] lic-out=[proto:18, proto:19]
+  vibes:5 @18 back=Y co=[feel:2, vibes:4] lic-out=[proto:18, proto:19]
   vibes:6 @21 back=Y co=[septon-halvard-flea-bottom:2, vibes:7, vibes:8, vibes:12] lic-out=[proto:21]
   vibes:7 @21 back=Y co=[septon-halvard-flea-bottom:2, vibes:6, vibes:8, vibes:12] lic-out=[proto:21]
   vibes:8 @20 back=Y co=[feel:1, narrator:5] lic-out=[proto:20, proto:21]
@@ -76,7 +75,7 @@ _(no entries)_
   vibes:10 @4 back=Y co=[state:2, state:3] lic-out=[proto:3, proto:4, proto:6]
   vibes:11 @17 back=Y co=[sensory:2] lic-out=[proto:17, proto:24]
   vibes:12 @- back=- lic-out=[proto:12, proto:21, proto:22]
-  vibes:13 @6 back=Y co=[mem:1] lic-out=[proto:3, proto:6]
+  vibes:13 @6 back=Y lic-out=[proto:3, proto:6]
   vibes:14 @- back=- lic-out=[proto:9, proto:12]
   vibes:15 @- back=- lic-out=[proto:22, proto:23, proto:25]
 
@@ -100,6 +99,7 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 
 - loc-state:1 @1  `taylor-hebert-kl-122ac completes the ward-coverage circuit`
 - state:1 @2  `the handcart blocks the sept-corner passage`
+- vibes:13 @6  `the insect-feed places septon-halvard-flea-bottom`
 - exposition:1 @0  ``
 
 ## Bare protolines (no citations accrued)
