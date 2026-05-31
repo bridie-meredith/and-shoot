@@ -1,3 +1,5 @@
+
+
 ═══════════════════════════════════════
 Chapter 1
 ═══════════════════════════════════════
@@ -99,7 +101,7 @@ The tallow smoke rolled at floor-level out of the stitch-house east wall and poo
 
 I took the drain angle. The lane-mouth and the alley beyond went north, forty paces off, and the hands carried me to the gap and set me there the way they had set me there yesterday and the day before that.
 
-The ward-junction body crossed the thresholds — she had crossed them yesterday at this hour, and she crossed them now, and the alley admits her and I yielded the alley-mouth before the yield was a choice. The yield had been priced days back, when the insects first put her in the feed; what arrived at the lane-mouth now was the receipt. The threshold was occupied from both sides at once and I did not look up.
+The ward-junction body crossed the thresholds. The stitch-maker's ward — the eleven-year-old whose hands had gone up first at the cart-morning, the gait crossed from the stitch-house's east side into the alley behind it — she had crossed them yesterday at this hour, and she crossed them now, and the alley admits her and I yielded the alley-mouth before the yield was a choice. The yield had been priced days back, when the insects first put her in the feed; what arrived at the lane-mouth now was the receipt. The threshold was occupied from both sides at once and I did not look up.
 
 The insects returned the function-signature — the body that knotted the junction, the body the alleys gave onto, the body the map was about to name. The map assigned the connector-type.
 
@@ -377,11 +379,11 @@ I ran the Hook-feed first, the morning's coverage of the lane below the Hook bro
 
 Then I ran the rushwick-feed. The morning's coverage of the junction came back the way the Hook had come back, the provisioner-train re-crossing the junction at the hour it had crossed, the count carrying the train east the way the count had carried it east. The provisioner-train cleared the junction. The feed kept on into the courier-window, into the side-alley figures, into the report-entry I had delivered at the line where my own filings closed.
 
-The rushwick-feed did not settle. The color that had been on the junction at the morning hour was on the junction at the evening hour, present in the return the way it had been present in the live read, the feed routing the provisioner-train through the same architecture and bringing the architecture back with the train. I ran the pass a second length to see if it was the read and not the feed; the color persisted.
+The rushwick-feed did not settle. My breath came shallower at the bedframe; the bay-damp had reached into the lodging room since I'd come back, and the boards under me had taken it on. The color that had been on the junction at the morning hour was on the junction at the evening hour, present in the return the way it had been present in the live read, the feed routing the provisioner-train through the same architecture and bringing the architecture back with the train. I ran the pass a second length to see if it was the read and not the feed; the color persisted.
 
 My head tilted toward the held color. I stopped the rushwick-pass.
 
-The stopping was the body's, before I had a word for what the body was doing. The hand I had laid flat on the boards came up off the boards. The feed was an apparatus I had been keeping neutral, an instrument with a use, and the instrument was recognizing the route it carried as the route — not the lane, not the courier, but the architecture the routing went through, and the architecture was the architecture I had not asked the feed to mark. The discipline I had been keeping was the discipline of a neutral read; the discipline was what the apparatus was no longer willing to support.
+The stopping was the body's, before I had a word for what the body was doing. The hand I had laid flat on the boards came up off the boards. The boards were cold under the palm where the lifting left a hand-print of the heat the palm had carried. The feed was an apparatus I had been keeping neutral, an instrument with a use, and the instrument was recognizing the route it carried as the route — not the lane, not the courier, but the architecture the routing went through, and the architecture was the architecture I had not asked the feed to mark. The discipline I had been keeping was the discipline of a neutral read; the discipline was what the apparatus was no longer willing to support.
 
 I closed the evening review. The window's light had thinned to the line above the sill, and I closed the day's coverage out into the form it kept when the day was done, the entries delivered, the count resolved.
 
@@ -406,11 +408,11 @@ Chapter 6
 
 The handcart had thrown a wheel across the north opening of the lane, crosswise, and there was no getting it upright before midday. I came down into the press of people who had already understood this. They stood the way Flea Bottom stands when a thing it cannot move is in the way — patient, not frightened, shoulders turned to keep the angle. Tallow smoke pooled at foot level and did not rise. The crowd had backed up solid into the junction, body against body, and the morning that had been passable an hour before was now a wall of warmth and cloth and the smell of the boiling-houses. I stood at the edge of it and looked for the way out, which is the way I had learned to read myself out of a place like this.
 
-She found me before her feet turned. I caught the moment her eyes came up out of the press and fixed on me, and only after that did the rest of her start to move, crossing the backed-up crowd at a slant the way a child crosses a current she has crossed before. I had her placed before she opened her mouth — ward-body, the familiar profile, the stitch-house at her back. What I could not place was the thing she was about to do, which lived in the space between us and not in the layer I count by.
+She found me before her feet turned. I caught the moment her eyes came up out of the press and fixed on me, and only after that did the rest of her start to move, crossing the backed-up crowd at a slant the way a child crosses a current she has crossed before. I had her placed before she opened her mouth — the stitch-maker's ward, the eleven-year body the count had carried in its recurring slots since the cart-morning, the salt-fish row in the market-week, the print-held-longer at the evening close — ward-body, the familiar profile, the stitch-house at her back. What I could not place was the thing she was about to do, which lived in the space between us and not in the layer I count by.
 
 "There's a way past. Cut before the cart, by the tallow-boiler's wall — the south court. It's narrow, but it's there. I been through."
 
-She said it the way you set down a thing you have already carried, and she did not stay to watch me take it up. The exchange ended and the silence that had been between us for four months closed over it again. A sound route from a stranger is not nothing. It carries a cost I had not yet found the name for, and I marked that, and took the route.
+She said it the way you set down a thing you have already carried, and she did not stay to watch me take it up. The exchange ended and the silence that had been between us for four months — through the cart-morning, through the market-row, through every evening close where her print had run longer than the others — closed over it again. A sound route from a stranger is not nothing. It carries a cost I had not yet found the name for, and I marked that, and took the route.
 
 The south court was where she had said it was, a narrow gap off the tallow-boiler's wall, clear, the blocked lane behind me now. I came in out of the smoke and opened the coverage-notes — the entry that is mine, the working column the channel never sees. In the contact-role field I wrote *ward-resident, Hook, routine.* That is true. It is also the whole of what I wrote. The field for the source of the contact I left as it was, blank, and I closed it blank, and the blank was the entry. A name kept out of the column is a name the line cannot carry. I had priced the field before the stylus touched it.
 
@@ -476,5 +478,3 @@ Then I left, before a resolution that was not coming. The leaving was the filing
 Behind me the lane-cold settled back into the corner stone where it had held all morning.
 
 I cleared the Hook and went up into the rest of the day.
-
-
