@@ -5,6 +5,8 @@ narrator: taylor-hebert-kl-122ac
 r2-judge: taylor-hebert-kl-122ac (R2 GRAPH-AWARE / FACET-JUDGE OVERRIDE MODE)
 r2-rubric: design/shoot-v2/rubric-memory-flags.md (V3 LOCKED 2026-05-21)
 r2-counts: KEEP 1 / DELETE 1 / ADD 0 / REWRITE 0
+r2-cite-index-hash: 4b1789810b83040f443958cffc443ec91345befc
+r2-judge-date: 2026-05-31
 ---
 # R2 GRAPH-AWARE MUTATION (memory judge, POV taylor-hebert-kl-122ac)
 # ============================================================================
