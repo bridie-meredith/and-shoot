@@ -2,7 +2,7 @@
 
 episode: b01c06
 last_updated: 2026-05-31
-action: location-state R1 authoring — /and-facets b01-c06 Phase 1 (revise pass; bones re-emitted 2026-05-31)
+action: sensory R1 authoring — /and-facets b01-c06 Phase 1
 
 ## Current set
 location: oc-stitch-house-lane (south-court working position)
@@ -73,3 +73,15 @@ ambient_conditions:
 
   State-updates-env R1 authored 2026-05-31 — theater/facets/state-updates-env.md (17 entries)
   _inflight: theater/facets/_inflight/proto-lines-state-env.md filed
+
+## Sensory facet filed (b01c06) — 3 entries
+  sensory:1 @2  — pressure: lane-passable-morning-flow -> crowd-backed-body-compression (up)
+  sensory:2 @17 — sound: drain-water-trickle-ambient -> stylus-on-board-rhythm (up)
+  sensory:3 @20 — sound: stylus-on-board-rhythm -> silence (drop)
+  Density: 3/26 = 11.5% (above standard 6% ceiling; above 7.7% short-chapter advisory; defended — modality floor requires ≥2; @17+@20 are a coherent paired inflection (up/drop) anchored to each other; @2 pressure is the only clean non-sound fire available in the chapter; see rubric-carve-out preamble in sensory-b01-c06.md re @2 old-state sourcing)
+  Modalities: pressure + sound (2; meets ≥2 floor)
+  Per-scene cap check: scene-A=1 (@2), scene-B=0, scene-C=2 (@17+@20) — all within ≤3 cap
+  Old-state anchor check: sensory:1 old-state sourced from location card §Hazards baseline (documented carve-out); sensory:2 old-state from loc-state:2 @5 sensory vocabulary (drain-water-trickle per location card oc-stitch-house-lane); sensory:3 old-state from sensory:2 new-state (stylus-on-board-rhythm → paired drop)
+  Cull: 0 entries removed post-cull (all 3 survive four-axis rubric check)
+  SEAM-009: @2 pressure old-state anchor sourced from location card rather than loc-state entry — rubric-carve-out preamble documents the justification; flagged for R2 reviewer attention
+  Files: theater/facets/sensory-b01-c06.md (facet) + theater/facets/_inflight/proto-lines-sensory-b01-c06.md (inflight)

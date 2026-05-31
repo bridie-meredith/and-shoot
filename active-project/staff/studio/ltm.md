@@ -3,6 +3,17 @@
 
 ---
 
+## 2026-05-31 — b01c06 sensory authored at /and-facets Phase 1 R1
+
+Chapter b01c06: 26 bones, 3 scenes. Single location: oc-stitch-house-lane.
+3 sensory entries. Density 11.5% — above standard ceiling; defended at 2 modalities (pressure + sound) against modality floor requirement.
+Short-chapter exemption applies (26 < 30 bones, modality_count = floor 2) but density exceeds the 7.7% advisory; no blocking fault.
+Rubric-carve-out preamble filed for sensory:1 @2 (pressure old-state from location card §Hazards rather than loc-state entry).
+Paired inflection @17+@20 (sound up/drop) mirrors the @24/@30 calibration-anchor pattern.
+Scene coverage: A=1 fire, B=0 fires, C=2 fires.
+
+---
+
 ## 2026-05-31 — b01c06 location-state authored at /and-facets Phase 1 R1 (revise pass)
 
 Chapter b01c06: 26 bones, 3 scenes. Single location throughout: oc-stitch-house-lane.

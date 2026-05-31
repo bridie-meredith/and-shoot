@@ -1,5 +1,34 @@
 # studio STM
 
+## 2026-05-31 — /and-facets b01-c06 Phase 1 R1 sensory authoring
+
+Authored sensory-b01-c06.md (3 entries, 26 bones). Density 3/26 = 11.5% — above standard 6% ceiling and above 7.7% short-chapter advisory; defended because modality floor (≥2) cannot be sacrificed and the only clean non-sound fire in the chapter is the @2 pressure entry.
+
+Three fires across two modalities (pressure + sound):
+  sensory:1 @2 pressure (lane-passable-morning-flow → crowd-backed-body-compression, up) — scene-A, crowd backed at blocked-exit junction. Old-state from location card §Hazards baseline; rubric-carve-out preamble filed (no pre-blockage loc-state pressure entry).
+  sensory:2 @17 sound (drain-water-trickle-ambient → stylus-on-board-rhythm, up) — scene-C, writing begins on ledger-board. Old-state from oc-stitch-house-lane sensory vocabulary (drain-water trickle audible when lane is quiet).
+  sensory:3 @20 sound (stylus-on-board-rhythm → silence, drop) — scene-C, verdict-pause: the hand stills. Old-state from sensory:2 new-state (paired inflection, up/drop).
+
+Modalities: pressure + sound (2; floor met).
+Per-scene cap: scene-A=1 (@2), scene-B=0, scene-C=2 (@17+@20) — all within ≤3 cap.
+Cull: 0 entries removed (all 3 survive four-axis rubric check).
+SEAM-009: @2 old-state anchor sourced from location card baseline rather than loc-state entry; rubric-carve-out preamble filed.
+
+Notably REJECTED (representing the full decision log):
+  @1 (handcart blocks — scene-A environmental cause; no discrete perceptual inflection; @2 is the pressure effect)
+  @3 (wren crosses — transitional movement; no modality change)
+  @4 (wren speaks — rejected in favor of @17+@20 pair to preserve paired sound inflection discipline; adding @4 would create 4 fires total and push modality count to 2 still — density would be 15.4%, well above advisory; cull chose the two load-bearing s03 fires)
+  @8 (blanks contact-source — analogous to stylus-stops; rejected because the blank is a held state, not a stop of ongoing rhythm; no prior writing-rhythm established in scene-A)
+  @10 (jarvis message arrives — mechanism uncertain for perceptual inflection; refused)
+  @15 (lowers form — sub-threshold; smooth parchment settling)
+  @16 (opens ledger-board — board-creak borderline; rejected; @17 is the correct establish beat)
+  @18/@19 (continued writing — sustained-as-inflection; @17 established the rhythm; anti-pattern 2)
+  @23 (seals form — sound anchor would be `silence → wax-seal-click` from @20; rejected because a third scene-C fire creates 3 sound fires in scene-C alone; per-scene cap allows it but density spikes; @20 is the more critical drop-inflection; @23 omitted; tactile anchor unresolvable without prior tactile fire)
+  @24 (courier takes form — transitional)
+  @25/@26 (opens/closes notes — administrative; no perceptual inflection)
+
+Inflight: theater/facets/_inflight/proto-lines-sensory-b01-c06.md filed.
+
 ## 2026-05-31 — /and-facets b01-c06 Phase 1 R1 location-state authoring (revise pass)
 
 Authored location-state.md for b01c06 (2 entries after authoring-phase cull, 26 bones).
