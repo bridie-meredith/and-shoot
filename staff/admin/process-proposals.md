@@ -2958,3 +2958,462 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0025
+
+```yaml
+id: PROP-0025
+created_at: 2026-05-30T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/bones-b01c07-2026-05-30.md
+  source_verdict: "/and-review bones b01c07 = FAIL; HARD 3 (SVO-form: flat15/22/16); all three passed /and-write Phase 6 bone-gate on rev2"
+target:
+  type: command
+  path: .claude/commands/and-write.md
+  section: "Phase 6 — Substance bone-gate / Per-bone verification (auditor)"
+change_type: modify
+rationale: |
+  At /and-write b01c07 rev2 (attempt 3 under DEC-0052's one-attempt cap), the Phase 6 bone-gate
+  accepted three bones that carry PP-modifier or abstraction-as-object violations banned by
+  bones.schema.md:
+
+    flat15 "taylor-hebert-kl-122ac stays in the argument" [MOVING soc-tether +0.5] —
+      "in the argument" is a PP modifier (locative-abstract), banned by line 57. The rev2
+      draft marked it "unchanged PASS" (from attempt 1). The Phase 6 auditor accepted the
+      author's annotation without re-deriving the form.
+
+    flat22 "taylor-hebert-kl-122ac stays at the sept-corner" [MOVING soc-tether +0.5] —
+      "at the sept-corner" is a textbook PP-of-place, banned by line 57. The rev2 draft
+      cited "the exact form that passed at attempt 1." Prior-pass status is not schema
+      authorization. The Phase 6 auditor accepted the citation.
+
+    flat16 "septon-halvard-flea-bottom holds the silence" [HELD] — abstraction-as-object
+      ("the silence"), banned by line 60. A held bone; does not destabilize Δ arithmetic.
+      Form fault is real and the gate missed it.
+
+  The bones-review re-fire at /and-review caught all three. Phase 6 did not.
+
+  The structural gap: the Phase 6 auditor brief says "classify each bone as CORRECT or
+  FAULT-{class}" using bones.schema.md + harsh-SVO rules. It does not instruct the auditor
+  to re-derive form from the raw SVO text independently of author form annotations. Without
+  that instruction, a revise context — where the author has already labeled bones with form
+  verdicts ("unchanged PASS", "passed at attempt 1", "whitelist-licensed") — creates pressure
+  for the auditor to defer to the label rather than re-derive. The author's annotation acts as
+  a surrogate gate-pass, and the auditor's independent classification collapses into
+  annotation-acceptance.
+
+  This is not a gate-existence gap. The gate has the right checks (FAULT-FORM per
+  bones.schema.md line 57/60). The brief gap is the absence of an explicit re-derivation
+  instruction: the auditor must re-derive from raw text, not from the author's prior verdict.
+  One sentence in the Phase 6 brief closes the gap.
+
+  Note on context pressure: the DEC-0052 one-attempt cap amplified the pressure to accept
+  near-miss forms on the final permitted attempt. The cap was correct (DEC-0052). The brief
+  gap is independent of the cap and exists on any revise cycle where the author annotates
+  unchanged bones with prior verdicts.
+
+  Recurrence count: 1 (first cross-chapter instance of auditor accepting author self-assessment
+  on MOVING bones with PP/abstraction violations). Non-catastrophic — caught by /and-review
+  bones at cost of one revise cycle. Proposing at first occurrence rather than waiting because:
+  (a) the spec omission is precisely discriminated — one instruction absent from the Phase 6
+  brief; (b) not a taste call but a re-derivation procedure gap; (c) every revise cycle on any
+  chapter carries the same bypass risk when the author annotates unchanged bones; (d) S-cost.
+
+  Distinct from PROP-0024: PROP-0024 targets Phase 1 argument-spine bone-authoring (what the
+  screen-writer authors). This proposal targets Phase 6 auditor re-derivation discipline (how
+  the auditor classifies bones the author has already annotated). Different phase, different
+  agent, different gap class. Both are open and independent.
+evidence_refs:
+  - "active-project/staff/reviews/bones-b01c07-2026-05-30.md — fault-001 (flat15 PP 'in the argument': rev2 marked 'unchanged PASS'; Phase 6 did not re-audit); fault-002 (flat22 PP 'at the sept-corner': rev2 cited 'exact form that passed at attempt 1'; Phase 6 accepted); fault-003 (flat16 'holds the silence': abstraction-as-object)"
+  - ".claude/commands/and-write.md — Phase 6 §Per-bone verification (auditor): 'classify each bone as CORRECT or FAULT-{class}' per bones.schema.md + harsh-SVO rules — no re-derivation instruction; no prohibition on accepting author form annotations"
+  - "schemas/bones.schema.md — line 57 (no PP modifiers of place/direction/time/instrument/accompaniment on bone SVOs) + line 60 (concrete object requirement: no abstraction-as-object)"
+  - "staff/admin/decisions.md — DEC-0052 (one-attempt cap context; cap was correct call; brief gap is independent)"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-write.md, Phase 6 §Per-bone verification (auditor), before the
+  "Moving bones", "Held bones", "Chatter bones" sub-sections, add:
+
+    **Re-derivation rule (mandatory in revise mode and redo mode).** For every bone in scope —
+    including bones the author or screen-writer has annotated with a prior verdict ("unchanged
+    PASS", "whitelist-licensed", "form passed at attempt N", "prior-pass status") — the auditor
+    MUST re-derive SVO form from the raw bone text against bones.schema.md. Author form
+    annotations are NOT accepted as a substitute for independent re-derivation.
+
+    Specifically check: (1) does the SVO core (subject–verb–object) contain a prepositional
+    phrase modifier appended to it (PP of place/direction/time/instrument/accompaniment —
+    banned by line 57)? (2) Is the object an abstract noun rather than a concrete referent
+    (banned by line 60 — "the argument," "the silence," "the weight," "the truth" are canonical
+    examples; replace-with-concrete-noun test: if the SVO stops making sense as a physical
+    event when you replace the object with a concrete noun, the object is an abstraction)?
+    (3) Is the verb a perception, interiority, or cognition verb (banned generally)?
+
+    A MOVING or HELD bone that fails any of these checks is FAULT-FORM regardless of prior
+    annotation. The rev2 bypass case (b01c07: "stays in the argument" marked "unchanged PASS"
+    — PP modifier; "stays at the sept-corner" marked "prior-pass" — PP-of-place; "holds the
+    silence" — abstraction-as-object) is the canonical evidence that author annotations cannot
+    substitute for this check. All three were caught by /and-review bones after Phase 6 passed
+    them.
+
+  Additionally, recommend (but defer to principal) adding a mechanical pre-screen before the
+  auditor's semantic classification step: regex-scan every MOVING bone's raw SVO text for
+  preposition strings (in / at / on / with / to / across / through / around / from / into +
+  following noun phrase) and any object match against a short abstraction-noun list (argument /
+  silence / tension / weight / uncertainty / void / truth / meaning). Any regex match on a
+  MOVING bone → flagged for mandatory re-derivation regardless of author annotation. This
+  mechanical pre-check makes the re-derivation rule self-enforcing under any context pressure.
+  Principal's call whether to add this as a formal Phase 6 sub-step or as an auditor-dispatch
+  note.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0026
+
+```yaml
+id: PROP-0026
+created_at: 2026-05-31T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/audience/facets-audience-gate-r1.md
+  source_verdict: "/and-facets b01c07 Phase 5b cycle-1 FAIL (7 PASS / 4 FAIL); dialogue-taylor FAIL on no-winner-invariant violation"
+  gate_path: .claude/commands/and-facets.md#phase-5b
+  secondary_gate_paths: [.claude/commands/and-write.md#phase-1.5, .claude/commands/and-facets.md#phase-3]
+target:
+  type: command
+  path: .claude/commands/and-facets.md
+  section: "Phase 3 — R2 fanout / R2 dialogue-judge dispatch brief"
+change_type: modify
+rationale: |
+  b01c07 is a HINGE/ARGUMENT chapter with PASS-CHUNK-VOICE-RISK. The substance contract for
+  argument chapters carries a no-winner invariant: neither party prevails; the chapter ends
+  unresolved. The dialogue-taylor entry [taylor:1] @19 closed with "She's why I'm in Flea Bottom
+  at all" — a spoken motive that converts Wenna Cobb's death from cost into self-justification,
+  making Taylor the winner of an exchange the chapter is built to leave undefeated.
+
+  Two independent reviewers at Phase 5b (dark-fantasy-reader + worm-canon-pedant) independently
+  flagged the SAME sentence as the fault. The dialogue-writer at Phase 1.5 passed it — the
+  Phase 1.5 dispatch is blind to facets and chapter-substance invariants are not in the
+  dialogue-writer brief beyond behavior-card fences. The R2 dialogue-judge at Phase 3 passed it
+  — the rubric's Q2 is limited to behavior-card hard-fences (forbidden vocabulary, Earth-Bet,
+  monument naming), and the R2 dispatch brief does not carry chapter-class substance invariants.
+  The Phase 5 mechanical auditor passed it — no card-fence violation; the no-winner invariant
+  is not in the CONSTRAINT class. Only Phase 5b audience adversarial review caught it.
+
+  The structural gap: the R2 dialogue-judge brief does not thread chapter-level substance
+  contracts (specifically: argument-chapter invariants like no-winner, cost-vs-justification
+  prohibition, and unresolved-outcome requirements) into the Q2 check. These invariants are
+  not behavior-card properties — they are properties of the chapter's substance contract
+  (`chapters[<slug>].dramatic_shape` + `chapters[<slug>].goal` + the substance_delta's
+  invariant block if present). The dialogue content must not violate them even when it is
+  card-affirmative and card-fence-clean.
+
+  This is distinct from PROP-0024 (argument-spine bone-authoring at /and-write Phase 1 step 2).
+  That proposal targets what the bones record (observable physical acts vs. abstract arrivals).
+  This proposal targets what dialogue says relative to chapter-substance invariants (a completed
+  ARGUMENT chapter's no-winner invariant vs. dialogue that declares a winner). Different gate
+  (Phase 3 R2 dialogue-judge brief vs. Phase 1 screen-writer brief), different agent, different
+  constraint source. Both can fire on the same chapter; they are complementary, not overlapping.
+
+  The fix is to add a chapter-class substance constraint block to the Phase 3 R2 dialogue-judge
+  dispatch brief, gated on the same predicate as PROP-0024's Phase 1 constraint:
+    (a) `chapters[<slug>].chunk_cold_read.verdict = PASS-CHUNK-VOICE-RISK`, OR
+    (b) `chapters[<slug>].dramatic_shape` resolves to argument / persuasion / deliberation class.
+
+  On argument chapters, the R2 judge's Q2 check must additionally verify each utterance against
+  the chapter's substance contract invariants — specifically, the no-winner / cost-vs-justification
+  class: any utterance that would make one interlocutor the victor of an unresolved argument, or
+  converts a cost-paid event into a self-justifying motive, is a Q2 violation even when
+  card-fence-clean.
+
+  This is change_type: modify on the existing Phase 3 R2 dispatch brief, not a new gate.
+  The R2 dialogue-judge is already dispatched; the substance-contract coupling is the only
+  addition. The rubric's two-question gate (Q1 + Q2) already exists; the proposal extends Q2's
+  scope on argument chapters.
+
+  Recurrence count: 1 (first argument chapter in the project). Non-catastrophic (caught at
+  Phase 5b, resolved cycle-2). Proposing at first occurrence because:
+  (a) The gap is a precise spec omission — argument-chapter substance invariants are not in
+      the R2 brief's Q2. Not a taste call.
+  (b) Deterministic recurrence: every argument chapter's dialogue will be reviewed by an R2 judge
+      that does not check chapter-substance invariants unless this proposal is implemented.
+  (c) S-cost: one constraint block in the Phase 3 dispatch brief section for dialogue judges,
+      gated on the same predicate as PROP-0024.
+  (d) PROP-0024's predicate infrastructure is already proposed — this proposal piggybacks the
+      same activation gate.
+
+evidence_refs:
+  - "active-project/staff/audience/facets-audience-gate-r1.md — §D dialogue-taylor FAIL: 'She's why
+    I'm in Flea Bottom at all' — dark-fantasy: card no-self-justification-to-the-room prohibition;
+    worm-canon: card-forbidden spoken-motive-to-interlocutor register; two-persona convergence,
+    same sentence; high-confidence FAIL."
+  - ".claude/commands/and-facets.md — Phase 3 R2 dialogue-judge dispatch brief: rubric-dialogue.md
+    Q2 'card not violated' — scoped to behavior-card hard fences only; no chapter-substance contract
+    check."
+  - "staff/dialogue-writer/rubric-dialogue.md — §Hard fences: Earth-Bet proper-noun scan +
+    monument naming + forbidden vocabulary from behavior card. No chapter-class substance invariants."
+  - ".claude/commands/and-write.md — Phase 1.5 dispatch: 'blind to other facets; forbidden inputs:
+    facet rubrics (no facets exist yet)' — chapter-substance contracts are explicitly excluded from
+    Phase 1.5 dispatch at authoring time."
+  - "staff/admin/process-proposals.md — PROP-0024 (argument-spine bone-authoring constraint at Phase 1
+    step 2; activation predicate PASS-CHUNK-VOICE-RISK or argument dramatic_shape — same predicate
+    proposed here for R2 dialogue-judge; distinct target and failure class)."
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-facets.md, Phase 3 R2 fanout section, in the R2 dialogue-judge dispatch
+  brief (the section that covers the judge's decision mandate: KEEP / DELETE / REWRITE), add a
+  new Q2-extension block after the existing Q2 ("card not violated") description:
+
+    **Q2 extension: chapter-class substance invariant check (fires on argument/deliberation chapters).**
+
+    Activation predicate (check either condition):
+      (a) `chapters[<slug>].chunk_cold_read.verdict = PASS-CHUNK-VOICE-RISK`
+      (b) `chapters[<slug>].dramatic_shape` resolves to argument / persuasion / deliberation /
+          negotiation class
+
+    If the predicate fires, the R2 dialogue-judge must additionally verify every utterance — KEEP
+    candidates included — against the chapter's substance contract invariants. Read:
+      - `chapters[<slug>].goal` (the chapter's declared outcome/intent)
+      - `chapters[<slug>].dramatic_shape` (the structural shape; unresolved-argument, cost-landing, etc.)
+      - The scene's `substance_delta.scene_conflict` for the scene the dialogue anchor belongs to
+
+    Substance invariant violations that are NOT card-fence violations but ARE chapter-contract violations:
+
+    1. **No-winner violation.** On a chapter whose dramatic_shape is argument / deliberation /
+       unresolved, any utterance that would make one interlocutor the definitive winner of the
+       exchange is a Q2 violation. Markers: the speaker explicitly states they have prevailed,
+       declares a victor position, or converts a shared cost into personal justification for their
+       position. Example: on a chapter built around the no-winner invariant (b01c07: Wenna Cobb's
+       death as unresolved cost, not a justification for any position), an utterance that frames
+       the death as "why I'm in this place" converts cost into self-justification — the speaker
+       names the cost as evidence that their position is right, which is the no-winner invariant's
+       exact prohibition.
+
+    2. **Cost-vs-justification violation.** A cost-paid event (a death, a sacrifice, a loss) that
+       the chapter tracks as substance-axis movement (moral_legibility, position, community axis)
+       must not be rendered in dialogue as a justification for the speaker's position or presence.
+       The cost is a cost; dialogue that converts it into "the reason I do X" re-frames it as
+       benefit. This is the spoken-motive-to-interlocutor prohibition — making the cost serve the
+       speaker's argument is a substance fault regardless of card-register.
+
+    On detecting a substance invariant violation:
+    - Classification: DELETE (if the violation is the core function of the entry) or REWRITE
+      (if the violation is a closing sentence / final clause while the entry body is clean — as in
+      b01c07 where the entry closed cleanly on "She's the first name in the count" with the
+      invariant violation only in the final sentence "She's why I'm in Flea Bottom at all").
+    - The judge must name the violated invariant in the decision-shard: "SUBSTANCE-INVARIANT:
+      [no-winner | cost-vs-justification] — entry [id] at @[anchor] violates [goal/dramatic_shape]
+      because [one-line reason]."
+    - A REWRITE disposition follows the existing multi-draft + chosen-mark protocol; the judge
+      must note which draft avoids the invariant violation.
+
+    This Q2 extension does NOT override the standard card-fence Q2. Both checks are AND-gated:
+    an entry must pass both card-fence Q2 AND chapter-substance-invariant Q2 to receive KEEP.
+
+  Additionally, the R2 dialogue-judge's required inputs (Phase 3 dispatch payload) should include:
+    - `chapters[<slug>].goal` (already accessible from showrunner memory)
+    - `chapters[<slug>].dramatic_shape`
+    - `chapters[<slug>].scenes[].scene_conflict` (for the scenes whose dialogue the judge reviews)
+
+  These are already in showrunner memory and do not require new artifacts. The dispatch payload
+  block in Phase 3 should name them explicitly for dialogue judges on argument chapters.
+
+  SCOPE NOTE:
+  The Q2 extension fires only on argument/deliberation chapters (per the activation predicate).
+  On non-argument chapters (action, revelation, grief, threshold, etc.), the standard Q1 + Q2
+  behavior-card discipline applies unchanged. The predicate ensures the extension doesn't
+  over-fire on chapter classes where the no-winner / cost-vs-justification distinction is
+  not load-bearing.
+
+  PHASE 0 INTEGRATION NOTE:
+  Phase 0 already reads `chapters[<slug>].chunk_cold_read.verdict` (per PROP-0019/0024 wiring).
+  If PASS-CHUNK-VOICE-RISK is present, the Phase 0 brief surfacing block should include:
+  "Argument-substance constraint active at Phase 3 R2 dialogue-judge: Q2 extended to include
+  no-winner / cost-vs-justification chapter invariant check."
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0027
+
+```yaml
+id: PROP-0027
+created_at: 2026-05-31T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/audience/facets-audience-gate-r1.md
+  source_verdict: "/and-facets b01c07 Phase 5b cycle-1 FAIL — fixer recast sensory:4@22 to modality `proprioceptive`; grounding-ledger grd-002 satisfied_by became stale"
+  gate_path: .claude/commands/and-facets.md#phase-5b
+  secondary_gate_paths: [.claude/commands/and-facets.md#phase-4.6]
+target:
+  type: command
+  path: .claude/commands/and-facets.md
+  section: "Phase 5b — remediation cycle / fixer dispatch protocol"
+change_type: modify
+rationale: |
+  The grounding-ledger mechanism was introduced by PROP-0022 (URI-READABILITY-TWIN, 2026-05-29).
+  b01c07 is the first live chapter to use it. The grounding-ledger at
+  `active-project/staff/showrunner/grounding-ledger-b01-c07.md` carried grd-002, a
+  GROUNDING-REQUIRED entry with:
+    satisfied_by: sensory:4  (once Phase 4.6 added the grounding entry)
+    status: satisfied
+
+  At Phase 5b cycle-1, the audience-gate callouts included a fix to sensory:4@22: the entry was
+  a discrete-modality problem (cumulative re-registration, not a discrete delta) as well as a
+  grounding-ledger grd-002 licensed-grounding entry. The cycle-1 fixer recast the entry's
+  modality and content to a discrete proprioceptive event (which separately introduced the
+  schema-invalid modality `proprioceptive` — Pattern 2 from DEC-0055). This recast made the
+  grounding-ledger's satisfied_by field stale: grd-002.satisfied_by pointed to sensory:4, but
+  sensory:4's content was now different from what satisfied the grounding requirement.
+
+  The structural gap: the Phase 5b remediation cycle's fixer dispatch brief does not include a
+  coupled-record-update step for the grounding-ledger. The fixer is dispatched with: consolidated
+  audience-gate callouts + facet rubrics + Phase 5 audit report. The grounding-ledger is present
+  in the auditor's inputs (Phase 5 reads it) but is not in the fixer's briefing as a coupled
+  artifact whose `satisfied_by` references may need update when the fixer touches a sensory entry.
+
+  The fix is a single instruction in the Phase 5b fixer dispatch protocol: when the fixer makes
+  changes to any sensory entry (RECAST, REWRITE, DELETE), it must check whether any open or
+  satisfied grounding-ledger entry has `satisfied_by` pointing to the modified entry. If so:
+    - RECAST (same entry id, new content): update the grounding-ledger `satisfied_by` to confirm
+      the recast still satisfies the grounding requirement, or downgrade to `status: open` if the
+      recast no longer serves the GROUNDING-REQUIRED purpose.
+    - DELETE: check whether the deleted entry was the grd-NNN-satisfying entry; if so, the ledger
+      entry reverts to `status: open` and must be re-satisfied before Phase 4.6 / Phase 5 pass.
+
+  This is the same coupled-record-update discipline that /and-write Phase 6 applies when modifying
+  bones that carry dialogue citations: the citation tokens must be updated when the bone changes.
+  The grounding-ledger's `satisfied_by` is the ledger analog of those citation tokens.
+
+  Recurrence count: 1 (first live chapter with a grounding-ledger under fixer operations). The
+  grounding-ledger mechanism is new (PROP-0022, 2026-05-29); no prior chapter was in a state
+  where the fixer touched a ledger-referenced sensory entry. Proposing at first occurrence because:
+  (a) Deterministic recurrence: every future fixer recast of a grounding-ledger satisfied_by
+      target will produce stale `satisfied_by`. This is not a probabilistic coincidence — it is
+      a direct consequence of the fixer not knowing the ledger coupling exists.
+  (b) The ledger mechanism is brand new — this is the first live test; a first-occurrence proposal
+      is appropriate to close the design gap before it accumulates across chapters.
+  (c) S-cost: one coupled-record-update instruction added to the Phase 5b fixer dispatch brief.
+      The fixer already receives facet files + auditor report; adding the grounding-ledger to the
+      fixer's payload + a one-paragraph update-check instruction is the minimum fix.
+
+  Note on the auditor's Phase 5 STRUCTURAL class: the grounding-ledger's satisfied_by staleness
+  is not currently in scope for the STRUCTURAL scan (which checks schema/format/integrity of
+  facet entries, not ledger-facet coupling). Adding a STRUCTURAL check for stale satisfied_by
+  references is a possible secondary fix, but the primary gap is the fixer brief — if the fixer
+  updates the ledger correctly, there is nothing for the STRUCTURAL scan to find. The fixer-brief
+  fix is the minimum-blast-radius closure.
+
+evidence_refs:
+  - "active-project/staff/audience/facets-audience-gate-r1.md — §B sensory FAIL: sensory:4@22 is a
+    grd-002 licensed-grounding entry; fix: 'recast the modality to a discrete proprioceptive or
+    sound event... preserve the grd-002 grounding (cap-exempt, keep the licensed-grounding-exception:
+    grd-002 tag)' — the callout preserves the grounding requirement, but the fixer's recast must
+    update the satisfied_by pointer"
+  - ".claude/commands/and-facets.md — Phase 4.6 Step 1: 'Re-run build_cite_index.py. Stamp each
+    satisfied ledger entry satisfied + satisfied_by.' — shows satisfied_by is set at Phase 4.6;
+    Phase 5b fixer dispatch has no corresponding update-check instruction"
+  - ".claude/commands/and-facets.md — Phase 5b remediation cycle §fixer dispatch: 'Dispatch fixer
+    with the consolidated callouts + the facet rubrics. Fixer routes per-entry' — grounding-ledger
+    not listed as a fixer input artifact; no coupled-record-update instruction"
+  - ".claude/commands/and-facets.md — Phase 5 auditor inputs: 'Grounding-ledger: active-project/
+    staff/showrunner/grounding-ledger-<book>-<chapter>.md if present' — ledger is in auditor payload
+    but not explicitly in the fixer payload"
+  - "staff/admin/decisions.md — DEC-0055 (pattern 3 analysis: deterministic recurrence; first-occurrence
+    override justified by new mechanism + deterministic gap)"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-facets.md, Phase 5b remediation cycle section, in the fixer dispatch
+  block (the paragraph that reads "Dispatch fixer with the consolidated callouts + the facet
+  rubrics..."), add the grounding-ledger to the fixer's required payload and add a coupled-record
+  update instruction:
+
+  CHANGE 1 — Add grounding-ledger to the fixer dispatch payload:
+
+    Current fixer payload (inferred from command body):
+      - consolidated audience-gate callouts (deduped per §Consolidated callouts structure)
+      - facet rubrics for the affected facets
+      - Phase 5 audit report (final cycle)
+
+    Proposed addition to payload:
+      - **Grounding-ledger (if present):** `active-project/staff/showrunner/grounding-ledger-<book>-<chapter>.md`
+        Include on every fixer dispatch, not just when a sensory callout is present. The fixer
+        cannot know whether a callout touches a ledger-referenced entry without reading the ledger.
+
+  CHANGE 2 — Add a coupled-record update instruction to the fixer's remediation scope:
+
+  After the existing per-entry routing instructions ("small revisions to the facet file directly;
+  cross-facet conflicts to the responsible author via Agent"), add:
+
+    **Grounding-ledger coupling check (mandatory when any sensory entry is modified).**
+
+    When the fixer RECASTS, REWRITES, or DELETEs any sensory entry, it MUST:
+
+    (1) Read the grounding-ledger for the chapter.
+    (2) Check every grounding-ledger entry's `satisfied_by` field. If `satisfied_by` names the
+        entry being modified (match by entry ID, e.g. `satisfied_by: sensory:4`):
+
+        Case RECAST (same entry ID, new modality/content):
+          Re-evaluate whether the recast entry still satisfies the grounding requirement the
+          ledger line was opened for (the `item` + `licensed_at` fields describe the GROUNDING-REQUIRED
+          finding; the satisfied entry must still provide discrete concrete grounding at the
+          named anchor). If yes: update no fields other than optionally a `satisfied_by_recast: true`
+          annotation. If no (the recast changes the nature of the grounding): stamp
+          `status: open` + `satisfied_by: null` + add a note:
+          "re-opened by Phase 5b fixer recast at [timestamp]; original satisfy source removed".
+          A re-opened ledger entry is a new open GROUNDING-REQUIRED: if cycle-budget remains,
+          re-dispatch the sensory author to author a replacement grounding entry; if at cap-burn,
+          the entry cannot be satisfied and the chapter ships with GROUNDING-UNRESOLVED noted
+          in the grounding-ledger (non-blocking — carried to /and-stitch Phase 4 as a voice-
+          embodiment advisory).
+
+        Case DELETE:
+          The deleted entry can no longer satisfy the ledger requirement. Stamp
+          `status: open` + `satisfied_by: null` + note: "re-opened by Phase 5b fixer DELETE at [timestamp]".
+          Same routing as RECAST-no above.
+
+    (3) If no grounding-ledger entry has `satisfied_by` matching the modified entry, no update needed.
+
+  AUDITOR SECONDARY NOTE (optional; may be deferred to principal triage):
+    Consider adding a cross-check to the Phase 5 auditor's STRUCTURAL class: for each entry in the
+    grounding-ledger with `status: satisfied` and a `satisfied_by: sensory:<id>`, verify that the
+    sensory facet file contains an entry with that ID and that the entry's `licensed-grounding-exception`
+    tag references the correct ledger entry ID. A mismatch (entry deleted; entry ID changed; tag
+    missing) is STRUCTURAL-GROUNDING-LEDGER-STALE — HARD. This makes the stale-satisfied_by
+    condition self-detecting at the next Phase 5 scan, independent of whether the fixer explicitly
+    updated the ledger. If accepted: adds one STRUCTURAL sub-check to the auditor scan spec with no
+    other command-body changes.
+    Cost if added: S. Can be accepted or deferred independently of the fixer-brief primary fix.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```

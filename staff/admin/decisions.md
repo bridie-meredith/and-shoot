@@ -2783,3 +2783,348 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0053 | 2026-05-30 | SLOW (user-proxy)
+
+question: |
+  /and-review bones b01c07 returned aggregate FAIL (3 HARD SVO-form findings) after a premature
+  verdict write committed by the main session. Routing decision: (A) /and-write b01c07 revise
+  (surgical recast of flat15/22/16), then re-run /and-review bones, then resume cascade; (B)
+  accept the 3 forms as bone-gate-passed and proceed to /and-facets past the HARD notes; (C)
+  escalate to human.
+  Sub-questions: 1-attempt cap for the revise? Acceptable witness forms for soc-tether +0.5
+  on argument-staying bones? Process note on the premature-verdict error?
+
+context: |
+  The 3 HARD findings per auditor:
+    - flat22 "taylor-hebert-kl-122ac stays at the sept-corner" [MOVING soc-tether +0.5]:
+      PP modifier "at the sept-corner" — bones.schema.md line 57 bans PP modifiers of place.
+      Unambiguous violation.
+    - flat15 "taylor-hebert-kl-122ac stays in the argument" [MOVING soc-tether +0.5]:
+      PP modifier "in the argument" + "the argument" as abstraction-as-object. Defensible HARD.
+    - flat16 "septon-halvard-flea-bottom holds the silence" [HELD]:
+      "the silence" is abstraction-as-object under holds-verb. Held bone, no Δ-arithmetic impact.
+  flat15 and flat22 are the sole carriers of soc-tether +1.0 for the chapter.
+  DEC-0052 authorized attempt-3 brief with "taylor stays at the sept corner" as the template
+  form for soc-tether witnessing — that exact form is now flagged HARD for the PP modifier.
+  The /and-write Phase 6 bone-gate passed all three forms on rev2. /and-review bones caught them
+  independently — the mandatory gate working as designed.
+  Premature-verdict error: main session wrote aggregate verdict "PASS-WITH-NOTES /and-facets
+  cleared" before the auditor fork returned. Record corrected at commit 8c69892.
+
+options:
+  A: /and-write b01c07 revise — surgical recast of flat15/flat22/flat16 to PP-free/concrete-object
+     forms. Re-run /and-review bones. Resume cascade. Honors schema + gate.
+  B: Accept 3 forms as bone-gate-passed; proceed to /and-facets knowingly past schema-violating bones.
+  C: Escalate to human — reopens DEC-0052 territory; process error may warrant human attention.
+
+decision: |
+  Option A. Route to /and-write b01c07 revise (surgical: flat15/flat22/flat16 only).
+  1-attempt hard cap then escalate to human.
+  Acceptable witness forms for soc-tether +0.5: bare intransitive "taylor stays" (no PP,
+  no object) or reassign one Δ to a speech bone. flat16: "septon-halvard-flea-bottom waits"
+  or equivalent bare intransitive. No PP modifiers; no abstraction-as-direct-object.
+  Process note on premature-verdict error: operator/session discipline failure; no spec or
+  process change warranted — the downstream gate caught the pass-through as designed.
+
+basis: |
+  goal:1 (pipeline correctness — option B knowingly ships schema-violating bones; that sets
+  precedent that /and-review HARDs are advisory, which erases the gate's authority) +
+  methodology:3a (reversibility — A is targeted 3-bone revise; B is irreversible precedent) +
+  DEC-0052 (1-attempt-cap-then-escalate is the established protocol on this chapter's
+  argument-bone difficulty)
+
+rationale: |
+  Option B is not viable. The /and-review bones gate exists as an independent SVO-form check
+  on /and-write's Phase 6. Knowingly proceeding past its HARD findings because Phase 6 passed
+  them would erase the gate's function — the system caught three schema violations precisely
+  because the independent re-fire is separate from Phase 6. Accepting them as "bone-gate-passed"
+  (a term that belongs to Phase 6, not /and-review) is a category error that would corrupt
+  downstream facets and stitch. Schema line 57 is not ambiguous on PP modifiers of place.
+
+  Option C is not warranted. The schema is unambiguous; the recast options are clear; the
+  DEC-0052 precedent already governs the 1-attempt-cap protocol. This is not a design question
+  requiring the principal — it is an operational recast with clear form constraints. The
+  principal's attention should be reserved for when the attempt fails (at which point the claim
+  is genuinely architectural: PP-ban + abstraction-ban + argument-interior content = irreconcilable
+  constraint on soc-tether witnessing).
+
+  Form guidance for the revise brief (mandatory):
+    flat22: "taylor-hebert-kl-122ac stays" (bare intransitive) witnesses soc-tether +0.5.
+            Zero PP tail. This form is distinct from attempt-3's "stays at the sept-corner"
+            (which added the HARD PP) — remove the location phrase entirely.
+    flat15: "taylor-hebert-kl-122ac stays" (same bare form, different scene-beat witnesses
+            the second +0.5). Two separate "stays" bones at different beats is not duplication;
+            they witness distinct moments of commitment. Alternatively, reassign one +0.5 to
+            a speech bone ("taylor speaks to halvard" with soc-tether +0.5) if the screen-writer
+            judges two bare-stays too close in a 3-bone window.
+    flat16: "septon-halvard-flea-bottom waits" or "septon-halvard-flea-bottom stands" or
+            "septon-halvard-flea-bottom turns" — any bare physical-positional intransitive.
+            HELD bone; only form correction required; Δ is already 0.
+
+  Hard prohibitions for all three recasts: no "at X" / "in X" / "with X" PP tails; no
+  abstraction-as-direct-object (the silence / the argument / the answer / the offer as
+  direct objects of holds/carries/sets). Intransitive or speech-bone forms are the safe lane.
+
+  DEC-0052's brief explicitly nominated "taylor stays at the sept-corner" as the soc-tether
+  template. That brief was produced under the diagnostic that "stays" was the physical verb
+  carrying the +0.5 — correct. The schema violation was the PP modifier, not the verb. The
+  lesson distilled: verb physicality was the right discriminator; location PP adds a schema
+  violation even when the verb passes. "taylor stays" (no location) is the clean form.
+
+  Premature-verdict note: the main session wrote an aggregate verdict before all reviewer
+  forks returned. The corrective commit (8c69892) properly restores the record. No PROP
+  warranted: (1) operator/session error, not a spec gap; (2) the gate architecture already
+  handles it — /and-review bones is designed to catch what Phase 6 misses and did; (3) a
+  "wait-for-all-forks" spec note to /and-review would be redundant with the gate's own
+  precondition ordering (the gate IS the catch). The corrected commit is the resolution.
+
+trade-off: |
+  Option A vs B: B saves ~4-6 dispatches at the cost of the gate-authority contract and
+  downstream contamination. Cost of B's precedent is unbounded across future chapters.
+  Option A vs C: C costs principal attention on a question admin can answer from schema line 57
+  + prior rulings. If the 1-attempt revise fails, C fires at that point — the correct moment.
+  1-attempt cap: narrower sub-problem than DEC-0052 (3 bones, clearer constraints, "stays" bare
+  form validated by being the near-miss that almost passed). If the screen-writer cannot produce
+  3 schema-clean witnesses in one attempt with this brief, that is the architectural claim.
+
+follows: DEC-0052
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0054 | 2026-05-30 | SLOW (process-critic)
+
+question: |
+  /and-review bones b01c07 FAIL: 3 HARD SVO-form faults (flat15 PP "in the argument",
+  flat22 PP "at the sept-corner", flat16 holds-abstraction). All three passed the /and-write
+  Phase 6 bone-gate on rev2. Process questions: (1) is there a recurring gap where Phase 6
+  trusts the author's form self-assessment rather than re-deriving it? (2) does a mechanical
+  PP/abstraction-object lint belong in /and-write Phase 6? (3) does the premature-verdict
+  commit warrant a process change?
+
+context: |
+  source_report: active-project/staff/reviews/bones-b01c07-2026-05-30.md
+  source_verdict: FAIL (3 HARD: flat15/22/16)
+  gate_path: .claude/commands/and-review.md#bones
+  secondary_gate_paths: [.claude/commands/and-write.md#phase-6]
+
+  Key facts:
+  - All three HARD SVO-form violations are mechanical (PP-of-place, PP-of-abstract-location,
+    abstraction-as-object) banned by bones.schema.md lines 57/60.
+  - Rev2 draft explicitly self-asserted "unchanged PASS" (flat15) and "exact form that passed
+    at attempt 1" (flat22) for the two MOVING bones. Phase 6 auditor accepted these annotations
+    without re-deriving from raw text.
+  - The DEC-0052 one-attempt cap contributed context pressure but is independent of the spec gap.
+  - Premature aggregate verdict was committed (6e6f0f6) before the auditor fork returned; corrected
+    at 8c69892. DEC-0053 noted this was operator/session error, not a spec gap — no process change.
+  - /and-review bones re-fire caught all three. The gate-chain functioned as designed.
+
+options: n/a (process-critic mode)
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0025
+
+basis: |
+  Content-vs-process discrimination Q1 (recurring self-assessment bypass?): yes, the gap is
+  real. The Phase 6 brief instructs "classify each bone as CORRECT or FAULT-{class}" but does
+  not instruct the auditor to re-derive form from raw text independently of author annotations.
+  In revise mode, when the author labels unchanged bones "unchanged PASS" or cites prior-pass
+  status, the auditor's independent classification is at risk of collapsing into annotation-
+  acceptance. This happened: flat15 and flat22 were accepted on their annotations, not re-
+  derived. The gate that should have caught them (Phase 6) did not; the next gate (bones re-fire)
+  did. A one-sentence re-derivation instruction in the Phase 6 brief closes the gap.
+
+  Q2 (mechanical PP lint belong in Phase 6?): yes, optionally. The bones.schema.md form rules
+  are mechanical enough to admit a regex pre-screen (preposition + noun-phrase on MOVING bones;
+  abstraction-noun objects). This would make re-derivation self-enforcing. Surfaced in the
+  proposal but deferred to principal on whether to implement as a formal sub-step vs. an
+  auditor-dispatch note.
+
+  Q3 (premature verdict commit): DEC-0053 correctly disposed this as operator/session error, not
+  a spec gap. /and-review already has the downstream catch architecture; the /and-review bones
+  re-fire IS the gate that caught the pass-through. Adding "wait for all forks" to the spec would
+  be redundant with the gate's own ordering. OK — no proposal warranted.
+
+  Prior proposals check: PROP-0009 (Phase 1 cadence-reference guidance) and PROP-0024 (Phase 1
+  argument-spine constraint) both target Phase 1. PROP-0007 (Phase 1 compound-noun economy +
+  Phase 6 SIGNAL table) targets Phase 1 step 5 and a SIGNAL addition. None targets Phase 6
+  auditor re-derivation discipline. No prior open proposal matches target.path +
+  change_type for this specific gap. Proceeding to author.
+
+  Recurrence count: 1 first cross-chapter instance. Non-catastrophic (caught by /and-review
+  bones). Proposing at first occurrence because: (a) spec omission is precisely discriminated;
+  (b) the bypass risk exists on every revise cycle where author labels unchanged bones; (c) S-cost.
+
+rationale: |
+  The /and-review bones subcommand is designed to be the independent re-fire that catches what
+  Phase 6 misses. That is exactly what happened here — system functioned as designed. The
+  process question is whether Phase 6 should have caught these forms first (avoiding the re-fire
+  loop). It should: bones.schema.md lines 57 and 60 are unambiguous mechanical rules the auditor
+  can apply from raw text in under two seconds per bone. The bypass was the author's self-
+  annotation reaching the auditor as a pre-classified verdict rather than as a raw SVO to verify.
+
+  The fix is not a new gate — it is a re-derivation instruction on the existing gate. The
+  instruction is: "treat the raw bone text as the evidence; treat author annotations as noise."
+  This is S-cost: one paragraph added to the Phase 6 auditor brief, at the opening of the Per-
+  bone verification section, before the moving/held/chatter sub-sections.
+
+trade-off: |
+  Proposing at first occurrence vs. waiting for recurrence: the bypass risk is structural (exists
+  on every revise cycle) and the fix is S-cost. The "wait for recurrence" rule exists to prevent
+  premature promotion of taste calls; this is not a taste call. The bones.schema.md form rules
+  are mechanical. The escape happened because the brief lacked one instruction. Cost of not
+  proposing: the same bypass is possible on every future revise cycle where the author labels
+  unchanged bones with prior-pass annotations.
+
+  On the premature-verdict process question: the correct answer is OK. The gate architecture
+  already ensures correctness — /and-review bones is the designed catch, and it caught. Adding
+  a spec rule to the review command about fork-return ordering would address the correct-but-
+  early commit artifact, not the gate gap. The correction commit is sufficient.
+
+follows: DEC-0053
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0055 | 2026-05-31 | SLOW (process-critic)
+
+question: |
+  /and-facets b01c07 Phase 5b cycle-1 FAIL (7 PASS / 4 FAIL); resolved at cycle-2 PASS.
+  Three patterns to evaluate:
+  (1) Dialogue substance fault (no-winner invariant in argument chapter) surfacing only at
+      Phase 5b — is there a process gap where argument-chapter substance invariants aren't
+      checked at the R2 dialogue-judge stage?
+  (2) Fixer-introduced schema-invalid sensory modality (proprioceptive, not in closed enum
+      sound|light|smell|thermal|humidity|pressure|tactile) caught at cycle-2 Phase 5 audit
+      but not at cycle-1 Phase 5 audit — is there a fixer brief gap or auditor scope gap?
+  (3) Grounding-ledger satisfied_by stale on fixer recast (the entry the ledger pointed to
+      was recast, making the satisfied_by reference stale) — is there a process gap in the
+      fixer protocol for ledger-coupled records?
+
+context: |
+  source_report: active-project/staff/audience/facets-audience-gate-r1.md
+  source_verdict: FAIL (7/4; remediated cycle-2 PASS; 2 cycles, cap not reached)
+  gate_path: .claude/commands/and-facets.md#phase-5b
+  secondary_gate_paths: [.claude/commands/and-facets.md#phase-4.6,
+                         .claude/commands/and-write.md#phase-1.5]
+
+  Chapter class: HINGE/ARGUMENT, PASS-CHUNK-VOICE-RISK.
+  Pattern 1 detail: dialogue-taylor @19 "She's why I'm in Flea Bottom at all" — two independent
+    reviewers (dark-fantasy, worm-canon) converged on SAME finding: the line converts Wenna Cobb's
+    death from cost to self-justification, breaking the chapter's no-winner invariant. The
+    dialogue-writer (Phase 1.5) and R2 dialogue-judge (Phase 3) both passed it. Phase 5 mechanical
+    audit passed it (no card-fence violation). Phase 5b audience found it.
+  Pattern 2 detail: cycle-1 fixer recast sensory:4@22 to modality `proprioceptive` (not in closed
+    enum). Cycle-1 Phase 5 re-audit did not catch it. Cycle-2 Phase 5 re-audit caught it; fixer
+    corrected to `pressure`. Gate ordering worked but one cycle late.
+  Pattern 3 detail: grounding-ledger grd-002 entry's satisfied_by pointed to sensory:4@22. When
+    the fixer recast sensory:4@22, satisfied_by became stale (pointing to an entry that now has
+    different content). The ledger itself is a new mechanism (PROP-0022; first live chapter).
+
+options: n/a (process-critic mode)
+
+decision: |
+  PROCESS-CHANGE-PROPOSED PROP-0026 (Pattern 1 — dialogue R2 brief lacks argument-chapter
+    substance invariants);
+  OK-FIRST-OCCURRENCE-MARKER (Pattern 2 — fixer schema-invalid modality);
+  PROCESS-CHANGE-PROPOSED PROP-0027 (Pattern 3 — grounding-ledger satisfied_by stale on
+    fixer recast)
+
+basis: |
+  Pattern 1 — PROP-0026:
+    Content-vs-process discrimination: could a stricter version of the existing R2 dialogue-judge
+    gate have caught this? Yes — if the R2 judge brief carried chapter-class substance invariants
+    (no-winner, cost-vs-justification prohibition on argument chapters), the judge would have
+    classified the line as a substance fault, not just evaluated Q1 (card-affirmative) + Q2
+    (card-fence). The rubric's Q2 is limited to behavior-card fences (forbidden vocabulary,
+    Earth-Bet fence, monument rules). The no-winner invariant is a chapter-substance contract
+    property, not a behavior-card fence. There is no existing gate between Phase 1.5 dispatch and
+    Phase 5b that checks dialogue content against chapter-level substance contracts.
+    Distinct from PROP-0024 (argument-spine bone-authoring at Phase 1 step 2) — that targets
+    what the bones record; this targets what dialogue says relative to chapter-substance invariants.
+    Different gate (Phase 3 R2 judge brief vs. Phase 1 screen-writer brief), different agent
+    (dialogue-writer vs. screen-writer), different constraint source (chapter substance contract vs.
+    bone schema). First occurrence, non-catastrophic. Proposing at first occurrence because: the
+    gap is a precise spec omission (argument-chapter invariants not in the R2 brief); the failure
+    class is structurally guaranteed on any argument chapter with a no-winner / cost-vs-justification
+    invariant; the fix is S-cost (one constraint block added to Phase 3 R2 dialogue-judge dispatch
+    brief conditioned on chapter_class or PASS-CHUNK-VOICE-RISK predicate).
+
+  Pattern 2 — OK, first-occurrence marker:
+    The Phase 5 STRUCTURAL audit class covers schema/format/integrity per facet.schema.md. The
+    closed modality enum (sound|light|smell|thermal|humidity|pressure|tactile, line 88) is an
+    explicit schema constraint. The cycle-1 Phase 5 audit missed it; cycle-2 caught it. Gate
+    ordering ultimately worked (non-catastrophic). Two candidate fix sites: (a) fixer brief
+    pre-write validation for ADD/RECAST operations on schema-enum fields; (b) auditor STRUCTURAL
+    class explicit enumeration of the sensory modality closed enum. Standard first-occurrence hold
+    applies — non-catastrophic, gate worked (one cycle late). Mark first occurrence; if the same
+    class (fixer introduces schema-invalid enum value; Phase 5 auditor misses it cycle-1) recurs
+    on any field, promote to PROP with change_type: modify on both the fixer brief and the
+    auditor STRUCTURAL scan spec. The candidate fix is small and known; hold does not lose it.
+
+  Pattern 3 — PROP-0027:
+    Content-vs-process discrimination: the grounding-ledger satisfied_by coupling is a new
+    mechanism (PROP-0022, first live chapter). Any fixer modification to a sensory entry that
+    a grounding-ledger line references via satisfied_by creates a stale reference — this is
+    deterministic. The fixer dispatch protocol at Phase 5b remediation does not include a
+    coupled-record-update step for the grounding-ledger. The fixer brief tells the fixer what
+    to fix (facet callouts) but not to check whether any modified entry is a grounding-ledger
+    satisfied_by target. First occurrence, non-catastrophic. Proposing at first occurrence because:
+    the failure is deterministic (every fixer recast of a ledger-referenced entry produces stale
+    satisfied_by); the ledger mechanism is brand-new (no prior chapter tested this coupling);
+    the fix is S-cost (one coupled-record-update instruction in the Phase 5b fixer dispatch brief).
+
+rationale: |
+  Three structurally distinct patterns. Pattern 1 is a gate-absence for dialogue + argument-chapter
+  substance contracts (no existing gate covers it). Pattern 2 is a Phase 5 STRUCTURAL scope
+  narrowness (or fixer discipline gap) — first occurrence, non-catastrophic, gate ultimately
+  worked. Pattern 3 is a fixer-protocol ledger-coupling gap — deterministic recurrence given the
+  new ledger mechanism.
+
+  Pattern 1 and Pattern 3 pass the first-occurrence override criteria: both have deterministic
+  recurrence mechanisms, both have precisely-named fixes, both are S-cost. Pattern 2 is held at
+  first occurrence: gate did catch it (one cycle late), the fault class requires two-agent
+  coincidence (fixer introducing enum error + auditor structural scan missing it cycle-1), and
+  the candidate fix can be applied on second occurrence without loss.
+
+trade-off: |
+  Proposing PROP-0026 at recurrence_count=1: justified by deterministic recurrence on any argument
+  chapter with substance invariants not in behavior-card fences. Cost of hold: the same miss
+  recurs at c08+ if c08 is also argument-class. The R2 dialogue-judge is dispatched at EVERY
+  /and-facets invocation on argument chapters; the brief gap fires every time.
+
+  Holding Pattern 2: justified because the Phase 5 STRUCTURAL scan already nominally covers
+  schema integrity. The gap may be an auditor execution miss (not a spec gap), or a scope
+  narrowness. Second occurrence will discriminate which. Cost of hold: at most one future cycle
+  of late-catch (same pattern, non-catastrophic).
+
+  Proposing PROP-0027 at recurrence_count=1: justified because the grounding-ledger mechanism
+  is new and untested in prior chapters. The satisfied_by coupling was not part of the overhaul
+  design's tested paths. No prior chapter established whether the fixer updates the ledger on
+  recast.
+
+first_occurrence_markers:
+  - Pattern 2 (fixer schema-invalid enum + Phase 5 STRUCTURAL scope miss):
+      first_occurrence: b01c07 sensory:4@22 recast to `proprioceptive` by cycle-1 fixer;
+        cycle-1 Phase 5 audit missed it; cycle-2 Phase 5 audit caught it + fixer corrected to `pressure`
+      candidate_fix_on_recur:
+        A: fixer brief — pre-write validation step for ADD/RECAST on schema-enum fields (check field
+           value against schema's declared closed enum before committing)
+        B: auditor STRUCTURAL scan — add explicit sensory modality enum validation to the scan spec
+           (enumerate each modality field value against `sound|light|smell|thermal|humidity|pressure|tactile`)
+      recur_threshold: 2 occurrences triggers PROP; candidate_fix target is both A + B (small, paired);
+        single-site fix (fixer brief) is sufficient if the STRUCTURAL scan is already nominally in scope
+        and the miss was execution-variance not spec-gap
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

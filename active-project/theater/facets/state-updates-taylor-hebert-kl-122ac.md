@@ -1,66 +1,63 @@
 facet: state-updates
-episode: b01-c06
-author: taylor-hebert-kl-122ac (impersonator, facet-authoring override mode)
-scope: actor:taylor-hebert-kl-122ac.* only (studio + props authored by studio fork)
+episode: b01c07
+author: impersonator:taylor-hebert-kl-122ac
+target-class: actor:taylor-hebert-kl-122ac (POV actor-state slice; physical/posture fields only)
 ---
 
-# rubric-carve-out — field-extensions for c06 named-delivery + omission apparatus
+# rubric-carve-out — field-extension declarations (position, posture)
 #
 # rubric-state-updates.md (design/shoot-v2/rubric-state-updates.md) § Field-extension protocol
 #
-# Carve-out scope: two new fields + three canonical scalar-axis moves on actor:taylor-hebert-kl-122ac
-#   (a) stats.relational_anchor_status_axis — canonical in state.md (value 2), scalar move +1.0 → 3
-#   (b) knowledge.body-map.wren-contact-source-field — new field-extension under knowledge.body-map
-#         (record-state analog to s01e01:64 actor:taylor.knowledge.record-state anchor + c05
-#          knowledge.courier-body-record; tracks the authored blank Taylor writes into the
-#          coverage-notes contact-source field — a record-composition aspect, not a perception)
-#   (c) stats.moral_framework_axis — canonical in state.md (value 1), scalar move -1.0 → 0
-#   (d) knowledge.named-elder-delivery-record — new field-extension (record-state; the four-name
-#          list committed irreversibly to the arrangement downstream; analog to the c05/s01e01
-#          record-state anchors)
-#   (e) stats.moral_legibility_to_self_axis — canonical in state.md (value 4), scalar move +1.0 → 5
-# Carve-out rule: each extension documented inline; knowledge/record-state ARE tracked-state
-#   aspects per rubric ACCEPT signatures; mood/register/voice-tone are NOT — none of these are those.
-# Coverage justification: the c06 chapter-goal is the first named-person delivery and the un-priced
-#   Wren omission; without the body-map omission field and the named-elder-delivery-record field the
-#   canonical write-back surface cannot record the two irreversible record-mutations the chapter
-#   exists to deliver. Margit referral to add these to the card schema is the downstream cleanup.
-#
-# Cross-facet contract (rubric § Cross-facet contract / Narrator-interest):
-# - every actor:<POV>.* entry on this file is anchored to a peak-bones-class beat from the
-#   scene-map (scene-map-b01-c06.md): @4, @8 (scene-A peak-bones); @22, @24 (scene-C peak-bones).
-#   POV actor-state requires narrator-interest co-citation on the same @id; these are the beats
-#   NI will land (the scene's hinge peaks). Co-citation expected at @4/@8/@22/@24.
-# - s02 (@10-@15) is flat-mid, peak-bones: none — ALL axes HELD per substance_delta; the compile
-#   is coverage-recall inside the existing licensed exception; the send (and thus the canonical
-#   record-mutation) fires at @22, not at the @14 compile. State-updates correctly silent across
-#   s02: the list is filled but unsent; no field flips until the seal. (Anti-pattern #7 honored:
-#   fire on the flip-beat, not the approach.)
+# Carve-out scope: the `position` and `posture` fields on actor:taylor-hebert-kl-122ac.
+# Carve-out rule: Taylor's state.md schema tracks district-level `location` (Flea Bottom Hook,
+#   unchanged this chapter) and the semantic `position_in_kl` role; it does NOT carry a
+#   fine-grained within-scene `position` or `posture` field. Both are authored here as
+#   field-extensions licit under § Field-extension protocol: posture and position are
+#   enumerated by the rubric (§Authority, anti-pattern #8) as tracked-state-aspects, NOT
+#   perceptions. Mood/register/voice-tone are excluded; these are not those.
+# Coverage justification: chunk_cold_read = PASS-CHUNK-VOICE-RISK; interiority was routed off
+#   the bones to the narrator-interest facet (rev2 deletions D1-D8). Posture is therefore the
+#   load-bearing physical layer of this chapter — the going-still → facing → planting-feet
+#   commitment (13-15) IS the engagement, enacted in body. The single posture fire below is
+#   persistent past its beat AND load-bearing on the next move (anti-pattern #8 defense), fired
+#   ONCE across the approach-to-peak commitment window, not on each rotation.
 #
 # Per-entry annotations:
-# - state:1 @4: scalar-axis move on canonical stats.relational_anchor_status_axis (peak-bone — the
-#     first spoken exchange; relational_anchor_status +1.0; dialogue-anchor [wren-...:1] on @4).
-#     2 -> 3. Persists: anchor stays at active-protection rank through chapter close and forward.
-# - state:2 @8: field-extension knowledge.body-map.wren-contact-source-field (record-state; the
-#     authored blank — Taylor writes 'ward-resident, Hook, routine' and leaves the name absent; the
-#     omission is authored, not absent; persists in the working substrate through chapter close and
-#     is still intact at @24 — the two-substrate contrast depends on this field holding). Anchored to
-#     the @8 peak-bone (the blanking IS the omission; the field flips when she writes the blank).
-# - state:3 @22: scalar-axis move on canonical stats.moral_framework_axis (peak-bone — the seal/send;
-#     moral_framework -1.0). 1 -> 0. The first named-person delivery completed after explicit
-#     accounting; cl-d06 cost side; fires on the seal (n06/@22), not the close (@20) or square (@21).
-# - state:4 @22: field-extension knowledge.named-elder-delivery-record (record-state; the four-name
-#     list sealed into the Jarvis-channel form — committed irreversibly; the courier takes it at @23;
-#     persists — the names are in the arrangement's downstream). Anchored to @22 (the seal is the
-#     irreversible commit; @23 courier-take is the physical dispatch of an already-flipped field).
-# - state:5 @24: scalar-axis move on canonical stats.moral_legibility_to_self_axis (peak-bone — the
-#     contrast recognition; moral_legibility_to_self +1.0). 4 -> 5. Opening the ward-coverage notes
-#     against the dispatched four-name list is the moment the breach becomes legible to Taylor — the
-#     four names went, the blank where Wren's name is not is intact. Fires on the open (n08/@24), the
-#     beat where the legibility flips, not the close (@25, post-move hold).
+# - state:2 @15: field-extension posture; the going-still(@13)→facing(@14)→planting(@15)
+#   commitment fired ONCE at the planted-stance peak-bone (soc-tether +0.5); orientation
+#   (facing-halvard) folded into the new value; persists through the exchange to @22.
+# - state:1 @7, state:3 @23, state:4 @25: field-extension position; within-scene position,
+#   persistent flips, fired on the flip-beat.
 
-1 @4 actor:taylor-hebert-kl-122ac.stats.relational_anchor_status_axis: 2 -> 3
-2 @8 actor:taylor-hebert-kl-122ac.knowledge.body-map.wren-contact-source-field: unauthored -> authored-blank-ward-resident-hook-routine-name-withheld
-3 @22 actor:taylor-hebert-kl-122ac.stats.moral_framework_axis: 1 -> 0
-4 @22 actor:taylor-hebert-kl-122ac.knowledge.named-elder-delivery-record: absent -> sealed-four-name-list-dispatched-cl-d06
-5 @24 actor:taylor-hebert-kl-122ac.stats.moral_legibility_to_self_axis: 4 -> 5
+1 @7 actor:taylor-hebert-kl-122ac.position: on-ward-circuit-flea-bottom -> inside-the-sept-corner
+2 @15 actor:taylor-hebert-kl-122ac.posture: in-passing-stride -> planted-facing-halvard
+3 @23 actor:taylor-hebert-kl-122ac.position: inside-the-sept-corner -> departing-into-the-lane
+4 @25 actor:taylor-hebert-kl-122ac.position: departing-into-the-lane -> clear-of-the-hook
+
+# --- Deliberate skips (skip-discipline record; not entries) ---
+# @1 completes the ward-coverage circuit — SKIP-CORRECT. s01 flat-low approach zone; position
+#    baseline is project-setup/prior-chapter carry (on-ward-circuit). Firing here = anti-pattern #9
+#    density-on-flat / establishing-state-at-a-bone-beat. The first real position flip is @7 (entry).
+# @5 receives the plain acknowledgment / @8 acknowledges halvard — SKIP-CORRECT. Perception and
+#    reciprocal-social-contact beats; no field on Taylor flips (already inside-the-sept-corner from
+#    @7; orientation not yet committed). Registration-as-state (anti-pattern #1). flat-low zone.
+# @13 goes still — SKIP-CORRECT. The arrest is the transition INTO the posture-commitment sequence
+#    (@13 still → @14 faces → @15 plants), not the persistent posture. Per anti-pattern #8 the
+#    going-still verb is not state; fire on the planted stance (@15), once across the window. The
+#    interior thesis-landing is narrator-interest territory.
+# @14 faces septon-halvard-flea-bottom — SKIP-CORRECT. The facing is the orientation WITHIN the
+#    commitment window (@13 arrest → @15 plant). Firing posture on 13+14+15 is the double-fire
+#    anti-pattern (#8). Orientation is folded into the single @15 posture value. The +0.3 pol-reg
+#    read from the facing is NI territory, not a physical-state field.
+# @18-19 names the body count / speaks to halvard — SKIP-CORRECT. No physical/posture field flips;
+#    she is already planted (@15). pol-reg +0.2 register-sharpening is interiority/voice =
+#    narrator-interest, NOT a tracked physical-state field (anti-pattern #1; #6 if forced as posture).
+# @22 steadies the feet — SKIP-CORRECT (NONE-CONFIRMED). soc-tether +0.5 peak-bone, BUT the
+#    steadying re-affirms the already-planted stance (@15) and DISSOLVES one beat later at the @23
+#    departure. Persistence test fails: the re-steadied value does not survive past @23. This is
+#    held-against-turn / body-charge — the @39-class calibration anchor ("sets her feet ... where
+#    his next pace commits" — NONE-CONFIRMED). The +0.5 tether-completion is witnessed by the
+#    positional hold but is NOT a persistent posture field-flip; the canonical posture-state was
+#    set at @15. Floor-defense invoked: over-firing a transient corrupts canonical memory.
+# studio/prop targets and actor:septon-halvard-flea-bottom: OUT OF LICENSE for this fork
+#    (authority §: each character writes their own actor-state; studio writes environment/props).

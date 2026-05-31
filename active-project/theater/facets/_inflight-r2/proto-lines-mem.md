@@ -1,46 +1,35 @@
-# bones — b01c06
+# bones — b01c07
 
-episode: b01c06
+episode: b01c07
 narrator: taylor-hebert-kl-122ac
-goal: Show the audience the first named-person delivery and the accounting that precedes it, so the rationalize-each-trade pattern is legible — and show Wren's omission from the deliverable as the un-priced move it is.
-cast: taylor-hebert-kl-122ac, wren-stitch-maker-flea-bottom-ward, the-courier
-locations: oc-stitch-house-lane
-prior_episode: b01c05
+goal: Show the audience the Halvard argument at genuine engagement — neither dismissed nor won — so when Taylor stops engaging it at d09 the foreclosure reads as a choice, not a lapse.
+cast: taylor-hebert-kl-122ac, septon-halvard-flea-bottom
+locations: oc-sept-corner
+prior_episode: b01c06
 aggregate_range: 1-25
 
-1 the handcart blocks the lane-mouth [loc-state:1]
-2 the crowd presses the junction
-3 wren-stitch-maker-flea-bottom-ward crosses the crowd
-4 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac [narrator:1] [sensory:1] [state:1] [vibes:1] [vibes:2] [vibes:3] [wren-stitch-maker-flea-bottom-ward:1]
-5 taylor-hebert-kl-122ac enters the south court [loc-state:2] [sensory:2]
-6 taylor-hebert-kl-122ac opens the coverage-notes entry [state:1]
-7 taylor-hebert-kl-122ac marks the contact-role field
-8 taylor-hebert-kl-122ac blanks the contact-source field [feel:1] [narrator:2] [state:2] [vibes:4] [vibes:5] [vibes:6]
-9 taylor-hebert-kl-122ac closes the coverage-notes entry [state:3]
-10 the jarvis-channel message arrives [loc-state:3] [state:4]
-11 taylor-hebert-kl-122ac opens the jarvis-channel message
-12 taylor-hebert-kl-122ac reopens the jarvis-channel message [mem:1]
-13 taylor-hebert-kl-122ac pulls the coverage-memory record [narrator:3]
-14 taylor-hebert-kl-122ac fills the jarvis-channel form [state:5] [vibes:8]
-15 taylor-hebert-kl-122ac lowers the jarvis-channel form [state:6] [vibes:7]
-16 taylor-hebert-kl-122ac opens the accounting ledger [state:7]
-17 taylor-hebert-kl-122ac writes the first arm — names against Sera's protection
-18 taylor-hebert-kl-122ac writes the second arm — omission risk against Sera's exposure
-19 taylor-hebert-kl-122ac marks the red-keep coverage record [mem:2]
-20 taylor-hebert-kl-122ac closes the accounting entry [state:8]
-21 taylor-hebert-kl-122ac squares the jarvis-channel form
-22 taylor-hebert-kl-122ac seals the jarvis-channel form [narrator:4] [state:3] [state:4] [state:9] [vibes:9] [vibes:10] [vibes:11]
-23 the courier takes the jarvis-channel form [state:10]
-24 taylor-hebert-kl-122ac opens the ward-coverage notes [feel:2] [meta:1] [narrator:5] [state:5] [state:11] [vibes:12] [vibes:13] [vibes:14] [vibes:15]
-25 taylor-hebert-kl-122ac closes the ward-coverage notes [state:12]
-
-# ---
-# R2 memory-judge citation cascade (taylor-hebert-kl-122ac POV) — 2026-05-30:
-#   ADDs: NONE (0 adds; 2/25 = 8.0% already mid-band, refuse-by-default).
-#   DELETEs: NONE (mem:1 @12 KEEP, mem:2 @19 KEEP).
-#   No mem-token changes to the canonical proto-lines. [mem:1] @12 and [mem:2] @19 stand unchanged.
-# Spine note: the [mem:1]/[mem:2] tokens' NI spines (narrator:6 @12, narrator:7 @19) ARE present in
-# interest-narrator.md but are NOT yet co-located in the bones-line tokens above (which show narrator:1-5
-# only) or in the stale _cite-index.md. Phase 5 cite-index rebuild propagates narrator:6/@12 +
-# narrator:7/@19; until then mem:1/mem:2 appear as "Lonely entries" in the index, which is an index-
-# staleness artifact, NOT a missing-spine condition. The spine exists in the source facet file.
+1 taylor-hebert-kl-122ac completes the ward-coverage circuit [loc-state:1]
+2 the handcart blocks the sept-corner passage [state:1]
+3 septon-halvard-flea-bottom faces the handcart man [exposition:2] [state:1] [vibes:10] [vibes:13]
+4 septon-halvard-flea-bottom names the sick child [state:2] [state:3] [vibes:10]
+5 taylor-hebert-kl-122ac receives the plain acknowledgment
+6 the insect-feed places septon-halvard-flea-bottom [vibes:13]
+7 taylor-hebert-kl-122ac enters the sept-corner [loc-state:2] [state:1] [state:2] [state:3]
+8 taylor-hebert-kl-122ac acknowledges septon-halvard-flea-bottom
+9 septon-halvard-flea-bottom describes the fever's progress [loc-state:3] [vibes:14]
+10 septon-halvard-flea-bottom names the maester's cost
+11 septon-halvard-flea-bottom turns from the sick-child account [state:4]
+12 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac [sensory:1] [septon-halvard-flea-bottom:1] [vibes:2] [vibes:12] [vibes:14]
+13 taylor-hebert-kl-122ac goes still [narrator:1] [vibes:1] [vibes:2]
+14 taylor-hebert-kl-122ac faces septon-halvard-flea-bottom [narrator:2] [vibes:3]
+15 taylor-hebert-kl-122ac plants the feet [loc-state:4] [narrator:3] [state:2] [vibes:9]
+16 septon-halvard-flea-bottom exhales
+17 the sept-corner ground grips [sensory:2] [vibes:11]
+18 taylor-hebert-kl-122ac names the body count [feel:1] [vibes:4] [vibes:5]
+19 taylor-hebert-kl-122ac speaks to septon-halvard-flea-bottom [narrator:4] [taylor-hebert-kl-122ac:1] [vibes:4] [vibes:5] [mem:2]
+20 septon-halvard-flea-bottom absorbs the counter [feel:1] [narrator:5] [vibes:8]
+21 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac [septon-halvard-flea-bottom:2] [vibes:6] [vibes:7] [vibes:8] [vibes:12]
+22 taylor-hebert-kl-122ac steadies the feet [narrator:6] [vibes:9] [vibes:15]
+23 taylor-hebert-kl-122ac leaves the sept-corner [loc-state:5] [narrator:7] [state:3] [state:4] [vibes:3] [vibes:15]
+24 the lane cold grips the sept-corner stone [vibes:11]
+25 taylor-hebert-kl-122ac clears the Hook [state:4] [vibes:15]

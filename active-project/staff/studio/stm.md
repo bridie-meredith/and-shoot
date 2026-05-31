@@ -1,5 +1,31 @@
 # studio STM
 
+## 2026-05-31 — /and-facets b01-c07 Phase 1 R1 location-state authoring
+
+Authored location-state.md for b01c07 (5 entries after authoring-phase cull, 25 bones).
+Single location throughout: oc-sept-corner (the chandler's storehouse / sept corner, the Hook, Flea Bottom). No location change across the chapter.
+Three scenes: scene-A morning (handcart blocking), scene-B late-morning (time advance; handcart cleared; argument begins), scene-C late-morning (counter + departure).
+
+Fires:
+  loc-state:1 @1 — morning place-anchor; circuit halted at handcart-blocked choke-point
+  loc-state:2 @7 — enters sept-corner; passage-clearing; sept-bay shadow on crossing-stone threshold
+  loc-state:3 @9 — scene-B time-advance anchor (morning → late-morning); cold-holding ground unwarmed past light-shift
+  loc-state:4 @15 — plants the feet (peak bone @15; substance_delta social_tether +0.5); ground cold underfoot at standing weight
+  loc-state:5 @23 — leaves the sept-corner; cross-lane mouth exit; clears Halvard's sight line
+
+Cull (authoring phase): 0 entries removed.
+All 5 entries pass strip / pointing / frugality / previous-entry tests.
+Confirmed REJECT decisions:
+  @2 (handcart blocks passage — environmental-persistence/stillness beat; REJECT per anti-pattern 3; @1 already establishes blocking condition)
+  @13 (taylor goes still — stillness/hold beat; explicit REJECT per rubric necessity section)
+  @14 (taylor faces halvard — social positioning, not through-space movement; location-card already covers sight-lines; REJECT)
+  @17 (sept-corner ground grips — environmental-persistence/atmosphere beat; inherits from @15; REJECT)
+  @22 (taylor steadies the feet — same location/time/ground as @15; frugality REJECT — inherits from loc-state:4)
+  @24 (lane cold grips sept-corner stone — persistence beat; anti-pattern 3; REJECT)
+  @25 (clears the Hook — departure complete; already covered by exit at @23; frugality REJECT)
+No continuity-carry entries: scenes B + C are rising-to-peak (license excluded); scene-A fusion-run @1-@2 covered by place-anchor at @1.
+Flagged seam: @15 vs @9 frugality margin — @9 establishes cold-holding ground; @15 fires on the same ground. Defensible because @15 is a peak bone (substance_delta; the planted weight is what the ground's cold physically grips) and the pointing test returns a distinct focus-element ("soles at planted weight" vs. "stone holds night cold past light-shift"). Flagged for R2 reviewer.
+
 ## 2026-05-28 — /and-facets b01-c05 Phase 1 R1 state-updates-env authoring
 
 Revised existing state-updates-env.md for b01c05 (7 entries, 31 bones; env + prop slice only).

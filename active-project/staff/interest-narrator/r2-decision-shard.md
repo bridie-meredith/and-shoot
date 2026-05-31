@@ -1,131 +1,49 @@
 ---
 facet: interest-narrator
-episode: b01c06
+episode: b01c07
 judge: R2 GRAPH-AWARE (FACET-JUDGE OVERRIDE MODE)
 persona: taylor-hebert-kl-122ac
-cite_index_hash: e2b2dfa3a71027ddc70cf2a7d227d31463547179
-generated: 2026-05-30
+layer: R2.1
+cite_index_hash: 4b1789810b83040f443958cffc443ec91345befc
+generated: 2026-05-31
+f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
 ---
 
-# R2 narrator-interest decision-shard — b01c06
+# R2 narrator-interest decision shard — b01c07
 
-## Graph-base reconciliation (read first)
-The locked/cite-indexed NI base is **5 entries** (narrator:1 @4, narrator:2 @8, narrator:3 @13,
-narrator:4 @22, narrator:5 @24) per `_cite-index.md` (hash e2b2dfa3) and per memory's R2 shard, which
-confirms NI SILENT at @12 and @19 in the frozen graph. The R1 facet file additionally carried two
-un-indexed draft lines at @12/@19 (not present in the cite-index, not back-contracted, not co-cited by
-any other facet). Those drafts are NOT part of the locked graph; I treat the cite-indexed 5 as the R2
-base and author the required @12/@19 co-cites as my R2 ADDs at next-available IDs (narrator:6, narrator:7),
-re-authored to channel/voice/AP-010 discipline rather than inherited verbatim.
+Graph-aware judge mode, POV taylor-hebert-kl-122ac. The facet fired 7/25 = 28%, above the 15-25% band, under a documented load-bearing carve-out: /and-write rev2 DELETED five interior bones and stripped one modifier, routing all interior motivation here per the FACET HAND-OFF NOTES. My job was to confirm each of the seven is load-bearing and non-redundant against the now-visible graph (feeling@18/@20, memory@6/@19, dialogue), or delete genuine redundancy. Phase 2.5 named four INVIOLABLE entries (13/15/20/23) and opened zero context-ledger entries — the band overage is routing, not saturation, and the grounding adds it surfaced were routed to sensory/feel (grd-001 @16, grd-002 @22), not to NI. §Form (G1 cold-read) run before each verdict; G3 (at-rest) and G5 (position/refusal) applied where they bear; G4 pattern-scan at end.
 
-## Per-entry verdicts
+narrator:1 @13 — "the still is not deliberation — a crooked house does not come straight by leaning it gently, the leaning compounds at its own rate, and that is the precise architecture of the thing she built; the body arrests because the argument is her own ledger read back to her in a stranger's mouth, and the figures match." Cold, this is the line the whole chapter is built to deliver: Halvard's crooked-house figure (his dialogue@12, the errand-man thesis) lands not as a thing she considers but as her own arrangement described back to her — "the figures match" is the recognition that arrests the body. The bone is the bare "goes still"; without this entry the staying is asserted, not caused, which was the cold-read's central Class-A gap. I checked it against feeling and memory at the anchor: there is none — the feeling author REFUSED @13 on the ground that the proto-line SVO IS the somatic tell ("goes still") and explicitly handed the thesis-landing to NI. So NI is the sole interior carrier here, and it carries the chapter's causality. Sole carrier, peak-shadow, the why-she-stays hinge. INVIOLABLE per Phase 2.5 and confirmed load-bearing.
+VERDICT: KEEP
 
-### KEEP
+narrator:2 @14 — "the resentment had carried no object until now; facing him hands it one — not the man, the structure he has just described — and the cost of the facing is that the weight she had filed as weather acquires a name she has not spoken; she had tracked his circuit for two months as a node, and she is engaging the node as a man for the first time." Reading it cold against the graph: nothing else fires the node→man register at @14 — cite-index shows only vibes:3 co-located, and vibes carries the affect-channel, not this content. The specific move — resentment that had no object acquiring one, and the two-months-as-a-node surveillance frame collapsing into engaging-him-as-a-man — is the registration that licenses the rest of the argument to land on a person rather than an abstraction. The "weight she had filed as weather acquires a name" is cost-tracking register in her own voice, base-card clean, no mask bleed, no monument leak. At-rest (G3) it stands without leaning on @15: it is the turn from surveillance-posture to engagement-posture, complete at its anchor. Non-redundant; sole carrier.
+VERDICT: KEEP
 
-- **narrator:1 @4** — KEEP. Peak-bones (first spoken exchange, relational +1.0). Channel: passive
-  fauna-feed + the off-feed register ("a layer the feed does not measure, between the bodies"). Voice:
-  inventory-tell, base register. Earning: peak entry, cross-facet spine for sensory:1/state:1/vibes/Wren.
-  Doubled-register: the feed-vs-not-feed split is the residue-as-infrastructure tell. No anti-pattern.
+narrator:3 @15 — "the feet plant against the body's own instinct, which was to route around the obstruction and close the circuit; staying is the more expensive option and she pays it; the planting reads to him — he sees a woman who has decided not to leave the conversation, and that is the answer she is giving in place of the rebuttal she is holding back." Cold-read: this is the staying-motive, and it is the one the goal hangs on — staying as the more expensive option deliberately paid, against the body's instinct to route around and close the circuit. loc-state:4 at the same anchor carries the cold ground gripping through the soles at the planted weight, but it does not carry the priced choice — the cost-language ("the more expensive option and she pays it") and the social-legibility (the planting reads to him as an answer-in-place-of-rebuttal) are NI's alone and are exactly the SUBSTANCE-SUSPECT social-tether legibility the bones-review deferred here. Distinct from loc-state (the somatic floor-anchor) and from NI:2 (the node→man turn, not the cost-priced commit). INVIOLABLE per Phase 2.5. Sole carrier of the staying-motive.
+VERDICT: KEEP
 
-- **narrator:2 @8** — KEEP. Peak-bones (the omission). Channel: cost-tracking + pre-calc ("prices what
-  the name would cost downstream… in which substrate, to whom"). Earning: the authored blank is the
-  chapter's un-priced move foregrounded by the GOAL. NOTE: uses the inverted-predicate template ONCE
-  ("the blank she writes is authored, not missing") — this is the rubric-licensed single register-defining
-  use. (See AP-010 seam: narrator:4 also leans the chassis; pre-existing R1 exposure, not introduced here.)
+narrator:4 @19 — "the name goes down the way an entry goes into a ledger — Wenna Cobb, six, Pig-Tallow Lane, the fever two seasons back, dead before her coverage existed to route the maester-call against it; the person is not a category, and the precision is the whole cost of keeping the count honest." This anchor is the chapter's load-bearing concretion and it carries three facets — I tested for triple-redundancy. Dialogue@19 carries the facts (Wenna, six, Pig-Tallow Lane, the eleven days, "she's why I'm in Flea Bottom at all"). feel:2@18 carries the body bearing the cost (the breath emptying before the name). mem:2@19 carries the founding-entry-the-slower-way-left-unpaid plus the Earth-Bet displacement shadow (the smaller door that stayed shut — a callback/clamp register). What NI:4 carries that none of the others do: the ledger-entry act with precision-as-moral-cost — "the person is not a category, and the precision is the whole cost of keeping the count honest." That is the register where the exactness of the naming is itself the price of an honest count, distinct from memory's callback-shape and feeling's somatic empty-out. Three carriers, three layers; not triple-redundant. The Phase 2.5 steering hint asked me to confirm NI:4 carries the named-death weight alongside feeling@18 + memory@19 without triple-redundancy — confirmed: it does, because each holds a different layer of the same beat.
+VERDICT: KEEP
 
-- **narrator:3 @13** — KEEP. Lonely entry (no co-citation) but rubric-licit: rising-zone pre-calc
-  surfacing ("convert nodes to names… the step the record has been waiting four months for her to take").
-  Channel: pre-calc + cost. Voice: clinical, specificity (four months). Earns on attention, not plot-load.
+narrator:5 @20 — "two accountings stand in the cold and neither is paid: his slower way carries a body it cannot answer for; hers carries a coverage that answers for that body and compounds the corruption at its own rate to do it — and what the engagement costs her is the clean knowledge of the road she has chosen not to take, which she lets cost that much and does not write the entry down." Cold-read against the goal: this is what prevents the close from reading as Taylor scoring a point. feel:1@20 at the same anchor carries Halvard's body (his hands going still on his knees — his absorption); NI:5 carries her side of the parallel — the two-accountings frame and the felt cost of the road not taken that she "lets cost that much and does not write the entry down." That last clause is the WATCH-4 felt-cost that does not advance held moral_legibility — a cost borne and deliberately unrecorded. The frame is the two-accountings-in-parallel and it is hers, not Halvard's, so feel:1 (his hands) does not absorb it. INVIOLABLE per Phase 2.5 (non-win framing). Phase 2.5 steering confirmed: the two-accountings lands and is what makes the unresolved close read as mutual undefeat. Sole carrier of her side.
+VERDICT: KEEP
 
-- **narrator:4 @22** — KEEP. Peak-bones (the seal / moral_framework -1.0). Channel: pre-calc surfacing
-  on the breach ("arrived here exactly as the framework produces when the terms are stated and the premise
-  is wrong"). Earning: peak. NOTE: inverted-predicate template ("the seal is the breach") — SECOND use of
-  the chassis across the file (narrator:2 + narrator:4 = 2). The rubric cap is ≤1; this is a latent AP-010
-  exposure carried from R1. I did NOT introduce a third use; both R2 adds are authored clear of the chassis.
-  Flagged as seam for Phase 5 mechanic-auditor (file-level form check). Held KEEP because the per-entry
-  content earns and the chassis-recurrence is a file-level form finding, not a per-entry reject; the
-  disciplined R2 response is to not worsen it, which I have observed.
+narrator:6 @22 — "the feet had begun to shift toward the lane and she steadies them instead; the natural close was departure and she declines it; he reads the staying the way he read the planting — two people who have taken each other's measure seriously and resolved nothing, which the architecture she runs was built to prevent and could never have produced." I read this hard against narrator:3@15, because both are foot-posture-against-instinct beats and that is exactly where a within-character template echo (the G4 ear-flag) would live. They are differentiated at-rest: @15 is the commitment to enter the argument (plant against the instinct to route around); @22 is the declining of the natural close after it has resolved nothing (steady against the instinct to leave now that it is over). @22 adds what @15 cannot — the resolved-nothing / mutual-undefeat register ("two people who have taken each other's measure seriously and resolved nothing, which the architecture she runs was built to prevent and could never have produced"). That is the soc-tether legibility the carve-out routed here and it is absent from @15. No feel or sensory fires at @22 (the grounding gap grd-002 was routed to those facets, not to NI), so NI is the sole interior carrier of the resolved-nothing close. The foot-posture echo is real and I flag it for the pattern-scan as a stitch-render concern — the stitcher must render @15 (commitment) and @22 (lingering-then-declining) in distinct somatic vocabulary so they do not flatten into "plants → steadies." It is a render note, not a delete: the content is differentiated and load-bearing.
+VERDICT: KEEP
 
-- **narrator:5 @24** — KEEP. Peak-bones (contrast recognition / moral_legibility +1.0). Channel:
-  cost-tracking + the two-substrate contrast ("four names went down the channel and the contact-source
-  field still reads ward-resident, Hook, routine"). Voice: clinical-of-the-horrible, trailing fragment
-  ("the blank she left where a name is not"). Earns; cross-facet spine for feel:2/meta:1/state.
+narrator:7 @23 — "she leaves first, before a resolution that is not coming, and the leaving is the filing: the argument is left available, not closed, and she knows she is leaving it available the way she knows the range limit — this is the road she is not taking, and she knows she is not taking it, and the knowing is not the same as the taking." Cold-read: this is the foreclosure-planted-not-enacted shape the chapter goal exists to set up — the leaving is the filing, the argument left available rather than closed, and she knows she is leaving it available. That is the d09-foreclosure-reads-as-choice setup made legible: the knowing-but-not-taking. It is Taylor's interior-ledger voice (the range-limit comparison is her resting cost-register), not author-framing — INVIOLABLE on exactly that ground per Phase 2.5. loc-state:5 / state / vibes at the anchor carry the exit-geography and the cold; none carry the filing-as-knowing. Sole interior carrier of the foreclosure register.
+VERDICT: KEEP
 
-### DELETE
-NONE. No R1 entry fails an axis or fires an anti-pattern at the per-entry level. (The one file-level
-form exposure — AP-010 chassis-recurrence at narrator:2/narrator:4 — is a Phase 5 seam, not a delete.)
+PATTERN-SCAN: Reading the seven end-to-end, the one thing my ear catches is the foot-posture pair at @15 ("plants the feet") and @22 ("steadies the feet"). Both build on the body-overriding-its-own-instinct frame, and the bone verbs themselves are adjacent posture-vocabulary. The NI content is differentiated — @15 is the cost-priced commitment to engage, @22 is the declining of the natural close on a resolved-nothing — so neither entry is redundant with the other and neither should be cut. But the pair is a flat-echo risk at render: if the stitcher lands both in the same "feet against instinct" somatic idiom they will read as one beat doubled rather than two distinct choices (commit / linger-then-decline). What I'd do as a consequence is not a delete but a render-flag carried forward to stitch Phase 4 — render @22's somatic anchor in different vocabulary from @15's planting, foregrounding the resolved-nothing recognition rather than re-running the posture. Beyond that pair the file is clean: each fire sits at a distinct register layer (recognition @13, node→man turn @14, cost-priced commit @15, ledger-precision @19, two-accountings @20, resolved-nothing close @22, foreclosure-filing @23), no single low-frequency word saturates across the seven, and the doubled register shows (Earth-Bet shadow at @13/@19 via co-cited mem; mask absent because this is base-register interiority throughout, correct for a hinge argument). No inverted-predicate-chassis recurrence (AP-010): @13 and @23 lean on definitional cadence but neither resolves into the sentence-final "is what / is the / means today" template; under the ≤1 cap the file is clean.
 
-### ADD
+POSITION (G5) — no adds, so G5 fires only as a refusal discipline. The band is over (28% vs 15-25%) under a load-bearing carve-out; per the brief I refuse adds by default on a band-over facet, and Phase 2.5 opened zero context-ledger entries and routed both grounding gaps (@16 Halvard exhale, @22 Taylor steadies) to sensory/feel rather than to NI. The bare-protoline candidates the cite-index flags (@5, @8, @10, @16) do not earn an NI fire: @5/@8 are flat-low Scene-A transitional acknowledgments (no channel, no trigger), @10 is Halvard's maester-cost beat carried by dialogue, and @16 is Halvard's exhale — his body, not her perception, correctly routed to sensory by grd-001. No adds.
 
-- **narrator:6 @12** — ADD (REQUIRED co-cite; mem:1 spine). Beat: the re-read where the names-vs-patterns
-  category-crossing lights. Channel: pre-calc surfacing + cost-tracking ("she reopens to confirm what unit
-  the ask wants, and the unit has changed under her hand — a node holds frequency and heading… a name
-  holds a body the heading can find"). Doubled-register: the Earth-Bet shadow held as functional
-  description — "she has moved bodies along a record before, and the record was always the route" — names
-  the SHAPE (mem:1's displacement-cue) without any Earth-Bet proper noun, no Khepri/Skitter self-naming.
-  Earning: rising/loaded-pause re-read (scene-map protected-pattern @11-@12) + HARD cross-facet anchor —
-  mem:1 @12 has NO other spine path on a climax chapter (feel silent at @12; V3 feel-as-spine carve-out
-  N/A). This add resolves mem:1's missing-spine HARD-dependency. Form: state-change clause ("the unit has
-  changed under her hand"), NOT the inverted-predicate X-is-Y chassis. Voice-OK; hard-fence clean.
+CAP-REFUSAL: (none reached the cap-consideration threshold — refused candidates are covered in the POSITION note above.)
 
-- **narrator:7 @19** — ADD (REQUIRED co-cite; mem:2 spine). Beat: the Sera/Red-Keep protect-target
-  image-beat, second accounting arm. Channel: cost-tracking + foreknowledge-clamp surfacing as the
-  protect-target ("the record's far end resolves to a body she has watched through the feed and never met
-  — fourteen, placed, held in exposure at an arm's length that is not hers"). The "arm's length that is
-  not hers" echoes mem:2's displacement-cue without naming Sera/Otto/Jarvis/Red-Keep. Voice:
-  clinical-of-the-horrible, trailing on the load-bearing fragment ("she marks the coverage past it without
-  writing the face down"). Earning: rising-zone protect-target registration (the cost-of-the-gain has a
-  face) + HARD cross-facet anchor — mem:2 @19 has NO other spine path on a climax chapter (feel silent at
-  @19). This add resolves mem:2's missing-spine HARD-dependency. Form: no inverted-predicate chassis.
-  Doubled-register: Westerosi-monument-clamp routed through the on-page protective-arrangement (the
-  audience-meaningful register), not insider Dance/Red-Keep foreknowledge. Voice-OK; hard-fence clean.
+## File-shape summary
+- Band: 7/25 = 28%, over the 15-25% ceiling — JUSTIFIED by the documented load-bearing carve-out (rev2 deleted 5 interior bones + 1 modifier-strip routing all interior motivation here). Every fire is a peak/peak-shadow/peak-approach cross-facet anchor; Scene-01 (bones 1-8, flat-low) fires ZERO against 8 silences; all seven cluster on the two rising scenes (13-23). Contrast preserved at file scope; the overage is routing, not saturation.
+- Peak coverage: peak/peak-shadow beats @13/@15/@19/@20/@22/@23 all fire. PASS.
+- Doubled-register: base-register interior throughout; Earth-Bet shadow surfaces at @13/@19 via co-cited mem. PASS.
+- INVIOLABLE confirmation: narrator:1 @13, narrator:3 @15, narrator:5 @20, narrator:7 @23 — all KEPT.
 
-### ADD DECLINED (weave-fixable @17/@18)
-
-- **@17/@18 moral-balance weave-add — DECLINED on frequency-band cap.** The Phase 2.5 WEAVE-FIXABLE hint
-  asked for a single NI cognition-fire across the two accounting arms to read the four-ward-elders-vs-Sera
-  pricing as a weighing, not a header. Two reasons to decline:
-  1. **Cap.** 5 R1 + the 2 REQUIRED co-cites = 7/25 = 28%, already at/over the 15-25% band ceiling. An
-     @17/@18 add → 8/25 = 32%, a clear breach. Per dispatch, the @17/@18 weave-add YIELDS to the cap when
-     8 breaches; the REQUIRED co-cites take priority.
-  2. **Persistent-narration risk.** narrator:7 @19 already renders the gain-side face of the same trade
-     (the four names travel SO THAT the held body stays held; "the cost of the gain has a face"). A fire at
-     @17 or @18 pricing the same balance would register the same content across @17→@19 (anti-pattern #7).
-  The moral-balance at @17/@18 is instead carried by grounding-ledger grd-003 (@17-@18, the felt friction
-  of pricing persons against persons, authored at Phase 4.6) PLUS the @19 NI gain-side fire. Seam carried
-  forward.
-
-## File-shape pass
-- **Sparsity / band:** 7/25 = 28%. Slightly over the 15-25% ceiling — a KNOWN, JUSTIFIED stretch: the two
-  @12/@19 adds are HARD-REQUIRED cross-facet spines (mem:1/mem:2 have no other spine path on a climax
-  chapter; feel silent at both). The cross-facet HARD CONSTRAINT outranks the frequency-band soft target;
-  landing at 7 (not 8 — @17/@18 declined) is the disciplined floor that honors the band as far as the HARD
-  co-cites permit. Flagged for Phase 5.
-- **Peak coverage:** all four peak-bones (@4/@8/@22/@24) fire. PASS.
-- **Per-scene ≥1:** scene-A @4/@8; scene-B @12/@13; scene-C @19/@22/@24. PASS (every scene fires).
-- **Doubled-register:** base-register interior throughout; Earth-Bet shadow at narrator:1 (off-feed layer),
-  narrator:6 (bodies-along-a-record), narrator:7 (arm's-length-not-hers protect-target). Both registers
-  visible. PASS.
-- **Channel diversity:** passive fauna-feed (@4), cost-tracking (@8/@22/@24/@19), pre-calc (@13/@12),
-  foreknowledge-clamp surfacing (@19). ≥3 distinct channels. PASS.
-- **AP-010 inverted-predicate chassis:** 2 uses pre-existing in R1 (narrator:2, narrator:4) — over the ≤1
-  cap. Both R2 adds authored clear of the chassis; exposure NOT worsened. File-level seam for Phase 5.
-
-## Seams (cross-facet)
-1. **SPINE RESOLVED (was HARD-DEPENDENCY) → memory facet.** narrator:6 @12 resolves mem:1's missing-spine
-   HARD-dependency; narrator:7 @19 resolves mem:2's. Phase 5 MUST re-build the cite-index after this NI
-   mutation lands and confirm NI present at @12 AND @19; both mem fires then pass the missing-spine gate.
-   If either token failed to land, the paired mem fire HARD-FAILS (climax → no feel-as-spine fallback).
-   Both landed in this mutation.
-2. **BAND-STRETCH → Phase 5 mechanic-auditor (curve-shape).** 28% is over the 15-25% ceiling, justified by
-   the two HARD cross-facet co-cites. Auditor should confirm the stretch is HARD-co-cite-driven, not
-   density-on-flat contamination (it is not — every add is a peak-adjacent/spine-anchor fire).
-3. **AP-010 chassis-recurrence → Phase 5 mechanic-auditor (file-level form).** narrator:2 + narrator:4 both
-   use the inverted-predicate template (2 > ≤1 cap). Pre-existing R1 exposure; not introduced or worsened
-   in R2. If the auditor calls it, the repair is a narrator:4 reword (narrator:2 is the licensed single
-   use); deferred to auditor's call — both entries earn per-entry.
-4. **WEAVE @17/@18 → Phase 4.6 grounding (grd-003) + narrator:7.** NI weave-add declined on cap; the
-   moral-balance pricing at @17/@18 is carried by grd-003's felt-friction grounding add plus the @19 NI
-   gain-side fire. Confirm at Phase 5 that the @17/@18 arms read as a weighing once grounding lands.
-
-## f-r2-counts: KEEP 5 / DELETE 0 / ADD 2 / REWRITE 0
+## f-r2-counts: KEEP 7 / DELETE 0 / ADD 0 / REVISE 0

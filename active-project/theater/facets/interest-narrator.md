@@ -1,19 +1,45 @@
 facet: interest-narrator
-episode: b01c06
-author: dialogue-writer-fork:taylor-hebert-kl-122ac
-r2-judged: 2026-05-30 (R2 GRAPH-AWARE judge, taylor-hebert-kl-122ac POV; KEEP narrator:1-5, ADD narrator:6 @12, ADD narrator:7 @19, 0 DELETE)
+episode: b01c07
+author: taylor-hebert-kl-122ac
+narrator: taylor-hebert-kl-122ac
 ---
+# rubric-carve-out — frequency-band overage licensed by load-bearing interior-routing
+#
+# rubric-narrator-interest.md (design/shoot-v2/rubric-narrator-interest.md) § Curve-shape rubric / Frequency band (15-25%)
+#
+# Carve-out scope: the seven fires below (28% of 25 bones).
+# Carve-out rule: this file fires at 28% rather than the 15-25% band ceiling.
+# Coverage justification: /and-write rev2 DELETED five interior bones (old s02n07, s02n10,
+#   s03n03, s03n06, s03n10) and stripped one modifier (s02n05), routing all interior motivation
+#   to this facet per the FACET HAND-OFF NOTES (bones-draft rev2, lines 97-127 + 795-802). The
+#   physical-observable bones carry no motivation; the bones-review found the WHY-SHE-STAYS causality
+#   and the SUBSTANCE-SUSPECT soc-tether legibility (bones 15, 22) explicitly deferred to NI. Each fire
+#   is an honest earn (peak-bones-class, peak-approach, or deleted-bone-content cross-facet anchor) —
+#   none is density-on-flat inflation. Contrast is preserved at file scope: Scene-01 (bones 1-8,
+#   flat-low) fires ZERO against 8 silences; all seven fires cluster on the two rising scenes
+#   (bones 13-23), which is exactly the density-alignment § Density alignment demands. The fires-per-
+#   bone ratio in the non-flat-low scenes (7/17) vs flat-low (0/8) exceeds the required 2× by design.
+#   The overage is routing, not saturation.
+#
+# Per-entry annotations (carve-out clause: cross-facet-anchor demand / deleted-bone-routing):
+# - narrator:1 @13: WATCH-2 causality (WHY SHE STAYS) — deferred here by D1 modifier-strip; peak-shadow. MOST LOAD-BEARING ENTRY.
+# - narrator:2 @14: WATCH-5 payoff + pol-reg +0.3 peak-bone register-sharpening
+# - narrator:3 @15: SUBSTANCE-SUSPECT social-legibility for soc-tether +0.5 peak-bone (D3+D4 absorb); INITIAL-commitment register
+# - narrator:4 @19: named-death-as-ledger-entry image (D5 absorb) + WATCH-1 weight; folds @18 naming-decision into the peak delivery
+# - narrator:5 @20: two-accountings-in-parallel + WATCH-4 felt-cost (D6 absorb); INVIOLABLE — felt without advancing held legibility
+# - narrator:6 @22: SUBSTANCE-SUSPECT social-legibility for soc-tether +0.5 peak-bone (D7); DEPARTURE-impulse-stilled register, differentiated from @15
+# - narrator:7 @23: WATCH-3 foreclosure-planted interior-ledger voice (D8 absorb); INVIOLABLE — Taylor's voice, not author-framing
 
-1 @4 the feed has had her filed as ward-body, familiar profile, stitch-house proximity since the first sighting — and the words come from a layer the feed does not measure, between the bodies, not between the things she counts.
+1 @13 the still is not deliberation — a crooked house does not come straight by leaning it gently, the leaning compounds at its own rate, and that is the precise architecture of the thing she built; the body arrests because the argument is her own ledger read back to her in a stranger's mouth, and the figures match.
 
-2 @8 the field wants a name and she prices what the name would cost downstream — what it makes legible, in which substrate, to whom; the blank she writes is authored, not missing, the one omission she runs the full accounting for and still leaves empty.
+2 @14 the resentment had carried no object until now; facing him hands it one — not the man, the structure he has just described — and the cost of the facing is that the weight she had filed as weather acquires a name she has not spoken; she had tracked his circuit for two months as a node, and she is engaging the node as a man for the first time.
 
-3 @13 she does not deploy anything new; the elders are already in the long-pattern record as nodes — meeting-frequency, errand-direction, who they receive instruction from — and the ask is only that she convert nodes to names, which is a conversion she has priced and deferred for four months.
+3 @15 the feet plant against the body's own instinct, which was to route around the obstruction and close the circuit; staying is the more expensive option and she pays it; the planting reads to him — he sees a woman who has decided not to leave the conversation, and she gives him the staying, not the rebuttal.
 
-4 @22 the accounting ran clean, both arms at full weight, and arrived here exactly as the framework produces when the terms are stated.
+4 @19 the name goes down the way an entry goes into a ledger — Wenna Cobb, six, Pig-Tallow Lane, the fever two seasons back, dead before her coverage existed to route the maester-call against it; the person is not a category, and the precision is the whole cost of keeping the count honest.
 
-5 @24 four names went down the channel and the contact-source field still reads ward-resident, Hook, routine — the contrast sits in two substrates at once and she opens the notes to read the blank she left where a name is not.
+5 @20 two accountings stand in the cold and neither is paid: his slower way carries a body it cannot answer for; hers carries a coverage that answers for that body and compounds the corruption at its own rate to do it — and what the engagement costs her is the clean knowledge of the road she has chosen not to take, which she lets cost that much and does not write the entry down.
 
-6 @12 she reopens to confirm what unit the ask wants, and the unit has changed under her hand — a node holds frequency and heading and who-receives-instruction, a name holds a body the heading can find; she has moved bodies along a record before, and the bodies moved when the record named them.
+6 @22 the feet had begun to shift toward the lane and she steadies them instead; the natural close was departure and she declines it; he reads the staying the way he read the planting — two people who have taken each other's measure seriously and resolved nothing, which the architecture she runs was built to prevent and could never have produced.
 
-7 @19 the record's far end resolves to a body she has watched through the feed and never met — fourteen, placed, held in exposure at an arm's length that is not hers — and the four names travel so that body stays exactly where the arm has set it; the cost of the gain has a face and she marks the coverage past it without writing the face down.
+7 @23 she leaves first, before a resolution that is not coming, and the leaving is the filing: the argument is left available, not closed, and she knows she is leaving it available the way she knows the range limit — this is the road she is not taking, and she knows she is not taking it, and the knowing is not the same as the taking.

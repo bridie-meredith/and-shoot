@@ -1,37 +1,37 @@
-# bones — b01c06
+# bones — b01c07
 
-episode: b01c06
+episode: b01c07
 narrator: taylor-hebert-kl-122ac
-goal: Show the audience the first named-person delivery and the accounting that precedes it, so the rationalize-each-trade pattern is legible — and show Wren's omission from the deliverable as the un-priced move it is.
-cast: taylor-hebert-kl-122ac, wren-stitch-maker-flea-bottom-ward, the-courier
-locations: oc-stitch-house-lane
-prior_episode: b01c05
+goal: Show the audience the Halvard argument at genuine engagement — neither dismissed nor won — so when Taylor stops engaging it at d09 the foreclosure reads as a choice, not a lapse.
+cast: taylor-hebert-kl-122ac, septon-halvard-flea-bottom
+locations: oc-sept-corner
+prior_episode: b01c06
 aggregate_range: 1-25
 
-1 the handcart blocks the lane-mouth [loc-state:1]
-2 the crowd presses the junction
-3 wren-stitch-maker-flea-bottom-ward crosses the crowd
-4 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac [wren-stitch-maker-flea-bottom-ward:1]
-5 taylor-hebert-kl-122ac enters the south court [loc-state:2]
-6 taylor-hebert-kl-122ac opens the coverage-notes entry
-7 taylor-hebert-kl-122ac marks the contact-role field
-8 taylor-hebert-kl-122ac blanks the contact-source field
-9 taylor-hebert-kl-122ac closes the coverage-notes entry
+1 taylor-hebert-kl-122ac completes the ward-coverage circuit [loc-state:1]
+2 the handcart blocks the sept-corner passage
+3 septon-halvard-flea-bottom faces the handcart man
+4 septon-halvard-flea-bottom names the sick child
+5 taylor-hebert-kl-122ac receives the plain acknowledgment
+6 the insect-feed places septon-halvard-flea-bottom
+7 taylor-hebert-kl-122ac enters the sept-corner [loc-state:2]
+8 taylor-hebert-kl-122ac acknowledges septon-halvard-flea-bottom
 
-10 the jarvis-channel message arrives [loc-state:3]
-11 taylor-hebert-kl-122ac opens the jarvis-channel message
-12 taylor-hebert-kl-122ac reopens the jarvis-channel message
-13 taylor-hebert-kl-122ac pulls the coverage-memory record
-14 taylor-hebert-kl-122ac fills the jarvis-channel form
-15 taylor-hebert-kl-122ac lowers the jarvis-channel form
+9 septon-halvard-flea-bottom describes the fever's progress [loc-state:3]
+10 septon-halvard-flea-bottom names the maester's cost
+11 septon-halvard-flea-bottom turns from the sick-child account
+12 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac [septon-halvard-flea-bottom:1]
+13 taylor-hebert-kl-122ac goes still
+14 taylor-hebert-kl-122ac faces septon-halvard-flea-bottom
+15 taylor-hebert-kl-122ac plants the feet [loc-state:4]
+16 septon-halvard-flea-bottom exhales
+17 the sept-corner ground grips
 
-16 taylor-hebert-kl-122ac opens the accounting ledger
-17 taylor-hebert-kl-122ac writes the first arm — names against Sera's protection
-18 taylor-hebert-kl-122ac writes the second arm — omission risk against Sera's exposure
-19 taylor-hebert-kl-122ac marks the red-keep coverage record
-20 taylor-hebert-kl-122ac closes the accounting entry
-21 taylor-hebert-kl-122ac squares the jarvis-channel form
-22 taylor-hebert-kl-122ac seals the jarvis-channel form
-23 the courier takes the jarvis-channel form
-24 taylor-hebert-kl-122ac opens the ward-coverage notes
-25 taylor-hebert-kl-122ac closes the ward-coverage notes
+18 taylor-hebert-kl-122ac names the body count
+19 taylor-hebert-kl-122ac speaks to septon-halvard-flea-bottom [taylor-hebert-kl-122ac:1]
+20 septon-halvard-flea-bottom absorbs the counter
+21 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac [septon-halvard-flea-bottom:2]
+22 taylor-hebert-kl-122ac steadies the feet
+23 taylor-hebert-kl-122ac leaves the sept-corner [loc-state:5]
+24 the lane cold grips the sept-corner stone
+25 taylor-hebert-kl-122ac clears the Hook

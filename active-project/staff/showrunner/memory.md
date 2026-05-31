@@ -4614,7 +4614,34 @@ books:
                 gate_verdict: {bonefide: true, flat: false}
 
       - slug: b01c07
-        status: bones-written   # /and-write b01c07 COMPLETE (2026-05-30): Phase 6 bone-gate PASS on rev2 (after 3 attempts; DEC-0051/0052); Phase 7 emit done
+        context_followability:
+          completeness_verdict: FOLLOWABLE   # Phase 4.5: NI:1@13 why-she-stays survived R2 -> unconditionally CLOSED; no new FOLLOW-GAP
+          readability_verdict: AIRLESS-HOLE  # Phase 4.5: grd-001@16 + grd-002@22 still airless post-R2 -> Phase 4.6 fires
+          report_path: active-project/staff/reviews/context-follow-r2-b01-c07-20260531T024855Z.md
+          reviewed_at: 2026-05-31
+          context_ledger_open: 0
+          grounding_ledger_open: 0   # Phase 4.6: both satisfied via sensory:3@16 + sensory:4@22 grounding adds
+          phase_4_6:
+            fired: true
+            grounding_adds: [sensory:3@16, sensory:4@22]
+            final_verdict: FOLLOWABLE   # Step 2 re-check: both airless holes CLOSED; @15/@22 posture-echo broken; 13-22 breathes end-to-end; no fixer pass
+            report_path: active-project/staff/reviews/context-follow-r3-b01-c07-20260531T025714Z.md
+        facets_audience_gate:
+          cycle_1:
+            verdict: FAIL   # 7 PASS / 4 FAIL (3-of-3 strict). report: active-project/staff/audience/facets-audience-gate-r1.md
+            earth_bet_fence: CLEAN
+            failed_facets:
+              - "interest-narrator (cape-fic REVISE: AP-001 cap; recast narrator:3@15, keep narrator:4@19 WATCH-1)"
+              - "sensory (old-state-reader + disambiguation-pedant REVISE: sensory:1@12 unanchored sound old-state; sensory:2@17 sustained-as-inflection+unanchored; sensory:4@22 grd-002 grounding real but recast to discrete proprioceptive/sound not cumulative-thermal)"
+              - "dialogue-halvard (cape-fic REVISE :1@12 aphorism-strain; dark-fantasy DEFENDED + worm-canon ACCEPT -> defense-or-revise; utterance-only, no bones change)"
+              - "dialogue-taylor (dark-fantasy + worm-canon CONVERGENT REVISE :1@19: 'She's why I'm in Flea Bottom at all' = self-justification breaks no-winner invariant; close on 'first name in the count'; utterance-only)"
+            passing_facets: [memory, feeling, metaphor, vibes, exposition, location-state, state-updates]
+          cycle_2:
+            verdict: PASS   # all 4 re-fired facets 3-of-3 ACCEPT; report: active-project/staff/audience/facets-audience-gate-r2.md
+            re_audit: CLEAN  # Phase 5 cycle-2 confirm HARD=0 (fault-016 proprioceptive->pressure, fault-017 grd-002 satisfied_by synced)
+            closed: ["interest-narrator AP-001 cap", "sensory:1@12 anchor + :2@17 old-state + :4@22 thermal->pressure recast", "dialogue-halvard aphorism-strain", "dialogue-taylor self-justification closer"]
+            cycles_used: 2 of 3
+        status: stitched   # /and-stitch b01c07 COMPLETE: draft/b01-c07.md TERMINAL (Phase 9 cold-read PASS-WITH-CAVEATS: READABLE PASS / AIRLESS ALIVE / MUFFLE CONCRETE / CONTINUE barely-yes). Optional depth-pass parked (pl-2026-05-31-001). was audited-r1 after /and-facets COMPLETE: Phase 5 audit CLEAN (HARD=0) + Phase 5b audience-gate PASS (3-of-3 all facets, 2 cycles). Earth-Bet fence CLEAN. Was audited-r1-mechanical; before that Phase 5 audit CLEAN (HARD=0, 14 SIGNAL/3 TASTE); fault-008 NI-unreadable was an agent glitch (file intact, AP-001 manually clear); Phase 5b cleared. was faceted-r2 after Phase 4 merge+consolidate clean (R2: 1 DELETE mem:1@6, rest KEEP); scene-map 4d PASS; was faceted-r1 after Phase 2 (47 facet entries, 84% decorated); was bones-written after /and-write COMPLETE (2026-05-30): Phase 6 bone-gate PASS on rev2 (after 3 attempts; DEC-0051/0052); Phase 7 emit done
         bones_file: theater/bones/b01-c07.md
         bones_count: 25
         substance_bone_gate_verdict: PASS
@@ -4630,6 +4657,26 @@ books:
           - "b01c07s03n02 (flat 19) -> [taylor-hebert-kl-122ac:1]      (Wenna Cobb counter; WATCH-1 concrete: name+street+failure-mechanism)"
           - "b01c07s03n04 (flat 21) -> [septon-halvard-flea-bottom:2]  (cost-acknowledgment; no retraction)"
         scene_map_file: theater/facets/scene-map-b01-c07.md
+        bones_review:   # /and-review bones b01c07 (2026-05-30) — MANDATORY gate between /and-write and /and-facets
+          reviewed_at: 2026-05-30
+          report_path: active-project/staff/reviews/bones-b01c07-2026-05-30.md
+          verdict: PASS-WITH-NOTES   # after rev3 form-fix + re-fire. (History: run-1 FAIL 3 HARD SVO-form on flat 15/16/22; /and-write revise recast them; re-fire 2026-05-30 = PASS-WITH-NOTES 0 HARD. NOTE: a premature record/commit 6e6f0f6 wrongly said PASS before the auditor fork returned — corrected at 6a81abb.)
+          run_history:
+            - "run-1 (commit 6a81abb): FAIL 3 HARD — fault-001 flat15 'stays in the argument' (PP+abstraction), fault-002 flat22 'stays at the sept-corner' (PP-of-place), fault-003 flat16 'holds the silence' (abstraction-object)"
+            - "revise (commit 4cdf489): recast flat15->'plants the feet', flat16->'exhales', flat22->'steadies the feet'"
+            - "re-fire: PASS-WITH-NOTES 0 HARD — all 3 SVO-clean; aggregation EXACT (pol-reg +0.5, soc-tether +1.0); /and-facets CLEARED"
+          fidelity: PASS   # the 5 rev2 deletes did NOT hollow the spine; it lives in dialogue bones 12/19/21.
+          follow_check: PASS-WITH-NOTES   # PROP-0020: central event + scene hand-offs recoverable; gap context-addable (NI facet), NOT bone-structural → not a FOLLOW-FAIL
+          aliveness: BONES-AIRLESS-RISK   # PROP-0022 (advisory): span bones 13-22; interiority routed off-page, one sensory anchor (bone 17) across ten bones. Forewarns /and-facets Phase 2.5 grounding-ledger + /and-stitch Phase 4 voice-embodiment.
+          bones_file_mtime_at_review: 1780181317   # post-recast mtime; re-fire reviewed the recast bones file
+          stale_since: null
+          gate_outcome: CLEARS_FACETS   # re-fire PASS-WITH-NOTES, follow_check not FOLLOW-FAIL → /and-facets b01c07 cleared to dispatch
+          forward_notes:   # carry to /and-facets Phase 2.5 + NI author brief
+            - "NI facet at bones 13/15 is LOAD-BEARING: must stage crooked-house-maps-onto-her-arrangement recognition or cold-read causality gap reopens at stitch."
+            - "SUBSTANCE-SUSPECT (re-fire SIGNAL): flat 15 'plants the feet' + flat 22 'steadies the feet' are form-clean but the soc-tether +0.5 Δ is partially DISPLACED onto the NI facet — the body-rooting witnesses physical bracing; NI must render it as socially LEGIBLE (Halvard reads it; Taylor reads herself in it) or the relational Δ goes unearned at stitch."
+            - "NEAR-DUPLICATE (re-fire SIGNAL): flat 15 'plants the feet' / flat 22 'steadies the feet' share a body-part/posture register; NI + sensory facets must differentiate the two beats to prevent repetition-compression at stitch."
+            - "Open grounding-ledger lines for the bones 13-22 airless span."
+            - "7 interior readings transferred to NI — treat all 7 as explicit deliverables (PASS-CHUNK-VOICE-RISK)."
         write_margit_referrals_open:
           - "oc-sept-corner.card.md — NEW location (the sept corner / chandler's storehouse, Flea Bottom Hook); first-touched c07; loc card MUST be authored before /and-facets b01c07 Phase 0 (locations: resolution gate). Same class as c06 oc-* SEAMs."
         chunk: |

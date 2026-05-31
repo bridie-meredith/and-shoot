@@ -3,6 +3,38 @@
 
 ---
 
+## 2026-05-31 — b01c07 location-state authored at /and-facets Phase 1 R1
+
+Chapter b01c07: 25 bones, 3 scenes. Single location throughout: oc-sept-corner (the Hook, Flea Bottom).
+5 location-state entries authored. No entries culled.
+Time arc: morning (scenes A–A close) → late-morning (scenes B–C). Single time-advance at scene-B open.
+Handcart condition arc: blocking-passage (chapter-open @1) → clearing (@7 threshold) → open (sustained @9 onward).
+
+Entry log:
+  loc-state:1 @1 — morning place-anchor; circuit arrival halted by handcart-blocked choke-point; establishes single-cart-width geometry as active condition.
+  loc-state:2 @7 — transitional (enters sept-corner); passage-clearing state; sept-bay shadow on the crossing-stone threshold.
+  loc-state:3 @9 — scene-B open time-advance anchor (morning → late-morning); cold-holding ground unwarmed past the morning light shift.
+  loc-state:4 @15 — positioning verb (plants the feet); peak bone (substance_delta social_tether +0.5); sept-corner stone underfoot, ground cold grips at planted weight.
+  loc-state:5 @23 — transitional (leaves the sept-corner); cross-lane mouth exit; clears Halvard's sight-line geometry.
+
+Cull log: 0 entries removed.
+Confirmed REJECT list:
+  @2 handcart-blocks — environmental persistence after @1 establishes blocking; anti-pattern 3.
+  @13 taylor-goes-still — stillness/hold beat; explicit REJECT per rubric necessity.
+  @14 taylor-faces-halvard — social positioning, not through-space movement; location card covers sight-lines.
+  @17 sept-corner-ground-grips — environmental persistence/atmosphere; inherits from @15.
+  @22 taylor-steadies-the-feet — same ground/time as @15; frugality REJECT.
+  @24 lane-cold-grips-stone — persistence beat; anti-pattern 3.
+  @25 clears-the-Hook — departure complete; inherits from @23 exit.
+
+No continuity-carry entries: scenes B + C are rising-to-peak (license excluded); scene-A fusion run @1-@2 covered by place-anchor at @1.
+
+Flagged seam for R2: @15 vs @9 frugality margin. Both anchor to the same cold-holding ground. Defense: @9 points at "stone holds night cold past morning-light-shift" (thermal-persistence as time-marker); @15 points at "ground cold grips through the soles at planted weight" (physical-contact / weight-bearing as peak-bone marker). Two distinct focus-elements; both survive the pointing test independently. R2 reviewer should validate the frugality claim.
+
+Chapter-close set state: oc-sept-corner, late-morning, passage-open, handcart cleared, Halvard at station (no change), Taylor departed via cross-lane.
+
+---
+
 ## 2026-05-28 — b01c05 sensory authored at /and-facets Phase 1 R1
 
 Chapter b01c05: 31 bones, 3 scenes. Single location: the-rushwick (no oc-card).

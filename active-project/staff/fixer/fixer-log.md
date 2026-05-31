@@ -1,3 +1,38 @@
+## SESSION-START — 2026-05-31T10:00:00Z — and-facets-b01c07-cycle1-fixes
+dispatch: /and-facets b01c07 Phase 5b cycle-1 remediation — 4 failed facets (interest-narrator AP-001 cap; sensory 3 entries with upstream loc-state backfill; dialogue-septon-halvard defense-or-revise; dialogue-taylor delete final sentence); minimum change per callout
+target: active-project/theater/facets/interest-narrator.md, active-project/theater/facets/sensory.md, active-project/theater/facets/location-state.md, active-project/theater/dialogue/septon-halvard-flea-bottom.md, active-project/theater/dialogue/taylor-hebert-kl-122ac.md
+audit-report: active-project/staff/audience/facets-audience-gate-r1.md
+findings-queued: 4 (interest-narrator:1 line recast; sensory:3 entries with loc-state upstream; dialogue-halvard dispatch defense-or-revise; dialogue-taylor dispatch revise)
+
+## SESSION-END — 2026-05-31T10:40:00Z — and-facets-b01c07-cycle1-fixes
+findings-applied: 4 (interest-narrator, sensory [3-sub], dialogue-halvard, dialogue-taylor)
+findings-skipped: 0
+exit: CLEAN
+
+## dialogue-taylor-hebert-kl-122ac — RESOLVED — 2026-05-31T10:35:00Z
+fault: :1@19 closing self-justification — 2-persona convergence (dark-fantasy + worm-canon); final sentence "She's why I'm in Flea Bottom at all." converts cost into self-justification; Taylor wins the no-winner chapter
+scope: line
+change: deleted final sentence "She's why I'm in Flea Bottom at all."; entry closes on "She's the first name in the count."; Wenna Cobb naming intact; anchor @19 + citation [taylor-hebert-kl-122ac:1] unchanged; no replacement suasion
+criteria met: yes — REVISED; no self-justification; ledger closes on count not motive; WATCH-1 preserved
+
+## dialogue-septon-halvard-flea-bottom — RESOLVED — 2026-05-31T10:30:00Z
+fault: :1@12 split verdict — cape-fic REVISE ("it was always going to grow" too omniscient/certain); dark-fantasy DEFEND (aphorism-form honesty-without-omniscience); worm-canon ACCEPT
+scope: line
+change: fixer-direct; "It grows crooked at the rate it was always going to grow." → "It grows crooked at its own rate." — removes retrospective-fate claim; keeps aphorism structure; satisfies Halvard card voice-tell (names only what he knows, not what was pre-determined); anchor @b01c07s02n04 + citation [septon-halvard-flea-bottom:1] unchanged
+criteria met: yes — REVISED; no longer a prepared-certain closer; dark-fantasy's honesty-without-omniscience defense now literally satisfied; cape-fic re-fire expected ACCEPT
+
+## sensory — RESOLVED — 2026-05-31T10:20:00Z
+fault: 3 entries failed — sensory:1@12 unanchored old-state; sensory:2@17 loc-state contradiction; sensory:4@22 cumulative thermal (not discrete event)
+scope: line
+change: (1) sensory:1: loc-state:3@9 sound field backfill + old-state re-cite done in prior session, verified; (2) sensory:2: old-state corrected from passage-lane-packed-earth to sept-corner-stone-firm done in prior session, verified; (3) sensory:4: modality recast from thermal/cumulative to proprioceptive/discrete (heel-settles-cobble-edge, tag up→spike, old-state sept-corner-stone-firm, anchor loc-state:4@15, grd-002 preserved) — this session; inflight-r2 proto-lines-sensory.md refreshed; proto-lines-loc-state.md created
+criteria met: yes — all three entries now have anchored old-states + discrete-event disambiguation; grd-002 preserved; modalities distinct from each other
+
+## interest-narrator — RESOLVED — 2026-05-31T10:05:00Z
+fault: AP-001 inverted-predicate cap exceeded (≤1/file); narrator:3@15 sentence-final clause "she gives him the staying instead of the rebuttal she is holding back" is the second inverted-predicate form; narrator:4@19 is the WATCH-1 survivor
+scope: line
+change: narrator:3@15 final clause recast from "she gives him the staying instead of the rebuttal she is holding back" to "she gives him the staying, not the rebuttal" — sentence-final participial trailing clause eliminated; substance intact (staying given, rebuttal withheld; Halvard reads the commitment); anchor @15 and citation [narrator:3] unchanged
+criteria met: yes — AP-001 cap now ≤1 (narrator:4@19 is the sole remaining inverted-predicate; narrator:3@15 no longer uses the form); NI:3@15 content (INVIOLABLE social-legibility / INITIAL-commitment register) preserved in full
+
 ## SESSION-START — 2026-05-30T09:00:00Z — write-b01c06-pass2-svo-recasts-resume
 dispatch: resume write-b01c06-pass2 fault repair; prior session (00:00Z) applied fault-001/003/004 to file + logged them, applied fault-005/006/007 to file but did NOT log them, left fault-008 (s03n04) and fault-009 (s03n06) unapplied; this session verifies 005/006/007 as applied, applies 008/009, closes the SESSION-END
 target: active-project/staff/showrunner/_drafts/b01c06-bones-draft-2026-05-30.md
@@ -1494,3 +1529,15 @@ dispatch: minimum-change fixes for 8 FAULT-FORM-MODIFIER faults in b01c06 bones 
 target: active-project/staff/showrunner/_drafts/b01c06-bones-draft-2026-05-30.md
 audit-report: active-project/staff/auditor/write-b01c06-pass2.md
 findings-queued: 8 (fault-001 confirmed already applied in prior session; 7 remaining to apply)
+
+## SESSION-START — 2026-05-31T00:00:00Z — and-facets-b01c07-cycle1-fixes
+dispatch: /and-facets b01c07 Phase 5b cycle-1 remediation — 4 failed facets (interest-narrator AP-001 cap, sensory[3-sub], dialogue-halvard split-verdict, dialogue-taylor 2-persona convergence); apply minimum change per consolidated callouts in facets-audience-gate-r1.md
+target: active-project/theater/facets/interest-narrator.md, active-project/theater/facets/sensory.md, active-project/theater/facets/location-state.md, active-project/theater/dialogue/septon-halvard-flea-bottom.md, active-project/theater/dialogue/taylor-hebert-kl-122ac.md
+audit-report: active-project/staff/audience/facets-audience-gate-r1.md
+findings-queued: 4 (interest-narrator, sensory[3-sub], dialogue-halvard, dialogue-taylor)
+
+## fault-interest-narrator — RESOLVED — 2026-05-31T00:05:00Z
+fault: AP-001 inverted-predicate cap ≤1/file exceeded; narrator:3@15 + narrator:4@19 both used "is-the-X" collapsed-predicate; recast narrator:3@15 to non-inverted form; narrator:4@19 (WATCH-1) kept
+scope: line
+change: interest-narrator.md narrator:3@15 final clause: "that is the answer she is giving in place of the rebuttal she is holding back" → "she gives him the staying instead of the rebuttal she is holding back"; NI content preserved; anchor/citation unchanged
+criteria met: yes
