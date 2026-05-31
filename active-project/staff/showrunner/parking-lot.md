@@ -954,3 +954,43 @@ parking_lot:
         WATCH-2 honored (thesis-lands @s02n05 'goes still' BEFORE counter @s02n06 'faces' — causality gap closed).
         WATCH-3/4/5 routed to narrator-interest facet anchors (foreclosure @s03n06 leaves; two-accountings @s03n03 absorbs; surveillance-irony @s01n06). fault-009 honored (no social_tether Δ at s01).
         NOTE: the argument-spine interiority that took 3 bone-gate attempts to clear is the live evidence behind PROP-0024 (DEC-0051) + the DEC-0052 discriminator (physical-observable-verb witnesses; delete-over-invent for interiority).
+
+    - id: pl-2026-05-31-001
+      created_at: 2026-05-31T00:00:00Z
+      created_by: "/and-stitch b01c07 Phase 9 cold-read terminal gate + staging pass"
+      label: depth-pass-recommended-b01c07-apparatus-register
+      target:
+        command: /and-write
+        scope: b01c07
+        phase: null
+      severity: SOFT
+      description: |
+        /and-stitch b01c07 Phase 9 = PASS-WITH-CAVEATS (READABLE PASS / AIRLESS ALIVE-at-the-edge /
+        MUFFLE-CHECK CONCRETE / CONTINUE barely-yes). Chapter is TERMINAL (shipped). Optional depth
+        pass available; NOT blocking. The cold-read caveat (predicted exactly by the chunk-cold-read
+        PASS-CHUNK-VOICE-RISK): the ledger/apparatus/surveillance register that powers Taylor's voice
+        also saturates the connective tissue + the middle argument, making a perfectly followable
+        chapter read colder/more seminar-like than it needs to — and making her STAYING land asserted
+        ("staying was the more expensive option, and I paid it") rather than felt.
+        Staging pass (5 SIGNAL findings; no >=5 cluster so full depth-pass not mandated by the cluster
+        rule; report staging-b01-c07-2026-05-31.md). Two load-bearing WATCH-item findings if a depth
+        pass is elected:
+        - signal-002 NEEDS-BEAT @12-@13: the going-still is caused by recognition arriving passively
+          rather than by Taylor's deflection/route-around impulse being ARRESTED — the genuine-engagement
+          premise wants the impulse-then-arrest visible, not asserted. (WATCH-2.)
+        - signal-003 STAGE @18-@19: the decision to DEPLOY the counter (cross from holding it to
+          deploying because the argument's honesty requires completing the account) is fused into the
+          speech's opening breath; @18 peak-bone wants the choice staged, not performed. (WATCH-1.)
+        - signal-005 EXPAND @22-@23 (lower-risk): the staying-before-leaving (+0.5 social_tether peak)
+          is compressed to a single heel/cobble sensory beat; may be underweighted vs its arc place.
+        Resolution: optional /and-write b01c07 revise --from-signals (targeted @12-@13 + @18-@19) +
+        re-cascade /and-facets + /and-stitch. Or accept terminal as-is (the FAIL triggers all cleared).
+      context_refs:
+        - active-project/staff/reviews/coldread-b01-c07-2026-05-31.md
+        - active-project/staff/reviews/staging-b01-c07-2026-05-31.md
+        - active-project/draft/b01-c07.md
+      resolution_suggestion: "optional /and-write b01c07 revise --from-signals (@12-13 + @18-19) + re-cascade; or accept terminal"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
