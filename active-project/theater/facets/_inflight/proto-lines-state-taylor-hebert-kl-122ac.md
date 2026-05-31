@@ -13,7 +13,7 @@ aggregate_range: 1-24
 3 the watcher-boy faces the water-point
 4 the basket-woman faces the lane-mouth
 5 the apprentice drops the nailing-rate
-6 taylor-hebert-kl-122ac traces the watcher-sightlines [state:1] [state:2]
+6 taylor-hebert-kl-122ac traces the watcher-sightlines [state:8] [state:9]
 7 the insect-feed delivers the gap-corridors
 8 the circuit closes the feed-pass
 
@@ -21,7 +21,7 @@ aggregate_range: 1-24
 10 taylor-hebert-kl-122ac breaks the jarvis-seal
 11 the handler-rotation names the chain-of-responsibility
 12 the feed-geometry meets the coverage-gap
-13 taylor-hebert-kl-122ac logs the aemond-name [state:3]
+13 taylor-hebert-kl-122ac logs the aemond-name [state:10]
 14 taylor-hebert-kl-122ac reads the bread-price report
 15 the feed-edge acquires the new geometry
 
@@ -30,7 +30,7 @@ aggregate_range: 1-24
 18 the insect-feed places oswyn-mudway-flea-bottom-elder
 19 the insect-feed places corwick
 20 oswyn-mudway-flea-bottom-elder speaks to taylor-hebert-kl-122ac [oswyn-mudway-flea-bottom-elder:1]
-21 the body-map attaches the corwick-name [state:4]
+21 the body-map attaches the corwick-name [state:11]
 22 taylor-hebert-kl-122ac completes the circuit
 23 the watcher-boy-position falls from the water-point
 24 the insect-feed fills the water-point-geometry

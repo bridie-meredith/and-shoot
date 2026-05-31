@@ -15,13 +15,13 @@ aggregate_range: 1-24
 5 the apprentice drops the nailing-rate
 6 taylor-hebert-kl-122ac traces the watcher-sightlines
 7 the insect-feed delivers the gap-corridors
-8 the circuit closes the feed-pass [feel:1]
+8 the circuit closes the feed-pass [feel:2]
 
 9 the jarvis-packet arrives at the feed-station
 10 taylor-hebert-kl-122ac breaks the jarvis-seal
 11 the handler-rotation names the chain-of-responsibility
 12 the feed-geometry meets the coverage-gap
-13 taylor-hebert-kl-122ac logs the aemond-name [feel:2]
+13 taylor-hebert-kl-122ac logs the aemond-name [feel:3]
 14 taylor-hebert-kl-122ac reads the bread-price report
 15 the feed-edge acquires the new geometry
 
