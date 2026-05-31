@@ -1,40 +1,34 @@
-# bones — b01c06 — R2 in-flight (narrator-interest citation cascade only)
-# author: taylor-hebert-kl-122ac (R2 facet-judge, interest-narrator)
-# cite_index_hash: 21eb9718d8526f3ef58f0c4ed394e62ac25f1927de7f5e1003f8b23fa91c3db2
-# scope: reflects [narrator:*] KEEP/DELETE/ADD only; all other facet tokens carried unchanged from canonical
-# disposition: 6 KEEP (narrator:1-6, no gaps), 1 ADD (narrator:7 @8)
+# bones — b01c08
 
-episode: b01c06
+episode: b01c08
 narrator: taylor-hebert-kl-122ac
-goal: Show the audience the first named-person delivery and the accounting that precedes it, so the rationalize-each-trade pattern is legible — and show Wren's omission from the deliverable as the un-priced move it is.
-cast: taylor-hebert-kl-122ac, wren-stitch-maker-flea-bottom-ward, the-courier
-locations: oc-stitch-house-lane
-prior_episode: b01c05
-aggregate_range: 1-26
+goal: Plant the courier face, activate the Aemond-adjacent pressure at low intensity, and stage the Oswyn-integration echo so that later Khepri-repetition accusations have been building in the reader's view long before Taylor's.
+cast: taylor-hebert-kl-122ac, oswyn-mudway-flea-bottom-elder, wenna-cobb, corwick
+locations: the-hook-ward, the-lane-junction-rushwick-margin, the-chandler-corner, the-water-point, the-lane-mouth, the-rushwick, the-feed-station
+prior_episode: b01c07
+aggregate_range: 1-24
 
-1 the handcart blocks the lane-mouth [loc-state:1] [state:1]
-2 the crowd presses the junction [sensory:1]
-3 wren-stitch-maker-flea-bottom-ward crosses the crowd [feel:1] [state:1]
-4 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac [narrator:1] [vibes:1] [vibes:2] [vibes:3] [vibes:4] [vibes:5] [wren-stitch-maker-flea-bottom-ward:1]
-5 taylor-hebert-kl-122ac enters the south court [loc-state:2] [state:1]
-6 taylor-hebert-kl-122ac opens the coverage-notes entry [state:2]
-7 taylor-hebert-kl-122ac marks the contact-role field [state:3]
-8 taylor-hebert-kl-122ac blanks the contact-source field [narrator:2] [narrator:7] [state:2] [vibes:6] [vibes:7] [vibes:8] [vibes:9]
-9 taylor-hebert-kl-122ac closes the coverage-notes entry [state:4]
-10 the jarvis-channel message arrives [state:5] [vibes:10]
-11 taylor-hebert-kl-122ac opens the jarvis-channel message [state:6]
-12 taylor-hebert-kl-122ac reopens the jarvis-channel message [vibes:11]
-13 taylor-hebert-kl-122ac pulls the coverage-memory record
-14 taylor-hebert-kl-122ac fills the jarvis-channel form [state:7]
-15 taylor-hebert-kl-122ac lowers the jarvis-channel form [mem:1] [state:8]
-16 taylor-hebert-kl-122ac opens the ledger-board [state:9]
-17 taylor-hebert-kl-122ac writes the ward-elder names [mem:2] [narrator:3] [sensory:2] [state:10]
-18 taylor-hebert-kl-122ac writes the sera-coverage entry [state:11]
-19 taylor-hebert-kl-122ac marks the red-keep coverage record
-20 taylor-hebert-kl-122ac stills the hand [feel:1] [narrator:4] [sensory:3] [vibes:12]
-21 taylor-hebert-kl-122ac closes the ledger-board [state:12]
-22 taylor-hebert-kl-122ac lifts the jarvis-channel form [state:13]
-23 taylor-hebert-kl-122ac seals the jarvis-channel form [narrator:5] [state:3] [state:14] [vibes:13] [vibes:14] [vibes:15] [vibes:16] [vibes:17]
-24 the courier takes the jarvis-channel form [state:15]
-25 taylor-hebert-kl-122ac opens the ward-coverage notes [narrator:6] [state:4] [state:16] [vibes:18] [vibes:19] [vibes:20]
-26 taylor-hebert-kl-122ac closes the ward-coverage notes [state:17]
+1 taylor-hebert-kl-122ac enters the lane-junction-rushwick-margin [loc-state:1]
+2 the insect-feed returns the chandler-corner
+3 the watcher-boy faces the water-point [loc-state:2]
+4 the basket-woman faces the lane-mouth [loc-state:3]
+5 the apprentice drops the nailing-rate
+6 taylor-hebert-kl-122ac traces the watcher-sightlines [narrator:1] [state:1] [state:2] [vibes:2]
+7 the insect-feed delivers the gap-corridors
+8 the circuit closes the feed-pass [feel:1] [mem:1] [narrator:2] [state:1]
+9 the jarvis-packet arrives at the feed-station [loc-state:4] [state:2]
+10 taylor-hebert-kl-122ac breaks the jarvis-seal [sensory:1] [state:3]
+11 the handler-rotation names the chain-of-responsibility
+12 the feed-geometry meets the coverage-gap
+13 taylor-hebert-kl-122ac logs the aemond-name [exposition:2] [feel:2] [narrator:3] [state:3] [state:4] [vibes:3]
+14 taylor-hebert-kl-122ac reads the bread-price report
+15 the feed-edge acquires the new geometry [narrator:4] [state:5]
+16 taylor-hebert-kl-122ac enters the hook-ward [loc-state:5] [sensory:2]
+17 the insect-feed returns wenna-cobb
+18 the insect-feed places oswyn-mudway-flea-bottom-elder
+19 the insect-feed places corwick
+20 oswyn-mudway-flea-bottom-elder speaks to taylor-hebert-kl-122ac [feel:1] [oswyn-mudway-flea-bottom-elder:1] [vibes:4]
+21 the body-map attaches the corwick-name [narrator:5] [state:4]
+22 taylor-hebert-kl-122ac completes the circuit
+23 the watcher-boy-position falls from the water-point [loc-state:6] [state:6]
+24 the insect-feed fills the water-point-geometry [mem:2] [narrator:6] [state:7] [vibes:1]

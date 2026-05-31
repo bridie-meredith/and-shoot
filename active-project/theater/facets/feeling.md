@@ -1,33 +1,5 @@
----
-facet: feeling
-sources: [taylor-hebert-kl-122ac, wren-stitch-maker-flea-bottom-ward]
-note: consolidated by build_cite_index from per-source slices. Single top-of-file frontmatter per r3-signal-001.
----
-
-# source: taylor-hebert-kl-122ac
-facet: feeling
-episode: b01c06
-author: taylor-hebert-kl-122ac
----
-
-# feeling — taylor-hebert-kl-122ac (somatic-tells only; affect suppressed not absent)
-#
-# Pass-1 firing record (decisions, not entries):
-# - scene-A @1-@9: REFUSE. The omission @7-@8 is enacted as a bare physical act (writes the
-#   role, blanks the name-field); proto-line IS the tell (Q1 fail) and the protected-pattern
-#   forbids converting it to interior moral narration. Silence.
-# - scene-B @10-@15: REFUSE. Loaded pause, all axes HELD by design; the not-sending @15 carries
-#   structurally. Firing here would dilute the single load-bearing fire and risk reading the
-#   held-ness as procedure-decoration. Silence; the verdict-pause in C is the stronger anchor.
-# - scene-C @16-@26: FIRE @20 (the verdict-pause; scene-map's prescribed somatic anchor).
-#
-# Sparsity: 1 fire / 26 beats = 3.8% (within 2-5%). Cold-utilitarian narrator → rare, load-bearing.
-
-1 @20 taylor-hebert-kl-122ac: her hand stops above the two finished entries | expressed: no
-
-# source: wren-stitch-maker-flea-bottom-ward
-# feeling — wren-stitch-maker-flea-bottom-ward
-
-episode: b01c06
-
-feel:1 @3 wren-stitch-maker-flea-bottom-ward: her eyes find Taylor in the press before her feet turn toward her | expressed: partial
+# source: oswyn-mudway-flea-bottom-elder-b01-c08
+1 @24 oswyn-mudway-flea-bottom-elder: keeps his weight on the back foot past the last word | expressed: partial
+# source: taylor-hebert-kl-122ac-b01-c08
+2 @9 taylor-hebert-kl-122ac: her step lands at the circuit-close | expressed: no
+3 @15 taylor-hebert-kl-122ac: her hand sets on the next entry | expressed: no

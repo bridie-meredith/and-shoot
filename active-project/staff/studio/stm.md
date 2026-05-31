@@ -1,5 +1,66 @@
 # studio STM
 
+## 2026-05-31 — /and-facets b01-c08 Phase 1 R1 sensory authoring (BLIND)
+
+Authored sensory-b01-c08.md (2 entries, 24 bones). Density 2/24 = 8.3% — above standard 6% ceiling; at short-chapter exemption ceiling max(6%, 2/24) = 8.3%; ADVISORY not blocking. Modality floor ≥2 met exactly with sound + light.
+
+Two fires:
+  sensory:1 @10 sound spike (feed-station-working-quiet -> wax-seal-crack) — scene-B, seal-break at the Jarvis packet. Old-state sourced from series-established indoor-administrative-quiet vocabulary per carve-out preamble (no loc-state file authored at this stage). Calibration anchor s01e01:41 precedent (seal-break sound:spike). Bare verb "breaks"; audience-perceptible (wax-crack universally legible); inflection is transient discrete spike.
+  sensory:2 @16 light down (afternoon-stone-lane-light -> evening-lane-dusk-fall) — scene-C, Taylor enters hook-ward on evening return circuit. Old-state sourced from scene-map time-of-day field (scene-A/B = afternoon; scene-C = evening); carve-out preamble filed. Bare verb "enters"; audience-perceptible (dusk light shift on stone streets); inflection is the onset of the evening register.
+
+Modalities: sound + light (2; floor met).
+Per-scene cap: scene-A=0, scene-B=1 (@10), scene-C=1 (@16) — all within ≤3 cap.
+Cull: 0 entries removed (both survive four-axis rubric check).
+SEAM-010: both old-state anchors require loc-state ratification; rubric-carve-out preamble in sensory-b01-c08.md.
+
+Notably REJECTED (decision log):
+  @3 (watcher-boy faces water-point — body positioning; water-point trickle sound sub-threshold in busy afternoon lane; Q2 fail)
+  @4 (basket-woman faces lane-mouth — positioning bone; no discrete perceptual inflection)
+  @5 (apprentice drops nailing-rate — rate-slowing of ambient hammering; street-ambient micro-texture change; sub-threshold Q2 fail)
+  @9 (jarvis-packet arrives at feed-station — arrival bone; @10 is the correct inflection beat for the seal-break)
+  @20 (oswyn speaks to taylor — dialogue-anchor bone; protected per instruction; no sensory inflection present in SVO)
+  @23 (watcher-boy-position falls from water-point — protected peak-bone; no pile; the fall is world-fact not perceptual inflection)
+  @24 (insect-feed fills water-point-geometry — terminal image-weight payload; protected per instruction; image-weight from coverage-geometry not sensory pile)
+
+Inflight: theater/facets/_inflight/proto-lines-sensory-b01-c08.md filed.
+
+## 2026-05-31 — /and-facets b01-c08 Phase 1 R1 location-state authoring (BLIND)
+
+Authored location-state-b01-c08.md (6 entries, 24 bones, 0 cull). Three-scene chapter; two primary locations across three scenes (the-hook-ward for scenes A + C; the-feed-station for scene B; scene-A entry at lane-junction-rushwick-margin).
+
+Six fires:
+  loc-state:1 @1 — lane-junction-rushwick-margin, afternoon, circuit entry (transitional `enters`; scene-A place-anchor)
+  loc-state:2 @3 — hook-ward water-point occupied (first-beat-in-new-sub-location; peak-shadow bone; watcher-boy posted position)
+  loc-state:3 @4 — hook-ward lane-mouth watched (first-beat-in-new-sub-location; basket-woman positioned outward at lane-mouth)
+  loc-state:4 @9 — feed-station, afternoon, packet on intake surface (transitional `arrives`; scene-B place-anchor at new location)
+  loc-state:5 @16 — hook-ward, evening, water-point approach (transitional `enters`; scene-C place-anchor; time-of-day shift afternoon → evening)
+  loc-state:6 @23 — hook-ward, evening, water-point vacated (state-change: watcher-boy-position no longer at water-point; the contact geometry established at @3 is gone; peak-shadow bone for scene-C closing image)
+
+Cull: 0 entries removed. All 6 survive the three-axis rubric (necessity / interestingness / frugality).
+
+REJECT decisions (full log):
+  @2 (insect-feed returns chandler-corner — instrument subject, not physical actor; feed-perception beat; no loc-state relevance)
+  @5 (apprentice drops nailing-rate — dexterity/rate-diminution in-place; no locomotion; inherited from @4)
+  @6 (taylor traces watcher-sightlines — geometric analysis via feed, not locomotion; perception-surrogate; no loc-state relevance)
+  @7 (insect-feed delivers gap-corridors — instrument subject; no loc-state relevance)
+  @8 (circuit closes feed-pass — abstract subject/object; environmental-persistence; no loc-state relevance)
+  @10 (taylor breaks jarvis-seal — dexterity in-place; inherits @9)
+  @11–@15 (logistics reading/naming/logging — dexterity/perception in-place; all inherit @9; scene-B rhythm-shape flat-tense excludes continuity-carry license)
+  @17 (insect-feed returns wenna-cobb — instrument subject; inherits @16)
+  @18–@19 (insect-feed places oswyn/corwick — instrument subject; fusion-eligible-run @18-@19 but scene-C rhythm-shape rising-to-quiet-peak excludes continuity-carry license; also: subject is instrument not physical actor)
+  @20 (oswyn speaks to taylor — pure dialogue beat, no positioning in question; inherits @16)
+  @21 (body-map attaches corwick-name — abstract subject; no loc-state relevance)
+  @22 (taylor completes the circuit — abstract completion of coverage pattern, not physical threshold crossing; inherits @16)
+  @24 (insect-feed fills water-point-geometry — instrument subject; inherits from @23 state-change)
+
+No continuity-carry entries: all three scene rhythm-shapes exclude the license (rising-to-low-peak / flat-tense-with-edge-acquisition-at-close / rising-to-quiet-peak — none are flat-low / resolving / release-only).
+
+Seams flagged for R2:
+  - the-feed-station: no warehouse card confirmed; slug from bones `locations:` header; margit referral may be needed
+  - Sub-location slugs (the-water-point, the-lane-mouth, the-chandler-corner, the-lane-junction-rushwick-margin): verify card-existence against warehouse inventory before stitch
+
+Inflight: theater/facets/_inflight/proto-lines-loc-state.md filed (byte-identical bones, citations on @1/@3/@4/@9/@16/@23).
+
 ## 2026-05-31 — /and-facets b01-c06 Phase 1 R1 sensory authoring
 
 Authored sensory-b01-c06.md (3 entries, 26 bones). Density 3/26 = 11.5% — above standard 6% ceiling and above 7.7% short-chapter advisory; defended because modality floor (≥2) cannot be sacrificed and the only clean non-sound fire in the chapter is the @2 pressure entry.

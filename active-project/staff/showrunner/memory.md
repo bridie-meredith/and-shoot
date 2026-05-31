@@ -4945,10 +4945,30 @@ books:
               density_target: 0.5-0.65
 
       - slug: b01c08
-        status: bones-written   # /and-write b01c08 COMPLETE (2026-05-31): bones emitted theater/bones/b01-c08.md (24 bones / 3 scenes); scene-map facet emitted theater/facets/scene-map-b01-c08.md; dialogue file theater/dialogue/oswyn-mudway-flea-bottom-elder.md. Phase 6 bone-gate: 3-of-3 audience SUBSTANCE-FELT (cape-fic / dark-fantasy / worm-canon); Earth-Bet CLEAN; auditor 5 HARD all remediated (4 HELD-AXIS-WITNESSED via bone-level axes_held annotation + 1 dialogue-anchor citation fix s03n07→s03n05). Phase 4 trim: dropped s02n03 (single-persona-advisory; cape-fic ADVISORY-2 repeat from /and-substance Phase 5). Phase 3 dramatist: s02 n07↔n08 reorder (edge-image closes scene). Phase 2 auditor: 1 HARD fault-001 (sub-1.0 bone-floor); admin DEC-0002 override-as-precedent (c07 precedent: 4 sub-1.0 bone magnitudes shipped clean); pl-2026-05-31-003 SOFT for schema formalization at /and-review pipeline. Was scened from /and-substance chapter b01c08 (2026-05-31): SUBSTANCE-FELT 3/3 audience + dramatist ACCEPT + auditor PASS. Phase 5.5: CHUNK-CLASS-B → admin disposition P (DEC-0060). cl-d06 +1.0 relational_anchor_status DEFERRED to c09/c10 (pl-2026-05-30-001).
+        status: stitched-with-caveats   # /and-stitch b01c08 REVISE Phase 9 (2026-05-31T22:00:00Z): SHIPPED-WITH-CAVEATS per Phase 9 Step 4 matching-complaint rule. /and-write revise --from-signals added 4 companion body-act bones (@7 holds junction-stone / @10 exhales held-shoulder / @16 sets stylus down / @23 courier-figure stands at oswyn's shoulder / @26 slows the step) + recast @5 (lowers eyes) per PROP-0030/DEC-0061; bones 24→29. Staging review v2: ALL 5 PRIOR SPINE-PROMOTION FINDINGS CLOSED (finding-002 @6 STAGE / finding-004 @15 GROUND / finding-005 @18 NEEDS-BEAT / finding-006 @24 GROUND / finding-007 @25 STAGE — all CLOSED via new companion body-act bones); 3 new SIGNAL fixed inline (POV-pronoun + tense + paragraph-isolation at @18). Cold-read v2 CONTINUE=no but complaint shifted to apparatus-vocabulary-inaccessibility-to-chapter-8-cold-readers — matches chunk_cold_read.cold_read_risk_carry verbatim ("Opaque interiority — physical events present but buried under undefined jargon... no causal spine between scenes, ending gestures rather than lands"). chunk_cold_read.verdict=SHIPPED-WITH-RISK-RECORDED + DEC-0060 disposition P + matching-complaint pattern + staging-review-v2 PASS → SHIPPED-WITH-CAVEATS auto-promotion per Phase 9 Step 4. Caveats: (1) Cold-read CONTINUE=no matches pre-disposed Class B; (2) Apparatus-vocabulary inaccessibility structural (ch 8 of series); (3) Readability axis remains AIRLESS-leaning per PROP-0022 separated-scoring — body-content additions did NOT lift CONTINUE to tentative-yes (design-inherent per chunk_cold_read). Was stitch-failed-cold-read → /and-stitch b01c08 Phase 9 FAIL (2026-05-31T21:00:00Z): cold-read CONTINUE=no AIRLESS + staging-review STAGE on @6 sole axis-move central-event bone (URI-STITCH-SPINE-STAGING unconditional FAIL); Phase 8.5 coherence PASS (substance-aware) but cold-read AIRLESS-on-central-event triggers separated-scoring FAIL per PROP-0022. Cold-read complaint MATCHED chunk_cold_read.cold_read_risk_carry verbatim ("two names logged + a wider coverage map" → "two thin beats, no identifiable narrator") — would have SHIPPED-WITH-CAVEATS via Class B pre-disposition (DEC-0060) but staging-review spine-promotion FAIL is INDEPENDENT (an un-staged central event is decomposition defect even when cold-reader limped past). Route: /and-write b01c08 revise (--from-signals consumes the 4 spine-promotion findings: @6 STAGE central-event axis-move + @13 GROUND held central-event + @15 NEEDS-BEAT held stakes-axis peak + @20 GROUND courier-figure body-anchor). Cascade halted at /and-stitch per Phase 9 routing. Was audited-r1 → /and-facets b01c08 COMPLETE (2026-05-31): 9 facet files + dialogue + scene-map authored; 37 entries (loc-state 6, NI 6, sensory 2, state 11, memory 2, feeling 3, metaphor 0, vibes 5, exposition 2); proto-lines 14/24 decorated (58.3%). Phase 5 cycle 3 audit CLEAN (0 HARD / 5 SIGNAL). Phase 5b cycle 2 ALL 10 FACETS ACCEPT 3/3 strict aggregate (4 cycle-1 REVISEs — NI cape-fic / sensory old-state / vibes worm-canon / feeling dark-fantasy — remediated via NI:3+NI:6 reform, loc-state:4 sensory anchor, actor file keyword hyphenation, feel:2+feel:3 positive-form reform; all Phase 2.5 INVIOLABLES preserved). Bidirectional loop: one-sided (auditor caught 5 consolidation-renumbering HARDs cycle 1; audience caught 4 form/anchor/redundancy REVISEs; no shared findings). Audience cycles 2/3 (cap not burned).
+                          # Was bones-written → /and-write b01c08 COMPLETE (2026-05-31): bones emitted theater/bones/b01-c08.md (24 bones / 3 scenes); scene-map facet emitted theater/facets/scene-map-b01-c08.md; dialogue file theater/dialogue/oswyn-mudway-flea-bottom-elder.md. Phase 6 bone-gate: 3-of-3 audience SUBSTANCE-FELT (cape-fic / dark-fantasy / worm-canon); Earth-Bet CLEAN; auditor 5 HARD all remediated (4 HELD-AXIS-WITNESSED via bone-level axes_held annotation + 1 dialogue-anchor citation fix s03n07→s03n05). Phase 4 trim: dropped s02n03 (single-persona-advisory; cape-fic ADVISORY-2 repeat from /and-substance Phase 5). Phase 3 dramatist: s02 n07↔n08 reorder (edge-image closes scene). Phase 2 auditor: 1 HARD fault-001 (sub-1.0 bone-floor); admin DEC-0002 override-as-precedent (c07 precedent: 4 sub-1.0 bone magnitudes shipped clean); pl-2026-05-31-003 SOFT for schema formalization at /and-review pipeline. Was scened from /and-substance chapter b01c08 (2026-05-31): SUBSTANCE-FELT 3/3 audience + dramatist ACCEPT + auditor PASS. Phase 5.5: CHUNK-CLASS-B → admin disposition P (DEC-0060). cl-d06 +1.0 relational_anchor_status DEFERRED to c09/c10 (pl-2026-05-30-001).
         bones_file: theater/bones/b01-c08.md
         bones_count: 24
         substance_bone_gate_verdict: PASS
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audit_findings: 5  # SIGNAL; 0 HARD
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md
+        audience_gate_complete: true
+        audience_gate_cycles: 2
+        audience_gate_cap_burned: false
+        bidirectional_loop: one-sided   # auditor and audience both fired substantive findings with no overlap (auditor: consolidation renumbering; audience: form/anchor/redundancy)
+        context_followability:
+          completeness_verdict: PASS    # Phase 2.5 + 4.5 both FOLLOWABLE
+          readability_verdict: PASS     # Phase 2.5 + 4.5 both ALIVE
+          context_ledger_open: 0
+          grounding_ledger_open: 0
+          report_paths:
+            - active-project/staff/reviews/context-follow-r1-b01-c08-20260531T180000Z.md
+            - active-project/staff/reviews/context-follow-r2-b01-c08-20260531T190000Z.md
         bones_review:
           reviewed_at: 2026-05-31T18:50:00Z
           report_path: active-project/staff/reviews/bones-b01-c08-2026-05-31.md
@@ -4957,6 +4977,76 @@ books:
           bones_file_mtime_at_review: 2026-05-31T17:12:10Z
           aliveness: clean
           stale_since: null
+        cold_read:
+          reviewed_at: 2026-05-31T21:00:00Z
+          verdict: FAIL
+          fail_basis:
+            - "staging-review spine-promotion FAIL: STAGE on @6 (sole axis-move central-event bone; URI-STITCH-SPINE-STAGING — un-staged central event = decomposition defect; INDEPENDENT of cold-read leg)"
+            - "cold-read CONTINUE=no AIRLESS — readability axis fails per PROP-0022 separated-scoring; AIRLESS-on-central-event escalates to FAIL"
+          recovered_summary: "a packet arrives and is read; a courier is named, watcher-boy later gone"
+          intended_goal: "Plant the courier face, activate the Aemond-adjacent pressure at low intensity, and stage the Oswyn-integration echo so that later Khepri-repetition accusations have been building in the reader's view long before Taylor's."
+          summary_maps_to_goal: true   # cold reader recovered all three obligations
+          continue: no                  # Q5 first-pass
+          continue_strict: no
+          report_path: active-project/staff/reviews/coldread-b01-c08-20260531T210000Z.md
+          staging_signals: 8
+          staging_report_path: active-project/staff/reviews/staging-b01-c08-20260531T210000Z.md
+          spine_promotion_findings:
+            - id: finding-002
+              bone: "@6"
+              verb: STAGE
+              class: axis-move
+              severity: FAIL-CLASS
+              rationale: "Taylor's body absent during sightline-trace; integration reads as data-receptions, not physical act"
+            - id: finding-004
+              bone: "@13"
+              verb: GROUND
+              class: held-central-event
+              severity: BLOCKING-QUALIFIED
+              rationale: "one-clause body-detail within held-register fence; resolvable in revise"
+            - id: finding-005
+              bone: "@15"
+              verb: NEEDS-BEAT
+              class: held-stakes-axis
+              severity: BLOCKING
+              rationale: "acquisition-to-filing move skips somatic beat; held-discipline announced not enacted"
+            - id: finding-006
+              bone: "@20"
+              verb: GROUND
+              class: central-event-dialogue-anchor
+              severity: BLOCKING-QUALIFIED
+              rationale: "courier-figure has no physical body-register at approach; @21 face-plant unanchored"
+          signal_clusters:
+            - pattern: spine-staging-gap
+              count: 4
+              bone_ids: ["@6", "@13", "@15", "@20"]
+              trigger: spine-staging-gap>=1
+            - pattern: peak-zone-staging-gap
+              count: 4
+              bone_ids: ["@6", "@13", "@15"]   # s01 + s02 peaks
+              trigger: adjacent-in-peak-zone>=3
+          prose_rationale_audit:
+            count: 0
+            verdict: BELOW-THRESHOLD-PASS
+            report_path: active-project/staff/reviews/prose-rationale-audit-b01-c08-20260531T210000Z.md
+            rationale: "all held-axis rationales are absence-discipline (the ledger does not open / no court-tier content / no new weight); none names a concrete physical element"
+          coherence_review:
+            verdict: PASS
+            weave_gaps: 0
+            followability_breaks: 0
+            cold_read_risk_high: 0
+            cold_read_risk_advisory: 5
+            central_event_muffle_audit: 3-of-3-PASS  # PROP-0019-A; substance-aware-reader passes all three voice_risk_carry priors
+            report_path: active-project/staff/reviews/coherence-b01-c08-20260531T210000Z.md
+          readability_axis:
+            verdict: AIRLESS
+            basis: "cold-reader complaint matches chunk_cold_read.cold_read_risk_carry verbatim ('two names logged + a wider coverage map / no decision, cost, reversal'); 'no identifiable narrator' anchored on central-event spans (sightline-trace, logging-beat, closing image); AIRLESS-on-central-event"
+          shipped_with_caveats_eligibility: pre-disposed-Class-B-matched   # would have triggered SHIPPED-WITH-CAVEATS via DEC-0060 + chunk-level pre-disposition for cold-read leg ALONE; OVERRIDDEN by INDEPENDENT staging-review spine-promotion FAIL on @6 axis-move central-event
+          stale_since: null
+        stitched: true   # /and-stitch REVISE Phase 9 SHIPPED-WITH-CAVEATS — draft/b01-c08.md terminal under polish-deferred chain
+        stitched_at: 2026-05-31T22:00:00Z
+        depth_pass_pending: false   # cold-read CONTINUE=no is design-inherent per chunk_cold_read pre-disposition; no further /and-write revise warranted within Class B disposition P framework
+        depth_pass_resolved_at: 2026-05-31T22:00:00Z   # the revise pass itself + staging-review-v2 PASS satisfies the implicit depth-pass requirement for the chapter
         chunk: |
           Capability staging chapter with two staging obligations: cf-d10-courier-face beat 1
           (the courier now has a face Taylor has attached a name to — Oswyn mentions him in
