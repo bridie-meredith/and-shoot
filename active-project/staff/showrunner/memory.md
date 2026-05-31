@@ -4626,6 +4626,16 @@ books:
             grounding_adds: [sensory:3@16, sensory:4@22]
             final_verdict: FOLLOWABLE   # Step 2 re-check: both airless holes CLOSED; @15/@22 posture-echo broken; 13-22 breathes end-to-end; no fixer pass
             report_path: active-project/staff/reviews/context-follow-r3-b01-c07-20260531T025714Z.md
+        facets_audience_gate:
+          cycle_1:
+            verdict: FAIL   # 7 PASS / 4 FAIL (3-of-3 strict). report: active-project/staff/audience/facets-audience-gate-r1.md
+            earth_bet_fence: CLEAN
+            failed_facets:
+              - "interest-narrator (cape-fic REVISE: AP-001 cap; recast narrator:3@15, keep narrator:4@19 WATCH-1)"
+              - "sensory (old-state-reader + disambiguation-pedant REVISE: sensory:1@12 unanchored sound old-state; sensory:2@17 sustained-as-inflection+unanchored; sensory:4@22 grd-002 grounding real but recast to discrete proprioceptive/sound not cumulative-thermal)"
+              - "dialogue-halvard (cape-fic REVISE :1@12 aphorism-strain; dark-fantasy DEFENDED + worm-canon ACCEPT -> defense-or-revise; utterance-only, no bones change)"
+              - "dialogue-taylor (dark-fantasy + worm-canon CONVERGENT REVISE :1@19: 'She's why I'm in Flea Bottom at all' = self-justification breaks no-winner invariant; close on 'first name in the count'; utterance-only)"
+            passing_facets: [memory, feeling, metaphor, vibes, exposition, location-state, state-updates]
         status: audited-r1-mechanical   # /and-facets b01c07 Phase 5 audit CLEAN (HARD=0, 14 SIGNAL/3 TASTE); fault-008 NI-unreadable was an agent glitch (file intact, AP-001 manually clear); Phase 5b cleared. was faceted-r2 after Phase 4 merge+consolidate clean (R2: 1 DELETE mem:1@6, rest KEEP); scene-map 4d PASS; was faceted-r1 after Phase 2 (47 facet entries, 84% decorated); was bones-written after /and-write COMPLETE (2026-05-30): Phase 6 bone-gate PASS on rev2 (after 3 attempts; DEC-0051/0052); Phase 7 emit done
         bones_file: theater/bones/b01-c07.md
         bones_count: 25
