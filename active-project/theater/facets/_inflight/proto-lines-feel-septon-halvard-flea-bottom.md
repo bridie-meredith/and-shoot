@@ -27,9 +27,9 @@ aggregate_range: 1-25
 16 septon-halvard-flea-bottom exhales
 17 the sept-corner ground grips
 
-18 taylor-hebert-kl-122ac names the body count [feel:1]
+18 taylor-hebert-kl-122ac names the body count
 19 taylor-hebert-kl-122ac speaks to septon-halvard-flea-bottom [taylor-hebert-kl-122ac:1]
-20 septon-halvard-flea-bottom absorbs the counter
+20 septon-halvard-flea-bottom absorbs the counter [feel:1]
 21 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac [septon-halvard-flea-bottom:2]
 22 taylor-hebert-kl-122ac steadies the feet
 23 taylor-hebert-kl-122ac leaves the sept-corner

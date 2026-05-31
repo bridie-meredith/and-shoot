@@ -1,38 +1,36 @@
 # studio state
 
-episode: b01c05
-last_updated: 2026-05-28
-action: state-updates-env R1 authoring — /and-facets b01-c05 Phase 1 (location-state + sensory R1 prior)
+episode: b01c07
+last_updated: 2026-05-31
+action: location-state R1 authoring — /and-facets b01-c07 Phase 1
 
 ## Current set
-location: the-rushwick (no oc-card; pl-2026-05-28-001 open for margit)
-time_of_day: evening (scene-C close; Taylor on room-floor)
-weather: none recorded
+location: oc-sept-corner
+time_of_day: late-morning (scene-C close; Taylor departing)
+weather: none
 ambient_conditions:
-  - the-rushwick (outdoor junction + lane-mouth + east-exit side-alley): morning ambient, no special conditions recorded
-  - the-rushwick (indoor lodging room): evening; door shut; feed-review only
+  - passage-open (handcart cleared by @7)
+  - cold-holding ground active throughout
+  - Halvard at station (storehouse wall, passage-sight-line position)
 
 ## Chapter-close spatial anchors
-  - Taylor: room-floor of Rushwick-adjacent lodging (@20 onward; scene-C close @31)
-  - courier: last known position — junction-corner (@19); not tracked past that
-  - three enforcement figures: last known position — east exit corridor (@17); departed
+  - Taylor: cleared the Hook (@25 chapter-close; departed via cross-lane mouth)
+  - Halvard: last known position — chandler's storehouse wall station; not tracked past scene-C close
+  - handcart: cleared from choke-point by @7; not tracked after
 
-## Location-state sequence locked (b01c05) — 9 entries
-  loc-state:1 @1  — the-rushwick | morning | lane-mouth open, stone skirt at grade (world-before-protagonist anchor)
-  loc-state:2 @4  — the-rushwick | morning | junction open, provisioner-train mid-cross
-  loc-state:3 @6  — the-rushwick | morning | junction clearing, message-runner in-transit
-  loc-state:4 @7  — the-rushwick | morning | lane-mouth at coverage-edge (far transit boundary)
-  loc-state:5 @8  — the-rushwick | morning | lane-mouth threshold (courier entry, inward direction)
-  loc-state:6 @10 — the-rushwick | morning | side-alley mouth open, east exit adjacent
-  loc-state:7 @11 — the-rushwick | morning | alley-mouth blocked, alley-interior contained
-  loc-state:8 @17 — the-rushwick | morning | alley-mouth open, east exit restored
-  loc-state:9 @20 — the-rushwick | evening | indoor, room-floor, door shut
-  Cull (authoring phase): 4 candidates removed
-    @2 — enters rushwick (culled: @1 world-anchor already licenses ward-interior inheritance; threshold covered)
-    @5 — provisioner-train takes east-lane (culled: bone self-carries direction; junction-inherited env sufficient)
-    @14 — courier finds feet (culled: strip test passes in inherited alley-interior; body-state not loc-state)
-    @19 — courier takes junction-corner (culled: junction established thoroughly in scenes A; alley-mouth-open @17 sufficient)
-  No continuity-carry entries: all three scenes excluded by rising/rising-to-peak rhythm-shape (transition-run license does not fire)
+## Location-state sequence locked (b01c07) — 5 entries
+  loc-state:1 @1  — oc-sept-corner | morning | handcart-blocking-passage (chapter-open place-anchor; circuit halted at choke)
+  loc-state:2 @7  — oc-sept-corner | morning | passage-clearing (transitional: enters sept-corner; threshold/bay-shadow)
+  loc-state:3 @9  — oc-sept-corner | late-morning | passage-open (scene-B time-advance anchor; cold-holding ground unwarmed)
+  loc-state:4 @15 — oc-sept-corner | late-morning | passage-open (positioning: plants feet; ground cold underfoot at peak beat)
+  loc-state:5 @23 — oc-sept-corner | late-morning | passage-open (transitional: leaves sept-corner; cross-lane mouth exit)
+  Cull (authoring phase): 0 entries removed (all 5 survive strip/pointing/frugality tests)
+  No continuity-carry entries: scenes B + C excluded by rising-to-peak rhythm-shape; scene-A @1-@2 run covered by @1 place-anchor (no carry needed)
+
+## Last recorded change (b01c07)
+  @25 — taylor-hebert-kl-122ac clears the Hook; chapter close; late-morning; sept-corner vacated
+  Location-state R1 authored 2026-05-31 — theater/facets/location-state.md (5 entries)
+  _inflight: theater/facets/_inflight/proto-lines-loc-state.md filed
 
 ## Coverage state (carried forward from b01c04)
   coverage_active_range: four-ward + rushwick-extension
