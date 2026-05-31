@@ -73,23 +73,21 @@ Chapter 2
 
 *The crowd had broken open around the stitch-maker's ward, and the hands had gone up before mine did. After that I went back to the drain angle and did not feed anyone for three weeks. The late-summer ran out somewhere in those three weeks and the Hook started keeping its mornings by the salt-day rhythm — the fishmongers' three-day, the carter-day, the lay-day the salt-cured trade kept between. I held the count at its edge by the cost of holding it. What I did instead was start to listen — at first because subsistence-reading is what survives in the Hook, and then because the listening had a shape I had begun to extend on purpose. The rule was the same rule. Reading was not directing. I had not crossed the line.*
 
-*What I had built I did not yet have a name for. The flies and beetles told me where heat clustered and where foot-traffic knotted. I held a count of bodies in my head — who was sick, who was hungry, which alley junction emptied before dark and which one never did. I called it a coverage map when I was being plain with myself; I called it an accounting when I was not. The ledger was where it closed at end of day. The rule was that I read and did not direct. That was the line. The instrument was harm-reduction. That was how it stayed permitted.*
+*What I had built I did not yet have a name for. The flies and beetles told me where heat clustered and where foot-traffic knotted. I held a count of bodies in my head — who was sick, who was hungry, which alley junction emptied before dark and which one never did. I called it a coverage map when I was being plain with myself; I called it an accounting when I was not. The instrument was harm-reduction. That was how it stayed permitted.*
 
 ---
 
-The flies came back from the alleys carrying heat where the bodies were, and the beetles came back from the thresholds with the weight of who had crossed and how often. I let the readings settle in the back of my skull. Then I left the drain angle.
+The flies came back from the alleys carrying heat where the bodies were, and the beetles came back from the thresholds with the weight of who had crossed and how often. I let the readings settle. Then I left the drain angle.
 
-The fever-cluster was the unresolved one. Three signatures, two alleys, none of them mine to price yet.
+The fever-cluster was the unresolved one — three signatures, two alleys, none mine to price yet.
 
-I sent the rest of the insects out wide. The ward gave me back what it had: heat where I expected heat, weight where I expected weight. I took the lane-mouth, slow, with the wall against my right shoulder. I let them work the threshold-stones across the alley.
+I sent the rest of the insects out wide. The ward gave me back what it had: heat where I expected it, weight where I expected it. I took the lane-mouth slow, with the wall against my right shoulder.
 
 Four hundred bodies sat in the feed at once. The ceiling.
 
 Then the alley-back went quiet. Not the bodies leaving — the feed leaving the bodies. I had not yet decided to push the range, and the dropout was already the bill for it.
 
-I pushed the range.
-
-I drew the line at the ceiling I had just paid for.
+I pushed the range. I drew the line at the ceiling I had just paid for.
 
 The insects spread out over the Hook, alley by alley, finding their count. Foot-traffic thickened where I had known it would thicken — at the ward-junction, a corner in the Hook where three or four alleys gave onto one another under a single precinct-ward's reach.
 
@@ -105,41 +103,29 @@ The ward-junction body crossed the thresholds. The stitch-maker's ward — the e
 
 The insects returned the function-signature — the body that knotted the junction, the body the alleys gave onto, the body the map was about to name. The map assigned the connector-type.
 
-I turned from the alley-mouth.
+I turned from the alley-mouth. The insects filed the ward-junction contact.
 
-The insects filed the ward-junction contact.
-
-The gesture moved in a hand that knew the motion, from another accounting under another architecture, and the hand kept going. The insects returned the junction-lane attenuation — the feed thinning at the far margin, the readings going light, the count going soft.
-
-The insects reached the junction-lane edge. The map had a hard outer edge there, where the ward-traffic stopped being readable and the negative space began to register. The head was elsewhere, holding the new entry, not signing it.
+The gesture moved in a hand that knew the motion, from another accounting under another architecture, and the hand kept going. The head was elsewhere, holding the new entry, not signing it.
 
 I took the drain angle again in the afternoon. The light had moved since morning — cutting across the tenement wall at a lower angle, falling slant down the brick on the far side of the gap.
-
-The insects came back from the lane-mouth sweep. The count moved into the head the way it had been moving all day, in the order I had taught it.
 
 The shadow filled the drain angle. I'd been watching it come for a while without naming what I was watching — the shadow crossing the gap by degrees, and then crossed, and the angle gone into shade so that the gap was the darkest point in the lane.
 
 I ran the map.
 
-The fever-cluster corner returned its three bodies above ambient, where they had been in the morning and where they were still. The dark-junction corner returned the silence-pattern, the same negative shape it had held for days. The map returned the bodies — all of them, in their slots.
+The fever-cluster corner returned its three bodies above ambient. The dark-junction corner returned the silence-pattern. The map returned the bodies — all of them, in their slots.
 
-The accounting closed the count.
+The accounting closed the count, reached the ward-junction entry, returned the junction-lane void.
 
-The accounting reached the ward-junction entry.
-
-The ward-junction corner returned the junction-lane void.
-
-The count stalled.
-
-I held the breath I had just taken.
+The count stalled. I held the breath I had just taken.
 
 The line was the same line I had drawn at the alley-mouth and it came up under the same hand. I did not look at it. The hand drew where it had drawn before — same hand, same motion, an hour and an angle of light away from the first drawing — and the shape of the line was what a watching street would find a word for, and I did not give it the word.
 
-I closed against the drain angle. The body closed before the decision did — chest into shoulder, shoulder into the brick, the weight on the rear foot as if that were the foot that had been priced. The drain ran below the heel. The wall took what I gave it.
+I closed against the drain angle. The body closed before the decision did — chest into shoulder, shoulder into the brick, the weight on the rear foot as if that were the foot that had been priced. The drain ran below the heel.
 
-The accounting closed the fever-cluster entry, and the ledger closed the dark-junction entry, and the ledger closed the ward-junction contact. The last one cost more to close than the others. The cost did not appear in the closing.
+The ledger closed the fever-cluster, the dark-junction, the ward-junction contact. The last one cost more than the others. The cost did not appear in the closing.
 
-I exhaled. The accounting was complete and the weight was where the weight had been, and I went on holding the angle against the dusk.
+I exhaled and went on holding the angle against the dusk.
 
 
 ═══════════════════════════════════════
@@ -148,7 +134,7 @@ Chapter 3
 
 *By the end of that day I had a map and no name to put on it. The flies told me the streets and the streets told me the count and the count closed where the ward-junction body crossed the threshold of the stitch-house and the dark-junction corner went silent in the same hour. I did not feed anyone. I did not direct. The rule was still the rule. What I had built I had not yet shown to anyone, and that was the second rule — the one I had not stated to myself in those words.*
 
-*The morning market was where the streets condensed. It was a salt-day, the second of the fishmongers' three, which meant the stalls would run heavy until the third bell and thin sharp after — the rhythm the Hook kept its weeks by, fixed and unwritten. I walked it because the count needed the foot-traffic densities the flies could not give me at distance, and because moving through the stalls was the cheapest way to refresh the map without giving the map a watcher. I had not stopped doing the work. The work was the same work. The work was what I did instead of the thing the work made possible.*
+*The morning market was where the streets condensed. It was a salt-day, the second of the fishmongers' three, which meant the stalls would run heavy until the third bell and thin sharp after — the rhythm the Hook kept its weeks by, fixed and unwritten. I walked it because the count needed the foot-traffic densities the flies could not give me at distance, and because moving through the stalls was the cheapest way to refresh the map without giving the map a watcher. The work was what I did instead of the thing the work made possible.*
 
 ---
 
@@ -196,25 +182,17 @@ I registered the name and did not shift my weight or my eyes from the yard-mouth
 
 Rhaenys's Hill rose east of the Red Keep, the Dragonpit at its crown — the wards below it ran from the noble-quarter approaches down toward the lower city.
 
-I ran the inventory of wards-below-Rhaenys's-Hill coverage against the feed I already held. The coverage I already held ran through the wards he had named — the price-tag sat in that overlap unspoken.
+I ran the inventory of wards-below-Rhaenys's-Hill coverage against the feed I already held. The coverage ran through the wards he had named — the price-tag sat in that overlap unspoken.
 
 "Sera Hightower. A ward of the cadet branch, placed in the Queen Consort's household. There is a question about her birth that has slept for years and could be put before the Small Council inside three months by a man who knows where to put it. He would prefer it slept longer. He can see to that."
 
-Sera Hightower was fourteen, a ward of the Hightower cadet branch, placed in the Queen Consort Alicent's household for the kind of political advancement that minor branches purchased with appropriately-presented daughters.
+Sera Hightower was fourteen, placed in Alicent's household for the kind of political advancement minor branches purchased with appropriately-presented daughters.
 
-I counted the ward-workers by the near shed and the boy's hoop-stack rate at the far end through the feed. The wards he had named were already in the feed; I was being asked to sell coverage I was running. I mapped the ward Jarvis named against the coverage I already held for Rhaenys's Hill ward-traffic.
-
-The prohibition engaged in my accounting as a term on one side of a ledger where the other side had a named cost attached to refusal. My hand closed once at the cloth of my dress and opened. The ledger had opened with a named cost on the side of refusal in the shape of every chain I had read backward from its ending.
+The wards he had named were already in the feed; I was being asked to sell coverage I was running. The prohibition engaged in my accounting as a term on one side of a ledger where the other side had a named cost attached to refusal. My hand closed once at the cloth of my dress and opened.
 
 "I have heard you."
 
-The trade-shape sat between us in the tallow-damp air of the cooper's yard: a named ward, a named patron, a named product, no answer yet.
-
-The yard held the same workers at the near shed, the same boy at the hoop-stack, the same tallow-damp from the lane-caulking two alleys over.
-
-Jarvis stood without adding to the proposal, hands at his sides, weight distributed for someone who had delivered and was waiting.
-
-I held my position with my back to the shed wall and the yard-mouth in clear line.
+The trade-shape sat between us in the tallow-damp air of the cooper's yard: a named ward, a named patron, a named product, no answer yet. Jarvis stood without adding to the proposal, hands at his sides, weight distributed for someone who had delivered and was waiting. I held my position with my back to the shed wall and the yard-mouth in clear line.
 
 "A day."
 
@@ -228,7 +206,7 @@ Same place, first bell — the courier's confirm read as the close; I had engage
 
 He left the yard by the lane-mouth with the same unhurried pace he had arrived with.
 
-I did not move from the shed wall until the feed confirmed his exit from the lane. I ran the coverage of Rhaenys's Hill ward-traffic against the boy at the hoop-stack and the two workers at the near shed — the coverage and the open line sat in the accounting the way a chain that had tightened sat inside the choice that tightened it, a known weight inside an already-priced load. The open ledger line and the coverage map sat in the same place, requiring the same answer.
+I did not move from the shed wall until the feed confirmed his exit. The coverage and the open line sat in the accounting the way a chain that had tightened sat inside the choice that tightened it — a known weight inside an already-priced load. The open ledger line and the coverage map sat in the same place, requiring the same answer.
 
 I left the cooper's yard by the lane-mouth, the feed still running on the street beyond it.
 
@@ -242,7 +220,7 @@ Chapter 4
 ---
 The tallow-damp off the lane-caulking reached the shed-wall before the yard itself came into view, and the cooper's-yard workers were holding their smallfolk-hours murmur at the far side of the shed in the way that meant nothing had yet asked them to look up. I crossed into the yard at that register, took the shed-wall at my back, and let the timber put the lane-mouth across open ground in front of me.
 
-The feed had him a span before the lane-mouth did. His gait was the gait already mapped — the insects placed him in the lane and returned him to me, and only then did Jarvis step into the lane-mouth in the body my eyes were waiting on.
+The feed had him a span before the lane-mouth did. The insects placed him in the lane and returned him to me, and only then did Jarvis step into the lane-mouth in the body my eyes were waiting on.
 
 My hand closed on the shed-wall behind me. The yes went across the yard-air in the cadence of a settled count, and the modification carried the only parameter the prohibition still held.
 
@@ -254,39 +232,27 @@ I held my feet.
 
 His cadence carried the receipt without the conditional that would have left the yes open; the receipt-form had settled before my body finished holding for it.
 
-The feed held him through the hook-range as he turned, his retreat through the hook-range mapping itself out across the count before his weight had committed to the lane.
-
-He exited the lane-mouth. I gave it the breath it required, and then I exited the cooper's yard.
+The feed held him through the hook-range as he turned. He exited the lane-mouth. I gave it the breath it required, and then I exited the cooper's yard.
 
 By the time the light had come up enough to put work into the lanes, the discard-air had taken over from the tallow-damp at the waste-middens junction, and the heaviness of it sat across the three alley-mouths the way smoke sits over a cold hearth before the draw catches.
 
 I crossed into Pig Tallow Lane — the first Flea Bottom ward beyond the Hook, named for the rendering trade no other would carry, three alleys feeding a waste-middens junction at its mouth — and took my line along the wall the carter-work was facing away from.
 
-The insect-range went outward one ward.
-
-The load on it was the load I had already priced. The agitation at the junction-mouth mapped itself out through the feed the way the cooper's-yard movement had — three alleys, the middens-cart axis, the bodies working the rendering at the angles the carter-work imposed on them — and the practical shape of it settled in front of me before my eyes had finished walking the junction.
+The insect-range went outward one ward. The load was the load I had already priced. The agitation at the junction-mouth mapped itself out through the feed — three alleys, the middens-cart axis, the bodies working the rendering at the angles the carter-work imposed.
 
 The penny-a-barrel carter pulled the middens cart up at the junction-mouth and set the brake.
 
-The feed returned Oswyn Mudway on the carter's near side — the elder I had met once in the second month, the body the routing had already placed at penny-a-barrel work this hour and at this junction, and the recognition arrived along the gait the feed had already mapped before the eyes were given the face. The body the routing already accounts for, the feed said back, and I did not let the next thought finish.
+The feed returned Oswyn Mudway on the carter's near side — the elder I had met once in the second month, placed by the routing at penny-a-barrel work this hour, recognition arriving along the gait before the eyes were given the face. The body the routing already accounts for, the feed said back, and I did not let the next thought finish.
 
-I mapped the interval — the elder's window at the carter's side, the span from cart-arrival to cart-departure, the count he would hold at the junction-mouth before the rendering yard took him.
-
-Pig Tallow Lane returned ward-tier bodies and nothing above ward-tier; through the range at its far reach, the stitch-house frames stood at the next ward's edge, marking the second ward as the next ward to be read.
+Pig Tallow Lane returned ward-tier bodies and nothing above ward-tier. At the range's far reach, the stitch-house frames stood at the next ward's edge.
 
 The feed returned Wren Stitch-Maker at the second-ward range. She would not be written down. The report would carry the patterns the lane held, what moved through it and what did not, where the seams sat — and her body would not be among them.
 
-I held my feet at the junction-mouth and did not take the lane that ran to the stitch-house frames.
+I held my feet at the junction-mouth and did not take the lane that ran to the stitch-house frames. The second-ward junction mapped itself out at the reach — the seams, the body-counts, the carter-work the second ward carried in place of the rendering.
 
-The second-ward junction mapped itself out at the reach — the seams, the body-counts, the carter-work the second ward carried in place of the rendering — and I let the count settle and held where I stood.
+Roper's Court came out of the early-morning grey with its sound emptied. The tributary lanes ran off long and dark at their far reaches; the central court held sight-clear to every mouth. A Flea Bottom craft-trade ward turning on rope-making, its lanes linear enough to serve as rope-walks — the geometry would read cleanest under the grey.
 
-Roper's Court came out of the early-morning grey with its sound emptied. The carter-work that had laid the day-1 ground had not yet started, and the silence at the court was the silence before any crossing; the tributary lanes ran off long and dark at their far reaches, and the central court held sight-clear to every tributary mouth.
-
-I entered the court along the wall opposite the rope-walks. Roper's Court — a Flea Bottom craft-trade ward turning on rope-making, a central court with tributary lanes radiating off long and linear enough to serve as rope-walks — laid its geometry out under the grey in the shape the feed would read cleanest.
-
-The insect-range went outward to its fourth ward.
-
-The saturation-cost crossed past the load I had carried before, and it sat at that crossing without resolving and without giving any sign that the carrying had changed shape. The four wards opened into the feed at once — the Hook ward, the second ward at the stitch-house frames, the third ward at the waste-middens junction, the fourth ward at Roper's Court — and the run of them was a single read held across the four footprints together.
+The insect-range went outward to its fourth ward. The saturation-cost crossed past the load I had carried before, and it sat at that crossing without resolving. Four wards opened into the feed at once — the Hook, the stitch-house frames, the waste-middens junction, Roper's Court — a single read held across the four footprints together.
 
 I held the four-ward feed and walked the court.
 
@@ -298,19 +264,15 @@ I took the sheet from my coat. It was folded twice, the smaller fold inward, and
 
 The half-step of yard-air closed around the sheet's last contact with my fingers, and the cost had crossed before my hand had registered it crossing. I held my feet at the close of the step.
 
-He pocketed the sheet into the inner seam of his coat without unfolding it. The fold went out of sight. The coat-cloth settled over the place where the sheet had gone, and his hand returned empty to his side.
+He pocketed the sheet into the inner seam of his coat without unfolding it. The coat-cloth settled over the place where it had gone, and his hand returned empty to his side.
 
-What sat in his coat now sat at ward-pattern observation. The sheet held the lanes I had walked — which alleys carried what, which seams ran where the carter-work routed around them, the body-counts the wards held at the hours I had read them — and it did not hold the name of anyone who had spoken to anyone in any of those lanes.
+What sat in his coat now sat at ward-pattern observation. The sheet held the lanes I had walked — which alleys carried what, which seams ran where the carter-work routed around them, the body-counts the wards held at the hours I had read them — and it did not hold the name of anyone who had spoken to anyone in any of those lanes. Nothing reached above ward-level. The paper held the layer it had been authorized to hold and gave the upper one no foothold.
 
-The source-tier sat at Flea Bottom. Nothing on the sheet reached above ward-level. No court-tier observation, no merchant-tier seam-read, no carrier-tier routing above the rendering-and-cooperage trades — the paper held the layer it had been authorized to hold and held at that layer without giving the upper one a foothold.
+He gave the brim of his cap the small touch the receipt-form required, turned in the lane-mouth, and exited at the gait he had entered.
 
-The arrangement held him at courier. I was not the patron-tier source the upper channel had any name for; he was the conduit the upper channel had a name for, and the name stayed at courier and went no further.
+I let the empty yard hold for the breath it required, then exited on the line away from the lane Jarvis had taken.
 
-He gave the brim of his cap the small touch the receipt-form required, turned in the lane-mouth, and exited the cooper's yard at the gait he had entered it at.
-
-The sheet had just entered a channel the feed could not reach into. I let the empty yard hold for the breath it required, and then I exited the cooper's yard on the line away from the lane Jarvis had taken.
-
-The four-ward feed ran outward as I walked back through the Hook. The Hook returned its body-counts at the near range; the third ward returned the waste-middens junction at its mid-range; Pig Tallow Lane returned its rendering-yard angles at the same mid-range; Roper's Court returned the geometry of its rope-walks at the outer reach.
+The four-ward feed ran outward as I walked back through the Hook — body-counts at the near range, waste-middens junction at the mid, Pig Tallow's rendering-yard angles beside it, Roper's Court at the outer reach.
 
 At the stitch-house range the feed returned Wren Stitch-Maker. The print arrived the way it had arrived the day before — the gait given to the body, the body given to the name, the name held inside the reading and not given to anything beyond it. The four-ward read continued through the return, and the report had already gone the other way in Jarvis's coat. The body that walked through the Hook carried both of them at the same count.
 
@@ -333,21 +295,17 @@ The hill's stone skirt met the lane-mouth at grade, cool damp under the paving w
 
 I stepped into the Rushwick — a lane-cluster between the hill's stone skirt and the city's upward lean, alleys for passing not selling, ground abutting the lower Red Keep servant-passages — and held at the junction's edge.
 
-The feed filled the junction. Insect-bodies on lintels, in wall-seams, under cart-shadow; the count settled the way it had always settled, the same architecture I knew, the same instrument bedding in on new ground.
+The feed filled the junction. Insect-bodies on lintels, in wall-seams, under cart-shadow; the count settled the way it had always settled, the same instrument bedding in on new ground.
 
-A provisioner-train came through from the south side, four carts and the men walking them, cart-wheels grinding over the paving in the heavy uneven rhythm of stone that had not yet been worn smooth at this turn. The categorization held. I read them the way I had read every body since coverage came up: the forward-lean of men carrying loads under a tight delivery window, the unhurried-hurry of institutional rhythm, no affect required to file them.
+A provisioner-train came through from the south side, four carts and the men walking them, cart-wheels grinding over the paving in the heavy uneven rhythm of stone not yet worn smooth at this turn. I read them the way I had read every body since coverage came up: the forward-lean of men carrying loads under a tight delivery window, no affect required to file them.
 
-The train took the east-lane, the stone narrowing along the hill-skirt as the lane fell off into the morning light past the wall, the carts gone from the feed in the order they had entered it. What read in their gait was not Hook foot-traffic. It was a different substrate under the same categorization; the layer above it stayed unnamed.
+The train took the east-lane, the stone narrowing along the hill-skirt as the lane fell off into the morning light past the wall. What read in their gait was not Hook foot-traffic. It was a different substrate under the same categorization; the layer above stayed unnamed.
 
-A message-runner came across after them, alone, no load, a tighter compressed gait — the body of someone accountable to someone above, walking on the interval he was paid to walk.
-
-He took the lane-mouth at the threshold where the coverage I held released him, and the feed let him go at the line where the lane-mouth widened, the count holding to its side of the boundary, the runner gone past the wall before the next body entered.
+A message-runner came across after them, alone, no load, a tighter compressed gait — the body of someone accountable to someone above, walking on the interval he was paid to walk. He took the lane-mouth at the threshold where the coverage I held released him, and the feed let him go past the wall before the next body entered.
 
 Then the next body entered.
 
-He came on at the lane-mouth at the same threshold the runner had taken, walking the heel-first gait the feed had now flagged three mornings running on the same lane — the courier, a man filed as recurring body, no name attached.
-
-The feed returned him before I had asked for the return; the categorization came up in the same form it had come up the prior two mornings, the same filed-clean entry, the same recurring-Rushwick-resident notation laid against the same body, and the hold I kept at the wall-line was the hold I had used at every junction since coverage came up — the discipline at the body, not at the cognition, the count steady against the building gap where the sightline broke.
+He came on at the same threshold the runner had taken, walking the heel-first gait the feed had now flagged three mornings running on the same lane — the courier, a man filed as recurring body, no name attached. The hold I kept at the wall-line was the hold I had used at every junction since coverage came up — the discipline at the body, not at the cognition, the count steady against the building gap where the sightline broke.
 
 The three figures came in from the side.
 
@@ -357,27 +315,21 @@ The third struck him.
 
 The side-alley returned the sound. The walls turned the noise of impact against stone inward, and then the alley carried it out at the threshold — the low, effortful sound a body makes against stone when it is trying not to make any sound at all, no cry in it, only the work of force absorbed and the work of not answering the force — and the feed had no field for what the alley delivered.
 
-The courier raised the spine.
+The courier raised the spine. He found the feet.
 
-He found the feet.
-
-I filed the enforcement-record. Three figures, coordinated, side-alley containment, directed at a specific person for a specific reason — not a robbery; the geometry was wrong for a robbery; the body-count and approach-angle filed as enforcement-incident, clean entry, no affect required.
-
-I delivered the report-entry into the same form that had held junction-agitation and passage-avoidance: movement-pattern, body-count, approach geometry, resolution. The form took it. The form was built to take it.
+I filed the enforcement-record. Three figures, coordinated, side-alley containment, directed at a specific person for a specific reason — not a robbery; the geometry was wrong for a robbery; the body-count and approach-angle filed as enforcement-incident, clean entry, no affect required. I delivered the report into the same form that had held junction-agitation and passage-avoidance: movement-pattern, body-count, approach geometry, resolution. The form took it.
 
 I drafted the jarvis-report against the architecture that held someone else's exposure at a length of someone else's arm.
 
 The three figures cleared the alley-mouth, east-lane open behind them, and went east in the order they had entered.
 
-I added the courier to the body-map — recurring-Rushwick-resident, enforcement-incident attached, filed at the operational layer, no ledger entry where his face would have a name.
-
-He took the junction-corner forty feet from the wall-line, the corner at the east turn where the sightline ran clean, and the count let him go where the count had let the runner go before him.
+I added the courier to the body-map — recurring-Rushwick-resident, enforcement-incident attached, no ledger entry where his face would have a name. He took the junction-corner forty feet from the wall-line, the corner at the east turn where the sightline ran clean, and the count let him go where it had let the runner go before him.
 
 By evening I had the room-floor to myself, the lamp unlit because the window's last light was the working light I preferred, and the air in the lodging room held the still that an indoor room keeps when no through-transit moves it — a different stillness from the lane's, dense in the corners, the boards underfoot dry where the lane had been damp at the wall. I sat with my back to the bedframe and set the day on the floor in front of me the way a person lays out coin to count it.
 
 I ran the Hook-feed first, the morning's coverage of the lane below the Hook brought back through me in the same shape it had gone out, and the feed delivered the count and the body-flags and the gait-records and closed itself out clean, every entry resolved against its return, the lane settling into the form it kept when nothing about it had asked to be remembered. The accounting closed; the stitch-maker's ward print held a length longer than the others in the closing, the gait coming back at the salt-fish row at a beat the count was paying out wider than the bodies around it. I did not name the extra length. I let the print hold and the close hold around it, and I did not adjust the count.
 
-Then I ran the rushwick-feed. The morning's coverage of the junction came back the way the Hook had come back, the provisioner-train re-crossing the junction at the hour it had crossed, the count carrying the train east the way the count had carried it east. The provisioner-train cleared the junction. The feed kept on into the courier-window, into the side-alley figures, into the report-entry I had delivered at the line where my own filings closed.
+Then I ran the rushwick-feed. The provisioner-train re-crossed the junction at the hour it had crossed; the feed kept on into the courier-window, into the side-alley figures, into the report-entry I had delivered at the line where my own filings closed.
 
 The rushwick-feed did not settle. My breath came shallower at the bedframe; the bay-damp had reached into the lodging room since I'd come back, and the boards under me had taken it on. The color that had been on the junction at the morning hour was on the junction at the evening hour, present in the return the way it had been present in the live read, the feed routing the provisioner-train through the same architecture and bringing the architecture back with the train. I ran the pass a second length to see if it was the read and not the feed; the color persisted.
 
@@ -385,13 +337,11 @@ My head tilted toward the held color. I stopped the rushwick-pass.
 
 The stopping was the body's, before I had a word for what the body was doing. The hand I had laid flat on the boards came up off the boards. The boards were cold under the palm where the lifting left a hand-print of the heat the palm had carried. The feed was an apparatus I had been keeping neutral, an instrument with a use, and the instrument was recognizing the route it carried as the route — not the lane, not the courier, but the architecture the routing went through, and the architecture was the architecture I had not asked the feed to mark. The discipline I had been keeping was the discipline of a neutral read; the discipline was what the apparatus was no longer willing to support.
 
-I closed the evening review. The window's light had thinned to the line above the sill, and I closed the day's coverage out into the form it kept when the day was done, the entries delivered, the count resolved.
+I closed the evening review. The window's light had thinned to the line above the sill.
 
-I filed the courier body-record. The face the alley had returned went into the body-map under the recurring-body anchor I had opened that morning, the enforcement-incident attached, the entry going in the way bodies go into the record when the record is the route they will be moved along later, and I held the entry's face there a length and then I closed the file.
+I filed the courier body-record under the recurring-body anchor I had opened that morning, the enforcement-incident attached, and I held the entry's face there a length and then I closed the file.
 
-I ran the rushwick flat-read.
-
-The provisioner-train held the rushwick-pass. The train re-crossed the junction at the morning hour and the feed brought the crossing back and the architecture came back with it; the pass would not run as the Hook had run, would not close out clean against its return, would not deliver the junction as a count and only a count. The door I had turned did not open at the turn.
+I ran the rushwick flat-read. The provisioner-train held the rushwick-pass; the train re-crossed the junction at the morning hour and the architecture came back with it. The pass would not run as the Hook had run, would not close out clean against its return, would not deliver the junction as a count and only a count. The door I had turned did not open at the turn.
 
 I ran the rushwick flat-read again, slower this time, the feed taken at a length deliberate enough to let the neutral read seat if it would seat.
 
@@ -414,17 +364,17 @@ She found me before her feet turned. I caught the moment her eyes came up out of
 
 She said it the way you set down a thing you have already carried, and she did not stay to watch me take it up. The exchange ended and the silence that had been between us for four months — through the cart-morning, through the market-row, through every evening close where her print had run longer than the others — closed over it again. A sound route from a stranger is not nothing. It carries a cost I had not yet found the name for, and I marked that, and took the route.
 
-The south court was where she had said it was, a narrow gap off the tallow-boiler's wall, clear, the blocked lane behind me now. I came in out of the smoke and opened the coverage-notes — the entry that is mine, the working column the channel never sees. In the contact-role field I wrote *ward-resident, Hook, routine.* That is true. It is also the whole of what I wrote. The field for the source of the contact I left as it was, blank, and I closed it blank, and the blank was the entry. A name kept out of the column is a name the line cannot carry. I had priced the field before the stylus touched it.
+The south court was where she had said, a narrow gap off the tallow-boiler's wall, clear, the blocked lane behind me. I came in out of the smoke and opened the coverage-notes — the working column the channel never sees. In the contact-role field I wrote *ward-resident, Hook, routine.* That is true. It is also the whole of what I wrote. The field for the source of the contact I closed blank, and the blank was the entry. A name kept out of the column is a name the line cannot carry. I had priced the field before the stylus touched it.
 
-The Jarvis-channel form came in while the notes were still warm under my hand. I opened it. It did not ask for movement-patterns, for the cluster, for the shape of a week's foot-traffic the way the asks before it had asked. It asked for names. The Black-faction ward elders, by name — four of them. I read it through and set it down, and then I picked it up and read it again, because reading a thing twice is how I make sure I have the size of it, and I had. The four bodies I had been reading as nodes for four months, asked for now as persons. I pulled the coverage-memory record, the four of them down a column where I had logged them as movement, and I filled the channel form — the four names, in order, in my own hand — and then I lowered the form without sealing it and let it rest on the bench. Filled. Not sent. The not-sending sat there between my hands and was the loudest thing in the court.
+The Jarvis-channel form came in while the notes were still warm under my hand. I opened it. It did not ask for movement-patterns or the shape of a week's foot-traffic the way the asks before it had asked. It asked for names. The Black-faction ward elders, by name — four of them. I read it through and set it down, and then I picked it up and read it again, because reading a thing twice is how I make sure I have the size of it. The four bodies I had been reading as nodes for four months, asked for now as persons. I pulled the coverage-memory record and filled the channel form — the four names, in order, in my own hand — and lowered it without sealing and let it rest on the bench. Filled. Not sent. The not-sending sat there between my hands and was the loudest thing in the court.
 
-I opened the ledger-board. Down the cost side I set the four names, one under the next, the stylus the only sound in the court now, scratch and lift and scratch, and under that sound the four of them stopped being a cluster and went down as four persons in my own letters, because persons cost differently than nodes and the board is where the difference is kept. Beneath them I wrote the sera-coverage entry, the protection the four names would buy. Then I drew the line that marked the red-keep coverage — one stroke, the stylus laid flat and pulled across the record, the paid mark.
+I opened the ledger-board. Down the cost side I set the four names, one under the next, the stylus the only sound in the court now, scratch and lift and scratch, and under that sound the four of them stopped being a cluster and went down as four persons in my own letters, because persons cost differently than nodes and the board is where the difference is kept. Beneath them I wrote the sera-coverage entry, the protection the four names would buy. Then I drew the line that marked the red-keep coverage — one stroke, the stylus pulled across the record, the paid mark.
 
-The stylus stopped. My hand stood above the two finished entries and did not come down, the point a finger's width off the board, the scratch of writing gone out of the court into nothing. The four names on the one side, the coverage they bought on the other, both weighed before the hand ever reached for them — so the stillness was not a question being asked. It was only the hand catching up to a verdict the count had reached three entries back. The ledger had run correctly. I closed the board.
+The stylus stopped. My hand stood above the two finished entries and did not come down, the point a finger's width off the board. The four names on the one side, the coverage they bought on the other, both weighed before the hand ever reached for them — so the stillness was not a question being asked. It was only the hand catching up to a verdict the count had reached three entries back. The ledger had run correctly. I closed the board.
 
-I lifted the form again. I sealed it. The cost to the watch is paid the instant the seal sets, and nothing on a sealed form comes back; the accounting had run clean. The courier took the form out of my hand and was gone with it, the four names off the bench and into the arrangement, past my reach.
+I lifted the form again. I sealed it. The cost to the watch is paid the instant the seal sets, and nothing on a sealed form comes back. The courier took the form and was gone with it, the four names off the bench and into the arrangement, past my reach.
 
-I opened the ward-coverage notes. The two records sat complete now and I read them without comment, which is what reading them is for: the four names dispatched in the channel, and here, in the column that is mine, the field I had left blank. The same hand had made both. Two records, and the field in mine still blank where the four names were filled and sent. I closed the notes.
+I opened the ward-coverage notes. The two records sat complete and I read them without comment: the four names dispatched in the channel, and here, the field I had left blank. The same hand had made both. I closed the notes.
 
 
 ═══════════════════════════════════════
@@ -445,15 +395,15 @@ He was naming the man's child. A fever, he said, the way one says a thing that i
 
 I came in past the cleared shaft of the cart, into the sept corner, where the sept-bay's shadow lay across the crossing stone and the lane-cold met the corner-cold at the threshold. I gave him the nod a person gives a fixture they have decided to greet.
 
-He went on with the boy's fever — how far it had run, what it had taken, where it sat now. He named what the maester would cost to call, plainly, the figure and the distance, no appeal in it. Then he turned off the account of the sick child and faced me square, and his voice did not change register, which was how I knew the next part was not about the child at all.
+He went on with the boy's fever — how far it had run, what it had taken, where it sat now. He named what the maester would cost to call, plainly, no appeal in it. Then he turned off the account of the sick child and faced me square, and his voice did not change register, which was how I knew the next part was not about the child at all.
 
 "There's a man up the Lane runs errands for a house that pays him in bread, not coin," he said. "Good bread. His children eat. I've no quarrel with a man feeding his children. But the house pays him that way because it suits the house, and every loaf he takes, he takes on the house's terms, and the terms don't get smaller for the taking. They stay the size they were. A thing built crooked doesn't come straight because you lean on it gently. It grows crooked at its own rate. The slow way costs him more now — he'd go hungry a while, refusing. It costs him less after. The debt doesn't sit there gathering."
 
 I went still. Not deliberating — the body simply arrested, the way it does when a thing you have been carrying gets set down in front of you in another man's hands. A crooked house does not come straight by leaning it gently; the leaning compounds at its own rate. That was the architecture of the thing I had built. He was reading my own ledger back to me in a stranger's mouth and did not know it, and the figures matched.
 
-I faced him. The resentment I had filed for two months as a kind of weather had carried no object until that turn, and facing him handed it one — not the man, the structure he had just described — and I had tracked his circuit for those two months as a node on a map and was looking at him as a man for the first time.
+I faced him. The resentment I had filed for two months as a kind of weather had carried no object until that turn, and facing him handed it one — not the man, the structure he had just described. I had tracked his circuit for those two months as a node on a map and was looking at him as a man for the first time.
 
-I planted my feet. The body's own instinct was to route around the obstruction and close the circuit and be gone, and staying was the more expensive option, and I paid it. He saw it. He saw a woman who had decided not to leave the conversation, and what I gave him was the staying and not the rebuttal.
+I planted my feet. The body's instinct was to route around the obstruction and close the circuit and be gone; staying was the more expensive option, and I paid it. He saw a woman who had decided not to leave the conversation, and what I gave him was the staying and not the rebuttal.
 
 He let a breath out into the cold and did not press.
 
@@ -471,10 +421,8 @@ Two accountings stood in the cold and neither was paid. His slower way carried a
 
 "I know the slow way has a cost," he said. "I'll not pretend I don't. You've named it, and I'll carry the name. I've buried by the slow way before. What I can't do is the other thing — take the quick way and watch the debt go on growing past where I can see the end of it. I don't know where it stops. That's the truth of it. I haven't an answer that makes your dead breathe. I've only the one I can live beside."
 
-My feet had begun to shift toward the lane, and I settled the heel back instead, the weight pressing down at the cobble's edge, and steadied them. The natural close was departure and I declined it. He read the staying the way he had read the planting — two people who had taken each other's measure seriously and resolved nothing, which is the thing the architecture I ran was built to prevent and could never have produced.
+My feet had begun to shift toward the lane, and I settled the heel back instead, the weight pressing down at the cobble's edge. The natural close was departure and I declined it. He read the staying the way he had read the planting — two people who had taken each other's measure seriously and resolved nothing, which was the thing the architecture I ran was built to prevent and could never have produced.
 
-Then I left, before a resolution that was not coming. The leaving was the filing: the argument left available, not closed, and I knew I was leaving it available the way I knew the range limit on the count. This was the road I was not taking, and I knew I was not taking it, and the knowing was not the same as the taking. I went out by the cross-lane mouth, the exit that cleared his sight line.
+Then I left, before a resolution that was not coming. The leaving was the filing: the argument left available, not closed, and I knew I was leaving it available the way I knew the range limit on the count. This was the road I was not taking, and the knowing was not the same as the taking. I went out by the cross-lane mouth, the exit that cleared his sight line.
 
-Behind me the lane-cold settled back into the corner stone where it had held all morning.
-
-I cleared the Hook and went up into the rest of the day.
+Behind me the lane-cold settled back into the corner stone where it had held all morning. I cleared the Hook and went up into the rest of the day.
