@@ -3537,3 +3537,50 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0061 | 2026-05-31 | SLOW (process-critic)
+
+question: /and-stitch b01-c08 Phase 9.5 process-critic dispatch. FAIL on two independent legs — (1) cold-read AIRLESS matching chunk_cold_read verbatim (Class B / matching-complaint → SHIPPED-WITH-CAVEATS on cold-read leg); (2) staging finding-002 STAGE on @6 axis-move central-event (BLOCKING under URI-STITCH-SPINE-STAGING independent of cold-read). Does process need to change?
+
+context: |
+  Full gate chain PASS except Phase 9. Voice-embodiment (PROP-0022) applied at stitch; produced
+  AIRLESS anyway — rendered prose has no physical body-act for Taylor during the @6 integration
+  mechanism because no such bone exists in the bones file. Third project chapter (c01 era / c05
+  era / c08) where a concrete-SVO axis-move central-event bone lacks a physical body-act companion
+  for the POV character during the mechanism. Prior proposals checked: no open/rejected proposal
+  covers this specific pattern. Distinct from PROP-0024 (abstract-arrival cognitive bones),
+  PROP-0023 (apparatus-dominant whole-chapter), PROP-0011 (held-axis-witnessing).
+
+options: n/a (process-critic mode)
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0030
+
+basis: |
+  Q1 (staging vs. Class B routing): URI-STITCH-SPINE-STAGING governs the staging leg
+  independently; finding-002 is a diagnosable addressable defect, not design-inherent. Staging
+  override of SHIPPED-WITH-CAVEATS correct; no change to PROP-0018 Class B rule warranted.
+  Q2 (voice-embodiment insufficient?): gap is bones-layer. Draft confirms Taylor's body absent
+  during the @6 mechanism prose; voice-embodiment cannot supply a body-act the bones file does
+  not contain.
+  Q3 (mandate body-act companion for axis-move scenes): yes — third recurrence qualifies.
+
+rationale: |
+  The central-event bone "taylor traces the watcher-sightlines" is correctly concrete (passes
+  EVENT-NOT-CONCRETE). The gap is absence of any companion physical-body-act bone for Taylor
+  during the tracing. New failure sub-class: concrete-SVO axis-move bone without a body-act
+  companion at the peak. URI-WRITE-EVENT-CONCRETENESS cannot catch it (the SVO IS concrete).
+  PROP-0030 adds a Phase 1 authoring obligation + Phase 6 BODY-ACT-ABSENT-AT-PEAK SIGNAL check.
+  S-cost; change_type modify; no new gate architecture. Recurrence_count 3.
+
+trade-off: |
+  Phase 1 companion obligation adds ~1 min/scene review for axis-move scenes; most will already
+  satisfy it. Phase 6 SIGNAL (not HARD at first occurrence) limits false-fire damage from the
+  physical-vs-cognitive SVO heuristic.
+
+follows: DEC-0060
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

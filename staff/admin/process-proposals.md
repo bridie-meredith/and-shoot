@@ -3697,6 +3697,287 @@ proposed_diff: |
     this sub-clause is the only mechanical protection against the wasted re-decompose cycle
     at depth-pass completion. The proposals are complementary; accept/defer each independently.
 
+---
+
+## PROP-0030
+
+```yaml
+id: PROP-0030
+created_at: 2026-05-31T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/staging-b01-c08-20260531T210000Z.md
+  source_verdict: FAIL (finding-002 STAGE on @6 — s01 central-event / axis-move capability +0.5 — BLOCKING under URI-STITCH-SPINE-STAGING)
+  gate_path: .claude/commands/and-stitch.md#phase-9
+secondary_gate_paths:
+  - .claude/commands/and-write.md#phase-6
+  - .claude/commands/and-substance.md#phase-5.5
+target:
+  type: command
+  path: .claude/commands/and-write.md
+  section: "Phase 1 — Scene-decomposition, step 4a (held-axis coverage verification / completion gate) + Step 2 (bone-shape discipline for central-event bones)"
+change_type: modify
+rationale: |
+  b01-c08 Phase 9 staging-review found finding-002 BLOCKING: STAGE on @6, the sole axis-move
+  central-event bone (capability +0.5). The staging gap: "Taylor traces the watcher-sightlines"
+  is a concrete SVO; the bone's cognitive sequence (traced → resolved → slotted) is faithfully
+  rendered at stitch. What is absent: the physical act of Taylor's body during the trace. The
+  rendered prose gives a cognitive sequence without any physical correlate — no locomotion, no
+  stillness, no physical arrest that marks the moment the overlay slots. The staging reviewer
+  correctly diagnosed: "the integration should have a physical correlate on Taylor's side."
+
+  Crucially: the voice-embodiment discipline (URI-STITCH-VOICE-EMBODIMENT, PROP-0022 /and-stitch
+  Phase 4) was applied. The stitcher rendered "I traced" (person-first) with the cognitive sequence
+  intact. Voice-embodiment cannot supply what the bones file did not contain. The gap is at the
+  bone-decomposition layer: the central-event bone carries the cognitive/mechanism SVO but has no
+  companion physical-body-act bone for the character during that mechanism. The stitcher is
+  bone-faithful; no downstream phase can retroactively add a physical correlate without a bone.
+
+  This is a distinct failure class from PROP-0024 (argument-spine interiority: abstract arrivals
+  where a concrete physical act exists but the bone records the cognitive arrival instead).
+  In PROP-0024, the fix is recasting the central-event bone itself to a concrete physical act.
+  In this failure class, the central-event bone IS a concrete SVO (the mechanism is correctly
+  stated) — what is missing is a separate body-position / body-act bone for the character DURING
+  the mechanism event. "Taylor traces the watcher-sightlines" is a valid concrete SVO for an
+  axis-move; the gap is that Taylor-as-body has no physical correlate at the moment of tracing.
+
+  Recurrence across 3 chapters:
+
+    b01c01: staging findings on central-event bones flagged body-act absence at peak moments
+    (per PROP-0007 / PROP-0018 era evidence; the pattern that drove URI-STITCH-SPINE-STAGING).
+    Those findings pre-dated the current proposal infrastructure; they are the founding evidence
+    that URI-STITCH-SPINE-STAGING was needed at all.
+
+    b01c05: the three-FAIL trace included staging gaps on central-event bones (Forks B+C postop;
+    PROP-0019 / c05 three-FAIL evidence base). The c05 primary FAIL class was voice-abstraction,
+    but the postop confirmed body-act absence at peak moments as a co-occurring pattern.
+
+    b01c08: finding-002 STAGE on @6 (axis-move central-event; sole Δ-bone in chapter).
+    finding-004 GROUND on @13 (central-event held-register foreshadow; body thin at logging moment).
+    finding-006 GROUND on @20 (central-event courier-delivery; courier body absent at approach).
+    3 of 4 spine-promotion findings are on central-event bones where the physical body-act at
+    the peak moment is absent or thin — not because the SVO is wrong but because no bone authored
+    a physical body-act companion for Taylor at the mechanism/peak moment.
+
+  Process discrimination:
+
+    Could a stricter URI-WRITE-EVENT-CONCRETENESS (Phase 6 HARD gate) have caught this?
+    No — EVENT-NOT-CONCRETE fires when the central-event bone is NOT a concrete SVO. @6 IS
+    concrete ("taylor traces the watcher-sightlines"). The gate correctly passed @6. The gap
+    is not in the bone's own concreteness but in the absence of a companion body-act bone.
+    EVENT-NOT-CONCRETE is a necessary but not sufficient condition for staging adequacy on
+    axis-move bones.
+
+    Could the staging-reviewer have been prompted upstream? The staging review fires at Phase 9
+    (post-stitch). The only upstream gate that touches bone-completeness for central-event bones
+    is Phase 6 URI-WRITE-EVENT-CONCRETENESS. Adding a companion check here — "for the
+    central-event bone (BONE-CLASS: axis-move), is there at least one bone in the scene that
+    records Taylor's physical body-act or body-position during the central event?" — would catch
+    the gap at Phase 6, before stitch, at $2 instead of $50+.
+
+  The fix is a Phase 1 authoring obligation and a Phase 6 verification check:
+
+    Phase 1: when authoring the central-event bone for an axis-move scene, the screen-writer
+    must ensure at least one companion bone in the scene records a physical body-act by the POV
+    character during or immediately adjacent to the mechanism event. The companion bone may be
+    the central-event bone itself (if the SVO is a physical act, not a cognitive-mechanism act)
+    or a separate grounding bone at the same peak zone. This obligation is separate from PROP-0011
+    (held-axis completion gate) — it applies to the axis-MOVE central-event bone, not held bones.
+
+    Phase 6: add a SIGNAL check: for each bone classified as central-event in the scene-map
+    (axis-move class), verify that at least one bone in the scene's peak zone carries a physical
+    body-act by the named POV character. If the central-event bone's SVO is a cognitive/mechanism
+    act (not a physical act) AND no companion physical-body-act bone exists in the scene's peak
+    zone → BODY-ACT-ABSENT-AT-PEAK SIGNAL (HARD on second chapter-level occurrence).
+
+  Disposition for b01c08 finding-002 + this proposal's recurrence evidence:
+  This is a third-chapter recurrence of the same mechanism. The first-occurrence hold
+  (non-catastrophic, wait for recurrence) does not apply at recurrence_count = 3.
+  Proposing at this count is correct per the process-critic decision procedure.
+
+  Relationship to PROP-0019 + PROP-0022:
+    PROP-0019 (Phase 8.5 coherence + Phase 5.5 chunk cold-read): the coherence review (Phase 8.5)
+    PASSED b01c08 correctly — it is a substance-aware reviewer who correctly identified the chapter
+    as followable for a c01-c07 reader. It is not designed to catch body-staging gaps; those require
+    the staging reviewer. No PROP-0019 gate failure here.
+    PROP-0022 (voice-embodiment discipline at stitch): applied correctly at /and-stitch Phase 4.
+    The discipline produced AIRLESS anyway because the physical correlate was not in the bones.
+    PROP-0022 is correct and operating; the gap it cannot close is the one this proposal addresses.
+
+  Question 1 resolution (Class B SHIPPED-WITH-CAVEATS vs. staging FAIL):
+  The cold-read AIRLESS complaint and the staging STAGE finding on @6 are correlated but
+  diagnostically distinct. The cold-reader did not say "I can't feel Taylor's body at the
+  integration moment" — they said "no decision, cost, reversal, or confrontation," which is the
+  design-inherent Class B staging-chapter complaint. The PROP-0018 Class B / matching-complaint
+  rule correctly routes the cold-read leg to SHIPPED-WITH-CAVEATS.
+  But URI-STITCH-SPINE-STAGING governs the staging-review leg independently. Finding-002 (STAGE
+  on the one axis-move bone) is a separately diagnosable, addressable defect — not a
+  design-inherent constraint. A staging chapter CAN have a staged body-act at its axis-move peak;
+  that is not a genre requirement violation. The staging-review override of the cold-read
+  SHIPPED-WITH-CAVEATS route is correct: the chapter has a diagnosable fixable gap at the
+  central-event bone, not merely a design-inherent cold-reader challenge.
+
+evidence_refs:
+  - "active-project/staff/reviews/staging-b01-c08-20260531T210000Z.md — finding-002: STAGE on @6
+    (s01 central-event axis-move capability +0.5); rationale: 'prose gives a cognitive sequence
+    (traced → resolved → slotted) but Taylor-as-body is absent for the duration'; spine-promotion:
+    YES; severity: BLOCKING."
+  - "active-project/draft/b01-c08.md — @6 prose: 'I traced the sightlines through the feed...
+    The sightlines resolved as a coverage already in place; my own overlay slotted in above it,
+    geometric not contested.' Taylor body absent; no physical correlate for the tracing act."
+  - "active-project/staff/reviews/coherence-b01-c08-20260531T210000Z.md — Phase 8.5 PASS:
+    coherence reviewer confirmed WEAVE clean and FOLLOWABILITY holds; did not flag body-staging
+    gap (correctly — coherence review is not a staging audit)."
+  - "active-project/staff/reviews/coldread-b01-c08-20260531T210000Z.md — Phase 9 cold-read FAIL:
+    CONTINUE=no; AIRLESS; complaint matches chunk_cold_read.cold_read_risk_carry VERBATIM
+    ('no decision, cost, reversal, or confrontation'). Class B matching-complaint rule fires."
+  - "active-project/staff/showrunner/memory.md — chapters[b01c08].chunk_cold_read.cold_read_risk_carry:
+    'Cold reader (uninformed) read this as two names logged + a wider coverage map. No decision,
+    cost, reversal, or confrontation'; disposition P (DEC-0060 same shape as DEC-0044)."
+  - ".claude/commands/and-write.md — Phase 6 URI-WRITE-EVENT-CONCRETENESS: EVENT-NOT-CONCRETE HARD
+    (central-event bone must be concrete SVO). @6 passed this gate correctly ('taylor traces the
+    watcher-sightlines' is a concrete SVO). The gap is not EVENT-NOT-CONCRETE; it is absence of
+    a physical body-act companion for Taylor during the mechanism event."
+  - ".claude/commands/and-stitch.md — URI-STITCH-VOICE-EMBODIMENT (PROP-0022, Phase 4): applied
+    at stitch; 'I traced' renders person-first correctly. Voice-embodiment cannot supply a body-act
+    that the bones file did not contain."
+  - "staff/admin/process-proposals.md — PROP-0024 (argument-spine interiority: abstract arrivals
+    on spine bones; Phase 1 step 2 + Phase 6 HARD). Distinct from this proposal: PROP-0024 fixes
+    bones where the SVO records an abstract cognitive arrival instead of a concrete physical act;
+    this proposal adds a companion body-act bone requirement for bones where the SVO IS concrete
+    but the physical body-during-the-mechanism is unaddressed in the decomposition."
+  - "staff/admin/process-proposals.md — PROP-0011 (held-axis completion gate; Phase 1 step 4a).
+    This proposal extends the completion-gate pattern to central-event axis-move bones; a
+    companion body-act bone for the axis-move peak is a separate requirement from held-axis
+    witnessing."
+recurrence_count: 3
+recurrence_refs:
+  - "b01c01 era: staging findings on central-event bones (body-act absent at peak) pre-dated
+    proposal infrastructure; founding evidence for URI-STITCH-SPINE-STAGING. Not a formal
+    report reference — see PROP-0018 era discussion."
+  - "b01c05 three-FAIL trace (PROP-0019): Forks B+C postop converged on body-act absence at
+    peak moments as a co-occurring pattern alongside voice-abstraction primary class. Second
+    chapter-level occurrence."
+  - "active-project/staff/reviews/staging-b01-c08-20260531T210000Z.md — finding-002 (@6 axis-move
+    central-event), finding-004 (@13 central-event foreshadow), finding-006 (@20 central-event
+    courier-delivery): 3/4 spine-promotion findings on central-event bones with absent/thin
+    physical body-act at peak moment. Third chapter-level occurrence."
+proposed_diff: |
+  CHANGE 1 — .claude/commands/and-write.md, Phase 1, Step 2 (bone-shape discipline):
+
+  In the description of the axis-move / central-event bone shape, after the existing instruction
+  to author the central-event bone as a concrete SVO (URI-WRITE-EVENT-CONCRETENESS), add:
+
+    **Central-event body-act companion obligation (applies when axis-move SVO is a
+    cognitive/mechanism act).** When the central-event bone's SVO is a cognitive or mechanism
+    act (e.g., "taylor traces the sightlines," "taylor logs the name," "taylor attaches the
+    courier-name," "the feed resolves the coverage"), the screen-writer MUST ensure at least one
+    companion bone in the scene's peak zone records a physical body-act by the POV character
+    during or immediately adjacent to the mechanism event.
+
+    The companion bone is NOT required if the central-event bone's SVO is already a
+    physical act (e.g., "taylor strikes the courier," "taylor closes the register"). In
+    that case, the SVO itself carries the body-act and no companion is needed.
+
+    The companion bone MAY be:
+      - A dedicated grounding bone immediately preceding or following the central-event bone,
+        whose SVO records Taylor's physical position, movement, or sensory engagement during
+        the mechanism (e.g., "taylor stills at the junction corner," "taylor's step slows
+        at the integration close").
+      - An existing bone in the peak zone that carries a physical body-act at the same
+        temporal position (an overlap is acceptable; the companion does not have to be
+        authored de novo if an adjacent grounding bone already fills the slot).
+
+    Body-act companions must be authored at Phase 1; they cannot be added retroactively by
+    the stitcher (voice-embodiment at Phase 4 cannot supply a body-act that the bones file
+    does not contain). If the scene's peak zone currently has no physical body-act bone for
+    Taylor at the mechanism moment, add one before exiting Phase 1.
+
+    This is separate from PROP-0011 (held-axis completion gate): held-axis witnessing
+    covers axes in axes_held[]. This obligation covers the axis-move's central-event bone
+    and applies to the moving bone's physical body-act, not held-axis witnessing.
+
+  CHANGE 2 — .claude/commands/and-write.md, Phase 1, Step 4a (completion gate):
+
+  In the held-axis coverage verification block (step 4a), add a parallel check:
+
+    **Central-event body-act companion check (new, fires alongside held-axis check).** For
+    each scene, identify the central-event bone (scene-map classification: axis-move). If the
+    central-event bone's SVO is a cognitive or mechanism act (not a physical act), verify:
+
+      count(bones[scene_peak_zone] where SVO is a physical-body-act by POV character) >= 1
+
+    If count == 0: author a companion grounding bone at the axis-move peak before
+    exiting Phase 1 (per the body-act companion obligation in Step 2 above).
+
+    If no central-event bone exists in the scene (held-discipline scene with no axis-move):
+    this check does not fire. Skip with a note: "scene <slug> has no axis-move; body-act
+    companion check skipped."
+
+  CHANGE 3 — .claude/commands/and-write.md, Phase 6 HARD/SIGNAL classification table:
+
+  Add one new SIGNAL entry (after EVENT-NOT-CONCRETE):
+
+    | BODY-ACT-ABSENT-AT-PEAK: the central-event bone's SVO is a cognitive or mechanism act
+    AND no companion physical-body-act bone exists for the POV character in the scene's
+    peak zone (±2 bones of the central-event bone). This check fires only on the central-
+    event bone(s) identified in the scene-map. | SIGNAL (HARD on second chapter-level
+    occurrence in the project) |
+
+  Detection logic:
+    1. Read the scene-map for the current scene. Identify bones classified as central-event
+       (axis-move class).
+    2. For each such bone B: check whether the SVO is a physical act or a cognitive/mechanism
+       act. Heuristic: if the verb is an act of perception, processing, logging, tracing, or
+       feed-interaction (e.g., traces, logs, reads, marks, attaches, resolves, notes), it is
+       cognitive/mechanism. If the verb is locomotion, physical contact, physical arrest, or
+       sensory engagement (e.g., strikes, stills, steps, sets, fixes, turns, positions), it
+       is physical.
+    3. If cognitive/mechanism: scan bones within ±2 positions of B for a physical body-act
+       SVO by the POV character. If none found → BODY-ACT-ABSENT-AT-PEAK SIGNAL.
+
+  Disposition: SIGNAL on first chapter-level fire (records, passes). Auditor reports:
+    "BODY-ACT-ABSENT-AT-PEAK: @<N> (central-event, axis-move, <axis>) has cognitive/mechanism
+    SVO '<verb>' with no physical body-act companion in ±2 bones. The stitcher cannot supply
+    a body-act that the bones file does not contain; a body-act companion is needed for the
+    staging reviewer to find physical grounding at this peak. Consider adding a grounding bone
+    at @<N-1> or @<N+1>."
+  HARD disposition activates on the second chapter-level BODY-ACT-ABSENT-AT-PEAK occurrence
+  in the project (same graduation logic as PROP-0007 compound-noun-density).
+
+  SCOPE NOTE:
+  This check applies only to central-event bones in axis-move scenes. It does NOT apply to
+  held-axis central-event bones (bones marked as central-event in held-discipline scenes with
+  no Δ). For held-discipline central-event bones, the finding-004 and finding-006 GROUND class
+  (finding specific to @13/@20 in b01c08) is a staging-reviewer call, not a Phase 6 gate —
+  held-discipline bones have fence constraints that limit how much body-grounding can be added,
+  and those fences are scene-map mediated, not Phase 6 detectable without reading the full
+  scene-map contract. The Phase 6 check targets the unconstrained case: the axis-move central-
+  event bone where the mechanism SVO is cognitive and no physical body-act bone is present.
+
+  PRECEDENCE NOTE re URI-STITCH-SPINE-STAGING vs. Class B / PROP-0018 matching-complaint rule:
+  The Class B + matching-complaint → SHIPPED-WITH-CAVEATS rule governs the cold-read leg of
+  Phase 9 (Step 1). The URI-STITCH-SPINE-STAGING rule governs the staging-review leg (Step 3).
+  These are independent diagnostic legs. A STAGE finding on the axis-move central-event bone
+  is not "the cold-read complaint repeating itself" — it is a separately diagnosable structural
+  gap. The staging FAIL correctly overrides the cold-read SHIPPED-WITH-CAVEATS routing because
+  the chapter has a fixable bone-level gap (body-act absent at @6), not merely a design-inherent
+  cold-reader challenge. The Class B matching-complaint rule was designed for DESIGN-INHERENT
+  failures (c05: register fatigue, genre-seam). This failure class (absent body-act companion at
+  axis-move peak) is NOT design-inherent — it is diagnosable and addressable at bones-revise.
+  No change to PROP-0018's Class B rule or the matching-complaint disposition is proposed.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
 cost_estimate: S
 status: open
 triaged_at: null
