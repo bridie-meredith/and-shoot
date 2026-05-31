@@ -3964,13 +3964,16 @@ books:
         substance_bone_gate_verdict: PASS   # re-confirmed at revise Phase 6 (s03 re-gated; s01/s02 prior PASS carried)
         # /and-review bones b01c06 (2026-05-30): PASS. Fidelity 0 HARD (spine intact all 3 scenes; dialogue coverage+card-compliance PASS; SVO clean 25/25; scene-map 25/25). follow_check PASS-WITH-NOTES (PROP-0020: every context-blind cold-read proper-noun confusion resolved by prior-chapter context = mid-series context-noise, not a bone defect). Aliveness BONES-AIRLESS-RISK advisory (apparatus-dominant accounting chapter; embodied spine present; forwarded downstream). 2 Phase-6 SIGNALs remain advisory. /and-facets cleared.
         bones_review:
-          reviewed_at: 2026-05-30T02:37:00Z
-          report_path: active-project/staff/reviews/bones-b01c06-2026-05-30.md
-          verdict: PASS
-          follow_check: PASS-WITH-NOTES
-          aliveness: BONES-AIRLESS-RISK-advisory   # PROP-0022; s02-s03 accounting middle; forward to /and-facets Phase 2.5 + /and-stitch Phase 4
-          bones_file_mtime_at_review: 1780111145  # DEC-0047 (2026-05-30): mtime reset by git checkout in fresh container after PR #76 merge; content identity verified via `git diff e9883f2 HEAD` (empty) + review-report internal description match. Stamp reconciled to current mtime — NOT a content re-emit / not an operator override of a content change.
-          stale_since: 2026-05-31   # STALE — bones file re-emitted at revise depth pass (s03 @16-@22 recast + @20 added; 25->26 bones). Mandatory /and-review bones re-run owed; /and-facets Phase 0 HARD-aborts on this staleness until re-reviewed.
+          reviewed_at: 2026-05-31T00:00:00Z   # re-review after revise depth pass; supersedes 2026-05-30 (preserved at report_path_prior)
+          report_path: active-project/staff/reviews/bones-b01c06-revise-2026-05-31.md
+          report_path_prior: active-project/staff/reviews/bones-b01c06-2026-05-30.md
+          verdict: PASS-WITH-NOTES   # 26 bones SVO-clean (recast s03 + @20 stills-the-hand verified independently); chunk->bones spine intact 3/3; scene-map 26/26; follow_check holds
+          follow_check: PASS-WITH-NOTES   # no NEW followability gap from de-abstraction; sera-coverage-entry = same mid-series context-noise class, not a bone defect
+          aliveness: BONES-AIRLESS-RISK-CLEARED   # PROP-0022 — depth pass succeeded at bone layer; s03 accounting middle now concrete embodied beats (writes/stills-the-hand/seal); residual risk is render-layer only -> pl-2026-05-31-002 + scene-map s03 protected-patterns
+          dialogue_fault_resolved: "fault-001 (FAULT-DIALOGUE-MISSING-AT-ANCHOR @4): theater/dialogue/wren-stitch-maker-flea-bottom-ward.md was absent (orphaned by c07 flat-path dialogue authoring; @4 unchanged by this revise). RESTORED verbatim from _archive/20260531T021620Z-b01c06-facets/ — faithful to the unchanged @4 anchor. /and-facets now cleared."
+          flag_001_to_stitch: "@17 writes-the-ward-elder-names render as concrete inscribed text not list-concept (render-layer watch)"
+          bones_file_mtime_at_review: regenerated-2026-05-31   # bones file rewritten from memory at Phase 7 emit this session
+          stale_since: null   # re-review complete; /and-facets b01c06 CLEARED
         context_followability:   # PROP-0020/0022 — /and-facets Phase 2.5 + 4.5
           completeness_verdict: FOLLOWABLE   # Ph2.5 + Ph4.5 both; context-ledger empty (0 CONTEXT-REQUIRED)
           readability_verdict: ALIVE  # Ph4.5 AIRLESS-HOLE -> Ph4.6 grounding remediation (sensory:3/4/5 @10/@16/@17) -> Ph4.6-Step2 re-review ALIVE (continuous somatic thread across hinge)
