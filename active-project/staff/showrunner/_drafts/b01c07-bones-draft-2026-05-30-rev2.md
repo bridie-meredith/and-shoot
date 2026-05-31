@@ -415,8 +415,14 @@ dialogue_anchor: false
 #       content to old n09 (new n08 "halvard holds the silence") as the scene-close beat that
 #       holds both readings in sensory register.
 
+# REV3 FORM-FIX (2026-05-30, post /and-review bones FAIL fault-001):
+#   svo "taylor-hebert-kl-122ac stays in the argument" FAULTED FAULT-FORM-MODIFIER
+#   ("in the argument" = PP + abstraction-object). Surgical recast → "plants the feet"
+#   (body-part concrete object, schema-licensed; PP-free). Δ-witness unchanged: planting the
+#   feet after going-still (n05) + facing Halvard (n06) is the physical commitment to staying
+#   in the conversation — soc-tether +0.5 witnessed by the body rooting rather than pivoting away.
 **b01c07s02n07**
-svo: "taylor-hebert-kl-122ac stays in the argument"
+svo: "taylor-hebert-kl-122ac plants the feet"
 shape: moving
 axis_moves:
   - axis: social_tether-prot-rise
@@ -436,8 +442,13 @@ dialogue_anchor: false
 #       NI content here — the silence-beat holds both the held-answer and the deferred-counter
 #       in sensory register.
 
+# REV3 FORM-FIX (2026-05-30, post /and-review bones FAIL fault-003):
+#   svo "septon-halvard-flea-bottom holds the silence" FAULTED FAULT-FORM-NON-ACTION-VERB
+#   /INTERIORITY (abstraction-as-object under the narrow holds-license). Surgical recast →
+#   "exhales" (clean intransitive; the not-pressing / allowing-the-pause beat witnessed by the
+#   physical breath-out). HELD bone, no Δ. Sensory/engagement function preserved.
 **b01c07s02n08**
-svo: "septon-halvard-flea-bottom holds the silence"
+svo: "septon-halvard-flea-bottom exhales"
 shape: held
 axis_moves: []
 axes_held:
@@ -605,8 +616,15 @@ note: "dialogue content: Halvard acknowledges he knows the slower method has a b
 # genuinely taken each other's position seriously without resolving it; what the insect-feed
 # architecture was not designed to produce.
 
+# REV3 FORM-FIX (2026-05-30, post /and-review bones FAIL fault-002):
+#   svo "taylor-hebert-kl-122ac stays at the sept-corner" FAULTED FAULT-FORM-MODIFIER
+#   ("at the sept-corner" = PP-of-place). Surgical recast → "steadies the feet" (body-part
+#   concrete object; PP-free; verb distinct from n07's "plants" to preserve physical distinctness
+#   between scenes — n07 roots after going still; n05 stills the departure-impulse after Halvard's
+#   cost-acknowledgment). Δ-witness unchanged: soc-tether +0.5 — feet that were shifting toward
+#   departure settle instead; the completion-not-closure embedding, witnessed physically.
 **b01c07s03n05**
-svo: "taylor-hebert-kl-122ac stays at the sept-corner"
+svo: "taylor-hebert-kl-122ac steadies the feet"
 shape: moving
 axis_moves:
   - axis: social_tether-prot-rise

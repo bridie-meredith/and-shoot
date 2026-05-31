@@ -2783,3 +2783,211 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0053 | 2026-05-30 | SLOW (user-proxy)
+
+question: |
+  /and-review bones b01c07 returned aggregate FAIL (3 HARD SVO-form findings) after a premature
+  verdict write committed by the main session. Routing decision: (A) /and-write b01c07 revise
+  (surgical recast of flat15/22/16), then re-run /and-review bones, then resume cascade; (B)
+  accept the 3 forms as bone-gate-passed and proceed to /and-facets past the HARD notes; (C)
+  escalate to human.
+  Sub-questions: 1-attempt cap for the revise? Acceptable witness forms for soc-tether +0.5
+  on argument-staying bones? Process note on the premature-verdict error?
+
+context: |
+  The 3 HARD findings per auditor:
+    - flat22 "taylor-hebert-kl-122ac stays at the sept-corner" [MOVING soc-tether +0.5]:
+      PP modifier "at the sept-corner" — bones.schema.md line 57 bans PP modifiers of place.
+      Unambiguous violation.
+    - flat15 "taylor-hebert-kl-122ac stays in the argument" [MOVING soc-tether +0.5]:
+      PP modifier "in the argument" + "the argument" as abstraction-as-object. Defensible HARD.
+    - flat16 "septon-halvard-flea-bottom holds the silence" [HELD]:
+      "the silence" is abstraction-as-object under holds-verb. Held bone, no Δ-arithmetic impact.
+  flat15 and flat22 are the sole carriers of soc-tether +1.0 for the chapter.
+  DEC-0052 authorized attempt-3 brief with "taylor stays at the sept corner" as the template
+  form for soc-tether witnessing — that exact form is now flagged HARD for the PP modifier.
+  The /and-write Phase 6 bone-gate passed all three forms on rev2. /and-review bones caught them
+  independently — the mandatory gate working as designed.
+  Premature-verdict error: main session wrote aggregate verdict "PASS-WITH-NOTES /and-facets
+  cleared" before the auditor fork returned. Record corrected at commit 8c69892.
+
+options:
+  A: /and-write b01c07 revise — surgical recast of flat15/flat22/flat16 to PP-free/concrete-object
+     forms. Re-run /and-review bones. Resume cascade. Honors schema + gate.
+  B: Accept 3 forms as bone-gate-passed; proceed to /and-facets knowingly past schema-violating bones.
+  C: Escalate to human — reopens DEC-0052 territory; process error may warrant human attention.
+
+decision: |
+  Option A. Route to /and-write b01c07 revise (surgical: flat15/flat22/flat16 only).
+  1-attempt hard cap then escalate to human.
+  Acceptable witness forms for soc-tether +0.5: bare intransitive "taylor stays" (no PP,
+  no object) or reassign one Δ to a speech bone. flat16: "septon-halvard-flea-bottom waits"
+  or equivalent bare intransitive. No PP modifiers; no abstraction-as-direct-object.
+  Process note on premature-verdict error: operator/session discipline failure; no spec or
+  process change warranted — the downstream gate caught the pass-through as designed.
+
+basis: |
+  goal:1 (pipeline correctness — option B knowingly ships schema-violating bones; that sets
+  precedent that /and-review HARDs are advisory, which erases the gate's authority) +
+  methodology:3a (reversibility — A is targeted 3-bone revise; B is irreversible precedent) +
+  DEC-0052 (1-attempt-cap-then-escalate is the established protocol on this chapter's
+  argument-bone difficulty)
+
+rationale: |
+  Option B is not viable. The /and-review bones gate exists as an independent SVO-form check
+  on /and-write's Phase 6. Knowingly proceeding past its HARD findings because Phase 6 passed
+  them would erase the gate's function — the system caught three schema violations precisely
+  because the independent re-fire is separate from Phase 6. Accepting them as "bone-gate-passed"
+  (a term that belongs to Phase 6, not /and-review) is a category error that would corrupt
+  downstream facets and stitch. Schema line 57 is not ambiguous on PP modifiers of place.
+
+  Option C is not warranted. The schema is unambiguous; the recast options are clear; the
+  DEC-0052 precedent already governs the 1-attempt-cap protocol. This is not a design question
+  requiring the principal — it is an operational recast with clear form constraints. The
+  principal's attention should be reserved for when the attempt fails (at which point the claim
+  is genuinely architectural: PP-ban + abstraction-ban + argument-interior content = irreconcilable
+  constraint on soc-tether witnessing).
+
+  Form guidance for the revise brief (mandatory):
+    flat22: "taylor-hebert-kl-122ac stays" (bare intransitive) witnesses soc-tether +0.5.
+            Zero PP tail. This form is distinct from attempt-3's "stays at the sept-corner"
+            (which added the HARD PP) — remove the location phrase entirely.
+    flat15: "taylor-hebert-kl-122ac stays" (same bare form, different scene-beat witnesses
+            the second +0.5). Two separate "stays" bones at different beats is not duplication;
+            they witness distinct moments of commitment. Alternatively, reassign one +0.5 to
+            a speech bone ("taylor speaks to halvard" with soc-tether +0.5) if the screen-writer
+            judges two bare-stays too close in a 3-bone window.
+    flat16: "septon-halvard-flea-bottom waits" or "septon-halvard-flea-bottom stands" or
+            "septon-halvard-flea-bottom turns" — any bare physical-positional intransitive.
+            HELD bone; only form correction required; Δ is already 0.
+
+  Hard prohibitions for all three recasts: no "at X" / "in X" / "with X" PP tails; no
+  abstraction-as-direct-object (the silence / the argument / the answer / the offer as
+  direct objects of holds/carries/sets). Intransitive or speech-bone forms are the safe lane.
+
+  DEC-0052's brief explicitly nominated "taylor stays at the sept-corner" as the soc-tether
+  template. That brief was produced under the diagnostic that "stays" was the physical verb
+  carrying the +0.5 — correct. The schema violation was the PP modifier, not the verb. The
+  lesson distilled: verb physicality was the right discriminator; location PP adds a schema
+  violation even when the verb passes. "taylor stays" (no location) is the clean form.
+
+  Premature-verdict note: the main session wrote an aggregate verdict before all reviewer
+  forks returned. The corrective commit (8c69892) properly restores the record. No PROP
+  warranted: (1) operator/session error, not a spec gap; (2) the gate architecture already
+  handles it — /and-review bones is designed to catch what Phase 6 misses and did; (3) a
+  "wait-for-all-forks" spec note to /and-review would be redundant with the gate's own
+  precondition ordering (the gate IS the catch). The corrected commit is the resolution.
+
+trade-off: |
+  Option A vs B: B saves ~4-6 dispatches at the cost of the gate-authority contract and
+  downstream contamination. Cost of B's precedent is unbounded across future chapters.
+  Option A vs C: C costs principal attention on a question admin can answer from schema line 57
+  + prior rulings. If the 1-attempt revise fails, C fires at that point — the correct moment.
+  1-attempt cap: narrower sub-problem than DEC-0052 (3 bones, clearer constraints, "stays" bare
+  form validated by being the near-miss that almost passed). If the screen-writer cannot produce
+  3 schema-clean witnesses in one attempt with this brief, that is the architectural claim.
+
+follows: DEC-0052
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0054 | 2026-05-30 | SLOW (process-critic)
+
+question: |
+  /and-review bones b01c07 FAIL: 3 HARD SVO-form faults (flat15 PP "in the argument",
+  flat22 PP "at the sept-corner", flat16 holds-abstraction). All three passed the /and-write
+  Phase 6 bone-gate on rev2. Process questions: (1) is there a recurring gap where Phase 6
+  trusts the author's form self-assessment rather than re-deriving it? (2) does a mechanical
+  PP/abstraction-object lint belong in /and-write Phase 6? (3) does the premature-verdict
+  commit warrant a process change?
+
+context: |
+  source_report: active-project/staff/reviews/bones-b01c07-2026-05-30.md
+  source_verdict: FAIL (3 HARD: flat15/22/16)
+  gate_path: .claude/commands/and-review.md#bones
+  secondary_gate_paths: [.claude/commands/and-write.md#phase-6]
+
+  Key facts:
+  - All three HARD SVO-form violations are mechanical (PP-of-place, PP-of-abstract-location,
+    abstraction-as-object) banned by bones.schema.md lines 57/60.
+  - Rev2 draft explicitly self-asserted "unchanged PASS" (flat15) and "exact form that passed
+    at attempt 1" (flat22) for the two MOVING bones. Phase 6 auditor accepted these annotations
+    without re-deriving from raw text.
+  - The DEC-0052 one-attempt cap contributed context pressure but is independent of the spec gap.
+  - Premature aggregate verdict was committed (6e6f0f6) before the auditor fork returned; corrected
+    at 8c69892. DEC-0053 noted this was operator/session error, not a spec gap — no process change.
+  - /and-review bones re-fire caught all three. The gate-chain functioned as designed.
+
+options: n/a (process-critic mode)
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0025
+
+basis: |
+  Content-vs-process discrimination Q1 (recurring self-assessment bypass?): yes, the gap is
+  real. The Phase 6 brief instructs "classify each bone as CORRECT or FAULT-{class}" but does
+  not instruct the auditor to re-derive form from raw text independently of author annotations.
+  In revise mode, when the author labels unchanged bones "unchanged PASS" or cites prior-pass
+  status, the auditor's independent classification is at risk of collapsing into annotation-
+  acceptance. This happened: flat15 and flat22 were accepted on their annotations, not re-
+  derived. The gate that should have caught them (Phase 6) did not; the next gate (bones re-fire)
+  did. A one-sentence re-derivation instruction in the Phase 6 brief closes the gap.
+
+  Q2 (mechanical PP lint belong in Phase 6?): yes, optionally. The bones.schema.md form rules
+  are mechanical enough to admit a regex pre-screen (preposition + noun-phrase on MOVING bones;
+  abstraction-noun objects). This would make re-derivation self-enforcing. Surfaced in the
+  proposal but deferred to principal on whether to implement as a formal sub-step vs. an
+  auditor-dispatch note.
+
+  Q3 (premature verdict commit): DEC-0053 correctly disposed this as operator/session error, not
+  a spec gap. /and-review already has the downstream catch architecture; the /and-review bones
+  re-fire IS the gate that caught the pass-through. Adding "wait for all forks" to the spec would
+  be redundant with the gate's own ordering. OK — no proposal warranted.
+
+  Prior proposals check: PROP-0009 (Phase 1 cadence-reference guidance) and PROP-0024 (Phase 1
+  argument-spine constraint) both target Phase 1. PROP-0007 (Phase 1 compound-noun economy +
+  Phase 6 SIGNAL table) targets Phase 1 step 5 and a SIGNAL addition. None targets Phase 6
+  auditor re-derivation discipline. No prior open proposal matches target.path +
+  change_type for this specific gap. Proceeding to author.
+
+  Recurrence count: 1 first cross-chapter instance. Non-catastrophic (caught by /and-review
+  bones). Proposing at first occurrence because: (a) spec omission is precisely discriminated;
+  (b) the bypass risk exists on every revise cycle where author labels unchanged bones; (c) S-cost.
+
+rationale: |
+  The /and-review bones subcommand is designed to be the independent re-fire that catches what
+  Phase 6 misses. That is exactly what happened here — system functioned as designed. The
+  process question is whether Phase 6 should have caught these forms first (avoiding the re-fire
+  loop). It should: bones.schema.md lines 57 and 60 are unambiguous mechanical rules the auditor
+  can apply from raw text in under two seconds per bone. The bypass was the author's self-
+  annotation reaching the auditor as a pre-classified verdict rather than as a raw SVO to verify.
+
+  The fix is not a new gate — it is a re-derivation instruction on the existing gate. The
+  instruction is: "treat the raw bone text as the evidence; treat author annotations as noise."
+  This is S-cost: one paragraph added to the Phase 6 auditor brief, at the opening of the Per-
+  bone verification section, before the moving/held/chatter sub-sections.
+
+trade-off: |
+  Proposing at first occurrence vs. waiting for recurrence: the bypass risk is structural (exists
+  on every revise cycle) and the fix is S-cost. The "wait for recurrence" rule exists to prevent
+  premature promotion of taste calls; this is not a taste call. The bones.schema.md form rules
+  are mechanical. The escape happened because the brief lacked one instruction. Cost of not
+  proposing: the same bypass is possible on every future revise cycle where the author labels
+  unchanged bones with prior-pass annotations.
+
+  On the premature-verdict process question: the correct answer is OK. The gate architecture
+  already ensures correctness — /and-review bones is the designed catch, and it caught. Adding
+  a spec rule to the review command about fork-return ordering would address the correct-but-
+  early commit artifact, not the gate gap. The correction commit is sufficient.
+
+follows: DEC-0053
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

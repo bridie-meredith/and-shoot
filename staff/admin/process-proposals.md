@@ -2958,3 +2958,122 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0025
+
+```yaml
+id: PROP-0025
+created_at: 2026-05-30T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/bones-b01c07-2026-05-30.md
+  source_verdict: "/and-review bones b01c07 = FAIL; HARD 3 (SVO-form: flat15/22/16); all three passed /and-write Phase 6 bone-gate on rev2"
+target:
+  type: command
+  path: .claude/commands/and-write.md
+  section: "Phase 6 — Substance bone-gate / Per-bone verification (auditor)"
+change_type: modify
+rationale: |
+  At /and-write b01c07 rev2 (attempt 3 under DEC-0052's one-attempt cap), the Phase 6 bone-gate
+  accepted three bones that carry PP-modifier or abstraction-as-object violations banned by
+  bones.schema.md:
+
+    flat15 "taylor-hebert-kl-122ac stays in the argument" [MOVING soc-tether +0.5] —
+      "in the argument" is a PP modifier (locative-abstract), banned by line 57. The rev2
+      draft marked it "unchanged PASS" (from attempt 1). The Phase 6 auditor accepted the
+      author's annotation without re-deriving the form.
+
+    flat22 "taylor-hebert-kl-122ac stays at the sept-corner" [MOVING soc-tether +0.5] —
+      "at the sept-corner" is a textbook PP-of-place, banned by line 57. The rev2 draft
+      cited "the exact form that passed at attempt 1." Prior-pass status is not schema
+      authorization. The Phase 6 auditor accepted the citation.
+
+    flat16 "septon-halvard-flea-bottom holds the silence" [HELD] — abstraction-as-object
+      ("the silence"), banned by line 60. A held bone; does not destabilize Δ arithmetic.
+      Form fault is real and the gate missed it.
+
+  The bones-review re-fire at /and-review caught all three. Phase 6 did not.
+
+  The structural gap: the Phase 6 auditor brief says "classify each bone as CORRECT or
+  FAULT-{class}" using bones.schema.md + harsh-SVO rules. It does not instruct the auditor
+  to re-derive form from the raw SVO text independently of author form annotations. Without
+  that instruction, a revise context — where the author has already labeled bones with form
+  verdicts ("unchanged PASS", "passed at attempt 1", "whitelist-licensed") — creates pressure
+  for the auditor to defer to the label rather than re-derive. The author's annotation acts as
+  a surrogate gate-pass, and the auditor's independent classification collapses into
+  annotation-acceptance.
+
+  This is not a gate-existence gap. The gate has the right checks (FAULT-FORM per
+  bones.schema.md line 57/60). The brief gap is the absence of an explicit re-derivation
+  instruction: the auditor must re-derive from raw text, not from the author's prior verdict.
+  One sentence in the Phase 6 brief closes the gap.
+
+  Note on context pressure: the DEC-0052 one-attempt cap amplified the pressure to accept
+  near-miss forms on the final permitted attempt. The cap was correct (DEC-0052). The brief
+  gap is independent of the cap and exists on any revise cycle where the author annotates
+  unchanged bones with prior verdicts.
+
+  Recurrence count: 1 (first cross-chapter instance of auditor accepting author self-assessment
+  on MOVING bones with PP/abstraction violations). Non-catastrophic — caught by /and-review
+  bones at cost of one revise cycle. Proposing at first occurrence rather than waiting because:
+  (a) the spec omission is precisely discriminated — one instruction absent from the Phase 6
+  brief; (b) not a taste call but a re-derivation procedure gap; (c) every revise cycle on any
+  chapter carries the same bypass risk when the author annotates unchanged bones; (d) S-cost.
+
+  Distinct from PROP-0024: PROP-0024 targets Phase 1 argument-spine bone-authoring (what the
+  screen-writer authors). This proposal targets Phase 6 auditor re-derivation discipline (how
+  the auditor classifies bones the author has already annotated). Different phase, different
+  agent, different gap class. Both are open and independent.
+evidence_refs:
+  - "active-project/staff/reviews/bones-b01c07-2026-05-30.md — fault-001 (flat15 PP 'in the argument': rev2 marked 'unchanged PASS'; Phase 6 did not re-audit); fault-002 (flat22 PP 'at the sept-corner': rev2 cited 'exact form that passed at attempt 1'; Phase 6 accepted); fault-003 (flat16 'holds the silence': abstraction-as-object)"
+  - ".claude/commands/and-write.md — Phase 6 §Per-bone verification (auditor): 'classify each bone as CORRECT or FAULT-{class}' per bones.schema.md + harsh-SVO rules — no re-derivation instruction; no prohibition on accepting author form annotations"
+  - "schemas/bones.schema.md — line 57 (no PP modifiers of place/direction/time/instrument/accompaniment on bone SVOs) + line 60 (concrete object requirement: no abstraction-as-object)"
+  - "staff/admin/decisions.md — DEC-0052 (one-attempt cap context; cap was correct call; brief gap is independent)"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-write.md, Phase 6 §Per-bone verification (auditor), before the
+  "Moving bones", "Held bones", "Chatter bones" sub-sections, add:
+
+    **Re-derivation rule (mandatory in revise mode and redo mode).** For every bone in scope —
+    including bones the author or screen-writer has annotated with a prior verdict ("unchanged
+    PASS", "whitelist-licensed", "form passed at attempt N", "prior-pass status") — the auditor
+    MUST re-derive SVO form from the raw bone text against bones.schema.md. Author form
+    annotations are NOT accepted as a substitute for independent re-derivation.
+
+    Specifically check: (1) does the SVO core (subject–verb–object) contain a prepositional
+    phrase modifier appended to it (PP of place/direction/time/instrument/accompaniment —
+    banned by line 57)? (2) Is the object an abstract noun rather than a concrete referent
+    (banned by line 60 — "the argument," "the silence," "the weight," "the truth" are canonical
+    examples; replace-with-concrete-noun test: if the SVO stops making sense as a physical
+    event when you replace the object with a concrete noun, the object is an abstraction)?
+    (3) Is the verb a perception, interiority, or cognition verb (banned generally)?
+
+    A MOVING or HELD bone that fails any of these checks is FAULT-FORM regardless of prior
+    annotation. The rev2 bypass case (b01c07: "stays in the argument" marked "unchanged PASS"
+    — PP modifier; "stays at the sept-corner" marked "prior-pass" — PP-of-place; "holds the
+    silence" — abstraction-as-object) is the canonical evidence that author annotations cannot
+    substitute for this check. All three were caught by /and-review bones after Phase 6 passed
+    them.
+
+  Additionally, recommend (but defer to principal) adding a mechanical pre-screen before the
+  auditor's semantic classification step: regex-scan every MOVING bone's raw SVO text for
+  preposition strings (in / at / on / with / to / across / through / around / from / into +
+  following noun phrase) and any object match against a short abstraction-noun list (argument /
+  silence / tension / weight / uncertainty / void / truth / meaning). Any regex match on a
+  MOVING bone → flagged for mandatory re-derivation regardless of author annotation. This
+  mechanical pre-check makes the re-derivation rule self-enforcing under any context pressure.
+  Principal's call whether to add this as a formal Phase 6 sub-step or as an auditor-dispatch
+  note.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
