@@ -1,17 +1,21 @@
 ---
-audit: facets-final-r2
+audit: facets-final-r3
 episode: b01c08
 date: 2026-05-31
 mode: flag-only
-cycle: remediation-cycle-2
+cycle: remediation-cycle-3
 status: CLEAN
-totals: 0 HARD / 6 SIGNAL (5 prior flags unchanged; 1 new signal)
-prior-hard-count: 5
-closed-hard-count: 5
+totals: 0 HARD / 5 SIGNAL
+prior-hard-count: 0
+closed-hard-count: 0
 new-hard-count: 0
+prior-signal-count: 6
+closed-signal-count: 1
+new-signal-count: 0
+signal-scope-extended: 1
 ---
 
-# Facets Final Audit — b01c08 — Remediation Cycle 2
+# Facets Final Audit — b01c08 — Remediation Cycle 3
 
 ```yaml
 audit:
@@ -22,79 +26,87 @@ audit:
 
 ---
 
-## Prior HARD Closure Verification
+## Cycle-2 Edit Verification
 
-### fault-001 — CLOSED
-```yaml
-id: fault-001
-prior-status: HARD (dialogue anchor used in-memory slug form @b01c08s03n05 instead of flat_id @20)
-post-fix-state: >
-  active-project/theater/dialogue/oswyn-mudway-flea-bottom-elder.md entry 1 anchor
-  reads `@20` (flat integer). Direct file read confirms. Back-citation format is
-  the schema-required flat_id form. Forward citation [oswyn-mudway-flea-bottom-elder:1]
-  at proto-lines @20 and the dialogue file's single entry are consistent.
-verdict: CLOSED
-```
+Cycle 2 fixer targeted 4 REVISE items. This section verifies each was correctly applied and introduced no new HARDs.
 
-### fault-002 — CLOSED
-```yaml
-id: fault-002
-prior-status: HARD (proto-lines @8 cited feel:1 pointing to Oswyn@20; should cite feel:2 for Taylor@8)
-post-fix-state: >
-  Proto-lines @8 bracket reads [feel:2] [mem:1] [narrator:2] [state:1].
-  Cite-index confirms: feel:2 @8 back=Y co=[mem:1, narrator:2, state:1].
-  The Taylor breath-holds entry is correctly routed to bone @8.
-verdict: CLOSED
-```
+### NI:3 @13 — reformed (AP-009 chassis cap fix; foreknowledge-clamp layer)
 
-### fault-003 — CLOSED
-```yaml
-id: fault-003
-prior-status: HARD (proto-lines @13 cited feel:2 and state:3; should cite feel:3 and state:10)
-post-fix-state: >
-  Proto-lines @13 bracket reads [exposition:2] [feel:3] [narrator:3] [state:4] [state:10] [vibes:3].
-  Cite-index confirms: feel:3 @13 back=Y co=[exposition:2, narrator:3, state:4, state:10, vibes:3]
-  and state:10 @13 back=Y co=[exposition:2, feel:3, narrator:3, state:4, vibes:3].
-  The Taylor hand-not-pause entry (feel:3) and named_chain_of_responsibility entry (state:10)
-  are correctly routed to bone @13. The stale state:3 cite is gone.
-verdict: CLOSED
-```
+**Claim:** Final clause reformed from apparatus-register summary to foreknowledge-clamp registration. INVIOLABLE core ("logistics object among logistics objects" + handler-rotation-row) preserved verbatim.
 
-### fault-004 — CLOSED
-```yaml
-id: fault-004
-prior-status: HARD (proto-lines @6 cited state:1 and state:2 pointing to env entries at @8/@9; should cite state:8 and state:9)
-post-fix-state: >
-  Proto-lines @6 bracket reads [narrator:1] [state:8] [state:9] [vibes:2].
-  Cite-index confirms: state:8 @6 back=Y co=[narrator:1, state:9, vibes:2]
-  and state:9 @6 back=Y co=[narrator:1, state:8, vibes:2].
-  The Taylor capability_axis (state:8) and watcher_network_nodes (state:9) entries are
-  correctly routed to bone @6.
-verdict: CLOSED
-```
+**Verification:** interest-narrator-b01-c08.md entry 3 reads:
+> "the name takes its place in the handler-rotation row, logistics object among logistics objects, the interior noting the weight and filing it flat"
 
-### fault-005 — CLOSED
-```yaml
-id: fault-005
-prior-status: HARD (vibes:2/3/4/5 licensed-by fields carried wrong consolidated state-update IDs)
-post-fix-state: >
-  Vibes file licensed-by values verified against cite-index lic-out fields:
-  - vibes:2 licensed-by: state-update:9, peak-bone:6, peak-bone:24
-    (was state-update:2; now correctly points to Taylor watcher_network_nodes @6;
-    cite-index lic-out=[state-update:9, peak-bone:6, peak-bone:24] consistent)
-  - vibes:3 licensed-by: state-update:10, peak-bone:13, peak-bone:15
-    (was state-update:3; now points to Taylor named_chain_of_responsibility @13;
-    within fault-005 criteria window — criteria stated state-update:4 OR state-update:10;
-    state:10 is mechanistically grounded in the Aemond-name @13 cluster)
-  - vibes:4 licensed-by: peak-bone:24, state-update:11
-    (was state-update:4; now correctly points to Taylor body_map.courier-figure @21;
-    cite-index lic-out=[peak-bone:24, state-update:11] consistent)
-  - vibes:5 licensed-by: state-update:10, canon:vhagar-handler-rotation-in-jarvis-logistics-b01c08
-    (was state-update:3; now points to state:10 @13; within criteria window)
-  All four vibes license-sources point to state entries mechanistically connected to
-  the vibe's target entity and pattern.
-verdict: CLOSED
-```
+The core phrases "handler-rotation row" and "logistics object among logistics objects" are present verbatim. The reformed third clause ("the interior noting the weight and filing it flat") replaces the prior apparatus-register summary with a foreknowledge-clamp registration — the interior notes and files the weight flat, which is the clamp-layer construction rather than a generalizing summary. Frontmatter confirms: `inviolables-status: all-keep (NI:2 chassis sole survivor; NI:3 core verbatim preserved; NI:6 core verbatim preserved)` and `cycle2-revise-NI3: final clause reformed ... INVIOLABLE core ... preserved verbatim`. AP-009 chassis cap at ≤1: NI:2 is the sole remaining inverted-predicate chassis entry per frontmatter.
+
+**Result: CONFIRMED CLEAN.** No HARD introduced.
+
+### NI:6 @24 — reformed (third clause; specific perceptual registration replaces generalizing rule-statement)
+
+**Claim:** Third clause reformed from generalizing rule-statement to specific perceptual registration. INVIOLABLE core (geometry-completes-itself + coverage-matrix-subsumes) preserved verbatim.
+
+**Verification:** interest-narrator-b01-c08.md entry 6 reads:
+> "the geometry completes itself; the coverage-matrix subsumes the watcher-positions it has been adjacent to, smooth, the water-point approach holding its feed-weight unchanged under the new cover"
+
+Core phrases "geometry completes itself" and "coverage-matrix subsumes" are present verbatim. The reformed third clause ("the water-point approach holding its feed-weight unchanged under the new cover") replaces what was previously a generalizing rule-statement with a specific perceptual registration of what the water-point approach does under the new coverage geometry. AP-009 chassis cap: NI:2 is named as the sole remaining inverted-predicate chassis entry; NI:6's third clause no longer carries a generalizing form.
+
+**Result: CONFIRMED CLEAN.** No HARD introduced.
+
+### NI:1 @6 — untouched per cycle-2 plan
+
+**Verification:** interest-narrator-b01-c08.md entry 1 reads:
+> "the sightlines resolve as a coverage already in place; her own overlay slots in above it, geometric not contested"
+
+Consistent with prior cycles. No edit applied.
+
+**Result: CONFIRMED.**
+
+### sensory:1 @10 — old-state anchor updated (loc-state:4 @9 gained `sensory: enclosed-receipt-quiet`)
+
+**Claim:** loc-state:4 @9 updated to carry `sensory: enclosed-receipt-quiet` field. sensory:1 @10 carve-out retired.
+
+**Verification:** location-state-b01-c08.md entry 4 reads:
+> "4 @9 the-feed-station | afternoon | none | packet on intake surface | the Jarvis channel's intake station — a fixed-point receipt location inside the Hook coverage radius | sensory: enclosed-receipt-quiet"
+
+The `sensory: enclosed-receipt-quiet` field is present verbatim at loc-state:4 @9. sensory-b01-c08.md comment block confirms: "Carve-out for sensory:1 @10 is NOW RETIRED — old-state traces to locked-graph loc-state:4 @9." The sensory facet entry 1 reads `sound: enclosed-receipt-quiet -> wax-seal-crack` with old-state "enclosed-receipt-quiet" now tracing directly to loc-state:4 @9 sensory field (verbatim match). Carve-out clause (a) is correctly retired.
+
+**Result: CONFIRMED CLEAN.** No HARD introduced.
+
+### vibes keyword serialization — fixed (hyphenated keywords)
+
+**Claim:** vibes worm-canon revise: keyword serialization fixed in `active-project/actors/aemond-targaryen-122ac/vibes.md`.
+
+**Verification:** aemond-targaryen-122ac/vibes.md reads `rising-entrapment:` (hyphenated) as the keyword bundle label. vibes-b01-c08.md entry 5 uses `actor:aemond-targaryen-122ac ++ rising-entrapment:` (hyphenated). Forms match exactly. The ++ op will find `rising-entrapment` in the actor vibe-cloud without bifurcation.
+
+Additionally verified: the Taylor actor vibe-cloud (active-project/actors/taylor-hebert-kl-122ac/vibes.md) uses `rising entrapment:` (space-separated) for Taylor's own vibe-cloud bundle. This is not relevant to vibes:5, which targets `actor:aemond-targaryen-122ac` — not Taylor. No conflict.
+
+**Result: CONFIRMED CLEAN.** Flag-003 from cycle 2 is RESOLVED — aemond keyword form confirmed hyphenated.
+
+### feel:2 @8 — reformed (breath-hold → step-lands; positive somatic-tell replaces stative breath description)
+
+**Claim:** Reformed to positive somatic-tell; body-anchor function preserved; NI:2 non-redundancy maintained.
+
+**Verification:** feeling-taylor-hebert-kl-122ac-b01-c08.md entry 1 reads:
+> "1 @8 taylor-hebert-kl-122ac: her step lands at the circuit-close | expressed: no"
+
+Positive body-act (step lands) replaces the stative breath description (breath holds). Body-anchor function preserved at @8. NI:2 at @8 carries "nothing files; the geometry has updated without a corresponding entry in any column she keeps" — non-redundant with the step-lands somatic tell (one is physical register, one is cognitive-accounting register). expressed:no correctly retained.
+
+Cross-check against cite-index: feel:2 @8 back=Y co=[mem:1, narrator:2, state:1]. Consistent with the corrected facet.
+
+**Result: CONFIRMED CLEAN.** No HARD introduced.
+
+### feel:3 @13 — reformed (negation → positive somatic-tell; hand-not-pause → hand-sets-on-next-entry)
+
+**Claim:** Reformed to positive somatic-tell; NI:3 non-redundancy maintained.
+
+**Verification:** feeling-taylor-hebert-kl-122ac-b01-c08.md entry 2 reads:
+> "2 @13 taylor-hebert-kl-122ac: her hand sets on the next entry | expressed: no"
+
+Positive body-act (hand sets on the next entry) replaces the negated form (hand does not pause). The body-tell enacts the held-discipline as a positive continuation: the hand moves to the next entry, which means the Aemond-name entry completed in the same cadence as the entries around it. NI:3 at @13 carries the perceptual-register witness ("logistics object among logistics objects, the interior noting the weight and filing it flat") — non-redundant with the hand-sets somatic tell. expressed:no correctly retained.
+
+Cross-check against cite-index: feel:3 @13 back=Y co=[exposition:2, narrator:3, state:4, state:10, vibes:3]. Consistent with the corrected facet.
+
+**Result: CONFIRMED CLEAN.** No HARD introduced.
 
 ---
 
@@ -104,19 +116,23 @@ verdict: CLOSED
 
 Specific checks performed:
 
-**Cite-index self-consistency post-rebuild.** The rebuilt cite-index co-citation fields are algebraically consistent with the corrected proto-lines brackets at @6, @8, and @13. The narrator co-citations at @8 and @13 correctly list feel:2 and feel:3 respectively. The state co-citations at @6 correctly list state:8 and state:9. All 37 facet entries have back=Y or are correctly marked back=- (vibes:5 is off-anchor; exposition:1 is synthetic @0). No entry has lost a back-pointer. No new back=N entries.
+**AP-009 chassis cap across NI file post-cycle-2.** The reformed NI:3 and NI:6 no longer carry the generalizing chassis forms identified in cycle-1. NI:2 is confirmed as the sole remaining inverted-predicate chassis entry per frontmatter (`inviolables-status: all-keep (NI:2 chassis sole survivor)`). The file-level AP-009 cap is satisfied at ≤1 chassis entry.
 
-**@21 follow-on fix cross-check.** Proto-lines @21 reads [narrator:5] [state:11]. Cite-index confirms state:11 @21 back=Y co=[narrator:5]. Vibes:4 licensed-by correctly cites state-update:11. Consistent.
+**Cite-index back-pointer integrity.** All 37 facet entries carry back=Y or correctly marked back=- (vibes:5 off-anchor; exposition:1 synthetic @0). No new back=N entries. The feel:2/@8 and feel:3/@13 back-pointers confirmed consistent with corrected proto-lines brackets.
 
-**Dialogue anchor propagation.** The oswyn-mudway-flea-bottom-elder dialogue file carries the canonical flat_id form @20. The cite-index feel:1 @20 back=Y co=[oswyn-mudway-flea-bottom-elder:1, vibes:4] is consistent with the corrected proto-lines @20 bracket [feel:1] [oswyn-mudway-flea-bottom-elder:1] [vibes:4].
+**Feeling facet internal consistency.** Both entries show positive somatic-tells in the correct format (subject: action | expressed: no). The NI:2 non-redundancy check: feel:2 @8 (step-lands, physical) vs NI:2 @8 (nothing-files, cognitive-accounting) — distinct registers. The NI:3 non-redundancy check: feel:3 @13 (hand-sets-on-next-entry, physical continuation) vs NI:3 @13 (interior noting the weight and filing it flat, perceptual) — distinct registers.
 
-**R2 shard feel-ID notation check.** The feeling-taylor R2 shard (active-project/staff/feeling/r2-decision-shard-taylor-hebert-kl-122ac.md) references "feel:1@8" and "feel:2@13" in its INVIOLABLES summary. These match the facet file's own sequential entry IDs (entry 1 = @8, entry 2 = @13 in feeling-taylor-hebert-kl-122ac-b01-c08.md), not the cite-index global tokens (feel:2 and feel:3). The shard was authored using file-internal numbering; the cite-index uses the consolidated namespace where oswyn's feel:1@20 was loaded first. This is a notational mismatch in the R2 shard's cross-reference lines but the underlying entries are the same objects. The shard's f-r2-counts {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0} are unaffected. This is flagged as a SIGNAL — see flag-006.
+**R2-decisions consolidated f-r2-counts.** .r2-decisions.md frontmatter: `f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}`. All six sourced shards report 0,0,0,0. The cycle-2 revisions to the feeling-taylor facet entries were fixer-pass revisions to the facet content, not R2 judge revisions — they do not generate F-R2-* counts.
+
+**vibes:5 ++ op target resolution.** `actor:aemond-targaryen-122ac ++ rising-entrapment` will locate the `rising-entrapment:` bundle in aemond's actor vibe-cloud (hyphenated, confirmed) and append `[name-in-feed-before-body-arrives]` to it without bifurcation. No new keyword-split risk.
+
+**sensory:1 @10 old-state chain.** Old-state `enclosed-receipt-quiet` now traces to loc-state:4 @9 sensory field (verbatim match). The carve-out clause (a) retirement is valid. The sensory:2 @16 carve-out clause (b) (old-state `afternoon-stone-lane-light` from scene-map time-of-day) remains advisory-only SOFT-FLAG per the facet's own annotation — unchanged from cycle 2, not a HARD.
 
 ---
 
 ## SIGNAL Findings
 
-### flag-001 (unchanged from R1)
+### flag-001 (unchanged from R1/R2)
 ```yaml
 id: flag-001
 type: flag
@@ -132,7 +148,7 @@ why: >
   would indicate systematic over-authoring.
 ```
 
-### flag-002 (unchanged from R1)
+### flag-002 (unchanged from R1/R2)
 ```yaml
 id: flag-002
 type: flag
@@ -146,23 +162,22 @@ why: >
   No stitch consequence.
 ```
 
-### flag-003 (unchanged from R1)
+### flag-003 — CLOSED (cycle-3 verification)
 ```yaml
 id: flag-003
-type: flag
+type: pass
 what: >
-  vibes:5 keyword "rising-entrapment" (hyphenated) may diverge from the
-  aemond-targaryen-122ac actor vibe-cloud keyword form. The ++ op requires
-  exact keyword-index match.
+  vibes:5 keyword "rising-entrapment" (hyphenated) vs. aemond-targaryen-122ac
+  actor vibe-cloud keyword form.
 why: >
-  If the actor vibe-cloud uses "rising entrapment" (space-separated), the ++ op
-  would create a bifurcated keyword instead of extending the existing bundle.
-  Vibes are not rendered at stitch, so no immediate output consequence; but
-  downstream operator bias would split across two entrapment keywords.
-  Showrunner to verify actor vibe-cloud keyword form before b01c09.
+  Cycle-3 direct read of active-project/actors/aemond-targaryen-122ac/vibes.md
+  confirms the actor vibe-cloud uses "rising-entrapment:" (hyphenated, identical
+  to vibes:5's keyword). The ++ op will match without bifurcation.
+  Flag-003 is retired as of cycle-3.
+verdict: CLOSED
 ```
 
-### flag-004 (unchanged from R1)
+### flag-004 (unchanged from R1/R2)
 ```yaml
 id: flag-004
 type: flag
@@ -175,7 +190,7 @@ why: >
   schema-validated anchor. Margit card dispatch needed before b01c09 authoring.
 ```
 
-### flag-005 (unchanged from R1)
+### flag-005 (unchanged from R1/R2)
 ```yaml
 id: flag-005
 type: flag
@@ -190,67 +205,88 @@ why: >
   Candidate for margit card-promotion dispatch.
 ```
 
-### flag-006 (new — introduced by fix context)
+### flag-006 (scope extended from cycle-2)
 ```yaml
 id: flag-006
 type: flag
 what: >
-  The feeling-taylor R2 shard at active-project/staff/feeling/r2-decision-shard-taylor-hebert-kl-122ac.md
-  references INVIOLABLES as "feel:1@8" and "feel:2@13" — these are the facet file's
-  own sequential entry IDs (entry 1 and entry 2 within feeling-taylor-hebert-kl-122ac-b01-c08.md),
-  not the cite-index global namespace tokens (feel:2 and feel:3 respectively).
-  The R2 shard's consolidated summary in .r2-decisions.md similarly reads
-  "INVIOLABLES (feel:1@8, feel:2@13) both HELD."
+  Multiple R2 shards and the grounding-ledger rationale carry stale descriptive
+  cross-references to the cycle-1/pre-cycle-2 feeling-taylor entry text:
+  (a) feeling-taylor R2 shard (active-project/staff/feeling/r2-decision-shard-taylor-hebert-kl-122ac.md):
+      INVIOLABLES described as "feel:1@8 ... breath holds at the circuit-close"
+      and "feel:2@13 ... her hand does not pause at the name" — pre-cycle-2 text.
+  (b) exposition R2 shard (active-project/staff/exposition-author/r2-decision-shard.md):
+      line 74-76 references "feel:2@13" with description "her hand does not pause
+      at the name" — pre-cycle-2 text.
+  (c) metaphor R2 shard (active-project/staff/metaphor/r2-decision-shard.md):
+      references "feel:1 (breath held at circuit-close, not expressed)" at @8 —
+      pre-cycle-2 text.
+  (d) grounding-ledger-b01-c08.md rationale section lists "breath-held at
+      circuit-close @8" and "hand-not-pausing at the name @13" as body-anchor
+      markers — pre-cycle-2 text.
+  Scope extended from cycle-2's flag-006 (which identified only item a above).
 why: >
-  The R2 shard cross-reference IDs do not match the cite-index global tokens.
-  No F-R2-* failure is introduced — the underlying entries are the same objects
-  and the f-r2-counts remain {0,0,0,0}. However, a future Phase 3 cross-session
-  staleness check that parses the shard's INVIOLABLES token strings against the
-  consolidated cite-index would fail to find "feel:1" and "feel:2" in the cite-index
-  (which uses feel:2 and feel:3), producing a false-positive mismatch alert.
-  The discrepancy predates the fixer pass and was not introduced by it; it originates
-  from the shard being authored before consolidation renumbering propagated back into
-  the shard's reference lines. No stitch consequence; no f-r2-count consequence.
-  Showrunner to note that the shard's feel-ID cross-reference lines use file-internal
-  numbering, not cite-index global tokens, before b01c09 Phase 3 staleness checks run.
+  None of these descriptive references affect f-r2-counts (all shards report
+  {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}). The shard verdicts (KEEP)
+  do not depend on the specific wording of the feeling entries — items b and c
+  reference the feeling content only as already-locked context, not as material
+  being judged. Item d (grounding-ledger) is a rationale comment; entries: []
+  is what downstream commands consume. No stitch consequence; no f-r2-count
+  consequence.
+  Risk: a future Phase 3 cross-session staleness check or tooling that parses
+  shard description text (rather than f-r2-counts) against the current facet
+  file would produce false-positive mismatches at items a, b, c. Item d could
+  mislead a human reader reviewing the grounding-ledger rationale.
+  Showrunner to note that all four items carry pre-cycle-2 feeling-taylor
+  descriptive text; the canonical current text is in
+  active-project/theater/facets/feeling-taylor-hebert-kl-122ac-b01-c08.md
+  entries 1-2 ("her step lands at the circuit-close" / "her hand sets on the
+  next entry").
 ```
 
 ---
 
 ## Audit Summary
 
-### Prior HARDs — All CLOSED
+### Cycle-2 Edits — All Verified CLEAN
 
-| id | what | verdict |
-|----|------|---------|
-| fault-001 | Dialogue anchor @b01c08s03n05 → @20 | CLOSED |
-| fault-002 | Proto-lines @8 feel:1 → feel:2 | CLOSED |
-| fault-003 | Proto-lines @13 feel:2 → feel:3, state:3 → state:10 (added) | CLOSED |
-| fault-004 | Proto-lines @6 state:1/state:2 → state:8/state:9 | CLOSED |
-| fault-005 | Vibes:2/3/4/5 licensed-by IDs corrected to consolidated state entries | CLOSED |
+| target | edit | verification |
+|--------|------|-------------|
+| NI:3 @13 | AP-009 chassis fix; foreknowledge-clamp; INVIOLABLE core preserved | CLEAN |
+| NI:6 @24 | Specific perceptual registration; INVIOLABLE core preserved | CLEAN |
+| NI:1 @6 | Untouched per plan | CLEAN |
+| sensory:1 @10 | loc-state:4 @9 gained `sensory: enclosed-receipt-quiet`; carve-out retired | CLEAN |
+| vibes:5 keyword | `rising-entrapment` hyphenation; matches aemond actor vibe-cloud | CLEAN |
+| feel:2 @8 | step-lands replaces breath-holds; positive somatic-tell; NI:2 non-redundant | CLEAN |
+| feel:3 @13 | hand-sets-on-next-entry replaces hand-not-pause; positive somatic-tell; NI:3 non-redundant | CLEAN |
 
 ### New HARDs: 0
 
-### SIGNAL Findings: 6
-- flag-001: density band overages on memory/feeling/exposition (denominator-driven; advisory)
-- flag-002: episode slug hyphenation inconsistency in facet frontmatter
-- flag-003: vibes:5 keyword hyphenation vs. actor vibe-cloud form (verify before b01c09)
-- flag-004: missing warehouse cards for prop:oc-jarvis-packet and prop:oc-feed-station-ledger
-- flag-005: loc:the-hook-ward no library card (carve-out held; margit dispatch recommended)
-- flag-006: feeling-taylor R2 shard INVIOLABLES use file-internal IDs (feel:1/feel:2), not cite-index global tokens (feel:2/feel:3) — not a f-r2-count fault; staleness-check mismatch risk before b01c09
+### SIGNAL Findings: 5
+
+| id | status | summary |
+|----|--------|---------|
+| flag-001 | unchanged | density band overages on memory/feeling/exposition (denominator-driven; advisory) |
+| flag-002 | unchanged | episode slug hyphenation inconsistency in facet frontmatter |
+| flag-003 | **CLOSED** | vibes:5 keyword hyphenation confirmed matching aemond actor vibe-cloud |
+| flag-004 | unchanged | missing warehouse cards for prop:oc-jarvis-packet and prop:oc-feed-station-ledger |
+| flag-005 | unchanged | loc:the-hook-ward no library card (carve-out held; margit dispatch recommended) |
+| flag-006 | scope-extended | stale feeling-entry text in R2 shards (feeling-taylor, exposition, metaphor) and grounding-ledger rationale; no f-r2-count impact; no stitch consequence |
+
+Total active signals: 5 (flag-003 retired; flag-006 scope-extended but not promoted).
 
 ---
 
 ## Routing
 
-No fixer dispatches required. All HARD findings are closed.
+No fixer dispatches required. No HARD findings in cycle-3.
 
 Signal flags:
 - flag-001: advisory for orchestrator-critic cross-chapter pattern check.
 - flag-002: low-priority normalization; no gate consequence.
-- flag-003: showrunner verify actor vibe-cloud keyword form before b01c09.
+- flag-003: CLOSED — aemond keyword form verified.
 - flag-004: margit dispatch for prop cards before b01c09.
 - flag-005: margit card-promotion dispatch recommended.
-- flag-006: showrunner note shard feel-ID notation convention before b01c09 Phase 3 staleness check.
+- flag-006: showrunner note that stale pre-cycle-2 feeling-entry descriptions appear in three R2 shards and the grounding-ledger rationale; canonical text is in the feeling-taylor facet file; no stitch consequence; no f-r2-count consequence.
 
 **Pipeline gate: b01c08 facets are clear to proceed to /and-stitch b01c08.**
