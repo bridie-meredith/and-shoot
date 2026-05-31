@@ -2991,3 +2991,140 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0055 | 2026-05-31 | SLOW (process-critic)
+
+question: |
+  /and-facets b01c07 Phase 5b cycle-1 FAIL (7 PASS / 4 FAIL); resolved at cycle-2 PASS.
+  Three patterns to evaluate:
+  (1) Dialogue substance fault (no-winner invariant in argument chapter) surfacing only at
+      Phase 5b — is there a process gap where argument-chapter substance invariants aren't
+      checked at the R2 dialogue-judge stage?
+  (2) Fixer-introduced schema-invalid sensory modality (proprioceptive, not in closed enum
+      sound|light|smell|thermal|humidity|pressure|tactile) caught at cycle-2 Phase 5 audit
+      but not at cycle-1 Phase 5 audit — is there a fixer brief gap or auditor scope gap?
+  (3) Grounding-ledger satisfied_by stale on fixer recast (the entry the ledger pointed to
+      was recast, making the satisfied_by reference stale) — is there a process gap in the
+      fixer protocol for ledger-coupled records?
+
+context: |
+  source_report: active-project/staff/audience/facets-audience-gate-r1.md
+  source_verdict: FAIL (7/4; remediated cycle-2 PASS; 2 cycles, cap not reached)
+  gate_path: .claude/commands/and-facets.md#phase-5b
+  secondary_gate_paths: [.claude/commands/and-facets.md#phase-4.6,
+                         .claude/commands/and-write.md#phase-1.5]
+
+  Chapter class: HINGE/ARGUMENT, PASS-CHUNK-VOICE-RISK.
+  Pattern 1 detail: dialogue-taylor @19 "She's why I'm in Flea Bottom at all" — two independent
+    reviewers (dark-fantasy, worm-canon) converged on SAME finding: the line converts Wenna Cobb's
+    death from cost to self-justification, breaking the chapter's no-winner invariant. The
+    dialogue-writer (Phase 1.5) and R2 dialogue-judge (Phase 3) both passed it. Phase 5 mechanical
+    audit passed it (no card-fence violation). Phase 5b audience found it.
+  Pattern 2 detail: cycle-1 fixer recast sensory:4@22 to modality `proprioceptive` (not in closed
+    enum). Cycle-1 Phase 5 re-audit did not catch it. Cycle-2 Phase 5 re-audit caught it; fixer
+    corrected to `pressure`. Gate ordering worked but one cycle late.
+  Pattern 3 detail: grounding-ledger grd-002 entry's satisfied_by pointed to sensory:4@22. When
+    the fixer recast sensory:4@22, satisfied_by became stale (pointing to an entry that now has
+    different content). The ledger itself is a new mechanism (PROP-0022; first live chapter).
+
+options: n/a (process-critic mode)
+
+decision: |
+  PROCESS-CHANGE-PROPOSED PROP-0026 (Pattern 1 — dialogue R2 brief lacks argument-chapter
+    substance invariants);
+  OK-FIRST-OCCURRENCE-MARKER (Pattern 2 — fixer schema-invalid modality);
+  PROCESS-CHANGE-PROPOSED PROP-0027 (Pattern 3 — grounding-ledger satisfied_by stale on
+    fixer recast)
+
+basis: |
+  Pattern 1 — PROP-0026:
+    Content-vs-process discrimination: could a stricter version of the existing R2 dialogue-judge
+    gate have caught this? Yes — if the R2 judge brief carried chapter-class substance invariants
+    (no-winner, cost-vs-justification prohibition on argument chapters), the judge would have
+    classified the line as a substance fault, not just evaluated Q1 (card-affirmative) + Q2
+    (card-fence). The rubric's Q2 is limited to behavior-card fences (forbidden vocabulary,
+    Earth-Bet fence, monument rules). The no-winner invariant is a chapter-substance contract
+    property, not a behavior-card fence. There is no existing gate between Phase 1.5 dispatch and
+    Phase 5b that checks dialogue content against chapter-level substance contracts.
+    Distinct from PROP-0024 (argument-spine bone-authoring at Phase 1 step 2) — that targets
+    what the bones record; this targets what dialogue says relative to chapter-substance invariants.
+    Different gate (Phase 3 R2 judge brief vs. Phase 1 screen-writer brief), different agent
+    (dialogue-writer vs. screen-writer), different constraint source (chapter substance contract vs.
+    bone schema). First occurrence, non-catastrophic. Proposing at first occurrence because: the
+    gap is a precise spec omission (argument-chapter invariants not in the R2 brief); the failure
+    class is structurally guaranteed on any argument chapter with a no-winner / cost-vs-justification
+    invariant; the fix is S-cost (one constraint block added to Phase 3 R2 dialogue-judge dispatch
+    brief conditioned on chapter_class or PASS-CHUNK-VOICE-RISK predicate).
+
+  Pattern 2 — OK, first-occurrence marker:
+    The Phase 5 STRUCTURAL audit class covers schema/format/integrity per facet.schema.md. The
+    closed modality enum (sound|light|smell|thermal|humidity|pressure|tactile, line 88) is an
+    explicit schema constraint. The cycle-1 Phase 5 audit missed it; cycle-2 caught it. Gate
+    ordering ultimately worked (non-catastrophic). Two candidate fix sites: (a) fixer brief
+    pre-write validation for ADD/RECAST operations on schema-enum fields; (b) auditor STRUCTURAL
+    class explicit enumeration of the sensory modality closed enum. Standard first-occurrence hold
+    applies — non-catastrophic, gate worked (one cycle late). Mark first occurrence; if the same
+    class (fixer introduces schema-invalid enum value; Phase 5 auditor misses it cycle-1) recurs
+    on any field, promote to PROP with change_type: modify on both the fixer brief and the
+    auditor STRUCTURAL scan spec. The candidate fix is small and known; hold does not lose it.
+
+  Pattern 3 — PROP-0027:
+    Content-vs-process discrimination: the grounding-ledger satisfied_by coupling is a new
+    mechanism (PROP-0022, first live chapter). Any fixer modification to a sensory entry that
+    a grounding-ledger line references via satisfied_by creates a stale reference — this is
+    deterministic. The fixer dispatch protocol at Phase 5b remediation does not include a
+    coupled-record-update step for the grounding-ledger. The fixer brief tells the fixer what
+    to fix (facet callouts) but not to check whether any modified entry is a grounding-ledger
+    satisfied_by target. First occurrence, non-catastrophic. Proposing at first occurrence because:
+    the failure is deterministic (every fixer recast of a ledger-referenced entry produces stale
+    satisfied_by); the ledger mechanism is brand-new (no prior chapter tested this coupling);
+    the fix is S-cost (one coupled-record-update instruction in the Phase 5b fixer dispatch brief).
+
+rationale: |
+  Three structurally distinct patterns. Pattern 1 is a gate-absence for dialogue + argument-chapter
+  substance contracts (no existing gate covers it). Pattern 2 is a Phase 5 STRUCTURAL scope
+  narrowness (or fixer discipline gap) — first occurrence, non-catastrophic, gate ultimately
+  worked. Pattern 3 is a fixer-protocol ledger-coupling gap — deterministic recurrence given the
+  new ledger mechanism.
+
+  Pattern 1 and Pattern 3 pass the first-occurrence override criteria: both have deterministic
+  recurrence mechanisms, both have precisely-named fixes, both are S-cost. Pattern 2 is held at
+  first occurrence: gate did catch it (one cycle late), the fault class requires two-agent
+  coincidence (fixer introducing enum error + auditor structural scan missing it cycle-1), and
+  the candidate fix can be applied on second occurrence without loss.
+
+trade-off: |
+  Proposing PROP-0026 at recurrence_count=1: justified by deterministic recurrence on any argument
+  chapter with substance invariants not in behavior-card fences. Cost of hold: the same miss
+  recurs at c08+ if c08 is also argument-class. The R2 dialogue-judge is dispatched at EVERY
+  /and-facets invocation on argument chapters; the brief gap fires every time.
+
+  Holding Pattern 2: justified because the Phase 5 STRUCTURAL scan already nominally covers
+  schema integrity. The gap may be an auditor execution miss (not a spec gap), or a scope
+  narrowness. Second occurrence will discriminate which. Cost of hold: at most one future cycle
+  of late-catch (same pattern, non-catastrophic).
+
+  Proposing PROP-0027 at recurrence_count=1: justified because the grounding-ledger mechanism
+  is new and untested in prior chapters. The satisfied_by coupling was not part of the overhaul
+  design's tested paths. No prior chapter established whether the fixer updates the ledger on
+  recast.
+
+first_occurrence_markers:
+  - Pattern 2 (fixer schema-invalid enum + Phase 5 STRUCTURAL scope miss):
+      first_occurrence: b01c07 sensory:4@22 recast to `proprioceptive` by cycle-1 fixer;
+        cycle-1 Phase 5 audit missed it; cycle-2 Phase 5 audit caught it + fixer corrected to `pressure`
+      candidate_fix_on_recur:
+        A: fixer brief — pre-write validation step for ADD/RECAST on schema-enum fields (check field
+           value against schema's declared closed enum before committing)
+        B: auditor STRUCTURAL scan — add explicit sensory modality enum validation to the scan spec
+           (enumerate each modality field value against `sound|light|smell|thermal|humidity|pressure|tactile`)
+      recur_threshold: 2 occurrences triggers PROP; candidate_fix target is both A + B (small, paired);
+        single-site fix (fixer brief) is sufficient if the STRUCTURAL scan is already nominally in scope
+        and the miss was execution-variance not spec-gap
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
