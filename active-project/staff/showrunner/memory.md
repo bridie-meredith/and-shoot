@@ -4945,7 +4945,10 @@ books:
               density_target: 0.5-0.65
 
       - slug: b01c08
-        status: scened   # /and-substance chapter b01c08 COMPLETE (2026-05-31): scenes[] + chunk_cold_read persisted. Phase 5: SUBSTANCE-FELT 3/3 audience + dramatist ACCEPT + auditor PASS (0 HARD, 2 FLAG). Phase 5.5: CHUNK-CLASS-B → admin disposition P (DEC-0060; same shape as DEC-0044) → SHIPPED-WITH-RISK-RECORDED. cl-d06 +1.0 relational_anchor_status DEFERRED to c09/c10 (pl-2026-05-30-001 carries forward).
+        status: bones-written   # /and-write b01c08 COMPLETE (2026-05-31): bones emitted theater/bones/b01-c08.md (24 bones / 3 scenes); scene-map facet emitted theater/facets/scene-map-b01-c08.md; dialogue file theater/dialogue/oswyn-mudway-flea-bottom-elder.md. Phase 6 bone-gate: 3-of-3 audience SUBSTANCE-FELT (cape-fic / dark-fantasy / worm-canon); Earth-Bet CLEAN; auditor 5 HARD all remediated (4 HELD-AXIS-WITNESSED via bone-level axes_held annotation + 1 dialogue-anchor citation fix s03n07→s03n05). Phase 4 trim: dropped s02n03 (single-persona-advisory; cape-fic ADVISORY-2 repeat from /and-substance Phase 5). Phase 3 dramatist: s02 n07↔n08 reorder (edge-image closes scene). Phase 2 auditor: 1 HARD fault-001 (sub-1.0 bone-floor); admin DEC-0002 override-as-precedent (c07 precedent: 4 sub-1.0 bone magnitudes shipped clean); pl-2026-05-31-003 SOFT for schema formalization at /and-review pipeline. Was scened from /and-substance chapter b01c08 (2026-05-31): SUBSTANCE-FELT 3/3 audience + dramatist ACCEPT + auditor PASS. Phase 5.5: CHUNK-CLASS-B → admin disposition P (DEC-0060). cl-d06 +1.0 relational_anchor_status DEFERRED to c09/c10 (pl-2026-05-30-001).
+        bones_file: theater/bones/b01-c08.md
+        bones_count: 24
+        substance_bone_gate_verdict: PASS
         chunk: |
           Capability staging chapter with two staging obligations: cf-d10-courier-face beat 1
           (the courier now has a face Taylor has attached a name to — Oswyn mentions him in
