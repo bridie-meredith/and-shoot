@@ -1494,3 +1494,15 @@ dispatch: minimum-change fixes for 8 FAULT-FORM-MODIFIER faults in b01c06 bones 
 target: active-project/staff/showrunner/_drafts/b01c06-bones-draft-2026-05-30.md
 audit-report: active-project/staff/auditor/write-b01c06-pass2.md
 findings-queued: 8 (fault-001 confirmed already applied in prior session; 7 remaining to apply)
+
+## SESSION-START — 2026-05-31T00:00:00Z — and-facets-b01c07-cycle1-fixes
+dispatch: /and-facets b01c07 Phase 5b cycle-1 remediation — 4 failed facets (interest-narrator AP-001 cap, sensory[3-sub], dialogue-halvard split-verdict, dialogue-taylor 2-persona convergence); apply minimum change per consolidated callouts in facets-audience-gate-r1.md
+target: active-project/theater/facets/interest-narrator.md, active-project/theater/facets/sensory.md, active-project/theater/facets/location-state.md, active-project/theater/dialogue/septon-halvard-flea-bottom.md, active-project/theater/dialogue/taylor-hebert-kl-122ac.md
+audit-report: active-project/staff/audience/facets-audience-gate-r1.md
+findings-queued: 4 (interest-narrator, sensory[3-sub], dialogue-halvard, dialogue-taylor)
+
+## fault-interest-narrator — RESOLVED — 2026-05-31T00:05:00Z
+fault: AP-001 inverted-predicate cap ≤1/file exceeded; narrator:3@15 + narrator:4@19 both used "is-the-X" collapsed-predicate; recast narrator:3@15 to non-inverted form; narrator:4@19 (WATCH-1) kept
+scope: line
+change: interest-narrator.md narrator:3@15 final clause: "that is the answer she is giving in place of the rebuttal she is holding back" → "she gives him the staying instead of the rebuttal she is holding back"; NI content preserved; anchor/citation unchanged
+criteria met: yes

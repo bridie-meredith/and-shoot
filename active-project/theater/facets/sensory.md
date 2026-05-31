@@ -28,7 +28,7 @@ author: studio
 # - sensory:3 @16: licensed-grounding-exception: grd-001 — thermal; halvard exhale in held cold; cap-exempt
 # - sensory:4 @22: licensed-grounding-exception: grd-002 — thermal; cold-settled-through-standing-weight; cap-exempt
 
-1 @12 sound: halvard-pastoral-account -> halvard-direct-address # tag: up
-2 @17 tactile: passage-lane-packed-earth -> sept-corner-cobble-grip # tag: up
+1 @12 sound: halvard-pastoral-account-register -> halvard-direct-address # tag: up | old-state-anchor: loc-state:3@9
+2 @17 tactile: sept-corner-stone-firm -> sept-corner-cobble-grip # tag: up | old-state-anchor: loc-state:4@15
 3 @16 thermal: sept-corner-held-cold -> halvard-breath-in-cold-air # tag: spike | licensed-grounding-exception: grd-001
 4 @22 thermal: sept-corner-stone-cold-underfoot -> cold-settled-through-standing-weight # tag: up | licensed-grounding-exception: grd-002

@@ -34,7 +34,7 @@ narrator: taylor-hebert-kl-122ac
 
 2 @14 the resentment had carried no object until now; facing him hands it one — not the man, the structure he has just described — and the cost of the facing is that the weight she had filed as weather acquires a name she has not spoken; she had tracked his circuit for two months as a node, and she is engaging the node as a man for the first time.
 
-3 @15 the feet plant against the body's own instinct, which was to route around the obstruction and close the circuit; staying is the more expensive option and she pays it; the planting reads to him — he sees a woman who has decided not to leave the conversation, and that is the answer she is giving in place of the rebuttal she is holding back.
+3 @15 the feet plant against the body's own instinct, which was to route around the obstruction and close the circuit; staying is the more expensive option and she pays it; the planting reads to him — he sees a woman who has decided not to leave the conversation, and she gives him the staying instead of the rebuttal she is holding back.
 
 4 @19 the name goes down the way an entry goes into a ledger — Wenna Cobb, six, Pig-Tallow Lane, the fever two seasons back, dead before her coverage existed to route the maester-call against it; the person is not a category, and the precision is the whole cost of keeping the count honest.
 
