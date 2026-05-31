@@ -4633,21 +4633,23 @@ books:
         bones_review:   # /and-review bones b01c07 (2026-05-30) — MANDATORY gate between /and-write and /and-facets
           reviewed_at: 2026-05-30
           report_path: active-project/staff/reviews/bones-b01c07-2026-05-30.md
-          verdict: FAIL   # 3 HARD SVO-form faults from the bone-gate re-fire (flat 15/22/16). NOTE: an earlier record/commit (6e6f0f6) wrongly said PASS-WITH-NOTES/0-HARD — that was written before the auditor fork returned; corrected here.
-          hard_findings:
-            - "fault-001 flat15 'stays in the argument' [MOVING soc-tether +0.5] — PP modifier + abstraction-object (bones.schema L57/L60)"
-            - "fault-002 flat22 'stays at the sept-corner' [MOVING soc-tether +0.5] — PP-of-place (bones.schema L57); clearest violation"
-            - "fault-003 flat16 'holds the silence' [HELD] — abstraction-as-object under holds-license (bones.schema L60)"
-          fidelity: PASS   # the 5 rev2 deletes did NOT hollow the spine; it lives in dialogue bones 12/19/21. Fidelity-pass does NOT clear the chapter; the 3 form HARDs block it.
+          verdict: PASS-WITH-NOTES   # after rev3 form-fix + re-fire. (History: run-1 FAIL 3 HARD SVO-form on flat 15/16/22; /and-write revise recast them; re-fire 2026-05-30 = PASS-WITH-NOTES 0 HARD. NOTE: a premature record/commit 6e6f0f6 wrongly said PASS before the auditor fork returned — corrected at 6a81abb.)
+          run_history:
+            - "run-1 (commit 6a81abb): FAIL 3 HARD — fault-001 flat15 'stays in the argument' (PP+abstraction), fault-002 flat22 'stays at the sept-corner' (PP-of-place), fault-003 flat16 'holds the silence' (abstraction-object)"
+            - "revise (commit 4cdf489): recast flat15->'plants the feet', flat16->'exhales', flat22->'steadies the feet'"
+            - "re-fire: PASS-WITH-NOTES 0 HARD — all 3 SVO-clean; aggregation EXACT (pol-reg +0.5, soc-tether +1.0); /and-facets CLEARED"
+          fidelity: PASS   # the 5 rev2 deletes did NOT hollow the spine; it lives in dialogue bones 12/19/21.
           follow_check: PASS-WITH-NOTES   # PROP-0020: central event + scene hand-offs recoverable; gap context-addable (NI facet), NOT bone-structural → not a FOLLOW-FAIL
           aliveness: BONES-AIRLESS-RISK   # PROP-0022 (advisory): span bones 13-22; interiority routed off-page, one sensory anchor (bone 17) across ten bones. Forewarns /and-facets Phase 2.5 grounding-ledger + /and-stitch Phase 4 voice-embodiment.
-          bones_file_mtime_at_review: 1780178686
+          bones_file_mtime_at_review: 1780178686   # mtime updated post-recast; record at re-fire
           stale_since: null
-          gate_outcome: BLOCKS_FACETS   # /and-facets must NOT run until bones revised + re-reviewed. Route: /and-write b01c07 revise (recast flat 15/22/16) -> /and-review bones b01c07 -> /and-facets.
-          forward_notes:   # carry to /and-facets Phase 2.5 once bones clear
+          gate_outcome: CLEARS_FACETS   # re-fire PASS-WITH-NOTES, follow_check not FOLLOW-FAIL → /and-facets b01c07 cleared to dispatch
+          forward_notes:   # carry to /and-facets Phase 2.5 + NI author brief
             - "NI facet at bones 13/15 is LOAD-BEARING: must stage crooked-house-maps-onto-her-arrangement recognition or cold-read causality gap reopens at stitch."
+            - "SUBSTANCE-SUSPECT (re-fire SIGNAL): flat 15 'plants the feet' + flat 22 'steadies the feet' are form-clean but the soc-tether +0.5 Δ is partially DISPLACED onto the NI facet — the body-rooting witnesses physical bracing; NI must render it as socially LEGIBLE (Halvard reads it; Taylor reads herself in it) or the relational Δ goes unearned at stitch."
+            - "NEAR-DUPLICATE (re-fire SIGNAL): flat 15 'plants the feet' / flat 22 'steadies the feet' share a body-part/posture register; NI + sensory facets must differentiate the two beats to prevent repetition-compression at stitch."
             - "Open grounding-ledger lines for the bones 13-22 airless span."
-            - "fault-005: 7 interior readings transferred to NI — treat all 7 as explicit deliverables (PASS-CHUNK-VOICE-RISK)."
+            - "7 interior readings transferred to NI — treat all 7 as explicit deliverables (PASS-CHUNK-VOICE-RISK)."
         write_margit_referrals_open:
           - "oc-sept-corner.card.md — NEW location (the sept corner / chandler's storehouse, Flea Bottom Hook); first-touched c07; loc card MUST be authored before /and-facets b01c07 Phase 0 (locations: resolution gate). Same class as c06 oc-* SEAMs."
         chunk: |
