@@ -431,7 +431,7 @@ chapter_verdict: ACCEPT
 
 ### s02 — alley-sound watchpoint
 
-The addition resolves the attempt-1 failure. "A low, effortful sound, not a cry, the kind a body makes when it is trying not to make any sound at all" arrives BEFORE the feed re-categorizes the contact as brief — the sequence is: world delivers the sound, THEN "The feed has no field for that. It logs: brief contact, courier retained on feet." That ordering is the repair. The reader hears something the feed cannot name. The sound is not framed as a feed-read; the feed's inadequacy to contain it is the explicit pivot: "The feed has no field for that." The categorization closes after the reader has already been outside it. This is the second register the attempt-1 critique required — not Taylor's data-frame but the world delivering a physical particular the movement-pattern field cannot absorb. The "kind a body makes when it is trying not to make any sound at all" is the human weight before categorization. Violence-without-aftermath hot-button does not fire: the courier's body is present as a body that has made a sound, not as a data point that resolved cleanly. The "It is what the feed reads" repetition still runs as rationalization — and now the reader has material to watch it from outside, because they heard what the feed did not log. The watchpoint lands.
+The addition resolves the attempt-1 failure. "A low, effortful sound, not a cry, the kind a body makes when it is trying not to make any sound at all" arrives BEFORE the feed re-categorizes the contact as brief — the sequence is: world delivers the sound, THEN "The feed has no field for that. It logs: brief contact, courier retained on feet." That ordering is the repair. The reader hears something the feed cannot name. The sound is not framed as a feed-read; the feed's inadequacy to contain it is the explicit pivot: "The feed has no field for that." The categorization closes after the reader has already been outside it. This is the second register the attempt-1 critique required — not Taylor's data-frame but the world delivering a physical particular the movement-pattern field cannot absorb. The "kind a body makes when it is trying not to make any sound at all" is the human weight before categorization. Violence-without-aftermath hot-button does not fire: the courier's body is present as a body that has made a sound, not as a data point that resolved cleanly. The watchpoint lands.
 
 ### s03 — foreclosure watchpoint
 
@@ -700,3 +700,64 @@ Recast verdict: CLEAN. pin→strike is an improvement, not a degradation. The ga
 One seam to flag for downstream: "strike" is now the bones-layer anchor for the violence-type at @13. The stitch-layer phrasing "below the register I would have called human" (the Phase 9 cold-read FAIL #2 trigger) should be revisited. The stitch-render must now produce atmospheric phrasing for the side-alley sequence that is consistent with "enforcement-beating as force-application" — it cannot drift back toward the ambiguous register that produced the prior FAIL. The bones give stitch authors a clean mandate; the stitch authors must use it. This is not a new soft carry so much as a reinforcement of the now-explicit bones-layer instruction: @13 is a strike, @14 is the alley returning the sound of that strike, and the stitch must render those in the correct causal order with the correct violence-type specificity.
 
 The escalated soft carry for the Sera-architecture (from the prior Phase 6 pass) continues: /and-facets must deliver Sera-context at memory and narrator-interest facets. The @13 recast does not affect this carry.
+
+---
+
+## b01c08 chunk review — /and-substance Phase 5
+date: 2026-05-31
+chapter: b01c08
+scenes_reviewed: [b01c08s01, b01c08s02, b01c08s03]
+
+### s01 — Oswyn-watcher-network integration / Khepri-echo
+
+SUBSTANCE-FELT.
+
+The [image: two-surveillance-architectures-occupying-the-same-ground] is doing real load. Two systems, same ground, same geometry — one running on consent-as-prerequisite (social physics of belonging: the boy at the water-point, the old woman with the basket facing the lane-mouth, the cobbler's apprentice whose nailing slows), one not. The three-corridor-gap is specific: this is not a vague intelligence overlap, it is a geometric fact the insect-feed returns without asking. Taylor maps the gap and closes it without telling Oswyn. The [force: taylor-coverage-integration-without-consent] tag is the chapter's moral cost, visible and unmarked.
+
+The silence around it is load-bearing, not deflective. "The work proceeds" as the scene's close is the discipline enacted as rhythm — the integration is done, it is not named, the circuit closes. That is the Khepri-echo's first fully operational instance in the reader's view before Taylor will use the word. The reader-Taylor recognition gap fires here: the reader sees the override-pattern running; Taylor's ledger does not open. That gap IS the chapter's substance contribution on the held axis, and the chunk stages it with enough texture that pattern-recognition can reach it without annotation.
+
+moral_framework held at rank 0 by Taylor's accounting: correct architecture. The un-marked cost is the substance. No walkout triggers. The opposing force (Oswyn's network as consent-requiring structure) is present not as abstraction but as named people: boy, woman with basket, apprentice with slowing nail-rate. These are bodies with their own social physics before Taylor's coverage absorbs them. That specificity saves the scene from the violence-without-aftermath flag.
+
+### s02 — Vhagar-handler-rotation / Aemond foreshadow
+
+SUBSTANCE-FELT with WATCH.
+
+The design is correct: the escalation engine inserts itself into the feed at low intensity without requiring Taylor's attention or affect-register shift. "The logistics note is a logistics note" followed immediately by the bread-price counterpoint — the Aemond-adjacent name filed alongside provisioner data — is the right normalization gesture. The [image: feed-geometry-acquires-a-new-edge] is genuinely good: what shifts is not Taylor's posture but the map's geometry, and the map's geometry is the chapter's objective substrate. The edge is lit at low intensity, and it was not lit before.
+
+The watch is this: the scene carries nothing in axes_in_motion. All six axes held. The chapter's sole forward-motion marker is the feed acquiring a new geometric edge, and "low intensity" is doing a lot of work to justify that. The Aemond name must arrive with one degree more texture at the bones layer for the handler-rotation note to read as the world inserting a tooth rather than the author planting a flag. The logistics-section placement is smart — court-tier content arriving via scheduling noise rather than via directed intelligence is operationally correct and earns the scene's restraint. But the name above the handler in the possessive notation needs one bone that makes the gap in Taylor's current coverage geometrically specific: not "the name does not appear in her current coverage" (which reads as absence-as-notation) but "the name does not appear because coverage does not reach — and that gap is a shape in the feed" (which reads as absence-as-fact). The distinction is the difference between the reader filing it and the reader watching the feed encounter something it cannot reach.
+
+This is a WATCH, not a rejection. The restraint is structurally correct for a staging chapter. But the bones layer must deliver the Aemond-gap as geometric specificity or the scene's claim that "the feed's geometry acquires a new edge" lands as the narrator describing the chapter's significance rather than the apparatus demonstrating it.
+
+### s03 — courier face / Oswyn-integration completed
+
+SUBSTANCE-FELT.
+
+The closer is the chapter's strongest scene. Oswyn as unknowing conduit delivering the courier name in a plain-contact social-physics exchange — "Corwick," he says, using the name without ceremony, the way he mentions anyone he has placed in a category — is exactly right. The name drops into the feed the way a position locks into a sightline: the face had a face, now has a name, a pattern (above-his-station, twice-up-the-hill), a direction. The body-map advances by one node and the node is a person with a route and a patron-shape. Taylor does not follow it tonight. That restraint is earned: the thread is open; the circuit is not forced.
+
+"Oswyn is still talking when Taylor leaves" is the right chapter closer for the Khepri-echo's first fully staged cycle. Oswyn unknowingly delivered the courier name AND his watcher-network was absorbed in the same encounter, and he does not know either happened. He is still talking. That image is not explained; it is the final physical fact of the chapter. That is the correct dark-fantasy close: the person whose network you absorbed is still talking as you walk away.
+
+The one near-miss: "because his position is now inside Taylor's coverage matrix, covered by the geometry she mapped this afternoon" at the scene's penultimate sentence risks narrating what the image should carry. The [image: oswyn-network-subsumed-in-silence] does its work; the explanatory clause after it is the narrator doing the image's job. At the bones layer, the connection between the watcher-boy's missing position and Taylor's coverage matrix should be structural rather than stated — two bones, not one bone with a because-clause.
+
+### Dormancy discipline — five axes held in s01/s03, six in s02
+
+The held-axis rationales do real work in s01 (integration proceeds without ledger-entry; the reader-Taylor gap is enacted in the circuit-closes rhythm) and s03 (integration-completion and body-map advance both proceed without Taylor's accounting opening; the gap IS the scene's substance contribution). In s02 the rationales are accurate but not load-bearing — they describe why axes don't move without generating pressure from the dormancy itself. That is acceptable for a staging chapter with this specific design (foreshadow-as-logistics-noise), but the s02 Aemond-gap-as-geometry watch item is the specific place where "accurate but not load-bearing" needs to become "the feed encounters something with shape."
+
+### cl-d06 deferral judgment
+
+CONCUR. Wren appears in coverage as a byproduct of the Oswyn-integration's geographic radius, but a byproduct is not the relational-anchor beat. The cl-d06 note in b01c06s01 describes "Wren becomes structurally necessary to the coverage map without appearing in the ledger" — that requires Wren's necessity to be the chapter's specific event, not a side effect of a chapter whose event is Oswyn. c09/c10 is the correct window. Defer confirmed.
+
+### Threshold discipline fires
+
+No walkout triggers. No catharsis-before-weight: the chapter closes on Oswyn still talking, not on resolution or recognition. No enemies pausing at convenient moments: Oswyn delivers the name in plain-contact social physics, not as a convenience arranged for Taylor. No magic-as-reliable-tool: the insect-feed is returning geometric positions, not analyzing intent; the labor of mapping is structural throughout. No world-as-set-dressing: the chandler's corner, the water-point, the watcher-boy with his slowing nail-rate — these are ward-bodies with their own physics before Taylor reads them.
+
+### Aggregate verdict
+
+SUBSTANCE-FELT
+
+Three scenes, one hard-watch on s02 (Aemond-gap must be geometric, not notational), one prose-discipline watch on s03 (near-miss explanatory clause after the final image). Neither is a hard finding. The chapter's design conceit (reader-Taylor recognition gap on the Khepri-echo) is calibrated correctly: readable without being underlined. The s01 architecture is the chapter's core, and it delivers.
+
+hard_findings: none
+watch_items:
+  - s02 WATCH: Aemond-gap-as-geometry — at /and-write, the handler-rotation bone must deliver the name's coverage-absence as a geometric fact (a shape in the feed the coverage cannot reach), not as a notation of absence; "the name does not appear in her current coverage" is not enough; needs one bone that makes the gap have dimension
+  - s03 WATCH: near-miss explanatory clause — "because his position is now inside Taylor's coverage matrix, covered by the geometry she mapped this afternoon" should be two structurally separate bones at the bones layer; the because-clause is the narrator explaining the image; the image should carry it; the prior scene (s01) already did the mapping; s03 should enact the completion (watcher-boy's position absent from where it was; Taylor's coverage there instead) without the explanatory bridge
+cl_d06_routing: CONCUR — deferral to c09/c10 correct; Wren in coverage as byproduct is not the relational-anchor beat
