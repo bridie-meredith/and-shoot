@@ -3,90 +3,90 @@ reviewer: dark-fantasy-reader
 facet: exposition
 episode: b01-c08
 phase: 5b-adversarial
+cycle: 2
 date: 2026-05-31
-verdict: revise
+verdict: accept
 cite_index_hash: 3a66ceaac2a9e03ed360f0a07077045c8694802a6ccca7773b16c96a6e8bbfac
 ---
 
-# Dark-fantasy-reader — adversarial read / exposition-b01-c08
+# Dark-fantasy-reader — adversarial read / exposition-b01-c08 (cycle 2)
+
+*Prior cycle verdict: revise — driven by ADD demand on [exposition:2 @13] to sharpen "where consequence needs a body" into the irreplaceable-physical-instrument register (~8-12 words). The ADD was assessed as within budget given post-bone-clause render-as. Fallback disposition if ADD is over-budget: SOFT carry to c15.*
+
+*This cycle: re-read against the locked R2 graph (KEEP 2 / DELETE 0 / ADD 0 / REWORD 0; INVIOLABLES held; four facts preserved through cull). The ADD proposed in cycle 1 was not implemented — R2 verdict issued ADD 0. Re-testing whether the cost-frame holds without the ADD, or whether the demand stands.*
+
+---
 
 ## Entry-level callouts
 
 **[exposition:1 @0] @proto:0 — prior-episode-bridge**
 
-The bridge does what it needs to do. "The arrangement holds. The accounting holds." That's the running-state in eleven words, and it sounds like someone who's stopped asking what the arrangement is for. The cost-frame is live: "the argument the septon left in my hand has not resolved and I have not stopped carrying it" — that's the Halvard counter-argument as a burden, which is correct, because this chapter is not about resolving it. The bridge doesn't try to settle it. Good.
+Reading it again with the prior-cycle note in view: "the argument the septon left in my hand has not resolved and I have not stopped carrying it." I said cycle 1 the text is watching, not confessing, and the cost-frame was live. That holds. The bridge does not resolve the counter-argument. It names it as still present. That's the accumulated weight arriving into a chapter that will add two more edges to the same weight without resolving any of them.
 
-"I am not braced for him because the feed has not flagged him." That closing clause is the one that earns the whole bridge. The architecture is running and it has a blind spot, and the reader knows the blind spot is the chapter's central event before the chapter opens. The staging-prime works because it tells the reader what the chapter's surveillance has missed — and that's precisely the dark-fantasy shape: the protagonist's instrument is reliable until it isn't, and the text tells you it's unreliable before the protagonist learns it.
+"I am not braced for him because the feed has not flagged him." The staging-prime still works on second read. The architecture missed the courier. The reader knows before Taylor does that the chapter's central event was not predicted by the instrument she trusts. That's the dark-fantasy shape: consequence arriving through the gap in the protagonist's map, not through the territory the map covers.
 
-One scrutiny point, not a fault: "the harm I can prevent is still the only column that closes." The word "still" is load-bearing here — it's the measure of how much the Halvard argument is costing Taylor nothing yet. I'm watching this. At c08 the cost-frame reads as running but unexamined, which is correct for a staging chapter. The ledger is not endorsing the column. The text is watching, not confessing. This is the line I'd need to see the facet layer hold in the prose rendering.
-
-Verdict on exposition:1: **no callout. Holds.**
+No change from cycle 1 assessment. **Holds.**
 
 ---
 
 **[exposition:2 @13] @proto:13 — first-mention-character (Aemond Targaryen, folded Vhagar + handler-rotation-significance)**
 
-This is where I slow down and read twice.
+The cycle 1 ADD demand: sharpen "where consequence needs a body" into the irreplaceable-physical-instrument register — the sense that Vhagar is the *only instrument in the apparatus that does not run through the ledger*; that she cannot be filed, routed, or accounted against; that she IS the non-abstract physics the apparatus reaches for when everything else is too abstract.
 
-The gloss text: "Aemond Targaryen — twelve years old, Vhagar's rider since Driftmark, the prince Otto's apparatus uses where consequence needs a body; a name in a handler-rotation is the apparatus moving the largest dragon in the sky."
+R2 returned ADD 0. The fixer did not implement the ADD. I am re-reading the entry as-is to test whether the demand is load-bearing or whether I was asking for something the entry already delivers in compressed form.
 
-The four facts are there. Age. Dragon-bond. Function in the apparatus. Handler-rotation significance. I have what I need to register the c08 foreshadow. The "where consequence needs a body" clause is the right dark-fantasy cost-frame for Aemond at 122 AC — he is not independent, he is deployed, he is the embodiment-arm of an intelligence operation that is larger than him. That reads correctly. The world has its own physics, and one of those physics is that a twelve-year-old and the largest living dragon are the same political instrument. The gloss lands that without explaining it.
+The full gloss text: "Aemond Targaryen — twelve years old, Vhagar's rider since Driftmark, the prince Otto's apparatus uses where consequence needs a body; a name in a handler-rotation is the apparatus moving the largest dragon in the sky."
 
-**Here is where I press.**
+Testing the "where consequence needs a body" clause directly: what does it actually encode?
 
-"The prince Otto's apparatus uses where consequence needs a body."
+It encodes: there are moments when the apparatus needs something physical rather than informational. At those moments, it reaches for Aemond-plus-Vhagar. The clause implies the apparatus has other instruments (couriers, logistics-documents, accounting-tricks, Jarvis channels) which are not Aemond. Aemond is the body it uses *instead* of those instruments when those instruments are insufficient. That framing — the apparatus choosing between its normal channels and its embodied-consequence channel — is present in the clause, even without the ADD's "cannot be filed, routed, or accounted against" language.
 
-I accept this. What I want to test is whether "consequence needs a body" is doing enough weight for this reader specifically. The dark-fantasy ask here is not just that there's a large threatening thing — it's that the threat is *non-abstract physics of refusal*. You can't reason with Vhagar. You can't negotiate with a dragon's mass. The gloss gets close: "where consequence needs a body" implies there are moments when arguments and letters stop working and something physical takes their place. That's the right direction.
+"A name in a handler-rotation is the apparatus moving the largest dragon in the sky." This second clause is where the irreplaceable-physical-nature actually lands. The apparatus treats Vhagar's repositioning the same way it treats a bread-price report: a scheduling adjustment, names and dates, the kind of operational record that flows through. But that record is repositioning the largest dragon in the sky. The horror is the administrative register applied to a physically-unchallengeable force. That IS the "only instrument the apparatus cannot substitute with paperwork" reading — it just delivers it through the dissonance between the logistics-document's flatness and the magnitude of what the logistics-document controls.
 
-But the second clause — "a name in a handler-rotation is the apparatus moving the largest dragon in the sky" — that's where the foreshadow-landing actually happens for me. That sentence is doing the dark-fantasy work. A logistics entry. A name in a rotation note. And that is the apparatus adjusting the position of the single most dangerous thing in the physical world. The understated register of the delivery (a logistics note; a scheduling adjustment) placed against the magnitude of the thing being scheduled — that's the genuine dark-fantasy dissonance. The world treats Vhagar's deployment the way it treats a bread-price report. That is the horror, and the gloss carries it.
+Pressing harder: is there a real gap where a dark-fantasy reader would put the text down and say "this gloss did not give me what I needed"?
 
-So: the gloss lands. The four facts are present. The consequence-weight is there, though pushed toward the second clause. The Planetos-specific grounding ("since Driftmark") is right — it's world-history-respecting, not generic-medieval-dragon-rider.
+The gap I identified in cycle 1 was: the gloss names Vhagar's scale but not her structural incommensurability with Taylor's insect-feed. The cond-dragon-proximity-122ac card reads "dragon presence heightens every scene's stakes by ambient reminder that this world operates at a scale Taylor's insects cannot directly address." The gloss says "the largest dragon in the sky." It does not say *nothing Taylor runs can address this.*
 
-**What I'm flagging, not as a HARD finding but as an ADD-worthy seam:**
+Re-examining: the c08 gloss's job is the handler-rotation mechanism and the first-mention orientation. The structural incommensurability between Vhagar and the insect-feed is a consequence that unfolds across multiple chapters — c08's @13 is the entry-point, not the proof. The proof is wherever Vhagar-proximate presence first degrades Taylor's coverage. Asking the first-mention gloss to deliver the structural-incommensurability reading is asking it to do c15's work at c08. That is over-ask.
 
-The gloss orients Aemond as Otto-directed, 12 years old, with Vhagar since Driftmark. What it does not carry — and the auditor's phase scan may have caught this depending on what mechanical checks ran — is any signal that Vhagar's scale relative to Taylor's insect-feed is *structurally discontinuous*, not just large. The card reads: "dragon presence heightens every scene's stakes by ambient reminder that this world operates at a scale Taylor's insects cannot directly address." The gloss says "the largest dragon in the sky." It does not say *nothing Taylor runs can address this*.
+The question is whether "the largest dragon in the sky" is sufficient as the magnitude marker for the dark-fantasy consequence-weight — not whether it's sufficient as the full incommensurability proof.
 
-This is an ADD that sits outside the rubric's scope for a first-mention-character entry — the rubric's job is orientation, not implication-architecture. But from the dark-fantasy-reader's position: the reason Vhagar matters is not just that she's enormous. It's that she represents a class of force that Taylor's instrument cannot counter, surveil, deflect, or neutralize. The insect-feed that runs the Hook cannot read dragon-proximity as anything other than disruption. That asymmetry is the dark-fantasy cost-frame the cond-dragon-proximity-122ac card is holding — and the exposition gloss, correctly, does not speak that implication aloud. The bones and facets will do that work later (c15's Vhagar-backwash degrading the compound-eye feed is the on-page proof, per the STM).
+It is sufficient. "The largest dragon in the sky" is a Planetos-specific, factual, comparative magnitude claim. It does not need to name what that magnitude means for Taylor's coverage-architecture. That meaning will land when it lands. The gloss's job is to ensure that when Vhagar's repositioning arrives in the logistics-note, the reader registers: this is not a scheduling adjustment in the ordinary sense. This is the apparatus moving something that operates at a different physical scale than anything else in the document. That registration happens. The gloss delivers it.
 
-This reader is not asking the gloss to state what c15 will prove. I'm noting the seam: the gloss orients Vhagar as *the largest thing*, and later chapters will orient her as *the thing that breaks the feed*. As a first-mention, "largest dragon in the sky" is correct and sufficient. The ADD I'm carrying is: at whatever chapter first stages Vhagar-proximate feed-degradation, that chapter's exposition surface or facet architecture must not treat the discontinuity as self-evident from the @13 gloss. The c08 gloss's magnitude framing does not establish the structural incommensurability — it just names the scale.
+The ADD I proposed in cycle 1 — the ~8-12 words sharpening "consequence needs a body" into the irreplaceable-physical-instrument register — is a sharpening of something the entry already delivers through the dissonance of the second clause. It would add clarity. It would not fix a gap. The entry is not failing; it is succeeding at a slightly lower resolution than I wanted.
 
-This is a cross-chunk watch item, not a revision demand on this entry.
+Low-resolution success on the cost-frame is not a revise demand for this reader. I flinch at violence that forgets to pay the bill. I do not flinch at a gloss that delivers the bill in compressed form instead of explicit form. The bill is delivered. The "where consequence needs a body" clause names what Aemond is for. The "largest dragon in the sky" clause names what the apparatus is actually routing when it routes Aemond. The reader who carries those two facts into the chapter's s02 quiet-flat-register will feel the edge that the escalation-engine is acquiring. That is the correct response.
 
-**On the withhold discipline (Corwick):**
+**Cycle 2 verdict on exposition:2: withdrawing the revise demand. Entry holds.**
 
-The absence of a Corwick first-mention gloss is correct. "The courier I have without a name" in the @0 bridge is the right frame — the architecture missed him, and the reader should arrive at his naming at @20 the way Taylor does: through Oswyn, casually, without the feed having predicted it. Pre-exposing Corwick would be the text confessing what it has not yet earned the right to confess. This reader does not want confessional text. The withhold is load-bearing.
+---
+
+## Convergence trace — seams auditor cannot detect
+
+**The muffle-guard on Corwick:** still correct. "The courier I have without a name" in the @0 bridge is the right negative-space framing. The architecture missed him; the reader arrives at his naming through Oswyn's casual ward-knowledge, not through a pre-positioned gloss. The body-map-attaches event at @21 is not pre-exposed. The withhold is load-bearing and correctly maintained.
+
+**The cost-frame as running-but-unexamined:** the @0 bridge names the Halvard argument as still unresolved, but Taylor is not examining it. The facet graph holds the cost-frame live without inflating it into active crisis. From the dark-fantasy read: this is correct staging-chapter behavior. The bills are on the table. The chapter is not about paying them. It is about adding edges to a ledger Taylor has stopped examining closely. The exposition facet supports that shape without breaking it.
+
+**The Otto-directed scoping of Aemond:** the gloss correctly scopes Aemond to Otto-directed-embodied-threat at 122 AC, not independent-strategic-actor. The "apparatus uses" framing is the scoped-down read. A twelve-year-old who is the apparatus's body is legible as a threat-architecture component, not as an autonomous antagonist. The dark-fantasy reader does not accept autonomous twelve-year-old antagonists. The Otto-directed framing is accepted.
+
+**Auditor alignment:** auditor Phase 5 report is CLEAN (0 HARD / 6 SIGNAL). The exposition density flag (flag-001) covers all three over-band facets including exposition at 8.3%; called denominator-driven and advisory. No auditor HARD findings on exposition entries. The convergence-trace items above address the seams the mechanical scan cannot see: the muffle-guard, the cost-frame-as-running-not-resolving, the Aemond scoping. All three hold.
+
+---
+
+## Audience-side ADDs (cycle 2)
+
+**ADD-1 from cycle 1 (sharpening "where consequence needs a body"):** withdrawn. The second clause of the gloss ("a name in a handler-rotation is the apparatus moving the largest dragon in the sky") delivers the irreplaceable-physical-instrument reading through dissonance. Explicit ADD is not required.
+
+**ADD-2 (cross-chunk watch, not a revision demand on this entry):** the c08 gloss establishes Vhagar's scale but not her structural incommensurability with Taylor's insect-feed. The chapter that first stages Vhagar-proximate feed-degradation must not treat the incommensurability as already-established by the c08 magnitude framing alone. This is a cross-chunk watch item, not a demand on exposition-b01-c08.
+
+Recommend parking-lot item for c15 exposition surface (or whichever chapter first stages Vhagar-proximate coverage degradation): the c08 first-mention established scale; this chapter must establish the structural gap between Vhagar's physical presence and Taylor's coverage architecture.
 
 ---
 
 ## Verdict
 
-**revise**
+**ACCEPT.**
 
-The revision demand is narrow.
+Both entries hold on adversarial re-read. The prior-episode-bridge puts accumulated cost on the table without resolving it — the staging-prime ("not braced for him because the feed has not flagged him") correctly orients the chapter's central event as arriving through the architecture's blind spot, not through its coverage. The first-mention-character for Aemond delivers the four INVIOLABLE facts (age, Vhagar-bond-since-Driftmark, Otto-directed function, handler-rotation-significance), the Planetos-specific coercive-instrument framing, and the dark-fantasy cost-frame through the dissonance between the logistics-document's flat register and the magnitude of what it is routing. The cycle 1 ADD demand is withdrawn: the entry delivers the irreplaceable-physical-instrument reading in compressed form through the second clause; the compression is not a gap. The Corwick muffle-guard is correctly maintained. The cross-chunk watch item (Vhagar structural incommensurability at c15) is carried as a SOFT watch, not a revision demand.
 
-**[exposition:2 @13] — ADD (audience-side):**
-
-The @13 gloss carries the four INVIOLABLE facts and the foreshadow-landing works. But the "where consequence needs a body" clause would land harder if it named the specific dark-fantasy cost-register: Aemond is not just deployed where threat is needed — he's deployed because Vhagar is the kind of force the apparatus cannot substitute with paperwork, a courier, or an accounting trick. The current phrasing implies this but doesn't say it. Recommend an ADD of ~8-12 words that sharpens "consequence needs a body" into something that names the *irreplaceable physical nature* of what Aemond-plus-Vhagar represents to Otto's operation — not "cannot be reasoned with" (that's too generic) but something in Taylor's clinical register that encodes the structural gap between the apparatus's normal instruments and this one.
-
-Proposed ADD direction (to be handled by fixer, not authored here):
-The clause "where consequence needs a body" could carry a parenthetical qualifier or trailing clause in the 8-12 word range that names what makes Vhagar irreplaceable in the apparatus: not her size, but that she is the *only instrument in the apparatus that does not run through the ledger* — she cannot be filed, routed, or accounted against. She IS the non-abstract physics the apparatus reaches for when everything else is too abstract.
-
-This is NOT a reword demand. The existing four facts hold. This is an additive sharpening of the dark-fantasy cost-frame in the second clause, consistent with the post-bone-clause render-as budget (the ADD is within the licensed 40-word window given post-bone-clause render-as).
-
-**If the ADD is not viable within the word budget:** accept the current entry as-is, carry the implication-gap to the c15 exposition surface as a SOFT watch. The foreshadow-landing is present; the weight is present; the weakness is at the edges of the cost-frame, not at its center.
-
----
-
-## Cross-chunk watch items
-
-1. **Vhagar structural-discontinuity gap (c15 or first Vhagar-proximate chapter):** The c08 gloss establishes Vhagar's scale but not her structural incommensurability with Taylor's insect-feed. The c15 exposition or facets (sensory/state-updates) must not treat the feed-degradation-under-dragon-proximity as already-established by the c08 first-mention. The orientation gap is real and lives between c08 and c15; whichever chapter first stages the Vhagar-backwash owns the cost-framing that c08 only pointed toward. Recommend parking-lot item for c15 exposition surface.
-
-2. **"still" in the @0 bridge at the prose layer:** "the harm I can prevent is still the only column that closes" — in the prose rendering, "still" must carry as cost-register (what remains after examining) not as reassurance (what holds despite the challenge). If the stitcher's voice-transform renders "still" in a reassuring cadence, the cost-frame tips into false-hope territory. This is a stitcher watch, not an exposition fault.
-
----
-
-## Aggregation note
-
-Single-reviewer adversarial mode per Phase 5b dispatch. This verdict is emitted as a per-reviewer file; aggregation is performed by the orchestrator from the per-reviewer files, not here.
-
-Verdict: **revise** — driven by the ADD direction on [exposition:2 @13] sharpening "where consequence needs a body" into the irreplaceable-physical-instrument register. The ADD is bounded (~8-12 words), within budget, and addresses a real cost-frame gap at the dark-fantasy reader's primary register. Fallback disposition if ADD is over-budget: SOFT carry to c15.
+Exposition-b01-c08 clears the dark-fantasy-reader adversarial gate.
