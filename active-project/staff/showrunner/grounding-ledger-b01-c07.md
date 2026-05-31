@@ -39,14 +39,19 @@ entries:
     licensed_at: 2.5
     licensed_by: aliveness-reviewer
     airless_symptom: "bare posture/breath verb; zero body or sensory anchor; apparatus-only between two grounded beats"
-    status: open
-    satisfied_by: null
+    status: satisfied
+    satisfied_by: sensory:3 @16 | thermal: sept-corner-held-cold -> halvard-breath-in-cold-air | Phase 4.6 Step 1 | 2026-05-31
     # R2 re-check (Phase 4.5, 2026-05-31T02:48:55Z): STILL OPEN. Locked graph adds NO body to @16.
     # The Phase 2.5 hint that feel:1@20 (Halvard's stilled hands) is "adjacent" is geometrically wrong —
     # @20 is FOUR bones downstream and a different beat (the absorb, not the not-pressing exhale). Nearest
     # fire is sensory:2@17, one bone after, but that is TAYLOR's tactile floor-entry, not Halvard's breath.
     # Cite-index "bare protolines" list confirms @16 fires ZERO facets post-R2. Phase 4.6 MUST author the
     # sensory grounding add. GROUNDING-REQUIRED stands.
+    # Phase 4.6 (2026-05-31): sensory:3 authored. Thermal modality — the visible-breath inflection in the
+    # held cold of the chandler's-corner stone. Old-state anchored to loc-state:3@9 (cold-holding ground
+    # unwarmed; sept-corner cold confirmed by late-morning). New-state: halvard-breath-in-cold-air (the
+    # transient vapor-plume of the exhale in the held cold — discrete visual+thermal event). Bare verb
+    # ("exhales") clears Q1; vapor-puff-in-stone-corner clears Q2. Third distinct modality added.
 
   - id: grd-002
     anchor: 22
@@ -70,8 +75,8 @@ entries:
     licensed_at: 2.5
     licensed_by: aliveness-reviewer
     airless_symptom: "argument's emotional close on a bare posture verb echoing @15; interiority present but no sensation; cap-blocked at both sensory and feel"
-    status: open
-    satisfied_by: null
+    status: satisfied
+    satisfied_by: sensory:4 @22 | thermal: sept-corner-stone-cold-underfoot -> cold-settled-through-standing-weight | Phase 4.6 Step 1 | 2026-05-31
     # R2 re-check (Phase 4.5, 2026-05-31T02:48:55Z): STILL OPEN. Locked graph adds NO sensation to @22.
     # @22 carries narrator:6 + vibes only (confirmed per-facet list). NI:6 is rich COGNITION ("the feet had
     # begun to shift toward the lane and she steadies them instead") but it describes the choice — it is not
@@ -79,6 +84,12 @@ entries:
     # ("plants" -> "steadies"), which is exactly the flat-echo this entry names. feel correctly refused @22
     # by default (NI-owned; STRICT cap); sensory at ceiling. Phase 4.6 MUST author the sensory grounding add,
     # DISTINCT from sensory:2@17's cobble-grip. GROUNDING-REQUIRED stands.
+    # Phase 4.6 (2026-05-31): sensory:4 authored. Thermal modality — distinct from sensory:2@17 (which is
+    # tactile cobble-grip texture). Old-state anchored to loc-state:4@15 ("sept-corner stone underfoot — the
+    # ground cold grips through soles at planted weight"). New-state: cold-settled-through-standing-weight —
+    # the cold having transferred upward through the soles over the duration of the argument, re-registering
+    # at the moment of deliberate re-planting against the departure impulse. Modality=thermal; content=
+    # temperature-transfer vs. @17's surface-texture. Distinct. ✓
 
 # Beats CONSIDERED and NOT opened (already breathe / VOICE-FIXABLE at stitch, not a grounding add):
 #   @13 recognition  -> NI:1@13 + vibes:1 (cognition rich; bare "still" is VOICE-FIXABLE at stitch, not airless-for-lack-of-material)

@@ -1,4 +1,8 @@
 # bones — b01c07
+# inflight-r2 | prefix: sensory | phase: 4.6
+# Authoritative for the sensory prefix at URI-030 union merge.
+# Carries ALL sensory tokens: sensory:1@12, sensory:2@17, sensory:3@16, sensory:4@22.
+# All other bone bodies are byte-identical to canonical proto-lines.
 
 episode: b01c07
 narrator: taylor-hebert-kl-122ac
@@ -16,6 +20,7 @@ aggregate_range: 1-25
 6 the insect-feed places septon-halvard-flea-bottom [vibes:13]
 7 taylor-hebert-kl-122ac enters the sept-corner [loc-state:2] [state:1] [state:2] [state:3]
 8 taylor-hebert-kl-122ac acknowledges septon-halvard-flea-bottom
+
 9 septon-halvard-flea-bottom describes the fever's progress [loc-state:3] [vibes:14]
 10 septon-halvard-flea-bottom names the maester's cost
 11 septon-halvard-flea-bottom turns from the sick-child account [state:4]
@@ -25,6 +30,7 @@ aggregate_range: 1-25
 15 taylor-hebert-kl-122ac plants the feet [loc-state:4] [narrator:3] [state:2] [vibes:9]
 16 septon-halvard-flea-bottom exhales [sensory:3]
 17 the sept-corner ground grips [sensory:2] [vibes:11]
+
 18 taylor-hebert-kl-122ac names the body count [feel:2] [vibes:4] [vibes:5]
 19 taylor-hebert-kl-122ac speaks to septon-halvard-flea-bottom [mem:2] [narrator:4] [taylor-hebert-kl-122ac:1] [vibes:4] [vibes:5]
 20 septon-halvard-flea-bottom absorbs the counter [feel:1] [narrator:5] [vibes:8]

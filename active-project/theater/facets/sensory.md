@@ -7,7 +7,7 @@ author: studio
 #
 # design/shoot-v2/rubric-sensory.md § Curve-shape rubric / Episode-level shape
 #
-# Carve-out scope: this file (bone_count=25 < 30; modality count=2 = floor minimum)
+# Carve-out scope: this file (bone_count=25 < 30; modality count=2 = floor minimum for R1)
 # Carve-out rule: effective sparsity ceiling = max(6%, 2/25) = 8% (advisory, not blocking).
 #   Standard 6% ceiling would permit ~1 entry on 25 bones; the floor (≥2 modalities) requires
 #   at minimum 2 entries. The exemption resolves the arithmetic collision; modality-floor takes
@@ -15,9 +15,20 @@ author: studio
 # Coverage justification: monoculture is the load-bearing pathology; 2 entries at 2 modalities
 #   preserves the disambiguation gradient (23 unflagged bones remain the contrast baseline).
 #
+# Phase 4.6 grounding adds (entries 3 + 4):
+#   Density post-add: 4/25 = 16% — above both the standard 6% ceiling and the V3 exemption 8%
+#   advisory ceiling. Entries 3 and 4 are GROUNDING-REQUIRED ledger-licensed exceptions
+#   (grounding-ledger-b01-c07.md grd-001 / grd-002; PROP-0022 aliveness twin). The frequency-band
+#   cap is explicitly waived for these two by the ledger license. Phase 5 auditor and Phase 5b
+#   audience must apply the licensed-grounding-exception exemption, not the standard cap verdict.
+#
 # Per-entry annotations:
 # - sensory:1 @12: exemption clause — 2nd entry needed to meet modality floor; sound+tactile pair
 # - sensory:2 @17: exemption clause — floor-entry; tactile modality; airless-span grounding anchor
+# - sensory:3 @16: licensed-grounding-exception: grd-001 — thermal; halvard exhale in held cold; cap-exempt
+# - sensory:4 @22: licensed-grounding-exception: grd-002 — thermal; cold-settled-through-standing-weight; cap-exempt
 
 1 @12 sound: halvard-pastoral-account -> halvard-direct-address # tag: up
 2 @17 tactile: passage-lane-packed-earth -> sept-corner-cobble-grip # tag: up
+3 @16 thermal: sept-corner-held-cold -> halvard-breath-in-cold-air # tag: spike | licensed-grounding-exception: grd-001
+4 @22 thermal: sept-corner-stone-cold-underfoot -> cold-settled-through-standing-weight # tag: up | licensed-grounding-exception: grd-002

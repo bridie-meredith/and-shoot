@@ -2,17 +2,17 @@
 generated: 2026-05-31
 source: active-project/theater/proto-lines/b01-c07.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 46 facet entries; 21/25 protolines decorated (84.0%)
+totals: 48 facet entries; 22/25 protolines decorated (88.0%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
-| 0 (bare)   | 4 |
-| 1          | 5 |
+| 0 (bare)   | 3 |
+| 1          | 6 |
 | 2          | 4 |
-| 3          | 5 |
-| 4          | 3 |
+| 3          | 4 |
+| 4          | 4 |
 | 5          | 3 |
 | 6          | 1 |
 
@@ -31,12 +31,14 @@ totals: 46 facet entries; 21/25 protolines decorated (84.0%)
   narrator:3 @15 back=Y co=[loc-state:4, state:2, vibes:9]
   narrator:4 @19 back=Y co=[mem:2, taylor-hebert-kl-122ac:1, vibes:4, vibes:5]
   narrator:5 @20 back=Y co=[feel:1, vibes:8]
-  narrator:6 @22 back=Y co=[vibes:9, vibes:15]
+  narrator:6 @22 back=Y co=[sensory:4, vibes:9, vibes:15]
   narrator:7 @23 back=Y co=[loc-state:5, state:3, state:4, vibes:3, vibes:15]
 
-### sensory (2 entries)
+### sensory (4 entries)
   sensory:1 @12 back=Y co=[septon-halvard-flea-bottom:1, vibes:2, vibes:12, vibes:14]
   sensory:2 @17 back=Y co=[vibes:11]
+  sensory:3 @16 back=Y
+  sensory:4 @22 back=Y co=[narrator:6, vibes:9, vibes:15]
 
 ### state (12 entries)
   state:1 @2 back=Y
@@ -98,6 +100,7 @@ _(no entries)_
 _Round-2 deletion candidates — but check the rubric before cutting._
 
 - loc-state:1 @1  `taylor-hebert-kl-122ac completes the ward-coverage circuit`
+- sensory:3 @16  `septon-halvard-flea-bottom exhales`
 - state:1 @2  `the handcart blocks the sept-corner passage`
 - vibes:13 @6  `the insect-feed places septon-halvard-flea-bottom`
 - exposition:1 @0  ``
@@ -105,4 +108,4 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 ## Bare protolines (no citations accrued)
 _Round-2 add candidates if the rubric licenses a fire here._
 
-@5, @8, @10, @16
+@5, @8, @10
