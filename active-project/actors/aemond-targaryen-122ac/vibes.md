@@ -1,6 +1,6 @@
 VIBES:
   penitential-grey King's Landing: [vhagar-shadow-on-flea-bottom, the-grey-city-under-the-largest-dragon, instrument-not-actor-at-this-age]
-  rising entrapment: [axis-movement-required-every-appearance, each-walk-on-tightens-the-calculation, embodied-consequence-makes-refusal-non-abstract]
+  rising-entrapment: [axis-movement-required-every-appearance, each-walk-on-tightens-the-calculation, embodied-consequence-makes-refusal-non-abstract]
   tragic-causal: [escalation-engine-whose-path-taylor-cannot-slow, convergence-line-planted-act-one, his-trajectory-unchanged-at-d14]
 
   # Personal/private associations:

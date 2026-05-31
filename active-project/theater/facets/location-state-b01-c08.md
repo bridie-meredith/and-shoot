@@ -13,7 +13,7 @@ cull-count: 0
 
 3 @4 the-hook-ward | afternoon | none | lane-mouth watched | the basket-woman angled toward the lane-mouth opening, facing outward
 
-4 @9 the-feed-station | afternoon | none | packet on intake surface | the Jarvis channel's intake station — a fixed-point receipt location inside the Hook coverage radius
+4 @9 the-feed-station | afternoon | none | packet on intake surface | the Jarvis channel's intake station — a fixed-point receipt location inside the Hook coverage radius | sensory: enclosed-receipt-quiet
 
 5 @16 the-hook-ward | evening | none | water-point lit low, chandler-corner-adjacent | the ward at return-circuit pass: evening register, the water-point approach where the watcher-boy's station holds by habit
 

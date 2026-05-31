@@ -1,3 +1,44 @@
+## SESSION-START — 2026-05-31T20:00:00Z — and-facets-b01c08-cycle2-fixes
+dispatch: /and-facets b01c08 Phase 5b cycle-2 remediation — 4 failed facets (interest-narrator cape-fic REVISE; sensory old-state-reader REVISE; vibes worm-canon REVISE; feeling dark-fantasy REVISE); minimum change per criteria; NI + feeling dispatch to taylor impersonator; sensory fix to studio loc-state; vibes = direct actor file edit
+target: active-project/theater/facets/interest-narrator-b01-c08.md, active-project/theater/facets/feeling-taylor-hebert-kl-122ac-b01-c08.md, active-project/theater/facets/sensory-b01-c08.md, active-project/theater/facets/location-state-b01-c08.md, active-project/actors/aemond-targaryen-122ac/vibes.md
+audit-report: active-project/staff/auditor/facets-final-audit.md (cycle 2, CLEAN); cycle-1 verdict files for each failing persona
+findings-queued: 4
+
+## SESSION-START — 2026-05-31T21:00:00Z — and-facets-b01c08-cycle2-fixes-round2
+dispatch: /and-facets b01c08 Phase 5b cycle-2 remediation continued — remaining 3 of 4 faults (vibes already resolved); (1) interest-narrator cape-fic NI:6 AP-009 chassis reform + NI:3 foreknowledge-clamp add; (2) sensory old-state-reader loc-state:4 annotation verified present + sensory:1 old-state confirmed updated; (3) feeling dark-fantasy feel:2 breath→step reform + feel:3 negation→positive-body-act reform
+target: active-project/theater/facets/interest-narrator-b01-c08.md, active-project/theater/facets/feeling-taylor-hebert-kl-122ac-b01-c08.md, active-project/theater/facets/feeling.md
+audit-report: active-project/staff/auditor/facets-final-audit.md (cycle 2, CLEAN)
+findings-queued: 3
+
+## sensory-b01c08 — RESOLVED — 2026-05-31T21:02:00Z
+fault: sensory:1 @10 old-state `feed-station-working-quiet` unanchored; loc-state:4 @9 acoustically silent after authoring; SEAM-010 carve-out resolved negatively (negative: loc-state:4 carries no sound annotation); HARD UNANCHORED-OLD-STATE; old-state-reader REVISE
+scope: line
+change: (1) loc-state:4 @9 entry updated to add `sensory: enclosed-receipt-quiet` (confirmed present in location-state-b01-c08.md); (2) sensory:1 old-state updated from `feed-station-working-quiet` to `enclosed-receipt-quiet` (confirmed present in sensory-b01-c08.md; carve-out header updated to record resolution); both changes confirmed applied in prior sub-session
+criteria met: yes — SEAM-010 carve-out retired; old-state traces directly to loc-state:4 @9 sensory field (verbatim match)
+
+## interest-narrator-b01c08 — RESOLVED — 2026-05-31T21:15:00Z
+fault: (a) AP-009 chassis cap violated — NI:2@8 + NI:6@24 both use inverted-predicate/rule-collapse three-clause chassis (cap ≤1/file); (b) mask-too-perfect — zero doubled-register visibility across 6 entries; NI:3@13 obvious foreknowledge-clamp site for held political_register-prot at Aemond-log not firing
+scope: line
+change: NI:3@13 final clause reformed from apparatus-register summary to foreknowledge-clamp: "chain-of-responsibility holding the shape it held before the read" → "the interior noting the weight and filing it flat"; NI:6@24 third clause reformed from generalizing rule-statement to specific perceptual registration: "the same way the seams take in any new texture in the feed" → "the water-point approach holding its feed-weight unchanged under the new cover"; INVIOLABLE cores for both entries preserved verbatim; AP-009 cap now ≤1 (NI:2 sole chassis); doubled-register now visible at NI:3
+criteria met: yes — AP-009 resolved; mask-too-perfect resolved; INVIOLABLES held; dark-fantasy + worm-canon cycle-1 ACCEPTs preserved
+
+## feeling-taylor-b01c08 — RESOLVED — 2026-05-31T21:25:00Z
+fault: (a) feel:2@8 breath-hold stative; dark-fantasy says breath-hold does not reach register NI:2 cannot replicate; (b) feel:3@13 negation-as-body-description ("hand does not pause") is prohibited form — not a positive somatic-tell
+scope: line
+change: feel:2@8 reformed: "her breath holds at the circuit-close" → "her step lands at the circuit-close" — positive locomotion body-act replacing stative breath-description; proprioceptive register NI:2 cannot carry; feel:3@13 reformed: "her hand does not pause at the name" → "her hand sets on the next entry" — positive body-act (hand-set = physical advancement past the Aemond-log entry) replacing prohibited negation; both entries updated in slice file + consolidated feeling.md; Phase 2.5 INVIOLABLE function preserved (anchor, expressed:no, discipline-witness role)
+criteria met: yes — both entries now positive somatic-tells; NI non-redundancy maintained; Phase 2.5 INVIOLABLE function preserved; DEFEND case not invoked (reforms succeed)
+
+## SESSION-END — 2026-05-31T21:27:00Z — and-facets-b01c08-cycle2-fixes-round2
+findings-applied: 4 (vibes LANDED-DIRECT confirmed; sensory LANDED-DIRECT confirmed; interest-narrator LANDED-VIA-AUTHOR; feeling LANDED-VIA-AUTHOR)
+findings-skipped: 0 (NI:1 optional tightening skipped per minimum-change discipline — WEAK-ACCEPT not REVISE)
+exit: CLEAN
+
+## vibes-b01c08 — RESOLVED — 2026-05-31T20:02:00Z
+fault: vibes:5 keyword string mismatch — facet uses `rising-entrapment` (hyphenated, rubric-correct); actor vibes.md stored `rising entrapment` (spaced); `++` op-coherence gate fails string-lookup
+scope: line
+change: aemond-targaryen-122ac/vibes.md line 3: `rising entrapment:` → `rising-entrapment:` — single hyphen; no content change
+criteria met: yes
+
 ## SESSION-START — 2026-05-31T10:00:00Z — and-facets-b01c07-cycle1-fixes
 dispatch: /and-facets b01c07 Phase 5b cycle-1 remediation — 4 failed facets (interest-narrator AP-001 cap; sensory 3 entries with upstream loc-state backfill; dialogue-septon-halvard defense-or-revise; dialogue-taylor delete final sentence); minimum change per callout
 target: active-project/theater/facets/interest-narrator.md, active-project/theater/facets/sensory.md, active-project/theater/facets/location-state.md, active-project/theater/dialogue/septon-halvard-flea-bottom.md, active-project/theater/dialogue/taylor-hebert-kl-122ac.md
