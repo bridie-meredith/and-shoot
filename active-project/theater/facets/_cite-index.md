@@ -9,11 +9,11 @@ totals: 57 facet entries; 24/26 protolines decorated (92.3%)
 | cites/line | count |
 |------------|-------|
 | 0 (bare)   | 2 |
-| 1          | 13 |
-| 2          | 5 |
+| 1          | 14 |
+| 2          | 4 |
 | 4          | 2 |
-| 6          | 2 |
-| 7          | 1 |
+| 6          | 1 |
+| 7          | 2 |
 | 8          | 1 |
 
 ## Per-facet entries
@@ -22,13 +22,14 @@ totals: 57 facet entries; 24/26 protolines decorated (92.3%)
   loc-state:1 @1 back=Y co=[state:1]
   loc-state:2 @5 back=Y co=[state:1]
 
-### narrator (6 entries)
+### narrator (7 entries)
   narrator:1 @4 back=Y co=[vibes:1, vibes:2, vibes:3, vibes:4, vibes:5, wren-stitch-maker-flea-bottom-ward:1]
-  narrator:2 @8 back=Y co=[state:2, vibes:6, vibes:7, vibes:8, vibes:9]
+  narrator:2 @8 back=Y co=[narrator:7, state:2, vibes:6, vibes:7, vibes:8, vibes:9]
   narrator:3 @17 back=Y co=[mem:2, sensory:2, state:10]
   narrator:4 @20 back=Y co=[feel:1, sensory:3, vibes:12]
   narrator:5 @23 back=Y co=[state:3, state:14, vibes:13, vibes:14, vibes:15, vibes:16, vibes:17]
   narrator:6 @25 back=Y co=[state:4, state:16, vibes:18, vibes:19, vibes:20]
+  narrator:7 @8 back=Y co=[narrator:2, state:2, vibes:6, vibes:7, vibes:8, vibes:9]
 
 ### sensory (3 entries)
   sensory:1 @2 back=Y
@@ -43,7 +44,7 @@ totals: 57 facet entries; 24/26 protolines decorated (92.3%)
   state:5 @10 back=Y co=[vibes:10]
   state:6 @11 back=Y
   state:7 @14 back=Y
-  state:8 @15 back=Y co=[mem:1]
+  state:8 @15 back=Y
   state:9 @16 back=Y
   state:10 @17 back=Y co=[mem:2, narrator:3, sensory:2]
   state:11 @18 back=Y
@@ -54,13 +55,12 @@ totals: 57 facet entries; 24/26 protolines decorated (92.3%)
   state:16 @25 back=Y co=[narrator:6, state:4, vibes:18, vibes:19, vibes:20]
   state:17 @26 back=Y
   state:18 @5 back=N co=[loc-state:2, state:1]
-  state:19 @8 back=N co=[narrator:2, state:2, vibes:6, vibes:7, vibes:8, vibes:9]
+  state:19 @8 back=N co=[narrator:2, narrator:7, state:2, vibes:6, vibes:7, vibes:8, vibes:9]
   state:20 @23 back=N co=[narrator:5, state:3, state:14, vibes:13, vibes:14, vibes:15, vibes:16, vibes:17]
   state:21 @25 back=N co=[narrator:6, state:4, state:16, vibes:18, vibes:19, vibes:20]
   state:22 @3 back=N co=[feel:1, state:1]
 
-### mem (2 entries)
-  mem:1 @15 back=Y co=[state:8]
+### mem (1 entries)
   mem:2 @17 back=Y co=[narrator:3, sensory:2, state:10]
 
 ### feel (1 entries)
@@ -75,10 +75,10 @@ _(no entries)_
   vibes:3 @4 back=Y co=[narrator:1, vibes:1, vibes:2, vibes:4, vibes:5, wren-stitch-maker-flea-bottom-ward:1] lic-out=[proto:4, state-update:1]
   vibes:4 @4 back=Y co=[narrator:1, vibes:1, vibes:2, vibes:3, vibes:5, wren-stitch-maker-flea-bottom-ward:1] lic-out=[proto:1, proto:2, proto:4]
   vibes:5 @4 back=Y co=[narrator:1, vibes:1, vibes:2, vibes:3, vibes:4, wren-stitch-maker-flea-bottom-ward:1] lic-out=[proto:4, state-update:2]
-  vibes:6 @8 back=Y co=[narrator:2, state:2, vibes:7, vibes:8, vibes:9] lic-out=[state-update:2, proto:8]
-  vibes:7 @8 back=Y co=[narrator:2, state:2, vibes:6, vibes:8, vibes:9] lic-out=[state-update:2, proto:8]
-  vibes:8 @8 back=Y co=[narrator:2, state:2, vibes:6, vibes:7, vibes:9] lic-out=[state-update:2, proto:8]
-  vibes:9 @8 back=Y co=[narrator:2, state:2, vibes:6, vibes:7, vibes:8] lic-out=[state-update:2, proto:8]
+  vibes:6 @8 back=Y co=[narrator:2, narrator:7, state:2, vibes:7, vibes:8, vibes:9] lic-out=[state-update:2, proto:8]
+  vibes:7 @8 back=Y co=[narrator:2, narrator:7, state:2, vibes:6, vibes:8, vibes:9] lic-out=[state-update:2, proto:8]
+  vibes:8 @8 back=Y co=[narrator:2, narrator:7, state:2, vibes:6, vibes:7, vibes:9] lic-out=[state-update:2, proto:8]
+  vibes:9 @8 back=Y co=[narrator:2, narrator:7, state:2, vibes:6, vibes:7, vibes:8] lic-out=[state-update:2, proto:8]
   vibes:10 @- back=- lic-out=[proto:10, proto:11, proto:14]
   vibes:11 @- back=- lic-out=[proto:12, proto:15]
   vibes:12 @20 back=Y co=[feel:1, narrator:4, sensory:3] lic-out=[feeling:1, proto:20, state-update:3]
@@ -100,7 +100,7 @@ _(no entries)_
     `taylor-hebert-kl-122ac seals the jarvis-channel form`
 - **@4** (7): narrator:1, vibes:1, vibes:2, vibes:3, vibes:4, vibes:5, wren-stitch-maker-flea-bottom-ward:1
     `wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac`
-- **@8** (6): narrator:2, state:2, vibes:6, vibes:7, vibes:8, vibes:9
+- **@8** (7): narrator:2, narrator:7, state:2, vibes:6, vibes:7, vibes:8, vibes:9
     `taylor-hebert-kl-122ac blanks the contact-source field`
 - **@25** (6): narrator:6, state:4, state:16, vibes:18, vibes:19, vibes:20
     `taylor-hebert-kl-122ac opens the ward-coverage notes`
@@ -114,6 +114,7 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 - state:4 @9  `taylor-hebert-kl-122ac closes the coverage-notes entry`
 - state:6 @11  `taylor-hebert-kl-122ac opens the jarvis-channel message`
 - state:7 @14  `taylor-hebert-kl-122ac fills the jarvis-channel form`
+- state:8 @15  `taylor-hebert-kl-122ac lowers the jarvis-channel form`
 - state:9 @16  `taylor-hebert-kl-122ac opens the ledger-board`
 - state:11 @18  `taylor-hebert-kl-122ac writes the sera-coverage entry`
 - state:12 @21  `taylor-hebert-kl-122ac closes the ledger-board`
