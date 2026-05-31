@@ -76,7 +76,7 @@ entries:
     licensed_by: aliveness-reviewer
     airless_symptom: "argument's emotional close on a bare posture verb echoing @15; interiority present but no sensation; cap-blocked at both sensory and feel"
     status: satisfied
-    satisfied_by: sensory:4 @22 | thermal: sept-corner-stone-cold-underfoot -> cold-settled-through-standing-weight | Phase 4.6 Step 1 | 2026-05-31
+    satisfied_by: sensory:4 @22 | pressure: sept-corner-stone-firm -> heel-settles-cobble-edge | Phase 4.6 Step 1 (recast Phase 5b cycle-1 fixer: thermal cumulative-drift -> pressure discrete heel-settle, schema-valid modality, per disambiguation-pedant) | 2026-05-31
     # R2 re-check (Phase 4.5, 2026-05-31T02:48:55Z): STILL OPEN. Locked graph adds NO sensation to @22.
     # @22 carries narrator:6 + vibes only (confirmed per-facet list). NI:6 is rich COGNITION ("the feet had
     # begun to shift toward the lane and she steadies them instead") but it describes the choice — it is not

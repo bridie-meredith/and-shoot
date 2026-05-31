@@ -26,9 +26,9 @@ author: studio
 # - sensory:1 @12: exemption clause — 2nd entry needed to meet modality floor; sound+tactile pair
 # - sensory:2 @17: exemption clause — floor-entry; tactile modality; airless-span grounding anchor
 # - sensory:3 @16: licensed-grounding-exception: grd-001 — thermal; halvard exhale in held cold; cap-exempt
-# - sensory:4 @22: licensed-grounding-exception: grd-002 — proprioceptive; heel-settles-cobble-edge at steadying; cap-exempt; discrete event (heel-settle on @22 steadying action, not cumulative thermal drift)
+# - sensory:4 @22: licensed-grounding-exception: grd-002 — pressure; heel-settles-cobble-edge at steadying; cap-exempt; discrete event (heel-settle weight on @22 steadying action, not cumulative thermal drift). modality=pressure (schema-valid; weight/load sensation), distinct from sensory:2@17 tactile cobble-grip texture.
 
 1 @12 sound: halvard-pastoral-account-register -> halvard-direct-address # tag: up | old-state-anchor: loc-state:3@9
 2 @17 tactile: sept-corner-stone-firm -> sept-corner-cobble-grip # tag: up | old-state-anchor: loc-state:4@15
 3 @16 thermal: sept-corner-held-cold -> halvard-breath-in-cold-air # tag: spike | licensed-grounding-exception: grd-001
-4 @22 proprioceptive: sept-corner-stone-firm -> heel-settles-cobble-edge # tag: spike | licensed-grounding-exception: grd-002 | old-state-anchor: loc-state:4@15
+4 @22 pressure: sept-corner-stone-firm -> heel-settles-cobble-edge # tag: spike | licensed-grounding-exception: grd-002 | old-state-anchor: loc-state:4@15
