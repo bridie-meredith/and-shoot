@@ -3418,3 +3418,120 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0028
+
+```yaml
+id: PROP-0028
+created_at: 2026-05-31T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/write-b01c06-bone-gate-revise.md
+  source_verdict: "Phase 6 revise bone-gate PASS — 1 HARD FAULT-FORM-NON-ACTION-VERB on @20 'holds the stylus' (narrow-holds-license misread; resolved in-invocation to 'stills the hand')"
+target:
+  type: command
+  path: .claude/commands/and-write.md
+  section: "Phase 1 — Scene-decomposition, step 2 (verb-form SVO discipline)"
+change_type: modify
+rationale: |
+  The narrow `holds` license in schemas/bones.schema.md permits `holds` only when (1) the
+  object is a body part of the subject and the action is stillness-against-pressure, or (2) the
+  object is a physical object resisting external pressure. The schema supplies one deny-list
+  example: "taylor holds the ledger" (non-body-part physical object, not pressure-resisting).
+
+  Three chapters have now produced holds-license violations, each a different sub-type:
+
+  Occurrence 1 — b01c04: "the cooper's-yard workers hold the smallfolk-hours murmur"
+    Sub-type: group subject + abstract acoustic-register object.
+    Disposition: advisory flag (auditor accepted with annotation; not HARD-blocked).
+    Source: bones-b01c04-2026-05-27.md (prior re-audit new-flag-002).
+
+  Occurrence 2 — b01c07: "septon-halvard-flea-bottom holds the silence"
+    Sub-type: abstraction-as-object ("the silence" is the schema's own deny-list pattern
+    from the abstraction-as-object rule, but the author reached for `holds` instead of a
+    schema-clean form). HARD, caught at /and-review bones.
+    Source: bones-b01c07-fidelity-2026-05-30.md fault-003.
+
+  Occurrence 3 — b01c06 revise: "taylor-hebert-kl-122ac holds the stylus"
+    Sub-type: non-body-part physical object (parallel to the schema deny-list example
+    "taylor holds the ledger" — a stylus is the same class as a ledger). HARD, caught at
+    Phase 6, resolved in-invocation via auditor-specified recast ("stills the hand").
+    Source: active-project/staff/auditor/write-b01c06-bone-gate-revise.md fault-001.
+
+  Pattern: the screen-writer consistently over-extends the holds license beyond its two
+  licensed conditions. The schema provides the rule and one deny-list example. The Phase 1
+  SVO discipline brief does not supply authoring guidance on holds-license scope — the
+  screen-writer must derive the license from the schema at authoring time, and the derivation
+  is failing at recurrence-3.
+
+  The gate (Phase 6 for co-bonded bones; /and-review bones for the fidelity review) catches
+  correctly in all three cases. The gap is at the authoring brief: a Phase 1 note enumerating
+  both conditions explicitly and providing negative examples parallel to the schema deny-list
+  would prevent mis-derivation before the gate fires.
+
+  change_type: modify (not add — the SVO discipline section already exists; this adds a
+  named subsection to it); cost: S.
+evidence_refs:
+  - "active-project/staff/auditor/write-b01c06-bone-gate-revise.md — fault-001: FAULT-FORM-NON-ACTION-VERB on 'holds the stylus'; auditor named the two licensed conditions and the deny-list parallel; resolved in-invocation by recast to 'stills the hand'"
+  - "active-project/staff/reviews/bones-b01c07-fidelity-2026-05-30.md — fault-003 (line 96-109): 'septon-halvard-flea-bottom holds the silence' HARD; auditor cited the narrow holds license and the deny-list example 'the yard holds the silence'"
+  - "active-project/staff/reviews/bones-b01c04-2026-05-27.md — flag-001 (lines 819-826): 'workers hold the smallfolk-hours murmur' — extended holds license to group-subject + acoustic-register; prior auditor accepted as advisory (not HARD); /and-review critic flagged the extension as beyond the narrow body-part DO precedent"
+  - "schemas/bones.schema.md line 105 — narrow holds license definition and deny-list examples: 'taylor holds the ledger', 'the yard holds the silence', 'the wards hold their positions'"
+  - "staff/admin/decisions.md — DEC-0057 (process-critic dispatch; holds-license pattern confirmed at recurrence-3)"
+recurrence_count: 3
+proposed_diff: |
+  In .claude/commands/and-write.md, Phase 1, step 2 (SVO verb-form discipline), in the section
+  that describes the FAULT-FORM-NON-ACTION-VERB classification and recast guidance, add a
+  named subsection after the existing stative-verb coverage:
+
+  ---
+
+  **`holds` — narrow license, high-failure verb.**
+
+  `holds` is licensed only under two exhaustive conditions (from schemas/bones.schema.md):
+
+    Condition 1: The object is a body part OF the subject AND the action is
+      stillness-against-pressure. Licensed: `taylor holds the feet` (feet are Taylor's body
+      part; stillness against the pull to run). `mira holds the eyes` (eyes are Mira's body
+      part; stillness-against-closing).
+
+    Condition 2: The object is a physical object resisting external pressure. Licensed:
+      `the door holds` (door resisting force applied to it).
+
+  The license is exhaustive — there is no third condition.
+
+  Negative examples (verify your SVO before authoring — if it matches any form below, recast):
+    `taylor holds the ledger` — non-body-part physical object, not resisting pressure. FAULTS.
+    `taylor holds the stylus` — parallel to ledger (writing implement, same class). FAULTS.
+    `the yard holds the silence` — abstraction-as-object. FAULTS.
+    `the workers hold the murmur` — group subject + abstract object. FAULTS.
+    `taylor holds the position` — stative holding, not physical stillness-against-pressure. FAULTS.
+
+  Recast path when `holds` fails the license:
+    - Subject's own physical stillness → bare intransitive or body-part form:
+        `taylor stills`, `taylor stills the hand`, `taylor freezes`.
+    - Instrument laid down / at rest → transitive resting form:
+        `taylor rests the stylus`.
+    - Sustained grip as action-setup → use the action verb directly
+        (the bone should be the action, not the holding):
+        `taylor reads the ledger` not `taylor holds the ledger`.
+    - Sustained grip as load-bearing beat → use a transitive action verb:
+        `grips`, `clasps`, `clutches` (all pass FAULT-FORM without the holds license).
+
+  This guidance lives at Phase 1 because the recast must happen at bone-authoring time.
+  Phase 6 will catch any slip (FAULT-FORM-NON-ACTION-VERB), but authoring against a broken
+  SVO costs at minimum one fixer cycle. Author-time discrimination is cheaper.
+
+  ---
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
