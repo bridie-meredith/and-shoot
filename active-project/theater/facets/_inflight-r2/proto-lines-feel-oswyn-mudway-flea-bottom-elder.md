@@ -1,39 +1,36 @@
-# R2 in-flight delta — feeling-oswyn-mudway-flea-bottom-elder (b01-c08)
+# bones — b01c08
 
-facet: feeling
-character: oswyn-mudway-flea-bottom-elder
-episode: b01-c08
-cite_index_hash: cite-index-b01-c08-2026-05-31-37entries-58.3decoration
-generated: 2026-05-31
+episode: b01c08
+narrator: taylor-hebert-kl-122ac
+goal: Plant the courier face, activate the Aemond-adjacent pressure at low intensity, and stage the Oswyn-integration echo so that later Khepri-repetition accusations have been building in the reader's view long before Taylor's.
+cast: taylor-hebert-kl-122ac, oswyn-mudway-flea-bottom-elder, wenna-cobb, corwick
+locations: the-hook-ward, the-lane-junction-rushwick-margin, the-chandler-corner, the-water-point, the-lane-mouth, the-rushwick, the-feed-station
+prior_episode: b01c07
+aggregate_range: 1-24
 
-## R1 → R2 delta
+1 taylor-hebert-kl-122ac enters the lane-junction-rushwick-margin
+2 the insect-feed returns the chandler-corner
+3 the watcher-boy faces the water-point
+4 the basket-woman faces the lane-mouth
+5 the apprentice drops the nailing-rate
+6 taylor-hebert-kl-122ac traces the watcher-sightlines
+7 the insect-feed delivers the gap-corridors
+8 the circuit closes the feed-pass
 
-| id | anchor | R1 status | R2 verdict | notes |
-|----|--------|-----------|------------|-------|
-| feel-oswyn:1 | @20 | KEEP | KEEP | held; ward-fixture body-set; hard-fence-honored (no registered-significance) |
+9 the jarvis-packet arrives at the feed-station
+10 taylor-hebert-kl-122ac breaks the jarvis-seal
+11 the handler-rotation names the chain-of-responsibility
+12 the feed-geometry meets the coverage-gap
+13 taylor-hebert-kl-122ac logs the aemond-name
+14 taylor-hebert-kl-122ac reads the bread-price report
+15 the feed-edge acquires the new geometry
 
-## Adds considered
-
-| candidate | anchor | verdict | reason |
-|-----------|--------|---------|--------|
-| feel-oswyn:add | @18 | REFUSE | feed-placement beat; no in-character interior available to Oswyn at his own placement-into-feed; would manufacture interior at registration event |
-
-## Proto-line citation deltas (cite-index input)
-
-No changes. feel-oswyn:1 @20 retains its existing co-citations [oswyn-mudway-flea-bottom-elder:1, vibes:4]. No additions, no deletions.
-
-## Counts
-
-- KEEPs: 1
-- DELETEs: 0
-- REVISEs: 0
-- ADDs: 0
-- CAP-REFUSALs: 1
-
-## Sparsity post-R2
-
-1 entry across 24 bones — chapter total. Per-character per-scene cap (≤1) honored (s03 uses 1/1; Oswyn does not appear in s01 or s02). Within per-episode 2–5% sparsity target as one component of the chapter's full feeling-facet aggregate.
-
-## Frequency-band INVIOLABLES honored
-
-Phase 2.5 named feel-oswyn:1 @20 as load-bearing for the unknowing-node payload (twelve-entry INVIOLABLES list, item #11). Preserved. VOICE-FIXABLE flag at @20-@21 noted as render-side concern (carried forward to /and-stitch Phase 4 PROP-0022 voice-embodiment discipline, NOT acted on at R2 — this layer judges facet-graph content, not prose render).
+16 taylor-hebert-kl-122ac enters the hook-ward
+17 the insect-feed returns wenna-cobb
+18 the insect-feed places oswyn-mudway-flea-bottom-elder
+19 the insect-feed places corwick
+20 oswyn-mudway-flea-bottom-elder speaks to taylor-hebert-kl-122ac [oswyn-mudway-flea-bottom-elder:1] [feel:1]
+21 the body-map attaches the corwick-name
+22 taylor-hebert-kl-122ac completes the circuit
+23 the watcher-boy-position falls from the water-point
+24 the insect-feed fills the water-point-geometry
