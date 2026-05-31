@@ -4641,7 +4641,7 @@ books:
           fidelity: PASS   # the 5 rev2 deletes did NOT hollow the spine; it lives in dialogue bones 12/19/21.
           follow_check: PASS-WITH-NOTES   # PROP-0020: central event + scene hand-offs recoverable; gap context-addable (NI facet), NOT bone-structural → not a FOLLOW-FAIL
           aliveness: BONES-AIRLESS-RISK   # PROP-0022 (advisory): span bones 13-22; interiority routed off-page, one sensory anchor (bone 17) across ten bones. Forewarns /and-facets Phase 2.5 grounding-ledger + /and-stitch Phase 4 voice-embodiment.
-          bones_file_mtime_at_review: 1780178686   # mtime updated post-recast; record at re-fire
+          bones_file_mtime_at_review: 1780181317   # post-recast mtime; re-fire reviewed the recast bones file
           stale_since: null
           gate_outcome: CLEARS_FACETS   # re-fire PASS-WITH-NOTES, follow_check not FOLLOW-FAIL → /and-facets b01c07 cleared to dispatch
           forward_notes:   # carry to /and-facets Phase 2.5 + NI author brief
