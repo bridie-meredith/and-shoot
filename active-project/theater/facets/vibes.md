@@ -67,6 +67,6 @@ author: showrunner
 
 18 @25 actor:taylor-hebert-kl-122ac ++ cold-utilitarian interiority: [two-records-now-sit-complete, the-four-names-in-the-channel-the-blank-in-the-notes, ledger-running-reads-both-without-commentary, contrast-in-the-record-not-the-interiority] | licensed-by: state-update:4, proto:25, proto:26
 
-19 @25 actor:wren-stitch-maker-flea-bottom-ward ++ tragic-causal: [absent-name-as-the-sole-record, the-blank-sits-opposite-four-dispatched-names, free-movement-as-cost-being-paid-now, the-calculus-will-come-for-the-un-priced-item] | licensed-by: state-update:4, proto:25, memory:1
+19 @25 actor:wren-stitch-maker-flea-bottom-ward ++ tragic-causal: [absent-name-as-the-sole-record, the-blank-sits-opposite-four-dispatched-names, free-movement-as-cost-being-paid-now, the-calculus-will-come-for-the-un-priced-item] | licensed-by: state-update:4, proto:25
 
 20 @25 actor:wren-stitch-maker-flea-bottom-ward ++ rising entrapment: [inside-the-protection-without-knowing-the-terms, kept-blank-as-the-shape-of-the-trap, d14-routing-gap-completes] | licensed-by: state-update:4, proto:25

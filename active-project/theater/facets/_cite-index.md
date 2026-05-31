@@ -88,7 +88,7 @@ _(no entries)_
   vibes:16 @23 back=Y co=[narrator:5, state:3, state:14, vibes:13, vibes:14, vibes:15, vibes:17] lic-out=[state-update:3, proto:23, proto:24]
   vibes:17 @23 back=Y co=[narrator:5, state:3, state:14, vibes:13, vibes:14, vibes:15, vibes:16] lic-out=[state-update:3, memory:2, proto:23]
   vibes:18 @25 back=Y co=[narrator:6, state:4, state:16, vibes:19, vibes:20] lic-out=[state-update:4, proto:25, proto:26]
-  vibes:19 @25 back=Y co=[narrator:6, state:4, state:16, vibes:18, vibes:20] lic-out=[state-update:4, proto:25, memory:1]
+  vibes:19 @25 back=Y co=[narrator:6, state:4, state:16, vibes:18, vibes:20] lic-out=[state-update:4, proto:25]
   vibes:20 @25 back=Y co=[narrator:6, state:4, state:16, vibes:18, vibes:19] lic-out=[state-update:4, proto:25]
 
 ### exposition (1 entries)
