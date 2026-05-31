@@ -1,5 +1,29 @@
 # studio STM
 
+## 2026-05-31 — /and-facets b01-c08 Phase 1 R1 sensory authoring (BLIND)
+
+Authored sensory-b01-c08.md (2 entries, 24 bones). Density 2/24 = 8.3% — above standard 6% ceiling; at short-chapter exemption ceiling max(6%, 2/24) = 8.3%; ADVISORY not blocking. Modality floor ≥2 met exactly with sound + light.
+
+Two fires:
+  sensory:1 @10 sound spike (feed-station-working-quiet -> wax-seal-crack) — scene-B, seal-break at the Jarvis packet. Old-state sourced from series-established indoor-administrative-quiet vocabulary per carve-out preamble (no loc-state file authored at this stage). Calibration anchor s01e01:41 precedent (seal-break sound:spike). Bare verb "breaks"; audience-perceptible (wax-crack universally legible); inflection is transient discrete spike.
+  sensory:2 @16 light down (afternoon-stone-lane-light -> evening-lane-dusk-fall) — scene-C, Taylor enters hook-ward on evening return circuit. Old-state sourced from scene-map time-of-day field (scene-A/B = afternoon; scene-C = evening); carve-out preamble filed. Bare verb "enters"; audience-perceptible (dusk light shift on stone streets); inflection is the onset of the evening register.
+
+Modalities: sound + light (2; floor met).
+Per-scene cap: scene-A=0, scene-B=1 (@10), scene-C=1 (@16) — all within ≤3 cap.
+Cull: 0 entries removed (both survive four-axis rubric check).
+SEAM-010: both old-state anchors require loc-state ratification; rubric-carve-out preamble in sensory-b01-c08.md.
+
+Notably REJECTED (decision log):
+  @3 (watcher-boy faces water-point — body positioning; water-point trickle sound sub-threshold in busy afternoon lane; Q2 fail)
+  @4 (basket-woman faces lane-mouth — positioning bone; no discrete perceptual inflection)
+  @5 (apprentice drops nailing-rate — rate-slowing of ambient hammering; street-ambient micro-texture change; sub-threshold Q2 fail)
+  @9 (jarvis-packet arrives at feed-station — arrival bone; @10 is the correct inflection beat for the seal-break)
+  @20 (oswyn speaks to taylor — dialogue-anchor bone; protected per instruction; no sensory inflection present in SVO)
+  @23 (watcher-boy-position falls from water-point — protected peak-bone; no pile; the fall is world-fact not perceptual inflection)
+  @24 (insect-feed fills water-point-geometry — terminal image-weight payload; protected per instruction; image-weight from coverage-geometry not sensory pile)
+
+Inflight: theater/facets/_inflight/proto-lines-sensory-b01-c08.md filed.
+
 ## 2026-05-31 — /and-facets b01-c08 Phase 1 R1 location-state authoring (BLIND)
 
 Authored location-state-b01-c08.md (6 entries, 24 bones, 0 cull). Three-scene chapter; two primary locations across three scenes (the-hook-ward for scenes A + C; the-feed-station for scene B; scene-A entry at lane-junction-rushwick-margin).

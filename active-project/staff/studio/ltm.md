@@ -3,6 +3,23 @@
 
 ---
 
+## 2026-05-31 — b01c08 sensory authored at /and-facets Phase 1 R1 (BLIND)
+
+Chapter b01c08: 24 bones, 3 scenes. Two primary locations: the-hook-ward (scenes A + C) and the-feed-station (scene B).
+2 sensory entries authored. 0 entries culled. Authoring in BLIND mode (no other facets consulted).
+Density 2/24 = 8.3% — at short-chapter exemption ceiling max(6%, 8.3%); ADVISORY not blocking.
+Modalities: sound + light (2; ≥2 floor met exactly).
+
+Entry log:
+  sensory:1 @10 — sound spike; scene-B seal-break; feed-station-working-quiet -> wax-seal-crack. Old-state from series-established indoor-administrative-quiet vocabulary; carve-out preamble filed (SEAM-010). Calibration anchor precedent: s01e01:41 seal-break (sound:spike).
+  sensory:2 @16 — light down; scene-C entry at evening; afternoon-stone-lane-light -> evening-lane-dusk-fall. Old-state from scene-map time-of-day afternoon->evening transition; carve-out preamble filed (SEAM-010).
+
+Cull log: 0 entries removed. All candidates rejected on rubric grounds (watcher-positions @3-@5 sub-threshold magnitude Q2; @9 pre-inflection arrival bone; @20/@23/@24 protected per instruction).
+Per-scene cap: scene-A=0, scene-B=1, scene-C=1 — all under ≤3 cap.
+SEAM-010: both old-state anchors require ratification by loc-state fork; rubric-carve-out preamble in sensory-b01-c08.md. If loc-state contradicts either baseline, revise or delete the affected entry.
+
+---
+
 ## 2026-05-31 — b01c08 location-state authored at /and-facets Phase 1 R1 (BLIND)
 
 Chapter b01c08: 24 bones, 3 scenes. Two primary locations: the-hook-ward (scenes A + C) and the-feed-station (scene B). Scene-A entry point is the-lane-junction-rushwick-margin.
