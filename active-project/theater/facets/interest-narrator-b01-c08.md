@@ -10,7 +10,9 @@ density: 25%
 r2-keeps: 6
 r2-deletes: 0
 r2-adds: 0
+r2-revises: 0
 inviolables-status: all-keep
+cite_index_hash: sha256:b01c08-37e-14d24-r2-narrator-20260531
 ---
 
 1 @6 the sightlines resolve as a coverage already in place; her own overlay slots in above it, geometric not contested

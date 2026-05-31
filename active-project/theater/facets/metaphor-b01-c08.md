@@ -48,8 +48,16 @@ cite_index_hash: 2026-05-31-b01c08-v1
 #       fabricating an anchor the locked graph does not carry.
 #   REFUSED: AP3 + functional-register-fail + AP1-no-license.
 #
+# R2-JUDGE CONFIRMATION: AP3 stands on full-graph read. NI:1@6 content is
+#   "the sightlines resolve as a coverage already in place; her own overlay
+#   slots in above it, geometric not contested" — that IS the figurative
+#   register the integration delivers. No metaphor entry can add a figure
+#   here without doubling NI:1. AP1 confirmed: locked graph shows no memory
+#   or feeling anchor at @6 (mem:1 at @8; feel:1 at @20; feel:2 at @8
+#   back=N; feel:3 at @13 back=N — none at @6). All three grounds hold.
+#
 # @8 (the circuit closes the feed-pass — peak-bone; held-discipline enacted):
-#   mem:1@8 + feel:2@8 present — double-anchor available, the strongest
+#   mem:1@8 + feel:1@8 present — double-anchor available, the strongest
 #   licensing form the rubric names. But:
 #   (1) AP3 NI-redundancy: NI:2@8 is INVIOLABLE (context-follow review) and
 #       already carries the no-accounting-entry figure with specificity —
@@ -66,6 +74,14 @@ cite_index_hash: 2026-05-31-b01c08-v1
 #   independently. The anchor does not rescue an entry whose content is already
 #   occupied by NI.
 #   REFUSED: AP3 + Q1-fail + protected-pattern violation.
+#
+# R2-JUDGE CONFIRMATION: The locked graph confirms mem:1@8 back=Y and
+#   feel:1@8 back=Y — the double-anchor is real. R2 read the question of
+#   what a metaphor here could contribute beyond NI:2's "nothing files;
+#   the geometry has updated without a corresponding entry in any column she
+#   keeps." That sentence already exhausts the figurative territory at @8:
+#   the non-filing IS the figure, and NI:2 renders it with full specificity.
+#   Q1 fails regardless of anchor strength. No add proposed.
 #
 # @24 (the insect-feed fills the water-point-geometry — chapter terminal image;
 #   quiet-peak; held-axis scene):
@@ -89,6 +105,13 @@ cite_index_hash: 2026-05-31-b01c08-v1
 #   Four independent refusal grounds. The mem:2 anchor is insufficient to rescue.
 #   REFUSED: AP7 + AP2 + AP3 + protected-pattern.
 #
+# R2-JUDGE CONFIRMATION: Full-graph read confirms all four grounds. NI:6@24's
+#   seam/texture figure ("smooth, the same way the seams take in any new
+#   texture in the feed") is the metaphor-register content available at @24;
+#   a metaphor entry at this bone would redeploy the seam-or-texture figure
+#   that NI:6 already carries as INVIOLABLE content. mem:2@24 anchor is
+#   real but AP7 + AP2 + AP3 all independently close the window.
+#
 # @13 (taylor logs the aemond-name — peak-bone in flat-tense scene; held):
 #   feel:3@13 present (back=N). AP7 default-refuse: quiet-peak in held scene;
 #   the flat-tense logistics discipline IS the scene-B substance. Held-register
@@ -99,6 +122,12 @@ cite_index_hash: 2026-05-31-b01c08-v1
 #   upstream backing citation; it is not confirmed as an audience-meaningful
 #   anchor per the Q2 transitive gate.
 #   REFUSED: AP7 + register-integrity + Q2-anchor-not-confirmed.
+#
+# R2-JUDGE CONFIRMATION: feel:3@13 back=N confirmed in cite-index. The
+#   Q2 transitive gate fails on its own. Beyond that: vibes:3@13 frames
+#   "logistics-register-held / resentment-below-register" as the scene-B
+#   vibe-set; a metaphor at @13 is structurally opposed to the substance
+#   design of the scene. AP7 confirmed. Three grounds hold independently.
 #
 # @20 (oswyn speaks to taylor — dialogue-anchor; held-axis scene):
 #   feel:1@20 present (back=Y) — the sole back-confirmed feeling anchor in the
@@ -117,6 +146,23 @@ cite_index_hash: 2026-05-31-b01c08-v1
 #   the central-event muffle risk produce three independent refusal grounds.
 #   REFUSED: AP7 + AP12 + central-event-muffle-risk.
 #
+# R2-JUDGE CONFIRMATION: feel:1@20 back=Y is confirmed — the only genuine
+#   anchor in the chapter. Cold-read of feel:1's content (Oswyn keeps his
+#   weight on the back foot past the last word, partial expressed) alongside
+#   the dialogue card (three sentences, clipped, ward-cadence: "Corwick. Runs
+#   errands for someone above his station. Up the hill twice this month."):
+#   the feeling entry already licenses Oswyn's body-tell at the register the
+#   bone can carry. A metaphor here would need to be editor-frame third-person
+#   and draw on feel:1 as anchor — but AP12 limits non-POV metaphor to what
+#   "the figure is editor-frame (third-person external observation) and the
+#   upstream feeling-flag content licenses it." What editor-frame metaphor
+#   could feel:1's back-foot-weight-past-the-last-word license? The only
+#   available comparison is between Oswyn's body-tell and something else —
+#   and that comparison would be the editor imposing figuration on non-POV
+#   behavior-card content without sufficient licensing. The at-rest proto-line
+#   does not call for it; the motive would be niche-filling (G2 dishonest).
+#   AP7 + AP12 + G2-dishonest confirmed. Three grounds hold.
+#
 # Bare proto-lines (@2, @5, @7, @11, @12, @14, @17, @18, @19, @22):
 #   None carry memory or feeling fires in the locked graph. AP1 applies
 #   universally. At-rest cold-read of each line — @2 the feed returns the
@@ -129,6 +175,17 @@ cite_index_hash: 2026-05-31-b01c08-v1
 #   movement on any held-axis bone in a held-axis chapter (aside from @6
 #   already evaluated above).
 #   REFUSED: AP1 + AP7 (G2-dishonest-motive on any prospective add).
+#
+# R2-JUDGE CONFIRMATION: G2 gate applied to each bare line. @5 "the
+#   apprentice drops the nailing-rate" is the most figuratively suggestive
+#   bare line (the drop-on-stranger read; auditory texture). Even here,
+#   reading the proto-line cold: the nailing-rate drop is a sound-anchor
+#   (the apprentice stops nailing when a stranger arrives); a metaphor entry
+#   would need to compare the rate-drop to something. No memory or feeling
+#   anchor licenses that comparison; the at-rest reading doesn't want one —
+#   the detail does its work as a behavioral fact. AP1 closes it. Same logic
+#   applies with less force to @2, @7, @11, @12, @14, @17, @18, @19, @22.
+#   No bare line passes G2 honest-motive test.
 #
 # R2 ACCEPT-REFUSE RATIONALE:
 #   The R1 zero-entry default is correct discipline confirmed by the full graph.
