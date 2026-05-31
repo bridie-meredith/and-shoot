@@ -41,6 +41,12 @@ entries:
     airless_symptom: "bare posture/breath verb; zero body or sensory anchor; apparatus-only between two grounded beats"
     status: open
     satisfied_by: null
+    # R2 re-check (Phase 4.5, 2026-05-31T02:48:55Z): STILL OPEN. Locked graph adds NO body to @16.
+    # The Phase 2.5 hint that feel:1@20 (Halvard's stilled hands) is "adjacent" is geometrically wrong —
+    # @20 is FOUR bones downstream and a different beat (the absorb, not the not-pressing exhale). Nearest
+    # fire is sensory:2@17, one bone after, but that is TAYLOR's tactile floor-entry, not Halvard's breath.
+    # Cite-index "bare protolines" list confirms @16 fires ZERO facets post-R2. Phase 4.6 MUST author the
+    # sensory grounding add. GROUNDING-REQUIRED stands.
 
   - id: grd-002
     anchor: 22
@@ -66,6 +72,13 @@ entries:
     airless_symptom: "argument's emotional close on a bare posture verb echoing @15; interiority present but no sensation; cap-blocked at both sensory and feel"
     status: open
     satisfied_by: null
+    # R2 re-check (Phase 4.5, 2026-05-31T02:48:55Z): STILL OPEN. Locked graph adds NO sensation to @22.
+    # @22 carries narrator:6 + vibes only (confirmed per-facet list). NI:6 is rich COGNITION ("the feet had
+    # begun to shift toward the lane and she steadies them instead") but it describes the choice — it is not
+    # a tactile/proprioceptive ANCHOR, and its language sits on the same bare posture vocabulary as @15
+    # ("plants" -> "steadies"), which is exactly the flat-echo this entry names. feel correctly refused @22
+    # by default (NI-owned; STRICT cap); sensory at ceiling. Phase 4.6 MUST author the sensory grounding add,
+    # DISTINCT from sensory:2@17's cobble-grip. GROUNDING-REQUIRED stands.
 
 # Beats CONSIDERED and NOT opened (already breathe / VOICE-FIXABLE at stitch, not a grounding add):
 #   @13 recognition  -> NI:1@13 + vibes:1 (cognition rich; bare "still" is VOICE-FIXABLE at stitch, not airless-for-lack-of-material)

@@ -4614,6 +4614,13 @@ books:
                 gate_verdict: {bonefide: true, flat: false}
 
       - slug: b01c07
+        context_followability:
+          completeness_verdict: FOLLOWABLE   # Phase 4.5: NI:1@13 why-she-stays survived R2 -> unconditionally CLOSED; no new FOLLOW-GAP
+          readability_verdict: AIRLESS-HOLE  # Phase 4.5: grd-001@16 + grd-002@22 still airless post-R2 -> Phase 4.6 fires
+          report_path: active-project/staff/reviews/context-follow-r2-b01-c07-20260531T024855Z.md
+          reviewed_at: 2026-05-31
+          context_ledger_open: 0
+          grounding_ledger_open: 2   # grd-001@16, grd-002@22
         status: faceted-r2   # /and-facets b01c07 Phase 4 merge+consolidate clean (R2: 1 DELETE mem:1@6, rest KEEP); scene-map 4d PASS; was faceted-r1 after Phase 2 (47 facet entries, 84% decorated); was bones-written after /and-write COMPLETE (2026-05-30): Phase 6 bone-gate PASS on rev2 (after 3 attempts; DEC-0051/0052); Phase 7 emit done
         bones_file: theater/bones/b01-c07.md
         bones_count: 25
