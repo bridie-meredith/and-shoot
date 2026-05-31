@@ -8,3 +8,4 @@ author: taylor-hebert-kl-122ac
 4 @20 the four names on the one side, the coverage they bought on the other, both already weighed; the stillness is only the hand catching up to a verdict the count reached three entries back
 5 @23 the watch-cost is paid the instant the seal sets; nothing on the form will come back, and a clean accounting is what the breach looks like from inside the discipline
 6 @25 the dispatched four against the field she left blank — the same hand, two ledgers, and only one of them will ever balance
+7 @8 the notes are hers, not the channel's; what stays in this column never crosses to the courier, and the name kept out of the column is a name the line cannot carry
