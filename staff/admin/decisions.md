@@ -3584,3 +3584,79 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0062 | 2026-05-31 | SLOW (user-proxy)
+
+question: |
+  /and-substance chapter b01c09 Phase 5.5 CHUNK-CLASS-B disposition. Summary maps to goal (Q6 confirmed).
+  Strict-CONTINUE (Q7, no charity) = No. Options: (R) revise chunk, (P) proceed-with-risk-recorded,
+  (S) substance-contract revision.
+
+context: |
+  b01c09 is a deliberately quiet "rising" omission-chapter (ch9/18; prohibition dissolves from inside —
+  book drama line ~1602). All contextful reviewers PASSED: audience 3-of-3 SUBSTANCE-FELT (no HARD);
+  dramatist ACCEPT (rise-peak-fall, s03 thesis-image legitimate); auditor CLEAR (0 HARD,
+  cost-ledger + thematic-axis clean). Cold-reader's confusions fall into two classes:
+  (A) prior-context dependencies — insect-feed/Taylor/Wren, Jarvis/Otto alias, Rushwick/Dragonpit
+      proper nouns, lower-gate faction, "color accrues" metaphor, feed-record architecture — all
+      resolved for a real reader by c01-c08.
+  (B) Structural design complaints — "three instances of one behavior, not a chain"; "no motive for
+      withheld" — the deliberate opacity IS the chapter's substance (omission-chapter thesis: Taylor
+      holds two observations private; motive not named on the narrative surface by design).
+  Neither class is an in-chunk cause-chain hole that (R) could cheaply fix without damaging the chapter's
+  deliberate opacity or inserting the anti-exposition violation the project prohibits.
+  Precedent: DEC-0060 (b01c08 CHUNK-CLASS-B → P, exact same failure mode — apparatus-vocabulary
+  plus prior-context inaccessibility to a zero-context reader; dramatist ACCEPT explicitly defends
+  staging function in both cases).
+
+options: |
+  P: Proceed-with-risk-recorded. Class B default. Record cold_read_risk_carry for /and-stitch Phase 9.
+  R: Revise chunk. Cost: 1 screen-writer + 5 reviewer re-dispatches. Risk: forces motive onto the
+     page, damaging deliberate opacity; inserts exposition the project anti-stance prohibits.
+  S: Substance-contract revision. Highest cost. Not warranted — 0 HARD from all informed reviewers.
+
+decision: P — Proceed with risk recorded.
+
+basis: ltm:DEC-0060 (same decision shape, same trade-off axis; omission-chapter apparatus-vocabulary
+  inaccessibility to zero-context reader; dramatist ACCEPT on staging function in both cases).
+  Confirmed: "WHY she withholds" is deliberate narrative opacity (not in-chunk hole); "color accrues"
+  is project metaphor vocabulary (not fixable by chunk revision without exposition violation).
+
+rationale: |
+  Both of the caller's flagged items are prior-context or design-inherent, not in-chunk defects.
+  "Why she withholds — no motive on the page" is the chapter's thesis: the reader sees the
+  override-pattern; Taylor does not name her motive; that's the deliberate opacity of an omission-
+  chapter. A (R) that spells out motive would damage the chapter's design and contradict the
+  dramatist's ACCEPT on the thesis-image. "Color accrues / resentment arrived with color" is
+  project-metaphor vocabulary established in c01-c08 — inaccessible to a zero-context reader by
+  construction, not by chunk deficiency. Both are the same class DEC-0060 dispositioned P.
+  DEC-0060 applied because: (1) summary maps to goal confirmed; (2) strict-NO is pure mid-series
+  context-noise and/or design-inherent structural complaint; (3) all informed reviewers PASS/ACCEPT;
+  (4) (R) would re-author a non-defective chunk to violate its own design mandate. All four conditions
+  hold identically for b01c09.
+
+cold_read_risk_carry: |
+  Items to arm downstream (context-weave track + /and-stitch Phase 9):
+  1. strict-CONTINUE=No — design-inherent: omission-chapter with apparatus vocabulary; known-risk,
+     not a delivery failure.
+  2. motive-opacity: Taylor's withheld motive absent from narrative surface — context-weave pass
+     should confirm implicit grounding exists OR license a minimal context-ledger add (not a bone
+     rewrite); stitch Phase 9 should read this as design-intentional if no ledger add is made.
+  3. "color" metaphor opacity — facet/context-weave pass should confirm c01-c08 anchor sufficient;
+     if not, context-ledger may license a grounding phrase (not a new bone).
+  4. Causality/payoff absent — cold-reader complaint is structurally correct AND structurally
+     intentional (three parallel acts, not a chain; dramatist ACCEPT "rise-peak-fall, s03 thesis-image
+     legitimate"); stitch Phase 9 should treat this as KNOWN-CLASS-B-DESIGN-INHERENT.
+
+trade-off: |
+  (P) carries known cold-read risk to /and-stitch Phase 9. This is Class B designed behavior.
+  Downstream context-weave + stitch Phase 8.5/9 arming is the correct repair layer for
+  prior-context-dependent and motive-opacity complaints. (R) would be a net regression: forces
+  content onto the page that the chapter's design explicitly withholds.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

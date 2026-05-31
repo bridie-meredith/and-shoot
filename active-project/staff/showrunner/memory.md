@@ -5294,7 +5294,7 @@ books:
               density_target: 0.55-0.7
 
       - slug: b01c09
-        status: planned
+        status: scened   # /and-substance chapter b01c09 (2026-05-31): 3 scenes decomposed. Phase 5: audience 3/3 SUBSTANCE-FELT all scenes; dramatist ACCEPT (rise-peak-fall, s03 thesis-image legitimate); auditor CLEAR (0 HARD, cost-ledger cl-d08/cl-d05 clean, thematic-axis clean). Phase 5.5 chunk-cold-read CHUNK-CLASS-B (summary maps to goal; strict-CONTINUE=no — prior-context/apparatus-vocab inaccessibility, same shape as c08/DEC-0060) → admin disposition P (DEC-0062); verdict SHIPPED-WITH-RISK-RECORDED. cl-d08 opened (+0.5 of +2; 1.5 remaining); cl-d05 continuation; cl-d06 2nd tranche +1.0 still deferred to c10/later (pl-2026-05-30-001). SW-1/2/3 audience watches carried to /and-write.
         chunk: |
           The relational_anchor_status transitions from rank 3 toward the d06-d08 threshold
           as Taylor's coverage map expands to include the lanes Wren moves through between
@@ -5318,13 +5318,13 @@ books:
             - axis: relational_anchor_status
               direction: up
               target_delta_magnitude: 0.5
-              cost_ledger_anchor: null
-              notes: "coverage extends to Wren's daily pattern; structural surveillance without ledger entry; anchor weight increases through omission-architecture"
+              cost_ledger_anchor: cl-d08   # resolved at /and-substance chapter Phase 3: cl-d08 first tranche (+0.5 of +2). Wren structurally present in coverage architecture without ledger entry = cl-d08 cost-clause match. cl-d06 2nd tranche (+1.0) NOT settled here (spoken/recognition event; deferred to c10/later per pl-2026-05-30-001).
+              notes: "coverage extends to Wren's daily pattern; structural surveillance without ledger entry; anchor weight increases through omission-architecture; cl-d08 opened (journey-required cl03b paid c03-c04)"
             - axis: political_register-prot
               direction: up
               target_delta_magnitude: 0.5
-              cost_ledger_anchor: null
-              notes: "courier's Dragonpit-gate meeting: Black-faction contact inferred; color accumulates on the feed content; minor advance"
+              cost_ledger_anchor: cl-d05   # resolved at /and-substance chapter Phase 3: cl-d05 continuation draw (resentment-register opened c05; courier-gate inference deepens feed-color; not a new opening)
+              notes: "courier's Dragonpit-gate meeting: Black-faction contact inferred; color accumulates on the feed content; minor advance; cl-d05 continuation"
           axes_held:
             - axis: moral_framework
               rationale: "no new breach logged; withholding from Jarvis and surveilling Wren are both unacknowledged in Taylor's ledger — framework holds by Taylor's own accounting"
@@ -5368,6 +5368,214 @@ books:
             - "Wren: surveilled without ledger entry; anchor weight at 3.5"
             - "courier-figure: body-map complete; pattern legible; withheld from Otto"
           target_chapter: b01c10
+        chunk_cold_read:
+          reviewed_at: 2026-05-31T00:00:00Z
+          verdict: SHIPPED-WITH-RISK-RECORDED
+          classification: B
+          recovered_summary: "A surveillance operative realizes her bug-feed now covers a stranger's whole daily routine plus a suspicious courier, and decides to tell her boss neither thing."
+          intended_goal: |
+            Show the audience that Taylor is now surveilling Wren as part of routine coverage
+            — and that she is not calling it that — and advance the courier-face so the d10
+            accounting has a body with a history.
+          summary_maps_to_goal: true   # surveillance-of-stranger's-routine + courier + double-withholding all present in summary
+          continue: yes                 # Q5 first-pass ("weak yes" — the creepy specificity is a real hook)
+          continue_strict: no           # Q7 re-answer post no-charity confusion list (AUTHORITATIVE)
+          report_path: active-project/staff/reviews/chunk-coldread-b01c09-2026-05-31.md
+          disposition: P                # proceed-with-risk-recorded (Class B default)
+          dispositioned_at: 2026-05-31T00:00:00Z
+          dispositioned_by: admin       # DEC-0062 (basis DEC-0060; same failure shape as c08)
+          cold_read_risk_carry: |
+            strict-CONTINUE=No — design-inherent: omission-chapter with apparatus vocabulary;
+            known-risk, not delivery failure. Same shape as c08/DEC-0060 (apparatus-vocabulary +
+            prior-context inaccessibility to a zero-context reader). The three contextful reviewers
+            (audience 3/3, dramatist, auditor) all passed clean; only the no-prior-context cold-read
+            dissented, and it explicitly attributed the confusions to "without the prior chapter."
+
+            Specific risk targets for /and-stitch Phase 8.5/9 (already-dispositioned known-risk):
+              - motive-opacity: Taylor's withheld-motive is absent from the narrative surface BY
+                DESIGN (it is the chapter's thesis — the override-pattern visible to the reader,
+                un-named by Taylor). context-weave pass should confirm implicit grounding exists or
+                license a minimal context-ledger add; Phase 9 reads as design-intentional if no
+                ledger add is made. Do NOT spell out the motive (would contradict dramatist ACCEPT
+                on the thesis-image + violate the moral_legibility hold).
+              - color-metaphor opacity ("resentment arrived with color / the color accrues"):
+                project metaphor vocabulary established c01-c08. facet context-weave should confirm
+                the c01-c08 anchor is sufficient; if not, context-ledger may license a grounding
+                phrase (not a new bone).
+              - causality-design-inherent: three parallel acts, not a chain. dramatist ACCEPT
+                rise-peak-fall with s03 the thesis-image synthesis. Phase 9 treats as
+                KNOWN-CLASS-B-DESIGN-INHERENT; the bar is CONTINUE=tentative-yes (not strict-yes,
+                which would require an event-shaped chapter the contract is not authoring).
+        scenes:
+          - slug: b01c09s01
+            seq: 1
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              Taylor runs the ward circuit south of the Hook into the lanes between Wren's
+              stitch-shop and the water-sellers' row. [event: ward-expansion-reaches-wren-lanes]
+              The boundary moved three weeks ago — a density-fill pushed by the ward expansion
+              Taylor requested after the Rushwick integration; the insect-feed has been threading
+              these lanes since then as routine, and the patterns have accumulated the way any
+              repeated-coverage pattern accumulates in the feed-record: not marked, not flagged,
+              simply there. [mechanism: coverage-boundary-extension-produces-accumulated-pattern]
+              Today Taylor runs the geometry with attention. What the feed has been returning
+              is a legible daily circuit: the stitch-shop opens before the water-sellers' first
+              bell; Wren moves between the two in a fixed window late morning; she stops at the
+              bread-seller's corner; she speaks to no one she does not already know; she is alone
+              between the shop-door and the water-sellers for one block, in a lane with one
+              entrance. [image: wren-daily-pattern-inside-coverage-grid] Taylor holds this in
+              her internal map — the time-block, the route, the lane geometry, when the entrance
+              is unobserved. [force: wren-pattern-noted-in-internal-map]
+              She does not hold it in the ward-coverage notes she routes to Jarvis. The
+              ward-coverage notes receive the expanded boundary geometry: the new lanes, the
+              feed-density, the coverage extension south to the water-sellers' junction.
+              [mechanism: deliverable-receives-geometry-not-pattern]
+              The lanes are there. The daily circuit inside the lanes is not.
+              [force: wren-anchor-structurally-present-without-ledger-entry]
+              The circuit continues. The feed runs the new ground the same way it runs the old.
+            scene_conflict:
+              protagonist_force: "Taylor's coverage-extension discipline — the ward expansion produced the feed geometry; running the circuit with attention is the operational default; she maps what the feed returns"
+              opposing_force: "the deliverable ledger as institutional substrate — a separate record Jarvis receives, which contains the new geometry but not the pattern that makes Wren's daily position legible; the substrate split is enacted without being named as a withholding act"
+              stakes_axis: relational_anchor_status
+            substance_delta:
+              axes_in_motion:
+                - axis: relational_anchor_status
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl-d08
+                  notes: |
+                    cl-d08 first tranche (+0.5 of +2 total). Wren is structurally present in the
+                    coverage architecture — her daily pattern is readable, her vulnerable lane-window
+                    mapped — without appearing in the deliverable ledger that Jarvis receives. Matches
+                    cl-d08 cost precisely ("[cost-bearer] structurally necessary to coverage map without
+                    appearing in the ledger"). Journey-required cost (cl03b: network build + witch-label
+                    exposure) was paid at c03-c04; c09 is the first moment the cl-d08 gain is enacted.
+                    cl-d06 deferred second tranche (+1.0) is NOT settled here: that tranche belongs to a
+                    spoken/recognition-register Wren event; remains open per pl-2026-05-30-001; targeting c10/later.
+              axes_held:
+                - axis: moral_framework
+                  rationale: "the internal-map/deliverable substrate split is not entered in Taylor's accounting as a withholding act; the ward-coverage notes receive everything they have always received; the omission is in what Taylor chooses not to route, which she does not name as an omission; holds at rank 0 by her accounting"
+                - axis: capability
+                  rationale: "coverage extension is incremental ward-boundary movement following an already-executed expansion; no new capability tier; holds at rank 5"
+                - axis: social_tether-prot-rise
+                  rationale: "coverage-architecture extension is operational; no patron-adjacent event; tether holds"
+                - axis: political_register-prot
+                  rationale: "no court-tier content; no courier-face material; resentment does not advance on ward-circuit geometry; holds at rank 3"
+                - axis: moral_legibility_to_self
+                  rationale: "the substrate split proceeds without Taylor framing it as a choice; the gap between what her internal map holds and what the deliverable receives is this scene's substance contribution without advancing the axis; legibility holds at rank 5"
+              density_target: 0.65-0.70
+          - slug: b01c09s02
+            seq: 2
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              The evening circuit runs the Dragonpit-adjacent margin — the outer lanes the
+              insect-feed has covered since the ward expansion pushed south toward the hill.
+              [event: dragonpit-margin-circuit-pass]
+              The feed returns the standard distribution for this hour: servants at the far
+              gate, a supply cart on the road below, two men at the stone-post beside the lower
+              gate's side exit. [mechanism: insect-feed-reads-baseline-body-distribution]
+              One of the two men is the courier. [event: courier-at-dragonpit-lower-gate]
+              Not Oswyn's errand. [force: courier-outside-oswyn-errand-context] Wrong ward,
+              wrong hour, wrong posture: the courier stands with his body angled toward the
+              other man in the geometry [mechanism: courier-body-posture-reads-as-report-delivery]
+              of a person who has delivered something and is waiting for the
+              acknowledgment. Taylor cannot see the second man's face from the feed-angle.
+              She cannot identify what changed hands, or whether anything did.
+              What the feed gives her: the courier's body at the lower gate at an hour when
+              Oswyn's errands do not run, in a posture the feed has taught her to read as
+              delivery-complete. [image: courier-in-report-posture-at-dragonpit-lower-gate]
+              The lower gate is not a Green-faction access point. It services a household
+              whose factional alignment she has held in the feed-record since c05, when the
+              resentment first arrived with color. [force: black-faction-contact-inferred-from-posture-and-location]
+              The color accrues now — not a conclusion, a direction.
+              [event: black-faction-contact-inferred]
+              The courier is running errands above his station. The direction of the errands
+              is not what was given when she filed his name.
+              Taylor logs the observation in her internal feed-record: time, location,
+              posture-class, inferred-pattern-type. [event: courier-dragonpit-observation-logged]
+              She does not route it to Jarvis. [force: courier-observation-withheld-from-jarvis-channel]
+              The Jarvis-deliverable will receive tomorrow morning's ward-summary.
+              The courier's lower-gate visit will not be in it. The observation is in the
+              feed-record. The feed-record is not the Jarvis channel.
+            scene_conflict:
+              protagonist_force: "Taylor's feed-reading discipline — the courier is a body in the coverage geometry; the observation is what the feed returns; logging it is the operational default; the withholding is enacted through substrate selection, not refusal"
+              opposing_force: "the Jarvis-channel's institutional expectation — the courier observation is loggable and routable; the operational-security logic of the substrate split keeps it out of the channel without Taylor naming the act of keeping it out"
+              stakes_axis: political_register-prot
+            substance_delta:
+              axes_in_motion:
+                - axis: political_register-prot
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl-d05
+                  notes: |
+                    cl-d05 continuation draw (resentment-register opened at c05; neutral-observant
+                    foreclosed from d05 forward). The courier at the Dragonpit lower gate adds a
+                    specific Black-faction contact inference — a direction, not yet a named conclusion —
+                    to the feed-color already present from c05. This is not a new opening; the resentment
+                    register is continuous. Minor advance within the cl-d05 monotonic cost-curve.
+                    Articulate contempt (cl06 register) is not reached here; this is the deepening color
+                    that feeds political_register-prot monotonically between d05 and d13.
+              axes_held:
+                - axis: relational_anchor_status
+                  rationale: "no Wren content in this scene; anchor holds at rank 3.5 after s01 advance"
+                - axis: moral_framework
+                  rationale: "withholding the courier observation is not entered in Taylor's ledger as a breach; the substrate split (feed-record vs Jarvis-channel) is the operational mechanism; Taylor does not name the gap as a withholding act; holds at rank 0 by her accounting"
+                - axis: capability
+                  rationale: "feed-reading and operational-note logging are maintenance-mode; no new deployment; holds at rank 5"
+                - axis: social_tether-prot-rise
+                  rationale: "courier observation is feed-content; no patron-adjacent event; tether holds"
+                - axis: moral_legibility_to_self
+                  rationale: "the withholding precedes Taylor naming it as withholding; the gap between the observation logged and the observation not routed is this scene's substance contribution without advancing the axis; legibility holds at rank 5"
+              density_target: 0.65-0.70
+          - slug: b01c09s03
+            seq: 3
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              Taylor closes the day's accounting at the feed-station. [event: daily-accounting-closes]
+              The Jarvis-channel packet: the ward-coverage geometry extension south of the Hook,
+              the new lane-density figures, two intercept fragments from the Rushwick margin.
+              [mechanism: jarvis-packet-content-assembled-from-deliverable-substrate]
+              She folds the packet and brings the seal down. [image: seal-down-on-packet-contents]
+              On the station surface: the ward-coverage notes on the left, the sealed packet on
+              the right. [force: deliverable-ledger-as-physical-object-on-station-surface]
+              The internal map is held differently. It is the feed-record in her own architecture —
+              the geometry she runs through the insects' return, the pattern-layer that does not
+              transfer through the Jarvis channel. [mechanism: internal-map-substrate-distinct-from-deliverable]
+              Wren's lane-circuit is there: time-block, route, the one-block stretch where the
+              entrance is unobserved. [force: wren-pattern-in-internal-map-not-deliverable]
+              The courier's lower-gate observation is there too — the same internal register,
+              the same feed-record she draws from every day; present in the architecture the
+              Jarvis packet is drawing from and simultaneously not drawing from.
+              [force: courier-observation-in-internal-map-not-deliverable]
+              [event: double-omission-structural-fact]
+              [image: two-substrates-one-station-surface]
+              She does not revisit either entry. The sealed packet holds what it holds.
+              The feed-record holds what it holds separately.
+              [mechanism: accounting-closes-with-split-substrate-intact]
+              The ward is quiet. The feed runs its circuits. The seal is dry.
+            scene_conflict:
+              protagonist_force: "Taylor's end-of-day accounting discipline — the packet is prepared; the coverage notes are filed; the accounting closes by her standard; each substrate has received what it receives"
+              opposing_force: "the split-substrate architecture itself — two records, one station surface, neither requiring Taylor to name the gap; the double-omission (Wren's pattern withheld, courier's observation withheld) is a structural fact before it is a volitional act"
+              stakes_axis: moral_legibility_to_self
+            substance_delta:
+              axes_in_motion: []
+              axes_held:
+                - axis: relational_anchor_status
+                  rationale: "Wren's pattern is in the internal map; the accounting-close adds no new weight to the anchor; holds at rank 3.5 after s01 advance"
+                - axis: political_register-prot
+                  rationale: "the courier observation sealed into the internal map; no new Black-faction inference beyond s02's advance; holds at rank 3.5 after s02 advance"
+                - axis: moral_framework
+                  rationale: "the accounting closes without an entry for either omission; the ledger does not open on the substrate split, the Wren-pattern omission, or the courier-withhold; holds at rank 0 by Taylor's accounting — the double-omission is structural fact, not a named breach"
+                - axis: capability
+                  rationale: "accounting-close is maintenance-mode; holds at rank 5"
+                - axis: social_tether-prot-rise
+                  rationale: "end-of-day operational beat; no patron-adjacent event; tether holds"
+                - axis: moral_legibility_to_self
+                  rationale: "the double-omission is enacted as structural fact — two substrates, one station surface, the seal down on what the packet contains; this is NOT a recognition event; Taylor does not name the shape of what she has done; the gap between what she has done and what she would have to admit is the scene's substance contribution WITHOUT advancing the axis; moral_legibility holds at rank 5 — this is the chapter's discipline"
+              density_target: 0.55-0.70
 
       - slug: b01c10
         status: planned

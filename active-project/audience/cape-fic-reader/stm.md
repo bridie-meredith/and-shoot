@@ -21,9 +21,9 @@ STM:
   - b01c20 social_tether-prot-collapse -3.5: soft finding stands; chunk-level load unchanged; carried to /and-write as flagged
 - soft_findings resolved:
   - b01c15 relational_anchor_status +1.5: RESOLVED — Vhagar-proximity backwash mechanism now explicitly named in chunk; thermal/pressure displacement degrades compound-eye coverage at gap-lane boundary; negative-shape perceptibility is now chunk-structural, not inferential; cl-d08 anchor present; double-duty concern discharged
-  - b01c07 social_tether-prot-rise: RESOLVED — YAML corrected to axes_in_motion; roll-up table corrected and annotated; discrepancy resolved
+  - b01c07 social_tether-prot-rise: RESOLVED — YAML corrected to axes_in_motion; roll-up correction note present at file end; discrepancy resolved
 - edit-cell spot checks:
-  - c07: social_tether-prot-rise in axes_in_motion confirmed; roll-up correction note present at file end; resolved
+  - c07: social_tether-prot-rise in axes_in_motion confirmed; roll-up correction note present; resolved
   - c10: position-prot-rise 1.0 confirmed (H6 fix); political_register-world anchor still reads cl-world-d07 (not cl-world-d04 per task summary); auditor-lane finding, not carried as audience hard finding
   - c13: dramatic_shape reads hinge; confirmed
   - c20: relational_anchor_status target_delta_magnitude 1.5 confirmed; roll-up note confirms correction
@@ -190,7 +190,7 @@ Handoff payoff: c03 ended with the hinge — asking for a day is engagement, ref
 
 ## Overall
 
-ACCEPT — five axes, three scenes, rising shape; all axis moves have their mechanisms, no limits bypassed without cost, the thesis operates as image rather than argument. Two prose-execution soft watches carried forward to /and-write: (1) position-prot-rise in s01 needs a distinct position-event at bones level to avoid riding the tether gain's coattails; (2) position-world in s03 needs a physical image at the report-handoff moment rather than a bracket-declaration to earn the world-axis move. Neither is a blocking finding at chunk stage.
+ACCEPT — five axes, three scenes, rising shape; all axis moves have their mechanisms, no limits bypassed without cost, the thesis operates as image rather than argument. Two prose-execution soft watches carried forward to /and-write: (1) position-prot-rise in s01 needs a distinct position-event at bones level to avoid riding the tether gain's coattails; (2) position-world in s03 needs a physical image at the report-handoff moment rather than a bracket-declaration to earn the world-axis move rather than asserts it. Neither is a blocking finding at chunk stage.
 
 ---
 
@@ -366,7 +366,6 @@ chapter: b01c05
 phase: write-bone-gate
 date: 2026-05-28
 scenes_reviewed: [b01c05s01, b01c05s02, b01c05s03]
----
 
 ## scene b01c05s01
 verdict: SUBSTANCE-FELT
@@ -374,7 +373,7 @@ The declared 0-movement / political_register-prot held reads as load-bearing dor
 
 ## scene b01c05s02
 verdict: SUBSTANCE-FELT
-The declared 0-movement / moral_framework held under load reads as earned discipline, not neutral observation. The bone sequence delivers the enforcement incident through geometry first (n03 figures enter side-alley, n04 figures close the alley-mouth = exit-blocking) before Taylor categorizes it — reader has the board-state before the categorization layer runs. The dark-fantasy gap-instrument bones (n06 effortful sound the feed cannot categorize / n07 courier finds feet) are the structural proof that moral_framework is genuinely held rather than untested: the gap between world-event and feed-instrument is present and the discipline routes around it. The worm-canon SOFT-WATCH requirement is honored — gait-signature recognition (n02), enforcement-read (n04), and filing (n08) are structurally distinct bones, not collapsed to a single logging assertion. The "it is what the feed reads. It is what the feed reads." echo in the chunk text is the rationalization-running-without-interrogation tell this reader needs to confirm moral_framework is discipline under load, not discipline at rest. No hot-button fires: Taylor does not know which faction directed the enforcement; she reports only what the feed physically returns. The stakes are correctly named at n05 (controlled containment, moral_framework held at non-intervention) — the discipline is tested and holds, not untested.
+The declared 0-movement / moral_framework held under load reads as earned discipline, not neutral observation. The bone sequence delivers the enforcement incident through geometry first (n03 figures enter side-alley, n04 figures close the alley-mouth = exit-blocking) before Taylor categorizes it — reader has the board-state before the categorization layer runs. The dark-fantasy gap-instrument bones (n06 effortful sound the feed has no field for / n07 courier finds the feet) are the structural proof that moral_framework is genuinely held rather than untested: the gap between world-event and feed-instrument is present and the discipline routes around it. The worm-canon SOFT-WATCH requirement is honored — gait-signature recognition (n02), enforcement-read (n04), and filing (n08) are structurally distinct bones, not collapsed to a single logging assertion. The "it is what the feed reads. It is what the feed reads." echo in the chunk text is the rationalization-running-without-interrogation tell this reader needs to confirm moral_framework is discipline under load, not discipline at rest. No hot-button fires: Taylor does not know which faction directed the enforcement; she reports only what the feed physically returns. The stakes are correctly named at n05 (controlled containment, moral_framework held at non-intervention) — the discipline is tested and holds, not untested.
 
 ## scene b01c05s03
 verdict: SUBSTANCE-FELT
@@ -657,3 +656,27 @@ Fatigue check on final bone count: with s03n02 dropped and s01n04 + s02n03 trimm
 ### File-level verdict
 
 REVISE-drop-s03n02-Wenna-Cobb-present-not-an-event-no-chapter-goal-service-crowds-closing-image
+
+## 2026-05-31 — /and-substance chapter b01c09 Phase 5 review
+
+verdict_per_scene:
+  b01c09s01: SUBSTANCE-FELT
+  b01c09s02: SUBSTANCE-FELT
+  b01c09s03: SUBSTANCE-FELT
+chapter_goal_coverage:
+  wren_surveillance_without_naming: LAND
+  courier_face_beat_2_body_with_history: LAND
+  double_omission_structural_fact: LAND
+overall: ACCEPT
+notes:
+  - s01 relational_anchor_status +0.5 (cl-d08 first tranche) lands as anchor-deepening not flat geography: the vulnerable lane-window (time-block, one-entrance lane, unobserved stretch) gives the coverage-architecture event concrete operational weight; the cl-d08 anchor is precise (cost = "structurally necessary to coverage map without appearing in deliverable ledger" — paid exactly at c03-c04); coverage-as-accumulation is canonical; no cheap-gain
+  - s02 political_register-prot +0.5 (cl-d05 continuation draw) reads as genuine resentment-color deepening: the Black-faction contact inference is directional not conclusive (cannot confirm what changed hands, cannot see the second man); bounded knowledge correctly maintained; the courier's Dragonpit position is legible because Taylor has held the gate's factional alignment in feed-record since c05; no unmotivated knowledge
+  - s03 double-omission structural fact: the accounting-close earns its held-axes function by staging two substrates on one station surface (ward-coverage notes / sealed packet) both described in terms of what they hold rather than what Taylor chooses; "simultaneously not drawing from" is the chapter's central formulation — the packet draws from the same source the withheld entries are in; NOT filler — the double-omission landing as physical fact is the scene's specific work
+  - cl-d06 deferred second tranche correctly excluded: c09's event is architectural not spoken/recognition-register; per pl-2026-05-30-001 the deferred +1.0 carries to c10 or later; no issue
+  - fatigue check: no filler triggers; ward-circuit in s01 is the mechanism; courier observation in s02 is the board-move; accounting-close in s03 is the chapter's designed landing; all three scenes live while the plot is live
+  - no hot-button fires: no established limits bypassed without cost; no unmotivated knowledge (all inferences bounded by what the feed physically returns plus prior coverage); no new character earning trust without cost
+  - soft watch for /and-write SW-1: the substrate-split (deliverable receives geometry / internal map holds pattern) must be enacted through distinct operational language at bone level — NOT through Taylor explaining her routing logic; bones should show the two content-types as different classes of thing, not as the same thing with one deliberately excluded; if bones author the split as "Taylor chose not to route the pattern" the asymmetry becomes motivation rather than mechanism
+
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
