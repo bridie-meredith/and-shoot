@@ -90,6 +90,7 @@ register removals required. Register entries below remain authoritative.
 ## Glossed in b01c06
 
 # b01c06 promoted ZERO new register terms. The chapter's only exposition entry was the @0 prior-episode-bridge (a per-chapter reader-state refresh referencing ONLY register-resident terms — the Jarvis line / Otto / the arrangement / Sera / the count / the coverage / the accounting / the Hook); a prior-episode-bridge is not itself a glossed-term. No first-mention / place / character entry fired. See active-project/theater/_archive/20260531T021620Z-b01c06-facets/theater/facets/exposition-b01-c06.md write-back block for the candidate-by-candidate disposition (the-courier / faction-names / coverage-note-instrument-family / Wren / Sera-architecture all NO-GLOSS register-resident or plot-content).
+# RE-AUTHOR CONFIRMATION 2026-05-31: the /and-write revise --from-signals depth pass re-decomposed the chapter from 25 to 26 bones (+1 verdict-pause bone @20 "stills the hand"; s03 accounting de-abstracted). R1 re-authored exposition against the 26-bone scaffold (active-project/theater/facets/exposition-b01-c06.md). Disposition UNCHANGED: 1 entry (the @0 prior-episode-bridge, verbatim, anchor-independent) — ZERO new register terms still promote. The +1 bone shifted scene-C body anchors by +1 (the-courier-take @23→@24; ward-coverage opens @24/@25→@25/@26) but fires no exposition entry; all five prior NO-GLOSS dispositions re-confirmed against the 26-bone scaffold. Sparsity 1/26 = 3.8% (in-band).
 
 ## Glossed in b01c07 (R1 author-time write-back; R2 may revise)
 
