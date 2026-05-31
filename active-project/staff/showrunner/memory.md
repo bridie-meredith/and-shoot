@@ -3881,8 +3881,9 @@ books:
       #   (P): proceed, record Q7 confusion list as cold_read_risk_carry → hand to /and-review bones
       #   follow_check (PROP-0020). report: active-project/staff/reviews/chunk-coldread-b01c06-2026-05-30.md
       - slug: b01c06
-        status: audited-r1   # /and-facets COMPLETE (2026-05-30): Phase 5 audit CLEAN (HARD=0) + Phase 5b audience-gate ACCEPT 3-of-3 all facets (3 cycles, no cap-burn)
+        status: bones-written   # /and-write b01c06 revise --from-signals (depth pass, DEC-0048/0056, 2026-05-31): s03 accounting de-abstracted (@16-@22 recast to concrete acts) + verdict-pause bone added (@20 stills the hand). Bones re-emitted (26 bones); facets + draft STALE-MARKED, re-cascade owed. Prior /and-facets audited-r1 state preserved in facets_complete below (now stale). Phase 6 revise bone-gate PASS (audience SUBSTANCE-FELT 3/3 s03 + airless-cleared 3/3; auditor PASS, abstraction-dominance 91%, 1 form-fault holds->stills resolved). bones_review re-run owed (mandatory /and-review bones gate).
         facets_complete:
+          stale_since: 2026-05-31   # STALE — bones re-emitted at revise depth pass (s03 de-abstracted, 26 bones). All facet artifacts below superseded; /and-facets re-cascade owed. Block preserved as the pre-revise audited-r1 record.
           audit_path: active-project/staff/auditor/facets-final-audit.md
           audit_reaudit_path: active-project/staff/auditor/facets-final-audit-r2.md
           audit_complete: true
@@ -3899,7 +3900,7 @@ books:
           context_followability_final: {completeness: FOLLOWABLE, readability: ALIVE}   # PROP-0020/0022
           phase_5c_admin: skipped   # final cycle clean ACCEPT, no cap-burn, no WARN
           margit_referrals_open: [SEAM-006 oc-ward-coverage-notes, SEAM-007 oc-jarvis-channel-form, SEAM-008 oc-accounting-ledger]   # prop cards; priority before b01c07 facets
-        stitched: true   # /and-stitch b01-c06 COMPLETE (2026-05-30); draft/b01-c06.md terminal deliverable
+        stitched: false   # was true (2026-05-30); STALE — bones re-emitted at revise depth pass; draft/b01-c06.md no longer terminal until /and-stitch re-cascade completes
         cold_read:
           read_at: 2026-05-30
           verdict: PASS-WITH-DEPTH-PASS-REQUIRED   # DEC-0048; ships terminal + mandatory depth pass before book-stable
@@ -3908,8 +3909,8 @@ books:
           recovered_summary: "A surveillance operative is pushed to hand over four people by name, does it to keep a hidden girl alive, and quietly protects the one child whose name they refuse to write down."
           report_path: active-project/staff/reviews/coldread-b01c06-2026-05-30.md
           signal_clusters: []   # single-arm; spine-staging-gap not triggered (central event recovered + staged: 'I sealed it', 'fingers settled and did not open them at once')
-          depth_pass_pending: true   # /and-write b01c06 revise --from-signals (de-abstract the accounting-middle bones @16-@21); DEC-0048 escalation clause: if next cold-read still AIRLESS-on-central-event -> FAIL/re-decompose
-          stale_since: null
+          depth_pass_pending: true   # depth pass EXECUTED at /and-write revise 2026-05-31 (s03 de-abstracted + verdict-pause added); flag stays true until /and-stitch Phase 9 re-cascade PASS stamps depth_pass_resolved_at (URI-STITCH-SIGNAL-CLUSTER). DEC-0048 escalation clause: if the re-stitch cold-read is still AIRLESS-on-central-event -> FAIL/re-decompose
+          stale_since: 2026-05-31   # this cold_read verdict (PASS-WITH-DEPTH-PASS-REQUIRED) is the pre-revise record; preserved as history per Phase 7; superseded by the re-cascade /and-stitch cold-read
         chunk: |
           Taylor runs the first deliberate rationalize-each-trade beat. A request comes
           through Jarvis that is not ambiguous: Otto wants to know which Flea Bottom ward
@@ -3959,8 +3960,8 @@ books:
           Show the audience the first named-person delivery and the accounting that precedes it, so the rationalize-each-trade pattern is legible — and show Wren's omission from the deliverable as the un-priced move it is.
         pov_narrator: taylor-hebert-kl-122ac
         bones_file: theater/bones/b01-c06.md
-        bones_count: 25
-        substance_bone_gate_verdict: PASS
+        bones_count: 26   # was 25; +1 verdict-pause bone (b01c06s03n11) added at revise Phase 3
+        substance_bone_gate_verdict: PASS   # re-confirmed at revise Phase 6 (s03 re-gated; s01/s02 prior PASS carried)
         # /and-review bones b01c06 (2026-05-30): PASS. Fidelity 0 HARD (spine intact all 3 scenes; dialogue coverage+card-compliance PASS; SVO clean 25/25; scene-map 25/25). follow_check PASS-WITH-NOTES (PROP-0020: every context-blind cold-read proper-noun confusion resolved by prior-chapter context = mid-series context-noise, not a bone defect). Aliveness BONES-AIRLESS-RISK advisory (apparatus-dominant accounting chapter; embodied spine present; forwarded downstream). 2 Phase-6 SIGNALs remain advisory. /and-facets cleared.
         bones_review:
           reviewed_at: 2026-05-30T02:37:00Z
@@ -3969,7 +3970,7 @@ books:
           follow_check: PASS-WITH-NOTES
           aliveness: BONES-AIRLESS-RISK-advisory   # PROP-0022; s02-s03 accounting middle; forward to /and-facets Phase 2.5 + /and-stitch Phase 4
           bones_file_mtime_at_review: 1780111145  # DEC-0047 (2026-05-30): mtime reset by git checkout in fresh container after PR #76 merge; content identity verified via `git diff e9883f2 HEAD` (empty) + review-report internal description match. Stamp reconciled to current mtime — NOT a content re-emit / not an operator override of a content change.
-          stale_since: null
+          stale_since: 2026-05-31   # STALE — bones file re-emitted at revise depth pass (s03 @16-@22 recast + @20 added; 25->26 bones). Mandatory /and-review bones re-run owed; /and-facets Phase 0 HARD-aborts on this staleness until re-reviewed.
         context_followability:   # PROP-0020/0022 — /and-facets Phase 2.5 + 4.5
           completeness_verdict: FOLLOWABLE   # Ph2.5 + Ph4.5 both; context-ledger empty (0 CONTEXT-REQUIRED)
           readability_verdict: ALIVE  # Ph4.5 AIRLESS-HOLE -> Ph4.6 grounding remediation (sensory:3/4/5 @10/@16/@17) -> Ph4.6-Step2 re-review ALIVE (continuous somatic thread across hinge)
@@ -3983,8 +3984,8 @@ books:
             - relational_anchor_status +1.0
             - moral_framework -1.0
             - moral_legibility_to_self +1.0
-          density_measured: "0 chatter / 25 bones; grounding 20/25"
-          felt_verdict: SUBSTANCE-FELT-3of3
+          density_measured: "0 chatter / 26 bones; grounding 24/26 (s03 de-abstracted; auditor abstraction-dominance 91%)"
+          felt_verdict: SUBSTANCE-FELT-3of3   # revise Phase 6: s03 re-gated SUBSTANCE-FELT 3/3 + airless-cleared 3/3; s01/s02 prior PASS carried
         # Bone-gate note: Phase 6 bone-gate PASS (auditor: 1 HARD fault-001 HELD-AXIS-NOT-WITNESSED
         # political_register-prot s01 → resolved by assigning to s01n02; 2 SIGNALs accept-with-rationale:
         # mls +0.5→+1.0 overdelivery + s03 stakes-axis tie, both DEC-0030 bone-floor artifacts;
@@ -4542,16 +4543,16 @@ books:
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n11
                 flat_id: 20   # inserted at Phase-3 transition-fix; Phase 7 reassigns all s03 flat_ids (former 20-25 shift to 21-26)
-                svo: "taylor-hebert-kl-122ac holds the stylus"
+                svo: "taylor-hebert-kl-122ac stills the hand"
                 shape: held
                 axis_moves: []
                 axes_held:
                   - axis: moral_framework
-                    rationale: "the verdict-pause — the two completed ledger entries stand (the ward-elder names; the sera-coverage entry) and the accounting's own logic closes here; the stylus held still enacts the framework holding at the moment it authorizes the send; the move fires at the seal (n06), not here; this held beat is the rise into the seal the climax requires (dramatist Phase-3 missing-transition fix)"
+                    rationale: "the verdict-pause — the two completed ledger entries stand (the ward-elder names; the sera-coverage entry) and the accounting's own logic closes here; the hand stilling over the entries enacts the framework holding against the pressure to proceed at the moment it authorizes the send; the move fires at the seal (n06), not here; this held beat is the rise into the seal the climax requires (dramatist Phase-3 missing-transition fix; SVO recast holds->stills per Phase-6 auditor fault-001 narrow-holds-license)"
                 cost_ledger_anchor: null
                 dialogue_anchor: false
               - slug: b01c06s03n05
-                flat_id: 20
+                flat_id: 21
                 svo: "taylor-hebert-kl-122ac closes the ledger-board"
                 shape: held
                 axis_moves: []
@@ -4562,7 +4563,7 @@ books:
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n10
-                flat_id: 21
+                flat_id: 22
                 svo: "taylor-hebert-kl-122ac lifts the jarvis-channel form"
                 shape: held
                 axis_moves: []
@@ -4573,7 +4574,7 @@ books:
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n06
-                flat_id: 22
+                flat_id: 23
                 svo: "taylor-hebert-kl-122ac seals the jarvis-channel form"
                 shape: moving
                 axis_moves:
@@ -4585,7 +4586,7 @@ books:
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n07
-                flat_id: 23
+                flat_id: 24
                 svo: "the courier takes the jarvis-channel form"
                 shape: held
                 axis_moves: []
@@ -4598,7 +4599,7 @@ books:
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n08
-                flat_id: 24
+                flat_id: 25
                 svo: "taylor-hebert-kl-122ac opens the ward-coverage notes"
                 shape: moving
                 axis_moves:
@@ -4610,7 +4611,7 @@ books:
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n09
-                flat_id: 25
+                flat_id: 26
                 svo: "taylor-hebert-kl-122ac closes the ward-coverage notes"
                 shape: held
                 axis_moves: []
