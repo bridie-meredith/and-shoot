@@ -1,44 +1,48 @@
-# bones — b01c07
+# R2 inflight cascade — exposition slice — b01c06
+# layer: R2 (exposition, graph-aware)
+# scope: [exposition:*]
+# cite_index_hash: 21eb9718d8526f3ef58f0c4ed394e62ac25f1927de7f5e1003f8b23fa91c3db2
+# disposition: exposition:1 KEEP (no mutation) — cascade unchanged
+#
+# The chapter's ONLY exposition entry is exposition:1 @0 prior-episode-bridge — a SYNTHETIC
+# episode-open preamble that renders BEFORE the body as italic-preamble. 0-token cascade: no
+# exposition citation token attaches to any body bone (26 bones, all undecorated by exposition).
+# The upstream Wren dialogue-anchor token [wren-stitch-maker-flea-bottom-ward:1] @4 is preserved
+# verbatim (NOT exposition's to touch — upstream-emitted by /and-write Phase 7).
 
-episode: b01c07
+episode: b01c06
 narrator: taylor-hebert-kl-122ac
-goal: Show the audience the Halvard argument at genuine engagement — neither dismissed nor won — so when Taylor stops engaging it at d09 the foreclosure reads as a choice, not a lapse.
-cast: taylor-hebert-kl-122ac, septon-halvard-flea-bottom
-locations: oc-sept-corner
-prior_episode: b01c06
-aggregate_range: 1-25
+facet: exposition
+---
 
-1 taylor-hebert-kl-122ac completes the ward-coverage circuit
-2 the handcart blocks the sept-corner passage
-3 septon-halvard-flea-bottom faces the handcart man [exposition:2]
-4 septon-halvard-flea-bottom names the sick child
-5 taylor-hebert-kl-122ac receives the plain acknowledgment
-6 the insect-feed places septon-halvard-flea-bottom
-7 taylor-hebert-kl-122ac enters the sept-corner
-8 taylor-hebert-kl-122ac acknowledges septon-halvard-flea-bottom
+# @0 (synthetic preamble — renders before body; not a body-line citation)
+[exposition:1] @0 prior-episode-bridge — italic-preamble — KEEP (R2: no mutation; lens facets reviewed, gap real, no other facet covers, sources resolve)
 
-9 septon-halvard-flea-bottom describes the fever's progress
-10 septon-halvard-flea-bottom names the maester's cost
-11 septon-halvard-flea-bottom turns from the sick-child account
-12 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac [septon-halvard-flea-bottom:1]
-13 taylor-hebert-kl-122ac goes still
-14 taylor-hebert-kl-122ac faces septon-halvard-flea-bottom
-15 taylor-hebert-kl-122ac plants the feet
-16 septon-halvard-flea-bottom exhales
-17 the sept-corner ground grips
+1 the handcart blocks the lane-mouth
+2 the crowd presses the junction
+3 wren-stitch-maker-flea-bottom-ward crosses the crowd
+4 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac [wren-stitch-maker-flea-bottom-ward:1]
+5 taylor-hebert-kl-122ac enters the south court
+6 taylor-hebert-kl-122ac opens the coverage-notes entry
+7 taylor-hebert-kl-122ac marks the contact-role field
+8 taylor-hebert-kl-122ac blanks the contact-source field
+9 taylor-hebert-kl-122ac closes the coverage-notes entry
 
-18 taylor-hebert-kl-122ac names the body count
-19 taylor-hebert-kl-122ac speaks to septon-halvard-flea-bottom [taylor-hebert-kl-122ac:1]
-20 septon-halvard-flea-bottom absorbs the counter
-21 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac [septon-halvard-flea-bottom:2]
-22 taylor-hebert-kl-122ac steadies the feet
-23 taylor-hebert-kl-122ac leaves the sept-corner
-24 the lane cold grips the sept-corner stone
-25 taylor-hebert-kl-122ac clears the Hook
+10 the jarvis-channel message arrives
+11 taylor-hebert-kl-122ac opens the jarvis-channel message
+12 taylor-hebert-kl-122ac reopens the jarvis-channel message
+13 taylor-hebert-kl-122ac pulls the coverage-memory record
+14 taylor-hebert-kl-122ac fills the jarvis-channel form
+15 taylor-hebert-kl-122ac lowers the jarvis-channel form
 
-# Decorated-anchor summary (exposition facet, b01c07 — R2 graph-aware cascade)
-# @0  — 1 fire (exposition:1 prior-episode-bridge italic-preamble) — synthetic anchor; not appended to any numbered body line. KEEP at R2 (no reword).
-# @3  — 1 fire (exposition:2 first-mention-character [Septon Halvard] inline-appositive) — [exposition:2] token appended to body line 3. KEEP at R2 (no reword); fence-clear (@3 outside union speech-window {@10..@14, @17..@23}).
-# Total decorated: 1 body-anchor (@3) + 1 synthetic-anchor (@0) = 2 entries across 2 anchor-fires.
-# R2 disposition: 2 KEEP / 0 DELETE / 0 ADD. Bodies BYTE-IDENTICAL to R1 _inflight cascade (no reword fired). Body proto-lines copied BYTE-FOR-BYTE from theater/proto-lines/b01-c07.md (header + 25 lines) EXCEPT the standard [exposition:2] citation token appended to line 3. Upstream dialogue tokens [septon-halvard-flea-bottom:1] @12, [taylor-hebert-kl-122ac:1] @19, [septon-halvard-flea-bottom:2] @21 are /and-write Phase 7 emit, left untouched.
-# Bare body-anchors (no exposition decoration): 1, 2, 4-25 (24 bones; no first-mention / scene-open-orient entry fires at any of these).
+16 taylor-hebert-kl-122ac opens the ledger-board
+17 taylor-hebert-kl-122ac writes the ward-elder names
+18 taylor-hebert-kl-122ac writes the sera-coverage entry
+19 taylor-hebert-kl-122ac marks the red-keep coverage record
+20 taylor-hebert-kl-122ac stills the hand
+21 taylor-hebert-kl-122ac closes the ledger-board
+22 taylor-hebert-kl-122ac lifts the jarvis-channel form
+23 taylor-hebert-kl-122ac seals the jarvis-channel form
+24 the courier takes the jarvis-channel form
+25 taylor-hebert-kl-122ac opens the ward-coverage notes
+26 taylor-hebert-kl-122ac closes the ward-coverage notes

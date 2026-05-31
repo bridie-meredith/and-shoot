@@ -1,377 +1,266 @@
----
-audit:
-  scope: chapter
-  target: b01c07
-  gate: /and-facets Phase 5 — cross-cutting graph audit (flag-only mode)
-  timestamp: 2026-05-31
-  auditor: auditor (phase-5 mechanical)
-  inputs:
-    - active-project/theater/proto-lines/b01-c07.md
-    - active-project/theater/facets/_cite-index.md
-    - active-project/theater/facets/.r2-decisions.md
-    - active-project/theater/facets/exposition-b01-c07.md
-    - active-project/theater/facets/scene-map-b01-c07.md
-    - active-project/theater/dialogue/septon-halvard-flea-bottom.md
-    - active-project/theater/dialogue/taylor-hebert-kl-122ac.md
-    - active-project/staff/dialogue-writer/septon-halvard-flea-bottom.drafts.md
-    - active-project/staff/dialogue-writer/taylor-hebert-kl-122ac.drafts.md
-    - active-project/staff/dialogue-writer/r2-decision-shard-septon-halvard-flea-bottom.md
-    - active-project/staff/dialogue-writer/r2-decision-shard-taylor-hebert-kl-122ac.md
-    - active-project/staff/showrunner/context-ledger-b01-c07.md
-    - active-project/staff/showrunner/grounding-ledger-b01-c07.md
-    - active-project/warehouse/oc-sept-corner.md
-    - active-project/actors/septon-halvard-flea-bottom/card.md
-    - active-project/actors/taylor-hebert-kl-122ac/card.md
-    - cards/dialects/westeros-septon.card.md
-    - cards/dialects/taylor-hebert.card.md
-    - schemas/facet.schema.md, schemas/dialogue.schema.md, schemas/scene-map.schema.md, schemas/audit-report.schema.md
-    - design/shoot-v2/rubric-narrator-interest.md
-    - staff/dialogue-writer/rubric-dialogue.md
-  note-on-file-availability: >
-    Individual facet content files (interest-narrator, sensory, location-state, feeling,
-    memory, metaphor, vibes, state-updates) were not reachable on disk by any name variant
-    attempted. All per-entry content assessments for those facets are conducted from the
-    cite-index (entry counts, anchor positions, co-citation graph, back-citation flags,
-    lic-out tokens), the .r2-decisions.md consolidated shard (which quotes entry text and
-    R2 rationale), the grounding-ledger (sensory:3/4 content), and cross-facet contract
-    evidence. The exposition and scene-map facet files were readable in full. Dialogue files
-    and drafts sidecars readable in full. This limitation is noted where it constrains a
-    specific class check.
+audit: facets-final-r1
+episode: b01c06
+date: 2026-05-31
+mode: flag-only
+status: FINDINGS-PRESENT
+totals: 5 findings across 4 facets (1 HARD, 4 SIGNAL)
 
 ---
 
-# Facets Cross-Cutting Graph Audit — b01c07
+## STRUCTURAL findings (0)
 
-## Pre-audit exemptions applied
+None.
 
-1. licensed-grounding-exception: sensory:3@16 (grd-001) + sensory:4@22 (grd-002) — both resolve to satisfied GROUNDING-REQUIRED entries. Exempt from sensory FREQUENCY-BAND cap. Structural/CONTRADICTION/DEDUP checks still applied.
-2. NI FREQUENCY-BAND carve-out: 7/25=28%, over 15-25% ceiling. Documented load-bearing carve-out (rev2 deleted 5 interior bones; interiority routed to NI; preamble present in NI file per R2 shard). Reported SIGNAL, not HARD.
-3. memory under-fire: 1/25=4%, below 5-12% band. Denominator-driven on lean hinge; doubled-register gate satisfied per-season via mem:2 two-clause structure; mem:1 deleted as spineless. Reported SIGNAL.
-4. exposition 8% (2/25): over 1-5% band. Both entries individually mandatory (1 fixed-overhead bridge + 1 first-mention-character-introducing-hinge). Reported SIGNAL.
-5. margit referral: mem:2@19 ships free-text gloss `(westeros: founding-death-the-slower-method-produced)` — no monument card yet. SIGNAL with referral slug.
-6. Derry/Wenna adjacency: confirmed two distinct children (living patient @4 / dead ledger-entry @19). Facets keep "Derry" out of all prose-facing entries (no NI/feeling/sensory/memory fires at @4; state-update-only). Render-side adjacency flagged SIGNAL for stitcher.
+ID monotonicity: loc-state 1-2 ✓; narrator 1-7 ✓; sensory 1-3 ✓; state-updates (env) 1-17 / (taylor) 18-21 / (wren) 22 ✓; memory 2 (gap at 1 — deleted by R2; gap is expected per schema § deleted IDs leave gaps) ✓; feeling (taylor) 1 / (wren) feel:1 ✓; metaphor 0 ✓; vibes 1-20 ✓; exposition 1 ✓.
 
----
+Anchor resolution: every `@<id>` in every facet file resolves to a bone in `theater/bones/b01-c06.md` (1-26). Exposition entry at `@0` is the licensed synthetic preamble anchor; exempt from bones coverage per schema.
 
-## Class findings
+Bidirectional citation: cite-index cross-checked. All `back=Y` entries confirmed present in their respective facet files. `back=N` entries (state:18-22 — actor-state sub-entries; exposition:1 — @0 synthetic) are structurally correct (back-citation not applicable to actor-state sub-entries consolidated into the ENV slice numbering and to preamble).
+
+Dialogue structural: `wren-stitch-maker-flea-bottom-ward:1` citation on bone @4 resolves to entry 1 in `theater/dialogue/wren-stitch-maker-flea-bottom-ward.md`. Dialogue file header `behavior-card: westeros-smallfolk` resolves to `cards/dialects/westeros-smallfolk.card.md`. Entry-ID monotonicity: 1 entry, no gap. CLEAN.
 
 ---
 
-### CLASS 1 — STRUCTURAL
+## FREQUENCY-BAND findings (3 SIGNAL)
 
-**Overall: PASS with one SIGNAL**
+- **sensory**: 3 entries / 26 bones = 11.5%. Band: 3-6%. BREACH-HIGH. Per-scene: scene-A 1 (@2), scene-B 0, scene-C 2 (@17, @20) — per-scene cap ≤3 honored (max 2 in any scene). The file carries a rubric-carve-out (sensory:1 @2 old-state sourced from location card §Hazards baseline rather than a loc-state entry; documented in-file). With the carve-out, the three entries are each structurally load-bearing (floor-establishing pressure fire in scene-A; stylus-rhythm at the names-written peak in scene-C; silence at the verdict-pause in scene-C). Grounding-ledger has zero entries — no licensed-grounding-exception is claimed or needed. Classification: **SIGNAL** — breach-high at 11.5% but within the 3-entry count that the per-scene cap permits; carve-out documents the old-state sourcing; grounding-ledger confirms no cap-exemption is being claimed; audience-gate is the appropriate review surface for whether the three entries as authored are proportionate.
 
-**fault-001**
-- id: fault-001
-- type: flag
-- what: cite-index entries vibes:2 / vibes:4 / vibes:9 / vibes:12 / vibes:14 / vibes:15 carry `@-` (no anchor). Six of 15 vibe entries are anchor-absent.
-- why: Per schema, `[@<proto-line-id>]` is optional when "licensed by off-screen / pre-episode / inter-episode reflective context." These entries are confirmed licensed by `lic-out` citations (resolved in the cite-index to proto-line IDs where they apply). This is schema-compliant. Not a fault — flagging for stitcher to ensure `lic-out` tokens are read as the render-target surface for anchor-absent vibes.
-- criteria: n/a (pass)
+- **state-updates**: 22 entries (env:17 + taylor:4 + wren:1) / 26 bones = 84.6% by raw count; by unique-bone coverage, 19 distinct bones carry at least one state-update. The author filed a rubric-carve-out: (a) all three oc-props (oc-ward-coverage-notes, oc-jarvis-channel-form, oc-accounting-ledger) are first-touch in this chapter, generating mandatory first-touch state-extension entries across the chapter; (b) this is explicitly a prop-centric accounting chapter where prop mutations ARE the substance delivery; (c) every oc-prop entry is a field-extension on a pending-SEAM prop (SEAM-006/007/008), following the rubric's §Field-extension protocol for oc-slug props. The RUBRIC-FIDELITY class below addresses the SEAM SIGNAL items for those slugs. Classification: **SIGNAL** — the carve-out defense is present, coherent, and strip-tested; the density is explained by chapter architecture (three oc-props first-touched; prop mutations are the spine); audience-gate is the appropriate review surface for whether the density reads as overwhelming.
 
-**Scene-map structural — PASS.** total-scenes=3 matches 3 scene blocks. total-bones=25 matches 25 proto-lines. Coverage=25/25, gaps=empty, overlaps=empty. All scene `@<start>` and `@<end>` anchors resolve. Scene labels A/B/C monotonically alphabetic and unique.
+- **feeling (wren)**: The wren slice uses an ID label `feel:1` with an entry that begins with the wren character slug prefix inline (not as a file-top facet prefix). The ID does not collide with the taylor slice's `1 @20` because they are in separate source slices (consolidated file carries per-source markers). However, the wren entry's format `feel:1 @3 wren-stitch-maker-flea-bottom-ward: ...` renders the character slug inside the ID-line body rather than as a separate sub-file entry — the schema convention is `<id> @<anchor> <character-slug>: <somatic-tell>`. This is schema-compliant; the format is confirmed in the schema's per-character slice convention. No frequency finding — 1 fire / scene-A-bones (bones 1-9 = 9 bones for Wren's scene) is under the 2-5% per-character band; 1/26 = 3.8% at chapter level. **No frequency finding for feeling.** (Annotation only; no SIGNAL.)
 
-**Dialogue anchor coverage — PASS.** @12 `[septon-halvard-flea-bottom:1]` → dialog entry :1 (on disk, anchor `@b01c07s02n04`). @19 `[taylor-hebert-kl-122ac:1]` → dialog entry :1 (on disk, anchor `@b01c07s03n02`). @21 `[septon-halvard-flea-bottom:2]` → dialog entry :2 (on disk, anchor `@b01c07s03n04`). All three resolve. Entry-ID monotonicity: Halvard (:1, :2) — monotonic. Taylor (:1) — monotonic. Behavior-card slugs in headers (`westeros-septon`, `taylor-hebert`) match real cards on disk.
+*(Correction: the frequency SIGNAL above for feeling is retracted — the feeling fire is 1 taylor + 1 wren = 2 fires / 26 bones = 7.7% chapter-level, but the rubric bands are per-character. Taylor: 1/26 = 3.8% — within 2-5% band. Wren: 1/26 = 3.8% — within 2-5% band. Both within band. No frequency finding.)*
 
-**state-updates back=N entries — PASS.** state:5-12 are back=N (not cited by proto-lines). These are state-change record entries; they are not required to be cited from proto-lines per schema. Not a structural fault.
+*(Revised FREQUENCY-BAND count: 2 SIGNAL — sensory and state-updates. Feeling is clean on a per-character reading.)*
 
 ---
 
-### CLASS 2 — FREQUENCY-BAND
+## METADATA-INCONSISTENCY findings (0)
 
-**Overall: SIGNAL (5 items; all pre-announced or denominator-driven; 0 HARD)**
-
-**fault-002**
-- id: fault-002
-- type: flag
-- what: interest-narrator 7/25 = 28%, over the 15-25% ceiling.
-- why: Load-bearing carve-out documented in the NI file preamble per R2 shard (rev2 deleted 5 interior bones; interiority routed to NI). The over-count is denominator-driven on a 25-bone chapter with high interiority load. Exemption applies.
-- criteria: n/a (SIGNAL — carve-out documented; no fixer dispatch)
-
-**fault-003**
-- id: fault-003
-- type: flag
-- what: sensory 4/25 = 16%, over the 3-6% band. Entries 1+2 (sensory:1@12, sensory:2@17) compute 2/25=8% in-band baseline; entries 3+4 (sensory:3@16, sensory:4@22) are licensed-grounding-exception (grd-001/grd-002). Even the in-band baseline at 2/25=8% exceeds the 3-6% cap, however.
-- why: Entries 3+4 are waived by the grounding-ledger. Entries 1+2 at 8% over the 3-6% band: the denominator (25 bones) is the driver — one additional sensory entry on a 25-bone chapter computes at 4%. Neither entry is redundant or superfluous (sensory:1@12 is a modality-fire at the dialogue-anchor pivot; sensory:2@17 is the cobble-grip tactile ground cited in the scene-map peak-shadow). Both were KEEP at R2. SIGNAL, not HARD.
-- criteria: n/a (SIGNAL — denominator-driven on lean chapter)
-
-**fault-004**
-- id: fault-004
-- type: flag
-- what: feeling 2/25 = 8%, over the 2-5% band.
-- why: Both entries (feel:1@20 Halvard, feel:2@18 Taylor) are under the per-character per-scene cap (≤1 per character per scene). Both were KEEP at R2 with multi-justification ≥4/5. The overage is denominator-driven on a 25-bone chapter. SIGNAL.
-- criteria: n/a (SIGNAL — denominator-driven)
-
-**fault-005**
-- id: fault-005
-- type: flag
-- what: memory 1/25 = 4%, below the 5-12% floor.
-- why: mem:1@6 was deleted at R2 as spineless. The floor-miss is denominator-driven on a lean hinge; doubled-register gate satisfied per-season via mem:2's two clauses. SIGNAL per exemptions.
-- criteria: n/a (SIGNAL — exemption applies)
-
-**fault-006**
-- id: fault-006
-- type: flag
-- what: exposition 2/25 = 8%, over the 1-5% band.
-- why: Both entries individually mandatory (prior-episode-bridge + first-mention-character introducing Halvard). Denominator-driven. SIGNAL per exemptions.
-- criteria: n/a (SIGNAL — both entries mandatory)
+None. All file headers match actual content:
+- `facet: location-state`, `episode: b01c06`, `author: studio` — matches 2 entries, both at b01c06 anchors.
+- `facet: interest-narrator`, `episode: b01c06`, `author: taylor-hebert-kl-122ac` — matches 7 NI entries.
+- `facet: sensory`, `episode: b01c06`, `author: studio` — matches 3 entries.
+- `facet: memory`, `episode: b01c06`, `author: taylor-hebert-kl-122ac` — 1 entry (mem:2); gap at mem:1 per R2 DELETE. Consistent with R2-decisions.md.
+- `facet: metaphor`, `episode: b01c06`, `author: editor` — 0 entries; zero-fire documented in refuse-log. Consistent.
+- `facet: vibes`, `episode: b01c06`, `author: showrunner` — 20 entries. Consistent with cite-index.
+- `facet: exposition`, `episode: b01c06` — 1 entry at @0. Sparsity reported as 3.8%; confirmed 1/26 = 3.8%. Consistent.
+- `facet: feeling` consolidated — sources: [taylor-hebert-kl-122ac, wren-stitch-maker-flea-bottom-ward]. Matches 2 source slices. Consistent.
+- `facet: state-updates` consolidated — sources: [env, taylor-hebert-kl-122ac, wren-stitch-maker-flea-bottom-ward]. Matches 3 source slices. Consistent.
+- `.r2-decisions.md` frontmatter `f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}` — consistent with per-shard counts (all zero). `entry-deltas` row matches per-shard K/D/A statements.
+- Scene-map `total-scenes: 3`, `total-bones: 26` — confirmed by bones file (1-26, 26 bones) and scene-map body (A @1-@9 = 9 bones; B @10-@15 = 6 bones; C @16-@26 = 11 bones; 9+6+11 = 26). Consistent.
 
 ---
 
-### CLASS 3 — METADATA-INCONSISTENCY
+## CURVE-SHAPE verdict
 
-**Overall: SIGNAL (1 item)**
+**SHAPE-OK.**
 
-**fault-007**
-- id: fault-007
-- type: flag
-- what: Slug format inconsistency across files. exposition-b01-c07.md frontmatter uses `episode: b01-c07` (hyphenated). proto-lines header uses `episode: b01c07` (no hyphen). scene-map uses `scene-map: b01c07` (no hyphen). dialogue files use `episode: b01c07` (no hyphen). R2 decisions consolidated uses `episode: b01-c07` (hyphenated).
-- why: Mixed slug formats could cause programmatic cross-file lookups (cite-index build, shard consolidation, stitcher Phase 0 file resolution) to produce silent misses if lookup is by exact string. The cite-index was built successfully (hash present in all shards), so the inconsistency did not prevent this chapter's pipeline from functioning. Risk is in future automation.
-- criteria: n/a (SIGNAL — informational; no fixer dispatch; flag for showrunner to standardize slug format at next re-run)
-
----
-
-### CLASS 4 — CURVE-SHAPE
-
-**Overall: PASS**
-
-NI density by scene against scene-map rhythm-shape:
-- Scene-A (@1-@8, flat-low): 0 NI fires. Correct — no peak-bones, no behavior-pack trigger listed, encounter-open is non-displacing. Silence is load-bearing.
-- Scene-B (@9-@17, rising-to-peak, peak-bones @14/@15): 3 NI fires (narrator:1@13, narrator:2@14, narrator:3@15). Fires cluster at and approaching peak-bones; the @13 fire is the immediate-pre-peak (WATCH-2 ordering: thesis lands [@13 goes still] before register sharpens [@14 faces]). Density: 3/9=33%.
-- Scene-C (@18-@25, rising-to-peak, peak-bones @18/@22): 4 NI fires (narrator:4@19, narrator:5@20, narrator:6@22, narrator:7@23). Peak-bone @18 has no NI (feel:2@18 is the somatic-cost carrier; per R2 NI judge, @18 body-cost is owned by feel — NI fires at adjacent @19 for the precision-as-moral-cost layer, which is the downstream cognition). Peak-bone @22 has narrator:6 directly. Density: 4/8=50%.
-
-Contrast: scene-A fires 0, rising scenes fire 33-50%. Ratio of rising/peak fires to flat-low fires: ∞ (flat-low correctly silent). Well above the ≥2× contrast requirement.
-
-No AP-001 inverted-predicate template enumeration possible (NI file not readable on disk). R2 shard records zero F-R2 violations across all facets. SIGNAL scope limitation noted.
-
-**fault-008**
-- id: fault-008
-- type: flag
-- what: NI file (interest-narrator-b01-c07.md) was not reachable on disk under any attempted naming convention. AP-001 (inverted-predicate cap ≤1 per file) cannot be mechanically enumerated against actual entry text.
-- why: The rubric requires the auditor to enumerate form-pattern matches against `is what`, `is the`, and `means today` constructions. Without the file, this check is scope-limited. The R2 shard records zero F-R2 violations and confirms 7 KEEP entries with content-level rationale. This reduces but does not eliminate residual AP-001 risk.
-- criteria: n/a (SIGNAL — scope limitation; if the NI file is confirmed accessible, AP-001 scan should be re-run before Phase 5b fires)
+- `dramatic_shape: climax` (chapter-context in exposition frontmatter; confirmed in showrunner memory chapter b01c06 substance contract).
+- Scene-A `rhythm-shape: rising-to-low-peak` — coherent with the pre-climax approach zone leading into the chapter.
+- Scene-B `rhythm-shape: flat-tense` — held scene between peak-approach and peak; correct shape for a climax chapter's loaded-pause mid-act.
+- Scene-C `rhythm-shape: rising-to-peak` — peak fires at @23 (moral_framework -1.0, THE SEND) and @25 (moral_legibility_to_self +0.5, contrast recognition). This is the climax beat. Correct.
+- Peak-bones confirmed in scene-map: @4 (scene-A relational_anchor carrier), @8 (scene-A omission ENACTED), @23 (scene-C THE SEND), @25 (scene-C contrast open). Two peak beats in scene-A (rising-to-low-peak); two in scene-C (rising-to-peak). No peak in scene-B (flat-tense by design). Pattern is structurally correct for a climax chapter.
+- Adjacency: scene-B serves as the held zone between the scene-A peak and scene-C peak; no 1→3 compression jumps.
+- Flatlining: scene-B is deliberately flat-tense (6 bones; not 30+). No pathological flatline.
+- NI file-level check: narrator fires at @4 (scene-A peak), @8 (scene-A peak), @17 (scene-C accounting rise), @20 (scene-C verdict-pause), @23 (scene-C peak), @25 (scene-C peak). NI concentrates on peak and rising zones with appropriate quiet at scene-B — coherent with climax `dramatic_shape`.
+- Memory file-level check: mem:2 @17 fires in the accounting rise (scene-C pre-peak zone) — structurally correct; the rubric requires memory to concentrate in flat-low/resolving zones, but @17 is the cost-side accounting entry that generates the peak, not a peak-bone itself. The scene-map lists @17 as `peak-shadow-bones`. Memory fires on a peak-shadow, which the rubric permits (the names-written beat is the monument-grade conversion event that licenses the displacement-clamp). SHAPE-OK for memory.
 
 ---
 
-### CLASS 5 — CONTRADICTION
+## CONTRADICTION findings (0)
 
-**Overall: PASS**
+None. Cross-checked all state-update `<old>` values against prior chapter state and within-chapter transitions:
 
-Cross-facet contradiction check at all co-located anchors:
+- `studio.spatial_layout.lane-mouth: clear -> handcart-blocking` (@1) — opening state; no prior state-update contradicts.
+- `prop:oc-ward-coverage-notes.state: closed -> open` (@6) — first-touch for this chapter; no prior contradicting entry.
+- All oc-prop field transitions within-chapter follow logical sequenced order (closed→open→closed for ward-coverage-notes; arrived→opened→filled→set-down→in-hand→sealed→with-courier for jarvis-channel-form; closed→open→content-written→closed for accounting-ledger).
+- Taylor actor-state transitions: position @5 (hook-lane-mouth → south-court) follows loc-state:2 @5 (south-court established). No contradiction.
+- Taylor moral_framework @23: 1→0 — this records the per-chapter delta; no prior within-chapter state-update contradicts.
+- Wren position @3: in-backed-up-crowd → at-taylor-at-lane-mouth — consistent with scene-A @2 (crowd presses the junction) and @3 (Wren crosses the crowd).
 
-- @19 (mem:2 / narrator:4 / taylor-hebert-kl-122ac:1 / vibes:4 / vibes:5): no content contradiction. mem:2 = Westerosi founding-death clamp + Earth-Bet shape-only (monument layer). narrator:4 = precision-as-moral-cost (cognition layer). dialogue:1 = spoken counter (word layer). vibes:4/5 = operator-facing. Three distinct layers; no two claiming the same rendering surface. Confirmed non-contradictory by R2 NI judge triple-redundancy test.
-
-- @21 (septon-halvard-flea-bottom:2 / vibes:6 / vibes:7 / vibes:8 / vibes:12): dialogue:2 = spoken acknowledgment. vibes are operator-facing. No contradiction.
-
-- @12 (sensory:1 / septon-halvard-flea-bottom:1 / vibes:2 / vibes:12 / vibes:14): sensory:1 = sound modality pivot (halvard-pastoral-account → halvard-direct-address). dialogue:1 = the thesis. vibes = operator-facing. No contradiction.
-
-- @20 (feel:1 / narrator:5 / vibes:8): feel:1 = Halvard somatic (hands still on knees — body before words). narrator:5 = POV cognition (two-accountings-in-parallel). vibes:8 = operator-facing. Non-contradictory; confirmed by R2 feeling judge (body/words distinct beats) and NI judge (NI:5 is the absorb-cognition).
-
-Derry/Wenna: two distinct named children. No facet entry at any anchor names "Derry" in a prose-facing register. state:6/7 @4 record state changes (back=N; not proto-line-cited). "Derry" does not appear in any prose-rendering facet. Confirmed clean.
+No feeling contradiction (1 fire per character; no within-character sequence to contradict).
 
 ---
 
-### CLASS 6 — DEDUP
+## DEDUP findings (0)
 
-**Overall: PASS**
+No redundant co-coverage confirmed.
 
-No entry pair found that would render the same content at the same anchor. All pile-up anchors audited above under CONTRADICTION; all resolve to distinct layers (spoken / somatic / cognitive / operator-facing / state-change). The R2 dialogue judge confirmed non-DEDUP for both Halvard entries against adjacent feel/vibes; R2 NI judge confirmed non-DEDUP for narrator:4@19 against the three co-located layers at @19.
+@20 NI:4 vs feel:1 — specifically examined per dispatch brief. NI:4 says: "the stillness is only the hand catching up to a verdict the count reached three entries back" (the cognition DENYING the pause is deliberation). feel:1 says: "her hand stops above the two finished entries" (the body arrested). These are distinct registrations on the same bone — feel:1 shows the body-stop; NI:4 shows the cognitive-voice reasserting to classify the stop as mere lag. The R2 decisions log (feeling-taylor section) and (NI section, narrator:4) both address this and confirm the two entries do opposite work: feel:1 is the body-signal; NI:4 is the analytical voice that overrides it. Per the wren card §"affect appears in brief body-signals before the analytical voice reasserts" this pairing IS the card pattern. **NOT a DEDUP.**
 
----
+NI:2 vs NI:7 @8 — NI:2 names the act and the blank-as-entry; NI:7 names the substrate fact (notes are hers, not the channel's; what stays in the column never crosses to the courier). These are distinct observations at the same anchor: NI:2 is the priced-act; NI:7 is the institutional mechanics of why the blank protects. No duplication of content.
 
-### CLASS 7 — SUPERFLUOUS
+Vibes vs NI at same anchors — vibes shapes social/tonal texture; NI fires cognitive registrations. No content duplication verified across @4, @8, @20, @23, @25.
 
-**Overall: PASS**
-
-All "lonely entries" (cite-index: loc-state:1@1, sensory:3@16, state:1@2, vibes:13@6, exposition:1@0) individually audited:
-- loc-state:1@1: ward-circuit-open establishment. Structurally required.
-- state:1@2: handcart-blocks-passage state record. Required for canonical state write-back.
-- vibes:13@6: WATCH-5 surveillance-irony insect-feed placement (insect-feed places Halvard reliably at this corner — the knowing-vs-ready gap). Licensed by scene-map protected-pattern WATCH-5 texture beat @6. Retained by design.
-- exposition:1@0: mandatory prior-episode-bridge. Cannot be dropped.
-- sensory:3@16: licensed-grounding-exception grd-001 (GROUNDING-REQUIRED, satisfied). Not superfluous.
-
-No entry found without a defensible structural function.
+Dialogue:1 vs NI:1 @4 — NI:1 registers Taylor's interior cost-frame ("a sound route from a stranger carries a cost she has not yet named"); dialogue:1 is the spoken line itself ("There's a way past..."). Distinct layers; no duplication.
 
 ---
 
-### CLASS 8 — CONSTRAINT
+## SUPERFLUOUS findings (0)
 
-**Overall: PASS**
+All lonely entries in the cite-index examined per the rubric's three-axis test (necessity / interestingness / frugality):
 
-Scene-map coverage constraints (per schema):
-- 25/25 bones in exactly one scene. PASS.
-- All scene anchors resolve. PASS.
-- Unique monotonic labels (A/B/C). PASS.
-- total-scenes=3 matches body. total-bones=25 matches proto-lines. PASS.
+- `sensory:1 @2` (lonely) — pressure fire at the scene-A opening; establishes the crowd-compression baseline before the Wren exchange fires at @4. Necessary for the sensory arc (lane-passable → crowd-backed → stylus-rhythm → silence). Frugal: one clause. **Not superfluous.**
+- `state:2-4 @6/@7/@9` (lonely) — oc-ward-coverage-notes first-touch field-extensions. These are structurally necessary: they record the instrument-state of the prop that enacts the chapter's central protective omission. No other facet carries prop physical-state. Frugal. **Not superfluous.**
+- `state:6-9 @11/@14/@15/@16` (lonely) — jarvis-channel-form and accounting-ledger field-extension transitions. Each records a distinct prop-state transition that is not redundant with any co-cited entry. Frugal. **Not superfluous.**
+- `state:11-13 @18/@21/@22` (lonely) — continuation entries on the accounting-ledger close and the form re-lift. Structurally required to close the prop-arc. **Not superfluous.**
+- `state:15-17 @24/@25/@26` (lonely) — form holder-transfer (irrevocable departure), ward-coverage-notes reopen, ward-coverage-notes close. Each records a distinct terminal prop-state. **Not superfluous.**
+- `exposition:1 @0` (lonely by anchor) — the single prior-episode-bridge entry; licensed as a synthetic preamble; confirmed necessary by R2 exposition judge who verified no lens-facet carries the c05→c06 board-state conversion. **Not superfluous.**
 
-Per-scene caps (per scene-map scene boundaries):
-- Sensory ≤3 per scene: Scene-A (0), Scene-B (sensory:1@12, sensory:2@17, sensory:3@16 = 3 — exactly at cap), Scene-C (sensory:4@22 = 1). PASS.
-- Feeling ≤1 per character per scene: feel:1@20 (Halvard, scene-C, 1 fire), feel:2@18 (Taylor, scene-C, 1 fire). Each character ≤1 per scene. PASS.
-- Metaphor ≤1 cross-character per scene: 0 entries. PASS.
-- Exposition scene-open-orient ≤1 per scene: 0 fires. PASS.
-- Dialogue per-anchor cap ≤3: 1 per anchor at @12, @19, @21. PASS.
-
-Location constraints (oc-sept-corner): all three scenes set in oc-sept-corner. The location card permits the passage-choke geometry, cold-holding ground, tallow-and-wax ambient, and Halvard's sightline from his station — all consistent with scene-map descriptions and the grounding-ledger's thermal sensory adds (cold-holding stone, visible breath in cold air). No constraint violation.
-
-Halvard Hard Fences:
-- HF-1 (not a named HOTD/F&B figure): Halvard is characterized as a minor Faith practitioner throughout; exposition:2 explicitly scopes him DOWN ("no formal sept to his name"). PASS.
-- HF-2 (does not know what Taylor is): Halvard's dialogue:1 describes the Lane man without any knowledge of Taylor's capability or arrangement. R2 halvard shard confirms "he does NOT know he is describing Taylor's arrangement." PASS.
-- HF-4 (names wrong, does not supply strategy): both Halvard dialogue entries confirmed by R2 judge. PASS.
-
-Earth-Bet proper-noun hard fence (dialogue): both character dialogue files and both R2 shards confirm zero hits. PASS.
+Note on lonely-entry convention per Phase 5 audit spec: "bones in `rhythm-shape: flat-low` zones and off-anchor vibes are never superfluous." Scene-B is `flat-tense` (nearest equivalent to flat-low); state-updates entries in scene-B (@10-@15: state:5-8) are in a held scene and carry prop-state transitions that the loaded-pause scene structurally requires. Their loneliness reflects the flat-tense design (no lens facets fire in scene-B by design); not a superfluous finding.
 
 ---
 
-### CLASS 9 — AP-SCAN
+## CONSTRAINT findings (1 HARD)
 
-**Overall: PASS with one scope-limitation SIGNAL**
+- **fault-001** [vibes:19] @25 — **vibes-licensed-by-dangling** — `vibes:19` carries `licensed-by: state-update:4, proto:25, memory:1`. The `memory:1` reference is a dead citation: R2 memory judge (`.r2-decisions.md` § memory) DELETED `mem:1 @15` (verdict: DELETE cascade 1; rationale: NI-spine absent on a bone the feeling author deliberately left silent). The cite-index confirms no `mem:1` entry exists (only `mem:2 @17`). The `lic-out=[..., memory:1]` field on `vibes:19` in the cite-index confirms the reference was emitted but now resolves to a deleted entry. **This is a cross-facet cascade defect: a vibes entry's license-anchor was deleted in R2, but the vibes facet was not re-judged in R2 (vibes is R2-exempt per command spec: "Vibes is not re-judged in R2; the showrunner-authored R1 vibes facet stands as-is unless the audit flags it"). The vibes author had no opportunity to self-correct; the R2 memory judge's delete created a dangling reference that only this audit can surface.** The CONSTRAINT rule is explicit: "vibes with unresolvable or forward-citing `licensed-by:` → HARD." This qualifies: `memory:1` is unresolvable (deleted entry). **HARD.**
+  - `why`: A vibes entry with a dangling licensed-by cites a non-existent facet entry as its authority. The stitcher render-weighting and the audience-gate's graph-aware attack both read the full `licensed-by` chain; an unresolvable citation creates an integrity gap in the facet graph's authority chain and may confuse downstream rendering behavior.
+  - `criteria`: `vibes:19` must have its `licensed-by` field updated so that `memory:1` is removed or replaced with a valid resolvable reference (either an existing facet entry or a proto-line reference). The entry itself (tragic-causal framing of Wren's absent name against the dispatched four) is substantively grounded by `state-update:4` and `proto:25` which both resolve; the fix is to drop the `memory:1` reference from the `licensed-by` field, or re-point it to `mem:2` if the thematic logic connects (both are Earth-Bet displacement callbacks to the conversion of persons to deliverables), or rely solely on the two valid citations.
+  - **Routing**: vibes author (showrunner).
 
-Dialogue AP-SCAN:
-- Halvard: R2 shard confirms no em-dash+semicolon spine, no deposition cadence, no modern-HR-speak. Single em-dash in each entry is an unpaired pausal dash in plain register, not the Taylor chassis coupling. PASS.
-- Taylor: R2 shard confirms no forbidden vocabulary, no "I feel," no hyperbole, no performance vocabulary, no apology-as-courtesy. Earth-Bet clean. PASS.
+- **scene-map coverage (URI-SCENE-WINDOW) — PASS.** Scene-map reports `coverage: 26/26 bones in exactly one scene`. Scene-A @1-@9 (9 bones), scene-B @10-@15 (6 bones), scene-C @16-@26 (11 bones); 9+6+11 = 26. `total-scenes: 3`, `total-bones: 26` match body. No gaps, no overlaps, no dangling anchors, no duplicate scene labels. **PASS.**
 
-NI AP-001 inverted-predicate template recurrence:
-See fault-008 above. File not readable on disk; direct enumeration not possible. SIGNAL — scope limitation.
+- **dialogue-coverage upstream sanity (URI-WRITE-DIALOGUE-COBONDED) — PASS.** Single dialogue-anchor bone: @4 (`wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac`). Bones file carries `[wren-stitch-maker-flea-bottom-ward:1]` citation token on @4. `theater/dialogue/wren-stitch-maker-flea-bottom-ward.md` exists, is non-empty, and resolves entry 1 to bone @4. No FAULT-UPSTREAM-LEAK. **PASS.**
 
-Exposition AP-SCAN (invented plot content):
-The grounding-ledger and exposition file both confirm no new plot content in either exposition entry. exposition:1 @0 restates world-state from handoff_in + prior-episode bridges. exposition:2 @3 restates Halvard's biography from his actor card. Sources: all enumerated and verified against on-disk cards. PASS.
+- **Earth-Bet hard-fence scan — PASS.** Full case-insensitive scan across all facet text fields (NI free-text, memory gloss and target-reference, sensory disambiguation, loc-state composite-state, vibes entity-target-primary and list-body, feeling somatic-tell, state-updates field names and values, exposition text and source fields, dialogue utterance and objective) against the canonical Earth-Bet hard-fence noun list:
+  - `memory:2` target-reference `monument-override-architecture-residue` — contains "override-architecture-residue" only; no Earth-Bet proper-noun substring (no Khepri, no Gold Morning, no shard, no parahuman, no cape-name fragment). The slug is a Westerosi-displacement target reference describing the administrative-conversion pattern. CLEAN.
+  - `vibes` entity-target-primary fields — no Earth-Bet proper-noun fragments; all vocabulary is Westerosi-register (smallfolk-gallows, tragic-causal, rising-entrapment, cold-utilitarian interiority, plain-direction, omission-as-protection, accounting, ledger, etc.).
+  - `exposition:1` text — "the coverage," "the intelligence," "the Jarvis line," "Otto," "the arrangement," "Sera," "the Hook," "the count," "the column," "the accounting," "the form," "Movement patterns," "persons," "junction," "passage" — all Westerosi-political/clinical-instrument vocabulary. The exposition R1 notes perform an embedded-noun audit that confirms CLEAN; R2 confirms. **PASS.**
+  - `dialogue:1` — "There's a way past. Cut before the cart, by the tallow-boiler's wall — the south court. It's narrow, but it's there. I been through." — no Earth-Bet noun or mechanism-naming vocabulary. **PASS.**
+  - All fields surveyed. No hit.
 
----
+- **Memory — NI-spine co-citation (CONSTRAINT: memory without NI-spine) — PASS.** `mem:2 @17`: NI fires at @17 (narrator:3). Co-citation confirmed in cite-index: `mem:2 @17 co=[narrator:3, sensory:2, state:10]`. **PASS.**
 
-### CLASS 10 — TASTE-FLAG
+- **Feeling — POV NI non-redundancy — PASS.** Taylor feel:1 @20 and NI:4 @20 confirmed distinct (see DEDUP findings). **PASS.**
 
-**Overall: 3 SIGNAL items (non-blocking; all below REVISE threshold per R2 judge)**
+- **Exposition — source-traceability — PASS.** `exposition:1 @0` cites sources in-line: `sources: chapters[b01c06].handoff_in.open_threads`, `chapters[b01c06].handoff_in.world_state`, `chapters[b01c05].handoff_out.open_threads`, `b01c05 exposition:2`, `actors/otto-hightower/card.md §relationships §taylor-hebert`, `chapters[b01c06].chunk`, `scene b01c06s01.chunk`, `cond-taylor-pov-behavior §register-cold-utilitarian §compression`, `coverage-map-instrument-family register (b01c02)`. All claims in the gloss text trace to these sources. `lic-out` in cite-index lists `[b01c03:3, b01c03:6, b01c03:8, exposition:2, b01c01:4]` as the cross-episode citation chain. **PASS.**
 
-**fault-009**
-- id: fault-009
-- type: flag
-- what: Halvard dialogue:1 @12 — aphorism-strain at "A thing built crooked doesn't come straight because you lean on it gently. It grows crooked at the rate it was always going to grow." Voice-precision attacker: this is a maxim wearing work-clothes — Draft B's sermon-closer reflex re-entered as folk-proverb.
-- why: R2 halvard judge countered: image stays inside the carpentry/debt concrete (crooked, lean, grow), bounded by the surrounding ledger, immediately re-grounded in plain English. Not a closable seam. TASTE-FLAG; non-load-bearing; below REVISE threshold.
-- criteria: n/a (SIGNAL — audience-gate Phase 5b may surface this; flagged for awareness)
+- **Exposition — license-completeness — PASS.** `licensed-by` field is a long inline string naming all three personas (cape-fic-reader, dark-fantasy-reader, worm-canon-pedant) with specific gap-claims per persona. Field is present and substantive. **PASS.**
 
-**fault-010**
-- id: fault-010
-- type: flag
-- what: Halvard dialogue:2 @21 — composed-symmetry at the closer pair: "I haven't an answer that makes your dead breathe. I've only the one I can live beside." A voice-precision attacker reads the balanced antithesis as too cut for a plain Flea Bottom man under pressure — deposition-cadence risk.
-- why: R2 halvard judge countered: the symmetry is monosyllabic plain-Anglo throughout; preceded by genuinely halting declaratives. The deposition-cadence charge fails on lack of clause-stacking. TASTE-FLAG; non-load-bearing; below REVISE threshold.
-- criteria: n/a (SIGNAL — audience-gate Phase 5b may surface this)
+- **Exposition — scene-orient fire-rule — PASS.** Zero scene-open-orient entries. Fire-audit documents three refusals (chapter-open @1: bridge+bone-body carry; scene-A→B @10: loc-state expected fire + bone-body time-carry; scene-B→C @16: continuity-no-skip). All refusals are structurally sound per the fire-rule clauses. **PASS.**
 
-**fault-011**
-- id: fault-011
-- type: flag
-- what: Taylor dialogue:1 @19 — final two sentences ("She's the first name in the count. She's why I'm in Flea Bottom at all.") edge from concrete cost toward rhetorical suasion. Voice-precision attacker: "She's why I'm in Flea Bottom at all" is a near-thesis statement of motive, approaching self-justification-to-the-room (card-forbidden).
-- why: R2 taylor judge countered: the card's closing-clause-twist is a documented signature; the reframe stays in filing register (logging why the count is hers to keep, not appealing to Halvard's sympathy); vibes:4 "ledger-deployed-as-argument-for-the-first-time" is the licensed reading. WATCH-1 concrete landing confirmed. TASTE-FLAG; sub-threshold; keep. SIGNAL for Phase 5b audience attention.
-- criteria: n/a (SIGNAL — audience-gate Phase 5b may surface this)
+- **Exposition — re-gloss check — PASS.** The R1 exposition author records: "This chapter glosses NO new terms. ZERO new register entries promote." Cross-episode register write-back is empty. No re-gloss of any term already in the register. `exposition:1`'s embedded-noun frames all resolve to prior-chapter entries. **PASS.**
 
----
+- **Exposition — first-mention-character coverage — PASS.** The exposition author's cull-pass documents that no new named individual is introduced in narrator-prose for the first time in this chapter. "The courier" at @24 is register-resident via b01c03:3 jarvis-coin-kl-courier. Wren at @3/@4 is register-resident via b01c01:9. No first-mention entry required; none is missing. **PASS.**
 
-### CLASS 11 — PILE-UP REVIEW
+- **Dialogue — behavior-card compliance — PASS.** Wren's sole utterance: "There's a way past. Cut before the cart, by the tallow-boiler's wall — the south court. It's narrow, but it's there. I been through." Checked against `westeros-smallfolk.card.md` §hard fences and `wren-stitch-maker-flea-bottom-ward/card.md` §Hard Fences:
+  - No forbidden vocabulary ("indeed, certainly, perhaps, however, nevertheless"; anachronistic idiom; multi-syllable Latinate).
+  - No Earth-Bet/mechanism leak.
+  - Collapsed past participle ("I been through") ✓ per westeros-smallfolk §Syntax.
+  - Coordination over subordination ("It's narrow, but it's there" — but, not although) ✓.
+  - Short stacked declaratives ✓.
+  - No up-the-hierarchy address (near-peer exchange; within-class register loosening ✓).
+  - Hard Fence 1 (age-appropriate — no precocious-wise commentary) ✓.
+  - Hard Fence 2 (does not ask Taylor the question) ✓.
+  - Hard Fence 3 (does not become a functional partner; gives a route and stops) ✓.
+  **PASS.**
 
-**Overall: PASS**
+- **Dialogue — citation-completeness — PASS.** The drafts sidecar `wren-stitch-maker-flea-bottom-ward.drafts.md` marks D3 as CHOSEN with both a card-signature §-citation block and a facet-license acknowledgment (vibes:1/@4 and vibes:2/@4 cited in the R2 decision shard; narrated in the dialogue R2 shard body). Card-signature §-cites: westeros-smallfolk §Cadence, §Syntax (collapsed past participle), §Syntax (coordination over subordination), §Vocabulary (functional geography), §Register-markers (within-class loosening); persona card §Voice tells (reports observed before interprets). Both axes present. **PASS.**
 
-Four pile-ups (>4 facets co-located):
+- **Dialogue — objective-anchoring — PASS.** Entry 1 carries `objective: give Taylor the checked route past the blocked lane, freely and unasked — moving the relational anchor from ward-in-coverage to a person who has spoken to Taylor and been answered`. This is non-empty and matches the proto-line bone @4 (`wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac`) and the scene-A substance contract (relational_anchor_status +1.0 cl-d06 first tranche). **PASS.**
 
-- **@23** (6: loc-state:5, narrator:7, state:3, state:4, vibes:3, vibes:15): Taylor leaves the sept-corner — scene-map scene-C peak-shadow bone, @23 "WATCH-3 foreclosure-planted-not-enacted." loc-state:5 = exit geography. narrator:7 = NI WATCH-3 interior-ledger. state:3/4 = state write-back. vibes:3/15 = operator-facing. 2 prose-facing entries (loc-state + NI); remainder are state/operator. Rendering complexity: manageable (loc-state as scene-close geography frame; NI as interior-ledger voice). PASS.
+- **Loc-state transition-run continuity-license — N/A.** No continuity-carry entries in location-state. The two entries are standard state-establishment entries. **N/A.**
 
-- **@12** (5: sensory:1, septon-halvard-flea-bottom:1, vibes:2, vibes:12, vibes:14): Halvard speaks — scene-map scene-B peak-shadow bone. sensory:1 = sound modality pivot. dialogue:1 = the thesis. 3 vibes = operator-facing. 2 prose-facing entries (sensory + dialogue); dialogue is the primary content carrier. PASS.
-
-- **@19** (5: mem:2, narrator:4, taylor-hebert-kl-122ac:1, vibes:4, vibes:5): Taylor speaks — scene-map scene-C peak-shadow bone, WATCH-1 anchor. dialogue:1 = Wenna Cobb counter. narrator:4 = cognition under the words. mem:2 = doubled-register monument. vibes:4/5 = operator-facing. 3 prose-facing entries (dialogue primary + NI + memory monument). Pile-up is dense but all three prose-facing entries are non-DEDUP and serve distinct layers. The stitcher will sequence: dialogue primary / NI interior-ledger / memory monument shape-only. PASS — but stitcher must not let NI or memory dilute the dialogue's WATCH-1 concreteness. SIGNAL for stitch.
-
-- **@21** (5: septon-halvard-flea-bottom:2, vibes:6, vibes:7, vibes:8, vibes:12): Halvard acknowledges cost — scene-map scene-C peak-shadow bone. dialogue:2 = cost-acknowledgment. 4 vibes = operator-facing. 1 prose-facing entry (dialogue). PASS.
-
-**fault-012**
-- id: fault-012
-- type: flag
-- what: Pile-up at @19 (5 entries; 3 prose-facing: dialogue:1 WATCH-1 concrete / narrator:4 / mem:2 monument shape). Stitcher must render @19 dialogue as primary carrier; NI and memory must not dilute the WATCH-1 concreteness.
-- why: The central-event-muffle risk is armed at /and-stitch Phase 8.5 (PASS-CHUNK-VOICE-RISK). If the stitcher uses narrator:4's precision-framing or mem:2's monument-register as the primary rendering surface instead of the dialogue, the named-death concreteness is muffled. This is the chapter's WATCH-1 anchor.
-- criteria: n/a (SIGNAL — flagged for stitcher Phase 1 and Phase 8.5)
+- **State-updates — POV co-citation completeness (actor:POV entries require NI co-citation) — PASS.** Three POV actor-state shifts noted in the taylor source slice with explicit co-citation notes:
+  - state:19 @8 (relational_anchor_status 2→3) — NI co-citation present: narrator:2 @8 and narrator:7 @8. Confirmed in cite-index: `state:19 @8 back=N co=[narrator:2, narrator:7, state:2, vibes:6-9]`. **PASS.**
+  - state:20 @23 (moral_framework 1→0) — NI co-citation: narrator:5 @23. Confirmed in cite-index: `state:20 @23 back=N co=[narrator:5, state:3, state:14, vibes:13-17]`. **PASS.**
+  - state:21 @25 (moral_legibility_to_self 4→4.5) — NI co-citation: narrator:6 @25. Confirmed in cite-index: `state:21 @25 back=N co=[narrator:6, state:4, state:16, vibes:18-20]`. **PASS.**
 
 ---
 
-### CLASS 12 — RUBRIC-FIDELITY
+## AP-SCAN findings (0)
 
-**Overall: SIGNAL (2 items; 0 HARD)**
+- **Memory AP-functional-callback**: mem:2 @17 — R2 judge (memory section) addresses the multi-justification stack: monument-trigger (four-bodies-to-persons conversion at administrative-violence scale) + NI-spine co-citation + audience-meaningful (conversion of people into a deliverable) + ≥2 functional jobs (painting-characterization + social-commentary) + scene-eligible (rising accounting zone, not peak). Multi-justification ≥3 of 5 confirmed. No AP-functional-callback (would require: functional callback only, NI-spine missing, target unresolvable). **CLEAN.**
 
-**fault-013**
-- id: fault-013
-- type: flag
-- what: mem:2@19 ships a free-text gloss `(westeros: founding-death-the-slower-method-produced)` with no resolved monument card. A SIGNAL-class rubric-fidelity item per the memory rubric's monument-card resolution requirement.
-- why: The gloss is a placeholder for a monument card not yet created. The rubric expects monument callbacks to resolve to a card slug. The R2 memory judge called this a margit referral SIGNAL (slug `monument-founding-death-the-method-produced`). Does not block stitching but the card should be created before the chapter's monuments are considered fully resolved.
-- criteria: n/a (SIGNAL — margit referral; slug: monument-founding-death-the-method-produced)
+- **Feeling AP-named-feeling-vocab**: both feel:1 entries use somatic-tell form only:
+  - Taylor feel:1: "her hand stops above the two finished entries" — no named feeling, no hedge, no simile, no second clause latency observation. **CLEAN.**
+  - Wren feel:1: "her eyes find Taylor in the press before her feet turn toward her" — no named feeling. **CLEAN.**
 
-**fault-014**
-- id: fault-014
-- type: flag
-- what: Taylor drafts sidecar (active-project/staff/dialogue-writer/taylor-hebert-kl-122ac.drafts.md) carries `facet-licenses: N/A at /and-write time` on the single chosen entry (:1 @19). The rubric requires both card-signatures and facet-licenses axes to be populated in the sidecar's chosen-mark block post-R2. The R2 taylor shard separately resolves the citations (narrator:4@19, mem:2@19, vibes:4+5@18-19, feel:2@18) but the sidecar's chosen-mark block is not updated.
-- why: Per rubric "citation-completeness is enumerated per entry, not per file" — the audit surface is the sidecar, not the R2 shard. The sidecar's entry remains with a non-populated facet-licenses field. A second-cycle audit (if run) would escalate this to HARD per the rubric's cycle-2 escalation clause. At cycle-1, it is SIGNAL.
-- criteria: n/a (SIGNAL — cycle-1; sidecar chosen-mark block should be updated with resolved facet-licenses citations before Phase 5b or next cycle)
+- **Metaphor AP3/AP7/AP12**: zero entries. No scan needed.
 
-**Halvard sidecar rubric-fidelity — PASS.** Both entries carried DEFERRED-TO-R2 in the sidecar and the R2 halvard shard resolves both entries within the same document to concrete `<facet>:<id>@<anchor>` citations (`:1` → `sensory:1@12 + vibes:2/12`; `:2` → `feel:1@20 + vibes:6/7/8@20-21`). The resolution is co-located with the DEFERRED marker and unambiguously resolves it. PASS.
+- **Vibes AP-multi-source / AP8 sentence-parsability**: vibes entries use entity-target-primary form with bracketed tag-lists. Each entry names exactly one entity-target-primary (an actor slug or loc slug or `episode` or `series`). No multi-source vibes entries. Parsability: tag-list items are hyphenated descriptors in standard form; no sentence-parsability anomaly. **CLEAN.**
 
-**Exposition rubric-fidelity — PASS.** Both entries have full sources:, licensed-by:, renders-as:, scope:, fence-audit sections. exposition:2 word-cap honored (trimmed to exactly 30 words at R1 cull). exposition:1 at 105 words under 120 prior-episode-bridge cap. Earth-Bet hard fence: both entries clean. Embedded-noun completeness: all proper-noun frames resolved to register-resident slugs or common-English. Wenna-Cobb withhold confirmed held. PASS.
+- **Dialogue AP-chassis-contamination** (em-dash + semicolon spine on non-Taylor speakers): Wren's line contains one em-dash (`by the tallow-boiler's wall — the south court`) used as a geographic clarifier, not as Taylor's chassis em-dash-as-subordinating-splice. This is a direction-giving em-dash (naming the place) in a smallfolk utterance — structurally distinct from the Taylor-prose em-dash cadence. No chassis bleed. **CLEAN.**
 
-**Grounding-ledger carve-out annotations (sensory:3/4) — PASS.** Both entries carry `licensed-grounding-exception: grd-001/grd-002`. Both ledger entries have `status: satisfied`. The `satisfied_by:` fields resolve to specific sensory entries on disk. Carve-out annotations resolve to real ledger entries. PASS.
+- **Dialogue AP-modern-hr-speak**: Wren's line — none. All vocabulary is functional geography + plain direction. **CLEAN.**
+
+- **Dialogue AP-deposition-cadence**: not applicable; single declarative offering, not a Q-and-A. **CLEAN.**
+
+- **Dialogue AP-nominalization-substituting-plain-English**: not applicable; Wren's register is verb-driven declaratives. **CLEAN.**
+
+- **NI AP10 inverted-predicate saturation check**: R2 judge identified three possible AP10-adjacent constructions. "the blank is the entry" (@8), "a clean accounting is what the breach looks like" (@23), "only one of them will ever balance" (@25). R2 judges correctly classified: only @23 uses the genuine definitional-collapse construction ("is what the breach looks like from inside the discipline"). @8 is copular identity-of-a-ledger-object; @25 is a future-tense verdict, not a present-tense definitional collapse. Rule caps the chassis at one per file at a register-defining peak; @23 is the legitimate fire. Count: 1 of 7 entries = 14% — well below the 40% saturation threshold. **CLEAN.**
+
+- **AP-SCAN saturation (URI-AP-SCAN-SATURATION)**: no facet reaches the 40% hits/total-entries threshold. NI: 1 AP10-adjacent in 7 entries = 14%. No saturation. **CLEAN.**
 
 ---
 
-## Dialogue-specific hard checks (per dispatch)
+## TASTE-FLAG findings (0)
 
-**FAULT-UPSTREAM-LEAK (HARD gate) — CLEAN.**
-Every dialogue-anchor bone (@12, @19, @21) is cited by ≥1 `[<slug>:<id>]` token on the canonical proto-lines. Every speaker (halvard, taylor) has a non-empty theater/dialogue file. No FAULT-UPSTREAM-LEAK.
+- **Atmosphere-thin**: Scene-B (@10-@15) carries 6 bones with no lens-facet fires except state-updates. This is by architectural design (flat-tense loaded pause; all axes HELD). The scene-map documents the loaded-pause integrity protected pattern. The grounding-ledger has zero entries, confirming the Phase 2.5/4.5 aliveness reviewer found scene-B ALIVE (not AIRLESS-HOLE) on the de-abstracted scaffold. The verdict-pause bone @20 is the structural breath-point and it receives feel:1 + NI:4 + sensory:3 + vibes:12. The TASTE-FLAG risk for atmosphere-thin was assessed at the bone-gate and aliveness review; no residual TASTE-FLAG warranted here.
 
-**BEHAVIOR-CARD-COMPLIANCE (HARD gate) — CLEAN.**
-- Halvard: zero Seven-invocations, zero Faith jargon, zero forbidden cadence (no homiletic sermon-rhythm). Actor overlay "plain language; no theological jargon" correctly overrides base westeros-septon homiletic patterns. Both dialogue entries confirmed Q1+Q2 ACCEPT at R2.
-- Taylor: zero forbidden vocabulary (no "I feel," no softeners, no hyperbole, no performance vocabulary). Earth-Bet hard fence clean. Both card-signature and behavior-card citations populated.
+- **Voice-fidelity**: NI entries reviewed for Taylor-voice register. All seven entries use the cold-utilitarian clinical-accounting vocabulary the card specifies (the feed, the hand, the count, the column, the entry, the watch-cost, the seal, the ledger). No register drift to literary/thematic narration (none "names the road-to-hell irony from outside"). **CLEAN.**
 
-**EARTH-BET PROPER-NOUN SCAN (HARD gate) — CLEAN.**
-Case-insensitive scan of all dialogue utterance text against canonical hard-fence list. Both R2 shards confirm zero hits. Utterance text read directly from theater/dialogue/ files — zero hits confirmed independently.
+- **Momentum-stall**: Scene-B designed as flat-tense; this is load-bearing structure, not stall. Per Phase 5 SUPERFLUOUS convention: bones in flat-low zones are never superfluous. Flat-tense is the scene-B design intent and is protected by the scene-map. No TASTE-FLAG.
 
-**DIALOGUE OBJECTIVE-ANCHORING (SIGNAL gate):**
-- Halvard:1 objective: "name what is wrong with the Lane man's arrangement, working it through honestly, not aimed at Taylor." The utterance delivers the Lane-man-compound-corruption thesis without naming Taylor as the target. Hard Fence #2 honored ("he does NOT know he is describing Taylor's arrangement"). PASS.
-- Halvard:2 objective: "acknowledge the cost of his own position honestly without retracting it or claiming she is wrong." The utterance names the burial-by-the-slow-way, accepts the named death as binding, holds his position. Hard Fence #4 honored (no strategy supplied). PASS.
-- Taylor:1 objective: "deploy the counter by naming the specific cost the slower method already exacted." WATCH-1 concrete landing confirmed: name (Wenna) + family (Cobb) + age (six) + street (Pig-Tallow Lane) + district (the Hook) + season (fever season, two years back) + failure-mechanism + ledger-position. PASS.
+---
+
+## PILE-UP REVIEW (4)
+
+Per cite-index §Pile-ups:
+
+- **@23** (8 co-located: narrator:5, state:3, state:14, vibes:13, vibes:14, vibes:15, vibes:16, vibes:17) — `taylor-hebert-kl-122ac seals the jarvis-channel form`. Verdict: **warranted**. @23 is the moral peak of the chapter (THE SEND, moral_framework -1.0). Per-scene peak with the highest axis-magnitude in the chapter. 5 vibes entries fan out across taylor actor, episode scope, and series scope (the rationalize-each-trade pattern-class established); narrator:5 carries the discipline-internal framing; state:3 (@7 content propagation) and state:14 (@23 form-sealed state) are the prop-transitions recording the irreversible act. The pile-up reflects the chapter's central irrevocable event receiving full-coverage treatment across every scope level. The de-abstraction integrity protected pattern guards against this becoming re-abstraction at stitch. Pile-up warranted.
+
+- **@4** (7 co-located: narrator:1, vibes:1, vibes:2, vibes:3, vibes:4, vibes:5, wren-stitch-maker-flea-bottom-ward:1) — `wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac`. Verdict: **warranted**. The first spoken exchange between Wren and Taylor (relational_anchor_status +1.0 first tranche) is the chapter's other peak-bone (scene-A rising-to-low-peak). 5 vibes entries establish the smallfolk-gallows register, the plain-direction exchange, the mutual-silence resumption, and the location-as-site of the exchange across actor (×2) and location (×2) and mutual-silence (×1) angles. Narrator:1 carries Taylor's POV cost-frame. Dialogue:1 carries the actual spoken line. Concentration is appropriate for a relational peak and the chapter's first spoken Wren exchange. Warranted.
+
+- **@8** (7 co-located: narrator:2, narrator:7, state:2, vibes:6, vibes:7, vibes:8, vibes:9) — `taylor-hebert-kl-122ac blanks the contact-source field`. Verdict: **warranted**. The omission-enacted peak-bone of scene-A. 4 vibes entries cover the act across three angles (taylor omission-authored-protection, taylor cold-utilitarian, wren indirect protection, location-holds-the-charge). NI:2 and NI:7 cover the act and the substrate-distinction respectively. State:2 records the prop-state extension. The dispersion is required: the omission is the chapter's only Wren-adjacent moral act in scene-A and it needs coverage at every frame level. Warranted.
+
+- **@25** (6 co-located: narrator:6, state:4, state:16, vibes:18, vibes:19, vibes:20) — `taylor-hebert-kl-122ac opens the ward-coverage notes`. Verdict: **warranted** with note. @25 is a peak-bone (moral_legibility_to_self +0.5, the contrast recognition). 3 vibes entries: cold-utilitarian contrast read (taylor, vibes:18), tragic-causal wren-absent framing (wren, vibes:19), rising-entrapment wren framing (wren, vibes:20). NI:6 carries the legibility-rise ("the same hand, two ledgers, only one will ever balance"). State:4 and state:16 record the coverage-notes reopen and the holder-transfer respectively. NOTE: vibes:19 @25 carries the dangling `licensed-by: memory:1` (see fault-001 in CONSTRAINT section). The entry itself is substantively covered by `state-update:4` and `proto:25`; the pile-up verdict does not change on this account, but fixer must resolve the dangling citation before Phase 5b.
+
+---
+
+## RUBRIC-FIDELITY findings (1 SIGNAL)
+
+- **signal-001** [state-updates: oc-prop slugs] — **rubric-fidelity-card-resolution** — entries on targets `prop:oc-ward-coverage-notes`, `prop:oc-jarvis-channel-form`, `prop:oc-accounting-ledger` (state:2-17 inclusive, covering SEAM-006, SEAM-007, SEAM-008) reference oc-slug targets for which no warehouse card exists in `active-project/warehouse/` at audit time. The state-updates rubric's §Card-resolution requirement (RUBRIC-FIDELITY class 12(d)) states that every entry naming a prop slug must resolve to an existing card. The carve-out claim (rubric §Field-extension protocol permits oc-slug extension when the prop card is pending margit) is documented in-file, is structurally sound (these are the chapter's central instrument props; refusing all entries would hollow the state-track), and is precedented in prior chapters (per the carve-out comment citing b01c05 patterns). Per URI-FACETS-CYCLE-1, in-chapter precedented unresolved slugs with structurally clear glosses are **SIGNAL** with a margit-referral candidate slug, not HARD. Classification: **SIGNAL.**
+  - Margit-referral candidate slugs: `prop-oc-ward-coverage-notes` (Taylor's personal coverage-notes book / record; Ward coverage instrument containing the contact-source/contact-role field structure); `prop-oc-jarvis-channel-form` (the Jarvis-channel routing form Taylor files with the courier; the intelligence-delivery instrument that routes deliverables up to Otto's network); `prop-oc-accounting-ledger` (the ledger-board Taylor uses for the explicit cost-accounting record; two-column: cost side + protection side).
+  - **Routing**: margit (card authoring for three oc-prop slugs); state-updates author (ENV slice — studio) should verify the margit-authored cards match the field-extension vocabulary once cards are available.
+
+- **memory — doubled-register file-level gate — SOFT NOTE.** The rubric requires a doubled-register file (at least one Earth-Bet displacement fire AND at least one Westerosi-monument clamp fire). With `mem:1` deleted, the surviving file has only `mem:2 @17` which is the Earth-Bet-displacement leg (four-bodies-to-persons administrative conversion → Westerosi accounting act). The Westerosi-monument clamp (Dance foreknowledge; "the wards holding the losing color are the ones that burn first" from mem:1) was the monument leg. Deleting mem:1 collapses the file to single-register (Earth-Bet displacement only). The R2 memory judge's pattern-scan explicitly addresses this: "The doubled register is per-season; c06 lands single-register (Earth-Bet only) because the spine fence forced it, which the rubric's soft single-register clause explicitly permits." The rubric's soft single-register clause permits this when the spine fence forces it (the V3 feel-as-spine carve-out conditions were not met at @15: chapter is climax not hinge; feel:1 is at @20 not @15). The R2 judge accepted this as a known trade-off (see cap-burn semantics note in R2 memory decisions: "The doubled register is per-season; c06 lands single-register … which the rubric's soft single-register clause explicitly permits"). This is **not a HARD finding** given the rubric's own soft clause; but it is a **SIGNAL** that the file is single-register and that future readers of this chapter's memory facet will see an Earth-Bet displacement only, with the Westerosi monument leg absent. Per the R2 judge's cap-refusal note: "the Dance-clamp at @15 failed spine, not displacement; relocating it forward to a beat with a spine was tempting but no quiet-beat in scene-B/C carries the succession-clamp cue." The trade-off is accepted and documented.
+  - This note is captured in the RUBRIC-FIDELITY class for completeness; no fixer action required (the R2 judge already evaluated the trade-off against the rubric's soft clause). Advisory only.
 
 ---
 
 ## Audit summary
 
-| Class | Findings | Severity |
-|---|---|---|
-| STRUCTURAL | PASS — 1 vibes-anchor-absent note (schema-compliant) | — |
-| FREQUENCY-BAND | 5 SIGNAL items (NI carve-out / sensory base-line over / feeling over / memory under / exposition over) | SIGNAL ×5 |
-| METADATA-INCONSISTENCY | 1 SIGNAL item (slug hyphenation inconsistency) | SIGNAL ×1 |
-| CURVE-SHAPE | PASS — 1 SIGNAL scope-limitation (NI AP-001 scan blocked by file unavailability) | SIGNAL ×1 |
-| CONTRADICTION | PASS — Derry/Wenna adjacency confirmed distinct by design | — |
-| DEDUP | PASS | — |
-| SUPERFLUOUS | PASS | — |
-| CONSTRAINT | PASS — all per-scene caps clean; scene-map coverage clean; location/character hard fences clean | — |
-| AP-SCAN | PASS — scope limitation on NI AP-001 | SIGNAL ×1 |
-| TASTE-FLAG | 3 SIGNAL items (Halvard:1 aphorism-strain / Halvard:2 composed-symmetry / Taylor:1 suasion-edge) | SIGNAL ×3 |
-| PILE-UP REVIEW | PASS — 1 SIGNAL item (@19 WATCH-1 muffle-risk for stitcher) | SIGNAL ×1 |
-| RUBRIC-FIDELITY | 2 SIGNAL items (mem:2 monument-card referral / Taylor sidecar facet-licenses not updated in chosen-mark block) | SIGNAL ×2 |
-| DIALOGUE HARD CHECKS | PASS — upstream-leak, behavior-card, Earth-Bet all clean | — |
-
-**HARD count: 0**
-**SIGNAL count: 14**
-**TASTE count: 3 (included in the 14 SIGNAL total above; separated for reference)**
-
----
+- **Total entries reviewed**: 57 facet entries + 1 dialogue entry = 58 entries across 9 facet files + 1 dialogue file.
+- **HARD classes**: STRUCTURAL 0 | CONTRADICTION 0 | DEDUP 0 | SUPERFLUOUS 0 | CONSTRAINT 1 (fault-001: vibes:19 dangling licensed-by: memory:1) | RUBRIC-FIDELITY 0
+- **SIGNAL classes**: FREQUENCY-BAND 2 (sensory breach-high; state-updates density) | METADATA-INCONSISTENCY 0 | AP-SCAN 0 | TASTE-FLAG 0 | PILE-UP warranted 4/4 | RUBRIC-FIDELITY 1 (oc-prop card-resolution; margit-referral) + 1 soft advisory (memory single-register per rubric's soft clause)
+- **CURVE-SHAPE**: SHAPE-OK (climax chapter; scene-A rising-to-low-peak / scene-B flat-tense / scene-C rising-to-peak; all coherent with declared dramatic_shape)
 
 ## Routing
 
-**Phase 5b audience-gate: CLEARED TO FIRE.**
+For each finding:
 
-HARD count = 0. The cross-cutting graph audit finds no blocking fault. All 14 SIGNAL items are either pre-announced exemptions (FREQUENCY-BAND denominator-driven items; NI carve-out; memory under-fire; exposition over-fire), scope limitations (NI AP-001 file unavailability), or informational flags for downstream phases (WATCH-1 stitcher note; Derry/Wenna adjacency; slug inconsistency; monument card referral; sidecar citation-completeness).
+| Finding | Type | Routing |
+|---------|------|---------|
+| fault-001 — vibes:19 @25 dangling `licensed-by: memory:1` | HARD | fixer → vibes author (showrunner) |
+| signal-001 — oc-prop card-resolution (SEAM-006/007/008) | SIGNAL | margit (prop card authoring) |
+| signal-002 — sensory breach-high (11.5% vs 3-6% band) | SIGNAL | audience-gate (advisory; not a fixer action) |
+| signal-003 — state-updates density (84.6% vs band; carve-out filed) | SIGNAL | audience-gate (advisory; not a fixer action) |
+| soft advisory — memory single-register (rubric soft clause accepted) | advisory | no action; R2 judge trade-off documented |
 
-**Action items by finding:**
+**Phase 5 gate status**: HARD = 1 (fault-001). Phase 5b cannot fire until fault-001 is resolved and Phase 5 is re-run with 0 HARD.
 
-SIGNAL items requiring downstream attention:
-- fault-008 (NI AP-001 scope): if NI file becomes accessible, AP-001 inverted-predicate cap scan should run before stitching.
-- fault-012 (pile-up @19 / WATCH-1 muffle): stitcher Phase 1 and Phase 8.5 must render @19 dialogue as primary; NI/memory must not dilute concreteness. Already armed via PASS-CHUNK-VOICE-RISK.
-- fault-013 (margit referral): mon card `monument-founding-death-the-method-produced` should be created by margit; non-blocking on current chapter.
-- fault-014 (Taylor sidecar facet-licenses): sidecar chosen-mark block at @19 should be updated with resolved facet-licenses before cycle-2. Non-blocking at cycle-1.
-- fault-007 (slug inconsistency): showrunner to standardize slug format (b01c07 vs b01-c07) across production files at next re-run.
+---
 
-TASTE items for Phase 5b audience attention:
-- fault-009 (Halvard:1 aphorism-strain), fault-010 (Halvard:2 composed-symmetry), fault-011 (Taylor:1 suasion-edge): all three surfaced and defended in R2 dialogue shards. Audience-gate may independently call these.
+## Phase 5 remediation — cycle 1 (2026-05-31)
 
-No fixer dispatch warranted on any finding.
+**fault-001 (HARD) RESOLVED.** vibes:19 @25 `licensed-by` had `memory:1` removed (R2-deleted mem:1; entry content covered by the surviving `state-update:4` + `proto:25`). cite-index rebuilt; vibes:19 lic-out=[state-update:4, proto:25]; zero `memory:1`/`mem:1` tokens anywhere in proto-lines, vibes.md, or cite-index. A citation removal cannot introduce new STRUCTURAL/CONTRADICTION/DEDUP/CONSTRAINT findings.
+
+**Phase 5 gate: HARD = 0.** Cleared for Phase 5b.
+
+SIGNALs (4) carried as advisory to Phase 5b:
+- signal-001 oc-prop card-resolution (SEAM-006/007/008) -> margit referral
+- signal-002 sensory FREQUENCY-BAND 11.5% (modality-floor precedence + old-state carve-out)
+- signal-003 state-updates density (oc-prop first-touch + prop-centric chapter carve-out)
+- soft: memory single-register (R2 spine-fence trade-off accepted)

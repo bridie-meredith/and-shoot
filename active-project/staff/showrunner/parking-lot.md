@@ -994,3 +994,48 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-05-31-002
+      created_at: 2026-05-31T00:00:00Z
+      created_by: "/and-write b01c06 revise --from-signals Phase 6 (audience s03 verdicts — render-layer soft carries)"
+      label: c06-s03-stitch-render-watches-post-deabstraction
+      target:
+        command: /and-stitch
+        scope: b01c06
+        phase: Phase 4
+      severity: SOFT
+      description: |
+        Two render-layer watches the audience trio attached to their b01c06 revise
+        Phase-6 SUBSTANCE-FELT verdicts on the de-abstracted s03. Both are /and-stitch
+        Phase 4 voice-embodiment disciplines, NOT bone defects (bones are concrete +
+        airless-cleared 3/3 at the bone layer). Also surfaced in scene-map-b01-c06.md
+        s03 protected-patterns.
+        (a) dark-fantasy-reader — flat 19 `taylor marks the red-keep coverage record`:
+            clean concrete bone, but the ONE place airlessness could re-enter at the
+            render layer. Render as a physical act; do NOT expand into a structural-
+            architecture summary sentence ("she checked the record to confirm the
+            arrangement was still purchasing something real"). That re-introduces the
+            instrument-reporting-itself register the depth pass removed.
+        (b) worm-canon-pedant — the two `opens` bones (@16 opens the ledger-board,
+            @25 opens the ward-coverage notes): space them in prose rendering to prevent
+            a metronomic open/close rhythm. Not a bone-level tic (separated by the full
+            accounting + the send); a prose-cadence watch.
+        The depth pass's whole purpose is the readability cure; these protect it from
+        regressing at the render layer. The DEC-0048 escalation clause is live — the
+        re-cascade /and-stitch Phase 9 cold-read is the terminal test (AIRLESS-on-central-
+        event -> FAIL/re-decompose).
+      context_refs:
+        - active-project/audience/dark-fantasy-reader/bone-gate-b01c06-revise.md
+        - active-project/audience/worm-canon-pedant/bone-gate-b01c06-revise.md
+        - active-project/theater/facets/scene-map-b01-c06.md  # s03 protected-patterns
+        - active-project/staff/auditor/write-b01c06-bone-gate-revise.md
+      resolution_suggestion: "/and-stitch b01c06 Phase 4 voice-embodiment: render flat 19 as physical act; space the two 'opens'"
+      status: resolved
+      resolved_at: 2026-05-31T00:00:00Z
+      resolved_by: "/and-stitch b01c06 (depth-pass re-cascade) Phase 1 render + Phase 9"
+      resolution_note: |
+        Both watches honored. flat-19 rendered as a concrete physical act ("I drew the line
+        that marked the red-keep coverage — one stroke, the stylus laid flat and pulled across
+        the record, the paid mark"), NOT an architecture-summary; Phase 8.5 coherence + Phase 9
+        Step 3.5 (0 mutes) both confirmed @19 cleared. opens-spacing honored: @6/@16/@25 rendered
+        with three distinct textures (no metronome). Chapter terminal per DEC-0058.

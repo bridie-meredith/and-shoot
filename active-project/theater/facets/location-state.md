@@ -1,10 +1,8 @@
 facet: location-state
-episode: b01c07
+episode: b01c06
 author: studio
 ---
 
-1 @1 oc-sept-corner | morning | none | handcart-blocking-passage | the choke-point narrows to single-cart width — the ward circuit cannot pass through
-2 @7 oc-sept-corner | morning | none | passage-clearing | sept-bay shadow on the crossing stone — the threshold where lane-cold meets corner-cold
-3 @9 oc-sept-corner | late-morning | none | passage-open | cold-holding ground unwarmed — the sept-side stone holds the night cold past the morning light shift; sound: halvard-pastoral-account-register (ongoing; sick-child account, low-register pastoral counsel, corner ambient)
-4 @15 oc-sept-corner | late-morning | none | passage-open | sept-corner stone underfoot — the ground cold grips through the soles at the planted weight
-5 @23 oc-sept-corner | late-morning | none | passage-open | the cross-lane mouth opening off the corner — the exit that clears Halvard's sight line
+1 @1 oc-stitch-house-lane | morning | lane-passable-morning-flow | lane-mouth-blocked-handcart | the handcart sits crossways at the north opening, crowd pressure backing the junction solid
+# Phase-5b cycle-2 (old-state-reader REVISE): old-state set to lane-passable-morning-flow (the chapter-open passable baseline the handcart-blocks transition departs from); anchors sensory:1 @2 pressure old-state in-stream (was card-§Hazards carve-out). Corroborated by state:1 @1 (lane-mouth: clear -> handcart-blocking).
+2 @5 oc-stitch-house-lane | morning | none | south-court-working-position | the south-court gap off the tallow-boiler's wall — narrow but clear, lane-blocked side now behind her

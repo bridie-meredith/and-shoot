@@ -1354,9 +1354,10 @@ evidence_refs:
   - "active-project/staff/auditor/write-b01c04-bone-gate-redo.md — PASS verdict after redo; additive cycle confirms the 2.0 target with 1.0-per-scene split is structurally valid"
   - ".claude/commands/and-write.md — Phase 2: FAULT-BONE-DELTA-MALFORMED classification: magnitude outside chunk_targets.bone.delta_per_axis is a HARD fault"
   - "schemas/showrunner-memory.schema.md — chunk_targets.bone.delta_per_axis field (the floor the chapter contract must pre-flight against)"
-recurrence_count: 2
+recurrence_count: 3
 recurrence_refs:
   - "active-project/staff/auditor/write-b01c06-bone-gate.md — signal-001 + signal-002: moral_legibility_to_self scene-aggregate target +0.5 (fractional residual after scene distribution); bone-floor 1.0 forced over-delivery to +1.0; accepted-with-rationale; stakes-axis tie (moral_framework=moral_legibility at 1.0 each) is a direct consequence of the same fractional-target-floor collision. Second chapter exhibiting this exact structural pattern (b01c04 was first). No HARD fired; accepted path worked. Confirms recurrence is predictable on any chapter with fractional scene residuals."
+  - "active-project/staff/auditor/write-b01c06-bone-gate-revise.md — signal-001 + signal-002 (identical signals, depth-pass revise run): moral_legibility +0.5→+1.0 bone-floor artifact + stakes-tie mf=mls at 1.0. Third chapter run exhibiting the fractional-target-floor collision. Merged by DEC-0057."
 proposed_diff: |
   In .claude/commands/and-substance.md, in the chapter-level authoring phase (Phase 4 or
   Phase 5 — whichever phase persists the per-scene substance contract to memory), add a
@@ -3407,6 +3408,294 @@ proposed_diff: |
     updated the ledger. If accepted: adds one STRUCTURAL sub-check to the auditor scan spec with no
     other command-body changes.
     Cost if added: S. Can be accepted or deferred independently of the fixer-brief primary fix.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0028
+
+```yaml
+id: PROP-0028
+created_at: 2026-05-31T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/write-b01c06-bone-gate-revise.md
+  source_verdict: "Phase 6 revise bone-gate PASS — 1 HARD FAULT-FORM-NON-ACTION-VERB on @20 'holds the stylus' (narrow-holds-license misread; resolved in-invocation to 'stills the hand')"
+target:
+  type: command
+  path: .claude/commands/and-write.md
+  section: "Phase 1 — Scene-decomposition, step 2 (verb-form SVO discipline)"
+change_type: modify
+rationale: |
+  The narrow `holds` license in schemas/bones.schema.md permits `holds` only when (1) the
+  object is a body part of the subject and the action is stillness-against-pressure, or (2) the
+  object is a physical object resisting external pressure. The schema supplies one deny-list
+  example: "taylor holds the ledger" (non-body-part physical object, not pressure-resisting).
+
+  Three chapters have now produced holds-license violations, each a different sub-type:
+
+  Occurrence 1 — b01c04: "the cooper's-yard workers hold the smallfolk-hours murmur"
+    Sub-type: group subject + abstract acoustic-register object.
+    Disposition: advisory flag (auditor accepted with annotation; not HARD-blocked).
+    Source: bones-b01c04-2026-05-27.md (prior re-audit new-flag-002).
+
+  Occurrence 2 — b01c07: "septon-halvard-flea-bottom holds the silence"
+    Sub-type: abstraction-as-object ("the silence" is the schema's own deny-list pattern
+    from the abstraction-as-object rule, but the author reached for `holds` instead of a
+    schema-clean form). HARD, caught at /and-review bones.
+    Source: bones-b01c07-fidelity-2026-05-30.md fault-003.
+
+  Occurrence 3 — b01c06 revise: "taylor-hebert-kl-122ac holds the stylus"
+    Sub-type: non-body-part physical object (parallel to the schema deny-list example
+    "taylor holds the ledger" — a stylus is the same class as a ledger). HARD, caught at
+    Phase 6, resolved in-invocation via auditor-specified recast ("stills the hand").
+    Source: active-project/staff/auditor/write-b01c06-bone-gate-revise.md fault-001.
+
+  Pattern: the screen-writer consistently over-extends the holds license beyond its two
+  licensed conditions. The schema provides the rule and one deny-list example. The Phase 1
+  SVO discipline brief does not supply authoring guidance on holds-license scope — the
+  screen-writer must derive the license from the schema at authoring time, and the derivation
+  is failing at recurrence-3.
+
+  The gate (Phase 6 for co-bonded bones; /and-review bones for the fidelity review) catches
+  correctly in all three cases. The gap is at the authoring brief: a Phase 1 note enumerating
+  both conditions explicitly and providing negative examples parallel to the schema deny-list
+  would prevent mis-derivation before the gate fires.
+
+  change_type: modify (not add — the SVO discipline section already exists; this adds a
+  named subsection to it); cost: S.
+evidence_refs:
+  - "active-project/staff/auditor/write-b01c06-bone-gate-revise.md — fault-001: FAULT-FORM-NON-ACTION-VERB on 'holds the stylus'; auditor named the two licensed conditions and the deny-list parallel; resolved in-invocation by recast to 'stills the hand'"
+  - "active-project/staff/reviews/bones-b01c07-fidelity-2026-05-30.md — fault-003 (line 96-109): 'septon-halvard-flea-bottom holds the silence' HARD; auditor cited the narrow holds license and the deny-list example 'the yard holds the silence'"
+  - "active-project/staff/reviews/bones-b01c04-2026-05-27.md — flag-001 (lines 819-826): 'workers hold the smallfolk-hours murmur' — extended holds license to group-subject + acoustic-register; prior auditor accepted as advisory (not HARD); /and-review critic flagged the extension as beyond the narrow body-part DO precedent"
+  - "schemas/bones.schema.md line 105 — narrow holds license definition and deny-list examples: 'taylor holds the ledger', 'the yard holds the silence', 'the wards hold their positions'"
+  - "staff/admin/decisions.md — DEC-0057 (process-critic dispatch; holds-license pattern confirmed at recurrence-3)"
+recurrence_count: 3
+proposed_diff: |
+  In .claude/commands/and-write.md, Phase 1, step 2 (SVO verb-form discipline), in the section
+  that describes the FAULT-FORM-NON-ACTION-VERB classification and recast guidance, add a
+  named subsection after the existing stative-verb coverage:
+
+  ---
+
+  **`holds` — narrow license, high-failure verb.**
+
+  `holds` is licensed only under two exhaustive conditions (from schemas/bones.schema.md):
+
+    Condition 1: The object is a body part OF the subject AND the action is
+      stillness-against-pressure. Licensed: `taylor holds the feet` (feet are Taylor's body
+      part; stillness against the pull to run). `mira holds the eyes` (eyes are Mira's body
+      part; stillness-against-closing).
+
+    Condition 2: The object is a physical object resisting external pressure. Licensed:
+      `the door holds` (door resisting force applied to it).
+
+  The license is exhaustive — there is no third condition.
+
+  Negative examples (verify your SVO before authoring — if it matches any form below, recast):
+    `taylor holds the ledger` — non-body-part physical object, not resisting pressure. FAULTS.
+    `taylor holds the stylus` — parallel to ledger (writing implement, same class). FAULTS.
+    `the yard holds the silence` — abstraction-as-object. FAULTS.
+    `the workers hold the murmur` — group subject + abstract object. FAULTS.
+    `taylor holds the position` — stative holding, not physical stillness-against-pressure. FAULTS.
+
+  Recast path when `holds` fails the license:
+    - Subject's own physical stillness → bare intransitive or body-part form:
+        `taylor stills`, `taylor stills the hand`, `taylor freezes`.
+    - Instrument laid down / at rest → transitive resting form:
+        `taylor rests the stylus`.
+    - Sustained grip as action-setup → use the action verb directly
+        (the bone should be the action, not the holding):
+        `taylor reads the ledger` not `taylor holds the ledger`.
+    - Sustained grip as load-bearing beat → use a transitive action verb:
+        `grips`, `clasps`, `clutches` (all pass FAULT-FORM without the holds license).
+
+  This guidance lives at Phase 1 because the recast must happen at bone-authoring time.
+  Phase 6 will catch any slip (FAULT-FORM-NON-ACTION-VERB), but authoring against a broken
+  SVO costs at minimum one fixer cycle. Author-time discrimination is cheaper.
+
+  ---
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0029
+
+```yaml
+id: PROP-0029
+created_at: 2026-05-31T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01c06-2026-05-31.md
+  source_verdict: "PASS-TERMINAL-DEPTH-RESOLVED — completeness PASS / readability AIRLESS-ABSTRACT-BY-CONTRACT. First depth-pass loop completion returning AIRLESS again; 0-mute prose-rationale-mute audit; DEC-0058 ruled Option C (abstract-by-contract, terminal)."
+  gate_path: .claude/commands/and-stitch.md#phase-9
+  secondary_gate_paths: [.claude/commands/and-write.md#phase-6]
+target:
+  type: command
+  path: .claude/commands/and-stitch.md
+  section: "Phase 9 — Cold-read terminal gate / Separated scoring readability axis / depth-pass disposition"
+change_type: modify
+rationale: |
+  b01c06 is the first chapter where the depth-pass loop (URI-STITCH-COLD-READ-FEEDBACK-LOOP,
+  wired by DEC-0048) ran to completion and returned AIRLESS a second time. The DEC-0048
+  escalation clause — "if the next cold-read is still AIRLESS on the central event →
+  FAIL/re-decompose" — was written under the premise that a second AIRLESS result would
+  mean the depth pass failed to de-abstract the bones. The b01c06 run exposed a case the
+  clause did not model: de-abstraction was EXHAUSTED (0-mute audit across 20 bones; every
+  rationale-named concrete element staged in prose), and the persisting airlessness is
+  contract-origin (offstage victims, no-choice framing, cold-utilitarian ledger register
+  from cond-taylor-pov-behavior — all project-spine commitments, not rendering defects).
+
+  Without a short-circuit for this case, the Phase 9 readability axis + DEC-0048 escalation
+  clause would mechanically order a re-decompose (~40 dispatches) that hits the same contract
+  wall. DEC-0007 anti-literalism + DEC-0058 blocked it this run, but the block was an
+  ad-hoc admin ruling, not a mechanical gate outcome. Any future apparatus-dominant chapter
+  that ships PASS-WITH-DEPTH-PASS-REQUIRED and runs its depth pass to completion against a
+  contract-register bone-set will hit this exact branch — and will require a fresh admin
+  ruling to avoid the same wasted cycle.
+
+  The 0-mute audit (Step 3.5 of Phase 9) is already a Phase 9 sub-step whose result is on
+  disk. Its result is mechanically determinable. The proposed short-circuit adds one
+  disposition branch to the Phase 9 readability-axis composition block:
+
+  When the Phase 9 PASS-WITH-DEPTH-PASS-REQUIRED depth-pass re-stitch cold-read returns
+  AIRLESS AND the Step 3.5 prose-rationale-mute audit for the depth-pass run shows mute
+  count = 0 (all rationale-named concrete elements staged in prose) AND the completeness
+  axis PASSES, the Phase 9 orchestrator MUST:
+    (1) Classify the result as AIRLESS-ABSTRACT-BY-CONTRACT — de-abstraction is exhausted;
+        the persisting airlessness is contract-origin.
+    (2) Stamp chapters[<slug>].cold_read.depth_pass_resolved = true and
+        chapters[<slug>].cold_read.readability_axis.verdict = AIRLESS-ABSTRACT-BY-CONTRACT.
+    (3) Return PASS-TERMINAL-DEPTH-RESOLVED (terminal verdict). The chapter ships. Do NOT
+        route to /and-write revise. Do NOT re-decompose.
+    (4) Surface a one-line note in the exit summary: "AIRLESS-ABSTRACT-BY-CONTRACT: all
+        rationale-named elements staged (0 mutes); persisting airlessness is contract-register.
+        Chapter ships. Principal may override with /and-substance contract revision."
+
+  The re-decompose route survives for non-zero mute counts: when the mute audit finds N > 0
+  muted concrete elements (rationale names X but prose does not stage X), de-abstraction is
+  genuinely incomplete and the DEC-0048 escalation clause applies. The short-circuit fires
+  only when mute count = 0 — de-abstraction is confirmed exhausted, not failed.
+
+  This is change_type: modify on the existing Phase 9 readability-axis composition block.
+  The detection mechanism (0-mute audit), the completeness pass, and the AIRLESS result are
+  all already Phase 9 gate outputs. The modification adds one disposition branch using those
+  existing outputs. No new gate, no new step, no new schema field beyond the
+  AIRLESS-ABSTRACT-BY-CONTRACT verdict value added to the readability-axis classification.
+
+  Relationship to PROP-0023: PROP-0023 targets Phase 4.6 (pre-stitch, apparatus-dominance
+  qualifier on the ALIVE verdict — prevents apparatus-dominant chapters from reaching stitch
+  without bone-level de-abstraction). PROP-0023 addresses the upstream case; this proposal
+  addresses the depth-pass completion case. They are complementary: PROP-0023 may prevent
+  some chapters from needing the depth-pass loop; this proposal handles the case where a
+  chapter arrives at depth-pass completion and hits the contract wall anyway. Both can be
+  accepted independently.
+
+  Recurrence: first occurrence at depth-pass-loop completion. Proposing at first occurrence
+  rather than waiting because:
+  (a) The gap is deterministic. Every apparatus-dominant chapter whose contract-register
+      bones cannot be de-abstracted further will hit this exact branch when the depth-pass
+      loop completes. The "0 mutes but AIRLESS" state is the unambiguous mechanical indicator.
+  (b) The fix uses only Phase 9 gate outputs already on disk (mute count, completeness,
+      AIRLESS). No new detection mechanism required.
+  (c) Without the short-circuit, the only protection against the wasted re-decompose cycle
+      is an admin ruling (DEC-0007 anti-literalism applied to DEC-0048's escalation clause).
+      A gate whose literal application wastes ~40 dispatches is a gate with a missing
+      disposition branch.
+  (d) S-cost: one conditional branch in the Phase 9 readability-axis disposition block.
+  (e) The "abstract-by-contract" case is the exact exception DEC-0048's trade-off note
+      anticipated ("The accounting section may be abstract-by-contract") without giving it
+      a mechanical gate outcome. This proposal closes that acknowledged gap.
+evidence_refs:
+  - "active-project/staff/reviews/coldread-b01c06-2026-05-31.md — AIRLESS verdict on depth-pass re-stitch; 'there IS a person now… the crowd breathes' (improved); 'the moment the form arrives, the prose becomes a man describing his own bookkeeping in abstract nouns… I never feel the four names as men'; completeness PASS; CONTINUE marginal-yes."
+  - "staff/admin/decisions.md — DEC-0058: 0-mute audit across 20 bones; cold-reader complaints (offstage victims / no-choice framing / ledger register) all map to project-spine commitments; Option C (accept terminal, abstract-by-contract) selected; DEC-0007 anti-literalism applied to DEC-0048 clause."
+  - "staff/admin/decisions.md — DEC-0048: escalation clause 'if next cold-read still AIRLESS on central event → FAIL/re-decompose'; trade-off note anticipates 'abstract-by-contract' case but gives it no mechanical gate outcome."
+  - ".claude/commands/and-stitch.md — Phase 9 Step 3.5 (prose-rationale-mute audit): already fires; already produces mute count on disk. Phase 9 readability-axis composition rule: 'AIRLESS with completeness-pass → at least PASS-WITH-DEPTH-PASS-REQUIRED' — no disposition branch for depth-pass re-stitch 0-mute result."
+  - "staff/admin/process-proposals.md — PROP-0023 (Phase 4.6 apparatus-dominance qualifier; complementary upstream proposal; different target, different phase; open/untriaged)."
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-stitch.md, Phase 9, in the separated-scoring readability-axis
+  composition block (the paragraph reading "AIRLESS with completeness-pass → at least
+  PASS-WITH-DEPTH-PASS-REQUIRED"), add a depth-pass re-stitch sub-clause:
+
+  CURRENT (simplified):
+    AIRLESS + completeness-pass → PASS-WITH-DEPTH-PASS-REQUIRED
+    AIRLESS on central event → FAIL → /and-write revise
+
+  PROPOSED — add after the PASS-WITH-DEPTH-PASS-REQUIRED sentence:
+
+    **Depth-pass re-stitch AIRLESS sub-clause.** Fires only in depth-pass mode
+    (this /and-stitch invocation is the depth-pass re-stitch following a prior
+    PASS-WITH-DEPTH-PASS-REQUIRED; detectable from
+    chapters[<slug>].cold_read.depth_pass: in-progress or equivalent flag):
+
+    When AIRLESS AND completeness PASS AND depth-pass mode is active:
+
+    Sub-check: read the Step 3.5 prose-rationale-mute audit result for this run.
+
+    Case A — mute count = 0 (all rationale-named concrete elements staged in prose):
+      De-abstraction is exhausted. The persisting airlessness is contract-origin.
+      Classify: AIRLESS-ABSTRACT-BY-CONTRACT.
+      Actions:
+        1. Stamp chapters[<slug>].cold_read.depth_pass_resolved = true.
+        2. Stamp chapters[<slug>].cold_read.readability_axis.verdict =
+           AIRLESS-ABSTRACT-BY-CONTRACT.
+        3. Return PASS-TERMINAL-DEPTH-RESOLVED. Chapter is terminal. Do NOT route to
+           /and-write revise. Do NOT re-decompose.
+        4. Exit summary line (mandatory):
+           "AIRLESS-ABSTRACT-BY-CONTRACT: 0-mute audit confirms de-abstraction exhausted.
+            Persisting airlessness is contract-register. Chapter ships terminal. Principal
+            may override with /and-substance contract revision."
+
+    Case B — mute count > 0 (N rationale-named concrete elements not staged in prose):
+      De-abstraction is genuinely incomplete. Apply DEC-0048 escalation clause:
+      FAIL → /and-write revise --from-signals.
+      Surface the muted elements list from Step 3.5 in the FAIL exit block as the
+      signal targets for the revise brief.
+
+    Case C — Step 3.5 not run for this invocation (mute audit absent):
+      Run Step 3.5 before deciding. Do not assume mute count. The sub-clause requires
+      the mute-audit result to be present before it can fire.
+
+  VERDICT ENUMERATION ADDITIONS:
+    - Add AIRLESS-ABSTRACT-BY-CONTRACT to the readability-axis verdict enumeration
+      alongside READABLE and AIRLESS.
+    - Add PASS-TERMINAL-DEPTH-RESOLVED to the Phase 9 outcome enumeration alongside
+      PASS, PASS-WITH-DEPTH-PASS-REQUIRED, and FAIL.
+    Both new values fire only in depth-pass mode.
+
+  MEMORY SCHEMA NOTE (optional, deferred to principal):
+    If chapters[<slug>].cold_read.readability_axis.verdict is formally typed in
+    schemas/showrunner-memory.schema.md, add AIRLESS-ABSTRACT-BY-CONTRACT to the enum.
+    If chapters[<slug>].cold_read.depth_pass_resolved is a new field, add it as an
+    optional boolean to the cold_read block. Cost S; can be accepted independently.
+
+  INTERACTION WITH PROP-0023:
+    If PROP-0023 is implemented, Phase 4.6 catches apparatus-dominant chapters before stitch
+    and routes them upstream. Chapters that PROP-0023 catches do not invoke the depth-pass
+    loop and do not trigger this sub-clause. If PROP-0023 is not implemented (open/untriaged),
+    this sub-clause is the only mechanical protection against the wasted re-decompose cycle
+    at depth-pass completion. The proposals are complementary; accept/defer each independently.
 
 cost_estimate: S
 status: open

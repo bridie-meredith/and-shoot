@@ -1,5 +1,62 @@
 # studio STM
 
+## 2026-05-31 — /and-facets b01-c06 Phase 1 R1 sensory authoring
+
+Authored sensory-b01-c06.md (3 entries, 26 bones). Density 3/26 = 11.5% — above standard 6% ceiling and above 7.7% short-chapter advisory; defended because modality floor (≥2) cannot be sacrificed and the only clean non-sound fire in the chapter is the @2 pressure entry.
+
+Three fires across two modalities (pressure + sound):
+  sensory:1 @2 pressure (lane-passable-morning-flow → crowd-backed-body-compression, up) — scene-A, crowd backed at blocked-exit junction. Old-state from location card §Hazards baseline; rubric-carve-out preamble filed (no pre-blockage loc-state pressure entry).
+  sensory:2 @17 sound (drain-water-trickle-ambient → stylus-on-board-rhythm, up) — scene-C, writing begins on ledger-board. Old-state from oc-stitch-house-lane sensory vocabulary (drain-water trickle audible when lane is quiet).
+  sensory:3 @20 sound (stylus-on-board-rhythm → silence, drop) — scene-C, verdict-pause: the hand stills. Old-state from sensory:2 new-state (paired inflection, up/drop).
+
+Modalities: pressure + sound (2; floor met).
+Per-scene cap: scene-A=1 (@2), scene-B=0, scene-C=2 (@17+@20) — all within ≤3 cap.
+Cull: 0 entries removed (all 3 survive four-axis rubric check).
+SEAM-009: @2 old-state anchor sourced from location card baseline rather than loc-state entry; rubric-carve-out preamble filed.
+
+Notably REJECTED (representing the full decision log):
+  @1 (handcart blocks — scene-A environmental cause; no discrete perceptual inflection; @2 is the pressure effect)
+  @3 (wren crosses — transitional movement; no modality change)
+  @4 (wren speaks — rejected in favor of @17+@20 pair to preserve paired sound inflection discipline; adding @4 would create 4 fires total and push modality count to 2 still — density would be 15.4%, well above advisory; cull chose the two load-bearing s03 fires)
+  @8 (blanks contact-source — analogous to stylus-stops; rejected because the blank is a held state, not a stop of ongoing rhythm; no prior writing-rhythm established in scene-A)
+  @10 (jarvis message arrives — mechanism uncertain for perceptual inflection; refused)
+  @15 (lowers form — sub-threshold; smooth parchment settling)
+  @16 (opens ledger-board — board-creak borderline; rejected; @17 is the correct establish beat)
+  @18/@19 (continued writing — sustained-as-inflection; @17 established the rhythm; anti-pattern 2)
+  @23 (seals form — sound anchor would be `silence → wax-seal-click` from @20; rejected because a third scene-C fire creates 3 sound fires in scene-C alone; per-scene cap allows it but density spikes; @20 is the more critical drop-inflection; @23 omitted; tactile anchor unresolvable without prior tactile fire)
+  @24 (courier takes form — transitional)
+  @25/@26 (opens/closes notes — administrative; no perceptual inflection)
+
+Inflight: theater/facets/_inflight/proto-lines-sensory-b01-c06.md filed.
+
+## 2026-05-31 — /and-facets b01-c06 Phase 1 R1 location-state authoring (revise pass)
+
+Authored location-state.md for b01c06 (2 entries after authoring-phase cull, 26 bones).
+Single location throughout: oc-stitch-house-lane (the lane, blocked lane-mouth → south-court working position). Single time-of-day: morning.
+Three scenes: scene-A rising-to-peak (handcart/crowd/Wren/omission), scene-B flat-tense (loaded pause), scene-C rising-to-peak (accounting/send/contrast).
+
+Fires:
+  loc-state:1 @1 — morning chapter-open place-anchor; lane-mouth blocked by the handcart crossways; crowd backing the junction; establishes the active obstruction as the first environmental condition
+  loc-state:2 @5 — threshold crossing: taylor enters the south court via angle-gap workaround; distinct sub-space off the tallow-boiler's wall; establishes south-court working position as the inherited base for all scene-B/C action
+
+Cull (authoring phase): 1 entry removed
+  @3 (wren crosses the crowd — movement verb, but frugality REJECT: the crowd is already established at @1; crossing through a crowd that exists in inherited state adds no new location fact; strip test: @3 resolves cleanly in inherited @1 env)
+
+Confirmed REJECT decisions:
+  @2 (crowd presses junction — stillness/hold of crowd mass; persistence of @1 condition; anti-pattern 3)
+  @3 (wren crosses crowd — see cull above; frugality REJECT)
+  @4 (wren speaks to taylor — pure dialogue beat, no positioning in question; REJECT per necessity §)
+  @6–@9 (administrative/dexterity verbs in-place; scene-A south-court holds in inherited @5)
+  @10–@15 (scene-B: @10 = informational arrival, no new location-moment; @11–@15 = dexterity/administrative in-place; inherited @5 south-court throughout)
+  @16–@26 (scene-C: all dexterity/administrative/stillness in-place; @24 courier-takes strip-test passes in inherited @5; @25–@26 dexterity in-place)
+
+No continuity-carry entries:
+  scene-A @1-@2 fusion-run: covered by @1 place-anchor; no separate carry needed
+  scene-B @11-@12 fusion-run: rhythm-shape is flat-tense — NOT a qualifying shape (license requires flat-low/resolving/release-only); REJECT
+  scene-C @16-@17, @21-@22 fusion-runs: rhythm-shape is rising-to-peak — license excluded
+
+No flagged seams.
+
 ## 2026-05-31 — /and-facets b01-c07 Phase 1 R1 location-state authoring
 
 Authored location-state.md for b01c07 (5 entries after authoring-phase cull, 25 bones).

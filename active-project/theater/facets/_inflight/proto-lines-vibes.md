@@ -1,39 +1,31 @@
-# bones — b01c07
-# proto-lines-vibes: base + [vibes:<id>] on decorated bones
-# bodies byte-identical to base; citations appended only
+# proto-lines-vibes — b01c06
+# vibes citations only; verbatim bones body + [vibes:<id>] on decorated bones
 
-episode: b01c07
-narrator: taylor-hebert-kl-122ac
-goal: Show the audience the Halvard argument at genuine engagement — neither dismissed nor won — so when Taylor stops engaging it at d09 the foreclosure reads as a choice, not a lapse.
-cast: taylor-hebert-kl-122ac, septon-halvard-flea-bottom
-locations: oc-sept-corner
-prior_episode: b01c06
-aggregate_range: 1-25
+1 the handcart blocks the lane-mouth
+2 the crowd presses the junction
+3 wren-stitch-maker-flea-bottom-ward crosses the crowd
+4 wren-stitch-maker-flea-bottom-ward speaks to taylor-hebert-kl-122ac [wren-stitch-maker-flea-bottom-ward:1] [vibes:1] [vibes:2] [vibes:3] [vibes:4] [vibes:5]
+5 taylor-hebert-kl-122ac enters the south court
+6 taylor-hebert-kl-122ac opens the coverage-notes entry
+7 taylor-hebert-kl-122ac marks the contact-role field
+8 taylor-hebert-kl-122ac blanks the contact-source field [vibes:6] [vibes:7] [vibes:8] [vibes:9]
+9 taylor-hebert-kl-122ac closes the coverage-notes entry
 
-1 taylor-hebert-kl-122ac completes the ward-coverage circuit
-2 the handcart blocks the sept-corner passage
-3 septon-halvard-flea-bottom faces the handcart man [vibes:10] [vibes:13]
-4 septon-halvard-flea-bottom names the sick child [vibes:10]
-5 taylor-hebert-kl-122ac receives the plain acknowledgment
-6 the insect-feed places septon-halvard-flea-bottom [vibes:13]
-7 taylor-hebert-kl-122ac enters the sept-corner
-8 taylor-hebert-kl-122ac acknowledges septon-halvard-flea-bottom
+10 the jarvis-channel message arrives [vibes:10]
+11 taylor-hebert-kl-122ac opens the jarvis-channel message
+12 taylor-hebert-kl-122ac reopens the jarvis-channel message [vibes:11]
+13 taylor-hebert-kl-122ac pulls the coverage-memory record
+14 taylor-hebert-kl-122ac fills the jarvis-channel form
+15 taylor-hebert-kl-122ac lowers the jarvis-channel form
 
-9 septon-halvard-flea-bottom describes the fever's progress [vibes:14]
-10 septon-halvard-flea-bottom names the maester's cost
-11 septon-halvard-flea-bottom turns from the sick-child account
-12 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac [septon-halvard-flea-bottom:1] [vibes:2] [vibes:12] [vibes:14]
-13 taylor-hebert-kl-122ac goes still [vibes:1] [vibes:2]
-14 taylor-hebert-kl-122ac faces septon-halvard-flea-bottom [vibes:3]
-15 taylor-hebert-kl-122ac plants the feet [vibes:9]
-16 septon-halvard-flea-bottom exhales
-17 the sept-corner ground grips [vibes:11]
-
-18 taylor-hebert-kl-122ac names the body count [vibes:4] [vibes:5]
-19 taylor-hebert-kl-122ac speaks to septon-halvard-flea-bottom [taylor-hebert-kl-122ac:1] [vibes:4] [vibes:5]
-20 septon-halvard-flea-bottom absorbs the counter [vibes:8]
-21 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac [septon-halvard-flea-bottom:2] [vibes:6] [vibes:7] [vibes:8] [vibes:12]
-22 taylor-hebert-kl-122ac steadies the feet [vibes:9] [vibes:15]
-23 taylor-hebert-kl-122ac leaves the sept-corner [vibes:3] [vibes:15]
-24 the lane cold grips the sept-corner stone [vibes:11]
-25 taylor-hebert-kl-122ac clears the Hook [vibes:15]
+16 taylor-hebert-kl-122ac opens the ledger-board
+17 taylor-hebert-kl-122ac writes the ward-elder names
+18 taylor-hebert-kl-122ac writes the sera-coverage entry
+19 taylor-hebert-kl-122ac marks the red-keep coverage record
+20 taylor-hebert-kl-122ac stills the hand [vibes:12]
+21 taylor-hebert-kl-122ac closes the ledger-board
+22 taylor-hebert-kl-122ac lifts the jarvis-channel form
+23 taylor-hebert-kl-122ac seals the jarvis-channel form [vibes:13] [vibes:14] [vibes:15] [vibes:16] [vibes:17]
+24 the courier takes the jarvis-channel form
+25 taylor-hebert-kl-122ac opens the ward-coverage notes [vibes:18] [vibes:19] [vibes:20]
+26 taylor-hebert-kl-122ac closes the ward-coverage notes

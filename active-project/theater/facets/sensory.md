@@ -1,34 +1,24 @@
 facet: sensory
-episode: b01c07
+episode: b01c06
 author: studio
 ---
 
-# rubric-carve-out — short-chapter floor-vs-ceiling exemption (V3)
+# Phase-5b cycle-2 anchor note — sensory:1 @2 old-state now loc-state-anchored
 #
-# design/shoot-v2/rubric-sensory.md § Curve-shape rubric / Episode-level shape
+# design/shoot-v2/rubric-sensory.md § 1. Modality-inflection / Anchored to a real perceptual baseline
 #
-# Carve-out scope: this file (bone_count=25 < 30; modality count=2 = floor minimum for R1)
-# Carve-out rule: effective sparsity ceiling = max(6%, 2/25) = 8% (advisory, not blocking).
-#   Standard 6% ceiling would permit ~1 entry on 25 bones; the floor (≥2 modalities) requires
-#   at minimum 2 entries. The exemption resolves the arithmetic collision; modality-floor takes
-#   precedence. Two entries at 8% density is ADVISORY-above-band, not a HARD finding.
-# Coverage justification: monoculture is the load-bearing pathology; 2 entries at 2 modalities
-#   preserves the disambiguation gradient (23 unflagged bones remain the contrast baseline).
-#
-# Phase 4.6 grounding adds (entries 3 + 4):
-#   Density post-add: 4/25 = 16% — above both the standard 6% ceiling and the V3 exemption 8%
-#   advisory ceiling. Entries 3 and 4 are GROUNDING-REQUIRED ledger-licensed exceptions
-#   (grounding-ledger-b01-c07.md grd-001 / grd-002; PROP-0022 aliveness twin). The frequency-band
-#   cap is explicitly waived for these two by the ledger license. Phase 5 auditor and Phase 5b
-#   audience must apply the licensed-grounding-exception exemption, not the standard cap verdict.
+# sensory:1 @2 pressure old-state `lane-passable-morning-flow` is anchored to loc-state:1 @1, whose
+#   old-composite-state was set to `lane-passable-morning-flow` at cycle-2 remediation (the chapter-open
+#   passable baseline the handcart-blocks transition departs from). This resolves the old-state-reader
+#   REVISE (the prior card-§Hazards carve-out is retired — an in-stream loc-state baseline now exists).
+#   Corroborated by state:1 @1 (lane-mouth: clear -> handcart-blocking). disambiguation-pedant +
+#   modality-coverage had already ACCEPTed; the loc-state anchor only strengthens their reads.
 #
 # Per-entry annotations:
-# - sensory:1 @12: exemption clause — 2nd entry needed to meet modality floor; sound+tactile pair
-# - sensory:2 @17: exemption clause — floor-entry; tactile modality; airless-span grounding anchor
-# - sensory:3 @16: licensed-grounding-exception: grd-001 — thermal; halvard exhale in held cold; cap-exempt
-# - sensory:4 @22: licensed-grounding-exception: grd-002 — pressure; heel-settles-cobble-edge at steadying; cap-exempt; discrete event (heel-settle weight on @22 steadying action, not cumulative thermal drift). modality=pressure (schema-valid; weight/load sensation), distinct from sensory:2@17 tactile cobble-grip texture.
+# - sensory:1 @2: old-state anchored to loc-state:1 @1 (lane-passable-morning-flow); pressure inflection valid
 
-1 @12 sound: halvard-pastoral-account-register -> halvard-direct-address # tag: up | old-state-anchor: loc-state:3@9
-2 @17 tactile: sept-corner-stone-firm -> sept-corner-cobble-grip # tag: up | old-state-anchor: loc-state:4@15
-3 @16 thermal: sept-corner-held-cold -> halvard-breath-in-cold-air # tag: spike | licensed-grounding-exception: grd-001
-4 @22 pressure: sept-corner-stone-firm -> heel-settles-cobble-edge # tag: spike | licensed-grounding-exception: grd-002 | old-state-anchor: loc-state:4@15
+1 @2 pressure: lane-passable-morning-flow -> crowd-backed-body-compression # tag: up
+
+2 @17 sound: drain-water-trickle-ambient -> stylus-on-board-rhythm # tag: up
+
+3 @20 sound: stylus-on-board-rhythm -> silence # tag: drop

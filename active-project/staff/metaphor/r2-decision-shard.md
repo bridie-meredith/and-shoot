@@ -1,104 +1,24 @@
-cite_index_hash: 4b1789810b83040f443958cffc443ec91345befc
+---
 facet: metaphor
-episode: b01c07
-judge: editor (R2 graph-aware)
-date: 2026-05-31
-verdict: confirm-0
-
+episode: b01c06
+layer: R2.judge
+cite_index_hash: 21eb9718d8526f3ef58f0c4ed394e62ac25f1927de7f5e1003f8b23fa91c3db2
+f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
+verdict: CONFIRM-ZERO
 ---
 
-## R2 verdict: CONFIRM-0
+The R1 zero-fire is confirmed. Reading the full locked graph cold — memory:1 @15, memory:2 @17, feeling:1 @20, all six NI entries, the full vibes cluster at @4/@8/@20/@23/@25, the scene-map protected patterns, the exposition preamble — there is no surface where a metaphor wants to fire and has not been addressed by the R1 refuse-log. The refuse-log's per-candidate reasoning holds under G1 through G5.
 
-Zero entries stand. No adds. The graph-aware review against locked upstream files confirms the R1 refuse-log at every candidate beat.
+The two bare protolines the cite-index flags as round-2 add candidates are @13 and @19. Reading @13 cold — "pulls the coverage-memory record" — this is clean administrative retrieval; the act's meaning lives entirely in what it enables (the four-name fill at @14), not in the act itself. Nothing in the proto-line at rest is reaching for a comparison. The graph reveals a niche (no co-citations), but the at-rest reading shows nothing wanting. G2 refuses it: niche enabled the question; the answer is no. Reading @19 cold — "marks the red-keep coverage record" — one accounting-sequence fill-step among six in scene-C, none of which carry the chapter's figurative weight; that weight sits at @23 and @25, already addressed in the refuse-log. Same result: niche, no wanting.
 
----
+The three licensed anchor bones — @15 (mem:1), @17 (mem:2), @20 (feel:1) — all collapse under AP4 or AP3. At @15, the memory-flag's own language ("the list under her hand is the shape of that answer, asked for in a smaller tongue") has already deployed the figurative move; a metaphor would restate it. At @17, mem:2 already runs an explicit comparison ("the way a hand can convert any number of persons to a delivered thing") inside the memory-registration itself; a metaphor entry at @17 would be the same figure twice. At @20, NI:4 closes the beat with the recognition rendered without comparator ("the stillness is only the hand catching up to a verdict the count reached three entries back"); a metaphor adding an explicit comparison would be AP3, doubling NI content, while also landing on an ascending beat mis-registered for callback figurative mode per AP13.
 
-## Anchor inventory (locked graph)
+The five peak and peak-shadow bones in the refuse-log are all correctly blocked: @4 (AP6 voice-register + AP7-equivalent at relational-gain peak), @8 (protected-pattern hard conflict — de-abstraction integrity), @15 (AP7-equivalent + no confirmable anchor), @23 (AP7 default-refuse + de-abstraction integrity — the send must not be re-abstracted), @25 (de-abstraction integrity — the contrast must be enacted not figured).
 
-The rubric's §Licensing requirement mandates at least one anchor from {memory, feeling} per entry. The locked upstream files show the complete anchor set for b01c07:
+Pattern scan: zero entries, no pattern to audit. Single-sentence finding: nothing patterned that shouldn't be, because there is nothing.
 
-| Beat | Anchor | Type | Notes |
-|------|--------|------|-------|
-| @18 | feel:2 | taylor (POV) | "her breath goes out before the name does" |
-| @19 | mem:2 | westeros monument | ledger-entry shape + Earth-Bet displacement clause |
-| @20 | feel:1 | halvard (non-POV) | "his hands go still on his knees" |
+No cap-refusals to log beyond the existing refuse-log (all candidates disposed at R1; R2 confirms each disposal without revision).
 
-No other beat in the 25-bone chapter carries a memory or feeling anchor. Three anchors total; one is non-POV (AP12). The eligible POV anchors are @18 and @19.
+No arbiter interventions fired. Justifications are entry-specific throughout the refuse-log; the G2 bare-protoline assessment traces from at-rest reading, not from niche-filling.
 
----
-
-## Per-anchor adjudication
-
-### @18 — feel:2 (taylor) — REFUSE CONFIRMED
-
-R1 cited AP3 (ledger register occupied by dialogue). The locked graph confirms and adds:
-
-- NI narrator:4 (@19, which folds the @18 naming-decision into peak delivery) explicitly carries the ledger figure: "the name goes down the way an entry goes into a ledger — Wenna Cobb, six, Pig-Tallow Lane." The figure is present in NI.
-- Taylor's own dialogue @19 carries "the account has to carry the interval" — ledger register occupied in the spoken text.
-- Any POV-side metaphor in ledger or accounting register at @18 would AP3-double NI narrator:4 AND the dialogue figure in the same beat-cluster. Two independent AP3 violations.
-- No alternative register is available at @18 (the beat is the naming-act; any explicit comparison would enter the ledger register or restate the breath-tell already in feel:2, firing AP2 against the feeling entry itself).
-
-Refuse confirmed. Primary: AP3 (NI + dialogue saturation). Secondary: AP2 risk against feel:2 content.
-
-### @19 — mem:2 (westeros monument) — REFUSE CONFIRMED
-
-R1 cited AP3 (NI carries named-death-as-ledger-entry). The locked graph confirms and adds AP4:
-
-- mem:2 itself is figurative: "the name goes down level: a child, a lane, a fever two seasons back..." — the memory entry carries a figurative move (name-goes-down-level construction as ledger-metaphor). A metaphor entry citing mem:2 as anchor would AP4-double the figure already in mem:2.
-- NI narrator:4 independently carries the same ledger figure.
-- AP4 (doubles memory's own figure) + AP3 (doubles NI figure) both fire. R1 named AP3 only; AP4 is the sharper primary. Conclusion unchanged.
-
-Refuse confirmed. Primary: AP4 (memory entry is already figurative). Secondary: AP3 (NI saturation).
-
-### @20 — feel:1 (halvard, non-POV) — REFUSE CONFIRMED
-
-AP12 (non-POV interior; editor does not have Halvard's figurative interior). Additionally: NI narrator:5 carries "two accountings stand in the cold and neither is paid" — AP3 fires if any editor-frame third-person observation were attempted in that register.
-
-Refuse confirmed. Primary: AP12. Secondary: AP3.
-
----
-
-## Non-anchor beats: universal AP1
-
-All remaining 22 beats carry no memory or feeling anchor in the locked graph. AP1 (unlicensed novel figuration) is the universal primary refusal for the non-anchor set. R1 refusals are correct; the specific AP citations (AP2, AP3, AP7, AP12) for individual non-anchor beats are accurate secondary characterizations of why those beats are unproductive even if an anchor were somehow imputed.
-
-### @22 "steadies the feet" — AP1 primary (graph correction)
-
-R1 cited AP3 (dialogue exhausts the register). Graph-aware correction: the locked graph carries no memory or feeling fire at @22. The correct primary refusal is AP1 (no anchor; metaphor would be unlicensed novel figuration). NI narrator:6 fires at @22 ("the feet had begun to shift toward the lane and she steadies them instead") — AP3 is a valid secondary characterization of why the register is occupied even if an anchor existed. The refuse verdict is unchanged; the primary AP citation is sharpened.
-
----
-
-## Chapter-level structural assessment
-
-The governing figures for b01c07 are dialogue-borne and NI-borne:
-
-- Halvard's compound-corruption framing: "a thing built crooked doesn't come straight because you lean on it gently" (dialogue @12)
-- Halvard's debt figure: "the debt doesn't sit there gathering" (dialogue @21)
-- Taylor's ledger counter: "the account has to carry the interval" (dialogue @19)
-- NI narrator:1 through narrator:7: the interior arc from thesis-landing to foreclosure-planted, all carrying their own figurative registers
-
-The metaphor facet's Reading A scope (explicit comparisons) has nothing to add that these layers do not already carry. The figurative load is fully borne by dialogue + NI. This is not a structural gap; it is structural sufficiency.
-
-Zero is the correct count.
-
----
-
-## File-shape audit (rubric §File-shape audit)
-
-1. Sparsity: 0 / 25 (0%) — within 0-3% acceptable range. Pass.
-2. Per-scene cap: 0 per scene (scenes A, B, C). ≤1 cap satisfied. Pass.
-3. Schema content-shape: no entries to check. Pass.
-4. Anchor verification: no entries. Pass.
-5. Multi-justification: no entries. Pass.
-6. Functional-register: no entries. Pass.
-7. Voice-register: no entries. Pass.
-
----
-
-## Adds
-
-None. Add-cap of 3 unused. The locked graph offers no beat with an eligible POV anchor that clears AP1 through AP7 + Q1 + Q2 + functional-register. The chapter's seminar-risk profile (figurative load concentrated in dialogue) makes refuse-by-default the correct structural posture.
-
----
-
-f-r2-counts: KEEP 0 / DELETE 0 / ADD 0
+CONFIRM-ZERO — metaphor.md ships unchanged.

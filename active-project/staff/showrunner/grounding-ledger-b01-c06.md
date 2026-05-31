@@ -1,40 +1,51 @@
 # grounding-ledger — b01-c06 — PROP-0022
-# Aliveness Axis-2 verdict: AIRLESS in the accounting middle — partial.
-# The embodied spine (@1–@5, @8, @19, @22, @24) breathes; the accounting middle
-# (@10–@21, minus the @12/@19 memory cognition-fires) reaches the reader as the
-# instrument reporting itself. The sensory frequency-band cap fires only 2x (both
-# scene-A), so any grounding add in the middle requires a license. 3 licensed here.
-# These authorize GROUND adds past the frequency-band cap at the accounting middle's
-# three airless anchors. VOICE-FIXABLE bones (@11/@14/@20/@21) route to /and-stitch
-# Phase 4 and inherit the re-grounded body; not separately ledgered.
-# Pattern continuity: same airless-accounting failure mode the c05 grounding-ledger
-# licensed (grd-001..grd-005 there). The BONES-AIRLESS-RISK advisory called it.
+
+# Re-cascade depth pass (2026-05-31): supersedes the prior-run ledger below the line.
+# The prior run (grd-001/002/003) licensed grounding adds AROUND THE OLD APPARATUS BONES
+# (@16 "opens the accounting ledger", @17–@18 "writes the first/second arm") — abstract
+# bookkeeping SVOs that NO LONGER EXIST. /and-write b01c06 revise --from-signals
+# DE-ABSTRACTED those bones to concrete physical acts (@16 opens the ledger-board /
+# @17 writes the ward-elder names / @18 writes the sera-coverage entry / @20 stills the
+# hand). That bone-layer cure ABSORBED the grounding need the prior grd lines covered.
+# This re-review (de-abstracted 26-bone scaffold + R1 facets in) returns ZERO new lines.
+
 chapter: b01c06
-entries:
-  - id: grd-001
-    anchor: "@10"
-    airless_symptom: the scene-B open — the Jarvis message reaches the reader as a pure apparatus event (the channel emitting); no Taylor-body holds the working position, so the loaded pause begins with no one in the room
-    needed_grounding: a somatic/sensory anchor on Taylor at the working position as the message arrives — the still-air lane (loc-state:3 tallow-smoke is the one available anchor to extend), a held posture, a body that registers the arrival before the cognition opens it
-    license: GROUNDING-REQUIRED
-    licensed_at: 2.5
-    licensed_by: aliveness-reviewer
-    status: satisfied
-    satisfied_by: sensory:3
-  - id: grd-002
-    anchor: "@16"
-    airless_symptom: "opens the accounting ledger" — lonely bone, zero facet co-citation; the accounting sequence opens with no person in the frame, the ledger narrating its own opening
-    needed_grounding: a body anchor as the accounting begins — hands on the ledger, the small somatic preparation of running the balance, so a person opens the entry rather than the instrument opening itself
-    license: GROUNDING-REQUIRED
-    licensed_at: 2.5
-    licensed_by: aliveness-reviewer
-    status: satisfied
-    satisfied_by: sensory:4
-  - id: grd-003
-    anchor: "@17"
-    airless_symptom: "writes the first arm" / "writes the second arm" (@17–@18) — the chapter's moral hinge rendered as accounting-form headers; bare protolines, zero facet cites; the two arms of the trade (four ward elders vs. Sera's exposure) reach the reader only as ledger-substrate verbs, no felt friction of pricing persons against persons
-    needed_grounding: a somatic anchor across the two arms (covers @17–@18) — the felt friction of the categorization holding against its own weight; a hand, a stilled breath, the physical cost of writing the cost down, so the honest accounting costs something the reader feels in a person
-    license: GROUNDING-REQUIRED
-    licensed_at: 2.5
-    licensed_by: aliveness-reviewer
-    status: satisfied
-    satisfied_by: sensory:5 (covers @17–@18; single entry per authoring frugality)
+licensed_at: 2.5
+licensed_by: aliveness-reviewer
+generated: 2026-05-31
+supersedes: prior-run grd-001/002/003 (25-bone apparatus scaffold; preserved below)
+
+entries: []
+
+note: |
+  Zero GROUNDING-REQUIRED exceptions. The s03 accounting spine (@16–@26) READS ALIVE with
+  R1 facets in. The bone-layer de-abstraction plus the R1 lens fires — sensory @17
+  (stylus-on-board) → @20 (stylus → silence); feel @20 (the hand stopping above the two
+  finished entries, unexpressed); NI @17/@20/@23/@25 putting a recognizing person inside
+  the writes — convert the prior terminal-cold-read AIRLESS read ("an instrument reporting
+  itself… a tidy diagram of a feeling") into a body in a room doing irreversible things.
+  The verdict-pause bone @20 is the structural breath-point and it lands.
+
+  FEWER lines than the prior run's 3, as predicted in the Phase 2.5 brief: the de-abstraction
+  absorbed the need the prior grd-001/002/003 covered. No sensory-cap breach is warranted —
+  the bone layer is concrete enough that grounding does not need to be ADDED.
+
+  Residual aliveness risk routed to /and-stitch Phase 4 as a VOICE-FIXABLE render-choice
+  (NOT a ledger line):
+  - @19 "marks the red-keep coverage record" — the bare bone in the spine (zero R1 lens
+    fires); render as a concrete physical act on a real record, NOT a structural-architecture
+    summary sentence (the chunk's specific-small-body-in-a-specific-corridor Sera image is
+    the render material). Confirms the scene-map flat-19 render-watch at the facet layer.
+
+  Full rationale: active-project/staff/reviews/context-follow-r1-b01-c06-2026-05-31.md
+
+# ---------------------------------------------------------------------------
+# PRIOR-RUN LEDGER (25-bone apparatus scaffold; superseded 2026-05-31; preserved per
+# ledger never-delete discipline). All three were status: satisfied at the prior facet run:
+#   grd-001 @10  airless scene-B open (no body at the working position)   -> satisfied_by sensory:3
+#   grd-002 @16  "opens the accounting ledger" lonely bone, no person      -> satisfied_by sensory:4
+#   grd-003 @17  "writes the first/second arm" — moral hinge as form-header -> satisfied_by sensory:5
+# These surrounded the OLD abstract bones. The de-abstraction recast those bones to
+# concrete physical acts, so the licensed adds are subsumed by the bone layer; the
+# current scaffold carries no equivalent airless anchors.
+# ---------------------------------------------------------------------------

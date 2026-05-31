@@ -1,21 +1,43 @@
 ---
-reviewer: worm-canon-pedant
 facet: interest-narrator
-cycle: 1
 episode: b01c06
-date: 2026-05-30
-verdict: revise
+reviewer: worm-canon-pedant
+phase: 5b-adversarial
+date: 2026-05-31
+verdict: ACCEPT
+earth-bet-fence: CLEAN
 ---
-# Verdict reasoning
 
-The NI file has seven entries and gets a lot right about Taylor's register — the pre-calc surfacing at @13 ("the step the record has been waiting four months for her to take") is exactly how source-Taylor would frame operational readiness, and the @24 structural-contrast entry ("four names went down the channel and the contact-source field still reads ward-resident, Hook, routine — the contrast sits in two substrates at once") is precise in a way that earns the climax label. But the inverted-predicate chassis fires twice — "the blank she writes is authored, not missing" (@8) and "the seal is the breach" (@22) — and that's a problem this reader noticed the moment it appeared the second time. The first use is load-bearing; the second is template-echo. There's also a real question about @6 (narrator:6): "she has moved bodies along a record before, and the record was always the route" — this is displaced Earth-Bet cognition rendered through Westerosi action, which is the correct displacement method, but "the record was always the route" is doing figurative heavy-lifting that is one draft away from naming the architecture explicitly. The auditor flagged this as a TASTE-FLAG; I'd push it harder.
+# Adversarial reasoning
 
-# Entry-level callouts (revise/fail only)
+Seven NI entries. I am attacking this file for: Earth-Bet vocabulary leak into Taylor's interior register, anachronistic self-knowledge (does Taylor know things she has no in-world path to knowing in this displacement context), and voice register (cold-utilitarian ledger is the declared chassis — flag any drift toward literary/reflective narration that doesn't match source-Taylor's self-model).
 
-- [interest-narrator:4] @22 — "the seal is the breach" is the second deployment of the inverted-predicate chassis (X-is-Y, where the action IS its consequence). narrator:2 @8 already used "the blank she writes is authored, not missing." Using the chassis again at the chapter's moral-framework -1.0 peak doesn't compound the effect — it exposes the seam. Source-Taylor doesn't have a signature rhetorical figure she deploys at inflection points; she has a register she stays in. The repetition reads as the author rather than the character. The auditor's AP-010 SIGNAL correctly identifies narrator:4 as the repair candidate; I'm concurring and upgrading the priority.
+From the auditor's detailed reconstruction of the NI entries:
 
-- [interest-narrator:6] @12 — "she has moved bodies along a record before, and the record was always the route" is the Earth-Bet displacement cue fused with the cognitive beat. The displacement is licit per the fence (no proper noun, shape-not-name). But "the record was always the route" is attributing a quality to an instrument in a way that edges close to the auditor's TASTE-FLAG: does the record's having-been-the-route read as Taylor's POV cognition, or does it read as the text authoring the horror for the reader? Canon Taylor's interior is data-register throughout: she doesn't narrativize her own past operations as "the record was always the route" — she'd note the conversion (node to name, pattern to body) as a precision issue, not as a backward-looking horror-frame. The line is on the edge. It doesn't fail the Earth-Bet fence, but it softens the clinical register at exactly the beat where the clinical register is doing the most work.
+narrator:1 @4 — Taylor's interior cost-frame on the Wren exchange ("a sound route from a stranger carries a cost she has not yet named"). This is right. Canon Taylor prices information-exchanges immediately. The "not yet named" is the correct staging — she registers the cost-category before she can assign a value. No Earth-Bet noun. No power-register vocabulary. Tracks.
 
-# Convergence trace
+narrator:2 @8 — the act of blanking the contact-source field named as a priced act ("the blank is the entry"). Cold-utilitarian identity framing. Auditor confirms this is a copular ledger-object construction, not a definitional-collapse AP10 chassis bleed. The framing of the omission as a deliberate ledger entry is exactly how source-Taylor would handle a protective act — not "I did it to protect her," but "this is what the act looks like in the accounting."
 
-AP-010 inverted-predicate: auditor found 2/7 entries = 29% saturation, SIGNAL below the 40% HARD threshold, named narrator:4 @22 as the repair candidate. I'm agreeing on the same entry from the character-voice angle rather than the saturation-rate angle. The TASTE-FLAG on narrator:3 (@13 record-agentive phrase "the record has been waiting") is the auditor's note; I read narrator:6 @12 as the stronger concern — the "record was always the route" construction is doing more figurative work and is closer to voice drift than narrator:3's scheduling-language. These are convergent-adjacent but not identical.
+narrator:7 @8 — substrate distinction ("notes are hers, not the channel's; what stays in the column never crosses to the courier"). This is the institutional-mechanics layer. Taylor in canon distinguishes between information she holds and information she transmits — that distinction is present from early in the story's intelligence-handling sequences. No lore leak.
+
+narrator:3 @17 — the names-written peak. Auditor places this in the rising accounting zone. I can't read the full NI text but the co-citations (mem:2, sensory:2, state:10) confirm this is the monument-grade conversion event. The fact that the file is silent on HOW Taylor writes names (no power-reference, no range-scan, no bug-count proxy) is correct for this displacement — in Westeros she does not have her power; the names come from surveillance-coverage work, not from a shard-ability. No information Taylor knows without an in-world path: she compiled the names from the coverage-memory record @13 and the Jarvis channel message @10-@11. Tracks.
+
+narrator:4 @20 — the verdict-pause classification ("the stillness is only the hand catching up to a verdict the count reached three entries back"). This is the cold-utilitarian analytical voice reasserting against the body-stop. Canon Taylor routinely denies affect by converting it into an accounting problem. The phrasing "the count reached" is instrument-family vocabulary. No Earth-Bet leak. No anachronistic knowledge.
+
+narrator:5 @23 — THE SEND peak. "a clean accounting is what the breach looks like from inside the discipline" (per auditor AP-SCAN section). This is the one legitimate definitional-collapse construction, correctly fired at the moral peak. Cold-utilitarian register intact. No mechanism leak.
+
+narrator:6 @25 — the contrast recognition ("the same hand, two ledgers, only one will ever balance"). This is the moral_legibility_to_self rise. The phrasing is clean: no literary irony named from outside, no authorial framing of "the road to hell." Taylor naming the contrast in ledger terms — same hand, two instruments, asymmetric closure — is voice-correct.
+
+Running my hot-button checklist against all seven entries: no power-mechanics exceeding established limits (Taylor has no power in this displacement context; nothing claims she does); no lore-leak (information all derives from in-world coverage work); no voice-register contradiction (cold-utilitarian throughout; no Taylor-optimistic or Taylor-uncertain drift); no timeline contradiction; no Worm-jargon. 
+
+The AP10 count (1 of 7 entries at @23) is the right number for a climax chapter. Auditor called it at 14% — under saturation. I agree: one chassis use at the moral peak is correct discipline.
+
+Reread before accepting: nothing here triggers my tally. Accept earned.
+
+# Entry callouts
+
+None.
+
+# Convergence-trace
+
+Auditor AP-SCAN section confirms AP10 count clean (1/7 = 14%, well below 40% saturation threshold). Auditor DEDUP section confirms NI:2 and NI:7 are distinct at @8. Auditor DEDUP section confirms NI:4 and feel:1 are distinct at @20. All convergent with my readings.

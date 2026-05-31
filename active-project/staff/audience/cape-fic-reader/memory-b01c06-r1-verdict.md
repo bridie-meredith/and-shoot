@@ -3,18 +3,32 @@ reviewer: cape-fic-reader
 facet: memory
 cycle: 1
 episode: b01c06
-date: 2026-05-30
+date: 2026-05-31
 verdict: accept
 ---
-# Verdict reasoning
-Two entries placed at the two beats where the operation's nature is most in question. Mem:1 @12 fires at the re-read where Taylor registers that converting pattern-nodes to named persons is a different KIND of delivery — and the displacement-cue ("bodies were set into a record once and the record became the route they were moved along") gives me the architectural resonance without requiring me to know the source. The horror is structural: the pattern for routing bodies is what Taylor is now running in the other direction. That lands on its own.
 
-Mem:2 @19 fires at the protect-target image — "a body that does not know how it is held, kept where it is by an arm that is not hers at the length of an arm that is not hers." This is the board-state read I need at exactly this moment: the cost of the gain resolves to a face before the send, not after. The backward-reach into the arrangement's purpose (the architecture was built for this body's protection; four other names go so this body stays held) is the chapter's central irony delivered as interior cognition. Placing it at @19 — in the rising zone before @22 — is the right tactical call; firing it AT @22 would step on the send.
+## Reasoning
 
-The doubled register (Earth-Bet displacement at @12, Westerosi-monument at @19) is functionally distinct: @12 is about what category-crossing means for how bodies are treated; @19 is about what the specific exchange buys and for whom. Two different readings of the same architecture. The single-monument-family concern the auditor flagged is a filing issue; the reader experience is two different facets of the same thing, which is correct.
+One entry. mem:2 @17. mem:1 was deleted at R2 (DELETE — no NI-spine at @15; the scene-B loaded-pause beat was deliberately silenced by both NI and feeling, and the memory entry lacked the required co-citation).
 
-# Entry-level callouts (revise/fail only)
-N/A
+**mem:2 @17** — "four bodies read as nodes for four months, and the hand converts them to persons the way a hand can convert any number of persons to a delivered thing… a size she will not give back a name." This is the Earth-Bet displacement callback at the names-written peak. What it does for this reader: it names the conversion pattern — persons-to-deliverable — as something Taylor has done before, at a scale she is not naming. The four ward-elders are being converted to a delivered thing in the same way that bodies were converted to a delivered thing at Gold Morning. That callback is not on the page as explicit Worm-canon reference (no Earth-Bet noun; the target slug is monument-override-architecture-residue, a Westerosi-register slug); it surfaces as the pattern's weight. The reader who knows the source material gets it. The reader who doesn't gets: she has done this before at a size she won't name.
 
-# Convergence trace
-Auditor RUBRIC-FIDELITY SIGNAL: single-monument-family (cond-override-architecture-residue-122ac) doubled-cue — ruled rubric-admitted for a 25-bone chapter. From the reader side the two registers are experientially distinct. Auditor DEDUP SIGNAL on narrator:6/@12 + mem:1/@12 noted as intended doubled-register mechanism — I agree, both are needed and serve different functions (NI = cognitive registration of the category-crossing; memory = architectural resonance of what the operation rhymes with).
+From this persona's angle: this is the exact shape of earned information-asymmetry. The reader who tracks what-Taylor-knows and when gets more than the in-world reader does. The conversion-pattern memory fires at the cost-accounting beat — the exact moment where Taylor writes four names on the cost side — and it adds the depth that makes the accounting scene live rather than procedural. Without it, the names-writing at @17 is competent procedure. With it, the names-writing is recognizable as the repetition.
+
+The NI co-citation is on-anchor (narrator:3 @17 registers the category-crossing from the cognition side — "persons cost differently than nodes"). Memory fires the displacement weight; NI prices the crossing. Split correctly: not the same information twice.
+
+The single-register complaint (only Earth-Bet displacement, no Westerosi monument clamp after mem:1 was deleted) is a rubric-soft-clause finding the R2 judge addressed explicitly. Accepted. One register is sufficient when the spine fence forces it. The surviving entry is the stronger of the two.
+
+Target slug `monument-override-architecture-residue` does not resolve to a warehouse card — the auditor flagged this as SIGNAL / margit-referral. I note it but it does not affect readability: the gloss is structurally clear from context (the administrative-conversion pattern; what it cost last time). The card is queued; this doesn't break the entry's function.
+
+Fatigue check: one memory entry in 26 bones. No lore wall. No eye-glaze. The entry fires at the chapter's accounting peak and does not repeat elsewhere.
+
+## Entry-level callouts
+
+None warranting revise.
+
+Advisory: target slug `monument-override-architecture-residue` is unresolved in warehouse. The margit referral is already in the auditor routing (signal-001). No facet-level change needed.
+
+## Convergence-trace
+
+Auditor Phase 5: AP-SCAN memory AP-functional-callback — CLEAN (multi-justification ≥3 of 5 confirmed). Memory NI-spine co-citation PASS (narrator:3 @17 confirmed). RUBRIC-FIDELITY soft advisory: memory single-register, rubric soft clause accepted. No HARD findings against this facet. Margit-referral on target slug carried as signal-001 (routing: margit). My memory-single-register note aligns with the auditor's soft advisory — same finding, different framing (they audit rubric compliance; I note readability impact). Impact is minimal; the entry works.

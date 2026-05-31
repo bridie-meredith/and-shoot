@@ -3128,3 +3128,355 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0056 | 2026-05-31 | SLOW (user-proxy)
+
+question: |
+  Principal invoked `/and-write b01c06 revise --from-signals` today (2026-05-31). This is the
+  depth pass deferred by DEC-0050. Two prior preconditions from DEC-0050 are (nominally) unmet:
+  (1) PROP-0023 is still open/untriaged; (2) `--from-signals` flag is mechanically wrong-targeting
+  (Phase-6 SIGNALs ≠ cold-read AIRLESS bones). Disposition: P1 (proceed now, interpret as depth-pass
+  intent) or P2 (hold pending PROP-0023 triage, escalate)?
+
+context: |
+  DEC-0048: b01c06 shipped PASS-WITH-DEPTH-PASS-REQUIRED. COMPLETENESS PASS, READABILITY AIRLESS.
+  Memory carries depth_pass_pending: true, note "de-abstract @16-@21; escalation clause: next cold-read
+  still AIRLESS-on-central-event → FAIL/re-decompose."
+  DEC-0050: Deferred depth pass to before book-close. Conditions: PROP-0023 triaged AND correct brief
+  specified (cold-read-signal-driven, targeting @16-@21 apparatus SVOs). Brief specified verbatim in
+  DEC-0050's rationale. PROP-0023 triage explicitly named as precondition.
+  Status today: b01c07 is written and shipped (DEC-0050's "proceed to b01c07" leg done). PROP-0023
+  status: open, triaged_at: null. Principal typed the command explicitly today.
+
+options: |
+  P1: Proceed. Treat explicit invocation as override of deferral. Interpret --from-signals as
+      depth-pass intent. Run authorized depth pass: scene-s03-scoped revise, de-abstract @16-@21,
+      brief driven by cold-read AIRLESS + ABSTRACTION-DOMINANT signal set. Re-cascade /and-facets
+      + /and-stitch. Honor DEC-0048 escalation clause. ~40 dispatches, uncertain outcome.
+  P2: Hold. PROP-0023 untriaged; DEC-0050 named it as precondition; escalate to principal to confirm
+      override or triage PROP-0023 first.
+
+decision: P1 — Proceed. Interpret explicit invocation as override of the DEC-0050 deferral.
+
+basis: |
+  explicit-principal-invocation (strongest signal, overrides prior deferral) + methodology:3d
+  (optionality — the remaining "precondition" is a form-stamp on a proposal whose substantive
+  content is fully specified in DEC-0050; deferring further consumes a dispatch without adding
+  information) + goal:1 (pipeline correctness — depth pass IS the correct authorized repair;
+  running it is not acting on an untriaged proposal, it is executing a scheduled content action)
+
+rationale: |
+  DEC-0050's two preconditions examined in light of today's state:
+
+  PRECONDITION (1): PROP-0023 triaged.
+  PROP-0023 prescribes a modification to /and-facets Phase 4.6's ALIVE verdict criteria for
+  apparatus-dominant chapters — a FUTURE-GATE change. Running the b01c06 depth pass is NOT
+  implementing PROP-0023. The depth pass is a content action on one chapter; PROP-0023 is a
+  process change that would canonize routing for future chapters. These are separable actions.
+  DEC-0050's concern was that "acting on PROP-0023's logic" before triage would be "premature
+  implementation of an un-triaged proposal." That concern was valid when the brief was unspecified.
+  But DEC-0050 itself wrote the brief: "cold-read-signal-driven, targeting @16-@21 apparatus SVOs
+  specifically — ABSTRACTION-DOMINANT + GROUNDING-REQUIRED + Phase 4.6 re-reviewer scene notes."
+  The brief is no longer ad-hoc; it is in the decision record. The remaining "precondition" is
+  purely a form-stamp — triaging PROP-0023 would not change the brief one word. Blocking on it
+  is blocking on a form-stamp.
+  Additionally: the principal's explicit invocation today constitutes implicit authorization of the
+  repair action PROP-0023 would have canonized. The triage question for PROP-0023 (whether to
+  modify the gate for future chapters) can and should proceed in parallel or as a tail step.
+
+  PRECONDITION (2): Correct brief.
+  This IS satisfied. DEC-0050's rationale section contains the complete brief:
+    - Scope: scene s03, bones @16-@21 (apparatus-dominant accounting middle)
+    - Target: de-abstract apparatus-verb SVOs to concrete actor-verb-object forms
+    - Signal set: cold-read AIRLESS findings + ABSTRACTION-DOMINANT SIGNAL from Phase 6 +
+      GROUNDING-REQUIRED entries from grounding-ledger + Phase 4.6 re-reviewer scene notes
+    - Escalation clause: if next cold-read still AIRLESS-on-central-event -> FAIL/re-decompose
+
+  FLAG INTERPRETATION (`--from-signals`):
+  `--from-signals` mechanically reads Phase-6 gate_verdict.signals[], which are the wrong signals
+  for this chapter (moral_legibility floor + s03 stakes-tie, not the apparatus-airless bones).
+  Interpret the flag as DEPTH-PASS INTENT, not literal Phase-6-signal targeting. The depth pass
+  runs as a scene-s03-scoped `/and-write b01c06 revise` with the DEC-0050 brief, NOT as a literal
+  --from-signals pass that would target the wrong bones.
+
+  DEC-0048 ESCALATION CLAUSE: remains active. If the re-stitched chapter cold-reads
+  AIRLESS-on-central-event, route to FAIL/re-decompose rather than another depth pass. The
+  accounting section may be abstract-by-contract; the escalation clause governs that outcome.
+
+trade-off: |
+  P1 vs P2: P2 costs one dispatch for admin to return ESCALATE + one dispatch for the principal
+  to triage PROP-0023 + one dispatch for admin to receive the ruling. Net: ~3 additional dispatches
+  of pure form overhead before the ~40-dispatch re-cascade begins anyway. If the principal had
+  wanted to wait, they would not have typed the command today. The explicit invocation is a
+  stronger signal than the prior deferral, which was made under a "brief unspecified" condition
+  that no longer holds. Expected value of P1 over P2: non-trivial given the overhead cost of P2
+  and the zero-information gain from the PROP-0023 triage on this chapter's brief.
+
+  PROP-0023 TRIAGE NOTE: This decision does NOT constitute a triage of PROP-0023's proposed
+  Phase 4.6 gate modification. The gate change is still open and still needs principal triage.
+  Running the depth pass on b01c06 is an independent content action.
+
+follows: DEC-0050 DEC-0048
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0057 | 2026-05-31 | SLOW (process-critic)
+
+question: |
+  /and-write b01c06 revise depth-pass Phase 6 bone-gate: HARD FAULT-FORM-NON-ACTION-VERB on
+  @20 "holds the stylus" (narrow-holds-license misread; resolved in-invocation to "stills the
+  hand"); 2 SIGNALs (signal-001 moral_legibility fractional-floor +0.5→+1.0; signal-002 s03
+  stakes-axis tie mf=mls at 1.0) accepted-with-rationale identical to original c06 run. Does the
+  process need to change?
+
+context: |
+  source_report: active-project/staff/auditor/write-b01c06-bone-gate-revise.md
+  gate_path: .claude/commands/and-write.md#phase-6
+  The 2 SIGNALs are identical to the original b01c06 bone-gate run, already OK-MERGED into
+  PROP-0010 at DEC-0046 (recurrence_count: 2). The HARD was resolved in-invocation — no new
+  proposal from the caller's framing of the gate working correctly.
+  However: this is the THIRD occurrence of a holds-license misread across the project.
+    Occ 1: b01c04 — "workers hold the smallfolk-hours murmur" (group-subject + abstract register;
+            flagged advisory, not blocked; noted in bones-b01c04-2026-05-27.md)
+    Occ 2: b01c07 — "septon-halvard-flea-bottom holds the silence" (abstraction-as-object HARD;
+            caught at /and-review bones; resolved by recast; bones-b01c07-fidelity-2026-05-30.md)
+    Occ 3: b01c06 revise — "holds the stylus" (non-body-part/non-pressure-resisting HARD; caught
+            at Phase 6; resolved in-invocation)
+  Three independent chapters, three distinct sub-type misreads of the same narrow holds license.
+  The schema deny-list has one named example ("taylor holds the ledger"). The Phase 1 brief has
+  no authoring-guidance on holds-license scope.
+
+options: n/a (process-critic mode)
+
+decision: |
+  2 SIGNALs: OK-MERGED-INTO PROP-0010 (recurrence_count now 3; third chapter exhibiting the
+    fractional-target-floor collision). No new proposal on signals — same disposition as DEC-0046.
+  HARD (holds-license): PROCESS-CHANGE-PROPOSED PROP-0028.
+  Gate working correctly on HARD: confirmed (no proposal against the gate itself).
+
+basis: |
+  Signals: ltm:DEC-0046 (prior merge into PROP-0010; same rationale; same structural artifact;
+    third recurrence merges again rather than spawning a second proposal for the same upstream fix).
+  HARD: recurrence-count-3 across independent chapters (Rule 11 recurrence threshold exceeded;
+    first-occurrence hold is clearly released at 3) + gate-working-correctly discrimination
+    (gate fires correctly; root is at authoring brief, not at the gate) + content-vs-process:
+    the gate cannot structurally prevent author over-extension of the holds license — only a
+    Phase 1 brief note can; change_type: modify at the authoring layer.
+
+rationale: |
+  Signals are structurally identical to those at DEC-0046: the fractional-target-floor collision
+  between the +0.5 mls target and the 1.0 bone floor is deterministic. PROP-0010's upstream
+  pre-flight fix is the correct closure; adding a third recurrence_ref to PROP-0010 is the
+  correct update. No new gate machinery warranted.
+
+  The holds-license misread pattern is now confirmed across three chapters with three distinct
+  sub-types:
+    (a) group subject + abstract-register object (c04 — pushed through advisory)
+    (b) abstraction-as-object ("the silence" — c07 HARD, caught at /and-review bones)
+    (c) non-body-part/non-pressure-resisting physical object ("the stylus" — c06r HARD, Phase 6)
+  All three misread the holds license in different directions. The schema's deny-list example
+  ("taylor holds the ledger") establishes the pattern for non-body-part physical objects but the
+  author generated a parallel form despite the example. The Phase 1 brief has no positive
+  instruction on holds-license scope — the author must derive the license from the schema,
+  and the derivation is failing at recurrence-3.
+  change_type: modify (Phase 1 brief addition; the Phase 6 gate already catches correctly); S-cost.
+
+trade-off: |
+  Proposing at recurrence_count=3: clearly past the first-occurrence hold. The three sub-types
+  could be addressed by a single brief note that names both conditions exhaustively and provides
+  negative examples parallel to the schema deny-list. Not proposing would allow a fourth occurrence
+  on a future chapter. Expected cost of the fourth occurrence: one HARD + in-invocation cycle or
+  /and-review-bones HARD + bones revise pass. The Phase 1 brief note costs S; the prevented HARDs
+  cost 5-15 dispatches each on average.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0058 | 2026-05-31 | SLOW (user-proxy)
+
+question: |
+  b01c06 depth-pass re-cascade complete. Terminal Phase 9 cold-read: COMPLETENESS PASS +
+  READABILITY AIRLESS (improved but still airless). DEC-0048 escalation clause fires: "next cold-read
+  still AIRLESS → FAIL/re-decompose." New evidence: 0-mute prose-rationale-mute audit across 20 bones
+  (every concrete rationale-named element IS staged in prose). Disposition fork: (A) FAIL →
+  /and-write revise re-decompose, literal DEC-0048 clause; (B) /and-substance contract revision;
+  (C) accept terminal, stamp abstract-by-contract; (D) escalate to principal.
+
+context: |
+  Depth pass ran full chain: /and-write b01c06 revise (s03 accounting de-abstracted, verdict-pause
+  bone added) → /and-review bones PASS (BONES-AIRLESS-RISK CLEARED) → /and-facets (7/7 SUCCESS,
+  all 10 facets ACCEPT 3-of-3) → /and-stitch (person-first voice-embodiment render).
+  Terminal Phase 9 cold-read:
+    COMPLETENESS: PASS — central event recovered, jeopardy present, causality tight, CONTINUE=yes,
+      summary accurate. Step-2 FAIL conditions do not fire.
+    READABILITY: AIRLESS — "There IS a person now… the crowd breathes" (improved vs. original);
+      BUT "the moment the form arrives, the prose becomes a man describing his own bookkeeping in
+      abstract nouns… the ledger metaphor is relentless… I never feel the four names as men…
+      held at arm's length… the prose insists the choice was never a choice."
+  0-mute audit: ZERO mutes across 20 bones with concrete rationale. Every rationale-named physical
+    element (hand, stylus, board, blank field, seal) IS staged concretely in prose.
+  Cold-reader's three complaints map to contract features:
+    "I never feel the four names as men" → offstage victims by contract (Taylor's internal accounting)
+    "inert dramatically" → no-real-choice framing IS the thesis (the ledger runs clean)
+    "ledger metaphor relentless" → cold-utilitarian POV register (cond-taylor-pov-behavior)
+  Project spine design-intent: "cold-utilitarian; affect suppressed not absent; theme never spoken";
+    "the accuracy is the catastrophe"; "the road to hell is paved with good intentions."
+  DEC-0048 escalation clause was written without the 0-mute evidence. It assumed "next cold-read
+  AIRLESS" would mean de-abstraction failed. The 0-mute audit shows de-abstraction SUCCEEDED
+  completely; the remaining airlessness is contract-origin.
+
+options: |
+  A: FAIL → /and-write revise re-decompose (DEC-0048 literal clause). ~40 dispatches. Hits same
+     contract wall; bones already 0-mute; near-zero expected delta.
+  B: /and-substance contract revision. Contract-level change; touches thesis; changes what the
+     chapter is. Largest spend + principal design call required.
+  C: Accept terminal. Stamp depth_pass_resolved, airlessness-abstract-by-contract. Cheapest.
+  D: Escalate to principal on defect-vs-thesis-feature taste call.
+
+decision: Option C — accept terminal; stamp depth_pass_resolved, airlessness abstract-by-contract.
+
+basis: |
+  goal:1 (pipeline correctness — the escalation clause's FAIL condition targeted a failure mode
+    the 0-mute audit rules out; mechanical literalism is ruled out by DEC-0007 precedent) +
+  goal:2 (cost discipline — Option A is ~40 dispatches against near-zero expected delta;
+    methodology:3b applies strongly) +
+  project-spine-design-intent (decisive signal: "cold-utilitarian; affect suppressed not absent;
+    theme never spoken" + "the accuracy is the catastrophe" are the project spine entries for
+    Taylor's accounting chapters; they confirm the cold register IS the intended effect) +
+  methodology:3a (reversibility — accepting with a documented abstract-by-contract stamp is
+    reversible; the principal can override; A/B are irreversible spends)
+
+rationale: |
+  The DEC-0048 escalation clause — "if next cold-read still AIRLESS → FAIL/re-decompose" — was
+  written under the premise that a second AIRLESS result would mean the depth pass failed to
+  de-abstract the bones. The 0-mute audit conclusively falsifies that premise: all 20 bones with
+  concrete rationale have their named physical elements staged in prose. De-abstraction succeeded
+  completely. The AIRLESS result persists because the chapter's contract (offstage victims, no-choice
+  framing, ledger register) produces cold affect by design. This is the "abstract-by-contract" case
+  DEC-0048's own trade-off note anticipated: "The accounting section may be abstract-by-contract…
+  if bone-level de-abstraction is genuinely unavailable without content invention that violates the
+  substance contract, that is the re-decompose case." BUT — Option A (re-decompose) is only
+  correct when de-abstraction at the bone layer is still available. At 0 mutes, it is not. Running
+  Option A would require inventing content the substance contract does not license.
+
+  The defect-vs-feature question is answered by the project spine directly. The project's stated
+  design intent for Taylor's POV behavior: "cold-utilitarian; affect suppressed not absent; theme
+  never spoken." The project thesis: "the accuracy is the catastrophe"; "the road to hell is paved
+  with good intentions." The cold-reader's specific complaints — "inert dramatically," "the prose
+  insists the choice was never a choice," "held at arm's length" — are what those project spine
+  entries describe. The cold ledger register working on a reader as "inert" is the intended
+  phenomenology: the catastrophe of Taylor's choices is that they feel administrative. The chapter
+  is achieving its thesis effect.
+
+  DEC-0007 precedent: admin declines to apply a formal clause when the underlying mechanism is
+  not the one the clause was designed to govern. DEC-0048's escalation clause governs failed
+  de-abstraction. The 0-mute audit proves de-abstraction was not the failure. Applying the
+  clause anyway would be the same mechanical literalism DEC-0007 blocked.
+
+  Option B (contract revision) is not ruled out by admin — if the principal disagrees with the
+  abstract-by-contract reading and wants to dramatize a victim or add a genuine choice-beat, that
+  is a design direction the principal can take. But admin cannot authorize that spend unilaterally
+  (human-only: architectural direction / strategic priorities). Option C is the correct default
+  from goals + methodology + project spine. If the principal wants B, they direct it.
+
+  Option D (escalate) would be correct if admin could not decide between C and the alternatives.
+  The project spine design-intent is specific and decisive. The "is the cold register
+  intentional?" question has a clear answer in the project documents admin has read.
+
+trade-off: |
+  Option C stamps a chapter as abstract-by-contract on the basis of admin's reading of the project
+  spine. If the principal intended the accounting chapter to feel felt-rather-than-diagrammed (i.e.,
+  the cold register is a rendering defect, not the thesis), admin has made a wrong call. Mitigated by:
+  (a) the project spine evidence is explicit; (b) the 0-mute audit proves the bones cannot be
+  de-abstracted further without contract invention; (c) the principal can override C at zero cost.
+  The cost of Option A without override is ~40 dispatches with near-zero expected delta.
+
+follows: DEC-0048 DEC-0050 DEC-0056
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0059 | 2026-05-31 | SLOW (process-critic)
+
+question: |
+  Process-critic dispatch on coldread-b01c06-2026-05-31.md (PASS-TERMINAL-DEPTH-RESOLVED).
+  First depth-pass loop completion returning AIRLESS again. Key finding: 0-mute
+  prose-rationale-mute audit — de-abstraction exhausted, not failed. DEC-0048 escalation
+  clause (FAIL → re-decompose) was blocked by DEC-0007 anti-literalism + DEC-0058 admin ruling.
+  Candidate: make the abstract-by-contract disposition a mechanical Phase 9 gate outcome
+  instead of a per-chapter admin ruling.
+context: |
+  b01c06 depth-pass ran full chain: /and-write revise (s03 de-abstracted) → /and-review bones
+  PASS (BONES-AIRLESS-RISK CLEARED) → /and-facets (7/7 SUCCESS) → /and-stitch re-cascade.
+  Terminal Phase 9 cold-read: COMPLETENESS PASS + READABILITY AIRLESS (improved but persisting).
+  Step 3.5 prose-rationale-mute audit: 0 mutes across 20 bones. DEC-0058 ruled Option C:
+  accept terminal, depth_pass_resolved, abstract-by-contract (offstage victims + no-choice
+  thesis + cold-utilitarian ledger register = project-spine commitments).
+  Key structural finding: DEC-0048 escalation clause was written assuming "AIRLESS again"
+  = de-abstraction failed. 0-mute audit conclusively falsified that premise. The literal
+  clause would have ordered ~40-dispatch re-decompose against a contract wall.
+  Gate reference: .claude/commands/and-stitch.md#phase-9 (readability-axis composition +
+  depth-pass disposition). Secondary: .claude/commands/and-write.md#phase-6 (0-mute
+  audit origin — ABSTRACTION-DOMINANT SIGNAL list that seeded the depth-pass targets).
+  Proposals log check: no prior proposal against and-stitch.md Phase 9 depth-pass
+  disposition. PROP-0023 (Phase 4.6 apparatus-dominance qualifier) is complementary
+  upstream; different target, different phase.
+options: n/a (process-critic mode)
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0029
+
+basis: |
+  Proposals-log: no matching prior proposal (PROP-0023 covers Phase 4.6 pre-stitch; different
+    target). No rejected proposal against this target.
+  Discrimination: process failure, not content failure. A gate whose literal application would
+    order a wasted ~40-dispatch re-decompose against a confirmed-exhausted de-abstraction
+    state is a gate with a missing disposition branch. The 0-mute result is already a Phase 9
+    gate output; the fix uses existing gate outputs without adding detection machinery.
+  Recurrence override: first occurrence, but deterministic not probabilistic. Every apparatus-
+    dominant chapter that hits depth-pass completion against a contract-register bone-set will
+    produce this exact state. The 0-mute + AIRLESS + completeness-pass combination is
+    mechanically unambiguous. S-cost modify closes the gap precisely.
+  Methodology: reversibility (S-cost, mechanical branch; principal can override); cost
+    (prevents ~40-dispatch re-decompose per future apparatus-dominant depth-pass completion);
+    blast radius (narrow — fires only in depth-pass mode, only at 0-mute result).
+  PROP-0023 interaction: complementary upstream proposal. PROP-0023 catches before stitch;
+    PROP-0029 catches at depth-pass completion. Can be accepted independently.
+
+rationale: |
+  The content failure was correctly handled by DEC-0058 (b01c06 ships terminal; abstract-by-
+  contract ruling is correct). The process failure is the absence of a mechanical gate outcome
+  for this state. The Phase 9 readability-axis disposition currently has no branch for
+  "0-mute + AIRLESS + completeness-pass in depth-pass mode." Without it, each occurrence
+  requires an ad-hoc admin ruling invoking DEC-0007 anti-literalism against DEC-0048.
+  The short-circuit (AIRLESS-ABSTRACT-BY-CONTRACT → PASS-TERMINAL-DEPTH-RESOLVED) makes
+  the recognized exception a first-class gate outcome. The re-decompose route survives for
+  non-zero mute counts (de-abstraction genuinely incomplete = DEC-0048 applies as written).
+  Change_type: modify to existing Phase 9 composition block. Two new verdict values:
+  AIRLESS-ABSTRACT-BY-CONTRACT and PASS-TERMINAL-DEPTH-RESOLVED (depth-pass-mode only).
+
+trade-off: |
+  Proposing at first occurrence. The anti-pattern guard (wait for recurrence on
+  non-catastrophic first occurrence) is overridden by: (a) deterministic failure class;
+  (b) fix uses only existing gate outputs; (c) the alternative is a repeating admin
+  ruling invoking DEC-0007 on a gate whose own trade-off note anticipated this case.
+  Risk if wrong: the principal decides abstract-by-contract is never the correct terminal
+  disposition — but that would require overriding the proposal at triage (low cost) rather
+  than burning dispatches on a known-wasteful re-decompose cycle.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

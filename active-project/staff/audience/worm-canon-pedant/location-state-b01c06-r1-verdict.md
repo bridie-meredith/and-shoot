@@ -1,19 +1,27 @@
 ---
-reviewer: worm-canon-pedant
 facet: location-state
-cycle: 1
 episode: b01c06
-date: 2026-05-30
-verdict: accept
+reviewer: worm-canon-pedant
+phase: 5b-adversarial
+date: 2026-05-31
+verdict: ACCEPT
+earth-bet-fence: CLEAN
 ---
-# Verdict reasoning
 
-Three entries. Each does one thing: sets the physical space at the moment Taylor moves through it. No entry bleeds into interiority, no entry describes what Taylor makes of the space — just the object register. loc-state:1 is the lane-mouth blocked, loc-state:2 is the south-court gap, loc-state:3 is the tallow-smoke at floor-level marking the still-air late-morning working position. That last one does something smart — it gives the reader a body-in-the-room cue at the scene-B open without requiring the narrator to intervene. The tallow-smoke sitting at floor-level is exactly the kind of environmental fact that carries in a Taylor POV: she'd file it as density-data, not as atmosphere.
+# Adversarial reasoning
 
-No Earth-Bet displacement anywhere in this file. No glossary-leak — "tallow-smoke," "the south court," "the lane-mouth" are all Westerosi functional-geography register. The time-of-day flip at @10 (morning → late-morning) is clean and necessary; it carries what the @10 scene transition needs without an exposition detour. Nothing exceeds what the facet should do. Clean.
+Two entries. loc-state:1 @1 (handcart blocks the lane-mouth), loc-state:2 @5 (south court established after Wren's route tip). Both are purely Westerosi physical geography — a cart, a tallow-boiler's wall, a narrow court. No mechanism vocabulary. No parahuman register. No named Earth-Bet place, person, or classification system. Clean.
 
-# Entry-level callouts (revise/fail only)
+My specific lens here is Earth-Bet fence and register fidelity on the narrator-facing establishment text. What the location-state facet is doing at @1 is setting the physical obstacle that generates the Wren exchange; at @5 it confirms Taylor's entry into the south court after taking the offered route. Both anchors are plausible Flea Bottom geography. No Taylor-power-adjacent vocabulary bleeds into the location description (no "range," no "coverage" in a shard-sense, no "senses" in a power-sense — "coverage" in this chapter is consistently the intelligence-map instrument, not a power reference, and location-state fires before that vocabulary appears in the bone sequence). The blocked-lane obstacle doesn't trigger any of my hot buttons: it's a physical obstacle with a physical resolution, not a power-mechanics workaround.
+
+Two entries in 26 bones is thin. That's correct for a single-location chapter where the location is established once and then persists. No location-state fire is missing in my view — Taylor doesn't move to a new location; she moves within oc-stitch-house-lane's geography. No canon-discipline concern here.
+
+Reread before accepting: the loc-state file is minimal and carries nothing to attack. Accept is earned.
+
+# Entry callouts
+
 None.
 
-# Convergence trace
-The auditor ruled loc-state:1 PASS on the lonely/superfluous scan — the world-before-protagonist open is exactly where loc-state should fire. Auditor also confirmed loc-state:3 carries the grd-001 grounding context (the still-air lane / tallow-smoke as the available anchor the grounding-ledger points to). Both rulings track here. No divergence.
+# Convergence-trace
+
+No auditor findings touch location-state directly (CONTRADICTION check confirms state:1/@1 opening-state clean; audit CONTRADICTION section passes loc-state:1 explicitly). No convergence items.

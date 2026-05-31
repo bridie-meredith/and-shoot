@@ -1,21 +1,60 @@
 ---
 reviewer: worm-canon-pedant
 facet: state-updates
-cycle: 1
 episode: b01c06
-date: 2026-05-30
+phase: 5b-adversarial
+date: 2026-05-31
 verdict: accept
+earth-bet-fence: CLEAN
 ---
-# Verdict reasoning
 
-The state-updates file is organized around the right principle: fire on the flip-beat, not the approach. The moral_framework -1.0 fires at @22 (the seal), not at @20 (the accounting-complete) or @14 (the compile). The knowledge.body-map.wren-contact-source-field fires at @8 (the actual blank-authored act), not at @9 (the close). This is source-faithful to how Taylor accounts: the act is the irreversible event, the record is the instrument that holds it. The wren-state-source section is correct to be empty — Wren doesn't undergo a durable canonical state change in her one spoken beat; double-authoring Taylor's relational axis-move onto Wren would be the kind of emotional-projection that source-Taylor would not do and the text should not either.
+# Adversarial reasoning
 
-The field-extensions (knowledge.body-map.wren-contact-source-field; knowledge.named-elder-delivery-record) are the right shape: they're record-state fields tracking what Taylor has authored into the instruments, not perception or mood fields. That's the canon-correct distinction. The oc-* prop carve-out is a documentation problem, not a substance problem; the margit referrals are noted. No Earth-Bet jargon bleeds into any field-name or field-value.
+Twenty-two entries: env:1-17 (environmental prop-states), taylor:18-21 (actor-state transitions), wren:22 (Wren position). The auditor confirmed 84.6% density with a carve-out (three oc-props first-touched; prop-centric chapter).
 
-One note I'm holding but not flagging: `stats.moral_framework_axis` moving from 1 → 0 is described as "cl-d06 cost side." The cost-ledger slug is a project-internal identifier. That's fine. What I'm watching is whether future chapters treat the moral_framework_axis as something that can be reset or negotiated upward. In Worm canon the cost-accounting doesn't reverse — Taylor's ledger doesn't debit and then refund. If the axis moves backward in b01c07+ without an explicit price paid, that's the flag I'll be filing.
+**My lens here is narrow:** Earth-Bet fence on field names and values, register fidelity on Taylor's actor-state entries, and canonicity on any state transition that implies Taylor is using a power-mechanism she does not have in this displacement context.
 
-# Entry-level callouts (revise/fail only)
-None.
+**Earth-Bet fence — field names and values:**
 
-# Convergence trace
-The auditor's STRUCTURAL signal on double-frontmatter form (inner YAML fences vs. comment-header protocol) is a tooling concern, not a substance concern — it doesn't affect this reading. The token collision signal (state:1 @4 in bones vs. state:13 @4 in the cite-index) is the accepted-tooling-artifact ruling from c05; the cite-index is the authoritative surface. Auditor's constraint finding on oc-* prop carve-out (SEAM-006/007/008) noted and tracked.
+The auditor's CONTRADICTION section catalogs the state-update fields:
+- `studio.spatial_layout.lane-mouth: clear -> handcart-blocking` — physical geography. CLEAN.
+- `prop:oc-ward-coverage-notes.state: closed -> open` — prop-state in Westerosi-administrative-instrument register. CLEAN.
+- Taylor actor-state transitions:
+  - position @5 (hook-lane-mouth → south-court) — physical movement. CLEAN.
+  - moral_framework @23: 1→0 — axis designation is a project-internal substance-axis name, not an Earth-Bet mechanism term. CLEAN.
+  - relational_anchor_status @8: 2→3 per state:19 — axis designation is project-internal. CLEAN.
+  - moral_legibility_to_self @25: 4→4.5 per state:21 — project-internal axis. CLEAN.
+
+No state field name or value uses Earth-Bet terminology.
+
+**Taylor's actor-state transitions — canonicity check:**
+
+Taylor's three POV axis-moves: relational_anchor_status +1.0 at @8 (indirect: the omission protects Wren), moral_framework -1.0 at @23 (the send), moral_legibility_to_self +0.5 at @25 (contrast recognition). These are all social/moral axis movements, not power-mechanic movements. No state transition implies Taylor is deploying a shard ability. The intelligence she is routing (four names) comes from a surveillance-coverage operation, not from parahuman capability. CLEAN.
+
+**Wren's state entry (wren:22):**
+
+State:22 records Wren's position transition @3 (in-backed-up-crowd → at-taylor-at-lane-mouth). A physical position transition. The auditor's CONTRADICTION section confirms this is consistent with bones @2 (crowd presses the junction) and @3 (Wren crosses the crowd). No canon issue; no fence issue.
+
+**Density concern from my lens:**
+
+22 state entries in 26 bones is high. The carve-out (three oc-props first-touched; prop mutations ARE the chapter's substance delivery) is structurally sound. From a canon-reader perspective, the density does not concern me because every entry records a physical prop-state or axis-state that derives directly from the bone SVO. There is no state entry recording a power-use, a shard-activation, or an Earth-Bet mechanism event. The density reflects the apparatus-dominant chapter architecture, not a mechanism-vocabulary expansion.
+
+**The oc-prop slugs — SIGNAL from auditor:**
+
+Three oc-prop targets (prop:oc-ward-coverage-notes, prop:oc-jarvis-channel-form, prop:oc-accounting-ledger) have no warehouse card. This is signal-001. From my lens: the absence of a prop card means the prop's constraints are not formally defined. Could the stitcher render "jarvis-channel-form" in a way that imports Earth-Bet telecommunications vocabulary? "Jarvis" is a character name (jarvis-coin-kl-courier, register-resident from b01c03); "channel" is a routing register. Neither is Earth-Bet vocabulary in this context. The props are intelligence-delivery instruments in a Westerosi courier system. The slug names are Westerosi-administrative, not mechanism-adjacent. The card absence is a process gap (margit referral warranted), not a fence risk.
+
+**No state transition implies Taylor knowing things she has no in-world path to:**
+
+Taylor compiled the four ward-elder names through the coverage-memory record @13 (she pulled her own prior intelligence files) and the Jarvis-channel message @10-@11 (a named ask from Otto). The state transitions at @14-@15 (fills the form, lowers it) and @22-@23 (lifts and seals) are prop-state transitions recording physical acts on these records. No lore-leak. The information pathway is in-world.
+
+Reread before accepting: the state-updates facet is the most procedurally dense facet in this graph and contains the least Earth-Bet exposure of any facet I've reviewed. The entries are strictly Westerosi-administrative prop-states and social-axis transitions. Accept earned.
+
+# Entry callouts
+
+None. The oc-prop card-absence (signal-001) is a margit-referral concern, not an Earth-Bet fence issue, and does not require a revise from me. The render-risk I flagged in memory:2 (the override-architecture slug) does not apply here — the oc-prop slug names ("ward-coverage-notes," "jarvis-channel-form," "accounting-ledger") carry no mechanism vocabulary.
+
+# Convergence-trace
+
+- Auditor signal-001 (oc-prop card-resolution): margit-referral pending. My review finds no Earth-Bet fence risk from the slug names themselves. Convergent on the routing (margit, not fixer).
+- Auditor signal-003 (state-updates density): SIGNAL, audience-gate advisory. My review: density is proportionate to the prop-centric chapter architecture and introduces no fence violations. Advisory noted; no revision required from my lens.
+- Auditor CONTRADICTION findings: all clean. Taylor actor-state co-citation with NI confirmed at @8, @23, @25. Confirmed from my read of the R2 decisions NI section.

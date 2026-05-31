@@ -3,6 +3,46 @@
 
 ---
 
+## 2026-05-31 — b01c06 sensory authored at /and-facets Phase 1 R1
+
+Chapter b01c06: 26 bones, 3 scenes. Single location: oc-stitch-house-lane.
+3 sensory entries. Density 11.5% — above standard ceiling; defended at 2 modalities (pressure + sound) against modality floor requirement.
+Short-chapter exemption applies (26 < 30 bones, modality_count = floor 2) but density exceeds the 7.7% advisory; no blocking fault.
+Rubric-carve-out preamble filed for sensory:1 @2 (pressure old-state from location card §Hazards rather than loc-state entry).
+Paired inflection @17+@20 (sound up/drop) mirrors the @24/@30 calibration-anchor pattern.
+Scene coverage: A=1 fire, B=0 fires, C=2 fires.
+
+---
+
+## 2026-05-31 — b01c06 location-state authored at /and-facets Phase 1 R1 (revise pass)
+
+Chapter b01c06: 26 bones, 3 scenes. Single location throughout: oc-stitch-house-lane.
+2 location-state entries authored. 1 entry culled (authoring phase).
+Time arc: morning throughout (no time-of-day change across the chapter).
+Location arc: lane-mouth-blocked (scene-A) → south-court-working-position (scene-A close @5 through chapter-end).
+
+Entry log:
+  loc-state:1 @1 — chapter-open place-anchor; lane-mouth blocked by handcart crossways; crowd backing the junction; establishes the obstructed state before any actor moves.
+  loc-state:2 @5 — threshold crossing (enters the south court); angle-gap off the tallow-boiler's wall; south-court working position established as inherited base for all scene-B/C action.
+
+Cull log:
+  @3 deleted — wren crosses the crowd; movement verb present, but frugality REJECT: crowd established at @1; strip test passes in inherited env; no new location-fact added.
+
+Confirmed REJECT list:
+  @2 crowd-presses-junction — persistence of @1 blocking condition; anti-pattern 3.
+  @4 wren-speaks-to-taylor — pure dialogue beat, no through-space positioning; rubric necessity REJECT.
+  @6–@9 administrative/dexterity in-place — inherit @5 south-court.
+  @10–@15 scene-B informational/dexterity in-place — same location-and-moment as @5; no state-change.
+  @11-@12 fusion-run continuity-carry refused — flat-tense rhythm-shape not in qualifying list.
+  @16–@26 scene-C dexterity/stillness/administrative in-place — inherit @5 south-court throughout.
+  @16-@17, @21-@22 fusion-run continuity-carry refused — rising-to-peak rhythm-shape; license excluded.
+
+No seams flagged.
+
+Chapter-close set state: oc-stitch-house-lane, south-court working position, morning, lane-blocked side not revisited after @5.
+
+---
+
 ## 2026-05-31 — b01c07 location-state authored at /and-facets Phase 1 R1
 
 Chapter b01c07: 25 bones, 3 scenes. Single location throughout: oc-sept-corner (the Hook, Flea Bottom).

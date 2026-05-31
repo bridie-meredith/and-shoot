@@ -1,21 +1,37 @@
 ---
 reviewer: worm-canon-pedant
 facet: metaphor
-cycle: 1
 episode: b01c06
-date: 2026-05-30
-verdict: revise
+phase: 5b-adversarial
+date: 2026-05-31
+verdict: accept
+earth-bet-fence: N/A (zero-fire facet)
 ---
-# Verdict reasoning
 
-One entry, and it is the one entry that should have been refused. meta:1 @24: "the blank field sits in the record like a name that was never missing — tidy, complete, correct." The simile is doing something precise — naming the false-completion aesthetic of the omission — and the vocabulary is in-register (filing language, clinical Taylor). I read the defense. I see the feel:2 anchor, I see the AP7 exception argument. I'm not buying the exception.
+# Adversarial reasoning
 
-The exception is: "@24 is post-dispatch settling, not rupture; dark-humor at @24 is lateral to the breach and does not compete with substance delivery at @22." That's the structural argument. Here's the canon argument against it: source-Taylor doesn't do sardonic recognition. She doesn't stand back from her own records and observe their completeness with wry horror. Her register in the analogous Worm moments — the ones where she's done something she recognizes as a violation — is further down the affect scale, not sideways. The self-aware dark-humor of "the blank field sits in the record like a name that was never missing" is the TEXT observing the irony, using Taylor as a lens but not as the voice. Source-Taylor at this moment would file the state and note the contrast as data — the clinical-contrast read in NI:5 ("the contrast sits in two substrates at once") is actually the more faithful register. The simile adds an aesthetic layer Taylor herself would not author. It reads as the author being clever about a character who isn't clever about herself that way.
+Zero entries. The R2 judge confirms: CONFIRM-ZERO. The R1 refuse-log is intact and the R2 judge walked every candidate and bare protoline.
 
-# Entry-level callouts (revise/fail only)
+**Is zero-fire acceptable here, from my lens?**
 
-- [metaphor:1] @24 — "the blank field sits in the record like a name that was never missing — tidy, complete, correct." The sardonic-recognition frame ("tidy, complete, correct" as ironic-completion register) is the dark-humor functional register the metaphor file claims. But source-Taylor's irony register is operational, not aesthetic — she notes the gap between what a system produces and what it was supposed to produce, not the elegance of the record's self-presentation. "Tidy, complete, correct" as a dark-humor beat requires Taylor to stand slightly outside her own cognition and observe it; the canon voice doesn't do that at cost-moments, it leans in. The NI:5 entry at the same anchor is the canon-correct rendering of the same beat. The simile is an add that displaces register rather than compounding it.
+The question is not whether zero metaphors COULD exist, but whether any gap in the metaphor register creates a canonicity or fence problem. My hot buttons do not fire on zero-metaphor: canon Worm fiction in Taylor's cold-utilitarian mode runs extensively without explicit figurative language. Taylor's register in canon is precise, inventory-driven, cost-accounting. The lack of metaphor entries is not a canon violation; it is canon-faithful.
 
-# Convergence trace
+**Could a metaphor have leaked Earth-Bet vocabulary if it had fired?** This is the counterfactual concern. The R2 judge's refuse-log identifies the blocked candidates: @4 (voice-register + relational-gain peak block), @8 (de-abstraction integrity — protected-pattern hard conflict), @15 (AP7-equivalent + no confirmable anchor), @23 (AP7 default-refuse + de-abstraction integrity), @25 (de-abstraction integrity). Every blocked candidate is blocked on de-abstraction integrity grounds — the bones require physical-act rendering, not figurative rendering. From my perspective, this is correct: the chapter's central action (Taylor converting persons to a deliverable) must NOT be figured into abstraction. The blocked candidates at the moral peaks (@23, @25) are correctly refused on grounds that would also apply from my lens — re-abstraction at those bones would dilute the precision of the act and risk sliding into Earth-Bet mechanism vocabulary.
 
-Auditor's METADATA-INCONSISTENCY finding on the metaphor file (lines 63-64 vs. line 90 inconsistency in the multi-justification tally re: tens:1 stripping) is a documentation signal, not a substance signal. My finding is distinct: it's a voice-register call on the surviving entry, not a licensing-chain objection. The auditor did not examine voice-register fidelity for this entry (AP-SCAN clean on metaphor:1 per the AP-SCAN section: "no AP-SCAN finding on exposition" — the auditor's metaphor AP-SCAN was actually run on exposition:1, not on meta:1; the metaphor file itself was not in the AP-SCAN finding scope). My callout is the seam the mechanical scan cannot reach: does this line sound like Taylor.
+**The R2 judge's bare-protoline assessment of @13 and @19:**
+
+@13 (pulls the coverage-memory record) — correctly classified as administrative retrieval with no metaphoric wanting. From my lens: correct. No power-adjacent mechanism in the coverage-memory retrieval needs figurative handling.
+
+@19 (marks the red-keep coverage record) — the red-keep coverage record is a sequenced accounting fill-step. No metaphoric surface. The R2 judge notes this correctly.
+
+**Pattern:** zero entries, zero pattern. Nothing to attack. The zero-fire is earned: a chapter where every peak bone is protected from figurative rendering by the de-abstraction integrity fences cannot carry metaphor at its peaks, and the non-peak bones do not generate figurative pressure.
+
+Reread before accepting: the refuse-log's reasoning is sound per my lens. No canon violation in zero-fire. Accept is earned.
+
+# Entry callouts
+
+None.
+
+# Convergence-trace
+
+Auditor AP-SCAN section confirms: "AP3/AP7/AP12: zero entries. No scan needed." No auditor finding references the metaphor facet as a locus of concern. The zero-fire is confirmed across all review layers (R1 refuse-log, R2 CONFIRM-ZERO, auditor AP-SCAN). Fully convergent.

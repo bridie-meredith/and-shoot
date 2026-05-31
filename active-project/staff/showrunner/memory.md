@@ -3881,25 +3881,26 @@ books:
       #   (P): proceed, record Q7 confusion list as cold_read_risk_carry → hand to /and-review bones
       #   follow_check (PROP-0020). report: active-project/staff/reviews/chunk-coldread-b01c06-2026-05-30.md
       - slug: b01c06
-        status: audited-r1   # /and-facets COMPLETE (2026-05-30): Phase 5 audit CLEAN (HARD=0) + Phase 5b audience-gate ACCEPT 3-of-3 all facets (3 cycles, no cap-burn)
-        facets_complete:
+        status: audited-r1   # /and-facets b01c06 COMPLETE (re-cascade): Phase 5 HARD=0 + Phase 5b ACCEPT 3-of-3 all 10 facets (2 cycles). audit HARD=0 (fault-001 vibes:19 dangling-mem:1 fixed cycle-1); 4 SIGNAL advisory. Pre: faceted-r2 Phase 4 (R2 merge: mem:1 deleted, narrator:7 added; scene-map URI-SCENE-WINDOW PASS). Pre: faceted-r1 Phase 2 (R1 merge complete; cite-index built 57 entries 92.3% decorated). Pre-Phase-2 note: bones-written from /and-write b01c06 revise --from-signals (depth pass, DEC-0048/0056, 2026-05-31): s03 accounting de-abstracted (@16-@22 recast to concrete acts) + verdict-pause bone added (@20 stills the hand). Bones re-emitted (26 bones); facets + draft STALE-MARKED, re-cascade owed. Prior /and-facets audited-r1 state preserved in facets_complete below (now stale). Phase 6 revise bone-gate PASS (audience SUBSTANCE-FELT 3/3 s03 + airless-cleared 3/3; auditor PASS, abstraction-dominance 91%, 1 form-fault holds->stills resolved). bones_review re-run owed (mandatory /and-review bones gate).
+        facets_complete:   # RE-CASCADE (depth pass, 2026-05-31, 26-bone scaffold) — supersedes the stale pre-revise record (preserved below)
+          stale_since: null
           audit_path: active-project/staff/auditor/facets-final-audit.md
-          audit_reaudit_path: active-project/staff/auditor/facets-final-audit-r2.md
           audit_complete: true
-          audit_hard_findings: 0
-          audit_signal_findings: 10
-          audience_gate_path: active-project/staff/auditor/facets-audience-gate-r3.md
+          audit_hard_findings: 0   # 1 HARD (vibes:19 dangling memory:1 from R2 mem:1 delete) fixed cycle-1
+          audit_signal_findings: 4   # oc-prop card-resolution, sensory density, state-updates density, memory single-register (all advisory)
+          audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md
           audience_gate_complete: true
-          audience_gate_cycles: 3
+          audience_gate_cycles: 2   # cycle-1: 8/10 ACCEPT; cycle-2: sensory + memory remediated -> ACCEPT 3-of-3 all 10
           audience_gate_cap_burned: false
-          bidirectional_loop: validated
+          bidirectional_loop: validated   # shared finding: monument-slug card-absence (auditor signal-001 + worm-canon memory render-risk)
           facets_path: active-project/theater/facets/
           round_1_complete: true
-          round_2_complete: true
-          context_followability_final: {completeness: FOLLOWABLE, readability: ALIVE}   # PROP-0020/0022
+          round_2_complete: true   # R2: mem:1 deleted (spineless), narrator:7 added (substrate carrier); else KEEP/zero
+          context_followability_final: {completeness: FOLLOWABLE, readability: ALIVE}   # PROP-0020/0022 — PROP-0023 honesty-check applied; genuine bone-layer ALIVE
           phase_5c_admin: skipped   # final cycle clean ACCEPT, no cap-burn, no WARN
-          margit_referrals_open: [SEAM-006 oc-ward-coverage-notes, SEAM-007 oc-jarvis-channel-form, SEAM-008 oc-accounting-ledger]   # prop cards; priority before b01c07 facets
-        stitched: true   # /and-stitch b01-c06 COMPLETE (2026-05-30); draft/b01-c06.md terminal deliverable
+          margit_referrals_open: [SEAM-006 oc-ward-coverage-notes, SEAM-007 oc-jarvis-channel-form, SEAM-008 oc-accounting-ledger, monument-override-architecture-residue]   # prop+monument cards; mem:2 carries render-fence note pending card
+          # --- PRE-REVISE record (superseded 2026-05-31; was audited-r1 on the 25-bone scaffold): audience_gate_r3, 3 cycles, audit_signal 10 ---
+        stitched: true   # /and-stitch b01-c06 RE-CASCADE COMPLETE (2026-05-31 depth pass); draft/b01-c06.md re-emitted de-abstracted/person-first; terminal deliverable. Phase 8.5 + Phase 9 cold-read pending verdict.
         cold_read:
           read_at: 2026-05-30
           verdict: PASS-WITH-DEPTH-PASS-REQUIRED   # DEC-0048; ships terminal + mandatory depth pass before book-stable
@@ -3908,7 +3909,20 @@ books:
           recovered_summary: "A surveillance operative is pushed to hand over four people by name, does it to keep a hidden girl alive, and quietly protects the one child whose name they refuse to write down."
           report_path: active-project/staff/reviews/coldread-b01c06-2026-05-30.md
           signal_clusters: []   # single-arm; spine-staging-gap not triggered (central event recovered + staged: 'I sealed it', 'fingers settled and did not open them at once')
-          depth_pass_pending: true   # /and-write b01c06 revise --from-signals (de-abstract the accounting-middle bones @16-@21); DEC-0048 escalation clause: if next cold-read still AIRLESS-on-central-event -> FAIL/re-decompose
+          depth_pass_pending: false   # RESOLVED 2026-05-31 (DEC-0058)
+          depth_pass_resolved_at: 2026-05-31
+          stale_since: 2026-05-31   # this cold_read verdict (PASS-WITH-DEPTH-PASS-REQUIRED) is the PRE-revise record; superseded by the re-cascade cold_read below
+        cold_read_recascade:   # /and-stitch b01-c06 depth-pass re-cascade Phase 9 (2026-05-31); DEC-0058 disposition
+          read_at: 2026-05-31
+          verdict: PASS-TERMINAL-DEPTH-RESOLVED   # depth pass EXECUTED + RESOLVED per DEC-0058; ships terminal. (Separated scoring: completeness PASS; readability AIRLESS accepted as abstract-by-contract — NOT a remediable defect.)
+          completeness_axis: {verdict: PASS, basis: "central event (four-name send + omission-contrast) RECOVERED; jeopardy inferred; causality tight; CONTINUE marginal-yes. Step-2 FAIL conditions do not fire."}
+          readability_axis: {verdict: AIRLESS-ABSTRACT-BY-CONTRACT, basis: "improved over original ('there IS a person; the crowd breathes' vs 'no one home'), but the accounting/central-event zone still reads apparatus ('a man describing his own bookkeeping in abstract nouns / held at arm's length / never feel the cost'). DEC-0058: residual AIRLESS is abstract-by-contract — offstage victims + no-choice thesis + cold-utilitarian ledger-POV are project-spine design commitments (cond-taylor-pov-behavior; 'the accuracy is the catastrophe'), NOT remediable bone/prose defects. 0-mute prose-rationale audit (every concrete element staged) confirms de-abstraction exhausted; DEC-0048 escalation clause falsified by the 0-mute audit (DEC-0007 anti-literalism). The administrative-feel IS the intended phenomenology."}
+          recovered_summary: "A spy-informant, after a stranger's small kindness, coldly logs and ships four named men to his handler while pretending he had any choice in it."
+          report_path: active-project/staff/reviews/coldread-b01c06-2026-05-31.md
+          coherence_review: {verdict: PASS, report: active-project/staff/reviews/coherence-b01-c06-2026-05-31.md, note: "substance-aware PASS; informed-compensation pattern vs cold-read per PROP-0023/DEC-0049"}
+          prose_rationale_audit: {mute_count: 0, bones_checked: 20, verdict: SIGNAL-only, report: active-project/staff/reviews/prose-rationale-audit-b01-c06-2026-05-31.md}
+          signal_clusters: []   # no cluster; 0 prose-mutes; no spine-staging-gap (all central-event bones staged per Step 3.5)
+          disposition: DEC-0058 (Option C — accept terminal; airlessness abstract-by-contract; Option B contract-revision remains principal's zero-cost override)
           stale_since: null
         chunk: |
           Taylor runs the first deliberate rationalize-each-trade beat. A request comes
@@ -3959,32 +3973,35 @@ books:
           Show the audience the first named-person delivery and the accounting that precedes it, so the rationalize-each-trade pattern is legible — and show Wren's omission from the deliverable as the un-priced move it is.
         pov_narrator: taylor-hebert-kl-122ac
         bones_file: theater/bones/b01-c06.md
-        bones_count: 25
-        substance_bone_gate_verdict: PASS
+        bones_count: 26   # was 25; +1 verdict-pause bone (b01c06s03n11) added at revise Phase 3
+        substance_bone_gate_verdict: PASS   # re-confirmed at revise Phase 6 (s03 re-gated; s01/s02 prior PASS carried)
         # /and-review bones b01c06 (2026-05-30): PASS. Fidelity 0 HARD (spine intact all 3 scenes; dialogue coverage+card-compliance PASS; SVO clean 25/25; scene-map 25/25). follow_check PASS-WITH-NOTES (PROP-0020: every context-blind cold-read proper-noun confusion resolved by prior-chapter context = mid-series context-noise, not a bone defect). Aliveness BONES-AIRLESS-RISK advisory (apparatus-dominant accounting chapter; embodied spine present; forwarded downstream). 2 Phase-6 SIGNALs remain advisory. /and-facets cleared.
         bones_review:
-          reviewed_at: 2026-05-30T02:37:00Z
-          report_path: active-project/staff/reviews/bones-b01c06-2026-05-30.md
-          verdict: PASS
-          follow_check: PASS-WITH-NOTES
-          aliveness: BONES-AIRLESS-RISK-advisory   # PROP-0022; s02-s03 accounting middle; forward to /and-facets Phase 2.5 + /and-stitch Phase 4
-          bones_file_mtime_at_review: 1780111145  # DEC-0047 (2026-05-30): mtime reset by git checkout in fresh container after PR #76 merge; content identity verified via `git diff e9883f2 HEAD` (empty) + review-report internal description match. Stamp reconciled to current mtime — NOT a content re-emit / not an operator override of a content change.
-          stale_since: null
+          reviewed_at: 2026-05-31T00:00:00Z   # re-review after revise depth pass; supersedes 2026-05-30 (preserved at report_path_prior)
+          report_path: active-project/staff/reviews/bones-b01c06-revise-2026-05-31.md
+          report_path_prior: active-project/staff/reviews/bones-b01c06-2026-05-30.md
+          verdict: PASS-WITH-NOTES   # 26 bones SVO-clean (recast s03 + @20 stills-the-hand verified independently); chunk->bones spine intact 3/3; scene-map 26/26; follow_check holds
+          follow_check: PASS-WITH-NOTES   # no NEW followability gap from de-abstraction; sera-coverage-entry = same mid-series context-noise class, not a bone defect
+          aliveness: BONES-AIRLESS-RISK-CLEARED   # PROP-0022 — depth pass succeeded at bone layer; s03 accounting middle now concrete embodied beats (writes/stills-the-hand/seal); residual risk is render-layer only -> pl-2026-05-31-002 + scene-map s03 protected-patterns
+          dialogue_fault_resolved: "fault-001 (FAULT-DIALOGUE-MISSING-AT-ANCHOR @4): theater/dialogue/wren-stitch-maker-flea-bottom-ward.md was absent (orphaned by c07 flat-path dialogue authoring; @4 unchanged by this revise). RESTORED verbatim from _archive/20260531T021620Z-b01c06-facets/ — faithful to the unchanged @4 anchor. /and-facets now cleared."
+          flag_001_to_stitch: "@17 writes-the-ward-elder-names render as concrete inscribed text not list-concept (render-layer watch)"
+          bones_file_mtime_at_review: regenerated-2026-05-31   # bones file rewritten from memory at Phase 7 emit this session
+          stale_since: null   # re-review complete; /and-facets b01c06 CLEARED
         context_followability:   # PROP-0020/0022 — /and-facets Phase 2.5 + 4.5
           completeness_verdict: FOLLOWABLE   # Ph2.5 + Ph4.5 both; context-ledger empty (0 CONTEXT-REQUIRED)
           readability_verdict: ALIVE  # Ph4.5 AIRLESS-HOLE -> Ph4.6 grounding remediation (sensory:3/4/5 @10/@16/@17) -> Ph4.6-Step2 re-review ALIVE (continuous somatic thread across hinge)
-          report_path: active-project/staff/reviews/context-follow-r3-b01-c06-2026-05-30.md
-          reviewed_at: 2026-05-30
+          report_path: active-project/staff/reviews/context-follow-r2-b01-c06-2026-05-31.md  # re-cascade post-revise; PROP-0023 honesty-check applied, genuine bone-layer ALIVE (not false-ALIVE)
+          reviewed_at: 2026-05-31
           context_ledger_open: 0
           grounding_ledger_open: 0   # grd-001/002/003 all satisfied by sensory:3/4/5 at Phase 4.6 (cap-exempt licensed adds)
-          voice_fixable: ["@11", "@14", "@20", "@21"]   # -> /and-stitch Phase 4 voice-embodiment
+          voice_fixable: ["@19"]   # re-cascade: only flat-19 (marks red-keep coverage record) VOICE-FIXABLE -> /and-stitch Phase 4 (render concrete, not architecture-summary)
         substance_delta_measured:
           axes_moved:
             - relational_anchor_status +1.0
             - moral_framework -1.0
             - moral_legibility_to_self +1.0
-          density_measured: "0 chatter / 25 bones; grounding 20/25"
-          felt_verdict: SUBSTANCE-FELT-3of3
+          density_measured: "0 chatter / 26 bones; grounding 24/26 (s03 de-abstracted; auditor abstraction-dominance 91%)"
+          felt_verdict: SUBSTANCE-FELT-3of3   # revise Phase 6: s03 re-gated SUBSTANCE-FELT 3/3 + airless-cleared 3/3; s01/s02 prior PASS carried
         # Bone-gate note: Phase 6 bone-gate PASS (auditor: 1 HARD fault-001 HELD-AXIS-NOT-WITNESSED
         # political_register-prot s01 → resolved by assigning to s01n02; 2 SIGNALs accept-with-rationale:
         # mls +0.5→+1.0 overdelivery + s03 stakes-axis tie, both DEC-0030 bone-floor artifacts;
@@ -4492,38 +4509,38 @@ books:
             bones:
               - slug: b01c06s03n01
                 flat_id: 16
-                svo: "taylor-hebert-kl-122ac opens the accounting ledger"
+                svo: "taylor-hebert-kl-122ac opens the ledger-board"
                 shape: held
                 axis_moves: []
                 axes_held:
                   - axis: moral_framework
-                    rationale: "the accounting has not yet arrived at delivery; the ledger opens on the first arm; moral_framework holds at current crack-level pending completion"
+                    rationale: "the accounting has not yet arrived at delivery; the ledger-board opens on the cost-side names; moral_framework holds at current crack-level pending completion"
                 cost_ledger_anchor: null
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n02
                 flat_id: 17
-                svo: "taylor-hebert-kl-122ac writes the first arm — names against Sera's protection"
+                svo: "taylor-hebert-kl-122ac writes the ward-elder names"
                 shape: held
                 axis_moves: []
                 axes_held:
                   - axis: moral_framework
-                    rationale: "the first arm runs cleanly; framework holds — the delivery is not completed in this bone; the accounting arm is not the breach, it is the mechanism that makes the breach legible"
+                    rationale: "the ward-elder names are the cost-side write; framework holds — the delivery is not completed in this bone; writing the names is not the breach, it is the mechanism that makes the breach legible"
                   - axis: relational_anchor_status
-                    rationale: "relational_anchor_status moved in s01; the accounting does not add further weight; the contrast between the four names and Wren's absent name is structurally present but does not move the axis"
+                    rationale: "relational_anchor_status moved in s01; writing the ward-elder names does not add further weight to the anchor; the contrast between the four names and Wren's absent name is structurally present but does not move the axis"
                 cost_ledger_anchor: null
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n03
                 flat_id: 18
-                svo: "taylor-hebert-kl-122ac writes the second arm — omission risk against Sera's exposure"
+                svo: "taylor-hebert-kl-122ac writes the sera-coverage entry"
                 shape: held
                 axis_moves: []
                 axes_held:
                   - axis: moral_framework
-                    rationale: "second arm runs without embellishment; the accounting is honest and not yet complete; framework holds pending the close"
+                    rationale: "the sera-coverage entry is the exposure-side write; it runs without embellishment; the accounting is honest and not yet complete; framework holds pending the close"
                   - axis: political_register-prot
-                    rationale: "the ward elders are Flea Bottom-layer; the ask came from Otto through Jarvis; no court-tier content activates the resentment register in the accounting itself; political_register-prot holds"
+                    rationale: "Sera is the protect-target; the sera-coverage entry carries no court-tier content that activates the resentment register in the accounting itself; political_register-prot holds"
                 cost_ledger_anchor: null
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
@@ -4540,30 +4557,40 @@ books:
                 cost_ledger_anchor: null
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
-              - slug: b01c06s03n05
-                flat_id: 20
-                svo: "taylor-hebert-kl-122ac closes the accounting entry"
+              - slug: b01c06s03n11
+                flat_id: 20   # inserted at Phase-3 transition-fix; Phase 7 reassigns all s03 flat_ids (former 20-25 shift to 21-26)
+                svo: "taylor-hebert-kl-122ac stills the hand"
                 shape: held
                 axis_moves: []
                 axes_held:
                   - axis: moral_framework
-                    rationale: "the accounting runs as stated; both arms land with full weight; the balance arrives at delivery; moral_framework holds at this bone — the move fires on the send (n06), not on the close; the close IS the moment the breach becomes inevitable"
+                    rationale: "the verdict-pause — the two completed ledger entries stand (the ward-elder names; the sera-coverage entry) and the accounting's own logic closes here; the hand stilling over the entries enacts the framework holding against the pressure to proceed at the moment it authorizes the send; the move fires at the seal (n06), not here; this held beat is the rise into the seal the climax requires (dramatist Phase-3 missing-transition fix; SVO recast holds->stills per Phase-6 auditor fault-001 narrow-holds-license)"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
+              - slug: b01c06s03n05
+                flat_id: 21
+                svo: "taylor-hebert-kl-122ac closes the ledger-board"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: moral_framework
+                    rationale: "the accounting runs as stated; both writes have landed; moral_framework holds at this bone — the move fires at the seal (n06), not at the ledger-board close; the ledger-board closing IS the moment the breach becomes inevitable"
                 cost_ledger_anchor: null
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n10
-                flat_id: 21
-                svo: "taylor-hebert-kl-122ac squares the jarvis-channel form"
+                flat_id: 22
+                svo: "taylor-hebert-kl-122ac lifts the jarvis-channel form"
                 shape: held
                 axis_moves: []
                 axes_held:
                   - axis: moral_framework
-                    rationale: "deliberation complete; the accounting's verdict has converted to act; the framework holds at this bone — the move fires on the seal at n06, not here; this bone is the close→act hinge that makes the causation of the breach visible (write terms → run balance → close entry → ACT)"
+                    rationale: "deliberation complete; the accounting's verdict has converted to act; the framework holds at this bone — the move fires on the seal at n06, not here; lifting the form is the close→act hinge that makes the causation of the breach visible (write names → close ledger-board → lift form → seal)"
                 cost_ledger_anchor: null
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n06
-                flat_id: 22
+                flat_id: 23
                 svo: "taylor-hebert-kl-122ac seals the jarvis-channel form"
                 shape: moving
                 axis_moves:
@@ -4575,7 +4602,7 @@ books:
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n07
-                flat_id: 23
+                flat_id: 24
                 svo: "the courier takes the jarvis-channel form"
                 shape: held
                 axis_moves: []
@@ -4588,7 +4615,7 @@ books:
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n08
-                flat_id: 24
+                flat_id: 25
                 svo: "taylor-hebert-kl-122ac opens the ward-coverage notes"
                 shape: moving
                 axis_moves:
@@ -4600,7 +4627,7 @@ books:
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
               - slug: b01c06s03n09
-                flat_id: 25
+                flat_id: 26
                 svo: "taylor-hebert-kl-122ac closes the ward-coverage notes"
                 shape: held
                 axis_moves: []
