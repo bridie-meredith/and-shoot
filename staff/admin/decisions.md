@@ -3406,3 +3406,77 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0059 | 2026-05-31 | SLOW (process-critic)
+
+question: |
+  Process-critic dispatch on coldread-b01c06-2026-05-31.md (PASS-TERMINAL-DEPTH-RESOLVED).
+  First depth-pass loop completion returning AIRLESS again. Key finding: 0-mute
+  prose-rationale-mute audit — de-abstraction exhausted, not failed. DEC-0048 escalation
+  clause (FAIL → re-decompose) was blocked by DEC-0007 anti-literalism + DEC-0058 admin ruling.
+  Candidate: make the abstract-by-contract disposition a mechanical Phase 9 gate outcome
+  instead of a per-chapter admin ruling.
+context: |
+  b01c06 depth-pass ran full chain: /and-write revise (s03 de-abstracted) → /and-review bones
+  PASS (BONES-AIRLESS-RISK CLEARED) → /and-facets (7/7 SUCCESS) → /and-stitch re-cascade.
+  Terminal Phase 9 cold-read: COMPLETENESS PASS + READABILITY AIRLESS (improved but persisting).
+  Step 3.5 prose-rationale-mute audit: 0 mutes across 20 bones. DEC-0058 ruled Option C:
+  accept terminal, depth_pass_resolved, abstract-by-contract (offstage victims + no-choice
+  thesis + cold-utilitarian ledger register = project-spine commitments).
+  Key structural finding: DEC-0048 escalation clause was written assuming "AIRLESS again"
+  = de-abstraction failed. 0-mute audit conclusively falsified that premise. The literal
+  clause would have ordered ~40-dispatch re-decompose against a contract wall.
+  Gate reference: .claude/commands/and-stitch.md#phase-9 (readability-axis composition +
+  depth-pass disposition). Secondary: .claude/commands/and-write.md#phase-6 (0-mute
+  audit origin — ABSTRACTION-DOMINANT SIGNAL list that seeded the depth-pass targets).
+  Proposals log check: no prior proposal against and-stitch.md Phase 9 depth-pass
+  disposition. PROP-0023 (Phase 4.6 apparatus-dominance qualifier) is complementary
+  upstream; different target, different phase.
+options: n/a (process-critic mode)
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0029
+
+basis: |
+  Proposals-log: no matching prior proposal (PROP-0023 covers Phase 4.6 pre-stitch; different
+    target). No rejected proposal against this target.
+  Discrimination: process failure, not content failure. A gate whose literal application would
+    order a wasted ~40-dispatch re-decompose against a confirmed-exhausted de-abstraction
+    state is a gate with a missing disposition branch. The 0-mute result is already a Phase 9
+    gate output; the fix uses existing gate outputs without adding detection machinery.
+  Recurrence override: first occurrence, but deterministic not probabilistic. Every apparatus-
+    dominant chapter that hits depth-pass completion against a contract-register bone-set will
+    produce this exact state. The 0-mute + AIRLESS + completeness-pass combination is
+    mechanically unambiguous. S-cost modify closes the gap precisely.
+  Methodology: reversibility (S-cost, mechanical branch; principal can override); cost
+    (prevents ~40-dispatch re-decompose per future apparatus-dominant depth-pass completion);
+    blast radius (narrow — fires only in depth-pass mode, only at 0-mute result).
+  PROP-0023 interaction: complementary upstream proposal. PROP-0023 catches before stitch;
+    PROP-0029 catches at depth-pass completion. Can be accepted independently.
+
+rationale: |
+  The content failure was correctly handled by DEC-0058 (b01c06 ships terminal; abstract-by-
+  contract ruling is correct). The process failure is the absence of a mechanical gate outcome
+  for this state. The Phase 9 readability-axis disposition currently has no branch for
+  "0-mute + AIRLESS + completeness-pass in depth-pass mode." Without it, each occurrence
+  requires an ad-hoc admin ruling invoking DEC-0007 anti-literalism against DEC-0048.
+  The short-circuit (AIRLESS-ABSTRACT-BY-CONTRACT → PASS-TERMINAL-DEPTH-RESOLVED) makes
+  the recognized exception a first-class gate outcome. The re-decompose route survives for
+  non-zero mute counts (de-abstraction genuinely incomplete = DEC-0048 applies as written).
+  Change_type: modify to existing Phase 9 composition block. Two new verdict values:
+  AIRLESS-ABSTRACT-BY-CONTRACT and PASS-TERMINAL-DEPTH-RESOLVED (depth-pass-mode only).
+
+trade-off: |
+  Proposing at first occurrence. The anti-pattern guard (wait for recurrence on
+  non-catastrophic first occurrence) is overridden by: (a) deterministic failure class;
+  (b) fix uses only existing gate outputs; (c) the alternative is a repeating admin
+  ruling invoking DEC-0007 on a gate whose own trade-off note anticipated this case.
+  Risk if wrong: the principal decides abstract-by-contract is never the correct terminal
+  disposition — but that would require overriding the proposal at triage (low cost) rather
+  than burning dispatches on a known-wasteful re-decompose cycle.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

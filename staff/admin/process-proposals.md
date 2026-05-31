@@ -3535,3 +3535,174 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0029
+
+```yaml
+id: PROP-0029
+created_at: 2026-05-31T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01c06-2026-05-31.md
+  source_verdict: "PASS-TERMINAL-DEPTH-RESOLVED — completeness PASS / readability AIRLESS-ABSTRACT-BY-CONTRACT. First depth-pass loop completion returning AIRLESS again; 0-mute prose-rationale-mute audit; DEC-0058 ruled Option C (abstract-by-contract, terminal)."
+  gate_path: .claude/commands/and-stitch.md#phase-9
+  secondary_gate_paths: [.claude/commands/and-write.md#phase-6]
+target:
+  type: command
+  path: .claude/commands/and-stitch.md
+  section: "Phase 9 — Cold-read terminal gate / Separated scoring readability axis / depth-pass disposition"
+change_type: modify
+rationale: |
+  b01c06 is the first chapter where the depth-pass loop (URI-STITCH-COLD-READ-FEEDBACK-LOOP,
+  wired by DEC-0048) ran to completion and returned AIRLESS a second time. The DEC-0048
+  escalation clause — "if the next cold-read is still AIRLESS on the central event →
+  FAIL/re-decompose" — was written under the premise that a second AIRLESS result would
+  mean the depth pass failed to de-abstract the bones. The b01c06 run exposed a case the
+  clause did not model: de-abstraction was EXHAUSTED (0-mute audit across 20 bones; every
+  rationale-named concrete element staged in prose), and the persisting airlessness is
+  contract-origin (offstage victims, no-choice framing, cold-utilitarian ledger register
+  from cond-taylor-pov-behavior — all project-spine commitments, not rendering defects).
+
+  Without a short-circuit for this case, the Phase 9 readability axis + DEC-0048 escalation
+  clause would mechanically order a re-decompose (~40 dispatches) that hits the same contract
+  wall. DEC-0007 anti-literalism + DEC-0058 blocked it this run, but the block was an
+  ad-hoc admin ruling, not a mechanical gate outcome. Any future apparatus-dominant chapter
+  that ships PASS-WITH-DEPTH-PASS-REQUIRED and runs its depth pass to completion against a
+  contract-register bone-set will hit this exact branch — and will require a fresh admin
+  ruling to avoid the same wasted cycle.
+
+  The 0-mute audit (Step 3.5 of Phase 9) is already a Phase 9 sub-step whose result is on
+  disk. Its result is mechanically determinable. The proposed short-circuit adds one
+  disposition branch to the Phase 9 readability-axis composition block:
+
+  When the Phase 9 PASS-WITH-DEPTH-PASS-REQUIRED depth-pass re-stitch cold-read returns
+  AIRLESS AND the Step 3.5 prose-rationale-mute audit for the depth-pass run shows mute
+  count = 0 (all rationale-named concrete elements staged in prose) AND the completeness
+  axis PASSES, the Phase 9 orchestrator MUST:
+    (1) Classify the result as AIRLESS-ABSTRACT-BY-CONTRACT — de-abstraction is exhausted;
+        the persisting airlessness is contract-origin.
+    (2) Stamp chapters[<slug>].cold_read.depth_pass_resolved = true and
+        chapters[<slug>].cold_read.readability_axis.verdict = AIRLESS-ABSTRACT-BY-CONTRACT.
+    (3) Return PASS-TERMINAL-DEPTH-RESOLVED (terminal verdict). The chapter ships. Do NOT
+        route to /and-write revise. Do NOT re-decompose.
+    (4) Surface a one-line note in the exit summary: "AIRLESS-ABSTRACT-BY-CONTRACT: all
+        rationale-named elements staged (0 mutes); persisting airlessness is contract-register.
+        Chapter ships. Principal may override with /and-substance contract revision."
+
+  The re-decompose route survives for non-zero mute counts: when the mute audit finds N > 0
+  muted concrete elements (rationale names X but prose does not stage X), de-abstraction is
+  genuinely incomplete and the DEC-0048 escalation clause applies. The short-circuit fires
+  only when mute count = 0 — de-abstraction is confirmed exhausted, not failed.
+
+  This is change_type: modify on the existing Phase 9 readability-axis composition block.
+  The detection mechanism (0-mute audit), the completeness pass, and the AIRLESS result are
+  all already Phase 9 gate outputs. The modification adds one disposition branch using those
+  existing outputs. No new gate, no new step, no new schema field beyond the
+  AIRLESS-ABSTRACT-BY-CONTRACT verdict value added to the readability-axis classification.
+
+  Relationship to PROP-0023: PROP-0023 targets Phase 4.6 (pre-stitch, apparatus-dominance
+  qualifier on the ALIVE verdict — prevents apparatus-dominant chapters from reaching stitch
+  without bone-level de-abstraction). PROP-0023 addresses the upstream case; this proposal
+  addresses the depth-pass completion case. They are complementary: PROP-0023 may prevent
+  some chapters from needing the depth-pass loop; this proposal handles the case where a
+  chapter arrives at depth-pass completion and hits the contract wall anyway. Both can be
+  accepted independently.
+
+  Recurrence: first occurrence at depth-pass-loop completion. Proposing at first occurrence
+  rather than waiting because:
+  (a) The gap is deterministic. Every apparatus-dominant chapter whose contract-register
+      bones cannot be de-abstracted further will hit this exact branch when the depth-pass
+      loop completes. The "0 mutes but AIRLESS" state is the unambiguous mechanical indicator.
+  (b) The fix uses only Phase 9 gate outputs already on disk (mute count, completeness,
+      AIRLESS). No new detection mechanism required.
+  (c) Without the short-circuit, the only protection against the wasted re-decompose cycle
+      is an admin ruling (DEC-0007 anti-literalism applied to DEC-0048's escalation clause).
+      A gate whose literal application wastes ~40 dispatches is a gate with a missing
+      disposition branch.
+  (d) S-cost: one conditional branch in the Phase 9 readability-axis disposition block.
+  (e) The "abstract-by-contract" case is the exact exception DEC-0048's trade-off note
+      anticipated ("The accounting section may be abstract-by-contract") without giving it
+      a mechanical gate outcome. This proposal closes that acknowledged gap.
+evidence_refs:
+  - "active-project/staff/reviews/coldread-b01c06-2026-05-31.md — AIRLESS verdict on depth-pass re-stitch; 'there IS a person now… the crowd breathes' (improved); 'the moment the form arrives, the prose becomes a man describing his own bookkeeping in abstract nouns… I never feel the four names as men'; completeness PASS; CONTINUE marginal-yes."
+  - "staff/admin/decisions.md — DEC-0058: 0-mute audit across 20 bones; cold-reader complaints (offstage victims / no-choice framing / ledger register) all map to project-spine commitments; Option C (accept terminal, abstract-by-contract) selected; DEC-0007 anti-literalism applied to DEC-0048 clause."
+  - "staff/admin/decisions.md — DEC-0048: escalation clause 'if next cold-read still AIRLESS on central event → FAIL/re-decompose'; trade-off note anticipates 'abstract-by-contract' case but gives it no mechanical gate outcome."
+  - ".claude/commands/and-stitch.md — Phase 9 Step 3.5 (prose-rationale-mute audit): already fires; already produces mute count on disk. Phase 9 readability-axis composition rule: 'AIRLESS with completeness-pass → at least PASS-WITH-DEPTH-PASS-REQUIRED' — no disposition branch for depth-pass re-stitch 0-mute result."
+  - "staff/admin/process-proposals.md — PROP-0023 (Phase 4.6 apparatus-dominance qualifier; complementary upstream proposal; different target, different phase; open/untriaged)."
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-stitch.md, Phase 9, in the separated-scoring readability-axis
+  composition block (the paragraph reading "AIRLESS with completeness-pass → at least
+  PASS-WITH-DEPTH-PASS-REQUIRED"), add a depth-pass re-stitch sub-clause:
+
+  CURRENT (simplified):
+    AIRLESS + completeness-pass → PASS-WITH-DEPTH-PASS-REQUIRED
+    AIRLESS on central event → FAIL → /and-write revise
+
+  PROPOSED — add after the PASS-WITH-DEPTH-PASS-REQUIRED sentence:
+
+    **Depth-pass re-stitch AIRLESS sub-clause.** Fires only in depth-pass mode
+    (this /and-stitch invocation is the depth-pass re-stitch following a prior
+    PASS-WITH-DEPTH-PASS-REQUIRED; detectable from
+    chapters[<slug>].cold_read.depth_pass: in-progress or equivalent flag):
+
+    When AIRLESS AND completeness PASS AND depth-pass mode is active:
+
+    Sub-check: read the Step 3.5 prose-rationale-mute audit result for this run.
+
+    Case A — mute count = 0 (all rationale-named concrete elements staged in prose):
+      De-abstraction is exhausted. The persisting airlessness is contract-origin.
+      Classify: AIRLESS-ABSTRACT-BY-CONTRACT.
+      Actions:
+        1. Stamp chapters[<slug>].cold_read.depth_pass_resolved = true.
+        2. Stamp chapters[<slug>].cold_read.readability_axis.verdict =
+           AIRLESS-ABSTRACT-BY-CONTRACT.
+        3. Return PASS-TERMINAL-DEPTH-RESOLVED. Chapter is terminal. Do NOT route to
+           /and-write revise. Do NOT re-decompose.
+        4. Exit summary line (mandatory):
+           "AIRLESS-ABSTRACT-BY-CONTRACT: 0-mute audit confirms de-abstraction exhausted.
+            Persisting airlessness is contract-register. Chapter ships terminal. Principal
+            may override with /and-substance contract revision."
+
+    Case B — mute count > 0 (N rationale-named concrete elements not staged in prose):
+      De-abstraction is genuinely incomplete. Apply DEC-0048 escalation clause:
+      FAIL → /and-write revise --from-signals.
+      Surface the muted elements list from Step 3.5 in the FAIL exit block as the
+      signal targets for the revise brief.
+
+    Case C — Step 3.5 not run for this invocation (mute audit absent):
+      Run Step 3.5 before deciding. Do not assume mute count. The sub-clause requires
+      the mute-audit result to be present before it can fire.
+
+  VERDICT ENUMERATION ADDITIONS:
+    - Add AIRLESS-ABSTRACT-BY-CONTRACT to the readability-axis verdict enumeration
+      alongside READABLE and AIRLESS.
+    - Add PASS-TERMINAL-DEPTH-RESOLVED to the Phase 9 outcome enumeration alongside
+      PASS, PASS-WITH-DEPTH-PASS-REQUIRED, and FAIL.
+    Both new values fire only in depth-pass mode.
+
+  MEMORY SCHEMA NOTE (optional, deferred to principal):
+    If chapters[<slug>].cold_read.readability_axis.verdict is formally typed in
+    schemas/showrunner-memory.schema.md, add AIRLESS-ABSTRACT-BY-CONTRACT to the enum.
+    If chapters[<slug>].cold_read.depth_pass_resolved is a new field, add it as an
+    optional boolean to the cold_read block. Cost S; can be accepted independently.
+
+  INTERACTION WITH PROP-0023:
+    If PROP-0023 is implemented, Phase 4.6 catches apparatus-dominant chapters before stitch
+    and routes them upstream. Chapters that PROP-0023 catches do not invoke the depth-pass
+    loop and do not trigger this sub-clause. If PROP-0023 is not implemented (open/untriaged),
+    this sub-clause is the only mechanical protection against the wasted re-decompose cycle
+    at depth-pass completion. The proposals are complementary; accept/defer each independently.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
