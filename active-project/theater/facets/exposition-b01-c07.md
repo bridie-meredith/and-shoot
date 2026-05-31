@@ -116,3 +116,64 @@ emit-disposition: 2 entries — (1) prior-episode-bridge @0; (2) first-mention-c
 #   (2) candidate-a sept-corner place-DROP rests on the loc-state-at-establishment assumption (R1-blind) — R2 must confirm loc-state FIRES at the sept-corner establishment (near-certain for a single-location chapter); if it does, the place-drop is graph-confirmed and the @3 Halvard-fixed-point fold is sufficient.
 #   (3) The @3 first-mention-character renders inline-appositive (fence-clear; @3 is 9 bones from nearest speech bone @12); R2 cite-index rebuild should confirm the {@10..@14, @17..@23} union fence-window carries NO first-mention entry (only @3 fires a first-mention, and @3 is outside all windows) — fence satisfied.
 #   (4) WATCH-1 / PASS-CHUNK-VOICE-RISK INTERACTION: R2 must CONFIRM no exposition entry pre-exposes the Wenna-Cobb death (@19 dialogue is the sole carrier). The @0 bridge and @3 Halvard gloss are both audited above as Wenna-Cobb-silent. This is the load-bearing withhold for the chapter's lone concrete anchor; any R2 ADD that touches the named death would REGRESS the muffle-guard.
+
+# ============================================================================
+# R2 GRAPH-AWARE DISPOSITION (2026-05-31; cite_index_hash 4b1789810b83040f443958cffc443ec91345befc)
+# ============================================================================
+# Judge: exposition-author in R2 judge mode, graph-aware. Read: all locked R1 lens facets
+#   (interest-narrator, location-state, sensory, memory, feeling, metaphor, vibes), base
+#   proto-lines b01-c07.md, _cite-index.md, context-ledger-b01-c07.md (0 CONTEXT-REQUIRED entries),
+#   B-locked-rubric + C-arbiter-protocol + rubric-exposition. Both R1 entries re-encountered cold.
+#
+# VERDICTS: exposition:1 @0 — KEEP (no reword). exposition:2 @3 — KEEP (no reword). 0 DELETE. 0 ADD.
+# Final count: 2 entries. Sparsity 8.0% (2/25) HOLDS — no trim (both KEEP), no add.
+# Entry bodies unchanged from R1 emit. The R2 work was graph-coverage verification + the four
+#   R1-flagged seam route-checks; neither entry needed a surface mutation.
+#
+# Seam route-checks against the locked graph:
+#   SEAM (1) scene-orient @9 refuse — CONFIRMED. loc-state:3 @9 fires (late-morning; passage-open;
+#     "cold-holding ground unwarmed") — a single-location time-band inflection carried at-establishment.
+#     Per fire-rule clause (b), loc-state firing at @9 makes any scene-open-orient wallpaper. Clause (a)
+#     also fails: NI is silent at @9/@10 and the action is continuous (Halvard simply continues talking;
+#     no time-skip blank). Both backstops hold. Refuse stands. All 3 scene-boundary refusals (chapter-open
+#     @1, @9, @18) confirmed against the locked graph; 0 scene-open-orient fires.
+#   SEAM (2) sept-corner place-DROP — GRAPH-CONFIRMED. loc-state FIRES the sept-corner establishment
+#     (loc-state:1 @1, :2 @7, :3 @9, :4 @15, :5 @23 — the physical corner: choke-point, sept-bay shadow
+#     on the crossing stone, cold-holding stone, ground-cold-through-the-soles, cross-lane mouth). The
+#     PHYSICAL establishment is loc-state's at-establishment work per rubric §Never-gloss "loc-state firing
+#     at-establishment → exposition does NOT add location-shift." The @3 Halvard-fixed-point fold
+#     ("just a corner of a chandler's storehouse") carries the place's load-bearing-this-chapter content
+#     (Halvard's station). Standalone place-gloss would duplicate loc-state + the @3 fold. DROP confirmed.
+#   SEAM (3) @3 fence re-walk against cite-index — CONFIRMED CLEAR. Speech bones from cite-index =
+#     {@12 [septon-halvard-flea-bottom:1], @19 [taylor-hebert-kl-122ac:1], @21 [septon-halvard-flea-bottom:2]},
+#     matching the speech-act SVO set ("speaks" @12/@19/@21). Union ±2 fence-window = {@10..@14, @17..@23}.
+#     @3 is OUTSIDE all windows (9 bones from nearest speech bone @12). inline-appositive PERMITTED;
+#     no escalation. The only first-mention entry (exposition:2) sits outside the fence-window. Fence satisfied.
+#   SEAM (4) Wenna-Cobb withhold — CONFIRMED HELD. Neither entry touches the named death. @0 bridge is
+#     Wenna-Cobb-silent (audited); @3 Halvard gloss is Wenna-Cobb-silent (audited). The death is graph-resident
+#     via dialogue @19 [taylor-hebert-kl-122ac:1] + mem:2 @19 + narrator:4 @19 + feel:2 @18 — the dialogue
+#     is the sole carrier. NO R2 ADD proposed near @18/@19 (would regress the muffle-guard). Withhold intact.
+#
+# G2/T4 add-discipline check (forward from at-rest reading, NOT backward from a graph niche):
+#   I set the cite-index aside and re-read the proto-lines at rest. The only bare/under-decorated anchors
+#   are @5, @8, @10, @16 (cite-index "bare protolines"). @5 "receives the plain acknowledgment" + @8
+#   "acknowledges Halvard" are continuous-encounter beats fully oriented by the @3 fold; @10 "names the
+#   maester's cost" is plot-content the dialogue at @12 carries; @16 "exhales" is a non-POV somatic beat.
+#   None WANTS an exposition entry at rest — the wanting would only appear if I worked backward from "there
+#   is room in the bare-anchor list," which is the T4 dishonest motive. Context-ledger has 0 CONTEXT-REQUIRED
+#   entries, so there is no ledger-licensed add. 0 adds. The 8.0% sparsity is the floor a hinge introducing
+#   exactly one named individual can fire (1 fixed-overhead bridge + 1 first-mention); it does not trim.
+#
+# G1 cold-read (both KEEP): @0 — read cold, the "the accounting has gone quiet — not because it stopped
+#   costing but because the cost has become the shape of an ordinary morning" + "I am not braced for an
+#   argument" lands as the routine-consolidation frame + the unscheduled-encounter hinge-prime; no lens
+#   facet carries it (mem:1 @6 is shape-only override-residue, not the arrangement's running-cost frame;
+#   NI first fires @13; loc-state/vibes are physical/operator-facing). Wanted at rest. @3 — read cold, the
+#   "asks plainness of people, not agreement" clause is what makes the s02 thesis land from a coherent moral
+#   figure; the proto-line @3 names Halvard cold in prose with no characterization and no lens fires a prose
+#   introduction at @3 (state:5 @3 is a state-delta, vibes:10/13 are operator-facing). Both the always-gloss
+#   "septon" and the first-mention-character gap are real and uncovered. Keeps clean.
+#
+# Arbiter (T1/T4) self-check: both verdicts name entry-specific content (the consolidation-frame phrase;
+#   the plainness-not-agreement clause) and trace coverage from the at-rest reading + the locked lens graph,
+#   not from rubric labels. No add worked backward from a niche. No T1/T4 intervention warranted.
