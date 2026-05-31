@@ -3,6 +3,47 @@
 
 ---
 
+## 2026-05-31 — b01c08 location-state authored at /and-facets Phase 1 R1 (BLIND)
+
+Chapter b01c08: 24 bones, 3 scenes. Two primary locations: the-hook-ward (scenes A + C) and the-feed-station (scene B). Scene-A entry point is the-lane-junction-rushwick-margin.
+6 location-state entries authored. 0 entries culled. Authoring in BLIND mode (no other facets consulted).
+Time arc: afternoon (scenes A + B) → evening (scene C). Single time-of-day shift at scene-C open (@16).
+
+Entry log:
+  loc-state:1 @1 — the-lane-junction-rushwick-margin; afternoon; circuit entry; broken sightline on the north side where the hill's stone skirt cuts the view. Place-anchor for scene-A.
+  loc-state:2 @3 — the-hook-ward; afternoon; water-point occupied; watcher-boy's posted position at the water-point (first-beat-in-new-sub-location; peak-shadow bone per scene-map).
+  loc-state:3 @4 — the-hook-ward; afternoon; lane-mouth watched; basket-woman positioned outward at the lane-mouth opening (first-beat-in-new-sub-location).
+  loc-state:4 @9 — the-feed-station; afternoon; packet on intake surface; Jarvis channel intake station. Transitional `arrives` verb. Place-anchor for scene-B at new location.
+  loc-state:5 @16 — the-hook-ward; evening; water-point approach; return-circuit pass. Transitional `enters` verb. Time-of-day shift (afternoon → evening). Place-anchor for scene-C.
+  loc-state:6 @23 — the-hook-ward; evening; water-point vacated. State-change: watcher-boy-position no longer occupying the approach geometry established at @3. Peak-shadow bone @23 per scene-map; the contact geometry is gone.
+
+Cull log: 0 entries removed. All 6 survive strip / pointing / frugality / previous-entry tests.
+
+Confirmed REJECT list:
+  @2 insect-feed-returns-chandler-corner — instrument subject ("the insect-feed"), not physical actor; feed-perception beat.
+  @5 apprentice-drops-nailing-rate — dexterity/rate-diminution in-place; inherits @4.
+  @6 taylor-traces-watcher-sightlines — geometric analysis via feed; perception-surrogate; no locomotion.
+  @7 insect-feed-delivers-gap-corridors — instrument subject; no loc-state relevance.
+  @8 circuit-closes-feed-pass — abstract subject/object; environmental persistence.
+  @10 taylor-breaks-jarvis-seal — dexterity in-place; inherits @9.
+  @11–@15 logistics reading/naming/logging — dexterity/perception in-place; all inherit @9; scene-B rhythm-shape flat-tense-with-edge-acquisition-at-close excludes continuity-carry license.
+  @17 insect-feed-returns-wenna-cobb — instrument subject; inherits @16.
+  @18–@19 insect-feed-places-oswyn/corwick — instrument subject; @18-@19 fusion-run but scene-C rhythm-shape rising-to-quiet-peak excludes continuity-carry.
+  @20 oswyn-speaks-to-taylor — pure dialogue beat; no through-space positioning.
+  @21 body-map-attaches-corwick-name — abstract subject.
+  @22 taylor-completes-the-circuit — abstract completion of coverage pattern; no physical threshold crossing; inherits @16.
+  @24 insect-feed-fills-water-point-geometry — instrument subject; inherits from @23 state-change.
+
+No continuity-carry entries. No qualifying rhythm-shapes across any scene.
+
+Chapter-close set state: the-hook-ward, evening, water-point vacated (watcher-boy-position now inside coverage matrix), Oswyn still talking, Taylor departed.
+
+Seams flagged for R2:
+  - the-feed-station: no warehouse card confirmed; slug from bones `locations:` field; margit referral may be needed before stitch.
+  - Sub-location slugs (the-water-point, the-lane-mouth, the-chandler-corner, the-lane-junction-rushwick-margin): verify card-existence against warehouse inventory.
+
+---
+
 ## 2026-05-31 — b01c06 sensory authored at /and-facets Phase 1 R1
 
 Chapter b01c06: 26 bones, 3 scenes. Single location: oc-stitch-house-lane.

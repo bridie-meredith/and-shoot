@@ -52,3 +52,28 @@ ambient_conditions:
 ## Seams flagged for R2
   - The-feed-station (@9): no authored location card in warehouse; location slug drawn from bones header `locations:` field; R2 reviewer should confirm card-existence or flag margit referral for oc-feed-station.card.md
   - Sub-location slug canonicity: `the-water-point`, `the-lane-mouth`, `the-chandler-corner`, `the-lane-junction-rushwick-margin` all drawn from bones OBJECT fields and may be sub-locations of `the-hook-ward` or `oc-rushwick` rather than independent cards; R2 auditor should verify slug resolution against warehouse inventory
+
+## State-updates-env locked (b01c08) — 7 entries, 0 cull
+  state:1 @8  — studio.fauna_sense_status.oswyn-watcher-network: uncharted -> integrated-into-coverage
+  state:2 @9  — prop:oc-jarvis-packet.state: absent -> arrived-at-feed-station
+  state:3 @10 — prop:oc-jarvis-packet.seal-condition: sealed -> broken
+  state:4 @13 — prop:oc-feed-station-ledger.aemond-entry: absent -> logged
+  state:5 @15 — studio.fauna_sense_status.feed-edge-geometry: pre-aemond-entry -> aemond-edge-lit
+  state:6 @23 — studio.spatial_layout.water-point-position: watcher-boy-stationed -> watcher-boy-absent
+  state:7 @24 — studio.fauna_sense_status.water-point-geometry: oswyn-network-managed -> insect-feed-covered
+  Cull: 0 entries removed — all 7 survive strip / persistence / authority / frugality tests
+  Field-extensions (6): oswyn-watcher-network (fauna_sense_status), feed-edge-geometry (fauna_sense_status),
+    water-point-geometry (fauna_sense_status), water-point-position (spatial_layout),
+    prop:oc-jarvis-packet (new oc-prop), prop:oc-feed-station-ledger (new oc-prop)
+  Margit referrals pending: oc-jarvis-packet.card.md, oc-feed-station-ledger.card.md
+
+## Prop state at b01c08 chapter-close
+  - prop:oc-jarvis-packet: state=opened (post @10); seal-condition=broken; contents-read; consumed within chapter
+  - prop:oc-feed-station-ledger.aemond-entry: logged (@13; persistent)
+  - studio.fauna_sense_status.oswyn-watcher-network: integrated-into-coverage (@8; persistent)
+  - studio.fauna_sense_status.feed-edge-geometry: aemond-edge-lit (@15; persistent into downstream chapters)
+  - studio.spatial_layout.water-point-position: watcher-boy-absent (@23; watcher-boy vacated; insect-feed covers)
+  - studio.fauna_sense_status.water-point-geometry: insect-feed-covered (@24; chapter terminal image enacted)
+
+  State-updates-env R1 authored 2026-05-31 — theater/facets/state-updates-env-b01-c08.md (7 entries)
+  _inflight: theater/facets/_inflight/proto-lines-state-env.md filed (citations @8, @9, @10, @13, @15, @23, @24)
