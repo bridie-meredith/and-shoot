@@ -1,5 +1,33 @@
 # studio STM
 
+## 2026-05-31 — /and-facets b01-c06 Phase 1 R1 location-state authoring (revise pass)
+
+Authored location-state.md for b01c06 (2 entries after authoring-phase cull, 26 bones).
+Single location throughout: oc-stitch-house-lane (the lane, blocked lane-mouth → south-court working position). Single time-of-day: morning.
+Three scenes: scene-A rising-to-peak (handcart/crowd/Wren/omission), scene-B flat-tense (loaded pause), scene-C rising-to-peak (accounting/send/contrast).
+
+Fires:
+  loc-state:1 @1 — morning chapter-open place-anchor; lane-mouth blocked by the handcart crossways; crowd backing the junction; establishes the active obstruction as the first environmental condition
+  loc-state:2 @5 — threshold crossing: taylor enters the south court via angle-gap workaround; distinct sub-space off the tallow-boiler's wall; establishes south-court working position as the inherited base for all scene-B/C action
+
+Cull (authoring phase): 1 entry removed
+  @3 (wren crosses the crowd — movement verb, but frugality REJECT: the crowd is already established at @1; crossing through a crowd that exists in inherited state adds no new location fact; strip test: @3 resolves cleanly in inherited @1 env)
+
+Confirmed REJECT decisions:
+  @2 (crowd presses junction — stillness/hold of crowd mass; persistence of @1 condition; anti-pattern 3)
+  @3 (wren crosses crowd — see cull above; frugality REJECT)
+  @4 (wren speaks to taylor — pure dialogue beat, no positioning in question; REJECT per necessity §)
+  @6–@9 (administrative/dexterity verbs in-place; scene-A south-court holds in inherited @5)
+  @10–@15 (scene-B: @10 = informational arrival, no new location-moment; @11–@15 = dexterity/administrative in-place; inherited @5 south-court throughout)
+  @16–@26 (scene-C: all dexterity/administrative/stillness in-place; @24 courier-takes strip-test passes in inherited @5; @25–@26 dexterity in-place)
+
+No continuity-carry entries:
+  scene-A @1-@2 fusion-run: covered by @1 place-anchor; no separate carry needed
+  scene-B @11-@12 fusion-run: rhythm-shape is flat-tense — NOT a qualifying shape (license requires flat-low/resolving/release-only); REJECT
+  scene-C @16-@17, @21-@22 fusion-runs: rhythm-shape is rising-to-peak — license excluded
+
+No flagged seams.
+
 ## 2026-05-31 — /and-facets b01-c07 Phase 1 R1 location-state authoring
 
 Authored location-state.md for b01c07 (5 entries after authoring-phase cull, 25 bones).
