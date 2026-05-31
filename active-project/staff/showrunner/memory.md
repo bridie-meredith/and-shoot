@@ -4540,6 +4540,16 @@ books:
                 cost_ledger_anchor: null
                 dialogue_anchor: false
                 gate_verdict: {bonefide: true, flat: false}
+              - slug: b01c06s03n11
+                flat_id: 20   # inserted at Phase-3 transition-fix; Phase 7 reassigns all s03 flat_ids (former 20-25 shift to 21-26)
+                svo: "taylor-hebert-kl-122ac holds the stylus"
+                shape: held
+                axis_moves: []
+                axes_held:
+                  - axis: moral_framework
+                    rationale: "the verdict-pause — the two completed ledger entries stand (the ward-elder names; the sera-coverage entry) and the accounting's own logic closes here; the stylus held still enacts the framework holding at the moment it authorizes the send; the move fires at the seal (n06), not here; this held beat is the rise into the seal the climax requires (dramatist Phase-3 missing-transition fix)"
+                cost_ledger_anchor: null
+                dialogue_anchor: false
               - slug: b01c06s03n05
                 flat_id: 20
                 svo: "taylor-hebert-kl-122ac closes the ledger-board"
