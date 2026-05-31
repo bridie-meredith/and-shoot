@@ -3385,7 +3385,7 @@ books:
             stale_since: null
 
       - slug: b01c05
-        status: bones-written  # G1 — revise --from-signals dropped status from stitched back to bones-written
+        status: stitched   # /and-stitch b01-c05 SHIPPED-WITH-CAVEATS (DEC-0044, 2026-05-28) after FAIL #3 → principal accepted; draft/b01-c05.md terminal. Was bones-written from /and-write b01-c05 revise --from-signals; re-cascaded /and-facets (audited-r1) + /and-stitch (Phase 9 third-cycle).
         bones_file: theater/bones/b01-c05.md
         bones_count: 35  # was 31; revise --from-signals added 4 bones (A1, B1, B2, C1; B3 dropped at Phase 5 continuity)
         substance_bone_gate_verdict: PASS  # re-stamped at revise Phase 6: 9/9 SUBSTANCE-FELT + auditor PASS
@@ -3881,7 +3881,7 @@ books:
       #   (P): proceed, record Q7 confusion list as cold_read_risk_carry → hand to /and-review bones
       #   follow_check (PROP-0020). report: active-project/staff/reviews/chunk-coldread-b01c06-2026-05-30.md
       - slug: b01c06
-        status: audited-r1   # /and-facets b01c06 COMPLETE (re-cascade): Phase 5 HARD=0 + Phase 5b ACCEPT 3-of-3 all 10 facets (2 cycles). audit HARD=0 (fault-001 vibes:19 dangling-mem:1 fixed cycle-1); 4 SIGNAL advisory. Pre: faceted-r2 Phase 4 (R2 merge: mem:1 deleted, narrator:7 added; scene-map URI-SCENE-WINDOW PASS). Pre: faceted-r1 Phase 2 (R1 merge complete; cite-index built 57 entries 92.3% decorated). Pre-Phase-2 note: bones-written from /and-write b01c06 revise --from-signals (depth pass, DEC-0048/0056, 2026-05-31): s03 accounting de-abstracted (@16-@22 recast to concrete acts) + verdict-pause bone added (@20 stills the hand). Bones re-emitted (26 bones); facets + draft STALE-MARKED, re-cascade owed. Prior /and-facets audited-r1 state preserved in facets_complete below (now stale). Phase 6 revise bone-gate PASS (audience SUBSTANCE-FELT 3/3 s03 + airless-cleared 3/3; auditor PASS, abstraction-dominance 91%, 1 form-fault holds->stills resolved). bones_review re-run owed (mandatory /and-review bones gate).
+        status: stitched   # /and-stitch b01c06 COMPLETE (depth-pass re-cascade): draft/b01-c06.md TERMINAL (Phase 9 PASS-TERMINAL-DEPTH-RESOLVED, DEC-0058, 2026-05-31). pl-2026-05-31-002 stitch render-watches resolved. Phase 9.5 process-critic: PROP-0029 + DEC-0059 (abstract-by-contract branch). Was audited-r1 from /and-facets re-cascade (Phase 5 HARD=0 + Phase 5b ACCEPT 3/3 all 10 facets, 2 cycles). Was bones-written from /and-write revise --from-signals (depth pass, DEC-0048/0056): s03 accounting de-abstracted + verdict-pause bone added; 26 bones re-emitted.
         facets_complete:   # RE-CASCADE (depth pass, 2026-05-31, 26-bone scaffold) — supersedes the stale pre-revise record (preserved below)
           stale_since: null
           audit_path: active-project/staff/auditor/facets-final-audit.md
