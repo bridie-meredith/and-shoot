@@ -1,136 +1,165 @@
 ---
 facet: memory
 prefix: mem
-episode: b01-c06
+episode: b01-c07
 judge: R2 GRAPH-AWARE (FACET-JUDGE OVERRIDE MODE)
 persona: taylor-hebert-kl-122ac (POV narrator)
 rubric: design/shoot-v2/rubric-memory-flags.md (V3 LOCKED 2026-05-21)
-cite_index_hash: e2b2dfa3a71027ddc70cf2a7d227d31463547179
-generated: 2026-05-30
-f-r2-counts: KEEP 2 / DELETE 0 / ADD 0 / REWRITE 0
+cite_index_hash: 4b1789810b83040f443958cffc443ec91345befc
+generated: 2026-05-31
+f-r2-counts: KEEP 1 / DELETE 1 / ADD 0 / REWRITE 0
 ---
 
-# R2 memory-judge decision shard — b01-c06
+# R2 memory-judge decision shard — b01-c07
 
 ## Pre-condition re-test (§Form, every verdict)
-Both entries form-valid: monotonic id, @-anchor to a real proto-line, one-clause displacement-cue
-description, `->` separator, mechanism-descriptive target-reference slug (URI-032 compliant). No
-Earth-Bet proper noun in either description (hard-fence scan PASS). Doubled-register held: mem:1
-Earth-Bet displacement, mem:2 Westerosi-monument-clamp.
+- **mem:1 @6** — form-valid as authored (monotonic id, @6 anchors a real proto-line, one-clause
+  displacement-cue, `->` separator, mechanism-descriptive target slug). Form is necessary, not
+  sufficient; the licensing-discipline failure below is fatal regardless.
+- **mem:2 @19** — form-valid: monotonic id, @19 anchors a real proto-line, doubled-register
+  two-clause displacement-cue, `->` separator, target-reference present (free-text gloss).
+  Hard-fence scan PASS — "Wenna Cobb" is a Westeros OC (confirmed vibes:4), not an Earth-Bet
+  proper noun; no locker/Khepri/Endbringer/Gold-Morning/Annette term in the description.
 
 ## Per-entry verdicts
 
-### mem:1 @12 — KEEP
-`@12 the read is already done and what the ask wants is the bodies pulled out of the pattern and set
-down as names, the way bodies were set into a record once and the record became the route they were
-moved along -> cond-override-architecture-residue-122ac`
+### mem:1 @6 — DELETE (spineless fire; no-NI-spine adjudication)
+`@6 ... the override-architecture residue (the wide tracking-net she once ran, sealed; surfaces
+as the passive feed that stands where it stands) -> cond-override-architecture-residue-122ac`
 
-- **Monument-trigger (PASS):** Earth-Bet displacement on override-architecture-residue / body-record
-  cognition. Confirmed against `cond-override-architecture-residue-122ac.md` (the pattern-recognition
-  residue that "surfaces as ordinary cognition" — Taylor reads the pattern as her own intelligence;
-  here it operates as the cognitive shape that converts pattern-nodes to bodies-to-be-routed). Lit.
-- **Displacement-discipline (PASS):** description names the SHAPE — "bodies pulled out of the pattern
-  and set down as names; the way bodies were set into a record once and the record became the route
-  they were moved along." The recursion is the cue; no Khepri/Gold-Morning/Endbringer proper noun.
-- **Quiet-beat (PASS):** @12 scene-B (the loaded-pause middle), not a peak-bone (peaks @4/@8/@22/@24);
-  default-licit.
-- **SPINE (RESOLVED — the load-bearing R2 finding):** the locked R1 NI file `interest-narrator.md`
-  FIRES at @12 as **narrator:6** ("a name is a different unit than a node ... the ask wants all of it
-  pressed down to the one word that makes the body findable — she reopens to confirm the conversion is
-  what is asked, not less"). This is the re-read / names-vs-node registration the R1 defense predicted
-  NI would naturally carry (scene-map protected-pattern @11-@12). Standard NI co-citation SATISFIED;
-  missing-spine gate clears. mem:1's displacement-cue is consistent with NI:6 (both register the
-  node→name conversion) — no channel/trigger contradiction. V3 feel-as-spine carve-out N/A (chapter
-  dramatic_shape: climax, not hinge; feeling silent at @12) but moot — NI carries the spine.
-- **Audience-meaningfulness (PASS):** "bodies-become-a-route" carries at zero source fluency.
-- **Functional-register (PASS, 3/4):** moment-of-realization + painting-characterization + social-
-  commentary.
-- **Per-scene cap (PASS):** sole scene-B fire.
-- **Target-reference resolution (PASS):** cond-override-architecture-residue-122ac resolves at
-  `active-project/warehouse/cond-override-architecture-residue-122ac.md`.
-- **Verdict: KEEP.** Monument-grade callback (the movement-pattern-delivery-since-d04 callback fused
-  with the names-vs-patterns category-crossing) + target resolvable + NI-spine co-cited (climax-shape
-  requirement met). All KEEP criteria satisfied.
+- **Monument-trigger (PASS):** Earth-Bet displacement on override-architecture-residue. The
+  insect-feed placing Halvard routinely is the passive-feed-as-residue surfacing as ordinary
+  cognition (confirmed against `cond-override-architecture-residue-122ac.md` §What Survives:
+  the pattern-recognition residue "surfaces as ordinary cognition"). Lit.
+- **Displacement-discipline (PASS):** description names the SHAPE (the sealed wide net; the
+  passive feed that stands where it stands), no Earth-Bet proper noun.
+- **Quiet-beat (PASS):** @6 is scene-A, flat-low, not a peak-bone (peaks @14/@15/@18/@22).
+  Default-licit zone for memory — this is NOT why it fails.
+- **SPINE (FAIL — the load-bearing finding):** the locked NI file `interest-narrator.md` is
+  **SILENT at @6.** NI fires narrator:1-7 on @13/@14/@15/@19/@20/@22/@23 ONLY; the NI carve-out
+  documents Scene-01 (@1-@8) firing ZERO BY DESIGN — NI reads forward on the rising scenes
+  (13-23). The @6 NI-refusal is DELIBERATE-AND-CORRECT per NI's own rubric (scene-A flat-low,
+  all-held; NI does not read backward), so there is **no missed NI fire to flag back** — a
+  spineless fire with no repairable missed-fire is a memory DELETE, not an NI kickback.
+  - **V3 feel-as-spine carve-out — does NOT rescue.** Conditions: (1) chapter `dramatic_shape:
+    hinge` ✓; (2) scene-A `stakes_axis` social_tether ∈ `axes_held[]` ✓ (all-held); (3) a
+    feel-flag fire on the SAME @6 anchor — **FAILS**: feeling.md fires only @18 (taylor:2) and
+    @20 (halvard:1); no feel fire at @6. Condition (3) unmet → carve-out inapplicable → standard
+    NI co-citation required → absent → per anti-pattern #7 (spineless fire) + the missing-spine
+    REJECT signature: DELETE.
+- **Target-reference resolution (PASS, moot):** `cond-override-architecture-residue-122ac`
+  resolves at `active-project/warehouse/cond-override-architecture-residue-122ac.md` — but a
+  resolvable target cannot rescue a spineless fire.
+- **Doubled-register impact (assessed; DELETE survives the gate — see file-level below):** the
+  delete is NOT retained-to-satisfy a per-episode register preference. Per §172 doubled-register
+  is per-SEASON, not per-episode; and the surviving mem:2 carries the Earth-Bet displacement
+  shape as its clause-2, so the Earth-Bet register is not wholly absent from the file.
+- **Verdict: DELETE.** Spineless fire — neither NI nor feel spine exists at @6 and the V3
+  carve-out's condition (3) fails. The R1 carve-out deferred the @6 spine to NI as WATCH-5; at
+  R2-judge time the LOCKED graph shows that deferral did not (and could not, per NI's rubric)
+  resolve. Sparsity is load-bearing; under-firing a spineless beat is the rubric-preferred move.
 
-### mem:2 @19 — KEEP
-`@19 the record's far end holds a body that does not know how it is held, kept where it is by an arm
-that is not hers at the length of an arm that is not hers -> cond-override-architecture-residue-122ac`
+### mem:2 @19 — KEEP (monument-grade; NI-spine co-cited; margit referral carried)
+`@19 the name goes down level: a child, a lane, a fever two seasons back ... the founding entry,
+the one the slower way left unpaid and she did not ... and under it the older shape, a smaller
+door that stayed shut on someone she could not reach in time, the same arithmetic in another
+tongue. -> (westeros: founding-death-the-slower-method-produced) [+ earth-bet:
+failed-recognition-by-protector / dying-ward shape]`
 
-- **Monument-trigger (PASS):** Westerosi-monument-clamp on protective-arrangement-at-distance — the
-  licensed-exception architecture Taylor opened c03-c05 (the Jarvis-routing that holds someone else's
-  exposure at someone else's arm-length); reading the architecture's destination without naming it.
-- **Displacement-discipline (PASS):** names the SHAPE — "a body that does not know how it is held;
-  an arm that is not hers at the length of an arm that is not hers." No Sera/Otto/Alicent/Jarvis/
-  Red-Keep named; no Dance proper noun.
-- **Quiet-beat (PASS via backward-reach):** @19 scene-C rising-zone, NOT in peak-bones (@22/@24).
-  Contested per the quiet-beat test → backward-reach argument holds: the arrangement-architecture is
-  prior story content (c03-c05) the monument reaches BACK to, not the @22 send's forward action. The
-  reach is backward-and-outward, which is precisely the memory-flag direction. Defensible.
-- **SPINE (RESOLVED):** the locked R1 NI file fires at @19 as **narrator:7** ("the record's far
-  destination is a body she has watched through the feed and never met — fourteen, placed, held in
-  exposure for someone else's advancement — and the four names travel so that body stays exactly where
-  an arm that is not hers has set it"). This is the protect-target image-beat / second-accounting-arm
-  registration. NI:7's "an arm that is not hers has set it" DIRECTLY mirrors mem:2's "an arm that is
-  not hers" — spine and monument-content consistent, no contradiction. Standard NI co-citation
-  SATISFIED. For a climax-shape chapter this is the NI-spine the KEEP criteria require. V3 carve-out
-  N/A (climax; feeling silent at @19) but moot.
-- **Audience-meaningfulness (PASS):** the four-names-so-the-held-body-stays-held trade is the chapter's
-  on-page stated stakes; meaningful without source fluency. (The insider-only Dance/Red-Keep
-  foreknowledge reading is NOT the selected register — the protective-arrangement reading is.)
-- **Functional-register (PASS, 2/4):** painting-characterization + social-commentary (the protection-
-  mechanism IS the surveillance-mechanism; the same record that names the ward elders holds the
-  protected body).
-- **Per-scene cap (PASS):** sole scene-C fire.
-- **Target-reference resolution (PASS):** cond-override-architecture-residue-122ac (warehouse-resolved).
-- **Verdict: KEEP.** Monument-grade callback (the arrangement / Otto-trade-for-Sera's-protection,
-  c03-c05 architecture) + target resolvable + NI-spine co-cited. KEEP.
+- **Monument-trigger (PASS):** doubled. clause-1 = Westerosi-monument clamp (the founding death
+  the slower method produced — fever two seasons back, maester-call not routed). clause-2 =
+  Earth-Bet displacement (failed-recognition-by-protector / dying-ward — "a smaller door that
+  stayed shut on someone she could not reach in time"). Both lit.
+- **Displacement-discipline (PASS):** names the SHAPE in both registers; "the same arithmetic in
+  another tongue" is the cross-register displacement-cue; no Earth-Bet proper noun. "Wenna Cobb"
+  (carried in the dialogue/NI layer) is a Westeros OC.
+- **Quiet-beat (PASS):** @19 is NOT in peak-bones (@14/@15/@18/@22). It is the peak-shadow
+  resonance-tail of the @18 naming-peak — backward/resonance reach after the @18 discharge, which
+  is precisely the memory-flag direction. Defensible.
+- **SPINE (RESOLVED):** NI fires **narrator:4 @19** ("the name goes down the way an entry goes
+  into a ledger — Wenna Cobb, six, Pig-Tallow Lane, the fever two seasons back, dead before her
+  coverage existed to route the maester-call against it"). Standard NI co-citation SATISFIED;
+  spine and monument-content consistent (both register the named-death-as-ledger-entry). The R1
+  @19 spine-deferral resolved. (V3 carve-out N/A — standard NI spine present.)
+- **Audience-meaningfulness (PASS):** the named-dead-child-as-the-first-entry-in-her-count carries
+  at zero source fluency; the WATCH-1 concrete anchor (PASS-CHUNK-VOICE-RISK beat).
+- **Functional-register (PASS, ≥2 of 4):** moment-of-realization (the cost surfacing as she names
+  it) + painting-characterization (the monument-naming discipline — the cost of the naming is part
+  of the line) + social-commentary (the two-accountings / slower-method-body-count structure).
+- **Per-scene cap (PASS):** sole scene-C memory fire.
+- **Target-reference resolution (SIGNAL — margit referral carried):** primary target is the
+  free-text gloss `(westeros: founding-death-the-slower-method-produced)`; NO monument card yet
+  exists. Per §monument-card-resolution test: SIGNAL (gloss structurally clear, card queued), NOT
+  HARD. KEEP with the gloss; the margit referral is the resolution path. Refer for card creation
+  with a mechanism-descriptive slug (e.g. `monument-founding-death-the-method-produced`). The
+  earth-bet displacement gloss is the secondary cross-register note, not a separate fire.
+- **Verdict: KEEP.** Monument-grade callback + NI-spine co-cited (narrator:4 @19) + target
+  resolvable via the margit referral path. All KEEP criteria met.
 
 ## ADD scan (cap 5) — 0 ADDS (refuse-by-default)
-2/25 = 8.0% is comfortable mid-band; the dispatch instruction is refuse-by-default on a 25-bone lean
-chapter. No rhythm-shape transition or peak-bone genuinely WANTS a memory fire it lacks:
-- Peaks @4/@8/@22/@24 are peak-bones (default-forbidden); their substance is carried by the
-  relational_anchor_status / moral axis-moves + NI + feeling, not the licensing layer. Scene-A
-  licensing-silence (incl. the Wren-omission @8) is deliberate and re-confirmed CORRECT.
-- The s01→s02 transition (@10) and the accounting middle (@16-@18) are grounding-ledger-OPEN
-  (grd-001 @10, grd-002 @16, grd-003 @17-@18) — sensory grounding territory authored at Phase 4.6,
-  NOT memory; the @17/@18 moral-balance is NI-weave territory (Phase 2.5 WEAVE-FIXABLE → NI judge).
-  A memory fire in the middle would double the Earth-Bet residue adjacent to mem:1 (anti-pattern #11
-  persistent-monument-firing) and dissolve the licensing gradient. Silence held.
+1 surviving fire / 25 = 4.0%. Dispatch is refuse-by-default on a 25-bone lean hinge. No
+rhythm-shape transition or peak-bone genuinely WANTS a memory fire it lacks:
+- Peaks @14/@15/@18/@22 are peak-bones (default-forbidden); their substance is carried by the
+  political_register / social_tether axis-moves + NI (narrator:2/3/6 on the planting + steadying)
+  + feeling (feel:2 @18) + vibes, not the licensing layer. Peak-bone-licensing-silence CORRECT.
+- Scene-A (@1-@8) flat-low: the @6 residue beat is now correctly licensing-silent (spineless);
+  no other scene-A beat lights a monument with a spine. Silence held.
+- The @20/@23 resolving tail: NI carries two-accountings-in-parallel (@20) and
+  foreclosure-planted (@23); a memory fire there would double the @19 Westerosi residue
+  (anti-pattern #11 persistent-monument-firing) and dissolve the gradient. Silence held.
 
-## File-level curve-shape (re-confirmed)
-- Sparsity 8.0% (within 5-12%). Inverted pressure-signal: 2 fires in flat-mid / rising-backward-reach,
-  0 in peak-bones → ratio ∞ (ideal). Doubled-register YES (both clear audience-meaningfulness).
-  Monument-family: single operating residue (override-architecture) across two faces — admitted for a
-  25-beat chapter (≥3-family target is the >50-beat-corpus expectation). Quiet-beat distribution: one
-  mid-chapter, one chapter-close-adjacent; no front/back-loading.
+## File-level curve-shape
+- **Sparsity:** 1 fire / 25 bones = 4.0% — in the 1-5% scene-cap-pulled floor zone, **below the
+  5-12% curve-shape band**. Flagged **SIGNAL (per-season under-fire), NOT a per-entry defect**:
+  the surviving fire is correct and the deleted fire was spineless. Sparsity is load-bearing;
+  under-firing a spineless beat is the rubric-preferred move over retaining it to hit density.
+- **Inverted pressure-signal:** the surviving fire (@19) is peak-shadow resonance-tail, 0 fires
+  in peak-bones → ratio ∞ (ideal).
+- **Doubled-register gate (file-level): SATISFIED — see adjudication below.**
+- **Quiet-beat distribution:** single fire, chapter-close-adjacent (scene-C resonance-tail). N/A
+  for front/back-loading on a single-fire lean chapter.
 
-## NI-co-citation dependency note (for Phase 5)
-The R1 file carried this as a HARD spine-dependency seam on the premise that NI was silent at @12/@19
-and the NI judge would ADD the co-citations in this coordinated R2 round. **At R2-judge time those
-adds are ALREADY PRESENT in the locked NI facet file** (`interest-narrator.md` entries 6 @12, 7 @19).
-So both mem fires have their NI spine in the source-of-truth facet file; the missing-spine gate clears
-and the dependency is **DOWNGRADED HARD → SOFT**. The only residual is provenance bookkeeping: the
-`_cite-index.md` (hash e2b2dfa3a71027ddc70cf2a7d227d31463547179) is STALE — generated before the NI
-@12/@19 adds, it lists narrator:1-5 only, and consequently lists mem:1 @12 and mem:2 @19 under "Lonely
-entries (no co-location, no inbound license)." That is an index-staleness artifact, NOT a real
-missing-spine condition. **Phase 5 MUST rebuild the cite-index** (build_cite_index) so narrator:6 @12
-and narrator:7 @19 are indexed and the mem:1/mem:2 ↔ NI co-citation links resolve; the cross-facet
-contract check then passes with no NI-author missed-fire repair and no mem DELETE. Contingency: if,
-contrary to the file state read here, the FINAL locked NI file lacks narrator:6/@12 or narrator:7/@19,
-the original HARD missing-spine gate re-arms for the affected fire (climax → no feel-as-spine fallback;
-route to NI missed-fire repair or mem DELETE) — but as read at R2 both spines are present.
+## DOUBLED-REGISTER GATE adjudication (both registers present?)
+**YES — gate SATISFIED.** The gate requires at least one Earth-Bet-displacement fire AND one
+Westerosi-monument clamp to survive. After DELETE mem:1 the file is single-FIRE (one Westerosi-
+primary fire), BUT mem:2 IS the doubled-register exemplar — one bone, one scene, one fire:
+- **Westerosi-monument clamp** = mem:2 clause-1 (the founding death the slower method produced).
+- **Earth-Bet displacement** = mem:2 clause-2 (the failed-recognition-by-protector / dying-ward
+  shape; "the same arithmetic in another tongue").
+The Earth-Bet register the deleted mem:1 would have carried survives AS THE SUBORDINATE CLAUSE of
+the surviving exemplar — the Earth-Bet shape is not wholly absent from the file. Per §172 +
+anti-pattern #9, doubled-register coverage is **per-season, not per-episode**; a single-FIRE-
+register episode is acceptable when the spine/discipline gates demand it, and here both registers
+remain visible within the surviving fire. Per-season coverage is the binding test and is met. The
+gate does NOT force retention of the spineless mem:1.
+
+## mem:1@6 no-NI-spine adjudication (summary)
+At @6 the NI refusal is deliberate-and-correct (scene-A flat-low, all-held; NI reads forward on
+rising zones — the inverse of memory-flags), so there is NO missed NI fire to repair and NO
+NI-kickback path. The V3 feel-as-spine carve-out fails on condition (3): feeling fires only @18/
+@20, never @6. With neither NI nor feel spine at @6, mem:1 is a spineless fire (anti-pattern #7)
+and DELETES. The doubled-register file-level gate does not rescue it because the surviving mem:2
+carries the Earth-Bet register internally (clause-2) and per-season coverage — not per-episode —
+is binding.
+
+## Margit referral carried (SIGNAL, not HARD)
+mem:2 @19 primary target uses a structurally-clear free-text gloss
+`(westeros: founding-death-the-slower-method-produced)`; no monument card yet exists for the
+founding-death / slower-method-body-count Westerosi monument. **Refer for card creation** with a
+mechanism-descriptive slug (e.g. `monument-founding-death-the-method-produced`). KEEP ships with
+the gloss; the referral is the resolution path (gloss structurally clear, card queued). NOT a
+HARD blocker.
 
 ## Seams returned
-1. **SOFT (was HARD) — NI spine resolved; cite-index rebuild required.** narrator:6 @12 + narrator:7
-   @19 present in interest-narrator.md but absent from the stale cite-index and the bones-line tokens.
-   Routing: Phase 5 cite-index rebuild → cross-facet contract check (will pass).
-2. **SOFT — monument-class card split.** cond-override-architecture-residue-122ac covers both fires
-   (one architecture, two faces); clean metaphor-facet routing would benefit from split into
-   monument-body-record-cognition (mem:1) + monument-protective-arrangement-at-distance (mem:2).
-   Margit class-review candidate. Identical to the c05 SOFT seam — re-surfaced, not new. Not blocking.
-3. **SOFT — Sera-architecture facet anchor (continuity from c05).** mem:2 @19 contributes one of the
-   protective-architecture facet-layer deliveries; NI:7 (registration) and exposition deliver their
-   own layers. Routing: Phase 5b audience verdict.
-4. **SIGNAL — scene-A licensing-layer silence (deliberate).** Wren-omission @8 stays surface-carried
-   (relational axis-move + NI:2 + feel:1), NOT priced via the licensing layer. Refusal-CORRECT under
-   sparsity. Routing: Phase 5 mechanic-auditor confirmation.
+1. **SIGNAL — per-season under-fire (4.0%, below 5-12% band).** One spineless fire deleted on a
+   25-bone lean hinge; the surviving fire is correct. Routing: Phase 5 mechanic-auditor
+   FREQUENCY-BAND confirmation (denominator-driven floor; not a defect). The Earth-Bet register
+   leans entirely on mem:2 clause-2 this episode — flag the SEASON-level doubled-register watch
+   (if a subsequent chapter also lands Earth-Bet-as-subordinate-clause-only, the per-season
+   kickback signal arms).
+2. **SIGNAL — monument-card creation (margit referral).** mem:2 @19 founding-death gloss has no
+   card; refer with `monument-founding-death-the-method-produced`. Routing: margit. Not blocking.
+3. **CONFIRMED — cite-index rebuild dependency.** Phase 5 build_cite_index (hash
+   4b1789810b83040f443958cffc443ec91345befc) must index narrator:4 @19 so the mem:2 ↔ NI:4
+   co-citation link resolves; the deleted mem:1 @6 must drop from the index. The in-flight
+   cascade (`_inflight-r2/proto-lines-mem.md`) carries only the surviving fire.
