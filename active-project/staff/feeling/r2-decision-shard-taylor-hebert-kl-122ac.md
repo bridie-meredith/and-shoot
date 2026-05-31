@@ -1,55 +1,103 @@
 ---
 facet: feeling
-character: taylor-hebert-kl-122ac
-episode: b01c06
-phase: R2 graph-aware judge (FACET-JUDGE OVERRIDE)
+phase: r2
+character-of-record: taylor-hebert-kl-122ac
+episode: b01c07
+judge: taylor-hebert-kl-122ac (impersonator, feeling-judge mode, graph-aware)
 rubric: design/shoot-v2/rubric-feeling.md (V1 LOCKED 2026-05-07)
-cite_index_hash: e2b2dfa3a71027ddc70cf2a7d227d31463547179
-f-r2-counts: KEEP=2 DELETE=0 ADD=0 REWRITE=0
+cite_index_hash: 4b1789810b83040f443958cffc443ec91345befc
+verdict: KEEP
+f-r2-counts: KEEP=1 DELETE=0 ADD=0 REWRITE=0
+entries_in: 1
+entries_out: 1
+sparsity: 4.0%  # 1 fire / 25 bones — STRICT 2-5% band
+per_scene_cap: s03=1  # ≤1 satisfied; sole Taylor fire in chapter
+adds: 0  # cap 5 untouched; band tight; refuse by default
 ---
 
-# R2 decision shard — feeling / taylor-hebert-kl-122ac / b01c06
+# R2 decision shard — feeling / taylor-hebert-kl-122ac / b01c07
 
 ## Inputs verified
-- Locked graph read: canonical proto-lines b01-c06, all R1 facet files, cite-index, NI file, metaphor file.
-- Taylor stack loaded: persona card §Voice / §Look / §Signature Moves (body-leads-before-act tell; "affect appears in brief body-signals before the analytical voice reasserts"; "attention shifts fractionally before her body does").
-- Brief Phase-2.5 constraints respected: context-ledger EMPTY (n/a to feeling); grounding-ledger @10/@16/@17 is SENSORY/Phase-4.6 territory, NOT feeling — no somatic fire authored into the airless middle; feel-wren slice 0 entries (nothing to judge).
+- Locked graph read: canonical proto-lines (bones) b01-c07, ALL R1 facet files
+  (interest-narrator.md for NI-redundancy, sensory.md, dialogue taylor:1@19), cite-index hash
+  `4b1789810b83040f443958cffc443ec91345befc`.
+- Taylor stack loaded: state / behavior card §Non-verbal tics ("the breath out before the swarm
+  goes... an empty-out. Reset. The bugs move on the second of breath-out"), §Voice tells,
+  §Memory monuments ("when she does name them, the reader should mark the moment because the
+  cost of the naming is part of the line").
+- R1 author was BLIND (rubric + character stack + base proto-lines + substance only); R2 reads
+  the locked facet graph the author could not see.
 
----
+## Verdict: KEEP (1 → 1)
 
-## feel:1 @8 — "her hand holds over the field before it leaves it empty" | expressed: no
-**Verdict: KEEP.**
+`2 @18 taylor-hebert-kl-122ac: her breath goes out before the name does | expressed: partial`
 
-- **Form re-test:** one-clause discipline — `before` sequences two body-states of the SAME hand (holds over the field / leaves it empty). Subject stays the hand throughout; no abstraction-noun subject-shift (no "the turn"/"the moment"/"the gap"), no latency-observation, no rule-statement. Distinct from the REJECT exemplar ("and the turn comes one beat late"). PASS. No named-feeling vocab, no hedge, no simile, no figurative-feeling-naming. Clean.
-- **Multi-justification 5/5:** (1) card-match — hand-arrest is her signature pre-action body-lead per §Voice/§Look. (2) Q1 passes — proto `blanks the contact-source field` is instrumental SVO; NI:2 carries pricing/decision cognition ("authored, not missing"); vibes:4-6 the vibe-cloud — none show the BODY suspended at the threshold. (3) Q2 passes — @8 is the chapter's first ethical act, the un-priced omission, a structural pivot. (4) scene-eligible — s01 sole fire, cap ≤1 satisfied. (5) functional-register: realization + painting-characterization (≥2).
-- **@8 NI-DEDUP DETERMINATION: NON-REDUNDANT.** narrator:2 @8 is pure cognition/pricing register ("prices what the name would cost downstream... the blank she writes is authored, not missing"). feel:1 is the somatic SHOW — the hand held over the field before withdrawal, the body arrested at the un-priced move. NI = registration/cognition; feeling = somatic-show. The exact cross-facet split the contract requires; AP6 (POV-duplicate-with-NI) does NOT fire. feel:1 is the distinct bodily layer. KEEP confirmed.
+Fires at bone 18 "names the body count" — the breath empties before the name (Wenna Cobb)
+leaves the mouth. The s03 climax beat where the dead child Taylor carries surfaces as the first
+name in her count. Single most load-bearing somatic tell in the chapter.
 
----
+## @18-feel vs @19-NI distinctness adjudication — DISTINCT, NON-REDUNDANT
 
-## feel:2 @24 — "her fingers settle on the notes and do not open them at once" | expressed: no
-**Verdict: KEEP.**
+Three registers stand at the s03 climax cluster, distinct at adjacent bones:
 
-- **Form re-test:** `and` joins two body-actions of the SAME fingers (settle on the notes / do not open them at once). "at once" is a temporal locator on a body-action, not a latency-observation about an abstraction. No subject-shift, no rule-naming. PASS. No named-feeling vocab, hedge, simile, or figure. Clean.
-- **Multi-justification 5/5:** (1) card-match — same body-leads-before-act signature; the fingers-settle-and-hold is the somatic of the contrast landing. (2) Q1 passes — proto `opens the ward-coverage notes` is instrumental SVO; NI:5 carries the contrast-recognition cognition; meta:1 carries the blank-as-completion figure — none render the bodily latency BEFORE the open. (3) Q2 passes — @24 is the moral_legibility_to_self +1.0 recognition peak. (4) scene-eligible — s03 sole fire, cap ≤1 satisfied. (5) functional-register: realization + painting-characterization (≥2).
-- **@24 NI-DEDUP DETERMINATION: NON-REDUNDANT.** narrator:5 @24 = contrast-recognition cognition ("four names went down the channel and the contact-source field still reads ward-resident... the contrast sits in two substrates at once"). feel:2 renders the latency BEFORE the act — fingers settle and do NOT open at once, the held bodily beat. Proto = the open; NI = the recognition; meta:1 = the figure; feel:2 = the hand-arrest before the act. Four distinct layers. AP6 does NOT fire. KEEP confirmed.
+- **@18 feel:1 (BODY):** "her breath goes out before the name does" — somatic show, no cognition.
+- **@19 taylor:1 (WORDS):** the spoken counter naming Wenna Cobb / Pig-Tallow Lane.
+- **@19 NI:4 (THOUGHT):** "the name goes down the way an entry goes into a ledger... the
+  precision is the whole cost of keeping the count honest" — cognition: ledger-image + honesty-thesis.
 
----
+The NI file's own per-entry annotation states NI:4 "folds @18 naming-decision into the peak
+delivery" — NI owns the decision/cognition; feel:1 owns the body. Rubric §Distinction is exact:
+"NI registers the cost; feeling-flag shows the body-bearing-of-the-cost." feel:1 fills the
+precisely-uncovered gap (the body) the NI file leaves open. **Distinct registers at adjacent
+bones (@18 body / @19 thought).** No redundancy; POV non-redundancy contract satisfied;
+anti-pattern #6 clear. At @18 itself: no NI fire, no sensory — the body is uncovered there.
+
+## §Form re-test — PASS
+
+- One clause: subject (breath) + verb (goes out) + temporal locator on a body-sequence (before
+  the name does). No second clause, no abstraction-noun subject-shift, no sentence-final
+  rule-statement, no latency-observation.
+- No named-feeling vocabulary; no "feels"; no direct interior address.
+- No hedge / softener; no simile / comparison / metaphor; no compound-naming; no synonym-ladder.
+- "breath goes out" is a rubric §Permitted body action (gaze and breath).
+- expressed: partial — visible to attentive observer (the septon across the corner).
+- Earth-Bet noun fence clean (no proper nouns in the tell).
+
+## Multi-justification — 4 of 5 (≥3 satisfied; slots 1,2,3,5)
+
+1. Somatic-tell-card-match — card §Non-verbal tics "the breath out before the swarm goes... an
+   empty-out. Reset. The bugs move on the second of breath-out." Naming the dead child is a
+   deployment; the body's reset-before-deploy tell fires on the name.
+2. Q1-interior — proto-line @18 = the naming-act; dialogue @19 = the words; NI @19 = the
+   ledger-cognition. None shows the body bearing the cost of saying it. Passes (see adjudication).
+3. Q2-meaningful — chapter central-event-muffle risk beat (PASS-CHUNK-VOICE-RISK armed at
+   /and-stitch Phase 8.5); the named death must render as borne cost, not gesture. Structural.
+5. Functional-register (2 of 4) — realization (cost surfacing as she names it) +
+   painting-characterization (card's monument-naming discipline).
+
+## Card-match — CONFIRMED
+"breath out before the swarm goes / empty-out / reset" maps directly to card §Non-verbal tics;
+the named-monument cost (§Memory monuments) is part of the line.
 
 ## ADDS
-**0 adds (refuse-by-default upheld).** Cap 5/char available; not exercised.
-- Sparsity is already 8% (2/25), marginally over the 2-5% band; the band's remedy is never to ADD. Both kept entries are load-bearing chapter pivots (the omission @8, the contrast-recognition @24) — the brief's load-bearing exception.
-- The airless accounting middle (@16-18) is grounding-ledger/SENSORY/Phase-4.6 territory — somatic fire there would saturate and is not feeling's authority.
-- Peaks @4 (relational delivery, lands direct) and @22 (the send, moral-breach act-delivery lands direct) — a somatic at @22 would compete with the act-delivery (parallel to the metaphor log's AP7 refuse-correct reasoning). No fire.
+**0 adds (refuse-by-default upheld).** Cap 5/char available; not exercised. Band is tight (4.0%,
+strict 2-5%); the band's remedy is never to ADD. R1 deliberately did NOT fire @13 because the
+proto-line IS "goes still" (the tell is the bone).
 
----
+## Refused candidates (cap 5 untouched beyond the 1 fire)
+- @13 "goes still" — proto-line IS the tell (Q1 fail; calibration anchors C1/C2); NI:1 owns
+  interior there ("the still is not deliberation"); would saturate "still" vocabulary against the
+  septon's @20 fire. Refuse.
+- @20 septon's beat (non-POV, other fork). @22 NI-owned (departure-impulse-stilled). @23 NI-owned
+  (foreclosure-ledger voice). No feeling co-cite.
 
-## Seams (cross-facet, for Phase 5 auditor / metaphor judge)
-- **meta:1 @24 PROVISIONAL anchor RESOLVED.** metaphor.md entry 1's `licensed-by: PROVISIONAL feel:@24 (feeling-flag expected at R2 resolution)` is now SATISFIED — feel:2 @24 is confirmed KEPT. The metaphor's multi-justification (feel:@24 + tens:1) holds.
-- **AP3 (feel/meta both restating the @24 contrast) does NOT fire.** feel:2 is the bodily latency (fingers settle, don't open at once); meta:1 is the figure (blank-as-completion); narrator:5 is the cognition. Three distinct layers at @24, co-citation permitted, no redundancy. Confirmed non-collision for the metaphor judge.
-- **No deletes ⇒ no token strips** in the inflight proto-lines copy; feel:1 @8 and feel:2 @24 tokens stand byte-for-byte with canonical.
-- feel-wren slice: 0 entries, nothing judged (per brief).
+## Seams (cross-facet, for Phase 5 auditor)
+- POV non-redundancy contract SATISFIED — feeling cited against NI; registers distinct at @18/@19.
+- Vocabulary distinctness: Taylor's tell "breath goes out" does NOT collide with the septon's
+  "hands go still" @20 — distinct verbs, distinct bodies, distinct beats. Anti-pattern #7 clear.
+- No deletes ⇒ no token strips; the feel:1 token on bone 18 stands byte-for-byte with canonical.
 
 ## Outputs written
-- mutated facet: `active-project/theater/facets/feeling-taylor-hebert-kl-122ac.md` (annotation refresh only; 0 content mutations)
-- inflight proto-lines: `active-project/theater/facets/_inflight-r2/proto-lines-feel-taylor-hebert-kl-122ac.md`
+- mutated facet slice: `active-project/theater/facets/feeling-taylor-hebert-kl-122ac.md`
+- inflight proto-lines cascade: `active-project/theater/facets/_inflight-r2/proto-lines-feel-taylor-hebert-kl-122ac.md`
 - this shard: `active-project/staff/feeling/r2-decision-shard-taylor-hebert-kl-122ac.md`
