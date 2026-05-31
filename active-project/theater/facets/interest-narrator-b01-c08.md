@@ -20,12 +20,12 @@ cite_index_hash: sha256:b01c08-37e-14d24-r2-narrator-20260531-c2rev
 
 1 @6 the sightlines resolve as a coverage already in place; her own overlay slots in above it, geometric not contested
 
-2 @8 the circuit closes; nothing files; the geometry has updated without a corresponding entry in any column she keeps
+2 @9 the circuit closes; nothing files; the geometry has updated without a corresponding entry in any column she keeps
 
-3 @13 the name takes its place in the handler-rotation row, logistics object among logistics objects, the interior noting the weight and filing it flat
+3 @15 the name takes its place in the handler-rotation row, logistics object among logistics objects, the interior noting the weight and filing it flat
 
-4 @15 the perimeter has acquired an edge it did not have at the open of the read; she notes the new arc as geometric fact, the edge a coverage-line in the feed-map rather than anything else
+4 @18 the perimeter has acquired an edge it did not have at the open of the read; she notes the new arc as geometric fact, the edge a coverage-line in the feed-map rather than anything else
 
-5 @21 the body-map advances on the read; the courier-name files into the spot the body has been holding empty since the water-point pass
+5 @25 the body-map advances on the read; the courier-name files into the spot the body has been holding empty since the water-point pass
 
-6 @24 the geometry completes itself; the coverage-matrix subsumes the watcher-positions it has been adjacent to, smooth, the water-point approach holding its feed-weight unchanged under the new cover
+6 @29 the geometry completes itself; the coverage-matrix subsumes the watcher-positions it has been adjacent to, smooth, the water-point approach holding its feed-weight unchanged under the new cover

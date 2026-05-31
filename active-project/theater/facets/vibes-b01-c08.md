@@ -29,16 +29,16 @@ cull-count: 0
 #     requires library card — loc exists in bones/scene-map/location-state facet graph but not in
 #     cards/locations/; carve-out scoped to this entry; auditor may promote to card-promotion task.
 
-1 @24 loc:the-hook-ward + coverage-extends-through-absorbance: [watcher-network-subsumed-at-geometric-layer, two-surveillance-architectures-on-the-same-ground] | licensed-by: peak-bone:24, peak-bone:6
+1 @29 loc:the-hook-ward + coverage-extends-through-absorbance: [watcher-network-subsumed-at-geometric-layer, two-surveillance-architectures-on-the-same-ground] | licensed-by: peak-bone:29, peak-bone:6
   # s01 integration mechanism (@6: watcher-sightlines traced) + s03 terminal image (@24: insect-feed fills water-point-geometry) together establish the hook-ward as a location where Oswyn's informal ward-protection network has been geometrically absorbed into Taylor's insect-feed coverage matrix without his knowledge; biases studio toward depicting the ward as doubly-surveilled ground for b01c09+.
 
-2 @6 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [watcher-network-absorbed-without-asking, integration-uncounted-in-the-ledger] | licensed-by: state-update:9, peak-bone:6, peak-bone:24
+2 @6 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [watcher-network-absorbed-without-asking, integration-uncounted-in-the-ledger] | licensed-by: state-update:9, peak-bone:6, peak-bone:29
   # The watcher-network integration at s01 enacts the same geometric absorption-without-consent that defines the atonement-arc's repeating pattern — and it goes unlogged in the ledger; both tokens add event-frame instances not covered by the existing bundle (came-to-refuse-control, builds-surveillance-architecture, specific-shape-of-what-she-can-do-meets-what-the-situation-required, the-recognition-is-the-ledger-completing-not-a-revelation); no string overlap.
 
-3 @13 actor:taylor-hebert-kl-122ac + logistics-register-held: [resentment-below-register, names-at-logistics-weight, held-discipline-visible-at-court-tier-names] | licensed-by: state-update:10, peak-bone:13, peak-bone:15
+3 @15 actor:taylor-hebert-kl-122ac + logistics-register-held: [resentment-below-register, names-at-logistics-weight, held-discipline-visible-at-court-tier-names] | licensed-by: state-update:10, peak-bone:15, peak-bone:18
   # The Aemond-name entry at @13 is the chapter's first on-screen enactment of the held political_register-prot discipline — the resentment-register stays flat on a named court-tier name in logistics context; this is a new qualitative consequence not in the existing vibe-set; biases dialogue-writer's future register for Taylor when court-tier proper nouns appear in operational intake.
 
-4 @20 actor:oswyn-mudway-flea-bottom-elder ++ the-unknowing-contact: [watcher-network-inside-coverage-matrix, casual-mention-as-intelligence-vector] | licensed-by: peak-bone:24, state-update:11
+4 @24 actor:oswyn-mudway-flea-bottom-elder ++ the-unknowing-contact: [watcher-network-inside-coverage-matrix, casual-mention-as-intelligence-vector] | licensed-by: peak-bone:29, state-update:11
   # The s01 integration subsumes Oswyn's watcher-network inside Taylor's coverage matrix (@24 confirms geometrically); his casual pass-mention at @20 delivers the courier-name into Taylor's body-map (state-update:4: face-without-name -> face-with-name-corwick); both tokens are new event-frame instances that deepen the unknowing — the trust now operates at structural infrastructure level and conversational-intelligence-delivery level simultaneously; no string overlap with existing bundle.
 
 5 actor:aemond-targaryen-122ac ++ rising-entrapment: [name-in-feed-before-body-arrives] | licensed-by: state-update:10, canon:vhagar-handler-rotation-in-jarvis-logistics-b01c08

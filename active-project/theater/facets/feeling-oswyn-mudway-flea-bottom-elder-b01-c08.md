@@ -8,4 +8,4 @@ cite_index_hash: cite-index-b01-c08-2026-05-31-37entries-58.3decoration
 scope: s03 only (Oswyn appears at @18 placement, @20 speech; per-character per-scene cap ≤1)
 r2-pass: complete
 ---
-1 @20 oswyn-mudway-flea-bottom-elder: keeps his weight on the back foot past the last word | expressed: partial
+1 @24 oswyn-mudway-flea-bottom-elder: keeps his weight on the back foot past the last word | expressed: partial

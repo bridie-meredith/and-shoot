@@ -24,5 +24,5 @@ generated: 2026-05-31
 #   The afternoon-to-evening light shift is a structural fact the scene-map asserts. Loc-state-side
 #   anchor expected when loc-state for b01c08 is authored; if contradicted, revise.
 
-1 @10 sound: enclosed-receipt-quiet -> wax-seal-crack # tag: spike
-2 @16 light: afternoon-stone-lane-light -> evening-lane-dusk-fall # tag: down
+1 @12 sound: enclosed-receipt-quiet -> wax-seal-crack # tag: spike
+2 @19 light: afternoon-stone-lane-light -> evening-lane-dusk-fall # tag: down

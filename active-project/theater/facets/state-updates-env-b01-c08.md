@@ -34,10 +34,10 @@ source: env
 #     (distinct from @8 network-level integration; tracks specific geometry-occupancy at
 #     the water-point after watcher-boy vacates; chapter terminal image enacted as field-state)
 
-1 @8 studio.fauna_sense_status.oswyn-watcher-network: uncharted -> integrated-into-coverage
-2 @9 prop:oc-jarvis-packet.state: absent -> arrived-at-feed-station
-3 @10 prop:oc-jarvis-packet.seal-condition: sealed -> broken
-4 @13 prop:oc-feed-station-ledger.aemond-entry: absent -> logged
-5 @15 studio.fauna_sense_status.feed-edge-geometry: pre-aemond-entry -> aemond-edge-lit
-6 @23 studio.spatial_layout.water-point-position: watcher-boy-stationed -> watcher-boy-absent
-7 @24 studio.fauna_sense_status.water-point-geometry: oswyn-network-managed -> insect-feed-covered
+1 @9 studio.fauna_sense_status.oswyn-watcher-network: uncharted -> integrated-into-coverage
+2 @11 prop:oc-jarvis-packet.state: absent -> arrived-at-feed-station
+3 @12 prop:oc-jarvis-packet.seal-condition: sealed -> broken
+4 @15 prop:oc-feed-station-ledger.aemond-entry: absent -> logged
+5 @18 studio.fauna_sense_status.feed-edge-geometry: pre-aemond-entry -> aemond-edge-lit
+6 @28 studio.spatial_layout.water-point-position: watcher-boy-stationed -> watcher-boy-absent
+7 @29 studio.fauna_sense_status.water-point-geometry: oswyn-network-managed -> insect-feed-covered

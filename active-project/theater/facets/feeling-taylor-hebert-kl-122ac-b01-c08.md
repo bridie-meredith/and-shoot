@@ -15,5 +15,5 @@ r2-verdicts: 2 KEEP / 0 DELETE / 0 ADD / 0 REVISE
 cycle2-verdicts: 2 REVISE / 0 DEFEND / 0 WITHDRAW
 ---
 
-1 @8 taylor-hebert-kl-122ac: her step lands at the circuit-close | expressed: no
-2 @13 taylor-hebert-kl-122ac: her hand sets on the next entry | expressed: no
+1 @9 taylor-hebert-kl-122ac: her step lands at the circuit-close | expressed: no
+2 @15 taylor-hebert-kl-122ac: her hand sets on the next entry | expressed: no
