@@ -4945,10 +4945,30 @@ books:
               density_target: 0.5-0.65
 
       - slug: b01c08
-        status: bones-written   # /and-write b01c08 COMPLETE (2026-05-31): bones emitted theater/bones/b01-c08.md (24 bones / 3 scenes); scene-map facet emitted theater/facets/scene-map-b01-c08.md; dialogue file theater/dialogue/oswyn-mudway-flea-bottom-elder.md. Phase 6 bone-gate: 3-of-3 audience SUBSTANCE-FELT (cape-fic / dark-fantasy / worm-canon); Earth-Bet CLEAN; auditor 5 HARD all remediated (4 HELD-AXIS-WITNESSED via bone-level axes_held annotation + 1 dialogue-anchor citation fix s03n07→s03n05). Phase 4 trim: dropped s02n03 (single-persona-advisory; cape-fic ADVISORY-2 repeat from /and-substance Phase 5). Phase 3 dramatist: s02 n07↔n08 reorder (edge-image closes scene). Phase 2 auditor: 1 HARD fault-001 (sub-1.0 bone-floor); admin DEC-0002 override-as-precedent (c07 precedent: 4 sub-1.0 bone magnitudes shipped clean); pl-2026-05-31-003 SOFT for schema formalization at /and-review pipeline. Was scened from /and-substance chapter b01c08 (2026-05-31): SUBSTANCE-FELT 3/3 audience + dramatist ACCEPT + auditor PASS. Phase 5.5: CHUNK-CLASS-B → admin disposition P (DEC-0060). cl-d06 +1.0 relational_anchor_status DEFERRED to c09/c10 (pl-2026-05-30-001).
+        status: audited-r1   # /and-facets b01c08 COMPLETE (2026-05-31): 9 facet files + dialogue + scene-map authored; 37 entries (loc-state 6, NI 6, sensory 2, state 11, memory 2, feeling 3, metaphor 0, vibes 5, exposition 2); proto-lines 14/24 decorated (58.3%). Phase 5 cycle 3 audit CLEAN (0 HARD / 5 SIGNAL). Phase 5b cycle 2 ALL 10 FACETS ACCEPT 3/3 strict aggregate (4 cycle-1 REVISEs — NI cape-fic / sensory old-state / vibes worm-canon / feeling dark-fantasy — remediated via NI:3+NI:6 reform, loc-state:4 sensory anchor, actor file keyword hyphenation, feel:2+feel:3 positive-form reform; all Phase 2.5 INVIOLABLES preserved). Bidirectional loop: one-sided (auditor caught 5 consolidation-renumbering HARDs cycle 1; audience caught 4 form/anchor/redundancy REVISEs; no shared findings). Audience cycles 2/3 (cap not burned).
+                          # Was bones-written → /and-write b01c08 COMPLETE (2026-05-31): bones emitted theater/bones/b01-c08.md (24 bones / 3 scenes); scene-map facet emitted theater/facets/scene-map-b01-c08.md; dialogue file theater/dialogue/oswyn-mudway-flea-bottom-elder.md. Phase 6 bone-gate: 3-of-3 audience SUBSTANCE-FELT (cape-fic / dark-fantasy / worm-canon); Earth-Bet CLEAN; auditor 5 HARD all remediated (4 HELD-AXIS-WITNESSED via bone-level axes_held annotation + 1 dialogue-anchor citation fix s03n07→s03n05). Phase 4 trim: dropped s02n03 (single-persona-advisory; cape-fic ADVISORY-2 repeat from /and-substance Phase 5). Phase 3 dramatist: s02 n07↔n08 reorder (edge-image closes scene). Phase 2 auditor: 1 HARD fault-001 (sub-1.0 bone-floor); admin DEC-0002 override-as-precedent (c07 precedent: 4 sub-1.0 bone magnitudes shipped clean); pl-2026-05-31-003 SOFT for schema formalization at /and-review pipeline. Was scened from /and-substance chapter b01c08 (2026-05-31): SUBSTANCE-FELT 3/3 audience + dramatist ACCEPT + auditor PASS. Phase 5.5: CHUNK-CLASS-B → admin disposition P (DEC-0060). cl-d06 +1.0 relational_anchor_status DEFERRED to c09/c10 (pl-2026-05-30-001).
         bones_file: theater/bones/b01-c08.md
         bones_count: 24
         substance_bone_gate_verdict: PASS
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audit_findings: 5  # SIGNAL; 0 HARD
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md
+        audience_gate_complete: true
+        audience_gate_cycles: 2
+        audience_gate_cap_burned: false
+        bidirectional_loop: one-sided   # auditor and audience both fired substantive findings with no overlap (auditor: consolidation renumbering; audience: form/anchor/redundancy)
+        context_followability:
+          completeness_verdict: PASS    # Phase 2.5 + 4.5 both FOLLOWABLE
+          readability_verdict: PASS     # Phase 2.5 + 4.5 both ALIVE
+          context_ledger_open: 0
+          grounding_ledger_open: 0
+          report_paths:
+            - active-project/staff/reviews/context-follow-r1-b01-c08-20260531T180000Z.md
+            - active-project/staff/reviews/context-follow-r2-b01-c08-20260531T190000Z.md
         bones_review:
           reviewed_at: 2026-05-31T18:50:00Z
           report_path: active-project/staff/reviews/bones-b01-c08-2026-05-31.md

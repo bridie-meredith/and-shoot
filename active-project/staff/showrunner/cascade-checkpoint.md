@@ -3,11 +3,11 @@ cascade:
   invoked_at: 2026-05-31T16:00:00Z
   invoked_command: /and-substance chapter b01c08 --cascade
   last_completed:
-    level: bones-review
+    level: facets
     slug: b01c08
-    completed_at: 2026-05-31T18:50:00Z
+    completed_at: 2026-05-31T20:30:00Z
   next:
-    command: /and-facets
+    command: /and-stitch
     args: [b01c08]
   reason: continue
   failure: null
