@@ -1,5 +1,5 @@
 ---
-description: Universal review primitive with subcommand router. Subcommands - chunk / bone / contract / signature / bones / facets / cast / consistency / tree / feedback / verdict / prose (deferred). Verdict subcommand absorbs the former /and-judge-book and fires the orchestrator-critic. All reports persist to staff/reviews/<subcommand>-<target>-<timestamp>.md. Usage - /and-review [<subcommand> [<args>]]
+description: Universal review primitive with subcommand router. Subcommands - chunk / bone / contract / signature / bones / facets / cast / consistency / tree / feedback / verdict / cohere / prose (deferred). Verdict subcommand absorbs the former /and-judge-book and fires the orchestrator-critic. Cohere subcommand is the cross-chapter cold-read primitive paired with /and-cohere. All reports persist to staff/reviews/<subcommand>-<target>-<timestamp>.md. Usage - /and-review [<subcommand> [<args>]]
 ---
 
 Top-level router. Dispatches to one of the listed subcommands. Bare invocation (`/and-review` with no subcommand, or `/and-review --help` or `/and-review help`) prints the subcommand-discovery table and exits without firing any review.
@@ -31,6 +31,7 @@ Subcommands:
   feedback <feedback-file> [<root-slug>]   reviewers fire carrying named feedback as context
   staging <chapter-slug>        additive editorial pass (EXPAND/GROUND/STAGE/NEEDS-BEAT) on a stitched chapter
   verdict <book-slug>           orchestrator-critic on a book; absorbs former /and-judge-book
+  cohere <book-slug> [<from>-<to>]  cross-chapter cold-read primitive (PROP-0030); paired with /and-cohere iteration loop
   prose <chapter-slug>          DEFERRED. polish-revival un-defer target pre-pinned
 
 Recommended next-actions:
@@ -289,6 +290,155 @@ Persisted to:
 | Verdict report path (was `staff/orchestrator-critic/verdicts/<season-slug>-<timestamp>.md`) | **canonical:** `staff/reviews/verdict-<book-slug>-<timestamp>.md` |
 | "drafts" if read | per-chapter `draft/<book-slug>-<chapter-slug>.md`; default skips draft-reading (prose subcommand DEFERRED) |
 | Phase 0 abort precondition "all episodes under the season are protolined + faceted" | all chapters under the book have `status >= bones-written` (facet-completion not required for verdict; absence recorded as SIGNAL) |
+
+### `cohere <book-slug> [<from>-<to>]` (PROP-0030 / URI-COHERE-SUBSECTION, 2026-05-31)
+
+Target: book slug + optional chapter range (e.g. `b01 c01-c07`). Default range = all shipped chapters under the book.
+
+Reviewers: naive cold-reader (impersonator-loaded; same persona as `/and-postop` Phase 1 Fork B) + dramatist + one audience persona (rotation). Dispatched in parallel.
+
+**Why it exists.** Per-chapter ship gates at `/and-stitch` Phase 9 catch chapter-internal failures. `/and-postop` catches per-chapter depth-of-quality drift. Neither catches *cross-chapter* failure modes: a setup planted in `c01` that drops by `c04`, an apparatus-register cumulative load that no single chapter triggers but seven chapters do, a character who arrives cold at a load-bearing moment because earlier chapters never accumulated her presence. `cohere` is the cross-chapter cold-read primitive — read N chapters as a single continuous sub-section, ask whether they cohere.
+
+Paired with `/and-cohere` (PROP-0031) — the iteration loop that consumes the chapter-revise queue this subcommand authors and re-cascades chapters through `/and-write revise` until `PASS-COHERE`. `cohere` is read-only; `/and-cohere` mutates.
+
+**Phase 0 HARD-aborts if:**
+- (a) The book has no `chapters[]` populated.
+- (b) Any chapter in the resolved range has no `draft/<book>-<chapter>.md` on disk (cohere reviews shipped chapters; un-shipped chapters are not in scope).
+- (c) The range string is malformed (must be `c<NN>-c<MM>` with `NN <= MM`) or names chapters not in `books[<slug>].chapters`.
+
+**Phase 0a — Concatenate.** Build the combined file `active-project/staff/reviews/cohere-<book>-<range>-<timestamp>.combined.md` by concatenating `draft/<book>-c<XX>.md` for each chapter in the range, separated by chapter-divider markers:
+
+```
+═══════════════════════════════════════
+Chapter <N>
+═══════════════════════════════════════
+```
+
+Compute combined word-count + chapter-count for the report header. Persist alongside the verdict report.
+
+**Phase 1 — Cold-read fanout (3 forks; parallel).**
+
+#### Fork A — Naive cold-reader · `subagent_type: general-purpose`
+
+Impersonator-loaded naive-reader persona (same persona as `/and-postop` Phase 1 Fork B). Reads ONLY the combined file — no other project files.
+
+System context: "You are reading this as a single continuous sub-section of a book. Do not bring outside project context. Respond to the prose."
+
+Prompts (one verdict per question):
+
+- **Q1** voice/register consistency across the stretch. Does the voice feel like one narrator across all chapters, or does register drift / break?
+- **Q2** setup→payoff inventory. Which beats land? Which drop? Itemize the promises the prose makes and the receipts it delivers. **(Load-bearing.)**
+- **Q3** calendar/time legibility. Can the reader track time-passage chapter-to-chapter?
+- **Q4** character-presence accumulation. Who arrives cold (unfelt by prior chapters); who is felt as carried (earned). **(Load-bearing.)**
+- **Q5** sensory texture distribution. Where does prose embed sensory grounding; where does it list / abstract?
+- **Q6** apparatus-register cumulative load. Across seven chapters, does the technical / accounting / instrument register stay sustainable, or does it accumulate past the reader's tolerance? **(Load-bearing.)**
+- **Q7** "does this feel like a sub-section of a book or seven shipped chapters with prologue glue?"
+- **Q8** close-of-section pleasure. Do I want the next chapter?
+
+Verdict per question: `PASS` / `CAUTION` / `FAIL` + one-paragraph evidence excerpt + line reference.
+
+Output: `active-project/staff/reviews/cohere-naive-<book>-<range>-<timestamp>.md`. YAML-front-mattered.
+
+#### Fork B — Dramatist axis · `subagent_type: dramatist`
+
+Reads the combined file. Structural-shape review across the window:
+
+- **Arc legibility** — does the trajectory move? Plot a beat-by-beat shape of the sub-section; does the shape have a discernible arc, or is it a sequence?
+- **Promise/payoff inventory** — every promise the prose makes, and whether it pays, holds, or drops. Hold = explicitly deferred (allowed); drop = implicitly abandoned (REVISE). **(Load-bearing.)**
+- **Antagonist pressure curve** — is antagonist pressure sustained across the stretch, or fragmented? A protagonist with no continuous pressure cannot have an arc.
+- **Scene-shape distribution** — action / argument / interior balance. A stretch that is all one shape signals a missing dimension.
+
+Verdict per axis: `ACCEPT` / `CAUTION` / `REVISE` + evidence.
+
+Output: `active-project/staff/reviews/cohere-dramatist-<book>-<range>-<timestamp>.md`.
+
+Dramatist has no Write tool — orchestrator persists the returned content to the target path.
+
+#### Fork C — Audience persona rotation · `subagent_type: general-purpose`
+
+One of the project's active audience personas (3-persona trio). Rotation tracked in `active-project/audience/<slug>/cohere-history.md` (per-persona append-only log of `<book>-<range>-<timestamp>` invocations). Select the persona whose most-recent `cohere-history.md` entry is oldest. Override via `--persona <slug>` (not exposed as a top-level flag; reserved for principal use during cohere-process tuning).
+
+Loads the selected persona card (`active-project/audience/<slug>/card.md` + `ltm.md` + `stm.md` if present). Reads in-character with substance-felt axes extended to multi-chapter:
+
+- **Cross-chapter substance accumulation.** Does the substance the chapters claim to deliver compound, or does each chapter reset?
+- **Threshold Discipline (cumulative).** Does any persona-specific threshold (canon, rules, sensory-register, etc.) fire at the cumulative level even if no single chapter tripped it?
+- **Persona-specific rule-coherence** (cape-fic-reader / worm-canon-pedant variants of "established rule broken without acknowledgment").
+
+Verdict: `SUBSTANCE-FELT` / `SUBSTANCE-PARTIAL` / `SUBSTANCE-FLAT` + per-axis call.
+
+`SUBSTANCE-FLAT` is **load-bearing**.
+
+Output: `active-project/staff/reviews/cohere-audience-<persona-slug>-<book>-<range>-<timestamp>.md`. Append entry to `active-project/audience/<persona-slug>/cohere-history.md`.
+
+**Phase 2 — Aggregate.** Merge per-fork verdicts into a single verdict shape:
+
+- `PASS-COHERE` — all three forks PASS on load-bearing axes. No chapter revises required.
+- `CAUTION-COHERE` — at least one CAUTION on any axis (load-bearing or not); advisory parking-lot entries written; sub-section ships.
+- `FAIL-COHERE` — at least one FAIL on a load-bearing axis. Routes to revise queue.
+
+Load-bearing axes (FAIL on these is blocking; sets `FAIL-COHERE`):
+- Naive Q2 (setup→payoff drop on a structural beat).
+- Naive Q4 (character arrives cold at a load-bearing moment).
+- Naive Q6 (apparatus-register exceeds sustainable density).
+- Dramatist promise/payoff inventory (a promise is dropped).
+- Audience `SUBSTANCE-FLAT`.
+
+Non-load-bearing axes (FAIL surfaces but does not block; sets `CAUTION-COHERE` at worst):
+- Naive Q1 (voice/register drift).
+- Naive Q3 (calendar drift).
+- Naive Q5 (sensory thinness).
+- Naive Q7 (sub-section feel).
+- Naive Q8 (close-of-section pleasure).
+- Dramatist arc legibility.
+- Dramatist antagonist pressure curve.
+- Dramatist scene-shape distribution.
+- Audience `SUBSTANCE-PARTIAL` (advisory; not blocking).
+
+**Phase 3 — Write chapter-revise queue.** For each FAIL on a load-bearing axis, author a parking-lot item:
+
+- `target.command: /and-write`
+- `target.scope: <chapter-slug>` (the chapter the revise targets — derived from the line-reference + evidence excerpt; the chapter whose bones must change, not the chapter where the symptom surfaced)
+- `target.phase: null` (any phase resolves)
+- `severity: HARD` if `FAIL-COHERE`; `SOFT` if `CAUTION-COHERE` (advisory revise queue)
+- `description`: cite the failing question/axis + the proposed bone-level fix (mirrors the per-item shape used in `narrative-improvement-plan-2026-05-31.md`)
+- `context_refs[]`: combined-file path + per-fork report paths + line references from the evidence excerpts
+
+For `CAUTION-COHERE` runs, parking-lot items are SOFT — they advise rather than block. `/and-cohere --strict` promotes SOFT cohere items to HARD on the next iteration's read.
+
+**Phase 4 — Persist.**
+
+- `active-project/staff/reviews/cohere-<book>-<range>-<timestamp>.md` — the full verdict + evidence + chapter-revise queue. YAML-front-mattered:
+
+```yaml
+---
+report: cohere
+book: <slug>
+range: <from>-<to> | all
+timestamp: <ISO>
+verdict: PASS-COHERE | CAUTION-COHERE | FAIL-COHERE
+load_bearing_fails: <int>
+failed_axes: [<token>, ...]
+caution_axes: [<token>, ...]
+forks:
+  naive: <path>
+  dramatist: <path>
+  audience-<persona-slug>: <path>
+combined_file: <path>
+parking_lot_items: [<pl-id>, ...]
+chapter_revise_queue: [<chapter-slug>, ...]
+---
+```
+
+- Combined file (Phase 0a) persists alongside.
+- Parking-lot append (Phase 3 items).
+- **Mandatory-step record.** Write `chapters[<slug>].cohere_review = {reviewed_at, report_path, verdict, range, failed_axes}` to showrunner memory for every chapter in the range. (Schema-level memory.md addition; documented here, gated by principal triage of PROP-0030 before going live in the schema.) Until the memory.md field is schema-blessed, persist this record to the report front-matter only.
+
+**Gates:**
+- `FAIL-COHERE` is NOT a ship-gate on individual chapters (they already shipped). It IS a gate on shipping the sub-section as a sub-section.
+- `CAUTION-COHERE` never blocks.
+- `/and-review cohere` itself never blocks anything — it is a read-only primitive. The blocking belongs to `/and-cohere`'s iteration loop (`--strict` mode).
+
+Lift basis: distilled from the b01c05 three-FAIL postmortem and the c01-c07 sub-section audit prompts (`active-project/staff/showrunner/narrative-improvement-plan-2026-05-31.md`); promoted from per-chapter `/and-postop` to a cross-chapter primitive under PROP-0030.
 
 ### `prose <chapter-slug>` — DEFERRED
 
