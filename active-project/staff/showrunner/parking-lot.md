@@ -1116,3 +1116,337 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    # ── Session 2026-05-31 cold-read audit findings (sub-section b01 c01-c07) ──
+    # Source: active-project/draft/_combined-b01-c01-c07-audit.md
+    # Branch: session/audit-and-stitch-2026-05-31
+    # ── Session 2026-05-31 cold-read audit findings (sub-section b01 c01-c07) ──
+    # Source: active-project/draft/_combined-b01-c01-c07-audit.md
+    # Branch: session/audit-and-stitch-2026-05-31
+
+    - id: pl-2026-05-31-004
+      created_at: 2026-05-31T22:00:00Z
+      created_by: "session cold-read audit of combined b01 c01-c07 (principal-directed)"
+      label: c07-four-names-consequence-absent
+      target:
+        command: /and-write
+        scope: b01c07
+        phase: null
+      severity: SOFT
+      description: |
+        c06's chapter-defining beat — sealing the form with four Black-faction ward
+        elders by name (the cost-axis crossing from movement-patterns to persons) —
+        has zero on-page consequence in c07. c07's prologue declares "the circuit is
+        routine" and the chapter pivots to the Septon-Halvard argument. Cold-read
+        across the sub-section: this is the largest narrative ball drop in the seven
+        chapters. A reader closes c06 with maximum loaded expectation and opens c07
+        on quiet. Two resolution shapes:
+          (a) Re-open c07 to plant a single on-page register of the four-names
+              consequence in the Hook morning before the Septon scene — an absence
+              on Taylor's count where a Black-faction elder was, a new gait pattern
+              filling the slot, a piece of news in the chandler's-storehouse murmur.
+              The Halvard argument then *arrives because* the consequence is in the
+              air, not as a separate ethics seminar. Costs: c07 revise + re-cascade.
+          (b) Defer the consequence to c08+ as a delayed-reveal mechanic, accepting
+              that c06 closes a stress-loaded chapter and c07 deliberately runs cold.
+              Risk: contempt-onset (series axis d05) may need this beat to land
+              before the contempt is earned. Defer-cost is low if a c08-c10 window
+              registers the consequence within ~3 chapters of the sealing.
+        Recommend (a). The trajectory wants contempt-onset surfacing in b01's first
+        half and the cleanest scaffold is the Hook *feeling different* the morning
+        after a delivered name-set.
+      context_refs:
+        - active-project/draft/_combined-b01-c01-c07-audit.md
+        - active-project/draft/b01-c06.md
+        - active-project/draft/b01-c07.md
+      resolution_suggestion: "/and-write b01c07 revise — plant four-names consequence in chapter open before Halvard scene; re-cascade facets + stitch"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-31-005
+      created_at: 2026-05-31T22:00:00Z
+      created_by: "session cold-read audit of combined b01 c01-c07"
+      label: wren-under-seeded-c01-to-c06
+      target:
+        command: /and-write
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        Wren Stitch-Maker is structurally the cost-bearer; her c06 intervention
+        ("there's a way past — cut before the cart, by the tallow-boiler's wall — I
+        been through") is the sub-section's single strongest line. But across c01-c06
+        Wren has only three on-page presences: c01 close (introduction by name),
+        c02 ambient feed-flag, c04 feed-return-not-written-down. She is otherwise
+        absent. The c06 line should ring like a struck bell; cold-read says it lands
+        like a stranger we were told about in chapter one. Recommend authoring one
+        sub-bone of on-page Wren-presence in c03 (the morning market is exactly the
+        ground she would cross; she could pass through the salt-fish stall sightline
+        before Jarvis enters), and one in c05 (a Hook-feed return as Taylor evening-
+        reviews and Wren's print is the one print held a length longer than the
+        others). Costs: small bone additions during revise; no axis movement required.
+        Both candidate plants are passive-observation, not contact — preserves the
+        c06 four-month-silence framing.
+      context_refs:
+        - active-project/draft/_combined-b01-c01-c07-audit.md
+        - active-project/draft/b01-c01.md
+        - active-project/draft/b01-c06.md
+      resolution_suggestion: "/and-write b01c03 revise + /and-write b01c05 revise — add passive Wren-presence sub-bones; re-cascade both"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-31-006
+      created_at: 2026-05-31T22:00:00Z
+      created_by: "session cold-read audit of combined b01 c01-c07"
+      label: halvard-cold-walk-on-c07
+      target:
+        command: /and-write
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        Septon Halvard is the Faith's man for the Hook stretch in c07; per the prose
+        Taylor has tracked his circuit for two months. He is on-page for the first
+        time in c07, and the founding-entry name (Wenna Cobb, six-year-old, fever,
+        two seasons back) lands in his dialogue with no prior on-page anchor. The
+        Halvard argument is the sub-section's purest argument-chapter beat; the
+        argument suffers because the antagonist arrives cold. Resolve by:
+          (a) Plant Halvard as an on-page body in c04 or c05 — the kind of fixture
+              Taylor's feed has logged a hundred times — passing in the lane,
+              tending a sick body, exchanged a nod with. One sub-bone.
+          (b) Plant a brief on-page mention of the Cobb death (or an equivalent
+              founding-entry death) before c07 — a name Taylor has carried since
+              before coverage came up; her ledger has the entry under a prior
+              column. Without this c07's "she's the first name in the count" reads
+              as authored-into-existence-for-the-scene rather than carried.
+        Both costs are small. Prefer doing both.
+      context_refs:
+        - active-project/draft/_combined-b01-c01-c07-audit.md
+        - active-project/draft/b01-c07.md
+      resolution_suggestion: "/and-write b01c04 or b01c05 revise — seed Halvard body + Cobb founding entry; re-cascade"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-31-007
+      created_at: 2026-05-31T22:00:00Z
+      created_by: "session cold-read audit of combined b01 c01-c07"
+      label: rushwick-courier-attack-unprocessed
+      target:
+        command: /and-substance
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        c05 stages an enforcement-incident in the side-alley off the Rushwick east
+        exit — three figures, one body, the work of force absorbed and not answered.
+        Taylor files the body-record and routes the report-entry. The courier-walk
+        "holds the rushwick-pass" in the evening flat-read; this is c05's load-bearing
+        readability beat (the apparatus recognizing the architecture it runs through).
+        Then nothing. c06 and c07 do not register the Rushwick courier, the
+        enforcement-incident, or the consequence of the report Taylor delivered. As
+        staged it is a single-instance set-up. The reader expected either the courier
+        to recur (the body whose record Taylor opened in the body-map under the
+        recurring-body anchor) or the enforcement-pattern to escalate. Neither
+        happens. Resolution belongs at /and-substance: either author a downstream
+        chapter scene-chunk that picks up the Rushwick thread (cleanest at c08-c10
+        scene 2 or 3 in a court-tier ward), or re-frame c05's enforcement-incident
+        contractually as an *example* of court-tier substrate rather than a setup
+        for downstream payoff (which would change c05's chunk + bone-gate verdict
+        but is the only honest move if no payoff is planned).
+        Recommend the downstream payoff path; the structural promise c05 made is
+        the kind the genre contract enforces.
+      context_refs:
+        - active-project/draft/_combined-b01-c01-c07-audit.md
+        - active-project/draft/b01-c05.md
+      resolution_suggestion: "/and-substance chapter b01c0X revise — author Rushwick-thread payoff scene in next available court-tier chapter; or re-frame c05 contractually"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-31-008
+      created_at: 2026-05-31T22:00:00Z
+      created_by: "session cold-read audit of combined b01 c01-c07"
+      label: calendar-drift-across-c01-c07
+      target:
+        command: /and-write
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        Time across the sub-section is impossible to pin down from the prose body.
+        Best estimate from prologue cues: c01 = arrival + 3 weeks; c02 = "by end of
+        that day" (compressed days); c03 = next morning; c04 = next day; c05 = next
+        morning (or unspecified later); c06 = unspecified; c07 prologue = "the
+        arrangement is two months old now". ~3 months total. The reader loses
+        calendar between c04 and c07. The fix is light: one calendar/season anchor
+        per chapter prologue (a market-day name, a Faith-calendar reference, a
+        weather/season shift) costs almost nothing and recovers the structural rate
+        the sub-section is actually moving at. Not bone-level; prologue-only edit.
+        Author at /and-write revise phase 1 (the prologue is the italic block above
+        the prose body and is part of the bones emit by convention).
+      context_refs:
+        - active-project/draft/_combined-b01-c01-c07-audit.md
+      resolution_suggestion: "/and-write revise (each chapter) — add one calendar/season anchor to prologue; lowest-blast-radius path"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-05-31-009
+      created_at: 2026-05-31T22:00:00Z
+      created_by: "session cold-read audit of combined b01 c01-c07"
+      label: cross-chapter-aliveness-scoring-question
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        c05 received an ALIVE verdict on the retroactive PROP-0022 aliveness-twin
+        test. Cold-read of c02-c05 as a continuous stretch says the apparatus-
+        register accumulates across those four chapters in a way the single-chapter
+        ALIVE verdict did not catch. c01 prologues and c07 ledger-stylus prose are
+        the only sustained voice-embodiment passages in the sub-section. The
+        question is whether aliveness scoring at /and-stitch Phase 4.5 + Phase 9 is
+        chapter-isolated by design (which is reasonable: each chapter ships
+        independently) or whether it should be optionally cross-chapter when N
+        consecutive chapters have shipped and a sub-section read is available. This
+        is a process-design question, not a chapter-specific revise. Surfaced to
+        /and-review pipeline. Related to PROP-0023 (false-ALIVE on apparatus-
+        dominant whole chapter) — the cross-chapter version of the same failure
+        class. May fold into PROP-0023 or warrant PROP-0030 (drafted same session).
+      context_refs:
+        - active-project/draft/_combined-b01-c01-c07-audit.md
+        - staff/admin/process-proposals.md  # PROP-0023
+        - staff/admin/process-proposals.md  # PROP-0030 (drafted 2026-05-31)
+      resolution_suggestion: "/and-review pipeline — discriminate cross-chapter aliveness audit from chapter-isolated; route to PROP-0023 or PROP-0030 disposition"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-01-cohere-001
+      created_at: 2026-06-01T04:20:31Z
+      created_by: "/and-review cohere b01 c01-c07 (Fork A naive Q5)"
+      target:
+        command: /and-write
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        Sensory texture distribution thins through c02 and c04 middles per
+        naive Q5. Strong at openings/thresholds; weak through long observation
+        stretches. Advisory only — for future chapter authoring (c08+),
+        consider scattering one or two concrete sensory anchors mid-scene
+        when the protagonist's interior accounting runs >300 words without
+        a physical/sensory beat. Routes to /and-write via grounding-ledger
+        line items at /and-facets Phase 2.5 (existing PROP-0022 channel).
+      context_refs:
+        - active-project/staff/reviews/cohere-naive-b01-c01-c07-2026-06-01T04-20-31Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-01-cohere-002
+      created_at: 2026-06-01T04:20:31Z
+      created_by: "/and-review cohere b01 c01-c07 (Fork A naive Q6 — load-bearing CAUTION)"
+      target:
+        command: /and-write
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        Apparatus-register cumulative load strained but did not break. c06/c07
+        actively dramatize the cost of the register, which is what kept the
+        reader engaged through the densest passages. For c08+: continue the
+        c06/c07 pattern of dramatizing the register-cost when register density
+        exceeds the per-scene band; do not let dense-register passages run
+        without an interior-cost-of-the-register beat. Advisory — load-bearing
+        Q6 CAUTION is closer to the FAIL band than other axes, so this item
+        carries higher priority than the other cohere-soft items.
+      context_refs:
+        - active-project/staff/reviews/cohere-naive-b01-c01-c07-2026-06-01T04-20-31Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-01-cohere-003
+      created_at: 2026-06-01T04:20:31Z
+      created_by: "/and-review cohere b01 c01-c07 (Fork B dramatist axis3)"
+      target:
+        command: /and-substance
+        scope: "chapter b01c08-b01c<MM>"
+        phase: null
+      severity: SOFT
+      description: |
+        Antagonist pressure fragments between transaction points (C03/C04/C06
+        Otto spikes; intervals carry structural-not-agentive pressure). b01
+        reads as interior-pressure narrative; Otto is episodic demand-escalator,
+        not continuous pressure. For c08+: consider whether a between-transaction
+        agentive antagonist beat (Otto courier intercept; subordinate visit;
+        formal-channel demand outside the schedule) would sharpen the
+        antagonist curve without breaking the interior-pressure mode. Advisory.
+      context_refs:
+        - active-project/staff/reviews/cohere-dramatist-b01-c01-c07-2026-06-01T04-20-31Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-01-cohere-004
+      created_at: 2026-06-01T04:20:31Z
+      created_by: "/and-review cohere b01 c01-c07 (Fork B dramatist axis4)"
+      target:
+        command: /and-substance
+        scope: "chapter b01c08-b01c<MM>"
+        phase: null
+      severity: SOFT
+      description: |
+        Scene-shape distribution narrow: ~1 action / ~5 interior / ~4 transaction
+        / ~1 argument (c07) across seven chapters. C07 argument carried full
+        weight of being the first opposition voice in the stretch. For c08+:
+        consider whether a contested-argument scene before next argument-fall
+        would distribute argument-load across the book rather than concentrating
+        it. Advisory — interior-dominance is consistent with POV architecture
+        (first-person observation-as-control).
+      context_refs:
+        - active-project/staff/reviews/cohere-dramatist-b01-c01-c07-2026-06-01T04-20-31Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-01-cohere-005
+      created_at: 2026-06-01T04:20:31Z
+      created_by: "/and-review cohere b01 c01-c07 (Fork C audience dark-fantasy-reader axis2)"
+      target:
+        command: /and-substance
+        scope: "chapter b01c08-b01c<MM>"
+        phase: null
+      severity: SOFT
+      description: |
+        Audience threshold discipline cumulative — two soft flags:
+        (a) the insect-instrument never operationally fails the protagonist
+        across seven chapters — cost is named but capability is unbroken;
+        instrument as undefeated apparatus risks reading as plot armor by mid-book;
+        (b) no contesting force until c07 — Jarvis/Otto channel accepts terms;
+        world has been *available* rather than *pressing*. For c08+: an
+        operational instrument-failure (a count that gets a fact wrong; a
+        sensory gap the apparatus cannot bridge) AND/OR a pressing-world beat
+        (a Black-side ward elder or Halvard-aligned figure who actively resists)
+        would address both flags. Advisory.
+      context_refs:
+        - active-project/staff/reviews/cohere-audience-dark-fantasy-reader-b01-c01-c07-2026-06-01T04-20-31Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

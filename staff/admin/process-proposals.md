@@ -3699,10 +3699,12 @@ proposed_diff: |
 
 ---
 
-## PROP-0030
+## PROP-0035
+
+> **2026-06-01 ID-renumbering note:** allocated PROP-0030 on main 2026-05-31 (stitch-spine-staging body-act-companion proposal). Collided with session-branch PROP-0030 (cohere primitive) when session/audit-and-stitch-2026-05-31 merged 2026-06-01. Renumbered to PROP-0035 to preserve cohere PROP-0030's downstream references (PROP-0031, /and-review cohere subcommand, /and-cohere skill registration). DEC-0061 references updated accordingly.
 
 ```yaml
-id: PROP-0030
+id: PROP-0035
 created_at: 2026-05-31T00:00:00Z
 created_by: admin process-critic
 trigger:
@@ -3870,8 +3872,8 @@ recurrence_refs:
     render-physical advisory, explicitly on the basis that companion bones n04 ('corwick faces
     the second man') and n05 ('corwick squares the shoulders') carry concrete physical body-acts
     in the ±2 peak zone — i.e. the SW-3 split satisfies exactly the body-act-companion condition
-    this proposal codifies. This case is EVIDENCE THAT THE PROP-0030 MECHANISM IS CORRECT, not a
-    gap it misses: under PROP-0030 the Phase 6 BODY-ACT-ABSENT-AT-PEAK SIGNAL would have fired on
+    this proposal codifies. This case is EVIDENCE THAT THE PROP-0035 MECHANISM IS CORRECT, not a
+    gap it misses: under PROP-0035 the Phase 6 BODY-ACT-ABSENT-AT-PEAK SIGNAL would have fired on
     n09 and then cleared on companion-presence, converting the current ad-hoc 'FLAG accepted with
     rationale' into a mechanical 'SIGNAL evaluated, cleared by n04/n05.' The caller's framing
     question ('should the bone-gate require the central-precursor bone ITSELF to be concrete
@@ -3994,6 +3996,860 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+
+---
+
+## PROP-0030
+
+```yaml
+id: PROP-0030
+created_at: 2026-05-31T22:00:00Z
+created_by: principal-directed session cold-read of combined b01 c01-c07 sub-section
+trigger:
+  reason: on-demand (session audit; not a chain-verdict trigger)
+  source_report: active-project/draft/_combined-b01-c01-c07-audit.md
+  source_verdict: session:cross-chapter-apparatus-register-accumulation
+target:
+  type: command
+  path: .claude/commands/and-stitch.md
+  section: "Phase 4.5 — completeness + aliveness scoring; Phase 9 — cold-read terminal gate"
+change_type: modify
+rationale: |
+  PROP-0022 (aliveness twin) is wired across /and-stitch Phase 4 voice-embodiment +
+  Phase 4.5 separated-axis scoring + Phase 9 cold-read terminal gate. Live-test results:
+    - c05 (retroactive) — ALIVE verdict, the chapter shipped clean.
+    - c06 (first live) — false-ALIVE; PROP-0023 opened to catch apparatus-dominant
+      whole-chapter at bone-level before stitch.
+    - c07 (second live) — PASS-WITH-CAVEATS / AIRLESS-at-the-edge; depth-pass
+      recommended at parking-lot pl-2026-05-31-001.
+  Session 2026-05-31 cold-read of c01-c07 as a continuous sub-section identifies a
+  failure class neither PROP-0022 nor PROP-0023 surfaces: apparatus-register
+  ACCUMULATES across chapters even when each individual chapter scores ALIVE in
+  isolation. The cold reader notices c02-c05 read as a stretch of operating-instruction
+  prose only when held against c01 prologue prose + c07 ledger-stylus prose — the
+  contrast surfaces what chapter-isolated reading does not.
+
+  Current Phase 4.5 + Phase 9 scoring run per chapter. A chapter that holds up under
+  isolated cold-read can still degrade a multi-chapter run. The failure shape is
+  cumulative load on a register that any single chapter sustains without protest.
+
+  PROP-0023 catches apparatus-dominant whole-chapter at bone level (de-abstraction
+  required before ALIVE verdict can fire). PROP-0030 is the orthogonal axis: even
+  chapters that PASS PROP-0023 can accumulate cross-chapter aliveness debt. The two
+  proposals are complementary; PROP-0023 protects single-chapter readability,
+  PROP-0030 protects sub-section readability.
+
+  First-occurrence proposing rationale: (a) the mechanism is precisely discriminated
+  (per-chapter scoring blind to cross-chapter accumulation); (b) the evidence is a
+  cold-read of seven shipped chapters held against each other, not a single reviewer
+  taste-flag; (c) the cost shape is M (new optional /and-review pipeline + cohere
+  subcommand machinery — design overlap with the PROP-0031 sub-section coherence
+  process queued same session); (d) the failure is silent in the existing gates by
+  construction.
+evidence_refs:
+  - "active-project/draft/_combined-b01-c01-c07-audit.md — §Where the prose fails item 1 (apparatus-register dominates the middle); cross-references items 2 (sensory grounding named but not embedded) + 10 (dialogue sparse compounds apparatus problem)"
+  - "active-project/draft/b01-c01.md through b01-c07.md — seven shipped chapter drafts; c02-c05 are the load-bearing evidence stretch"
+  - "staff/admin/process-proposals.md — PROP-0022 (aliveness twin, wired); PROP-0023 (false-ALIVE bone-level, open-pending-principal-triage)"
+  - "active-project/staff/showrunner/parking-lot.md — pl-2026-05-31-009 (cross-chapter aliveness scoring question surfaced to /and-review pipeline)"
+recurrence_count: 1
+proposed_diff: |
+  PRIMARY CHANGE — new /and-review subcommand: `cohere`
+
+  Add a `cohere` subcommand to /and-review (per /and-review router pattern). Invocation:
+
+    /and-review cohere <book> [<from-chapter>-<to-chapter>]
+
+  When called without a range: defaults to all shipped chapters of the named book.
+  When called with a range: cold-reads the named chapter window as a sub-section.
+
+  Phases:
+    Phase 0: validate (chapters in range are shipped to draft/); parking-lot scan;
+             concatenate draft/<book>-c<XX>.md files into a working combined file at
+             active-project/staff/reviews/cohere-<book>-<range>-<ts>.combined.md.
+    Phase 1: dispatch a single naive cold-reader against the combined file (one
+             impersonator load of the naive-reader persona — same persona as the
+             routine /and-postop fork). Prompts target cross-chapter axes specifically:
+               - Q1 voice/register consistency across the stretch
+               - Q2 setup→payoff: which beats land, which drop
+               - Q3 calendar/time legibility
+               - Q4 character-presence accumulation (who arrives cold; who is felt as
+                 carried)
+               - Q5 sensory texture distribution (where the prose embeds vs lists)
+               - Q6 apparatus-register cumulative load (the load-bearing question)
+               - Q7 "does this feel like a sub-section of a book or seven shipped
+                 chapters with prologue glue"
+             Verdict shape per question: PASS / CAUTION / FAIL with one-paragraph
+             evidence excerpt + line reference.
+    Phase 2: dramatist axis — same combined file, structural-shape review across the
+             window (arc legibility; promise/payoff inventory; antagonist pressure
+             curve sustained or fragmented).
+    Phase 3: audience fork — one of the three project audience personas (rotating;
+             tracked in active-project/audience/<slug>/cohere-history.md to round-
+             robin); reviews the stretch with the persona's substance-felt axes
+             extended to multi-chapter (cross-chapter substance accumulation).
+    Phase 4: aggregate. Verdict shape:
+               - PASS-COHERE — all three forks PASS; no chapter revises required.
+               - CAUTION-COHERE — at least one CAUTION; advisory parking-lot entries
+                 written but no blocking action; sub-section ships.
+               - FAIL-COHERE — at least one FAIL on a load-bearing axis (Q2 setup→
+                 payoff drop on a structural beat; Q6 apparatus-register exceeds
+                 sustainable density). Routes to the new PROP-0031 cohere-iterate
+                 process (drafted same session): chapter-revise queue authored as
+                 parking-lot HARD items targeting /and-write revise on the named
+                 chapters; on revise + re-cascade completion, /and-review cohere
+                 re-runs.
+    Phase 5: persist. Writes
+               - active-project/staff/reviews/cohere-<book>-<range>-<ts>.md (verdict +
+                 evidence)
+               - chapters[<slug>].cohere_review for each chapter in the range
+                 (audit trail per chapter)
+               - parking-lot entries for any FAIL-COHERE chapter-revises required
+    Phase 5.5: admin process-critic (always-fires; same pattern as /and-postop 3.5).
+    Phase 6: summary.
+
+  Gates:
+    - FAIL-COHERE HARD-routes to chapter-revise queue; the cohere verdict is NOT a
+      ship-gate on the individual chapters (they already shipped). It IS a gate on
+      shipping the sub-section as a sub-section of the book.
+    - CAUTION-COHERE never blocks; it surfaces.
+
+  Pattern: cohere is to the sub-section what /and-postop is to a single chapter —
+  depth-of-quality check, not the primary ship gate. The primary ship gate stays at
+  /and-stitch Phase 9 cold-read terminal gate (PROP-0022). PROP-0030 adds a layer
+  above it for multi-chapter accumulation.
+
+  RENDERER-MINIMAL MIRROR: none. cohere is review-only, no rendering.
+
+  MEMORY SCHEMA NOTE (optional, deferred to principal):
+    Add `cohere_review` block to chapters[<slug>] schema in
+    schemas/showrunner-memory.schema.md (verdict, report_path, ts). Cost S.
+
+  INTERACTION WITH PROP-0022 / PROP-0023:
+    - PROP-0022 (chapter-isolated aliveness scoring) — unchanged; remains the primary
+      per-chapter readability gate at /and-stitch.
+    - PROP-0023 (bone-level apparatus-dominant catch) — unchanged; remains the
+      pre-stitch upstream cure.
+    - PROP-0030 — cross-chapter accumulation cure; runs after N chapters ship.
+    All three are complementary. None of them subsumes another.
+
+  INTERACTION WITH PROP-0031 (cohere-iterate process, drafted same session):
+    PROP-0031 is the iteration-to-positive loop. PROP-0030 is the cold-read primitive
+    that surfaces holes. The cohere subcommand of /and-review is the surfacing
+    machinery; the cohere-iterate process is the convergence loop. Accept PROP-0030
+    independently; PROP-0031 is opt-in on top of it.
+
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0031
+
+```yaml
+id: PROP-0031
+created_at: 2026-05-31T22:00:00Z
+created_by: principal-directed session (sub-section coherence process design)
+trigger:
+  reason: principal directive — "Draft process that will stitch chapters together, identify and plug holes in narrative, and then ensure readability is high. Cold reads must pass with positive content. If not, iterate in fixing the material until all reviews are positive."
+  source_report: active-project/staff/showrunner/subsection-coherence-process-plan-2026-05-31.md
+  source_verdict: principal-directive
+target:
+  type: command
+  path: .claude/commands/and-cohere.md  # new command
+  section: full command body
+change_type: add
+rationale: |
+  PROP-0030 adds /and-review cohere as a single-pass cold-read primitive. PROP-0031
+  wraps it in an iteration-to-convergence loop: /and-cohere <book> [range] runs the
+  cold-read, dispatches the chapter-revise queue, re-cascades the affected chapters
+  through /and-write revise → /and-facets → /and-stitch, and re-runs /and-review
+  cohere until either PASS-COHERE or the cap (default 3 iterations) is hit.
+
+  Justifies as a separate command (not a subcommand of /and-review) because:
+    - /and-review is read-only by design; cohere-iterate is read-then-mutate.
+    - The iteration loop spans multiple cascade re-runs and needs its own state file
+      (iteration counter, per-iteration verdict log, convergence trace).
+    - Convergence cap + escalation belongs in command-body orchestration, which
+      /and-review explicitly does not own.
+
+  First-occurrence proposing rationale: (a) the mechanism is precisely the principal
+  directive shape — stitch → identify holes → plug → iterate until positive; (b) the
+  cost is M-L (command body + state file + cap logic + interaction with /and-write
+  revise machinery, but most of the consuming machinery already exists); (c) the
+  failure-on-no-PROP path is "no convergence loop exists, sub-section ships with
+  whatever holes /and-review cohere surfaced once" — which is acceptable as a
+  graceful degradation but loses the iteration leverage the principal asked for.
+evidence_refs:
+  - "active-project/staff/showrunner/subsection-coherence-process-plan-2026-05-31.md — process design draft (this session)"
+  - "staff/admin/process-proposals.md — PROP-0030 (cohere primitive, paired)"
+  - "active-project/draft/_combined-b01-c01-c07-audit.md — surfaced holes the iteration loop would plug"
+recurrence_count: 1
+proposed_diff: |
+  PRIMARY CHANGE — new command body at .claude/commands/and-cohere.md.
+
+  Phases (sketch — full body to be authored at acceptance):
+
+    Phase 0: validate. Args: <book> [<from-chapter>-<to-chapter>]; default range =
+             all shipped chapters of the named book. Read showrunner memory,
+             parking-lot, iteration state. If a prior /and-cohere iteration is
+             open on the same range, resume from its checkpoint.
+
+    Phase 1: dispatch /and-review cohere <book> [range] (PROP-0030).
+
+    Phase 2: gate on verdict.
+               - PASS-COHERE — write convergence record; exit success.
+               - CAUTION-COHERE — write advisory record; exit success unless
+                 --strict (strict treats CAUTION as iterate).
+               - FAIL-COHERE — proceed to Phase 3.
+
+    Phase 3: triage. Read /and-review cohere's chapter-revise queue from the
+             parking-lot HARD items it just authored. For each item:
+               - Group by chapter (one item may cite multiple chapters; one chapter
+                 may receive multiple items).
+               - Order by dependency (e.g. plant Wren in c03 BEFORE revising c06's
+                 cost-bearer reception).
+               - Reject items the principal has previously dismissed (read
+                 staff/admin/decisions.md for prior cohere dispositions on this
+                 book).
+
+    Phase 4: execute. For each chapter in the queue:
+               (a) /and-write <chapter> revise --from-signals (or --cohere-driven
+                   if a cohere-revise mode is added — phase-internal flag).
+               (b) /and-review bones (mandatory gate; per existing chain).
+               (c) /and-facets <chapter> (re-cascade).
+               (d) /and-stitch <chapter> (re-cascade; terminal gate).
+             Failures at any sub-phase bubble up; the cohere iteration enters a
+             held state and surfaces the failing chapter for principal triage
+             (auto-escalation, no infinite loop).
+
+    Phase 5: re-run /and-review cohere. Compare verdict to prior iteration.
+               - If improved (FAIL → CAUTION, CAUTION → PASS, etc.) — continue
+                 the loop.
+               - If unchanged or regressed — admin process-critic fires
+                 (mandatory; reason: cohere-iteration-not-converging); proposal
+                 likely generated for the principal.
+
+    Phase 6: convergence cap. Default 3 iterations. On cap-hit without PASS:
+               - Write final verdict CAP-HIT (advisory).
+               - Surface the unresolved chapter-revise queue.
+               - admin process-critic fires.
+               - Exit to principal triage. Do NOT auto-revise indefinitely.
+
+    Phase 7: persist. Write
+               - active-project/staff/cohere/<book>-<range>-<ts>/iteration-log.md
+               - chapters[<slug>].cohere_iterations for each touched chapter
+               - parking-lot resolutions for items the iteration plugged
+
+    Phase 7.5: admin process-critic (always-fires).
+
+    Phase 8: summary.
+
+  Flags:
+    --strict — treat CAUTION-COHERE as iterate (default: PASS on CAUTION).
+    --max-iter N — convergence cap override (default 3; max 5).
+    --range <from-c>-<to-c> — restrict cohere range (default = all shipped chapters).
+    --dry-run — Phase 1 only; do not enter revise loop.
+
+  STATE FILE: active-project/staff/cohere/<book>-<range>-state.md tracking
+  iteration counter, last verdict, queued revises, convergence trace.
+
+  INTERACTION WITH /and-substance --cascade:
+    /and-cohere is downstream of /and-substance. A book-level cascade runs
+    /and-substance chapter → /and-write → /and-facets → /and-stitch per chapter;
+    /and-cohere runs after N chapters have shipped and explicitly does not
+    interleave with single-chapter cascades.
+
+  INTERACTION WITH /and-postop:
+    /and-postop is per-chapter depth-of-quality (already shipped chapter).
+    /and-cohere is per-sub-section depth-of-coherence (already shipped chapters
+    held as a stretch). Both are optional / on-demand; both are post-ship.
+    Run /and-postop per chapter for chapter-level depth; run /and-cohere per
+    sub-section for sub-section-level coherence. They do not block each other.
+
+  AMENDMENT 2026-05-31 (forward-feed channel; replaces back-prop):
+    Closes the upstream/draft divergence the b01-c01-c07 session surfaced
+    (session-synthesis-report-2026-05-31.md §5d) by replacing back-propagation
+    with a forward-feed channel. Adds two phases to /and-cohere and one Phase 0
+    contract on /and-substance chapter.
+
+    Phase 4.5 — REVISION CLASSIFICATION (new; fires after each Phase 4 chapter
+    revise, before Phase 5 re-review):
+      For each chapter revised in this iteration, diff the post-revise draft
+      against the pre-revise draft and classify each hunk:
+        - cosmetic — sentence-rhythm, paragraph joins, redundancy cuts. No
+          substance change, no reader-facing new content.
+        - presentation-reinforcement — character callbacks, sensory anchors,
+          calendar anchors, plant-establishing prose. Reader-facing but no
+          new substance axis-movement, no new declared events.
+        - substantive — new events, new axis-movement, new opposing-force
+          resolution, new character introduction, declared-fact reframe.
+      Classification is a small fork (haiku-class). Output appended to the
+      iteration log as a per-hunk table. Substantive hunks are surfaced in
+      Phase 8 summary and gate Phase 6.5 (below).
+
+    Phase 6.5 — AGGREGATE EMIT (new; fires at PASS-COHERE, before Phase 7
+    persist):
+      Walks the converged stretch end-to-end and writes/updates the rolling
+      forward-feed file at:
+        active-project/staff/showrunner/aggregate-state.md
+      Schema (sketch — full schema authored at acceptance under
+      schemas/aggregate-state.schema.md):
+        ---
+        book: b01
+        through_chapter: c07
+        last_updated: <ts>
+        last_cohere_run: <range>-<ts>
+        ---
+        # Axis state at close of c07
+        - moral_framework: rank 5 (from start 2; delta +3 across stretch)
+        - political_register: rank 4.5 (peaked c05 evening replay)
+        - ... (one line per axis)
+
+        # Open forward-hooks (promises not yet paid)
+        - hook-<id>: <description> (origin c<MM>; expected payoff c<NN>±range)
+
+        # Characters introduced through c07
+        - <slug>: reader-legibility = <high|partial|cipher>; last appearance c<MM>
+
+        # Terrain / calendar / prop state
+        - <name>: <state> as of c07 close
+
+        # Revision layer (substantive hunks promoted from Phase 4.5)
+        - <chapter>:<hunk-id>: <description> | acknowledged: <bool>
+        - ...
+
+      Fork shape: read prior aggregate (if any) + the converged stretch +
+      Phase 4.5 classifications → emit next aggregate. ~1 dispatch.
+
+    CONTRACT ON /and-substance chapter Phase 0:
+      Phase 0 reads active-project/staff/showrunner/aggregate-state.md if
+      present, in addition to handoff_in from the book chunk.
+        - On conflict: aggregate value wins, conflict logged in chapter chunk
+          metadata. Book-chunk handoff_in stays as historical prediction.
+        - On unacknowledged substantive revision-layer entries: HARD-abort
+          until principal acknowledges (stamps acknowledged: true on the
+          relevant entries).
+        - If aggregate-state.md does not exist (cohere never fired): fall
+          back to today's handoff_in-only behavior. Purely additive.
+
+    NON-GOALS (deliberate):
+      - No back-propagation to bones / facets / per-chapter chunks. The
+        aggregate IS the forward-truth; upstream artifacts remain frozen at
+        original ship state.
+      - No automatic propagation across already-shipped chapters downstream
+        of the cohere stretch. If chapters c08-c10 were already shipped
+        when /and-cohere is run on c01-c07, the aggregate update fires; the
+        already-shipped chapters are not retroactively re-cohered. Re-cohere
+        is a separate principal-invoked run.
+
+    INTERACTION WITH PROP-0030:
+      Cohere is the *check* (PROP-0030's cold-read primitive); aggregate is
+      the *feed* (this amendment). They remain complementary and
+      non-overlapping. Aggregate emit fires only at PASS-COHERE — the
+      converged state is the trustworthy emit point.
+
+    COST OF AMENDMENT: small. Phase 4.5 ≈ 1 fork per chapter touched per
+    iter; Phase 6.5 ≈ 1 fork per /and-cohere run; Phase 0 contract on
+    /and-substance chapter ≈ a read + a conflict-log line. Schema authoring
+    at acceptance. Total: still L (no commands added).
+
+  AMENDMENT 2026-05-31 (2) — per-chapter forward-thread at /and-stitch Phase 10:
+    The stretch-level amendment above closes the c01-c07-style retroactive gap.
+    Per-chapter forward-threading closes the per-chapter forward gap: each
+    chapter, as it ships, should already be reconciled against accumulated
+    past material rather than waiting for a periodic cohere run to surface
+    the misses. Adds a new terminal phase to /and-stitch.
+
+    Phase 10 — FORWARD-THREAD (new; fires only on Phase 9 PASS or
+    PASS-WITH-DEPTH-PASS-REQUIRED; on Phase 9 FAIL, skipped — failing
+    chapter routes to /and-write revise per existing flow):
+
+      Step 1 — Read accumulated past.
+        Inputs (in priority order):
+          (a) active-project/staff/showrunner/aggregate-state.md if present.
+          (b) If absent: drafts of all prior shipped chapters in this book
+              (draft/<book>-c<01..MM-1>.md). First chapter (c01) skips
+              Step 1 — Phase 10 is a no-op on first chapter except for
+              Step 4 (emit aggregate).
+
+      Step 2 — Threading-review fork.
+        Single dispatch (medium model). Brief:
+          - Read accumulated past (Step 1 inputs).
+          - Read the just-finalized current chapter draft.
+          - Identify threading needs in three classes:
+              * UNPAID-HOOK — forward-hook from prior chapter unaddressed
+                here despite the current chapter being a natural payoff
+                landing.
+              * MISSED-CALLBACK — character/place/object established prior
+                appears in current chapter but without callback that would
+                cost-free reinforce reader-legibility.
+              * STATE-DRIFT — current chapter implicitly assumes an axis
+                state that the aggregate says is different (e.g., prior
+                close had political_register at 4.5; current chapter
+                opens treating it as 3.0).
+          - For each, propose a minimal threading edit (sentence-level
+            preferred; paragraph-level only when truly required).
+          - Hard fence: edits must be bone-faithful. No new events. No new
+            axis-movement. No new declared facts. Reinforcement and
+            connective tissue only.
+        Output: ranked list of proposed threading edits (max 5 per chapter
+        by default).
+
+      Step 3 — Classify-and-apply.
+        For each proposed edit:
+          (a) Classify per the same scheme as Phase 4.5 of /and-cohere:
+              cosmetic / presentation-reinforcement / substantive.
+          (b) cosmetic + presentation-reinforcement edits: apply to
+              draft/<book>-<chapter>.md inline. Log to render-log.
+          (c) substantive edits: DO NOT APPLY at this layer. Surface as
+              parking-lot HARD items targeting either /and-substance chapter
+              <slug> revise or /and-write <slug> revise (whichever the
+              threading-review fork identifies as the appropriate seam).
+              Substantive needs at Phase 10 indicate upstream chunk
+              authoring missed the constraint; back-prop via upstream re-run,
+              not at draft layer.
+          (d) Edits the threading-review fork itself flagged as
+              uncertain-classification: held for principal acknowledge,
+              not applied.
+
+      Step 4 — Emit/update aggregate-state.md.
+        Same shape as /and-cohere Phase 6.5 emit, but scoped to "through
+        current chapter":
+          - Read prior aggregate (if any).
+          - Compose this chapter's close-state (axis ranks at chapter close,
+            new hooks introduced, characters introduced + their
+            reader-legibility, terrain/calendar/prop state).
+          - Append revision-layer entries from Step 3's
+            presentation-reinforcement edits.
+          - Write to active-project/staff/showrunner/aggregate-state.md
+            with last_updated, through_chapter = current.
+        First-chapter case (c01): emits the initial aggregate; no prior
+        to read.
+
+      Step 5 — Phase 10 verdict.
+        - PASS-THREAD (no substantive needs surfaced; cosmetic/presentation
+          edits applied) → chapter is shipped + threaded; continue cascade
+          to optional postop or exit.
+        - HOLD-THREAD (substantive needs surfaced; parking-lot HARD items
+          written) → chapter is shipped per Phase 9 verdict but flagged
+          as having unresolved upstream threading needs. /and-substance
+          chapter b<NN>c<MM+1> Phase 0 reads these as part of the
+          aggregate-state contract (existing in Amendment 1) and HARD-aborts
+          on unacknowledged entries.
+
+    CASCADE INTERACTION:
+      Cascade includes Phase 10 automatically (it's a phase of /and-stitch).
+      Under --unattended (per the cascade-unattended discipline pending
+      separately): substantive surfacings at Phase 10 do not halt the
+      cascade for this chapter (chapter is already shipped); they enter
+      the end-of-run summary as ESCALATE items for principal review before
+      next-chapter Phase 0 fires.
+
+    INTERACTION WITH /and-cohere:
+      /and-stitch Phase 10 is the per-chapter forward-feed; /and-cohere is
+      the periodic stretch-level reconciliation. Both write aggregate-state.md.
+      /and-cohere may overwrite or revise entries Phase 10 emitted —
+      cohere has the cold-read advantage of seeing a stretch as a stretch.
+      Both producers tag their entries with last_updated_by:
+      {and-stitch-phase-10 | and-cohere} so the source is traceable.
+
+    INTERACTION WITH /and-postop:
+      /and-postop is post-ship depth-of-quality and is optional. Phase 10
+      is in-chain and fires automatically on every PASS / PASS-WITH-DEPTH
+      stitch. They do not overlap.
+
+    NON-GOALS:
+      - Phase 10 does not re-render the chapter, does not run a cold-read,
+        does not re-fire Phase 9. It is a final reconciliation pass against
+        accumulated past, with a hard fence at the bone-faithfulness boundary.
+      - Phase 10 does not back-propagate to bones/facets. Substantive needs
+        surface as parking-lot items for principal-triaged upstream re-run.
+
+    COST: Phase 10 ≈ 2-3 dispatches per chapter (threading-review fork +
+    classify-and-apply fork + aggregate-emit fork; latter two can collapse).
+    Adds ~5-10% to per-chapter cost. Schema authoring for
+    aggregate-state.md is shared with Amendment 1.
+
+cost_estimate: L
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+## PROP-0032
+
+```yaml
+id: PROP-0032
+created_at: 2026-05-31T22:30:00Z
+created_by: principal-directed session (chapter-production runbook)
+trigger:
+  reason: principal directive — "I would like to say, do chapter xx, and then walk away while you churn through all the steps and iterations in order to craft chapter xx." Then narrowed: "you should have a single runbook that engages to produce a chapter, including the cohere and revision that happens after stitch."
+  source_report: RUNBOOK.md (post-amendment); CLAUDE.md Rule 18
+  source_verdict: principal-directive
+target:
+  type: runbook+rule
+  path: RUNBOOK.md § "Producing a chapter — end-to-end protocol" + CLAUDE.md Rule 18
+  section: full section + rule
+change_type: add
+rationale: |
+  The session observed repeated mid-run halts during cascade execution caused by
+  the operator (Claude) calling AskUserQuestion on prompts that should have
+  routed to admin user-proxy per Rule 13, narrating gate transitions, and
+  bailing on FAIL verdicts before exhausting documented cap-bounded retries.
+
+  Principal initially asked for a --unattended flag scattered across command
+  bodies plus an operator contract doc. Re-scoped on principal correction:
+  "you should have a single runbook." Implementation is the runbook itself,
+  not a flag — chapter production is a single canonical operation with the
+  runbook owning the discipline (R1–R5) and the chain steps owning the work.
+
+  This collapses three concerns into one document:
+    (a) the "walk-away" cascade discipline (no AskUserQuestion, drive through
+        gate FAILs, single end-of-run summary, silent mid-run);
+    (b) the per-chapter forward-thread (Phase 10 of /and-stitch from PROP-0031
+        Amendment 2) is now part of the canonical chapter-production motion;
+    (c) the aggregate-state forward-feed (PROP-0031 Amendment 1) is checked
+        at pre-flight and Phase 0 of /and-substance chapter.
+
+  Tradeoff: chapter production loses opt-in semantics — every chapter-production
+  invocation runs under R1–R5 discipline. This is the principal's stated
+  preference: they want to say "do chapter X" and walk away, not say "do
+  chapter X --unattended" and walk away.
+evidence_refs:
+  - "RUNBOOK.md § Producing a chapter — end-to-end protocol (newly authored this session)"
+  - "CLAUDE.md Rule 18 (newly added this session)"
+  - "active-project/staff/reviews/session-synthesis-report-2026-05-31.md — observed mid-run-halt failure modes"
+  - "staff/admin/process-proposals.md — PROP-0031 (per-chapter forward-thread; integrated into the chain step list)"
+recurrence_count: 1
+proposed_diff: |
+  PRIMARY CHANGE — already landed (this session):
+
+    1. RUNBOOK.md gained a full section "Producing a chapter — end-to-end
+       protocol" defining R1–R5, the pre-flight block, the chain sequence
+       (with Phase 10 of /and-stitch), and the end-of-run summary format.
+       Trigger map updated to point all "produce chapter X" / "do c<MM>" /
+       "walk away" phrasings at this protocol.
+
+    2. CLAUDE.md gained Rule 18 making the runbook protocol binding for
+       chapter-production runs. Rule 18 supersedes any command-body behavior
+       that would prompt the principal mid-run.
+
+  NON-CHANGES (deliberate):
+    - No --unattended flag on /and-substance --cascade. Cascade itself is
+      unchanged; chapter production is the runbook protocol, which uses
+      cascade as its backbone.
+    - No per-command-body modifications. The runbook owns the discipline;
+      command bodies remain authoritative on chain work.
+    - No new schema. cascade-checkpoint.md continues to exist as-is.
+
+  INTEGRATION:
+    - PROP-0031 Amendment 1 (aggregate-state at /and-substance chapter Phase 0)
+      is the pre-flight aggregate-state check + chain Phase 0 abort condition.
+    - PROP-0031 Amendment 2 (/and-stitch Phase 10) is step 6 in the chain.
+    - URI-ADMIN-PROCESS-CRITIC tail-step dispatches continue to fire as
+      documented; their outputs log silently and surface in the end-of-run
+      summary's process-critic line.
+
+cost_estimate: S
+status: implemented
+triaged_at: 2026-05-31T22:30:00Z
+triaged_by: principal-directed
+disposition_note: |
+  Implemented inline this session (RUNBOOK.md + CLAUDE.md Rule 18). No
+  separate command-body modifications required — the runbook is the
+  authoritative spec; command bodies follow on Rule 18 binding. Logged as
+  status: implemented (not open) because the diff landed at proposal time
+  per principal directive.
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0033
+
+```yaml
+id: PROP-0033
+created_at: 2026-06-01T05:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: cohere-converged-caution
+  source_report: active-project/staff/reviews/cohere-b01-c01-c07-2026-06-01T04-20-31Z.md
+  source_verdict: CAUTION-COHERE (load_bearing_fails=0; all load-bearing axes PASS)
+target:
+  type: command
+  path: .claude/commands/and-cohere.md
+  section: "Phase 6.5 — Aggregate emit; Phase 2 — Gate"
+change_type: modify
+rationale: |
+  Phase 6.5 fires only at PASS-COHERE per spec. On this first live /and-cohere
+  run, the run converged to CAUTION-COHERE with load_bearing_fails == 0 — a
+  stretch that is ship-clean on every load-bearing axis. The five CAUTIONs are
+  all non-load-bearing advisories consistent with deliberate project structural
+  choices (interior-pressure narrative shape; observation-as-control POV). The
+  state file itself identifies this as a design gap worth triage.
+
+  The consequence of the strict condition: aggregate-state.md was NOT bootstrapped
+  from this converged stretch. /and-stitch Phase 10 on c08 will fall back to
+  reading all seven prior chapter drafts directly (Step 1b fallback). That path
+  works but is higher-cost, loses the curated synthesis the Phase 6.5 aggregate
+  provides, and accumulates across every subsequent CAUTION-COHERE run.
+
+  The strict condition was reasonable as a first-cut design (emit only when
+  converged with certainty). The live evidence is that a CAUTION-COHERE run with
+  zero load-bearing fails IS a converged-with-sufficient-certainty state — the
+  CAUTIONs are advisory observations, not evidence that the stretch is
+  unreliable as a forward-feed source.
+
+  No existing gate was missed: Phase 6.5's condition is working as written. The
+  written condition is too conservative. This is change_type: modify on the
+  trigger condition in Phase 6.5 + the Phase 2 exit path.
+
+  First-occurrence proposing rationale: (a) the gap is deterministic — every
+  future CAUTION-COHERE run with zero load-bearing fails will silently skip
+  aggregate-state.md emit; (b) the state file itself diagnosed the gap at ship
+  time; (c) the fix is small (one-line condition change in Phase 6.5 + one-line
+  change in Phase 2 exit); (d) the cost of the gap compounds across every cohere
+  run that converges to CAUTION rather than PASS.
+
+  Note: --strict mode already routes CAUTION-COHERE to Phase 3 rather than
+  converging. This proposal does NOT change --strict behavior. Under --strict,
+  CAUTION-COHERE is not convergence, so Phase 6.5 does not fire. The proposed
+  change only affects the default non-strict path where CAUTION-COHERE == success.
+evidence_refs:
+  - "active-project/staff/reviews/cohere-b01-c01-c07-2026-06-01T04-20-31Z.md — verdict: CAUTION-COHERE; load_bearing_fails: 0; all load-bearing axes PASS; CAUTIONs are advisory non-load-bearing"
+  - "active-project/staff/cohere/b01-c01-c07-state.md — aggregate_emit_at: null; aggregate_emit_skipped_reason identifies the strict-condition gap; design note explicitly flags this for principal triage at Phase 7.5"
+  - ".claude/commands/and-cohere.md — Phase 6.5 trigger condition: 'Fires only at PASS-COHERE. Specifically: verdict_trace[-1].verdict == PASS-COHERE AND status: converged. Skipped on CAUTION-COHERE...'"
+  - ".claude/commands/and-cohere.md — Phase 2 gate: CAUTION-COHERE + strict == false exits to Phase 7 (skipping Phase 6.5)"
+recurrence_count: 1
+proposed_diff: |
+  PRIMARY CHANGE — .claude/commands/and-cohere.md, Phase 6.5 trigger condition:
+
+  Change the fire condition from:
+
+    Fires only at PASS-COHERE. Specifically: verdict_trace[-1].verdict == PASS-COHERE
+    AND status: converged. Skipped on CAUTION-COHERE (even under --strict...),
+    FAIL-COHERE, CAP-HIT, HELD.
+
+  To:
+
+    Fires on PASS-COHERE OR (CAUTION-COHERE with load_bearing_fails == 0).
+    Specifically:
+      - verdict_trace[-1].verdict == PASS-COHERE AND status: converged, OR
+      - verdict_trace[-1].verdict == CAUTION-COHERE AND verdict_trace[-1].load_bearing_fails == 0
+        AND flags.strict == false AND status: converged
+    Skipped on:
+      - CAUTION-COHERE with flags.strict == true (strict routes CAUTION to Phase 3;
+        convergence not declared)
+      - CAUTION-COHERE with load_bearing_fails > 0 (load-bearing axis failed; stretch
+        not reliable as forward-feed source)
+      - FAIL-COHERE (any load-bearing fail)
+      - CAP-HIT
+      - HELD
+
+  SECONDARY CHANGE — .claude/commands/and-cohere.md, Phase 2 exit path:
+
+  The Phase 2 CAUTION-COHERE + strict==false branch currently skips directly to
+  "Phase 7 + 7.5 + 8." Split this branch on load_bearing_fails:
+
+    - CAUTION-COHERE + flags.strict == false + load_bearing_fails == 0:
+        Surface CAUTION-axes + advisory parking-lot SOFT items.
+        Set status: converged, final_verdict: CAUTION-COHERE, closed_at.
+        Proceed to Phase 6.5 → Phase 7 → Phase 7.5 → Phase 8. Exit success.
+    - CAUTION-COHERE + flags.strict == false + load_bearing_fails > 0:
+        Surface CAUTION-axes + advisory parking-lot SOFT items.
+        Set status: converged, final_verdict: CAUTION-COHERE, closed_at.
+        Skip Phase 6.5. Proceed to Phase 7 → Phase 7.5 → Phase 8. Exit success.
+        (Aggregate emit skipped: a load-bearing axis failed; stretch not reliable
+        as forward-feed source.)
+
+  PHASE 6.5 SELF-TAG CHANGE:
+
+  Tag the aggregate-state.md emit entry with:
+    last_updated_by: and-cohere-pass  (for PASS-COHERE)
+    last_updated_by: and-cohere-caution  (for CAUTION-COHERE + load_bearing_fails == 0)
+  This preserves traceability for downstream consumers (/and-stitch Phase 10,
+  /and-substance chapter Phase 0) to see whether the aggregate was emitted from
+  a clean PASS or a converged-but-cautioned run.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0034
+
+```yaml
+id: PROP-0034
+created_at: 2026-06-01T05:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: cohere-converged-caution
+  source_report: active-project/staff/reviews/cohere-b01-c01-c07-2026-06-01T04-20-31Z.md
+  source_verdict: CAUTION-COHERE (dramatist-axis3-antagonist-pressure-curve + dramatist-axis4-scene-shape-distribution — both describe declared project design choices)
+target:
+  type: command
+  path: .claude/commands/and-review.md
+  section: "cohere subcommand — Phase 2 dramatist fork verdict rubric; Phase 4 aggregate"
+change_type: modify
+rationale: |
+  The dramatist fork fired CAUTION on axis3 (antagonist pressure fragmented across
+  chapters) and axis4 (scene-shape distribution narrow: interior+transaction dominant,
+  argument scenes sparse before c07). Both findings accurately describe the project's
+  structure. Both describe deliberate design choices declared at the series-level:
+  interior-pressure rather than adversary-pressure narrative; observation-as-control
+  POV architecture. The findings are accurate but not actionable — fixing them would
+  require rearchitecting the series.
+
+  The consequence: these CAUTIONs will recur on every future /and-review cohere run
+  across every sub-section of this project. They degrade the signal/noise ratio of
+  the cohere advisory record. Recurring inactionable CAUTIONs generate parking-lot
+  SOFT items that cannot be resolved, and over time cause the principal to discount
+  the cohere CAUTION signal generally — a signal-value erosion that is worse than
+  having no caution tier.
+
+  The discriminating criterion is: does the finding describe a structural feature
+  that is explicitly licensed by the project's declared series structure? If yes,
+  CAUTION is the wrong tier — CAUTION implies actionability. The correct tier is
+  ADVISORY: accurate structural description, inactionable, recorded for reference,
+  does not color the aggregate verdict.
+
+  First-occurrence proposing rationale: (a) the failure mode is deterministic —
+  it will fire on every future cohere run for this project's structural shape;
+  (b) the discriminating criterion is mechanistically precise (licensed-by-declared-
+  structure vs. departure); (c) the fix is modest and additive (a new verdict tier
+  + an optional exemption mechanism); (d) recurring inactionable CAUTIONs produce
+  signal-value erosion that is hard to reverse once established.
+
+  Note: this proposal does NOT suppress CAUTIONs that represent genuine quality
+  concerns. A finding that departs from the declared structure (e.g., Otto sustains
+  a multi-chapter adversary arc but it resolves without cost — a broken promise, not
+  a design-consistent observation) is not exempt. The exemption applies only when
+  the finding is "the project is executing its declared structural shape."
+evidence_refs:
+  - "active-project/staff/reviews/cohere-b01-c01-c07-2026-06-01T04-20-31Z.md — axis3: 'b01 reads as interior-pressure rather than adversary-pressure narrative'; axis4: 'heavily interior+transaction; ~1 action beat, ~5 interior, ~4 transaction, ~1 argument'"
+  - "active-project/staff/reviews/cohere-dramatist-b01-c01-c07-2026-06-01T04-20-31Z.md — axis3 CAUTION + axis4 CAUTION; load-bearing fail: false"
+  - "active-project/staff/showrunner/memory.md — series structural choices: interior-pressure + observation-as-control POV architecture, established at /and-cast series audit"
+  - "active-project/staff/reviews/cohere-b01-c01-c07-2026-06-01T04-20-31Z.md — comparison to 2026-05-31 manual convergence: 'all consistent with the project's known structural shape (interior-pressure rather than adversary-pressure narrative)'"
+recurrence_count: 1
+proposed_diff: |
+  PRIMARY CHANGE — /and-review cohere, dramatist fork verdict rubric:
+
+  Add an ADVISORY verdict tier to the dramatist fork. Full verdict ladder for the
+  dramatist fork:
+
+    ACCEPT   — structural feature present and functioning as designed. No concern.
+    ADVISORY — structural feature accurately described; is a declared design choice
+               for this project (licensed by the series structural declaration).
+               Inactionable as a quality signal. Does NOT roll into the cohere
+               aggregate verdict. Does NOT generate parking-lot items. Surfaced in
+               the report under a dedicated `advisory_notes:` section.
+    CAUTION  — structural concern that is actionable (addressable via chapter revise
+               or upstream chunk revision). Rolls into aggregate → CAUTION-COHERE.
+    FAIL     — structural failure on a load-bearing axis. Rolls into aggregate →
+               FAIL-COHERE. Generates revise queue.
+
+  SECONDARY CHANGE — /and-review cohere, Phase 4 aggregate aggregation rule:
+
+  Update Phase 4 to read dramatist fork verdicts as:
+    ACCEPT + ADVISORY → PASS contribution (same as ACCEPT; ADVISORY does not raise
+                         the aggregate verdict)
+    CAUTION            → contributes to CAUTION-COHERE
+    FAIL               → contributes to FAIL-COHERE
+
+  ADVISORY entries are collected and surfaced in the combined report under an
+  `advisory_notes:` section at the bottom, separate from `caution_axes`. They do
+  not appear in the `caution_axes:` frontmatter field and do not feed parking-lot
+  item authoring.
+
+  TERTIARY CHANGE — optional project-level structural exemption mechanism:
+
+  Add an optional `cohere_structural_exemptions` block to showrunner memory (or to a
+  per-project cohere rubric file at `active-project/staff/cohere/rubric.md` —
+  principal's choice of home):
+
+    cohere_structural_exemptions:
+      - axis: dramatist-axis3-antagonist-pressure-curve
+        licensed_by: |
+          Series structure: interior-pressure narrative; observation-as-control POV.
+          Adversary-pressure arc is not the project spine. Otto and other antagonists
+          are episodic by design. Established at /and-cast series audit.
+        verdict_floor: ADVISORY
+      - axis: dramatist-axis4-scene-shape-distribution
+        licensed_by: |
+          Series structure: interior+transaction dominant; argument scenes sparse.
+          POV narrator observes and negotiates rather than confronts. Established
+          at /and-cast series audit.
+        verdict_floor: ADVISORY
+
+  When the dramatist fork's dispatch brief includes this block, it applies the
+  exemption check per finding:
+    - Finding maps to an exempt axis AND is consistent with the licensed_by
+      description → emit as ADVISORY.
+    - Finding maps to an exempt axis BUT departs from the licensed_by description
+      (e.g., an adversary arc that started and then fragmented without resolution,
+      creating an unresolved promise) → exemption does not apply; classify as
+      CAUTION or FAIL per standard criteria.
+    - Finding does not map to an exempt axis → standard criteria.
+
+  The dramatist fork is responsible for applying the exemption check. It cannot
+  be pre-computed because the finding's content (consistent vs. departure) is
+  what determines eligibility.
+
+  RUBRIC CHANGE — /and-review cohere dramatist dispatch brief:
+
+  Add the following paragraph to the dramatist fork's dispatch brief (the instructions
+  the dramatist fork receives when invoked by /and-review cohere):
+
+    "Before writing CAUTION on any axis: check whether the finding accurately
+     describes a structural feature explicitly licensed in this project's declared
+     series structure (from the cohere_structural_exemptions block if present in
+     showrunner memory, or from the substance signature's declared structural choices).
+     If the finding is an accurate description of a licensed structural feature —
+     and NOT a departure from it — classify as ADVISORY rather than CAUTION. ADVISORY
+     findings are accurate observations; they are recorded for reference but do not
+     indicate a quality concern. A finding that describes a departure from a licensed
+     feature is not exempt and must be classified CAUTION or FAIL as warranted."
+
+  OPEN QUESTION FOR PRINCIPAL:
+
+  Should `cohere_structural_exemptions` live in showrunner memory or in a dedicated
+  `active-project/staff/cohere/rubric.md`? Showrunner memory is already read at Phase 0
+  of every cohere-adjacent command. A dedicated rubric file is more explicitly scoped
+  and would age well if per-book structural choices differ (e.g., a later book shifts to
+  adversary-pressure shape — the exemption would not apply and must be per-book). If
+  the series structural choices are constant across all books, showrunner memory is the
+  lower-infrastructure home.
 
 cost_estimate: S
 status: open

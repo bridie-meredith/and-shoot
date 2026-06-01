@@ -46,7 +46,47 @@ Re-runnable per `design/substance/rerun-protocol.md`. Cascade-aware per `design/
    - Output populated + mode arg omitted → prompt `revise` / `add` / `redo`.
 4. Cascade warning per staleness-cascade rules. Default surfacing is `mark-stale`.
 5. **Parking-lot scan (Rule 14).** Read `active-project/staff/showrunner/parking-lot.md`. Items matching this invocation (`target.command: /and-substance` + `target.scope` matches the current invocation level + slug exact or `*` wildcard + `status: open`): HARD → abort unless this run's resolving phase completes the item; SOFT → carry to Phase 7 summary. Resolving phase stamps `resolved_at` + `resolved_by` + `resolution_note`; never delete.
-6. Run.
+6. **Phase 0 Step — Aggregate-state read (URI-AGGREGATE-READ; PROP-0031 Amendment 1).** *Fires ONLY at the `chapter b<NN>c<MM>` invocation level.* Skip for `series` and `book b<NN>` invocations.
+
+   Rationale: under PROP-0031, `/and-stitch` Phase 10 + `/and-cohere` Phase 6.5 maintain `active-project/staff/showrunner/aggregate-state.md` as the rolling close-state of every shipped chapter. The next chapter's substance contract must read from this aggregate (not just `handoff_in`, which is a book-author *prediction* and may be stale relative to what actually shipped). Substantive revision-layer entries left unacknowledged represent post-ship drift the principal hasn't reconciled — authoring the next chapter on top of unreconciled drift would compound the divergence, so Phase 0 HARD-aborts.
+
+   Steps:
+
+   a. Read `active-project/staff/showrunner/aggregate-state.md`.
+      - **File absent:** log `aggregate-state: ABSENT (falling back to handoff_in only)` and continue to step 6f. No abort. (Expected for the first chapter of the project, or projects predating PROP-0031.)
+      - **File present:** parse per `schemas/aggregate-state.schema.md`. Continue to step 6b.
+
+   b. Cross-reference aggregate-state against the chapter's `handoff_in`. Source of `handoff_in`: `books[b<NN>].chapters[b<NN>c<MM>].handoff_in` (authored at `/and-substance book` Phase 3; for `b<NN>c01` this is the book-open prediction, for later chapters it derives from `chapters[b<NN>c<MM-1>].handoff_out`).
+
+   c. For each axis declared in BOTH `handoff_in` (via its `character_state` / `world_state` / `open_threads` declarations that map to axis-slugs) AND `aggregate_state.axis_state[]`: if values disagree, **AGGREGATE WINS**. Append a conflict log entry to `chapters[b<NN>c<MM>].handoff_conflicts[]` in showrunner memory (append-only; never overwrite or delete prior entries). Conflict entry shape:
+      ```yaml
+      - detected_at: <ISO timestamp>
+        axis: <axis-slug>
+        handoff_in_value: <number>
+        aggregate_value: <number>
+        resolution: aggregate-wins
+      ```
+      Apply the same conflict-log shape (with `field:` replacing `axis:` where appropriate) for disagreements on `open_hooks`, `characters`, `world_state` if `handoff_in` declares any.
+
+   d. Scan `aggregate_state.revision_layer[]` for entries where `class: substantive` AND `acknowledged: false`. If ANY such entries exist, **HARD-ABORT**:
+      ```
+      /and-substance chapter b<NN>c<MM> Phase 0 abort: aggregate-state.md has unacknowledged substantive revision-layer entries:
+        - rev-<id>: <hunk_summary> (chapter <slug>, applied by <producer>)
+        - ...
+      Resolve by either:
+        (a) Principal-acknowledge each entry: edit aggregate-state.md and set acknowledged: true + acknowledged_at: <ISO> on each.
+        (b) Re-run upstream commands per the entry's apparent need (typically /and-write <chapter> revise or /and-substance chapter <slug> revise) to back-propagate the substantive change into bones/chunks.
+      ```
+      Once all substantive entries carry `acknowledged: true`, re-invoke Phase 0; this step proceeds.
+
+   e. (Reached when file present AND no unacknowledged substantive entries.) Continue.
+
+   f. Log to the Phase 0 print block:
+      - `aggregate-state: PRESENT, through_chapter=<slug>, last_updated_by=<producer>, last_updated=<ts>` (or `aggregate-state: ABSENT (falling back to handoff_in only)` per step 6a).
+      - `handoff_conflicts: <count> (aggregate prevailed on all)` — emit only if count > 0.
+      - `revision_layer: <N> presentation-reinforcement entries, <M> substantive entries (all acknowledged)` — emit only when file present.
+
+7. Run.
 
 ### Phase 1 — Read parent
 
