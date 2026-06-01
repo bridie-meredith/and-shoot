@@ -974,6 +974,160 @@ On clean PASS with no clusters: skip the dispatch.
 
 ---
 
+## Phase 10 — FORWARD-THREAD (URI-STITCH-PHASE-10-FORWARD-THREAD; PROP-0031 Amendment 2; 2026-05-31)
+
+**Why this exists.** Each chapter ships through Phase 9 individually but may underuse, contradict, or fail to thread accumulated past material — forward-hooks filed in prior chapters that this chapter is the natural payoff landing for, established characters/places/objects that appear here without a callback that would cost-free reinforce reader-legibility, and axis-state continuity that the just-finalized draft implicitly assumes inconsistently with where the prior chapter actually closed. The polish-deferred chain replaced back-propagation with forward-feed (per `staff/admin/process-proposals.md` PROP-0031). Phase 10 is the per-chapter forward-feed pass — reconciles the just-shipped chapter against the accumulated past **within the bone-faithfulness fence** (no new events, no new substance; reinforcement and connective tissue only) and emits/updates the project's `aggregate-state.md` so downstream `/and-substance chapter` Phase 0 reads truth, not prediction.
+
+**Trigger.** Fires only on Phase 9 verdict `PASS` or `PASS-WITH-DEPTH-PASS-REQUIRED`. On Phase 9 `FAIL`, Phase 10 is **skipped** — the failing chapter routes to `/and-write revise` per Phase 9's existing flow; no aggregate write happens until the chapter re-passes the terminal gate.
+
+**Schema authority.** Read `schemas/aggregate-state.schema.md` before authoring or updating the file. The schema defines `axis_state[]` / `open_hooks[]` / `characters[]` / `world_state[]` / `revision_layer[]` / `conflict_log[]` / `books[]` shape, the `cosmetic` / `presentation-reinforcement` / `substantive` classification, the validation rules, and the conflict-resolution policy with `/and-cohere`.
+
+### Step 1 — Read accumulated past
+
+Priority order:
+- **(a) Aggregate-state primary.** If `active-project/staff/showrunner/aggregate-state.md` exists, read it. This is the canonical past — through `through_chapter`, including `axis_state[]`, `open_hooks[]` with `status: open`, `characters[]`, `world_state[]`, and any `revision_layer[]` entries the present chapter should treat as established.
+- **(b) Drafts fallback.** If `aggregate-state.md` does not exist (pre-c01 state, or no chapter has been threaded yet): read drafts of all prior shipped chapters in this book — `active-project/draft/<book>-c01.md` through `<book>-c<MM-1>.md` (where `<MM>` is the current chapter's index). These are read directly for the threading-review fork's context.
+- **(c) First-chapter case (`c01`).** Step 1 is a no-op (no past exists). Phase 10 still runs **Step 4** to emit the initial `aggregate-state.md`. Steps 2 + 3 are also no-ops on `c01` (no past = no threading needs to identify).
+
+### Step 2 — Threading-review fork
+
+Single dispatch (medium model, `claude` `general-purpose` agent — comparable spend to Phase 8.5's coherence review). Brief contents:
+
+- **Inputs:**
+  - The accumulated past from Step 1 (either `aggregate-state.md` content, or the concatenated prior drafts in the `(b)` fallback path).
+  - The just-finalized current chapter draft at `active-project/draft/<book>-<chapter>.md`.
+- **Task:** identify threading needs in three classes:
+  - **UNPAID-HOOK** — a forward-hook from a prior chapter (per `aggregate_state.open_hooks[]` with `status: open`, or inferred from prior drafts when aggregate is absent) is unaddressed here despite the current chapter being a natural payoff landing.
+  - **MISSED-CALLBACK** — a character / place / object established in a prior chapter appears in the current chapter without a callback that would cost-free reinforce reader-legibility (e.g., a recurring fixture corner appears unnamed; a previously-introduced ward appears un-referenced to her prior frame).
+  - **STATE-DRIFT** — the current chapter implicitly assumes an axis state inconsistent with `aggregate_state.axis_state[]` (e.g., prior close had `political_register: 4.5` but the current chapter opens treating it as `3.0`).
+- For each threading need: propose a **minimal threading edit**. Sentence-level preferred. Paragraph-level only when truly required to land the callback / re-establish state.
+- **HARD FENCE: edits must be bone-faithful.** No new events. No new axis-movement. No new declared facts. Reinforcement and connective tissue only. Substantive needs do not become edits here — they surface as parking-lot items at Step 3c.
+- **Output:** ranked list (max 5 per chapter by default; if the fork finds more genuine needs, list the top 5 and mention the residual count in a `tail_count_unsurfaced` field) with shape:
+  ```yaml
+  - finding_class: UNPAID-HOOK | MISSED-CALLBACK | STATE-DRIFT
+    description: <string>
+    proposed_edit:
+      location: <line-range or paragraph anchor in the current draft>
+      before: <existing text>
+      after: <proposed text>
+    rationale: <one sentence>
+  ```
+
+Persist the fork's full return to `active-project/staff/reviews/forward-thread-<book>-<chapter>-<timestamp>.md`.
+
+### Step 3 — Classify-and-apply
+
+For each proposed edit returned by Step 2:
+
+- **(a) Classify** per the same three-class scheme used at PROP-0031 Amendment 1 (Phase 4.5 of `/and-cohere`). Definitions in `schemas/aggregate-state.schema.md` § "Substantive vs presentation-reinforcement classification":
+  - `cosmetic` — sentence-rhythm, paragraph joins, redundancy cuts. No reader-facing new content.
+  - `presentation-reinforcement` — character callbacks, sensory anchors, calendar anchors, plant-establishing prose that reinforces but does not add substance. Reader-facing but no new axis-movement, no new declared events.
+  - `substantive` — new events, new axis-movement, new opposing-force resolution, new character introduction, declared-fact reframe.
+  Use a small classifier dispatch (haiku-class if available, otherwise inline judgment in the same Step 2 fork by adding a `classification: cosmetic | presentation-reinforcement | substantive | uncertain` field to each list item).
+
+- **(b) Apply `cosmetic` + `presentation-reinforcement` edits directly** to `active-project/draft/<book>-<chapter>.md` via the Edit tool. Log each applied edit to the existing render-log at `active-project/staff/stitcher/render-log-<book>-<chapter>.md` under a new appended section:
+  ```
+  ## Phase 10 — Forward-thread edits
+
+  - entry_id: rev-<NNNN>
+    finding_class: UNPAID-HOOK | MISSED-CALLBACK | STATE-DRIFT
+    classification: cosmetic | presentation-reinforcement
+    location: <line-range>
+    before: <existing text>
+    after: <applied text>
+    rationale: <one sentence>
+    applied_at: <iso-timestamp>
+  ```
+
+- **(c) DO NOT APPLY `substantive` edits.** Surface each as a parking-lot HARD item at `active-project/staff/showrunner/parking-lot.md` per `schemas/parking-lot.schema.md`. Item shape:
+  - `id`: `pl-<date>-stitch-thread-<NNN>`
+  - `target.command`: `/and-write <chapter-slug> revise` or `/and-substance chapter <chapter-slug> revise` — whichever the Step 2 fork identifies as the right seam (bone-level substantive need → `/and-write`; chunk-level substantive need → `/and-substance chapter`).
+  - `target.scope`: the current chapter slug.
+  - `target.phase`: `null`.
+  - `severity`: `HARD`.
+  - `body`: summarize the substantive threading need + the Step 2 fork's proposed edit text (as evidence, not as a directive — the upstream re-run authors the real fix).
+  - `surfaced_by`: `/and-stitch <book>-<chapter> phase-10`.
+  - `surfaced_at`: `<iso-timestamp>`.
+
+- **(d) Uncertain-classification edits** (the Step 2 fork's `classification: uncertain` items): **held for principal acknowledge**. Do not apply. Do not write to parking-lot. Surface in the Phase 10 verdict block under `uncertain_edits[]` for visibility; the principal resolves them out-of-band (typically by either confirming a classification and re-running Phase 10, or by directing them upstream).
+
+### Step 4 — Emit / update `aggregate-state.md`
+
+Single dispatch (`claude` `general-purpose` agent) with READ-ONLY access to:
+- `schemas/aggregate-state.schema.md` (authority).
+- The prior `active-project/staff/showrunner/aggregate-state.md` (if present).
+- `active-project/draft/<book>-<chapter>.md` (the just-finalized + Step 3b-applied draft).
+- `active-project/staff/showrunner/memory.md` — `series.substance.state_axes[]` for axis enumeration; `chapters[<slug>].scenes[].bones[].substance_delta` for this chapter's declared per-axis movement; `chapters[<slug>].goal` + `scene_conflict` for hook resolution + introductions.
+- Step 3's classification table (full list, including `substantive` items surfaced to parking-lot).
+
+**Task:** emit or update `active-project/staff/showrunner/aggregate-state.md` per the schema. Specifically:
+
+- **First chapter (`c01`)**: create the file. Populate:
+  - `version: 1`, `project: <slug>`, `through_book: <book>`, `through_chapter: <chapter-slug>`, `last_updated: <iso>`, `last_updated_by: and-stitch-phase-10`.
+  - `axis_state[]` — one entry per axis in `series.substance.state_axes[]`. Set `start_rank` from series; set `rank` to where this chapter actually closes the axis (from accumulated `substance_delta` movement); compute `delta_since_start`; set `last_movement_at` to `<chapter-slug>` if this chapter moved the axis (else null).
+  - `open_hooks[]` — any hook introduced this chapter that is not paid within it.
+  - `characters[]` — every character introduced this chapter, with `introduced_at: <chapter-slug>`, `last_appearance: <chapter-slug>`, `reader_legibility` derived from how the chapter introduced them.
+  - `world_state[]` — terrain / location / prop / calendar entries the chapter established.
+  - `revision_layer[]` — one entry per Step 3b `presentation-reinforcement` edit applied (with `acknowledged: true`, `class: presentation-reinforcement`, `applied_by: and-stitch-phase-10`, `target_consumer_chapter: <next-chapter-slug>` when the entry's purpose is to inform a specific next chapter, else `null`). `cosmetic` edits are NOT logged to `revision_layer[]` (per schema § classification).
+  - `conflict_log[]: []` (empty on first emit).
+  - `books[]: []` (empty until a book transition occurs).
+
+- **Subsequent chapters**: read the existing file, then update:
+  - Advance `through_chapter` to the current chapter slug; update `last_updated` + `last_updated_by: and-stitch-phase-10`.
+  - **`axis_state[]`** — for axes this chapter moved, update `rank`, `delta_since_start`, `last_movement_at`, `last_updated_by: and-stitch-phase-10`. For axes this chapter held, leave entries unchanged except for `last_updated_by` if a revision-layer entry on that axis fired.
+  - **`open_hooks[]`** — append any new hooks this chapter introduced (`status: open`). Mark any prior `status: open` hooks that this chapter actually paid as `status: paid` + `paid_at: <chapter-slug>`. Mark any hooks the chapter formally abandoned (rare; usually a substantive-class call that would route to parking-lot first) as `status: abandoned` + `abandoned_at` + `abandonment_reason`.
+  - **`characters[]`** — append new characters introduced this chapter. For prior characters who appeared in this chapter, update `last_appearance: <chapter-slug>` and `reader_legibility` / `legibility_notes` if the appearance materially shifted reader legibility (typical: `partial` → `high` after a callback edit applied at Step 3b).
+  - **`world_state[]`** — append new entries; update existing entries whose `state` materially changed (with `last_changed_at: <chapter-slug>`).
+  - **`revision_layer[]`** — append entries for each Step 3b `presentation-reinforcement` edit (`acknowledged: true`, auto). Substantive-class edits surfaced to parking-lot at Step 3c MAY ALSO be logged here with `class: substantive` + `acknowledged: false` if the producer judgment is that the principal benefits from seeing them when reading the aggregate — but **err toward "substantive surfaces via parking-lot only"** unless the threading-review fork explicitly flagged the need for aggregate visibility (e.g., a substantive need that will inform multiple downstream chapters, not just the next re-run target). Per schema validation rule §7 + §13(consumer): an `acknowledged: false` substantive entry will HARD-abort the next chapter's `/and-substance chapter` Phase 0 until the principal stamps `acknowledged: true`.
+  - **`books[]`** — if this chapter closes the book (resolve via `chapters[<slug>].is_book_close` or by being the last chapter in `books[<book>].chapters[]`): append a `books[]` entry archiving `axis_state_at_close` + `open_hooks_at_close`. The active `axis_state[]` etc. continues to roll forward into the next book; the archive is the historical record.
+  - **Tag every new or updated entry with `last_updated_by: and-stitch-phase-10`.**
+
+**Conflict handling.** If the prior `aggregate-state.md` was last written by `/and-cohere` and contains entries this chapter's draft contradicts on a presentation-reinforcement axis, the cohere entry wins per schema § conflict resolution ("Cohere overrides stitch-Phase-10" — cohere has cold-read advantage over a stretch). Log a `conflict_log[]` entry with `conflict_type: stitch-phase-10-vs-prior-cohere`, `resolution: cohere-wins`, and **do not overwrite** the cohere entry. The Step 3b applied edits that depend on the contradicted state are the threading-review fork's responsibility to have avoided; if one slipped through, it ships in the draft and the conflict is visible.
+
+Write the updated file. Validate against schema § Validation rules (especially: `through_chapter` advances monotonically; every `axis_state[].axis` exists in `series.substance.state_axes[]`; every `open_hooks[].introduced_at` ≤ `through_chapter`; etc.). If validation fails, halt Phase 10 with `FAULT-AGGREGATE-STATE-INVALID` + the specific rule violated.
+
+### Step 5 — Phase 10 verdict
+
+Two outcomes:
+
+- **PASS-THREAD** — no `substantive` parking-lot items written at Step 3c; `cosmetic` + `presentation-reinforcement` edits applied at Step 3b; `aggregate-state.md` written/updated at Step 4. The chapter is shipped **and** threaded. Print:
+  ```
+  /and-stitch Phase 10 PASS-THREAD — <chapter> threaded against accumulated past.
+  Edits applied: <N cosmetic + M presentation-reinforcement>
+  Parking-lot items written: 0
+  Aggregate-state: <created | updated>; through_chapter = <chapter-slug>
+  next: <optional /and-postop <chapter> | exit cascade>
+  ```
+
+- **HOLD-THREAD** — at least one `substantive` parking-lot HARD item was written at Step 3c. The chapter is shipped per the Phase 9 verdict — Phase 10 does NOT un-ship a chapter — but is flagged with unresolved upstream threading needs. The next chapter's `/and-substance chapter` Phase 0 will HARD-abort on the unacknowledged substantive entries (per the aggregate-state contract that Amendment 1 added to `/and-substance chapter` Phase 0). Print:
+  ```
+  /and-stitch Phase 10 HOLD-THREAD — <chapter> ships per Phase 9 but threading-substantive items surfaced upstream.
+  Edits applied: <N cosmetic + M presentation-reinforcement>
+  Parking-lot items written: <K substantive HARD>
+  Items: [pl-<date>-stitch-thread-<NNN>, ...]
+  Aggregate-state: <created | updated>; through_chapter = <chapter-slug>
+  next: resolve parking-lot items via <named target.command> before /and-substance chapter <next-chapter>
+  ```
+
+Also surface `uncertain_edits[]` (Step 3d) in either verdict block when non-empty:
+```
+uncertain_edits (held for principal acknowledge):
+- <description> — location: <anchor>; proposed: <after text>; reason flagged uncertain: <one line>
+```
+
+### Cascade interaction
+
+Phase 10 runs automatically as part of `/and-stitch` in the cascade. Halts the cascade **only on hard error** — e.g., `aggregate-state.md` unwritable, Step 4 validation failure (`FAULT-AGGREGATE-STATE-INVALID`), or a Step 2 fork returning malformed output that cannot be parsed into the classify-and-apply pipeline. A **HOLD-THREAD** verdict does **NOT** halt the cascade — the chapter is shipped, and the gate on the next chapter is downstream `/and-substance chapter` Phase 0's job. The cascade exit checkpoint surfaces `pending_threading_holds: [<chapter>, ...]` alongside `pending_depth_passes: [...]` so the principal sees both kinds of upstream-feedback items at the cascade tail.
+
+### Non-goals (deliberate)
+
+- Phase 10 does **NOT** re-render the chapter. No re-cold-read. No re-fire of Phase 9. It is a final reconciliation pass against the accumulated past with a hard fence at bone-faithfulness.
+- Phase 10 does **NOT** back-propagate to bones or facets. Substantive needs surface as parking-lot items only — the upstream re-run is the authoring channel, not Phase 10 itself. (This is the explicit forward-feed pattern PROP-0031 chose over back-prop.)
+- Phase 10 does **NOT** modify the Phase 9 verdict. PASS stays PASS; PASS-WITH-DEPTH-PASS-REQUIRED stays PASS-WITH-DEPTH-PASS-REQUIRED. HOLD-THREAD is a Phase 10-specific outcome layered on top, surfaced via parking-lot + aggregate-state, not via mutation of the cold-read block.
+- Phase 10 does **NOT** run on Phase 9 `FAIL` — the failing chapter has not earned a terminal draft, so there is no shipped close-state to thread.
+
+---
+
 ## Re-stitch on feedback
 
 If `staff/stitcher/feedback-<slug>.md` was read at Phase 0 with new line-level directives or PROMOTED pattern-level entries, the run proceeds as a re-stitch:
@@ -990,7 +1144,7 @@ If `staff/stitcher/feedback-<slug>.md` was read at Phase 0 with new line-level d
 
 ## Exit conditions
 
-- **Success**: Phase 8 STATS + RECONCILE emitted; clean + annotated polish files present; render-log finalized; Phase 9 cold-read returned PASS or PASS-WITH-DEPTH-PASS-REQUIRED; `chapters[].cold_read` recorded with `signal_clusters[]`; showrunner memory updated. PASS-WITH-DEPTH-PASS-REQUIRED ships terminal but flags the chapter for `/and-write revise --from-signals` before project-stable.
+- **Success**: Phase 8 STATS + RECONCILE emitted; clean + annotated polish files present; render-log finalized; Phase 9 cold-read returned PASS or PASS-WITH-DEPTH-PASS-REQUIRED; `chapters[].cold_read` recorded with `signal_clusters[]`; showrunner memory updated; **Phase 10 forward-thread ran and returned PASS-THREAD or HOLD-THREAD, with `aggregate-state.md` written/updated and any presentation-reinforcement edits applied + substantive needs surfaced as parking-lot HARD items** (URI-STITCH-PHASE-10-FORWARD-THREAD; PROP-0031 Amendment 2). PASS-WITH-DEPTH-PASS-REQUIRED ships terminal but flags the chapter for `/and-write revise --from-signals` before project-stable. HOLD-THREAD ships terminal but gates the next chapter's `/and-substance chapter` Phase 0 via aggregate-state's unacknowledged-substantive contract.
 - **Phase 9 cold-read FAIL**: the assembled chapter failed the terminal gate — the cold reader could not recover the chapter's central event / jeopardy, or would not continue. Not a stitch defect; a decomposition defect. Route to `/and-write <chapter> revise` and re-cascade. In a `--cascade` run, halts the cascade.
 - **Phase 8 fault**: `FAULT-RECONCILE-MISSING` — the render-log's `RECONCILE` line is absent or does not balance. Re-run the Phase 8 reconciliation.
 - **Phase 0 abort**: missing inputs (proto-lines, cite-index, profile). Print the missing-input path and exit.

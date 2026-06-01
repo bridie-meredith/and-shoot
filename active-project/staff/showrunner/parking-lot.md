@@ -1289,3 +1289,122 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-01-cohere-001
+      created_at: 2026-06-01T04:20:31Z
+      created_by: "/and-review cohere b01 c01-c07 (Fork A naive Q5)"
+      target:
+        command: /and-write
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        Sensory texture distribution thins through c02 and c04 middles per
+        naive Q5. Strong at openings/thresholds; weak through long observation
+        stretches. Advisory only — for future chapter authoring (c08+),
+        consider scattering one or two concrete sensory anchors mid-scene
+        when the protagonist's interior accounting runs >300 words without
+        a physical/sensory beat. Routes to /and-write via grounding-ledger
+        line items at /and-facets Phase 2.5 (existing PROP-0022 channel).
+      context_refs:
+        - active-project/staff/reviews/cohere-naive-b01-c01-c07-2026-06-01T04-20-31Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-01-cohere-002
+      created_at: 2026-06-01T04:20:31Z
+      created_by: "/and-review cohere b01 c01-c07 (Fork A naive Q6 — load-bearing CAUTION)"
+      target:
+        command: /and-write
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        Apparatus-register cumulative load strained but did not break. c06/c07
+        actively dramatize the cost of the register, which is what kept the
+        reader engaged through the densest passages. For c08+: continue the
+        c06/c07 pattern of dramatizing the register-cost when register density
+        exceeds the per-scene band; do not let dense-register passages run
+        without an interior-cost-of-the-register beat. Advisory — load-bearing
+        Q6 CAUTION is closer to the FAIL band than other axes, so this item
+        carries higher priority than the other cohere-soft items.
+      context_refs:
+        - active-project/staff/reviews/cohere-naive-b01-c01-c07-2026-06-01T04-20-31Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-01-cohere-003
+      created_at: 2026-06-01T04:20:31Z
+      created_by: "/and-review cohere b01 c01-c07 (Fork B dramatist axis3)"
+      target:
+        command: /and-substance
+        scope: "chapter b01c08-b01c<MM>"
+        phase: null
+      severity: SOFT
+      description: |
+        Antagonist pressure fragments between transaction points (C03/C04/C06
+        Otto spikes; intervals carry structural-not-agentive pressure). b01
+        reads as interior-pressure narrative; Otto is episodic demand-escalator,
+        not continuous pressure. For c08+: consider whether a between-transaction
+        agentive antagonist beat (Otto courier intercept; subordinate visit;
+        formal-channel demand outside the schedule) would sharpen the
+        antagonist curve without breaking the interior-pressure mode. Advisory.
+      context_refs:
+        - active-project/staff/reviews/cohere-dramatist-b01-c01-c07-2026-06-01T04-20-31Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-01-cohere-004
+      created_at: 2026-06-01T04:20:31Z
+      created_by: "/and-review cohere b01 c01-c07 (Fork B dramatist axis4)"
+      target:
+        command: /and-substance
+        scope: "chapter b01c08-b01c<MM>"
+        phase: null
+      severity: SOFT
+      description: |
+        Scene-shape distribution narrow: ~1 action / ~5 interior / ~4 transaction
+        / ~1 argument (c07) across seven chapters. C07 argument carried full
+        weight of being the first opposition voice in the stretch. For c08+:
+        consider whether a contested-argument scene before next argument-fall
+        would distribute argument-load across the book rather than concentrating
+        it. Advisory — interior-dominance is consistent with POV architecture
+        (first-person observation-as-control).
+      context_refs:
+        - active-project/staff/reviews/cohere-dramatist-b01-c01-c07-2026-06-01T04-20-31Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-01-cohere-005
+      created_at: 2026-06-01T04:20:31Z
+      created_by: "/and-review cohere b01 c01-c07 (Fork C audience dark-fantasy-reader axis2)"
+      target:
+        command: /and-substance
+        scope: "chapter b01c08-b01c<MM>"
+        phase: null
+      severity: SOFT
+      description: |
+        Audience threshold discipline cumulative — two soft flags:
+        (a) the insect-instrument never operationally fails the protagonist
+        across seven chapters — cost is named but capability is unbroken;
+        instrument as undefeated apparatus risks reading as plot armor by mid-book;
+        (b) no contesting force until c07 — Jarvis/Otto channel accepts terms;
+        world has been *available* rather than *pressing*. For c08+: an
+        operational instrument-failure (a count that gets a fact wrong; a
+        sensory gap the apparatus cannot bridge) AND/OR a pressing-world beat
+        (a Black-side ward elder or Halvard-aligned figure who actively resists)
+        would address both flags. Advisory.
+      context_refs:
+        - active-project/staff/reviews/cohere-audience-dark-fantasy-reader-b01-c01-c07-2026-06-01T04-20-31Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

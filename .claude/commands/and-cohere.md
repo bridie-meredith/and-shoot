@@ -129,6 +129,62 @@ Per-chapter outcome stamps to state file `revise_queue[].result`:
 
 ---
 
+## Phase 4.5 — Revision classification (PROP-0031 Amendment 1)
+
+Per PROP-0031 Amendment 1, every re-cascaded chapter's draft delta is classified per-hunk into `cosmetic` / `presentation-reinforcement` / `substantive`. The classification feeds Phase 6.5 aggregate-emit (presentation-reinforcement entries land in `revision_layer[]` auto-acknowledged; substantive entries land with `acknowledged: false` and surface to Phase 8) and gives the iteration log a content-typed view of what the cohere loop actually moved on draft.
+
+**Non-blocking.** Substantive classification does NOT halt the iteration. It is recorded for downstream (Phase 6.5 + Phase 8) consumption.
+
+**Fires only on chapters with `revise_queue[].result: PASS` in this iteration.** HELD / FAIL chapters do not emit a post-revise draft worth diffing.
+
+**Snapshot mechanism.** At the START of Phase 4 (before any chapter dispatches), this command takes an in-iteration snapshot of `active-project/draft/<book>-<chapter>.md` for every chapter in the revise queue and writes them to `active-project/staff/cohere/<book>-<range>-<invocation-ts>/snapshots/iter-<N>/<book>-<chapter>.pre.md`. Phase 4.5 diffs the post-revise on-disk draft against this snapshot (`diff -u`). Rationale: in-iteration snapshots are deterministic and do not depend on git-commit cadence; a session that hasn't committed mid-iteration still gets a valid diff base.
+
+For each chapter with `result: PASS` in this iteration:
+
+1. **Compute the diff.** `diff -u <snapshot-path> active-project/draft/<book>-<chapter>.md`. Empty diff (no draft change despite re-cascade) is recorded with `hunks: []` and skipped to next chapter.
+2. **Dispatch the classifier fork.** One dispatch per chapter (haiku-class model preferred for cost):
+   - `subagent_type: claude` (or the chain's existing classifier-fork agent if available)
+   - prompt carries:
+     - The unified diff content.
+     - The three class definitions verbatim:
+       - `cosmetic`: sentence-rhythm, paragraph joins, redundancy cuts. No substance change.
+       - `presentation-reinforcement`: character callbacks, sensory anchors, calendar anchors, plant-establishing prose. Reader-facing but no new axis-movement, no new declared events.
+       - `substantive`: new events, new axis-movement, new opposing-force resolution, new character introduction, declared-fact reframe.
+     - JSON-output schema:
+       ```json
+       {
+         "chapter": "<slug>",
+         "hunks": [
+           {
+             "hunk_id": <int>,
+             "summary": "<one-line description>",
+             "class": "cosmetic | presentation-reinforcement | substantive",
+             "file_location": "<path:line-range>"
+           }
+         ]
+       }
+       ```
+3. **Append to iteration log.** Same log file Phase 7 writes (`active-project/staff/cohere/<book>-<range>-<invocation-ts>/iteration-log.md`). Append the block (one block per iteration; per_chapter[] aggregated across all classified chapters in the iteration):
+
+   ```yaml
+   revision_classification:
+     iteration: <int>
+     classified_at: <ISO timestamp>
+     per_chapter:
+       - chapter: <slug>
+         hunks:
+           - hunk_id: <int>
+             summary: <one-line description>
+             class: cosmetic | presentation-reinforcement | substantive
+             file_location: <path:line-range>
+   ```
+
+4. **State file stamp.** Update `state.iterations[<N>].classification_complete_at: <ISO>` (extending the in-state-file iteration trace; if the schema does not name this field, add it as a `# Phase 4.5 stamped <ISO>` comment line beneath the iteration's `verdict_trace[]` entry).
+
+Substantive hunks are gathered into Phase 8's final summary AND into Phase 6.5's aggregate-emit dispatch payload (where they become `revision_layer[]` entries with `acknowledged: false`).
+
+---
+
 ## Phase 5 — Re-run `/and-review cohere`
 
 Only fires if Phase 4 completed with all `result: PASS`.
@@ -154,6 +210,47 @@ Fires when `iteration_count >= max_iter` without `PASS-COHERE`.
 - Surface unresolved revise queue + accumulated `verdict_trace[]` to user + iteration log.
 - Admin process-critic fires with `trigger.reason: cohere-cap-hit` (in addition to the always-fires Phase 7.5 dispatch — cap-hit is a strong signal that the cohere loop's design or the upstream chain needs change).
 - Exit to principal triage. No infinite loop. The unresolved revise items stay in parking-lot as `status: open` for the principal to inspect, dismiss, or re-queue under a new `/and-cohere --restart`.
+
+---
+
+## Phase 6.5 — Aggregate emit (PROP-0031 Amendment 1)
+
+Per PROP-0031 Amendment 1, on cohere convergence to PASS-COHERE this command walks the converged stretch end-to-end and writes/updates `active-project/staff/showrunner/aggregate-state.md` — the forward-feed channel that closes the upstream/draft divergence the polish-deferred chain creates. See `schemas/aggregate-state.schema.md`.
+
+**Fires only at PASS-COHERE.** Specifically: `verdict_trace[-1].verdict == PASS-COHERE` AND `status: converged`. Skipped on `CAUTION-COHERE` (even under `--strict`, since `--strict` routes CAUTION to Phase 3 rather than treating it as convergence), `FAIL-COHERE`, `CAP-HIT`, `HELD`.
+
+**Schema authority.** READ `schemas/aggregate-state.schema.md` before authoring this phase's dispatch. The dispatched agent must follow that schema exactly.
+
+1. **Resolve existing state.** Check for `active-project/staff/showrunner/aggregate-state.md`:
+   - **Present:** read into the dispatch payload as `existing_aggregate_state`. Agent updates in place (advances `through_chapter`, appends/replaces axis_state / open_hooks / characters / world_state / revision_layer entries per schema § Conflict resolution rules — cohere overrides stitch-Phase-10 on per-entry conflict, conflict logged in `conflict_log[]`).
+   - **Absent:** agent creates the initial file. `version: 1`, `through_book: <book>`, `through_chapter: <highest-chapter-in-stretch>`, schema-minimum-viable shape.
+
+2. **Gather inputs for the dispatch payload.**
+   - The schema path: `schemas/aggregate-state.schema.md`.
+   - Existing `aggregate-state.md` content if present.
+   - The final on-disk draft for every chapter in the converged stretch: `active-project/draft/<book>-<chapter>.md` for each `<chapter>` in `<from>-<to>`.
+   - The Phase 4.5 classification output for THIS run (all iterations' `revision_classification` blocks from the iteration log). `presentation-reinforcement`-class hunks become `revision_layer[]` entries with `class: presentation-reinforcement`, `acknowledged: true` (auto). `substantive`-class hunks become `revision_layer[]` entries with `class: substantive`, `acknowledged: false`.
+   - The current `series.substance.state_axes[]` block from `active-project/staff/showrunner/memory.md` (for `axis_state[]` population — every entry maps to one declared axis).
+
+3. **Dispatch.** Single agent call:
+   - `subagent_type: claude`
+   - prompt carries:
+     - `mode: aggregate-emit`
+     - `trigger: and-cohere Phase 6.5 PASS-COHERE convergence`
+     - `book: <book>`
+     - `range: <from>-<to>`
+     - `schema_path: schemas/aggregate-state.schema.md`
+     - `existing_aggregate_state: <content or null>`
+     - `chapter_drafts: { <chapter-slug>: <draft-content>, ... }`
+     - `revision_classification: <Phase 4.5 aggregated blocks for this run>`
+     - `state_axes: <series.substance.state_axes[] content>`
+     - instruction: read the schema, then either create the initial file (absent case) or update in place (present case), following the schema's conflict resolution rules. Tag every new or updated entry with `last_updated_by: and-cohere`. Return the full updated file content.
+
+4. **Write the file.** Persist the agent's return to `active-project/staff/showrunner/aggregate-state.md`. Stamp `last_updated: <ISO>`, `last_updated_by: and-cohere`.
+
+5. **Update cohere state.** Stamp `cohere_state.aggregate_emit_at: <ISO>` (if the cohere-state schema does not declare this field, append `# Phase 6.5 stamped <ISO>` as a comment line to the end of the state file's `cohere_state:` block; do not block on schema absence).
+
+6. **Surface substantive entries.** Any `revision_layer[]` entry with `class: substantive` + `acknowledged: false` written in this phase is collected for Phase 8's final summary under an `Unacknowledged substantive revision-layer entries:` section. Per schema validation rule 7, these will HARD-block the next `/and-substance chapter` Phase 0 until the principal stamps `acknowledged: true`.
 
 ---
 

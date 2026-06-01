@@ -192,6 +192,15 @@ Legacy schemas preserved for reference: `episode-plan.schema.md`, `show-file.for
     - **Spine-legibility pair (unnumbered; URI-WRITE-EVENT-CONCRETENESS + URI-STITCH-SPINE-STAGING):** `/and-write` Phase 6 `EVENT-NOT-CONCRETE` (HARD — central-event bone must be concrete SVO) + `ABSTRACTION-DOMINANT` (SIGNAL); `/and-stitch` Phase 9 promotes a single staging finding on a central-event/stakes-axis bone to blocking.
     - **PROP-0019/0019-A** (the chunk-cold-read leg) is upstream of these at `/and-substance chapter` Phase 5.5 (`chunk_cold_read` + `PASS-CHUNK-VOICE-RISK` arming `/and-stitch` Phase 8.5 central-event-muffle). Status: all wired; validated against the c05 evidence archive but NOT yet proven on a *live* chapter — b01-c06 is the first live test. See `staff/admin/readability-completeness-overhaul-report-2026-05-29.md`.
 
+18. **Chapter production follows the RUNBOOK protocol verbatim (PROP-0032, 2026-05-31).** The project's primary operation — "produce a chapter" — has a single canonical protocol in `RUNBOOK.md § Producing a chapter — end-to-end protocol`. Triggers: "produce c<MM>" / "do chapter X" / "write the next chapter" / "walk away while you do c<MM>" / any phrasing meaning "give me a finished chapter." The protocol binds five rules:
+    - **R1** — no `AskUserQuestion` for the duration of the run; admin user-proxy is the only channel; admin `ESCALATE` is queued to the end-of-run summary, not prompted.
+    - **R2** — drive through cap-bounded gate FAILs within their existing caps: bones FAIL (1 retry), facet audience-gate FAIL (cycle to cap 3), stitch Phase 9 FAIL (1 retry); cap exhaustion halts.
+    - **R3** — pre-flight check + print, then go silent. No interim narration, no mid-run check-ins.
+    - **R4** — single end-of-run summary block on completion or halt. All verdicts, ESCALATE queue, process-critic findings, checkpoint, next-step suggestion.
+    - **R5** — hard halts always abort cleanly with checkpoint: cap exhaustion, pre-flight HALT, mid-run parking-lot HARD discovery, `/and-cut`, `/and-substance chapter` Phase 0 unacknowledged-substantive HARD-abort, any documented chain HARD-abort not in R2's table, unretryable tool failure.
+    
+    The chain itself is `--cascade` over `/and-substance chapter` → `/and-write` → `/and-review bones` → `/and-facets` → `/and-stitch` (through Phase 9 cold-read AND Phase 10 forward-thread). `/and-postop` and `/and-cohere` are NOT in the chain — both are opt-in suggestions in the end-of-run summary. R1–R5 supersede any command-body behavior that would prompt the principal mid-run. When command-body docs conflict with the runbook protocol on chapter-production behavior, the runbook wins for chapter-production runs.
+
 ---
 
 ## Commands

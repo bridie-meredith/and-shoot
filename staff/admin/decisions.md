@@ -3537,3 +3537,92 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0061 | 2026-06-01 05:00 | SLOW (process-critic)
+
+question: |
+  /and-cohere b01 c01-c07 converged to CAUTION-COHERE (load_bearing_fails=0; all load-bearing
+  axes PASS; 5 non-load-bearing CAUTIONs). Three design questions raised at Phase 7.5:
+  (1) Should Phase 6.5 aggregate emit fire on CAUTION-COHERE with zero load-bearing fails?
+  (2) Does audience persona rotation surface noise rather than signal?
+  (3) Should dramatist CAUTION threshold be re-evaluated for declared project design choices?
+
+context: |
+  First live /and-cohere run. PROP-0031 Amendment 1 (Phase 6.5 aggregate emit) and
+  Amendment 2 (/and-stitch Phase 10) were implemented this session. Phase 6.5 was SKIPPED
+  because its trigger requires PASS-COHERE strictly — CAUTION-COHERE does not fire it even
+  when all load-bearing axes PASS. aggregate-state.md was not bootstrapped; /and-stitch
+  Phase 10 on c08 falls back to reading the seven prior chapter drafts directly. The
+  CAUTION axes are: naive Q5 sensory distribution (thin in c02/c04 middles), naive Q6
+  apparatus-register (strained but not broken), dramatist axis3 antagonist pressure
+  (interior-pressure structure), dramatist axis4 scene-shape (interior+transaction dominant),
+  audience axis2 threshold discipline (insect-instrument never fails; no contesting force
+  pre-c07). Axes 3 and 4 accurately describe declared project structural design choices.
+
+options: |
+  Q1: (a) keep strict PASS-COHERE-only for Phase 6.5; (b) relax to CAUTION-COHERE +
+      load_bearing_fails==0 also fires Phase 6.5
+  Q2: (a) no change; (b) add persona-consensus strength field to verdict aggregation
+  Q3: (a) no change; (b) add ADVISORY tier + optional structural exemption mechanism;
+      (c) hold for recurrence
+
+decision: |
+  Q1: PROCESS-CHANGE-PROPOSED PROP-0033
+  Q2: OK — no proposal
+  Q3: PROCESS-CHANGE-PROPOSED PROP-0034
+
+basis: |
+  Q1: methodology — reversibility (gap compounds on every future CAUTION-COHERE run;
+  early fix cheaper than accumulated fallback cost) + cost (S-cost modify; minimal
+  change) + blast-radius (one condition in one phase). State file diagnosed the gap
+  itself at ship time. First occurrence but proposing because the gap is deterministic
+  and mechanically precise.
+  Q2: methodology — optionality (hold keeps design simpler; the report narrative already
+  surfaces the distinction; no decision has been harmed by the current design). First
+  occurrence; non-catastrophic; hold for recurrence.
+  Q3: methodology — cost (recurring inactionable CAUTIONs erode the CAUTION tier's
+  signal value over the project lifetime; S-cost to fix now < compounding signal erosion
+  cost) + blast-radius (additive ADVISORY tier; does not change ACCEPT/CAUTION/FAIL
+  semantics). First occurrence but proposing because the failure is deterministic (every
+  future cohere run for this project) and the discriminating criterion is mechanically
+  precise (licensed-by-declared-structure).
+
+rationale: |
+  Q1: A CAUTION-COHERE run with load_bearing_fails==0 is ship-clean on every axis that
+  matters for forward-feed reliability. The non-load-bearing CAUTIONs are advisory taste
+  signals, not evidence that the stretch's axis-state or hook-inventory are unreliable.
+  Relaxing the Phase 6.5 fire condition to include this case closes a deterministic gap.
+  --strict behavior is unchanged (under --strict, CAUTION routes to Phase 3 and convergence
+  is not declared, so Phase 6.5 never fires under --strict regardless of load_bearing_fails).
+
+  Q2: The CAUTION/FAIL distinction already encodes signal strength. A CAUTION that only
+  one persona fires is lower-signal than one all three fire, and the report's narrative
+  captures this. Adding a `persona_consensus` structural field to the aggregation schema
+  would formalize what is already visible in the narrative without changing any downstream
+  decision. First occurrence; hold for recurrence before adding infrastructure.
+
+  Q3: CAUTION implies actionability — "this is a quality concern addressable by revise."
+  Dramatist axis3/axis4 findings that accurately describe a declared structural choice are
+  not actionable. Filing them as CAUTION on every cohere run trains the principal to ignore
+  the CAUTION tier, which is a worse outcome than having fewer CAUTIONs. ADVISORY as a
+  third tier ("accurate, inactionable, recorded for reference") + an optional structural
+  exemption mechanism separates the two signal classes cleanly. The discriminating clause
+  ("departure from licensed structure is not exempt") prevents the tier from swallowing
+  legitimate structural concerns.
+
+trade-off: |
+  Q1: Relaxing Phase 6.5 means aggregate-state.md can be emitted from a "cautioned"
+  run. Mitigated by last_updated_by: and-cohere-caution tag (downstream consumers see the
+  emit source) and by load_bearing_fails==0 condition (structural facts are reliable).
+  Q2: Holding means the current run's persona-rotation insight is noted but not acted on
+  mechanically. Low cost.
+  Q3: ADVISORY tier adds a third classification the dramatist must discriminate. Misclassifying
+  a genuine CAUTION as ADVISORY loses the signal. Mitigated by the "departure from licensed
+  structure is not exempt" clause, which keeps the exemption narrow.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
