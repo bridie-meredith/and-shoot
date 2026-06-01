@@ -3,39 +3,42 @@ cascade:
   invoked_at: 2026-05-31T23:00:00Z
   invoked_command: /and-substance chapter b01c09 --cascade
   last_completed:
-    level: facets
+    level: stitch-shipped-with-caveats
     slug: b01c09
-    completed_at: 2026-06-01T02:00:00Z
+    completed_at: 2026-06-01T03:00:00Z
   next:
-    command: /and-stitch b01c09
-    args: [b01c09]
-  reason: continue
+    command: /and-substance
+    args: [chapter, b01c10]
+  reason: complete
   failure: null
-  facets: "audited-r1 (DEC-0063 Option B). Phase 5b 9/9 ACCEPT; interest-narrator REVISE resolved by narrator:5 @19 no-recognition-clause removal (verified). Phase 5 CLEAN 0 HARD; Earth-Bet fence CLEAN; scene-map 23/23. bidirectional_loop VALIDATED. orchestrator-critic SHIPPABLE-WITH-CAVEATS (caveat = authorized R2/multi-cycle skip). R2 + Phase 3-4 skipped per Option B."
-  stitch_carries: "chunk_cold_read CHUNK-CLASS-B / DEC-0062 (apparatus-vocab + prior-context design-inherent; CONTINUE bar = tentative-yes not strict-yes; cold_read_risk_carry: motive-opacity design-intentional, color-metaphor c01-c08 anchor, causality-design-inherent). Phase 4 voice-embodiment advisories: alive-002 @8-@11 scene-B opening render person-first; s02n09 'insect-feed returns corwick' render as physical perceptual event not data-record (also grd-001 sensory:3 @11 supports this); marks-verb @9/@10 vary at prose layer. Phase 8.5 central-event-muffle armed (voice_risk). Phase 9 separated-scoring (completeness + aliveness both required)."
-  bones_review: "PASS / follow_check PASS-WITH-NOTES — CLEAR for /and-facets. Carries to Phase 2.5: follow-001 (s02 @8 temporal gap, context-ledger candidate), signal-001 (@11 instrument-class render-physical / grounding-ledger), signal-002 (@9/@10 marks-verb). pl-2026-06-01-001 (corwick card / dragonpit-margin+lower-gate geo cards) resolves at /and-facets Phase 0."
   notes: |
-    /and-write b01c09 COMPLETE (2026-06-01). 23 bones / 3 scenes emitted:
-    theater/bones/b01-c09.md + theater/facets/scene-map-b01-c09.md. Silent chapter —
-    no dialogue files (Phase 1.5 no-op).
+    /and-substance chapter b01c09 --cascade COMPLETE. draft/b01-c09.md is TERMINAL
+    (Phase 9 SHIPPED-WITH-CAVEATS, matching-complaint auto-promotion per DEC-0062).
 
-    Phase 6 bone-gate PASS: auditor 0 HARD / 2 SIGNAL accepted (s02n09 instrument-class
-    render-physical advisory; marks-verb variation advisory — both carried to /and-stitch
-    Phase 4 via scene-map protected-patterns). Audience 9/9 SUBSTANCE-FELT (3 personas ×
-    3 scenes). Coverage discipline satisfied.
+    Full chain (all committed, PR #82):
+      /and-substance chapter b01c09 — 3 scenes; audience 3/3 SUBSTANCE-FELT; dramatist ACCEPT;
+        auditor CLEAR; chunk-cold-read CHUNK-CLASS-B -> admin P (DEC-0062). cl-d08 opened / cl-d05 cont.
+      /and-write b01c09 — 23 bones; bone-gate auditor 0 HARD + audience 9/9 SUBSTANCE-FELT; silent chapter.
+      /and-review bones — fidelity PASS, follow_check PASS-WITH-NOTES, CLEAR.
+      /and-facets b01c09 — DEC-0063 Option B (streamlined: R2/Phase3-4 skipped). Phase 5b 9/9 ACCEPT
+        (interest-narrator REVISE resolved by narrator:5 @19 no-recognition-clause removal). Phase 5
+        CLEAN. Phase 2.5 grounding remediation (grd-001 -> sensory:3 @11). bidirectional_loop VALIDATED.
+      /and-stitch b01c09 — Phase 9 SHIPPED-WITH-CAVEATS. Central event recovered+staged; Phase 8.5 PASS
+        (muffle @11 remediated); Step 3 CLEAN (no spine FAIL); 0 prose-rationale-mutes; no cluster.
+        Cleaner than c08 (no revise needed). depth_pass NOT pending.
 
-    Pipeline: Pass 2 (12 FAULT-FORM PP-recasts → CLEAN; 2 delta-floor by DEC-0002 precedent)
-    + Pass 3 dramatist (+1 transition bone s02n09) + Pass 4 trim (3/3 ACCEPT 0-del)
-    + Pass 5 continuity (CONTINUITY-OK; corwick bare-slug resolved by c08 precedent;
-    dragonpit-margin/lower-gate geo-cards parked for /and-facets Phase 0 — pl-2026-06-01-001).
+    depth_pass_resolved: N/A (no PASS-WITH-DEPTH-PASS-REQUIRED; clean terminal with caveats).
 
-    INCIDENT: prior Phase 6 dispatch pair (auditor + audience trio) died silently ~3.5h with
-    partial output (cape-fic + dark-fantasy verdicts only); re-dispatched auditor + worm-canon;
-    re-run completed the gate cleanly.
+    Process proposals surfaced this run (principal triage): PROP-0031 (held-axis no-recognition
+    REJECT-signature promotion to rubric-narrator-interest.md, from the Phase-5b interest-narrator
+    catch); PROP-0030 recurrence->4 (instrument-class central-precursor bone, from bone-gate signal-001);
+    Phase 9.5 admin process-critic fired (mid-series zero-context cold-read recurring pattern — result pending).
 
-    Carry to /and-stitch (chunk_cold_read CHUNK-CLASS-B / DEC-0062 + scene-map protected-patterns):
-      - apparatus-muffle: render s02n09 'insect-feed returns corwick' as a physical perceptual
-        event, NOT a data-record transaction (Phase 8.5 central-event-muffle armed).
-      - moral_legibility hold at s03: NO recognition beat — double-omission stays structural fact
-        (motive-opacity is design-intentional per DEC-0062, not a hole).
-      - cold_read CONTINUE bar = tentative-yes (design-inherent Class B), not strict-yes.
+    INCIDENTS (recovered): two subagent silent-deaths mid-run (the /and-write Phase 6 bone-gate pair;
+    the Phase 5b worm-canon partial) — both recovered by re-dispatch; no work lost.
+
+    cl-d06 2nd tranche +1.0 relational_anchor_status STILL deferred (pl-2026-05-30-001) — candidate c10.
+    Carry to c10 (dramatist watch): c09 had no antagonist agency by design; c10 (formalization +
+    detention, climax) must supply the external force / the d10 courier-detention payoff.
+
+    NEXT (not started): /and-substance chapter b01c10 --cascade (the formalization+detention climax chapter).

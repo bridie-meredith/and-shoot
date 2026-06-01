@@ -5294,7 +5294,7 @@ books:
               density_target: 0.55-0.7
 
       - slug: b01c09
-        status: audited-r1   # /and-facets b01c09 COMPLETE (2026-06-01, DEC-0063 Option B streamlined): 10 R1 facets + merge + Phase 2.5 + Phase 5 audit + 1 Phase 5b cycle. Phase 5b ACCEPT 9/9 facets (3-of-3); interest-narrator 3-of-3 REVISE resolved by unanimous one-line fix at narrator:5 @19 (removed no-recognition-fence-crossing clause; worm-canon verified). Phase 5 mechanical CLEAN (0 HARD non-deferral; Earth-Bet fence CLEAN; scene-map 23/23). bidirectional_loop VALIDATED. R2/Phase3-4 SKIPPED per Option B (caveat). Phase 2.5: completeness PASS (follow-001 closed by exposition:3); grd-001 grounding-add (sensory:3 @11, cap-exempt). audit_path facets-final-audit.md; audience_gate_path facets-audience-gate-r1.md; cycles 1. SIGNAL deferrals: exposition 13% denominator-driven; carry-forward card refs (corwick/geo/oc-props/monument-* slugs) margit-deferred per DEC-0063/c08 precedent; alive-002 VOICE-FIXABLE + s02n09-instrument-class + marks-verb @9/@10 carried to /and-stitch Phase 4. | was bones-written: /and-write b01c09 COMPLETE (2026-06-01): 23 bones / 3 scenes emitted (theater/bones/b01-c09.md + scene-map-b01-c09.md); silent chapter (no dialogue files). Phase 6 bone-gate PASS: auditor 0 HARD / 2 SIGNAL accepted (s02n09 instrument-class + marks-verb, both carried to /and-stitch Phase 4); audience 9/9 SUBSTANCE-FELT (3×3). Pass 2 12 FAULT-FORM PP-recasts→CLEAN + 2 delta-floor by DEC-0002; Pass 3 +1 transition bone s02n09; Pass 4 3/3 ACCEPT 0-del; Pass 5 CONTINUITY-OK (corwick bare-slug resolved by c08 precedent pl-2026-06-01-001). NOTE: prior Phase 6 dispatch pair died silently (partial output); re-run completed the gate. | /and-substance chapter b01c09 (2026-05-31): 3 scenes decomposed. Phase 5: audience 3/3 SUBSTANCE-FELT all scenes; dramatist ACCEPT (rise-peak-fall, s03 thesis-image legitimate); auditor CLEAR (0 HARD, cost-ledger cl-d08/cl-d05 clean, thematic-axis clean). Phase 5.5 chunk-cold-read CHUNK-CLASS-B (summary maps to goal; strict-CONTINUE=no — prior-context/apparatus-vocab inaccessibility, same shape as c08/DEC-0060) → admin disposition P (DEC-0062); verdict SHIPPED-WITH-RISK-RECORDED. cl-d08 opened (+0.5 of +2; 1.5 remaining); cl-d05 continuation; cl-d06 2nd tranche +1.0 still deferred to c10/later (pl-2026-05-30-001). SW-1/2/3 audience watches carried to /and-write.
+        status: stitched-with-caveats   # /and-stitch b01c09 COMPLETE (2026-06-01): draft/b01-c09.md TERMINAL. Phase 9 SHIPPED-WITH-CAVEATS (matching-complaint auto-promotion, DEC-0062): cold-read CONTINUE=no matching cold_read_risk_carry verbatim (apparatus-vocab + prior-context + causality-design-inherent), central event RECOVERED + STAGED, NO independent spine FAIL (Step 3 CLEAN), Phase 8.5 PASS (muffle @11 remediated), 0 mutes, no cluster — cleaner than c08 (no revise needed). ~570 words (preamble+body). Phase 9.5 admin process-critic fired. | was audited-r1: /and-facets b01c09 COMPLETE (2026-06-01, DEC-0063 Option B streamlined): 10 R1 facets + merge + Phase 2.5 + Phase 5 audit + 1 Phase 5b cycle. Phase 5b ACCEPT 9/9 facets (3-of-3); interest-narrator 3-of-3 REVISE resolved by unanimous one-line fix at narrator:5 @19 (removed no-recognition-fence-crossing clause; worm-canon verified). Phase 5 mechanical CLEAN (0 HARD non-deferral; Earth-Bet fence CLEAN; scene-map 23/23). bidirectional_loop VALIDATED. R2/Phase3-4 SKIPPED per Option B (caveat). Phase 2.5: completeness PASS (follow-001 closed by exposition:3); grd-001 grounding-add (sensory:3 @11, cap-exempt). audit_path facets-final-audit.md; audience_gate_path facets-audience-gate-r1.md; cycles 1. SIGNAL deferrals: exposition 13% denominator-driven; carry-forward card refs (corwick/geo/oc-props/monument-* slugs) margit-deferred per DEC-0063/c08 precedent; alive-002 VOICE-FIXABLE + s02n09-instrument-class + marks-verb @9/@10 carried to /and-stitch Phase 4. | was bones-written: /and-write b01c09 COMPLETE (2026-06-01): 23 bones / 3 scenes emitted (theater/bones/b01-c09.md + scene-map-b01-c09.md); silent chapter (no dialogue files). Phase 6 bone-gate PASS: auditor 0 HARD / 2 SIGNAL accepted (s02n09 instrument-class + marks-verb, both carried to /and-stitch Phase 4); audience 9/9 SUBSTANCE-FELT (3×3). Pass 2 12 FAULT-FORM PP-recasts→CLEAN + 2 delta-floor by DEC-0002; Pass 3 +1 transition bone s02n09; Pass 4 3/3 ACCEPT 0-del; Pass 5 CONTINUITY-OK (corwick bare-slug resolved by c08 precedent pl-2026-06-01-001). NOTE: prior Phase 6 dispatch pair died silently (partial output); re-run completed the gate. | /and-substance chapter b01c09 (2026-05-31): 3 scenes decomposed. Phase 5: audience 3/3 SUBSTANCE-FELT all scenes; dramatist ACCEPT (rise-peak-fall, s03 thesis-image legitimate); auditor CLEAR (0 HARD, cost-ledger cl-d08/cl-d05 clean, thematic-axis clean). Phase 5.5 chunk-cold-read CHUNK-CLASS-B (summary maps to goal; strict-CONTINUE=no — prior-context/apparatus-vocab inaccessibility, same shape as c08/DEC-0060) → admin disposition P (DEC-0062); verdict SHIPPED-WITH-RISK-RECORDED. cl-d08 opened (+0.5 of +2; 1.5 remaining); cl-d05 continuation; cl-d06 2nd tranche +1.0 still deferred to c10/later (pl-2026-05-30-001). SW-1/2/3 audience watches carried to /and-write.
         chunk: |
           The relational_anchor_status transitions from rank 3 toward the d06-d08 threshold
           as Taylor's coverage map expands to include the lanes Wren moves through between
@@ -5612,6 +5612,37 @@ books:
             /and-facets Phase 2.5 grounding scrutiny + /and-stitch Phase 4 voice-embodiment.
             dialogue-coverage CLEAN (silent chapter). signal-002 @9/@10 marks-verb variation
             → /and-stitch Phase 4. RECOMMENDATION: CLEAR for /and-facets.
+        cold_read:
+          read_at: 2026-06-01T00:00:00Z
+          verdict: SHIPPED-WITH-CAVEATS
+          recovered_summary: "A surveillance-minded narrator does a routine patrol, notes a woman's walking route and a suspicious man named Corwick at a gate, then seals an envelope."
+          intended_goal: "Show that Taylor is now surveilling Wren as routine coverage — and not calling it that — and advance the courier-face so the d10 accounting has a body with a history."
+          central_event_recovered: true   # cold-reader summary maps to goal (Wren route filed + courier at gate + sealed packet)
+          continue: no
+          continue_strict: no
+          jeopardy: implied-not-confirmed   # structurally appropriate for a quiet rising surveillance chapter; d10 payoff downstream
+          report_path: active-project/staff/reviews/coldread-b01-c09-2026-06-01.md
+          staging_signals: 0
+          staging_report_path: active-project/staff/reviews/staging-b01-c09-2026-06-01.md
+          signal_clusters: []
+          prose_rationale_audit: { verdict: CLEAN, mute_count: 0 }
+          coherence_review_verdict: PASS   # Phase 8.5: weave 0 / followability 0 / central-event-muffle @11 REMEDIATED; coherence-b01-c09-2026-06-01.md
+          readability_axis: { verdict: READABLE, basis: "person-first embodied first-person render (Phase 8.5 confirmed); CONTINUE=no driven by referent-opacity (prior-context + apparatus vocab), not airlessness; central event not airless (@11 muffle remediated)" }
+          completeness_axis: { verdict: PASS, basis: "central event recovered + staged; no cluster; 0 mutes" }
+          disposition_basis: |
+            SHIPPED-WITH-CAVEATS auto-promotion per Phase 9 Step 4 matching-complaint rule:
+            chunk_cold_read.verdict == SHIPPED-WITH-RISK-RECORDED (DEC-0062) AND the Phase 9
+            cold-read FAIL (CONTINUE=no) complaints MATCH cold_read_risk_carry verbatim
+            (apparatus-vocab inaccessibility + prior-context inaccessibility + causality-design-inherent:
+            three-parallel-acts-not-a-chain). No principal re-ask required. NO independent spine-staging
+            FAIL (Step 3 CLEAN — all central-event bones @4/@11/@14/@19 staged) and NO cluster/mute
+            soft-block — so terminal SHIPPED-WITH-CAVEATS, NOT a revise (cleaner than c08, which needed a
+            spine-staging revise). depth_pass NOT pending (no cluster, no mute, no PASS-WITH-DEPTH-PASS-REQUIRED).
+          caveats:
+            - "Cold-read CONTINUE=no matches pre-disposed Class B (apparatus-vocabulary + prior-context inaccessibility, design-inherent for ch 9 of a series; DEC-0062)."
+            - "Readability axis READABLE on the spine but the body-content/grounding additions (grd-001 sensory:3 @11 + voice-embodiment person-first) did NOT lift CONTINUE to tentative-yes — design-inherent referent-opacity per chunk_cold_read."
+            - "Jeopardy implied-not-confirmed (quiet rising surveillance chapter; the d10 detention payoff is downstream at c10)."
+          stale_since: null
 
       - slug: b01c10
         status: planned
