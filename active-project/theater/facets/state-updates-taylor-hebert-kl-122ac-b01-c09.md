@@ -5,7 +5,7 @@ author: dialogue-writer-fork:taylor-hebert-kl-122ac
 ---
 # POV actor-state co-citation (state-updates rubric § cross-facet contract): both entries are
 # actor:taylor.* shifts and require a narrator-interest fire on the same @<proto-line-id>.
-# @8 ← interest-narrator @8 (relational_anchor / cl-d08); @18 ← interest-narrator @18
+# @8 ← interest-narrator @9 (NI:3, scene-A peak-cluster; relational_anchor / cl-d08); @18 ← interest-narrator @18
 # (political_register-prot / cl-d05). Both anchors are scene peak-bones (scene-A @8, scene-B @18),
 # which is where irreversible registration is strongly expected. Values re-anchored from the
 # pre-depth-pass facet (old @6→@8, old @14→@18); deltas unchanged.
