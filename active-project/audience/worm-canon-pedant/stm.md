@@ -680,3 +680,76 @@ ACCEPT.
 - **WATCH-2 (carry active):** s02 "escalation engine" is reader-framing only — must not appear in Taylor's bones-generated prose. Taylor's register at Aemond-name-logged is logging; downstream prose must keep it there.
 - **WATCH-3 (carry active):** s03 closing two-bone split — Taylor's physical departure and feed-coverage must enact the close; no bone-generated prose should give Taylor the recognition "Oswyn does not know this."
 - **b01c07 prose-burden (carry unchanged):** Halvard tether-gain; carries to b01c07 /and-write.
+
+## 2026-05-31 — /and-substance chapter b01c09 Phase 5 review
+
+verdict_per_scene:
+  b01c09s01: SUBSTANCE-FELT
+  b01c09s02: SUBSTANCE-FELT
+  b01c09s03: SUBSTANCE-FELT
+chapter_goal_coverage:
+  wren_surveillance_without_naming: LAND
+  courier_face_beat_2_body_with_history: LAND
+  double_omission_structural_fact: LAND
+overall: ACCEPT
+notes:
+  - s01 power mechanics: coverage-built-over-time (canonical); behavioral data from repeated insect-feed passes through physically-moved-through lanes; no range broadcast concern; "the insect-feed has been threading these lanes since then as routine, and the patterns have accumulated" is coverage-as-accumulation correct form
+  - s01 Taylor interior register: internal map holds operational-data (time-block, route, geometry, observation-window) not relational data; correct cold-utilitarian filing form
+  - s01 Earth-Bet fence: "insect-feed," "ward-coverage notes," "feed-record," "coverage extension," "daily circuit" — all functional descriptive language; no parahuman jargon; fence clean
+  - s01 cl-d08 anchor: precise match to cost specification ("structurally necessary to coverage map without appearing in deliverable ledger"); journey-required cost (cl03b) paid at c03-c04; first-tranche draw (+0.5 of +2) appropriately modest
+  - s01 pl-2026-05-30-001: cl-d06 deferred second tranche (+1.0 spoken/recognition-register event) correctly NOT settled here; c09 is architectural event not spoken/recognition event; targeting c10/later is correct
+  - s02 courier observation: canonically bounded; feed gives posture + location; Black-faction inference from accumulated gate-access coverage is legitimate; uncertainty correctly maintained ("not a conclusion, a direction"); no lore-leak; no unmotivated knowledge
+  - s02 "feed has taught her to read as delivery-complete": Taylor's posture-class recognition is established Worm mechanic (c05 approach-geometry read as enforcement vs. robbery); canonical
+  - s02 information-partitioning: internal feed-record vs. Jarvis channel is canonical Taylor operational-security discipline; consistent with c02 onward; no flag
+  - s02 Earth-Bet fence: "insect-feed," "feed-angle," "posture-class," "inferred-pattern-type," "feed-record" — all functional descriptive language; "feed has taught her to read" is shape-language; fence clean
+  - s03 double-omission: mechanically precise (two substrates in same architecture, both described as having properties); "present in the architecture the Jarvis packet is drawing from and simultaneously not drawing from" — correct structural-fact narration not reflective commentary; Taylor does not name the shape of what she has done; moral_legibility_to_self hold correct for this arc stage (recognition arrives at c12, not before)
+  - s03 Earth-Bet fence: "feed-station," "ward-coverage notes," "sealed packet," "internal map," "feed-record," "insects," "the feed runs its circuits" — all functional descriptive language; fence clean
+  - s03 zero-axis-movement hold: load-bearing per chapter contract (the gap is the substance; holding moral_legibility_to_self at rank 5 is the chapter's architecture); not evasive
+
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+canonicity_findings:
+  - Earth-Bet fence: CLEAN across all three scenes; shape-language only; no Khepri/Gold Morning leak; no parahuman jargon
+  - power mechanics: coverage-as-accumulation canonical; no range inflation; no single-deployment broadcast
+  - Taylor interior register: operational-data filing throughout; no recognition event; correct cold-utilitarian accounting-close
+  - information-partitioning (substrate-split): canonical Taylor operational-security discipline; consistent with established arc behavior
+soft_watch_SW3_for_and_write: s02 "feed has taught her to read as delivery-complete" posture-class recognition must decompose to two distinct steps at bone level — (1) feed returns a physical signature (body angled toward the other man, weight-distribution of having-delivered and waiting-for-acknowledgment), then (2) Taylor categorizes that signature as delivery-complete; a single bone stating "feed returns delivery-complete posture" collapses the physical data and the categorization into a label; these are distinct cognitive operations and should be distinct bones; if the bone says "feed returns delivery-complete posture" it has skipped the physical return and gone straight to the category
+
+## b01c09 /and-write Phase 4 trim — 2026-05-31
+
+verdict: ACCEPT (23 KEEP, 0 DELETE)
+file_verdict: ACCEPT
+canonicity_findings:
+  - Earth-Bet fence CLEAN across all 23 bones; no Khepri/Gold Morning/parahuman jargon
+  - power mechanics canonical: coverage-by-physical-presence; feed returns bodies via biological sensory relay; pattern-accumulation over time; no range inflation; no single-deployment broadcast
+  - internal-map/deliverable partition canonical; n05 (modeling-layer) vs n06 (observation-log) distinct internal substrates, not redundant
+  - SW-3 CLOSED at bone level: recognition decomposed across 4 bones (n09 feed returns corwick / n04 faces / n05 squares shoulders / n06 files posture-class); physical-return THEN categorization honored
+  - SW-2 (n07 closes observation-entry + n08 completes circuit) = substrate-selection-as-operational-norm, not refusal; canonical
+  - zero flags; canon streak holds through c09
+
+## 2026-06-01 — /and-write b01c09 Phase 6 substance bone-gate
+
+verdict_per_scene:
+  b01c09s01: SUBSTANCE-FELT
+  b01c09s02: SUBSTANCE-FELT
+  b01c09s03: SUBSTANCE-FELT
+chapter_aggregate: SUBSTANCE-FELT
+hard_findings: []
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+earth_bet_fence_verdict: CLEAN — all 23 SVOs and all axes_held rationales reviewed; zero parahuman jargon; zero Khepri/Gold Morning/Skitter/Brockton-Bay proper nouns; shape-language only; inner-monologue-rare cap not tested
+sw3_status: CLOSED — posture-recognition decomposed across n09/n04/n05→n06; physical-data-THEN-categorization honored; Phase 5 soft watch resolved at bone level
+sw2_status: CONFIRMED — substrate-selection-as-operational-norm; Jarvis channel never enters as considered option; no deliberation bone; canonical
+soft_findings:
+  - SOFT (carried forward): b01c07 prose-burden — Halvard tether-gain; carries to b01c07 /and-write (unchanged)
+canonicity_findings:
+  - Earth-Bet fence: CLEAN
+  - power mechanics: coverage-by-physical-presence; feed returns bodies/positions/movement via biological-relay; pattern-accumulation over time; no range inflation; no single-deployment broadcast
+  - SW-3: CLOSED at bone level
+  - SW-2: CONFIRMED
+  - internal-map/deliverable partition: canonical; structurally separated at n05/n06 (s01) and n05/n06 (s03)
+  - Black-faction inference: legitimate pattern-read; directional not conclusory; consistent with c05 uncertainty-discipline
+  - multi-shard fence: CLEAN — no body-coordination; no directive deployment; insect-feed returns positions/posture data only
+  - Wren-surveillance: coverage-as-accumulation form; established methodology applied to a body in coverage; canonical
+verdict_file: active-project/audience/worm-canon-pedant/bone-gate-b01c09-2026-06-01.md

@@ -1,14 +1,56 @@
-# source: env-b01-c08
-1 @9 studio.fauna_sense_status.oswyn-watcher-network: uncharted -> integrated-into-coverage
-2 @11 prop:oc-jarvis-packet.state: absent -> arrived-at-feed-station
-3 @12 prop:oc-jarvis-packet.seal-condition: sealed -> broken
-4 @15 prop:oc-feed-station-ledger.aemond-entry: absent -> logged
-5 @18 studio.fauna_sense_status.feed-edge-geometry: pre-aemond-entry -> aemond-edge-lit
-6 @28 studio.spatial_layout.water-point-position: watcher-boy-stationed -> watcher-boy-absent
-7 @29 studio.fauna_sense_status.water-point-geometry: oswyn-network-managed -> insect-feed-covered
-# source: oswyn-mudway-flea-bottom-elder-b01-c08
-# source: taylor-hebert-kl-122ac-b01-c08
-8 @6 actor:taylor-hebert-kl-122ac.capability_axis: 4.5 -> 5  # watcher-sightlines traced via insect-feed; Oswyn's three-corridor geometry integrated into coverage matrix; integration mechanism-bone (scene-map peak-bones @6)
-9 @6 actor:taylor-hebert-kl-122ac.feed_coverage_matrix.watcher_network_nodes: [] -> [water-point-boy, lane-mouth-basket-woman, chandler-corner-apprentice]  # three watcher-positions geometrically locked into the insect-feed coverage matrix; persistence across remainder of episode (confirmed at @24 closure); field-extension: feed_coverage_matrix.watcher_network_nodes (new field; tracked structural infrastructure of the insect-network, not perception)
-10 @15 actor:taylor-hebert-kl-122ac.feed_coverage_matrix.named_chain_of_responsibility: [] -> [aemond-name-via-vhagar-handler-rotation]  # name above-the-handler logged at logistics register from the Jarvis packet; structural addition to the coverage matrix (the escalation engine acquires an edge in the feed); persistence absolute (the name does not unlog); held political_register-prot witnessed here — the logging is structural, not register-charged; field-extension: feed_coverage_matrix.named_chain_of_responsibility (new field; tracked operational-memory aspect of the insect-network's pattern-matching surface)
-11 @25 actor:taylor-hebert-kl-122ac.body_map.courier-figure: face-without-name -> face-with-name-corwick-and-pattern-above-his-station-twice-up-the-hill  # courier-face acquires the name "Corwick" via Oswyn's pass-mention; pattern attaches (above-his-station; twice-up-the-hill); persistence absolute (cf-d10-courier-face thread carries forward to b01c09 beat 2 and b01c10 detention); field-extension: body_map.courier-figure (new field; tracked operational-memory node for body-and-pattern recognition, per persona action-menu §"Predictive pattern-reading")
+---
+facet: state-updates
+sources: [env-b01-c09, taylor-hebert-kl-122ac-b01-c09]
+note: consolidated by build_cite_index from per-source slices. Single top-of-file frontmatter per r3-signal-001.
+---
+
+# source: env-b01-c09
+facet: state-updates-env
+episode: b01c09
+author: studio
+generated: 2026-06-01
+---
+
+# rubric-carve-out — oc-prop field extensions (ward-coverage-notes + jarvis-packet lifecycle)
+#
+# design/shoot-v2/rubric-state-updates.md § Field-extension protocol
+#
+# Carve-out scope: entries state:1 (prop:oc-ward-coverage-notes), state:2/3/4 (prop:oc-jarvis-packet)
+# Carve-out rule: both props are oc-* project-originals with explicit chapter presence; no authored
+#   prop cards exist yet (margit referrals pending per b01c08 state.md). Field extensions documented
+#   per-entry per §Field-extension protocol. Standard prop-state fields used where applicable
+#   (physical-condition, seal-condition, dry/wet per rubric §Authority ACCEPT signatures).
+# Coverage justification: oc-ward-coverage-notes is the deliverable substrate that is the chapter's
+#   structural fact; oc-jarvis-packet is the physical artifact of the seal-down thesis-image (peak-bones
+#   @19 + @23); both field changes are canonical write-back events persisting downstream.
+#
+# Per-entry annotations:
+# - state:1 @7: field-extension: prop:oc-ward-coverage-notes.content (new field; tracks the
+#     boundary-geometry record state; the deliverable substrate's record of the southward extension
+#     is canonical — it shapes what Jarvis receives and what routes downstream)
+# - state:2 @18: field-extension: prop:oc-jarvis-packet.physical-condition (new field; tracks
+#     the packet lifecycle from assembled to folded to sealed to dry; standard lifecycle state
+#     for a document-bearing prop; precedent from b01c08 oc-jarvis-packet seal-condition extension)
+# - state:3 @19: seal-condition is a standard prop-state field per rubric §Authority ACCEPT
+#     signatures (seal-condition for seal-bearing props); no carve-out required
+# - state:4 @23: dry/wet is a standard prop-state field per rubric §Authority ACCEPT
+#     signatures (dry/wet for ink-bearing props); seal drying qualifies; no carve-out required
+
+1 @7 prop:oc-ward-coverage-notes.content: hook-rushwick-oswyn-corridors -> hook-rushwick-oswyn-corridors-plus-south-extension
+# field-extension: content (oc-ward-coverage-notes; new field; records deliverable boundary state; the southward extension to the stitch-shop and water-seller lanes is written into the notes here; persistent — the notes retain this content at chapter close and into downstream chapters; old state sourced from b01c08 coverage_active_range: hook-ward + rushwick-extension + oswyn-watcher-network integrated)
+
+2 @18 prop:oc-jarvis-packet.physical-condition: assembled -> folded
+# field-extension: physical-condition (oc-jarvis-packet; new b01c09 packet — distinct from b01c08 packet consumed within that chapter; assembled = contents gathered from deliverable substrate, not yet folded; folded = packet folded for sealing; persistent past @18 through seal-down at @19)
+
+3 @19 prop:oc-jarvis-packet.seal-condition: unsealed -> sealed
+
+4 @23 prop:oc-jarvis-packet.seal-condition: sealed -> dry
+
+# source: taylor-hebert-kl-122ac-b01-c09
+facet: state-updates
+episode: b01c09
+target: actor:taylor-hebert-kl-122ac
+author: dialogue-writer-fork:taylor-hebert-kl-122ac
+---
+5 @6 actor:taylor-hebert-kl-122ac.relational_anchor_status_axis: 2 -> 2.5
+6 @14 actor:taylor-hebert-kl-122ac.political_register_prot_axis: 2.5 -> 3

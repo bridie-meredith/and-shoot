@@ -426,6 +426,7 @@ The escalated soft carry for the Sera-architecture (from the prior Phase 6 pass)
 ---
 
 ## b01c08 chunk review — /and-substance Phase 5
+
 date: 2026-05-31
 chapter: b01c08
 scenes_reviewed: [b01c08s01, b01c08s02, b01c08s03]
@@ -487,6 +488,7 @@ cl_d06_routing: CONCUR — deferral to c09/c10 correct; Wren in coverage as bypr
 ---
 
 ## b01c08 /and-write Phase 4 trim
+
 date: 2026-05-31
 chapter: b01c08
 scenes_reviewed: [b01c08s01, b01c08s02, b01c08s03]
@@ -521,3 +523,37 @@ Three watcher-bodies (n03 boy, n04 basket-woman, n05 apprentice) populate the tw
 REVISE
 
 Two deletion proposals: s02n01 and s03n01. Both are positional/receipt bones whose axis work either belongs to the following bone (s02n01) or points backward without generating forward pressure (s03n01). Neither carries event coverage that is orphaned by deletion. The chapter's central event (s01n06 capability move), the s02 quiet-beat build (n03-n08), and the s03 two-bone structural close (n08+n09) are all unaffected. No threshold discipline fires. The chapter's substance architecture is sound; the two proposed deletions tighten entry points without touching load-bearing bone structure.
+
+## 2026-05-31 — /and-substance chapter b01c09 Phase 5 review
+
+verdict_per_scene:
+  b01c09s01: SUBSTANCE-FELT
+  b01c09s02: SUBSTANCE-FELT
+  b01c09s03: SUBSTANCE-FELT
+chapter_goal_coverage:
+  wren_surveillance_without_naming: LAND
+  courier_face_beat_2_body_with_history: LAND
+  double_omission_structural_fact: LAND
+overall: ACCEPT
+notes:
+  - s01 relational_anchor_status +0.5 (cl-d08 first tranche): anchor-deepening felt as real weight through specificity — the vulnerable lane-window (time-block, one-entrance lane, unobserved stretch) is the operative detail; the chunk names "when the entrance is unobserved" without editorializing; world operates by its own logic (institutional architecture; the deliverable receives geometry because that is its designed content); the gap is held in silence; no false hope, no catharsis; SUBSTANCE-FELT
+  - s02 political_register-prot +0.5 (cl-d05 continuation draw): resentment-color deepening on a specific observation (Black-faction contact inference from gate-location and posture); the withholding is structural through substrate-selection, not through Taylor narrating hesitation; "not a conclusion, a direction" is honest about evidence quality; soft watch for /and-write: the second-layer withholding (routing courier observation would surface unofficial body-map status) should be available as structural implication at bone level — the substrate-selection should feel like operational-security discipline (not just routing habit); the Jarvis channel should not even enter consideration as a routing option
+  - s03 double-omission as structural fact: accounting-close lands as catastrophe-in-formation; two substrates described in terms of what they hold ("the packet holds what it holds; the feed-record holds what it holds separately") — the world does not register the gap; "she does not revisit either entry" reads as non-revisiting-as-architecture, not as incidental; the "simultaneously not drawing from" formulation is the chapter's central contribution; earned bleakness; no catharsis; SUBSTANCE-FELT
+  - cl-d06 deferred second tranche correctly excluded: c09 is architectural not spoken/recognition-register; targeted at c10 or later; no issue
+  - threshold discipline: no walkout triggers; no catharsis-before-weight; world operates by its own physics (institutional substrate, substrate-selection as operational norm); the gap is structural before it is moral; no hope-that-costs-nothing; no enemies pausing at convenient moments
+
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+soft_watch_for_and_write: SW-2 (dark-fantasy-reader) — s02 second-layer withholding must be available as structural implication at bone level; the bones that enact substrate-selection in s02 should carry operational-security texture; the internal feed-record should read as the correct substrate for this class of observation without the Jarvis channel entering Taylor's consideration; one bone that shows the observation filed into the internal record as matter-of-course (not deliberate omission from Jarvis, just routing-to-correct-substrate) will carry the fuller weight of the second layer without stating it
+
+## b01c09 /and-write Phase 4 trim — 2026-05-31
+
+verdict: ACCEPT (23 KEEP, 0 DELETE)
+file_verdict: ACCEPT
+notes:
+  - world-before-protagonist order satisfied at every environmental bone (s01n03 door / s02n02 supply cart / s02n03 stone-post); none is set dressing arranged for Taylor
+  - double-omission thesis requires both n05 (Wren route, modeling-layer) and n06 (courier entry, observation-log) — distinct costs (vulnerability vs political event) and distinct internal substrates; neither redundant
+  - held-axes in s01/s02 carry load-bearing dormancy under named pressure (deliverable ledger; Jarvis-channel expectation)
+  - s03n07 seal-drying = correct material close; no catharsis; the seal dries on a gap not named
+  - SW-2 carried to bone-gate: substrate-selection must read as operational-security discipline, not refusal

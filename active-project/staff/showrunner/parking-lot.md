@@ -1077,3 +1077,42 @@ parking_lot:
         the record, the paid mark"), NOT an architecture-summary; Phase 8.5 coherence + Phase 9
         Step 3.5 (0 mutes) both confirmed @19 cleared. opens-spacing honored: @6/@16/@25 rendered
         with three distinct textures (no metronome). Chapter terminal per DEC-0058.
+
+    - id: pl-2026-06-01-001
+      created_at: 2026-06-01T00:00:00Z
+      created_by: "/and-write b01c09 Phase 5 (continuity auditor fault-001 + flag-001)"
+      label: corwick-referenced-figure-uncarded + c09-canonical-geo-cards
+      target:
+        command: /and-facets
+        scope: "b01c09"
+        phase: Phase 0
+      severity: SOFT
+      description: |
+        Two non-blocking continuity-audit carries from /and-write b01c09 Phase 5:
+        (a) FAULT-REFERENCE fault-001: bones b01c09s02n09/n04/n05 use bare slug
+            `corwick` as SVO subject; no carded actor with this slug exists in
+            active-project/actors/. RESOLVED-BY-PRECEDENT at /and-write: c08 bones
+            (theater/bones/b01-c08.md lines 35/38 + cast header) used the identical
+            bare slug `corwick` for the same figure and SHIPPED (c08 terminal +
+            /and-facets COMPLETE). corwick is the established slug for the courier
+            figure named at c08s03; using it in c09 is correct continuity, not a
+            fault. The Phase-5 auditor flagged HARD only because it is forbidden from
+            loading c08 bones (could not see the precedent). Optional cross-chapter
+            cleanup: margit may card `corwick` (and `wenna-cobb`, same class) as
+            referenced-figure cards if uncarded-bone-subject figures should be
+            registered. NOT a c09 blocker.
+        (b) flag-001: dragonpit-margin lane + lower-gate side-exit entered as set
+            pieces for the first time in c09 bones; warehouse has oc-rushwick /
+            oc-stitch-house-lane / oc-pig-tallow-lane / cond-dragon-proximity but no
+            dragonpit-margin or lower-gate card. Canonical Westerosi geography
+            (Dragonpit is F&B canon), not invented oc- locations. Mirrors oc-rushwick
+            handling at pl-2026-05-28-001 (/and-facets Phase 0 margit dispatch).
+            /and-facets b01c09 Phase 0 should confirm coverage or dispatch margit.
+      context_refs:
+        - active-project/staff/auditor/write-b01c09-pass5.md
+        - active-project/theater/bones/b01-c08.md
+        - active-project/staff/showrunner/b01c09-bones-draft-2026-05-31.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

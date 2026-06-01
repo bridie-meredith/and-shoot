@@ -1,3 +1,115 @@
+## SESSION-START — 2026-05-31T23:00:00Z — write-b01c09-pass2-svo-recasts-verify
+dispatch: /and-write b01c09 Phase 2 fixer pass — verify and confirm 12 FAULT-FORM recasts in b01c09 bones draft; svo: field edits only; two judgment bones (s02n05, s03n04)
+target: active-project/staff/showrunner/b01c09-bones-draft-2026-05-31.md
+audit-report: active-project/staff/auditor/write-b01c09-pass2.md
+findings-queued: 12
+
+## write-b01c09-pass2 — ALL 12 RECASTS VERIFIED PRESENT — 2026-05-31T23:01:00Z
+fault: 12 FAULT-FORM findings (fault-002 through fault-014, excluding delta-floor fault-001/008) required svo: field recasts
+scope: line (12 bones)
+change: All 12 recasts confirmed present in file at current state; prior session (SESSION-START 2026-05-31T22:00:00Z) applied and logged all recasts; this session verifies each in place — no additional edits required:
+  s01n05: "wren-stitch-maker-flea-bottom-ward reaches the bread-seller corner" — CONFIRMED line 68
+  s01n06: "taylor-hebert-kl-122ac files wren's route" — CONFIRMED line 80
+  s02n02: "the supply cart marks the lower-gate road" — CONFIRMED line 169
+  s02n04: "corwick faces the second man" — CONFIRMED line 193
+  s02n05: "corwick squares the shoulders" — CONFIRMED line 208
+  s02n06: "taylor-hebert-kl-122ac files the posture-class" — CONFIRMED line 221
+  s02n07: "taylor-hebert-kl-122ac closes the observation-entry" — CONFIRMED line 235
+  s03n03: "taylor-hebert-kl-122ac seals the packet" — CONFIRMED line 352
+  s03n04: "the ward-coverage notes mark the station-left" — CONFIRMED line 367
+  s03n05: "the internal map files wren's route" — CONFIRMED line 381
+  s03n06: "the feed-record closes the courier entry" — CONFIRMED line 396
+  s03n07: "the seal dries" — CONFIRMED line 412
+criteria met: yes — all 12 recasts present; no drift from auditor guidance; judgment bones s02n05 and s03n04 confirmed as dispatched
+
+## SESSION-END — 2026-05-31T23:02:00Z — write-b01c09-pass2-svo-recasts-verify
+findings-applied: 0 (all 12 already applied by prior session; this session is verification only)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-05-31T22:00:00Z — write-b01c09-pass2-svo-recasts
+dispatch: /and-write b01c09 Phase 2 fixer pass — 12 FAULT-FORM recasts in b01c09 bones draft; minimum-change svo: field edits only; two judgment bones (s02n05, s03n04); SW-1/2/3 disciplines preserved
+target: active-project/staff/showrunner/b01c09-bones-draft-2026-05-31.md
+audit-report: active-project/staff/auditor/write-b01c09-pass2.md
+findings-queued: 12
+
+## s01n05 — RESOLVED — 2026-05-31T22:01:00Z
+fault: "stops at the bread-seller corner" — stative PP of place (FAULT-FORM-MODIFIER)
+scope: line
+change: svo recast from "wren-stitch-maker-flea-bottom-ward stops at the bread-seller corner" to "wren-stitch-maker-flea-bottom-ward reaches the bread-seller corner"; transitive arrival verb; named location becomes direct object; waypoint-coverage intact
+criteria met: yes — no PP; concrete transitive verb; event_map [wren-stops-at-bread-seller-corner-route-waypoint] still grounded
+
+## s01n06 — RESOLVED — 2026-05-31T22:02:00Z
+fault: "sets wren's route in the internal map" — "in the internal map" is banned PP of place (FAULT-FORM-MODIFIER)
+scope: line
+change: svo recast from "taylor-hebert-kl-122ac sets wren's route in the internal map" to "taylor-hebert-kl-122ac files wren's route"; PP dropped; "files" is concrete transitive; route remains direct object; SW-1 internal-map function preserved in axes_held rationale (unchanged)
+criteria met: yes — no PP; concrete transitive verb; SW-1 compliance intact
+
+## s02n02 — RESOLVED — 2026-05-31T22:03:00Z
+fault: "rests at the road below the lower gate" — stative verb + compound PP of place (FAULT-FORM-NON-ACTION-VERB + FAULT-FORM-MODIFIER)
+scope: line
+change: svo recast from "the supply cart rests at the road below the lower gate" to "the supply cart marks the lower-gate road"; stative dropped; "marks" is transitive; compound PP collapsed to compound-noun object "lower-gate road"; baseline-environmental-anchor function preserved
+criteria met: yes — no stative; no PP; concrete transitive verb; named compound-noun object
+
+## s02n04 — RESOLVED — 2026-05-31T22:04:00Z
+fault: "angles the body toward the second man" — "toward the second man" is banned PP of direction (FAULT-FORM-MODIFIER)
+scope: line
+change: svo recast from "corwick angles the body toward the second man" to "corwick faces the second man"; PP dropped; "faces" is licensed transitive posture-act (established precedent b01c01 audit); subject-verb-object clean; SW-3 physical-signature part 1 role preserved
+criteria met: yes — no PP; transitive posture-act verb; SW-3 part-1 intact
+
+## s02n05 — RESOLVED — 2026-05-31T22:05:00Z
+fault: "holds the delivery-stance at the stone-post" — stative verb + PP of place (FAULT-FORM-NON-ACTION-VERB + FAULT-FORM-MODIFIER); SW-3 physical-signature part 2 must stay a concrete body-act
+scope: line
+change: svo recast from "corwick holds the delivery-stance at the stone-post" to "corwick squares the shoulders"; both stative and PP eliminated; "squares" is a concrete body-act verb; "the shoulders" is a physical direct object; delivery-complete physical signature preserved as a body-act distinct from n04's facing and n06's categorization; SW-3 three-bone structure intact; no deviation from auditor suggestion
+criteria met: yes — no stative; no PP; concrete body-act verb; SW-3 part-2 role distinct from n04 and n06
+
+## s02n06 — RESOLVED — 2026-05-31T22:06:00Z
+fault: "sets the posture-class in the feed-record" — "in the feed-record" is banned PP of place (FAULT-FORM-MODIFIER); moving bone (political_register-prot +0.5)
+scope: line
+change: svo recast from "taylor-hebert-kl-122ac sets the posture-class in the feed-record" to "taylor-hebert-kl-122ac files the posture-class"; PP dropped; "files" is concrete transitive; posture-class remains direct object; axis_moves / axes_held / cost_ledger_anchor cl-d05 all untouched
+criteria met: yes — no PP; concrete transitive verb; moving-bone substance role preserved
+
+## s02n07 — RESOLVED — 2026-05-31T22:07:00Z
+fault: "logs the observation in the feed-record" — "in the feed-record" is banned PP of place (FAULT-FORM-MODIFIER)
+scope: line
+change: svo recast from "taylor-hebert-kl-122ac logs the observation in the feed-record" to "taylor-hebert-kl-122ac closes the observation-entry"; PP dropped; "closes" is concrete transitive; "the observation-entry" is compound-noun direct object encoding the feed-record's entry as a physical write-act; SW-2 compliance preserved in axes_held rationale (unchanged)
+criteria met: yes — no PP; concrete transitive verb; SW-2 substrate-selection function intact
+
+## s03n03 — RESOLVED — 2026-05-31T22:08:00Z
+fault: "brings the seal down on the packet" — "down on the packet" is banned compound PP of direction/destination (FAULT-FORM-MODIFIER); CENTRAL EVENT bone for s03
+scope: line
+change: svo recast from "taylor-hebert-kl-122ac brings the seal down on the packet" to "taylor-hebert-kl-122ac seals the packet"; PP eliminated; "seals" encodes the physical close act as a single transitive verb (c06 precedent); packet is direct object; central-event concrete-SVO function preserved; EVENT-NOT-CONCRETE-clean
+criteria met: yes — no PP; single concrete transitive verb; central-event coverage intact; no deviation from auditor suggestion
+
+## s03n04 — RESOLVED — 2026-05-31T22:09:00Z
+fault: "rest on the station surface" — stative verb + PP of place (FAULT-FORM-NON-ACTION-VERB + FAULT-FORM-MODIFIER); SW-1 deliverable-substrate grounding bone must keep notes as a physical object on the station
+scope: line
+change: svo recast from "the ward-coverage notes rest on the station surface" to "the ward-coverage notes mark the station-left"; stative dropped; PP dropped; "marks" is concrete transitive (parallel to s02n02 recast); "the station-left" is a compound-noun naming the position on the surface without a prepositional phrase; deliverable-substrate physical presence preserved; two-substrates-one-surface thesis image intact; no deviation from auditor suggestion
+criteria met: yes — no stative; no PP; concrete transitive verb; SW-1 deliverable-substrate role intact; thesis image preserved
+
+## s03n05 — RESOLVED — 2026-05-31T22:10:00Z
+fault: "holds wren's route" — "holds" is a stative holds-of-abstraction verb (FAULT-FORM-NON-ACTION-VERB); SW-1 internal-map substrate bone
+scope: line
+change: svo recast from "the internal map holds wren's route" to "the internal map files wren's route"; stative replaced with "files" (concrete transitive, parallel to s01n06 recast); Wren's route remains direct object; SW-1 internal-map substrate role and axes_held rationale unchanged
+criteria met: yes — no stative; concrete transitive verb; SW-1 internal-map role intact
+
+## s03n06 — RESOLVED — 2026-05-31T22:11:00Z
+fault: "holds the courier observation" — "holds" is a stative holds-of-abstraction verb (FAULT-FORM-NON-ACTION-VERB); SW-1/SW-2 internal-map substrate bone
+scope: line
+change: svo recast from "the feed-record holds the courier observation" to "the feed-record closes the courier entry"; stative replaced with "closes" (concrete transitive; parallel to s02n07 recast); "the courier entry" is compound-noun direct object; SW-1/SW-2 substrate-selection function and axes_held rationale unchanged
+criteria met: yes — no stative; concrete transitive verb; SW-1/SW-2 roles intact
+
+## s03n07 — RESOLVED — 2026-05-31T22:12:00Z
+fault: "the seal dries on the packet" — "on the packet" is banned PP of place (FAULT-FORM-MODIFIER)
+scope: line
+change: svo recast from "the seal dries on the packet" to "the seal dries"; PP dropped; bare intransitive "dries" is a physical-process verb landing cleanly (parallel to b01c01 "the insects propagate" pattern); closing sensory anchor function preserved; axes_held rationale unchanged
+criteria met: yes — PP dropped; bare intransitive physical-process verb; closing image intact
+
+## SESSION-END — 2026-05-31T22:13:00Z — write-b01c09-pass2-svo-recasts
+findings-applied: 12
+findings-skipped: 0 (s01n04 and s02n06 magnitudes left at 0.5 per dispatch — not a finding, excluded per binding precedent DEC-0002)
+exit: CLEAN
+
 ## SESSION-START — 2026-05-31T20:00:00Z — and-facets-b01c08-cycle2-fixes
 dispatch: /and-facets b01c08 Phase 5b cycle-2 remediation — 4 failed facets (interest-narrator cape-fic REVISE; sensory old-state-reader REVISE; vibes worm-canon REVISE; feeling dark-fantasy REVISE); minimum change per criteria; NI + feeling dispatch to taylor impersonator; sensory fix to studio loc-state; vibes = direct actor file edit
 target: active-project/theater/facets/interest-narrator-b01-c08.md, active-project/theater/facets/feeling-taylor-hebert-kl-122ac-b01-c08.md, active-project/theater/facets/sensory-b01-c08.md, active-project/theater/facets/location-state-b01-c08.md, active-project/actors/aemond-targaryen-122ac/vibes.md

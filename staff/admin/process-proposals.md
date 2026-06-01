@@ -3851,7 +3851,7 @@ evidence_refs:
     This proposal extends the completion-gate pattern to central-event axis-move bones; a
     companion body-act bone for the axis-move peak is a separate requirement from held-axis
     witnessing."
-recurrence_count: 3
+recurrence_count: 4
 recurrence_refs:
   - "b01c01 era: staging findings on central-event bones (body-act absent at peak) pre-dated
     proposal infrastructure; founding evidence for URI-STITCH-SPINE-STAGING. Not a formal
@@ -3863,6 +3863,23 @@ recurrence_refs:
     central-event), finding-004 (@13 central-event foreshadow), finding-006 (@20 central-event
     courier-delivery): 3/4 spine-promotion findings on central-event bones with absent/thin
     physical body-act at peak moment. Third chapter-level occurrence."
+  - "active-project/staff/auditor/write-b01c09-bone-gate.md — signal-001 (CORROBORATING, NOT a
+    new failure): s02 central-precursor bone n09 'the insect-feed returns corwick' is an
+    instrument/perception-class SVO (feed-interaction verb 'returns' = cognitive/mechanism per
+    this proposal's detection heuristic). The bone-gate ACCEPTED it with a /and-stitch Phase 4
+    render-physical advisory, explicitly on the basis that companion bones n04 ('corwick faces
+    the second man') and n05 ('corwick squares the shoulders') carry concrete physical body-acts
+    in the ±2 peak zone — i.e. the SW-3 split satisfies exactly the body-act-companion condition
+    this proposal codifies. This case is EVIDENCE THAT THE PROP-0030 MECHANISM IS CORRECT, not a
+    gap it misses: under PROP-0030 the Phase 6 BODY-ACT-ABSENT-AT-PEAK SIGNAL would have fired on
+    n09 and then cleared on companion-presence, converting the current ad-hoc 'FLAG accepted with
+    rationale' into a mechanical 'SIGNAL evaluated, cleared by n04/n05.' The caller's framing
+    question ('should the bone-gate require the central-precursor bone ITSELF to be concrete
+    rather than lean on neighbors?') is answered NO by this proposal's accepted design: the
+    SW-3 feed-surface→physical-signature split intentionally places the concrete act on the
+    companion bones. Fourth chapter-level occurrence of the central-event cognitive/mechanism SVO
+    + companion-dependency pattern; no new proposal authored (admin process-critic, 2026-06-01,
+    /and-write b01c09 Phase 6.5)."
 proposed_diff: |
   CHANGE 1 — .claude/commands/and-write.md, Phase 1, Step 2 (bone-shape discipline):
 

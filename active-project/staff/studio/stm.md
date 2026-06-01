@@ -1,5 +1,50 @@
 # studio STM
 
+## 2026-06-01 — /and-facets b01-c09 Phase 1 R1 sensory authoring (BLIND)
+
+Authored sensory-b01-c09.md (2 entries, 23 bones). Density 2/23 = 8.7% — short-chapter exemption ACTIVE (23 < 30; modality-count = floor = 2; ceiling relaxed to max(6%, 2/23) = 8.7%; ADVISORY not blocking). Modality floor ≥2 met exactly with thermal + tactile.
+
+Two fires:
+  sensory:1 @8 thermal down (stone-lane-late-morning-warmth → hill-lane-evening-cool) — scene-B entry; Taylor transitions from the late-morning hook-ward circuit into the Dragonpit-margin lane at evening; the hill-side location (Rhaenys's Hill) loses retained day-heat faster than the lower wards. Directly addresses BONES-AIRLESS-RISK: physically grounds @8 before @11 apparatus-feed fires. Old-state sourced from scene-map time-of-day (scene-A "late morning" → scene-B "evening") + Dragonpit hill location; follows b01c08 SEAM-009/010 carve-out precedent.
+  sensory:2 @23 tactile down (wax-soft-warm → wax-set-firm) — scene-C terminal image; the seal applied at @19 hardens through @23. Directly addresses priority brief: "the seal-drying @23 wants a tactile/olfactory anchor." "Dries" is bare; the tactile quality of cooling wax (yielding-warm → finger-resist-firm) is not self-carried. Old-state entailed by @19 sealing act; no prior tactile fire in chapter.
+
+Modalities: thermal + tactile (2; floor met).
+Per-scene cap: scene-A=0, scene-B=1 (@8), scene-C=1 (@23) — all within ≤3 cap.
+Cull decisions: @3 smell (genuine; refused because adding a third modality activates standard 6% ceiling; priority brief targets scene-B + terminal, not scene-A) + @19 smell (genuine molten-wax scorch; refused because tactile @23 is the stronger terminal anchor and two scene-C fires create scene-concentration).
+SEAM-011: sensory:1 old-state has no prior loc-state anchor in b01c09; R2 reviewer must confirm loc-state:3 does not contradict.
+Inflight: theater/facets/_inflight/proto-lines-sensory.md filed (citations @8/@23).
+
+## 2026-06-01 — /and-facets b01-c09 Phase 1 R1 location-state authoring (BLIND)
+
+Authored location-state-b01-c09.md (5 entries, 23 bones, 0 cull). Three-scene chapter; three distinct locations across three scenes (oc-hook-precinct + oc-stitch-house-lane for scene-A; oc-dragonpit-margin for scene-B; the-feed-station for scene-C). Silent chapter — no dialogue bones.
+
+Five fires:
+  loc-state:1 @1 — oc-hook-precinct; late-morning; scene-A place-anchor; transitional `enters`; the lane-mouth south of the Hook, single-entrance corridor opening toward stitch-shop lanes.
+  loc-state:2 @3 — oc-stitch-house-lane; late-morning; state-change (door opens at lane-mouth); the stitch-shop door standing open — threshold condition shifts, placing Wren's lane in coverage-accessible state.
+  loc-state:3 @8 — oc-dragonpit-margin; evening; scene-B place-anchor; transitional `enters`; the outer lane below the Dragonpit margin, supply cart on the gate-road establishing the spatial approach to the lower gate.
+  loc-state:4 @11 — oc-dragonpit-margin; evening; state-change (new entrant at stone-post); Corwick at the lower-gate stone-post beside the side-exit — herald-at-wall test: his presence IS what @12–@14 turn on.
+  loc-state:5 @17 — the-feed-station; end-of-day; scene-C place-anchor; transitional `takes`; station surface with unsealed packet and ward-coverage notes; the accounting workspace as the scene's physical substrate.
+
+Cull: 0 entries removed. All 5 survive strip / pointing / frugality / previous-entry tests.
+
+REJECT decisions (representative):
+  @2 (insect-feed threads stitch-shop lane — instrument subject; feed-perception; inherits @1)
+  @4–@5 (wren walks/reaches — movement verbs but frugality REJECT: @3 stitch-shop-door already establishes lane condition; strip test passes in inherited env; no new state-change)
+  @6–@7 (filing/administrative acts — no movement; REJECT necessity axis)
+  @9–@10 (supply cart marks lower-gate road / stone-post marks side-exit — cart/post are environmental fixtures, not state-changes; location-card content; anti-pattern 3; inherit @8)
+  @12–@13 (corwick faces / squares shoulders — stillness/positioning beats; inherit @11 new-entrant state; no additional state-change)
+  @14–@16 (filing/closing/circuit-completion — administrative in-place or movement in inherited environment; inherit @8/@11)
+  @18–@23 (dexterity/stillness/administrative in-place — all inherit @17 feed-station; including @23 seal-dries which is persistence-as-state / location-card content / anti-pattern 3)
+
+No continuity-carry entries: all three scene rhythm-shapes (rising-to-quiet-peak / rising-to-quiet-peak / falling-to-thesis-image) exclude the transition-run continuity license.
+
+Seams flagged for R2:
+  - oc-dragonpit-margin: no warehouse card confirmed; slug from bones header
+  - the-feed-station: no warehouse card confirmed (carry from b01c08)
+  - slug consistency: b01c08 used `the-hook-ward`; b01c09 uses `oc-hook-precinct` at @1; may need canonicalization
+
+Inflight: theater/facets/_inflight/proto-lines-loc-state.md filed (byte-identical bones, citations on @1/@3/@8/@11/@17).
+
 ## 2026-05-31 — /and-facets b01-c08 Phase 1 R1 sensory authoring (BLIND)
 
 Authored sensory-b01-c08.md (2 entries, 24 bones). Density 2/24 = 8.3% — above standard 6% ceiling; at short-chapter exemption ceiling max(6%, 2/24) = 8.3%; ADVISORY not blocking. Modality floor ≥2 met exactly with sound + light.
