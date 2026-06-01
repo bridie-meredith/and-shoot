@@ -1,7 +1,13 @@
 cascade:
   root: b01c09
-  invoked_at: 2026-05-31T23:00:00Z
-  invoked_command: /and-substance chapter b01c09 --cascade
+  invoked_at: 2026-06-01T15:30:00Z
+  invoked_command: "produce-chapter-protocol b01c09 → cascade to b01-complete (c10–c20)"
+  mode: unattended
+  run_intent: |
+    Multi-chapter cascade. Finish c09 (resume facets → stitch P9 + P10), then
+    produce c10..c20 end-to-end per RUNBOOK chapter-production protocol (R1–R5).
+    Book b01 chapter_count = 20. Drive as far as feasible; halt cleanly with a
+    checkpoint on cap-exhaustion / hard-block / practical session limit.
   last_completed:
     level: bones-review
     slug: b01c09
