@@ -3,14 +3,16 @@ cascade:
   invoked_at: 2026-05-31T23:00:00Z
   invoked_command: /and-substance chapter b01c09 --cascade
   last_completed:
-    level: bones-review
+    level: facets
     slug: b01c09
-    completed_at: 2026-06-01T01:00:00Z
+    completed_at: 2026-06-01T02:00:00Z
   next:
-    command: /and-facets b01c09
+    command: /and-stitch b01c09
     args: [b01c09]
   reason: continue
   failure: null
+  facets: "audited-r1 (DEC-0063 Option B). Phase 5b 9/9 ACCEPT; interest-narrator REVISE resolved by narrator:5 @19 no-recognition-clause removal (verified). Phase 5 CLEAN 0 HARD; Earth-Bet fence CLEAN; scene-map 23/23. bidirectional_loop VALIDATED. orchestrator-critic SHIPPABLE-WITH-CAVEATS (caveat = authorized R2/multi-cycle skip). R2 + Phase 3-4 skipped per Option B."
+  stitch_carries: "chunk_cold_read CHUNK-CLASS-B / DEC-0062 (apparatus-vocab + prior-context design-inherent; CONTINUE bar = tentative-yes not strict-yes; cold_read_risk_carry: motive-opacity design-intentional, color-metaphor c01-c08 anchor, causality-design-inherent). Phase 4 voice-embodiment advisories: alive-002 @8-@11 scene-B opening render person-first; s02n09 'insect-feed returns corwick' render as physical perceptual event not data-record (also grd-001 sensory:3 @11 supports this); marks-verb @9/@10 vary at prose layer. Phase 8.5 central-event-muffle armed (voice_risk). Phase 9 separated-scoring (completeness + aliveness both required)."
   bones_review: "PASS / follow_check PASS-WITH-NOTES — CLEAR for /and-facets. Carries to Phase 2.5: follow-001 (s02 @8 temporal gap, context-ledger candidate), signal-001 (@11 instrument-class render-physical / grounding-ledger), signal-002 (@9/@10 marks-verb). pl-2026-06-01-001 (corwick card / dragonpit-margin+lower-gate geo cards) resolves at /and-facets Phase 0."
   notes: |
     /and-write b01c09 COMPLETE (2026-06-01). 23 bones / 3 scenes emitted:
