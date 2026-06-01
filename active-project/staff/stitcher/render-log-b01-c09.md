@@ -216,3 +216,20 @@ RECONCILE:
   bones: rendered(23) + merged(0) + dropped(0) + rendered-illegible(0) = 23 == authored(23)  ✓ BALANCED
   facets: rendered(20) + dropped(0) + unrendered-remainder(13) = 33 == cite-index facet entries(33)  ✓ BALANCED
   FLAG-UNRENDERED-REMAINDER: vibes:1-7 (7) + state:1-6 (6) — non-surface state-tracking facets; expected, not a defect.
+
+## Phase 10 — Forward-thread edits
+
+verdict: PASS-THREAD (no state-drift, no hook breach, bone-faithfulness fence honored)
+
+- entry_id: rev-0002
+  finding_class: MISSED-CALLBACK
+  classification: presentation-reinforcement
+  location: prologue, first sentence
+  before: "The arrangement holds. The count runs the Hook and four wards past it now,"
+  after: "The arrangement holds, and the Crone's stretch holds with it — the bay-damp on the morning stone, the cold that does not lift before the first bell. The count runs the Hook and four wards past it now,"
+  rationale: re-states the canonical season clock (Crone's stretch / bay-damp / first bell) per rev-0001's c08->c09 cross-chapter calendar handoff (target_consumer_chapter: b01c09); no new fact, calendar-continuity reinforcement only.
+  applied_at: 2026-06-01T16:40:00Z
+
+substantive parking-lot items written: 0
+uncertain_edits (held for principal acknowledge):
+  - hook-0007 (Halvard, expected_payoff c09): unreferenced on-page in c09. Threading fork recommends NO EDIT — the foreclosure is substantive d09 chain work and any callback is fence-adjacent to the moral_legibility HELD constraint. Hook stays open in aggregate-state; surfaces when the d09 chapter is produced. NOT applied, NOT parking-lotted (deliberately-open per the omission design).
