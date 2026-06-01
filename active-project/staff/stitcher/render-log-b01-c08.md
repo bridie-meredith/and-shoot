@@ -166,3 +166,28 @@ The chapter ships with the chunk_cold_read.cold_read_risk_carry caveats acknowle
 
 next: cascade-checkpoint advance to chapter-stable; downstream consumers
 (/and-substance book Phase 0 + /and-review verdict <book>) treat as resolved.
+
+---
+
+## Phase 10 — Forward-thread edits (URI-STITCH-PHASE-10-FORWARD-THREAD; inline-executed 2026-06-01; OPTION (b) per DEC-0065)
+
+Accumulated-past source: drafts-fallback (aggregate-state.md absent at run).
+Threading-review fork report: active-project/staff/reviews/forward-thread-b01-c08-20260601T050033Z.md
+
+Pre-run rename (DEC-0065): c08 living feed-body wenna-cobb → meryn-cobb (de-collide c07 dead-child founding-entry). Applied to bones (cast + @20), draft (line 29), archived scene-map. Not a Phase-10 threading edit; recorded here for completeness.
+
+- entry_id: rev-0001
+  finding_class: STATE-DRIFT
+  classification: presentation-reinforcement
+  location: line 1 (italic prologue), opening sentences
+  before: "*The arrangement holds. The accounting holds. The argument the septon left in my hand has not resolved"
+  after: "*The arrangement holds into the Crone's stretch, the bay-damp settled on the morning stone now and not lifting before the first bell. The accounting holds. The argument the septon left in my hand has not resolved"
+  rationale: Calendar continuity anchor using c07's already-declared season register (Crone's stretch / bay-damp / first bell); recovers cross-chapter clock per SOFT pl-2026-05-31-008. No new fact, no axis-move.
+  applied_at: 2026-06-01T05:00:33Z
+
+NOT APPLIED:
+- UNPAID-HOOK (substantive): c05 Rushwick courier/enforcement payoff. Owned by /and-substance via pl-2026-05-31-007 (pre-tracked, deferred-by-design within c08-c10 window). c08 lands the courier-FACE leg (Corwick). No new HARD item written; pl-2026-05-31-007 annotated; carried in aggregate-state open_hooks[].
+- MISSED-CALLBACK (presentation-reinforcement): "the septon's corner" callback at line 29. Fence-against (c08 deliberately holds Halvard offstage; prologue already carries the thread). Held-not-applied.
+
+## Phase 10 VERDICT: PASS-THREAD
+Edits applied: 0 cosmetic + 1 presentation-reinforcement. Parking-lot items written: 0 new substantive HARD. Aggregate-state: created initial (through_chapter=b01c08).
