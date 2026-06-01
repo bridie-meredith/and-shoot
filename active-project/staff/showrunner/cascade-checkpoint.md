@@ -1,16 +1,26 @@
 cascade:
   root: b01c09
-  invoked_at: 2026-05-31T23:00:00Z
-  invoked_command: /and-substance chapter b01c09 --cascade
+  invoked_at: 2026-06-01T15:30:00Z
+  invoked_command: "produce-chapter-protocol b01c09 → cascade to b01-complete (c10–c20)"
+  mode: unattended
+  run_intent: |
+    Multi-chapter cascade. Finish c09 (resume facets → stitch P9 + P10), then
+    produce c10..c20 end-to-end per RUNBOOK chapter-production protocol (R1–R5).
+    Book b01 chapter_count = 20. Drive as far as feasible; halt cleanly with a
+    checkpoint on cap-exhaustion / hard-block / practical session limit.
   last_completed:
-    level: bones-review
+    level: stitch-phase-10
     slug: b01c09
-    completed_at: 2026-06-01T01:00:00Z
+    completed_at: 2026-06-01T16:45:00Z
   next:
-    command: /and-facets b01c09
-    args: [b01c09]
+    command: /and-substance chapter b01c10
+    args: [chapter, b01c10]
   reason: continue
   failure: null
+  pending_depth_passes: []   # c09 depth pass RESOLVED (DEC-0068): /and-write revise --from-signals + re-facets + re-stitch delivered (Phase 2.5 ALIVE + coherence PASS + prose-rationale 0 + trio de-fog endorsement); depth_pass_resolved_at stamped. b01 now has ZERO unresolved depth passes.
+  pending_cohere: "consecutive-airless c06-c09 (DEC-0066/0067) — book-level /and-cohere concern; re-evaluate depth-pass-pending accumulation at N>=6 (DEC-0067). c09 depth pass shows the airlessness is design-inherent (resolvable at substance layer, not at the context-stripped terminal gate)."
+  c09_complete: "draft/b01-c09.md TERMINAL + DEPTH-RESOLVED (de-fogged, embodied re-render). Phase 9 cold-read design-inherent NO recorded; Phase 10 PASS-THREAD; aggregate-state through b01c09 + rev-0003."
+  facets: "audited-r1 (DEC-0063 Option-B streamlined). Phase 5 0 HARD / 9 SIGNAL; Phase 5b all 8 content facets PASS 3-of-3 (1 fixer loop on sensory old-state lineage). orchestrator-critic: SUCCESS 7/7. Carry to /and-stitch: signal-sup-001 (validate exposition:3@8 / loc-state:3@8 fold for redundancy at Phase 1); apparatus-muffle @11 (Phase 8.5); alive-002 VOICE-FIXABLE scene-B opening person-first (Phase 4); moral_legibility hold s03 NO recognition beat (DEC-0062); cold_read CONTINUE bar = tentative-yes (Class B)."
   bones_review: "PASS / follow_check PASS-WITH-NOTES — CLEAR for /and-facets. Carries to Phase 2.5: follow-001 (s02 @8 temporal gap, context-ledger candidate), signal-001 (@11 instrument-class render-physical / grounding-ledger), signal-002 (@9/@10 marks-verb). pl-2026-06-01-001 (corwick card / dragonpit-margin+lower-gate geo cards) resolves at /and-facets Phase 0."
   notes: |
     /and-write b01c09 COMPLETE (2026-06-01). 23 bones / 3 scenes emitted:

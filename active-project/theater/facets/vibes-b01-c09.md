@@ -1,7 +1,7 @@
 facet: vibes-updates
 episode: b01-c09
-author: showrunner (R1 author exception — cross-cutting vibe-cloud visibility)
-mode: R1-blind
+author: showrunner (R1 author exception — cross-cutting vibe-cloud visibility; depth-pass re-anchor 2026-06-01 — re-numbered 23→27 bones; on-anchor entries re-bound [@4→@6, @14→@18, @19→@23] + licensed-by proto:<id> references re-mapped to the new flat-ids; off-anchor entries [vibes:4 loc:the-hook-ward, vibes:7 episode] keep their no-anchor form, proto-refs re-mapped; content stable)
+mode: R1-blind (content carried from prior run; archive 20260601T174453Z-b01c09-pre-depthpass-facets)
 generated: 2026-06-01
 cull-count: 0
 ---
@@ -31,9 +31,9 @@ cull-count: 0
 #     as c08 vibes:1; ++ on existing carve-out-established keyword; auditor may promote
 #     to card-promotion task.
 
-# ── scene-A: coverage architecture closes around Wren (@1-@7) ───────────────────
+# ── scene-A: coverage architecture closes around Wren (@1-@10) ──────────────────
 
-1 @4 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [wren-daily-circuit-in-internal-map-unlogged, vulnerable-window-documented-without-naming, pattern-specificity-without-pricing] | licensed-by: proto:4, proto:6, proto:7, state-update:1
+1 @6 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [wren-daily-circuit-in-internal-map-unlogged, vulnerable-window-documented-without-naming, pattern-specificity-without-pricing] | licensed-by: proto:6, proto:8, proto:10, state-update:1
   # s01 enacts the most specific instance of the atonement-pattern to date: Wren's daily
   # circuit — including the one-block stretch where the lane has a single entrance and she
   # is alone — enters the internal map without a ledger entry (state-update:1:
@@ -44,7 +44,7 @@ cull-count: 0
   # this token covers a named individual's movement-pattern entered without pricing.
   # No string overlap with existing bundle.
 
-2 @4 actor:taylor-hebert-kl-122ac ++ rising entrapment: [daily-pattern-of-named-individual-mapped-and-withheld, coverage-architecture-now-person-specific, vulnerable-window-inside-the-grid] | licensed-by: proto:4, proto:6, proto:7, state-update:1
+2 @6 actor:taylor-hebert-kl-122ac ++ rising entrapment: [daily-pattern-of-named-individual-mapped-and-withheld, coverage-architecture-now-person-specific, vulnerable-window-inside-the-grid] | licensed-by: proto:6, proto:8, proto:10, state-update:1
   # The cage is now person-legible not just geometry-legible. Prior rising-entrapment
   # tokens (c05 ++) covered the courier as unnamed body-in-map and the Rushwick as a
   # substrate the network tracks. c09 s01 escalates: a named individual's daily pattern,
@@ -52,7 +52,7 @@ cull-count: 0
   # architecture and withheld from the deliverable. The grid's entrapment function is
   # now operating at person-specific granularity. No string overlap with existing bundle.
 
-3 @4 actor:wren-stitch-maker-flea-bottom-ward ++ rising entrapment: [daily-circuit-legible-to-the-unseen-observer, alone-window-documented-in-the-grid, mapped-freedom-not-only-constrained-freedom] | licensed-by: proto:4, proto:5, state-update:1, world-build:cond-road-to-hell-chain-shape
+3 @6 actor:wren-stitch-maker-flea-bottom-ward ++ rising entrapment: [daily-circuit-legible-to-the-unseen-observer, alone-window-documented-in-the-grid, mapped-freedom-not-only-constrained-freedom] | licensed-by: proto:6, proto:7, state-update:1, world-build:cond-road-to-hell-chain-shape
   # Wren's rising-entrapment (pre-seeded: inside-the-network-without-knowing-it,
   # free-movement-is-the-cost, freedom-lands-at-d14) advances materially at s01.
   # The feed has accumulated her circuit — stitch-shop to water-sellers, bread-seller
@@ -62,7 +62,7 @@ cull-count: 0
   # escalation: her freedom-of-movement is no longer just a general cost — it is mapped
   # at a granularity that includes when she is alone. No string overlap with existing bundle.
 
-4 loc:the-hook-ward ++ coverage-extends-through-absorbance: [named-individual-daily-pattern-mapped-in-lane-grid, vulnerable-lane-window-inside-coverage, wren-circuit-as-person-specific-layer-above-geometric] | licensed-by: proto:4, proto:7, state-update:1
+4 loc:the-hook-ward ++ coverage-extends-through-absorbance: [named-individual-daily-pattern-mapped-in-lane-grid, vulnerable-lane-window-inside-coverage, wren-circuit-as-person-specific-layer-above-geometric] | licensed-by: proto:6, proto:10, state-update:1
   # Off-anchor: the person-specific layer extends across s01 as a whole, not a single
   # bone. The location's existing keyword (c08: watcher-network-subsumed-at-geometric-layer,
   # two-surveillance-architectures-on-the-same-ground) established the hook-ward as doubly-
@@ -73,9 +73,9 @@ cull-count: 0
   # network subsumed) and the person-specific layer (Wren's daily circuit mapped) for
   # b01c10+. No string overlap with existing bundle.
 
-# ── scene-B: courier at the Dragonpit lower gate (@8-@16) ───────────────────────
+# ── scene-B: courier at the Dragonpit lower gate (@11-@20) ──────────────────────
 
-5 @14 actor:taylor-hebert-kl-122ac ++ political-register-color-present: [particular-gate-particular-body-particular-faction-direction, black-faction-contact-inferred-from-posture-and-location, color-sharpening-to-directional-inference-not-substrate] | licensed-by: proto:14, proto:15, state-update:2
+5 @18 actor:taylor-hebert-kl-122ac ++ political-register-color-present: [particular-gate-particular-body-particular-faction-direction, black-faction-contact-inferred-from-posture-and-location, color-sharpening-to-directional-inference-not-substrate] | licensed-by: proto:18, proto:19, state-update:2
   # s02 adds a distinct event-frame to political-register-color-present (c05:
   # resentment-color-in-court-tier-feed-interpretation, foreclosed-from-neutral-read-on-
   # rushwick-content, color-present-before-named, cl-d05-account-opened). The c05 opening
@@ -86,9 +86,9 @@ cull-count: 0
   # phenomenon; the event-frame (named-body / specific-gate / inferred-direction) is new.
   # state-update:2: political_register_prot_axis 2.5 -> 3. No string overlap.
 
-# ── scene-C: double-omission sealed (@17-@23) ───────────────────────────────────
+# ── scene-C: double-omission sealed (@21-@27) ───────────────────────────────────
 
-6 @19 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [double-omission-sealed-in-wax-not-named, seal-as-form-fitting-before-recognition, two-substrates-one-surface-confirmed-by-wax] | licensed-by: proto:19, proto:21, proto:22, proto:23
+6 @23 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [double-omission-sealed-in-wax-not-named, seal-as-form-fitting-before-recognition, two-substrates-one-surface-confirmed-by-wax] | licensed-by: proto:23, proto:25, proto:26, proto:27
   # s03 closes the day's accounting with both omissions present on the station surface —
   # Wren's route in the internal map, the courier observation in the feed-record, the
   # Jarvis packet sealed between them — and Taylor does not revisit either entry. The
@@ -101,7 +101,7 @@ cull-count: 0
 
 # ── episode scope ────────────────────────────────────────────────────────────────
 
-7 episode + double-omission-architecture: [two-records-one-surface-neither-requiring-naming, withholding-enacted-through-substrate-selection, double-omission-as-structural-fact-not-volitional-act, silence-as-the-chapter-discipline] | licensed-by: proto:6, proto:7, proto:15, proto:20, proto:21, proto:22, proto:23
+7 episode + double-omission-architecture: [two-records-one-surface-neither-requiring-naming, withholding-enacted-through-substrate-selection, double-omission-as-structural-fact-not-volitional-act, silence-as-the-chapter-discipline] | licensed-by: proto:8, proto:10, proto:19, proto:24, proto:25, proto:26, proto:27
   # The chapter's ambient register: both omissions (Wren's daily pattern withheld from
   # Jarvis, courier's lower-gate observation withheld from Jarvis) operate through
   # substrate-selection — each piece of intelligence sits in the feed-record or internal

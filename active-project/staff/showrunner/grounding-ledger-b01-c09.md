@@ -1,56 +1,63 @@
-# Grounding-Ledger — b01-c09
+# Grounding-Ledger — b01-c09 (depth-pass re-run)
 # PROP-0022 readability/aliveness licensing surface.
-# One entry per GROUNDING-REQUIRED airless stretch (sensory grounding licensed past the
-# frequency-band cap). Authored at /and-facets Phase 2.5 by aliveness-reviewer.
+# Licenses sensory grounding past the frequency-band cap. Re-authored at the
+# /and-write revise --from-signals depth pass (DEC-0066 readability remediation):
+# the Phase-9 cold-read flagged AIRLESS ("starved of person / abstract to fog");
+# the depth pass added 4 embodiment bones (@2/@3/@9/@15) and the sensory facet
+# grounds 3 of them. These licensed adds carry the sensory density (6/27 = 22.2%)
+# past the standard 6% band — exactly the case the grounding-ledger exists for.
 
 target: b01-c09
-licensed_at: 2.5
-licensed_by: aliveness-reviewer
+licensed_at: depth-pass (revise --from-signals; analogous to Phase 2.5 aliveness license)
+licensed_by: aliveness-reviewer + DEC-0066 depth-pass authorization
 generated: 2026-06-01
 
 entries:
   - id: grd-001
-    anchor: "@11 (grounding-target @11/@12)"
-    airless_symptom: |
-      The courier-appears beat — the load-bearing instant Corwick resolves out of the evening
-      feed-distribution into a tracked body — is rendered instrument-first with no perceptual
-      sensory anchor. Bone @11 "the insect-feed returns corwick" is instrument-class (feed =
-      subject, corwick = returned object). The R1 lenses at the beat are narrator:3 @11 ("evening
-      feed runs the margin and the figure in it is wrong-houred and wrong-warded …" — an analytic
-      read FROM INSIDE the apparatus, "the figure in it") and feeling:2 @12 (held-still tell).
-      Sensory FIRES @8 (thermal entry) but NOT @11/@12 — there is no perceptual-arrival grounding
-      ON the appearance-moment itself, so the beat risks propagating into prose as a data-record
-      transaction (the BONES-AIRLESS-RISK the bones-review signal-001 flagged).
-    needed_grounding: |
-      A sensory perceptual-arrival fire at @11 (or @11/@12) that grounds the courier resolving as
-      a SEEN/perceived body in the evening Dragonpit-margin lane — a physical perceptual event, not
-      a feed-record return. Modality at studio's discretion (e.g. visual resolution out of the
-      baseline distribution, or an aural/postural perceptual anchor) consistent with the feed-mediated
-      perception register. Pairs with the /and-stitch Phase 4 voice-embodiment carry (alive-002):
-      front the appearance person-first, not apparatus-first.
+    anchor: "@14 (courier-appears; was @11 pre-renumber)"
+    airless_symptom: "courier-resolves-from-feed rendered instrument-first; no perceptual-arrival anchor at the appearance instant"
+    needed_grounding: "a visual perceptual-arrival fire grounding the courier resolving as a SEEN body in the evening lane"
     license: GROUNDING-REQUIRED
-    cap_note: |
-      Sensory is at 2/23 = 8.7%, already at the short-chapter-exemption ceiling; adding a third
-      fire raises modality-count and trips the standard 6% frequency-band ceiling (per the sensory
-      file's own cull arithmetic — see the @3/@19 refusals). This entry LICENSES the @11/@12 add to
-      escape the frequency-band cap. This is the designed remedy named in the chapter brief +
-      bones-review forward-carry.
-    licensed_at: 2.5
+    licensed_at: 2.5 (carried from pre-depthpass; re-anchored)
     licensed_by: aliveness-reviewer
     status: satisfied
-    satisfied_by: sensory:3
-    resolved_at: 2026-06-01
-    resolution_note: |
-      sensory:3 @11 light: lane-ambient-empty-distribution -> corwick-body-resolving (spike)
-      anchors the visual appearance-instant at @11. The feed-return verb "returns" is bare;
-      the flag names the body-form resolving into the evening-lane visual field. Licensed by
-      this entry; marked cap-exempt in sensory-b01-c09.md with licensed-grounding-exception:
-      grd-001. Three edits: sensory-b01-c09.md (entry added), proto-lines/b01-c09.md (line 11
-      citation appended), this ledger (status stamped).
+    satisfied_by: sensory:2
+    resolution_note: "sensory:2 @14 light: lane-ambient-empty-distribution -> corwick-body-resolving. Re-anchored from old @11 to new @14. Cap-exempt."
 
-# NOTE: One GROUNDING-REQUIRED (grd-001). Scene-A (@4-@7: feeling:1 @5 + NI + mem:1) and scene-C
-# (@19-@23: NI:5 @19 + sensory:2 @23 tactile) are ALIVE. @12-@13 grounding RESUMES (feel:2 + body
-# beats) — the deficit is the @11 appearance-INSTANT specifically. A second finding, alive-002
-# (scene-B opening @8-@11 rendered apparatus-first), is VOICE-FIXABLE and carries to /and-stitch
-# Phase 4 voice-embodiment — NOT a ledger entry (content present; render-choice).
-# See active-project/staff/reviews/context-follow-r1-b01-c09-2026-06-01.md (Axis 2).
+  - id: grd-002
+    anchor: "@3 (the bay-damp beads the lane-stone)"
+    airless_symptom: "scene-A opened apparatus-first (feed threading the lane); no person in a physical place before the surveillance abstraction — the cold-read's 'starved of person' at the open"
+    needed_grounding: "a scene-A place-ground sensory fire — the cold-wet morning stone (Crone's stretch / bay-damp) — opening the scene on a physical cold place a person inhabits before the apparatus"
+    license: GROUNDING-REQUIRED
+    licensed_at: depth-pass
+    licensed_by: DEC-0066 readability remediation
+    status: satisfied
+    satisfied_by: sensory:4
+    resolution_note: "sensory:4 @3 thermal: dry-stone -> bay-damp-cold-wet. Embodiment open; also grounds the @14 thermal old-state (cold-season morning). Cap-exempt."
+
+  - id: grd-003
+    anchor: "@9 (the cold stiffens the fingers) — at the @8 filing beat"
+    airless_symptom: "the @8 route-vs-person thesis rendered as abstract statement ('the architecture does not distinguish the keeping of a route from the keeping of a person') — the cold-read's 'abstract to the point of fog'"
+    needed_grounding: "a tactile fire at the filing act — the cold in the hand — giving the NI a concrete physical image (the cold-stiffened hand filing the route the same way it files a cart or a gate) to render the thesis THROUGH, replacing the abstraction"
+    license: GROUNDING-REQUIRED
+    licensed_at: depth-pass
+    licensed_by: DEC-0066 readability remediation (the de-fog anchor)
+    status: satisfied
+    satisfied_by: sensory:5
+    resolution_note: "sensory:5 @9 tactile: warm-hand -> cold-stiffened. The de-fog anchor; NI @8/@9 re-authored to render the thesis through this hand-image. moral_legibility held (no recognition). Cap-exempt."
+
+  - id: grd-004
+    anchor: "@15 (the cold weights the shoulders) — at the watch"
+    airless_symptom: "Taylor's still watching body in s02 carried only by a held-still feeling tell; no physical anchor for the body holding the watch as the courier resolves"
+    needed_grounding: "a tactile/thermal fire grounding the evening cold settling on the still body at the feed-edge"
+    license: GROUNDING-REQUIRED
+    licensed_at: depth-pass
+    licensed_by: DEC-0066 readability remediation
+    status: satisfied
+    satisfied_by: sensory:6
+    resolution_note: "sensory:6 @15 tactile: unburdened-shoulders -> cold-weighted-shoulders. Placed at watch-onset; does NOT break the SW-3 Corwick-signature pair @16/@17. Cap-exempt."
+
+# NOTE: 4 GROUNDING-REQUIRED entries, all satisfied. Sensory density 6/27 = 22.2% is
+# licensed past the 6% band by grd-001..004 (the embodiment the depth pass was authorized
+# to add). The sensory file's per-entry frontmatter should carry licensed-grounding-exception
+# tokens (grd-001..004) so the Phase 5 auditor + Phase 5b sensory-gate apply the cap-exemption.

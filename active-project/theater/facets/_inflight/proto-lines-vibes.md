@@ -6,28 +6,35 @@ goal: Show the audience that Taylor is now surveilling Wren as part of routine c
 cast: taylor-hebert-kl-122ac, wren-stitch-maker-flea-bottom-ward, corwick
 locations: the-hook-ward, the-stitch-shop-lane, the-bread-seller-corner, the-dragonpit-margin, the-lower-gate, the-feed-station
 prior_episode: b01c08
-aggregate_range: 1-23
+aggregate_range: 1-27
 
 1 taylor-hebert-kl-122ac enters the lane-south-of-the-hook
-2 the insect-feed threads the stitch-shop lane
-3 the stitch-shop door opens the lane-mouth
-4 wren-stitch-maker-flea-bottom-ward walks the shop-to-water-seller lane [vibes:1] [vibes:2] [vibes:3]
-5 wren-stitch-maker-flea-bottom-ward reaches the bread-seller corner
-6 taylor-hebert-kl-122ac files wren's route
-7 the ward-coverage notes receive the boundary geometry
-8 taylor-hebert-kl-122ac enters the dragonpit-margin lane
-9 the supply cart marks the lower-gate road
-10 the stone-post marks the lower gate side-exit
-11 the insect-feed returns corwick
-12 corwick faces the second man
-13 corwick squares the shoulders
-14 taylor-hebert-kl-122ac files the posture-class [vibes:5]
-15 taylor-hebert-kl-122ac closes the observation-entry
-16 taylor-hebert-kl-122ac completes the circuit
-17 taylor-hebert-kl-122ac takes the feed-station
-18 taylor-hebert-kl-122ac folds the packet
-19 taylor-hebert-kl-122ac seals the packet [vibes:6]
-20 the ward-coverage notes mark the station-left
-21 the internal map files wren's route
-22 the feed-record closes the courier entry
-23 the seal dries
+2 taylor-hebert-kl-122ac presses the lane-stone
+3 the bay-damp beads the lane-stone
+4 the insect-feed threads the stitch-shop lane
+5 the stitch-shop door opens the lane-mouth
+6 wren-stitch-maker-flea-bottom-ward walks the shop-to-water-seller lane [vibes:1] [vibes:2] [vibes:3]
+7 wren-stitch-maker-flea-bottom-ward reaches the bread-seller corner
+8 taylor-hebert-kl-122ac files wren's route
+9 the cold stiffens the fingers
+10 the ward-coverage notes receive the boundary geometry
+11 taylor-hebert-kl-122ac enters the dragonpit-margin lane
+12 the supply cart marks the lower-gate road
+13 the stone-post marks the lower gate side-exit
+14 the insect-feed returns corwick
+15 the cold weights the shoulders
+16 corwick faces the second man
+17 corwick squares the shoulders
+18 taylor-hebert-kl-122ac files the posture-class [vibes:5]
+19 taylor-hebert-kl-122ac closes the observation-entry
+20 taylor-hebert-kl-122ac completes the circuit
+21 taylor-hebert-kl-122ac takes the feed-station
+22 taylor-hebert-kl-122ac folds the packet
+23 taylor-hebert-kl-122ac seals the packet [vibes:6]
+24 the ward-coverage notes mark the station-left
+25 the internal map files wren's route
+26 the feed-record closes the courier entry
+27 the seal dries
+
+# vibes:4 loc:the-hook-ward — off-anchor (no proto-line; s01-wide person-specific coverage layer)
+# vibes:7 episode — off-anchor (no proto-line; episode-scope double-omission-architecture)
