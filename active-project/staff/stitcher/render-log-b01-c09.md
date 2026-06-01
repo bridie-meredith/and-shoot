@@ -233,3 +233,143 @@ verdict: PASS-THREAD (no state-drift, no hook breach, bone-faithfulness fence ho
 substantive parking-lot items written: 0
 uncertain_edits (held for principal acknowledge):
   - hook-0007 (Halvard, expected_payoff c09): unreferenced on-page in c09. Threading fork recommends NO EDIT — the foreclosure is substantive d09 chain work and any callback is fence-adjacent to the moral_legibility HELD constraint. Hook stays open in aggregate-state; surfaces when the d09 chapter is produced. NOT applied, NOT parking-lotted (deliberately-open per the omission design).
+
+## Phase 1 — scene-window render (DEPTH-PASS re-render)
+
+fork: scene-window (3 scenes, A @1-@10 / B @11-@20 / C @21-@27); first-person past; persona neutral.
+voice-exemplar: active-project/voice-exemplar.md (cadence/register prime only; surface-convention fence honored — no content import; sentence-length variance + embodied digression counterweighting the clipped apparatus cadence).
+re-render reason: prior render (23-bone, pre-depth-pass) drew an AIRLESS cold-read on s01; the abstract "architecture does not distinguish the keeping of a route from the keeping of a person ... it has indexed lives at a scale this lane could not picture" fog line. Facets re-anchored 23->27; the abstraction REMOVED; thesis now routes through NI:3 @9 + sensory:5 @9 + memory:1 @8 (cold-stiffened hand). Person-before-apparatus open added (@2 NI:1 + @3 sensory:4). Grounded watch added (@15 sensory:6). @14 apparatus-muffle = body-in-lane.
+
+### Scene A bone-walk (@1-@10)
+
+- @1 taylor enters lane-south-of-the-hook | rendered. loc-state:1 ambient (cold-season morning, single-entrance corridor) folded as bare place-ground; fused into @2 sentence opener. Lens: kinetic order, loc-state ground -> NI body.
+- @2 taylor presses the lane-stone | rendered. PERSON-FIRST OPEN. NI:1 leads (rule 4 candidate; persona-neutral; NI fronts the body) — "the lane-stone was cold up through the boot-sole ... only a body standing in a cold lane, which is the last thing the morning lets me be" (verbatim mod tense/person). Body fronted before apparatus per depth-pass carry #2.
+- @3 the bay-damp beads the lane-stone | rendered. sensory:4 (tag: down) leads (rule 2). "the bay-damp had beaded the lane-stone, a cold wet film resolving on the dry surface" — cold-wet-place ground; old-state dry-stone (loc-state:1) named. Depth-pass carry #2 (person in a cold place before apparatus).
+- @4 insect-feed threads the stitch-shop lane | rendered (FUSE into @5/@6 run). Bare bone (0 cites); apparatus thread; fused into the "Then the insect-feed threaded the stitch-shop lane, and the stitch-shop door stood open" run. SVO preserved.
+- @5 stitch-shop door opens the lane-mouth | rendered. loc-state:2 (door-open at lane-mouth) folded. Fused into @4 run.
+- @6 wren walks shop-to-water-seller lane | rendered (PEAK, standalone-honored). narrator:2 leads — central legibility event; "the route has waypoints now ... a thing with waypoints is no longer a body that happens to be in range" verbatim mod tense/person. vibes:1/2/3 NOT rendered (state-tracking; unrendered-remainder). Peak-bone given its own clause-cluster.
+- @7 wren reaches the bread-seller corner | rendered. feel:1 (somatic tell, expressed:no) leads as anticipatory radar — "My gaze held on the bread-seller's corner a beat before she reached it." Then the bare bone: "She reached the corner." SVO preserved.
+- @8 taylor files wren's route | rendered (PEAK, standalone-honored). DE-FOG anchor half 1. "I filed her route." Then the thesis carried THROUGH the @9 hand-image + memory:1: "the same fold and set the hand gives a supply cart or a gate ... the cold-stiffened hand giving the route the same fold and set it gives a cart or a gate, and the keeping has indexed her without once asking" (memory:1 verbatim mod tense/person). NO abstract "architecture does not distinguish" statement. SW-1 internal-map substrate act; rendered WITHOUT Taylor naming it as a withholding.
+- @9 the cold stiffens the fingers | rendered (DE-FOG ANCHOR; standalone-honored). sensory:5 (tag: down) leads (rule 2) co-cited NI:3. "The cold had stiffened my fingers, and they filed the route anyway, the same fold and set the hand gives a supply cart or a gate, and nothing in the set of the hand marked that this one was Wren" (NI:3 verbatim mod tense/person). THIS IS THE THESIS — route-vs-person lands as the cold-hand image, not abstraction. Depth-pass carry #1 satisfied. moral_legibility HELD (Taylor never names what the filing means).
+- @10 ward-coverage notes receive the boundary geometry | rendered (PEAK, standalone-honored). "The ward-coverage notes received the boundary geometry." SW-1 deliverable substrate act — geometry-only; the contrast with @8 internal-map (route filed) rendered WITHOUT Taylor naming the withholding. state:1 (content field-extension) NOT rendered (state-tracking).
+
+### Scene B bone-walk (@11-@20)
+
+- @11 taylor enters dragonpit-margin lane | rendered. exposition:3 scene-bridge renders BEFORE the bone ("That evening, the second circuit ran the Dragonpit margin — the outer lanes south, toward the hill." verbatim). Then the bone + sensory:1 (tag: down) thermal: "I entered the dragonpit-margin lane, the hill-lane air gone cool where the lower wards still held the day's warmth." signal-sup-001 honored: bridge = time/circuit orient; bone = physical arrival; NOT doubled. loc-state:3 ambient folded.
+- @12 supply cart marks the lower-gate road | rendered. exposition:2 em-dash-fold lower-gate gloss folds here ("— the lower gate, the Dragonpit's court-margin side, under Rhaenys's Hill, where bodies on the heir's business pass and not the Queen's: not a Green-faction gate" verbatim). marks-verb VARIATION: cart "marked the lower-gate road."
+- @13 stone-post marks the lower-gate side-exit | rendered. marks-verb VARIATION: post "marked the lower-gate side-exit" (distinct object from @12). Bare bone; SVO preserved.
+- @14 insect-feed returns corwick | rendered (PEAK, standalone-honored). APPARATUS-MUFFLE (depth-pass carry #4): sensory:2 (tag: spike, GROUNDING-REQUIRED grd-001) leads — rendered as a PERCEIVED BODY in the lane, NOT a data transaction: "the insect-feed returned Corwick — a body resolving out of the empty evening distribution, a man standing where a man at this hour should not be standing, wrong-houred and wrong-warded" (NI:4 verbatim mod tense/person; light old-state empty-distribution from sensory:2). SW-3 signature 0 (physical arrival).
+- @15 the cold weights the shoulders | rendered (GROUNDED WATCH; depth-pass carry #3). sensory:6 (tag: down) leads (rule 2). "The cold had settled its weight on my shoulders where I held still at the feed-edge." Grounds Taylor's still WATCHING BODY physically. Placed BETWEEN @14 and @16; does NOT break the @16/@17 Corwick-signature pair.
+- @16 corwick faces the second man | rendered (SW-3 signature 1). feel:2 (somatic tell, expressed:no, goes-still): "He went still in me too as his body turned." then "Corwick faced the second man." Physical-data; NOT collapsed into categorization. SVO preserved.
+- @17 corwick squares the shoulders | rendered (SW-3 signature 2). "He squared the shoulders." Physical-data; distinct from @16; NOT collapsed. SVO preserved.
+- @18 taylor files the posture-class | rendered (PEAK, standalone-honored; SW-3 categorization). narrator:5 leads — categorization act where axis moves; "the wrong hour and the squared shoulders and the gate that backs onto the wrong faction resolved to a direction, not a name ... I priced the posture-class and the price was small" (NI:5 verbatim mod tense/person) + memory:2 ("I read the gate's loyalty the way a person reads a thing already written, the split's ending held at a remove no one standing in this lane could hold, a direction I did not infer so much as recognize" verbatim mod tense/person). Physical-data-THEN-categorization preserved; Black-faction inference DIRECTIONAL not conclusory. vibes:5 NOT rendered.
+- @19 taylor closes the observation-entry | rendered (PEAK, standalone-honored; SW-2). "I closed the observation-entry." Lands in the feed-record because that IS its substrate. The Jarvis channel does NOT appear as considered-then-rejected. Operational completion. SVO preserved.
+- @20 taylor completes the circuit | rendered. "I completed the circuit." The Jarvis non-routing visible as what did not happen (no routing clause added — silence carries it). SVO preserved.
+
+### Scene C bone-walk (@21-@27)
+
+- @21 taylor takes the feed-station | rendered. "I took the feed-station." loc-state:5 station-surface ambient folded as bare. SVO preserved. NO scene-orient (exposition fire-audit: @21 REFUSES — continuous same-evening accounting-close).
+- @22 taylor folds the packet | rendered. "I folded the packet." state:2 (physical-condition assembled->folded) NOT rendered (state-tracking). SVO preserved.
+- @23 taylor seals the packet | rendered (PEAK, standalone-honored; CENTRAL EVENT). narrator:6 leads — channel-technical FACT: "The wax came down under my hand at the weight I had already settled; I sealed the packet, and what the packet held was the only thing the channel would ever see" (NI:6 verbatim mod tense/person). DEC-0062: "only thing the channel will ever see" rendered as channel-technical FACT, NOT as Taylor naming the omission gap. state:3 NOT rendered; vibes:6 NOT rendered.
+- @24 ward-coverage notes mark the station-left | rendered. marks-verb VARIATION: "To the left of it the ward-coverage notes marked the station I had left." Physical object placement on the station surface (two-substrates-one-surface). SVO preserved. moral_legibility HELD — no recognition.
+- @25 internal map files wren's route | rendered. "The internal map held Wren's route." Wren-omission half (SW-1). Physical co-presence; Taylor does NOT reason about it. SVO preserved.
+- @26 feed-record closes the courier entry | rendered. "The feed-record closed the courier entry." Courier-omission half (SW-1+SW-2). Physical co-presence; no weighing. SVO preserved.
+- @27 the seal dries | rendered (PEAK, standalone-honored; TERMINAL IMAGE). sensory:3 (tag: down) leads (rule 2). "The seal dried, the wax gone from soft and warm under the thumb to set firm." Irreversibility as material fact; NO catharsis. state:4 NOT rendered (state-tracking). Terminal image; chapter close.
+
+### RECONCILE (Phase 1 depth-pass re-render)
+
+bones: rendered(27) + fused-only(0; @4/@5 rendered-within-run, counted rendered) + rendered-illegible(0) + cut-bone(0) = 27 == authored(27)  BALANCED
+  - every one of 27 bones appears exactly once above; @4 and @5 marked rendered (FUSE into the @4-@6 establishment run per scene-map fusion-eligible-run @1-@4); no silent drops.
+facets rendered (surface prose): loc-state(3 of 5: :1@1/:2@5/:3@11/:5@21 folded as ambient -> 4 actually folded, :4@14 folded as feed-edge -> 5), narrator(6/6), sensory(6/6), memory(2/2), feeling(2/2), exposition(3/3).
+facets unrendered-remainder: vibes(7) + state-updates env(4) + state-updates taylor(2) = 13 — state-tracking facets; inform render, do not surface as prose. metaphor: 0 entries. EXPECTED, not a defect.
+
+variance-moves:
+  - marks-verb variation @12 (cart marked road) / @13 (post marked side-exit) / @24 (notes marked station-left) — three distinct verbs-of-record, each doing something distinct (road vs side-exit vs object-placement).
+  - sentence-length variance: long embodied opener (@1-@2 person-in-cold-lane) counterweighting the clipped apparatus cadence per voice-exemplar prime; short declarative spine in scene-C close (@21/@22/@25/@26) for the accounting-close falling rhythm.
+  - feel tells rendered as anticipatory/involuntary radar (@7 gaze-holds-a-beat-before; @16 went-still) — expressed:no honored; no told-emotion.
+
+refusals:
+  - REFUSED reintroducing any "architecture does not distinguish / indexed lives at a scale this lane could not picture" abstraction. Thesis routes through the cold-hand image (@9 + @8 memory:1) ONLY. DE-FOG CONFIRMED.
+  - REFUSED Jarvis-channel-considered-then-rejected at @19/@20 (SW-2): the observation lands in the feed-record as substrate; non-routing carried by silence, not deliberation.
+  - REFUSED recognition beat at @21-@27 (DEC-0062 moral_legibility HELD): double-omission rendered as physical arrangement of objects (notes-left @24 / internal-map @25 / feed-record @26 / sealed packet between); Taylor does NOT weigh/name/recognize. No interior at the close.
+  - REFUSED collapsing SW-3 (@14 body -> @16 faces -> @17 squares -> @18 categorizes): physical-data-THEN-categorization preserved; @15 cold-on-shoulders sits between @14 and @16 without breaking @16->@17.
+  - REFUSED apparatus-register at @14: rendered Corwick as a perceived body in the lane (depth-pass carry #4).
+
+RENDERED-ILLEGIBLE flags: NONE. All 27 bones rendered cleanly through the lens graph; no bone exceeded its facet license.
+
+## Phase 7 — editorial reflection (depth-pass re-render)
+
+Persona: neutral (no overrides). Cut-aggressiveness: strict. One Q-line per sentence; binary; borderline=reject. Restraint posture: strong draft — KEEP outside the named dedup. Apparatus/coverage register tokens (insect-feed, ward-coverage notes, lane-stone, lane-mouth, lower-gate, court-margin, Green-faction, feed-record, internal map, feed-station, posture-class, observation-entry, boundary geometry) are register-resident, NOT Q9 hits.
+
+### Scene 1 (@1-@10)
+- S1.1 "I entered the lane south of the Hook ... last thing the morning lets me be." — Q1 yes (embodiment open, person-before-apparatus / @2). Q5 no. Q8 no. Q9 no (place-ground register). Q6 colon earned (press elaborates "nothing else"). MOVE: KEEP.
+- S1.2 "The bay-damp had beaded the lane-stone ... had not yet reached it." — Q1 yes (@3 cold-season grounding). Q5 no. Q8 no. Q9 no. Q6 ok. MOVE: KEEP.
+- S1.3 "Then the insect-feed threaded the stitch-shop lane ... no longer a body that happens to be in range." — Q1 yes (central-event @6 + legibility thesis). Q5 no. Q8 no. Q9 no (register). Q6 em-dash earned. MOVE: KEEP.
+- S1.4 "My gaze held on the bread-seller's corner a beat before she reached it." — Q1 yes (@7 anticipation). Q5/Q8/Q9/Q6 clean. MOVE: KEEP.
+- S1.5 "She reached the corner." — Q1 yes (@7). MOVE: KEEP.
+- S1.6 "I filed her route." — Q1 yes (@8 SW-1 substrate act). MOVE: KEEP.
+- S1.7 "The cold had stiffened my fingers ... the keeping has indexed her without once asking." — Q3 YES (the named DROP-ECHO: post-em-dash repeats "the same fold and set ... a cart or a gate"). Q1 yes (NI @8/@9 thesis-through-the-hand + mem:1 indexed-without-asking). Q5 no. Q8 no. Q9 no. MOVE: **DEDUP (CUT-CLAUSE)** — dropped the repeated cold-hand clause after the em-dash ("the cold-stiffened hand giving the route the same fold and set it gives a cart or a gate,"); retained the single NI image pre-em-dash (cold-stiffened fingers file the route the same fold/set as a cart or a gate; nothing marks this one is Wren) AND folded the distinct memory beat (the keeping has indexed her without once asking — Khepri-displacement resonance) via "— and the keeping has indexed her without once asking." NO "architecture does not distinguish" abstraction reintroduced. moral_legibility HELD (Taylor does not name what it means).
+- S1.8 "The ward-coverage notes received the boundary geometry." — Q1 yes (@10 deliverable substrate act). Q9 no (register). MOVE: KEEP.
+
+### Scene 2 (@11-@20)
+- S2.1 "That evening, the second circuit ran the Dragonpit margin — the outer lanes south, toward the hill." — Q1 yes (@11 scene-bridge, exposition-derived; Q1/Q5/Q8 pre-cleared). Q9 no. Q6 em-dash ok. MOVE: KEEP.
+- S2.2 "I entered the dragonpit-margin lane ... still held the day's warmth." — Q1 yes (@11 + grounding). Q5/Q8/Q9/Q6 clean. MOVE: KEEP.
+- S2.3 "The supply cart marked the lower-gate road — the lower gate ... not a Green-faction gate." — Q1 yes (@12 + lower-gate gloss, exposition-derived; Q1/Q5/Q8 pre-cleared). Q9 no (Green-faction/court-margin register-resident). Q6 colon+em-dash earned. MOVE: KEEP.
+- S2.4 "The stone-post marked the lower-gate side-exit." — Q1 yes (@13). MOVE: KEEP.
+- S2.5 "Then the insect-feed returned Corwick — a body resolving out of the empty evening distribution ... wrong-houred and wrong-warded." — Q1 yes (@14 courier-appears, person-first per apparatus-muffle advisory). Q3 no (the compound tail "wrong-houred and wrong-warded" is the ward-class file-tag register, distinct from the physical observation that precedes it, not a co-anchored echo). Q5 no. Q8 no. Q9 borderline ("wrong-houred" a coinage; "wrong-warded" rides ward register) — meaning plain, parallel construction, part of the file-tag compression; under restraint on a strong draft, no clean ≤2 substitution improves it. MOVE: KEEP.
+- S2.6 "The cold had settled its weight on my shoulders where I held still at the feed-edge." — Q1 yes (@15 grounding, watch-onset; placed BETWEEN @14 and the @16/@17 SW-3 pair without breaking it). MOVE: KEEP.
+- S2.7 "He went still in me too as his body turned." — Q1 yes (@16 onset, person-first held stillness). MOVE: KEEP.
+- S2.8 "Corwick faced the second man." — Q1 yes (@16 SW-3 signature 1). MOVE: KEEP.
+- S2.9 "He squared the shoulders." — Q1 yes (@17 SW-3 signature 2). MOVE: KEEP.
+- S2.10 "I filed the posture-class — the wrong hour and the squared shoulders ... I priced the posture-class and the price was small." — Q1 yes (@18 axis-move categorization; foreknowledge-clamp NI — "a thing already written" / "did not infer so much as recognize" is graph-resident recognition-not-inference register, NOT hollow thought-announcement). Q3 long but rising. Q5 no. Q8 no. Q9 no (posture-class register). Q6 semicolon earned (the read vs the price, two beats). MOVE: KEEP.
+- S2.11 "I closed the observation-entry." — Q1 yes (@19 SW-2 substrate-selection). MOVE: KEEP.
+- S2.12 "I completed the circuit." — Q1 yes (@20 Jarvis-non-routing visible as what did not happen). MOVE: KEEP.
+
+### Scene 3 (@21-@27)
+- S3.1 "I took the feed-station." — Q1 yes (@21 arrival). MOVE: KEEP.
+- S3.2 "I folded the packet." — Q1 yes (@22 preparation). MOVE: KEEP.
+- S3.3 "The wax came down under my hand at the weight I had already settled; I sealed the packet, and what the packet held was the only thing the channel would ever see." — Q1 yes (@23 central event + channel-technical fact). DEC-0062 honored: "only thing the channel would ever see" reads as channel-technical fact, NOT Taylor naming the omission. Q5 no. Q8 no. Q9 no. Q6 semicolon earned. MOVE: KEEP.
+- S3.4 "To the left of it the ward-coverage notes marked the station I had left." — Q1 yes (@24 deliverable-substrate-left, two-substrates-one-surface). MOVE: KEEP.
+- S3.5 "The internal map held Wren's route." — Q1 yes (@25 Wren-omission half / SW-1). MOVE: KEEP.
+- S3.6 "The feed-record closed the courier entry." — Q1 yes (@26 courier-omission half / SW-1+SW-2). MOVE: KEEP.
+- S3.7 "The seal dried, the wax gone from soft and warm under the thumb to set firm." — Q1 yes (@27 terminal image, irreversibility as material fact; no catharsis). MOVE: KEEP.
+
+### Phase 7 tally
+- Sentences swept: 27 (S1: 8, S2: 12, S3: 7).
+- Moves: 1 (S1.7 DEDUP / CUT-CLAUSE — the named cold-hand doubling). 26 KEEP.
+- No RESHOW, no CUT, no CUT-BONE. All 27 bones remain rendered (DEDUP folded within @8/@9 rendering; no bone dropped).
+
+### Phase 2-6 verification (depth-pass re-render)
+- **Phase 2 (redundancy):** CONFIRMED. The cold-hand doubling at S1.7 is the one DROP-ECHO — fixed by the named DEDUP. No other co-anchored echo found. S2.5 "wrong-houred and wrong-warded" is distinct ward-class register from the physical observation, not a co-anchored facet echo — KEEP. No further DROP-ECHO.
+- **Phase 4 (voice-embodiment):** CONFIRMED. First-person past throughout. @14/S2.5 courier rendered person-first (perceived body in the lane, not data-record transaction). S1 opens person-before-apparatus (S1.1 feet/cold on stone precede the feed at S1.3). @15/S2.6 grounded watch (cold-on-shoulders). No VOICE-APPARATUS-DEFAULT.
+- **Phase 5 (local-flow):** CONFIRMED. Silent chapter — speaker-paragraph N/A (zero dialogue-anchor bones). One blank line between each of the 3 scenes; scene boundaries = paragraph breaks.
+- **Phase 6 (buildup):** PATTERN-OK on all three.
+  - SW-1: @8/@10 two records (S1.6+S1.7 internal-map files / S1.8 ward-notes receive geometry-only) — contrast rendered, not named as a choice. PATTERN-OK.
+  - SW-3: @14→@16→@17→@18 (S2.5 feed-returns-body → S2.8 faces → S2.9 squares → S2.10 categorizes) physical-data-THEN-categorization not collapsed; @15/S2.6 cold-on-shoulders sits between @14 and @16 and does NOT break @16→@17. PATTERN-OK.
+  - SW-2: @19/@20 (S2.11 closes observation-entry / S2.12 completes circuit) operational; Jarvis channel does not enter as considered-then-rejected. PATTERN-OK.
+
+### Hard-fence compliance
+- Bone-faithfulness: only CUT-CLAUSE (DEDUP) applied; no invented content. The dropped clause was a verbatim repeat; the retained text is existing prose.
+- DEC-0062: no apparatus register cut as "cold"; no recognition/weighing beat added to s03; @23 "only thing the channel would ever see" left as channel-technical fact.
+- moral_legibility: HELD — no naming/weighing/recognition beat anywhere; the dedup did not add abstraction.
+
+FAULTS: none.
+
+## Phase 8 — finalize + STATS + RECONCILE (DEPTH-PASS re-render)
+
+clean-draft: active-project/draft/b01-c09.md (27 bones, 3 scenes)
+annotated-draft: active-project/draft/b01-c09.annotated.md
+preamble-source: exposition:1 @0 (prior-episode-bridge, italic; calendar fold folded into the facet)
+scene-callout-leak: none (verified)
+
+STATS:
+  bones rendered: 27 | merged: 0 | dropped: 0 | rendered-illegible: 0
+  facets rendered (surface): loc-state 5, narrator 6, sensory 6, memory 2, feeling 2, exposition 3 = 24
+  facets unrendered-remainder: 13 (vibes 7, state-updates 6) — FLAG-UNRENDERED-REMAINDER (non-surface state-tracking; metaphor 0)
+  moves: Phase-7 1 DEDUP/CUT-CLAUSE (cold-hand doubling); 26 KEEP
+  depth-pass deltas delivered: person-first open (@2/@3), de-fog @8/@9 (cold-hand image; abstraction removed), grounded watch (@15), apparatus-muffle @14, s03 no-recognition held
+
+RECONCILE:
+  bones: rendered(27) + merged(0) + dropped(0) + rendered-illegible(0) = 27 == authored(27)  ✓ BALANCED
+  facets: rendered(24) + dropped(0) + unrendered-remainder(13) = 37 == cite-index facet entries(37)  ✓ BALANCED
+  FLAG-UNRENDERED-REMAINDER: vibes:1-7 + state:1-6 — non-surface state-tracking facets; expected.
