@@ -26,7 +26,7 @@ aggregate_state:
   project: taylor-westeros-good-intentions
   through_book: b01
   through_chapter: b01c09
-  last_updated: 2026-06-01T06:30:00Z
+  last_updated: 2026-06-01T18:50:00Z   # depth-pass re-render of c09 (zero substance Δ; readability only) — through_chapter unchanged; axes/hooks/characters unchanged
   last_updated_by: and-stitch-phase-10
 
   axis_state:
@@ -364,6 +364,16 @@ aggregate_state:
       acknowledged: true
       acknowledged_at: 2026-06-01T06:30:00Z
       applied_at: 2026-06-01T06:30:00Z
+      applied_by: and-stitch-phase-10
+      target_consumer_chapter: b01c10
+
+    - entry_id: rev-0003
+      chapter: b01c09
+      hunk_summary: "depth-pass re-render of c09 (DEC-0068): +4 embodiment/grounding bones (person-on-cold-lane open; cold-stiffened-hand de-fog of the s01 filing thesis; grounded evening watch) + calendar fold into the exposition preamble. Zero substance Δ — axes, hooks, characters, world-state all unchanged from rev-0002 state. Readability improvement only (resolved the Phase-9 AIRLESS; depth_pass_resolved). No new threading needs (PASS-THREAD)."
+      class: presentation-reinforcement
+      acknowledged: true
+      acknowledged_at: 2026-06-01T18:50:00Z
+      applied_at: 2026-06-01T18:50:00Z
       applied_by: and-stitch-phase-10
       target_consumer_chapter: b01c10
 

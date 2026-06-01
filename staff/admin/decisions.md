@@ -4058,3 +4058,32 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0068 | 2026-06-01 | FAST (user-proxy, RUNBOOK R1)
+
+question: c09 depth pass completed end-to-end. Choose: (A) stamp depth_pass_resolved_at, ship terminal, proceed to Phase 10; or (B) iterate again — treat cold-read NO-CONTINUE as fresh FAIL and run a second depth-pass loop.
+context: |
+  c09 shipped at Phase 9 PASS-WITH-DEPTH-PASS-REQUIRED (DEC-0066). DEC-0066 pre-adjudicated the
+  cold-read NO-CONTINUE as design-inherent Class-B cost (surveillance-only chapter; no on-page
+  jeopardy; apparatus register; withheld motive; assumes 8 chapters of prior context). Depth pass
+  ran end-to-end: /and-write revise added 4 embodiment/grounding bones (person-on-cold-lane open,
+  cold-stiffened-hand DE-FOG of abstract filing line, grounded watch), bone-gate CLEAN 0 HARD;
+  /and-review bones PASS + BONES-AIRLESS-RISK RESOLVED→ADVISORY-CONTAINED; /and-facets Phase 2.5
+  Axis-2 ALIVE (deficit RESOLVED — de-fog lands); Phase 5 0 HARD; Phase 5b 3-of-3 all facets
+  (trio endorsed de-fog + calendar fold); /and-stitch Phase 8.5 PASS ("airlessness resolved;
+  person now present, hung on a felt body; fog gone"); Phase 9 Step 3.5 0-mute PASS (15/15
+  concrete elements staged). Phase 9 Step 1 cold-read still NO-CONTINUE — same shape, same
+  design-inherent reasons. RUNBOOK R2 cap: 1 depth-pass retry — spent.
+options: (A) DEPTH-PASS DELIVERED — stamp resolved, ship, Phase 10; (B) iterate again.
+
+decision: (A) — depth pass delivered; stamp depth_pass_resolved_at; ship terminal; proceed to Phase 10.
+basis: ltm:DEC-0066 (exact match — this cold-read NO was pre-adjudicated as design-inherent Class-B cost before the depth pass ran; that ruling has not been disturbed by anything the depth pass revealed) + methodology:3a (reversibility — a second loop is irreversible spend with zero expected delta: the improvement that can be made within the design has been made and confirmed by four independent gates; iterating reproduces the identical cold-read NO without moving the design)
+rationale: Four gates confirm the readability improvement landed (the fog is gone; a person is now present). The cold-read still says NO for the same recorded design-inherent reasons it said NO before DEC-0066 adjudicated them. Nothing in the depth-pass results disturbs that adjudication. R2 cap is spent. Option (B) is a loop with known outcome.
+trade-off: Shipping with a cold-read NO on record is the accepted Class-B cost per DEC-0066. The consecutive-airless accumulation concern (N=4) is carried forward for /and-cohere before book-close per DEC-0067.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
