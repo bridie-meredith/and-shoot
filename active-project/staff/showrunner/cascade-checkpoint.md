@@ -9,12 +9,12 @@ cascade:
     Book b01 chapter_count = 20. Drive as far as feasible; halt cleanly with a
     checkpoint on cap-exhaustion / hard-block / practical session limit.
   last_completed:
-    level: stitch-phase-10
-    slug: b01c09
-    completed_at: 2026-06-01T16:45:00Z
+    level: chapter
+    slug: b01c10
+    completed_at: 2026-06-01T19:35:00Z
   next:
-    command: /and-substance chapter b01c10
-    args: [chapter, b01c10]
+    command: /and-write b01c10
+    args: [b01c10]
   reason: continue
   failure: null
   pending_depth_passes: []   # c09 depth pass RESOLVED (DEC-0068): /and-write revise --from-signals + re-facets + re-stitch delivered (Phase 2.5 ALIVE + coherence PASS + prose-rationale 0 + trio de-fog endorsement); depth_pass_resolved_at stamped. b01 now has ZERO unresolved depth passes.

@@ -5630,7 +5630,7 @@ books:
             → /and-stitch Phase 4. RECOMMENDATION: CLEAR for /and-facets.
 
       - slug: b01c10
-        status: planned
+        status: scened   # /and-substance chapter b01c10 COMPLETE (2026-06-01): 4 scenes decomposed (CLIMAX). Phase 5: audience 4/4 scenes SUBSTANCE-FELT (3/3 personas, 0 HARD; s02 advisory competence-AS-catastrophe → carried to /and-write+stitch); dramatist ACCEPT (rise-peak-fall sound, exact zero-drift sum-roll, handoff mirror c10.out=c11.in CONSISTENT, antagonist agency + try-fail confirmed); auditor CLEAR (sum-roll exact, thematic-axis PASS, Earth-Bet clean, cl-d06 2nd-tranche deferral confirmed clean per pl-2026-05-30-001; flag-001 cl-world-d07 notes wording corrected — chapter draws +1.0 of +2, remainder downstream). Phase 5.5 chunk-cold-read: CONTINUE=yes, spine legible+causal, payoff earned, courier gives the function a face → PASS-CHUNK-VOICE-RISK (Signal B: airless-interior hazard flagged, same register as c06-c09; arms /and-stitch Phase 8.5 muffle-check; /and-write must keep breach@s02 + detention@s03 concrete+embodied+dialogue-carried). cl03a cost side -1.0 of -2 (capability gain side not drawn here). Next: /and-write b01c10 (carries dialogue — Otto↔Taylor via Jarvis channel + chunk-tags as event_map seeds).
         chunk: |
           Otto formalizes the arrangement: no longer a contingent exchange but a named,
           ongoing function. Taylor is his intelligence instrument for the Flea Bottom and
@@ -5733,6 +5733,284 @@ books:
             - "courier-figure: detained; ledger entry closed on a named person; face to the cost"
             - "Otto: leverage structural post-formalization"
           target_chapter: b01c11
+        chunk_cold_read:
+          reviewed_at: 2026-06-01T19:30:00Z
+          verdict: PASS-CHUNK-VOICE-RISK
+          classification: n/a
+          recovered_summary: "Otto formalizes the arrangement and requests a courier by description; Taylor provides the identity; the courier is detained two days later (learned via the feed); Taylor closes the ledger entry. Spine legible + causally clean; payoff earned; the detained courier gives the abstract 'function' a face. Cold-reader would keep going (CONTINUE=yes)."
+          intended_goal: "formalization and detention in the same chapter — Otto naming the arrangement and Taylor's feed confirming its operational consequence are the same event"
+          continue: yes
+          continue_strict: yes
+          report_path: active-project/staff/reviews/chunk-coldread-b01c10-20260601T193000Z.md
+          disposition: n/a
+          voice_risk:
+            triggered: true
+            signals: [B]
+            central_event: "s02 Taylor provides the courier's identity/pattern to Otto (the breach); s03 the courier is detained, read off Taylor's own feed (the consequence)"
+            voice_risk_carry: |
+              Signal B (abstraction-dense / airless-interior risk). The chunk cold-read flagged
+              "four scenes almost entirely interior pattern-noting with repeated do-NOT-let-her-realize
+              instructions — airlessness/sameness hazard for the prose pass" — the same register that
+              produced the c06-c09 cold-read NOs. This is the CLIMAX; it has real on-page events
+              (formalization, breach, detention) + channel-relayed dialogue, so it CAN read alive if
+              /and-write keeps the central events CONCRETE + EMBODIED + dialogue-carried rather than
+              apparatus-interior. Arms /and-stitch Phase 8.5 Check 3 central-event-muffle: verify s02
+              breach (Taylor handing over Corwick's identity) + s03 detention (Corwick taken, read off
+              the feed) deliver AS events at cold-reader legibility, not as one more line of process/
+              instrument abstraction. Plus the audience s02 advisory: render the clean delivery as
+              competence-AS-catastrophe (the smoothness IS the cost), NOT competence-satisfaction.
+        scenes:
+          - slug: b01c10s01
+            status: scened
+            chunk: |
+              THE NAMING (Jarvis-mediated formalization). The arrangement has run for months as a thing
+              nobody calls anything; this scene is where Otto calls it something. The meeting happens the
+              only way Otto and Taylor have ever communicated — [mechanism: the Jarvis coin-courier channel:
+              Otto's words are written and relayed through the courier-coin to Taylor's hand; her responses
+              go back the same way; they have never been in a room, never heard each other's voice, and this
+              scene does not change that]. Collision: FORMALIZATION AGAINST DENIABILITY — Otto converting a
+              contingent exchange into a named, standing function, and Taylor receiving the name without
+              being able to refuse the frame. [force: Otto — the relayed words, the apparatus behind them
+              naming the instrument by its use]. [force: Taylor — reading the relayed text for the pattern
+              under it, finding the pattern is now her]. Open on Taylor with the coin in hand and the relayed
+              message in front of her — Otto-on-paper, the voice that has never been a voice. [event: Otto
+              names the arrangement an ongoing function] — the relayed words describe a thing that already
+              exists and give it a shape: Taylor is the standing intelligence instrument for the Flea Bottom
+              and lower-city layer, Sera's protection is the standing consideration, and what was a series of
+              separate exchanges is now one continuing arrangement with no terminus. "Function" (Otto's dry
+              administrative register — a position in an apparatus, not a favor) is the load-bearing utterance.
+              [image: the arrangement as a named standing position rather than a contingent favor]. Taylor's
+              response, relayed back: not refusal — confirmation. She reads what the naming does (it forecloses
+              the informal-deniability she could tell herself she still had: each exchange severable, she could
+              simply stop) and confirms anyway, because the protection it buys is load-bearing.
+              [mechanism: Sera's protection is the standing consideration — the weight that makes refusal not
+              a real option]. [image: the tether going load-bearing]. Close on the channel going quiet with the
+              function named — the coin in Taylor's hand, the deniability gone. Do NOT let Taylor narrate this
+              as a moral realization; she registers the foreclosure as an operational fact and files it. The
+              breach is not here — this scene is the frame the breach happens inside.
+            scene_conflict:
+              protagonist_force: "Taylor reading the relayed message for the pattern under it — and finding the pattern named as her own standing function"
+              opposing_force: "Otto, via the Jarvis channel, converting the contingent exchange into a named ongoing arrangement with no terminus — leverage made structural"
+              stakes_axis: position-prot-rise
+            substance_delta:
+              axes_in_motion:
+                - axis: position-prot-rise
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl-d07a
+                  notes: "formalization names the function + forecloses informal-deniability; 1.0 of cl-d07a 2.0 (rest at c14); peaks toward 4.5 at chapter close"
+                - axis: social_tether-prot-rise
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl03b
+                  notes: "arrangement formalized = the Taylor<->Otto-apparatus tether now load-bearing rather than a series of favors"
+                - axis: social_tether-antag
+                  direction: up
+                  target_delta_magnitude: 1.5
+                  cost_ledger_anchor: cl-antag-d10
+                  notes: "Otto's leverage becomes structural post-formalization — the consideration (Sera's protection) is now a standing hold"
+              axes_held:
+                - axis: relational_anchor_status
+                  rationale: "Wren not in the meeting/channel; anchor holds at 3.5; the formal arrangement runs outside the Wren relationship"
+                - axis: political_register-prot
+                  rationale: "no resentment material here; the naming is received as operational fact; processing deferred to c11"
+                - axis: social_tether-prot-collapse
+                  rationale: "non-extractable confirmation in progress across the chapter, not advanced in this scene"
+                - axis: moral_framework
+                  rationale: "the breach is enacted in s02, not here; this scene establishes the frame"
+                - axis: moral_legibility_to_self
+                  rationale: "suppressed-recognition crack opens in s03 at the detention, not here"
+              density_target: 0.85
+          - slug: b01c10s02
+            status: scened
+            chunk: |
+              THE DESCRIPTION (Otto requests the courier; Taylor provides it). Same meeting, same channel —
+              the relayed message continues, or a second arrives hard on the first; the same coin, the same
+              one-remove. Collision: THE BREACH ENACTED AS A REQUEST ANSWERED — Otto asks for a specific
+              person by description, and Taylor, who has been holding exactly that observation back, provides
+              it. This is the moral_framework breach chapter; the breach is ENACTED here (info requested, info
+              given), NOT narrated as a moral realization. [event: Otto requests the courier by description] —
+              the relayed words name a courier not by name but by description: a face, a route, a pattern of
+              movement up the hill. [mechanism: how Otto's apparatus already knows the courier exists
+              independent of Taylor's feed — he asks BY DESCRIPTION, so his people have already seen the
+              figure; what he lacks is confirmation, the pattern, the operational detail Taylor's coverage
+              holds and his does not]. Taylor recognizes the figure instantly — the Corwick courier-face she
+              advanced in c09 and body-mapped across months, the Black-faction logistics figure she withheld
+              from the Jarvis channel in c09's beat 2. [image: the withheld observation asked for by
+              description — the thing Taylor chose not to put in the feed, now requested from outside, so that
+              providing it is the same as having reported it]. The breach: [event: Taylor provides the courier
+              identity and pattern] — she gives Otto the confirmation, the route, the pattern, the way she does
+              everything operational: cleanly, completely, the pattern-reading delivered as a report.
+              [force: Taylor — the instrument doing exactly what it is good at]. [force: Otto — the apparatus
+              that already half-knew, completing its picture from Taylor's feed]. The
+              systematic-override-rationalized threshold crosses HERE: the information is delivered AND deployed
+              against a named, locatable person; Taylor's accounting treats this as the arrangement functioning,
+              the consideration earned, the instrument used. [mechanism: the rationalization is operational, not
+              stated — she frames the provision as completing a report the apparatus already had most of, so her
+              contribution feels marginal even as it is the load-bearing confirmation]. [image: the Green channel
+              hardening — the Hightower apparatus's grip on the lower-city intelligence layer becoming settled].
+              Close on the report delivered, the pattern given, the channel quiet. Do NOT let Taylor recognize
+              what she has done as a moral event — she files it as a delivered report. Recognition is suppressed;
+              it surfaces (cracked, not opened) only in s03 when the consequence arrives. [VOICE-RISK carry: render
+              the clean delivery as competence-AS-catastrophe — the smoothness IS the cost — not competence-satisfaction.]
+            scene_conflict:
+              protagonist_force: "Taylor recognizing the withheld courier-figure from Otto's description and providing the confirmation cleanly, as a report"
+              opposing_force: "Otto's apparatus — already half-aware of the courier, asking for the operational detail only Taylor's coverage holds, completing its picture"
+              stakes_axis: moral_framework
+            substance_delta:
+              axes_in_motion:
+                - axis: moral_framework
+                  direction: down
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl03a
+                  notes: "courier info delivered + deployed against a named person (detention follows in s03); systematic-override-rationalized threshold crossed; ENACTED not realized; moral_framework 0 -> -1"
+                - axis: position-world
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl-world-d04
+                  notes: "Green succession channel solidifies as the apparatus completes its lower-city logistics picture; first half of chapter position-world +1.0; tail at s04"
+                - axis: political_register-world
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl-world-d07
+                  notes: "war's apparatus now operates on Taylor's intelligence; first +0.5 of cl-world-d07 (of declared +2; remaining draws downstream — NOT fully completed here, per auditor flag-001 correction); tail at s04"
+              axes_held:
+                - axis: relational_anchor_status
+                  rationale: "Wren not present; anchor holds at 3.5; the breach runs outside the Wren relationship"
+                - axis: political_register-prot
+                  rationale: "no resentment processing; deferred to c11; the provision is filed as a report, not grieved"
+                - axis: social_tether-prot-collapse
+                  rationale: "non-extractable confirmation in progress; not advanced in this scene"
+                - axis: moral_legibility_to_self
+                  rationale: "recognition SUPPRESSED at the breach itself; the crack opens in s03, not here"
+                - axis: position-prot-rise
+                  rationale: "peaked structurally at s01; this scene operates inside that frame without moving it"
+                - axis: social_tether-prot-rise
+                  rationale: "tether went load-bearing at s01; holds through the breach"
+                - axis: social_tether-antag
+                  rationale: "Otto's leverage made structural at s01; the breach is the leverage being used, not increased"
+              density_target: 0.85
+          - slug: b01c10s03
+            status: scened
+            chunk: |
+              THE DETENTION (two days later; learned through the feed). Two days after the report. This scene
+              is the d10 event and the first Dance-pressure pulse: the consequence of s02's provision arriving
+              through Taylor's own instrument, without her consent or design. Collision: THE WAR'S LOGIC MOVING
+              THROUGH THE INSTRUMENT — Taylor not acting, Taylor receiving; the network she built returning the
+              result of what she fed into it. Open on Taylor doing ordinary coverage-review, the feed running as
+              it always runs. [mechanism: how Taylor learns of the detention through the insect-feed — not told,
+              not reported to, but read off the count: a pattern in the coverage that resolves into the fact. The
+              courier's route goes wrong; the bodies around the figure are the wrong bodies in the wrong
+              configuration; the feed delivers the shape of a detention before Taylor names it as one].
+              [event: the courier (Corwick) is detained] — within two days of Taylor's report, the Black-faction
+              logistics figure she body-mapped across months is taken; the feed shows the figure intercepted,
+              held, the route closed. [image: the detention read off the count — the war's first operational
+              consequence of Taylor's intelligence, arriving as a pattern in her own coverage rather than as news
+              from outside]. [force: Taylor — the instrument receiving the result of its own accuracy, with no
+              action to take and no consent to give; the design is already done]. [force: the war's logic — the
+              Dance moving through Taylor's network without her, the abstract succession-conflict made operational
+              and local through her feed]. [image: the war's logic having moved through Taylor's network without
+              her consent or design — the thing she built to see Flea Bottom now a vector the war runs through].
+              The moral_legibility crack: Taylor registers the connection (her report, two days, this detention)
+              and the registration is SUPPRESSED — she sees it, the crack deepens, she does not let it open.
+              [mechanism: the suppression is operational — she notes the timing the way she notes any pattern,
+              then does not follow the pattern to its conclusion about herself; the recognition is present and
+              held down, not absent and not surfaced]. Do NOT let this become a moral realization scene; the +0.5
+              is the crack deepening, not the recognition opening. Close on Taylor with the detention confirmed in
+              the feed and the connection registered-and-held-down — the pattern seen, the conclusion about herself
+              not drawn, the legibility crack one fracture wider. [VOICE-RISK carry: render the detention AS a
+              perceived event in the feed (the wrong bodies, the route closing), not as a data-record abstraction.]
+            scene_conflict:
+              protagonist_force: "Taylor reading the detention off her own coverage — the instrument receiving the consequence of its own accuracy, with no action to take"
+              opposing_force: "the war's logic moving through Taylor's network without her consent or design — the Dance made operational and local through her feed"
+              stakes_axis: moral_legibility_to_self
+            substance_delta:
+              axes_in_motion:
+                - axis: moral_legibility_to_self
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: null
+                  notes: "detention visible in feed; Taylor registers report->two-days->detention and SUPPRESSES the conclusion about herself; crack deepens, does not open; +0.5 fracture widening; moral_legibility 5 -> 5.5; null anchor (legibility-crack, not a ledger-gain) per chapter contract"
+              axes_held:
+                - axis: moral_framework
+                  rationale: "breach crossed at s02 (-1.0); the detention is the breach's consequence, not a further breach; holds at -1"
+                - axis: position-prot-rise
+                  rationale: "peaked at s01; the detention confirms the position's functional reality but does not raise it"
+                - axis: social_tether-antag
+                  rationale: "Otto's leverage made structural at s01; the detention is the leverage producing a result, not increasing"
+                - axis: relational_anchor_status
+                  rationale: "Wren not present; anchor holds at 3.5; outside the formal ledger and this consequence"
+                - axis: political_register-prot
+                  rationale: "the detention produces resentment material but processing is deferred to c11; this scene holds it"
+                - axis: social_tether-prot-collapse
+                  rationale: "non-extractable confirmation in progress; the detention contributes but the collapse is not completed here"
+                - axis: position-world
+                  rationale: "solidified at s02; the detention is its operational confirmation; tail increment at s04"
+                - axis: political_register-world
+                  rationale: "advanced at s02; the detention is the register's operational confirmation; tail increment at s04"
+              density_target: 0.85
+          - slug: b01c10s04
+            status: scened
+            chunk: |
+              THE LEDGER CLOSE (the first closed entry with a name). Quiet consequence close. This scene is the
+              thesis-image rendered as a physical act: Taylor closing the ledger entry on the courier — the
+              body-map figure she has tracked for months becoming the first entry in her accounting that is both
+              closed and named. Collision: ACCURACY AS CATASTROPHE, ENACTED — the instrument working perfectly,
+              the accounting honest and complete, and that perfection being exactly the cost. [force: Taylor —
+              running the accounting, doing the thing she is good at: an open observation resolved, a pattern
+              completed, an entry finished]. [force: the closed entry — the figure who was a recurring body-map
+              across months now a finished line, the war's logic having put a name and a face to what the
+              accounting cost]. Open on Taylor at the accounting — the ledger, the count, the operational record
+              she keeps. [event: Taylor closes the courier's ledger entry] — the figure she body-mapped for
+              months, who ran the same routes, whose pattern she knew, is no longer a moving observation; the
+              entry resolves, completes, closes; she files it accurately. [image: the ledger's first closed entry
+              with a name — the body-map figure becoming a finished line, the first entry in Taylor's accounting
+              that is closed because of what she did, with a face to it]. [mechanism: the thesis enacted, not
+              stated — the accuracy IS the catastrophe; Taylor's competence at keeping the count is what made the
+              detention possible, and the chapter shows this by showing her competently closing the entry, NOT by
+              having her say or realize it]. [image: the face becoming the ledger's cost — the first time the
+              accounting's price has a specific human shape Taylor can see; the courier was a person she watched
+              long enough to know, a gait, a route, a face she could have described and did]. The world-tail
+              increments: [image: the Black-faction logistics thread foreclosed — Dragonstone-adjacent
+              consequences pending at remove, the closed entry being one node the war's apparatus has taken off
+              the board]. Close the chapter quiet: the entry closed, the name in the ledger, the count accurate
+              and complete, the cost of that accuracy sitting in the record with a face. Do NOT let Taylor name
+              the thesis. The chapter ends on the closed entry — accurate, named, finished — and the quiet of an
+              instrument that did exactly what it was built to do.
+            scene_conflict:
+              protagonist_force: "Taylor running the accounting — closing the courier's entry accurately, the instrument doing exactly what it does well"
+              opposing_force: "the closed entry itself — the body-map figure becoming a named, finished line, the accounting's first cost with a human face"
+              stakes_axis: position-world
+            substance_delta:
+              axes_in_motion:
+                - axis: position-world
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl-world-d04
+                  notes: "world-tail: Black-faction logistics thread foreclosed = one node off the board, Green channel's grip settling; second half of chapter position-world +1.0 (first at s02)"
+                - axis: political_register-world
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl-world-d07
+                  notes: "world-tail: detention's operational confirmation closing into the war's register; Dragonstone-adjacent consequences pending at remove; second +0.5 of cl-world-d07 drawn this chapter (chapter draws +1.0 of cl-world-d07's +2; remaining downstream — auditor flag-001 correction)"
+              axes_held:
+                - axis: moral_framework
+                  rationale: "breach crossed at s02 (-1.0); the ledger close is the quiet aftermath, not a further breach; holds at -1"
+                - axis: moral_legibility_to_self
+                  rationale: "crack deepened at s03 (+0.5, suppressed); the ledger close enacts the thesis physically without opening the recognition further; holds at 5.5"
+                - axis: position-prot-rise
+                  rationale: "peaked at s01 (4.5); the close confirms the functional peak, does not raise it"
+                - axis: social_tether-prot-rise
+                  rationale: "load-bearing as of s01; holds through the close"
+                - axis: social_tether-antag
+                  rationale: "structural as of s01; holds through the close"
+                - axis: relational_anchor_status
+                  rationale: "Wren outside the formal ledger; anchor holds at 3.5; the closed entry is a Black-faction figure, not Wren"
+                - axis: political_register-prot
+                  rationale: "resentment processing deferred to c11; the close holds it"
+                - axis: social_tether-prot-collapse
+                  rationale: "non-extractable confirmation in progress; not completed here"
+              density_target: 0.85
 
       - slug: b01c11
         status: planned
