@@ -4111,3 +4111,210 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0032
+
+```yaml
+id: PROP-0032
+created_at: 2026-06-01T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01-c09-2026-06-01.md
+  source_verdict: "/and-stitch b01c09 Phase 9 SHIPPED-WITH-CAVEATS (strict CONTINUE=no; central event RECOVERED + STAGED; complaints match chunk_cold_read.cold_read_risk_carry verbatim → matching-complaint auto-promotion per DEC-0062 / DEC-0060)"
+  gate_path: .claude/commands/and-stitch.md#phase-9
+target:
+  type: command
+  path: .claude/commands/and-stitch.md
+  section: "Phase 9 Step 1 — Cold read dispatch (reader-context framing) + Step 2 disposition routing for mid-series chapters"
+change_type: modify
+rationale: |
+  This is the THIRD consecutive mid-series chapter (c07 PASS-WITH-CAVEATS / DEC-0050-era;
+  c08 SHIPPED-WITH-CAVEATS / DEC-0060; c09 SHIPPED-WITH-CAVEATS / DEC-0062) where the Phase 9
+  zero-context cold-read returns strict CONTINUE=no, the central event is RECOVERED and STAGED,
+  and the CONTINUE=no complaints match the chapter's chunk_cold_read.cold_read_risk_carry
+  VERBATIM — prior-context referent-opacity (factions, the feed/channel/Jarvis-line, named
+  figures established in c01-c08) plus apparatus-vocabulary, all resolved for the real serial
+  reader and inaccessible to a zero-context reader by construction. Each ships via the Class-B /
+  matching-complaint design-inherent disposition.
+
+  Admin set a self-imposed recurrence trigger for exactly this class at first occurrence.
+  DEC-0021 (b01-c02, 2026-05-26) named the candidate process change precisely — "the protocol
+  change it implies (context-aware cold-read for non-opening chapters) would make Phase 9 a
+  different gate, not a stricter one; that is a principal-level architectural decision best
+  deferred until the pattern recurs" — and committed: "If a second chapter FAILs cold-read under
+  similar circumstances (bones sound, prior-chapter context explains reader confusion), admin
+  will propose the non-opening chapter qualification at that point." That trigger has now been
+  met three times over. The deferral condition is discharged; the proposal admin pre-authorized
+  is due.
+
+  The gap is NOT covered by any open proposal:
+    - PROP-0018 (Class A/B Phase 9 disposition) governs what happens AFTER a FAIL is classified;
+      it does not change the cold-read instrument's structural context-blindness. It is the
+      mechanism that ships these chapters — it presupposes the zero-context FAIL it cannot prevent.
+    - PROP-0019 / PROP-0019-A (upstream chunk-cold-read proxy) is ALSO zero-context by design;
+      the chunk_cold_read.cold_read_risk_carry it produces is precisely what the Phase 9
+      matching-complaint promotion keys on. It institutionalizes accepting the prior-context
+      blindness one layer earlier; it does not resolve it.
+    - PROP-0023 / PROP-0029 (apparatus-airlessness / muffle) target a DIFFERENT axis. The c09
+      evidence is decisive here: the PROP-0020/0022 overhaul machinery DID fire and DID work
+      (Phase 2.5 grd-001 → sensory:3 @11; Phase 8.5 confirmed central-event-muffle REMEDIATED;
+      person-first render applied) — yet strict CONTINUE stayed no, because the overhaul cures
+      airlessness/muffle, not prior-context referent-opacity. The two axes are now empirically
+      separated on a live chapter.
+
+  The discriminating insight from three live chapters: the Phase 9 zero-context cold-read is
+  the right instrument for OPENING chapters (where a real reader also arrives cold) and for
+  detecting Class-A structural-incompleteness on any chapter (central event not recoverable from
+  the text). It is the WRONG instrument for measuring CONTINUE-fitness on a mid-series chapter,
+  because the real serial reader is NOT context-blind — they arrive at cN having read c1..c(N-1).
+  A zero-context reader structurally cannot clear prior-context dependency, so it returns
+  CONTINUE=no every time and the disposition records "design-inherent" every time. The gate's
+  detection of referent-opacity is sound; what is mis-calibrated is the reader-context the
+  CONTINUE verdict is rendered under for non-opening chapters.
+
+  The minimum-blast-radius fix preserves the cold-read's uninformedness value while making the
+  CONTINUE verdict context-appropriate for mid-series chapters. It does NOT delete the
+  zero-context read, does NOT loosen Class-A detection, and does NOT make Phase 9 a softer gate.
+  It splits the single CONTINUE verdict into two reader stances on non-opening chapters:
+    (i) the existing zero-context read — retained verbatim for Class-A detection (can the central
+        event be recovered from THIS text alone? answers criterion-6-maps-to-goal); and
+    (ii) a context-primed CONTINUE re-ask — the SAME 6-question prompt, but the reader is given a
+        one-paragraph "previously established" digest (the set of prior-context referents the
+        chapter assumes: faction names, apparatus vocabulary, recurring figures — sourced from
+        the chunk_cold_read.cold_read_risk_carry list, which already enumerates exactly these).
+  The digest carries ONLY referent disambiguation (what "the feed" / "the Greens" / "Corwick" are),
+  NOT plot summary, NOT the chapter's own events, NOT the substance contract. This is the
+  documented-but-deferred "context-aware cold-read for non-opening chapters" from DEC-0021.
+
+  Disposition routing then becomes mechanical instead of requiring a fresh admin ruling per
+  chapter:
+    - Zero-context read recovers central event (criterion-6 maps to goal) AND context-primed
+      CONTINUE=yes  → PASS. The prior-context complaints are confirmed serial-reader-resolved,
+      not defects. This is the case c07/c08/c09 all are — they would PASS cleanly instead of
+      shipping SHIPPED-WITH-CAVEATS by matching-complaint hand-disposition.
+    - Zero-context read does NOT recover central event (criterion-6 fails to map) → Class-A FAIL,
+      route to /and-write revise. UNCHANGED — context-priming does not rescue a genuine
+      structural-incompleteness, because a serial reader cannot recover an event the text never
+      stages either.
+    - Context-primed CONTINUE STILL=no (with referents supplied) → genuine residual: the chapter
+      is hard to read even for the informed serial reader. Route to the existing Class-B
+      disposition (PROP-0018 branch) — this is now the ONLY path that reaches the design-inherent
+      hand-disposition, and it fires only when context-priming has been ruled out as the cause.
+
+  This converts "every quiet mid-series chapter ships SHIPPED-WITH-CAVEATS via a per-chapter admin
+  ruling that prior-context explains the CONTINUE=no" into a mechanical PASS, and reserves the
+  matching-complaint / design-inherent disposition for the genuinely-hard residual. It also
+  closes the self-fulfilling loop where chunk_cold_read.cold_read_risk_carry (zero-context) is
+  matched against Phase 9 (zero-context) to auto-promote a known zero-context artifact — both legs
+  measure the same blindness.
+
+  change_type: modify because Phase 9 already runs the cold read and already has the
+  criterion-6-maps-to-goal check (PROP-0018) and already consumes chunk_cold_read.cold_read_risk_carry
+  (DEC-0060/0062 matching-complaint path). The change adds a second reader stance (one extra
+  general-purpose dispatch on non-opening chapters) and re-wires the disposition fork to use it.
+  Opening chapters (chapter index 1) and Class-A FAILs are entirely unaffected.
+
+  recurrence_count: 3 (c07 / c08 / c09; DEC-0021 first-occurrence marker on c02 makes the
+  cross-chapter class-level count higher still, but the precisely-discriminated mid-series
+  recovered-event + prior-context-opacity shipping pattern is the c07/c08/c09 triple). Proposing
+  now rather than continuing to hand-dispose because: (a) admin pre-committed to propose at
+  recurrence in DEC-0021 and the condition is discharged three times over; (b) the c09 evidence
+  cleanly separates the prior-context axis from the apparatus-airlessness axis (the overhaul fired
+  AND worked AND CONTINUE stayed no), proving the residual is not addressable by any existing
+  open proposal; (c) the current path requires a fresh user-proxy ruling (DEC-0060, DEC-0062) per
+  chapter for a pattern that is now mechanically identical each time — a gate whose every firing
+  on a class needs an out-of-band ruling has a missing disposition branch; (d) the fix is bounded
+  (one extra dispatch on non-opening chapters; reuses the existing cold_read_risk_carry referent
+  list and the existing criterion-6 check) and preserves the cold-read's uninformedness for the
+  detection job it is genuinely good at.
+evidence_refs:
+  - "active-project/staff/reviews/coldread-b01-c09-2026-06-01.md — Q5 CONTINUE=no (strict); §7 CONFUSIONS enumerate prior-context referents (the feed/channel/Jarvis-line, Greens/heir/Queen factions, Wren/Corwick, the arrangement) — all c01-c08-established; Q6 summary recovers the surveillance-narrator central event (maps to goal)"
+  - "staff/admin/decisions.md — DEC-0021 (b01-c02, 2026-05-26): first-occurrence marker; names 'context-aware cold-read for non-opening chapters' as the candidate change; explicit self-imposed recurrence trigger to propose at second occurrence (now met 3x)"
+  - "staff/admin/decisions.md — DEC-0060 (b01c08 CHUNK-CLASS-B → P; cold_read_risk_carry apparatus-vocab + prior-context) and DEC-0062 (b01c09 same shape; explicitly 'inaccessible to a zero-context reader by construction, not by chunk deficiency') — two per-chapter hand-dispositions of the identical mechanical pattern"
+  - "staff/admin/process-proposals.md — PROP-0018 (Class A/B Phase 9 disposition: the mechanism that ships these chapters; presupposes the zero-context FAIL, does not prevent it); PROP-0019/0019-A (upstream chunk-cold-read; ALSO zero-context; produces the cold_read_risk_carry the matching-complaint path keys on); PROP-0023/PROP-0029 (apparatus-airlessness axis — c09 proves this axis was REMEDIATED while CONTINUE stayed no)"
+  - "trigger dispatch (this dispatch) — c09 NOTABLE: Phase 2.5 grd-001 → sensory:3 @11; Phase 8.5 central-event-muffle REMEDIATED + person-first render; Step 3.5 prose-rationale-mute = 0; yet strict CONTINUE=no on prior-context referent-opacity"
+  - ".claude/commands/and-stitch.md — Phase 9 Step 1 (single zero-context cold-read dispatch); Step 2 (criterion-6-maps-to-goal; PROP-0018 Class A/B fork; DEC-0060/0062 matching-complaint promotion against chunk_cold_read.cold_read_risk_carry)"
+recurrence_count: 3
+proposed_diff: |
+  In .claude/commands/and-stitch.md, Phase 9:
+
+  STEP 1 (Cold read dispatch) — add a reader-context split for NON-OPENING chapters only
+  (chapter index > 1; detectable from the chapter slug / showrunner memory chapter ordinal):
+
+    1a. Zero-context read (UNCHANGED). Dispatch one general-purpose agent with the existing
+        6-question cold-read prompt, reading ONLY draft/<book>-<chapter>.md. This read owns
+        Class-A detection: criterion-6-maps-to-goal answers "is the central event recoverable
+        from this text alone?" Retain verbatim. Persist as today.
+
+    1b. Context-primed CONTINUE re-ask (NEW; non-opening chapters only). Dispatch a second
+        general-purpose agent with the SAME 6-question prompt PLUS a one-paragraph
+        "Previously established" digest prepended. The digest is built from
+        chapters[<slug>].chunk_cold_read.cold_read_risk_carry (which already enumerates the
+        chapter's prior-context referents) and contains ONLY referent disambiguation:
+        "In this serial, '<the feed>' is <one-clause gloss>; '<the Greens>' are <one-clause
+        gloss>; '<Corwick>' is <one-clause gloss>; ..." It MUST NOT contain plot summary of
+        prior chapters, the chapter's own events, or the substance contract. It supplies the
+        knowledge a c1..c(N-1) reader has and a zero-context reader lacks — nothing more.
+        Persist to staff/reviews/coldread-<book>-<chapter>-primed-<timestamp>.md.
+
+    For OPENING chapters (index 1): skip 1b entirely. The zero-context read is the correct and
+    sole instrument — a real reader also arrives cold. No change to opening-chapter behavior.
+
+  STEP 2 (disposition routing) — replace the single-read fork with the two-read fork
+  (non-opening chapters):
+
+    - 1a recovers central event (criterion-6 maps to goal) AND 1b CONTINUE=yes → PASS.
+      Prior-context complaints in 1a are confirmed serial-reader-resolved. Record
+      cold_read.prior_context_resolved = true. (This is the case c07/c08/c09 are — PASS, not
+      SHIPPED-WITH-CAVEATS.)
+    - 1a does NOT recover central event (criterion-6 fails to map) → Class-A FAIL → /and-write
+      revise. UNCHANGED. Context-priming does not run / does not rescue a structural gap.
+    - 1a recovers AND 1b CONTINUE=no → genuine residual (hard to read even informed). Route to
+      the existing PROP-0018 Class-B disposition. This becomes the SOLE path to the
+      design-inherent hand-disposition, firing only after context-priming is ruled out.
+
+    The DEC-0060/0062 matching-complaint auto-promotion against chunk_cold_read.cold_read_risk_carry
+    is SUPERSEDED for non-opening chapters by the 1b context-primed re-ask: instead of matching
+    zero-context complaints against a zero-context risk-carry (both measuring the same blindness),
+    the gate now directly tests whether supplying the carried referents clears CONTINUE.
+
+  MEMORY ADDITIONS (Step 4):
+    cold_read.zero_context_continue: yes | no
+    cold_read.primed_continue: yes | no | n/a (opening chapter)
+    cold_read.prior_context_resolved: true | false
+
+  VERDICT ENUMERATION:
+    Add PASS-PRIOR-CONTEXT-RESOLVED to the Phase 9 outcome set (non-opening chapters where 1a
+    recovers + 1b CONTINUE=yes). Distinguishes "passed because the serial reader has context"
+    from a clean zero-context PASS, for audit legibility, without being a caveat-ship.
+
+  SCOPE NOTE: This does NOT delete the zero-context read (it owns Class-A detection and is
+  retained verbatim), does NOT loosen any detection criterion, and does NOT change opening-chapter
+  behavior. It adds one stance (one dispatch on non-opening chapters) and re-points the
+  disposition fork. The cold-read's uninformedness value is preserved for the job it is good at
+  (can the text stand up structurally?) and supplemented with the reader-context the actual serial
+  reader has when judging CONTINUE-fitness.
+
+  RELATIONSHIP TO PRIOR PROPOSALS:
+    - PROP-0018: complementary. Its Class-B branch now receives only the genuine residual
+      (1a-recovers + 1b-CONTINUE=no), not every prior-context CONTINUE=no. PROP-0018's
+      design-inherent disposition is correct for that residual; this proposal just stops feeding
+      it the false-positive prior-context cases.
+    - PROP-0019/0019-A: the upstream chunk_cold_read remains zero-context and useful as an early
+      Class-A proxy. Its cold_read_risk_carry list is now consumed constructively — as the source
+      of the 1b referent digest — rather than as a complaint-matching key. No change required to
+      and-substance Phase 5.5; this is a consumption change at /and-stitch Phase 9 only.
+    - PROP-0023/0029: orthogonal axis (airlessness/muffle). Both can be accepted independently;
+      c09 demonstrates they address a different failure mode that this proposal does not touch.
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
