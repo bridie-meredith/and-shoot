@@ -9,14 +9,15 @@ cascade:
     Book b01 chapter_count = 20. Drive as far as feasible; halt cleanly with a
     checkpoint on cap-exhaustion / hard-block / practical session limit.
   last_completed:
-    level: bones-review
+    level: facets
     slug: b01c09
-    completed_at: 2026-06-01T01:00:00Z
+    completed_at: 2026-06-01T16:00:00Z
   next:
-    command: /and-facets b01c09
+    command: /and-stitch b01c09
     args: [b01c09]
   reason: continue
   failure: null
+  facets: "audited-r1 (DEC-0063 Option-B streamlined). Phase 5 0 HARD / 9 SIGNAL; Phase 5b all 8 content facets PASS 3-of-3 (1 fixer loop on sensory old-state lineage). orchestrator-critic: SUCCESS 7/7. Carry to /and-stitch: signal-sup-001 (validate exposition:3@8 / loc-state:3@8 fold for redundancy at Phase 1); apparatus-muffle @11 (Phase 8.5); alive-002 VOICE-FIXABLE scene-B opening person-first (Phase 4); moral_legibility hold s03 NO recognition beat (DEC-0062); cold_read CONTINUE bar = tentative-yes (Class B)."
   bones_review: "PASS / follow_check PASS-WITH-NOTES — CLEAR for /and-facets. Carries to Phase 2.5: follow-001 (s02 @8 temporal gap, context-ledger candidate), signal-001 (@11 instrument-class render-physical / grounding-ledger), signal-002 (@9/@10 marks-verb). pl-2026-06-01-001 (corwick card / dragonpit-margin+lower-gate geo cards) resolves at /and-facets Phase 0."
   notes: |
     /and-write b01c09 COMPLETE (2026-06-01). 23 bones / 3 scenes emitted:

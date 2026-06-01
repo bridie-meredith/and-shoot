@@ -1,3 +1,38 @@
+## SESSION-START — 2026-06-01T09:00:00Z — and-facets-b01c09-cycle1-fixes-round2
+dispatch: /and-facets b01c09 Phase 5b cycle-1 remediation — confirm 2 HARD baseline fields already present in loc-state (FINDING 1: loc-state:1 @1 thermal; FINDING 2: loc-state:3 @8 light); apply FINDING 3 SOFT tidy (loc-state:5 @17 tactile/prop wax-soft-warm baseline) if rubric-safe
+target: active-project/theater/facets/location-state-b01-c09.md
+audit-report: active-project/staff/audience/sensory-old-state-reader/sensory-r1-verdict.md
+findings-queued: 3 (2 HARD confirm-in-place; 1 SOFT pending rubric check)
+
+## FINDING 1 (b01c09 sensory:1 @8 thermal) — RESOLVED — 2026-06-01T09:10:00Z
+fault: sensory:1 @8 old-state "stone-lane-late-morning-warmth" unanchored — no thermal field in any scene-A loc-state entry (HARD)
+scope: line
+change: confirmed present in loc-state:1 @1 — "sensory-baseline: stone-lane retained late-morning warmth (thermal; scene-A baseline — anchors sensory:1 @8 old-state)"; applied prior to this session; pre-validation confirms non-event language, no silent-gap triggered, positioning entry intact
+criteria met: yes — sensory:1 old-state now traces to named loc-state:1 @1 thermal baseline
+
+## FINDING 2 (b01c09 sensory:3 @11 light) — RESOLVED — 2026-06-01T09:11:00Z
+fault: sensory:3 @11 old-state "lane-ambient-empty-distribution" unanchored — no light/visual field in loc-state:3 @8 (HARD)
+scope: line
+change: confirmed present in loc-state:3 @8 — "sensory-baseline: evening ambient lane visual distribution, no non-baseline body present (light/visual; scene-B baseline — anchors sensory:3 @11 old-state)"; applied prior to this session; pre-validation confirms non-event language, delta direction coherent with loc-state:4 @11
+criteria met: yes — sensory:3 old-state now traces to named loc-state:3 @8 visual baseline
+
+## FINDING 3 (b01c09 sensory:2 @23 tactile) — RESOLVED — 2026-06-01T09:12:00Z
+fault: sensory:2 @23 old-state "wax-soft-warm" physically entailed but lacks formal loc-state lineage (SOFT FLAG)
+scope: line
+change: appended to loc-state:5 @17 — "tactile-prop-baseline: sealing-wax at station is pliable-warm pre-application (anchors sensory:2 @23 old-state)"; non-event ambient language; no silent-gap triggered; no new loc-state entry added; anchor verb "takes" is transitional, not dexterity-stillness
+criteria met: yes — sensory:2 old-state now traces to named loc-state:5 @17 tactile-prop-baseline
+
+## SESSION-END — 2026-06-01T09:15:00Z — and-facets-b01c09-cycle1-fixes-round2
+findings-applied: 3 (FINDING 1 + FINDING 2 confirmed-in-place; FINDING 3 applied this session)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-06-01T00:00:00Z — and-facets-b01c09-cycle1-fixes
+dispatch: /and-facets b01c09 Phase 5b cycle-1 remediation — add old-state baseline fields to loc-state entries to anchor 2 HARD unanchored-old-state findings (sensory:1 @8 thermal, sensory:3 @11 light) + 1 SOFT recommended tidy (sensory:2 @23 tactile); upstream-edit-first; no sensory entry deletions
+target: active-project/theater/facets/location-state-b01-c09.md
+audit-report: active-project/staff/audience/sensory-old-state-reader/sensory-r1-verdict.md
+findings-queued: 3 (2 HARD + 1 SOFT)
+
 ## SESSION-START — 2026-05-31T23:00:00Z — write-b01c09-pass2-svo-recasts-verify
 dispatch: /and-write b01c09 Phase 2 fixer pass — verify and confirm 12 FAULT-FORM recasts in b01c09 bones draft; svo: field edits only; two judgment bones (s02n05, s03n04)
 target: active-project/staff/showrunner/b01c09-bones-draft-2026-05-31.md

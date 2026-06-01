@@ -1495,3 +1495,64 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-01-002
+      created_at: 2026-06-01T16:00:00Z
+      created_by: "/and-facets b01c09 Phase 5b convergence trace (bidirectional loop one-sided)"
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        CALIBRATION GAP (Rule-11 TASTE-FLAG → RUBRIC-FIDELITY promotion candidate).
+        At /and-facets b01c09, the sensory facet failed the Phase 5b audience gate on two
+        HARD old-state-lineage findings (sensory:1 @8 thermal + sensory:3 @11 light old-states
+        unanchored to any prior loc-state sensory-baseline field), caught by the
+        sensory-old-state-reader specialist. The Phase-5 mechanical auditor did NOT
+        independently fire these — even though the sensory author had left explicit SEAM-011 /
+        SEAM-012 self-flags naming the gap. The auditor's RUBRIC-FIDELITY (c) cross-facet
+        co-citation / old-state-anchor scan should be able to mechanize this check: a sensory
+        entry's declared old-state must resolve to a named prior loc-state sensory-baseline
+        field (or a prior sensory entry) at an earlier beat; if no such anchor exists → HARD
+        rubric-fidelity-old-state-anchor finding. Promoting this to a mechanical auditor check
+        (per rubric-sensory.md § old-state anchor REJECT enumeration) would catch the gap at
+        Phase 5 instead of relying on the audience specialist at Phase 5b.
+      context_refs:
+        - active-project/staff/auditor/facets-audience-gate-r1.md  # convergence trace + calibration note
+        - active-project/staff/audience/sensory-old-state-reader/sensory-r1-verdict.md
+        - design/shoot-v2/rubric-sensory.md  # § old-state anchor
+        - .claude/commands/and-facets.md  # Phase 5 RUBRIC-FIDELITY (c)
+      resolution_suggestion: "Add sensory old-state-anchor lineage check to the auditor RUBRIC-FIDELITY enumeration (rubric-sensory.md REJECT section), so it promotes to a mechanical Phase-5 check."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-01-003
+      created_at: 2026-06-01T16:00:00Z
+      created_by: "/and-facets b01c09 (auditor + orchestrator silent-write incident)"
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: Phase 5
+      severity: SOFT
+      description: |
+        INCIDENT (process-reliability). The Phase-5 auditor fork for b01c09 returned a complete,
+        well-formed audit report in its result message but did NOT write
+        active-project/staff/auditor/facets-final-audit.md (the on-disk file remained the stale
+        c08 report). The orchestrator detected the miss (committed file still had episode: b01c08),
+        archived the stale c08 report, and transcribed the c09 report from the fork return.
+        Recurrence of the "agent reports a write it did not perform" pattern (cf. silent subagent
+        deaths logged at /and-write b01c09). Mitigation already in practice: orchestrator verifies
+        the audit file's episode header on disk after the auditor returns, before proceeding to
+        Phase 6. Worth a process note: Phase 5 should always stat + episode-check the audit report
+        on disk after the auditor fork, not trust the fork's "wrote the file" claim.
+      context_refs:
+        - active-project/staff/auditor/facets-final-audit.md  # orchestrator-transcribed
+        - active-project/theater/_archive/20260601T152450Z-b01c08-stale-r2-shards/staff/auditor/facets-final-audit.md  # archived c08
+      resolution_suggestion: "Add a Phase-5 post-auditor on-disk episode-header verification step to the /and-facets command body."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
