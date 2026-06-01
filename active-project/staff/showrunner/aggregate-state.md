@@ -1,8 +1,9 @@
 # Aggregate State — taylor-westeros-good-intentions
 
 # Rolling forward-feed channel for cross-chapter narrative continuity (schema: schemas/aggregate-state.schema.md).
-# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c09 Phase 0.
-# This is version 1 — initial emit, scoped through b01c08.
+# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c10 Phase 0.
+# Scoped through b01c09. c09 rolled: relational_anchor_status +0.5 (cl-d08 Wren route-indexing) +
+#   political_register-prot +0.5 (cl-d05 continuation, lower-gate faction-inference). All other axes HELD.
 #
 # DERIVATION NOTES (for principal sanity-check):
 #   - axis ranks summed from per-chapter substance_delta (chapter-contract axes_in_motion + substance_delta_measured
@@ -24,8 +25,8 @@ aggregate_state:
   version: 1
   project: taylor-westeros-good-intentions
   through_book: b01
-  through_chapter: b01c08
-  last_updated: 2026-06-01T05:00:33Z
+  through_chapter: b01c09
+  last_updated: 2026-06-01T06:30:00Z
   last_updated_by: and-stitch-phase-10
 
   axis_state:
@@ -62,12 +63,12 @@ aggregate_state:
       notes: "collapse phase dormant until d10 (non-extractable confirmed); sits at peak-state start_rank 7 through c08; cl07b not yet anchored"
 
     - axis: relational_anchor_status
-      rank: 3
+      rank: 3.5
       start_rank: 1
-      delta_since_start: 2
-      last_movement_at: b01c06
+      delta_since_start: 2.5
+      last_movement_at: b01c09
       last_updated_by: and-stitch-phase-10
-      notes: "HIGH=WORST; c02 +1.0 (Wren enters coverage map as named function-node, account opens) + c06 +1.0 (first spoken exchange; weight added by Wren's omission from deliverable, cl-d06). c08 HELD (Wren in coverage, no new weight). cl-d06 second tranche +1.0 DEFERRED to c09/c10 (pl-2026-05-30-001)"
+      notes: "HIGH=WORST; c02 +1.0 (Wren enters coverage map as named function-node, account opens) + c06 +1.0 (first spoken exchange; weight added by Wren's omission from deliverable, cl-d06) + c09 +0.5 (cl-d08 first tranche: Wren now a mapped pattern/route in the internal map — 'the map takes Wren's pattern... clean, indexed, kept' — structurally present without ledger entry). c08 HELD. NOTE: cl-d06 second tranche +1.0 still DEFERRED to c10 (pl-2026-05-30-001); the c09 +0.5 is the distinct cl-d08 route-indexing tranche, not the deferred deliverable-omission tranche"
 
     - axis: moral_legibility_to_self
       rank: 5
@@ -78,12 +79,12 @@ aggregate_state:
       notes: "non-linear; c02 +0.5 (coverage-map recognition arrives + suppressed under harm-reduction) + c06 +0.5 (honest accounting of name-delivery deepens the crack). c07 genuine-engagement-with-Halvard but resolution deferred not advanced; c08 HELD"
 
     - axis: political_register-prot
-      rank: 3
+      rank: 3.5
       start_rank: 1
-      delta_since_start: 2
-      last_movement_at: b01c07
+      delta_since_start: 2.5
+      last_movement_at: b01c09
       last_updated_by: and-stitch-phase-10
-      notes: "monotonic; c05 +1.5 (first resentment color, cl-d05 first tranche; neutral-instrumentally-observant foreclosed) + c07 +0.5 (Halvard encounter forces articulation of resentment's object). c08 HELD (Aemond feed-ref is logistics, not behavioral; resentment does not advance on logistics noise)"
+      notes: "monotonic; c05 +1.5 (first resentment color, cl-d05 first tranche; neutral-instrumentally-observant foreclosed) + c07 +0.5 (Halvard encounter forces articulation of resentment's object) + c09 +0.5 (cl-d05 continuation: resentment-color deepens on a named particular — the lower-gate/Corwick faction-inference, 'a thing already written... a direction I did not infer so much as recognize'). c08 HELD (Aemond feed-ref is logistics, not behavioral)"
 
     - axis: social_tether-prot-rise
       rank: 6
@@ -137,7 +138,7 @@ aggregate_state:
       last_updated_by: and-stitch-phase-10
 
     - hook_id: hook-0002
-      description: "cf-d10-courier-face: the courier observed in c05 (and held in Taylor's memory c06/c07) gets a name + function this chapter — Oswyn names 'Corwick, runs errands for someone above his station, up the hill twice this month.' The FACE/NAME leg is PAID at c08; the patron-up-the-hill (the someone above his station) is unnamed — open sub-thread feeding d10."
+      description: "cf-d10-courier-face: the courier observed in c05 gets a name + function at c08 (Oswyn names 'Corwick, runs errands for someone above his station'). c09 ADVANCES (beat 2): Corwick now carries a tracked FACE in the feed (resolved at the Dragonpit-margin lower-gate, evening circuit) plus an inferred Black-faction contact — he faces a second man at the lower gate, the Dragonpit's court-margin / heir's-business side under Rhaenys's Hill (NOT a Green-faction gate). Identity of the second man + the errand remain withheld BY DESIGN. The d10 accounting payoff (the patron-up-the-hill named, the faction-contact errand resolved) is still future — NOT paid."
       introduced_at: b01c05
       expected_payoff: c10
       status: open
@@ -187,9 +188,9 @@ aggregate_state:
       last_updated_by: and-stitch-phase-10
 
     - hook_id: hook-0007
-      description: "Halvard counter-argument: c07 first genuine engagement of the principled-slower argument; ends without resolution; Taylor has a counter she believes (the named-death body-count). Halvard does not appear on-page in c08 (held offstage; referenced in prologue as 'the argument the septon left in my hand'). Foreclosure-of-engagement scheduled for d09."
+      description: "Halvard counter-argument: c07 first genuine engagement of the principled-slower argument; ends without resolution; Taylor has a counter she believes (the named-death body-count). Halvard does not appear on-page in c08 or c09 (held offstage). Foreclosure-of-engagement was scheduled for d09 but did NOT land — c09 ran the routine surveillance circuit (Wren route-indexing + Corwick lower-gate inference) and did not return to Halvard. SLIP: expected_payoff slips c09 -> c10. Held as an uncertain forward-thread item this chapter (not applied)."
       introduced_at: b01c07
-      expected_payoff: c09
+      expected_payoff: c10
       status: open
       paid_at: null
       abandoned_at: null
@@ -216,6 +217,16 @@ aggregate_state:
       abandonment_reason: null
       last_updated_by: and-stitch-phase-10
 
+    - hook_id: hook-0010
+      description: "Corwick / lower-gate faction-inference: c09 second circuit returns Corwick at the Dragonpit-margin lower gate (the heir's-business / court-margin side under Rhaenys's Hill — a NOT-Green gate) facing a second man at the wrong hour. Taylor reads the gate's loyalty to a direction (a Black-faction contact) but NOT a name; she prices the posture-class small, closes the observation-entry, and does NOT route it onward — a filed-but-unrouted observation. Quiet open thread: the faction-contact significance is on the page for the reader but withheld from the channel by design; feeds the d10 courier-thread accounting (the errand + the patron-up-the-hill)."
+      introduced_at: b01c09
+      expected_payoff: c10
+      status: open
+      paid_at: null
+      abandoned_at: null
+      abandonment_reason: null
+      last_updated_by: and-stitch-phase-10
+
   characters:
     - slug: taylor-hebert-kl-122ac
       introduced_at: b01c01
@@ -226,9 +237,9 @@ aggregate_state:
 
     - slug: wren-stitch-maker-flea-bottom-ward
       introduced_at: b01c01
-      last_appearance: b01c06
+      last_appearance: b01c09
       reader_legibility: partial
-      legibility_notes: "reader knows occupation (stitch-maker, two lanes over) + Taylor's coverage-map function-node categorization + one spoken exchange (c06) + Taylor's protective omission from the deliverable; NAME deliberately withheld in deliverable. Not on-page in c08"
+      legibility_notes: "reader knows occupation (stitch-maker) + Taylor's coverage-map function-node categorization + one spoken exchange (c06) + Taylor's protective omission from the deliverable (NAME deliberately withheld). c09: now the surveillance-pattern SUBJECT — her daily route (door / corner / one-entrance lane) is mapped + indexed in Taylor's internal map; reader-legible via the @0 prologue bridge restatement ('I know the stitch-maker's days the way I know the lanes — Wren keeps the Hook's children fed and clothed'). Not on-page in c07/c08"
       last_updated_by: and-stitch-phase-10
 
     - slug: oswyn-mudway-flea-bottom-elder
@@ -261,9 +272,9 @@ aggregate_state:
 
     - slug: corwick
       introduced_at: b01c08
-      last_appearance: b01c08
+      last_appearance: b01c09
       reader_legibility: partial
-      legibility_notes: "the named courier — 'runs errands for someone above his station; up the hill twice this month' (Oswyn-supplied). Reader has name + function + frequency; the patron (someone above his station) is unnamed. Body-map building since c05 (was the nameless courier)"
+      legibility_notes: "the named courier — 'runs errands for someone above his station; up the hill twice this month' (Oswyn-supplied, c08). c09: tracked-courier, now ON-PAGE in the feed at the Dragonpit-margin lower gate, facing an unnamed second man at the wrong hour — the lower-gate faction-inference (a NOT-Green / heir's-business gate under Rhaenys's Hill = a Black-faction contact, read by Taylor as a direction not a name). Reader has name + function + frequency + a faction-direction; the patron + the second man + the errand remain unnamed. Body-map building since c05 (was the nameless courier)"
       last_updated_by: and-stitch-phase-10
 
     - slug: meryn-cobb
@@ -283,8 +294,8 @@ aggregate_state:
   world_state:
     - key: calendar
       kind: calendar
-      state: "KL 122 AC; the Faith's Crone's stretch; ~third month of the arrangement (two-months-plus functional at c07, same season at c08). Bay-damp cold season — bay-damp settled on the morning stone, not lifting before the first bell. Viserys I on the throne; succession informally contested"
-      last_changed_at: b01c08
+      state: "KL 122 AC; the Faith's Crone's stretch; ~third month of the arrangement (two-months-plus functional at c07, same season at c08/c09). Bay-damp cold season — bay-damp settled on the morning stone, not lifting before the first bell. c09 prologue REINFORCES the same anchor (Crone's stretch / bay-damp / first bell) per rev-0002, holding the c08->c09 clock continuous. Viserys I on the throne; succession informally contested"
+      last_changed_at: b01c09
       last_updated_by: and-stitch-phase-10
 
     - key: the-feed-station
@@ -319,8 +330,20 @@ aggregate_state:
 
     - key: coverage-map
       kind: condition
-      state: "Taylor's insect-feed surveillance architecture — ~40+ bodies (c02 baseline forty-three), extended across Flea Bottom + Rushwick + Red Keep servant-passage ward by c08; harm-reduction framed; routing calibrated intelligence to Otto via Jarvis since c04"
-      last_changed_at: b01c08
+      state: "Taylor's insect-feed surveillance architecture — ~40+ bodies (c02 baseline forty-three), extended across Flea Bottom + Rushwick + Red Keep servant-passage ward by c08; c09 the evening (second) circuit extends coverage to the Dragonpit margin / lower-gate (the outer lanes south, toward the hill — Rhaenys's-Hill court-margin); Wren's daily route now indexed as a tracked pattern in the internal map. Harm-reduction framed; routing calibrated intelligence to Otto via Jarvis since c04"
+      last_changed_at: b01c09
+      last_updated_by: and-stitch-phase-10
+
+    - key: the-dragonpit-margin
+      kind: location
+      state: "established c09 (reader-established, uncarded per DEC-0063): the outer lanes south of the Hook, toward the hill — Taylor's evening (second) circuit terrain. Hill-lanes lose the day's heat first; warmth of the hook-ward stone gone out of the air. Court-margin terrain abutting Rhaenys's Hill"
+      last_changed_at: b01c09
+      last_updated_by: and-stitch-phase-10
+
+    - key: the-lower-gate
+      kind: location
+      state: "established c09 (reader-established, uncarded per DEC-0063): the Dragonpit's court-margin side-gate under Rhaenys's Hill, on the lower-gate road — where bodies on the heir's business pass and not the Queen's; explicitly NOT a Green-faction gate (a faction-loyalty signature Taylor reads off the gate). Site of the c09 Corwick faction-inference encounter (supply cart parked, stone-post at the side-exit)"
+      last_changed_at: b01c09
       last_updated_by: and-stitch-phase-10
 
   revision_layer:
@@ -333,6 +356,16 @@ aggregate_state:
       applied_at: 2026-06-01T05:00:33Z
       applied_by: and-stitch-phase-10
       target_consumer_chapter: b01c09
+
+    - entry_id: rev-0002
+      chapter: b01c09
+      hunk_summary: "added calendar/season anchor to c09 prologue (Crone's stretch / bay-damp on the morning stone / cold not lifting before the first bell) — reinforces rev-0001's c08->c09 clock; continues the cross-chapter season-register continuity into c10"
+      class: presentation-reinforcement
+      acknowledged: true
+      acknowledged_at: 2026-06-01T06:30:00Z
+      applied_at: 2026-06-01T06:30:00Z
+      applied_by: and-stitch-phase-10
+      target_consumer_chapter: b01c10
 
   conflict_log: []
 
