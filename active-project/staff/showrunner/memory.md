@@ -5595,6 +5595,23 @@ books:
         #     + Phase 6 bone-gate (auditor 0 HARD / 2 SIGNAL accepted; audience 9/9 SUBSTANCE-FELT).
         #   2 accepted SIGNALs carried to /and-stitch Phase 4 (scene-map protected-patterns): s02n09 instrument-class → render-physical; marks-verb variation.
         #   Per-bone substance_delta source of truth: staff/showrunner/b01c09-bones-draft-2026-05-31.md.
+        bones_review:
+          reviewed_at: 2026-06-01T00:00:00Z
+          report_path: active-project/staff/reviews/bones-b01c09-2026-06-01.md
+          verdict: PASS
+          follow_check: PASS-WITH-NOTES
+          bones_file_mtime_at_review: 1780286404
+          stale_since: null
+          notes: |
+            fidelity PASS; 0 HARD / 2 SIGNAL (both already in scene-map advisories).
+            follow_check PASS-WITH-NOTES — one context-addable flag (follow-001: s02 @8
+            temporal/location pivot has no temporal marker on the bone; same-day-evening
+            slightly ambiguous; context-addable at /and-facets Phase 2.5, NOT a FOLLOW-FAIL).
+            aliveness: BONES-AIRLESS-RISK localized to scene-B @8-@11 (advisory; @11
+            "insect-feed returns corwick" instrument-class courier-appears) → forewarns
+            /and-facets Phase 2.5 grounding scrutiny + /and-stitch Phase 4 voice-embodiment.
+            dialogue-coverage CLEAN (silent chapter). signal-002 @9/@10 marks-verb variation
+            → /and-stitch Phase 4. RECOMMENDATION: CLEAR for /and-facets.
 
       - slug: b01c10
         status: planned

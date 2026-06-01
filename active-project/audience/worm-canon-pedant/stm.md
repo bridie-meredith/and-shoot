@@ -727,3 +727,29 @@ canonicity_findings:
   - SW-3 CLOSED at bone level: recognition decomposed across 4 bones (n09 feed returns corwick / n04 faces / n05 squares shoulders / n06 files posture-class); physical-return THEN categorization honored
   - SW-2 (n07 closes observation-entry + n08 completes circuit) = substrate-selection-as-operational-norm, not refusal; canonical
   - zero flags; canon streak holds through c09
+
+## 2026-06-01 — /and-write b01c09 Phase 6 substance bone-gate
+
+verdict_per_scene:
+  b01c09s01: SUBSTANCE-FELT
+  b01c09s02: SUBSTANCE-FELT
+  b01c09s03: SUBSTANCE-FELT
+chapter_aggregate: SUBSTANCE-FELT
+hard_findings: []
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+earth_bet_fence_verdict: CLEAN — all 23 SVOs and all axes_held rationales reviewed; zero parahuman jargon; zero Khepri/Gold Morning/Skitter/Brockton-Bay proper nouns; shape-language only; inner-monologue-rare cap not tested
+sw3_status: CLOSED — posture-recognition decomposed across n09/n04/n05→n06; physical-data-THEN-categorization honored; Phase 5 soft watch resolved at bone level
+sw2_status: CONFIRMED — substrate-selection-as-operational-norm; Jarvis channel never enters as considered option; no deliberation bone; canonical
+soft_findings:
+  - SOFT (carried forward): b01c07 prose-burden — Halvard tether-gain; carries to b01c07 /and-write (unchanged)
+canonicity_findings:
+  - Earth-Bet fence: CLEAN
+  - power mechanics: coverage-by-physical-presence; feed returns bodies/positions/movement via biological-relay; pattern-accumulation over time; no range inflation; no single-deployment broadcast
+  - SW-3: CLOSED at bone level
+  - SW-2: CONFIRMED
+  - internal-map/deliverable partition: canonical; structurally separated at n05/n06 (s01) and n05/n06 (s03)
+  - Black-faction inference: legitimate pattern-read; directional not conclusory; consistent with c05 uncertainty-discipline
+  - multi-shard fence: CLEAN — no body-coordination; no directive deployment; insect-feed returns positions/posture data only
+  - Wren-surveillance: coverage-as-accumulation form; established methodology applied to a body in coverage; canonical
+verdict_file: active-project/audience/worm-canon-pedant/bone-gate-b01c09-2026-06-01.md
