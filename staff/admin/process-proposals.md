@@ -4062,7 +4062,8 @@ evidence_refs:
   - "active-project/draft/b01-c01.md through b01-c07.md — seven shipped chapter drafts; c02-c05 are the load-bearing evidence stretch"
   - "staff/admin/process-proposals.md — PROP-0022 (aliveness twin, wired); PROP-0023 (false-ALIVE bone-level, open-pending-principal-triage)"
   - "active-project/staff/showrunner/parking-lot.md — pl-2026-05-31-009 (cross-chapter aliveness scoring question surfaced to /and-review pipeline)"
-recurrence_count: 1
+  - "active-project/staff/reviews/coldread-b01c09-20260601T163000Z.md — fourth consecutive chapter (c06/c07/c08/c09) drawing a tentative-or-worse uninformed cold-read (NO-CONTINUE) and shipping via Class-B risk-recorded path (DEC-0058/0060/0062/0066). Per-chapter gates all clean; cold-read NO-CONTINUE is the cross-chapter accumulation signal. This is the recurrence that makes the triage of PROP-0030 urgent: the mechanism is now confirmed across four chapters, not merely an artifact of the c01-c07 session audit."
+recurrence_count: 2
 proposed_diff: |
   PRIMARY CHANGE — new /and-review subcommand: `cohere`
 
@@ -4201,7 +4202,8 @@ evidence_refs:
   - "active-project/staff/showrunner/subsection-coherence-process-plan-2026-05-31.md — process design draft (this session)"
   - "staff/admin/process-proposals.md — PROP-0030 (cohere primitive, paired)"
   - "active-project/draft/_combined-b01-c01-c07-audit.md — surfaced holes the iteration loop would plug"
-recurrence_count: 1
+  - "active-project/staff/reviews/coldread-b01c09-20260601T163000Z.md — fourth consecutive chapter (c06/c07/c08/c09) shipping via Class-B risk-recorded path. The accumulation of depth-pass-pending flags (4 chapters simultaneously) is exactly the sub-section-coherence debt the /and-cohere iteration loop exists to converge. This is the second cross-chapter recurrence (c01-c07 audit + c06-c09 pattern) strengthening the case for triaging PROP-0031."
+recurrence_count: 2
 proposed_diff: |
   PRIMARY CHANGE — new command body at .claude/commands/and-cohere.md.
 

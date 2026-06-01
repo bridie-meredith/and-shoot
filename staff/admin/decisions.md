@@ -3889,3 +3889,172 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0066 | 2026-06-01 | FAST (user-proxy, RUNBOOK R1)
+
+question: |
+  /and-stitch b01c09 Phase 9 terminal cold-read: uninformed cold-reader returned NO-CONTINUE.
+  Disposition: (A) PASS-WITH-DEPTH-PASS-REQUIRED — ship terminal, record risk, cascade to
+  Phase 10 + c10; (B) FAIL → /and-write b01c09 revise --from-signals (R2 1-retry).
+
+context: |
+  b01c09 is a deliberately quiet silent omission-chapter (Taylor surveilling Wren; courier-face
+  advance; s03 double-omission thesis-image; moral_legibility HELD). Phase 5.5 chunk-cold-read
+  was already adjudicated CHUNK-CLASS-B / disposition P / DEC-0062, which explicitly pre-recorded
+  that strict-CONTINUE=no is DESIGN-INHERENT and the CONTINUE bar is tentative-yes.
+  Upstream gates all clean: bone-gate 0 HARD + audience 9/9 SUBSTANCE-FELT; /and-review bones PASS
+  + 0 HARD; /and-facets Phase 5 0 HARD + Phase 5b 3-of-3 ACCEPT; Phase 8.5 coherence PASS;
+  Phase 9 Step 3.5 prose-rationale-mute audit 0 findings. The cold-reader recovered the surface
+  events (watches Wren's route, sees Corwick at gate, seals packet) but rated the chapter
+  NO-CONTINUE on grounds of jeopardy-absence and ungrounded proper nouns. The "ungrounded proper
+  nouns" complaint is the context-stripped artifact the completeness track addresses for real readers
+  carrying 8 prior chapters. Cold-read was harsher than c07's "barely-yes." Consecutive-airless
+  chapters (c06/c07/c08/c09) are a book-level pattern.
+
+options: |
+  A: PASS-WITH-DEPTH-PASS-REQUIRED — ship terminal; record cold-read NO-CONTINUE as design-
+     inherent Class-B cost; depth pass pending before book-close; cascade continues.
+  B: FAIL → /and-write b01c09 revise --from-signals — R2 1-retry; risks same Class-B outcome
+     on re-run since substance gates already clean.
+
+decision: Option A — PASS-WITH-DEPTH-PASS-REQUIRED. Ship terminal. Cascade continues to Phase 10
+  and then c10. Consecutive-airless pattern flagged for end-of-run summary as book-level /and-cohere
+  concern.
+
+basis: |
+  DEC-0062 (CHUNK-CLASS-B pre-adjudication, exact match) + DEC-0060/DEC-0048 (Class-B precedent
+  chain for quiet chapters) + methodology:3a (reversibility — re-decomposing a chapter that passed
+  every substance + coherence + audience gate is irreversible spend against a design-inherent wall)
+  + methodology:3b (cost — retry burns R2 cap on a chapter where all substance gates report clean).
+
+rationale: |
+  DEC-0062 explicitly pre-adjudicated this scenario. The chunk-cold-read adjudication already
+  recorded: (1) strict-CONTINUE=No is design-inherent for this chapter; (2) the CONTINUE bar
+  is tentative-yes; (3) cold_read_risk items were: strict-CONTINUE=No, motive-opacity,
+  color-metaphor, causality-design-inherent. The Phase 9 NO-CONTINUE is exactly those items
+  firing — not a new finding, not a delivery failure.
+
+  All upstream substance+coherence gates are clean (0 HARD bone-gate, 9/9 audience SUBSTANCE-FELT,
+  /and-review bones PASS, facets 3-of-3 ACCEPT, Phase 8.5 PASS, 0-mute audit PASS). A cold-reader
+  context-stripped of 8 prior chapters cannot be expected to recover a surveillance chapter's
+  architecture, the Wren cost-bearer setup, the Otto arrangement, or the moral collapse — all of
+  which a real reader carries. The "ungrounded proper nouns" complaint is this structural condition
+  manifesting, not a delivery failure in the draft.
+
+  Re-decomposing (/and-write b01c09 revise --from-signals) would: (1) burn the R2 retry cap;
+  (2) likely reproduce the same quiet design on a chapter whose substance contract mandates quiet;
+  (3) risk substance gate re-fires on a bone-set that already passed every check; (4) not address
+  the design-inherent cause of the NO-CONTINUE (the chapter IS two surveillance walks and a sealed
+  letter — that IS the design). The only thing a revise could do is add false jeopardy or
+  unnecessary exposition, both of which would contradict the substance contract.
+
+  Consecutive-airless-chapter pattern (c06/c07/c08/c09 all drawing tentative/barely/NO cold-reads)
+  is real but is a book-level arc concern, not a per-chapter delivery failure. The correct routing
+  is /and-cohere at book-level, not per-chapter re-decompose. This goes to the end-of-run summary.
+
+trade-off: |
+  Option A accepts that the shipped draft will have a recorded NO-CONTINUE from the uninformed
+  cold-reader, which is below the bar of c07's "barely-yes." The depth-pass-pending flag ensures
+  this surfaces before project-stable. Option B would burn the retry without changing the design-
+  inherent cause of the cold-read complaint and risks downstream churn on a clean substance spine.
+  The precedent chain (DEC-0062/0060/0048/0058) consistently confirms that quiet-chapter design
+  does not constitute a per-chapter FAIL obligation. The book-level /and-cohere concern is the
+  right escalation path.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0067 | 2026-06-01 | SLOW (process-critic)
+
+question: |
+  /and-stitch b01c09 Phase 9.5 process-critic dispatch. Source verdict: PASS-WITH-DEPTH-PASS-REQUIRED
+  (DEC-0066). b01c09 is the fourth consecutive Class-B quiet/omission chapter (c06/c07/c08/c09) to
+  draw a tentative-or-worse uninformed cold-read and ship via the Class-B risk-recorded path.
+  Three candidate process concerns: (1) cold-read gate mis-calibrated for mid-book Class-B quiet
+  chapters; (2) book stacking too many consecutive low-event omission chapters; (3) depth-pass-
+  pending accumulation across 4 chapters represents unresolved debt.
+
+context: |
+  source_report: active-project/staff/reviews/coldread-b01c09-20260601T163000Z.md
+  source_verdict: PASS-WITH-DEPTH-PASS-REQUIRED
+  gate_path: .claude/commands/and-stitch.md#phase-9
+  secondary_gate_paths: [.claude/commands/and-substance.md#phase-5.5, design/substance/staleness-cascade.md]
+  Prior per-chapter dispositions: DEC-0058 (c06), DEC-0060 (c07 phase-5.5), DEC-0061 (c08 process-critic),
+    DEC-0062 (c09 phase-5.5), DEC-0066 (c09 phase-9). Every per-chapter gate PASSED cleanly.
+  Open relevant proposals: PROP-0018 (Phase 9 Class A/B discrimination, open), PROP-0025 (depth-pass
+    AIRLESS sub-clause, open), PROP-0029 (depth-pass abstract-by-contract terminal, open), PROP-0030
+    (/and-review cohere primitive, open), PROP-0031 (/and-cohere iteration loop, open).
+
+options: n/a (process-critic mode)
+
+decision: OK-MERGED-INTO PROP-0030 and PROP-0031. No new proposal. Three candidates resolved:
+
+basis: |
+  Candidate 1 (gate mis-calibration): The Phase 9 gate detected correctly (NO-CONTINUE) and
+    disposition was per PROP-0018's pending Class-B logic (DEC-0062 pre-adjudicated this exact
+    scenario; DEC-0066 applied it). Gate calibration is not the gap — the gate is firing correctly.
+    PROP-0018 (open) already proposes the Class B disposition branch. No new proposal warranted.
+    Return: OK (PROP-0018 already addresses this).
+
+  Candidate 2 (consecutive quiet chapters / book-level dramatic-shape): Per-chapter processes all
+    fired correctly; each quiet chapter was individually justified by informed-reviewer PASS + Class-B
+    disposition. The book-level arc concern is precisely the failure class PROP-0030 (/and-review cohere)
+    + PROP-0031 (/and-cohere iteration) were designed to surface and converge. DEC-0066 already named
+    /and-cohere as the correct routing. The new evidence (four chapters now, not the seven from the
+    original c01-c07 session audit) strengthens the case for triaging PROP-0030/PROP-0031 promptly.
+    No new process gap — the proposed mechanism covers this. Merging evidence into PROP-0030 and
+    PROP-0031 (recurrence_count incremented to 2 on both; new evidence_refs added).
+    Return: OK-MERGED-INTO PROP-0030 and PROP-0031.
+
+  Candidate 3 (depth-pass-pending debt accumulation, N=4): First cross-chapter occurrence of four
+    simultaneous depth-pass-pending flags. Non-catastrophic. The designed resolution path is correct:
+    (a) each chapter's flag is recorded in memory; (b) DEC-0066 named the accumulation pattern in the
+    end-of-run summary for the principal; (c) /and-cohere before book-close is the designed aggregation
+    mechanism (PROP-0030/0031). No gate failure — the debt tracking is working as designed. A new gate
+    that fires on N-consecutive depth-pass-pending would duplicate the /and-cohere check at higher
+    gate-complexity cost. First occurrence; non-catastrophic; the designed path handles it.
+    Return: OK (hold for recurrence; re-evaluate if N reaches 6 before /and-cohere runs).
+
+rationale: |
+  Content vs. process discrimination: every per-chapter gate fired correctly. The cold-read
+  detection is accurate — this chapter IS a surveillance-only, three-beats, jeopardy-absent
+  design that will challenge a context-free reader. The per-chapter disposition (Class-B ship)
+  was correct because all informed-reviewer gates were clean. The only question is whether the
+  CROSS-CHAPTER accumulation pattern reveals a process gap.
+
+  It does not reveal a new gap: PROP-0030 and PROP-0031 are already the proposed mechanism for
+  cross-chapter accumulation. They are open and untriaged — the b01c09 evidence is the second
+  cross-chapter recurrence (c01-c07 session audit was the first; c06-c09 is the second), which
+  strengthens the triage case for both proposals without requiring a new one.
+
+  The one question that might seem to warrant a new proposal — a preventive gate at /and-substance
+  book that flags N-consecutive low-event chapters in the chapter plan — is premature at N=4,
+  because: (a) each chapter was individually justified by dramatist ACCEPT; (b) the book's declared
+  dramatic shape front-loaded a rise zone with multiple staging chapters; (c) /and-cohere is the
+  correct resolution layer, not upstream prevention of deliberate staging decisions. A preventive
+  cap at /and-substance book would penalize intentional quiet-chapter sequences that the dramatist
+  has explicitly approved. The minimum-blast-radius handling is to triage PROP-0030/PROP-0031.
+
+trade-off: |
+  Not proposing a new depth-pass-pending accumulation gate accepts that the principal must track
+  the N=4 accumulation via the end-of-run summary and /and-cohere scheduling. If /and-cohere is
+  deferred past N=6, the accumulation becomes harder to resolve (more chapters carrying unresolved
+  depth flags = larger cohere run). That would be the trigger for a new proposal (accumulation
+  warning at N>=5 in /and-stitch Phase 0 parking-lot scan).
+
+  Not proposing a preventive gate at /and-substance book accepts that consecutive-quiet-chapter
+  decisions remain individual and dramatist-approved. If the book closes with c10-c18 also quiet
+  and the /and-cohere run returns FAIL-COHERE, retroactive evidence would support a book-plan
+  constraint. Hold for that signal.
+
+follows: DEC-0066
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
