@@ -2,7 +2,7 @@
 generated: 2026-06-01
 source: active-project/theater/proto-lines/b01-c09.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 32 facet entries; 15/23 protolines decorated (65.2%)
+totals: 33 facet entries; 15/23 protolines decorated (65.2%)
 
 ## Density distribution (protolines by citation count)
 
@@ -10,8 +10,8 @@ totals: 32 facet entries; 15/23 protolines decorated (65.2%)
 |------------|-------|
 | 0 (bare)   | 8 |
 | 1          | 8 |
-| 2          | 2 |
-| 3          | 3 |
+| 2          | 1 |
+| 3          | 4 |
 | 4          | 2 |
 
 ## Per-facet entries
@@ -20,19 +20,20 @@ totals: 32 facet entries; 15/23 protolines decorated (65.2%)
   loc-state:1 @1 back=Y
   loc-state:2 @3 back=Y
   loc-state:3 @8 back=Y co=[exposition:3, sensory:1]
-  loc-state:4 @11 back=Y co=[narrator:3]
+  loc-state:4 @11 back=Y co=[narrator:3, sensory:3]
   loc-state:5 @17 back=Y
 
 ### narrator (5 entries)
   narrator:1 @4 back=Y co=[vibes:1, vibes:2, vibes:3]
   narrator:2 @6 back=Y co=[mem:1, state:5]
-  narrator:3 @11 back=Y co=[loc-state:4]
+  narrator:3 @11 back=Y co=[loc-state:4, sensory:3]
   narrator:4 @14 back=Y co=[mem:2, state:6, vibes:5]
   narrator:5 @19 back=Y co=[state:3, vibes:6]
 
-### sensory (2 entries)
+### sensory (3 entries)
   sensory:1 @8 back=Y co=[exposition:3, loc-state:3]
   sensory:2 @23 back=Y co=[state:4]
+  sensory:3 @11 back=Y co=[loc-state:4, narrator:3]
 
 ### state (6 entries)
   state:1 @7 back=Y
