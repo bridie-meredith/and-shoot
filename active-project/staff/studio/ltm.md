@@ -3,6 +3,58 @@
 
 ---
 
+## 2026-06-01 — b01c09 sensory facet authored at /and-facets Phase 1 R1 (BLIND)
+
+Chapter b01c09: 23 bones, 3 scenes. 2 sensory fires. Short-chapter exemption active (23 < 30; modality floor = ceiling trigger at 2 modalities). 8.7% density — ADVISORY not blocking.
+
+Modalities: thermal (@8) + tactile (@23). Two scenes covered (scene-B + scene-C); scene-A silent.
+
+Both fires address explicit priority targets from the bones-review:
+  — @8 thermal: scene-B opening grounded physically (BONES-AIRLESS-RISK advisory) before @11 apparatus-feed bone
+  — @23 tactile: terminal-image seal-drying anchor (priority brief explicit)
+
+Old-state lineage: thermal old-state sourced from scene-map time-of-day annotations (b01c08 SEAM-009/010 carve-out precedent); tactile old-state entailed by @19 sealing-act.
+SEAM-011 flagged: thermal old-state has no explicit prior loc-state anchor; R2 must confirm.
+
+Two candidates refused at cull: @3 smell (genuine; adding third modality activates standard 6% ceiling, making density 13% — not defensible) and @19 smell (genuine; tactile @23 is stronger terminal anchor; two fires in scene-C creates concentration).
+
+---
+
+## 2026-06-01 — b01c09 location-state authored at /and-facets Phase 1 R1 (BLIND)
+
+Chapter b01c09: 23 bones, 3 scenes. Three distinct locations: oc-hook-precinct / oc-stitch-house-lane (scene-A); oc-dragonpit-margin (scene-B); the-feed-station (scene-C). Silent chapter — zero dialogue-anchor bones.
+5 location-state entries authored. 0 entries culled. Authoring in BLIND mode.
+Time arc: late-morning (scene-A) → evening (scene-B/C) → end-of-day accounting (scene-C close).
+
+Entry log:
+  loc-state:1 @1 — oc-hook-precinct; late-morning; none; lane-open; the lane-mouth south of the Hook, single-entrance corridor ahead. Transitional `enters` verb. Scene-A place-anchor.
+  loc-state:2 @3 — oc-stitch-house-lane; late-morning; none; door-open; the stitch-shop door standing open at the lane-mouth. State-change (door condition shifts from implied-closed to open; threshold becomes permeable). Central to s01's substance event — Wren's pattern legible through the open doorway.
+  loc-state:3 @8 — oc-dragonpit-margin; evening; none; lane-open, outer-circuit; the outer lane below the Dragonpit margin, supply cart on the gate-road ahead establishing spatial approach. Transitional `enters` verb. Scene-B place-anchor. Time-of-day advance (late-morning → evening).
+  loc-state:4 @11 — oc-dragonpit-margin; evening; none; courier-at-stone-post; Corwick at the lower-gate stone-post beside the side-exit. State-change: new entrant changes the focus-element. Herald-at-wall test: Corwick's presence at the stone-post is what @12 (body-angle), @13 (shoulders), and @14 (posture-class filing) all turn on. Political_register-prot axis-move at @14 (cl-d05); this entry is the environmental precondition.
+  loc-state:5 @17 — the-feed-station; end-of-day; none; station-surface-clear; the station surface with unsealed packet and ward-coverage notes. Transitional `takes` verb. Scene-C place-anchor. The accounting workspace as physical substrate of the two-substrates image.
+
+Cull log: 0 entries removed.
+
+Key REJECT decisions:
+  @2 — instrument subject; inherits @1
+  @4/@5 — Wren movement verbs; frugality REJECT; @3 already establishes stitch-shop-lane state; strip test passes in inherited env
+  @6/@7 — filing/administrative acts; not movement; necessity REJECT
+  @9/@10 — supply cart / stone-post as environmental fixtures; location-card content; anti-pattern 3; inherit @8
+  @12/@13 — corwick body-angle / shoulders; stillness/positioning in inherited @11 state; frugality REJECT
+  @14–@16 — administrative/filing/circuit in-place; inherit established env
+  @18–@23 — dexterity (folds @18, seals @19), administrative (marks @20, files @21, closes @22), stillness/persistence (seal dries @23); all inherit @17; @23 explicitly anti-pattern 3 (persistence of seal state = location-card content)
+
+No continuity-carry entries: all three scene rhythm-shapes (rising-to-quiet-peak / rising-to-quiet-peak / falling-to-thesis-image) exclude the license (none are flat-low / resolving / release-only).
+
+Chapter-close set state: the-feed-station, end-of-day, station surface holds sealed Jarvis-channel packet (right) + ward-coverage notes (left) + internal map (distinct architecture). Wren's circuit pattern and Corwick lower-gate observation both present in internal map, absent from deliverable. Seal dry.
+
+Seams flagged for R2:
+  - oc-dragonpit-margin: no warehouse card confirmed; margit referral may be needed
+  - the-feed-station: still unresolved (carry from b01c08)
+  - slug consistency: `the-hook-ward` (b01c08 loc-state) vs `oc-hook-precinct` (b01c09 loc-state:1); R2 reviewer should verify or flag margit for canonicalization
+
+---
+
 ## 2026-05-31 — b01c08 sensory authored at /and-facets Phase 1 R1 (BLIND)
 
 Chapter b01c08: 24 bones, 3 scenes. Two primary locations: the-hook-ward (scenes A + C) and the-feed-station (scene B).

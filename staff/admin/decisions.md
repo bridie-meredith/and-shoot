@@ -3660,3 +3660,73 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0063 | 2026-06-01 | SLOW (user-proxy)
+
+question: |
+  /and-facets b01c09 pipeline option and parking-lot resolution.
+  (A) Full faithful /and-facets — all phases, full Phase 5b 3-cycle adversarial gate. ~40-60 dispatches.
+  (B) Streamlined single-pass — R1 fanout → Phase 2 merge → combined Phase 2.5 context+aliveness
+      review → Phase 5 mechanical auditor (HARD-gate) → ONE-CYCLE Phase 5b audience gate → Phase 6.
+      Skips R2 judging + multi-cycle remediation. ~15-20 dispatches.
+  (C) c03-style cascade-budget — R1 fanout + merge only; skip Phase 2.5/3/5/5b. ~10 dispatches.
+  Parking lot items: (i) corwick uncarded (same as c08 wenna-cobb); (ii) dragonpit-margin +
+  lower-gate locations uncarded (canonical Westerosi geography).
+  Recommended: Option B + carry-forward for both parking-lot items.
+
+context: |
+  b01c09 passed every upstream gate cleanly: audience 3/3 SUBSTANCE-FELT at /and-substance; bone-gate
+  0 HARD + 9/9 SUBSTANCE-FELT at /and-write Phase 6; /and-review bones PASS fidelity + PASS-WITH-NOTES
+  follow_check, 0 HARD. Silent chapter (no dialogue facet). Facets here are decoration over an already-
+  validated spine — not load-bearing plot. BONES-AIRLESS-RISK (scene-B @8-@11) + one context-addable
+  gap (@8 temporal marker) explicitly teed up for Phase 2.5.
+  C03 compression cost: skipping Phase 2-6 audit chain caused pl-2026-05-27-001 SVO-form contamination
+  that required c04 Phase-1 redo.
+  Session risk: two silent subagent deaths in this session; large parallel audience blocks are highest
+  risk surface.
+  c08 parking-lot precedent: wenna-cobb + corwick uncarded, /and-facets ran to COMPLETE; Phase 5
+  auditor deferred noun-form carry with zero chain impact.
+
+options: |
+  A: Full faithful. ~40-60 dispatches; highest silent-death exposure; full 3-cycle adversarial loop.
+  B: Streamlined single-pass. Keeps Phase 5 HARD-gate + Phase 2.5 context/aliveness + one Phase 5b
+     cycle. Skips R2 judging + multi-cycle remediation. ~15-20 dispatches. Caveat recorded.
+  C: c03-style cascade-budget. ~10 dispatches. Known contamination risk; caused c04 redo. Eliminated.
+
+decision: |
+  Option B — streamlined single-pass.
+  Parking lot: carry-forward for both (i) corwick and (ii) geo locations per c08 precedent.
+
+basis: |
+  goal:2 (cost discipline) + methodology:3b (cost) + c03 contamination lesson (option C eliminated) +
+  c08 precedent (uncarded referenced figures + descriptive geography do not block /and-facets).
+
+rationale: |
+  Option C eliminated by c03→c04 evidence: the contamination it caused cost more to remediate than the
+  compression saved. Option A is valid but burns 40-60 dispatches + 3 potential remediation cycles on a
+  chapter that already has 9/9 SUBSTANCE-FELT bone validation and 0 HARD at fidelity review — a quiet
+  silent omission-chapter whose facets are decorative reinforcement over a validated spine, not
+  structural load-bearing. Option B keeps the three elements that matter most here: (1) Phase 5 HARD-
+  gate (mechanical safety rail — the class that caught c03 contamination in later chapters); (2) Phase
+  2.5 context+aliveness review (explicitly teed up: BONES-AIRLESS-RISK @8-@11 + temporal-marker gap @8);
+  (3) one Phase 5b adversarial cycle (sufficient on a quiet chapter — 3/3 convergence signals real
+  finding regardless of cycle count). R2 judging + multi-cycle remediation add value on chapters with
+  high facet-complexity or contested substance spine; neither applies. Silent chapter eliminates the
+  dialogue-R2 leg entirely.
+  Parking lot: c08 set the exact precedent — wenna-cobb + corwick uncarded, /and-facets COMPLETE with
+  Phase 5 deferral recorded, zero chain impact. Dragonpit + lower-gate locations are canonical
+  Westerosi geography; descriptive noun forms work without loc cards. Margit dispatch costs dispatches
+  for near-zero quality delta.
+
+trade-off: |
+  Option B forgoes R2 locked-graph review. On a quiet silent chapter with validated spine, this risk is
+  low. If Phase 5 or Phase 5b surfaces something unexpected, a fixer loop may be needed that R2 would
+  have pre-empted. Accept: expected cost of R2 omission is low; actual spend of Option A is guaranteed
+  high; silent-death risk of large parallel blocks is real and demonstrated in this session.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
