@@ -1,10 +1,3 @@
----
-facet: state-updates
-sources: [env-b01-c09, taylor-hebert-kl-122ac-b01-c09]
-note: consolidated by build_cite_index from per-source slices. Single top-of-file frontmatter per r3-signal-001.
----
-
-# source: env-b01-c09
 facet: state-updates-env
 episode: b01c09
 author: studio
@@ -50,19 +43,3 @@ generated: 2026-06-01 (depth-pass re-anchor; prior 4 env entries remapped old→
 
 4 @27 prop:oc-jarvis-packet.seal-condition: sealed -> dry
 # RE-ANCHOR (was @23). @27 = "the seal dries" (terminal image; the omission permanent in the hardening wax). dry/wet standard prop-state field.
-
-# source: taylor-hebert-kl-122ac-b01-c09
-facet: state-updates
-episode: b01c09
-target: actor:taylor-hebert-kl-122ac
-author: dialogue-writer-fork:taylor-hebert-kl-122ac
----
-# POV actor-state co-citation (state-updates rubric § cross-facet contract): both entries are
-# actor:taylor.* shifts and require a narrator-interest fire on the same @<proto-line-id>.
-# @8 ← interest-narrator @8 (relational_anchor / cl-d08); @18 ← interest-narrator @18
-# (political_register-prot / cl-d05). Both anchors are scene peak-bones (scene-A @8, scene-B @18),
-# which is where irreversible registration is strongly expected. Values re-anchored from the
-# pre-depth-pass facet (old @6→@8, old @14→@18); deltas unchanged.
-
-5 @8 actor:taylor-hebert-kl-122ac.relational_anchor_status_axis: 2 -> 2.5
-6 @18 actor:taylor-hebert-kl-122ac.political_register_prot_axis: 2.5 -> 3

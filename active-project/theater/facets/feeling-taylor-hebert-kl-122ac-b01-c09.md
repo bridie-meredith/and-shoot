@@ -1,10 +1,3 @@
----
-facet: feeling
-sources: [taylor-hebert-kl-122ac-b01-c09]
-note: consolidated by build_cite_index from per-source slices. Single top-of-file frontmatter per r3-signal-001.
----
-
-# source: taylor-hebert-kl-122ac-b01-c09
 facet: feeling
 episode: b01c09
 author: taylor-hebert-kl-122ac (dialogue-writer fork, feeling-show mode)
