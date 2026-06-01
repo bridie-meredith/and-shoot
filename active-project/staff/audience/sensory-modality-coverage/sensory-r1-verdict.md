@@ -5,85 +5,84 @@ cycle: 1
 episode: b01-c09
 date: 2026-06-01
 verdict: accept
+run: depth-pass-re-run (6-entry facet; DEC-0063)
 ---
 
-# Sensory Modality Coverage — Cycle 1 Verdict
-
-## Episode b01-c09
-
----
+# Sensory Modality Coverage — Depth-Pass Verdict (b01-c09)
 
 ## Reading stance
 
-File-level only. I tally modalities. I count distribution. I ask whether the episode reads with sensory texture or without it. I do not argue per-entry — that is the pedant and the old-state reader. My attack vector is: what does this episode feel like? What does it sound like? What is silent that should not be?
+File-level only. I tally modalities, check distribution against the episode's shape and location palette, look for silent gaps, and verify per-scene caps. I do not argue per-entry disambiguation or old-state lineage — those are other critics' axes. I count what's here and ask whether the episode has sensory texture.
 
-No exemplar loaded. Baseline card behavior only.
-
----
-
-## File-level tally
-
-**Total bones:** 23
-**Total fires:** 3
-**Density:** 3/23 = 13.0%
-
-Standard ceiling is 6%. This episode is at 13%. That is a density problem — but the grounding-ledger entry grd-001 licenses sensory:3 as cap-exempt per PROP-0022 GROUNDING-REQUIRED. The binding exemption in the dispatch explicitly forbids faulting on density grounds for sensory:3 or the file's density. I am bound by that instruction. The density advisory (signal-fb-001) is advisory, not blocking, and the exemption is the authority. I will not fault on density.
-
-**Modality tally:**
-- thermal: 1 fire (@8)
-- tactile: 1 fire (@23)
-- light: 1 fire (@11)
-
-**Distinct modalities: 3.** The floor is ≥2. Three distinct modalities clears the floor with one to spare. No monoculture. No modality dominating (1 fire each, perfectly distributed). Single-channel read risk: zero. The three modalities are thermally, tactilely, and visually distinct — they cover different perceptual channels.
+Binding exemption in force: I cannot fault on density grounds for sensory:2/4/5/6 (grounding-ledger grd-001..004 licenses them as cap-exempt per PROP-0022). The full 6-entry density (22.2%) is exempt. I may attack craft.
 
 ---
 
-## Distribution check
+## Modality tally
 
-**Scene-A @1-@7:** 0 fires. Scene-A is the Wren-coverage circuit: hook-ward, stitch-shop lane, bread-seller corner — all in late morning. Zero fires. Is this a silent-gap problem?
+Total bones: 27
+Total fires: 6
+Density: 6/27 = 22.2% (above standard ceiling; cap-exempt per grounding-ledger grd-001..004 + PROP-0022 binding exemption)
 
-Scene-A is surveillance and route-filing. The scene-map reads scene-A as rising-to-quiet-peak with the central event at @4 (Wren walks the shop-to-water-seller lane). This is an observation scene, not an environment-arrival scene. The episode brief refusals show @3 (stitch-shop door, smell: lane-outdoor-air → tallow-and-cloth-interior) was considered and culled as a density sacrifice. The cull is a legitimate editorial choice given the priority brief targeting scene-B and terminal @23. Scene-A silent is defensible — the scene runs on surveillance cadence, not environment arrival.
+| Modality | Fires | Entries |
+|----------|-------|---------|
+| thermal | 2 | sensory:1 @11, sensory:4 @3 |
+| tactile | 3 | sensory:3 @27, sensory:5 @9, sensory:6 @15 |
+| light | 1 | sensory:2 @14 |
 
-Is there a scene-A modality that should fire but doesn't? The stitch-shop door at @3 was an olfactory candidate (refused at cull). The bread-seller corner at @5 could carry smell (bread-bake, warm grain) but no fire was authored or proposed. The route-filing bones @6-@7 are administrative-substrate acts — no environmental inflection. I note the @3 smell as a passed-over opportunity, but the cull rationale is clear (density constraint, brief priority) and the brief's exemption prevents me from objecting on density grounds. The scene-A silence reads quiet, not deficient — the surveillance rhythm supports it.
+Distinct modalities: 3 (thermal, tactile, light). Floor ≥2 exceeded. No monoculture.
 
-**Scene-B @8-@16:** 2 fires (@8 thermal, @11 light). Per-scene cap ≤3: honored (2/3). This is the right distribution for a scene that opens with an environment arrival (dragonpit-margin evening lane) and a courier-appearance. Two distinct modalities in scene-B: thermal (arrival-register) and light (courier-appearance-register). The pairing tracks the scene's two distinct perceptual events. No scene-B monoculture.
+Dominant modality: tactile at 50% (3/6). Is this a single-channel-read problem? In a cold-season morning outdoor circuit + station-close chapter, tactile is the natural dominant channel — body-in-cold, wax-in-hand. The tactile fires are distributed across three distinct sub-registers: cold-stiffened hand (@9), cold-weighted shoulders (@15), wax-set-firm (@27). Three distinct tactile contexts, not repeat-saturation of one touch register.
 
-**Scene-C @17-@23:** 1 fire (@23 tactile). Per-scene cap ≤3: honored (1/3). The terminal scene at the feed-station gets one tactile fire at the closing image (seal dries). Scene-C is the accounting-close/double-omission scene — falling-to-thesis-image rhythm. One fire at the terminal beat is correct weight for a closing scene that is structurally quiet. No monoculture, no over-firing.
+Thermal at 2 fires (33%) covers the two environmental transitions (scene-A → scene-B; bay-damp place-ground). Light at 1 fire (17%) covers the single visual-event (courier resolves). The light thin-coverage matches a chapter that has one visual-resolution moment and is otherwise interior-feed / administrative.
+
+Distribution is appropriate for the palette. I do not flag monoculture.
+
+---
+
+## Per-scene distribution
+
+Scene-A @1-@10: 2 fires (sensory:4 @3, sensory:5 @9). Cap ≤3 — at 2, within cap.
+Scene-B @11-@20: 3 fires (sensory:1 @11, sensory:2 @14, sensory:6 @15). Cap ≤3 — at cap.
+Scene-C @21-@27: 1 fire (sensory:3 @27). Cap ≤3 — well within.
+
+Scene-B at cap is the peak-bearing scene (Corwick appearance + political_register axis move). Correct weight: the chapter's most information-dense scene carrying the most sensory fires. Scene-A at 2 fires launches the cold-place embodiment. Scene-C at 1 fire closes with the terminal tactile image. This matches the rising-to-quiet-peak (scenes A+B) / falling-to-thesis-image (scene-C) dramatic shape.
 
 ---
 
 ## Location palette check
 
-**Scene-A:** hook-ward, stitch-shop lane, bread-seller corner — open lane + shop-interior threshold. Natural sensory palette: smell (bread, cloth, tallow), sound (morning foot traffic), thermal (morning stone-lane retained warmth). Zero fires. The olfactory silence for the bread-seller corner and stitch-shop threshold is a real gap in palette terms, but it was explicitly sacrificed at the cull stage per the priority brief. The episode's three fires hit the other scenes.
+Scene-A locations: oc-hook-precinct + oc-stitch-house-lane (outdoor lanes, cold-season morning, bay-damp cold).
+Natural palette: thermal (cold stone, morning bay-damp), tactile (damp stone underfoot, cold in the hands), smell (stitch-shop interior / tallow-cloth on open door, bread-seller corner).
+Fires: thermal @3 (bay-damp cold on stone), tactile @9 (cold stiffens fingers). 
+Smell: zero fires. The @5 "Considered and refused" section names the stitch-shop door smell (tallow-and-cloth-interior) as a genuine Q1+Q2 pass refused for scene-A density control (priority brief: thermal/tactile cold-place grounding, not smell). The refused candidate is explicitly documented. Given the binding exemption prevents density-based attacks, the smell sacrifice is an editorial choice not a coverage failure. I note it as an observation.
 
-**Scene-B:** dragonpit-margin outer lane, evening. Natural palette: thermal (evening-cool, hill-proximity), sound (foot traffic, supply cart wheels on lane), light (evening ambient distribution). The file fires thermal (@8) and light (@11). Sound is silent in scene-B — no sound fire for the supply cart at @9 or the stone-post at @10. The supply cart at @9 is described with "marks the lower-gate road" — the bones-review and scene-map classify @9-@10 as an environmental-baseline pair. No sound fire on the cart or post. Missing sound here is a mild observation. The scene-map notes @9-@10 as "fusion-eligible-runs" (environmental baseline pair the courier reads anomalous against) — these are orientation bones, not inflection points. Sound in a supply-cart-at-gate scene would be real (wheels on stone, quiet evening lane) but the inflection-question is whether the cart or post creates a discrete sound inflection or is ambient-baseline. Ambient sound belongs in loc-state, not sensory-flags. I rate this sound silence as defensible — no discrete sound event fires at @9-@10 in the proto-lines.
+Scene-B locations: oc-dragonpit-margin + lower-gate (outdoor hill lane, evening, cold deepening).
+Natural palette: thermal (evening cool, hill-side loses day-heat), light (evening ambient lane, courier appearing in visual feed-distribution), sound (supply cart on gate-road — ambient baseline level, not inflection event).
+Fires: thermal @11, light @14, tactile @15 — three distinct modalities covering the three scene-B perceptual channels. No missing palette modality. Sound absence: the supply cart (@12) and stone-post (@13) are orientation bones, environmental-baseline-pair per scene-map. Ambient sound level on a supply-lane approach belongs in loc-state sustained-baseline, not sensory-flags inflection. No discrete sound event in scene-B rises to an inflection (no crack, no silence-cut, no distinct sound onset). Sound absence is correct here.
 
-**Scene-C:** feed-station, end-of-day. Natural palette: tactile (packet handling, wax sealing, paper folding), sound (stiff paper, wax crack), smell (molten wax). The file fires tactile at @23. The @19 smell (molten-wax-scorch) was considered and refused at cull. No sound fire for the sealing act. The @19 smell refusal is noted — a genuine palette item sacrificed for density and scene-C over-firing risk. The scene-C tactile at @23 is the correct terminal anchor; a companion smell or sound fire would push to 2 fires in scene-C, which is within cap (≤3) but the brief's priority framing chose the tactile as the stronger terminal anchor.
+Scene-C locations: the-feed-station (indoor accounting surface, end of day).
+Natural palette: tactile (paper folding, wax handling, seal-press), smell (molten wax at application), sound (stiff paper, wax press).
+Fires: tactile @27 (seal sets firm). Smell (@23 molten wax) was considered and refused per "Considered and refused" — cluster prevention with tactile @27 on the same prop. The terminal tactile image is stronger; the smell was a legitimate cull. No sound fire for the sealing act — "seals the packet" (@23) is a bare verb but the wax-sealing sound is sub-threshold (soft press, not audible crack per the calibration anchors). Scene-C one-fire end is correct for a thesis-image close.
+
+---
+
+## Silent-gap cross-check (loc-state sensory-note vs. sensory-file)
+
+The loc-state file (location-state-b01-c09.md) carries 5 entries:
+- loc-state:1 @1: sensory-baseline described in text (cold-season morning, dry-stone pre-damp, warm-hand context) — no discrete event-language triggering a sensory-flag obligation.
+- loc-state:2 @5: no sensory note.
+- loc-state:3 @11: sensory-baseline described (evening hill-lane, no non-baseline body present) — no discrete event-language.
+- loc-state:4 @14: names courier-at-stone-post — this is a state-condition not an event-with-sensory-note.
+- loc-state:5 @21: tactile-prop-baseline (sealing-wax pliable-warm pre-application) — named as a baseline, not a sensory-event note requiring companion flag.
+
+No loc-state entry names a discrete perceptual event (thermal-release language, audible-texture-change language, smell-drift language) without a companion sensory flag. The cross-facet silent-gap rule (loc-state names event → sensory-file must companion-flag) is not triggered. Clean.
 
 ---
 
 ## Inflection-pair coherence
 
-No drop/up pairs within a single modality across the file. Thermal fires once (down: morning-warmth → evening-cool). Tactile fires once (down: wax-soft-warm → wax-set-firm). Light fires once (spike: empty-distribution → corwick-body-resolving). No coherence check needed; no pairs present.
-
----
-
-## Short-chapter floor-vs-ceiling exemption
-
-bone_count = 23 (< 30). Modality count = 3 (> floor of 2). Per V3 rubric: the short-chapter exemption applies when bone_count < 30 AND modality count equals the floor (2). Here modality count is 3 — above the floor. The exemption clause specifically states it does NOT apply if modality count exceeds the floor (≥3 modalities at < 30 bones → standard 6% ceiling applies). So the standard ceiling applies to sensory:1 and sensory:2. Only sensory:3 escapes via grd-001. The binding exemption instruction in the dispatch governs my verdict; I cannot fault on density. This is structurally noted but not a rejection basis.
-
----
-
-## Silent-gap check (loc-state sensory note cross-check)
-
-loc-state for b01-c09 (location-state-b01-c09.md):
-- loc-state:1 @1: no sensory note
-- loc-state:2 @3: no sensory note
-- loc-state:3 @8: no sensory note (evening, oc-dragonpit-margin, lane-open outer-circuit)
-- loc-state:4 @11: no sensory note (courier-at-stone-post)
-- loc-state:5 @17: no sensory note (station-surface-clear)
-
-No loc-state entry names a discrete perceptual event without a sensory-flag companion. The loc-state file carries state conditions without event-language. No cross-facet silent-gap (loc-state-names-event / sensory-file-silent) violation.
+No drop/up pairs on the same modality exist in this file. Thermal fires twice (both down). Tactile fires three times (all down). Light fires once (spike). No inflection-pair coherence check needed.
 
 ---
 
@@ -91,11 +90,14 @@ No loc-state entry names a discrete perceptual event without a sensory-flag comp
 
 **ACCEPT**
 
-Three distinct modalities (thermal, tactile, light) — floor cleared. No monoculture. Per-scene caps honored in all three scenes. Distribution tracks the episode's rhythm: 0 fires in the surveillance scene-A, 2 fires in the arrival+courier scene-B, 1 fire at the terminal image of scene-C. No loc-state-event-without-sensory companion. The density overage is advisory only (signal-fb-001) and sensory:3 is grd-001 exempt; the dispatch binding exemption prevents a density-based rejection.
+Three distinct modalities (thermal: 2, tactile: 3, light: 1) — floor of ≥2 exceeded, no monoculture. Per-scene caps honored at all three scenes (A: 2/3, B: 3/3, C: 1/3). Distribution tracks the episode's dramatic shape — scene-B at cap is correct for the peak-bearing scene; scene-C one terminal fire is correct for the thesis-image close. Location palettes covered: thermal+tactile for cold-season outdoor morning, thermal+light+tactile for evening hill-lane courier scene, tactile for station-close.
 
-Minor observations (not verdict-blocking):
-1. Scene-A olfactory silence: the stitch-shop threshold and bread-seller corner have palette-eligible smell inflections not fired. Sacrificed by cull. Not a blocking gap given the priority brief.
-2. Scene-B sound silence: no sound fire for supply cart/stone-post environmental baseline pair. Defensible as sustained-ambient-not-inflection.
-3. Standard 6% ceiling applies to sensory:1/@8 and sensory:2/@23 outside the grd-001 window; those two fires are each individually strong disambiguation cases. The density pattern is advisory per signal-fb-001; not my basis for rejection.
+No loc-state sensory-event without sensory-file companion (silent-gap rule clean). Density is 22.2% above standard ceiling; the grounding-ledger (grd-001..004) licenses all excess density as cap-exempt; binding exemption in effect per PROP-0022 and DEC-0063 dispatch instructions.
 
-Convergence trace vs. signal-fb-001: density 13% advisory is recorded. The file is above the standard ceiling. My verdict acknowledges the advisory but cannot fault on density given the binding exemption. signal-fb-001 and this verdict are consistent — advisory is not blocking; grd-001 governs; accept stands.
+Observed cull-sacrifices (not blocking): scene-A smell (@5 tallow-cloth), scene-C smell (@23 molten-wax). Both explicitly documented in "Considered and refused"; both are reasoned sacrifices, not oversights.
+
+## Convergence trace
+
+- Auditor signal-fb-001 (FREQUENCY-BAND): density 22.2%; non-exempt residual 2/27 = 7.4% marginally above 6% standard ceiling for sensory:1/@11 + sensory:3/@27. I note this but cannot fault on density per binding exemption. My verdict is modality-distribution focused; the marginal non-exempt exceedance is a SIGNAL advisory only.
+- Auditor note on modality count (3 modalities > floor of 2): the V3 short-chapter exemption clause (bone_count < 30 AND modality count = floor of 2) does NOT apply here because modality count is 3. I confirm this reading: 3 modalities at 27 bones does not trigger the automatic relief; the standard ceiling applies to the non-exempt fires. The grounding-ledger exemption, not the V3 short-chapter clause, is the operative authority for the depth-pass adds.
+- Auditor CURVE-SHAPE PASS: consistent with my distribution analysis (rising + falling-to-thesis-image shape supported by fire distribution).
