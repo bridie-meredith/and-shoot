@@ -1236,6 +1236,12 @@ parking_lot:
     - id: pl-2026-05-31-007
       created_at: 2026-05-31T22:00:00Z
       created_by: "session cold-read audit of combined b01 c01-c07"
+      # Phase-10 progress (2026-06-01, /and-stitch b01-c08 Phase 10): c08 lands the courier-FACE
+      # leg — Oswyn names "Corwick" ("runs errands for someone above his station, up the hill
+      # twice this month"). The enforcement-incident PAYOFF leg remains unpaid and deliberately
+      # deferred within the c08-c10 design window. Item stays SOFT/open; routes to /and-substance
+      # for a real scene-chunk (no draft-layer fix possible — paying it is a new declared event).
+      # Carried forward in aggregate-state open_hooks[] (hook on Rushwick courier-attack thread).
       label: rushwick-courier-attack-unprocessed
       target:
         command: /and-substance
@@ -1273,6 +1279,10 @@ parking_lot:
     - id: pl-2026-05-31-008
       created_at: 2026-05-31T22:00:00Z
       created_by: "session cold-read audit of combined b01 c01-c07"
+      # Phase-10 progress (2026-06-01, /and-stitch b01-c08 Phase 10): c08's prologue now carries a
+      # calendar anchor (presentation-reinforcement edit rev-0001: "into the Crone's stretch, the
+      # bay-damp settled on the morning stone... before the first bell") using c07's already-declared
+      # season register. c08 addressed; item stays open (scope "*") for the remaining chapters.
       label: calendar-drift-across-c01-c07
       target:
         command: /and-write
@@ -1446,6 +1456,41 @@ parking_lot:
         would address both flags. Advisory.
       context_refs:
         - active-project/staff/reviews/cohere-audience-dark-fantasy-reader-b01-c01-c07-2026-06-01T04-20-31Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-01-stitch-thread-001
+      created_at: 2026-06-01T05:08:00Z
+      created_by: "/and-stitch b01-c08 Phase 10 Step 4 (aggregate-emit fork divergence flag)"
+      label: capability-rank-lineage-divergence
+      target:
+        command: /and-substance
+        scope: "chapter b01c09"
+        phase: Phase 0
+      severity: SOFT
+      description: |
+        Initial aggregate-state.md emit (through_chapter b01c08) records the capability
+        axis at measured-delta-authoritative rank 5.5 (c01 +1.0 / c04 +2.0 measured /
+        c08 +0.5). The book-chunk handoff_out character_state narratives carry a STALE
+        capability lineage of 5.0 — never re-synced past the c04 /and-write Phase 1 redo
+        that raised the c04 capability delta +1.5 → +2.0. This is a +0.5 divergence
+        between aggregate (5.5, authoritative) and handoff_in (5.0, stale).
+        Per aggregate-state schema § conflict resolution, aggregate WINS at
+        /and-substance chapter Phase 0; the conflict is logged in the chapter chunk
+        metadata. b01c09 Phase 0 should detect the aggregate-vs-handoff_in disagreement,
+        log a conflict_log entry (conflict_type: aggregate-vs-handoff_in,
+        resolution: aggregate-wins), and proceed on capability = 5.5.
+        Secondary (informational, same root): social_tether-prot-rise also reads
+        measured-delta 6 vs lagging handoff narratives at 3; resolved to 6 in aggregate.
+        Advisory — does NOT block; the schema's Phase-0 conflict path handles it
+        mechanically. Surfaced so c09 production addresses it explicitly rather than
+        relying on a reader noticing the aggregate note.
+      context_refs:
+        - active-project/staff/showrunner/aggregate-state.md   # axis_state capability notes (ESTIMATE-DIVERGENCE)
+        - active-project/staff/reviews/forward-thread-b01-c08-20260601T050033Z.md
+      resolution_suggestion: "/and-substance chapter b01c09 Phase 0 — read aggregate-state, log aggregate-vs-handoff_in conflict on capability, proceed on rank 5.5"
       status: open
       resolved_at: null
       resolved_by: null

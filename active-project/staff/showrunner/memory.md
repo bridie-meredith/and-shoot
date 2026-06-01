@@ -5047,6 +5047,22 @@ books:
         stitched_at: 2026-05-31T22:00:00Z
         depth_pass_pending: false   # cold-read CONTINUE=no is design-inherent per chunk_cold_read pre-disposition; no further /and-write revise warranted within Class B disposition P framework
         depth_pass_resolved_at: 2026-05-31T22:00:00Z   # the revise pass itself + staging-review-v2 PASS satisfies the implicit depth-pass requirement for the chapter
+        cast_rename:   # DEC-0065 (2026-06-01, admin user-proxy PATH A): c08 living feed-body wenna-cobb → meryn-cobb, to de-collide with c07 dead-child founding-entry "Wenna Cobb" (the first name in Taylor's grave-count). Pure slug substitution, no substance change. Applied to bones (cast line + @20), draft (line 29), archived scene-map. No dialogue file (meryn-cobb is a non-speaking coverage-map body). meryn-cobb asserts NO family relationship to the dead child (PATH B recast-as-family declined — cap-bounded finish run, not a substance-expansion session).
+          from: wenna-cobb
+          to: meryn-cobb
+        forward_thread:   # /and-stitch b01-c08 Phase 10 (URI-STITCH-PHASE-10-FORWARD-THREAD; inline-executed 2026-06-01, OPTION (b) per DEC-0065 — c08 had shipped through Phase 9 under the OLD command body with no Phase 10; inline ran Steps 2-5 rather than full re-stitch)
+          ran_at: 2026-06-01T05:08:00Z
+          verdict: PASS-THREAD
+          accumulated_past_source: drafts-fallback   # aggregate-state.md was absent at run; threading-review read draft/b01-c01..c07 directly
+          report_path: active-project/staff/reviews/forward-thread-b01-c08-20260601T050033Z.md
+          findings: 3
+          edits_applied: 1   # rev-0001 presentation-reinforcement: calendar anchor in c08 prologue (Crone's stretch / bay-damp / first bell — c07 season register re-stated); resolves SOFT pl-2026-05-31-008 for c08
+          edits_not_applied:
+            - "UNPAID-HOOK substantive: c05 Rushwick courier/enforcement payoff — owned by /and-substance via pl-2026-05-31-007 (pre-tracked, deferred-by-design within c08-c10 window); c08 lands the courier-FACE leg (Corwick named). No new HARD item written; pl-2026-05-31-007 annotated; carried in aggregate-state open_hooks[]."
+            - "MISSED-CALLBACK presentation-reinforcement: 'the septon's corner' callback on chandler-corner terrain — fence-against (c08 deliberately holds Halvard offstage; prologue already carries the unresolved-argument weight). Held-not-applied."
+          new_substantive_hard_items: 0   # PASS-THREAD (not HOLD-THREAD): the one substantive finding is pre-existing + deliberately deferred, not a c08-incurred defect; does NOT block b01c09 Phase 0
+          aggregate_state_emitted: active-project/staff/showrunner/aggregate-state.md   # CREATED initial version 1, through_chapter b01c08; 12 axis_state / 9 open_hooks / 9 characters / 7 world_state / 1 revision_layer; VALIDATION PASS
+          aggregate_state_divergence_flag: "capability rank 5.5 (measured-delta authoritative) vs stale handoff narratives 5.0 (c04 redo never re-synced); recorded at 5.5; SOFT pl-2026-06-01-stitch-thread-001 routes c09 Phase 0 to log the aggregate-vs-handoff_in conflict and proceed on 5.5"
         chunk: |
           Capability staging chapter with two staging obligations: cf-d10-courier-face beat 1
           (the courier now has a face Taylor has attached a name to — Oswyn mentions him in

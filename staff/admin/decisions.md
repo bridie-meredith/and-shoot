@@ -3818,3 +3818,74 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+## DEC-0065 | 2026-06-01 | SLOW (user-proxy)
+
+question: |
+  Two decisions required before /and-stitch b01c08 Phase 10 can proceed.
+  Decision 1: Wenna Cobb cast collision (c07 dead child vs. c08 living feed-body same slug).
+    PATH A — rename c08 character to non-colliding slug (e.g. meryn-cobb or wenna-pratt).
+    PATH B — recast c08 wenna-cobb as surviving family member of c07's dead child (adds
+    substance, requires full re-cascade of c08: ~50-80 dispatches, reopens terminal chapter).
+  Decision 2: Phase 10 execution method.
+    OPTION (a) — re-run /and-stitch b01c08 from scratch (~50-80 dispatches, re-runs Phase 9).
+    OPTION (b) — inline-execute Phase 10 only against the shipped draft (~5-10 dispatches).
+
+context: |
+  c07 SHIPPED: Wenna Cobb is the founding entry in Taylor's grave-count ledger — a dead
+  six-year-old from Pig-Tallow Lane in the Hook. Load-bearing c07 substance.
+  c08 SHIPPED-WITH-CAVEATS: wenna-cobb slug minted in c08 bones cast + bone 20 as a living
+  body in the insect-feed return. No dialogue file for wenna-cobb in c08. No substance weight
+  in c08 — pure coverage-map feed-return body. Collision was not caught by the bone-gate
+  (cross-chapter slug collision is not a current gate).
+  c08 already has a terminal draft (Phase 9 PASS). Phase 10 (forward-thread + aggregate-state
+  initialization) is new pipeline that post-dates c08's stitch. /and-stitch is idempotent on
+  render artifacts but would re-run Phase 9 cold-read if re-invoked from scratch. Production
+  run is cap-bounded; currently finishing c08 cleanup before proceeding to c09.
+
+options: |
+  Decision 1: PATH A (slug rename, surgical, 0 re-cascade) vs. PATH B (family-relationship
+  recast, adds substance, ~50-80 dispatches re-cascade, reopens shipped chapter).
+  Decision 2: OPTION (a) full re-stitch from scratch vs. OPTION (b) inline Phase 10 only.
+
+decision: |
+  Decision 1: PATH A. Rename c08's wenna-cobb to meryn-cobb.
+  Decision 2: OPTION (b). Inline-execute Phase 10 only against the shipped draft.
+
+basis: |
+  Decision 1: goal:2 (cost discipline) + methodology:3b (cost) + methodology:3a (reversibility).
+  Decision 2: goal:2 (cost discipline) + methodology:3b (cost) + methodology:3a (reversibility).
+
+rationale: |
+  Decision 1: The collision is an authoring accident, not a planted irony. c08's living
+  wenna-cobb carries zero substance weight — it is a fungible coverage-map feed-return body
+  with no dialogue, no bone delta, no thematic setup pointing at a family connection. PATH B's
+  thematic payoff (dead child's family still counted by the feed) is genuinely resonant but
+  is unrequested scope expansion inside a cap-bounded finish run. PATH A is zero-cost,
+  zero-risk, and fully preserves c07's load-bearing dead-Wenna intact.
+
+  Slug choice: meryn-cobb (not wenna-pratt). The Cobb surname places this person in
+  Pig-Tallow Lane / the Hook, same ward as the insect-feed coverage. Keeping the surname
+  consistent with the neighborhood is more coherent than severing it entirely, and meryn-cobb
+  makes no substance claim (no dialogue, no bone delta, no named relationship to Wenna Cobb
+  established in the text). The living Cobb family presence option is preserved for future
+  chapters if it ever becomes load-bearing substance.
+
+  Decision 2: Phase 9 already PASSED on c08's terminal draft. Re-running all eight render
+  phases + Phase 9 cold-read is a verified no-op at 10x the cost, with non-zero risk of
+  a Phase 9 verdict difference from seed variance. Phase 10 is the only missing motion.
+  Inline execution against the shipped draft is the correct bolt-on protocol for a
+  missing phase on a terminal chapter.
+
+trade-off: |
+  Decision 1 PATH A gives up the thematic resonance of Wenna Cobb's surviving family being
+  tracked by the same feed that counted her death. That resonance is real but currently
+  unsetup and unrequested. It remains available as an explicit authoring choice in a future
+  chapter's substance contract.
+  Decision 2 OPTION (a) would yield a clean re-stitch record but at 10x cost with churn
+  risk on a terminal deliverable. Not a meaningful trade-off.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
