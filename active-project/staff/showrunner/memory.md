@@ -5294,7 +5294,7 @@ books:
               density_target: 0.55-0.7
 
       - slug: b01c09
-        status: scened   # /and-substance chapter b01c09 (2026-05-31): 3 scenes decomposed. Phase 5: audience 3/3 SUBSTANCE-FELT all scenes; dramatist ACCEPT (rise-peak-fall, s03 thesis-image legitimate); auditor CLEAR (0 HARD, cost-ledger cl-d08/cl-d05 clean, thematic-axis clean). Phase 5.5 chunk-cold-read CHUNK-CLASS-B (summary maps to goal; strict-CONTINUE=no — prior-context/apparatus-vocab inaccessibility, same shape as c08/DEC-0060) → admin disposition P (DEC-0062); verdict SHIPPED-WITH-RISK-RECORDED. cl-d08 opened (+0.5 of +2; 1.5 remaining); cl-d05 continuation; cl-d06 2nd tranche +1.0 still deferred to c10/later (pl-2026-05-30-001). SW-1/2/3 audience watches carried to /and-write.
+        status: bones-written   # /and-write b01c09 COMPLETE (2026-06-01): 23 bones / 3 scenes emitted (theater/bones/b01-c09.md + scene-map-b01-c09.md); silent chapter (no dialogue files). Phase 6 bone-gate PASS: auditor 0 HARD / 2 SIGNAL accepted (s02n09 instrument-class + marks-verb, both carried to /and-stitch Phase 4); audience 9/9 SUBSTANCE-FELT (3×3). Pass 2 12 FAULT-FORM PP-recasts→CLEAN + 2 delta-floor by DEC-0002; Pass 3 +1 transition bone s02n09; Pass 4 3/3 ACCEPT 0-del; Pass 5 CONTINUITY-OK (corwick bare-slug resolved by c08 precedent pl-2026-06-01-001). NOTE: prior Phase 6 dispatch pair died silently (partial output); re-run completed the gate. | /and-substance chapter b01c09 (2026-05-31): 3 scenes decomposed. Phase 5: audience 3/3 SUBSTANCE-FELT all scenes; dramatist ACCEPT (rise-peak-fall, s03 thesis-image legitimate); auditor CLEAR (0 HARD, cost-ledger cl-d08/cl-d05 clean, thematic-axis clean). Phase 5.5 chunk-cold-read CHUNK-CLASS-B (summary maps to goal; strict-CONTINUE=no — prior-context/apparatus-vocab inaccessibility, same shape as c08/DEC-0060) → admin disposition P (DEC-0062); verdict SHIPPED-WITH-RISK-RECORDED. cl-d08 opened (+0.5 of +2; 1.5 remaining); cl-d05 continuation; cl-d06 2nd tranche +1.0 still deferred to c10/later (pl-2026-05-30-001). SW-1/2/3 audience watches carried to /and-write.
         chunk: |
           The relational_anchor_status transitions from rank 3 toward the d06-d08 threshold
           as Taylor's coverage map expands to include the lanes Wren moves through between
@@ -5576,6 +5576,25 @@ books:
                 - axis: moral_legibility_to_self
                   rationale: "the double-omission is enacted as structural fact — two substrates, one station surface, the seal down on what the packet contains; this is NOT a recognition event; Taylor does not name the shape of what she has done; the gap between what she has done and what she would have to admit is the scene's substance contribution WITHOUT advancing the axis; moral_legibility holds at rank 5 — this is the chapter's discipline"
               density_target: 0.55-0.70
+
+        # /and-write Phase 7 chapter-level emit fields — 2026-06-01
+        bones_file: theater/bones/b01-c09.md
+        bones_count: 23
+        substance_bone_gate_verdict: PASS
+        substance_delta_measured:
+          axes_moved:
+            - { axis: relational_anchor_status, direction: up, magnitude: 0.5, anchor_bone: b01c09s01n04, cost_ledger: cl-d08 }
+            - { axis: political_register-prot, direction: up, magnitude: 0.5, anchor_bone: b01c09s02n06, cost_ledger: cl-d05 }
+          density_measured: 1.0   # 0 chatter / 23 total — fully structural (2 moving + 21 held; s03 all-held thesis-image close)
+          felt_verdict: SUBSTANCE-FELT-3-of-3   # audience trio all 9 cells (3 scenes × 3 personas) SUBSTANCE-FELT + auditor CLEAR (Phase 6 bone-gate)
+        # Phase 7 emit notes:
+        #   Silent chapter — zero dialogue-anchor bones; no per-character dialogue files (Phase 1.5 no-op).
+        #   Pipeline: Pass 2 (12 FAULT-FORM PP-recasts → CLEAN; 2 delta-floor resolved by DEC-0002 precedent)
+        #     + Pass 3 dramatist (s01/s03 ACCEPT; s02 +1 transition bone s02n09 'the insect-feed returns corwick')
+        #     + Pass 4 trim (3/3 ACCEPT, 0 deletions) + Pass 5 continuity (CONTINUITY-OK; corwick bare-slug resolved by c08 precedent, pl-2026-06-01-001)
+        #     + Phase 6 bone-gate (auditor 0 HARD / 2 SIGNAL accepted; audience 9/9 SUBSTANCE-FELT).
+        #   2 accepted SIGNALs carried to /and-stitch Phase 4 (scene-map protected-patterns): s02n09 instrument-class → render-physical; marks-verb variation.
+        #   Per-bone substance_delta source of truth: staff/showrunner/b01c09-bones-draft-2026-05-31.md.
 
       - slug: b01c10
         status: planned

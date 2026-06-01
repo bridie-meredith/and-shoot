@@ -3,34 +3,36 @@ cascade:
   invoked_at: 2026-05-31T23:00:00Z
   invoked_command: /and-substance chapter b01c09 --cascade
   last_completed:
-    level: chapter
+    level: bones
     slug: b01c09
-    completed_at: 2026-05-31T23:00:00Z
+    completed_at: 2026-06-01T00:00:00Z
   next:
-    command: /and-write b01c09
-    args: [b01c09]
+    command: /and-review bones b01c09
+    args: [bones, b01c09]
   reason: continue
   failure: null
   notes: |
-    /and-substance chapter b01c09 COMPLETE. 3 scenes decomposed + persisted to memory.md
-    (status: scened). Phase 5: audience 3/3 SUBSTANCE-FELT all scenes; dramatist ACCEPT;
-    auditor CLEAR (0 HARD). Phase 5.5 chunk-cold-read CHUNK-CLASS-B (summary maps to goal,
-    strict-CONTINUE=no — prior-context/apparatus-vocab, same shape as c08) -> admin
-    disposition P (DEC-0062); verdict SHIPPED-WITH-RISK-RECORDED with 4 cold_read_risk_carry
-    items arming /and-stitch Phase 8.5/9.
+    /and-write b01c09 COMPLETE (2026-06-01). 23 bones / 3 scenes emitted:
+    theater/bones/b01-c09.md + theater/facets/scene-map-b01-c09.md. Silent chapter —
+    no dialogue files (Phase 1.5 no-op).
 
-    Cost-ledger: cl-d08 opened at s01 (+0.5 of +2; 1.5 remaining); cl-d05 continuation at s02;
-    cl-d06 2nd tranche +1.0 still deferred to c10/later (pl-2026-05-30-001 remains open).
+    Phase 6 bone-gate PASS: auditor 0 HARD / 2 SIGNAL accepted (s02n09 instrument-class
+    render-physical advisory; marks-verb variation advisory — both carried to /and-stitch
+    Phase 4 via scene-map protected-patterns). Audience 9/9 SUBSTANCE-FELT (3 personas ×
+    3 scenes). Coverage discipline satisfied.
 
-    Carry to /and-write b01c09 (audience soft watches SW-1/2/3):
-      SW-1 (cape-fic): substrate-split = two distinct data-types (deliverable=geometry,
-        internal-map=pattern), architectural not volitional. Not "she chose not to route."
-      SW-2 (dark-fantasy): courier withholding = automatic substrate-selection, not a
-        deliberated routing decision; Jarvis channel should not enter Taylor's consideration.
-      SW-3 (worm-canon): s02 posture-recognition decomposes to TWO bones — (1) feed returns
-        physical signature (body angled, weight-distribution), then (2) Taylor categorizes as
-        delivery-complete. Do not collapse physical-data + categorization into one label bone.
+    Pipeline: Pass 2 (12 FAULT-FORM PP-recasts → CLEAN; 2 delta-floor by DEC-0002 precedent)
+    + Pass 3 dramatist (+1 transition bone s02n09) + Pass 4 trim (3/3 ACCEPT 0-del)
+    + Pass 5 continuity (CONTINUITY-OK; corwick bare-slug resolved by c08 precedent;
+    dragonpit-margin/lower-gate geo-cards parked for /and-facets Phase 0 — pl-2026-06-01-001).
 
-    Also carry: c02 revised bones = canonical SVO-form/delta-magnitude reference (pl-2026-05-27-001);
-    do NOT model form on c03. dark-fantasy/c10 watch: this chapter has no antagonist agency
-    by design (dramatist) — c10 must supply the external force.
+    INCIDENT: prior Phase 6 dispatch pair (auditor + audience trio) died silently ~3.5h with
+    partial output (cape-fic + dark-fantasy verdicts only); re-dispatched auditor + worm-canon;
+    re-run completed the gate cleanly.
+
+    Carry to /and-stitch (chunk_cold_read CHUNK-CLASS-B / DEC-0062 + scene-map protected-patterns):
+      - apparatus-muffle: render s02n09 'insect-feed returns corwick' as a physical perceptual
+        event, NOT a data-record transaction (Phase 8.5 central-event-muffle armed).
+      - moral_legibility hold at s03: NO recognition beat — double-omission stays structural fact
+        (motive-opacity is design-intentional per DEC-0062, not a hole).
+      - cold_read CONTINUE bar = tentative-yes (design-inherent Class B), not strict-yes.
