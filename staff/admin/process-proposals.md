@@ -3995,6 +3995,113 @@ defer_until: null
 supersedes: null
 ```
 
+---
+
+## PROP-0031
+
+```yaml
+id: PROP-0031
+created_at: 2026-06-01T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/facets-audience-gate-r1.md
+  source_verdict: "/and-facets b01c09 Phase 5b — interest-narrator 3-of-3 REVISE on [interest-narrator:5] @19 (held-axis no-recognition fence); resolved in-cycle by unanimous one-line removal; 9/9 ACCEPT post-fix"
+target:
+  type: rubric
+  path: design/shoot-v2/rubric-narrator-interest.md
+  section: "§Anti-patterns (named for the rubric) — add held-axis no-recognition fence as a per-entry HARD anti-pattern alongside #4 Monument-leak; mirror into §Voice fidelity / §Earning REJECT signatures"
+change_type: promote
+rationale: |
+  At /and-facets b01c09 Phase 5b, all three audience reviewers independently flagged the SAME
+  narrator-interest entry — [interest-narrator:5] @19, clause "what the packet holds is the only
+  thing the channel will ever see" — as naming the omission-gap from inside the narrator-voice,
+  which the moral_legibility rank-5 hold and the s03 scene-map protected-pattern bar (the
+  recognition beat is reader-side until its scheduled payoff at c12). Three checkpoints handled
+  this finding in three different ways, and only the third caught it as a fault:
+    1. The R1 narrator-interest author self-identified the entry as a probable held-axis
+       violation IN ITS OWN seam-report ("if the mechanic auditor reads it as the narrator
+       reasoning about the co-presence/omission, it should be culled to NONE") — and shipped it
+       anyway. The rubric licenses self-cull (delete-only, §Cull) but does not OBLIGATE it for a
+       self-flagged held-fence boundary case; the author treated the flag as a surfaced risk, not
+       a self-resolving fault.
+    2. The Phase 5 auditor noted it as a BOUNDARY CASE in the audit narrative but did not formally
+       fault it (0 HARD). It could not: the auditor's RUBRIC-FIDELITY scan (and-facets.md Audit
+       classes, §RUBRIC-FIDELITY source-enumeration) fires HARD only on REJECT signatures /
+       anti-patterns / cross-facet rules ENUMERATED in the facet rubric. rubric-narrator-interest.md
+       has exactly one per-entry hard fence — anti-pattern #4 Monument-leak (Earth-Bet proper-noun /
+       Dance specific). It has NO "held-axis no-recognition" REJECT signature. So the auditor had no
+       mechanical rule to bind to and was correct to only note it.
+    3. The Phase 5b adversarial gate caught it (3-of-3 REVISE) and the bidirectional loop returned
+       VALIDATED. This is the gate working as designed.
+
+  Discriminator (per schema anti-pattern §Content-failure-as-process-failure): "could a stricter
+  version of the EXISTING gate have caught this?" The auditor gate could NOT — the rule it would
+  need is absent from the rubric the auditor enumerates. That makes this an add/promote to the
+  rubric, not a modify of the auditor's disposition. This is the canonical CLAUDE.md Rule 11 /
+  and-facets.md §Shared-reviewer-assets promotion case: a pattern the audience flags at Phase 5b
+  graduates into a RUBRIC-FIDELITY mechanical check by adding the rule to the relevant facet
+  rubric's REJECT / anti-pattern section; the auditor enumerates those sections at audit time, so
+  the rubric edit auto-promotes the taste call to a mechanical Phase-5 check next chapter.
+
+  On the dispatch's alternative framings: (a) mandating R1 self-cull of every self-flagged
+  boundary case is the WRONG fix — R1 authors are designed to surface risks blind to the full
+  facet graph; forcing them to self-adjudicate held-fence calls suppresses useful surfacing and
+  moves adjudication from the 3-persona adversarial gate to a single blind author. (b) Instructing
+  the auditor to escalate a self-flagged boundary case note→HARD is closer but brittle: it depends
+  on the auditor reading the R1 seam-report and is a one-off behavioral instruction, not a durable
+  mechanical rule — and it does nothing for a held-axis violation the R1 author does NOT self-flag.
+  The rubric promotion is the durable, in-architecture fix: it fires mechanically at Phase 5 on ANY
+  future narrator-interest entry that names a held-axis gap from inside the narrator-voice,
+  independent of whether the R1 author happened to flag it.
+
+  Recurrence_count = 1. Proposing at first occurrence (same bar as PROP-0006, open-class): the
+  failure class is a held-axis HARD-equivalent fence (sibling to the existing Monument-leak
+  per-entry hard fence), not a SIGNAL taste-flag; the rule is enumerable now with precision (the
+  held-fence is the substance contract's set of axes at no-recognition / no-naming hold, surfaced
+  per-chapter via the scene-map protected-pattern annotation and the contract's rank-N holds); and
+  leaving it un-promoted means the Phase-5 mechanical backstop for a held-axis fence keeps
+  depending on the adversarial gate's 3-of-3 catch — the same gate-gap shape PROP-0006 named for
+  the Earth-Bet fence.
+evidence_refs:
+  - "active-project/staff/auditor/facets-audience-gate-r1.md — §The interest-narrator REVISE → fix (3-of-3 on [interest-narrator:5] @19; per-lens diagnoses); §Convergence trace (Auditor Phase 5: 0 HARD, narrator:5 @19 noted as BOUNDARY CASE; bidirectional loop VALIDATED)"
+  - "design/shoot-v2/rubric-narrator-interest.md — §Anti-patterns: only per-entry hard fence is #4 Monument-leak (Earth-Bet/Dance); no held-axis no-recognition REJECT signature exists; §Cull licenses but does not obligate self-cull"
+  - ".claude/commands/and-facets.md — §Audit classes RUBRIC-FIDELITY (~lines 501-515): HARD fires only on rubric-enumerated REJECT/anti-pattern/cross-facet rules; source-enumeration line confirms auditor reads rubric-narrator-interest.md §Anti-patterns at audit time; §Shared reviewer assets (~line 910): Phase-5b audience flags graduate to RUBRIC-FIDELITY via rubric REJECT-section edit"
+  - "staff/admin/process-proposals.md — PROP-0006 (Earth-Bet hard-fence caught only at Phase 5b, not Phase 5 auditor CONSTRAINT; proposed at recurrence 1; same gate-gap shape — HARD-class fence with no working Phase-5 mechanical backstop). Adjacent lineage: PROP-0024 / PROP-0011 (held-axis at /and-write Phase 1/6 bone-authoring) — distinct layer (bone-authoring vs facet narrator-interest) and distinct fence (axis-move concreteness / held-axis completion vs held-axis NO-recognition naming)"
+  - "schemas/admin-proposal.schema.md — §Anti-patterns Content-failure-as-process-failure discriminator: gate structurally incapable of catching → add/promote, not modify-disposition"
+recurrence_count: 1
+proposed_diff: |
+  PRIMARY CHANGE — design/shoot-v2/rubric-narrator-interest.md, §Anti-patterns (named for the
+  rubric). Add a new per-entry HARD anti-pattern alongside #4 Monument-leak:
+
+    **Held-axis no-recognition leak.** A narrator-interest entry that NAMES, from inside the
+    narrator-voice, a gap / omission / asymmetry / rationalization that a substance-contract axis
+    holds at no-recognition (rank-N hold) or that a scene-map protected-pattern bars as
+    reader-side until its scheduled payoff. The narrator may register the physical act or the
+    structural fact; she may NOT name the recognition the contract reserves for the reader (or
+    for a later chapter). Hard fence; reject and require revise / cull-to-NONE. Discriminator: the
+    entry survives if it stays on the physical-act / structural-fact side ("the wax comes down
+    under her hand at the weight she has already settled; the packet is closed") and fails if it
+    crosses into naming the held gap ("...what the packet holds is the only thing the channel
+    will ever see"). The held axes + protected-patterns for the chapter are read from the
+    substance contract's rank holds and the scene-map facet's protected-patterns annotation; the
+    auditor enumerates them at audit time.
+
+  MIRROR — §Voice fidelity / §Earning REJECT signatures: add a one-line cross-reference REJECT
+  signature ("Held-axis recognition named in-voice — see anti-pattern #N") so the per-axis scan
+  surfaces it independent of the anti-pattern walk.
+
+  AUTO-PROMOTION (no command-body edit required): the auditor's RUBRIC-FIDELITY source-enumeration
+  (and-facets.md §Audit classes) already reads rubric-narrator-interest.md §Anti-patterns +
+  §REJECT signatures at audit time and applies each as a mechanical HARD check. Adding the rule to
+  the rubric makes the Phase-5 auditor fire it mechanically next chapter — closing the gap that let
+  this finding ride two checkpoints to the Phase-5b adversarial gate. No change to and-facets.md is
+  needed; this is the Rule-11 rubric-edit promotion path operating as designed.
+
+  NOT PROPOSED: (a) an R1 self-cull obligation — would suppress risk-surfacing and move
+  adjudication to a single blind author. (b) an auditor note→HARD escalation keyed on the R1
+  seam-report — brittle, one-off, and blind to un-flagged violations. The rubric enumeration
+  supersedes both: it makes the fence mechanical regardless of who (if anyone) flagged it.
 cost_estimate: S
 status: open
 triaged_at: null
