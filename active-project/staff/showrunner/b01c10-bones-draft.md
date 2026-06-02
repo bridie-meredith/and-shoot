@@ -73,8 +73,12 @@ scenes:
           axes_held:
             - axis: moral_framework
               rationale: "formalization names what is already operative; Taylor does not open a new ledger entry on the institutional act itself; the prohibition-against-breach has not been triggered by a packet — framework held at current crack-level by grounding the scene's physical location (feed-station exterior)"
+            - axis: relational_anchor_status
+              rationale: "Wren is not in the packet or the formalization; the morning-stone/bay-cold grounding holds the scene at the feed-station exterior with no Wren-content; anchor holds at rank 3.5"
           cost_ledger_anchor: null
         notes: "Grounding bone (W4 aliveness). Physical: morning stone + bay-cold = feed-station exterior sensory anchor. Enacts the setting's cold weight, keeping scene concrete not abstract. Satisfies >=1 grounding bone requirement."
+
+
 
       - slug: b01c10s01n04
         shape: moving
@@ -97,6 +101,8 @@ scenes:
           axes_held:
             - axis: moral_legibility_to_self
               rationale: "Taylor reads the packet and files what it names; the foreclosure is not yet a recognition event; legibility holds — she exhales on the content without interrogating it; the body-response is the non-event of a recognition that does not open"
+            - axis: political_register-prot
+              rationale: "the packet is Otto's register, not court-tier content returned by the feed; the exhale registers the formalization without resentment-color entering; political_register-prot holds at rank 3.5"
           cost_ledger_anchor: null
         notes: "Held bone on moral_legibility. Bare intransitive that enacts the held discipline — the exhalation is not-recognition performed as physical action. Parallels b01c01s01n07 ('taylor exhales') in function."
 
@@ -179,6 +185,8 @@ scenes:
           axes_held:
             - axis: moral_framework
               rationale: "opposing force enacted: the internal record as a distinct substrate from the Jarvis channel — the months of accumulated body-map (errand-corridor, posture-classes, lower-gate faction-inference) are a coherent, physically-indexed observation set; this bone makes the substrate visible as a weight before the delivery collapses it; the framework is held at its current crack level by the visibility of what is about to be crossed"
+            - axis: position-prot-rise
+              rationale: "Otto's leverage is visible as the silhouette/body-map gap; no new formalization event this scene; position-prot-rise holds at rank 4 (post-s01 advance)"
           cost_ledger_anchor: null
         notes: "W1 HONOR — the substrate-split bone. This is the structurally distinct cognitive bone BEFORE the routing bone. 'errand-corridor geometry' is a physical compound (routes, lines of movement); 'weights' is narrowly licensed (internal record as a physically-indexed observation resisting the routing act — stillness-against-the-channel). The months of observation are here as accumulation before the surrender. Opposing force (internal-record-as-distinct-substrate) visible."
 
@@ -190,12 +198,14 @@ scenes:
           axes_held:
             - axis: moral_legibility_to_self
               rationale: "the specific body-posture Taylor accumulated in the feed — the lower-gate posture, the report-delivery stance — is here as a concrete recalled image before it becomes a line-item; legibility holds because Taylor runs the harm-reduction calculus without naming the accumulation as a recognition event; the recalled posture is data, not guilt"
+            - axis: political_register-prot
+              rationale: "Corwick's body-posture is ward-level Flea Bottom observation, not court-register content; political_register-prot holds at rank 3.5"
           cost_ledger_anchor: null
         notes: "Grounding bone (W4, W1): Corwick's feed-posture concretized as physical remembered action. 'squares the stone-post' = the lower-gate report-delivery stance from c09. This is the body-map made visible in one concrete image. Satisfies >=1 grounding bone requirement for s02. corwick bare-slug per c08/c09 precedent (pl-2026-06-01-001)."
 
       - slug: b01c10s02n05
         shape: moving
-        svo: "taylor-hebert-kl-122ac translates the record"
+        svo: "taylor-hebert-kl-122ac translates the body-map"  # Phase-6 signal-005 recast
         substance_delta:
           axis_moves:
             - axis: moral_framework
@@ -207,7 +217,7 @@ scenes:
 
       - slug: b01c10s02n06
         shape: moving
-        svo: "taylor-hebert-kl-122ac routes the record"
+        svo: "taylor-hebert-kl-122ac routes the body-map"  # Phase-6 signal-005 recast
         substance_delta:
           axis_moves:
             - axis: social_tether-antag
@@ -225,6 +235,8 @@ scenes:
           axes_held:
             - axis: relational_anchor_status
               rationale: "Wren is not in this exchange; anchor holds at rank 3.5; the substrate split closes on Corwick not Wren — the bone that grounds the closure (wax drying = channel sealed) enacts the relational_anchor hold by physically marking the boundary of what was delivered and what was not"
+            - axis: social_tether-prot-rise
+              rationale: "the channel seal is a delivery act, not a new patron-tether event; social_tether-prot-rise holds at its structural rank (post-s01 advance)"
           cost_ledger_anchor: null
         notes: "Grounding bone: wax as physical prop (the packet/channel seal). Enacts closure of the Jarvis channel without Wren's name in it. mechanism: withheld-observation-enters-jarvis-channel is completed."
 
@@ -359,6 +371,8 @@ scenes:
           axes_held:
             - axis: relational_anchor_status
               rationale: "Wren not in this scene; the bay-cold as physical environmental constant grounds the scene's temporal setting (same morning cold as s01) without adding Wren-weight; anchor holds at rank 3.5"
+            - axis: social_tether-prot-rise
+              rationale: "the circuit-pass confirms the network ran but adds no new patron-tether event; social_tether-prot-rise holds at structural-load rank"
           cost_ledger_anchor: null
         notes: "Grounding bone (W4 aliveness): bay-cold + lower road = the physical sensation of the circuit-pass. Keeps the feed-reading embodied and concrete; prevents the scene from reading as data-record transaction per W4 watch. Second grounding bone for s03."
 
@@ -442,6 +456,8 @@ scenes:
           axes_held:
             - axis: social_tether-antag
               rationale: "the ledger-open is a convention Taylor has run since the first delivery; opening the ledger does not produce new leverage for Otto — it is Taylor's internal accounting convention; antag leverage is structural and confirmed; it holds at the structural-confirmed state from s03"
+            - axis: position-world
+              rationale: "the ledger-open files the world-consequence already settled in s03; no new world-axis movement; position-world holds at rank 7"
           cost_ledger_anchor: null
         notes: "Grounding bone: ledger as physical object. 'opens' is licensed as a discrete act of initiating a physical mechanism. event: taylor-opens-ledger-post-detention. mechanism: ledger-as-taylors-accounting-convention."
 
@@ -465,6 +481,8 @@ scenes:
           axes_held:
             - axis: political_register-prot
               rationale: "the physical act of writing at the feed-station — the stone's surface is the grounding contact that roots the scene's accounting work in a bodily register; no court-tier content enters in this scene; resentment material deferred to c11; register holds at rank 3.5"
+            - axis: political_register-world
+              rationale: "the accounting work adds no new succession-channel register; political_register-world holds at rank 6 (post-s03)"
           cost_ledger_anchor: null
         notes: "Grounding bone (W4 aliveness): feed-station stone + wrist = physical sensory anchor. Keeps the accounting concrete and embodied. The wrist-on-stone is the body working. Prevents the scene from running as pure interior-accounting abstraction."
 

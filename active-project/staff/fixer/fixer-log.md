@@ -1,3 +1,9 @@
+## SESSION-START — 2026-06-02T00:00:00Z — write-b01c10-phase6-bone-gate-cycle1
+dispatch: /and-write b01c10 Phase 6 bone-gate cycle-1 fix — 4 HARD HELD-AXIS-NOT-WITNESSED (9 axes_held additions to 8 named bones) + 2 SIGNAL remediations (3 SVO object swaps)
+target: active-project/staff/showrunner/b01c10-bones-draft.md
+audit-report: (inline from gate run)
+findings-queued: 6 (4 HARD + 2 SIGNAL)
+
 ## SESSION-START — 2026-06-01T09:00:00Z — and-facets-b01c09-cycle1-fixes-round2
 dispatch: /and-facets b01c09 Phase 5b cycle-1 remediation — confirm 2 HARD baseline fields already present in loc-state (FINDING 1: loc-state:1 @1 thermal; FINDING 2: loc-state:3 @8 light); apply FINDING 3 SOFT tidy (loc-state:5 @17 tactile/prop wax-soft-warm baseline) if rubric-safe
 target: active-project/theater/facets/location-state-b01-c09.md
@@ -1717,6 +1723,12 @@ dispatch: minimum-change fixes for 8 FAULT-FORM-MODIFIER faults in b01c06 bones 
 target: active-project/staff/showrunner/_drafts/b01c06-bones-draft-2026-05-30.md
 audit-report: active-project/staff/auditor/write-b01c06-pass2.md
 findings-queued: 8 (fault-001 confirmed already applied in prior session; 7 remaining to apply)
+
+## SESSION-START — 2026-06-02T00:00:00Z — write-b01c10-phase6-bonegate-cycle1
+dispatch: /and-write b01c10 Phase 6 bone-gate cycle-1 fix — 4 HARD HELD-AXIS-NOT-WITNESSED (9 axes_held additions across 9 named bones) + 2 SIGNAL remediations (3 SVO object swaps in s02n05, s02n06, s04n05)
+target: active-project/staff/showrunner/b01c10-bones-draft.md
+audit-report: n/a (dispatch carries inline fix specification)
+findings-queued: 12 (9 axes_held additions + 3 SVO swaps)
 
 ## SESSION-START — 2026-05-31T00:00:00Z — and-facets-b01c07-cycle1-fixes
 dispatch: /and-facets b01c07 Phase 5b cycle-1 remediation — 4 failed facets (interest-narrator AP-001 cap, sensory[3-sub], dialogue-halvard split-verdict, dialogue-taylor 2-persona convergence); apply minimum change per consolidated callouts in facets-audience-gate-r1.md
