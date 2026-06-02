@@ -1,37 +1,37 @@
-# bones — b01c09
+# bones — b01c10
 
-episode: b01c09
+episode: b01c10
 narrator: taylor-hebert-kl-122ac
-goal: Show the audience that Taylor is now surveilling Wren as part of routine coverage — and that she is not calling it that — and advance the courier-face so the d10 accounting has a body with a history.
-cast: taylor-hebert-kl-122ac, wren-stitch-maker-flea-bottom-ward, corwick
-locations: the-hook-ward, the-stitch-shop-lane, the-bread-seller-corner, the-dragonpit-margin, the-lower-gate, the-feed-station
-prior_episode: b01c08
+goal: Show the audience the formalization and the detention in the same chapter so the structure is clear: Otto naming the arrangement and Taylor's feed confirming its operational consequence are the same event.
+cast: jarvis-coin-kl-courier, taylor-hebert-kl-122ac, corwick
+locations: the-feed-station, the-lower-gate, the-dragonpit-margin
+prior_episode: b01c09
 aggregate_range: 1-27
 
-1 taylor-hebert-kl-122ac enters the lane-south-of-the-hook
-2 taylor-hebert-kl-122ac presses the lane-stone [narrator:1]
-3 the bay-damp beads the lane-stone
-4 the insect-feed threads the stitch-shop lane
-5 the stitch-shop door opens the lane-mouth
-6 wren-stitch-maker-flea-bottom-ward walks the shop-to-water-seller lane [narrator:2]
-7 wren-stitch-maker-flea-bottom-ward reaches the bread-seller corner
-8 taylor-hebert-kl-122ac files wren's route
-9 the cold stiffens the fingers [narrator:3]
-10 the ward-coverage notes receive the boundary geometry
-11 taylor-hebert-kl-122ac enters the dragonpit-margin lane
-12 the supply cart marks the lower-gate road
-13 the stone-post marks the lower gate side-exit
-14 the insect-feed returns corwick [narrator:4]
-15 the cold weights the shoulders
-16 corwick faces the second man
-17 corwick squares the shoulders
-18 taylor-hebert-kl-122ac files the posture-class [narrator:5]
-19 taylor-hebert-kl-122ac closes the observation-entry
-20 taylor-hebert-kl-122ac completes the circuit
-21 taylor-hebert-kl-122ac takes the feed-station
-22 taylor-hebert-kl-122ac folds the packet
-23 taylor-hebert-kl-122ac seals the packet [narrator:6]
-24 the ward-coverage notes mark the station-left
-25 the internal map files wren's route
-26 the feed-record closes the courier entry
-27 the seal dries
+1 jarvis delivers the packet
+2 the packet-text closes the frame [narrator:1]
+3 the morning-stone holds the bay-cold
+4 taylor-hebert-kl-122ac folds the packet
+5 taylor-hebert-kl-122ac exhales [narrator:2]
+6 the second item opens the packet
+7 the lower-gate road marks the body-map
+8 the body-map fills the feed-record
+9 corwick squares the stone-post
+10 taylor-hebert-kl-122ac translates the body-map [narrator:3]
+11 taylor-hebert-kl-122ac routes the body-map
+12 the wax dries
+13 the supply cart marks the lower-gate road
+14 corwick walks the errand-corridor [narrator:4]
+15 the lower-gate road loses corwick [narrator:5]
+16 the stone-post marks the side-exit
+17 the Gold Cloak pair posts the lane-junction
+18 the insect-feed sweeps the errand-corridor
+19 the bay-cold presses the lower road
+20 taylor-hebert-kl-122ac opens the ledger
+21 taylor-hebert-kl-122ac writes corwick
+22 the feed-station stone grounds the wrist
+23 corwick faces the lower-gate
+24 corwick crosses the errand-corridor
+25 taylor-hebert-kl-122ac closes the ledger
+26 taylor-hebert-kl-122ac presses the feed-station
+27 corwick squares the feed-record [narrator:6]
