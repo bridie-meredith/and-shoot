@@ -73,7 +73,7 @@ chapter_goal_coverage:
   wren_inside_accounting_without_contact: LAND
 overall: ACCEPT
 notes:
-  - s01 harm-reduction framing already contains something surveillance-shaped; the scene ends on "mechanical precision of someone who has been thinking about it for longer than she is willing to count" — that is accumulated dread doing its work before anything is named; world remains indifferent; no false hope; no catharsis arriving early; SUBSTANCE-FELT confirmed against the "catharsis-before-weight" walkout trigger
+  - s01 harm-reduction framing already contains something surveillance-shaped; the scene ends on "mechanical precision of someone who has been thinking about it for longer than she is willing to count" — that is accumulated dread doing its work before anything is named; world remains indifferent; no false hope; no catharsis; SUBSTANCE-FELT confirmed against the "catharsis-before-weight" walkout trigger
   - s02 "everywhere Wren moves is somewhere Taylor has reasoned herself out of going" is the dark-fantasy shape of a relationship forming against the protagonist's will; the anchor account opening as a named absence is structural pressure, not authorial gift; world does not accommodate; Wren's centrality is a friction-producing fact, not a plot convenience
   - s03 the two-beat structure (recognition arrives / suppression closes) is the "filing-and-continuing" shape confirmed at book Phase 5 as the correct dark-fantasy register; it executes at scene level exactly as planned; chapter closes on accumulated unease, the crack sealed under the entry — no catharsis; "the ledger closing as active discipline" is the dread mechanism, not relief
   - no walkout triggers: no catharsis before weight; no enemies pausing; no magic-as-reliable-tool (the coverage mechanism is labor-intensive and Taylor is acutely aware of it); world is not set dressing
@@ -557,3 +557,49 @@ notes:
   - held-axes in s01/s02 carry load-bearing dormancy under named pressure (deliverable ledger; Jarvis-channel expectation)
   - s03n07 seal-drying = correct material close; no catharsis; the seal dries on a gap not named
   - SW-2 carried to bone-gate: substrate-selection must read as operational-security discipline, not refusal
+
+---
+
+## 2026-06-02 — /and-substance chapter b01c11 Phase 5 review
+
+chapter: b01c11
+date: 2026-06-02
+scenes_reviewed: [b01c11s01, b01c11s02, b01c11s03, b01c11s04]
+dispatch_mode: SINGLE-PERSONA SPLIT (PROP-0036; dark-fantasy-reader only; no 3-card aggregation)
+
+verdict_per_axis:
+  social_tether-prot-rise (+1.0, cl03b, s01+s04): SUBSTANCE-FELT
+  social_tether-antag (+1.0, cl-antag-d10, s02+s03): SUBSTANCE-FELT
+  political_register-world (+0.5, s02): SUBSTANCE-FELT
+
+overall: SUBSTANCE-FELT — ACCEPT
+
+### Per-scene notes
+
+s01: Tether-at-full-load is shown through nodes doing work simultaneously — Jarvis packet taken without ceremony before the bell's decay ends, Oswyn at the grain-measures junction applying ward-mediation pressure before the feed names him as a coordinate, ward contacts returning observation through prior-service reciprocity (not design). World-before-node causal order maintained across all three. The cl03b +0.5 tranche is not declared; it is crystallized by the nodes already operating at the load c10 formalized. No catharsis. No assertion. s04's count closes on image (the stylus going down), not synthesis — defensible because s01-s03 have already demonstrated the nodes; the count is closure, not declaration.
+
+s02: The message-burn is a physical process the feed intercepts (thermal shift, smoke-curl, three seconds, paper gone). The Dragonstone-distance irony is structural: enemies responding to Taylor's architecture before she has processed what that means. Standing-protocol reading (merchant has done this twice before at the same interval) confirms Dragonstone's operational discipline pre-exists detection — the world was already running this procedure. Taylor timestamps and withholds. The withholding is enacted as substrate-category classification ("observation-class content the Jarvis channel has not been briefed to receive"), not as moral deliberation. Cost_ledger_anchor: null is a bones-gate concern for the auditor, not a chunk-level block.
+
+s03: Two simultaneous withholds named together (s03 is the structural acknowledgment of the pattern that s01 and s02 separately produced). The Halvard argument thinning — "not defeated; simply stopped being the instrument she reaches for" — is the correct dark-fantasy shape for foreclosure-as-arithmetic. The cover-as-architecture-that-does-not-know-its-contents image is the right irony: the institutional structure holds the withheld observations without knowing what they are. No moral narration — the withholding lands as substrate-discipline operating in its correct register.
+
+s04: Evening accounting as crystallization. All four nodes (Jarvis, Oswyn, ward contacts, arrangement-as-cover) visible simultaneously in the count. "Two withheld observations in the internal record, not in the packet. Neither substrate knows what the other is not receiving." Stylus down. The chapter closes on a physical gesture at the correct moment, with the withholding pattern visible and unnamed.
+
+### Threshold discipline
+
+No walkout triggers. No catharsis before weight — stylus down on a gap, not on resolution. No enemies pausing — merchant's standing-protocol burn confirms Dragonstone moved first, before Taylor processed the cut. No hope-that-costs-nothing — the tether at full load is read against the cl03b future-cost collateral note. No world-as-set-dressing — ward contacts have prior-service social physics of their own; the merchant has a routine and a standing protocol that pre-exists Taylor's coverage.
+
+### Bones-execution watches for /and-write (soft, not blocks)
+
+SW-DFR-c11-1 (antag-axis weight): s02 burn scene — the thermal-and-smoke mechanism must arrive as dread (something routable being sat on) not as filed classification. Three seconds, paper gone is the beat where the chapter earns its antag-axis weight. If the bones bureaucratize past that moment, the +0.5 antag advance loses felt consequence.
+
+SW-DFR-c11-2 (withholding-pattern register): s03 — "neither entry came from a deliberated decision" must stay in enacted-discipline register at bone level. The Halvard argument's absence must be operational silence, not a conclusion Taylor has reached. The bones must not let this tip into interior-explanation.
+
+SW-DFR-c11-3 (s04 count discipline): the count must close on image/gesture rather than re-naming what s01-s03 demonstrated. If count-bones re-assert what the prior scenes showed, crystallization becomes declaration.
+
+### Cl-antag-d10 journey-dependency note
+
+The +1.0 total at c11 is a partial-settle on cl04's non-extractable relational_anchor_status component. The full antag-axis architecture requires b01c12's re-windowed relational_anchor_status +1.0 to complete. This does not reduce c11's earned substance — the c11 withholds are real events — but SW-DFR-c11-1 carries additional weight because the withholding-pattern must feel consequential within the chapter, not only in retrospect from c12.
+
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
