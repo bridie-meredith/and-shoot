@@ -27,9 +27,9 @@ cascade:
     slug: b01c10
     completed_at: 2026-06-02T04:15:00Z
   next:
-    command: /and-write b01c11
-    args: [b01c11]
-  reason: chapter-production-in-progress   # c11 substance COMPLETE (4 scenes scened; Phase5 PASS; Phase5.5 SHIPPED-WITH-RISK-RECORDED DEC-0072). Cascade -> /and-write -> /and-review bones -> /and-facets -> /and-stitch (P9+P10). Two HARD threading-holds RESOLVED at Phase 3 (DEC-0071).
+    command: /and-review bones b01c11
+    args: [bones, b01c11]
+  reason: chapter-production-in-progress   # c11 substance + write COMPLETE. /and-write PASS (27 bones, 0 HARD, audience 3/3 SUBSTANCE-FELT, 2 ABSTRACTION-DOMINANT SIGNAL accepted->stitch P4; DEC-0073 OK-MERGED). Cascade -> /and-review bones (MANDATORY) -> /and-facets -> /and-stitch (P9+P10). Watch: consecutive-abstract N=6 (c10+c11) -> /and-cohere triage before c13 (DEC-0073).
   failure: null
   pending_depth_passes: [b01c10]   # PASS-WITH-DEPTH-PASS-REQUIRED (spine-staging-gap acts-of-commission + readability AIRLESS). /and-write b01c10 revise --from-signals before book-close. NON-blocking for c11 production.
   pending_threading_holds: [b01c10]   # Phase 10 HOLD-THREAD: pl-2026-06-02-stitch-thread-001 (Halvard hook-0007) + -002 (cl-d06 tranche) -> resolve at /and-substance c11 Phase 3.
