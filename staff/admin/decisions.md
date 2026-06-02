@@ -4266,3 +4266,63 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+## DEC-0072 | 2026-06-02 | SLOW (user-proxy, RUNBOOK R1)
+
+question: |
+  b01c11 /and-substance chapter Phase 5.5 cold-read disposition (Step 3).
+  CHUNK-CLASS-B: summary maps to goal; strict-CONTINUE=No on attempt 2 (after revise).
+  Residual complaints: (a) low on-page jeopardy / nobody at risk / nothing goes wrong;
+  (b) load-bearing proper nouns (Otto, Rhaenyra, Dragonstone, Corwick, Halvard) introduced
+  without context. All upstream gates PASS (audience 3/3 ACCEPT, dramatist ACCEPT on attempt 2,
+  auditor 0 HARD). One revise attempt remaining in 3-try cap.
+  Counter: consecutive-airless concern (DEC-0066/0067; N=5 c06-c10). Does the
+  consecutive-quiet pattern change the call from P to R?
+
+context: |
+  Silent chapter-production run for b01c11 (RUNBOOK Rule 1). c11 is a RISING consolidation
+  chapter between two CLIMAX chapters (c10, c12). Design: surveillance architecture at peak
+  load before collapse phase opens. Dramatist ACCEPT (attempt 2) explicitly confirms
+  "genuine stakes-accumulation; rising shape correct, does not over-climax."
+  Substance contract: 3/3 audience SUBSTANCE-FELT, 0 FLAT, 0 SUSPECT, Earth-Bet CLEAN.
+
+options:
+  R: burn last revise to add on-page jeopardy / reduce proper-noun opacity
+  P: proceed; record as CHUNK-CLASS-B SHIPPED-WITH-RISK-RECORDED; carry risk to /and-stitch
+  S: substance-contract redo (not warranted — no reviewer faults the delta)
+  ESCALATE: surface to principal
+
+decision: P — proceed with risk recorded (CHUNK-CLASS-B / SHIPPED-WITH-RISK-RECORDED)
+
+basis: ltm:DEC-0060 + ltm:DEC-0062 (exact same decision shape; both P)
++ methodology:3a (reversibility — burning last revise risks over-torquing into false climax)
++ methodology:3c (blast radius — R affects c12 structural relationship; P does not)
+
+rationale: |
+  The cold-read objection splits cleanly into two non-fixable-at-chunk-level categories:
+  (a) Low jeopardy is the contractual design of a RISING consolidation chapter sitting between
+  two CLIMAX chapters. All three audience reviewers felt substance; the dramatist endorsed the
+  rising shape explicitly on attempt 2. Burning the last revise to manufacture jeopardy would
+  violate the substance design that every upstream gate endorsed, and risks making c11 step on
+  c12's earned climax. This is design-inherent, not a chunk delivery failure.
+  (b) Cold-context proper-noun opacity is universal for chapter 11 of a serial. An invested reader
+  (c01-c10) arrives with full context; the uninformed cold-reader is not the target audience.
+  Both complaint categories are correctly routed to /and-stitch Phase 8.5 Check 3 (cold-context
+  risk arming) and Phase 9 jeopardy scrutiny — not to a chunk revise that would only damage the
+  design.
+  Counter-consideration (consecutive-airless N=5): the concern is about *prose airlessness*
+  (apparatus-density in rendered stitch), not about dramatic jeopardy or proper-noun opacity.
+  These are distinct failure classes. If c11 ships with airless prose, that is a stitch-layer
+  issue properly addressed by /and-cohere (flagged in DEC-0070). R would apply a chunk-revise
+  to a prose-layer problem — wrong layer, wrong tool.
+
+trade-off: |
+  P accepts that the cold-read remains at strict-CONTINUE=No on the assembled draft. Mitigation:
+  /and-stitch Phase 8.5 + Phase 9 have explicit jeopardy-scrutiny and cold-context-risk tooling
+  armed by cold_read_risk_carry; /and-cohere is on-deck after c11 for the consecutive-airless
+  pattern. R would spend the last revise attempt and risk a false-climax that undercuts c12.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

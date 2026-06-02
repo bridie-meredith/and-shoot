@@ -53,10 +53,17 @@ scenes:
       for them — cleared the blocked drain, confirmed a household was not sick, been present
       without demanding payment — and returning with a piece of information is what people
       who owe a small debt do. [mechanism:
-      ward-contacts-as-load-bearing-nodes-through-prior-service-reciprocity] Taylor routes
-      the cart-timing change through the Jarvis channel, sourced to the lane-pattern. The
-      identities of both sources stay in the internal record. [force:
-      ward-contact-identities-withheld-from-channel]
+      ward-contacts-as-load-bearing-nodes-through-prior-service-reciprocity]
+
+      Taylor routes the cart-timing change through the Jarvis channel. [event:
+      wool-dyer-identity-withheld-from-deliverable-as-discrete-act] She sets the stylus to
+      the source field. Her hand holds there. She writes the lane-pattern — the timing
+      anomaly sourced to the cross-lane corridor, no name. The wool-dyer's name stays in
+      the internal record and not on the covering sheet. Her hand lifts. [image:
+      hand-pauses-over-source-field-writes-lane-pattern-not-name] [mechanism:
+      identity-withheld-by-physical-omission-not-deliberated-choice] The decision is not
+      deliberated. The contact is a contact, not a channel deliverable. [force:
+      ward-contact-identity-withheld-from-channel]
     scene_conflict:
       protagonist_force: "Taylor's coverage-circuit discipline — the nodes run; the packet goes to Jarvis; Oswyn is at his junction; the contacts return observation through prior-service reciprocity; the tether carries load without being named"
       opposing_force: "the load the tether is already carrying — each node (Jarvis as structural conduit, Oswyn as unknowing coordinate, three ward contacts operating through service debt) is doing work Taylor did not fully design; the tether functions beyond any single operational choice"
@@ -73,7 +80,9 @@ scenes:
             conduit (packet taken without ceremony), Oswyn as unknowing ward-junction baseline
             (operational without contact), ward contacts feeding back through prior-service
             reciprocity (not design). Crystallization is not a formalization event — it is the
-            tether operating at the load that formalization confirmed at c10.
+            tether operating at the load that formalization confirmed at c10. The wool-dyer
+            identity withhold is a discrete physical act (hand pauses over source field, writes
+            lane-pattern, lifts) — enacted as substrate discipline, not deliberated as a breach.
       axes_held:
         - axis: social_tether-antag
           rationale: "Jarvis channel operates but no new Otto leverage event in this scene; antag-axis advances belong to s02 and s03; holds at rank 5"
@@ -92,6 +101,8 @@ scenes:
           rationale: "ward circuit is consolidation; no new recognition event; legibility holds at rank 5.5"
         - axis: political_register-prot
           rationale: "no court-tier content in this circuit; resentment does not advance; holds at rank 3.5"
+        - axis: position-prot-rise
+          rationale: "rise-phase peak confirmed at d10; no further delta this chapter; the arrangement-as-cover events are downstream of the already-established position, not new position-movement"
       density_target: 0.60-0.75
 
   - slug: b01c11s02
@@ -134,11 +145,20 @@ scenes:
       merchant has done this twice before at the same interval between receipt and burn, which
       means the instruction predates the current interruption. [mechanism:
       burn-as-standing-black-faction-protocol-not-improvised-response] [image:
-      burn-timing-as-evidence-of-standing-protocol] Taylor timestamps the observation and
-      holds it in the internal record. [force: taylor-withholds-rhaenyra-signal-from-jarvis]
+      burn-timing-as-evidence-of-standing-protocol]
+
+      Taylor timestamps the observation and holds it in the internal record. [force:
+      taylor-withholds-rhaenyra-signal-from-jarvis] [event:
+      dragonstone-distance-irony-weight-felt-at-timestamp] The thread Taylor's architecture
+      cut has been noticed at Dragonstone before Taylor has processed what it means that
+      Dragonstone noticed. Whatever moves on the Rhaenyra side of the logistics gap is moving
+      without a signal returning to King's Landing — and that absence is not a gap in Taylor's
+      coverage, it is the gap the cut created. [image:
+      war-pressure-weight-of-absent-signal-as-single-felt-register] Taylor files it and
+      moves. [mechanism: threat-weight-registered-in-taylor-pov-not-processed-as-exposition]
     scene_conflict:
       protagonist_force: "Taylor's feed-reading discipline — the merchant is in coverage; the burn is a thermal event the feed returns; the pattern-analysis runs on what the feed gives"
-      opposing_force: "the message burn as intelligence signal — the burn confirms Dragonstone-awareness of the cut thread; what Taylor has observed is the first Rhaenyra-pressure signal the coverage grid has returned; routable content she does not route"
+      opposing_force: "the message burn as intelligence signal — the burn confirms Dragonstone-awareness of the cut thread; what Taylor has observed is the first Rhaenyra-pressure signal the coverage grid has returned; routable content she does not route; the weight of what the cut thread implies for the war-state arrives before Taylor can process it"
       stakes_axis: political_register-world
     substance_delta:
       axes_in_motion:
@@ -154,17 +174,22 @@ scenes:
             consequence visible in the coverage grid. Taylor observes this as world-state through
             the feed; she does not route it. The Dragonstone-distance irony is in view: the
             courier thread Taylor's architecture cut has been noticed at Dragonstone before
-            Taylor has processed what that means operationally. political_register-world ticks up.
+            Taylor has processed what that means operationally. The threat-flicker (what the
+            absent signal implies for war-pressure) lands as a single felt register in Taylor's
+            POV — not processed as exposition, filed and moved from. political_register-world ticks up.
         - axis: social_tether-antag
           direction: up
           target_delta_magnitude: 0.5
           cost_ledger_anchor: cl-antag-d10
           notes: |
-            cl-antag-d10 first tranche this chapter (+0.5 of +1.0). Taylor withholds the
-            Rhaenyra-pressure signal from Jarvis — a second consecutive withheld observation
-            following the wool-dyer identity from s01. Substrate split now covers two distinct
-            categories. Otto's structural leverage advances because what Taylor withholds is
-            becoming more consequential; non-extractable confirmation in progress.
+            cl-antag-d10 FIRST TRANCHE this chapter (+0.5 of +1.0 chapter total; accumulated-partial).
+            Taylor withholds the Rhaenyra-pressure signal from Jarvis — a second consecutive
+            withheld observation following the wool-dyer identity from s01. Substrate split now
+            covers two distinct categories. This is accumulated-partial substrate-split accrual:
+            the cl-antag-d10 gain is a substrate-accumulation advance toward Otto's structural
+            leverage; Otto is not on-page in this scene; the leverage advances because the withheld
+            category-count is widening, not because Otto has demonstrated or completed any leverage
+            act. Non-extractable confirmation in progress.
       axes_held:
         - axis: social_tether-prot-rise
           rationale: "no new patron-adjacent node event in this scene; tether holds at rank 7.5 after s01 advance"
@@ -176,6 +201,8 @@ scenes:
           rationale: "the Dragonstone-awareness signal is world-state observation through the feed; produces no new contempt-register color this scene — that processing belongs to b01c13; holds at rank 3.5"
         - axis: moral_legibility_to_self
           rationale: "Taylor reads the burn, classifies it, withholds it; no recognition event; legibility holds at rank 5.5"
+        - axis: position-prot-rise
+          rationale: "rise-phase peak confirmed at d10; no further delta this chapter; the arrangement-as-cover events are downstream of the already-established position, not new position-movement"
       density_target: 0.65-0.80
 
   - slug: b01c11s03
@@ -183,43 +210,39 @@ scenes:
     status: scened
     pov_narrator: taylor-hebert-kl-122ac
     chunk: |
-      By midday Taylor has two observations in her internal record that will not be in the
-      next Jarvis packet. [event: two-withheld-observations-in-succession-in-internal-record]
-      The wool-dyer's identity from the morning circuit. [force:
-      first-withheld-observation-ward-contact-identity] The cloth merchant's burn from the
-      south-lane circuit. [force: second-withheld-observation-rhaenyra-signal] Neither entry
-      came from a deliberated decision. The wool-dyer is a contact, not a channel
-      deliverable. The merchant's burn is observation-class content the Jarvis channel has
-      not been briefed to receive. [mechanism:
-      substrate-discipline-produces-two-withholds-without-named-decision] The Jarvis packet
-      will receive the cart-timing change sourced to the lane-pattern, not the dyer. The
-      Jarvis packet will not receive the burn. [image:
-      jarvis-packet-on-station-surface-holds-what-it-holds]
+      A ward contact returns at the early-afternoon mark — one of the warden's-precinct
+      informants, the woman who works the lower Hook's soap-rendering lane and whose eyes
+      track movement at the lane-mouth the way someone trained to it would track movement.
+      [event: ward-contact-returns-with-actionable-observation] She brings word of a
+      household receiving nighttime visitors through the back-alley access — not the same
+      household as the blocked-drain matter, a different address, a different access pattern.
+      [image: soap-lane-contact-with-nighttime-visitor-report] The observation is
+      route-ready: the kind of information Taylor would put into the Jarvis packet sourced
+      to the precinct pattern.
 
-      What the arrangement provides this morning: the Otto cover is operational. [event:
-      otto-arrangement-functioning-as-institutional-cover] When the ward-elder at the
-      grain-measures corner sees Taylor leave a lane she has no ordinary business in, the
-      ward-elder's accounting for Taylor's presence is the woman who does useful things in
-      the ward, operating in her range. [mechanism:
-      arrangement-as-cover-through-ward-legibility] When the warden's wife at the lower
-      Hook precinct asks who Taylor answers to, she is using a frame that does not fit:
-      there is no visible patron above Taylor the warden's wife can trace, which is what
-      the arrangement produces. [force: arrangement-as-cover-against-patron-framing] The
-      cover holds. The withheld observations are inside the cover without the cover knowing
-      what it contains. [image: cover-as-architecture-that-does-not-know-its-contents]
+      Six weeks ago Taylor would have run the compound-corruption mechanism against this
+      observation first. [event: halvard-mechanism-not-reached-for-at-routing-decision]
+      The Halvard argument built a slot in Taylor's operational sequence: take the contact's
+      observation, hold it against the corruption frame — feel where the counter held and
+      where the argument held back, keep both accountings before routing. [mechanism:
+      halvard-argument-as-operational-slot-formerly-present-in-sequence] Taylor reaches
+      the routing decision. [force: halvard-slot-absent-from-operational-sequence] The slot
+      is not there. She does not reach for it and find it missing — she simply routes. The
+      contact's observation goes into the packet sourced to the precinct pattern. The
+      nighttime-visitor address is a deliverable. The contact's name stays in the internal
+      record. [image: routing-decision-completes-without-halvard-slot-as-behavioral-fact]
+      [mechanism: halvard-argument-inactive-in-taylors-operational-register-not-refuted]
 
-      Halvard's argument has not returned to Taylor in the normal circuit-thinking. [force:
-      halvard-argument-thinning-in-engagement] Six weeks ago she would have run the
-      compound-corruption mechanism against the wool-dyer contact — felt the place where
-      her counter held and the place where the argument held back, kept both accountings in
-      parallel. [image: halvard-argument-as-mechanism-formerly-activated-against-each-decision]
-      She does not do that today. The argument is not defeated — she has not found a flaw in
-      its internal structure. It has simply stopped being the instrument she reaches for when
-      the circuit produces an operational judgment. [mechanism:
-      halvard-argument-inactive-in-taylors-operational-register-not-refuted]
+      The argument is not defeated. Taylor has not found a flaw in its internal structure.
+      [force: halvard-argument-thinning-as-absence-not-refutation] It has stopped being the
+      instrument she reaches for when the circuit produces an operational judgment. That is
+      a different thing — and Taylor does not examine whether it is a better or worse thing,
+      because the packet needs the precinct-pattern sourcing completed and the afternoon
+      circuit is not finished. [image:
+      operational-momentum-carries-past-halvard-absence-without-examination]
     scene_conflict:
-      protagonist_force: "Taylor's operational discipline — two withheld observations filed by standard substrate practice; the arrangement provides cover; the accounting closes without laboring over either withhold or the Halvard argument"
-      opposing_force: "the pattern of two simultaneous withholds and the Halvard argument's thinning — both are structural facts before Taylor names them; the cover does not know what it is covering; the reader can see the shape Taylor is not looking at"
+      protagonist_force: "Taylor's operational momentum — the contact's observation is route-ready; the routing decision runs; the packet gets the precinct-pattern sourcing; the circuit does not pause"
+      opposing_force: "the Halvard slot's absence — Taylor reaches the routing decision and the compound-corruption mechanism is simply not in the sequence; the reader can see the shape of what is missing even as Taylor moves past it; the withhold of the contact's name completes without the counter-pressure that shaped the prior five weeks of circuit-work"
       stakes_axis: social_tether-antag
     substance_delta:
       axes_in_motion:
@@ -228,30 +251,37 @@ scenes:
           target_delta_magnitude: 0.5
           cost_ledger_anchor: cl-antag-d10
           notes: |
-            cl-antag-d10 second tranche this chapter (+0.5 of +1.0, completing chapter +1.0
-            total). The withholding pattern across two consecutive observations is now
-            structural: Taylor maintains a substrate split covering two distinct categories of
-            withheld intelligence. Otto's leverage advances in proportion to the
-            withheld-category accumulation. Non-extractable confirmation in progress.
+            cl-antag-d10 SECOND TRANCHE this chapter (+0.5 of +1.0, completing chapter +1.0
+            total; accumulated-partial). The withholding pattern across consecutive observations
+            is now structural and the Halvard check — the only internal mechanism that was
+            testing the substrate discipline's legitimacy — is absent from the operational
+            sequence. The ward-contact routing event dramatizes this in action: Taylor reaches
+            the slot and the slot is not there; she routes without the compound-corruption test.
+            Otto's leverage accumulates because the internal check is gone from the sequence,
+            not because Otto has demonstrated leverage — this is substrate-accumulation advance,
+            accumulated-partial, non-extractable confirmation in progress.
       axes_held:
         - axis: social_tether-prot-rise
-          rationale: "the arrangement-as-cover event is operational continuity of an existing structure, not a new tether node; tether holds at rank 7.5"
+          rationale: "the arrangement-as-cover is operational continuity of an existing structure, not a new tether node; tether holds at rank 7.5"
         - axis: political_register-world
           rationale: "world-axis advance completed at s02; no additional Green succession-channel event this scene; holds at rank 6.5"
         - axis: moral_framework
-          rationale: "the two withholds are not entered in Taylor's ledger as breaches; the Halvard argument thinning is not a new licensed exception; holds at rank -1"
+          rationale: "the routing decision does not enter Taylor's ledger as a breach; the Halvard thinning is not a named licensed exception; holds at rank -1"
         - axis: relational_anchor_status
           rationale: "Wren is not in the operational-pattern content; anchor holds at rank 3.5"
         - axis: moral_legibility_to_self
           rationale: |
-            The two withholds and the Halvard thinning are structural facts before Taylor names
-            them; no recognition event fires; legibility holds at rank 5.5.
+            The Halvard slot's absence is a behavioral fact Taylor does not examine — she routes
+            and the circuit continues; no recognition event fires; legibility holds at rank 5.5.
             HARD PARKING-LOT RESOLUTION (pl-2026-06-02-stitch-thread-001 / hook-0007 / Halvard):
             FORECLOSE-designated at c13 (DEC-0071). Thinning enacted in this scene (argument
-            inactive in operational register, not refuted). Foreclosure-as-axis-event lands at
-            b01c13 (contempt-articulation). Status: foreclosed-at-c13; thinning carried as handoff.
+            inactive in operational register, not refuted; dramatized as absent slot at routing
+            decision). Foreclosure-as-axis-event lands at b01c13 (contempt-articulation).
+            Status: foreclosed-at-c13; thinning carried as handoff.
         - axis: political_register-prot
           rationale: "the Halvard argument becoming inactive is a legibility-register event, not a contempt-register event; the thinning does not advance contempt toward its d09 articulation this chapter; holds at rank 3.5"
+        - axis: position-prot-rise
+          rationale: "rise-phase peak confirmed at d10; no further delta this chapter; the arrangement-as-cover events are downstream of the already-established position, not new position-movement"
       density_target: 0.60-0.75
 
   - slug: b01c11s04
@@ -260,34 +290,43 @@ scenes:
     pov_narrator: taylor-hebert-kl-122ac
     chunk: |
       Taylor closes the evening circuit at the feed-station and runs the count. [event:
-      evening-accounting-runs-full-tether-count] The Jarvis packet is sealed. [image:
-      sealed-packet-as-tether-crystallization-marker] The internal record is current: the
-      cloth merchant's burn timestamped and filed; the wool-dyer's identity held under the
-      pattern-layer; Wren's daily route indexed in the coverage geometry as it has been
-      indexed for three months. [force: all-load-bearing-nodes-in-taylors-single-count]
+      evening-accounting-runs-full-tether-count] The count runs in the order the circuit
+      ran it: Jarvis first. [image: jarvis-packet-sealed-and-set-in-count-sequence] The
+      packet is sealed. The Jarvis channel returned everything it was given and carried it
+      upward without ceremony, which is the only way the channel functions. That entry closes.
+      [mechanism: jarvis-as-structural-conduit-confirmed-in-motion-not-catalog]
 
-      What the count returns: Jarvis as the channel that routes everything going upward.
-      [event: jarvis-as-structural-channel-confirmed-in-count] Oswyn as the ward-node whose
-      junction presence calibrates the ward's social temperature. [event:
-      oswyn-as-unknowing-baseline-confirmed-in-count] The contacts who brought observations
-      back this week because Taylor had done useful things for them — each one feeding the
-      coverage grid denser without knowing they are in it. [event:
-      ward-contacts-load-bearing-confirmed-in-count] The arrangement covering Taylor's
-      presence in the ward through the legibility she built before the arrangement existed,
-      making the whole structure sustainable without appearing in any accounting the ward
-      holds. [event: otto-arrangement-as-cover-confirmed-in-count] [mechanism:
-      tether-crystallization-as-simultaneous-load-across-all-four-nodes] [force:
-      all-four-tether-nodes-simultaneously-load-bearing] [image:
-      full-tether-count-as-chapter-close-image]
+      Oswyn second. [event: oswyn-ward-node-confirmed-in-count-sequence] The junction
+      presence today was calibration-clean — the weight dispute resolved before it became a
+      Watch matter, the ward's social temperature holding at the baseline the feed has
+      indexed across a hundred prior circuits. Taylor did not contact him. The circuit does
+      not require contact when the baseline holds. That entry closes. [image:
+      oswyn-at-junction-as-ward-temperature-marker-closing-in-count]
 
-      Taylor files the count under operational state. Two withheld observations in the
-      internal record, not in the packet. [event:
+      The contacts third. [event: ward-contacts-confirmed-in-count-sequence] The
+      warden's-precinct informant. The soap-lane woman who brought the nighttime-visitor
+      report. The wool-dyer two days prior. Each one returned observation through the prior-
+      service debt that Taylor did not design but did not stop accruing. Each observation
+      routed to the packet — sourced to the pattern, not the person. Each name in the
+      internal record. That entry closes. [mechanism:
+      contacts-confirmed-as-load-bearing-nodes-through-service-reciprocity-in-motion]
+
+      The arrangement last. [event: otto-arrangement-confirmed-in-count-sequence] The
+      cover held today the way it held yesterday: the ward-elder's accounting for Taylor's
+      presence was the woman who does useful things in the ward, operating in her range.
+      No patron visible above her. No structure traceable behind her. The cover does not
+      know what it contains. That entry closes. [force:
+      all-four-tether-nodes-simultaneously-load-bearing] [mechanism:
+      tether-crystallization-as-simultaneous-load-across-all-four-nodes]
+
+      Two withheld observations in the internal record, not in the packet. [event:
       two-withheld-observations-in-internal-record-at-chapter-close] Neither substrate
       knows what the other is not receiving. [mechanism:
-      substrate-split-makes-withholding-invisible-as-chapter-close] The stylus goes down.
-      [image: stylus-down-as-chapter-close]
+      substrate-split-makes-withholding-invisible-as-chapter-close] [image:
+      full-tether-count-as-chapter-close-image] The stylus goes down. [image:
+      stylus-down-as-chapter-close]
     scene_conflict:
-      protagonist_force: "Taylor's end-of-day accounting discipline — the nodes are all in the count; the packet is sealed; the internal record is current; the accounting closes without labeling any entry as a withholding act"
+      protagonist_force: "Taylor's end-of-day accounting discipline — each node confirmed in sequence as the count runs; the packet is sealed; the internal record is current; the accounting closes without labeling any entry as a withholding act"
       opposing_force: "the completed count as a shape — all four tether nodes load-bearing simultaneously, the arrangement as institutional cover for the other three, the two withheld observations in the internal record: the Dragonstone-distance irony in view at chapter close; the tether at full load and the withholding pattern both present in the same evening accounting"
       stakes_axis: social_tether-prot-rise
     substance_delta:
@@ -299,10 +338,11 @@ scenes:
           notes: |
             cl03b second tranche this chapter (+0.5 of +1.0, completing chapter total).
             social_tether-prot-rise -> rank 8, near-peak confirmed. Crystallization completes at
-            chapter close: all four nodes visible simultaneously in Taylor's evening count.
-            Taylor files it as operational state without naming it as a peak. cl03b future-cost
-            collateral note: rank 8 is the full cl03b gain; the -7 at cl07a begins at d10+
-            (collapse phase not yet open this chapter).
+            chapter close: all four nodes confirmed in Taylor's evening count as the count runs
+            — each node closing in sequence, not enumerated as a catalog. Taylor files it as
+            operational state without naming it as a peak. cl03b future-cost collateral note:
+            rank 8 is the full cl03b gain; the -7 at cl07a begins at d10+ (collapse phase not
+            yet open this chapter).
       axes_held:
         - axis: social_tether-antag
           rationale: "evening accounting makes the withholding pattern visible but Otto is not on-page; no new leverage event; holds at rank 6 after s02 and s03 advances. NOTE: pl-2026-06-02-002 (cl-antag-d10 journey-required cl04 dependency) remains open; this chapter's +1.0 total advances the partial-settle but the cl04 relational_anchor_status non-extractable component remains in-progress per chapter contract"
@@ -316,4 +356,6 @@ scenes:
           rationale: "the count closes with all nodes enumerated and neither the withholding pattern nor the protection logic named on-page; no recognition event; legibility holds at rank 5.5"
         - axis: political_register-prot
           rationale: "no court-tier content in evening accounting; resentment does not advance; holds at rank 3.5"
+        - axis: position-prot-rise
+          rationale: "rise-phase peak confirmed at d10; no further delta this chapter; the arrangement-as-cover events are downstream of the already-established position, not new position-movement"
       density_target: 0.65-0.80

@@ -6683,7 +6683,7 @@ books:
               omission_rationale: The two-bone split (n06 = ledger closes; n08 = face persists) is the enacted form of the opposing force. The surplus of n08 over n06 is the scene's argument.
 
       - slug: b01c11
-        status: planned
+        status: scened
         chunk: |
           The consequences of formalization arrive. Taylor's social_tether-prot-rise
           crystallizes at its near-peak: she now has active relationships with Jarvis as
