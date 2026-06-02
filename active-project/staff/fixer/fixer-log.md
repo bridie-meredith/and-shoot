@@ -1,3 +1,32 @@
+## SESSION-START — 2026-06-02T10:00:00Z — and-facets-b01c10-cycle2-fixes
+dispatch: /and-facets b01c10 Phase 5b cycle-2 remediation — 3 REVISE callouts: sensory:7 @25 old-state unanchored (Fix 1); mem:2 @24 doubled closing-simile (Fix 2); narrator:7 @16 inert spine-provision (Fix 3)
+target: active-project/theater/facets/sensory-b01-c10.md, active-project/theater/facets/memory-b01-c10.md, active-project/theater/facets/interest-narrator-b01-c10.md
+audit-report: inline from Phase 5b cycle-2 callouts
+findings-queued: 3
+
+## fix-1-sensory7 — RESOLVED — 2026-06-02T11:10:00Z
+fault: sensory:7 @25 old-state "ledger-accounting-writing-sound" unanchored — traced to neither cited anchor; writing-sound ambient never established; loc-state:7@20/loc-state:8@23 name scene-D baseline as "still air, day's-end quiet"
+scope: line
+change: old-state reframed to "end-of-day-station-quiet" (anchors verbatim to loc-state:7 @20 "still air, day's-end quiet"); new-state "ledger-cover-close"; modality sound; tag spike (cover closing is discrete transient audible event into established quiet); applied by prior session (10:00Z), confirmed in place this session
+criteria met: yes — old-state traces verbatim to loc-state:7 @20 baseline; unanchored-old-state HARD cleared; rubric-sensory.md modality-inflection ACCEPT signature satisfied; ID/anchor/@25/tag preserved
+
+## fix-2-mem2 — RESOLVED — 2026-06-02T11:11:00Z
+fault: mem:2 @24 used "X closing the way Y closed" simile structure — mechanical doubling with narrator:8 @24's "corridor closing behind him the way the channel closed over the entry"; three versions of comparison stacking at @24
+scope: line
+change: mem:2 text reworded from closing-simile construction to continuation/accumulation construction: "the crossing is one more entry in the months of him she has held in the record without his leave, the architecture that does this to bodies it never asked doing it again in her hand"; override-architecture displacement semantics preserved; Khepri-ABSENT fence held; "bodies it never asked" / unconsented-instrumentation meaning preserved; target-reference cond-override-architecture-residue-122ac unchanged; applied by prior session (10:00Z), confirmed in place this session
+criteria met: yes — closing-simile structural rhyme with narrator:8 broken; narrator:8 @24 left AS-IS (single closing-simile at @24); override-architecture semantics intact; Khepri-ABSENT fence held; ID/anchor/@24/target-reference unchanged
+
+## fix-3-narrator7 — RESOLVED — 2026-06-02T11:15:00Z
+fault: narrator:7 @16 "tactically inert" — cape-fic-reader; existed only to satisfy mem:1 NI-spine, not as earned attention-landing; "the stone-post is the mechanism" names mechanism without naming mechanism OF; circuit-accounting register rather than apparatus-geometry recognition
+scope: line
+change: narrator:7 reworded from "the side-exit is the gap in the circuit geometry that accounts for the missing mark — one body leaves the lower-gate road without leaving the road, and the stone-post is the mechanism; she files the fixture as the board-state item that closes the deviation's open question" to "the stone-post marks the geometry by which a body leaves the lower-gate road without the road registering a departure — the errand-corridor as a channel the circuit does not count; she files the fixture at the board-state cost the morning has just confirmed"; apparatus-geometry-that-empties-a-corridor concrete (disappearance-machinery recognition); information-asymmetry named ("channel the circuit does not count"); board-state content concrete (she files, she prices); mem:1 @16 NI-spine intact with earned weight; ID/anchor/@16 unchanged; narrator count 7 unchanged; @24 closing-simile structure absent; Khepri-ABSENT fence held
+criteria met: yes — genuine attention-landing on @16 beat; apparatus-geometry recognition concrete; information-asymmetry / board-state / what her attention does here present; mem:1 spine intact; NI 7 fires unchanged; no @24 closing-simile re-creation; Khepri-ABSENT fence held
+
+## SESSION-END — 2026-06-02T11:16:00Z — and-facets-b01c10-cycle2-fixes
+findings-applied: 3 (Fix 1 confirmed-in-place from prior session; Fix 2 confirmed-in-place from prior session; Fix 3 applied this session)
+findings-skipped: 0
+exit: CLEAN
+
 ## SESSION-START — 2026-06-02T00:00:00Z — write-b01c10-phase6-bone-gate-cycle1
 dispatch: /and-write b01c10 Phase 6 bone-gate cycle-1 fix — 4 HARD HELD-AXIS-NOT-WITNESSED (9 axes_held additions to 8 named bones) + 2 SIGNAL remediations (3 SVO object swaps)
 target: active-project/staff/showrunner/b01c10-bones-draft.md

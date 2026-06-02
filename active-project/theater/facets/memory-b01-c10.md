@@ -18,7 +18,7 @@ note: terminal @27 deliberately SILENT — suppressed-recognition; no recognitio
 
 1 @16 the side-exit keeps the shape of how a machinery this old empties a corridor of one body and leaves the stone unmarked -> cond-kl-witch-label-formation-122ac
 
-2 @24 the crossing is one entry in the months of him she kept without his leave, the record closing the same way the old architecture closed around bodies it never asked -> cond-override-architecture-residue-122ac
+2 @24 the crossing is one more entry in the months of him she has held in the record without his leave, the architecture that does this to bodies it never asked doing it again in her hand -> cond-override-architecture-residue-122ac
 
 ---
 ## File-shape pass

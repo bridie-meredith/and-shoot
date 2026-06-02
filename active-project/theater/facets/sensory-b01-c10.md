@@ -61,7 +61,7 @@ generated: 2026-06-02
 6 @22 tactile: wrist-above-station-surface -> stone-cold-firm-under-wrist # tag: down
 # grounding-ADD (scene-D W4 anchor, named in brief; BONES-AIRLESS-RISK licensed)
 
-7 @25 sound: ledger-accounting-writing-sound -> silence-on-ledger-close # tag: drop
+7 @25 sound: end-of-day-station-quiet -> ledger-cover-close # tag: spike
 
 ---
 
@@ -109,11 +109,11 @@ per-scene cap:
   stone accounting surface is the tactile old-state; @22 is the stone-cold firming under the
   wrist at the accounting act). No prior tactile fire in c10; c09 sensory:3 @27 was
   wax-set-firm (different prop/location).
-- sensory:7 @25 ledger-accounting-writing-sound: anchors sensory:2 @10 (sound:up, writing-onset
-  at channel) as the prior sound fire establishing the modality's active register, PLUS
-  loc-state:8 @23 (station mid-accounting, ledger open mid-entry; the accounting session's
-  writing sound is the implied ambient at the ledger surface). @25 is the close: the ledger
-  shuts, the writing sound stops.
+- sensory:7 @25 end-of-day-station-quiet: anchors loc-state:7 @20 (scene-D feed-station
+  baseline; "indoor station surface, still air, day's-end quiet" — the established quiet
+  of the end-of-day station is the old-state; the ledger cover closing is a discrete
+  audible spike into that quiet). @25 is the cover-close event: a transient discrete sound
+  against the day's-end quiet, not a sustained writing-sound extinguishment.
 
 ## Per-entry rubric notes
 
@@ -238,26 +238,26 @@ per-scene cap:
 - Inflection-not-sustained: @22 is the contact-onset; the stone-cold persists as a
   sustained register through the accounting session.
 
-### sensory:7 @25 — sound: ledger-accounting-writing-sound -> silence-on-ledger-close
-(no carve-out — standard inflection-pair completion)
+### sensory:7 @25 — sound: end-of-day-station-quiet -> ledger-cover-close
+(no carve-out — standard discrete-event spike into established quiet)
 
-- Modality-inflection: sound drop. @25 is "taylor closes the ledger." The accounting
-  session's writing sound (established during the scene-D accounting act) stops at the
-  ledger-close — a discrete audible event (the cover falling shut) that returns the
-  station to silence.
-- Disambiguation: "closes" is a bare verb; it does not self-carry the sound-stop register
-  of the ledger closing. The flag names the perceptual event: writing-sound extinguished
-  by the cover-close.
-- Magnitude: a ledger closing in end-of-day quiet (loc-state:7: "still air, day's-end
-  quiet") is a perceptible discrete sound event followed by the return of quiet;
-  audience-experiential-scale.
-- Inflection-pair: completes the sound arc with sensory:2 @10 (writing-onset); the pair
-  brackets the channel-to-ledger writing sequence across the chapter.
-- Old-state: ledger-accounting-writing-sound — anchors to sensory:2 @10 (prior sound fire,
-  writing-onset register) PLUS loc-state:8 @23 (station mid-accounting; writing implied as
-  the ongoing accounting-session ambient). No contradiction.
-- Inflection-not-sustained: @25 is the stop-point; the silence that follows is the
-  chapter's closing register.
+- Modality-inflection: sound spike. @25 is "taylor closes the ledger." The ledger cover
+  closing is a discrete transient audible event against the established end-of-day station
+  quiet (loc-state:7 @20: "still air, day's-end quiet"). The spike is the cover-close
+  sound; the quiet resumes after.
+- Disambiguation: "closes" is a bare verb; it does not self-carry the audible register of
+  a ledger cover falling shut. The flag names the discrete perceptual spike: cover-close
+  impact against the station quiet.
+- Magnitude: a ledger cover closing in end-of-day station quiet is a recognizable discrete
+  percussive event — audience-experiential-scale. The established quiet of the scene-D
+  baseline makes the cover-close perceptible as a spike.
+- Old-state: end-of-day-station-quiet — anchors directly to loc-state:7 @20 (scene-D
+  baseline; "indoor station surface, still air, day's-end quiet"). No prior sound fire
+  in scene-D; sensory:2 @10 was in scene-B (morning, writing-onset on channel surface) —
+  a different location and moment, not the operative old-state here.
+- Inflection-not-sustained: @25 is the transient cover-close spike; the quiet resumes
+  after as the chapter's closing register. Tag: spike (not drop — the old-state quiet
+  is what resumes; the cover-close is the transient departure).
 - Scene-D brief: "do not over-fire scene-D into the terminal beat" — 2 fires total in
   scene-D (@22 + @25); @27 terminal bone (corwick squares the feed-record) is interior/
   feed-register, not a sensory inflection; correctly left unfired.
