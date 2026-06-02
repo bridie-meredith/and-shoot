@@ -1,4 +1,8 @@
 # source: taylor-hebert-kl-122ac-b01-c10
+# R2 graph-aware feeling judge (taylor slice) — 2026-06-02
+# cite_index_hash: f0fe62ec02a561fa69d8587b2d2be0f1c0e0d841
+# R2 verdicts: feel:1 @10 KEEP / feel:2 @27 KEEP. 0 DELETE, 0 ADD. Sparsity held at 7.4% (2 fires / 27 beats).
+# NI-anti-duplication: @10 PASS (somatic breath-register distinct from narrator:3 cognitive cost-accounting); @27 PASS (Taylor-gaze body-subject distinct from narrator:6 record-datum-persistence + ledger-silence cognition). Both fences held. Sparsity-overage taste call documented in r2-decision-shard-taylor-hebert-kl-122ac.md.
 
 1 @10 taylor-hebert-kl-122ac: her breath shortens once over the body-map before her hands move to the channel | expressed: no
 
