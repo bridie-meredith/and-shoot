@@ -13,7 +13,7 @@
 13 the insect-feed returns the thermal-shift
 14 the insect-feed carries the smoke-curl
 15 the cloth-merchant squares the bolt-ticket
-16 taylor-hebert-kl-122ac marks the timestamp [feel:1]
+16 taylor-hebert-kl-122ac marks the timestamp
 17 the soap-lane-contact crosses the cross-lane
 18 the soap-lane-contact delivers the nighttime-visitor report
 19 taylor-hebert-kl-122ac opens the packet
@@ -24,4 +24,4 @@
 24 taylor-hebert-kl-122ac closes the Oswyn entry
 25 taylor-hebert-kl-122ac closes the contacts entry
 26 taylor-hebert-kl-122ac closes the arrangement entry
-27 taylor-hebert-kl-122ac sets the stylus down
+27 taylor-hebert-kl-122ac sets the stylus down [feel:1]

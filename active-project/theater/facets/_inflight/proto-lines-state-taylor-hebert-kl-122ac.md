@@ -13,15 +13,15 @@
 13 the insect-feed returns the thermal-shift
 14 the insect-feed carries the smoke-curl
 15 the cloth-merchant squares the bolt-ticket
-16 taylor-hebert-kl-122ac marks the timestamp [state:2]
+16 taylor-hebert-kl-122ac marks the timestamp [state:2][state:3]
 17 the soap-lane-contact crosses the cross-lane
 18 the soap-lane-contact delivers the nighttime-visitor report
 19 taylor-hebert-kl-122ac opens the packet
-20 taylor-hebert-kl-122ac writes the precinct-pattern sourcing [state:3]
+20 taylor-hebert-kl-122ac writes the precinct-pattern sourcing [state:4]
 21 taylor-hebert-kl-122ac seals the packet
 22 taylor-hebert-kl-122ac enters the feed-station
 23 taylor-hebert-kl-122ac closes the Jarvis entry
 24 taylor-hebert-kl-122ac closes the Oswyn entry
-25 taylor-hebert-kl-122ac closes the contacts entry [state:4]
+25 taylor-hebert-kl-122ac closes the contacts entry [state:5]
 26 taylor-hebert-kl-122ac closes the arrangement entry
 27 taylor-hebert-kl-122ac sets the stylus down
