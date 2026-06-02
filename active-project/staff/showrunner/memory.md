@@ -5729,7 +5729,7 @@ books:
             - "KL 122 AC; arrangement formalized; Green faction position advances; Black-faction logistics thread actively foreclosed"
             - "position-world rank 7; political_register-world rank 6"
           character_state:
-            - "Taylor: position-prot-rise rank 4.5 (approaching peak); social_tether-prot-rise rank 4; social_tether-antag rank 5 (structural; aggregate 3.5 + chapter +1.5 = 5.0, dramatist fix); moral_framework rank -1 (systematic-override entered); moral_legibility rank 5.5 (crack); position-world advancing"
+            - "Taylor: position-prot-rise rank 4 (rise-phase; aggregate 3 + chapter +1.0 = 4; peak ~7 at d07; Phase-5 continuity fix from stale 4.5); social_tether-prot-rise rank 7 (aggregate 6 + chapter +1.0 = 7; Phase-5 continuity fix from stale 4); social_tether-antag rank 5 (structural; aggregate 3.5 + chapter +1.5 = 5.0, dramatist fix); moral_framework rank -1 (systematic-override entered); moral_legibility rank 5.5 (crack); position-world rank 7"
             - "courier-figure: detained; ledger entry closed on a named person; face to the cost"
             - "Otto: leverage structural post-formalization"
           target_chapter: b01c11
