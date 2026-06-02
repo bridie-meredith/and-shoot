@@ -6683,7 +6683,17 @@ books:
               omission_rationale: The two-bone split (n06 = ledger closes; n08 = face persists) is the enacted form of the opposing force. The surplus of n08 over n06 is the scene's argument.
 
       - slug: b01c11
-        status: scened
+        status: bones-written
+        bones_file: theater/bones/b01-c11.md
+        bones_count: 27
+        substance_bone_gate_verdict: PASS
+        substance_delta_measured:
+          axes_moved:
+            social_tether-prot-rise: "+1.0 (flat 6 +0.5 + flat 25 +0.5)"
+            social_tether-antag: "+1.0 (flat 16 +0.5 + flat 20 +0.5)"
+            political_register-world: "+0.5 (flat 11 +0.5)"
+          density_measured: "0 chatter / 27 (fully structural — 5 moving + 22 held)"
+          felt_verdict: SUBSTANCE-FELT-3-of-3
         chunk: |
           The consequences of formalization arrive. Taylor's social_tether-prot-rise
           crystallizes at its near-peak: she now has active relationships with Jarvis as
@@ -6849,6 +6859,88 @@ books:
                 - axis: position-prot-rise
                   rationale: "rise-phase peak confirmed at d10; no further delta this chapter; the arrangement-as-cover events are downstream of the already-established position, not new position-movement"
             density_target: 0.60-0.75
+            # /and-write b01c11 Phase 7 emit 2026-06-02. Silent chapter (no dialogue-anchor bones). Bone-gate PASS: auditor 0 HARD / 2 ABSTRACTION-DOMINANT SIGNAL (s02,s03) accept-with-rationale -> /and-stitch P4; audience 3/3 SUBSTANCE-FELT all 4 scenes; Earth-Bet fence CLEAN; 27 KEEP/0 DELETE. Form-watch advisories (abstract-datum objects @4/@18; receives @12; marks @16 per b01c09 precedent) carried to stitch. chunk_cold_read SHIPPED-WITH-RISK-RECORDED (DEC-0072) arms /and-stitch P8.5+P9.
+            bones:
+              - slug: b01c11s01n01
+                flat_id: 1
+                svo: "jarvis-coin-kl-courier takes the packet"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-rise
+                      rationale: "channel operating at load — tether-weight shown via node action"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s01n02
+                flat_id: 2
+                svo: "jarvis-coin-kl-courier folds the covering-sheet"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-rise
+                      rationale: "ceremony-free fold-and-gone — tether load accumulates without contact"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s01n03
+                flat_id: 3
+                svo: "oswyn-mudway-flea-bottom-elder presses the cart-frame"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-rise
+                      rationale: "Oswyn occupying ward-function at junction — tether node visible without contact"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s01n04
+                flat_id: 4
+                svo: "the wool-dyer returns the cart-timing observation"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-rise
+                      rationale: "unprompted debt-service return — tether circuit operating"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+                # form-watch advisory: abstract-datum object ("the cart-timing observation") — carried to /and-stitch P4
+              - slug: b01c11s01n05
+                flat_id: 5
+                svo: "taylor-hebert-kl-122ac sets the stylus to the source-field"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-antag
+                      rationale: "withhold initiated — discrete omission act; antag held flat"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s01n06
+                flat_id: 6
+                svo: "taylor-hebert-kl-122ac writes the lane-pattern"
+                substance_delta:
+                  axis_moves:
+                    - axis: social_tether-prot-rise
+                      direction: up
+                      magnitude: 0.5
+                  axes_held: []
+                cost_ledger_anchor: cl03b
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s01n07
+                flat_id: 7
+                svo: "taylor-hebert-kl-122ac lifts the stylus"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "withhold complete — wool-dyer name stays in internal record; omission closed as bodily fact"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
 
           - slug: b01c11s02
             seq: 2
@@ -6949,6 +7041,112 @@ books:
                 - axis: position-prot-rise
                   rationale: "rise-phase peak confirmed at d10; no further delta this chapter; the arrangement-as-cover events are downstream of the already-established position, not new position-movement"
             density_target: 0.65-0.80
+            # ABSTRACTION-DOMINANT SIGNAL accepted-with-rationale: grounding count 2 / threshold 3 — carried to /and-stitch Phase 4 for physical-materiality reinforcement.
+            bones:
+              - slug: b01c11s02n01
+                flat_id: 8
+                svo: "the cloth-merchant opens the back-worktable"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: political_register-world
+                      rationale: "merchant's bolt-count morning routine legible — world-state context before anomaly"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s02n02
+                flat_id: 9
+                svo: "the messenger crosses the shop-threshold"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-antag
+                      rationale: "off-hour visitor pattern — held in internal record; withheld-category accumulating"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s02n03
+                flat_id: 10
+                svo: "the cloth-merchant lifts the folded-paper"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: political_register-world
+                      rationale: "sealed-then-opened geometry in feed — world-state observation before central event"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s02n04
+                flat_id: 11
+                svo: "the cloth-merchant burns the paper"
+                substance_delta:
+                  axis_moves:
+                    - axis: political_register-world
+                      direction: up
+                      magnitude: 0.5
+                  axes_held: []
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s02n05
+                flat_id: 12
+                svo: "the iron-dish receives the ash"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: political_register-world
+                      rationale: "burn complete — physical closure of central event; dish is aftermath anchor"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+                # form-watch advisory: stative-adjacent ("receives") — carried to /and-stitch P4
+              - slug: b01c11s02n06
+                flat_id: 13
+                svo: "the insect-feed returns the thermal-shift"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-antag
+                      rationale: "biological relay confirms burn — thermal datum through insects in worktable ambient zone"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s02n07
+                flat_id: 14
+                svo: "the insect-feed carries the smoke-curl"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-antag
+                      rationale: "second relay datum — smoke-curl confirms completion; feed detection bandwidth shown"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s02n08
+                flat_id: 15
+                svo: "the cloth-merchant squares the bolt-ticket"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: political_register-world
+                      rationale: "merchant returns to routine — standing protocol complete; morning continues"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s02n09
+                flat_id: 16
+                svo: "taylor-hebert-kl-122ac marks the timestamp"
+                substance_delta:
+                  axis_moves:
+                    - axis: social_tether-antag
+                      direction: up
+                      magnitude: 0.5
+                  axes_held: []
+                cost_ledger_anchor: cl-antag-d10
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+                # form-watch advisory: instrument-class ("marks") — per b01c09 precedent; carried to /and-stitch P4
 
           - slug: b01c11s03
             seq: 3
@@ -7028,6 +7226,66 @@ books:
                 - axis: position-prot-rise
                   rationale: "rise-phase peak confirmed at d10; no further delta this chapter; the arrangement-as-cover events are downstream of the already-established position, not new position-movement"
             density_target: 0.60-0.75
+            # ABSTRACTION-DOMINANT SIGNAL accepted-with-rationale: grounding count 1 / threshold 2 — carried to /and-stitch Phase 4 for physical-materiality reinforcement.
+            bones:
+              - slug: b01c11s03n01
+                flat_id: 17
+                svo: "the soap-lane-contact crosses the cross-lane"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-antag
+                      rationale: "contact returns — route-ready observation incoming; antag-leverage node active"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s03n02
+                flat_id: 18
+                svo: "the soap-lane-contact delivers the nighttime-visitor report"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-antag
+                      rationale: "observation arrives — back-alley night-access household; route-ready datum"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+                # form-watch advisory: abstract-datum object ("the nighttime-visitor report") — carried to /and-stitch P4
+              - slug: b01c11s03n03
+                flat_id: 19
+                svo: "taylor-hebert-kl-122ac opens the packet"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-rise
+                      rationale: "routing decision begins — prepares to source observation to precinct-pattern"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s03n04
+                flat_id: 20
+                svo: "taylor-hebert-kl-122ac writes the precinct-pattern sourcing"
+                substance_delta:
+                  axis_moves:
+                    - axis: social_tether-antag
+                      direction: up
+                      magnitude: 0.5
+                  axes_held: []
+                cost_ledger_anchor: cl-antag-d10
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s03n05
+                flat_id: 21
+                svo: "taylor-hebert-kl-122ac seals the packet"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_legibility_to_self
+                      rationale: "Halvard-foreclose sealed into packet — argument not defeated, not reached for; packet closes before the question surfaces"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
 
           - slug: b01c11s04
             seq: 4
@@ -7104,6 +7362,76 @@ books:
                 - axis: position-prot-rise
                   rationale: "rise-phase peak confirmed at d10; no further delta this chapter; the arrangement-as-cover events are downstream of the already-established position, not new position-movement"
             density_target: 0.65-0.80
+            bones:
+              - slug: b01c11s04n01
+                flat_id: 22
+                svo: "taylor-hebert-kl-122ac enters the feed-station"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-rise
+                      rationale: "evening circuit at feed-station — accounting-in-motion opens"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s04n02
+                flat_id: 23
+                svo: "taylor-hebert-kl-122ac closes the Jarvis entry"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-rise
+                      rationale: "Jarvis arm: packet sealed / channel returned everything / carried upward; arm complete"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+                # s04n23-26 "closes the X entry" is intentional accounting-refrain — NOT mannerism
+              - slug: b01c11s04n03
+                flat_id: 24
+                svo: "taylor-hebert-kl-122ac closes the Oswyn entry"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-rise
+                      rationale: "Oswyn arm: junction clean / dispute below Watch threshold / ward baseline; arm complete"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s04n04
+                flat_id: 25
+                svo: "taylor-hebert-kl-122ac closes the contacts entry"
+                substance_delta:
+                  axis_moves:
+                    - axis: social_tether-prot-rise
+                      direction: up
+                      magnitude: 0.5
+                  axes_held: []
+                cost_ledger_anchor: cl03b
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s04n05
+                flat_id: 26
+                svo: "taylor-hebert-kl-122ac closes the arrangement entry"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "cover holds (ward-elder accounting = useful-things-woman, no patron visible); closes without moral-framework movement"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
+              - slug: b01c11s04n06
+                flat_id: 27
+                svo: "taylor-hebert-kl-122ac sets the stylus down"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-rise
+                      rationale: "crystallization-complete closing image — stylus rests; chapter accounting done"
+                gate_verdict:
+                  bonefide: true
+                  flat: false
 
         chunk_cold_read:
           reviewed_at: 2026-06-02T22:00:00Z

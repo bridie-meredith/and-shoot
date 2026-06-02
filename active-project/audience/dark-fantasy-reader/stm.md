@@ -603,3 +603,37 @@ The +1.0 total at c11 is a partial-settle on cl04's non-extractable relational_a
 hard_findings: none
 SUBSTANCE-FLAT: none
 SUBSTANCE-SUSPECT: none
+
+---
+
+## 2026-06-02 — /and-write b01c11 Phase 6 bone-gate
+
+chapter: b01c11
+date: 2026-06-02
+phase: write-bone-gate
+dispatch_mode: SINGLE-PERSONA SPLIT (PROP-0036; dark-fantasy-reader only)
+scenes_reviewed: [b01c11s01, b01c11s02, b01c11s03, b01c11s04]
+
+verdict_per_scene:
+  b01c11s01: SUBSTANCE-FELT
+  b01c11s02: SUBSTANCE-FELT
+  b01c11s03: SUBSTANCE-FELT
+  b01c11s04: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+
+sw_resolution:
+  SW-DFR-c11-1 (antag-axis weight / burn-as-dread): RESOLVED. n04-n07 causal chain (merchant burns / iron-dish receives ash / feed returns thermal-shift / feed carries smoke-curl) runs in world-then-feed order with non-Taylor subjects for four bones before Taylor acts at n09. The burn is a physical process the feed intercepts; it is not classified until after the physical sequence completes. The standing-protocol confirmation (n08: merchant squares the bolt-ticket) confirms the burn was routine, not staged — Dragonstone moved first. Dread lands as architecture: enemies running a protocol before Taylor processed the cut.
+  SW-DFR-c11-2 (withholding-pattern register / no interior-explanation): RESOLVED. s03 Halvard-foreclose lands in enacted-discipline register. The packet seals (n05) before any deliberation-bone appears. "Argument not defeated, not reached for" is held-axis rationale internal to n05, not present in the SVO. The bones do not let the foreclose tip into interior-explanation. Operational silence confirmed at bone level.
+  SW-DFR-c11-3 (s04 count discipline / crystallization-not-declaration): RESOLVED. Four entry-closure SVOs (n02-n05) name the entry being closed, not the content it holds. The reader carries what each entry contains from s01-s03; the count does not re-assert it. Stylus-down (n06) is the terminal physical gesture, not a synthetic recognition. Crystallization confirmed; no re-declaration.
+
+earth_bet_fence: CLEAN. Feed vocabulary: thermal-shift, smoke-curl, insect-feed, insect-range, feed-station, four-ward feed, feed-thermal-relay. All sensory-relay shape-language specific to insect-biology. No parahuman register, no power-vocabulary, no ability-framing.
+
+phase_4_trim: ACCEPT — 27 KEEP, 0 DELETE-PROPOSE. No chatter bone candidates for deletion across all four scenes. s01n02 (fold-and-gone), s02n01 (morning-routine before anomaly), s02n08 (standing-protocol-complete), s04n01 (accounting-in-motion threshold), s04n05 (arrangement-close without moral-framework movement), s04n06 (stylus-down closing image) — all structural, all load-bearing. 27 bones is appropriate density for a silent chapter.
+
+threshold_discipline: no walkout triggers; no catharsis before weight; no enemies pausing; no hope-that-costs-nothing; no world-as-set-dressing; Earth-Bet fence clean.
+
+soft_carry_to_facets: SW-DFR-c11-1 confirmed resolved at bones level. The burn-as-dread shape is structurally correct; the stitch/facet rendering must preserve the world-then-feed causal order (n04-n07) and not compress the physical sequence into a single classification bone. The standing-protocol confirmation (n08) must survive into prose or the "world was already running this" inference loses its grounding.
