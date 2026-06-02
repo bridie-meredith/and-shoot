@@ -1,3 +1,10 @@
+---
+facet: feeling
+sources: [taylor-hebert-kl-122ac-b01-c10]
+note: consolidated by build_cite_index from per-source slices. Single top-of-file frontmatter per r3-signal-001.
+---
+
+# source: taylor-hebert-kl-122ac-b01-c10
 # source: taylor-hebert-kl-122ac-b01-c10
 
 1 @10 taylor-hebert-kl-122ac: her breath shortens once over the body-map before her hands move to the channel | expressed: no

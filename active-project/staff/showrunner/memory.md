@@ -5630,7 +5630,7 @@ books:
             → /and-stitch Phase 4. RECOMMENDATION: CLEAR for /and-facets.
 
       - slug: b01c10
-        status: bones-written   # /and-write b01c10 Phase 7 emit COMPLETE 2026-06-02
+        status: faceted-r1   # /and-facets b01c10 Phase 2 merge COMPLETE 2026-06-02 (R1 fanout 10 authors; cite-index built; 58 entries, 24/27 protolines decorated). Fixes at merge: feeling entry-line IDs bare-numeric (were prefix-prefixed -> stale-cite); state proto-line tokens stripped to c09-proven back=N shape (slice-local IDs collided post-consolidation).
         bones_file: theater/bones/b01-c10.md
         bones_count: 27
         substance_bone_gate_verdict: PASS   # Phase 6: auditor 0 HARD (after cycle-1 fix: 9 held-axis witnesses + 2 signal recasts) / 7 SIGNAL all dispositioned (3 stakes-tie + 3 abstract-object accept-with-rationale, signal-005/007 remediated); audience 3-of-3 SUBSTANCE-FELT all 4 scenes

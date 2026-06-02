@@ -1,7 +1,7 @@
 # inflight: proto-lines-state-env
 # facet: state-updates-env
 # episode: b01c10
-# citations: @12 [state:1], @15 [state:2], @17 [state:3], @20 [state:4], @21 [state:5], @25 [state:6], @27 [state:7]
+# citations: @12, @15, @17, @20, @21, @25, @27
 # SVO bodies byte-identical to base proto-lines/b01-c10.md
 
 # bones — b01c10
@@ -25,19 +25,19 @@ aggregate_range: 1-27
 9 corwick squares the stone-post
 10 taylor-hebert-kl-122ac translates the body-map
 11 taylor-hebert-kl-122ac routes the body-map
-12 the wax dries [state:1]
+12 the wax dries
 13 the supply cart marks the lower-gate road
 14 corwick walks the errand-corridor
-15 the lower-gate road loses corwick [state:2]
+15 the lower-gate road loses corwick
 16 the stone-post marks the side-exit
-17 the Gold Cloak pair posts the lane-junction [state:3]
+17 the Gold Cloak pair posts the lane-junction
 18 the insect-feed sweeps the errand-corridor
 19 the bay-cold presses the lower road
-20 taylor-hebert-kl-122ac opens the ledger [state:4]
-21 taylor-hebert-kl-122ac writes corwick [state:5]
+20 taylor-hebert-kl-122ac opens the ledger
+21 taylor-hebert-kl-122ac writes corwick
 22 the feed-station stone grounds the wrist
 23 corwick faces the lower-gate
 24 corwick crosses the errand-corridor
-25 taylor-hebert-kl-122ac closes the ledger [state:6]
+25 taylor-hebert-kl-122ac closes the ledger
 26 taylor-hebert-kl-122ac presses the feed-station
-27 corwick squares the feed-record [state:7]
+27 corwick squares the feed-record

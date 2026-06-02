@@ -9,29 +9,29 @@ prior_episode: b01c09
 aggregate_range: 1-27
 
 1 jarvis delivers the packet
-2 the packet-text closes the frame [state:1]
+2 the packet-text closes the frame
 3 the morning-stone holds the bay-cold
-4 taylor-hebert-kl-122ac folds the packet [state:2]
+4 taylor-hebert-kl-122ac folds the packet
 5 taylor-hebert-kl-122ac exhales
 6 the second item opens the packet
 7 the lower-gate road marks the body-map
 8 the body-map fills the feed-record
 9 corwick squares the stone-post
-10 taylor-hebert-kl-122ac translates the body-map [state:3]
-11 taylor-hebert-kl-122ac routes the body-map [state:4]
+10 taylor-hebert-kl-122ac translates the body-map
+11 taylor-hebert-kl-122ac routes the body-map
 12 the wax dries
 13 the supply cart marks the lower-gate road
 14 corwick walks the errand-corridor
 15 the lower-gate road loses corwick
 16 the stone-post marks the side-exit
 17 the Gold Cloak pair posts the lane-junction
-18 the insect-feed sweeps the errand-corridor [state:5]
+18 the insect-feed sweeps the errand-corridor
 19 the bay-cold presses the lower road
 20 taylor-hebert-kl-122ac opens the ledger
-21 taylor-hebert-kl-122ac writes corwick [state:6]
+21 taylor-hebert-kl-122ac writes corwick
 22 the feed-station stone grounds the wrist
 23 corwick faces the lower-gate
 24 corwick crosses the errand-corridor
-25 taylor-hebert-kl-122ac closes the ledger [state:7]
-26 taylor-hebert-kl-122ac presses the feed-station [state:8]
+25 taylor-hebert-kl-122ac closes the ledger
+26 taylor-hebert-kl-122ac presses the feed-station
 27 corwick squares the feed-record
