@@ -5706,6 +5706,13 @@ books:
           depth_pass_target: "/and-write b01c10 revise --from-signals (stage acts-of-commission @2 declare / @11 route / @21 inscribe; de-abstract density; @18 grounding) -> re-cascade /and-facets + /and-stitch"
           stale_since: null
         depth_pass_pending: true   # set by Phase 9 PASS-WITH-DEPTH-PASS-REQUIRED; resolve before /and-review verdict b01 / book-close
+        stitched: true   # /and-stitch b01c10 COMPLETE 2026-06-02 — draft/b01-c10.md TERMINAL (1074 words)
+        forward_thread:   # /and-stitch Phase 10
+          verdict: HOLD-THREAD
+          edits_applied: {cosmetic: 0, presentation_reinforcement: 1}   # rev-0004 Wren-callback prologue
+          substantive_to_parking_lot: [pl-2026-06-02-stitch-thread-001, pl-2026-06-02-stitch-thread-002]   # Halvard hook-0007 + cl-d06 tranche -> /and-substance c11 Phase 3
+          aggregate_state: "updated through b01c10; validation PASS; 2 hooks paid (Corwick courier-face hook-0002 + lower-gate thread hook-0010), 3 opened (hook-0011 arrangement-formal / hook-0012 Dance-pulse-1 / hook-0013 Corwick-face-persists->d14), hook-0007 Halvard left-open-window-passed"
+          report_path: active-project/staff/reviews/forward-thread-b01-c10-2026-06-02.md
         chunk: |
           Otto formalizes the arrangement: no longer a contingent exchange but a named,
           ongoing function. Taylor is his intelligence instrument for the Flea Bottom and
