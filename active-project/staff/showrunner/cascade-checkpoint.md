@@ -19,13 +19,17 @@ cascade:
     feasible; halt cleanly with a checkpoint on cap-exhaustion / hard-block / practical
     session limit.
   last_completed:
-    level: chapter-complete   # b01c10 COMPLETE end-to-end: substance + write + bones-review + facets + stitch (P1-9 + P10). draft/b01-c10.md TERMINAL (1074 words).
+    level: chapter-substance   # b01c11 /and-substance COMPLETE: 4 scenes scened, Phase5 3/3 SUBSTANCE-FELT + dramatist ACCEPT(after 1 revise) + auditor 0 HARD, Phase5.5 cold-read SHIPPED-WITH-RISK-RECORDED (DEC-0072 P). 2 HARD threading-holds resolved (DEC-0071).
+    slug: b01c11
+    completed_at: 2026-06-02T22:05:00Z
+  prev_completed:
+    level: chapter-complete   # b01c10 COMPLETE end-to-end. draft/b01-c10.md TERMINAL (1074 words).
     slug: b01c10
     completed_at: 2026-06-02T04:15:00Z
   next:
-    command: produce-chapter-protocol b01c11
+    command: /and-write b01c11
     args: [b01c11]
-  reason: chapter-complete-practical-limit   # c10 shipped this session (resumed from bones-complete; ran facets+stitch = the larger half). c11 is a fresh chapter-production run — best with fresh budget given this session's spend (~50+ dispatches across the full facets+stitch pipeline). Two HARD parking-lot items gate c11 Phase 3 (see pending_threading_holds).
+  reason: chapter-production-in-progress   # c11 substance COMPLETE (4 scenes scened; Phase5 PASS; Phase5.5 SHIPPED-WITH-RISK-RECORDED DEC-0072). Cascade -> /and-write -> /and-review bones -> /and-facets -> /and-stitch (P9+P10). Two HARD threading-holds RESOLVED at Phase 3 (DEC-0071).
   failure: null
   pending_depth_passes: [b01c10]   # PASS-WITH-DEPTH-PASS-REQUIRED (spine-staging-gap acts-of-commission + readability AIRLESS). /and-write b01c10 revise --from-signals before book-close. NON-blocking for c11 production.
   pending_threading_holds: [b01c10]   # Phase 10 HOLD-THREAD: pl-2026-06-02-stitch-thread-001 (Halvard hook-0007) + -002 (cl-d06 tranche) -> resolve at /and-substance c11 Phase 3.
