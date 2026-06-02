@@ -9,14 +9,43 @@ cascade:
     feasible; halt cleanly with a checkpoint on cap-exhaustion / hard-block / practical
     session limit.
   last_completed:
-    level: bones-review
+    level: facets-r1-authored
     slug: b01c10
-    completed_at: 2026-06-02T01:25:00Z
+    completed_at: 2026-06-02T03:00:00Z
   next:
-    command: /and-facets b01c10
+    command: /and-facets b01c10   # RESUME at Phase 2 (cite-index merge); all 10 R1 facet files present on disk
     args: [b01c10]
-  reason: halted-practical-limit   # operator-judgment clean halt (run_intent practical-session-limit clause): bones complete+reviewed+committed; facets+stitch are the larger half, best resumed with fresh budget given this run's infra instability (3 dispatch-deaths)
+  reason: halted-practical-limit   # clean halt at R1-complete: facets-finalization (merge+audit+3-cycle audience-gate) + full /and-stitch = 40+ dispatches at this run's ~40% dispatch-mortality; safer to resume with fresh budget
   failure: null
+  facets_r1_state: |
+    /and-facets b01c10 Phase 0 + Phase 1 (R1) COMPLETE + COMMITTED. Streamlined path (DEC-0063
+    Option-B: R2 judging skipped). Phase 0: c09 working set auto-archived (theater/_archive/
+    20260602T022745Z-b01c09-facets/); base proto-lines theater/proto-lines/b01-c10.md created.
+    All 10 R1 facet files authored at theater/facets/*-b01-c10.md (anchors):
+      location-state 4 (@1/@13/@17/@20) | interest-narrator 6 (@2/@10/@15/@17/@21/@27, 22%)
+      sensory 2 (@19 thermal/@22 tactile, modality-floor met) | state-updates-env 7 (@1/@12/@15/@17/@20/@21/@25)
+      state-updates-taylor 4 (@2/@10/@21/@27, all NI-co-cited) | memory 3 (@5/@8/@24, doubled-register, 0 Earth-Bet)
+      feeling-taylor 1 (@22) | metaphor 0 (refuse-by-default) | vibes 4 (@2/@21/@18/@17)
+      exposition 3 (@0/@2/@13 — ALL context-weave gaps covered: B->C seam @13, formalization @2, Sera @0)
+  resume_instructions: |
+    RESUME /and-facets b01c10 at Phase 2 (merge). All R1 facet files are on disk; base proto-lines exists.
+    MERGE PATH: the cite-index tool reads _inflight/proto-lines-<facet>.md copies (not facet files directly).
+    Either (a) re-dispatch each R1 author to write its _inflight copy (real-pipeline path), OR (b) hand-build
+    _inflight copies with CARE on the sliced facets: state-updates consolidates env(7)+actor(4)->1-11 RENUMBERED,
+    feeling consolidates 1 slice. Hand-built [state:N] tokens MUST use post-consolidation IDs or the tool's
+    stale-cite check corrupts/aborts. feeling is trivial (1 entry). Then run:
+      python3 active-project/staff/cite-index/build_cite_index.py b01c10
+    PHASE 2.5 context-weave: LARGELY PRE-SATISFIED — exposition R1 already covered all 3 gaps (B->C @13,
+    formalization @2, Sera @0); just verify + write context-ledger entries marked satisfied. grounding-ledger:
+    check scene-C aliveness (sensory only added @19 in-scene; BONES-AIRLESS-RISK may want 1 more scene-C grounding).
+    TWO CROSS-FACET RECONCILES (R2 would have done these; do at Phase 5 fixer):
+      1. memory @5/@8/@24 lack NI co-citation -> re-anchor memory @5->@2 (naming-clamp), @8->@10
+         (override-residue displacement), @24->@27 (body-map callback) — same events, NI-co-cited; OR accept
+         under memory displacement-clamp peak-bone exception (document).
+      2. state-updates-env props oc-jarvis-packet / oc-jarvis-packet-out / oc-feed-ledger UNCARDED ->
+         convert prop: targets to studio.* OR margit-stub the 3 prop cards (card-resolution HARD at audit otherwise).
+    PHASE 5b audience-gate: use PER-PERSONA split dispatch (PROP-0036 — trio-in-one dies; proven 2x).
+    THEN /and-stitch b01c10 (Phase 9 cold-read + Phase 10 forward-thread) -> draft/b01-c10.md.
   c10_progress: |
     b01c10 ~60% through the chapter-production chain — ALL COMMITTED + PUSHED:
       [DONE] /and-substance chapter b01c10 — 4 scenes, climax/d10, roll-up exact, Phase-5 ACCEPT
