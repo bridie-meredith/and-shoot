@@ -2,30 +2,21 @@
 reviewer: cape-fic-reader
 facet: vibes
 cycle: 1
-episode: b01-c09
-date: 2026-06-01
-depth-pass: yes
+episode: b01c10
+date: 2026-06-02
 verdict: accept
 ---
 
-# Verdict: ACCEPT
+# Verdict reasoning
 
-## Reading
+Fifteen entries across four scenes plus three off-anchor episode/entity-scope vibes, and the graph holds its operator-bias discipline: none of these are rendered-prose, all are downstream bias instructions, and the keyword architecture is clean enough for a cape-fic reader to trace the operational arc. The chapter's thesis is encoded in vibes:1+2 at @2 (atonement-as-repetition extended to formal-naming-as-fait-accompli; the-formal-instrument as a new keyword naming what Taylor now IS in the architecture), vibes:7+8 at @15 (episode + actor scope of the-apparatus-ran, the chapter's central operational consequence), and vibes:11+12 at @27 (cold-utilitarian-interiority extended to face-persisting-as-feed-datum; the-closed-entry-that-stays as a new keyword). The progression across the chapter — from the arrangement named (scene-A), to the cost paid (scene-B), to the apparatus running (scene-C), to the accounting closed with the face staying (scene-D) — is encoded in the vibe-cloud additions and keyword introductions in correct sequence. The new keywords (the-formal-instrument, cost-made-visible-to-the-ledger, the-apparatus-ran, the-closed-entry-that-stays) are all genre-coherent operator-bias handles: a dialogue-writer or NI author picking these up knows what register the chapter expects them to maintain in b01c11+. The off-anchor corwick (vibes:14) and the-feed-station (vibes:15) entries pass the fan-out coherence gate for a cape-fic reader — Corwick being tagged with detained-through-the-channel is exactly the kind of entity-tracking this persona expects from an apparatus-ran event; the detained party accumulates a vibe, not just the POV character. The carve-outs for missing cards are structurally justified and the c08 precedent applies. No entry is transient-as-vibe (all would still apply at b01c11 open); no token bundle is prose. The only pattern worth noting adversarially: vibes:9 at @18 (rising entrapment: feed-confirms-apparatus-as-actor) and vibes:7+8 at @15 (the-apparatus-ran in two scope splits) cover similar territory across three entries. From a cape-fic reader's tactical standpoint, the three entries are doing distinct work — @15 is the confirmation (absence reads as action), @18 is the feed-sweep corroboration (the cage demonstrably operational), and the two scope-split vibes at @15 distinguish episode-ambient from actor-specific consequence. This reader can use the distinction. Accept.
 
-Seven entries, re-anchored to the 27-bone flat-IDs. On-anchor entries: @6, @6, @6, @18, @23. Off-anchor: vibes:4 (loc:the-hook-ward) and vibes:7 (episode). All ++ ops extend existing keywords.
+# Entry-level callouts
 
-**Depth-pass check:** The vibes file carries a note that its content is stable from the prior run and only the anchor-IDs were re-mapped (@4→@6, @14→@18, @19→@23). The proto-refs were also re-mapped. Content is verified against the depth-pass bone-graph but not changed in substance. This is a re-anchor, not a re-author. I'm checking whether the re-mapped anchors still fire at the right bones.
+None.
 
-vibes:1, vibes:2, vibes:3 all anchor at @6 ("wren walks the shop-to-water-seller lane") — that is scene-A's central-event bone, the route-being-walked event. Three ++ tokens on one central-event bone is dense but these are distinct actor-targets and distinct keyword-extensions: vibes:1 extends Taylor's atonement-as-repetition at person-specific granularity; vibes:2 extends Taylor's rising-entrapment to person-legible cage form; vibes:3 extends Wren's rising-entrapment with the mapped-freedom-not-only-constrained-freedom escalation. Each token set is non-overlapping in string and event-frame. Three tokens on the central-event bone is not duplication; it is the three-direction consequence of the one event that matters in this scene.
+# Convergence trace
 
-vibes:5 @18 adds the particular-body/particular-gate/directional-inference event-frame to political-register-color-present. That is exactly the board-sharpening I track: substrate-ambient color (c05) → particular-instance directional inference (c09). The entrapment architecture is now operating at the level of specific named bodies being watched by specific named Taylor at specific gates. Good. The event-frame is distinct from prior tokens.
-
-vibes:6 @23 adds seal-as-form-fitting-before-recognition to atonement-as-repetition. This fires on the scene-C central-event bone. "Two-substrates-one-surface-confirmed-by-wax" — the token encodes the physical architecture of the double-omission for downstream operators.
-
-vibes:7 (episode-scope, no anchor): "double-omission-architecture, withholding-enacted-through-substrate-selection, double-omission-as-structural-fact-not-volitional-act, silence-as-the-chapter-discipline." This is a correctly-structured episode-scope operator-bias: it tells downstream renderers to hold the silence register throughout, not just at specific bones. That is exactly what I need for an information-asymmetry chapter where the intelligence gap is the point.
-
-All token-algebra. No prose-tokens. All licensed-by sources resolvable.
-
-## Convergence trace
-
-Auditor: RUBRIC-FIDELITY PASS. vibes:4 carve-out for loc:the-hook-ward follows c08-established precedent. No HARD findings in vibes.
+- Auditor RUBRIC-FIDELITY finding: vibes:14 (actor:corwick) and vibes:15 (loc:the-feed-station) gate-1 target-validity carve-out, both SIGNAL per documented defense. This reviewer concurs with the carve-out: the fan-out coherence gate and the c08 precedent both apply. The margit-referral for formal cards is a process concern, not a content concern.
+- Auditor METADATA-INCONSISTENCY flag: vibes episode slug hyphenation (b01-c10 vs b01c10) — cosmetic; no content impact. Not a concern from this reviewer's perspective.
+- Auditor SUPERFLUOUS flags for vibes:3/@4, vibes:6/@11, vibes:9/@18, vibes:10/@21 (all lonely) — all passed as warranted per rubric scrutiny. This reviewer's independent read concurs: the fold-as-body-enactment at @4, the channel-receives-first-named-commission at @11, the feed-confirms-apparatus-as-actor at @18, and the named-person-closed-entry-in-the-ledger at @21 are distinct event-frame tokens and not duplicating the existing bundle.

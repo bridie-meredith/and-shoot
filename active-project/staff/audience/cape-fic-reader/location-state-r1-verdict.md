@@ -2,26 +2,19 @@
 reviewer: cape-fic-reader
 facet: location-state
 cycle: 1
-episode: b01-c09
-date: 2026-06-01
-depth-pass: yes
+episode: b01c10
+date: 2026-06-02
 verdict: accept
 ---
 
-# Verdict: ACCEPT
+# Verdict reasoning
 
-## Reading
+Eight entries, four scenes, and the location-state graph does the tactical work a cape-fic reader needs: it builds the circuit geometry (feed-station → lower-gate → dragonpit-margin → feed-station) so that @15's "road-geometry-minus-one" reads as a confirmed deviation against an established baseline, not a floating data point. The side-exit fixture at @9 and the lane-junction-patrol shift at @17 are the geometry-as-board-state entries that make the detention land as a tactical consequence rather than an asserted fact. The wax-sealed entry at @12 is the lightest and most useful: channel-sealed-on-Corwick-not-Wren is the kind of physical thesis-image this reader clocks without prompting. The scene-D ledger entries (@20, @23) are a minimal pair that close the accounting register without re-explaining it. No entry overstays its welcome; none produces a state the reader already holds.
 
-Five entries, three scenes, anchors at @1, @5, @11, @14, @21. The board tracks correctly: cold morning lane-mouth, stitch-shop door open (Wren-in-transit setup), evening Dragonpit outer lane, Corwick-at-stone-post, feed-station close. That is the surveillance circuit legible as a circuit.
+# Entry-level callouts
 
-Depth-pass check: @9 (NI:3 cold-stiffened-hand) co-cites sensory:5, not loc-state — the location-state file correctly holds the sensory-baseline that enables the cold-sensation (loc-state:1 carries "warm-hand cold-season-morning context" as sensory:5's old-state). The plumbing connects. The scene-map @9 de-fog note says "render the route-vs-person thesis through the cold-stiffened hand at the act of filing" — loc-state:1's sensory-baseline field makes that rendering possible by establishing what cold means at that time of morning.
+None.
 
-@14 "courier-at-stone-post, lane-distribution holds empty until his form returns to it" — this is the information-asymmetry entry doing real work. Empty-distribution baseline was established at @11 ("no non-baseline body present") and @14 fires against it. The wrong-houred body reads as wrong because the baseline was clean. That is setup-before-payload. Correct.
+# Convergence trace
 
-@21 (station-surface-clear) carries "ward-coverage notes and the unsealed packet" — "unsealed" is load-bearing for the thesis-image. When the packet seals at @23, the before-state is here. Board-state coherent.
-
-No coverage gaps. No redundant re-cites. No location-state entry that marks time without tracking a board change.
-
-## Convergence trace
-
-Auditor: RUBRIC-FIDELITY PASS. Sensory old-state lineage ANCHORED all 6. signal-con-001 (@11 co-fire with exposition:3) is not a location-state finding — the distinct-content argument holds. No HARD in this facet.
+No auditor findings for location-state. The auditor's SUPERFLUOUS scan passed all five lonely loc-state entries as rubric-legitimate at-establishment fires. This reviewer concurs — each lonely entry is geometry work the subsequent deviations require.

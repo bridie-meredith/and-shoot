@@ -4123,3 +4123,89 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0070 | 2026-06-02 | SLOW (process-critic)
+
+question: |
+  /and-stitch b01c10 Phase 9.5 — PASS-WITH-DEPTH-PASS-REQUIRED. Two candidate patterns:
+  (1) Acts-of-commission staging gap: staging reviewer found STAGE on @2/declare, @11/route, @21/inscribe —
+  all acts-of-commission — while observation/receipt bones staged well throughout. Pattern note: "all three
+  STAGE findings occur at act-transmission moments; observation and receipt land; the staging deficit is
+  specific to the ACTS OF COMMISSION." Should this be caught upstream at /and-write Phase 6 bone-decomposition?
+  (2) Apparatus-density cross-chapter accumulation (c06-c10): cold-reader "dense and repetitive, arm's-length
+  throughout; barely yes." Fifth chapter in the consecutive-airless sequence. Relevant per DEC-0067's N=6
+  re-evaluation threshold.
+
+context: |
+  source_report: active-project/staff/reviews/coldread-b01-c10-2026-06-02.md
+  source_verdict: PASS-WITH-DEPTH-PASS-REQUIRED
+  gate_path: .claude/commands/and-stitch.md#phase-9
+  secondary_gate_paths: [.claude/commands/and-write.md#phase-6]
+  Chapter shipped terminal. Staging review found STAGE on @2/declare, @11/route, @21/inscribe + GROUND on
+  @18. Cold-reader: dense, repetitive, arm's-length; barely-yes continue; world-register confusion (Gold
+  Cloaks in surveillance apparatus); "I felt the narrator's residue more than I felt the loss." Phase 8.5
+  coherence PASS. chunk_cold_read was PASS-CHUNK-VOICE-RISK with airlessness flagged design-inherent for
+  the climax. Recurrence context: DEC-0067 established consecutive-airless watch at c06-c09 (N=4); c10 is
+  N=5. DEC-0067 set re-evaluation threshold at N=6. Open relevant proposals: PROP-0035 (body-act companion
+  on axis-move central-event bones; recurrence_count: 4; open), PROP-0030 (cohere primitive; recurrence_count:
+  2; open), PROP-0031 (cohere iteration loop; recurrence_count: 2; open).
+
+options: n/a (process-critic mode)
+
+decision: |
+  Pattern 1 (acts-of-commission staging gap): OK — recurrence_count = 1 for this specific class;
+  non-catastrophic; no upstream gate can discriminate staged-vs-summarized on pre-stitch bones without
+  becoming the staging reviewer; hold for second occurrence.
+  Pattern 2 (apparatus-density cross-chapter c06-c10): OK-MERGED-INTO PROP-0030 + PROP-0031 — recurrence_count
+  2→3 on both; N=5 does not cross DEC-0067's N=6 new-proposal threshold; PROP-0030/0031 remain the correct
+  closure mechanism.
+
+basis: |
+  Pattern 1: methodology:3a (reversibility — premature gate erodes bone-gate signal quality; wait
+  for recurrence at count=1 non-catastrophic per standing procedure). Content-vs-process discrimination:
+  the staging reviewer caught the commission-verb pattern correctly at Phase 9; no upstream gate could
+  have discriminated staged-vs-summarized on bones (bones are pre-render scaffolding; the stitcher's
+  rendering determines whether a commission SVO reads as enacted or glossed). PROP-0035 covers the
+  body-act companion gap on axis-move central-event bones; the c10 commission-verb gap may or may not
+  intersect PROP-0035's scope (depends on axis-move classification of @2/@11/@21 — cannot determine
+  from the cold-read report alone). Hold for second occurrence; if c11+ produces same commission-verb
+  STAGE pattern, target a modify of /and-write Phase 1 SVO guidance for commission-verb bones.
+  Pattern 2: ltm:DEC-0067 (threshold N=6 before new proposal; N=5 does not cross it; merge into
+  PROP-0030/PROP-0031 per matching rules).
+
+rationale: |
+  Pattern 1 is genuinely a new named sub-class: observation/receipt staging is clean while
+  commission-verb bones (declare, route, inscribe) consistently miss the enactment and render as
+  conclusion/summary. This is distinct from PROP-0035 (which addresses cognitive/mechanism SVOs on
+  axis-move central-event bones and requires a physical body-act companion in ±2). The c10 class is:
+  commission-verb SVO that is itself concrete but rendered as already-done rather than in-progress —
+  the gap is enacted-vs-concluded, not physical-body-act-companion. No existing gate catches this;
+  the staging reviewer at Phase 9 is the correct first-catch surface; an upstream check would need
+  to make staged-vs-summarized judgments on bone text alone, which is intrinsically post-stitch
+  because the stitcher's rendering choice determines the enacted/concluded quality of the output.
+  First occurrence; non-catastrophic; hold per procedure.
+
+  Pattern 2: the c10 cold-read is the fifth chapter-level instance of apparatus-register airlessness
+  (c06/07/08/09/10) and the third cross-chapter recurrence for PROP-0030/PROP-0031 (first: c01-c07
+  session audit; second: DEC-0067 merge at c09; third: this dispatch at c10). The merge increments
+  recurrence_count to 3 on both proposals. DEC-0067's threshold logic stands: the preventive gate
+  (accumulation warning at N>=5 in /and-stitch Phase 0 parking-lot scan) is triggered at N=6, not
+  N=5. The correct action is triage of PROP-0030/0031, not a new proposal.
+
+trade-off: |
+  Pattern 1: not proposing accepts that the commission-verb enacted/concluded gap will require a depth
+  pass on any chapter where it fires. If c11+ also draws commission-verb STAGE findings, the gap
+  becomes codifiable and a targeted Phase 1 modify can be proposed with a clean two-chapter evidence
+  base. The cost of waiting is one depth pass; the cost of a premature gate is a bone-gate that makes
+  pre-stitch rendering judgments, which is architecture drift.
+  Pattern 2: merging into PROP-0030/PROP-0031 instead of proposing an accumulation warning at N=5
+  accepts that the principal must triage the two open proposals before c10-c13 chapters ship, or the
+  accumulation grows toward N=6 where a separate warning gate becomes warranted. This is the same
+  trade-off DEC-0067 accepted; nothing at c10 changes the calculus.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

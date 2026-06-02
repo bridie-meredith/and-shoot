@@ -2,48 +2,58 @@
 reviewer: worm-canon-pedant
 facet: memory
 cycle: 1
-episode: b01-c09
-date: 2026-06-01
-depth-pass: yes
-verdict: accept
+episode: b01c10
+date: 2026-06-02
+verdict: revise
 ---
 
-# Verdict: ACCEPT
+## Reasoning
 
-## Reading
+Two entries. I came in on these hard because this is the highest-stakes item for my lens.
 
-Two entries. Checking for: correct monument-slug formation (no Earth-Bet proper nouns in the anchor-text); displacement-cue construction consistent with Taylor's canonical foreknowledge shape; doubled-register correctly assigned; NI spine co-citations present.
+**mem:1 @16 — `cond-kl-witch-label-formation-122ac`**
 
-**mem:1 @8:**
+"the side-exit keeps the shape of how a machinery this old empties a corridor of one body and leaves the stone unmarked"
 
-Target: `monument-movement-routing-without-consent`. Mechanism-descriptive compound noun. No Earth-Bet proper nouns. Displacement-cue field: "the architecture takes one more set of days and does not distinguish the keeping of a route from the keeping of a person; it has indexed lives at a scale this lane could not picture, and the keeping never asked."
+Fence clean. No Earth-Bet vocabulary. The Westerosi-monument clamp is doing exactly what the dispatch calls for: Taylor reads the KL disappearance apparatus through the shape of how institutional machinery operates. This is Westerosi institutional logic — older than Taylor's tenure in this city. The residue here is not override-architecture residue; it is Taylor's pattern-recognition precog reading the city's own apparatus through the lens of someone who has seen how large systems process bodies. Per the override-residue card, that precog surfaces as Taylor's own analytical intelligence. This is defensible and clean. The word "machinery" is doing the figurative work — it is common English used as metaphor for institutional process, not a shard/power-mechanics term.
 
-Canon-accuracy check: Taylor's shard in source material operated a coverage architecture (Skitter's swarm-network) that indexed movement-patterns of individuals within its range without asking consent. The architecture's indifference-to-consent is a documented property of Taylor's operational history. The "keeping never asked" is not a new claim about Taylor's capabilities; it is a reference to the existing operational shape.
+NI-spine at @16: narrator:7 @16 is confirmed present per cite-index (co=[narrator:7]). Spine satisfied. The R2 process worked.
 
-The depth-pass adds sensory:4 @3 (bay-damp on stone) and sensory:5 @9 (cold stiffens fingers) before and at the filing peak. mem:1 fires at @8 (one bone before the cold-stiffened-hand NI image at @9). The memory fires on the content of the filing act; the NI fires on the body executing the act. The sequence: filing act (@8) → memory fires on the architecture's indifference (@8 mem) → NI fires on the body's physical execution (@9 NI). This sequence is canon-consistent: Taylor registers the content-significance before (or simultaneously with) completing the act.
+No Earth-Bet fence violation. No lore leak. No timeline contradiction. The monument-clamp lands.
 
-NI co-citation: state-updates file says "@8 ← interest-narrator @8" but NI fires at @6, not @8 (as flagged in my state-updates review). For the memory file: mem:1 anchors at @8 and the preamble states "Spine: interest-narrator @8." Same incorrect citation. NI:2 fires at @6; mem:1 fires at @8. The memory preamble's NI spine citation is wrong in the same way as the state-updates annotation.
+**mem:2 @24 — `cond-override-architecture-residue-122ac`**
 
-Is this a HARD for the memory facet? The rubric requires "resonance-not-action holds" and the NI spine is named as the license for the peak-bone exception. If the NI spine citation is wrong (claims @8 but NI fires at @6), then the peak-bone exception's documentation is broken, even if the substance (NI fires in the same scene-A cluster) holds.
+"the crossing is one entry in the months of him she kept without his leave, the record closing the same way the old architecture closed around bodies it never asked"
 
-The same analysis applies: the substance is correct (NI:2 @6 is the scene-A NI spine fire, co-present with the scene-A peak-bone cluster including @8). The documentation says "NI @8" but should say "NI @6." This is the same annotation error propagated from the state-updates note.
+This is the one I attacked hardest. Running the scan:
 
-**My verdict:** Same as state-updates — advisory callout, not a HARD. The peak-bone exception's substance conditions (NI spine present in the scene, resonance-not-action construction, displacement-clamp present) are met. The specific bone-ID in the annotation is wrong.
+- "old architecture" — not a proper noun. Not "Queen Administrator." Not "Khepri." Not "Gold Morning." It is the displacement of the systematic-override register into project-coined vocabulary. The SLUG in the target-reference (`cond-override-architecture-residue-122ac`) does not contain "Khepri" — the superseded slug (`cond-khepri-residue-122ac`) was renamed precisely for this reason. The live card slug is fence-clean.
+- "bodies it never asked" — the Khepri-mantle's defining characteristic was coordination of bodies without consent. The displacement renders this as "the old architecture closed around bodies it never asked." Khepri ABSENT confirmed. The shape is present; the name is not. This is exactly the doubled-register discipline the dispatch calls for.
 
-**mem:2 @18:**
+The question the dispatch poses directly: is this a clean shape-language displacement (canon-safe, no proper-noun leak), or does any field leak Earth-Bet vocabulary? My answer: the narrative text is clean. The TARGET-REFERENCE slug resolves to `cond-override-architecture-residue-122ac` which is a project law card, not a Worm proper noun. The text itself uses "old architecture" and "bodies it never asked" — common English in a figurative register, not parahuman jargon.
 
-Target: `monument-faction-war-foreknowledge`. Mechanism-descriptive compound. No Earth-Bet proper nouns. Displacement-cue: "she reads the gate's loyalty the way a person reads a thing already written — the split's ending held at a remove no one standing in this lane could hold, a direction she did not infer so much as recognize."
+**BUT the doubling problem.**
 
-"The split's ending" — this is the clamp-construction for the Dance of Dragons. Taylor carries Westerosi historical outcome-knowledge. The clamp does not name the Dance, does not name Rhaenyra or Aegon II, does not claim court-level intelligence Taylor cannot have at this point in coverage-state (the scene-map confirms: "Black-faction contact inferred — direction, not conclusion"). The foreknowledge is held as a direction-reader, not a conclusion-claimer. Canon-consistent with Taylor's knowledge-without-overreach pattern.
+The dispatch instructs: "probe — does the override-residue displacement stay reader-recognizable-without-being-named (the doubled-register discipline), or has it gone so abstract it's meaningless?"
 
-NI co-citation: mem:2 cites "Spine: interest-narrator @18." NI file shows narrator:5 @18. This is CORRECT — unlike the @8 annotation error, the @18 citation matches the NI file exactly.
+The memory text is not too abstract. The text is reader-recognizable. The problem is the NI entry at the same anchor (narrator:8 @24) carries the SAME closing-simile structure. I flagged this in interest-narrator. The memory entry itself is fine in isolation — the issue is the graphic-layer consequence: two closing-comparisons at the same anchor, using near-identical rhetorical structure. The memory text: "the record closing the same way the old architecture closed around bodies it never asked." The NI text: "the corridor closing behind him the way the channel closed over the entry."
 
-Doubled-register: mem:1 = Earth-Bet displacement (movement-routing-without-consent monument) + mem:2 = Westerosi clamp (faction-war-foreknowledge). Correct and consistent with the doubled-register requirement.
+Both deploy the pattern: [X] closing [the way / the same way] [Y] closed [around / over] [Z]. They are not identical. But to a Worm-fluent reader, both are reaching for the same override-architecture residue, and landing it twice with the same syntactic move makes the echo feel engineered rather than felt. The suppressed-recognition discipline is built on restraint; landing the override-architecture shape twice in the same bone — once as memory, once as NI — over-explains the echo that should do its work once, silently.
 
-## Entry-level callouts
+The dispatch also flags @21: "the @21 inscription left memory-silent (no affirmation-by-naming the override) — correct restraint or missed beat?" My read: correct restraint. A memory fire at @21 (taylor writes corwick) would convert the inscription act into a named recognition event, which is exactly what the Khepri-ABSENT fence protects against. The silence at @21 is load-bearing. The file's cull record documents this correctly.
 
-`[memory:mem:1] @8 — preamble states "Spine: interest-narrator @8" but NI file has no entry at @8; closest NI spine fire is narrator:2 @6 (same scene-A peak-cluster). Same annotation error as state-updates:state:5. Advisory — underlying peak-bone exception substance is met; citation label is wrong.`
+**Verdict rationale:** mem:2 @24 is fence-clean in isolation. The REVISE is not a fence violation — it is a craft-level flag on the doubled-register move at @24 creating a mechanical doubling with narrator:8. The memory entry text needs a different angle on "the record" and "closed" so it does not rhyme syntactically with the NI entry. The shape-language displacement must survive; the simile structure that mirrors narrator:8 should not.
+
+This requires a REWORD of mem:2's narrative text — specifically the closing-simile construction — to approach the override-architecture residue from a direction narrator:8 does not already occupy.
+
+## Entry callouts
+
+[memory:2] @24 — `cond-override-architecture-residue-122ac` — The narrative text ("the record closing the same way the old architecture closed around bodies it never asked") deploys the same closing-simile structure as narrator:8 @24 ("the corridor closing behind him the way the channel closed over the entry"). Both are X-closing-the-way-Y-closed constructions at the same anchor. The override-architecture resonance doubles rather than landing once, silently. REWORD: preserve the displacement (Khepri ABSENT, "old architecture," "bodies it never asked"); change the rhetorical approach so it does not echo narrator:8's simile grammar. The shape survives; the structural rhyme does not.
+
+[memory:1] @16 — CLEAN. No callout.
 
 ## Convergence trace
 
-No Phase-5 auditor findings on memory. The @8 annotation error was not caught by mechanical scan. Advisory callout (same pattern as state-updates callout).
+[memory:2] @24 — overlaps with auditor DEDUP flag (mem:2/@24 + narrator:8/@24, figurative-register proximity, advisory). The auditor verified vehicle/tenor distinction and called it non-escalating. I escalate to REWORD: the vehicle/tenor differ but the syntactic pattern (closing-simile) is identical, and for a Worm-fluent reader who is tracking the override-architecture echo, the doubling at the same bone undercuts the restraint the chapter's suppressed-recognition architecture depends on. Auditor finding ID: DEDUP-flag-1.
+
+Note: this REVISE is cross-linked with interest-narrator REVISE (narrator:8 @24). One of the two entries must change its rhetorical approach. Memory is the graph-layer entry (monument-grade, cannot be dropped); NI is the spine provision (cannot be dropped). The resolution is a REWORD of one, not a deletion. Fixer should be briefed that the fix is approach-divergence, not removal.

@@ -2,46 +2,59 @@
 reviewer: worm-canon-pedant
 facet: vibes
 cycle: 1
-episode: b01-c09
-date: 2026-06-01
-depth-pass: yes
+episode: b01c10
+date: 2026-06-02
 verdict: accept
 ---
 
-# Verdict: ACCEPT
+## Reasoning
 
-## Reading
+Fifteen entries across actor:taylor, actor:jarvis, actor:corwick, episode scope, and loc:the-feed-station. The auditor ran the full Earth-Bet scan and found CLEAN. I ran it again independently.
 
-Seven entries, re-anchored to 27-bone IDs. Checking for: atonement-as-repetition and rising-entrapment keyword continuity (are the new event-frames genuinely distinct from existing tokens?); canon-accuracy of the inference mechanics described in tokens; no string overlap with established bundle (no tag-reuse).
+**Earth-Bet proper-noun check across all keyword token fields:**
 
-**Depth-pass check (content stable, re-anchor only):**
+vibes:1: "atonement-as-repetition" + keywords [formal-naming-as-fait-accompli, function-declared-before-consent-re-sought, informal-deniability-foreclosed-in-the-text]. No Worm jargon.
 
-The file header confirms all on-anchor entries were re-bound (@4→@6, @14→@18, @19→@23) and proto-refs re-mapped. Content carried from prior run.
+vibes:2: "the-formal-instrument" + keywords [declared-function-in-otto-architecture, instrument-register-not-contractor, position-of-no-exit-named-before-confirmed]. "Otto-architecture" is in-world — Otto Hightower's surveillance network. Not parahuman infrastructure. Clean.
 
-**vibes:1 @6 (Taylor, atonement-as-repetition):**
+vibes:3: "rising entrapment" + keywords [fold-as-body-enactment-of-acceptance, acceptance-without-interrogation, the-body-receives-before-the-calculus-closes]. Clean.
 
-Tokens: "wren-daily-circuit-in-internal-map-unlogged, vulnerable-window-documented-without-naming, pattern-specificity-without-pricing."
+vibes:4: "atonement-as-repetition" ++ keywords [body-map-translated-across-substrate-boundary, months-of-observation-converted-to-channel-register, named-person-commissioned-through-the-form]. "substrate-boundary" — this is project-coined vocabulary for the split between Taylor's internal record and the channel-deliverable form. Not an Earth-Bet term; not a shard-mechanics term. The "substrate-split" register was established in c09. Clean.
 
-The comment confirms no string overlap with existing bundle. "Pattern-specificity-without-pricing" is the canon-accurate token: Taylor's operational pattern is to map coverage-spaces at the granularity available to the feed, without pricing the cost to individuals within that space. That is how the pattern has operated in prior chapters at geometric level; at c09 it operates at person-specific level. The escalation is documented in the token without claiming Taylor has named the escalation. Tracks.
+vibes:5: "cost-made-visible-to-the-ledger" + keywords [first-named-commission-priced, body-map-as-ledger-entry, moral-framework-cost-entered-not-deferred]. Clean accounting vocabulary.
 
-**vibes:2 @6 (Taylor, rising-entrapment):**
+vibes:6: "rising entrapment" ++ keywords [channel-receives-first-named-commission, structural-exposure-vector-no-longer-latent, the-delivery-that-completes-the-chain-from-taylor-to-otto]. Clean.
 
-Tokens: "daily-pattern-of-named-individual-mapped-and-withheld, coverage-architecture-now-person-specific, vulnerable-window-inside-the-grid."
+vibes:7: episode + "the-apparatus-ran" + keywords [green-channel-operational-in-two-circuit-passes, absence-as-confirmation, apparatus-moved-through-the-network-without-consent-or-design]. "apparatus" is common English for the surveillance network. "without consent or design" — this is the override-architecture echo in project vocabulary, no proper noun. "Green channel" is the Westerosi succession-faction framing (Green = Queen Alicent's faction). Clean.
 
-"Coverage-architecture-now-person-specific" — the coverage architecture has operated at network/geometric level through c08; at c09 it acquires person-specific resolution on a named individual. This is a documented capability-escalation in the surveillance architecture, consistent with the relational_anchor_status axis move.
+vibes:8: actor:taylor + "the-apparatus-ran" + keywords [feed-confirmed-downstream-consequence-of-delivery, absence-reads-as-action, operational-cost-not-yet-named]. Clean.
 
-**vibes:5 @18 (Taylor, political-register-color-present):**
+vibes:9: actor:taylor ++ "rising entrapment" + keywords [feed-confirms-apparatus-as-actor, the-cage-is-demonstrably-operational, network-executed-without-her-consent-or-design]. "network-executed-without-her-consent-or-design" — same override-architecture echo as vibes:7. No proper noun. The word "cage" is a project vibe keyword established earlier (network-is-the-cage). Clean.
 
-Tokens: "particular-gate-particular-body-particular-faction-direction, black-faction-contact-inferred-from-posture-and-location, color-sharpening-to-directional-inference-not-substrate."
+vibes:10: actor:taylor ++ "atonement-as-repetition" + keywords [named-person-closed-entry-in-the-ledger, systematic-override-rationalized-and-filed, the-ledger-entry-is-the-act]. "systematic-override-rationalized-and-filed" — I read this twice. "systematic-override" is close to the override-architecture register. This is a vibe-cloud keyword token, not prose text — it is internal operator vocabulary, not authored prose. But is this a fence-adjacent term? The fence card (cond-earth-bet-noun-fence.md) governs dialogue and inner monologue; it does not govern the vibe-cloud's internal keyword tokens (which are operator-facing, not reader-facing prose). The keyword names the behavioral pattern — Taylor rationalizing and filing systematic override decisions as ledger entries. This is a description of her moral pattern, not an Earth-Bet proper noun. "Systematic-override" is a compound descriptor, not a Worm classification term (like "trump" or "thinker"). The fence governs authored text; this is a metadata keyword. Clean under the fence's explicit scope (§ Dialogue, § Inner Monologue).
 
-"Inferred-from-posture-and-location" — this is canon-accurate mechanics for Taylor's pattern-read. She draws directional inference from physical-data (posture, gate, time-of-day, wrong-houred/wrong-warded) without claiming conclusion-level knowledge. "Not-substrate" marks the escalation from c05's substrate-ambient color (Rushwick-content carries resentment as a substrate-level property) to c09's particular-instance color (this body, this gate, this posture → this direction). Canon-consistent with how Taylor's shard-informed inference accumulates from ambient-level to particular-level.
+vibes:11: actor:taylor ++ "cold-utilitarian interiority" + keywords [face-persisting-as-feed-datum-after-accounting-close, ledger-does-not-ask-for-the-face-back, feed-record-outlasts-the-accounting]. Clean.
 
-**vibes:7 (episode-scope):**
+vibes:12: actor:taylor + "the-closed-entry-that-stays" + keywords [face-as-feed-datum-not-ledger-notation, record-persists-past-accounting-close, ledger-closed-feed-record-open]. Clean.
 
-"Double-omission-as-structural-fact-not-volitional-act" — critical token for canon-consistency. Taylor's moral_legibility axis is held at rank 5 (withheld awareness at design level). If the double-omission were rendered as volitional, it would require Taylor to have named the act, which would break the held axis. "Structural-fact-not-volitional-act" encodes the correct canon state for this chapter. The episode-scope token biases all operators toward the operational-discipline register and away from the recognition-beat register. This is correct handling of ignorance-played-correctly at the facet-layer.
+vibes:13 (episode): "accounting-close-with-name" + keywords [first-named-commission-formalized-and-closed, cold-formalization-to-irreversible-surrender-to-operational-consequence-to-accounting-close, the-arc-runs-in-one-chapter]. Clean.
 
-All token-algebra. All licensed-by sources map to proto-line IDs or state-update entries. No tags duplicated within the bundle.
+vibes:14 (actor:corwick): "detained-through-the-channel" + keywords [body-mapped-across-months-delivered-through-taylor-channel, detained-within-two-circuit-passes-of-delivery, feed-datum-persisting-in-the-record-after-detention, apparatus-confirmed-through-this-body]. Clean. The gate-1 carve-out (no formal Corwick card) is documented and the fan-out coherence justification is sound — this chapter's central event is the apparatus running through Corwick's body; the vibe-cloud requires him as a target.
+
+vibes:15 (loc:the-feed-station): "accounting-workspace-weight" + keywords [end-of-day-ledger-surface, wax-and-notation-and-silence, the-place-where-the-accounting-runs-and-does-not-run-clean]. Clean. Same gate-1 carve-out documentation.
+
+**Override-architecture echo in the vibe cloud:**
+
+The most sensitive items for this lens are vibes:7, vibes:8, vibes:9, and vibes:10 — all deploy variants of the override-architecture displacement at the keyword layer (apparatus-ran, network-executed-without-consent, systematic-override-rationalized). The fence governs dialogue and inner monologue, not operator-facing metadata keywords. None of these become prose; they bias authors toward register. The displacement is doing the right work: biasing the rendering register toward the override-architecture shape without naming Khepri. The keyword "systematic-override-rationalized-and-filed" in vibes:10 is the closest to a fence-adjacent term, but it is metadata-internal. Acceptable.
+
+**Carve-out scrutiny:**
+
+The c08 precedent for chapter-internal cast/location carve-outs is cited. The fan-out coherence gate (gate 7) is the governing rule for firing on affected entities. Corwick IS the detained entity. The feed-station IS the recurring accounting workspace. The justifications hold.
+
+## Entry callouts
+
+None.
 
 ## Convergence trace
 
-No Phase-5 auditor findings on vibes. RUBRIC-FIDELITY PASS. vibes:4 carve-out follows c08-established precedent.
+Auditor Earth-Bet scan: CLEAN on all 15 vibes entries. Confirmed independently. Auditor RUBRIC-FIDELITY findings §1 (vibes:14 + vibes:15 gate-1 carve-out, SIGNAL, margit-referral) noted — not a fence violation, a card-creation task. No Earth-Bet findings to converge on.

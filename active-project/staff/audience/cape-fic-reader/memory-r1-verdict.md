@@ -2,30 +2,21 @@
 reviewer: cape-fic-reader
 facet: memory
 cycle: 1
-episode: b01-c09
-date: 2026-06-01
-depth-pass: yes
+episode: b01c10
+date: 2026-06-02
 verdict: accept
 ---
 
-# Verdict: ACCEPT
+# Verdict reasoning
 
-## Reading
+Two fires in a 27-bone climax chapter, both in the back-half, both on peak-shadow bones, both carrying a distinct register: mem:1 @16 is the KL institutional-machinery clamp (the side-exit keeping the shape of how old apparatus empties corridors), and mem:2 @24 is the override-architecture displacement (the feed-record closing like the architecture closed around bodies it never asked). From a cape-fic reader's perspective these are the right kind of memory fires: they don't announce themselves as flashbacks or callbacks, they arrive as the narrator recognizing a structural pattern she already knows the shape of. The KL clamp is Westeros-native knowledge applied to the current event; the override-architecture displacement is the Earth-Bet residue that this reader is specifically tracking through Taylor's behavior without it being named. Both fires are at quiet bones (peak-shadows, not the inscription or detention peaks themselves), which is the correct placement — a memory fire at @18 (the apparatus-ran central event) would tell this reader "the machinery ran" after they just watched it run; at @16 it tells them "she has seen machinery like this before and knows the exit geometry." That's actually useful asymmetric information. The doubled-register is satisfied and the Khepri-ABSENT discipline at @24 is exactly correct: the override-architecture residue echoes without naming, which is more interesting to a cape-fic reader than a named callback would be. The provisional NI-spine dependency was resolved by the R2 parallel adds (narrator:7/@16, narrator:8/@24 confirmed in cite-index). This clears the mechanical concern; the adversarial question is whether the memory fires would hold without the NI spine — and the answer is yes, both carry genuine monument-grade resonance independently.
 
-Two entries, 7.4%, within the 5-12% band. Both fire on scene-map peak-bones. Both carry NI spine co-citations. Peak-bone exception documented with two-part test (displacement-clamp construction + resonance-not-action argument). Scene-C deliberately silent.
+# Entry-level callouts
 
-**mem:1 @8** — "the architecture takes one more set of days and does not distinguish the keeping of a route from the keeping of a person; it has indexed lives at a scale this lane could not picture, and the keeping never asked."
+None.
 
-The displacement-cue: an apparatus that has indexed lives at scale. The clamp: it never asked. The resonance-not-action hold: this fires on what the content of the filing IS, not on the physical filing act. What the content is: Taylor is adding Wren's route to a system that does not categorically distinguish a person from a supply-cart route. The memory fires because the architecture behind the act has that property — "it has indexed lives" is the monument. The architecture is monument-movement-routing-without-consent.
+# Convergence trace
 
-With the depth-pass, NI:3 @9 now carries the cold-stiffened-hand image that makes the route-vs-person thesis physical. The memory entry fires one bone earlier (@8) and provides the conceptual register; the NI fires one bone later (@9) and makes it physical. That is a layered double-hit on the same idea: concept-first in memory, body-then in NI. The sequencing is correct and non-redundant.
-
-**mem:2 @18** — "she reads the gate's loyalty the way a person reads a thing already written — the split's ending held at a remove no one standing in this lane could hold, a direction she did not infer so much as recognize."
-
-The displacement-cue: a faction-war whose ending she carries foreknowledge of. The clamp: Westerosi foreknowledge. The resonance-not-action hold: the fire is on what the categorization-act IS (a recognition of an already-written outcome), not on the physical act of filing the posture-class. "A direction she did not infer so much as recognize" — that is the board-state asymmetry I track: she carries information that lets her read the gate without computing it fresh.
-
-Doubled-register: Earth-Bet monument (mem:1) + Westerosi clamp (mem:2). Correct.
-
-## Convergence trace
-
-No Phase-5 auditor findings on memory. RUBRIC-FIDELITY PASS (peak-bone exception cleared with documented two-part test).
+- Auditor CONSTRAINT finding: memory NI-spine verification — both resolved (cite-index co=[narrator:7] at @16, co=[narrator:8] at @24). PASS per auditor. This reviewer concurs.
+- Auditor CONSTRAINT finding: memory target-reference card-resolution-class (cond-* vs monument-*), both SIGNAL, margit-referral open. Not a content concern from this reviewer's perspective — the slugs resolve and the register is correct.
+- Auditor DEDUP flag: mem:2@24 + narrator:8@24 figurative-register proximity (both deploy override-architecture comparison at same anchor). This reviewer registers the overlap but reads it as a deliberate rhyme — memory carries the record-closing-like-architecture comparison; NI carries the corridor-closing-like-channel comparison. Different vehicles pointing at the same tenor. A cape-fic reader tracking the override-architecture residue finds this convergence meaningful rather than redundant.

@@ -2,26 +2,20 @@
 reviewer: cape-fic-reader
 facet: feeling
 cycle: 1
-episode: b01-c09
-date: 2026-06-01
-depth-pass: yes
+episode: b01c10
+date: 2026-06-02
 verdict: accept
 ---
 
-# Verdict: ACCEPT
+# Verdict reasoning
 
-## Reading
+Two fires on a climax chapter, both on the correct beats — the surrender at @10 and the terminal face-persistence at @27 — and both in a genre register this reader can use. feel:1 at @10 is a single shortened breath before the hands move to the channel: that is a cape-fic tell, not a literary tell. The body-signal before the action is the kind of characterization that tells a tactically-engaged reader that the cost registered on the body even when the analytic voice won't name it. It adds information the proto-line and NI don't carry (the NI at @10 is all accounting register — the conversion priced and paid — with no body in it at all). feel:2 at @27 is the gaze that stays on the lower-gate posture after the ledger closes: again, body-signal over interiority, and the not-turning is the specific tell this reader needs to clock that the ledger's close didn't actually close anything. The chapter's thesis — formalization and detention are the same event — hinges on the final weight landing, and the feeling entry at @27 is what ensures "corwick squares the feed-record" reads as weight, not as a notation state-change. Both fires are expressed: no, which is correct for a silent chapter with no audience inside the scene. The 7.4% vs 2-5% band overage is a denominator artifact on 27 bones; forcing a single fire would require cutting either the surrender beat or the terminal weight, both of which are load-bearing for this genre reader's investment.
 
-Two entries, 7.4%, within the per-fire defensibility band. Per-scene cap: 1 each in s01 and s02, scene-C silent.
+# Entry-level callouts
 
-**Depth-pass check:** The file notes that the new cold-on-body bones (@9 cold stiffens fingers / @15 cold weights shoulders) are physical somatic material but the per-scene cap is already held by feel:1 and feel:2. The decision not to fire an additional feeling-flag on the new cold bones is correct — they carry their load as sensory entries, not feeling-flags. If feel:1 and feel:2 were already saturating the per-scene cap, adding a third and fourth feeling entry would dilute the discipline and blur the distinction between somatic-tell (the character's involuntary passive-radar) and physical-sensation (the chapter's embodiment bones). Correct decision.
+None.
 
-**feel:1 @7** ("her gaze holds on the bread-seller's corner a beat before Wren reaches it") — the gaze arrives before Wren. The attention-ahead-of-the-event is the passive-radar behavior the card names. I don't need to know that Taylor is tracking Wren's route; the body tells me she has already modeled the route well enough to pre-position the gaze. This is information asymmetry carried somatically. It reads correctly as an in-chapter confirmation of the route-as-legible-pattern theme.
+# Convergence trace
 
-**feel:2 @16** ("she goes still at the feed-edge as the courier's body turns toward the second man") — the stillness is processing. The body recognizes a pattern before the categorization fires (categorization fires at @18). The feel entry is correctly positioned before the NI entry — somatic-tell precedes the named categorization. This is the SW-3 recognition-sequence correctly staged: feed-return (@14) → embodiment/watch (@15 cold weights) → tell (@16 stillness) → Corwick signatures (@16-@17) → categorization (@18). The feel entry is part of the sequence, not a standalone emote.
-
-expressed:no on both. Scene-C silence maintained: no somatic tell at the double-omission close. That silence is the correct honoring of the moral_legibility hold.
-
-## Convergence trace
-
-Auditor signal-fb-002 (feeling at 7.4%, denominator-collision above 5% band ceiling) — denominator-driven, per-fire defensibility held, advisory only. No HARD.
+- Auditor FREQUENCY-BAND finding: feeling 7.4% breach-high +2.4pt, documented defense (short-chapter denominator + both fires load-bearing on a 2-moral-cost climax), SIGNAL. This reviewer's independent read concurs: the overage is arithmetic, not content excess. Both fires are the chapter's structural interior beats; neither is padding.
+- The NI-anti-duplication checks noted in the feeling file (@10 somatic vs NI@10 accounting register; @27 body-holding vs NI@27 record-persistence cognition) pass from this reader's perspective — the feeling entries and the NI entries are genuinely complementary, not redundant. The feeling shows the body; the NI shows the cognitive registration. A cape-fic reader tracks both layers.

@@ -2,30 +2,27 @@
 reviewer: dark-fantasy-reader
 facet: location-state
 cycle: 1
-episode: b01-c09
-date: 2026-06-01
-depth-pass: yes
+episode: b01c10
+date: 2026-06-02
 verdict: accept
 ---
 
-# Verdict: ACCEPT
+## Reasoning
 
-## Reading
+Eight entries. The chapter's geography does what dark geography must: it keeps a score the text refuses to announce. The stone-post at the lower gate (@2, @9) is not decoration — it is the anchor point against which "road-geometry-minus-one" (@15) becomes readable as something that happened to a person, not as a data state. That sequence — baseline established, baseline minus one — is the chapter's cruelest accounting, and loc-state earns it by establishing the geometry before the subtraction.
 
-Five entries. No mood-painting, no atmosphere-for-its-own-sake. Each entry names a specific physical position and carries its freight forward.
+The lane-junction-patrol entry (@6 / @17) is the one I kept waiting to see done wrong. It is not done wrong. "Stationary post-detention patrol-posture where there was none" — the geography records the consequence without naming the consequence. A place changed. The change has the shape of a conclusion the text refuses to name aloud. That is the correct register for apparatus harm: the world does not annotate what it did.
 
-**Depth-pass check:**
+Feed-station bracket: scene-A entry (@1) gives the cold-morning surface. Scene-D entries (@7, @8) give the ledger-open surface with the stone-post geometry appearing "in the feed-record as the accounting runs." That second detail — the lower-gate geometry bleeding into the accounting session — is the sharpest move in the file. The place Taylor mapped Corwick across months is present inside the room where she writes him closed. The loc-state carries this without pointing at it.
 
-The depth-pass added four embodiment/grounding bones: @2 (feet on lane-stone), @3 (bay-damp on the stone), @9 (cold stiffens fingers), @15 (cold weights shoulders). The location-state file carries the sensory-baseline fields that anchor these bones. Loc-state:1 @1 carries: "cold-season morning lane-stone, dry-stone pre-damp register... anchors sensory:4 @3 old-state dry-stone, sensory:5 @9 old-state warm-hand cold-season-morning context." Loc-state:3 @11 carries: "evening hill-lane ambient, cooled faster than the lower wards... anchors sensory:6 @15 old-state unburdened evening-cold context."
+The wax-pliable to wax-sealed entry (@3 / @12) is the one flat note — functional, not loaded. It does its job marking the channel sealed on Corwick. But in a chapter this calibrated, it reads as notation. Minor. Not a failure.
 
-What I am checking: does the location-state establish the cold as a running world-fact before the body entries land? Yes. The cold is named in the sensory-baseline at loc-state:1 before @3 and @9 arrive. The evening-cold is named in loc-state:3 before @15 arrives. The world is cold before anyone reports it being cold on their body. That is the world-before-protagonist register I read for.
+No entry stages the location for the protagonist's benefit. Every entry records a state the world moved into independently. This geography is hostile the right way.
 
-Loc-state:4 @14 ("courier-at-stone-post, lane-distribution holds empty until his form returns to it") — the "lane-distribution holds empty until his form returns" phrasing is exactly what I want from dark-fantasy environmental writing: the place was empty and then the wrong body filled it. The body in the wrong place is the danger signal; the location-state records the state-transition from empty to occupied.
+## Entry callouts
 
-Loc-state:5 @21 ("station-surface-clear — ward-coverage notes and the unsealed packet") — "unsealed" is load-bearing. The location-state is marking the workspace state before the sealing event. The seal coming down is consequence; this entry is the state from which consequence propagates. That is how consequence-that-propagates works in the file-level architecture: the before-state is named before the event changes it.
-
-No entries over-paint. The sensory-baseline fields are dense but they are plumbing, not prose, and the plumbing connects to the bones that need it.
+None. No fires challenged.
 
 ## Convergence trace
 
-Auditor: RUBRIC-FIDELITY PASS. Sensory old-state lineage ANCHORED all 6. signal-con-001 (exposition:3/@11 co-fire) — distinct-content argument holds.
+Auditor SUPERFLUOUS flag on loc-state lonely entries (@1, @9, @12, @20, @23): resolved as warranted — scene-anchoring at-establishment convention is the correct disposition. Concur. The baseline is what makes @15 cost something.

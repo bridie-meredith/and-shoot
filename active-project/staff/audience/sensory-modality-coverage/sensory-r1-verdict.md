@@ -2,102 +2,104 @@
 reviewer: sensory-modality-coverage
 facet: sensory
 cycle: 1
-episode: b01-c09
-date: 2026-06-01
+episode: b01c10
+date: 2026-06-02
 verdict: accept
-run: depth-pass-re-run (6-entry facet; DEC-0063)
 ---
 
-# Sensory Modality Coverage — Depth-Pass Verdict (b01-c09)
+# Sensory Modality Coverage — R1 Adversarial Verdict
 
-## Reading stance
+## Binding exemption acknowledgment
 
-File-level only. I tally modalities, check distribution against the episode's shape and location palette, look for silent gaps, and verify per-scene caps. I do not argue per-entry disambiguation or old-state lineage — those are other critics' axes. I count what's here and ask whether the episode has sensory texture.
-
-Binding exemption in force: I cannot fault on density grounds for sensory:2/4/5/6 (grounding-ledger grd-001..004 licenses them as cap-exempt per PROP-0022). The full 6-entry density (22.2%) is exempt. I may attack craft.
+PROP-0022: all 7 fires are grounding-ledger-licensed (grd-001..007; status: satisfied). Density/over-band grounds are not available attack vectors. This review attacks modality distribution and craft only.
 
 ---
 
 ## Modality tally
 
-Total bones: 27
-Total fires: 6
-Density: 6/27 = 22.2% (above standard ceiling; cap-exempt per grounding-ledger grd-001..004 + PROP-0022 binding exemption)
+| modality | fires | protolines |
+|----------|-------|------------|
+| thermal  | 2     | @3, @19    |
+| sound    | 2     | @10, @25   |
+| smell    | 1     | @13        |
+| light    | 1     | @15        |
+| tactile  | 1     | @22        |
 
-| Modality | Fires | Entries |
-|----------|-------|---------|
-| thermal | 2 | sensory:1 @11, sensory:4 @3 |
-| tactile | 3 | sensory:3 @27, sensory:5 @9, sensory:6 @15 |
-| light | 1 | sensory:2 @14 |
-
-Distinct modalities: 3 (thermal, tactile, light). Floor ≥2 exceeded. No monoculture.
-
-Dominant modality: tactile at 50% (3/6). Is this a single-channel-read problem? In a cold-season morning outdoor circuit + station-close chapter, tactile is the natural dominant channel — body-in-cold, wax-in-hand. The tactile fires are distributed across three distinct sub-registers: cold-stiffened hand (@9), cold-weighted shoulders (@15), wax-set-firm (@27). Three distinct tactile contexts, not repeat-saturation of one touch register.
-
-Thermal at 2 fires (33%) covers the two environmental transitions (scene-A → scene-B; bay-damp place-ground). Light at 1 fire (17%) covers the single visual-event (courier resolves). The light thin-coverage matches a chapter that has one visual-resolution moment and is otherwise interior-feed / administrative.
-
-Distribution is appropriate for the palette. I do not flag monoculture.
+5 distinct modalities. No modality exceeds 29% share. No modality at or near the 67% dominance ceiling.
 
 ---
 
-## Per-scene distribution
+## Scene-by-scene distribution
 
-Scene-A @1-@10: 2 fires (sensory:4 @3, sensory:5 @9). Cap ≤3 — at 2, within cap.
-Scene-B @11-@20: 3 fires (sensory:1 @11, sensory:2 @14, sensory:6 @15). Cap ≤3 — at cap.
-Scene-C @21-@27: 1 fire (sensory:3 @27). Cap ≤3 — well within.
-
-Scene-B at cap is the peak-bearing scene (Corwick appearance + political_register axis move). Correct weight: the chapter's most information-dense scene carrying the most sensory fires. Scene-A at 2 fires launches the cold-place embodiment. Scene-C at 1 fire closes with the terminal tactile image. This matches the rising-to-quiet-peak (scenes A+B) / falling-to-thesis-image (scene-C) dramatic shape.
-
----
-
-## Location palette check
-
-Scene-A locations: oc-hook-precinct + oc-stitch-house-lane (outdoor lanes, cold-season morning, bay-damp cold).
-Natural palette: thermal (cold stone, morning bay-damp), tactile (damp stone underfoot, cold in the hands), smell (stitch-shop interior / tallow-cloth on open door, bread-seller corner).
-Fires: thermal @3 (bay-damp cold on stone), tactile @9 (cold stiffens fingers). 
-Smell: zero fires. The @5 "Considered and refused" section names the stitch-shop door smell (tallow-and-cloth-interior) as a genuine Q1+Q2 pass refused for scene-A density control (priority brief: thermal/tactile cold-place grounding, not smell). The refused candidate is explicitly documented. Given the binding exemption prevents density-based attacks, the smell sacrifice is an editorial choice not a coverage failure. I note it as an observation.
-
-Scene-B locations: oc-dragonpit-margin + lower-gate (outdoor hill lane, evening, cold deepening).
-Natural palette: thermal (evening cool, hill-side loses day-heat), light (evening ambient lane, courier appearing in visual feed-distribution), sound (supply cart on gate-road — ambient baseline level, not inflection event).
-Fires: thermal @11, light @14, tactile @15 — three distinct modalities covering the three scene-B perceptual channels. No missing palette modality. Sound absence: the supply cart (@12) and stone-post (@13) are orientation bones, environmental-baseline-pair per scene-map. Ambient sound level on a supply-lane approach belongs in loc-state sustained-baseline, not sensory-flags inflection. No discrete sound event in scene-B rises to an inflection (no crack, no silence-cut, no distinct sound onset). Sound absence is correct here.
-
-Scene-C locations: the-feed-station (indoor accounting surface, end of day).
-Natural palette: tactile (paper folding, wax handling, seal-press), smell (molten wax at application), sound (stiff paper, wax press).
-Fires: tactile @27 (seal sets firm). Smell (@23 molten wax) was considered and refused per "Considered and refused" — cluster prevention with tactile @27 on the same prop. The terminal tactile image is stronger; the smell was a legitimate cull. No sound fire for the sealing act — "seals the packet" (@23) is a bare verb but the wax-sealing sound is sub-threshold (soft press, not audible crack per the calibration anchors). Scene-C one-fire end is correct for a thesis-image close.
+- **Scene-A (@1–@5):** 1 fire — thermal only (@3, bay-cold-on-morning-stone). Single-channel.
+- **Scene-B (@6–@12):** 1 fire — sound only (@10, stylus-on-channel-surface). Single-channel.
+- **Scene-C (@13–@19):** 3 fires — smell (@13), light (@15), thermal (@19). Three distinct modalities.
+- **Scene-D (@20–@27):** 2 fires — tactile (@22), sound (@25). Two distinct modalities.
 
 ---
 
-## Silent-gap cross-check (loc-state sensory-note vs. sensory-file)
+## Distribution assessment
 
-The loc-state file (location-state-b01-c09.md) carries 5 entries:
-- loc-state:1 @1: sensory-baseline described in text (cold-season morning, dry-stone pre-damp, warm-hand context) — no discrete event-language triggering a sensory-flag obligation.
-- loc-state:2 @5: no sensory note.
-- loc-state:3 @11: sensory-baseline described (evening hill-lane, no non-baseline body present) — no discrete event-language.
-- loc-state:4 @14: names courier-at-stone-post — this is a state-condition not an event-with-sensory-note.
-- loc-state:5 @21: tactile-prop-baseline (sealing-wax pliable-warm pre-application) — named as a baseline, not a sensory-event note requiring companion flag.
+**File-level shape: genuine spread, not monotone.**
 
-No loc-state entry names a discrete perceptual event (thermal-release language, audible-texture-change language, smell-drift language) without a companion sensory flag. The cross-facet silent-gap rule (loc-state names event → sensory-file must companion-flag) is not triggered. Clean.
+The dispatch brief's primary worry — does thermal-cold dominate and flatten a silent chapter — does not materialize. Thermal fires twice (@3 and @19) but is absent from scenes B and D. Scene-D, the near-pure accounting scene with the highest AIRLESS risk for abstraction, carries tactile and sound, not thermal. The cold-place register does not coast on a single channel.
+
+**The cross-chapter shape has movement.** Thermal grounds the cold body at establishment (scene-A), gives way to sound for the physical surrender act (scene-B), returns as one of three cross-modal fires at the chapter's rising-to-peak scene-C, then hands off entirely to tactile contact and sound-close in scene-D. This is a progression, not a loop.
+
+**The sound arc merits specific notice.** Sensory:2 @10 (stylus-on-channel-surface, up) and sensory:7 @25 (silence-on-ledger-close, drop) form a deliberate bracket across the chapter — the writing-onset at the surrender act and the writing-stop at the accounting-close. The pair is architecturally clean: two fires, same modality, separated by the chapter's full middle third, arrival and departure of the same register. The grounding-ledger author named this explicitly (grd-007: "completes the sound arc with sensory:2"). The arc holds.
 
 ---
 
-## Inflection-pair coherence
+## Scene-level single-channel concern: scenes A and B
 
-No drop/up pairs on the same modality exist in this file. Thermal fires twice (both down). Tactile fires three times (all down). Light fires once (spike). No inflection-pair coherence check needed.
+Scenes A and B are each single-fire, single-modality. By this reviewer's card, "per-scene caps honored but per-modality density unbalanced within a scene → flag." These scenes have cap-honored sparsity (1 fire each), not within-scene imbalance. The flag trigger does not fire: you cannot be unbalanced per-modality with one fire.
+
+The substantive question is whether either scene is modality-starved in a way that should have licensed a second fire. Checking the location's natural palette and the rubric:
+
+**Scene-A:** feed-station, cold-season morning. Natural palette: thermal (bay-cold), sound (quiet before writing-onset), light (morning). The thermal anchors the "person in a cold place" mandate (@3 W4). Sound fires at @10 — correct placement at the act, not the establishment. Light: morning ambient, no discrete inflection event at scene-A (no lamp-light, no window-shift, no sudden illumination change named in loc-state:1). Smell: station has no named olfactory event in loc-state. Single thermal fire at scene-A is not a silent-gap — it is the scene's genuine inflection and the only one the palette earns at establishment.
+
+**Scene-B:** feed-station, writing-onset. The physical act of translating the body-map into channel register at @10 is the scene's perceptual event. Sound on the writing-onset is the correct modality for this beat (the physical act's audible dimension). No parallel thermal inflection at @10 (the bay-cold was established at @3 and holds; @10 is not a new thermal inflection, it is sustained level). No smell, no light event. The scene is sparse by design — scene-B rises through the surrender act into scene-C. Single sound fire is appropriate.
+
+No silent-gap finding on scenes A or B.
+
+---
+
+## Dominant-channel test on scene-C
+
+Scene-C is at cap (3 fires). Modality spread: smell, light, thermal — three distinct modalities, no repeat. This is the rubric's preferred pattern ("two sound-spikes in one scene → cull the weaker; sound + thermal + light all firing once each → all three permitted"). Scene-C passes the per-scene modality-diversity test without contention.
+
+The only possible craft concern: the refused @17 (Gold Cloak pair posted — light, second visual fire in scene-C) was correctly culled in favor of @15 (road loses Corwick — light). The rubric notes cite @15 as the stronger disambiguation need (bare "loses" vs. "posts" with "Gold Cloak pair" self-carrying the visual register of figures appearing). Cap compliance plus modality diversity is satisfied. The cull was correct.
+
+---
+
+## File-level silent-gap check
+
+The chapter is a silent, single-POV, cold-morning-to-accounting arc. Natural palette: thermal/cold, sound (writing acts), light (exterior circuit), smell (outdoor circuit), tactile (stone surfaces).
+
+Each palette element fires at least once. Humidity: no discrete humidity inflection named in loc-state or bones (cold-dry morning is sustained ambient, not inflecting). Pressure: no discrete pressure event. These are absent by correct rubric logic (sustained-level → loc-state, not sensory-flags; no rupture event earns a pressure fire).
+
+No documented inflection point (lamp-lighting, candle-catching, weather change, gate-opening) goes unaddressed in the sensory file. The Gold Cloak patrol posting (@17) was assessed and culled correctly. The wax-drying (@12) is a state change, not a perceptual modality inflection on the audience side. No silent-gap finding.
+
+---
+
+## Entry-level callouts
+
+No callouts. All 7 fires satisfy this reviewer's lens (genuine spread, no per-scene imbalance, no modality dominance, no silent-gap). Craft is clean: the sound arc brackets the chapter, thermal grounds the cold body across two structurally distinct scenes without accumulating into monotony, scene-D's tactile-on-wrist correctly replaces thermal-on-body for the transition from walking-a-road to sitting-at-a-surface.
+
+---
+
+## Convergence-trace
+
+The auditor's Phase 5 report (facets-final-audit.md § RUBRIC-FIDELITY finding 6) ran the modality distribution check: "5 distinct modalities... thermal 2/7 = 29% (below 67% ceiling); sound 2/7 = 29%; no single modality ≥ 67%. PASS." This reviewer's independent file-level read converges: the distribution is genuine and the ceiling is clear. The auditor's mechanical scan and this adversarial read reach the same conclusion by independent path.
+
+The auditor did not surface a scene-level single-channel concern (scenes A and B). This reviewer examined it directly and finds it does not warrant a finding — single-fire establishment scenes are not per-scene imbalance, and neither scene has a missed palette inflection.
+
+No auditor finding overlaps this reviewer's reading in a way that would sharpen or contradict. The sensory file is coherent with the mechanical audit.
 
 ---
 
 ## Verdict
 
-**ACCEPT**
+**ACCEPT.**
 
-Three distinct modalities (thermal: 2, tactile: 3, light: 1) — floor of ≥2 exceeded, no monoculture. Per-scene caps honored at all three scenes (A: 2/3, B: 3/3, C: 1/3). Distribution tracks the episode's dramatic shape — scene-B at cap is correct for the peak-bearing scene; scene-C one terminal fire is correct for the thesis-image close. Location palettes covered: thermal+tactile for cold-season outdoor morning, thermal+light+tactile for evening hill-lane courier scene, tactile for station-close.
-
-No loc-state sensory-event without sensory-file companion (silent-gap rule clean). Density is 22.2% above standard ceiling; the grounding-ledger (grd-001..004) licenses all excess density as cap-exempt; binding exemption in effect per PROP-0022 and DEC-0063 dispatch instructions.
-
-Observed cull-sacrifices (not blocking): scene-A smell (@5 tallow-cloth), scene-C smell (@23 molten-wax). Both explicitly documented in "Considered and refused"; both are reasoned sacrifices, not oversights.
-
-## Convergence trace
-
-- Auditor signal-fb-001 (FREQUENCY-BAND): density 22.2%; non-exempt residual 2/27 = 7.4% marginally above 6% standard ceiling for sensory:1/@11 + sensory:3/@27. I note this but cannot fault on density per binding exemption. My verdict is modality-distribution focused; the marginal non-exempt exceedance is a SIGNAL advisory only.
-- Auditor note on modality count (3 modalities > floor of 2): the V3 short-chapter exemption clause (bone_count < 30 AND modality count = floor of 2) does NOT apply here because modality count is 3. I confirm this reading: 3 modalities at 27 bones does not trigger the automatic relief; the standard ceiling applies to the non-exempt fires. The grounding-ledger exemption, not the V3 short-chapter clause, is the operative authority for the depth-pass adds.
-- Auditor CURVE-SHAPE PASS: consistent with my distribution analysis (rising + falling-to-thesis-image shape supported by fire distribution).
+Modality spread across 5 channels is genuine. No channel dominates. Scenes A and B are appropriately sparse (establishment and surrender-onset; single fires on the correct modality for each scene's function). Scene-C carries three distinct modalities at cap with no repeat, no cull error. Scene-D transitions correctly from external-cold (thermal, scene-C) to contact-surface (tactile, scene-D) plus the sound-arc closing drop. The sound arc (@10 onset / @25 close) is the chapter's best structural sensory move — it brackets the writing register across the full 25-bone span without redundancy. The silent-chapter does not flatten into a single-channel cold read.

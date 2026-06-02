@@ -2,36 +2,20 @@
 reviewer: cape-fic-reader
 facet: state-updates
 cycle: 1
-episode: b01-c09
-date: 2026-06-01
-depth-pass: yes
+episode: b01c10
+date: 2026-06-02
 verdict: accept
 ---
 
-# Verdict: ACCEPT
+# Verdict reasoning
 
-## Reading
+The state-updates graph tracks the exact information a cape-fic reader needs to know who moved what and at what cost: the wax-sealed channel (@12), the corwick-absent road (@15), the Gold-Cloak-pair-posted junction (@17), the ledger opened and closed (@20/@25), Corwick's name written into the permanent record (@21), and the feed-record entry persisting past closure (@27). These are the board-state changes that make the formalization+detention read as a single operational arc. The actor-slice is the more interesting half — six axis-moves that trace the chapter's cost structure cleanly: position_prot_rise advances twice (the instrument standing rises as the function is named and confirmed), moral_framework drops twice (once at the surrender, once at the inscription), social_tether_antag rises in two steps (Otto's leverage made real), and the social_tether_prot_rise closes at @26 (Sera's protection anchor confirmed). That's six moves on four distinct axes across a 27-bone chapter, which is not overloaded — each move marks an irreversible event the reader tracked on-page. The NI co-citation absences on @4/@11/@18/@21/@25/@26 are flagged by the auditor as SIGNAL-only, and from this reader's perspective the apparatus-muffle defense is correct: a NI fire at @18 (the apparatus-ran confirmation) or @21 (the inscription act) would tell this reader something they just watched happen with no new information added.
 
-Six entries total: 2 actor-state, 4 env/prop-state. Lean, correct for a quiet chapter.
+# Entry-level callouts
 
-**Actor state:**
-- state:5 @8: `relational_anchor_status_axis: 2 → 2.5` — fires on @8 ("taylor files wren's route"), which is scene-A peak-bone per scene-map. The route-becomes-a-pattern event is exactly the cl-d08 first-tranche move. The old-state (2) traces to b01c08 record. NI co-citation confirmed (narrator:2 @6 and the scene-map peak-bone confirmation).
-- state:6 @18: `political_register_prot_axis: 2.5 → 3` — fires on @18 ("files the posture-class"), scene-B peak-bone. Black-faction-contact inferred from physical data at a specific gate. Old-state 2.5 traces to prior chapter. NI co-citation confirmed (narrator:5 @18).
+None.
 
-Both axis-moves are earned consequences of legible events. No pre-emption. No lag.
+# Convergence trace
 
-**Prop state (oc-jarvis-packet lifecycle):**
-- state:2 @22: assembled → folded
-- state:3 @23: unsealed → sealed (central event)
-- state:4 @27: sealed → dry (terminal image)
-
-The lifecycle is beat-for-beat sequential. No state fires before its anchor bone. The "dry" state at @27 is what makes the double-omission permanent — the prop-state captures the irreversibility at the correct terminal bone. Board coherence maintained.
-
-**Env state (oc-ward-coverage-notes):**
-- state:1 @10: content-write at "the ward-coverage notes receive the boundary geometry." The boundary geometry (southward extension to stitch-shop/water-seller lanes) is written into the deliverable substrate here. This is the omission made visible in the record: the notes receive geometry, not a person. The old-state (hook-rushwick-oswyn-corridors) traces correctly to b01c08 coverage_active_range.
-
-All old-states trace. All new-states persist through chapter-close. No registration-as-state contamination. Author-authority split (Taylor fork = actor:taylor, studio = props/env) is respected.
-
-## Convergence trace
-
-No Phase-5 auditor findings on state-updates. RUBRIC-FIDELITY PASS.
+- Auditor CONSTRAINT finding: six actor-state NI co-citation absences, all documented defense, all SIGNAL. This reviewer accepts the defense on all six — the muffle disciplines and the Khepri-ABSENT fence are tactically correct from a genre payoff standpoint; a NI fire on the inscription act at @21 would narrate significance the reader just directly observed.
+- Auditor DEDUP note: state:5/@21 and state:13/@21 confirmed as different targets (prop vs actor). Non-issue.

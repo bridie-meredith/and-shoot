@@ -2,34 +2,22 @@
 reviewer: cape-fic-reader
 facet: exposition
 cycle: 1
-episode: b01-c09
-date: 2026-06-01
-depth-pass: yes
+episode: b01c10
+date: 2026-06-02
 verdict: accept
 ---
 
-# Verdict: ACCEPT
+# Verdict reasoning
 
-## Reading
+Four entries, three mandatory and one ledger-licensed, and all four land correctly for a cape-fic reader. The prior-episode-bridge (@0) is the board-refresh this persona requires: the arrangement-still-informal state and Corwick-body-mapped-and-withheld-nine-circuits are the exact preconditions that make the chapter's two events (formalization, surrender) read as changes against a running state rather than cold new machinery. Without that bridge, a cape-fic reader who tracks who-knows-what-when would enter scene-A with no baseline for why the formalization costs anything. The "two days later" scene-orient at @13 is minimal and load-bearing — the two-day causal-timing relation (delivery to detention) is the chapter's central tactical fact and this reader needs it named; the surrounding loc-state and sensory entries can carry place and atmosphere, but the interval is exposition's specific job and it does it in three words. The Gold Cloak inline-appositive at @17 is exactly correct: this reader structurally lacks Westeros institutional role-terms, and "Gold Cloak pair — the City Watch, the crown's armed guard in King's Landing" orients the institution without pre-drawing the post-detention significance (that's the bone's job). The ledger-licensed exposition:4 at @2 (the stated consideration: Sera's protection continues as the consideration the function is owed against) passes under the binding exemption (ctx-001, licensed-context-exception), and from this reader's genre perspective it is genuinely needed — without the gain-pole named, the formalization reads as pure cost and the who-pays-what-for-what coherence that a cape-fic reader tracks breaks. The voice-register of exposition:4 ("the consideration the function is owed against") is dense but survives as Taylor's accounting register; the /and-stitch Phase 4 advisory for smoothing is noted and appropriate. The auditor's AP-SCAN voice-register-density flag on that specific clause is the right signal for the stitcher to address. No revise warranted here: the graph does the orientation work correctly and frugally for this reader's needs.
 
-Three entries: prior-episode bridge @0, scene-open-orient @11, first-mention-place @12.
+# Entry-level callouts
 
-**Depth-pass check — @0 calendar fold:**
+None.
 
-The prior-episode bridge now opens with: "It is the Crone's stretch still, the bay-damp on the morning stone, the cold not lifting before the first bell."
+# Convergence trace
 
-Does this read as natural clock-continuity or bolted-on?
-
-It reads natural. "The Crone's stretch still" — "still" is doing the work. The word "still" marks this as continuity: same season, same cold, not a new weather event. The c08 bridge presumably ended in that cold; c09 opens by confirming the cold hasn't moved. A reader carrying the c08 cold season reads "still" as a correct temporal anchor. A reader who didn't catch the c08 season reads "the Crone's stretch" as a season-name that places the chapter in a specific point on the Faith's calendar — and the sensory body of the first scene (@3 bay-damp beads the lane-stone) confirms it materially. The calendar clause is not a gloss; it is a reader-state reset that matches the physical opening.
-
-The full bridge refreshes the board correctly: arrangement holds, coverage extended, Wren's days now legible, courier named (but errands unasked), Jarvis line at standard interval. That is every board-state item I need before the s01 surveillance circuit makes sense as a surveillance circuit and not as curious wandering. "The harm I can prevent is still the only column that closes" — the operational frame is named, the character's self-justification register is named, and the word "still" appears again, marking this as a continuing stance. That "still" carries the chapter's running discipline.
-
-**@11 scene-open-orient:** "That evening, the second circuit ran the Dragonpit margin — the outer lanes south, toward the hill." Thirteen words. The "second circuit" tells me this is the same day's scheduled pass, not an ad-hoc investigation. That changes how I read everything in s02: Corwick appearing is not the reason she ran the circuit; the circuit found him. The distinction matters for competence-reading — she is operating the architecture, not reacting to him. Without this orient, the scene reads as investigation-triggered-by-Corwick, which breaks the operational-discipline read. Correctly placed and earns its keep.
-
-**@12 first-mention-place:** "the lower gate — the Dragonpit's court-margin side, under Rhaenys's Hill, where bodies on the heir's business pass and not the Queen's: not a Green-faction gate." Thirty words, exactly at cap. This tells me the faction-adjacency of the gate before the faction-inference fires. Without it, "a man at the wrong gate" is a logistics observation; with it, the gate's faction-alignment makes the wrong-houred man's presence directionally informative. The entry uses em-dash fold at @12 (the supply cart marks the lower-gate road), which is the first-mention-place bone. Faction-frame self-orients via "the Queen's" and "the heir's" without naming Alicent or Rhaenyra — and without naming the household. The entry does not pre-draw the inference; it loads the board so the inference is followable.
-
-All three entries are individually mandatory. Sparsity at 11.1% above the rubric band but each entry passes the individually-mandatory test. No entry over-explains. No register-glossing of the two non-glossed characters (Wren, Corwick). Fence-audit: zero dialogue bones in the chapter; em-dash fold permitted.
-
-## Convergence trace
-
-Auditor signal-fb-003 (sparsity 11.1%, bridge +2 words over cap) — both are advisory SIGNAL, not HARD. signal-con-001 (@11 co-fire with loc-state:3) — distinct-content argument holds (circuit-sequence relation is not in loc-state:3). No HARD in exposition.
+- Auditor FREQUENCY-BAND finding: exposition 11.1% band-counted (exposition:4 ledger-exempt), SIGNAL, denominator-driven. This reviewer notes the signal is correct — 11.1% reads as elevated — but the individual mandatory justification for each of the three band-counted entries (bridge, two-day interval, Gold Cloak) holds from this reader's perspective. The bridge-suppression (register-resident cast requiring no first-mention-character entries) is doing the right work.
+- Auditor TASTE-FLAG: exposition:1 @0, voice-fidelity advisory ("the harm I can prevent is still the only column that closes" — column + closes near-rhyme at a preamble moment). This reviewer registers the advisory but accepts the clause: the accounting register is Taylor's voice and the near-rhyme is a feature of clinical compression, not a distraction.
+- Auditor AP-SCAN flag: exposition:4 @2, inverted-prepositional voice-register density advisory ("the consideration the function is owed against"). This reviewer agrees this is a /and-stitch Phase 4 concern, not a facet-graph revise. The clause is dense but traceable; the stitcher can smooth.
+- Binding exemption: exposition:4 @2 carries licensed-context-exception ctx-001 (CONTEXT-REQUIRED; satisfied). This reviewer may NOT revise/fail on grounds of over-explaining or disrupting prose for this entry per the binding exemption. The adversarial read confirms the gain-pole orientation was needed; the exemption is appropriate.

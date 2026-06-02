@@ -2,128 +2,71 @@
 reviewer: sensory-disambiguation-pedant
 facet: sensory
 cycle: 1
-episode: b01-c09
-date: 2026-06-01
-verdict: accept
-run: depth-pass-re-run (6-entry facet; DEC-0063)
+episode: b01c10
+date: 2026-06-02
+verdict: revise
 ---
 
-# Sensory Disambiguation Pedant — Depth-Pass Verdict (b01-c09)
+# Sensory Disambiguation Pedant — R1 Verdict
 
-## Reading stance
+**Verdict: REVISE**
 
-Per-entry bare-vs-charged gate. One question per fire: does the proto-line word actually need this flag, or does the word already carry the sensation? Action-verbs whose semantic content IS the perceptual event self-charge. I also check that modality matches the bare word's natural perceptual axis and that the delta describes an inflection rather than ambient texture. File is 6 entries (3 re-anchored, 3 depth-pass adds). I read all 6.
-
----
-
-## Per-entry attack
-
-### [sensory:1] @11 — thermal: stone-lane-late-morning-warmth -> hill-lane-evening-cool
-Proto-line: "taylor-hebert-kl-122ac enters the dragonpit-margin lane"
-
-"Enters" — pure locomotion verb. No thermal register self-carried. The place-name "dragonpit-margin lane" is not charged for temperature; it names a location, not a sensation. Without the flag the audience receives a position-change only. Q1 clears.
-
-Modality: thermal. Body crossing into an outdoor hill lane at evening — thermal is the natural axis. No mismatch.
-
-Q2: a cold-season morning register transitioning to a hill-lane evening-cool is audience-experiential-scale. The hill-lane loses day-heat faster (scene-map) — a physically distinct register shift. Cleared.
-
-Old-state naming "warmth" vs. the cold-season-morning locale — I note the tension here but defer to old-state-reader; disambiguation pedant's axis is bare-vs-charged, not baseline correctness.
-
-**ACCEPT.** Bare verb, correct axis, non-generic naming.
+One entry carries an unanchored old-state that does not survive the disambiguation gate. The remaining six entries pass my lens. Detail below.
 
 ---
 
-### [sensory:2] @14 — light: lane-ambient-empty-distribution -> corwick-body-resolving
-Proto-line: "the insect-feed returns corwick"
+## Entry-level callouts
 
-"Returns" — instrument-operation verb; feed surfaces a datum. Not an optical word. Not "corwick appears" or "a silhouette resolves" or "a figure emerges." The word names a computational/data-retrieval action. No visual register self-carried. Q1 clears.
+### [sensory:7] @25 — REVISE — unanchored old-state; disambiguation failure on the sound-arc's prior-state claim
 
-Modality: light. A body-form resolving into an ambient visual field from which it was absent is figure/ground emergence — light/visual is the correct axis.
+`sound: ledger-accounting-writing-sound -> silence-on-ledger-close`
 
-The new-state "corwick-body-resolving" embeds an entity name. Is this an interior-registration? No — it names an environmental perceptual condition (the lane's visual distribution now contains a resolved form). The old-state "lane-ambient-empty-distribution" names the prior environmental condition. Both are environmental/perceptual, not character-interior.
+Proto-line: `taylor-hebert-kl-122ac closes the ledger`.
 
-Q2: human-body resolving into presence in a visual field is audience-experiential-scale figure/ground. Cleared.
+The old-state is `ledger-accounting-writing-sound`. The trace in the facet notes names two anchors: sensory:2 @10 (prior sound fire) and loc-state:8 @23 (station mid-accounting).
 
-**ACCEPT.** "Returns" is a bare instrument-verb carrying no visual register; the flag names the perceptual arrival; modality correct; no charged-word redundancy.
+**The trace fails on both anchors.**
 
----
+Anchor 1 — sensory:2 @10: new-state was `stylus-on-channel-surface`. This is a channel-surface routing act, 15 bones earlier, in a different physical context (body-map-to-channel, scene-B). The sound fire at @25 renames this `ledger-accounting-writing-sound`. These are not the same named state. The rubric requires the old-state to match "the most recent prior sensory-flag entry on the same modality" — the prior entry's new-state must be the current entry's old-state for the chain to hold. `stylus-on-channel-surface` ≠ `ledger-accounting-writing-sound`. The name change is not cosmetic: one is routing a body-map into a distribution channel; the other is writing a ward's name into a personal ledger. Different surfaces, different acts, different sonic textures.
 
-### [sensory:3] @27 — tactile: wax-soft-warm -> wax-set-firm
-Proto-line: "the seal dries"
+Anchor 2 — loc-state:8 @23 and loc-state:7 @20: both loc-state entries name the sensory-baseline of scene-D as "indoor station surface, still air, day's-end quiet." The word "quiet" appears in loc-state:7 explicitly. If the loc-state says the baseline is quiet and still air, then the old-state for any sound fire in scene-D is `end-of-day-still-air` or `day's-end-quiet` — not `ledger-accounting-writing-sound`. The writing sound during the accounting is implied by the action but is not a named loc-state baseline. The "implied ambient" argument in the facet notes is an inference, not an anchor.
 
-"Dries" — process-completion verb. Names the chemical outcome (dry state achieved) without specifying the tactile texture of the thing that dried. Does not carry the yielding-warm → finger-resist-firm quality of cooling wax. Compare: "the wax hardens under the thumb" would be semi-charged ("hardens" carries firmness); "the seal dries" does not. Q1 clears.
+**What the old-state is doing:** the entry claims a sound was ongoing (writing-sound) so that its cessation (ledger-close → silence) reads as an inflection. But if the ongoing sound is not established as a named state in any prior fire or loc-state entry, the inflection is asserted against a baseline the file does not hold. This is the rubric's HARD pattern: "Unanchored old-state — entry's old-state does not resolve to the most recent loc-state file's § sensory or § conditions baseline... OR the most recent prior sensory-flag entry on the same modality."
 
-Modality: tactile. Cooling wax changing from pliable to set — tactile is the correct axis.
+**The disambiguation question directly:** what is the perceptual referent of `ledger-accounting-writing-sound`? The reader cannot locate this sound in the established sensory record of scene-D. Loc-state:7 says the scene opens in "still air, day's-end quiet." There is no fire between @20 and @25 that names writing-sound as the new ambient. The old-state is a free-floating inference dressed as a named state. The stitcher cannot anchor this fire to a prior established perceptual register.
 
-Q2: wax transitioning from soft-warm-pliable to set-firm is a physically distinct tactile event, universally legible to anyone who has sealed a letter. Cleared.
+**Fix path:** Two options. (A) Revise the old-state to `end-of-day-still-air` and the new-state to `ledger-close-sound` — the ledger closing into the existing quiet produces a discrete audible event (cover-thump), which is a genuine sound-spike against day's-end-quiet, not a sound-drop. This changes the tag from `drop` to `spike`. (B) Alternatively, add a sound fire at @21 (taylor writes corwick — refused in the cull) to establish `end-of-day-quiet -> stylus-on-ledger-surface`, then @25 can fire legitimately as `stylus-on-ledger-surface -> silence-on-ledger-close`. The cull note refused @21 on scene-D restraint grounds, but the old-state problem at @25 may require reconsidering that cull or re-anchoring @25's old-state against the existing quiet.
 
-**ACCEPT.** Bare process verb, correct tactile axis, non-generic prop-specific naming.
+The inflection-pair arc argument (sensory:2 @10 brackets with sensory:7 @25) is structurally appealing but does not substitute for a valid old-state anchor. The bracket is a design intention; the rubric requires an established baseline.
 
----
-
-### [sensory:4] @3 — thermal: dry-stone -> bay-damp-cold-wet
-Proto-line: "the bay-damp beads the lane-stone"
-
-"Beads" — bare verb for moisture collecting on a surface. Names the visual mechanism (condensation droplets forming) but does not carry the cold-wet thermal register. "Bay-damp" in the proto-line names the moisture source, not the cold sensation; "beads" names the action, not the temperature. Q1 clears.
-
-Modality: thermal (with secondary tactile cast). Bay-damp condensing cold and wet on stone — thermal cold is the dominant perceptual axis. Not a cross-modal blur (the entry labels thermal as dominant).
-
-Q2: cold-wet bay-damp beading on stone in a cold-season morning is a universally recognizable cold-place register. Cleared.
-
-Note: the proto-line includes "bay-damp" which names the moisture-type. Does this partially self-charge the wetness? "Bay-damp" is a compound noun naming the moisture source. The cold thermal register is still absent from the proto-line. The flag earns the cold, not just the wet.
-
-**ACCEPT.** "Beads" is bare of thermal register; modality correct; new-state compound name specific.
+**Convergence trace:** the auditor's Phase 5 SUPERFLUOUS review notes sensory:7@25 as a lonely grounding-ledger entry (grd-007) and passes it on grounding-exemption grounds. The auditor correctly did not examine old-state-derivation lineage at the SUPERFLUOUS pass — that is my lane. The auditor's CONSTRAINT and RUBRIC-FIDELITY sections have no finding on sensory:7. This is a seam the mechanical scan did not reach. The rubric's Axis 1 (Modality-inflection) REJECT signature "Unanchored old-state (HARD)" was not triggered in the Phase 5 report because the finding requires tracing the sound-state lineage from loc-state:7 against the old-state claim — a disambiguation-specific chain-walk.
 
 ---
 
-### [sensory:5] @9 — tactile: warm-hand -> cold-stiffened
-Proto-line: "the cold stiffens the fingers"
+## Entries passing my lens (no callout)
 
-BORDERLINE. "The cold stiffens the fingers" — both the thermal agent ("cold") and the tactile effect ("stiffens the fingers") are in the proto-line. This is a sensory statement, not a bare mechanical SVO. The new-state register IS in the language.
+**[sensory:1] @3** — `the morning-stone holds the bay-cold`. "holds" is bare. Cold-on-stone is the single thermal referent. Old-state `station-indoor-morning-ambient` is tight against loc-state:1 @1 ("cold carried off the bay to the working surface... cold-season morning stone, tactile/thermal"). The ambient before the cold registers = indoor-morning ambient. Clean chain. The referent does not split. PASS.
 
-The flag's defense: the old-state (warm-hand) is not in the proto-line. The proto-line describes only one end of the transition. The flag's delta form captures the transition (warm-hand → cold-stiffened), which the proto-line alone does not supply.
+**[sensory:2] @10** — `taylor-hebert-kl-122ac translates the body-map`. "translates" is abstract; does not self-carry sound. Old-state `station-morning-quiet` is inferred by absence from loc-state:1 ("no competing ambient sound named") — a weaker anchor than an explicit loc-state sound-field, but the inference is defensible given that the morning-station-quiet is the scene-A register and no competing sound is established. The new-state `stylus-on-channel-surface` resolves to a single audible referent (instrument marking surface). PASS. Advisory note only: `station-morning-quiet` is anchored by absence, not by explicit loc-state language. If the auditor were to revisit anchor-strength across the file, this entry is the second-most exposed after sensory:7.
 
-My verdict: BORDERLINE PASS. The proto-line is semi-charged for the new-state register — "the cold stiffens the fingers" tells the reader what to feel at the new end. But the before-state (warm hand prior to cold exposure) is genuinely absent. The flag is doing thinner disambiguation work here than at @3 or @14, but it is not zero work. The old-state transition is real and unrepresented in the proto-line.
+**[sensory:3] @13** — `the supply cart marks the lower-gate road`. "marks" is bare (geometric presence). The old-state `outdoor-morning-stone-air` anchors directly to loc-state:4 @13 which explicitly names "cold-morning outer-road stone, supply-cart odor" as the sensory-baseline. The olfactory referent is the cart's odor-arrival at the circuit-pass. Single referent. Clean. PASS.
 
-This is NOT an action-verb-self-charge case (the anti-pattern fires on verbs whose semantic content IS the perceptual event, e.g., "ignites the lamp"). "Stiffens" here is an effect-verb in a causal construction, not a perception-initiating action.
+**[sensory:4] @15** — `the lower-gate road loses corwick`. "loses" is bare (absence verb, not a visual charged-word). The light-drop is the visual negative-space read: the errand-corridor mouth returning empty against the established circuit-geometry. Old-state `outer-circuit-ordinary-distribution` anchors to loc-state:4 @13 ("outer circuit in its ordinary rhythm"). One referent: the visual field's empty slot. PASS.
 
-**ACCEPT (borderline).** Flag earns the old-state transition; new-state is semi-carried by the proto-line but the before-state is not. Noted as thinner disambiguation than the other entries.
+**[sensory:5] @19** — `the bay-cold presses the lower road`. "presses" is bare. The thermal referent is the cold foregrounded as physical pressure on the walking body at the circuit-deviation point. Old-state `outer-road-cold-morning-ambient` anchors to loc-state:4 @13 (cold-morning outer-road baseline). I noted this as borderline on the sustained-as-inflection test: the cold was already the scene-C ambient. The "pressing" quality is a genuine inflection from ambient-background to foregrounded-bodily-pressure at the deviation moment — the body walking into the pass at the deviation point makes the cold register differently. I hold this as a genuine up-inflection (ambient → foregrounded-pressure), not a restatement. PASS, with the observation that the `up` tag is doing work: if the stitcher renders this as ambient weather-description rather than bodily-pressure, the inflection collapses. The stitcher Phase 4 voice-embodiment should render the cold as bodily register, not ambient note.
 
----
-
-### [sensory:6] @15 — tactile: unburdened-shoulders -> cold-weighted-shoulders
-Proto-line: "the cold weights the shoulders"
-
-BORDERLINE — same structural pattern as sensory:5. "The cold weights the shoulders" is a sensory statement: thermal agent + tactile effect. "Weights" as an effect-verb carries the sensation. Proto-line is semi-charged for new-state register.
-
-Defense: same as sensory:5. Old-state (unburdened-shoulders) is not in the proto-line. The flag captures the transition, not just the new state.
-
-**ACCEPT (borderline).** Same ruling as sensory:5. Flag earns the transition's before-state. The two depth-pass grounding entries (@9, @15) share this structural pattern: proto-lines that are themselves sensory descriptions at the new-state end; the flag earns the old-state (the before).
+**[sensory:6] @22** — `the feed-station stone grounds the wrist`. "grounds" is bare (contact verb). Tactile referent: cold-firm stone surface under the wrist. Old-state `wrist-above-station-surface` anchors to loc-state:7 @20 ("indoor station surface"). Contact-onset from no-contact to stone-contact: single tactile referent, unambiguous chain. PASS.
 
 ---
 
-## File-level disambiguation audit
+## Density exemption acknowledgment
 
-Proto-line bare-word check per fire:
-- @11 "enters" — bare. Clear.
-- @14 "returns" — bare instrument-operation. Clear.
-- @27 "dries" — bare process-completion. Clear.
-- @3 "beads" — bare mechanism verb. Clear.
-- @9 "the cold stiffens the fingers" — semi-charged new-state; old-state bare. Borderline pass.
-- @15 "the cold weights the shoulders" — semi-charged new-state; old-state bare. Borderline pass.
-
-Zero full charged-word redundancy cases. Zero action-verb-self-charge cases. Zero modality-axis mismatches. Two borderline semi-charges (@9, @15) where proto-line carries new-state but not old-state — both pass because the flag earns the transition direction not carried by the proto-line alone.
+Per the dispatch binding exemption (PROP-0022): I have not attacked any entry on density grounds. The grounding-ledger grd-001..grd-007 (all status: satisfied) are acknowledged. My REVISE finding on sensory:7 is a craft finding — an old-state derivation failure, not a density objection.
 
 ---
 
-## Verdict
+## Aggregation note
 
-**ACCEPT**
+Per facet-adversarial aggregation rule (URI-AUDIENCE-AGGREGATION-RULE, 2026-05-11): this is a per-reviewer verdict file. Any single `revise` blocks the facet. This reviewer returns REVISE. Orchestrator reads this file directly; no internal aggregation performed here.
 
-All 6 entries pass the per-entry Q1+Q2 disambiguation gate. Sensory:5 @9 and sensory:6 @15 are borderline: proto-lines that are sensory statements at the new end, with the flag earning only the before-state transition. Not HARD disambiguation failures — the flag is doing real work on the old-state. The 4 grounding exemption entries (sensory:2/4/5/6) are noted as cap-exempt per grounding-ledger; density is not my axis.
-
-## Convergence trace
-
-- Auditor RUBRIC-FIDELITY: PASS. Consistent with my per-entry readings — no charged-word redundancy; no action-verb-self-charge.
-- Auditor signal-fb-001 (density advisory): not my axis; no impact on disambiguation verdict.
-- No overlap with auditor's 6 SIGNAL findings on my axis (all 6 findings are FREQUENCY-BAND, METADATA, CONSTRAINT, AP-SCAN class — none are disambiguation).
+**Verdict: REVISE — sensory:7 @25 old-state unanchored; fix path named above.**

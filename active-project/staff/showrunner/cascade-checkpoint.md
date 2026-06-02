@@ -9,14 +9,17 @@ cascade:
     feasible; halt cleanly with a checkpoint on cap-exhaustion / hard-block / practical
     session limit.
   last_completed:
-    level: bones-review
+    level: chapter-complete   # b01c10 COMPLETE end-to-end: substance + write + bones-review + facets + stitch (P1-9 + P10). draft/b01-c10.md TERMINAL (1074 words).
     slug: b01c10
-    completed_at: 2026-06-02T01:25:00Z
+    completed_at: 2026-06-02T04:15:00Z
   next:
-    command: /and-facets b01c10
-    args: [b01c10]
-  reason: halted-practical-limit   # operator-judgment clean halt (run_intent practical-session-limit clause): bones complete+reviewed+committed; facets+stitch are the larger half, best resumed with fresh budget given this run's infra instability (3 dispatch-deaths)
+    command: produce-chapter-protocol b01c11
+    args: [b01c11]
+  reason: chapter-complete-practical-limit   # c10 shipped this session (resumed from bones-complete; ran facets+stitch = the larger half). c11 is a fresh chapter-production run — best with fresh budget given this session's spend (~50+ dispatches across the full facets+stitch pipeline). Two HARD parking-lot items gate c11 Phase 3 (see pending_threading_holds).
   failure: null
+  pending_depth_passes: [b01c10]   # PASS-WITH-DEPTH-PASS-REQUIRED (spine-staging-gap acts-of-commission + readability AIRLESS). /and-write b01c10 revise --from-signals before book-close. NON-blocking for c11 production.
+  pending_threading_holds: [b01c10]   # Phase 10 HOLD-THREAD: pl-2026-06-02-stitch-thread-001 (Halvard hook-0007) + -002 (cl-d06 tranche) -> resolve at /and-substance c11 Phase 3.
+  pending_cohere: "DEC-0070 (admin Phase 9.5): apparatus-density c06-c10 now N=5; DEC-0067 threshold N=6. Schedule /and-cohere b01 before the book advances past c11 (if c11 also ships apparatus-register, N=6 reached). PROP-0030/0031 recurrence_count=3, triage urgency HIGH."
   c10_progress: |
     b01c10 ~60% through the chapter-production chain — ALL COMMITTED + PUSHED:
       [DONE] /and-substance chapter b01c10 — 4 scenes, climax/d10, roll-up exact, Phase-5 ACCEPT
