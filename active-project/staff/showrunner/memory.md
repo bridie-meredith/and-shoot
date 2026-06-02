@@ -5630,7 +5630,21 @@ books:
             → /and-stitch Phase 4. RECOMMENDATION: CLEAR for /and-facets.
 
       - slug: b01c10
-        status: scened
+        status: bones-written   # /and-write b01c10 Phase 7 emit COMPLETE 2026-06-02
+        bones_file: theater/bones/b01-c10.md
+        bones_count: 27
+        substance_bone_gate_verdict: PASS   # Phase 6: auditor 0 HARD (after cycle-1 fix: 9 held-axis witnesses + 2 signal recasts) / 7 SIGNAL all dispositioned (3 stakes-tie + 3 abstract-object accept-with-rationale, signal-005/007 remediated); audience 3-of-3 SUBSTANCE-FELT all 4 scenes
+        substance_delta_measured:
+          axes_moved:
+            position-prot-rise: 1.0
+            social_tether-prot-rise: 1.0
+            social_tether-antag: 1.5
+            position-world: 1.0
+            political_register-world: 1.0
+            moral_framework: -1.0
+            moral_legibility_to_self: 0.5
+          density_measured: 0.78   # 27 bones / 4 scenes; 3 chatter (s01n01, s02n01) — substantive density within 0.7-0.9 target
+          felt_verdict: SUBSTANCE-FELT   # 3-of-3 audience all scenes
         chunk: |
           Otto formalizes the arrangement: no longer a contingent exchange but a named,
           ongoing function. Taylor is his intelligence instrument for the Flea Bottom and
@@ -5819,6 +5833,103 @@ books:
                 - axis: moral_legibility_to_self
                   rationale: "Taylor reads the packet and files what it names; she does not register the foreclosure as a recognition event; holds at rank 5"
             density_target: 0.70-0.80
+            bones:
+            - slug: b01c10s01n01
+              flat_id: 1
+              shape: chatter
+              svo: jarvis delivers the packet
+              substance_delta:
+                axis_moves: []
+                axes_held: []
+                cost_ledger_anchor: cl-d07a
+            - slug: b01c10s01n02
+              flat_id: 2
+              shape: moving
+              svo: the packet-text closes the frame
+              substance_delta:
+                axis_moves:
+                - axis: position-prot-rise
+                  direction: up
+                  magnitude: 1
+                axes_held: []
+                cost_ledger_anchor: cl-d07a
+            - slug: b01c10s01n03
+              flat_id: 3
+              shape: held
+              svo: the morning-stone holds the bay-cold
+              substance_delta:
+                axis_moves: []
+                axes_held:
+                - axis: moral_framework
+                  rationale: formalization names what is already operative; Taylor does not open a new ledger entry on the institutional act itself; the prohibition-against-breach has not been triggered by a packet — framework held at current crack-level by grounding the scene's physical location (feed-station exterior)
+                - axis: relational_anchor_status
+                  rationale: Wren is not in the packet or the formalization; the morning-stone/bay-cold grounding holds the scene at the feed-station exterior with no Wren-content; anchor holds at rank 3.5
+                cost_ledger_anchor: null
+            - slug: b01c10s01n04
+              flat_id: 4
+              shape: moving
+              svo: taylor-hebert-kl-122ac folds the packet
+              substance_delta:
+                axis_moves:
+                - axis: social_tether-prot-rise
+                  direction: up
+                  magnitude: 1
+                axes_held: []
+                cost_ledger_anchor: cl03b
+            - slug: b01c10s01n05
+              flat_id: 5
+              shape: held
+              svo: taylor-hebert-kl-122ac exhales
+              substance_delta:
+                axis_moves: []
+                axes_held:
+                - axis: moral_legibility_to_self
+                  rationale: Taylor reads the packet and files what it names; the foreclosure is not yet a recognition event; legibility holds — she exhales on the content without interrogating it; the body-response is the non-event of a recognition that does not open
+                - axis: political_register-prot
+                  rationale: the packet is Otto's register, not court-tier content returned by the feed; the exhale registers the formalization without resentment-color entering; political_register-prot holds at rank 3.5
+                cost_ledger_anchor: null
+            event_map:
+            - event: 'jarvis-delivers-formalization-naming [event: jarvis-delivers-formalization-naming]'
+              bones:
+              - b01c10s01n01
+              - b01c10s01n02
+              omission_rationale: null
+            - event: 'otto-names-the-arrangement-through-jarvis [mechanism: otto-names-the-arrangement-through-jarvis]'
+              bones:
+              - b01c10s01n02
+              omission_rationale: null
+            - event: 'packet-text-closes-the-frame [image: packet-text-closes-the-frame]'
+              bones:
+              - b01c10s01n02
+              omission_rationale: null
+            - event: 'otto-names-the-function-explicitly [force: otto-names-the-function-explicitly]'
+              bones:
+              - b01c10s01n02
+              - b01c10s01n04
+              omission_rationale: null
+            - event: 'formalization-as-fait-accompli-not-negotiation [mechanism: formalization-as-fait-accompli-not-negotiation]'
+              bones:
+              - b01c10s01n02
+              - b01c10s01n04
+              omission_rationale: null
+            - event: 'jarvis-as-only-channel-taylor-otto-never-direct [force: jarvis-as-only-channel-taylor-otto-never-direct]'
+              bones:
+              - b01c10s01n01
+              omission_rationale: null
+            - event: 'informal-deniability-foreclosed [event: informal-deniability-foreclosed]'
+              bones:
+              - b01c10s01n02
+              - b01c10s01n04
+              omission_rationale: null
+            - event: 'protagonist_force: Taylor''s operational discipline — reads, does not refuse'
+              bones:
+              - b01c10s01n04
+              - b01c10s01n05
+              omission_rationale: null
+            - event: 'opposing_force: naming as institutional act; text closes the informal reading'
+              bones:
+              - b01c10s01n02
+              omission_rationale: null
 
           - slug: b01c10s02
             seq: 2
@@ -5886,6 +5997,134 @@ books:
                 - axis: political_register-prot
                   rationale: "the courier delivery is a channel act; no new court-tier color in the feed; holds at rank 3.5"
             density_target: 0.75-0.85
+            bones:
+            - slug: b01c10s02n01
+              flat_id: 6
+              shape: chatter
+              svo: the second item opens the packet
+              substance_delta:
+                axis_moves: []
+                axes_held: []
+                cost_ledger_anchor: cl03a
+            - slug: b01c10s02n02
+              flat_id: 7
+              shape: held
+              svo: the lower-gate road marks the body-map
+              substance_delta:
+                axis_moves: []
+                axes_held:
+                - axis: social_tether-antag
+                  rationale: Otto's apparatus already knows the courier exists — the request by description is the apparatus making its knowledge visible; the lower-gate road as location surfaces the feed-geography where Taylor built the body-map that Otto does not have; Otto's leverage is visible as the gap between 'silhouette' and 'body-map'; antag leverage is held at sub-peak pending the delivery
+                cost_ledger_anchor: null
+            - slug: b01c10s02n03
+              flat_id: 8
+              shape: held
+              svo: the body-map fills the feed-record
+              substance_delta:
+                axis_moves: []
+                axes_held:
+                - axis: moral_framework
+                  rationale: 'opposing force enacted: the internal record as a distinct substrate from the Jarvis channel — the months of accumulated body-map (errand-corridor, posture-classes, lower-gate faction-inference) are a coherent, physically-indexed observation set; this bone makes the substrate visible as a weight before the delivery collapses it; the framework is held at its current crack level by the visibility of what is about to be crossed'
+                - axis: position-prot-rise
+                  rationale: Otto's leverage is visible as the silhouette/body-map gap; no new formalization event this scene; position-prot-rise holds at rank 4 (post-s01 advance)
+                cost_ledger_anchor: null
+            - slug: b01c10s02n04
+              flat_id: 9
+              shape: held
+              svo: corwick squares the stone-post
+              substance_delta:
+                axis_moves: []
+                axes_held:
+                - axis: moral_legibility_to_self
+                  rationale: the specific body-posture Taylor accumulated in the feed — the lower-gate posture, the report-delivery stance — is here as a concrete recalled image before it becomes a line-item; legibility holds because Taylor runs the harm-reduction calculus without naming the accumulation as a recognition event; the recalled posture is data, not guilt
+                - axis: political_register-prot
+                  rationale: Corwick's body-posture is ward-level Flea Bottom observation, not court-register content; political_register-prot holds at rank 3.5
+                cost_ledger_anchor: null
+            - slug: b01c10s02n05
+              flat_id: 10
+              shape: moving
+              svo: taylor-hebert-kl-122ac translates the body-map
+              substance_delta:
+                axis_moves:
+                - axis: moral_framework
+                  direction: down
+                  magnitude: 1
+                axes_held: []
+                cost_ledger_anchor: cl03a
+            - slug: b01c10s02n06
+              flat_id: 11
+              shape: moving
+              svo: taylor-hebert-kl-122ac routes the body-map
+              substance_delta:
+                axis_moves:
+                - axis: social_tether-antag
+                  direction: up
+                  magnitude: 1
+                axes_held: []
+                cost_ledger_anchor: cl-antag-d10
+            - slug: b01c10s02n07
+              flat_id: 12
+              shape: held
+              svo: the wax dries
+              substance_delta:
+                axis_moves: []
+                axes_held:
+                - axis: relational_anchor_status
+                  rationale: Wren is not in this exchange; anchor holds at rank 3.5; the substrate split closes on Corwick not Wren — the bone that grounds the closure (wax drying = channel sealed) enacts the relational_anchor hold by physically marking the boundary of what was delivered and what was not
+                - axis: social_tether-prot-rise
+                  rationale: the channel seal is a delivery act, not a new patron-tether event; social_tether-prot-rise holds at its structural rank (post-s01 advance)
+                cost_ledger_anchor: null
+            event_map:
+            - event: 'otto-requests-courier-by-description [event: otto-requests-courier-by-description]'
+              bones:
+              - b01c10s02n01
+              - b01c10s02n02
+              omission_rationale: null
+            - event: 'otto-apparatus-knows-courier-exists-but-not-from-taylors-feed [mechanism: otto-apparatus-knows-courier-exists-but-not-from-taylors-feed]'
+              bones:
+              - b01c10s02n02
+              omission_rationale: null
+            - event: 'otto-requests-what-taylors-feed-uniquely-holds [force: otto-requests-what-taylors-feed-uniquely-holds]'
+              bones:
+              - b01c10s02n02
+              - b01c10s02n03
+              omission_rationale: null
+            - event: 'silhouette-versus-body-map [image: silhouette-versus-body-map]'
+              bones:
+              - b01c10s02n02
+              - b01c10s02n03
+              omission_rationale: null
+            - event: 'corwick-name-held-from-oswyn-c08-introduction [mechanism: corwick-name-held-from-oswyn-c08-introduction]'
+              bones:
+              - b01c10s02n03
+              - b01c10s02n04
+              omission_rationale: null
+            - event: 'taylors-body-map-as-withheld-observation-surrendered [force: taylors-body-map-as-withheld-observation-surrendered]'
+              bones:
+              - b01c10s02n03
+              - b01c10s02n04
+              - b01c10s02n05
+              omission_rationale: null
+            - event: 'taylor-provides-corwick-identity-and-pattern [event: taylor-provides-corwick-identity-and-pattern]'
+              bones:
+              - b01c10s02n05
+              - b01c10s02n06
+              omission_rationale: null
+            - event: 'withheld-observation-enters-jarvis-channel [mechanism: withheld-observation-enters-jarvis-channel]'
+              bones:
+              - b01c10s02n06
+              - b01c10s02n07
+              omission_rationale: null
+            - event: 'protagonist_force: harm-reduction calculus — Otto has silhouette; withholding changes nothing'
+              bones:
+              - b01c10s02n05
+              - b01c10s02n06
+              omission_rationale: null
+            - event: 'opposing_force: internal record as distinct substrate — providing collapses a substrate boundary'
+              bones:
+              - b01c10s02n03
+              - b01c10s02n04
+              omission_rationale: null
 
           - slug: b01c10s03
             seq: 3
@@ -5966,6 +6205,154 @@ books:
                 - axis: position-prot-rise
                   rationale: "position-world/political_register-world advance is the world-axis movement; position-prot-rise holds at rank 3.5 pending s04 accounting-close tranche"
             density_target: 0.80-0.90
+            bones:
+            - slug: b01c10s03n01
+              flat_id: 13
+              shape: held
+              svo: the supply cart marks the lower-gate road
+              substance_delta:
+                axis_moves: []
+                axes_held:
+                - axis: position-prot-rise
+                  rationale: the supply cart as standing geometry — the lower-gate road baseline that Taylor runs every circuit; the cart's presence enacts the feed's normal body-distribution against which corwick's absence will read; position holds because the world-axis advance (not the protagonist-rise axis) is what this scene moves
+                cost_ledger_anchor: null
+            - slug: b01c10s03n02
+              flat_id: 14
+              shape: held
+              svo: corwick walks the errand-corridor
+              substance_delta:
+                axis_moves: []
+                axes_held:
+                - axis: moral_framework
+                  rationale: Taylor's feed has been reading Corwick every second or third circuit since the Rushwick margin — the prior-circuit presence is the established pattern; the framework holds because the pattern-reading is within the licensed exception (operational intelligence already delivered); no new breach event at this bone; the presence-count is what makes the absence legible as deviation
+                cost_ledger_anchor: null
+            - slug: b01c10s03n03
+              flat_id: 15
+              shape: moving
+              svo: the lower-gate road loses corwick
+              substance_delta:
+                axis_moves:
+                - axis: position-world
+                  direction: up
+                  magnitude: 1
+                axes_held: []
+                cost_ledger_anchor: cl-world-d04
+            - slug: b01c10s03n04
+              flat_id: 16
+              shape: held
+              svo: the stone-post marks the side-exit
+              substance_delta:
+                axis_moves: []
+                axes_held:
+                - axis: moral_legibility_to_self
+                  rationale: the stone-post present = the baseline geometry intact minus one body; the recognition that the body-not-in-geometry is Corwick-detained has not yet opened as a named event; Taylor reads the geometry as data; legibility holds because the reading is feed-discipline not recognition; the stone-post's presence (contrasted with Corwick's absence) enacts the non-recognition posture concretely
+                cost_ledger_anchor: null
+            - slug: b01c10s03n05
+              flat_id: 17
+              shape: moving
+              svo: the Gold Cloak pair posts the lane-junction
+              substance_delta:
+                axis_moves:
+                - axis: political_register-world
+                  direction: up
+                  magnitude: 1
+                axes_held: []
+                cost_ledger_anchor: cl-world-d07
+            - slug: b01c10s03n06
+              flat_id: 18
+              shape: moving
+              svo: the insect-feed sweeps the errand-corridor
+              substance_delta:
+                axis_moves:
+                - axis: social_tether-antag
+                  direction: up
+                  magnitude: 1
+                axes_held: []
+                cost_ledger_anchor: cl-antag-d10
+            - slug: b01c10s03n07
+              flat_id: 19
+              shape: held
+              svo: the bay-cold presses the lower road
+              substance_delta:
+                axis_moves: []
+                axes_held:
+                - axis: relational_anchor_status
+                  rationale: Wren not in this scene; the bay-cold as physical environmental constant grounds the scene's temporal setting (same morning cold as s01) without adding Wren-weight; anchor holds at rank 3.5
+                - axis: social_tether-prot-rise
+                  rationale: the circuit-pass confirms the network ran but adds no new patron-tether event; social_tether-prot-rise holds at structural-load rank
+                cost_ledger_anchor: null
+            event_map:
+            - event: 'lower-gate-road-returns-empty-in-feed [event: lower-gate-road-returns-empty-in-feed]'
+              bones:
+              - b01c10s03n03
+              omission_rationale: null
+            - event: 'baseline-body-geometry-intact-minus-one-body [mechanism: baseline-body-geometry-intact-minus-one-body]'
+              bones:
+              - b01c10s03n01
+              - b01c10s03n04
+              omission_rationale: null
+            - event: 'corwick-absent-from-feed-geometry [event: corwick-absent-from-feed-geometry]'
+              bones:
+              - b01c10s03n02
+              - b01c10s03n03
+              omission_rationale: The absence is enacted by the presence-count (n02) followed by the empty-road (n03); the physical geometry reads as deviation from established pattern. No additional bone needed.
+            - event: 'absence-as-read-against-prior-pattern [image: absence-as-read-against-prior-pattern]'
+              bones:
+              - b01c10s03n01
+              - b01c10s03n02
+              - b01c10s03n03
+              omission_rationale: null
+            - event: 'taylor-reads-corwick-absence-through-feed-sweep [mechanism: taylor-reads-corwick-absence-through-feed-sweep]'
+              bones:
+              - b01c10s03n06
+              omission_rationale: null
+            - event: 'corwick-body-removed-from-coverage-geometry [force: corwick-body-removed-from-coverage-geometry]'
+              bones:
+              - b01c10s03n03
+              - b01c10s03n06
+              omission_rationale: null
+            - event: 'secondary-signal-returns-detention-information [event: secondary-signal-returns-detention-information]'
+              bones:
+              - b01c10s03n05
+              omission_rationale: null
+            - event: 'gold-cloak-pair-at-corwicks-junction [image: gold-cloak-pair-at-corwicks-junction]'
+              bones:
+              - b01c10s03n05
+              omission_rationale: null
+            - event: 'patrol-posture-reads-as-post-detention-not-pre [mechanism: patrol-posture-reads-as-post-detention-not-pre]'
+              bones:
+              - b01c10s03n05
+              omission_rationale: null
+            - event: 'green-apparatus-operational-consequence-visible-in-feed [force: green-apparatus-operational-consequence-visible-in-feed]'
+              bones:
+              - b01c10s03n05
+              - b01c10s03n06
+              omission_rationale: null
+            - event: 'dance-pressure-pulse-one-complete [event: dance-pressure-pulse-one-complete]'
+              bones:
+              - b01c10s03n05
+              - b01c10s03n06
+              omission_rationale: null
+            - event: 'green-succession-channel-operational [event: green-succession-channel-operational]'
+              bones:
+              - b01c10s03n05
+              omission_rationale: null
+            - event: 'taylors-network-acted-without-her-consent-or-design [mechanism: taylors-network-acted-without-her-consent-or-design]'
+              bones:
+              - b01c10s03n03
+              - b01c10s03n06
+              omission_rationale: null
+            - event: 'protagonist_force: feed-reading discipline — absence read against prior pattern; Gold Cloak posture-class'
+              bones:
+              - b01c10s03n02
+              - b01c10s03n03
+              - b01c10s03n05
+              omission_rationale: null
+            - event: 'opposing_force: operational consequence as perceptual fact — apparatus ran on what she provided'
+              bones:
+              - b01c10s03n05
+              - b01c10s03n06
+              omission_rationale: null
 
           - slug: b01c10s04
             seq: 4
@@ -6067,6 +6454,165 @@ books:
                 - axis: social_tether-prot-collapse
                   rationale: "non-extractable confirmation in progress but collapse axis not yet active; holds at start_rank 8"
             density_target: 0.75-0.85
+            bones:
+            - slug: b01c10s04n01
+              flat_id: 20
+              shape: held
+              svo: taylor-hebert-kl-122ac opens the ledger
+              substance_delta:
+                axis_moves: []
+                axes_held:
+                - axis: social_tether-antag
+                  rationale: the ledger-open is a convention Taylor has run since the first delivery; opening the ledger does not produce new leverage for Otto — it is Taylor's internal accounting convention; antag leverage is structural and confirmed; it holds at the structural-confirmed state from s03
+                - axis: position-world
+                  rationale: the ledger-open files the world-consequence already settled in s03; no new world-axis movement; position-world holds at rank 7
+                cost_ledger_anchor: null
+            - slug: b01c10s04n02
+              flat_id: 21
+              shape: moving
+              svo: taylor-hebert-kl-122ac writes corwick
+              substance_delta:
+                axis_moves:
+                - axis: moral_framework
+                  direction: down
+                  magnitude: 1
+                axes_held: []
+                cost_ledger_anchor: cl03a
+            - slug: b01c10s04n03
+              flat_id: 22
+              shape: held
+              svo: the feed-station stone grounds the wrist
+              substance_delta:
+                axis_moves: []
+                axes_held:
+                - axis: political_register-prot
+                  rationale: the physical act of writing at the feed-station — the stone's surface is the grounding contact that roots the scene's accounting work in a bodily register; no court-tier content enters in this scene; resentment material deferred to c11; register holds at rank 3.5
+                - axis: political_register-world
+                  rationale: the accounting work adds no new succession-channel register; political_register-world holds at rank 6 (post-s03)
+                cost_ledger_anchor: null
+            - slug: b01c10s04n04
+              flat_id: 23
+              shape: held
+              svo: corwick faces the lower-gate
+              substance_delta:
+                axis_moves: []
+                axes_held:
+                - axis: moral_legibility_to_self
+                  rationale: 'the observation bone: this is Corwick''s body as observed in the feed — the posture Taylor read but did not consent to observe; the first ''did not consent'' beat (observation); legibility holds because Taylor is filing the image, not naming the recognition'
+                cost_ledger_anchor: null
+            - slug: b01c10s04n05
+              flat_id: 24
+              shape: held
+              svo: corwick crosses the errand-corridor
+              substance_delta:
+                axis_moves: []
+                axes_held:
+                - axis: relational_anchor_status
+                  rationale: 'the body-map bone: Corwick''s errand-geometry as the accumulated cartography of movement; anchor holds because Wren is not in this accounting; the Corwick-entry does not produce Wren-weight; but the accumulated body-map pattern (without consent) is structurally parallel to the omission-architecture Taylor runs for Wren — the pattern is the same, the absence from the ledger is what differs'
+                - axis: social_tether-prot-collapse
+                  rationale: non-extractable confirmation in progress but the collapse axis is not yet active; social_tether-prot-collapse holds at start_rank 8
+                cost_ledger_anchor: null
+            - slug: b01c10s04n06
+              flat_id: 25
+              shape: moving
+              svo: taylor-hebert-kl-122ac closes the ledger
+              substance_delta:
+                axis_moves:
+                - axis: position-prot-rise
+                  direction: up
+                  magnitude: 1
+                axes_held: []
+                cost_ledger_anchor: cl-d07a
+            - slug: b01c10s04n07
+              flat_id: 26
+              shape: moving
+              svo: taylor-hebert-kl-122ac presses the feed-station
+              substance_delta:
+                axis_moves:
+                - axis: social_tether-prot-rise
+                  direction: up
+                  magnitude: 1
+                axes_held: []
+                cost_ledger_anchor: cl03b
+            - slug: b01c10s04n08
+              flat_id: 27
+              shape: moving
+              svo: corwick squares the feed-record
+              substance_delta:
+                axis_moves:
+                - axis: moral_legibility_to_self
+                  direction: up
+                  magnitude: 1
+                axes_held: []
+                cost_ledger_anchor: null
+            event_map:
+            - event: 'taylor-opens-ledger-post-detention [event: taylor-opens-ledger-post-detention]'
+              bones:
+              - b01c10s04n01
+              omission_rationale: null
+            - event: 'ledger-as-taylors-accounting-convention [mechanism: ledger-as-taylors-accounting-convention]'
+              bones:
+              - b01c10s04n01
+              omission_rationale: null
+            - event: 'ledger-convention-shapes-the-accounting [force: ledger-convention-shapes-the-accounting]'
+              bones:
+              - b01c10s04n01
+              - b01c10s04n02
+              omission_rationale: null
+            - event: 'corwick-name-enters-ledger-as-closed-entry [event: corwick-name-enters-ledger-as-closed-entry]'
+              bones:
+              - b01c10s04n02
+              omission_rationale: null
+            - event: 'corwick-name-written-as-closed-ledger-entry [image: corwick-name-written-as-closed-ledger-entry]'
+              bones:
+              - b01c10s04n02
+              omission_rationale: null
+            - event: 'harm-reduction-calculus-runs-on-corwick-as-named-person [mechanism: harm-reduction-calculus-runs-on-corwick-as-named-person]'
+              bones:
+              - b01c10s04n02
+              - b01c10s04n04
+              - b01c10s04n05
+              - b01c10s04n06
+              omission_rationale: null
+            - event: 'corwicks-feed-face-present-in-internal-record [image: corwicks-feed-face-present-in-internal-record]'
+              bones:
+              - b01c10s04n04
+              - b01c10s04n05
+              - b01c10s04n08
+              omission_rationale: null
+            - event: 'corwicks-unconsented-instrumentalization-named-in-accounting [force: corwicks-unconsented-instrumentalization-named-in-accounting]'
+              bones:
+              - b01c10s04n04
+              - b01c10s04n05
+              - b01c10s04n06
+              omission_rationale: 'The three ''did not consent'' beats are enacted as three structurally distinct bones: observation (n04 faces-the-lower-gate), body-map (n05 squares-the-errand-corridor), delivery (n08 squares-the-feed-record). ''did not consent'' is not stated — it is enacted by the three-layer decomposition of what the body-map accumulated without consent.'
+            - event: 'ledger-entry-closed-on-named-person [event: ledger-entry-closed-on-named-person]'
+              bones:
+              - b01c10s04n06
+              omission_rationale: null
+            - event: 'systematic-override-rationalized-threshold-crossed-accounting-files [mechanism: systematic-override-rationalized-threshold-crossed-accounting-files]'
+              bones:
+              - b01c10s04n02
+              - b01c10s04n06
+              omission_rationale: null
+            - event: 'suppressed-recognition-event [force: suppressed-recognition-event]'
+              bones:
+              - b01c10s04n08
+              omission_rationale: null
+            - event: 'corwicks-face-in-feed-record-after-ledger-close [image: corwicks-face-in-feed-record-after-ledger-close]'
+              bones:
+              - b01c10s04n08
+              omission_rationale: null
+            - event: 'protagonist_force: ledger-accounting discipline — convention; gain and cost real; she closes'
+              bones:
+              - b01c10s04n02
+              - b01c10s04n06
+              omission_rationale: null
+            - event: 'opposing_force: face in feed-record as irresolvable surplus — ledger closes, face does not disappear'
+              bones:
+              - b01c10s04n06
+              - b01c10s04n08
+              omission_rationale: The two-bone split (n06 = ledger closes; n08 = face persists) is the enacted form of the opposing force. The surplus of n08 over n06 is the scene's argument.
 
       - slug: b01c11
         status: planned
