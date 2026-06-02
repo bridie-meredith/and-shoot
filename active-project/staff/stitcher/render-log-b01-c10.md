@@ -46,3 +46,20 @@ Clean draft: active-project/draft/b01-c10.md (preamble + 4 body paragraphs; 1074
 - bones: 27 rendered + 0 merged-away + 0 dropped + 0 rendered-illegible = 27 authored. BALANCED.
 - facets: 30 rendered + 0 dropped + 30 unrendered-remainder = 60 cite-index entries. BALANCED.
   FLAG-UNRENDERED-REMAINDER: vibes (15) + state-updates (15) = 30 entries unrendered BY DESIGN (operator facets never render as prose per schema). Not a silent drop — flagged + accounted.
+
+## Phase 10 — Forward-thread edits
+
+- entry_id: rev-0004
+  finding_class: MISSED-CALLBACK
+  classification: presentation-reinforcement
+  location: preamble (coverage line)
+  before: "the coverage extends; the harm I can prevent is still the only column that closes"
+  after: "the coverage extends, the stitch-maker's days indexed in the record like any other route and kept out of the deliverable; the harm I can prevent is still the only column that closes"
+  rationale: Wren absent from c10 but the s04 ledger-close is the exact contrast she embodies (a tracked body kept out of the ledger vs Corwick becoming the ledger's first named entry); restates c09-established indexed-route + substrate-split state, moves no held axis, role-noun "stitch-maker" preserves the suppressed-recognition fence.
+  applied_at: 2026-06-02
+  bone_faithfulness: held (no new event/axis-movement; relational_anchor stays held; Wren stays out of the formal ledger)
+
+- substantive routed to parking-lot (NOT applied — bone-faithfulness fence):
+    - ft-c10-001 (Halvard hook-0007 unpaid) -> pl-2026-06-02-stitch-thread-001 (/and-substance c11 Phase 3)
+    - ft-c10-004 (cl-d06 +1.0 second tranche end-of-window) -> pl-2026-06-02-stitch-thread-002 (/and-substance c11 Phase 3; extends pl-2026-05-30-001)
+- STATE-DRIFT: none (ft-c10-003 axis-continuity confirmed clean vs c09 close)

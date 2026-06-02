@@ -1632,3 +1632,59 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-02-stitch-thread-001
+      created_at: 2026-06-02T00:00:00Z
+      created_by: "/and-stitch b01-c10 phase-10 (threading-review ft-c10-001)"
+      target:
+        command: /and-substance
+        scope: "chapter b01c11"
+        phase: Phase 3
+      severity: HARD
+      description: |
+        UNPAID-HOOK (substantive). hook-0007 (Halvard counter-argument, opened c07,
+        expected_payoff slipped to c10) is NOT addressed in c10 — c10 carries no Halvard
+        content (correctly: c10's contract holds Halvard offstage; the formalization +
+        detention occupy the chapter's whole weight). The hook has now reached/passed its
+        c10 window without resolution. The resolving chapter (c11+) Phase 3 must address
+        hook-0007: resolve it, foreclose it, or explicitly re-window it. Returning to the
+        Halvard argument is new on-page engagement + axis material the contract held
+        offstage — it cannot be threaded into c10 at Phase 10 (bone-faithfulness fence);
+        it routes upstream to /and-substance c11+ Phase 3.
+      context_refs:
+        - active-project/staff/reviews/forward-thread-b01-c10-2026-06-02.md  # ft-c10-001
+        - active-project/staff/showrunner/aggregate-state.md  # hook-0007 (Halvard counter-argument)
+        - active-project/staff/showrunner/memory.md  # chapters[b01c10].handoff_out "Halvard: counter-argument unresolved; Taylor's engagement becoming thinner"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-02-stitch-thread-002
+      created_at: 2026-06-02T00:00:00Z
+      created_by: "/and-stitch b01-c10 phase-10 (threading-review ft-c10-004)"
+      target:
+        command: /and-substance
+        scope: "chapter b01c11"
+        phase: Phase 3
+      severity: HARD
+      description: |
+        UNPAID-HOOK (substantive) — EXTENDS pl-2026-05-30-001. hook-0003 / cl-d06
+        relational_anchor_status +2 ledger gain: the SECOND +1.0 tranche reaches the END of
+        its declared c08-c10 payoff window (pl-2026-05-30-001 named the b01c08-b01c10 window)
+        WITHOUT settling. c10 holds relational_anchor_status FLAT all four scenes (Wren
+        excluded by c10's contract). Settling the tranche requires relational_anchor_status
+        movement (Wren becoming structurally necessary to the coverage map / entering the
+        ledger), which c10 cannot do (forbidden axis-movement under its contract + the
+        bone-faithfulness fence at Phase 10). The window has now closed unsettled. c11+ Phase 3
+        MUST anchor the remaining cl-d06 +1.0 with cost_ledger_anchor: cl-d06 when
+        relational_anchor_status next moves, OR formally re-window the tranche. Closes the
+        cl-d06 partial-settle that pl-2026-05-30-001 has been tracking since c06.
+      context_refs:
+        - active-project/staff/reviews/forward-thread-b01-c10-2026-06-02.md  # ft-c10-004
+        - active-project/staff/showrunner/parking-lot.md  # pl-2026-05-30-001 (cl-d06 first-tranche / window b01c08-b01c10)
+        - active-project/staff/showrunner/memory.md  # chapters[b01c10] relational_anchor_status held all 4 scenes
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
