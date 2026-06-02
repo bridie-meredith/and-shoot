@@ -5645,6 +5645,19 @@ books:
             moral_legibility_to_self: 0.5
           density_measured: 0.78   # 27 bones / 4 scenes; 3 chatter (s01n01, s02n01) — substantive density within 0.7-0.9 target
           felt_verdict: SUBSTANCE-FELT   # 3-of-3 audience all scenes
+        bones_review:
+          reviewed_at: 2026-06-02T01:20:27Z
+          report_path: active-project/staff/reviews/bones-b01c10-2026-06-02T01-20-27Z.md
+          verdict: PASS-WITH-NOTES
+          follow_check: PASS-WITH-NOTES   # no FOLLOW-FAIL -> /and-facets cleared
+          aliveness: BONES-AIRLESS-RISK   # scene C grounding sparse/back-loaded -> /and-facets Phase 2.5 + /and-stitch Phase 4
+          bones_file_mtime_at_review: 2026-06-02T01:07:39Z
+          stale_since: null
+          carry_to_facets_phase_2_5:
+            - "HIGH context-weave: B->C surrender->detention causal seam (interior recognition that the routed corridor is the corridor they walked him down)"
+            - "MEDIUM context-weave: beat-(a) formalization opacity @2 (surface informal->named arrangement via packet content + interior register)"
+            - "exposition: s01 Sera-as-stated-consideration (packet content, not in bone SVO by design)"
+            - "grounding-ledger: scene C aliveness (sparse/back-loaded grounding)"
         chunk: |
           Otto formalizes the arrangement: no longer a contingent exchange but a named,
           ongoing function. Taylor is his intelligence instrument for the Flea Bottom and
