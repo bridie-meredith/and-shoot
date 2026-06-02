@@ -2,17 +2,17 @@
 generated: 2026-06-02
 source: active-project/theater/proto-lines/b01-c10.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 58 facet entries; 23/27 protolines decorated (85.2%)
+totals: 60 facet entries; 22/27 protolines decorated (81.5%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
-| 0 (bare)   | 4 |
-| 1          | 17 |
-| 2          | 1 |
-| 3          | 2 |
-| 4          | 1 |
+| 0 (bare)   | 5 |
+| 1          | 14 |
+| 2          | 3 |
+| 3          | 1 |
+| 4          | 2 |
 | 5          | 2 |
 
 ## Per-facet entries
@@ -21,19 +21,20 @@ totals: 58 facet entries; 23/27 protolines decorated (85.2%)
   loc-state:1 @1 back=Y
   loc-state:2 @9 back=Y
   loc-state:3 @12 back=Y
-  loc-state:4 @13 back=Y co=[exposition:3, sensory:3]
+  loc-state:4 @13 back=Y co=[exposition:3, sensory:3] lic-in=[exposition:3, exposition:3, exposition:3]
   loc-state:5 @15 back=Y co=[narrator:5, sensory:4, vibes:7, vibes:8]
   loc-state:6 @17 back=Y co=[exposition:2]
   loc-state:7 @20 back=Y
   loc-state:8 @23 back=Y
 
-### narrator (6 entries)
-  narrator:1 @2 back=Y co=[vibes:1, vibes:2]
-  narrator:2 @5 back=Y
+### narrator (7 entries)
+  narrator:1 @2 back=Y co=[exposition:4, vibes:1, vibes:2]
   narrator:3 @10 back=Y co=[feel:1, sensory:2, vibes:4, vibes:5]
   narrator:4 @14 back=Y
   narrator:5 @15 back=Y co=[loc-state:5, sensory:4, vibes:7, vibes:8]
   narrator:6 @27 back=Y co=[feel:2, vibes:11, vibes:12]
+  narrator:7 @16 back=Y co=[mem:1]
+  narrator:8 @24 back=Y co=[mem:2]
 
 ### sensory (7 entries)
   sensory:1 @3 back=Y
@@ -52,7 +53,7 @@ totals: 58 facet entries; 23/27 protolines decorated (85.2%)
   state:5 @21 back=N co=[vibes:10]
   state:6 @25 back=N co=[sensory:7]
   state:7 @27 back=N co=[feel:2, narrator:6, vibes:11, vibes:12]
-  state:8 @2 back=N co=[narrator:1, vibes:1, vibes:2]
+  state:8 @2 back=N co=[exposition:4, narrator:1, vibes:1, vibes:2]
   state:9 @4 back=N co=[vibes:3]
   state:10 @10 back=N co=[feel:1, narrator:3, sensory:2, vibes:4, vibes:5]
   state:11 @11 back=N co=[vibes:6]
@@ -62,8 +63,8 @@ totals: 58 facet entries; 23/27 protolines decorated (85.2%)
   state:15 @26 back=N
 
 ### mem (2 entries)
-  mem:1 @16 back=Y
-  mem:2 @24 back=Y
+  mem:1 @16 back=Y co=[narrator:7]
+  mem:2 @24 back=Y co=[narrator:8]
 
 ### feel (2 entries)
   feel:1 @10 back=Y co=[narrator:3, sensory:2, vibes:4, vibes:5] lic-in=[vibes:4, vibes:5]
@@ -73,8 +74,8 @@ totals: 58 facet entries; 23/27 protolines decorated (85.2%)
 _(no entries)_
 
 ### vibes (15 entries)
-  vibes:1 @2 back=Y co=[narrator:1, vibes:2] lic-out=[state-update:1, proto:2]
-  vibes:2 @2 back=Y co=[narrator:1, vibes:1] lic-out=[state-update:1, proto:2]
+  vibes:1 @2 back=Y co=[exposition:4, narrator:1, vibes:2] lic-out=[state-update:1, proto:2]
+  vibes:2 @2 back=Y co=[exposition:4, narrator:1, vibes:1] lic-out=[state-update:1, proto:2]
   vibes:3 @4 back=Y lic-out=[state-update:2, proto:4]
   vibes:4 @10 back=Y co=[feel:1, narrator:3, sensory:2, vibes:5] lic-out=[state-update:3, feel:1, proto:10]
   vibes:5 @10 back=Y co=[feel:1, narrator:3, sensory:2, vibes:4] lic-out=[state-update:3, feel:1, proto:10, proto:11]
@@ -89,10 +90,11 @@ _(no entries)_
   vibes:14 @- back=- lic-out=[proto:9, proto:15, proto:17, proto:18, proto:27]
   vibes:15 @- back=- lic-out=[proto:22, proto:25, proto:26, proto:27]
 
-### exposition (3 entries)
+### exposition (4 entries)
   exposition:1 @0 back=N lic-out=[b01c05:4, c09:2, b01c01:4, b01c03:3, b01c09:2, b01c09:2]
+  exposition:4 @2 back=Y co=[narrator:1, vibes:1, vibes:2] lic-out=[b01c03:8, b01c05:2]
   exposition:2 @17 back=Y co=[loc-state:6]
-  exposition:3 @13 back=Y co=[loc-state:4, sensory:3] lic-out=[b01c09:2, b01c09:2]
+  exposition:3 @13 back=Y co=[loc-state:4, sensory:3] lic-out=[loc-state:4, loc-state:4, loc-state:4]
 
 ## Pile-ups (>4 facets co-located on one protoline)
 
@@ -109,15 +111,12 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 - loc-state:3 @12  `the wax dries`
 - loc-state:7 @20  `taylor-hebert-kl-122ac opens the ledger`
 - loc-state:8 @23  `corwick faces the lower-gate`
-- narrator:2 @5  `taylor-hebert-kl-122ac exhales`
 - narrator:4 @14  `corwick walks the errand-corridor`
 - sensory:1 @3  `the morning-stone holds the bay-cold`
 - sensory:5 @19  `the bay-cold presses the lower road`
 - sensory:6 @22  `the feed-station stone grounds the wrist`
 - sensory:7 @25  `taylor-hebert-kl-122ac closes the ledger`
 - state:15 @26  `taylor-hebert-kl-122ac presses the feed-station`
-- mem:1 @16  `the stone-post marks the side-exit`
-- mem:2 @24  `corwick crosses the errand-corridor`
 - vibes:3 @4  `taylor-hebert-kl-122ac folds the packet`
 - vibes:6 @11  `taylor-hebert-kl-122ac routes the body-map`
 - vibes:9 @18  `the insect-feed sweeps the errand-corridor`
@@ -127,4 +126,4 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 ## Bare protolines (no citations accrued)
 _Round-2 add candidates if the rubric licenses a fire here._
 
-@6, @7, @8, @26
+@5, @6, @7, @8, @26
