@@ -1,8 +1,18 @@
 cascade:
-  root: b01c09
-  invoked_at: 2026-06-01T15:30:00Z
-  invoked_command: "produce-chapter-protocol b01c09 → cascade to b01-complete (c10–c20)"
+  root: b01c11
+  invoked_at: 2026-06-02T21:35:00Z
+  invoked_command: "produce-chapter-protocol b01c11 (fresh run; resume of c10-c20 cascade intent)"
   mode: unattended
+  current_run:
+    command: produce-chapter-protocol b01c11
+    started_at: 2026-06-02T21:35:00Z
+    pre_flight: |
+      GREEN. series-audit APPROVED 2026-05-24 (stale null). aggregate-state PRESENT through c10,
+      0 unack substantive (rev-0001..0004 all acknowledged:true; the two SUBSTANTIVE c10 forward-thread
+      findings route to parking-lot, not revision_layer). voice-exemplar PRESENT. Two HARD parking-lot
+      items in scope (pl-2026-06-02-stitch-thread-001 Halvard hook-0007 + -002 cl-d06 second tranche),
+      BOTH targeting /and-substance chapter b01c11 Phase 3 — surfaced at Phase 0, resolve AT Phase 3.
+    chain: "/and-substance chapter b01c11 --cascade -> write -> review bones -> facets -> stitch (P9 + P10)"
   run_intent: |
     Multi-chapter cascade. c09 COMPLETE. Now producing c10..c20 end-to-end per RUNBOOK
     chapter-production protocol (R1–R5). Book b01 chapter_count = 20. Drive as far as
