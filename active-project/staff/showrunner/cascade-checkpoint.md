@@ -9,13 +9,13 @@ cascade:
     feasible; halt cleanly with a checkpoint on cap-exhaustion / hard-block / practical
     session limit.
   last_completed:
-    level: bones-review
+    level: facets   # /and-facets b01c10 COMPLETE (audited-r1; audience-gate 3/3 all 9 facets cycle-2 no cap-burn; orchestrator-critic SUCCESS 7/7)
     slug: b01c10
-    completed_at: 2026-06-02T01:25:00Z
+    completed_at: 2026-06-02T03:30:00Z
   next:
-    command: /and-facets b01c10
+    command: /and-stitch b01c10
     args: [b01c10]
-  reason: halted-practical-limit   # operator-judgment clean halt (run_intent practical-session-limit clause): bones complete+reviewed+committed; facets+stitch are the larger half, best resumed with fresh budget given this run's infra instability (3 dispatch-deaths)
+  reason: in-progress   # facets half done this session (resumed from bones-complete checkpoint); proceeding to /and-stitch (Phase 9 cold-read + Phase 10 forward-thread = terminal deliverable)
   failure: null
   c10_progress: |
     b01c10 ~60% through the chapter-production chain — ALL COMMITTED + PUSHED:
