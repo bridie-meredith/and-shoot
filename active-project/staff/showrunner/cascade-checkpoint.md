@@ -29,7 +29,14 @@ cascade:
   next:
     command: /and-facets b01c11
     args: [b01c11]
-  reason: chapter-production-in-progress   # c11 substance + write + review-bones COMPLETE. /and-review bones: FIDELITY PASS, follow_check PASS-WITH-NOTES, BONES-AIRLESS-RISK(qualified). /and-facets CLEARED. 6 carry-items to Phase 2.5 (burn-dread, Dragonstone-meaning, Halvard-absence-legibility, grounding-ledger @13/@14/@19-21, ABSTRACTION-DOMINANT s02/s03, cold-read DEC-0072). Cascade -> /and-facets -> /and-stitch (P9+P10). Watch: consecutive-abstract N=6 -> /and-cohere triage before c13 (DEC-0073).
+  reason: chapter-substance-write-review-complete-practical-limit   # c11 stages 1-3 of 5 COMPLETE (substance + write + review-bones), all PASS + committed. CLEAN HALT at the pristine bones-review boundary (status bones-written, no partial facet state) — mirrors c09->c10 precedent (facets+stitch = the larger half, run with fresh budget). Resume: /and-facets b01c11 (CLEARED; bones_review PASS / follow_check PASS-WITH-NOTES; 6 carry-items to Phase 2.5 in chapters[b01c11].bones_review.carry_to_facets_phase_2_5). Then /and-stitch b01c11 (P1-9 + P10 forward-thread). Watch: consecutive-abstract N=6 (c10+c11) -> /and-cohere triage before c13 (DEC-0073).
+  halt:
+    class: practical-session-limit
+    at_stage: bones-review-complete (3 of 5 cascade stages)
+    clean: true
+    resume_command: /and-facets b01c11
+    resume_then: /and-stitch b01c11
+    halted_at: 2026-06-02T22:45:00Z
   failure: null
   pending_depth_passes: [b01c10]   # PASS-WITH-DEPTH-PASS-REQUIRED (spine-staging-gap acts-of-commission + readability AIRLESS). /and-write b01c10 revise --from-signals before book-close. NON-blocking for c11 production.
   pending_threading_holds: [b01c10]   # Phase 10 HOLD-THREAD: pl-2026-06-02-stitch-thread-001 (Halvard hook-0007) + -002 (cl-d06 tranche) -> resolve at /and-substance c11 Phase 3.
