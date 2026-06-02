@@ -5630,7 +5630,21 @@ books:
             → /and-stitch Phase 4. RECOMMENDATION: CLEAR for /and-facets.
 
       - slug: b01c10
-        status: audited-r1-mechanical   # /and-facets b01c10 Phase 5 audit PASS (HARD=0; 16 SIGNAL all dispositioned w/ documented defense; Earth-Bet CLEAN; CURVE-SHAPE OK). Phase 5b audience-gate next. [Phase 4 COMPLETE 2026-06-02. R2: NI K5/D1/A2 (del @5, add spine @16/@24, 25.9% band-stretch documented); memory K2/D0/A0 (spine resolved, doubled-register held); feeling K2/D0/A0 (NI-anti-dup PASS); metaphor 0 (4 refusals); exposition K2/REWORD1/A1 (ctx-001 satisfied @2 exposition:4). Arbiter: 0 interventions, 0 discipline-fails, f-r2-counts all 0. Merge: 60 entries, 81.5% decorated. 4d scene-map validation CLEAN (27/27 one scene). [prior faceted-r1: R1 fanout 10 authors; merge fixes feeling bare-numeric IDs + state back=N strip per c09 pattern]
+        status: audited-r1   # /and-facets b01c10 COMPLETE 2026-06-02. Phase 5 audit HARD=0/16 SIGNAL; Phase 5b audience-gate ALL 9 FACETS ACCEPT 3/3 (cycle 2, no cap-burn — NI/memory/sensory remediated via 3 fixer REVISEs); orchestrator-critic SUCCESS 7/7. [Phase 4 COMPLETE 2026-06-02.
+        audit_complete: true
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_findings: 16   # 0 HARD, 16 SIGNAL (all dispositioned w/ documented defense)
+        audience_gate_complete: true
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md
+        audience_gate_cycles: 2
+        audience_gate_cap_burned: false
+        bidirectional_loop: validated   # shared finding: @24 figurative-register doubling (auditor DEDUP + worm-canon revise + metaphor-R2 AP4)
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
+        orchestrator_critic_verdict: SUCCESS   # 7/7 criteria
+        facets_dialogue: none   # silent chapter (0 speech bones)
+        facets_process_notes: "merge-time fixes — feeling entry-line IDs must be bare-numeric (R1 author wrote prefix-prefixed -> stale-cite); state slice citations collide post-consolidation -> stripped to c09-proven back=N. Container git-clone reset mtimes (bones-review freshness check is a false-negative artifact; stale_since:null is authoritative)." R2: NI K5/D1/A2 (del @5, add spine @16/@24, 25.9% band-stretch documented); memory K2/D0/A0 (spine resolved, doubled-register held); feeling K2/D0/A0 (NI-anti-dup PASS); metaphor 0 (4 refusals); exposition K2/REWORD1/A1 (ctx-001 satisfied @2 exposition:4). Arbiter: 0 interventions, 0 discipline-fails, f-r2-counts all 0. Merge: 60 entries, 81.5% decorated. 4d scene-map validation CLEAN (27/27 one scene). [prior faceted-r1: R1 fanout 10 authors; merge fixes feeling bare-numeric IDs + state back=N strip per c09 pattern]
         bones_file: theater/bones/b01-c10.md
         bones_count: 27
         substance_bone_gate_verdict: PASS   # Phase 6: auditor 0 HARD (after cycle-1 fix: 9 held-axis witnesses + 2 signal recasts) / 7 SIGNAL all dispositioned (3 stakes-tie + 3 abstract-object accept-with-rationale, signal-005/007 remediated); audience 3-of-3 SUBSTANCE-FELT all 4 scenes
