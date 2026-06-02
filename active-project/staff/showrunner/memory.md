@@ -6683,7 +6683,7 @@ books:
               omission_rationale: The two-bone split (n06 = ledger closes; n08 = face persists) is the enacted form of the opposing force. The surplus of n08 over n06 is the scene's argument.
 
       - slug: b01c11
-        status: bones-written
+        status: faceted-r1
         bones_file: theater/bones/b01-c11.md
         bones_count: 27
         substance_bone_gate_verdict: PASS

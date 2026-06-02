@@ -12,8 +12,8 @@ mode: BLIND
 
 ---
 
-sensory:1 @11 smell: shop-ambient -> paper-burning-char
-sensory:2 @27 sound: stylus-on-surface-rhythm -> silence
+1 @11 smell: shop-ambient -> paper-burning-char
+2 @27 sound: stylus-on-surface-rhythm -> silence
 
 ---
 

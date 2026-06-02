@@ -3,6 +3,32 @@
 
 ---
 
+## 2026-06-02 — b01c11 three-facet R1 blind authoring at /and-facets Phase 1
+
+Chapter b01c11: 27 bones, 4 scenes, silent feed-POV chapter. Taylor physically at the-feed-station throughout; other locations (grain-measures junction, cloth-merchant's shop, soap-rendering lane) are mediated through the insect-feed. This is the first chapter in which the feed-POV's mediated spaces raise a loc-state interpretation question: do mediated spaces earn place-anchors? Studio's answer (confirmed in loc-state authoring notes): YES for scenes that have explicit named locations in the scene-map and where the stitcher needs a spatial anchor to render the scene; NO for individual perception beats (@3/@4 grain-measures junction; @13/@14 feed relay at worktable) where the physical event is too fine-grained or purely feed-extended.
+
+LOCATION-STATE (6 entries, 0 cull):
+  Scene-A: @1 feed-station morning place-anchor (time-of-day reset).
+  Scene-B: @8 cloth-merchant-shop place-anchor + @9 messenger-at-threshold (state-change).
+  Scene-C: @17 soap-rendering-lane cross-lane place-anchor.
+  Scene-D: @22 feed-station end-of-day place-anchor + time-advance + @23 continuity-carry (falling-to-close-image qualifies as resolving posture).
+  New slugs: oc-cloth-merchant-shop + oc-soap-rendering-lane — no confirmed warehouse cards; margit referrals flagged.
+  First use of continuity-carry on "falling-to-close-image" rhythm — established as equivalent to "resolving" for license purposes.
+
+SENSORY (2 entries, 0 cull):
+  sensory:1 @11 smell (shop-ambient → paper-burning-char) — burn at cloth-merchant's shop; discrete smell-onset; audience-perceptible without Taylor's faculty (physical event rendered through the feed-POV narrative space).
+  sensory:2 @27 sound (stylus-on-surface-rhythm → silence) — chapter terminal image; calibration-anchor precedent s01e01:24; honors the stylus-frame chapter enclosure noted in scene-map.
+  Short-chapter exemption: 7.4% density at exemption ceiling (max(6%, 7.4%)). ADVISORY not blocking.
+  CRITICAL SEAM: @13/@14 (insect-feed thermal-shift / smoke-curl) cannot fire in sensory-flags — fauna-feed-extension reject (the audience cannot perceive these without Taylor's insect-faculty). The grounding-ledger anticipated fires at @13/@14; they must be carried by narrator-interest (where Taylor's extended-range perception is the facet's domain) and prose-phase grounding. This is a confirmed rubric boundary for feed-POV chapters: extended-range insect-feed perception is narrator-interest territory, not sensory-flags territory.
+
+STATE-UPDATES-ENV (14 entries, 11 decisions-not-fire; density 52%; at absolute band ceiling of 14):
+  New props introduced: oc-cloth-merchant-paper (destroyed at @11), oc-soap-lane-report-packet (sealed @21; persists into b01c12).
+  Eight new field-extensions on prop:oc-feed-ledger (source-field-entry, cloth-merchant-entry, four arm-entries, condition-close).
+  The four arm-closes @23-@26 are individually tracked canonical fields — the accounting-in-motion decomposed into per-arm entries per the compound-transition rule.
+  Peak-bone co-citation confirmed at @6/@11/@16/@20/@25.
+  Key held-against-turn applications: @10 (paper lifted; approach to @11 burn), @19 (packet opened; approach to @20 write).
+  Chapter-close canonical carry to b01c12: soap-lane-report-packet sealed (must be consumed or re-routed); oc-jarvis-packet in transit with Jarvis; feed-ledger closed.
+
 ## 2026-06-01 — b01c09 sensory facet authored at /and-facets Phase 1 R1 (BLIND)
 
 Chapter b01c09: 23 bones, 3 scenes. 2 sensory fires. Short-chapter exemption active (23 < 30; modality floor = ceiling trigger at 2 modalities). 8.7% density — ADVISORY not blocking.

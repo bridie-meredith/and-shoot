@@ -1,5 +1,29 @@
 # studio STM
 
+## 2026-06-02 — /and-facets b01-c11 Phase 1 R1 three-facet authoring (BLIND)
+
+Chapter b01c11: 27 bones, 4 scenes. Silent chapter — feed-POV. Taylor at feed-station throughout; other locations mediated through insect-feed.
+
+LOCATION-STATE: 6 entries, 0 cull.
+  loc-state:1 @1 — the-feed-station; morning; place-anchor; packet at surface-edge for Jarvis hand-off; time-of-day reset from b01c10 end-of-day to morning.
+  loc-state:2 @8 — oc-cloth-merchant-shop; morning; back-worktable-open, rushlight-lit; scene-B place-anchor for the burn sequence.
+  loc-state:3 @9 — oc-cloth-merchant-shop; morning; messenger-at-threshold; state-change: new entrant makes the off-hour charge legible.
+  loc-state:4 @17 — oc-soap-rendering-lane; afternoon; cross-lane-open; scene-C place-anchor.
+  loc-state:5 @22 — the-feed-station; end-of-day; accounting-in-motion; scene-D place-anchor + time-of-day advance.
+  loc-state:6 @23 — continuity-carry from loc-state:5; falling-to-close-image rhythm (resolving posture); licensed.
+  Seams: oc-cloth-merchant-shop + oc-soap-rendering-lane warehouse cards missing; feed-POV mediated-space interpretation at @3/@4 and @13/@14 needs R2 ruling.
+
+SENSORY: 2 entries, 0 cull. Short-chapter exemption ACTIVE (7.4%). Modalities: smell + sound.
+  sensory:1 @11 — smell: shop-ambient -> paper-burning-char. Paper burn in enclosed shop; discrete smell-onset. Q1/Q2 clear. Old-state from loc-state:2 @8 (shop-ambient).
+  sensory:2 @27 — sound: stylus-on-surface-rhythm -> silence. Chapter terminal; calibration-anchor precedent (s01e01:24 stylus-stops). Old-state from loc-state:5 accounting-in-motion + series vocabulary.
+  KEY SEAM: @13/@14 anticipated grounding (grounding-ledger) cannot fire — fauna-feed-extension reject. Narrator-interest must carry the insect-feed thermal/smoke relay materiality.
+
+STATE-UPDATES-ENV: 14 entries, 11 decisions-not-fire. Density 52% — absolute count at s01e01 band ceiling (14); defended.
+  Peak-bone co-citation: @6 (social_tether-prot-rise), @11 (political_register-world), @16 (social_tether-antag), @20 (social_tether-antag), @25 (social_tether-prot-rise) — all covered.
+  New props: oc-cloth-merchant-paper (burns @11; destroyed) + oc-soap-lane-report-packet (sealed @21; persists into b01c12).
+  8 new field-extensions on prop:oc-feed-ledger. Margit referrals filed.
+  Chapter-close: feed-ledger closed; soap-lane-report-packet sealed; oc-jarvis-packet in transit with Jarvis.
+
 ## 2026-06-01 — /and-facets b01-c09 Phase 1 R1 sensory authoring (BLIND)
 
 Authored sensory-b01-c09.md (2 entries, 23 bones). Density 2/23 = 8.7% — short-chapter exemption ACTIVE (23 < 30; modality-count = floor = 2; ceiling relaxed to max(6%, 2/23) = 8.7%; ADVISORY not blocking). Modality floor ≥2 met exactly with thermal + tactile.

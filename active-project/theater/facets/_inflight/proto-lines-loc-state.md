@@ -1,27 +1,27 @@
-1 jarvis-coin-kl-courier takes the packet
+1 jarvis-coin-kl-courier takes the packet [loc-state:1]
 2 jarvis-coin-kl-courier folds the covering-sheet
 3 oswyn-mudway-flea-bottom-elder presses the cart-frame
 4 the wool-dyer returns the cart-timing observation
 5 taylor-hebert-kl-122ac sets the stylus to the source-field
-6 taylor-hebert-kl-122ac writes the lane-pattern [state:15]
+6 taylor-hebert-kl-122ac writes the lane-pattern
 7 taylor-hebert-kl-122ac lifts the stylus
-8 the cloth-merchant opens the back-worktable
-9 the messenger crosses the shop-threshold
+8 the cloth-merchant opens the back-worktable [loc-state:2]
+9 the messenger crosses the shop-threshold [loc-state:3]
 10 the cloth-merchant lifts the folded-paper
 11 the cloth-merchant burns the paper
 12 the iron-dish receives the ash
 13 the insect-feed returns the thermal-shift
 14 the insect-feed carries the smoke-curl
 15 the cloth-merchant squares the bolt-ticket
-16 taylor-hebert-kl-122ac marks the timestamp [state:16][state:17]
-17 the soap-lane-contact crosses the cross-lane
+16 taylor-hebert-kl-122ac marks the timestamp
+17 the soap-lane-contact crosses the cross-lane [loc-state:4]
 18 the soap-lane-contact delivers the nighttime-visitor report
 19 taylor-hebert-kl-122ac opens the packet
-20 taylor-hebert-kl-122ac writes the precinct-pattern sourcing [state:18]
+20 taylor-hebert-kl-122ac writes the precinct-pattern sourcing
 21 taylor-hebert-kl-122ac seals the packet
-22 taylor-hebert-kl-122ac enters the feed-station
-23 taylor-hebert-kl-122ac closes the Jarvis entry
+22 taylor-hebert-kl-122ac enters the feed-station [loc-state:5]
+23 taylor-hebert-kl-122ac closes the Jarvis entry [loc-state:6]
 24 taylor-hebert-kl-122ac closes the Oswyn entry
-25 taylor-hebert-kl-122ac closes the contacts entry [state:19]
+25 taylor-hebert-kl-122ac closes the contacts entry
 26 taylor-hebert-kl-122ac closes the arrangement entry
 27 taylor-hebert-kl-122ac sets the stylus down

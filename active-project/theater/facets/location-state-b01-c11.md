@@ -8,12 +8,12 @@ mode: BLIND
 
 ---
 
-loc-state:1 @1 the-feed-station | morning | none | station-surface-packet-at-hand-off | the sealed packet at the station surface edge where Jarvis's hand closes on it
-loc-state:2 @8 oc-cloth-merchant-shop | morning | none | back-worktable-open, rushlight-lit | the narrow back-worktable open in low rushlight
-loc-state:3 @9 oc-cloth-merchant-shop | morning | none | back-worktable-open, messenger-at-threshold | the shop-threshold carrying an off-hour body
-loc-state:4 @17 oc-soap-rendering-lane | afternoon | none | cross-lane-open | the cross-lane at the soap-rendering lane mouth, open to approach
-loc-state:5 @22 the-feed-station | end-of-day | none | station-surface-clear, accounting-in-motion | the feed-station surface bare and the ledger open before the arm-closes begin
-loc-state:6 @23 the-feed-station | end-of-day | none | accounting-in-motion | continuity-from loc-state:5: the accounting surface still under hand through the four arm-close sequence
+1 @1 the-feed-station | morning | none | station-surface-packet-at-hand-off | the sealed packet at the station surface edge where Jarvis's hand closes on it
+2 @8 oc-cloth-merchant-shop | morning | none | back-worktable-open, rushlight-lit | the narrow back-worktable open in low rushlight
+3 @9 oc-cloth-merchant-shop | morning | none | back-worktable-open, messenger-at-threshold | the shop-threshold carrying an off-hour body
+4 @17 oc-soap-rendering-lane | afternoon | none | cross-lane-open | the cross-lane at the soap-rendering lane mouth, open to approach
+5 @22 the-feed-station | end-of-day | none | station-surface-clear, accounting-in-motion | the feed-station surface bare and the ledger open before the arm-closes begin
+6 @23 the-feed-station | end-of-day | none | accounting-in-motion | continuity-from loc-state:5: the accounting surface still under hand through the four arm-close sequence
 
 ---
 

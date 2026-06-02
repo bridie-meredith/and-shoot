@@ -9,6 +9,6 @@ density: 2 fires / 27 bones = 7.4% (within 5-12% chapter band)
 doubled-register: Earth-Bet displacement (mem:1) + Westerosi-monument clamp (mem:2)
 ---
 
-mem:1 @7 the hand comes off the surface and the one name that would tie the work to a person stays unwritten, the way she has built every quiet machine to run on what nobody chose to give it -> cond-override-architecture-residue-122ac
+1 @7 the hand comes off the surface and the one name that would tie the work to a person stays unwritten, the way she has built every quiet machine to run on what nobody chose to give it -> cond-override-architecture-residue-122ac
 
-mem:2 @16 the mark goes down on a thing already finished a long way off, smallness she would once have measured against a larger ending and the measure is still wrong because smaller wars still burn the people standing under them -> monument-mass-casualty-foreshadow
+2 @16 the mark goes down on a thing already finished a long way off, smallness she would once have measured against a larger ending and the measure is still wrong because smaller wars still burn the people standing under them -> monument-mass-casualty-foreshadow
