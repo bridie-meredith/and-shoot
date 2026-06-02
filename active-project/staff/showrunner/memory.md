@@ -6800,8 +6800,8 @@ books:
             - axis: relational_anchor_status
               direction: up
               target_delta_magnitude: 1.0
-              cost_ledger_anchor: cl-d08
-              notes: "coverage gap = Wren structurally necessary to coverage map without entering the ledger; cl-d08 cost paid"
+              cost_ledger_anchor: [cl-d08, cl-d06]
+              notes: "coverage gap = Wren structurally necessary to coverage map without entering the ledger; cl-d08 cost paid. SETTLEMENT (DEC-0071, re-window from pl-2026-06-02-stitch-thread-002): this +1.0 axis-move ALSO settles the outstanding cl-d06 2nd tranche (+1.0) that reached the end of its c08-c10 window unsettled while relational_anchor_status was held flat c08-c11. cl-d08 = mechanism; cl-d06 = debt; one axis-move settles both. Closes the cl-d06 partial-settle tracked since c06 (pl-2026-05-30-001)."
             - axis: social_tether-prot-rise
               direction: up
               target_delta_magnitude: 0.5

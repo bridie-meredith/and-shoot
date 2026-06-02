@@ -4209,3 +4209,60 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+## DEC-0071 | 2026-06-02 | FAST (user-proxy, RUNBOOK R1)
+
+question: |
+  b01c11 /and-substance chapter Phase 3 — disposition for two HARD parking-lot items.
+  Item 1 (pl-2026-06-02-stitch-thread-001): UNPAID-HOOK hook-0007 (Halvard counter-argument).
+    Opened c07; payoff slipped c10; c10+c11 hold Halvard offstage. Reached/passed window.
+    c13 contract states "Halvard appears... engagement foreclosed"; c11/c12/c13 handoffs carry
+    "Halvard: counter-argument thinning in Taylor's engagement."
+  Item 2 (pl-2026-06-02-stitch-thread-002): UNPAID-HOOK cl-d06 relational_anchor_status +2 (2nd +1.0 tranche).
+    First +1.0 settled c06. 2nd +1.0 window c08-c10 expired unsettled. c11 holds axis flat.
+    c12 moves relational_anchor_status +1.0 (mechanism: cl-d08 "Wren structurally necessary to coverage map").
+
+context: |
+  Silent chapter-production run for b01c11 (RUNBOOK Rule 1). Items flagged for Phase 3 resolution.
+  Established pattern: prior parking-lot re-windows (pl-2026-05-25-001, pl-2026-05-30-001) re-windowed
+  to the chapter where the axis next moves or the hook's downstream contract settles it.
+
+options:
+  - re-window: carry the item forward to a specific future chapter
+  - resolve-here: settle the item in Phase 3 in-substance (not possible given offstage constraints)
+  - foreclose: declare the hook retired via downstream authored contract
+  - ESCALATE: surface to principal
+
+decision: |
+  Item 1 (hook-0007 Halvard counter-argument): FORECLOSE.
+    The c13 authored contract ("engagement foreclosed") is the payoff. The c11/c12/c13 handoffs
+    already carry the thinning trajectory. Phase 3 should stamp: foreclosed-at-c13, citing c13 handoff
+    language. No re-window needed — the downstream authored contract IS the resolution.
+  Item 2 (cl-d06 2nd +1.0 relational_anchor_status tranche): RE-WINDOW to c12.
+    c12 delivers relational_anchor_status +1.0. That axis-move is the settlement event for the
+    outstanding cl-d06 tranche regardless of which ledger entry (cl-d08) describes the mechanism.
+    The axis does not track mechanism attribution per tranche — movement settles debt.
+
+basis: |
+  Item 1: methodology:3e (convention — prior hooks whose downstream authored contracts carry explicit
+  "foreclosed/thinning" language are stamped FORECLOSE at the point they reach/pass window; the
+  resolution is already authored, not deferred). The c13 contract is unambiguous ("engagement
+  foreclosed"); the handoff language confirms it; no new authoring required at Phase 3.
+  Item 2: methodology:3e (convention — established re-window pattern re-windows to the chapter
+  where the axis next moves; c12 is that chapter). The mechanism-attribution distinction (cl-d08 vs.
+  cl-d06) does not create a separate axis-move; relational_anchor_status +1.0 in c12 settles whatever
+  cl-d06 balance is outstanding.
+
+trade-off: |
+  Item 1: FORECLOSE vs. RE-WINDOW-to-c13. FORECLOSE is correct because c13 doesn't just open a new
+  window — its authored contract explicitly delivers the resolution text. Re-windowing implies the
+  hook is still open and awaits content not yet written; foreclosing recognizes the content is
+  already written and designated.
+  Item 2: The cl-d08/cl-d06 distinction is a ledger-mechanism detail, not an axis-movement gating
+  condition. Treating it as a gate would require tracking which ledger entry "authorized" a given
+  unit of axis movement, which the substance framework does not do.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
