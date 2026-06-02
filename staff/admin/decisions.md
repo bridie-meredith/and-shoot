@@ -4326,3 +4326,80 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+## DEC-0073 | 2026-06-02 | PROCESS-CRITIC (b01c11 bone-gate — ABSTRACTION-DOMINANT fire-and-accept on feed-POV chapter)
+
+mode: process-critic
+trigger: /and-write b01c11 Phase 6 bone-gate — 0 HARD / 2 SIGNAL (ABSTRACTION-DOMINANT s02 + s03, both ACCEPTED-with-rationale); Chapter PASS, 3/3 SUBSTANCE-FELT
+gate_path: .claude/commands/and-write.md#phase-6
+verdict: OK-MERGED-INTO PROP-0030 + PROP-0031 (recurrence_count 3→4 on both)
+
+question: |
+  Does ABSTRACTION-DOMINANT firing-and-accepting on feed-POV chapters warrant a process change?
+  Candidates: (1) feed-POV grounding-quota carve-out at Phase 6; (2) tighter coupling to /and-cohere
+  apparatus-density tracker; (3) stitch-layer obligation rather than bones-layer SIGNAL; (4) OK.
+
+decision: OK-MERGED-INTO PROP-0030 + PROP-0031
+
+rationale: |
+  The existing process is functioning correctly on all three dimensions:
+
+  (1) Gate behavior. ABSTRACTION-DOMINANT is correctly classified as a SIGNAL (not HARD) on
+  architecture-licensed abstract bones. The accept-with-rationale path is the designed handling
+  when abstraction is design-intrinsic (feed relay structure + behavioral ABSENCE as central event),
+  not authoring laziness. The gate fires, the rationale is logged, the stitch-carry obligation is
+  set. This is the process working.
+
+  (2) Downstream handling. The stitch-carry to /and-stitch Phase 4 physical-materiality
+  reinforcement is the designed downstream obligation for accepted ABSTRACTION-DOMINANT SIGNALs.
+  3/3 audience SUBSTANCE-FELT confirms the chain is delivering on that obligation. A feed-POV
+  carve-out that suppressed the SIGNAL would *remove* the stitch-carry trigger — net-negative,
+  because the SIGNAL is load-bearing as an advisory arm to stitch.
+
+  (3) Cross-chapter accumulation. The consecutive-abstract concern (c10+c11 both abstract;
+  consecutive-airless N=6, the threshold named in DEC-0067) is PROP-0030/0031's designed target.
+  Both proposals are open and await principal triage. Adding a new accumulation-warning gate at
+  the bones layer would duplicate PROP-0030/0031 rather than addressing their root cause (chapter-
+  isolated scoring cannot see cross-chapter accumulation — that is structural, not a gap in the
+  Phase 6 gate). The correct action is to merge c11 as evidence into the two open proposals and
+  note that N=6 is at the DEC-0067 threshold, not to author a third accumulation-warning proposal.
+
+  Process discrimination: could a stricter existing gate have caught a process failure here?
+  No. There is no process failure: the SIGNAL fired, the rationale was logged, the audience
+  confirmed substance delivery. The stitch layer will carry the physical-materiality obligation.
+  The only potential concern — cross-chapter accumulation — is already the target of open
+  proposals PROP-0030/PROP-0031.
+
+  DEC-0067 named N=6 as the threshold for "a separate warning gate becomes warranted." N is now
+  6 (c06/c07/c08/c09/c10/c11). However: the DEC-0067 framing was "no new proposal at N=5;
+  threshold for potential new proposal is N=6." At N=6 the consideration is whether to open a
+  new proposal or continue merging into the existing open proposals. Assessment: PROP-0030/PROP-0031
+  are already open and their proposed_diff already addresses the cross-chapter accumulation class
+  precisely (cross-chapter cold-read primitive + iteration loop). The accumulation debt at N=6 is
+  the case for triage urgency on those proposals, not a case for a third overlapping proposal.
+  Proposing a new accumulation-warning gate at N=6 when N=1 open proposals exist for the same
+  class is noise, not signal. Merge and flag triage urgency.
+
+  Triage urgency note: PROP-0030 + PROP-0031 have been open since 2026-05-31. Accumulation-count
+  N is now at 6 (the DEC-0067 threshold). If both proposals remain untriaged through c12-c13,
+  the accumulation debt will be larger and the /and-cohere convergence run more expensive.
+  Principal triage of PROP-0030/PROP-0031 is strongly recommended before c13.
+
+trade-off: |
+  Merging vs. proposing a new accumulation-warning gate:
+  - A new gate (e.g., "after 2 consecutive ABSTRACTION-DOMINANT chapters, HARD-abort at /and-write
+    unless principal acknowledges") would be high-blast-radius, would require /and-write to read
+    cross-chapter state it does not currently read, and would fire on design-intrinsic content
+    (the project's feed-POV architecture deliberately produces abstract chapters). False-positive
+    rate would be high; the carve-out logic needed to avoid false-positives would reproduce the
+    accept-with-rationale path that already exists at Phase 6.
+  - Merging into PROP-0030/PROP-0031 accepts that the per-chapter gate is not the right instrument
+    for a cross-chapter accumulation problem. The accumulation problem requires a cross-chapter
+    review primitive (/and-review cohere) + iteration loop (/and-cohere) — both of which
+    PROP-0030/PROP-0031 define. The cost of not merging is a premature gate that would suppress
+    the stitch-carry trigger without solving the accumulation problem.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
