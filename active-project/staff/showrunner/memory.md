@@ -5658,6 +5658,15 @@ books:
             - "MEDIUM context-weave: beat-(a) formalization opacity @2 (surface informal->named arrangement via packet content + interior register)"
             - "exposition: s01 Sera-as-stated-consideration (packet content, not in bone SVO by design)"
             - "grounding-ledger: scene C aliveness (sparse/back-loaded grounding)"
+        context_followability:
+          completeness_verdict: FOLLOWABLE   # Phase 4.5 post-R2
+          readability_verdict: ALIVE         # Phase 4.5 post-R2 (silent-chapter aliveness load: 7 sensory grd-001..007 + 2 feeling + 4 NI)
+          report_path: active-project/staff/reviews/context-follow-r2-b01-c10-2026-06-02.md
+          reviewed_at: 2026-06-02
+          context_ledger_open: 0   # ctx-001 satisfied by exposition:4 @2 (Sera-consideration)
+          grounding_ledger_open: 0  # grd-001..007 all satisfied (license over-cap R1 sensory exempt from band)
+          phase_4_6_fired: false   # FOLLOWABLE+ALIVE; context-weave track ended at 4.5
+          voice_fixable_carry: ["VF-1 @10/@11 surrender as two distinct physical acts", "VF-2 @15/@17/@18 detention as perceptual feed-event not data-transaction", "VF-3 @27 terminal face as physical feed-datum (suppressed-recognition fence)", "VF-4 @13 reworded interval bridge render"]
         chunk: |
           Otto formalizes the arrangement: no longer a contingent exchange but a named,
           ongoing function. Taylor is his intelligence instrument for the Flea Bottom and
