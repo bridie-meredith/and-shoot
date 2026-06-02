@@ -1454,7 +1454,18 @@ evidence_refs:
   - ".claude/commands/and-write.md — Phase 1 step 2 held-bone shape description: 'Held axes contribute zero by definition and must each have at least one bone in the scene with that axis in its bone-level axes_held[]' — requirement exists but is embedded in shape description, not in numbered authoring steps"
   - ".claude/commands/and-write.md — Phase 6 HELD-AXIS-NOT-WITNESSED: 'for each entry in scenes[].substance_delta.axes_held[], at least one bone in the scene must have that axis in its bone-level axes_held[]' — the gate exists and fires correctly; the gap is at the authoring brief, not the gate"
   - "active-project/staff/auditor/write-b01c06-bone-gate.md — fault-001 HELD-AXIS-NOT-WITNESSED: political_register-prot s01; resolved by assigning axis to existing bone s01n02 (no new bone required); same failure class at lower severity than c04 (1 axis vs 5; trivial fix vs additive cycle). Confirms the pattern is recurrent across chapters with held axes in the contract."
-recurrence_count: 2
+recurrence_count: 3
+# recurrence_count bumped 2→3 by admin process-critic DEC-0069 (2026-06-02):
+# b01c10 Phase 6 bone-gate returned 4 HARD HELD-AXIS-NOT-WITNESSED covering 9 scene-contract
+# held axes (s01 ×2, s02 ×3, s03 ×1, s04 ×3). Root cause: screen-writer attributed
+# held-axis coverage via rollup ("implicit n03 grounding") rather than placing each held axis
+# into the target bone's bone-level axes_held[]. All 9 resolved cycle-1 by fixer. Same failure
+# class as c04 (5 axes, additive-bone cycle) and c06 (1 axis, assign-to-existing). Third
+# chapter-level occurrence confirms the Phase 1 brief gap is persistent.
+recurrence_refs:
+  - "active-project/staff/auditor/write-b01-c10-bone-gate.md — 4 HARD HELD-AXIS-NOT-WITNESSED; 9 axes across s01/s02/s03/s04; resolved cycle-1 (fixer added 9 axes_held[] entries to s01n03/n05, s02n03/n04/n07, s03n07, s04n01/n03/n05). Process note: 'screen-writer attributed held axes via rollup rather than bone-level axes_held[]' — the exact authoring gap PROP-0011 proposes to close."
+  - "active-project/staff/auditor/write-b01c04-bone-gate-redo.md — first occurrence: 5 HARD across 3 scenes; additive bone cycle."
+  - "active-project/staff/auditor/write-b01c06-bone-gate.md — second occurrence: 1 HARD fault-001; trivial fix."
 proposed_diff: |
   In .claude/commands/and-write.md, Phase 1, after step 4 (scene_conflict / opposing-force
   rule), add a new numbered step 4a (or append to step 4 as a sub-bullet):
@@ -1471,6 +1482,11 @@ proposed_diff: |
         assert count(bones[slug] where axes_held[].axis == A) >= 1
       If any axis A has count == 0: author a held bone for A before exiting Phase 1.
 
+    Note: rollup-level attribution ("this axis is implicitly witnessed by n03's grounding")
+    does NOT satisfy this check. The target bone must have the axis explicitly listed in
+    its bone-level axes_held[]. Implicit attribution is not detectable by the Phase 6
+    gate and will return HELD-AXIS-NOT-WITNESSED even when a suitable bone exists.
+
     Holding discipline for the held bone: the SVO must enact stillness-against-pressure
     for axis A (see step 2 held-bone description). The rationale must name the discipline.
     The bone is a normal held bone — it may serve double duty (also a grounding bone or
@@ -1478,7 +1494,10 @@ proposed_diff: |
 
   The existing held-bone description in step 2 is unchanged — this step 4a is the
   completion checkpoint that operationalizes the requirement stated there. The information
-  is not new; its placement as a named completion gate is the change.
+  is not new; its placement as a named completion gate is the change. The note on
+  implicit/rollup attribution (added at third recurrence) closes the specific gap that
+  produced 9 missed witnesses at b01c10: the screen-writer knew the axes were held but
+  expressed coverage at the scene-rollup level rather than the bone level.
 cost_estimate: S
 status: open
 triaged_at: null
