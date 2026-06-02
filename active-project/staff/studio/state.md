@@ -1,8 +1,8 @@
 # studio state
 
-episode: b01c09
-last_updated: 2026-06-01
-action: location-state R1 blind authoring — /and-facets b01-c09 Phase 1
+episode: b01c10
+last_updated: 2026-06-02
+action: state-updates-env R1 blind authoring — /and-facets b01-c10 Phase 1
 
 ## Current set
 location: the-feed-station (scene-C close; end of day)
@@ -48,6 +48,30 @@ ambient_conditions:
     - the-rushwick (c05)
     - oswyn-watcher-network corridors integrated (c08 s01)
     - dragonpit-margin outer lanes (c09 s02 evening circuit; Rushwick-south extension)
+
+## State-updates-env locked (b01c10) — 7 entries, 5 decisions-not-fire
+  state:1 @12 — prop:oc-jarvis-packet.wax-condition: pliable -> dry
+  state:2 @15 — studio.fauna_sense_status.lower-gate-road-coverage: corwick-present -> corwick-absent
+  state:3 @17 — studio.spatial_layout.lane-junction-patrol: unposted -> Gold-Cloak-pair-posted
+  state:4 @20 — prop:oc-feed-ledger.condition: closed -> open
+  state:5 @21 — prop:oc-feed-ledger.corwick-entry: absent -> written
+  state:6 @25 — prop:oc-feed-ledger.condition: open -> closed
+  state:7 @27 — prop:oc-feed-record.corwick-entry: logged-withheld -> persisting-post-closure
+  Culled (not-fired): @1 holder (first-touch low canonical value), @2 seal-condition (intermediate), @4 physical-condition (intermediate), @6 physical-condition (intermediate), @11 feed-record surrender (intermediate; subsumed by @27 terminal)
+  Field-extensions (5): prop:oc-jarvis-packet.wax-condition; studio.fauna_sense_status.lower-gate-road-coverage; studio.spatial_layout.lane-junction-patrol; prop:oc-feed-ledger.condition + corwick-entry (new oc-prop); prop:oc-feed-record.corwick-entry (new oc-prop)
+  Margit referrals pending: oc-feed-ledger.card.md (new); oc-feed-record.card.md (new); oc-jarvis-packet.card.md (carry from b01c08/c09 — still pending)
+  Density note: 7/27 = 26%; absolute count within s01e01 band ceiling (14); all 7 clear Reality+Authority+Frugality; no density-on-flat contamination
+  State-updates-env R1 authored 2026-06-02 — theater/facets/state-updates-env-b01-c10.md (7 entries)
+  _inflight: theater/facets/_inflight/proto-lines-state-env.md filed (citations @12, @15, @17, @20, @21, @25, @27)
+
+## Prop state at b01c10 chapter-close (projected from state-updates-env R1)
+  - prop:oc-jarvis-packet (b01c10 incoming): wax-condition=dry (@12; persistent)
+  - prop:oc-feed-ledger.condition: closed (@25; persistent)
+  - prop:oc-feed-ledger.corwick-entry: written (@21; permanent)
+  - prop:oc-feed-record.corwick-entry: persisting-post-closure (@27; terminal canonical fact)
+  - studio.fauna_sense_status.lower-gate-road-coverage: corwick-absent (@15; persistent into downstream chapters)
+  - studio.spatial_layout.lane-junction-patrol: Gold-Cloak-pair-posted (@17; posted/stationary; persistent)
+  - All b01c09 carry-forward entries unchanged (fauna_sense_status.oswyn-watcher-network, feed-edge-geometry, water-point-geometry; spatial_layout.water-point-position)
 
 ## Seams flagged for R2
   - oc-dragonpit-margin: no warehouse card confirmed; slug drawn from bones `locations:` field; margit referral may be needed
