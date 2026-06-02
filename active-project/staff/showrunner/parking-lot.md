@@ -1556,3 +1556,79 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-02-001
+      created_at: 2026-06-02T00:00:00Z
+      created_by: "/and-substance chapter b01c10 Phase 5 (audience trio split) + Phase 5.5 (chunk cold-read)"
+      target:
+        command: /and-write
+        scope: "b01c10"
+        phase: null
+      severity: SOFT
+      description: |
+        Convergent bones-execution watches for b01c10 — all three audience personas AND the
+        chunk cold-read independently flagged the same two soft spots (PASS-CHUNK-VOICE-RISK
+        was banked partly on these). These are write-time bone/prose disciplines, NOT contract
+        changes:
+        - W1 (s02 Corwick-surrender, cape-fic + dark-fantasy + worm + cold-read): the surrender
+          of the withheld body-map ("she provides it") must be ENACTED as an irreversible act
+          with a physical correlate — months of accumulated observation visible AS months before
+          becoming a line item; the substrate-split/translation must be a structurally distinct
+          cognitive bone BEFORE the routing bone. If rendered as a clean procedural clause, the
+          moral_framework cost goes inert and the central choice reads as decided, not chosen.
+        - W2 (s04 face-as-terminal-weight, dark-fantasy + worm): the face must land as the
+          chapter's TERMINAL weight, as a physical feed-datum (posture-class / errand-geometry /
+          gait-signature persisting in the feed-record), NOT as interior emotional realization
+          ("she cannot forget his face"). Two structurally distinct bones — one ledger-closes,
+          one record-remains; the surplus of the second over the first is the scene's argument.
+          The three "he did not consent" beats stay 3 distinct bones, not collapsed to one
+          interior report. Bone ordering must land the face LAST, not the closure notation.
+        - W3 (s03 absence-read, worm): enact the prior-circuit presence-count BEFORE the absence
+          reads as deviation, so the feed-discipline is not assertion.
+        - W4 (aliveness, cold-read): 4 single-POV scenes, no dialogue, no second on-stage body —
+          keep the formalization + detention CONCRETE and grounded; the detention especially as a
+          perceptual feed-event, not a data-record transaction. (Also armed at /and-stitch Phase
+          8.5 via chunk_cold_read.voice_risk.voice_risk_carry.)
+      context_refs:
+        - active-project/audience/cape-fic-reader/b01c10-chunk-review.md
+        - active-project/audience/dark-fantasy-reader/b01c10-chunk-review.md
+        - active-project/audience/worm-canon-pedant/b01c10-chunk-review.md
+        - active-project/staff/reviews/chunk-coldread-b01c10-2026-06-01.md
+        - active-project/staff/showrunner/memory.md  # chapters[b01c10].chunk_cold_read.voice_risk
+      resolution_suggestion: "/and-write b01c10 Phase 1 scene-decomposition + Phase 3-5 bone authoring honors W1-W4; Phase 6 bone-gate confirms the s02 surrender and s04 face land as enacted bones."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-02-002
+      created_at: 2026-06-02T00:00:00Z
+      created_by: "/and-substance chapter b01c10 Phase 5 (auditor returned-message fault-002)"
+      target:
+        command: /and-substance
+        scope: "*"
+        phase: Phase 3
+      severity: SOFT
+      description: |
+        cl-antag-d10 (gain: social_tether-antag +4; cost: journey-required cl04) draws +1.5 at
+        b01c10 (s02 +0.5 + s03 +1.0). Its journey-required dependency cl04 (gain:
+        relational_anchor_status +3; cost: extraction-path-foreclosed / non-extractable confirmed)
+        is NOT drawn at c10 — relational_anchor_status is held flat all four scenes (Wren excluded).
+        cl04's relational_anchor accumulation is trajectory-anchored across cl-d06/cl-d08/cl-d11/cl04
+        and its non-extractable-confirmation cost is the same d10/d11 "extraction path foreclosed"
+        beat c10 begins enacting (handoff_out: "non-extractable confirmation: in progress"). The
+        +1.5 cl-antag-d10 draw therefore rides a journey-required dependency that completes across
+        c10-c11+, not at a single anchored draw. Auditor flagged this as an unverified authorization
+        (advisory, non-blocking — no over-draw; cl-antag-d10 +1.5 of +4.0 drawn). Same cross-chapter
+        partial-settle family as pl-2026-05-30-001 (cl-d06) and pl-2026-05-25-001 (cl01b).
+        Resolution: the resolving chapter (c11+) Phase 3 should state the cl04 deferred-draw plan
+        explicitly when relational_anchor_status next moves, so the cl-antag-d10 journey-required
+        dependency is closed in the accounting rather than left implicit.
+      context_refs:
+        - active-project/staff/showrunner/memory.md  # cost-ledger cl-antag-d10 (~line 1394), cl04 (~line 1388)
+        - active-project/staff/showrunner/memory.md  # chapters[b01c10].handoff_out non-extractable in progress
+      resolution_suggestion: "c11+ Phase 3 states cl04 deferred-draw plan when relational_anchor_status next moves; closes cl-antag-d10 journey-required dependency in the ledger accounting."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
