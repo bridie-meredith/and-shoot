@@ -9,14 +9,30 @@ cascade:
     feasible; halt cleanly with a checkpoint on cap-exhaustion / hard-block / practical
     session limit.
   last_completed:
-    level: chapter
+    level: bones-review
     slug: b01c10
-    completed_at: 2026-06-02T00:00:00Z
+    completed_at: 2026-06-02T01:25:00Z
   next:
-    command: /and-write b01c10
+    command: /and-facets b01c10
     args: [b01c10]
-  reason: continue
+  reason: halted-practical-limit   # operator-judgment clean halt (run_intent practical-session-limit clause): bones complete+reviewed+committed; facets+stitch are the larger half, best resumed with fresh budget given this run's infra instability (3 dispatch-deaths)
   failure: null
+  c10_progress: |
+    b01c10 ~60% through the chapter-production chain — ALL COMMITTED + PUSHED:
+      [DONE] /and-substance chapter b01c10 — 4 scenes, climax/d10, roll-up exact, Phase-5 ACCEPT
+             (3-of-3 SUBSTANCE-FELT), cold-read PASS-CHUNK-VOICE-RISK.
+      [DONE] /and-write b01c10 — 27 bones / 4 scenes, silent chapter, bone-gate PASS (0 HARD after
+             cycle-1 fix, 7 SIGNAL dispositioned), bones file + scene-map emitted, persisted to memory.
+      [DONE] /and-review bones b01c10 — PASS-WITH-NOTES, follow_check PASS-WITH-NOTES (/and-facets cleared).
+      [NEXT] /and-facets b01c10 — Phase 0 will read bones_review (fresh, present) + scene-map (present).
+             Carry into Phase 2.5 context-weave (from bones_review.carry_to_facets_phase_2_5):
+               HIGH: B->C surrender->detention causal seam (context-ledger candidate)
+               MEDIUM: beat-(a) formalization opacity @2
+               exposition: s01 Sera-as-stated-consideration
+               grounding-ledger: scene C aliveness (BONES-AIRLESS-RISK)
+             Apply per-persona SPLIT dispatch at Phase 5b (PROP-0036; trio-in-one dies — proven twice).
+      [THEN] /and-stitch b01c10 (Phase 9 cold-read + Phase 10 forward-thread).
+  resume: /and-facets b01c10  (then /and-stitch b01c10)
   pending_depth_passes: []   # b01 ZERO unresolved depth passes (c09 DEC-0068 resolved).
   pending_cohere: "consecutive-airless c06-c09 (DEC-0066/0067) — book-level /and-cohere concern; re-evaluate depth-pass-pending accumulation at N>=6 (DEC-0067). c10 chunk_cold_read PASS-CHUNK-VOICE-RISK (airlessness design-inherent for this climax) extends the watch — candidate cohere window after c10-c11."
   c10_substance: |
