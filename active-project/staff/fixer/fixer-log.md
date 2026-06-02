@@ -1,3 +1,50 @@
+## SESSION-START — 2026-06-02T00:00:00Z — write-b01c10-phase6-bone-gate-cycle1
+dispatch: /and-write b01c10 Phase 6 bone-gate cycle-1 fix — 4 HARD HELD-AXIS-NOT-WITNESSED (9 axes_held additions to 8 named bones) + 2 SIGNAL remediations (3 SVO object swaps)
+target: active-project/staff/showrunner/b01c10-bones-draft.md
+audit-report: (inline from gate run)
+findings-queued: 6 (4 HARD + 2 SIGNAL)
+
+## HARD-s01 — RESOLVED — 2026-06-02T00:02:00Z
+fault: s01 held axes relational_anchor_status + political_register-prot attributed in rollup only; not in any bone's bone-level axes_held (HELD-AXIS-NOT-WITNESSED)
+scope: line
+change: confirmed both already present in file — b01c10s01n03 axes_held already contains relational_anchor_status; b01c10s01n05 axes_held already contains political_register-prot; no edits required for these two additions
+criteria met: yes — both axes appear in named bone-level axes_held entries in s01
+
+## HARD-s02 — RESOLVED — 2026-06-02T00:03:00Z
+fault: s02 held axes position-prot-rise + political_register-prot + social_tether-prot-rise attributed in rollup only; not in any bone's bone-level axes_held (HELD-AXIS-NOT-WITNESSED)
+scope: line
+change: confirmed all three already present in file — b01c10s02n03 axes_held contains position-prot-rise; b01c10s02n04 axes_held contains political_register-prot; b01c10s02n07 axes_held contains social_tether-prot-rise; no edits required for these three additions
+criteria met: yes — all three axes appear in named bone-level axes_held entries in s02
+
+## HARD-s03 — RESOLVED — 2026-06-02T00:04:00Z
+fault: s03 held axis social_tether-prot-rise attributed in rollup only; not in any bone's bone-level axes_held (HELD-AXIS-NOT-WITNESSED)
+scope: line
+change: confirmed already present in file — b01c10s03n07 axes_held contains social_tether-prot-rise; no edit required for this addition
+criteria met: yes — axis appears in named bone-level axes_held entry in s03
+
+## HARD-s04 — RESOLVED — 2026-06-02T00:05:00Z
+fault: s04 held axes position-world + political_register-world + social_tether-prot-collapse attributed in rollup only; not in any bone's bone-level axes_held (HELD-AXIS-NOT-WITNESSED)
+scope: line
+change: position-world and political_register-world confirmed already present — b01c10s04n01 axes_held contains position-world; b01c10s04n03 axes_held contains political_register-world; social_tether-prot-collapse was NOT present — added to b01c10s04n05 axes_held: `- axis: social_tether-prot-collapse / rationale: "non-extractable confirmation in progress but the collapse axis is not yet active; social_tether-prot-collapse holds at start_rank 8"`
+criteria met: yes — all three axes now appear in named bone-level axes_held entries in s04
+
+## signal-005 — RESOLVED — 2026-06-02T00:06:00Z
+fault: b01c10s02n05 and b01c10s02n06 svo objects were abstract ("the record") — SIGNAL abstract-object flag
+scope: line
+change: confirmed both recasts already present in file — s02n05 svo: "taylor-hebert-kl-122ac translates the body-map" with # Phase-6 signal-005 recast comment; s02n06 svo: "taylor-hebert-kl-122ac routes the body-map" with # Phase-6 signal-005 recast comment; no edits required
+criteria met: yes — both SVOs use concrete object "the body-map"; abstract-object flag cleared
+
+## signal-007 — RESOLVED — 2026-06-02T00:07:00Z
+fault: b01c10s04n05 svo "corwick squares the errand-corridor" — "squares" overused (3 instances); SIGNAL verb-repetition flag
+scope: line
+change: s04n05 svo recast from "corwick squares the errand-corridor" to "corwick crosses the errand-corridor" with # Phase-6 signal-007 recast comment added; reduces "squares" from 3 to 2 instances; "crosses" is a distinct concrete verb; body-map-layer beat preserved; social_tether-prot-collapse axis added to s04n05 axes_held in same edit (HARD-s04 fix co-applied); s04n08 "corwick squares the feed-record" intentionally untouched per dispatch
+criteria met: yes — "squares" count reduced to 2; distinct concrete verb used; no change to s04n08
+
+## SESSION-END — 2026-06-02T00:08:00Z — write-b01c10-phase6-bone-gate-cycle1
+findings-applied: 6 (4 HARD + 2 SIGNAL; 8 of 9 axes_held additions were pre-applied in the draft; 1 applied this session — social_tether-prot-collapse to s04n05; signal-005 both SVOs pre-applied; signal-007 SVO applied this session)
+findings-skipped: 0
+exit: CLEAN
+
 ## SESSION-START — 2026-06-01T09:00:00Z — and-facets-b01c09-cycle1-fixes-round2
 dispatch: /and-facets b01c09 Phase 5b cycle-1 remediation — confirm 2 HARD baseline fields already present in loc-state (FINDING 1: loc-state:1 @1 thermal; FINDING 2: loc-state:3 @8 light); apply FINDING 3 SOFT tidy (loc-state:5 @17 tactile/prop wax-soft-warm baseline) if rubric-safe
 target: active-project/theater/facets/location-state-b01-c09.md
@@ -1717,6 +1764,12 @@ dispatch: minimum-change fixes for 8 FAULT-FORM-MODIFIER faults in b01c06 bones 
 target: active-project/staff/showrunner/_drafts/b01c06-bones-draft-2026-05-30.md
 audit-report: active-project/staff/auditor/write-b01c06-pass2.md
 findings-queued: 8 (fault-001 confirmed already applied in prior session; 7 remaining to apply)
+
+## SESSION-START — 2026-06-02T00:00:00Z — write-b01c10-phase6-bonegate-cycle1
+dispatch: /and-write b01c10 Phase 6 bone-gate cycle-1 fix — 4 HARD HELD-AXIS-NOT-WITNESSED (9 axes_held additions across 9 named bones) + 2 SIGNAL remediations (3 SVO object swaps in s02n05, s02n06, s04n05)
+target: active-project/staff/showrunner/b01c10-bones-draft.md
+audit-report: n/a (dispatch carries inline fix specification)
+findings-queued: 12 (9 axes_held additions + 3 SVO swaps)
 
 ## SESSION-START — 2026-05-31T00:00:00Z — and-facets-b01c07-cycle1-fixes
 dispatch: /and-facets b01c07 Phase 5b cycle-1 remediation — 4 failed facets (interest-narrator AP-001 cap, sensory[3-sub], dialogue-halvard split-verdict, dialogue-taylor 2-persona convergence); apply minimum change per consolidated callouts in facets-audience-gate-r1.md

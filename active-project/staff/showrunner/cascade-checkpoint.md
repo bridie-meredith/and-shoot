@@ -4,46 +4,76 @@ cascade:
   invoked_command: "produce-chapter-protocol b01c09 → cascade to b01-complete (c10–c20)"
   mode: unattended
   run_intent: |
-    Multi-chapter cascade. Finish c09 (resume facets → stitch P9 + P10), then
-    produce c10..c20 end-to-end per RUNBOOK chapter-production protocol (R1–R5).
-    Book b01 chapter_count = 20. Drive as far as feasible; halt cleanly with a
-    checkpoint on cap-exhaustion / hard-block / practical session limit.
+    Multi-chapter cascade. c09 COMPLETE. Now producing c10..c20 end-to-end per RUNBOOK
+    chapter-production protocol (R1–R5). Book b01 chapter_count = 20. Drive as far as
+    feasible; halt cleanly with a checkpoint on cap-exhaustion / hard-block / practical
+    session limit.
   last_completed:
-    level: stitch-phase-10
-    slug: b01c09
-    completed_at: 2026-06-01T16:45:00Z
+    level: bones-review
+    slug: b01c10
+    completed_at: 2026-06-02T01:25:00Z
   next:
-    command: /and-substance chapter b01c10
-    args: [chapter, b01c10]
-  reason: continue
+    command: /and-facets b01c10
+    args: [b01c10]
+  reason: halted-practical-limit   # operator-judgment clean halt (run_intent practical-session-limit clause): bones complete+reviewed+committed; facets+stitch are the larger half, best resumed with fresh budget given this run's infra instability (3 dispatch-deaths)
   failure: null
-  pending_depth_passes: []   # c09 depth pass RESOLVED (DEC-0068): /and-write revise --from-signals + re-facets + re-stitch delivered (Phase 2.5 ALIVE + coherence PASS + prose-rationale 0 + trio de-fog endorsement); depth_pass_resolved_at stamped. b01 now has ZERO unresolved depth passes.
-  pending_cohere: "consecutive-airless c06-c09 (DEC-0066/0067) — book-level /and-cohere concern; re-evaluate depth-pass-pending accumulation at N>=6 (DEC-0067). c09 depth pass shows the airlessness is design-inherent (resolvable at substance layer, not at the context-stripped terminal gate)."
-  c09_complete: "draft/b01-c09.md TERMINAL + DEPTH-RESOLVED (de-fogged, embodied re-render). Phase 9 cold-read design-inherent NO recorded; Phase 10 PASS-THREAD; aggregate-state through b01c09 + rev-0003."
-  facets: "audited-r1 (DEC-0063 Option-B streamlined). Phase 5 0 HARD / 9 SIGNAL; Phase 5b all 8 content facets PASS 3-of-3 (1 fixer loop on sensory old-state lineage). orchestrator-critic: SUCCESS 7/7. Carry to /and-stitch: signal-sup-001 (validate exposition:3@8 / loc-state:3@8 fold for redundancy at Phase 1); apparatus-muffle @11 (Phase 8.5); alive-002 VOICE-FIXABLE scene-B opening person-first (Phase 4); moral_legibility hold s03 NO recognition beat (DEC-0062); cold_read CONTINUE bar = tentative-yes (Class B)."
-  bones_review: "PASS / follow_check PASS-WITH-NOTES — CLEAR for /and-facets. Carries to Phase 2.5: follow-001 (s02 @8 temporal gap, context-ledger candidate), signal-001 (@11 instrument-class render-physical / grounding-ledger), signal-002 (@9/@10 marks-verb). pl-2026-06-01-001 (corwick card / dragonpit-margin+lower-gate geo cards) resolves at /and-facets Phase 0."
-  notes: |
-    /and-write b01c09 COMPLETE (2026-06-01). 23 bones / 3 scenes emitted:
-    theater/bones/b01-c09.md + theater/facets/scene-map-b01-c09.md. Silent chapter —
-    no dialogue files (Phase 1.5 no-op).
+  c10_progress: |
+    b01c10 ~60% through the chapter-production chain — ALL COMMITTED + PUSHED:
+      [DONE] /and-substance chapter b01c10 — 4 scenes, climax/d10, roll-up exact, Phase-5 ACCEPT
+             (3-of-3 SUBSTANCE-FELT), cold-read PASS-CHUNK-VOICE-RISK.
+      [DONE] /and-write b01c10 — 27 bones / 4 scenes, silent chapter, bone-gate PASS (0 HARD after
+             cycle-1 fix, 7 SIGNAL dispositioned), bones file + scene-map emitted, persisted to memory.
+      [DONE] /and-review bones b01c10 — PASS-WITH-NOTES, follow_check PASS-WITH-NOTES (/and-facets cleared).
+      [NEXT] /and-facets b01c10 — Phase 0 will read bones_review (fresh, present) + scene-map (present).
+             Carry into Phase 2.5 context-weave (from bones_review.carry_to_facets_phase_2_5):
+               HIGH: B->C surrender->detention causal seam (context-ledger candidate)
+               MEDIUM: beat-(a) formalization opacity @2
+               exposition: s01 Sera-as-stated-consideration
+               grounding-ledger: scene C aliveness (BONES-AIRLESS-RISK)
+             Apply per-persona SPLIT dispatch at Phase 5b (PROP-0036; trio-in-one dies — proven twice).
+      [THEN] /and-stitch b01c10 (Phase 9 cold-read + Phase 10 forward-thread).
+  resume: /and-facets b01c10  (then /and-stitch b01c10)
+  pending_depth_passes: []   # b01 ZERO unresolved depth passes (c09 DEC-0068 resolved).
+  pending_cohere: "consecutive-airless c06-c09 (DEC-0066/0067) — book-level /and-cohere concern; re-evaluate depth-pass-pending accumulation at N>=6 (DEC-0067). c10 chunk_cold_read PASS-CHUNK-VOICE-RISK (airlessness design-inherent for this climax) extends the watch — candidate cohere window after c10-c11."
+  c10_substance: |
+    /and-substance chapter b01c10 COMPLETE (2026-06-02). 4 scene chunks emitted + per-scene
+    substance_delta + scene_conflict persisted to chapters[b01c10].scenes (memory.md). Climax
+    chapter (d10 — first Dance-pressure pulse). dramatic_shape=climax, scene_count=4.
+    Roll-up: all 7 axes_in_motion sum EXACT to chapter targets (position-prot-rise +1.0,
+    social_tether-prot-rise +1.0, social_tether-antag +1.5, position-world +1.0,
+    political_register-world +1.0, moral_framework -1.0, moral_legibility +0.5).
 
-    Phase 6 bone-gate PASS: auditor 0 HARD / 2 SIGNAL accepted (s02n09 instrument-class
-    render-physical advisory; marks-verb variation advisory — both carried to /and-stitch
-    Phase 4 via scene-map protected-patterns). Audience 9/9 SUBSTANCE-FELT (3 personas ×
-    3 scenes). Coverage discipline satisfied.
+    Phase 5 gate (3 reviewers): dramatist ACCEPT (sound climax shape); auditor 0 HARD / 3
+    advisory flags + 4 pass; audience 3-of-3 SUBSTANCE-FELT (split single-persona dispatch
+    after two trio-dispatch deaths — socket-close + timeout; c09-precedent split remediation
+    worked, ~85s each). Notes-fixes applied at persist: cl-world-d07 "completed"→first-tranche
+    +1.0/+2.0 (aggregate confirms political_register-world at start_rank 5); s02 Corwick-Oswyn
+    [mechanism:] tag added; s04 cl03a disambiguated (-1.0/-2.0, not closed); handoff_out ranks
+    corrected vs aggregate-state (social_tether-antag 6→5, political_register-world 7→6;
+    position-world rank 7 confirmed correct).
 
-    Pipeline: Pass 2 (12 FAULT-FORM PP-recasts → CLEAN; 2 delta-floor by DEC-0002 precedent)
-    + Pass 3 dramatist (+1 transition bone s02n09) + Pass 4 trim (3/3 ACCEPT 0-del)
-    + Pass 5 continuity (CONTINUITY-OK; corwick bare-slug resolved by c08 precedent;
-    dragonpit-margin/lower-gate geo-cards parked for /and-facets Phase 0 — pl-2026-06-01-001).
+    Phase 5.5 chunk cold-read: PASS-CHUNK-VOICE-RISK (Signal A excused under-motivated
+    Corwick-surrender + Signal B abstraction-lean). Arms /and-stitch Phase 8.5 Check 3
+    (voice_risk_carry: verify s02 surrender + s03 detention land concretely, not as
+    procedural-clause / data-transaction). Recorded in chapters[b01c10].chunk_cold_read.
 
-    INCIDENT: prior Phase 6 dispatch pair (auditor + audience trio) died silently ~3.5h with
-    partial output (cape-fic + dark-fantasy verdicts only); re-dispatched auditor + worm-canon;
-    re-run completed the gate cleanly.
+  carry_to_write: |
+    Bones-execution watches for /and-write b01c10 (pl-2026-06-02-001 — convergent across
+    cold-read + all 3 personas):
+      W1 (s02): ENACT the Corwick body-map surrender as an irreversible act with a physical
+        correlate (months visible AS months before line-item); substrate-split/translation a
+        distinct cognitive bone BEFORE the routing bone. Not a clean procedural clause.
+      W2 (s04): the face is the chapter's TERMINAL weight, a physical feed-datum (posture-class/
+        gait-signature persisting), NOT interior emotional realization. Two distinct bones
+        (ledger-closes / record-remains); 3 "he did not consent" beats stay 3 bones; face LAST.
+      W3 (s03): enact prior-circuit presence-count BEFORE absence reads as deviation.
+      W4: aliveness — silent chapter (4 single-POV scenes, no dialogue); keep formalization +
+        detention concrete + grounded; detention as perceptual feed-event not data-transaction.
+    cape-fic also: s02 substrate-collapse must read irreversible not routine filing.
+    SOFT ledger watch pl-2026-06-02-002: cl-antag-d10 journey-required cl04 deferred-draw plan
+    to be stated when relational_anchor_status next moves (c11+).
 
-    Carry to /and-stitch (chunk_cold_read CHUNK-CLASS-B / DEC-0062 + scene-map protected-patterns):
-      - apparatus-muffle: render s02n09 'insect-feed returns corwick' as a physical perceptual
-        event, NOT a data-record transaction (Phase 8.5 central-event-muffle armed).
-      - moral_legibility hold at s03: NO recognition beat — double-omission stays structural fact
-        (motive-opacity is design-intentional per DEC-0062, not a hole).
-      - cold_read CONTINUE bar = tentative-yes (design-inherent Class B), not strict-yes.
+  prior_chapters_note: |
+    c09 COMPLETE: draft/b01-c09.md TERMINAL + DEPTH-RESOLVED; Phase 10 PASS-THREAD;
+    aggregate-state through b01c09 + rev-0003. (Full c09 record in git history /
+    memory.md chapters[b01c09].)

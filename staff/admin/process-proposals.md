@@ -1454,7 +1454,18 @@ evidence_refs:
   - ".claude/commands/and-write.md — Phase 1 step 2 held-bone shape description: 'Held axes contribute zero by definition and must each have at least one bone in the scene with that axis in its bone-level axes_held[]' — requirement exists but is embedded in shape description, not in numbered authoring steps"
   - ".claude/commands/and-write.md — Phase 6 HELD-AXIS-NOT-WITNESSED: 'for each entry in scenes[].substance_delta.axes_held[], at least one bone in the scene must have that axis in its bone-level axes_held[]' — the gate exists and fires correctly; the gap is at the authoring brief, not the gate"
   - "active-project/staff/auditor/write-b01c06-bone-gate.md — fault-001 HELD-AXIS-NOT-WITNESSED: political_register-prot s01; resolved by assigning axis to existing bone s01n02 (no new bone required); same failure class at lower severity than c04 (1 axis vs 5; trivial fix vs additive cycle). Confirms the pattern is recurrent across chapters with held axes in the contract."
-recurrence_count: 2
+recurrence_count: 3
+# recurrence_count bumped 2→3 by admin process-critic DEC-0069 (2026-06-02):
+# b01c10 Phase 6 bone-gate returned 4 HARD HELD-AXIS-NOT-WITNESSED covering 9 scene-contract
+# held axes (s01 ×2, s02 ×3, s03 ×1, s04 ×3). Root cause: screen-writer attributed
+# held-axis coverage via rollup ("implicit n03 grounding") rather than placing each held axis
+# into the target bone's bone-level axes_held[]. All 9 resolved cycle-1 by fixer. Same failure
+# class as c04 (5 axes, additive-bone cycle) and c06 (1 axis, assign-to-existing). Third
+# chapter-level occurrence confirms the Phase 1 brief gap is persistent.
+recurrence_refs:
+  - "active-project/staff/auditor/write-b01-c10-bone-gate.md — 4 HARD HELD-AXIS-NOT-WITNESSED; 9 axes across s01/s02/s03/s04; resolved cycle-1 (fixer added 9 axes_held[] entries to s01n03/n05, s02n03/n04/n07, s03n07, s04n01/n03/n05). Process note: 'screen-writer attributed held axes via rollup rather than bone-level axes_held[]' — the exact authoring gap PROP-0011 proposes to close."
+  - "active-project/staff/auditor/write-b01c04-bone-gate-redo.md — first occurrence: 5 HARD across 3 scenes; additive bone cycle."
+  - "active-project/staff/auditor/write-b01c06-bone-gate.md — second occurrence: 1 HARD fault-001; trivial fix."
 proposed_diff: |
   In .claude/commands/and-write.md, Phase 1, after step 4 (scene_conflict / opposing-force
   rule), add a new numbered step 4a (or append to step 4 as a sub-bullet):
@@ -1471,6 +1482,11 @@ proposed_diff: |
         assert count(bones[slug] where axes_held[].axis == A) >= 1
       If any axis A has count == 0: author a held bone for A before exiting Phase 1.
 
+    Note: rollup-level attribution ("this axis is implicitly witnessed by n03's grounding")
+    does NOT satisfy this check. The target bone must have the axis explicitly listed in
+    its bone-level axes_held[]. Implicit attribution is not detectable by the Phase 6
+    gate and will return HELD-AXIS-NOT-WITNESSED even when a suitable bone exists.
+
     Holding discipline for the held bone: the SVO must enact stillness-against-pressure
     for axis A (see step 2 held-bone description). The rationale must name the discipline.
     The bone is a normal held bone — it may serve double duty (also a grounding bone or
@@ -1478,7 +1494,10 @@ proposed_diff: |
 
   The existing held-bone description in step 2 is unchanged — this step 4a is the
   completion checkpoint that operationalizes the requirement stated there. The information
-  is not new; its placement as a named completion gate is the change.
+  is not new; its placement as a named completion gate is the change. The note on
+  implicit/rollup attribution (added at third recurrence) closes the specific gap that
+  produced 9 missed witnesses at b01c10: the screen-writer knew the axes were held but
+  expressed coverage at the scene-rollup level rather than the bone level.
 cost_estimate: S
 status: open
 triaged_at: null
@@ -4853,6 +4872,99 @@ proposed_diff: |
   the series structural choices are constant across all books, showrunner memory is the
   lower-infrastructure home.
 
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0036
+
+```yaml
+id: PROP-0036
+created_at: 2026-06-02T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/write-b01-c10-bone-gate.md
+  source_verdict: PASS (after cycle-1 fix). Process note — two full audience-trio dispatch deaths (socket-close + timeout ~41min/49 tool-uses) before split single-persona remediation succeeded.
+  gate_path: .claude/commands/and-write.md#phase-6
+target:
+  type: command
+  path: .claude/commands/and-write.md
+  section: "Phase 4 + Phase 6 — audience review dispatches (bone-gate substance-felt trio)"
+change_type: modify
+rationale: |
+  At /and-write b01c09 and again at b01c10, the audience-trio Phase 6 bone-gate dispatch
+  (all three personas in a single agent invocation) failed catastrophically before the
+  bone-gate could complete: at c09 a socket-close killed the trio mid-run; at c10 a first
+  retry also failed (socket-close), then a second retry timed out at ~41 minutes / ~49
+  tool-uses. Both chapters ultimately used a split single-persona remediation — 3 separate
+  light dispatches, ~75-97 seconds each — that succeeded on the first attempt.
+
+  This is the same failure mode at two consecutive chapters. The trio-in-one-agent dispatch
+  is structurally unreliable for the bone-gate review: the dispatch is long-running (multi-
+  scene, multi-persona, per-scene SUBSTANCE-FELT verdict across 3 reviewers), which crosses
+  the socket-close + timeout threshold that isolated lightweight single-persona dispatches
+  do not reach.
+
+  The split-dispatch remediation has proven itself at both c09 and c10 with no quality loss:
+  each persona reads the same bones file and produces the same SUBSTANCE-FELT per-scene
+  verdicts the trio would produce; the bone-gate aggregation rule (3-of-3 ACCEPT required)
+  is unchanged. The only structural difference is invocation topology: 3 x ~90sec instead
+  of 1 x ~40min dispatch that may die before returning.
+
+  The command body has no documented fallback for dispatch death, and no indication that
+  the split-dispatch is the tested-and-working alternative. The fix is to retire the
+  trio-in-one-agent dispatch as default in favor of per-persona dispatches at the bone-gate
+  audience review phases. This does not change what is reviewed or how verdicts are
+  aggregated — only that each persona is dispatched as a separate lightweight agent.
+
+  Recurrence_count = 2 (c09 + c10 consecutive). Two consecutive chapters is sufficient to
+  rule out one-off infrastructure noise. The trio-in-one-agent pattern is deterministically
+  unreliable at the bone-gate scale.
+evidence_refs:
+  - "active-project/staff/auditor/write-b01-c10-bone-gate.md — Process notes: 'Two audience-trio dispatch deaths (socket-close + timeout) before the split single-persona remediation succeeded (c09-precedent; ~75-97s each). Recurrence of the dispatch-death failure mode (cf. pl-2026-06-01-003, c09 INCIDENT).'"
+  - "active-project/staff/showrunner/parking-lot.md — pl-2026-06-01-003: '/and-facets b01c09 — auditor + orchestrator silent-write incident' (same session as the c09 audience-trio dispatch death; confirms the dispatch-death family is recurring at c09)."
+  - "active-project/staff/auditor/write-b01-c10-bone-gate.md — Audience section: all three personas returned full per-scene SUBSTANCE-FELT verdicts, coverage discipline satisfied. Split dispatch produced complete verdicts with no quality degradation vs. the trio format."
+  - ".claude/commands/and-write.md — Phase 4 + Phase 6: audience review dispatches that invoke all three personas in a single agent call."
+recurrence_count: 2
+proposed_diff: |
+  In .claude/commands/and-write.md, at each phase that invokes the audience trio in a
+  single agent dispatch (Phase 4 substance-felt pre-screen and Phase 6 bone-gate trio):
+
+  CHANGE — Default invocation topology:
+
+  Replace the trio-in-one-agent dispatch with per-persona dispatches:
+
+    Old: dispatch one agent with instructions to speak for all three audience personas
+    and return a combined verdict block.
+
+    New: dispatch three agents, one per persona (parallel preferred; sequential if
+    parallel unavailable). Each agent receives:
+      - The persona's card + persona-exemplar (resolution: project-bound -> library -> absent).
+      - The bones file and scene-map facet.
+      - A single-persona verdict template: per-scene SUBSTANCE-FELT or NOT-FELT with
+        rationale, scene-count coverage confirmation, W1/W2/fences check, ACCEPT/FAIL.
+
+  Aggregation is unchanged: 3-of-3 ACCEPT required for the phase to PASS. The orchestrating
+  command body reads the three returned verdicts and aggregates as before.
+
+  This change applies wherever /and-write currently dispatches a single agent to produce
+  verdicts for all three audience personas simultaneously. The same topology risk applies
+  to /and-facets Phase 5b and /and-substance Phase 5 audience dispatches; the principal
+  may choose to extend this change to those command bodies at triage.
+
+  NOTE: the split dispatch is not a fallback for failure — it is the new default. The
+  trio-in-one format's apparent benefit (fewer dispatches) is outweighed by two
+  demonstrated catastrophic failures. Three ~90-second dispatches is always cheaper than
+  one 40-minute dispatch that dies before returning.
 cost_estimate: S
 status: open
 triaged_at: null

@@ -4087,3 +4087,39 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0069 | 2026-06-02 | SLOW (process-critic)
+
+question: /and-write b01c10 Phase 6.5 — does this bone-gate run reveal process changes needed? Two candidate patterns: (1) recurring audience-trio dispatch death (socket+timeout x2 consecutive chapters); (2) HELD-AXIS-NOT-WITNESSED as recurring decomposition gap (9 axes at c10, same class as c04 + c06).
+context: |
+  Bone-gate report: write-b01-c10-bone-gate.md. Verdict: PASS after cycle-1 fix.
+  4 HARD HELD-AXIS-NOT-WITNESSED (all resolved cycle-1; fixer added 9 axes_held[] entries to
+  named held bones). 7 SIGNAL (2 remediated, 5 accept-with-rationale). Audience 3-of-3 ACCEPT
+  all scenes (split single-persona dispatch used after two full-trio deaths).
+options: n/a
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0036 (new; audience trio dispatch death — modify /and-write Phase 4+6 default topology) + OK-MERGED-INTO PROP-0011 (recurrence_count 2->3; rollup-attribution note added to proposed_diff).
+basis: methodology:3a (reversibility — dispatch death is irreversible wasted spend; split-dispatch is always cheaper) + recurrence threshold (PROP-0036 at count=2 consecutive; PROP-0011 merge is mandatory per matching rules at count=3).
+rationale: |
+  Pattern 1 (dispatch death): No prior proposal covered this failure mode. Recurrence_count = 2
+  (c09 incident + c10 two-failure sequence). Two consecutive chapters rules out one-off noise.
+  The split-dispatch is the proven-working alternative (used twice, no quality loss, ~90sec each).
+  change_type: modify (topology only; aggregation rule unchanged). Cost S. Proposed at count=2
+  rather than waiting for count=3 because (a) consecutive chapters rule out infrastructure noise;
+  (b) failure cost is high (40+ minutes wasted per death); (c) fix is proven and S-cost.
+
+  Pattern 2 (HELD-AXIS-NOT-WITNESSED): PROP-0011 already open, same target.path + change_type.
+  Merged per matching rules. recurrence_count 2->3. Recurrence_ref added (write-b01-c10-bone-gate.md).
+  proposed_diff extended with an explicit note that rollup-level "implicit" attribution does not
+  satisfy the gate — the bone must carry the axis in its bone-level axes_held[] field. This is the
+  specific root cause at c10 (screen-writer attributed via rollup, not per-bone).
+trade-off: |
+  On dispatch death: proposing at count=2 rather than the default count>=3 threshold for non-
+  catastrophic SIGNALs. Justified: consecutive-chapter pattern + high failure cost + proven fix.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
