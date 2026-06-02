@@ -1,0 +1,80 @@
+# b01c11 — Phase 1 bone decomposition (working file; pre-flat_id, pre-emit)
+# Chapter aggregate (verified): social_tether-prot-rise +1.0 (s01n06 +0.5 + s04n04 +0.5);
+#   social_tether-antag +1.0 (s02n09 +0.5 + s03n04 +0.5); political_register-world +0.5 (s02n04 +0.5).
+# Silent chapter — zero dialogue-anchor bones (no speaks-to, no communication-class axis-moves). Phase 1.5 skipped.
+# Mannerism fixes applied: s02n07 "carries the smoke-curl", s02n09 "marks the timestamp".
+
+scenes:
+
+  - scene: b01c11s01
+    chunk_target: social_tether-prot-rise +0.5 (cl03b)
+    scene_conflict: { protagonist_force: "coverage-circuit discipline — nodes run, packet to Jarvis, contacts return", opposing_force: "the load the tether already carries — nodes doing work Taylor did not design", stakes_axis: social_tether-prot-rise }
+    scene_axes_held: [social_tether-antag, political_register-world, moral_framework, relational_anchor_status, moral_legibility_to_self, political_register-prot, position-prot-rise]
+    bones:
+      - { slug: b01c11s01n01, svo: "jarvis-coin-kl-courier takes the packet", axis_moves: [], axes_held: [{axis: social_tether-prot-rise, rationale: "channel operating at load — tether-weight shown via node action"}] }
+      - { slug: b01c11s01n02, svo: "jarvis-coin-kl-courier folds the covering-sheet", axis_moves: [], axes_held: [{axis: social_tether-prot-rise, rationale: "ceremony-free fold-and-gone — tether load accumulates without contact"}] }
+      - { slug: b01c11s01n03, svo: "oswyn-mudway-flea-bottom-elder presses the cart-frame", axis_moves: [], axes_held: [{axis: social_tether-prot-rise, rationale: "Oswyn occupying ward-function at junction — tether node visible without contact"}] }
+      - { slug: b01c11s01n04, svo: "the wool-dyer returns the cart-timing observation", axis_moves: [], axes_held: [{axis: social_tether-prot-rise, rationale: "unprompted debt-service return — tether circuit operating"}] }
+      - { slug: b01c11s01n05, svo: "taylor-hebert-kl-122ac sets the stylus to the source-field", axis_moves: [], axes_held: [{axis: social_tether-antag, rationale: "withhold initiated — discrete omission act; antag held flat"}] }   # grounding (stylus/source-field)
+      - { slug: b01c11s01n06, svo: "taylor-hebert-kl-122ac writes the lane-pattern", axis_moves: [{axis: social_tether-prot-rise, direction: up, magnitude: 0.5}], cost_ledger_anchor: cl03b }   # MOVING; grounding
+      - { slug: b01c11s01n07, svo: "taylor-hebert-kl-122ac lifts the stylus", axis_moves: [], axes_held: [{axis: moral_framework, rationale: "withhold complete — wool-dyer name stays in internal record; omission closed as bodily fact"}] }
+    event_map:
+      - { tag: "[event: morning-circuit-at-load]", covering_bones: [b01c11s01n01, b01c11s01n02, b01c11s01n03] }
+      - { tag: "[event: contacts-return-unprompted]", covering_bones: [b01c11s01n04] }
+      - { tag: "[mechanism: wool-dyer-withhold]", covering_bones: [b01c11s01n05, b01c11s01n06, b01c11s01n07] }
+      - { tag: "[image: channel-functions-without-ceremony]", covering_bones: [b01c11s01n01, b01c11s01n02] }
+
+  - scene: b01c11s02
+    chunk_target: political_register-world +0.5 (null), social_tether-antag +0.5 (cl-antag-d10 first tranche)
+    scene_conflict: { protagonist_force: "feed-reading discipline — the burn is a thermal event the feed returns", opposing_force: "the burn as intelligence signal — first Rhaenyra-pressure the grid returned; routable, she does not route it", stakes_axis: political_register-world }
+    scene_axes_held: [social_tether-prot-rise, moral_framework, relational_anchor_status, political_register-prot, moral_legibility_to_self, position-prot-rise]
+    bones:
+      - { slug: b01c11s02n01, svo: "the cloth-merchant opens the back-worktable", axis_moves: [], axes_held: [{axis: political_register-world, rationale: "merchant's bolt-count morning routine legible — world-state context before anomaly"}] }   # grounding (back-worktable)
+      - { slug: b01c11s02n02, svo: "the messenger crosses the shop-threshold", axis_moves: [], axes_held: [{axis: social_tether-antag, rationale: "off-hour visitor pattern — held in internal record; withheld-category accumulating"}] }
+      - { slug: b01c11s02n03, svo: "the cloth-merchant lifts the folded-paper", axis_moves: [], axes_held: [{axis: political_register-world, rationale: "sealed-then-opened geometry in feed — world-state observation before central event"}] }
+      - { slug: b01c11s02n04, svo: "the cloth-merchant burns the paper", axis_moves: [{axis: political_register-world, direction: up, magnitude: 0.5}] }   # CENTRAL EVENT; MOVING on world-state (Dragonstone-dark via standing protocol)
+      - { slug: b01c11s02n05, svo: "the iron-dish receives the ash", axis_moves: [], axes_held: [{axis: political_register-world, rationale: "burn complete — physical closure of central event; dish is aftermath anchor"}] }   # grounding (iron-dish)
+      - { slug: b01c11s02n06, svo: "the insect-feed returns the thermal-shift", axis_moves: [], axes_held: [{axis: social_tether-antag, rationale: "biological relay confirms burn — thermal datum through insects in worktable ambient zone"}] }
+      - { slug: b01c11s02n07, svo: "the insect-feed carries the smoke-curl", axis_moves: [], axes_held: [{axis: social_tether-antag, rationale: "second relay datum — smoke-curl confirms completion; feed detection bandwidth shown"}] }
+      - { slug: b01c11s02n08, svo: "the cloth-merchant squares the bolt-ticket", axis_moves: [], axes_held: [{axis: political_register-world, rationale: "merchant returns to routine — standing protocol complete; morning continues"}] }
+      - { slug: b01c11s02n09, svo: "taylor-hebert-kl-122ac marks the timestamp", axis_moves: [{axis: social_tether-antag, direction: up, magnitude: 0.5}], cost_ledger_anchor: cl-antag-d10 }   # MOVING; withheld-category widens (off-hour + burn both held, neither in packet)
+    event_map:
+      - { tag: "[event: burn-detection]", covering_bones: [b01c11s02n04, b01c11s02n05, b01c11s02n06, b01c11s02n07] }
+      - { tag: "[image: standing-protocol]", covering_bones: [b01c11s02n04, b01c11s02n08] }
+      - { tag: "[mechanism: feed-thermal-relay]", covering_bones: [b01c11s02n06, b01c11s02n07] }
+      - { tag: "[event: off-hour-visitor]", covering_bones: [b01c11s02n02] }
+      - { tag: "[force: dragonstone-gone-dark]", covering_bones: [b01c11s02n04, b01c11s02n09] }
+      - { tag: "[mechanism: withheld-category-widens]", covering_bones: [b01c11s02n09] }
+
+  - scene: b01c11s03
+    chunk_target: social_tether-antag +0.5 (cl-antag-d10 second tranche, completing chapter +1.0)
+    scene_conflict: { protagonist_force: "operational momentum — observation route-ready; routing decision runs; circuit does not pause", opposing_force: "the Halvard slot's absence — Taylor reaches the routing decision and the compound-corruption mechanism is simply not in the sequence", stakes_axis: social_tether-antag }
+    scene_axes_held: [social_tether-prot-rise, political_register-world, moral_framework, relational_anchor_status, moral_legibility_to_self, political_register-prot, position-prot-rise]
+    bones:
+      - { slug: b01c11s03n01, svo: "the soap-lane-contact crosses the cross-lane", axis_moves: [], axes_held: [{axis: social_tether-antag, rationale: "contact returns — route-ready observation incoming; antag-leverage node active"}] }
+      - { slug: b01c11s03n02, svo: "the soap-lane-contact delivers the nighttime-visitor report", axis_moves: [], axes_held: [{axis: social_tether-antag, rationale: "observation arrives — back-alley night-access household; route-ready datum"}] }
+      - { slug: b01c11s03n03, svo: "taylor-hebert-kl-122ac opens the packet", axis_moves: [], axes_held: [{axis: social_tether-prot-rise, rationale: "routing decision begins — prepares to source observation to precinct-pattern"}] }   # grounding (packet)
+      - { slug: b01c11s03n04, svo: "taylor-hebert-kl-122ac writes the precinct-pattern sourcing", axis_moves: [{axis: social_tether-antag, direction: up, magnitude: 0.5}], cost_ledger_anchor: cl-antag-d10 }   # CENTRAL EVENT; MOVING — routing-without-Halvard-test IS the slot-absence behavioral fact
+      - { slug: b01c11s03n05, svo: "taylor-hebert-kl-122ac seals the packet", axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "Halvard-foreclose sealed into packet — argument not defeated, not reached for; packet closes before the question surfaces"}] }
+    event_map:
+      - { tag: "[event: soap-lane-contact-returns]", covering_bones: [b01c11s03n01, b01c11s03n02] }
+      - { tag: "[event: routing-decision-halvard-slot-absent]", covering_bones: [b01c11s03n03, b01c11s03n04], note: "central event: Taylor opens+writes without reaching for Halvard-test — behavioral fact of absence" }
+      - { tag: "[mechanism: halvard-foreclose]", covering_bones: [b01c11s03n04, b01c11s03n05] }
+      - { tag: "[force: antag-tether-advance]", covering_bones: [b01c11s03n04] }
+
+  - scene: b01c11s04
+    chunk_target: social_tether-prot-rise +0.5 (cl03b, completing chapter +1.0 -> near-peak)
+    scene_conflict: { protagonist_force: "end-of-day accounting discipline — each node confirmed in sequence; packet sealed; accounting closes without labeling any entry a withhold", opposing_force: "the completed count as a shape — all four nodes load-bearing, two withholds in the record, Dragonstone-distance irony in view", stakes_axis: social_tether-prot-rise }
+    scene_axes_held: [social_tether-antag, political_register-world, moral_framework, relational_anchor_status, moral_legibility_to_self, political_register-prot, position-prot-rise]
+    bones:
+      - { slug: b01c11s04n01, svo: "taylor-hebert-kl-122ac enters the feed-station", axis_moves: [], axes_held: [{axis: social_tether-prot-rise, rationale: "evening circuit at feed-station — accounting-in-motion opens"}] }   # grounding (feed-station)
+      - { slug: b01c11s04n02, svo: "taylor-hebert-kl-122ac closes the Jarvis entry", axis_moves: [], axes_held: [{axis: social_tether-prot-rise, rationale: "Jarvis arm: packet sealed / channel returned everything / carried upward; arm complete"}] }
+      - { slug: b01c11s04n03, svo: "taylor-hebert-kl-122ac closes the Oswyn entry", axis_moves: [], axes_held: [{axis: social_tether-prot-rise, rationale: "Oswyn arm: junction clean / dispute below Watch threshold / ward baseline; arm complete"}] }
+      - { slug: b01c11s04n04, svo: "taylor-hebert-kl-122ac closes the contacts entry", axis_moves: [{axis: social_tether-prot-rise, direction: up, magnitude: 0.5}], cost_ledger_anchor: cl03b }   # MOVING — three contact-threads confirmed; tether-load crystallizes near-peak
+      - { slug: b01c11s04n05, svo: "taylor-hebert-kl-122ac closes the arrangement entry", axis_moves: [], axes_held: [{axis: moral_framework, rationale: "cover holds (ward-elder accounting = useful-things-woman, no patron visible); closes without moral-framework movement"}] }
+      - { slug: b01c11s04n06, svo: "taylor-hebert-kl-122ac sets the stylus down", axis_moves: [], axes_held: [{axis: social_tether-prot-rise, rationale: "crystallization-complete closing image — stylus rests; chapter accounting done"}] }   # grounding (stylus); closing image
+    event_map:
+      - { tag: "[event: evening-count-in-motion]", covering_bones: [b01c11s04n01, b01c11s04n02, b01c11s04n03, b01c11s04n04, b01c11s04n05] }
+      - { tag: "[image: stylus-rests]", covering_bones: [b01c11s04n06] }
+      - { tag: "[mechanism: two-withholds-in-internal-record]", covering_bones: [b01c11s04n04, b01c11s04n05] }
+      - { tag: "[force: near-peak-tether-weight]", covering_bones: [b01c11s04n04] }
