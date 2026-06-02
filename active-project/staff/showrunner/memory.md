@@ -5681,6 +5681,31 @@ books:
           grounding_ledger_open: 0  # grd-001..007 all satisfied (license over-cap R1 sensory exempt from band)
           phase_4_6_fired: false   # FOLLOWABLE+ALIVE; context-weave track ended at 4.5
           voice_fixable_carry: ["VF-1 @10/@11 surrender as two distinct physical acts", "VF-2 @15/@17/@18 detention as perceptual feed-event not data-transaction", "VF-3 @27 terminal face as physical feed-datum (suppressed-recognition fence)", "VF-4 @13 reworded interval bridge render"]
+        coherence_review:   # /and-stitch Phase 8.5
+          reviewed_at: 2026-06-02
+          verdict: PASS
+          weave_gaps: 0
+          followability_breaks: 0
+          cold_read_risk_high: 0
+          cold_read_risk_advisory: 2   # @27 terminal + @24 override-echo, both fence-protected
+          armed_muffle_check: "BOTH central events land concretely — s02 surrender (@10/@11) as two chosen irreversible acts; s03 detention (@15/@17/@18) as perceptual feed-event. NOT muffled."
+          report_path: active-project/staff/reviews/coherence-b01-c10-2026-06-02.md
+        cold_read:   # /and-stitch Phase 9 terminal gate
+          read_at: 2026-06-02
+          verdict: PASS-WITH-DEPTH-PASS-REQUIRED   # ships terminal; depth pass mandatory before book-close
+          completeness_axis: PASS   # Step-2 diff: central event recovered, continue=barely-yes, jeopardy present
+          readability_axis: {verdict: AIRLESS, basis: "cold-read 'dense/arm's-length throughout' + barely-yes continue; acts-of-commission under-staged (@2/@11/@21); density partly design-inherent for the silent apparatus-POV climax (cf. chunk_cold_read PASS-CHUNK-VOICE-RISK + consecutive-airless c06-c09 watch DEC-0066/0067)"}
+          recovered_summary: "A surveillance operator, coerced by a protection deal, hands a man they'd quietly tracked for months over to a war machine, then sits with the fact that the man is gone and the record of him isn't."
+          report_path: active-project/staff/reviews/coldread-b01-c10-2026-06-02.md
+          staging_signals: 6
+          staging_report_path: active-project/staff/reviews/staging-b01-c10-2026-06-02.md
+          prose_rationale_audit: {verdict: PASS, count: 0, report_path: active-project/staff/reviews/prose-rationale-audit-b01-c10-2026-06-02.md}
+          signal_clusters:
+            - {pattern: spine-staging-gap, count: 4, bone_ids: [2, 11, 21, 18], trigger: "spine-staging-gap>=1"}
+          phase_8_5_discharge: "central-event STAGE findings @2/@11/@21 flagged FAIL by staging spine-promotion rule, DISCHARGED to BLOCKING (not FAIL) by Phase 8.5 coherence PASS (armed-muffle check: both central events land concretely) + Step-1 cold-read recovery of the central events. FAIL escalation NOT fired; the residual spine-staging-gap fires the cluster soft-gate -> PASS-WITH-DEPTH-PASS-REQUIRED."
+          depth_pass_target: "/and-write b01c10 revise --from-signals (stage acts-of-commission @2 declare / @11 route / @21 inscribe; de-abstract density; @18 grounding) -> re-cascade /and-facets + /and-stitch"
+          stale_since: null
+        depth_pass_pending: true   # set by Phase 9 PASS-WITH-DEPTH-PASS-REQUIRED; resolve before /and-review verdict b01 / book-close
         chunk: |
           Otto formalizes the arrangement: no longer a contingent exchange but a named,
           ongoing function. Taylor is his intelligence instrument for the Flea Bottom and
