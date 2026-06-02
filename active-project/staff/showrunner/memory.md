@@ -6694,6 +6694,21 @@ books:
             political_register-world: "+0.5 (flat 11 +0.5)"
           density_measured: "0 chatter / 27 (fully structural — 5 moving + 22 held)"
           felt_verdict: SUBSTANCE-FELT-3-of-3
+        bones_review:
+          reviewed_at: 2026-06-02T22:30:00Z
+          report_path: active-project/staff/reviews/bones-b01c11-2026-06-02.md
+          verdict: PASS
+          follow_check: PASS-WITH-NOTES
+          aliveness_note: "BONES-AIRLESS-RISK (qualified) — grounding spine present (stylus/source-field, iron-dish, feed-station, biological feed-relay) but silent feed-POV + apparatus/proper-noun load + four near-identical arm-close lines are aliveness pressure points; forewarns /and-facets Phase 2.5 aliveness scrutiny + grounding-ledger + /and-stitch Phase 4 voice-embodiment priority"
+          bones_file_mtime_at_review: 1780441115
+          stale_since: null
+          carry_to_facets_phase_2_5:
+            - "s02 burn (@11) needs DREAD register the bones do not carry — Phase 4 voice-embodiment + grounding-ledger @13/@14"
+            - "s02 @16 the Dragonstone/Rhaenyra MEANING of the timestamp-withhold is not bone-recoverable — exposition/memory/NI facet must orient the Dragonstone-distance irony WITHOUT Taylor naming it on-page"
+            - "s03 Halvard-slot-absence legibility-as-absence is 100% facet/context-dependent (a structural absence is invisible at pure bone level) — memory/NI facets carry the 'argument not reached for' read; highest-risk facet item"
+            - "grounding-ledger lines anticipated on @13/@14 (feed-relay) and the @19-@21 packet cycle (ABSTRACTION-DOMINANT s03 carry from bone-gate)"
+            - "s02 ABSTRACTION-DOMINANT (grounding 2/thr 3) + s03 ABSTRACTION-DOMINANT (grounding 1/thr 2) accept-with-rationale from bone-gate — reinforce physical materiality of burn + iron-dish + packet-cycle"
+            - "chunk_cold_read SHIPPED-WITH-RISK-RECORDED (DEC-0072): design-inherent low-jeopardy + cold-context proper-noun load (Otto/Rhaenyra/Dragonstone/Corwick/Halvard) — arms /and-stitch P8.5 Check 3 + P9 jeopardy-scrutiny"
         chunk: |
           The consequences of formalization arrive. Taylor's social_tether-prot-rise
           crystallizes at its near-peak: she now has active relationships with Jarvis as
