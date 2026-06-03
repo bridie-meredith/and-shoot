@@ -8005,7 +8005,21 @@ books:
           target_chapter: b01c13
 
       - slug: b01c13
-        status: audited-r1   # /and-facets b01c13 COMPLETE 2026-06-03 (Phase 6 persist). Phase 5 audit HARD=0 (1 label-fix); Phase 5b audience-gate 3-of-3 ACCEPT all 9 facets + 2 dialogue chars (cycle 1, no remediation/cap-burn); bidirectional_loop: validated.
+        status: stitched   # /and-stitch b01c13 Phase 9 cold-read PASS (clean) 2026-06-03; draft/b01-c13.md TERMINAL (1794w). (was audited-r1 at /and-facets COMPLETE.)
+        cold_read:
+          read_at: 2026-06-03
+          verdict: PASS   # clean — completeness PASS (central event recovered: list condemns Aldric; jeopardy present; CONTINUE=yes) AND readability READABLE
+          recovered_summary: "A girl who feeds insect-spun intelligence to the powerful watches her own report condemn an innocent man, recognizes her contempt for the system she serves, and keeps walking the same line anyway."
+          report_path: active-project/staff/reviews/coldread-b01c13-2026-06-03.md
+          coherence_review_verdict: PASS   # Phase 8.5: 0 weave-gaps / 0 followability-breaks / 0 high cold-read-risk (1 med advisory s03 register density); report active-project/staff/reviews/coherence-b01-c13-2026-06-03.md
+          staging_signals: 2   # both ADVISORY sub-threshold (s01 slow-to-declare ~100w; @30 thin physical anchor); no spine-staging-gap, no FAIL
+          staging_report_path: active-project/staff/reviews/staging-b01-c13-2026-06-03.md
+          signal_clusters: []   # no cluster (same-pattern<5, adjacent-peak<3, axis-move<3, spine-staging-gap=0)
+          prose_rationale_audit: { count: 0, verdict: CLEAN }   # all key held bones (@5/@7/@16/@22/@30/@31/@19) stage their rationale's concrete physical token
+          readability_axis: { verdict: READABLE, basis: "deeply first-person interior; Phase 8.5 ALIVE confirmed; person to follow throughout" }
+          depth_pass_required: false   # clean PASS — no mandatory depth-pass owed before book-close
+          stale_since: null
+        # /and-facets b01c13 COMPLETE 2026-06-03 (Phase 6 persist). Phase 5 audit HARD=0 (1 label-fix); Phase 5b audience-gate 3-of-3 ACCEPT all 9 facets + 2 dialogue chars (cycle 1, no remediation/cap-burn); bidirectional_loop: validated.
         facets_status: audited-r1
         facets_path: active-project/theater/facets/
         audit_path: active-project/staff/auditor/facets-final-audit.md
