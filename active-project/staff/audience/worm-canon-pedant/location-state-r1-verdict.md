@@ -2,64 +2,38 @@
 reviewer: worm-canon-pedant
 facet: location-state
 cycle: 1
-episode: b01-c12
+episode: b01-c13
 date: 2026-06-03
-verdict: accept
+verdict: ACCEPT
 earth_bet_fence_ruling: CLEAN
 ---
 
-# Adversarial read — location-state (b01-c12)
+# Worm-Canon-Pedant — location-state adversarial read (b01-c13)
 
-## Scope reviewed
-8 entries: loc-state:1 @1 through loc-state:8 @42
+Fence scan / knowledge-accessibility / temporal coherence.
 
-## Attack pass
+7 entries, 4 locations. Low inherent Earth-Bet attack surface; scanning every text field.
 
-The location-state facet carries physical environment description — time of day, spatial state, no interiority. Low inherent Earth-Bet attack surface, but I scan every text field.
+Full fence scan:
 
-**Entry-by-entry fence scan:**
+**loc-state:1 @1** — "the-hook-upper-provisioning | morning | none | loading-platform-open | crate-ledge at the platform edge where the blowfly stations." "blowfly stations" is functional vocabulary (the blowfly is Taylor's observation vehicle; "stations" is its deployment state). No parahuman vocabulary. CLEAN.
 
-[loc-state:1 @1] "the-hook-ward | morning | none | lane-mouth-open, overhang-geometry-active | the overhang-joints at the lane-mouth — the tight geometry that makes dense insect placement read as witch-label; place-anchor for the morning circuit."
-— "insect placement" is functional. "witch-label" is Westerosi-register (the KL social reaction; not a Worm power-mechanic term). CLEAN.
+**loc-state:2 @2** — "trestle-table-active, household-agent-posted." Physical-state descriptor. No Earth-Bet content. CLEAN.
 
-[loc-state:2 @3] "the-hook-ward | morning | none | gate-tower-shadow-west, rendering-yard-wall-east | the gate-tower shadow thrown across the lane — the west wall of the gap; the body placed inside the coverage boundary."
-— "coverage boundary" is functional project vocabulary. No Earth-Bet noun. CLEAN.
+**loc-state:3 @10** — "the-magistrate-hall | morning | none | rented-back-room-active, ceiling-corner-above | ceiling-corner of the chandler's house rented back room." "ceiling-corner" is the fly's position. No parahuman vocabulary. CLEAN.
 
-[loc-state:3 @8] "the-feed-station | morning | none | ledger-surface-open, stylus-lifted | the ledger surface at the station — body moved from lane circuit to accounting surface; feed-station sub-anchor for the circuit-close."
-— "feed-station" is the KL-register name for Jarvis's pickup point, established as project-internal vocabulary since b01c02. The "feed" root is Taylor's functional substitution-register term (cond-earth-bet-noun-fence § substitution-register). Not parahuman jargon. CLEAN.
+**loc-state:4 @11** — "document-at-table-edge, clerk-posted | table's edge where the clerk placed the list-output before the proceeding opened." "list-output" is the d06-document, the intelligence product Taylor delivered. The document is named by its functional role in the proceeding (list-output → the document's status in the proceeding), not by any Worm-canon mechanism for how it was generated. CLEAN.
 
-[loc-state:4 @11] "the-feed-station | morning | none | ledger-surface-open, packet-at-surface-edge | the station surface edge where the packet lands — the opposing force enters at the ledger's working edge via the standard channel."
-— All functional/Westerosi vocabulary. CLEAN.
+**loc-state:5 @19** — "the-hook-lane | evening | none | lane-open, circuit-mid | lane Taylor has walked on ordinary circuit." Westerosi-register geography. No Earth-Bet content. CLEAN.
 
-[loc-state:5 @17] "the-feed-station | midday | none | ledger-surface-open, gap-column-pending | the ledger surface in midday stillness — time advanced from morning; the refusal sit-down begins at the same working face."
-— No Earth-Bet content. "gap-column" is ledger vocabulary. CLEAN.
+**loc-state:6 @24** — "the-hook-lower-water-trough | afternoon | none | trough-open." Physical trough. No Earth-Bet content. CLEAN.
 
-[loc-state:6 @23] "the-feed-station | midday | none | ledger-surface-clear, sealed-packet-departing | the station surface edge as the sealed packet is taken — the withholding exits; the surface clears to the anchor-column."
-— No Earth-Bet content. CLEAN.
+**loc-state:7 @29** — "the-hook-lower-water-trough | afternoon | none | trough-behind, lane-open-ahead | lane-mouth past the trough's edge — the threshold crossed mid-speech." Physical departure geometry. CLEAN.
 
-[loc-state:7 @29] "the-feed-station | afternoon | none | ledger-surface-open, muddy-way-extension-in-motion | the ledger surface late-afternoon as the fifth-ward cluster extends — time advances; the muddy-way boundary enters the feed for the first time."
-— "the feed" is functional/register-resident. "muddy-way" is KL geography. CLEAN.
+**Temporal coherence check (multi-day gap arc):** Scene-A morning (@1-@9) → Scene-B morning four days later (@10-@18) → Scene-C that evening (@19-@23) → Scene-D two days later afternoon (@24-@31). The multi-day gaps are stated in the scene-map and correctly represented in loc-state time-of-day advances. No timeline contradiction within the location-state layer itself.
 
-[loc-state:8 @42] "the-feed-station | end-of-day | none | breach-column-receiving, accounting-closed | the breach column at accounting-close — threshold entry filed in flat column register; end-of-day state."
-— "breach column" is ledger vocabulary. "accounting-closed" is operational register. No Earth-Bet content. CLEAN.
+**flag-002 seam (@24 "afternoon" vs. state:11 "morning"):** The contradiction is between loc-state:6 and state-updates env state:11 — both @24. The location-state file consistently uses "afternoon" for scene-D. The state-updates file uses "morning" (inferred from circuit-walk context, with a carve-out preamble). From my lens: these are the same real-world time; one is canonical because it is more specifically anchored to the scene opening (loc-state:6 was authored with scene-context; state:11 was inferred). The auditor correctly advises adopting loc-state:6 "afternoon" as authoritative. No canon contradiction requiring a flag — this is a production-internal alignment question that the stitcher resolves by choosing one value. No Worm-canon issue.
 
-**Temporal coherence check:**
-Single-day arc: morning (loc-state:1-4) → midday (loc-state:5-6) → afternoon (loc-state:7) → end-of-day (loc-state:8). Linear, internally consistent. No timeline contradiction. No event-ordering problem that would produce a canon flag.
+Running tally: 7 entries, all CLEAN. No Earth-Bet vocabulary anywhere in the location-state file. All locations are KL-register geography. All conditions are physical-state descriptors.
 
-**Knowledge-accessibility check:**
-All 8 entries describe physical states Taylor is present to observe. No entry imputes knowledge she would not have from her own body's location in-scene. No lore-leak vector via the environment layer.
-
-**"the-feed-station" slug / flag-005 overlap check:**
-The auditor's flag-005 identifies loc:east-water-gate-lanes and loc:the-muddy-way as unresolved warehouse slugs (vibes file hint-2, hint-3). The location-state facet does NOT use these slugs — it uses "the-hook-ward" for the lane-circuit portion and "the-feed-station" for the accounting-surface portion. The unresolved slug problem lives in the vibes facet, not here. This facet is clean of that concern.
-
-**loc-state:8 @42 pile-up (10-facet convergence):**
-The location-state entry at @42 carries "breach-column-receiving, accounting-closed" — a plain physical-state descriptor for the terminal moment. Does not introduce Earth-Bet content or canon contradiction. The pile-up density is a stitch-register concern, not a fence concern. No objection.
-
-## Verdict
-
-accept — Earth-Bet fence: CLEAN. All 8 entries use KL-register or functional vocabulary throughout. No Worm proper nouns, no parahuman jargon, no canon contradiction. Temporal arc is coherent. No unresolved slug issues at this facet layer.
-
-## Convergence trace
-- flag-005 (auditor CONSTRAINT/unresolved slugs): loc:east-water-gate-lanes and loc:the-muddy-way gap is in the vibes facet, not location-state. No overlap here.
-- flag-003 (CURVE-SHAPE/pile-up): loc-state:8 @42 is one of 10 entries at the terminal bone. WARRANTED per auditor; my read confirms — the entry is structurally correct and fence-clean.
-- No other auditor findings apply to this facet's text fields.
+**VERDICT: ACCEPT**

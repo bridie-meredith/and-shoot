@@ -13,7 +13,7 @@ author: showrunner
 
 # E2 — @15/@17 apparatus uses d06 list operationally (s02 peak-bones; political_register-world +0.5 / political_register-prot +0.5)
 
-4 @15 actor:taylor-hebert-kl-122ac ++ tragic-causal: [d06-output-as-the-paper-the-magistrate-lifts, her-functional-description-the-mechanism-not-the-charge, chain-visible-as-a-physical-document-handled-by-another-hand] | licensed-by: state-update:3, state-update:4, memory:1, proto:15, peak-bone:15
+4 @15 actor:taylor-hebert-kl-122ac ++ tragic-causal: [d06-output-as-the-paper-the-magistrate-lifts, her-functional-description-the-mechanism-not-the-charge, chain-visible-as-a-physical-document-handled-by-another-hand] | licensed-by: state-update:3, state-update:4, proto:15, peak-bone:15   # memory:1 removed (deleted at R2 — missing NI-spine); remaining sources adequate (Phase 5b audience Finding A)
 
 5 @15 loc:the-magistrate-hall + pretext-proceeding-space: [verdict-pre-inscribed-before-the-accused-speaks, document-set-before-the-proceeding-opens, apparatus-form-as-sufficient-ground-for-any-charge] | licensed-by: proto:11, proto:13, proto:15, peak-bone:15
 

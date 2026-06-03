@@ -2,58 +2,28 @@
 reviewer: worm-canon-pedant
 facet: sensory
 cycle: 1
-episode: b01-c12
+episode: b01-c13
 date: 2026-06-03
-verdict: accept
+verdict: ACCEPT
 earth_bet_fence_ruling: CLEAN
 ---
 
-# Adversarial read — sensory (b01-c12)
+# Worm-Canon-Pedant — sensory adversarial read (b01-c13)
 
-## Scope reviewed
-5 entries: sensory:1 @12 through sensory:5 @42 (3 licensed-grounding-exempt; 2 countable)
+Power mechanics / Earth-Bet fence / compound-eye register.
 
-## Attack pass
+4 entries, 12.9%, above-band. Per dispatch: no grounding-ledger license; auditor flag-001 SIGNAL. My lens: any insect-feed sensory content requires power-mechanics check; other sensory entries are low-risk.
 
-The sensory facet carries physical-sensation state transitions. Low inherent Earth-Bet attack surface, but sensory:3 @30 and sensory:4 @40 — the insect-pressure entries — require a closer look, because the insect-feed's physical mechanics are Worm-canonical and any misrepresentation of how that sensation works is a flag.
+**sensory:1 @1** — "smell: lane-morning-air -> salt-fish-brine-platform # tag: up" — The blowfly on the crate-ledge at the provisioning platform. This is a BLOWFLY sensory experience — Taylor is reading through a fly. Does a fly get a brine-smell that strong? At a working fish-provisioning dock with salt-fish crates, yes — a blowfly's chemoreceptors would read brine at very high intensity. The facet records "salt-fish-brine-platform" from the fly's position on the crate-ledge edge. This is canonically honest: compound-eye feed from a blowfly at a fish platform. The OLD state "lane-morning-air" is Taylor's ambient reference-state (prior to the platform-approach); the fly's arrival at the platform produces the brine-spike. Mechanically accurate. CLEAN.
 
-**[sensory:1 @12]** "sound: channel-quiet -> wax-crack # tag: spike"
-— Wax seal breaking, sound spike. Entirely physical, no Earth-Bet content. CLEAN.
+**sensory:2 @20** — "smell: lane-evening-air -> tallow-smoke-drift # tag: spike" — This is post-release (@9 Taylor releases the blowfly). Taylor is now on the lane in her own body, walking the evening circuit in s03. No insect-feed; pure first-person physical sensation. The tallow-smoke at evening in Flea Bottom / Hook vicinity is correct KL geography (tallow-candle district near the chandler's row at the lower Hook). No Earth-Bet content. CLEAN.
 
-**[sensory:2 @16]** "thermal: bay-damp-morning-cool -> bay-warmth-before-wind-shift # tag: up"
-— Bay thermal gradient in King's Landing. KL maritime geography. No Earth-Bet content. CLEAN.
+**sensory:3 @25** — "tactile: lane-stone-paving-ambient -> water-trough-rim-cool # tag: up" — Taylor's own body at the trough in s04. First-person tactile. No insect-feed active at this point (she has been on her own circuit since @9). The stone-trough rim is cool in afternoon KL. No power mechanics involved. CLEAN.
 
-**[sensory:3 @30]** "pressure: partial-circuit-insect-weight -> full-circuit-weight-settled # tag: up | licensed-grounding-exception: grd-001"
-— This is the Worm-mechanical attack surface. Taylor's insect-feed at full five-ward deployment crossing a weight/pressure threshold.
+**sensory:4 @31** — "sound: lower-hook-lane-ambient -> water-trough-fill-sound # tag: spike" — Halvard fills the water-skin. This fires at the final bone after Taylor's departure (@29). The question: whose sensory experience is this? Halvard's, or ambient. The facet fires from the location-environment perspective (lower-hook-lane-ambient → water-trough-fill-sound), not tagged to Taylor's POV. Taylor has left the scene at @29; the sound belongs to the scene's ambient register after her departure. No Taylor insect-feed implied here (she has no insect at the trough after leaving). The sound is environmental/ambient. CLEAN.
 
-Canon check: does Taylor experience her insect-feed as pressure? Yes. The feed is proprioceptive — Taylor reads body position and weight through the insects' own physical experience (pressure at the feet, weight distribution, temperature). At large-scale deployments, the aggregate proprioceptive load registers as a felt weight or pressure sense. This is consistent with Worm canon: Taylor has described the feed as a somatic experience at high-density deployments (Leviathan, Gold Morning analogues). The insect-weight sensation at full-circuit coverage is a canonical mechanic, not an inflation.
+**Compound-eye feed register check:** In s01-s02 (@1-@18), Taylor operates through a blowfly as her observation vehicle. The sensory facet fires only once in this window (sensory:1 @1, brine-smell at the platform). The compound-eye feed for the magistrate-hall proceeding (@10-@18) has ZERO sensory fires — which is correct. The blowfly is in a ceiling corner during the proceeding. The feed is passive observation; blowfly ceiling-corner sensory data (ambient air smell, perhaps, but no distinctive sensory event) is correctly absent from the facet. Grounding-ledger confirmed no sensory fires licensed for s02. The s02 zero-sensory is canonically honest: Taylor is reading through a fly in a corner; there is nothing sensory-event-worthy for the fly to register during a legal proceeding. The facts on the page are visual (what the fly observes), not olfactory/tactile. Correct.
 
-"Partial-circuit-insect-weight -> full-circuit-weight-settled" — the transition from partial to full deployment is the physical event. The phrasing describes a pressure-change sensation, not a new power. CLEAN. No inflation. No fence violation.
+Running tally: 4 entries, all CLEAN. Compound-eye mechanics correctly represented. No power inflation.
 
-**[sensory:4 @40]** "tactile: stylus-on-page-motion -> palm-flat-on-closed-page # tag: drop | licensed-grounding-exception: grd-001"
-— Physical tactile transition: hand completing the accounting, palm flat on the closed ledger. Pure physical sensation. No Earth-Bet content. CLEAN.
-
-**[sensory:5 @42]** "light: late-afternoon-surface-brightness -> end-of-day-dimming # tag: down | licensed-grounding-exception: grd-002"
-— Light level at day's end. Environmental. No Earth-Bet content. CLEAN.
-
-**Grounding license verification:**
-The dispatch brief states: sensory:3/4/5 carry licensed-grounding-exception → may NOT revise/fail on density grounds (may flag craft). The auditor's grounding_exemption_resolution confirmed: grd-001 (sensory:3 @30 + sensory:4 @40) and grd-002 (sensory:5 @42) both pass. My lens focuses on whether the exempted entries contain Earth-Bet fence violations or canon mechanical errors — not density.
-
-**Countable-band check:**
-sensory:1 @12 (wax-crack) + sensory:2 @16 (bay-warmth) = 2 countable entries = 4.8% of 42 bones. Auditor confirmed IN-BAND (3-6%). No concern.
-
-**Insect-feed pressure mechanics — deeper check:**
-The transition at sensory:3 from "partial-circuit-insect-weight" to "full-circuit-weight-settled" describes the completion of a five-ward + Flea-Bottom-approaches deployment. The scene-map explicitly identifies this as crossing a threshold analogous to what Taylor did at Gold Morning — but at the sensory level, this is represented purely as a change in the felt weight-register, not as a labeled power-surge or new capability activation. 
-
-The scene-map's KHEPRI-SURFACE-AND-SUPPRESS protected-pattern specifies: the recognition at @38 must come through the accounting vocabulary at the moment it appears (the shape-word surfaces through the ledger's own arithmetic). The sensory facet's role is to ground the physical reality of the deployment BEFORE @38, so that when the word surfaces at @38 it arises from a real physical event (the weight settling), not from nowhere.
-
-Does sensory:3 @30 misrepresent the power's mechanics? No — it describes a weight transition as the circuit completes, which is a canonical physical-sensory event in Taylor's insect-feed operation. It does not describe new powers, range inflation, or coordination mechanics beyond the established feed. The canon-consistency holds.
-
-## Verdict
-
-accept — Earth-Bet fence: CLEAN. All 5 sensory entries use functional-physical vocabulary. The insect-pressure entries (sensory:3, sensory:4) correctly represent Taylor's canonical somatic experience of her insect-feed without mechanical inflation. The licensed-grounding exceptions are appropriately tagged; the grounding purpose (anchoring the full-deployment threshold as a felt physical event before the @38 surfacing) is mechanically correct per Worm canon.
-
-## Convergence trace
-- auditor grounding_exemption_resolution: PASS on all 3 exemptions. My read confirms no dangling grd-* license.
-- auditor scene_map_coverage: sensory entries per-scene-cap confirmed IN-CAP. No concern at my lens.
-- flag-003 (CURVE-SHAPE): sensory:5 @42 is part of the 10-facet pile-up. The sensory entry at @42 carries light-level dimming — a physical-world close, not a canon-content issue. WARRANTED per auditor; confirmed CLEAN at my lens.
+**VERDICT: ACCEPT**

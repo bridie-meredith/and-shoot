@@ -8005,7 +8005,18 @@ books:
           target_chapter: b01c13
 
       - slug: b01c13
-        status: faceted-r2   # /and-facets b01c13 Phase 4 fanin 2026-06-03 (was faceted-r1); R2 6 judges (1 delete mem:1@16, 0 adds, dialogue licenses resolved); 61 entries; scene-map URI-SCENE-WINDOW PASS
+        status: audited-r1   # /and-facets b01c13 COMPLETE 2026-06-03 (Phase 6 persist). Phase 5 audit HARD=0 (1 label-fix); Phase 5b audience-gate 3-of-3 ACCEPT all 9 facets + 2 dialogue chars (cycle 1, no remediation/cap-burn); bidirectional_loop: validated.
+        facets_status: audited-r1
+        facets_path: active-project/theater/facets/
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audience_gate_path: active-project/staff/audience/  # per-persona per-facet r1-verdict files (3 personas x 11 facets/dialogue, all ACCEPT)
+        audience_gate_complete: true
+        audience_gate_cycles: 1
+        bidirectional_loop: validated
+        round_1_complete: true
+        round_2_complete: true
+        # /and-facets b01c13 2026-06-03: 61 facet entries (NI 7, memory 2 [mem:1@16 R2-deleted], sensory 4 [12.9% SIGNAL accept-w-rationale], loc-state 7, state-updates 20 [env 13 + taylor 7], feeling 2 [taylor@21 + halvard@31], metaphor 0, vibes 17, exposition 2) + dialogue (halvard 2 + taylor 1). Phase 2.5+4.5 FOLLOWABLE+ALIVE (s03 spine LANDS; ledgers 0 open). SIGNALs: sensory-density 12.9%, @24 time-of-day (stitch uses loc-state 'afternoon'), 2 TASTE-FLAG (taylor 'both columns' / halvard 'a wiser hand wrote off' — both accepted NO-ACTION). Audience Finding A: vibes:4@15 stale licensed-by memory:1 removed. Earth-Bet fence CLEAN. Reviewer reports: staff/auditor/facets-final-audit.md; staff/reviews/context-follow-{r1,r2}-b01-c13-2026-06-03.md.
         bones_file: theater/bones/b01-c13.md
         bones_count: 31
         substance_bone_gate_verdict: PASS
