@@ -51,7 +51,7 @@ SVO: the supplier's-son shoulders the wrapped-crates
 shape: held
 axes_held: [{ axis: relational_anchor_status, rationale: "Wren not in scene; coercion's weight lands on a different smallfolk body; anchor holds at 4.5" }]
 cost_ledger_anchor: null
-grounding-class: YES (wrapped-crates — concrete object at the loading platform)
+grounding-class: YES (wrapped-crates — the supplier's-son shoulders the crates; discrete punctual physical act at the loading platform)
 dialogue-anchor: NO
 
 **b01c13s01n05**
@@ -108,7 +108,7 @@ dialogue-anchor: NO
 | [image: trestle-table-copper-dispute] | n02, n07 | trestle-table appears at scene-open (n02) and central-event (n07) |
 | [mechanism: copper-penny-margin-humiliation] | n05, n07 | agent speaks at length (n05); agent's lean at account-close (n07) — the margin is the mechanism, the posture is its completion |
 | [image: blowfly-witness-angle] | n01, n06, n09 | fly takes ledge (n01); Taylor holds it (n06); Taylor releases it (n09) |
-| [mechanism: posture-of-satisfied-coercion] | n07 | CENTRAL-EVENT: the household-agent leans the trestle-table |
+| [mechanism: posture-of-satisfied-coercion] | n07 | CENTRAL-EVENT: the household-agent drops the shoulders — body-weight release at account-close |
 
 ---
 
@@ -225,8 +225,8 @@ note: Second held bone for political_register-prot — confirms the held discipl
 | [event: magistrate-pretext-charge] | n01–n09 | full scene; n06 is central-event for political_register-world; n08 is central-event for political_register-prot |
 | [image: court-adjacent-hall-rented-room] | n01 (ceiling-corner grounds the space) | no dedicated location card; ceiling-corner is the image-anchor |
 | [image: single-fly-ceiling-corner] | n01 | fly takes the ceiling-corner |
-| [force: black-faction-adjacent-ward-elder] | n03, n05 | aldric takes the chair; aldric speaks to the magistrate |
-| [mechanism: d06-list-delivery-consequence] | n06 | CENTRAL-EVENT: magistrate glances the d06-document = list used operationally |
+| [force: black-faction-adjacent-ward-elder] | n03, n05 | aldric takes the chair; aldric lifts the cord (attempting to explain) |
+| [mechanism: d06-list-delivery-consequence] | n06 | CENTRAL-EVENT: magistrate lifts the d06-document = list used operationally |
 | [mechanism: fly-reading-the-proceeding] | n01, n07, n09 | fly in ceiling-corner; Taylor holds it throughout |
 | [force: green-apparatus-enforcement] | n02, n04, n06 | clerk sets document; magistrate pre-writes verdict; magistrate uses the list |
 
@@ -301,23 +301,24 @@ dialogue-anchor: NO
 
 | tag | bone(s) | note |
 |-----|---------|------|
-| [event: naming-event] | n01, n05, n07 | stop (n01) → naming (n05) → resume (n07); n05 is CENTRAL-EVENT |
-| [image: two-feed-events-held-together] | n02, n03, n04 | the accounting holds the three concrete feed-images from s01 and s02 |
-| [mechanism: contempt-crystallization] | n02, n03, n04, n05 | accumulation (n02–n04) → crystallization into the word (n05) |
-| [mechanism: naming-act] | n05 | CENTRAL-EVENT: taylor names the contempt |
-| [image: the-word-held] | n05, n06 | naming (n05); two breaths (n06) — the word held for the duration |
+| [event: naming-event] | n01, n03, n04 | stop (n01) → two-breaths standing-with-finding (n03) → resume (n04); n01 is CENTRAL-EVENT |
+| [image: two-feed-events-held-together] | n01 | omission_rationale: interior recall (the two feed-events run together in the accounting) is not bone-concretizable; realized at the memory + narrator-interest facet layer; the naming's concrete correlate is the stop bone n01 |
+| [mechanism: contempt-crystallization] | n01 | omission_rationale: the crystallization into the word "contempt" is interior recall — not bone-concretizable; realized at the narrator-interest/memory facets; the physical form of the crystallization is the body's stop |
+| [mechanism: naming-act] | n01 | CENTRAL-EVENT: taylor-hebert-kl-122ac stops the lane — the stop is the naming-threshold made physical |
+| [image: lane-evening-atmosphere] | n02 | tallow-smoke crosses the lane — concrete place-situated particular grounding the stop |
+| [image: standing-with-the-finding] | n03 | two-breaths bone — the body dwelling with the assessment output |
 
 ---
 
 ### s03 roll-up
 
-- bone count: 7 (within 5–15 target)
-- in-motion aggregate: political_register-prot +1 (n05, magnitude 1) → scene target +0.5 ✓
-- held axes witnessed: moral_framework (n03), relational_anchor_status (n04), moral_legibility_to_self (n02), social_tether-antag (n06), political_register-prot (n01, n07 — held before and after the naming)
-- grounding bones: n01 (lane/stop), n03 (magistrate-document-image), n05 (naming/central-event), n06 (two-breaths), n07 (lane/resume) — 5 grounding bones for 7 total; above quota
-- opposing force visible: YES — accumulated feed-record in n02, n03, n04 (the three images from the prior scenes presenting for assessment)
+- bone count: 4 (within 5–15 target)
+- in-motion aggregate: political_register-prot +1 (n01, magnitude 1) → scene target +0.5 ✓
+- held axes witnessed: moral_framework (n02 — lane familiar, no new breach threshold), relational_anchor_status (n04 — resuming without turning relational), moral_legibility_to_self (n03 — two-breaths; contempt directed outward, not toward own ledger), social_tether-antag (n02 — grounding bone also witnesses: the familiar lane-environment holds no patron-lever; tether-antag held flat)
+- grounding bones: n01 (lane/stop — CENTRAL-EVENT), n02 (lane/tallow-smoke), n03 (two-breaths), n04 (lane/resume) — 4 grounding bones for 4 total; above quota ✓
+- opposing force visible: YES — accumulated feed-record presenting for assessment is the unnamed pressure the stop responds to; the naming-threshold is the force; prior scenes (s01/s02) establish the record; the interior recall that names it is omitted from bone layer per omission_rationale above
 - dialogue-anchors: 0 (solo interior scene)
-- central-event concreteness: CONFIRMED — n05 is "taylor-hebert-kl-122ac names the contempt"; subject + active verb + object; actor-verb-object form; NOT a perception verb
+- central-event concreteness: CONFIRMED — n01 is "taylor-hebert-kl-122ac stops the lane"; actor + concrete physical verb + non-abstract object; NOT a perception verb; NOT an abstract object ✓
 
 ---
 ---
@@ -358,7 +359,7 @@ dialogue-anchor: NO
 **b01c13s04n02**
 SVO: taylor-hebert-kl-122ac reaches the water-trough
 shape: held
-axes_held: [{ axis: political_register-prot, rationale: "Taylor arrives at the trough on her circuit; contempt named and stable; no new feed-content advancing the register; the arrival is ordinary motion on an ordinary route" }]
+axes_held: [{ axis: moral_framework, rationale: "Taylor arrives at the trough; not confronted with new information; framework at −2 and not moving; the encounter opens before any speech occurs" }]
 cost_ledger_anchor: null
 grounding-class: YES (water-trough — Taylor physically reaches the same named object; both characters at the trough grounds the encounter)
 dialogue-anchor: NO
@@ -366,35 +367,35 @@ dialogue-anchor: NO
 **b01c13s04n03**
 SVO: halvard speaks to taylor-hebert-kl-122ac
 shape: held
-axes_held: [{ axis: moral_framework, rationale: "Halvard names what he believes is wrong; Taylor is not confronted with new information; framework at −2 and not moving; naming without new breach threshold" }]
+axes_held: [{ axis: social_tether-antag, rationale: "Halvard speaks but has no lever on Otto's channel; his witness-lament moves nothing in the patron architecture; tether-antag held — the speech is morally present but structurally inert at the patron level" }]
 cost_ledger_anchor: null
 grounding-class: NO
-dialogue-anchor: YES (halvard speaks to taylor-hebert-kl-122ac — PRIMARY HALVARD SPEECH-ANCHOR; Halvard names Aldric, names what he believes is wrong, in his register: slower, paused, plain)
+dialogue-anchor: YES (halvard speaks to taylor-hebert-kl-122ac — PRIMARY HALVARD SPEECH-ANCHOR; Halvard names Aldric, names what he believes is wrong, in his register: slower, paused, plain) [septon-halvard-flea-bottom:1]
 
 **b01c13s04n04**
 SVO: taylor-hebert-kl-122ac speaks to halvard
 shape: held
-axes_held: [{ axis: relational_anchor_status, rationale: "Taylor speaks the counter-argument; Wren not in scene; anchor holds at 4.5; the encounter is with Halvard, not the anchor" }]
+axes_held: [{ axis: relational_anchor_status, rationale: "Taylor speaks the counter-argument; Halvard is not an anchor and Wren is not involved; the counter-speech advances no relationship — relational_anchor held at 4.5; the foreclosure is the speech moving nothing; this is the communication-class axis for Taylor's speech bone, the closest project analog to trust/reputation in the patron-architecture" }]
 cost_ledger_anchor: null
 grounding-class: NO
-dialogue-anchor: YES (taylor-hebert-kl-122ac speaks to halvard — TAYLOR SPEECH-ANCHOR; she runs the counter-argument aloud: the apparatus will not be slower at her request; the ward-elders will not survive Halvard's speed; the counter is correct and complete)
+dialogue-anchor: YES (taylor-hebert-kl-122ac speaks to halvard — TAYLOR SPEECH-ANCHOR; she runs the counter-argument aloud: the apparatus will not be slower at her request; the ward-elders will not survive Halvard's speed; the counter is correct and complete) [taylor-hebert-kl-122ac:1]
 
 **b01c13s04n05**
-SVO: taylor-hebert-kl-122ac holds the route
+SVO: taylor-hebert-kl-122ac walks the route
 shape: held
 axes_held: [{ axis: moral_legibility_to_self, rationale: "PHYSICAL ENACTMENT of not-turning-inward: Taylor's body continues the circuit; she does not pause to check the ledger for what the counter-argument implies about the d06 list and Aldric; the route continuing IS the non-movement toward the ledger; the discipline is in the feet staying on course, not in the absence of thought" }]
 cost_ledger_anchor: null
-grounding-class: YES (route — the lane underfoot; Taylor's body on the route; continuing-the-route is a physical concrete action with a named ground)
+grounding-class: YES (route — the lane underfoot; Taylor's body on the route; walking-the-route is a concrete transitive motion act on a named ground)
 dialogue-anchor: NO
-note: CARRY_TO_WRITE BONE. This is the held bone that physically enacts the not-turning-toward-the-ledger. The SVO is "taylor-hebert-kl-122ac holds the route" — not "does not think" (which is negation), not "avoids" (which is negation) — but the affirmative physical act of continuing the circuit, which simultaneously enacts the not-turning-inward. The absence of ledger-movement is made concrete by the presence of body-on-route movement.
+note: CARRY_TO_WRITE BONE. This is the held bone that physically enacts the not-turning-toward-the-ledger. The body continuing the circuit IS the non-movement toward the ledger. Not a negation — the affirmative physical act of walking the route simultaneously enacts the discipline of not-turning-inward.
 
 **b01c13s04n06**
 SVO: halvard speaks to taylor-hebert-kl-122ac
 shape: held
-axes_held: [{ axis: social_tether-antag, rationale: "Halvard continues speaking after Taylor has begun moving; his continued speech is the second half of the foreclosure — he has no lever on Otto's channel; the patron-leverage unaffected; his speaking after her departure is pure moral-mirror function" }]
+axes_held: [{ axis: social_tether-antag, rationale: "Halvard continues speaking after Taylor departs; still no lever on the patron channel; the unanswered counter-argument holds the tether flat — the continued speech is the moral-mirror function persisting after the foreclosure" }]
 cost_ledger_anchor: null
 grounding-class: NO
-dialogue-anchor: YES (halvard speaks to taylor-hebert-kl-122ac — SECOND HALVARD SPEECH-ANCHOR; Halvard is still speaking when Taylor moves on; this anchor represents the speech Taylor does not wait for; it fires while she is already in motion)
+dialogue-anchor: YES (halvard speaks to taylor-hebert-kl-122ac — SECOND HALVARD SPEECH-ANCHOR; Halvard is still speaking when Taylor moves on; this anchor represents the speech Taylor does not wait for; it fires while she is already in motion) [septon-halvard-flea-bottom:2]
 
 **b01c13s04n07**
 SVO: taylor-hebert-kl-122ac leaves the water-trough
@@ -405,13 +406,13 @@ grounding-class: YES (water-trough — Taylor departs from the named physical ob
 dialogue-anchor: NO
 
 **b01c13s04n08**
-SVO: halvard stands the water-trough
+SVO: halvard fills the water-skin
 shape: held
-axes_held: [{ axis: moral_legibility_to_self, rationale: "Halvard still at the trough after Taylor has left — he is in his circuit, still present, still the counter-argument that continues to exist; the held stakes-axis bone: Taylor's moral_legibility_to_self is confirmed at 5.5 by Halvard's continued presence as the un-engaged mirror; she did not turn toward his accounting, which is the discipline; he did not disappear; the mirror is still there" }]
+axes_held: [{ axis: moral_legibility_to_self, rationale: "Halvard still present at the trough after Taylor has left — filling the water-skin in his ordinary circuit; the mirror remains, still in his circuit after Taylor departs; Taylor's moral_legibility_to_self confirmed at 5.5 by Halvard's continued presence as the un-engaged mirror; she did not turn toward his accounting; the mirror did not disappear" }]
 cost_ledger_anchor: null
-grounding-class: YES (water-trough — Halvard at the trough; still present; the image from the chunk: "halvard-still-present")
+grounding-class: YES (water-skin / water-trough — Halvard filling the water-skin at the trough; concrete action at the named location; [image: halvard-still-present] coverage)
 dialogue-anchor: NO
-note: This bone is the second CARRY_TO_WRITE bone for moral_legibility_to_self. The first (n05) shows Taylor not-turning-inward via body-on-route. This (n08) shows the mirror remaining — the stakes-axis held bone confirming the discipline is structural, not reactive. Two held bones for the stakes-axis per the density_target 0.6-0.8 requirement for an all-held scene.
+note: This bone is the second CARRY_TO_WRITE bone for moral_legibility_to_self. The first (n05) shows Taylor not-turning-inward via walking-the-route. This (n08) shows the mirror remaining — Halvard's concrete action at the trough after Taylor departs makes his continued presence observable rather than merely stated. Two held bones for the stakes-axis per the density_target 0.6-0.8 requirement for an all-held scene.
 
 ---
 
@@ -423,7 +424,7 @@ note: This bone is the second CARRY_TO_WRITE bone for moral_legibility_to_self. 
 | [image: water-trough-hook-lower-end] | n01, n02, n07, n08 | water-trough appears as location-anchor throughout |
 | [mechanism: counter-argument-run-in-full] | n04 | taylor speaks to halvard — the counter-argument aloud |
 | [mechanism: halvard-response-foreclosed] | n06, n07 | halvard still speaking (n06); taylor leaves (n07) — she does not wait |
-| [image: halvard-still-present] | n08 | halvard stands the water-trough after Taylor has left |
+| [image: halvard-still-present] | n08 | halvard fills the water-skin after Taylor has left — mirror still present at the trough |
 
 ---
 
@@ -432,18 +433,19 @@ note: This bone is the second CARRY_TO_WRITE bone for moral_legibility_to_self. 
 - bone count: 8 (within 5–15 target)
 - in-motion aggregate: [] (all-held scene; no axes move ✓)
 - held axes witnessed:
-  - moral_framework: n03
-  - relational_anchor_status: n04
-  - moral_legibility_to_self (stakes_axis): n05 (physical not-turning-inward), n08 (mirror-still-present) — TWO held bones for stakes_axis ✓
-  - social_tether-antag: n01, n06
-  - political_register-prot: n02, n07
-- grounding bones: n01 (water-trough), n02 (water-trough), n05 (route), n07 (water-trough), n08 (water-trough) — 5 grounding bones for 8 total; above quota
-- opposing force visible: YES — Halvard present and speaking in n03, n06; his continued presence after Taylor departs in n08
+  - moral_framework: n02 (Taylor arrives; not confronted with new info; framework at −2, not moving)
+  - relational_anchor_status: n04 (Taylor speaks counter-argument; Halvard not an anchor; Wren not in scene)
+  - moral_legibility_to_self (stakes_axis): n05 (walks the route — physical not-turning-inward), n08 (fills the water-skin — mirror-still-present) — TWO held bones for stakes_axis ✓
+  - social_tether-antag: n01 (Halvard arrives; no patron-lever), n03 (Halvard speaks; no lever on Otto's channel), n06 (Halvard continues speaking; tether held flat)
+  - political_register-prot: n07 (contempt-without-refusal; departure is the stable form of named contempt)
+- grounding bones: n01 (water-trough), n02 (water-trough), n05 (route), n07 (water-trough), n08 (water-skin/water-trough) — 5 grounding bones for 8 total; above quota ✓
+- opposing force visible: YES — Halvard present and speaking in n03, n06; his continued presence and action (filling the water-skin) after Taylor departs in n08
 - dialogue-anchors:
-  - halvard speaks to taylor-hebert-kl-122ac (n03) — PRIMARY
-  - taylor-hebert-kl-122ac speaks to halvard (n04) — Taylor runs counter-argument
-  - halvard speaks to taylor-hebert-kl-122ac (n06) — Halvard still speaking as Taylor moves on
-- CARRY_TO_WRITE bones: n05 (holds the route — physical not-turning-inward) and n08 (halvard stands the trough — mirror-still-present); both enact the held moral_legibility_to_self in physical form, NOT rationale-only ✓
+  - halvard speaks to taylor-hebert-kl-122ac (n03) — PRIMARY [septon-halvard-flea-bottom:1]; held axis: social_tether-antag ✓
+  - taylor-hebert-kl-122ac speaks to halvard (n04) — Taylor runs counter-argument [taylor-hebert-kl-122ac:1]; held axis: relational_anchor_status ✓
+  - halvard speaks to taylor-hebert-kl-122ac (n06) — Halvard still speaking as Taylor departs [septon-halvard-flea-bottom:2]; held axis: social_tether-antag ✓
+- CARRY_TO_WRITE bones: n05 (walks the route — physical not-turning-inward) and n08 (halvard fills the water-skin — mirror-still-present); both enact the held moral_legibility_to_self in physical form, NOT rationale-only ✓
+- all 5 declared axes_held witnessed: moral_framework(n02) ✓ relational_anchor_status(n04) ✓ moral_legibility_to_self(n05,n08) ✓ social_tether-antag(n01,n03,n06) ✓ political_register-prot(n07) ✓
 
 ---
 ---
@@ -461,25 +463,25 @@ Note on magnitude-to-delta mapping: bones use the 1–3 magnitude band; chapter 
 
 ### held axes
 
-All four held axes (moral_framework, relational_anchor_status, moral_legibility_to_self, social_tether-antag) witnessed by ≥1 held bone in every scene where they are declared held. ✓
+All five held axes (moral_framework, relational_anchor_status, moral_legibility_to_self, social_tether-antag, political_register-prot) witnessed by ≥1 held bone in every scene where they are declared held. ✓
 
 ### register-as-mannerism check
 
-Discipline verbs across the chapter: takes, stands, faces, carries, holds, leans, picks, releases, sets, writes, glances, places, names, stops, resumes, finds, reaches, speaks, leaves — no single VERB+OBJECT pair recurs in ≥3 bones. The water-trough appears 4 times in s04 but across different verbs (finds, reaches, leaves, stands) and different subjects. No mannerism flag. ✓
+Discipline verbs across the chapter (post-fix): takes, shoulders, faces, grips, tallies, drops, picks, releases, sets, lifts, writes, lifts, works, stops, crosses, takes, resumes, finds, reaches, speaks, walks, leaves, fills — no single VERB+OBJECT pair recurs in ≥3 bones. The water-trough appears 4 times in s04 across different verbs (finds, reaches, leaves, fills) and different subjects. `speaks to` is the canonical dialogue form, not a descriptive verb (schema-licensed). No mannerism flag. ✓
 
 ### grounding-bone totals
 
 - s01: 5 grounding bones / 9 bones
 - s02: 5 grounding bones / 9 bones
-- s03: 5 grounding bones / 7 bones
+- s03: 4 grounding bones / 4 bones (all bones grounding)
 - s04: 5 grounding bones / 8 bones
 URI-WRITE-SENSORY-GROUNDING satisfied in all four scenes. ✓
 
 ### central-event concreteness (URI-WRITE-EVENT-CONCRETENESS)
 
-- s01: n07 — "the household-agent leans the trestle-table" — actor-verb-object ✓
-- s02: n06 — "the magistrate glances the d06-document" — actor-verb-object ✓
-- s03: n05 — "taylor-hebert-kl-122ac names the contempt" — actor-verb-object ✓
+- s01: n07 — "the household-agent drops the shoulders" — actor + concrete body-action verb + non-abstract object ✓
+- s02: n06 — "the magistrate lifts the d06-document" — actor + concrete physical-handling verb + non-abstract object ✓
+- s03: n01 — "taylor-hebert-kl-122ac stops the lane" — actor + concrete motion-termination verb + non-abstract object (lane) ✓
 - s04: n07 — "taylor-hebert-kl-122ac leaves the water-trough" — actor-verb-object ✓ (foreclosure central event)
 
 ### STAKES-AXIS-DOMINANT (s02)
@@ -489,28 +491,29 @@ political_register-world (the stakes-axis) is the scene's named stakes and its m
 ### CARRY_TO_WRITE (dark-fantasy-reader — s04)
 
 Two held bones physically enact the not-turning-inward:
-- n05: "taylor-hebert-kl-122ac holds the route" — body continues the circuit; physical non-movement toward the ledger
-- n08: "halvard stands the water-trough" — the mirror remains after Taylor departs; stakes-axis held bone with physical form
+- n05: "taylor-hebert-kl-122ac walks the route" — body continues the circuit; physical non-movement toward the ledger
+- n08: "halvard fills the water-skin" — the mirror remains after Taylor departs; Halvard's concrete action makes his continued presence observable; stakes-axis held bone with physical form
 
-Both are grounding-class (named surfaces: route, water-trough). NOT rationale-only. ✓
+Both are grounding-class (named surfaces: route, water-skin/water-trough). NOT rationale-only. ✓
 
 ### total bone count
 
-s01: 9 + s02: 9 + s03: 7 + s04: 8 = **33 bones**
+s01: 9 + s02: 9 + s03: 4 + s04: 8 = **30 bones**
 Chapter target: 15–75 ✓
 
 ### dialogue-anchor inventory (full chapter)
 
-| scene | anchor-id | speaker | listener | type |
-|-------|-----------|---------|----------|------|
-| s01 | — | — | — | SILENT (feed-observed apparatus speech recast to physical action n05) |
-| s02 | — | — | — | SILENT (feed-observed ward-elder explanation recast to physical action n05) |
-| s03 | none | — | — | solo interior; silent |
-| s04 | s04n03 | halvard | taylor-hebert-kl-122ac | LIVE (Taylor is listener) |
-| s04 | s04n04 | taylor-hebert-kl-122ac | halvard | LIVE (Taylor speaks counter-argument) |
-| s04 | s04n06 | halvard | taylor-hebert-kl-122ac | LIVE (Halvard still speaking as Taylor departs) |
+| scene | anchor-id | speaker | listener | type | held-axis | citation |
+|-------|-----------|---------|----------|------|-----------|----------|
+| s01 | — | — | — | SILENT (feed-observed apparatus speech recast to physical tally-action n05) | — | — |
+| s02 | — | — | — | SILENT (feed-observed ward-elder explanation recast to physical lift-the-cord action n05) | — | — |
+| s03 | none | — | — | solo interior; silent | — | — |
+| s04 | s04n03 | halvard | taylor-hebert-kl-122ac | LIVE (Taylor is listener) | social_tether-antag | [septon-halvard-flea-bottom:1] |
+| s04 | s04n04 | taylor-hebert-kl-122ac | halvard | LIVE (Taylor speaks counter-argument) | relational_anchor_status | [taylor-hebert-kl-122ac:1] |
+| s04 | s04n06 | halvard | taylor-hebert-kl-122ac | LIVE (Halvard still speaking as Taylor departs) | social_tether-antag | [septon-halvard-flea-bottom:2] |
 
-Taylor dialogue-anchor: 1 (s04n04 — taylor speaks to halvard: the counter-argument)
-Halvard dialogue-anchor: 2 (s04n03 — primary; s04n06 — foreclosure speech)
+Taylor dialogue-anchor: 1 (s04n04 — taylor speaks to halvard: the counter-argument; held relational_anchor_status)
+Halvard dialogue-anchor: 2 (s04n03 — primary, held social_tether-antag; s04n06 — foreclosure speech, held social_tether-antag)
 Feed-observed dialogue: 0 (s01/s02 recast to physical action; only s04 carries live dialogue)
 Live dialogue-anchor scenes: s04 only (Halvard + Taylor)
+Speech-bone held-axis compliance: all 3 speech bones declare a communication-class axis (relational_anchor_status + social_tether-antag — the project's communication-class analogs per pl-2026-05-30-003 extended ruling). ✓
