@@ -4496,3 +4496,58 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0076 | 2026-06-03 | FAST (user-proxy, RUNBOOK R1)
+
+mode: user-proxy
+trigger: /and-substance chapter b01c12 Phase 5.5 chunk cold-read disposition
+context: |
+  b01c12 (d08 climax: coverage-gap refusal protecting Wren + Khepri-repetition threshold
+  surfacing-and-suppression) returned CHUNK-CLASS-B. Cold-reader summary maps to chapter goal
+  (Q6-level pass). Strict-CONTINUE (Q7 post-no-charity) = NO. Three decomposed causes:
+  (1) Cold-context holes — all established across c01–c11; Khepri/Gold-Morning opacity is the
+      Earth-Bet proper-noun fence operating by design (worm-canon-pedant ruled s04 surfacing
+      CLEAN).
+  (2) s04 seam — cold-reader calls s04 "a different chapter's climax stapled on." Dramatist
+      independently examined and ACCEPTED as climax-sound (s04 = terminal interior coda,
+      consequence-train of s03 refusal). Defensible design; prose-rendering risk.
+  (3) Apparatus-register density — "coverage/ledger/tranche/architecture" apparatus-metaphor
+      opacity. Recurring concern; DEC-0073/0075 flagged N=6 for /and-cohere before c13.
+
+decision: P — Proceed with risk recorded (SHIPPED-WITH-RISK-RECORDED)
+
+cold_read_risk_carry items for /and-stitch Phase 8.5 + Phase 9:
+  1. strict-CONTINUE=No (Class-B design-inherent; pre-dispositioned)
+  2. s04 seam — verify threshold-trigger lands as causally-earned consequence of s03 refusal,
+     not an arbitrary scene-pivot; stitcher must render the interior coda's causal chain legible
+     without expository bridge.
+  3. apparatus-register density — ledger/tranche/architecture vocabulary must not muffle the
+     Khepri beat; Phase 8.5 central-event-muffle check must explicitly test whether Khepri's
+     name/presence registers through the accounting register at the beat where it appears.
+  4. Khepri/Gold-Morning proper-noun opacity — design-inherent; Phase 9 may not FAIL on this
+     cause alone (coupling rule: cold-context gaps on a climax chapter mid-serial are not
+     delivery failures).
+
+basis: |
+  DEC-0072 (b01c11 Class-B) + DEC-0074 (c11 Phase 9 ship) + DEC-0060 (b01c08) exact precedent
+  chain. All three same pattern: summary maps, dramatist ACCEPT, upstream gates clean (2-of-3
+  audience SUBSTANCE-FELT; auditor PASS 0 HARD), strict-CONTINUE=No driven by cold-context +
+  design-inherent causes. (R) is the Class-A default, not the Class-B default. (S) is reserved
+  for when (P) is unacceptable — upstream gates at PASS unanimous, so (P) is acceptable. The
+  s04 seam concern is a prose-rendering risk that /and-stitch Phase 8.5 is designed to catch;
+  it does not belong at the chunk revision layer. The apparatus-density concern is the same
+  N=6 /and-cohere accumulation (DEC-0073/0075) — a chunk-layer re-author would not address it.
+
+trade-off: |
+  Risk of P: s04 seam may not render as causally-earned under stitch. Mitigated by: (a) cold_
+  read_risk_carry item 2 explicitly arms Phase 8.5 with the causal-chain test; (b) Phase 9
+  coupling rule pre-dispositions cold-context-caused CONTINUE=No; (c) if stitch fails the seam
+  test, /and-write revise targets only s04 bones, not full re-chunk. Apparatus-density risk
+  mitigated by item 3 (Khepri-beat explicit) + /and-cohere on deck before c13.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
